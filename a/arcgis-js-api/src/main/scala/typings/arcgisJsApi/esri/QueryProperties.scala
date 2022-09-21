@@ -13,7 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.native
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.overlaps
 import typings.arcgisJsApi.arcgisJsApiStrings.relation
 import typings.arcgisJsApi.arcgisJsApiStrings.standard
@@ -26,219 +26,244 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryProperties extends StObject {
   
   /**
+    * An array of Object IDs representing [aggregate](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#isAggregate) (i.e.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#aggregateIds)
+    */
+  var aggregateIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  /**
     * Indicates if the service should cache the query results.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#cacheHint)
+    * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#cacheHint)
     */
   var cacheHint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Datum transformation used for projecting geometries in the query results when [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) is different than the layer's spatial reference.
+    * Datum transformation used for projecting geometries in the query results when [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference) is different than the layer's spatial reference.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#datumTransformation)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#datumTransformation)
     */
   var datumTransformation: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies a search distance from a given [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) in a spatial query.
+    * Specifies a search distance from a given [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometry) in a spatial query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#distance)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#distance)
     */
   var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the geodatabase version to display for feature service queries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#gdbVersion)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#gdbVersion)
     */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The geometry to apply to the spatial filter.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometry)
     */
   var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * Specifies the number of decimal places for geometries returned by the query operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometryPrecision)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometryPrecision)
     */
   var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * Used only in [statistical queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#statistic).
+    * Used only in [statistical queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#statistic).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#groupByFieldsForStatistics)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#groupByFieldsForStatistics)
     */
   var groupByFieldsForStatistics: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A condition used with [outStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outStatistics) and [groupByFieldsForStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#groupByFieldsForStatistics) to limit query results to groups that satisfy the aggregation function(s).
+    * A condition used with [outStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outStatistics) and [groupByFieldsForStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#groupByFieldsForStatistics) to limit query results to groups that satisfy the aggregation function(s).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#having)
     */
   var having: js.UndefOr[String] = js.undefined
   
   /**
     * The historic moment to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#historicMoment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#historicMoment)
     */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The maximum distance in units of [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) used for generalizing geometries returned by the query operation.
+    * The maximum distance in units of [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference) used for generalizing geometries returned by the query operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#maxAllowableOffset)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#maxAllowableOffset)
     */
   var maxAllowableOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * When set, the maximum number of features returned by the query will equal the `maxRecordCount` of the service multiplied by this factor.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#maxRecordCountFactor)
+    * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#maxRecordCountFactor)
     */
   var maxRecordCountFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Parameter dictates how the geometry of a multipatch feature will be returned.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#multipatchOption)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#multipatchOption)
     */
   var multipatchOption: js.UndefOr[String] = js.undefined
   
   /**
     * The number of features to retrieve.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#num)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#num)
     */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * A comma delimited list of ObjectIDs for the features in the layer being queried.
+    * An array of ObjectIDs to be used to query for features in a layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#objectIds)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#objectIds)
     */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * One or more field names used to order the query results.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#orderByFields)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#orderByFields)
     */
   var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Attribute fields to include in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html).
+    * Attribute fields to include in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outFields)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outFields)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The spatial reference for the returned geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The definitions for one or more field-based statistics to be calculated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outStatistics)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outStatistics)
     */
   var outStatistics: js.UndefOr[js.Array[StatisticDefinitionProperties]] = js.undefined
   
   /**
     * Filters features from the layer based on pre-authored parameterized filters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
     */
   var parameterValues: js.UndefOr[js.Array[QueryParameterValues]] = js.undefined
   
   /**
     * Specifies the pixel level to be identified on the X and Y axis.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#pixelSize)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#pixelSize)
     */
-  var pixelSize: js.UndefOr[SymbolProperties] = js.undefined
+  var pixelSize: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Used to project the geometry onto a virtual grid, likely representing pixels on the screen.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
     */
   var quantizationParameters: js.UndefOr[QueryQuantizationParameters] = js.undefined
   
   /**
     * Filters features from the layer that are within the specified range values.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#rangeValues)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#rangeValues)
     */
   var rangeValues: js.UndefOr[js.Array[QueryRangeValues]] = js.undefined
   
   /**
-    * The Dimensionally Extended 9 Intersection Model (DE-9IM) matrix relation (encoded as a string) to query the spatial relationship of the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) to the layer's features.
+    * The Dimensionally Extended 9 Intersection Model (DE-9IM) matrix relation (encoded as a string) to query the spatial relationship of the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometry) to the layer's features.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#relationParameter)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#relationParameter)
     */
   var relationParameter: js.UndefOr[String] = js.undefined
   
   /**
-    * If `true`, each feature in the returned [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) will be returned with a centroid.
+    * If `true`, each feature in the returned [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) will be returned with a centroid.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnCentroid)
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnCentroid)
     */
   var returnCentroid: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true` then the query returns distinct values based on the field(s) specified in [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outFields).
+    * If `true` then the query returns distinct values based on the field(s) specified in [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outFields).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnDistinctValues)
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnDistinctValues)
     */
   var returnDistinctValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, then all features are returned for each tile request, even if they exceed the maximum record limit per query indicated on the service by `maxRecordCount`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnExceededLimitFeatures)
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnExceededLimitFeatures)
     */
   var returnExceededLimitFeatures: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, each feature in the returned [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) includes the geometry.
+    * If `true`, each feature in the returned [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) includes the geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry)
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnGeometry)
     */
   var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) is `true`, then m-values are included in the geometry.
+    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnGeometry) is `true`, then m-values are included in the geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnM)
     */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry) will be returned with the query results.
+    * If `true`, the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#queryGeometry) will be returned with the query results.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnQueryGeometry)
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnQueryGeometry)
     */
   var returnQueryGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) is `true`, then z-values are included in the geometry.
+    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnGeometry) is `true`, then z-values are included in the geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#returnZ)
     */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For spatial queries, this parameter defines the spatial relationship to query features in the layer or layer view against the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
+    * For spatial queries, this parameter defines the spatial relationship to query features in the layer or layer view against the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometry).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship)
+    * @default intersects
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#spatialRelationship)
     */
   var spatialRelationship: js.UndefOr[
     intersects | contains | crosses | disjoint | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
@@ -247,42 +272,48 @@ trait QueryProperties extends StObject {
   /**
     * This parameter can be either standard SQL92 `standard` or it can use the native SQL of the underlying datastore `native`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#sqlFormat)
+    * @default none
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#sqlFormat)
     */
-  var sqlFormat: js.UndefOr[none | standard | native] = js.undefined
+  var sqlFormat: js.UndefOr[none_ | standard | native] = js.undefined
   
   /**
     * The zero-based index indicating where to begin retrieving features.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#start)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#start)
     */
   var start: js.UndefOr[Double] = js.undefined
   
   /**
     * Shorthand for a where clause using "like".
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#text)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#text)
     */
   var text: js.UndefOr[String] = js.undefined
   
   /**
     * A time extent for a temporal query against [time-aware layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#timeInfo).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#timeExtent)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#timeExtent)
     */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
-    * The unit for calculating the buffer distance when [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#distance) is specified in spatial queries.
+    * The unit for calculating the buffer distance when [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#distance) is specified in spatial queries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#units)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#units)
     */
   var units: js.UndefOr[feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_] = js.undefined
   
   /**
     * A where clause for the query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#where)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#where)
     */
   var where: js.UndefOr[String] = js.undefined
 }
@@ -294,6 +325,12 @@ object QueryProperties {
   }
   
   extension [Self <: QueryProperties](x: Self) {
+    
+    inline def setAggregateIds(value: js.Array[Double]): Self = StObject.set(x, "aggregateIds", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateIdsUndefined: Self = StObject.set(x, "aggregateIds", js.undefined)
+    
+    inline def setAggregateIdsVarargs(value: Double*): Self = StObject.set(x, "aggregateIds", js.Array(value*))
     
     inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
     
@@ -323,7 +360,7 @@ object QueryProperties {
     
     inline def setGroupByFieldsForStatisticsUndefined: Self = StObject.set(x, "groupByFieldsForStatistics", js.undefined)
     
-    inline def setGroupByFieldsForStatisticsVarargs(value: String*): Self = StObject.set(x, "groupByFieldsForStatistics", js.Array(value :_*))
+    inline def setGroupByFieldsForStatisticsVarargs(value: String*): Self = StObject.set(x, "groupByFieldsForStatistics", js.Array(value*))
     
     inline def setHaving(value: String): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
@@ -353,19 +390,19 @@ object QueryProperties {
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value*))
     
     inline def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
     inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value*))
     
     inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
@@ -375,15 +412,15 @@ object QueryProperties {
     
     inline def setOutStatisticsUndefined: Self = StObject.set(x, "outStatistics", js.undefined)
     
-    inline def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = StObject.set(x, "outStatistics", js.Array(value :_*))
+    inline def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = StObject.set(x, "outStatistics", js.Array(value*))
     
     inline def setParameterValues(value: js.Array[QueryParameterValues]): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
     inline def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
-    inline def setParameterValuesVarargs(value: QueryParameterValues*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: QueryParameterValues*): Self = StObject.set(x, "parameterValues", js.Array(value*))
     
-    inline def setPixelSize(value: SymbolProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: PointProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
@@ -395,7 +432,7 @@ object QueryProperties {
     
     inline def setRangeValuesUndefined: Self = StObject.set(x, "rangeValues", js.undefined)
     
-    inline def setRangeValuesVarargs(value: QueryRangeValues*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
+    inline def setRangeValuesVarargs(value: QueryRangeValues*): Self = StObject.set(x, "rangeValues", js.Array(value*))
     
     inline def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
     
@@ -435,7 +472,7 @@ object QueryProperties {
     
     inline def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
-    inline def setSqlFormat(value: none | standard | native): Self = StObject.set(x, "sqlFormat", value.asInstanceOf[js.Any])
+    inline def setSqlFormat(value: none_ | standard | native): Self = StObject.set(x, "sqlFormat", value.asInstanceOf[js.Any])
     
     inline def setSqlFormatUndefined: Self = StObject.set(x, "sqlFormat", js.undefined)
     

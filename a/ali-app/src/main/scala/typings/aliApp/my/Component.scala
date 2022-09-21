@@ -16,7 +16,7 @@ trait Component extends StObject {
   /**
     * 组件数据，包括内部数据和属性值
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * 节点dataset
@@ -25,7 +25,7 @@ trait Component extends StObject {
   
   def getRelationNodes(relationKey: String): js.Array[ComponentRelation] = js.native
   
-  def hasBehavior(behavior: js.Any): Boolean = js.native
+  def hasBehavior(behavior: Any): Boolean = js.native
   
   /**
     * 节点id
@@ -40,7 +40,7 @@ trait Component extends StObject {
   /**
     * 组件数据，包括内部数据和属性值（与 data 一致）
     */
-  var properties: js.Any = js.native
+  var properties: Any = js.native
   
   /**
     * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
@@ -61,11 +61,11 @@ trait Component extends StObject {
     * @param data object 以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value
     * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
     */
-  def setData(data: js.Any): Unit = js.native
-  def setData(data: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def setData(data: Any): Unit = js.native
+  def setData(data: Any, callback: js.Function0[Unit]): Unit = js.native
   
   def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
+  def triggerEvent(name: String, details: Any): Unit = js.native
+  def triggerEvent(name: String, details: Any, options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: Unit, options: Partialbubblesbooleancomp): Unit = js.native
 }

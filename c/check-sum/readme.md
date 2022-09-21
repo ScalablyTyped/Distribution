@@ -10,10 +10,10 @@ Assert multiple checksums on a stream in parallel.
 | ------------------ | :-------------: |
 | Full name          | check-sum |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 565 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/check-sum)

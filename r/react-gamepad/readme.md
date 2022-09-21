@@ -10,10 +10,10 @@ A Gamepad handler as a React component
 | ------------------ | :-------------: |
 | Full name          | react-gamepad |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 74976 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14407.333333333334 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/SBRK/react-gamepad#readme)

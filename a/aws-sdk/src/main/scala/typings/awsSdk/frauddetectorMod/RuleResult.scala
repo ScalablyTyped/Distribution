@@ -29,7 +29,7 @@ object RuleResult {
     
     inline def setOutcomesUndefined: Self = StObject.set(x, "outcomes", js.undefined)
     
-    inline def setOutcomesVarargs(value: String*): Self = StObject.set(x, "outcomes", js.Array(value :_*))
+    inline def setOutcomesVarargs(value: String*): Self = StObject.set(x, "outcomes", js.Array(value*))
     
     inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     

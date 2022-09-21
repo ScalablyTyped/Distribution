@@ -51,7 +51,7 @@ object anon {
     
     var rotation: js.UndefOr[Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[js.Any] = js.undefined
+    var strokeLinecap: js.UndefOr[Any] = js.undefined
     
     var textColor: js.UndefOr[String] = js.undefined
     
@@ -88,7 +88,7 @@ object anon {
       
       inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      inline def setStrokeLinecap(value: js.Any): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: Any): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       

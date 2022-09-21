@@ -29,6 +29,6 @@ object ListPatchJobsResponse {
     
     inline def setPatchJobsUndefined: Self = StObject.set(x, "patchJobs", js.undefined)
     
-    inline def setPatchJobsVarargs(value: PatchJob*): Self = StObject.set(x, "patchJobs", js.Array(value :_*))
+    inline def setPatchJobsVarargs(value: PatchJob*): Self = StObject.set(x, "patchJobs", js.Array(value*))
   }
 }

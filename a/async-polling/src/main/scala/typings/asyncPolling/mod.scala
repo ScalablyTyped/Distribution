@@ -1,7 +1,6 @@
 package typings.asyncPolling
 
 import typings.asyncPolling.anon.On
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +9,8 @@ object mod {
   
   inline def apply[Result](
     pollingFunc: js.Function1[
-      /* end */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[Result], js.Any], 
-      js.Any
+      /* end */ js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Result], Any], 
+      Any
     ],
     delay: Double
   ): On = (^.asInstanceOf[js.Dynamic].apply(pollingFunc.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[On]

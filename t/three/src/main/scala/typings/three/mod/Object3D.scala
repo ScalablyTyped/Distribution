@@ -1,13 +1,14 @@
 package typings.three.mod
 
+import typings.three.eventDispatcherMod.BaseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Object3D")
 @js.native
-class Object3D ()
-  extends typings.three.object3DMod.Object3D
+open class Object3D[E /* <: BaseEvent */] ()
+  extends typings.three.threeMod.Object3D[E]
 /* static members */
 object Object3D {
   

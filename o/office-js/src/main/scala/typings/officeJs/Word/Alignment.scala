@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait Alignment extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.Alignment")
 @js.native
@@ -15,7 +16,8 @@ object Alignment extends StObject {
   
   /**
     * Alignment to the center.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait centered
@@ -24,7 +26,8 @@ object Alignment extends StObject {
   
   /**
     * Fully justified alignment.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait justified
@@ -33,13 +36,18 @@ object Alignment extends StObject {
   
   /**
     * Alignment to the left.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait left
     extends StObject
        with Alignment
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait mixed
     extends StObject
@@ -47,7 +55,8 @@ object Alignment extends StObject {
   
   /**
     * Alignment to the right.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait right
@@ -56,7 +65,8 @@ object Alignment extends StObject {
   
   /**
     * Unknown alignment.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait unknown

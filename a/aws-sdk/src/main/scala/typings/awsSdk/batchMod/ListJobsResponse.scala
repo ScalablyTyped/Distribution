@@ -27,7 +27,7 @@ object ListJobsResponse {
     
     inline def setJobSummaryList(value: JobSummaryList): Self = StObject.set(x, "jobSummaryList", value.asInstanceOf[js.Any])
     
-    inline def setJobSummaryListVarargs(value: JobSummary*): Self = StObject.set(x, "jobSummaryList", js.Array(value :_*))
+    inline def setJobSummaryListVarargs(value: JobSummary*): Self = StObject.set(x, "jobSummaryList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

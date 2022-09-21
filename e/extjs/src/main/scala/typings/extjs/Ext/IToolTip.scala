@@ -36,13 +36,13 @@ trait IToolTip
   /** [Method] Binds this ToolTip to the specified element
     * @param t String/HTMLElement/Ext.Element The Element, HtmlElement, or ID of an element to bind to
     */
-  var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var showDelay: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (HTMLElement/Ext.Element/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var trackMouse: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +91,7 @@ object IToolTip {
     
     inline def setMouseOffsetUndefined: Self = StObject.set(x, "mouseOffset", js.undefined)
     
-    inline def setSetTarget(value: /* t */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: /* t */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
     inline def setSetTargetUndefined: Self = StObject.set(x, "setTarget", js.undefined)
     
@@ -99,7 +99,7 @@ object IToolTip {
     
     inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     

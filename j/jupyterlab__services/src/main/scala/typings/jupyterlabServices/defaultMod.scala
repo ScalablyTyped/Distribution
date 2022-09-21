@@ -21,7 +21,7 @@ object defaultMod {
   
   @JSImport("@jupyterlab/services/lib/kernel/default", "KernelConnection")
   @js.native
-  class KernelConnection protected ()
+  open class KernelConnection protected ()
     extends StObject
        with IKernelConnection {
     /**
@@ -29,7 +29,7 @@ object defaultMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _anyMessage: js.Any = js.native
+    /* private */ var _anyMessage: Any = js.native
     
     /**
       * Check to make sure it is okay to proceed to handle a message.
@@ -41,12 +41,12 @@ object defaultMod {
       * called at the start of an asynchronous message handler to cancel message
       * processing if the message no longer is valid.
       */
-    /* private */ var _assertCurrentMessage: js.Any = js.native
+    /* private */ var _assertCurrentMessage: Any = js.native
     
     /**
       * Clear the internal state.
       */
-    /* private */ var _clearKernelState: js.Any = js.native
+    /* private */ var _clearKernelState: Any = js.native
     
     /**
       * Forcefully clear the socket state.
@@ -57,154 +57,162 @@ object defaultMod {
       * responsible for updating the connection status as needed and recreating
       * the socket if you plan to reconnect.
       */
-    /* private */ var _clearSocket: js.Any = js.native
+    /* private */ var _clearSocket: Any = js.native
     
-    /* private */ var _clientId: js.Any = js.native
+    /* private */ var _clientId: Any = js.native
     
-    /* private */ var _comms: js.Any = js.native
+    /* private */ var _comms: Any = js.native
     
-    /* private */ var _connectionStatus: js.Any = js.native
+    /* private */ var _connectionStatus: Any = js.native
     
-    /* private */ var _connectionStatusChanged: js.Any = js.native
+    /* private */ var _connectionStatusChanged: Any = js.native
     
     /**
       * Create the kernel websocket connection and add socket status handlers.
       */
-    /* private */ var _createSocket: js.Any = js.native
+    /* private */ var _createSocket: Any = js.native
     
-    /* private */ var _displayIdToParentIds: js.Any = js.native
+    /* private */ var _displayIdToParentIds: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Utility function to throw an error if this instance is disposed.
       */
-    /* private */ var _errorIfDisposed: js.Any = js.native
+    /* private */ var _errorIfDisposed: Any = js.native
     
-    /* private */ var _futures: js.Any = js.native
+    /* private */ var _futures: Any = js.native
     
     /**
       * Handle 'comm_close' kernel message.
       */
-    /* private */ var _handleCommClose: js.Any = js.native
+    /* private */ var _handleCommClose: Any = js.native
     
     /**
       * Handle a 'comm_msg' kernel message.
       */
-    /* private */ var _handleCommMsg: js.Any = js.native
+    /* private */ var _handleCommMsg: Any = js.native
     
     /**
       * Handle a `comm_open` kernel message.
       */
-    /* private */ var _handleCommOpen: js.Any = js.native
+    /* private */ var _handleCommOpen: Any = js.native
     
     /**
       * Handle a message with a display id.
       *
       * @returns Whether the message was handled.
       */
-    /* private */ var _handleDisplayId: js.Any = js.native
+    /* private */ var _handleDisplayId: Any = js.native
     
-    /* private */ var _handleMessage: js.Any = js.native
+    /* private */ var _handleMessage: Any = js.native
     
-    /**
-      * Handle a restart on the kernel.  This is not part of the `IKernel`
-      * interface.
-      */
-    /* private */ var _handleRestart: js.Any = js.native
+    /* private */ var _hasPendingInput: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _info: js.Any = js.native
+    /* private */ var _info: Any = js.native
     
-    /* private */ var _iopubMessage: js.Any = js.native
+    /* private */ var _iopubMessage: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _kernelSession: js.Any = js.native
+    /* private */ var _kernelSession: Any = js.native
     
-    /* private */ var _msgChain: js.Any = js.native
+    /* private */ var _model: Any = js.native
     
-    /* private */ var _msgIdToDisplayIds: js.Any = js.native
+    /* private */ var _msgChain: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _msgIdToDisplayIds: Any = js.native
     
-    /* private */ var _noOp: js.Any = js.native
+    /* private */ var _name: Any = js.native
+    
+    /* private */ var _noOp: Any = js.native
     
     /**
       * Handle a websocket close event.
       */
-    /* private */ var _onWSClose: js.Any = js.native
+    /* private */ var _onWSClose: Any = js.native
     
     /**
       * Handle a websocket message, validating and routing appropriately.
       */
-    /* private */ var _onWSMessage: js.Any = js.native
+    /* private */ var _onWSMessage: Any = js.native
     
     /**
       * Handle a websocket open event.
       */
-    /* private */ var _onWSOpen: js.Any = js.native
+    /* private */ var _onWSOpen: Any = js.native
     
-    /* private */ var _pendingMessages: js.Any = js.native
+    /* private */ var _pendingInput: Any = js.native
+    
+    /* private */ var _pendingMessages: Any = js.native
+    
+    /* private */ var _reason: Any = js.native
     
     /**
       * Attempt a connection if we have not exhausted connection attempts.
       */
-    /* private */ var _reconnect: js.Any = js.native
+    /* private */ var _reconnect: Any = js.native
     
-    /* private */ var _reconnectAttempt: js.Any = js.native
+    /* private */ var _reconnectAttempt: Any = js.native
     
-    /* private */ var _reconnectLimit: js.Any = js.native
+    /* private */ var _reconnectLimit: Any = js.native
     
-    /* private */ var _reconnectTimeout: js.Any = js.native
+    /* private */ var _reconnectTimeout: Any = js.native
     
-    /* private */ var _sendKernelShellControl: js.Any = js.native
+    /* private */ var _sendKernelShellControl: Any = js.native
     
     /**
       * Send a message on the websocket.
       *
       * If queue is true, queue the message for later sending if we cannot send
       * now. Otherwise throw an error.
+      *
+      * #### Notes
+      * As an exception to the queueing, if we are sending a kernel_info_request
+      * message while we think the kernel is restarting, we send the message
+      * immediately without queueing. This is so that we can trigger a message
+      * back, which will then clear the kernel restarting state.
       */
-    /* private */ var _sendMessage: js.Any = js.native
+    /* private */ var _sendMessage: Any = js.native
     
     /**
       * Send pending messages to the kernel.
       */
-    /* private */ var _sendPending: js.Any = js.native
+    /* private */ var _sendPending: Any = js.native
     
-    /* private */ var _specPromise: js.Any = js.native
+    /* private */ var _specPromise: Any = js.native
     
-    /* private */ var _status: js.Any = js.native
+    /* private */ var _status: Any = js.native
     
-    /* private */ var _statusChanged: js.Any = js.native
+    /* private */ var _statusChanged: Any = js.native
     
-    /* private */ var _targetRegistry: js.Any = js.native
+    /* private */ var _targetRegistry: Any = js.native
     
-    /* private */ var _unhandledMessage: js.Any = js.native
+    /* private */ var _unhandledMessage: Any = js.native
     
     /**
       * Unregister a comm instance.
       */
-    /* private */ var _unregisterComm: js.Any = js.native
+    /* private */ var _unregisterComm: Any = js.native
     
     /**
       * Handle connection status changes.
       */
-    /* private */ var _updateConnectionStatus: js.Any = js.native
+    /* private */ var _updateConnectionStatus: Any = js.native
     
     /**
       * Handle status iopub messages from the kernel.
       */
-    /* private */ var _updateStatus: js.Any = js.native
+    /* private */ var _updateStatus: Any = js.native
     
-    /* private */ var _username: js.Any = js.native
+    /* private */ var _username: Any = js.native
     
     /**
       * Websocket to communicate with kernel.
       */
-    /* private */ var _ws: js.Any = js.native
+    /* private */ var _ws: Any = js.native
     
     /**
       * A signal emitted for any kernel message.
@@ -272,6 +280,9 @@ object defaultMod {
       */
     def handleShutdown(): Unit = js.native
     
+    @JSName("hasPendingInput")
+    def hasPendingInput_MKernelConnection: Boolean = js.native
+    
     /**
       * The id of the server-side kernel.
       */
@@ -320,6 +331,12 @@ object defaultMod {
       */
     @JSName("name")
     def name_MKernelConnection: String = js.native
+    
+    /**
+      * A signal emitted when a kernel has pending inputs from the user.
+      */
+    @JSName("pendingInput")
+    def pendingInput_MKernelConnection: ISignal[this.type, Boolean] = js.native
     
     /**
       * The kernel spec.

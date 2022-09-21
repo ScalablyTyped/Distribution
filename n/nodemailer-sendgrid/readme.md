@@ -10,10 +10,10 @@ SendGrid transport object for Nodemailer.
 | ------------------ | :-------------: |
 | Full name          | nodemailer-sendgrid |
 | Keywords           | nodemailer, sendgrid |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 233710 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51751.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/nodemailer-sendgrid)

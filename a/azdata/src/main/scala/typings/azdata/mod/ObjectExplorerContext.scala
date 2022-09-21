@@ -19,12 +19,12 @@ trait ObjectExplorerContext
     * Node info for objects below a specific connection. This
     * may be null for a Connection-level object
     */
-  var nodeInfo: NodeInfo
+  var nodeInfo: js.UndefOr[NodeInfo] = js.undefined
 }
 object ObjectExplorerContext {
   
-  inline def apply(connectionProfile: IConnectionProfile, isConnectionNode: Boolean, nodeInfo: NodeInfo): ObjectExplorerContext = {
-    val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any], isConnectionNode = isConnectionNode.asInstanceOf[js.Any], nodeInfo = nodeInfo.asInstanceOf[js.Any])
+  inline def apply(isConnectionNode: Boolean): ObjectExplorerContext = {
+    val __obj = js.Dynamic.literal(isConnectionNode = isConnectionNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectExplorerContext]
   }
   
@@ -33,5 +33,7 @@ object ObjectExplorerContext {
     inline def setIsConnectionNode(value: Boolean): Self = StObject.set(x, "isConnectionNode", value.asInstanceOf[js.Any])
     
     inline def setNodeInfo(value: NodeInfo): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    
+    inline def setNodeInfoUndefined: Self = StObject.set(x, "nodeInfo", js.undefined)
   }
 }

@@ -10,7 +10,7 @@ object fnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveValue[T](fns: js.Function0[js.Promise[js.UndefOr[T]]]*): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveValue")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+  inline def resolveValue[T](fns: js.Function0[js.Promise[js.UndefOr[T]]]*): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveValue")(fns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[js.UndefOr[T]]]
   
-  inline def resolveValueSync[T](fns: js.Function0[js.UndefOr[T]]*): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveValueSync")(fns.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  inline def resolveValueSync[T](fns: js.Function0[js.UndefOr[T]]*): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveValueSync")(fns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[T]]
 }

@@ -52,13 +52,13 @@ object WindowTransform {
     
     inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    inline def setFrameVarargs(value: (Null | Double)*): Self = StObject.set(x, "frame", js.Array(value :_*))
+    inline def setFrameVarargs(value: (Null | Double)*): Self = StObject.set(x, "frame", js.Array(value*))
     
     inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setIgnorePeers(value: Boolean): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
     
@@ -68,10 +68,10 @@ object WindowTransform {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setWindow(value: js.Array[WindowFieldDef]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    inline def setWindowVarargs(value: WindowFieldDef*): Self = StObject.set(x, "window", js.Array(value :_*))
+    inline def setWindowVarargs(value: WindowFieldDef*): Self = StObject.set(x, "window", js.Array(value*))
   }
 }

@@ -9,7 +9,13 @@ trait Attestor extends StObject {
   /** Optional. A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name, in the format: `projects/∗/attestors/ *`. This field may not be updated. */
+  /**
+    * Optional. A checksum, returned by the server, that can be sent on update requests to ensure the attestor has an up-to-date value before attempting to update it. See
+    * https://google.aip.dev/154.
+    */
+  var etag: js.UndefOr[String] = js.undefined
+  
+  /** Required. The resource name, in the format: `projects/ *‍/attestors/ *`. This field may not be updated. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Time when the attestor was last updated. */
@@ -30,6 +36,10 @@ object Attestor {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

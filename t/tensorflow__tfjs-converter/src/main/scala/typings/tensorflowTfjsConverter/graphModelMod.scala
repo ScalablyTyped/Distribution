@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsConverter
 
+import typings.tensorflowTfjsConverter.anon.Typeofio
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
@@ -7,6 +8,7 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.modelTypesMod.InferenceModel
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveConfig
@@ -27,7 +29,7 @@ object graphModelMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "GraphModel")
   @js.native
-  class GraphModel protected ()
+  open class GraphModel[ModelURL /* <: Url */] protected ()
     extends StObject
        with InferenceModel {
     /**
@@ -39,14 +41,14 @@ object graphModelMod {
       * @param onProgress Optional, progress callback function, fired periodically
       * before the load is completed.
       */
-    def this(modelUrl: String) = this()
-    def this(modelUrl: IOHandler) = this()
-    def this(modelUrl: String, loadOptions: LoadOptions) = this()
-    def this(modelUrl: IOHandler, loadOptions: LoadOptions) = this()
+    def this(modelUrl: ModelURL) = this()
+    def this(modelUrl: ModelURL, loadOptions: LoadOptions) = this()
+    def this(modelUrl: ModelURL, loadOptions: Unit, tfio: Typeofio) = this()
+    def this(modelUrl: ModelURL, loadOptions: LoadOptions, tfio: Typeofio) = this()
     
-    /* private */ var artifacts: js.Any = js.native
+    /* private */ var artifacts: Any = js.native
     
-    /* private */ var convertTensorMapToTensorsMap: js.Any = js.native
+    /* private */ var convertTensorMapToTensorsMap: Any = js.native
     
     /**
       * Releases the memory used by the weight tensors and resourceManager.
@@ -54,6 +56,14 @@ object graphModelMod {
       * @doc {heading: 'Models', subheading: 'Classes'}
       */
     def dispose(): Unit = js.native
+    
+    /**
+      * Dispose intermediate tensors for model debugging mode (flag
+      * KEEP_INTERMEDIATE_TENSORS is true).
+      *
+      * @doc {heading: 'Models', subheading: 'Classes'}
+      */
+    def disposeIntermediateTensors(): Unit = js.native
     
     def execute(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     /**
@@ -101,26 +111,36 @@ object graphModelMod {
     def executeAsync(inputs: NamedTensorMap, outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     
-    /* private */ var executor: js.Any = js.native
+    /* private */ var executor: Any = js.native
     
-    /* private */ var findIOHandler: js.Any = js.native
+    /* private */ var findIOHandler: Any = js.native
     
-    /* private */ var handler: js.Any = js.native
+    /**
+      * Get intermediate tensors for model debugging mode (flag
+      * KEEP_INTERMEDIATE_TENSORS is true).
+      *
+      * @doc {heading: 'Models', subheading: 'Classes'}
+      */
+    def getIntermediateTensors(): NamedTensorsMap = js.native
     
-    /* private */ var initializer: js.Any = js.native
+    /* private */ var handler: Any = js.native
+    
+    /* private */ var initializer: Any = js.native
     
     val inputNodes: js.Array[String] = js.native
     
     @JSName("inputs")
     val inputs_GraphModel: js.Array[TensorInfo] = js.native
     
+    /* private */ val io: Any = js.native
+    
     /**
       * Loads the model and weight files, construct the in memory weight map and
       * compile the inference graph.
       */
-    def load(): js.Promise[Boolean] = js.native
+    def load(): js.Promise[Boolean] | Boolean = js.native
     
-    /* private */ var loadOptions: js.Any = js.native
+    /* private */ var loadOptions: Any = js.native
     
     /**
       * Synchronously construct the in memory weight map and
@@ -130,13 +150,13 @@ object graphModelMod {
       */
     def loadSync(artifacts: ModelArtifacts): Boolean = js.native
     
-    /* private */ var modelUrl: js.Any = js.native
+    /* private */ var modelUrl: Any = js.native
     
     val modelVersion: String = js.native
     
-    /* private */ var normalizeInputs: js.Any = js.native
+    /* private */ var normalizeInputs: Any = js.native
     
-    /* private */ var normalizeOutputs: js.Any = js.native
+    /* private */ var normalizeOutputs: Any = js.native
     
     val outputNodes: js.Array[String] = js.native
     
@@ -172,20 +192,21 @@ object graphModelMod {
       * If we are provide a batched data of 100 images, the input tensor should be
       * in the shape of [100, 244, 244, 3].
       *
-      * @param config Prediction configuration for specifying the batch size and
-      * output node names. Currently the batch size option is ignored for graph
-      * model.
+      * @param config Prediction configuration for specifying the batch size.
+      * Currently the batch size option is ignored for graph model.
       *
-      * @returns Inference result tensors. The output would be single `tf.Tensor`
-      * if model has single output node, otherwise Tensor[] or NamedTensorMap[]
-      * will be returned for model with multiple outputs.
+      * @returns Inference result tensors. If the model is converted and it
+      * originally had structured_outputs in tensorflow, then a NamedTensorMap
+      * will be returned matching the structured_outputs. If no structured_outputs
+      * are present, the output will be single `tf.Tensor` if the model has single
+      * output node, otherwise Tensor[].
       *
       * @doc {heading: 'Models', subheading: 'Classes'}
       */
     def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     
-    /* private */ var resourceManager: js.Any = js.native
+    /* private */ var resourceManager: Any = js.native
     
     def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
@@ -236,7 +257,11 @@ object graphModelMod {
     def save(handlerOrURL: IOHandler): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
     
-    /* private */ var version: js.Any = js.native
+    /* private */ var signature: Any = js.native
+    
+    /* private */ var structuredOutputKeys: Any = js.native
+    
+    /* private */ var version: Any = js.native
     
     val weights: NamedTensorsMap = js.native
   }
@@ -245,8 +270,18 @@ object graphModelMod {
   @js.native
   val TFHUB_SEARCH_PARAM: /* "?tfjs-format=file" */ String = js.native
   
-  inline def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
-  inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
-  inline def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
-  inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
+  inline def loadGraphModel(modelUrl: String): js.Promise[GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: String, options: Unit, tfio: Typeofio): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: String, options: LoadOptions, tfio: Typeofio): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: IOHandler, options: Unit, tfio: Typeofio): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions, tfio: Typeofio): js.Promise[GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel[String | IOHandler]]]
+  
+  inline def loadGraphModelSync(modelSource: IOHandlerSync): GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[GraphModel[IOHandlerSync]]
+  
+  type Url = String | IOHandler | IOHandlerSync
+  
+  type UrlIOHandler[T /* <: Url */] = T | IOHandler
 }

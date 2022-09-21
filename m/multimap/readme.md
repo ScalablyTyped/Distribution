@@ -10,10 +10,10 @@ multi-map which allow multiple values for the same key
 | ------------------ | :-------------: |
 | Full name          | multimap |
 | Keywords           | keys, map, multiple |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 8584703 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2557842.6666666665 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/villadora/multi-map#readme)

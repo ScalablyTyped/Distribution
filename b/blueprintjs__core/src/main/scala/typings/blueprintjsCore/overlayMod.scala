@@ -4,6 +4,7 @@ import typings.blueprintjsCore.anon.HasEverOpened
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.HTMLProps
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLDivElement
@@ -16,41 +17,80 @@ object overlayMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay")
   @js.native
-  class Overlay protected ()
-    extends AbstractPureComponent2[IOverlayProps, IOverlayState, js.Object] {
-    def this(props: IOverlayProps) = this()
-    def this(props: IOverlayProps, context: js.Any) = this()
+  open class Overlay protected ()
+    extends AbstractPureComponent2[OverlayProps, IOverlayState, js.Object] {
+    def this(props: OverlayProps) = this()
+    def this(props: OverlayProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MOverlay(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MOverlay(prevProps: IOverlayProps): Unit = js.native
+    def componentDidUpdate_MOverlay(prevProps: OverlayProps): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MOverlay(): Unit = js.native
     
     var containerElement: HTMLElement | Null = js.native
     
-    /* private */ var handleBackdropMouseDown: js.Any = js.native
+    /* private */ var endFocusTrapElement: Any = js.native
     
-    /* private */ var handleDocumentClick: js.Any = js.native
+    /* private */ var getKeyboardFocusableElements: Any = js.native
     
-    /* private */ var handleDocumentFocus: js.Any = js.native
+    /* private */ var handleBackdropMouseDown: Any = js.native
     
-    /* private */ var handleKeyDown: js.Any = js.native
+    /* private */ var handleDocumentClick: Any = js.native
     
-    /* private */ var handleTransitionAddEnd: js.Any = js.native
+    /**
+      * When multiple Overlays are open, this event handler is only active for the most recently
+      * opened one to avoid Overlays competing with each other for focus.
+      */
+    /* private */ var handleDocumentFocus: Any = js.native
     
-    /* private */ var maybeRenderBackdrop: js.Any = js.native
+    /**
+      * Ensures repeatedly pressing tab keeps focus inside the Overlay. Moves focus to the
+      * `startFocusTrapElement` or the last keyboard-focusable element in the Overlay (excluding the
+      * `startFocusTrapElement`), depending on whether the element losing focus is inside the
+      * Overlay.
+      */
+    /* private */ var handleEndFocusTrapElementFocus: Any = js.native
     
-    /* private */ var maybeRenderChild: js.Any = js.native
+    /* private */ var handleKeyDown: Any = js.native
     
-    /* private */ var overlayWillClose: js.Any = js.native
+    /**
+      * Ensures repeatedly pressing shift+tab keeps focus inside the Overlay. Moves focus to
+      * the `endFocusTrapElement` or the first keyboard-focusable element in the Overlay (excluding
+      * the `startFocusTrapElement`), depending on whether the element losing focus is inside the
+      * Overlay.
+      */
+    /* private */ var handleStartFocusTrapElementFocus: Any = js.native
     
-    /* private */ var overlayWillOpen: js.Any = js.native
+    /**
+      * Wrap around to the end of the dialog if `enforceFocus` is enabled.
+      */
+    /* private */ var handleStartFocusTrapElementKeyDown: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var handleTransitionAddEnd: Any = js.native
+    
+    /* private */ var handleTransitionExited: Any = js.native
+    
+    /* private */ var isAutoFocusing: Any = js.native
+    
+    /* private */ var lastActiveElementBeforeOpened: Any = js.native
+    
+    /* private */ var maybeRenderBackdrop: Any = js.native
+    
+    /* private */ var maybeRenderChild: Any = js.native
+    
+    /* private */ var overlayWillClose: Any = js.native
+    
+    /* private */ var overlayWillOpen: Any = js.native
+    
+    /* private */ var refHandlers: Any = js.native
+    
+    /* private */ var renderDummyElement: Any = js.native
+    
+    /* private */ var startFocusTrapElement: Any = js.native
   }
   /* static members */
   object Overlay {
@@ -61,26 +101,28 @@ object overlayMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.defaultProps")
     @js.native
-    def defaultProps: IOverlayProps = js.native
-    inline def defaultProps_=(x: IOverlayProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: OverlayProps = js.native
+    inline def defaultProps_=(x: OverlayProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasHasEverOpened: IOverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
+    inline def getDerivedStateFromProps(hasHasEverOpened: OverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.getLastOpened")
     @js.native
-    def getLastOpened: js.Any = js.native
-    inline def getLastOpened_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLastOpened")(x.asInstanceOf[js.Any])
+    def getLastOpened: Any = js.native
+    inline def getLastOpened_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLastOpened")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.openStack")
     @js.native
-    def openStack: js.Any = js.native
-    inline def openStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openStack")(x.asInstanceOf[js.Any])
+    def openStack: Any = js.native
+    inline def openStack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openStack")(x.asInstanceOf[js.Any])
   }
+  
+  type BackdropProps = IBackdropProps
   
   trait IBackdropProps extends StObject {
     
@@ -93,12 +135,14 @@ object overlayMod {
     /**
       * Whether clicking outside the overlay element (either on backdrop when present or on document)
       * should invoke `onClose`.
+      *
       * @default true
       */
     var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether a container-spanning backdrop element should be rendered behind the contents.
+      *
       * @default true
       */
     var hasBackdrop: js.UndefOr[Boolean] = js.undefined
@@ -191,6 +235,9 @@ object overlayMod {
        with IBackdropProps
        with IProps {
     
+    /** Element to overlay. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Toggles the visibility of the overlay and its children.
       * This prop is required because the component is controlled.
@@ -200,6 +247,7 @@ object overlayMod {
     /**
       * Name of the transition for internal `CSSTransition`.
       * Providing your own name here will require defining new CSS transition properties.
+      *
       * @default Classes.OVERLAY
       */
     var transitionName: js.UndefOr[String] = js.undefined
@@ -212,6 +260,10 @@ object overlayMod {
     }
     
     extension [Self <: IOverlayProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
@@ -246,12 +298,14 @@ object overlayMod {
     
     /**
       * Whether the overlay should acquire application focus when it first opens.
+      *
       * @default true
       */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether pressing the `esc` key should invoke `onClose`.
+      *
       * @default true
       */
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
@@ -261,6 +315,7 @@ object overlayMod {
       * to focus an element outside the overlay and this prop is enabled, then the overlay will
       * immediately bring focus back to itself. If you are nesting overlay components, either disable
       * this prop on the "outermost" overlays or mark the nested ones `usePortal={false}`.
+      *
       * @default true
       */
     var enforceFocus: js.UndefOr[Boolean] = js.undefined
@@ -270,6 +325,7 @@ object overlayMod {
       * to the DOM when the overlay is opened for the first time; otherwise this happens when the
       * component mounts. Lazy mounting provides noticeable performance improvements if you have lots
       * of overlays at once, such as on each row of a table.
+      *
       * @default true
       */
     var `lazy`: js.UndefOr[Boolean] = js.undefined
@@ -293,15 +349,25 @@ object overlayMod {
     /**
       * The container element into which the overlay renders its contents, when `usePortal` is `true`.
       * This prop is ignored if `usePortal` is `false`.
+      *
       * @default document.body
       */
     var portalContainer: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * Whether the application should return focus to the last active element in the
+      * document after this overlay closes.
+      *
+      * @default true
+      */
+    var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
       * This is used by React `CSSTransition` to know when a transition completes and must match
       * the duration of the animation in CSS. Only set this prop if you override Blueprint's default
       * transitions with new transitions of a different length.
+      *
       * @default 300
       */
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -316,6 +382,7 @@ object overlayMod {
       *
       * Set this prop to `false` on nested overlays (such as `Dialog` or `Popover`) to ensure that they
       * are rendered above their parents.
+      *
       * @default true
       */
     var usePortal: js.UndefOr[Boolean] = js.undefined
@@ -357,6 +424,10 @@ object overlayMod {
       
       inline def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
       
+      inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
+      
+      inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
+      
       inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
@@ -366,4 +437,10 @@ object overlayMod {
       inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     }
   }
+  
+  type OverlayLifecycleProps = IOverlayLifecycleProps
+  
+  type OverlayProps = IOverlayProps
+  
+  type OverlayableProps = IOverlayableProps
 }

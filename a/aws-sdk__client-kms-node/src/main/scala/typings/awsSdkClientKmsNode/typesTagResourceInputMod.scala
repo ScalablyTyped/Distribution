@@ -3,7 +3,6 @@ package typings.awsSdkClientKmsNode
 import typings.awsSdkClientKmsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsNode.typesTagMod.Tag
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesTagResourceInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,11 +43,11 @@ object typesTagResourceInputMod {
     /**
       * <p>One or more tags. Each tag consists of a tag key and a tag value.</p>
       */
-    var Tags: js.Array[Tag] | Iterable[Tag]
+    var Tags: js.Array[Tag] | js.Iterable[Tag]
   }
   object TagResourceInput {
     
-    inline def apply(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): TagResourceInput = {
+    inline def apply(KeyId: String, Tags: js.Array[Tag] | js.Iterable[Tag]): TagResourceInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagResourceInput]
     }
@@ -60,7 +59,7 @@ object typesTagResourceInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,9 +70,9 @@ object typesTagResourceInputMod {
       
       inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | js.Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
 }

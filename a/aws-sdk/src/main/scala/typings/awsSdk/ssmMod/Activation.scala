@@ -14,10 +14,10 @@ trait Activation extends StObject {
   /**
     * The date the activation was created.
     */
-  var CreatedDate: js.UndefOr[typings.awsSdk.ssmMod.CreatedDate] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A name for the managed instance when it is created.
+    * A name for the managed node when it is created.
     */
   var DefaultInstanceName: js.UndefOr[typings.awsSdk.ssmMod.DefaultInstanceName] = js.undefined
   
@@ -27,9 +27,9 @@ trait Activation extends StObject {
   var Description: js.UndefOr[ActivationDescription] = js.undefined
   
   /**
-    * The date when this activation can no longer be used to register managed instances.
+    * The date when this activation can no longer be used to register managed nodes.
     */
-  var ExpirationDate: js.UndefOr[typings.awsSdk.ssmMod.ExpirationDate] = js.undefined
+  var ExpirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Whether or not the activation is expired.
@@ -37,17 +37,17 @@ trait Activation extends StObject {
   var Expired: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Identity and Access Management (IAM) role to assign to the managed instance.
+    * The Identity and Access Management (IAM) role to assign to the managed node.
     */
   var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.undefined
   
   /**
-    * The maximum number of managed instances that can be registered using this activation.
+    * The maximum number of managed nodes that can be registered using this activation.
     */
   var RegistrationLimit: js.UndefOr[typings.awsSdk.ssmMod.RegistrationLimit] = js.undefined
   
   /**
-    * The number of managed instances already registered with this activation.
+    * The number of managed nodes already registered with this activation.
     */
   var RegistrationsCount: js.UndefOr[typings.awsSdk.ssmMod.RegistrationsCount] = js.undefined
   
@@ -69,7 +69,7 @@ object Activation {
     
     inline def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
     
-    inline def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -81,7 +81,7 @@ object Activation {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setExpirationDate(value: ExpirationDate): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
@@ -105,6 +105,6 @@ object Activation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

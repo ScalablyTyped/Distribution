@@ -10,10 +10,10 @@ Localization library for expressive translations.
 | ------------------ | :-------------: |
 | Full name          | fluent |
 | Keywords           | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 447067 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2773.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://projectfluent.org)

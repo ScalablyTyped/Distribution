@@ -63,7 +63,7 @@ object IOpDef {
     
     inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    inline def setAttrVarargs(value: IAttrDef*): Self = StObject.set(x, "attr", js.Array(value :_*))
+    inline def setAttrVarargs(value: IAttrDef*): Self = StObject.set(x, "attr", js.Array(value*))
     
     inline def setDeprecation(value: IOpDeprecation): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object IOpDef {
     
     inline def setInputArgUndefined: Self = StObject.set(x, "inputArg", js.undefined)
     
-    inline def setInputArgVarargs(value: IArgDef*): Self = StObject.set(x, "inputArg", js.Array(value :_*))
+    inline def setInputArgVarargs(value: IArgDef*): Self = StObject.set(x, "inputArg", js.Array(value*))
     
     inline def setIsAggregate(value: Boolean): Self = StObject.set(x, "isAggregate", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object IOpDef {
     
     inline def setOutputArgUndefined: Self = StObject.set(x, "outputArg", js.undefined)
     
-    inline def setOutputArgVarargs(value: IArgDef*): Self = StObject.set(x, "outputArg", js.Array(value :_*))
+    inline def setOutputArgVarargs(value: IArgDef*): Self = StObject.set(x, "outputArg", js.Array(value*))
     
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     

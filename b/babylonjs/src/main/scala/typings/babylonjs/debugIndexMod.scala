@@ -3,6 +3,8 @@ package typings.babylonjs
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.PartialISkeletonViewerOpt
 import typings.babylonjs.boneMod.Bone
+import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.directionalLightMod.DirectionalLight
 import typings.babylonjs.iskeletonviewerMod.IBoneWeightShaderOptions
 import typings.babylonjs.iskeletonviewerMod.ISkeletonMapShaderOptions
 import typings.babylonjs.mathColorMod.Color3
@@ -21,7 +23,7 @@ object debugIndexMod {
   
   @JSImport("babylonjs/Debug/index", "AxesViewer")
   @js.native
-  class AxesViewer protected ()
+  open class AxesViewer protected ()
     extends typings.babylonjs.axesViewerMod.AxesViewer {
     /**
       * Creates a new AxesViewer
@@ -31,180 +33,16 @@ object debugIndexMod {
       * @param xAxis defines the node hierarchy used to render the x-axis
       * @param yAxis defines the node hierarchy used to render the y-axis
       * @param zAxis defines the node hierarchy used to render the z-axis
+      * @param lineThickness The line thickness to use when creating the arrow. defaults to 1.
       */
-    def this(scene: Scene) = this()
-    def this(scene: Scene, scaleLines: Double) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
     def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode, yAxis: TransformNode) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
+      scene: js.UndefOr[Scene],
+      scaleLines: js.UndefOr[Double],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[TransformNode],
+      yAxis: js.UndefOr[TransformNode],
+      zAxis: js.UndefOr[TransformNode],
+      lineThickness: js.UndefOr[Double]
     ) = this()
   }
   /* static members */
@@ -216,13 +54,13 @@ object debugIndexMod {
     
     @JSImport("babylonjs/Debug/index", "AxesViewer._SetRenderingGroupId")
     @js.native
-    def _SetRenderingGroupId: js.Any = js.native
-    inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+    def _SetRenderingGroupId: Any = js.native
+    inline def _SetRenderingGroupId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Debug/index", "BoneAxesViewer")
   @js.native
-  class BoneAxesViewer protected ()
+  open class BoneAxesViewer protected ()
     extends typings.babylonjs.boneAxesViewerMod.BoneAxesViewer {
     /**
       * Creates a new BoneAxesViewer
@@ -237,15 +75,15 @@ object debugIndexMod {
   
   @JSImport("babylonjs/Debug/index", "DebugLayer")
   @js.native
-  class DebugLayer protected ()
+  /**
+    * Instantiates a new debug layer.
+    * The debug layer (aka Inspector) is the go to tool in order to better understand
+    * what is happening in your scene
+    * @see https://doc.babylonjs.com/features/playground_debuglayer
+    * @param scene Defines the scene to inspect
+    */
+  open class DebugLayer ()
     extends typings.babylonjs.debugLayerMod.DebugLayer {
-    /**
-      * Instantiates a new debug layer.
-      * The debug layer (aka Inspector) is the go to tool in order to better understand
-      * what is happening in your scene
-      * @see https://doc.babylonjs.com/features/playground_debuglayer
-      * @param scene Defines the scene to inspect
-      */
     def this(scene: Scene) = this()
   }
   /* static members */
@@ -284,20 +122,32 @@ object debugIndexMod {
     /* 3 */ val Tools: typings.babylonjs.debugLayerMod.DebugLayerTab.Tools & Double = js.native
   }
   
+  @JSImport("babylonjs/Debug/index", "DirectionalLightFrustumViewer")
+  @js.native
+  open class DirectionalLightFrustumViewer protected ()
+    extends typings.babylonjs.directionalLightFrustumViewerMod.DirectionalLightFrustumViewer {
+    /**
+      * Creates a new frustum viewer
+      * @param light directional light to display the frustum for
+      * @param camera camera used to retrieve the minZ / maxZ values if the shadowMinZ/shadowMaxZ values of the light are not setup
+      */
+    def this(light: DirectionalLight, camera: Camera) = this()
+  }
+  
   @JSImport("babylonjs/Debug/index", "PhysicsViewer")
   @js.native
-  class PhysicsViewer protected ()
+  /**
+    * Creates a new PhysicsViewer
+    * @param scene defines the hosting scene
+    */
+  open class PhysicsViewer ()
     extends typings.babylonjs.physicsViewerMod.PhysicsViewer {
-    /**
-      * Creates a new PhysicsViewer
-      * @param scene defines the hosting scene
-      */
     def this(scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Debug/index", "RayHelper")
   @js.native
-  class RayHelper protected ()
+  open class RayHelper protected ()
     extends typings.babylonjs.rayHelperMod.RayHelper {
     /**
       * Instantiate a new ray helper.
@@ -327,7 +177,7 @@ object debugIndexMod {
   
   @JSImport("babylonjs/Debug/index", "SkeletonViewer")
   @js.native
-  class SkeletonViewer protected ()
+  open class SkeletonViewer protected ()
     extends typings.babylonjs.skeletonViewerMod.SkeletonViewer {
     /**
       * Creates a new SkeletonViewer
@@ -482,8 +332,8 @@ object debugIndexMod {
       */
     @JSImport("babylonjs/Debug/index", "SkeletonViewer._CreateBoneMapColorBuffer")
     @js.native
-    def _CreateBoneMapColorBuffer: js.Any = js.native
-    inline def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
+    def _CreateBoneMapColorBuffer: Any = js.native
+    inline def _CreateBoneMapColorBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */

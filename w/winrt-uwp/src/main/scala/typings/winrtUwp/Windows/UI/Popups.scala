@@ -73,7 +73,7 @@ object Popups {
   trait IUICommand extends StObject {
     
     /** Gets or sets the identifier of the command. */
-    var id: js.Any
+    var id: Any
     
     /** Gets or sets the handler for the event that is fired when the user invokes the command. */
     def invoked(command: IUICommand): Unit
@@ -86,14 +86,14 @@ object Popups {
   }
   object IUICommand {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUICommand]
     }
     
     extension [Self <: IUICommand](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
@@ -194,7 +194,7 @@ object Popups {
   trait UICommand extends StObject {
     
     /** Gets or sets the identifier of the command. */
-    var id: js.Any
+    var id: Any
     
     /** Gets or sets the handler for the event that is fired when the user selects the UICommand . */
     def invoked(command: IUICommand): Unit
@@ -207,14 +207,14 @@ object Popups {
   }
   object UICommand {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommand]
     }
     
     extension [Self <: UICommand](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
@@ -229,7 +229,7 @@ object Popups {
   trait UICommandSeparator extends StObject {
     
     /** Gets or sets the identifier of the command separator. */
-    var id: js.Any
+    var id: Any
     
     /** Gets or sets the handler for the event that is fired for the command separator. */
     def invoked(command: IUICommand): Unit
@@ -242,14 +242,14 @@ object Popups {
   }
   object UICommandSeparator {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommandSeparator]
     }
     
     extension [Self <: UICommandSeparator](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       

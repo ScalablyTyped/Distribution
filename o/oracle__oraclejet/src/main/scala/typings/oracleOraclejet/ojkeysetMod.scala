@@ -9,14 +9,14 @@ object ojkeysetMod {
   
   @JSImport("@oracle/oraclejet/ojkeyset", "ExpandAllKeySet")
   @js.native
-  class ExpandAllKeySet[K] () extends KeySet[K] {
+  open class ExpandAllKeySet[K] () extends KeySet[K] {
     
     def deletedValues(): Set[K] = js.native
   }
   
   @JSImport("@oracle/oraclejet/ojkeyset", "ExpandedKeySet")
   @js.native
-  class ExpandedKeySet[K] () extends KeySet[K] {
+  open class ExpandedKeySet[K] () extends KeySet[K] {
     def this(keys: js.Array[K]) = this()
     def this(keys: Set[K]) = this()
     

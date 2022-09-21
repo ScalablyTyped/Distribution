@@ -1,7 +1,7 @@
 package typings.pino
 
-import typings.pino.mod.Level
-import typings.pino.mod.LevelWithSilent
+import typings.pino.mod.pino.Level
+import typings.pino.mod.pino.LevelWithSilent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

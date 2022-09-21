@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
-import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.DatabaseInstance
+import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesFailoverRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,9 @@ trait UploadType extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** Cloud SQL instance ID. This does not include the project ID. */
+  var instance: String
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -32,14 +35,14 @@ trait UploadType extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the project to which the newly created Cloud SQL instances should belong. */
+  /** ID of the project that contains the read replica. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: DatabaseInstance
+  var resource: InstancesFailoverRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +52,8 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(project: String, resource: DatabaseInstance): UploadType = {
-    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(instance: String, project: String, resource: InstancesFailoverRequest): UploadType = {
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
   
@@ -76,6 +79,8 @@ object UploadType {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -94,7 +99,7 @@ object UploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: DatabaseInstance): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: InstancesFailoverRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

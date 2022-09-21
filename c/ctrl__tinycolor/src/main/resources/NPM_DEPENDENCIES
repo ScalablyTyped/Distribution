@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ctrl/tinycolor" : "3.1.7"
+      "@ctrl/tinycolor" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ctrl/tinycolor" : "3.1.7"
+      "@ctrl/tinycolor" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

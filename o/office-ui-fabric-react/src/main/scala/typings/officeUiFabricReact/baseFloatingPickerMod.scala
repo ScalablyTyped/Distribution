@@ -21,8 +21,8 @@ object baseFloatingPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/BaseFloatingPicker", "BaseFloatingPicker")
   @js.native
-  class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
-    extends Component[P, IBaseFloatingPickerState, js.Any]
+  open class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
+    extends Component[P, IBaseFloatingPickerState, Any]
        with IBaseFloatingPicker {
     def this(basePickerProps: P) = this()
     
@@ -31,19 +31,19 @@ object baseFloatingPickerMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MBaseFloatingPicker(newProps: IBaseFloatingPickerProps[T]): Unit = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _bindToInputElement: js.Any = js.native
+    /* private */ var _bindToInputElement: Any = js.native
     
-    /* private */ var _onResolveSuggestions: js.Any = js.native
+    /* private */ var _onResolveSuggestions: Any = js.native
     
-    /* private */ var _onValidateInput: js.Any = js.native
+    /* private */ var _onValidateInput: Any = js.native
     
-    /* private */ var _unbindFromInputElement: js.Any = js.native
+    /* private */ var _unbindFromInputElement: Any = js.native
     
-    /* private */ var _updateActiveDescendant: js.Any = js.native
+    /* private */ var _updateActiveDescendant: Any = js.native
     
-    /* private */ var _updateSuggestionsVisible: js.Any = js.native
+    /* private */ var _updateSuggestionsVisible: Any = js.native
     
     def completeSuggestion(): Unit = js.native
     

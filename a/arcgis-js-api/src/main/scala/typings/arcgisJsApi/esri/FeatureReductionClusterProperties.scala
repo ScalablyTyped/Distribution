@@ -10,6 +10,8 @@ trait FeatureReductionClusterProperties extends StObject {
   /**
     * Defines the symbol size of the largest cluster in points (or pixels if specified).
     *
+    * @default 37.5
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMaxSize)
     */
   var clusterMaxSize: js.UndefOr[Double | String] = js.undefined
@@ -17,12 +19,16 @@ trait FeatureReductionClusterProperties extends StObject {
   /**
     * Defines the symbol size of the smallest cluster in points (or pixels if specified).
     *
+    * @default 9
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMinSize)
     */
   var clusterMinSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster.
+    *
+    * @default 60
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius)
     */
@@ -38,12 +44,16 @@ trait FeatureReductionClusterProperties extends StObject {
   /**
     * Indicates whether to display labels for the clusters.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the cluster popup.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupEnabled)
     */
@@ -88,7 +98,7 @@ object FeatureReductionClusterProperties {
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     

@@ -8,10 +8,10 @@ object simpleWebdriverClientMod {
   
   @JSImport("blocking-proxy/built/lib/simple_webdriver_client", "SimpleWebDriverClient")
   @js.native
-  class SimpleWebDriverClient protected () extends StObject {
+  open class SimpleWebDriverClient protected () extends StObject {
     def this(seleniumAddress: String) = this()
     
-    /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any, data: js.Any): js.Any = js.native
+    /* private */ def createSeleniumRequest(method: Any, messageUrl: Any, data: Any): Any = js.native
     
     /**
       * Send an execute script command.

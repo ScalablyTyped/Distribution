@@ -10,10 +10,10 @@ Typings are for version 2.1
 | ------------------ | :-------------: |
 | Full name          | dts-generator |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 1083512 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 128772.0 |
+| # stars            | 486.0 |
 
 ## Links
 - [Homepage](https://github.com/SitePen/dts-generator#readme)

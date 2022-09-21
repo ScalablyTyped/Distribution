@@ -1,23 +1,22 @@
 package typings.antd.anon
 
-import typings.rcPicker.timePanelMod.SharedTimeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShowTime[DateType] extends StObject {
+trait ShowTime[DateType, DisabledTime] extends StObject {
   
-  var showTime: SharedTimeProps[DateType]
+  var showTime: DefaultValue[DateType, DisabledTime]
 }
 object ShowTime {
   
-  inline def apply[DateType](showTime: SharedTimeProps[DateType]): ShowTime[DateType] = {
+  inline def apply[DateType, DisabledTime](showTime: DefaultValue[DateType, DisabledTime]): ShowTime[DateType, DisabledTime] = {
     val __obj = js.Dynamic.literal(showTime = showTime.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShowTime[DateType]]
+    __obj.asInstanceOf[ShowTime[DateType, DisabledTime]]
   }
   
-  extension [Self <: ShowTime[?], DateType](x: Self & ShowTime[DateType]) {
+  extension [Self <: ShowTime[?, ?], DateType, DisabledTime](x: Self & (ShowTime[DateType, DisabledTime])) {
     
-    inline def setShowTime(value: SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
+    inline def setShowTime(value: DefaultValue[DateType, DisabledTime]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
   }
 }

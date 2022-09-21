@@ -7,22 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceNowConfiguration extends StObject {
   
   /**
+    * The type of authentication used to connect to the ServiceNow instance. If you choose HTTP_BASIC, Amazon Kendra is authenticated using the user name and password provided in the Secrets Manager secret in the SecretArn field. If you choose OAUTH2, Amazon Kendra is authenticated using the credentials of client ID, client secret, user name and password. When you use OAUTH2 authentication, you must generate a token and a client secret using the ServiceNow console. For more information, see Using a ServiceNow data source.
+    */
+  var AuthenticationType: js.UndefOr[ServiceNowAuthenticationType] = js.undefined
+  
+  /**
     * The ServiceNow instance that the data source connects to. The host endpoint should look like the following: {instance}.service-now.com. 
     */
   var HostUrl: ServiceNowHostUrl
   
   /**
-    * Provides configuration information for crawling knowledge articles in the ServiceNow site.
+    * Configuration information for crawling knowledge articles in the ServiceNow site.
     */
   var KnowledgeArticleConfiguration: js.UndefOr[ServiceNowKnowledgeArticleConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Secret Manager secret that contains the user name and password required to connect to the ServiceNow instance.
+    * The Amazon Resource Name (ARN) of the Secrets Manager secret that contains the user name and password required to connect to the ServiceNow instance. You can also provide OAuth authentication credentials of user name, password, client ID, and client secret. For more information, see Authentication for a ServiceNow data source.
     */
   var SecretArn: typings.awsSdk.kendraMod.SecretArn
   
   /**
-    * Provides configuration information for crawling service catalogs in the ServiceNow site.
+    * Configuration information for crawling service catalogs in the ServiceNow site.
     */
   var ServiceCatalogConfiguration: js.UndefOr[ServiceNowServiceCatalogConfiguration] = js.undefined
   
@@ -43,6 +48,10 @@ object ServiceNowConfiguration {
   }
   
   extension [Self <: ServiceNowConfiguration](x: Self) {
+    
+    inline def setAuthenticationType(value: ServiceNowAuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "AuthenticationType", js.undefined)
     
     inline def setHostUrl(value: ServiceNowHostUrl): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
     

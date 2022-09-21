@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.PropertyValues")
 @js.native
-class PropertyValues ()
+open class PropertyValues ()
   extends StObject
      with typings.sharepoint.SP.PropertyValues

@@ -75,7 +75,7 @@ trait CurrentProject extends StObject {
   def OpenConnection(BaseConnectionString: Unit, UserID: String, Password: String): Unit = js.native
   def OpenConnection(BaseConnectionString: Unit, UserID: Unit, Password: String): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Path: String = js.native
   

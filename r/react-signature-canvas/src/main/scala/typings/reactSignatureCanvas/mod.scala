@@ -11,11 +11,11 @@ object mod {
   
   @JSImport("react-signature-canvas", JSImport.Default)
   @js.native
-  class default () extends ReactSignatureCanvas
+  open class default () extends ReactSignatureCanvas
   
   @js.native
   trait ReactSignatureCanvas
-    extends Component[ReactSignatureCanvasProps, js.Object, js.Any] {
+    extends Component[ReactSignatureCanvasProps, js.Object, Any] {
     
     var clear: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SignaturePad * / any['clear'] */ js.Any = js.native
     
@@ -25,7 +25,7 @@ object mod {
     
     def getCanvas(): HTMLCanvasElement = js.native
     
-    def getSignaturePad(): js.Any = js.native
+    def getSignaturePad(): Any = js.native
     
     def getTrimmedCanvas(): HTMLCanvasElement = js.native
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__s3-request-presigner
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.173.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/s3-request-presigner/latest.svg)](https://www.npmjs.com/package/@aws-sdk/s3-request-presigner) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/s3-request-presigner.svg)](https://www.npmjs.com/
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/s3-request-presigner |
 | Keywords           | - |
-| # releases         | 61 |
-| # dependents       | 4 |
-| # downloads        | 4156062 |
-| # stars            | 0 |
+| # releases         | 138 |
+| # dependents       | 0.0 |
+| # downloads        | 2519279.6666666665 |
+| # stars            | 1856.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/s3-request-presigner)

@@ -13,4 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twitterForWeb.TwitterTimelineWidgetUrlDataSource
   - java.lang.String
 */
-type TwitterTimelineWidgetDataSource = typings.twitterForWeb._TwitterTimelineWidgetDataSource | java.lang.String
+type TwitterTimelineWidgetDataSource = _TwitterTimelineWidgetDataSource | String

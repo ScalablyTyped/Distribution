@@ -12,7 +12,7 @@ object loaderMod {
   
   @JSImport("playable/dist/src/modules/ui/loader/loader", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Loader {
     def this(hasConfigEventEmitterEngineRootContainer: ConfigEngine) = this()
@@ -67,25 +67,25 @@ object loaderMod {
     extends StObject
        with ILoader {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _checkForWaitingState: js.Any = js.native
+    /* private */ var _checkForWaitingState: Any = js.native
     
-    /* private */ var _delayedShowTimeout: js.Any = js.native
+    /* private */ var _delayedShowTimeout: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _hideContent: js.Any = js.native
+    /* private */ var _hideContent: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _showContent: js.Any = js.native
+    /* private */ var _showContent: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     @JSName("isDelayedShowScheduled")
     def isDelayedShowScheduled_MLoader: Boolean = js.native

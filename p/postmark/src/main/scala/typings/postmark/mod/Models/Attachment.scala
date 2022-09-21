@@ -6,8 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.Attachment")
 @js.native
-class Attachment protected ()
+open class Attachment protected ()
   extends typings.postmark.modelsMod.Attachment {
   def this(Name: String, Content: String, ContentType: String) = this()
   def this(Name: String, Content: String, ContentType: String, ContentID: String) = this()
+  def this(Name: String, Content: String, ContentType: String, ContentID: String, ContentLength: Double) = this()
+  def this(Name: String, Content: String, ContentType: String, ContentID: Null, ContentLength: Double) = this()
+  def this(Name: String, Content: String, ContentType: String, ContentID: Unit, ContentLength: Double) = this()
 }

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelToStoreLinkDetails extends StObject {
   
+  /** Google Merchant Center id of the store. */
+  var merchantId: js.UndefOr[String] = js.undefined
+  
   /** Name of the store. */
   var storeName: js.UndefOr[String] = js.undefined
   
@@ -20,6 +23,10 @@ object ChannelToStoreLinkDetails {
   }
   
   extension [Self <: ChannelToStoreLinkDetails](x: Self) {
+    
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     

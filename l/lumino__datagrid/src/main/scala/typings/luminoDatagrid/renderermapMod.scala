@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object renderermapMod {
   
-  @JSImport("@lumino/datagrid/lib/renderermap", "RendererMap")
+  @JSImport("@lumino/datagrid/types/renderermap", "RendererMap")
   @js.native
   /**
     * Construct a new renderer map.
@@ -20,16 +20,16 @@ object renderermapMod {
     *
     * @param fallback - The renderer of last resort.
     */
-  class RendererMap () extends StObject {
+  open class RendererMap () extends StObject {
     def this(values: Values) = this()
     def this(values: Unit, fallback: CellRenderer) = this()
     def this(values: Values, fallback: CellRenderer) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _fallback: js.Any = js.native
+    /* private */ var _fallback: Any = js.native
     
-    /* private */ var _values: js.Any = js.native
+    /* private */ var _values: Any = js.native
     
     /**
       * A signal emitted when the renderer map has changed.
@@ -70,7 +70,7 @@ object renderermapMod {
     /**
       * A type alias for a `RendererMap` values type.
       */
-    /* Inlined {[ R in @lumino/datagrid.@lumino/datagrid/lib/datamodel.DataModel.CellRegion ]:? @lumino/datagrid.@lumino/datagrid/lib/renderermap.RendererMap.Resolver | @lumino/datagrid.@lumino/datagrid/lib/cellrenderer.CellRenderer | undefined} */
+    /* Inlined {[ R in @lumino/datagrid.@lumino/datagrid/types/datamodel.DataModel.CellRegion ]:? @lumino/datagrid.@lumino/datagrid/types/renderermap.RendererMap.Resolver | @lumino/datagrid.@lumino/datagrid/types/cellrenderer.CellRenderer | undefined} */
     trait Values extends StObject {
       
       var body: js.UndefOr[Resolver | CellRenderer] = js.undefined

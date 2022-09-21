@@ -8,7 +8,7 @@ trait DropDownListFilteringEvent
   extends StObject
      with DropDownListEvent {
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[Any] = js.undefined
 }
 object DropDownListFilteringEvent {
   
@@ -19,7 +19,7 @@ object DropDownListFilteringEvent {
   
   extension [Self <: DropDownListFilteringEvent](x: Self) {
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }

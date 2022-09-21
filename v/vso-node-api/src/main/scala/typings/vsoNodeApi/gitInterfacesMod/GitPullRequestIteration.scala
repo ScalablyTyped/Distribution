@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait GitPullRequestIteration extends StObject {
   /**
     * A collection of related REST reference links.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Author of the pull request iteration.
@@ -36,7 +35,7 @@ trait GitPullRequestIteration extends StObject {
   /**
     * The creation date of the pull request iteration.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * Description of the pull request iteration.
@@ -76,17 +75,17 @@ trait GitPullRequestIteration extends StObject {
   /**
     * The updated date of the pull request iteration.
     */
-  var updatedDate: Date
+  var updatedDate: js.Date
 }
 object GitPullRequestIteration {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: IdentityRef,
     changeList: js.Array[GitPullRequestChange],
     commits: js.Array[GitCommitRef],
     commonRefCommit: GitCommitRef,
-    createdDate: Date,
+    createdDate: js.Date,
     description: String,
     hasMoreCommits: Boolean,
     id: Double,
@@ -94,7 +93,7 @@ object GitPullRequestIteration {
     reason: IterationReason,
     sourceRefCommit: GitCommitRef,
     targetRefCommit: GitCommitRef,
-    updatedDate: Date
+    updatedDate: js.Date
   ): GitPullRequestIteration = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], changeList = changeList.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], commonRefCommit = commonRefCommit.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasMoreCommits = hasMoreCommits.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sourceRefCommit = sourceRefCommit.asInstanceOf[js.Any], targetRefCommit = targetRefCommit.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestIteration]
@@ -106,15 +105,15 @@ object GitPullRequestIteration {
     
     inline def setChangeList(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
     
-    inline def setChangeListVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeList", js.Array(value :_*))
+    inline def setChangeListVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeList", js.Array(value*))
     
     inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setCommonRefCommit(value: GitCommitRef): Self = StObject.set(x, "commonRefCommit", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -130,8 +129,8 @@ object GitPullRequestIteration {
     
     inline def setTargetRefCommit(value: GitCommitRef): Self = StObject.set(x, "targetRefCommit", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

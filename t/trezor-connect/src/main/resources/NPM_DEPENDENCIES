@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "trezor-connect" : "8.2.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "trezor-connect" : "8.2.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

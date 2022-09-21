@@ -10,6 +10,9 @@ trait Version extends StObject {
   /** Serving configuration for Google Cloud Endpoints (https://cloud.google.com/appengine/docs/python/endpoints/).Only returned in GET requests if view=FULL is set. */
   var apiConfig: js.UndefOr[ApiConfigHandler] = js.undefined
   
+  /** Allows App Engine second generation runtimes to access the legacy bundled services. */
+  var appEngineApis: js.UndefOr[Boolean] = js.undefined
+  
   /** Automatic scaling is based on request rate, response latencies, and other application metrics. Instances are dynamically created and destroyed as needed in order to handle traffic. */
   var automaticScaling: js.UndefOr[AutomaticScaling] = js.undefined
   
@@ -23,14 +26,14 @@ trait Version extends StObject {
   var betaSettings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
   ] = js.undefined
   
   /** Environment variables available to the build environment.Only returned in GET requests if view=FULL is set. */
   var buildEnvVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
   ] = js.undefined
   
   /** Time that this version was created.@OutputOnly */
@@ -65,7 +68,7 @@ trait Version extends StObject {
   var envVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
   ] = js.undefined
   
   /** Custom static error pages. Limited to 10KB per page.Only returned in GET requests if view=FULL is set. */
@@ -138,6 +141,12 @@ trait Version extends StObject {
   var runtimeMainExecutablePath: js.UndefOr[String] = js.undefined
   
   /**
+    * The identity that the deployed version will run as. Admin API will use the App Engine Appspot service account as default if this field is neither provided in app.yaml file nor
+    * through CLI flag.
+    */
+  var serviceAccount: js.UndefOr[String] = js.undefined
+  
+  /**
     * Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an invalid value. Defaults to
     * SERVING.
     */
@@ -171,6 +180,10 @@ object Version {
     
     inline def setApiConfigUndefined: Self = StObject.set(x, "apiConfig", js.undefined)
     
+    inline def setAppEngineApis(value: Boolean): Self = StObject.set(x, "appEngineApis", value.asInstanceOf[js.Any])
+    
+    inline def setAppEngineApisUndefined: Self = StObject.set(x, "appEngineApis", js.undefined)
+    
     inline def setAutomaticScaling(value: AutomaticScaling): Self = StObject.set(x, "automaticScaling", value.asInstanceOf[js.Any])
     
     inline def setAutomaticScalingUndefined: Self = StObject.set(x, "automaticScaling", js.undefined)
@@ -182,7 +195,7 @@ object Version {
     inline def setBetaSettings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
     ): Self = StObject.set(x, "betaSettings", value.asInstanceOf[js.Any])
     
     inline def setBetaSettingsUndefined: Self = StObject.set(x, "betaSettings", js.undefined)
@@ -190,7 +203,7 @@ object Version {
     inline def setBuildEnvVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
     ): Self = StObject.set(x, "buildEnvVariables", value.asInstanceOf[js.Any])
     
     inline def setBuildEnvVariablesUndefined: Self = StObject.set(x, "buildEnvVariables", js.undefined)
@@ -230,7 +243,7 @@ object Version {
     inline def setEnvVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
     ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
@@ -239,13 +252,13 @@ object Version {
     
     inline def setErrorHandlersUndefined: Self = StObject.set(x, "errorHandlers", js.undefined)
     
-    inline def setErrorHandlersVarargs(value: ErrorHandler*): Self = StObject.set(x, "errorHandlers", js.Array(value :_*))
+    inline def setErrorHandlersVarargs(value: ErrorHandler*): Self = StObject.set(x, "errorHandlers", js.Array(value*))
     
     inline def setHandlers(value: js.Array[UrlMap]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    inline def setHandlersVarargs(value: UrlMap*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+    inline def setHandlersVarargs(value: UrlMap*): Self = StObject.set(x, "handlers", js.Array(value*))
     
     inline def setHealthCheck(value: HealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
@@ -259,7 +272,7 @@ object Version {
     
     inline def setInboundServicesUndefined: Self = StObject.set(x, "inboundServices", js.undefined)
     
-    inline def setInboundServicesVarargs(value: String*): Self = StObject.set(x, "inboundServices", js.Array(value :_*))
+    inline def setInboundServicesVarargs(value: String*): Self = StObject.set(x, "inboundServices", js.Array(value*))
     
     inline def setInstanceClass(value: String): Self = StObject.set(x, "instanceClass", value.asInstanceOf[js.Any])
     
@@ -269,7 +282,7 @@ object Version {
     
     inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
     
-    inline def setLibrariesVarargs(value: Library*): Self = StObject.set(x, "libraries", js.Array(value :_*))
+    inline def setLibrariesVarargs(value: Library*): Self = StObject.set(x, "libraries", js.Array(value*))
     
     inline def setLivenessCheck(value: LivenessCheck): Self = StObject.set(x, "livenessCheck", value.asInstanceOf[js.Any])
     
@@ -315,6 +328,10 @@ object Version {
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    
     inline def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
     
     inline def setServingStatusUndefined: Self = StObject.set(x, "servingStatus", js.undefined)
@@ -339,6 +356,6 @@ object Version {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

@@ -20,7 +20,7 @@ object Query {
   /**Contains information about a keyword based search query.*/
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQuery")
   @js.native
-  class KeywordQuery protected ()
+  open class KeywordQuery protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQuery {
     def this(context: ClientContext) = this()
@@ -28,7 +28,7 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames")
   @js.native
-  class KeywordQueryObjectPropertyNames ()
+  open class KeywordQueryObjectPropertyNames ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames
   object KeywordQueryObjectPropertyNames {
@@ -74,13 +74,13 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties")
   @js.native
-  class KeywordQueryProperties ()
+  open class KeywordQueryProperties ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames")
   @js.native
-  class KeywordQueryPropertyNames ()
+  open class KeywordQueryPropertyNames ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames
   object KeywordQueryPropertyNames {
@@ -126,18 +126,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion")
   @js.native
-  class PersonalResultSuggestion ()
+  open class PersonalResultSuggestion ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_highlightedTitle(): String = js.native
@@ -172,18 +172,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.PopularQuery")
   @js.native
-  class PopularQuery ()
+  open class PopularQuery ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PopularQuery {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_LCID(): Double = js.native
@@ -219,13 +219,13 @@ object Query {
   /**Contains information common to all types of search queries.*/
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.Query")
   @js.native
-  class Query ()
+  open class Query ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames")
   @js.native
-  class QueryObjectPropertyNames ()
+  open class QueryObjectPropertyNames ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames
   object QueryObjectPropertyNames {
@@ -250,13 +250,13 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPersonalizationData")
   @js.native
-  class QueryPersonalizationData ()
+  open class QueryPersonalizationData ()
     extends StObject
        with ClientObject
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames")
   @js.native
-  class QueryPropertyNames ()
+  open class QueryPropertyNames ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames
   object QueryPropertyNames {
@@ -513,18 +513,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue")
   @js.native
-  class QueryPropertyValue ()
+  open class QueryPropertyValue ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_boolVal(): Boolean = js.native
@@ -587,18 +587,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery")
   @js.native
-  class QuerySuggestionQuery ()
+  open class QuerySuggestionQuery ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_isPersonal(): Boolean = js.native
@@ -621,18 +621,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QuerySuggestionResults")
   @js.native
-  class QuerySuggestionResults ()
+  open class QuerySuggestionResults ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionResults {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_peopleNames(): js.Array[String] = js.native
@@ -667,7 +667,7 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
   @js.native
-  class QueryUtility ()
+  open class QueryUtility ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryUtility
   object QueryUtility {
@@ -681,13 +681,13 @@ object Query {
     @js.native
     def create: js.Function2[
         /* name */ String, 
-        /* val */ js.Any, 
+        /* val */ Any, 
         typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue
       ] = js.native
     inline def create_=(
       x: js.Function2[
           /* name */ String, 
-          /* val */ js.Any, 
+          /* val */ Any, 
           typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
@@ -711,19 +711,19 @@ object Query {
     @js.native
     def queryPropertyValueToObject: js.Function1[
         /* val */ typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue, 
-        js.Any
+        Any
       ] = js.native
     inline def queryPropertyValueToObject_=(
       x: js.Function1[
           /* val */ typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue, 
-          js.Any
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryPropertyValueToObject")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.RankingLabeling")
   @js.native
-  class RankingLabeling protected ()
+  open class RankingLabeling protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.RankingLabeling {
     def this(context: ClientContext) = this()
@@ -731,18 +731,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRule")
   @js.native
-  class ReorderingRule ()
+  open class ReorderingRule ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRule {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_boost(): Double = js.native
@@ -799,18 +799,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ResultTable")
   @js.native
-  class ResultTable ()
+  open class ResultTable ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_groupTemplateId(): String = js.native
@@ -819,7 +819,7 @@ object Query {
     override def get_itemTemplateId(): String = js.native
     
     /* CompleteClass */
-    override def get_properties(): StringDictionary[js.Any] = js.native
+    override def get_properties(): StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override def get_queryId(): String = js.native
@@ -828,7 +828,7 @@ object Query {
     override def get_queryRuleId(): String = js.native
     
     /* CompleteClass */
-    override def get_resultRows(): js.Array[StringDictionary[js.Any]] = js.native
+    override def get_resultRows(): js.Array[StringDictionary[Any]] = js.native
     
     /* CompleteClass */
     override def get_resultTitle(): String = js.native
@@ -852,7 +852,7 @@ object Query {
     override def get_typeId(): String = js.native
     
     /* CompleteClass */
-    override def initPropertiesFromJson(parentNode: js.Any): Unit = js.native
+    override def initPropertiesFromJson(parentNode: Any): Unit = js.native
     
     /* CompleteClass */
     override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
@@ -860,18 +860,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ResultTableCollection")
   @js.native
-  class ResultTableCollection ()
+  open class ResultTableCollection ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def getEnumerator(): IEnumerator[typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable] = js.native
@@ -886,7 +886,7 @@ object Query {
     override def get_item(index: Double): typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable = js.native
     
     /* CompleteClass */
-    override def get_properties(): StringDictionary[js.Any] = js.native
+    override def get_properties(): StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override def get_queryErrors(): StringDictionary[ControlMessage] = js.native
@@ -904,7 +904,7 @@ object Query {
     override def get_typeId(): String = js.native
     
     /* CompleteClass */
-    override def initPropertiesFromJson(parentNode: js.Any): Unit = js.native
+    override def initPropertiesFromJson(parentNode: Any): Unit = js.native
     
     /* CompleteClass */
     override def set_elapsedTime(value: Double): Unit = js.native
@@ -916,7 +916,7 @@ object Query {
   /**Executes queries against a search server.*/
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.SearchExecutor")
   @js.native
-  class SearchExecutor protected ()
+  open class SearchExecutor protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SearchExecutor {
     def this(context: ClientContext) = this()
@@ -924,18 +924,18 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.Sort")
   @js.native
-  class Sort ()
+  open class Sort ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Sort {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_direction(): SortDirection = js.native
@@ -974,7 +974,7 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.StringCollection")
   @js.native
-  class StringCollection protected ()
+  open class StringCollection protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.StringCollection {
     def this(context: ClientContext) = this()

@@ -16,7 +16,7 @@ trait CompilerOptions extends StObject {
   
   var modules: js.UndefOr[js.Array[ModuleOptions]] = js.undefined
   
-  var outputSourceRange: js.UndefOr[js.Any] = js.undefined
+  var outputSourceRange: js.UndefOr[Any] = js.undefined
   
   var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   
@@ -39,9 +39,9 @@ object CompilerOptions {
     
     inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
-    inline def setModulesVarargs(value: ModuleOptions*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleOptions*): Self = StObject.set(x, "modules", js.Array(value*))
     
-    inline def setOutputSourceRange(value: js.Any): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
+    inline def setOutputSourceRange(value: Any): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
     
     inline def setOutputSourceRangeUndefined: Self = StObject.set(x, "outputSourceRange", js.undefined)
     

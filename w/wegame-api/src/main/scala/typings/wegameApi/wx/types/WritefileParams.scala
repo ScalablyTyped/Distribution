@@ -1,6 +1,5 @@
 package typings.wegameApi.wx.types
 
-import typings.std.ArrayBuffer
 import typings.wegameApi.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait WritefileParams extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: String | ArrayBuffer
+  var data: String | js.typedarray.ArrayBuffer
   
   var encoding: js.UndefOr[FileContentEncoding] = js.undefined
   
@@ -22,7 +21,7 @@ trait WritefileParams extends StObject {
 }
 object WritefileParams {
   
-  inline def apply(data: String | ArrayBuffer, filePath: String): WritefileParams = {
+  inline def apply(data: String | js.typedarray.ArrayBuffer, filePath: String): WritefileParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritefileParams]
   }
@@ -33,7 +32,7 @@ object WritefileParams {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEncoding(value: FileContentEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

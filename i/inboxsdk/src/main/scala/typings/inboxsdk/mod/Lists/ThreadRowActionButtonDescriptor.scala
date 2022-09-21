@@ -9,7 +9,7 @@ trait ThreadRowActionButtonDescriptor extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
   var title: String
   
@@ -31,7 +31,7 @@ object ThreadRowActionButtonDescriptor {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setOnClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     

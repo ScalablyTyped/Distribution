@@ -28,7 +28,7 @@ object AccountsListResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

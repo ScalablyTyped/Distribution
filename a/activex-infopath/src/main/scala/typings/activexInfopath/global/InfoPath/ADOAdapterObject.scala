@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ADOAdapterObject")
 @js.native
-/* private */ class ADOAdapterObject ()
+/* private */ open class ADOAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.ADOAdapterObject {
   

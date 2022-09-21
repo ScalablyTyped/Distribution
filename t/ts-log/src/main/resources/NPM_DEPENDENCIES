@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-log" : "2.2.3"
+      "ts-log" : "2.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-log" : "2.2.3"
+      "ts-log" : "2.2.5"
     }
   ],
   "compile-devDependencies" : [

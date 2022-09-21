@@ -49,7 +49,7 @@ object DescribeConfigurationSetResponse {
     
     inline def setEventDestinationsUndefined: Self = StObject.set(x, "EventDestinations", js.undefined)
     
-    inline def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value :_*))
+    inline def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value*))
     
     inline def setReputationOptions(value: ReputationOptions): Self = StObject.set(x, "ReputationOptions", value.asInstanceOf[js.Any])
     

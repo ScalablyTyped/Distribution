@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderReturnServiceCharge")
 @js.native
-class OrderReturnServiceCharge () extends StObject {
+open class OrderReturnServiceCharge () extends StObject {
   
   /**
     * The amount of a non-percentage based service charge. Exactly one of `percentage` or `amount_money` should be set.

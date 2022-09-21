@@ -11,9 +11,9 @@ gulp plugin, compressed es6+ code.
 | Full name          | gulp-terser |
 | Keywords           | gulp, gulpplugin, uglify-es, terser |
 | # releases         | 10 |
-| # dependents       | 68 |
-| # downloads        | 1633847 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 264552.0 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/duan602728596/gulp-terser#readme)

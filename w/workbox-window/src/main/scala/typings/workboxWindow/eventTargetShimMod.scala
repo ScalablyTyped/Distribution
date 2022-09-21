@@ -9,7 +9,7 @@ object eventTargetShimMod {
   
   @JSImport("workbox-window/utils/EventTargetShim", "EventTargetShim")
   @js.native
-  class EventTargetShim () extends StObject {
+  open class EventTargetShim () extends StObject {
     
     def addEventListener(`type`: String, listener: EventListenerShim): Unit = js.native
     

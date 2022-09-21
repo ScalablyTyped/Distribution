@@ -8,12 +8,16 @@ trait OscillatorOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var detune: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var frequency: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var periodicWave: js.UndefOr[PeriodicWave] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[OscillatorType] = js.undefined
 }
 object OscillatorOptions {

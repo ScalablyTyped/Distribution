@@ -5,18 +5,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "Dialog")
+@JSImport("puppeteer-core", "Dialog")
 @js.native
-class Dialog protected ()
-  extends typings.puppeteerCore.dialogMod.Dialog {
+open class Dialog () extends StObject {
+  
   /**
-    * @internal
+    * @param promptText - optional text that will be entered in the dialog
+    * prompt. Has no effect if the dialog's type is not `prompt`.
+    *
+    * @returns A promise that resolves when the dialog has been accepted.
     */
-  def this(client: typings.puppeteerCore.connectionMod.CDPSession, `type`: DialogType, message: String) = this()
-  def this(
-    client: typings.puppeteerCore.connectionMod.CDPSession,
-    `type`: DialogType,
-    message: String,
-    defaultValue: String
-  ) = this()
+  def accept(): js.Promise[Unit] = js.native
+  def accept(promptText: String): js.Promise[Unit] = js.native
+  
+  /**
+    * @returns The default value of the prompt, or an empty string if the dialog
+    * is not a `prompt`.
+    */
+  def defaultValue(): String = js.native
+  
+  /**
+    * @returns A promise which will resolve once the dialog has been dismissed
+    */
+  def dismiss(): js.Promise[Unit] = js.native
+  
+  /**
+    * @returns The message displayed in the dialog.
+    */
+  def message(): String = js.native
+  
+  /* private */ var `private`: Any = js.native
+  
+  /* Excluded from this release type: __constructor */
+  /**
+    * @returns The type of the dialog.
+    */
+  def `type`(): DialogType = js.native
 }

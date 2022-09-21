@@ -56,7 +56,7 @@ object ExtensionRequestsEvent {
     
     inline def setRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    inline def setRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "requests", js.Array(value*))
     
     inline def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }

@@ -10,11 +10,11 @@ trait DeviceWatcher
 object DeviceWatcher {
   
   inline def apply(
-    onadded: js.Any,
-    onenumerationcompleted: js.Any,
-    onremoved: js.Any,
-    onstopped: js.Any,
-    onupdated: js.Any,
+    onadded: Any,
+    onenumerationcompleted: Any,
+    onremoved: Any,
+    onstopped: Any,
+    onupdated: Any,
     start: () => Unit,
     status: DeviceWatcherStatus,
     stop: () => Unit

@@ -22,7 +22,7 @@ trait CustomizedLoadMetricSpecification extends StObject {
   var Namespace: MetricNamespace
   
   /**
-    * The statistic of the metric. Currently, the value must always be Sum. 
+    * The statistic of the metric. The only valid value is Sum.
     */
   var Statistic: MetricStatistic
   
@@ -44,7 +44,7 @@ object CustomizedLoadMetricSpecification {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

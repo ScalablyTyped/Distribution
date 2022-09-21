@@ -44,7 +44,7 @@ trait UniformCoreOptions extends StObject {
   
   var resetDefaultHtml: js.UndefOr[String] = js.undefined
   
-  var resetSelector: js.UndefOr[js.Any] = js.undefined
+  var resetSelector: js.UndefOr[Any] = js.undefined
   
   var selectAutoWidth: js.UndefOr[Boolean] = js.undefined
   
@@ -145,7 +145,7 @@ object UniformCoreOptions {
     
     inline def setResetDefaultHtmlUndefined: Self = StObject.set(x, "resetDefaultHtml", js.undefined)
     
-    inline def setResetSelector(value: js.Any): Self = StObject.set(x, "resetSelector", value.asInstanceOf[js.Any])
+    inline def setResetSelector(value: Any): Self = StObject.set(x, "resetSelector", value.asInstanceOf[js.Any])
     
     inline def setResetSelectorUndefined: Self = StObject.set(x, "resetSelector", js.undefined)
     

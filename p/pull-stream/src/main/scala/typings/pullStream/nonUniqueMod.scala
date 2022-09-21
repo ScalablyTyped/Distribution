@@ -12,7 +12,7 @@ object nonUniqueMod {
     */
   inline def apply[InOut](): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Through_[InOut, InOut]]
   inline def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(prop.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
-  inline def apply[InOut](prop: js.Function1[/* data */ InOut, js.Any]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(prop.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
+  inline def apply[InOut](prop: js.Function1[/* data */ InOut, Any]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(prop.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
   
   @JSImport("pull-stream/throughs/non-unique", JSImport.Namespace)
   @js.native

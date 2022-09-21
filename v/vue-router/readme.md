@@ -1,24 +1,23 @@
 
 # Scala.js typings for vue-router
 
-Typings are for version 3.4.9
+Typings are for version 4.1.5
 
-## Library description:
-Official router for Vue.js 2
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vue-router |
-| Keywords           | vue, router, routing |
-| # releases         | 68 |
-| # dependents       | 9698 |
-| # downloads        | 66149743 |
-| # stars            | 40 |
+| Keywords           | - |
+| # releases         | 59 |
+| # dependents       | 0.0 |
+| # downloads        | 9161187.333333334 |
+| # stars            | 2368.0 |
 
 ## Links
-- [Homepage](https://github.com/vuejs/vue-router#readme)
-- [Bugs](https://github.com/vuejs/vue-router/issues)
-- [Repository](https://github.com/vuejs/vue-router)
+- [Homepage](https://github.com/vuejs/router#readme)
+- [Bugs](https://github.com/vuejs/router/issues)
+- [Repository](https://github.com/vuejs/router)
 - [Npm](https://www.npmjs.com/package/vue-router)
     
 

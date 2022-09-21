@@ -72,25 +72,25 @@ object ContainerSpec {
     
     inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setCapabilityAdd(value: js.Array[String]): Self = StObject.set(x, "CapabilityAdd", value.asInstanceOf[js.Any])
     
     inline def setCapabilityAddUndefined: Self = StObject.set(x, "CapabilityAdd", js.undefined)
     
-    inline def setCapabilityAddVarargs(value: String*): Self = StObject.set(x, "CapabilityAdd", js.Array(value :_*))
+    inline def setCapabilityAddVarargs(value: String*): Self = StObject.set(x, "CapabilityAdd", js.Array(value*))
     
     inline def setCapabilityDrop(value: js.Array[String]): Self = StObject.set(x, "CapabilityDrop", value.asInstanceOf[js.Any])
     
     inline def setCapabilityDropUndefined: Self = StObject.set(x, "CapabilityDrop", js.undefined)
     
-    inline def setCapabilityDropVarargs(value: String*): Self = StObject.set(x, "CapabilityDrop", js.Array(value :_*))
+    inline def setCapabilityDropVarargs(value: String*): Self = StObject.set(x, "CapabilityDrop", js.Array(value*))
     
     inline def setCommand(value: js.Array[String]): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     inline def setCommandUndefined: Self = StObject.set(x, "Command", js.undefined)
     
-    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "Command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "Command", js.Array(value*))
     
     inline def setDNSConfig(value: DNSConfig): Self = StObject.set(x, "DNSConfig", value.asInstanceOf[js.Any])
     
@@ -104,13 +104,13 @@ object ContainerSpec {
     
     inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setHealthCheck(value: HealthConfig): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object ContainerSpec {
     
     inline def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
     
-    inline def setHostsVarargs(value: String*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: String*): Self = StObject.set(x, "Hosts", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object ContainerSpec {
     
     inline def setMountsUndefined: Self = StObject.set(x, "Mounts", js.undefined)
     
-    inline def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value*))
     
     inline def setOpenStdin(value: Boolean): Self = StObject.set(x, "OpenStdin", value.asInstanceOf[js.Any])
     
@@ -164,7 +164,7 @@ object ContainerSpec {
     
     inline def setSecretsUndefined: Self = StObject.set(x, "Secrets", js.undefined)
     
-    inline def setSecretsVarargs(value: SecretReference*): Self = StObject.set(x, "Secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: SecretReference*): Self = StObject.set(x, "Secrets", js.Array(value*))
     
     inline def setStopGracePeriod(value: Double): Self = StObject.set(x, "StopGracePeriod", value.asInstanceOf[js.Any])
     
@@ -186,7 +186,7 @@ object ContainerSpec {
     
     inline def setUlimitsUndefined: Self = StObject.set(x, "Ulimits", js.undefined)
     
-    inline def setUlimitsVarargs(value: Ulimit*): Self = StObject.set(x, "Ulimits", js.Array(value :_*))
+    inline def setUlimitsVarargs(value: Ulimit*): Self = StObject.set(x, "Ulimits", js.Array(value*))
     
     inline def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     

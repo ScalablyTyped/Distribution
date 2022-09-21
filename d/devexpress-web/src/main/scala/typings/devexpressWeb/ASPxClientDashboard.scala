@@ -224,7 +224,7 @@ trait ASPxClientDashboard
   /**
     * Gets the DashboardControl object that is the client-side part of the Web Dashboard.
     */
-  def GetDashboardControl(): js.Any = js.native
+  def GetDashboardControl(): Any = js.native
   
   /**
     * Gets the identifier of the dashboard that is displayed in the ASPxClientDashboard.
@@ -405,7 +405,7 @@ trait ASPxClientDashboard
     * @param itemName A String that species the component name of the dashboard item.
     * @param value A value that will be used to perform a drill-down for the required element.
     */
-  def PerformDrillDown(itemName: String, value: js.Any): Unit = js.native
+  def PerformDrillDown(itemName: String, value: Any): Unit = js.native
   def PerformDrillDown(itemName: String, value: ASPxClientDashboardItemDataAxisPointTuple): Unit = js.native
   
   /**
@@ -415,7 +415,7 @@ trait ASPxClientDashboard
   def PerformDrillUp(itemName: String): Unit = js.native
   
   /**
-    * Refreshes an entire dashboard displayed in the Web Dashboard control.
+    * Refreshes dashboard items or the entire dashboard.
     */
   def Refresh(): Unit = js.native
   def Refresh(itemName: String): Unit = js.native
@@ -458,7 +458,7 @@ trait ASPxClientDashboard
     * Applies the dashboard state to the loaded dashboard.
     * @param dashboardState A JSON object that specifies the dashboard state.
     */
-  def SetDashboardState(dashboardState: js.Any): Unit = js.native
+  def SetDashboardState(dashboardState: Any): Unit = js.native
   
   /**
     * Allows you to specify options related to exporting a dashboard/dashboard item to the Excel format.

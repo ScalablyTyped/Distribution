@@ -10,10 +10,10 @@ object airplanemodeInactiveMod {
   
   @JSImport("material-ui/svg-icons/device/airplanemode-inactive", JSImport.Default)
   @js.native
-  class default () extends DeviceAirplanemodeInactive
+  open class default () extends DeviceAirplanemodeInactive
   
   @JSImport("material-ui/svg-icons/device/airplanemode-inactive", "DeviceAirplanemodeInactive")
   @js.native
-  class DeviceAirplanemodeInactive ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceAirplanemodeInactive ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

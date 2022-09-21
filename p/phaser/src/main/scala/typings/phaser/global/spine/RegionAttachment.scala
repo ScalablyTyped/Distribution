@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.RegionAttachment")
 @js.native
-class RegionAttachment protected ()
+open class RegionAttachment protected ()
   extends StObject
      with typings.phaser.spine.RegionAttachment {
   def this(name: String) = this()
@@ -37,7 +37,7 @@ class RegionAttachment protected ()
   var region: typings.phaser.spine.TextureRegion = js.native
   
   /* CompleteClass */
-  var rendererObject: js.Any = js.native
+  var rendererObject: Any = js.native
   
   /* CompleteClass */
   var rotation: Double = js.native

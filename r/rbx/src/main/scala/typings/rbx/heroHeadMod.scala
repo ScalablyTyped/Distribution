@@ -54,7 +54,7 @@ object heroHeadMod {
   
   @JSImport("rbx/layout/hero/hero-head", "HeroHead")
   @js.native
-  val HeroHead: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val HeroHead: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait HeroHeadProps extends StObject {

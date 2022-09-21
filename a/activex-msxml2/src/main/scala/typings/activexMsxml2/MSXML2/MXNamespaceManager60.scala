@@ -19,9 +19,9 @@ trait MXNamespaceManager60 extends StObject {
   
   def getPrefixes(namespaceURI: String): IMXNamespacePrefixes = js.native
   
-  def getURI(prefix: String): js.Any = js.native
+  def getURI(prefix: String): Any = js.native
   
-  def getURIFromNode(strPrefix: String, contextNode: IXMLDOMNode): js.Any = js.native
+  def getURIFromNode(strPrefix: String, contextNode: IXMLDOMNode): Any = js.native
   
   def popContext(): Unit = js.native
   

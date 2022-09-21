@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__logger
 
-Typings are for version 6.8.0
+Typings are for version 7.19.0
 
 ## Library description:
 A helper utility for logging of WebdriverIO packages
@@ -10,10 +10,10 @@ A helper utility for logging of WebdriverIO packages
 | ------------------ | :-------------: |
 | Full name          | @wdio/logger |
 | Keywords           | webdriver, wdio, wdio-utility |
-| # releases         | 32 |
-| # dependents       | 53 |
-| # downloads        | 24431519 |
-| # stars            | 0 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 4236547.666666667 |
+| # stars            | 7696.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-logger)

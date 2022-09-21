@@ -11,7 +11,7 @@ object rawSourceMod {
     */
   @JSImport("webpack-sources/lib/RawSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RawSource {
+  open class ^ protected () extends RawSource {
     def this(value: String) = this()
   }
   

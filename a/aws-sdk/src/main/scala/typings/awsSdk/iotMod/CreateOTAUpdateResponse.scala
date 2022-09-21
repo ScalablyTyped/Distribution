@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateOTAUpdateResponse extends StObject {
   
   /**
-    * The AWS IoT job ARN associated with the OTA update.
+    * The IoT job ARN associated with the OTA update.
     */
   var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.undefined
   
   /**
-    * The AWS IoT job ID associated with the OTA update.
+    * The IoT job ID associated with the OTA update.
     */
   var awsIotJobId: js.UndefOr[AwsIotJobId] = js.undefined
   

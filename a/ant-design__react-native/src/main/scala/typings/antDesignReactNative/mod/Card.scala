@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Card")
 @js.native
-class Card () extends default
+open class Card () extends default
 /* static members */
 object Card {
   

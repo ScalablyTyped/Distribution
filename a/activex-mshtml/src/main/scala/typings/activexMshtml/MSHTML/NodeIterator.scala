@@ -13,13 +13,13 @@ trait NodeIterator extends StObject {
   
   val expandEntityReferences: Boolean
   
-  val filter: js.Any
+  val filter: Any
   
-  def nextNode(): js.Any
+  def nextNode(): Any
   
-  def previousNode(): js.Any
+  def previousNode(): Any
   
-  val root: js.Any
+  val root: Any
   
   val whatToShow: Double
 }
@@ -29,10 +29,10 @@ object NodeIterator {
     Detach: () => Unit,
     MSHTMLDotNodeIterator_typekey: NodeIterator,
     expandEntityReferences: Boolean,
-    filter: js.Any,
-    nextNode: () => js.Any,
-    previousNode: () => js.Any,
-    root: js.Any,
+    filter: Any,
+    nextNode: () => Any,
+    previousNode: () => Any,
+    root: Any,
     whatToShow: Double
   ): NodeIterator = {
     val __obj = js.Dynamic.literal(Detach = js.Any.fromFunction0(Detach), expandEntityReferences = expandEntityReferences.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], nextNode = js.Any.fromFunction0(nextNode), previousNode = js.Any.fromFunction0(previousNode), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
@@ -46,15 +46,15 @@ object NodeIterator {
     
     inline def setExpandEntityReferences(value: Boolean): Self = StObject.set(x, "expandEntityReferences", value.asInstanceOf[js.Any])
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setMSHTMLDotNodeIterator_typekey(value: NodeIterator): Self = StObject.set(x, "MSHTML.NodeIterator_typekey", value.asInstanceOf[js.Any])
     
-    inline def setNextNode(value: () => js.Any): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
+    inline def setNextNode(value: () => Any): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
     
-    inline def setPreviousNode(value: () => js.Any): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
+    inline def setPreviousNode(value: () => Any): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setWhatToShow(value: Double): Self = StObject.set(x, "whatToShow", value.asInstanceOf[js.Any])
   }

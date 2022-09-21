@@ -8,5 +8,5 @@ object keysAndAttributesMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_KeysAndAttributes", "_KeysAndAttributes")
   @js.native
-  val KeysAndAttributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KeysAndAttributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

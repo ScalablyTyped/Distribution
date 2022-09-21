@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait QnAItem extends StObject {
   /**
     * Time when the review was first created
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * Unique identifier of a QnA item
@@ -30,7 +29,7 @@ trait QnAItem extends StObject {
   /**
     * Time when the review was edited/updated
     */
-  var updatedDate: Date
+  var updatedDate: js.Date
   
   /**
     * User details for the item.
@@ -40,11 +39,11 @@ trait QnAItem extends StObject {
 object QnAItem {
   
   inline def apply(
-    createdDate: Date,
+    createdDate: js.Date,
     id: Double,
     status: QnAItemStatus,
     text: String,
-    updatedDate: Date,
+    updatedDate: js.Date,
     user: UserIdentityRef
   ): QnAItem = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -53,7 +52,7 @@ object QnAItem {
   
   extension [Self <: QnAItem](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -61,7 +60,7 @@ object QnAItem {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     inline def setUser(value: UserIdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

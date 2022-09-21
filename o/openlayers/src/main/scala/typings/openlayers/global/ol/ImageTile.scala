@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.ImageTile")
 @js.native
-class ImageTile protected ()
+open class ImageTile protected ()
   extends typings.openlayers.mod.ImageTile {
   /**
     * @param tileCoord Tile coordinate.

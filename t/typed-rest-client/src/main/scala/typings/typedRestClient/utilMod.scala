@@ -1,6 +1,6 @@
 package typings.typedRestClient
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.typedRestClient.interfacesMod.IHttpClientResponse
 import typings.typedRestClient.interfacesMod.IRequestQueryParams
 import org.scalablytyped.runtime.StObject
@@ -12,6 +12,8 @@ object utilMod {
   @JSImport("typed-rest-client/Util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def buildProxyBypassRegexFromEnv(bypass: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("buildProxyBypassRegexFromEnv")(bypass.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   inline def decompressGzippedContent(buffer: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressGzippedContent")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def decompressGzippedContent(buffer: Buffer, charset: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decompressGzippedContent")(buffer.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]

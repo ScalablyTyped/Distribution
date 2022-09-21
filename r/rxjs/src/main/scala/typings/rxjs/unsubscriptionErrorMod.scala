@@ -12,36 +12,42 @@ object unsubscriptionErrorMod {
     extends StObject
        with Error {
     
-    val errors: js.Array[js.Any]
+    val errors: js.Array[Any]
   }
   object UnsubscriptionError {
     
-    @JSImport("rxjs/internal/util/UnsubscriptionError", "UnsubscriptionError")
+    @JSImport("rxjs/dist/types/internal/util/UnsubscriptionError", "UnsubscriptionError")
     @js.native
     val ^ : UnsubscriptionErrorCtor = js.native
     
     extension [Self <: UnsubscriptionError](x: Self) {
       
-      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/internal/util/UnsubscriptionError", "UnsubscriptionError")
+  @JSImport("rxjs/dist/types/internal/util/UnsubscriptionError", "UnsubscriptionError")
   @js.native
-  class UnsubscriptionErrorCls protected ()
+  open class UnsubscriptionErrorCls protected ()
     extends StObject
        with UnsubscriptionError {
-    def this(errors: js.Array[js.Any]) = this()
+    /**
+      * @deprecated Internal implementation detail. Do not construct error instances.
+      * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+      */
+    def this(errors: js.Array[Any]) = this()
     
     /* CompleteClass */
-    override val errors: js.Array[js.Any] = js.native
+    override val errors: js.Array[Any] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -49,5 +55,9 @@ object unsubscriptionErrorMod {
   @js.native
   trait UnsubscriptionErrorCtor
     extends StObject
-       with Instantiable1[/* errors */ js.Array[js.Any], UnsubscriptionError]
+       with /**
+    * @deprecated Internal implementation detail. Do not construct error instances.
+    * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+    */
+  Instantiable1[/* errors */ js.Array[Any], UnsubscriptionError]
 }

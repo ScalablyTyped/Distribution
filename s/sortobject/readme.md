@@ -9,11 +9,11 @@ Returns a copy of an object, sorted deeply by its keys, without mangling any arr
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sortobject |
-| Keywords           | array, browser, comparator, deep, deeply, deno, deno-edition, deno-entry, denoland, esnext, export-default, keys, module, node, object, sort, typed, types, typescript |
-| # releases         | 52 |
-| # dependents       | 9 |
-| # downloads        | 2507413 |
-| # stars            | 0 |
+| Keywords           | array, browser, comparator, deep, deeply, es2019, export-default, keys, module, node, object, sort, typed, types, typescript |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 334378.6666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/bevry/sortobject)

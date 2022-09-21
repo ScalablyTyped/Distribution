@@ -28,7 +28,7 @@ trait CustomLabel extends StObject {
   
   var PageSize: WdCustomLabelPageSize
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SideMargin: Double
   
@@ -57,7 +57,7 @@ object CustomLabel {
     NumberAcross: Double,
     NumberDown: Double,
     PageSize: WdCustomLabelPageSize,
-    Parent: js.Any,
+    Parent: Any,
     SideMargin: Double,
     TopMargin: Double,
     Valid: Boolean,
@@ -94,7 +94,7 @@ object CustomLabel {
     
     inline def setPageSize(value: WdCustomLabelPageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSideMargin(value: Double): Self = StObject.set(x, "SideMargin", value.asInstanceOf[js.Any])
     

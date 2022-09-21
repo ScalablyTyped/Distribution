@@ -91,18 +91,18 @@ object anon {
   
   trait FromName extends StObject {
     
-    def fromName(key: js.Any): Double
+    def fromName(key: Any): Double
   }
   object FromName {
     
-    inline def apply(fromName: js.Any => Double): FromName = {
+    inline def apply(fromName: Any => Double): FromName = {
       val __obj = js.Dynamic.literal(fromName = js.Any.fromFunction1(fromName))
       __obj.asInstanceOf[FromName]
     }
     
     extension [Self <: FromName](x: Self) {
       
-      inline def setFromName(value: js.Any => Double): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
+      inline def setFromName(value: Any => Double): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
     }
   }
 }

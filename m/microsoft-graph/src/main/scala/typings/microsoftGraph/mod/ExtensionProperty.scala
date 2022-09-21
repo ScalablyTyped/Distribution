@@ -18,13 +18,13 @@ trait ExtensionProperty
     */
   var dataType: js.UndefOr[String] = js.undefined
   
-  // Indicates if this extension property was sycned from onpremises directory using Azure AD Connect. Read-only.
+  // Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only.
   var isSyncedFromOnPremises: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Name of the extension property. Not nullable.
+  // Name of the extension property. Not nullable. Supports $filter (eq).
   var name: js.UndefOr[String] = js.undefined
   
-  // Following values are supported. Not nullable. UserGroupOrganizationDeviceApplication
+  // Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
   var targetObjects: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExtensionProperty {
@@ -60,6 +60,6 @@ object ExtensionProperty {
     
     inline def setTargetObjectsUndefined: Self = StObject.set(x, "targetObjects", js.undefined)
     
-    inline def setTargetObjectsVarargs(value: String*): Self = StObject.set(x, "targetObjects", js.Array(value :_*))
+    inline def setTargetObjectsVarargs(value: String*): Self = StObject.set(x, "targetObjects", js.Array(value*))
   }
 }

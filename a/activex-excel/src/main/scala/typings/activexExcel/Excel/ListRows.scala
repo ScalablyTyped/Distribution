@@ -24,10 +24,10 @@ trait ListRows extends StObject {
   def Item(Index: String): ListRow = js.native
   def Item(Index: Double): ListRow = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Add(): ListRow = js.native
-  def _Add(Position: js.Any): ListRow = js.native
+  def _Add(Position: Any): ListRow = js.native
   
-  def _Default(Index: js.Any): ListRow = js.native
+  def _Default(Index: Any): ListRow = js.native
 }

@@ -33,6 +33,6 @@ object BuiltinSlotTypeMetadata {
     
     inline def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
-    inline def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
+    inline def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value*))
   }
 }

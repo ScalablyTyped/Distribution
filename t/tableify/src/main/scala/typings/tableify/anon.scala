@@ -11,18 +11,17 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(obj: js.Any): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T, columns: Unit, parents: js.Array[js.Any]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`, parents: js.Array[js.Any]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[js.Any]): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`): String = js.native
-    def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[js.Any]): String = js.native
+    def apply(obj: Any): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[Any]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: T, columns: Unit, parents: js.Array[Any]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: T, columns: `false`): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: T, columns: `false`, parents: js.Array[Any]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[Any]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[Any]): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: `false`): String = js.native
+    def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[Any]): String = js.native
   }
 }

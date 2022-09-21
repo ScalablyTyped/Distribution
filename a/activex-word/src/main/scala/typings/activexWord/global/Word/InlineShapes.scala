@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.InlineShapes")
 @js.native
-/* private */ class InlineShapes ()
+/* private */ open class InlineShapes ()
   extends StObject
      with typings.activexWord.Word.InlineShapes

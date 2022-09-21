@@ -10,5 +10,5 @@ trait SliderFactory
   extends Factory[
       SliderConstructor, 
       InstanceType[SliderConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[SliderConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

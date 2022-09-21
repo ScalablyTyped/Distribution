@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.AuthenticationData
+import typings.mqttPacket.anon.AuthenticationMethod
 import typings.mqttPacket.anon.Payload
 import typings.mqttPacket.mqttPacketNumbers.`3`
 import typings.mqttPacket.mqttPacketNumbers.`4`
@@ -8,7 +8,7 @@ import typings.mqttPacket.mqttPacketNumbers.`5`
 import typings.mqttPacket.mqttPacketStrings.MQIsdp
 import typings.mqttPacket.mqttPacketStrings.MQTT
 import typings.mqttPacket.mqttPacketStrings.connect
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait IConnectPacket
   
   var password: js.UndefOr[Buffer] = js.undefined
   
-  var properties: js.UndefOr[AuthenticationData] = js.undefined
+  var properties: js.UndefOr[AuthenticationMethod] = js.undefined
   
   var protocolId: js.UndefOr[MQTT | MQIsdp] = js.undefined
   
@@ -64,7 +64,7 @@ object IConnectPacket {
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    inline def setProperties(value: AuthenticationData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: AuthenticationMethod): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

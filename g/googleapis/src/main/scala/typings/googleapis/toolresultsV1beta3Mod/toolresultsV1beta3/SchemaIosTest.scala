@@ -1,0 +1,63 @@
+package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaIosTest extends StObject {
+  
+  /**
+    * Information about the application under test.
+    */
+  var iosAppInfo: js.UndefOr[SchemaIosAppInfo] = js.undefined
+  
+  /**
+    * An iOS Robo test.
+    */
+  var iosRoboTest: js.UndefOr[SchemaIosRoboTest] = js.undefined
+  
+  /**
+    * An iOS test loop.
+    */
+  var iosTestLoop: js.UndefOr[SchemaIosTestLoop] = js.undefined
+  
+  /**
+    * An iOS XCTest.
+    */
+  var iosXcTest: js.UndefOr[SchemaIosXcTest] = js.undefined
+  
+  /**
+    * Max time a test is allowed to run before it is automatically cancelled.
+    */
+  var testTimeout: js.UndefOr[SchemaDuration] = js.undefined
+}
+object SchemaIosTest {
+  
+  inline def apply(): SchemaIosTest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaIosTest]
+  }
+  
+  extension [Self <: SchemaIosTest](x: Self) {
+    
+    inline def setIosAppInfo(value: SchemaIosAppInfo): Self = StObject.set(x, "iosAppInfo", value.asInstanceOf[js.Any])
+    
+    inline def setIosAppInfoUndefined: Self = StObject.set(x, "iosAppInfo", js.undefined)
+    
+    inline def setIosRoboTest(value: SchemaIosRoboTest): Self = StObject.set(x, "iosRoboTest", value.asInstanceOf[js.Any])
+    
+    inline def setIosRoboTestUndefined: Self = StObject.set(x, "iosRoboTest", js.undefined)
+    
+    inline def setIosTestLoop(value: SchemaIosTestLoop): Self = StObject.set(x, "iosTestLoop", value.asInstanceOf[js.Any])
+    
+    inline def setIosTestLoopUndefined: Self = StObject.set(x, "iosTestLoop", js.undefined)
+    
+    inline def setIosXcTest(value: SchemaIosXcTest): Self = StObject.set(x, "iosXcTest", value.asInstanceOf[js.Any])
+    
+    inline def setIosXcTestUndefined: Self = StObject.set(x, "iosXcTest", js.undefined)
+    
+    inline def setTestTimeout(value: SchemaDuration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
+  }
+}

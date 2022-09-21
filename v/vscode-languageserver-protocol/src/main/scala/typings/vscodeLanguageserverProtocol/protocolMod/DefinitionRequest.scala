@@ -1,8 +1,9 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdefinition
+import typings.vscodeLanguageserverTypes.mod.Definition
 import typings.vscodeLanguageserverTypes.mod.Location
 import typings.vscodeLanguageserverTypes.mod.LocationLink
 import org.scalablytyped.runtime.StObject
@@ -11,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DefinitionRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DefinitionRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DefinitionRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DefinitionRequest.method")
   @js.native
   val method: textDocumentSlashdefinition = js.native
   
-  /** @deprecated Use DefinitionRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DefinitionRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[Location | LocationLink]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DefinitionRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DefinitionRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     DefinitionParams, 
-    Location | (js.Array[Location | LocationLink]) | Null, 
+    Definition | js.Array[LocationLink] | Null, 
     js.Array[Location | LocationLink], 
     Unit, 
     DefinitionRegistrationOptions

@@ -26,7 +26,7 @@ object Resources {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Resource*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Resource*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

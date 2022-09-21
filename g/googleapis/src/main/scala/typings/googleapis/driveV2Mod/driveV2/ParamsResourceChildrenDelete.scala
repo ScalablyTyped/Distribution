@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,14 @@ trait ParamsResourceChildrenDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * The ID of the child.
     */
   var childId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Deprecated. If an item is not in a shared drive and its last parent is deleted but the item itself is not, the item will be placed under its owner's root.
+    */
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the folder.
@@ -36,13 +32,13 @@ object ParamsResourceChildrenDelete {
   
   extension [Self <: ParamsResourceChildrenDelete](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     
     inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
+    
+    inline def setEnforceSingleParent(value: Boolean): Self = StObject.set(x, "enforceSingleParent", value.asInstanceOf[js.Any])
+    
+    inline def setEnforceSingleParentUndefined: Self = StObject.set(x, "enforceSingleParent", js.undefined)
     
     inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     

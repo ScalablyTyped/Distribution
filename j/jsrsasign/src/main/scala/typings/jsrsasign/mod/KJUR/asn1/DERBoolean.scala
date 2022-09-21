@@ -1,12 +1,13 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "KJUR.asn1.DERBoolean")
 @js.native
-class DERBoolean ()
+open class DERBoolean ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
   
@@ -53,4 +54,8 @@ class DERBoolean ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
 }

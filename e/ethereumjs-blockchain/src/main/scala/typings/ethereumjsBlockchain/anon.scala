@@ -8,26 +8,26 @@ object anon {
   
   trait Genesis extends StObject {
     
-    var genesis: js.Any
+    var genesis: Any
     
-    var heads: js.Any
+    var heads: Any
     
-    var rawHead: js.Any
+    var rawHead: Any
   }
   object Genesis {
     
-    inline def apply(genesis: js.Any, heads: js.Any, rawHead: js.Any): Genesis = {
+    inline def apply(genesis: Any, heads: Any, rawHead: Any): Genesis = {
       val __obj = js.Dynamic.literal(genesis = genesis.asInstanceOf[js.Any], heads = heads.asInstanceOf[js.Any], rawHead = rawHead.asInstanceOf[js.Any])
       __obj.asInstanceOf[Genesis]
     }
     
     extension [Self <: Genesis](x: Self) {
       
-      inline def setGenesis(value: js.Any): Self = StObject.set(x, "genesis", value.asInstanceOf[js.Any])
+      inline def setGenesis(value: Any): Self = StObject.set(x, "genesis", value.asInstanceOf[js.Any])
       
-      inline def setHeads(value: js.Any): Self = StObject.set(x, "heads", value.asInstanceOf[js.Any])
+      inline def setHeads(value: Any): Self = StObject.set(x, "heads", value.asInstanceOf[js.Any])
       
-      inline def setRawHead(value: js.Any): Self = StObject.set(x, "rawHead", value.asInstanceOf[js.Any])
+      inline def setRawHead(value: Any): Self = StObject.set(x, "rawHead", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,13 +39,13 @@ object anon {
     
     var `type`: String
     
-    var value: js.Any
+    var value: Any
     
     var valueEncoding: String
   }
   object Key {
     
-    inline def apply(key: String, keyEncoding: String, `type`: String, value: js.Any, valueEncoding: String): Key = {
+    inline def apply(key: String, keyEncoding: String, `type`: String, value: Any, valueEncoding: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyEncoding = keyEncoding.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueEncoding = valueEncoding.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
@@ -59,7 +59,7 @@ object anon {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueEncoding(value: String): Self = StObject.set(x, "valueEncoding", value.asInstanceOf[js.Any])
     }

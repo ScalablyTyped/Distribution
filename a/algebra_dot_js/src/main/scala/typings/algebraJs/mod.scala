@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("algebra.js", "Equation")
   @js.native
-  class Equation protected ()
+  open class Equation protected ()
     extends StObject
        with typings.algebraJs.mod.algebra.js_.Equation {
     def this(lhs: typings.algebraJs.mod.algebra.js_.Expression, rhs: Double) = this()
@@ -29,12 +29,14 @@ object mod {
     var rhs: typings.algebraJs.mod.algebra.js_.Expression = js.native
     
     /* CompleteClass */
-    override def solveFor(variable: String): typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) = js.native
+    override def solveFor(variable: String): js.UndefOr[
+        typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) | typings.algebraJs.mod.algebra.js_.Expression
+      ] = js.native
   }
   
   @JSImport("algebra.js", "Expression")
   @js.native
-  class Expression ()
+  open class Expression ()
     extends StObject
        with typings.algebraJs.mod.algebra.js_.Expression {
     def this(variable: Union) = this()
@@ -42,7 +44,7 @@ object mod {
   
   @JSImport("algebra.js", "Fraction")
   @js.native
-  class Fraction protected ()
+  open class Fraction protected ()
     extends StObject
        with typings.algebraJs.mod.algebra.js_.Fraction {
     def this(num: Double, denom: Double) = this()
@@ -83,11 +85,11 @@ object mod {
       
       inline def setCoefficients(value: js.Array[typings.algebraJs.mod.algebra.js_.Fraction]): Self = StObject.set(x, "coefficients", value.asInstanceOf[js.Any])
       
-      inline def setCoefficientsVarargs(value: typings.algebraJs.mod.algebra.js_.Fraction*): Self = StObject.set(x, "coefficients", js.Array(value :_*))
+      inline def setCoefficientsVarargs(value: typings.algebraJs.mod.algebra.js_.Fraction*): Self = StObject.set(x, "coefficients", js.Array(value*))
       
       inline def setVariables(value: js.Array[Variable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value*))
     }
   }
   
@@ -128,14 +130,18 @@ object mod {
         
         var rhs: typings.algebraJs.mod.algebra.js_.Expression
         
-        def solveFor(variable: String): typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
+        def solveFor(variable: String): js.UndefOr[
+                typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) | typings.algebraJs.mod.algebra.js_.Expression
+              ]
       }
       object Equation {
         
         inline def apply(
           lhs: typings.algebraJs.mod.algebra.js_.Expression,
           rhs: typings.algebraJs.mod.algebra.js_.Expression,
-          solveFor: String => typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
+          solveFor: String => js.UndefOr[
+                  typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) | typings.algebraJs.mod.algebra.js_.Expression
+                ]
         ): typings.algebraJs.mod.algebra.js_.Equation = {
           val __obj = js.Dynamic.literal(lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any], solveFor = js.Any.fromFunction1(solveFor))
           __obj.asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation]
@@ -148,7 +154,9 @@ object mod {
           inline def setRhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
           
           inline def setSolveFor(
-            value: String => typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
+            value: String => js.UndefOr[
+                      typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction]) | typings.algebraJs.mod.algebra.js_.Expression
+                    ]
           ): Self = StObject.set(x, "solveFor", js.Any.fromFunction1(value))
         }
       }

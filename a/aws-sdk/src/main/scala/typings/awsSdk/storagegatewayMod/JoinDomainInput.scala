@@ -17,7 +17,7 @@ trait JoinDomainInput extends StObject {
   var DomainName: typings.awsSdk.storagegatewayMod.DomainName
   
   /**
-    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
+    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and Amazon Web Services Region.
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
@@ -59,7 +59,7 @@ object JoinDomainInput {
     
     inline def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
     
-    inline def setDomainControllersVarargs(value: Host*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
+    inline def setDomainControllersVarargs(value: Host*): Self = StObject.set(x, "DomainControllers", js.Array(value*))
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

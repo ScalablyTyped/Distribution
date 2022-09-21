@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("flickity", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Flickity {
     /**
@@ -282,7 +282,7 @@ object mod {
     /**
       * Add new classic event listener
       */
-    def listener(params: js.Any*): Unit = js.native
+    def listener(params: Any*): Unit = js.native
     
     /**
       * Select the next cell.
@@ -296,7 +296,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def off(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
+    def off(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], Any]): Unit = js.native
     /**
       * Remove event listener
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -304,7 +304,7 @@ object mod {
       */
     def off(
       eventname: FlickityEvents,
-      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]
+      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], Any]
     ): Unit = js.native
     /**
       * Remove event listener
@@ -317,7 +317,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[js.Object], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     /**
@@ -332,7 +332,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     
@@ -341,7 +341,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def on(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
+    def on(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], Any]): Unit = js.native
     /**
       * bind event listener
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -349,7 +349,7 @@ object mod {
       */
     def on(
       eventname: FlickityEvents,
-      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]
+      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], Any]
     ): Unit = js.native
     /**
       * bind event listener
@@ -362,7 +362,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[X], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     /**
@@ -377,7 +377,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     
@@ -386,7 +386,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def once(eventname: String, callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]): Unit = js.native
+    def once(eventname: String, callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], Any]): Unit = js.native
     /**
       * one time event handl`er
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -398,7 +398,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[js.Object], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     /**
@@ -413,7 +413,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     /**
@@ -421,7 +421,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def once(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
+    def once(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], Any]): Unit = js.native
     
     /**
       * Pauses auto-play.
@@ -719,9 +719,9 @@ object mod {
     var imagesLoaded: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Zero-based index of the initial selected cell.
+      * Zero-based index or selector string of the initial selected cell.
       */
-    var initialIndex: js.UndefOr[Double] = js.undefined
+    var initialIndex: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Loads cell images when a cell is selected.
@@ -884,7 +884,7 @@ object mod {
       
       inline def setImagesLoadedUndefined: Self = StObject.set(x, "imagesLoaded", js.undefined)
       
-      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      inline def setInitialIndex(value: Double | String): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
       inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
@@ -944,7 +944,7 @@ object mod {
     trait JQuery extends StObject {
       
       def flickity(): this.type = js.native
-      def flickity(command: String, params: js.Any*): this.type = js.native
+      def flickity(command: String, params: Any*): this.type = js.native
       def flickity(options: Options): this.type = js.native
     }
   }

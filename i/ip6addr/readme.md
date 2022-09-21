@@ -10,10 +10,10 @@ IPv6/IPv4 address parsing and manipulation
 | ------------------ | :-------------: |
 | Full name          | ip6addr |
 | Keywords           | ip, ipv4, ipv6, cidr, subnet |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 853729 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 421574.6666666667 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/joyent/node-ip6addr#readme)

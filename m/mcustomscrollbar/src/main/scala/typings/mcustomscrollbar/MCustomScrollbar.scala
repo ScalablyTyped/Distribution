@@ -94,7 +94,7 @@ object MCustomScrollbar {
     /**
       * Mouse wheel scrolling pixels amount, value in pixels (integer) or "auto" (script calculates and sets pixels amount according to content length)
       */
-    var mouseWheelPixels: js.UndefOr[js.Any] = js.undefined
+    var mouseWheelPixels: js.UndefOr[Any] = js.undefined
     
     var scrollButtons: js.UndefOr[ScrollAmount] = js.undefined
     
@@ -213,7 +213,7 @@ object MCustomScrollbar {
       
       inline def setMouseWheel(value: Axis): Self = StObject.set(x, "mouseWheel", value.asInstanceOf[js.Any])
       
-      inline def setMouseWheelPixels(value: js.Any): Self = StObject.set(x, "mouseWheelPixels", value.asInstanceOf[js.Any])
+      inline def setMouseWheelPixels(value: Any): Self = StObject.set(x, "mouseWheelPixels", value.asInstanceOf[js.Any])
       
       inline def setMouseWheelPixelsUndefined: Self = StObject.set(x, "mouseWheelPixels", js.undefined)
       

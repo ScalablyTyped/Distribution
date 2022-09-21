@@ -1,6 +1,5 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object typesVaultNotificationConfigMod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value*))
     }
   }
   
@@ -39,7 +38,7 @@ object typesVaultNotificationConfigMod {
     /**
       * <p>A list of one or more events for which Amazon Glacier will send a notification to the specified Amazon SNS topic.</p>
       */
-    var Events: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Events: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>The Amazon Simple Notification Service (Amazon SNS) topic Amazon Resource Name (ARN).</p>
@@ -55,11 +54,11 @@ object typesVaultNotificationConfigMod {
     
     extension [Self <: VaultNotificationConfig](x: Self) {
       
-      inline def setEvents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value*))
       
       inline def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ Google Cloud Key Management Service (KMS) API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/kms |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google kms, kms, Google Cloud Key Management Service (KMS) API |
-| # releases         | 27 |
-| # dependents       | 20 |
-| # downloads        | 2929801 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 277359.0 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-kms#readme)

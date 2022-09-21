@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteAnomalySubscriptionRequest extends StObject {
   
   /**
-    *  The unique identifier of the cost anomaly subscription that you want to delete. 
+    * The unique identifier of the cost anomaly subscription that you want to delete. 
     */
   var SubscriptionArn: GenericString
 }

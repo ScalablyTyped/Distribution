@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetApnsVoipChannelCommand")
 @js.native
-class GetApnsVoipChannelCommand protected ()
+open class GetApnsVoipChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getApnsVoipChannelCommandMod.GetApnsVoipChannelCommand {
   def this(input: GetApnsVoipChannelInput) = this()
 }

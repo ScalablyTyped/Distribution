@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("Infinite")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactInfinite.mod.^
     
     @JSGlobal("Infinite")
@@ -18,6 +18,6 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def containerHeightScaleFactor(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def containerHeightScaleFactor(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

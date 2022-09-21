@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -28,13 +28,15 @@ trait PivotFieldCollection
   /**
     * Gets the number of pivot fields in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a PivotField by its name or id.
+    * Gets a PivotField by its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the PivotField to be retrieved.
@@ -42,8 +44,10 @@ trait PivotFieldCollection
   def getItem(name: String): PivotField = js.native
   
   /**
-    * Gets a PivotField by name. If the PivotField does not exist, will return a null object.
+    * Gets a PivotField by name. If the PivotField does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the PivotField to be retrieved.

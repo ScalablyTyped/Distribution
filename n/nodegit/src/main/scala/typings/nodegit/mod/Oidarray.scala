@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Oidarray")
 @js.native
-class Oidarray ()
+open class Oidarray ()
   extends typings.nodegit.oidArrayMod.Oidarray

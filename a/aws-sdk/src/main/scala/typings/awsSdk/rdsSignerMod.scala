@@ -15,7 +15,7 @@ object rdsSignerMod {
   /**
     * A signer object can be used to generate an auth token to a database.
     */
-  class Signer () extends StObject {
+  open class Signer () extends StObject {
     def this(options: SignerOptions) = this()
     
     /**

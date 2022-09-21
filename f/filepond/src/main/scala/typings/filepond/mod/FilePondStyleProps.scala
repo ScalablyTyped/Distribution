@@ -1,5 +1,7 @@
 package typings.filepond.mod
 
+import typings.filepond.filepondStrings.`compact circle`
+import typings.filepond.filepondStrings.`integrated circle`
 import typings.filepond.filepondStrings.circle
 import typings.filepond.filepondStrings.compact
 import typings.filepond.filepondStrings.integrated
@@ -53,7 +55,9 @@ trait FilePondStyleProps extends StObject {
     * Set a different layout render mode.
     * @default null
     */
-  var stylePanelLayout: js.UndefOr[integrated | compact | circle | Null] = js.undefined
+  var stylePanelLayout: js.UndefOr[
+    integrated | compact | circle | (`integrated circle`) | (`compact circle`) | Null
+  ] = js.undefined
   
   /**
     * The position of the progress indicator.
@@ -98,7 +102,7 @@ object FilePondStyleProps {
     
     inline def setStylePanelAspectRatioUndefined: Self = StObject.set(x, "stylePanelAspectRatio", js.undefined)
     
-    inline def setStylePanelLayout(value: integrated | compact | circle): Self = StObject.set(x, "stylePanelLayout", value.asInstanceOf[js.Any])
+    inline def setStylePanelLayout(value: integrated | compact | circle | (`integrated circle`) | (`compact circle`)): Self = StObject.set(x, "stylePanelLayout", value.asInstanceOf[js.Any])
     
     inline def setStylePanelLayoutNull: Self = StObject.set(x, "stylePanelLayout", null)
     

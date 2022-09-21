@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param [options] Options object
   */
-class Triangle ()
+open class Triangle ()
   extends typings.fabric.fabricImplMod.Triangle {
   def this(options: ITriangleOptions) = this()
 }
@@ -26,5 +26,5 @@ object Triangle {
     * Returns Triangle instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Triangle]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Triangle]
 }

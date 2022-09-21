@@ -1,7 +1,6 @@
 package typings.atlassianConnectJs.AP
 
 import typings.atlassianConnectJs.anon.Left
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +29,7 @@ object jira {
     /**
       * Callback that will be invoked when the date (and time) is selected by the user.
       */
-    def onSelect(isoDate: String, date: Date): Unit
+    def onSelect(isoDate: String, date: js.Date): Unit
     
     /**
       * Position of the element relative to the iframe. options.element takes precedence over it when provided.
@@ -47,7 +46,7 @@ object jira {
     inline def apply(
       date: String,
       element: HTMLElement,
-      onSelect: (String, Date) => Unit,
+      onSelect: (String, js.Date) => Unit,
       position: Left,
       showTime: Boolean
     ): DatePickerOptions = {
@@ -61,7 +60,7 @@ object jira {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setOnSelect(value: (String, Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (String, js.Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -114,25 +113,25 @@ object jira {
     /**
       * The result of the validation listener [WorkflowConfiguration.onSaveValidation]{@link WorkflowConfiguration.onSaveValidation}.
       */
-    var valid: js.Any
+    var valid: Any
     
     /**
       * The result of the [WorkflowConfiguration.onSave]{@link WorkflowConfiguration.onSave}.
       */
-    var value: js.Any
+    var value: Any
   }
   object WorkflowConfigurationTriggerResponse {
     
-    inline def apply(valid: js.Any, value: js.Any): WorkflowConfigurationTriggerResponse = {
+    inline def apply(valid: Any, value: Any): WorkflowConfigurationTriggerResponse = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkflowConfigurationTriggerResponse]
     }
     
     extension [Self <: WorkflowConfigurationTriggerResponse](x: Self) {
       
-      inline def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

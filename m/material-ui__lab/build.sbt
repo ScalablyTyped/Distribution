@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "material-ui__lab"
-version := "4.0.0-alpha.56-9d8ab9"
-scalaVersion := "3.0.1"
+version := "4.0.0-alpha.61-d62571"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20201002Z-4ba907",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20201028Z-bcb701",
-  "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-28b7d6",
-  "org.scalablytyped" %%% "jss" % "10.5.0-545e4d",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-6d26ef",
-  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-160bbc",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-67b618",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-04f4a7",
+  "org.scalablytyped" %%% "jss" % "10.9.2-08d68e",
+  "org.scalablytyped" %%% "material-ui__core" % "4.12.4-e5ede7",
+  "org.scalablytyped" %%% "material-ui__styles" % "4.11.5-16e573",
+  "org.scalablytyped" %%% "material-ui__system" % "4.12.2-2277ba",
+  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-8a5770",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-b3b55d",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty Layer; you should set the .name before adding the Layer to a Diagram.
   */
-class Layer ()
+open class Layer ()
   extends typings.go.mod.Layer

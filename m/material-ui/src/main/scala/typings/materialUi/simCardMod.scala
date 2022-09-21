@@ -10,10 +10,10 @@ object simCardMod {
   
   @JSImport("material-ui/svg-icons/hardware/sim-card", JSImport.Default)
   @js.native
-  class default () extends HardwareSimCard
+  open class default () extends HardwareSimCard
   
   @JSImport("material-ui/svg-icons/hardware/sim-card", "HardwareSimCard")
   @js.native
-  class HardwareSimCard ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareSimCard ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

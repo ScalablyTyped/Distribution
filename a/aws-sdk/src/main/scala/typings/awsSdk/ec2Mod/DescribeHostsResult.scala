@@ -29,7 +29,7 @@ object DescribeHostsResult {
     
     inline def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
     
-    inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "Hosts", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

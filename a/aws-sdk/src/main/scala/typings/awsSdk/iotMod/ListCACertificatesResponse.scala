@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCACertificatesResponse extends StObject {
   
   /**
-    * The CA certificates registered in your AWS account.
+    * The CA certificates registered in your Amazon Web Services account.
     */
   var certificates: js.UndefOr[CACertificates] = js.undefined
   
@@ -29,7 +29,7 @@ object ListCACertificatesResponse {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: CACertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: CACertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

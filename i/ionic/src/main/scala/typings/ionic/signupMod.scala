@@ -10,7 +10,7 @@ object signupMod {
   
   @JSImport("ionic/commands/signup", "SignupCommand")
   @js.native
-  class SignupCommand protected () extends Command {
+  open class SignupCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

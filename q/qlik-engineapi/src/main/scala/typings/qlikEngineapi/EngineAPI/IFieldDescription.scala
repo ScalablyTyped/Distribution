@@ -164,11 +164,11 @@ object IFieldDescription {
     
     inline def setQSrcTables(value: js.Array[String]): Self = StObject.set(x, "qSrcTables", value.asInstanceOf[js.Any])
     
-    inline def setQSrcTablesVarargs(value: String*): Self = StObject.set(x, "qSrcTables", js.Array(value :_*))
+    inline def setQSrcTablesVarargs(value: String*): Self = StObject.set(x, "qSrcTables", js.Array(value*))
     
     inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
     
     inline def setQTotalCount(value: Double): Self = StObject.set(x, "qTotalCount", value.asInstanceOf[js.Any])
   }

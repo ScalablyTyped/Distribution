@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.DomQuery")
 @js.native
-class DomQuery ()
+open class DomQuery ()
   extends StObject
      with typings.extjs.Ext.DomQuery
 /* static members */
@@ -22,10 +22,10 @@ object DomQuery {
     * @param type String Either "select" or "simple" for a simple selector match
     * @returns Function
     */
-  inline def compile(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")().asInstanceOf[js.Any]
-  inline def compile(selector: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def compile(selector: java.lang.String, `type`: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def compile(selector: Unit, `type`: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def compile(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")().asInstanceOf[Any]
+  inline def compile(selector: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def compile(selector: java.lang.String, `type`: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def compile(selector: Unit, `type`: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Filters an array of elements to only include matches of a simple selector e g
     * @param el HTMLElement[] An array of elements to filter
@@ -48,8 +48,8 @@ object DomQuery {
     * @returns Boolean
     */
   inline def is(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[Boolean]
-  inline def is(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def is(el: js.Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def is(el: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is(el: Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def is(el: Unit, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Selects an array of DOM nodes using JavaScript only implementation
@@ -59,26 +59,26 @@ object DomQuery {
     */
   inline def jsSelect(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")().asInstanceOf[typings.extjs.Ext.Array]
   inline def jsSelect(selector: java.lang.String): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-  inline def jsSelect(selector: java.lang.String, root: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def jsSelect(selector: Unit, root: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def jsSelect(selector: java.lang.String, root: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def jsSelect(selector: Unit, root: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Property] (Object) */
   @JSGlobal("Ext.DomQuery.matchers")
   @js.native
-  def matchers: js.Any = js.native
-  inline def matchers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchers")(x.asInstanceOf[js.Any])
+  def matchers: Any = js.native
+  inline def matchers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchers")(x.asInstanceOf[js.Any])
   
   /** [Property] (Object) */
   @JSGlobal("Ext.DomQuery.operators")
   @js.native
-  def operators: js.Any = js.native
-  inline def operators_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operators")(x.asInstanceOf[js.Any])
+  def operators: Any = js.native
+  inline def operators_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operators")(x.asInstanceOf[js.Any])
   
   /** [Property] (Object) */
   @JSGlobal("Ext.DomQuery.pseudos")
   @js.native
-  def pseudos: js.Any = js.native
-  inline def pseudos_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pseudos")(x.asInstanceOf[js.Any])
+  def pseudos: Any = js.native
+  inline def pseudos_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pseudos")(x.asInstanceOf[js.Any])
   
   /** [Method] Selects an array of DOM nodes by CSS XPath selector
     * @param path String The selector/xpath query

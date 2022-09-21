@@ -9,7 +9,7 @@ object requirePolyfillMod {
   
   @JSImport("aurelia-knockout/dist/commonjs/require-polyfill", "RequirePolyfill")
   @js.native
-  class RequirePolyfill protected () extends StObject {
+  open class RequirePolyfill protected () extends StObject {
     def this(loader: Loader) = this()
     
     var loader: Loader = js.native

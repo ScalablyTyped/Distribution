@@ -11,9 +11,9 @@ Wrap those words. Show them at what columns to start and stop.
 | Full name          | wordwrap |
 | Keywords           | word, wrap, rule, format, column |
 | # releases         | 0 |
-| # dependents       | 400 |
-| # downloads        | 709355879 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4085724666666664E7 |
+| # stars            | 143.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-wordwrap#readme)

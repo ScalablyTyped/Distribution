@@ -53,7 +53,7 @@ object XNumericControl {
     DisplayUnit: Double,
     MaxValue: Optional[Double],
     MinValue: Optional[Double],
-    Value: js.Any,
+    Value: Any,
     ValueType: `type`,
     ValueUnit: Double,
     isModified: () => Boolean,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IMsoChartGroup extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   var AxisGroup: Double = js.native
   
@@ -27,8 +27,8 @@ trait IMsoChartGroup extends StObject {
   
   var BubbleScale: Double = js.native
   
-  def CategoryCollection(): js.Any = js.native
-  def CategoryCollection(Index: js.Any): js.Any = js.native
+  def CategoryCollection(): Any = js.native
+  def CategoryCollection(Index: Any): Any = js.native
   
   val Creator: Double = js.native
   
@@ -40,8 +40,8 @@ trait IMsoChartGroup extends StObject {
   
   var FirstSliceAngle: Double = js.native
   
-  def FullCategoryCollection(): js.Any = js.native
-  def FullCategoryCollection(Index: js.Any): js.Any = js.native
+  def FullCategoryCollection(): Any = js.native
+  def FullCategoryCollection(Index: Any): Any = js.native
   
   var GapWidth: Double = js.native
   
@@ -66,14 +66,14 @@ trait IMsoChartGroup extends StObject {
   
   var Overlap: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  val RadarAxisLabels: js.Any = js.native
+  val RadarAxisLabels: Any = js.native
   
   var SecondPlotSize: Double = js.native
   
-  def SeriesCollection(): js.Any = js.native
-  def SeriesCollection(Index: js.Any): js.Any = js.native
+  def SeriesCollection(): Any = js.native
+  def SeriesCollection(Index: Any): Any = js.native
   
   val SeriesLines: IMsoSeriesLines = js.native
   
@@ -83,7 +83,7 @@ trait IMsoChartGroup extends StObject {
   
   var SplitType: XlChartSplitType = js.native
   
-  var SplitValue: js.Any = js.native
+  var SplitValue: Any = js.native
   
   var SubType: Double = js.native
   

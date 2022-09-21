@@ -29,6 +29,6 @@ object IdentityVerifications {
     
     inline def setIdentityVerificationUndefined: Self = StObject.set(x, "identityVerification", js.undefined)
     
-    inline def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value :_*))
+    inline def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value*))
   }
 }

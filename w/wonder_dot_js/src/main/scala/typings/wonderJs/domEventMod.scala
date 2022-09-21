@@ -12,9 +12,9 @@ object domEventMod {
   @JSImport("wonder.js/dist/es2015/event/object/DomEvent", "DomEvent")
   @js.native
   abstract class DomEvent protected () extends Event {
-    def this(event: js.Any, eventName: EEventName) = this()
+    def this(event: Any, eventName: EEventName) = this()
     
-    var event: js.Any = js.native
+    var event: Any = js.native
     
     def getDataFromCustomEvent(event: CustomEvent): Unit = js.native
     

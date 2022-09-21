@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.IOSAttachmentOptions")
 @js.native
-class IOSAttachmentOptions () extends StObject {
+open class IOSAttachmentOptions () extends StObject {
   
-  var thumbnailClippingRect: js.Any = js.native
+  var thumbnailClippingRect: Any = js.native
   
   var thumbnailHidden: Boolean = js.native
   

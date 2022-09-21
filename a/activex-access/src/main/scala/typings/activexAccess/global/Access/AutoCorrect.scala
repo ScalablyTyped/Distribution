@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.AutoCorrect")
 @js.native
-/* private */ class AutoCorrect ()
+/* private */ open class AutoCorrect ()
   extends StObject
      with typings.activexAccess.Access.AutoCorrect {
   

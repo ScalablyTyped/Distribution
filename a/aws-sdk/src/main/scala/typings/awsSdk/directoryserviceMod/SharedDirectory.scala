@@ -9,12 +9,12 @@ trait SharedDirectory extends StObject {
   /**
     * The date and time that the shared directory was created.
     */
-  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.undefined
+  var CreatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time that the shared directory was last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
+  var LastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Identifier of the directory owner account, which contains the directory that has been shared to the consumer account.
@@ -27,7 +27,7 @@ trait SharedDirectory extends StObject {
   var OwnerDirectoryId: js.UndefOr[DirectoryId] = js.undefined
   
   /**
-    * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a shared directory request (HANDSHAKE).
+    * The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (ORGANIZATIONS) or with any Amazon Web Services account by sending a shared directory request (HANDSHAKE).
     */
   var ShareMethod: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareMethod] = js.undefined
   
@@ -37,7 +37,7 @@ trait SharedDirectory extends StObject {
   var ShareNotes: js.UndefOr[Notes] = js.undefined
   
   /**
-    * Current directory status of the shared AWS Managed Microsoft AD directory.
+    * Current directory status of the shared Managed Microsoft AD directory.
     */
   var ShareStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareStatus] = js.undefined
   
@@ -60,11 +60,11 @@ object SharedDirectory {
   
   extension [Self <: SharedDirectory](x: Self) {
     
-    inline def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     

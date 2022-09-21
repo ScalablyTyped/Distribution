@@ -15,7 +15,6 @@ import typings.awsSdkClientGlacierNode.typesEncryptionMod.Encryption
 import typings.awsSdkClientGlacierNode.typesEncryptionMod.UnmarshalledEncryption
 import typings.awsSdkClientGlacierNode.typesGrantMod.Grant
 import typings.awsSdkClientGlacierNode.typesGrantMod.UnmarshalledGrant
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesS3LocationMod {
     /**
       * <p>A list of grants that control access to the staged results.</p>
       */
-    var AccessControlList: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.undefined
+    var AccessControlList: js.UndefOr[js.Array[Grant] | js.Iterable[Grant]] = js.undefined
     
     /**
       * <p>The name of the Amazon S3 bucket where the job results are stored.</p>
@@ -59,12 +58,12 @@ object typesS3LocationMod {
     /**
       * <p>The tag-set that is applied to the job results.</p>
       */
-    var Tagging: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Tagging: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>A map of metadata to store with the job results in Amazon S3.</p>
       */
-    var UserMetadata: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var UserMetadata: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object S3Location {
     
@@ -75,11 +74,11 @@ object typesS3LocationMod {
     
     extension [Self <: S3Location](x: Self) {
       
-      inline def setAccessControlList(value: js.Array[Grant] | Iterable[Grant]): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+      inline def setAccessControlList(value: js.Array[Grant] | js.Iterable[Grant]): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
       
       inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
       
-      inline def setAccessControlListVarargs(value: Grant*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
+      inline def setAccessControlListVarargs(value: Grant*): Self = StObject.set(x, "AccessControlList", js.Array(value*))
       
       inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
       
@@ -103,11 +102,11 @@ object typesS3LocationMod {
       
       inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
       
-      inline def setTagging(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Tagging", value.asInstanceOf[js.Any])
+      inline def setTagging(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Tagging", value.asInstanceOf[js.Any])
       
       inline def setTaggingUndefined: Self = StObject.set(x, "Tagging", js.undefined)
       
-      inline def setUserMetadata(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
+      inline def setUserMetadata(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
       
       inline def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
     }
@@ -154,7 +153,7 @@ object typesS3LocationMod {
       
       inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
       
-      inline def setAccessControlListVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
+      inline def setAccessControlListVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "AccessControlList", js.Array(value*))
       
       inline def setEncryption(value: UnmarshalledEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
       

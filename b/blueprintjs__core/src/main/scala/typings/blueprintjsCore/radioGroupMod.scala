@@ -1,8 +1,8 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
-import typings.blueprintjsCore.propsMod.IOptionProps
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsCore.propsMod.OptionProps
 import typings.react.mod.FormEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
@@ -14,18 +14,18 @@ object radioGroupMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/radioGroup", "RadioGroup")
   @js.native
-  class RadioGroup protected ()
-    extends AbstractPureComponent2[IRadioGroupProps, js.Object, js.Object] {
-    def this(props: IRadioGroupProps) = this()
-    def this(props: IRadioGroupProps, context: js.Any) = this()
+  open class RadioGroup protected ()
+    extends AbstractPureComponent2[RadioGroupProps, js.Object, js.Object] {
+    def this(props: RadioGroupProps) = this()
+    def this(props: RadioGroupProps, context: Any) = this()
     
-    /* private */ var autoGroupName: js.Any = js.native
+    /* private */ var autoGroupName: Any = js.native
     
-    /* private */ var getRadioProps: js.Any = js.native
+    /* private */ var getRadioProps: Any = js.native
     
-    /* private */ var renderChildren: js.Any = js.native
+    /* private */ var renderChildren: Any = js.native
     
-    /* private */ var renderOptions: js.Any = js.native
+    /* private */ var renderOptions: Any = js.native
     
     /* protected */ def validateProps(): Unit = js.native
   }
@@ -45,6 +45,11 @@ object radioGroupMod {
   trait IRadioGroupProps
     extends StObject
        with IProps {
+    
+    /**
+      * Radio elements. This prop is mutually exclusive with `options`.
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Whether the group and _all_ its radios are disabled.
@@ -75,10 +80,10 @@ object radioGroupMod {
     
     /**
       * Array of options to render in the group. This prop is mutually exclusive
-      * with `children`: either provide an array of `IOptionProps` objects or
+      * with `children`: either provide an array of `OptionProps` objects or
       * provide `<Radio>` children elements.
       */
-    var options: js.UndefOr[js.Array[IOptionProps]] = js.undefined
+    var options: js.UndefOr[js.Array[OptionProps]] = js.undefined
     
     /** Value of the selected radio. The child with this value will be `:checked`. */
     var selectedValue: js.UndefOr[String | Double] = js.undefined
@@ -91,6 +96,10 @@ object radioGroupMod {
     }
     
     extension [Self <: IRadioGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -110,15 +119,17 @@ object radioGroupMod {
       
       inline def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      inline def setOptions(value: js.Array[IOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[OptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: IOptionProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionProps*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     }
   }
+  
+  type RadioGroupProps = IRadioGroupProps
 }

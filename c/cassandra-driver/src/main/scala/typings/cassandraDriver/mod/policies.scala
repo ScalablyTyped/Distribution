@@ -21,7 +21,7 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.addressResolution.EC2MultiRegionTranslator")
     @js.native
-    class EC2MultiRegionTranslator ()
+    open class EC2MultiRegionTranslator ()
       extends typings.cassandraDriver.policiesMod.policies.addressResolution.EC2MultiRegionTranslator
   }
   
@@ -42,7 +42,7 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.loadBalancing.AllowListPolicy")
     @js.native
-    class AllowListPolicy protected ()
+    open class AllowListPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.AllowListPolicy {
       def this(
         childPolicy: typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy,
@@ -52,14 +52,14 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.loadBalancing.DCAwareRoundRobinPolicy")
     @js.native
-    class DCAwareRoundRobinPolicy protected ()
+    open class DCAwareRoundRobinPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.DCAwareRoundRobinPolicy {
       def this(localDc: String) = this()
     }
     
     @JSImport("cassandra-driver", "policies.loadBalancing.DefaultLoadBalancingPolicy")
     @js.native
-    class DefaultLoadBalancingPolicy ()
+    open class DefaultLoadBalancingPolicy ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.DefaultLoadBalancingPolicy {
       def this(options: Filter) = this()
     }
@@ -71,19 +71,19 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.loadBalancing.RoundRobinPolicy")
     @js.native
-    class RoundRobinPolicy ()
+    open class RoundRobinPolicy ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.RoundRobinPolicy
     
     @JSImport("cassandra-driver", "policies.loadBalancing.TokenAwarePolicy")
     @js.native
-    class TokenAwarePolicy protected ()
+    open class TokenAwarePolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.TokenAwarePolicy {
       def this(childPolicy: typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy) = this()
     }
     
     @JSImport("cassandra-driver", "policies.loadBalancing.WhiteListPolicy")
     @js.native
-    class WhiteListPolicy protected ()
+    open class WhiteListPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.loadBalancing.WhiteListPolicy {
       def this(
         childPolicy: typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy,
@@ -96,14 +96,14 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.reconnection.ConstantReconnectionPolicy")
     @js.native
-    class ConstantReconnectionPolicy protected ()
+    open class ConstantReconnectionPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.reconnection.ConstantReconnectionPolicy {
       def this(delay: Double) = this()
     }
     
     @JSImport("cassandra-driver", "policies.reconnection.ExponentialReconnectionPolicy")
     @js.native
-    class ExponentialReconnectionPolicy protected ()
+    open class ExponentialReconnectionPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.reconnection.ExponentialReconnectionPolicy {
       def this(baseDelay: Double, maxDelay: Double) = this()
       def this(baseDelay: Double, maxDelay: Double, startWithNoDelay: Boolean) = this()
@@ -114,24 +114,24 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.retry.DecisionInfo")
     @js.native
-    class DecisionInfo ()
+    open class DecisionInfo ()
       extends typings.cassandraDriver.policiesMod.policies.retry.DecisionInfo
     
     @JSImport("cassandra-driver", "policies.retry.FallthroughRetryPolicy")
     @js.native
-    class FallthroughRetryPolicy ()
+    open class FallthroughRetryPolicy ()
       extends typings.cassandraDriver.policiesMod.policies.retry.FallthroughRetryPolicy
     
     @JSImport("cassandra-driver", "policies.retry.IdempotenceAwareRetryPolicy")
     @js.native
-    class IdempotenceAwareRetryPolicy protected ()
+    open class IdempotenceAwareRetryPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.retry.IdempotenceAwareRetryPolicy {
       def this(childPolicy: typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy) = this()
     }
     
     @JSImport("cassandra-driver", "policies.retry.OperationInfo")
     @js.native
-    class OperationInfo ()
+    open class OperationInfo ()
       extends typings.cassandraDriver.policiesMod.policies.retry.OperationInfo
     
     object RetryDecision {
@@ -155,7 +155,7 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.retry.RetryPolicy")
     @js.native
-    class RetryPolicy ()
+    open class RetryPolicy ()
       extends typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
   }
   
@@ -163,14 +163,14 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.speculativeExecution.ConstantSpeculativeExecutionPolicy")
     @js.native
-    class ConstantSpeculativeExecutionPolicy protected ()
+    open class ConstantSpeculativeExecutionPolicy protected ()
       extends typings.cassandraDriver.policiesMod.policies.speculativeExecution.ConstantSpeculativeExecutionPolicy {
       def this(delay: Double, maxSpeculativeExecutions: Double) = this()
     }
     
     @JSImport("cassandra-driver", "policies.speculativeExecution.NoSpeculativeExecutionPolicy")
     @js.native
-    class NoSpeculativeExecutionPolicy ()
+    open class NoSpeculativeExecutionPolicy ()
       extends typings.cassandraDriver.policiesMod.policies.speculativeExecution.NoSpeculativeExecutionPolicy
   }
   
@@ -178,7 +178,7 @@ object policies {
     
     @JSImport("cassandra-driver", "policies.timestampGeneration.MonotonicTimestampGenerator")
     @js.native
-    class MonotonicTimestampGenerator protected ()
+    open class MonotonicTimestampGenerator protected ()
       extends typings.cassandraDriver.policiesMod.policies.timestampGeneration.MonotonicTimestampGenerator {
       def this(warningThreshold: Double, minLogInterval: Double) = this()
     }

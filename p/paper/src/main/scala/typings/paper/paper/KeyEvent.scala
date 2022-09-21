@@ -37,7 +37,7 @@ object KeyEvent {
   inline def apply(
     character: String,
     key: String,
-    modifiers: js.Any,
+    modifiers: Any,
     preventDefault: () => Unit,
     stop: () => Unit,
     stopPropagation: () => Unit,

@@ -11,7 +11,7 @@ object importer {
     
     /**
       * Imports a file into the grid using the file object provided. Bypasses the grid menu
-      * @param {File} fileObject The file we want to import as a javascript File object
+      * @param fileObject The file we want to import as a javascript File object
       */
     def importFile(fileObject: File): Unit
   }
@@ -42,8 +42,8 @@ object importer {
       * A mandatory callback function that adds data to the source data array.
       * The grid generally doesn't add rows to the source data array,
       * it is tidier to handle this through a user callback.
-      * @param {IGridInstance} grid The grid we're importing into, may be useful in some way
-      * @param {Array<TEntity>} newObjects An array of new objects that you should add to your data
+      * @param grid The grid we're importing into, may be useful in some way
+      * @param newObjects An array of new objects that you should add to your data
       */
     var importerDataAddCallback: js.UndefOr[
         js.Function2[/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity], Unit]
@@ -54,15 +54,15 @@ object importer {
       * rather than the standard grid behaviour of an alert box and a console message.
       * You might use this to internationalise the console log messages,
       * or to write to a custom logging routine that returned errors to the server.
-      * @param {IGridInstance} grid the grid we're importing into, may be useful if you're positioning messages
-      * @param {string} errorKey one of the i18n keys the importer can return -
+      * @param grid the grid we're importing into, may be useful if you're positioning messages
+      * @param errorKey one of the i18n keys the importer can return -
       *        * importer.noHeaders
       *        * importer.noObjects
       *        * importer.invalidCsv
       *        * importer.invalidJson
       *        * importer.jsonNotArray
-      * @param {string} consoleMessage the English console message that importer would have written
-      * @param {any} context the context data that importer would have appended to that console message,
+      * @param consoleMessage the English console message that importer would have written
+      * @param context the context data that importer would have appended to that console message,
       *        often the file content itself or the element that is in error
       */
     var importerErrorCallback: js.UndefOr[
@@ -70,7 +70,7 @@ object importer {
           /* grid */ IGridInstanceOf[TEntity], 
           /* errorKey */ String, 
           /* consoleMessage */ String, 
-          /* context */ js.Any, 
+          /* context */ Any, 
           Unit
         ]
       ] = js.undefined
@@ -79,8 +79,8 @@ object importer {
       * A callback function that will filter (usually translate) a single header.
       * Used when you want to match the passed in column names to the column displayName after the header filter.
       * Your callback routine needs to return the filtered header value.
-      * @param {string} displayName The displayName to translate
-      * @returns {string} The translated name
+      * @param displayName The displayName to translate
+      * @returns The translated name
       */
     var importerHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.undefined
     
@@ -99,10 +99,10 @@ object importer {
       * For example, you might have data stored as a code value, but display the decode.
       * This callback can be used to change the decoded value back into a code.
       * Defaults to angular.identity.
-      * @param {IGridInstance} grid The grid
-      * @param {TEntity} newObject The new object as importer has created it.  Modify it and return modified
+      * @param grid The grid
+      * @param newObject The new object as importer has created it.  Modify it and return modified
       * version
-      * @returns {TEntity} The modified object
+      * @returns The modified object
       * @default angular.identity
       */
     var importerObjectCallback: js.UndefOr[
@@ -122,10 +122,10 @@ object importer {
       *
       * Your callback routine should respond by processing the header array, and returning an array
       * of matching column names.  A null value in any given position means "don't import this column"
-      * @param {IGridInstance} grid the grid we're importing into
-      * @param {Array<string>} headerArray an array of the text from the first row of the csv file,
+      * @param grid the grid we're importing into
+      * @param headerArray an array of the text from the first row of the csv file,
       * which you need to match to column.names
-      * @returns {Array<string>} array of matching column names, in the same order as the headerArray
+      * @returns array of matching column names, in the same order as the headerArray
       */
     var importerProcessHeaders: js.UndefOr[
         js.Function2[
@@ -160,7 +160,7 @@ object importer {
       inline def setImporterDataAddCallbackUndefined: Self = StObject.set(x, "importerDataAddCallback", js.undefined)
       
       inline def setImporterErrorCallback(
-        value: (/* grid */ IGridInstanceOf[TEntity], /* errorKey */ String, /* consoleMessage */ String, /* context */ js.Any) => Unit
+        value: (/* grid */ IGridInstanceOf[TEntity], /* errorKey */ String, /* consoleMessage */ String, /* context */ Any) => Unit
       ): Self = StObject.set(x, "importerErrorCallback", js.Any.fromFunction4(value))
       
       inline def setImporterErrorCallbackUndefined: Self = StObject.set(x, "importerErrorCallback", js.undefined)

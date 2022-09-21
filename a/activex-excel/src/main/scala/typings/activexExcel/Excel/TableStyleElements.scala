@@ -17,7 +17,7 @@ trait TableStyleElements extends StObject {
   
   def Item(Index: XlTableStyleElementType): TableStyleElement = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: XlTableStyleElementType): TableStyleElement = js.native
 }

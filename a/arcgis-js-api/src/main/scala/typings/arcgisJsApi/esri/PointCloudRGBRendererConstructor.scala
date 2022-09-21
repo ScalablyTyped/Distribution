@@ -17,5 +17,5 @@ trait PointCloudRGBRendererConstructor
 Instantiable0[PointCloudRGBRenderer]
      with Instantiable1[/* properties */ PointCloudRGBRendererProperties, PointCloudRGBRenderer] {
   
-  def fromJSON(json: js.Any): PointCloudRGBRenderer = js.native
+  def fromJSON(json: Any): PointCloudRGBRenderer = js.native
 }

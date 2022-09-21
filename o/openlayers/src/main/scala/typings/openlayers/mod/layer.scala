@@ -29,7 +29,7 @@ object layer {
     */
   @JSImport("openlayers", "layer.Base")
   @js.native
-  class Base protected () extends Object {
+  open class Base protected () extends Object {
     /**
       * @classdesc
       * Abstract base class; normally only used for creating subclasses and not
@@ -164,7 +164,7 @@ object layer {
     * @param opt_options Layer options.
     * @api stable
     */
-  class Group () extends Base {
+  open class Group () extends Base {
     def this(opt_options: GroupOptions) = this()
     
     /**
@@ -212,7 +212,7 @@ object layer {
     * @param opt_options Options.
     * @api
     */
-  class Heatmap () extends Vector {
+  open class Heatmap () extends Vector {
     def this(opt_options: HeatmapOptions) = this()
     
     /**
@@ -290,7 +290,7 @@ object layer {
     * @param opt_options Layer options.
     * @api stable
     */
-  class Image () extends Layer {
+  open class Image () extends Layer {
     def this(opt_options: ImageOptions) = this()
   }
   
@@ -315,7 +315,7 @@ object layer {
     */
   @JSImport("openlayers", "layer.Layer")
   @js.native
-  class Layer protected () extends Base {
+  open class Layer protected () extends Base {
     /**
       * @classdesc
       * Abstract base class; normally only used for creating subclasses and not
@@ -394,7 +394,7 @@ object layer {
     * @param opt_options Tile layer options.
     * @api stable
     */
-  class Tile () extends Layer {
+  open class Tile () extends Layer {
     def this(opt_options: TileOptions) = this()
     
     /**
@@ -454,7 +454,7 @@ object layer {
     * @param opt_options Options.
     * @api stable
     */
-  class Vector () extends Layer {
+  open class Vector () extends Layer {
     def this(opt_options: VectorOptions) = this()
     
     /**
@@ -510,7 +510,7 @@ object layer {
     * @param opt_options Options.
     * @api
     */
-  class VectorTile () extends Vector {
+  open class VectorTile () extends Vector {
     def this(opt_options: VectorTileOptions) = this()
     
     /**

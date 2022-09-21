@@ -10,10 +10,10 @@ object starMod {
   
   @JSImport("material-ui/svg-icons/toggle/star", JSImport.Default)
   @js.native
-  class default () extends ToggleStar
+  open class default () extends ToggleStar
   
   @JSImport("material-ui/svg-icons/toggle/star", "ToggleStar")
   @js.native
-  class ToggleStar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleStar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

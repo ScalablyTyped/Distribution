@@ -9,15 +9,24 @@ trait BoundingBox
   extends StObject
      with ICullable {
   
+  /** @hidden */
+  var _drawWrapperBack: Nullable[DrawWrapper] = js.native
+  
+  /** @hidden */
+  var _drawWrapperFront: Nullable[DrawWrapper] = js.native
+  
   /**
     * @hidden
     */
   var _tag: Double = js.native
   
-  /** @hidden */
+  /**
+    * @param world
+    * @hidden
+    */
   def _update(world: DeepImmutable[Matrix]): Unit = js.native
   
-  /* private */ var _worldMatrix: js.Any = js.native
+  /* private */ var _worldMatrix: Any = js.native
   
   /**
     * Gets the center of the bounding box in local space
@@ -33,6 +42,11 @@ trait BoundingBox
     * Gets the OBB (object bounding box) directions
     */
   val directions: js.Array[Vector3] = js.native
+  
+  /**
+    * Disposes the resources of the class
+    */
+  def dispose(): Unit = js.native
   
   /**
     * Gets the extend size in local space

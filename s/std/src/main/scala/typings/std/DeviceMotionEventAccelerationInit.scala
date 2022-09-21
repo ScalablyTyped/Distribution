@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceMotionEventAccelerationInit extends StObject {
   
+  /* standard dom */
   var x: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var y: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var z: js.UndefOr[Double | Null] = js.undefined
 }
 object DeviceMotionEventAccelerationInit {

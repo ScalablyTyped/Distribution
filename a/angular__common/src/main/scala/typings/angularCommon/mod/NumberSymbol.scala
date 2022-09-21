@@ -36,7 +36,7 @@ object NumberSymbol extends StObject {
   /**
     * Decimal separator.
     * For `en-US`, the dot character.
-    * Example : 2,345`.`67
+    * Example: 2,345`.`67
     */
   @js.native
   sealed trait Decimal

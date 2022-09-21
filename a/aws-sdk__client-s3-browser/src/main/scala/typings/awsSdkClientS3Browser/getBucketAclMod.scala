@@ -8,5 +8,5 @@ object getBucketAclMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketAcl", "GetBucketAcl")
   @js.native
-  val GetBucketAcl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetBucketAcl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

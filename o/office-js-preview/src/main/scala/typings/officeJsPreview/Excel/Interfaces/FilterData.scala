@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterData extends StObject {
   
   /**
-    *
     * The currently applied filter on the given column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var criteria: js.UndefOr[FilterCriteria] = js.undefined

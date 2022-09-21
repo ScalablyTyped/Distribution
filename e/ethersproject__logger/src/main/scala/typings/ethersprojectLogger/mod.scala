@@ -1,6 +1,5 @@
 package typings.ethersprojectLogger
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +14,12 @@ object mod {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ErrorCode & String] = js.native
+    
+    @js.native
+    sealed trait ACTION_REJECTED
+      extends StObject
+         with ErrorCode
+    /* "ACTION_REJECTED" */ val ACTION_REJECTED: typings.ethersprojectLogger.mod.ErrorCode.ACTION_REJECTED & String = js.native
     
     @js.native
     sealed trait BUFFER_OVERRUN
@@ -95,6 +100,12 @@ object mod {
     /* "TIMEOUT" */ val TIMEOUT: typings.ethersprojectLogger.mod.ErrorCode.TIMEOUT & String = js.native
     
     @js.native
+    sealed trait TRANSACTION_REPLACED
+      extends StObject
+         with ErrorCode
+    /* "TRANSACTION_REPLACED" */ val TRANSACTION_REPLACED: typings.ethersprojectLogger.mod.ErrorCode.TRANSACTION_REPLACED & String = js.native
+    
+    @js.native
     sealed trait UNEXPECTED_ARGUMENT
       extends StObject
          with ErrorCode
@@ -161,24 +172,24 @@ object mod {
   
   @JSImport("@ethersproject/logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     def this(version: String) = this()
     
-    def _log(logLevel: LogLevel, args: js.Array[js.Any]): Unit = js.native
+    def _log(logLevel: LogLevel, args: js.Array[Any]): Unit = js.native
     
-    def assert(condition: js.Any, message: String): Unit = js.native
-    def assert(condition: js.Any, message: String, code: Unit, params: js.Any): Unit = js.native
-    def assert(condition: js.Any, message: String, code: ErrorCode): Unit = js.native
-    def assert(condition: js.Any, message: String, code: ErrorCode, params: js.Any): Unit = js.native
+    def assert(condition: Any, message: String): Unit = js.native
+    def assert(condition: Any, message: String, code: Unit, params: Any): Unit = js.native
+    def assert(condition: Any, message: String, code: ErrorCode): Unit = js.native
+    def assert(condition: Any, message: String, code: ErrorCode, params: Any): Unit = js.native
     
-    def assertArgument(condition: js.Any, message: String, name: String, value: js.Any): Unit = js.native
+    def assertArgument(condition: Any, message: String, name: String, value: Any): Unit = js.native
     
-    def checkAbstract(target: js.Any, kind: js.Any): Unit = js.native
+    def checkAbstract(target: Any, kind: Any): Unit = js.native
     
     def checkArgumentCount(count: Double, expectedCount: Double): Unit = js.native
     def checkArgumentCount(count: Double, expectedCount: Double, message: String): Unit = js.native
     
-    def checkNew(target: js.Any, kind: js.Any): Unit = js.native
+    def checkNew(target: Any, kind: Any): Unit = js.native
     
     def checkNormalize(): Unit = js.native
     def checkNormalize(message: String): Unit = js.native
@@ -186,25 +197,25 @@ object mod {
     def checkSafeUint53(value: Double): Unit = js.native
     def checkSafeUint53(value: Double, message: String): Unit = js.native
     
-    def debug(args: js.Any*): Unit = js.native
+    def debug(args: Any*): Unit = js.native
     
-    def info(args: js.Any*): Unit = js.native
+    def info(args: Any*): Unit = js.native
     
-    def makeError(message: String): Error = js.native
-    def makeError(message: String, code: Unit, params: js.Any): Error = js.native
-    def makeError(message: String, code: ErrorCode): Error = js.native
-    def makeError(message: String, code: ErrorCode, params: js.Any): Error = js.native
+    def makeError(message: String): js.Error = js.native
+    def makeError(message: String, code: Unit, params: Any): js.Error = js.native
+    def makeError(message: String, code: ErrorCode): js.Error = js.native
+    def makeError(message: String, code: ErrorCode, params: Any): js.Error = js.native
     
-    def throwArgumentError(message: String, name: String, value: js.Any): scala.Nothing = js.native
+    def throwArgumentError(message: String, name: String, value: Any): scala.Nothing = js.native
     
     def throwError(message: String): scala.Nothing = js.native
-    def throwError(message: String, code: Unit, params: js.Any): scala.Nothing = js.native
+    def throwError(message: String, code: Unit, params: Any): scala.Nothing = js.native
     def throwError(message: String, code: ErrorCode): scala.Nothing = js.native
-    def throwError(message: String, code: ErrorCode, params: js.Any): scala.Nothing = js.native
+    def throwError(message: String, code: ErrorCode, params: Any): scala.Nothing = js.native
     
     val version: String = js.native
     
-    def warn(args: js.Any*): Unit = js.native
+    def warn(args: Any*): Unit = js.native
   }
   /* static members */
   object Logger {
@@ -215,8 +226,8 @@ object mod {
     
     @JSImport("@ethersproject/logger", "Logger.errors")
     @js.native
-    def errors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCode */ js.Any = js.native
-    inline def errors_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCode */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("errors")(x.asInstanceOf[js.Any])
+    def errors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCode */ Any = js.native
+    inline def errors_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCode */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("errors")(x.asInstanceOf[js.Any])
     
     inline def from(version: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(version.asInstanceOf[js.Any]).asInstanceOf[Logger]
     
@@ -224,8 +235,8 @@ object mod {
     
     @JSImport("@ethersproject/logger", "Logger.levels")
     @js.native
-    def levels: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogLevel */ js.Any = js.native
-    inline def levels_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogLevel */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("levels")(x.asInstanceOf[js.Any])
+    def levels: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogLevel */ Any = js.native
+    inline def levels_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogLevel */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("levels")(x.asInstanceOf[js.Any])
     
     inline def setCensorship(censorship: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCensorship")(censorship.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def setCensorship(censorship: Boolean, permanent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCensorship")(censorship.asInstanceOf[js.Any], permanent.asInstanceOf[js.Any])).asInstanceOf[Unit]

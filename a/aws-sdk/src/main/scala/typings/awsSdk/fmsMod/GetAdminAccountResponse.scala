@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAdminAccountResponse extends StObject {
   
   /**
-    * The AWS account that is set as the AWS Firewall Manager administrator.
+    * The Amazon Web Services account that is set as the Firewall Manager administrator.
     */
   var AdminAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The status of the AWS account that you set as the AWS Firewall Manager administrator.
+    * The status of the Amazon Web Services account that you set as the Firewall Manager administrator.
     */
   var RoleStatus: js.UndefOr[AccountRoleStatus] = js.undefined
 }

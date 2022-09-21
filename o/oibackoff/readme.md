@@ -10,10 +10,10 @@ Incremental backoff flow-control for any : fn(function(err, data) { ... });
 | ------------------ | :-------------: |
 | Full name          | oibackoff |
 | Keywords           | function, backoff, incremental, exponentail, linear, control flow, flow |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 5170 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 567.3333333333334 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/chilts/oibackoff)

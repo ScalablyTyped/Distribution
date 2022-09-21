@@ -10,22 +10,15 @@ trait Features
   extends StObject
      with GeoJSONObject {
   
-  var features: js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
-  ]
+  var features: js.Array[GeoJSONObject]
   
-  var properties: js.Any
+  var properties: Any
   
   var `type`: FeatureCollection
 }
 object Features {
   
-  inline def apply(
-    features: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
-    ],
-    properties: js.Any
-  ): Features = {
+  inline def apply(features: js.Array[GeoJSONObject], properties: Any): Features = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("FeatureCollection")
     __obj.asInstanceOf[Features]
@@ -33,17 +26,11 @@ object Features {
   
   extension [Self <: Features](x: Self) {
     
-    inline def setFeatures(
-      value: js.Array[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
-        ]
-    ): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[GeoJSONObject]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(
-      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object)*
-    ): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GeoJSONObject*): Self = StObject.set(x, "features", js.Array(value*))
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setType(value: FeatureCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

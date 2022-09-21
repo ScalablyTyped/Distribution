@@ -31,6 +31,6 @@ object CancelSpotInstanceRequestsRequest {
     
     inline def setSpotInstanceRequestIds(value: SpotInstanceRequestIdList): Self = StObject.set(x, "SpotInstanceRequestIds", value.asInstanceOf[js.Any])
     
-    inline def setSpotInstanceRequestIdsVarargs(value: SpotInstanceRequestId*): Self = StObject.set(x, "SpotInstanceRequestIds", js.Array(value :_*))
+    inline def setSpotInstanceRequestIdsVarargs(value: SpotInstanceRequestId*): Self = StObject.set(x, "SpotInstanceRequestIds", js.Array(value*))
   }
 }

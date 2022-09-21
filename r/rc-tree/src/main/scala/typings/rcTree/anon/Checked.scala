@@ -24,10 +24,10 @@ object Checked {
     
     inline def setChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    inline def setCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value :_*))
+    inline def setCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value*))
     
     inline def setHalfChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
     
-    inline def setHalfCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value :_*))
+    inline def setHalfCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value*))
   }
 }

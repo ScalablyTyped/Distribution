@@ -12,7 +12,7 @@ trait ListProposalVotesOutput extends StObject {
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  The listing of votes. 
+    *  The list of votes. 
     */
   var ProposalVotes: js.UndefOr[ProposalVoteList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListProposalVotesOutput {
     
     inline def setProposalVotesUndefined: Self = StObject.set(x, "ProposalVotes", js.undefined)
     
-    inline def setProposalVotesVarargs(value: VoteSummary*): Self = StObject.set(x, "ProposalVotes", js.Array(value :_*))
+    inline def setProposalVotesVarargs(value: VoteSummary*): Self = StObject.set(x, "ProposalVotes", js.Array(value*))
   }
 }

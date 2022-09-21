@@ -10,10 +10,10 @@ Decodes every html entity possible
 | ------------------ | :-------------: |
 | Full name          | decode-entities |
 | Keywords           | html |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1108 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 77.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/waspothegreat/strip-entities#readme)

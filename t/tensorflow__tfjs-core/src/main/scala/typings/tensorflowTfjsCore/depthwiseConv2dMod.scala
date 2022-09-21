@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
@@ -24,7 +25,7 @@ object depthwiseConv2dMod {
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     dataFormat: js.UndefOr[NHWC | NCHW],
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]

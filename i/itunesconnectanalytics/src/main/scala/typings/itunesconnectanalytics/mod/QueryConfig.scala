@@ -33,7 +33,7 @@ object QueryConfig {
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: DimensionFilters*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: DimensionFilters*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setEnd(value: QueryDateTypes): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object QueryConfig {
     
     inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    inline def setMeasuresVarargs(value: measures*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: measures*): Self = StObject.set(x, "measures", js.Array(value*))
     
     inline def setStart(value: QueryDateTypes): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

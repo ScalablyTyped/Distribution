@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapTableView")
 @js.native
-class OlapTableView protected ()
+open class OlapTableView protected ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapTableView {
   def this(options: OlapTableViewOptions) = this()

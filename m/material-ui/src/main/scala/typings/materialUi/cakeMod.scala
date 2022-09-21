@@ -10,10 +10,10 @@ object cakeMod {
   
   @JSImport("material-ui/svg-icons/social/cake", JSImport.Default)
   @js.native
-  class default () extends SocialCake
+  open class default () extends SocialCake
   
   @JSImport("material-ui/svg-icons/social/cake", "SocialCake")
   @js.native
-  class SocialCake ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialCake ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,5 +8,5 @@ object encryptionIntegrityChecksFailedExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/EncryptionIntegrityChecksFailedException", "EncryptionIntegrityChecksFailedException")
   @js.native
-  val EncryptionIntegrityChecksFailedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EncryptionIntegrityChecksFailedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

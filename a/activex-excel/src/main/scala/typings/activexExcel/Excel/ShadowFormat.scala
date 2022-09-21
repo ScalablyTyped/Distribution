@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShadowFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Blur: Double
   
@@ -30,7 +30,7 @@ trait ShadowFormat extends StObject {
   
   var OffsetY: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RotateWithShape: MsoTriState
   
@@ -47,7 +47,7 @@ trait ShadowFormat extends StObject {
 object ShadowFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Blur: Double,
     Creator: Double,
     ExcelDotShadowFormat_typekey: ShadowFormat,
@@ -57,7 +57,7 @@ object ShadowFormat {
     Obscured: MsoTriState,
     OffsetX: Double,
     OffsetY: Double,
-    Parent: js.Any,
+    Parent: Any,
     RotateWithShape: MsoTriState,
     Size: Double,
     Style: MsoShadowStyle,
@@ -72,7 +72,7 @@ object ShadowFormat {
   
   extension [Self <: ShadowFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object ShadowFormat {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "OffsetY", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRotateWithShape(value: MsoTriState): Self = StObject.set(x, "RotateWithShape", value.asInstanceOf[js.Any])
     

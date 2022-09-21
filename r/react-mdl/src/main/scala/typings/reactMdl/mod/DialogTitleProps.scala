@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DialogTitleProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with CustomRenderedComponent
 object DialogTitleProps {
   

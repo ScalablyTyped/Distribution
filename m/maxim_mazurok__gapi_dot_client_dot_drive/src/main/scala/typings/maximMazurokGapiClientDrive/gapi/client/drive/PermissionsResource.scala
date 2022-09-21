@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDrive.anon.EmailMessage
-import typings.maximMazurokGapiClientDrive.anon.FieldsFileId
+import typings.maximMazurokGapiClientDrive.anon.FileIdIncludePermissionsForView
 import typings.maximMazurokGapiClientDrive.anon.MoveToNewOwnersRoot
 import typings.maximMazurokGapiClientDrive.anon.PermissionId
 import typings.maximMazurokGapiClientDrive.anon.RemoveExpiration
@@ -28,7 +28,7 @@ trait PermissionsResource extends StObject {
   
   /** Lists a file's or shared drive's permissions. */
   def list(): Request[PermissionList] = js.native
-  def list(request: FieldsFileId): Request[PermissionList] = js.native
+  def list(request: FileIdIncludePermissionsForView): Request[PermissionList] = js.native
   
   /** Updates a permission with patch semantics. */
   def update(request: RemoveExpiration): Request[Permission] = js.native

@@ -36,12 +36,12 @@ object PartialDomain {
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value*))
     
     inline def setY(value: js.Array[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value*))
   }
 }

@@ -19,12 +19,12 @@ object mod {
   inline def init(
     resourceStore: i18nextkoResourceStore,
     language: String,
-    ko: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutStatic */ js.Any
+    ko: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutStatic */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(resourceStore.asInstanceOf[js.Any], language.asInstanceOf[js.Any], ko.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def t(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def t(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   type i18nextkoResourceStore = StringDictionary[Translation]
 }

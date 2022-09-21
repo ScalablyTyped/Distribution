@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Include extends StObject {
   
-  def apply(value: js.Any): Assertion = js.native
-  def apply(value: js.Any, message: String): Assertion = js.native
+  def apply(value: Any): Assertion = js.native
+  def apply(value: Any, message: String): Assertion = js.native
   
   var all: KeyFilter = js.native
   
@@ -18,15 +18,20 @@ trait Include extends StObject {
   var deep: Deep = js.native
   
   def keys(keys: String*): Assertion = js.native
-  def keys(keys: js.Array[js.Any]): Assertion = js.native
+  def keys(keys: js.Array[Any]): Assertion = js.native
   def keys(keys: Object): Assertion = js.native
   @JSName("keys")
   var keys_Original: Keys = js.native
   
-  def members(set: js.Array[js.Any]): Assertion = js.native
-  def members(set: js.Array[js.Any], message: String): Assertion = js.native
+  def members(set: js.Array[Any]): Assertion = js.native
+  def members(set: js.Array[Any], message: String): Assertion = js.native
   @JSName("members")
   var members_Original: Members = js.native
+  
+  def oneOf(list: js.Array[Any]): Assertion = js.native
+  def oneOf(list: js.Array[Any], message: String): Assertion = js.native
+  @JSName("oneOf")
+  var oneOf_Original: OneOf = js.native
   
   var ordered: Ordered = js.native
 }

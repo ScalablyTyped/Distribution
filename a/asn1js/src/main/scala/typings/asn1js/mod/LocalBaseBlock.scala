@@ -1,46 +1,35 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalBaseBlock")
+/**
+  * Class used as a base block for all remaining ASN.1 classes
+  */
 @js.native
-class LocalBaseBlock () extends StObject {
-  def this(params: LocalBaseBlockParams) = this()
-  
-  var blockLength: Double = js.native
-  
-  var error: String = js.native
+trait LocalBaseBlock
+  extends StObject
+     with ILocalBaseBlock {
   
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * Returns a JSON representation of an object
+    * @returns JSON object
     */
-  def toJSON(): JsonLocalBaseBlock = js.native
-  
-  var valueBeforeDecode: ArrayBuffer = js.native
-  
-  var warnings: js.Array[String] = js.native
-}
-object LocalBaseBlock {
-  
-  @JSImport("asn1js", "LocalBaseBlock")
-  @js.native
-  val ^ : js.Any = js.native
+  def toJSON(): LocalBaseBlockJson = js.native
   
   /**
-    * Aux function, need to get a block name. Need to have it here for inhiritence
-    * 
-    * @static
-    * @returns {string}
-    * 
-    * @memberOf LocalBaseBlock
+    * @deprecated since version 3.0.0
     */
-  /* static member */
-  inline def blockName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blockName")().asInstanceOf[String]
+  def valueBeforeDecode: js.typedarray.ArrayBuffer = js.native
+  
+  /**
+    * @since 3.0.0
+    */
+  var valueBeforeDecodeView: js.typedarray.Uint8Array = js.native
+  
+  /**
+    * @deprecated since version 3.0.0
+    */
+  def valueBeforeDecode_=(value: js.typedarray.ArrayBuffer): Unit = js.native
 }

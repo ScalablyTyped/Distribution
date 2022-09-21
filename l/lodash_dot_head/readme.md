@@ -10,10 +10,10 @@ The lodash method `_.head` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.head |
 | Keywords           | lodash-modularized, head |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 1300117 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 262320.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

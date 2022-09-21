@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result containing the Asset and its State.
-  */
 trait SchemaListAssetsResult extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListAssetsResult extends StObject {
   /**
     * State change of the asset between the points in time.
     */
-  var stateChange: js.UndefOr[String] = js.undefined
+  var stateChange: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListAssetsResult {
   
@@ -33,6 +30,8 @@ object SchemaListAssetsResult {
     inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    
+    inline def setStateChangeNull: Self = StObject.set(x, "stateChange", null)
     
     inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }

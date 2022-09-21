@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-protobuf", "ExtensionFieldInfo")
 @js.native
-class ExtensionFieldInfo[T] protected () extends StObject {
+open class ExtensionFieldInfo[T] protected () extends StObject {
   def this(
     fieldIndex: Double,
     fieldName: StringDictionary[Double],

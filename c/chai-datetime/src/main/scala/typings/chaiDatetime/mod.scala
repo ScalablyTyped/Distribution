@@ -28,11 +28,23 @@ object mod extends Shortcut {
         def afterDate(`val`: Date, exp: Date): Unit = js.native
         def afterDate(`val`: Date, exp: Date, msg: String): Unit = js.native
         
+        def afterOrEqualDate(`val`: Date, exp: Date): Unit = js.native
+        def afterOrEqualDate(`val`: Date, exp: Date, msg: String): Unit = js.native
+        
+        def afterOrEqualTime(`val`: Date, exp: Date): Unit = js.native
+        def afterOrEqualTime(`val`: Date, exp: Date, msg: String): Unit = js.native
+        
         def afterTime(`val`: Date, exp: Date): Unit = js.native
         def afterTime(`val`: Date, exp: Date, msg: String): Unit = js.native
         
         def beforeDate(`val`: Date, exp: Date): Unit = js.native
         def beforeDate(`val`: Date, exp: Date, msg: String): Unit = js.native
+        
+        def beforeOrEqualDate(`val`: Date, exp: Date): Unit = js.native
+        def beforeOrEqualDate(`val`: Date, exp: Date, msg: String): Unit = js.native
+        
+        def beforeOrEqualTime(`val`: Date, exp: Date): Unit = js.native
+        def beforeOrEqualTime(`val`: Date, exp: Date, msg: String): Unit = js.native
         
         def beforeTime(`val`: Date, exp: Date): Unit = js.native
         def beforeTime(`val`: Date, exp: Date, msg: String): Unit = js.native
@@ -81,9 +93,17 @@ object mod extends Shortcut {
         
         def afterDate(date: Date): Assertion
         
+        def afterOrEqualDate(date: Date): Assertion
+        
+        def afterOrEqualTime(date: Date): Assertion
+        
         def afterTime(date: Date): Assertion
         
         def beforeDate(date: Date): Assertion
+        
+        def beforeOrEqualDate(date: Date): Assertion
+        
+        def beforeOrEqualTime(date: Date): Assertion
         
         def beforeTime(date: Date): Assertion
         
@@ -101,8 +121,12 @@ object mod extends Shortcut {
         
         inline def apply(
           afterDate: Date => Assertion,
+          afterOrEqualDate: Date => Assertion,
+          afterOrEqualTime: Date => Assertion,
           afterTime: Date => Assertion,
           beforeDate: Date => Assertion,
+          beforeOrEqualDate: Date => Assertion,
+          beforeOrEqualTime: Date => Assertion,
           beforeTime: Date => Assertion,
           closeToTime: (Date, Double) => Assertion,
           equalDate: Date => Assertion,
@@ -110,7 +134,7 @@ object mod extends Shortcut {
           withinDate: (Date, Date) => Assertion,
           withinTime: (Date, Date) => Assertion
         ): Assertion = {
-          val __obj = js.Dynamic.literal(afterDate = js.Any.fromFunction1(afterDate), afterTime = js.Any.fromFunction1(afterTime), beforeDate = js.Any.fromFunction1(beforeDate), beforeTime = js.Any.fromFunction1(beforeTime), closeToTime = js.Any.fromFunction2(closeToTime), equalDate = js.Any.fromFunction1(equalDate), equalTime = js.Any.fromFunction1(equalTime), withinDate = js.Any.fromFunction2(withinDate), withinTime = js.Any.fromFunction2(withinTime))
+          val __obj = js.Dynamic.literal(afterDate = js.Any.fromFunction1(afterDate), afterOrEqualDate = js.Any.fromFunction1(afterOrEqualDate), afterOrEqualTime = js.Any.fromFunction1(afterOrEqualTime), afterTime = js.Any.fromFunction1(afterTime), beforeDate = js.Any.fromFunction1(beforeDate), beforeOrEqualDate = js.Any.fromFunction1(beforeOrEqualDate), beforeOrEqualTime = js.Any.fromFunction1(beforeOrEqualTime), beforeTime = js.Any.fromFunction1(beforeTime), closeToTime = js.Any.fromFunction2(closeToTime), equalDate = js.Any.fromFunction1(equalDate), equalTime = js.Any.fromFunction1(equalTime), withinDate = js.Any.fromFunction2(withinDate), withinTime = js.Any.fromFunction2(withinTime))
           __obj.asInstanceOf[Assertion]
         }
         
@@ -118,9 +142,17 @@ object mod extends Shortcut {
           
           inline def setAfterDate(value: Date => Assertion): Self = StObject.set(x, "afterDate", js.Any.fromFunction1(value))
           
+          inline def setAfterOrEqualDate(value: Date => Assertion): Self = StObject.set(x, "afterOrEqualDate", js.Any.fromFunction1(value))
+          
+          inline def setAfterOrEqualTime(value: Date => Assertion): Self = StObject.set(x, "afterOrEqualTime", js.Any.fromFunction1(value))
+          
           inline def setAfterTime(value: Date => Assertion): Self = StObject.set(x, "afterTime", js.Any.fromFunction1(value))
           
           inline def setBeforeDate(value: Date => Assertion): Self = StObject.set(x, "beforeDate", js.Any.fromFunction1(value))
+          
+          inline def setBeforeOrEqualDate(value: Date => Assertion): Self = StObject.set(x, "beforeOrEqualDate", js.Any.fromFunction1(value))
+          
+          inline def setBeforeOrEqualTime(value: Date => Assertion): Self = StObject.set(x, "beforeOrEqualTime", js.Any.fromFunction1(value))
           
           inline def setBeforeTime(value: Date => Assertion): Self = StObject.set(x, "beforeTime", js.Any.fromFunction1(value))
           

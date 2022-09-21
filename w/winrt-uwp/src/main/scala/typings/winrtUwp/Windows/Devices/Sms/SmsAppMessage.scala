@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +54,7 @@ trait SmsAppMessage extends StObject {
   var teleserviceId: Double
   
   /** The timestamp of the message. */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** The telephone number of the recipient of this message. */
   var to: String
@@ -78,7 +77,7 @@ object SmsAppMessage {
     retryAttemptCount: Double,
     simIccId: String,
     teleserviceId: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String
   ): SmsAppMessage = {
     val __obj = js.Dynamic.literal(binaryBody = binaryBody.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], callbackNumber = callbackNumber.asInstanceOf[js.Any], cellularClass = cellularClass.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], isDeliveryNotificationEnabled = isDeliveryNotificationEnabled.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], portNumber = portNumber.asInstanceOf[js.Any], protocolId = protocolId.asInstanceOf[js.Any], retryAttemptCount = retryAttemptCount.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any], teleserviceId = teleserviceId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
@@ -117,7 +116,7 @@ object SmsAppMessage {
     
     inline def setTeleserviceId(value: Double): Self = StObject.set(x, "teleserviceId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

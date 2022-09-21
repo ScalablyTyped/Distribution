@@ -38,7 +38,7 @@ trait Xgafv extends StObject {
   /** Request body */
   var resource: ExecutionRequest
   
-  /** The script ID of the script to be executed. To find the script ID, open the project in the script editor and select **File > Project properties**. */
+  /** The script ID of the script to be executed. Find the script ID on the **Project settings** page under "IDs." */
   var scriptId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

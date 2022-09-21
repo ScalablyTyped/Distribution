@@ -22,7 +22,7 @@ object updateInfoBuilderMod {
     
     val info: UpdateInfo
     
-    val packager: PlatformPackager[js.Any]
+    val packager: PlatformPackager[Any]
     
     val publishConfiguration: PublishConfiguration
   }
@@ -31,7 +31,7 @@ object updateInfoBuilderMod {
     inline def apply(
       file: String,
       info: UpdateInfo,
-      packager: PlatformPackager[js.Any],
+      packager: PlatformPackager[Any],
       publishConfiguration: PublishConfiguration
     ): UpdateInfoFileTask = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], publishConfiguration = publishConfiguration.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object updateInfoBuilderMod {
       
       inline def setInfo(value: UpdateInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       inline def setPublishConfiguration(value: PublishConfiguration): Self = StObject.set(x, "publishConfiguration", value.asInstanceOf[js.Any])
     }

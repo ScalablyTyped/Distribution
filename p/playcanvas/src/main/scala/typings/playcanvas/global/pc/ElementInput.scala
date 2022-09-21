@@ -7,45 +7,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new pc.ElementInput instance.
-  * @param domElement - The DOM element.
-  * @param [options] - Optional arguments.
-  * @param [options.useMouse] - Whether to allow mouse input. Defaults to true.
-  * @param [options.useTouch] - Whether to allow touch input. Defaults to true.
-  * @param [options.useXr] - Whether to allow XR input sources. Defaults to true.
+  * Handles mouse and touch events for {@link ElementComponent}s. When input events occur on an
+  * ElementComponent this fires the appropriate events on the ElementComponent.
   */
 @JSGlobal("pc.ElementInput")
 @js.native
-class ElementInput protected ()
-  extends StObject
-     with typings.playcanvas.pc.ElementInput {
+open class ElementInput protected ()
+  extends typings.playcanvas.mod.ElementInput {
+  /**
+    * Create a new ElementInput instance.
+    *
+    * @param {Element} domElement - The DOM element.
+    * @param {object} [options] - Optional arguments.
+    * @param {boolean} [options.useMouse] - Whether to allow mouse input. Defaults to true.
+    * @param {boolean} [options.useTouch] - Whether to allow touch input. Defaults to true.
+    * @param {boolean} [options.useXr] - Whether to allow XR input sources. Defaults to true.
+    */
   def this(domElement: Element) = this()
   def this(domElement: Element, options: UseMouse) = this()
-  
-  /**
-    * Add a {@link pc.ElementComponent} to the internal list of ElementComponents that are being checked for input.
-    * @param element - The ElementComponent.
-    */
-  /* CompleteClass */
-  override def addElement(element: typings.playcanvas.pc.ElementComponent): Unit = js.native
-  
-  /**
-    * Attach mouse and touch events to a DOM element.
-    * @param domElement - The DOM element.
-    */
-  /* CompleteClass */
-  override def attach(domElement: Element): Unit = js.native
-  
-  /**
-    * Remove mouse and touch events from the DOM element that it is attached to.
-    */
-  /* CompleteClass */
-  override def detach(): Unit = js.native
-  
-  /**
-    * Remove a {@link pc.ElementComponent} from the internal list of ElementComponents that are being checked for input.
-    * @param element - The ElementComponent.
-    */
-  /* CompleteClass */
-  override def removeElement(element: typings.playcanvas.pc.ElementComponent): Unit = js.native
 }

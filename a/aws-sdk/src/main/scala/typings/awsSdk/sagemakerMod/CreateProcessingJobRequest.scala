@@ -12,24 +12,24 @@ trait CreateProcessingJobRequest extends StObject {
   var AppSpecification: typings.awsSdk.sagemakerMod.AppSpecification
   
   /**
-    * Sets the environment variables in the Docker container.
+    * The environment variables to set in the Docker container. Up to 100 key and values entries in the map are supported.
     */
   var Environment: js.UndefOr[ProcessingEnvironmentMap] = js.undefined
   
   var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.undefined
   
   /**
-    * Networking options for a processing job.
+    * Networking options for a processing job, such as whether to allow inbound and outbound network calls to and from processing containers, and the VPC subnets and security groups to use for VPC-enabled processing jobs.
     */
   var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.undefined
   
   /**
-    * For each input, data is downloaded from S3 into the processing container before the processing job begins running if "S3InputMode" is set to File.
+    * An array of inputs configuring the data to download into the processing container.
     */
   var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.undefined
   
   /**
-    *  The name of the processing job. The name must be unique within an AWS Region in the AWS account.
+    *  The name of the processing job. The name must be unique within an Amazon Web Services Region in the Amazon Web Services account.
     */
   var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
   
@@ -54,7 +54,7 @@ trait CreateProcessingJobRequest extends StObject {
   var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.undefined
   
   /**
-    * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the Amazon Web Services Billing and Cost Management User Guide.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -90,7 +90,7 @@ object CreateProcessingJobRequest {
     
     inline def setProcessingInputsUndefined: Self = StObject.set(x, "ProcessingInputs", js.undefined)
     
-    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value :_*))
+    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value*))
     
     inline def setProcessingJobName(value: ProcessingJobName): Self = StObject.set(x, "ProcessingJobName", value.asInstanceOf[js.Any])
     
@@ -110,6 +110,6 @@ object CreateProcessingJobRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

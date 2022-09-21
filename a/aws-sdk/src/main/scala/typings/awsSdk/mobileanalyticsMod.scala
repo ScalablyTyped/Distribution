@@ -17,7 +17,7 @@ object mobileanalyticsMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends MobileAnalytics {
+  open class ^ () extends MobileAnalytics {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -177,7 +177,7 @@ object mobileanalyticsMod {
       
       inline def setEvents(value: EventListDefinition): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     }
   }
   

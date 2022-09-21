@@ -12,7 +12,7 @@ trait CreateVpcPeeringConnectionRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the accepter VPC. Default: Your AWS account ID
+    * The Amazon Web Services account ID of the owner of the accepter VPC. Default: Your Amazon Web Services account ID
     */
   var PeerOwnerId: js.UndefOr[String] = js.undefined
   
@@ -65,7 +65,7 @@ object CreateVpcPeeringConnectionRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

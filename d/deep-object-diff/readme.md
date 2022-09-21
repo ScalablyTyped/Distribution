@@ -1,7 +1,7 @@
 
 # Scala.js typings for deep-object-diff
 
-Typings are for version 1.1.0
+Typings are for version 1.1.7
 
 ## Library description:
 Deep diffs two objects, including nested structures of arrays and objects, and return the difference.
@@ -10,10 +10,10 @@ Deep diffs two objects, including nested structures of arrays and objects, and r
 | ------------------ | :-------------: |
 | Full name          | deep-object-diff |
 | Keywords           | diff, object, deep, difference |
-| # releases         | 0 |
-| # dependents       | 144 |
-| # downloads        | 83347122 |
-| # stars            | 3 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4201438E7 |
+| # stars            | 776.0 |
 
 ## Links
 - [Homepage](https://github.com/mattphillips/deep-object-diff#readme)

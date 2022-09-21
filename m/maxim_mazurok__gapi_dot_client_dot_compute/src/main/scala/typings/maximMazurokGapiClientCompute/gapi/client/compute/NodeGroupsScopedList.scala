@@ -26,7 +26,7 @@ object NodeGroupsScopedList {
     
     inline def setNodeGroupsUndefined: Self = StObject.set(x, "nodeGroups", js.undefined)
     
-    inline def setNodeGroupsVarargs(value: NodeGroup*): Self = StObject.set(x, "nodeGroups", js.Array(value :_*))
+    inline def setNodeGroupsVarargs(value: NodeGroup*): Self = StObject.set(x, "nodeGroups", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

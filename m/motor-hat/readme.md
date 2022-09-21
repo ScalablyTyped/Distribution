@@ -10,10 +10,10 @@ Node Module to control Adafruits MotorHAT for the RaspberryPi
 | ------------------ | :-------------: |
 | Full name          | motor-hat |
 | Keywords           | raspberry, pi, raspberrypi, motor, dc, stepper, servo, motorhat, hat |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 1104 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 113.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](http://www.github.com/jcane86/motor-hat)

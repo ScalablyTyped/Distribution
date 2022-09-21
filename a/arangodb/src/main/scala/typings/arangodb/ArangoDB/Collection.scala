@@ -2,6 +2,7 @@ package typings.arangodb.ArangoDB
 
 import typings.arangodb.anon.IsSystem
 import typings.arangodb.anon.Limit
+import typings.arangodb.arangodbBooleans.`false`
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,7 +44,7 @@ trait Collection[T /* <: js.Object */] extends StObject {
   
   def ensureIndex(description: IndexDescription[T]): Index[T] = js.native
   
-  def exists(name: String): Boolean = js.native
+  def exists(name: String): DocumentMetadata | `false` = js.native
   
   def figures(): CollectionFigures = js.native
   
@@ -84,12 +85,12 @@ trait Collection[T /* <: js.Object */] extends StObject {
   def properties(): CollectionProperties = js.native
   def properties(properties: CollectionPropertiesOptions): CollectionProperties = js.native
   
-  def remove(selector: String): RemoveResult[js.Any] = js.native
-  def remove(selector: String, options: RemoveOptions): RemoveResult[js.Any] = js.native
-  def remove(selectors: js.Array[String | DocumentLike]): js.Array[RemoveResult[js.Any]] = js.native
-  def remove(selectors: js.Array[String | DocumentLike], options: RemoveOptions): js.Array[RemoveResult[js.Any]] = js.native
-  def remove(selector: DocumentLike): RemoveResult[js.Any] = js.native
-  def remove(selector: DocumentLike, options: RemoveOptions): RemoveResult[js.Any] = js.native
+  def remove(selector: String): RemoveResult[Any] = js.native
+  def remove(selector: String, options: RemoveOptions): RemoveResult[Any] = js.native
+  def remove(selectors: js.Array[String | DocumentLike]): js.Array[RemoveResult[Any]] = js.native
+  def remove(selectors: js.Array[String | DocumentLike], options: RemoveOptions): js.Array[RemoveResult[Any]] = js.native
+  def remove(selector: DocumentLike): RemoveResult[Any] = js.native
+  def remove(selector: DocumentLike, options: RemoveOptions): RemoveResult[Any] = js.native
   
   def removeByExample(example: Partial[Document[T]]): Double = js.native
   def removeByExample(example: Partial[Document[T]], options: RemoveByExampleOptions): Double = js.native

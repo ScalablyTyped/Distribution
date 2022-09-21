@@ -16,18 +16,18 @@ object mod extends Shortcut {
   
   trait CreateQueue extends StObject {
     
-    def add(name: String, opts: QueueOptions): Queue[js.Any]
+    def add(name: String, opts: QueueOptions): Queue[Any]
   }
   object CreateQueue {
     
-    inline def apply(add: (String, QueueOptions) => Queue[js.Any]): CreateQueue = {
+    inline def apply(add: (String, QueueOptions) => Queue[Any]): CreateQueue = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
       __obj.asInstanceOf[CreateQueue]
     }
     
     extension [Self <: CreateQueue](x: Self) {
       
-      inline def setAdd(value: (String, QueueOptions) => Queue[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, QueueOptions) => Queue[Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     }
   }
   
@@ -38,8 +38,8 @@ object mod extends Shortcut {
     
     def createQueues(redisURL: String): CreateQueue = js.native
     
-    def setQueues(bullQueues: js.Array[Queue[js.Any]]): Queue[js.Any] = js.native
-    def setQueues(bullQueues: Queue[js.Any]): Queue[js.Any] = js.native
+    def setQueues(bullQueues: js.Array[Queue[Any]]): Queue[Any] = js.native
+    def setQueues(bullQueues: Queue[Any]): Queue[Any] = js.native
   }
   
   type _To = Options

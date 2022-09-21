@@ -13,7 +13,7 @@ trait Weather extends StObject {
     */
   def getForecast(
     district: String,
-    callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]
+    callback: js.Function2[/* errorStatus */ Any, /* result */ WeatherForecastResult, Unit]
   ): Unit
   
   /**
@@ -23,14 +23,14 @@ trait Weather extends StObject {
     */
   def getLive(
     district: String,
-    callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]
+    callback: js.Function2[/* errorStatus */ Any, /* result */ WeatherLiveResult, Unit]
   ): Unit
 }
 object Weather {
   
   inline def apply(
-    getForecast: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit,
-    getLive: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
+    getForecast: (String, js.Function2[/* errorStatus */ Any, /* result */ WeatherForecastResult, Unit]) => Unit,
+    getLive: (String, js.Function2[/* errorStatus */ Any, /* result */ WeatherLiveResult, Unit]) => Unit
   ): Weather = {
     val __obj = js.Dynamic.literal(getForecast = js.Any.fromFunction2(getForecast), getLive = js.Any.fromFunction2(getLive))
     __obj.asInstanceOf[Weather]
@@ -39,11 +39,9 @@ object Weather {
   extension [Self <: Weather](x: Self) {
     
     inline def setGetForecast(
-      value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit
+      value: (String, js.Function2[/* errorStatus */ Any, /* result */ WeatherForecastResult, Unit]) => Unit
     ): Self = StObject.set(x, "getForecast", js.Any.fromFunction2(value))
     
-    inline def setGetLive(
-      value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
-    ): Self = StObject.set(x, "getLive", js.Any.fromFunction2(value))
+    inline def setGetLive(value: (String, js.Function2[/* errorStatus */ Any, /* result */ WeatherLiveResult, Unit]) => Unit): Self = StObject.set(x, "getLive", js.Any.fromFunction2(value))
   }
 }

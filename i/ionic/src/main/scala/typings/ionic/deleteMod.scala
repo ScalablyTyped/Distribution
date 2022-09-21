@@ -16,7 +16,7 @@ object deleteMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/ssh/delete", "SSHDeleteCommand")
   @js.native
-  class SSHDeleteCommand protected () extends SSHBaseCommand {
+  open class SSHDeleteCommand protected () extends SSHBaseCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native

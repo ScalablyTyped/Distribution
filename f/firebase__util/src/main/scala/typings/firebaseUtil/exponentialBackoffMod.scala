@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object exponentialBackoffMod {
   
-  @JSImport("@firebase/util/dist/src/exponential_backoff", JSImport.Namespace)
+  @JSImport("@firebase/util/dist/node-esm/src/exponential_backoff", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/util/dist/src/exponential_backoff", "MAX_VALUE_MILLIS")
+  @JSImport("@firebase/util/dist/node-esm/src/exponential_backoff", "MAX_VALUE_MILLIS")
   @js.native
   val MAX_VALUE_MILLIS: Double = js.native
   
-  @JSImport("@firebase/util/dist/src/exponential_backoff", "RANDOM_FACTOR")
+  @JSImport("@firebase/util/dist/node-esm/src/exponential_backoff", "RANDOM_FACTOR")
   @js.native
   val RANDOM_FACTOR: /* 0.5 */ Double = js.native
   

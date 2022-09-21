@@ -47,19 +47,19 @@ object GetOpenIDConfigResponse {
     
     inline def setClaims_supportedUndefined: Self = StObject.set(x, "claims_supported", js.undefined)
     
-    inline def setClaims_supportedVarargs(value: String*): Self = StObject.set(x, "claims_supported", js.Array(value :_*))
+    inline def setClaims_supportedVarargs(value: String*): Self = StObject.set(x, "claims_supported", js.Array(value*))
     
     inline def setGrant_types(value: js.Array[String]): Self = StObject.set(x, "grant_types", value.asInstanceOf[js.Any])
     
     inline def setGrant_typesUndefined: Self = StObject.set(x, "grant_types", js.undefined)
     
-    inline def setGrant_typesVarargs(value: String*): Self = StObject.set(x, "grant_types", js.Array(value :_*))
+    inline def setGrant_typesVarargs(value: String*): Self = StObject.set(x, "grant_types", js.Array(value*))
     
     inline def setId_token_signing_alg_values_supported(value: js.Array[String]): Self = StObject.set(x, "id_token_signing_alg_values_supported", value.asInstanceOf[js.Any])
     
     inline def setId_token_signing_alg_values_supportedUndefined: Self = StObject.set(x, "id_token_signing_alg_values_supported", js.undefined)
     
-    inline def setId_token_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "id_token_signing_alg_values_supported", js.Array(value :_*))
+    inline def setId_token_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "id_token_signing_alg_values_supported", js.Array(value*))
     
     inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
@@ -73,12 +73,12 @@ object GetOpenIDConfigResponse {
     
     inline def setResponse_types_supportedUndefined: Self = StObject.set(x, "response_types_supported", js.undefined)
     
-    inline def setResponse_types_supportedVarargs(value: String*): Self = StObject.set(x, "response_types_supported", js.Array(value :_*))
+    inline def setResponse_types_supportedVarargs(value: String*): Self = StObject.set(x, "response_types_supported", js.Array(value*))
     
     inline def setSubject_types_supported(value: js.Array[String]): Self = StObject.set(x, "subject_types_supported", value.asInstanceOf[js.Any])
     
     inline def setSubject_types_supportedUndefined: Self = StObject.set(x, "subject_types_supported", js.undefined)
     
-    inline def setSubject_types_supportedVarargs(value: String*): Self = StObject.set(x, "subject_types_supported", js.Array(value :_*))
+    inline def setSubject_types_supportedVarargs(value: String*): Self = StObject.set(x, "subject_types_supported", js.Array(value*))
   }
 }

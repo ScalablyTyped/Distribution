@@ -38,7 +38,7 @@ object DescribeRaidArraysRequest {
     
     inline def setRaidArrayIdsUndefined: Self = StObject.set(x, "RaidArrayIds", js.undefined)
     
-    inline def setRaidArrayIdsVarargs(value: String*): Self = StObject.set(x, "RaidArrayIds", js.Array(value :_*))
+    inline def setRaidArrayIdsVarargs(value: String*): Self = StObject.set(x, "RaidArrayIds", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

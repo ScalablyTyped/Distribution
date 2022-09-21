@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteTargetRequest extends StObject {
   
   /**
-    * A Boolean value that can be used to delete all associations with this SNS topic. The default value is FALSE. If set to TRUE, all associations between that target and every notification rule in your AWS account are deleted.
+    * A Boolean value that can be used to delete all associations with this Chatbot topic. The default value is FALSE. If set to TRUE, all associations between that target and every notification rule in your Amazon Web Services account are deleted.
     */
   var ForceUnsubscribeAll: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ForceUnsubscribeAll] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the SNS topic to delete.
+    * The Amazon Resource Name (ARN) of the Chatbot topic or Chatbot client to delete.
     */
   var TargetAddress: typings.awsSdk.codestarnotificationsMod.TargetAddress
 }

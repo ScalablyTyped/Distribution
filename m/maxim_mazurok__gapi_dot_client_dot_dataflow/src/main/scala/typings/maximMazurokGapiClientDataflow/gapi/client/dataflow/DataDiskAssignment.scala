@@ -28,7 +28,7 @@ object DataDiskAssignment {
     
     inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    inline def setDataDisksVarargs(value: String*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: String*): Self = StObject.set(x, "dataDisks", js.Array(value*))
     
     inline def setVmInstance(value: String): Self = StObject.set(x, "vmInstance", value.asInstanceOf[js.Any])
     

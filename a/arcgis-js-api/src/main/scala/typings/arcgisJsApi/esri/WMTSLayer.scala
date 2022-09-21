@@ -1,7 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.KVP
 import typings.arcgisJsApi.arcgisJsApiStrings.RESTful
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.arcgisJsApi.arcgisJsApiStrings.wmts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,14 +37,14 @@ trait WMTSLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customLayerParameters)
     */
-  var customLayerParameters: js.Any = js.native
+  var customLayerParameters: Any = js.native
   
   /**
     * Use this to append custom parameters to all WMTS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customParameters)
     */
-  var customParameters: js.Any = js.native
+  var customParameters: Any = js.native
   
   /**
     * Returns a [WMTSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html) based on the given sublayer id.
@@ -51,8 +53,13 @@ trait WMTSLayer
     */
   def findSublayerById(id: String): WMTSSublayer = js.native
   
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: WMTSLayerRefreshEventHandler): IHandle = js.native
+  
   /**
     * The service mode for the WMTS layer.
+    *
+    * @default RESTful
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#serviceMode)
     */

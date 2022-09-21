@@ -11,6 +11,9 @@ trait LongRunningRecognizeRequest extends StObject {
   
   /** Required. Provides information to the recognizer that specifies how to process the request. */
   var config: js.UndefOr[RecognitionConfig] = js.undefined
+  
+  /** Optional. Specifies an optional destination for the recognition results. */
+  var outputConfig: js.UndefOr[TranscriptOutputConfig] = js.undefined
 }
 object LongRunningRecognizeRequest {
   
@@ -28,5 +31,9 @@ object LongRunningRecognizeRequest {
     inline def setConfig(value: RecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setOutputConfig(value: TranscriptOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

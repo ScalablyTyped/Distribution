@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.DrawOrderTimeline")
 @js.native
-class DrawOrderTimeline protected ()
+open class DrawOrderTimeline protected ()
   extends StObject
      with typings.phaser.spine.DrawOrderTimeline {
   def this(frameCount: Double) = this()

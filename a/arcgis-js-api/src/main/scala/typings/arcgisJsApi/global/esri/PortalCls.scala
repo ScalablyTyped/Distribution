@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html)
   */
-class PortalCls ()
+open class PortalCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Portal {
   def this(properties: PortalProperties) = this()

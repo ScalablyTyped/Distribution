@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuditLogConfig extends StObject {
   
-  /** Specifies the identities that do not cause logging for this type of permission. Follows the same format of [Binding.members][]. */
+  /** Specifies the identities that do not cause logging for this type of permission. Follows the same format of Binding.members. */
   var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** This is deprecated and has no effect. Do not use. */
   var ignoreChildExemptions: js.UndefOr[Boolean] = js.undefined
   
   /** The log type that this config enables. */
@@ -27,7 +28,7 @@ object AuditLogConfig {
     
     inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value*))
     
     inline def setIgnoreChildExemptions(value: Boolean): Self = StObject.set(x, "ignoreChildExemptions", value.asInstanceOf[js.Any])
     

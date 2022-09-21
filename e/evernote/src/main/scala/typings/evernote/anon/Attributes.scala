@@ -77,7 +77,7 @@ object Attributes {
     
     inline def setTagGuidsUndefined: Self = StObject.set(x, "tagGuids", js.undefined)
     
-    inline def setTagGuidsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "tagGuids", js.Array(value :_*))
+    inline def setTagGuidsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "tagGuids", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Appointments.Appointment")
 @js.native
 /** Initializes a new instance of the Appointment class. */
-class Appointment ()
+open class Appointment ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment {
   
@@ -85,7 +84,7 @@ class Appointment ()
   
   /** Gets the original starting time for a recurring appointment. */
   /* CompleteClass */
-  var originalStartTime: Date = js.native
+  var originalStartTime: js.Date = js.native
   
   /** Gets or sets the object that describes when and how often the appointment occurs. Recurrence is of type AppointmentRecurrence . */
   /* CompleteClass */
@@ -101,7 +100,7 @@ class Appointment ()
   
   /** Gets or sets the date and time that the user responded to the appointment request. */
   /* CompleteClass */
-  var replyTime: Date = js.native
+  var replyTime: js.Date = js.native
   
   /** Gets or sets a string that uniquely identifies an appointment across devices. */
   /* CompleteClass */
@@ -113,7 +112,7 @@ class Appointment ()
   
   /** Gets or sets the starting time for the appointment. StartTime is of type DateTime . */
   /* CompleteClass */
-  var startTime: Date = js.native
+  var startTime: js.Date = js.native
   
   /** Gets or sets a string that communicates the subject of the appointment. Subject is of type String and a maximum of 255 characters in length. */
   /* CompleteClass */

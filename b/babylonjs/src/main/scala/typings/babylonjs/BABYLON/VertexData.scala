@@ -7,13 +7,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VertexData extends StObject {
   
-  /* private */ var _applyTo: js.Any = js.native
+  /* private */ val _applyTo: Any = js.native
   
-  /* private */ var _mergeElement: js.Any = js.native
+  /**
+    * @param meshOrGeometry
+    * @param updatable
+    * @param isAsync
+    * @hidden
+    */
+  def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Boolean, isAsync: Boolean): Coroutine[VertexData] = js.native
+  def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Unit, isAsync: Boolean): Coroutine[VertexData] = js.native
   
-  /* private */ var _update: js.Any = js.native
+  def _mergeCoroutine(
+    transform: Unit,
+    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    use32BitsIndices: Boolean,
+    isAsync: Boolean,
+    forceCloneIndices: Boolean
+  ): Coroutine[VertexData] = js.native
+  def _mergeCoroutine(
+    transform: Unit,
+    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    use32BitsIndices: Unit,
+    isAsync: Boolean,
+    forceCloneIndices: Boolean
+  ): Coroutine[VertexData] = js.native
+  /**
+    * @param transform
+    * @param vertexDatas
+    * @param use32BitsIndices
+    * @param isAsync
+    * @param forceCloneIndices
+    * @hidden
+    */
+  def _mergeCoroutine(
+    transform: Matrix,
+    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    use32BitsIndices: Boolean,
+    isAsync: Boolean,
+    forceCloneIndices: Boolean
+  ): Coroutine[VertexData] = js.native
+  def _mergeCoroutine(
+    transform: Matrix,
+    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    use32BitsIndices: Unit,
+    isAsync: Boolean,
+    forceCloneIndices: Boolean
+  ): Coroutine[VertexData] = js.native
   
-  /* private */ var _validate: js.Any = js.native
+  /* private */ var _update: Any = js.native
+  
+  /* private */ var _validate: Any = js.native
   
   /**
     * Associates the vertexData to the passed Geometry.
@@ -65,14 +109,21 @@ trait VertexData extends StObject {
     */
   var matricesWeightsExtra: Nullable[FloatArray] = js.native
   
+  def merge(others: js.Array[VertexData]): VertexData = js.native
+  def merge(others: js.Array[VertexData], use32BitsIndices: Boolean): VertexData = js.native
+  def merge(others: js.Array[VertexData], use32BitsIndices: Boolean, forceCloneIndices: Boolean): VertexData = js.native
+  def merge(others: js.Array[VertexData], use32BitsIndices: Unit, forceCloneIndices: Boolean): VertexData = js.native
   /**
     * Merges the passed VertexData into the current one
-    * @param other the VertexData to be merged into the current one
+    * @param others the VertexData to be merged into the current one
     * @param use32BitsIndices defines a boolean indicating if indices must be store in a 32 bits array
+    * @param forceCloneIndices defines a boolean indicating if indices are forced to be cloned
     * @returns the modified VertexData
     */
-  def merge(other: VertexData): VertexData = js.native
-  def merge(other: VertexData, use32BitsIndices: Boolean): VertexData = js.native
+  def merge(others: VertexData): VertexData = js.native
+  def merge(others: VertexData, use32BitsIndices: Boolean): VertexData = js.native
+  def merge(others: VertexData, use32BitsIndices: Boolean, forceCloneIndices: Boolean): VertexData = js.native
+  def merge(others: VertexData, use32BitsIndices: Unit, forceCloneIndices: Boolean): VertexData = js.native
   
   /**
     * An array of the x, y, z normal vector of each vertex  [...., x, y, z, .....]
@@ -88,7 +139,7 @@ trait VertexData extends StObject {
     * Serializes the VertexData
     * @returns a serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Uses the passed data array to set the set the values for the specified kind of data
@@ -112,8 +163,6 @@ trait VertexData extends StObject {
   /**
     * Updates the associated geometry
     * @param geometry the geometry to be updated
-    * @param updateExtends when true BoundingInfo will be renewed when and if position kind is updated, optional with default false
-    * @param makeItUnique when true, and when and if position kind is updated, a new global geometry will be created from these positions and set to the mesh, optional with default false
     * @returns VertexData.
     */
   def updateGeometry(geometry: Geometry): VertexData = js.native
@@ -121,8 +170,6 @@ trait VertexData extends StObject {
   /**
     * Updates the associated mesh
     * @param mesh the mesh to be updated
-    * @param updateExtends when true the mesh BoundingInfo will be renewed when and if position kind is updated, optional with default false
-    * @param makeItUnique when true, and when and if position kind is updated, a new global geometry will be  created from these positions and set to the mesh, optional with default false
     * @returns VertexData
     */
   def updateMesh(mesh: Mesh): VertexData = js.native

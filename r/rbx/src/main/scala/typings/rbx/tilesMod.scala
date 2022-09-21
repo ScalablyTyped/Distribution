@@ -11,5 +11,5 @@ object tilesMod {
   
   @JSImport("rbx/grid/tiles", "Tile")
   @js.native
-  val Tile: ForwardRefAsExoticComponent[TileProps, ElementType[js.Any]] = js.native
+  val Tile: ForwardRefAsExoticComponent[TileProps, ElementType[Any]] = js.native
 }

@@ -12,7 +12,7 @@ trait ListProvisioningTemplateVersionsResponse extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The list of fleet provisioning template versions.
+    * The list of provisioning template versions.
     */
   var versions: js.UndefOr[ProvisioningTemplateVersionListing] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListProvisioningTemplateVersionsResponse {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: ProvisioningTemplateVersionSummary*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: ProvisioningTemplateVersionSummary*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ object anon {
   
   trait Dictx
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var installPath: String
   }

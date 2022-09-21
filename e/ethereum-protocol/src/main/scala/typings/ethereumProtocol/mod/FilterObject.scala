@@ -39,6 +39,6 @@ object FilterObject {
     
     inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    inline def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value*))
   }
 }

@@ -8,11 +8,11 @@ trait PropertyChangedEventArgs extends StObject {
   
   var entity: Entity
   
-  var newValue: js.Any
+  var newValue: Any
   
-  var oldValue: js.Any
+  var oldValue: Any
   
-  var parent: js.Any
+  var parent: Any
   
   var property: IProperty
   
@@ -22,9 +22,9 @@ object PropertyChangedEventArgs {
   
   inline def apply(
     entity: Entity,
-    newValue: js.Any,
-    oldValue: js.Any,
-    parent: js.Any,
+    newValue: Any,
+    oldValue: Any,
+    parent: Any,
     property: IProperty,
     propertyName: String
   ): PropertyChangedEventArgs = {
@@ -36,11 +36,11 @@ object PropertyChangedEventArgs {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setProperty(value: IProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterEventTopicRequest extends StObject {
   
   /**
-    * The Directory ID that will publish status messages to the SNS topic.
+    * The Directory ID that will publish status messages to the Amazon SNS topic.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
-    * The SNS topic name to which the directory will publish status messages. This SNS topic must be in the same region as the specified Directory ID.
+    * The Amazon SNS topic name to which the directory will publish status messages. This Amazon SNS topic must be in the same region as the specified Directory ID.
     */
   var TopicName: typings.awsSdk.directoryserviceMod.TopicName
 }

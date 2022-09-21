@@ -9,7 +9,7 @@ trait SimpleOrientationSensor
      with ISimpleOrientationSensor
 object SimpleOrientationSensor {
   
-  inline def apply(getCurrentOrientation: () => SimpleOrientation, onorientationchanged: js.Any): SimpleOrientationSensor = {
+  inline def apply(getCurrentOrientation: () => SimpleOrientation, onorientationchanged: Any): SimpleOrientationSensor = {
     val __obj = js.Dynamic.literal(getCurrentOrientation = js.Any.fromFunction0(getCurrentOrientation), onorientationchanged = onorientationchanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleOrientationSensor]
   }

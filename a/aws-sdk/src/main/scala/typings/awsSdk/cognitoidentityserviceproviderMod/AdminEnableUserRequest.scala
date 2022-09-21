@@ -12,7 +12,7 @@ trait AdminEnableUserRequest extends StObject {
   var UserPoolId: UserPoolIdType
   
   /**
-    * The user name of the user you wish to enable.
+    * The user name of the user you want to enable.
     */
   var Username: UsernameType
 }

@@ -8,7 +8,7 @@ object credUserPassPayloadMod {
   
   @JSImport("nodegit/cred-user-pass-payload", "CredUserpassPayload")
   @js.native
-  class CredUserpassPayload () extends StObject {
+  open class CredUserpassPayload () extends StObject {
     
     var password: String = js.native
     

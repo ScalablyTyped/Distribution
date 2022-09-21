@@ -39,7 +39,7 @@ object ListTableOptions {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setNoCellBorders(value: Boolean): Self = StObject.set(x, "noCellBorders", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object ListTableOptions {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: String*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: String*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

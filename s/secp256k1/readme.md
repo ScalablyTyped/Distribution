@@ -10,10 +10,10 @@ This module provides native bindings to ecdsa secp256k1 functions
 | ------------------ | :-------------: |
 | Full name          | secp256k1 |
 | Keywords           | ec, ecdh, ecdsa, secp256k1 |
-| # releases         | 7 |
-| # dependents       | 749 |
-| # downloads        | 8764156 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3589527.6666666665 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/secp256k1-node#readme)

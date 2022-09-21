@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nosleep.js" : "0.12.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nosleep.js" : "0.12.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

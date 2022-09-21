@@ -10,10 +10,10 @@ The javascript library for magical scroll interactions.
 | ------------------ | :-------------: |
 | Full name          | scrollmagic |
 | Keywords           | scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery, scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery, scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery, scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery, scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery |
-| # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 1208842 |
-| # stars            | 13 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 109111.66666666667 |
+| # stars            | 13832.0 |
 
 ## Links
 - [Homepage](http://ScrollMagic.io)

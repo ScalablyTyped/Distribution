@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "SideY")
 @js.native
-class SideY () extends AbstractPrimitive {
+open class SideY () extends AbstractPrimitive {
   def this(dimension: SideYDimension) = this()
   def this(dimension: Unit, color: SideColor) = this()
   def this(dimension: SideYDimension, color: SideColor) = this()

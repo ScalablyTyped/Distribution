@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomTaskPane")
 @js.native
-/* private */ class CustomTaskPane ()
+/* private */ open class CustomTaskPane ()
   extends StObject
      with typings.activexOffice.Office.CustomTaskPane {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
-  override val ContentControl: js.Any = js.native
+  override val ContentControl: Any = js.native
   
   /* CompleteClass */
   override def Delete(): Unit = js.native
@@ -44,5 +44,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Width: Double = js.native
   
   /* CompleteClass */
-  override val Window: js.Any = js.native
+  override val Window: Any = js.native
 }

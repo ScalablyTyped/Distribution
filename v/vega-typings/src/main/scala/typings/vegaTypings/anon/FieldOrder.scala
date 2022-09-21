@@ -27,12 +27,12 @@ object FieldOrder {
     
     inline def setField(value: js.Array[String | ExprRef | SignalRef]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setFieldVarargs(value: (String | ExprRef | SignalRef)*): Self = StObject.set(x, "field", js.Array(value :_*))
+    inline def setFieldVarargs(value: (String | ExprRef | SignalRef)*): Self = StObject.set(x, "field", js.Array(value*))
     
     inline def setOrder(value: js.Array[SortOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value*))
   }
 }

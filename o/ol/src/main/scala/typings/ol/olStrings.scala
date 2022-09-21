@@ -35,6 +35,10 @@ object olStrings {
   inline def beforeoperations: beforeoperations = "beforeoperations".asInstanceOf[beforeoperations]
   
   @js.native
+  sealed trait boxcancel extends StObject
+  inline def boxcancel: boxcancel = "boxcancel".asInstanceOf[boxcancel]
+  
+  @js.native
   sealed trait boxdrag extends StObject
   inline def boxdrag: boxdrag = "boxdrag".asInstanceOf[boxdrag]
   
@@ -257,6 +261,18 @@ object olStrings {
   @js.native
   sealed trait extentchanged extends StObject
   inline def extentchanged: extentchanged = "extentchanged".asInstanceOf[extentchanged]
+  
+  @js.native
+  sealed trait featuresloadend extends StObject
+  inline def featuresloadend: featuresloadend = "featuresloadend".asInstanceOf[featuresloadend]
+  
+  @js.native
+  sealed trait featuresloaderror extends StObject
+  inline def featuresloaderror: featuresloaderror = "featuresloaderror".asInstanceOf[featuresloaderror]
+  
+  @js.native
+  sealed trait featuresloadstart extends StObject
+  inline def featuresloadstart: featuresloadstart = "featuresloadstart".asInstanceOf[featuresloadstart]
   
   @js.native
   sealed trait float extends StObject

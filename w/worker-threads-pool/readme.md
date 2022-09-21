@@ -10,10 +10,10 @@ Easily manage a pool of Node.js Worker Threads
 | ------------------ | :-------------: |
 | Full name          | worker-threads-pool |
 | Keywords           | pool, worker, workers, thread, threads, worker_threads, parallel |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 13934 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2264.0 |
+| # stars            | 417.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/worker-threads-pool#readme)

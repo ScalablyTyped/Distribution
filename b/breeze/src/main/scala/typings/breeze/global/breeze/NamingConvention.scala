@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.NamingConvention")
 @js.native
-class NamingConvention protected ()
+open class NamingConvention protected ()
   extends StObject
      with typings.breeze.breeze.NamingConvention {
   def this(config: NamingConventionOptions) = this()

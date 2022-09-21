@@ -82,11 +82,11 @@ object testMod {
       
       inline def setErrorsFromLinter(value: js.Array[LintError]): Self = StObject.set(x, "errorsFromLinter", value.asInstanceOf[js.Any])
       
-      inline def setErrorsFromLinterVarargs(value: LintError*): Self = StObject.set(x, "errorsFromLinter", js.Array(value :_*))
+      inline def setErrorsFromLinterVarargs(value: LintError*): Self = StObject.set(x, "errorsFromLinter", js.Array(value*))
       
       inline def setErrorsFromMarkup(value: js.Array[LintError]): Self = StObject.set(x, "errorsFromMarkup", value.asInstanceOf[js.Any])
       
-      inline def setErrorsFromMarkupVarargs(value: LintError*): Self = StObject.set(x, "errorsFromMarkup", js.Array(value :_*))
+      inline def setErrorsFromMarkupVarargs(value: LintError*): Self = StObject.set(x, "errorsFromMarkup", js.Array(value*))
       
       inline def setFixesFromLinter(value: String): Self = StObject.set(x, "fixesFromLinter", value.asInstanceOf[js.Any])
       

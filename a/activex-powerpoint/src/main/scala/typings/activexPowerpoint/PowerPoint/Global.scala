@@ -29,7 +29,7 @@ trait Global extends StObject {
   @JSName("CommandBars")
   val CommandBars_Original: CommandBars
   
-  val Dialogs: js.Any
+  val Dialogs: Any
   
   val FileConverters: typings.activexPowerpoint.PowerPoint.FileConverters
   
@@ -57,7 +57,7 @@ object Global {
     Application: Application,
     Assistant: Assistant,
     CommandBars: CommandBars,
-    Dialogs: js.Any,
+    Dialogs: Any,
     FileConverters: FileConverters,
     IsSandboxed: Boolean,
     PowerPointDotGlobal_typekey: Global,
@@ -89,7 +89,7 @@ object Global {
     
     inline def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
-    inline def setDialogs(value: js.Any): Self = StObject.set(x, "Dialogs", value.asInstanceOf[js.Any])
+    inline def setDialogs(value: Any): Self = StObject.set(x, "Dialogs", value.asInstanceOf[js.Any])
     
     inline def setFileConverters(value: FileConverters): Self = StObject.set(x, "FileConverters", value.asInstanceOf[js.Any])
     

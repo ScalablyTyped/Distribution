@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Organizations")
 @js.native
-class ResourceOrganizations protected () extends StObject {
+open class ResourceOrganizations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
@@ -15,6 +15,8 @@ class ResourceOrganizations protected () extends StObject {
   var deidentifyTemplates: ResourceOrganizationsDeidentifytemplates = js.native
   
   var inspectTemplates: ResourceOrganizationsInspecttemplates = js.native
+  
+  var locations: ResourceOrganizationsLocations = js.native
   
   var storedInfoTypes: ResourceOrganizationsStoredinfotypes = js.native
 }

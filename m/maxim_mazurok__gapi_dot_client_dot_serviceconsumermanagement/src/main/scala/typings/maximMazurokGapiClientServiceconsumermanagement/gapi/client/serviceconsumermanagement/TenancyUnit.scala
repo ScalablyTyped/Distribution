@@ -50,6 +50,6 @@ object TenancyUnit {
     
     inline def setTenantResourcesUndefined: Self = StObject.set(x, "tenantResources", js.undefined)
     
-    inline def setTenantResourcesVarargs(value: TenantResource*): Self = StObject.set(x, "tenantResources", js.Array(value :_*))
+    inline def setTenantResourcesVarargs(value: TenantResource*): Self = StObject.set(x, "tenantResources", js.Array(value*))
   }
 }

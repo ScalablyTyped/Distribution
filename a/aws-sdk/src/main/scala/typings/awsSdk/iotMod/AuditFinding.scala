@@ -19,7 +19,7 @@ trait AuditFinding extends StObject {
   /**
     * The time the result (finding) was discovered.
     */
-  var findingTime: js.UndefOr[Timestamp] = js.undefined
+  var findingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Indicates whether the audit finding was suppressed or not during reporting. 
@@ -59,7 +59,7 @@ trait AuditFinding extends StObject {
   /**
     * The time the audit started.
     */
-  var taskStartTime: js.UndefOr[Timestamp] = js.undefined
+  var taskStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object AuditFinding {
   
@@ -78,7 +78,7 @@ object AuditFinding {
     
     inline def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
     
-    inline def setFindingTime(value: Timestamp): Self = StObject.set(x, "findingTime", value.asInstanceOf[js.Any])
+    inline def setFindingTime(value: js.Date): Self = StObject.set(x, "findingTime", value.asInstanceOf[js.Any])
     
     inline def setFindingTimeUndefined: Self = StObject.set(x, "findingTime", js.undefined)
     
@@ -102,7 +102,7 @@ object AuditFinding {
     
     inline def setRelatedResourcesUndefined: Self = StObject.set(x, "relatedResources", js.undefined)
     
-    inline def setRelatedResourcesVarargs(value: RelatedResource*): Self = StObject.set(x, "relatedResources", js.Array(value :_*))
+    inline def setRelatedResourcesVarargs(value: RelatedResource*): Self = StObject.set(x, "relatedResources", js.Array(value*))
     
     inline def setSeverity(value: AuditFindingSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object AuditFinding {
     
     inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    inline def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: js.Date): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
     
     inline def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
   }

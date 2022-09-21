@@ -1,6 +1,5 @@
 package typings.forgeApis.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait With extends StObject {
   
   var _with: js.UndefOr[String] = js.undefined
   
-  var ifModifiedSince: js.UndefOr[Date] = js.undefined
+  var ifModifiedSince: js.UndefOr[js.Date] = js.undefined
 }
 object With {
   
@@ -20,7 +19,7 @@ object With {
   
   extension [Self <: With](x: Self) {
     
-    inline def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: js.Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
     inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     

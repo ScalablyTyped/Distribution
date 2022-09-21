@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@opentelemetry/propagator-jaeger" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@opentelemetry/propagator-jaeger" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

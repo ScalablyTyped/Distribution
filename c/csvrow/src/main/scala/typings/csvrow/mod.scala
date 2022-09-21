@@ -13,6 +13,8 @@ object mod {
   inline def normalize(row: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(row.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def parse(row: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(row.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def parse(row: String, delimiter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(row.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def stringify(columns: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(columns.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(columns: js.Array[String], delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(columns.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]
 }

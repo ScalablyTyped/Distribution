@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the size of an ad unit that can be targeted on an ad request. It
-  * only applies to Private Auction, AdX Preferred Deals and Auction Packages.
-  * This targeting does not apply to Programmatic Guaranteed and Preferred
-  * Deals in Ad Manager.
-  */
 trait SchemaInventorySizeTargeting extends StObject {
   
   /**
@@ -35,12 +29,12 @@ object SchemaInventorySizeTargeting {
     
     inline def setExcludedInventorySizesUndefined: Self = StObject.set(x, "excludedInventorySizes", js.undefined)
     
-    inline def setExcludedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value :_*))
+    inline def setExcludedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value*))
     
     inline def setTargetedInventorySizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "targetedInventorySizes", value.asInstanceOf[js.Any])
     
     inline def setTargetedInventorySizesUndefined: Self = StObject.set(x, "targetedInventorySizes", js.undefined)
     
-    inline def setTargetedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value :_*))
+    inline def setTargetedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value*))
   }
 }

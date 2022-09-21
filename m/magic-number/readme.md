@@ -9,10 +9,10 @@ Determine a file's type from its magic number.
 | ------------------ | :-------------: |
 | Full name          | magic-number |
 | Keywords           | magicnumber, magic, number, file, detection, type |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 57991 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3246.6666666666665 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/stpettersens/node-magic-number#readme)

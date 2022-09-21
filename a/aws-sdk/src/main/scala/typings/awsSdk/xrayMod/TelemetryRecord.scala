@@ -34,11 +34,11 @@ trait TelemetryRecord extends StObject {
   /**
     * 
     */
-  var Timestamp: typings.awsSdk.xrayMod.Timestamp
+  var Timestamp: js.Date
 }
 object TelemetryRecord {
   
-  inline def apply(Timestamp: Timestamp): TelemetryRecord = {
+  inline def apply(Timestamp: js.Date): TelemetryRecord = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryRecord]
   }
@@ -65,6 +65,6 @@ object TelemetryRecord {
     
     inline def setSegmentsSpilloverCountUndefined: Self = StObject.set(x, "SegmentsSpilloverCount", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

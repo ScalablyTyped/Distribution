@@ -16,7 +16,7 @@ trait Zoom extends StObject {
   
   var PageRows: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Percentage: Double
   
@@ -31,7 +31,7 @@ object Zoom {
     PageColumns: Double,
     PageFit: WdPageFit,
     PageRows: Double,
-    Parent: js.Any,
+    Parent: Any,
     Percentage: Double,
     WordDotZoom_typekey: Zoom
   ): Zoom = {
@@ -52,7 +52,7 @@ object Zoom {
     
     inline def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPercentage(value: Double): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.grunt.grunt
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,11 +26,11 @@ object template {
     def date(): String = js.native
     def date(date: String): String = js.native
     def date(date: String, format: String): String = js.native
+    def date(date: js.Date): String = js.native
+    def date(date: js.Date, format: String): String = js.native
     def date(date: Double): String = js.native
     def date(date: Double, format: String): String = js.native
     def date(date: Unit, format: String): String = js.native
-    def date(date: Date): String = js.native
-    def date(date: Date, format: String): String = js.native
     
     /**
       * Process a Lo-Dash template string.
@@ -47,8 +46,8 @@ object template {
       *
       * @note if the data object already has a grunt property, the grunt API will not be accessible in templates.
       */
-    def process(template: String): js.Function1[/* options */ js.Any, String] = js.native
-    def process(template: String, options: js.Any): String = js.native
+    def process(template: String): js.Function1[/* options */ Any, String] = js.native
+    def process(template: String, options: Any): String = js.native
     
     /**
       * Set the Lo-Dash template delimiters to a predefined set in case you grunt.util._.template

@@ -19,7 +19,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.CameraCaptureUI")
   @js.native
-  class CameraCaptureUI ()
+  open class CameraCaptureUI ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.CameraCaptureUI {
     
@@ -85,7 +85,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings")
   @js.native
-  class CameraCaptureUIPhotoCaptureSettings ()
+  open class CameraCaptureUIPhotoCaptureSettings ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings {
     
@@ -121,7 +121,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings")
   @js.native
-  class CameraCaptureUIVideoCaptureSettings ()
+  open class CameraCaptureUIVideoCaptureSettings ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings {
     
@@ -152,7 +152,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.CameraOptionsUI")
   @js.native
-  class CameraOptionsUI ()
+  open class CameraOptionsUI ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.CameraOptionsUI
   /* static members */
@@ -167,13 +167,13 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.MediaCapture")
   @js.native
-  class MediaCapture ()
+  open class MediaCapture ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.MediaCapture
   
   @JSGlobal("Windows.Media.Capture.MediaCaptureFailedEventArgs")
   @js.native
-  class MediaCaptureFailedEventArgs ()
+  open class MediaCaptureFailedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.MediaCaptureFailedEventArgs {
     
@@ -186,7 +186,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.MediaCaptureInitializationSettings")
   @js.native
-  class MediaCaptureInitializationSettings ()
+  open class MediaCaptureInitializationSettings ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.MediaCaptureInitializationSettings {
     
@@ -205,7 +205,7 @@ object Capture {
   
   @JSGlobal("Windows.Media.Capture.MediaCaptureSettings")
   @js.native
-  class MediaCaptureSettings ()
+  open class MediaCaptureSettings ()
     extends StObject
        with typings.winrt.Windows.Media.Capture.MediaCaptureSettings {
     

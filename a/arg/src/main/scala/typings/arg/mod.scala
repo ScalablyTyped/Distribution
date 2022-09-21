@@ -2,6 +2,7 @@ package typings.arg
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arg.anon.FlagSymbol
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,33 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("arg", "ArgError")
+  @js.native
+  open class ArgError protected ()
+    extends StObject
+       with Error {
+    def this(message: String, code: String) = this()
+    
+    var code: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
   @JSImport("arg", "COUNT")
   @js.native
   val COUNT: Handler[Double] & FlagSymbol = js.native
   
   inline def flag[T](fn: T): T & FlagSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("flag")(fn.asInstanceOf[js.Any]).asInstanceOf[T & FlagSymbol]
+  
+  @JSImport("arg", "flagSymbol")
+  @js.native
+  val flagSymbol: js.Symbol = js.native
   
   type Handler[T] = js.Function3[/* value */ String, /* name */ String, /* previousValue */ js.UndefOr[T], T]
   
@@ -44,7 +67,7 @@ object mod {
       
       inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setPermissive(value: Boolean): Self = StObject.set(x, "permissive", value.asInstanceOf[js.Any])
       
@@ -63,5 +86,5 @@ object mod {
     var _underscore: js.Array[String] = js.native
   }
   
-  type Spec = StringDictionary[String | Handler[js.Any] | js.Array[Handler[js.Any]]]
+  type Spec = StringDictionary[String | Handler[Any] | js.Array[Handler[Any]]]
 }

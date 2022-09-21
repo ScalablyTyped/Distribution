@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.CurveLocation")
 @js.native
-class CurveLocation protected ()
+open class CurveLocation protected ()
   extends StObject
      with typings.paper.paper.CurveLocation {
   /** 

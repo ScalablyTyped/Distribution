@@ -13,7 +13,7 @@ object Transcoding {
   @JSGlobal("Windows.Media.Transcoding.MediaTranscoder")
   @js.native
   /** Creates a new instance of the MediaTranscoder class. */
-  class MediaTranscoder ()
+  open class MediaTranscoder ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Transcoding.MediaTranscoder
   

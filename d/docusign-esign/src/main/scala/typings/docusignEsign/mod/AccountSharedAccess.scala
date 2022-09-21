@@ -92,7 +92,7 @@ object AccountSharedAccess {
     
     inline def setSharedAccessUndefined: Self = StObject.set(x, "sharedAccess", js.undefined)
     
-    inline def setSharedAccessVarargs(value: (/* Information about shared items. */ MemberSharedItems)*): Self = StObject.set(x, "sharedAccess", js.Array(value :_*))
+    inline def setSharedAccessVarargs(value: (/* Information about shared items. */ MemberSharedItems)*): Self = StObject.set(x, "sharedAccess", js.Array(value*))
     
     inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     

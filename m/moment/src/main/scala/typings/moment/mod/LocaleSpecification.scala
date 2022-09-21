@@ -1,7 +1,6 @@
 package typings.moment.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait LocaleSpecification
   extends StObject
      with // Allow anything: in general any property that is passed as locale spec is
 // put in the locale object so it can be used by locale functions
-/* x */ StringDictionary[js.Any] {
+/* x */ StringDictionary[Any] {
   
   var calendar: js.UndefOr[CalendarSpec] = js.undefined
   
@@ -26,7 +25,7 @@ trait LocaleSpecification
     js.Function3[/* hour */ Double, /* minute */ Double, /* isLower */ Boolean, String]
   ] = js.undefined
   
-  var meridiemParse: js.UndefOr[RegExp] = js.undefined
+  var meridiemParse: js.UndefOr[js.RegExp] = js.undefined
   
   var months: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.undefined
   
@@ -34,7 +33,7 @@ trait LocaleSpecification
   
   var ordinal: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
   
-  var ordinalParse: js.UndefOr[RegExp] = js.undefined
+  var ordinalParse: js.UndefOr[js.RegExp] = js.undefined
   
   var relativeTime: js.UndefOr[RelativeTimeSpec] = js.undefined
   
@@ -63,7 +62,7 @@ object LocaleSpecification {
     
     inline def setErasUndefined: Self = StObject.set(x, "eras", js.undefined)
     
-    inline def setErasVarargs(value: EraSpec*): Self = StObject.set(x, "eras", js.Array(value :_*))
+    inline def setErasVarargs(value: EraSpec*): Self = StObject.set(x, "eras", js.Array(value*))
     
     inline def setInvalidDate(value: String): Self = StObject.set(x, "invalidDate", value.asInstanceOf[js.Any])
     
@@ -79,7 +78,7 @@ object LocaleSpecification {
     
     inline def setMeridiem(value: (/* hour */ Double, /* minute */ Double, /* isLower */ Boolean) => String): Self = StObject.set(x, "meridiem", js.Any.fromFunction3(value))
     
-    inline def setMeridiemParse(value: RegExp): Self = StObject.set(x, "meridiemParse", value.asInstanceOf[js.Any])
+    inline def setMeridiemParse(value: js.RegExp): Self = StObject.set(x, "meridiemParse", value.asInstanceOf[js.Any])
     
     inline def setMeridiemParseUndefined: Self = StObject.set(x, "meridiemParse", js.undefined)
     
@@ -95,15 +94,15 @@ object LocaleSpecification {
     
     inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
-    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
     
     inline def setOrdinal(value: /* n */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
     
-    inline def setOrdinalParse(value: RegExp): Self = StObject.set(x, "ordinalParse", value.asInstanceOf[js.Any])
+    inline def setOrdinalParse(value: js.RegExp): Self = StObject.set(x, "ordinalParse", value.asInstanceOf[js.Any])
     
     inline def setOrdinalParseUndefined: Self = StObject.set(x, "ordinalParse", js.undefined)
     
@@ -127,7 +126,7 @@ object LocaleSpecification {
     
     inline def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
     
-    inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
+    inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value*))
     
     inline def setWeekdaysShort(value: js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
@@ -135,10 +134,10 @@ object LocaleSpecification {
     
     inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
-    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
     
     inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
-    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
   }
 }

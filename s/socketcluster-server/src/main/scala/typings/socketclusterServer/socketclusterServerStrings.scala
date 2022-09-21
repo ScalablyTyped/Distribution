@@ -1,11 +1,14 @@
 package typings.socketclusterServer
 
-import typings.socketclusterServer.serverMod.Middlewares
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketclusterServerStrings {
+  
+  @js.native
+  sealed trait allowed extends StObject
+  inline def allowed: allowed = "allowed".asInstanceOf[allowed]
   
   @js.native
   sealed trait authStateChange extends StObject
@@ -38,6 +41,10 @@ object socketclusterServerStrings {
   @js.native
   sealed trait badSocketAuthToken extends StObject
   inline def badSocketAuthToken: badSocketAuthToken = "badSocketAuthToken".asInstanceOf[badSocketAuthToken]
+  
+  @js.native
+  sealed trait blocked extends StObject
+  inline def blocked: blocked = "blocked".asInstanceOf[blocked]
   
   @js.native
   sealed trait close extends StObject
@@ -92,22 +99,8 @@ object socketclusterServerStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait handshake
-    extends StObject
-       with Middlewares
+  sealed trait handshake extends StObject
   inline def handshake: handshake = "handshake".asInstanceOf[handshake]
-  
-  @js.native
-  sealed trait inbound
-    extends StObject
-       with Middlewares
-  inline def inbound: inbound = "inbound".asInstanceOf[inbound]
-  
-  @js.native
-  sealed trait inboundRaw
-    extends StObject
-       with Middlewares
-  inline def inboundRaw: inboundRaw = "inboundRaw".asInstanceOf[inboundRaw]
   
   @js.native
   sealed trait kill extends StObject
@@ -120,12 +113,6 @@ object socketclusterServerStrings {
   @js.native
   sealed trait open extends StObject
   inline def open: open = "open".asInstanceOf[open]
-  
-  @js.native
-  sealed trait outbound
-    extends StObject
-       with Middlewares
-  inline def outbound: outbound = "outbound".asInstanceOf[outbound]
   
   @js.native
   sealed trait raw extends StObject

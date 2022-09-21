@@ -8,14 +8,19 @@ trait DynamicsCompressorOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var attack: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var knee: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var ratio: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var release: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var threshold: js.UndefOr[Double] = js.undefined
 }
 object DynamicsCompressorOptions {

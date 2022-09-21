@@ -17,7 +17,7 @@ trait Columns extends StObject {
   
   def Item(Index: Double): Column = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Columns_typekey")
   var PowerPointDotColumns_typekey: Columns = js.native

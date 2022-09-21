@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalQueryResultConstructor
   extends StObject
-     with Instantiable0[PortalQueryResult]
+     with /**
+  * Represents the result object returned from a portal query.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html)
+  */
+Instantiable0[PortalQueryResult]
      with Instantiable1[/* properties */ PortalQueryResultProperties, PortalQueryResult]

@@ -119,7 +119,7 @@ object WMTSSublayerProperties {
     
     inline def setImageFormatsUndefined: Self = StObject.set(x, "imageFormats", js.undefined)
     
-    inline def setImageFormatsVarargs(value: String*): Self = StObject.set(x, "imageFormats", js.Array(value :_*))
+    inline def setImageFormatsVarargs(value: String*): Self = StObject.set(x, "imageFormats", js.Array(value*))
     
     inline def setLayer(value: WMTSLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
@@ -133,7 +133,7 @@ object WMTSSublayerProperties {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: WMTSStyleProperties*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: WMTSStyleProperties*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTileMatrixSet(value: TileMatrixSetProperties): Self = StObject.set(x, "tileMatrixSet", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object WMTSSublayerProperties {
     
     inline def setTileMatrixSetsUndefined: Self = StObject.set(x, "tileMatrixSets", js.undefined)
     
-    inline def setTileMatrixSetsVarargs(value: TileMatrixSetProperties*): Self = StObject.set(x, "tileMatrixSets", js.Array(value :_*))
+    inline def setTileMatrixSetsVarargs(value: TileMatrixSetProperties*): Self = StObject.set(x, "tileMatrixSets", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

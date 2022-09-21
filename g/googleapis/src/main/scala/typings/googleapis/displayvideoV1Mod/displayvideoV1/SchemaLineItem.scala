@@ -1,0 +1,279 @@
+package typings.googleapis.displayvideoV1Mod.displayvideoV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaLineItem extends StObject {
+  
+  /**
+    * Output only. The unique ID of the advertiser the line item belongs to.
+    */
+  var advertiserId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The bidding strategy of the line item.
+    */
+  var bidStrategy: js.UndefOr[SchemaBiddingStrategy] = js.undefined
+  
+  /**
+    * Required. The budget allocation setting of the line item.
+    */
+  var budget: js.UndefOr[SchemaLineItemBudget] = js.undefined
+  
+  /**
+    * Output only. The unique ID of the campaign that the line item belongs to.
+    */
+  var campaignId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The conversion tracking setting of the line item.
+    */
+  var conversionCounting: js.UndefOr[SchemaConversionCountingConfig] = js.undefined
+  
+  /**
+    * The IDs of the creatives associated with the line item.
+    */
+  var creativeIds: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Required. The display name of the line item. Must be UTF-8 encoded with a maximum size of 240 bytes.
+    */
+  var displayName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. Controls whether or not the line item can spend its budget and bid on inventory. * For CreateLineItem method, only `ENTITY_STATUS_DRAFT` is allowed. To activate a line item, use UpdateLineItem method and update the status to `ENTITY_STATUS_ACTIVE` after creation. * A line item cannot be changed back to `ENTITY_STATUS_DRAFT` status from any other status. * If the line item's parent insertion order is not active, the line item can't spend its budget even if its own status is `ENTITY_STATUS_ACTIVE`.
+    */
+  var entityStatus: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Whether to exclude new exchanges from automatically being targeted by the line item. This field is false by default.
+    */
+  var excludeNewExchanges: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * Required. The start and end time of the line item's flight.
+    */
+  var flight: js.UndefOr[SchemaLineItemFlight] = js.undefined
+  
+  /**
+    * Required. The impression frequency cap settings of the line item. The max_impressions field in this settings object must be used if assigning a limited cap.
+    */
+  var frequencyCap: js.UndefOr[SchemaFrequencyCap] = js.undefined
+  
+  /**
+    * Required. Immutable. The unique ID of the insertion order that the line item belongs to.
+    */
+  var insertionOrderId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Integration details of the line item.
+    */
+  var integrationDetails: js.UndefOr[SchemaIntegrationDetails] = js.undefined
+  
+  /**
+    * The IDs of the private inventory sources assigned to the line item.
+    */
+  var inventorySourceIds: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Output only. The unique ID of the line item. Assigned by the system.
+    */
+  var lineItemId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. Immutable. The type of the line item.
+    */
+  var lineItemType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The mobile app promoted by the line item. This is applicable only when line_item_type is either `LINE_ITEM_TYPE_DISPLAY_MOBILE_APP_INSTALL` or `LINE_ITEM_TYPE_VIDEO_MOBILE_APP_INSTALL`.
+    */
+  var mobileApp: js.UndefOr[SchemaMobileApp] = js.undefined
+  
+  /**
+    * Output only. The resource name of the line item.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The budget spending speed setting of the line item.
+    */
+  var pacing: js.UndefOr[SchemaPacing] = js.undefined
+  
+  /**
+    * The partner costs associated with the line item. If absent or empty in CreateLineItem method, the newly created line item will inherit partner costs from its parent insertion order.
+    */
+  var partnerCosts: js.UndefOr[js.Array[SchemaPartnerCost]] = js.undefined
+  
+  /**
+    * Required. The partner revenue model setting of the line item.
+    */
+  var partnerRevenueModel: js.UndefOr[SchemaPartnerRevenueModel] = js.undefined
+  
+  /**
+    * Output only. The reservation type of the line item.
+    */
+  var reservationType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The [targeting expansion](https://support.google.com/displayvideo/answer/10191558) settings of the line item. This config is only applicable when eligible audience list targeting is assigned to the line item.
+    */
+  var targetingExpansion: js.UndefOr[SchemaTargetingExpansionConfig] = js.undefined
+  
+  /**
+    * Output only. The timestamp when the line item was last updated. Assigned by the system.
+    */
+  var updateTime: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. The warning messages generated by the line item. These warnings do not block saving the line item, but some may block the line item from running.
+    */
+  var warningMessages: js.UndefOr[js.Array[String] | Null] = js.undefined
+}
+object SchemaLineItem {
+  
+  inline def apply(): SchemaLineItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaLineItem]
+  }
+  
+  extension [Self <: SchemaLineItem](x: Self) {
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserIdNull: Self = StObject.set(x, "advertiserId", null)
+    
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    
+    inline def setBidStrategy(value: SchemaBiddingStrategy): Self = StObject.set(x, "bidStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setBidStrategyUndefined: Self = StObject.set(x, "bidStrategy", js.undefined)
+    
+    inline def setBudget(value: SchemaLineItemBudget): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
+    
+    inline def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
+    
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    
+    inline def setCampaignIdNull: Self = StObject.set(x, "campaignId", null)
+    
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    
+    inline def setConversionCounting(value: SchemaConversionCountingConfig): Self = StObject.set(x, "conversionCounting", value.asInstanceOf[js.Any])
+    
+    inline def setConversionCountingUndefined: Self = StObject.set(x, "conversionCounting", js.undefined)
+    
+    inline def setCreativeIds(value: js.Array[String]): Self = StObject.set(x, "creativeIds", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeIdsNull: Self = StObject.set(x, "creativeIds", null)
+    
+    inline def setCreativeIdsUndefined: Self = StObject.set(x, "creativeIds", js.undefined)
+    
+    inline def setCreativeIdsVarargs(value: String*): Self = StObject.set(x, "creativeIds", js.Array(value*))
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
+    
+    inline def setEntityStatusNull: Self = StObject.set(x, "entityStatus", null)
+    
+    inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    
+    inline def setExcludeNewExchanges(value: Boolean): Self = StObject.set(x, "excludeNewExchanges", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeNewExchangesNull: Self = StObject.set(x, "excludeNewExchanges", null)
+    
+    inline def setExcludeNewExchangesUndefined: Self = StObject.set(x, "excludeNewExchanges", js.undefined)
+    
+    inline def setFlight(value: SchemaLineItemFlight): Self = StObject.set(x, "flight", value.asInstanceOf[js.Any])
+    
+    inline def setFlightUndefined: Self = StObject.set(x, "flight", js.undefined)
+    
+    inline def setFrequencyCap(value: SchemaFrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
+    
+    inline def setInsertionOrderId(value: String): Self = StObject.set(x, "insertionOrderId", value.asInstanceOf[js.Any])
+    
+    inline def setInsertionOrderIdNull: Self = StObject.set(x, "insertionOrderId", null)
+    
+    inline def setInsertionOrderIdUndefined: Self = StObject.set(x, "insertionOrderId", js.undefined)
+    
+    inline def setIntegrationDetails(value: SchemaIntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
+    
+    inline def setInventorySourceIds(value: js.Array[String]): Self = StObject.set(x, "inventorySourceIds", value.asInstanceOf[js.Any])
+    
+    inline def setInventorySourceIdsNull: Self = StObject.set(x, "inventorySourceIds", null)
+    
+    inline def setInventorySourceIdsUndefined: Self = StObject.set(x, "inventorySourceIds", js.undefined)
+    
+    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value*))
+    
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    
+    inline def setLineItemIdNull: Self = StObject.set(x, "lineItemId", null)
+    
+    inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+    
+    inline def setLineItemType(value: String): Self = StObject.set(x, "lineItemType", value.asInstanceOf[js.Any])
+    
+    inline def setLineItemTypeNull: Self = StObject.set(x, "lineItemType", null)
+    
+    inline def setLineItemTypeUndefined: Self = StObject.set(x, "lineItemType", js.undefined)
+    
+    inline def setMobileApp(value: SchemaMobileApp): Self = StObject.set(x, "mobileApp", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppUndefined: Self = StObject.set(x, "mobileApp", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPacing(value: SchemaPacing): Self = StObject.set(x, "pacing", value.asInstanceOf[js.Any])
+    
+    inline def setPacingUndefined: Self = StObject.set(x, "pacing", js.undefined)
+    
+    inline def setPartnerCosts(value: js.Array[SchemaPartnerCost]): Self = StObject.set(x, "partnerCosts", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerCostsUndefined: Self = StObject.set(x, "partnerCosts", js.undefined)
+    
+    inline def setPartnerCostsVarargs(value: SchemaPartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value*))
+    
+    inline def setPartnerRevenueModel(value: SchemaPartnerRevenueModel): Self = StObject.set(x, "partnerRevenueModel", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerRevenueModelUndefined: Self = StObject.set(x, "partnerRevenueModel", js.undefined)
+    
+    inline def setReservationType(value: String): Self = StObject.set(x, "reservationType", value.asInstanceOf[js.Any])
+    
+    inline def setReservationTypeNull: Self = StObject.set(x, "reservationType", null)
+    
+    inline def setReservationTypeUndefined: Self = StObject.set(x, "reservationType", js.undefined)
+    
+    inline def setTargetingExpansion(value: SchemaTargetingExpansionConfig): Self = StObject.set(x, "targetingExpansion", value.asInstanceOf[js.Any])
+    
+    inline def setTargetingExpansionUndefined: Self = StObject.set(x, "targetingExpansion", js.undefined)
+    
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    
+    inline def setWarningMessages(value: js.Array[String]): Self = StObject.set(x, "warningMessages", value.asInstanceOf[js.Any])
+    
+    inline def setWarningMessagesNull: Self = StObject.set(x, "warningMessages", null)
+    
+    inline def setWarningMessagesUndefined: Self = StObject.set(x, "warningMessages", js.undefined)
+    
+    inline def setWarningMessagesVarargs(value: String*): Self = StObject.set(x, "warningMessages", js.Array(value*))
+  }
+}

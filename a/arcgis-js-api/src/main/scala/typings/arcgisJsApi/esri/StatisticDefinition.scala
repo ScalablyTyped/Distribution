@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`centroid-aggregate`
+import typings.arcgisJsApi.arcgisJsApiStrings.`convex-hull-aggregate`
+import typings.arcgisJsApi.arcgisJsApiStrings.`envelope-aggregate`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-continuous`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-discrete`
 import typings.arcgisJsApi.arcgisJsApiStrings.`var`
@@ -22,28 +25,30 @@ trait StatisticDefinition
   /**
     * Defines the field for which statistics will be calculated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#onStatisticField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#onStatisticField)
     */
   var onStatisticField: String = js.native
   
   /**
     * Specifies the output field name for the requested statistic.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#outStatisticFieldName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#outStatisticFieldName)
     */
   var outStatisticFieldName: String = js.native
   
   /**
-    * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
+    * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
     */
   var statisticParameters: StatisticDefinitionStatisticParameters = js.native
   
   /**
     * Defines the type of statistic.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType)
     */
-  var statisticType: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` = js.native
+  var statisticType: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` | `envelope-aggregate` | `centroid-aggregate` | `convex-hull-aggregate` = js.native
 }

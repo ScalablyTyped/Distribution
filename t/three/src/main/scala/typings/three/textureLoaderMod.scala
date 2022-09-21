@@ -14,7 +14,7 @@ object textureLoaderMod {
   
   @JSImport("three/src/loaders/TextureLoader", "TextureLoader")
   @js.native
-  class TextureLoader () extends Loader {
+  open class TextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String): Texture = js.native

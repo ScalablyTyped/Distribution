@@ -22,8 +22,20 @@ object drawMod {
   
   @JSImport("ol/interaction/Draw", JSImport.Default)
   @js.native
-  class default protected () extends Draw {
+  open class default protected () extends Draw {
     def this(options: Options) = this()
+  }
+  
+  @JSImport("ol/interaction/Draw", "DrawEvent")
+  @js.native
+  open class DrawEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(`type`: DrawEventType, feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]) = this()
+    
+    /**
+      * The feature being drawn.
+      */
+    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
   }
   
   @js.native
@@ -68,7 +80,7 @@ object drawMod {
       * Append coordinates to the end of the geometry that is currently being drawn.
       * This can be used when drawing LineStrings or Polygons. Coordinates will
       * either be appended to the current LineString or the outer ring of the current
-      * Polygon.
+      * Polygon. If no geometry is being drawn, a new one will be created.
       */
     def appendCoordinates(coordinates: LineCoordType): Unit = js.native
     
@@ -109,7 +121,8 @@ object drawMod {
     def once_drawstart(`type`: drawstart, listener: js.Function1[/* evt */ DrawEvent, Unit]): EventsKey = js.native
     
     /**
-      * Remove last point of the feature currently being drawn.
+      * Remove last point of the feature currently being drawn. Does not do anything when
+      * drawing POINT or MULTI_POINT geometries.
       */
     def removeLastPoint(): Unit = js.native
     
@@ -121,20 +134,10 @@ object drawMod {
     def un_drawstart(`type`: drawstart, listener: js.Function1[/* evt */ DrawEvent, Unit]): Unit = js.native
   }
   
-  @js.native
-  trait DrawEvent
-    extends typings.ol.eventMod.default {
-    
-    /**
-      * The feature being drawn.
-      */
-    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
-  }
-  
   type GeometryFunction = js.Function3[
     /* p0 */ SketchCoordType, 
-    /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], 
-    /* p2 */ js.UndefOr[typings.ol.projectionMod.default], 
+    /* p1 */ typings.ol.simpleGeometryMod.default, 
+    /* p2 */ typings.ol.projectionMod.default, 
     typings.ol.simpleGeometryMod.default
   ]
   
@@ -219,7 +222,7 @@ object drawMod {
       inline def setFreehandUndefined: Self = StObject.set(x, "freehand", js.undefined)
       
       inline def setGeometryFunction(
-        value: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ js.UndefOr[typings.ol.projectionMod.default]) => typings.ol.simpleGeometryMod.default
+        value: (/* p0 */ SketchCoordType, /* p1 */ typings.ol.simpleGeometryMod.default, /* p2 */ typings.ol.projectionMod.default) => typings.ol.simpleGeometryMod.default
       ): Self = StObject.set(x, "geometryFunction", js.Any.fromFunction3(value))
       
       inline def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
@@ -254,7 +257,7 @@ object drawMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setType(value: GeometryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

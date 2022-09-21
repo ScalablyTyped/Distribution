@@ -53,7 +53,7 @@ object XContextChangeEventMultiplexer {
     acquire: () => Unit,
     addContextChangeEventListener: (XContextChangeEventListener, XInterface) => Unit,
     broadcastContextChangeEvent: (ContextChangeEventObject, XInterface) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAllContextChangeEventListeners: XContextChangeEventListener => Unit,
     removeContextChangeEventListener: (XContextChangeEventListener, XInterface) => Unit

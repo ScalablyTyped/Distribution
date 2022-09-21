@@ -10,10 +10,10 @@ Zero-dependency unicode-aware string tools
 | ------------------ | :-------------: |
 | Full name          | stringz |
 | Keywords           | string, truncate, length, unicode, substr, substring, emoji, pad, leftpad, rightpad, length, count |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 313777 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 317592.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/sallar/stringz#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wait-for-localhost
 
-Typings are for version 3.3.0
+Typings are for version 4.0.1
 
 ## Library description:
 Wait for localhost to be ready
@@ -10,10 +10,10 @@ Wait for localhost to be ready
 | ------------------ | :-------------: |
 | Full name          | wait-for-localhost |
 | Keywords           | wait, localhost, server, port, delay, sleep, ready |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 112320 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16292.0 |
+| # stars            | 256.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/wait-for-localhost#readme)

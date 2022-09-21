@@ -10,10 +10,10 @@ Tiny library for drag-n-drop scrolling style
 | ------------------ | :-------------: |
 | Full name          | dragscroll |
 | Keywords           | dragscroll, scroll, scrolling, mouse, hold, drag-n-drop, drag-and-drop, click-n-hold, click-and-hold, drag, viewport |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 305820 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32752.666666666668 |
+| # stars            | 1050.0 |
 
 ## Links
 - [Homepage](https://github.com/asvd/dragscroll#readme)

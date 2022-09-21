@@ -12,7 +12,7 @@ object electrumClientMod {
   
   @JSImport("@keep-network/tbtc.js/src/lib/ElectrumClient", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Client {
     def this(config: Config) = this()
@@ -27,13 +27,13 @@ object electrumClientMod {
     override def connect(): js.Promise[Unit] = js.native
     
     /* CompleteClass */
-    var electrumClient: js.Any = js.native
+    var electrumClient: Any = js.native
     
     /* CompleteClass */
     override def findOutputForAddress(txHash: String, address: String): Double = js.native
     
     /* CompleteClass */
-    override def getBalanceOfScript(script: String): js.Any = js.native
+    override def getBalanceOfScript(script: String): Any = js.native
     
     /* CompleteClass */
     override def getHeadersChain(blockHeight: Double, confirmations: Double): String = js.native
@@ -45,22 +45,22 @@ object electrumClientMod {
     override def getMerkleRoot(blockHeight: Double): String = js.native
     
     /* CompleteClass */
-    override def getTransaction(txHash: String): js.Any = js.native
+    override def getTransaction(txHash: String): Any = js.native
     
     /* CompleteClass */
-    override def getTransactionsForScript(script: String): js.Any = js.native
+    override def getTransactionsForScript(script: String): Any = js.native
     
     /* CompleteClass */
-    override def getUnspentToScript(script: String): js.Any = js.native
+    override def getUnspentToScript(script: String): Any = js.native
     
     /* CompleteClass */
     override def latestBlockHeight(): Double = js.native
     
     /* CompleteClass */
-    override def onNewBlock(callback: js.Function1[/* block */ js.Any, Unit]): js.Any = js.native
+    override def onNewBlock(callback: js.Function1[/* block */ Any, Unit]): Any = js.native
     
     /* CompleteClass */
-    override def onTransactionToScript(script: String, callback: js.Function1[/* state */ js.Any, Unit]): js.Any = js.native
+    override def onTransactionToScript(script: String, callback: js.Function1[/* state */ Any, Unit]): Any = js.native
   }
   
   trait Client extends StObject {
@@ -71,11 +71,11 @@ object electrumClientMod {
     
     def connect(): js.Promise[Unit]
     
-    var electrumClient: js.Any
+    var electrumClient: Any
     
     def findOutputForAddress(txHash: String, address: String): Double
     
-    def getBalanceOfScript(script: String): js.Any
+    def getBalanceOfScript(script: String): Any
     
     def getHeadersChain(blockHeight: Double, confirmations: Double): String
     
@@ -83,17 +83,17 @@ object electrumClientMod {
     
     def getMerkleRoot(blockHeight: Double): String
     
-    def getTransaction(txHash: String): js.Any
+    def getTransaction(txHash: String): Any
     
-    def getTransactionsForScript(script: String): js.Any
+    def getTransactionsForScript(script: String): Any
     
-    def getUnspentToScript(script: String): js.Any
+    def getUnspentToScript(script: String): Any
     
     def latestBlockHeight(): Double
     
-    def onNewBlock(callback: js.Function1[/* block */ js.Any, Unit]): js.Any
+    def onNewBlock(callback: js.Function1[/* block */ Any, Unit]): Any
     
-    def onTransactionToScript(script: String, callback: js.Function1[/* state */ js.Any, Unit]): js.Any
+    def onTransactionToScript(script: String, callback: js.Function1[/* state */ Any, Unit]): Any
   }
   object Client {
     
@@ -101,18 +101,18 @@ object electrumClientMod {
       broadcastTransaction: String => String,
       close: () => js.Promise[Unit],
       connect: () => js.Promise[Unit],
-      electrumClient: js.Any,
+      electrumClient: Any,
       findOutputForAddress: (String, String) => Double,
-      getBalanceOfScript: String => js.Any,
+      getBalanceOfScript: String => Any,
       getHeadersChain: (Double, Double) => String,
       getMerkleProof: (String, Double) => String,
       getMerkleRoot: Double => String,
-      getTransaction: String => js.Any,
-      getTransactionsForScript: String => js.Any,
-      getUnspentToScript: String => js.Any,
+      getTransaction: String => Any,
+      getTransactionsForScript: String => Any,
+      getUnspentToScript: String => Any,
       latestBlockHeight: () => Double,
-      onNewBlock: js.Function1[/* block */ js.Any, Unit] => js.Any,
-      onTransactionToScript: (String, js.Function1[/* state */ js.Any, Unit]) => js.Any
+      onNewBlock: js.Function1[/* block */ Any, Unit] => Any,
+      onTransactionToScript: (String, js.Function1[/* state */ Any, Unit]) => Any
     ): Client = {
       val __obj = js.Dynamic.literal(broadcastTransaction = js.Any.fromFunction1(broadcastTransaction), close = js.Any.fromFunction0(close), connect = js.Any.fromFunction0(connect), electrumClient = electrumClient.asInstanceOf[js.Any], findOutputForAddress = js.Any.fromFunction2(findOutputForAddress), getBalanceOfScript = js.Any.fromFunction1(getBalanceOfScript), getHeadersChain = js.Any.fromFunction2(getHeadersChain), getMerkleProof = js.Any.fromFunction2(getMerkleProof), getMerkleRoot = js.Any.fromFunction1(getMerkleRoot), getTransaction = js.Any.fromFunction1(getTransaction), getTransactionsForScript = js.Any.fromFunction1(getTransactionsForScript), getUnspentToScript = js.Any.fromFunction1(getUnspentToScript), latestBlockHeight = js.Any.fromFunction0(latestBlockHeight), onNewBlock = js.Any.fromFunction1(onNewBlock), onTransactionToScript = js.Any.fromFunction2(onTransactionToScript))
       __obj.asInstanceOf[Client]
@@ -126,11 +126,11 @@ object electrumClientMod {
       
       inline def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      inline def setElectrumClient(value: js.Any): Self = StObject.set(x, "electrumClient", value.asInstanceOf[js.Any])
+      inline def setElectrumClient(value: Any): Self = StObject.set(x, "electrumClient", value.asInstanceOf[js.Any])
       
       inline def setFindOutputForAddress(value: (String, String) => Double): Self = StObject.set(x, "findOutputForAddress", js.Any.fromFunction2(value))
       
-      inline def setGetBalanceOfScript(value: String => js.Any): Self = StObject.set(x, "getBalanceOfScript", js.Any.fromFunction1(value))
+      inline def setGetBalanceOfScript(value: String => Any): Self = StObject.set(x, "getBalanceOfScript", js.Any.fromFunction1(value))
       
       inline def setGetHeadersChain(value: (Double, Double) => String): Self = StObject.set(x, "getHeadersChain", js.Any.fromFunction2(value))
       
@@ -138,23 +138,23 @@ object electrumClientMod {
       
       inline def setGetMerkleRoot(value: Double => String): Self = StObject.set(x, "getMerkleRoot", js.Any.fromFunction1(value))
       
-      inline def setGetTransaction(value: String => js.Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction1(value))
+      inline def setGetTransaction(value: String => Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction1(value))
       
-      inline def setGetTransactionsForScript(value: String => js.Any): Self = StObject.set(x, "getTransactionsForScript", js.Any.fromFunction1(value))
+      inline def setGetTransactionsForScript(value: String => Any): Self = StObject.set(x, "getTransactionsForScript", js.Any.fromFunction1(value))
       
-      inline def setGetUnspentToScript(value: String => js.Any): Self = StObject.set(x, "getUnspentToScript", js.Any.fromFunction1(value))
+      inline def setGetUnspentToScript(value: String => Any): Self = StObject.set(x, "getUnspentToScript", js.Any.fromFunction1(value))
       
       inline def setLatestBlockHeight(value: () => Double): Self = StObject.set(x, "latestBlockHeight", js.Any.fromFunction0(value))
       
-      inline def setOnNewBlock(value: js.Function1[/* block */ js.Any, Unit] => js.Any): Self = StObject.set(x, "onNewBlock", js.Any.fromFunction1(value))
+      inline def setOnNewBlock(value: js.Function1[/* block */ Any, Unit] => Any): Self = StObject.set(x, "onNewBlock", js.Any.fromFunction1(value))
       
-      inline def setOnTransactionToScript(value: (String, js.Function1[/* state */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "onTransactionToScript", js.Any.fromFunction2(value))
+      inline def setOnTransactionToScript(value: (String, js.Function1[/* state */ Any, Unit]) => Any): Self = StObject.set(x, "onTransactionToScript", js.Any.fromFunction2(value))
     }
   }
   
   trait Config extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var port: Double
     
@@ -171,7 +171,7 @@ object electrumClientMod {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       

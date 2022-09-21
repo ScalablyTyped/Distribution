@@ -10,7 +10,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("text-encoding", "TextDecoder")
   @js.native
-  class TextDecoder ()
+  open class TextDecoder ()
     extends StObject
        with typings.textEncoding.TextDecoder {
     def this(label: String) = this()
@@ -37,7 +37,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("text-encoding", "TextEncoder")
   @js.native
-  class TextEncoder ()
+  open class TextEncoder ()
     extends StObject
        with typings.textEncoding.TextEncoder {
     def this(utfLabel: String) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTargetingValueDemogGenderCriteria extends StObject {
   
-  var demogGenderCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
+  var demogGenderCriteriaIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTargetingValueDemogGenderCriteria {
   
@@ -19,8 +19,10 @@ object SchemaTargetingValueDemogGenderCriteria {
     
     inline def setDemogGenderCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogGenderCriteriaIds", value.asInstanceOf[js.Any])
     
+    inline def setDemogGenderCriteriaIdsNull: Self = StObject.set(x, "demogGenderCriteriaIds", null)
+    
     inline def setDemogGenderCriteriaIdsUndefined: Self = StObject.set(x, "demogGenderCriteriaIds", js.undefined)
     
-    inline def setDemogGenderCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogGenderCriteriaIds", js.Array(value :_*))
+    inline def setDemogGenderCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogGenderCriteriaIds", js.Array(value*))
   }
 }

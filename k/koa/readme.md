@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa
 
-Typings are for version 2.11.0
+Typings are for version 2.13.1
 
 ## Library description:
 Koa web app framework
@@ -10,10 +10,10 @@ Koa web app framework
 | ------------------ | :-------------: |
 | Full name          | koa |
 | Keywords           | web, app, http, application, framework, middleware, rack |
-| # releases         | 13 |
-| # dependents       | 3979 |
-| # downloads        | 27601084 |
-| # stars            | 262 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5125945.333333333 |
+| # stars            | 32859.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/koa#readme)

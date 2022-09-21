@@ -152,7 +152,7 @@ object command {
     inline def BARCODE_FONT_B_=(x: InformationseparatorthreefStartofheading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BARCODE_FONT_B")(x.asInstanceOf[js.Any])
     
     // Font type B for HRI barcode chars
-    inline def BARCODE_HEIGHT(height: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BARCODE_HEIGHT")(height.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def BARCODE_HEIGHT(height: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BARCODE_HEIGHT")(height.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("escpos", "command.BARCODE_FORMAT.BARCODE_HEIGHT_DEFAULT")
     @js.native
@@ -294,8 +294,8 @@ object command {
     
     @JSImport("escpos", "command.CODE2D_FORMAT.CODE2D")
     @js.native
-    def CODE2D: js.Any = js.native
-    inline def CODE2D_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE2D")(x.asInstanceOf[js.Any])
+    def CODE2D: Any = js.native
+    inline def CODE2D_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE2D")(x.asInstanceOf[js.Any])
     
     // correct level 25%
     @JSImport("escpos", "command.CODE2D_FORMAT.QR_LEVEL_H")
@@ -322,18 +322,18 @@ object command {
     
     @JSImport("escpos", "command.CODE2D_FORMAT.TYPE_DATAMATRIX")
     @js.native
-    def TYPE_DATAMATRIX: js.Any = js.native
-    inline def TYPE_DATAMATRIX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_DATAMATRIX")(x.asInstanceOf[js.Any])
+    def TYPE_DATAMATRIX: Any = js.native
+    inline def TYPE_DATAMATRIX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_DATAMATRIX")(x.asInstanceOf[js.Any])
     
     @JSImport("escpos", "command.CODE2D_FORMAT.TYPE_PDF417")
     @js.native
-    def TYPE_PDF417: js.Any = js.native
-    inline def TYPE_PDF417_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_PDF417")(x.asInstanceOf[js.Any])
+    def TYPE_PDF417: Any = js.native
+    inline def TYPE_PDF417_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_PDF417")(x.asInstanceOf[js.Any])
     
     @JSImport("escpos", "command.CODE2D_FORMAT.TYPE_QR")
     @js.native
-    def TYPE_QR: js.Any = js.native
-    inline def TYPE_QR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_QR")(x.asInstanceOf[js.Any])
+    def TYPE_QR: Any = js.native
+    inline def TYPE_QR_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_QR")(x.asInstanceOf[js.Any])
   }
   
   // Printer Buzzer pre hex
@@ -783,7 +783,7 @@ object command {
     inline def TXT_BOLD_ON_=(x: EscapeEStartofheading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TXT_BOLD_ON")(x.asInstanceOf[js.Any])
     
     // Double width & height text
-    inline def TXT_CUSTOM_SIZE(width: js.Any, height: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("TXT_CUSTOM_SIZE")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def TXT_CUSTOM_SIZE(width: Any, height: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("TXT_CUSTOM_SIZE")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     // Italic font ON
     @JSImport("escpos", "command.TEXT_FORMAT.TXT_FONT_A")

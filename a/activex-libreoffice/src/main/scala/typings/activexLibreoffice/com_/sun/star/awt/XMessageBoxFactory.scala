@@ -27,7 +27,7 @@ object XMessageBoxFactory {
   inline def apply(
     acquire: () => Unit,
     createMessageBox: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMessageBoxFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createMessageBox = js.Any.fromFunction5(createMessageBox), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

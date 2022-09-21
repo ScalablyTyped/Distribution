@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tweetnacl" : "0.14.5"
+      "tweetnacl" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "tweetnacl" : "0.14.5"
+      "tweetnacl" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

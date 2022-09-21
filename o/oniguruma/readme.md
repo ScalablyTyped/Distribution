@@ -10,10 +10,10 @@ oniguruma regular expression library
 | ------------------ | :-------------: |
 | Full name          | oniguruma |
 | Keywords           | regex, regexp, re, regular expression, async |
-| # releases         | 4 |
-| # dependents       | 26 |
-| # downloads        | 846298 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 64440.666666666664 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/node-oniguruma)

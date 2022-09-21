@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes the state.
   */
-class AlphaState ()
+open class AlphaState ()
   extends typings.babylonjs.indexMod.AlphaState

@@ -25,18 +25,18 @@ object KESUGX {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setKES(value: js.Array[String]): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
     
-    inline def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value :_*))
+    inline def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value*))
     
     inline def setUGX(value: js.Array[String]): Self = StObject.set(x, "UGX", value.asInstanceOf[js.Any])
     
-    inline def setUGXVarargs(value: String*): Self = StObject.set(x, "UGX", js.Array(value :_*))
+    inline def setUGXVarargs(value: String*): Self = StObject.set(x, "UGX", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PivotTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var field: FieldRef
   
@@ -40,7 +40,7 @@ object PivotTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setKey(value: String | TransformField): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ object UI {
     */
   @JSGlobal("Sys.UI.Behavior")
   @js.native
-  class Behavior ()
+  open class Behavior ()
     extends StObject
        with typings.microsoftAjax.Sys.UI.Behavior {
     
@@ -84,7 +84,7 @@ object UI {
       *      An EventHandlerList object that contains references to all the events and handlers for this component.
       */
     /* CompleteClass */
-    override def get_events(): js.Any = js.native
+    override def get_events(): Any = js.native
     
     /**
       * Gets the ID of the current Component object.
@@ -207,7 +207,7 @@ object UI {
   /**
     * Initializes a new instance of the Sys.UI.Bounds class.
     */
-  class Bounds ()
+  open class Bounds ()
     extends StObject
        with typings.microsoftAjax.Sys.UI.Bounds {
     
@@ -247,7 +247,7 @@ object UI {
     */
   @JSGlobal("Sys.UI.Control")
   @js.native
-  class Control protected ()
+  open class Control protected ()
     extends StObject
        with typings.microsoftAjax.Sys.UI.Control {
     //#region Constructors
@@ -326,7 +326,7 @@ object UI {
       *      An EventHandlerList object that contains references to all the events and handlers for this component.
       */
     /* CompleteClass */
-    override def get_events(): js.Any = js.native
+    override def get_events(): Any = js.native
     
     /**
       * Gets the ID of the current Component object.
@@ -374,7 +374,7 @@ object UI {
       *      false in all cases.
       */
     /* CompleteClass */
-    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    override def onBubbleEvent(source: Any, args: Any): Boolean = js.native
     
     /**
       * Calls the onBubbleEvent method of the parent control.
@@ -390,7 +390,7 @@ object UI {
       *          The event arguments.
       */
     /* CompleteClass */
-    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    override def raiseBubbleEvent(source: Any, args: Any): Unit = js.native
     
     /**
       * Raises the propertyChanged event for the specified property.
@@ -456,7 +456,7 @@ object UI {
     */
   @JSGlobal("Sys.UI.DomEvent")
   @js.native
-  class DomEvent protected ()
+  open class DomEvent protected ()
     extends StObject
        with typings.microsoftAjax.Sys.UI.DomEvent {
     //#region Constructors
@@ -582,7 +582,7 @@ object UI {
       * @return An object that represents the target that the event acted on.
       */
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /**
       * Gets the name of the event that was raised.
@@ -655,12 +655,12 @@ object UI {
     inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
-      handlerOwner: js.Any
+      handlerOwner: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
-      handlerOwner: js.Any,
+      handlerOwner: Any,
       autoRemove: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any], autoRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addHandlers(
@@ -762,7 +762,7 @@ object UI {
     */
   @JSGlobal("Sys.UI.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.microsoftAjax.Sys.UI.Point {
     //#region Constructors

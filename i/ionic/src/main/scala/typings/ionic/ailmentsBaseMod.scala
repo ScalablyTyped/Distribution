@@ -24,7 +24,7 @@ object ailmentsBaseMod {
        with IAilment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     
-    /* private */ var _debug: js.Any = js.native
+    /* private */ var _debug: Any = js.native
     
     /* protected */ val client: IClient = js.native
     
@@ -60,7 +60,7 @@ object ailmentsBaseMod {
   
   @JSImport("ionic/lib/doctor/ailments/base", "AilmentRegistry")
   @js.native
-  class AilmentRegistry ()
+  open class AilmentRegistry ()
     extends StObject
        with IAilmentRegistry {
     

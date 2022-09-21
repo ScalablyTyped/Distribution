@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-view-pdf" : "0.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-view-pdf" : "0.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

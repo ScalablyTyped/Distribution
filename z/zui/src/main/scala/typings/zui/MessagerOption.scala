@@ -47,7 +47,7 @@ object MessagerOption {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object MessagerOption {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setOnAction(value: (/* name */ String, /* action */ String, /* messager */ Messager) => js.Any): Self = StObject.set(x, "onAction", js.Any.fromFunction3(value))
+    inline def setOnAction(value: (/* name */ String, /* action */ String, /* messager */ Messager) => Any): Self = StObject.set(x, "onAction", js.Any.fromFunction3(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
     

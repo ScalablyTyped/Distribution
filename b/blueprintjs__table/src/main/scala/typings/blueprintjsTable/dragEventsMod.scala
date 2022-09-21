@@ -11,43 +11,43 @@ object dragEventsMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents")
   @js.native
-  class DragEvents () extends StObject {
+  open class DragEvents () extends StObject {
     
-    /* private */ var activationCoordinates: js.Any = js.native
+    /* private */ var activationCoordinates: Any = js.native
     
     def attach(element: HTMLElement, handler: IDragHandler): this.type = js.native
     
-    /* private */ var attachDocumentEventListeners: js.Any = js.native
+    /* private */ var attachDocumentEventListeners: Any = js.native
     
     def detach(): Unit = js.native
     
-    /* private */ var detachDocumentEventListeners: js.Any = js.native
+    /* private */ var detachDocumentEventListeners: Any = js.native
     
-    /* private */ var doubleClickTimeoutToken: js.Any = js.native
+    /* private */ var doubleClickTimeoutToken: Any = js.native
     
-    /* private */ var element: js.Any = js.native
+    /* private */ var element: Any = js.native
     
-    /* private */ var handleMouseDown: js.Any = js.native
+    /* private */ var handleMouseDown: Any = js.native
     
-    /* private */ var handleMouseMove: js.Any = js.native
+    /* private */ var handleMouseMove: Any = js.native
     
-    /* private */ var handleMouseUp: js.Any = js.native
+    /* private */ var handleMouseUp: Any = js.native
     
-    /* private */ var handler: js.Any = js.native
+    /* private */ var handler: Any = js.native
     
-    /* private */ var initCoordinateData: js.Any = js.native
+    /* private */ var initCoordinateData: Any = js.native
     
-    /* private */ var isActivated: js.Any = js.native
+    /* private */ var isActivated: Any = js.native
     
-    /* private */ var isDragging: js.Any = js.native
+    /* private */ var isDragging: Any = js.native
     
-    /* private */ var isValidDragHandler: js.Any = js.native
+    /* private */ var isValidDragHandler: Any = js.native
     
-    /* private */ var lastCoordinates: js.Any = js.native
+    /* private */ var lastCoordinates: Any = js.native
     
-    /* private */ var maybeAlterEventChain: js.Any = js.native
+    /* private */ var maybeAlterEventChain: Any = js.native
     
-    /* private */ var updateCoordinateData: js.Any = js.native
+    /* private */ var updateCoordinateData: Any = js.native
   }
   /* static members */
   object DragEvents {
@@ -66,6 +66,7 @@ object dragEventsMod {
       * event to any existing state. For example, holding CTRL before dragging may select another
       * region in addition to an existing one, while the absence of a modifier key may clear the
       * existing selection first.
+      *
       * @param event the mouse event for the drag interaction
       */
     inline def isAdditive(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdditive")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]

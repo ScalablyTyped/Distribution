@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response to `ListAccessLevelsRequest`.
-  */
 trait SchemaListAccessLevelsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListAccessLevelsResponse extends StObject {
   var accessLevels: js.UndefOr[js.Array[SchemaAccessLevel]] = js.undefined
   
   /**
-    * The pagination token to retrieve the next page of results. If the value
-    * is empty, no further results remain.
+    * The pagination token to retrieve the next page of results. If the value is empty, no further results remain.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListAccessLevelsResponse {
   
@@ -33,9 +29,11 @@ object SchemaListAccessLevelsResponse {
     
     inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    inline def setAccessLevelsVarargs(value: SchemaAccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: SchemaAccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

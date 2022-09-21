@@ -10,13 +10,6 @@ trait BookmarksProperties
      with GoToProperties {
   
   /**
-    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarkCreationOptions)
-    */
-  var bookmarkCreationOptions: js.UndefOr[BookmarkCreationOptions] = js.undefined
-  
-  /**
     * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
@@ -24,7 +17,23 @@ trait BookmarksProperties
   var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   
   /**
+    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: js.UndefOr[BookmarkOptions] = js.undefined
+  
+  /**
+    * Specifies how bookmarks will be edited, if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultEditOptions)
+    */
+  var defaultEditOptions: js.UndefOr[BookmarkOptions] = js.undefined
+  
+  /**
     * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
     */
@@ -33,9 +42,20 @@ trait BookmarksProperties
   /**
     * Indicates whether the bookmarks are able to be edited.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
     */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the heading level to use for the message "No bookmarks" when no bookmarks are available in this widget.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * The widget's default CSS icon class.
@@ -74,15 +94,19 @@ object BookmarksProperties {
   
   extension [Self <: BookmarksProperties](x: Self) {
     
-    inline def setBookmarkCreationOptions(value: BookmarkCreationOptions): Self = StObject.set(x, "bookmarkCreationOptions", value.asInstanceOf[js.Any])
-    
-    inline def setBookmarkCreationOptionsUndefined: Self = StObject.set(x, "bookmarkCreationOptions", js.undefined)
-    
     inline def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    inline def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value*))
+    
+    inline def setDefaultCreateOptions(value: BookmarkOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
+    
+    inline def setDefaultEditOptions(value: BookmarkOptions): Self = StObject.set(x, "defaultEditOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEditOptionsUndefined: Self = StObject.set(x, "defaultEditOptions", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -91,6 +115,10 @@ object BookmarksProperties {
     inline def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
     
     inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

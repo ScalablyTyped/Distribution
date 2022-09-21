@@ -30,7 +30,7 @@ object tableBatchActionsMod extends Shortcut {
   trait TableBatchActionsProps
     extends StObject
        with HTMLAttributes[HTMLDivElement]
-       with InternationalProps[TableBatchActionsTranslationKey] {
+       with InternationalProps[TableBatchActionsTranslationKey, TableBatchActionsTranslationArgs] {
     
     def onCancel(event: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
     
@@ -54,6 +54,25 @@ object tableBatchActionsMod extends Shortcut {
       inline def setShouldShowBatchActionsUndefined: Self = StObject.set(x, "shouldShowBatchActions", js.undefined)
       
       inline def setTotalSelected(value: Double): Self = StObject.set(x, "totalSelected", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TableBatchActionsTranslationArgs extends StObject {
+    
+    var totalSelected: js.UndefOr[Double] = js.undefined
+  }
+  object TableBatchActionsTranslationArgs {
+    
+    inline def apply(): TableBatchActionsTranslationArgs = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableBatchActionsTranslationArgs]
+    }
+    
+    extension [Self <: TableBatchActionsTranslationArgs](x: Self) {
+      
+      inline def setTotalSelected(value: Double): Self = StObject.set(x, "totalSelected", value.asInstanceOf[js.Any])
+      
+      inline def setTotalSelectedUndefined: Self = StObject.set(x, "totalSelected", js.undefined)
     }
   }
   

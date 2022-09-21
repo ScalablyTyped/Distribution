@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectContaining
   extends StObject
-     with Instantiable1[/* env */ js.Any, js.Any] {
+     with Instantiable1[/* env */ scala.Any, scala.Any] {
   
-  def jasmineMatches(other: js.Any, mismatchKeys: js.Array[js.Any], mismatchValues: js.Array[js.Any]): Boolean = js.native
+  def jasmineMatches(other: scala.Any, mismatchKeys: js.Array[scala.Any], mismatchValues: js.Array[scala.Any]): Boolean = js.native
   
   def jasmineToString(): String = js.native
 }

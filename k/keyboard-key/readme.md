@@ -10,10 +10,10 @@ A simple utility for determining the KeyboardEvent.key property from a keyboard 
 | ------------------ | :-------------: |
 | Full name          | keyboard-key |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 8183731 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 942222.6666666666 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/levithomason/keyboard-key#readme)

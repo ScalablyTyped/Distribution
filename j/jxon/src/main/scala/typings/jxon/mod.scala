@@ -10,18 +10,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def build(xMLParent: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: Unit, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: Unit, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: Unit, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: Unit, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: VerbosityType, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def build(xMLParent: Any, verbosity: VerbosityType, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def config(cfg: ConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def each(obj: js.Any, func: FunctionType, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(obj: Any, func: FunctionType, thisArg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def jsToString(objTree: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def jsToString(objTree: js.Object, namespaceURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -32,18 +32,18 @@ object mod {
   inline def jsToString(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def jsToString(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def jsToXml(objTree: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def jsToXml(objTree: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def stringToJs(str: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToJs")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def stringToXml(xmlStr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToXml")(xmlStr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stringToXml(xmlStr: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToXml")(xmlStr.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def stringify(objTree: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(objTree: js.Object, namespaceURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -54,25 +54,25 @@ object mod {
   inline def stringify(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def unbuild(objTree: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def unbuild(objTree: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def xmlToJs(xmlDocument: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: Unit, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: Unit, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: VerbosityType, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def xmlToJs(xmlDocument: Any, verbosity: VerbosityType, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def xmlToString(xmlObj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToString")(xmlObj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def xmlToString(xmlObj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToString")(xmlObj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ConfigOptions extends StObject {
     
@@ -135,7 +135,7 @@ object mod {
     }
   }
   
-  type FunctionType = js.Function1[/* arg */ js.Any, Unit]
+  type FunctionType = js.Function1[/* arg */ Any, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jxon.jxonNumbers.`0`

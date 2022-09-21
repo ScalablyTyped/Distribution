@@ -7,22 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImagesRequest extends StObject {
   
   /**
-    * The filters. 
+    * Requests a list of images with a specific recipe name.
+    */
+  var byName: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Use the following filters to streamline results:    name     osVersion     platform     type     version   
     */
   var filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum items to return in a request. 
+    * Includes deprecated images in the response list.
+    */
+  var includeDeprecated: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
+    * The maximum items to return in a request.
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   
   /**
-    * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The owner defines which images you want to list. By default, this request will only show images owned by your account. You can use this field to specify if you want to view images owned by yourself, by Amazon, or those images that have been shared with you by other customers. 
+    * The owner defines which images you want to list. By default, this request will only show images owned by your account. You can use this field to specify if you want to view images owned by yourself, by Amazon, or those images that have been shared with you by other customers.
     */
   var owner: js.UndefOr[Ownership] = js.undefined
 }
@@ -35,11 +45,19 @@ object ListImagesRequest {
   
   extension [Self <: ListImagesRequest](x: Self) {
     
+    inline def setByName(value: Boolean): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
+    
+    inline def setByNameUndefined: Self = StObject.set(x, "byName", js.undefined)
+    
     inline def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setIncludeDeprecated(value: NullableBoolean): Self = StObject.set(x, "includeDeprecated", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeDeprecatedUndefined: Self = StObject.set(x, "includeDeprecated", js.undefined)
     
     inline def setMaxResults(value: RestrictedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

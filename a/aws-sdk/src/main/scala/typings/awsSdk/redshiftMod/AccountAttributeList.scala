@@ -24,6 +24,6 @@ object AccountAttributeList {
     
     inline def setAccountAttributesUndefined: Self = StObject.set(x, "AccountAttributes", js.undefined)
     
-    inline def setAccountAttributesVarargs(value: AccountAttribute*): Self = StObject.set(x, "AccountAttributes", js.Array(value :_*))
+    inline def setAccountAttributesVarargs(value: AccountAttribute*): Self = StObject.set(x, "AccountAttributes", js.Array(value*))
   }
 }

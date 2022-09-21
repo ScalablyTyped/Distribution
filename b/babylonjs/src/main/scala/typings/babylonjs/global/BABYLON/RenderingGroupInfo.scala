@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RenderingGroupInfo")
 @js.native
-class RenderingGroupInfo ()
+open class RenderingGroupInfo ()
   extends StObject
      with typings.babylonjs.BABYLON.RenderingGroupInfo {
   

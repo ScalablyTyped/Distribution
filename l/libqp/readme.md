@@ -10,10 +10,10 @@ Encode and decode quoted-printable strings according to rfc2045
 | ------------------ | :-------------: |
 | Full name          | libqp |
 | Keywords           | quoted-printable, mime |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 20665267 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2755671.6666666665 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/libqp)

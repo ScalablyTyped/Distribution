@@ -1,6 +1,5 @@
 package typings.parcelEnv
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +62,7 @@ object ParcelModuleApi {
       * @param callback
       */
     def accept(dependency: String, callback: js.Function0[Unit]): Unit = js.native
-    def accept(errHandler: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def accept(errHandler: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     var active: Boolean = js.native
     
@@ -74,7 +73,7 @@ object ParcelModuleApi {
       * The data will be available at module.hot.data on the new module.
       * @param callback
       */
-    def addDisposeHandler(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def addDisposeHandler(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     @JSName("addDisposeHandler")
     def addDisposeHandler_T[T](callback: js.Function1[/* data */ T, Unit]): Unit = js.native
     
@@ -87,7 +86,7 @@ object ParcelModuleApi {
       * @param callback
       */
     @JSName("apply")
-    def apply(callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
+    def apply(callback: js.Function2[/* err */ js.Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
     /**
       * If status() != "ready" it throws an error.
       * Continue the update process.
@@ -97,7 +96,7 @@ object ParcelModuleApi {
     @JSName("apply")
     def apply(
       options: AcceptOptions,
-      callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]
+      callback: js.Function2[/* err */ js.Error, /* outdatedModules */ js.Array[ModuleId], Unit]
     ): Unit = js.native
     
     /**
@@ -112,7 +111,7 @@ object ParcelModuleApi {
       */
     def check(
       autoApply: Boolean,
-      callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]
+      callback: js.Function2[/* err */ js.Error, /* outdatedModules */ js.Array[ModuleId], Unit]
     ): Unit = js.native
     /**
       * Throws an exceptions if status() is not idle.
@@ -121,9 +120,9 @@ object ParcelModuleApi {
       * The callback will be called with all modules that will be disposed on apply().
       * @param callback
       */
-    def check(callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
+    def check(callback: js.Function2[/* err */ js.Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Flag the current module as not update-able. If updated the update code would fail with code "decline".
@@ -145,14 +144,14 @@ object ParcelModuleApi {
       * The data will be available at module.hot.data on the new module.
       * @param callback
       */
-    def dispose(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def dispose(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     
     /**
       * Remove a handler.
       * This can useful to add a temporary dispose handler. You could i. e. replace code while in the middle of a multi-step async function.
       * @param callback
       */
-    def removeDisposeHandler(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def removeDisposeHandler(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     @JSName("removeDisposeHandler")
     def removeDisposeHandler_T[T](callback: js.Function1[/* data */ T, Unit]): Unit = js.native
     
@@ -173,9 +172,9 @@ object ParcelModuleApi {
   @js.native
   trait Module extends StObject {
     
-    var children: js.Array[js.Any] = js.native
+    var children: js.Array[Any] = js.native
     
-    var exports: js.Any = js.native
+    var exports: Any = js.native
     
     var filename: String = js.native
     
@@ -185,9 +184,9 @@ object ParcelModuleApi {
     
     var loaded: Boolean = js.native
     
-    var parent: js.Any = js.native
+    var parent: Any = js.native
     
-    def require(id: String): js.Any = js.native
+    def require(id: String): Any = js.native
     @JSName("require")
     def require_T_T[T](id: String): T = js.native
   }
@@ -199,7 +198,7 @@ object ParcelModuleApi {
     */
   trait NodeProcess extends StObject {
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
   }
   object NodeProcess {
     
@@ -210,15 +209,15 @@ object ParcelModuleApi {
     
     extension [Self <: NodeProcess](x: Self) {
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   
-  type Require1 = js.Function1[/* id */ String, js.Any]
+  type Require1 = js.Function1[/* id */ String, Any]
   
-  type Require2 = js.Function1[/* id */ String, js.Any]
+  type Require2 = js.Function1[/* id */ String, Any]
   
   @js.native
   trait RequireFunction extends StObject {
@@ -226,7 +225,7 @@ object ParcelModuleApi {
     /**
       * Returns the exports from a dependency. The call is sync. No request to the server is fired. The compiler ensures that the dependency is available.
       */
-    def apply(path: String): js.Any = js.native
+    def apply(path: String): Any = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

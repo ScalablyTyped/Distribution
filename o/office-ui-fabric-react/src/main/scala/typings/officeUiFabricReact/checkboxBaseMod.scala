@@ -13,8 +13,8 @@ object checkboxBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Checkbox/Checkbox.base", "CheckboxBase")
   @js.native
-  class CheckboxBase protected ()
-    extends Component[ICheckboxProps, ICheckboxState, js.Any]
+  open class CheckboxBase protected ()
+    extends Component[ICheckboxProps, ICheckboxState, Any]
        with ICheckbox {
     /**
       * Initialize a new instance of the Checkbox
@@ -22,23 +22,23 @@ object checkboxBaseMod {
       * @param context - Context or initial state for the base component.
       */
     def this(props: ICheckboxProps) = this()
-    def this(props: ICheckboxProps, context: js.Any) = this()
+    def this(props: ICheckboxProps, context: Any) = this()
     
-    /* private */ var _checkBox: js.Any = js.native
+    /* private */ var _checkBox: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: Any = js.native
     
-    /* private */ var _renderContent: js.Any = js.native
+    /* private */ var _renderContent: Any = js.native
     
     /** Gets the current checked state. */
     /* CompleteClass */

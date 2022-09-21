@@ -8,5 +8,5 @@ object ec2unexpectedexceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/EC2UnexpectedException", "EC2UnexpectedException")
   @js.native
-  val EC2UnexpectedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EC2UnexpectedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

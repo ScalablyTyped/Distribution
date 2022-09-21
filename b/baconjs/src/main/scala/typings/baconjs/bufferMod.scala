@@ -32,7 +32,7 @@ object bufferMod {
   inline def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
   inline def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction, count: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
   
-  type BufferHandler[V] = js.Function1[/* buffer */ Buffer_[V], js.Any]
+  type BufferHandler[V] = js.Function1[/* buffer */ Buffer_[V], Any]
   
   trait Buffer_[V] extends StObject {
     
@@ -40,13 +40,13 @@ object bufferMod {
     
     var end: js.UndefOr[End] = js.undefined
     
-    def flush(): js.Any
+    def flush(): Any
     
-    def onFlush(buffer: Buffer_[V]): js.Any
+    def onFlush(buffer: Buffer_[V]): Any
     @JSName("onFlush")
     var onFlush_Original: BufferHandler[V]
     
-    def onInput(buffer: Buffer_[V]): js.Any
+    def onInput(buffer: Buffer_[V]): Any
     @JSName("onInput")
     var onInput_Original: BufferHandler[V]
     
@@ -54,7 +54,7 @@ object bufferMod {
     @JSName("push")
     var push_Original: EventSink[js.Array[V]]
     
-    def schedule(delay: DelayFunction): js.Any
+    def schedule(delay: DelayFunction): Any
     
     var scheduled: Double | Null
     
@@ -63,11 +63,11 @@ object bufferMod {
   object Buffer_ {
     
     inline def apply[V](
-      flush: () => js.Any,
-      onFlush: /* buffer */ Buffer_[V] => js.Any,
-      onInput: /* buffer */ Buffer_[V] => js.Any,
+      flush: () => Any,
+      onFlush: /* buffer */ Buffer_[V] => Any,
+      onInput: /* buffer */ Buffer_[V] => Any,
       push: /* event */ Event[js.Array[V]] => Reply,
-      schedule: DelayFunction => js.Any,
+      schedule: DelayFunction => Any,
       values: js.Array[V]
     ): Buffer_[V] = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), onFlush = js.Any.fromFunction1(onFlush), onInput = js.Any.fromFunction1(onInput), push = js.Any.fromFunction1(push), schedule = js.Any.fromFunction1(schedule), values = values.asInstanceOf[js.Any], scheduled = null)
@@ -76,7 +76,7 @@ object bufferMod {
     
     extension [Self <: Buffer_[?], V](x: Self & Buffer_[V]) {
       
-      inline def setDelay(value: /* f */ VoidFunction => js.Any): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
+      inline def setDelay(value: /* f */ VoidFunction => Any): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
@@ -84,15 +84,15 @@ object bufferMod {
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setFlush(value: () => js.Any): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Any): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      inline def setOnFlush(value: /* buffer */ Buffer_[V] => js.Any): Self = StObject.set(x, "onFlush", js.Any.fromFunction1(value))
+      inline def setOnFlush(value: /* buffer */ Buffer_[V] => Any): Self = StObject.set(x, "onFlush", js.Any.fromFunction1(value))
       
-      inline def setOnInput(value: /* buffer */ Buffer_[V] => js.Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* buffer */ Buffer_[V] => Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setPush(value: /* event */ Event[js.Array[V]] => Reply): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      inline def setSchedule(value: DelayFunction => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: DelayFunction => Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
       
       inline def setScheduled(value: Double): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       
@@ -100,11 +100,11 @@ object bufferMod {
       
       inline def setValues(value: js.Array[V]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: V*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: V*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
-  type DelayFunction = js.Function1[/* f */ VoidFunction, js.Any]
+  type DelayFunction = js.Function1[/* f */ VoidFunction, Any]
   
   type VoidFunction = js.Function0[Unit]
 }

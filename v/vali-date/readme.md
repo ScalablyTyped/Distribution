@@ -11,9 +11,9 @@ Validate a date
 | Full name          | vali-date |
 | Keywords           | date, validator, iso8601, moment, format, parse |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 19356183 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2103460.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/samverschueren/vali-date#readme)

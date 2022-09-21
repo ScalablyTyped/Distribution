@@ -19,7 +19,7 @@ object transactionMod {
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
     * @public
     */
-  class CompletePurchase ()
+  open class CompletePurchase ()
     extends typings.actionsOnGoogle.completepurchaseMod.CompletePurchase {
     def this(options: GoogleActionsTransactionsV3CompletePurchaseValueSpec) = this()
   }
@@ -30,7 +30,7 @@ object transactionMod {
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
     * @public
     */
-  class DeliveryAddress ()
+  open class DeliveryAddress ()
     extends typings.actionsOnGoogle.deliveryaddressMod.DeliveryAddress {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
@@ -41,7 +41,7 @@ object transactionMod {
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
     * @public
     */
-  class DigitalPurchaseCheck ()
+  open class DigitalPurchaseCheck ()
     extends typings.actionsOnGoogle.digitalpurchasecheckMod.DigitalPurchaseCheck {
     def this(options: GoogleActionsTransactionsV3DigitalPurchaseCheckSpec) = this()
   }
@@ -54,7 +54,7 @@ object transactionMod {
     *     if using ordersv3
     * @public
     */
-  class TransactionDecision ()
+  open class TransactionDecision ()
     extends typings.actionsOnGoogle.decisionMod.TransactionDecision {
     def this(options: GoogleActionsTransactionsV3TransactionDecisionValueSpec) = this()
     def this(options: GoogleActionsV2TransactionDecisionValueSpec) = this()
@@ -68,7 +68,7 @@ object transactionMod {
     *     if using ordersv3
     * @public
     */
-  class TransactionRequirements ()
+  open class TransactionRequirements ()
     extends typings.actionsOnGoogle.requirementsMod.TransactionRequirements {
     def this(options: GoogleActionsTransactionsV3TransactionRequirementsCheckSpec) = this()
     def this(options: GoogleActionsV2TransactionRequirementsCheckSpec) = this()

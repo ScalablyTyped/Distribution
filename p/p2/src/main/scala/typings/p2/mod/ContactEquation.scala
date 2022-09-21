@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "ContactEquation")
 @js.native
-class ContactEquation protected () extends Equation {
+open class ContactEquation protected () extends Equation {
   def this(bodyA: Body, bodyB: Body) = this()
   
   var contactPointA: js.Tuple2[Double, Double] = js.native

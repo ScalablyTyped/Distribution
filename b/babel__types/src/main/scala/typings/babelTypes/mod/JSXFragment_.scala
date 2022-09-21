@@ -46,7 +46,7 @@ object JSXFragment_ {
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClosingFragment(value: JSXClosingFragment_): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
     

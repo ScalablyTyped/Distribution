@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PgwModalOption extends StObject {
   
-  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
+  var ajaxOptions: js.UndefOr[Any] = js.undefined
   
   var angular: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ trait PgwModalOption extends StObject {
   
   var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var modalData: js.UndefOr[js.Any] = js.undefined
+  var modalData: js.UndefOr[Any] = js.undefined
   
   var pushContent: js.UndefOr[String] = js.undefined
   
@@ -51,7 +51,7 @@ object PgwModalOption {
   
   extension [Self <: PgwModalOption](x: Self) {
     
-    inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
     inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
@@ -99,7 +99,7 @@ object PgwModalOption {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setModalData(value: js.Any): Self = StObject.set(x, "modalData", value.asInstanceOf[js.Any])
+    inline def setModalData(value: Any): Self = StObject.set(x, "modalData", value.asInstanceOf[js.Any])
     
     inline def setModalDataUndefined: Self = StObject.set(x, "modalData", js.undefined)
     

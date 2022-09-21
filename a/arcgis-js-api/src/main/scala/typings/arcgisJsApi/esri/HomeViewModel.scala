@@ -21,20 +21,22 @@ trait HomeViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#cancelGo)
     */
-  def cancelGo(): Unit = js.native
+  def cancelGo(): scala.Unit = js.native
   
   /**
     * Animates the view to the initial [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) of the view or the value of [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#viewpoint).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#go)
     */
-  def go(): Unit = js.native
+  def go(): scala.Unit = js.native
   
   @JSName("on")
   def on_go(name: go, eventHandler: HomeViewModelGoEventHandler): IHandle = js.native
   
   /**
     * The current state of the widget.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#state)
     */
@@ -49,6 +51,8 @@ trait HomeViewModel
   
   /**
     * The [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html), or point of view, to zoom to when going home.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#viewpoint)
     */

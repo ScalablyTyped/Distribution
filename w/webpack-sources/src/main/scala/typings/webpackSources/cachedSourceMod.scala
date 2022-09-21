@@ -13,7 +13,7 @@ object cachedSourceMod {
     */
   @JSImport("webpack-sources/lib/CachedSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CachedSource {
+  open class ^ protected () extends CachedSource {
     def this(source: typings.webpackSources.sourceMod.^) = this()
     def this(source: js.Function0[typings.webpackSources.sourceMod.^], cachedData: CachedData) = this()
     def this(source: Null, cachedData: CachedData) = this()

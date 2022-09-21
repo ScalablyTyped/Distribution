@@ -7,20 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** An iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order. */
 trait NodeIterator extends StObject {
   
+  /** @deprecated */
+  /* standard dom */
   def detach(): Unit
   
+  /* standard dom */
   val filter: NodeFilter | Null
   
+  /* standard dom */
   def nextNode(): Node | Null
   
+  /* standard dom */
   val pointerBeforeReferenceNode: scala.Boolean
   
+  /* standard dom */
   def previousNode(): Node | Null
   
+  /* standard dom */
   val referenceNode: Node
   
+  /* standard dom */
   val root: Node
   
+  /* standard dom */
   val whatToShow: Double
 }
 object NodeIterator {
@@ -43,6 +52,8 @@ object NodeIterator {
     inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     inline def setFilter(value: NodeFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterFunction1(value: /* node */ Node => Double): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterNull: Self = StObject.set(x, "filter", null)
     

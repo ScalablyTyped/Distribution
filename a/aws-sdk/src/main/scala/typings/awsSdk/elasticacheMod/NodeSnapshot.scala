@@ -14,7 +14,7 @@ trait NodeSnapshot extends StObject {
   /**
     * The date and time when the cache node was created in the source cluster.
     */
-  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.undefined
+  var CacheNodeCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The cache node identifier for the node in the source cluster.
@@ -39,7 +39,7 @@ trait NodeSnapshot extends StObject {
   /**
     * The date and time when the source node's metadata and cache data set was obtained for the snapshot.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotCreateTime: js.UndefOr[js.Date] = js.undefined
 }
 object NodeSnapshot {
   
@@ -54,7 +54,7 @@ object NodeSnapshot {
     
     inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    inline def setCacheNodeCreateTime(value: TStamp): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
+    inline def setCacheNodeCreateTime(value: js.Date): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
     
     inline def setCacheNodeCreateTimeUndefined: Self = StObject.set(x, "CacheNodeCreateTime", js.undefined)
     
@@ -74,7 +74,7 @@ object NodeSnapshot {
     
     inline def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
-    inline def setSnapshotCreateTime(value: TStamp): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreateTime(value: js.Date): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotCreateTimeUndefined: Self = StObject.set(x, "SnapshotCreateTime", js.undefined)
   }

@@ -29,6 +29,6 @@ object ListPatchDeploymentsResponse {
     
     inline def setPatchDeploymentsUndefined: Self = StObject.set(x, "patchDeployments", js.undefined)
     
-    inline def setPatchDeploymentsVarargs(value: PatchDeployment*): Self = StObject.set(x, "patchDeployments", js.Array(value :_*))
+    inline def setPatchDeploymentsVarargs(value: PatchDeployment*): Self = StObject.set(x, "patchDeployments", js.Array(value*))
   }
 }

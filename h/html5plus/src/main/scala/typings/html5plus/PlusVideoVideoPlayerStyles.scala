@@ -43,7 +43,7 @@ trait PlusVideoVideoPlayerStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `danmu-list`: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var `danmu-list`: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 设置全屏时视频的方向
@@ -241,11 +241,11 @@ object PlusVideoVideoPlayerStyles {
     
     inline def `setDanmu-btnUndefined`: Self = StObject.set(x, "danmu-btn", js.undefined)
     
-    inline def `setDanmu-list`(value: js.Array[js.Any]): Self = StObject.set(x, "danmu-list", value.asInstanceOf[js.Any])
+    inline def `setDanmu-list`(value: js.Array[Any]): Self = StObject.set(x, "danmu-list", value.asInstanceOf[js.Any])
     
     inline def `setDanmu-listUndefined`: Self = StObject.set(x, "danmu-list", js.undefined)
     
-    inline def `setDanmu-listVarargs`(value: js.Any*): Self = StObject.set(x, "danmu-list", js.Array(value :_*))
+    inline def `setDanmu-listVarargs`(value: Any*): Self = StObject.set(x, "danmu-list", js.Array(value*))
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

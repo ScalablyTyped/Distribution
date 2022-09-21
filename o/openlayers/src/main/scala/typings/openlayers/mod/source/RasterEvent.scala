@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.RasterEvent")
 @js.native
-class RasterEvent protected () extends Event {
+open class RasterEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.source.Raster} instances are instances of this

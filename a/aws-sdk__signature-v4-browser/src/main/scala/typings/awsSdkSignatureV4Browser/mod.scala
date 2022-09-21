@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@aws-sdk/signature-v4-browser", "SignatureV4")
   @js.native
-  class SignatureV4 protected ()
+  open class SignatureV4 protected ()
     extends typings.awsSdkSignatureV4.mod.SignatureV4 {
     def this(hasSha256Rest: SignatureV4Init) = this()
   }

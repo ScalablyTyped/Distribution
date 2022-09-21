@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaCountryTargeting extends StObject {
   
-  var countries: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Countries to target, specified as two letter [CLDR codes](https://unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html).
+    */
+  var countries: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  var includeRestOfWorld: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Include "rest of world" as well as explicitly targeted countries.
+    */
+  var includeRestOfWorld: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaCountryTargeting {
   
@@ -21,11 +27,15 @@ object SchemaCountryTargeting {
     
     inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
+    inline def setCountriesNull: Self = StObject.set(x, "countries", null)
+    
     inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setIncludeRestOfWorld(value: Boolean): Self = StObject.set(x, "includeRestOfWorld", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeRestOfWorldNull: Self = StObject.set(x, "includeRestOfWorld", null)
     
     inline def setIncludeRestOfWorldUndefined: Self = StObject.set(x, "includeRestOfWorld", js.undefined)
   }

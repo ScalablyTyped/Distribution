@@ -10,15 +10,12 @@ BEM-like simple classname builder.
 | ------------------ | :-------------: |
 | Full name          | bemmer |
 | Keywords           | react, bem, classname, css |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 7961 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5460.333333333333 |
+| # stars            | 52.0 |
 
 ## Links
-- [Homepage](https://github.com/axross/bemmer)
-- [Bugs](https://github.com/axross/bemmer/issues)
-- [Repository](https://github.com/axross/bemmer)
 - [Npm](https://www.npmjs.com/package/bemmer)
     
 

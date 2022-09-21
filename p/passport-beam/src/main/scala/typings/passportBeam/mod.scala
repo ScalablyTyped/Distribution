@@ -1,10 +1,9 @@
 package typings.passportBeam
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportBeam.mod.Strategy.IStrategyOption
 import typings.passportBeam.mod.Strategy.Profile
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("passport-beam", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(
@@ -22,12 +21,21 @@ object mod {
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
-            /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
+            /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
             Unit
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   object Strategy {
     
@@ -60,9 +68,9 @@ object mod {
       extends StObject
          with typings.passport.mod.Profile {
       
-      var _json: js.Any
+      var _json: Any
       
-      var _raw: js.Any
+      var _raw: Any
       
       var email: String
       
@@ -71,8 +79,8 @@ object mod {
     object Profile {
       
       inline def apply(
-        _json: js.Any,
-        _raw: js.Any,
+        _json: Any,
+        _raw: Any,
         displayName: String,
         email: String,
         id: String,
@@ -89,9 +97,9 @@ object mod {
         
         inline def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
         
-        inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+        inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
         
-        inline def set_raw(value: js.Any): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
+        inline def set_raw(value: Any): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -27,7 +27,7 @@ trait Display extends StObject {
   var preferences: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[Any]
   ] = js.undefined
   
   /** The gadget's title. Deprecated. */
@@ -67,7 +67,7 @@ object Display {
     inline def setPreferences(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[Any]
     ): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
     inline def setPreferencesUndefined: Self = StObject.set(x, "preferences", js.undefined)

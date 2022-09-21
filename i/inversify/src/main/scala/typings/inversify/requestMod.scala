@@ -10,37 +10,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requestMod {
   
-  @JSImport("inversify/dts/planning/request", "Request")
+  @JSImport("inversify/lib/planning/request", "Request")
   @js.native
-  class Request protected ()
+  open class Request protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Request {
     def this(
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      serviceIdentifier: ServiceIdentifier[Any],
       parentContext: Context,
       parentRequest: Null,
-      bindings: js.Array[Binding[js.Any]],
+      bindings: js.Array[Binding[Any]],
       target: Target
     ) = this()
     def this(
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      serviceIdentifier: ServiceIdentifier[Any],
       parentContext: Context,
       parentRequest: Null,
-      bindings: Binding[js.Any],
+      bindings: Binding[Any],
       target: Target
     ) = this()
     def this(
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      serviceIdentifier: ServiceIdentifier[Any],
       parentContext: Context,
       parentRequest: typings.inversify.interfacesMod.interfaces.Request,
-      bindings: js.Array[Binding[js.Any]],
+      bindings: js.Array[Binding[Any]],
       target: Target
     ) = this()
     def this(
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      serviceIdentifier: ServiceIdentifier[Any],
       parentContext: Context,
       parentRequest: typings.inversify.interfacesMod.interfaces.Request,
-      bindings: Binding[js.Any],
+      bindings: Binding[Any],
       target: Target
     ) = this()
   }

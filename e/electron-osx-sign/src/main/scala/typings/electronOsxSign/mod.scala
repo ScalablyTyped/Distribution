@@ -1,6 +1,5 @@
 package typings.electronOsxSign
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def flat(opts: FlatOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flat(opts: FlatOptions, callback: js.Function1[/* error */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def flatAsync(opts: FlatOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def flatAsync(opts: FlatOptions): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def sign(opts: SignOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(opts: SignOptions, callback: js.Function1[/* error */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def signAsync(opts: SignOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("signAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def signAsync(opts: SignOptions): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("signAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   trait BaseSignOptions extends StObject {
     
@@ -105,13 +104,17 @@ object mod {
     
     var `entitlements-loginhelper`: js.UndefOr[String] = js.undefined
     
+    var entitlementsForFile: js.UndefOr[
+        js.Function2[/* file */ String, /* codeSignArgs */ js.Array[String], String | Null]
+      ] = js.undefined
+    
     var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
     
     var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
     
     var `identity-validation`: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.undefined
+    var ignore: js.UndefOr[String | (js.Function1[/* file */ String, Boolean])] = js.undefined
     
     var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.undefined
     
@@ -120,6 +123,8 @@ object mod {
     var `provisioning-profile`: js.UndefOr[String] = js.undefined
     
     var requirements: js.UndefOr[String] = js.undefined
+    
+    var `signature-flags`: js.UndefOr[String | (js.Function1[/* file */ String, js.Array[String]])] = js.undefined
     
     var `signature-size`: js.UndefOr[Double] = js.undefined
     
@@ -140,7 +145,7 @@ object mod {
       
       inline def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
       
-      inline def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value :_*))
+      inline def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value*))
       
       inline def setEntitlements(value: String): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
       
@@ -151,6 +156,10 @@ object mod {
       inline def `setEntitlements-loginhelper`(value: String): Self = StObject.set(x, "entitlements-loginhelper", value.asInstanceOf[js.Any])
       
       inline def `setEntitlements-loginhelperUndefined`: Self = StObject.set(x, "entitlements-loginhelper", js.undefined)
+      
+      inline def setEntitlementsForFile(value: (/* file */ String, /* codeSignArgs */ js.Array[String]) => String | Null): Self = StObject.set(x, "entitlementsForFile", js.Any.fromFunction2(value))
+      
+      inline def setEntitlementsForFileUndefined: Self = StObject.set(x, "entitlementsForFile", js.undefined)
       
       inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
       
@@ -166,7 +175,9 @@ object mod {
       
       inline def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
       
-      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | (js.Function1[/* file */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
@@ -185,6 +196,12 @@ object mod {
       inline def setRequirements(value: String): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
       
       inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+      
+      inline def `setSignature-flags`(value: String | (js.Function1[/* file */ String, js.Array[String]])): Self = StObject.set(x, "signature-flags", value.asInstanceOf[js.Any])
+      
+      inline def `setSignature-flagsFunction1`(value: /* file */ String => js.Array[String]): Self = StObject.set(x, "signature-flags", js.Any.fromFunction1(value))
+      
+      inline def `setSignature-flagsUndefined`: Self = StObject.set(x, "signature-flags", js.undefined)
       
       inline def `setSignature-size`(value: Double): Self = StObject.set(x, "signature-size", value.asInstanceOf[js.Any])
       

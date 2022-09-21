@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__providers
 
-Typings are for version 5.0.15
+Typings are for version 5.7.1
 
 ## Library description:
 Ethereum Providers for ethers.
@@ -10,10 +10,10 @@ Ethereum Providers for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/providers |
 | Keywords           | Ethereum, ethers |
-| # releases         | 77 |
-| # dependents       | 65 |
-| # downloads        | 1410421 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 2856784.3333333335 |
+| # stars            | 5632.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

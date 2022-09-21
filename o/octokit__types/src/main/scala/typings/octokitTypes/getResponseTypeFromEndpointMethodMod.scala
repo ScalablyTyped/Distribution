@@ -10,7 +10,7 @@ object getResponseTypeFromEndpointMethodMod {
   @js.native
   trait AnyFunction extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   type GetResponseDataTypeFromEndpointMethod[T /* <: AnyFunction */] = /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.Unwrap<std.ReturnType<T>>['data'] */ js.Any

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("HTMLWebViewElement")
 @js.native
 /** Create a new element */
-class HTMLWebViewElement ()
+open class HTMLWebViewElement ()
   extends StObject
      with typings.chromeApps.HTMLWebViewElement {
   

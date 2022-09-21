@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod
 
+import typings.phaser.Phaser.Animations.Animation
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Geom.Circle
 import typings.phaser.Phaser.Geom.Ellipse
@@ -9,8 +10,8 @@ import typings.phaser.Phaser.Geom.Triangle
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.Actions.CallCallback
 import typings.phaser.Phaser.Types.Actions.GridAlignConfig
+import typings.phaser.Phaser.Types.Animations.PlayAnimationConfig
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +31,10 @@ object Actions {
     * @param offsetX Optional horizontal offset from the position. Default 0.
     * @param offsetY Optional vertical offset from the position. Default 0.
     */
-  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: Double, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: Double, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: Double, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `angle` property,
@@ -50,12 +51,12 @@ object Actions {
     */
   inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of objects and passes each of them to the given callback.
@@ -63,7 +64,7 @@ object Actions {
     * @param callback The callback to be invoked. It will be passed just one argument: the item from the array.
     * @param context The scope in which the callback will be invoked.
     */
-  inline def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: js.Any): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Call")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: Any): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Call")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of objects and returns the first element in the array that has properties which match
@@ -76,7 +77,7 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
   inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
-  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
   
   /**
     * Takes an array of objects and returns the last element in the array that has properties which match
@@ -89,7 +90,7 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
   inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
-  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
@@ -114,12 +115,12 @@ object Actions {
     */
   inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `x` property,
@@ -136,12 +137,12 @@ object Actions {
     */
   inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
@@ -162,34 +163,34 @@ object Actions {
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `y` property,
@@ -206,12 +207,12 @@ object Actions {
     */
   inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Circle.
@@ -255,10 +256,10 @@ object Actions {
     * If the `shift` parameter is given you can offset where placement begins.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param rect The Rectangle to position the Game Objects on.
-    * @param shift An optional positional offset. Default 1.
+    * @param shift An optional positional offset. Default 0.
     */
   inline def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], shift.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], shift.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the edges of a Triangle.
@@ -272,14 +273,19 @@ object Actions {
   inline def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle, stepRate: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnTriangle")(items.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
-    * Play an animation with the given key, starting at the given startFrame on all Game Objects in items.
+    * Play an animation on all Game Objects in the array that have an Animation component.
+    * 
+    * You can pass either an animation key, or an animation configuration object for more control over the playback.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
-    * @param key The name of the animation to play.
-    * @param startFrame The starting frame of the animation with the given key.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object.
+    * @param ignoreIfPlaying If this animation is already playing then ignore this call. Default false.
     */
   inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: String): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, ignoreIfPlaying: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ignoreIfPlaying.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: Animation): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: Animation, ignoreIfPlaying: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ignoreIfPlaying.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: PlayAnimationConfig): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: PlayAnimationConfig, ignoreIfPlaying: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ignoreIfPlaying.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
@@ -297,12 +303,12 @@ object Actions {
     */
   inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
@@ -320,12 +326,12 @@ object Actions {
     */
   inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations within the Circle.
@@ -385,12 +391,12 @@ object Actions {
     */
   inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Rotates each item around the given point by the given angle.
@@ -424,12 +430,12 @@ object Actions {
     */
   inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `scaleX` and `scaleY` properties,
@@ -450,6 +456,16 @@ object Actions {
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -457,17 +473,17 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
@@ -476,19 +492,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -496,39 +512,31 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Unit,
     stepY: Unit,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -536,68 +544,34 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Unit,
     stepX: Double,
     stepY: Unit,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Unit,
     stepX: Unit,
     stepY: Double,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `scaleY` property,
@@ -614,12 +588,12 @@ object Actions {
     */
   inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `alpha`
@@ -636,12 +610,12 @@ object Actions {
     */
   inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `blendMode`
@@ -656,9 +630,9 @@ object Actions {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `depth`
@@ -675,12 +649,12 @@ object Actions {
     */
   inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Passes all provided Game Objects to the Input Manager to enable them for input with identical areas and callbacks.
@@ -688,7 +662,7 @@ object Actions {
     * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
     * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
     */
-  inline def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: js.Any, hitAreaCallback: HitAreaCallback): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetHitArea")(items.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: Any, hitAreaCallback: HitAreaCallback): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetHitArea")(items.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `originX` and `originY`
@@ -709,6 +683,16 @@ object Actions {
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -716,17 +700,17 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
     originY: Double,
     stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
@@ -735,19 +719,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -755,17 +739,17 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
     originY: Double,
     stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
@@ -774,20 +758,20 @@ object Actions {
     stepX: Unit,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -795,17 +779,17 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
     originY: Unit,
     stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
@@ -814,19 +798,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Unit,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -834,37 +818,19 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Unit,
-    stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
     originY: Unit,
     stepX: Unit,
     stepY: Unit,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Unit,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `rotation`
@@ -881,12 +847,12 @@ object Actions {
     */
   inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scaleX` and `scaleY`
@@ -907,6 +873,16 @@ object Actions {
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -914,17 +890,17 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
@@ -933,19 +909,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -953,39 +929,31 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Unit,
     stepY: Unit,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -993,68 +961,34 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Unit,
     stepX: Double,
     stepY: Unit,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Unit,
     stepX: Unit,
     stepY: Double,
-    index: Unit,
-    direction: integer
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Unit,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleX`
@@ -1071,12 +1005,12 @@ object Actions {
     */
   inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleY`
@@ -1093,12 +1027,12 @@ object Actions {
     */
   inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scrollFactorX` and `scrollFactorY`
@@ -1125,16 +1059,7 @@ object Actions {
     scrollFactorY: Double,
     stepX: Double,
     stepY: Double,
-    index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Double,
-    stepY: Double,
-    index: integer
+    index: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
@@ -1142,8 +1067,27 @@ object Actions {
     scrollFactorY: Double,
     stepX: Double,
     stepY: Double,
-    index: integer,
-    direction: integer
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: Unit,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
@@ -1152,19 +1096,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1172,17 +1116,17 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
     scrollFactorY: Double,
     stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
@@ -1191,20 +1135,20 @@ object Actions {
     stepX: Unit,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1212,17 +1156,17 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
     scrollFactorY: Unit,
     stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
@@ -1231,19 +1175,19 @@ object Actions {
     stepX: Double,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Unit,
-    stepX: Double,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Double,
+    direction: Double
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1251,17 +1195,17 @@ object Actions {
     stepX: Unit,
     stepY: Double,
     index: Unit,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
     scrollFactorY: Unit,
     stepX: Unit,
-    stepY: Double,
-    index: integer,
-    direction: integer
+    stepY: Unit,
+    index: Double,
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
@@ -1270,17 +1214,7 @@ object Actions {
     stepX: Unit,
     stepY: Unit,
     index: Unit,
-    direction: integer
-  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Unit,
-    stepX: Unit,
-    stepY: Unit,
-    index: integer,
-    direction: integer
+    direction: Double
   ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
@@ -1298,12 +1232,12 @@ object Actions {
     */
   inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scrollFactorY`
@@ -1320,12 +1254,12 @@ object Actions {
     */
   inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public method setTint() and then updates it to the given value(s). You can specify tint color per corner or provide only one color value for `topLeft` parameter, in which case whole item will be tinted with that color.
@@ -1355,9 +1289,9 @@ object Actions {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `x`
@@ -1374,12 +1308,12 @@ object Actions {
     */
   inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `x` and `y`
@@ -1400,34 +1334,34 @@ object Actions {
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `y`
@@ -1444,12 +1378,12 @@ object Actions {
     */
   inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
   inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
-  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Double, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Iterate through the items array changing the position of each element to be that of the element that came before
@@ -1465,9 +1399,9 @@ object Actions {
     * @param output An optional objec to store the final objects position in.
     */
   inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: Double, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
   inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: Unit, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
-  inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[O]
-  inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
   
   /**
     * Shuffles the array in place. The shuffled array is both modified and returned.

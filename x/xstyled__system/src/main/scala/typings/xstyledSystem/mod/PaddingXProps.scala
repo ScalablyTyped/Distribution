@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.PaddingLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PaddingXProps[TLength] extends StObject {
   
-  val px: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val px: js.UndefOr[ResponsiveValue[PaddingLeft[TLength]]] = js.undefined
 }
 object PaddingXProps {
   
@@ -21,16 +18,10 @@ object PaddingXProps {
   
   extension [Self <: PaddingXProps[?], TLength](x: Self & PaddingXProps[TLength]) {
     
-    inline def setPx(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    inline def setPx(value: ResponsiveValue[PaddingLeft[TLength]]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
-    inline def setPxVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "px", js.Array(value :_*))
+    inline def setPxVarargs(value: PaddingLeft[TLength]*): Self = StObject.set(x, "px", js.Array(value*))
   }
 }

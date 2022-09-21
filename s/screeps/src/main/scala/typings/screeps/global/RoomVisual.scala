@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can create new RoomVisual object using its constructor.
   * @param roomName The room name. If undefined, visuals will be posted to all rooms simultaneously.
   */
-class RoomVisual ()
+open class RoomVisual ()
   extends StObject
      with typings.screeps.RoomVisual {
   def this(roomName: String) = this()

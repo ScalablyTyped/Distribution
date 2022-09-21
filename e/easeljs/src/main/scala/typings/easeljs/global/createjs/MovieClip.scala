@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.MovieClip")
 @js.native
-class MovieClip ()
+open class MovieClip ()
   extends StObject
      with typings.easeljs.createjs.MovieClip {
   def this(mode: String) = this()

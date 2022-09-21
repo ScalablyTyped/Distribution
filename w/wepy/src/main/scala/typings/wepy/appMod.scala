@@ -11,7 +11,7 @@ object appMod {
   
   @JSImport("wepy/app", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with app
   
@@ -48,19 +48,19 @@ object appMod {
       
       inline def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
       
-      inline def setAppEventsVarargs(value: String*): Self = StObject.set(x, "appEvents", js.Array(value :_*))
+      inline def setAppEventsVarargs(value: String*): Self = StObject.set(x, "appEvents", js.Array(value*))
       
       inline def setNoPromiseAPI(value: js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "noPromiseAPI", value.asInstanceOf[js.Any])
       
       inline def setNoPromiseAPIUndefined: Self = StObject.set(x, "noPromiseAPI", js.undefined)
       
-      inline def setNoPromiseAPIVarargs(value: String*): Self = StObject.set(x, "noPromiseAPI", js.Array(value :_*))
+      inline def setNoPromiseAPIVarargs(value: String*): Self = StObject.set(x, "noPromiseAPI", js.Array(value*))
       
       inline def setPageEvents(value: js.Array[String]): Self = StObject.set(x, "pageEvents", value.asInstanceOf[js.Any])
       
       inline def setPageEventsUndefined: Self = StObject.set(x, "pageEvents", js.undefined)
       
-      inline def setPageEventsVarargs(value: String*): Self = StObject.set(x, "pageEvents", js.Array(value :_*))
+      inline def setPageEventsVarargs(value: String*): Self = StObject.set(x, "pageEvents", js.Array(value*))
     }
   }
   
@@ -73,15 +73,15 @@ object appMod {
   trait app extends StObject {
     
     @JSName("$init")
-    def $init(wepy: js.Any, config: AppConfig): Unit = js.native
+    def $init(wepy: Any, config: AppConfig): Unit = js.native
     
     @JSName("$initAPI")
-    def $initAPI(wepy: js.Any, noPromiseAPI: js.Array[String]): Unit = js.native
+    def $initAPI(wepy: Any, noPromiseAPI: js.Array[String]): Unit = js.native
     @JSName("$initAPI")
-    def $initAPI(wepy: js.Any, noPromiseAPI: StringDictionary[Boolean]): Unit = js.native
+    def $initAPI(wepy: Any, noPromiseAPI: StringDictionary[Boolean]): Unit = js.native
     
     var config: Pages = js.native
     
-    def use(addonName: AddOn, args: js.Any*): Unit = js.native
+    def use(addonName: AddOn, args: Any*): Unit = js.native
   }
 }

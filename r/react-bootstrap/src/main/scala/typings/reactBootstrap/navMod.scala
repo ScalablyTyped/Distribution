@@ -11,12 +11,10 @@ object navMod {
   
   @JSImport("react-bootstrap/lib/Nav", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavProps, js.Object, Any]
   
-  @js.native
-  trait Nav
-    extends Component[NavProps, js.Object, js.Any]
+  type Nav = Component[NavProps, js.Object, Any]
   
   trait NavProps
     extends StObject
@@ -25,7 +23,7 @@ object navMod {
     // Optional
     var activeHref: js.UndefOr[String] = js.undefined
     
-    var activeKey: js.UndefOr[js.Any] = js.undefined
+    var activeKey: js.UndefOr[Any] = js.undefined
     
     var bsClass: js.UndefOr[String] = js.undefined
     
@@ -35,7 +33,7 @@ object navMod {
     
     var collapsible: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var expanded: js.UndefOr[Boolean] = js.undefined
     
@@ -66,7 +64,7 @@ object navMod {
       
       inline def setActiveHrefUndefined: Self = StObject.set(x, "activeHref", js.undefined)
       
-      inline def setActiveKey(value: js.Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
@@ -86,7 +84,7 @@ object navMod {
       
       inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

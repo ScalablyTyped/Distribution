@@ -9,7 +9,7 @@ trait EndpointSummary extends StObject {
   /**
     * A timestamp that shows when the endpoint was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint.
@@ -29,16 +29,16 @@ trait EndpointSummary extends StObject {
   /**
     * A timestamp that shows when the endpoint was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
 }
 object EndpointSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     EndpointArn: EndpointArn,
     EndpointName: EndpointName,
     EndpointStatus: EndpointStatus,
-    LastModifiedTime: Timestamp
+    LastModifiedTime: js.Date
   ): EndpointSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any], EndpointStatus = EndpointStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointSummary]
@@ -46,7 +46,7 @@ object EndpointSummary {
   
   extension [Self <: EndpointSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
@@ -54,6 +54,6 @@ object EndpointSummary {
     
     inline def setEndpointStatus(value: EndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

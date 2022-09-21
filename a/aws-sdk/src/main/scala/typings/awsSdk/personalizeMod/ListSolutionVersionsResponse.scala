@@ -33,6 +33,6 @@ object ListSolutionVersionsResponse {
     
     inline def setSolutionVersionsUndefined: Self = StObject.set(x, "solutionVersions", js.undefined)
     
-    inline def setSolutionVersionsVarargs(value: SolutionVersionSummary*): Self = StObject.set(x, "solutionVersions", js.Array(value :_*))
+    inline def setSolutionVersionsVarargs(value: SolutionVersionSummary*): Self = StObject.set(x, "solutionVersions", js.Array(value*))
   }
 }

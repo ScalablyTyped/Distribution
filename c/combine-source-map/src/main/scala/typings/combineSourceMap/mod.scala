@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("combine-source-map", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Combiner {
     def this(file: String) = this()
@@ -39,8 +39,8 @@ object mod {
   @js.native
   trait Combiner extends StObject {
     
-    def _addExistingMap(sourceFile: String, source: String, existingMap: js.Any): Combiner = js.native
-    def _addExistingMap(sourceFile: String, source: String, existingMap: js.Any, offset: Offset): Combiner = js.native
+    def _addExistingMap(sourceFile: String, source: String, existingMap: Any): Combiner = js.native
+    def _addExistingMap(sourceFile: String, source: String, existingMap: Any, offset: Offset): Combiner = js.native
     
     def _addGeneratedMap(sourceFile: String, source: String): Combiner = js.native
     def _addGeneratedMap(sourceFile: String, source: String, offset: Offset): Combiner = js.native

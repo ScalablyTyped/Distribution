@@ -12,7 +12,7 @@ object activitymonitorMod {
   
   @JSImport("@jupyterlab/coreutils/lib/activitymonitor", "ActivityMonitor")
   @js.native
-  class ActivityMonitor[Sender, Args] protected ()
+  open class ActivityMonitor[Sender, Args] protected ()
     extends StObject
        with IDisposable {
     /**
@@ -20,22 +20,22 @@ object activitymonitorMod {
       */
     def this(options: IOptions[Sender, Args]) = this()
     
-    /* private */ var _activityStopped: js.Any = js.native
+    /* private */ var _activityStopped: Any = js.native
     
-    /* private */ var _args: js.Any = js.native
+    /* private */ var _args: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * A signal handler for the monitored signal.
       */
-    /* private */ var _onSignalFired: js.Any = js.native
+    /* private */ var _onSignalFired: Any = js.native
     
-    /* private */ var _sender: js.Any = js.native
+    /* private */ var _sender: Any = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
-    /* private */ var _timer: js.Any = js.native
+    /* private */ var _timer: Any = js.native
     
     /**
       * A signal emitted when activity has ceased.

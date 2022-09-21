@@ -10,7 +10,7 @@ trait AccessObjectProperties extends StObject {
   def apply(Index: String): AccessObjectProperty = js.native
   def apply(Index: Double): AccessObjectProperty = js.native
   
-  def Add(PropertyName: String, Value: js.Any): Unit = js.native
+  def Add(PropertyName: String, Value: Any): Unit = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   
@@ -21,7 +21,7 @@ trait AccessObjectProperties extends StObject {
   def Item(Index: String): AccessObjectProperty = js.native
   def Item(Index: Double): AccessObjectProperty = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Remove(Item: String): Unit = js.native
   def Remove(Item: Double): Unit = js.native

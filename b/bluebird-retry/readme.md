@@ -10,15 +10,12 @@ utility for retrying a bluebird promise until it succeeds
 | ------------------ | :-------------: |
 | Full name          | bluebird-retry |
 | Keywords           | bluebird, promise, retry |
-| # releases         | 0 |
-| # dependents       | 89 |
-| # downloads        | 11694298 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 974344.0 |
+| # stars            | 123.0 |
 
 ## Links
-- [Homepage](https://github.com/demmer/bluebird-retry)
-- [Bugs](https://github.com/demmer/bluebird-retry/issues)
-- [Repository](https://github.com/demmer/bluebird-retry)
 - [Npm](https://www.npmjs.com/package/bluebird-retry)
     
 

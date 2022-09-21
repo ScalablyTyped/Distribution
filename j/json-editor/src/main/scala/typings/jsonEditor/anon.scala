@@ -47,18 +47,18 @@ object anon {
   
   trait Compile extends StObject {
     
-    def compile(template: String): js.Function1[/* vars */ js.Any, String]
+    def compile(template: String): js.Function1[/* vars */ Any, String]
   }
   object Compile {
     
-    inline def apply(compile: String => js.Function1[/* vars */ js.Any, String]): Compile = {
+    inline def apply(compile: String => js.Function1[/* vars */ Any, String]): Compile = {
       val __obj = js.Dynamic.literal(compile = js.Any.fromFunction1(compile))
       __obj.asInstanceOf[Compile]
     }
     
     extension [Self <: Compile](x: Self) {
       
-      inline def setCompile(value: String => js.Function1[/* vars */ js.Any, String]): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
+      inline def setCompile(value: String => js.Function1[/* vars */ Any, String]): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
     }
   }
   

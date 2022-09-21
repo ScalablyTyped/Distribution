@@ -7,25 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrderLineItemShippingDetailsMethod extends StObject {
   
   /**
-    * The carrier for the shipping. Optional. See shipments[].carrier for a
-    * list of acceptable values.
+    * The carrier for the shipping. Optional. See `shipments[].carrier` for a list of acceptable values.
     */
-  var carrier: js.UndefOr[String] = js.undefined
+  var carrier: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Maximum transit time.
+    * Required. Maximum transit time.
     */
-  var maxDaysInTransit: js.UndefOr[Double] = js.undefined
+  var maxDaysInTransit: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The name of the shipping method.
+    * Required. The name of the shipping method.
     */
-  var methodName: js.UndefOr[String] = js.undefined
+  var methodName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Minimum transit time.
+    * Required. Minimum transit time.
     */
-  var minDaysInTransit: js.UndefOr[Double] = js.undefined
+  var minDaysInTransit: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaOrderLineItemShippingDetailsMethod {
   
@@ -38,17 +37,25 @@ object SchemaOrderLineItemShippingDetailsMethod {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
+    inline def setCarrierNull: Self = StObject.set(x, "carrier", null)
+    
     inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     inline def setMaxDaysInTransit(value: Double): Self = StObject.set(x, "maxDaysInTransit", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDaysInTransitNull: Self = StObject.set(x, "maxDaysInTransit", null)
     
     inline def setMaxDaysInTransitUndefined: Self = StObject.set(x, "maxDaysInTransit", js.undefined)
     
     inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
+    inline def setMethodNameNull: Self = StObject.set(x, "methodName", null)
+    
     inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     inline def setMinDaysInTransit(value: Double): Self = StObject.set(x, "minDaysInTransit", value.asInstanceOf[js.Any])
+    
+    inline def setMinDaysInTransitNull: Self = StObject.set(x, "minDaysInTransit", null)
     
     inline def setMinDaysInTransitUndefined: Self = StObject.set(x, "minDaysInTransit", js.undefined)
   }

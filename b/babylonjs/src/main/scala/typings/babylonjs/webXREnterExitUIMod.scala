@@ -16,20 +16,33 @@ object webXREnterExitUIMod {
   
   @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUI")
   @js.native
-  /**
-    *
-    * @param scene babylon scene object to use
-    * @param options (read-only) version of the options passed to this UI
-    */
-  /* private */ class WebXREnterExitUI ()
+  open class WebXREnterExitUI protected ()
     extends StObject
        with IDisposable {
+    /**
+      * Construct a new EnterExit UI class
+      *
+      * @param _scene babylon scene object to use
+      * @param options (read-only) version of the options passed to this UI
+      */
+    def this(_scene: Scene, /** version of the options passed to this UI */
+    options: WebXREnterExitUIOptions) = this()
     
-    /* private */ var _activeButton: js.Any = js.native
+    /* private */ var _activeButton: Any = js.native
     
-    /* private */ var _buttons: js.Any = js.native
+    /* private */ var _buttons: Any = js.native
     
-    /* private */ var _updateButtons: js.Any = js.native
+    /* private */ var _enterXRWithButtonIndex: Any = js.native
+    
+    /* private */ var _helper: Any = js.native
+    
+    /* private */ var _onSessionGranted: Any = js.native
+    
+    /* private */ var _renderTarget: Any = js.native
+    
+    /* private */ var _scene: Any = js.native
+    
+    /* private */ var _updateButtons: Any = js.native
     
     /**
       * Fired every time the active button is changed.
@@ -54,7 +67,16 @@ object webXREnterExitUIMod {
       */
     val overlay: HTMLDivElement = js.native
     
-    /* private */ var scene: js.Any = js.native
+    /**
+      * Set the helper to be used with this UI component.
+      * The UI is bound to an experience helper. If not provided the UI can still be used but the events should be registered by the developer.
+      *
+      * @param helper the experience helper to attach
+      * @param renderTarget an optional render target (in case it is created outside of the helper scope)
+      * @returns a promise that resolves when the ui is ready
+      */
+    def setHelperAsync(helper: WebXRExperienceHelper): js.Promise[Unit] = js.native
+    def setHelperAsync(helper: WebXRExperienceHelper, renderTarget: WebXRRenderTarget): js.Promise[Unit] = js.native
   }
   /* static members */
   object WebXREnterExitUI {
@@ -75,7 +97,7 @@ object webXREnterExitUIMod {
   
   @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUIButton")
   @js.native
-  class WebXREnterExitUIButton protected () extends StObject {
+  open class WebXREnterExitUIButton protected () extends StObject {
     /**
       * Creates a WebXREnterExitUIButton
       * @param element button element
@@ -109,7 +131,7 @@ object webXREnterExitUIMod {
   
   @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUIOptions")
   @js.native
-  class WebXREnterExitUIOptions () extends StObject {
+  open class WebXREnterExitUIOptions () extends StObject {
     
     /**
       * User provided buttons to enable/disable WebXR. The system will provide default if not set
@@ -117,9 +139,16 @@ object webXREnterExitUIMod {
     var customButtons: js.UndefOr[js.Array[WebXREnterExitUIButton]] = js.native
     
     /**
+      * If set, the `sessiongranted` event will not be registered. `sessiongranted` is used to move seamlessly between WebXR experiences.
+      * If set to true the user will be forced to press the "enter XR" button even if sessiongranted event was triggered.
+      * If not set and a sessiongranted event was triggered, the XR session will start automatically.
+      */
+    var ignoreSessionGrantedEvent: js.UndefOr[Boolean] = js.native
+    
+    /**
       * If defined, this function will be executed if the UI encounters an error when entering XR
       */
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.native
     
     /**
       * A list of optional features to init the session with

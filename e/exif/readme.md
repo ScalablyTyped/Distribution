@@ -11,9 +11,9 @@ A node.js library to extract Exif metadata from images.
 | Full name          | exif |
 | Keywords           | exif, image, jpeg, jpg, makernotes, gps |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 388337 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 39159.333333333336 |
+| # stars            | 551.0 |
 
 ## Links
 - [Homepage](https://github.com/gomfunkel/node-exif#readme)

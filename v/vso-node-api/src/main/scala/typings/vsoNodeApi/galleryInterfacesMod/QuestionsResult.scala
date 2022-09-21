@@ -29,6 +29,6 @@ object QuestionsResult {
     
     inline def setQuestions(value: js.Array[Question]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
     
-    inline def setQuestionsVarargs(value: Question*): Self = StObject.set(x, "questions", js.Array(value :_*))
+    inline def setQuestionsVarargs(value: Question*): Self = StObject.set(x, "questions", js.Array(value*))
   }
 }

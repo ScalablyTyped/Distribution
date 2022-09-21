@@ -8,5 +8,5 @@ object putBucketEncryptionInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/PutBucketEncryptionInput", "PutBucketEncryptionInput")
   @js.native
-  val PutBucketEncryptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketEncryptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

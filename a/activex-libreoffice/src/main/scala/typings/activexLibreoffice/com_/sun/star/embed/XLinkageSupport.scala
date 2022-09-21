@@ -64,7 +64,7 @@ object XLinkageSupport {
     getLinkURL: () => String,
     isLink: () => Boolean,
     isReadonly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit,
     storeOwn: () => Unit

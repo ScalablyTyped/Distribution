@@ -10,10 +10,10 @@ object exploreMod {
   
   @JSImport("material-ui/svg-icons/action/explore", JSImport.Default)
   @js.native
-  class default () extends ActionExplore
+  open class default () extends ActionExplore
   
   @JSImport("material-ui/svg-icons/action/explore", "ActionExplore")
   @js.native
-  class ActionExplore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionExplore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

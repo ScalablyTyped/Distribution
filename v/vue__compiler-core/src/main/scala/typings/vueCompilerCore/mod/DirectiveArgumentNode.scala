@@ -28,6 +28,6 @@ object DirectiveArgumentNode {
       value: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression])
     ): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
   }
 }

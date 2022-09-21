@@ -22,6 +22,6 @@ object PolygonWithCurves {
     
     inline def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     
-    inline def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
+    inline def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curveRings", js.Array(value*))
   }
 }

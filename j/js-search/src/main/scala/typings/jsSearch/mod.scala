@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("js-search", "AllSubstringsIndexStrategy")
   @js.native
-  class AllSubstringsIndexStrategy ()
+  open class AllSubstringsIndexStrategy ()
     extends StObject
        with IIndexStrategy {
     
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("js-search", "CaseSensitiveSanitizer")
   @js.native
-  class CaseSensitiveSanitizer ()
+  open class CaseSensitiveSanitizer ()
     extends StObject
        with ISanitizer {
     
@@ -33,7 +33,7 @@ object mod {
   
   @JSImport("js-search", "ExactWordIndexStrategy")
   @js.native
-  class ExactWordIndexStrategy ()
+  open class ExactWordIndexStrategy ()
     extends StObject
        with IIndexStrategy {
     
@@ -43,7 +43,7 @@ object mod {
   
   @JSImport("js-search", "LowerCaseSanitizer")
   @js.native
-  class LowerCaseSanitizer ()
+  open class LowerCaseSanitizer ()
     extends StObject
        with ISanitizer {
     
@@ -53,7 +53,7 @@ object mod {
   
   @JSImport("js-search", "PrefixIndexStrategy")
   @js.native
-  class PrefixIndexStrategy ()
+  open class PrefixIndexStrategy ()
     extends StObject
        with IIndexStrategy {
     
@@ -63,7 +63,7 @@ object mod {
   
   @JSImport("js-search", "Search")
   @js.native
-  class Search protected () extends StObject {
+  open class Search protected () extends StObject {
     def this(uidFieldName: String) = this()
     def this(uidFieldName: js.Array[String]) = this()
     
@@ -87,7 +87,7 @@ object mod {
   
   @JSImport("js-search", "SimpleTokenizer")
   @js.native
-  class SimpleTokenizer ()
+  open class SimpleTokenizer ()
     extends StObject
        with ITokenizer {
     
@@ -97,7 +97,7 @@ object mod {
   
   @JSImport("js-search", "StemmingTokenizer")
   @js.native
-  class StemmingTokenizer protected ()
+  open class StemmingTokenizer protected ()
     extends StObject
        with ITokenizer {
     def this(stemmingFunction: StemmingFunction, decoratedTokenizer: ITokenizer) = this()
@@ -108,12 +108,12 @@ object mod {
   
   @JSImport("js-search", "StopWordsMap")
   @js.native
-  def StopWordsMap: js.Any = js.native
-  inline def StopWordsMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StopWordsMap")(x.asInstanceOf[js.Any])
+  def StopWordsMap: Any = js.native
+  inline def StopWordsMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StopWordsMap")(x.asInstanceOf[js.Any])
   
   @JSImport("js-search", "StopWordsTokenizer")
   @js.native
-  class StopWordsTokenizer protected ()
+  open class StopWordsTokenizer protected ()
     extends StObject
        with ITokenizer {
     def this(decoratedTokenizer: ITokenizer) = this()
@@ -124,7 +124,7 @@ object mod {
   
   @JSImport("js-search", "TfIdfSearchIndex")
   @js.native
-  class TfIdfSearchIndex protected ()
+  open class TfIdfSearchIndex protected ()
     extends StObject
        with ISearchIndex {
     def this(uidFieldName: String) = this()
@@ -139,7 +139,7 @@ object mod {
   
   @JSImport("js-search", "TokenHighlighter")
   @js.native
-  class TokenHighlighter protected () extends StObject {
+  open class TokenHighlighter protected () extends StObject {
     def this(opt_indexStrategy: IIndexStrategy, opt_sanitizer: ISanitizer, opt_wrapperTagName: String) = this()
     
     def highlight(text: String, tokens: js.Array[String]): String = js.native
@@ -147,7 +147,7 @@ object mod {
   
   @JSImport("js-search", "UnorderedSearchIndex")
   @js.native
-  class UnorderedSearchIndex ()
+  open class UnorderedSearchIndex ()
     extends StObject
        with ISearchIndex {
     

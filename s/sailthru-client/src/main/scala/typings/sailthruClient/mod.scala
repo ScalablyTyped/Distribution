@@ -1,5 +1,6 @@
 package typings.sailthruClient
 
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.sailthruClient.anon.Error
 import typings.sailthruClient.anon.Full
@@ -65,7 +66,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -81,13 +82,21 @@ object mod {
     
     def on(
       eventName: String,
-      listener: js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]
+      listener: js.Function2[
+          /* data */ js.UndefOr[Any], 
+          /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+          Unit
+        ]
     ): RestlerResult
   }
   object RestlerResult {
     
     inline def apply(
-      on: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
+      on: (String, js.Function2[
+          /* data */ js.UndefOr[Any], 
+          /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+          Unit
+        ]) => RestlerResult
     ): RestlerResult = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[RestlerResult]
@@ -96,7 +105,11 @@ object mod {
     extension [Self <: RestlerResult](x: Self) {
       
       inline def setOn(
-        value: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
+        value: (String, js.Function2[
+              /* data */ js.UndefOr[Any], 
+              /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+              Unit
+            ]) => RestlerResult
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }

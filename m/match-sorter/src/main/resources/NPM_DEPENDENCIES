@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "match-sorter" : "6.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "match-sorter" : "6.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,7 +11,7 @@ object regexInspectorMod {
   
   @JSImport("forge-di/dist/inspectors/RegexInspector", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with RegexInspector {
     
@@ -22,21 +22,21 @@ object regexInspectorMod {
     override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
     
     /* private */ /* CompleteClass */
-    var getParameterNames: js.Any = js.native
+    var getParameterNames: Any = js.native
   }
   
   trait RegexInspector
     extends StObject
        with Inspector {
     
-    /* private */ var getParameterNames: js.Any
+    /* private */ var getParameterNames: Any
   }
   object RegexInspector {
     
     inline def apply(
       findConstructor: Constructor => Constructor,
       getDependencies: js.Function => js.Array[Dependency],
-      getParameterNames: js.Any
+      getParameterNames: Any
     ): RegexInspector = {
       val __obj = js.Dynamic.literal(findConstructor = js.Any.fromFunction1(findConstructor), getDependencies = js.Any.fromFunction1(getDependencies), getParameterNames = getParameterNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexInspector]
@@ -44,7 +44,7 @@ object regexInspectorMod {
     
     extension [Self <: RegexInspector](x: Self) {
       
-      inline def setGetParameterNames(value: js.Any): Self = StObject.set(x, "getParameterNames", value.asInstanceOf[js.Any])
+      inline def setGetParameterNames(value: Any): Self = StObject.set(x, "getParameterNames", value.asInstanceOf[js.Any])
     }
   }
 }

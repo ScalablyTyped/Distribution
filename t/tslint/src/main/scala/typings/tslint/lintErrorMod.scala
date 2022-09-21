@@ -1,6 +1,5 @@
 package typings.tslint
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object lintErrorMod {
   
   inline def errorComparator(err1: LintError, err2: LintError): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("errorComparator")(err1.asInstanceOf[js.Any], err2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def lintSyntaxError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("lintSyntaxError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def lintSyntaxError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("lintSyntaxError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   trait LintError extends StObject {
     

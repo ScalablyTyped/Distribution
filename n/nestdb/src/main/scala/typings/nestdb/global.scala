@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("NestDb")
     @js.native
-    class ^[G] ()
+    open class ^[G] ()
       extends typings.nestdb.mod.^[G] {
       def this(pathOrOptions: String) = this()
       def this(pathOrOptions: DataStoreOptions) = this()

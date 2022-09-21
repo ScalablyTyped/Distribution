@@ -1,15 +1,13 @@
 package typings.passportDiscord
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.passportDiscord.passportDiscordBooleans.`false`
 import typings.passportDiscord.passportDiscordBooleans.`true`
 import typings.passportOauth2.mod.OAuth2Strategy
 import typings.passportOauth2.mod.StateStore
 import typings.passportOauth2.mod.VerifyCallback
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +16,15 @@ object mod {
   
   @JSImport("passport-discord", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Strategy {
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ Any,
       verify: js.Function4[
             /* accessToken */ String, 
             /* refreshToken */ String, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -34,12 +32,18 @@ object mod {
     // NOTE: A union of function types prevents contextual typing of arguments.
     // tslint:disable-next-line:unified-signatures
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ Any,
       verify: js.Function5[
-            (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) | (/* accessToken */ String), 
+            (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) | (/* accessToken */ String), 
             /* refreshToken */ /* accessToken */ String, 
-            (/* params */ js.Any) | (/* refreshToken */ String), 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
+            (/* params */ Any) | (/* refreshToken */ String), 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -47,13 +51,19 @@ object mod {
     // NOTE: A union of function types prevents contextual typing of arguments.
     // tslint:disable-next-line:unified-signatures max-line-length
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ Any,
       verify: js.Function6[
-            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+            /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], 
             /* accessToken */ String, 
-            /* params */ js.Any, 
+            /* params */ Any, 
             /* refreshToken */ String, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -107,7 +117,9 @@ object mod {
   
   trait GuildInfo extends StObject {
     
-    var icon: String
+    var features: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var icon: String | Null
     
     var id: String
     
@@ -119,14 +131,22 @@ object mod {
   }
   object GuildInfo {
     
-    inline def apply(icon: String, id: String, name: String, owner: Boolean, permissions: Double): GuildInfo = {
-      val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
+    inline def apply(id: String, name: String, owner: Boolean, permissions: Double): GuildInfo = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], icon = null)
       __obj.asInstanceOf[GuildInfo]
     }
     
     extension [Self <: GuildInfo](x: Self) {
       
+      inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      
+      inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
+      
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -142,7 +162,11 @@ object mod {
     extends StObject
        with typings.passport.mod.Profile {
     
-    var avatar: String
+    var accent_color: Double | Null
+    
+    var avatar: String | Null
+    
+    var banner: String | Null
     
     // requires "email" scope
     var connections: js.UndefOr[js.Array[ConnectionInfo]] = js.undefined
@@ -167,7 +191,6 @@ object mod {
   object Profile {
     
     inline def apply(
-      avatar: String,
       discriminator: String,
       displayName: String,
       fetchedAt: String,
@@ -178,19 +201,29 @@ object mod {
       provider: String,
       verified: Boolean
     ): Profile = {
-      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], discriminator = discriminator.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fetchedAt = fetchedAt.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mfa_enabled = mfa_enabled.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(discriminator = discriminator.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fetchedAt = fetchedAt.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mfa_enabled = mfa_enabled.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], accent_color = null, avatar = null, banner = null)
       __obj.asInstanceOf[Profile]
     }
     
     extension [Self <: Profile](x: Self) {
       
+      inline def setAccent_color(value: Double): Self = StObject.set(x, "accent_color", value.asInstanceOf[js.Any])
+      
+      inline def setAccent_colorNull: Self = StObject.set(x, "accent_color", null)
+      
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      
+      inline def setAvatarNull: Self = StObject.set(x, "avatar", null)
+      
+      inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+      
+      inline def setBannerNull: Self = StObject.set(x, "banner", null)
       
       inline def setConnections(value: js.Array[ConnectionInfo]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
       inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
       
-      inline def setConnectionsVarargs(value: ConnectionInfo*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: ConnectionInfo*): Self = StObject.set(x, "connections", js.Array(value*))
       
       inline def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
       
@@ -206,7 +239,7 @@ object mod {
       
       inline def setGuildsUndefined: Self = StObject.set(x, "guilds", js.undefined)
       
-      inline def setGuildsVarargs(value: GuildInfo*): Self = StObject.set(x, "guilds", js.Array(value :_*))
+      inline def setGuildsVarargs(value: GuildInfo*): Self = StObject.set(x, "guilds", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -224,7 +257,7 @@ object mod {
     def checkScope(
       scope: String,
       accessToken: String,
-      cb: js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ js.UndefOr[js.Any], Unit]
+      cb: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* value */ js.UndefOr[Any], Unit]
     ): Unit = js.native
   }
   
@@ -268,7 +301,7 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -307,13 +340,13 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

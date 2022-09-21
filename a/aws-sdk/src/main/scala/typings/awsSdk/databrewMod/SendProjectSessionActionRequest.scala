@@ -17,7 +17,7 @@ trait SendProjectSessionActionRequest extends StObject {
   var Name: ProjectName
   
   /**
-    * Returns the result of the recipe step, without applying it. The result isn't added to the view frame stack.
+    * If true, the result of the recipe step will be returned, but not applied.
     */
   var Preview: js.UndefOr[typings.awsSdk.databrewMod.Preview] = js.undefined
   

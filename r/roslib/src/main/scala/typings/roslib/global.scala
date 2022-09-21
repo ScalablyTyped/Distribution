@@ -26,7 +26,7 @@ object global {
     
     @JSGlobal("ROSLIB.ActionClient")
     @js.native
-    class ActionClient protected ()
+    open class ActionClient protected ()
       extends typings.roslib.mod.ActionClient {
       /**
         * An actionlib action client.
@@ -43,13 +43,16 @@ object global {
         *   * serverName - the action server name, like /fibonacci
         *   * actionName - the action message name, like 'actionlib_tutorials/FibonacciAction'
         *   * timeout - the timeout length when connecting to the action server
+        *   * omitFeedback - the boolean flag to indicate whether to omit the feedback channel or not
+        *   * omitStatus - the boolean flag to indicate whether to omit the status channel or not
+        *   * omitResult - the boolean flag to indicate whether to omit the result channel or not
         */
       def this(options: ActionName) = this()
     }
     
     @JSGlobal("ROSLIB.Goal")
     @js.native
-    class Goal protected ()
+    open class Goal protected ()
       extends typings.roslib.mod.Goal {
       /**
         * An actionlib goal goal is associated with an action server.
@@ -67,7 +70,7 @@ object global {
     
     @JSGlobal("ROSLIB.Message")
     @js.native
-    class Message protected ()
+    open class Message protected ()
       extends typings.roslib.mod.Message {
       /**
         * Message objects are used for publishing and subscribing to and from topics.
@@ -75,12 +78,12 @@ object global {
         * @constructor
         * @param values - object matching the fields defined in the .msg definition file
         */
-      def this(values: js.Any) = this()
+      def this(values: Any) = this()
     }
     
     @JSGlobal("ROSLIB.Param")
     @js.native
-    class Param protected ()
+    open class Param protected ()
       extends typings.roslib.mod.Param {
       /**
         * A ROS parameter.
@@ -103,7 +106,7 @@ object global {
       *   * position - the Vector3 describing the position
       *   * orientation - the ROSLIB.Quaternion describing the orientation
       */
-    class Pose ()
+    open class Pose ()
       extends typings.roslib.mod.Pose {
       def this(options: Orientation) = this()
     }
@@ -120,14 +123,14 @@ object global {
       *   * z - the z value
       *   * w - the w value
       */
-    class Quaternion ()
+    open class Quaternion ()
       extends typings.roslib.mod.Quaternion {
       def this(options: W) = this()
     }
     
     @JSGlobal("ROSLIB.Ros")
     @js.native
-    class Ros protected ()
+    open class Ros protected ()
       extends typings.roslib.mod.Ros {
       /**
         * Manages connection to the server and all interactions with ROS.
@@ -143,7 +146,7 @@ object global {
         * @param options - possible keys include:
         *   * url (optional) - (can be specified later with `connect`) the WebSocket URL for rosbridge or the node server url to connect using socket.io (if socket.io exists in the page) <br>
         *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
-        *   * transportLibrary (optional) - one of 'websocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
+        *   * transportLibrary (optional) - one of 'websocket', 'workersocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
         *   * transportOptions (optional) - the options to use use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
         */
       def this(options: GroovyCompatibility) = this()
@@ -151,8 +154,8 @@ object global {
     
     @JSGlobal("ROSLIB.Service")
     @js.native
-    class Service protected ()
-      extends typings.roslib.mod.Service {
+    open class Service[TServiceRequest, TServiceResponse] protected ()
+      extends typings.roslib.mod.Service[TServiceRequest, TServiceResponse] {
       /**
         * A ROS service client.
         *
@@ -173,9 +176,9 @@ object global {
       * @constructor
       * @param values - object matching the fields defined in the .srv definition file
       */
-    class ServiceRequest ()
+    open class ServiceRequest ()
       extends typings.roslib.mod.ServiceRequest {
-      def this(values: js.Any) = this()
+      def this(values: Any) = this()
     }
     
     @JSGlobal("ROSLIB.ServiceResponse")
@@ -186,14 +189,14 @@ object global {
       * @constructor
       * @param values - object matching the fields defined in the .srv definition file
       */
-    class ServiceResponse ()
+    open class ServiceResponse ()
       extends typings.roslib.mod.ServiceResponse {
-      def this(values: js.Any) = this()
+      def this(values: Any) = this()
     }
     
     @JSGlobal("ROSLIB.TFClient")
     @js.native
-    class TFClient protected ()
+    open class TFClient protected ()
       extends typings.roslib.mod.TFClient {
       /**
         * A TF Client that listens to TFs from tf2_web_republisher.
@@ -215,8 +218,8 @@ object global {
     
     @JSGlobal("ROSLIB.Topic")
     @js.native
-    class Topic protected ()
-      extends typings.roslib.mod.Topic {
+    open class Topic[TMessage] protected ()
+      extends typings.roslib.mod.Topic[TMessage] {
       /**
         * Publish and/or subscribe to a topic in ROS.
         *
@@ -248,7 +251,7 @@ object global {
       *   * translation - the Vector3 describing the translation
       *   * rotation - the ROSLIB.Quaternion describing the rotation
       */
-    class Transform ()
+    open class Transform ()
       extends typings.roslib.mod.Transform {
       def this(options: Rotation) = this()
     }
@@ -271,7 +274,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfBox")
     @js.native
-    class UrdfBox protected ()
+    open class UrdfBox protected ()
       extends typings.roslib.mod.UrdfBox {
       /**
         * A Box element in a URDF.
@@ -285,7 +288,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfColor")
     @js.native
-    class UrdfColor protected ()
+    open class UrdfColor protected ()
       extends typings.roslib.mod.UrdfColor {
       /**
         * A Color element in a URDF.
@@ -299,7 +302,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfCylinder")
     @js.native
-    class UrdfCylinder protected ()
+    open class UrdfCylinder protected ()
       extends typings.roslib.mod.UrdfCylinder {
       /**
         * A Cylinder element in a URDF.
@@ -313,7 +316,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfJoint")
     @js.native
-    class UrdfJoint protected ()
+    open class UrdfJoint protected ()
       extends typings.roslib.mod.UrdfJoint {
       /**
         * A Joint element in a URDF.
@@ -327,7 +330,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfLink")
     @js.native
-    class UrdfLink protected ()
+    open class UrdfLink protected ()
       extends typings.roslib.mod.UrdfLink {
       /**
         * A Link element in a URDF.
@@ -341,7 +344,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfMaterial")
     @js.native
-    class UrdfMaterial protected ()
+    open class UrdfMaterial protected ()
       extends typings.roslib.mod.UrdfMaterial {
       /**
         * A Material element in a URDF.
@@ -355,7 +358,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfMesh")
     @js.native
-    class UrdfMesh protected ()
+    open class UrdfMesh protected ()
       extends typings.roslib.mod.UrdfMesh {
       /**
         * A Box element in a URDF.
@@ -369,7 +372,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfModel")
     @js.native
-    class UrdfModel protected ()
+    open class UrdfModel protected ()
       extends typings.roslib.mod.UrdfModel {
       /**
         * A URDF Model can be used to parse a given URDF into the appropriate elements.
@@ -385,7 +388,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfSphere")
     @js.native
-    class UrdfSphere protected ()
+    open class UrdfSphere protected ()
       extends typings.roslib.mod.UrdfSphere {
       /**
         * A Sphere element in a URDF.
@@ -399,7 +402,7 @@ object global {
     
     @JSGlobal("ROSLIB.UrdfVisual")
     @js.native
-    class UrdfVisual protected ()
+    open class UrdfVisual protected ()
       extends typings.roslib.mod.UrdfVisual {
       /**
         * A Visual element in a URDF.
@@ -422,7 +425,7 @@ object global {
       *   * y - the y value
       *   * z - the z value
       */
-    class Vector3 ()
+    open class Vector3 ()
       extends typings.roslib.mod.Vector3 {
       def this(options: X) = this()
     }

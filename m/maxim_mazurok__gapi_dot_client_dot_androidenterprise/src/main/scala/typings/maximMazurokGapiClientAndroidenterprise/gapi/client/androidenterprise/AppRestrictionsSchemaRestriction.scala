@@ -61,9 +61,9 @@ object AppRestrictionsSchemaRestriction {
     
     inline def setEntryValueUndefined: Self = StObject.set(x, "entryValue", js.undefined)
     
-    inline def setEntryValueVarargs(value: String*): Self = StObject.set(x, "entryValue", js.Array(value :_*))
+    inline def setEntryValueVarargs(value: String*): Self = StObject.set(x, "entryValue", js.Array(value*))
     
-    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object AppRestrictionsSchemaRestriction {
     
     inline def setNestedRestrictionUndefined: Self = StObject.set(x, "nestedRestriction", js.undefined)
     
-    inline def setNestedRestrictionVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "nestedRestriction", js.Array(value :_*))
+    inline def setNestedRestrictionVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "nestedRestriction", js.Array(value*))
     
     inline def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
     

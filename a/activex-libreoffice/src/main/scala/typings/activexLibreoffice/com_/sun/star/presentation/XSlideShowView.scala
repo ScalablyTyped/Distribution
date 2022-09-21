@@ -170,7 +170,7 @@ object XSlideShowView {
     getCanvasArea: () => Rectangle,
     getTransformation: () => AffineMatrix2D,
     getTranslationOffset: () => IntegerSize2D,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMouseListener: XMouseListener => Unit,
     removeMouseMotionListener: XMouseMotionListener => Unit,

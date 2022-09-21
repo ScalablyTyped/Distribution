@@ -76,7 +76,7 @@ object ModifyTrafficMirrorSessionRequest {
     
     inline def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
     
-    inline def setRemoveFieldsVarargs(value: TrafficMirrorSessionField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
+    inline def setRemoveFieldsVarargs(value: TrafficMirrorSessionField*): Self = StObject.set(x, "RemoveFields", js.Array(value*))
     
     inline def setSessionNumber(value: Integer): Self = StObject.set(x, "SessionNumber", value.asInstanceOf[js.Any])
     

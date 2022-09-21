@@ -31,6 +31,6 @@ object ListProjectsResult {
     
     inline def setProjects(value: ProjectsList): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    inline def setProjectsVarargs(value: ProjectSummary*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: ProjectSummary*): Self = StObject.set(x, "projects", js.Array(value*))
   }
 }

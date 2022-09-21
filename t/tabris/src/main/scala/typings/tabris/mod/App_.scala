@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.std.ArrayBuffer
 import typings.tabris.anon.Files
 import typings.tabris.tabrisStrings.idleTimeoutEnabled
 import typings.tabris.tabrisStrings.pinnedCertificates
@@ -11,7 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "App")
 @js.native
-/* private */ class App_ () extends NativeObject {
+/**
+  * Provides information about the application and allows to handle global application ui events.
+  */
+/* private */ open class App_ () extends NativeObject {
   
   /**
     * Shuts down the running application and closes the UI.
@@ -136,7 +138,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * algorithm: 'ECDSA256'}]`
     * For further details see https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning.
     */
-  var pinnedCertificates: js.Array[js.Any] = js.native
+  var pinnedCertificates: js.Array[Any] = js.native
   
   /**
     * Allows to register a font to use throughout the app. Once a font is registered its alias can be used
@@ -177,7 +179,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * files. On Android the certificate file has to be a _*.pem_ (Privacy Enhanced Mail) file whereas on
     * iOS  it has to be _*.der_ (Distinguished Encoding Rules) file.
     */
-  var trustedCertificates: js.Array[ArrayBuffer] = js.native
+  var trustedCertificates: js.Array[js.typedarray.ArrayBuffer] = js.native
   
   /**
     * The user facing version number of the app.

@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BindingData extends StObject {
   
   /**
+    * Represents the binding identifier.
     *
-    * Represents binding identifier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns the type of the binding. See `Excel.BindingType` for details.
     *
-    * Returns the type of the binding. See Excel.BindingType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var `type`: js.UndefOr[BindingType | Range | Table | Text] = js.undefined

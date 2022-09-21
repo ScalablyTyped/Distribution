@@ -29,7 +29,7 @@ trait OnErrorEventUIParam extends StObject {
   /**
     * Gets the igUpload widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the specific server message returned by server - if errorType is serverside.
@@ -61,7 +61,7 @@ object OnErrorEventUIParam {
     
     inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

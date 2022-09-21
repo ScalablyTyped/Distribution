@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePublicAccessBlockRequest extends StObject {
   
   /**
-    * The account ID for the AWS account whose PublicAccessBlock configuration you want to remove.
+    * The account ID for the Amazon Web Services account whose PublicAccessBlock configuration you want to remove.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
 }

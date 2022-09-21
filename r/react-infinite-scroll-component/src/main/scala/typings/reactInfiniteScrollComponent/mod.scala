@@ -1,130 +1,138 @@
 package typings.reactInfiniteScrollComponent
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.reactInfiniteScrollComponent.anon.PrevDataLength
+import typings.std.EventListener
+import typings.std.HTMLElement
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-infinite-scroll-component", JSImport.Namespace)
+  @JSImport("react-infinite-scroll-component", JSImport.Default)
   @js.native
-  class ^ ()
-    extends Component[InfiniteScrollProps, js.Any, js.Any]
-  
-  type InfiniteScroll = Component[InfiniteScrollProps, js.Any, js.Any]
-  
-  trait InfiniteScrollProps extends StObject {
+  open class default protected () extends InfiniteScroll {
+    def this(props: Props) = this()
+  }
+  /* static members */
+  object default {
     
-    /**
-      * Children component which will be rendered
-      */
-    var children: js.UndefOr[ReactNode] = js.undefined
+    @JSImport("react-infinite-scroll-component", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    /**
-      * Set any custom class you want
-      */
+    inline def getDerivedStateFromProps(nextProps: Props, prevState: State): PrevDataLength | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PrevDataLength | Null]
+  }
+  
+  type Fn = js.Function0[Any]
+  
+  @js.native
+  trait InfiniteScroll extends Component[Props, State, Any] {
+    
+    /* private */ var _infScroll: Any = js.native
+    
+    /* private */ var _pullDown: Any = js.native
+    
+    /* private */ var _scrollableNode: Any = js.native
+    
+    /* private */ var actionTriggered: Any = js.native
+    
+    @JSName("componentDidMount")
+    def componentDidMount_MInfiniteScroll(): Unit = js.native
+    
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MInfiniteScroll(prevProps: Props): Unit = js.native
+    
+    @JSName("componentWillUnmount")
+    def componentWillUnmount_MInfiniteScroll(): Unit = js.native
+    
+    /* private */ var currentY: Any = js.native
+    
+    /* private */ var dragging: Any = js.native
+    
+    /* private */ var el: Any = js.native
+    
+    def getScrollableTarget(): HTMLElement | Null = js.native
+    
+    def isElementAtBottom(target: HTMLElement): Boolean = js.native
+    def isElementAtBottom(target: HTMLElement, scrollThreshold: String): Boolean = js.native
+    def isElementAtBottom(target: HTMLElement, scrollThreshold: Double): Boolean = js.native
+    
+    def isElementAtTop(target: HTMLElement): Boolean = js.native
+    def isElementAtTop(target: HTMLElement, scrollThreshold: String): Boolean = js.native
+    def isElementAtTop(target: HTMLElement, scrollThreshold: Double): Boolean = js.native
+    
+    /* private */ var lastScrollTop: Any = js.native
+    
+    /* private */ var maxPullDownDistance: Any = js.native
+    
+    var onEnd: EventListener = js.native
+    
+    var onMove: EventListener = js.native
+    
+    def onScrollListener(event: MouseEvent): Unit = js.native
+    
+    var onStart: EventListener = js.native
+    
+    /* private */ var startY: Any = js.native
+    
+    /* private */ var throttledOnScrollListener: Any = js.native
+  }
+  
+  trait Props extends StObject {
+    
+    var children: ReactNode
+    
     var className: js.UndefOr[String] = js.undefined
     
-    /**
-      * Set the length of the data.This will unlock the subsequent calls to next.
-      */
     var dataLength: Double
     
-    /**
-      * This message is shown to the user when they have seen all the records, which means they are at the bottom and hasMore is false
-      */
     var endMessage: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * Children is by default assumed to be of type array and it's length is used to determine if loader needs to be shown or not,
-      * if your children is not an array, specify this prop to tell if your items are 0 or more.
-      */
     var hasChildren: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * It tells the InfiniteScroll component on whether to call next function on reaching the bottom and shows an endMessage to the user
-      */
     var hasMore: Boolean
     
-    /**
-      * Give only if you want to have a fixed height scrolling content
-      */
-    var height: js.UndefOr[Double] = js.undefined
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    /**
-      * Set a scroll y position for the component to render with.
-      */
     var initialScrollY: js.UndefOr[Double] = js.undefined
     
-    /**
-      * You can send a loader component to show while the component waits for the next load of data. e.g. <h3>Loading...</h3> or any fancy loader element
-      */
+    var inverse: js.UndefOr[Boolean] = js.undefined
+    
     var loader: ReactNode
     
-    /**
-      * A function which must be called after reaching the bottom. It must trigger some sort of action which fetches the next data.
-      * The data is passed as children to the InfiniteScroll component and the data should contain previous items too.
-      * e.g. Initial data = [1, 2, 3] and then next load of data should be [1, 2, 3, 4, 5, 6].
-      */
-    def next(): Unit
+    var next: Fn
     
-    /**
-      * A function that will listen to the scroll event on the scrolling container. Note that the scroll event is throttled, so you may not receive as many events as you would expect.
-      */
-    var onScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onScroll: js.UndefOr[js.Function1[/* e */ MouseEvent, Any]] = js.undefined
     
-    /**
-      * To enable Pull Down to Refresh feature
-      */
     var pullDownToRefresh: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Any JSX that you want to show the user, default={<h3>Pull down to refresh</h3>}
-      */
     var pullDownToRefreshContent: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * Minimum distance the user needs to pull down to trigger the refresh, default=100px
-      */
     var pullDownToRefreshThreshold: js.UndefOr[Double] = js.undefined
     
-    /**
-      * This function will be called, it should return the fresh data that you want to show the user
-      */
-    var refreshFunction: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var refreshFunction: js.UndefOr[Fn] = js.undefined
     
-    /**
-      * Any JSX that you want to show the user, default={<h3>Release to refresh</h3>}
-      */
     var releaseToRefreshContent: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * A threshold value defining when InfiniteScroll will call next. Default value is 0.8. It means the next will be called when user comes below 80% of the total height.
-      * If you pass threshold in pixels (scrollThreshold="200px"), next will be called once you scroll at least (100% - scrollThreshold) pixels down.
-      */
     var scrollThreshold: js.UndefOr[Double | String] = js.undefined
     
-    /**
-      * Reference to a (parent) DOM element that is already providing overflow scrollbars to the InfiniteScroll component.
-      * You should provide the id of the DOM node preferably.
-      */
-    var scrollableTarget: js.UndefOr[ReactNode | String] = js.undefined
+    var scrollableTarget: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * Set any style which you want to override.
-      */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
-  object InfiniteScrollProps {
+  object Props {
     
-    inline def apply(dataLength: Double, hasMore: Boolean, next: () => Unit): InfiniteScrollProps = {
+    inline def apply(dataLength: Double, hasMore: Boolean, next: () => Any): Props = {
       val __obj = js.Dynamic.literal(dataLength = dataLength.asInstanceOf[js.Any], hasMore = hasMore.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
-      __obj.asInstanceOf[InfiniteScrollProps]
+      __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: InfiniteScrollProps](x: Self) {
+    extension [Self <: Props](x: Self) {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -146,7 +154,7 @@ object mod {
       
       inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -154,13 +162,17 @@ object mod {
       
       inline def setInitialScrollYUndefined: Self = StObject.set(x, "initialScrollY", js.undefined)
       
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      
       inline def setLoader(value: ReactNode): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      inline def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
+      inline def setOnScroll(value: /* e */ MouseEvent => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
@@ -176,7 +188,7 @@ object mod {
       
       inline def setPullDownToRefreshUndefined: Self = StObject.set(x, "pullDownToRefresh", js.undefined)
       
-      inline def setRefreshFunction(value: () => Unit): Self = StObject.set(x, "refreshFunction", js.Any.fromFunction0(value))
+      inline def setRefreshFunction(value: () => Any): Self = StObject.set(x, "refreshFunction", js.Any.fromFunction0(value))
       
       inline def setRefreshFunctionUndefined: Self = StObject.set(x, "refreshFunction", js.undefined)
       
@@ -188,13 +200,40 @@ object mod {
       
       inline def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
       
-      inline def setScrollableTarget(value: ReactNode | String): Self = StObject.set(x, "scrollableTarget", value.asInstanceOf[js.Any])
+      inline def setScrollableTarget(value: ReactNode): Self = StObject.set(x, "scrollableTarget", value.asInstanceOf[js.Any])
       
       inline def setScrollableTargetUndefined: Self = StObject.set(x, "scrollableTarget", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
+  
+  trait State extends StObject {
+    
+    var prevDataLength: js.UndefOr[Double] = js.undefined
+    
+    var pullToRefreshThresholdBreached: Boolean
+    
+    var showLoader: Boolean
+  }
+  object State {
+    
+    inline def apply(pullToRefreshThresholdBreached: Boolean, showLoader: Boolean): State = {
+      val __obj = js.Dynamic.literal(pullToRefreshThresholdBreached = pullToRefreshThresholdBreached.asInstanceOf[js.Any], showLoader = showLoader.asInstanceOf[js.Any])
+      __obj.asInstanceOf[State]
+    }
+    
+    extension [Self <: State](x: Self) {
+      
+      inline def setPrevDataLength(value: Double): Self = StObject.set(x, "prevDataLength", value.asInstanceOf[js.Any])
+      
+      inline def setPrevDataLengthUndefined: Self = StObject.set(x, "prevDataLength", js.undefined)
+      
+      inline def setPullToRefreshThresholdBreached(value: Boolean): Self = StObject.set(x, "pullToRefreshThresholdBreached", value.asInstanceOf[js.Any])
+      
+      inline def setShowLoader(value: Boolean): Self = StObject.set(x, "showLoader", value.asInstanceOf[js.Any])
     }
   }
 }

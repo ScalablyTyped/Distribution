@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.BoundingBox")
 @js.native
-class BoundingBox protected ()
+open class BoundingBox protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.BoundingBox {
   def this(x: Double, y: Double, w: Double, h: Double) = this()

@@ -18,16 +18,16 @@ object anon {
     
     var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[Any], StringDictionary[Any]]] = js.undefined
     
     var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]
       ] = js.undefined
     
     var mixins: js.UndefOr[js.Array[Partial[ComponentDefinitions]]] = js.undefined
@@ -51,7 +51,7 @@ object anon {
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      inline def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      inline def setCompute(value: /* data */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       inline def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
       
@@ -59,7 +59,7 @@ object anon {
       
       inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -67,7 +67,7 @@ object anon {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
@@ -75,7 +75,7 @@ object anon {
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      inline def setMixinsVarargs(value: Partial[ComponentDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: Partial[ComponentDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value*))
       
       inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
       
@@ -98,16 +98,16 @@ object anon {
     
     var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[Any], StringDictionary[Any]]] = js.undefined
     
     var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]
       ] = js.undefined
     
     var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
@@ -116,7 +116,7 @@ object anon {
     
     var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
     
@@ -153,7 +153,7 @@ object anon {
       
       inline def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
       
-      inline def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      inline def setCompute(value: /* data */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       inline def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
       
@@ -161,7 +161,7 @@ object anon {
       
       inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -169,7 +169,7 @@ object anon {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
@@ -177,7 +177,7 @@ object anon {
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      inline def setMixinsVarargs(value: Partial[PageDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: Partial[PageDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value*))
       
       inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
       
@@ -187,7 +187,7 @@ object anon {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnLoad(value: js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+      inline def setOnLoad(value: js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[Any], Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
@@ -236,16 +236,16 @@ object anon {
     
     var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[Any], StringDictionary[Any]]] = js.undefined
     
     var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]
       ] = js.undefined
     
     var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
@@ -254,7 +254,7 @@ object anon {
     
     var onHide: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onPageScroll: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
     
@@ -291,7 +291,7 @@ object anon {
       
       inline def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
       
-      inline def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      inline def setCompute(value: /* data */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       inline def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
       
@@ -299,7 +299,7 @@ object anon {
       
       inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -307,7 +307,7 @@ object anon {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
@@ -315,7 +315,7 @@ object anon {
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      inline def setMixinsVarargs(value: Partial[PageDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: Partial[PageDefinitions]*): Self = StObject.set(x, "mixins", js.Array(value*))
       
       inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
       
@@ -325,7 +325,7 @@ object anon {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnLoad(value: js.ThisFunction1[PartialPageDefinitionsAttached, /* options */ js.UndefOr[js.Any], Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+      inline def setOnLoad(value: js.ThisFunction1[PartialPageDefinitionsAttached, /* options */ js.UndefOr[Any], Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       

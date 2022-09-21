@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Raw")
 @js.native
-class Raw protected ()
+open class Raw protected ()
   extends typings.actionsOnGoogle.argumentMod.Raw {
   /** @hidden */
   def this(list: js.Array[GoogleActionsV2Argument]) = this()

@@ -20,7 +20,7 @@ trait ASPxClientTrackBar
     * Returns a track bar item index by the item's value. An Int32 value that is an index of the item with the specified value. null (Nothing in Visual Basic) if the item was not found.
     * @param value An object that specifies the item's value.
     */
-  def GetItemIndexByValue(value: js.Any): Double
+  def GetItemIndexByValue(value: Any): Double
   
   /**
     * Returns a track bar item text. A String value specifying the track bar item text.
@@ -38,7 +38,7 @@ trait ASPxClientTrackBar
     * Returns a track bar item's associated value. An Object that specifies the item's value.
     * @param index An integer value that specifies the required item's index.
     */
-  def GetItemValue(index: Double): js.Any
+  def GetItemValue(index: Double): Any
   
   /**
     * Gets a drag handle position.
@@ -61,7 +61,7 @@ trait ASPxClientTrackBar
   var PositionChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]
   
   /**
-    * Fires on the client side before a track bar position is changed and allows you to cancel the action.
+    * Occurs on the client before a user changes track bar position.
     */
   var PositionChanging: ASPxClientEvent[ASPxClientTrackBarPositionChangingEventHandler[ASPxClientTrackBar]]
   
@@ -108,20 +108,20 @@ object ASPxClientTrackBar {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
     GetItemCount: () => Double,
-    GetItemIndexByValue: js.Any => Double,
+    GetItemIndexByValue: Any => Double,
     GetItemText: Double => String,
     GetItemToolTip: Double => String,
-    GetItemValue: Double => js.Any,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetItemValue: Double => Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetPosition: () => Double,
     GetPositionEnd: () => Double,
     GetPositionStart: () => Double,
     GetReadOnly: () => Boolean,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -141,7 +141,7 @@ object ASPxClientTrackBar {
     SetPositionEnd: Double => Unit,
     SetPositionStart: Double => Unit,
     SetReadOnly: Boolean => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     Track: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]],
@@ -160,13 +160,13 @@ object ASPxClientTrackBar {
     
     inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
-    inline def setGetItemIndexByValue(value: js.Any => Double): Self = StObject.set(x, "GetItemIndexByValue", js.Any.fromFunction1(value))
+    inline def setGetItemIndexByValue(value: Any => Double): Self = StObject.set(x, "GetItemIndexByValue", js.Any.fromFunction1(value))
     
     inline def setGetItemText(value: Double => String): Self = StObject.set(x, "GetItemText", js.Any.fromFunction1(value))
     
     inline def setGetItemToolTip(value: Double => String): Self = StObject.set(x, "GetItemToolTip", js.Any.fromFunction1(value))
     
-    inline def setGetItemValue(value: Double => js.Any): Self = StObject.set(x, "GetItemValue", js.Any.fromFunction1(value))
+    inline def setGetItemValue(value: Double => Any): Self = StObject.set(x, "GetItemValue", js.Any.fromFunction1(value))
     
     inline def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
     

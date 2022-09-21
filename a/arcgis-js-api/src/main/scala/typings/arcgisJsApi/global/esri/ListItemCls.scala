@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)
   */
-class ListItemCls ()
+open class ListItemCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ListItem {
   def this(properties: ListItemProperties) = this()

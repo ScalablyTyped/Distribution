@@ -1,25 +1,26 @@
 package typings.jsplumb.mod
 
+import typings.jsplumb.anon.AnchorCount
+import typings.jsplumb.anon.Faces
+import typings.jsplumb.jsplumbStrings.AutoDefault
+import typings.jsplumb.jsplumbStrings.Blank
+import typings.jsplumb.jsplumbStrings.Dot
+import typings.jsplumb.jsplumbStrings.Perimeter
+import typings.jsplumb.jsplumbStrings.Rectangle
+import typings.std.Element
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnchorArraySpec = js.Tuple7[
-scala.Double, 
-scala.Double, 
-scala.Double, 
-scala.Double, 
-js.UndefOr[scala.Double], 
-js.UndefOr[scala.Double], 
-js.UndefOr[java.lang.String]]
+type AnchorArraySpec = js.Tuple7[Double, Double, Double, Double, js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[String]]
 
-type AnchorContinuousSpec = typings.jsplumb.mod.AnchorContinuousId | (js.Tuple2[typings.jsplumb.mod.AnchorContinuousId, typings.jsplumb.anon.Faces])
+type AnchorContinuousSpec = AnchorContinuousId | (js.Tuple2[AnchorContinuousId, Faces])
 
-type AnchorDynamicId = typings.jsplumb.jsplumbStrings.AutoDefault
+type AnchorDynamicId = AutoDefault
 
-type AnchorDynamicSpec = js.Array[
-typings.jsplumb.mod.AnchorStaticSpec | typings.jsplumb.mod.AnchorDynamicId | typings.jsplumb.mod.AnchorPerimeterSpec | typings.jsplumb.mod.AnchorContinuousSpec]
+type AnchorDynamicSpec = js.Array[AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec]
 
 /* Rewritten from type alias, can be one of: 
   - typings.jsplumb.mod.AnchorStaticId
@@ -27,17 +28,17 @@ typings.jsplumb.mod.AnchorStaticSpec | typings.jsplumb.mod.AnchorDynamicId | typ
   - typings.jsplumb.mod.AnchorPerimeterId
   - typings.jsplumb.mod.AnchorContinuousId
 */
-type AnchorId = typings.jsplumb.mod._AnchorId | typings.jsplumb.mod.AnchorDynamicId | typings.jsplumb.mod.AnchorPerimeterId
+type AnchorId = _AnchorId | AnchorDynamicId | AnchorPerimeterId
 
-type AnchorPerimeterId = typings.jsplumb.jsplumbStrings.Perimeter
+type AnchorPerimeterId = Perimeter
 
-type AnchorPerimeterSpec = typings.jsplumb.mod.AnchorPerimeterId | (js.Tuple2[typings.jsplumb.mod.AnchorPerimeterId, typings.jsplumb.anon.AnchorCount])
+type AnchorPerimeterSpec = AnchorPerimeterId | (js.Tuple2[AnchorPerimeterId, AnchorCount])
 
-type AnchorSpec = typings.jsplumb.mod.AnchorStaticSpec | typings.jsplumb.mod.AnchorDynamicSpec | typings.jsplumb.mod.AnchorPerimeterSpec | typings.jsplumb.mod.AnchorContinuousSpec
+type AnchorSpec = AnchorStaticSpec | AnchorDynamicSpec | AnchorPerimeterSpec | AnchorContinuousSpec
 
-type AnchorStaticSpec = typings.jsplumb.mod.AnchorStaticId | typings.jsplumb.mod.AnchorArraySpec
+type AnchorStaticSpec = AnchorStaticId | AnchorArraySpec
 
-type ConnectionId = java.lang.String
+type ConnectionId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.jsplumb.jsplumbStrings.Bezier
@@ -46,35 +47,37 @@ type ConnectionId = java.lang.String
   - typings.jsplumb.jsplumbStrings.Straight
   - typings.jsplumb.mod.UserDefinedConnectorId
 */
-type ConnectorId = typings.jsplumb.mod._ConnectorId | typings.jsplumb.mod.UserDefinedConnectorId
+type ConnectorId = _ConnectorId | UserDefinedConnectorId
 
-type ConnectorSpec = typings.jsplumb.mod.ConnectorId | (js.Tuple2[typings.jsplumb.mod.ConnectorId, typings.jsplumb.mod.ConnectorOptions])
+type ConnectorSpec = ConnectorId | (js.Tuple2[ConnectorId, ConnectorOptions])
 
-type ElementGroupRef = typings.jsplumb.mod.ElementId | typings.std.Element | (js.Array[typings.std.Element | typings.jsplumb.mod.ElementId])
+type ElementGroupRef = ElementId | Element | (js.Array[Element | ElementId])
 
-type ElementId = java.lang.String
+type ElementId = String
 
-type ElementRef = typings.jsplumb.mod.ElementId | typings.std.Element
+type ElementRef = ElementId | Element
 
-type EndpointBlank = typings.jsplumb.jsplumbStrings.Blank
+type EndpointBlank = Blank
 
 type EndpointBlankOptions = js.Object
 
-type EndpointDot = typings.jsplumb.jsplumbStrings.Dot
+type EndpointDot = Dot
 
-type EndpointId = typings.jsplumb.mod.EndpointRectangle | typings.jsplumb.mod.EndpointDot | typings.jsplumb.mod.EndpointBlank
+type EndpointId = EndpointRectangle | EndpointDot | EndpointBlank
 
-type EndpointRectangle = typings.jsplumb.jsplumbStrings.Rectangle
+type EndpointRectangle = Rectangle
 
 /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
-type EndpointSpec = typings.jsplumb.mod.EndpointId | (js.Tuple2[
-typings.jsplumb.mod.EndpointBlank | typings.jsplumb.mod.EndpointDot | typings.jsplumb.mod.EndpointRectangle, 
-typings.jsplumb.mod.EndpointBlankOptions | typings.jsplumb.mod.EndpointDotOptions | typings.jsplumb.mod.EndpointRectangleOptions])
+type EndpointSpec = EndpointId | (js.Tuple2[
+EndpointBlank | EndpointDot | EndpointRectangle, 
+EndpointBlankOptions | EndpointDotOptions | EndpointRectangleOptions])
 
-type OverlaySpec = typings.jsplumb.mod.OverlayId | (js.Tuple2[typings.jsplumb.mod.OverlayId, typings.jsplumb.mod.OverlayOptions])
+type OrphanedPositions = Record[String, Position]
 
-type Selector = java.lang.String
+type OverlaySpec = OverlayId | (js.Tuple2[OverlayId, OverlayOptions])
 
-type UUID = java.lang.String
+type Selector = String
 
-type UserDefinedConnectorId = java.lang.String
+type UUID = String
+
+type UserDefinedConnectorId = String

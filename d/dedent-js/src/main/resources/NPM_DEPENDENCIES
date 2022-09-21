@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dedent-js" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dedent-js" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

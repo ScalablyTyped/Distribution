@@ -23,7 +23,7 @@ trait Editor_
   
   def encodedValue(): String = js.native
   
-  def exec(name: String, params: js.Any): Unit = js.native
+  def exec(name: String, params: Any): Unit = js.native
   
   def focus(): Unit = js.native
   
@@ -34,11 +34,11 @@ trait Editor_
   @JSName("options")
   var options_Editor_ : EditorOptions = js.native
   
-  def paste(html: String, options: js.Any): Unit = js.native
+  def paste(html: String, options: Any): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[js.Any] = js.native
+  def saveAsPDF(): JQueryPromise[Any] = js.native
   
   def selectRange(range: Range): Unit = js.native
   

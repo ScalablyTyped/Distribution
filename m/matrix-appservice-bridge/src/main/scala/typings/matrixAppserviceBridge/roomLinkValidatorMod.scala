@@ -10,7 +10,7 @@ object roomLinkValidatorMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/room-link-validator", "RoomLinkValidator")
   @js.native
-  class RoomLinkValidator protected () extends StObject {
+  open class RoomLinkValidator protected () extends StObject {
     /**
       * @param config Config for the validator.
       * @param config.ruleFile Filename for the rule file.
@@ -20,20 +20,19 @@ object roomLinkValidatorMod {
       */
     def this(config: typings.matrixAppserviceBridge.anon.Rules, asBot: AppServiceBot) = this()
     
-    /* private */ var asBot: js.Any = js.native
+    /* private */ var asBot: Any = js.native
     
-    /* private */ var checkConflictCache: js.Any = js.native
+    /* private */ var checkConflictCache: Any = js.native
     
-    /* private */ var conflictCache: js.Any = js.native
+    /* private */ var conflictCache: Any = js.native
     
-    /* private */ var evaluateRules: js.Any = js.native
+    /* private */ var evaluateRules: Any = js.native
     
-    def readRuleFile(): Rules = js.native
-    def readRuleFile(filename: String): Rules = js.native
+    /* private */ var internalRules: Any = js.native
     
-    /* private */ var ruleFile: js.Any = js.native
+    def rules: Rules = js.native
     
-    val rules: Rules = js.native
+    def updateRules(rules: Rules): Unit = js.native
     
     def validateRoom(roomId: String): js.Promise[RoomLinkValidatorStatus] = js.native
     def validateRoom(roomId: String, cache: Boolean): js.Promise[RoomLinkValidatorStatus] = js.native

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClusterOperationMetadata extends StObject {
   
+  /** Output only. Child operation ids */
+  var childOperationIds: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** Output only. Name of the cluster for the operation. */
   var clusterName: js.UndefOr[String] = js.undefined
   
@@ -20,7 +23,7 @@ trait ClusterOperationMetadata extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The operation type. */
@@ -44,6 +47,12 @@ object ClusterOperationMetadata {
   
   extension [Self <: ClusterOperationMetadata](x: Self) {
     
+    inline def setChildOperationIds(value: js.Array[String]): Self = StObject.set(x, "childOperationIds", value.asInstanceOf[js.Any])
+    
+    inline def setChildOperationIdsUndefined: Self = StObject.set(x, "childOperationIds", js.undefined)
+    
+    inline def setChildOperationIdsVarargs(value: String*): Self = StObject.set(x, "childOperationIds", js.Array(value*))
+    
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
@@ -59,7 +68,7 @@ object ClusterOperationMetadata {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -74,7 +83,7 @@ object ClusterOperationMetadata {
     
     inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    inline def setStatusHistoryVarargs(value: ClusterOperationStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: ClusterOperationStatus*): Self = StObject.set(x, "statusHistory", js.Array(value*))
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
@@ -82,6 +91,6 @@ object ClusterOperationMetadata {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

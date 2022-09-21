@@ -15,6 +15,11 @@ trait TrainingResult extends StObject {
     * The training metric details.
     */
   var trainingMetrics: js.UndefOr[TrainingMetrics] = js.undefined
+  
+  /**
+    * The variable importance metrics.
+    */
+  var variableImportanceMetrics: js.UndefOr[VariableImportanceMetrics] = js.undefined
 }
 object TrainingResult {
   
@@ -32,5 +37,9 @@ object TrainingResult {
     inline def setTrainingMetrics(value: TrainingMetrics): Self = StObject.set(x, "trainingMetrics", value.asInstanceOf[js.Any])
     
     inline def setTrainingMetricsUndefined: Self = StObject.set(x, "trainingMetrics", js.undefined)
+    
+    inline def setVariableImportanceMetrics(value: VariableImportanceMetrics): Self = StObject.set(x, "variableImportanceMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setVariableImportanceMetricsUndefined: Self = StObject.set(x, "variableImportanceMetrics", js.undefined)
   }
 }

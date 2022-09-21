@@ -25,7 +25,7 @@ trait Transmission extends StObject {
   var id: String
   
   /** Transmission level metadata containing key/value pairs */
-  var metadata: js.Any
+  var metadata: Any
   
   /** Computed total number of failed messages */
   var num_failed_generation: Double
@@ -47,7 +47,7 @@ trait Transmission extends StObject {
   var state: submitted | Generating | Success | Canceled
   
   /** Key/value pairs that are provided to the substitution engine */
-  var substitution_data: js.Any
+  var substitution_data: Any
 }
 object Transmission {
   
@@ -56,7 +56,7 @@ object Transmission {
     content: InlineContent | Templateid | Emailrfc822,
     description: String,
     id: String,
-    metadata: js.Any,
+    metadata: Any,
     num_failed_generation: Double,
     num_generated: Double,
     num_invalid_recipients: Double,
@@ -64,7 +64,7 @@ object Transmission {
     rcpt_list_chunk_size: Double,
     rcpt_list_total_chunks: Double,
     state: submitted | Generating | Success | Canceled,
-    substitution_data: js.Any
+    substitution_data: Any
   ): Transmission = {
     val __obj = js.Dynamic.literal(campaign_id = campaign_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], num_failed_generation = num_failed_generation.asInstanceOf[js.Any], num_generated = num_generated.asInstanceOf[js.Any], num_invalid_recipients = num_invalid_recipients.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], rcpt_list_chunk_size = rcpt_list_chunk_size.asInstanceOf[js.Any], rcpt_list_total_chunks = rcpt_list_total_chunks.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], substitution_data = substitution_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transmission]
@@ -80,7 +80,7 @@ object Transmission {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setNum_failed_generation(value: Double): Self = StObject.set(x, "num_failed_generation", value.asInstanceOf[js.Any])
     
@@ -96,6 +96,6 @@ object Transmission {
     
     inline def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
   }
 }

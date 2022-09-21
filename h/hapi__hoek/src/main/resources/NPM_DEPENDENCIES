@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/hoek" : "9.1.0"
+      "@hapi/hoek" : "10.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/hoek" : "9.1.0"
+      "@hapi/hoek" : "10.0.1"
     }
   ],
   "compile-devDependencies" : [

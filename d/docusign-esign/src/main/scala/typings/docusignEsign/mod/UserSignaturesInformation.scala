@@ -24,6 +24,6 @@ object UserSignaturesInformation {
     
     inline def setUserSignaturesUndefined: Self = StObject.set(x, "userSignatures", js.undefined)
     
-    inline def setUserSignaturesVarargs(value: UserSignature*): Self = StObject.set(x, "userSignatures", js.Array(value :_*))
+    inline def setUserSignaturesVarargs(value: UserSignature*): Self = StObject.set(x, "userSignatures", js.Array(value*))
   }
 }

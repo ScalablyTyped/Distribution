@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValidatorOptions extends StObject {
   
-  var custom: js.UndefOr[js.Any] = js.undefined
+  var custom: js.UndefOr[Any] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
   var disable: js.UndefOr[Boolean] = js.undefined
   
-  var feedback: js.UndefOr[js.Any] = js.undefined
+  var feedback: js.UndefOr[Any] = js.undefined
   
   var focus: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ object ValidatorOptions {
   
   extension [Self <: ValidatorOptions](x: Self) {
     
-    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -39,7 +39,7 @@ object ValidatorOptions {
     
     inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    inline def setFeedback(value: js.Any): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: Any): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     

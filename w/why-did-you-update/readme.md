@@ -10,10 +10,10 @@ Patch React to discover unnecessary re-renders
 | ------------------ | :-------------: |
 | Full name          | why-did-you-update |
 | Keywords           | react-component |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 2643121 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 130833.0 |
+| # stars            | 4088.0 |
 
 ## Links
 - [Homepage](https://github.com/maicki/why-did-you-update#readme)

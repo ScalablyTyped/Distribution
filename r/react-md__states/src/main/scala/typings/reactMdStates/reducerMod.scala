@@ -44,7 +44,7 @@ object reducerMod {
   
   trait CancelAction
     extends StObject
-       with RippleStateAction[js.Any] {
+       with RippleStateAction[Any] {
     
     var ease: Boolean
     
@@ -96,7 +96,7 @@ object reducerMod {
   
   trait EnteredAction
     extends StObject
-       with RippleStateAction[js.Any] {
+       with RippleStateAction[Any] {
     
     var ripple: RippleState
     
@@ -144,7 +144,7 @@ object reducerMod {
   
   trait RemoveAction
     extends StObject
-       with RippleStateAction[js.Any] {
+       with RippleStateAction[Any] {
     
     var ripple: RippleState
     

@@ -33,6 +33,6 @@ object DescribeRemediationExecutionStatusResponse {
     
     inline def setRemediationExecutionStatusesUndefined: Self = StObject.set(x, "RemediationExecutionStatuses", js.undefined)
     
-    inline def setRemediationExecutionStatusesVarargs(value: RemediationExecutionStatus*): Self = StObject.set(x, "RemediationExecutionStatuses", js.Array(value :_*))
+    inline def setRemediationExecutionStatusesVarargs(value: RemediationExecutionStatus*): Self = StObject.set(x, "RemediationExecutionStatuses", js.Array(value*))
   }
 }

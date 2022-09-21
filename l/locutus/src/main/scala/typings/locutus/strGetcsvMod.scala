@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strGetcsvMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: Any): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Any, enclosure: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Any, enclosure: Any, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Any, enclosure: Unit, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Unit, enclosure: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Unit, enclosure: Any, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, delimiter: Unit, enclosure: Unit, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Any, enclosure: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Any, enclosure: Any, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Any, enclosure: Unit, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Unit, enclosure: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Unit, enclosure: Any, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, delimiter: Unit, enclosure: Unit, escape: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/str_getcsv", JSImport.Namespace)
   @js.native

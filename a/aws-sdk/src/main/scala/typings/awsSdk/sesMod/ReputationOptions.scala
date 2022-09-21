@@ -9,7 +9,7 @@ trait ReputationOptions extends StObject {
   /**
     * The date and time at which the reputation metrics for the configuration set were last reset. Resetting these metrics is known as a fresh start. When you disable email sending for a configuration set using UpdateConfigurationSetSendingEnabled and later re-enable it, the reputation metrics for the configuration set (but not for the entire Amazon SES account) are reset. If email sending for the configuration set has never been disabled and later re-enabled, the value of this attribute is null.
     */
-  var LastFreshStart: js.UndefOr[typings.awsSdk.sesMod.LastFreshStart] = js.undefined
+  var LastFreshStart: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes whether or not Amazon SES publishes reputation metrics for the configuration set, such as bounce and complaint rates, to Amazon CloudWatch. If the value is true, reputation metrics are published. If the value is false, reputation metrics are not published. The default value is false.
@@ -30,7 +30,7 @@ object ReputationOptions {
   
   extension [Self <: ReputationOptions](x: Self) {
     
-    inline def setLastFreshStart(value: LastFreshStart): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
+    inline def setLastFreshStart(value: js.Date): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
     
     inline def setLastFreshStartUndefined: Self = StObject.set(x, "LastFreshStart", js.undefined)
     

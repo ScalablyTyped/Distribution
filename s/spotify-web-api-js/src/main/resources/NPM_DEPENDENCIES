@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "spotify-web-api-js" : "1.5.1"
+      "spotify-web-api-js" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "spotify-web-api-js" : "1.5.1"
+      "spotify-web-api-js" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

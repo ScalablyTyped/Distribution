@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.WinRTEvent
@@ -13,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LicenseInformation extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_licensechanged(`type`: licensechanged, listener: LicenseChangedEventHandler): Unit = js.native
   
   /** Gets the license expiration date and time relative to the system clock. */
-  var expirationDate: Date = js.native
+  var expirationDate: js.Date = js.native
   
   /** Gets a value that indicates whether the license is active. */
   var isActive: Boolean = js.native
@@ -35,7 +34,7 @@ trait LicenseInformation extends StObject {
   /** Gets the associative list of licenses for in-app products that a user is currently entitled to. */
   var productLicenses: IMapView[String, ProductLicense] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_licensechanged(`type`: licensechanged, listener: LicenseChangedEventHandler): Unit = js.native
 }

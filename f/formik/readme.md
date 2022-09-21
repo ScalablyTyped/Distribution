@@ -1,7 +1,7 @@
 
 # Scala.js typings for formik
 
-Typings are for version 2.2.5
+Typings are for version 2.2.9
 
 ## Library description:
 Build forms in React, without the tears
@@ -10,10 +10,10 @@ Build forms in React, without the tears
 | ------------------ | :-------------: |
 | Full name          | formik |
 | Keywords           | formik, form, forms, react, react-dom, hooks, react hooks, validation, render props, validation, higher order component, hoc |
-| # releases         | 85 |
-| # dependents       | 707 |
-| # downloads        | 48969016 |
-| # stars            | 21 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 8169718.0 |
+| # stars            | 30738.0 |
 
 ## Links
 - [Homepage](https://formik.org)

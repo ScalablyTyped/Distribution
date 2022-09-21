@@ -1,9 +1,5 @@
 package typings.googleapis.reportsV1Mod.adminReportsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,49 +9,42 @@ trait ParamsResourceEntityusagereportsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Represents the customer for which the data is to be fetched.
+    * The unique ID of the customer to retrieve data for.
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents the date in yyyy-mm-dd format for which the data is to be
-    * fetched.
+    * Represents the date the usage occurred. The timestamp is in the ISO 8601 format, yyyy-mm-dd. We recommend you use your account's time zone for this.
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents the key of object for which the data should be filtered.
+    * Represents the key of the object to filter the data with. It is a string which can take the value `all` to get activity events for all users, or any other value for an app-specific entity. For details on how to obtain the `entityKey` for a particular `entityType`, see the Entities Usage parameters reference guides.
     */
   var entityKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Type of object. Should be one of - gplus_communities.
+    * Represents the type of entity for the report.
     */
   var entityType: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents the set of filters including parameter operator value.
+    * The `filters` query string is a comma-separated list of an application's event parameters where the parameter's value is manipulated by a relational operator. The `filters` query string includes the name of the application whose usage is returned in the report. The application values for the Entities usage report include `accounts`, `docs`, and `gmail`. Filters are in the form `[application name]:parameter name[parameter value],...`. In this example, the `<\>` 'not equal to' operator is URL-encoded in the request's query string (%3C%3E): GET https://www.googleapis.com/admin/reports/v1/usage/gplus_communities/all/dates/2017-12-01 ?parameters=gplus:community_name,gplus:num_total_members &filters=gplus:num_total_members%3C%3E0 The relational operators include: - `==` - 'equal to'. - `<\>` - 'not equal to'. It is URL-encoded (%3C%3E). - `<` - 'less than'. It is URL-encoded (%3C). - `<=` - 'less than or equal to'. It is URL-encoded (%3C=). - `\>` - 'greater than'. It is URL-encoded (%3E). - `\>=` - 'greater than or equal to'. It is URL-encoded (%3E=). Filters can only be applied to numeric parameters.
     */
   var filters: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of results to return. Maximum allowed is 1000
+    * Determines how many activity records are shown on each response page. For example, if the request sets `maxResults=1` and the report has two activities, the report has two pages. The response's `nextPageToken` property has the token to the second page.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Token to specify next page.
+    * Token to specify next page. A report with multiple pages has a `nextPageToken` property in the response. In your follow-on request getting the next page of the report, enter the `nextPageToken` value in the `pageToken` query string.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents the application name, parameter name pairs to fetch in csv as
-    * app_name1:param_name1, app_name2:param_name2.
+    * The `parameters` query string is a comma-separated list of event parameters that refine a report's results. The parameter is associated with a specific application. The application values for the Entities usage report are only `gplus`. A `parameter` query string is in the CSV form of `[app_name1:param_name1], [app_name2:param_name2]...`. *Note:* The API doesn't accept multiple values of a parameter. If a particular parameter is supplied more than once in the API request, the API only accepts the last value of that request parameter. In addition, if an invalid request parameter is supplied in the API request, the API ignores that request parameter and returns the response corresponding to the remaining valid request parameters. An example of an invalid request parameter is one that does not belong to the application. If no parameters are requested, all parameters are returned.
     */
   var parameters: js.UndefOr[String] = js.undefined
 }
@@ -67,10 +56,6 @@ object ParamsResourceEntityusagereportsGet {
   }
   
   extension [Self <: ParamsResourceEntityusagereportsGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

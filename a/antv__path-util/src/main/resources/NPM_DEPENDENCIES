@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/path-util" : "2.0.8"
+      "@antv/path-util" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/path-util" : "2.0.8"
+      "@antv/path-util" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

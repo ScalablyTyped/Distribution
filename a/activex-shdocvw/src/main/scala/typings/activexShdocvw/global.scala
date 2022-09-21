@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("SHDocVw.CScriptErrorList")
     @js.native
-    /* private */ class CScriptErrorList ()
+    /* private */ open class CScriptErrorList ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.CScriptErrorList {
       
@@ -64,27 +64,27 @@ object global {
     /** Internet Explorer Application. */
     @JSGlobal("SHDocVw.InternetExplorer")
     @js.native
-    /* private */ class InternetExplorer ()
+    /* private */ open class InternetExplorer ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.InternetExplorer
     
     /** Internet Explorer Application with default integrity of Medium */
     @JSGlobal("SHDocVw.InternetExplorerMedium")
     @js.native
-    /* private */ class InternetExplorerMedium ()
+    /* private */ open class InternetExplorerMedium ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.InternetExplorerMedium
     
     /** Shell Browser Window. */
     @JSGlobal("SHDocVw.ShellBrowserWindow")
     @js.native
-    /* private */ class ShellBrowserWindow ()
+    /* private */ open class ShellBrowserWindow ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellBrowserWindow
     
     @JSGlobal("SHDocVw.ShellNameSpace")
     @js.native
-    /* private */ class ShellNameSpace ()
+    /* private */ open class ShellNameSpace ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellNameSpace {
       
@@ -112,7 +112,7 @@ object global {
       
       /** expands item specified depth */
       /* CompleteClass */
-      override def Expand(var_0: js.Any, iDepth: Double): Unit = js.native
+      override def Expand(var_0: Any, iDepth: Double): Unit = js.native
       
       /** method Export */
       /* CompleteClass */
@@ -154,7 +154,7 @@ object global {
       
       /** get the root item */
       /* CompleteClass */
-      var Root: js.Any = js.native
+      var Root: Any = js.native
       
       /* private */ /* CompleteClass */
       @JSName("SHDocVw.ShellNameSpace_typekey")
@@ -162,11 +162,11 @@ object global {
       
       /** get the selected item */
       /* CompleteClass */
-      var SelectedItem: js.Any = js.native
+      var SelectedItem: Any = js.native
       
       /** collection of selected items */
       /* CompleteClass */
-      override def SelectedItems(): js.Any = js.native
+      override def SelectedItems(): Any = js.native
       
       /** old, use put_Root() instead */
       /* CompleteClass */
@@ -194,28 +194,28 @@ object global {
     
     @JSGlobal("SHDocVw.ShellUIHelper")
     @js.native
-    /* private */ class ShellUIHelper ()
+    /* private */ open class ShellUIHelper ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellUIHelper
     
     /** ShellDispatch Load in Shell Context */
     @JSGlobal("SHDocVw.ShellWindows")
     @js.native
-    /* private */ class ShellWindows ()
+    /* private */ open class ShellWindows ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellWindows
     
     /** WebBrowser Control */
     @JSGlobal("SHDocVw.WebBrowser")
     @js.native
-    /* private */ class WebBrowser ()
+    /* private */ open class WebBrowser ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.WebBrowser
     
     /** WebBrowser Control */
     @JSGlobal("SHDocVw.WebBrowser_V1")
     @js.native
-    /* private */ class WebBrowserV1 ()
+    /* private */ open class WebBrowserV1 ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.WebBrowserV1
   }

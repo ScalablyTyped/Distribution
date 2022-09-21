@@ -10,10 +10,10 @@ object stayPrimaryLandscapeMod {
   
   @JSImport("material-ui/svg-icons/communication/stay-primary-landscape", JSImport.Default)
   @js.native
-  class default () extends CommunicationStayPrimaryLandscape
+  open class default () extends CommunicationStayPrimaryLandscape
   
   @JSImport("material-ui/svg-icons/communication/stay-primary-landscape", "CommunicationStayPrimaryLandscape")
   @js.native
-  class CommunicationStayPrimaryLandscape ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationStayPrimaryLandscape ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

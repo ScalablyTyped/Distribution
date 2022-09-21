@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.anon.Children
+import typings.antd.anon.ChildrenRef
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
@@ -54,18 +54,21 @@ import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.formInterfaceMod.FormLabelAlign
 import typings.antd.gridColMod.ColProps
-import typings.antd.interfaceMod.FormLabelAlign
 import typings.antd.useFormMod.FormInstance
 import typings.rcFieldForm.formMod.RenderProps
 import typings.rcFieldForm.interfaceMod.FieldData
+import typings.rcFieldForm.interfaceMod.NamePath
 import typings.rcFieldForm.interfaceMod.Store
 import typings.rcFieldForm.interfaceMod.ValidateErrorEntity
 import typings.rcFieldForm.interfaceMod.ValidateMessages
 import typings.rcFieldForm.listMod.ListProps
+import typings.rcFieldForm.useWatchMod.GetGeneric
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -103,6 +106,7 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
+import typings.scrollIntoViewIfNeeded.mod.Options
 import typings.std.Event
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
@@ -115,7 +119,7 @@ object formFormMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Values](props: Children[Values] & FormProps[Values]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[Values](props: ChildrenRef[Values] & FormProps[Values]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("antd/lib/form/Form", "List")
   @js.native
@@ -123,6 +127,28 @@ object formFormMod {
   
   inline def useForm[Values](): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")().asInstanceOf[js.Array[FormInstance[Values]]]
   inline def useForm[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(form.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormInstance[Values]]]
+  
+  inline def useWatch[TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: js.Array[Any]): GetGeneric[TForm] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[GetGeneric[TForm]]
+  inline def useWatch[TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: js.Array[Any], form: TForm): GetGeneric[TForm] = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[GetGeneric[TForm]]
+  inline def useWatch[TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: NamePath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def useWatch[TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: NamePath, form: TForm): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def useWatch[ValueType](dependencies: NamePath, form: typings.rcFieldForm.interfaceMod.FormInstance[Any]): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[ValueType]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */](dependencies: js.Tuple2[TDependencies1, TDependencies2]): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */](dependencies: js.Tuple2[TDependencies1, TDependencies2], form: TForm): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */, TDependencies3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any */](dependencies: js.Tuple3[TDependencies1, TDependencies2, TDependencies3]): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */, TDependencies3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any */](dependencies: js.Tuple3[TDependencies1, TDependencies2, TDependencies3], form: TForm): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */, TDependencies3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any */, TDependencies4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any */](dependencies: js.Tuple4[TDependencies1, TDependencies2, TDependencies3, TDependencies4]): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3][TDependencies4] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3][TDependencies4] */ js.Any]
+  inline def useWatch[TDependencies1 /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */, TDependencies2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1] */ js.Any */, TDependencies3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2] */ js.Any */, TDependencies4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3] */ js.Any */](
+    dependencies: js.Tuple4[TDependencies1, TDependencies2, TDependencies3, TDependencies4],
+    form: TForm
+  ): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3][TDependencies4] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies1][TDependencies2][TDependencies3][TDependencies4] */ js.Any]
+  
+  inline def useWatch_TDependencies_StringTForm_FormInstanceAny_Any[TDependencies /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: TDependencies): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any]
+  inline def useWatch_TDependencies_StringTForm_FormInstanceAny_Any[TDependencies /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: TDependencies, form: TForm): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any]
+  inline def useWatch_TDependencies_StringTForm_FormInstanceAny_Any[TDependencies /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: js.Array[TDependencies]): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any]
+  inline def useWatch_TDependencies_StringTForm_FormInstanceAny_Any[TDependencies /* <: /* keyof rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm> */ String */, TForm /* <: typings.rcFieldForm.interfaceMod.FormInstance[Any] */](dependencies: js.Array[TDependencies], form: TForm): /* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: rc-field-form.rc-field-form/es/useWatch.GetGeneric<TForm>[TDependencies] */ js.Any]
+  
+  inline def useWatch_ValueType_ValueType[ValueType](dependencies: NamePath): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("useWatch")(dependencies.asInstanceOf[js.Any]).asInstanceOf[ValueType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.horizontal
@@ -152,11 +178,11 @@ object formFormMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -174,21 +200,21 @@ object formFormMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -202,11 +228,11 @@ object formFormMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -218,13 +244,13 @@ object formFormMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -234,7 +260,7 @@ object formFormMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -264,7 +290,7 @@ object formFormMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[`false` | String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])] = js.undefined
+    var component: js.UndefOr[`false` | String | FC[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -279,6 +305,8 @@ object formFormMod {
     var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -297,7 +325,7 @@ object formFormMod {
     
     var initialValues: js.UndefOr[Store] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text_ | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -316,6 +344,8 @@ object formFormMod {
     var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
     
     var labelCol: js.UndefOr[ColProps] = js.undefined
+    
+    var labelWrap: js.UndefOr[Boolean] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
@@ -485,7 +515,7 @@ object formFormMod {
     
     var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLFormElement]] = js.undefined
     
-    var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ js.Any, /* values */ Values, Unit]] = js.undefined
+    var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ Any, /* values */ Values, Unit]] = js.undefined
     
     var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
     
@@ -505,15 +535,17 @@ object formFormMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var requiredMark: js.UndefOr[RequiredMark] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
-    var scrollToFirstError: js.UndefOr[Boolean] = js.undefined
+    var scrollToFirstError: js.UndefOr[Options[Any] | Boolean] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -578,7 +610,7 @@ object formFormMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -586,7 +618,7 @@ object formFormMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -622,7 +654,7 @@ object formFormMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -634,7 +666,7 @@ object formFormMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -642,7 +674,7 @@ object formFormMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -650,7 +682,7 @@ object formFormMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -678,15 +710,15 @@ object formFormMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -710,7 +742,7 @@ object formFormMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -720,7 +752,7 @@ object formFormMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -740,7 +772,7 @@ object formFormMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -787,7 +819,7 @@ object formFormMod {
       inline def setChildren(value: RenderProps | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenFunction2(
-        value: (/* values */ Store, /* form */ typings.rcFieldForm.interfaceMod.FormInstance[js.Any]) => Element | ReactNode
+        value: (/* values */ Store, /* form */ typings.rcFieldForm.interfaceMod.FormInstance[Any]) => Element | ReactNode
       ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -804,7 +836,7 @@ object formFormMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponent(value: `false` | String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: `false` | String | FC[Any] | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -832,11 +864,15 @@ object formFormMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -850,7 +886,7 @@ object formFormMod {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setForm(value: FormInstance[Values]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -872,7 +908,7 @@ object formFormMod {
       
       inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -911,6 +947,10 @@ object formFormMod {
       inline def setLabelCol(value: ColProps): Self = StObject.set(x, "labelCol", value.asInstanceOf[js.Any])
       
       inline def setLabelColUndefined: Self = StObject.set(x, "labelCol", js.undefined)
+      
+      inline def setLabelWrap(value: Boolean): Self = StObject.set(x, "labelWrap", value.asInstanceOf[js.Any])
+      
+      inline def setLabelWrapUndefined: Self = StObject.set(x, "labelWrap", js.undefined)
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -956,7 +996,7 @@ object formFormMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLFormElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1068,7 +1108,7 @@ object formFormMod {
       
       inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLFormElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1244,7 +1284,7 @@ object formFormMod {
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
+      inline def setOnValuesChange(value: (/* changedValues */ Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
       
       inline def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
       
@@ -1284,6 +1324,10 @@ object formFormMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequiredMark(value: RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
       
       inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
@@ -1296,11 +1340,11 @@ object formFormMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setScrollToFirstError(value: Boolean): Self = StObject.set(x, "scrollToFirstError", value.asInstanceOf[js.Any])
+      inline def setScrollToFirstError(value: Options[Any] | Boolean): Self = StObject.set(x, "scrollToFirstError", value.asInstanceOf[js.Any])
       
       inline def setScrollToFirstErrorUndefined: Self = StObject.set(x, "scrollToFirstError", js.undefined)
       
@@ -1364,7 +1408,7 @@ object formFormMod {
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
-      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       

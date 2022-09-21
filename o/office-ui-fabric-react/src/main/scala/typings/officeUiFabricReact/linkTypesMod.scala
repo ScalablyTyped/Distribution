@@ -42,13 +42,13 @@ object linkTypesMod {
   trait ILinkHTMLAttributes[T]
     extends StObject
        with HTMLAttributes[T]
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.undefined
+    var download: js.UndefOr[Any] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -95,7 +95,7 @@ object linkTypesMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -155,7 +155,7 @@ object linkTypesMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -190,6 +190,12 @@ object linkTypesMod {
       * Theme (provided through customization.)
       */
     var theme: js.UndefOr[ITheme] = js.undefined
+    
+    /**
+      * Whether the link is styled with an underline or not.
+      * Should be used when the link is placed alongside other text content.
+      */
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object ILinkProps {
     
@@ -223,6 +229,10 @@ object linkTypesMod {
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   
@@ -233,6 +243,8 @@ object linkTypesMod {
     var isButton: js.UndefOr[Boolean] = js.undefined
     
     var isDisabled: js.UndefOr[Boolean] = js.undefined
+    
+    var isUnderlined: js.UndefOr[Boolean] = js.undefined
     
     var theme: ITheme
   }
@@ -256,6 +268,10 @@ object linkTypesMod {
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
       inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      
+      inline def setIsUnderlined(value: Boolean): Self = StObject.set(x, "isUnderlined", value.asInstanceOf[js.Any])
+      
+      inline def setIsUnderlinedUndefined: Self = StObject.set(x, "isUnderlined", js.undefined)
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

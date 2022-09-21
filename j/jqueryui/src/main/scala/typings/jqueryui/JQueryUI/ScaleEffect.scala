@@ -31,7 +31,7 @@ object ScaleEffect {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value*))
     
     inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

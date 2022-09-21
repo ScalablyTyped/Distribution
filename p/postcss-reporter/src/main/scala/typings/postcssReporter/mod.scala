@@ -1,8 +1,8 @@
 package typings.postcssReporter
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
-import typings.postcss.mod.ResultMessage
+import typings.postcss.mod.PluginCreator
+import typings.postcss.resultMod.Message
 import typings.postcssReporter.anon.Messages
 import typings.postcssReporter.postcssReporterStrings.any
 import typings.postcssReporter.postcssReporterStrings.first
@@ -35,6 +35,13 @@ object mod extends Shortcut {
     var noPlugin: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * By default, messages without line/column positions will be grouped at the beginning of the output.
+      * To put them at the end, instead, use "last". To not bother sorting these, use "any".
+      * @default 'first'
+      */
+    var positionless: js.UndefOr[first | last | any] = js.undefined
+    
+    /**
       * If false, messages will not be sorted by line/column position.
       * @default true
       */
@@ -56,6 +63,10 @@ object mod extends Shortcut {
       inline def setNoPlugin(value: Boolean): Self = StObject.set(x, "noPlugin", value.asInstanceOf[js.Any])
       
       inline def setNoPluginUndefined: Self = StObject.set(x, "noPlugin", js.undefined)
+      
+      inline def setPositionless(value: first | last | any): Self = StObject.set(x, "positionless", value.asInstanceOf[js.Any])
+      
+      inline def setPositionlessUndefined: Self = StObject.set(x, "positionless", js.undefined)
       
       inline def setSortByPosition(value: Boolean): Self = StObject.set(x, "sortByPosition", value.asInstanceOf[js.Any])
       
@@ -87,7 +98,7 @@ object mod extends Shortcut {
       * Provide a filter function. It receives the message object and returns a truthy or falsy value,
       * indicating whether that particular message should be reported or not.
       */
-    var filter: js.UndefOr[js.Function1[/* message */ ResultMessage, Boolean]] = js.undefined
+    var filter: js.UndefOr[js.Function1[/* message */ Message, Boolean]] = js.undefined
     
     /**
       * By default, this reporter will format the messages for human legibility in the console.
@@ -103,13 +114,6 @@ object mod extends Shortcut {
       * @default []
       */
     var plugins: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * By default, messages without line/column positions will be grouped at the beginning of the output.
-      * To put them at the end, instead, use "last". To not bother sorting these, use "any".
-      * @default 'first'
-      */
-    var positionless: js.UndefOr[first | last | any] = js.undefined
     
     /**
       * If true, after the plugin logs your messages it will throw an error if it found any warnings.
@@ -134,7 +138,7 @@ object mod extends Shortcut {
       
       inline def setClearReportedMessagesUndefined: Self = StObject.set(x, "clearReportedMessages", js.undefined)
       
-      inline def setFilter(value: /* message */ ResultMessage => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* message */ Message => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -146,11 +150,7 @@ object mod extends Shortcut {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
-      
-      inline def setPositionless(value: first | last | any): Self = StObject.set(x, "positionless", value.asInstanceOf[js.Any])
-      
-      inline def setPositionlessUndefined: Self = StObject.set(x, "positionless", js.undefined)
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setThrowError(value: Boolean): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
       
@@ -158,7 +158,7 @@ object mod extends Shortcut {
     }
   }
   
-  type PostCSSReporter = Plugin_[Options]
+  type PostCSSReporter = PluginCreator[Options]
   
   type _To = PostCSSReporter
   

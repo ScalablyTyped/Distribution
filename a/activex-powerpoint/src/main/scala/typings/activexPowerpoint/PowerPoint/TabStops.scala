@@ -16,7 +16,7 @@ trait TabStops extends StObject {
   
   def Item(Index: Double): TabStop
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TabStops_typekey")
   var PowerPointDotTabStops_typekey: TabStops
@@ -29,7 +29,7 @@ object TabStops {
     Count: Double,
     DefaultSpacing: Double,
     Item: Double => TabStop,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTabStops_typekey: TabStops
   ): TabStops = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], DefaultSpacing = DefaultSpacing.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object TabStops {
     
     inline def setItem(value: Double => TabStop): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTabStops_typekey(value: TabStops): Self = StObject.set(x, "PowerPoint.TabStops_typekey", value.asInstanceOf[js.Any])
   }

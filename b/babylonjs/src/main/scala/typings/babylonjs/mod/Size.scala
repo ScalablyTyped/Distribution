@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends typings.babylonjs.legacyMod.Size {
   /**
     * Creates a Size object from the given width and height (floats).

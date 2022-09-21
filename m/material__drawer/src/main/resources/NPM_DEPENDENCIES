@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/drawer" : "8.0.0"
+      "@material/drawer" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/drawer" : "8.0.0"
+      "@material/drawer" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def digest(obj: js.Any, hashAlgorithm: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(obj.asInstanceOf[js.Any], hashAlgorithm.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def digest(obj: Any, hashAlgorithm: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(obj.asInstanceOf[js.Any], hashAlgorithm.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

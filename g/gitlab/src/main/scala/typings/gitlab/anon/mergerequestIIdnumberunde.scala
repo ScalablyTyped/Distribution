@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  mergerequestIId :number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.BaseRequestOptions */
 trait mergerequestIIdnumberunde
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var mergerequestIId: js.UndefOr[Double] = js.undefined
   

@@ -4,26 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait TraceFormat extends StObject
 @JSImport("vscode-jsonrpc", "TraceFormat")
 @js.native
 object TraceFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[TraceFormat & String] = js.native
+  def apply(value: String): js.UndefOr[typings.vscodeJsonrpc.connectionMod.TraceFormat & String] = js.native
   
-  @js.native
-  sealed trait JSON
-    extends StObject
-       with TraceFormat
-  /* "json" */ val JSON: typings.vscodeJsonrpc.mod.TraceFormat.JSON & String = js.native
+  /* "json" */ val JSON: typings.vscodeJsonrpc.connectionMod.TraceFormat.JSON & String = js.native
   
-  @js.native
-  sealed trait Text
-    extends StObject
-       with TraceFormat
-  /* "text" */ val Text: typings.vscodeJsonrpc.mod.TraceFormat.Text & String = js.native
+  /* "text" */ val Text: typings.vscodeJsonrpc.connectionMod.TraceFormat.Text & String = js.native
   
-  def fromString(value: String): TraceFormat = js.native
+  def fromString(value: String): typings.vscodeJsonrpc.connectionMod.TraceFormat = js.native
 }

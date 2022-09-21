@@ -5,7 +5,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.Url
-import typings.std.Error
 import typings.websocket.websocketStrings.connect
 import typings.websocket.websocketStrings.connectFailed
 import typings.websocket.websocketStrings.httpResponse
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("websocket", "client")
 @js.native
-class client () extends EventEmitter {
+open class client () extends EventEmitter {
   def this(ClientConfig: IClientConfig) = this()
   
   /**
@@ -27,7 +26,7 @@ class client () extends EventEmitter {
   @JSName("addListener")
   def addListener_connect(event: connect, cb: js.Function1[/* connection */ connection, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_connectFailed(event: connectFailed, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def addListener_connectFailed(event: connectFailed, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_httpResponse(
     event: httpResponse,
@@ -263,7 +262,7 @@ class client () extends EventEmitter {
   @JSName("on")
   def on_connect(event: connect, cb: js.Function1[/* connection */ connection, Unit]): this.type = js.native
   @JSName("on")
-  def on_connectFailed(event: connectFailed, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def on_connectFailed(event: connectFailed, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_httpResponse(
     event: httpResponse,

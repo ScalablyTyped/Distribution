@@ -1,7 +1,7 @@
 
 # Scala.js typings for honeybadger
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 A node.js notifier for honeybadger.io
@@ -11,9 +11,9 @@ A node.js notifier for honeybadger.io
 | Full name          | honeybadger |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 408091 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17179.666666666668 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/honeybadger-io/honeybadger-node)

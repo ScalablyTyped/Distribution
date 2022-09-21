@@ -2,7 +2,6 @@ package typings.reactInputCalendar
 
 import typings.react.mod.Component
 import typings.react.mod.SyntheticEvent
-import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reactInputCalendar {
   
-  type ReactInputCalendar = Component[ReactInputCalendarProps, ReactInputCalendarState, js.Any]
+  type ReactInputCalendar = Component[ReactInputCalendarProps, ReactInputCalendarState, Any]
   
   trait ReactInputCalendarProps extends StObject {
     
@@ -30,7 +29,7 @@ object reactInputCalendar {
       * Set initial date value
       * @default current date
       */
-    var date: js.UndefOr[String | Date] = js.undefined
+    var date: js.UndefOr[String | js.Date] = js.undefined
     
     /**
       * If true, the input field gets disabled and the icon next to it disappears.
@@ -58,13 +57,13 @@ object reactInputCalendar {
       * Set the selectable maximum date
       * @default null
       */
-    var maxDate: js.UndefOr[String | Date] = js.undefined
+    var maxDate: js.UndefOr[String | js.Date] = js.undefined
     
     /**
       * Set the selectable minimum date
       * @default null
       */
-    var minDate: js.UndefOr[String | Date] = js.undefined
+    var minDate: js.UndefOr[String | js.Date] = js.undefined
     
     /**
       * Set minimal view. Values:
@@ -123,7 +122,7 @@ object reactInputCalendar {
       
       inline def setComputableFormatUndefined: Self = StObject.set(x, "computableFormat", js.undefined)
       
-      inline def setDate(value: String | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String | js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -143,11 +142,11 @@ object reactInputCalendar {
       
       inline def setInputFieldIdUndefined: Self = StObject.set(x, "inputFieldId", js.undefined)
       
-      inline def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: String | js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: String | js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       

@@ -1,6 +1,9 @@
 package typings.stylus.mod.Stylus
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.stylus.mod.RenderCallback
+import typings.stylus.mod.RenderOptions
+import typings.stylus.rendererMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +14,8 @@ trait Static extends StObject {
   /**
     * Return a new `Renderer` for the given `str` and `options`.
     */
-  def apply(str: String): Renderer = js.native
-  def apply(str: String, options: RenderOptions): Renderer = js.native
+  def apply(str: String): ^ = js.native
+  def apply(str: String, options: RenderOptions): ^ = js.native
   
   var Compiler: Instantiable0[typings.stylus.mod.Stylus.Compiler] = js.native
   
@@ -36,7 +39,7 @@ trait Static extends StObject {
     * Expose middleware.
     */
   def middleware(dir: String): Middleware = js.native
-  def middleware(options: js.Any): Middleware = js.native
+  def middleware(options: Any): Middleware = js.native
   
   /**
     * Expose nodes.
@@ -45,14 +48,17 @@ trait Static extends StObject {
   
   /**
     * Render the given `str` with `options` and callback `fn(err, css)`.
+    * Returns the rendered string if no callback is given.
     */
+  def render(str: String): String = js.native
   def render(str: String, callback: RenderCallback): Unit = js.native
+  def render(str: String, options: RenderOptions): String = js.native
   def render(str: String, options: RenderOptions, callback: RenderCallback): Unit = js.native
   
   /**
     * Return a url() function with the given `options`.
     */
-  def resolver(options: js.Any): LiteralFunction = js.native
+  def resolver(options: Any): LiteralFunction = js.native
   
   /**
     * Return a url() function with the given `options`.

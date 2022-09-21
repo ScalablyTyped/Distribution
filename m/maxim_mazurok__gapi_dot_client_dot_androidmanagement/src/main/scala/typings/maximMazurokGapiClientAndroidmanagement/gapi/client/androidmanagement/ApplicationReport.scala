@@ -63,7 +63,7 @@ object ApplicationReport {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: ApplicationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ApplicationEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setInstallerPackageName(value: String): Self = StObject.set(x, "installerPackageName", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object ApplicationReport {
     
     inline def setKeyedAppStatesUndefined: Self = StObject.set(x, "keyedAppStates", js.undefined)
     
-    inline def setKeyedAppStatesVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppStates", js.Array(value :_*))
+    inline def setKeyedAppStatesVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppStates", js.Array(value*))
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object ApplicationReport {
     
     inline def setSigningKeyCertFingerprintsUndefined: Self = StObject.set(x, "signingKeyCertFingerprints", js.undefined)
     
-    inline def setSigningKeyCertFingerprintsVarargs(value: String*): Self = StObject.set(x, "signingKeyCertFingerprints", js.Array(value :_*))
+    inline def setSigningKeyCertFingerprintsVarargs(value: String*): Self = StObject.set(x, "signingKeyCertFingerprints", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

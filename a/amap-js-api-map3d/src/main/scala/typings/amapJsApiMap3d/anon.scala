@@ -2,6 +2,7 @@ package typings.amapJsApiMap3d
 
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.Pixel
+import typings.amapJsApiMap3d.AMap.Object3D.MeshLine.Options
 import typings.amapJsApiMap3d.amapJsApiMap3dStrings.mesh
 import typings.amapJsApiMap3d.amapJsApiMap3dStrings.meter
 import typings.amapJsApiMap3d.amapJsApiMap3dStrings.px
@@ -10,41 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Color extends StObject {
-    
-    var color: js.UndefOr[String | js.Array[Double]] = js.undefined
-    
-    var height: js.UndefOr[Double | js.Array[Double]] = js.undefined
-    
-    var width: js.UndefOr[Double] = js.undefined
-  }
-  object Color {
-    
-    inline def apply(): Color = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Color]
-    }
-    
-    extension [Self <: Color](x: Self) {
-      
-      inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
-      
-      inline def setHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setHeightVarargs(value: Double*): Self = StObject.set(x, "height", js.Array(value :_*))
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
   
   /* Inlined amap-js-api-map3d.AMap.Geometry3D & { readonly vertexIndices :std.Array<number>,  readonly directions :std.Array<number>,  readonly textureIndices :std.Array<number>} */
   trait Geometry3DreadonlyvertexI extends StObject {
@@ -79,27 +45,27 @@ object anon {
       
       inline def setDirections(value: js.Array[Double]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
       
-      inline def setDirectionsVarargs(value: Double*): Self = StObject.set(x, "directions", js.Array(value :_*))
+      inline def setDirectionsVarargs(value: Double*): Self = StObject.set(x, "directions", js.Array(value*))
       
       inline def setTextureIndices(value: js.Array[Double]): Self = StObject.set(x, "textureIndices", value.asInstanceOf[js.Any])
       
-      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value :_*))
+      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value*))
       
       inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
       
-      inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value :_*))
+      inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value*))
       
       inline def setVertexIndices(value: js.Array[Double]): Self = StObject.set(x, "vertexIndices", value.asInstanceOf[js.Any])
       
-      inline def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value :_*))
+      inline def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value*))
       
       inline def setVertexUVs(value: js.Array[Double]): Self = StObject.set(x, "vertexUVs", value.asInstanceOf[js.Any])
       
-      inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value :_*))
+      inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value*))
       
       inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   
@@ -176,77 +142,127 @@ object anon {
       
       inline def setFaces(value: js.Array[Double]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      inline def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value*))
       
       inline def setTextureIndices(value: js.Array[Double]): Self = StObject.set(x, "textureIndices", value.asInstanceOf[js.Any])
       
-      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value :_*))
+      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value*))
       
       inline def setType(value: mesh): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
       
-      inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value :_*))
+      inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value*))
       
       inline def setVertexNormals(value: js.Array[Double]): Self = StObject.set(x, "vertexNormals", value.asInstanceOf[js.Any])
       
-      inline def setVertexNormalsVarargs(value: Double*): Self = StObject.set(x, "vertexNormals", js.Array(value :_*))
+      inline def setVertexNormalsVarargs(value: Double*): Self = StObject.set(x, "vertexNormals", js.Array(value*))
       
       inline def setVertexUVs(value: js.Array[Double]): Self = StObject.set(x, "vertexUVs", value.asInstanceOf[js.Any])
       
-      inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value :_*))
+      inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value*))
       
       inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   
-  trait Path extends StObject {
+  /* Inlined {  unit :'meter' | undefined,   path :std.Array<[number, number]> | std.Array<amap-js-api.AMap.LngLat>} & {  width :number | undefined,   height :number | std.Array<number> | undefined,   color :string | std.Array<number> | undefined} */
+  trait unitmeterundefinedpathArr
+    extends StObject
+       with Options {
+    
+    var color: js.UndefOr[String | js.Array[Double]] = js.undefined
+    
+    var height: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var path: js.Array[LngLat | (js.Tuple2[Double, Double])]
     
     var unit: js.UndefOr[meter] = js.undefined
-  }
-  object Path {
     
-    inline def apply(path: js.Array[LngLat | (js.Tuple2[Double, Double])]): Path = {
+    var width: js.UndefOr[Double] = js.undefined
+  }
+  object unitmeterundefinedpathArr {
+    
+    inline def apply(path: js.Array[LngLat | (js.Tuple2[Double, Double])]): unitmeterundefinedpathArr = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Path]
+      __obj.asInstanceOf[unitmeterundefinedpathArr]
     }
     
-    extension [Self <: Path](x: Self) {
+    extension [Self <: unitmeterundefinedpathArr](x: Self) {
+      
+      inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+      
+      inline def setHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setHeightVarargs(value: Double*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setPath(value: js.Array[LngLat | (js.Tuple2[Double, Double])]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (LngLat | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (LngLat | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setUnit(value: meter): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
       inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
-  trait Unit extends StObject {
+  /* Inlined {  unit :'px',   path :std.Array<[number, number]> | std.Array<amap-js-api.AMap.Pixel>} & {  width :number | undefined,   height :number | std.Array<number> | undefined,   color :string | std.Array<number> | undefined} */
+  trait unitpxpathArraynumbernumb
+    extends StObject
+       with Options {
+    
+    var color: js.UndefOr[String | js.Array[Double]] = js.undefined
+    
+    var height: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var path: js.Array[Pixel | (js.Tuple2[Double, Double])]
     
     var unit: px
-  }
-  object Unit {
     
-    inline def apply(path: js.Array[Pixel | (js.Tuple2[Double, Double])]): Unit = {
+    var width: js.UndefOr[Double] = js.undefined
+  }
+  object unitpxpathArraynumbernumb {
+    
+    inline def apply(path: js.Array[Pixel | (js.Tuple2[Double, Double])]): unitpxpathArraynumbernumb = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], unit = "px")
-      __obj.asInstanceOf[Unit]
+      __obj.asInstanceOf[unitpxpathArraynumbernumb]
     }
     
-    extension [Self <: Unit](x: Self) {
+    extension [Self <: unitpxpathArraynumbernumb](x: Self) {
+      
+      inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+      
+      inline def setHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setHeightVarargs(value: Double*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setPath(value: js.Array[Pixel | (js.Tuple2[Double, Double])]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (Pixel | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (Pixel | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setUnit(value: px): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

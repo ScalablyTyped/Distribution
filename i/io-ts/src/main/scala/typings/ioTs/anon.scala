@@ -87,7 +87,7 @@ object anon {
     
     def Lazy(id: String, errors: FreeSemigroup[DecodeError[E]]): R
     
-    def Leaf(input: js.Any, error: E): R
+    def Leaf(input: Any, error: E): R
     
     def Member(index: Double, errors: FreeSemigroup[DecodeError[E]]): R
     
@@ -99,7 +99,7 @@ object anon {
       Index: (Double, Kind, FreeSemigroup[DecodeError[E]]) => R,
       Key: (String, Kind, FreeSemigroup[DecodeError[E]]) => R,
       Lazy: (String, FreeSemigroup[DecodeError[E]]) => R,
-      Leaf: (js.Any, E) => R,
+      Leaf: (Any, E) => R,
       Member: (Double, FreeSemigroup[DecodeError[E]]) => R,
       Wrap: (E, FreeSemigroup[DecodeError[E]]) => R
     ): Index[E, R] = {
@@ -115,7 +115,7 @@ object anon {
       
       inline def setLazy(value: (String, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Lazy", js.Any.fromFunction2(value))
       
-      inline def setLeaf(value: (js.Any, E) => R): Self = StObject.set(x, "Leaf", js.Any.fromFunction2(value))
+      inline def setLeaf(value: (Any, E) => R): Self = StObject.set(x, "Leaf", js.Any.fromFunction2(value))
       
       inline def setMember(value: (Double, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Member", js.Any.fromFunction2(value))
       
@@ -142,18 +142,18 @@ object anon {
   
   trait Props extends StObject {
     
-    var props: js.Any
+    var props: Any
   }
   object Props {
     
-    inline def apply(props: js.Any): Props = {
+    inline def apply(props: Any): Props = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
     extension [Self <: Props](x: Self) {
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

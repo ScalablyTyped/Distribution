@@ -1,87 +1,99 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.hapiCatbox.mod.ClientOptions
+import typings.hapiCatbox.mod.EnginePrototype
+import typings.hapiCatbox.mod.PolicyOptionVariants
+import typings.hapiHapi.anon.Cache
+import typings.hapiHapi.anon.Constructor
+import typings.hapiHapi.hapiHapiBooleans.`false`
+import typings.hapiHapi.hapiHapiBooleans.`true`
+import typings.hapiHapi.mod.Lifecycle.Method
+import typings.hapiHapi.mod.Util.Dictionary
+import typings.hapiHapi.mod.^
+import typings.joi.mod.Schema
+import typings.joi.mod.SchemaMap
+import typings.joi.mod.ValidationOptions
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def server(): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[typings.hapiHapi.mod.Server_]
-inline def server(opts: typings.hapiHapi.mod.ServerOptions): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.hapiHapi.mod.Server_]
+inline def server(): Server_ = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[Server_]
+inline def server(opts: ServerOptions): Server_ = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(opts.asInstanceOf[js.Any]).asInstanceOf[Server_]
 
-type CachePolicyOptions[T] = typings.hapiCatbox.mod.PolicyOptionVariants[T] & typings.hapiHapi.anon.Cache
+type AuthArtifacts = StringDictionary[Any]
 
-type CacheProvider[T /* <: typings.hapiCatbox.mod.ClientOptions */] = typings.hapiCatbox.mod.EnginePrototype[js.Any] | typings.hapiHapi.anon.Constructor[T]
+type CachePolicyOptions[T] = PolicyOptionVariants[T] & Cache
 
-type DecorateName = java.lang.String | js.Symbol
+type CacheProvider[T /* <: ClientOptions */] = EnginePrototype[Any] | Constructor[T]
 
-type Dependencies = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type DecorateName = String | js.Symbol
 
-type LogEventHandler = js.Function2[
-/* event */ typings.hapiHapi.mod.LogEvent, 
-/* tags */ org.scalablytyped.runtime.StringDictionary[typings.hapiHapi.hapiHapiBooleans.`true`], 
-scala.Unit]
+type Dependencies = String | js.Array[String] | StringDictionary[String]
+
+type LogEventHandler = js.Function2[/* event */ LogEvent, /* tags */ StringDictionary[`true`], Unit]
 
 type PayloadCompressionDecoderSettings = js.Object
 
-type PeekListener = js.Function2[/* chunk */ java.lang.String, /* encoding */ java.lang.String, scala.Unit]
+type PeekListener = js.Function2[/* chunk */ String, /* encoding */ String, Unit]
 
-type Plugin[T] = typings.hapiHapi.mod.PluginBase[T] & (typings.hapiHapi.mod.PluginNameVersion | typings.hapiHapi.mod.PluginPackage)
+type Plugin[T] = (PluginNameVersion & PluginBase[T]) | (PluginPackage & PluginBase[T])
 
 type RequestEventHandler = js.Function3[
-/* request */ typings.hapiHapi.mod.Request, 
-/* event */ typings.hapiHapi.mod.RequestEvent, 
-/* tags */ org.scalablytyped.runtime.StringDictionary[typings.hapiHapi.hapiHapiBooleans.`true`], 
-scala.Unit]
+/* request */ Request, 
+/* event */ RequestEvent, 
+/* tags */ StringDictionary[`true`], 
+Unit]
 
-type RequestQuery = org.scalablytyped.runtime.StringDictionary[js.Any]
+type RequestQuery = StringDictionary[Any]
 
-type ResponseEventHandler = js.Function1[/* request */ typings.hapiHapi.mod.Request, scala.Unit]
+type ResponseEventHandler = js.Function1[/* request */ Request, Unit]
 
-type ResponseValue = java.lang.String | js.Object
+type ResponseValue = String | js.Object
 
 type RouteCompressionEncoderSettings = js.Object
 
-type RouteEventHandler = js.Function1[/* route */ typings.hapiHapi.mod.RequestRoute, scala.Unit]
+type RouteEventHandler = js.Function1[/* route */ RequestRoute, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.hapiHapi.mod.RouteOptionsAccessScopeObject
   - typings.hapiHapi.mod.RouteOptionsAccessEntityObject
   - typings.hapiHapi.mod.RouteOptionsAccessScopeObject & typings.hapiHapi.mod.RouteOptionsAccessEntityObject
 */
-type RouteOptionsAccessObject = typings.hapiHapi.mod._RouteOptionsAccessObject | (typings.hapiHapi.mod.RouteOptionsAccessScopeObject & typings.hapiHapi.mod.RouteOptionsAccessEntityObject)
+type RouteOptionsAccessObject = _RouteOptionsAccessObject | (RouteOptionsAccessScopeObject & RouteOptionsAccessEntityObject)
 
-type RouteOptionsAccessScope = typings.hapiHapi.hapiHapiBooleans.`false` | java.lang.String | js.Array[java.lang.String]
+type RouteOptionsAccessScope = `false` | String | js.Array[String]
 
-type RouteOptionsCache = typings.hapiHapi.anon.Otherwise & (typings.hapiHapi.anon.ExpiresAt | typings.hapiHapi.anon.ExpiresIn | typings.hapiHapi.anon.ExpiresAtExpiresIn)
+type RouteOptionsPreAllOptions = RouteOptionsPreObject | js.Array[RouteOptionsPreObject] | Method
 
-type RouteOptionsPreAllOptions = typings.hapiHapi.mod.RouteOptionsPreObject | js.Array[typings.hapiHapi.mod.RouteOptionsPreObject] | typings.hapiHapi.mod.Lifecycle.Method
+type RouteOptionsPreArray = js.Array[RouteOptionsPreAllOptions]
 
-type RouteOptionsPreArray = js.Array[typings.hapiHapi.mod.RouteOptionsPreAllOptions]
+type RouteOptionsResponseSchema = Boolean | ValidationObject | Schema[Any] | (js.Function2[
+/* value */ js.Object | Buffer | String, 
+/* options */ ValidationOptions, 
+js.Promise[Any]])
 
-type RouteOptionsResponseSchema = scala.Boolean | typings.hapiHapi.mod.ValidationObject | typings.joi.mod.Schema | (js.Function2[
-/* value */ js.Object | typings.node.Buffer | java.lang.String, 
-/* options */ typings.joi.mod.ValidationOptions, 
-js.Promise[js.Any]])
+type RouteOptionsSecure = Boolean | RouteOptionsSecureObject
 
-type RouteOptionsSecure = scala.Boolean | typings.hapiHapi.mod.RouteOptionsSecureObject
-
-type ServerAuthConfig = typings.hapiHapi.mod.RouteOptionsAccess
+type ServerAuthConfig = RouteOptionsAccess
 
 type ServerAuthScheme = js.Function2[
-/* server */ typings.hapiHapi.mod.Server_, 
-/* options */ js.UndefOr[typings.hapiHapi.mod.ServerAuthSchemeOptions], 
-typings.hapiHapi.mod.ServerAuthSchemeObject]
+/* server */ Server_, 
+/* options */ js.UndefOr[ServerAuthSchemeOptions], 
+ServerAuthSchemeObject]
 
 type ServerAuthSchemeOptions = js.Object
 
-type ServerEventsApplication = java.lang.String | typings.hapiHapi.mod.ServerEventsApplicationObject | typings.hapiPodium.mod.Podium
+type ServerEventsApplication = String | ServerEventsApplicationObject | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium */ Any)
 
-type ServerExtPointFunction = js.Function1[/* server */ typings.hapiHapi.mod.Server_, scala.Unit]
+type ServerExtPointFunction = js.Function1[/* server */ Server_, Unit]
 
-type ServerMethods = typings.hapiHapi.mod.Util.Dictionary[typings.hapiHapi.mod.ServerMethod]
+type ServerMethods = Dictionary[ServerMethod]
 
-type StartEventHandler = js.Function0[scala.Unit]
+type StartEventHandler = js.Function0[Unit]
 
-type StopEventHandler = js.Function0[scala.Unit]
+type StopEventHandler = js.Function0[Unit]
 
-type ValidationObject = typings.joi.mod.SchemaMap[js.Any]
+type ValidationObject = SchemaMap[Any, `false`]

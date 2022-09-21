@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationConfigurationUpdate extends StObject {
   
   /**
-    * Describes updates to a Flink-based Kinesis Data Analytics application's code configuration.
+    * Describes updates to an application's code configuration.
     */
   var ApplicationCodeConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationCodeConfigurationUpdate] = js.undefined
   
@@ -35,6 +35,11 @@ trait ApplicationConfigurationUpdate extends StObject {
     * Updates to the array of descriptions of VPC configurations available to the application.
     */
   var VpcConfigurationUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationUpdates] = js.undefined
+  
+  /**
+    * Updates to the configuration of a Kinesis Data Analytics Studio notebook.
+    */
+  var ZeppelinApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ZeppelinApplicationConfigurationUpdate] = js.undefined
 }
 object ApplicationConfigurationUpdate {
   
@@ -69,6 +74,10 @@ object ApplicationConfigurationUpdate {
     
     inline def setVpcConfigurationUpdatesUndefined: Self = StObject.set(x, "VpcConfigurationUpdates", js.undefined)
     
-    inline def setVpcConfigurationUpdatesVarargs(value: VpcConfigurationUpdate*): Self = StObject.set(x, "VpcConfigurationUpdates", js.Array(value :_*))
+    inline def setVpcConfigurationUpdatesVarargs(value: VpcConfigurationUpdate*): Self = StObject.set(x, "VpcConfigurationUpdates", js.Array(value*))
+    
+    inline def setZeppelinApplicationConfigurationUpdate(value: ZeppelinApplicationConfigurationUpdate): Self = StObject.set(x, "ZeppelinApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setZeppelinApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "ZeppelinApplicationConfigurationUpdate", js.undefined)
   }
 }

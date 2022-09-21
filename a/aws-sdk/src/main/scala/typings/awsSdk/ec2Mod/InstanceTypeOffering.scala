@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceTypeOffering extends StObject {
   
   /**
-    * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
+    * The instance type. For more information, see Instance types in the Amazon EC2 User Guide.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   

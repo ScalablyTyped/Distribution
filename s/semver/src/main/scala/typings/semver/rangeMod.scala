@@ -9,7 +9,7 @@ object rangeMod {
   
   @JSImport("semver/classes/range", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Range {
     def this(range: String) = this()

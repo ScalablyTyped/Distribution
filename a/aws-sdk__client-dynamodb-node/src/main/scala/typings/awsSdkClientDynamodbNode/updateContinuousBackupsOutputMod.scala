@@ -8,5 +8,5 @@ object updateContinuousBackupsOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/UpdateContinuousBackupsOutput", "UpdateContinuousBackupsOutput")
   @js.native
-  val UpdateContinuousBackupsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateContinuousBackupsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

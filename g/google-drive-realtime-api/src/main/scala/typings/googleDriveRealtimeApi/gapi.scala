@@ -580,12 +580,12 @@ object gapi {
         // Creates and returns a new collaborative object. This can be used to create custom collaborative objects.
         // For built in types, use the specific create* functions.
         // @return non-null Object
-        def create(ref: String, var_args: js.Any*): js.Any = js.native
-        def create(ref: js.Function, var_args: js.Any*): js.Any = js.native
+        def create(ref: String, var_args: Any*): Any = js.native
+        def create(ref: js.Function, var_args: Any*): Any = js.native
         
         // Creates the native JS object for a given collaborative object type.
         // @return non-null Object
-        def createJsObject(typeName: String): js.Any = js.native
+        def createJsObject(typeName: String): Any = js.native
         
         // Creates a collaborative list.
         def createList[T](): CollaborativeList[T] = js.native
@@ -607,7 +607,7 @@ object gapi {
         def getObject(id: String): CollaborativeObject = js.native
         
         // Returns the root of the object model.
-        def getRoot(): CollaborativeMap[js.Any] = js.native
+        def getRoot(): CollaborativeMap[Any] = js.native
         
         // The mode of the document. If true, the document is read-only. If false, it is editable.
         def isReadOnly(): Boolean = js.native

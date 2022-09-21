@@ -14,7 +14,7 @@ object tileLayerMod {
   
   @JSImport("ol/renderer/canvas/TileLayer", JSImport.Default)
   @js.native
-  class default protected () extends CanvasTileLayerRenderer {
+  open class default protected () extends CanvasTileLayerRenderer {
     def this(tileLayer: typings.ol.tileMod.default) = this()
     def this(tileLayer: typings.ol.vectorTileMod.default) = this()
   }

@@ -10,12 +10,10 @@ object checkboardMod {
   
   @JSImport("react-color/lib/components/common/Checkboard", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CheckboardProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CheckboardProps, js.Object, Any]
   
-  @js.native
-  trait Checkboard
-    extends Component[CheckboardProps, js.Object, js.Any]
+  type Checkboard = Component[CheckboardProps, js.Object, Any]
   
   trait CheckboardProps
     extends StObject

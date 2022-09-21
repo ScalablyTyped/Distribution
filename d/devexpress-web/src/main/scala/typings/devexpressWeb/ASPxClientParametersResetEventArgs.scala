@@ -19,11 +19,11 @@ trait ASPxClientParametersResetEventArgs
   /**
     * Provides access to a View Model for report parameters.
     */
-  var ParametersViewModel: js.Any
+  var ParametersViewModel: Any
 }
 object ASPxClientParametersResetEventArgs {
   
-  inline def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: js.Any): ASPxClientParametersResetEventArgs = {
+  inline def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: Any): ASPxClientParametersResetEventArgs = {
     val __obj = js.Dynamic.literal(Parameters = Parameters.asInstanceOf[js.Any], ParametersViewModel = ParametersViewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientParametersResetEventArgs]
   }
@@ -32,8 +32,8 @@ object ASPxClientParametersResetEventArgs {
     
     inline def setParameters(value: js.Array[ASPxClientWebDocumentViewerParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: ASPxClientWebDocumentViewerParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ASPxClientWebDocumentViewerParameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
-    inline def setParametersViewModel(value: js.Any): Self = StObject.set(x, "ParametersViewModel", value.asInstanceOf[js.Any])
+    inline def setParametersViewModel(value: Any): Self = StObject.set(x, "ParametersViewModel", value.asInstanceOf[js.Any])
   }
 }

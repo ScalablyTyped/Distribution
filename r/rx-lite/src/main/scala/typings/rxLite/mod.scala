@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("rx-lite", "CompositeDisposable")
   @js.native
-  class CompositeDisposable protected ()
+  open class CompositeDisposable protected ()
     extends StObject
        with typings.rxLite.Rx.CompositeDisposable {
     def this(disposables: IDisposable*) = this()
@@ -42,7 +42,7 @@ object mod {
   
   @JSImport("rx-lite", "Disposable")
   @js.native
-  class Disposable protected ()
+  open class Disposable protected ()
     extends StObject
        with typings.rxLite.Rx.Disposable {
     def this(action: js.Function0[Unit]) = this()
@@ -69,7 +69,7 @@ object mod {
   // Notifications
   @JSImport("rx-lite", "Notification")
   @js.native
-  class Notification[T] ()
+  open class Notification[T] ()
     extends StObject
        with typings.rxLite.Rx.Notification[T]
   object Notification {
@@ -82,7 +82,7 @@ object mod {
     inline def createOnCompleted[T](): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnCompleted")().asInstanceOf[typings.rxLite.Rx.Notification[T]]
     
     /* static member */
-    inline def createOnError[T](exception: js.Any): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnError")(exception.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
+    inline def createOnError[T](exception: Any): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnError")(exception.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
     
     /* static member */
     inline def createOnNext[T](value: T): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnNext")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
@@ -98,7 +98,7 @@ object mod {
   
   @JSImport("rx-lite", "RefCountDisposable")
   @js.native
-  class RefCountDisposable protected ()
+  open class RefCountDisposable protected ()
     extends StObject
        with typings.rxLite.Rx.RefCountDisposable {
     def this(disposable: IDisposable) = this()
@@ -120,32 +120,32 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-lite", "Scheduler")
   @js.native
-  class SchedulerCls protected ()
+  open class SchedulerCls protected ()
     extends StObject
        with IScheduler {
     def this(
       now: js.Function0[Double],
       schedule: js.Function2[
-            /* state */ js.Any, 
-            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+            /* state */ Any, 
+            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
             IDisposable
           ],
       scheduleRelative: js.Function3[
-            /* state */ js.Any, 
+            /* state */ Any, 
             /* dueTime */ Double, 
-            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
             IDisposable
           ],
       scheduleAbsolute: js.Function3[
-            /* state */ js.Any, 
+            /* state */ Any, 
             /* dueTime */ Double, 
-            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+            /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
             IDisposable
           ]
     ) = this()
     
     /* CompleteClass */
-    override def isScheduler(value: js.Any): Boolean = js.native
+    override def isScheduler(value: Any): Boolean = js.native
     
     /* CompleteClass */
     override def now(): Double = js.native
@@ -223,7 +223,7 @@ object mod {
   // SerialDisposable it's an alias of SingleAssignmentDisposable
   @JSImport("rx-lite", "SerialDisposable")
   @js.native
-  class SerialDisposable ()
+  open class SerialDisposable ()
     extends StObject
        with typings.rxLite.Rx.SingleAssignmentDisposable {
     
@@ -246,7 +246,7 @@ object mod {
   // Single assignment
   @JSImport("rx-lite", "SingleAssignmentDisposable")
   @js.native
-  class SingleAssignmentDisposable ()
+  open class SingleAssignmentDisposable ()
     extends StObject
        with typings.rxLite.Rx.SingleAssignmentDisposable {
     
@@ -271,12 +271,12 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rx-lite", "config.Promise")
     @js.native
-    class Promise[T] protected ()
+    open class Promise[T] protected ()
       extends StObject
          with IPromise[T] {
       def this(resolver: js.Function2[
                 /* resolvePromise */ js.Function1[/* value */ T, Unit], 
-                /* rejectPromise */ js.Function1[/* reason */ js.Any, Unit], 
+                /* rejectPromise */ js.Function1[/* reason */ Any, Unit], 
                 Unit
               ]) = this()
     }
@@ -295,29 +295,29 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def asArray[T](args: T*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def asArray[T](args: T*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[T]]
     
-    inline def defaultComparer(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def defaultComparer(left: Any, right: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def defaultError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def defaultError(err: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def defaultKeySerializer(key: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultKeySerializer")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def defaultKeySerializer(key: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultKeySerializer")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def defaultNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNow")().asInstanceOf[Double]
     
-    inline def defaultSubComparer(left: js.Any, right: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSubComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def defaultSubComparer(left: Any, right: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSubComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def identity[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isPromise(p: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isPromise(p: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
     
-    inline def not(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def not(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def notDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def notDefined(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object internals {
@@ -329,7 +329,7 @@ object mod {
     // Priority Queue for Scheduling
     @JSImport("rx-lite", "internals.PriorityQueue")
     @js.native
-    class PriorityQueue[TTime] protected ()
+    open class PriorityQueue[TTime] protected ()
       extends StObject
          with typings.rxLite.Rx.internals.PriorityQueue[TTime] {
       def this(capacity: Double) = this()
@@ -376,25 +376,25 @@ object mod {
     
     @JSImport("rx-lite", "internals.ScheduledItem")
     @js.native
-    class ScheduledItem[TTime] protected ()
+    open class ScheduledItem[TTime] protected ()
       extends StObject
          with typings.rxLite.Rx.internals.ScheduledItem[TTime] {
       def this(
         scheduler: IScheduler,
-        state: js.Any,
-        action: js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable],
+        state: Any,
+        action: js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable],
         dueTime: TTime
       ) = this()
       def this(
         scheduler: IScheduler,
-        state: js.Any,
-        action: js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable],
+        state: Any,
+        action: js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable],
         dueTime: TTime,
         comparer: js.Function2[/* x */ TTime, /* y */ TTime, Double]
       ) = this()
       
       /* CompleteClass */
-      override def action(scheduler: IScheduler, state: js.Any): IDisposable = js.native
+      override def action(scheduler: IScheduler, state: Any): IDisposable = js.native
       
       /* CompleteClass */
       override def compareTo(other: typings.rxLite.Rx.internals.ScheduledItem[TTime]): Double = js.native
@@ -426,6 +426,6 @@ object mod {
     
     inline def addRef[T](xs: typings.rxLite.Rx.Observable[T], r: GetDisposable): typings.rxLite.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addRef")(xs.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.rxLite.Rx.Observable[T]]
     
-    inline def isEqual(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isEqual(left: Any, right: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

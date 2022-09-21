@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse {
     
     inline def setExampleComparisonsUndefined: Self = StObject.set(x, "exampleComparisons", js.undefined)
     
-    inline def setExampleComparisonsVarargs(value: GoogleCloudDatalabelingV1beta1ExampleComparison*): Self = StObject.set(x, "exampleComparisons", js.Array(value :_*))
+    inline def setExampleComparisonsVarargs(value: GoogleCloudDatalabelingV1beta1ExampleComparison*): Self = StObject.set(x, "exampleComparisons", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

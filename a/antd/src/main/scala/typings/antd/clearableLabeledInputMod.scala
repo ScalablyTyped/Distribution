@@ -4,12 +4,13 @@ import typings.antd.antdStrings.input
 import typings.antd.antdStrings.text_
 import typings.antd.configProviderContextMod.DirectionType
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.inputInputMod.InputProps
+import typings.antd.formContextMod.FormItemStatusContextProps
+import typings.antd.statusUtilsMod.InputStatus
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -18,20 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object clearableLabeledInputMod {
   
-  @JSImport("antd/lib/input/ClearableLabeledInput", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("antd/lib/input/ClearableLabeledInput", JSImport.Default)
   @js.native
-  class default () extends ClearableLabeledInput
+  open class default () extends ClearableLabeledInput
   
-  inline def hasPrefixSuffix(props: ClearableInputProps): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPrefixSuffix")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasPrefixSuffix(props: InputProps): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPrefixSuffix")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  /**
-    * This basic props required for input and textarea.
-    */
+  /** This basic props required for input and textarea. */
   trait BasicProps extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
@@ -50,15 +42,17 @@ object clearableLabeledInputMod {
     
     def handleReset(event: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit
     
+    var hidden: js.UndefOr[Boolean] = js.undefined
+    
     var inputType: text_ | input
     
     var prefixCls: String
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object BasicProps {
     
@@ -101,6 +95,10 @@ object clearableLabeledInputMod {
       
       inline def setHandleReset(value: typings.react.mod.MouseEvent[HTMLElement, MouseEvent] => Unit): Self = StObject.set(x, "handleReset", js.Any.fromFunction1(value))
       
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      
       inline def setInputType(value: text_ | input): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
@@ -109,19 +107,16 @@ object clearableLabeledInputMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  /**
-    * This props only for input.
-    */
   trait ClearableInputProps
     extends StObject
        with BasicProps {
@@ -133,6 +128,8 @@ object clearableLabeledInputMod {
     var prefix: js.UndefOr[ReactNode] = js.undefined
     
     var size: js.UndefOr[SizeType] = js.undefined
+    
+    var status: js.UndefOr[InputStatus] = js.undefined
     
     var suffix: js.UndefOr[ReactNode] = js.undefined
     
@@ -169,6 +166,10 @@ object clearableLabeledInputMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
       inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
       inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
@@ -181,21 +182,10 @@ object clearableLabeledInputMod {
   
   @js.native
   trait ClearableLabeledInput
-    extends Component[ClearableInputProps, js.Object, js.Any] {
+    extends Component[ClearableInputProps, js.Object, Any] {
     
-    /** @private Do not use out of this class. We do not promise this is always keep. */
-    /* private */ var containerRef: js.Any = js.native
+    def renderClearIcon(prefixCls: String): Element = js.native
     
-    var onInputMouseUp: MouseEventHandler[Element] = js.native
-    
-    def renderClearIcon(prefixCls: String): typings.react.mod.global.JSX.Element | Null = js.native
-    
-    def renderInputWithLabel(prefixCls: String, labeledElement: ReactElement): typings.react.mod.global.JSX.Element = js.native
-    
-    def renderLabeledIcon(prefixCls: String, element: ReactElement): typings.react.mod.global.JSX.Element = js.native
-    
-    def renderSuffix(prefixCls: String): typings.react.mod.global.JSX.Element | Null = js.native
-    
-    def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement): typings.react.mod.global.JSX.Element = js.native
+    def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement, statusContext: FormItemStatusContextProps): Element = js.native
   }
 }

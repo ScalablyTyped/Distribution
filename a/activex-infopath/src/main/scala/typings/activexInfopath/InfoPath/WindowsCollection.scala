@@ -11,11 +11,11 @@ trait WindowsCollection extends StObject {
   /* private */ @JSName("InfoPath.WindowsCollection_typekey")
   var InfoPathDotWindowsCollection_typekey: WindowsCollection
   
-  def Item(varIndex: js.Any): Window
+  def Item(varIndex: Any): Window
 }
 object WindowsCollection {
   
-  inline def apply(Count: Double, InfoPathDotWindowsCollection_typekey: WindowsCollection, Item: js.Any => Window): WindowsCollection = {
+  inline def apply(Count: Double, InfoPathDotWindowsCollection_typekey: WindowsCollection, Item: Any => Window): WindowsCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.WindowsCollection_typekey")(InfoPathDotWindowsCollection_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsCollection]
@@ -27,6 +27,6 @@ object WindowsCollection {
     
     inline def setInfoPathDotWindowsCollection_typekey(value: WindowsCollection): Self = StObject.set(x, "InfoPath.WindowsCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Window): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Window): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

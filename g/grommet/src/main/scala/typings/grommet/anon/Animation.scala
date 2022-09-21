@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Animation extends StObject {
   
-  var active: js.UndefOr[`8`] = js.undefined
+  var active: js.UndefOr[`10`] = js.undefined
   
   var animation: js.UndefOr[Jiggle] = js.undefined
   
-  var borderSize: js.UndefOr[Medium] = js.undefined
+  var borderSize: js.UndefOr[Large] = js.undefined
   
   var breakpoints: js.UndefOr[Dictx] = js.undefined
   
@@ -22,7 +22,7 @@ trait Animation extends StObject {
   
   var deviceBreakpoints: js.UndefOr[Computer] = js.undefined
   
-  var drop: js.UndefOr[ShadowSize] = js.undefined
+  var drop: js.UndefOr[IntelligentMargin] = js.undefined
   
   var edgeSize: js.UndefOr[Hair] = js.undefined
   
@@ -32,7 +32,7 @@ trait Animation extends StObject {
   
   var font: js.UndefOr[Face] = js.undefined
   
-  var graph: js.UndefOr[`9`] = js.undefined
+  var graph: js.UndefOr[`12`] = js.undefined
   
   var hover: js.UndefOr[BackgroundColor] = js.undefined
   
@@ -55,7 +55,7 @@ object Animation {
   
   extension [Self <: Animation](x: Self) {
     
-    inline def setActive(value: `8`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `10`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
@@ -63,7 +63,7 @@ object Animation {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBorderSize(value: Medium): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
+    inline def setBorderSize(value: Large): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     
     inline def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
     
@@ -87,7 +87,7 @@ object Animation {
     
     inline def setDeviceBreakpointsUndefined: Self = StObject.set(x, "deviceBreakpoints", js.undefined)
     
-    inline def setDrop(value: ShadowSize): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: IntelligentMargin): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
@@ -107,7 +107,7 @@ object Animation {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setGraph(value: `9`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: `12`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     

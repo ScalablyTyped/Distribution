@@ -10,10 +10,10 @@ A universal React-compatible render engine.
 | ------------------ | :-------------: |
 | Full name          | rax |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 105 |
-| # downloads        | 162066 |
-| # stars            | 4 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 5839.666666666667 |
+| # stars            | 7731.0 |
 
 ## Links
 - [Homepage](https://github.com/alibaba/rax#readme)

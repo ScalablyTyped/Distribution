@@ -8,30 +8,30 @@ object anon {
   
   trait MaxX extends StObject {
     
-    var maxX: js.Any
+    var maxX: Double
     
-    var maxY: js.Any
+    var maxY: Double
     
-    var minX: js.Any
+    var minX: Double
     
-    var minY: js.Any
+    var minY: Double
   }
   object MaxX {
     
-    inline def apply(maxX: js.Any, maxY: js.Any, minX: js.Any, minY: js.Any): MaxX = {
+    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): MaxX = {
       val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxX]
     }
     
     extension [Self <: MaxX](x: Self) {
       
-      inline def setMaxX(value: js.Any): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
-      inline def setMaxY(value: js.Any): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
-      inline def setMinX(value: js.Any): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
-      inline def setMinY(value: js.Any): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     }
   }
   

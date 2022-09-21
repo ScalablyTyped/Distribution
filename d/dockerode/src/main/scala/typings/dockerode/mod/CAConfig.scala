@@ -29,7 +29,7 @@ object CAConfig {
     
     inline def setExternalCAsUndefined: Self = StObject.set(x, "ExternalCAs", js.undefined)
     
-    inline def setExternalCAsVarargs(value: ExternalCA*): Self = StObject.set(x, "ExternalCAs", js.Array(value :_*))
+    inline def setExternalCAsVarargs(value: ExternalCA*): Self = StObject.set(x, "ExternalCAs", js.Array(value*))
     
     inline def setForceRotate(value: Double): Self = StObject.set(x, "ForceRotate", value.asInstanceOf[js.Any])
     

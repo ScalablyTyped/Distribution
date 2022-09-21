@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "FramingBehavior")
 @js.native
-class FramingBehavior ()
+open class FramingBehavior ()
   extends typings.babylonjs.legacyMod.FramingBehavior
 /* static members */
 object FramingBehavior {

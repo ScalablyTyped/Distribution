@@ -10,10 +10,10 @@ object powerMod {
   
   @JSImport("material-ui/svg-icons/notification/power", JSImport.Default)
   @js.native
-  class default () extends NotificationPower
+  open class default () extends NotificationPower
   
   @JSImport("material-ui/svg-icons/notification/power", "NotificationPower")
   @js.native
-  class NotificationPower ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPower ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

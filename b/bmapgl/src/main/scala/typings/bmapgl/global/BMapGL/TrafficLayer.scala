@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.TrafficLayer")
 @js.native
-class TrafficLayer ()
+open class TrafficLayer ()
   extends StObject
      with typings.bmapgl.BMapGL.TileLayer {
   def this(opts: TrafficLayerOptions) = this()

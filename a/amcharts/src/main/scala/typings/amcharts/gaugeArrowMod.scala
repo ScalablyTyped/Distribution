@@ -8,7 +8,7 @@ object gaugeArrowMod {
   
   @JSImport("amcharts/GaugeArrow", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with GaugeArrow {
     
@@ -59,7 +59,7 @@ object gaugeArrowMod {
       * @default 0
       */
     /* CompleteClass */
-    var innerRadius: js.Any = js.native
+    var innerRadius: Any = js.native
     
     /**
       * Opacity of a nail, holding the arrow.
@@ -94,7 +94,7 @@ object gaugeArrowMod {
       * @default '90%'
       */
     /* CompleteClass */
-    var radius: js.Any = js.native
+    var radius: Any = js.native
     
     /**
       * Sets value for the arrow.
@@ -159,7 +159,7 @@ object gaugeArrowMod {
       * Inner radius of an arrow.
       * @default 0
       */
-    var innerRadius: js.Any
+    var innerRadius: Any
     
     /**
       * Opacity of a nail, holding the arrow.
@@ -189,7 +189,7 @@ object gaugeArrowMod {
       * Radius of an arrow.
       * @default '90%'
       */
-    var radius: js.Any
+    var radius: Any
     
     /**
       * Sets value for the arrow.
@@ -217,12 +217,12 @@ object gaugeArrowMod {
       clockWiseOnly: Boolean,
       color: String,
       id: String,
-      innerRadius: js.Any,
+      innerRadius: Any,
       nailAlpha: Double,
       nailBorderAlpha: Double,
       nailBorderThickness: Double,
       nailRadius: Double,
-      radius: js.Any,
+      radius: Any,
       setValue: Double => Unit,
       startWidth: Double,
       value: Double
@@ -245,7 +245,7 @@ object gaugeArrowMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
       inline def setNailAlpha(value: Double): Self = StObject.set(x, "nailAlpha", value.asInstanceOf[js.Any])
       
@@ -255,7 +255,7 @@ object gaugeArrowMod {
       
       inline def setNailRadius(value: Double): Self = StObject.set(x, "nailRadius", value.asInstanceOf[js.Any])
       
-      inline def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       

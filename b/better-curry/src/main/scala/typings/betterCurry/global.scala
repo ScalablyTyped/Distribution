@@ -15,7 +15,7 @@ object global {
     
     @JSGlobal("BetterCurryModule.Delegate")
     @js.native
-    class Delegate[T] protected ()
+    open class Delegate[T] protected ()
       extends StObject
          with typings.betterCurry.BetterCurryModule.Delegate[T] {
       def this(proto: T, target: String) = this()

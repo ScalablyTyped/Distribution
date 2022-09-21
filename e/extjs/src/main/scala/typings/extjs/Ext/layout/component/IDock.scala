@@ -14,19 +14,19 @@ trait IDock
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beginLayoutCycle_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Called before any calculation cycles to prepare for layout
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beginLayout_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var calculate_IDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Retrieve an ordered and or filtered array of all docked Components
     * @param order String The desired ordering of the items ('render' or 'visual').
@@ -44,7 +44,7 @@ trait IDock
     */
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IDock: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
+    js.Function2[/* item */ js.UndefOr[Any], /* ownerSizeModel */ js.UndefOr[Any], ISizePolicy]
   ] = js.undefined
   
   /** [Method] Returns an array containing all the visible docked items inside this layout s owner Panel
@@ -60,9 +60,9 @@ trait IDock
     */
   var invalidateAxes: js.UndefOr[
     js.Function3[
-      /* ownerContext */ js.UndefOr[js.Any], 
-      /* horz */ js.UndefOr[js.Any], 
-      /* vert */ js.UndefOr[js.Any], 
+      /* ownerContext */ js.UndefOr[Any], 
+      /* horz */ js.UndefOr[Any], 
+      /* vert */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -76,15 +76,15 @@ object IDock {
   
   extension [Self <: IDock](x: Self) {
     
-    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
     inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
     inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
-    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
@@ -92,7 +92,7 @@ object IDock {
     
     inline def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
     
-    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
+    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[Any], /* ownerSizeModel */ js.UndefOr[Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
     inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
@@ -101,7 +101,7 @@ object IDock {
     inline def setGetLayoutItemsUndefined: Self = StObject.set(x, "getLayoutItems", js.undefined)
     
     inline def setInvalidateAxes(
-      value: (/* ownerContext */ js.UndefOr[js.Any], /* horz */ js.UndefOr[js.Any], /* vert */ js.UndefOr[js.Any]) => Unit
+      value: (/* ownerContext */ js.UndefOr[Any], /* horz */ js.UndefOr[Any], /* vert */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "invalidateAxes", js.Any.fromFunction3(value))
     
     inline def setInvalidateAxesUndefined: Self = StObject.set(x, "invalidateAxes", js.undefined)

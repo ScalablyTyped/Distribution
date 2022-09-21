@@ -9,12 +9,12 @@ trait DescribeNotebookInstanceLifecycleConfigOutput extends StObject {
   /**
     * A timestamp that tells when the lifecycle configuration was created.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A timestamp that tells when the lifecycle configuration was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the lifecycle configuration.
@@ -45,11 +45,11 @@ object DescribeNotebookInstanceLifecycleConfigOutput {
   
   extension [Self <: DescribeNotebookInstanceLifecycleConfigOutput](x: Self) {
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -65,12 +65,12 @@ object DescribeNotebookInstanceLifecycleConfigOutput {
     
     inline def setOnCreateUndefined: Self = StObject.set(x, "OnCreate", js.undefined)
     
-    inline def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value :_*))
+    inline def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value*))
     
     inline def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnStart", value.asInstanceOf[js.Any])
     
     inline def setOnStartUndefined: Self = StObject.set(x, "OnStart", js.undefined)
     
-    inline def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value :_*))
+    inline def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value*))
   }
 }

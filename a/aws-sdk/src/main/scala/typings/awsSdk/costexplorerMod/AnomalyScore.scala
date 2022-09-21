@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnomalyScore extends StObject {
   
   /**
-    *  The last observed score. 
+    * The last observed score. 
     */
   var CurrentScore: GenericDouble
   
   /**
-    *  The maximum score observed during the AnomalyDateInterval. 
+    * The maximum score that's observed during the AnomalyDateInterval. 
     */
   var MaxScore: GenericDouble
 }

@@ -14,14 +14,14 @@ trait AttachmentSelection extends StObject {
   
   def GetSelection(SelectionContents: OlSelectionContents): Selection
   
-  def Item(Index: js.Any): Attachment
+  def Item(Index: Any): Attachment
   
   val Location: OlSelectionLocation
   
   /* private */ @JSName("Outlook.AttachmentSelection_typekey")
   var OutlookDotAttachmentSelection_typekey: AttachmentSelection
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,10 +32,10 @@ object AttachmentSelection {
     Class: OlObjectClass,
     Count: Double,
     GetSelection: OlSelectionContents => Selection,
-    Item: js.Any => Attachment,
+    Item: Any => Attachment,
     Location: OlSelectionLocation,
     OutlookDotAttachmentSelection_typekey: AttachmentSelection,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): AttachmentSelection = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], GetSelection = js.Any.fromFunction1(GetSelection), Item = js.Any.fromFunction1(Item), Location = Location.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -53,13 +53,13 @@ object AttachmentSelection {
     
     inline def setGetSelection(value: OlSelectionContents => Selection): Self = StObject.set(x, "GetSelection", js.Any.fromFunction1(value))
     
-    inline def setItem(value: js.Any => Attachment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Attachment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setLocation(value: OlSelectionLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotAttachmentSelection_typekey(value: AttachmentSelection): Self = StObject.set(x, "Outlook.AttachmentSelection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

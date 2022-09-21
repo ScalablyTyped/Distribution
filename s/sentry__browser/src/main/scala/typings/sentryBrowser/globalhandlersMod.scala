@@ -9,41 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object globalhandlersMod {
   
-  @JSImport("@sentry/browser/dist/integrations/globalhandlers", "GlobalHandlers")
+  @JSImport("@sentry/browser/types/integrations/globalhandlers", "GlobalHandlers")
   @js.native
   /** JSDoc */
-  class GlobalHandlers ()
+  open class GlobalHandlers ()
     extends StObject
        with Integration {
     def this(options: GlobalHandlersIntegrations) = this()
     
-    /** JSDoc */
-    /* private */ var _enhanceEventWithInitialFrame: js.Any = js.native
-    
     /**
-      * This function creates a stack from an old, error-less onerror handler.
+      * Stores references functions to installing handlers. Will set to undefined
+      * after they have been run so that they are not used twice.
       */
-    /* private */ var _eventFromIncompleteOnError: js.Any = js.native
-    
-    /**
-      * This function creates an Event from an TraceKitStackTrace that has part of it missing.
-      */
-    /* private */ var _eventFromIncompleteRejection: js.Any = js.native
+    /* private */ var _installFunc: Any = js.native
     
     /** JSDoc */
-    /* private */ var _installGlobalOnErrorHandler: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _installGlobalOnUnhandledRejectionHandler: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _onErrorHandlerInstalled: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _onUnhandledRejectionHandlerInstalled: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ val _options: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -68,20 +49,21 @@ object globalhandlersMod {
   /* static members */
   object GlobalHandlers {
     
-    @JSImport("@sentry/browser/dist/integrations/globalhandlers", "GlobalHandlers")
+    @JSImport("@sentry/browser/types/integrations/globalhandlers", "GlobalHandlers")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations/globalhandlers", "GlobalHandlers.id")
+    @JSImport("@sentry/browser/types/integrations/globalhandlers", "GlobalHandlers.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   /** JSDoc */
+  /* Inlined std.Record<@sentry/browser.@sentry/browser/types/integrations/globalhandlers.GlobalHandlersIntegrationsOptionKeys, boolean> */
   trait GlobalHandlersIntegrations extends StObject {
     
     var onerror: Boolean
@@ -101,5 +83,17 @@ object globalhandlersMod {
       
       inline def setOnunhandledrejection(value: Boolean): Self = StObject.set(x, "onunhandledrejection", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sentryBrowser.sentryBrowserStrings.onerror
+    - typings.sentryBrowser.sentryBrowserStrings.onunhandledrejection
+  */
+  trait GlobalHandlersIntegrationsOptionKeys extends StObject
+  object GlobalHandlersIntegrationsOptionKeys {
+    
+    inline def onerror: typings.sentryBrowser.sentryBrowserStrings.onerror = "onerror".asInstanceOf[typings.sentryBrowser.sentryBrowserStrings.onerror]
+    
+    inline def onunhandledrejection: typings.sentryBrowser.sentryBrowserStrings.onunhandledrejection = "onunhandledrejection".asInstanceOf[typings.sentryBrowser.sentryBrowserStrings.onunhandledrejection]
   }
 }

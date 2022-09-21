@@ -1,46 +1,41 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
+import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Classes extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[String | RegExp | Boolean]] = js.undefined
+  var attributes: js.Array[String]
   
-  var classes: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+  var classes: js.Array[String]
   
-  var name: js.UndefOr[String | RegExp] = js.undefined
+  var name: `true`
   
-  var styles: js.UndefOr[StringDictionary[String | RegExp]] = js.undefined
+  var styles: js.Array[String]
 }
 object Classes {
   
-  inline def apply(): Classes = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(attributes: js.Array[String], classes: js.Array[String], styles: js.Array[String]): Classes = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], name = true, styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classes]
   }
   
   extension [Self <: Classes](x: Self) {
     
-    inline def setAttributes(value: StringDictionary[String | RegExp | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
-    inline def setClasses(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
     
-    inline def setClassesVarargs(value: (String | RegExp)*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setName(value: `true`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setName(value: String | RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setStyles(value: StringDictionary[String | RegExp]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
-    
-    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

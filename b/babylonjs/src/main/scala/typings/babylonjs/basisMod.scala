@@ -1,20 +1,19 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Etc1
+import typings.babylonjs.anon.Astc
 import typings.babylonjs.anon.Levels
+import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.internalTextureMod.InternalTexture
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basisMod {
   
-  @JSImport("babylonjs/Misc/basis", "BasisTools")
+  @JSImport("babylonjs/Misc/basis", JSImport.Namespace)
   @js.native
-  class BasisTools () extends StObject
-  /* static members */
+  val ^ : js.Any = js.native
+  
   object BasisTools {
     
     @JSImport("babylonjs/Misc/basis", "BasisTools")
@@ -26,7 +25,7 @@ object basisMod {
       * @param basisFormat format chosen from GetSupportedTranscodeFormat
       * @returns internal format corresponding to the Basis format
       */
-    inline def GetInternalFormatFromBasisFormat(basisFormat: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * URL to use when loading the basis transcoder
@@ -43,14 +42,14 @@ object basisMod {
       */
     inline def LoadTextureFromTranscodeResult(texture: InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def TranscodeAsync(data: ArrayBufferView, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+    inline def TranscodeAsync(data: js.typedarray.ArrayBufferView, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
     /**
       * Transcodes a loaded image file to compressed pixel data
       * @param data image data to transcode
       * @param config configuration options for the transcoding
       * @returns a promise resulting in the transcoded image
       */
-    inline def TranscodeAsync(data: ArrayBuffer, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+    inline def TranscodeAsync(data: js.typedarray.ArrayBuffer, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
     
     /**
       * URL to use when loading the wasm module for the transcoder
@@ -59,37 +58,34 @@ object basisMod {
     @js.native
     def WasmModuleURL: String = js.native
     inline def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
+  }
+  
+  object BasisToolsOptions {
     
-    @JSImport("babylonjs/Misc/basis", "BasisTools._CreateWorkerAsync")
+    @JSImport("babylonjs/Misc/basis", "BasisToolsOptions")
     @js.native
-    def _CreateWorkerAsync: js.Any = js.native
-    inline def _CreateWorkerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerAsync")(x.asInstanceOf[js.Any])
+    val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Misc/basis", "BasisTools._IgnoreSupportedFormats")
+    /**
+      * URL to use when loading the basis transcoder
+      */
+    @JSImport("babylonjs/Misc/basis", "BasisToolsOptions.JSModuleURL")
     @js.native
-    def _IgnoreSupportedFormats: js.Any = js.native
-    inline def _IgnoreSupportedFormats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IgnoreSupportedFormats")(x.asInstanceOf[js.Any])
+    def JSModuleURL: String = js.native
+    inline def JSModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSModuleURL")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/basis", "BasisTools._Worker")
+    /**
+      * URL to use when loading the wasm module for the transcoder
+      */
+    @JSImport("babylonjs/Misc/basis", "BasisToolsOptions.WasmModuleURL")
     @js.native
-    def _Worker: js.Any = js.native
-    
-    @JSImport("babylonjs/Misc/basis", "BasisTools._WorkerPromise")
-    @js.native
-    def _WorkerPromise: js.Any = js.native
-    inline def _WorkerPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPromise")(x.asInstanceOf[js.Any])
-    
-    inline def _Worker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Worker")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Misc/basis", "BasisTools._actionId")
-    @js.native
-    def _actionId: js.Any = js.native
-    inline def _actionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_actionId")(x.asInstanceOf[js.Any])
+    def WasmModuleURL: String = js.native
+    inline def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/basis", "BasisTranscodeConfiguration")
   @js.native
-  class BasisTranscodeConfiguration () extends StObject {
+  open class BasisTranscodeConfiguration () extends StObject {
     
     /**
       * If mipmap levels should be loaded for transcoded images (Default: true)
@@ -104,8 +100,15 @@ object basisMod {
     /**
       * Supported compression formats used to determine the supported output format of the transcoder
       */
-    var supportedCompressionFormats: js.UndefOr[Etc1] = js.native
+    var supportedCompressionFormats: js.UndefOr[Astc] = js.native
   }
+  
+  inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def LoadTextureFromTranscodeResult(texture: InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def TranscodeAsync(data: js.typedarray.ArrayBufferView, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+  inline def TranscodeAsync(data: js.typedarray.ArrayBuffer, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
   
   /**
     * Info about the .basis files
@@ -135,7 +138,7 @@ object basisMod {
       
       inline def setImages(value: js.Array[Levels]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      inline def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value*))
     }
   }
   

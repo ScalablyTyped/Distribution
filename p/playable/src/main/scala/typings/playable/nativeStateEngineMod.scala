@@ -12,7 +12,7 @@ object nativeStateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/state-engine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with StateEngine {
     def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
@@ -25,29 +25,29 @@ object nativeStateEngineMod {
   @js.native
   trait StateEngine extends StObject {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _currentState: js.Any = js.native
+    /* private */ var _currentState: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _initialTimeStamp: js.Any = js.native
+    /* private */ var _initialTimeStamp: Any = js.native
     
-    /* private */ var _isMetadataLoaded: js.Any = js.native
+    /* private */ var _isMetadataLoaded: Any = js.native
     
-    /* private */ var _processEventFromVideo: js.Any = js.native
+    /* private */ var _processEventFromVideo: Any = js.native
     
-    /* private */ var _setInitialTimeStamp: js.Any = js.native
+    /* private */ var _setInitialTimeStamp: Any = js.native
     
-    /* private */ var _setStateTimestamp: js.Any = js.native
+    /* private */ var _setStateTimestamp: Any = js.native
     
-    /* private */ var _statesTimestamps: js.Any = js.native
+    /* private */ var _statesTimestamps: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
-    /* private */ var _video: js.Any = js.native
+    /* private */ var _video: Any = js.native
     
     def clearTimestamps(): Unit = js.native
     

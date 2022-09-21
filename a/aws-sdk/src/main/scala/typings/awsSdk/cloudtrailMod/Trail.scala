@@ -32,7 +32,7 @@ trait Trail extends StObject {
   var HomeRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * Set to True to include AWS API calls from AWS global services such as IAM. Otherwise, False.
+    * Set to True to include Amazon Web Services API calls from Amazon Web Services global services such as IAM. Otherwise, False.
     */
   var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
   
@@ -47,7 +47,7 @@ trait Trail extends StObject {
   var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
+    * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the following format.  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -67,12 +67,12 @@ trait Trail extends StObject {
   var S3BucketName: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.The maximum length is 200 characters.
+    * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files. The maximum length is 200 characters.
     */
   var S3KeyPrefix: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
+    * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The following is the format of a topic ARN.  arn:aws:sns:us-east-2:123456789012:MyTopic 
     */
   var SnsTopicARN: js.UndefOr[String] = js.undefined
   
@@ -82,7 +82,7 @@ trait Trail extends StObject {
   var SnsTopicName: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the ARN of the trail. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
+    * Specifies the ARN of the trail. The following is the format of a trail ARN.  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
     */
   var TrailARN: js.UndefOr[String] = js.undefined
 }

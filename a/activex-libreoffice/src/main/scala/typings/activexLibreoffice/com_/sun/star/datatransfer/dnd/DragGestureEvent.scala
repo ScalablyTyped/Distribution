@@ -41,7 +41,7 @@ trait DragGestureEvent
     * The initial trigger event will presumably be a {@link com.sun.star.awt.MouseEvent} event. If it is not, the implementation should either react
     * accordingly or presume that the left mouse button was clicked.
     */
-  var Event: js.Any
+  var Event: Any
 }
 object DragGestureEvent {
   
@@ -50,7 +50,7 @@ object DragGestureEvent {
     DragOriginX: Double,
     DragOriginY: Double,
     DragSource: XDragSource,
-    Event: js.Any,
+    Event: Any,
     Source: XInterface
   ): DragGestureEvent = {
     val __obj = js.Dynamic.literal(DragAction = DragAction.asInstanceOf[js.Any], DragOriginX = DragOriginX.asInstanceOf[js.Any], DragOriginY = DragOriginY.asInstanceOf[js.Any], DragSource = DragSource.asInstanceOf[js.Any], Event = Event.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
@@ -67,6 +67,6 @@ object DragGestureEvent {
     
     inline def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }
 }

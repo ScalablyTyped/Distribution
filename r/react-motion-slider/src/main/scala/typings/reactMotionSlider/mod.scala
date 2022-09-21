@@ -1,6 +1,7 @@
 package typings.reactMotionSlider
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactMotion.mod.OpaqueConfig
 import typings.reactMotionSlider.reactMotionSliderStrings.center
 import typings.reactMotionSlider.reactMotionSliderStrings.left
@@ -15,11 +16,11 @@ object mod {
   
   @JSImport("react-motion-slider", JSImport.Default)
   @js.native
-  class default () extends Slider
+  open class default () extends Slider
   
   @js.native
   trait Slider
-    extends Component[SliderProps, js.Object, js.Any] {
+    extends Component[SliderProps, js.Object, Any] {
     
     /**
       * Moves to next slide
@@ -58,6 +59,8 @@ object mod {
       * @param nextIndex
       */
     var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* nextIndex */ Double, Unit]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Move to a slide by its index.
@@ -127,6 +130,10 @@ object mod {
       inline def setBeforeSlide(value: (/* currentIndex */ Double, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
       
       inline def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       

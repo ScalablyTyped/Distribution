@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFleetPortSettingsInput extends StObject {
   
   /**
-    * A unique identifier for a fleet to update port settings for. You can use either the fleet ID or ARN value.
+    * A unique identifier for the fleet to update port settings for. You can use either the fleet ID or ARN value.
     */
   var FleetId: FleetIdOrArn
   
@@ -36,12 +36,12 @@ object UpdateFleetPortSettingsInput {
     
     inline def setInboundPermissionAuthorizationsUndefined: Self = StObject.set(x, "InboundPermissionAuthorizations", js.undefined)
     
-    inline def setInboundPermissionAuthorizationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionAuthorizations", js.Array(value :_*))
+    inline def setInboundPermissionAuthorizationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionAuthorizations", js.Array(value*))
     
     inline def setInboundPermissionRevocations(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissionRevocations", value.asInstanceOf[js.Any])
     
     inline def setInboundPermissionRevocationsUndefined: Self = StObject.set(x, "InboundPermissionRevocations", js.undefined)
     
-    inline def setInboundPermissionRevocationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionRevocations", js.Array(value :_*))
+    inline def setInboundPermissionRevocationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionRevocations", js.Array(value*))
   }
 }

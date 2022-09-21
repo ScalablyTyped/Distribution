@@ -22,6 +22,6 @@ object OrStatement {
     
     inline def setStatements(value: Statements): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     
-    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value*))
   }
 }

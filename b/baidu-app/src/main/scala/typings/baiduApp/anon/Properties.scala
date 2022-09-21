@@ -21,7 +21,7 @@ object Properties {
     
     inline def setProperties(value: js.Array[Indicate]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: Indicate*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: Indicate*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }

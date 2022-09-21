@@ -14,5 +14,7 @@ trait JSDocNonNullableType
   @JSName("kind")
   val kind_JSDocNonNullableType: typings.typescript.mod.SyntaxKind.JSDocNonNullableType = js.native
   
+  val postfix: Boolean = js.native
+  
   val `type`: TypeNode = js.native
 }

@@ -10,15 +10,12 @@ Bluebird — longStackTraces: true, cancellation: true
 | ------------------ | :-------------: |
 | Full name          | bluebird-lst |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 77 |
-| # downloads        | 6412747 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1403183.3333333333 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/develar/fs-extra-p)
-- [Bugs](https://github.com/develar/fs-extra-p/issues)
-- [Repository](https://github.com/develar/fs-extra-p)
 - [Npm](https://www.npmjs.com/package/bluebird-lst)
     
 

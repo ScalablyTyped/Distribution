@@ -28,7 +28,7 @@ object unionpayMod {
       *   // ...
       * });
       */
-    def create(options: Client, callback: callback[js.Any]): Unit = js.native
+    def create(options: Client, callback: callback[Any]): Unit = js.native
     
     /**
       * Enrolls a UnionPay card. Use {@link UnionPay#fetchCapabilities|fetchCapabilities} to determine if the SMS enrollment
@@ -79,7 +79,7 @@ object unionpayMod {
       *   }
       * });
       */
-    def enroll(options: HostedFields, callback: callback[js.Any]): Unit = js.native
+    def enroll(options: HostedFields, callback: callback[Any]): Unit = js.native
     
     /**
       * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
@@ -145,7 +145,7 @@ object unionpayMod {
       *   });
       * });
       */
-    def fetchCapabilities(options: Card, callback: callback[js.Any]): Unit = js.native
+    def fetchCapabilities(options: Card, callback: callback[Any]): Unit = js.native
     
     /**
       * Cleanly tear down anything set up by {@link module:braintree-web/unionpay.create|create}.
@@ -160,7 +160,7 @@ object unionpayMod {
       * });
       */
     def teardown(): Unit = js.native
-    def teardown(callback: callback[js.Any]): Unit = js.native
+    def teardown(callback: callback[Any]): Unit = js.native
     
     /**
       * Tokenizes a UnionPay card and returns a nonce payload.
@@ -196,7 +196,7 @@ object unionpayMod {
       *   // Send response.nonce to your server
       * });
       */
-    def tokenize(options: EnrollmentId, callback: callback[js.Any]): Unit = js.native
+    def tokenize(options: EnrollmentId, callback: callback[Any]): Unit = js.native
   }
   
   trait UnionPayAccountDetails extends StObject {

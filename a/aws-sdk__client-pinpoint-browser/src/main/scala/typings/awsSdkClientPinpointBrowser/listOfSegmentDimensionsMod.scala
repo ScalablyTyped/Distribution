@@ -8,5 +8,5 @@ object listOfSegmentDimensionsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_ListOfSegmentDimensions", "_ListOfSegmentDimensions")
   @js.native
-  val ListOfSegmentDimensions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ListOfSegmentDimensions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

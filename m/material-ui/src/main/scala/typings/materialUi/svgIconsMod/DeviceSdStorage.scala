@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "DeviceSdStorage")
 @js.native
-class DeviceSdStorage ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class DeviceSdStorage ()
+  extends Component[SvgIconProps, js.Object, Any]

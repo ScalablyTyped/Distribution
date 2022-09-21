@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.OverlayManager")
 @js.native
-class OverlayManager ()
+open class OverlayManager ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.OverlayManager

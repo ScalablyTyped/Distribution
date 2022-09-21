@@ -22,7 +22,7 @@ object meshComponentMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MeshComponent {
     def this(properties: MeshComponentProperties) = this()

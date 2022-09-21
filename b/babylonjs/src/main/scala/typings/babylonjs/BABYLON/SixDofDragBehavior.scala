@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.PositionVector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,42 +8,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SixDofDragBehavior
   extends StObject
-     with Behavior[Mesh] {
+     with BaseSixDofDragBehavior {
   
-  /* private */ var _attachedToElement: js.Any = js.native
+  /* private */ var _getPositionOffsetAround: Any = js.native
   
-  /* private */ var _moving: js.Any = js.native
+  /* private */ var _onePointerPositionUpdated: Any = js.native
   
-  /* private */ var _ownerNode: js.Any = js.native
+  /* private */ var _sceneRenderObserver: Any = js.native
   
-  /**
-    * In the case of multiplea active cameras, the cameraToUseForPointers should be used if set instead of active camera
-    */
-  /* private */ def _pointerCamera: js.Any = js.native
+  /* protected */ var _startingOrientation: Quaternion = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* protected */ var _startingPosition: Vector3 = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* protected */ var _startingScaling: Vector3 = js.native
   
-  /* private */ var _sceneRenderObserver: js.Any = js.native
+  /* protected */ def _targetDrag(worldDeltaPosition: Vector3, worldDeltaRotation: Quaternion): Unit = js.native
   
-  /* private */ var _startingOrientation: js.Any = js.native
+  /* protected */ def _targetDragEnd(): Unit = js.native
   
-  /* private */ var _targetPosition: js.Any = js.native
+  /* protected */ def _targetDragStart(): Unit = js.native
   
-  /* private */ var _virtualDragMesh: js.Any = js.native
+  /* protected */ var _targetOrientation: Quaternion = js.native
   
-  /* private */ var _virtualOriginMesh: js.Any = js.native
+  /* protected */ var _targetPosition: Vector3 = js.native
   
-  /**
-    * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
-    */
-  var currentDraggingPointerID: Double = js.native
+  /* protected */ var _targetScaling: Vector3 = js.native
+  
+  /* private */ var _twoPointersPositionUpdated: Any = js.native
+  
+  /* private */ var _virtualTransformNode: Any = js.native
   
   /**
-    * If camera controls should be detached during the drag
+    * Use this flag to update the target but not move the owner node towards the target
     */
-  var detachCameraControls: Boolean = js.native
+  var disableMovement: Boolean = js.native
   
   /**
     * The distance towards the target drag position to move each frame. This can be useful to avoid jitter. Set this to 1 for no delay. (Default: 0.2)
@@ -50,9 +49,9 @@ trait SixDofDragBehavior
   var dragDeltaRatio: Double = js.native
   
   /**
-    * If the behavior is currently in a dragging state
+    * Should the object rotate towards the camera when we start dragging it
     */
-  var dragging: Boolean = js.native
+  var faceCameraOnDragStart: Boolean = js.native
   
   /**
     *  The name of the behavior
@@ -61,19 +60,14 @@ trait SixDofDragBehavior
   def name_MSixDofDragBehavior: String = js.native
   
   /**
-    *  Fires each time a drag ends (eg. mouse release after drag)
+    * Fires when position is updated
     */
-  var onDragEndObservable: Observable[js.Object] = js.native
+  var onPositionChangedObservable: Observable[PositionVector3] = js.native
   
   /**
-    * Fires each time a drag happens
+    * If `rotateDraggedObject` is set to `true`, this parameter determines if we are only rotating around the y axis (yaw)
     */
-  var onDragObservable: Observable[Unit] = js.native
-  
-  /**
-    * Fires each time a drag starts
-    */
-  var onDragStartObservable: Observable[js.Object] = js.native
+  var rotateAroundYOnly: Boolean = js.native
   
   /**
     * If the object should rotate to face the drag origin
@@ -81,7 +75,7 @@ trait SixDofDragBehavior
   var rotateDraggedObject: Boolean = js.native
   
   /**
-    * How much faster the object should move when the controller is moving towards it. This is useful to bring objects that are far away from the user to them faster. Set this to 0 to avoid any speed increase. (Default: 3)
+    * Should the behavior rotate 1:1 with the motion controller, when one is used.
     */
-  /* private */ var zDragFactor: js.Any = js.native
+  var rotateWithMotionController: Boolean = js.native
 }

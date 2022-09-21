@@ -31,6 +31,6 @@ object DescribeNotificationConfigurationsAnswer {
     
     inline def setNotificationConfigurations(value: NotificationConfigurations): Self = StObject.set(x, "NotificationConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setNotificationConfigurationsVarargs(value: NotificationConfiguration*): Self = StObject.set(x, "NotificationConfigurations", js.Array(value :_*))
+    inline def setNotificationConfigurationsVarargs(value: NotificationConfiguration*): Self = StObject.set(x, "NotificationConfigurations", js.Array(value*))
   }
 }

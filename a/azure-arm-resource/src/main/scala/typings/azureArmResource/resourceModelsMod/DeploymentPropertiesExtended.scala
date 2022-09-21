@@ -1,6 +1,5 @@
 package typings.azureArmResource.resourceModelsMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,12 +35,12 @@ trait DeploymentPropertiesExtended extends StObject {
   /**
     * Key/value pairs that represent deployment output.
     */
-  var outputs: js.UndefOr[js.Any] = js.undefined
+  var outputs: js.UndefOr[Any] = js.undefined
   
   /**
     * Deployment parameters. Use only one of Parameters or ParametersLink.
     */
-  var parameters: js.UndefOr[js.Any] = js.undefined
+  var parameters: js.UndefOr[Any] = js.undefined
   
   /**
     * The URI referencing the parameters. Use only one of Parameters or ParametersLink.
@@ -61,7 +60,7 @@ trait DeploymentPropertiesExtended extends StObject {
   /**
     * The template content. Use only one of Template or TemplateLink.
     */
-  var template: js.UndefOr[js.Any] = js.undefined
+  var template: js.UndefOr[Any] = js.undefined
   
   /**
     * The URI referencing the template. Use only one of Template or TemplateLink.
@@ -71,7 +70,7 @@ trait DeploymentPropertiesExtended extends StObject {
   /**
     * The timestamp of the template deployment.
     */
-  val timestamp: js.UndefOr[Date] = js.undefined
+  val timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object DeploymentPropertiesExtended {
   
@@ -94,7 +93,7 @@ object DeploymentPropertiesExtended {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
@@ -104,11 +103,11 @@ object DeploymentPropertiesExtended {
     
     inline def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
     
-    inline def setOutputs(value: js.Any): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Any): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
     
@@ -120,13 +119,13 @@ object DeploymentPropertiesExtended {
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
     inline def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
     
-    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
     
@@ -134,7 +133,7 @@ object DeploymentPropertiesExtended {
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

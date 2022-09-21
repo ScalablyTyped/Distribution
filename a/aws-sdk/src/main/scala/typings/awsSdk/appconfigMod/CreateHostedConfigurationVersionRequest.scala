@@ -32,7 +32,7 @@ trait CreateHostedConfigurationVersionRequest extends StObject {
   var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
-    * An optional locking token used to prevent race conditions from overwriting configuration updates when creating a new version. To ensure your data is not overwritten when creating multiple hosted configuration versions in rapid succession, specify the version of the latest hosted configuration version.
+    * An optional locking token used to prevent race conditions from overwriting configuration updates when creating a new version. To ensure your data is not overwritten when creating multiple hosted configuration versions in rapid succession, specify the version number of the latest hosted configuration version.
     */
   var LatestVersionNumber: js.UndefOr[Integer] = js.undefined
 }

@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object treatStrings {
   
   @js.native
+  sealed trait LOCAL extends StObject
+  inline def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
+  
+  @js.native
   sealed trait PseudoProperties extends StObject
   inline def PseudoProperties: PseudoProperties = "PseudoProperties".asInstanceOf[PseudoProperties]
+  
+  @js.native
+  sealed trait THEMED extends StObject
+  inline def THEMED: THEMED = "THEMED".asInstanceOf[THEMED]
 }

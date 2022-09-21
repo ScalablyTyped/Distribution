@@ -49,7 +49,7 @@ trait AppBar extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(eventName: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(eventName: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this AppBar. Call this method when the AppBar is no longer needed. After calling this method, the AppBar becomes unusable.
@@ -79,25 +79,25 @@ trait AppBar extends StObject {
     * Occurs immediately after the AppBar is closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterclose(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onafterclose(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs immeidately after the AppBar is opened.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafteropen(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onafteropen(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs immediately before the AppBar is closed. Is cancelable.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onbeforeclose(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs immediately before the AppBar is opened. Is cancelable.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onbeforeopen(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Opens the AppBar.

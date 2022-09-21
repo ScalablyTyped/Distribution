@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@apollo/protobufjs", "Method")
 @js.native
-class Method protected () extends ReflectionObject {
+open class Method protected () extends ReflectionObject {
   /**
     * Constructs a new service method instance.
     * @param name Method name
@@ -24,9 +24,9 @@ class Method protected () extends ReflectionObject {
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
-    responseStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
-    options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]],
+    requestStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    options: js.UndefOr[StringDictionary[Any]],
     comment: js.UndefOr[String]
   ) = this()
   

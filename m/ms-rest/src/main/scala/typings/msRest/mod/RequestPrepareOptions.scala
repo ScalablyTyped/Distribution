@@ -9,7 +9,7 @@ trait RequestPrepareOptions extends StObject {
   
   var baseUrl: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   var bodyIsStream: js.UndefOr[Boolean] = js.undefined
   
@@ -19,15 +19,15 @@ trait RequestPrepareOptions extends StObject {
   
   var disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined
   
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var formData: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var method: String
   
-  var pathParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
+  var pathParameters: js.UndefOr[StringDictionary[Any | UrlParameterValue]] = js.undefined
   
-  var queryParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
+  var queryParameters: js.UndefOr[StringDictionary[Any | UrlParameterValue]] = js.undefined
   
   var serializationMapper: Mapper
 }
@@ -44,7 +44,7 @@ object RequestPrepareOptions {
     
     inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyIsStream(value: Boolean): Self = StObject.set(x, "bodyIsStream", value.asInstanceOf[js.Any])
     
@@ -62,21 +62,21 @@ object RequestPrepareOptions {
     
     inline def setDisableJsonStringifyOnBodyUndefined: Self = StObject.set(x, "disableJsonStringifyOnBody", js.undefined)
     
-    inline def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: StringDictionary[Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setPathParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+    inline def setPathParameters(value: StringDictionary[Any | UrlParameterValue]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
     
     inline def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
     
-    inline def setQueryParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: StringDictionary[Any | UrlParameterValue]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     

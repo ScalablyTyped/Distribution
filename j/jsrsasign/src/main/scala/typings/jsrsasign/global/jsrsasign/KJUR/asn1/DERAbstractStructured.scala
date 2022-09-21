@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** base class for ASN.1 DER structured class */
 @JSGlobal("jsrsasign.KJUR.asn1.DERAbstractStructured")
 @js.native
-class DERAbstractStructured ()
+open class DERAbstractStructured ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERAbstractStructured {
   def this(asn1Array: ArrayParam[typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object]) = this()
 }

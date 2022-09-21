@@ -4,46 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StrategyOptions[TClient /* <: Client */] extends StObject {
+trait StrategyOptions[TClient /* <: BaseClient */] extends StObject {
   
   var client: TClient
   
-  /**
-    * "extras" argument value passed to the client.callback() call.
-    */
   var extras: js.UndefOr[CallbackExtras] = js.undefined
   
-  /**
-    * Authorization Request parameters. The strategy will use these.
-    */
   var params: js.UndefOr[AuthorizationParameters] = js.undefined
   
-  /**
-    * Boolean specifying whether the verify function should get the request object as first argument instead.
-    * Default: 'false'
-    */
   var passReqToCallback: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * The PKCE method to use. When 'true' it will resolve based on the issuer metadata, when 'false' no PKCE will be
-    * used. Default: 'false'
-    */
   var sessionKey: js.UndefOr[String] = js.undefined
   
-  /**
-    * The PKCE method to use. When 'true' it will resolve based on the issuer metadata, when 'false' no PKCE will be
-    * used. Default: 'false'
-    */
   var usePKCE: js.UndefOr[Boolean | String] = js.undefined
 }
 object StrategyOptions {
   
-  inline def apply[TClient /* <: Client */](client: TClient): StrategyOptions[TClient] = {
+  inline def apply[TClient /* <: BaseClient */](client: TClient): StrategyOptions[TClient] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions[TClient]]
   }
   
-  extension [Self <: StrategyOptions[?], TClient /* <: Client */](x: Self & StrategyOptions[TClient]) {
+  extension [Self <: StrategyOptions[?], TClient /* <: BaseClient */](x: Self & StrategyOptions[TClient]) {
     
     inline def setClient(value: TClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

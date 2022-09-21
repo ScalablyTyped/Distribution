@@ -10,10 +10,10 @@ object favoriteBorderMod {
   
   @JSImport("material-ui/svg-icons/action/favorite-border", JSImport.Default)
   @js.native
-  class default () extends ActionFavoriteBorder
+  open class default () extends ActionFavoriteBorder
   
   @JSImport("material-ui/svg-icons/action/favorite-border", "ActionFavoriteBorder")
   @js.native
-  class ActionFavoriteBorder ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFavoriteBorder ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

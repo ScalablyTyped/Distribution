@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1ListFeedbackThreadsResponse {
     
     inline def setFeedbackThreadsUndefined: Self = StObject.set(x, "feedbackThreads", js.undefined)
     
-    inline def setFeedbackThreadsVarargs(value: GoogleCloudDatalabelingV1beta1FeedbackThread*): Self = StObject.set(x, "feedbackThreads", js.Array(value :_*))
+    inline def setFeedbackThreadsVarargs(value: GoogleCloudDatalabelingV1beta1FeedbackThread*): Self = StObject.set(x, "feedbackThreads", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Javascript mocking framework inspired by the awesome mockito
 | ------------------ | :-------------: |
 | Full name          | jsmockito |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 37071 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 437.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/chrisleishman/jsmockito)

@@ -17,7 +17,7 @@ object cardMod {
   
   @JSImport("@ant-design/react-native/lib/card", JSImport.Default)
   @js.native
-  class default () extends Card
+  open class default () extends Card
   /* static members */
   object default {
     
@@ -47,8 +47,7 @@ object cardMod {
   }
   
   @js.native
-  trait Card
-    extends Component[CardNativeProps, js.Any, js.Any]
+  trait Card extends Component[CardNativeProps, Any, Any]
   
   trait CardNativeProps
     extends StObject

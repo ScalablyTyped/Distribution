@@ -1,8 +1,8 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormatLocaleInternalData
-import typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatInternal
-import typings.std.Intl.DateTimeFormat
+import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatInternal
+import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatLocaleInternalData
+import typings.std.Intl.NumberFormat
 import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -13,33 +13,27 @@ trait AvailableLocales extends StObject {
   
   var availableLocales: Set[String]
   
+  var currencyDigitsData: Record[String, Double]
+  
   def getDefaultLocale(): String
   
-  def getDefaultTimeZone(): String
+  def getInternalSlots(nf: NumberFormat): NumberFormatInternal
   
-  def getInternalSlots(dtf: DateTimeFormat): IntlDateTimeFormatInternal
+  var localeData: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]
   
-  var localeData: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]]
-  
-  var relevantExtensionKeys: js.Array[String]
-  
-  var tzData: Record[String, js.Any]
-  
-  var uppercaseLinks: Record[String, String]
+  var numberingSystemNames: js.Array[String]
 }
 object AvailableLocales {
   
   inline def apply(
     availableLocales: Set[String],
+    currencyDigitsData: Record[String, Double],
     getDefaultLocale: () => String,
-    getDefaultTimeZone: () => String,
-    getInternalSlots: DateTimeFormat => IntlDateTimeFormatInternal,
-    localeData: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]],
-    relevantExtensionKeys: js.Array[String],
-    tzData: Record[String, js.Any],
-    uppercaseLinks: Record[String, String]
+    getInternalSlots: NumberFormat => NumberFormatInternal,
+    localeData: Record[String, js.UndefOr[NumberFormatLocaleInternalData]],
+    numberingSystemNames: js.Array[String]
   ): AvailableLocales = {
-    val __obj = js.Dynamic.literal(availableLocales = availableLocales.asInstanceOf[js.Any], getDefaultLocale = js.Any.fromFunction0(getDefaultLocale), getDefaultTimeZone = js.Any.fromFunction0(getDefaultTimeZone), getInternalSlots = js.Any.fromFunction1(getInternalSlots), localeData = localeData.asInstanceOf[js.Any], relevantExtensionKeys = relevantExtensionKeys.asInstanceOf[js.Any], tzData = tzData.asInstanceOf[js.Any], uppercaseLinks = uppercaseLinks.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(availableLocales = availableLocales.asInstanceOf[js.Any], currencyDigitsData = currencyDigitsData.asInstanceOf[js.Any], getDefaultLocale = js.Any.fromFunction0(getDefaultLocale), getInternalSlots = js.Any.fromFunction1(getInternalSlots), localeData = localeData.asInstanceOf[js.Any], numberingSystemNames = numberingSystemNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableLocales]
   }
   
@@ -47,20 +41,16 @@ object AvailableLocales {
     
     inline def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
+    inline def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
+    
     inline def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
-    inline def setGetDefaultTimeZone(value: () => String): Self = StObject.set(x, "getDefaultTimeZone", js.Any.fromFunction0(value))
+    inline def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
-    inline def setGetInternalSlots(value: DateTimeFormat => IntlDateTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+    inline def setLocaleData(value: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
-    inline def setLocaleData(value: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
+    inline def setNumberingSystemNames(value: js.Array[String]): Self = StObject.set(x, "numberingSystemNames", value.asInstanceOf[js.Any])
     
-    inline def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
-    
-    inline def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
-    
-    inline def setTzData(value: Record[String, js.Any]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
-    
-    inline def setUppercaseLinks(value: Record[String, String]): Self = StObject.set(x, "uppercaseLinks", value.asInstanceOf[js.Any])
+    inline def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value*))
   }
 }

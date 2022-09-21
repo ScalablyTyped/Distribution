@@ -34,7 +34,7 @@ object DataColorPalette {
     
     inline def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
     
-    inline def setColorsVarargs(value: HexColor*): Self = StObject.set(x, "Colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: HexColor*): Self = StObject.set(x, "Colors", js.Array(value*))
     
     inline def setEmptyFillColor(value: HexColor): Self = StObject.set(x, "EmptyFillColor", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object DataColorPalette {
     
     inline def setMinMaxGradientUndefined: Self = StObject.set(x, "MinMaxGradient", js.undefined)
     
-    inline def setMinMaxGradientVarargs(value: HexColor*): Self = StObject.set(x, "MinMaxGradient", js.Array(value :_*))
+    inline def setMinMaxGradientVarargs(value: HexColor*): Self = StObject.set(x, "MinMaxGradient", js.Array(value*))
   }
 }

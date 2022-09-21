@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JsonObjectResult extends StObject {
   
-  def get_value(): js.Any
+  def get_value(): Any
 }
 object JsonObjectResult {
   
-  inline def apply(get_value: () => js.Any): JsonObjectResult = {
+  inline def apply(get_value: () => Any): JsonObjectResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[JsonObjectResult]
   }
   
   extension [Self <: JsonObjectResult](x: Self) {
     
-    inline def setGet_value(value: () => js.Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

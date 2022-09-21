@@ -39,6 +39,13 @@ trait DirectionsSearchProperties
   var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
+    */
+  var includeDefaultSources: js.UndefOr[Boolean | js.Function] = js.undefined
+  
+  /**
     * Define the type of location, either `"street"` or `"rooftop"`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
@@ -72,13 +79,6 @@ trait DirectionsSearchProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether to show the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when a result is selected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
-    */
-  var popupOpenOnSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A customized PopupTemplate for the selected feature.
@@ -165,6 +165,10 @@ object DirectionsSearchProperties {
     
     inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
+    inline def setIncludeDefaultSources(value: Boolean | js.Function): Self = StObject.set(x, "includeDefaultSources", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeDefaultSourcesUndefined: Self = StObject.set(x, "includeDefaultSources", js.undefined)
+    
     inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
@@ -184,10 +188,6 @@ object DirectionsSearchProperties {
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
-    
-    inline def setPopupOpenOnSelect(value: Boolean): Self = StObject.set(x, "popupOpenOnSelect", value.asInstanceOf[js.Any])
-    
-    inline def setPopupOpenOnSelectUndefined: Self = StObject.set(x, "popupOpenOnSelect", js.undefined)
     
     inline def setPopupTemplate(value: PopupTemplate): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     

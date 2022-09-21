@@ -10,10 +10,10 @@ object spaMod {
   
   @JSImport("material-ui/svg-icons/places/spa", JSImport.Default)
   @js.native
-  class default () extends PlacesSpa
+  open class default () extends PlacesSpa
   
   @JSImport("material-ui/svg-icons/places/spa", "PlacesSpa")
   @js.native
-  class PlacesSpa ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesSpa ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

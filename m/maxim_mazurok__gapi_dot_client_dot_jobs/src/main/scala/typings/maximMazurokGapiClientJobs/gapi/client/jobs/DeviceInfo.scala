@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceInfo extends StObject {
   
-  /** Optional. Type of the device. */
+  /** Type of the device. */
   var deviceType: js.UndefOr[String] = js.undefined
   
-  /** Optional. A device-specific ID. The ID must be a unique identifier that distinguishes the device from other devices. */
+  /** A device-specific ID. The ID must be a unique identifier that distinguishes the device from other devices. */
   var id: js.UndefOr[String] = js.undefined
 }
 object DeviceInfo {

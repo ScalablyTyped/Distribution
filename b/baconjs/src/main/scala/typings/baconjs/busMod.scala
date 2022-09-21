@@ -12,7 +12,7 @@ object busMod {
   
   @JSImport("baconjs/types/bus", JSImport.Default)
   @js.native
-  class default[V] () extends Bus[V]
+  open class default[V] () extends Bus[V]
   
   @js.native
   trait Bus[V] extends EventStream[V] {
@@ -30,7 +30,7 @@ object busMod {
     /**
       * Pushes an error to this stream.
       */
-    def error(error: js.Any): Reply = js.native
+    def error(error: Any): Reply = js.native
     
     /** @hidden */
     def guardedSink(input: typings.baconjs.observableMod.default[V]): EventSink[V] = js.native
@@ -74,7 +74,7 @@ object busMod {
     def unsubAll(): Unit = js.native
     
     /** @hidden */
-    def unsubscribeInput(input: typings.baconjs.observableMod.default[js.Any]): Unit = js.native
+    def unsubscribeInput(input: typings.baconjs.observableMod.default[Any]): Unit = js.native
   }
   
   trait Subscription[V] extends StObject {

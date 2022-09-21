@@ -9,19 +9,19 @@ trait PushCommand
      with Command {
   
   @JSName("$push")
-  var $push: js.Array[js.Any]
+  var $push: js.Array[scala.Any]
 }
 object PushCommand {
   
-  inline def apply($push: js.Array[js.Any]): PushCommand = {
+  inline def apply($push: js.Array[scala.Any]): PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushCommand]
   }
   
   extension [Self <: PushCommand](x: Self) {
     
-    inline def set$push(value: js.Array[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
+    inline def set$push(value: js.Array[scala.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
-    inline def set$pushVarargs(value: js.Any*): Self = StObject.set(x, "$push", js.Array(value :_*))
+    inline def set$pushVarargs(value: scala.Any*): Self = StObject.set(x, "$push", js.Array(value*))
   }
 }

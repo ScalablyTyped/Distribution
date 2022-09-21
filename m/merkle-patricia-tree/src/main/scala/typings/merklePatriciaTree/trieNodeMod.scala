@@ -1,6 +1,6 @@
 package typings.merklePatriciaTree
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object trieNodeMod {
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode")
   @js.native
-  class BranchNode ()
+  open class BranchNode ()
     extends StObject
        with TrieNode {
     
@@ -21,7 +21,7 @@ object trieNodeMod {
     
     var _value: Buffer | Null = js.native
     
-    def getBranch(i: Double): Buffer | js.Array[Buffer] | Null = js.native
+    def getBranch(i: Double): EmbeddedNode | Null = js.native
     
     def getChildren(): js.Array[js.Tuple2[Double, EmbeddedNode]] = js.native
     
@@ -49,7 +49,7 @@ object trieNodeMod {
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode")
   @js.native
-  class ExtensionNode protected ()
+  open class ExtensionNode protected ()
     extends StObject
        with TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
@@ -63,6 +63,9 @@ object trieNodeMod {
     def hash(): Buffer = js.native
     
     def key: Nibbles = js.native
+    
+    def keyLength: Double = js.native
+    
     def key_=(k: Nibbles): Unit = js.native
     
     def raw(): js.Tuple2[Buffer, Buffer] = js.native
@@ -86,7 +89,7 @@ object trieNodeMod {
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode")
   @js.native
-  class LeafNode protected ()
+  open class LeafNode protected ()
     extends StObject
        with TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
@@ -100,6 +103,9 @@ object trieNodeMod {
     def hash(): Buffer = js.native
     
     def key: Nibbles = js.native
+    
+    def keyLength: Double = js.native
+    
     def key_=(k: Nibbles): Unit = js.native
     
     def raw(): js.Tuple2[Buffer, Buffer] = js.native
@@ -125,7 +131,7 @@ object trieNodeMod {
   
   inline def decodeRawNode(raw: js.Array[Buffer]): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRawNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
   
-  inline def isRawNode(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawNode")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRawNode(n: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawNode")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type EmbeddedNode = Buffer | js.Array[Buffer]
   

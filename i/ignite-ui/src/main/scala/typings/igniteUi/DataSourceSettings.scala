@@ -10,7 +10,7 @@ trait DataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If set to true, the following behavior will take place:
@@ -37,31 +37,31 @@ trait DataSourceSettings
     * Object on which to invoke the callback function
     *
     */
-  var callee: js.UndefOr[js.Any] = js.undefined
+  var callee: js.UndefOr[Any] = js.undefined
   
   /**
     * This is the normalized (transformed) resulting data, after it's fetched from the data source
     *
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function
     *
     */
-  var dataBinding: js.UndefOr[js.Any] = js.undefined
+  var dataBinding: js.UndefOr[Any] = js.undefined
   
   /**
     * Client-side dataBound event. Can be a string pointing to a function name, or an object pointing to a function
     *
     */
-  var dataBound: js.UndefOr[js.Any] = js.undefined
+  var dataBound: js.UndefOr[Any] = js.undefined
   
   /**
     * This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * *** IMPORTANT DEPRECATED ***
@@ -69,7 +69,7 @@ trait DataSourceSettings
     * Field objects description: {name, [type], [xpath]}
     *
     */
-  var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var fields: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Settings related to built-in filtering functionality
@@ -197,7 +197,7 @@ trait DataSourceSettings
     * A schema object that defines which fields from the data to bind to
     *
     */
-  var schema: js.UndefOr[js.Any] = js.undefined
+  var schema: js.UndefOr[Any] = js.undefined
   
   /**
     * If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request.
@@ -248,13 +248,13 @@ trait DataSourceSettings
     * Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself
     *
     */
-  var urlParamsEncoded: js.UndefOr[js.Any] = js.undefined
+  var urlParamsEncoded: js.UndefOr[Any] = js.undefined
   
   /**
     * Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself
     *
     */
-  var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
+  var urlParamsEncoding: js.UndefOr[Any] = js.undefined
 }
 object DataSourceSettings {
   
@@ -277,33 +277,33 @@ object DataSourceSettings {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataBinding(value: js.Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
+    inline def setDataBinding(value: Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
     
     inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
-    inline def setDataBound(value: js.Any): Self = StObject.set(x, "dataBound", value.asInstanceOf[js.Any])
+    inline def setDataBound(value: Any): Self = StObject.set(x, "dataBound", value.asInstanceOf[js.Any])
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFiltering(value: DataSourceSettingsFiltering): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     
@@ -369,7 +369,7 @@ object DataSourceSettings {
     
     inline def setRowUpdatedUndefined: Self = StObject.set(x, "rowUpdated", js.undefined)
     
-    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
@@ -393,11 +393,11 @@ object DataSourceSettings {
     
     inline def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
     
-    inline def setUrlParamsEncoded(value: js.Any): Self = StObject.set(x, "urlParamsEncoded", value.asInstanceOf[js.Any])
+    inline def setUrlParamsEncoded(value: Any): Self = StObject.set(x, "urlParamsEncoded", value.asInstanceOf[js.Any])
     
     inline def setUrlParamsEncodedUndefined: Self = StObject.set(x, "urlParamsEncoded", js.undefined)
     
-    inline def setUrlParamsEncoding(value: js.Any): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
+    inline def setUrlParamsEncoding(value: Any): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
     
     inline def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
   }

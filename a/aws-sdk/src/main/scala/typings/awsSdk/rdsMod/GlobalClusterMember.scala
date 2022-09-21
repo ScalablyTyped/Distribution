@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalClusterMember extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) for each Aurora cluster. 
+    * The Amazon Resource Name (ARN) for each Aurora cluster.
     */
   var DBClusterArn: js.UndefOr[String] = js.undefined
   
@@ -17,12 +17,12 @@ trait GlobalClusterMember extends StObject {
   var GlobalWriteForwardingStatus: js.UndefOr[WriteForwardingStatus] = js.undefined
   
   /**
-    *  Specifies whether the Aurora cluster is the primary cluster (that is, has read-write capability) for the Aurora global database with which it is associated. 
+    * Specifies whether the Aurora cluster is the primary cluster (that is, has read-write capability) for the Aurora global database with which it is associated.
     */
   var IsWriter: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) for each read-only secondary cluster associated with the Aurora global database. 
+    * The Amazon Resource Name (ARN) for each read-only secondary cluster associated with the Aurora global database.
     */
   var Readers: js.UndefOr[ReadersArnList] = js.undefined
 }
@@ -51,6 +51,6 @@ object GlobalClusterMember {
     
     inline def setReadersUndefined: Self = StObject.set(x, "Readers", js.undefined)
     
-    inline def setReadersVarargs(value: String*): Self = StObject.set(x, "Readers", js.Array(value :_*))
+    inline def setReadersVarargs(value: String*): Self = StObject.set(x, "Readers", js.Array(value*))
   }
 }

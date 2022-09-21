@@ -8,5 +8,5 @@ object messageNotInflightMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/MessageNotInflight", "MessageNotInflight")
   @js.native
-  val MessageNotInflight: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MessageNotInflight: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

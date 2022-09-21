@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/app-compat" : "0.1.34"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/app-compat" : "0.1.34"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

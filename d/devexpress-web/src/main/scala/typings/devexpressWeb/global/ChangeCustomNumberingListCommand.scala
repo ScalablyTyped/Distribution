@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeCustomNumberingListCommand")
 @js.native
-class ChangeCustomNumberingListCommand ()
+open class ChangeCustomNumberingListCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeCustomNumberingListCommand {
   

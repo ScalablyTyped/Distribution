@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CoreTextEditContext extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_compositioncompleted(
     `type`: compositioncompleted,
@@ -33,7 +33,7 @@ trait CoreTextEditContext extends StObject {
     listener: TypedEventHandler[CoreTextEditContext, CoreTextCompositionStartedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_focusremoved(`type`: focusremoved, listener: TypedEventHandler[CoreTextEditContext, js.Any]): Unit = js.native
+  def addEventListener_focusremoved(`type`: focusremoved, listener: TypedEventHandler[CoreTextEditContext, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_formatupdating(
     `type`: formatupdating,
@@ -45,7 +45,7 @@ trait CoreTextEditContext extends StObject {
     listener: TypedEventHandler[CoreTextEditContext, CoreTextLayoutRequestedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_notifyfocusleavecompleted(`type`: notifyfocusleavecompleted, listener: TypedEventHandler[CoreTextEditContext, js.Any]): Unit = js.native
+  def addEventListener_notifyfocusleavecompleted(`type`: notifyfocusleavecompleted, listener: TypedEventHandler[CoreTextEditContext, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionrequested(
     `type`: selectionrequested,
@@ -115,10 +115,10 @@ trait CoreTextEditContext extends StObject {
   var oncompositionstarted_Original: TypedEventHandler[CoreTextEditContext, CoreTextCompositionStartedEventArgs] = js.native
   
   /** Occurs when focus was forcibly removed from a text input control. The application should handle this event to remove focus for the text input control accordingly. */
-  def onfocusremoved(ev: js.Any & WinRTEvent[CoreTextEditContext]): Unit = js.native
+  def onfocusremoved(ev: Any & WinRTEvent[CoreTextEditContext]): Unit = js.native
   /** Occurs when focus was forcibly removed from a text input control. The application should handle this event to remove focus for the text input control accordingly. */
   @JSName("onfocusremoved")
-  var onfocusremoved_Original: TypedEventHandler[CoreTextEditContext, js.Any] = js.native
+  var onfocusremoved_Original: TypedEventHandler[CoreTextEditContext, Any] = js.native
   
   /** Occurs when the text input server needs to apply a different format to a particular range of text. This usually happens during composition. */
   def onformatupdating(ev: CoreTextFormatUpdatingEventArgs & WinRTEvent[CoreTextEditContext]): Unit = js.native
@@ -133,10 +133,10 @@ trait CoreTextEditContext extends StObject {
   var onlayoutrequested_Original: TypedEventHandler[CoreTextEditContext, CoreTextLayoutRequestedEventArgs] = js.native
   
   /** Occurs after focus has left the text input control. */
-  def onnotifyfocusleavecompleted(ev: js.Any & WinRTEvent[CoreTextEditContext]): Unit = js.native
+  def onnotifyfocusleavecompleted(ev: Any & WinRTEvent[CoreTextEditContext]): Unit = js.native
   /** Occurs after focus has left the text input control. */
   @JSName("onnotifyfocusleavecompleted")
-  var onnotifyfocusleavecompleted_Original: TypedEventHandler[CoreTextEditContext, js.Any] = js.native
+  var onnotifyfocusleavecompleted_Original: TypedEventHandler[CoreTextEditContext, Any] = js.native
   
   /** Occurs when the text input server needs to get the text range representing the currently selected text in the text input control. The application should handle this event and return the range requested. */
   def onselectionrequested(ev: CoreTextSelectionRequestedEventArgs & WinRTEvent[CoreTextEditContext]): Unit = js.native
@@ -162,7 +162,7 @@ trait CoreTextEditContext extends StObject {
   @JSName("ontextupdating")
   var ontextupdating_Original: TypedEventHandler[CoreTextEditContext, CoreTextTextUpdatingEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_compositioncompleted(
     `type`: compositioncompleted,
@@ -174,7 +174,7 @@ trait CoreTextEditContext extends StObject {
     listener: TypedEventHandler[CoreTextEditContext, CoreTextCompositionStartedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_focusremoved(`type`: focusremoved, listener: TypedEventHandler[CoreTextEditContext, js.Any]): Unit = js.native
+  def removeEventListener_focusremoved(`type`: focusremoved, listener: TypedEventHandler[CoreTextEditContext, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_formatupdating(
     `type`: formatupdating,
@@ -186,7 +186,7 @@ trait CoreTextEditContext extends StObject {
     listener: TypedEventHandler[CoreTextEditContext, CoreTextLayoutRequestedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_notifyfocusleavecompleted(`type`: notifyfocusleavecompleted, listener: TypedEventHandler[CoreTextEditContext, js.Any]): Unit = js.native
+  def removeEventListener_notifyfocusleavecompleted(`type`: notifyfocusleavecompleted, listener: TypedEventHandler[CoreTextEditContext, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_selectionrequested(
     `type`: selectionrequested,

@@ -12,22 +12,22 @@ trait DescribeNotebookInstanceOutput extends StObject {
   var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
   
   /**
-    * An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+    * An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in Amazon Web Services CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with SageMaker Notebook Instances.
     */
   var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
   
   /**
     * A timestamp. Use this parameter to return the time when the notebook instance was created
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+    * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in Amazon Web Services CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with SageMaker Notebook Instances.
     */
   var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
   
   /**
-    * Describes whether Amazon SageMaker provides internet access to the notebook instance. If this value is set to Disabled, the notebook instance does not have internet access, and cannot connect to Amazon SageMaker training and endpoint services. For more information, see Notebook Instances Are Internet-Enabled by Default.
+    * Describes whether SageMaker provides internet access to the notebook instance. If this value is set to Disabled, the notebook instance does not have internet access, and cannot connect to SageMaker training and endpoint services. For more information, see Notebook Instances Are Internet-Enabled by Default.
     */
   var DirectInternetAccess: js.UndefOr[typings.awsSdk.sagemakerMod.DirectInternetAccess] = js.undefined
   
@@ -37,22 +37,27 @@ trait DescribeNotebookInstanceOutput extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
+    * Information on the IMDS configuration of the notebook instance
+    */
+  var InstanceMetadataServiceConfiguration: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceMetadataServiceConfiguration] = js.undefined
+  
+  /**
     * The type of ML compute instance running on the notebook instance.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceType] = js.undefined
   
   /**
-    * The AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance. 
+    * The Amazon Web Services KMS key ID SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance. 
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * A timestamp. Use this parameter to retrieve the time when the notebook instance was last modified. 
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The network interface IDs that Amazon SageMaker created at the time of creating the instance. 
+    * The network interface IDs that SageMaker created at the time of creating the instance. 
     */
   var NetworkInterfaceId: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkInterfaceId] = js.undefined
   
@@ -67,7 +72,7 @@ trait DescribeNotebookInstanceOutput extends StObject {
   var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceLifecycleConfigName] = js.undefined
   
   /**
-    * The name of the Amazon SageMaker notebook instance. 
+    * The name of the SageMaker notebook instance. 
     */
   var NotebookInstanceName: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceName] = js.undefined
   
@@ -75,6 +80,11 @@ trait DescribeNotebookInstanceOutput extends StObject {
     * The status of the notebook instance.
     */
   var NotebookInstanceStatus: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookInstanceStatus] = js.undefined
+  
+  /**
+    * The platform identifier of the notebook instance runtime environment.
+    */
+  var PlatformIdentifier: js.UndefOr[typings.awsSdk.sagemakerMod.PlatformIdentifier] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role associated with the instance. 
@@ -119,15 +129,15 @@ object DescribeNotebookInstanceOutput {
     
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "AcceleratorTypes", js.undefined)
     
-    inline def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value*))
     
     inline def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = StObject.set(x, "AdditionalCodeRepositories", value.asInstanceOf[js.Any])
     
     inline def setAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "AdditionalCodeRepositories", js.undefined)
     
-    inline def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value :_*))
+    inline def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value*))
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -143,6 +153,10 @@ object DescribeNotebookInstanceOutput {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
+    inline def setInstanceMetadataServiceConfiguration(value: InstanceMetadataServiceConfiguration): Self = StObject.set(x, "InstanceMetadataServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceMetadataServiceConfigurationUndefined: Self = StObject.set(x, "InstanceMetadataServiceConfiguration", js.undefined)
+    
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
@@ -151,7 +165,7 @@ object DescribeNotebookInstanceOutput {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -175,6 +189,10 @@ object DescribeNotebookInstanceOutput {
     
     inline def setNotebookInstanceStatusUndefined: Self = StObject.set(x, "NotebookInstanceStatus", js.undefined)
     
+    inline def setPlatformIdentifier(value: PlatformIdentifier): Self = StObject.set(x, "PlatformIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformIdentifierUndefined: Self = StObject.set(x, "PlatformIdentifier", js.undefined)
+    
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
@@ -187,7 +205,7 @@ object DescribeNotebookInstanceOutput {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

@@ -17,15 +17,15 @@ trait XJobListener
     * @param Job identifies the asynchronous job so that {@link theJobExecutor} can differ between more than ones.
     * @param Result should be the same like for the synchronous mode on {@link XJob.execute()} . It provides information about success or failure of job execu
     */
-  def jobFinished(Job: XAsyncJob, Result: js.Any): Unit
+  def jobFinished(Job: XAsyncJob, Result: Any): Unit
 }
 object XJobListener {
   
   inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
-    jobFinished: (XAsyncJob, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    jobFinished: (XAsyncJob, Any) => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XJobListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), jobFinished = js.Any.fromFunction2(jobFinished), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -34,6 +34,6 @@ object XJobListener {
   
   extension [Self <: XJobListener](x: Self) {
     
-    inline def setJobFinished(value: (XAsyncJob, js.Any) => Unit): Self = StObject.set(x, "jobFinished", js.Any.fromFunction2(value))
+    inline def setJobFinished(value: (XAsyncJob, Any) => Unit): Self = StObject.set(x, "jobFinished", js.Any.fromFunction2(value))
   }
 }

@@ -16,7 +16,7 @@ object sshGenerateMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/ssh/generate", "SSHGenerateCommand")
   @js.native
-  class SSHGenerateCommand protected () extends SSHBaseCommand {
+  open class SSHGenerateCommand protected () extends SSHBaseCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native

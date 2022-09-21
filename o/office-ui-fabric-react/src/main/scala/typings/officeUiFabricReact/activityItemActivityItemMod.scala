@@ -10,20 +10,20 @@ object activityItemActivityItemMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem", "ActivityItem")
   @js.native
-  class ActivityItem protected ()
-    extends Component[IActivityItemProps, js.Object, js.Any] {
+  open class ActivityItem protected ()
+    extends Component[IActivityItemProps, js.Object, Any] {
     def this(props: IActivityItemProps) = this()
     
-    /* private */ var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: Any = js.native
     
-    /* private */ var _onRenderActivityDescription: js.Any = js.native
+    /* private */ var _onRenderActivityDescription: Any = js.native
     
-    /* private */ var _onRenderComments: js.Any = js.native
+    /* private */ var _onRenderComments: Any = js.native
     
-    /* private */ var _onRenderIcon: js.Any = js.native
+    /* private */ var _onRenderIcon: Any = js.native
     
-    /* private */ var _onRenderPersonaArray: js.Any = js.native
+    /* private */ var _onRenderPersonaArray: Any = js.native
     
-    /* private */ var _onRenderTimeStamp: js.Any = js.native
+    /* private */ var _onRenderTimeStamp: Any = js.native
   }
 }

@@ -10,10 +10,10 @@ Functional programming date management.
 | ------------------ | :-------------: |
 | Full name          | date-fp |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 39426 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2032.3333333333333 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/cullophid/date-fp#readme)

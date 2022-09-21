@@ -8,5 +8,5 @@ object getFolderMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetFolder", "GetFolder")
   @js.native
-  val GetFolder: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetFolder: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -75,5 +75,5 @@ trait LayerGroup[L]
   def removeLayers(layers: L): this.type = js.native
   def removeLayers(layers: js.Array[L]): this.type = js.native
   
-  def setOptions(options: js.Any): this.type = js.native
+  def setOptions(options: Any): this.type = js.native
 }

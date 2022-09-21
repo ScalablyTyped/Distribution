@@ -23,6 +23,6 @@ object MediaGalleriesPermission {
     
     inline def setMediaGalleries(value: js.Array[read_ | allAutoDetected]): Self = StObject.set(x, "mediaGalleries", value.asInstanceOf[js.Any])
     
-    inline def setMediaGalleriesVarargs(value: (read_ | allAutoDetected)*): Self = StObject.set(x, "mediaGalleries", js.Array(value :_*))
+    inline def setMediaGalleriesVarargs(value: (read_ | allAutoDetected)*): Self = StObject.set(x, "mediaGalleries", js.Array(value*))
   }
 }

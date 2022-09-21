@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicemanagement.anon
 
-import typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement.EnableServiceRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +19,9 @@ trait ServiceName extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The id of the service configuration resource. This field must be specified for the server to return all fields, including `SourceInfo`. */
+  var configId: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -35,10 +37,7 @@ trait ServiceName extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: EnableServiceRequest
-  
-  /** Required. Name of the service to enable. Specifying an unknown service name will cause the request to fail. */
+  /** Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
   var serviceName: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -46,11 +45,14 @@ trait ServiceName extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Specifies which parts of the Service Config should be returned in the response. */
+  var view: js.UndefOr[String] = js.undefined
 }
 object ServiceName {
   
-  inline def apply(resource: EnableServiceRequest, serviceName: String): ServiceName = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
+  inline def apply(serviceName: String): ServiceName = {
+    val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceName]
   }
   
@@ -72,6 +74,10 @@ object ServiceName {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -92,8 +98,6 @@ object ServiceName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: EnableServiceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
@@ -103,5 +107,9 @@ object ServiceName {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.dav.mod
 
+import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ object request {
     * @param options
     * @returns
     */
-  inline def addressBookQuery(options: AddressBookQueryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addressBookQuery")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def addressBookQuery(options: AddressBookQueryOptions): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("addressBookQuery")(options.asInstanceOf[js.Any]).asInstanceOf[Request_]
   
   /**
     *
@@ -29,21 +30,36 @@ object request {
     * @param options
     * @returns
     */
-  inline def calendarQuery(options: CalendarQueryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calendarQuery")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def calendarQuery(options: CalendarQueryOptions): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("calendarQuery")(options.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  
+  /**
+    *
+    * @param requestData
+    * @param options
+    * @returns
+    */
+  inline def collectionQuery(requestData: String, options: SetRequestHeadersOptions): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionQuery")(requestData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   /**
     *
     * @param options
     * @returns
     */
-  inline def propfind(options: PropfindOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def propfind(options: PropfindOptions): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(options.asInstanceOf[js.Any]).asInstanceOf[Request_]
   
   /**
     *
     * @param options
     * @returns
     */
-  inline def syncCollection(options: SyncCollectionOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("syncCollection")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def setRequestHeaders(request: XMLHttpRequest, options: SetRequestHeadersOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRequestHeaders")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    *
+    * @param options
+    * @returns
+    */
+  inline def syncCollection(options: SyncCollectionOptions): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("syncCollection")(options.asInstanceOf[js.Any]).asInstanceOf[Request_]
   
   trait AddressBookQueryOptions extends StObject {
     
@@ -72,7 +88,7 @@ object request {
       
       inline def setProps(value: js.Array[js.Object]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value*))
     }
   }
   
@@ -147,11 +163,11 @@ object request {
       
       inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setProps(value: js.Array[js.Object]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value*))
       
       inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
@@ -163,6 +179,11 @@ object request {
       *  value for Depth header.
       */
     var depth: js.UndefOr[String] = js.undefined
+    
+    /**
+      * whether to merge the response props.
+      */
+    var mergeResponses: js.UndefOr[Boolean] = js.undefined
     
     /**
       * list of props to request.
@@ -182,9 +203,53 @@ object request {
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
+      inline def setMergeResponses(value: Boolean): Self = StObject.set(x, "mergeResponses", value.asInstanceOf[js.Any])
+      
+      inline def setMergeResponsesUndefined: Self = StObject.set(x, "mergeResponses", js.undefined)
+      
       inline def setProps(value: js.Array[js.Object]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value*))
+    }
+  }
+  
+  trait SetRequestHeadersOptions extends StObject {
+    
+    /**
+      * value for Content-Type header.
+      */
+    var contentType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * value for Depth header.
+      */
+    var depth: js.UndefOr[String] = js.undefined
+    
+    /**
+      * value for If-Match header.
+      */
+    var etag: js.UndefOr[String] = js.undefined
+  }
+  object SetRequestHeadersOptions {
+    
+    inline def apply(): SetRequestHeadersOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SetRequestHeadersOptions]
+    }
+    
+    extension [Self <: SetRequestHeadersOptions](x: Self) {
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     }
   }
   
@@ -225,7 +290,7 @@ object request {
       
       inline def setProps(value: js.Array[js.Object]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: js.Object*): Self = StObject.set(x, "props", js.Array(value*))
       
       inline def setSyncLevel(value: Double): Self = StObject.set(x, "syncLevel", value.asInstanceOf[js.Any])
       

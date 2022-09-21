@@ -1,13 +1,12 @@
 package typings.forgeViewer.global.Autodesk.Viewing
 
-import typings.forgeViewer.Autodesk.Viewing.ToolInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Autodesk.Viewing.ToolController")
 @js.native
-class ToolController ()
+open class ToolController ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.ToolController {
   
@@ -18,28 +17,31 @@ class ToolController ()
   override def deactivateTool(name: String): Boolean = js.native
   
   /* CompleteClass */
-  override def deregisterTool(tool: js.Any): Boolean = js.native
+  override def deregisterTool(tool: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def getActiveTool(): ToolInterface = js.native
+  override def getActiveTool(): typings.forgeViewer.Autodesk.Viewing.ToolInterface = js.native
   
   /* CompleteClass */
   override def getActiveToolName(): String = js.native
   
   /* CompleteClass */
-  override def getDefaultTool(): ToolInterface = js.native
+  override def getDefaultTool(): typings.forgeViewer.Autodesk.Viewing.ToolInterface = js.native
   
   /* CompleteClass */
   override def getIsLocked(): Boolean = js.native
   
   /* CompleteClass */
-  override def getTool(name: String): ToolInterface = js.native
+  override def getTool(name: String): typings.forgeViewer.Autodesk.Viewing.ToolInterface = js.native
   
   /* CompleteClass */
   override def getToolNames(): js.Array[String] = js.native
   
   /* CompleteClass */
-  override def registerTool(tool: js.Any): Boolean = js.native
+  override def recordHomeView(): Unit = js.native
+  
+  /* CompleteClass */
+  override def registerTool(tool: Any): Boolean = js.native
   
   /* CompleteClass */
   override def setIsLocked(state: Boolean): Boolean = js.native

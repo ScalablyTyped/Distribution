@@ -46,6 +46,6 @@ object Scale {
     
     inline def setZoomOrderUndefined: Self = StObject.set(x, "zoomOrder", js.undefined)
     
-    inline def setZoomOrderVarargs(value: String*): Self = StObject.set(x, "zoomOrder", js.Array(value :_*))
+    inline def setZoomOrderVarargs(value: String*): Self = StObject.set(x, "zoomOrder", js.Array(value*))
   }
 }

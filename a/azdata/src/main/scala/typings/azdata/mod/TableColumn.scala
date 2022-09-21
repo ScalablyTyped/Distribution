@@ -10,6 +10,9 @@ trait TableColumn extends StObject {
   
   var headerCssClass: js.UndefOr[String] = js.undefined
   
+  /**
+    * @deprecated options property is deprecated, use specific column types to access the options directly
+    */
   var options: js.UndefOr[CheckboxColumnOption | TextColumnOption] = js.undefined
   
   var toolTip: js.UndefOr[String] = js.undefined

@@ -11,9 +11,9 @@ Checkbox component for react native, it works on iOS and Android.
 | Full name          | react-native-check-box |
 | Keywords           | react-native, react-native-component, react-native-checkbox, check-box, check, box, react-component, ios, android |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 667488 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69852.33333333333 |
+| # stars            | 497.0 |
 
 ## Links
 - [Homepage](https://github.com/crazycodeboy/react-native-check-box#readme)

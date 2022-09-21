@@ -1,6 +1,5 @@
 package typings.uniApp
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait SendSocketMessageOptions extends StObject {
   /**
     * 需要发送的内容
     */
-  var data: js.UndefOr[String | ArrayBuffer] = js.undefined
+  var data: js.UndefOr[String | js.typedarray.ArrayBuffer] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -40,7 +39,7 @@ object SendSocketMessageOptions {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

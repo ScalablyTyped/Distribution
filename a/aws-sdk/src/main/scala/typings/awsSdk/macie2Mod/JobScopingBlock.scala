@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobScopingBlock extends StObject {
   
   /**
-    * An array of conditions, one for each condition that determines which objects to include or exclude from the job.
+    * An array of conditions, one for each property- or tag-based condition that determines which objects to include or exclude from the job. If you specify more than one condition, Amazon Macie uses AND logic to join the conditions.
     */
   var and: js.UndefOr[listOfJobScopeTerm] = js.undefined
 }
@@ -24,6 +24,6 @@ object JobScopingBlock {
     
     inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
-    inline def setAndVarargs(value: JobScopeTerm*): Self = StObject.set(x, "and", js.Array(value :_*))
+    inline def setAndVarargs(value: JobScopeTerm*): Self = StObject.set(x, "and", js.Array(value*))
   }
 }

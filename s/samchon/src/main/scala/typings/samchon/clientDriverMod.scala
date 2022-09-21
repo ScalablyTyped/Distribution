@@ -13,11 +13,11 @@ object clientDriverMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iclientdriverMod.IClientDriver because var conflicts: onClose. Inlined listen */ @JSImport("samchon/protocol/communicator/client_driver/ClientDriver", "ClientDriver")
   @js.native
-  class ClientDriver protected () extends Communicator {
+  open class ClientDriver protected () extends Communicator {
     /**
       * Construct from a socket.
       */
-    def this(socket: js.Any) = this()
+    def this(socket: Any) = this()
     
     /**
       * @inheritdoc

@@ -33,7 +33,7 @@ trait ValuesResource extends StObject {
   def batchClear(request: Callback, body: BatchClearValuesRequest): typings.gapiClient.gapi.client.Request[BatchClearValuesResponse] = js.native
   /**
     * Clears one or more ranges of values from a spreadsheet. The caller must specify the spreadsheet ID and one or more ranges. Only values are cleared -- all other properties of the
-    * cell (such as formatting, data validation, etc..) are kept.
+    * cell (such as formatting and data validation) are kept.
     */
   def batchClear(request: Oauthtoken): typings.gapiClient.gapi.client.Request[BatchClearValuesResponse] = js.native
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ms-rest-azure
 
-Typings are for version 2.6.0
+Typings are for version 3.0.2
 
 ## Library description:
 Client Runtime for Node.js Azure client libraries generated using AutoRest
@@ -11,9 +11,9 @@ Client Runtime for Node.js Azure client libraries generated using AutoRest
 | Full name          | ms-rest-azure |
 | Keywords           | node, microsoft, autorest, azure, clientruntime |
 | # releases         | 5 |
-| # dependents       | 168 |
-| # downloads        | 4413952 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 575522.3333333334 |
+| # stars            | 1176.0 |
 
 ## Links
 - [Homepage](https://github.com/Azure/azure-sdk-for-node#readme)

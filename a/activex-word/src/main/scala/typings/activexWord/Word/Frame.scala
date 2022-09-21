@@ -28,7 +28,7 @@ trait Frame extends StObject {
   
   var LockAnchor: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -67,7 +67,7 @@ object Frame {
     HorizontalDistanceFromText: Double,
     HorizontalPosition: Double,
     LockAnchor: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     RelativeHorizontalPosition: WdRelativeHorizontalPosition,
     RelativeVerticalPosition: WdRelativeVerticalPosition,
@@ -109,7 +109,7 @@ object Frame {
     
     inline def setLockAnchor(value: Boolean): Self = StObject.set(x, "LockAnchor", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

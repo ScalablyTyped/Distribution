@@ -16,7 +16,7 @@ object distRepositoryMod {
   - typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef because Already inherited
   - typings.typedGithubApi.interfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @JSImport("typed-github-api/dist/repository", "RepositoryClass")
   @js.native
-  class RepositoryClass protected () extends RepositoryRefClass {
+  open class RepositoryClass protected () extends RepositoryRefClass {
     def this(repository: Repository, options: OptionsOrRef) = this()
     
     var allowMergeCommit: Boolean = js.native

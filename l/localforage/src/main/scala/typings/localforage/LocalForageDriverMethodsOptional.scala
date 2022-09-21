@@ -18,7 +18,7 @@ object LocalForageDriverMethodsOptional {
   extension [Self <: LocalForageDriverMethodsOptional](x: Self) {
     
     inline def setDropInstance(
-      value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
+      value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ Any, Unit]]) => js.Promise[Unit]
     ): Self = StObject.set(x, "dropInstance", js.Any.fromFunction2(value))
     
     inline def setDropInstanceUndefined: Self = StObject.set(x, "dropInstance", js.undefined)

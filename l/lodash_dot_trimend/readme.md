@@ -10,10 +10,10 @@ The lodash method `_.trimEnd` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.trimend |
 | Keywords           | lodash-modularized, trimend |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 4653425 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 404511.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

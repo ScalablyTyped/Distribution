@@ -17,7 +17,7 @@ object noConsecutiveBlankLinesRuleMod {
   
   @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

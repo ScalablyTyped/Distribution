@@ -5,20 +5,23 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Table {
   
-  type Table = Component[TableProps, js.Object, js.Any]
+  type Table = Component[TableProps, js.Object, Any]
   
-  type TableBody = Component[TableBodyProps, js.Object, js.Any]
+  type TableBody = Component[TableBodyProps, js.Object, Any]
   
   trait TableBodyProps extends StObject {
     
     /** @deprecated Instead, use property on Table */
     var allRowsSelected: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -70,6 +73,10 @@ object Table {
       inline def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
       
       inline def setAllRowsSelectedUndefined: Self = StObject.set(x, "allRowsSelected", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -133,12 +140,14 @@ object Table {
     }
   }
   
-  type TableFooter = Component[TableFooterProps, js.Object, js.Any]
+  type TableFooter = Component[TableFooterProps, js.Object, Any]
   
   trait TableFooterProps extends StObject {
     
     // <tfoot/> is element that get the 'other' properties
     var adjustForCheckbox: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -157,6 +166,10 @@ object Table {
       
       inline def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -167,11 +180,13 @@ object Table {
     }
   }
   
-  type TableHeader = Component[TableHeaderProps, js.Object, js.Any]
+  type TableHeader = Component[TableHeaderProps, js.Object, Any]
   
-  type TableHeaderColumn = Component[TableHeaderColumnProps, js.Object, js.Any]
+  type TableHeaderColumn = Component[TableHeaderColumnProps, js.Object, Any]
   
   trait TableHeaderColumnProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // <th/> is element that get the 'other' properties
     var className: js.UndefOr[String] = js.undefined
@@ -203,6 +218,10 @@ object Table {
     }
     
     extension [Self <: TableHeaderColumnProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -246,6 +265,8 @@ object Table {
     
     var adjustForCheckbox: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var displaySelectAll: js.UndefOr[Boolean] = js.undefined
@@ -272,6 +293,10 @@ object Table {
       inline def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
       
       inline def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -304,6 +329,8 @@ object Table {
     var allRowsSelected: js.UndefOr[Boolean] = js.undefined
     
     var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -353,6 +380,10 @@ object Table {
       inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       
       inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -420,11 +451,13 @@ object Table {
     }
   }
   
-  type TableRow = Component[TableRowProps, js.Object, js.Any]
+  type TableRow = Component[TableRowProps, js.Object, Any]
   
-  type TableRowColumn = Component[TableRowColumnProps, js.Object, js.Any]
+  type TableRowColumn = Component[TableRowColumnProps, js.Object, Any]
   
   trait TableRowColumnProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // <td/> is element that get the 'other' properties
     var className: js.UndefOr[String] = js.undefined
@@ -465,6 +498,10 @@ object Table {
     }
     
     extension [Self <: TableRowColumnProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -509,6 +546,8 @@ object Table {
   }
   
   trait TableRowProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // <tr/> is element that get the 'other' properties
     var className: js.UndefOr[String] = js.undefined
@@ -582,6 +621,10 @@ object Table {
     }
     
     extension [Self <: TableRowProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

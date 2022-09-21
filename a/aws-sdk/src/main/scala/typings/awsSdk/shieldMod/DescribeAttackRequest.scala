@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAttackRequest extends StObject {
   
   /**
-    * The unique identifier (ID) for the attack that to be described.
+    * The unique identifier (ID) for the attack.
     */
   var AttackId: typings.awsSdk.shieldMod.AttackId
 }

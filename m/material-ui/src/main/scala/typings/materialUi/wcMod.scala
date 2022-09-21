@@ -10,10 +10,10 @@ object wcMod {
   
   @JSImport("material-ui/svg-icons/notification/wc", JSImport.Default)
   @js.native
-  class default () extends NotificationWc
+  open class default () extends NotificationWc
   
   @JSImport("material-ui/svg-icons/notification/wc", "NotificationWc")
   @js.native
-  class NotificationWc ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationWc ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

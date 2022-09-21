@@ -10,10 +10,10 @@ XML Serialization and Parsing module based on Python's ElementTree.
 | ------------------ | :-------------: |
 | Full name          | elementtree |
 | Keywords           | xml, sax, parser, seralization, elementtree |
-| # releases         | 0 |
-| # dependents       | 219 |
-| # downloads        | 8482618 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1335862.3333333333 |
+| # stars            | 127.0 |
 
 ## Links
 - [Homepage](https://github.com/racker/node-elementtree)

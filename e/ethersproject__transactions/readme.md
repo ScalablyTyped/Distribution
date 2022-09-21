@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__transactions
 
-Typings are for version 5.0.7
+Typings are for version 5.7.0
 
 ## Library description:
 Utilities for decoding and encoding Ethereum transaction for ethers.
@@ -10,10 +10,10 @@ Utilities for decoding and encoding Ethereum transaction for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/transactions |
 | Keywords           | Ethereum, ethers |
-| # releases         | 31 |
-| # dependents       | 31 |
-| # downloads        | 2463669 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 3587045.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

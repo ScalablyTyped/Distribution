@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Emitter")
 @js.native
-class Emitter protected ()
+open class Emitter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Emitter {
   def this(

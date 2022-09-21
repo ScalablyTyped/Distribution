@@ -10,10 +10,10 @@ object viewModuleMod {
   
   @JSImport("material-ui/svg-icons/action/view-module", JSImport.Default)
   @js.native
-  class default () extends ActionViewModule
+  open class default () extends ActionViewModule
   
   @JSImport("material-ui/svg-icons/action/view-module", "ActionViewModule")
   @js.native
-  class ActionViewModule ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewModule ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

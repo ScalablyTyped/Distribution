@@ -22,20 +22,23 @@ trait Alt extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** The standard list filter. */
+  var filter: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
+  
+  /** The name of the operation's parent resource. */
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Number of databases to be returned in the response. If 0 or less, defaults to the server's maximum allowed page size. */
+  /** The standard list page size. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** If non-empty, `page_token` should contain a next_page_token from a previous ListDatabasesResponse. */
+  /** The standard list page token. */
   var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** Required. The instance whose databases should be listed. Values are of the form `projects//instances/`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -51,8 +54,8 @@ trait Alt extends StObject {
 }
 object Alt {
   
-  inline def apply(parent: String): Alt = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String): Alt = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -78,9 +81,15 @@ object Alt {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -93,8 +102,6 @@ object Alt {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffLine")
 @js.native
-class DiffLine ()
+open class DiffLine ()
   extends typings.nodegit.diffLineMod.DiffLine

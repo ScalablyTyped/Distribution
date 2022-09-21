@@ -47,12 +47,12 @@ object XFrames {
     ElementType: `type`,
     acquire: () => Unit,
     append: XFrame => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     queryFrames: Double => SafeArray[XFrame],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XFrame => Unit
   ): XFrames = {

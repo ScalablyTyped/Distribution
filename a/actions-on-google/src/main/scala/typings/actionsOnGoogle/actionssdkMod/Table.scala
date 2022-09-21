@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "Table")
 @js.native
-class Table protected ()
+open class Table protected ()
   extends typings.actionsOnGoogle.conversationMod.Table {
   /** @public */
   def this(options: TableOptions) = this()

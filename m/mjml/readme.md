@@ -1,7 +1,7 @@
 
 # Scala.js typings for mjml
 
-Typings are for version 4.0
+Typings are for version 4.7
 
 ## Library description:
 MJML: the only framework that makes responsive-email easy
@@ -10,10 +10,10 @@ MJML: the only framework that makes responsive-email easy
 | ------------------ | :-------------: |
 | Full name          | mjml |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 149 |
-| # downloads        | 6411561 |
-| # stars            | 12 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1389548.3333333333 |
+| # stars            | 13815.0 |
 
 ## Links
 - [Homepage](https://mjml.io)

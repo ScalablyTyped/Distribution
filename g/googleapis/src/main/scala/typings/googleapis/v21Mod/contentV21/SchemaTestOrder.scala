@@ -7,41 +7,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTestOrder extends StObject {
   
   /**
+    * Overrides the predefined delivery details if provided.
+    */
+  var deliveryDetails: js.UndefOr[SchemaTestOrderDeliveryDetails] = js.undefined
+  
+  /**
     * Whether the orderinvoices service should support this order.
     */
-  var enableOrderinvoices: js.UndefOr[Boolean] = js.undefined
+  var enableOrderinvoices: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#testOrder&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#testOrder`"
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Line items that are ordered. At least one line item must be provided.
+    * Required. Line items that are ordered. At least one line item must be provided.
     */
   var lineItems: js.UndefOr[js.Array[SchemaTestOrderLineItem]] = js.undefined
   
   /**
-    * Determines if test order must be pulled by merchant or pushed to merchant
-    * via push integration.
+    * Restricted. Do not use.
     */
-  var notificationMode: js.UndefOr[String] = js.undefined
+  var notificationMode: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The billing address.
+    * Overrides the predefined pickup details if provided.
     */
-  var predefinedBillingAddress: js.UndefOr[String] = js.undefined
+  var pickupDetails: js.UndefOr[SchemaTestOrderPickupDetails] = js.undefined
   
   /**
-    * Identifier of one of the predefined delivery addresses for the delivery.
+    * Required. The billing address. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`"
     */
-  var predefinedDeliveryAddress: js.UndefOr[String] = js.undefined
+  var predefinedBillingAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Email address of the customer.
+    * Required. Identifier of one of the predefined delivery addresses for the delivery. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`"
     */
-  var predefinedEmail: js.UndefOr[String] = js.undefined
+  var predefinedDeliveryAddress: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. Email address of the customer. Acceptable values are: - "`pog.dwight.schrute@gmail.com`" - "`pog.jim.halpert@gmail.com`" - "`penpog.pam.beesly@gmail.comding`"
+    */
+  var predefinedEmail: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Identifier of one of the predefined pickup details. Required for orders containing line items with shipping type `pickup`. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`"
+    */
+  var predefinedPickupDetails: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Promotions associated with the order.
@@ -49,16 +62,14 @@ trait SchemaTestOrder extends StObject {
   var promotions: js.UndefOr[js.Array[SchemaOrderPromotion]] = js.undefined
   
   /**
-    * The price of shipping for all items. Shipping tax is automatically
-    * calculated for MFL orders. For non-MFL orders, tax settings from Merchant
-    * Center are applied. Note that shipping is not taxed in certain states.
+    * Required. The price of shipping for all items. Shipping tax is automatically calculated for orders where marketplace facilitator tax laws are applicable. Otherwise, tax settings from Merchant Center are applied. Note that shipping is not taxed in certain states.
     */
   var shippingCost: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * The requested shipping option.
+    * Required. The requested shipping option. Acceptable values are: - "`economy`" - "`expedited`" - "`oneDay`" - "`sameDay`" - "`standard`" - "`twoDay`"
     */
-  var shippingOption: js.UndefOr[String] = js.undefined
+  var shippingOption: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTestOrder {
   
@@ -69,11 +80,19 @@ object SchemaTestOrder {
   
   extension [Self <: SchemaTestOrder](x: Self) {
     
+    inline def setDeliveryDetails(value: SchemaTestOrderDeliveryDetails): Self = StObject.set(x, "deliveryDetails", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryDetailsUndefined: Self = StObject.set(x, "deliveryDetails", js.undefined)
+    
     inline def setEnableOrderinvoices(value: Boolean): Self = StObject.set(x, "enableOrderinvoices", value.asInstanceOf[js.Any])
+    
+    inline def setEnableOrderinvoicesNull: Self = StObject.set(x, "enableOrderinvoices", null)
     
     inline def setEnableOrderinvoicesUndefined: Self = StObject.set(x, "enableOrderinvoices", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -81,35 +100,55 @@ object SchemaTestOrder {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: SchemaTestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: SchemaTestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setNotificationMode(value: String): Self = StObject.set(x, "notificationMode", value.asInstanceOf[js.Any])
     
+    inline def setNotificationModeNull: Self = StObject.set(x, "notificationMode", null)
+    
     inline def setNotificationModeUndefined: Self = StObject.set(x, "notificationMode", js.undefined)
     
+    inline def setPickupDetails(value: SchemaTestOrderPickupDetails): Self = StObject.set(x, "pickupDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPickupDetailsUndefined: Self = StObject.set(x, "pickupDetails", js.undefined)
+    
     inline def setPredefinedBillingAddress(value: String): Self = StObject.set(x, "predefinedBillingAddress", value.asInstanceOf[js.Any])
+    
+    inline def setPredefinedBillingAddressNull: Self = StObject.set(x, "predefinedBillingAddress", null)
     
     inline def setPredefinedBillingAddressUndefined: Self = StObject.set(x, "predefinedBillingAddress", js.undefined)
     
     inline def setPredefinedDeliveryAddress(value: String): Self = StObject.set(x, "predefinedDeliveryAddress", value.asInstanceOf[js.Any])
     
+    inline def setPredefinedDeliveryAddressNull: Self = StObject.set(x, "predefinedDeliveryAddress", null)
+    
     inline def setPredefinedDeliveryAddressUndefined: Self = StObject.set(x, "predefinedDeliveryAddress", js.undefined)
     
     inline def setPredefinedEmail(value: String): Self = StObject.set(x, "predefinedEmail", value.asInstanceOf[js.Any])
     
+    inline def setPredefinedEmailNull: Self = StObject.set(x, "predefinedEmail", null)
+    
     inline def setPredefinedEmailUndefined: Self = StObject.set(x, "predefinedEmail", js.undefined)
+    
+    inline def setPredefinedPickupDetails(value: String): Self = StObject.set(x, "predefinedPickupDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPredefinedPickupDetailsNull: Self = StObject.set(x, "predefinedPickupDetails", null)
+    
+    inline def setPredefinedPickupDetailsUndefined: Self = StObject.set(x, "predefinedPickupDetails", js.undefined)
     
     inline def setPromotions(value: js.Array[SchemaOrderPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    inline def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value*))
     
     inline def setShippingCost(value: SchemaPrice): Self = StObject.set(x, "shippingCost", value.asInstanceOf[js.Any])
     
     inline def setShippingCostUndefined: Self = StObject.set(x, "shippingCost", js.undefined)
     
     inline def setShippingOption(value: String): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
+    
+    inline def setShippingOptionNull: Self = StObject.set(x, "shippingOption", null)
     
     inline def setShippingOptionUndefined: Self = StObject.set(x, "shippingOption", js.undefined)
   }

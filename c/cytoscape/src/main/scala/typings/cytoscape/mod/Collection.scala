@@ -52,7 +52,7 @@ trait Collection[TOut, TIn]
     * @param thisArg [optional] The value for this within the iterating function.
     */
   def each(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
-  def each(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean], thisArg: js.Any): this.type = js.native
+  def each(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean], thisArg: Any): this.type = js.native
   
   /**
     * Get whether the collection is empty, meaning it has no elements.
@@ -74,7 +74,7 @@ trait Collection[TOut, TIn]
   def first(): TIn = js.native
   
   def forEach(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
-  def forEach(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean], thisArg: js.Any): this.type = js.native
+  def forEach(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean], thisArg: Any): this.type = js.native
   
   /**
     * Get the last element in the collection.

@@ -21,7 +21,7 @@ trait JQueryCLEditorButtonDefinitionEventData extends StObject {
   
   var useCSS: Boolean
   
-  var value: js.Any
+  var value: Any
 }
 object JQueryCLEditorButtonDefinitionEventData {
   
@@ -33,7 +33,7 @@ object JQueryCLEditorButtonDefinitionEventData {
     popup: HTMLElement,
     popupName: String,
     useCSS: Boolean,
-    value: js.Any
+    value: Any
   ): JQueryCLEditorButtonDefinitionEventData = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonName = buttonName.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], popupName = popupName.asInstanceOf[js.Any], useCSS = useCSS.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorButtonDefinitionEventData]
@@ -55,6 +55,6 @@ object JQueryCLEditorButtonDefinitionEventData {
     
     inline def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -2,7 +2,7 @@ package typings.grunt.grunt
 
 import typings.grunt.anon.Force
 import typings.grunt.minimatch.IMinimatchOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,11 +82,11 @@ object file {
       */
     def expandMapping(patterns: js.Array[String], dest: String, options: IExpandedFilesConfig): js.Array[IFileMap] = js.native
     
-    var findup: js.Any = js.native
+    var findup: Any = js.native
     
     // External libraries
     // TODO: Create declarations
-    var glob: js.Any = js.native
+    var glob: Any = js.native
     
     /**
       * Is the given path a symbolic link?
@@ -144,7 +144,7 @@ object file {
     def `match`(patterns: js.Array[String], filepath: String): js.Array[String] = js.native
     def `match`(patterns: js.Array[String], filepaths: js.Array[String]): js.Array[String] = js.native
     
-    var minimatch: js.Any = js.native
+    var minimatch: Any = js.native
     
     /**
       * Works like mkdir -p. Create a directory along with any intermediate directories.
@@ -164,14 +164,14 @@ object file {
       * Read a file's contents, parsing the data as JSON and returning the result.
       * @see FileModule.read for a list of supported options.
       */
-    def readJSON(filepath: String): js.Any = js.native
+    def readJSON(filepath: String): Any = js.native
     def readJSON(filepath: String, options: IFileEncodedOption): Buffer = js.native
     
     /**
       * Read a file's contents, parsing the data as YAML and returning the result.
       * @see FileModule.read for a list of supported options.
       */
-    def readYAML(filepath: String): js.Any = js.native
+    def readYAML(filepath: String): Any = js.native
     def readYAML(filepath: String, options: IFileEncodedOption): Buffer = js.native
     
     /**
@@ -310,7 +310,7 @@ object file {
       
       inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
     }
   }
   
@@ -361,7 +361,7 @@ object file {
       */
     // noProcess?: string[]
     // noProcess?: boolean
-    var noProcess: js.UndefOr[js.Any] = js.undefined
+    var noProcess: js.UndefOr[Any] = js.undefined
   }
   object IFileWriteOptions {
     
@@ -372,7 +372,7 @@ object file {
     
     extension [Self <: IFileWriteOptions](x: Self) {
       
-      inline def setNoProcess(value: js.Any): Self = StObject.set(x, "noProcess", value.asInstanceOf[js.Any])
+      inline def setNoProcess(value: Any): Self = StObject.set(x, "noProcess", value.asInstanceOf[js.Any])
       
       inline def setNoProcessUndefined: Self = StObject.set(x, "noProcess", js.undefined)
     }
@@ -471,7 +471,7 @@ object file {
       */
     // filter?: string
     // filter?: (src: string) => boolean
-    var filter: js.UndefOr[js.Any] = js.undefined
+    var filter: js.UndefOr[Any] = js.undefined
     
     /**
       * Pattern(s) to match, relative to the {@link IExpandedFilesConfig.cwd}.
@@ -499,7 +499,7 @@ object file {
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -507,7 +507,7 @@ object file {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
     }
   }
 }

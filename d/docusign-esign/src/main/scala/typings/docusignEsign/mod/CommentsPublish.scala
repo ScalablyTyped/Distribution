@@ -21,6 +21,6 @@ object CommentsPublish {
     
     inline def setCommentsToPublishUndefined: Self = StObject.set(x, "commentsToPublish", js.undefined)
     
-    inline def setCommentsToPublishVarargs(value: CommentPublish*): Self = StObject.set(x, "commentsToPublish", js.Array(value :_*))
+    inline def setCommentsToPublishVarargs(value: CommentPublish*): Self = StObject.set(x, "commentsToPublish", js.Array(value*))
   }
 }

@@ -57,6 +57,6 @@ object MetricFilter {
     
     inline def setMetricTransformationsUndefined: Self = StObject.set(x, "metricTransformations", js.undefined)
     
-    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
+    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value*))
   }
 }

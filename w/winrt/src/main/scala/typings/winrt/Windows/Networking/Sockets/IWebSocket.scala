@@ -17,7 +17,7 @@ trait IWebSocket
   
   def connectAsync(uri: Uri): IAsyncAction = js.native
   
-  var onclosed: js.Any = js.native
+  var onclosed: Any = js.native
   
   var outputStream: IOutputStream = js.native
   

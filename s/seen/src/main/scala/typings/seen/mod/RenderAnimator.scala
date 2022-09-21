@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "RenderAnimator")
 @js.native
-class RenderAnimator () extends Animator
+open class RenderAnimator () extends Animator

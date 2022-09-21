@@ -28,7 +28,7 @@ object dishClassifyResponse {
     
     inline def setResult(value: js.Array[Calorie]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Calorie*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Calorie*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setResult_num(value: Double): Self = StObject.set(x, "result_num", value.asInstanceOf[js.Any])
   }

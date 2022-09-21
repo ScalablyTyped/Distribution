@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parse-columns" : "2.0.0"
+      "parse-columns" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "parse-columns" : "2.0.0"
+      "parse-columns" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

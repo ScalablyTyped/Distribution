@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-plaid-link" : "3.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-plaid-link" : "3.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

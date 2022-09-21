@@ -31,6 +31,6 @@ object UpdateTagsForDomainRequest {
     
     inline def setTagsToUpdateUndefined: Self = StObject.set(x, "TagsToUpdate", js.undefined)
     
-    inline def setTagsToUpdateVarargs(value: Tag*): Self = StObject.set(x, "TagsToUpdate", js.Array(value :_*))
+    inline def setTagsToUpdateVarargs(value: Tag*): Self = StObject.set(x, "TagsToUpdate", js.Array(value*))
   }
 }

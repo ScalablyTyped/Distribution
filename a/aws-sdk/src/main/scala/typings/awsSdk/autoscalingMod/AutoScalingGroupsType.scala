@@ -27,7 +27,7 @@ object AutoScalingGroupsType {
     
     inline def setAutoScalingGroups(value: AutoScalingGroups): Self = StObject.set(x, "AutoScalingGroups", value.asInstanceOf[js.Any])
     
-    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "AutoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "AutoScalingGroups", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

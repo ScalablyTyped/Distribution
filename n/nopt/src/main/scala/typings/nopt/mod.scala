@@ -35,7 +35,7 @@ object mod {
   
   trait OptionsParsed
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var argv: Cooked
   }

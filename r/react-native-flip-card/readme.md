@@ -10,10 +10,10 @@ The card component which has a motion of flip for React Native(iOS/Android)
 | ------------------ | :-------------: |
 | Full name          | react-native-flip-card |
 | Keywords           | react-component, react-native, ios, android, card, flip |
-| # releases         | 5 |
-| # dependents       | 59 |
-| # downloads        | 461211 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 37830.666666666664 |
+| # stars            | 329.0 |
 
 ## Links
 - [Homepage](https://github.com/moschan/react-native-flip-card#readme)

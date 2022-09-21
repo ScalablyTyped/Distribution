@@ -7,38 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RenderingGroup extends StObject {
   
-  /* private */ var _alphaTestSortCompareFn: js.Any = js.native
+  /* private */ var _alphaTestSortCompareFn: Any = js.native
   
-  /* private */ var _alphaTestSubMeshes: js.Any = js.native
+  /* private */ var _alphaTestSubMeshes: Any = js.native
   
-  /* private */ var _depthOnlySubMeshes: js.Any = js.native
+  /* private */ var _depthOnlySubMeshes: Any = js.native
   
   /** @hidden */
   var _edgesRenderers: SmartArrayNoDuplicate[IEdgesRenderer] = js.native
   
-  /* private */ var _opaqueSortCompareFn: js.Any = js.native
+  /** @hidden */
+  var _empty: Boolean = js.native
   
-  /* private */ var _opaqueSubMeshes: js.Any = js.native
+  /* private */ var _opaqueSortCompareFn: Any = js.native
   
-  /* private */ var _particleSystems: js.Any = js.native
+  /* private */ var _opaqueSubMeshes: Any = js.native
   
-  /* private */ var _renderAlphaTest: js.Any = js.native
+  /* private */ var _particleSystems: Any = js.native
   
-  /* private */ var _renderOpaque: js.Any = js.native
+  /* private */ var _renderAlphaTest: Any = js.native
   
-  /* private */ var _renderParticles: js.Any = js.native
+  /**
+    * Renders the opaque submeshes in the order from the alphatestSortCompareFn.
+    * @param subMeshes The submeshes to render
+    */
+  /* private */ var _renderAlphaTestSorted: Any = js.native
   
-  /* private */ var _renderSprites: js.Any = js.native
+  /* private */ var _renderOpaque: Any = js.native
   
-  /* private */ var _renderTransparent: js.Any = js.native
+  /**
+    * Renders the opaque submeshes in the order from the opaqueSortCompareFn.
+    * @param subMeshes The submeshes to render
+    */
+  /* private */ var _renderOpaqueSorted: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _renderParticles: Any = js.native
   
-  /* private */ var _spriteManagers: js.Any = js.native
+  /* private */ var _renderSprites: Any = js.native
   
-  /* private */ var _transparentSortCompareFn: js.Any = js.native
+  /* private */ var _renderTransparent: Any = js.native
   
-  /* private */ var _transparentSubMeshes: js.Any = js.native
+  /**
+    * Renders the opaque submeshes in the order from the transparentSortCompareFn.
+    * @param subMeshes The submeshes to render
+    */
+  /* private */ var _renderTransparentSorted: Any = js.native
+  
+  /* private */ var _scene: Any = js.native
+  
+  /* private */ var _spriteManagers: Any = js.native
+  
+  /* private */ var _transparentSortCompareFn: Any = js.native
+  
+  /* private */ var _transparentSubMeshes: Any = js.native
   
   /**
     * Set the alpha test sort comparison function.
@@ -81,6 +102,9 @@ trait RenderingGroup extends StObject {
   /**
     * Render all the sub meshes contained in the group.
     * @param customRenderFunction Used to override the default render behaviour of the group.
+    * @param renderSprites
+    * @param renderParticles
+    * @param activeMeshes
     * @returns true if rendered some submeshes.
     */
   def render(
@@ -97,24 +121,6 @@ trait RenderingGroup extends StObject {
     renderParticles: Boolean,
     activeMeshes: Nullable[js.Array[AbstractMesh]]
   ): Unit = js.native
-  
-  /**
-    * Renders the opaque submeshes in the order from the alphatestSortCompareFn.
-    * @param subMeshes The submeshes to render
-    */
-  /* private */ var renderAlphaTestSorted: js.Any = js.native
-  
-  /**
-    * Renders the opaque submeshes in the order from the opaqueSortCompareFn.
-    * @param subMeshes The submeshes to render
-    */
-  /* private */ var renderOpaqueSorted: js.Any = js.native
-  
-  /**
-    * Renders the opaque submeshes in the order from the transparentSortCompareFn.
-    * @param subMeshes The submeshes to render
-    */
-  /* private */ var renderTransparentSorted: js.Any = js.native
   
   /**
     * Set the transparent sort comparison function.

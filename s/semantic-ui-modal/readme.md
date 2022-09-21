@@ -11,9 +11,9 @@ Single component release of modal
 | Full name          | semantic-ui-modal |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 31080 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 22899.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

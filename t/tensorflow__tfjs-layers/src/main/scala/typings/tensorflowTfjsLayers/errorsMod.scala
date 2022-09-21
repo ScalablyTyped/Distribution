@@ -9,84 +9,96 @@ object errorsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "AssertionError")
   @js.native
-  class AssertionError ()
+  open class AssertionError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "AttributeError")
   @js.native
-  class AttributeError ()
+  open class AttributeError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "IndexError")
   @js.native
-  class IndexError ()
+  open class IndexError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "NotImplementedError")
   @js.native
-  class NotImplementedError ()
+  open class NotImplementedError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "RuntimeError")
   @js.native
-  class RuntimeError ()
+  open class RuntimeError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/errors", "ValueError")
   @js.native
-  class ValueError ()
+  open class ValueError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

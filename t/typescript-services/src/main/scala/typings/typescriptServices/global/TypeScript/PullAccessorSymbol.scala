@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.PullAccessorSymbol")
 @js.native
-class PullAccessorSymbol protected ()
+open class PullAccessorSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullAccessorSymbol {
   def this(name: String) = this()

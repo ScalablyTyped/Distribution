@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsSqsQueueDetails extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the dead-letter queue to which Amazon SQS moves messages after the value of maxReceiveCount is exceeded. 
+    * The ARN of the dead-letter queue to which Amazon SQS moves messages after the value of maxReceiveCount is exceeded. 
     */
   var DeadLetterTargetArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The length of time, in seconds, for which Amazon SQS can reuse a data key to encrypt or decrypt messages before calling AWS KMS again.
+    * The length of time, in seconds, for which Amazon SQS can reuse a data key to encrypt or decrypt messages before calling KMS again.
     */
   var KmsDataKeyReusePeriodSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The ID of an AWS managed customer master key (CMK) for Amazon SQS or a custom CMK.
+    * The ID of an Amazon Web Services managed key for Amazon SQS or a custom KMS key.
     */
   var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.undefined
   

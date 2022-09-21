@@ -10,15 +10,12 @@ A Long class for representing a 64-bit two's-complement integer value.
 | ------------------ | :-------------: |
 | Full name          | @xtuc/long |
 | Keywords           | math |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 424496790 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.0947213E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/long.js#readme)
-- [Bugs](https://github.com/dcodeIO/long.js/issues)
-- [Repository](https://github.com/dcodeIO/long.js)
 - [Npm](https://www.npmjs.com/package/%40xtuc%2Flong)
     
 

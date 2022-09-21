@@ -27,13 +27,13 @@ object LineOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -43,6 +43,6 @@ object LineOptions {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value :_*))
+    inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value*))
   }
 }

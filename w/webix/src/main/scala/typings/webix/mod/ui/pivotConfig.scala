@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait pivotConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -17,11 +17,11 @@ trait pivotConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
-  var datatable: js.UndefOr[js.Any] = js.undefined
+  var datatable: js.UndefOr[Any] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -31,13 +31,13 @@ trait pivotConfig extends StObject {
   
   var externalProcessing: js.UndefOr[Boolean] = js.undefined
   
-  var fieldMap: js.UndefOr[js.Any] = js.undefined
+  var fieldMap: js.UndefOr[Any] = js.undefined
   
   var filterLabelAlign: js.UndefOr[String] = js.undefined
   
   var filterLabelWidth: js.UndefOr[Double] = js.undefined
   
-  var filterMap: js.UndefOr[js.Any] = js.undefined
+  var filterMap: js.UndefOr[Any] = js.undefined
   
   var filterMinWidth: js.UndefOr[Double] = js.undefined
   
@@ -73,7 +73,7 @@ trait pivotConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -81,7 +81,7 @@ trait pivotConfig extends StObject {
   
   var ping: js.UndefOr[WebixCallback] = js.undefined
   
-  var popup: js.UndefOr[js.Any] = js.undefined
+  var popup: js.UndefOr[Any] = js.undefined
   
   var profile: js.UndefOr[Boolean] = js.undefined
   
@@ -93,19 +93,19 @@ trait pivotConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  var scheme: js.UndefOr[Any] = js.undefined
   
   var separateLabel: js.UndefOr[Boolean] = js.undefined
   
   var stableRowId: js.UndefOr[Boolean] = js.undefined
   
-  var structure: js.UndefOr[js.Any] = js.undefined
+  var structure: js.UndefOr[Any] = js.undefined
   
   var totalColumn: js.UndefOr[String | Boolean] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -124,7 +124,7 @@ object pivotConfig {
   
   extension [Self <: pivotConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -140,17 +140,17 @@ object pivotConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setDatatable(value: js.Any): Self = StObject.set(x, "datatable", value.asInstanceOf[js.Any])
+    inline def setDatatable(value: Any): Self = StObject.set(x, "datatable", value.asInstanceOf[js.Any])
     
     inline def setDatatableUndefined: Self = StObject.set(x, "datatable", js.undefined)
     
@@ -170,7 +170,7 @@ object pivotConfig {
     
     inline def setExternalProcessingUndefined: Self = StObject.set(x, "externalProcessing", js.undefined)
     
-    inline def setFieldMap(value: js.Any): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
+    inline def setFieldMap(value: Any): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
     
     inline def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
@@ -182,7 +182,7 @@ object pivotConfig {
     
     inline def setFilterLabelWidthUndefined: Self = StObject.set(x, "filterLabelWidth", js.undefined)
     
-    inline def setFilterMap(value: js.Any): Self = StObject.set(x, "filterMap", value.asInstanceOf[js.Any])
+    inline def setFilterMap(value: Any): Self = StObject.set(x, "filterMap", value.asInstanceOf[js.Any])
     
     inline def setFilterMapUndefined: Self = StObject.set(x, "filterMap", js.undefined)
     
@@ -254,7 +254,7 @@ object pivotConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -270,7 +270,7 @@ object pivotConfig {
     
     inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
     
-    inline def setPopup(value: js.Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
@@ -294,7 +294,7 @@ object pivotConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -306,7 +306,7 @@ object pivotConfig {
     
     inline def setStableRowIdUndefined: Self = StObject.set(x, "stableRowId", js.undefined)
     
-    inline def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+    inline def setStructure(value: Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     inline def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
@@ -318,7 +318,7 @@ object pivotConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyData extends StObject {
   
-  //  object last modified GMT string
+  /** object etag contains ", e.g.: "5B3C1A2E053D763E1B002CC607C5A0FE" */
   var etag: String
   
+  /** object last modified GMT string */
   var lastModified: String
 }
 object ModifyData {

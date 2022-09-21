@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "StatusFile")
 @js.native
-class StatusFile protected ()
+open class StatusFile protected ()
   extends typings.nodegit.statusFileMod.StatusFile {
   def this(args: StatusFileOptions) = this()
 }

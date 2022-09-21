@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "VariableLib")
 @js.native
-class VariableLib ()
+open class VariableLib ()
   extends typings.wonderJs.variableLibMod.VariableLib
 /* static members */
 object VariableLib {

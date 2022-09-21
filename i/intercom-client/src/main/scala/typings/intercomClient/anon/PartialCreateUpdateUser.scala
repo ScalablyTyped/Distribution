@@ -21,7 +21,7 @@ trait PartialCreateUpdateUser extends StObject {
   
   var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var custom_attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var email: js.UndefOr[String | Null] = js.undefined
   
@@ -76,13 +76,13 @@ object PartialCreateUpdateUser {
     
     inline def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
     
-    inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
+    inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value*))
     
     inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+    inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     

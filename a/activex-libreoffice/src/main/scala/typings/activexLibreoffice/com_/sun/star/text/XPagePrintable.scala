@@ -39,7 +39,7 @@ object XPagePrintable {
     acquire: () => Unit,
     getPagePrintSettings: () => SafeArray[PropertyValue],
     printPages: SeqEquiv[PropertyValue] => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPagePrintSettings: SeqEquiv[PropertyValue] => Unit
   ): XPagePrintable = {

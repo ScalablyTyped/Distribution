@@ -42,6 +42,6 @@ object EncryptionConfiguration {
     
     inline def setS3EncryptionUndefined: Self = StObject.set(x, "S3Encryption", js.undefined)
     
-    inline def setS3EncryptionVarargs(value: S3Encryption*): Self = StObject.set(x, "S3Encryption", js.Array(value :_*))
+    inline def setS3EncryptionVarargs(value: S3Encryption*): Self = StObject.set(x, "S3Encryption", js.Array(value*))
   }
 }

@@ -11,10 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
-  inline def default(options: js.Any): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
+  inline def default(): js.Function1[/* file */ Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* file */ Any, js.Promise[String]]]
+  inline def default(options: Any): js.Function1[/* file */ Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* file */ Any, js.Promise[String]]]
   
-  inline def transform(file: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def transform(file: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait TableDefinition extends StObject {
     

@@ -10,7 +10,7 @@ object cacheMapMod {
   
   @JSImport("rc-virtual-list/es/utils/CacheMap", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CacheMap {
     

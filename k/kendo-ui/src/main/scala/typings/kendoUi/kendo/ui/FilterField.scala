@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilterField extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var editorTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
+  
+  var previewFormat: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -25,7 +27,7 @@ object FilterField {
   
   extension [Self <: FilterField](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -40,6 +42,10 @@ object FilterField {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPreviewFormat(value: String): Self = StObject.set(x, "previewFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewFormatUndefined: Self = StObject.set(x, "previewFormat", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

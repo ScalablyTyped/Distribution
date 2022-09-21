@@ -110,7 +110,7 @@ trait DomEvent extends StObject {
     * Gets the object that the event acted on.
     * @return An object that represents the target that the event acted on.
     */
-  var target: js.Any
+  var target: Any
   
   /**
     * Gets the name of the event that was raised.
@@ -135,7 +135,7 @@ object DomEvent {
     screenY: Double,
     shiftKey: Boolean,
     stopPropagation: () => Unit,
-    target: js.Any,
+    target: Any,
     `type`: String
   ): DomEvent = {
     val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
@@ -173,7 +173,7 @@ object DomEvent {
     
     inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

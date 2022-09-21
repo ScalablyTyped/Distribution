@@ -9,22 +9,22 @@ object argCaptorMod {
   
   @JSImport("ts-mockito/lib/capture/ArgCaptor", "ArgCaptor")
   @js.native
-  class ArgCaptor protected () extends StObject {
+  open class ArgCaptor protected () extends StObject {
     def this(actions: js.Array[MethodAction]) = this()
     
-    /* private */ var actions: js.Any = js.native
+    /* private */ var actions: Any = js.native
     
-    def beforeLast(): js.Any = js.native
+    def beforeLast(): Any = js.native
     
-    def byCallIndex(index: Double): js.Any = js.native
+    def byCallIndex(index: Double): Any = js.native
     
-    def first(): js.Any = js.native
+    def first(): Any = js.native
     
-    def last(): js.Any = js.native
+    def last(): Any = js.native
     
-    def second(): js.Any = js.native
+    def second(): Any = js.native
     
-    def third(): js.Any = js.native
+    def third(): Any = js.native
   }
   
   trait ArgCaptor1[T] extends StObject {

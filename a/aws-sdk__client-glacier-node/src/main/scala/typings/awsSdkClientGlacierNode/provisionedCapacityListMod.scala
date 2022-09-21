@@ -8,5 +8,5 @@ object provisionedCapacityListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_ProvisionedCapacityList", "_ProvisionedCapacityList")
   @js.native
-  val ProvisionedCapacityList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ProvisionedCapacityList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

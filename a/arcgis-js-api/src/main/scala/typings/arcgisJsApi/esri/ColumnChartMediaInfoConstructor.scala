@@ -17,5 +17,5 @@ trait ColumnChartMediaInfoConstructor
 Instantiable0[ColumnChartMediaInfo]
      with Instantiable1[/* properties */ ColumnChartMediaInfoProperties, ColumnChartMediaInfo] {
   
-  def fromJSON(json: js.Any): ColumnChartMediaInfo = js.native
+  def fromJSON(json: Any): ColumnChartMediaInfo = js.native
 }

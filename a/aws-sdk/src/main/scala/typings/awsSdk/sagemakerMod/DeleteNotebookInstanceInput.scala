@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteNotebookInstanceInput extends StObject {
   
   /**
-    * The name of the Amazon SageMaker notebook instance to delete.
+    * The name of the SageMaker notebook instance to delete.
     */
   var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
 }

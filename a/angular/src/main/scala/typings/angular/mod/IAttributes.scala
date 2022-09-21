@@ -15,7 +15,7 @@ trait IAttributes
      with /**
   * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
   */
-/* name */ StringDictionary[js.Any] {
+/* name */ StringDictionary[Any] {
   
   /**
     * Adds the CSS class value specified by the classVal parameter to the
@@ -49,7 +49,7 @@ trait IAttributes
     * interpolated value changes.
     */
   @JSName("$observe")
-  def $observe[T](name: String, fn: js.Function1[/* value */ js.UndefOr[T], js.Any]): Function
+  def $observe[T](name: String, fn: js.Function1[/* value */ js.UndefOr[T], Any]): Function
   
   /**
     * Removes the CSS class value specified by the classVal parameter from the
@@ -63,7 +63,7 @@ trait IAttributes
     * Set DOM element attribute value.
     */
   @JSName("$set")
-  def $set(key: String, value: js.Any): Unit
+  def $set(key: String, value: Any): Unit
   
   /**
     * Adds and removes the appropriate CSS class values to the element based on the difference between
@@ -78,9 +78,9 @@ object IAttributes {
     $addClass: String => Unit,
     $attr: js.Object,
     $normalize: String => String,
-    $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function,
+    $observe: (String, js.Function1[/* value */ js.UndefOr[Any], Any]) => Function,
     $removeClass: String => Unit,
-    $set: (String, js.Any) => Unit,
+    $set: (String, Any) => Unit,
     $updateClass: (String, String) => Unit
   ): IAttributes = {
     val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr.asInstanceOf[js.Any], $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
@@ -95,11 +95,11 @@ object IAttributes {
     
     inline def set$normalize(value: String => String): Self = StObject.set(x, "$normalize", js.Any.fromFunction1(value))
     
-    inline def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
+    inline def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[Any], Any]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
     
     inline def set$removeClass(value: String => Unit): Self = StObject.set(x, "$removeClass", js.Any.fromFunction1(value))
     
-    inline def set$set(value: (String, js.Any) => Unit): Self = StObject.set(x, "$set", js.Any.fromFunction2(value))
+    inline def set$set(value: (String, Any) => Unit): Self = StObject.set(x, "$set", js.Any.fromFunction2(value))
     
     inline def set$updateClass(value: (String, String) => Unit): Self = StObject.set(x, "$updateClass", js.Any.fromFunction2(value))
   }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param cameras - The array of cameras that the rendering pipeline will be attached to (default: scene.cameras)
   * @param automaticBuild - if false, you will have to manually call prepare() to update the pipeline (default: true)
   */
-class DefaultRenderingPipeline ()
+open class DefaultRenderingPipeline ()
   extends StObject
      with typings.babylonjs.BABYLON.DefaultRenderingPipeline {
   def this(name: String) = this()
@@ -168,5 +168,5 @@ object DefaultRenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.DefaultRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.DefaultRenderingPipeline]
+  inline def Parse(source: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.DefaultRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.DefaultRenderingPipeline]
 }

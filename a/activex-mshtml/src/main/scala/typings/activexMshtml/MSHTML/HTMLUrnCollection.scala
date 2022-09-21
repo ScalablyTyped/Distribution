@@ -9,7 +9,7 @@ trait HTMLUrnCollection extends StObject {
   
   def apply(index: Double): String = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   def item(index: Double): String = js.native
   

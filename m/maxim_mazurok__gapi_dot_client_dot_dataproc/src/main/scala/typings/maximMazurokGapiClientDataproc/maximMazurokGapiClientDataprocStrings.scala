@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientDataprocStrings {
   
   @js.native
+  sealed trait AutoscalingPolicy extends StObject
+  inline def AutoscalingPolicy: AutoscalingPolicy = "AutoscalingPolicy".asInstanceOf[AutoscalingPolicy]
+  
+  @js.native
+  sealed trait Batch extends StObject
+  inline def Batch: Batch = "Batch".asInstanceOf[Batch]
+  
+  @js.native
+  sealed trait BatchOperationMetadata extends StObject
+  inline def BatchOperationMetadata: BatchOperationMetadata = "BatchOperationMetadata".asInstanceOf[BatchOperationMetadata]
+  
+  @js.native
   sealed trait Cluster extends StObject
   inline def Cluster: Cluster = "Cluster".asInstanceOf[Cluster]
   
@@ -39,12 +51,24 @@ object maximMazurokGapiClientDataprocStrings {
   inline def HiveJob: HiveJob = "HiveJob".asInstanceOf[HiveJob]
   
   @js.native
+  sealed trait IdentityConfig extends StObject
+  inline def IdentityConfig: IdentityConfig = "IdentityConfig".asInstanceOf[IdentityConfig]
+  
+  @js.native
   sealed trait InstantiateWorkflowTemplateRequest extends StObject
   inline def InstantiateWorkflowTemplateRequest: InstantiateWorkflowTemplateRequest = "InstantiateWorkflowTemplateRequest".asInstanceOf[InstantiateWorkflowTemplateRequest]
   
   @js.native
   sealed trait Job extends StObject
   inline def Job: Job = "Job".asInstanceOf[Job]
+  
+  @js.native
+  sealed trait JobPlacement extends StObject
+  inline def JobPlacement: JobPlacement = "JobPlacement".asInstanceOf[JobPlacement]
+  
+  @js.native
+  sealed trait KubernetesSoftwareConfig extends StObject
+  inline def KubernetesSoftwareConfig: KubernetesSoftwareConfig = "KubernetesSoftwareConfig".asInstanceOf[KubernetesSoftwareConfig]
   
   @js.native
   sealed trait LoggingConfig extends StObject
@@ -75,6 +99,18 @@ object maximMazurokGapiClientDataprocStrings {
   inline def PySparkJob: PySparkJob = "PySparkJob".asInstanceOf[PySparkJob]
   
   @js.native
+  sealed trait RuntimeConfig extends StObject
+  inline def RuntimeConfig: RuntimeConfig = "RuntimeConfig".asInstanceOf[RuntimeConfig]
+  
+  @js.native
+  sealed trait RuntimeInfo extends StObject
+  inline def RuntimeInfo: RuntimeInfo = "RuntimeInfo".asInstanceOf[RuntimeInfo]
+  
+  @js.native
+  sealed trait SessionOperationMetadata extends StObject
+  inline def SessionOperationMetadata: SessionOperationMetadata = "SessionOperationMetadata".asInstanceOf[SessionOperationMetadata]
+  
+  @js.native
   sealed trait SoftwareConfig extends StObject
   inline def SoftwareConfig: SoftwareConfig = "SoftwareConfig".asInstanceOf[SoftwareConfig]
   
@@ -85,6 +121,10 @@ object maximMazurokGapiClientDataprocStrings {
   @js.native
   sealed trait SparkRJob extends StObject
   inline def SparkRJob: SparkRJob = "SparkRJob".asInstanceOf[SparkRJob]
+  
+  @js.native
+  sealed trait SparkSqlBatch extends StObject
+  inline def SparkSqlBatch: SparkSqlBatch = "SparkSqlBatch".asInstanceOf[SparkSqlBatch]
   
   @js.native
   sealed trait SparkSqlJob extends StObject

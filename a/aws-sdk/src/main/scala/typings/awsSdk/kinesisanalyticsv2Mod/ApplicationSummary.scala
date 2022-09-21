@@ -12,6 +12,11 @@ trait ApplicationSummary extends StObject {
   var ApplicationARN: ResourceARN
   
   /**
+    * For a Kinesis Data Analytics for Apache Flink application, the mode is STREAMING. For a Kinesis Data Analytics Studio notebook, it is INTERACTIVE.
+    */
+  var ApplicationMode: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationMode] = js.undefined
+  
+  /**
     * The name of the application.
     */
   var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
@@ -27,7 +32,7 @@ trait ApplicationSummary extends StObject {
   var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId
   
   /**
-    * The runtime environment for the application (SQL-1.0, FLINK-1_6, or FLINK-1_8).
+    * The runtime environment for the application.
     */
   var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment
 }
@@ -47,6 +52,10 @@ object ApplicationSummary {
   extension [Self <: ApplicationSummary](x: Self) {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationMode(value: ApplicationMode): Self = StObject.set(x, "ApplicationMode", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationModeUndefined: Self = StObject.set(x, "ApplicationMode", js.undefined)
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

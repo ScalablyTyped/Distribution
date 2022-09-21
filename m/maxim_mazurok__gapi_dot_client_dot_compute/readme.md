@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_compute
 
-Typings are for version 1.0.20201102
+Typings are for version 1.0.0
 
 ## Library description:
 TypeScript typings for Compute Engine API v1
@@ -10,10 +10,10 @@ TypeScript typings for Compute Engine API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.compute |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 1347 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 934.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

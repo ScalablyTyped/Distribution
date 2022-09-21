@@ -47,7 +47,7 @@ object GeolocationRequest {
     
     inline def setCellTowersUndefined: Self = StObject.set(x, "cellTowers", js.undefined)
     
-    inline def setCellTowersVarargs(value: CellTower*): Self = StObject.set(x, "cellTowers", js.Array(value :_*))
+    inline def setCellTowersVarargs(value: CellTower*): Self = StObject.set(x, "cellTowers", js.Array(value*))
     
     inline def setConsiderIp(value: Boolean): Self = StObject.set(x, "considerIp", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object GeolocationRequest {
     
     inline def setWifiAccessPointsUndefined: Self = StObject.set(x, "wifiAccessPoints", js.undefined)
     
-    inline def setWifiAccessPointsVarargs(value: WifiAccessPoint*): Self = StObject.set(x, "wifiAccessPoints", js.Array(value :_*))
+    inline def setWifiAccessPointsVarargs(value: WifiAccessPoint*): Self = StObject.set(x, "wifiAccessPoints", js.Array(value*))
   }
 }

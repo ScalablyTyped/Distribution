@@ -8,12 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Function")
 @js.native
-class Function protected ()
+open class Function protected ()
   extends js.Function {
   /**
     * Creates a new function.
     * @param args A list of arguments the function accepts.
     */
+  /* standard es5 */
   def this(args: java.lang.String*) = this()
 }
 object Function {

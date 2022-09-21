@@ -14,8 +14,20 @@ object interactionExtentMod {
   
   @JSImport("ol/interaction/Extent", JSImport.Default)
   @js.native
-  class default () extends Extent {
+  open class default () extends Extent {
     def this(opt_options: Options) = this()
+  }
+  
+  @JSImport("ol/interaction/Extent", "ExtentEvent")
+  @js.native
+  open class ExtentEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(extent: typings.ol.extentMod.Extent) = this()
+    
+    /**
+      * The current extent.
+      */
+    var extent: typings.ol.extentMod.Extent = js.native
   }
   
   @js.native
@@ -47,16 +59,6 @@ object interactionExtentMod {
     def un_extentchanged(`type`: extentchanged, listener: js.Function1[/* evt */ ExtentEvent, Unit]): Unit = js.native
   }
   
-  @js.native
-  trait ExtentEvent
-    extends typings.ol.eventMod.default {
-    
-    /**
-      * The current extent.
-      */
-    var extent: typings.ol.extentMod.Extent = js.native
-  }
-  
   trait Options extends StObject {
     
     var boxStyle: js.UndefOr[StyleLike] = js.undefined
@@ -86,7 +88,7 @@ object interactionExtentMod {
       
       inline def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
       
-      inline def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value :_*))
+      inline def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value*))
       
       inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,7 @@ object interactionExtentMod {
       
       inline def setPointerStyleUndefined: Self = StObject.set(x, "pointerStyle", js.undefined)
       
-      inline def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value :_*))
+      inline def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       

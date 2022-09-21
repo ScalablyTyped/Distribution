@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("smooth-scrollbar", JSImport.Default)
   @js.native
-  class default () extends Scrollbar
+  open class default () extends Scrollbar
   /* static members */
   object default {
     
@@ -90,7 +90,7 @@ object mod {
       *
       * @param ...Plugins Scrollbar plugin classes
       */
-    inline def use(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(Plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def use(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(Plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     @JSImport("smooth-scrollbar", "default.version")
     @js.native
@@ -100,10 +100,10 @@ object mod {
   
   @JSImport("smooth-scrollbar", "ScrollbarPlugin")
   @js.native
-  class ScrollbarPlugin protected ()
+  open class ScrollbarPlugin protected ()
     extends typings.smoothScrollbar.smoothScrollbarMod.ScrollbarPlugin {
     def this(scrollbar: Scrollbar) = this()
-    def this(scrollbar: Scrollbar, options: js.Any) = this()
+    def this(scrollbar: Scrollbar, options: Any) = this()
   }
   /* static members */
   object ScrollbarPlugin {
@@ -114,8 +114,8 @@ object mod {
     
     @JSImport("smooth-scrollbar", "ScrollbarPlugin.defaultOptions")
     @js.native
-    def defaultOptions: js.Any = js.native
-    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("smooth-scrollbar", "ScrollbarPlugin.pluginName")
     @js.native

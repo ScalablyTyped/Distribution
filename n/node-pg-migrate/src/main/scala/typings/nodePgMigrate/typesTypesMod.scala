@@ -1,6 +1,6 @@
 package typings.nodePgMigrate
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.nodePgMigrate.anon.namestringTypeDropOptions
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfExistsOption
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
@@ -28,12 +28,12 @@ object typesTypesMod {
     String | js.Array[String]
   ]
   
-  type AddTypeValue = js.Function3[
-    /* typeName */ Name, 
-    /* value */ Value, 
-    /* options */ js.UndefOr[AddTypeValueOptions], 
-    String | js.Array[String]
-  ]
+  @js.native
+  trait AddTypeValue extends StObject {
+    
+    def apply(typeName: Name, value: Value): String | js.Array[String] = js.native
+    def apply(typeName: Name, value: Value, options: AddTypeValueOptions): String | js.Array[String] = js.native
+  }
   
   trait AddTypeValueOptions
     extends StObject
@@ -63,18 +63,22 @@ object typesTypesMod {
   }
   
   @js.native
-  trait CreateType extends CreateTypeFn {
+  trait CreateType
+    extends StObject
+       with CreateTypeFn {
     
-    def reverse(typeName: Name, values: (js.Array[Value] | StringDictionary[Type]) & DropOptions): String | js.Array[String] = js.native
+    def reverse(typeName: Name, values: js.Array[Value] & DropOptions): String | js.Array[String] = js.native
+    def reverse(typeName: Name, values: namestringTypeDropOptions): String | js.Array[String] = js.native
     @JSName("reverse")
     var reverse_Original: CreateTypeFn = js.native
   }
   
-  type CreateTypeFn = js.Function2[
-    /* typeName */ Name, 
-    /* values */ (js.Array[Value] | StringDictionary[Type]) & DropOptions, 
-    String | js.Array[String]
-  ]
+  @js.native
+  trait CreateTypeFn extends StObject {
+    
+    def apply(typeName: Name, values: js.Array[Value] & DropOptions): String | js.Array[String] = js.native
+    def apply(typeName: Name, values: namestringTypeDropOptions): String | js.Array[String] = js.native
+  }
   
   type DropType = js.Function2[
     /* typeName */ Name, 

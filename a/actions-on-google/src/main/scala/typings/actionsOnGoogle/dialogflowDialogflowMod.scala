@@ -12,7 +12,6 @@ import typings.actionsOnGoogle.conversationConversationMod.ExceptionHandler
 import typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation
 import typings.actionsOnGoogle.frameworkFrameworkMod.BuiltinFrameworkMetadata
 import typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,7 +187,7 @@ object dialogflowDialogflowMod {
   
   trait DialogflowHandlers[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] extends StObject {
     
-    def catcher(conv: TConversation, error: Error): js.Promise[js.Any] | js.Any
+    def catcher(conv: TConversation, error: js.Error): js.Promise[Any] | Any
     @JSName("catcher")
     var catcher_Original: ExceptionHandler[TUserStorage, TConversation]
     
@@ -199,7 +198,7 @@ object dialogflowDialogflowMod {
   object DialogflowHandlers {
     
     inline def apply[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](
-      catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
+      catcher: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any,
       intents: DialogflowIntentHandlers
     ): DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation] = {
       val __obj = js.Dynamic.literal(catcher = js.Any.fromFunction2(catcher), intents = intents.asInstanceOf[js.Any])
@@ -208,7 +207,7 @@ object dialogflowDialogflowMod {
     
     extension [Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) {
       
-      inline def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      inline def setCatcher(value: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
       inline def setFallback(value: js.Function | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -223,7 +222,7 @@ object dialogflowDialogflowMod {
     /* params */ TParameters, 
     /* argument */ TArgument, 
     /* status */ js.UndefOr[GoogleRpcStatus], 
-    js.Promise[js.Any] | js.Any
+    js.Promise[Any] | Any
   ]
   
   type DialogflowIntentHandlers = StringDictionary[js.UndefOr[js.Function | String]]

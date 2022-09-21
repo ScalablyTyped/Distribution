@@ -25,7 +25,7 @@ trait PortalQueryResultProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
     */
-  var results: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var results: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The total number of results.
@@ -51,11 +51,11 @@ object PortalQueryResultProperties {
     
     inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
-    inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Any*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object variableLibMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableLib", "VariableLib")
   @js.native
-  class VariableLib () extends StObject
+  open class VariableLib () extends StObject
   /* static members */
   object VariableLib {
     
@@ -628,11 +628,11 @@ object variableLibMod {
     
     var `type`: EVariableType
     
-    var value: js.Any
+    var value: Any
   }
   object ShaderVariable {
     
-    inline def apply(`type`: EVariableType, value: js.Any): ShaderVariable = {
+    inline def apply(`type`: EVariableType, value: Any): ShaderVariable = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShaderVariable]
@@ -642,7 +642,7 @@ object variableLibMod {
       
       inline def setType(value: EVariableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

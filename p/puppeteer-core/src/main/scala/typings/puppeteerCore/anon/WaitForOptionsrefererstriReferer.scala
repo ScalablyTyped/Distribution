@@ -5,19 +5,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined puppeteer-core.puppeteer-core/lib/esm/puppeteer/common/Page.WaitForOptions & {  referer :string | undefined} */
+/* Inlined puppeteer-core.puppeteer-core/lib/esm/puppeteer/api/Page.WaitForOptions & {  referer :string | undefined} */
 trait WaitForOptionsrefererstriReferer extends StObject {
   
   var referer: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum wait time in milliseconds, defaults to 30 seconds, pass `0` to
-    * disable the timeout.
+    * Maximum wait time in milliseconds. Pass 0 to disable the timeout.
     *
-    * @remarks
     * The default value can be changed by using the
     * {@link Page.setDefaultTimeout} or {@link Page.setDefaultNavigationTimeout}
     * methods.
+    *
+    * @defaultValue `30000`
     */
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -44,6 +44,6 @@ object WaitForOptionsrefererstriReferer {
     
     inline def setWaitUntilUndefined: Self = StObject.set(x, "waitUntil", js.undefined)
     
-    inline def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value :_*))
+    inline def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value*))
   }
 }

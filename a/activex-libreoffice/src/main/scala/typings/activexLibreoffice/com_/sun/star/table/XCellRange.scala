@@ -54,7 +54,7 @@ object XCellRange {
     getCellByPosition: (Double, Double) => XCell,
     getCellRangeByName: String => XCellRange,
     getCellRangeByPosition: (Double, Double, Double, Double) => XCellRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellRange = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

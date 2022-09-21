@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SaveEventObject")
 @js.native
-/* private */ class SaveEventObject ()
+/* private */ open class SaveEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SaveEventObject {
   

@@ -68,7 +68,7 @@ object CIMPictureMarker {
     
     inline def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
     
-    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
+    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value*))
     
     inline def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object CIMPictureMarker {
     
     inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
+    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait EmailProperties
   extends StObject
      with ClientValueObject {
   
-  def get_additionalHeaders(): js.Any
+  def get_additionalHeaders(): Any
   
   def get_bCC(): js.Array[String]
   
@@ -25,7 +25,7 @@ trait EmailProperties
   
   def get_to(): js.Array[String]
   
-  def set_additionalHeaders(value: js.Any): Unit
+  def set_additionalHeaders(value: Any): Unit
   
   def set_bCC(value: js.Array[String]): Unit
   
@@ -42,10 +42,10 @@ trait EmailProperties
 object EmailProperties {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
-    get_additionalHeaders: () => js.Any,
+    fromJson: Any => Unit,
+    get_additionalHeaders: () => Any,
     get_bCC: () => js.Array[String],
     get_body: () => String,
     get_cC: () => js.Array[String],
@@ -53,7 +53,7 @@ object EmailProperties {
     get_subject: () => String,
     get_to: () => js.Array[String],
     get_typeId: () => String,
-    set_additionalHeaders: js.Any => Unit,
+    set_additionalHeaders: Any => Unit,
     set_bCC: js.Array[String] => Unit,
     set_body: String => Unit,
     set_cC: js.Array[String] => Unit,
@@ -68,7 +68,7 @@ object EmailProperties {
   
   extension [Self <: EmailProperties](x: Self) {
     
-    inline def setGet_additionalHeaders(value: () => js.Any): Self = StObject.set(x, "get_additionalHeaders", js.Any.fromFunction0(value))
+    inline def setGet_additionalHeaders(value: () => Any): Self = StObject.set(x, "get_additionalHeaders", js.Any.fromFunction0(value))
     
     inline def setGet_bCC(value: () => js.Array[String]): Self = StObject.set(x, "get_bCC", js.Any.fromFunction0(value))
     
@@ -82,7 +82,7 @@ object EmailProperties {
     
     inline def setGet_to(value: () => js.Array[String]): Self = StObject.set(x, "get_to", js.Any.fromFunction0(value))
     
-    inline def setSet_additionalHeaders(value: js.Any => Unit): Self = StObject.set(x, "set_additionalHeaders", js.Any.fromFunction1(value))
+    inline def setSet_additionalHeaders(value: Any => Unit): Self = StObject.set(x, "set_additionalHeaders", js.Any.fromFunction1(value))
     
     inline def setSet_bCC(value: js.Array[String] => Unit): Self = StObject.set(x, "set_bCC", js.Any.fromFunction1(value))
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    * The tag's key.
+    * The tag key.
     */
   var key: TagKey
   
   /**
-    * The tag's value.
+    * The tag value.
     */
   var value: TagValue
 }

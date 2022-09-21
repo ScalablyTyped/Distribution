@@ -1,20 +1,18 @@
 package typings.typedoc
 
-import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
-import typings.typedoc.typesAbstractMod.Type
+import typings.typedoc.defaultThemeRenderContextMod.DefaultThemeRenderContext
+import typings.typedoc.eventsMod.PageEvent
+import typings.typedoc.jsxElementsMod.JsxElement
+import typings.typedoc.modelsMod.ContainerReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionMod {
   
-  @JSImport("typedoc/dist/lib/models/types/reflection", "ReflectionType")
+  @JSImport("typedoc/dist/lib/output/themes/default/templates/reflection", JSImport.Namespace)
   @js.native
-  class ReflectionType protected () extends Type {
-    def this(declaration: DeclarationReflection) = this()
-    
-    var declaration: DeclarationReflection = js.native
-    
-    def equals(`type`: ReflectionType): Boolean = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def reflectionTemplate(context: DefaultThemeRenderContext, props: PageEvent[ContainerReflection]): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionTemplate")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

@@ -25,7 +25,7 @@ object ListDataSourcesResponse {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

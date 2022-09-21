@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.LinearGradient")
 @js.native
-class LinearGradient protected ()
+open class LinearGradient protected ()
   extends typings.tabris.mod.LinearGradient {
+  /**
+    * Represents a linear gradient. See also ${doc:LinearGradientValue}
+    */
   def this(colorStops: js.Array[
         typings.tabris.mod.Color | (js.Tuple2[typings.tabris.mod.Color, typings.tabris.mod.Percent])
       ]) = this()
@@ -39,7 +42,7 @@ object LinearGradient {
     * guard function.
     * @param value The value to test
     */
-  inline def isLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
+  inline def isLinearGradientValue(value: Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
   
   /**
     * Returns true if value is a valid LinearGradientValue. This excludes `null` and `'initial'`. Use this
@@ -47,5 +50,5 @@ object LinearGradient {
     * guard function.
     * @param value The value to test
     */
-  inline def isValidLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
+  inline def isValidLinearGradientValue(value: Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
 }

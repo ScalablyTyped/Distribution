@@ -1,7 +1,6 @@
 package typings.tabris.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.tabris.anon.OmitWidgetset
+import typings.tabris.anon.OmitWidgetanyset
 import typings.tabris.anon.Opacity
 import typings.tabris.tabrisBooleans.`true`
 import typings.tabris.tabrisStrings.`class`
@@ -34,16 +33,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Widget")
 @js.native
-/* protected */ class Widget () extends NativeObject {
-  /* protected */ def this(properties: Properties[Widget, OmitWidgetset]) = this()
+/**
+  * Base class for all widgets
+  * 
+  * This constructor can be called as a factory, without "new". Doing so allows passing an attributes
+  * object which may include (in addition to the properties) children, event listeners and layout
+  * shorthands.
+  */
+/* protected */ open class Widget[TData /* <: js.Object */] () extends NativeObject {
+  /* protected */ def this(properties: Properties[Widget[Any], OmitWidgetanyset[TData]]) = this()
   
   /**
     * Sets the parent of the widget. If an index is given the widget will be inserted at that position.
     * @param parent
     * @param index
     */
-  /* protected */ def _setParent(parent: typings.tabris.mod.Composite[Widget]): Unit = js.native
-  /* protected */ def _setParent(parent: typings.tabris.mod.Composite[Widget], index: Double): Unit = js.native
+  /* protected */ def _setParent(parent: typings.tabris.mod.Composite[Widget[Any]]): Unit = js.native
+  /* protected */ def _setParent(parent: typings.tabris.mod.Composite[Widget[Any]], index: Double): Unit = js.native
   
   /**
     * The actual location and size of the widget, relative to contentView.
@@ -64,7 +70,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * *Composite*). If the widget already has a parent, it is removed from the old parent.
     * @param parent
     */
-  def appendTo(parent: typings.tabris.mod.Composite[Widget]): this.type = js.native
+  def appendTo(parent: typings.tabris.mod.Composite[Widget[Any]]): this.type = js.native
   
   /**
     * The background of the widget. If given a plain string it is interpreted first as a gradient, then as
@@ -122,10 +128,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var cornerRadius: Double = js.native
   
   /**
-    * A general-purpose property that may be set to any object. It is initialized with an empty object for
-    * historical reasons (backwards compatibility).
+    * A general-purpose property that may be set to any object. Unlike other properties, `data` forwards
+    * change events from the object it contains. As it is initialized with an empty instance of
+    * ${doc:ObservableData}, modifying this initial `data` object also causes a ${doc:PropertyChangedEvent}
+    * for `data` to be fired.
+    * **Important:** If `data` is assigned a plain object, that object will be converted to an
+    * ${doc:ObservableData} instance, *so the original object will not be identical with the new `data`
+    * value*. If set to any other object the new value will be the same instance.
+    * When set as an attribute (via JSX or a widget factory) it has a special treatment: Unlike other
+    * properties it is set *after* the listeners have been registered. This is so to allow passing a data
+    * change listener (via 'onDataChanged' attribute) that will be invoked for the initial data value
+    * immediately.
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: TData = js.native
   
   /**
     * Removes this widget from its parent.
@@ -180,14 +195,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * removed from the old parent.
     * @param widget
     */
-  def insertAfter(widget: Widget): this.type = js.native
+  def insertAfter(widget: Widget[Any]): this.type = js.native
   
   /**
     * Inserts this widget directly before the given widget. If the widget already has a parent, it is
     * removed from the old parent.
     * @param widget
     */
-  def insertBefore(widget: Widget): this.type = js.native
+  def insertBefore(widget: Widget[Any]): this.type = js.native
   
   /**
     * Returns `true` if the widget has been disposed, otherwise `false`.
@@ -196,9 +211,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /**
     * Provides information for a widget to be used by the parent when determining its size and position.
-    * While this property accepts any valid LayoutData expression (see
-    * [LayoutDataValue](../types.md#layoutdatavalue), it will always return an instance of the class
-    * [LayoutData](./LayoutData.md).
+    * While this property accepts any valid LayoutData expression (see ${doc:LayoutDataValue}), it will
+    * always return an instance of the class [LayoutData](./LayoutData.md).
     * Widget provides an alias property for each property of LayoutData. Setting these properties will
     * change the value of the `layoutData` property, while getting them is the same as accessing them via
     * the `layoutData` property. I.e. `widget.left === widget.layoutData.left`.
@@ -448,13 +462,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Returns the parent of this widget or `null` if this widget is not appended to a parent.
     */
-  def parent(): typings.tabris.mod.Composite[Widget] = js.native
+  def parent(): typings.tabris.mod.Composite[Widget[Any]] = js.native
   /**
     * Returns the first (nearest) parent of this widget that matches the given selector, or `null` if no
     * parent matches.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  def parent[Result /* <: typings.tabris.mod.Composite[Widget] */](selector: Selector[typings.tabris.mod.Composite[Widget], Result]): Result = js.native
+  def parent[Result /* <: typings.tabris.mod.Composite[Widget[Any]] */](selector: Selector[typings.tabris.mod.Composite[Widget[Any]], Result]): Result = js.native
   
   /**
     * The position of the widget's right edge relative to the parent or a sibling widget.
@@ -465,8 +479,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * Returns a (possibly empty) collection of all siblings of this widget that match the given selector.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  def siblings[Result /* <: Widget */](): WidgetCollection[Result] = js.native
-  def siblings[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result] = js.native
+  def siblings[Result /* <: Widget[Any] */](): WidgetCollection[Result] = js.native
+  def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result] = js.native
   
   /**
     * The position of the widget's top edge relative to the parent or a sibling widget.

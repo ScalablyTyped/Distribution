@@ -1,6 +1,5 @@
 package typings.linq4js
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +27,13 @@ object Linq4JS {
     
     var Command: String
     
-    var Finder: Array[RegExp]
+    var Finder: Array[js.RegExp]
     
-    var SplitRegex: Array[RegExp]
+    var SplitRegex: Array[js.RegExp]
   }
   object EvaluateCommand {
     
-    inline def apply(Command: String, Finder: Array[RegExp], SplitRegex: Array[RegExp]): EvaluateCommand = {
+    inline def apply(Command: String, Finder: Array[js.RegExp], SplitRegex: Array[js.RegExp]): EvaluateCommand = {
       val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Finder = Finder.asInstanceOf[js.Any], SplitRegex = SplitRegex.asInstanceOf[js.Any])
       __obj.asInstanceOf[EvaluateCommand]
     }
@@ -43,9 +42,9 @@ object Linq4JS {
       
       inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
       
-      inline def setFinder(value: Array[RegExp]): Self = StObject.set(x, "Finder", value.asInstanceOf[js.Any])
+      inline def setFinder(value: Array[js.RegExp]): Self = StObject.set(x, "Finder", value.asInstanceOf[js.Any])
       
-      inline def setSplitRegex(value: Array[RegExp]): Self = StObject.set(x, "SplitRegex", value.asInstanceOf[js.Any])
+      inline def setSplitRegex(value: Array[js.RegExp]): Self = StObject.set(x, "SplitRegex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,11 +96,11 @@ object Linq4JS {
     
     var Direction: OrderDirection
     
-    def ValueSelector(item: js.Any): js.Any
+    def ValueSelector(item: Any): Any
   }
   object OrderEntry {
     
-    inline def apply(Direction: OrderDirection, ValueSelector: js.Any => js.Any): OrderEntry = {
+    inline def apply(Direction: OrderDirection, ValueSelector: Any => Any): OrderEntry = {
       val __obj = js.Dynamic.literal(Direction = Direction.asInstanceOf[js.Any], ValueSelector = js.Any.fromFunction1(ValueSelector))
       __obj.asInstanceOf[OrderEntry]
     }
@@ -110,7 +109,7 @@ object Linq4JS {
       
       inline def setDirection(value: OrderDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
       
-      inline def setValueSelector(value: js.Any => js.Any): Self = StObject.set(x, "ValueSelector", js.Any.fromFunction1(value))
+      inline def setValueSelector(value: Any => Any): Self = StObject.set(x, "ValueSelector", js.Any.fromFunction1(value))
     }
   }
   

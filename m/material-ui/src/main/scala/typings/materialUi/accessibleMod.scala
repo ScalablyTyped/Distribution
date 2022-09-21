@@ -10,10 +10,10 @@ object accessibleMod {
   
   @JSImport("material-ui/svg-icons/action/accessible", JSImport.Default)
   @js.native
-  class default () extends ActionAccessible
+  open class default () extends ActionAccessible
   
   @JSImport("material-ui/svg-icons/action/accessible", "ActionAccessible")
   @js.native
-  class ActionAccessible ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAccessible ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

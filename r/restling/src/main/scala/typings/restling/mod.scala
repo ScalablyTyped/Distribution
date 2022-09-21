@@ -1,6 +1,7 @@
 package typings.restling
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.restling.anon.Options
 import org.scalablytyped.runtime.StObject
@@ -26,10 +27,10 @@ object mod {
   inline def head(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def json(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def json(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def json(url: String, data: js.Any, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def json(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def json(url: String, data: js.Any, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Any, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Any, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def json(url: String, data: Unit, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def json(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def json(url: String, data: Unit, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
@@ -38,24 +39,24 @@ object mod {
   inline def patch(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def patchJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def patchJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def patchJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String, data: Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String, data: Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def patchJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def post(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def post(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def postJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def postJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def postJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String, data: Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String, data: Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def postJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def put(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def put(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def putJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def putJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  inline def putJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String, data: Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String, data: Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   inline def putJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
   inline def request(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
@@ -76,17 +77,17 @@ object mod {
     /**
       *  HTTP Agent instance to use. If not defined globalAgent will be used. If false opts out of connection pooling with an Agent, defaults request to Connection: close.
       */
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     /**
       * A http.Client instance if you want to reuse or implement some kind of connection pooling.
       */
-    var client: js.UndefOr[js.Any] = js.undefined
+    var client: js.UndefOr[Any] = js.undefined
     
     /**
       * Data to be added to the body of the request.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Encoding of the response body
@@ -121,7 +122,7 @@ object mod {
     /**
       * A function that will be called on the returned data. Use any of predefined <code>restler.parsers</code>.
       */
-    var parser: js.UndefOr[js.Any] = js.undefined
+    var parser: js.UndefOr[Any] = js.undefined
     
     /**
       * Basic auth password.
@@ -131,7 +132,7 @@ object mod {
     /**
       * Query string variables as a javascript object, will override the querystring in the URL.
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
@@ -152,7 +153,7 @@ object mod {
     /**
       * Options for xml2js.
       */
-    var xml2js: js.UndefOr[js.Any] = js.undefined
+    var xml2js: js.UndefOr[Any] = js.undefined
   }
   object RestlingOptions {
     
@@ -167,15 +168,15 @@ object mod {
       
       inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -203,7 +204,7 @@ object mod {
       
       inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
       
-      inline def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
@@ -211,7 +212,7 @@ object mod {
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -227,7 +228,7 @@ object mod {
       
       inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      inline def setXml2js(value: js.Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
+      inline def setXml2js(value: Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
       
       inline def setXml2jsUndefined: Self = StObject.set(x, "xml2js", js.undefined)
     }
@@ -235,9 +236,9 @@ object mod {
   
   trait RestlingResult extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var response: js.UndefOr[ServerResponse] = js.undefined
+    var response: js.UndefOr[ServerResponse[IncomingMessage]] = js.undefined
   }
   object RestlingResult {
     
@@ -248,11 +249,11 @@ object mod {
     
     extension [Self <: RestlingResult](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setResponse(value: ServerResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }

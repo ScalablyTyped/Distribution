@@ -7,17 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "BoneIKController")
 @js.native
-class BoneIKController protected ()
+open class BoneIKController protected ()
   extends typings.babylonjs.bonesIndexMod.BoneIKController {
   /**
     * Creates a new BoneIKController
-    * @param mesh defines the mesh to control
+    * @param mesh defines the TransformNode to control
     * @param bone defines the bone to control
     * @param options defines options to set up the controller
+    * @param options.targetMesh
+    * @param options.poleTargetMesh
+    * @param options.poleTargetBone
+    * @param options.poleTargetLocalOffset
+    * @param options.poleAngle
+    * @param options.bendAxis
+    * @param options.maxAngle
+    * @param options.slerpAmount
     */
-  def this(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh, bone: typings.babylonjs.boneMod.Bone) = this()
+  def this(mesh: typings.babylonjs.transformNodeMod.TransformNode, bone: typings.babylonjs.boneMod.Bone) = this()
   def this(
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.transformNodeMod.TransformNode,
     bone: typings.babylonjs.boneMod.Bone,
     options: BendAxis
   ) = this()
@@ -29,18 +37,18 @@ object BoneIKController {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs/index", "BoneIKController._tmpMats")
+  @JSImport("babylonjs/index", "BoneIKController._TmpMats")
   @js.native
-  def _tmpMats: js.Any = js.native
-  inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+  def _TmpMats: Any = js.native
+  inline def _TmpMats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMats")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "BoneIKController._tmpQuat")
+  @JSImport("babylonjs/index", "BoneIKController._TmpQuat")
   @js.native
-  def _tmpQuat: js.Any = js.native
-  inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  def _TmpQuat: Any = js.native
+  inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "BoneIKController._tmpVecs")
+  @JSImport("babylonjs/index", "BoneIKController._TmpVecs")
   @js.native
-  def _tmpVecs: js.Any = js.native
-  inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+  def _TmpVecs: Any = js.native
+  inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
 }

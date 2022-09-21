@@ -30,6 +30,6 @@ object DescribeResourcePoliciesResponse {
     
     inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    inline def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
   }
 }

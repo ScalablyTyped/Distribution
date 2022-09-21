@@ -10,15 +10,15 @@ A Readability connector for metascraper
 | ------------------ | :-------------: |
 | Full name          | metascraper-readability |
 | Keywords           | metascraper, url |
-| # releases         | 119 |
-| # dependents       | 4 |
-| # downloads        | 17295 |
-| # stars            | 0 |
+| # releases         | 88 |
+| # dependents       | 0.0 |
+| # downloads        | 1480.3333333333333 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-readability)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-readability)
     
 

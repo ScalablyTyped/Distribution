@@ -9,24 +9,24 @@ object dragLineLayerMod {
   
   @JSImport("plottable/build/src/components/dragLineLayer", "DragLineLayer")
   @js.native
-  class DragLineLayer[D] protected () extends GuideLineLayer[D] {
+  open class DragLineLayer[D] protected () extends GuideLineLayer[D] {
     def this(orientation: String) = this()
     
-    /* private */ var _detectionEdge: js.Any = js.native
+    /* private */ var _detectionEdge: Any = js.native
     
-    /* private */ var _detectionRadius: js.Any = js.native
+    /* private */ var _detectionRadius: Any = js.native
     
-    /* private */ var _disconnectInteraction: js.Any = js.native
+    /* private */ var _disconnectInteraction: Any = js.native
     
-    /* private */ var _dragCallbacks: js.Any = js.native
+    /* private */ var _dragCallbacks: Any = js.native
     
-    /* private */ var _dragEndCallbacks: js.Any = js.native
+    /* private */ var _dragEndCallbacks: Any = js.native
     
-    /* private */ var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: Any = js.native
     
-    /* private */ var _dragStartCallbacks: js.Any = js.native
+    /* private */ var _dragStartCallbacks: Any = js.native
     
-    /* private */ var _enabled: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
     /**
       * Gets the detection radius of the drag line in pixels.

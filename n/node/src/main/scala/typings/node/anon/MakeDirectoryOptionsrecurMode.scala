@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.fs.MakeDirectoryOptions & {  recursive :false | undefined} */
+/* Inlined node.node:fs.MakeDirectoryOptions & {  recursive :false | undefined} */
 trait MakeDirectoryOptionsrecurMode extends StObject {
   
   /**

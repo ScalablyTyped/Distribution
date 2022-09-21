@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ObjectIdentityQuery")
 @js.native
-class ObjectIdentityQuery protected ()
+open class ObjectIdentityQuery protected ()
   extends StObject
      with typings.sharepoint.SP.ClientAction {
   def this(objectPath: typings.sharepoint.SP.ObjectPath) = this()

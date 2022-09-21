@@ -10,7 +10,7 @@ trait IgGridScrollSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets gets the modifier for how long the inertia last on touch devices.

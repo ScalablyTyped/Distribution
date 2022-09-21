@@ -36,7 +36,7 @@ object StartDeviceSyncRequest {
     
     inline def setFeatures(value: Features): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "Features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "Features", js.Array(value*))
     
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     

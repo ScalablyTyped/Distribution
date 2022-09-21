@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.Type
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.PackingScheme
 import org.scalablytyped.runtime.StObject
@@ -10,10 +11,16 @@ object decodeMatrixGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/decode_matrix_gpu", "DecodeMatrixProgram")
   @js.native
-  class DecodeMatrixProgram protected ()
+  open class DecodeMatrixProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Tuple3[Double, Double, Double]) = this()
+    
+    @JSName("customUniforms")
+    var customUniforms_DecodeMatrixProgram: js.Array[Type] = js.native
+    
+    @JSName("enableShapeUniforms")
+    var enableShapeUniforms_DecodeMatrixProgram: Boolean = js.native
     
     @JSName("outPackingScheme")
     var outPackingScheme_DecodeMatrixProgram: PackingScheme = js.native

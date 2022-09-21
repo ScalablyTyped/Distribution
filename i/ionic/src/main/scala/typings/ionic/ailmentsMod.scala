@@ -22,33 +22,33 @@ object ailmentsMod {
   
   @JSImport("ionic/lib/doctor/ailments", "AilmentRegistry")
   @js.native
-  class AilmentRegistry ()
+  open class AilmentRegistry ()
     extends typings.ionic.ailmentsBaseMod.AilmentRegistry
   
   @JSImport("ionic/lib/doctor/ailments", "CordovaPlatformsCommitted")
   @js.native
-  class CordovaPlatformsCommitted protected ()
+  open class CordovaPlatformsCommitted protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "DefaultCordovaBundleIdUsed")
   @js.native
-  class DefaultCordovaBundleIdUsed protected ()
+  open class DefaultCordovaBundleIdUsed protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "GitConfigInvalid")
   @js.native
-  class GitConfigInvalid protected ()
+  open class GitConfigInvalid protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "GitNotUsed")
   @js.native
-  class GitNotUsed protected ()
+  open class GitNotUsed protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
@@ -57,7 +57,7 @@ object ailmentsMod {
   - typings.ionic.definitionsMod.IAilment because Already inherited
   - typings.ionic.definitionsMod.TreatableAilment because var conflicts: `implicit`, projects. Inlined treatable */ @JSImport("ionic/lib/doctor/ailments", "IonicCLIInstalledLocally")
   @js.native
-  class IonicCLIInstalledLocally protected ()
+  open class IonicCLIInstalledLocally protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     
@@ -66,7 +66,7 @@ object ailmentsMod {
   
   @JSImport("ionic/lib/doctor/ailments", "IonicNativeOldVersionInstalled")
   @js.native
-  class IonicNativeOldVersionInstalled protected ()
+  open class IonicNativeOldVersionInstalled protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
@@ -75,7 +75,7 @@ object ailmentsMod {
   - typings.ionic.definitionsMod.IAilment because Already inherited
   - typings.ionic.definitionsMod.TreatableAilment because var conflicts: `implicit`, projects. Inlined treatable */ @JSImport("ionic/lib/doctor/ailments", "NpmInstalledLocally")
   @js.native
-  class NpmInstalledLocally protected ()
+  open class NpmInstalledLocally protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     
@@ -84,14 +84,14 @@ object ailmentsMod {
   
   @JSImport("ionic/lib/doctor/ailments", "UnsavedCordovaPlatforms")
   @js.native
-  class UnsavedCordovaPlatforms protected ()
+  open class UnsavedCordovaPlatforms protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "ViewportFitNotSet")
   @js.native
-  class ViewportFitNotSet protected ()
+  open class ViewportFitNotSet protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     

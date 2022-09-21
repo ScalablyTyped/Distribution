@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaBase")
 @js.native
-class PersonaBase protected ()
+open class PersonaBase protected ()
   extends typings.officeUiFabricReact.mod.PersonaBase {
   def this(props: IPersonaProps) = this()
 }

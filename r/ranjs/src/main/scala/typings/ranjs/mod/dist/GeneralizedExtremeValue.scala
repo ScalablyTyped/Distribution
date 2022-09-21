@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.GeneralizedExtremeValue")
 @js.native
-class GeneralizedExtremeValue ()
+open class GeneralizedExtremeValue ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.GeneralizedExtremeValue] {
   def this(c: Double) = this()

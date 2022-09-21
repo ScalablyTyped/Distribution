@@ -221,7 +221,7 @@ object documentCardPreviewTypesMod {
       
       inline def setPreviewImages(value: js.Array[IDocumentCardPreviewImage]): Self = StObject.set(x, "previewImages", value.asInstanceOf[js.Any])
       
-      inline def setPreviewImagesVarargs(value: IDocumentCardPreviewImage*): Self = StObject.set(x, "previewImages", js.Array(value :_*))
+      inline def setPreviewImagesVarargs(value: IDocumentCardPreviewImage*): Self = StObject.set(x, "previewImages", js.Array(value*))
       
       inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

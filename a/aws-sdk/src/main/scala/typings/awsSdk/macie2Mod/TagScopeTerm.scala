@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagScopeTerm extends StObject {
   
   /**
-    * The operator to use in the condition. Valid operators are EQ (equals) or NE (not equals).
+    * The operator to use in the condition. Valid values are EQ (equals) or NE (not equals).
     */
   var comparator: js.UndefOr[JobComparator] = js.undefined
   
   /**
-    * The tag key to use in the condition.
+    * The object property to use in the condition. The only valid value is TAG.
     */
   var key: js.UndefOr[string] = js.undefined
   
   /**
-    * The tag keys or tag key and value pairs to use in the condition.
+    * The tag keys or tag key and value pairs to use in the condition. To specify only tag keys in a condition, specify the keys in this array and set the value for each associated tag value to an empty string.
     */
   var tagValues: js.UndefOr[listOfTagValuePair] = js.undefined
   
@@ -47,7 +47,7 @@ object TagScopeTerm {
     
     inline def setTagValuesUndefined: Self = StObject.set(x, "tagValues", js.undefined)
     
-    inline def setTagValuesVarargs(value: TagValuePair*): Self = StObject.set(x, "tagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: TagValuePair*): Self = StObject.set(x, "tagValues", js.Array(value*))
     
     inline def setTarget(value: TagTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

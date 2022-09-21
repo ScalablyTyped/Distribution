@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sortedMapMod {
   
-  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBEmptyNode")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "LLRBEmptyNode")
   @js.native
-  class LLRBEmptyNode[K, V] () extends StObject {
+  open class LLRBEmptyNode[K, V] () extends StObject {
     
-    /**
-      * @private
-      * @return {number} Not sure what this returns exactly. :-).
-      */
     def check_(): Double = js.native
     
     var color: Boolean = js.native
@@ -21,7 +17,7 @@ object sortedMapMod {
     /**
       * Returns a copy of the current node.
       *
-      * @return {!LLRBEmptyNode} The node copy.
+      * @returns The node copy.
       */
     def copy(
       key: K | Null,
@@ -32,7 +28,7 @@ object sortedMapMod {
     ): LLRBEmptyNode[K, V] = js.native
     
     /**
-      * @return {number} The total number of nodes in the tree.
+      * @returns The total number of nodes in the tree.
       */
     def count(): Double = js.native
     
@@ -40,30 +36,29 @@ object sortedMapMod {
       * Traverses the tree in key order and calls the specified action function
       * for each node.
       *
-      * @param {function(!K, !V):*} action Callback function to be called for each
+      * @param action - Callback function to be called for each
       * node.  If it returns true, traversal is aborted.
-      * @return {boolean} True if traversal was aborted.
+      * @returns True if traversal was aborted.
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, Any]): Boolean = js.native
     
     /**
       * Returns a copy of the tree, with the specified key/value added.
       *
-      * @param {!K} key Key to be added.
-      * @param {!V} value Value to be added.
-      * @param {Comparator} comparator Comparator.
-      * @return {!LLRBNode} New tree, with item added.
+      * @param key - Key to be added.
+      * @param value - Value to be added.
+      * @param comparator - Comparator.
+      * @returns New tree, with item added.
       */
     def insert(key: K, value: V, comparator: Comparator[K]): LLRBNode[K, V] = js.native
     
     /**
-      * @return {boolean} True if the tree is empty.
+      * @returns True if the tree is empty.
       */
     def isEmpty(): Boolean = js.native
     
     /**
-      * @private
-      * @return {boolean} Whether this node is red.
+      * @returns Whether this node is red.
       */
     def isRed_(): Boolean = js.native
     
@@ -71,22 +66,16 @@ object sortedMapMod {
     
     var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
     
-    /**
-      * @return {null}
-      */
     def maxKey(): Null = js.native
     
-    /**
-      * @return {null}
-      */
     def minKey(): Null = js.native
     
     /**
       * Returns a copy of the tree, with the specified key removed.
       *
-      * @param {!K} key The key to remove.
-      * @param {Comparator} comparator Comparator.
-      * @return {!LLRBEmptyNode} New tree, with item removed.
+      * @param key - The key to remove.
+      * @param comparator - Comparator.
+      * @returns New tree, with item removed.
       */
     def remove(key: K, comparator: Comparator[K]): LLRBEmptyNode[K, V] = js.native
     
@@ -94,9 +83,9 @@ object sortedMapMod {
       * Traverses the tree in reverse key order and calls the specified action function
       * for each node.
       *
-      * @param {function(!K, !V)} action Callback function to be called for each
+      * @param action - Callback function to be called for each
       * node.  If it returns true, traversal is aborted.
-      * @return {boolean} True if traversal was aborted.
+      * @returns True if traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
     
@@ -105,16 +94,15 @@ object sortedMapMod {
     var value: V = js.native
   }
   
-  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "LLRBNode")
   @js.native
-  class LLRBNode[K, V] protected () extends StObject {
+  open class LLRBNode[K, V] protected () extends StObject {
     /**
-      * @template K, V
-      * @param {!K} key Key associated with this node.
-      * @param {!V} value Value associated with this node.
-      * @param {?boolean} color Whether this node is red.
-      * @param {?(LLRBNode|LLRBEmptyNode)=} left Left child.
-      * @param {?(LLRBNode|LLRBEmptyNode)=} right Right child.
+      * @param key - Key associated with this node.
+      * @param value - Value associated with this node.
+      * @param color - Whether this node is red.
+      * @param left - Left child.
+      * @param right - Right child.
       */
     def this(key: K, value: V) = this()
     def this(key: K, value: V, color: Boolean) = this()
@@ -142,34 +130,28 @@ object sortedMapMod {
     /**
       * For testing.
       *
-      * @private
-      * @return {boolean} True if all is well.
+      * @returns True if all is well.
       */
-    /* private */ var checkMaxDepth_ : js.Any = js.native
+    /* private */ var checkMaxDepth_ : Any = js.native
     
-    /**
-      * @private
-      * @return {number} Not sure what this returns exactly. :-).
-      */
     def check_(): Double = js.native
     
     var color: Boolean = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree, after colorFlip.
+      * @returns Newt ree, after colorFlip.
       */
-    /* private */ var colorFlip_ : js.Any = js.native
+    /* private */ var colorFlip_ : Any = js.native
     
     /**
       * Returns a copy of the current node, optionally replacing pieces of it.
       *
-      * @param {?K} key New key for the node, or null.
-      * @param {?V} value New value for the node, or null.
-      * @param {?boolean} color New color for the node, or null.
-      * @param {?LLRBNode|LLRBEmptyNode} left New left child for the node, or null.
-      * @param {?LLRBNode|LLRBEmptyNode} right New right child for the node, or null.
-      * @return {!LLRBNode} The node copy.
+      * @param key - New key for the node, or null.
+      * @param value - New value for the node, or null.
+      * @param color - New color for the node, or null.
+      * @param left - New left child for the node, or null.
+      * @param right - New right child for the node, or null.
+      * @returns The node copy.
       */
     def copy(
       key: K | Null,
@@ -180,44 +162,41 @@ object sortedMapMod {
     ): LLRBNode[K, V] = js.native
     
     /**
-      * @return {number} The total number of nodes in the tree.
+      * @returns The total number of nodes in the tree.
       */
     def count(): Double = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree after performing any needed rotations.
+      * @returns New tree after performing any needed rotations.
       */
-    /* private */ var fixUp_ : js.Any = js.native
+    /* private */ var fixUp_ : Any = js.native
     
     /**
       * Traverses the tree in key order and calls the specified action function
       * for each node.
       *
-      * @param {function(!K, !V):*} action Callback function to be called for each
+      * @param action - Callback function to be called for each
       *   node.  If it returns true, traversal is aborted.
-      * @return {*} The first truthy value returned by action, or the last falsey
+      * @returns The first truthy value returned by action, or the last falsey
       *   value returned by action
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, Any]): Boolean = js.native
     
     /**
-      *
-      * @param {!Object} key Key to insert.
-      * @param {!Object} value Value to insert.
-      * @param {Comparator} comparator Comparator.
-      * @return {!LLRBNode} New tree, with the key/value added.
+      * @param key - Key to insert.
+      * @param value - Value to insert.
+      * @param comparator - Comparator.
+      * @returns New tree, with the key/value added.
       */
     def insert(key: K, value: V, comparator: Comparator[K]): LLRBNode[K, V] = js.native
     
     /**
-      * @return {boolean} True if the tree is empty.
+      * @returns True if the tree is empty.
       */
     def isEmpty(): Boolean = js.native
     
     /**
-      * @private
-      * @return {boolean} Whether this is a RED node.
+      * @returns Whether this is a RED node.
       */
     def isRed_(): Boolean = js.native
     
@@ -226,123 +205,114 @@ object sortedMapMod {
     var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
     
     /**
-      * @return {!K} The maximum key in the tree.
+      * @returns The maximum key in the tree.
       */
     def maxKey(): K = js.native
     
     /**
-      * @return {!K} The maximum key in the tree.
+      * @returns The maximum key in the tree.
       */
     def minKey(): K = js.native
     
     /**
-      * @return {!Object} The minimum node in the tree.
-      * @private
+      * @returns The minimum node in the tree.
       */
-    /* private */ var min_ : js.Any = js.native
+    /* private */ var min_ : Any = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree, after moveRedLeft.
+      * @returns New tree, after moveRedLeft.
       */
-    /* private */ var moveRedLeft_ : js.Any = js.native
+    /* private */ var moveRedLeft_ : Any = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree, after moveRedRight.
+      * @returns New tree, after moveRedRight.
       */
-    /* private */ var moveRedRight_ : js.Any = js.native
+    /* private */ var moveRedRight_ : Any = js.native
     
     /**
-      * @param {!Object} key The key of the item to remove.
-      * @param {Comparator} comparator Comparator.
-      * @return {!LLRBNode|LLRBEmptyNode} New tree, with the specified item removed.
+      * @param key - The key of the item to remove.
+      * @param comparator - Comparator.
+      * @returns New tree, with the specified item removed.
       */
     def remove(key: K, comparator: Comparator[K]): (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
+      * @returns New tree, with the minimum key removed.
       */
-    /* private */ var removeMin_ : js.Any = js.native
+    /* private */ var removeMin_ : Any = js.native
     
     /**
       * Traverses the tree in reverse key order and calls the specified action function
       * for each node.
       *
-      * @param {function(!Object, !Object)} action Callback function to be called for each
+      * @param action - Callback function to be called for each
       * node.  If it returns true, traversal is aborted.
-      * @return {*} True if traversal was aborted.
+      * @returns True if traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
     
     var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree, after rotateLeft.
+      * @returns New tree, after rotateLeft.
       */
-    /* private */ var rotateLeft_ : js.Any = js.native
+    /* private */ var rotateLeft_ : Any = js.native
     
     /**
-      * @private
-      * @return {!LLRBNode} New tree, after rotateRight.
+      * @returns New tree, after rotateRight.
       */
-    /* private */ var rotateRight_ : js.Any = js.native
+    /* private */ var rotateRight_ : Any = js.native
     
     var value: V = js.native
   }
   /* static members */
   object LLRBNode {
     
-    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "LLRBNode")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.BLACK")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "LLRBNode.BLACK")
     @js.native
     def BLACK: Boolean = js.native
     inline def BLACK_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.RED")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "LLRBNode.RED")
     @js.native
     def RED: Boolean = js.native
     inline def RED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "SortedMap")
   @js.native
-  class SortedMap[K, V] protected () extends StObject {
+  open class SortedMap[K, V] protected () extends StObject {
     /**
-      * @template K, V
-      * @param {function(K, K):number} comparator_ Key comparator.
-      * @param {LLRBNode=} root_ (Optional) Root node for the map.
+      * @param comparator_ - Key comparator.
+      * @param root_ - Optional root node for the map.
       */
     def this(comparator_ : Comparator[K]) = this()
     def this(comparator_ : Comparator[K], root_ : LLRBEmptyNode[K, V]) = this()
     def this(comparator_ : Comparator[K], root_ : LLRBNode[K, V]) = this()
     
-    /* private */ var comparator_ : js.Any = js.native
+    /* private */ var comparator_ : Any = js.native
     
     /**
-      * @return {number} The total number of nodes in the map.
+      * @returns The total number of nodes in the map.
       */
     def count(): Double = js.native
     
     /**
       * Returns the value of the node with the given key, or null.
       *
-      * @param {!K} key The key to look up.
-      * @return {?V} The value of the node with the given key, or null if the
+      * @param key - The key to look up.
+      * @returns The value of the node with the given key, or null if the
       * key doesn't exist.
       */
     def get(key: K): V | Null = js.native
     
     /**
       * Returns an iterator over the SortedMap.
-      * @template T
-      * @param {(function(K, V):T)=} resultGenerator
-      * @return {SortedMapIterator.<K, V, T>} The iterator.
+      * @returns The iterator.
       */
     def getIterator[T](): SortedMapIterator[K, V, T] = js.native
     def getIterator[T](resultGenerator: js.Function2[/* k */ K, /* v */ V, T]): SortedMapIterator[K, V, T] = js.native
@@ -352,8 +322,8 @@ object sortedMapMod {
     
     /**
       * Returns the key of the item *before* the specified key, or null if key is the first item.
-      * @param {K} key The key to find the predecessor of
-      * @return {?K} The predecessor key.
+      * @param key - The key to find the predecessor of
+      * @returns The predecessor key.
       */
     def getPredecessorKey(key: K): K | Null = js.native
     
@@ -367,43 +337,43 @@ object sortedMapMod {
       * Traverses the map in key order and calls the specified action function
       * for each key/value pair.
       *
-      * @param {function(!K, !V):*} action Callback function to be called
+      * @param action - Callback function to be called
       * for each key/value pair.  If action returns true, traversal is aborted.
-      * @return {*} The first truthy value returned by action, or the last falsey
+      * @returns The first truthy value returned by action, or the last falsey
       *   value returned by action
       */
-    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, js.Any]): Boolean = js.native
+    def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, Any]): Boolean = js.native
     
     /**
       * Returns a copy of the map, with the specified key/value added or replaced.
       * (TODO: We should perhaps rename this method to 'put')
       *
-      * @param {!K} key Key to be added.
-      * @param {!V} value Value to be added.
-      * @return {!SortedMap.<K, V>} New map, with item added.
+      * @param key - Key to be added.
+      * @param value - Value to be added.
+      * @returns New map, with item added.
       */
     def insert(key: K, value: V): SortedMap[K, V] = js.native
     
     /**
-      * @return {boolean} True if the map is empty.
+      * @returns True if the map is empty.
       */
     def isEmpty(): Boolean = js.native
     
     /**
-      * @return {?K} The maximum key in the map.
+      * @returns The maximum key in the map.
       */
     def maxKey(): K | Null = js.native
     
     /**
-      * @return {?K} The minimum key in the map.
+      * @returns The minimum key in the map.
       */
     def minKey(): K | Null = js.native
     
     /**
       * Returns a copy of the map, with the specified key removed.
       *
-      * @param {!K} key The key to remove.
-      * @return {!SortedMap.<K, V>} New map, with item removed.
+      * @param key - The key to remove.
+      * @returns New map, with item removed.
       */
     def remove(key: K): SortedMap[K, V] = js.native
     
@@ -411,43 +381,38 @@ object sortedMapMod {
       * Traverses the map in reverse key order and calls the specified action function
       * for each key/value pair.
       *
-      * @param {function(!Object, !Object)} action Callback function to be called
+      * @param action - Callback function to be called
       * for each key/value pair.  If action returns true, traversal is aborted.
-      * @return {*} True if the traversal was aborted.
+      * @returns True if the traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
     
-    /* private */ var root_ : js.Any = js.native
+    /* private */ var root_ : Any = js.native
   }
   /* static members */
   object SortedMap {
     
-    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "SortedMap")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * Always use the same empty node, to reduce memory.
-      * @const
       */
-    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap.EMPTY_NODE")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "SortedMap.EMPTY_NODE")
     @js.native
-    def EMPTY_NODE: LLRBEmptyNode[js.Any, js.Any] = js.native
-    inline def EMPTY_NODE_=(x: LLRBEmptyNode[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_NODE")(x.asInstanceOf[js.Any])
+    def EMPTY_NODE: LLRBEmptyNode[Any, Any] = js.native
+    inline def EMPTY_NODE_=(x: LLRBEmptyNode[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_NODE")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMapIterator")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/SortedMap", "SortedMapIterator")
   @js.native
-  class SortedMapIterator[K, V, T] protected () extends StObject {
+  open class SortedMapIterator[K, V, T] protected () extends StObject {
     def this(node: LLRBEmptyNode[K, V], startKey: K, comparator: Comparator[K], isReverse_ : Boolean) = this()
     def this(node: LLRBEmptyNode[K, V], startKey: Null, comparator: Comparator[K], isReverse_ : Boolean) = this()
     /**
-      * @template K, V, T
-      * @param {LLRBNode|LLRBEmptyNode} node Node to iterate.
-      * @param {?K} startKey
-      * @param {function(K, K): number} comparator
-      * @param {boolean} isReverse_ Whether or not to iterate in reverse
-      * @param {(function(K, V):T)=} resultGenerator_
+      * @param node - Node to iterate.
+      * @param isReverse_ - Whether or not to iterate in reverse
       */
     def this(node: LLRBNode[K, V], startKey: K, comparator: Comparator[K], isReverse_ : Boolean) = this()
     def this(node: LLRBNode[K, V], startKey: Null, comparator: Comparator[K], isReverse_ : Boolean) = this()
@@ -484,16 +449,13 @@ object sortedMapMod {
     
     def hasNext(): Boolean = js.native
     
-    /* private */ var isReverse_ : js.Any = js.native
+    /* private */ var isReverse_ : Any = js.native
     
-    /** @private
-      * @type {Array.<!LLRBNode>}
-      */
-    /* private */ var nodeStack_ : js.Any = js.native
+    /* private */ var nodeStack_ : Any = js.native
     
     def peek(): T = js.native
     
-    /* private */ var resultGenerator_ : js.Any = js.native
+    /* private */ var resultGenerator_ : Any = js.native
   }
   
   type Comparator[K] = js.Function2[/* key1 */ K, /* key2 */ K, Double]

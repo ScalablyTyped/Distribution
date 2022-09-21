@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ss-utils" : "0.2.6"
+      "ss-utils" : "0.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "ss-utils" : "0.2.6"
+      "ss-utils" : "0.2.7"
     }
   ],
   "compile-devDependencies" : [

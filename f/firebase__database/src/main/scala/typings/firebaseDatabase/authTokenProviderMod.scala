@@ -1,6 +1,5 @@
 package typings.firebaseDatabase
 
-import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAppTypes.privateMod.FirebaseAuthTokenData
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
@@ -10,11 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object authTokenProviderMod {
   
-  @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "EmulatorAdminTokenProvider")
+  @JSImport("@firebase/database/dist/node-esm/src/core/AuthTokenProvider", "EmulatorTokenProvider")
   @js.native
-  class EmulatorAdminTokenProvider ()
+  open class EmulatorTokenProvider protected ()
     extends StObject
        with AuthTokenProvider {
+    def this(accessToken: String) = this()
+    
+    /* private */ var accessToken: Any = js.native
     
     /* CompleteClass */
     override def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
@@ -29,33 +31,40 @@ object authTokenProviderMod {
     override def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
   }
   /* static members */
-  object EmulatorAdminTokenProvider {
+  object EmulatorTokenProvider {
     
-    @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "EmulatorAdminTokenProvider")
+    @JSImport("@firebase/database/dist/node-esm/src/core/AuthTokenProvider", "EmulatorTokenProvider")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "EmulatorAdminTokenProvider.EMULATOR_AUTH_TOKEN")
+    /** A string that is treated as an admin access token by the RTDB emulator. Used by Admin SDK. */
+    @JSImport("@firebase/database/dist/node-esm/src/core/AuthTokenProvider", "EmulatorTokenProvider.OWNER")
     @js.native
-    def EMULATOR_AUTH_TOKEN: js.Any = js.native
-    inline def EMULATOR_AUTH_TOKEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMULATOR_AUTH_TOKEN")(x.asInstanceOf[js.Any])
+    def OWNER: String = js.native
+    inline def OWNER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OWNER")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "FirebaseAuthTokenProvider")
+  @JSImport("@firebase/database/dist/node-esm/src/core/AuthTokenProvider", "FirebaseAuthTokenProvider")
   @js.native
-  class FirebaseAuthTokenProvider protected ()
+  open class FirebaseAuthTokenProvider protected ()
     extends StObject
        with AuthTokenProvider {
-    def this(app_ : FirebaseApp, authProvider_ : Provider[FirebaseAuthInternalName]) = this()
+    def this(
+      appName_ : String,
+      firebaseOptions_ : js.Object,
+      authProvider_ : Provider[FirebaseAuthInternalName]
+    ) = this()
     
     /* CompleteClass */
     override def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
     
-    /* private */ var app_ : js.Any = js.native
+    /* private */ var appName_ : Any = js.native
     
-    /* private */ var authProvider_ : js.Any = js.native
+    /* private */ var authProvider_ : Any = js.native
     
-    /* private */ var auth_ : js.Any = js.native
+    /* private */ var auth_ : Any = js.native
+    
+    /* private */ var firebaseOptions_ : Any = js.native
     
     /* CompleteClass */
     override def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native

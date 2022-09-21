@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@cucumber/cucumber-expressions" : "16.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@cucumber/cucumber-expressions" : "16.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

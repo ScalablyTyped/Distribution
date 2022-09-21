@@ -13,10 +13,8 @@ object glbufferattributeMod {
   
   @JSImport("three/src/core/GLBufferAttribute", "GLBufferAttribute")
   @js.native
-  class GLBufferAttribute protected () extends StObject {
-    def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `1`, count: Double) = this()
-    def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `2`, count: Double) = this()
-    def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `4`, count: Double) = this()
+  open class GLBufferAttribute protected () extends StObject {
+    def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `1` | `2` | `4`, count: Double) = this()
     
     var buffer: WebGLBuffer = js.native
     
@@ -36,12 +34,7 @@ object glbufferattributeMod {
     
     def setItemSize(itemSize: Double): this.type = js.native
     
-    @JSName("setType")
-    def setType_1(`type`: Double, elementSize: `1`): this.type = js.native
-    @JSName("setType")
-    def setType_2(`type`: Double, elementSize: `2`): this.type = js.native
-    @JSName("setType")
-    def setType_4(`type`: Double, elementSize: `4`): this.type = js.native
+    def setType(`type`: Double, elementSize: `1` | `2` | `4`): this.type = js.native
     
     var `type`: Double = js.native
     

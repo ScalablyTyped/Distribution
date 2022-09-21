@@ -29,7 +29,7 @@ object DBClusterParameterGroupsMessage {
     
     inline def setDBClusterParameterGroupsUndefined: Self = StObject.set(x, "DBClusterParameterGroups", js.undefined)
     
-    inline def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value :_*))
+    inline def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-statusbar
 
-Typings are for version 2.4.3
+Typings are for version 3.0.0
 
 ## Library description:
 Cordova StatusBar Plugin
@@ -9,11 +9,11 @@ Cordova StatusBar Plugin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-statusbar |
-| Keywords           | cordova, statusbar, ecosystem:cordova, cordova-android, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows |
-| # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 2851558 |
-| # stars            | 23 |
+| Keywords           | cordova, statusbar, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 187151.33333333334 |
+| # stars            | 600.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-statusbar#readme)

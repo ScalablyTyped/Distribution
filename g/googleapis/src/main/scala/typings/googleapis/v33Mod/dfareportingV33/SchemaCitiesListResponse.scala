@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * City List Response
-  */
 trait SchemaCitiesListResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaCitiesListResponse extends StObject {
   var cities: js.UndefOr[js.Array[SchemaCity]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#citiesListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#citiesListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCitiesListResponse {
   
@@ -33,9 +29,11 @@ object SchemaCitiesListResponse {
     
     inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    inline def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

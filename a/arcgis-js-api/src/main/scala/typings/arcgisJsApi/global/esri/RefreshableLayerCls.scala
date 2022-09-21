@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.RefreshableLayer")
 @js.native
-class RefreshableLayerCls ()
+open class RefreshableLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.RefreshableLayer {
   
@@ -21,6 +21,8 @@ class RefreshableLayerCls ()
   
   /**
     * Refresh interval of the layer in minutes.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */

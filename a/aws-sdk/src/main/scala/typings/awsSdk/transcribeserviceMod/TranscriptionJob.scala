@@ -7,52 +7,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TranscriptionJob extends StObject {
   
   /**
-    * A timestamp that shows when the job was completed.
+    * The date and time the specified transcription job finished processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:33:13.922000-07:00 represents a transcription job that started processing at 12:33 PM UTC-7 on May 4, 2022.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.undefined
+  var CompletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An object that describes content redaction settings for the transcription job.
+    * Redacts or flags specified personally identifiable information (PII) in your transcript.
     */
   var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.undefined
   
   /**
-    * A timestamp that shows when the job was created.
+    * The date and time the specified transcription job request was made. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If the TranscriptionJobStatus field is FAILED, this field contains information about why the job failed. The FailureReason field can contain one of the following values:    Unsupported media format - The media format specified in the MediaFormat field of the request isn't valid. See the description of the MediaFormat field for a list of valid values.    The media format provided does not match the detected media format - The media format of the audio file doesn't match the format specified in the MediaFormat field in the request. Check the media format of your media file and make sure that the two values match.    Invalid sample rate for audio file - The sample rate specified in the MediaSampleRateHertz of the request isn't valid. The sample rate must be between 8000 and 48000 Hertz.    The sample rate provided does not match the detected sample rate - The sample rate in the audio file doesn't match the sample rate specified in the MediaSampleRateHertz field in the request. Check the sample rate of your media file and make sure that the two values match.    Invalid file size: file size too large - The size of your audio file is larger than Amazon Transcribe can process. For more information, see Limits in the Amazon Transcribe Developer Guide.    Invalid number of channels: number of channels too large - Your audio contains more channels than Amazon Transcribe is configured to process. To request additional channels, see Amazon Transcribe Limits in the Amazon Web Services General Reference.  
+    * If TranscriptionJobStatus is FAILED, FailureReason contains information about why the transcription job request failed. The FailureReason field contains one of the following values:    Unsupported media format. The media format specified in MediaFormat isn't valid. Refer to MediaFormat for a list of supported formats.    The media format provided does not match the detected media format. The media format specified in MediaFormat doesn't match the format of the input file. Check the media format of your media file and correct the specified value.    Invalid sample rate for audio file. The sample rate specified in MediaSampleRateHertz isn't valid. The sample rate must be between 8,000 and 48,000 Hertz.    The sample rate provided does not match the detected sample rate. The sample rate specified in MediaSampleRateHertz doesn't match the sample rate detected in your input media file. Check the sample rate of your media file and correct the specified value.    Invalid file size: file size too large. The size of your media file is larger than what Amazon Transcribe can process. For more information, refer to Guidelines and quotas.    Invalid number of channels: number of channels too large. Your audio contains more channels than Amazon Transcribe is able to process. For more information, refer to Guidelines and quotas.  
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * A value between zero and one that Amazon Transcribe assigned to the language that it identified in the source audio. Larger values indicate that Amazon Transcribe has higher confidence in the language it identified.
+    * The confidence score associated with the language identified in your media file. Confidence scores are values between 0 and 1; a larger value indicates a higher probability that the identified language correctly matches the language spoken in your media.
     */
   var IdentifiedLanguageScore: js.UndefOr[typings.awsSdk.transcribeserviceMod.IdentifiedLanguageScore] = js.undefined
   
   /**
-    * A value that shows if automatic language identification was enabled for a transcription job.
+    * Indicates whether automatic language identification was enabled (TRUE) for the specified transcription job.
     */
   var IdentifyLanguage: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Provides information about how a transcription job is executed.
+    * Indicates whether automatic multi-language identification was enabled (TRUE) for the specified transcription job.
+    */
+  var IdentifyMultipleLanguages: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Provides information about how your transcription job is being processed. This parameter shows if your request is queued and what data access role is being used.
     */
   var JobExecutionSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.JobExecutionSettings] = js.undefined
   
   /**
-    * The language code for the input speech.
+    * The language code used to create your transcription job. For a list of supported languages and their associated language codes, refer to the Supported languages table. Note that you must include one of LanguageCode, IdentifyLanguage, or IdentifyMultipleLanguages in your request. If you include more than one of these parameters, your transcription job fails.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
-    * An object that shows the optional array of languages inputted for transcription jobs with automatic language identification enabled.
+    * The language codes used to create your transcription job. This parameter is used with multi-language identification. For single-language identification requests, refer to the singular version of this parameter, LanguageCode. For a list of supported languages and their associated language codes, refer to the Supported languages table.
+    */
+  var LanguageCodes: js.UndefOr[LanguageCodeList] = js.undefined
+  
+  /**
+    * If using automatic language identification (IdentifyLanguage) in your request and you want to apply a custom language model, a custom vocabulary, or a custom vocabulary filter, include LanguageIdSettings with the relevant sub-parameters (VocabularyName, LanguageModelName, and VocabularyFilterName). You can specify two or more language codes that represent the languages you think may be present in your media; including more than five is not recommended. Each language code you include can have an associated custom language model, custom vocabulary, and custom vocabulary filter. The languages you specify must match the languages of the specified custom language models, custom vocabularies, and custom vocabulary filters. To include language options using IdentifyLanguage without including a custom language model, a custom vocabulary, or a custom vocabulary filter, use LanguageOptions instead of LanguageIdSettings. Including language options can improve the accuracy of automatic language identification. If you want to include a custom language model with your request but do not want to use automatic language identification, use instead the  parameter with the LanguageModelName sub-parameter. If you want to include a custom vocabulary or a custom vocabulary filter (or both) with your request but do not want to use automatic language identification, use instead the  parameter with the VocabularyName or VocabularyFilterName (or both) sub-parameter.
+    */
+  var LanguageIdSettings: js.UndefOr[LanguageIdSettingsMap] = js.undefined
+  
+  /**
+    * You can specify two or more language codes that represent the languages you think may be present in your media; including more than five is not recommended. If you're unsure what languages are present, do not include this parameter. If you include LanguageOptions in your request, you must also include IdentifyLanguage. For more information, refer to Supported languages. To transcribe speech in Modern Standard Arabic (ar-SA), your media file must be encoded at a sample rate of 16,000 Hz or higher.
     */
   var LanguageOptions: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageOptions] = js.undefined
   
   /**
-    * An object that describes the input media for the transcription job.
+    * Describes the Amazon S3 location of the media file you want to use in your request.
     */
   var Media: js.UndefOr[typings.awsSdk.transcribeserviceMod.Media] = js.undefined
   
@@ -62,37 +77,47 @@ trait TranscriptionJob extends StObject {
   var MediaFormat: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaFormat] = js.undefined
   
   /**
-    * The sample rate, in Hertz, of the audio track in the input media file. 
+    * The sample rate, in Hertz, of the audio track in your input media file.
     */
   var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaSampleRateHertz] = js.undefined
   
   /**
-    * An object containing the details of your custom language model.
+    * The custom language model you want to include with your transcription job. If you include ModelSettings in your request, you must include the LanguageModelName sub-parameter.
     */
   var ModelSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelSettings] = js.undefined
   
   /**
-    * Optional settings for the transcription job. Use these settings to turn on speaker recognition, to set the maximum number of speakers that should be identified and to specify a custom vocabulary to use when processing the transcription job.
+    * Specify additional optional settings in your request, including channel identification, alternative transcriptions, speaker labeling; allows you to apply custom vocabularies and vocabulary filters. If you want to include a custom vocabulary or a custom vocabulary filter (or both) with your request but do not want to use automatic language identification, use Settings with the VocabularyName or VocabularyFilterName (or both) sub-parameter. If you're using automatic language identification with your request and want to include a custom language model, a custom vocabulary, or a custom vocabulary filter, do not use the Settings parameter; use instead the  parameter with the LanguageModelName, VocabularyName or VocabularyFilterName sub-parameters.
     */
   var Settings: js.UndefOr[typings.awsSdk.transcribeserviceMod.Settings] = js.undefined
   
   /**
-    * A timestamp that shows with the job was started processing.
+    * The date and time the specified transcription job began processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.789000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An object that describes the output of the transcription job.
+    * Generate subtitles for your media file with your transcription request.
+    */
+  var Subtitles: js.UndefOr[SubtitlesOutput] = js.undefined
+  
+  /**
+    * Adds one or more custom tags, each in the form of a key:value pair, to a new transcription job at the time you start this new job. To learn more about using tags with Amazon Transcribe, refer to Tagging resources.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * Provides you with the Amazon S3 URI you can use to access your transcript.
     */
   var Transcript: js.UndefOr[typings.awsSdk.transcribeserviceMod.Transcript] = js.undefined
   
   /**
-    * The name of the transcription job.
+    * The name of the transcription job. Job names are case sensitive and must be unique within an Amazon Web Services account.
     */
   var TranscriptionJobName: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobName] = js.undefined
   
   /**
-    * The status of the transcription job.
+    * Provides the status of the specified transcription job. If the status is COMPLETED, the job is finished and you can find the results at the location specified in TranscriptFileUri (or RedactedTranscriptFileUri, if you requested transcript redaction). If the status is FAILED, FailureReason provides details on why your transcription job failed.
     */
   var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
 }
@@ -105,7 +130,7 @@ object TranscriptionJob {
   
   extension [Self <: TranscriptionJob](x: Self) {
     
-    inline def setCompletionTime(value: DateTime): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     
     inline def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
     
@@ -113,7 +138,7 @@ object TranscriptionJob {
     
     inline def setContentRedactionUndefined: Self = StObject.set(x, "ContentRedaction", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -129,6 +154,10 @@ object TranscriptionJob {
     
     inline def setIdentifyLanguageUndefined: Self = StObject.set(x, "IdentifyLanguage", js.undefined)
     
+    inline def setIdentifyMultipleLanguages(value: Boolean): Self = StObject.set(x, "IdentifyMultipleLanguages", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifyMultipleLanguagesUndefined: Self = StObject.set(x, "IdentifyMultipleLanguages", js.undefined)
+    
     inline def setJobExecutionSettings(value: JobExecutionSettings): Self = StObject.set(x, "JobExecutionSettings", value.asInstanceOf[js.Any])
     
     inline def setJobExecutionSettingsUndefined: Self = StObject.set(x, "JobExecutionSettings", js.undefined)
@@ -137,11 +166,21 @@ object TranscriptionJob {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
+    inline def setLanguageCodes(value: LanguageCodeList): Self = StObject.set(x, "LanguageCodes", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodesUndefined: Self = StObject.set(x, "LanguageCodes", js.undefined)
+    
+    inline def setLanguageCodesVarargs(value: LanguageCodeItem*): Self = StObject.set(x, "LanguageCodes", js.Array(value*))
+    
+    inline def setLanguageIdSettings(value: LanguageIdSettingsMap): Self = StObject.set(x, "LanguageIdSettings", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageIdSettingsUndefined: Self = StObject.set(x, "LanguageIdSettings", js.undefined)
+    
     inline def setLanguageOptions(value: LanguageOptions): Self = StObject.set(x, "LanguageOptions", value.asInstanceOf[js.Any])
     
     inline def setLanguageOptionsUndefined: Self = StObject.set(x, "LanguageOptions", js.undefined)
     
-    inline def setLanguageOptionsVarargs(value: LanguageCode*): Self = StObject.set(x, "LanguageOptions", js.Array(value :_*))
+    inline def setLanguageOptionsVarargs(value: LanguageCode*): Self = StObject.set(x, "LanguageOptions", js.Array(value*))
     
     inline def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
@@ -163,9 +202,19 @@ object TranscriptionJob {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    
+    inline def setSubtitles(value: SubtitlesOutput): Self = StObject.set(x, "Subtitles", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitlesUndefined: Self = StObject.set(x, "Subtitles", js.undefined)
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTranscript(value: Transcript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
     

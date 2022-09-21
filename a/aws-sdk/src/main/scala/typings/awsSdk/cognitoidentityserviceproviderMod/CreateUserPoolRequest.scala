@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateUserPoolRequest extends StObject {
   
   /**
-    * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
+    * The available verified method a user can use to recover their password when they call ForgotPassword. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred through email.
     */
   var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.undefined
   
@@ -27,27 +27,27 @@ trait CreateUserPoolRequest extends StObject {
   var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
-    * The device configuration.
+    * The device-remembering configuration for a user pool. A null value indicates that you have deactivated device remembering in your user pool.  When you provide a value for any DeviceConfiguration field, you activate the Amazon Cognito device-remembering feature. 
     */
   var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
   
   /**
-    * The email configuration.
+    * The email configuration of your user pool. The email configuration type sets your preferred sending method, Amazon Web Services Region, and sender for messages from your user pool.
     */
   var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.undefined
   
   /**
-    * A string representing the email verification message.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
-    * A string representing the email verification subject.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
-    * The Lambda trigger configuration information for the new user pool.  In a push model, event sources (such as Amazon S3 and custom applications) need permission to invoke a function. So you will need to make an extra call to add permission for these event sources to invoke your Lambda function.  For more information on using the Lambda API to add permission, see  AddPermission .  For adding permission using the AWS CLI, see  add-permission . 
+    * The Lambda trigger configuration information for the new user pool.  In a push model, event sources (such as Amazon S3 and custom applications) need permission to invoke a function. So you must make an extra call to add permission for these event sources to invoke your Lambda function.  For more information on using the Lambda API to add permission, see AddPermission .  For adding permission using the CLI, see add-permission . 
     */
   var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
@@ -77,17 +77,22 @@ trait CreateUserPoolRequest extends StObject {
   var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
-    * The SMS configuration.
+    * The SMS configuration with the settings that your Amazon Cognito user pool must use to send an SMS message from your Amazon Web Services account through Amazon Simple Notification Service. To send SMS messages with Amazon SNS in the Amazon Web Services Region that you want, the Amazon Cognito user pool uses an Identity and Access Management (IAM) role in your Amazon Web Services account.
     */
   var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
   
   /**
-    * A string representing the SMS verification message.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
-    * Used to enable advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
+    * The settings for updates to user attributes. These settings include the property AttributesRequireVerificationBeforeUpdate, a user-pool setting that tells Amazon Cognito how to handle changes to the value of your users' email address and phone number attributes. For more information, see  Verifying updates to email addresses and phone numbers.
+    */
+  var UserAttributeUpdateSettings: js.UndefOr[UserAttributeUpdateSettingsType] = js.undefined
+  
+  /**
+    * Enables advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
     */
   var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
   
@@ -97,12 +102,12 @@ trait CreateUserPoolRequest extends StObject {
   var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
   
   /**
-    * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up.
+    * Specifies whether a user can use an email address or phone number as a username when they sign up.
     */
   var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.undefined
   
   /**
-    * You can choose to set case sensitivity on the username input for the selected sign-in option. For example, when this is set to False, users will be able to sign in using either "username" or "Username". This configuration is immutable once it has been set. For more information, see UsernameConfigurationType.
+    * Case sensitivity on the username input for the selected sign-in option. For example, when case sensitivity is set to False, users can sign in using either "username" or "Username". This configuration is immutable once it has been set. For more information, see UsernameConfigurationType.
     */
   var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.undefined
   
@@ -132,13 +137,13 @@ object CreateUserPoolRequest {
     
     inline def setAliasAttributesUndefined: Self = StObject.set(x, "AliasAttributes", js.undefined)
     
-    inline def setAliasAttributesVarargs(value: AliasAttributeType*): Self = StObject.set(x, "AliasAttributes", js.Array(value :_*))
+    inline def setAliasAttributesVarargs(value: AliasAttributeType*): Self = StObject.set(x, "AliasAttributes", js.Array(value*))
     
     inline def setAutoVerifiedAttributes(value: VerifiedAttributesListType): Self = StObject.set(x, "AutoVerifiedAttributes", value.asInstanceOf[js.Any])
     
     inline def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "AutoVerifiedAttributes", js.undefined)
     
-    inline def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value :_*))
+    inline def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value*))
     
     inline def setDeviceConfiguration(value: DeviceConfigurationType): Self = StObject.set(x, "DeviceConfiguration", value.asInstanceOf[js.Any])
     
@@ -174,7 +179,7 @@ object CreateUserPoolRequest {
     
     inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    inline def setSchemaVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "Schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "Schema", js.Array(value*))
     
     inline def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsAuthenticationMessage", value.asInstanceOf[js.Any])
     
@@ -188,6 +193,10 @@ object CreateUserPoolRequest {
     
     inline def setSmsVerificationMessageUndefined: Self = StObject.set(x, "SmsVerificationMessage", js.undefined)
     
+    inline def setUserAttributeUpdateSettings(value: UserAttributeUpdateSettingsType): Self = StObject.set(x, "UserAttributeUpdateSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUserAttributeUpdateSettingsUndefined: Self = StObject.set(x, "UserAttributeUpdateSettings", js.undefined)
+    
     inline def setUserPoolAddOns(value: UserPoolAddOnsType): Self = StObject.set(x, "UserPoolAddOns", value.asInstanceOf[js.Any])
     
     inline def setUserPoolAddOnsUndefined: Self = StObject.set(x, "UserPoolAddOns", js.undefined)
@@ -200,7 +209,7 @@ object CreateUserPoolRequest {
     
     inline def setUsernameAttributesUndefined: Self = StObject.set(x, "UsernameAttributes", js.undefined)
     
-    inline def setUsernameAttributesVarargs(value: UsernameAttributeType*): Self = StObject.set(x, "UsernameAttributes", js.Array(value :_*))
+    inline def setUsernameAttributesVarargs(value: UsernameAttributeType*): Self = StObject.set(x, "UsernameAttributes", js.Array(value*))
     
     inline def setUsernameConfiguration(value: UsernameConfigurationType): Self = StObject.set(x, "UsernameConfiguration", value.asInstanceOf[js.Any])
     

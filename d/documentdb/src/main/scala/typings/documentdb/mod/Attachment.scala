@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Attachment
   extends StObject
      with /** Other properties */
-/* name */ StringDictionary[js.Any] {
+/* name */ StringDictionary[Any] {
   
   /** The MIME contentType of the attachment. */
   var contentType: String

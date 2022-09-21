@@ -57,7 +57,7 @@ object dropdownTriggerMod {
   
   @JSImport("rbx/components/dropdown/dropdown-trigger", "DropdownTrigger")
   @js.native
-  val DropdownTrigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[js.Any]] = js.native
+  val DropdownTrigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[Any]] = js.native
   
   trait DropdownTriggerModifierProps extends StObject {
     

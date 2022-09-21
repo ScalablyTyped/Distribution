@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DatePickerViewModelConstructor
   extends StObject
-     with Instantiable0[DatePickerViewModel]
+     with /**
+  * Provides the logic for the [DatePicker](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePickerViewModel.html)
+  */
+Instantiable0[DatePickerViewModel]
      with Instantiable1[/* properties */ DatePickerViewModelProperties, DatePickerViewModel]

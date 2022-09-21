@@ -656,10 +656,6 @@ object actionsOnGoogleStrings {
   inline def LINE: LINE = "LINE".asInstanceOf[LINE]
   
   @js.native
-  sealed trait LINK extends StObject
-  inline def LINK: LINK = "LINK".asInstanceOf[LINK]
-  
-  @js.native
   sealed trait LOYALTY_PROGRAM
     extends StObject
        with GoogleActionsTransactionsV3PaymentMethodDisplayInfoPaymentType

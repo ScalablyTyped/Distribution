@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("url-slugify", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with URLSlugify
   

@@ -11,7 +11,7 @@ trait RestifyHttpErrorOptions
   
   var code: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ object RestifyHttpErrorOptions {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     

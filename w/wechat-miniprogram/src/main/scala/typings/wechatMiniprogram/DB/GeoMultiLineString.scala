@@ -23,7 +23,7 @@ object GeoMultiLineString {
     
     inline def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setToJSON(value: () => IGeoJSONMultiLineString): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

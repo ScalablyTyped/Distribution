@@ -9,6 +9,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -16,7 +17,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
 import typings.react.mod.RefObject
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.popupContentMod.PopupContentProps
 import typings.semanticUiReact.popupHeaderMod.PopupHeaderProps
@@ -51,10 +51,9 @@ object popupPopupMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Popup/Popup", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[PopupProps, ComponentState, js.Any] {
+  open class default protected () extends Component[PopupProps, ComponentState, Any] {
     def this(props: PopupProps) = this()
-    def this(props: PopupProps, context: js.Any) = this()
+    def this(props: PopupProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Popup/Popup", JSImport.Default)
   @js.native
@@ -95,15 +94,15 @@ object popupPopupMod extends Shortcut {
     extends StObject
        with ComponentClass[PopupProps, ComponentState] {
     
-    var Content: StatelessComponent[PopupContentProps] = js.native
+    var Content: FC[PopupContentProps] = js.native
     
-    var Header: StatelessComponent[PopupHeaderProps] = js.native
+    var Header: FC[PopupHeaderProps] = js.native
   }
   
   trait PopupProps
     extends StObject
        with StrictPopupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PopupProps {
     
     inline def apply(): PopupProps = {
@@ -117,7 +116,7 @@ object popupPopupMod extends Shortcut {
        with StrictPortalProps {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Display the popup without the pointing arrow */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -212,10 +211,10 @@ object popupPopupMod extends Shortcut {
     var popper: js.UndefOr[SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]] = js.undefined
     
     /** A popup can have dependencies which update will schedule a position update. */
-    var popperDependencies: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var popperDependencies: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** An array containing custom settings for the Popper.js modifiers. */
-    var popperModifiers: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var popperModifiers: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Position for the popover. */
     var position: js.UndefOr[
@@ -243,7 +242,7 @@ object popupPopupMod extends Shortcut {
     
     extension [Self <: StrictPopupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -327,7 +326,7 @@ object popupPopupMod extends Shortcut {
       
       inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      inline def setOnVarargs(value: (hover | click | focus)*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: (hover | click | focus)*): Self = StObject.set(x, "on", js.Array(value*))
       
       inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
@@ -335,21 +334,21 @@ object popupPopupMod extends Shortcut {
       
       inline def setPopper(value: SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
-      inline def setPopperDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
+      inline def setPopperDependencies(value: js.Array[Any]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
       
       inline def setPopperDependenciesUndefined: Self = StObject.set(x, "popperDependencies", js.undefined)
       
-      inline def setPopperDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "popperDependencies", js.Array(value :_*))
+      inline def setPopperDependenciesVarargs(value: Any*): Self = StObject.set(x, "popperDependencies", js.Array(value*))
       
       inline def setPopperFunction3(
         value: (/* component */ ElementType[HTMLAttributes[HTMLDivElement]], HTMLAttributes[HTMLDivElement], /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "popper", js.Any.fromFunction3(value))
       
-      inline def setPopperModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
+      inline def setPopperModifiers(value: js.Array[Any]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
       
       inline def setPopperModifiersUndefined: Self = StObject.set(x, "popperModifiers", js.undefined)
       
-      inline def setPopperModifiersVarargs(value: js.Any*): Self = StObject.set(x, "popperModifiers", js.Array(value :_*))
+      inline def setPopperModifiersVarargs(value: Any*): Self = StObject.set(x, "popperModifiers", js.Array(value*))
       
       inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
       

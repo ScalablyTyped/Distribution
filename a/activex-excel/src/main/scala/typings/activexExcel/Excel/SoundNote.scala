@@ -10,30 +10,30 @@ trait SoundNote extends StObject {
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   /* private */ @JSName("Excel.SoundNote_typekey")
   var ExcelDotSoundNote_typekey: SoundNote
   
-  def Import(Filename: String): js.Any
+  def Import(Filename: String): Any
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Play(): js.Any
+  def Play(): Any
   
-  def Record(): js.Any
+  def Record(): Any
 }
 object SoundNote {
   
   inline def apply(
     Application: Application,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     ExcelDotSoundNote_typekey: SoundNote,
-    Import: String => js.Any,
-    Parent: js.Any,
-    Play: () => js.Any,
-    Record: () => js.Any
+    Import: String => Any,
+    Parent: Any,
+    Play: () => Any,
+    Record: () => Any
   ): SoundNote = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Import = js.Any.fromFunction1(Import), Parent = Parent.asInstanceOf[js.Any], Play = js.Any.fromFunction0(Play), Record = js.Any.fromFunction0(Record))
     __obj.updateDynamic("Excel.SoundNote_typekey")(ExcelDotSoundNote_typekey.asInstanceOf[js.Any])
@@ -46,16 +46,16 @@ object SoundNote {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setExcelDotSoundNote_typekey(value: SoundNote): Self = StObject.set(x, "Excel.SoundNote_typekey", value.asInstanceOf[js.Any])
     
-    inline def setImport(value: String => js.Any): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
+    inline def setImport(value: String => Any): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setPlay(value: () => js.Any): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Any): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
-    inline def setRecord(value: () => js.Any): Self = StObject.set(x, "Record", js.Any.fromFunction0(value))
+    inline def setRecord(value: () => Any): Self = StObject.set(x, "Record", js.Any.fromFunction0(value))
   }
 }

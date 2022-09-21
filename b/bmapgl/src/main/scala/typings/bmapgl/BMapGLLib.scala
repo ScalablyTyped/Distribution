@@ -10,7 +10,7 @@ object BMapGLLib {
   @js.native
   trait Callback extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait DistanceTool extends StObject {

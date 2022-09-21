@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "FieldValue")
 @js.native
-/* private */ class FieldValue () extends StObject {
+/* private */ open class FieldValue () extends StObject {
   
   def isEqual(other: FieldValue): Boolean = js.native
 }
@@ -17,9 +17,9 @@ object FieldValue {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def arrayRemove(elements: js.Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
+  inline def arrayRemove(elements: Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FieldValue]
   
-  inline def arrayUnion(elements: js.Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
+  inline def arrayUnion(elements: Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FieldValue]
   
   inline def delete(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[FieldValue]
   

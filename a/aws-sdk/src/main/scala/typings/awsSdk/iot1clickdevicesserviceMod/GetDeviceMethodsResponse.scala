@@ -24,6 +24,6 @@ object GetDeviceMethodsResponse {
     
     inline def setDeviceMethodsUndefined: Self = StObject.set(x, "DeviceMethods", js.undefined)
     
-    inline def setDeviceMethodsVarargs(value: DeviceMethod*): Self = StObject.set(x, "DeviceMethods", js.Array(value :_*))
+    inline def setDeviceMethodsVarargs(value: DeviceMethod*): Self = StObject.set(x, "DeviceMethods", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.recurlyRecurlyJs
 
+import typings.recurlyRecurlyJs.anon.Field
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,6 +16,10 @@ object errorMod {
     
     var code: String
     
+    var details: js.UndefOr[js.Array[Field]] = js.undefined
+    
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
+    
     var help: js.UndefOr[String] = js.undefined
   }
   object RecurlyError {
@@ -29,6 +34,18 @@ object errorMod {
       inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setDetails(value: js.Array[Field]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      
+      inline def setDetailsVarargs(value: Field*): Self = StObject.set(x, "details", js.Array(value*))
+      
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       

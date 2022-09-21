@@ -10,7 +10,7 @@ object flyCameraInputsManagerMod {
   
   @JSImport("babylonjs/Cameras/flyCameraInputsManager", "FlyCameraInputsManager")
   @js.native
-  class FlyCameraInputsManager protected () extends CameraInputsManager[FlyCamera] {
+  open class FlyCameraInputsManager protected () extends CameraInputsManager[FlyCamera] {
     /**
       * Instantiates a new FlyCameraInputsManager.
       * @param camera Defines the camera the inputs belong to.
@@ -25,10 +25,8 @@ object flyCameraInputsManagerMod {
     
     /**
       * Add mouse input support to the input manager.
-      * @param touchEnabled Enable touch screen support.
       * @returns the new FlyCameraMouseInput().
       */
     def addMouse(): FlyCameraInputsManager = js.native
-    def addMouse(touchEnabled: Boolean): FlyCameraInputsManager = js.native
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "\u0275NgModuleFactory")
 @js.native
-class ɵNgModuleFactory[T] protected () extends NgModuleFactory[T] {
+open class ɵNgModuleFactory[T] protected () extends NgModuleFactory[T] {
   def this(moduleType: Type[T]) = this()
   
   @JSName("moduleType")

@@ -15,7 +15,7 @@ trait ODBCError extends StObject {
   /* private */ @JSName("Excel.ODBCError_typekey")
   var ExcelDotODBCError_typekey: ODBCError
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SqlState: String
 }
@@ -26,7 +26,7 @@ object ODBCError {
     Creator: XlCreator,
     ErrorString: String,
     ExcelDotODBCError_typekey: ODBCError,
-    Parent: js.Any,
+    Parent: Any,
     SqlState: String
   ): ODBCError = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], ErrorString = ErrorString.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SqlState = SqlState.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object ODBCError {
     
     inline def setExcelDotODBCError_typekey(value: ODBCError): Self = StObject.set(x, "Excel.ODBCError_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
   }

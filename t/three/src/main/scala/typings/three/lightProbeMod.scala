@@ -11,7 +11,7 @@ object lightProbeMod {
   
   @JSImport("three/src/lights/LightProbe", "LightProbe")
   @js.native
-  class LightProbe () extends Light {
+  open class LightProbe () extends Light {
     def this(sh: SphericalHarmonics3) = this()
     def this(sh: Unit, intensity: Double) = this()
     def this(sh: SphericalHarmonics3, intensity: Double) = this()
@@ -21,8 +21,8 @@ object lightProbeMod {
     val isLightProbe: `true` = js.native
     
     /**
-    	 * @default new THREE.SphericalHarmonics3()
-    	 */
+      * @default new THREE.SphericalHarmonics3()
+      */
     var sh: SphericalHarmonics3 = js.native
   }
 }

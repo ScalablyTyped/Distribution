@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storageCacheMod {
   
-  @JSImport("@firebase/remote-config/dist/src/storage/storage_cache", "StorageCache")
+  @JSImport("@firebase/remote-config/dist/esm/src/storage/storage_cache", "StorageCache")
   @js.native
-  class StorageCache protected () extends StObject {
+  open class StorageCache protected () extends StObject {
     def this(storage: Storage) = this()
     
-    /* private */ var activeConfig: js.Any = js.native
+    /* private */ var activeConfig: Any = js.native
     
     def getActiveConfig(): js.UndefOr[FirebaseRemoteConfigObject] = js.native
     
@@ -28,9 +28,9 @@ object storageCacheMod {
     /**
       * Memory caches.
       */
-    /* private */ var lastFetchStatus: js.Any = js.native
+    /* private */ var lastFetchStatus: Any = js.native
     
-    /* private */ var lastSuccessfulFetchTimestampMillis: js.Any = js.native
+    /* private */ var lastSuccessfulFetchTimestampMillis: Any = js.native
     
     /**
       * Read-ahead getter
@@ -46,6 +46,6 @@ object storageCacheMod {
     
     def setLastSuccessfulFetchTimestampMillis(timestampMillis: Double): js.Promise[Unit] = js.native
     
-    /* private */ val storage: js.Any = js.native
+    /* private */ val storage: Any = js.native
   }
 }

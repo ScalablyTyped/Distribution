@@ -11,9 +11,9 @@ trait HTMLStorage extends StObject {
   
   def clear(): Unit
   
-  val constructor: js.Any
+  val constructor: Any
   
-  def getItem(bstrKey: String): js.Any
+  def getItem(bstrKey: String): Any
   
   def ie9_setItem(bstrKey: String, bstrValue: String): Unit
   
@@ -32,8 +32,8 @@ object HTMLStorage {
   inline def apply(
     MSHTMLDotHTMLStorage_typekey: HTMLStorage,
     clear: () => Unit,
-    constructor: js.Any,
-    getItem: String => js.Any,
+    constructor: Any,
+    getItem: String => Any,
     ie9_setItem: (String, String) => Unit,
     key: Double => String,
     length: Double,
@@ -50,9 +50,9 @@ object HTMLStorage {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: String => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     inline def setIe9_setItem(value: (String, String) => Unit): Self = StObject.set(x, "ie9_setItem", js.Any.fromFunction2(value))
     

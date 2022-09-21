@@ -17,8 +17,7 @@ object calloutContentBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")
   @js.native
-  class CalloutContentBase protected ()
-    extends Component[ICalloutProps, ICalloutState, js.Any] {
+  open class CalloutContentBase protected () extends Component[ICalloutProps, ICalloutState, Any] {
     def this(props: ICalloutProps) = this()
     
     @JSName("UNSAFE_componentWillMount")
@@ -27,27 +26,27 @@ object calloutContentBaseMod {
     @JSName("UNSAFE_componentWillUpdate")
     def UNSAFE_componentWillUpdate_MCalloutContentBase(newProps: ICalloutProps): Unit = js.native
     
-    /* private */ var _addListeners: js.Any = js.native
+    /* private */ var _addListeners: Any = js.native
     
-    /* private */ var _arePositionsEqual: js.Any = js.native
+    /* private */ var _arePositionsEqual: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _blockResetHeight: js.Any = js.native
+    /* private */ var _blockResetHeight: Any = js.native
     
-    /* private */ var _bounds: js.Any = js.native
+    /* private */ var _bounds: Any = js.native
     
-    /* private */ var _calloutElement: js.Any = js.native
+    /* private */ var _calloutElement: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _comparePositions: js.Any = js.native
+    /* private */ var _comparePositions: Any = js.native
     
-    /* private */ var _didPositionPropsChange: js.Any = js.native
+    /* private */ var _didPositionPropsChange: Any = js.native
     
-    /* private */ var _didSetInitialFocus: js.Any = js.native
+    /* private */ var _didSetInitialFocus: Any = js.native
     
-    /* private */ var _dismissOnClickOrScroll: js.Any = js.native
+    /* private */ var _dismissOnClickOrScroll: Any = js.native
     
     /* protected */ def _dismissOnLostFocus(ev: Event): Unit = js.native
     
@@ -55,51 +54,51 @@ object calloutContentBaseMod {
     
     /* protected */ def _dismissOnScroll(ev: Event): Unit = js.native
     
-    /* private */ var _dismissOnTargetWindowBlur: js.Any = js.native
+    /* private */ var _dismissOnTargetWindowBlur: Any = js.native
     
-    /* private */ var _disposables: js.Any = js.native
+    /* private */ var _disposables: Any = js.native
     
-    /* private */ var _getBeakPosition: js.Any = js.native
+    /* private */ var _getBeakPosition: Any = js.native
     
-    /* private */ var _getBounds: js.Any = js.native
+    /* private */ var _getBounds: Any = js.native
     
-    /* private */ var _getMaxHeight: js.Any = js.native
+    /* private */ var _getMaxHeight: Any = js.native
     
-    /* private */ var _getTarget: js.Any = js.native
+    /* private */ var _getTarget: Any = js.native
     
-    /* private */ var _hasListeners: js.Any = js.native
+    /* private */ var _hasListeners: Any = js.native
     
-    /* private */ var _hostElement: js.Any = js.native
+    /* private */ var _hostElement: Any = js.native
     
-    /* private */ var _isMouseDownOnPopup: js.Any = js.native
+    /* private */ var _isMouseDownOnPopup: Any = js.native
     
-    /* private */ var _maxHeight: js.Any = js.native
+    /* private */ var _maxHeight: Any = js.native
     
-    /* private */ var _mouseDownOnPopup: js.Any = js.native
+    /* private */ var _mouseDownOnPopup: Any = js.native
     
-    /* private */ var _mouseUpOnPopup: js.Any = js.native
+    /* private */ var _mouseUpOnPopup: Any = js.native
     
     /* protected */ def _onComponentDidMount(): Unit = js.native
     
-    /* private */ var _positionAttempts: js.Any = js.native
+    /* private */ var _positionAttempts: Any = js.native
     
-    /* private */ var _removeListeners: js.Any = js.native
+    /* private */ var _removeListeners: Any = js.native
     
-    /* private */ var _setHeightOffsetEveryFrame: js.Any = js.native
+    /* private */ var _setHeightOffsetEveryFrame: Any = js.native
     
-    /* private */ var _setHeightOffsetTimer: js.Any = js.native
+    /* private */ var _setHeightOffsetTimer: Any = js.native
     
     /* protected */ def _setInitialFocus(): Unit = js.native
     
-    /* private */ var _setTargetWindowAndElement: js.Any = js.native
+    /* private */ var _setTargetWindowAndElement: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
-    /* private */ var _targetWindow: js.Any = js.native
+    /* private */ var _targetWindow: Any = js.native
     
-    /* private */ var _updateAsyncPosition: js.Any = js.native
+    /* private */ var _updateAsyncPosition: Any = js.native
     
-    /* private */ var _updatePosition: js.Any = js.native
+    /* private */ var _updatePosition: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCalloutContentBase(): Unit = js.native

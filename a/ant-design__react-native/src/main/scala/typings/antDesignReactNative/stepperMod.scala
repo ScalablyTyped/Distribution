@@ -14,7 +14,7 @@ object stepperMod {
   
   @JSImport("@ant-design/react-native/lib/stepper", JSImport.Default)
   @js.native
-  class default () extends Stepper
+  open class default () extends Stepper
   /* static members */
   object default {
     
@@ -53,6 +53,5 @@ object stepperMod {
   }
   
   @js.native
-  trait Stepper
-    extends Component[StepProps, js.Any, js.Any]
+  trait Stepper extends Component[StepProps, Any, Any]
 }

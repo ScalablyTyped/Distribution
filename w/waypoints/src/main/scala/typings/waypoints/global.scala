@@ -13,7 +13,7 @@ object global {
   
   @JSGlobal("Waypoint")
   @js.native
-  class Waypoint protected ()
+  open class Waypoint protected ()
     extends StObject
        with typings.waypoints.Waypoint {
     def this(options: WaypointOptions) = this()
@@ -113,7 +113,7 @@ object global {
   
   @JSGlobal("WaypointAdapter")
   @js.native
-  class WaypointAdapter protected ()
+  open class WaypointAdapter protected ()
     extends StObject
        with typings.waypoints.WaypointAdapter {
     def this(element: HTMLElement) = this()
@@ -152,18 +152,18 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def extend(objects: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(objects: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     
     /* static member */
-    inline def inArray(value: js.Any, array: js.Array[js.Any], startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def inArray(value: Any, array: js.Array[Any], startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    inline def isEmptyObject(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEmptyObject(`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("WaypointContext")
   @js.native
-  class WaypointContext ()
+  open class WaypointContext ()
     extends StObject
        with typings.waypoints.WaypointContext {
     
@@ -186,7 +186,7 @@ object global {
   
   @JSGlobal("WaypointGroup")
   @js.native
-  class WaypointGroup ()
+  open class WaypointGroup ()
     extends StObject
        with typings.waypoints.WaypointGroup {
     

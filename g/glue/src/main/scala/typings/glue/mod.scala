@@ -42,11 +42,11 @@ object mod {
   trait Options extends StObject {
     
     var preConnections: js.UndefOr[
-        js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
+        js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ Any, Unit], Unit]
       ] = js.undefined
     
     var preRegister: js.UndefOr[
-        js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
+        js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ Any, Unit], Unit]
       ] = js.undefined
     
     var relativeTo: String
@@ -60,11 +60,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setPreConnections(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
+      inline def setPreConnections(value: (/* Server */ Server, /* next */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
       
       inline def setPreConnectionsUndefined: Self = StObject.set(x, "preConnections", js.undefined)
       
-      inline def setPreRegister(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
+      inline def setPreRegister(value: (/* Server */ Server, /* next */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
       
       inline def setPreRegisterUndefined: Self = StObject.set(x, "preRegister", js.undefined)
       
@@ -74,11 +74,11 @@ object mod {
   
   trait Plugin extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var plugin: String | typings.glue.anon.Options
     
-    var routes: js.UndefOr[js.Any] = js.undefined
+    var routes: js.UndefOr[Any] = js.undefined
   }
   object Plugin {
     
@@ -89,13 +89,13 @@ object mod {
     
     extension [Self <: Plugin](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       inline def setPlugin(value: String | typings.glue.anon.Options): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     }

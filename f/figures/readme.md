@@ -1,19 +1,19 @@
 
 # Scala.js typings for figures
 
-Typings are for version 3.2.0
+Typings are for version 5.0.0
 
 ## Library description:
-Unicode symbols with Windows CMD fallbacks
+Unicode symbols with fallbacks for older terminals
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | figures |
 | Keywords           | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback |
-| # releases         | 4 |
-| # dependents       | 883 |
-| # downloads        | 1104293894 |
-| # stars            | 12 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2535836266666667E8 |
+| # stars            | 515.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/figures#readme)

@@ -31,7 +31,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<ES> */
 /* Inlined parent vega-lite.vega-lite/build/src/vega.schema.MapExcludeValueRefAndReplaceSignalWith<std.Omit<vega.vega.MarkConfig, 'tooltip' | 'fill' | 'stroke'>, ES> */
-trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
+trait MarkConfig[ES /* <: ExprRef | SignalRef */]
+  extends StObject
+     with AnyMarkConfig[ES] {
   
   /**
     * The horizontal alignment of the text or ranged marks (area, bar, image, rect, rule). One of `"left"`, `"right"`, `"center"`.
@@ -43,35 +45,35 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var angle: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var aria: js.UndefOr[
     (Exclude[
       js.UndefOr[Boolean | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var ariaRole: js.UndefOr[
     (Exclude[
       js.UndefOr[String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var ariaRoleDescription: js.UndefOr[
     (Exclude[
       js.UndefOr[String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var aspect: js.UndefOr[
     (Exclude[
       js.UndefOr[Boolean | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -88,7 +90,7 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var baseline: js.UndefOr[TextBaseline | ES] = js.undefined
   
   var blend: js.UndefOr[
-    (Exclude[js.UndefOr[Blend], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+    (Exclude[js.UndefOr[Blend], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
   ] = js.undefined
   
   /**
@@ -105,81 +107,81 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var cornerRadius: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var cornerRadiusBottomLeft: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var cornerRadiusBottomRight: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var cornerRadiusTopLeft: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var cornerRadiusTopRight: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var cursor: js.UndefOr[
     (Exclude[
       js.UndefOr[Cursor | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var description: js.UndefOr[
     (Exclude[
       js.UndefOr[String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var dir: js.UndefOr[
     (Exclude[
       js.UndefOr[TextDirection | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var dx: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var dy: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var ellipsis: js.UndefOr[
-    (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+    (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
   ] = js.undefined
   
   var endAngle: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -194,7 +196,7 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var fillOpacity: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -211,57 +213,54 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var font: js.UndefOr[
     (Exclude[
       js.UndefOr[String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var fontSize: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var fontStyle: js.UndefOr[
     (Exclude[
       js.UndefOr[FontStyle | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var fontWeight: js.UndefOr[
     (Exclude[
       js.UndefOr[FontWeight | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var height: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var href: js.UndefOr[
-    (Exclude[
-      js.UndefOr[URI | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-    ]) | ES
+    (Exclude[js.UndefOr[URI | SignalRef], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
   ] = js.undefined
   
   /**
     * The inner radius in pixels of arc marks. `innerRadius` is an alias for `radius2`.
     *
-    * @minimum 0
     * __Default value:__ `0`
+    * @minimum 0
     */
   var innerRadius: js.UndefOr[Double | ES] = js.undefined
   
   var interpolate: js.UndefOr[
     (Exclude[
       js.UndefOr[Interpolate | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -275,21 +274,21 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var limit: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var lineBreak: js.UndefOr[
     (Exclude[
       js.UndefOr[String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var lineHeight: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -324,15 +323,15 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   /**
     * The outer radius in pixels of arc marks. `outerRadius` is an alias for `radius`.
     *
-    * @minimum 0
     * __Default value:__ `0`
+    * @minimum 0
     */
   var outerRadius: js.UndefOr[Double | ES] = js.undefined
   
   var padAngle: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -342,24 +341,23 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
     *
     * For text marks, polar coordinate radial offset, in pixels, of the text from the origin determined by the `x` and `y` properties.
     *
-    * @minimum 0
-    *
     * __Default value:__ `min(plot_width, plot_height)/2`
+    * @minimum 0
     */
   var radius: js.UndefOr[Double | ES] = js.undefined
   
   /**
     * The secondary (inner) radius in pixels of arc marks.
     *
-    * @minimum 0
     * __Default value:__ `0`
+    * @minimum 0
     */
   var radius2: js.UndefOr[Double | ES] = js.undefined
   
   var shape: js.UndefOr[
     (Exclude[
       js.UndefOr[SymbolShape | String | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -382,14 +380,14 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var smooth: js.UndefOr[
     (Exclude[
       js.UndefOr[Boolean | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var startAngle: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -404,70 +402,70 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var strokeCap: js.UndefOr[
     (Exclude[
       js.UndefOr[StrokeCap | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeDash: js.UndefOr[
     (Exclude[
       js.UndefOr[js.Array[Double] | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeDashOffset: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeJoin: js.UndefOr[
     (Exclude[
       js.UndefOr[StrokeJoin | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeMiterLimit: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeOffset: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeOpacity: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var strokeWidth: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var tension: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
   var text: js.UndefOr[
     (Exclude[
       js.UndefOr[Text | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -487,16 +485,16 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var theta2: js.UndefOr[Double | ES] = js.undefined
   
   /**
-    * Default relative band size for a time unit. If set to `1`, the bandwidth of the marks will be equal to the time unit band step.
-    * If set to `0.5`, bandwidth of the marks will be half of the time unit band step.
-    */
-  var timeUnitBand: js.UndefOr[Double] = js.undefined
-  
-  /**
     * Default relative band position for a time unit. If set to `0`, the marks will be positioned at the beginning of the time unit band step.
     * If set to `0.5`, the marks will be positioned in the middle of the time unit band step.
     */
   var timeUnitBandPosition: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Default relative band size for a time unit. If set to `1`, the bandwidth of the marks will be equal to the time unit band step.
+    * If set to `0.5`, bandwidth of the marks will be half of the time unit band step.
+    */
+  var timeUnitBandSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The tooltip text string to show upon mouse hover or an object defining which fields should the tooltip be derived from.
@@ -512,16 +510,13 @@ trait MarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
   var tooltip: js.UndefOr[Double | String | Boolean | TooltipContent | ES | Null] = js.undefined
   
   var url: js.UndefOr[
-    (Exclude[
-      js.UndefOr[URI | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-    ]) | ES
+    (Exclude[js.UndefOr[URI | SignalRef], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
   ] = js.undefined
   
   var width: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
     ]) | ES
   ] = js.undefined
   
@@ -569,7 +564,7 @@ object MarkConfig {
     inline def setAngle(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
@@ -578,21 +573,21 @@ object MarkConfig {
     inline def setAria(
       value: (Exclude[
           js.UndefOr[Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
     inline def setAriaRole(
       value: (Exclude[
           js.UndefOr[String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
     
     inline def setAriaRoleDescription(
       value: (Exclude[
           js.UndefOr[String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
     
@@ -605,7 +600,7 @@ object MarkConfig {
     inline def setAspect(
       value: (Exclude[
           js.UndefOr[Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
@@ -615,7 +610,7 @@ object MarkConfig {
     
     inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
-    inline def setBlend(value: (Exclude[js.UndefOr[Blend], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
+    inline def setBlend(value: (Exclude[js.UndefOr[Blend], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     inline def setBlendNull: Self = StObject.set(x, "blend", null)
     
@@ -628,14 +623,14 @@ object MarkConfig {
     inline def setCornerRadius(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     inline def setCornerRadiusBottomLeft(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadiusBottomLeft", value.asInstanceOf[js.Any])
     
@@ -644,7 +639,7 @@ object MarkConfig {
     inline def setCornerRadiusBottomRight(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadiusBottomRight", value.asInstanceOf[js.Any])
     
@@ -653,7 +648,7 @@ object MarkConfig {
     inline def setCornerRadiusTopLeft(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadiusTopLeft", value.asInstanceOf[js.Any])
     
@@ -662,7 +657,7 @@ object MarkConfig {
     inline def setCornerRadiusTopRight(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadiusTopRight", value.asInstanceOf[js.Any])
     
@@ -673,7 +668,7 @@ object MarkConfig {
     inline def setCursor(
       value: (Exclude[
           js.UndefOr[Cursor | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
@@ -682,7 +677,7 @@ object MarkConfig {
     inline def setDescription(
       value: (Exclude[
           js.UndefOr[String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -691,7 +686,7 @@ object MarkConfig {
     inline def setDir(
       value: (Exclude[
           js.UndefOr[TextDirection | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
@@ -700,7 +695,7 @@ object MarkConfig {
     inline def setDx(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
@@ -709,22 +704,20 @@ object MarkConfig {
     inline def setDy(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    inline def setEllipsis(
-      value: (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
-    ): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
     inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
     inline def setEndAngle(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
@@ -737,7 +730,7 @@ object MarkConfig {
     inline def setFillOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
@@ -752,14 +745,14 @@ object MarkConfig {
     inline def setFont(
       value: (Exclude[
           js.UndefOr[String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontSize(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -768,7 +761,7 @@ object MarkConfig {
     inline def setFontStyle(
       value: (Exclude[
           js.UndefOr[FontStyle | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
@@ -779,7 +772,7 @@ object MarkConfig {
     inline def setFontWeight(
       value: (Exclude[
           js.UndefOr[FontWeight | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
@@ -788,17 +781,14 @@ object MarkConfig {
     inline def setHeight(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setHref(
-      value: (Exclude[
-          js.UndefOr[URI | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | ES
+      value: (Exclude[js.UndefOr[URI | SignalRef], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
     ): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
@@ -810,7 +800,7 @@ object MarkConfig {
     inline def setInterpolate(
       value: (Exclude[
           js.UndefOr[Interpolate | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
@@ -825,7 +815,7 @@ object MarkConfig {
     inline def setLimit(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -834,7 +824,7 @@ object MarkConfig {
     inline def setLineBreak(
       value: (Exclude[
           js.UndefOr[String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
     
@@ -843,7 +833,7 @@ object MarkConfig {
     inline def setLineHeight(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
@@ -870,7 +860,7 @@ object MarkConfig {
     inline def setPadAngle(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
@@ -887,7 +877,7 @@ object MarkConfig {
     inline def setShape(
       value: (Exclude[
           js.UndefOr[SymbolShape | String | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
@@ -900,7 +890,7 @@ object MarkConfig {
     inline def setSmooth(
       value: (Exclude[
           js.UndefOr[Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
@@ -909,7 +899,7 @@ object MarkConfig {
     inline def setStartAngle(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
@@ -920,7 +910,7 @@ object MarkConfig {
     inline def setStrokeCap(
       value: (Exclude[
           js.UndefOr[StrokeCap | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
@@ -929,14 +919,14 @@ object MarkConfig {
     inline def setStrokeDash(
       value: (Exclude[
           js.UndefOr[js.Array[Double] | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
     inline def setStrokeDashOffset(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
     
@@ -944,12 +934,12 @@ object MarkConfig {
     
     inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
-    inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+    inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value*))
     
     inline def setStrokeJoin(
       value: (Exclude[
           js.UndefOr[StrokeJoin | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
@@ -958,7 +948,7 @@ object MarkConfig {
     inline def setStrokeMiterLimit(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
@@ -969,7 +959,7 @@ object MarkConfig {
     inline def setStrokeOffset(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
     
@@ -978,7 +968,7 @@ object MarkConfig {
     inline def setStrokeOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
@@ -989,7 +979,7 @@ object MarkConfig {
     inline def setStrokeWidth(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
@@ -998,7 +988,7 @@ object MarkConfig {
     inline def setTension(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
@@ -1007,13 +997,13 @@ object MarkConfig {
     inline def setText(
       value: (Exclude[
           js.UndefOr[Text | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setTheta(value: Double | ES): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
@@ -1023,13 +1013,13 @@ object MarkConfig {
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    inline def setTimeUnitBand(value: Double): Self = StObject.set(x, "timeUnitBand", value.asInstanceOf[js.Any])
-    
     inline def setTimeUnitBandPosition(value: Double): Self = StObject.set(x, "timeUnitBandPosition", value.asInstanceOf[js.Any])
     
     inline def setTimeUnitBandPositionUndefined: Self = StObject.set(x, "timeUnitBandPosition", js.undefined)
     
-    inline def setTimeUnitBandUndefined: Self = StObject.set(x, "timeUnitBand", js.undefined)
+    inline def setTimeUnitBandSize(value: Double): Self = StObject.set(x, "timeUnitBandSize", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUnitBandSizeUndefined: Self = StObject.set(x, "timeUnitBandSize", js.undefined)
     
     inline def setTooltip(value: Double | String | Boolean | TooltipContent | ES): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
@@ -1038,10 +1028,7 @@ object MarkConfig {
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     inline def setUrl(
-      value: (Exclude[
-          js.UndefOr[URI | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | ES
+      value: (Exclude[js.UndefOr[URI | SignalRef], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | ES
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
@@ -1049,7 +1036,7 @@ object MarkConfig {
     inline def setWidth(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

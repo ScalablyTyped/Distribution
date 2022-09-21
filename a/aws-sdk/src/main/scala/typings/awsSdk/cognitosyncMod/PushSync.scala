@@ -29,7 +29,7 @@ object PushSync {
     
     inline def setApplicationArnsUndefined: Self = StObject.set(x, "ApplicationArns", js.undefined)
     
-    inline def setApplicationArnsVarargs(value: ApplicationArn*): Self = StObject.set(x, "ApplicationArns", js.Array(value :_*))
+    inline def setApplicationArnsVarargs(value: ApplicationArn*): Self = StObject.set(x, "ApplicationArns", js.Array(value*))
     
     inline def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

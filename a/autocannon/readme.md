@@ -1,7 +1,7 @@
 
 # Scala.js typings for autocannon
 
-Typings are for version 4.1
+Typings are for version 7.6
 
 ## Library description:
 Fast HTTP benchmarking tool written in Node.js
@@ -11,9 +11,9 @@ Fast HTTP benchmarking tool written in Node.js
 | Full name          | autocannon |
 | Keywords           | http, soak, load, fast, wrk, ab, test |
 | # releases         | 27 |
-| # dependents       | 19 |
-| # downloads        | 1298199 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 181573.66666666666 |
+| # stars            | 6092.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/autocannon#readme)

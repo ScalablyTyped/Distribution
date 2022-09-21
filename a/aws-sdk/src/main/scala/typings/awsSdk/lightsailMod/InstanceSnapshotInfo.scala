@@ -42,6 +42,6 @@ object InstanceSnapshotInfo {
     
     inline def setFromDiskInfoUndefined: Self = StObject.set(x, "fromDiskInfo", js.undefined)
     
-    inline def setFromDiskInfoVarargs(value: DiskInfo*): Self = StObject.set(x, "fromDiskInfo", js.Array(value :_*))
+    inline def setFromDiskInfoVarargs(value: DiskInfo*): Self = StObject.set(x, "fromDiskInfo", js.Array(value*))
   }
 }

@@ -11,15 +11,15 @@ object archiveTargetMod {
   
   @JSImport("app-builder-lib/out/targets/ArchiveTarget", "ArchiveTarget")
   @js.native
-  class ArchiveTarget protected () extends Target {
-    def this(name: String, outDir: String, packager: PlatformPackager[js.Any]) = this()
-    def this(name: String, outDir: String, packager: PlatformPackager[js.Any], isWriteUpdateInfo: Boolean) = this()
+  open class ArchiveTarget protected () extends Target {
+    def this(name: String, outDir: String, packager: PlatformPackager[Any]) = this()
+    def this(name: String, outDir: String, packager: PlatformPackager[Any], isWriteUpdateInfo: Boolean) = this()
     
-    /* private */ val isWriteUpdateInfo: js.Any = js.native
+    /* private */ val isWriteUpdateInfo: Any = js.native
     
     @JSName("options")
     val options_ArchiveTarget: TargetSpecificOptions = js.native
     
-    /* private */ val packager: js.Any = js.native
+    /* private */ val packager: Any = js.native
   }
 }

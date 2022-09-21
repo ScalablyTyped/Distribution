@@ -35,7 +35,7 @@ object RetrievalOptions {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object RetrievalOptions {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: OrderingOptions*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: OrderingOptions*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPageLength(value: Double): Self = StObject.set(x, "pageLength", value.asInstanceOf[js.Any])
     

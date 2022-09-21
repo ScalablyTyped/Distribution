@@ -1,16 +1,15 @@
 package typings.bitcoinjsLib
 
-import typings.bip32.bip32Mod.BIP32Interface
 import typings.bitcoinjsLib.addressMod.Base58CheckResult
 import typings.bitcoinjsLib.addressMod.Bech32Result
-import typings.bitcoinjsLib.ecpairMod.ECPairOptions
+import typings.bitcoinjsLib.cryptoMod.TaggedHashPrefix
 import typings.bitcoinjsLib.networksMod.Network
 import typings.bitcoinjsLib.paymentsMod.Payment
 import typings.bitcoinjsLib.paymentsMod.PaymentOpts
 import typings.bitcoinjsLib.paymentsMod.Stack
 import typings.bitcoinjsLib.psbtMod.PsbtOptsOptional
 import typings.bitcoinjsLib.scriptSignatureMod.ScriptSignature
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("bitcoinjs-lib", "Block")
   @js.native
-  class Block ()
+  open class Block ()
     extends typings.bitcoinjsLib.blockMod.Block
   /* static members */
   object Block {
@@ -38,29 +37,9 @@ object mod {
     inline def fromHex(hex: String): typings.bitcoinjsLib.blockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.blockMod.Block]
   }
   
-  object ECPair {
-    
-    @JSImport("bitcoinjs-lib", "ECPair")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def fromPrivateKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    inline def fromPrivateKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    
-    inline def fromPublicKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    inline def fromPublicKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    
-    inline def fromWIF(wifString: String): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    inline def fromWIF(wifString: String, network: js.Array[Network]): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    inline def fromWIF(wifString: String, network: Network): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    
-    inline def makeRandom(): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")().asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-    inline def makeRandom(options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")(options.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
-  }
-  
   @JSImport("bitcoinjs-lib", "Psbt")
   @js.native
-  class Psbt ()
+  open class Psbt ()
     extends typings.bitcoinjsLib.psbtMod.Psbt {
     def this(opts: PsbtOptsOptional) = this()
     def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
@@ -85,7 +64,7 @@ object mod {
   
   @JSImport("bitcoinjs-lib", "Transaction")
   @js.native
-  class Transaction ()
+  open class Transaction ()
     extends typings.bitcoinjsLib.transactionMod.Transaction
   /* static members */
   object Transaction {
@@ -114,9 +93,21 @@ object mod {
     @js.native
     val SIGHASH_ANYONECANPAY: /* 128 */ Double = js.native
     
+    @JSImport("bitcoinjs-lib", "Transaction.SIGHASH_DEFAULT")
+    @js.native
+    val SIGHASH_DEFAULT: /* 0 */ Double = js.native
+    
+    @JSImport("bitcoinjs-lib", "Transaction.SIGHASH_INPUT_MASK")
+    @js.native
+    val SIGHASH_INPUT_MASK: /* 128 */ Double = js.native
+    
     @JSImport("bitcoinjs-lib", "Transaction.SIGHASH_NONE")
     @js.native
     val SIGHASH_NONE: /* 2 */ Double = js.native
+    
+    @JSImport("bitcoinjs-lib", "Transaction.SIGHASH_OUTPUT_MASK")
+    @js.native
+    val SIGHASH_OUTPUT_MASK: /* 3 */ Double = js.native
     
     @JSImport("bitcoinjs-lib", "Transaction.SIGHASH_SINGLE")
     @js.native
@@ -128,25 +119,6 @@ object mod {
     inline def fromHex(hex: String): typings.bitcoinjsLib.transactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
     
     inline def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  }
-  
-  @JSImport("bitcoinjs-lib", "TransactionBuilder")
-  @js.native
-  class TransactionBuilder ()
-    extends typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder {
-    def this(network: Network) = this()
-    def this(network: Unit, maximumFeeRate: Double) = this()
-    def this(network: Network, maximumFeeRate: Double) = this()
-  }
-  /* static members */
-  object TransactionBuilder {
-    
-    @JSImport("bitcoinjs-lib", "TransactionBuilder")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder]
-    inline def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction, network: Network): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTransaction")(transaction.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder]
   }
   
   object address {
@@ -170,25 +142,6 @@ object mod {
     inline def toOutputScript(address: String, network: Network): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toOutputScript")(address.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
-  object bip32 {
-    
-    @JSImport("bitcoinjs-lib", "bip32")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-    inline def fromBase58(inString: String, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-    
-    inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-    inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-    
-    inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-    inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-    
-    inline def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-    inline def fromSeed(seed: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  }
-  
   object crypto {
     
     @JSImport("bitcoinjs-lib", "crypto")
@@ -204,6 +157,8 @@ object mod {
     inline def sha1(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     inline def sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    
+    inline def taggedHash(prefix: TaggedHashPrefix, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("taggedHash")(prefix.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
   object networks {

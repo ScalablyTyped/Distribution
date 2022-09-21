@@ -13,7 +13,7 @@ trait Auth0Result extends StObject {
   var accessToken: js.UndefOr[String] = js.undefined
   
   /** values that you receive back on the authentication response */
-  var appState: js.UndefOr[js.Any] = js.undefined
+  var appState: js.UndefOr[Any] = js.undefined
   
   /** number of seconds until the access token expires */
   var expiresIn: js.UndefOr[Double] = js.undefined
@@ -41,7 +41,7 @@ object Auth0Result {
     
     inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    inline def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
+    inline def setAppState(value: Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
     inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     

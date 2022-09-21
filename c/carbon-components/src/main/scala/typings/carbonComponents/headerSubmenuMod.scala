@@ -1,5 +1,12 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialHeaderSubmenuOptio
+import typings.carbonComponents.anon.ShouldBeExpanded
+import typings.std.Element
+import typings.std.Event
+import typings.std.HTMLElement
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,31 +16,11 @@ object headerSubmenuMod {
   
   @JSImport("carbon-components/components/ui-shell/header-submenu", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HeaderSubmenu {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _getAction(event: js.Any): js.Any = js.native
-    
-    /* CompleteClass */
-    override def _getNewState(action: js.Any): Boolean = js.native
-    
-    /* CompleteClass */
-    override def _handleEvent(event: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _handleKeyDown(event: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _setState(hasShouldBeExpandedShouldFocusOnOpen: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def getCurrentNavigation(): js.Any = js.native
-    
-    /* CompleteClass */
-    override def navigate(direction: js.Any): Unit = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialHeaderSubmenuOptio) = this()
   }
   object default {
     
@@ -90,57 +77,56 @@ object headerSubmenuMod {
     /* static member */
     @JSImport("carbon-components/components/ui-shell/header-submenu", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait HeaderSubmenu extends StObject {
+  - Dropped any */ @js.native
+  trait HeaderSubmenu extends StObject {
     
-    def _getAction(event: js.Any): js.Any
+    def _getAction(event: Event): Null | String = js.native
     
-    def _getNewState(action: js.Any): Boolean
+    def _getNewState(): Boolean = js.native
+    def _getNewState(action: String): Boolean = js.native
     
-    def _handleEvent(event: js.Any): Unit
+    def _handleEvent(event: MouseEvent): Unit = js.native
     
-    def _handleKeyDown(event: js.Any): Unit
+    def _handleKeyDown(event: KeyboardEvent): Unit = js.native
     
-    def _setState(hasShouldBeExpandedShouldFocusOnOpen: js.Any): Unit
+    def _setState(hasShouldBeExpandedShouldFocusOnOpen: ShouldBeExpanded): Unit = js.native
     
-    def getCurrentNavigation(): js.Any
+    def getCurrentNavigation(): Null | Element = js.native
     
-    def navigate(direction: js.Any): Unit
+    def navigate(direction: Double): Unit = js.native
   }
-  object HeaderSubmenu {
+  
+  trait HeaderSubmenuOptions extends StObject {
     
-    inline def apply(
-      _getAction: js.Any => js.Any,
-      _getNewState: js.Any => Boolean,
-      _handleEvent: js.Any => Unit,
-      _handleKeyDown: js.Any => Unit,
-      _setState: js.Any => Unit,
-      getCurrentNavigation: () => js.Any,
-      navigate: js.Any => Unit
-    ): HeaderSubmenu = {
-      val __obj = js.Dynamic.literal(_getAction = js.Any.fromFunction1(_getAction), _getNewState = js.Any.fromFunction1(_getNewState), _handleEvent = js.Any.fromFunction1(_handleEvent), _handleKeyDown = js.Any.fromFunction1(_handleKeyDown), _setState = js.Any.fromFunction1(_setState), getCurrentNavigation = js.Any.fromFunction0(getCurrentNavigation), navigate = js.Any.fromFunction1(navigate))
-      __obj.asInstanceOf[HeaderSubmenu]
+    var attribExpanded: String
+    
+    var selectorInit: String
+    
+    var selectorItem: String
+    
+    var selectorTrigger: String
+  }
+  object HeaderSubmenuOptions {
+    
+    inline def apply(attribExpanded: String, selectorInit: String, selectorItem: String, selectorTrigger: String): HeaderSubmenuOptions = {
+      val __obj = js.Dynamic.literal(attribExpanded = attribExpanded.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any], selectorItem = selectorItem.asInstanceOf[js.Any], selectorTrigger = selectorTrigger.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HeaderSubmenuOptions]
     }
     
-    extension [Self <: HeaderSubmenu](x: Self) {
+    extension [Self <: HeaderSubmenuOptions](x: Self) {
       
-      inline def setGetCurrentNavigation(value: () => js.Any): Self = StObject.set(x, "getCurrentNavigation", js.Any.fromFunction0(value))
+      inline def setAttribExpanded(value: String): Self = StObject.set(x, "attribExpanded", value.asInstanceOf[js.Any])
       
-      inline def setNavigate(value: js.Any => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       
-      inline def set_getAction(value: js.Any => js.Any): Self = StObject.set(x, "_getAction", js.Any.fromFunction1(value))
+      inline def setSelectorItem(value: String): Self = StObject.set(x, "selectorItem", value.asInstanceOf[js.Any])
       
-      inline def set_getNewState(value: js.Any => Boolean): Self = StObject.set(x, "_getNewState", js.Any.fromFunction1(value))
-      
-      inline def set_handleEvent(value: js.Any => Unit): Self = StObject.set(x, "_handleEvent", js.Any.fromFunction1(value))
-      
-      inline def set_handleKeyDown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeyDown", js.Any.fromFunction1(value))
-      
-      inline def set_setState(value: js.Any => Unit): Self = StObject.set(x, "_setState", js.Any.fromFunction1(value))
+      inline def setSelectorTrigger(value: String): Self = StObject.set(x, "selectorTrigger", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FindAllCommand")
 @js.native
-class FindAllCommand ()
+open class FindAllCommand ()
   extends StObject
      with typings.devexpressWeb.FindAllCommand {
   

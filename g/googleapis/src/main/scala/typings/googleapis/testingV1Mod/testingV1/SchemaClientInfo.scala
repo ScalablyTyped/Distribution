@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the client which invoked the test.
-  */
 trait SchemaClientInfo extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaClientInfo extends StObject {
   /**
     * Required. Client name, such as gcloud.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaClientInfo {
   
@@ -32,9 +29,11 @@ object SchemaClientInfo {
     
     inline def setClientInfoDetailsUndefined: Self = StObject.set(x, "clientInfoDetails", js.undefined)
     
-    inline def setClientInfoDetailsVarargs(value: SchemaClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value :_*))
+    inline def setClientInfoDetailsVarargs(value: SchemaClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

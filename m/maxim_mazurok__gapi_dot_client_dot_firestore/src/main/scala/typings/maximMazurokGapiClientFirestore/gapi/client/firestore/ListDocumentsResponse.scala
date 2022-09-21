@@ -25,7 +25,7 @@ object ListDocumentsResponse {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

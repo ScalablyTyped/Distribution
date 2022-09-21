@@ -22,57 +22,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartPointUpdateData extends StObject {
   
   /**
-    *
     * Returns the data label of a chart point.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var dataLabel: js.UndefOr[ChartDataLabelUpdateData] = js.undefined
   
   /**
-    *
     * Encapsulates the format properties chart point.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartPointFormatUpdateData] = js.undefined
   
   /**
-    *
     * Represents whether a data point has a data label. Not applicable for surface charts.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var hasDataLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representation of the marker background color of a data point (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
+    * HTML color code representation of the marker foreground color of a data point (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerForegroundColor: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents marker size of a data point.
     *
-    * Represents marker size of data point.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents marker style of a chart data point. See `Excel.ChartMarkerStyle` for details.
     *
-    * Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerStyle: js.UndefOr[

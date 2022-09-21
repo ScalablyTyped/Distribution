@@ -6,38 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "WriteKeyExpr")
 @js.native
-class WriteKeyExpr protected ()
-  extends typings.angularCompiler.compilerMod.WriteKeyExpr {
+open class WriteKeyExpr protected () extends Expression {
+  def this(receiver: Expression, index: Expression, value: Expression) = this()
+  def this(receiver: Expression, index: Expression, value: Expression, `type`: Type) = this()
   def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    value: typings.angularCompiler.outputAstMod.Expression
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    value: typings.angularCompiler.outputAstMod.Expression,
+    receiver: Expression,
+    index: Expression,
+    value: Expression,
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    value: typings.angularCompiler.outputAstMod.Expression,
+    receiver: Expression,
+    index: Expression,
+    value: Expression,
     `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    receiver: Expression,
+    index: Expression,
+    value: Expression,
+    `type`: Type,
+    sourceSpan: ParseSourceSpan
   ) = this()
+  
+  var index: Expression = js.native
+  
+  var receiver: Expression = js.native
+  
+  var value: Expression = js.native
 }

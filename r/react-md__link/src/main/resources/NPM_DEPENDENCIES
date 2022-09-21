@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/link" : "2.4.2"
+      "@react-md/link" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/link" : "2.4.2"
+      "@react-md/link" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

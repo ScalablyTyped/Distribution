@@ -9,15 +9,15 @@ trait ParticleTextureBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _gammaDefineName: js.Any = js.native
+  /* private */ var _gammaDefineName: Any = js.native
   
-  /* private */ var _linearDefineName: js.Any = js.native
+  /* private */ var _linearDefineName: Any = js.native
   
-  /* private */ var _samplerName: js.Any = js.native
+  /* private */ var _samplerName: Any = js.native
   
-  /* private */ var _tempTextureRead: js.Any = js.native
+  /* private */ var _tempTextureRead: Any = js.native
   
-  /* private */ var _writeOutput: js.Any = js.native
+  /* private */ var _writeOutput: Any = js.native
   
   /**
     * Gets the a output component

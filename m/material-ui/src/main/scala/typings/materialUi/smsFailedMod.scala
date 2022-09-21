@@ -10,10 +10,10 @@ object smsFailedMod {
   
   @JSImport("material-ui/svg-icons/notification/sms-failed", JSImport.Default)
   @js.native
-  class default () extends NotificationSmsFailed
+  open class default () extends NotificationSmsFailed
   
   @JSImport("material-ui/svg-icons/notification/sms-failed", "NotificationSmsFailed")
   @js.native
-  class NotificationSmsFailed ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationSmsFailed ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

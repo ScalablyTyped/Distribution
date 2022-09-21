@@ -1,11 +1,12 @@
 package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsSelect.anon.PartialIPopoverProps
-import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
+import typings.blueprintjsSelect.listItemsPropsMod.ListItemsProps
+import typings.react.mod.ReactNode
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,41 +15,43 @@ object selectMod {
   
   @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select")
   @js.native
-  class Select[T] protected ()
-    extends AbstractPureComponent2[ISelectProps[T], ISelectState, js.Object] {
-    def this(props: ISelectProps[T]) = this()
-    def this(props: ISelectProps[T], context: js.Any) = this()
+  open class Select[T] protected ()
+    extends AbstractPureComponent2[SelectProps[T], ISelectState, js.Object] {
+    def this(props: SelectProps[T]) = this()
+    def this(props: SelectProps[T], context: Any) = this()
     
-    /* private */ var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: Any = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MSelect(_prevProps: ISelectProps[T], prevState: ISelectState): Unit = js.native
+    def componentDidUpdate_MSelect(prevProps: SelectProps[T], prevState: ISelectState): Unit = js.native
     
-    /* private */ var handleItemSelect: js.Any = js.native
+    /* private */ var handleInputRef: Any = js.native
     
-    /* private */ var handlePopoverClosing: js.Any = js.native
+    /* private */ var handleItemSelect: Any = js.native
     
-    /* private */ var handlePopoverInteraction: js.Any = js.native
+    /* private */ var handlePopoverClosing: Any = js.native
     
-    /* private */ var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverInteraction: Any = js.native
     
-    /* private */ var handlePopoverOpening: js.Any = js.native
+    /* private */ var handlePopoverOpened: Any = js.native
     
-    /* private */ var handleTargetKeyDown: js.Any = js.native
+    /* private */ var handlePopoverOpening: Any = js.native
     
-    /* private */ var inputEl: js.Any = js.native
+    /* private */ var handleQueryListRef: Any = js.native
     
-    /* private */ var maybeRenderClearButton: js.Any = js.native
+    /* private */ var handleTargetKeyDown: Any = js.native
     
-    /* private */ var previousFocusedElement: js.Any = js.native
+    var inputElement: HTMLInputElement | Null = js.native
     
-    /* private */ var queryList: js.Any = js.native
+    /* private */ var maybeRenderClearButton: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var previousFocusedElement: Any = js.native
     
-    /* private */ var renderQueryList: js.Any = js.native
+    /* private */ var queryList: Any = js.native
     
-    /* private */ var resetQuery: js.Any = js.native
+    /* private */ var renderQueryList: Any = js.native
+    
+    /* private */ var resetQuery: Any = js.native
   }
   /* static members */
   object Select {
@@ -62,25 +65,36 @@ object selectMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ ISelectProps[U], Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISelectProps[U], Select[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ SelectProps[U], Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ SelectProps[U], Select[U]]]
   }
   
   @js.native
   trait ISelectProps[T]
     extends StObject
-       with IListItemsProps[T] {
+       with ListItemsProps[T] {
+    
+    var children: js.UndefOr[ReactNode] = js.native
     
     /**
       * Whether the component is non-interactive.
       * If true, the list's item renderer will not be called.
       * Note that you'll also need to disable the component's children, if appropriate.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.native
     
     /**
+      * Whether the component should take up the full width of its container.
+      * This overrides `popoverProps.fill`. You also have to ensure that the child
+      * component has `fill` set to `true` or is styled appropriately.
+      */
+    var fill: js.UndefOr[Boolean] = js.native
+    
+    /**
       * Whether the dropdown list can be filtered.
       * Disabling this option will remove the `InputGroup` and ignore `inputProps`.
+      *
       * @default true
       */
     var filterable: js.UndefOr[Boolean] = js.native
@@ -90,7 +104,17 @@ object selectMod {
       * `onQueryChange` instead of `inputProps.value` and `inputProps.onChange`
       * to control this input.
       */
-    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[InputGroupProps2] = js.native
+    
+    /**
+      * Whether the select popover should be styled so that it matches the width of the target.
+      * This is done using a popper.js modifier passed through `popoverProps`.
+      *
+      * Note that setting `matchTargetWidth={true}` will also set `popoverProps.usePortal={false}` and `popoverProps.wrapperTagName="div"`.
+      *
+      * @default false
+      */
+    var matchTargetWidth: js.UndefOr[Boolean] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
     var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
@@ -98,6 +122,7 @@ object selectMod {
     /**
       * Whether the active item should be reset to the first matching item _when
       * the popover closes_. The query will also be reset to the empty string.
+      *
       * @default false
       */
     var resetOnClose: js.UndefOr[Boolean] = js.native
@@ -119,4 +144,6 @@ object selectMod {
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
+  
+  type SelectProps[T] = ISelectProps[T]
 }

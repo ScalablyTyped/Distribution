@@ -11,15 +11,15 @@ object observerFilterObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/observer/FilterObserver", "FilterObserver")
   @js.native
-  class FilterObserver protected () extends Observer {
-    def this(prevObserver: IObserver, predicate: js.Function1[/* value */ js.Any, Boolean], source: Stream) = this()
+  open class FilterObserver protected () extends Observer {
+    def this(prevObserver: IObserver, predicate: js.Function1[/* value */ Any, Boolean], source: Stream) = this()
     
     /* protected */ var i: Double = js.native
     
-    /* protected */ def predicate(value: js.Any): Boolean = js.native
-    /* protected */ def predicate(value: js.Any, index: Double): Boolean = js.native
-    /* protected */ def predicate(value: js.Any, index: Double, source: Stream): Boolean = js.native
-    /* protected */ def predicate(value: js.Any, index: Unit, source: Stream): Boolean = js.native
+    /* protected */ def predicate(value: Any): Boolean = js.native
+    /* protected */ def predicate(value: Any, index: Double): Boolean = js.native
+    /* protected */ def predicate(value: Any, index: Double, source: Stream): Boolean = js.native
+    /* protected */ def predicate(value: Any, index: Unit, source: Stream): Boolean = js.native
     
     /* protected */ var prevObserver: IObserver = js.native
     
@@ -35,7 +35,7 @@ object observerFilterObserverMod {
     inline def create(
       prevObserver: IObserver,
       predicate: js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* index */ js.UndefOr[Double], 
           /* source */ js.UndefOr[Stream], 
           Boolean

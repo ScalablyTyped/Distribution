@@ -1,12 +1,21 @@
 package typings.fastify
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fastify.anon.Errorvalidationanyvalidat
+import typings.fastify.contextMod.FastifyContext
 import typings.fastify.fastifyStrings.http
 import typings.fastify.fastifyStrings.https
-import typings.fastify.loggerMod.FastifyLoggerInstance
+import typings.fastify.instanceMod.FastifyInstance
+import typings.fastify.loggerMod.FastifyBaseLogger
 import typings.fastify.routeMod.RouteGenericInterface
+import typings.fastify.schemaMod.FastifySchema
+import typings.fastify.typeProviderMod.FastifyRequestType
+import typings.fastify.typeProviderMod.FastifyTypeProvider
+import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
+import typings.fastify.utilsMod.RawReplyDefaultExpression
 import typings.fastify.utilsMod.RawRequestDefaultExpression
 import typings.fastify.utilsMod.RawServerBase
+import typings.fastify.utilsMod.RawServerDefault
 import typings.fastify.utilsMod.RequestBodyDefault
 import typings.fastify.utilsMod.RequestHeadersDefault
 import typings.fastify.utilsMod.RequestParamsDefault
@@ -17,141 +26,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requestMod {
   
-  trait FastifyRequest[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] extends StObject {
+  @js.native
+  trait FastifyRequest[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, ContextConfig, Logger /* <: FastifyBaseLogger */, RequestType /* <: FastifyRequestType[Any, Any, Any, Any] */] extends StObject {
     
-    var body: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any
+    var body: /* import warning: importer.ImportType#apply Failed type conversion: RequestType['body'] */ js.Any = js.native
+    
+    def compileValidationSchema(schema: StringDictionary[Any]): js.Function1[/* input */ Any, Boolean] = js.native
+    def compileValidationSchema(schema: StringDictionary[Any], httpPart: HTTPRequestPart): js.Function1[/* input */ Any, Boolean] = js.native
     
     // Prefer `socket` over deprecated `connection` property in node 13.0.0 or higher
     // @deprecated
-    val connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
+    val connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any = js.native
     
-    val headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any
+    var context: FastifyContext[ContextConfig] = js.native
     
-    val hostname: String
+    def getValidationFunction(httpPart: HTTPRequestPart): js.Function1[/* input */ Any, Boolean] = js.native
+    def getValidationFunction(schema: StringDictionary[Any]): js.Function1[/* input */ Any, Boolean] = js.native
     
-    var id: js.Any
+    var headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any = js.native
+    
+    val hostname: String = js.native
+    
+    var id: Any = js.native
     
     // this enables the developer to extend the existing http(s|2) headers list
-    val ip: String
+    val ip: String = js.native
     
-    val ips: js.UndefOr[js.Array[String]] = js.undefined
+    val ips: js.UndefOr[js.Array[String]] = js.native
     
-    val is404: Boolean
+    val is404: Boolean = js.native
     
-    var log: FastifyLoggerInstance
+    // this enables the developer to extend the existing http(s|2) headers list
+    var log: Logger = js.native
     
-    val method: String
+    val method: String = js.native
     
-    var params: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any
+    var params: /* import warning: importer.ImportType#apply Failed type conversion: RequestType['params'] */ js.Any = js.native
     
-    val protocol: http | https
+    val protocol: http | https = js.native
     
-    var query: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any
+    var query: /* import warning: importer.ImportType#apply Failed type conversion: RequestType['query'] */ js.Any = js.native
     
-    var raw: RawRequest
+    // deferred inference
+    var raw: RawRequest = js.native
     
     /**
       * @deprecated Use `raw` property
       */
-    val req: RawRequest
+    val req: RawRequest & (/* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Headers'] */ js.Any) = js.native
     
-    val routerMethod: String
+    val routerMethod: String = js.native
     
-    val routerPath: String
+    val routerPath: String = js.native
     
-    val socket: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
+    var server: FastifyInstance[
+        RawServerDefault, 
+        RawRequestDefaultExpression[RawServerDefault], 
+        RawReplyDefaultExpression[RawServerDefault], 
+        FastifyBaseLogger, 
+        FastifyTypeProviderDefault
+      ] = js.native
     
-    val url: String
+    val socket: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any = js.native
+    
+    val url: String = js.native
+    
+    def validateInput(input: Any): Boolean = js.native
+    def validateInput(input: Any, httpPart: HTTPRequestPart): Boolean = js.native
+    def validateInput(input: Any, schema: StringDictionary[Any]): Boolean = js.native
+    def validateInput(input: Any, schema: StringDictionary[Any], httpPart: HTTPRequestPart): Boolean = js.native
     
     /** in order for this to be used the user should ensure they have set the attachValidation option. */
-    var validationError: js.UndefOr[Errorvalidationanyvalidat] = js.undefined
+    var validationError: js.UndefOr[Errorvalidationanyvalidat] = js.native
   }
-  object FastifyRequest {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.fastify.fastifyStrings.body
+    - typings.fastify.fastifyStrings.query
+    - typings.fastify.fastifyStrings.querystring
+    - typings.fastify.fastifyStrings.params
+    - typings.fastify.fastifyStrings.headers
+  */
+  trait HTTPRequestPart extends StObject
+  object HTTPRequestPart {
     
-    inline def apply[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */](
-      body: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any,
-      connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any,
-      headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any,
-      hostname: String,
-      id: js.Any,
-      ip: String,
-      is404: Boolean,
-      log: FastifyLoggerInstance,
-      method: String,
-      params: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any,
-      protocol: http | https,
-      query: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any,
-      raw: RawRequest,
-      req: RawRequest,
-      routerMethod: String,
-      routerPath: String,
-      socket: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any,
-      url: String
-    ): FastifyRequest[RouteGeneric, RawServer, RawRequest] = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], is404 = is404.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], routerMethod = routerMethod.asInstanceOf[js.Any], routerPath = routerPath.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FastifyRequest[RouteGeneric, RawServer, RawRequest]]
-    }
+    inline def body: typings.fastify.fastifyStrings.body = "body".asInstanceOf[typings.fastify.fastifyStrings.body]
     
-    extension [Self <: FastifyRequest[?, ?, ?], RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */](x: Self & (FastifyRequest[RouteGeneric, RawServer, RawRequest])) {
-      
-      inline def setBody(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any
-      ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setConnection(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
-      ): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
-      
-      inline def setHeaders(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any
-      ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
-      
-      inline def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
-      
-      inline def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
-      
-      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
-      
-      inline def setIs404(value: Boolean): Self = StObject.set(x, "is404", value.asInstanceOf[js.Any])
-      
-      inline def setLog(value: FastifyLoggerInstance): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
-      
-      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-      
-      inline def setParams(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any
-      ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-      
-      inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
-      
-      inline def setQuery(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any
-      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setRaw(value: RawRequest): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
-      
-      inline def setReq(value: RawRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
-      
-      inline def setRouterMethod(value: String): Self = StObject.set(x, "routerMethod", value.asInstanceOf[js.Any])
-      
-      inline def setRouterPath(value: String): Self = StObject.set(x, "routerPath", value.asInstanceOf[js.Any])
-      
-      inline def setSocket(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
-      ): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setValidationError(value: Errorvalidationanyvalidat): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
-      
-      inline def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
-    }
+    inline def headers: typings.fastify.fastifyStrings.headers = "headers".asInstanceOf[typings.fastify.fastifyStrings.headers]
+    
+    inline def params: typings.fastify.fastifyStrings.params = "params".asInstanceOf[typings.fastify.fastifyStrings.params]
+    
+    inline def query: typings.fastify.fastifyStrings.query = "query".asInstanceOf[typings.fastify.fastifyStrings.query]
+    
+    inline def querystring: typings.fastify.fastifyStrings.querystring = "querystring".asInstanceOf[typings.fastify.fastifyStrings.querystring]
   }
   
   trait RequestGenericInterface extends StObject {

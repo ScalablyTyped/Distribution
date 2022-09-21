@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.RigidVehicle")
 @js.native
-class RigidVehicle ()
+open class RigidVehicle ()
   extends StObject
      with typings.cannon.CANNON.RigidVehicle {
   def this(options: IRigidVehicleOptions) = this()

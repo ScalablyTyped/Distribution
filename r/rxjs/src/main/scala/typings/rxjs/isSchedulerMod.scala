@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isSchedulerMod {
   
-  @JSImport("rxjs/internal/util/isScheduler", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/isScheduler", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isScheduler(value: js.Any): /* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScheduler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean]
+  inline def isScheduler(value: Any): /* is rxjs.rxjs/dist/types/internal/types.SchedulerLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScheduler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.SchedulerLike */ Boolean]
 }

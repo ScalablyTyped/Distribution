@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentDragInfo")
 @js.native
-class ASPxClientAppointmentDragInfo protected ()
+open class ASPxClientAppointmentDragInfo protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentDragInfo {
   /**

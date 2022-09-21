@@ -42,7 +42,7 @@ object DataPilotTable {
     getRowFields: () => XIndexAccess,
     getSourceRange: () => CellRangeAddress,
     getTag: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit,

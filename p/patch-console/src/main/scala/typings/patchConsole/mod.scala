@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(callback: Callback): Restore = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Restore]
-  
-  @JSImport("patch-console", JSImport.Namespace)
+  @JSImport("patch-console/dist", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(callback: Callback): Restore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Restore]
   
   type Callback = js.Function2[/* stream */ stdout | stderr, /* data */ String, Unit]
   

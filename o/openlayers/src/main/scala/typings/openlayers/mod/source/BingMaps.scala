@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.BingMaps")
 @js.native
-class BingMaps protected () extends TileImage {
+open class BingMaps protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for Bing Maps tile data.

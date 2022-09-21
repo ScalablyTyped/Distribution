@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CellFormat extends StObject {
   
-  /** The background color of the cell. */
+  /** The background color of the cell. Deprecated: Use background_color_style. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the cell. If background_color is also set, this field takes precedence. */
@@ -18,7 +18,7 @@ trait CellFormat extends StObject {
   /** The horizontal alignment of the value in the cell. */
   var horizontalAlignment: js.UndefOr[String] = js.undefined
   
-  /** How a hyperlink, if it exists, should be displayed in the cell. */
+  /** If one exists, how a hyperlink should be displayed in the cell. */
   var hyperlinkDisplayType: js.UndefOr[String] = js.undefined
   
   /** A format describing how number values should be represented to the user. */
@@ -30,10 +30,13 @@ trait CellFormat extends StObject {
   /** The direction of the text in the cell. */
   var textDirection: js.UndefOr[String] = js.undefined
   
-  /** The format of the text in the cell (unless overridden by a format run). */
+  /**
+    * The format of the text in the cell (unless overridden by a format run). Setting a cell-level link here clears the cell's existing links. Setting the link field in a TextFormatRun
+    * takes precedence over the cell-level link.
+    */
   var textFormat: js.UndefOr[TextFormat] = js.undefined
   
-  /** The rotation applied to text in a cell */
+  /** The rotation applied to text in the cell. */
   var textRotation: js.UndefOr[TextRotation] = js.undefined
   
   /** The vertical alignment of the value in the cell. */

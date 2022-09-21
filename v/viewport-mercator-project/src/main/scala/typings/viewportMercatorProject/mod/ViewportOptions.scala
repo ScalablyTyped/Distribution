@@ -31,13 +31,13 @@ object ViewportOptions {
     
     inline def setProjectionMatrixUndefined: Self = StObject.set(x, "projectionMatrix", js.undefined)
     
-    inline def setProjectionMatrixVarargs(value: Double*): Self = StObject.set(x, "projectionMatrix", js.Array(value :_*))
+    inline def setProjectionMatrixVarargs(value: Double*): Self = StObject.set(x, "projectionMatrix", js.Array(value*))
     
     inline def setViewMatrix(value: ViewMatrix): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
     
     inline def setViewMatrixUndefined: Self = StObject.set(x, "viewMatrix", js.undefined)
     
-    inline def setViewMatrixVarargs(value: Double*): Self = StObject.set(x, "viewMatrix", js.Array(value :_*))
+    inline def setViewMatrixVarargs(value: Double*): Self = StObject.set(x, "viewMatrix", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

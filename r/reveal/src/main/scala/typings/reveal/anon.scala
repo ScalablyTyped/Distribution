@@ -26,4 +26,25 @@ object anon {
       inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait Next extends StObject {
+    
+    var next: Boolean
+    
+    var prev: Boolean
+  }
+  object Next {
+    
+    inline def apply(next: Boolean, prev: Boolean): Next = {
+      val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Next]
+    }
+    
+    extension [Self <: Next](x: Self) {
+      
+      inline def setNext(value: Boolean): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      
+      inline def setPrev(value: Boolean): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    }
+  }
 }

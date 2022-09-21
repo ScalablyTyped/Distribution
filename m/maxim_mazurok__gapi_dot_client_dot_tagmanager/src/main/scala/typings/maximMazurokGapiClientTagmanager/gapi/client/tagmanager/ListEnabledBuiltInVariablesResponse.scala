@@ -25,7 +25,7 @@ object ListEnabledBuiltInVariablesResponse {
     
     inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
-    inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+    inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

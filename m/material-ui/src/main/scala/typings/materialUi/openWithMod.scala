@@ -10,10 +10,10 @@ object openWithMod {
   
   @JSImport("material-ui/svg-icons/action/open-with", JSImport.Default)
   @js.native
-  class default () extends ActionOpenWith
+  open class default () extends ActionOpenWith
   
   @JSImport("material-ui/svg-icons/action/open-with", "ActionOpenWith")
   @js.native
-  class ActionOpenWith ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionOpenWith ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

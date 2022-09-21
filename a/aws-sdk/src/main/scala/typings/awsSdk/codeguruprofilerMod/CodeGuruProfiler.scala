@@ -43,12 +43,12 @@ trait CodeGuruProfiler extends Service {
   var config_CodeGuruProfiler: ConfigBase & ClientConfiguration = js.native
   
   /**
-    *  Used by profiler agents to report their current state and to receive remote configuration updates. For example, ConfigureAgent can be used to tell and agent whether to profile or not and for how long to return profiling data. 
+    *  Used by profiler agents to report their current state and to receive remote configuration updates. For example, ConfigureAgent can be used to tell an agent whether to profile or not and for how long to return profiling data. 
     */
   def configureAgent(): Request[ConfigureAgentResponse, AWSError] = js.native
   def configureAgent(callback: js.Function2[/* err */ AWSError, /* data */ ConfigureAgentResponse, Unit]): Request[ConfigureAgentResponse, AWSError] = js.native
   /**
-    *  Used by profiler agents to report their current state and to receive remote configuration updates. For example, ConfigureAgent can be used to tell and agent whether to profile or not and for how long to return profiling data. 
+    *  Used by profiler agents to report their current state and to receive remote configuration updates. For example, ConfigureAgent can be used to tell an agent whether to profile or not and for how long to return profiling data. 
     */
   def configureAgent(params: ConfigureAgentRequest): Request[ConfigureAgentResponse, AWSError] = js.native
   def configureAgent(

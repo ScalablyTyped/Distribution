@@ -21,7 +21,7 @@ trait GoogleCloudMlV1OperationMetadata extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__OperationMetadata & TopLevel[js.Any]
+    */ GoogleCloudMlV1__OperationMetadata & TopLevel[Any]
   ] = js.undefined
   
   /** Contains the name of the model associated with the operation. */
@@ -63,7 +63,7 @@ object GoogleCloudMlV1OperationMetadata {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__OperationMetadata & TopLevel[js.Any]
+      */ GoogleCloudMlV1__OperationMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

@@ -47,7 +47,7 @@ object Pricing {
     
     inline def setFlightsUndefined: Self = StObject.set(x, "flights", js.undefined)
     
-    inline def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value :_*))
+    inline def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value*))
     
     inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     

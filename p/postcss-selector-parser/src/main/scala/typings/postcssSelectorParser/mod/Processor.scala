@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postcss-selector-parser", "Processor")
 @js.native
-class Processor[TransformType, SyncSelectorsType /* <: Selectors | scala.Nothing */] () extends StObject {
+open class Processor[TransformType, SyncSelectorsType /* <: Selectors | scala.Nothing */] () extends StObject {
   
   def ast(selectors: Selectors): js.Promise[Root_] = js.native
   def ast(selectors: Selectors, options: PartialOptions): js.Promise[Root_] = js.native

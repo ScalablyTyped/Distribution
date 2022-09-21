@@ -9,7 +9,7 @@ object gpxMod {
   
   @JSImport("ol/format/GPX", JSImport.Default)
   @js.native
-  class default () extends GPX {
+  open class default () extends GPX {
     def this(opt_options: Options) = this()
   }
   

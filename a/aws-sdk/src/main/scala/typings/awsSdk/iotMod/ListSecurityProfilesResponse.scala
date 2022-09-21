@@ -33,6 +33,6 @@ object ListSecurityProfilesResponse {
     
     inline def setSecurityProfileIdentifiersUndefined: Self = StObject.set(x, "securityProfileIdentifiers", js.undefined)
     
-    inline def setSecurityProfileIdentifiersVarargs(value: SecurityProfileIdentifier*): Self = StObject.set(x, "securityProfileIdentifiers", js.Array(value :_*))
+    inline def setSecurityProfileIdentifiersVarargs(value: SecurityProfileIdentifier*): Self = StObject.set(x, "securityProfileIdentifiers", js.Array(value*))
   }
 }

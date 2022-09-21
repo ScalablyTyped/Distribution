@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.gmail" : "1.0.20201116"
+      "@maxim_mazurok/gapi.client.gmail" : "1.0.20220808"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.gmail" : "1.0.20201116"
+      "@maxim_mazurok/gapi.client.gmail" : "1.0.20220808"
     }
   ],
   "compile-devDependencies" : [

@@ -15,7 +15,7 @@ trait DiskAggregatedList extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.DisksScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.DiskAggregatedList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.DiskAggregatedList & TopLevel[Any]
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#diskAggregatedList for aggregated lists of persistent disks. */
@@ -52,7 +52,7 @@ object DiskAggregatedList {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.DisksScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.DiskAggregatedList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.DiskAggregatedList & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -73,7 +73,7 @@ object DiskAggregatedList {
     
     inline def setUnreachablesUndefined: Self = StObject.set(x, "unreachables", js.undefined)
     
-    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value :_*))
+    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

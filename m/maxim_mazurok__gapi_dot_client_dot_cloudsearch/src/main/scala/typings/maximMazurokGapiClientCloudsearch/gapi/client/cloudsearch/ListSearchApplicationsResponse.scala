@@ -28,6 +28,6 @@ object ListSearchApplicationsResponse {
     
     inline def setSearchApplicationsUndefined: Self = StObject.set(x, "searchApplications", js.undefined)
     
-    inline def setSearchApplicationsVarargs(value: SearchApplication*): Self = StObject.set(x, "searchApplications", js.Array(value :_*))
+    inline def setSearchApplicationsVarargs(value: SearchApplication*): Self = StObject.set(x, "searchApplications", js.Array(value*))
   }
 }

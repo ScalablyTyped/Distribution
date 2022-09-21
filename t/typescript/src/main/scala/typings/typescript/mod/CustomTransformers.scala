@@ -30,16 +30,16 @@ object CustomTransformers {
     
     inline def setAfterDeclarationsUndefined: Self = StObject.set(x, "afterDeclarations", js.undefined)
     
-    inline def setAfterDeclarationsVarargs(value: ((TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory)*): Self = StObject.set(x, "afterDeclarations", js.Array(value :_*))
+    inline def setAfterDeclarationsVarargs(value: ((TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory)*): Self = StObject.set(x, "afterDeclarations", js.Array(value*))
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setAfterVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "after", js.Array(value*))
     
     inline def setBefore(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    inline def setBeforeVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "before", js.Array(value :_*))
+    inline def setBeforeVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "before", js.Array(value*))
   }
 }

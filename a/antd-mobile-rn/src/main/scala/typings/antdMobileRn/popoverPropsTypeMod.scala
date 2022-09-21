@@ -11,7 +11,7 @@ object popoverPropsTypeMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* node */ js.Any, /* index */ js.UndefOr[Double], Unit]] = js.undefined
+    var onSelect: js.UndefOr[js.Function2[/* node */ Any, /* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     var overlay: ReactNode
   }
@@ -28,7 +28,7 @@ object popoverPropsTypeMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOnSelect(value: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (/* node */ Any, /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

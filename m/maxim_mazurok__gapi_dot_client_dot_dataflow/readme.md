@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_dataflow
 
-Typings are for version 1.0.20201117
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Dataflow API v1b3
@@ -10,10 +10,10 @@ TypeScript typings for Dataflow API v1b3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dataflow |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1113 |
-| # stars            | 0 |
+| # releases         | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 890.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

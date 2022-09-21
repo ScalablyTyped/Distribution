@@ -47,8 +47,8 @@ trait RecordProxy[T] extends StObject {
       ]
     ]
   ] = js.native
-  def getLinkedRecords[H](name: String): (js.Array[RecordProxy[js.Any | js.Object]]) | Null = js.native
-  def getLinkedRecords[H](name: String, args: Variables): (js.Array[RecordProxy[js.Any | js.Object]]) | Null = js.native
+  def getLinkedRecords[H](name: String): (js.Array[RecordProxy[Any | js.Object]]) | Null = js.native
+  def getLinkedRecords[H](name: String, args: Variables): (js.Array[RecordProxy[Any | js.Object]]) | Null = js.native
   
   def getOrCreateLinkedRecord(name: String, typeName: String): RecordProxy[T] = js.native
   def getOrCreateLinkedRecord(name: String, typeName: String, args: Variables): RecordProxy[T] = js.native

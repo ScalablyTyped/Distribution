@@ -35,6 +35,11 @@ object sessionDescriptionHandlerOptionsMod {
     var dataChannelOptions: js.UndefOr[RTCDataChannelInit] = js.undefined
     
     /**
+      * If true, offer and answer directions will be set to place peer on hold.
+      */
+    var hold: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The maximum duration to wait in ms for ICE gathering to complete.
       * No timeout if undefined or zero.
       */
@@ -74,6 +79,10 @@ object sessionDescriptionHandlerOptionsMod {
       inline def setDataChannelOptionsUndefined: Self = StObject.set(x, "dataChannelOptions", js.undefined)
       
       inline def setDataChannelUndefined: Self = StObject.set(x, "dataChannel", js.undefined)
+      
+      inline def setHold(value: Boolean): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
       inline def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
       

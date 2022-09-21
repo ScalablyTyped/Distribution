@@ -10,10 +10,10 @@ Return the closest element matching a selector up the DOM tree
 | ------------------ | :-------------: |
 | Full name          | element-closest |
 | Keywords           | javascript, js, dom, document, element, node, closest, matches, polyfill, web, standard |
-| # releases         | 4 |
-| # dependents       | 94 |
-| # downloads        | 6414393 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 767905.0 |
+| # stars            | 356.0 |
 
 ## Links
 - [Homepage](https://github.com/jonathantneal/closest#readme)

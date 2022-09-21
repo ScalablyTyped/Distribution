@@ -1,6 +1,8 @@
 package typings.jsreportHtmlEmbeddedInDocx
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Template
 import typings.jsreportHtmlEmbeddedInDocx.jsreportHtmlEmbeddedInDocxStrings.`html-embedded-in-docx`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,23 +16,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  trait HtmlEmbeddedInDocxTemplate
+    extends StObject
+       with Template {
+    
+    @JSName("recipe")
+    var recipe_HtmlEmbeddedInDocxTemplate: `html-embedded-in-docx` | String
+  }
+  object HtmlEmbeddedInDocxTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, recipe: `html-embedded-in-docx` | String): HtmlEmbeddedInDocxTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HtmlEmbeddedInDocxTemplate]
+    }
+    
+    extension [Self <: HtmlEmbeddedInDocxTemplate](x: Self) {
+      
+      inline def setRecipe(value: `html-embedded-in-docx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var recipe: `html-embedded-in-docx` | String
+      var HtmlEmbeddedInDocxTemplate: typings.jsreportHtmlEmbeddedInDocx.mod.HtmlEmbeddedInDocxTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(recipe: `html-embedded-in-docx` | String): Template = {
-        val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(HtmlEmbeddedInDocxTemplate: HtmlEmbeddedInDocxTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(HtmlEmbeddedInDocxTemplate = HtmlEmbeddedInDocxTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setRecipe(value: `html-embedded-in-docx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setHtmlEmbeddedInDocxTemplate(value: HtmlEmbeddedInDocxTemplate): Self = StObject.set(x, "HtmlEmbeddedInDocxTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

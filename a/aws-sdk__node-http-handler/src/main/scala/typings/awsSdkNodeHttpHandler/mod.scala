@@ -1,8 +1,9 @@
 package typings.awsSdkNodeHttpHandler
 
-import typings.awsSdkNodeHttpHandler.nodeHttp2HandlerMod.NodeHttp2Options
-import typings.awsSdkNodeHttpHandler.nodeHttpHandlerMod.NodeHttpOptions
+import typings.awsSdkNodeHttpHandler.nodeHttp2HandlerMod.NodeHttp2HandlerOptions
+import typings.awsSdkNodeHttpHandler.nodeHttpHandlerMod.NodeHttpHandlerOptions
 import typings.awsSdkTypes.serdeMod.StreamCollector
+import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +12,18 @@ object mod {
   
   @JSImport("@aws-sdk/node-http-handler", "NodeHttp2Handler")
   @js.native
-  class NodeHttp2Handler ()
+  open class NodeHttp2Handler ()
     extends typings.awsSdkNodeHttpHandler.nodeHttp2HandlerMod.NodeHttp2Handler {
-    def this(http2Options: NodeHttp2Options) = this()
+    def this(options: NodeHttp2HandlerOptions) = this()
+    def this(options: Provider[NodeHttp2HandlerOptions | Unit]) = this()
   }
   
   @JSImport("@aws-sdk/node-http-handler", "NodeHttpHandler")
   @js.native
-  class NodeHttpHandler ()
+  open class NodeHttpHandler ()
     extends typings.awsSdkNodeHttpHandler.nodeHttpHandlerMod.NodeHttpHandler {
-    def this(hasConnectionTimeoutSocketTimeoutHttpAgentHttpsAgent: NodeHttpOptions) = this()
+    def this(options: NodeHttpHandlerOptions) = this()
+    def this(options: Provider[NodeHttpHandlerOptions | Unit]) = this()
   }
   
   @JSImport("@aws-sdk/node-http-handler", "streamCollector")

@@ -21,7 +21,7 @@ object QueryExecuteCompleteNotificationResult {
     
     inline def setBatchSummaries(value: js.Array[BatchSummary]): Self = StObject.set(x, "batchSummaries", value.asInstanceOf[js.Any])
     
-    inline def setBatchSummariesVarargs(value: BatchSummary*): Self = StObject.set(x, "batchSummaries", js.Array(value :_*))
+    inline def setBatchSummariesVarargs(value: BatchSummary*): Self = StObject.set(x, "batchSummaries", js.Array(value*))
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }

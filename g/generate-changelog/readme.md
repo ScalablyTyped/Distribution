@@ -10,10 +10,10 @@ Generate a changelog from git commits.
 | ------------------ | :-------------: |
 | Full name          | generate-changelog |
 | Keywords           | changelog, cli, npm, version, git, semver |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 416017 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 76554.0 |
+| # stars            | 464.0 |
 
 ## Links
 - [Homepage](https://github.com/lob/generate-changelog#readme)

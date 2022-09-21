@@ -24,6 +24,6 @@ object DescribeTargetHealthOutput {
     
     inline def setTargetHealthDescriptionsUndefined: Self = StObject.set(x, "TargetHealthDescriptions", js.undefined)
     
-    inline def setTargetHealthDescriptionsVarargs(value: TargetHealthDescription*): Self = StObject.set(x, "TargetHealthDescriptions", js.Array(value :_*))
+    inline def setTargetHealthDescriptionsVarargs(value: TargetHealthDescription*): Self = StObject.set(x, "TargetHealthDescriptions", js.Array(value*))
   }
 }

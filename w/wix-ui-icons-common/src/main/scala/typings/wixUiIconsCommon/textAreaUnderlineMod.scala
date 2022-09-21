@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object textAreaUnderlineMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/TextAreaUnderline", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaUnderlineProps] = js.native
+  val default: FC[TextAreaUnderlineProps] = js.native
   
   trait TextAreaUnderlineProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object TextAreaUnderlineProps {
     
@@ -29,14 +29,14 @@ object textAreaUnderlineMod extends Shortcut {
     
     extension [Self <: TextAreaUnderlineProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[TextAreaUnderlineProps]
+  type _To = FC[TextAreaUnderlineProps]
   
   /* This means you don't have to write `default`, but can instead just say `textAreaUnderlineMod.foo` */
-  override def _to: SFC[TextAreaUnderlineProps] = default
+  override def _to: FC[TextAreaUnderlineProps] = default
 }

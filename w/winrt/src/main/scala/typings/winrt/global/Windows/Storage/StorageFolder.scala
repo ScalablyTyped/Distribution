@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.StorageFolder")
 @js.native
-class StorageFolder ()
+open class StorageFolder ()
   extends StObject
      with typings.winrt.Windows.Storage.StorageFolder {
   

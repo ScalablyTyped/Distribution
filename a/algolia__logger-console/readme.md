@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__logger-console
 
-Typings are for version 4.8.0
+Typings are for version 4.14.2
 
 ## Library description:
 Promise-based log library using console log.
@@ -10,10 +10,10 @@ Promise-based log library using console log.
 | ------------------ | :-------------: |
 | Full name          | @algolia/logger-console |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 5 |
-| # downloads        | 6726135 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 2785759.6666666665 |
+| # stars            | 1133.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

@@ -25,7 +25,7 @@ object ElectionsQueryResponse {
     
     inline def setElectionsUndefined: Self = StObject.set(x, "elections", js.undefined)
     
-    inline def setElectionsVarargs(value: Election*): Self = StObject.set(x, "elections", js.Array(value :_*))
+    inline def setElectionsVarargs(value: Election*): Self = StObject.set(x, "elections", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

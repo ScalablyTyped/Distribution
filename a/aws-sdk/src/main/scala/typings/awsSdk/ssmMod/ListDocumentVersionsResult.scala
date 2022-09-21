@@ -29,7 +29,7 @@ object ListDocumentVersionsResult {
     
     inline def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
-    inline def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
+    inline def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = StObject.set(x, "DocumentVersions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

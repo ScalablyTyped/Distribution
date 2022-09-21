@@ -66,7 +66,7 @@ object TypeArgumentInferenceContext {
     
     inline def setCandidateCache(value: js.Array[CandidateInferenceInfo]): Self = StObject.set(x, "candidateCache", value.asInstanceOf[js.Any])
     
-    inline def setCandidateCacheVarargs(value: CandidateInferenceInfo*): Self = StObject.set(x, "candidateCache", js.Array(value :_*))
+    inline def setCandidateCacheVarargs(value: CandidateInferenceInfo*): Self = StObject.set(x, "candidateCache", js.Array(value*))
     
     inline def setContext(value: PullTypeResolutionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

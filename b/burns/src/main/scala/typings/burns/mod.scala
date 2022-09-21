@@ -1,8 +1,11 @@
 package typings.burns
 
 import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StringDictionary
+import typings.burns.anon.BroadcastIf
 import typings.burns.anon.Exclude
-import typings.std.Record
+import typings.burns.burnsBooleans.`false`
+import typings.burns.configMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,73 +17,119 @@ object mod extends Shortcut {
   val ^ : Burns = js.native
   
   /**
-    * Burns
+    * @typedef {import("./repositories/config").Config} Burns.Config
+    * @typedef {import("./repositories/events").EventHandler} Burns.EventHandler
+    * @typedef {import("./repositories/events").EventConfig} Burns.EventConfig
     */
   @js.native
   trait Burns extends StObject {
     
-    def configure(): this.type = js.native
-    def configure(config: Config): this.type = js.native
+    /**
+      * @param {Burns.Config} config
+      * @returns {Burns}
+      */
+    def configure(): Burns = js.native
+    def configure(hasDefaultHandlerBroadcasterPusher: Config): Burns = js.native
     
-    def dispatch(eventName: String): this.type = js.native
-    def dispatch(eventName: String, eventData: Unit, exclude: Exclude): this.type = js.native
-    def dispatch(eventName: String, eventData: Record[String, js.Any]): this.type = js.native
-    def dispatch(eventName: String, eventData: Record[String, js.Any], exclude: Exclude): this.type = js.native
+    /**
+      * Dispatch an event, and broadcast it, if configured.
+      * @param {string} eventName
+      * @param {?} eventData
+      * @param {Object<string, ?>} options
+      * @param {string=} options.exclude
+      * @returns {Burns}
+      */
+    def dispatch(eventName: String): Burns = js.native
+    def dispatch(eventName: String, eventData: Any): Burns = js.native
+    def dispatch(eventName: String, eventData: Any, hasExclude: Exclude): Burns = js.native
+    def dispatch(eventName: String, eventData: Unit, hasExclude: Exclude): Burns = js.native
     
-    def registerEvents(newEvents: Record[String, EventHandler]): this.type = js.native
+    /**
+      *
+      * @param {Object<string, Burns.EventHandler|Burns.EventHandler[]|Burns.EventConfig>} newEvents
+      * @returns {Burns}
+      */
+    @JSName("registerEvents")
+    def registerEvents_false(
+      newEvents: StringDictionary[
+          (js.Function1[/* payload */ Any, `false` | Unit]) | (js.Array[js.Function1[/* payload */ Any, `false` | Unit]]) | BroadcastIf
+        ]
+    ): Burns = js.native
   }
-  
-  /**
-    * Burns configuration settings
-    */
-  trait Config extends StObject {
+  object Burns {
     
-    var broadcaster: js.UndefOr[String | Null] = js.undefined
-    
-    var defaultHandler: js.UndefOr[HandlerFn] = js.undefined
-    
-    var pusher: js.UndefOr[Record[String, js.Any]] = js.undefined
-  }
-  object Config {
-    
-    inline def apply(): Config = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Config]
+    trait Config extends StObject {
+      
+      var broadcaster: js.UndefOr[String] = js.undefined
+      
+      var defaultHandler: js.UndefOr[js.Function1[/* payload */ Any, `false` | Unit]] = js.undefined
+      
+      var pusher: js.UndefOr[
+            js.Object | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_pusher.ClusterOptions */ Any)
+          ] = js.undefined
+    }
+    object Config {
+      
+      inline def apply(): typings.burns.mod.Burns.Config = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[typings.burns.mod.Burns.Config]
+      }
+      
+      extension [Self <: typings.burns.mod.Burns.Config](x: Self) {
+        
+        inline def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
+        
+        inline def setBroadcasterUndefined: Self = StObject.set(x, "broadcaster", js.undefined)
+        
+        inline def setDefaultHandler(value: /* payload */ Any => `false` | Unit): Self = StObject.set(x, "defaultHandler", js.Any.fromFunction1(value))
+        
+        inline def setDefaultHandlerUndefined: Self = StObject.set(x, "defaultHandler", js.undefined)
+        
+        inline def setPusher(
+          value: js.Object | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_pusher.ClusterOptions */ Any)
+        ): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+        
+        inline def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
+      }
     }
     
-    extension [Self <: Config](x: Self) {
+    trait EventConfig extends StObject {
       
-      inline def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
+      var broadcastIf: js.UndefOr[Boolean | (js.Function1[/* payload */ Any, Boolean])] = js.undefined
       
-      inline def setBroadcasterNull: Self = StObject.set(x, "broadcaster", null)
+      var broadcastOn: js.UndefOr[String | (js.Function1[/* payload */ Any, String])] = js.undefined
       
-      inline def setBroadcasterUndefined: Self = StObject.set(x, "broadcaster", js.undefined)
-      
-      inline def setDefaultHandler(value: /* payload */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "defaultHandler", js.Any.fromFunction1(value))
-      
-      inline def setDefaultHandlerUndefined: Self = StObject.set(x, "defaultHandler", js.undefined)
-      
-      inline def setPusher(value: Record[String, js.Any]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
-      
-      inline def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
+      var handlers: js.Array[js.Function1[/* payload */ Any, `false` | Unit]]
     }
+    object EventConfig {
+      
+      inline def apply(handlers: js.Array[js.Function1[/* payload */ Any, `false` | Unit]]): EventConfig = {
+        val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any])
+        __obj.asInstanceOf[EventConfig]
+      }
+      
+      extension [Self <: EventConfig](x: Self) {
+        
+        inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
+        
+        inline def setBroadcastIfFunction1(value: /* payload */ Any => Boolean): Self = StObject.set(x, "broadcastIf", js.Any.fromFunction1(value))
+        
+        inline def setBroadcastIfUndefined: Self = StObject.set(x, "broadcastIf", js.undefined)
+        
+        inline def setBroadcastOn(value: String | (js.Function1[/* payload */ Any, String])): Self = StObject.set(x, "broadcastOn", value.asInstanceOf[js.Any])
+        
+        inline def setBroadcastOnFunction1(value: /* payload */ Any => String): Self = StObject.set(x, "broadcastOn", js.Any.fromFunction1(value))
+        
+        inline def setBroadcastOnUndefined: Self = StObject.set(x, "broadcastOn", js.undefined)
+        
+        inline def setHandlers(value: js.Array[js.Function1[/* payload */ Any, `false` | Unit]]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+        
+        inline def setHandlersVarargs(value: (js.Function1[/* payload */ Any, `false` | Unit])*): Self = StObject.set(x, "handlers", js.Array(value*))
+      }
+    }
+    
+    type EventHandler = js.Function1[/* payload */ Any, `false` | Unit]
   }
-  
-  /**
-    * Type Alias for event handlers
-    */
-  type EventHandler = Handlers | (Record[String, Handlers])
-  
-  /**
-    * Function type for handling events
-    */
-  type HandlerFn = js.Function1[/* payload */ js.UndefOr[js.Any], js.Any]
-  
-  /**
-    * This Type is an alias to the multiple
-    * parameter types the `registerEvent` method accepts
-    */
-  type Handlers = String | HandlerFn | js.Array[HandlerFn]
   
   type _To = Burns
   

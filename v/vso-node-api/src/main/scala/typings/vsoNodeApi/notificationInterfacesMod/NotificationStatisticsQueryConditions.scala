@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotificationStatisticsQueryConditions extends StObject {
   
-  var endDate: Date
+  var endDate: js.Date
   
   var hitCountMinimum: Double
   
   var path: String
   
-  var startDate: Date
+  var startDate: js.Date
   
   var `type`: NotificationStatisticType
   
@@ -23,10 +22,10 @@ trait NotificationStatisticsQueryConditions extends StObject {
 object NotificationStatisticsQueryConditions {
   
   inline def apply(
-    endDate: Date,
+    endDate: js.Date,
     hitCountMinimum: Double,
     path: String,
-    startDate: Date,
+    startDate: js.Date,
     `type`: NotificationStatisticType,
     user: IdentityRef
   ): NotificationStatisticsQueryConditions = {
@@ -37,13 +36,13 @@ object NotificationStatisticsQueryConditions {
   
   extension [Self <: NotificationStatisticsQueryConditions](x: Self) {
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setHitCountMinimum(value: Double): Self = StObject.set(x, "hitCountMinimum", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setType(value: NotificationStatisticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

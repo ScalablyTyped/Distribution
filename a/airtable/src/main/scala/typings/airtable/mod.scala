@@ -1,15 +1,14 @@
 package typings.airtable
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.airtable.airtableStrings.asc
-import typings.airtable.airtableStrings.desc
-import typings.airtable.airtableStrings.json
-import typings.airtable.airtableStrings.string
-import typings.airtable.anon.Full
-import typings.airtable.anon.Typecast
-import typings.airtable.mod.global.Airtable
-import typings.airtable.mod.global.Airtable.AirtableOptions
-import typings.airtable.mod.global.Airtable.Base_
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
+import typings.airtable.airtableBaseMod.AirtableBase
+import typings.airtable.anon.PickAirtableOptionsapiKey
+import typings.airtable.anon.TypeofAirtableTable
+import typings.airtable.anon.TypeofBase
+import typings.airtable.objectMapMod.ObjectMap
+import typings.airtable.queryParamsMod.QueryParams
+import typings.airtable.recordMod.RecordJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,350 +17,314 @@ object mod {
   
   @JSImport("airtable", JSImport.Namespace)
   @js.native
-  class ^ () extends Airtable {
-    def this(options: AirtableOptions) = this()
+  open class ^ ()
+    extends StObject
+       with Airtable {
+    def this(opts: AirtableOptions) = this()
+    
+    /* CompleteClass */
+    override val _apiKey: String = js.native
+    
+    /* CompleteClass */
+    override val _apiVersion: String = js.native
+    
+    /* CompleteClass */
+    override val _apiVersionMajor: String = js.native
+    
+    /* CompleteClass */
+    override val _customHeaders: CustomHeaders = js.native
+    
+    /* CompleteClass */
+    override val _endpointUrl: String = js.native
+    
+    /* CompleteClass */
+    override val _noRetryIfRateLimited: Boolean = js.native
+    
+    /* CompleteClass */
+    override val _requestTimeout: Double = js.native
+    
+    /* CompleteClass */
+    override def base(baseId: String): Base_ = js.native
   }
   @JSImport("airtable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /* static member */
-  inline def base(appId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(appId.asInstanceOf[js.Any]).asInstanceOf[Base_]
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("airtable", "Base")
+  @js.native
+  open class BaseCls protected ()
+    extends typings.airtable.baseMod.^ {
+    def this(airtable: typings.airtable.mod.^, baseId: String) = this()
+  }
   
   /* static member */
-  inline def configure(): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Airtable]
-  inline def configure(options: AirtableOptions): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Airtable]
+  @JSImport("airtable", "Base")
+  @js.native
+  def Base_ : TypeofBase & (Instantiable2[
+    /* airtable */ typings.airtable.mod.^, 
+    /* baseId */ String, 
+    typings.airtable.baseMod.^
+  ]) = js.native
   
-  object global {
+  type Base_ = AirtableBase
+  inline def Base__=(
+    x: TypeofBase & (Instantiable2[
+      /* airtable */ typings.airtable.mod.^, 
+      /* baseId */ String, 
+      typings.airtable.baseMod.^
+    ])
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Base")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "Error")
+  @js.native
+  def Error: Instantiable3[
+    /* error */ String, 
+    /* message */ String, 
+    /* statusCode */ Double, 
+    typings.airtable.airtableErrorMod.^
+  ] = js.native
+  type Error = typings.airtable.airtableErrorMod.^
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("airtable", "Error")
+  @js.native
+  open class ErrorCls protected ()
+    extends typings.airtable.airtableErrorMod.^ {
+    def this(error: String, message: String, statusCode: Double) = this()
+  }
+  
+  inline def Error_=(
+    x: Instantiable3[
+      /* error */ String, 
+      /* message */ String, 
+      /* statusCode */ Double, 
+      typings.airtable.airtableErrorMod.^
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "Record")
+  @js.native
+  def Record: Instantiable3[
+    /* table */ typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
+    /* recordId */ String, 
+    /* recordJson */ js.UndefOr[RecordJson], 
+    typings.airtable.recordMod.^[typings.airtable.fieldSetMod.FieldSet]
+  ] = js.native
+  type Record[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordMod.^[TFields]
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("airtable", "Record")
+  @js.native
+  open class RecordCls[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] protected ()
+    extends typings.airtable.recordMod.^[TFields] {
+    def this(
+      table: typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
+      recordId: String
+    ) = this()
+    def this(
+      table: typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
+      recordId: String,
+      recordJson: RecordJson
+    ) = this()
+  }
+  
+  inline def Record_=(
+    x: Instantiable3[
+      /* table */ typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
+      /* recordId */ String, 
+      /* recordJson */ js.UndefOr[RecordJson], 
+      typings.airtable.recordMod.^[typings.airtable.fieldSetMod.FieldSet]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Record")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "Table")
+  @js.native
+  def Table: TypeofAirtableTable & (Instantiable3[
+    /* base */ typings.airtable.baseMod.^, 
+    /* tableId */ String, 
+    /* tableName */ String, 
+    typings.airtable.tableMod.^[typings.airtable.fieldSetMod.FieldSet]
+  ]) = js.native
+  type Table[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.tableMod.^[TFields]
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("airtable", "Table")
+  @js.native
+  open class TableCls[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] protected ()
+    extends typings.airtable.tableMod.^[TFields] {
+    def this(base: typings.airtable.baseMod.^, tableId: String, tableName: String) = this()
+  }
+  
+  inline def Table_=(
+    x: TypeofAirtableTable & (Instantiable3[
+      /* base */ typings.airtable.baseMod.^, 
+      /* tableId */ String, 
+      /* tableName */ String, 
+      typings.airtable.tableMod.^[typings.airtable.fieldSetMod.FieldSet]
+    ])
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Table")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "apiKey")
+  @js.native
+  def apiKey: String = js.native
+  inline def apiKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiKey")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "apiVersion")
+  @js.native
+  def apiVersion: String = js.native
+  inline def apiVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiVersion")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def base(baseId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(baseId.asInstanceOf[js.Any]).asInstanceOf[Base_]
+  
+  /* static member */
+  inline def configure(hasApiKeyEndpointUrlApiVersionNoRetryIfRateLimitedRequestTimeout: PickAirtableOptionsapiKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(hasApiKeyEndpointUrlApiVersionNoRetryIfRateLimitedRequestTimeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def defaultConfig(): AirtableOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default_config")().asInstanceOf[AirtableOptions]
+  
+  /* static member */
+  @JSImport("airtable", "endpointUrl")
+  @js.native
+  def endpointUrl: String = js.native
+  inline def endpointUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endpointUrl")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "noRetryIfRateLimited")
+  @js.native
+  def noRetryIfRateLimited: Boolean = js.native
+  inline def noRetryIfRateLimited_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRetryIfRateLimited")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("airtable", "requestTimeout")
+  @js.native
+  def requestTimeout: Double = js.native
+  inline def requestTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestTimeout")(x.asInstanceOf[js.Any])
+  
+  trait Airtable extends StObject {
     
-    @JSGlobal("Airtable")
-    @js.native
-    class Airtable () extends StObject {
-      def this(options: AirtableOptions) = this()
-      
-      def base(appId: String): Base_ = js.native
+    val _apiKey: String
+    
+    val _apiVersion: String
+    
+    val _apiVersionMajor: String
+    
+    val _customHeaders: CustomHeaders
+    
+    val _endpointUrl: String
+    
+    val _noRetryIfRateLimited: Boolean
+    
+    val _requestTimeout: Double
+    
+    def base(baseId: String): Base_
+  }
+  object Airtable {
+    
+    inline def apply(
+      _apiKey: String,
+      _apiVersion: String,
+      _apiVersionMajor: String,
+      _customHeaders: CustomHeaders,
+      _endpointUrl: String,
+      _noRetryIfRateLimited: Boolean,
+      _requestTimeout: Double,
+      base: String => Base_
+    ): Airtable = {
+      val __obj = js.Dynamic.literal(_apiKey = _apiKey.asInstanceOf[js.Any], _apiVersion = _apiVersion.asInstanceOf[js.Any], _apiVersionMajor = _apiVersionMajor.asInstanceOf[js.Any], _customHeaders = _customHeaders.asInstanceOf[js.Any], _endpointUrl = _endpointUrl.asInstanceOf[js.Any], _noRetryIfRateLimited = _noRetryIfRateLimited.asInstanceOf[js.Any], _requestTimeout = _requestTimeout.asInstanceOf[js.Any], base = js.Any.fromFunction1(base))
+      __obj.asInstanceOf[Airtable]
     }
-    object Airtable {
+    
+    extension [Self <: Airtable](x: Self) {
       
-      @JSGlobal("Airtable")
-      @js.native
-      val ^ : js.Any = js.native
+      inline def setBase(value: String => Base_): Self = StObject.set(x, "base", js.Any.fromFunction1(value))
       
-      /* static member */
-      inline def base(appId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(appId.asInstanceOf[js.Any]).asInstanceOf[Base_]
+      inline def set_apiKey(value: String): Self = StObject.set(x, "_apiKey", value.asInstanceOf[js.Any])
       
-      /* static member */
-      inline def configure(): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Airtable]
-      inline def configure(options: AirtableOptions): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Airtable]
+      inline def set_apiVersion(value: String): Self = StObject.set(x, "_apiVersion", value.asInstanceOf[js.Any])
       
-      trait AirtableOptions extends StObject {
-        
-        var apiKey: js.UndefOr[String] = js.undefined
-        
-        var apiVersion: js.UndefOr[String] = js.undefined
-        
-        var endpointUrl: js.UndefOr[String] = js.undefined
-        
-        var noRetryIfRateLimited: js.UndefOr[Boolean] = js.undefined
-        
-        var requestTimeout: js.UndefOr[Double] = js.undefined
-      }
-      object AirtableOptions {
-        
-        inline def apply(): AirtableOptions = {
-          val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[AirtableOptions]
-        }
-        
-        extension [Self <: AirtableOptions](x: Self) {
-          
-          inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
-          
-          inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
-          
-          inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
-          
-          inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
-          
-          inline def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
-          
-          inline def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
-          
-          inline def setNoRetryIfRateLimited(value: Boolean): Self = StObject.set(x, "noRetryIfRateLimited", value.asInstanceOf[js.Any])
-          
-          inline def setNoRetryIfRateLimitedUndefined: Self = StObject.set(x, "noRetryIfRateLimited", js.undefined)
-          
-          inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
-          
-          inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
-        }
-      }
+      inline def set_apiVersionMajor(value: String): Self = StObject.set(x, "_apiVersionMajor", value.asInstanceOf[js.Any])
       
-      trait Attachment extends StObject {
-        
-        var filename: String
-        
-        var id: String
-        
-        var size: Double
-        
-        var thumbnails: js.UndefOr[Full] = js.undefined
-        
-        var `type`: String
-        
-        var url: String
-      }
-      object Attachment {
-        
-        inline def apply(filename: String, id: String, size: Double, `type`: String, url: String): Attachment = {
-          val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-          __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Attachment]
-        }
-        
-        extension [Self <: Attachment](x: Self) {
-          
-          inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-          
-          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-          
-          inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-          
-          inline def setThumbnails(value: Full): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
-          
-          inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
-          
-          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-          
-          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-        }
-      }
+      inline def set_customHeaders(value: CustomHeaders): Self = StObject.set(x, "_customHeaders", value.asInstanceOf[js.Any])
       
-      type Base_ = js.Function1[/* tableName */ String, Table[js.Object]]
+      inline def set_endpointUrl(value: String): Self = StObject.set(x, "_endpointUrl", value.asInstanceOf[js.Any])
       
-      trait Collaborator extends StObject {
-        
-        var email: String
-        
-        var id: String
-        
-        var name: String
-      }
-      object Collaborator {
-        
-        inline def apply(email: String, id: String, name: String): Collaborator = {
-          val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Collaborator]
-        }
-        
-        extension [Self <: Collaborator](x: Self) {
-          
-          inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-          
-          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-          
-          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        }
-      }
+      inline def set_noRetryIfRateLimited(value: Boolean): Self = StObject.set(x, "_noRetryIfRateLimited", value.asInstanceOf[js.Any])
       
-      type FieldSet = StringDictionary[
-            js.UndefOr[
-              String | Double | Boolean | Collaborator | (js.Array[Attachment | Collaborator | String])
-            ]
-          ]
-      
-      trait Query[TFields /* <: js.Object */] extends StObject {
-        
-        def all(): js.Promise[Records[TFields]]
-        
-        def eachPage(pageCallback: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit]): js.Promise[Unit]
-        
-        def firstPage(): js.Promise[Records[TFields]]
-      }
-      object Query {
-        
-        inline def apply[TFields /* <: js.Object */](
-          all: () => js.Promise[Records[TFields]],
-          eachPage: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit] => js.Promise[Unit],
-          firstPage: () => js.Promise[Records[TFields]]
-        ): Query[TFields] = {
-          val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), eachPage = js.Any.fromFunction1(eachPage), firstPage = js.Any.fromFunction0(firstPage))
-          __obj.asInstanceOf[Query[TFields]]
-        }
-        
-        extension [Self <: Query[?], TFields /* <: js.Object */](x: Self & Query[TFields]) {
-          
-          inline def setAll(value: () => js.Promise[Records[TFields]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
-          
-          inline def setEachPage(
-            value: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit] => js.Promise[Unit]
-          ): Self = StObject.set(x, "eachPage", js.Any.fromFunction1(value))
-          
-          inline def setFirstPage(value: () => js.Promise[Records[TFields]]): Self = StObject.set(x, "firstPage", js.Any.fromFunction0(value))
-        }
-      }
-      
-      trait Record[TFields] extends StObject {
-        
-        var fields: TFields
-        
-        var id: String
-      }
-      object Record {
-        
-        inline def apply[TFields](fields: TFields, id: String): Record[TFields] = {
-          val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Record[TFields]]
-        }
-        
-        extension [Self <: Record[?], TFields](x: Self & Record[TFields]) {
-          
-          inline def setFields(value: TFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-          
-          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-        }
-      }
-      
-      type Records[TFields] = js.Array[Record[TFields]]
-      
-      trait SelectOptions extends StObject {
-        
-        var cellFormat: js.UndefOr[json | string] = js.undefined
-        
-        var fields: js.UndefOr[js.Array[String]] = js.undefined
-        
-        var filterByFormula: js.UndefOr[String] = js.undefined
-        
-        var maxRecords: js.UndefOr[Double] = js.undefined
-        
-        var pageSize: js.UndefOr[Double] = js.undefined
-        
-        var sort: js.UndefOr[js.Array[SortParameter]] = js.undefined
-        
-        var timeZone: js.UndefOr[String] = js.undefined
-        
-        var userLocale: js.UndefOr[String] = js.undefined
-        
-        var view: js.UndefOr[String] = js.undefined
-      }
-      object SelectOptions {
-        
-        inline def apply(): SelectOptions = {
-          val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[SelectOptions]
-        }
-        
-        extension [Self <: SelectOptions](x: Self) {
-          
-          inline def setCellFormat(value: json | string): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
-          
-          inline def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
-          
-          inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-          
-          inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-          
-          inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
-          
-          inline def setFilterByFormula(value: String): Self = StObject.set(x, "filterByFormula", value.asInstanceOf[js.Any])
-          
-          inline def setFilterByFormulaUndefined: Self = StObject.set(x, "filterByFormula", js.undefined)
-          
-          inline def setMaxRecords(value: Double): Self = StObject.set(x, "maxRecords", value.asInstanceOf[js.Any])
-          
-          inline def setMaxRecordsUndefined: Self = StObject.set(x, "maxRecords", js.undefined)
-          
-          inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-          
-          inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-          
-          inline def setSort(value: js.Array[SortParameter]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-          
-          inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
-          
-          inline def setSortVarargs(value: SortParameter*): Self = StObject.set(x, "sort", js.Array(value :_*))
-          
-          inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
-          
-          inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
-          
-          inline def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
-          
-          inline def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
-          
-          inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-          
-          inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
-        }
-      }
-      
-      trait SortParameter extends StObject {
-        
-        var direction: js.UndefOr[asc | desc] = js.undefined
-        
-        var field: String
-      }
-      object SortParameter {
-        
-        inline def apply(field: String): SortParameter = {
-          val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-          __obj.asInstanceOf[SortParameter]
-        }
-        
-        extension [Self <: SortParameter](x: Self) {
-          
-          inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
-          
-          inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
-          
-          inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-        }
-      }
-      
-      @js.native
-      trait Table[TFields /* <: FieldSet */] extends StObject {
-        
-        def create(record: TFields): js.Promise[Record[TFields]] = js.native
-        def create(record: TFields, opts: Typecast): js.Promise[Record[TFields]] = js.native
-        def create(records: js.Array[TFields]): js.Promise[Records[TFields]] = js.native
-        def create(records: js.Array[TFields], opts: Typecast): js.Promise[Records[TFields]] = js.native
-        
-        def destroy(args: js.Any*): js.Promise[js.Any] = js.native
-        
-        def find(id: String): js.Promise[Record[TFields]] = js.native
-        
-        def replace(args: js.Any*): js.Promise[js.Any] = js.native
-        
-        def select(): Query[TFields] = js.native
-        def select(opt: SelectOptions): Query[TFields] = js.native
-        
-        def update(args: js.Any*): js.Promise[js.Any] = js.native
-      }
-      
-      trait Thumbnail extends StObject {
-        
-        var height: Double
-        
-        var url: String
-        
-        var width: Double
-      }
-      object Thumbnail {
-        
-        inline def apply(height: Double, url: String, width: Double): Thumbnail = {
-          val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Thumbnail]
-        }
-        
-        extension [Self <: Thumbnail](x: Self) {
-          
-          inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-          
-          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-          
-          inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-        }
-      }
+      inline def set_requestTimeout(value: Double): Self = StObject.set(x, "_requestTimeout", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait AirtableOptions extends StObject {
+    
+    var apiKey: js.UndefOr[String] = js.undefined
+    
+    var apiVersion: js.UndefOr[String] = js.undefined
+    
+    var customHeaders: js.UndefOr[CustomHeaders] = js.undefined
+    
+    var endpointUrl: js.UndefOr[String] = js.undefined
+    
+    var noRetryIfRateLimited: js.UndefOr[Boolean] = js.undefined
+    
+    var requestTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object AirtableOptions {
+    
+    inline def apply(): AirtableOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AirtableOptions]
+    }
+    
+    extension [Self <: AirtableOptions](x: Self) {
+      
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      
+      inline def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      
+      inline def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
+      
+      inline def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
+      
+      inline def setNoRetryIfRateLimited(value: Boolean): Self = StObject.set(x, "noRetryIfRateLimited", value.asInstanceOf[js.Any])
+      
+      inline def setNoRetryIfRateLimitedUndefined: Self = StObject.set(x, "noRetryIfRateLimited", js.undefined)
+      
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+    }
+  }
+  
+  type Attachment = typings.airtable.attachmentMod.Attachment
+  
+  type Collaborator = typings.airtable.collaboratorMod.Collaborator
+  
+  type CustomHeaders = ObjectMap[String, String | Double | Boolean]
+  
+  type FieldSet = typings.airtable.fieldSetMod.FieldSet
+  
+  type Query[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.queryMod.^[TFields]
+  
+  type RecordData[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordDataMod.RecordData[TFields]
+  
+  type Records[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordsMod.Records[TFields]
+  
+  type SelectOptions[TFields] = QueryParams[TFields]
+  
+  type Thumbnail = typings.airtable.thumbnailMod.Thumbnail
 }

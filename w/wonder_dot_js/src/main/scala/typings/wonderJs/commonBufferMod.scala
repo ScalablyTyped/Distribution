@@ -15,8 +15,8 @@ object commonBufferMod {
     
     var count: Double = js.native
     
-    /* protected */ def resetBufferData(glBufferTargetStr: String, typedData: js.Any): Unit = js.native
-    /* protected */ def resetBufferData(glBufferTargetStr: String, typedData: js.Any, offset: Double): Unit = js.native
+    /* protected */ def resetBufferData(glBufferTargetStr: String, typedData: Any): Unit = js.native
+    /* protected */ def resetBufferData(glBufferTargetStr: String, typedData: Any, offset: Double): Unit = js.native
     
     var `type`: EBufferType = js.native
     

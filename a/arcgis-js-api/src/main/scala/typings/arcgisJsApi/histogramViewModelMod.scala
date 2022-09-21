@@ -17,7 +17,12 @@ object histogramViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Histogram/HistogramViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with HistogramViewModel {
     def this(properties: HistogramViewModelProperties) = this()

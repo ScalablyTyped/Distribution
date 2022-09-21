@@ -6,8 +6,6 @@ import typings.awsSdkClientXrayNode.typesHistogramEntryMod.HistogramEntry
 import typings.awsSdkClientXrayNode.typesHistogramEntryMod.UnmarshalledHistogramEntry
 import typings.awsSdkClientXrayNode.typesServiceStatisticsMod.ServiceStatistics
 import typings.awsSdkClientXrayNode.typesServiceStatisticsMod.UnmarshalledServiceStatistics
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,17 +22,17 @@ object typesServiceMod {
     /**
       * <p>A histogram that maps the spread of service durations.</p>
       */
-    var DurationHistogram: js.UndefOr[js.Array[HistogramEntry] | Iterable[HistogramEntry]] = js.undefined
+    var DurationHistogram: js.UndefOr[js.Array[HistogramEntry] | js.Iterable[HistogramEntry]] = js.undefined
     
     /**
       * <p>Connections to downstream services.</p>
       */
-    var Edges: js.UndefOr[js.Array[Edge] | Iterable[Edge]] = js.undefined
+    var Edges: js.UndefOr[js.Array[Edge] | js.Iterable[Edge]] = js.undefined
     
     /**
       * <p>The end time of the last segment that the service generated.</p>
       */
-    var EndTime: js.UndefOr[Date | String | Double] = js.undefined
+    var EndTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The canonical name of the service.</p>
@@ -44,7 +42,7 @@ object typesServiceMod {
     /**
       * <p>A list of names for the service, including the canonical name.</p>
       */
-    var Names: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Names: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>Identifier for the service. Unique within the service map.</p>
@@ -54,7 +52,7 @@ object typesServiceMod {
     /**
       * <p>A histogram that maps the spread of service response times.</p>
       */
-    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | Iterable[HistogramEntry]] = js.undefined
+    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | js.Iterable[HistogramEntry]] = js.undefined
     
     /**
       * <p>Indicates that the service was the first service to process a request.</p>
@@ -64,7 +62,7 @@ object typesServiceMod {
     /**
       * <p>The start time of the first segment that the service generated.</p>
       */
-    var StartTime: js.UndefOr[Date | String | Double] = js.undefined
+    var StartTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The service's state.</p>
@@ -94,19 +92,19 @@ object typesServiceMod {
       
       inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
       
-      inline def setDurationHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
+      inline def setDurationHistogram(value: js.Array[HistogramEntry] | js.Iterable[HistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
       
       inline def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
       
-      inline def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
+      inline def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value*))
       
-      inline def setEdges(value: js.Array[Edge] | Iterable[Edge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Edge] | js.Iterable[Edge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
       
       inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
       
-      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value*))
       
-      inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -114,27 +112,27 @@ object typesServiceMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      inline def setNames(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
       
       inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
       
       inline def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
       
       inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
       
-      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | js.Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
       inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
       
       inline def setRoot(value: Boolean): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
       inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
@@ -172,7 +170,7 @@ object typesServiceMod {
       * <p>The end time of the last segment that the service generated.</p>
       */
     @JSName("EndTime")
-    var EndTime_UnmarshalledService: js.UndefOr[Date] = js.undefined
+    var EndTime_UnmarshalledService: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>A list of names for the service, including the canonical name.</p>
@@ -190,7 +188,7 @@ object typesServiceMod {
       * <p>The start time of the first segment that the service generated.</p>
       */
     @JSName("StartTime")
-    var StartTime_UnmarshalledService: js.UndefOr[Date] = js.undefined
+    var StartTime_UnmarshalledService: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Aggregated statistics for the service.</p>
@@ -211,15 +209,15 @@ object typesServiceMod {
       
       inline def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
       
-      inline def setDurationHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
+      inline def setDurationHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value*))
       
       inline def setEdges(value: js.Array[UnmarshalledEdge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
       
       inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
       
-      inline def setEdgesVarargs(value: UnmarshalledEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: UnmarshalledEdge*): Self = StObject.set(x, "Edges", js.Array(value*))
       
-      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -227,15 +225,15 @@ object typesServiceMod {
       
       inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
       
       inline def setResponseTimeHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
       inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       

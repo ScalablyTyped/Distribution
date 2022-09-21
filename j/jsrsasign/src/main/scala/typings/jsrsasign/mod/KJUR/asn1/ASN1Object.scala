@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** base class for ASN.1 DER encoder object */
 @JSImport("jsrsasign", "KJUR.asn1.ASN1Object")
 @js.native
-class ASN1Object ()
+open class ASN1Object ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
+  def this(params: Tlv) = this()
   
   /**
     * get hexadecimal string of ASN.1 TLV bytes
@@ -54,4 +56,8 @@ class ASN1Object ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
 }

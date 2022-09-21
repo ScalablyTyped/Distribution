@@ -10,5 +10,5 @@ object proj4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def register(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(proj4: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

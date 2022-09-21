@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "Interest")
 @js.native
-class Interest ()
+open class Interest ()
   extends typings.ndnJs.interestMod.Interest {
   def this(interest: typings.ndnJs.interestMod.Interest) = this()
   def this(name: String) = this()

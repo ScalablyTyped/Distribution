@@ -10,10 +10,10 @@ Key signing and verification for rotated credentials
 | ------------------ | :-------------: |
 | Full name          | keygrip |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 77 |
-| # downloads        | 35206465 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6815061.0 |
+| # stars            | 899.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-utils/keygrip#readme)

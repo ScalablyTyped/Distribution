@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "AstWalkerFactory")
 @js.native
-class AstWalkerFactory ()
+open class AstWalkerFactory ()
   extends StObject
      with typings.typescriptServices.TypeScript.AstWalkerFactory

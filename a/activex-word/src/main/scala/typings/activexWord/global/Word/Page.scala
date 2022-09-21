@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Page")
 @js.native
-/* private */ class Page ()
+/* private */ open class Page ()
   extends StObject
      with typings.activexWord.Word.Page {
   
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override val EnhMetaFileBits: js.Any = js.native
+  override val EnhMetaFileBits: Any = js.native
   
   /* CompleteClass */
   override val Height: Double = js.native
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Left: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Rectangles: typings.activexWord.Word.Rectangles = js.native

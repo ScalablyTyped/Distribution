@@ -7,15 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Configuration")
 @js.native
-class Configuration[Link] protected ()
+open class Configuration[Link] protected ()
   extends typings.webcola.powergraphMod.Configuration[Link] {
   def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link]) = this()
-  def this(
-    n: Double,
-    edges: js.Array[Link],
-    linkAccessor: LinkTypeAccessor[Link],
-    rootGroup: js.Array[js.Any]
-  ) = this()
+  def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link], rootGroup: js.Array[Any]) = this()
 }
 /* static members */
 object Configuration {

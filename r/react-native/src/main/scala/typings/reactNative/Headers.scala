@@ -12,7 +12,7 @@ trait Headers extends StObject {
   def delete(name: String): Unit = js.native
   
   def forEach(callback: js.Function): Unit = js.native
-  def forEach(callback: js.Function, thisArg: js.Any): Unit = js.native
+  def forEach(callback: js.Function, thisArg: Any): Unit = js.native
   
   def get(name: String): String | Null = js.native
   

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAnomalyMonitorRequest extends StObject {
   
   /**
-    *  Cost anomaly monitor Amazon Resource Names (ARNs). 
+    * Cost anomaly monitor Amazon Resource Names (ARNs). 
     */
   var MonitorArn: GenericString
   
   /**
-    *  The new name for the cost anomaly monitor. 
+    * The new name for the cost anomaly monitor. 
     */
   var MonitorName: js.UndefOr[GenericString] = js.undefined
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Map.Tile
 @JSGlobal("naver.maps.Tile")
 @js.native
-class Tile protected ()
+open class Tile protected ()
   extends StObject
      with typings.navermaps.naver.maps.Tile {
   def this(element: HTMLElement) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "TermsAggregation")
 @js.native
-class TermsAggregation protected ()
+open class TermsAggregation protected ()
   extends StObject
      with Aggregation {
   /*
@@ -117,7 +117,7 @@ class TermsAggregation protected ()
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the type of the field value for use in scripts.  Current values are:

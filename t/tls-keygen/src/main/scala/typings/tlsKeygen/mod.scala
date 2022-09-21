@@ -1,6 +1,6 @@
 package typings.tlsKeygen
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +93,7 @@ object mod {
       
       inline def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
       
-      inline def setSubjectAltNameVarargs(value: String*): Self = StObject.set(x, "subjectAltName", js.Array(value :_*))
+      inline def setSubjectAltNameVarargs(value: String*): Self = StObject.set(x, "subjectAltName", js.Array(value*))
     }
   }
   

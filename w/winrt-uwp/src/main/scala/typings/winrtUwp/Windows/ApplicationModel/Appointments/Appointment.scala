@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
@@ -62,7 +61,7 @@ trait Appointment extends StObject {
   var organizer: AppointmentOrganizer
   
   /** Gets the original starting time for a recurring appointment. */
-  var originalStartTime: Date
+  var originalStartTime: js.Date
   
   /** Gets or sets the object that describes when and how often the appointment occurs. Recurrence is of type AppointmentRecurrence . */
   var recurrence: AppointmentRecurrence
@@ -74,7 +73,7 @@ trait Appointment extends StObject {
   var remoteChangeNumber: Double
   
   /** Gets or sets the date and time that the user responded to the appointment request. */
-  var replyTime: Date
+  var replyTime: js.Date
   
   /** Gets or sets a string that uniquely identifies an appointment across devices. */
   var roamingId: String
@@ -83,7 +82,7 @@ trait Appointment extends StObject {
   var sensitivity: AppointmentSensitivity
   
   /** Gets or sets the starting time for the appointment. StartTime is of type DateTime . */
-  var startTime: Date
+  var startTime: js.Date
   
   /** Gets or sets a string that communicates the subject of the appointment. Subject is of type String and a maximum of 255 characters in length. */
   var subject: String
@@ -114,14 +113,14 @@ object Appointment {
     location: String,
     onlineMeetingLink: String,
     organizer: AppointmentOrganizer,
-    originalStartTime: Date,
+    originalStartTime: js.Date,
     recurrence: AppointmentRecurrence,
     reminder: Double,
     remoteChangeNumber: Double,
-    replyTime: Date,
+    replyTime: js.Date,
     roamingId: String,
     sensitivity: AppointmentSensitivity,
-    startTime: Date,
+    startTime: js.Date,
     subject: String,
     uri: Uri,
     userResponse: AppointmentParticipantResponse
@@ -166,7 +165,7 @@ object Appointment {
     
     inline def setOrganizer(value: AppointmentOrganizer): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
-    inline def setOriginalStartTime(value: Date): Self = StObject.set(x, "originalStartTime", value.asInstanceOf[js.Any])
+    inline def setOriginalStartTime(value: js.Date): Self = StObject.set(x, "originalStartTime", value.asInstanceOf[js.Any])
     
     inline def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
@@ -174,13 +173,13 @@ object Appointment {
     
     inline def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
     
-    inline def setReplyTime(value: Date): Self = StObject.set(x, "replyTime", value.asInstanceOf[js.Any])
+    inline def setReplyTime(value: js.Date): Self = StObject.set(x, "replyTime", value.asInstanceOf[js.Any])
     
     inline def setRoamingId(value: String): Self = StObject.set(x, "roamingId", value.asInstanceOf[js.Any])
     
     inline def setSensitivity(value: AppointmentSensitivity): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

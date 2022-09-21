@@ -14,12 +14,12 @@ trait InitiateDocumentVersionUploadRequest extends StObject {
   /**
     * The timestamp when the content of the document was originally created.
     */
-  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ContentCreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp when the content of the document was modified.
     */
-  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ContentModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The content type of the document.
@@ -59,11 +59,11 @@ object InitiateDocumentVersionUploadRequest {
     
     inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    inline def setContentCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentCreatedTimestamp(value: js.Date): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setContentCreatedTimestampUndefined: Self = StObject.set(x, "ContentCreatedTimestamp", js.undefined)
     
-    inline def setContentModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setContentModifiedTimestampUndefined: Self = StObject.set(x, "ContentModifiedTimestamp", js.undefined)
     

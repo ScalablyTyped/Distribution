@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for a single offline file annotation request.
-  */
 trait SchemaGoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse extends StObject {
   
   /**

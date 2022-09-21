@@ -31,7 +31,7 @@ object Delimiter {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value*))
     
     inline def setLocale(value: typings.dateFns.mod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ object injectWrapperMethodMod {
   val ^ : js.Any = js.native
   
   inline def injectWrapperMethod(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     methodName: String,
     fn: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectWrapperMethod")(wrapper.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]

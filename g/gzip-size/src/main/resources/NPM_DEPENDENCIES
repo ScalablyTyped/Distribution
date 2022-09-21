@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gzip-size" : "6.0.0"
+      "gzip-size" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gzip-size" : "6.0.0"
+      "gzip-size" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

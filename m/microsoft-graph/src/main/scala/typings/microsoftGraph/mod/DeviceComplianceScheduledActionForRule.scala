@@ -8,10 +8,16 @@ trait DeviceComplianceScheduledActionForRule
   extends StObject
      with Entity {
   
-  // Name of the rule which this scheduled action applies to.
+  /**
+    * Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of
+    * per rule, thus RuleName is always set to default value PasswordRequired.
+    */
   var ruleName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The list of scheduled action configurations for this compliance policy.
+  /**
+    * The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one
+    * block scheduled action.
+    */
   var scheduledActionConfigurations: js.UndefOr[NullableOption[js.Array[DeviceComplianceActionItem]]] = js.undefined
 }
 object DeviceComplianceScheduledActionForRule {
@@ -35,6 +41,6 @@ object DeviceComplianceScheduledActionForRule {
     
     inline def setScheduledActionConfigurationsUndefined: Self = StObject.set(x, "scheduledActionConfigurations", js.undefined)
     
-    inline def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value :_*))
+    inline def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value*))
   }
 }

@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The headers for the each of the metric column corresponding to the metrics
-  * requested in the pivots section of the response.
-  */
 trait SchemaPivotHeaderEntry extends StObject {
   
   /**
     * The name of the dimensions in the pivot response.
     */
-  var dimensionNames: js.UndefOr[js.Array[String]] = js.undefined
+  var dimensionNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The values for the dimensions in the pivot.
     */
-  var dimensionValues: js.UndefOr[js.Array[String]] = js.undefined
+  var dimensionValues: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The metric header for the metric in the pivot.
@@ -36,15 +32,19 @@ object SchemaPivotHeaderEntry {
     
     inline def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
     
+    inline def setDimensionNamesNull: Self = StObject.set(x, "dimensionNames", null)
+    
     inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
     
     inline def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
+    inline def setDimensionValuesNull: Self = StObject.set(x, "dimensionValues", null)
+    
     inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
     
     inline def setMetric(value: SchemaMetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

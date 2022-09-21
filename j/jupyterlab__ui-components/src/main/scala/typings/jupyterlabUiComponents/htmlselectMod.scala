@@ -14,14 +14,14 @@ object htmlselectMod {
   
   @JSImport("@jupyterlab/ui-components/lib/components/htmlselect", "HTMLSelect")
   @js.native
-  class HTMLSelect protected ()
-    extends Component[IHTMLSelectProps, js.Object, js.Any] {
+  open class HTMLSelect protected ()
+    extends Component[IHTMLSelectProps, js.Object, Any] {
     def this(props: IHTMLSelectProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IHTMLSelectProps, context: js.Any) = this()
+    def this(props: IHTMLSelectProps, context: Any) = this()
   }
   
   @JSImport("@jupyterlab/ui-components/lib/components/htmlselect", "HTML_SELECT_CLASS")
@@ -66,7 +66,7 @@ object htmlselectMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (String | Double | IOptionProps)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (String | Double | IOptionProps)*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   

@@ -1,6 +1,5 @@
 package typings.sumoLogger
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object anon {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var timestamp: js.UndefOr[js.Date] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -29,7 +28,7 @@ object anon {
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       

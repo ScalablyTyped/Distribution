@@ -51,7 +51,7 @@ object ServiceWorkerVersion {
     
     inline def setControlledClientsUndefined: Self = StObject.set(x, "controlledClients", js.undefined)
     
-    inline def setControlledClientsVarargs(value: TargetID*): Self = StObject.set(x, "controlledClients", js.Array(value :_*))
+    inline def setControlledClientsVarargs(value: TargetID*): Self = StObject.set(x, "controlledClients", js.Array(value*))
     
     inline def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     

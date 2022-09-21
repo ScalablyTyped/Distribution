@@ -16,9 +16,9 @@ trait AngularFireAuth extends StObject {
     * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
     */
   @JSName("$authAnonymously")
-  def $authAnonymously(): IPromise[js.Any] = js.native
+  def $authAnonymously(): IPromise[Any] = js.native
   @JSName("$authAnonymously")
-  def $authAnonymously(options: js.Object): IPromise[js.Any] = js.native
+  def $authAnonymously(options: js.Object): IPromise[Any] = js.native
   
   /**
     * Authenticates the Firebase reference with a custom authentication token.
@@ -31,9 +31,9 @@ trait AngularFireAuth extends StObject {
     * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
     */
   @JSName("$authWithCustomToken")
-  def $authWithCustomToken(authToken: String): IPromise[js.Any] = js.native
+  def $authWithCustomToken(authToken: String): IPromise[Any] = js.native
   @JSName("$authWithCustomToken")
-  def $authWithCustomToken(authToken: String, options: js.Object): IPromise[js.Any] = js.native
+  def $authWithCustomToken(authToken: String, options: js.Object): IPromise[Any] = js.native
   
   /**
     * Authenticates the Firebase reference with the OAuth popup flow.
@@ -45,9 +45,9 @@ trait AngularFireAuth extends StObject {
     * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
     */
   @JSName("$authWithOAuthPopup")
-  def $authWithOAuthPopup(provider: String): IPromise[js.Any] = js.native
+  def $authWithOAuthPopup(provider: String): IPromise[Any] = js.native
   @JSName("$authWithOAuthPopup")
-  def $authWithOAuthPopup(provider: String, options: js.Object): IPromise[js.Any] = js.native
+  def $authWithOAuthPopup(provider: String, options: js.Object): IPromise[Any] = js.native
   
   /**
     * Authenticates the Firebase reference with the OAuth redirect flow.
@@ -59,14 +59,14 @@ trait AngularFireAuth extends StObject {
     * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
     */
   @JSName("$authWithOAuthRedirect")
-  def $authWithOAuthRedirect(provider: String): IPromise[js.Any] = js.native
+  def $authWithOAuthRedirect(provider: String): IPromise[Any] = js.native
   @JSName("$authWithOAuthRedirect")
-  def $authWithOAuthRedirect(provider: String, options: js.Object): IPromise[js.Any] = js.native
+  def $authWithOAuthRedirect(provider: String, options: js.Object): IPromise[Any] = js.native
   
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: String, credentials: String): IPromise[js.Any] = js.native
+  def $authWithOAuthToken(provider: String, credentials: String): IPromise[Any] = js.native
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: String, credentials: String, options: js.Object): IPromise[js.Any] = js.native
+  def $authWithOAuthToken(provider: String, credentials: String, options: js.Object): IPromise[Any] = js.native
   /**
     * Authenticates the Firebase reference with an OAuth token.
     *
@@ -79,9 +79,9 @@ trait AngularFireAuth extends StObject {
     * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
     */
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: String, credentials: js.Object): IPromise[js.Any] = js.native
+  def $authWithOAuthToken(provider: String, credentials: js.Object): IPromise[Any] = js.native
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: String, credentials: js.Object, options: js.Object): IPromise[js.Any] = js.native
+  def $authWithOAuthToken(provider: String, credentials: js.Object, options: js.Object): IPromise[Any] = js.native
   
   /**
     * Authenticates the Firebase reference with an email/password user.
@@ -94,13 +94,13 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$authWithPassword")
   def $authWithPassword(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ Any
+  ): IPromise[Any] = js.native
   @JSName("$authWithPassword")
   def $authWithPassword(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any,
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ Any,
     options: js.Object
-  ): IPromise[js.Any] = js.native
+  ): IPromise[Any] = js.native
   
   /**
     * Changes the email for an email/password user.
@@ -111,8 +111,8 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$changeEmail")
   def $changeEmail(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangeEmailCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangeEmailCredentials */ Any
+  ): IPromise[Any] = js.native
   
   /**
     * Changes the password for an email/password user.
@@ -123,8 +123,8 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$changePassword")
   def $changePassword(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangePasswordCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangePasswordCredentials */ Any
+  ): IPromise[Any] = js.native
   
   /**
     * Creates a new email/password user. Note that this function only creates the user, if you
@@ -137,8 +137,8 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$createUser")
   def $createUser(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ Any
+  ): IPromise[Any] = js.native
   
   /**
     * Synchronously retrieves the current authentication data.
@@ -146,7 +146,7 @@ trait AngularFireAuth extends StObject {
     * @return {Object} The client's authentication data.
     */
   @JSName("$getAuth")
-  def $getAuth(): js.Any = js.native
+  def $getAuth(): Any = js.native
   
   /**
     * Asynchronously fires the provided callback with the current authentication data every time
@@ -163,7 +163,7 @@ trait AngularFireAuth extends StObject {
   @JSName("$onAuth")
   def $onAuth(callback: js.Function): js.Function = js.native
   @JSName("$onAuth")
-  def $onAuth(callback: js.Function, context: js.Any): js.Function = js.native
+  def $onAuth(callback: js.Function, context: Any): js.Function = js.native
   
   /**
     * Removes an email/password user.
@@ -173,8 +173,8 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$removeUser")
   def $removeUser(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ Any
+  ): IPromise[Any] = js.native
   
   /**
     * Utility method which can be used in a route's resolve() method to require that a route has
@@ -184,7 +184,7 @@ trait AngularFireAuth extends StObject {
     * state or rejected if the client is not authenticated.
     */
   @JSName("$requireAuth")
-  def $requireAuth(): IPromise[js.Any] = js.native
+  def $requireAuth(): IPromise[Any] = js.native
   
   /**
     * Sends a password reset email to an email/password user.
@@ -195,8 +195,8 @@ trait AngularFireAuth extends StObject {
     */
   @JSName("$resetPassword")
   def $resetPassword(
-    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseResetPasswordCredentials */ js.Any
-  ): IPromise[js.Any] = js.native
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseResetPasswordCredentials */ Any
+  ): IPromise[Any] = js.native
   
   /**
     * Unauthenticates the Firebase reference.
@@ -212,5 +212,5 @@ trait AngularFireAuth extends StObject {
     * state, which will be null if the client is not authenticated.
     */
   @JSName("$waitForAuth")
-  def $waitForAuth(): IPromise[js.Any] = js.native
+  def $waitForAuth(): IPromise[Any] = js.native
 }

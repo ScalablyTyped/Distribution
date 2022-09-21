@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.FileProperties.BasicProperties
@@ -16,7 +15,7 @@ trait IStorageItem extends StObject {
   var attributes: FileAttributes = js.native
   
   /** Gets the date and time when the current item was created. */
-  var dateCreated: Date = js.native
+  var dateCreated: js.Date = js.native
   
   /**
     * Deletes the current item.

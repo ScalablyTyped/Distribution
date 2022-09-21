@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-imgix", JSImport.Default)
 @js.native
-class default ()
-  extends Component[SharedImigixAndSourceProps, js.Object, js.Any]
+open class default ()
+  extends Component[SharedImgixAndSourceProps, js.Object, Any]

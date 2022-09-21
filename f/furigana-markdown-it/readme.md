@@ -10,10 +10,10 @@ Furigana extension for markdown-it.
 | ------------------ | :-------------: |
 | Full name          | furigana-markdown-it |
 | Keywords           | markdown-it, markdown, furigana |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 502 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 94.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/iltrof/furigana-markdown-it#readme)

@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +29,30 @@ trait ResponseReceivedExtraInfoEvent extends StObject {
     * Request identifier. Used to match this information to another responseReceived event.
     */
   var requestId: RequestId
+  
+  /**
+    * The IP address space of the resource. The address space can only be determined once the transport
+    * established the connection, so we can't send it in `requestWillBeSentExtraInfo`.
+    */
+  var resourceIPAddressSpace: IPAddressSpace
+  
+  /**
+    * The status code of the response. This is useful in cases the request failed and no responseReceived
+    * event is triggered, which is the case for, e.g., CORS errors. This is also the correct status code
+    * for cached requests, where the status in responseReceived is a 200 and this will be 304.
+    */
+  var statusCode: integer
 }
 object ResponseReceivedExtraInfoEvent {
   
-  inline def apply(blockedCookies: js.Array[BlockedSetCookieWithReason], headers: Headers, requestId: RequestId): ResponseReceivedExtraInfoEvent = {
-    val __obj = js.Dynamic.literal(blockedCookies = blockedCookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  inline def apply(
+    blockedCookies: js.Array[BlockedSetCookieWithReason],
+    headers: Headers,
+    requestId: RequestId,
+    resourceIPAddressSpace: IPAddressSpace,
+    statusCode: integer
+  ): ResponseReceivedExtraInfoEvent = {
+    val __obj = js.Dynamic.literal(blockedCookies = blockedCookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], resourceIPAddressSpace = resourceIPAddressSpace.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseReceivedExtraInfoEvent]
   }
   
@@ -40,7 +60,7 @@ object ResponseReceivedExtraInfoEvent {
     
     inline def setBlockedCookies(value: js.Array[BlockedSetCookieWithReason]): Self = StObject.set(x, "blockedCookies", value.asInstanceOf[js.Any])
     
-    inline def setBlockedCookiesVarargs(value: BlockedSetCookieWithReason*): Self = StObject.set(x, "blockedCookies", js.Array(value :_*))
+    inline def setBlockedCookiesVarargs(value: BlockedSetCookieWithReason*): Self = StObject.set(x, "blockedCookies", js.Array(value*))
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
@@ -49,5 +69,9 @@ object ResponseReceivedExtraInfoEvent {
     inline def setHeadersTextUndefined: Self = StObject.set(x, "headersText", js.undefined)
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceIPAddressSpace(value: IPAddressSpace): Self = StObject.set(x, "resourceIPAddressSpace", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCode(value: integer): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

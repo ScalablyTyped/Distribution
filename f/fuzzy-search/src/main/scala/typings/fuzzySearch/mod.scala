@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("fuzzy-search", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object | String */] protected ()
+  open class ^[T /* <: js.Object | String */] protected ()
     extends StObject
        with FuzzySearch[T] {
     def this(haystack: js.Array[T]) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.InvocationTypeArgumentInferenceContext")
 @js.native
-class InvocationTypeArgumentInferenceContext protected ()
+open class InvocationTypeArgumentInferenceContext protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.InvocationTypeArgumentInferenceContext {
   def this(

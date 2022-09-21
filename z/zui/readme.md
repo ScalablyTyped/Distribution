@@ -10,10 +10,10 @@ Typings are for version 1.7
 | ------------------ | :-------------: |
 | Full name          | zui |
 | Keywords           | css, js, less, html5, responsive, front-end, framework, web |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 1790 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 230.33333333333334 |
+| # stars            | 2520.0 |
 
 ## Links
 - [Homepage](http://openzui.com)

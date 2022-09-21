@@ -62,6 +62,11 @@ object ptMod {
     def cat: js.UndefOr[CustomLocale] = js.native
     inline def cat_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cat")(x.asInstanceOf[js.Any])
     
+    @JSImport("flatpickr/dist/l10n/pt", "default.ckb")
+    @js.native
+    def ckb: js.UndefOr[CustomLocale] = js.native
+    inline def ckb_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ckb")(x.asInstanceOf[js.Any])
+    
     @JSImport("flatpickr/dist/l10n/pt", "default.cs")
     @js.native
     def cs: js.UndefOr[CustomLocale] = js.native
@@ -149,6 +154,11 @@ object ptMod {
     def hu: js.UndefOr[CustomLocale] = js.native
     inline def hu_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hu")(x.asInstanceOf[js.Any])
     
+    @JSImport("flatpickr/dist/l10n/pt", "default.hy")
+    @js.native
+    def hy: js.UndefOr[CustomLocale] = js.native
+    inline def hy_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hy")(x.asInstanceOf[js.Any])
+    
     @JSImport("flatpickr/dist/l10n/pt", "default.id")
     @js.native
     def id: js.UndefOr[CustomLocale] = js.native
@@ -223,6 +233,11 @@ object ptMod {
     @js.native
     def nl: js.UndefOr[CustomLocale] = js.native
     inline def nl_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nl")(x.asInstanceOf[js.Any])
+    
+    @JSImport("flatpickr/dist/l10n/pt", "default.nn")
+    @js.native
+    def nn: js.UndefOr[CustomLocale] = js.native
+    inline def nn_=(x: js.UndefOr[CustomLocale]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nn")(x.asInstanceOf[js.Any])
     
     @JSImport("flatpickr/dist/l10n/pt", "default.no")
     @js.native

@@ -17,6 +17,11 @@ trait Profile extends StObject {
   var AddressBookArn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * Whether data retention of the profile is enabled.
+    */
+  var DataRetentionOptIn: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The distance unit of a room profile.
     */
   var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.undefined
@@ -92,6 +97,10 @@ object Profile {
     inline def setAddressBookArnUndefined: Self = StObject.set(x, "AddressBookArn", js.undefined)
     
     inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    
+    inline def setDataRetentionOptIn(value: Boolean): Self = StObject.set(x, "DataRetentionOptIn", value.asInstanceOf[js.Any])
+    
+    inline def setDataRetentionOptInUndefined: Self = StObject.set(x, "DataRetentionOptIn", js.undefined)
     
     inline def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "DistanceUnit", value.asInstanceOf[js.Any])
     

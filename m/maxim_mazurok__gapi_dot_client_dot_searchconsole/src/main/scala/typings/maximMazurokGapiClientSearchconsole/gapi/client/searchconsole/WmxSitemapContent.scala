@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WmxSitemapContent extends StObject {
   
-  /** The number of URLs from the sitemap that were indexed (of the content type). */
+  /** *Deprecated; do not use.* */
   var indexed: js.UndefOr[String] = js.undefined
   
   /** The number of URLs in the sitemap (of the content type). */

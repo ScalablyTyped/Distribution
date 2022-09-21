@@ -2,18 +2,13 @@ package typings.libphonenumberJs
 
 import typings.libphonenumberJs.typesMod.CountryCode
 import typings.libphonenumberJs.typesMod.NumberFormat
+import typings.libphonenumberJs.typesMod.ValidatePhoneNumberLengthResult
 import typings.libphonenumberJs.typesMod._NumberType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libphonenumberJsStrings {
-  
-  @js.native
-  sealed trait `001`
-    extends StObject
-       with CountryCode
-  inline def `001`: `001` = "001".asInstanceOf[`001`]
   
   @js.native
   sealed trait AC
@@ -346,6 +341,14 @@ object libphonenumberJsStrings {
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
+  sealed trait CarrierCode extends StObject
+  inline def CarrierCode: CarrierCode = "CarrierCode".asInstanceOf[CarrierCode]
+  
+  @js.native
+  sealed trait CountryCallingCode extends StObject
+  inline def CountryCallingCode: CountryCallingCode = "CountryCallingCode".asInstanceOf[CountryCallingCode]
+  
+  @js.native
   sealed trait DE
     extends StObject
        with CountryCode
@@ -380,6 +383,10 @@ object libphonenumberJsStrings {
     extends StObject
        with CountryCode
   inline def DZ: DZ = "DZ".asInstanceOf[DZ]
+  
+  @js.native
+  sealed trait E164Number extends StObject
+  inline def E164Number: E164Number = "E164Number".asInstanceOf[E164Number]
   
   @js.native
   sealed trait EC
@@ -428,6 +435,10 @@ object libphonenumberJsStrings {
     extends StObject
        with CountryCode
   inline def ET: ET = "ET".asInstanceOf[ET]
+  
+  @js.native
+  sealed trait Extension extends StObject
+  inline def Extension: Extension = "Extension".asInstanceOf[Extension]
   
   @js.native
   sealed trait FI
@@ -658,6 +669,18 @@ object libphonenumberJsStrings {
   inline def INTERNATIONAL: INTERNATIONAL = "INTERNATIONAL".asInstanceOf[INTERNATIONAL]
   
   @js.native
+  sealed trait INVALID_COUNTRY
+    extends StObject
+       with ValidatePhoneNumberLengthResult
+  inline def INVALID_COUNTRY: INVALID_COUNTRY = "INVALID_COUNTRY".asInstanceOf[INVALID_COUNTRY]
+  
+  @js.native
+  sealed trait INVALID_LENGTH
+    extends StObject
+       with ValidatePhoneNumberLengthResult
+  inline def INVALID_LENGTH: INVALID_LENGTH = "INVALID_LENGTH".asInstanceOf[INVALID_LENGTH]
+  
+  @js.native
   sealed trait IO
     extends StObject
        with CountryCode
@@ -686,12 +709,6 @@ object libphonenumberJsStrings {
     extends StObject
        with CountryCode
   inline def IT: IT = "IT".asInstanceOf[IT]
-  
-  @js.native
-  sealed trait International_
-    extends StObject
-       with NumberFormat
-  inline def International_ : International_ = "International".asInstanceOf[International_]
   
   @js.native
   sealed trait JE
@@ -1048,6 +1065,12 @@ object libphonenumberJsStrings {
   inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
+  sealed trait NOT_A_NUMBER
+    extends StObject
+       with ValidatePhoneNumberLengthResult
+  inline def NOT_A_NUMBER: NOT_A_NUMBER = "NOT_A_NUMBER".asInstanceOf[NOT_A_NUMBER]
+  
+  @js.native
   sealed trait NP
     extends StObject
        with CountryCode
@@ -1072,10 +1095,8 @@ object libphonenumberJsStrings {
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
-  sealed trait National_
-    extends StObject
-       with NumberFormat
-  inline def National_ : National_ = "National".asInstanceOf[National_]
+  sealed trait NationalNumber extends StObject
+  inline def NationalNumber: NationalNumber = "NationalNumber".asInstanceOf[NationalNumber]
   
   @js.native
   sealed trait OM
@@ -1426,6 +1447,18 @@ object libphonenumberJsStrings {
   inline def TOLL_FREE: TOLL_FREE = "TOLL_FREE".asInstanceOf[TOLL_FREE]
   
   @js.native
+  sealed trait TOO_LONG
+    extends StObject
+       with ValidatePhoneNumberLengthResult
+  inline def TOO_LONG: TOO_LONG = "TOO_LONG".asInstanceOf[TOO_LONG]
+  
+  @js.native
+  sealed trait TOO_SHORT
+    extends StObject
+       with ValidatePhoneNumberLengthResult
+  inline def TOO_SHORT: TOO_SHORT = "TOO_SHORT".asInstanceOf[TOO_SHORT]
+  
+  @js.native
   sealed trait TR
     extends StObject
        with CountryCode
@@ -1546,6 +1579,10 @@ object libphonenumberJsStrings {
   inline def VU: VU = "VU".asInstanceOf[VU]
   
   @js.native
+  sealed trait Verticalline extends StObject
+  inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @js.native
   sealed trait WF
     extends StObject
        with CountryCode
@@ -1592,4 +1629,8 @@ object libphonenumberJsStrings {
     extends StObject
        with CountryCode
   inline def ZW: ZW = "ZW".asInstanceOf[ZW]
+  
+  @js.native
+  sealed trait `[]` extends StObject
+  inline def `[]`: `[]` = "[]".asInstanceOf[`[]`]
 }

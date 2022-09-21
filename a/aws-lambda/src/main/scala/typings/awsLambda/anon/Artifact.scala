@@ -24,7 +24,7 @@ trait Artifact extends StObject {
   
   var phases: js.Array[Durationinseconds]
   
-  var `project-file-system-locations`: js.Array[js.Any]
+  var `project-file-system-locations`: js.Array[Any]
   
   var `queued-timeout-in-minutes`: Double
   
@@ -46,7 +46,7 @@ object Artifact {
     initiator: String,
     logs: Deeplink,
     phases: js.Array[Durationinseconds],
-    `project-file-system-locations`: js.Array[js.Any],
+    `project-file-system-locations`: js.Array[Any],
     `queued-timeout-in-minutes`: Double,
     source: Buildspec,
     `source-version`: String,
@@ -83,11 +83,11 @@ object Artifact {
     
     inline def setPhases(value: js.Array[Durationinseconds]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
-    inline def setPhasesVarargs(value: Durationinseconds*): Self = StObject.set(x, "phases", js.Array(value :_*))
+    inline def setPhasesVarargs(value: Durationinseconds*): Self = StObject.set(x, "phases", js.Array(value*))
     
-    inline def `setProject-file-system-locations`(value: js.Array[js.Any]): Self = StObject.set(x, "project-file-system-locations", value.asInstanceOf[js.Any])
+    inline def `setProject-file-system-locations`(value: js.Array[Any]): Self = StObject.set(x, "project-file-system-locations", value.asInstanceOf[js.Any])
     
-    inline def `setProject-file-system-locationsVarargs`(value: js.Any*): Self = StObject.set(x, "project-file-system-locations", js.Array(value :_*))
+    inline def `setProject-file-system-locationsVarargs`(value: Any*): Self = StObject.set(x, "project-file-system-locations", js.Array(value*))
     
     inline def `setQueued-timeout-in-minutes`(value: Double): Self = StObject.set(x, "queued-timeout-in-minutes", value.asInstanceOf[js.Any])
     

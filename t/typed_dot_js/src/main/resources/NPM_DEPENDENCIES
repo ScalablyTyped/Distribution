@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typed.js" : "2.0.11"
+      "typed.js" : "2.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "typed.js" : "2.0.11"
+      "typed.js" : "2.0.12"
     }
   ],
   "compile-devDependencies" : [

@@ -13,7 +13,8 @@ trait StreamLayerProperties
      with LayerProperties
      with ScaleRangeLayerProperties
      with TemporalLayerProperties
-     with BlendLayerProperties {
+     with BlendLayerProperties
+     with FeatureEffectLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -21,6 +22,13 @@ trait StreamLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#customParameters)
+    */
+  var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * The SQL where clause used to filter features based on their attributes.
@@ -37,7 +45,7 @@ trait StreamLayerProperties
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */
@@ -81,12 +89,16 @@ trait StreamLayerProperties
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#legendEnabled)
     */
@@ -116,6 +128,8 @@ trait StreamLayerProperties
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupEnabled)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
@@ -144,6 +158,8 @@ trait StreamLayerProperties
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
@@ -153,7 +169,7 @@ trait StreamLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * The spatial reference of the layer.
@@ -161,6 +177,15 @@ trait StreamLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
+  /**
+    * The minimum rate (ms) at which to poll for updates over the websocket connection.
+    *
+    * @default 300
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateInterval)
+    */
+  var updateInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the stream service.
@@ -189,6 +214,10 @@ object StreamLayerProperties {
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
+    
     inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
@@ -209,7 +238,7 @@ object StreamLayerProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setGeometryDefinition(value: ExtentProperties): Self = StObject.set(x, "geometryDefinition", value.asInstanceOf[js.Any])
     
@@ -223,7 +252,7 @@ object StreamLayerProperties {
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
@@ -265,13 +294,17 @@ object StreamLayerProperties {
     
     inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

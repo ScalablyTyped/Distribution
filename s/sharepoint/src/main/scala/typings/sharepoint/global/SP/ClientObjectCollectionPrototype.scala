@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientObjectCollectionPrototype")
 @js.native
-class ClientObjectCollectionPrototype ()
+open class ClientObjectCollectionPrototype ()
   extends StObject
      with typings.sharepoint.SP.ClientObjectCollectionPrototype

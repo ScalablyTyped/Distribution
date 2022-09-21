@@ -117,7 +117,7 @@ object IPalette {
     
     inline def setContrastDarkColorsUndefined: Self = StObject.set(x, "contrastDarkColors", js.undefined)
     
-    inline def setContrastDarkColorsVarargs(value: String*): Self = StObject.set(x, "contrastDarkColors", js.Array(value :_*))
+    inline def setContrastDarkColorsVarargs(value: String*): Self = StObject.set(x, "contrastDarkColors", js.Array(value*))
     
     inline def setContrastDefaultColor(value: String): Self = StObject.set(x, "contrastDefaultColor", value.asInstanceOf[js.Any])
     
@@ -127,12 +127,12 @@ object IPalette {
     
     inline def setContrastLightColorsUndefined: Self = StObject.set(x, "contrastLightColors", js.undefined)
     
-    inline def setContrastLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastLightColors", js.Array(value :_*))
+    inline def setContrastLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastLightColors", js.Array(value*))
     
     inline def setContrastStrongLightColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastStrongLightColors", value.asInstanceOf[js.Any])
     
     inline def setContrastStrongLightColorsUndefined: Self = StObject.set(x, "contrastStrongLightColors", js.undefined)
     
-    inline def setContrastStrongLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastStrongLightColors", js.Array(value :_*))
+    inline def setContrastStrongLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastStrongLightColors", js.Array(value*))
   }
 }

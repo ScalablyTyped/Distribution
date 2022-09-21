@@ -1,6 +1,5 @@
 package typings.dropboxjs.Dropbox
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object File {
   
   trait CopyReference extends StObject {
     
-    var expiresAt: Date
+    var expiresAt: js.Date
     
     var tag: String
     
@@ -17,14 +16,14 @@ object File {
   }
   object CopyReference {
     
-    inline def apply(expiresAt: Date, tag: String, toJSON: () => js.Object): CopyReference = {
+    inline def apply(expiresAt: js.Date, tag: String, toJSON: () => js.Object): CopyReference = {
       val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[CopyReference]
     }
     
     extension [Self <: CopyReference](x: Self) {
       
-      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
       inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
@@ -34,7 +33,7 @@ object File {
   
   trait ShareUrl extends StObject {
     
-    var expiresAt: Date
+    var expiresAt: js.Date
     
     var isDirect: Boolean
     
@@ -46,14 +45,14 @@ object File {
   }
   object ShareUrl {
     
-    inline def apply(expiresAt: Date, isDirect: Boolean, isPreview: Boolean, toJSON: () => js.Object, url: String): ShareUrl = {
+    inline def apply(expiresAt: js.Date, isDirect: Boolean, isPreview: Boolean, toJSON: () => js.Object, url: String): ShareUrl = {
       val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], isDirect = isDirect.asInstanceOf[js.Any], isPreview = isPreview.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareUrl]
     }
     
     extension [Self <: ShareUrl](x: Self) {
       
-      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
       inline def setIsDirect(value: Boolean): Self = StObject.set(x, "isDirect", value.asInstanceOf[js.Any])
       
@@ -67,7 +66,7 @@ object File {
   
   trait Stat extends StObject {
     
-    var clientModifiedAt: Date
+    var clientModifiedAt: js.Date
     
     var contentHash: String
     
@@ -85,7 +84,7 @@ object File {
     
     var mimeType: String
     
-    var modifiedAt: Date
+    var modifiedAt: js.Date
     
     var name: String
     
@@ -102,7 +101,7 @@ object File {
   object Stat {
     
     inline def apply(
-      clientModifiedAt: Date,
+      clientModifiedAt: js.Date,
       contentHash: String,
       hasThumbnail: Boolean,
       humanSize: String,
@@ -111,7 +110,7 @@ object File {
       isFolder: Boolean,
       isRemoved: Boolean,
       mimeType: String,
-      modifiedAt: Date,
+      modifiedAt: js.Date,
       name: String,
       path: String,
       size: Double,
@@ -125,7 +124,7 @@ object File {
     
     extension [Self <: Stat](x: Self) {
       
-      inline def setClientModifiedAt(value: Date): Self = StObject.set(x, "clientModifiedAt", value.asInstanceOf[js.Any])
+      inline def setClientModifiedAt(value: js.Date): Self = StObject.set(x, "clientModifiedAt", value.asInstanceOf[js.Any])
       
       inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
       
@@ -143,7 +142,7 @@ object File {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      inline def setModifiedAt(value: Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: js.Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

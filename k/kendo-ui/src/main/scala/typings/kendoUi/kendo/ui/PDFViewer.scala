@@ -14,14 +14,14 @@ trait PDFViewer
   
   def execute(): Unit = js.native
   
-  def fromFile(): Unit = js.native
+  def fromFile(file: Any): Unit = js.native
   
   def loadPage(): Unit = js.native
   
   @JSName("options")
   var options_PDFViewer: PDFViewerOptions = js.native
   
-  def setOptions(): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

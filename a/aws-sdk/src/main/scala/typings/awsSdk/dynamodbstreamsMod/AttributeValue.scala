@@ -22,7 +22,7 @@ trait AttributeValue extends StObject {
   var BS: js.UndefOr[BinarySetAttributeValue] = js.undefined
   
   /**
-    * An attribute of type List. For example:  "L": [ {"S": "Cookies"} , {"S": "Coffee"}, {"N", "3.14159"}] 
+    * An attribute of type List. For example:  "L": [ {"S": "Cookies"} , {"S": "Coffee"}, {"N": "3.14159"}] 
     */
   var L: js.UndefOr[ListAttributeValue] = js.undefined
   
@@ -75,7 +75,7 @@ object AttributeValue {
     
     inline def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
     
-    inline def setBSVarargs(value: BinaryAttributeValue*): Self = StObject.set(x, "BS", js.Array(value :_*))
+    inline def setBSVarargs(value: BinaryAttributeValue*): Self = StObject.set(x, "BS", js.Array(value*))
     
     inline def setBUndefined: Self = StObject.set(x, "B", js.undefined)
     
@@ -83,7 +83,7 @@ object AttributeValue {
     
     inline def setLUndefined: Self = StObject.set(x, "L", js.undefined)
     
-    inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
+    inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value*))
     
     inline def setM(value: MapAttributeValue): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object AttributeValue {
     
     inline def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
     
-    inline def setNSVarargs(value: NumberAttributeValue*): Self = StObject.set(x, "NS", js.Array(value :_*))
+    inline def setNSVarargs(value: NumberAttributeValue*): Self = StObject.set(x, "NS", js.Array(value*))
     
     inline def setNULL(value: NullAttributeValue): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object AttributeValue {
     
     inline def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
     
-    inline def setSSVarargs(value: StringAttributeValue*): Self = StObject.set(x, "SS", js.Array(value :_*))
+    inline def setSSVarargs(value: StringAttributeValue*): Self = StObject.set(x, "SS", js.Array(value*))
     
     inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }

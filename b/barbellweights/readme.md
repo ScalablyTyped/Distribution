@@ -10,10 +10,10 @@ Calculates the warmup sets, reps and plates for barbell lifts
 | ------------------ | :-------------: |
 | Full name          | barbellweights |
 | Keywords           | barbell, weightlifting, powerlifting, squats, deadlift, press, exercise |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 631 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 67.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/toddhibbs/barbellweight#readme)

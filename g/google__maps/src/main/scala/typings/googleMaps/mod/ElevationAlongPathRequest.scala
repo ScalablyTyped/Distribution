@@ -29,7 +29,7 @@ object ElevationAlongPathRequest {
     
     inline def setPath(value: js.Array[LatLng] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
   }

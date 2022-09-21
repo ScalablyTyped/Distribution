@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Grid")
 @js.native
-class Grid protected ()
+open class Grid protected ()
   extends StObject
      with typings.ejWebAll.ej.Grid {
   def this(element: JQuery) = this()
@@ -171,8 +171,8 @@ object Grid {
   /* static member */
   @JSGlobal("ej.Grid.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Grid.PrintMode")
   @js.native

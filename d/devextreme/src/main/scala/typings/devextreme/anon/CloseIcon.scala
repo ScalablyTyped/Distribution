@@ -1,38 +1,47 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.`left bottom`
-import typings.devextreme.devextremeStrings.`left top`
-import typings.devextreme.devextremeStrings.`right bottom`
-import typings.devextreme.devextremeStrings.`right top`
-import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.bottom
-import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.down
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.devextremeStrings.top
-import typings.devextreme.devextremeStrings.up
-import typings.devextreme.mod.DevExpress.positionConfig
+import typings.devextreme.mod.DevExpress.PositionConfig
+import typings.devextreme.mod.DevExpress.common.PositionAlignment
+import typings.devextreme.mod.DevExpress.core.FloatingActionButtonDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CloseIcon extends StObject {
   
+  /**
+    * Specifies the icon the FAB displays when the speed dial is opened.
+    */
   var closeIcon: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[auto | up | down] = js.undefined
+  /**
+    * Specifies the direction in which to open the speed dial menu.
+    */
+  var direction: js.UndefOr[FloatingActionButtonDirection] = js.undefined
   
+  /**
+    * Specifies the icon the FAB displays when the speed dial is closed.
+    */
   var icon: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the text label displayed inside the FAB.
+    */
   var label: js.UndefOr[String] = js.undefined
   
+  /**
+    * Limits the number of speed dial actions.
+    */
   var maxSpeedDialActionCount: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[
-    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-  ] = js.undefined
+  /**
+    * Positions the FAB on the screen.
+    */
+  var position: js.UndefOr[PositionAlignment | PositionConfig | js.Function] = js.undefined
   
+  /**
+    * If true, the background should be shaded when the speed dial menu is open.
+    */
   var shading: js.UndefOr[Boolean] = js.undefined
 }
 object CloseIcon {
@@ -48,7 +57,7 @@ object CloseIcon {
     
     inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
-    inline def setDirection(value: auto | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: FloatingActionButtonDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
@@ -64,9 +73,7 @@ object CloseIcon {
     
     inline def setMaxSpeedDialActionCountUndefined: Self = StObject.set(x, "maxSpeedDialActionCount", js.undefined)
     
-    inline def setPosition(
-      value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositionAlignment | PositionConfig | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

@@ -8,7 +8,7 @@ object symlinkMod {
   
   @JSImport("mock-fs/lib/symlink", JSImport.Namespace)
   @js.native
-  class ^ () extends SymbolicLink
+  open class ^ () extends SymbolicLink
   
   @js.native
   trait SymbolicLink

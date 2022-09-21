@@ -13,14 +13,14 @@ object mod extends Shortcut {
   @js.native
   val ^ : CloneableFn = js.native
   
-  type Cloneable[T /* <: Readable */] = T & Clone
+  type Cloneable[T /* <: Readable */] = T & Clone[T]
   
   @js.native
   trait CloneableFn extends StObject {
     
     def apply[T /* <: Readable */](x: T): Cloneable[T] = js.native
     
-    def isCloneable(x: Readable): /* is cloneable-readable.anon.CloneableReadable */ Boolean = js.native
+    def isCloneable(x: Readable): /* is cloneable-readable.cloneable-readable.Cloneable<node.stream.Readable> */ Boolean = js.native
   }
   
   type _To = CloneableFn

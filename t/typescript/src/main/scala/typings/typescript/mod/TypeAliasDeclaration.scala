@@ -8,13 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeAliasDeclaration
   extends StObject
      with DeclarationStatement
-     with JSDocContainer
      with DeclarationWithTypeParameterChildren
      with HasJSDoc
+     with HasModifiers
      with HasType {
   
   @JSName("kind")
   val kind_TypeAliasDeclaration: typings.typescript.mod.SyntaxKind.TypeAliasDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_TypeAliasDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_TypeAliasDeclaration: Identifier = js.native

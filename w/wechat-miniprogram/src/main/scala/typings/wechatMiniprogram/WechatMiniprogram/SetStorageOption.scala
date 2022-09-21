@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetStorageOption extends StObject {
+trait SetStorageOption[T] extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[SetStorageCompleteCallback] = js.undefined
   
   /** 需要存储的内容。只支持原生类型、Date、及能够通过`JSON.stringify`序列化的对象。 */
-  var data: js.Any
+  var data: T
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[SetStorageFailCallback] = js.undefined
@@ -23,18 +23,18 @@ trait SetStorageOption extends StObject {
 }
 object SetStorageOption {
   
-  inline def apply(data: js.Any, key: String): SetStorageOption = {
+  inline def apply[T](data: T, key: String): SetStorageOption[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SetStorageOption]
+    __obj.asInstanceOf[SetStorageOption[T]]
   }
   
-  extension [Self <: SetStorageOption](x: Self) {
+  extension [Self <: SetStorageOption[?], T](x: Self & SetStorageOption[T]) {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

@@ -10,13 +10,13 @@ trait MatchedString extends StObject {
   
   var matchedString: Unit
   
-  var pos: js.Any
+  var pos: Any
   
   var success: Boolean
 }
 object MatchedString {
   
-  inline def apply(incrementPos: Unit, matchedString: Unit, pos: js.Any, success: Boolean): MatchedString = {
+  inline def apply(incrementPos: Unit, matchedString: Unit, pos: Any, success: Boolean): MatchedString = {
     val __obj = js.Dynamic.literal(incrementPos = incrementPos.asInstanceOf[js.Any], matchedString = matchedString.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchedString]
   }
@@ -27,7 +27,7 @@ object MatchedString {
     
     inline def setMatchedString(value: Unit): Self = StObject.set(x, "matchedString", value.asInstanceOf[js.Any])
     
-    inline def setPos(value: js.Any): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Any): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

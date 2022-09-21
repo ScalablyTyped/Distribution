@@ -12,5 +12,5 @@ trait Autocomplete
   
   def escapeRegex(value: String): String = js.native
   
-  def filter(array: js.Any, term: String): js.Any = js.native
+  def filter(array: Any, term: String): Any = js.native
 }

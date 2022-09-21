@@ -1,24 +1,21 @@
 
 # Scala.js typings for is-admin
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
-Check if the process is running as Administrator on Windows
+Check if the process is running as administrator on Windows
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-admin |
 | Keywords           | admin, administrator, windows, win32, process, running, cmd, shell, command-line, check, detect, is, root |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 392655 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58660.666666666664 |
+| # stars            | 30.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/is-admin#readme)
-- [Bugs](https://github.com/sindresorhus/is-admin/issues)
-- [Repository](https://github.com/sindresorhus/is-admin)
 - [Npm](https://www.npmjs.com/package/is-admin)
     
 

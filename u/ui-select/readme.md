@@ -10,9 +10,9 @@ Typings are for version 0.19.8
 | Full name          | ui-select |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 4008892 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 423190.6666666667 |
+| # stars            | 3291.0 |
 
 ## Links
 - [Homepage](http://github.com/angular-ui/ui-select)

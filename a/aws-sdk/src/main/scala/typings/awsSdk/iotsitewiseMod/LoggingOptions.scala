@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggingOptions extends StObject {
   
   /**
-    * The AWS IoT SiteWise logging verbosity level.
+    * The IoT SiteWise logging verbosity level.
     */
   var level: LoggingLevel
 }

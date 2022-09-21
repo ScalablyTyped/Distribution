@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Aggregation of items by status code as of the specified date.
-  */
 trait SchemaCustomerIndexStats extends StObject {
   
   /**
-    * Date for which statistics were calculated.
+    * The date for which statistics were calculated.
     */
   var date: js.UndefOr[SchemaDate] = js.undefined
   
@@ -36,6 +33,6 @@ object SchemaCustomerIndexStats {
     
     inline def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
-    inline def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
+    inline def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value*))
   }
 }

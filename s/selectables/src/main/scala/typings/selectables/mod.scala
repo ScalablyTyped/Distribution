@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("selectables", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Selectables {
     def this(options: Options) = this()

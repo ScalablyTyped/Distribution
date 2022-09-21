@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * ListConnectionsResponse is the response to list peering states for the
-  * given service and consumer project.
-  */
 trait SchemaListConnectionsResponse extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaListConnectionsResponse {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value*))
   }
 }

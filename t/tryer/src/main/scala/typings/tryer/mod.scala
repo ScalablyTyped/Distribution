@@ -1,7 +1,6 @@
 package typings.tryer
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import typings.tryer.anon.ReadonlyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +22,7 @@ object mod extends Shortcut {
       * If action is not set, it defaults to an empty function.
       */
     var action: js.UndefOr[
-        js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])
+        js.Function0[js.Promise[Any]] | (js.Function1[/* done */ js.Function0[Unit], Any])
       ] = js.undefined
     
     /**
@@ -31,7 +30,7 @@ object mod extends Shortcut {
       * A function that will be called if limit falsey values are returned by when or until.
       * Defaults to an empty function.
       */
-    var fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var fail: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     /**
       * interval: The retry interval, in milliseconds.
@@ -77,15 +76,15 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAction(value: js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Function0[js.Promise[Any]] | (js.Function1[/* done */ js.Function0[Unit], Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
+      inline def setActionFunction0(value: () => js.Promise[Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
-      inline def setActionFunction1(value: /* done */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* done */ js.Function0[Unit] => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setFail(value: /* err */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: /* err */ js.Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
       inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       

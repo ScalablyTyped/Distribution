@@ -8,7 +8,7 @@ object batcherMod {
   
   @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher")
   @js.native
-  class Batcher[T] () extends StObject {
+  open class Batcher[T] () extends StObject {
     
     /**
       * Stores the variadic arguments to be later batched together.
@@ -17,24 +17,24 @@ object batcherMod {
       */
     def addArgsToBatch(args: SimpleStringifyable*): Unit = js.native
     
-    /* private */ var batchArgs: js.Any = js.native
+    /* private */ var batchArgs: Any = js.native
     
-    /* private */ var callback: js.Any = js.native
+    /* private */ var callback: Any = js.native
     
     def cancelOutstandingCallback(): Unit = js.native
     
-    /* private */ var currentObjects: js.Any = js.native
+    /* private */ var currentObjects: Any = js.native
     
-    /* private */ var done: js.Any = js.native
+    /* private */ var done: Any = js.native
     
-    /* private */ var getKey: js.Any = js.native
+    /* private */ var getKey: Any = js.native
     
     /**
       * Returns all the objects in the "current" set.
       */
     def getList(): js.Array[T] = js.native
     
-    /* private */ var handleIdleCallback: js.Any = js.native
+    /* private */ var handleIdleCallback: Any = js.native
     
     /**
       * Registers a callback to be invoked on the next idle frame. If a callback
@@ -47,9 +47,9 @@ object batcherMod {
       */
     def isDone(): Boolean = js.native
     
-    /* private */ var mapCurrentObjectKey: js.Any = js.native
+    /* private */ var mapCurrentObjectKey: Any = js.native
     
-    /* private */ var oldObjects: js.Any = js.native
+    /* private */ var oldObjects: Any = js.native
     
     /**
       * Compares the set of "batch" arguments to the "current" set. Creates any
@@ -66,30 +66,30 @@ object batcherMod {
       * Finally, the batcher determines if the batching is complete if the
       * "current" arguments match the "batch" arguments.
       */
-    def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T]): Unit = js.native
-    def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double): Unit = js.native
-    def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double, removeOldLimit: Double): Unit = js.native
+    def removeOldAddNew(callback: js.Function1[/* repeated */ Any, T]): Unit = js.native
+    def removeOldAddNew(callback: js.Function1[/* repeated */ Any, T], addNewLimit: Double): Unit = js.native
+    def removeOldAddNew(callback: js.Function1[/* repeated */ Any, T], addNewLimit: Double, removeOldLimit: Double): Unit = js.native
     def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
+      callback: js.Function1[/* repeated */ Any, T],
       addNewLimit: Double,
       removeOldLimit: Double,
       updateLimit: Double
     ): Unit = js.native
     def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
+      callback: js.Function1[/* repeated */ Any, T],
       addNewLimit: Double,
       removeOldLimit: Unit,
       updateLimit: Double
     ): Unit = js.native
-    def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Unit, removeOldLimit: Double): Unit = js.native
+    def removeOldAddNew(callback: js.Function1[/* repeated */ Any, T], addNewLimit: Unit, removeOldLimit: Double): Unit = js.native
     def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
+      callback: js.Function1[/* repeated */ Any, T],
       addNewLimit: Unit,
       removeOldLimit: Double,
       updateLimit: Double
     ): Unit = js.native
     def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
+      callback: js.Function1[/* repeated */ Any, T],
       addNewLimit: Unit,
       removeOldLimit: Unit,
       updateLimit: Double
@@ -104,11 +104,11 @@ object batcherMod {
     /**
       * Returns true of objects `a` and `b` have exactly the same keys.
       */
-    /* private */ var setHasSameKeys: js.Any = js.native
+    /* private */ var setHasSameKeys: Any = js.native
     
-    /* private */ var setKeysDifference: js.Any = js.native
+    /* private */ var setKeysDifference: Any = js.native
     
-    /* private */ var setKeysIntersection: js.Any = js.native
+    /* private */ var setKeysIntersection: Any = js.native
     
     /**
       * Compares the keys of A from B -- and performs an "intersection" or
@@ -119,7 +119,7 @@ object batcherMod {
       *
       * Returns an array of at most `limit` keys.
       */
-    /* private */ var setKeysOperation: js.Any = js.native
+    /* private */ var setKeysOperation: Any = js.native
     
     /**
       * Forcibly overwrites the current list of batched objects. Not recommended

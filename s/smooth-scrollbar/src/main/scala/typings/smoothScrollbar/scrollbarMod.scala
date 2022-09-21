@@ -194,7 +194,7 @@ object scrollbarMod {
     def update(): Unit = js.native
     
     def updatePluginOptions(pluginName: String): Unit = js.native
-    def updatePluginOptions(pluginName: String, options: js.Any): Unit = js.native
+    def updatePluginOptions(pluginName: String, options: Any): Unit = js.native
   }
   
   trait ScrollbarBounding extends StObject {
@@ -236,7 +236,7 @@ object scrollbarMod {
     
     var delegateTo: EventTarget | Null
     
-    var plugins: js.Any
+    var plugins: Any
     
     var renderByPixels: Boolean
     
@@ -250,7 +250,7 @@ object scrollbarMod {
       alwaysShowTracks: Boolean,
       continuousScrolling: Boolean,
       damping: Double,
-      plugins: js.Any,
+      plugins: Any,
       renderByPixels: Boolean,
       thumbMinSize: Double
     ): ScrollbarOptions = {
@@ -270,7 +270,7 @@ object scrollbarMod {
       
       inline def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
       
-      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
       

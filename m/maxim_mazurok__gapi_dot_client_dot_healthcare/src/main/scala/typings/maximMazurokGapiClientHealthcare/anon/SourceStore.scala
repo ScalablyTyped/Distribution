@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
-import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.DeidentifyFhirStoreRequest
+import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.DeidentifyDicomStoreRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +36,9 @@ trait SourceStore extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: DeidentifyFhirStoreRequest
+  var resource: DeidentifyDicomStoreRequest
   
-  /** Source FHIR store resource name. For example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. */
+  /** Source DICOM store resource name. For example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`. */
   var sourceStore: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait SourceStore extends StObject {
 }
 object SourceStore {
   
-  inline def apply(resource: DeidentifyFhirStoreRequest, sourceStore: String): SourceStore = {
+  inline def apply(resource: DeidentifyDicomStoreRequest, sourceStore: String): SourceStore = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], sourceStore = sourceStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceStore]
   }
@@ -92,7 +92,7 @@ object SourceStore {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: DeidentifyFhirStoreRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DeidentifyDicomStoreRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSourceStore(value: String): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SetWifiListOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 提供预设的 Wi-Fi 信息列表 */
   var wifiList: js.Array[SetWifiList]
@@ -22,6 +22,6 @@ object SetWifiListOptions {
     
     inline def setWifiList(value: js.Array[SetWifiList]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    inline def setWifiListVarargs(value: SetWifiList*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: SetWifiList*): Self = StObject.set(x, "wifiList", js.Array(value*))
   }
 }

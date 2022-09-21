@@ -10,31 +10,31 @@ object anon {
   trait Deps extends StObject {
     
     /** The newer version of dependencies. Order is same as the first argument. */
-    var deps: js.Array[js.Any]
+    var deps: js.Array[Any]
     
     /** The newer version of the current module */
-    var module: js.Any
+    var module: Any
   }
   object Deps {
     
-    inline def apply(deps: js.Array[js.Any], module: js.Any): Deps = {
+    inline def apply(deps: js.Array[Any], module: Any): Deps = {
       val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deps]
     }
     
     extension [Self <: Deps](x: Self) {
       
-      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
       
-      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     val MODE: String
     
@@ -68,18 +68,18 @@ object anon {
   trait Module extends StObject {
     
     /** The newer version of the current module */
-    var module: js.Any
+    var module: Any
   }
   object Module {
     
-    inline def apply(module: js.Any): Module = {
+    inline def apply(module: Any): Module = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
     
     extension [Self <: Module](x: Self) {
       
-      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
 }

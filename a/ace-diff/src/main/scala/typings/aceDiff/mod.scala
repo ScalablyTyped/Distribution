@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("ace-diff", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AceDiff {
     def this(opts: AceDiffConstructorOpts) = this()

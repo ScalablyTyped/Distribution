@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "webcrypto-core" : "1.7.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "webcrypto-core" : "1.7.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

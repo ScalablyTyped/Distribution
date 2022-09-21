@@ -1,110 +1,82 @@
 package typings.cryptoJs.mod
 
+import typings.cryptoJs.mod.^
+import typings.cryptoJs.mod.global.CryptoJS.x64.Word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AES: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AES").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def AES: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("AES").asInstanceOf[CipherHelper]
 
-inline def DES: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DES").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def DES: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("DES").asInstanceOf[CipherHelper]
 
-inline def EvpKDF(password: java.lang.String, salt: java.lang.String): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(password: java.lang.String, salt: java.lang.String, cfg: typings.cryptoJs.anon.Hasher): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(password: java.lang.String, salt: typings.cryptoJs.mod.WordArray): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(
-  password: java.lang.String,
-  salt: typings.cryptoJs.mod.WordArray,
-  cfg: typings.cryptoJs.anon.Hasher
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(password: typings.cryptoJs.mod.WordArray, salt: java.lang.String): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(
-  password: typings.cryptoJs.mod.WordArray,
-  salt: java.lang.String,
-  cfg: typings.cryptoJs.anon.Hasher
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(password: typings.cryptoJs.mod.WordArray, salt: typings.cryptoJs.mod.WordArray): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def EvpKDF(
-  password: typings.cryptoJs.mod.WordArray,
-  salt: typings.cryptoJs.mod.WordArray,
-  cfg: typings.cryptoJs.anon.Hasher
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
+inline def EvpKDF(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: String, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: String, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: WordArray, salt: String, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def EvpKDF(password: WordArray, salt: WordArray, cfg: typings.cryptoJs.anon.Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
 
-inline def HmacMD5: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacMD5").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacMD5: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacMD5").asInstanceOf[HmacHasherHelper]
 
-inline def HmacRIPEMD160: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacRIPEMD160").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacRIPEMD160: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacRIPEMD160").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA1: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA1").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA1: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA1").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA224: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA224").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA224: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA224").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA256: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA256").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA256: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA256").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA3: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA3").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA3: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA3").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA384: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA384").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA384: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA384").asInstanceOf[HmacHasherHelper]
 
-inline def HmacSHA512: typings.cryptoJs.mod.HmacHasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA512").asInstanceOf[typings.cryptoJs.mod.HmacHasherHelper]
+inline def HmacSHA512: HmacHasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("HmacSHA512").asInstanceOf[HmacHasherHelper]
 
-inline def MD5: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MD5").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def MD5: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("MD5").asInstanceOf[HasherHelper]
 
-inline def PBKDF2(password: java.lang.String, salt: java.lang.String): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(password: java.lang.String, salt: java.lang.String, cfg: typings.cryptoJs.mod.KDFOption): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(password: java.lang.String, salt: typings.cryptoJs.mod.WordArray): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(
-  password: java.lang.String,
-  salt: typings.cryptoJs.mod.WordArray,
-  cfg: typings.cryptoJs.mod.KDFOption
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(password: typings.cryptoJs.mod.WordArray, salt: java.lang.String): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(
-  password: typings.cryptoJs.mod.WordArray,
-  salt: java.lang.String,
-  cfg: typings.cryptoJs.mod.KDFOption
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(password: typings.cryptoJs.mod.WordArray, salt: typings.cryptoJs.mod.WordArray): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
-inline def PBKDF2(
-  password: typings.cryptoJs.mod.WordArray,
-  salt: typings.cryptoJs.mod.WordArray,
-  cfg: typings.cryptoJs.mod.KDFOption
-): typings.cryptoJs.mod.WordArray = (typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.WordArray]
+inline def PBKDF2(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: String, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: String, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: WordArray, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+inline def PBKDF2(password: WordArray, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
 
-inline def RC4: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RC4").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def RC4: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("RC4").asInstanceOf[CipherHelper]
 
-inline def RC4Drop: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RC4Drop").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def RC4Drop: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("RC4Drop").asInstanceOf[CipherHelper]
 
-inline def RIPEMD160: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RIPEMD160").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def RIPEMD160: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("RIPEMD160").asInstanceOf[HasherHelper]
 
-inline def Rabbit: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Rabbit").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def Rabbit: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("Rabbit").asInstanceOf[CipherHelper]
 
-inline def RabbitLegacy: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RabbitLegacy").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def RabbitLegacy: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("RabbitLegacy").asInstanceOf[CipherHelper]
 
-inline def SHA1: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA1").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA1: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA1").asInstanceOf[HasherHelper]
 
-inline def SHA224: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA224").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA224: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA224").asInstanceOf[HasherHelper]
 
-inline def SHA256: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA256").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA256: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA256").asInstanceOf[HasherHelper]
 
-inline def SHA3: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA3").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA3: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA3").asInstanceOf[HasherHelper]
 
-inline def SHA384: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA384").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA384: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA384").asInstanceOf[HasherHelper]
 
-inline def SHA512: typings.cryptoJs.mod.HasherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SHA512").asInstanceOf[typings.cryptoJs.mod.HasherHelper]
+inline def SHA512: HasherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("SHA512").asInstanceOf[HasherHelper]
 
-inline def TripleDES: typings.cryptoJs.mod.CipherHelper = typings.cryptoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TripleDES").asInstanceOf[typings.cryptoJs.mod.CipherHelper]
+inline def TripleDES: CipherHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("TripleDES").asInstanceOf[CipherHelper]
 
 type CipherParams = typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams
 
-type HasherHelper = js.Function2[
-/* message */ typings.cryptoJs.mod.WordArray | java.lang.String, 
-/* cfg */ js.UndefOr[js.Object], 
-typings.cryptoJs.mod.WordArray]
+type HasherHelper = js.Function2[/* message */ WordArray | String, /* cfg */ js.UndefOr[js.Object], WordArray]
 
-type HmacHasherHelper = js.Function2[
-/* message */ typings.cryptoJs.mod.WordArray | java.lang.String, 
-/* key */ typings.cryptoJs.mod.WordArray | java.lang.String, 
-typings.cryptoJs.mod.WordArray]
+type HmacHasherHelper = js.Function2[/* message */ WordArray | String, /* key */ WordArray | String, WordArray]
 
 type WordArray = typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
 
-type X64Word = typings.cryptoJs.mod.global.CryptoJS.x64.Word
+type X64Word = Word

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the attributes for a chart trendline object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait ChartTrendlineLoadOptions extends StObject {
@@ -19,89 +19,89 @@ trait ChartTrendlineLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the number of periods that the trendline extends backward.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var backwardPeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the formatting of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var format: js.UndefOr[ChartTrendlineFormatLoadOptions] = js.undefined
   
   /**
-    *
     * Represents the number of periods that the trendline extends forward.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var forwardPeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var intercept: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the label of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var label: js.UndefOr[ChartTrendlineLabelLoadOptions] = js.undefined
   
   /**
+    * Represents the period of a chart trendline. Only applicable to trendlines with the type `MovingAverage`.
     *
-    * Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var movingAveragePeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the name of the trendline. Can be set to a string value, a `null` value represents automatic values. The returned value is always a string
     *
-    * Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the order of a chart trendline. Only applicable to trendlines with the type `Polynomial`.
     *
-    * Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var polynomialOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * True if the equation for the trendline is displayed on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showEquation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * True if the r-squared value for the trendline is displayed on the chart.
     *
-    * True if the R-squared for the trendline is displayed on the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showRSquared: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the type of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined

@@ -3,7 +3,6 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.clipboard.AdditionalItems
 import typings.chromeApps.chrome.clipboard.ImageType
 import typings.chromeApps.chrome.events.Event
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,11 +33,16 @@ trait Typeofclipboard extends StObject {
     *      *Since Chrome 71. Warning: this is the current Dev channel.*
     * @param [callback]
     */
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = js.native
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: Unit, callback: js.Function0[Unit]): Unit = js.native
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = js.native
+  def setImageData(imageData: js.typedarray.ArrayBuffer, `type`: ImageType): Unit = js.native
   def setImageData(
-    imageData: ArrayBuffer,
+    imageData: js.typedarray.ArrayBuffer,
+    `type`: ImageType,
+    additionalItems: Unit,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def setImageData(imageData: js.typedarray.ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = js.native
+  def setImageData(
+    imageData: js.typedarray.ArrayBuffer,
     `type`: ImageType,
     additionalItems: AdditionalItems,
     callback: js.Function0[Unit]

@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "PopoverBody")
+@JSImport("reactstrap", "PopoverBody")
 @js.native
-class PopoverBody () extends default
+open class PopoverBody () extends default

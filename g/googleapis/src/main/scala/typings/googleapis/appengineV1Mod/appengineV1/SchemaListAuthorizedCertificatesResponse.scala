@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for AuthorizedCertificates.ListAuthorizedCertificates.
-  */
 trait SchemaListAuthorizedCertificatesResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListAuthorizedCertificatesResponse extends StObject {
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListAuthorizedCertificatesResponse {
   
@@ -32,9 +29,11 @@ object SchemaListAuthorizedCertificatesResponse {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: SchemaAuthorizedCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: SchemaAuthorizedCertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

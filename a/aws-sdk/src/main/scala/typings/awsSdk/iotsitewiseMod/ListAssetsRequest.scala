@@ -17,7 +17,7 @@ trait ListAssetsRequest extends StObject {
   var filter: js.UndefOr[ListAssetsFilter] = js.undefined
   
   /**
-    * The maximum number of results to be returned per paginated request. Default: 50
+    * The maximum number of results to return for each paginated request. Default: 50
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   

@@ -1,5 +1,6 @@
 package typings.expressWs
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Application_
@@ -8,9 +9,7 @@ import typings.express.mod.Request_
 import typings.express.mod.RouterOptions
 import typings.expressServeStaticCore.mod.IRouter
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.PathParams
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressServeStaticCore.mod.RequestHandlerParams
@@ -18,8 +17,10 @@ import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
+import typings.node.nodeNetMod.Socket
+import typings.std.Record
 import typings.ws.mod.ServerOptions
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +29,48 @@ object mod {
   
   inline def apply(app: Application_): Instance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Instance]
   inline def apply(app: Application_, server: Unit, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  inline def apply(app: Application_, server: Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  inline def apply(app: Application_, server: Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  inline def apply(app: Application_, server: typings.node.httpsMod.Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  inline def apply(app: Application_, server: typings.node.httpsMod.Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(
+    app: Application_,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(
+    app: Application_,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    options: Options
+  ): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(
+    app: Application_,
+    server: typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ]
+  ): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(
+    app: Application_,
+    server: typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ],
+    options: Options
+  ): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
   
   @JSImport("express-ws", JSImport.Namespace)
   @js.native
@@ -50,28 +89,23 @@ object mod {
   @js.native
   trait Application
     extends typings.expressServeStaticCore.mod.Application
-       with WithWebsocketMethod
+       with WithWebsocketMethod {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* req */ Request, arg2: /* res */ Response, arg3: /* next */ js.UndefOr[NextFunction]): Any = js.native
+  }
   
   trait Instance extends StObject {
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    def app(req: IncomingMessage, res: ServerResponse): js.Any
-    @JSName("app")
-    var app_Original: Application
+    var app: Application
     
     def applyTo(target: RouterLike): Unit
     
-    def getWss(): typings.ws.mod.Server
+    def getWss(): typings.ws.mod.Server[WebSocket]
   }
   object Instance {
     
-    inline def apply(app: Application, applyTo: RouterLike => Unit, getWss: () => typings.ws.mod.Server): Instance = {
+    inline def apply(app: Application, applyTo: RouterLike => Unit, getWss: () => typings.ws.mod.Server[WebSocket]): Instance = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], applyTo = js.Any.fromFunction1(applyTo), getWss = js.Any.fromFunction0(getWss))
       __obj.asInstanceOf[Instance]
     }
@@ -82,7 +116,7 @@ object mod {
       
       inline def setApplyTo(value: RouterLike => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
       
-      inline def setGetWss(value: () => typings.ws.mod.Server): Self = StObject.set(x, "getWss", js.Any.fromFunction0(value))
+      inline def setGetWss(value: () => typings.ws.mod.Server[WebSocket]): Self = StObject.set(x, "getWss", js.Any.fromFunction0(value))
     }
   }
   
@@ -117,24 +151,15 @@ object mod {
        with WithWebsocketMethod {
     
     /* InferMemberOverrides */
-    override def apply(
-      arg1: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
-      arg2: /* res */ Response[js.Any, Double],
-      arg3: /* next */ NextFunction
-    ): js.Any = js.native
+    override def apply(arg1: /* req */ Request, arg2: /* res */ Response, arg3: /* next */ js.UndefOr[NextFunction]): Any = js.native
   }
   
   trait RouterLike
     extends StObject
-       with /* key */ NumberDictionary[js.Any]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ NumberDictionary[Any]
+       with /* key */ StringDictionary[Any] {
     
-    def get(path: PathParams, subApplication: typings.expressServeStaticCore.mod.Application): this.type
-    // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-    def get[P, ResBody, ReqBody, ReqQuery](
-      path: PathParams,
-      handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
-    ): this.type
+    def get(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type
     @JSName("get")
     var get_Original: IRouterMatcher[this.type]
   }
@@ -158,8 +183,14 @@ object mod {
   }
   
   type WebsocketRequestHandler = js.Function3[
-    /* ws */ typings.ws.mod.^, 
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* ws */ WebSocket, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* next */ typings.express.mod.NextFunction, 
     Unit
   ]

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeFieldValue
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,13 +20,10 @@ trait QuotaUserResource extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** CreativeField ID. */
-  var creativeFieldId: String
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** CreativeFieldValue ID. */
+  /** CreativeField ID. */
   var id: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -45,7 +42,7 @@ trait QuotaUserResource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreativeFieldValue
+  var resource: CreativeField
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,8 +52,8 @@ trait QuotaUserResource extends StObject {
 }
 object QuotaUserResource {
   
-  inline def apply(creativeFieldId: String, id: String, profileId: String, resource: CreativeFieldValue): QuotaUserResource = {
-    val __obj = js.Dynamic.literal(creativeFieldId = creativeFieldId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(id: String, profileId: String, resource: CreativeField): QuotaUserResource = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserResource]
   }
   
@@ -77,8 +74,6 @@ object QuotaUserResource {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setCreativeFieldId(value: String): Self = StObject.set(x, "creativeFieldId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -104,7 +99,7 @@ object QuotaUserResource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreativeFieldValue): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreativeField): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

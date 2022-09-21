@@ -14,10 +14,10 @@ trait AuthEventType extends StObject {
   /**
     * The creation date
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The user context data captured at the time of an event request. It provides additional information about the client from which event the request is received.
+    * The user context data captured at the time of an event request. This value provides additional information about the client from which event the request is received.
     */
   var EventContextData: js.UndefOr[EventContextDataType] = js.undefined
   
@@ -59,9 +59,9 @@ object AuthEventType {
     
     inline def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
     
-    inline def setChallengeResponsesVarargs(value: ChallengeResponseType*): Self = StObject.set(x, "ChallengeResponses", js.Array(value :_*))
+    inline def setChallengeResponsesVarargs(value: ChallengeResponseType*): Self = StObject.set(x, "ChallengeResponses", js.Array(value*))
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

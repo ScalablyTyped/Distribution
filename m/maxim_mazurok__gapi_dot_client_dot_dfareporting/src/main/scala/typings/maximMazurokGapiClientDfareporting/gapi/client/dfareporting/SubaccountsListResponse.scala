@@ -36,6 +36,6 @@ object SubaccountsListResponse {
     
     inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
-    inline def setSubaccountsVarargs(value: Subaccount*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+    inline def setSubaccountsVarargs(value: Subaccount*): Self = StObject.set(x, "subaccounts", js.Array(value*))
   }
 }

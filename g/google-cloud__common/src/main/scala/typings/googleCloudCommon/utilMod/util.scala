@@ -14,14 +14,14 @@ object util extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@google-cloud/common/build/src/util", "util.ApiError")
   @js.native
-  class ApiErrorCls protected () extends ApiError {
+  open class ApiErrorCls protected () extends ApiError {
     def this(errorMessage: String) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@google-cloud/common/build/src/util", "util.PartialFailureError")
   @js.native
-  class PartialFailureErrorCls protected () extends PartialFailureError {
+  open class PartialFailureErrorCls protected () extends PartialFailureError {
     def this(b: GoogleErrorBody) = this()
   }
   

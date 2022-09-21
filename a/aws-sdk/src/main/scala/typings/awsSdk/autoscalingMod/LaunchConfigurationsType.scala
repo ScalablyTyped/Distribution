@@ -27,7 +27,7 @@ object LaunchConfigurationsType {
     
     inline def setLaunchConfigurations(value: LaunchConfigurations): Self = StObject.set(x, "LaunchConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value :_*))
+    inline def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

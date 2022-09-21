@@ -25,7 +25,7 @@ object global {
           */
         @JSGlobal("google.payments.api.PaymentsClient")
         @js.native
-        class PaymentsClient protected ()
+        open class PaymentsClient protected ()
           extends StObject
              with typings.googlepay.google.payments.api.PaymentsClient {
           /**

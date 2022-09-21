@@ -1,6 +1,5 @@
 package typings.kurentoClient.mod
 
-import typings.node.NodeRequire
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait Constructor extends StObject {
   def apply(ws_uri: String, options: Options): js.Promise[ClientInstance] = js.native
   
   @JSName("getComplexType")
-  def getComplexType_IceCandidate(complex: typings.kurentoClient.kurentoClientStrings.IceCandidate): js.Function1[/* value */ js.Any, js.Any] = js.native
+  def getComplexType_IceCandidate(complex: typings.kurentoClient.kurentoClientStrings.IceCandidate): js.Function1[/* value */ Any, Any] = js.native
   
   def getSingleton(ws_uri: String): js.Promise[ClientInstance] = js.native
   def getSingleton(ws_uri: String, options: Options): js.Promise[ClientInstance] = js.native
@@ -21,5 +20,9 @@ trait Constructor extends StObject {
   var on: Unit = js.native
   
   def register(module: String): Unit = js.native
-  def register(module: ReturnType[NodeRequire]): Unit = js.native
+  def register(
+    module: ReturnType[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
+    ]
+  ): Unit = js.native
 }

@@ -17,7 +17,7 @@ trait FormatColor extends StObject {
   /* private */ @JSName("Excel.FormatColor_typekey")
   var ExcelDotFormatColor_typekey: FormatColor
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ThemeColor: XlThemeColor
   
@@ -31,7 +31,7 @@ object FormatColor {
     ColorIndex: XlColorIndex,
     Creator: XlCreator,
     ExcelDotFormatColor_typekey: FormatColor,
-    Parent: js.Any,
+    Parent: Any,
     ThemeColor: XlThemeColor,
     TintAndShade: Double
   ): FormatColor = {
@@ -52,7 +52,7 @@ object FormatColor {
     
     inline def setExcelDotFormatColor_typekey(value: FormatColor): Self = StObject.set(x, "Excel.FormatColor_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     

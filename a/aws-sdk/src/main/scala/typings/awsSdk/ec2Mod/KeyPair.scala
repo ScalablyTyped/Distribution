@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyPair extends StObject {
   
   /**
-    * The SHA-1 digest of the DER encoded private key.
+    *   For RSA key pairs, the key fingerprint is the SHA-1 digest of the DER encoded private key.   For ED25519 key pairs, the key fingerprint is the base64-encoded SHA-256 digest, which is the default for OpenSSH, starting with OpenSSH 6.8.  
     */
   var KeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
-    * An unencrypted PEM encoded RSA private key.
+    * An unencrypted PEM encoded RSA or ED25519 private key.
     */
   var KeyMaterial: js.UndefOr[SensitiveUserData] = js.undefined
   
@@ -60,6 +60,6 @@ object KeyPair {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

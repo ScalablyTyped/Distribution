@@ -19,7 +19,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.Contact")
   @js.native
-  class Contact ()
+  open class Contact ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.Contact {
     
@@ -35,7 +35,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactField")
   @js.native
-  class ContactField protected ()
+  open class ContactField protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactField {
     def this(value: String, `type`: ContactFieldType) = this()
@@ -75,7 +75,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldFactory")
   @js.native
-  class ContactFieldFactory ()
+  open class ContactFieldFactory ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldFactory
   
@@ -99,7 +99,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactInformation")
   @js.native
-  class ContactInformation ()
+  open class ContactInformation ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactInformation {
     
@@ -130,7 +130,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactInstantMessageField")
   @js.native
-  class ContactInstantMessageField protected ()
+  open class ContactInstantMessageField protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactInstantMessageField {
     def this(userName: String) = this()
@@ -164,7 +164,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLocationField")
   @js.native
-  class ContactLocationField protected ()
+  open class ContactLocationField protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactLocationField {
     def this(unstructuredAddress: String) = this()
@@ -212,7 +212,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactPicker")
   @js.native
-  class ContactPicker ()
+  open class ContactPicker ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.ContactPicker {
     
@@ -246,7 +246,7 @@ object Contacts {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
   @js.native
-  class KnownContactField ()
+  open class KnownContactField ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Contacts.KnownContactField
   /* static members */
@@ -301,7 +301,7 @@ object Contacts {
     
     @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactPickerUI")
     @js.native
-    class ContactPickerUI ()
+    open class ContactPickerUI ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI {
       
@@ -315,7 +315,7 @@ object Contacts {
       var desiredFields: IVectorView[String] = js.native
       
       /* CompleteClass */
-      var oncontactremoved: js.Any = js.native
+      var oncontactremoved: Any = js.native
       
       /* CompleteClass */
       override def removeContact(id: String): Unit = js.native
@@ -326,7 +326,7 @@ object Contacts {
     
     @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs")
     @js.native
-    class ContactRemovedEventArgs ()
+    open class ContactRemovedEventArgs ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs {
       

@@ -3,7 +3,6 @@ package typings.awsCryptoSha256Browser
 import typings.awsCryptoSha256Browser.anon.Name
 import typings.awsCryptoSha256Browser.awsCryptoSha256BrowserStrings.HMAC
 import typings.awsCryptoSha256Browser.awsCryptoSha256BrowserStrings.`SHA-256`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object constantsMod {
   
   @JSImport("@aws-crypto/sha256-browser/build/constants", "EMPTY_DATA_SHA_256")
   @js.native
-  val EMPTY_DATA_SHA_256: Uint8Array = js.native
+  val EMPTY_DATA_SHA_256: js.typedarray.Uint8Array = js.native
   
   object SHA_256_HASH {
     

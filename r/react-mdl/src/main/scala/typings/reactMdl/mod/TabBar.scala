@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "TabBar")
 @js.native
-class TabBar protected () extends _MDLComponent[TabBarProps] {
+open class TabBar protected () extends _MDLComponent[TabBarProps] {
   def this(props: TabBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TabBarProps, context: js.Any) = this()
+  def this(props: TabBarProps, context: Any) = this()
 }

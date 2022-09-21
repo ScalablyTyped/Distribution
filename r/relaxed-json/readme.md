@@ -10,10 +10,10 @@ Relaxed JSON is strict superset JSON, relaxing strictness of valilla JSON
 | ------------------ | :-------------: |
 | Full name          | relaxed-json |
 | Keywords           | json, comments, comment, config |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 902910 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 336186.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/phadej/relaxed-json)

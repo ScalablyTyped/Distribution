@@ -12,7 +12,7 @@ trait StatusReason extends StObject {
   var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A code that represents a reason for the control status. For the list of status reason codes and their meanings, see Standards-related information in the ASFF in the AWS Security Hub User Guide. 
+    * A code that represents a reason for the control status. For the list of status reason codes and their meanings, see Standards-related information in the ASFF in the Security Hub User Guide. 
     */
   var ReasonCode: NonEmptyString
 }

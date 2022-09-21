@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitTreeRef extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * SHA1 hash of git object
@@ -30,13 +30,7 @@ trait GitTreeRef extends StObject {
 }
 object GitTreeRef {
   
-  inline def apply(
-    _links: js.Any,
-    objectId: String,
-    size: Double,
-    treeEntries: js.Array[GitTreeEntryRef],
-    url: String
-  ): GitTreeRef = {
+  inline def apply(_links: Any, objectId: String, size: Double, treeEntries: js.Array[GitTreeEntryRef], url: String): GitTreeRef = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], treeEntries = treeEntries.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitTreeRef]
   }
@@ -49,10 +43,10 @@ object GitTreeRef {
     
     inline def setTreeEntries(value: js.Array[GitTreeEntryRef]): Self = StObject.set(x, "treeEntries", value.asInstanceOf[js.Any])
     
-    inline def setTreeEntriesVarargs(value: GitTreeEntryRef*): Self = StObject.set(x, "treeEntries", js.Array(value :_*))
+    inline def setTreeEntriesVarargs(value: GitTreeEntryRef*): Self = StObject.set(x, "treeEntries", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

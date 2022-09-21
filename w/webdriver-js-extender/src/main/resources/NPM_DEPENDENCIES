@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webdriver-js-extender" : "2.1.0"
+      "webdriver-js-extender" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "webdriver-js-extender" : "2.1.0"
+      "webdriver-js-extender" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

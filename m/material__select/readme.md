@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__select
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components web select (text field drop-down) component
@@ -10,10 +10,10 @@ The Material Components web select (text field drop-down) component
 | ------------------ | :-------------: |
 | Full name          | @material/select |
 | Keywords           | material components, material design, select, multi select |
-| # releases         | 620 |
-| # dependents       | 55 |
-| # downloads        | 2161235 |
-| # stars            | 0 |
+| # releases         | 711 |
+| # dependents       | 0.0 |
+| # downloads        | 268645.6666666667 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -55,7 +55,7 @@ object anon {
     var upload_protocol: js.UndefOr[String] = js.undefined
     
     /** Required. The URL to fetch and analyze */
-    var url: js.UndefOr[String] = js.undefined
+    var url: String
     
     /** Campaign name for analytics. */
     var utm_campaign: js.UndefOr[String] = js.undefined
@@ -65,8 +65,8 @@ object anon {
   }
   object Accesstoken {
     
-    inline def apply(): Accesstoken = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(url: String): Accesstoken = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Accesstoken]
     }
     
@@ -96,7 +96,7 @@ object anon {
       
       inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value*))
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -135,8 +135,6 @@ object anon {
       inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
       inline def setUtm_campaign(value: String): Self = StObject.set(x, "utm_campaign", value.asInstanceOf[js.Any])
       

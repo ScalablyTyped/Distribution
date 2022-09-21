@@ -1,6 +1,6 @@
 package typings.gherkin
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object sourceMessageStreamMod {
   
   @JSImport("gherkin/dist/src/stream/SourceMessageStream", JSImport.Default)
   @js.native
-  class default protected () extends SourceMessageStream {
+  open class default protected () extends SourceMessageStream {
     def this(uri: String) = this()
   }
   
@@ -20,8 +20,8 @@ object sourceMessageStreamMod {
     
     def _transform(chunk: Buffer, encoding: String, callback: TransformCallback): Unit = js.native
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ val uri: js.Any = js.native
+    /* private */ val uri: Any = js.native
   }
 }

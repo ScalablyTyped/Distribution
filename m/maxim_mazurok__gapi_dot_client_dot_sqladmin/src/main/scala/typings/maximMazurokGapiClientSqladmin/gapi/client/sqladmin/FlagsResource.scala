@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FlagsResource extends StObject {
   
-  /** List all available database flags for Cloud SQL instances. */
+  /** Lists all available database flags for Cloud SQL instances. */
   def list(): Request[FlagsListResponse] = js.native
   def list(request: DatabaseVersion): Request[FlagsListResponse] = js.native
 }

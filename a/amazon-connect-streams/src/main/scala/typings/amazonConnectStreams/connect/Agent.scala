@@ -21,6 +21,16 @@ trait Agent extends StObject {
   def connect(endpoint: Endpoint, connectOptions: ConnectOptions): Unit = js.native
   
   /**
+    * Create task contact.
+    * Can only be performed if the agent is not handling a live contact.
+    *
+    * @param taskContact The new task contact.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    */
+  def createTask(taskContact: TaskContactDefinition): Unit = js.native
+  def createTask(taskContact: TaskContactDefinition, callbacks: SuccessFailOptions): Unit = js.native
+  
+  /**
     * Gets the list of selectable `AgentState` API objects.
     * These are the agent states that can be selected when the agent is not handling a live contact.
     */
@@ -28,6 +38,9 @@ trait Agent extends StObject {
   
   /** Returns a list of the ARNs associated with this agent's routing profile's queues. */
   def getAllQueueARNs(): js.Array[String] = js.native
+  
+  /** Get the agent's current 'AgentAvailabilityState' object indicating their actual state type. */
+  def getAvailabilityState(): AgentAvailabilityState = js.native
   
   /**
     * Gets a map of channel type to 1 or 0.
@@ -75,6 +88,12 @@ trait Agent extends StObject {
   /** Gets the agent's user friendly display name. */
   def getName(): String = js.native
   
+  /** 
+    * Get the AgentState object of the agent's enqueued next status. 
+    * If the agent has not enqueued a next status, returns null.
+    */
+  def getNextState(): AgentState = js.native
+  
   /**
     * Mostly for internal purposes only.
     * Contains strings which indicates actions that the agent can take in the CCP.
@@ -111,11 +130,11 @@ trait Agent extends StObject {
   def onAfterCallWork(callback: AgentCallback): Unit = js.native
   
   /**
-    * Subscribe a method to be called whenever a contact enters the pending state for this particular agent.
+    * Subscribe a method to be called when the agent has a nextState.
     *
-    * @param callback A callback to receive the `Agent` API object instance.
+    * @param callback A callback that is invoked with the Agent object.
     */
-  def onContactPending(callback: AgentCallback): Unit = js.native
+  def onEnqueuedNextState(callback: AgentCallback): Unit = js.native
   
   /**
     * Subscribe a method to be called when the agent is put into an error state.
@@ -127,7 +146,14 @@ trait Agent extends StObject {
   def onError(callback: AgentCallback): Unit = js.native
   
   /**
-    * Subscribe a method to be called when the agent updates the mute status, meaning that agents mute/unmute APIs are called and the local media stream is succesfully updated with the new status.
+    * Subscribe a method to be called when the agent changes the microphone device (input device for call audio).
+    *
+    * @param callback A callback to receive updates on the microphone device
+    */
+  def onMicrophoneDeviceChanged(callback: UserMediaDeviceChangeCallback): Unit = js.native
+  
+  /**
+    * Subscribe a method to be called when the agent updates the mute status, meaning that agents mute/unmute APIs are called and the local media stream is successfully updated with the new status.
     *
     * @param callback A callback to receive updates on agent mute state
     */
@@ -155,6 +181,13 @@ trait Agent extends StObject {
   def onRefresh(callback: AgentCallback): Unit = js.native
   
   /**
+    * Subscribe a method to be called when the agent changes the ringer device (output device for ringtone).
+    *
+    * @param callback A callback to receive updates on the ringer device
+    */
+  def onRingerDeviceChanged(callback: UserMediaDeviceChangeCallback): Unit = js.native
+  
+  /**
     * Subscribe a method to be called when the agent becomes routable, meaning that they can be routed incoming contacts.
     *
     * @param callback A callback to receive the `Agent` API object instance.
@@ -167,6 +200,13 @@ trait Agent extends StObject {
     * @param callback A callback to receive the `SoftphoneError` error.
     */
   def onSoftphoneError(callback: SoftphoneErrorCallback): Unit = js.native
+  
+  /**
+    * Subscribe a method to be called when the agent changes the speaker device (output device for call audio).
+    *
+    * @param callback A callback to receive updates on the speaker device
+    */
+  def onSpeakerDeviceChanged(callback: UserMediaDeviceChangeCallback): Unit = js.native
   
   /**
     * Subscribe a method to be called when the agent's state changes.
@@ -186,14 +226,38 @@ trait Agent extends StObject {
   def setConfiguration(config: AgentConfiguration, callbacks: SuccessFailOptions): Unit = js.native
   
   /**
+    * Sets the microphone device (input device for call audio)
+    *
+    * @param deviceId The id of the media device.
+    */
+  def setMicrophoneDevice(deviceId: String): Unit = js.native
+  
+  /**
+    * Sets the ringer device (output device for ringtone)
+    *
+    * @param deviceId The id of the media device.
+    */
+  def setRingerDevice(deviceId: String): Unit = js.native
+  
+  /**
+    * Sets the speaker device (output device for call audio)
+    *
+    * @param deviceId The id of the media device.
+    */
+  def setSpeakerDevice(deviceId: String): Unit = js.native
+  
+  /**
     * Set the agent's current availability state.
-    * Can only be performed if the agent is not handling a live contact.
+    * Will enqueue state if the agent is handling a live contact and enqueueNextState is true.
     *
     * @param state The new agent state.
     * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    * @param options
     */
   def setState(state: AgentStateDefinition): Unit = js.native
+  def setState(state: AgentStateDefinition, callbacks: Unit, options: AgentSetStateOptions): Unit = js.native
   def setState(state: AgentStateDefinition, callbacks: SuccessFailOptions): Unit = js.native
+  def setState(state: AgentStateDefinition, callbacks: SuccessFailOptions, options: AgentSetStateOptions): Unit = js.native
   
   /** Alias for `setState()`. */
   def setStatus(state: AgentStateDefinition): Unit = js.native

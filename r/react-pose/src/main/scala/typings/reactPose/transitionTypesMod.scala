@@ -11,11 +11,11 @@ object transitionTypesMod {
   
   trait Props
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var animateOnMount: js.UndefOr[Boolean] = js.undefined
     
-    var children: TransitionChildren[js.Any]
+    var children: TransitionChildren[Any]
     
     var enterAfterExit: js.UndefOr[Boolean] = js.undefined
     
@@ -31,7 +31,7 @@ object transitionTypesMod {
   }
   object Props {
     
-    inline def apply(children: TransitionChildren[js.Any]): Props = {
+    inline def apply(children: TransitionChildren[Any]): Props = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
@@ -42,9 +42,9 @@ object transitionTypesMod {
       
       inline def setAnimateOnMountUndefined: Self = StObject.set(x, "animateOnMount", js.undefined)
       
-      inline def setChildren(value: TransitionChildren[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: TransitionChildren[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: TransitionChild[js.Any]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: TransitionChild[Any]*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setEnterAfterExit(value: Boolean): Self = StObject.set(x, "enterAfterExit", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object transitionTypesMod {
       
       inline def setDisplayedChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "displayedChildren", value.asInstanceOf[js.Any])
       
-      inline def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value :_*))
+      inline def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value*))
       
       inline def setFinishedLeaving(value: StringDictionary[Boolean]): Self = StObject.set(x, "finishedLeaving", value.asInstanceOf[js.Any])
       

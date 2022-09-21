@@ -1,5 +1,6 @@
 package typings.reactabularSticky
 
+import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -39,6 +40,8 @@ object anon {
     
     var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.undefined
     
+    var initUIEvent: js.UndefOr[js.Function1[/* typeArg */ String, Unit]] = js.undefined
+    
     var isTrusted: js.UndefOr[Boolean] = js.undefined
     
     var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -53,7 +56,7 @@ object anon {
     
     var target: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var timeStamp: js.UndefOr[Double] = js.undefined
+    var timeStamp: js.UndefOr[DOMHighResTimeStamp] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -124,6 +127,10 @@ object anon {
       
       inline def setInitEventUndefined: Self = StObject.set(x, "initEvent", js.undefined)
       
+      inline def setInitUIEvent(value: /* typeArg */ String => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction1(value))
+      
+      inline def setInitUIEventUndefined: Self = StObject.set(x, "initUIEvent", js.undefined)
+      
       inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
       inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
@@ -160,7 +167,7 @@ object anon {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
       inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       

@@ -26,7 +26,7 @@ object comparableOptionsMod {
       
       inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
       
-      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value :_*))
+      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value*))
     }
   }
 }

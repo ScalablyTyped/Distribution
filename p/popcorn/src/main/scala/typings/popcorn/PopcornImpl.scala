@@ -10,93 +10,93 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PopcornImpl extends StObject {
   
-  def autoplay(flag: Boolean): js.Any = js.native
+  def autoplay(flag: Boolean): Any = js.native
   
   def buffered(): TimeRanges = js.native
   
-  def compose(name: String, definitionObject: js.Any, manifest: js.Any): js.Any = js.native
+  def compose(name: String, definitionObject: Any, manifest: Any): Any = js.native
   
-  def controls(flag: Boolean): js.Any = js.native
+  def controls(flag: Boolean): Any = js.native
   
-  def cue(time: String, callback: js.Function): js.Any = js.native
-  def cue(time: Double, callback: js.Function): js.Any = js.native
+  def cue(time: String, callback: js.Function): Any = js.native
+  def cue(time: Double, callback: js.Function): Any = js.native
   
   def currentTime(): Double = js.native
   def currentTime(time: String): Double = js.native
   def currentTime(time: Double): Double = js.native
   
-  def defaults(pluginName: String, options: js.Any): js.Any = js.native
+  def defaults(pluginName: String, options: Any): Any = js.native
   
-  def destroy(): js.Any = js.native
+  def destroy(): Any = js.native
   
-  def disable(pluginName: String): js.Any = js.native
+  def disable(pluginName: String): Any = js.native
   
   def duration(): Double = js.native
   
-  def emit(eventName: String, dataObject: js.Any): js.Any = js.native
+  def emit(eventName: String, dataObject: Any): Any = js.native
   
   def enable(pluginName: String): PopcornImpl = js.native
   
-  def exec(time: String, callback: js.Function): js.Any = js.native
-  def exec(time: Double, callback: js.Function): js.Any = js.native
+  def exec(time: String, callback: js.Function): Any = js.native
+  def exec(time: Double, callback: js.Function): Any = js.native
   
-  def footnote(data: Footnote): js.Any = js.native
+  def footnote(data: Footnote): Any = js.native
   
   def getLastTrackEventId(): String = js.native
   
-  def listen(eventName: String, callback: js.Function): js.Any = js.native
+  def listen(eventName: String, callback: js.Function): Any = js.native
   
-  def load(): js.Any = js.native
+  def load(): Any = js.native
   
-  def loop(flag: Boolean): js.Any = js.native
+  def loop(flag: Boolean): Any = js.native
   
   var media: HTMLMediaElement = js.native
   
-  def mute(): js.Any = js.native
+  def mute(): Any = js.native
   
-  def muted(flag: Boolean): js.Any = js.native
+  def muted(flag: Boolean): Any = js.native
   
-  def off(eventName: String, callback: js.Function): js.Any = js.native
+  def off(eventName: String, callback: js.Function): Any = js.native
   
-  def on(eventName: String, callback: js.Function): js.Any = js.native
+  def on(eventName: String, callback: js.Function): Any = js.native
   
-  def pause(): js.Any = js.native
-  def pause(time: String): js.Any = js.native
-  def pause(time: Double): js.Any = js.native
+  def pause(): Any = js.native
+  def pause(time: String): Any = js.native
+  def pause(time: Double): Any = js.native
   
   def paused(): Boolean = js.native
   
-  def play(): js.Any = js.native
-  def play(time: String): js.Any = js.native
-  def play(time: Double): js.Any = js.native
+  def play(): Any = js.native
+  def play(time: String): Any = js.native
+  def play(time: Double): Any = js.native
   
-  def playbackRate(): js.Any = js.native
-  def playbackRate(rate: Double): js.Any = js.native
+  def playbackRate(): Any = js.native
+  def playbackRate(rate: Double): Any = js.native
   
   def played(): TimeRanges = js.native
   
   def position(): ClientRect = js.native
   
-  def preload(state: String): js.Any = js.native
+  def preload(state: String): Any = js.native
   
   def readyState(): Double = js.native
   
-  def removeTrackEvent(id: String): js.Any = js.native
+  def removeTrackEvent(id: String): Any = js.native
   
   def roundTime(): Double = js.native
   
-  def seekable(): js.Any = js.native
+  def seekable(): Any = js.native
   
   // TimeRages?
   def seeking(): Boolean = js.native
   
-  def toggle(pluginName: String): js.Any = js.native
+  def toggle(pluginName: String): Any = js.native
   
-  def trigger(eventName: String, dataObject: js.Any): js.Any = js.native
+  def trigger(eventName: String, dataObject: Any): Any = js.native
   
-  def unlisten(eventName: String, callback: js.Function): js.Any = js.native
+  def unlisten(eventName: String, callback: js.Function): Any = js.native
   
-  def unmute(): js.Any = js.native
+  def unmute(): Any = js.native
   
   def volume(): Double = js.native
   def volume(value: Double): Double = js.native

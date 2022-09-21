@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
+import typings.googleapis.driveV2Mod.driveV2.SchemaLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `10` extends StObject {
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var labels: js.UndefOr[js.Array[SchemaLabel]] = js.undefined
 }
 object `10` {
   
@@ -17,8 +18,10 @@ object `10` {
   
   extension [Self <: `10`](x: Self) {
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[SchemaLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLabelsVarargs(value: SchemaLabel*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }

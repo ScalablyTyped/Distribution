@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "TermsFilter")
 @js.native
-class TermsFilter protected ()
+open class TermsFilter protected ()
   extends StObject
      with Filter {
   /*

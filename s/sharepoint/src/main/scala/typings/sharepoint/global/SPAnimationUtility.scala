@@ -11,7 +11,7 @@ object SPAnimationUtility {
   
   @JSGlobal("SPAnimationUtility.BasicAnimator")
   @js.native
-  class BasicAnimator ()
+  open class BasicAnimator ()
     extends StObject
        with typings.sharepoint.SPAnimationUtility.BasicAnimator
   object BasicAnimator {
@@ -25,22 +25,22 @@ object SPAnimationUtility {
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any,
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any,
       animationId: ID
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CommonResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], animationId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def FadeIn(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def FadeIn(element: HTMLElement, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ Any, Unit], data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeIn(element: HTMLElement, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def FadeOut(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def FadeOut(element: HTMLElement, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ Any, Unit], data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FadeOut(element: HTMLElement, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def GetLeftOffset(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLeftOffset")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -59,20 +59,15 @@ object SPAnimationUtility {
     
     /* static member */
     inline def Move(element: HTMLElement, posX: Double, posY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Move(element: HTMLElement, posX: Double, posY: Double, finishFunc: js.Function1[/* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Move(
       element: HTMLElement,
       posX: Double,
       posY: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Move(
-      element: HTMLElement,
-      posX: Double,
-      posY: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Move(element: HTMLElement, posX: Double, posY: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Move(element: HTMLElement, posX: Double, posY: Double, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def PositionAbsolute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PositionAbsolute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -95,16 +90,16 @@ object SPAnimationUtility {
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
+      finishFunc: js.Function1[/* data */ Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def QuickResize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickResize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickResize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def Resize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -112,16 +107,16 @@ object SPAnimationUtility {
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
+      finishFunc: js.Function1[/* data */ Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Resize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Resize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Resize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def ResizeContainerAndFillContent(
@@ -134,17 +129,13 @@ object SPAnimationUtility {
     
     /* static member */
     inline def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double, finishFunc: js.Function1[/* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def StrikeThrough(
       element: HTMLElement,
       strikeThroughWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def StrikeThrough(
-      element: HTMLElement,
-      strikeThroughWidth: Double,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double, finishFunc: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

@@ -10,13 +10,13 @@ object readStreamMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ @JSImport("merkle-patricia-tree/dist/readStream", "TrieReadStream")
   @js.native
-  class TrieReadStream protected () extends StObject {
+  open class TrieReadStream protected () extends StObject {
     def this(trie: Trie) = this()
     
     def _read(): js.Promise[Unit] = js.native
     
-    /* private */ var _started: js.Any = js.native
+    /* private */ var _started: Any = js.native
     
-    /* private */ var trie: js.Any = js.native
+    /* private */ var trie: Any = js.native
   }
 }

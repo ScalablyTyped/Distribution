@@ -22,6 +22,6 @@ object GoogleCloudMlV1ListStudiesResponse {
     
     inline def setStudiesUndefined: Self = StObject.set(x, "studies", js.undefined)
     
-    inline def setStudiesVarargs(value: GoogleCloudMlV1Study*): Self = StObject.set(x, "studies", js.Array(value :_*))
+    inline def setStudiesVarargs(value: GoogleCloudMlV1Study*): Self = StObject.set(x, "studies", js.Array(value*))
   }
 }

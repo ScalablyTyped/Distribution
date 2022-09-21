@@ -49,8 +49,8 @@ object securityRolesInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/SecurityRolesInterfaces", "TypeInfo.RoleAssignment")
     @js.native
-    def RoleAssignment: js.Any = js.native
-    inline def RoleAssignment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAssignment")(x.asInstanceOf[js.Any])
+    def RoleAssignment: Any = js.native
+    inline def RoleAssignment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAssignment")(x.asInstanceOf[js.Any])
   }
   
   trait RoleAssignment extends StObject {

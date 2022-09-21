@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.HalfNormal")
 @js.native
-class HalfNormal ()
+open class HalfNormal ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.HalfNormal] {
   def this(sigma: Double) = this()

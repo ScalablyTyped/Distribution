@@ -12,7 +12,7 @@ trait DeviceSecretVerifierConfigType extends StObject {
   var PasswordVerifier: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The salt.
+    * The salt 
     */
   var Salt: js.UndefOr[StringType] = js.undefined
 }

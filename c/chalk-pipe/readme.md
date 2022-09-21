@@ -10,10 +10,10 @@ Create chalk style schemes with simpler style strings
 | ------------------ | :-------------: |
 | Full name          | chalk-pipe |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 71 |
-| # downloads        | 1868748 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 31491.666666666668 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/LitoMore/chalk-pipe#readme)

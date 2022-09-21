@@ -110,6 +110,11 @@ object mod extends Shortcut {
     def mul(n: BigSource): typings.bigJs.mod.Big = js.native
     
     /**
+      * Return a new Big whose value is the value of this Big negated.
+      */
+    def neg(): typings.bigJs.mod.Big = js.native
+    
+    /**
       * Returns a Big number whose value is the value of this Big number plus n.
       *
       * @throws `NaN` if n is invalid.
@@ -129,10 +134,22 @@ object mod extends Shortcut {
     def pow(exp: Double): typings.bigJs.mod.Big = js.native
     
     /**
+      * Return a new Big whose value is the value of this Big rounded to a maximum precision of sd
+      * significant digits using rounding mode rm, or Big.RM if rm is not specified.
+      *
+      * @param sd Significant digits: integer, 1 to MAX_DP inclusive.
+      * @param rm Rounding mode: 0 (down), 1 (half-up), 2 (half-even) or 3 (up).
+      * @throws `!prec!` if sd is invalid.
+      * @throws `!Big.RM!` if rm is invalid.
+      */
+    def prec(sd: Double): typings.bigJs.mod.Big = js.native
+    def prec(sd: Double, rm: RoundingMode): typings.bigJs.mod.Big = js.native
+    
+    /**
       * Returns a Big number whose value is the value of this Big number rounded using rounding mode rm to a maximum of dp decimal places.
       *
       * @param dp Decimal places, 0 to 1e+6 inclusive
-      * @param rm The rounding mode, one of the RoundingMode enumeration values
+      * @param rm Rounding mode: 0 (down), 1 (half-up), 2 (half-even) or 3 (up).
       * @throws `!round!` if dp is invalid.
       * @throws `!Big.RM!` if rm is invalid.
       */
@@ -180,10 +197,13 @@ object mod extends Shortcut {
       * If dp is omitted, or is null or undefined, the number of digits after the decimal point defaults to the minimum number of digits necessary to represent the value exactly.
       *
       * @param dp Decimal places, 0 to 1e+6 inclusive
+      * @param rm Rounding mode: 0 (down), 1 (half-up), 2 (half-even) or 3 (up).
       * @throws `!toFix!` if dp is invalid.
       */
     def toExponential(): String = js.native
     def toExponential(dp: Double): String = js.native
+    def toExponential(dp: Double, rm: RoundingMode): String = js.native
+    def toExponential(dp: Unit, rm: RoundingMode): String = js.native
     
     /**
       * Returns a string representing the value of this Big number in normal notation to a fixed number of decimal places dp.
@@ -199,10 +219,13 @@ object mod extends Shortcut {
       * This is also unlike Number.prototype.toFixed, which returns the value to zero decimal places.
       *
       * @param dp Decimal places, 0 to 1e+6 inclusive
+      * @param rm Rounding mode: 0 (down), 1 (half-up), 2 (half-even) or 3 (up).
       * @throws `!toFix!` if dp is invalid.
       */
     def toFixed(): String = js.native
     def toFixed(dp: Double): String = js.native
+    def toFixed(dp: Double, rm: RoundingMode): String = js.native
+    def toFixed(dp: Unit, rm: RoundingMode): String = js.native
     
     /**
       * Returns a string representing the value of this Big number.
@@ -235,10 +258,13 @@ object mod extends Shortcut {
       * If sd is omitted, or is null or undefined, then the return value is the same as .toString().
       *
       * @param sd Significant digits, 1 to 1e+6 inclusive
+      * @param rm Rounding mode: 0 (down), 1 (half-up), 2 (half-even) or 3 (up).
       * @throws `!toPre!` if sd is invalid.
       */
     def toPrecision(): String = js.native
     def toPrecision(sd: Double): String = js.native
+    def toPrecision(sd: Double, rm: RoundingMode): String = js.native
+    def toPrecision(sd: Unit, rm: RoundingMode): String = js.native
   }
   @JSImport("big.js", "Big")
   @js.native
@@ -247,7 +273,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("big.js", "Big")
   @js.native
-  class BigCls protected ()
+  open class BigCls protected ()
     extends StObject
        with typings.bigJs.mod.Big {
     /**
@@ -266,7 +292,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("big.js", JSImport.Default)
   @js.native
-  class defaultCls protected ()
+  open class defaultCls protected ()
     extends StObject
        with typings.bigJs.mod.Big {
     /**
@@ -280,88 +306,6 @@ object mod extends Shortcut {
       * @throws `NaN` on an invalid value.
       */
     def this(value: BigSource) = this()
-  }
-  
-  object global {
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSGlobal("Big")
-    @js.native
-    class Big protected ()
-      extends StObject
-         with typings.bigJs.mod.Big {
-      /**
-        * Returns a new instance of a Big number object
-        *
-        * String values may be in exponential, as well as normal (non-exponential) notation.
-        * There is no limit to the number of digits of a string value (other than that of Javascript's maximum array size), but the largest recommended exponent magnitude is 1e+6.
-        * Infinity, NaN and hexadecimal literal strings, e.g. '0xff', are not valid.
-        * String values in octal literal form will be interpreted as decimals, e.g. '011' is 11, not 9.
-        *
-        * @throws `NaN` on an invalid value.
-        */
-      def this(value: BigSource) = this()
-    }
-    @JSGlobal("Big")
-    @js.native
-    val Big: typings.bigJs.mod.global.BigJs.BigConstructor = js.native
-    
-    object BigJs {
-      
-      type Big = Big_
-      
-      type BigConstructor = BigConstructor_
-      
-      type BigSource = BigSource_
-      
-      /* Rewritten from type alias, can be one of: 
-        - typings.bigJs.bigJsNumbers.`1`
-        - typings.bigJs.bigJsNumbers.`0`
-        - typings.bigJs.bigJsNumbers.`-1`
-      */
-      trait Comparison extends StObject
-      object Comparison {
-        
-        inline def EQ: `0` = 0.asInstanceOf[`0`]
-        
-        inline def GT: `1` = 1.asInstanceOf[`1`]
-        
-        inline def LT: `-1` = -1.asInstanceOf[`-1`]
-      }
-      
-      /* Rewritten from type alias, can be one of: 
-        - typings.bigJs.bigJsNumbers.`0`
-        - typings.bigJs.bigJsNumbers.`1`
-        - typings.bigJs.bigJsNumbers.`2`
-        - typings.bigJs.bigJsNumbers.`3`
-      */
-      trait RoundingMode extends StObject
-      object RoundingMode {
-        
-        /**
-          * Rounds towards zero.
-          * I.e. truncate, no rounding.
-          */
-        inline def RoundDown: `0` = 0.asInstanceOf[`0`]
-        
-        /**
-          * Rounds towards nearest neighbour.
-          * If equidistant, rounds towards even neighbour.
-          */
-        inline def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
-        
-        /**
-          * Rounds towards nearest neighbour.
-          * If equidistant, rounds away from zero.
-          */
-        inline def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
-        
-        /**
-          * Rounds away from zero.
-          */
-        inline def RoundUp: `3` = 3.asInstanceOf[`3`]
-      }
-    }
   }
   
   @js.native
@@ -431,15 +375,42 @@ object mod extends Shortcut {
       * Default value: 1
       */
     var RM: Double = js.native
+    
+    /** Readonly rounding modes */
+    /**
+      * Rounds towards zero.
+      * I.e. truncate, no rounding.
+      */
+    val roundDown: `0` = js.native
+    
+    /**
+      * Rounds towards nearest neighbour.
+      * If equidistant, rounds towards even neighbour.
+      */
+    val roundHalfEven: `2` = js.native
+    
+    /**
+      * Rounds towards nearest neighbour.
+      * If equidistant, rounds away from zero.
+      */
+    val roundHalfUp: `1` = js.native
+    
+    /**
+      * Rounds away from zero.
+      */
+    val roundUp: `3` = js.native
+    
+    /**
+      * When set to true, an error will be thrown if a primitive number is passed to the Big constructor,
+      * or if valueOf is called, or if toNumber is called on a Big which cannot be converted to a primitive number without a loss of precision.
+      *
+      * true|false
+      * Default value: false
+      */
+    var strict: Boolean = js.native
   }
   
-  type BigConstructor_ = BigConstructor
-  
   type BigSource = Double | String | typings.bigJs.mod.Big
-  
-  type BigSource_ = BigSource
-  
-  type Big_ = typings.bigJs.mod.Big
   
   /* Rewritten from type alias, can be one of: 
     - typings.bigJs.bigJsNumbers.`1`
@@ -449,10 +420,25 @@ object mod extends Shortcut {
   trait Comparison extends StObject
   object Comparison {
     
+    /**
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use 0 instead.
+      */
     inline def EQ: `0` = 0.asInstanceOf[`0`]
     
+    /**
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use > 0 instead.
+      */
     inline def GT: `1` = 1.asInstanceOf[`1`]
     
+    /**
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use < 0 instead.
+      */
     inline def LT: `-1` = -1.asInstanceOf[`-1`]
   }
   
@@ -468,23 +454,35 @@ object mod extends Shortcut {
     /**
       * Rounds towards zero.
       * I.e. truncate, no rounding.
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use 0 or Big.roundDown instead.
       */
     inline def RoundDown: `0` = 0.asInstanceOf[`0`]
     
     /**
       * Rounds towards nearest neighbour.
       * If equidistant, rounds towards even neighbour.
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use 2 or Big.roundHalfEven instead.
       */
     inline def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
     
     /**
       * Rounds towards nearest neighbour.
       * If equidistant, rounds away from zero.
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use 1 or Big.roundHalfUp instead.
       */
     inline def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
     
     /**
       * Rounds away from zero.
+      * @deprecated Const enums cannot be used by JavaScript consumers or with single-file transpilation, i.e. isolatedModules
+      * {@link https://github.com/microsoft/DefinitelyTyped-tools/blob/master/packages/dtslint/docs/no-const-enum.md}.
+      * Use 3 or Big.roundUp instead.
       */
     inline def RoundUp: `3` = 3.asInstanceOf[`3`]
   }

@@ -16,7 +16,7 @@ object global {
     
     @JSGlobal("ActiveStorage.DirectUpload")
     @js.native
-    class DirectUpload protected ()
+    open class DirectUpload protected ()
       extends typings.railsActivestorage.mod.DirectUpload {
       def this(file: File, url: String) = this()
       def this(file: File, url: String, delegate: DirectUploadDelegate) = this()

@@ -21,9 +21,9 @@ trait WebCLProgram extends StObject {
   
   def createKernelsInProgram(): js.Array[WebCLKernel] = js.native
   
-  def getBuildInfo(device: WebCLDevice, name: ProgramBuildInfo): js.Any = js.native
+  def getBuildInfo(device: WebCLDevice, name: ProgramBuildInfo): Any = js.native
   
-  def getInfo(name: ProgramInfo): js.Any = js.native
+  def getInfo(name: ProgramInfo): Any = js.native
   
   def release(): Unit = js.native
 }

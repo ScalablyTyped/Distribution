@@ -1,6 +1,5 @@
 package typings.awsSdkClientS3Browser
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object typesCopyPartResultMod {
     /**
       * <p>Date and time at which the object was uploaded.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
+    var LastModified: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object CopyPartResult {
     
@@ -32,7 +31,7 @@ object typesCopyPartResultMod {
       
       inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
       
-      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }
@@ -46,7 +45,7 @@ object typesCopyPartResultMod {
       * <p>Date and time at which the object was uploaded.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledCopyPartResult: js.UndefOr[Date] = js.undefined
+    var LastModified_UnmarshalledCopyPartResult: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledCopyPartResult {
     
@@ -57,7 +56,7 @@ object typesCopyPartResultMod {
     
     extension [Self <: UnmarshalledCopyPartResult](x: Self) {
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }

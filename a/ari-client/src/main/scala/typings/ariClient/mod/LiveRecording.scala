@@ -1,8 +1,7 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.DestinationRecordingNameString
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait LiveRecording
   /**
     * Stop a live recording and discard it.
     */
-  def cancel(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def cancel(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Cause for recording failure if failed.
@@ -39,7 +38,7 @@ trait LiveRecording
     */
   def copyStored(
     params: DestinationRecordingNameString,
-    callback: js.Function2[/* err */ Error, /* storedrecording */ StoredRecording, Unit]
+    callback: js.Function2[/* err */ js.Error, /* storedrecording */ StoredRecording, Unit]
   ): Unit = js.native
   
   /**
@@ -49,7 +48,7 @@ trait LiveRecording
   /**
     * Delete a stored recording.
     */
-  def deleteStored(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def deleteStored(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Duration in seconds of the recording.
@@ -68,7 +67,7 @@ trait LiveRecording
   /**
     * List live recordings.
     */
-  def getLive(callback: js.Function2[/* err */ Error, /* liverecording */ this.type, Unit]): Unit = js.native
+  def getLive(callback: js.Function2[/* err */ js.Error, /* liverecording */ this.type, Unit]): Unit = js.native
   
   /**
     * Get a stored recordings details.
@@ -77,7 +76,7 @@ trait LiveRecording
   /**
     * Get a stored recordings details.
     */
-  def getStored(callback: js.Function2[/* err */ Error, /* storedrecording */ StoredRecording, Unit]): Unit = js.native
+  def getStored(callback: js.Function2[/* err */ js.Error, /* storedrecording */ StoredRecording, Unit]): Unit = js.native
   
   /**
     * Get the file associated with the stored recording.
@@ -86,7 +85,7 @@ trait LiveRecording
   /**
     * Get the file associated with the stored recording.
     */
-  def getStoredFile(callback: js.Function2[/* err */ Error, /* binary */ Buffer, Unit]): Unit = js.native
+  def getStoredFile(callback: js.Function2[/* err */ js.Error, /* binary */ Buffer, Unit]): Unit = js.native
   
   /**
     * List recordings that are complete.
@@ -95,7 +94,7 @@ trait LiveRecording
   /**
     * List recordings that are complete.
     */
-  def listStored(callback: js.Function2[/* err */ Error, /* storedrecordings */ js.Array[StoredRecording], Unit]): Unit = js.native
+  def listStored(callback: js.Function2[/* err */ js.Error, /* storedrecordings */ js.Array[StoredRecording], Unit]): Unit = js.native
   
   /**
     * Mute a live recording.
@@ -106,7 +105,7 @@ trait LiveRecording
     * Mute a live recording.
     * Muting a recording suspends silence detection, which will be restarted when the recording is unmuted.
     */
-  def mute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def mute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Base name for the recording.
@@ -122,7 +121,7 @@ trait LiveRecording
     * Pause a live recording.
     * Pausing a recording suspends silence detection, which will be restarted when the recording is unpaused. Paused time is not included in the accounting for maxDurationSeconds.
     */
-  def pause(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def pause(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Duration of silence, in seconds, detected in the recording. This is only available if the recording was initiated with a non-zero maxSilenceSeconds.
@@ -141,7 +140,7 @@ trait LiveRecording
   /**
     * Stop a live recording and store it.
     */
-  def stop(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stop(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Duration of talking, in seconds, detected in the recording. This is only available if the recording was initiated with a non-zero maxSilenceSeconds.
@@ -160,7 +159,7 @@ trait LiveRecording
   /**
     * Unmute a live recording.
     */
-  def unmute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unmute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Unpause a live recording.
@@ -169,5 +168,5 @@ trait LiveRecording
   /**
     * Unpause a live recording.
     */
-  def unpause(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unpause(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

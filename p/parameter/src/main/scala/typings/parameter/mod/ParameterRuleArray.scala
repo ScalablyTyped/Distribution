@@ -17,7 +17,7 @@ trait ParameterRuleArray
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var rule: js.UndefOr[ParameterRules] = js.undefined
+  var rule: js.UndefOr[ParameterRules[Any]] = js.undefined
   
   @JSName("type")
   var type_ParameterRuleArray: array | arrayQuestionmark
@@ -44,7 +44,7 @@ object ParameterRuleArray {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ParameterRules[Any]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     

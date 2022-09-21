@@ -2,9 +2,9 @@ package typings.bookshelf.mod
 
 import typings.bookshelf.bookshelfStrings.asc_
 import typings.bookshelf.bookshelfStrings.desc_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.bookshelf.bookshelfStrings.ASC
@@ -12,16 +12,14 @@ import scala.scalajs.js.annotation._
   - typings.bookshelf.bookshelfStrings.DESC
   - typings.bookshelf.bookshelfStrings.desc_
 */
-trait SortOrder extends js.Object
-
+trait SortOrder extends StObject
 object SortOrder {
-  @scala.inline
-  def ASC: typings.bookshelf.bookshelfStrings.ASC = "ASC".asInstanceOf[typings.bookshelf.bookshelfStrings.ASC]
-  @scala.inline
-  def DESC: typings.bookshelf.bookshelfStrings.DESC = "DESC".asInstanceOf[typings.bookshelf.bookshelfStrings.DESC]
-  @scala.inline
-  def asc: asc_ = "asc".asInstanceOf[asc_]
-  @scala.inline
-  def desc: desc_ = "desc".asInstanceOf[desc_]
+  
+  inline def ASC: typings.bookshelf.bookshelfStrings.ASC = "ASC".asInstanceOf[typings.bookshelf.bookshelfStrings.ASC]
+  
+  inline def DESC: typings.bookshelf.bookshelfStrings.DESC = "DESC".asInstanceOf[typings.bookshelf.bookshelfStrings.DESC]
+  
+  inline def asc: asc_ = "asc".asInstanceOf[asc_]
+  
+  inline def desc: desc_ = "desc".asInstanceOf[desc_]
 }
-

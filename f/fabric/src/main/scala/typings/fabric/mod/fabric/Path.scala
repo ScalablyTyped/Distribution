@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param path Path data (sequence of coordinates and corresponding "command" tokens)
   * @param [options] Options object
   */
-class Path ()
+open class Path ()
   extends typings.fabric.fabricImplMod.Path {
   def this(path: String) = this()
   def this(path: js.Array[typings.fabric.fabricImplMod.Point]) = this()
@@ -49,5 +49,5 @@ object Path {
     * Creates an instance of fabric.Path from an object
     * @param callback Callback to invoke when an fabric.Path instance is created
     */
-  inline def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
+  inline def fromObject(`object`: Any, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
 }

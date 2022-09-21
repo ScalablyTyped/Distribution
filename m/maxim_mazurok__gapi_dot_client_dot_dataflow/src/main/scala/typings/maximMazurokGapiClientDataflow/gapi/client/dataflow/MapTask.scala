@@ -35,7 +35,7 @@ object MapTask {
     
     inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    inline def setInstructionsVarargs(value: ParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+    inline def setInstructionsVarargs(value: ParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value*))
     
     inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object ListAccountsForProvisionedPermissionSetResponse {
     
     inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

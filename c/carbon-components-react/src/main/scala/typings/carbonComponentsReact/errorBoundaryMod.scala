@@ -11,7 +11,7 @@ object errorBoundaryMod {
   
   @JSImport("carbon-components-react/lib/components/ErrorBoundary", "ErrorBoundary")
   @js.native
-  class ErrorBoundary () extends default
+  open class ErrorBoundary () extends default
   
   @JSImport("carbon-components-react/lib/components/ErrorBoundary", "ErrorBoundaryContext")
   @js.native

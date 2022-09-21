@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Buffer extends StObject {
   
-  /* private */ var _buffer: js.Any = js.native
+  /* private */ var _buffer: Any = js.native
   
   /** @hidden */
   var _data: Nullable[DataArray] = js.native
   
-  /* private */ var _divisor: js.Any = js.native
+  /* private */ var _divisor: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
   /** @hidden */
   def _increaseReferences(): Unit = js.native
   
-  /* private */ var _instanced: js.Any = js.native
+  /* private */ var _instanced: Any = js.native
   
-  /* private */ var _isAlreadyOwned: js.Any = js.native
+  /* private */ var _isAlreadyOwned: Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  /* private */ var _updatable: js.Any = js.native
+  /* private */ var _updatable: Any = js.native
   
   /**
     * Gets the byte stride.
@@ -34,7 +34,8 @@ trait Buffer extends StObject {
   val byteStride: Double = js.native
   
   /**
-    * Store data into the buffer. If the buffer was already used it will be either recreated or updated depending on isUpdatable property
+    * Store data into the buffer. Creates the buffer if not used already.
+    * If the buffer was already used, it will be updated only if it is updatable, otherwise it will do nothing.
     * @param data defines the data to store
     */
   def create(): Unit = js.native

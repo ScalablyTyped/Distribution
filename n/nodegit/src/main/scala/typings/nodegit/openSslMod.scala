@@ -8,7 +8,7 @@ object openSslMod {
   
   @JSImport("nodegit/open-ssl", "Openssl")
   @js.native
-  class Openssl () extends StObject
+  open class Openssl () extends StObject
   /* static members */
   object Openssl {
     

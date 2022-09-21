@@ -14,7 +14,7 @@ object headerControlMod {
   
   @JSImport("@wordpress/customize-browser/HeaderControl", "HeaderControl")
   @js.native
-  class HeaderControl protected () extends Control {
+  open class HeaderControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -22,12 +22,12 @@ object headerControlMod {
     
     def getInitialHeaderImage(): ImageModel = js.native
     
-    def onCropped(croppedImage: js.Any): Unit = js.native
+    def onCropped(croppedImage: Any): Unit = js.native
     
     def onSelect(): Unit = js.native
     
     // TODO
-    def onSkippedCrop(selection: js.Any): Unit = js.native
+    def onSkippedCrop(selection: Any): Unit = js.native
     
     def openMedia(event: Event): Unit = js.native
     

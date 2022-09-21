@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(iterable: js.Array[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def apply(iterable: js.Array[Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   @JSImport("p-try-each", JSImport.Namespace)
   @js.native

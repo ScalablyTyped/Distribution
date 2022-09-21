@@ -2,7 +2,6 @@ package typings.geoipLite
 
 import typings.geoipLite.geoipLiteStrings.`0`
 import typings.geoipLite.geoipLiteStrings.`1`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +32,8 @@ object mod {
   inline def startWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def stopWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")().asInstanceOf[Unit]
-  inline def stopWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type AsyncCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type AsyncCallback = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   
   type CmpArgs = Double | js.Array[Double]
   

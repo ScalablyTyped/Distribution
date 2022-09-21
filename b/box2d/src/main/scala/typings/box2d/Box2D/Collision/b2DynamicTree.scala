@@ -13,7 +13,7 @@ trait b2DynamicTree extends StObject {
     * @param userDate User defined data for this proxy.
     * @return Dynamic tree node.
     **/
-  def CreateProxy(aabb: b2AABB, userData: js.Any): b2DynamicTreeNode
+  def CreateProxy(aabb: b2AABB, userData: Any): b2DynamicTreeNode
   
   /**
     * Destroy a proxy. This asserts if the id is invalid.
@@ -34,7 +34,7 @@ trait b2DynamicTree extends StObject {
     * @param proxy Proxy to retrieve user data from.
     * @return User data for proxy or null if proxy is invalid.
     **/
-  def GetUserData(proxy: b2DynamicTreeNode): js.Any
+  def GetUserData(proxy: b2DynamicTreeNode): Any
   
   /**
     * Move a proxy with a swept AABB. If the proxy has moved outside of its fattened AABB, then the proxy is removed from the tree and re-inserted. Otherwise the function returns immediately.
@@ -74,10 +74,10 @@ trait b2DynamicTree extends StObject {
 object b2DynamicTree {
   
   inline def apply(
-    CreateProxy: (b2AABB, js.Any) => b2DynamicTreeNode,
+    CreateProxy: (b2AABB, Any) => b2DynamicTreeNode,
     DestroyProxy: b2DynamicTreeNode => Unit,
     GetFatAABB: b2DynamicTreeNode => b2AABB,
-    GetUserData: b2DynamicTreeNode => js.Any,
+    GetUserData: b2DynamicTreeNode => Any,
     MoveProxy: (b2DynamicTreeNode, b2AABB, b2Vec2) => Boolean,
     Query: (js.Function1[/* proxy */ b2DynamicTreeNode, Boolean], b2AABB) => Unit,
     RayCast: (js.Function2[/* input */ b2RayCastInput, /* proxy */ b2DynamicTreeNode, Double], b2RayCastInput) => Unit,
@@ -89,13 +89,13 @@ object b2DynamicTree {
   
   extension [Self <: b2DynamicTree](x: Self) {
     
-    inline def setCreateProxy(value: (b2AABB, js.Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
+    inline def setCreateProxy(value: (b2AABB, Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
     
     inline def setDestroyProxy(value: b2DynamicTreeNode => Unit): Self = StObject.set(x, "DestroyProxy", js.Any.fromFunction1(value))
     
     inline def setGetFatAABB(value: b2DynamicTreeNode => b2AABB): Self = StObject.set(x, "GetFatAABB", js.Any.fromFunction1(value))
     
-    inline def setGetUserData(value: b2DynamicTreeNode => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction1(value))
+    inline def setGetUserData(value: b2DynamicTreeNode => Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction1(value))
     
     inline def setMoveProxy(value: (b2DynamicTreeNode, b2AABB, b2Vec2) => Boolean): Self = StObject.set(x, "MoveProxy", js.Any.fromFunction3(value))
     

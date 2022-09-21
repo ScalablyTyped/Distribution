@@ -7,7 +7,6 @@ import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.FilterFunction
 import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats
 import typings.node.streamMod.Readable
 import typings.std.AsyncIterableIterator
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,14 +65,14 @@ object anon {
       *
       * Defaults to zero, which will not crawl subdirectories.
       */
-    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
+    var deep: js.UndefOr[Boolean | Double | String | js.RegExp | FilterFunction] = js.undefined
     
     /**
       * Filter critiera. Can be a glob pattern, a regular expression, or a filter function.
       *
       * Defaults to returning all files.
       */
-    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.undefined
+    var filter: js.UndefOr[Boolean | String | js.RegExp | FilterFunction] = js.undefined
     
     /**
       * Custom implementations of filesystem methods.
@@ -115,15 +114,15 @@ object anon {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean | Double | String | js.RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      inline def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
+      inline def setDeepFunction1(value: /* stat */ Stats => Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
       
       inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      inline def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Boolean | String | js.RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* stat */ Stats => Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -159,14 +158,14 @@ object anon {
       *
       * Defaults to zero, which will not crawl subdirectories.
       */
-    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
+    var deep: js.UndefOr[Boolean | Double | String | js.RegExp | FilterFunction] = js.undefined
     
     /**
       * Filter critiera. Can be a glob pattern, a regular expression, or a filter function.
       *
       * Defaults to returning all files.
       */
-    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.undefined
+    var filter: js.UndefOr[Boolean | String | js.RegExp | FilterFunction] = js.undefined
     
     /**
       * Custom implementations of filesystem methods.
@@ -208,15 +207,15 @@ object anon {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean | Double | String | js.RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      inline def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
+      inline def setDeepFunction1(value: /* stat */ Stats => Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
       
       inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      inline def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Boolean | String | js.RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* stat */ Stats => Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       

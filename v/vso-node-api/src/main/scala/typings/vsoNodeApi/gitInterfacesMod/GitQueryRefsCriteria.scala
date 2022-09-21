@@ -32,11 +32,11 @@ object GitQueryRefsCriteria {
     
     inline def setCommitIds(value: js.Array[String]): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
     
-    inline def setCommitIdsVarargs(value: String*): Self = StObject.set(x, "commitIds", js.Array(value :_*))
+    inline def setCommitIdsVarargs(value: String*): Self = StObject.set(x, "commitIds", js.Array(value*))
     
     inline def setRefNames(value: js.Array[String]): Self = StObject.set(x, "refNames", value.asInstanceOf[js.Any])
     
-    inline def setRefNamesVarargs(value: String*): Self = StObject.set(x, "refNames", js.Array(value :_*))
+    inline def setRefNamesVarargs(value: String*): Self = StObject.set(x, "refNames", js.Array(value*))
     
     inline def setSearchType(value: GitRefSearchType): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
   }

@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsShown extends StObject {
   
+  /**
+    * Specifies whether a tooltip is visible by default or not.
+    */
   var isShown: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the text or HTML markup displayed in the tooltip.
+    */
   var text: js.UndefOr[String] = js.undefined
 }
 object IsShown {

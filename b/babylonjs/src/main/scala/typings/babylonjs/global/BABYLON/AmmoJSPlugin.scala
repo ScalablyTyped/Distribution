@@ -12,29 +12,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param ammoInjection can be used to inject your own ammo reference
   * @param overlappingPairCache can be used to specify your own overlapping pair cache
   */
-class AmmoJSPlugin ()
+open class AmmoJSPlugin ()
   extends StObject
      with typings.babylonjs.BABYLON.AmmoJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
-  def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-  def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
-  def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-  def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
-  def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-  def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+  def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: Any) = this()
+  def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any, overlappingPairCache: Any) = this()
+  def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: Any) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: Any, overlappingPairCache: Any) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: Any) = this()
 }
 /* static members */
 object AmmoJSPlugin {
   
-  @JSGlobal("BABYLON.AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+  @JSGlobal("BABYLON.AmmoJSPlugin._DISABLE_COLLISION_FLAG")
   @js.native
-  val DISABLE_COLLISION_FLAG: js.Any = js.native
+  val _DISABLE_COLLISION_FLAG: Any = js.native
   
-  @JSGlobal("BABYLON.AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+  @JSGlobal("BABYLON.AmmoJSPlugin._DISABLE_DEACTIVATION_FLAG")
   @js.native
-  val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
+  val _DISABLE_DEACTIVATION_FLAG: Any = js.native
   
-  @JSGlobal("BABYLON.AmmoJSPlugin.KINEMATIC_FLAG")
+  @JSGlobal("BABYLON.AmmoJSPlugin._KINEMATIC_FLAG")
   @js.native
-  val KINEMATIC_FLAG: js.Any = js.native
+  val _KINEMATIC_FLAG: Any = js.native
 }

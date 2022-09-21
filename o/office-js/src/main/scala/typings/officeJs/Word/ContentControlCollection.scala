@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @js.native
@@ -27,6 +27,7 @@ trait ContentControlCollection
   /**
     * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param id Required. A content control identifier.
@@ -36,6 +37,7 @@ trait ContentControlCollection
   /**
     * Gets a content control by its identifier. Returns a null object if there isn't a content control with the identifier in this collection.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param id Required. A content control identifier.
@@ -45,6 +47,7 @@ trait ContentControlCollection
   /**
     * Gets the content controls that have the specified tag.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param tag Required. A tag set on a content control.
@@ -54,6 +57,7 @@ trait ContentControlCollection
   /**
     * Gets the content controls that have the specified title.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param title Required. The title of a content control.
@@ -63,6 +67,7 @@ trait ContentControlCollection
   /**
     * Gets the content controls that have the specified types and/or subtypes.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param types Required. An array of content control types and/or subtypes.
@@ -72,6 +77,7 @@ trait ContentControlCollection
   /**
     * Gets the first content control in this collection. Throws an error if this collection is empty.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getFirst(): ContentControl = js.native
@@ -79,18 +85,20 @@ trait ContentControlCollection
   /**
     * Gets the first content control in this collection. Returns a null object if this collection is empty.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getFirstOrNullObject(): ContentControl = js.native
   
   /**
-    * Gets a content control by its index in the collection.
+    * Gets a content control by its ID.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param index The index.
+    * @param id The content control's ID.
     */
-  def getItem(index: Double): ContentControl = js.native
+  def getItem(id: Double): ContentControl = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ContentControl] = js.native
@@ -113,12 +121,12 @@ trait ContentControlCollection
   def toJSON(): ContentControlCollectionData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): ContentControlCollection = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): ContentControlCollection = js.native
 }

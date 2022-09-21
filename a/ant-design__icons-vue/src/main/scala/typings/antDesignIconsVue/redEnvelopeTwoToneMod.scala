@@ -1,31 +1,29 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object redEnvelopeTwoToneMod {
+object redEnvelopeTwoToneMod extends Shortcut {
   
-  object default {
+  @JSImport("@ant-design/icons-vue/lib/icons/RedEnvelopeTwoTone", JSImport.Default)
+  @js.native
+  val default: RedEnvelopeTwoToneIconType = js.native
+  
+  @js.native
+  trait RedEnvelopeTwoToneIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
     
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/RedEnvelopeTwoTone", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/RedEnvelopeTwoTone", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/RedEnvelopeTwoTone", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
+    @JSName("displayName")
+    var displayName_RedEnvelopeTwoToneIconType: String = js.native
   }
+  
+  type _To = RedEnvelopeTwoToneIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `redEnvelopeTwoToneMod.foo` */
+  override def _to: RedEnvelopeTwoToneIconType = default
 }

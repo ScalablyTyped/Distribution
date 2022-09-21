@@ -24,7 +24,7 @@ object anon {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
       
       inline def setObjects(value: IStyleBaseArray): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     }

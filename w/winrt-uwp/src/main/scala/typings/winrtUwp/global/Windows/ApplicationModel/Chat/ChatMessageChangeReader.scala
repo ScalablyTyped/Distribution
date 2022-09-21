@@ -29,5 +29,5 @@ abstract class ChatMessageChangeReader ()
     * @return An asynchronous operation that returns a list of changes.
     */
   /* CompleteClass */
-  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

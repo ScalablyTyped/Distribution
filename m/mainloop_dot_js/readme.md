@@ -10,10 +10,10 @@ A well-constructed JavaScript main loop useful for games and other animated appl
 | ------------------ | :-------------: |
 | Full name          | mainloop.js |
 | Keywords           | main, loop, game, animation, time |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 17055 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2395.3333333333335 |
+| # stars            | 464.0 |
 
 ## Links
 - [Homepage](https://github.com/IceCreamYou/MainLoop.js)

@@ -12,12 +12,12 @@ object multiPickerNativeMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rmc-picker/lib/MultiPicker.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ComponentDidMount {
     def this(props: IMultiPickerProps) = this()
-    def this(props: Unit, context: js.Any) = this()
-    def this(props: IMultiPickerProps, context: js.Any) = this()
+    def this(props: Unit, context: Any) = this()
+    def this(props: IMultiPickerProps, context: Any) = this()
   }
   object default {
     
@@ -33,18 +33,18 @@ object multiPickerNativeMod {
   
   trait IMultiPickerProp extends StObject {
     
-    def getValue(): js.Any
+    def getValue(): Any
   }
   object IMultiPickerProp {
     
-    inline def apply(getValue: () => js.Any): IMultiPickerProp = {
+    inline def apply(getValue: () => Any): IMultiPickerProp = {
       val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[IMultiPickerProp]
     }
     
     extension [Self <: IMultiPickerProp](x: Self) {
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
 }

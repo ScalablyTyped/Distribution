@@ -10,10 +10,10 @@ Returns `true` if the given string looks like a glob pattern or an extglob patte
 | ------------------ | :-------------: |
 | Full name          | is-glob |
 | Keywords           | bash, braces, check, exec, expression, extglob, glob, globbing, globstar, is, match, matches, pattern, regex, regular, string, test |
-| # releases         | 2 |
-| # dependents       | 437 |
-| # downloads        | 1585483177 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2946294633333334E8 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/is-glob)

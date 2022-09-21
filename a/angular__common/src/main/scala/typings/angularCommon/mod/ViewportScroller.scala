@@ -33,10 +33,7 @@ abstract class ViewportScroller () extends StObject {
     * See also [window.history.scrollRestoration
     * info](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration).
     */
-  @JSName("setHistoryScrollRestoration")
-  def setHistoryScrollRestoration_auto(scrollRestoration: auto): Unit = js.native
-  @JSName("setHistoryScrollRestoration")
-  def setHistoryScrollRestoration_manual(scrollRestoration: manual): Unit = js.native
+  def setHistoryScrollRestoration(scrollRestoration: auto | manual): Unit = js.native
   
   def setOffset(offset: js.Function0[js.Tuple2[Double, Double]]): Unit = js.native
   /**
@@ -46,4 +43,17 @@ abstract class ViewportScroller () extends StObject {
     *
     */
   def setOffset(offset: js.Tuple2[Double, Double]): Unit = js.native
+}
+/* static members */
+object ViewportScroller {
+  
+  @JSImport("@angular/common", "ViewportScroller")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** @nocollapse */
+  @JSImport("@angular/common", "ViewportScroller.\u0275prov")
+  @js.native
+  def ɵprov: Any = js.native
+  inline def ɵprov_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

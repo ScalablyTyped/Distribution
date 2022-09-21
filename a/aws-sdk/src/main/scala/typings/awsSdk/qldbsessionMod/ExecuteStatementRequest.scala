@@ -34,7 +34,7 @@ object ExecuteStatementRequest {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ValueHolder*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ValueHolder*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     

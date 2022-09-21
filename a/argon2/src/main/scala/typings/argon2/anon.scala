@@ -5,7 +5,7 @@ import typings.argon2.argon2Booleans.`true`
 import typings.argon2.argon2Numbers.`0`
 import typings.argon2.argon2Numbers.`1`
 import typings.argon2.argon2Numbers.`2`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

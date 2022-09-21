@@ -10,10 +10,10 @@ Inline critical-path css and load the existing stylesheets asynchronously
 | ------------------ | :-------------: |
 | Full name          | inline-critical |
 | Keywords           | css, inline, loadcss, critical-path |
-| # releases         | 19 |
-| # dependents       | 6 |
-| # downloads        | 860391 |
-| # stars            | 5 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 100426.0 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/bezoerb/inline-critical#readme)

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "NotFilter")
 @js.native
-class NotFilter protected ()
+open class NotFilter protected ()
   extends StObject
      with Filter {
   def this(options: typings.ldapjs.anon.Filter) = this()
   
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  override def matches(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   var `type`: String = js.native

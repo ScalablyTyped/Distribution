@@ -1,7 +1,6 @@
 package typings.glReactNative
 
 import typings.glReactNative.glviewnativeMod.GLViewNative
-import typings.std.Error
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,14 +10,14 @@ object mod {
   
   @JSImport("gl-react-native", "Surface")
   @js.native
-  class Surface protected ()
+  open class Surface protected ()
     extends typings.glReact.mod.Surface[GLViewNative] {
     def this(props: typings.glReact.mod.SurfaceProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.glReact.mod.SurfaceProps, context: js.Any) = this()
+    def this(props: typings.glReact.mod.SurfaceProps, context: Any) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -28,7 +27,7 @@ object mod {
     
     var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
   }
   object SurfaceProps {
     
@@ -43,7 +42,7 @@ object mod {
       
       inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
       inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
     }

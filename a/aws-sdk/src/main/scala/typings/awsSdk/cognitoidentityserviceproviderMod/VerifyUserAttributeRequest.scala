@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VerifyUserAttributeRequest extends StObject {
   
   /**
-    * Represents the access token of the request to verify user attributes.
+    * A valid access token that Amazon Cognito issued to the user whose user attributes you want to verify.
     */
   var AccessToken: TokenModelType
   

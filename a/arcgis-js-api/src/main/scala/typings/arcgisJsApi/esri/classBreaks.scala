@@ -5,28 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Function for generating class breaks for an input field in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) based on a given classification method and normalization type.
+  * This object contains helper methods for generating class breaks visualizations for raster layers (i.e.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html)
   */
 trait classBreaks extends StObject {
   
   /**
-    * Generates class breaks for an input field (or expression) of a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) based on a given classification method and normalization type.
+    * Generates a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) used to render imagery data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
     */
-  def classBreaks(params: classBreaksClassBreaksParams): js.Promise[ClassBreaksResult]
+  def createRenderer(params: classBreaksCreateRendererParams): js.Promise[RasterClassBreaksResult]
 }
 object classBreaks {
   
-  inline def apply(classBreaks: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): classBreaks = {
-    val __obj = js.Dynamic.literal(classBreaks = js.Any.fromFunction1(classBreaks))
+  inline def apply(createRenderer: classBreaksCreateRendererParams => js.Promise[RasterClassBreaksResult]): classBreaks = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
     __obj.asInstanceOf[classBreaks]
   }
   
   extension [Self <: classBreaks](x: Self) {
     
-    inline def setClassBreaks(value: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): Self = StObject.set(x, "classBreaks", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: classBreaksCreateRendererParams => js.Promise[RasterClassBreaksResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

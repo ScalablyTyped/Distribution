@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log-symbols" : "4.0.0"
+      "log-symbols" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "log-symbols" : "4.0.0"
+      "log-symbols" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

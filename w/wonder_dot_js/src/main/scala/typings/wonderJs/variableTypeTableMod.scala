@@ -9,7 +9,7 @@ object variableTypeTableMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableTypeTable", "VariableTypeTable")
   @js.native
-  class VariableTypeTable () extends StObject
+  open class VariableTypeTable () extends StObject
   /* static members */
   object VariableTypeTable {
     

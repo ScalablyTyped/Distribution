@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response message for Capabilities.GetCapabilities.
-  */
 trait SchemaBuildBazelRemoteExecutionV2ServerCapabilities extends StObject {
   
   /**

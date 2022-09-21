@@ -2,10 +2,10 @@ package typings.xml
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.xml.anon.Attr
 import typings.xml.anon.Encoding
-import typings.xml.anon.Indent
+import typings.xml.anon.streamtrueOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   inline def apply(xmlObject: js.Array[XmlObject]): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(xmlObject: js.Array[XmlObject], options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(xmlObject: js.Array[XmlObject], options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(xmlObject: js.Array[XmlObject], options: streamtrueOption): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   inline def apply(xmlObject: js.Array[XmlObject], options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: Unit, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -24,16 +24,16 @@ object mod {
   inline def apply(xmlObject: XmlObject): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(xmlObject: XmlObject, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: XmlObject, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(xmlObject: XmlObject, options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(xmlObject: XmlObject, options: streamtrueOption): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   inline def apply(xmlObject: XmlObject, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xml", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Element_(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
+  inline def Element_(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(xmlObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ElementObject]
   
-  inline def element(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
+  inline def element(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(xmlObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ElementObject]
   
   @js.native
   trait ElementObject extends StObject {

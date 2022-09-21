@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepositoryHeadSourceCodeType extends StObject {
   
   /**
-    *  The name of the branch in an associated repository. The RepositoryHeadSourceCodeType specifies the tip of this branch. 
+    * The name of the branch in an associated repository. The RepositoryHeadSourceCodeType specifies the tip of this branch.
     */
   var BranchName: typings.awsSdk.codegurureviewerMod.BranchName
 }

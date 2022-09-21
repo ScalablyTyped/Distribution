@@ -8,5 +8,5 @@ object monthPickerMod {
   
   @JSImport("@nulogy/components/src/MonthPicker", "MonthPicker")
   @js.native
-  val MonthPicker: js.Any = js.native
+  val MonthPicker: Any = js.native
 }

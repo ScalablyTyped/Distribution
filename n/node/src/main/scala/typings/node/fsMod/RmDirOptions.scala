@@ -17,14 +17,12 @@ trait RmDirOptions extends StObject {
   var maxRetries: js.UndefOr[Double] = js.undefined
   
   /**
-    * @deprecated since v14.14.0 In future versions of Node.js,
-    * `fs.rmdir(path, { recursive: true })` will throw on nonexistent
-    * paths, or when given a file as a target.
+    * @deprecated since v14.14.0 In future versions of Node.js and will trigger a warning
+    * `fs.rmdir(path, { recursive: true })` will throw if `path` does not exist or is a file.
     * Use `fs.rm(path, { recursive: true, force: true })` instead.
     *
     * If `true`, perform a recursive directory removal. In
-    * recursive mode, errors are not reported if `path` does not exist, and
-    * operations are retried on failure.
+    * recursive mode, operations are retried on failure.
     * @default false
     */
   var recursive: js.UndefOr[Boolean] = js.undefined

@@ -44,7 +44,7 @@ object ExtTypeSettings {
     
     inline def setDetect(value: js.Array[FunctionExtTypeSettingsDetect]): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
-    inline def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = StObject.set(x, "detect", js.Array(value :_*))
+    inline def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = StObject.set(x, "detect", js.Array(value*))
     
     inline def setOrder(value: js.Object): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

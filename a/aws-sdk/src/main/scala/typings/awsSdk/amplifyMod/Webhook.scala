@@ -14,7 +14,7 @@ trait Webhook extends StObject {
   /**
     *  The create date and time for a webhook. 
     */
-  var createTime: CreateTime
+  var createTime: js.Date
   
   /**
     *  The description for a webhook. 
@@ -24,7 +24,7 @@ trait Webhook extends StObject {
   /**
     *  Updates the date and time for a webhook. 
     */
-  var updateTime: UpdateTime
+  var updateTime: js.Date
   
   /**
     *  The Amazon Resource Name (ARN) for the webhook. 
@@ -45,9 +45,9 @@ object Webhook {
   
   inline def apply(
     branchName: BranchName,
-    createTime: CreateTime,
+    createTime: js.Date,
     description: Description,
-    updateTime: UpdateTime,
+    updateTime: js.Date,
     webhookArn: WebhookArn,
     webhookId: WebhookId,
     webhookUrl: WebhookUrl
@@ -60,11 +60,11 @@ object Webhook {
     
     inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     inline def setWebhookArn(value: WebhookArn): Self = StObject.set(x, "webhookArn", value.asInstanceOf[js.Any])
     

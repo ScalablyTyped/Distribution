@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab/dist/types/core/services", "ProjectSnippetNotes")
 @js.native
-class ProjectSnippetNotes protected ()
+open class ProjectSnippetNotes protected ()
   extends typings.gitlab.projectSnippetNotesMod.ProjectSnippetNotes {
   def this(options: BaseServiceOptions) = this()
 }

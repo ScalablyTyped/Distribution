@@ -10,10 +10,10 @@ object photoCameraMod {
   
   @JSImport("material-ui/svg-icons/image/photo-camera", JSImport.Default)
   @js.native
-  class default () extends ImagePhotoCamera
+  open class default () extends ImagePhotoCamera
   
   @JSImport("material-ui/svg-icons/image/photo-camera", "ImagePhotoCamera")
   @js.native
-  class ImagePhotoCamera ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePhotoCamera ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

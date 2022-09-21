@@ -1,6 +1,7 @@
 package typings.roads
 
 import typings.roads.anon.CacheMaxAge
+import typings.roads.roadMod.Context
 import typings.roads.roadMod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +13,5 @@ object corsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(options: CacheMaxAge): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def build(options: CacheMaxAge): Middleware[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[Context]]
 }

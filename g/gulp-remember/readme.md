@@ -9,10 +9,10 @@ Adds previously seen files back into the stream.
 | ------------------ | :-------------: |
 | Full name          | gulp-remember |
 | Keywords           | gulpplugin |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 548279 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58506.333333333336 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](http://github.com/ahaurw01/gulp-remember)

@@ -29,6 +29,6 @@ object Default {
     
     inline def setLocalized(value: js.Array[Language]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
-    inline def setLocalizedVarargs(value: Language*): Self = StObject.set(x, "localized", js.Array(value :_*))
+    inline def setLocalizedVarargs(value: Language*): Self = StObject.set(x, "localized", js.Array(value*))
   }
 }

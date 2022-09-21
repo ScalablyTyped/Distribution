@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-font-format-keywords" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-font-format-keywords" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

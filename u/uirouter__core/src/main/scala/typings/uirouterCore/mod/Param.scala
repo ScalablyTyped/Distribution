@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "Param")
 @js.native
-class Param protected ()
+open class Param protected ()
   extends typings.uirouterCore.paramsMod.Param {
   def this(
     id: String,

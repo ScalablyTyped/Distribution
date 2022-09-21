@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.WebApiTagDefinition
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
@@ -13,7 +12,7 @@ trait GitPullRequest extends StObject {
   /**
     * Links to other related objects.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * A string which uniquely identifies this pull request. To generate an artifact ID for a pull request, use this template: ```vstfs:///Git/PullRequestId/{projectId}/{repositoryId}/{pullRequestId}```
@@ -33,7 +32,7 @@ trait GitPullRequest extends StObject {
   /**
     * The date when the pull request was closed (completed, abandoned, or merged externally).
     */
-  var closedDate: Date
+  var closedDate: js.Date
   
   /**
     * The code review ID of the pull request. Used internally.
@@ -53,7 +52,7 @@ trait GitPullRequest extends StObject {
   /**
     * The most recent date at which the pull request entered the queue to be completed. Used internally.
     */
-  var completionQueueTime: Date
+  var completionQueueTime: js.Date
   
   /**
     * The identity of the user who created the pull request.
@@ -63,7 +62,7 @@ trait GitPullRequest extends StObject {
   /**
     * The date when the pull request was created.
     */
-  var creationDate: Date
+  var creationDate: js.Date
   
   /**
     * The description of the pull request.
@@ -178,17 +177,17 @@ trait GitPullRequest extends StObject {
 object GitPullRequest {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     artifactId: String,
     autoCompleteSetBy: IdentityRef,
     closedBy: IdentityRef,
-    closedDate: Date,
+    closedDate: js.Date,
     codeReviewId: Double,
     commits: js.Array[GitCommitRef],
     completionOptions: GitPullRequestCompletionOptions,
-    completionQueueTime: Date,
+    completionQueueTime: js.Date,
     createdBy: IdentityRef,
-    creationDate: Date,
+    creationDate: js.Date,
     description: String,
     forkSource: GitForkRef,
     labels: js.Array[WebApiTagDefinition],
@@ -224,21 +223,21 @@ object GitPullRequest {
     
     inline def setClosedBy(value: IdentityRef): Self = StObject.set(x, "closedBy", value.asInstanceOf[js.Any])
     
-    inline def setClosedDate(value: Date): Self = StObject.set(x, "closedDate", value.asInstanceOf[js.Any])
+    inline def setClosedDate(value: js.Date): Self = StObject.set(x, "closedDate", value.asInstanceOf[js.Any])
     
     inline def setCodeReviewId(value: Double): Self = StObject.set(x, "codeReviewId", value.asInstanceOf[js.Any])
     
     inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setCompletionOptions(value: GitPullRequestCompletionOptions): Self = StObject.set(x, "completionOptions", value.asInstanceOf[js.Any])
     
-    inline def setCompletionQueueTime(value: Date): Self = StObject.set(x, "completionQueueTime", value.asInstanceOf[js.Any])
+    inline def setCompletionQueueTime(value: js.Date): Self = StObject.set(x, "completionQueueTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -246,7 +245,7 @@ object GitPullRequest {
     
     inline def setLabels(value: js.Array[WebApiTagDefinition]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: WebApiTagDefinition*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: WebApiTagDefinition*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLastMergeCommit(value: GitCommitRef): Self = StObject.set(x, "lastMergeCommit", value.asInstanceOf[js.Any])
     
@@ -272,7 +271,7 @@ object GitPullRequest {
     
     inline def setReviewers(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
     
-    inline def setReviewersVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "reviewers", js.Array(value :_*))
+    inline def setReviewersVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "reviewers", js.Array(value*))
     
     inline def setSourceRefName(value: String): Self = StObject.set(x, "sourceRefName", value.asInstanceOf[js.Any])
     
@@ -288,8 +287,8 @@ object GitPullRequest {
     
     inline def setWorkItemRefs(value: js.Array[ResourceRef]): Self = StObject.set(x, "workItemRefs", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemRefsVarargs(value: ResourceRef*): Self = StObject.set(x, "workItemRefs", js.Array(value :_*))
+    inline def setWorkItemRefsVarargs(value: ResourceRef*): Self = StObject.set(x, "workItemRefs", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -1,25 +1,24 @@
 package typings.vueMarkdown.anon
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Emailfuzzy extends StObject {
   
-  var email_fuzzy: RegExp
+  var email_fuzzy: js.RegExp
   
-  var host_fuzzy_test: RegExp
+  var host_fuzzy_test: js.RegExp
   
-  var link_fuzzy: RegExp
+  var link_fuzzy: js.RegExp
   
-  var link_no_ip_fuzzy: RegExp
+  var link_no_ip_fuzzy: js.RegExp
   
-  var pretest: RegExp
+  var pretest: js.RegExp
   
-  var schema_search: RegExp
+  var schema_search: js.RegExp
   
-  var schema_test: RegExp
+  var schema_test: js.RegExp
   
   var src_Any: String
   
@@ -80,13 +79,13 @@ trait Emailfuzzy extends StObject {
 object Emailfuzzy {
   
   inline def apply(
-    email_fuzzy: RegExp,
-    host_fuzzy_test: RegExp,
-    link_fuzzy: RegExp,
-    link_no_ip_fuzzy: RegExp,
-    pretest: RegExp,
-    schema_search: RegExp,
-    schema_test: RegExp,
+    email_fuzzy: js.RegExp,
+    host_fuzzy_test: js.RegExp,
+    link_fuzzy: js.RegExp,
+    link_no_ip_fuzzy: js.RegExp,
+    pretest: js.RegExp,
+    schema_search: js.RegExp,
+    schema_test: js.RegExp,
     src_Any: String,
     src_Cc: String,
     src_P: String,
@@ -122,19 +121,19 @@ object Emailfuzzy {
   
   extension [Self <: Emailfuzzy](x: Self) {
     
-    inline def setEmail_fuzzy(value: RegExp): Self = StObject.set(x, "email_fuzzy", value.asInstanceOf[js.Any])
+    inline def setEmail_fuzzy(value: js.RegExp): Self = StObject.set(x, "email_fuzzy", value.asInstanceOf[js.Any])
     
-    inline def setHost_fuzzy_test(value: RegExp): Self = StObject.set(x, "host_fuzzy_test", value.asInstanceOf[js.Any])
+    inline def setHost_fuzzy_test(value: js.RegExp): Self = StObject.set(x, "host_fuzzy_test", value.asInstanceOf[js.Any])
     
-    inline def setLink_fuzzy(value: RegExp): Self = StObject.set(x, "link_fuzzy", value.asInstanceOf[js.Any])
+    inline def setLink_fuzzy(value: js.RegExp): Self = StObject.set(x, "link_fuzzy", value.asInstanceOf[js.Any])
     
-    inline def setLink_no_ip_fuzzy(value: RegExp): Self = StObject.set(x, "link_no_ip_fuzzy", value.asInstanceOf[js.Any])
+    inline def setLink_no_ip_fuzzy(value: js.RegExp): Self = StObject.set(x, "link_no_ip_fuzzy", value.asInstanceOf[js.Any])
     
-    inline def setPretest(value: RegExp): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
+    inline def setPretest(value: js.RegExp): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
     
-    inline def setSchema_search(value: RegExp): Self = StObject.set(x, "schema_search", value.asInstanceOf[js.Any])
+    inline def setSchema_search(value: js.RegExp): Self = StObject.set(x, "schema_search", value.asInstanceOf[js.Any])
     
-    inline def setSchema_test(value: RegExp): Self = StObject.set(x, "schema_test", value.asInstanceOf[js.Any])
+    inline def setSchema_test(value: js.RegExp): Self = StObject.set(x, "schema_test", value.asInstanceOf[js.Any])
     
     inline def setSrc_Any(value: String): Self = StObject.set(x, "src_Any", value.asInstanceOf[js.Any])
     

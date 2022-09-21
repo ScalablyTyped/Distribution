@@ -1,7 +1,7 @@
 
 # Scala.js typings for cfb
 
-Typings are for version 1.2.0
+Typings are for version 1.2.2
 
 ## Library description:
 Compound File Binary File Format extractor
@@ -10,10 +10,10 @@ Compound File Binary File Format extractor
 | ------------------ | :-------------: |
 | Full name          | cfb |
 | Keywords           | cfb, compression, office |
-| # releases         | 6 |
-| # dependents       | 173 |
-| # downloads        | 31704394 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6212378.666666667 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](http://sheetjs.com/)

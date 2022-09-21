@@ -23,7 +23,7 @@ trait XLinkCreator
     * In case the entry exists already all its contents will be ignored and rewritten on storing of the object.
     * @param xStorage a parent storage the entry should be created or opened in
     * @param sEntryName a name for the entry
-    * @param aArgs {@link com.sun.star.document.MediaDescriptor} the link will be based on
+    * @param aArgs The {@link com.sun.star.document.MediaDescriptor} the link will be based on
     * @param aObjectArgs optional parameters for the object persistence initialization, see also {@link com.sun.star.embed.EmbeddedObjectDescriptor}
     * @throws com::sun::star::lang::IllegalArgumentException the argument is illegal
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
@@ -41,7 +41,7 @@ object XLinkCreator {
   inline def apply(
     acquire: () => Unit,
     createInstanceLink: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLinkCreator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceLink = js.Any.fromFunction4(createInstanceLink), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

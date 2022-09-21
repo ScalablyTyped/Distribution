@@ -13,7 +13,6 @@ import typings.reactNativeCalendarPicker.reactNativeCalendarPickerStrings.END_DA
 import typings.reactNativeCalendarPicker.reactNativeCalendarPickerStrings.START_DATE
 import typings.reactNativeCalendarPicker.reactNativeCalendarPickerStrings.circle
 import typings.reactNativeCalendarPicker.reactNativeCalendarPickerStrings.square
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +21,11 @@ object mod {
   
   @JSImport("react-native-calendar-picker", JSImport.Default)
   @js.native
-  class default () extends CalendarPicker
+  open class default () extends CalendarPicker
   
   @js.native
   trait CalendarPicker
-    extends Component[CalendarPickerProps, js.Object, js.Any] {
+    extends Component[CalendarPickerProps, js.Object, Any] {
     
     def handleOnPressDay(date: HandleOnPressDayArg): Unit = js.native
     
@@ -51,11 +50,13 @@ object mod {
     
     var dayShape: js.UndefOr[circle | square] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[Date] | DisabledDatesFunc] = js.undefined
+    var disabledDates: js.UndefOr[js.Array[js.Date] | DisabledDatesFunc] = js.undefined
     
     var disabledDatesTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var enableDateChange: js.UndefOr[Boolean] = js.undefined
+    
+    var headerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var headingLevel: js.UndefOr[Double] = js.undefined
     
@@ -63,15 +64,17 @@ object mod {
     
     var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var initialDate: js.UndefOr[Date] = js.undefined
+    var initialDate: js.UndefOr[js.Date] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     var maxRangeDuration: js.UndefOr[Double | js.Array[MaxDurationArrayItem]] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var minRangeDuration: js.UndefOr[Double | js.Array[MinDurationArrayItem]] = js.undefined
+    
+    var monthTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var monthYearHeaderWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -99,21 +102,33 @@ object mod {
     
     var scrollable: js.UndefOr[Boolean] = js.undefined
     
+    var selectMonthTitle: js.UndefOr[String] = js.undefined
+    
+    var selectYearTitle: js.UndefOr[String] = js.undefined
+    
     var selectedDayColor: js.UndefOr[String] = js.undefined
     
     var selectedDayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var selectedDayTextColor: js.UndefOr[String] = js.undefined
     
-    var selectedEndDate: js.UndefOr[Date] = js.undefined
+    var selectedDayTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+    
+    var selectedDisabledDatesTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+    
+    var selectedEndDate: js.UndefOr[js.Date] = js.undefined
     
     var selectedRangeEndStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
+    var selectedRangeEndTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+    
     var selectedRangeStartStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    
+    var selectedRangeStartTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var selectedRangeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var selectedStartDate: js.UndefOr[Date] = js.undefined
+    var selectedStartDate: js.UndefOr[js.Date] = js.undefined
     
     var showDayStragglers: js.UndefOr[Boolean] = js.undefined
     
@@ -128,6 +143,8 @@ object mod {
     var weekdays: js.UndefOr[js.Array[String]] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
+    
+    var yearTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object CalendarPickerProps {
     
@@ -152,7 +169,7 @@ object mod {
       
       inline def setCustomDatesStylesUndefined: Self = StObject.set(x, "customDatesStyles", js.undefined)
       
-      inline def setCustomDatesStylesVarargs(value: CustomDateStyle*): Self = StObject.set(x, "customDatesStyles", js.Array(value :_*))
+      inline def setCustomDatesStylesVarargs(value: CustomDateStyle*): Self = StObject.set(x, "customDatesStyles", js.Array(value*))
       
       inline def setCustomDayHeaderStyles(value: /* date */ CustomDayHeaderStylesFuncDateArg => Style): Self = StObject.set(x, "customDayHeaderStyles", js.Any.fromFunction1(value))
       
@@ -168,7 +185,7 @@ object mod {
       
       inline def setDayShapeUndefined: Self = StObject.set(x, "dayShape", js.undefined)
       
-      inline def setDisabledDates(value: js.Array[Date] | DisabledDatesFunc): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+      inline def setDisabledDates(value: js.Array[js.Date] | DisabledDatesFunc): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
       inline def setDisabledDatesFunction1(value: /* date */ Moment => Boolean): Self = StObject.set(x, "disabledDates", js.Any.fromFunction1(value))
       
@@ -180,11 +197,17 @@ object mod {
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: Date*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: js.Date*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
       inline def setEnableDateChange(value: Boolean): Self = StObject.set(x, "enableDateChange", value.asInstanceOf[js.Any])
       
       inline def setEnableDateChangeUndefined: Self = StObject.set(x, "enableDateChange", js.undefined)
+      
+      inline def setHeaderWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerWrapperStyle", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderWrapperStyleNull: Self = StObject.set(x, "headerWrapperStyle", null)
+      
+      inline def setHeaderWrapperStyleUndefined: Self = StObject.set(x, "headerWrapperStyle", js.undefined)
       
       inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       
@@ -198,11 +221,11 @@ object mod {
       
       inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
       inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
@@ -210,9 +233,9 @@ object mod {
       
       inline def setMaxRangeDurationUndefined: Self = StObject.set(x, "maxRangeDuration", js.undefined)
       
-      inline def setMaxRangeDurationVarargs(value: MaxDurationArrayItem*): Self = StObject.set(x, "maxRangeDuration", js.Array(value :_*))
+      inline def setMaxRangeDurationVarargs(value: MaxDurationArrayItem*): Self = StObject.set(x, "maxRangeDuration", js.Array(value*))
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -220,7 +243,13 @@ object mod {
       
       inline def setMinRangeDurationUndefined: Self = StObject.set(x, "minRangeDuration", js.undefined)
       
-      inline def setMinRangeDurationVarargs(value: MinDurationArrayItem*): Self = StObject.set(x, "minRangeDuration", js.Array(value :_*))
+      inline def setMinRangeDurationVarargs(value: MinDurationArrayItem*): Self = StObject.set(x, "minRangeDuration", js.Array(value*))
+      
+      inline def setMonthTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "monthTitleStyle", value.asInstanceOf[js.Any])
+      
+      inline def setMonthTitleStyleNull: Self = StObject.set(x, "monthTitleStyle", null)
+      
+      inline def setMonthTitleStyleUndefined: Self = StObject.set(x, "monthTitleStyle", js.undefined)
       
       inline def setMonthYearHeaderWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "monthYearHeaderWrapperStyle", value.asInstanceOf[js.Any])
       
@@ -232,7 +261,7 @@ object mod {
       
       inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setNextComponent(value: ReactNode): Self = StObject.set(x, "nextComponent", value.asInstanceOf[js.Any])
       
@@ -282,6 +311,14 @@ object mod {
       
       inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
       
+      inline def setSelectMonthTitle(value: String): Self = StObject.set(x, "selectMonthTitle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectMonthTitleUndefined: Self = StObject.set(x, "selectMonthTitle", js.undefined)
+      
+      inline def setSelectYearTitle(value: String): Self = StObject.set(x, "selectYearTitle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectYearTitleUndefined: Self = StObject.set(x, "selectYearTitle", js.undefined)
+      
       inline def setSelectedDayColor(value: String): Self = StObject.set(x, "selectedDayColor", value.asInstanceOf[js.Any])
       
       inline def setSelectedDayColorUndefined: Self = StObject.set(x, "selectedDayColor", js.undefined)
@@ -296,7 +333,19 @@ object mod {
       
       inline def setSelectedDayTextColorUndefined: Self = StObject.set(x, "selectedDayTextColor", js.undefined)
       
-      inline def setSelectedEndDate(value: Date): Self = StObject.set(x, "selectedEndDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDayTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedDayTextStyle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedDayTextStyleNull: Self = StObject.set(x, "selectedDayTextStyle", null)
+      
+      inline def setSelectedDayTextStyleUndefined: Self = StObject.set(x, "selectedDayTextStyle", js.undefined)
+      
+      inline def setSelectedDisabledDatesTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedDisabledDatesTextStyle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedDisabledDatesTextStyleNull: Self = StObject.set(x, "selectedDisabledDatesTextStyle", null)
+      
+      inline def setSelectedDisabledDatesTextStyleUndefined: Self = StObject.set(x, "selectedDisabledDatesTextStyle", js.undefined)
+      
+      inline def setSelectedEndDate(value: js.Date): Self = StObject.set(x, "selectedEndDate", value.asInstanceOf[js.Any])
       
       inline def setSelectedEndDateUndefined: Self = StObject.set(x, "selectedEndDate", js.undefined)
       
@@ -306,11 +355,23 @@ object mod {
       
       inline def setSelectedRangeEndStyleUndefined: Self = StObject.set(x, "selectedRangeEndStyle", js.undefined)
       
+      inline def setSelectedRangeEndTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedRangeEndTextStyle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedRangeEndTextStyleNull: Self = StObject.set(x, "selectedRangeEndTextStyle", null)
+      
+      inline def setSelectedRangeEndTextStyleUndefined: Self = StObject.set(x, "selectedRangeEndTextStyle", js.undefined)
+      
       inline def setSelectedRangeStartStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "selectedRangeStartStyle", value.asInstanceOf[js.Any])
       
       inline def setSelectedRangeStartStyleNull: Self = StObject.set(x, "selectedRangeStartStyle", null)
       
       inline def setSelectedRangeStartStyleUndefined: Self = StObject.set(x, "selectedRangeStartStyle", js.undefined)
+      
+      inline def setSelectedRangeStartTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedRangeStartTextStyle", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedRangeStartTextStyleNull: Self = StObject.set(x, "selectedRangeStartTextStyle", null)
+      
+      inline def setSelectedRangeStartTextStyleUndefined: Self = StObject.set(x, "selectedRangeStartTextStyle", js.undefined)
       
       inline def setSelectedRangeStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "selectedRangeStyle", value.asInstanceOf[js.Any])
       
@@ -318,7 +379,7 @@ object mod {
       
       inline def setSelectedRangeStyleUndefined: Self = StObject.set(x, "selectedRangeStyle", js.undefined)
       
-      inline def setSelectedStartDate(value: Date): Self = StObject.set(x, "selectedStartDate", value.asInstanceOf[js.Any])
+      inline def setSelectedStartDate(value: js.Date): Self = StObject.set(x, "selectedStartDate", value.asInstanceOf[js.Any])
       
       inline def setSelectedStartDateUndefined: Self = StObject.set(x, "selectedStartDate", js.undefined)
       
@@ -350,11 +411,17 @@ object mod {
       
       inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
       
-      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setYearTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "yearTitleStyle", value.asInstanceOf[js.Any])
+      
+      inline def setYearTitleStyleNull: Self = StObject.set(x, "yearTitleStyle", null)
+      
+      inline def setYearTitleStyleUndefined: Self = StObject.set(x, "yearTitleStyle", js.undefined)
     }
   }
   
@@ -383,7 +450,7 @@ object mod {
       
       inline def setDate(value: MomentParsable): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -526,7 +593,7 @@ object mod {
       
       inline def setDate(value: MomentParsable): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     }
@@ -549,7 +616,7 @@ object mod {
       
       inline def setDate(value: MomentParsable): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
     }

@@ -9,7 +9,7 @@ trait ISourcesOrder extends StObject {
   
   /** SourcesOrder seed */
   var seed: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | Null
   ] = js.undefined
   
   /** SourcesOrder type */
@@ -25,7 +25,7 @@ object ISourcesOrder {
   extension [Self <: ISourcesOrder](x: Self) {
     
     inline def setSeed(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     inline def setSeedNull: Self = StObject.set(x, "seed", null)

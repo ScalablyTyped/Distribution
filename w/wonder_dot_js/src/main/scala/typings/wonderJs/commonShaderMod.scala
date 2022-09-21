@@ -11,7 +11,7 @@ object commonShaderMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/shader/CommonShader", "CommonShader")
   @js.native
-  class CommonShader () extends EngineShader {
+  open class CommonShader () extends EngineShader {
     
     def update(cmd: QuadCommand, material: Material): Unit = js.native
   }

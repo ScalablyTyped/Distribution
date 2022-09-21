@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.navbarGroupMod.INavbarGroupProps
+import typings.blueprintjsCore.navbarGroupMod.NavbarGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "NavbarGroup")
 @js.native
-class NavbarGroup protected ()
+open class NavbarGroup protected ()
   extends typings.blueprintjsCore.componentsMod.NavbarGroup {
-  def this(props: INavbarGroupProps) = this()
-  def this(props: INavbarGroupProps, context: js.Any) = this()
+  def this(props: NavbarGroupProps) = this()
+  def this(props: NavbarGroupProps, context: Any) = this()
 }
 /* static members */
 object NavbarGroup {
@@ -21,8 +21,8 @@ object NavbarGroup {
   
   @JSImport("@blueprintjs/core", "NavbarGroup.defaultProps")
   @js.native
-  def defaultProps: INavbarGroupProps = js.native
-  inline def defaultProps_=(x: INavbarGroupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: NavbarGroupProps = js.native
+  inline def defaultProps_=(x: NavbarGroupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NavbarGroup.displayName")
   @js.native

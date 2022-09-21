@@ -1,9 +1,5 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.devextremeStrings.double
-import typings.devextreme.devextremeStrings.doubleAccounting
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.singleAccounting
 import typings.devextreme.devextremeStrings.single_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,34 +10,34 @@ object exporter {
   trait ExcelFont extends StObject {
     
     /**
-      * [descr:ExcelFont.bold]
+      * Specifies whether the text should be in bold.
       */
     var bold: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:ExcelFont.color]
+      * The text&apos;s color in hexadecimal characters.
       */
     var color: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:ExcelFont.italic]
+      * Specifies whether the text should be in italic.
       */
     var italic: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:ExcelFont.name]
+      * The name of the typeface that should be applied to the text.
       */
     var name: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:ExcelFont.size]
+      * The font size specified in points (1/72 of an inch).
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /**
-      * [descr:ExcelFont.underline]
+      * The underline formatting style.
       */
-    var underline: js.UndefOr[double | doubleAccounting | none | single_ | singleAccounting] = js.undefined
+    var underline: js.UndefOr[ExcelUnderlineType] = js.undefined
   }
   object ExcelFont {
     
@@ -72,9 +68,30 @@ object exporter {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setUnderline(value: double | doubleAccounting | none | single_ | singleAccounting): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: ExcelUnderlineType): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
       inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.devextreme.devextremeStrings.double
+    - typings.devextreme.devextremeStrings.doubleAccounting
+    - typings.devextreme.devextremeStrings.none
+    - typings.devextreme.devextremeStrings.single_
+    - typings.devextreme.devextremeStrings.singleAccounting
+  */
+  trait ExcelUnderlineType extends StObject
+  object ExcelUnderlineType {
+    
+    inline def double: typings.devextreme.devextremeStrings.double = "double".asInstanceOf[typings.devextreme.devextremeStrings.double]
+    
+    inline def doubleAccounting: typings.devextreme.devextremeStrings.doubleAccounting = "doubleAccounting".asInstanceOf[typings.devextreme.devextremeStrings.doubleAccounting]
+    
+    inline def none: typings.devextreme.devextremeStrings.none = "none".asInstanceOf[typings.devextreme.devextremeStrings.none]
+    
+    inline def single: single_ = "single".asInstanceOf[single_]
+    
+    inline def singleAccounting: typings.devextreme.devextremeStrings.singleAccounting = "singleAccounting".asInstanceOf[typings.devextreme.devextremeStrings.singleAccounting]
   }
 }

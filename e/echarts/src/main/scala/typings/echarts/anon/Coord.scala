@@ -47,7 +47,7 @@ trait Coord extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.coord
     */
-  var coord: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var coord: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Mark point style.
@@ -142,7 +142,7 @@ trait Coord extends StObject {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Rotate degree of symbol.
@@ -165,7 +165,7 @@ trait Coord extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * Special label types, are used to label maximum value,
@@ -243,11 +243,11 @@ object Coord {
   
   extension [Self <: Coord](x: Self) {
     
-    inline def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+    inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     
     inline def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
     
-    inline def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
+    inline def setCoordVarargs(value: Any*): Self = StObject.set(x, "coord", js.Array(value*))
     
     inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
@@ -267,21 +267,21 @@ object Coord {
     
     inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
     
-    inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+    inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
     
     inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
     
-    inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+    inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
     
     inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
     
     inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
     
-    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     

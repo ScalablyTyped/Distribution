@@ -69,7 +69,7 @@ trait Server extends StObject {
   
   val options: ConstructorOptions = js.native
   
-  val plugins: js.Any = js.native
+  val plugins: Any = js.native
   
   /**
     * Perform a request. `doc` is a (parsed) JSON document as described in the protocol documentation.

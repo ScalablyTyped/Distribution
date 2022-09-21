@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HDRFiltering")
 @js.native
-class HDRFiltering protected ()
+open class HDRFiltering protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HDRFiltering {
   /**

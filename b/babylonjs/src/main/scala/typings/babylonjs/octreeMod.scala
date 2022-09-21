@@ -15,11 +15,11 @@ object octreeMod {
   
   @JSImport("babylonjs/Culling/Octrees/octree", "Octree")
   @js.native
-  class Octree[T] protected () extends StObject {
+  open class Octree[T] protected () extends StObject {
     /**
       * Creates a octree
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-      * @param creationFunc function to be used to instatiate the octree
+      * @param creationFunc function to be used to instantiate the octree
       * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
       * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
       */
@@ -41,11 +41,11 @@ object octreeMod {
     maxDepth: Double
     ) = this()
     
-    /* private */ var _creationFunc: js.Any = js.native
+    /* private */ var _creationFunc: Any = js.native
     
-    /* private */ var _maxBlockCapacity: js.Any = js.native
+    /* private */ var _maxBlockCapacity: Any = js.native
     
-    /* private */ var _selectionContent: js.Any = js.native
+    /* private */ var _selectionContent: Any = js.native
     
     /**
       * Adds a mesh to the octree
@@ -115,11 +115,15 @@ object octreeMod {
     
     /**
       * Adds a mesh into the octree block if it intersects the block
+      * @param entry
+      * @param block
       */
     inline def CreationFuncForMeshes(entry: AbstractMesh, block: OctreeBlock[AbstractMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Adds a submesh into the octree block if it intersects the block
+      * @param entry
+      * @param block
       */
     inline def CreationFuncForSubMeshes(entry: SubMesh, block: OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

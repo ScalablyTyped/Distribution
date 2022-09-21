@@ -703,7 +703,7 @@ object TagManager {
         
         inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -754,7 +754,7 @@ object TagManager {
         
         inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
         
-        inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
+        inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value*))
         
         inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
@@ -784,7 +784,7 @@ object TagManager {
         
         inline def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
         
-        inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
+        inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value*))
       }
     }
     
@@ -866,7 +866,7 @@ object TagManager {
         
         inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
         
         inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
@@ -884,7 +884,7 @@ object TagManager {
         
         inline def setCustomTemplateUndefined: Self = StObject.set(x, "customTemplate", js.undefined)
         
-        inline def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value :_*))
+        inline def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value*))
         
         inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
@@ -902,7 +902,7 @@ object TagManager {
         
         inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -920,25 +920,25 @@ object TagManager {
         
         inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value*))
         
         inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
         inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value*))
         
         inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
         inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value*))
         
         inline def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
         inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
         
-        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value*))
       }
     }
     
@@ -1050,7 +1050,7 @@ object TagManager {
         
         inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
       }
     }
     
@@ -1423,19 +1423,19 @@ object TagManager {
         
         inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value*))
         
         inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
         inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value*))
         
         inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
         inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value*))
       }
     }
     
@@ -1458,13 +1458,13 @@ object TagManager {
         
         inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
         
-        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value*))
         
         inline def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
         
         inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
         
-        inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+        inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value*))
       }
     }
     
@@ -1487,7 +1487,7 @@ object TagManager {
         
         inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
         
-        inline def setAccountVarargs(value: Account*): Self = StObject.set(x, "account", js.Array(value :_*))
+        inline def setAccountVarargs(value: Account*): Self = StObject.set(x, "account", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1514,7 +1514,7 @@ object TagManager {
         
         inline def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
         
-        inline def setContainerVersionHeaderVarargs(value: ContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
+        inline def setContainerVersionHeaderVarargs(value: ContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1541,7 +1541,7 @@ object TagManager {
         
         inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
-        inline def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value :_*))
+        inline def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1568,7 +1568,7 @@ object TagManager {
         
         inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1595,7 +1595,7 @@ object TagManager {
         
         inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
         
-        inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
+        inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1622,7 +1622,7 @@ object TagManager {
         
         inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1653,7 +1653,7 @@ object TagManager {
         
         inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value*))
       }
     }
     
@@ -1680,7 +1680,7 @@ object TagManager {
         
         inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value*))
       }
     }
     
@@ -1707,7 +1707,7 @@ object TagManager {
         
         inline def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
         
-        inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
+        inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value*))
       }
     }
     
@@ -1734,7 +1734,7 @@ object TagManager {
         
         inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value*))
       }
     }
     
@@ -1761,7 +1761,7 @@ object TagManager {
         
         inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
         
-        inline def setWorkspaceVarargs(value: Workspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
+        inline def setWorkspaceVarargs(value: Workspace*): Self = StObject.set(x, "workspace", js.Array(value*))
       }
     }
     
@@ -1788,7 +1788,7 @@ object TagManager {
         
         inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
         
-        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value*))
       }
     }
     
@@ -1846,13 +1846,13 @@ object TagManager {
         
         inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
         
-        inline def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value :_*))
+        inline def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value*))
         
         inline def setMap(value: js.Array[Parameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
         
         inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
         
-        inline def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value :_*))
+        inline def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2103,7 +2103,7 @@ object TagManager {
         
         inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
         
-        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value*))
         
         inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
         
@@ -2178,13 +2178,13 @@ object TagManager {
         
         inline def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
         
-        inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
+        inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value*))
         
         inline def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
         
         inline def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
         
-        inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
+        inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value*))
         
         inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
@@ -2198,13 +2198,13 @@ object TagManager {
         
         inline def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
         
-        inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
+        inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value*))
         
         inline def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
         
         inline def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
         
-        inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
+        inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value*))
         
         inline def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
         
@@ -2222,7 +2222,7 @@ object TagManager {
         
         inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
         
         inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
@@ -2252,7 +2252,7 @@ object TagManager {
         
         inline def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
         
-        inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
+        inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value*))
         
         inline def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
         
@@ -2270,7 +2270,7 @@ object TagManager {
         
         inline def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
         
-        inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
+        inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2415,7 +2415,7 @@ object TagManager {
         
         inline def setAutoEventFilterUndefined: Self = StObject.set(x, "autoEventFilter", js.undefined)
         
-        inline def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value :_*))
+        inline def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value*))
         
         inline def setCheckValidation(value: Parameter): Self = StObject.set(x, "checkValidation", value.asInstanceOf[js.Any])
         
@@ -2433,7 +2433,7 @@ object TagManager {
         
         inline def setCustomEventFilterUndefined: Self = StObject.set(x, "customEventFilter", js.undefined)
         
-        inline def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value :_*))
+        inline def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value*))
         
         inline def setEventName(value: Parameter): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
         
@@ -2443,7 +2443,7 @@ object TagManager {
         
         inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        inline def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value :_*))
+        inline def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value*))
         
         inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
@@ -2481,7 +2481,7 @@ object TagManager {
         
         inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
         
         inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
@@ -2578,7 +2578,7 @@ object TagManager {
         
         inline def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
         
-        inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
+        inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value*))
         
         inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
@@ -2647,13 +2647,13 @@ object TagManager {
         
         inline def setDisablingTriggerIdUndefined: Self = StObject.set(x, "disablingTriggerId", js.undefined)
         
-        inline def setDisablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "disablingTriggerId", js.Array(value :_*))
+        inline def setDisablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "disablingTriggerId", js.Array(value*))
         
         inline def setEnablingTriggerId(value: js.Array[String]): Self = StObject.set(x, "enablingTriggerId", value.asInstanceOf[js.Any])
         
         inline def setEnablingTriggerIdUndefined: Self = StObject.set(x, "enablingTriggerId", js.undefined)
         
-        inline def setEnablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "enablingTriggerId", js.Array(value :_*))
+        inline def setEnablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "enablingTriggerId", js.Array(value*))
         
         inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
@@ -2675,7 +2675,7 @@ object TagManager {
         
         inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
         
         inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
@@ -2862,7 +2862,7 @@ object TagManager {
         
         inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
         
-        inline def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
+        inline def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value*))
         
         inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
@@ -2921,13 +2921,13 @@ object TagManager {
         
         inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
         
-        inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
+        inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value*))
         
         inline def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
         
         inline def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
         
-        inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
+        inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value*))
       }
     }
     
@@ -2979,7 +2979,7 @@ object TagManager {
         
         inline def setWhitelistedTypeIdUndefined: Self = StObject.set(x, "whitelistedTypeId", js.undefined)
         
-        inline def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value :_*))
+        inline def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value*))
       }
     }
   }

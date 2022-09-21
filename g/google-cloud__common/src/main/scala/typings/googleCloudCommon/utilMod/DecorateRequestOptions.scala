@@ -20,6 +20,8 @@ trait DecorateRequestOptions
   
   var objectMode: js.UndefOr[Boolean] = js.undefined
   
+  var projectId: js.UndefOr[String] = js.undefined
+  
   var shouldReturnStream: js.UndefOr[Boolean] = js.undefined
   
   var uri: String
@@ -45,7 +47,7 @@ object DecorateRequestOptions {
     
     inline def setInterceptors_Undefined: Self = StObject.set(x, "interceptors_", js.undefined)
     
-    inline def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value :_*))
+    inline def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value*))
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
@@ -54,6 +56,10 @@ object DecorateRequestOptions {
     inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+    
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setShouldReturnStream(value: Boolean): Self = StObject.set(x, "shouldReturnStream", value.asInstanceOf[js.Any])
     

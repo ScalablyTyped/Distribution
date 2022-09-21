@@ -17,5 +17,5 @@ trait IntegratedMeshLayerConstructor
 Instantiable0[IntegratedMeshLayer]
      with Instantiable1[/* properties */ IntegratedMeshLayerProperties, IntegratedMeshLayer] {
   
-  def fromJSON(json: js.Any): IntegratedMeshLayer = js.native
+  def fromJSON(json: Any): IntegratedMeshLayer = js.native
 }

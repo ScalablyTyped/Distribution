@@ -1,12 +1,29 @@
 package typings.mdast
 
+import typings.mdast.mod.BlockContent
+import typings.mdast.mod.Content
+import typings.mdast.mod.DefinitionContent
+import typings.mdast.mod.ListContent
+import typings.mdast.mod.PhrasingContent
 import typings.mdast.mod.ReferenceType
+import typings.mdast.mod.RowContent
+import typings.mdast.mod.StaticPhrasingContent
+import typings.mdast.mod.TableContent
+import typings.mdast.mod.TopLevelContent
 import typings.mdast.mod._AlignType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mdastStrings {
+  
+  @js.native
+  sealed trait align
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def align: align = "align".asInstanceOf[align]
   
   @js.native
   sealed trait blockquote extends StObject
@@ -21,6 +38,27 @@ object mdastStrings {
     extends StObject
        with _AlignType
   inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait checked
+    extends StObject
+       with Content
+       with ListContent
+  inline def checked: checked = "checked".asInstanceOf[checked]
+  
+  @js.native
+  sealed trait children
+    extends StObject
+       with BlockContent
+       with Content
+       with DefinitionContent
+       with ListContent
+       with PhrasingContent
+       with RowContent
+       with StaticPhrasingContent
+       with TableContent
+       with TopLevelContent
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait code extends StObject
@@ -39,6 +77,14 @@ object mdastStrings {
   @js.native
   sealed trait delete extends StObject
   inline def delete: delete = "delete".asInstanceOf[delete]
+  
+  @js.native
+  sealed trait depth
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def depth: depth = "depth".asInstanceOf[depth]
   
   @js.native
   sealed trait emphasis extends StObject
@@ -83,6 +129,14 @@ object mdastStrings {
   inline def inlineCode: inlineCode = "inlineCode".asInstanceOf[inlineCode]
   
   @js.native
+  sealed trait lang
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def lang: lang = "lang".asInstanceOf[lang]
+  
+  @js.native
   sealed trait left
     extends StObject
        with _AlignType
@@ -105,6 +159,22 @@ object mdastStrings {
   inline def listItem: listItem = "listItem".asInstanceOf[listItem]
   
   @js.native
+  sealed trait meta
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def meta: meta = "meta".asInstanceOf[meta]
+  
+  @js.native
+  sealed trait ordered
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def ordered: ordered = "ordered".asInstanceOf[ordered]
+  
+  @js.native
   sealed trait paragraph extends StObject
   inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
@@ -123,6 +193,23 @@ object mdastStrings {
     extends StObject
        with ReferenceType
   inline def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
+  
+  @js.native
+  sealed trait spread
+    extends StObject
+       with BlockContent
+       with Content
+       with ListContent
+       with TopLevelContent
+  inline def spread: spread = "spread".asInstanceOf[spread]
+  
+  @js.native
+  sealed trait start
+    extends StObject
+       with BlockContent
+       with Content
+       with TopLevelContent
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait strong extends StObject
@@ -147,6 +234,20 @@ object mdastStrings {
   @js.native
   sealed trait thematicBreak extends StObject
   inline def thematicBreak: thematicBreak = "thematicBreak".asInstanceOf[thematicBreak]
+  
+  @js.native
+  sealed trait `type`
+    extends StObject
+       with BlockContent
+       with Content
+       with DefinitionContent
+       with ListContent
+       with PhrasingContent
+       with RowContent
+       with StaticPhrasingContent
+       with TableContent
+       with TopLevelContent
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait yaml extends StObject

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaForwardingRuleReference extends StObject {
   
-  var forwardingRule: js.UndefOr[String] = js.undefined
+  var forwardingRule: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaForwardingRuleReference {
   
@@ -18,6 +18,8 @@ object SchemaForwardingRuleReference {
   extension [Self <: SchemaForwardingRuleReference](x: Self) {
     
     inline def setForwardingRule(value: String): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
+    
+    inline def setForwardingRuleNull: Self = StObject.set(x, "forwardingRule", null)
     
     inline def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
   }

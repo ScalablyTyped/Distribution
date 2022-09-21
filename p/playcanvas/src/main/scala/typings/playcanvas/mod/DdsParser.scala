@@ -1,15 +1,22 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.pc.TextureParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('../../texture.js').TextureParser} TextureParser */
 /**
-  * Texture parser for dds files.
+  * Legacy texture parser for dds files.
+  *
+  * @implements {TextureParser}
+  * @ignore
   */
-@JSImport("playcanvas", "DdsParser")
 @js.native
-class DdsParser ()
-  extends StObject
-     with TextureParser
+trait DdsParser extends TextureParser {
+  
+  def load(url: Any, callback: Any, asset: Any): Unit = js.native
+  
+  var maxRetries: Double = js.native
+  
+  def open(url: Any, data: Any, device: Any): Texture = js.native
+}

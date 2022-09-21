@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "MergeOptions")
 @js.native
-class MergeOptions ()
+open class MergeOptions ()
   extends typings.nodegit.mergeOptionsMod.MergeOptions

@@ -249,7 +249,7 @@ object TreeMap {
     
     /** Returns the clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object ClickEventArgs {
     
@@ -260,7 +260,7 @@ object TreeMap {
     
     extension [Self <: ClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -328,7 +328,7 @@ object TreeMap {
     
     /** Returns the  double clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -339,7 +339,7 @@ object TreeMap {
     
     extension [Self <: DoubleClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -349,7 +349,7 @@ object TreeMap {
     
     /** Returns selected drilldown treeMap object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object DrillDownItemSelectedEventArgs {
     
@@ -360,7 +360,7 @@ object TreeMap {
     
     extension [Self <: DrillDownItemSelectedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -370,7 +370,7 @@ object TreeMap {
     
     /** Returns selected drilled treeMap object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object DrillStartedEventArgs {
     
@@ -381,7 +381,7 @@ object TreeMap {
     
     extension [Self <: DrillStartedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -413,7 +413,7 @@ object TreeMap {
     
     /** Returns drilldown header.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object HeaderTemplateRenderingEventArgs {
     
@@ -424,7 +424,7 @@ object TreeMap {
     
     extension [Self <: HeaderTemplateRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -434,7 +434,7 @@ object TreeMap {
     
     /** Returns treemap leaf item
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object ItemRenderingEventArgs {
     
@@ -445,7 +445,7 @@ object TreeMap {
     
     extension [Self <: ItemRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -549,7 +549,7 @@ object TreeMap {
     
     /** Returns treemap legend item
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object LegendItemRenderingEventArgs {
     
@@ -560,7 +560,7 @@ object TreeMap {
     
     extension [Self <: LegendItemRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -860,7 +860,7 @@ object TreeMap {
     /** Specifies the datasource of the treemap
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the desaturationColorMapping settings of the treemap
       */
@@ -1070,7 +1070,7 @@ object TreeMap {
     /** Hold the treeMapItems to be displayed in treemap
       * @Default {[]}
       */
-    var treeMapItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var treeMapItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the uniColorMapping settings of the treemap
       */
@@ -1110,7 +1110,7 @@ object TreeMap {
       
       inline def setColorValuePathUndefined: Self = StObject.set(x, "colorValuePath", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1178,7 +1178,7 @@ object TreeMap {
       
       inline def setGroupColorMappingUndefined: Self = StObject.set(x, "groupColorMapping", js.undefined)
       
-      inline def setGroupColorMappingVarargs(value: GroupColorMapping*): Self = StObject.set(x, "groupColorMapping", js.Array(value :_*))
+      inline def setGroupColorMappingVarargs(value: GroupColorMapping*): Self = StObject.set(x, "groupColorMapping", js.Array(value*))
       
       inline def setGroupSelectionMode(value: groupSelectionMode | String): Self = StObject.set(x, "groupSelectionMode", value.asInstanceOf[js.Any])
       
@@ -1248,7 +1248,7 @@ object TreeMap {
       
       inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
       
-      inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+      inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -1262,7 +1262,7 @@ object TreeMap {
       
       inline def setRangeColorMappingUndefined: Self = StObject.set(x, "rangeColorMapping", js.undefined)
       
-      inline def setRangeColorMappingVarargs(value: RangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value :_*))
+      inline def setRangeColorMappingVarargs(value: RangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value*))
       
       inline def setRefreshed(value: /* e */ RefreshedEventArgs => Unit): Self = StObject.set(x, "refreshed", js.Any.fromFunction1(value))
       
@@ -1296,11 +1296,11 @@ object TreeMap {
       
       inline def setTreeMapItemSelectedUndefined: Self = StObject.set(x, "treeMapItemSelected", js.undefined)
       
-      inline def setTreeMapItems(value: js.Array[js.Any]): Self = StObject.set(x, "treeMapItems", value.asInstanceOf[js.Any])
+      inline def setTreeMapItems(value: js.Array[Any]): Self = StObject.set(x, "treeMapItems", value.asInstanceOf[js.Any])
       
       inline def setTreeMapItemsUndefined: Self = StObject.set(x, "treeMapItems", js.undefined)
       
-      inline def setTreeMapItemsVarargs(value: js.Any*): Self = StObject.set(x, "treeMapItems", js.Array(value :_*))
+      inline def setTreeMapItemsVarargs(value: Any*): Self = StObject.set(x, "treeMapItems", js.Array(value*))
       
       inline def setUniColorMapping(value: UniColorMapping): Self = StObject.set(x, "uniColorMapping", value.asInstanceOf[js.Any])
       
@@ -1317,7 +1317,7 @@ object TreeMap {
     /** Specifies the colors of the paletteColorMapping
       * @Default {[]}
       */
-    var colors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var colors: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object PaletteColorMapping {
     
@@ -1328,11 +1328,11 @@ object TreeMap {
     
     extension [Self <: PaletteColorMapping](x: Self) {
       
-      inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Any*): Self = StObject.set(x, "colors", js.Array(value*))
     }
   }
   
@@ -1351,7 +1351,7 @@ object TreeMap {
     /** specifies the gradient colors for th given range value
       * @Default {[]}
       */
-    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the legend label value for rangeColorMapping.
       * @Default {null}
@@ -1380,11 +1380,11 @@ object TreeMap {
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      inline def setGradientColors(value: js.Array[Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
       
-      inline def setGradientColorsVarargs(value: js.Any*): Self = StObject.set(x, "gradientColors", js.Array(value :_*))
+      inline def setGradientColorsVarargs(value: Any*): Self = StObject.set(x, "gradientColors", js.Array(value*))
       
       inline def setLegendLabel(value: String): Self = StObject.set(x, "legendLabel", value.asInstanceOf[js.Any])
       
@@ -1400,7 +1400,7 @@ object TreeMap {
     
     /** Refresh and load the treemap.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object RefreshedEventArgs {
     
@@ -1411,7 +1411,7 @@ object TreeMap {
     
     extension [Self <: RefreshedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -1421,7 +1421,7 @@ object TreeMap {
     
     /** Returns the right clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -1432,7 +1432,7 @@ object TreeMap {
     
     extension [Self <: RightClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -1442,7 +1442,7 @@ object TreeMap {
     
     /** Returns the  selected group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object TreeMapGroupSelectedEventArgs {
     
@@ -1453,7 +1453,7 @@ object TreeMap {
     
     extension [Self <: TreeMapGroupSelectedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -1463,7 +1463,7 @@ object TreeMap {
     
     /** Returns selected treeMapItem object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object TreeMapItemSelectedEventArgs {
     
@@ -1474,7 +1474,7 @@ object TreeMap {
     
     extension [Self <: TreeMapItemSelectedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }

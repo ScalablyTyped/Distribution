@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.tableCellTableCellMod.TableCellProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object tableCellMod extends Shortcut {
+object tableCellMod {
   
-  @JSImport("@material-ui/core/TableCell", JSImport.Default)
+  @JSImport("@material-ui/core/TableCell", JSImport.Namespace)
   @js.native
-  val default: ComponentType[TableCellProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[TableCellProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `tableCellMod.foo` */
-  override def _to: ComponentType[TableCellProps] = default
+  inline def default(props: TableCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

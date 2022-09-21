@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Shift")
 @js.native
-class Shift () extends StObject {
+open class Shift () extends StObject {
   
   /**
     * A list of any paid or unpaid breaks that were taken during this shift.

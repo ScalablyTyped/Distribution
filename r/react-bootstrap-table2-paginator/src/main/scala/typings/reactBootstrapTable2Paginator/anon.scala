@@ -37,11 +37,11 @@ object anon {
     
     var paginationProps: PaginationChildProps
     
-    var paginationTableProps: BootstrapTableProps[js.Any, Double]
+    var paginationTableProps: BootstrapTableProps[Any, Double]
   }
   object PaginationProps {
     
-    inline def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[js.Any, Double]): PaginationProps = {
+    inline def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[Any, Double]): PaginationProps = {
       val __obj = js.Dynamic.literal(paginationProps = paginationProps.asInstanceOf[js.Any], paginationTableProps = paginationTableProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
@@ -50,7 +50,7 @@ object anon {
       
       inline def setPaginationProps(value: PaginationChildProps): Self = StObject.set(x, "paginationProps", value.asInstanceOf[js.Any])
       
-      inline def setPaginationTableProps(value: BootstrapTableProps[js.Any, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
+      inline def setPaginationTableProps(value: BootstrapTableProps[Any, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
     }
   }
 }

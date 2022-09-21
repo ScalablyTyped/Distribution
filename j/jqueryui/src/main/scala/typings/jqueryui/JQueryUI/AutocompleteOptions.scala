@@ -9,7 +9,7 @@ trait AutocompleteOptions
   extends StObject
      with AutocompleteEvents {
   
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[Any] = js.undefined
   
   //Selector;
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -23,10 +23,10 @@ trait AutocompleteOptions
   
   var minLength: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   // object
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[Any] = js.undefined
 }
 object AutocompleteOptions {
   
@@ -37,7 +37,7 @@ object AutocompleteOptions {
   
   extension [Self <: AutocompleteOptions](x: Self) {
     
-    inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
@@ -61,11 +61,11 @@ object AutocompleteOptions {
     
     inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

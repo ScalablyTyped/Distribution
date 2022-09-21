@@ -1,83 +1,35 @@
 package typings.inquirer
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.inquirer.bottomBarMod.^
+import typings.inquirer.choicesMod.default
 import typings.inquirer.inquirerStrings.separator
 import typings.inquirer.mod.AllChoiceMap
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.ChoiceCollection
 import typings.inquirer.mod.DistinctChoice
-import typings.inquirer.mod.StreamOptions
-import typings.inquirer.mod.prompts.PromptCollection
-import typings.inquirer.mod.ui.BottomBarOptions
+import typings.inquirer.mod.inquirer.ui.Prompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait BottomBar extends StObject {
-    
-    /**
-      * Represents the bottom-bar UI.
-      */
-    var BottomBar: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^]
-    
-    /**
-      * Represents the prompt ui.
-      */
-    var Prompt: Instantiable2[
-        /* prompts */ PromptCollection, 
-        /* options */ js.UndefOr[StreamOptions], 
-        typings.inquirer.promptMod.^
-      ]
-  }
-  object BottomBar {
-    
-    inline def apply(
-      BottomBar: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^],
-      Prompt: Instantiable2[
-          /* prompts */ PromptCollection, 
-          /* options */ js.UndefOr[StreamOptions], 
-          typings.inquirer.promptMod.^
-        ]
-    ): BottomBar = {
-      val __obj = js.Dynamic.literal(BottomBar = BottomBar.asInstanceOf[js.Any], Prompt = Prompt.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BottomBar]
-    }
-    
-    extension [Self <: BottomBar](x: Self) {
-      
-      inline def setBottomBar(value: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^]): Self = StObject.set(x, "BottomBar", value.asInstanceOf[js.Any])
-      
-      inline def setPrompt(
-        value: Instantiable2[
-              /* prompts */ PromptCollection, 
-              /* options */ js.UndefOr[StreamOptions], 
-              typings.inquirer.promptMod.^
-            ]
-      ): Self = StObject.set(x, "Prompt", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Choices extends StObject {
     
     /**
       * The choices of the prompt.
       */
-    var choices: typings.inquirer.choicesMod.^[Answers]
+    var choices: default[Answers]
   }
   object Choices {
     
-    inline def apply(choices: typings.inquirer.choicesMod.^[Answers]): Choices = {
+    inline def apply(choices: default[Answers]): Choices = {
       val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choices]
     }
     
     extension [Self <: Choices](x: Self) {
       
-      inline def setChoices(value: typings.inquirer.choicesMod.^[Answers]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: default[Answers]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,7 +38,7 @@ object anon {
     /**
       * The default value of the question.
       */
-    var default: js.Any
+    var default: Any
     
     /**
       * The choices of the question.
@@ -105,7 +57,7 @@ object anon {
   }
   object Default {
     
-    inline def apply[T /* <: Answers */](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Default[T] = {
+    inline def apply[T /* <: Answers */](choices: ChoiceCollection[T], default: Any, message: String, `type`: String): Default[T] = {
       val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
@@ -115,9 +67,9 @@ object anon {
       
       inline def setChoices(value: ChoiceCollection[T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      inline def setChoicesVarargs(value: DistinctChoice[AllChoiceMap[Answers]]*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: (DistinctChoice[T, AllChoiceMap[T]])*): Self = StObject.set(x, "choices", js.Array(value*))
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -162,47 +114,20 @@ object anon {
     }
   }
   
-  trait TypeofSeparator extends StObject {
+  trait Ui[T /* <: Answers */] extends StObject {
     
-    /**
-      * Checks whether the specified `item` is not a separator.
-      *
-      * @param item
-      * The item to check.
-      *
-      * @returns
-      * A value indicating whether the item is not a separator.
-      */
-    /* static member */
-    def exclude(item: js.Any): Boolean
-  }
-  object TypeofSeparator {
-    
-    inline def apply(exclude: js.Any => Boolean): TypeofSeparator = {
-      val __obj = js.Dynamic.literal(exclude = js.Any.fromFunction1(exclude))
-      __obj.asInstanceOf[TypeofSeparator]
-    }
-    
-    extension [Self <: TypeofSeparator](x: Self) {
-      
-      inline def setExclude(value: js.Any => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait Ui extends StObject {
-    
-    var ui: typings.inquirer.promptMod.^
+    var ui: Prompt[T]
   }
   object Ui {
     
-    inline def apply(ui: typings.inquirer.promptMod.^): Ui = {
+    inline def apply[T /* <: Answers */](ui: Prompt[T]): Ui[T] = {
       val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Ui]
+      __obj.asInstanceOf[Ui[T]]
     }
     
-    extension [Self <: Ui](x: Self) {
+    extension [Self <: Ui[?], T /* <: Answers */](x: Self & Ui[T]) {
       
-      inline def setUi(value: typings.inquirer.promptMod.^): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: Prompt[T]): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     }
   }
 }

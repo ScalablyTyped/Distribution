@@ -28,7 +28,10 @@ trait Alt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The *part* parameter specifies the thirdPartyLink resource parts that the API request and response will include. Supported values are linkingToken, status, and snippet. */
+  /**
+    * The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will
+    * include.
+    */
   var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
@@ -82,7 +85,7 @@ object Alt {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

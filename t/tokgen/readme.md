@@ -11,9 +11,9 @@ Generate cryptographically secure token strings
 | Full name          | tokgen |
 | Keywords           | string, generator, random, crypto, token |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 11967 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 570.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/maxtruxa/tokgen#readme)

@@ -10,10 +10,10 @@ Create a valid HTML4 ID from an input value.
 | ------------------ | :-------------: |
 | Full name          | html4-id |
 | Keywords           | html, id, html4, css |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 658839 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56343.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/html4-id)

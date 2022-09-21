@@ -29,7 +29,7 @@ object CustomDataIdentifiers {
     
     inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    inline def setDetectionsVarargs(value: CustomDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: CustomDetection*): Self = StObject.set(x, "detections", js.Array(value*))
     
     inline def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     

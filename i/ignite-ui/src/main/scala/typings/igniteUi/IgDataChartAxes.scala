@@ -1,7 +1,6 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +10,14 @@ trait IgDataChartAxes
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the coercion methods to use when loading data from data sources.
     * Should be specified before setting any member paths, if being used. Setting it later
     * will not cause data to be reimported into the chart.
     */
-  var coercionMethods: js.UndefOr[js.Any] = js.undefined
+  var coercionMethods: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the CrossingAxis property.
@@ -28,12 +27,12 @@ trait IgDataChartAxes
   /**
     * Gets or sets the CrossingValue property.
     */
-  var crossingValue: js.UndefOr[js.Any] = js.undefined
+  var crossingValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -67,7 +66,7 @@ trait IgDataChartAxes
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  var formatLabel: js.UndefOr[js.Any] = js.undefined
+  var formatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the amount of space between adjacent categories for the current axis object.
@@ -105,7 +104,7 @@ trait IgDataChartAxes
   /**
     * Gets or sets the label mapping property to use for axis labels.
     */
-  var label: js.UndefOr[js.Any] = js.undefined
+  var label: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the angle that labels on the axis should be rotated
@@ -219,7 +218,7 @@ trait IgDataChartAxes
     * "number" The maximum value can be set to be a number when the axis is of numeric type
     * "date" The maximum value can be set to be a date object when [type](ui.igDataChart#options:axes.type) option is set to "categoryDateTimeX"
     */
-  var maximumValue: js.UndefOr[Double | Date] = js.undefined
+  var maximumValue: js.UndefOr[Double | js.Date] = js.undefined
   
   /**
     * Gets or sets the axis MinimumValue.
@@ -229,7 +228,7 @@ trait IgDataChartAxes
     * "number" The minimum value can be set to be a number when the axis is of numeric type
     * "date" The minimum value can be set to be a date object when [type](ui.igDataChart#options:axes.type) option is set to "categoryDateTimeX"
     */
-  var minimumValue: js.UndefOr[Double | Date] = js.undefined
+  var minimumValue: js.UndefOr[Double | js.Date] = js.undefined
   
   /**
     * Gets or sets the MinorStroke property.
@@ -306,7 +305,7 @@ trait IgDataChartAxes
   /**
     * The color to use for the tickmarks.
     */
-  var tickStroke: js.UndefOr[js.Any] = js.undefined
+  var tickStroke: js.UndefOr[Any] = js.undefined
   
   /**
     * The stroke thickness to use for the tickmarks.
@@ -418,7 +417,7 @@ object IgDataChartAxes {
   
   extension [Self <: IgDataChartAxes](x: Self) {
     
-    inline def setCoercionMethods(value: js.Any): Self = StObject.set(x, "coercionMethods", value.asInstanceOf[js.Any])
+    inline def setCoercionMethods(value: Any): Self = StObject.set(x, "coercionMethods", value.asInstanceOf[js.Any])
     
     inline def setCoercionMethodsUndefined: Self = StObject.set(x, "coercionMethods", js.undefined)
     
@@ -426,11 +425,11 @@ object IgDataChartAxes {
     
     inline def setCrossingAxisUndefined: Self = StObject.set(x, "crossingAxis", js.undefined)
     
-    inline def setCrossingValue(value: js.Any): Self = StObject.set(x, "crossingValue", value.asInstanceOf[js.Any])
+    inline def setCrossingValue(value: Any): Self = StObject.set(x, "crossingValue", value.asInstanceOf[js.Any])
     
     inline def setCrossingValueUndefined: Self = StObject.set(x, "crossingValue", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -454,7 +453,7 @@ object IgDataChartAxes {
     
     inline def setEnhancedIntervalMinimumCharactersUndefined: Self = StObject.set(x, "enhancedIntervalMinimumCharacters", js.undefined)
     
-    inline def setFormatLabel(value: js.Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLabel(value: Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
@@ -482,7 +481,7 @@ object IgDataChartAxes {
     
     inline def setIsLogarithmicUndefined: Self = StObject.set(x, "isLogarithmic", js.undefined)
     
-    inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelAngle(value: Double): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
     
@@ -550,11 +549,11 @@ object IgDataChartAxes {
     
     inline def setMajorStrokeUndefined: Self = StObject.set(x, "majorStroke", js.undefined)
     
-    inline def setMaximumValue(value: Double | Date): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: Double | js.Date): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
-    inline def setMinimumValue(value: Double | Date): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Double | js.Date): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
@@ -614,7 +613,7 @@ object IgDataChartAxes {
     
     inline def setTickLengthUndefined: Self = StObject.set(x, "tickLength", js.undefined)
     
-    inline def setTickStroke(value: js.Any): Self = StObject.set(x, "tickStroke", value.asInstanceOf[js.Any])
+    inline def setTickStroke(value: Any): Self = StObject.set(x, "tickStroke", value.asInstanceOf[js.Any])
     
     inline def setTickStrokeThickness(value: Double): Self = StObject.set(x, "tickStrokeThickness", value.asInstanceOf[js.Any])
     

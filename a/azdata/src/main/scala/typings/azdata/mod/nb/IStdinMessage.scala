@@ -17,8 +17,8 @@ trait IStdinMessage
 }
 object IStdinMessage {
   
-  inline def apply(content: Password, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IStdinMessage = {
-    val __obj = js.Dynamic.literal(channel = "stdin", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+  inline def apply(content: Password, `type`: Channel): IStdinMessage = {
+    val __obj = js.Dynamic.literal(channel = "stdin", content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStdinMessage]
   }

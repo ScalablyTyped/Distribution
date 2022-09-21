@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "CloudError")
 @js.native
-class CloudError protected ()
+open class CloudError protected ()
   extends StObject
      with Error {
   def this(parameters: CloudErrorParameters) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

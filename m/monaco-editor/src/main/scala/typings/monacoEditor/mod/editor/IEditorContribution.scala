@@ -14,12 +14,12 @@ trait IEditorContribution extends StObject {
   /**
     * Restore view state.
     */
-  var restoreViewState: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
+  var restoreViewState: js.UndefOr[js.Function1[/* state */ Any, Unit]] = js.undefined
   
   /**
     * Store view state.
     */
-  var saveViewState: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var saveViewState: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object IEditorContribution {
   
@@ -32,11 +32,11 @@ object IEditorContribution {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    inline def setRestoreViewState(value: /* state */ js.Any => Unit): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1(value))
+    inline def setRestoreViewState(value: /* state */ Any => Unit): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1(value))
     
     inline def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
     
-    inline def setSaveViewState(value: () => js.Any): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
+    inline def setSaveViewState(value: () => Any): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
     
     inline def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__custom
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Interface to customize jimp configuration
@@ -10,10 +10,10 @@ Interface to customize jimp configuration
 | ------------------ | :-------------: |
 | Full name          | @jimp/custom |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 16 |
-| # downloads        | 43342618 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 5268021.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fcustom)

@@ -27,7 +27,7 @@ object mod {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    inline def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   object shallow {
@@ -51,6 +51,6 @@ object mod {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    inline def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
 }

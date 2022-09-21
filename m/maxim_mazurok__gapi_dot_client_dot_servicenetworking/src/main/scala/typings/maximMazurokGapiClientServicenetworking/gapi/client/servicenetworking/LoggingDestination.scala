@@ -28,7 +28,7 @@ object LoggingDestination {
     
     inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
-    inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     

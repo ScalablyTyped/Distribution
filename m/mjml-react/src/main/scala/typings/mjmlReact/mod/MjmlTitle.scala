@@ -1,6 +1,6 @@
 package typings.mjmlReact.mod
 
-import typings.mjmlReact.anon.Children
+import typings.mjmlReact.anon.`1`
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlTitle")
 @js.native
-class MjmlTitle protected ()
-  extends Component[Children, js.Object, js.Any] {
-  def this(props: Children) = this()
+open class MjmlTitle protected ()
+  extends Component[`1`, js.Object, Any] {
+  def this(props: `1`) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: Children, context: js.Any) = this()
+  def this(props: `1`, context: Any) = this()
 }

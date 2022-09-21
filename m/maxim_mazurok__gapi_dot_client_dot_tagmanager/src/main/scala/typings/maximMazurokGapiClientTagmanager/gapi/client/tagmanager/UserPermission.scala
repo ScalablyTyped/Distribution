@@ -42,7 +42,7 @@ object UserPermission {
     
     inline def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
     
-    inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
+    inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value*))
     
     inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

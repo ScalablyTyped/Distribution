@@ -1,8 +1,7 @@
 package typings.passportCognito
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,21 @@ object mod {
   
   @JSImport("passport-cognito", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(options: CognitoStrategyOptions, verify: CognitoVerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   
   trait CognitoStrategyOptions extends StObject {
@@ -49,7 +57,7 @@ object mod {
     /* idToken */ String, 
     /* refreshToken */ String, 
     /* user */ js.Object, 
-    /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
-    js.Any
+    /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
+    Any
   ]
 }

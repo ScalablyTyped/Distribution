@@ -69,13 +69,13 @@ object preTokenGenerationMod {
       
       inline def setGroupsToOverrideUndefined: Self = StObject.set(x, "groupsToOverride", js.undefined)
       
-      inline def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value :_*))
+      inline def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value*))
       
       inline def setIamRolesToOverride(value: js.Array[String]): Self = StObject.set(x, "iamRolesToOverride", value.asInstanceOf[js.Any])
       
       inline def setIamRolesToOverrideUndefined: Self = StObject.set(x, "iamRolesToOverride", js.undefined)
       
-      inline def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value :_*))
+      inline def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value*))
       
       inline def setPreferredRole(value: String): Self = StObject.set(x, "preferredRole", value.asInstanceOf[js.Any])
       
@@ -95,5 +95,5 @@ object preTokenGenerationMod {
   
   type PreTokenGenerationTriggerEvent = PreTokenGenerationHostedAuthTriggerEvent | PreTokenGenerationAuthenticationTriggerEvent | PreTokenGenerationNewPasswordChallengeTriggerEvent | PreTokenGenerationAuthenticateDeviceTriggerEvent | PreTokenGenerationRefreshTokensTriggerEvent
   
-  type PreTokenGenerationTriggerHandler = Handler[PreTokenGenerationTriggerEvent, js.Any]
+  type PreTokenGenerationTriggerHandler = Handler[PreTokenGenerationTriggerEvent, Any]
 }

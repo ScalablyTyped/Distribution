@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@google-cloud/paginator", "Paginator")
   @js.native
-  class Paginator_ () extends StObject {
+  open class Paginator_ () extends StObject {
     
     /**
       * Cache the original method, then overwrite it on the Class's prototype.
@@ -27,7 +27,7 @@ object mod {
       * @param {array} args - The original `arguments` pseduo-array that the original
       *     method received.
       */
-    def parseArguments_(args: js.Array[js.Any]): ParsedArguments = js.native
+    def parseArguments_(args: js.Array[Any]): ParsedArguments = js.native
     
     /**
       * This method simply calls the nextQuery recursively, emitting results to a
@@ -65,7 +65,7 @@ object mod {
       * @param {function} originalMethod - The cached method that accepts a callback
       *     and returns `nextQuery` to receive more results.
       */
-    def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
+    def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): Any = js.native
     
     /**
       * Wraps paginated API calls in a readable object stream.
@@ -81,14 +81,14 @@ object mod {
       */
     def streamify[T](methodName: String): js.ThisFunction1[
         /* this */ StringDictionary[js.Function], 
-        /* repeated */ js.Any, 
+        /* repeated */ Any, 
         typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T]
       ] = js.native
   }
   
   @JSImport("@google-cloud/paginator", "ResourceStream")
   @js.native
-  class ResourceStream[T] protected ()
+  open class ResourceStream[T] protected ()
     extends typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T] {
     def this(args: ParsedArguments, requestFn: js.Function) = this()
   }

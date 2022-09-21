@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetHostedZoneCountResponse extends StObject {
   
   /**
-    * The total number of public and private hosted zones that are associated with the current AWS account.
+    * The total number of public and private hosted zones that are associated with the current Amazon Web Services account.
     */
   var HostedZoneCount: typings.awsSdk.route53Mod.HostedZoneCount
 }

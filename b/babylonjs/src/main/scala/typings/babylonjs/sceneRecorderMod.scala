@@ -9,23 +9,23 @@ object sceneRecorderMod {
   
   @JSImport("babylonjs/Misc/sceneRecorder", "SceneRecorder")
   @js.native
-  class SceneRecorder () extends StObject {
+  open class SceneRecorder () extends StObject {
     
-    /* private */ var _compareArray: js.Any = js.native
+    /* private */ var _compareArray: Any = js.native
     
-    /* private */ var _compareCollections: js.Any = js.native
+    /* private */ var _compareCollections: Any = js.native
     
-    /* private */ var _compareObjects: js.Any = js.native
+    /* private */ var _compareObjects: Any = js.native
     
-    /* private */ var _savedJSON: js.Any = js.native
+    /* private */ var _savedJSON: Any = js.native
     
-    /* private */ var _trackedScene: js.Any = js.native
+    /* private */ var _trackedScene: Any = js.native
     
     /**
       * Get the delta between current state and original state
-      * @returns a string containing the delta
+      * @returns a any containing the delta
       */
-    def getDelta(): js.Any = js.native
+    def getDelta(): Any = js.native
     
     /**
       * Track a given scene. This means the current scene state will be considered the original state
@@ -46,21 +46,21 @@ object sceneRecorderMod {
       * @param deltaJSON defines the JSON containing the delta
       * @param scene defines the scene to apply the delta to
       */
-    inline def ApplyDelta(deltaJSON: js.Any, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyDelta")(deltaJSON.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ApplyDelta(deltaJSON: Any, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyDelta")(deltaJSON.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("babylonjs/Misc/sceneRecorder", "SceneRecorder.GetShadowGeneratorById")
     @js.native
-    def GetShadowGeneratorById: js.Any = js.native
-    inline def GetShadowGeneratorById_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShadowGeneratorById")(x.asInstanceOf[js.Any])
+    def GetShadowGeneratorById: Any = js.native
+    inline def GetShadowGeneratorById_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShadowGeneratorById")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/sceneRecorder", "SceneRecorder._ApplyDeltaForEntity")
     @js.native
-    def _ApplyDeltaForEntity: js.Any = js.native
-    inline def _ApplyDeltaForEntity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyDeltaForEntity")(x.asInstanceOf[js.Any])
+    def _ApplyDeltaForEntity: Any = js.native
+    inline def _ApplyDeltaForEntity_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyDeltaForEntity")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/sceneRecorder", "SceneRecorder._ApplyPropertiesToEntity")
     @js.native
-    def _ApplyPropertiesToEntity: js.Any = js.native
-    inline def _ApplyPropertiesToEntity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyPropertiesToEntity")(x.asInstanceOf[js.Any])
+    def _ApplyPropertiesToEntity: Any = js.native
+    inline def _ApplyPropertiesToEntity_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyPropertiesToEntity")(x.asInstanceOf[js.Any])
   }
 }

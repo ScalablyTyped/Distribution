@@ -12,14 +12,14 @@ trait IReportHeader extends StObject {
   /** ReportHeader executableSchemaId */
   var executableSchemaId: js.UndefOr[String | Null] = js.undefined
   
+  /** ReportHeader graphRef */
+  var graphRef: js.UndefOr[String | Null] = js.undefined
+  
   /** ReportHeader hostname */
   var hostname: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader runtimeVersion */
   var runtimeVersion: js.UndefOr[String | Null] = js.undefined
-  
-  /** ReportHeader schemaTag */
-  var schemaTag: js.UndefOr[String | Null] = js.undefined
   
   /** ReportHeader serviceVersion */
   var serviceVersion: js.UndefOr[String | Null] = js.undefined
@@ -48,6 +48,12 @@ object IReportHeader {
     
     inline def setExecutableSchemaIdUndefined: Self = StObject.set(x, "executableSchemaId", js.undefined)
     
+    inline def setGraphRef(value: String): Self = StObject.set(x, "graphRef", value.asInstanceOf[js.Any])
+    
+    inline def setGraphRefNull: Self = StObject.set(x, "graphRef", null)
+    
+    inline def setGraphRefUndefined: Self = StObject.set(x, "graphRef", js.undefined)
+    
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
@@ -59,12 +65,6 @@ object IReportHeader {
     inline def setRuntimeVersionNull: Self = StObject.set(x, "runtimeVersion", null)
     
     inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
-    
-    inline def setSchemaTag(value: String): Self = StObject.set(x, "schemaTag", value.asInstanceOf[js.Any])
-    
-    inline def setSchemaTagNull: Self = StObject.set(x, "schemaTag", null)
-    
-    inline def setSchemaTagUndefined: Self = StObject.set(x, "schemaTag", js.undefined)
     
     inline def setServiceVersion(value: String): Self = StObject.set(x, "serviceVersion", value.asInstanceOf[js.Any])
     

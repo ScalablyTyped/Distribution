@@ -9,7 +9,7 @@ trait ICanvasImageData extends StObject {
   /* private */ @JSName("MSHTML.ICanvasImageData_typekey")
   var MSHTMLDotICanvasImageData_typekey: ICanvasImageData
   
-  val data: js.Any
+  val data: Any
   
   val height: Double
   
@@ -17,7 +17,7 @@ trait ICanvasImageData extends StObject {
 }
 object ICanvasImageData {
   
-  inline def apply(MSHTMLDotICanvasImageData_typekey: ICanvasImageData, data: js.Any, height: Double, width: Double): ICanvasImageData = {
+  inline def apply(MSHTMLDotICanvasImageData_typekey: ICanvasImageData, data: Any, height: Double, width: Double): ICanvasImageData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.ICanvasImageData_typekey")(MSHTMLDotICanvasImageData_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasImageData]
@@ -25,7 +25,7 @@ object ICanvasImageData {
   
   extension [Self <: ICanvasImageData](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

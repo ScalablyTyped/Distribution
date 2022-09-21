@@ -77,7 +77,7 @@ object anon {
       
       inline def setIsr(value: js.Array[Double]): Self = StObject.set(x, "isr", value.asInstanceOf[js.Any])
       
-      inline def setIsrVarargs(value: Double*): Self = StObject.set(x, "isr", js.Array(value :_*))
+      inline def setIsrVarargs(value: Double*): Self = StObject.set(x, "isr", js.Array(value*))
       
       inline def setLeader(value: Double): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
       
@@ -85,7 +85,7 @@ object anon {
       
       inline def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value*))
       
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
@@ -131,7 +131,7 @@ object anon {
       
       inline def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value*))
     }
   }
 }

@@ -10,10 +10,10 @@ Create object hierarchies with Backbone models. Respond to hierarchy changes usi
 | ------------------ | :-------------: |
 | Full name          | backbone-associations |
 | Keywords           | Backbone, association, associated, nested, model, cyclic graph, qualified event paths, relational, relations |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 1668668 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54832.0 |
+| # stars            | 497.0 |
 
 ## Links
 - [Homepage](http://dhruvaray.github.io/backbone-associations/)

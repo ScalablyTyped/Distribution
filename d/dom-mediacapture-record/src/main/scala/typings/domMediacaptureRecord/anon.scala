@@ -1,26 +1,34 @@
 package typings.domMediacaptureRecord
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait TypeofMediaRecorder extends StObject {
+  @js.native
+  trait Instantiable
+    extends StObject
+       with Instantiable1[/* stream */ MediaStream, MediaRecorder]
+       with Instantiable2[/* stream */ MediaStream, /* options */ MediaRecorderOptions, MediaRecorder] {
     
-    /* static member */
-    def isTypeSupported(`type`: String): Boolean
+    def isTypeSupported(`type`: String): Boolean = js.native
   }
-  object TypeofMediaRecorder {
-    
-    inline def apply(isTypeSupported: String => Boolean): TypeofMediaRecorder = {
-      val __obj = js.Dynamic.literal(isTypeSupported = js.Any.fromFunction1(isTypeSupported))
-      __obj.asInstanceOf[TypeofMediaRecorder]
-    }
-    
-    extension [Self <: TypeofMediaRecorder](x: Self) {
-      
-      inline def setIsTypeSupported(value: String => Boolean): Self = StObject.set(x, "isTypeSupported", js.Any.fromFunction1(value))
-    }
-  }
+  
+  @js.native
+  trait InstantiableBlobEvent
+    extends StObject
+       with Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent]
+  
+  @js.native
+  trait InstantiableMediaRecorderErrorEvent
+    extends StObject
+       with Instantiable2[
+          /* type */ String, 
+          /* eventInitDict */ MediaRecorderErrorEventInit, 
+          MediaRecorderErrorEvent
+        ]
 }

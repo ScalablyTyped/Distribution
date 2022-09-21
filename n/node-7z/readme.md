@@ -10,10 +10,10 @@ A Node.js wrapper for 7-Zip with platform binaries
 | ------------------ | :-------------: |
 | Full name          | node-7z |
 | Keywords           | node, 7z, 7za, 7zr, p7zip, 7zip, wrapper |
-| # releases         | 14 |
-| # dependents       | 29 |
-| # downloads        | 264532 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 115995.0 |
+| # stars            | 148.0 |
 
 ## Links
 - [Homepage](https://github.com/quentinrossetti/node-7zip.git)

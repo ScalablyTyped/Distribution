@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaOperationManagedZoneContext extends StObject {
   
+  /**
+    * The post-operation ManagedZone resource.
+    */
   var newValue: js.UndefOr[SchemaManagedZone] = js.undefined
   
+  /**
+    * The pre-operation ManagedZone resource.
+    */
   var oldValue: js.UndefOr[SchemaManagedZone] = js.undefined
 }
 object SchemaOperationManagedZoneContext {

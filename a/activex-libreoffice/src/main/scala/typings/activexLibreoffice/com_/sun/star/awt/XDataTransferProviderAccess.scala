@@ -51,7 +51,7 @@ object XDataTransferProviderAccess {
     getDragGestureRecognizer: XWindow => XDragGestureRecognizer,
     getDragSource: XWindow => XDragSource,
     getDropTarget: XWindow => XDropTarget,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataTransferProviderAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getClipboard = js.Any.fromFunction1(getClipboard), getDragGestureRecognizer = js.Any.fromFunction1(getDragGestureRecognizer), getDragSource = js.Any.fromFunction1(getDragSource), getDropTarget = js.Any.fromFunction1(getDropTarget), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

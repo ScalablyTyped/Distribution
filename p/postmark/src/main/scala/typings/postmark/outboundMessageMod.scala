@@ -1,6 +1,5 @@
 package typings.postmark
 
-import typings.postmark.messageSupportingTypesMod.Attachment
 import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
 import typings.postmark.outboundMessageEventsMod.MessageEvent
 import typings.postmark.supportingTypesMod.Hash
@@ -12,7 +11,7 @@ object outboundMessageMod {
   
   trait OutboundMessage extends StObject {
     
-    var Attachments: js.Array[Attachment]
+    var Attachments: js.Array[String]
     
     var Bcc: js.Array[Recipient]
     
@@ -45,7 +44,7 @@ object outboundMessageMod {
   object OutboundMessage {
     
     inline def apply(
-      Attachments: js.Array[Attachment],
+      Attachments: js.Array[String],
       Bcc: js.Array[Recipient],
       Cc: js.Array[Recipient],
       From: String,
@@ -66,17 +65,17 @@ object outboundMessageMod {
     
     extension [Self <: OutboundMessage](x: Self) {
       
-      inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[String]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: String*): Self = StObject.set(x, "Attachments", js.Array(value*))
       
       inline def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
       
-      inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "Bcc", js.Array(value*))
       
       inline def setCc(value: js.Array[Recipient]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
       
-      inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "Cc", js.Array(value :_*))
+      inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "Cc", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
       
@@ -90,7 +89,7 @@ object outboundMessageMod {
       
       inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
       
-      inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "Recipients", js.Array(value :_*))
+      inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "Recipients", js.Array(value*))
       
       inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
@@ -102,7 +101,7 @@ object outboundMessageMod {
       
       inline def setTo(value: js.Array[Recipient]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: Recipient*): Self = StObject.set(x, "To", js.Array(value :_*))
+      inline def setToVarargs(value: Recipient*): Self = StObject.set(x, "To", js.Array(value*))
       
       inline def setTrackLinks(value: LinkTrackingOptions): Self = StObject.set(x, "TrackLinks", value.asInstanceOf[js.Any])
       
@@ -125,7 +124,7 @@ object outboundMessageMod {
   object OutboundMessageDetails {
     
     inline def apply(
-      Attachments: js.Array[Attachment],
+      Attachments: js.Array[String],
       Bcc: js.Array[Recipient],
       Body: String,
       Cc: js.Array[Recipient],
@@ -156,7 +155,7 @@ object outboundMessageMod {
       
       inline def setMessageEvents(value: js.Array[MessageEvent]): Self = StObject.set(x, "MessageEvents", value.asInstanceOf[js.Any])
       
-      inline def setMessageEventsVarargs(value: MessageEvent*): Self = StObject.set(x, "MessageEvents", js.Array(value :_*))
+      inline def setMessageEventsVarargs(value: MessageEvent*): Self = StObject.set(x, "MessageEvents", js.Array(value*))
       
       inline def setTextBody(value: String): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
       
@@ -198,7 +197,7 @@ object outboundMessageMod {
       
       inline def setMessages(value: js.Array[OutboundMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: OutboundMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: OutboundMessage*): Self = StObject.set(x, "Messages", js.Array(value*))
       
       inline def setTotalCount(value: String): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

@@ -24,6 +24,6 @@ object GetPullRequestApprovalStatesOutput {
     
     inline def setApprovalsUndefined: Self = StObject.set(x, "approvals", js.undefined)
     
-    inline def setApprovalsVarargs(value: Approval*): Self = StObject.set(x, "approvals", js.Array(value :_*))
+    inline def setApprovalsVarargs(value: Approval*): Self = StObject.set(x, "approvals", js.Array(value*))
   }
 }

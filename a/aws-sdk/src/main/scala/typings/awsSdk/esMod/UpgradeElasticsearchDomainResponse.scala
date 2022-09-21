@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpgradeElasticsearchDomainResponse extends StObject {
   
+  var ChangeProgressDetails: js.UndefOr[typings.awsSdk.esMod.ChangeProgressDetails] = js.undefined
+  
   var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.undefined
   
   /**
@@ -26,6 +28,10 @@ object UpgradeElasticsearchDomainResponse {
   }
   
   extension [Self <: UpgradeElasticsearchDomainResponse](x: Self) {
+    
+    inline def setChangeProgressDetails(value: ChangeProgressDetails): Self = StObject.set(x, "ChangeProgressDetails", value.asInstanceOf[js.Any])
+    
+    inline def setChangeProgressDetailsUndefined: Self = StObject.set(x, "ChangeProgressDetails", js.undefined)
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

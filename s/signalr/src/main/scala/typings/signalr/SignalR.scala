@@ -175,6 +175,11 @@ object SignalR {
     var contentType: String = js.native
     
     /**
+      * Data sent with each request as a query string called "connectionData".
+      */
+    var data: js.UndefOr[String] = js.native
+    
+    /**
       * This should be set by the server in response to the negotiate request (30s default)
       */
     var disconnectTimeout: Double = js.native
@@ -227,7 +232,7 @@ object SignalR {
       *
       * @param calback A callback function to execute when any data is received on the connection
       */
-    def received(callback: js.Function1[/* data */ js.Any, Unit]): Connection = js.native
+    def received(callback: js.Function1[/* data */ Any, Unit]): Connection = js.native
     
     var reconnectDelay: Double = js.native
     
@@ -263,26 +268,26 @@ object SignalR {
     /**
       * Starts the connection
       */
-    def start(): JQueryPromise[js.Any] = js.native
+    def start(): JQueryPromise[Any] = js.native
     /**
       * Starts the connection
       *
       * @param callback A callback function to execute when the connection has started
       */
-    def start(callback: js.Function0[Unit]): JQueryPromise[js.Any] = js.native
+    def start(callback: js.Function0[Unit]): JQueryPromise[Any] = js.native
     /**
       * Starts the connection
       *
       * @param options Options map
       */
-    def start(options: ConnectionOptions): JQueryPromise[js.Any] = js.native
+    def start(options: ConnectionOptions): JQueryPromise[Any] = js.native
     /**
       * Starts the connection
       *
       * @param options Options map
       * @param calback A callback function to execute when the connection has started
       */
-    def start(options: ConnectionOptions, callback: js.Function0[Unit]): JQueryPromise[js.Any] = js.native
+    def start(options: ConnectionOptions, callback: js.Function0[Unit]): JQueryPromise[Any] = js.native
     
     /**
       * Adds a callback that will be invoked before anything is sent over the connection
@@ -310,6 +315,11 @@ object SignalR {
     def stop(async: Boolean): Connection = js.native
     def stop(async: Boolean, notifyServer: Boolean): Connection = js.native
     def stop(async: Unit, notifyServer: Boolean): Connection = js.native
+    
+    /**
+      * Data sent with each request as a query string called "connectionToken".
+      */
+    var token: js.UndefOr[String] = js.native
     
     var transportConnectTimeout: Double = js.native
     
@@ -415,7 +425,7 @@ object SignalR {
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      inline def setTransportVarargs(value: String*): Self = StObject.set(x, "transport", js.Array(value :_*))
+      inline def setTransportVarargs(value: String*): Self = StObject.set(x, "transport", js.Array(value*))
       
       inline def setWaitForPageLoad(value: Boolean): Self = StObject.set(x, "waitForPageLoad", value.asInstanceOf[js.Any])
       
@@ -518,7 +528,7 @@ object SignalR {
         */
       def createHubProxy(hubName: String): Proxy = js.native
       
-      var proxies: StringDictionary[js.Any] = js.native
+      var proxies: StringDictionary[Any] = js.native
       
       var transport: Name = js.native
     }
@@ -593,7 +603,7 @@ object SignalR {
         *
         * @param methodName The name of the server hub method.
         */
-      def invoke(methodName: String, args: js.Any*): JQueryPromise[js.Any] = js.native
+      def invoke(methodName: String, args: Any*): JQueryPromise[Any] = js.native
       
       /**
         * Removes the callback invocation request from the server hub for the given event name.
@@ -602,7 +612,7 @@ object SignalR {
         * @param callback [Optional] The callback to unregister. If not provided, all callbacks previously registered under that event name will be unregistered.
         */
       def off(eventName: String): Proxy = js.native
-      def off(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Proxy = js.native
+      def off(eventName: String, callback: js.Function1[/* repeated */ Any, Unit]): Proxy = js.native
       
       /**
         * Wires up a callback to be invoked when a invocation request is received from the server hub.
@@ -610,9 +620,9 @@ object SignalR {
         * @param eventName The name of the hub event to register the callback for.
         * @param callback The callback to be invoked.
         */
-      def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Proxy = js.native
+      def on(eventName: String, callback: js.Function1[/* repeated */ Any, Unit]): Proxy = js.native
       
-      var state: js.Any = js.native
+      var state: Any = js.native
     }
   }
   
@@ -807,7 +817,7 @@ object SignalR {
     
     def reconnect(connection: Connection): Unit
     
-    def send(connection: Connection, data: js.Any): Unit
+    def send(connection: Connection, data: Any): Unit
     
     def start(
       connection: Connection,
@@ -826,7 +836,7 @@ object SignalR {
       lostConnection: Connection => Unit,
       name: String,
       reconnect: Connection => Unit,
-      send: (Connection, js.Any) => Unit,
+      send: (Connection, Any) => Unit,
       start: (Connection, js.Function0[Unit], js.Function1[/* error */ js.UndefOr[ConnectionError], Unit]) => Unit,
       stop: Connection => Unit,
       supportsKeepAlive: () => Boolean
@@ -845,7 +855,7 @@ object SignalR {
       
       inline def setReconnect(value: Connection => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction1(value))
       
-      inline def setSend(value: (Connection, js.Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (Connection, Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       
       inline def setStart(
         value: (Connection, js.Function0[Unit], js.Function1[/* error */ js.UndefOr[ConnectionError], Unit]) => Unit

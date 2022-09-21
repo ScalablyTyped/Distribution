@@ -38,10 +38,10 @@ object InsightRuleContributor {
     
     inline def setDatapoints(value: InsightRuleContributorDatapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
-    inline def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = StObject.set(x, "Datapoints", js.Array(value*))
     
     inline def setKeys(value: InsightRuleContributorKeys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: InsightRuleContributorKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: InsightRuleContributorKey*): Self = StObject.set(x, "Keys", js.Array(value*))
   }
 }

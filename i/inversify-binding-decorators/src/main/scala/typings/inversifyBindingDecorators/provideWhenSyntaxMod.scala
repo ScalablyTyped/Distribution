@@ -11,11 +11,11 @@ object provideWhenSyntaxMod {
   
   @JSImport("inversify-binding-decorators/dts/syntax/provide_when_syntax", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  open class default[T] protected ()
     extends StObject
        with ProvideWhenSyntax[T] {
     def this(
-      bindingWhenSyntax: js.Function2[/* bind */ Bind, /* target */ js.Any, BindingWhenSyntax[T]],
+      bindingWhenSyntax: js.Function2[/* bind */ Bind, /* target */ Any, BindingWhenSyntax[T]],
       provideDoneSyntax: ProvideDoneSyntax
     ) = this()
   }
@@ -25,8 +25,8 @@ object provideWhenSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideWhenSyntax[T] {
     
-    /* private */ var _bindingWhenSyntax: js.Any = js.native
+    /* private */ var _bindingWhenSyntax: Any = js.native
     
-    /* private */ var _provideDoneSyntax: js.Any = js.native
+    /* private */ var _provideDoneSyntax: Any = js.native
   }
 }

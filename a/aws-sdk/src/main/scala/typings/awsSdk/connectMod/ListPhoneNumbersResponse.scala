@@ -33,6 +33,6 @@ object ListPhoneNumbersResponse {
     
     inline def setPhoneNumberSummaryListUndefined: Self = StObject.set(x, "PhoneNumberSummaryList", js.undefined)
     
-    inline def setPhoneNumberSummaryListVarargs(value: PhoneNumberSummary*): Self = StObject.set(x, "PhoneNumberSummaryList", js.Array(value :_*))
+    inline def setPhoneNumberSummaryListVarargs(value: PhoneNumberSummary*): Self = StObject.set(x, "PhoneNumberSummaryList", js.Array(value*))
   }
 }

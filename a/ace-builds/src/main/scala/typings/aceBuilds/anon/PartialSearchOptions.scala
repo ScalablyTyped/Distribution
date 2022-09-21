@@ -1,7 +1,6 @@
 package typings.aceBuilds.anon
 
 import typings.aceBuilds.mod.Ace.Range
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait PartialSearchOptions extends StObject {
   
   var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var needle: js.UndefOr[String | RegExp] = js.undefined
+  var needle: js.UndefOr[String | js.RegExp] = js.undefined
   
   var preserveCase: js.UndefOr[Boolean] = js.undefined
   
@@ -21,13 +20,13 @@ trait PartialSearchOptions extends StObject {
   
   var range: js.UndefOr[Range] = js.undefined
   
-  var regExp: js.UndefOr[RegExp] = js.undefined
+  var regExp: js.UndefOr[Boolean] = js.undefined
   
   var skipCurrent: js.UndefOr[Boolean] = js.undefined
   
   var start: js.UndefOr[Range] = js.undefined
   
-  var wholeWord: js.UndefOr[String] = js.undefined
+  var wholeWord: js.UndefOr[Boolean] = js.undefined
   
   var wrap: js.UndefOr[Boolean] = js.undefined
 }
@@ -48,7 +47,7 @@ object PartialSearchOptions {
     
     inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    inline def setNeedle(value: String | RegExp): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
+    inline def setNeedle(value: String | js.RegExp): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
     
     inline def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
     
@@ -64,7 +63,7 @@ object PartialSearchOptions {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: Boolean): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
@@ -76,7 +75,7 @@ object PartialSearchOptions {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setWholeWord(value: String): Self = StObject.set(x, "wholeWord", value.asInstanceOf[js.Any])
+    inline def setWholeWord(value: Boolean): Self = StObject.set(x, "wholeWord", value.asInstanceOf[js.Any])
     
     inline def setWholeWordUndefined: Self = StObject.set(x, "wholeWord", js.undefined)
     

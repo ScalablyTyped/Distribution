@@ -22,6 +22,6 @@ object CropHintsAnnotation {
     
     inline def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
     
-    inline def setCropHintsVarargs(value: CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
+    inline def setCropHintsVarargs(value: CropHint*): Self = StObject.set(x, "cropHints", js.Array(value*))
   }
 }

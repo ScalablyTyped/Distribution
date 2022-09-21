@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "LineColor")
 @js.native
-class LineColor () extends AbstractColor {
+open class LineColor () extends AbstractColor {
   def this(border: Double) = this()
   def this(border: Double, inner: Double) = this()
   def this(border: Unit, inner: Double) = this()

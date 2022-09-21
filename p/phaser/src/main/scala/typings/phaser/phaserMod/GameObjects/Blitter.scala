@@ -2,7 +2,6 @@ package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Blitter")
 @js.native
-class Blitter protected ()
+open class Blitter protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Blitter {
   /**
@@ -44,21 +43,21 @@ class Blitter protected ()
   def this(scene: Scene, x: Unit, y: Double, texture: String) = this()
   def this(scene: Scene, x: Unit, y: Unit, texture: String) = this()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: String, frame: Double) = this()
   def this(scene: Scene, x: Double, y: Double, texture: Unit, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: Unit, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: Unit, frame: Double) = this()
   def this(scene: Scene, x: Double, y: Unit, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Unit, texture: String, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Unit, texture: String, frame: Double) = this()
   def this(scene: Scene, x: Double, y: Unit, texture: Unit, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Unit, texture: Unit, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Unit, texture: Unit, frame: Double) = this()
   def this(scene: Scene, x: Unit, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Unit, y: Double, texture: String, frame: integer) = this()
+  def this(scene: Scene, x: Unit, y: Double, texture: String, frame: Double) = this()
   def this(scene: Scene, x: Unit, y: Double, texture: Unit, frame: String) = this()
-  def this(scene: Scene, x: Unit, y: Double, texture: Unit, frame: integer) = this()
+  def this(scene: Scene, x: Unit, y: Double, texture: Unit, frame: Double) = this()
   def this(scene: Scene, x: Unit, y: Unit, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Unit, y: Unit, texture: String, frame: integer) = this()
+  def this(scene: Scene, x: Unit, y: Unit, texture: String, frame: Double) = this()
   def this(scene: Scene, x: Unit, y: Unit, texture: Unit, frame: String) = this()
-  def this(scene: Scene, x: Unit, y: Unit, texture: Unit, frame: integer) = this()
+  def this(scene: Scene, x: Unit, y: Unit, texture: Unit, frame: Double) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -117,7 +116,7 @@ class Blitter protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

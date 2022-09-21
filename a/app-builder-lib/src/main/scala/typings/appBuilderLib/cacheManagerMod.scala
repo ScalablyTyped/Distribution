@@ -14,7 +14,7 @@ object cacheManagerMod {
   
   @JSImport("app-builder-lib/out/util/cacheManager", "BuildCacheManager")
   @js.native
-  class BuildCacheManager protected () extends StObject {
+  open class BuildCacheManager protected () extends StObject {
     def this(outDir: String, executableFile: String, arch: Arch) = this()
     
     val cacheDir: String = js.native
@@ -27,9 +27,9 @@ object cacheManagerMod {
     
     def copyIfValid(digest: String): js.Promise[Boolean] = js.native
     
-    /* private */ val executableFile: js.Any = js.native
+    /* private */ val executableFile: Any = js.native
     
-    /* private */ var newDigest: js.Any = js.native
+    /* private */ var newDigest: Any = js.native
     
     def save(): js.Promise[Unit] = js.native
   }

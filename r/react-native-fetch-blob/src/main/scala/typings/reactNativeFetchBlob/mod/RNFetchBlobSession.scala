@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fetch-blob", "RNFetchBlobSession")
 @js.native
-class RNFetchBlobSession protected () extends StObject {
+open class RNFetchBlobSession protected () extends StObject {
   def this(name: String, list: js.Array[String]) = this()
   
   def add(path: String): RNFetchBlobSession = js.native
@@ -26,7 +26,7 @@ object RNFetchBlobSession {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSession(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSession(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def removeSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

@@ -20,7 +20,7 @@ trait IgUploadMethods extends StObject {
     * @param formData If the browser supports HTML5 file API formData is instance of FormData, otherwise(like IE10 and older) formData is jQuery representation of the <form> that should be submitted to the server
     * @param fields Array of data fields that should be appended to the formData. Each data field is object with 2 properties - value and name. If the browser supports HTML5 these data fields are added to the formData. Otherwise each of these data field is appended as input hidden field to the <form>
     */
-  def addDataFields(formData: js.Object, fields: js.Array[js.Any]): Unit
+  def addDataFields(formData: js.Object, fields: js.Array[Any]): Unit
   
   /**
     * Cancel all uploading and pending files
@@ -94,7 +94,7 @@ object IgUploadMethods {
   
   inline def apply(
     addDataField: (js.Object, js.Object) => Unit,
-    addDataFields: (js.Object, js.Array[js.Any]) => Unit,
+    addDataFields: (js.Object, js.Array[Any]) => Unit,
     cancelAll: () => Unit,
     cancelUpload: Double => Unit,
     changeGlobalLanguage: () => Unit,
@@ -116,7 +116,7 @@ object IgUploadMethods {
     
     inline def setAddDataField(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addDataField", js.Any.fromFunction2(value))
     
-    inline def setAddDataFields(value: (js.Object, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addDataFields", js.Any.fromFunction2(value))
+    inline def setAddDataFields(value: (js.Object, js.Array[Any]) => Unit): Self = StObject.set(x, "addDataFields", js.Any.fromFunction2(value))
     
     inline def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
     

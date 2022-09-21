@@ -10,10 +10,10 @@ object libraryMusicMod {
   
   @JSImport("material-ui/svg-icons/av/library-music", JSImport.Default)
   @js.native
-  class default () extends AvLibraryMusic
+  open class default () extends AvLibraryMusic
   
   @JSImport("material-ui/svg-icons/av/library-music", "AvLibraryMusic")
   @js.native
-  class AvLibraryMusic ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvLibraryMusic ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

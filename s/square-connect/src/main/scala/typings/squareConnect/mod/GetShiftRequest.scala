@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "GetShiftRequest")
 @js.native
-class GetShiftRequest () extends StObject
+open class GetShiftRequest () extends StObject

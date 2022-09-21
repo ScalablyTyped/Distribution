@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // chayns.dialog.select()
 trait DialogSelectConfig extends StObject {
   
-  var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var buttons: js.UndefOr[js.Array[Any]] = js.undefined
   
   // TODO interface for buttons
   var list: js.Array[DialogSelectConfigItem]
@@ -29,15 +29,15 @@ object DialogSelectConfig {
   
   extension [Self <: DialogSelectConfig](x: Self) {
     
-    inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Any*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setList(value: js.Array[DialogSelectConfigItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListVarargs(value: DialogSelectConfigItem*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: DialogSelectConfigItem*): Self = StObject.set(x, "list", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

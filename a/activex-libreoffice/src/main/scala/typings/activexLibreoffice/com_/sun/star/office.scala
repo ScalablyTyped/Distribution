@@ -40,10 +40,10 @@ object office {
       createAutoStart: (Boolean, Boolean) => Unit,
       createDefault: () => Unit,
       createStart: Boolean => Unit,
-      getFastPropertyValue: Double => js.Any,
-      queryInterface: `type` => js.Any,
+      getFastPropertyValue: Double => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      setFastPropertyValue: (Double, js.Any) => Unit
+      setFastPropertyValue: (Double, Any) => Unit
     ): Quickstart = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAndSetVeto = js.Any.fromFunction3(createAndSetVeto), createAutoStart = js.Any.fromFunction2(createAutoStart), createDefault = js.Any.fromFunction0(createDefault), createStart = js.Any.fromFunction1(createStart), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
       __obj.asInstanceOf[Quickstart]
@@ -68,7 +68,7 @@ object office {
        with XComponent {
     
     /** a reference to the document content this annotation is anchored to. */
-    var Anchor: js.Any
+    var Anchor: Any
     
     /** stores the full name of the author who created this annotation. */
     var Author: String
@@ -94,7 +94,7 @@ object office {
   object XAnnotation {
     
     inline def apply(
-      Anchor: js.Any,
+      Anchor: Any,
       Author: String,
       DateTime: DateTime,
       Initials: String,
@@ -108,13 +108,13 @@ object office {
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       dispose: () => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): XAnnotation = {
       val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], Author = Author.asInstanceOf[js.Any], DateTime = DateTime.asInstanceOf[js.Any], Initials = Initials.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], TextRange = TextRange.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[XAnnotation]
@@ -122,7 +122,7 @@ object office {
     
     extension [Self <: XAnnotation](x: Self) {
       
-      inline def setAnchor(value: js.Any): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Any): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
       
       inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       

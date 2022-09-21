@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "RadioGroup")
 @js.native
-class RadioGroup protected ()
-  extends Component[RadioGroupProps, js.Object, js.Any] {
+open class RadioGroup protected ()
+  extends Component[RadioGroupProps, js.Object, Any] {
   def this(props: RadioGroupProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadioGroupProps, context: js.Any) = this()
+  def this(props: RadioGroupProps, context: Any) = this()
 }

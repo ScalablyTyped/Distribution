@@ -1,6 +1,5 @@
 package typings.nodegit
 
-import typings.nodegit.bufMod.Buf
 import typings.nodegit.enumsMod.Enums.DIRECTION
 import typings.nodegit.fetchOptionsMod.FetchOptions
 import typings.nodegit.nodegitNumbers.`0`
@@ -21,7 +20,7 @@ object remoteMod {
   
   @JSImport("nodegit/remote", "Remote")
   @js.native
-  class Remote () extends StObject {
+  open class Remote () extends StObject {
     
     def autotag(): Double = js.native
     
@@ -30,25 +29,25 @@ object remoteMod {
     
     def connected(): Double = js.native
     
-    def defaultBranch(): js.Promise[Buf] = js.native
+    def defaultBranch(): js.Promise[String] = js.native
     
     def disconnect(): js.Promise[Unit] = js.native
     
-    def download(refSpecs: js.Array[js.Any]): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[js.Any], opts: Unit, callback: js.Function): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[js.Any], opts: FetchOptions): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[js.Any], opts: FetchOptions, callback: js.Function): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[Any]): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[Any], opts: Unit, callback: js.Function): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[Any], opts: FetchOptions): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[Any], opts: FetchOptions, callback: js.Function): js.Promise[Double] = js.native
     
     def dup(): js.Promise[Remote] = js.native
     
-    def fetch(refSpecs: js.Array[js.Any], opts: FetchOptions, message: String): js.Promise[Double] = js.native
-    def fetch(refSpecs: js.Array[js.Any], opts: FetchOptions, message: String, callback: js.Function): js.Promise[Double] = js.native
+    def fetch(refSpecs: js.Array[Any], opts: FetchOptions, message: String): js.Promise[Double] = js.native
+    def fetch(refSpecs: js.Array[Any], opts: FetchOptions, message: String, callback: js.Function): js.Promise[Double] = js.native
     
     def free(): Unit = js.native
     
-    def getFetchRefspecs(): js.Promise[js.Array[js.Any]] = js.native
+    def getFetchRefspecs(): js.Promise[js.Array[Any]] = js.native
     
-    def getPushRefspecs(): js.Promise[js.Array[js.Any]] = js.native
+    def getPushRefspecs(): js.Promise[js.Array[Any]] = js.native
     
     def getRefspec(n: Double): Refspec = js.native
     
@@ -60,17 +59,17 @@ object remoteMod {
     
     def pruneRefs(): Double = js.native
     
-    def push(refSpecs: js.Array[js.Any]): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[js.Any], options: Unit, callback: js.Function): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[js.Any], options: PushOptions): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[js.Any], options: PushOptions, callback: js.Function): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[Any]): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[Any], options: Unit, callback: js.Function): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[Any], options: PushOptions): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[Any], options: PushOptions, callback: js.Function): js.Promise[Double] = js.native
     
     def pushurl(): String = js.native
     
     /**
       * Lists advertised references from a remote. You must connect to the remote before using referenceList.
       */
-    def referenceList(): js.Promise[js.Array[js.Any]] = js.native
+    def referenceList(): js.Promise[js.Array[Any]] = js.native
     
     def refspecCount(): Double = js.native
     
@@ -114,12 +113,14 @@ object remoteMod {
     
     inline def isValidName(remoteName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(remoteName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def list(repo: Repository): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
     
     inline def lookup(repo: Repository, name: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     inline def lookup(repo: Repository, name: String, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     inline def lookup(repo: Repository, name: Remote): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     inline def lookup(repo: Repository, name: Remote, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    
+    inline def rename(repo: Repository, oldName: String, newName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(repo.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def setAutotag(repo: Repository, remote: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutotag")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
     

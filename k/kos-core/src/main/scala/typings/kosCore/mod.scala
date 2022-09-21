@@ -24,7 +24,7 @@ object mod {
   
   trait Action[T] extends StObject {
     
-    var payload: js.UndefOr[Partial[T] & StringDictionary[js.Any]] = js.undefined
+    var payload: js.UndefOr[Partial[T] & StringDictionary[Any]] = js.undefined
     
     var `type`: String
   }
@@ -38,7 +38,7 @@ object mod {
     
     extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      inline def setPayload(value: Partial[T] & StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Partial[T] & StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
@@ -53,21 +53,21 @@ object mod {
     
     var Util: typings.kosCore.mod.Util = js.native
     
-    def Wrapper(config: WrapperConfig): js.Function1[/* component */ ReactComponent[js.Any & KosProps[js.Any], js.Any], js.Any] = js.native
+    def Wrapper(config: WrapperConfig): js.Function1[/* component */ ReactComponent[Any & KosProps[Any], Any], Any] = js.native
     
-    def getModel(namespace: String): KosModel[js.Any] = js.native
+    def getModel(namespace: String): KosModel[Any] = js.native
     
-    def registeModel(model: js.Any): Unit = js.native
+    def registeModel(model: Any): Unit = js.native
     
     def removeModel(namespace: String): Unit = js.native
     
-    def start(Layout: ReactComponent[js.Any, js.Any]): Unit = js.native
-    def start(Layout: ReactComponent[js.Any, js.Any], container: String): Unit = js.native
+    def start(Layout: ReactComponent[Any, Any]): Unit = js.native
+    def start(Layout: ReactComponent[Any, Any], container: String): Unit = js.native
     
     def use(middleware: js.Function1[/* api */ Dispatch, Unit]): Unit = js.native
   }
   
-  type KosDispatch = js.Function1[/* action */ Action[js.Any], Unit]
+  type KosDispatch = js.Function1[/* action */ Action[Any], Unit]
   
   trait KosModel[T] extends StObject {
     
@@ -83,7 +83,7 @@ object mod {
     var getAsync: js.UndefOr[
         js.Function1[
           /* key */ String, 
-          js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[js.Any]], Unit]
+          js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[Any]], Unit]
         ]
       ] = js.undefined
     
@@ -135,7 +135,7 @@ object mod {
       ): Self = StObject.set(x, "asyncs", value.asInstanceOf[js.Any])
       
       inline def setGetAsync(
-        value: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[js.Any]], Unit]
+        value: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[Any]], Unit]
       ): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
       
       inline def setGetAsyncUndefined: Self = StObject.set(x, "getAsync", js.undefined)
@@ -160,7 +160,7 @@ object mod {
     
     var getNamespace: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var getParam: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getParam: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object KosProps {
     
@@ -179,7 +179,7 @@ object mod {
       
       inline def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
       
-      inline def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
+      inline def setGetParam(value: () => Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
       
       inline def setGetParamUndefined: Self = StObject.set(x, "getParam", js.undefined)
     }
@@ -191,11 +191,11 @@ object mod {
     
     def getActionType(action: String): Namespace
     
-    def getParam(): js.Any
+    def getParam(): Any
   }
   object Util {
     
-    inline def apply(getActionType: String => Namespace, getParam: () => js.Any): Util = {
+    inline def apply(getActionType: String => Namespace, getParam: () => Any): Util = {
       val __obj = js.Dynamic.literal(getActionType = js.Any.fromFunction1(getActionType), getParam = js.Any.fromFunction0(getParam))
       __obj.asInstanceOf[Util]
     }
@@ -204,7 +204,7 @@ object mod {
       
       inline def setGetActionType(value: String => Namespace): Self = StObject.set(x, "getActionType", js.Any.fromFunction1(value))
       
-      inline def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
+      inline def setGetParam(value: () => Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
     }
   }
   
@@ -214,13 +214,13 @@ object mod {
     
     var autoReset: js.UndefOr[Boolean] = js.undefined
     
-    var model: KosModel[js.Any]
+    var model: KosModel[Any]
     
     var namespace: js.UndefOr[String] = js.undefined
   }
   object WrapperConfig {
     
-    inline def apply(model: KosModel[js.Any]): WrapperConfig = {
+    inline def apply(model: KosModel[Any]): WrapperConfig = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperConfig]
     }
@@ -235,7 +235,7 @@ object mod {
       
       inline def setAutoResetUndefined: Self = StObject.set(x, "autoReset", js.undefined)
       
-      inline def setModel(value: KosModel[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: KosModel[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       

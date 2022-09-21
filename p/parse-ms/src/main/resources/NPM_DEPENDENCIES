@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parse-ms" : "2.1.0"
+      "parse-ms" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "parse-ms" : "2.1.0"
+      "parse-ms" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

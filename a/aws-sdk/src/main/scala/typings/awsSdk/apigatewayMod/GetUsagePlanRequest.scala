@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUsagePlanRequest extends StObject {
   
   /**
-    * [Required] The identifier of the UsagePlan resource to be retrieved.
+    * The identifier of the UsagePlan resource to be retrieved.
     */
   var usagePlanId: String
 }

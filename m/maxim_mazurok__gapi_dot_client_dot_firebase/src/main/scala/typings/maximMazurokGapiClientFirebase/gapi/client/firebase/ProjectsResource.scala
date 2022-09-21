@@ -2,15 +2,15 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientFirebase.anon.Accesstoken
-import typings.maximMazurokGapiClientFirebase.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientFirebase.anon.Alt
 import typings.maximMazurokGapiClientFirebase.anon.AltCallback
+import typings.maximMazurokGapiClientFirebase.anon.CallbackFields
 import typings.maximMazurokGapiClientFirebase.anon.Fields
+import typings.maximMazurokGapiClientFirebase.anon.FieldsKey
 import typings.maximMazurokGapiClientFirebase.anon.Filter
+import typings.maximMazurokGapiClientFirebase.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientFirebase.anon.PrettyPrint
 import typings.maximMazurokGapiClientFirebase.anon.Project
-import typings.maximMazurokGapiClientFirebase.anon.Uploadprotocol
-import typings.maximMazurokGapiClientFirebase.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProjectsResource extends StObject {
   
+  def addFirebase(request: AltCallback, body: AddFirebaseRequest): Request[Operation] = js.native
   /**
     * Adds Firebase resources to the specified existing [Google Cloud Platform (GCP) `Project`] (https://cloud.google.com/resource-manager/reference/rest/v1/projects). Since a
     * FirebaseProject is actually also a GCP `Project`, a `FirebaseProject` has the same underlying GCP identifiers (`projectNumber` and `projectId`). This allows for easy interop with
@@ -30,9 +31,7 @@ trait ProjectsResource extends StObject {
     * and `serviceusage.services.get`.
     */
   def addFirebase(request: Project): Request[Operation] = js.native
-  def addFirebase(request: Uploadprotocol, body: AddFirebaseRequest): Request[Operation] = js.native
   
-  def addGoogleAnalytics(request: Fields, body: AddGoogleAnalyticsRequest): Request[Operation] = js.native
   /**
     * Links the specified FirebaseProject with an existing [Google Analytics account](http://www.google.com/analytics/). Using this call, you can either: - Specify an `analyticsAccountId`
     * to provision a new Google Analytics property within the specified account and associate the new property with the `FirebaseProject`. - Specify an existing `analyticsPropertyId` to
@@ -49,7 +48,8 @@ trait ProjectsResource extends StObject {
     * Analytics enabled, and you call `AddGoogleAnalytics` using an `analyticsPropertyId` that's different from the currently associated property, then the call will fail. Analytics may
     * have already been enabled in the Firebase console or by specifying `timeZone` and `regionCode` in the call to [`AddFirebase`](../../v1beta1/projects/addFirebase).
     */
-  def addGoogleAnalytics(request: Xgafv): Request[Operation] = js.native
+  def addGoogleAnalytics(request: CallbackFields): Request[Operation] = js.native
+  def addGoogleAnalytics(request: Fields, body: AddGoogleAnalyticsRequest): Request[Operation] = js.native
   
   var androidApps: AndroidAppsResource = js.native
   
@@ -86,9 +86,10 @@ trait ProjectsResource extends StObject {
   def list(request: Accesstoken): Request[ListFirebaseProjectsResponse] = js.native
   
   /** Updates the attributes of the specified FirebaseProject. All [query parameters](#query-parameters) are required. */
-  def patch(request: AccesstokenAlt): Request[FirebaseProject] = js.native
+  def patch(request: FieldsKey): Request[FirebaseProject] = js.native
   def patch(request: PrettyPrint, body: FirebaseProject): Request[FirebaseProject] = js.native
   
+  def removeAnalytics(request: Fields, body: RemoveAnalyticsRequest): Request[js.Object] = js.native
   /**
     * Unlinks the specified FirebaseProject from its Google Analytics account. This call removes the association of the specified `FirebaseProject` with its current Google Analytics
     * property. However, this call does not delete the Google Analytics resources, such as the Google Analytics property or any data streams. These resources may be re-associated later to
@@ -96,8 +97,7 @@ trait ProjectsResource extends StObject {
     * call re-links data streams with their corresponding apps. However, for Web Apps, this call provisions a *new* data stream for each Web App. To call `RemoveAnalytics`, a project
     * member must be an Owner for the `FirebaseProject`.
     */
-  def removeAnalytics(request: AltCallback): Request[js.Object] = js.native
-  def removeAnalytics(request: Fields, body: RemoveAnalyticsRequest): Request[js.Object] = js.native
+  def removeAnalytics(request: KeyOauthtoken): Request[js.Object] = js.native
   
   /**
     * Lists all available Apps for the specified FirebaseProject. This is a convenience method. Typically, interaction with an App should be done using the platform-specific service, but

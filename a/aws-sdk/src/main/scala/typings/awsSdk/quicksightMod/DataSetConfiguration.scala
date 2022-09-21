@@ -34,7 +34,7 @@ object DataSetConfiguration {
     
     inline def setColumnGroupSchemaListUndefined: Self = StObject.set(x, "ColumnGroupSchemaList", js.undefined)
     
-    inline def setColumnGroupSchemaListVarargs(value: ColumnGroupSchema*): Self = StObject.set(x, "ColumnGroupSchemaList", js.Array(value :_*))
+    inline def setColumnGroupSchemaListVarargs(value: ColumnGroupSchema*): Self = StObject.set(x, "ColumnGroupSchemaList", js.Array(value*))
     
     inline def setDataSetSchema(value: DataSetSchema): Self = StObject.set(x, "DataSetSchema", value.asInstanceOf[js.Any])
     

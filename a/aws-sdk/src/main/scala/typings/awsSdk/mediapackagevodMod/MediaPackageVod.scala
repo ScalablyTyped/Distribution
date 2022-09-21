@@ -15,6 +15,20 @@ trait MediaPackageVod extends Service {
   var config_MediaPackageVod: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Changes the packaging group's properities to configure log subscription
+    */
+  def configureLogs(): Request[ConfigureLogsResponse, AWSError] = js.native
+  def configureLogs(callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsResponse, Unit]): Request[ConfigureLogsResponse, AWSError] = js.native
+  /**
+    * Changes the packaging group's properities to configure log subscription
+    */
+  def configureLogs(params: ConfigureLogsRequest): Request[ConfigureLogsResponse, AWSError] = js.native
+  def configureLogs(
+    params: ConfigureLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsResponse, Unit]
+  ): Request[ConfigureLogsResponse, AWSError] = js.native
+  
+  /**
     * Creates a new MediaPackage VOD Asset resource.
     */
   def createAsset(): Request[CreateAssetResponse, AWSError] = js.native

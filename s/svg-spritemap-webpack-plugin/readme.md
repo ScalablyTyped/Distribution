@@ -1,7 +1,7 @@
 
 # Scala.js typings for svg-spritemap-webpack-plugin
 
-Typings are for version 3.5
+Typings are for version 4.4
 
 ## Library description:
 Generates symbol-based SVG spritemap from all .svg files in a directory
@@ -10,10 +10,10 @@ Generates symbol-based SVG spritemap from all .svg files in a directory
 | ------------------ | :-------------: |
 | Full name          | svg-spritemap-webpack-plugin |
 | Keywords           | svg, sprite, sprites, spritemap, symbols, icons, sass, scss, less, css, variables, webpack, plugin |
-| # releases         | 30 |
-| # dependents       | 14 |
-| # downloads        | 700338 |
-| # stars            | 1 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 122564.33333333333 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/cascornelissen/svg-spritemap-webpack-plugin)

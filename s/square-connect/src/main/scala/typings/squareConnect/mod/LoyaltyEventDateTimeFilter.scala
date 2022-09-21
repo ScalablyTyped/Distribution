@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyEventDateTimeFilter")
 @js.native
-class LoyaltyEventDateTimeFilter () extends StObject {
+open class LoyaltyEventDateTimeFilter () extends StObject {
   
   /**
     * The `created_at` date time range used to filter the result.

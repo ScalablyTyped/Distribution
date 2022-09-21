@@ -11,14 +11,12 @@ A fast fuzzy string set for JavaScript
 | Full name          | fuzzyset |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 92618 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 21248.0 |
+| # stars            | 1309.0 |
 
 ## Links
-- [Homepage](http://Glench.github.com/fuzzyset.js)
 - [Bugs](https://github.com/Glench/fuzzyset.js/issues)
-- [Repository](https://github.com/Glench/fuzzyset.js)
 - [Npm](https://www.npmjs.com/package/fuzzyset)
     
 

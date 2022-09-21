@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Binds a store to this instance
     * @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
     */
-  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
     * @param store Ext.data.AbstractStore The store to bind to
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Gets the listeners to bind to a new store
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
   
   /** [Config Option] (Number) */
   var inputItemWidth: js.UndefOr[Double] = js.undefined
@@ -133,7 +133,7 @@ object IPagingToolbar {
     
     inline def setBind(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    inline def setBindStore(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
@@ -165,11 +165,11 @@ object IPagingToolbar {
     
     inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+    inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
     
-    inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+    inline def setGetStoreListenersFunction0(value: () => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     

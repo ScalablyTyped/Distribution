@@ -27,7 +27,7 @@ object ListBranchesResult {
     
     inline def setBranches(value: Branches): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    inline def setBranchesVarargs(value: Branch*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: Branch*): Self = StObject.set(x, "branches", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

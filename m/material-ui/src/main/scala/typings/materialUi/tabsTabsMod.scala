@@ -10,10 +10,10 @@ object tabsTabsMod {
   
   @JSImport("material-ui/Tabs/Tabs", JSImport.Default)
   @js.native
-  class default () extends Tabs
+  open class default () extends Tabs
   
   @JSImport("material-ui/Tabs/Tabs", "Tabs")
   @js.native
-  class Tabs ()
-    extends Component[TabsProps, js.Object, js.Any]
+  open class Tabs ()
+    extends Component[TabsProps, js.Object, Any]
 }

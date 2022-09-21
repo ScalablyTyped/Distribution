@@ -13,7 +13,7 @@ object xmlMod {
   
   @JSImport("builder-util-runtime/out/xml", "XElement")
   @js.native
-  class XElement protected () extends StObject {
+  open class XElement protected () extends StObject {
     def this(name: String) = this()
     
     def attribute(name: String): String = js.native

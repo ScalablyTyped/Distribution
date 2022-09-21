@@ -61,7 +61,7 @@ object XLayoutManager2 {
     isVisible: () => Boolean,
     lock: () => Unit,
     lockWindow: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLayoutManagerEventListener: XLayoutManagerListener => Unit,
     removeMergedMenuBar: () => Unit,

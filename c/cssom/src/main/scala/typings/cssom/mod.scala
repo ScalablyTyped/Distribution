@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("cssom", "CSSDocumentRule")
   @js.native
-  class CSSDocumentRule () extends CSSRule {
+  open class CSSDocumentRule () extends CSSRule {
     
     var cssRules: js.Array[CSSRule] = js.native
     
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("cssom", "CSSFontFaceRule")
   @js.native
-  class CSSFontFaceRule () extends CSSRule {
+  open class CSSFontFaceRule () extends CSSRule {
     
     var style: CSSStyleDeclaration = js.native
     
@@ -46,7 +46,7 @@ object mod {
   
   @JSImport("cssom", "CSSHostRule")
   @js.native
-  class CSSHostRule () extends CSSRule {
+  open class CSSHostRule () extends CSSRule {
     
     var cssRules: js.Array[CSSRule] = js.native
     
@@ -56,7 +56,7 @@ object mod {
   
   @JSImport("cssom", "CSSImportRule")
   @js.native
-  class CSSImportRule () extends CSSRule {
+  open class CSSImportRule () extends CSSRule {
     
     var href: String = js.native
     
@@ -70,7 +70,7 @@ object mod {
   
   @JSImport("cssom", "CSSKeyframeRule")
   @js.native
-  class CSSKeyframeRule () extends CSSRule {
+  open class CSSKeyframeRule () extends CSSRule {
     
     var keyText: String = js.native
     
@@ -82,7 +82,7 @@ object mod {
   
   @JSImport("cssom", "CSSKeyframesRule")
   @js.native
-  class CSSKeyframesRule () extends CSSRule {
+  open class CSSKeyframesRule () extends CSSRule {
     
     var cssRules: js.Array[CSSRule] = js.native
     
@@ -94,7 +94,7 @@ object mod {
   
   @JSImport("cssom", "CSSMediaRule")
   @js.native
-  class CSSMediaRule () extends CSSRule {
+  open class CSSMediaRule () extends CSSRule {
     
     var cssRules: js.Array[CSSRule] = js.native
     
@@ -191,7 +191,7 @@ object mod {
   
   @JSImport("cssom", "CSSStyleDeclaration")
   @js.native
-  class CSSStyleDeclaration ()
+  open class CSSStyleDeclaration ()
     extends StObject
        with /* index */ NumberDictionary[String] {
     
@@ -215,7 +215,7 @@ object mod {
   
   @JSImport("cssom", "CSSStyleRule")
   @js.native
-  class CSSStyleRule () extends CSSRule {
+  open class CSSStyleRule () extends CSSRule {
     
     var selectorText: String = js.native
     
@@ -231,12 +231,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(ruleText: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parse(ruleText: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @JSImport("cssom", "CSSStyleSheet")
   @js.native
-  class CSSStyleSheet () extends StyleSheet {
+  open class CSSStyleSheet () extends StyleSheet {
     
     var cssRules: js.Array[CSSRule] = js.native
     
@@ -248,7 +248,7 @@ object mod {
   
   @JSImport("cssom", "CSSSupportsRule")
   @js.native
-  class CSSSupportsRule () extends CSSRule {
+  open class CSSSupportsRule () extends CSSRule {
     
     var conditionText: String = js.native
     
@@ -260,7 +260,7 @@ object mod {
   
   @JSImport("cssom", "CSSValue")
   @js.native
-  class CSSValue () extends StObject {
+  open class CSSValue () extends StObject {
     
     /** @unsupported The getter and setter are currently unimplemented and throw unconditionally. */
     var cssText: String = js.native
@@ -268,7 +268,7 @@ object mod {
   
   @JSImport("cssom", "CSSValueExpression")
   @js.native
-  class CSSValueExpression protected () extends CSSValue {
+  open class CSSValueExpression protected () extends CSSValue {
     def this(token: String, idx: Double) = this()
     
     def parse(): Error | Expression = js.native
@@ -276,7 +276,7 @@ object mod {
   
   @JSImport("cssom", "MatcherList")
   @js.native
-  class MatcherList ()
+  open class MatcherList ()
     extends StObject
        with /* index */ NumberDictionary[String] {
     
@@ -291,7 +291,7 @@ object mod {
   
   @JSImport("cssom", "MediaList")
   @js.native
-  class MediaList ()
+  open class MediaList ()
     extends StObject
        with /* index */ NumberDictionary[String] {
     

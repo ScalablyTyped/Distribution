@@ -10,10 +10,10 @@ A Node-style writable stream for HTML5 Blobs
 | ------------------ | :-------------: |
 | Full name          | blob-stream |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 3157842 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 945901.3333333334 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/devongovett/blob-stream)

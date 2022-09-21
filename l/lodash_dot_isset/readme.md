@@ -10,10 +10,10 @@ The lodash method `_.isSet` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isset |
 | Keywords           | lodash-modularized, isset |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 66916 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2743.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

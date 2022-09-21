@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Arc2")
 @js.native
-class Arc2 protected ()
+open class Arc2 protected ()
   extends typings.babylonjs.legacyMod.Arc2 {
   /**
     * Creates an Arc object from the three given points : start, middle and end.
     * @param startPoint Defines the start point of the arc
-    * @param midPoint Defines the midlle point of the arc
+    * @param midPoint Defines the middle point of the arc
     * @param endPoint Defines the end point of the arc
     */
   def this(

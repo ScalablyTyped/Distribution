@@ -13,7 +13,7 @@ object responseMediaMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/media", "MediaObject")
   @js.native
-  class MediaObject protected ()
+  open class MediaObject protected ()
     extends StObject
        with GoogleActionsV2MediaObject {
     def this(options: String) = this()
@@ -26,7 +26,7 @@ object responseMediaMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/media", "MediaResponse")
   @js.native
-  class MediaResponse protected ()
+  open class MediaResponse protected ()
     extends StObject
        with GoogleActionsV2MediaResponse
        with _RichResponseItem {
@@ -133,7 +133,7 @@ object responseMediaMod {
       
       inline def setObjects(value: js.Array[MediaObjectString]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      inline def setObjectsVarargs(value: MediaObjectString*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: MediaObjectString*): Self = StObject.set(x, "objects", js.Array(value*))
       
       inline def setType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

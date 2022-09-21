@@ -36,7 +36,14 @@ trait MUIDataTableFilterOptions extends StObject {
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
     */
-  var logic: js.UndefOr[js.Function2[/* prop */ String, /* filterValue */ js.Array[js.Any], Boolean]] = js.undefined
+  var logic: js.UndefOr[
+    js.Function3[
+      /* prop */ String, 
+      /* filterValue */ js.Array[Any], 
+      /* row */ js.UndefOr[js.Array[Any]], 
+      Boolean
+    ]
+  ] = js.undefined
   
   /**
     * Custom names for the filter fields.
@@ -77,7 +84,9 @@ object MUIDataTableFilterOptions {
     
     inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    inline def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[js.Any]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
+    inline def setLogic(
+      value: (/* prop */ String, /* filterValue */ js.Array[Any], /* row */ js.UndefOr[js.Array[Any]]) => Boolean
+    ): Self = StObject.set(x, "logic", js.Any.fromFunction3(value))
     
     inline def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
@@ -85,7 +94,7 @@ object MUIDataTableFilterOptions {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setRenderValue(value: /* value */ String => String): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
     

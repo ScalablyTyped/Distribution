@@ -18,6 +18,6 @@ object baseS3PublisherMod {
     
     /* protected */ def getBucketName(): String = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
   }
 }

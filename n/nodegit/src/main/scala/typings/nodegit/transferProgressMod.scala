@@ -8,7 +8,7 @@ object transferProgressMod {
   
   @JSImport("nodegit/transfer-progress", "TransferProgress")
   @js.native
-  class TransferProgress () extends StObject {
+  open class TransferProgress () extends StObject {
     
     var indexedDeltas: Double = js.native
     

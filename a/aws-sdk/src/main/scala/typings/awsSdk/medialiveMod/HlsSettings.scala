@@ -10,6 +10,8 @@ trait HlsSettings extends StObject {
   
   var Fmp4HlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.Fmp4HlsSettings] = js.undefined
   
+  var FrameCaptureHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureHlsSettings] = js.undefined
+  
   var StandardHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.StandardHlsSettings] = js.undefined
 }
 object HlsSettings {
@@ -28,6 +30,10 @@ object HlsSettings {
     inline def setFmp4HlsSettings(value: Fmp4HlsSettings): Self = StObject.set(x, "Fmp4HlsSettings", value.asInstanceOf[js.Any])
     
     inline def setFmp4HlsSettingsUndefined: Self = StObject.set(x, "Fmp4HlsSettings", js.undefined)
+    
+    inline def setFrameCaptureHlsSettings(value: FrameCaptureHlsSettings): Self = StObject.set(x, "FrameCaptureHlsSettings", value.asInstanceOf[js.Any])
+    
+    inline def setFrameCaptureHlsSettingsUndefined: Self = StObject.set(x, "FrameCaptureHlsSettings", js.undefined)
     
     inline def setStandardHlsSettings(value: StandardHlsSettings): Self = StObject.set(x, "StandardHlsSettings", value.asInstanceOf[js.Any])
     

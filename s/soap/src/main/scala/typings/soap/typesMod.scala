@@ -1,22 +1,115 @@
 package typings.soap
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.request.mod.CoreOptions
-import typings.request.mod.Request
-import typings.request.mod.RequestAPI
-import typings.request.mod.RequiredUriUrl
+import typings.axios.mod.AxiosInstance
+import typings.axios.mod.AxiosPromise
+import typings.node.fsMod.ReadStream
+import typings.soap.anon.Body
 import typings.soap.anon.Namespace
 import typings.soap.anon.Namespaces
 import typings.soap.anon.Subcode
 import typings.soap.anon.Text
-import typings.soap.httpMod.HttpClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type IHeaders = StringDictionary[js.Any]
+  type IExOptions = StringDictionary[Any]
+  
+  type IHeaders = StringDictionary[Any]
+  
+  @js.native
+  trait IHttpClient extends StObject {
+    
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any]
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: Unit,
+      exoptions: Unit,
+      caller: Any
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: Unit,
+      exoptions: IExOptions
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: Unit,
+      exoptions: IExOptions,
+      caller: Any
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: IHeaders
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: IHeaders,
+      exoptions: Unit,
+      caller: Any
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: IHeaders,
+      exoptions: IExOptions
+    ): AxiosPromise[Any] = js.native
+    def request(
+      rurl: String,
+      data: Any,
+      callback: js.Function3[/* error */ Any, /* res */ js.UndefOr[Any], /* body */ js.UndefOr[Any], Any],
+      exheaders: IHeaders,
+      exoptions: IExOptions,
+      caller: Any
+    ): AxiosPromise[Any] = js.native
+    
+    var requestStream: js.UndefOr[
+        js.Function5[
+          /* rurl */ String, 
+          /* data */ Any, 
+          /* exheaders */ js.UndefOr[IHeaders], 
+          /* exoptions */ js.UndefOr[IExOptions], 
+          /* caller */ js.UndefOr[Any], 
+          AxiosPromise[ReadStream]
+        ]
+      ] = js.native
+  }
+  
+  trait IMTOMAttachments extends StObject {
+    
+    var parts: js.Array[Body]
+  }
+  object IMTOMAttachments {
+    
+    inline def apply(parts: js.Array[Body]): IMTOMAttachments = {
+      val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMTOMAttachments]
+    }
+    
+    extension [Self <: IMTOMAttachments](x: Self) {
+      
+      inline def setParts(value: js.Array[Body]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      
+      inline def setPartsVarargs(value: Body*): Self = StObject.set(x, "parts", js.Array(value*))
+    }
+  }
   
   trait IOneWayOptions extends StObject {
     
@@ -47,7 +140,7 @@ object typesMod {
     extends StObject
        with IWsdlBaseOptions {
     
-    var customDeserializer: js.UndefOr[js.Any] = js.undefined
+    var customDeserializer: js.UndefOr[Any] = js.undefined
     
     /** don't cache WSDL files, request them every time. */
     var disableCache: js.UndefOr[Boolean] = js.undefined
@@ -59,13 +152,16 @@ object typesMod {
     var envelopeKey: js.UndefOr[String] = js.undefined
     
     /** provide your own http client that implements request(rurl, data, callback, exheaders, exoptions) */
-    var httpClient: js.UndefOr[HttpClient] = js.undefined
+    var httpClient: js.UndefOr[IHttpClient] = js.undefined
     
     /** if your wsdl operations contains names with Async suffix, you will need to override the default promise suffix to a custom one, default: Async. */
     var overridePromiseSuffix: js.UndefOr[String] = js.undefined
     
+    /** handle MTOM soapAttachments in response */
+    var parseReponseAttachments: js.UndefOr[Boolean] = js.undefined
+    
     /** override the request module. */
-    var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.undefined
+    var request: js.UndefOr[AxiosInstance] = js.undefined
     
     var returnSaxStream: js.UndefOr[Boolean] = js.undefined
     
@@ -80,7 +176,7 @@ object typesMod {
     
     extension [Self <: IOptions](x: Self) {
       
-      inline def setCustomDeserializer(value: js.Any): Self = StObject.set(x, "customDeserializer", value.asInstanceOf[js.Any])
+      inline def setCustomDeserializer(value: Any): Self = StObject.set(x, "customDeserializer", value.asInstanceOf[js.Any])
       
       inline def setCustomDeserializerUndefined: Self = StObject.set(x, "customDeserializer", js.undefined)
       
@@ -96,7 +192,7 @@ object typesMod {
       
       inline def setEnvelopeKeyUndefined: Self = StObject.set(x, "envelopeKey", js.undefined)
       
-      inline def setHttpClient(value: HttpClient): Self = StObject.set(x, "httpClient", value.asInstanceOf[js.Any])
+      inline def setHttpClient(value: IHttpClient): Self = StObject.set(x, "httpClient", value.asInstanceOf[js.Any])
       
       inline def setHttpClientUndefined: Self = StObject.set(x, "httpClient", js.undefined)
       
@@ -104,7 +200,11 @@ object typesMod {
       
       inline def setOverridePromiseSuffixUndefined: Self = StObject.set(x, "overridePromiseSuffix", js.undefined)
       
-      inline def setRequest(value: RequestAPI[Request, CoreOptions, RequiredUriUrl]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setParseReponseAttachments(value: Boolean): Self = StObject.set(x, "parseReponseAttachments", value.asInstanceOf[js.Any])
+      
+      inline def setParseReponseAttachmentsUndefined: Self = StObject.set(x, "parseReponseAttachments", js.undefined)
+      
+      inline def setRequest(value: AxiosInstance): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
@@ -122,9 +222,9 @@ object typesMod {
     
     var addHeaders: js.UndefOr[js.Function1[/* headers */ IHeaders, Unit]] = js.undefined
     
-    var addOptions: js.UndefOr[js.Function1[/* options */ js.Any, Unit]] = js.undefined
+    var addOptions: js.UndefOr[js.Function1[/* options */ Any, Unit]] = js.undefined
     
-    var postProcess: js.UndefOr[js.Function2[/* xml */ js.Any, /* envelopeKey */ js.Any, String]] = js.undefined
+    var postProcess: js.UndefOr[js.Function2[/* xml */ Any, /* envelopeKey */ Any, String]] = js.undefined
     
     var toXML: js.UndefOr[js.Function0[String]] = js.undefined
   }
@@ -141,11 +241,11 @@ object typesMod {
       
       inline def setAddHeadersUndefined: Self = StObject.set(x, "addHeaders", js.undefined)
       
-      inline def setAddOptions(value: /* options */ js.Any => Unit): Self = StObject.set(x, "addOptions", js.Any.fromFunction1(value))
+      inline def setAddOptions(value: /* options */ Any => Unit): Self = StObject.set(x, "addOptions", js.Any.fromFunction1(value))
       
       inline def setAddOptionsUndefined: Self = StObject.set(x, "addOptions", js.undefined)
       
-      inline def setPostProcess(value: (/* xml */ js.Any, /* envelopeKey */ js.Any) => String): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
+      inline def setPostProcess(value: (/* xml */ Any, /* envelopeKey */ Any) => String): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
       
       inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
       
@@ -159,14 +259,14 @@ object typesMod {
     extends StObject
        with IWsdlBaseOptions {
     
-    var callback: js.UndefOr[js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* err */ Any, /* res */ Any, Unit]] = js.undefined
     
     /** A boolean for controlling chunked transfer encoding in response. Some client (such as Windows 10's MDM enrollment SOAP client) is sensitive to transfer-encoding mode and can't accept chunked response. This option let user disable chunked transfer encoding for such a client. Default to true for backward compatibility. */
     var enableChunkedEncoding: js.UndefOr[Boolean] = js.undefined
     
     var oneWay: js.UndefOr[IOneWayOptions] = js.undefined
     
-    var path: String
+    var path: String | js.RegExp
     
     var services: IServices
     
@@ -179,14 +279,14 @@ object typesMod {
   }
   object IServerOptions {
     
-    inline def apply(path: String, services: IServices): IServerOptions = {
+    inline def apply(path: String | js.RegExp, services: IServices): IServerOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
       __obj.asInstanceOf[IServerOptions]
     }
     
     extension [Self <: IServerOptions](x: Self) {
       
-      inline def setCallback(value: (/* err */ js.Any, /* res */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* err */ Any, /* res */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -198,7 +298,7 @@ object typesMod {
       
       inline def setOneWayUndefined: Self = StObject.set(x, "oneWay", js.undefined)
       
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setServices(value: IServices): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
@@ -323,12 +423,14 @@ object typesMod {
   
   type ISoapMethod = SoapMethod
   
-  type ISoapServiceMethod = js.Function4[
-    /* args */ js.Any, 
-    /* callback */ js.UndefOr[js.Function1[/* data */ js.Any, Unit]], 
-    /* headers */ js.UndefOr[js.Any], 
-    /* req */ js.UndefOr[js.Any], 
-    js.Any
+  type ISoapServiceMethod = js.Function6[
+    /* args */ Any, 
+    /* callback */ js.UndefOr[js.Function1[/* data */ Any, Unit]], 
+    /* headers */ js.UndefOr[Any], 
+    /* req */ js.UndefOr[Any], 
+    /* res */ js.UndefOr[Any], 
+    /* sender */ js.UndefOr[Any], 
+    Any
   ]
   
   trait IWsdlBaseOptions extends StObject {
@@ -368,10 +470,10 @@ object typesMod {
     var valueKey: js.UndefOr[String] = js.undefined
     
     /** custom HTTP headers to be sent on WSDL requests. */
-    var wsdl_headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var wsdl_headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /** custom options for the request module on WSDL requests. */
-    var wsdl_options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var wsdl_options: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var xmlKey: js.UndefOr[String] = js.undefined
   }
@@ -408,7 +510,7 @@ object typesMod {
       
       inline def setIgnoredNamespacesUndefined: Self = StObject.set(x, "ignoredNamespaces", js.undefined)
       
-      inline def setIgnoredNamespacesVarargs(value: String*): Self = StObject.set(x, "ignoredNamespaces", js.Array(value :_*))
+      inline def setIgnoredNamespacesVarargs(value: String*): Self = StObject.set(x, "ignoredNamespaces", js.Array(value*))
       
       inline def setNamespaceArrayElements(value: Boolean): Self = StObject.set(x, "namespaceArrayElements", value.asInstanceOf[js.Any])
       
@@ -442,11 +544,11 @@ object typesMod {
       
       inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
       
-      inline def setWsdl_headers(value: StringDictionary[js.Any]): Self = StObject.set(x, "wsdl_headers", value.asInstanceOf[js.Any])
+      inline def setWsdl_headers(value: StringDictionary[Any]): Self = StObject.set(x, "wsdl_headers", value.asInstanceOf[js.Any])
       
       inline def setWsdl_headersUndefined: Self = StObject.set(x, "wsdl_headers", js.undefined)
       
-      inline def setWsdl_options(value: StringDictionary[js.Any]): Self = StObject.set(x, "wsdl_options", value.asInstanceOf[js.Any])
+      inline def setWsdl_options(value: StringDictionary[Any]): Self = StObject.set(x, "wsdl_options", value.asInstanceOf[js.Any])
       
       inline def setWsdl_optionsUndefined: Self = StObject.set(x, "wsdl_options", js.undefined)
       
@@ -481,25 +583,27 @@ object typesMod {
   
   type Security = ISecurity
   
-  type SoapMethod = js.Function4[
-    /* args */ js.Any, 
-    /* callback */ js.Function5[
-      /* err */ js.Any, 
-      /* result */ js.Any, 
-      /* rawResponse */ js.Any, 
-      /* soapHeader */ js.Any, 
-      /* rawRequest */ js.Any, 
+  type SoapMethod = js.Function5[
+    /* args */ Any, 
+    /* callback */ js.Function6[
+      /* err */ Any, 
+      /* result */ Any, 
+      /* rawResponse */ Any, 
+      /* soapHeader */ Any, 
+      /* rawRequest */ Any, 
+      /* mtomAttachments */ js.UndefOr[IMTOMAttachments], 
       Unit
     ], 
-    /* options */ js.UndefOr[js.Any], 
-    /* extraHeaders */ js.UndefOr[js.Any], 
+    /* options */ js.UndefOr[Any], 
+    /* extraHeaders */ js.UndefOr[Any], 
+    /* mtomAttachments */ js.UndefOr[IMTOMAttachments], 
     Unit
   ]
   
   type SoapMethodAsync = js.Function3[
-    /* args */ js.Any, 
-    /* options */ js.UndefOr[js.Any], 
-    /* extraHeaders */ js.UndefOr[js.Any], 
-    js.Promise[js.Tuple4[js.Any, js.Any, js.Any, js.Any]]
+    /* args */ Any, 
+    /* options */ js.UndefOr[Any], 
+    /* extraHeaders */ js.UndefOr[Any], 
+    js.Promise[js.Tuple5[Any, Any, Any, Any, js.UndefOr[IMTOMAttachments]]]
   ]
 }

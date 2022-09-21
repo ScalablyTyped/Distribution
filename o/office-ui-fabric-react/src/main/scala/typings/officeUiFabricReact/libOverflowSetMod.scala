@@ -14,7 +14,7 @@ object libOverflowSetMod {
   
   @JSImport("office-ui-fabric-react/lib/OverflowSet", "OverflowSetBase")
   @js.native
-  class OverflowSetBase protected ()
+  open class OverflowSetBase protected ()
     extends typings.officeUiFabricReact.overflowSetMod.OverflowSetBase {
     def this(props: IOverflowSetProps) = this()
   }

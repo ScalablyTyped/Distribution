@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ScreenComponentSystem.
-  * @param app - The application.
+  * Manages creation of {@link ScreenComponent}s.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.ScreenComponentSystem")
 @js.native
-class ScreenComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class ScreenComponentSystem protected ()
+  extends typings.playcanvas.mod.ScreenComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

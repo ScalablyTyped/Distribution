@@ -1,7 +1,6 @@
 package typings.konva.anon
 
 import typings.konva.containerMod.Container
-import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RelativeTo extends StObject {
   
-  var relativeTo: js.UndefOr[Container[Node[NodeConfig]]] = js.undefined
+  var relativeTo: js.UndefOr[Container[typings.konva.nodeMod.Node[NodeConfig]]] = js.undefined
   
   var skipShadow: js.UndefOr[Boolean] = js.undefined
   
@@ -26,7 +25,7 @@ object RelativeTo {
   
   extension [Self <: RelativeTo](x: Self) {
     
-    inline def setRelativeTo(value: Container[Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: Container[typings.konva.nodeMod.Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
     inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     

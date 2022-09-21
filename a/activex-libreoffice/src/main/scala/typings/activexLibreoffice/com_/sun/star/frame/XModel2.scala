@@ -120,7 +120,7 @@ object XModel2 {
     getURL: () => String,
     hasControllersLocked: () => Boolean,
     lockControllers: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setCurrentController: XController => Unit,

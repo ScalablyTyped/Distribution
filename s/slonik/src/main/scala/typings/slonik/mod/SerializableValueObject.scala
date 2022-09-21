@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SerializableValueObject
   extends StObject
      with /* x */ StringDictionary[SerializableValueType]
-     with _SerializableValueType
 object SerializableValueObject {
   
   inline def apply(): SerializableValueObject = {

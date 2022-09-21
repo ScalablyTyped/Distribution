@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait System extends StObject {
   
   var clearScreen: js.UndefOr[js.Function0[Unit]] = js.native
   
-  var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ js.Any, Unit]] = js.native
+  var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ Any, Unit]] = js.native
   
   def createDirectory(path: java.lang.String): Unit = js.native
   
@@ -47,7 +46,9 @@ trait System extends StObject {
   
   var getMemoryUsage: js.UndefOr[js.Function0[Double]] = js.native
   
-  var getModifiedTime: js.UndefOr[js.Function1[/* path */ java.lang.String, js.UndefOr[Date]]] = js.native
+  var getModifiedTime: js.UndefOr[js.Function1[/* path */ java.lang.String, js.UndefOr[js.Date]]] = js.native
+  
+  var getWidthOfTerminal: js.UndefOr[js.Function0[Double]] = js.native
   
   var newLine: java.lang.String = js.native
   
@@ -136,14 +137,14 @@ trait System extends StObject {
   
   def resolvePath(path: java.lang.String): java.lang.String = js.native
   
-  var setModifiedTime: js.UndefOr[js.Function2[/* path */ java.lang.String, /* time */ Date, Unit]] = js.native
+  var setModifiedTime: js.UndefOr[js.Function2[/* path */ java.lang.String, /* time */ js.Date, Unit]] = js.native
   
   var setTimeout: js.UndefOr[
     js.Function3[
-      /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
+      /* callback */ js.Function1[/* repeated */ Any, Unit], 
       /* ms */ Double, 
-      /* repeated */ js.Any, 
-      js.Any
+      /* repeated */ Any, 
+      Any
     ]
   ] = js.native
   

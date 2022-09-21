@@ -14,15 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EndpointsResource extends StObject {
   
-  /** Creates a endpoint, and returns the new Endpoint. */
+  /** Creates an endpoint, and returns the new endpoint. */
   def create(request: Accesstoken): Request[Endpoint] = js.native
   def create(request: Alt, body: Endpoint): Request[Endpoint] = js.native
   
-  /** Deletes a endpoint. */
+  /** Deletes an endpoint. */
   def delete(): Request[js.Object] = js.native
   def delete(request: Callback): Request[js.Object] = js.native
   
-  /** Gets a endpoint. */
+  /** Gets an endpoint. */
   def get(): Request[Endpoint] = js.native
   def get(request: Callback): Request[Endpoint] = js.native
   
@@ -30,7 +30,7 @@ trait EndpointsResource extends StObject {
   def list(): Request[ListEndpointsResponse] = js.native
   def list(request: Fields): Request[ListEndpointsResponse] = js.native
   
-  /** Updates a endpoint. */
+  /** Updates an endpoint. */
   def patch(request: Key): Request[Endpoint] = js.native
   def patch(request: Name, body: Endpoint): Request[Endpoint] = js.native
 }

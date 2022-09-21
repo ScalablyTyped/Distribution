@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pickMod {
   
-  @JSImport("@antv/util/lib/pick", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/pick", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

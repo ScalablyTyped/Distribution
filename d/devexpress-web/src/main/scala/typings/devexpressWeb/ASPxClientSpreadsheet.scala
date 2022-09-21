@@ -80,7 +80,7 @@ trait ASPxClientSpreadsheet
   /**
     * Gets the value of the currently active cell.
     */
-  def GetActiveCellValue(): js.Any = js.native
+  def GetActiveCellValue(): Any = js.native
   
   /**
     * Gets a name of the worksheet that is currently displayed within the spreadsheet.
@@ -99,14 +99,14 @@ trait ASPxClientSpreadsheet
     * @param colModelIndex An integer value specifying the data cell's column index.
     * @param rowModelIndex An integer value specifying the data cell's row index.
     */
-  def GetCellComment(colModelIndex: Double, rowModelIndex: Double): js.Any = js.native
+  def GetCellComment(colModelIndex: Double, rowModelIndex: Double): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object representing the specified cell's value.
     * @param colModelIndex An integer value specifying the cell's column index.
     * @param rowModelIndex An integer value specifying the cell's row index.
     */
-  def GetCellValue(colModelIndex: Double, rowModelIndex: Double): js.Any = js.native
+  def GetCellValue(colModelIndex: Double, rowModelIndex: Double): Any = js.native
   
   /**
     * Returns the type of the element currently being edited in the Spreadsheet control.

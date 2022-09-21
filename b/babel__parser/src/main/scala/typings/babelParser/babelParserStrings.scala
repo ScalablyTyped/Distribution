@@ -8,6 +8,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object babelParserStrings {
   
   @js.native
+  sealed trait ^ extends StObject
+  inline def ^ : ^ = "^".asInstanceOf[^]
+  
+  @js.native
+  sealed trait `@@` extends StObject
+  inline def `@@`: `@@` = "@@".asInstanceOf[`@@`]
+  
+  @js.native
+  sealed trait File extends StObject
+  inline def File: File = "File".asInstanceOf[File]
+  
+  @js.native
+  sealed trait Numbersign extends StObject
+  inline def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
+  
+  @js.native
+  sealed trait Percentsign extends StObject
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @js.native
+  sealed trait `^^` extends StObject
+  inline def `^^`: `^^` = "^^".asInstanceOf[`^^`]
+  
+  @js.native
+  sealed trait asyncDoExpressions
+    extends StObject
+       with _ParserPlugin
+  inline def asyncDoExpressions: asyncDoExpressions = "asyncDoExpressions".asInstanceOf[asyncDoExpressions]
+  
+  @js.native
   sealed trait asyncGenerators
     extends StObject
        with _ParserPlugin
@@ -54,6 +84,12 @@ object babelParserStrings {
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
+  sealed trait decoratorAutoAccessors
+    extends StObject
+       with _ParserPlugin
+  inline def decoratorAutoAccessors: decoratorAutoAccessors = "decoratorAutoAccessors".asInstanceOf[decoratorAutoAccessors]
+  
+  @js.native
   sealed trait decorators
     extends StObject
        with _ParserPlugin
@@ -64,6 +100,12 @@ object babelParserStrings {
     extends StObject
        with _ParserPlugin
   inline def `decorators-legacy`: `decorators-legacy` = "decorators-legacy".asInstanceOf[`decorators-legacy`]
+  
+  @js.native
+  sealed trait destructuringPrivate
+    extends StObject
+       with _ParserPlugin
+  inline def destructuringPrivate: destructuringPrivate = "destructuringPrivate".asInstanceOf[destructuringPrivate]
   
   @js.native
   sealed trait doExpressions
@@ -124,6 +166,10 @@ object babelParserStrings {
   inline def functionSent: functionSent = "functionSent".asInstanceOf[functionSent]
   
   @js.native
+  sealed trait hack extends StObject
+  inline def hack: hack = "hack".asInstanceOf[hack]
+  
+  @js.native
   sealed trait hash extends StObject
   inline def hash: hash = "hash".asInstanceOf[hash]
   
@@ -158,6 +204,12 @@ object babelParserStrings {
   @js.native
   sealed trait module extends StObject
   inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
+  sealed trait moduleBlocks
+    extends StObject
+       with _ParserPlugin
+  inline def moduleBlocks: moduleBlocks = "moduleBlocks".asInstanceOf[moduleBlocks]
   
   @js.native
   sealed trait moduleStringNames
@@ -220,8 +272,16 @@ object babelParserStrings {
   inline def privateIn: privateIn = "privateIn".asInstanceOf[privateIn]
   
   @js.native
-  sealed trait recordAndTuple extends StObject
+  sealed trait recordAndTuple
+    extends StObject
+       with _ParserPlugin
   inline def recordAndTuple: recordAndTuple = "recordAndTuple".asInstanceOf[recordAndTuple]
+  
+  @js.native
+  sealed trait regexpUnicodeSets
+    extends StObject
+       with _ParserPlugin
+  inline def regexpUnicodeSets: regexpUnicodeSets = "regexpUnicodeSets".asInstanceOf[regexpUnicodeSets]
   
   @js.native
   sealed trait script extends StObject

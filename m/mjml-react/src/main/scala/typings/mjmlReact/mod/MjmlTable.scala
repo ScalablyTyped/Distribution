@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlTable")
 @js.native
-class MjmlTable protected ()
-  extends Component[MjmlTableProps & RequiredChildrenProps & PaddingProps, js.Object, js.Any] {
-  def this(props: MjmlTableProps & RequiredChildrenProps & PaddingProps) = this()
+open class MjmlTable protected ()
+  extends Component[MjmlTableProps & PaddingProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlTableProps & PaddingProps & ClassNameProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlTableProps & RequiredChildrenProps & PaddingProps, context: js.Any) = this()
+  def this(props: MjmlTableProps & PaddingProps & ClassNameProps, context: Any) = this()
 }

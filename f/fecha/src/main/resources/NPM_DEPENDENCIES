@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fecha" : "4.2.0"
+      "fecha" : "4.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "fecha" : "4.2.0"
+      "fecha" : "4.2.3"
     }
   ],
   "compile-devDependencies" : [

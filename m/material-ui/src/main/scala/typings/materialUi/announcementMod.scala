@@ -10,10 +10,10 @@ object announcementMod {
   
   @JSImport("material-ui/svg-icons/action/announcement", JSImport.Default)
   @js.native
-  class default () extends ActionAnnouncement
+  open class default () extends ActionAnnouncement
   
   @JSImport("material-ui/svg-icons/action/announcement", "ActionAnnouncement")
   @js.native
-  class ActionAnnouncement ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAnnouncement ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

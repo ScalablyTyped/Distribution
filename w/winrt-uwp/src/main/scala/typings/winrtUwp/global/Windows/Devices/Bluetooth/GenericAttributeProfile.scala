@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.notify
 import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue
 import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus
@@ -1176,7 +1175,7 @@ object GenericAttributeProfile {
   @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction")
   @js.native
   /** Creates a new GattReliableWriteTransaction object. */
-  class GattReliableWriteTransaction ()
+  open class GattReliableWriteTransaction ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction {
     
@@ -1379,7 +1378,7 @@ object GenericAttributeProfile {
     
     /** Gets the time at which the system was notified of the Characteristic Value change. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Indicates what type of write operation is to be performed. */

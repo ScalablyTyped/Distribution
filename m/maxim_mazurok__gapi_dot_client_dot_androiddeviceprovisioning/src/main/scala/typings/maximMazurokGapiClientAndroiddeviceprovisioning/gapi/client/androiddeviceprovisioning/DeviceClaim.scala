@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceClaim extends StObject {
   
+  /** The Additional service registered for the device. */
+  var additionalService: js.UndefOr[String] = js.undefined
+  
   /** The ID of the Customer that purchased the device. */
   var ownerCompanyId: js.UndefOr[String] = js.undefined
   
@@ -29,6 +32,10 @@ object DeviceClaim {
   }
   
   extension [Self <: DeviceClaim](x: Self) {
+    
+    inline def setAdditionalService(value: String): Self = StObject.set(x, "additionalService", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalServiceUndefined: Self = StObject.set(x, "additionalService", js.undefined)
     
     inline def setOwnerCompanyId(value: String): Self = StObject.set(x, "ownerCompanyId", value.asInstanceOf[js.Any])
     

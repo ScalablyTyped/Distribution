@@ -13,7 +13,7 @@ object global {
     /**
       * Creates an empty hashmap.
       */
-    class ^[TKey, TValue] ()
+    open class ^[TKey, TValue] ()
       extends typings.hashmap.mod.^[TKey, TValue] {
       def this(data: js.Array[js.Tuple2[TKey, TValue]]) = this()
       /**

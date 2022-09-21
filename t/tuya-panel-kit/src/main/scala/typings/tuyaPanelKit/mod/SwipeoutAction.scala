@@ -4,31 +4,138 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
+import typings.tuyaPanelKit.tuyaPanelKitStrings.delete
+import typings.tuyaPanelKit.tuyaPanelKitStrings.primary
+import typings.tuyaPanelKit.tuyaPanelKitStrings.secondary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SwipeoutAction extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 设置按钮背景色
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the button color.
+    * @defaultValue undefined
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮的文本颜色
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the font color in the button.
+    * @defaultValue undefined
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义按钮。如果设置了内容，则以下属性无效。
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Custom button. If content is set, the following properties are invalid.
+    * @defaultValue undefined
+    */
   var content: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮是否被禁用
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether the button can be clicked.
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 字体大小
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Font size
+    * @defaultValue undefined
+    */
   var fontSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮索引值
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Button key.
+    * @defaultValue undefined
+    */
   var key: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 点击按钮的回调
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of clicking the button.
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
   var onPress: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮上的文本
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the text in the button.
+    * @defaultValue undefined
+    */
   var text: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 文本样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Text Style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue undefined
+    */
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 按钮的类型
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the button type
+    * @defaultValue undefined
+    */
+  var `type`: js.UndefOr[delete | primary | secondary] = js.undefined
 }
 object SwipeoutAction {
   
@@ -77,7 +184,7 @@ object SwipeoutAction {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: delete | primary | secondary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

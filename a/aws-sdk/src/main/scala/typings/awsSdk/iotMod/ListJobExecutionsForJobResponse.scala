@@ -29,7 +29,7 @@ object ListJobExecutionsForJobResponse {
     
     inline def setExecutionSummariesUndefined: Self = StObject.set(x, "executionSummaries", js.undefined)
     
-    inline def setExecutionSummariesVarargs(value: JobExecutionSummaryForJob*): Self = StObject.set(x, "executionSummaries", js.Array(value :_*))
+    inline def setExecutionSummariesVarargs(value: JobExecutionSummaryForJob*): Self = StObject.set(x, "executionSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

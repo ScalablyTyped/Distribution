@@ -20,6 +20,6 @@ object Events {
     
     inline def setEvents(value: js.Array[StateLookupEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: StateLookupEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: StateLookupEvent*): Self = StObject.set(x, "events", js.Array(value*))
   }
 }

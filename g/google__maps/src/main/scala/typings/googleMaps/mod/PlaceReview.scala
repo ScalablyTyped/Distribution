@@ -56,7 +56,7 @@ object PlaceReview {
     
     inline def setAspects(value: js.Array[AspectRating]): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
     
-    inline def setAspectsVarargs(value: AspectRating*): Self = StObject.set(x, "aspects", js.Array(value :_*))
+    inline def setAspectsVarargs(value: AspectRating*): Self = StObject.set(x, "aspects", js.Array(value*))
     
     inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
     

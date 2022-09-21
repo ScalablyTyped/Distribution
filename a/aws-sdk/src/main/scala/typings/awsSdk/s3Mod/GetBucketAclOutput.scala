@@ -29,7 +29,7 @@ object GetBucketAclOutput {
     
     inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
-    inline def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value*))
     
     inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     

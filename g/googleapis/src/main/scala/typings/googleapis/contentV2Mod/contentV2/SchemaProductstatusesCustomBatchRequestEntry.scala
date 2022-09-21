@@ -4,35 +4,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A batch entry encoding a single non-batch productstatuses request.
-  */
 trait SchemaProductstatusesCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * If set, only issues for the specified destinations are returned,
-    * otherwise only issues for the Shopping destination.
+    * If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination.
     */
-  var destinations: js.UndefOr[js.Array[String]] = js.undefined
+  var destinations: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  var includeAttributes: js.UndefOr[Boolean] = js.undefined
+  var includeAttributes: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.undefined
+  var merchantId: js.UndefOr[String | Null] = js.undefined
   
-  var method: js.UndefOr[String] = js.undefined
+  /**
+    * The method of the batch entry. Acceptable values are: - "`get`"
+    */
+  var method: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the product whose status to get.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductstatusesCustomBatchRequestEntry {
   
@@ -45,27 +44,39 @@ object SchemaProductstatusesCustomBatchRequestEntry {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     inline def setDestinations(value: js.Array[String]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
+    inline def setDestinationsNull: Self = StObject.set(x, "destinations", null)
+    
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeAttributesNull: Self = StObject.set(x, "includeAttributes", null)
     
     inline def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
+    inline def setMerchantIdNull: Self = StObject.set(x, "merchantId", null)
+    
     inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
+    inline def setMethodNull: Self = StObject.set(x, "method", null)
+    
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }

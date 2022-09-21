@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a single paragraph in a selection, range, content control, or document body.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.Paragraph")
 @js.native
-class Paragraph ()
+open class Paragraph ()
   extends StObject
      with typings.officeJs.Word.Paragraph {
   

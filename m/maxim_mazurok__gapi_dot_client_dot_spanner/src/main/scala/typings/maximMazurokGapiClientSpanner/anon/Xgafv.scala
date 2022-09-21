@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.ExecuteBatchDmlRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.CreateSessionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +20,9 @@ trait Xgafv extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The database in which the new session is created. */
+  var database: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -36,10 +39,7 @@ trait Xgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ExecuteBatchDmlRequest
-  
-  /** Required. The session in which the DML statements should be performed. */
-  var session: String
+  var resource: CreateSessionRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +49,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(resource: ExecuteBatchDmlRequest, session: String): Xgafv = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+  inline def apply(database: String, resource: CreateSessionRequest): Xgafv = {
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -72,6 +72,8 @@ object Xgafv {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -92,9 +94,7 @@ object Xgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ExecuteBatchDmlRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreateSessionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

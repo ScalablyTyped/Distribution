@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_firebaseml
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220810
 
 ## Library description:
 TypeScript typings for Firebase ML API v1
@@ -10,10 +10,10 @@ TypeScript typings for Firebase ML API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebaseml |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 1 |
-| # downloads        | 3294 |
-| # stars            | 0 |
+| # releases         | 190 |
+| # dependents       | 0.0 |
+| # downloads        | 1786.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

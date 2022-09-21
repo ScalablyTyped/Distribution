@@ -30,9 +30,9 @@ trait RouterNat extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Specify the NatIpAllocateOption, which can take one of the following values:
-    * - MANUAL_ONLY: Uses only Nat IP addresses provided by customers. When there are not enough specified Nat IPs, the Nat service fails for new VMs.
-    * - AUTO_ONLY: Nat IPs are allocated by Google Cloud Platform; customers can't specify any Nat IPs. When choosing AUTO_ONLY, then nat_ip should be empty.
+    * Specify the NatIpAllocateOption, which can take one of the following values: - MANUAL_ONLY: Uses only Nat IP addresses provided by customers. When there are not enough specified Nat
+    * IPs, the Nat service fails for new VMs. - AUTO_ONLY: Nat IPs are allocated by Google Cloud Platform; customers can't specify any Nat IPs. When choosing AUTO_ONLY, then nat_ip should
+    * be empty.
     */
   var natIpAllocateOption: js.UndefOr[String] = js.undefined
   
@@ -40,12 +40,10 @@ trait RouterNat extends StObject {
   var natIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Specify the Nat option, which can take one of the following values:
-    * - ALL_SUBNETWORKS_ALL_IP_RANGES: All of the IP ranges in every Subnetwork are allowed to Nat.
-    * - ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES: All of the primary IP ranges in every Subnetwork are allowed to Nat.
-    * - LIST_OF_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field subnetwork below) The default is SUBNETWORK_IP_RANGE_TO_NAT_OPTION_UNSPECIFIED. Note that if
-    * this field contains ALL_SUBNETWORKS_ALL_IP_RANGES or ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES, then there should not be any other Router.Nat section in any Router for this network in
-    * this region.
+    * Specify the Nat option, which can take one of the following values: - ALL_SUBNETWORKS_ALL_IP_RANGES: All of the IP ranges in every Subnetwork are allowed to Nat. -
+    * ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES: All of the primary IP ranges in every Subnetwork are allowed to Nat. - LIST_OF_SUBNETWORKS: A list of Subnetworks are allowed to Nat
+    * (specified in the field subnetwork below) The default is SUBNETWORK_IP_RANGE_TO_NAT_OPTION_UNSPECIFIED. Note that if this field contains ALL_SUBNETWORKS_ALL_IP_RANGES or
+    * ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES, then there should not be any other Router.Nat section in any Router for this network in this region.
     */
   var sourceSubnetworkIpRangesToNat: js.UndefOr[String] = js.undefined
   
@@ -74,7 +72,7 @@ object RouterNat {
     
     inline def setDrainNatIpsUndefined: Self = StObject.set(x, "drainNatIps", js.undefined)
     
-    inline def setDrainNatIpsVarargs(value: String*): Self = StObject.set(x, "drainNatIps", js.Array(value :_*))
+    inline def setDrainNatIpsVarargs(value: String*): Self = StObject.set(x, "drainNatIps", js.Array(value*))
     
     inline def setEnableEndpointIndependentMapping(value: Boolean): Self = StObject.set(x, "enableEndpointIndependentMapping", value.asInstanceOf[js.Any])
     
@@ -104,7 +102,7 @@ object RouterNat {
     
     inline def setNatIpsUndefined: Self = StObject.set(x, "natIps", js.undefined)
     
-    inline def setNatIpsVarargs(value: String*): Self = StObject.set(x, "natIps", js.Array(value :_*))
+    inline def setNatIpsVarargs(value: String*): Self = StObject.set(x, "natIps", js.Array(value*))
     
     inline def setSourceSubnetworkIpRangesToNat(value: String): Self = StObject.set(x, "sourceSubnetworkIpRangesToNat", value.asInstanceOf[js.Any])
     
@@ -114,7 +112,7 @@ object RouterNat {
     
     inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    inline def setSubnetworksVarargs(value: RouterNatSubnetworkToNat*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: RouterNatSubnetworkToNat*): Self = StObject.set(x, "subnetworks", js.Array(value*))
     
     inline def setTcpEstablishedIdleTimeoutSec(value: Double): Self = StObject.set(x, "tcpEstablishedIdleTimeoutSec", value.asInstanceOf[js.Any])
     

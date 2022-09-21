@@ -22,28 +22,19 @@ trait Callback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /**
-    * An expression for filtering the results of the request. Filter rules are case insensitive. The fields eligible for filtering are: * `name` * `display_name` * `labels.key` where
-    * key is the name of a label Some examples of using filters are: * `name:*` --> The instance has a name. * `name:Howl` --> The instance's name contains the string "howl". *
-    * `name:HOWL` --> Equivalent to above. * `NAME:howl` --> Equivalent to above. * `labels.env:*` --> The instance has the label "env". * `labels.env:dev` --> The instance has the
-    * label "env" and the value of the label contains the string "dev". * `name:howl labels.env:dev` --> The instance's name contains "howl" and it has the label "env" with its value
-    * containing "dev".
-    */
-  var filter: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Number of instances to be returned in the response. If 0 or less, defaults to the server's maximum allowed page size. */
+  /** Number of databases to be returned in the response. If 0 or less, defaults to the server's maximum allowed page size. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** If non-empty, `page_token` should contain a next_page_token from a previous ListInstancesResponse. */
+  /** If non-empty, `page_token` should contain a next_page_token from a previous ListDatabasesResponse. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the project for which a list of instances is requested. Values are of the form `projects/`. */
+  /** Required. The instance whose databases should be listed. Values are of the form `projects//instances/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -86,10 +77,6 @@ object Callback {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-    
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

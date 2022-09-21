@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__polyfills
 
-Typings are for version 3.12
+Typings are for version 4.0
 
 
 

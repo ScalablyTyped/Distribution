@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "javascript-stringify" : "2.0.1"
+      "javascript-stringify" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "javascript-stringify" : "2.0.1"
+      "javascript-stringify" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

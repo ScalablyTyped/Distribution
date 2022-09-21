@@ -1,11 +1,15 @@
 package typings.fileLoader
 
-import typings.std.RegExp
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
+  
+  @JSImport("file-loader", JSImport.Namespace)
+  @js.native
+  val ^ : /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.Loader */ Any = js.native
   
   /**
     * @param url
@@ -51,6 +55,13 @@ object mod {
       * @default true
       */
     var emitFile: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * By default, file-loader generates JS modules that use the ES modules syntax.
+      * There are some cases in which using ES modules is beneficial, like in the case of module concatenation and tree shaking.
+      * @default true
+      */
+    var esModule: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a custom filename template for the target file(s) using the query parameter name.
@@ -231,7 +242,7 @@ object mod {
       *
       * @default undefined
       */
-    var regExp: js.UndefOr[RegExp] = js.undefined
+    var regExp: js.UndefOr[js.RegExp] = js.undefined
   }
   object Options {
     
@@ -249,6 +260,10 @@ object mod {
       inline def setEmitFile(value: Boolean): Self = StObject.set(x, "emitFile", value.asInstanceOf[js.Any])
       
       inline def setEmitFileUndefined: Self = StObject.set(x, "emitFile", js.undefined)
+      
+      inline def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+      
+      inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
       
       inline def setName(value: String | (js.Function1[/* file */ String, String])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -272,9 +287,14 @@ object mod {
       
       inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      inline def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+      inline def setRegExp(value: js.RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
       
       inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     }
   }
+  
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.Loader */ Any
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.Loader */ Any = ^
 }

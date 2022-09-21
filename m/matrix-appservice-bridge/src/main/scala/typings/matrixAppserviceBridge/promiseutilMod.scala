@@ -12,7 +12,7 @@ object promiseutilMod {
   
   inline def defer[T](): Defer_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Defer_[T]]
   
-  inline def delay(delayMs: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(delayMs: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   @js.native
   trait Defer_[T] extends StObject {
@@ -20,9 +20,9 @@ object promiseutilMod {
     var promise: js.Promise[T] = js.native
     
     def reject(): Unit = js.native
-    def reject(err: js.Any): Unit = js.native
+    def reject(err: Any): Unit = js.native
     
-    def resolve(): Unit = js.native
     def resolve(value: T): Unit = js.native
+    def resolve(value: js.Thenable[T]): Unit = js.native
   }
 }

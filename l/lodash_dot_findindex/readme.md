@@ -10,10 +10,10 @@ The lodash method `_.findIndex` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.findindex |
 | Keywords           | lodash-modularized, findindex |
-| # releases         | 0 |
-| # dependents       | 152 |
-| # downloads        | 18954730 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1297341.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

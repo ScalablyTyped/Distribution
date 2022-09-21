@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "ReadonlyType")
 @js.native
-class ReadonlyType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
+open class ReadonlyType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
   def this(name: String, is: Is[A], validate: Validate[I, A], encode: Encode[A, O], `type`: C) = this()
   
   /**

@@ -57,7 +57,7 @@ object Account {
     
     inline def setBidderLocationUndefined: Self = StObject.set(x, "bidderLocation", js.undefined)
     
-    inline def setBidderLocationVarargs(value: BidProtocol*): Self = StObject.set(x, "bidderLocation", js.Array(value :_*))
+    inline def setBidderLocationVarargs(value: BidProtocol*): Self = StObject.set(x, "bidderLocation", js.Array(value*))
     
     inline def setCookieMatchingNid(value: String): Self = StObject.set(x, "cookieMatchingNid", value.asInstanceOf[js.Any])
     

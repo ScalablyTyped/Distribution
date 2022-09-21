@@ -48,7 +48,7 @@ object IAxes {
     
     inline def setItems(value: js.Array[IAxis]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: IAxis*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IAxis*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLeft(value: IAxis): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

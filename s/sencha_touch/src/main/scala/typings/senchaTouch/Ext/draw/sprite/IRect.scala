@@ -19,7 +19,7 @@ trait IRect
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_IRect: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePath_IRect: js.UndefOr[js.Function2[/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var width: js.UndefOr[Double] = js.undefined
@@ -47,7 +47,7 @@ object IRect {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     

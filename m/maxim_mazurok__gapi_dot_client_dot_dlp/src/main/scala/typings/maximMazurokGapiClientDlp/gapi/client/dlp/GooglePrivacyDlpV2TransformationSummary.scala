@@ -42,7 +42,7 @@ object GooglePrivacyDlpV2TransformationSummary {
     
     inline def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
     
-    inline def setFieldTransformationsVarargs(value: GooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
+    inline def setFieldTransformationsVarargs(value: GooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value*))
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
@@ -58,7 +58,7 @@ object GooglePrivacyDlpV2TransformationSummary {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: GooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setTransformation(value: GooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     

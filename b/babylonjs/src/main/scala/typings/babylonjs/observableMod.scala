@@ -1,5 +1,7 @@
 package typings.babylonjs
 
+import typings.babylonjs.coroutineMod.AsyncCoroutine
+import typings.babylonjs.coroutineMod.CoroutineScheduler
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +11,7 @@ object observableMod {
   
   @JSImport("babylonjs/Misc/observable", "EventState")
   @js.native
-  class EventState protected () extends StObject {
+  open class EventState protected () extends StObject {
     /**
       * Create a new EventState
       * @param mask defines the mask associated with this state
@@ -19,17 +21,17 @@ object observableMod {
       */
     def this(mask: Double) = this()
     def this(mask: Double, skipNextObservers: Boolean) = this()
-    def this(mask: Double, skipNextObservers: Boolean, target: js.Any) = this()
-    def this(mask: Double, skipNextObservers: Unit, target: js.Any) = this()
-    def this(mask: Double, skipNextObservers: Boolean, target: js.Any, currentTarget: js.Any) = this()
-    def this(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: js.Any) = this()
-    def this(mask: Double, skipNextObservers: Unit, target: js.Any, currentTarget: js.Any) = this()
-    def this(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: js.Any) = this()
+    def this(mask: Double, skipNextObservers: Boolean, target: Any) = this()
+    def this(mask: Double, skipNextObservers: Unit, target: Any) = this()
+    def this(mask: Double, skipNextObservers: Boolean, target: Any, currentTarget: Any) = this()
+    def this(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: Any) = this()
+    def this(mask: Double, skipNextObservers: Unit, target: Any, currentTarget: Any) = this()
+    def this(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: Any) = this()
     
     /**
       * The current object in the bubbling phase
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[Any] = js.native
     
     /**
       * Initialize the current event state
@@ -39,20 +41,20 @@ object observableMod {
       * @param currentTarget defines the current target of the state
       * @returns the current event state
       */
-    def initalize(mask: Double): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Boolean): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Boolean, target: js.Any): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Boolean, target: js.Any, currentTarget: js.Any): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: js.Any): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Unit, target: js.Any): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Unit, target: js.Any, currentTarget: js.Any): EventState = js.native
-    def initalize(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: js.Any): EventState = js.native
+    def initialize(mask: Double): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Boolean): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Boolean, target: Any): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Boolean, target: Any, currentTarget: Any): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: Any): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Unit, target: Any): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Unit, target: Any, currentTarget: Any): EventState = js.native
+    def initialize(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: Any): EventState = js.native
     
     /**
       * This will be populated with the return value of the last function that was executed.
       * If it is the first function in the callback chain it will be the event data.
       */
-    var lastReturnValue: js.UndefOr[js.Any] = js.native
+    var lastReturnValue: js.UndefOr[Any] = js.native
     
     /**
       * Get the mask value that were used to trigger the event corresponding to this EventState object
@@ -67,63 +69,12 @@ object observableMod {
     /**
       * The object that originally notified the event
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[Any] = js.native
     
     /**
       * User defined information that will be sent to observers
       */
-    var userInfo: js.UndefOr[js.Any] = js.native
-  }
-  
-  @JSImport("babylonjs/Misc/observable", "MultiObserver")
-  @js.native
-  class MultiObserver[T] () extends StObject {
-    
-    /* private */ var _observables: js.Any = js.native
-    
-    /* private */ var _observers: js.Any = js.native
-    
-    /**
-      * Release associated resources
-      */
-    def dispose(): Unit = js.native
-  }
-  /* static members */
-  object MultiObserver {
-    
-    @JSImport("babylonjs/Misc/observable", "MultiObserver")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Raise a callback when one of the observable will notify
-      * @param observables defines a list of observables to watch
-      * @param callback defines the callback to call on notification
-      * @param mask defines the mask used to filter notifications
-      * @param scope defines the current scope used to restore the JS context
-      * @returns the new MultiObserver
-      */
-    inline def Watch[T](
-      observables: js.Array[Observable[T]],
-      callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]
-    ): MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MultiObserver[T]]
-    inline def Watch[T](
-      observables: js.Array[Observable[T]],
-      callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-      mask: Double
-    ): MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[MultiObserver[T]]
-    inline def Watch[T](
-      observables: js.Array[Observable[T]],
-      callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-      mask: Double,
-      scope: js.Any
-    ): MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[MultiObserver[T]]
-    inline def Watch[T](
-      observables: js.Array[Observable[T]],
-      callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-      mask: Unit,
-      scope: js.Any
-    ): MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[MultiObserver[T]]
+    var userInfo: js.UndefOr[Any] = js.native
   }
   
   @JSImport("babylonjs/Misc/observable", "Observable")
@@ -132,18 +83,35 @@ object observableMod {
     * Creates a new observable
     * @param onObserverAdded defines a callback to call when a new observer is added
     */
-  class Observable[T] () extends StObject {
+  open class Observable[T] () extends StObject {
     def this(onObserverAdded: js.Function1[/* observer */ Observer[T], Unit]) = this()
     
-    /* private */ var _deferUnregister: js.Any = js.native
+    /**
+      * Internal observable-based coroutine scheduler instance.
+      */
+    var _coroutineScheduler: js.UndefOr[CoroutineScheduler[Unit]] = js.native
     
-    /* private */ var _eventState: js.Any = js.native
+    /**
+      * Internal disposal method for observable-based coroutine scheduler instance.
+      */
+    var _coroutineSchedulerDispose: js.UndefOr[js.Function0[Unit]] = js.native
     
-    /* private */ var _observers: js.Any = js.native
+    /**
+      * @param observer
+      * @hidden
+      */
+    def _deferUnregister(observer: Observer[T]): Unit = js.native
     
-    /* private */ var _onObserverAdded: js.Any = js.native
+    /**
+      * @hidden
+      */
+    var _eventState: EventState = js.native
     
-    /* private */ var _remove: js.Any = js.native
+    /* private */ var _observers: Any = js.native
+    
+    /* private */ var _onObserverAdded: Any = js.native
+    
+    /* private */ var _remove: Any = js.native
     
     /**
       * Create a new Observer with the specified callback
@@ -165,13 +133,13 @@ object observableMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Double,
       insertFirst: Boolean,
-      scope: js.Any
+      scope: Any
     ): Nullable[Observer[T]] = js.native
     def add(
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Double,
       insertFirst: Boolean,
-      scope: js.Any,
+      scope: Any,
       unregisterOnFirstCall: Boolean
     ): Nullable[Observer[T]] = js.native
     def add(
@@ -185,13 +153,13 @@ object observableMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Double,
       insertFirst: Unit,
-      scope: js.Any
+      scope: Any
     ): Nullable[Observer[T]] = js.native
     def add(
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Double,
       insertFirst: Unit,
-      scope: js.Any,
+      scope: Any,
       unregisterOnFirstCall: Boolean
     ): Nullable[Observer[T]] = js.native
     def add(
@@ -210,13 +178,13 @@ object observableMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Unit,
       insertFirst: Boolean,
-      scope: js.Any
+      scope: Any
     ): Nullable[Observer[T]] = js.native
     def add(
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Unit,
       insertFirst: Boolean,
-      scope: js.Any,
+      scope: Any,
       unregisterOnFirstCall: Boolean
     ): Nullable[Observer[T]] = js.native
     def add(
@@ -230,13 +198,13 @@ object observableMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Unit,
       insertFirst: Unit,
-      scope: js.Any
+      scope: Any
     ): Nullable[Observer[T]] = js.native
     def add(
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Unit,
       insertFirst: Unit,
-      scope: js.Any,
+      scope: Any,
       unregisterOnFirstCall: Boolean
     ): Nullable[Observer[T]] = js.native
     def add(
@@ -255,6 +223,11 @@ object observableMod {
     def addOnce(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]): Nullable[Observer[T]] = js.native
     
     /**
+      * Cancels all coroutines currently running on this observable
+      */
+    def cancelAllCoroutines(): Unit = js.native
+    
+    /**
       * Clear the list of observers
       */
     def clear(): Unit = js.native
@@ -268,7 +241,7 @@ object observableMod {
     /**
       * Does this observable handles observer registered with a given mask
       * @param mask defines the mask to be tested
-      * @return whether or not one observer registered with the given mask is handeled
+      * @returns whether or not one observer registered with the given mask is handled
       **/
     def hasSpecificMask(): Boolean = js.native
     def hasSpecificMask(mask: Double): Boolean = js.native
@@ -306,20 +279,20 @@ object observableMod {
       */
     def notifyObservers(eventData: T): Boolean = js.native
     def notifyObservers(eventData: T, mask: Double): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Any, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Unit, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Any, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Any, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Unit, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Any, userInfo: Any): Boolean = js.native
+    def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: Any): Boolean = js.native
     
     /**
       * Calling this will execute each callback, expecting it to be a promise or return a value.
@@ -337,20 +310,20 @@ object observableMod {
       */
     def notifyObserversWithPromise(eventData: T): js.Promise[T] = js.native
     def notifyObserversWithPromise(eventData: T, mask: Double): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+    def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
     
     /**
       * Gets the list of observers
@@ -371,12 +344,35 @@ object observableMod {
       * @returns false if it doesn't belong to this Observable
       */
     def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]): Boolean = js.native
-    def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], scope: js.Any): Boolean = js.native
+    def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], scope: Any): Boolean = js.native
+    
+    /**
+      * Runs a coroutine asynchronously on this observable
+      * @param coroutine the iterator resulting from having started the coroutine
+      * @returns a promise which will be resolved when the coroutine finishes or rejected if the coroutine is cancelled
+      */
+    def runCoroutineAsync(coroutine: AsyncCoroutine[Unit]): js.Promise[Unit] = js.native
+  }
+  /* static members */
+  object Observable {
+    
+    @JSImport("babylonjs/Misc/observable", "Observable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Create an observable from a Promise.
+      * @param promise a promise to observe for fulfillment.
+      * @param onErrorObservable an observable to notify if a promise was rejected.
+      * @returns the new Observable
+      */
+    inline def FromPromise[T, E](promise: js.Promise[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+    inline def FromPromise[T, E](promise: js.Promise[T], onErrorObservable: Observable[E]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any], onErrorObservable.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   }
   
   @JSImport("babylonjs/Misc/observable", "Observer")
   @js.native
-  class Observer[T] protected () extends StObject {
+  open class Observer[T] protected () extends StObject {
     /**
       * Creates a new observer
       * @param callback defines the callback to call when the observer is notified
@@ -405,7 +401,7 @@ object observableMod {
       /**
       * Defines the current scope used to restore the JS context
       */
-    scope: js.Any
+    scope: Any
     ) = this()
     
     /** @hidden */
@@ -424,7 +420,7 @@ object observableMod {
     /**
       * Defines the current scope used to restore the JS context
       */
-    var scope: js.Any = js.native
+    var scope: Any = js.native
     
     /**
       * Gets or sets a property defining that the observer as to be unregistered after the next notification

@@ -10,12 +10,54 @@ trait ToastWarningProps
   extends StObject
      with ToastProps {
   
+  /**
+    * @language zh-CN
+    * @description 图标颜色
+    * @defaultValue '#FFF'
+    */
+  /**
+    * @language en-US
+    * @description Icon color
+    * @defaultValue '#FFF'
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标路径
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/res/iconfont.json#L3">iconfont.warning</a>
+    */
+  /**
+    * @language en-US
+    * @description Icon path
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/res/iconfont.json#L3">iconfont.warning</a>
+    */
   var d: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标尺寸
+    * @defaultValue cx(28)
+    */
+  /**
+    * @language en-US
+    * @description Icon size
+    * @defaultValue cx(40)
+    */
   var size: js.UndefOr[Double] = js.undefined
 }
 object ToastWarningProps {

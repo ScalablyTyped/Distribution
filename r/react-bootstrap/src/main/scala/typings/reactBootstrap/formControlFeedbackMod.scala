@@ -10,12 +10,10 @@ object formControlFeedbackMod {
   
   @JSImport("react-bootstrap/lib/FormControlFeedback", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[FormControlFeedbackProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[FormControlFeedbackProps, js.Object, Any]
   
-  @js.native
-  trait FormControlFeedback
-    extends Component[FormControlFeedbackProps, js.Object, js.Any]
+  type FormControlFeedback = Component[FormControlFeedbackProps, js.Object, Any]
   
   trait FormControlFeedbackProps
     extends StObject

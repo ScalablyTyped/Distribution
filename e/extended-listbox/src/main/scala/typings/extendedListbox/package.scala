@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type MultiSelectListBox = typings.extendedListbox.BaseListBox
+type MultiSelectListBox = BaseListBox
 
-type SingleSelectListBox = typings.extendedListbox.BaseListBox
+type SingleSelectListBox = BaseListBox

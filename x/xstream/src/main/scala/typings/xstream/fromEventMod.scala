@@ -22,7 +22,7 @@ object fromEventMod {
   
   @JSImport("xstream/extra/fromEvent", "DOMEventProducer")
   @js.native
-  class DOMEventProducer protected ()
+  open class DOMEventProducer protected ()
     extends StObject
        with InternalProducer[Event] {
     def this(node: EventTarget, eventType: String, useCapture: Boolean) = this()
@@ -33,35 +33,35 @@ object fromEventMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    /* private */ var eventType: js.Any = js.native
+    /* private */ var eventType: Any = js.native
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
-    /* private */ var node: js.Any = js.native
+    /* private */ var node: Any = js.native
     
     var `type`: String = js.native
     
-    /* private */ var useCapture: js.Any = js.native
+    /* private */ var useCapture: Any = js.native
   }
   
   @JSImport("xstream/extra/fromEvent", "NodeEventProducer")
   @js.native
-  class NodeEventProducer protected ()
+  open class NodeEventProducer protected ()
     extends StObject
-       with InternalProducer[js.Any] {
+       with InternalProducer[Any] {
     def this(node: EventEmitter, eventName: String) = this()
     
     /* CompleteClass */
-    override def _start(listener: InternalListener[js.Any]): Unit = js.native
+    override def _start(listener: InternalListener[Any]): Unit = js.native
     
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    /* private */ var eventName: js.Any = js.native
+    /* private */ var eventName: Any = js.native
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
-    /* private */ var node: js.Any = js.native
+    /* private */ var node: Any = js.native
     
     var `type`: String = js.native
   }

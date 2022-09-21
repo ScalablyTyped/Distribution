@@ -9,7 +9,7 @@ trait ListSavedQueriesResponse extends StObject {
   /** Page token to retrieve the next page of results in the list. If this is empty, then there are no more saved queries to list. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
-  /** List of output saved queries. */
+  /** List of saved queries. */
   var savedQueries: js.UndefOr[js.Array[SavedQuery]] = js.undefined
 }
 object ListSavedQueriesResponse {
@@ -29,6 +29,6 @@ object ListSavedQueriesResponse {
     
     inline def setSavedQueriesUndefined: Self = StObject.set(x, "savedQueries", js.undefined)
     
-    inline def setSavedQueriesVarargs(value: SavedQuery*): Self = StObject.set(x, "savedQueries", js.Array(value :_*))
+    inline def setSavedQueriesVarargs(value: SavedQuery*): Self = StObject.set(x, "savedQueries", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.srcListMod.ListResult
-import typings.firebaseStorage.srcServiceMod.StorageService
+import typings.firebaseStorage.distSrcListMod.ListResult
+import typings.firebaseStorage.srcServiceMod.FirebaseStorageImpl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +12,5 @@ object implementationListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromResponseString(service: StorageService, bucket: String, resourceString: String): ListResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseString")(service.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any])).asInstanceOf[ListResult | Null]
+  inline def fromResponseString(service: FirebaseStorageImpl, bucket: String, resourceString: String): ListResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseString")(service.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any])).asInstanceOf[ListResult | Null]
 }

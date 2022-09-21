@@ -14,7 +14,7 @@ trait HeadersFooters extends StObject {
   
   def Item(Index: WdHeaderFooterIndex): HeaderFooter
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.HeadersFooters_typekey")
   var WordDotHeadersFooters_typekey: HeadersFooters
@@ -26,7 +26,7 @@ object HeadersFooters {
     Count: Double,
     Creator: Double,
     Item: WdHeaderFooterIndex => HeaderFooter,
-    Parent: js.Any,
+    Parent: Any,
     WordDotHeadersFooters_typekey: HeadersFooters
   ): HeadersFooters = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object HeadersFooters {
     
     inline def setItem(value: WdHeaderFooterIndex => HeaderFooter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "Word.HeadersFooters_typekey", value.asInstanceOf[js.Any])
   }

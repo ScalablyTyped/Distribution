@@ -39,7 +39,7 @@ object ManagedConfiguration {
     
     inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    inline def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value*))
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

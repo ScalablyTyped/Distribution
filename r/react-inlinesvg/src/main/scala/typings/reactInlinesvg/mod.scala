@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("react-inlinesvg", JSImport.Default)
   @js.native
-  class default protected () extends InlineSVG {
+  open class default protected () extends InlineSVG {
     def this(props: Props) = this()
   }
   /* static members */
@@ -29,38 +29,37 @@ object mod {
   }
   
   @js.native
-  trait InlineSVG
-    extends PureComponent[Props, State, js.Any] {
+  trait InlineSVG extends PureComponent[Props, State, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MInlineSVG(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MInlineSVG(prevProps: Props, prevState: State): Unit = js.native
+    def componentDidUpdate_MInlineSVG(previousProps: Props, previousState: State): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MInlineSVG(): Unit = js.native
     
-    /* private */ var getElement: js.Any = js.native
+    /* private */ var getElement: Any = js.native
     
-    /* private */ var getNode: js.Any = js.native
+    /* private */ var getNode: Any = js.native
     
-    /* private */ var handleCacheQueue: js.Any = js.native
+    /* private */ var handleError: Any = js.native
     
-    /* private */ var handleError: js.Any = js.native
+    /* private */ var handleLoad: Any = js.native
     
-    /* private */ var handleLoad: js.Any = js.native
+    /* private */ val hash: Any = js.native
     
-    /* private */ val hash: js.Any = js.native
+    /* private */ var isActive: Any = js.native
     
-    /* private */ var isActive: js.Any = js.native
+    /* private */ var isInitialized: Any = js.native
     
-    /* private */ var load: js.Any = js.native
+    /* private */ var load: Any = js.native
     
-    /* private */ var processSVG: js.Any = js.native
+    /* private */ var processSVG: Any = js.native
     
-    /* private */ var request: js.Any = js.native
+    /* private */ var request: Any = js.native
     
-    /* private */ var updateSVGAttributes: js.Any = js.native
+    /* private */ var updateSVGAttributes: Any = js.native
   }
 }

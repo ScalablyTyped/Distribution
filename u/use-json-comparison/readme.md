@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-json-comparison
 
-Typings are for version 1.0.5
+Typings are for version 1.0.6
 
 ## Library description:
 use json for deep comparison
@@ -10,10 +10,10 @@ use json for deep comparison
 | ------------------ | :-------------: |
 | Full name          | use-json-comparison |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 37 |
-| # downloads        | 487984 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 107584.66666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/chenshuai2144/useJSONComparison#readme)

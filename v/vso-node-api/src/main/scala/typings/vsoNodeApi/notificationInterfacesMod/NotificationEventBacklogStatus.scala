@@ -24,10 +24,10 @@ object NotificationEventBacklogStatus {
     
     inline def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = StObject.set(x, "eventBacklogStatus", value.asInstanceOf[js.Any])
     
-    inline def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = StObject.set(x, "eventBacklogStatus", js.Array(value :_*))
+    inline def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = StObject.set(x, "eventBacklogStatus", js.Array(value*))
     
     inline def setNotificationBacklogStatus(value: js.Array[NotificationBacklogStatus]): Self = StObject.set(x, "notificationBacklogStatus", value.asInstanceOf[js.Any])
     
-    inline def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = StObject.set(x, "notificationBacklogStatus", js.Array(value :_*))
+    inline def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = StObject.set(x, "notificationBacklogStatus", js.Array(value*))
   }
 }

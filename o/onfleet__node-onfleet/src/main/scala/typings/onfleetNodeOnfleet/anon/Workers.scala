@@ -20,6 +20,6 @@ object Workers {
     
     inline def setWorkers(value: js.Array[OnfleetWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
-    inline def setWorkersVarargs(value: OnfleetWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
+    inline def setWorkersVarargs(value: OnfleetWorker*): Self = StObject.set(x, "workers", js.Array(value*))
   }
 }

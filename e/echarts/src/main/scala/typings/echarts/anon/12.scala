@@ -7,20 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `12` extends StObject {
   
   /**
-    * Data of the starting point.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.0
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label
     */
-  var `0`: js.UndefOr[SymbolSize] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   
   /**
-    * Data of the ending point.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.lineStyle
     */
-  var `1`: js.UndefOr[SymbolSize] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
 }
 object `12` {
   
@@ -31,12 +25,12 @@ object `12` {
   
   extension [Self <: `12`](x: Self) {
     
-    inline def set0(value: SymbolSize): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def set1(value: SymbolSize): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowColor): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

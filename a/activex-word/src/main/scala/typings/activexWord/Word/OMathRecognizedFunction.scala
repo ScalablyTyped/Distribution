@@ -16,7 +16,7 @@ trait OMathRecognizedFunction extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathRecognizedFunction_typekey")
   var WordDotOMathRecognizedFunction_typekey: OMathRecognizedFunction
@@ -29,7 +29,7 @@ object OMathRecognizedFunction {
     Delete: () => Unit,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathRecognizedFunction_typekey: OMathRecognizedFunction
   ): OMathRecognizedFunction = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object OMathRecognizedFunction {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathRecognizedFunction_typekey(value: OMathRecognizedFunction): Self = StObject.set(x, "Word.OMathRecognizedFunction_typekey", value.asInstanceOf[js.Any])
   }

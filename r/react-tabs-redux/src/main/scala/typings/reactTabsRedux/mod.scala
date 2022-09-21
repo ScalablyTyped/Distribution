@@ -11,37 +11,37 @@ object mod {
   
   @JSImport("react-tabs-redux", "TabContent")
   @js.native
-  class TabContent protected ()
+  open class TabContent protected ()
     extends typings.reactTabsRedux.tabContentMod.TabContent {
     def this(props: TabContentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabContentProps, context: js.Any) = this()
+    def this(props: TabContentProps, context: Any) = this()
   }
   
   @JSImport("react-tabs-redux", "TabLink")
   @js.native
-  class TabLink protected ()
+  open class TabLink protected ()
     extends typings.reactTabsRedux.tabLinkMod.TabLink {
     def this(props: TabLinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabLinkProps, context: js.Any) = this()
+    def this(props: TabLinkProps, context: Any) = this()
   }
   
   @JSImport("react-tabs-redux", "Tabs")
   @js.native
-  class Tabs protected ()
+  open class Tabs protected ()
     extends typings.reactTabsRedux.tabsMod.Tabs {
     def this(props: TabsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabsProps, context: js.Any) = this()
+    def this(props: TabsProps, context: Any) = this()
   }
 }

@@ -34,7 +34,7 @@ object mod extends Shortcut {
     * An object to be combined with a set of default tags
     * for forming the class member "tag"
     */
-  class Parser[T] () extends StObject {
+  open class Parser[T] () extends StObject {
     def this(allowedTags: js.Object) = this()
     
     /**
@@ -52,7 +52,7 @@ object mod extends Shortcut {
     def registerTag(
       name: String,
       tag: Instantiable2[
-          /* renderer */ Renderer[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* renderer */ Renderer[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
           /* settings */ js.UndefOr[PartialOmitTagTypechildre], 
           Tag[js.Object]
         ]
@@ -91,7 +91,7 @@ object mod extends Shortcut {
     */
   @JSImport("bbcode-to-react", "Tag")
   @js.native
-  class Tag[T] protected () extends StObject {
+  open class Tag[T] protected () extends StObject {
     /**
       * Initializing the class members
       * @param renderer A Renderer instance to be injected
@@ -229,7 +229,7 @@ object mod extends Shortcut {
       
       inline def setContexts(value: js.Array[optionType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      inline def setContextsVarargs(value: optionType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: optionType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setCosmeticReplace(value: String => String): Self = StObject.set(x, "cosmeticReplace", js.Any.fromFunction1(value))
       
@@ -284,7 +284,7 @@ object mod extends Shortcut {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

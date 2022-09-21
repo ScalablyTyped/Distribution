@@ -22,14 +22,14 @@ trait AggregateEvaluationResult extends StObject {
   var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
   
   /**
-    * The resource compliance status. For the AggregationEvaluationResult data type, AWS Config supports only the COMPLIANT and NON_COMPLIANT. AWS Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA value.
+    * The resource compliance status. For the AggregationEvaluationResult data type, Config supports only the COMPLIANT and NON_COMPLIANT. Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA value.
     */
   var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.undefined
   
   /**
-    * The time when the AWS Config rule evaluated the AWS resource.
+    * The time when the Config rule evaluated the Amazon Web Services resource.
     */
-  var ConfigRuleInvokedTime: js.UndefOr[Date] = js.undefined
+  var ConfigRuleInvokedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Uniquely identifies the evaluation result.
@@ -37,9 +37,9 @@ trait AggregateEvaluationResult extends StObject {
   var EvaluationResultIdentifier: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResultIdentifier] = js.undefined
   
   /**
-    * The time when AWS Config recorded the aggregate evaluation result.
+    * The time when Config recorded the aggregate evaluation result.
     */
-  var ResultRecordedTime: js.UndefOr[Date] = js.undefined
+  var ResultRecordedTime: js.UndefOr[js.Date] = js.undefined
 }
 object AggregateEvaluationResult {
   
@@ -66,7 +66,7 @@ object AggregateEvaluationResult {
     
     inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    inline def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    inline def setConfigRuleInvokedTime(value: js.Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
     
     inline def setConfigRuleInvokedTimeUndefined: Self = StObject.set(x, "ConfigRuleInvokedTime", js.undefined)
     
@@ -74,7 +74,7 @@ object AggregateEvaluationResult {
     
     inline def setEvaluationResultIdentifierUndefined: Self = StObject.set(x, "EvaluationResultIdentifier", js.undefined)
     
-    inline def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
+    inline def setResultRecordedTime(value: js.Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
     
     inline def setResultRecordedTimeUndefined: Self = StObject.set(x, "ResultRecordedTime", js.undefined)
   }

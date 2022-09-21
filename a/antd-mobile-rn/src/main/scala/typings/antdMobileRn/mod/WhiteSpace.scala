@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "WhiteSpace")
 @js.native
-class WhiteSpace () extends default
+open class WhiteSpace () extends default
 object WhiteSpace {
   
   /* static member */

@@ -22,30 +22,30 @@ object tableMod {
     * @param {(Component|null|undefined)[][]} [rows=[]] A 2-D array of Components to be added to the Table.
     *   null can be used if a cell is empty.
     */
-  class Table () extends ComponentContainer {
+  open class Table () extends ComponentContainer {
     def this(rows: js.Array[js.Array[js.UndefOr[Component | Null]]]) = this()
     
-    /* private */ var _calculatedLayout: js.Any = js.native
+    /* private */ var _calculatedLayout: Any = js.native
     
-    /* private */ var _columnPadding: js.Any = js.native
+    /* private */ var _columnPadding: Any = js.native
     
-    /* private */ var _columnWeights: js.Any = js.native
+    /* private */ var _columnWeights: Any = js.native
     
-    /* private */ def _determineGuarantees(offeredWidths: js.Any, offeredHeights: js.Any, isFinalOffer: js.Any): js.Any = js.native
+    /* private */ var _determineGuarantees: Any = js.native
     
-    /* private */ def _iterateLayout(availableWidth: js.Any, availableHeight: js.Any, isFinalOffer: js.Any): js.Any = js.native
+    /* private */ var _iterateLayout: Any = js.native
     
-    /* private */ var _nCols: js.Any = js.native
+    /* private */ var _nCols: Any = js.native
     
-    /* private */ var _nRows: js.Any = js.native
+    /* private */ var _nRows: Any = js.native
     
-    /* private */ def _padTableToSize(nRows: js.Any, nCols: js.Any): js.Any = js.native
+    /* private */ var _padTableToSize: Any = js.native
     
-    /* private */ var _rowPadding: js.Any = js.native
+    /* private */ var _rowPadding: Any = js.native
     
-    /* private */ var _rowWeights: js.Any = js.native
+    /* private */ var _rowWeights: Any = js.native
     
-    /* private */ var _rows: js.Any = js.native
+    /* private */ var _rows: Any = js.native
     
     /**
       * Adds a Component in the specified row and column position.
@@ -155,10 +155,19 @@ object tableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/components/table", "Table._calcComponentWeights")
+    @js.native
+    def _calcComponentWeights: Any = js.native
+    inline def _calcComponentWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_calcComponentWeights")(x.asInstanceOf[js.Any])
     
-    inline def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/components/table", "Table._calcProportionalSpace")
+    @js.native
+    def _calcProportionalSpace: Any = js.native
+    inline def _calcProportionalSpace_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_calcProportionalSpace")(x.asInstanceOf[js.Any])
     
-    inline def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/components/table", "Table._fixedSpace")
+    @js.native
+    def _fixedSpace: Any = js.native
+    inline def _fixedSpace_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fixedSpace")(x.asInstanceOf[js.Any])
   }
 }

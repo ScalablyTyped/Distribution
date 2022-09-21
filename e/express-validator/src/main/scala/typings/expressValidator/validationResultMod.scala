@@ -13,17 +13,17 @@ object validationResultMod {
   
   @JSImport("express-validator/src/validation-result", "Result")
   @js.native
-  class Result[T] protected () extends StObject {
+  open class Result[T] protected () extends StObject {
     def this(formatter: ErrorFormatter[T], errors: js.Array[ValidationError]) = this()
     
     def array(): js.Array[T] = js.native
     def array(options: OnlyFirstError): js.Array[T] = js.native
     
-    /* private */ val errors: js.Any = js.native
+    /* private */ val errors: Any = js.native
     
     def formatWith[T2](formatter: ErrorFormatter[T2]): Result[T2] = js.native
     
-    /* private */ var formatter: js.Any = js.native
+    /* private */ var formatter: Any = js.native
     
     def isEmpty(): Boolean = js.native
     

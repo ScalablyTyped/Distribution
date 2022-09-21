@@ -10,10 +10,10 @@ gettext localization library compatible with Jed-formatted locale data
 | ------------------ | :-------------: |
 | Full name          | tannin |
 | Keywords           | jed, gettext, localization, internationalization, l10n, i18n, translate |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 986270 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 139273.33333333334 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/aduth/tannin)

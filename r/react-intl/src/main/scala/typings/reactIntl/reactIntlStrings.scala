@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactIntlStrings {
   
   @js.native
+  sealed trait `2-digit` extends StObject
+  inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
+  
+  @js.native
   sealed trait WrappedComponentProps extends StObject
   inline def WrappedComponentProps: WrappedComponentProps = "WrappedComponentProps".asInstanceOf[WrappedComponentProps]
   
@@ -39,12 +43,20 @@ object reactIntlStrings {
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
   sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
   
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
+  
+  @js.native
+  sealed trait basic extends StObject
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait bdi extends StObject
@@ -75,10 +87,6 @@ object reactIntlStrings {
   inline def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait buddhist extends StObject
-  inline def buddhist: buddhist = "buddhist".asInstanceOf[buddhist]
-  
-  @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
   
@@ -89,10 +97,6 @@ object reactIntlStrings {
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
-  
-  @js.native
-  sealed trait chinese extends StObject
-  inline def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
   sealed trait cite extends StObject
@@ -111,12 +115,12 @@ object reactIntlStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait conjunction extends StObject
-  inline def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  sealed trait compact extends StObject
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
-  sealed trait coptic extends StObject
-  inline def coptic: coptic = "coptic".asInstanceOf[coptic]
+  sealed trait conjunction extends StObject
+  inline def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
   
   @js.native
   sealed trait currency extends StObject
@@ -175,12 +179,8 @@ object reactIntlStrings {
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
-  sealed trait ethiopia extends StObject
-  inline def ethiopia: ethiopia = "ethiopia".asInstanceOf[ethiopia]
-  
-  @js.native
-  sealed trait ethiopic extends StObject
-  inline def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
+  sealed trait engineering extends StObject
+  inline def engineering: engineering = "engineering".asInstanceOf[engineering]
   
   @js.native
   sealed trait fieldset extends StObject
@@ -225,10 +225,6 @@ object reactIntlStrings {
   @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
-  
-  @js.native
-  sealed trait gregory extends StObject
-  inline def gregory: gregory = "gregory".asInstanceOf[gregory]
   
   @js.native
   sealed trait h1 extends StObject
@@ -279,10 +275,6 @@ object reactIntlStrings {
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait hebrew extends StObject
-  inline def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
-  
-  @js.native
   sealed trait hgroup extends StObject
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
@@ -307,10 +299,6 @@ object reactIntlStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait indian extends StObject
-  inline def indian: indian = "indian".asInstanceOf[indian]
-  
-  @js.native
   sealed trait input extends StObject
   inline def input: input = "input".asInstanceOf[input]
   
@@ -321,18 +309,6 @@ object reactIntlStrings {
   @js.native
   sealed trait intl extends StObject
   inline def intl: intl = "intl".asInstanceOf[intl]
-  
-  @js.native
-  sealed trait islamic extends StObject
-  inline def islamic: islamic = "islamic".asInstanceOf[islamic]
-  
-  @js.native
-  sealed trait iso8601 extends StObject
-  inline def iso8601: iso8601 = "iso8601".asInstanceOf[iso8601]
-  
-  @js.native
-  sealed trait japanese extends StObject
-  inline def japanese: japanese = "japanese".asInstanceOf[japanese]
   
   @js.native
   sealed trait kbd extends StObject
@@ -355,6 +331,10 @@ object reactIntlStrings {
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
+  sealed trait lessPrecision extends StObject
+  inline def lessPrecision: lessPrecision = "lessPrecision".asInstanceOf[lessPrecision]
+  
+  @js.native
   sealed trait li extends StObject
   inline def li: li = "li".asInstanceOf[li]
   
@@ -365,6 +345,14 @@ object reactIntlStrings {
   @js.native
   sealed trait long extends StObject
   inline def long: long = "long".asInstanceOf[long]
+  
+  @js.native
+  sealed trait longGeneric extends StObject
+  inline def longGeneric: longGeneric = "longGeneric".asInstanceOf[longGeneric]
+  
+  @js.native
+  sealed trait longOffset extends StObject
+  inline def longOffset: longOffset = "longOffset".asInstanceOf[longOffset]
   
   @js.native
   sealed trait lookup extends StObject
@@ -403,6 +391,10 @@ object reactIntlStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait morePrecision extends StObject
+  inline def morePrecision: morePrecision = "morePrecision".asInstanceOf[morePrecision]
+  
+  @js.native
   sealed trait narrow extends StObject
   inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
@@ -417,6 +409,10 @@ object reactIntlStrings {
   @js.native
   sealed trait noscript extends StObject
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
+  
+  @js.native
+  sealed trait numeric extends StObject
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait `object` extends StObject
@@ -447,10 +443,6 @@ object reactIntlStrings {
   inline def param: param = "param".asInstanceOf[param]
   
   @js.native
-  sealed trait persian extends StObject
-  inline def persian: persian = "persian".asInstanceOf[persian]
-  
-  @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
   
@@ -469,10 +461,6 @@ object reactIntlStrings {
   @js.native
   sealed trait region extends StObject
   inline def region: region = "region".asInstanceOf[region]
-  
-  @js.native
-  sealed trait roc extends StObject
-  inline def roc: roc = "roc".asInstanceOf[roc]
   
   @js.native
   sealed trait rp extends StObject
@@ -495,6 +483,10 @@ object reactIntlStrings {
   inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
+  sealed trait scientific extends StObject
+  inline def scientific: scientific = "scientific".asInstanceOf[scientific]
+  
+  @js.native
   sealed trait script extends StObject
   inline def script: script = "script".asInstanceOf[script]
   
@@ -511,6 +503,14 @@ object reactIntlStrings {
   inline def short: short = "short".asInstanceOf[short]
   
   @js.native
+  sealed trait shortGeneric extends StObject
+  inline def shortGeneric: shortGeneric = "shortGeneric".asInstanceOf[shortGeneric]
+  
+  @js.native
+  sealed trait shortOffset extends StObject
+  inline def shortOffset: shortOffset = "shortOffset".asInstanceOf[shortOffset]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   
@@ -525,6 +525,14 @@ object reactIntlStrings {
   @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
+  sealed trait standard extends StObject
+  inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait stripIfInteger extends StObject
+  inline def stripIfInteger: stripIfInteger = "stripIfInteger".asInstanceOf[stripIfInteger]
   
   @js.native
   sealed trait strong extends StObject

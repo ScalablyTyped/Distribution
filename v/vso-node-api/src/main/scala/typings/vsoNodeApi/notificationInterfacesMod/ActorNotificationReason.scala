@@ -26,6 +26,6 @@ object ActorNotificationReason {
     
     inline def setMatchedRoles(value: js.Array[String]): Self = StObject.set(x, "matchedRoles", value.asInstanceOf[js.Any])
     
-    inline def setMatchedRolesVarargs(value: String*): Self = StObject.set(x, "matchedRoles", js.Array(value :_*))
+    inline def setMatchedRolesVarargs(value: String*): Self = StObject.set(x, "matchedRoles", js.Array(value*))
   }
 }

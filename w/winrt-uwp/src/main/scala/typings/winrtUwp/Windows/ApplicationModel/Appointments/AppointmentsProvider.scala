@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +77,7 @@ object AppointmentsProvider {
     def dismissUI(): Unit
     
     /** Gets the start date and time of the appointment instance to remove. */
-    var instanceStartDate: Date
+    var instanceStartDate: js.Date
     
     /** Call this method to inform the activating app that the operation was canceled by the user. */
     def reportCanceled(): Unit
@@ -100,7 +99,7 @@ object AppointmentsProvider {
     inline def apply(
       appointmentId: String,
       dismissUI: () => Unit,
-      instanceStartDate: Date,
+      instanceStartDate: js.Date,
       reportCanceled: () => Unit,
       reportCompleted: () => Unit,
       reportError: String => Unit,
@@ -116,7 +115,7 @@ object AppointmentsProvider {
       
       inline def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
       
-      inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+      inline def setInstanceStartDate(value: js.Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
       
       inline def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
       
@@ -141,7 +140,7 @@ object AppointmentsProvider {
     def dismissUI(): Unit
     
     /** Gets the start date and time of the appointment instance to replace. */
-    var instanceStartDate: Date
+    var instanceStartDate: js.Date
     
     /** Informs the activating app that the operation was canceled by the user. */
     def reportCanceled(): Unit
@@ -167,7 +166,7 @@ object AppointmentsProvider {
       appointmentId: String,
       appointmentInformation: Appointment,
       dismissUI: () => Unit,
-      instanceStartDate: Date,
+      instanceStartDate: js.Date,
       reportCanceled: () => Unit,
       reportCompleted: String => Unit,
       reportError: String => Unit,
@@ -185,7 +184,7 @@ object AppointmentsProvider {
       
       inline def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
       
-      inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+      inline def setInstanceStartDate(value: js.Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
       
       inline def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
       

@@ -12,7 +12,7 @@ trait GetCertificateAuthorityCertificateResponse extends StObject {
   var Certificate: js.UndefOr[CertificateBody] = js.undefined
   
   /**
-    * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. If this is a root CA, the value will be null.
+    * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. If this is a root CA, the value will be null.
     */
   var CertificateChain: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateChain] = js.undefined
 }

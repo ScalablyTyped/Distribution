@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPopupControlCloseReason")
 @js.native
-class ASPxClientPopupControlCloseReason ()
+open class ASPxClientPopupControlCloseReason ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPopupControlCloseReason
 object ASPxClientPopupControlCloseReason {

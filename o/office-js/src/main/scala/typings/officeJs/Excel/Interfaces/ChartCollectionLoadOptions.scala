@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of all the chart objects on a worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartCollectionLoadOptions extends StObject {
@@ -19,197 +19,195 @@ trait ChartCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents chart axes.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var axes: js.UndefOr[ChartAxesLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies a chart category label level enumeration constant, referring to the level of the source category labels.
     *
-    * For EACH ITEM in the collection: Specifies a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the type of the chart. See `Excel.ChartType` for details.
     *
-    * For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the data labels on the chart.
     *
-    * For EACH ITEM in the collection: Represents the datalabels on the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var dataLabels: js.UndefOr[ChartDataLabelsLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the way that blank cells are plotted on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var displayBlanksAs: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartAreaFormatLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the height, in points, of the chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The unique ID of chart.
     *
-    * For EACH ITEM in the collection: The unique id of chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the legend for the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var legend: js.UndefOr[ChartLegendLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the name of a chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Encapsulates the options for a pivot chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the plot area for the chart.
     *
-    * For EACH ITEM in the collection: Represents the plotArea for the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotArea: js.UndefOr[ChartPlotAreaLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the way columns or rows are used as data series on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotBy: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
     *
-    * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotVisibleOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var series: js.UndefOr[ChartSeriesCollectionLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies a chart series name level enumeration constant, referring to the level of the source series names.
     *
-    * For EACH ITEM in the collection: Specifies a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var seriesNameLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies whether to display all field buttons on a PivotChart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
-    If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+    If the value axis becomes smaller than the size of the data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the chart style for the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
-    * For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var title: js.UndefOr[ChartTitleLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the width, in points, of the chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var width: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The worksheet containing the current chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

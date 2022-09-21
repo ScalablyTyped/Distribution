@@ -10,10 +10,10 @@ Option parsing for Node, supporting types, shorthands, etc. Used by npm.
 | ------------------ | :-------------: |
 | Full name          | nopt |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1128 |
-| # downloads        | 850420771 |
-| # stars            | 47 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.7488625E7 |
+| # stars            | 510.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/nopt#readme)

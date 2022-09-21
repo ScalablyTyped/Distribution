@@ -13,6 +13,8 @@ trait SpekeKeyProvider extends StObject {
     */
   var CertificateArn: js.UndefOr[string] = js.undefined
   
+  var EncryptionContractConfiguration: js.UndefOr[typings.awsSdk.mediapackageMod.EncryptionContractConfiguration] = js.undefined
+  
   /**
     * The resource ID to include in key requests.
     */
@@ -47,13 +49,17 @@ object SpekeKeyProvider {
     
     inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
+    inline def setEncryptionContractConfiguration(value: EncryptionContractConfiguration): Self = StObject.set(x, "EncryptionContractConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionContractConfigurationUndefined: Self = StObject.set(x, "EncryptionContractConfiguration", js.undefined)
+    
     inline def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     inline def setSystemIds(value: listOfString): Self = StObject.set(x, "SystemIds", value.asInstanceOf[js.Any])
     
-    inline def setSystemIdsVarargs(value: string*): Self = StObject.set(x, "SystemIds", js.Array(value :_*))
+    inline def setSystemIdsVarargs(value: string*): Self = StObject.set(x, "SystemIds", js.Array(value*))
     
     inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }

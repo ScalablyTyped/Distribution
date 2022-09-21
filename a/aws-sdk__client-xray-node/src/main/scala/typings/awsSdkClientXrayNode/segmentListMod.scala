@@ -8,5 +8,5 @@ object segmentListMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_SegmentList", "_SegmentList")
   @js.native
-  val SegmentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val SegmentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

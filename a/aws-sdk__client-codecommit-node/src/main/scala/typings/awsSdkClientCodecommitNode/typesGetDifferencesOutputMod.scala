@@ -44,7 +44,7 @@ object typesGetDifferencesOutputMod {
       
       inline def setDifferencesUndefined: Self = StObject.set(x, "differences", js.undefined)
       
-      inline def setDifferencesVarargs(value: UnmarshalledDifference*): Self = StObject.set(x, "differences", js.Array(value :_*))
+      inline def setDifferencesVarargs(value: UnmarshalledDifference*): Self = StObject.set(x, "differences", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       

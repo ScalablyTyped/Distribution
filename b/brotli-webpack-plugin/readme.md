@@ -10,15 +10,12 @@ Prepare Brotli-compressed versions of assets to serve them with Content-Encoding
 | ------------------ | :-------------: |
 | Full name          | brotli-webpack-plugin |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 2904932 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 229035.66666666666 |
+| # stars            | 211.0 |
 
 ## Links
-- [Homepage](https://github.com/mynameiswhm/brotli-webpack-plugin)
-- [Bugs](https://github.com/mynameiswhm/brotli-webpack-plugin/issues)
-- [Repository](https://github.com/mynameiswhm/brotli-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/brotli-webpack-plugin)
     
 

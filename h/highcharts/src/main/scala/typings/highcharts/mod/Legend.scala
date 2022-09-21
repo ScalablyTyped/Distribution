@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Legend")
 @js.native
-class Legend protected () extends StObject {
+open class Legend protected () extends StObject {
   /**
     * The overview of the chart's series. The legend object is instanciated
     * internally in the chart constructor, and is available from the

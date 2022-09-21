@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-buffer-from
 
-Typings are for version 1.0.0-rc.3
+Typings are for version 3.170.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-buffer-from/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-buffer-from) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-buffer-from.svg)](https://www.npmjs.com/package/@aws
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.3
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-buffer-from |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 3 |
-| # downloads        | 10047026 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3943239E7 |
+| # stars            | 1851.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-buffer-from)

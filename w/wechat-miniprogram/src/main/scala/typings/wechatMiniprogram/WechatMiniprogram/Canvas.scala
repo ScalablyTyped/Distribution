@@ -61,7 +61,7 @@ trait Canvas extends StObject {
     * 支持获取 2D 和 WebGL 绘图上下文
     *
     * 最低基础库： `2.7.0` */
-  def getContext(contextType: String): js.Any
+  def getContext(contextType: String): Any
   
   /** 画布高度 */
   var height: Double
@@ -72,7 +72,7 @@ trait Canvas extends StObject {
     *
     * 最低基础库： `2.7.0` */
   def requestAnimationFrame(/** 执行的 callback */
-  callback: js.Function1[/* repeated */ js.Any, js.Any]): Double
+  callback: js.Function1[/* repeated */ Any, Any]): Double
   
   /** [string Canvas.toDataURL(string type, number encoderOptions)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.toDataURL.html)
     *
@@ -96,9 +96,9 @@ object Canvas {
     createImage: () => Image,
     createImageData: () => ImageData,
     createPath2D: Path2D => Path2D,
-    getContext: String => js.Any,
+    getContext: String => Any,
     height: Double,
-    requestAnimationFrame: js.Function1[/* repeated */ js.Any, js.Any] => Double,
+    requestAnimationFrame: js.Function1[/* repeated */ Any, Any] => Double,
     toDataURL: (String, Double) => String,
     width: Double
   ): Canvas = {
@@ -116,11 +116,11 @@ object Canvas {
     
     inline def setCreatePath2D(value: Path2D => Path2D): Self = StObject.set(x, "createPath2D", js.Any.fromFunction1(value))
     
-    inline def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: String => Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, js.Any] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+    inline def setRequestAnimationFrame(value: js.Function1[/* repeated */ Any, Any] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     inline def setToDataURL(value: (String, Double) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
     

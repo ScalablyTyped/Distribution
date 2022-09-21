@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CPHashedData extends StObject {
   
-  var Algorithm: ValuesOf[CAPICOM_HASH_ALGORITHM]
+  var Algorithm: ValuesOf[CADESCOM_HASH_ALGORITHM & CAPICOM_HASH_ALGORITHM]
   
   var DataEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]
   
@@ -21,7 +21,7 @@ trait CPHashedData extends StObject {
 object CPHashedData {
   
   inline def apply(
-    Algorithm: ValuesOf[CAPICOM_HASH_ALGORITHM],
+    Algorithm: ValuesOf[CADESCOM_HASH_ALGORITHM & CAPICOM_HASH_ALGORITHM],
     DataEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE],
     Hash: String => Unit,
     SetHashValue: String => Unit,
@@ -33,7 +33,7 @@ object CPHashedData {
   
   extension [Self <: CPHashedData](x: Self) {
     
-    inline def setAlgorithm(value: ValuesOf[CAPICOM_HASH_ALGORITHM]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: ValuesOf[CADESCOM_HASH_ALGORITHM & CAPICOM_HASH_ALGORITHM]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     inline def setDataEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]): Self = StObject.set(x, "DataEncoding", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,7 @@ object anon {
     var name: String
     
     /** used by proxy plugins (e.g. h2o2). */
-    var passThrough: js.UndefOr[js.Any] = js.undefined
+    var passThrough: js.UndefOr[Any] = js.undefined
     
     /** password used for 'iron' encoding (must be at least 32 characters long). */
     var password: js.UndefOr[String] = js.undefined
@@ -169,7 +169,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPassThrough(value: js.Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+      inline def setPassThrough(value: Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
       
       inline def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
       

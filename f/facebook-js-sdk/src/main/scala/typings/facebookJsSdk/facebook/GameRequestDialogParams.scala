@@ -58,13 +58,13 @@ object GameRequestDialogParams {
     
     inline def setExclude_idsUndefined: Self = StObject.set(x, "exclude_ids", js.undefined)
     
-    inline def setExclude_idsVarargs(value: String*): Self = StObject.set(x, "exclude_ids", js.Array(value :_*))
+    inline def setExclude_idsVarargs(value: String*): Self = StObject.set(x, "exclude_ids", js.Array(value*))
     
     inline def setFilters(value: app_users | app_non_users | js.Array[Name]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Name*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Name*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMax_recipients(value: Double): Self = StObject.set(x, "max_recipients", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object GameRequestDialogParams {
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

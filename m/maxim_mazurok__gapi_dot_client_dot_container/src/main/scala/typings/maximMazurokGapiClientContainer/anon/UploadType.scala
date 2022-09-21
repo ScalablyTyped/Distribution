@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.CreateNodePoolRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.UpdateNodePoolRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +20,14 @@ trait UploadType extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. The name of the cluster. This field has been deprecated and replaced by the parent field. */
-  var clusterId: String
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
+  
+  /** The name (project, location, cluster, node pool) of the node pool to update. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *‍/nodePools/ *`. */
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -35,34 +35,22 @@ trait UploadType extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and
-    * replaced by the parent field.
-    */
-  var projectId: String
-  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreateNodePoolRequest
+  var resource: UpdateNodePoolRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and
-    * replaced by the parent field.
-    */
-  var zone: String
 }
 object UploadType {
   
-  inline def apply(clusterId: String, projectId: String, resource: CreateNodePoolRequest, zone: String): UploadType = {
-    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: UpdateNodePoolRequest): UploadType = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
   
@@ -84,8 +72,6 @@ object UploadType {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -93,6 +79,8 @@ object UploadType {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -102,13 +90,11 @@ object UploadType {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
-    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreateNodePoolRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: UpdateNodePoolRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -117,7 +103,5 @@ object UploadType {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

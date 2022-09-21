@@ -1,29 +1,49 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.dash
-import typings.devextreme.devextremeStrings.dot
-import typings.devextreme.devextremeStrings.longDash
-import typings.devextreme.devextremeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait HorizontalLine extends StObject {
   
+  /**
+    * Specifies the color of the crosshair lines.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
+  /**
+    * Specifies the dash style of the crosshair lines.
+    */
+  var dashStyle: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.DashStyle] = js.undefined
   
+  /**
+    * Enables the crosshair.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalLine: js.UndefOr[DashStyle | Boolean] = js.undefined
+  /**
+    * Configures the horizontal crosshair line individually.
+    */
+  var horizontalLine: js.UndefOr[Label | Boolean] = js.undefined
   
+  /**
+    * Configures the crosshair labels.
+    */
   var label: js.UndefOr[BackgroundColorCustomizeText] = js.undefined
   
+  /**
+    * Specifies how transparent the crosshair lines should be.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var verticalLine: js.UndefOr[DashStyle | Boolean] = js.undefined
+  /**
+    * Configures the vertical crosshair line individually.
+    */
+  var verticalLine: js.UndefOr[Label | Boolean] = js.undefined
   
+  /**
+    * Specifies the width of the crosshair lines.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object HorizontalLine {
@@ -39,7 +59,7 @@ object HorizontalLine {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDashStyle(value: dash | dot | longDash | solid): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: typings.devextreme.mod.DevExpress.common.charts.DashStyle): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
@@ -47,7 +67,7 @@ object HorizontalLine {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setHorizontalLine(value: DashStyle | Boolean): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
+    inline def setHorizontalLine(value: Label | Boolean): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
     
     inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
@@ -59,7 +79,7 @@ object HorizontalLine {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setVerticalLine(value: DashStyle | Boolean): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: Label | Boolean): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     
     inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
     

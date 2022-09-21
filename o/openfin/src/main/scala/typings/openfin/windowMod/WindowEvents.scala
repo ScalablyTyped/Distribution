@@ -57,7 +57,7 @@ trait WindowEvents
   * @hidden
   * Custom properties and metadata. This can be extended in specific context object.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   var `auth-requested`: WindowAuthRequestedEvent[window, typings.openfin.openfinStrings.`auth-requested`]
   

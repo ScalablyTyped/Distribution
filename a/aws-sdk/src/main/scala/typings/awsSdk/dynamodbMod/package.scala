@@ -1,5 +1,7 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,31 +15,31 @@ type ArchivalReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type AttributeAction = typings.awsSdk.dynamodbMod._AttributeAction | java.lang.String
+type AttributeAction = _AttributeAction | java.lang.String
 
-type AttributeDefinitions = js.Array[typings.awsSdk.dynamodbMod.AttributeDefinition]
+type AttributeDefinitions = js.Array[AttributeDefinition]
 
-type AttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type AttributeMap = StringDictionary[AttributeValue]
 
 type AttributeName = java.lang.String
 
-type AttributeNameList = js.Array[typings.awsSdk.dynamodbMod.AttributeName]
+type AttributeNameList = js.Array[AttributeName]
 
-type AttributeUpdates = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValueUpdate]
+type AttributeUpdates = StringDictionary[AttributeValueUpdate]
 
-type AttributeValueList = js.Array[typings.awsSdk.dynamodbMod.AttributeValue]
+type AttributeValueList = js.Array[AttributeValue]
 
-type AutoScalingPolicyDescriptionList = js.Array[typings.awsSdk.dynamodbMod.AutoScalingPolicyDescription]
+type AutoScalingPolicyDescriptionList = js.Array[AutoScalingPolicyDescription]
 
 type AutoScalingPolicyName = java.lang.String
 
 type AutoScalingRoleArn = java.lang.String
 
-type Backfilling = scala.Boolean
+type Backfilling = Boolean
 
 type BackupArn = java.lang.String
 
-type BackupCreationDateTime = typings.std.Date
+type BackupCreationDateTime = js.Date
 
 type BackupName = java.lang.String
 
@@ -49,9 +51,9 @@ type BackupSizeBytes = scala.Double
   - typings.awsSdk.awsSdkStrings.AVAILABLE
   - java.lang.String
 */
-type BackupStatus = typings.awsSdk.dynamodbMod._BackupStatus | java.lang.String
+type BackupStatus = _BackupStatus | java.lang.String
 
-type BackupSummaries = js.Array[typings.awsSdk.dynamodbMod.BackupSummary]
+type BackupSummaries = js.Array[BackupSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -59,7 +61,7 @@ type BackupSummaries = js.Array[typings.awsSdk.dynamodbMod.BackupSummary]
   - typings.awsSdk.awsSdkStrings.AWS_BACKUP
   - java.lang.String
 */
-type BackupType = typings.awsSdk.dynamodbMod._BackupType | java.lang.String
+type BackupType = _BackupType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -68,15 +70,31 @@ type BackupType = typings.awsSdk.dynamodbMod._BackupType | java.lang.String
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type BackupTypeFilter = typings.awsSdk.dynamodbMod._BackupTypeFilter | java.lang.String
+type BackupTypeFilter = _BackupTypeFilter | java.lang.String
 
 type BackupsInputLimit = scala.Double
 
-type BatchGetRequestMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.KeysAndAttributes]
+type BatchGetRequestMap = StringDictionary[KeysAndAttributes]
 
-type BatchGetResponseMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.ItemList]
+type BatchGetResponseMap = StringDictionary[ItemList]
 
-type BatchWriteItemRequestMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.WriteRequests]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ConditionalCheckFailed
+  - typings.awsSdk.awsSdkStrings.ItemCollectionSizeLimitExceeded
+  - typings.awsSdk.awsSdkStrings.RequestLimitExceeded
+  - typings.awsSdk.awsSdkStrings.ValidationError
+  - typings.awsSdk.awsSdkStrings.ProvisionedThroughputExceeded
+  - typings.awsSdk.awsSdkStrings.TransactionConflict
+  - typings.awsSdk.awsSdkStrings.ThrottlingError
+  - typings.awsSdk.awsSdkStrings.InternalServerError
+  - typings.awsSdk.awsSdkStrings.ResourceNotFound
+  - typings.awsSdk.awsSdkStrings.AccessDenied
+  - typings.awsSdk.awsSdkStrings.DuplicateItem
+  - java.lang.String
+*/
+type BatchStatementErrorCodeEnum = _BatchStatementErrorCodeEnum | java.lang.String
+
+type BatchWriteItemRequestMap = StringDictionary[WriteRequests]
 
 type BilledSizeBytes = scala.Double
 
@@ -85,19 +103,21 @@ type BilledSizeBytes = scala.Double
   - typings.awsSdk.awsSdkStrings.PAY_PER_REQUEST
   - java.lang.String
 */
-type BillingMode = typings.awsSdk.dynamodbMod._BillingMode | java.lang.String
+type BillingMode = _BillingMode | java.lang.String
 
-type BinaryAttributeValue = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.dynamodbMod.Blob | java.lang.String
+type BinaryAttributeValue = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
-type BinarySetAttributeValue = js.Array[typings.awsSdk.dynamodbMod.BinaryAttributeValue]
+type BinarySetAttributeValue = js.Array[BinaryAttributeValue]
 
-type BooleanAttributeValue = scala.Boolean
+type BooleanAttributeValue = Boolean
 
-type BooleanObject = scala.Boolean
+type BooleanObject = Boolean
 
 type ClientRequestToken = java.lang.String
 
 type ClientToken = java.lang.String
+
+type CloudWatchLogGroupArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQ
@@ -115,7 +135,7 @@ type ClientToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.BEGINS_WITH
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.dynamodbMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | java.lang.String
 
 type ConditionExpression = java.lang.String
 
@@ -124,11 +144,11 @@ type ConditionExpression = java.lang.String
   - typings.awsSdk.awsSdkStrings.OR
   - java.lang.String
 */
-type ConditionalOperator = typings.awsSdk.dynamodbMod._ConditionalOperator | java.lang.String
+type ConditionalOperator = _ConditionalOperator | java.lang.String
 
-type ConsistentRead = scala.Boolean
+type ConsistentRead = Boolean
 
-type ConsumedCapacityMultiple = js.Array[typings.awsSdk.dynamodbMod.ConsumedCapacity]
+type ConsumedCapacityMultiple = js.Array[ConsumedCapacity]
 
 type ConsumedCapacityUnits = scala.Double
 
@@ -137,18 +157,18 @@ type ConsumedCapacityUnits = scala.Double
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ContinuousBackupsStatus = typings.awsSdk.dynamodbMod._ContinuousBackupsStatus | java.lang.String
+type ContinuousBackupsStatus = _ContinuousBackupsStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLE
   - typings.awsSdk.awsSdkStrings.DISABLE
   - java.lang.String
 */
-type ContributorInsightsAction = typings.awsSdk.dynamodbMod._ContributorInsightsAction | java.lang.String
+type ContributorInsightsAction = _ContributorInsightsAction | java.lang.String
 
 type ContributorInsightsRule = java.lang.String
 
-type ContributorInsightsRuleList = js.Array[typings.awsSdk.dynamodbMod.ContributorInsightsRule]
+type ContributorInsightsRuleList = js.Array[ContributorInsightsRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
@@ -158,38 +178,56 @@ type ContributorInsightsRuleList = js.Array[typings.awsSdk.dynamodbMod.Contribut
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ContributorInsightsStatus = typings.awsSdk.dynamodbMod._ContributorInsightsStatus | java.lang.String
+type ContributorInsightsStatus = _ContributorInsightsStatus | java.lang.String
 
-type ContributorInsightsSummaries = js.Array[typings.awsSdk.dynamodbMod.ContributorInsightsSummary]
+type ContributorInsightsSummaries = js.Array[ContributorInsightsSummary]
 
-type Date = typings.std.Date
+type CsvDelimiter = java.lang.String
+
+type CsvHeader = java.lang.String
+
+type CsvHeaderList = js.Array[CsvHeader]
+
+type Date = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.DISABLING
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLE_FAILED
+  - java.lang.String
+*/
+type DestinationStatus = _DestinationStatus | java.lang.String
 
 type Double = scala.Double
 
-type Endpoints = js.Array[typings.awsSdk.dynamodbMod.Endpoint]
+type Endpoints = js.Array[Endpoint]
+
+type ErrorCount = scala.Double
 
 type ExceptionDescription = java.lang.String
 
 type ExceptionName = java.lang.String
 
-type ExpectedAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.ExpectedAttributeValue]
+type ExpectedAttributeMap = StringDictionary[ExpectedAttributeValue]
 
 type ExportArn = java.lang.String
 
-type ExportEndTime = typings.std.Date
+type ExportEndTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DYNAMODB_JSON
   - typings.awsSdk.awsSdkStrings.ION
   - java.lang.String
 */
-type ExportFormat = typings.awsSdk.dynamodbMod._ExportFormat | java.lang.String
+type ExportFormat = _ExportFormat | java.lang.String
 
 type ExportManifest = java.lang.String
 
 type ExportNextToken = java.lang.String
 
-type ExportStartTime = typings.std.Date
+type ExportStartTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -197,17 +235,17 @@ type ExportStartTime = typings.std.Date
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ExportStatus = typings.awsSdk.dynamodbMod._ExportStatus | java.lang.String
+type ExportStatus = _ExportStatus | java.lang.String
 
-type ExportSummaries = js.Array[typings.awsSdk.dynamodbMod.ExportSummary]
+type ExportSummaries = js.Array[ExportSummary]
 
-type ExportTime = typings.std.Date
+type ExportTime = js.Date
 
-type ExpressionAttributeNameMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeName]
+type ExpressionAttributeNameMap = StringDictionary[AttributeName]
 
 type ExpressionAttributeNameVariable = java.lang.String
 
-type ExpressionAttributeValueMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type ExpressionAttributeValueMap = StringDictionary[AttributeValue]
 
 type ExpressionAttributeValueVariable = java.lang.String
 
@@ -215,23 +253,23 @@ type FailureCode = java.lang.String
 
 type FailureMessage = java.lang.String
 
-type FilterConditionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.Condition]
+type FilterConditionMap = StringDictionary[Condition]
 
-type GlobalSecondaryIndexAutoScalingUpdateList = js.Array[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexAutoScalingUpdate]
+type GlobalSecondaryIndexAutoScalingUpdateList = js.Array[GlobalSecondaryIndexAutoScalingUpdate]
 
-type GlobalSecondaryIndexDescriptionList = js.Array[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexDescription]
+type GlobalSecondaryIndexDescriptionList = js.Array[GlobalSecondaryIndexDescription]
 
-type GlobalSecondaryIndexList = js.Array[typings.awsSdk.dynamodbMod.GlobalSecondaryIndex]
+type GlobalSecondaryIndexList = js.Array[GlobalSecondaryIndex]
 
-type GlobalSecondaryIndexUpdateList = js.Array[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexUpdate]
+type GlobalSecondaryIndexUpdateList = js.Array[GlobalSecondaryIndexUpdate]
 
-type GlobalSecondaryIndexes = js.Array[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexInfo]
+type GlobalSecondaryIndexes = js.Array[GlobalSecondaryIndexInfo]
 
 type GlobalTableArnString = java.lang.String
 
-type GlobalTableGlobalSecondaryIndexSettingsUpdateList = js.Array[typings.awsSdk.dynamodbMod.GlobalTableGlobalSecondaryIndexSettingsUpdate]
+type GlobalTableGlobalSecondaryIndexSettingsUpdateList = js.Array[GlobalTableGlobalSecondaryIndexSettingsUpdate]
 
-type GlobalTableList = js.Array[typings.awsSdk.dynamodbMod.GlobalTable]
+type GlobalTableList = js.Array[GlobalTable]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -240,7 +278,29 @@ type GlobalTableList = js.Array[typings.awsSdk.dynamodbMod.GlobalTable]
   - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
-type GlobalTableStatus = typings.awsSdk.dynamodbMod._GlobalTableStatus | java.lang.String
+type GlobalTableStatus = _GlobalTableStatus | java.lang.String
+
+type ImportArn = java.lang.String
+
+type ImportEndTime = js.Date
+
+type ImportNextToken = java.lang.String
+
+type ImportStartTime = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.CANCELLING
+  - typings.awsSdk.awsSdkStrings.CANCELLED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type ImportStatus = _ImportStatus | java.lang.String
+
+type ImportSummaryList = js.Array[ImportSummary]
+
+type ImportedItemCount = scala.Double
 
 type IndexName = java.lang.String
 
@@ -251,41 +311,57 @@ type IndexName = java.lang.String
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - java.lang.String
 */
-type IndexStatus = typings.awsSdk.dynamodbMod._IndexStatus | java.lang.String
+type IndexStatus = _IndexStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GZIP
+  - typings.awsSdk.awsSdkStrings.ZSTD
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type InputCompressionType = _InputCompressionType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DYNAMODB_JSON
+  - typings.awsSdk.awsSdkStrings.ION
+  - typings.awsSdk.awsSdkStrings.CSV
+  - java.lang.String
+*/
+type InputFormat = _InputFormat | java.lang.String
 
 type Integer = scala.Double
 
 type IntegerObject = scala.Double
 
-type ItemCollectionKeyAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type ItemCollectionKeyAttributeMap = StringDictionary[AttributeValue]
 
-type ItemCollectionMetricsMultiple = js.Array[typings.awsSdk.dynamodbMod.ItemCollectionMetrics]
+type ItemCollectionMetricsMultiple = js.Array[ItemCollectionMetrics]
 
-type ItemCollectionMetricsPerTable = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.ItemCollectionMetricsMultiple]
+type ItemCollectionMetricsPerTable = StringDictionary[ItemCollectionMetricsMultiple]
 
 type ItemCollectionSizeEstimateBound = scala.Double
 
-type ItemCollectionSizeEstimateRange = js.Array[typings.awsSdk.dynamodbMod.ItemCollectionSizeEstimateBound]
+type ItemCollectionSizeEstimateRange = js.Array[ItemCollectionSizeEstimateBound]
 
 type ItemCount = scala.Double
 
-type ItemList = js.Array[typings.awsSdk.dynamodbMod.AttributeMap]
+type ItemList = js.Array[AttributeMap]
 
-type ItemResponseList = js.Array[typings.awsSdk.dynamodbMod.ItemResponse]
+type ItemResponseList = js.Array[ItemResponse]
 
 type KMSMasterKeyArn = java.lang.String
 
 type KMSMasterKeyId = java.lang.String
 
-type Key = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type Key = StringDictionary[AttributeValue]
 
-type KeyConditions = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.Condition]
+type KeyConditions = StringDictionary[Condition]
 
 type KeyExpression = java.lang.String
 
-type KeyList = js.Array[typings.awsSdk.dynamodbMod.Key]
+type KeyList = js.Array[Key]
 
-type KeySchema = js.Array[typings.awsSdk.dynamodbMod.KeySchemaElement]
+type KeySchema = js.Array[KeySchemaElement]
 
 type KeySchemaAttributeName = java.lang.String
 
@@ -294,52 +370,70 @@ type KeySchemaAttributeName = java.lang.String
   - typings.awsSdk.awsSdkStrings.RANGE
   - java.lang.String
 */
-type KeyType = typings.awsSdk.dynamodbMod._KeyType | java.lang.String
+type KeyType = _KeyType | java.lang.String
 
-type LastUpdateDateTime = typings.std.Date
+type KinesisDataStreamDestinations = js.Array[KinesisDataStreamDestination]
 
-type ListAttributeValue = js.Array[typings.awsSdk.dynamodbMod.AttributeValue]
+type LastUpdateDateTime = js.Date
+
+type ListAttributeValue = js.Array[AttributeValue]
 
 type ListContributorInsightsLimit = scala.Double
 
 type ListExportsMaxLimit = scala.Double
 
+type ListImportsMaxLimit = scala.Double
+
 type ListTablesInputLimit = scala.Double
 
-type LocalSecondaryIndexDescriptionList = js.Array[typings.awsSdk.dynamodbMod.LocalSecondaryIndexDescription]
+type LocalSecondaryIndexDescriptionList = js.Array[LocalSecondaryIndexDescription]
 
-type LocalSecondaryIndexList = js.Array[typings.awsSdk.dynamodbMod.LocalSecondaryIndex]
+type LocalSecondaryIndexList = js.Array[LocalSecondaryIndex]
 
-type LocalSecondaryIndexes = js.Array[typings.awsSdk.dynamodbMod.LocalSecondaryIndexInfo]
+type LocalSecondaryIndexes = js.Array[LocalSecondaryIndexInfo]
 
 type Long = scala.Double
 
-type MapAttributeValue = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type MapAttributeValue = StringDictionary[AttributeValue]
 
 type NextTokenString = java.lang.String
 
 type NonKeyAttributeName = java.lang.String
 
-type NonKeyAttributeNameList = js.Array[typings.awsSdk.dynamodbMod.NonKeyAttributeName]
+type NonKeyAttributeNameList = js.Array[NonKeyAttributeName]
 
 type NonNegativeLongObject = scala.Double
 
-type NullAttributeValue = scala.Boolean
+type NullAttributeValue = Boolean
 
 type NumberAttributeValue = java.lang.String
 
-type NumberSetAttributeValue = js.Array[typings.awsSdk.dynamodbMod.NumberAttributeValue]
+type NumberSetAttributeValue = js.Array[NumberAttributeValue]
+
+type ParameterizedStatements = js.Array[ParameterizedStatement]
+
+type PartiQLBatchRequest = js.Array[BatchStatementRequest]
+
+type PartiQLBatchResponse = js.Array[BatchStatementResponse]
+
+type PartiQLNextToken = java.lang.String
+
+type PartiQLStatement = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type PointInTimeRecoveryStatus = typings.awsSdk.dynamodbMod._PointInTimeRecoveryStatus | java.lang.String
+type PointInTimeRecoveryStatus = _PointInTimeRecoveryStatus | java.lang.String
 
 type PositiveIntegerObject = scala.Double
 
 type PositiveLongObject = scala.Double
+
+type PreparedStatementParameters = js.Array[AttributeValue]
+
+type ProcessedItemCount = scala.Double
 
 type ProjectionExpression = java.lang.String
 
@@ -349,35 +443,35 @@ type ProjectionExpression = java.lang.String
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - java.lang.String
 */
-type ProjectionType = typings.awsSdk.dynamodbMod._ProjectionType | java.lang.String
+type ProjectionType = _ProjectionType | java.lang.String
 
-type PutItemInputAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.AttributeValue]
+type PutItemInputAttributeMap = StringDictionary[AttributeValue]
 
 type RegionName = java.lang.String
 
-type ReplicaAutoScalingDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaAutoScalingDescription]
+type ReplicaAutoScalingDescriptionList = js.Array[ReplicaAutoScalingDescription]
 
-type ReplicaAutoScalingUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaAutoScalingUpdate]
+type ReplicaAutoScalingUpdateList = js.Array[ReplicaAutoScalingUpdate]
 
-type ReplicaDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaDescription]
+type ReplicaDescriptionList = js.Array[ReplicaDescription]
 
-type ReplicaGlobalSecondaryIndexAutoScalingDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndexAutoScalingDescription]
+type ReplicaGlobalSecondaryIndexAutoScalingDescriptionList = js.Array[ReplicaGlobalSecondaryIndexAutoScalingDescription]
 
-type ReplicaGlobalSecondaryIndexAutoScalingUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndexAutoScalingUpdate]
+type ReplicaGlobalSecondaryIndexAutoScalingUpdateList = js.Array[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
 
-type ReplicaGlobalSecondaryIndexDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndexDescription]
+type ReplicaGlobalSecondaryIndexDescriptionList = js.Array[ReplicaGlobalSecondaryIndexDescription]
 
-type ReplicaGlobalSecondaryIndexList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndex]
+type ReplicaGlobalSecondaryIndexList = js.Array[ReplicaGlobalSecondaryIndex]
 
-type ReplicaGlobalSecondaryIndexSettingsDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndexSettingsDescription]
+type ReplicaGlobalSecondaryIndexSettingsDescriptionList = js.Array[ReplicaGlobalSecondaryIndexSettingsDescription]
 
-type ReplicaGlobalSecondaryIndexSettingsUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaGlobalSecondaryIndexSettingsUpdate]
+type ReplicaGlobalSecondaryIndexSettingsUpdateList = js.Array[ReplicaGlobalSecondaryIndexSettingsUpdate]
 
-type ReplicaList = js.Array[typings.awsSdk.dynamodbMod.Replica]
+type ReplicaList = js.Array[Replica]
 
-type ReplicaSettingsDescriptionList = js.Array[typings.awsSdk.dynamodbMod.ReplicaSettingsDescription]
+type ReplicaSettingsDescriptionList = js.Array[ReplicaSettingsDescription]
 
-type ReplicaSettingsUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaSettingsUpdate]
+type ReplicaSettingsUpdateList = js.Array[ReplicaSettingsUpdate]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -389,19 +483,19 @@ type ReplicaSettingsUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaSett
   - typings.awsSdk.awsSdkStrings.INACCESSIBLE_ENCRYPTION_CREDENTIALS
   - java.lang.String
 */
-type ReplicaStatus = typings.awsSdk.dynamodbMod._ReplicaStatus | java.lang.String
+type ReplicaStatus = _ReplicaStatus | java.lang.String
 
 type ReplicaStatusDescription = java.lang.String
 
 type ReplicaStatusPercentProgress = java.lang.String
 
-type ReplicaUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicaUpdate]
+type ReplicaUpdateList = js.Array[ReplicaUpdate]
 
-type ReplicationGroupUpdateList = js.Array[typings.awsSdk.dynamodbMod.ReplicationGroupUpdate]
+type ReplicationGroupUpdateList = js.Array[ReplicationGroupUpdate]
 
 type ResourceArnString = java.lang.String
 
-type RestoreInProgress = scala.Boolean
+type RestoreInProgress = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INDEXES
@@ -409,14 +503,14 @@ type RestoreInProgress = scala.Boolean
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type ReturnConsumedCapacity = typings.awsSdk.dynamodbMod._ReturnConsumedCapacity | java.lang.String
+type ReturnConsumedCapacity = _ReturnConsumedCapacity | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SIZE
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type ReturnItemCollectionMetrics = typings.awsSdk.dynamodbMod._ReturnItemCollectionMetrics | java.lang.String
+type ReturnItemCollectionMetrics = _ReturnItemCollectionMetrics | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -426,14 +520,14 @@ type ReturnItemCollectionMetrics = typings.awsSdk.dynamodbMod._ReturnItemCollect
   - typings.awsSdk.awsSdkStrings.UPDATED_NEW
   - java.lang.String
 */
-type ReturnValue = typings.awsSdk.dynamodbMod._ReturnValue | java.lang.String
+type ReturnValue = _ReturnValue | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL_OLD
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type ReturnValuesOnConditionCheckFailure = typings.awsSdk.dynamodbMod._ReturnValuesOnConditionCheckFailure | java.lang.String
+type ReturnValuesOnConditionCheckFailure = _ReturnValuesOnConditionCheckFailure | java.lang.String
 
 type S3Bucket = java.lang.String
 
@@ -446,11 +540,11 @@ type S3Prefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.KMS
   - java.lang.String
 */
-type S3SseAlgorithm = typings.awsSdk.dynamodbMod._S3SseAlgorithm | java.lang.String
+type S3SseAlgorithm = _S3SseAlgorithm | java.lang.String
 
 type S3SseKmsKeyId = java.lang.String
 
-type SSEEnabled = scala.Boolean
+type SSEEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
@@ -460,14 +554,14 @@ type SSEEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
-type SSEStatus = typings.awsSdk.dynamodbMod._SSEStatus | java.lang.String
+type SSEStatus = _SSEStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES256
   - typings.awsSdk.awsSdkStrings.KMS
   - java.lang.String
 */
-type SSEType = typings.awsSdk.dynamodbMod._SSEType | java.lang.String
+type SSEType = _SSEType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.S
@@ -475,13 +569,13 @@ type SSEType = typings.awsSdk.dynamodbMod._SSEType | java.lang.String
   - typings.awsSdk.awsSdkStrings.B
   - java.lang.String
 */
-type ScalarAttributeType = typings.awsSdk.dynamodbMod._ScalarAttributeType | java.lang.String
+type ScalarAttributeType = _ScalarAttributeType | java.lang.String
 
 type ScanSegment = scala.Double
 
 type ScanTotalSegments = scala.Double
 
-type SecondaryIndexesCapacityMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbMod.Capacity]
+type SecondaryIndexesCapacityMap = StringDictionary[Capacity]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL_ATTRIBUTES
@@ -490,11 +584,11 @@ type SecondaryIndexesCapacityMap = org.scalablytyped.runtime.StringDictionary[ty
   - typings.awsSdk.awsSdkStrings.COUNT
   - java.lang.String
 */
-type Select = typings.awsSdk.dynamodbMod._Select | java.lang.String
+type Select = _Select | java.lang.String
 
 type StreamArn = java.lang.String
 
-type StreamEnabled = scala.Boolean
+type StreamEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEW_IMAGE
@@ -503,23 +597,30 @@ type StreamEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.KEYS_ONLY
   - java.lang.String
 */
-type StreamViewType = typings.awsSdk.dynamodbMod._StreamViewType | java.lang.String
+type StreamViewType = _StreamViewType | java.lang.String
 
 type String = java.lang.String
 
 type StringAttributeValue = java.lang.String
 
-type StringSetAttributeValue = js.Array[typings.awsSdk.dynamodbMod.StringAttributeValue]
+type StringSetAttributeValue = js.Array[StringAttributeValue]
 
 type TableArn = java.lang.String
 
-type TableCreationDateTime = typings.std.Date
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STANDARD
+  - typings.awsSdk.awsSdkStrings.STANDARD_INFREQUENT_ACCESS
+  - java.lang.String
+*/
+type TableClass = _TableClass | java.lang.String
+
+type TableCreationDateTime = js.Date
 
 type TableId = java.lang.String
 
 type TableName = java.lang.String
 
-type TableNameList = js.Array[typings.awsSdk.dynamodbMod.TableName]
+type TableNameList = js.Array[TableName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -531,23 +632,23 @@ type TableNameList = js.Array[typings.awsSdk.dynamodbMod.TableName]
   - typings.awsSdk.awsSdkStrings.ARCHIVED
   - java.lang.String
 */
-type TableStatus = typings.awsSdk.dynamodbMod._TableStatus | java.lang.String
+type TableStatus = _TableStatus | java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.dynamodbMod.TagKeyString]
+type TagKeyList = js.Array[TagKeyString]
 
 type TagKeyString = java.lang.String
 
-type TagList = js.Array[typings.awsSdk.dynamodbMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValueString = java.lang.String
 
-type TimeRangeLowerBound = typings.std.Date
+type TimeRangeLowerBound = js.Date
 
-type TimeRangeUpperBound = typings.std.Date
+type TimeRangeUpperBound = js.Date
 
 type TimeToLiveAttributeName = java.lang.String
 
-type TimeToLiveEnabled = scala.Boolean
+type TimeToLiveEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
@@ -556,15 +657,15 @@ type TimeToLiveEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type TimeToLiveStatus = typings.awsSdk.dynamodbMod._TimeToLiveStatus | java.lang.String
+type TimeToLiveStatus = _TimeToLiveStatus | java.lang.String
 
-type TransactGetItemList = js.Array[typings.awsSdk.dynamodbMod.TransactGetItem]
+type TransactGetItemList = js.Array[TransactGetItem]
 
-type TransactWriteItemList = js.Array[typings.awsSdk.dynamodbMod.TransactWriteItem]
+type TransactWriteItemList = js.Array[TransactWriteItem]
 
 type UpdateExpression = java.lang.String
 
-type WriteRequests = js.Array[typings.awsSdk.dynamodbMod.WriteRequest]
+type WriteRequests = js.Array[WriteRequest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2011-12-05`
@@ -572,4 +673,4 @@ type WriteRequests = js.Array[typings.awsSdk.dynamodbMod.WriteRequest]
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.dynamodbMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

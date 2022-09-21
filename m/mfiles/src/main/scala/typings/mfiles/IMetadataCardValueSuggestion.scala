@@ -10,11 +10,11 @@ trait IMetadataCardValueSuggestion extends StObject {
   
   val Name: String
   
-  val Value: js.Any
+  val Value: Any
 }
 object IMetadataCardValueSuggestion {
   
-  inline def apply(IsNewValue: Boolean, Name: String, Value: js.Any): IMetadataCardValueSuggestion = {
+  inline def apply(IsNewValue: Boolean, Name: String, Value: Any): IMetadataCardValueSuggestion = {
     val __obj = js.Dynamic.literal(IsNewValue = IsNewValue.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadataCardValueSuggestion]
   }
@@ -25,6 +25,6 @@ object IMetadataCardValueSuggestion {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

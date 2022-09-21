@@ -6,18 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Size extends StObject {
+  trait Antimeridian extends StObject {
+    
+    var antimeridian: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
   }
-  object Size {
+  object Antimeridian {
     
-    inline def apply(): Size = {
+    inline def apply(): Antimeridian = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Size]
+      __obj.asInstanceOf[Antimeridian]
     }
     
-    extension [Self <: Size](x: Self) {
+    extension [Self <: Antimeridian](x: Self) {
+      
+      inline def setAntimeridian(value: Boolean): Self = StObject.set(x, "antimeridian", value.asInstanceOf[js.Any])
+      
+      inline def setAntimeridianUndefined: Self = StObject.set(x, "antimeridian", js.undefined)
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

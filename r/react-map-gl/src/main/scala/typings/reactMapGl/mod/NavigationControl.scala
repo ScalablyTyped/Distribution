@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "NavigationControl")
 @js.native
-class NavigationControl protected () extends BaseControl[NavigationControlProps, HTMLDivElement] {
+open class NavigationControl protected () extends BaseControl[NavigationControlProps, HTMLDivElement] {
   def this(props: NavigationControlProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: NavigationControlProps, context: js.Any) = this()
+  def this(props: NavigationControlProps, context: Any) = this()
 }

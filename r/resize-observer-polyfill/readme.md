@@ -10,10 +10,10 @@ A polyfill for the Resize Observer API
 | ------------------ | :-------------: |
 | Full name          | resize-observer-polyfill |
 | Keywords           | ResizeObserver, resize, observer, util, client, browser, polyfill, ponyfill |
-| # releases         | 1 |
-| # dependents       | 2156 |
-| # downloads        | 162176623 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1925207333333332E7 |
+| # stars            | 1600.0 |
 
 ## Links
 - [Homepage](https://github.com/que-etc/resize-observer-polyfill)

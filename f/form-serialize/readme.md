@@ -10,10 +10,10 @@ serialize html forms
 | ------------------ | :-------------: |
 | Full name          | form-serialize |
 | Keywords           | form, serialize |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 2343775 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 288251.0 |
+| # stars            | 396.0 |
 
 ## Links
 - [Homepage](https://github.com/shtylman/form-serialize#readme)

@@ -10,10 +10,10 @@ object pagesMod {
   
   @JSImport("material-ui/svg-icons/social/pages", JSImport.Default)
   @js.native
-  class default () extends SocialPages
+  open class default () extends SocialPages
   
   @JSImport("material-ui/svg-icons/social/pages", "SocialPages")
   @js.native
-  class SocialPages ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialPages ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

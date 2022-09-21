@@ -21,7 +21,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("parallel-transform", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Transform {
+  open class ^ protected () extends Transform {
     def this(ontransform: OnTransform) = this()
     def this(opts: Double, ontransform: OnTransform) = this()
     def this(opts: Null, ontransform: OnTransform) = this()
@@ -35,7 +35,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type OnTransform = js.Function2[/* chunk */ js.Any, /* callback */ TransformCallback, Unit]
+  type OnTransform = js.Function2[/* chunk */ Any, /* callback */ TransformCallback, Unit]
   
   trait Options
     extends StObject

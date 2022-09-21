@@ -22,7 +22,7 @@ object listItemMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ListItem {
     def this(properties: ListItemProperties) = this()

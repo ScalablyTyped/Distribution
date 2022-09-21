@@ -2,7 +2,6 @@ package typings.nodeGettext
 
 import typings.nodeGettext.anon.Debug
 import typings.nodeGettext.nodeGettextStrings.error
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("node-gettext", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with GetText {
     def this(options: Debug) = this()
@@ -35,7 +34,7 @@ object mod {
     override def dpgettext(domain: String, msgctxt: String, msgid: String): String = js.native
     
     /* CompleteClass */
-    override def emit(eventName: String, eventData: js.Any): Unit = js.native
+    override def emit(eventName: String, eventData: Any): Unit = js.native
     
     /* CompleteClass */
     override def getComment(domain: String, msgctxt: String, msgid: String): js.Object | Boolean = js.native
@@ -54,11 +53,11 @@ object mod {
     
     /* CompleteClass */
     @JSName("off")
-    override def off_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def off_error(eventName: error, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /* CompleteClass */
     @JSName("on")
-    override def on_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def on_error(eventName: error, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /* CompleteClass */
     override def pgettext(msgctxt: String, msgid: String): String = js.native
@@ -96,7 +95,7 @@ object mod {
     
     def dpgettext(domain: String, msgctxt: String, msgid: String): String
     
-    def emit(eventName: String, eventData: js.Any): Unit
+    def emit(eventName: String, eventData: Any): Unit
     
     def getComment(domain: String, msgctxt: String, msgid: String): js.Object | Boolean
     
@@ -109,10 +108,10 @@ object mod {
     def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String
     
     @JSName("off")
-    def off_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def off_error(eventName: error, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     @JSName("on")
-    def on_error(eventName: error, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def on_error(eventName: error, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     def pgettext(msgctxt: String, msgid: String): String
     
@@ -133,14 +132,14 @@ object mod {
       dnpgettext: (String, String, String, String, Double) => String,
       domain: String,
       dpgettext: (String, String, String) => String,
-      emit: (String, js.Any) => Unit,
+      emit: (String, Any) => Unit,
       getComment: (String, String, String) => js.Object | Boolean,
       gettext: String => String,
       locale: String,
       ngettext: (String, String, Double) => String,
       npgettext: (String, String, String, Double) => String,
-      off: (error, js.Function1[/* error */ Error, Unit]) => Unit,
-      on: (error, js.Function1[/* error */ Error, Unit]) => Unit,
+      off: (error, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      on: (error, js.Function1[/* error */ js.Error, Unit]) => Unit,
       pgettext: (String, String) => String,
       setLocale: String => Unit,
       setTextDomain: String => Unit,
@@ -165,7 +164,7 @@ object mod {
       
       inline def setDpgettext(value: (String, String, String) => String): Self = StObject.set(x, "dpgettext", js.Any.fromFunction3(value))
       
-      inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setGetComment(value: (String, String, String) => js.Object | Boolean): Self = StObject.set(x, "getComment", js.Any.fromFunction3(value))
       
@@ -177,9 +176,9 @@ object mod {
       
       inline def setNpgettext(value: (String, String, String, Double) => String): Self = StObject.set(x, "npgettext", js.Any.fromFunction4(value))
       
-      inline def setOff(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (error, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      inline def setOn(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (error, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setPgettext(value: (String, String) => String): Self = StObject.set(x, "pgettext", js.Any.fromFunction2(value))
       

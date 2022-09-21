@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MochaPhantomJSOptions extends StObject {
   
-  var cookies: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var cookies: js.UndefOr[js.Array[Any]] = js.undefined
   
   var file: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -25,17 +25,17 @@ object MochaPhantomJSOptions {
   
   extension [Self <: MochaPhantomJSOptions](x: Self) {
     
-    inline def setCookies(value: js.Array[js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
     
-    inline def setCookiesVarargs(value: js.Any*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: Any*): Self = StObject.set(x, "cookies", js.Array(value*))
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

@@ -18,18 +18,11 @@ trait univariateColorSizeCreateContinuousRendererParamsColorOptions
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
-    * Provides options for setting a title to a field when an expression is provided instead of a field name.
+    * Only applies to the `above-and-below` theme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsColorOptionsLegendOptions] = js.undefined
-  
-  /**
-    * Determines which values will be emphasized in the continuous ramp and the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
-  var theme: js.UndefOr[String] = js.undefined
+  var isContinuous: js.UndefOr[Boolean] = js.undefined
 }
 object univariateColorSizeCreateContinuousRendererParamsColorOptions {
   
@@ -48,12 +41,8 @@ object univariateColorSizeCreateContinuousRendererParamsColorOptions {
     
     inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
-    inline def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsColorOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setIsContinuous(value: Boolean): Self = StObject.set(x, "isContinuous", value.asInstanceOf[js.Any])
     
-    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
-    
-    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    
-    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setIsContinuousUndefined: Self = StObject.set(x, "isContinuous", js.undefined)
   }
 }

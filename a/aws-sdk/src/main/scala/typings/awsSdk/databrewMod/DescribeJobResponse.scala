@@ -9,12 +9,22 @@ trait DescribeJobResponse extends StObject {
   /**
     * The date and time that the job was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (user name) of the user associated with the creation of the job.
     */
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
+  
+  /**
+    * One or more artifacts that represent the Glue Data Catalog output from running the job.
+    */
+  var DataCatalogOutputs: js.UndefOr[DataCatalogOutputList] = js.undefined
+  
+  /**
+    * Represents a list of JDBC database output objects which defines the output destination for a DataBrew recipe job to write into.
+    */
+  var DatabaseOutputs: js.UndefOr[DatabaseOutputList] = js.undefined
   
   /**
     * The dataset that the job acts upon.
@@ -27,9 +37,14 @@ trait DescribeJobResponse extends StObject {
   var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
-    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
+    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with keys managed by KMS.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
   var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
+  
+  /**
+    * Sample configuration for profile jobs only. Determines the number of rows on which the profile job will be executed.
+    */
+  var JobSample: js.UndefOr[typings.awsSdk.databrewMod.JobSample] = js.undefined
   
   /**
     * The identifier (user name) of the user who last modified the job.
@@ -39,15 +54,15 @@ trait DescribeJobResponse extends StObject {
   /**
     * The date and time that the job was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A value that indicates whether Amazon CloudWatch logging is enabled for this job.
+    * Indicates whether Amazon CloudWatch logging is enabled for this job.
     */
   var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
   /**
-    * The maximum number of nodes that AWS Glue DataBrew can consume when the job processes data.
+    * The maximum number of compute nodes that DataBrew can consume when the job processes data.
     */
   var MaxCapacity: js.UndefOr[typings.awsSdk.databrewMod.MaxCapacity] = js.undefined
   
@@ -67,6 +82,11 @@ trait DescribeJobResponse extends StObject {
   var Outputs: js.UndefOr[OutputList] = js.undefined
   
   /**
+    * Configuration for profile jobs. Used to select columns, do evaluations, and override default parameters of evaluations. When configuration is null, the profile job will run with default settings.
+    */
+  var ProfileConfiguration: js.UndefOr[typings.awsSdk.databrewMod.ProfileConfiguration] = js.undefined
+  
+  /**
     * The DataBrew project associated with this job.
     */
   var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.undefined
@@ -79,7 +99,7 @@ trait DescribeJobResponse extends StObject {
   var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The ARN of the AWS Identity and Access Management (IAM) role that was assumed for this request.
+    * The ARN of the Identity and Access Management (IAM) role to be assumed when DataBrew runs the job.
     */
   var RoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -97,6 +117,11 @@ trait DescribeJobResponse extends StObject {
     * The job type, which must be one of the following:    PROFILE - The job analyzes the dataset to determine its size, data types, data distribution, and more.    RECIPE - The job applies one or more transformations to a dataset.  
     */
   var Type: js.UndefOr[JobType] = js.undefined
+  
+  /**
+    * List of validation configurations that are applied to the profile job.
+    */
+  var ValidationConfigurations: js.UndefOr[ValidationConfigurationList] = js.undefined
 }
 object DescribeJobResponse {
   
@@ -107,13 +132,25 @@ object DescribeJobResponse {
   
   extension [Self <: DescribeJobResponse](x: Self) {
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     inline def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    
+    inline def setDataCatalogOutputs(value: DataCatalogOutputList): Self = StObject.set(x, "DataCatalogOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDataCatalogOutputsUndefined: Self = StObject.set(x, "DataCatalogOutputs", js.undefined)
+    
+    inline def setDataCatalogOutputsVarargs(value: DataCatalogOutput*): Self = StObject.set(x, "DataCatalogOutputs", js.Array(value*))
+    
+    inline def setDatabaseOutputs(value: DatabaseOutputList): Self = StObject.set(x, "DatabaseOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseOutputsUndefined: Self = StObject.set(x, "DatabaseOutputs", js.undefined)
+    
+    inline def setDatabaseOutputsVarargs(value: DatabaseOutput*): Self = StObject.set(x, "DatabaseOutputs", js.Array(value*))
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
@@ -127,11 +164,15 @@ object DescribeJobResponse {
     
     inline def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
     
+    inline def setJobSample(value: JobSample): Self = StObject.set(x, "JobSample", value.asInstanceOf[js.Any])
+    
+    inline def setJobSampleUndefined: Self = StObject.set(x, "JobSample", js.undefined)
+    
     inline def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -153,7 +194,11 @@ object DescribeJobResponse {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
+    
+    inline def setProfileConfiguration(value: ProfileConfiguration): Self = StObject.set(x, "ProfileConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setProfileConfigurationUndefined: Self = StObject.set(x, "ProfileConfiguration", js.undefined)
     
     inline def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
     
@@ -182,5 +227,11 @@ object DescribeJobResponse {
     inline def setType(value: JobType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setValidationConfigurations(value: ValidationConfigurationList): Self = StObject.set(x, "ValidationConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setValidationConfigurationsUndefined: Self = StObject.set(x, "ValidationConfigurations", js.undefined)
+    
+    inline def setValidationConfigurationsVarargs(value: ValidationConfiguration*): Self = StObject.set(x, "ValidationConfigurations", js.Array(value*))
   }
 }

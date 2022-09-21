@@ -30,7 +30,7 @@ trait Hub extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this Hub. Call this method when the Hub is no longer needed. After calling this method, the Hub becomes unusable.
@@ -53,7 +53,7 @@ trait Hub extends StObject {
   /**
     * Gets or sets the Template or templating function that creates the DOM elements for each HubSection header. Your HubSection object should provide strings for HubSection.header property.
     **/
-  var headerTemplate: js.Any = js.native
+  var headerTemplate: Any = js.native
   
   /**
     * Gets or sets the index of the first HubSection at least partially in view. This property is useful for animating the visible content in the Hub.
@@ -76,19 +76,19 @@ trait Hub extends StObject {
     * Raised when the Hub is about to play entrance, content transition, insert, or remove animations.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.type, detail.index, detail.section.
     **/
-  def oncontentanimating(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oncontentanimating(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user clicks on an interactive header.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.section.
     **/
-  def onheaderinvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onheaderinvoked(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the Hub control's loadingState changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: loadingState.
     **/
-  def onloadingstatechanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onloadingstatechanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Gets or sets the orientation of sections within the Hub.
@@ -122,5 +122,5 @@ trait Hub extends StObject {
   /**
     * This API supports the SemanticZoom infrastructure and is not intended to be used directly from your code.
     **/
-  var zoomableView: IZoomableView[js.Any] = js.native
+  var zoomableView: IZoomableView[Any] = js.native
 }

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpCache.mod.gc.IGulpCacheStatic
 import typings.gulpUtil.mod.PluginError
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
@@ -51,7 +50,7 @@ object mod extends Shortcut {
     @js.native
     trait IGulpCache
       extends StObject
-         with Instantiable1[/* options */ ICacheOptions, js.Any]
+         with Instantiable1[/* options */ ICacheOptions, Any]
     
     trait IGulpCacheOptions extends StObject {
       
@@ -66,7 +65,7 @@ object mod extends Shortcut {
       var key: js.UndefOr[
             js.Function2[
               /* file */ File, 
-              /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ String, Unit]], 
+              /* callback */ js.UndefOr[js.Function2[/* err */ Any, /* result */ String, Unit]], 
               String | js.Promise[String]
             ]
           ] = js.undefined
@@ -80,12 +79,12 @@ object mod extends Shortcut {
       /**
         * Value representing the success of a task.
         */
-      var success: js.UndefOr[Boolean | Predicate[js.Any]] = js.undefined
+      var success: js.UndefOr[Boolean | Predicate[Any]] = js.undefined
       
       /**
         * Content that is to be cached.
         */
-      var value: js.UndefOr[js.Function1[/* result */ js.Any, js.Object | js.Promise[js.Object] | String]] = js.undefined
+      var value: js.UndefOr[js.Function1[/* result */ Any, js.Object | js.Promise[js.Object] | String]] = js.undefined
     }
     object IGulpCacheOptions {
       
@@ -101,7 +100,7 @@ object mod extends Shortcut {
         inline def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
         
         inline def setKey(
-          value: (/* file */ File, /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ String, Unit]]) => String | js.Promise[String]
+          value: (/* file */ File, /* callback */ js.UndefOr[js.Function2[/* err */ Any, /* result */ String, Unit]]) => String | js.Promise[String]
         ): Self = StObject.set(x, "key", js.Any.fromFunction2(value))
         
         inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -110,13 +109,13 @@ object mod extends Shortcut {
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        inline def setSuccess(value: Boolean | Predicate[js.Any]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: Boolean | Predicate[Any]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        inline def setSuccessFunction1(value: js.Any => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+        inline def setSuccessFunction1(value: Any => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
         
         inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        inline def setValue(value: /* result */ js.Any => js.Object | js.Promise[js.Object] | String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+        inline def setValue(value: /* result */ Any => js.Object | js.Promise[js.Object] | String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
@@ -129,13 +128,18 @@ object mod extends Shortcut {
         * Caches the result of a task.
         * @param task The task whose result is to be cached.
         */
-      def apply(task: ReadWriteStream): Transform = js.native
+      def apply(
+        task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ): Transform = js.native
       /**
         * Caches the result of a task.
         * @param task Task whose result is to be cached.
         * @param options Override values for available settings.
         */
-      def apply(task: ReadWriteStream, options: IGulpCacheOptions): Transform = js.native
+      def apply(
+        task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
+        options: IGulpCacheOptions
+      ): Transform = js.native
       
       /**
         * Represents a cache store.

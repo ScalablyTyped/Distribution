@@ -65,6 +65,16 @@ trait NodeMaterialBuildStateSharedData extends StObject {
   def emitErrors(): Unit
   
   /**
+    * Bindable blocks (Blocks that need to set data to the effect) that will always be called (by bindForSubMesh), contrary to bindableBlocks that won't be called if _mustRebind() returns false
+    */
+  var forcedBindableBlocks: js.Array[NodeMaterialBlock]
+  
+  /**
+    * List of the fragment output nodes
+    */
+  var fragmentOutputNodes: Immutable[js.Array[NodeMaterialBlock]]
+  
+  /**
     * Gets the compilation hints emitted at compilation time
     */
   var hints: NeedAlphaBlending
@@ -91,7 +101,7 @@ trait NodeMaterialBuildStateSharedData extends StObject {
     * Input blocks
     */
   var textureBlocks: js.Array[
-    TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
+    ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
   ]
   
   /** List of emitted variables */
@@ -125,20 +135,22 @@ object NodeMaterialBuildStateSharedData {
     dynamicUniformBlocks: js.Array[NodeMaterialBlock],
     emitComments: Boolean,
     emitErrors: () => Unit,
+    forcedBindableBlocks: js.Array[NodeMaterialBlock],
+    fragmentOutputNodes: Immutable[js.Array[NodeMaterialBlock]],
     hints: NeedAlphaBlending,
     inputBlocks: js.Array[InputBlock],
     repeatableContentBlocks: js.Array[NodeMaterialBlock],
     scene: Scene,
     temps: js.Array[String],
     textureBlocks: js.Array[
-      TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
+      ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
     ],
     variableNames: org.scalablytyped.runtime.StringDictionary[Double],
     varyingDeclaration: String,
     varyings: js.Array[String],
     verbose: Boolean
   ): NodeMaterialBuildStateSharedData = {
-    val __obj = js.Dynamic.literal(allowEmptyVertexProgram = allowEmptyVertexProgram.asInstanceOf[js.Any], animatedInputs = animatedInputs.asInstanceOf[js.Any], bindableBlocks = bindableBlocks.asInstanceOf[js.Any], blockingBlocks = blockingBlocks.asInstanceOf[js.Any], blocksWithDefines = blocksWithDefines.asInstanceOf[js.Any], blocksWithFallbacks = blocksWithFallbacks.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], defineNames = defineNames.asInstanceOf[js.Any], dynamicUniformBlocks = dynamicUniformBlocks.asInstanceOf[js.Any], emitComments = emitComments.asInstanceOf[js.Any], emitErrors = js.Any.fromFunction0(emitErrors), hints = hints.asInstanceOf[js.Any], inputBlocks = inputBlocks.asInstanceOf[js.Any], repeatableContentBlocks = repeatableContentBlocks.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], temps = temps.asInstanceOf[js.Any], textureBlocks = textureBlocks.asInstanceOf[js.Any], variableNames = variableNames.asInstanceOf[js.Any], varyingDeclaration = varyingDeclaration.asInstanceOf[js.Any], varyings = varyings.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowEmptyVertexProgram = allowEmptyVertexProgram.asInstanceOf[js.Any], animatedInputs = animatedInputs.asInstanceOf[js.Any], bindableBlocks = bindableBlocks.asInstanceOf[js.Any], blockingBlocks = blockingBlocks.asInstanceOf[js.Any], blocksWithDefines = blocksWithDefines.asInstanceOf[js.Any], blocksWithFallbacks = blocksWithFallbacks.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], defineNames = defineNames.asInstanceOf[js.Any], dynamicUniformBlocks = dynamicUniformBlocks.asInstanceOf[js.Any], emitComments = emitComments.asInstanceOf[js.Any], emitErrors = js.Any.fromFunction0(emitErrors), forcedBindableBlocks = forcedBindableBlocks.asInstanceOf[js.Any], fragmentOutputNodes = fragmentOutputNodes.asInstanceOf[js.Any], hints = hints.asInstanceOf[js.Any], inputBlocks = inputBlocks.asInstanceOf[js.Any], repeatableContentBlocks = repeatableContentBlocks.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], temps = temps.asInstanceOf[js.Any], textureBlocks = textureBlocks.asInstanceOf[js.Any], variableNames = variableNames.asInstanceOf[js.Any], varyingDeclaration = varyingDeclaration.asInstanceOf[js.Any], varyings = varyings.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeMaterialBuildStateSharedData]
   }
   
@@ -148,23 +160,23 @@ object NodeMaterialBuildStateSharedData {
     
     inline def setAnimatedInputs(value: js.Array[InputBlock]): Self = StObject.set(x, "animatedInputs", value.asInstanceOf[js.Any])
     
-    inline def setAnimatedInputsVarargs(value: InputBlock*): Self = StObject.set(x, "animatedInputs", js.Array(value :_*))
+    inline def setAnimatedInputsVarargs(value: InputBlock*): Self = StObject.set(x, "animatedInputs", js.Array(value*))
     
     inline def setBindableBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "bindableBlocks", value.asInstanceOf[js.Any])
     
-    inline def setBindableBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "bindableBlocks", js.Array(value :_*))
+    inline def setBindableBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "bindableBlocks", js.Array(value*))
     
     inline def setBlockingBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blockingBlocks", value.asInstanceOf[js.Any])
     
-    inline def setBlockingBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blockingBlocks", js.Array(value :_*))
+    inline def setBlockingBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blockingBlocks", js.Array(value*))
     
     inline def setBlocksWithDefines(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blocksWithDefines", value.asInstanceOf[js.Any])
     
-    inline def setBlocksWithDefinesVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithDefines", js.Array(value :_*))
+    inline def setBlocksWithDefinesVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithDefines", js.Array(value*))
     
     inline def setBlocksWithFallbacks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blocksWithFallbacks", value.asInstanceOf[js.Any])
     
-    inline def setBlocksWithFallbacksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithFallbacks", js.Array(value :_*))
+    inline def setBlocksWithFallbacksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithFallbacks", js.Array(value*))
     
     inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
@@ -174,37 +186,45 @@ object NodeMaterialBuildStateSharedData {
     
     inline def setDynamicUniformBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "dynamicUniformBlocks", value.asInstanceOf[js.Any])
     
-    inline def setDynamicUniformBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "dynamicUniformBlocks", js.Array(value :_*))
+    inline def setDynamicUniformBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "dynamicUniformBlocks", js.Array(value*))
     
     inline def setEmitComments(value: Boolean): Self = StObject.set(x, "emitComments", value.asInstanceOf[js.Any])
     
     inline def setEmitErrors(value: () => Unit): Self = StObject.set(x, "emitErrors", js.Any.fromFunction0(value))
     
+    inline def setForcedBindableBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "forcedBindableBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setForcedBindableBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "forcedBindableBlocks", js.Array(value*))
+    
+    inline def setFragmentOutputNodes(value: Immutable[js.Array[NodeMaterialBlock]]): Self = StObject.set(x, "fragmentOutputNodes", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentOutputNodesVarargs(value: (Any | NodeMaterialBlock)*): Self = StObject.set(x, "fragmentOutputNodes", js.Array(value*))
+    
     inline def setHints(value: NeedAlphaBlending): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     inline def setInputBlocks(value: js.Array[InputBlock]): Self = StObject.set(x, "inputBlocks", value.asInstanceOf[js.Any])
     
-    inline def setInputBlocksVarargs(value: InputBlock*): Self = StObject.set(x, "inputBlocks", js.Array(value :_*))
+    inline def setInputBlocksVarargs(value: InputBlock*): Self = StObject.set(x, "inputBlocks", js.Array(value*))
     
     inline def setRepeatableContentBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "repeatableContentBlocks", value.asInstanceOf[js.Any])
     
-    inline def setRepeatableContentBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "repeatableContentBlocks", js.Array(value :_*))
+    inline def setRepeatableContentBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "repeatableContentBlocks", js.Array(value*))
     
     inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setTemps(value: js.Array[String]): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     
-    inline def setTempsVarargs(value: String*): Self = StObject.set(x, "temps", js.Array(value :_*))
+    inline def setTempsVarargs(value: String*): Self = StObject.set(x, "temps", js.Array(value*))
     
     inline def setTextureBlocks(
       value: js.Array[
-          TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
+          ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
         ]
     ): Self = StObject.set(x, "textureBlocks", value.asInstanceOf[js.Any])
     
     inline def setTextureBlocksVarargs(
-      value: (TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock)*
-    ): Self = StObject.set(x, "textureBlocks", js.Array(value :_*))
+      value: (ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock)*
+    ): Self = StObject.set(x, "textureBlocks", js.Array(value*))
     
     inline def setVariableNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
     
@@ -212,7 +232,7 @@ object NodeMaterialBuildStateSharedData {
     
     inline def setVaryings(value: js.Array[String]): Self = StObject.set(x, "varyings", value.asInstanceOf[js.Any])
     
-    inline def setVaryingsVarargs(value: String*): Self = StObject.set(x, "varyings", js.Array(value :_*))
+    inline def setVaryingsVarargs(value: String*): Self = StObject.set(x, "varyings", js.Array(value*))
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }

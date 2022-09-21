@@ -1,10 +1,14 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UptimeCheckConfig extends StObject {
+  
+  /** The type of checkers to use to execute the Uptime check. */
+  var checkerType: js.UndefOr[String] = js.undefined
   
   /**
     * The content that is expected to appear in the data returned by the target server against which the check is run. Currently, only the first entry in the content_matchers list is
@@ -13,7 +17,7 @@ trait UptimeCheckConfig extends StObject {
   var contentMatchers: js.UndefOr[js.Array[ContentMatcher]] = js.undefined
   
   /**
-    * A human-friendly name for the Uptime check configuration. The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however,
+    * A human-friendly name for the Uptime check configuration. The display name should be unique within a Cloud Monitoring Workspace in order to make it easier to identify; however,
     * uniqueness is not enforced. Required.
     */
   var displayName: js.UndefOr[String] = js.undefined
@@ -34,8 +38,8 @@ trait UptimeCheckConfig extends StObject {
   var isInternal: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The monitored resource (https://cloud.google.com/monitoring/api/resources) associated with the configuration. The following monitored resource types are supported for Uptime checks:
-    * uptime_url, gce_instance, gae_app, aws_ec2_instance, aws_elb_load_balancer
+    * The monitored resource (https://cloud.google.com/monitoring/api/resources) associated with the configuration. The following monitored resource types are valid for this field:
+    * uptime_url, gce_instance, gae_app, aws_ec2_instance, aws_elb_load_balancer k8s_service servicedirectory_service cloud_run_revision
     */
   var monitoredResource: js.UndefOr[MonitoredResource] = js.undefined
   
@@ -66,6 +70,16 @@ trait UptimeCheckConfig extends StObject {
   
   /** The maximum amount of time to wait for the request to complete (must be between 1 and 60 seconds). Required. */
   var timeout: js.UndefOr[String] = js.undefined
+  
+  /**
+    * User-supplied key/value data to be used for organizing and identifying the UptimeCheckConfig objects.The field can contain up to 64 entries. Each key and value is limited to 63
+    * Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
+    */
+  var userLabels: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.UptimeCheckConfig & TopLevel[Any]
+  ] = js.undefined
 }
 object UptimeCheckConfig {
   
@@ -76,11 +90,15 @@ object UptimeCheckConfig {
   
   extension [Self <: UptimeCheckConfig](x: Self) {
     
+    inline def setCheckerType(value: String): Self = StObject.set(x, "checkerType", value.asInstanceOf[js.Any])
+    
+    inline def setCheckerTypeUndefined: Self = StObject.set(x, "checkerType", js.undefined)
+    
     inline def setContentMatchers(value: js.Array[ContentMatcher]): Self = StObject.set(x, "contentMatchers", value.asInstanceOf[js.Any])
     
     inline def setContentMatchersUndefined: Self = StObject.set(x, "contentMatchers", js.undefined)
     
-    inline def setContentMatchersVarargs(value: ContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value :_*))
+    inline def setContentMatchersVarargs(value: ContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -94,7 +112,7 @@ object UptimeCheckConfig {
     
     inline def setInternalCheckersUndefined: Self = StObject.set(x, "internalCheckers", js.undefined)
     
-    inline def setInternalCheckersVarargs(value: InternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value :_*))
+    inline def setInternalCheckersVarargs(value: InternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value*))
     
     inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     
@@ -120,7 +138,7 @@ object UptimeCheckConfig {
     
     inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
     
-    inline def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+    inline def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value*))
     
     inline def setTcpCheck(value: TcpCheck): Self = StObject.set(x, "tcpCheck", value.asInstanceOf[js.Any])
     
@@ -129,5 +147,13 @@ object UptimeCheckConfig {
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUserLabels(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.UptimeCheckConfig & TopLevel[Any]
+    ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
+    
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

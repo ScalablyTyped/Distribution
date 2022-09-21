@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLImageElementFactory extends StObject {
   
   def apply(): IHTMLImgElement = js.native
-  def apply(width: js.Any): IHTMLImgElement = js.native
-  def apply(width: js.Any, height: js.Any): IHTMLImgElement = js.native
-  def apply(width: Unit, height: js.Any): IHTMLImgElement = js.native
+  def apply(width: Any): IHTMLImgElement = js.native
+  def apply(width: Any, height: Any): IHTMLImgElement = js.native
+  def apply(width: Unit, height: Any): IHTMLImgElement = js.native
   
   def create(): IHTMLImgElement = js.native
-  def create(width: js.Any): IHTMLImgElement = js.native
-  def create(width: js.Any, height: js.Any): IHTMLImgElement = js.native
-  def create(width: Unit, height: js.Any): IHTMLImgElement = js.native
+  def create(width: Any): IHTMLImgElement = js.native
+  def create(width: Any, height: Any): IHTMLImgElement = js.native
+  def create(width: Unit, height: Any): IHTMLImgElement = js.native
 }

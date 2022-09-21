@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tinymce", "Editor")
 @js.native
-class Editor protected () extends Observable {
+open class Editor protected () extends Observable {
   def this(id: String, settings: Settings_, editorManager: EditorManager) = this()
   
   @JSName("$")
@@ -72,11 +72,11 @@ class Editor protected () extends Observable {
   
   def execCommand(cmd: String): Unit = js.native
   def execCommand(cmd: String, ui: Boolean): Unit = js.native
-  def execCommand(cmd: String, ui: Boolean, value: js.Any): Unit = js.native
-  def execCommand(cmd: String, ui: Boolean, value: js.Any, args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: Boolean, value: Any): Unit = js.native
+  def execCommand(cmd: String, ui: Boolean, value: Any, args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Boolean, value: Unit, args: js.Object): Unit = js.native
-  def execCommand(cmd: String, ui: Unit, value: js.Any): Unit = js.native
-  def execCommand(cmd: String, ui: Unit, value: js.Any, args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: Unit, value: Any): Unit = js.native
+  def execCommand(cmd: String, ui: Unit, value: Any, args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Unit, value: Unit, args: js.Object): Unit = js.native
   
   def focus(skipFocus: Boolean): Unit = js.native
@@ -168,7 +168,7 @@ class Editor protected () extends Observable {
   
   var undoManager: UndoManager = js.native
   
-  def uploadImages(callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
+  def uploadImages(callback: js.Function0[Unit]): js.Promise[Any] = js.native
   
   var windowManager: WindowManager = js.native
 }

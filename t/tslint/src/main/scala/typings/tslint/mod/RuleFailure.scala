@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tslint", "RuleFailure")
 @js.native
-class RuleFailure protected ()
+open class RuleFailure protected ()
   extends typings.tslint.ruleMod.RuleFailure {
   def this(sourceFile: SourceFile, start: Double, end: Double, failure: String, ruleName: String) = this()
   def this(

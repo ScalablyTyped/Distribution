@@ -10,12 +10,10 @@ object paginationFirstMod {
   
   @JSImport("react-bootstrap/lib/PaginationFirst", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationFirstProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationFirstProps, js.Object, Any]
   
-  @js.native
-  trait PaginationFirst
-    extends Component[PaginationFirstProps, js.Object, js.Any]
+  type PaginationFirst = Component[PaginationFirstProps, js.Object, Any]
   
   trait PaginationFirstProps
     extends StObject

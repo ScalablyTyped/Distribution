@@ -9,20 +9,31 @@ trait ProductsCustomBatchRequestEntry extends StObject {
   /** An entry ID, unique within the batch request. */
   var batchId: js.UndefOr[Double] = js.undefined
   
-  /** The Content API feed id. */
+  /** The Content API Supplemental Feed ID. If present then product insertion or deletion applies to a supplemental feed instead of primary Content API feed. */
   var feedId: js.UndefOr[String] = js.undefined
   
   /** The ID of the managing account. */
   var merchantId: js.UndefOr[String] = js.undefined
   
-  /** The method of the batch entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" */
+  /** The method of the batch entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" - "`update`" */
   var method: js.UndefOr[String] = js.undefined
   
-  /** The product to insert. Only required if the method is `insert`. */
+  /**
+    * The product to insert or update. Only required if the method is `insert` or `update`. If the `update` method is used with `updateMask` only to delete a field, then this isn't
+    * required. For example, setting `salePrice` on the `updateMask` and not providing a `product` will result in an existing sale price on the product specified by `productId` being
+    * deleted.
+    */
   var product: js.UndefOr[Product] = js.undefined
   
-  /** The ID of the product to get or delete. Only defined if the method is `get` or `delete`. */
+  /** The ID of the product to get or mutate. Only defined if the method is `get`, `delete`, or `update`. */
   var productId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The comma-separated list of product attributes to be updated. Example: `"title,salePrice"`. Attributes specified in the update mask without a value specified in the body will be
+    * deleted from the product. Only top-level product attributes can be updated. If not defined, product attributes with set values will be updated and other attributes will stay
+    * unchanged. Only defined if the method is `update`.
+    */
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ProductsCustomBatchRequestEntry {
   
@@ -56,5 +67,9 @@ object ProductsCustomBatchRequestEntry {
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

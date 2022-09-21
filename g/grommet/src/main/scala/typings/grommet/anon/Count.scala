@@ -1,52 +1,40 @@
 package typings.grommet.anon
 
-import typings.grommet.grommetStrings.`1Slash2`
-import typings.grommet.grommetStrings.`1Slash3`
-import typings.grommet.grommetStrings.`1Slash4`
-import typings.grommet.grommetStrings.`2Slash3`
-import typings.grommet.grommetStrings.`2Slash4`
-import typings.grommet.grommetStrings.`3Slash4`
-import typings.grommet.grommetStrings.auto
-import typings.grommet.grommetStrings.fill
-import typings.grommet.grommetStrings.fit
-import typings.grommet.grommetStrings.flex
-import typings.grommet.grommetStrings.full
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Count extends StObject {
   
-  var count: js.UndefOr[fit | fill | Double] = js.undefined
+  var count: Double
   
-  var size: js.UndefOr[
-    xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
-  ] = js.undefined
+  var expanded: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var show: Double
+  
+  var sort: js.UndefOr[DirectionProperty] = js.undefined
 }
 object Count {
   
-  inline def apply(): Count = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(count: Double, show: Double): Count = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
   
   extension [Self <: Count](x: Self) {
     
-    inline def setCount(value: fit | fill | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setExpanded(value: js.Array[String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    inline def setSize(
-      value: xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
-    ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setExpandedVarargs(value: String*): Self = StObject.set(x, "expanded", js.Array(value*))
     
-    inline def setSizeVarargs(value: String*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setSort(value: DirectionProperty): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

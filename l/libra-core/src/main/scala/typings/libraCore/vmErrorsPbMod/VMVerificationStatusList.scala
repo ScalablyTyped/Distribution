@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatusList")
 @js.native
-class VMVerificationStatusList () extends Message {
+open class VMVerificationStatusList () extends Message {
   
   def addStatusList(): VMVerificationStatus = js.native
   def addStatusList(value: Unit, index: Double): VMVerificationStatus = js.native
@@ -33,7 +32,7 @@ object VMVerificationStatusList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): VMVerificationStatusList = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatusList]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): VMVerificationStatusList = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatusList]
   
   inline def deserializeBinaryFromReader(message: VMVerificationStatusList, reader: BinaryReader): VMVerificationStatusList = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMVerificationStatusList]
   
@@ -67,7 +66,7 @@ object VMVerificationStatusList {
       
       inline def setStatusListList(value: js.Array[typings.libraCore.vmErrorsPbMod.VMVerificationStatus.AsObject]): Self = StObject.set(x, "statusListList", value.asInstanceOf[js.Any])
       
-      inline def setStatusListListVarargs(value: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.AsObject*): Self = StObject.set(x, "statusListList", js.Array(value :_*))
+      inline def setStatusListListVarargs(value: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.AsObject*): Self = StObject.set(x, "statusListList", js.Array(value*))
     }
   }
 }

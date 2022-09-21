@@ -1,7 +1,7 @@
 package typings.angularCore
 
-import typings.angularCore.helpersMod.HelperFunction
 import typings.angularCore.mod.GlobalTargetName
+import typings.angularCore.mod.InjectorScope
 import typings.angularCore.mod.ɵBypassType
 import typings.angularCore.propertyNameMod.PropertyNameWithText
 import org.scalablytyped.runtime.StObject
@@ -9,12 +9,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCoreStrings {
-  
-  @js.native
-  sealed trait AnyDuringRendererMigration
-    extends StObject
-       with HelperFunction
-  inline def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   
   @js.native
   sealed trait Asterisk extends StObject
@@ -25,8 +19,8 @@ object angularCoreStrings {
   inline def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = ("Brand for OpaqueViewState that nothing will match").asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   
   @js.native
-  sealed trait `Brand for PlayerFactory that nothing will match` extends StObject
-  inline def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = ("Brand for PlayerFactory that nothing will match").asInstanceOf[`Brand for PlayerFactory that nothing will match`]
+  sealed trait BrowserAnimations extends StObject
+  inline def BrowserAnimations: BrowserAnimations = "BrowserAnimations".asInstanceOf[BrowserAnimations]
   
   @js.native
   sealed trait ChangeDetection extends StObject
@@ -65,6 +59,10 @@ object angularCoreStrings {
   @js.native
   sealed trait NO_CHANGE extends StObject
   inline def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
+  
+  @js.native
+  sealed trait NoopAnimations extends StObject
+  inline def NoopAnimations: NoopAnimations = "NoopAnimations".asInstanceOf[NoopAnimations]
   
   @js.native
   sealed trait ResourceURL
@@ -107,66 +105,6 @@ object angularCoreStrings {
   inline def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait __ngRendererAnimateHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
-  
-  @js.native
-  sealed trait __ngRendererAttachViewAfterHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererAttachViewAfterHelper: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
-  
-  @js.native
-  sealed trait __ngRendererCreateElementHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererCreateElementHelper: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
-  
-  @js.native
-  sealed trait __ngRendererCreateTemplateAnchorHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererCreateTemplateAnchorHelper: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
-  
-  @js.native
-  sealed trait __ngRendererCreateTextHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererCreateTextHelper: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
-  
-  @js.native
-  sealed trait __ngRendererDestroyViewHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererDestroyViewHelper: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
-  
-  @js.native
-  sealed trait __ngRendererDetachViewHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererDetachViewHelper: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
-  
-  @js.native
-  sealed trait __ngRendererProjectNodesHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererProjectNodesHelper: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
-  
-  @js.native
-  sealed trait __ngRendererSetElementAttributeHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererSetElementAttributeHelper: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
-  
-  @js.native
-  sealed trait __ngRendererSplitNamespaceHelper
-    extends StObject
-       with HelperFunction
-  inline def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
-  
-  @js.native
   sealed trait any extends StObject
   inline def any: any = "any".asInstanceOf[any]
   
@@ -185,6 +123,10 @@ object angularCoreStrings {
   inline def component: component = "component".asInstanceOf[component]
   
   @js.native
+  sealed trait directive extends StObject
+  inline def directive: directive = "directive".asInstanceOf[directive]
+  
+  @js.native
   sealed trait document
     extends StObject
        with GlobalTargetName
@@ -195,16 +137,30 @@ object angularCoreStrings {
   inline def element: element = "element".asInstanceOf[element]
   
   @js.native
+  sealed trait environment
+    extends StObject
+       with InjectorScope
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait escapedText
     extends StObject
        with PropertyNameWithText
   inline def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
   
   @js.native
+  sealed trait invalid extends StObject
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @js.native
   sealed trait isInJSDocNamespace
     extends StObject
        with PropertyNameWithText
   inline def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
+  
+  @js.native
+  sealed trait ngmodule extends StObject
+  inline def ngmodule: ngmodule = "ngmodule".asInstanceOf[ngmodule]
   
   @js.native
   sealed trait noop extends StObject
@@ -217,11 +173,19 @@ object angularCoreStrings {
   inline def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
   
   @js.native
-  sealed trait platform extends StObject
+  sealed trait pipe extends StObject
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
+  
+  @js.native
+  sealed trait platform
+    extends StObject
+       with InjectorScope
   inline def platform: platform = "platform".asInstanceOf[platform]
   
   @js.native
-  sealed trait root extends StObject
+  sealed trait root
+    extends StObject
+       with InjectorScope
   inline def root: root = "root".asInstanceOf[root]
   
   @js.native

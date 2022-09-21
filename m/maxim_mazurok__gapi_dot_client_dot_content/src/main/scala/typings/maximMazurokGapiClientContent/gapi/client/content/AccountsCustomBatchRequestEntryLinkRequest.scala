@@ -9,13 +9,13 @@ trait AccountsCustomBatchRequestEntryLinkRequest extends StObject {
   /** Action to perform for this link. The `"request"` action is only available to select merchants. Acceptable values are: - "`approve`" - "`remove`" - "`request`" */
   var action: js.UndefOr[String] = js.undefined
   
-  /** Type of the link between the two accounts. Acceptable values are: - "`channelPartner`" - "`eCommercePlatform`" */
+  /** Type of the link between the two accounts. Acceptable values are: - "`channelPartner`" - "`eCommercePlatform`" - "`paymentServiceProvider`" */
   var linkType: js.UndefOr[String] = js.undefined
   
   /** The ID of the linked account. */
   var linkedAccountId: js.UndefOr[String] = js.undefined
   
-  /** List of provided services. */
+  /** Provided services. Acceptable values are: - "`shoppingAdsProductManagement`" - "`shoppingActionsProductManagement`" - "`shoppingActionsOrderManagement`" - "`paymentProcessing`" */
   var services: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccountsCustomBatchRequestEntryLinkRequest {
@@ -43,6 +43,6 @@ object AccountsCustomBatchRequestEntryLinkRequest {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

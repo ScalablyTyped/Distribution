@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownTreeOptions extends StObject {
+trait DropDownTreeOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[Boolean | DropDownTreeAnimation] = js.undefined
   
@@ -31,15 +33,15 @@ trait DropDownTreeOptions extends StObject {
   
   var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
   
   var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
+  var dataTextField: js.UndefOr[String | Any] = js.undefined
   
   var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String | js.Any] = js.undefined
+  var dataValueField: js.UndefOr[String | Any] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -47,7 +49,11 @@ trait DropDownTreeOptions extends StObject {
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
+  var filterLabel: js.UndefOr[String] = js.undefined
   
   var filtering: js.UndefOr[js.Function1[/* e */ DropDownTreeFilteringEvent, Unit]] = js.undefined
   
@@ -75,7 +81,11 @@ trait DropDownTreeOptions extends StObject {
   
   var popup: js.UndefOr[DropDownTreePopup] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ DropDownTreeSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var tagMode: js.UndefOr[String] = js.undefined
   
@@ -83,7 +93,7 @@ trait DropDownTreeOptions extends StObject {
   
   var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | js.Any] = js.undefined
+  var value: js.UndefOr[String | Any] = js.undefined
   
   var valuePrimitive: js.UndefOr[Boolean] = js.undefined
   
@@ -146,7 +156,7 @@ object DropDownTreeOptions {
     
     inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -154,7 +164,7 @@ object DropDownTreeOptions {
     
     inline def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
-    inline def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String | Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
@@ -162,7 +172,7 @@ object DropDownTreeOptions {
     
     inline def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
     
-    inline def setDataValueField(value: String | js.Any): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
+    inline def setDataValueField(value: String | Any): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
     
     inline def setDataValueFieldUndefined: Self = StObject.set(x, "dataValueField", js.undefined)
     
@@ -178,7 +188,15 @@ object DropDownTreeOptions {
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterLabel(value: String): Self = StObject.set(x, "filterLabel", value.asInstanceOf[js.Any])
+    
+    inline def setFilterLabelUndefined: Self = StObject.set(x, "filterLabel", js.undefined)
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -234,9 +252,17 @@ object DropDownTreeOptions {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ DropDownTreeSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTagMode(value: String): Self = StObject.set(x, "tagMode", value.asInstanceOf[js.Any])
     
@@ -250,7 +276,7 @@ object DropDownTreeOptions {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValuePrimitive(value: Boolean): Self = StObject.set(x, "valuePrimitive", value.asInstanceOf[js.Any])
     

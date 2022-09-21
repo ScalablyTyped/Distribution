@@ -9,17 +9,17 @@ object anon {
   @js.native
   trait Subscribe extends StObject {
     
-    def subscribe(): js.Any = js.native
-    def subscribe(next: js.Function1[/* value */ js.Any, Unit]): js.Any = js.native
-    def subscribe(next: js.Function1[/* value */ js.Any, Unit], error: js.Function1[/* error */ js.Any, Unit]): js.Any = js.native
+    def subscribe(): Any = js.native
+    def subscribe(next: js.Function1[/* value */ Any, Unit]): Any = js.native
+    def subscribe(next: js.Function1[/* value */ Any, Unit], error: js.Function1[/* error */ Any, Unit]): Any = js.native
     def subscribe(
-      next: js.Function1[/* value */ js.Any, Unit],
-      error: js.Function1[/* error */ js.Any, Unit],
+      next: js.Function1[/* value */ Any, Unit],
+      error: js.Function1[/* error */ Any, Unit],
       complete: js.Function0[Unit]
-    ): js.Any = js.native
-    def subscribe(next: js.Function1[/* value */ js.Any, Unit], error: Unit, complete: js.Function0[Unit]): js.Any = js.native
-    def subscribe(next: Unit, error: js.Function1[/* error */ js.Any, Unit]): js.Any = js.native
-    def subscribe(next: Unit, error: js.Function1[/* error */ js.Any, Unit], complete: js.Function0[Unit]): js.Any = js.native
-    def subscribe(next: Unit, error: Unit, complete: js.Function0[Unit]): js.Any = js.native
+    ): Any = js.native
+    def subscribe(next: js.Function1[/* value */ Any, Unit], error: Unit, complete: js.Function0[Unit]): Any = js.native
+    def subscribe(next: Unit, error: js.Function1[/* error */ Any, Unit]): Any = js.native
+    def subscribe(next: Unit, error: js.Function1[/* error */ Any, Unit], complete: js.Function0[Unit]): Any = js.native
+    def subscribe(next: Unit, error: Unit, complete: js.Function0[Unit]): Any = js.native
   }
 }

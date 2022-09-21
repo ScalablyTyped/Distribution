@@ -29,7 +29,7 @@ object DescribeGameServerInstancesOutput {
     
     inline def setGameServerInstancesUndefined: Self = StObject.set(x, "GameServerInstances", js.undefined)
     
-    inline def setGameServerInstancesVarargs(value: GameServerInstance*): Self = StObject.set(x, "GameServerInstances", js.Array(value :_*))
+    inline def setGameServerInstancesVarargs(value: GameServerInstance*): Self = StObject.set(x, "GameServerInstances", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,7 @@ trait PropsElement extends StObject {
   var addEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
       Unit
     ]
   ] = js.undefined
@@ -83,7 +83,79 @@ trait PropsElement extends StObject {
   
   var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+  var appendChild: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
+  
+  var ariaAtomic: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaAutoComplete: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaBusy: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaChecked: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColCount: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColSpan: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaCurrent: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaDisabled: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaExpanded: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaHasPopup: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaHidden: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaKeyShortcuts: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLabel: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLevel: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLive: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaModal: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaMultiLine: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaMultiSelectable: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaOrientation: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPlaceholder: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPosInSet: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPressed: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaReadOnly: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRequired: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRoleDescription: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowCount: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSelected: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSetSize: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSort: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueMax: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueMin: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueNow: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueText: js.UndefOr[String | Null] = js.undefined
   
   var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
   
@@ -173,15 +245,13 @@ trait PropsElement extends StObject {
   
   var innerHTML: js.UndefOr[String] = js.undefined
   
-  var insertAdjacentElement: js.UndefOr[
-    js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null]
-  ] = js.undefined
+  var insertAdjacentElement: js.UndefOr[js.Function2[/* where */ InsertPosition, /* element */ Element, Element | Null]] = js.undefined
   
-  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.undefined
+  var insertAdjacentHTML: js.UndefOr[js.Function2[/* position */ InsertPosition, /* text */ String, Unit]] = js.undefined
   
-  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.undefined
+  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* data */ String, Unit]] = js.undefined
   
-  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+  var insertBefore: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
   
   var isConnected: js.UndefOr[Boolean] = js.undefined
   
@@ -205,8 +275,6 @@ trait PropsElement extends StObject {
   
   var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
   
-  var msGetRegionContent: js.UndefOr[js.Function0[js.Any]] = js.undefined
-  
   var namespaceURI: js.UndefOr[String | Null] = js.undefined
   
   var nextElementSibling: js.UndefOr[Element | Null] = js.undefined
@@ -221,9 +289,9 @@ trait PropsElement extends StObject {
   
   var normalize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
   var outerHTML: js.UndefOr[String] = js.undefined
   
@@ -231,7 +299,9 @@ trait PropsElement extends StObject {
   
   var parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  var parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
+  var parentNode: js.UndefOr[ParentNode | Null] = js.undefined
+  
+  var part: js.UndefOr[DOMTokenList] = js.undefined
   
   var prefix: js.UndefOr[String | Null] = js.undefined
   
@@ -255,17 +325,19 @@ trait PropsElement extends StObject {
   
   var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.undefined
   
-  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.undefined
+  var removeChild: js.UndefOr[js.Function1[/* child */ Node, Node]] = js.undefined
   
   var removeEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
       Unit
     ]
   ] = js.undefined
   
-  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.undefined
+  var replaceChild: js.UndefOr[js.Function2[/* node */ Node, /* child */ Node, Node]] = js.undefined
+  
+  var replaceChildren: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
   var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
@@ -327,7 +399,7 @@ object PropsElement {
     inline def setATTRIBUTE_NODEUndefined: Self = StObject.set(x, "ATTRIBUTE_NODE", js.undefined)
     
     inline def setAddEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, Any]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     inline def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
@@ -342,11 +414,227 @@ object PropsElement {
     
     inline def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAppendChild(value: /* newChild */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: /* node */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
     inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    
+    inline def setAriaAtomic(value: String): Self = StObject.set(x, "ariaAtomic", value.asInstanceOf[js.Any])
+    
+    inline def setAriaAtomicNull: Self = StObject.set(x, "ariaAtomic", null)
+    
+    inline def setAriaAtomicUndefined: Self = StObject.set(x, "ariaAtomic", js.undefined)
+    
+    inline def setAriaAutoComplete(value: String): Self = StObject.set(x, "ariaAutoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAriaAutoCompleteNull: Self = StObject.set(x, "ariaAutoComplete", null)
+    
+    inline def setAriaAutoCompleteUndefined: Self = StObject.set(x, "ariaAutoComplete", js.undefined)
+    
+    inline def setAriaBusy(value: String): Self = StObject.set(x, "ariaBusy", value.asInstanceOf[js.Any])
+    
+    inline def setAriaBusyNull: Self = StObject.set(x, "ariaBusy", null)
+    
+    inline def setAriaBusyUndefined: Self = StObject.set(x, "ariaBusy", js.undefined)
+    
+    inline def setAriaChecked(value: String): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
+    
+    inline def setAriaCheckedNull: Self = StObject.set(x, "ariaChecked", null)
+    
+    inline def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
+    
+    inline def setAriaColCount(value: String): Self = StObject.set(x, "ariaColCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColCountNull: Self = StObject.set(x, "ariaColCount", null)
+    
+    inline def setAriaColCountUndefined: Self = StObject.set(x, "ariaColCount", js.undefined)
+    
+    inline def setAriaColIndex(value: String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
+    
+    inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
+    
+    inline def setAriaColSpan(value: String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColSpanNull: Self = StObject.set(x, "ariaColSpan", null)
+    
+    inline def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
+    
+    inline def setAriaCurrent(value: String): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
+    
+    inline def setAriaCurrentNull: Self = StObject.set(x, "ariaCurrent", null)
+    
+    inline def setAriaCurrentUndefined: Self = StObject.set(x, "ariaCurrent", js.undefined)
+    
+    inline def setAriaDisabled(value: String): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setAriaDisabledNull: Self = StObject.set(x, "ariaDisabled", null)
+    
+    inline def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
+    
+    inline def setAriaExpanded(value: String): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setAriaExpandedNull: Self = StObject.set(x, "ariaExpanded", null)
+    
+    inline def setAriaExpandedUndefined: Self = StObject.set(x, "ariaExpanded", js.undefined)
+    
+    inline def setAriaHasPopup(value: String): Self = StObject.set(x, "ariaHasPopup", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHasPopupNull: Self = StObject.set(x, "ariaHasPopup", null)
+    
+    inline def setAriaHasPopupUndefined: Self = StObject.set(x, "ariaHasPopup", js.undefined)
+    
+    inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHiddenNull: Self = StObject.set(x, "ariaHidden", null)
+    
+    inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+    
+    inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
+    
+    inline def setAriaKeyShortcutsNull: Self = StObject.set(x, "ariaKeyShortcuts", null)
+    
+    inline def setAriaKeyShortcutsUndefined: Self = StObject.set(x, "ariaKeyShortcuts", js.undefined)
+    
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLabelNull: Self = StObject.set(x, "ariaLabel", null)
+    
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    
+    inline def setAriaLevel(value: String): Self = StObject.set(x, "ariaLevel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLevelNull: Self = StObject.set(x, "ariaLevel", null)
+    
+    inline def setAriaLevelUndefined: Self = StObject.set(x, "ariaLevel", js.undefined)
+    
+    inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLiveNull: Self = StObject.set(x, "ariaLive", null)
+    
+    inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
+    
+    inline def setAriaModal(value: String): Self = StObject.set(x, "ariaModal", value.asInstanceOf[js.Any])
+    
+    inline def setAriaModalNull: Self = StObject.set(x, "ariaModal", null)
+    
+    inline def setAriaModalUndefined: Self = StObject.set(x, "ariaModal", js.undefined)
+    
+    inline def setAriaMultiLine(value: String): Self = StObject.set(x, "ariaMultiLine", value.asInstanceOf[js.Any])
+    
+    inline def setAriaMultiLineNull: Self = StObject.set(x, "ariaMultiLine", null)
+    
+    inline def setAriaMultiLineUndefined: Self = StObject.set(x, "ariaMultiLine", js.undefined)
+    
+    inline def setAriaMultiSelectable(value: String): Self = StObject.set(x, "ariaMultiSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setAriaMultiSelectableNull: Self = StObject.set(x, "ariaMultiSelectable", null)
+    
+    inline def setAriaMultiSelectableUndefined: Self = StObject.set(x, "ariaMultiSelectable", js.undefined)
+    
+    inline def setAriaOrientation(value: String): Self = StObject.set(x, "ariaOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setAriaOrientationNull: Self = StObject.set(x, "ariaOrientation", null)
+    
+    inline def setAriaOrientationUndefined: Self = StObject.set(x, "ariaOrientation", js.undefined)
+    
+    inline def setAriaPlaceholder(value: String): Self = StObject.set(x, "ariaPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPlaceholderNull: Self = StObject.set(x, "ariaPlaceholder", null)
+    
+    inline def setAriaPlaceholderUndefined: Self = StObject.set(x, "ariaPlaceholder", js.undefined)
+    
+    inline def setAriaPosInSet(value: String): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPosInSetNull: Self = StObject.set(x, "ariaPosInSet", null)
+    
+    inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+    
+    inline def setAriaPressed(value: String): Self = StObject.set(x, "ariaPressed", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPressedNull: Self = StObject.set(x, "ariaPressed", null)
+    
+    inline def setAriaPressedUndefined: Self = StObject.set(x, "ariaPressed", js.undefined)
+    
+    inline def setAriaReadOnly(value: String): Self = StObject.set(x, "ariaReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def setAriaReadOnlyNull: Self = StObject.set(x, "ariaReadOnly", null)
+    
+    inline def setAriaReadOnlyUndefined: Self = StObject.set(x, "ariaReadOnly", js.undefined)
+    
+    inline def setAriaRequired(value: String): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRequiredNull: Self = StObject.set(x, "ariaRequired", null)
+    
+    inline def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
+    
+    inline def setAriaRoleDescription(value: String): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRoleDescriptionNull: Self = StObject.set(x, "ariaRoleDescription", null)
+    
+    inline def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
+    
+    inline def setAriaRowCount(value: String): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowCountNull: Self = StObject.set(x, "ariaRowCount", null)
+    
+    inline def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
+    
+    inline def setAriaRowIndex(value: String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
+    
+    inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
+    
+    inline def setAriaRowSpan(value: String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowSpanNull: Self = StObject.set(x, "ariaRowSpan", null)
+    
+    inline def setAriaRowSpanUndefined: Self = StObject.set(x, "ariaRowSpan", js.undefined)
+    
+    inline def setAriaSelected(value: String): Self = StObject.set(x, "ariaSelected", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSelectedNull: Self = StObject.set(x, "ariaSelected", null)
+    
+    inline def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
+    
+    inline def setAriaSetSize(value: String): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSetSizeNull: Self = StObject.set(x, "ariaSetSize", null)
+    
+    inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+    
+    inline def setAriaSort(value: String): Self = StObject.set(x, "ariaSort", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSortNull: Self = StObject.set(x, "ariaSort", null)
+    
+    inline def setAriaSortUndefined: Self = StObject.set(x, "ariaSort", js.undefined)
+    
+    inline def setAriaValueMax(value: String): Self = StObject.set(x, "ariaValueMax", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueMaxNull: Self = StObject.set(x, "ariaValueMax", null)
+    
+    inline def setAriaValueMaxUndefined: Self = StObject.set(x, "ariaValueMax", js.undefined)
+    
+    inline def setAriaValueMin(value: String): Self = StObject.set(x, "ariaValueMin", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueMinNull: Self = StObject.set(x, "ariaValueMin", null)
+    
+    inline def setAriaValueMinUndefined: Self = StObject.set(x, "ariaValueMin", js.undefined)
+    
+    inline def setAriaValueNow(value: String): Self = StObject.set(x, "ariaValueNow", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueNowNull: Self = StObject.set(x, "ariaValueNow", null)
+    
+    inline def setAriaValueNowUndefined: Self = StObject.set(x, "ariaValueNow", js.undefined)
+    
+    inline def setAriaValueText(value: String): Self = StObject.set(x, "ariaValueText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueTextNull: Self = StObject.set(x, "ariaValueText", null)
+    
+    inline def setAriaValueTextUndefined: Self = StObject.set(x, "ariaValueText", js.undefined)
     
     inline def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     
@@ -434,7 +722,7 @@ object PropsElement {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
     
@@ -578,19 +866,19 @@ object PropsElement {
     
     inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
     
-    inline def setInsertAdjacentElement(value: (/* position */ InsertPosition, /* insertedElement */ Element) => Element | Null): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentElement(value: (/* where */ InsertPosition, /* element */ Element) => Element | Null): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentElementUndefined: Self = StObject.set(x, "insertAdjacentElement", js.undefined)
     
-    inline def setInsertAdjacentHTML(value: (/* where */ InsertPosition, /* html */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentHTML(value: (/* position */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentHTMLUndefined: Self = StObject.set(x, "insertAdjacentHTML", js.undefined)
     
-    inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* data */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentTextUndefined: Self = StObject.set(x, "insertAdjacentText", js.undefined)
     
-    inline def setInsertBefore(value: /* newChild */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* node */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
@@ -642,10 +930,6 @@ object PropsElement {
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    inline def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
-    
-    inline def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
-    
     inline def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
     
     inline def setNOTATION_NODEUndefined: Self = StObject.set(x, "NOTATION_NODE", js.undefined)
@@ -686,13 +970,13 @@ object PropsElement {
     
     inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    inline def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+    inline def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     inline def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
     
     inline def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
-    inline def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+    inline def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     inline def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
     
@@ -716,11 +1000,15 @@ object PropsElement {
     
     inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
-    inline def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
     
     inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    
+    inline def setPart(value: DOMTokenList): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
@@ -770,21 +1058,25 @@ object PropsElement {
     
     inline def setRemoveAttributeUndefined: Self = StObject.set(x, "removeAttribute", js.undefined)
     
-    inline def setRemoveChild(value: /* oldChild */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: /* child */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     inline def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
     
     inline def setRemoveEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, Any]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     inline def setRemoveEventListenerUndefined: Self = StObject.set(x, "removeEventListener", js.undefined)
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setReplaceChild(value: (/* newChild */ Node, /* oldChild */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (/* node */ Node, /* child */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
     inline def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
+    
+    inline def setReplaceChildren(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceChildren", js.Any.fromFunction1(value))
+    
+    inline def setReplaceChildrenUndefined: Self = StObject.set(x, "replaceChildren", js.undefined)
     
     inline def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     

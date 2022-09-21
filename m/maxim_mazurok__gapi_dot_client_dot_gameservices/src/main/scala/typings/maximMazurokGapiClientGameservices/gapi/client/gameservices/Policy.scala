@@ -10,8 +10,10 @@ trait Policy extends StObject {
   var auditConfigs: js.UndefOr[js.Array[AuditConfig]] = js.undefined
   
   /**
-    * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
-    * least one member.
+    * Associates a list of `members`, or principals, with a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings`
+    * must contain at least one principal. The `bindings` in a `Policy` can refer to up to 1,500 principals; up to 250 of these principals can be Google groups. Each occurrence of a
+    * principal counts towards these limits. For example, if the `bindings` grant 50 different roles to `user:alice@example.com`, and not to any other principal, then you can add another
+    * 1,450 principals to the `bindings` in the `Policy`.
     */
   var bindings: js.UndefOr[js.Array[Binding]] = js.undefined
   
@@ -23,8 +25,6 @@ trait Policy extends StObject {
     * policy, and all of the conditions in the version `3` policy are lost.
     */
   var etag: js.UndefOr[String] = js.undefined
-  
-  var iamOwned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If more than one rule is specified, the rules are applied in the following manner: - All matching LOG rules are always applied. - If any DENY/DENY_WITH_LOG rule matches, permission
@@ -56,27 +56,23 @@ object Policy {
     
     inline def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
     
-    inline def setAuditConfigsVarargs(value: AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
+    inline def setAuditConfigsVarargs(value: AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value*))
     
     inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    inline def setIamOwned(value: Boolean): Self = StObject.set(x, "iamOwned", value.asInstanceOf[js.Any])
-    
-    inline def setIamOwnedUndefined: Self = StObject.set(x, "iamOwned", js.undefined)
-    
     inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

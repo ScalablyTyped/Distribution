@@ -1,6 +1,5 @@
 package typings.browserSync.mod
 
-import typings.node.NodeJS.ErrnoException
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
@@ -10,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProxyOptions extends StObject {
   
   var error: js.UndefOr[
-    js.Function3[/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
+    js.Function3[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* req */ IncomingMessage, 
+      /* res */ ServerResponse[IncomingMessage], 
+      Unit
+    ]
   ] = js.undefined
   
   var middleware: js.UndefOr[MiddlewareHandler] = js.undefined
@@ -36,12 +40,14 @@ object ProxyOptions {
   
   extension [Self <: ProxyOptions](x: Self) {
     
-    inline def setError(value: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, /* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => Unit
+    ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setMiddleware(
-      value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
+      value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* next */ js.Function0[Unit]) => Any
     ): Self = StObject.set(x, "middleware", js.Any.fromFunction3(value))
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
@@ -54,17 +60,17 @@ object ProxyOptions {
     
     inline def setProxyReqUndefined: Self = StObject.set(x, "proxyReq", js.undefined)
     
-    inline def setProxyReqVarargs(value: (js.Function1[/* res */ IncomingMessage, Unit])*): Self = StObject.set(x, "proxyReq", js.Array(value :_*))
+    inline def setProxyReqVarargs(value: (js.Function1[/* res */ IncomingMessage, Unit])*): Self = StObject.set(x, "proxyReq", js.Array(value*))
     
     inline def setProxyRes(value: ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware]): Self = StObject.set(x, "proxyRes", value.asInstanceOf[js.Any])
     
     inline def setProxyResFunction3(
-      value: (/* proxyRes */ ServerResponse | IncomingMessage, /* res */ ServerResponse, /* req */ IncomingMessage) => Unit
+      value: (/* proxyRes */ ServerResponse[IncomingMessage] | IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* req */ IncomingMessage) => Unit
     ): Self = StObject.set(x, "proxyRes", js.Any.fromFunction3(value))
     
     inline def setProxyResUndefined: Self = StObject.set(x, "proxyRes", js.undefined)
     
-    inline def setProxyResVarargs(value: ProxyResponseMiddleware*): Self = StObject.set(x, "proxyRes", js.Array(value :_*))
+    inline def setProxyResVarargs(value: ProxyResponseMiddleware*): Self = StObject.set(x, "proxyRes", js.Array(value*))
     
     inline def setReqHeaders(value: /* config */ js.Object => Hash[js.Object]): Self = StObject.set(x, "reqHeaders", js.Any.fromFunction1(value))
     

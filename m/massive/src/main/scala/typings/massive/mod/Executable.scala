@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("massive", "Executable")
 @js.native
-class Executable protected () extends StObject {
+open class Executable protected () extends StObject {
   def this(spec: ExecutableSpecification) = this()
   
   /** Invoke the function or script. */
-  def invoke(): js.Promise[AnyObject[js.Any] | js.Array[js.Any]] = js.native
-  def invoke(options: ResultProcessingOptions): js.Promise[AnyObject[js.Any] | js.Array[js.Any]] = js.native
+  def invoke(): js.Promise[AnyObject[Any] | js.Array[Any]] = js.native
+  def invoke(options: ResultProcessingOptions): js.Promise[AnyObject[Any] | js.Array[Any]] = js.native
 }

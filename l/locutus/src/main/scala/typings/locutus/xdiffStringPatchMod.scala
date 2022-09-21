@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object xdiffStringPatchMod {
   
-  inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   @JSImport("locutus/php/xdiff/xdiff_string_patch", JSImport.Namespace)
   @js.native

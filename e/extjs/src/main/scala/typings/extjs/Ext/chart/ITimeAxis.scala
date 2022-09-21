@@ -11,16 +11,16 @@ trait ITimeAxis
      with INumeric {
   
   /** [Config Option] (String/Boolean) */
-  var dateFormat: js.UndefOr[js.Any] = js.undefined
+  var dateFormat: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Date) */
-  var fromDate: js.UndefOr[js.Any] = js.undefined
+  var fromDate: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Array) */
   var step: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Date) */
-  var toDate: js.UndefOr[js.Any] = js.undefined
+  var toDate: js.UndefOr[Any] = js.undefined
 }
 object ITimeAxis {
   
@@ -31,11 +31,11 @@ object ITimeAxis {
   
   extension [Self <: ITimeAxis](x: Self) {
     
-    inline def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    inline def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     inline def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
     
@@ -43,7 +43,7 @@ object ITimeAxis {
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    inline def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
   }

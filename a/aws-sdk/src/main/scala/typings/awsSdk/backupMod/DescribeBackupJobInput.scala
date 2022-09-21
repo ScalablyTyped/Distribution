@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeBackupJobInput extends StObject {
   
   /**
-    * Uniquely identifies a request to AWS Backup to back up a resource.
+    * Uniquely identifies a request to Backup to back up a resource.
     */
   var BackupJobId: String
 }

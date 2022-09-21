@@ -1,9 +1,5 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +9,17 @@ trait ParamsResourceUsersThreadsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Include threads from SPAM and TRASH in the results.
+    * Include threads from `SPAM` and `TRASH` in the results.
     */
   var includeSpamTrash: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only return threads with labels that match all of the specified label
-    * IDs.
+    * Only return threads with labels that match all of the specified label IDs.
     */
   var labelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Maximum number of threads to return.
+    * Maximum number of threads to return. This field defaults to 100. The maximum allowed value for this field is 500.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -39,16 +29,12 @@ trait ParamsResourceUsersThreadsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Only return threads matching the specified query. Supports the same query
-    * format as the Gmail search box. For example, "from:someuser@example.com
-    * rfc822msgid: is:unread". Parameter cannot be used when accessing the api
-    * using the gmail.metadata scope.
+    * Only return threads matching the specified query. Supports the same query format as the Gmail search box. For example, `"from:someuser@example.com rfc822msgid: is:unread"`. Parameter cannot be used when accessing the api using the gmail.metadata scope.
     */
   var q: js.UndefOr[String] = js.undefined
   
   /**
-    * The user's email address. The special value me can be used to indicate
-    * the authenticated user.
+    * The user's email address. The special value `me` can be used to indicate the authenticated user.
     */
   var userId: js.UndefOr[String] = js.undefined
 }
@@ -61,10 +47,6 @@ object ParamsResourceUsersThreadsList {
   
   extension [Self <: ParamsResourceUsersThreadsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setIncludeSpamTrash(value: Boolean): Self = StObject.set(x, "includeSpamTrash", value.asInstanceOf[js.Any])
     
     inline def setIncludeSpamTrashUndefined: Self = StObject.set(x, "includeSpamTrash", js.undefined)
@@ -73,7 +55,7 @@ object ParamsResourceUsersThreadsList {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

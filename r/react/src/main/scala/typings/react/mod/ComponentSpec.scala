@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentSpec[P, S]
   extends StObject
      with Mixin[P, S]
-     with /* propertyName */ StringDictionary[js.Any] {
+     with /* propertyName */ StringDictionary[Any] {
   
   def render(): ReactNode
 }

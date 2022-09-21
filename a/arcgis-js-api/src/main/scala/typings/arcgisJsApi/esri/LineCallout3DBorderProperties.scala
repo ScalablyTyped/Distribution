@@ -13,6 +13,8 @@ trait LineCallout3DBorderProperties
   /**
     * The color of the callout line border.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -34,6 +36,6 @@ object LineCallout3DBorderProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

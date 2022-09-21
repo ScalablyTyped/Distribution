@@ -10,10 +10,10 @@ Easy access to the call stack, written in pure JavaScript
 | ------------------ | :-------------: |
 | Full name          | traceback |
 | Keywords           | call, stack, trace, stacktrace, traceback, debug, line |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 22912 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1044.3333333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](http://github.com/iriscouch/traceback)

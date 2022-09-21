@@ -1,13 +1,14 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.Alt
-import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.Filter
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
+import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRegionRequestId
 import typings.maximMazurokGapiClientCompute.anon.PageTokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.RegionRouter
 import typings.maximMazurokGapiClientCompute.anon.ResourceRouter
-import typings.maximMazurokGapiClientCompute.anon.RouterUserIp
+import typings.maximMazurokGapiClientCompute.anon.RouterUploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ trait RoutersResource extends StObject {
   
   /** Retrieves an aggregated list of routers. */
   def aggregatedList(): Request[RouterAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[RouterAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[RouterAggregatedList] = js.native
   
   /** Deletes the specified Router resource. */
   def delete(): Request[Operation] = js.native
@@ -36,8 +37,8 @@ trait RoutersResource extends StObject {
   def getRouterStatus(request: RegionRouter): Request[RouterStatusResponse] = js.native
   
   /** Creates a Router resource in the specified project and region using the data included in the request. */
-  def insert(request: FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: Router): Request[Operation] = js.native
+  def insert(request: OauthtokenPrettyPrintProjectQuotaUserRegionRequestId): Request[Operation] = js.native
+  def insert(request: Oauthtoken, body: Router): Request[Operation] = js.native
   
   /** Retrieves a list of Router resources available to the specified project. */
   def list(): Request[RouterList] = js.native
@@ -49,7 +50,7 @@ trait RoutersResource extends StObject {
   
   def preview(request: RegionRouter, body: Router): Request[RoutersPreviewResponse] = js.native
   /** Preview fields auto-generated during router create and update operations. Calling this method does NOT create or update the router. */
-  def preview(request: RouterUserIp): Request[RoutersPreviewResponse] = js.native
+  def preview(request: RouterUploadType): Request[RoutersPreviewResponse] = js.native
   
   /**
     * Updates the specified Router resource with the data included in the request. This method conforms to PUT semantics, which requests that the state of the target resource be created

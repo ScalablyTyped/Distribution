@@ -26,6 +26,6 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationResult {
     
     inline def setDeltaPresenceEstimationHistogramUndefined: Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.undefined)
     
-    inline def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.Array(value :_*))
+    inline def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.Array(value*))
   }
 }

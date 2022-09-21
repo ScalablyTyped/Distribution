@@ -9,7 +9,7 @@ object diffDeltaMod {
   
   @JSImport("nodegit/diff-delta", "DiffDelta")
   @js.native
-  class DiffDelta () extends StObject {
+  open class DiffDelta () extends StObject {
     
     def flags(): Double = js.native
     

@@ -1,6 +1,5 @@
 package typings.hafasClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ trait RadarOptions extends StObject {
     * optionally an object of booleans
     * @default null
     */
-  var products: js.UndefOr[Boolean | js.Object] = js.undefined
+  var products: js.UndefOr[Products] = js.undefined
   
   /**
     * maximum number of vehicles
@@ -53,7 +52,7 @@ trait RadarOptions extends StObject {
     * when
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.undefined
+  var when: js.UndefOr[js.Date] = js.undefined
 }
 object RadarOptions {
   
@@ -80,7 +79,7 @@ object RadarOptions {
     
     inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    inline def setProducts(value: Boolean | js.Object): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
@@ -92,7 +91,7 @@ object RadarOptions {
     
     inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
-    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }

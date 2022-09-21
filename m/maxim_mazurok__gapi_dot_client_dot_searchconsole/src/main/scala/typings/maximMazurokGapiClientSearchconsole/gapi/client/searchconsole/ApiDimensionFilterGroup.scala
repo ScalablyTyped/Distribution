@@ -23,7 +23,7 @@ object ApiDimensionFilterGroup {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait LifecycleEvent extends StObject {
   /**
     * A timestamp that indicates when the deployment lifecycle event ended.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deployment lifecycle event name, such as ApplicationStop, BeforeInstall, AfterInstall, ApplicationStart, or ValidateService.
@@ -24,7 +24,7 @@ trait LifecycleEvent extends StObject {
   /**
     * A timestamp that indicates when the deployment lifecycle event started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deployment lifecycle event status:   Pending: The deployment lifecycle event is pending.   InProgress: The deployment lifecycle event is in progress.   Succeeded: The deployment lifecycle event ran successfully.   Failed: The deployment lifecycle event has failed.   Skipped: The deployment lifecycle event has been skipped.   Unknown: The deployment lifecycle event is unknown.  
@@ -44,7 +44,7 @@ object LifecycleEvent {
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -52,7 +52,7 @@ object LifecycleEvent {
     
     inline def setLifecycleEventNameUndefined: Self = StObject.set(x, "lifecycleEventName", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

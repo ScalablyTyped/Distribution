@@ -43,7 +43,7 @@ trait SearchConstructorOptions extends StObject {
   /**
     * A string that constrains search results to within the provided countries.
     */
-  var limitToCountries: js.UndefOr[Boolean] = js.undefined
+  var limitToCountries: js.UndefOr[String] = js.undefined
   
   /**
     * A filter used to include or exclude point of interest categories.
@@ -88,7 +88,7 @@ object SearchConstructorOptions {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLimitToCountries(value: Boolean): Self = StObject.set(x, "limitToCountries", value.asInstanceOf[js.Any])
+    inline def setLimitToCountries(value: String): Self = StObject.set(x, "limitToCountries", value.asInstanceOf[js.Any])
     
     inline def setLimitToCountriesUndefined: Self = StObject.set(x, "limitToCountries", js.undefined)
     

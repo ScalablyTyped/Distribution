@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.NavItem")
 @js.native
-class NavItem ()
+open class NavItem ()
   extends typings.reactBootstrap.mod.NavItem

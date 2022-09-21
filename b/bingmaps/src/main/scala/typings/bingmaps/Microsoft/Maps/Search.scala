@@ -128,7 +128,7 @@ object Search {
       * geocode request. The callback function must accept two parameters: result, which is 
       * a GeocodeResult type, and a userData object.
       */
-    def callback(geocodeResult: IGeocodeResult, userData: js.Any): Unit
+    def callback(geocodeResult: IGeocodeResult, userData: Any): Unit
     
     /** The maximum number of results to return. Required. The maximum number than can be returned is 20. */
     var count: js.UndefOr[Double] = js.undefined
@@ -149,14 +149,14 @@ object Search {
     var timeout: js.UndefOr[Double] = js.undefined
     
     /** An object containing any data that needs to be passed to the callback when the request is completed. */
-    var userData: js.UndefOr[js.Any] = js.undefined
+    var userData: js.UndefOr[Any] = js.undefined
     
     /** A string containing the address or place to be matched to a location on the map.  */
     var where: String
   }
   object IGeocodeRequestOptions {
     
-    inline def apply(callback: (IGeocodeResult, js.Any) => Unit, where: String): IGeocodeRequestOptions = {
+    inline def apply(callback: (IGeocodeResult, Any) => Unit, where: String): IGeocodeRequestOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), where = where.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeocodeRequestOptions]
     }
@@ -167,7 +167,7 @@ object Search {
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setCallback(value: (IGeocodeResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (IGeocodeResult, Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -189,7 +189,7 @@ object Search {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
       inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
       
@@ -213,7 +213,7 @@ object Search {
       
       inline def setResults(value: js.Array[IPlaceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: IPlaceResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: IPlaceResult*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
@@ -271,7 +271,7 @@ object Search {
       
       inline def setLocations(value: js.Array[IGeocodeLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: IGeocodeLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: IGeocodeLocation*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setMatchCode(value: String | MatchCode): Self = StObject.set(x, "matchCode", value.asInstanceOf[js.Any])
       
@@ -287,7 +287,7 @@ object Search {
       * A reference to a function to call when a successful result is returned from the geocode request. The callback function
       * will receive a PlaceResult object as an argument.
       */
-    def callback(placeResult: IPlaceResult, userData: js.Any): Unit
+    def callback(placeResult: IPlaceResult, userData: Any): Unit
     
     /**
       * A reference to a function to call when the request is returned with an error. The error callback function will receive
@@ -327,18 +327,18 @@ object Search {
     var timeout: js.UndefOr[Double] = js.undefined
     
     /** An object containing any data that needs to be passed to the callback when the request is completed. */
-    var userData: js.UndefOr[js.Any] = js.undefined
+    var userData: js.UndefOr[Any] = js.undefined
   }
   object ReverseGeocodeRequestOptions {
     
-    inline def apply(callback: (IPlaceResult, js.Any) => Unit, location: Location): ReverseGeocodeRequestOptions = {
+    inline def apply(callback: (IPlaceResult, Any) => Unit, location: Location): ReverseGeocodeRequestOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReverseGeocodeRequestOptions]
     }
     
     extension [Self <: ReverseGeocodeRequestOptions](x: Self) {
       
-      inline def setCallback(value: (IPlaceResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (IPlaceResult, Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setErrorCallback(value: ReverseGeocodeRequestOptions => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
       
@@ -352,7 +352,7 @@ object Search {
       
       inline def setIncludeEntityTypesUndefined: Self = StObject.set(x, "includeEntityTypes", js.undefined)
       
-      inline def setIncludeEntityTypesVarargs(value: String*): Self = StObject.set(x, "includeEntityTypes", js.Array(value :_*))
+      inline def setIncludeEntityTypesVarargs(value: String*): Self = StObject.set(x, "includeEntityTypes", js.Array(value*))
       
       inline def setIncludeNeighborhood(value: Boolean): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
       
@@ -364,7 +364,7 @@ object Search {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
       inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     }

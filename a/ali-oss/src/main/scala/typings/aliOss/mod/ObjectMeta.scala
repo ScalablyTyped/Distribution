@@ -6,24 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectMeta extends StObject {
   
-  // object last modified GMT date, e.g.: 2015-02-19T08:39:44.000Z
+  /** object etag contains ", e.g.: "5B3C1A2E053D763E1B002CC607C5A0FE" */
   var etag: String
   
-  // object name on oss
+  /** object last modified GMT date, e.g.: 2015-02-19T08:39:44.000Z */
   var lastModified: String
   
+  /** object name on oss */
   var name: String
   
-  var owner: OwnerType
+  var owner: js.UndefOr[OwnerType] = js.undefined
   
-  // object type, e.g.: Normal
+  /** object size, e.g.: 344606 */
   var size: Double
   
-  // object size, e.g.: 344606
   var storageClass: StorageType
   
-  // object etag contains ", e.g.: "5B3C1A2E053D763E1B002CC607C5A0FE"
+  /** object type, e.g.: Normal */
   var `type`: String
+  
+  /** object url */
+  var url: String
 }
 object ObjectMeta {
   
@@ -31,12 +34,12 @@ object ObjectMeta {
     etag: String,
     lastModified: String,
     name: String,
-    owner: OwnerType,
     size: Double,
     storageClass: StorageType,
-    `type`: String
+    `type`: String,
+    url: String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMeta]
   }
@@ -51,10 +54,14 @@ object ObjectMeta {
     
     inline def setOwner(value: OwnerType): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setStorageClass(value: StorageType): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogConfigCounterOptions extends StObject {
   
-  /** Custom fields. */
+  /** This is deprecated and has no effect. Do not use. */
   var customFields: js.UndefOr[js.Array[LogConfigCounterOptionsCustomField]] = js.undefined
   
-  /** The field value to attribute. */
+  /** This is deprecated and has no effect. Do not use. */
   var field: js.UndefOr[String] = js.undefined
   
-  /** The metric to update. */
+  /** This is deprecated and has no effect. Do not use. */
   var metric: js.UndefOr[String] = js.undefined
 }
 object LogConfigCounterOptions {
@@ -28,7 +28,7 @@ object LogConfigCounterOptions {
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    inline def setCustomFieldsVarargs(value: LogConfigCounterOptionsCustomField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: LogConfigCounterOptionsCustomField*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

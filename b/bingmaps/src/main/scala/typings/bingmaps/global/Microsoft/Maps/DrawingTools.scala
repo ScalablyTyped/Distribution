@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.DrawingTools")
 @js.native
-class DrawingTools protected ()
+open class DrawingTools protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.DrawingTools {
   /**

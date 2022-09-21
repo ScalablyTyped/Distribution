@@ -12,7 +12,7 @@ object eventqueueMod {
   /**
     * @class Generic event queue: stores events and retrieves them based on their time
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with EventQueue[T] {
     

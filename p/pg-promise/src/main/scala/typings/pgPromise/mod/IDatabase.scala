@@ -26,7 +26,7 @@ trait IDatabase[Ext, C /* <: IClient */]
   val $config: ILibConfig[Ext, C] = js.native
   
   @JSName("$dc")
-  val $dc: js.Any = js.native
+  val $dc: Any = js.native
   
   @JSName("$pool")
   val $pool: IPool = js.native

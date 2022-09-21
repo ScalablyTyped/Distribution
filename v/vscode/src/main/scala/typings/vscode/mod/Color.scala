@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Color")
 @js.native
-class Color protected () extends StObject {
+open class Color protected () extends StObject {
   /**
     * Creates a new color instance.
     *

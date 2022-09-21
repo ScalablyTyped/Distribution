@@ -10,10 +10,10 @@ object settingsSystemDaydreamMod {
   
   @JSImport("material-ui/svg-icons/device/settings-system-daydream", JSImport.Default)
   @js.native
-  class default () extends DeviceSettingsSystemDaydream
+  open class default () extends DeviceSettingsSystemDaydream
   
   @JSImport("material-ui/svg-icons/device/settings-system-daydream", "DeviceSettingsSystemDaydream")
   @js.native
-  class DeviceSettingsSystemDaydream ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSettingsSystemDaydream ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

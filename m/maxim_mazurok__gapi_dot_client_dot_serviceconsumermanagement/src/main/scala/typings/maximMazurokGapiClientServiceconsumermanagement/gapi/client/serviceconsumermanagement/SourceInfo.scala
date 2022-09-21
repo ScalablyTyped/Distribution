@@ -12,7 +12,7 @@ trait SourceInfo extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[Any]
     ]
   ] = js.undefined
 }
@@ -29,7 +29,7 @@ object SourceInfo {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
@@ -38,7 +38,7 @@ object SourceInfo {
     inline def setSourceFilesVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.SourceInfo & TopLevel[Any])*
+    ): Self = StObject.set(x, "sourceFiles", js.Array(value*))
   }
 }

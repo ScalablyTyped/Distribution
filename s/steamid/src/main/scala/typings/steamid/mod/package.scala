@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AccountIDMask: /* 0xFFFFFFFF */ scala.Double = typings.steamid.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccountIDMask").asInstanceOf[/* 0xFFFFFFFF */ scala.Double]
+inline def AccountIDMask: /* 0xFFFFFFFF */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("AccountIDMask").asInstanceOf[/* 0xFFFFFFFF */ Double]
 
-inline def AccountInstanceMask: /* 0x000FFFFF */ scala.Double = typings.steamid.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccountInstanceMask").asInstanceOf[/* 0x000FFFFF */ scala.Double]
+inline def AccountInstanceMask: /* 0x000FFFFF */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("AccountInstanceMask").asInstanceOf[/* 0x000FFFFF */ Double]
 
-inline def fromIndividualAccountID(accountid: java.lang.String): typings.steamid.mod.SteamID = typings.steamid.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fromIndividualAccountID")(accountid.asInstanceOf[js.Any]).asInstanceOf[typings.steamid.mod.SteamID]
+inline def fromIndividualAccountID(accountid: String): SteamID = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIndividualAccountID")(accountid.asInstanceOf[js.Any]).asInstanceOf[SteamID]
+inline def fromIndividualAccountID(accountid: js.BigInt): SteamID = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIndividualAccountID")(accountid.asInstanceOf[js.Any]).asInstanceOf[SteamID]
 /**
   * Create an individual SteamID in the public universe given an accountid
   * @param accountid - The user's account ID
   */
-inline def fromIndividualAccountID(accountid: scala.Double): typings.steamid.mod.SteamID = typings.steamid.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fromIndividualAccountID")(accountid.asInstanceOf[js.Any]).asInstanceOf[typings.steamid.mod.SteamID]
+inline def fromIndividualAccountID(accountid: Double): SteamID = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIndividualAccountID")(accountid.asInstanceOf[js.Any]).asInstanceOf[SteamID]
 
-type getSteam2RenderedID = js.Function1[/* newerFormat */ js.UndefOr[scala.Boolean], java.lang.String]
-
-/**
-  * Render this SteamID into Steam3 textual format
-  */
-type getSteam3RenderedID = js.Function0[java.lang.String]
+type getSteam2RenderedID = js.Function1[/* newerFormat */ js.UndefOr[Boolean], String]
 
 /**
-  * Render this SteamID into 64-bit numeric format
+  * Renders the ID in Steam3 format (e.g. "[U:1:46143802]")
   */
-type getSteamID64 = js.Function0[java.lang.String]
+type getSteam3RenderedID = js.Function0[String]
+
+/**
+  * Renders the ID in 64-bit decimal format, as a string (e.g. "76561198006409530")
+  */
+type getSteamID64 = js.Function0[String]

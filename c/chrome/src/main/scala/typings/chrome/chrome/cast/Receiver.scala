@@ -36,7 +36,7 @@ object Receiver {
     
     inline def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value*))
     
     inline def setDisplayStatus(value: ReceiverDisplayStatus): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
     

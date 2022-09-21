@@ -19,7 +19,6 @@ import typings.saxes.mod.XMLDecl
 import typings.saxes.mod.XMLDeclHandler
 import typings.saxes.saxesBooleans.`false`
 import typings.saxes.saxesBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +70,7 @@ object anon {
     @JSName("end")
     var end_Original: EndHandler
     
-    def error(err: Error): Unit
+    def error(err: js.Error): Unit
     @JSName("error")
     var error_Original: ErrorHandler
     
@@ -108,7 +107,7 @@ object anon {
       comment: /* comment */ String => Unit,
       doctype: /* doctype */ String => Unit,
       end: () => Unit,
-      error: /* err */ Error => Unit,
+      error: /* err */ js.Error => Unit,
       opentag: /* tag */ TagForOptions[O] => Unit,
       opentagstart: /* tag */ StartTagForOptions[O] => Unit,
       processinginstruction: /* data */ Body => Unit,
@@ -134,7 +133,7 @@ object anon {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setOpentag(value: /* tag */ TagForOptions[O] => Unit): Self = StObject.set(x, "opentag", js.Any.fromFunction1(value))
       

@@ -12,7 +12,7 @@ trait ByoipCidr extends StObject {
   var Cidr: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * A history of status changes for an IP address range that you bring to AWS Global Accelerator through bring your own IP address (BYOIP).
+    * A history of status changes for an IP address range that you bring to Global Accelerator through bring your own IP address (BYOIP).
     */
   var Events: js.UndefOr[ByoipCidrEvents] = js.undefined
   
@@ -38,7 +38,7 @@ object ByoipCidr {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: ByoipCidrEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ByoipCidrEvent*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setState(value: ByoipCidrState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,25 @@
 package typings.isMyJsonValid.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyEnumSchema = typings.isMyJsonValid.mod.EnumSchema[js.Any]
+type AnyAllOptionalObjectSchema = AllOptionalObjectSchema[Record[String, AnySchema]]
+
+type AnyArraySchema = ArraySchema[AnySchema]
+
+type AnyEnumSchema = EnumSchema[Any]
+
+type AnyNullableAllOptionalObjectSchema = NullableAllOptionalObjectSchema[Record[String, AnySchema]]
+
+type AnyNullableArraySchema = NullableArraySchema[AnySchema]
+
+type AnyNullableObjectSchema = NullableObjectSchema[Record[String, AnySchema], String]
+
+type AnyObjectSchema = ObjectSchema[Record[String, AnySchema], String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.isMyJsonValid.mod.NullSchema
@@ -16,22 +30,19 @@ type AnyEnumSchema = typings.isMyJsonValid.mod.EnumSchema[js.Any]
   - typings.isMyJsonValid.mod.StringSchema
   - typings.isMyJsonValid.mod.NullableStringSchema
   - typings.isMyJsonValid.mod.AnyEnumSchema
-  - typings.isMyJsonValid.mod.AnyArraySchema
-  - typings.isMyJsonValid.mod.AnyNullableArraySchema
-  - typings.isMyJsonValid.mod.AnyObjectSchema
-  - typings.isMyJsonValid.mod.AnyNullableObjectSchema
-  - typings.isMyJsonValid.mod.AnyAllOptionalObjectSchema
-  - typings.isMyJsonValid.mod.AnyNullableAllOptionalObjectSchema
+  - scala.Any
   - typings.isMyJsonValid.mod.AnyOneOfSchema
 */
-type AnySchema = typings.isMyJsonValid.mod._AnySchema | typings.isMyJsonValid.mod.AnyEnumSchema
+type AnySchema = _AnySchema | AnyEnumSchema | Any
 
-type Filter[Schema /* <: typings.isMyJsonValid.mod.AnySchema */, Output] = js.Function2[/* input */ Output, /* options */ js.UndefOr[js.Any], Output]
+type ArrayFromSchema[ItemSchema /* <: AnySchema */] = js.Array[TypeFromSchema[ItemSchema]]
 
-type ObjectFromSchema[Properties /* <: typings.std.Record[java.lang.String, typings.isMyJsonValid.mod.AnySchema] */, Required /* <: typings.isMyJsonValid.mod.StringKeys[Properties] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type Filter[Schema /* <: AnySchema */, Output] = js.Function2[/* input */ Output, /* options */ js.UndefOr[Any], Output]
+
+type ObjectFromSchema[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ Key in keyof Properties ]: Key extends Required? is-my-json-valid.is-my-json-valid.TypeFromSchema<Properties[Key]> : is-my-json-valid.is-my-json-valid.TypeFromSchema<Properties[Key]> | undefined}
-  */ typings.isMyJsonValid.isMyJsonValidStrings.ObjectFromSchema & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.isMyJsonValid.isMyJsonValidStrings.ObjectFromSchema & TopLevel[Any]
 
-type StringKeys[T] = /* keyof T */ java.lang.String
+type StringKeys[T] = /* keyof T */ String
 
-type TypeFromSchema[Schema /* <: typings.isMyJsonValid.mod.AnySchema */] = (typings.isMyJsonValid.mod.ObjectFromSchema[js.Any, js.Any | scala.Nothing]) | scala.Null | typings.isMyJsonValid.mod.ArrayFromSchema[js.Any] | java.lang.String | scala.Double | scala.Boolean
+type TypeFromSchema[Schema /* <: AnySchema */] = (ObjectFromSchema[Any, Any | scala.Nothing]) | Null | Any | String | Double | Boolean

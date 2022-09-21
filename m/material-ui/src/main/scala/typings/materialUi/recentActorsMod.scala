@@ -10,10 +10,10 @@ object recentActorsMod {
   
   @JSImport("material-ui/svg-icons/av/recent-actors", JSImport.Default)
   @js.native
-  class default () extends AvRecentActors
+  open class default () extends AvRecentActors
   
   @JSImport("material-ui/svg-icons/av/recent-actors", "AvRecentActors")
   @js.native
-  class AvRecentActors ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvRecentActors ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_adexchangebuyer2
 
-Typings are for version 2.0.20201119
+Typings are for version 2.0.20220811
 
 ## Library description:
 TypeScript typings for Ad Exchange Buyer API II v2beta1
@@ -10,10 +10,10 @@ TypeScript typings for Ad Exchange Buyer API II v2beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.adexchangebuyer2 |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 1 |
-| # downloads        | 3436 |
-| # stars            | 0 |
+| # releases         | 311 |
+| # dependents       | 0.0 |
+| # downloads        | 2298.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

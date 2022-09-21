@@ -8,7 +8,7 @@ object dataSetMod {
   
   @JSImport("amcharts/DataSet", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with DataSet {
     
@@ -36,7 +36,7 @@ object dataSetMod {
       * Data provider of the data set.
       */
     /* CompleteClass */
-    var dataProvider: js.Array[js.Any] = js.native
+    var dataProvider: js.Array[Any] = js.native
     
     /**
       * Array of field mappings. Field mapping is an object with fromField and toField properties.
@@ -45,7 +45,7 @@ object dataSetMod {
       * Example: {fromField:"val1", toField:"value"}.
       */
     /* CompleteClass */
-    var fieldMappings: js.Array[js.Any] = js.native
+    var fieldMappings: js.Array[Any] = js.native
     
     /**
       * Specifies whether this data set should be visible in "compare to" list.
@@ -96,7 +96,7 @@ object dataSetMod {
     /**
       * Data provider of the data set.
       */
-    var dataProvider: js.Array[js.Any]
+    var dataProvider: js.Array[Any]
     
     /**
       * Array of field mappings. Field mapping is an object with fromField and toField properties.
@@ -104,7 +104,7 @@ object dataSetMod {
       * toField might be chosen freely, it will be used to set value/open/close/high/low fields for the StockGraph.
       * Example: {fromField:"val1", toField:"value"}.
       */
-    var fieldMappings: js.Array[js.Any]
+    var fieldMappings: js.Array[Any]
     
     /**
       * Specifies whether this data set should be visible in "compare to" list.
@@ -134,8 +134,8 @@ object dataSetMod {
       categoryField: String,
       color: String,
       compared: Boolean,
-      dataProvider: js.Array[js.Any],
-      fieldMappings: js.Array[js.Any],
+      dataProvider: js.Array[Any],
+      fieldMappings: js.Array[Any],
       showInCompare: Boolean,
       showInSelect: Boolean,
       stockEvents: js.Array[typings.amcharts.stockEventMod.default],
@@ -153,13 +153,13 @@ object dataSetMod {
       
       inline def setCompared(value: Boolean): Self = StObject.set(x, "compared", value.asInstanceOf[js.Any])
       
-      inline def setDataProvider(value: js.Array[js.Any]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
+      inline def setDataProvider(value: js.Array[Any]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
       
-      inline def setDataProviderVarargs(value: js.Any*): Self = StObject.set(x, "dataProvider", js.Array(value :_*))
+      inline def setDataProviderVarargs(value: Any*): Self = StObject.set(x, "dataProvider", js.Array(value*))
       
-      inline def setFieldMappings(value: js.Array[js.Any]): Self = StObject.set(x, "fieldMappings", value.asInstanceOf[js.Any])
+      inline def setFieldMappings(value: js.Array[Any]): Self = StObject.set(x, "fieldMappings", value.asInstanceOf[js.Any])
       
-      inline def setFieldMappingsVarargs(value: js.Any*): Self = StObject.set(x, "fieldMappings", js.Array(value :_*))
+      inline def setFieldMappingsVarargs(value: Any*): Self = StObject.set(x, "fieldMappings", js.Array(value*))
       
       inline def setShowInCompare(value: Boolean): Self = StObject.set(x, "showInCompare", value.asInstanceOf[js.Any])
       
@@ -167,7 +167,7 @@ object dataSetMod {
       
       inline def setStockEvents(value: js.Array[typings.amcharts.stockEventMod.default]): Self = StObject.set(x, "stockEvents", value.asInstanceOf[js.Any])
       
-      inline def setStockEventsVarargs(value: typings.amcharts.stockEventMod.default*): Self = StObject.set(x, "stockEvents", js.Array(value :_*))
+      inline def setStockEventsVarargs(value: typings.amcharts.stockEventMod.default*): Self = StObject.set(x, "stockEvents", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

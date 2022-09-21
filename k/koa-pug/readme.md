@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-pug
 
-Typings are for version 4.0.4
+Typings are for version 5.0.0
 
 ## Library description:
 A Pug middleware for Koa
@@ -10,10 +10,10 @@ A Pug middleware for Koa
 | ------------------ | :-------------: |
 | Full name          | koa-pug |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 12 |
-| # downloads        | 321048 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 166279.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/koa-pug)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for yauzl
 
-Typings are for version 2.9
+Typings are for version 2.10
 
 ## Library description:
 yet another unzip library for node
@@ -11,9 +11,9 @@ yet another unzip library for node
 | Full name          | yauzl |
 | Keywords           | unzip, zip, stream, archive, file |
 | # releases         | 0 |
-| # dependents       | 413 |
-| # downloads        | 372551434 |
-| # stars            | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 4.9250238333333336E7 |
+| # stars            | 600.0 |
 
 ## Links
 - [Homepage](https://github.com/thejoshwolfe/yauzl)

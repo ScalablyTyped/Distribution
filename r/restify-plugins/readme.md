@@ -10,10 +10,10 @@ A collection of core restify plugins
 | ------------------ | :-------------: |
 | Full name          | restify-plugins |
 | Keywords           | restify, restify-plugins, handlers, prehandlers, queryparser, bodyparser, cors, accept, audit, authorization, formparser, multipart, request, expiry, throttle, static, gzip |
-| # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 59377 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3521.6666666666665 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/restify/plugins)

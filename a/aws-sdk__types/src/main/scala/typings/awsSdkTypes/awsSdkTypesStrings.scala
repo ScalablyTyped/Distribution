@@ -51,6 +51,10 @@ object awsSdkTypesStrings {
   inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
+  sealed trait client extends StObject
+  inline def client: client = "client".asInstanceOf[client]
+  
+  @js.native
   sealed trait deserialize
     extends StObject
        with Step
@@ -127,6 +131,10 @@ object awsSdkTypesStrings {
     extends StObject
        with Step
   inline def serialize: serialize = "serialize".asInstanceOf[serialize]
+  
+  @js.native
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
   sealed trait short extends StObject

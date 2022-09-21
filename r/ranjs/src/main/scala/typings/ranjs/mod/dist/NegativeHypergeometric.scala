@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.NegativeHypergeometric")
 @js.native
-class NegativeHypergeometric ()
+open class NegativeHypergeometric ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.NegativeHypergeometric] {
   def this(N: Double) = this()

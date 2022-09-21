@@ -10,15 +10,12 @@ Detect character encoding using ICU
 | ------------------ | :-------------: |
 | Full name          | detect-character-encoding |
 | Keywords           | detect, character, encoding, charset, icu |
-| # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 160020 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21863.333333333332 |
+| # stars            | 78.0 |
 
 ## Links
-- [Homepage](https://github.com/sonicdoe/detect-character-encoding#readme)
-- [Bugs](https://github.com/sonicdoe/detect-character-encoding/issues)
-- [Repository](https://github.com/sonicdoe/detect-character-encoding)
 - [Npm](https://www.npmjs.com/package/detect-character-encoding)
     
 

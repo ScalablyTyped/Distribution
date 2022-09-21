@@ -29,7 +29,12 @@ trait DescribeKeyPairsRequestwa extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The key pair names. Default: Describes all your key pairs.
+    * If true, the public key material is included in the response. Default: false 
+    */
+  var IncludePublicKey: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The key pair names. Default: Describes all of your key pairs.
     */
   var KeyNames: js.UndefOr[KeyNameStringList] = js.undefined
   
@@ -59,18 +64,22 @@ object DescribeKeyPairsRequestwa {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
+    
+    inline def setIncludePublicKey(value: Boolean): Self = StObject.set(x, "IncludePublicKey", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePublicKeyUndefined: Self = StObject.set(x, "IncludePublicKey", js.undefined)
     
     inline def setKeyNames(value: KeyNameStringList): Self = StObject.set(x, "KeyNames", value.asInstanceOf[js.Any])
     
     inline def setKeyNamesUndefined: Self = StObject.set(x, "KeyNames", js.undefined)
     
-    inline def setKeyNamesVarargs(value: KeyPairName*): Self = StObject.set(x, "KeyNames", js.Array(value :_*))
+    inline def setKeyNamesVarargs(value: KeyPairName*): Self = StObject.set(x, "KeyNames", js.Array(value*))
     
     inline def setKeyPairIds(value: KeyPairIdStringList): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
     inline def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
     
-    inline def setKeyPairIdsVarargs(value: KeyPairId*): Self = StObject.set(x, "KeyPairIds", js.Array(value :_*))
+    inline def setKeyPairIdsVarargs(value: KeyPairId*): Self = StObject.set(x, "KeyPairIds", js.Array(value*))
   }
 }

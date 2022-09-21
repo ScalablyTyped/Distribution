@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Marker")
 @js.native
-class Marker () extends Evented {
+open class Marker () extends Evented {
   def this(element: HTMLElement) = this()
   def this(options: MarkerOptions) = this()
   def this(element: Unit, options: MarkerOptions) = this()
@@ -25,6 +25,8 @@ class Marker () extends Evented {
   
   def getPopup(): Popup = js.native
   
+  def getRotation(): Double = js.native
+  
   def getRotationAlignment(): Alignment = js.native
   
   def isDraggable(): Boolean = js.native
@@ -41,6 +43,8 @@ class Marker () extends Evented {
   
   def setPopup(): this.type = js.native
   def setPopup(popup: Popup): this.type = js.native
+  
+  def setRotation(rotation: Double): this.type = js.native
   
   def setRotationAlignment(alignment: Alignment): this.type = js.native
   

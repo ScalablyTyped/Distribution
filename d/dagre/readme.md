@@ -10,15 +10,12 @@ Graph layout for JavaScript
 | ------------------ | :-------------: |
 | Full name          | dagre |
 | Keywords           | graph, layout |
-| # releases         | 2 |
-| # dependents       | 166 |
-| # downloads        | 9630032 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1936951.6666666667 |
+| # stars            | 3615.0 |
 
 ## Links
-- [Homepage](https://github.com/dagrejs/dagre#readme)
-- [Bugs](https://github.com/dagrejs/dagre/issues)
-- [Repository](https://github.com/dagrejs/dagre)
 - [Npm](https://www.npmjs.com/package/dagre)
     
 

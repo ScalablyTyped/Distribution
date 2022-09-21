@@ -10,10 +10,10 @@ object locationDisabledMod {
   
   @JSImport("material-ui/svg-icons/device/location-disabled", JSImport.Default)
   @js.native
-  class default () extends DeviceLocationDisabled
+  open class default () extends DeviceLocationDisabled
   
   @JSImport("material-ui/svg-icons/device/location-disabled", "DeviceLocationDisabled")
   @js.native
-  class DeviceLocationDisabled ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceLocationDisabled ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

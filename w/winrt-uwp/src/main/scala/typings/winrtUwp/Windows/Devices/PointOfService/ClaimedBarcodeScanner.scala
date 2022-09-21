@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClaimedBarcodeScanner extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datareceived(
     `type`: datareceived,
@@ -37,11 +37,11 @@ trait ClaimedBarcodeScanner extends StObject {
     listener: TypedEventHandler[ClaimedBarcodeScanner, BarcodeScannerImagePreviewReceivedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_triggerpressed(`type`: triggerpressed, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener_triggerpressed(`type`: triggerpressed, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_triggerreleased(`type`: triggerreleased, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener_triggerreleased(`type`: triggerreleased, listener: EventHandler[Any]): Unit = js.native
   
   /** Releases exclusive claim to the barcode scanner. */
   def close(): Unit = js.native
@@ -89,24 +89,24 @@ trait ClaimedBarcodeScanner extends StObject {
   var onimagepreviewreceived_Original: TypedEventHandler[ClaimedBarcodeScanner, BarcodeScannerImagePreviewReceivedEventArgs] = js.native
   
   /** Occurs when the device gets a request to release its exclusive claim. */
-  def onreleasedevicerequested(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
+  def onreleasedevicerequested(ev: Any & WinRTEvent[Any]): Unit = js.native
   /** Occurs when the device gets a request to release its exclusive claim. */
   @JSName("onreleasedevicerequested")
-  var onreleasedevicerequested_Original: EventHandler[js.Any] = js.native
+  var onreleasedevicerequested_Original: EventHandler[Any] = js.native
   
   /** Occurs when the barcode scanner trigger or button is pressed during a scanning operation. */
-  def ontriggerpressed(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
+  def ontriggerpressed(ev: Any & WinRTEvent[Any]): Unit = js.native
   /** Occurs when the barcode scanner trigger or button is pressed during a scanning operation. */
   @JSName("ontriggerpressed")
-  var ontriggerpressed_Original: EventHandler[js.Any] = js.native
+  var ontriggerpressed_Original: EventHandler[Any] = js.native
   
   /** Occurs when the barcode scanner trigger or button is released during a scanning operation. */
-  def ontriggerreleased(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
+  def ontriggerreleased(ev: Any & WinRTEvent[Any]): Unit = js.native
   /** Occurs when the barcode scanner trigger or button is released during a scanning operation. */
   @JSName("ontriggerreleased")
-  var ontriggerreleased_Original: EventHandler[js.Any] = js.native
+  var ontriggerreleased_Original: EventHandler[Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datareceived(
     `type`: datareceived,
@@ -123,11 +123,11 @@ trait ClaimedBarcodeScanner extends StObject {
     listener: TypedEventHandler[ClaimedBarcodeScanner, BarcodeScannerImagePreviewReceivedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_triggerpressed(`type`: triggerpressed, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener_triggerpressed(`type`: triggerpressed, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_triggerreleased(`type`: triggerreleased, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener_triggerreleased(`type`: triggerreleased, listener: EventHandler[Any]): Unit = js.native
   
   /**
     * Resets the specified statistics to zero for all statistics that can be reset.
@@ -170,5 +170,5 @@ trait ClaimedBarcodeScanner extends StObject {
     * @param statistics The list of key-value pairs of statistics to update.
     * @return No object or value is returned by this method when it completes.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
 }

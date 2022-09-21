@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,18 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GossipConsensusMessage.
   * @param [properties] Properties to set
   */
-class GossipConsensusMessage ()
+open class GossipConsensusMessage ()
   extends StObject
      with IGossipConsensusMessage {
   def this(properties: IGossipConsensusMessage) = this()
   
   /** GossipConsensusMessage message. */
   @JSName("message")
-  var message_GossipConsensusMessage: Uint8Array = js.native
+  var message_GossipConsensusMessage: js.typedarray.Uint8Array = js.native
   
   /** GossipConsensusMessage senderId. */
   @JSName("senderId")
-  var senderId_GossipConsensusMessage: Uint8Array = js.native
+  var senderId_GossipConsensusMessage: js.typedarray.Uint8Array = js.native
   
   /** GossipConsensusMessage timeToLive. */
   @JSName("timeToLive")
@@ -36,7 +35,7 @@ class GossipConsensusMessage ()
     * Converts this GossipConsensusMessage to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object GossipConsensusMessage {
@@ -53,6 +52,8 @@ object GossipConsensusMessage {
   inline def create(): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GossipConsensusMessage]
   inline def create(properties: IGossipConsensusMessage): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GossipConsensusMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipConsensusMessage]
   /**
     * Decodes a GossipConsensusMessage message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -63,9 +64,8 @@ object GossipConsensusMessage {
     */
   inline def decode(reader: Reader): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
   inline def decode(reader: Reader, length: Double): GossipConsensusMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipConsensusMessage]
-  inline def decode(reader: Uint8Array): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
-  inline def decode(reader: Uint8Array, length: Double): GossipConsensusMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipConsensusMessage]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
   /**
     * Decodes a GossipConsensusMessage message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -74,7 +74,6 @@ object GossipConsensusMessage {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
-  inline def decodeDelimited(reader: Uint8Array): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
   
   /**
     * Encodes the specified GossipConsensusMessage message. Does not implicitly {@link GossipConsensusMessage.verify|verify} messages.
@@ -99,7 +98,7 @@ object GossipConsensusMessage {
     * @param object Plain object
     * @returns GossipConsensusMessage
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
+  inline def fromObject(`object`: StringDictionary[Any]): GossipConsensusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GossipConsensusMessage]
   
   /**
     * Creates a plain object from a GossipConsensusMessage message. Also converts values to other types if specified.
@@ -107,13 +106,13 @@ object GossipConsensusMessage {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: GossipConsensusMessage): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GossipConsensusMessage, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GossipConsensusMessage): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GossipConsensusMessage, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GossipConsensusMessage message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

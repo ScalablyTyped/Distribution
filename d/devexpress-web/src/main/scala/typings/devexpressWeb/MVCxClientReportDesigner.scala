@@ -23,8 +23,8 @@ trait MVCxClientReportDesigner
     * @param arg A string value that represents any information that needs to be sent to the server-side event.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(arg: js.Any): Unit = js.native
-  def PerformCallback(arg: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  def PerformCallback(arg: Any): Unit = js.native
+  def PerformCallback(arg: Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   
   /**
     * Occurs after executing the Save command on the client.

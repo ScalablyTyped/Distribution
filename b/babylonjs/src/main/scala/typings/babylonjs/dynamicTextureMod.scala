@@ -1,7 +1,9 @@
 package typings.babylonjs
 
+import typings.babylonjs.icanvasMod.ICanvasRenderingContext
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +12,7 @@ object dynamicTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/dynamicTexture", "DynamicTexture")
   @js.native
-  class DynamicTexture protected () extends Texture {
-    def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean) = this()
-    def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean) = this()
+  open class DynamicTexture protected () extends Texture {
     /**
       * Creates a DynamicTexture
       * @param name defines the name of the texture
@@ -23,29 +23,17 @@ object dynamicTextureMod {
       * @param format defines the texture format to use (default is Engine.TEXTUREFORMAT_RGBA)
       * @param invertY defines if the texture needs to be inverted on the y axis during loading
       */
-    def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean, samplingMode: Double) = this()
-    def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean, samplingMode: Double) = this()
-    def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean, samplingMode: Double) = this()
+    def this(name: String, options: Any) = this()
+    def this(name: String, options: Any, scene: Nullable[Scene]) = this()
+    def this(name: String, options: Any, scene: Unit, generateMipMaps: Boolean) = this()
+    def this(name: String, options: Any, scene: Nullable[Scene], generateMipMaps: Boolean) = this()
+    def this(name: String, options: Any, scene: Unit, generateMipMaps: Boolean, samplingMode: Double) = this()
+    def this(name: String, options: Any, scene: Unit, generateMipMaps: Unit, samplingMode: Double) = this()
+    def this(name: String, options: Any, scene: Nullable[Scene], generateMipMaps: Boolean, samplingMode: Double) = this()
+    def this(name: String, options: Any, scene: Nullable[Scene], generateMipMaps: Unit, samplingMode: Double) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: Double,
-      format: Double
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: Unit,
-      format: Double
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Double,
@@ -53,7 +41,7 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Unit,
@@ -61,59 +49,48 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Unit,
+      generateMipMaps: Unit,
+      samplingMode: Double,
+      format: Double
+    ) = this()
+    def this(name: String, options: Any, scene: Unit, generateMipMaps: Unit, samplingMode: Unit, format: Double) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
       samplingMode: Double,
       format: Double
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
       samplingMode: Unit,
       format: Double
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
       samplingMode: Double,
-      format: Double,
-      invertY: Boolean
+      format: Double
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: Double,
-      format: Unit,
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
       samplingMode: Unit,
-      format: Double,
-      invertY: Boolean
+      format: Double
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: Unit,
-      format: Unit,
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Double,
@@ -122,7 +99,7 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Double,
@@ -131,7 +108,7 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Unit,
@@ -140,7 +117,7 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
+      options: Any,
       scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Unit,
@@ -149,8 +126,44 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Unit,
+      generateMipMaps: Unit,
+      samplingMode: Double,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Unit,
+      generateMipMaps: Unit,
+      samplingMode: Double,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Unit,
+      generateMipMaps: Unit,
+      samplingMode: Unit,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Unit,
+      generateMipMaps: Unit,
+      samplingMode: Unit,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
       samplingMode: Double,
       format: Double,
@@ -158,8 +171,8 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
       samplingMode: Double,
       format: Unit,
@@ -167,8 +180,8 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
       samplingMode: Unit,
       format: Double,
@@ -176,23 +189,57 @@ object dynamicTextureMod {
     ) = this()
     def this(
       name: String,
-      options: js.Any,
-      scene: Scene,
+      options: Any,
+      scene: Nullable[Scene],
       generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
+      samplingMode: Double,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
+      samplingMode: Double,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
+      samplingMode: Unit,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Any,
+      scene: Nullable[Scene],
+      generateMipMaps: Unit,
       samplingMode: Unit,
       format: Unit,
       invertY: Boolean
     ) = this()
     
-    /* private */ var _IsCanvasElement: js.Any = js.native
+    /* private */ var _canvas: Any = js.native
     
-    /* private */ var _canvas: js.Any = js.native
+    /* private */ var _context: Any = js.native
     
-    /* private */ var _context: js.Any = js.native
+    /* private */ var _generateMipMaps: Any = js.native
     
-    /* private */ var _generateMipMaps: js.Any = js.native
-    
-    /* private */ var _recreate: js.Any = js.native
+    /* private */ var _recreate: Any = js.native
     
     /**
       * Clears the texture
@@ -216,7 +263,7 @@ object dynamicTextureMod {
       y: js.UndefOr[Double | Null],
       font: String,
       color: String | Null,
-      clearColor: String,
+      clearColor: String | Null,
       invertY: js.UndefOr[Boolean],
       update: js.UndefOr[Boolean]
     ): Unit = js.native
@@ -225,7 +272,7 @@ object dynamicTextureMod {
       * Gets the context of the canvas used by the texture
       * @returns the canvas context of the dynamic texture
       */
-    def getContext(): CanvasRenderingContext2D = js.native
+    def getContext(): ICanvasRenderingContext = js.native
     
     /**
       * Resizes the texture
@@ -238,10 +285,27 @@ object dynamicTextureMod {
       * Updates the texture
       * @param invertY defines the direction for the Y axis (default is true - y increases downwards)
       * @param premulAlpha defines if alpha is stored as premultiplied (default is false)
+      * @param allowGPUOptimization true to allow some specific GPU optimizations (subject to engine feature "allowGPUOptimizationsForGUI" being true)
       */
     def update(): Unit = js.native
     def update(invertY: Boolean): Unit = js.native
     def update(invertY: Boolean, premulAlpha: Boolean): Unit = js.native
+    def update(invertY: Boolean, premulAlpha: Boolean, allowGPUOptimization: Boolean): Unit = js.native
+    def update(invertY: Boolean, premulAlpha: Unit, allowGPUOptimization: Boolean): Unit = js.native
     def update(invertY: Unit, premulAlpha: Boolean): Unit = js.native
+    def update(invertY: Unit, premulAlpha: Boolean, allowGPUOptimization: Boolean): Unit = js.native
+    def update(invertY: Unit, premulAlpha: Unit, allowGPUOptimization: Boolean): Unit = js.native
+  }
+  /* static members */
+  object DynamicTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/dynamicTexture", "DynamicTexture")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Materials/Textures/dynamicTexture", "DynamicTexture._IsCanvasElement")
+    @js.native
+    def _IsCanvasElement: Any = js.native
+    inline def _IsCanvasElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsCanvasElement")(x.asInstanceOf[js.Any])
   }
 }

@@ -29,11 +29,11 @@ object inputInputMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Input/Input", JSImport.Default)
   @js.native
-  class default () extends Input
+  open class default () extends Input
   
   @js.native
   trait Input
-    extends Component[InputProps, js.Object, js.Any] {
+    extends Component[InputProps, js.Object, Any] {
     
     def focus(): Unit = js.native
     
@@ -67,13 +67,13 @@ object inputInputMod {
        with InputHTMLAttributes[HTMLInputElement] {
     
     /** An Input can be formatted to alert the user to an action they may perform. */
-    var action: js.UndefOr[js.Any | Boolean] = js.undefined
+    var action: js.UndefOr[Any | Boolean] = js.undefined
     
     /** An action can appear along side an Input on the left or right. */
     var actionPosition: js.UndefOr[left] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** An Input field can show the data contains errors. */
     var error: js.UndefOr[Boolean] = js.undefined
@@ -85,7 +85,7 @@ object inputInputMod {
     var focus: js.UndefOr[Boolean] = js.undefined
     
     /** Optional Icon to display inside the Input. */
-    var icon: js.UndefOr[js.Any | SemanticShorthandItem[InputProps]] = js.undefined
+    var icon: js.UndefOr[Any | SemanticShorthandItem[InputProps]] = js.undefined
     
     /** An Icon can appear inside an Input on the left. */
     var iconPosition: js.UndefOr[left] = js.undefined
@@ -126,6 +126,10 @@ object inputInputMod {
     
     /** Transparent Input has no background. */
     var transparent: js.UndefOr[Boolean] = js.undefined
+    
+    /** The HTML input type. */
+    @JSName("type")
+    var type_StrictInputProps: js.UndefOr[String] = js.undefined
   }
   object StrictInputProps {
     
@@ -136,7 +140,7 @@ object inputInputMod {
     
     extension [Self <: StrictInputProps](x: Self) {
       
-      inline def setAction(value: js.Any | Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Any | Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setActionPosition(value: left): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,7 @@ object inputInputMod {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -160,7 +164,7 @@ object inputInputMod {
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      inline def setIcon(value: js.Any | SemanticShorthandItem[InputProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any | SemanticShorthandItem[InputProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconFunction3(
         value: (/* component */ ElementType[InputProps], InputProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
@@ -215,6 +219,10 @@ object inputInputMod {
       inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
       inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

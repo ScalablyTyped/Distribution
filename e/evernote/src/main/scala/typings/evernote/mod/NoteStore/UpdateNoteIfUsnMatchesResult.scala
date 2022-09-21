@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.UpdateNoteIfUsnMatchesResult")
 @js.native
-class UpdateNoteIfUsnMatchesResult () extends StObject {
+open class UpdateNoteIfUsnMatchesResult () extends StObject {
   def this(args: Note) = this()
   
   var note: js.UndefOr[typings.evernote.mod.Types.Note] = js.native

@@ -21,13 +21,13 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.BaseSelectorComponent")
   @js.native
-  class BaseSelectorComponent protected ()
+  open class BaseSelectorComponent protected ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.BaseSelectorComponent {
     def this(key: String, `type`: SelectorType) = this()
     
     /* CompleteClass */
-    override def get_callback(): js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] = js.native
+    override def get_callback(): js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] = js.native
     
     /* CompleteClass */
     override def get_componentType(): SelectorType = js.native
@@ -36,7 +36,7 @@ object ApplicationPages {
     override def get_scopeKey(): String = js.native
     
     /* CompleteClass */
-    override def get_selectedEntities(): js.Any = js.native
+    override def get_selectedEntities(): Any = js.native
     
     /* CompleteClass */
     override def removeEntity(ent: typings.sharepoint.SP.UI.ApplicationPages.ResolveEntity): Unit = js.native
@@ -48,15 +48,15 @@ object ApplicationPages {
     override def setEntity(ent: typings.sharepoint.SP.UI.ApplicationPages.ResolveEntity): Unit = js.native
     
     /* CompleteClass */
-    override def set_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+    override def set_callback(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def set_selectedEntities(value: js.Any): Unit = js.native
+    override def set_selectedEntities(value: Any): Unit = js.native
   }
   
   @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository")
   @js.native
-  class CalendarInstanceRepository ()
+  open class CalendarInstanceRepository ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.CalendarInstanceRepository
   object CalendarInstanceRepository {
@@ -97,7 +97,7 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.CalendarSelector")
   @js.native
-  class CalendarSelector ()
+  open class CalendarSelector ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector {
     
@@ -107,7 +107,7 @@ object ApplicationPages {
       people: Boolean,
       resource: Boolean,
       handler: js.Function2[
-          /* sender */ js.Any, 
+          /* sender */ Any, 
           /* selection */ typings.sharepoint.SP.UI.ApplicationPages.SelectorSelectionEventArgs, 
           Unit
         ]
@@ -161,7 +161,7 @@ object ApplicationPages {
       *      An EventHandlerList object that contains references to all the events and handlers for this component.
       */
     /* CompleteClass */
-    override def get_events(): js.Any = js.native
+    override def get_events(): Any = js.native
     
     /**
       * Gets the ID of the current Component object.
@@ -249,18 +249,18 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters")
   @js.native
-  class ClientPeoplePickerQueryParameters ()
+  open class ClientPeoplePickerQueryParameters ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_allUrlZones(): Boolean = js.native
@@ -361,7 +361,7 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface")
   @js.native
-  class ClientPeoplePickerWebServiceInterface ()
+  open class ClientPeoplePickerWebServiceInterface ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface
   object ClientPeoplePickerWebServiceInterface {
@@ -385,7 +385,7 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.PeoplePickerWebServiceInterface")
   @js.native
-  class PeoplePickerWebServiceInterface ()
+  open class PeoplePickerWebServiceInterface ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.PeoplePickerWebServiceInterface
   object PeoplePickerWebServiceInterface {
@@ -415,7 +415,7 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.ResolveEntity")
   @js.native
-  class ResolveEntity ()
+  open class ResolveEntity ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.ResolveEntity {
     
@@ -461,10 +461,10 @@ object ApplicationPages {
   
   @JSGlobal("SP.UI.ApplicationPages.SelectorSelectionEventArgs")
   @js.native
-  class SelectorSelectionEventArgs protected ()
+  open class SelectorSelectionEventArgs protected ()
     extends StObject
        with typings.sharepoint.SP.UI.ApplicationPages.SelectorSelectionEventArgs {
-    def this(entities: js.Any) = this()
+    def this(entities: Any) = this()
     
     /**
       * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -473,7 +473,7 @@ object ApplicationPages {
     var Empty: EventArgs = js.native
     
     /* CompleteClass */
-    override def get_entities(): js.Any = js.native
+    override def get_entities(): Any = js.native
   }
   
   @JSGlobal("SP.UI.ApplicationPages.SelectorType")

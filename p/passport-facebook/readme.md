@@ -10,10 +10,10 @@ Facebook authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-facebook |
 | Keywords           | passport, facebook, auth, authn, authentication, identity |
-| # releases         | 0 |
-| # dependents       | 350 |
-| # downloads        | 3703447 |
-| # stars            | 44 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 452077.3333333333 |
+| # stars            | 1265.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/passport-facebook#readme)

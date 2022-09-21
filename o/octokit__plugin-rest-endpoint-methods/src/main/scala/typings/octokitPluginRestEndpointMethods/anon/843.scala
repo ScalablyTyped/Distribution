@@ -3,9 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ProjectsUpdateCardEndpoint
-import typings.octokitTypes.endpointsMod.ProjectsUpdateCardResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -14,15 +14,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `843` extends StObject {
   
-  var parameters: RequestParameters & (Omit[ProjectsUpdateCardEndpoint, baseUrl | headers | mediaType])
+  var parameters: RequestParameters & (Omit[
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+    ]) & RequiredPreview[Any], 
+    baseUrl | headers | mediaType
+  ])
   
-  var response: OctokitResponse[ProjectsUpdateCardResponseData]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+  ]
 }
 object `843` {
   
   inline def apply(
-    parameters: RequestParameters & (Omit[ProjectsUpdateCardEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[ProjectsUpdateCardResponseData]
+    parameters: RequestParameters & (Omit[
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+      ]) & RequiredPreview[Any], 
+      baseUrl | headers | mediaType
+    ]),
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+    ]
   ): `843` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`843`]
@@ -30,8 +44,19 @@ object `843` {
   
   extension [Self <: `843`](x: Self) {
     
-    inline def setParameters(value: RequestParameters & (Omit[ProjectsUpdateCardEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: RequestParameters & (Omit[
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+          ]) & RequiredPreview[Any], 
+          baseUrl | headers | mediaType
+        ])
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[ProjectsUpdateCardResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs']['post'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

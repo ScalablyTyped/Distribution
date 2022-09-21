@@ -30,7 +30,7 @@ object XLayerContentDescriber {
   inline def apply(
     acquire: () => Unit,
     describeLayer: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLayerContentDescriber = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), describeLayer = js.Any.fromFunction2(describeLayer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

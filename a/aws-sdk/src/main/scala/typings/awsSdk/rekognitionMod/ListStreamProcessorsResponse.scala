@@ -33,6 +33,6 @@ object ListStreamProcessorsResponse {
     
     inline def setStreamProcessorsUndefined: Self = StObject.set(x, "StreamProcessors", js.undefined)
     
-    inline def setStreamProcessorsVarargs(value: StreamProcessor*): Self = StObject.set(x, "StreamProcessors", js.Array(value :_*))
+    inline def setStreamProcessorsVarargs(value: StreamProcessor*): Self = StObject.set(x, "StreamProcessors", js.Array(value*))
   }
 }

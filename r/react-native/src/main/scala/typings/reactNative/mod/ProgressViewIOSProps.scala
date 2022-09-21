@@ -55,7 +55,7 @@ object ProgressViewIOSProps {
     
     inline def setProgressImageUndefined: Self = StObject.set(x, "progressImage", js.undefined)
     
-    inline def setProgressImageVarargs(value: ImageURISource*): Self = StObject.set(x, "progressImage", js.Array(value :_*))
+    inline def setProgressImageVarargs(value: ImageURISource*): Self = StObject.set(x, "progressImage", js.Array(value*))
     
     inline def setProgressTintColor(value: ColorValue): Self = StObject.set(x, "progressTintColor", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object ProgressViewIOSProps {
     
     inline def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
     
-    inline def setTrackImageVarargs(value: ImageURISource*): Self = StObject.set(x, "trackImage", js.Array(value :_*))
+    inline def setTrackImageVarargs(value: ImageURISource*): Self = StObject.set(x, "trackImage", js.Array(value*))
     
     inline def setTrackTintColor(value: ColorValue): Self = StObject.set(x, "trackTintColor", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ A library that detects browser compatibility and prompts website users to upgrad
 | ------------------ | :-------------: |
 | Full name          | obsolete-web |
 | Keywords           | obsolete, obsolete-web |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 58487 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9987.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/obsolete-web)

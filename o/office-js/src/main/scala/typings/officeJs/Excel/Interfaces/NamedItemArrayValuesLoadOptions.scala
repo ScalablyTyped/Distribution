@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an object containing values and types of a named item.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait NamedItemArrayValuesLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait NamedItemArrayValuesLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the types for each item in the named item array
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var types: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the values of each item in the named item array.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var values: js.UndefOr[Boolean] = js.undefined

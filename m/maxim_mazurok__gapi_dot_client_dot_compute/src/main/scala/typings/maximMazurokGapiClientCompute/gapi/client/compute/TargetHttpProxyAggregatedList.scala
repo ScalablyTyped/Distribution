@@ -14,7 +14,7 @@ trait TargetHttpProxyAggregatedList extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[Any]
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetHttpProxyAggregatedList for lists of Target HTTP Proxies. */
@@ -48,7 +48,7 @@ object TargetHttpProxyAggregatedList {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -69,6 +69,6 @@ object TargetHttpProxyAggregatedList {
     
     inline def setUnreachablesUndefined: Self = StObject.set(x, "unreachables", js.undefined)
     
-    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value :_*))
+    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value*))
   }
 }

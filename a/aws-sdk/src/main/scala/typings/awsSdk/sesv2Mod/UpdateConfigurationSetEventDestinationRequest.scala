@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateConfigurationSetEventDestinationRequest extends StObject {
   
   /**
-    * The name of the configuration set that contains the event destination that you want to modify.
+    * The name of the configuration set that contains the event destination to modify.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
@@ -17,7 +17,7 @@ trait UpdateConfigurationSetEventDestinationRequest extends StObject {
   var EventDestination: EventDestinationDefinition
   
   /**
-    * The name of the event destination that you want to modify.
+    * The name of the event destination.
     */
   var EventDestinationName: typings.awsSdk.sesv2Mod.EventDestinationName
 }

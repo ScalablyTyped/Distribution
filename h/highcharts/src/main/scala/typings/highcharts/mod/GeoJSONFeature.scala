@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GeoJSONFeature
   extends StObject
-     with Dictionary[js.Any] {
+     with Dictionary[Any] {
   
   /**
     * Data type of the geographic feature.

@@ -15,7 +15,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createRequest[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
-    client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
-    command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer]
+    client: Client[Any, InputTypesUnion, MetadataBearer, Any],
+    command: Command[InputType, OutputType, Any, InputTypesUnion, MetadataBearer]
   ): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequest")(client.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
 }

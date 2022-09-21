@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__eventstream-marshaller
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.120.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/eventstream-marshaller/latest.svg)](https://www.npmjs.com/package/@aws-sdk/eventstream-marshaller) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/eventstream-marshaller.svg)](https://www.npmj
@@ -10,13 +10,13 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/eventstream-marshaller |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 12 |
-| # downloads        | 7848405 |
-| # stars            | 0 |
+| # releases         | 50 |
+| # dependents       | 0.0 |
+| # downloads        | 4864883.666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/eventstream-marshaller)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Feventstream-marshaller)

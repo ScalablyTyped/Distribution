@@ -1,6 +1,6 @@
 package typings.easyXapiSupertest.anon
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Env extends StObject {
   
   var encoding: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[Any] = js.undefined
   
   var gid: js.UndefOr[Double] = js.undefined
   
@@ -21,7 +21,7 @@ trait Env extends StObject {
   
   var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var stdio: js.UndefOr[js.Any] = js.undefined
+  var stdio: js.UndefOr[Any] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -44,7 +44,7 @@ object Env {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
@@ -64,7 +64,7 @@ object Env {
     
     inline def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
-    inline def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     

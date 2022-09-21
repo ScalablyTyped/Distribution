@@ -10,10 +10,10 @@ Utility for hashing and validating passwords using the default ASP.NET Identity 
 | ------------------ | :-------------: |
 | Full name          | aspnet-identity-pw |
 | Keywords           | ASP.NET, Identity, password, hash |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 29053 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10113.333333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/Syncbak-Git/aspnet-identity-pw)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDiagramSelectionChangedEventArgs")
 @js.native
-class ASPxClientDiagramSelectionChangedEventArgs protected ()
+open class ASPxClientDiagramSelectionChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDiagramSelectionChangedEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientDiagramSelectionChangedEventArgs protected ()
   def this(items: js.Array[typings.devexpressWeb.DiagramItem]) = this()
   
   /**
-    * Gets an array of the selected items (shapes or connectors).
+    * Gets an array of the selected items (DiagramShape or DiagramConnector objects).
     */
   /* CompleteClass */
   var items: js.Array[typings.devexpressWeb.DiagramItem] = js.native

@@ -5,7 +5,7 @@ import typings.ledgerhqHwAppBtc.anon.Format
 import typings.ledgerhqHwAppBtc.anon.Index
 import typings.ledgerhqHwAppBtc.anon.R
 import typings.ledgerhqHwAppBtc.anon.TrustedInput
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("@ledgerhq/hw-app-btc", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AppBtc {
     def this(transport: typings.ledgerhqHwTransport.mod.default[String]) = this()
@@ -265,11 +265,11 @@ object mod {
       
       inline def setAdditionalsUndefined: Self = StObject.set(x, "additionals", js.undefined)
       
-      inline def setAdditionalsVarargs(value: String*): Self = StObject.set(x, "additionals", js.Array(value :_*))
+      inline def setAdditionalsVarargs(value: String*): Self = StObject.set(x, "additionals", js.Array(value*))
       
       inline def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
       
-      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
+      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value*))
       
       inline def setChangePath(value: String): Self = StObject.set(x, "changePath", value.asInstanceOf[js.Any])
       
@@ -285,7 +285,7 @@ object mod {
       
       inline def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
       
@@ -351,11 +351,11 @@ object mod {
       
       inline def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
       
-      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
+      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value*))
       
       inline def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
       
@@ -412,7 +412,7 @@ object mod {
       
       inline def setInputs(value: js.Array[TransactionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: TransactionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: TransactionInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setLocktime(value: Buffer): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
@@ -430,7 +430,7 @@ object mod {
       
       inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      inline def setOutputsVarargs(value: TransactionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: TransactionOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setTimestamp(value: Buffer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       

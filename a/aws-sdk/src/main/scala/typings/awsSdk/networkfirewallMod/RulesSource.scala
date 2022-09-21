@@ -12,12 +12,12 @@ trait RulesSource extends StObject {
   var RulesSourceList: js.UndefOr[typings.awsSdk.networkfirewallMod.RulesSourceList] = js.undefined
   
   /**
-    * Stateful inspection criteria, provided in Suricata compatible intrusion prevention system (IPS) rules. Suricata is an open-source network IPS that includes a standard rule-based language for network traffic inspection. These rules contain the inspection criteria and the action to take for traffic that matches the criteria, so this type of rule group doesn't have a separate action setting. You can provide the rules from a file that you've stored in an Amazon S3 bucket, or by providing the rules in a Suricata rules string. To import from Amazon S3, provide the fully qualified name of the file that contains the rules definitions. To provide a Suricata rule string, provide the complete, Suricata compatible rule.
+    * Stateful inspection criteria, provided in Suricata compatible intrusion prevention system (IPS) rules. Suricata is an open-source network IPS that includes a standard rule-based language for network traffic inspection. These rules contain the inspection criteria and the action to take for traffic that matches the criteria, so this type of rule group doesn't have a separate action setting.
     */
   var RulesString: js.UndefOr[typings.awsSdk.networkfirewallMod.RulesString] = js.undefined
   
   /**
-    * The 5-tuple stateful inspection criteria. This contains an array of individual 5-tuple stateful rules to be used together in a stateful rule group. 
+    * An array of individual stateful rules inspection criteria to be used together in a stateful rule group. Use this option to specify simple Suricata rules with protocol, source and destination, ports, direction, and rule options. For information about the Suricata Rules format, see Rules Format. 
     */
   var StatefulRules: js.UndefOr[typings.awsSdk.networkfirewallMod.StatefulRules] = js.undefined
   
@@ -47,7 +47,7 @@ object RulesSource {
     
     inline def setStatefulRulesUndefined: Self = StObject.set(x, "StatefulRules", js.undefined)
     
-    inline def setStatefulRulesVarargs(value: StatefulRule*): Self = StObject.set(x, "StatefulRules", js.Array(value :_*))
+    inline def setStatefulRulesVarargs(value: StatefulRule*): Self = StObject.set(x, "StatefulRules", js.Array(value*))
     
     inline def setStatelessRulesAndCustomActions(value: StatelessRulesAndCustomActions): Self = StObject.set(x, "StatelessRulesAndCustomActions", value.asInstanceOf[js.Any])
     

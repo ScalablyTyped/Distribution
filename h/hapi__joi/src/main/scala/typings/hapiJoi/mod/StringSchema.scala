@@ -6,7 +6,6 @@ import typings.hapiJoi.hapiJoiStrings.NFKC
 import typings.hapiJoi.hapiJoiStrings.NFKD
 import typings.hapiJoi.hapiJoiStrings.lower
 import typings.hapiJoi.hapiJoiStrings.upper
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +27,10 @@ trait StringSchema
   def base64(): this.type = js.native
   def base64(options: Base64Options): this.type = js.native
   
-  @JSName("case")
-  def case_lower(direction: lower): this.type = js.native
   /**
     * Sets the required string case.
     */
-  @JSName("case")
-  def case_upper(direction: upper): this.type = js.native
+  def `case`(direction: upper | lower): this.type = js.native
   
   /**
     * Requires the number to be a credit card number (Using Lunh Algorithm).
@@ -137,14 +133,7 @@ trait StringSchema
     * @param [form='NFC'] - The unicode normalization form to use. Valid values: NFC [default], NFD, NFKC, NFKD
     */
   def normalize(): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFC(form: NFC): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFD(form: NFD): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFKC(form: NFKC): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFKD(form: NFKD): this.type = js.native
+  def normalize(form: NFC | NFD | NFKC | NFKD): this.type = js.native
   
   /**
     * Defines a regular expression rule.
@@ -155,9 +144,9 @@ trait StringSchema
     *     name - optional pattern name.
     *     invert - optional boolean flag. Defaults to false behavior. If specified as true, the provided pattern will be disallowed instead of required.
     */
-  def pattern(pattern: RegExp): this.type = js.native
-  def pattern(pattern: RegExp, options: String): this.type = js.native
-  def pattern(pattern: RegExp, options: StringRegexOptions): this.type = js.native
+  def pattern(pattern: js.RegExp): this.type = js.native
+  def pattern(pattern: js.RegExp, options: String): this.type = js.native
+  def pattern(pattern: js.RegExp, options: StringRegexOptions): this.type = js.native
   
   /**
     * Defines a regular expression rule.
@@ -168,9 +157,9 @@ trait StringSchema
     *     name - optional pattern name.
     *     invert - optional boolean flag. Defaults to false behavior. If specified as true, the provided pattern will be disallowed instead of required.
     */
-  def regex(pattern: RegExp): this.type = js.native
-  def regex(pattern: RegExp, options: String): this.type = js.native
-  def regex(pattern: RegExp, options: StringRegexOptions): this.type = js.native
+  def regex(pattern: js.RegExp): this.type = js.native
+  def regex(pattern: js.RegExp, options: String): this.type = js.native
+  def regex(pattern: js.RegExp, options: StringRegexOptions): this.type = js.native
   
   def replace(pattern: String, replacement: String): this.type = js.native
   /**
@@ -178,7 +167,7 @@ trait StringSchema
     * @param pattern - a regular expression object to match against, or a string of which all occurrences will be replaced.
     * @param replacement - the string that will replace the pattern.
     */
-  def replace(pattern: RegExp, replacement: String): this.type = js.native
+  def replace(pattern: js.RegExp, replacement: String): this.type = js.native
   
   /**
     * Requires the string value to only contain a-z, A-Z, 0-9, and underscore _.
@@ -190,7 +179,7 @@ trait StringSchema
     * @param [enabled=true] - optional parameter defaulting to true which allows you to reset the behavior of trim by providing a falsy value.
     */
   def trim(): this.type = js.native
-  def trim(enabled: js.Any): this.type = js.native
+  def trim(enabled: Any): this.type = js.native
   
   /**
     * Specifies whether the string.max() limit should be used as a truncation.

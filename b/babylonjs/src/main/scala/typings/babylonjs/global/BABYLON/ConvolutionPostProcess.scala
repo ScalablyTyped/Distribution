@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ConvolutionPostProcess")
 @js.native
-class ConvolutionPostProcess protected ()
+open class ConvolutionPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ConvolutionPostProcess {
   /**
@@ -368,9 +368,15 @@ object ConvolutionPostProcess {
   def SharpenKernel: js.Array[Double] = js.native
   inline def SharpenKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharpenKernel")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String

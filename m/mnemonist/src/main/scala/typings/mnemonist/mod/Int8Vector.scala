@@ -1,11 +1,10 @@
 package typings.mnemonist.mod
 
-import typings.mnemonist.vectorMod.TypedVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "Int8Vector")
 @js.native
-class Int8Vector () extends TypedVector
-
+open class Int8Vector ()
+  extends typings.mnemonist.vectorMod.Int8Vector

@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait RecycleBinItem
   
   def get_deletedBy(): User = js.native
   
-  def get_deletedDate(): Date = js.native
+  def get_deletedDate(): js.Date = js.native
   
   def get_dirName(): String = js.native
   

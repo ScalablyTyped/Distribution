@@ -18,7 +18,7 @@ trait Shading extends StObject {
   
   var ForegroundPatternColorIndex: WdColorIndex
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Texture: WdTextureIndex
   
@@ -34,7 +34,7 @@ object Shading {
     Creator: Double,
     ForegroundPatternColor: WdColor,
     ForegroundPatternColorIndex: WdColorIndex,
-    Parent: js.Any,
+    Parent: Any,
     Texture: WdTextureIndex,
     WordDotShading_typekey: Shading
   ): Shading = {
@@ -57,7 +57,7 @@ object Shading {
     
     inline def setForegroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "ForegroundPatternColorIndex", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTexture(value: WdTextureIndex): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
     

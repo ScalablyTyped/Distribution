@@ -29,7 +29,7 @@ object ListBusinessReportSchedulesResponse {
     
     inline def setBusinessReportSchedulesUndefined: Self = StObject.set(x, "BusinessReportSchedules", js.undefined)
     
-    inline def setBusinessReportSchedulesVarargs(value: BusinessReportSchedule*): Self = StObject.set(x, "BusinessReportSchedules", js.Array(value :_*))
+    inline def setBusinessReportSchedulesVarargs(value: BusinessReportSchedule*): Self = StObject.set(x, "BusinessReportSchedules", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

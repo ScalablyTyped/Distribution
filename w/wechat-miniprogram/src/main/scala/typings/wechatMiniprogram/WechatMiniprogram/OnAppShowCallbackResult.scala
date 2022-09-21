@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnAppShowCallbackResult extends StObject {
   
+  /** 打开的文件信息数组，只有从聊天素材场景打开（scene为1173）才会携带该参数 */
+  var forwardMaterials: js.Array[ForwardMaterials]
+  
   /** 小程序切前台的路径 (代码包路径) */
   var path: String
   
@@ -23,12 +26,22 @@ trait OnAppShowCallbackResult extends StObject {
 }
 object OnAppShowCallbackResult {
   
-  inline def apply(path: String, query: IAnyObject, referrerInfo: ReferrerInfo, scene: Double): OnAppShowCallbackResult = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
+  inline def apply(
+    forwardMaterials: js.Array[ForwardMaterials],
+    path: String,
+    query: IAnyObject,
+    referrerInfo: ReferrerInfo,
+    scene: Double
+  ): OnAppShowCallbackResult = {
+    val __obj = js.Dynamic.literal(forwardMaterials = forwardMaterials.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnAppShowCallbackResult]
   }
   
   extension [Self <: OnAppShowCallbackResult](x: Self) {
+    
+    inline def setForwardMaterials(value: js.Array[ForwardMaterials]): Self = StObject.set(x, "forwardMaterials", value.asInstanceOf[js.Any])
+    
+    inline def setForwardMaterialsVarargs(value: ForwardMaterials*): Self = StObject.set(x, "forwardMaterials", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

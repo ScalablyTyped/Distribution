@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "CoordinateTransformation")
 @js.native
-class CoordinateTransformation protected () extends StObject {
+open class CoordinateTransformation protected () extends StObject {
   def this(source: SpatialReference, target: Dataset) = this()
   def this(source: SpatialReference, target: SpatialReference) = this()
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_adexperiencereport
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220715
 
 ## Library description:
 TypeScript typings for Ad Experience Report API v1
@@ -10,10 +10,10 @@ TypeScript typings for Ad Experience Report API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.adexperiencereport |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 845 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 618.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

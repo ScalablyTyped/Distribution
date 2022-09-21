@@ -1214,7 +1214,7 @@ object mod {
       
       inline def setDetails(value: js.Array[ResultDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      inline def setDetailsVarargs(value: ResultDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: ResultDetails*): Self = StObject.set(x, "details", js.Array(value*))
       
       inline def setFields(value: ResultFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -1278,7 +1278,7 @@ object mod {
       
       inline def setRanges(value: js.Array[Range]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      inline def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value*))
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       

@@ -2,7 +2,6 @@ package typings.angularStrap.mgcrea.ngStrap
 
 import typings.angular.mod.IAugmentedJQuery
 import typings.angularStrap.anon.Hide
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,9 +38,9 @@ object timepicker {
     var length: js.UndefOr[Double] = js.undefined
     
     // TODO
-    var maxTime: js.UndefOr[Date] = js.undefined
+    var maxTime: js.UndefOr[js.Date] = js.undefined
     
-    var minTime: js.UndefOr[Date] = js.undefined
+    var minTime: js.UndefOr[js.Date] = js.undefined
     
     var minuteStep: js.UndefOr[Double] = js.undefined
     
@@ -120,11 +119,11 @@ object timepicker {
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      inline def setMaxTime(value: Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+      inline def setMaxTime(value: js.Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
       inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
       
-      inline def setMinTime(value: Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: js.Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
       inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
       
@@ -205,7 +204,7 @@ object timepicker {
   
   type ITimepickerService = js.Function3[
     /* element */ IAugmentedJQuery, 
-    /* controller */ js.Any, 
+    /* controller */ Any, 
     /* config */ js.UndefOr[ITimepickerOptions], 
     ITimepicker
   ]

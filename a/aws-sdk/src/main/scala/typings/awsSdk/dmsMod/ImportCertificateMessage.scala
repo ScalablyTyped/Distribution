@@ -14,10 +14,10 @@ trait ImportCertificateMessage extends StObject {
   /**
     * The contents of a .pem file, which contains an X.509 certificate.
     */
-  var CertificatePem: js.UndefOr[String] = js.undefined
+  var CertificatePem: js.UndefOr[SecretString] = js.undefined
   
   /**
-    * The location of an imported Oracle Wallet certificate for use with SSL.
+    * The location of an imported Oracle Wallet certificate for use with SSL. Provide the name of a .sso file using the fileb:// prefix. You can't provide the certificate inline. Example: filebase64("${path.root}/rds-ca-2019-root.sso") 
     */
   var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.undefined
   
@@ -37,7 +37,7 @@ object ImportCertificateMessage {
     
     inline def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setCertificatePem(value: String): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: SecretString): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
     
     inline def setCertificatePemUndefined: Self = StObject.set(x, "CertificatePem", js.undefined)
     
@@ -49,6 +49,6 @@ object ImportCertificateMessage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

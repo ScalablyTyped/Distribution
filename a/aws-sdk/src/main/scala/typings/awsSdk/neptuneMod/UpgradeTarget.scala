@@ -30,6 +30,11 @@ trait UpgradeTarget extends StObject {
     * A value that indicates whether a database engine is upgraded to a major version.
     */
   var IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A value that indicates whether you can use Neptune global databases with the target engine version.
+    */
+  var SupportsGlobalDatabases: js.UndefOr[BooleanOptional] = js.undefined
 }
 object UpgradeTarget {
   
@@ -59,5 +64,9 @@ object UpgradeTarget {
     inline def setIsMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "IsMajorVersionUpgrade", value.asInstanceOf[js.Any])
     
     inline def setIsMajorVersionUpgradeUndefined: Self = StObject.set(x, "IsMajorVersionUpgrade", js.undefined)
+    
+    inline def setSupportsGlobalDatabases(value: BooleanOptional): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsGlobalDatabasesUndefined: Self = StObject.set(x, "SupportsGlobalDatabases", js.undefined)
   }
 }

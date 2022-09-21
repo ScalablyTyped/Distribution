@@ -1,6 +1,5 @@
 package typings.reactTable.anon
 
-import typings.reactTable.mod.CellValue
 import typings.reactTable.mod.IdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,21 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1`[D /* <: js.Object */] extends StObject {
   
-  var accessor: js.UndefOr[typings.reactTable.mod.Accessor[D] | IdType[D]] = js.undefined
+  var accessor: IdType[D]
 }
 object `1` {
   
-  inline def apply[D /* <: js.Object */](): `1`[D] = {
-    val __obj = js.Dynamic.literal()
+  inline def apply[D /* <: js.Object */](accessor: IdType[D]): `1`[D] = {
+    val __obj = js.Dynamic.literal(accessor = accessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`[D]]
   }
   
   extension [Self <: `1`[?], D /* <: js.Object */](x: Self & `1`[D]) {
     
-    inline def setAccessor(value: typings.reactTable.mod.Accessor[D] | IdType[D]): Self = StObject.set(x, "accessor", value.asInstanceOf[js.Any])
-    
-    inline def setAccessorFunction3(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
-    
-    inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
+    inline def setAccessor(value: IdType[D]): Self = StObject.set(x, "accessor", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Typings are for version 0.9
 | ------------------ | :-------------: |
 | Full name          | libxslt |
 | Keywords           | xml, xsl, xslt, libxslt, bindings |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 29588 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4146.333333333333 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/albanm/node-libxslt)

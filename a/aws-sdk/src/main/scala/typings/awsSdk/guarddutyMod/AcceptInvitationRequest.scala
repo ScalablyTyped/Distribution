@@ -12,12 +12,12 @@ trait AcceptInvitationRequest extends StObject {
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
-    * The value that is used to validate the master account to the member account.
+    * The value that is used to validate the administrator account to the member account.
     */
   var InvitationId: String
   
   /**
-    * The account ID of the master GuardDuty account whose invitation you're accepting.
+    * The account ID of the GuardDuty administrator account whose invitation you're accepting.
     */
   var MasterId: String
 }

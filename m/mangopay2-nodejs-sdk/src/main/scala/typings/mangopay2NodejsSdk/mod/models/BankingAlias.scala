@@ -1,9 +1,9 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialBankingAliasData
+import typings.mangopay2NodejsSdk.bankingAliasMod.bankingAlias.BankingAliasType
+import typings.mangopay2NodejsSdk.bankingAliasMod.bankingAlias.IBANBankingAliasData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN
-import typings.mangopay2NodejsSdk.mod.bankingAlias.BankingAliasType
-import typings.mangopay2NodejsSdk.mod.bankingAlias.IBANBankingAliasData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankingAlias")
 @js.native
-class BankingAlias protected ()
+open class BankingAlias protected ()
   extends EntityBase[IBANBankingAliasData]
      with IBANBankingAliasData {
   def this(data: PartialBankingAliasData) = this()

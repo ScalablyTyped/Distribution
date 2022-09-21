@@ -9,7 +9,7 @@ object oidArrayMod {
   
   @JSImport("nodegit/oid-array", "Oidarray")
   @js.native
-  class Oidarray () extends StObject {
+  open class Oidarray () extends StObject {
     
     var count: Double = js.native
     

@@ -1,6 +1,5 @@
 package typings.parse.mod.global.Parse.Cloud
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait CookieOptions extends StObject {
   
   var domain: js.UndefOr[String] = js.undefined
   
-  var expires: js.UndefOr[Date] = js.undefined
+  var expires: js.UndefOr[js.Date] = js.undefined
   
   var httpOnly: js.UndefOr[Boolean] = js.undefined
   
@@ -32,7 +31,7 @@ object CookieOptions {
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     

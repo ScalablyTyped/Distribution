@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useLazyLoadQueryMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useLazyLoadQuery", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/useLazyLoadQuery", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

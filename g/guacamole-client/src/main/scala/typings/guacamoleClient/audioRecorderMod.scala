@@ -10,7 +10,7 @@ object audioRecorderMod {
   
   @JSImport("guacamole-client/lib/AudioRecorder", "AudioRecorder")
   @js.native
-  class AudioRecorder () extends StObject {
+  open class AudioRecorder () extends StObject {
     
     /**
       * Callback which is invoked when the audio recording process has stopped

@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventprocessorMod {
   
-  type EventProcessor = js.Function2[
-    /* event */ Event, 
-    /* hint */ js.UndefOr[EventHint], 
-    (js.Thenable[Event | Null]) | Event | Null
-  ]
+  @js.native
+  trait EventProcessor extends StObject {
+    
+    def apply(event: Event, hint: EventHint): (js.Thenable[Event | Null]) | Event | Null = js.native
+    
+    var id: js.UndefOr[String] = js.native
+  }
 }

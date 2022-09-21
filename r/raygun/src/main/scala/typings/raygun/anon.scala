@@ -5,6 +5,7 @@ import typings.raygun.typesMod.CustomData
 import typings.raygun.typesMod.Environment
 import typings.raygun.typesMod.HTTPOptions
 import typings.raygun.typesMod.RequestDetails
+import typings.raygun.typesMod.RequestParams
 import typings.raygun.typesMod.Tag
 import typings.raygun.typesMod.UserDetails
 import org.scalablytyped.runtime.StObject
@@ -12,40 +13,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Host extends StObject {
-    
-    var host: String
-  }
-  object Host {
-    
-    inline def apply(host: String): Host = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Host]
-    }
-    
-    extension [Self <: Host](x: Self) {
-      
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Hostname extends StObject {
-    
-    var hostname: String
-  }
-  object Hostname {
-    
-    inline def apply(hostname: String): Hostname = {
-      val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Hostname]
-    }
-    
-    extension [Self <: Hostname](x: Self) {
-      
-      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait HttpOptions extends StObject {
     
@@ -159,7 +126,7 @@ object anon {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setUser(value: UserDetails): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
@@ -172,6 +139,110 @@ object anon {
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    }
+  }
+  
+  /* Inlined {  hostname :string} & raygun.raygun/build/types.CommonRequestParams */
+  trait hostnamestringCommonReque
+    extends StObject
+       with RequestParams {
+    
+    var body: js.Object
+    
+    var headers: js.Object
+    
+    var hostname: String
+    
+    var ip: String
+    
+    var method: String
+    
+    var path: String
+    
+    var query: js.Object
+  }
+  object hostnamestringCommonReque {
+    
+    inline def apply(
+      body: js.Object,
+      headers: js.Object,
+      hostname: String,
+      ip: String,
+      method: String,
+      path: String,
+      query: js.Object
+    ): hostnamestringCommonReque = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      __obj.asInstanceOf[hostnamestringCommonReque]
+    }
+    
+    extension [Self <: hostnamestringCommonReque](x: Self) {
+      
+      inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined {  host :string} & raygun.raygun/build/types.CommonRequestParams */
+  trait hoststringCommonRequestPa
+    extends StObject
+       with RequestParams {
+    
+    var body: js.Object
+    
+    var headers: js.Object
+    
+    var host: String
+    
+    var ip: String
+    
+    var method: String
+    
+    var path: String
+    
+    var query: js.Object
+  }
+  object hoststringCommonRequestPa {
+    
+    inline def apply(
+      body: js.Object,
+      headers: js.Object,
+      host: String,
+      ip: String,
+      method: String,
+      path: String,
+      query: js.Object
+    ): hoststringCommonRequestPa = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      __obj.asInstanceOf[hoststringCommonRequestPa]
+    }
+    
+    extension [Self <: hoststringCommonRequestPa](x: Self) {
+      
+      inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
 }

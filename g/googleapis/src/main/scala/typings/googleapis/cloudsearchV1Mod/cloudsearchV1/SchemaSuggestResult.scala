@@ -4,13 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * One suggestion result.
-  */
 trait SchemaSuggestResult extends StObject {
   
+  /**
+    * This is present when the suggestion indicates a person. It contains more information about the person - like their email ID, name etc.
+    */
   var peopleSuggestion: js.UndefOr[SchemaPeopleSuggestion] = js.undefined
   
+  /**
+    * This field will be present if the suggested query is a word/phrase completion.
+    */
   var querySuggestion: js.UndefOr[SchemaQuerySuggestion] = js.undefined
   
   /**
@@ -19,10 +22,9 @@ trait SchemaSuggestResult extends StObject {
   var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
-    * The suggested query that will be used for search, when the user clicks on
-    * the suggestion
+    * The suggested query that will be used for search, when the user clicks on the suggestion
     */
-  var suggestedQuery: js.UndefOr[String] = js.undefined
+  var suggestedQuery: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSuggestResult {
   
@@ -46,6 +48,8 @@ object SchemaSuggestResult {
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedQueryNull: Self = StObject.set(x, "suggestedQuery", null)
     
     inline def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }

@@ -75,7 +75,7 @@ object mod {
       
       inline def setSubcategories(value: js.Array[Category]): Self = StObject.set(x, "subcategories", value.asInstanceOf[js.Any])
       
-      inline def setSubcategoriesVarargs(value: Category*): Self = StObject.set(x, "subcategories", js.Array(value :_*))
+      inline def setSubcategoriesVarargs(value: Category*): Self = StObject.set(x, "subcategories", js.Array(value*))
     }
   }
   
@@ -162,7 +162,7 @@ object mod {
       
       inline def setTorrents(value: js.Array[TVTorrent]): Self = StObject.set(x, "torrents", value.asInstanceOf[js.Any])
       
-      inline def setTorrentsVarargs(value: TVTorrent*): Self = StObject.set(x, "torrents", js.Array(value :_*))
+      inline def setTorrentsVarargs(value: TVTorrent*): Self = StObject.set(x, "torrents", js.Array(value*))
     }
   }
   

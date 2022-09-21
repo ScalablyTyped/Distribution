@@ -14,7 +14,7 @@ trait ListLevels extends StObject {
   
   def Item(Index: Double): ListLevel
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.ListLevels_typekey")
   var WordDotListLevels_typekey: ListLevels
@@ -26,7 +26,7 @@ object ListLevels {
     Count: Double,
     Creator: Double,
     Item: Double => ListLevel,
-    Parent: js.Any,
+    Parent: Any,
     WordDotListLevels_typekey: ListLevels
   ): ListLevels = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object ListLevels {
     
     inline def setItem(value: Double => ListLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotListLevels_typekey(value: ListLevels): Self = StObject.set(x, "Word.ListLevels_typekey", value.asInstanceOf[js.Any])
   }

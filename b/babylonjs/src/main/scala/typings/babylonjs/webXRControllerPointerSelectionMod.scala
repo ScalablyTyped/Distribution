@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.mathColorMod.Color3
+import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webXRAbstractFeatureMod.WebXRAbstractFeature
@@ -17,7 +18,7 @@ object webXRControllerPointerSelectionMod {
   
   @JSImport("babylonjs/XR/features/WebXRControllerPointerSelection", "WebXRControllerPointerSelection")
   @js.native
-  class WebXRControllerPointerSelection protected () extends WebXRAbstractFeature {
+  open class WebXRControllerPointerSelection protected () extends WebXRAbstractFeature {
     /**
       * constructs a new background remover module
       * @param _xrSessionManager the session manager for this module
@@ -25,39 +26,56 @@ object webXRControllerPointerSelectionMod {
       */
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRControllerPointerSelectionOptions) = this()
     
-    /* private */ var _attachController: js.Any = js.native
+    /* private */ var _attachController: Any = js.native
     
-    /* private */ var _attachGazeMode: js.Any = js.native
+    /* private */ var _attachGazeMode: Any = js.native
     
-    /* private */ var _attachScreenRayMode: js.Any = js.native
+    /* private */ var _attachScreenRayMode: Any = js.native
     
-    /* private */ var _attachTrackedPointerRayMode: js.Any = js.native
+    /* private */ var _attachTrackedPointerRayMode: Any = js.native
     
-    /* private */ var _attachedController: js.Any = js.native
+    /* private */ var _attachedController: Any = js.native
     
-    /* private */ var _controllers: js.Any = js.native
+    /* private */ var _augmentPointerInit: Any = js.native
     
-    /* private */ var _convertNormalToDirectionOfRay: js.Any = js.native
+    /* private */ var _controllers: Any = js.native
     
-    /* private */ var _detachController: js.Any = js.native
+    /* private */ var _convertNormalToDirectionOfRay: Any = js.native
     
-    /* private */ var _generateNewMeshPair: js.Any = js.native
+    /* private */ var _detachController: Any = js.native
     
-    /* private */ var _identityMatrix: js.Any = js.native
+    /* private */ var _generateNewMeshPair: Any = js.native
     
-    /* private */ val _options: js.Any = js.native
+    /**
+      * @param id
+      * @hidden
+      */
+    def _getPointerSelectionDisabledByPointerId(id: Double): Boolean = js.native
     
-    /* private */ var _pickingMoved: js.Any = js.native
+    /* private */ var _identityMatrix: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
-    /* private */ var _screenCoordinatesRef: js.Any = js.native
+    /* private */ var _pickingMoved: Any = js.native
     
-    /* private */ var _tmpVectorForPickCompare: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _updatePointerDistance: js.Any = js.native
+    /* private */ var _screenCoordinatesRef: Any = js.native
     
-    /* private */ var _viewportRef: js.Any = js.native
+    /**
+      * @param id
+      * @param state
+      * @hidden
+      */
+    def _setPointerSelectionDisabledByPointerId(id: Double, state: Boolean): Unit = js.native
+    
+    /* private */ var _tmpVectorForPickCompare: Any = js.native
+    
+    /* private */ var _updatePointerDistance: Any = js.native
+    
+    /* private */ def _utilityLayerScene: Any = js.native
+    
+    /* private */ var _viewportRef: Any = js.native
     
     /**
       * Disable lighting on the laser pointer (so it will always be visible)
@@ -147,13 +165,27 @@ object webXRControllerPointerSelectionMod {
     @js.native
     val Version: Double = js.native
     
-    @JSImport("babylonjs/XR/features/WebXRControllerPointerSelection", "WebXRControllerPointerSelection._idCounter")
+    @JSImport("babylonjs/XR/features/WebXRControllerPointerSelection", "WebXRControllerPointerSelection._IdCounter")
     @js.native
-    def _idCounter: js.Any = js.native
-    inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+    def _IdCounter: Any = js.native
+    inline def _IdCounter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IdCounter")(x.asInstanceOf[js.Any])
   }
   
   trait IWebXRControllerPointerSelectionOptions extends StObject {
+    
+    /**
+      * A function that will be called when a new laser pointer mesh is generated.
+      * This function should return a mesh that will be used as the laser pointer mesh.
+      * The height (y) of the mesh must be 1.
+      */
+    var customLasterPointerMeshGenerator: js.UndefOr[js.Function0[AbstractMesh]] = js.undefined
+    
+    /**
+      * A function that will be called when a new selection mesh is generated.
+      * This function should return a mesh that will be used as the selection mesh.
+      * The default is a torus with a 0.01 diameter and 0.0075 thickness .
+      */
+    var customSelectionMeshGenerator: js.UndefOr[js.Function0[Mesh]] = js.undefined
     
     /**
       * if provided, this scene will be used to render meshes.
@@ -255,6 +287,14 @@ object webXRControllerPointerSelectionMod {
     }
     
     extension [Self <: IWebXRControllerPointerSelectionOptions](x: Self) {
+      
+      inline def setCustomLasterPointerMeshGenerator(value: () => AbstractMesh): Self = StObject.set(x, "customLasterPointerMeshGenerator", js.Any.fromFunction0(value))
+      
+      inline def setCustomLasterPointerMeshGeneratorUndefined: Self = StObject.set(x, "customLasterPointerMeshGenerator", js.undefined)
+      
+      inline def setCustomSelectionMeshGenerator(value: () => Mesh): Self = StObject.set(x, "customSelectionMeshGenerator", js.Any.fromFunction0(value))
+      
+      inline def setCustomSelectionMeshGeneratorUndefined: Self = StObject.set(x, "customSelectionMeshGenerator", js.undefined)
       
       inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
       

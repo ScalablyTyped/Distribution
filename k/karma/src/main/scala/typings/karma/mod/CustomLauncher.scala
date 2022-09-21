@@ -33,7 +33,7 @@ object CustomLauncher {
     
     inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

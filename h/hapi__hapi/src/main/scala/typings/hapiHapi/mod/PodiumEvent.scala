@@ -1,6 +1,5 @@
 package typings.hapiHapi.mod
 
-import typings.hapiPodium.mod.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +18,8 @@ trait PodiumEvent[K /* <: String */, T] extends StObject {
   
   def removeAllListeners(criteria: K): this.type = js.native
   
-  def removeListener(criteria: K, listener: Listener): this.type = js.native
+  def removeListener(
+    criteria: K,
+    listener: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium.Listener */ Any
+  ): this.type = js.native
 }

@@ -12,7 +12,7 @@ object com_ {
       
       var command: String
       
-      var metadata: js.Any
+      var metadata: Any
       
       var scope: IInvocator
       
@@ -20,7 +20,7 @@ object com_ {
     }
     object IFontoMessageEventData {
       
-      inline def apply(command: String, metadata: js.Any, scope: IInvocator, `type`: String): IFontoMessageEventData = {
+      inline def apply(command: String, metadata: Any, scope: IInvocator, `type`: String): IFontoMessageEventData = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IFontoMessageEventData]
@@ -30,7 +30,7 @@ object com_ {
         
         inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
         inline def setScope(value: IInvocator): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
@@ -78,7 +78,7 @@ object com_ {
         
         inline def setDocumentIds(value: js.Array[String]): Self = StObject.set(x, "documentIds", value.asInstanceOf[js.Any])
         
-        inline def setDocumentIdsVarargs(value: String*): Self = StObject.set(x, "documentIds", js.Array(value :_*))
+        inline def setDocumentIdsVarargs(value: String*): Self = StObject.set(x, "documentIds", js.Array(value*))
         
         inline def setEditSessionToken(value: String): Self = StObject.set(x, "editSessionToken", value.asInstanceOf[js.Any])
         

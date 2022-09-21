@@ -6,18 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpeechSynthesisUtteranceEventMap extends StObject {
   
+  /* standard dom */
   var boundary: SpeechSynthesisEvent
   
+  /* standard dom */
   var end: SpeechSynthesisEvent
   
+  /* standard dom */
   var error: SpeechSynthesisErrorEvent
   
+  /* standard dom */
   var mark: SpeechSynthesisEvent
   
+  /* standard dom */
   var pause: SpeechSynthesisEvent
   
+  /* standard dom */
   var resume: SpeechSynthesisEvent
   
+  /* standard dom */
   var start: SpeechSynthesisEvent
 }
 object SpeechSynthesisUtteranceEventMap {

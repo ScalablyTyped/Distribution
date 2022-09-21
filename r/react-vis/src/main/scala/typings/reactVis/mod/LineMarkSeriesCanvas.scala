@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "LineMarkSeriesCanvas")
 @js.native
-class LineMarkSeriesCanvas protected () extends AbstractSeries[LineMarkSeriesCanvasProps] {
+open class LineMarkSeriesCanvas protected () extends AbstractSeries[LineMarkSeriesCanvasProps] {
   def this(props: LineMarkSeriesCanvasProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LineMarkSeriesCanvasProps, context: js.Any) = this()
+  def this(props: LineMarkSeriesCanvasProps, context: Any) = this()
 }

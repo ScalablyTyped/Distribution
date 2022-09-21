@@ -10,13 +10,12 @@ object inputNativeMod {
   
   @JSImport("antd-mobile-rn/lib/input-item/Input.native", JSImport.Default)
   @js.native
-  class default protected () extends Input {
+  open class default protected () extends Input {
     def this(props: TextInputProps) = this()
   }
   
   @js.native
-  trait Input
-    extends Component[TextInputProps, js.Any, js.Any] {
+  trait Input extends Component[TextInputProps, Any, Any] {
     
     def clear(): Unit = js.native
     

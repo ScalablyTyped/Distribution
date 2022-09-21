@@ -9,17 +9,17 @@ trait JsonClassifier extends StObject {
   /**
     * The time that this classifier was registered.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
+    * A JsonPath string defining the JSON data for the classifier to classify. Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
     */
   var JsonPath: typings.awsSdk.glueMod.JsonPath
   
   /**
     * The time that this classifier was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the classifier.
@@ -40,13 +40,13 @@ object JsonClassifier {
   
   extension [Self <: JsonClassifier](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

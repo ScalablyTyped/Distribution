@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.CopyBackupRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,6 @@ trait Key extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the backup to be created. The `backup_id` appended to `parent` forms the full backup name of the form `projects//instances//backups/`. */
-  var backupId: js.UndefOr[String] = js.undefined
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -31,10 +29,7 @@ trait Key extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The name of the instance in which the backup will be created. This must be the same instance that contains the database the backup will be created from. The backup
-    * will be stored in the location(s) specified in the instance configuration of this instance. Values are of the form `projects//instances/`.
-    */
+  /** Required. The name of the destination instance that will contain the backup copy. Values are of the form: `projects//instances/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,6 +37,9 @@ trait Key extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: CopyBackupRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +49,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(parent: String): Key = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: CopyBackupRequest): Key = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -69,10 +67,6 @@ object Key {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
-    
-    inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
-    
-    inline def setBackupIdUndefined: Self = StObject.set(x, "backupId", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
@@ -99,6 +93,8 @@ object Key {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CopyBackupRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

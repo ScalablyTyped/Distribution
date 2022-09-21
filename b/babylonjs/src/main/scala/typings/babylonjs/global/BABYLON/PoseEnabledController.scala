@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PoseEnabledController")
 @js.native
-class PoseEnabledController protected ()
+open class PoseEnabledController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PoseEnabledController {
   /**
     * Creates a new PoseEnabledController from a gamepad
     * @param browserGamepad the gamepad that the PoseEnabledController should be created from
     */
-  def this(browserGamepad: js.Any) = this()
+  def this(browserGamepad: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.
@@ -62,5 +62,5 @@ object PoseEnabledController {
     */
   @JSGlobal("BABYLON.PoseEnabledController.POINTING_POSE")
   @js.native
-  val POINTING_POSE: String = js.native
+  val POINTING_POSE: /* "POINTING_POSE" */ String = js.native
 }

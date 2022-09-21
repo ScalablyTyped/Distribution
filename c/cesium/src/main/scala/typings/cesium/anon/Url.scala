@@ -1,6 +1,5 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.GoogleEarthEnterpriseMetadata
 import typings.cesium.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,14 +11,12 @@ trait Url extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var metadata: GoogleEarthEnterpriseMetadata
-  
   var url: Resource | String
 }
 object Url {
   
-  inline def apply(metadata: GoogleEarthEnterpriseMetadata, url: Resource | String): Url = {
-    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(url: Resource | String): Url = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
   }
   
@@ -32,8 +29,6 @@ object Url {
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
-    
-    inline def setMetadata(value: GoogleEarthEnterpriseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

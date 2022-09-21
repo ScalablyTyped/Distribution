@@ -1,6 +1,5 @@
 package typings.azdata.mod.nb
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.azdata.azdataStrings.execute_result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ trait IExecuteResult
 }
 object IExecuteResult {
   
-  inline def apply(data: StringDictionary[js.Any], execution_count: Double): IExecuteResult = {
+  inline def apply(data: DisplayResultData, execution_count: Double): IExecuteResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any], output_type = "execute_result")
     __obj.asInstanceOf[IExecuteResult]
   }

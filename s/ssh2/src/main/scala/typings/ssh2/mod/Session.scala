@@ -1,9 +1,7 @@
 package typings.ssh2.mod
 
-import typings.node.eventsMod.EventEmitter
 import typings.ssh2.ssh2Strings.`auth-agent`
 import typings.ssh2.ssh2Strings.`window-change`
-import typings.ssh2.ssh2Strings.close
 import typings.ssh2.ssh2Strings.env
 import typings.ssh2.ssh2Strings.exec
 import typings.ssh2.ssh2Strings.pty
@@ -12,41 +10,28 @@ import typings.ssh2.ssh2Strings.shell
 import typings.ssh2.ssh2Strings.signal
 import typings.ssh2.ssh2Strings.subsystem
 import typings.ssh2.ssh2Strings.x11
-import typings.ssh2Streams.mod.SFTPStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Session extends EventEmitter {
+trait Session extends ServerChannel {
   
-  def on(event: String, listener: js.Function): this.type = js.native
-  def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
     * Emitted when the client has requested incoming ssh-agent requests be forwarded to them.
     */
   @JSName("on")
   def on_authagent(
     event: `auth-agent`,
-    listener: js.Function2[/* accept */ SessionAcceptReject, /* reject */ SessionAcceptReject, Unit]
+    listener: js.Function2[/* accept */ SessionAccept, /* reject */ RejectConnection, Unit]
   ): this.type = js.native
-  /**
-    * Emitted when the session has closed.
-    */
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Emitted when the client requested an environment variable to be set for this session.
     */
   @JSName("on")
   def on_env(
     event: env,
-    listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
-      /* reject */ SessionAcceptReject, 
-      /* info */ SetEnvInfo, 
-      Unit
-    ]
+    listener: js.Function3[/* accept */ SessionAccept, /* reject */ RejectConnection, /* info */ SetEnvInfo, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has requested execution of a command string.
@@ -55,8 +40,8 @@ trait Session extends EventEmitter {
   def on_exec(
     event: exec,
     listener: js.Function3[
-      /* accept */ js.Function0[ServerChannel], 
-      /* reject */ SessionAcceptReject, 
+      /* accept */ AcceptConnection[ServerChannel], 
+      /* reject */ RejectConnection, 
       /* info */ ExecInfo, 
       Unit
     ]
@@ -69,8 +54,8 @@ trait Session extends EventEmitter {
   def on_pty(
     event: pty,
     listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
-      /* reject */ SessionAcceptReject, 
+      /* accept */ SessionAccept, 
+      /* reject */ RejectConnection, 
       /* info */ PseudoTtyInfo, 
       Unit
     ]
@@ -81,7 +66,7 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_sftp(
     event: sftp,
-    listener: js.Function2[/* accept */ js.Function0[SFTPStream], /* reject */ SessionAcceptReject, Unit]
+    listener: js.Function2[/* accept */ AcceptSftpConnection, /* reject */ RejectConnection, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has requested an interactive shell.
@@ -89,7 +74,7 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_shell(
     event: shell,
-    listener: js.Function2[/* accept */ js.Function0[ServerChannel], /* reject */ SessionAcceptReject, Unit]
+    listener: js.Function2[/* accept */ AcceptConnection[ServerChannel], /* reject */ RejectConnection, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has sent a POSIX signal.
@@ -97,12 +82,7 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_signal(
     event: signal,
-    listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
-      /* reject */ SessionAcceptReject, 
-      /* info */ SignalInfo, 
-      Unit
-    ]
+    listener: js.Function3[/* accept */ SessionAccept, /* reject */ RejectConnection, /* info */ SignalInfo, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has requested an arbitrary subsystem.
@@ -111,8 +91,8 @@ trait Session extends EventEmitter {
   def on_subsystem(
     event: subsystem,
     listener: js.Function3[
-      /* accept */ js.Function0[ServerChannel], 
-      /* reject */ SessionAcceptReject, 
+      /* accept */ AcceptConnection[ServerChannel], 
+      /* reject */ RejectConnection, 
       /* info */ SubsystemInfo, 
       Unit
     ]
@@ -124,8 +104,8 @@ trait Session extends EventEmitter {
   def on_windowchange(
     event: `window-change`,
     listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
-      /* reject */ SessionAcceptReject, 
+      /* accept */ SessionAccept, 
+      /* reject */ RejectConnection, 
       /* info */ WindowChangeInfo, 
       Unit
     ]
@@ -136,11 +116,6 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_x11(
     event: x11,
-    listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
-      /* reject */ SessionAcceptReject, 
-      /* info */ X11Info, 
-      Unit
-    ]
+    listener: js.Function3[/* accept */ SessionAccept, /* reject */ RejectConnection, /* info */ X11Info, Unit]
   ): this.type = js.native
 }

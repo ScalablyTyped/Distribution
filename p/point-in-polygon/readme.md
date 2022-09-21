@@ -1,7 +1,7 @@
 
 # Scala.js typings for point-in-polygon
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 determine if a point is inside a polygon with a ray intersection counting algorithm
@@ -10,10 +10,10 @@ determine if a point is inside a polygon with a ray intersection counting algori
 | ------------------ | :-------------: |
 | Full name          | point-in-polygon |
 | Keywords           | point, polygon, inside |
-| # releases         | 0 |
-| # dependents       | 93 |
-| # downloads        | 8246820 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1233471.6666666667 |
+| # stars            | 885.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/point-in-polygon#readme)

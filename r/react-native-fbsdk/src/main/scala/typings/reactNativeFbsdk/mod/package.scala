@@ -1,21 +1,23 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type GraphRequestCallback = js.Function2[/* error */ js.UndefOr[js.Object], /* result */ js.UndefOr[js.Object], scala.Unit]
+type GraphRequestCallback = js.Function2[/* error */ js.UndefOr[js.Object], /* result */ js.UndefOr[js.Object], Unit]
 
-type GraphRequestParameters = org.scalablytyped.runtime.StringDictionary[js.Object]
+type GraphRequestParameters = StringDictionary[js.Object]
 
-type LoginBehavior = typings.reactNativeFbsdk.mod.LoginBehaviorIOS | typings.reactNativeFbsdk.mod.LoginBehaviorAndroid
+type LoginBehavior = LoginBehaviorIOS | LoginBehaviorAndroid
 
-type LoginBehaviorIOS = typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser
+type LoginBehaviorIOS = browser
 
-type OpenGraphProperties = org.scalablytyped.runtime.StringDictionary[typings.reactNativeFbsdk.mod.OpenGraphValue]
+type OpenGraphProperties = StringDictionary[OpenGraphValue]
 
-type Params = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
+type Params = StringDictionary[String | Double]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.public_profile
@@ -64,4 +66,4 @@ type Params = org.scalablytyped.runtime.StringDictionary[java.lang.String | scal
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.pages_messaging_phone_number
   - java.lang.String
 */
-type Permissions = typings.reactNativeFbsdk.mod._Permissions | java.lang.String
+type Permissions = _Permissions | String

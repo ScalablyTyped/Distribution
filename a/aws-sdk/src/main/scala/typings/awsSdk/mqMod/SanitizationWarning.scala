@@ -19,12 +19,12 @@ trait SanitizationWarning extends StObject {
   /**
     * Required. The reason for which the XML elements or attributes were sanitized.
     */
-  var Reason: js.UndefOr[SanitizationWarningReason] = js.undefined
+  var Reason: SanitizationWarningReason
 }
 object SanitizationWarning {
   
-  inline def apply(): SanitizationWarning = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Reason: SanitizationWarningReason): SanitizationWarning = {
+    val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SanitizationWarning]
   }
   
@@ -39,7 +39,5 @@ object SanitizationWarning {
     inline def setElementNameUndefined: Self = StObject.set(x, "ElementName", js.undefined)
     
     inline def setReason(value: SanitizationWarningReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
-    
-    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

@@ -4,32 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Permissions")
 @js.native
-class ResourcePermissions protected () extends StObject {
+open class ResourcePermissions protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * drive.permissions.delete
-    * @desc Deletes a permission from a file or Team Drive.
-    * @alias drive.permissions.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {string} params.permissionId The ID for the permission.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -37,8 +24,8 @@ class ResourcePermissions protected () extends StObject {
   def delete(params: ParamsResourcePermissionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourcePermissionsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourcePermissionsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -46,22 +33,69 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.get
-    * @desc Gets a permission by ID.
-    * @alias drive.permissions.get
-    * @memberOf! ()
+    * Deletes a permission from a file or shared drive.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {string} params.permissionId The ID for the permission.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.delete({
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the permission.
+    *     permissionId: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourcePermissionsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourcePermissionsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaPermission] = js.native
   def get(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
@@ -69,8 +103,8 @@ class ResourcePermissions protected () extends StObject {
   def get(params: ParamsResourcePermissionsGet, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def get(
     params: ParamsResourcePermissionsGet,
-    options: BodyResponseCallback[SchemaPermission],
-    callback: BodyResponseCallback[SchemaPermission]
+    options: BodyResponseCallback[Readable | SchemaPermission],
+    callback: BodyResponseCallback[Readable | SchemaPermission]
   ): Unit = js.native
   def get(params: ParamsResourcePermissionsGet, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def get(
@@ -78,19 +112,97 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.getIdForEmail
-    * @desc Returns the permission ID for an email address.
-    * @alias drive.permissions.getIdForEmail
-    * @memberOf! ()
+    * Gets a permission by ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.email The email address for which to return a permission ID
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/drive.metadata',
+    *       'https://www.googleapis.com/auth/drive.metadata.readonly',
+    *       'https://www.googleapis.com/auth/drive.photos.readonly',
+    *       'https://www.googleapis.com/auth/drive.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.get({
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the permission.
+    *     permissionId: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "additionalRoles": [],
+    *   //   "authKey": "my_authKey",
+    *   //   "deleted": false,
+    *   //   "domain": "my_domain",
+    *   //   "emailAddress": "my_emailAddress",
+    *   //   "etag": "my_etag",
+    *   //   "expirationDate": "my_expirationDate",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "pendingOwner": false,
+    *   //   "permissionDetails": [],
+    *   //   "photoLink": "my_photoLink",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "teamDrivePermissionDetails": [],
+    *   //   "type": "my_type",
+    *   //   "value": "my_value",
+    *   //   "view": "my_view",
+    *   //   "withLink": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourcePermissionsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourcePermissionsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getIdForEmail(): GaxiosPromise[SchemaPermissionId] = js.native
   def getIdForEmail(callback: BodyResponseCallback[SchemaPermissionId]): Unit = js.native
   def getIdForEmail(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermissionId] = js.native
@@ -98,8 +210,8 @@ class ResourcePermissions protected () extends StObject {
   def getIdForEmail(params: ParamsResourcePermissionsGetidforemail, callback: BodyResponseCallback[SchemaPermissionId]): Unit = js.native
   def getIdForEmail(
     params: ParamsResourcePermissionsGetidforemail,
-    options: BodyResponseCallback[SchemaPermissionId],
-    callback: BodyResponseCallback[SchemaPermissionId]
+    options: BodyResponseCallback[Readable | SchemaPermissionId],
+    callback: BodyResponseCallback[Readable | SchemaPermissionId]
   ): Unit = js.native
   def getIdForEmail(params: ParamsResourcePermissionsGetidforemail, options: MethodOptions): GaxiosPromise[SchemaPermissionId] = js.native
   def getIdForEmail(
@@ -107,24 +219,73 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermissionId]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.insert
-    * @desc Inserts a permission for a file or Team Drive.
-    * @alias drive.permissions.insert
-    * @memberOf! ()
+    * Returns the permission ID for an email address.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.emailMessage A plain text custom message to include in notification emails.
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {boolean=} params.sendNotificationEmails Whether to send notification emails when sharing to users or groups. This parameter is ignored and an email is sent if the role is owner.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {().Permission} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.apps.readonly',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/drive.metadata',
+    *       'https://www.googleapis.com/auth/drive.metadata.readonly',
+    *       'https://www.googleapis.com/auth/drive.photos.readonly',
+    *       'https://www.googleapis.com/auth/drive.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.getIdForEmail({
+    *     // The email address for which to return a permission ID
+    *     email: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getIdForEmail(params: ParamsResourcePermissionsGetidforemail, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getIdForEmail(
+    params: ParamsResourcePermissionsGetidforemail,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaPermission] = js.native
   def insert(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
@@ -132,8 +293,8 @@ class ResourcePermissions protected () extends StObject {
   def insert(params: ParamsResourcePermissionsInsert, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def insert(
     params: ParamsResourcePermissionsInsert,
-    options: BodyResponseCallback[SchemaPermission],
-    callback: BodyResponseCallback[SchemaPermission]
+    options: BodyResponseCallback[Readable | SchemaPermission],
+    callback: BodyResponseCallback[Readable | SchemaPermission]
   ): Unit = js.native
   def insert(params: ParamsResourcePermissionsInsert, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def insert(
@@ -141,23 +302,126 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.list
-    * @desc Lists a file's or Team Drive's permissions.
-    * @alias drive.permissions.list
-    * @memberOf! ()
+    * Inserts a permission for a file or shared drive.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {integer=} params.maxResults The maximum number of permissions to return per page. When not set for files in a Team Drive, at most 100 results will be returned. When not set for files that are not in a Team Drive, the entire list will be returned.
-    * @param {string=} params.pageToken The token for continuing a previous list request on the next page. This should be set to the value of 'nextPageToken' from the previous response.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.insert({
+    *     // A plain text custom message to include in notification emails.
+    *     emailMessage: 'placeholder-value',
+    *     // Deprecated. See moveToNewOwnersRoot for details.
+    *     enforceSingleParent: 'placeholder-value',
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // This parameter will only take effect if the item is not in a shared drive and the request is attempting to transfer the ownership of the item. If set to true, the item will be moved to the new owner's My Drive root folder and all prior parents removed. If set to false, parents are not changed.
+    *     moveToNewOwnersRoot: 'placeholder-value',
+    *     // Whether to send notification emails when sharing to users or groups. This parameter is ignored and an email is sent if the role is owner.
+    *     sendNotificationEmails: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "additionalRoles": [],
+    *       //   "authKey": "my_authKey",
+    *       //   "deleted": false,
+    *       //   "domain": "my_domain",
+    *       //   "emailAddress": "my_emailAddress",
+    *       //   "etag": "my_etag",
+    *       //   "expirationDate": "my_expirationDate",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "pendingOwner": false,
+    *       //   "permissionDetails": [],
+    *       //   "photoLink": "my_photoLink",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink",
+    *       //   "teamDrivePermissionDetails": [],
+    *       //   "type": "my_type",
+    *       //   "value": "my_value",
+    *       //   "view": "my_view",
+    *       //   "withLink": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "additionalRoles": [],
+    *   //   "authKey": "my_authKey",
+    *   //   "deleted": false,
+    *   //   "domain": "my_domain",
+    *   //   "emailAddress": "my_emailAddress",
+    *   //   "etag": "my_etag",
+    *   //   "expirationDate": "my_expirationDate",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "pendingOwner": false,
+    *   //   "permissionDetails": [],
+    *   //   "photoLink": "my_photoLink",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "teamDrivePermissionDetails": [],
+    *   //   "type": "my_type",
+    *   //   "value": "my_value",
+    *   //   "view": "my_view",
+    *   //   "withLink": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourcePermissionsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourcePermissionsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaPermissionList] = js.native
   def list(callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermissionList] = js.native
@@ -165,8 +429,8 @@ class ResourcePermissions protected () extends StObject {
   def list(params: ParamsResourcePermissionsList, callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
   def list(
     params: ParamsResourcePermissionsList,
-    options: BodyResponseCallback[SchemaPermissionList],
-    callback: BodyResponseCallback[SchemaPermissionList]
+    options: BodyResponseCallback[Readable | SchemaPermissionList],
+    callback: BodyResponseCallback[Readable | SchemaPermissionList]
   ): Unit = js.native
   def list(params: ParamsResourcePermissionsList, options: MethodOptions): GaxiosPromise[SchemaPermissionList] = js.native
   def list(
@@ -174,25 +438,86 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermissionList]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.patch
-    * @desc Updates a permission using patch semantics.
-    * @alias drive.permissions.patch
-    * @memberOf! ()
+    * Lists a file's or shared drive's permissions.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {string} params.permissionId The ID for the permission.
-    * @param {boolean=} params.removeExpiration Whether to remove the expiration date.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.transferOwnership Whether changing a role to 'owner' downgrades the current owners to writers. Does nothing if the specified role is not 'owner'.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {().Permission} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/drive.metadata',
+    *       'https://www.googleapis.com/auth/drive.metadata.readonly',
+    *       'https://www.googleapis.com/auth/drive.photos.readonly',
+    *       'https://www.googleapis.com/auth/drive.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.list({
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // Specifies which additional view's permissions to include in the response. Only 'published' is supported.
+    *     includePermissionsForView: 'placeholder-value',
+    *     // The maximum number of permissions to return per page. When not set for files in a shared drive, at most 100 results will be returned. When not set for files that are not in a shared drive, the entire list will be returned.
+    *     maxResults: 'placeholder-value',
+    *     // The token for continuing a previous list request on the next page. This should be set to the value of 'nextPageToken' from the previous response.
+    *     pageToken: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourcePermissionsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourcePermissionsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaPermission] = js.native
   def patch(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
@@ -200,8 +525,8 @@ class ResourcePermissions protected () extends StObject {
   def patch(params: ParamsResourcePermissionsPatch, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def patch(
     params: ParamsResourcePermissionsPatch,
-    options: BodyResponseCallback[SchemaPermission],
-    callback: BodyResponseCallback[SchemaPermission]
+    options: BodyResponseCallback[Readable | SchemaPermission],
+    callback: BodyResponseCallback[Readable | SchemaPermission]
   ): Unit = js.native
   def patch(params: ParamsResourcePermissionsPatch, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def patch(
@@ -209,25 +534,124 @@ class ResourcePermissions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
-  
   /**
-    * drive.permissions.update
-    * @desc Updates a permission.
-    * @alias drive.permissions.update
-    * @memberOf! ()
+    * Updates a permission using patch semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file or Team Drive.
-    * @param {string} params.permissionId The ID for the permission.
-    * @param {boolean=} params.removeExpiration Whether to remove the expiration date.
-    * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
-    * @param {boolean=} params.transferOwnership Whether changing a role to 'owner' downgrades the current owners to writers. Does nothing if the specified role is not 'owner'.
-    * @param {boolean=} params.useDomainAdminAccess Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.
-    * @param {().Permission} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.patch({
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the permission.
+    *     permissionId: 'placeholder-value',
+    *     // Whether to remove the expiration date.
+    *     removeExpiration: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Whether changing a role to 'owner' downgrades the current owners to writers. Does nothing if the specified role is not 'owner'.
+    *     transferOwnership: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "additionalRoles": [],
+    *       //   "authKey": "my_authKey",
+    *       //   "deleted": false,
+    *       //   "domain": "my_domain",
+    *       //   "emailAddress": "my_emailAddress",
+    *       //   "etag": "my_etag",
+    *       //   "expirationDate": "my_expirationDate",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "pendingOwner": false,
+    *       //   "permissionDetails": [],
+    *       //   "photoLink": "my_photoLink",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink",
+    *       //   "teamDrivePermissionDetails": [],
+    *       //   "type": "my_type",
+    *       //   "value": "my_value",
+    *       //   "view": "my_view",
+    *       //   "withLink": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "additionalRoles": [],
+    *   //   "authKey": "my_authKey",
+    *   //   "deleted": false,
+    *   //   "domain": "my_domain",
+    *   //   "emailAddress": "my_emailAddress",
+    *   //   "etag": "my_etag",
+    *   //   "expirationDate": "my_expirationDate",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "pendingOwner": false,
+    *   //   "permissionDetails": [],
+    *   //   "photoLink": "my_photoLink",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "teamDrivePermissionDetails": [],
+    *   //   "type": "my_type",
+    *   //   "value": "my_value",
+    *   //   "view": "my_view",
+    *   //   "withLink": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourcePermissionsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourcePermissionsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaPermission] = js.native
   def update(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
@@ -235,13 +659,130 @@ class ResourcePermissions protected () extends StObject {
   def update(params: ParamsResourcePermissionsUpdate, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def update(
     params: ParamsResourcePermissionsUpdate,
-    options: BodyResponseCallback[SchemaPermission],
-    callback: BodyResponseCallback[SchemaPermission]
+    options: BodyResponseCallback[Readable | SchemaPermission],
+    callback: BodyResponseCallback[Readable | SchemaPermission]
   ): Unit = js.native
   def update(params: ParamsResourcePermissionsUpdate, options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def update(
     params: ParamsResourcePermissionsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
+  ): Unit = js.native
+  /**
+    * Updates a permission.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.permissions.update({
+    *     // The ID for the file or shared drive.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the permission.
+    *     permissionId: 'placeholder-value',
+    *     // Whether to remove the expiration date.
+    *     removeExpiration: 'placeholder-value',
+    *     // Whether the requesting application supports both My Drives and shared drives.
+    *     supportsAllDrives: 'placeholder-value',
+    *     // Deprecated use supportsAllDrives instead.
+    *     supportsTeamDrives: 'placeholder-value',
+    *     // Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect. File owners can only transfer ownership of files existing on My Drive. Files existing in a shared drive are owned by the organization that owns that shared drive. Ownership transfers are not supported for files and folders in shared drives. Organizers of a shared drive can move items from that shared drive into their My Drive which transfers the ownership to them.
+    *     transferOwnership: 'placeholder-value',
+    *     // Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
+    *     useDomainAdminAccess: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "additionalRoles": [],
+    *       //   "authKey": "my_authKey",
+    *       //   "deleted": false,
+    *       //   "domain": "my_domain",
+    *       //   "emailAddress": "my_emailAddress",
+    *       //   "etag": "my_etag",
+    *       //   "expirationDate": "my_expirationDate",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "pendingOwner": false,
+    *       //   "permissionDetails": [],
+    *       //   "photoLink": "my_photoLink",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink",
+    *       //   "teamDrivePermissionDetails": [],
+    *       //   "type": "my_type",
+    *       //   "value": "my_value",
+    *       //   "view": "my_view",
+    *       //   "withLink": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "additionalRoles": [],
+    *   //   "authKey": "my_authKey",
+    *   //   "deleted": false,
+    *   //   "domain": "my_domain",
+    *   //   "emailAddress": "my_emailAddress",
+    *   //   "etag": "my_etag",
+    *   //   "expirationDate": "my_expirationDate",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "pendingOwner": false,
+    *   //   "permissionDetails": [],
+    *   //   "photoLink": "my_photoLink",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "teamDrivePermissionDetails": [],
+    *   //   "type": "my_type",
+    *   //   "value": "my_value",
+    *   //   "view": "my_view",
+    *   //   "withLink": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourcePermissionsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourcePermissionsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

@@ -9,7 +9,7 @@ object gregorianCalendarFormatMod {
   
   @JSImport("gregorian-calendar-format", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with DateTimeFormat {
     /**

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldInfoProperties extends StObject {
   
   /**
-    * The field name as defined by  the service or the `name` of an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression.
+    * The field name as defined by the service or the name of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#fieldName)
     */
@@ -32,6 +32,8 @@ trait FieldInfoProperties extends StObject {
   
   /**
     * A Boolean determining whether users can edit this field.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#isEditable)
     */
@@ -54,6 +56,8 @@ trait FieldInfoProperties extends StObject {
   /**
     * A string determining what type of input box editors see when editing the field.
     *
+    * @default text-box
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
     */
   var stringFieldOption: js.UndefOr[`rich-text` | `text-area` | `text-box`] = js.undefined
@@ -67,6 +71,8 @@ trait FieldInfoProperties extends StObject {
   
   /**
     * Indicates whether the field is visible in the popup window.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#visible)
     */

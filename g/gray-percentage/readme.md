@@ -10,10 +10,10 @@ Convenience function to get a gray value by percentage e.g. gray(60) -> hsla(0,0
 | ------------------ | :-------------: |
 | Full name          | gray-percentage |
 | Keywords           | colors, css, gray, grey |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 2338286 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121618.66666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/gray-percentage)

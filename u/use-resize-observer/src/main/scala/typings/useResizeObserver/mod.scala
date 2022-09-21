@@ -1,148 +1,59 @@
 package typings.useResizeObserver
 
-import typings.react.mod.RefObject
-import typings.std.HTMLElement
+import typings.react.mod.RefCallback
+import typings.std.Element
+import typings.std.ResizeObserverSize
+import typings.useResizeObserver.anon.Box
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /***
-    * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
-    * The hook is invoked at least once before the first measurement of actual size by the observer.
-    * @return a ref,
-    *         and ref.current's width (undefined before the first measurement),
-    *         and ref.current's height (undefined before the first measurement).
-    */
-  inline def apply(): ObserverResultWithSize[HTMLElement] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ObserverResultWithSize[HTMLElement]]
-  /***
-    * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
-    * The hook is invoked at least once before the first measurement of actual size by the observer.
-    * @param defaults The onResize callback will be called with new ref.current's width and height as a parameter.
-    *         Because of that, the ref.current's width and height are not returned.
-    * @return a ref (optionally pass in your own)
-    *         The callback function will be called with new ref.current's width and height as a parameter.
-    */
-  inline def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithResizeHandler[TElement]): ObserverResultForResizeHandler[TElement] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[ObserverResultForResizeHandler[TElement]]
-  /***
-    * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
-    * The hook is invoked at least once before the first measurement of actual size by the observer.
-    * @return a ref (optionally pass in your own),
-    *         and ref.current's width (undefined before the first measurement),
-    *         and ref.current's height (undefined before the first measurement).
-    */
-  inline def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[ObserverResultWithSize[TElement]]
-  
   @JSImport("use-resize-observer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait DefaultsWithResizeHandler[TElement]
+  inline def default[T /* <: Element */](): HookResponse[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[HookResponse[T]]
+  inline def default[T /* <: Element */](opts: Box[T]): HookResponse[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[HookResponse[T]]
+  
+  trait HookResponse[T /* <: Element */]
     extends StObject
-       with ObserverDefaults[TElement] {
+       with ObservedSize {
     
-    var onResize: ResizeHandler
-    
-    var ref: js.UndefOr[RefObject[TElement]] = js.undefined
+    var ref: RefCallback[T]
   }
-  object DefaultsWithResizeHandler {
+  object HookResponse {
     
-    inline def apply[TElement](onResize: /* newSize */ RefSize => Unit): DefaultsWithResizeHandler[TElement] = {
-      val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
-      __obj.asInstanceOf[DefaultsWithResizeHandler[TElement]]
+    inline def apply[T /* <: Element */](ref: /* instance */ T | Null => Unit): HookResponse[T] = {
+      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
+      __obj.asInstanceOf[HookResponse[T]]
     }
     
-    extension [Self <: DefaultsWithResizeHandler[?], TElement](x: Self & DefaultsWithResizeHandler[TElement]) {
+    extension [Self <: HookResponse[?], T /* <: Element */](x: Self & HookResponse[T]) {
       
-      inline def setOnResize(value: /* newSize */ RefSize => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
-      
-      inline def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRef(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
   }
   
-  trait DefaultsWithoutResizeHandler[TElement]
-    extends StObject
-       with ObserverDefaults[TElement] {
-    
-    var ref: js.UndefOr[RefObject[TElement]] = js.undefined
-  }
-  object DefaultsWithoutResizeHandler {
-    
-    inline def apply[TElement](): DefaultsWithoutResizeHandler[TElement] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DefaultsWithoutResizeHandler[TElement]]
-    }
-    
-    extension [Self <: DefaultsWithoutResizeHandler[?], TElement](x: Self & DefaultsWithoutResizeHandler[TElement]) {
-      
-      inline def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.useResizeObserver.mod.DefaultsWithoutResizeHandler[TElement]
-    - typings.useResizeObserver.mod.DefaultsWithResizeHandler[TElement]
-  */
-  trait ObserverDefaults[TElement /* <: HTMLElement */] extends StObject
-  object ObserverDefaults {
-    
-    inline def DefaultsWithResizeHandler[TElement /* <: HTMLElement */](onResize: /* newSize */ RefSize => Unit): typings.useResizeObserver.mod.DefaultsWithResizeHandler[TElement] = {
-      val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
-      __obj.asInstanceOf[typings.useResizeObserver.mod.DefaultsWithResizeHandler[TElement]]
-    }
-    
-    inline def DefaultsWithoutResizeHandler[TElement /* <: HTMLElement */](): typings.useResizeObserver.mod.DefaultsWithoutResizeHandler[TElement] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.useResizeObserver.mod.DefaultsWithoutResizeHandler[TElement]]
-    }
-  }
-  
-  type ObserverRefSize = RefSize
-  
-  trait ObserverResultForResizeHandler[TElement] extends StObject {
-    
-    var ref: RefObject[TElement]
-  }
-  object ObserverResultForResizeHandler {
-    
-    inline def apply[TElement](ref: RefObject[TElement]): ObserverResultForResizeHandler[TElement] = {
-      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ObserverResultForResizeHandler[TElement]]
-    }
-    
-    extension [Self <: ObserverResultForResizeHandler[?], TElement](x: Self & ObserverResultForResizeHandler[TElement]) {
-      
-      inline def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ObserverResultWithSize[TElement] extends StObject {
+  trait ObservedSize extends StObject {
     
     var height: js.UndefOr[Double] = js.undefined
     
-    var ref: RefObject[TElement]
-    
     var width: js.UndefOr[Double] = js.undefined
   }
-  object ObserverResultWithSize {
+  object ObservedSize {
     
-    inline def apply[TElement](ref: RefObject[TElement]): ObserverResultWithSize[TElement] = {
-      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ObserverResultWithSize[TElement]]
+    inline def apply(): ObservedSize = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObservedSize]
     }
     
-    extension [Self <: ObserverResultWithSize[?], TElement](x: Self & ObserverResultWithSize[TElement]) {
+    extension [Self <: ObservedSize](x: Self) {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -150,26 +61,44 @@ object mod {
     }
   }
   
-  trait RefSize extends StObject {
+  type ResizeHandler = js.Function1[/* size */ ObservedSize, Unit]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.useResizeObserver.useResizeObserverStrings.`border-box`
+    - typings.useResizeObserver.useResizeObserverStrings.`content-box`
+    - typings.useResizeObserver.useResizeObserverStrings.`device-pixel-content-box`
+  */
+  trait ResizeObserverBoxOptions extends StObject
+  object ResizeObserverBoxOptions {
     
-    var height: Double
+    inline def `border-box`: typings.useResizeObserver.useResizeObserverStrings.`border-box` = "border-box".asInstanceOf[typings.useResizeObserver.useResizeObserverStrings.`border-box`]
     
-    var width: Double
-  }
-  object RefSize {
+    inline def `content-box`: typings.useResizeObserver.useResizeObserverStrings.`content-box` = "content-box".asInstanceOf[typings.useResizeObserver.useResizeObserverStrings.`content-box`]
     
-    inline def apply(height: Double, width: Double): RefSize = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RefSize]
-    }
-    
-    extension [Self <: RefSize](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
+    inline def `device-pixel-content-box`: typings.useResizeObserver.useResizeObserverStrings.`device-pixel-content-box` = "device-pixel-content-box".asInstanceOf[typings.useResizeObserver.useResizeObserverStrings.`device-pixel-content-box`]
   }
   
-  type ResizeHandler = js.Function1[/* newSize */ RefSize, Unit]
+  type RoundingFunction = js.Function1[/* n */ Double, Double]
+  
+  object global {
+    
+    trait ResizeObserverEntry extends StObject {
+      
+      val devicePixelContentBoxSize: js.Array[ResizeObserverSize]
+    }
+    object ResizeObserverEntry {
+      
+      inline def apply(devicePixelContentBoxSize: js.Array[ResizeObserverSize]): ResizeObserverEntry = {
+        val __obj = js.Dynamic.literal(devicePixelContentBoxSize = devicePixelContentBoxSize.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ResizeObserverEntry]
+      }
+      
+      extension [Self <: ResizeObserverEntry](x: Self) {
+        
+        inline def setDevicePixelContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "devicePixelContentBoxSize", value.asInstanceOf[js.Any])
+        
+        inline def setDevicePixelContentBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "devicePixelContentBoxSize", js.Array(value*))
+      }
+    }
+  }
 }

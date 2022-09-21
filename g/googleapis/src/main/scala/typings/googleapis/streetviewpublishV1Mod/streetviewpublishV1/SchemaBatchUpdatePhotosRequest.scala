@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to update the metadata of photos. Updating the pixels of photos is
-  * not supported.
-  */
 trait SchemaBatchUpdatePhotosRequest extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaBatchUpdatePhotosRequest {
     
     inline def setUpdatePhotoRequestsUndefined: Self = StObject.set(x, "updatePhotoRequests", js.undefined)
     
-    inline def setUpdatePhotoRequestsVarargs(value: SchemaUpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value :_*))
+    inline def setUpdatePhotoRequestsVarargs(value: SchemaUpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value*))
   }
 }

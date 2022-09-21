@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Sheet extends StObject {
   
   /**
-    * The name of a sheet. This name is displayed on the sheet's tab in the QuickSight console.
+    * The name of a sheet. This name is displayed on the sheet's tab in the Amazon QuickSight console.
     */
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   

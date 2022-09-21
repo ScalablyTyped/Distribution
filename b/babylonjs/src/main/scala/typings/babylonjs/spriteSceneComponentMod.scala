@@ -17,7 +17,7 @@ object spriteSceneComponentMod {
   
   @JSImport("babylonjs/Sprites/spriteSceneComponent", "SpriteSceneComponent")
   @js.native
-  class SpriteSceneComponent protected ()
+  open class SpriteSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -26,16 +26,16 @@ object spriteSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _pickSpriteButKeepRay: js.Any = js.native
+    /* private */ var _pickSpriteButKeepRay: Any = js.native
     
-    /* private */ var _pointerDown: js.Any = js.native
+    /* private */ var _pointerDown: Any = js.native
     
-    /* private */ var _pointerMove: js.Any = js.native
+    /* private */ var _pointerMove: Any = js.native
     
-    /* private */ var _pointerUp: js.Any = js.native
+    /* private */ var _pointerUp: Any = js.native
     
     /** @hidden */
-    /* private */ var _spritePredicate: js.Any = js.native
+    /* private */ var _spritePredicate: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

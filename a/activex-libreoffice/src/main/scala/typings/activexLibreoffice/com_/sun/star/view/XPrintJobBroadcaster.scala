@@ -29,7 +29,7 @@ object XPrintJobBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addPrintJobListener: XPrintJobListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePrintJobListener: XPrintJobListener => Unit
   ): XPrintJobBroadcaster = {

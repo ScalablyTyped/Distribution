@@ -9,11 +9,16 @@ trait LinesMesh
   extends StObject
      with Mesh {
   
-  /* private */ var _addClipPlaneDefine: js.Any = js.native
+  /**
+    * @hidden
+    */
+  def _bind(): Mesh = js.native
   
-  /* private */ var _colorShader: js.Any = js.native
+  /* private */ var _color4: Any = js.native
   
-  /* private */ var _removeClipPlaneDefine: js.Any = js.native
+  /* private */ var _isShaderMaterial: Any = js.native
+  
+  /* private */ var _lineMaterial: Any = js.native
   
   /**
     * Alpha of the line (Default: 1)
@@ -24,8 +29,6 @@ trait LinesMesh
     * Color of the line (Default: White)
     */
   var color: Color3 = js.native
-  
-  /* private */ var color4: js.Any = js.native
   
   /**
     * The intersection Threshold is the margin applied when intersection a segment of the LinesMesh with a Ray.

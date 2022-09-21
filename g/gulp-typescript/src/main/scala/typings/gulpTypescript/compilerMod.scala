@@ -13,40 +13,40 @@ object compilerMod {
   
   @JSImport("gulp-typescript/release/compiler", "FileCompiler")
   @js.native
-  class FileCompiler ()
+  open class FileCompiler ()
     extends StObject
        with ICompiler {
     
-    /* private */ var compilationResult: js.Any = js.native
+    /* private */ var compilationResult: Any = js.native
     
     var finalTransformers: FinalTransformers = js.native
     
     var host: Host = js.native
     
-    /* private */ var output: js.Any = js.native
+    /* private */ var output: Any = js.native
     
-    /* private */ var previousOutput: js.Any = js.native
+    /* private */ var previousOutput: Any = js.native
     
     var project: ProjectInfo = js.native
     
-    /* private */ var write: js.Any = js.native
+    /* private */ var write: Any = js.native
   }
   
   @JSImport("gulp-typescript/release/compiler", "ProjectCompiler")
   @js.native
-  class ProjectCompiler ()
+  open class ProjectCompiler ()
     extends StObject
        with ICompiler {
     
-    /* private */ var attachContentToFile: js.Any = js.native
+    /* private */ var attachContentToFile: Any = js.native
     
-    /* private */ var emit: js.Any = js.native
+    /* private */ var emit: Any = js.native
     
-    /* private */ var emitFile: js.Any = js.native
+    /* private */ var emitFile: Any = js.native
     
     var finalTransformers: FinalTransformers = js.native
     
-    /* private */ var hasSourceMap: js.Any = js.native
+    /* private */ var hasSourceMap: Any = js.native
     
     var host: Host = js.native
     
@@ -54,7 +54,7 @@ object compilerMod {
     
     var project: ProjectInfo = js.native
     
-    /* private */ var removeSourceMapComment: js.Any = js.native
+    /* private */ var removeSourceMapComment: Any = js.native
   }
   
   @js.native

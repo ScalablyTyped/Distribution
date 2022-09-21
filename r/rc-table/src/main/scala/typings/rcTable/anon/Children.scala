@@ -21,6 +21,6 @@ object Children {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: RecordType*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: RecordType*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

@@ -38,6 +38,6 @@ object SizeConstraintSet {
     
     inline def setSizeConstraints(value: SizeConstraints): Self = StObject.set(x, "SizeConstraints", value.asInstanceOf[js.Any])
     
-    inline def setSizeConstraintsVarargs(value: SizeConstraint*): Self = StObject.set(x, "SizeConstraints", js.Array(value :_*))
+    inline def setSizeConstraintsVarargs(value: SizeConstraint*): Self = StObject.set(x, "SizeConstraints", js.Array(value*))
   }
 }

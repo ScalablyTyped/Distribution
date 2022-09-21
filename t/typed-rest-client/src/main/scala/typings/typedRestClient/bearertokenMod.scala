@@ -13,7 +13,7 @@ object bearertokenMod {
   
   @JSImport("typed-rest-client/handlers/bearertoken", "BearerCredentialHandler")
   @js.native
-  class BearerCredentialHandler protected ()
+  open class BearerCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(token: String) = this()
@@ -25,11 +25,11 @@ object bearertokenMod {
     override def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
+    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: Any): js.Promise[IHttpClientResponse] = js.native
     
     var origin: String = js.native
     
-    def prepareRequest(options: js.Any): Unit = js.native
+    def prepareRequest(options: Any): Unit = js.native
     /* CompleteClass */
     override def prepareRequest(options: RequestOptions): Unit = js.native
     

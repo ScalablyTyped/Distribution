@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait TransactionStatusHistory extends StObject {
   
   var status: TransactionStatus
   
-  var timestamp: Date
+  var timestamp: js.Date
   
   var transactionsource: TransactionSource
   
@@ -22,7 +21,7 @@ object TransactionStatusHistory {
   inline def apply(
     amount: String,
     status: TransactionStatus,
-    timestamp: Date,
+    timestamp: js.Date,
     transactionsource: TransactionSource,
     user: String
   ): TransactionStatusHistory = {
@@ -36,7 +35,7 @@ object TransactionStatusHistory {
     
     inline def setStatus(value: TransactionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTransactionsource(value: TransactionSource): Self = StObject.set(x, "transactionsource", value.asInstanceOf[js.Any])
     

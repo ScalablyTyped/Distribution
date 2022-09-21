@@ -21,6 +21,12 @@ object fileTypeStrings {
   inline def `3gp`: `3gp` = "3gp".asInstanceOf[`3gp`]
   
   @js.native
+  sealed trait `3mf`
+    extends StObject
+       with FileExtension
+  inline def `3mf`: `3mf` = "3mf".asInstanceOf[`3mf`]
+  
+  @js.native
   sealed trait `7z`
     extends StObject
        with FileExtension
@@ -159,6 +165,12 @@ object fileTypeStrings {
   inline def `applicationSlashvndDotms-fontobject`: `applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`applicationSlashvndDotms-fontobject`]
   
   @js.native
+  sealed trait `applicationSlashvndDotms-htmlhelp`
+    extends StObject
+       with MimeType
+  inline def `applicationSlashvndDotms-htmlhelp`: `applicationSlashvndDotms-htmlhelp` = "application/vnd.ms-htmlhelp".asInstanceOf[`applicationSlashvndDotms-htmlhelp`]
+  
+  @js.native
   sealed trait applicationSlashvndDotoasisDotopendocumentDotpresentation
     extends StObject
        with MimeType
@@ -265,6 +277,12 @@ object fileTypeStrings {
     extends StObject
        with MimeType
   inline def `applicationSlashx-deb`: `applicationSlashx-deb` = "application/x-deb".asInstanceOf[`applicationSlashx-deb`]
+  
+  @js.native
+  sealed trait `applicationSlashx-elf`
+    extends StObject
+       with MimeType
+  inline def `applicationSlashx-elf`: `applicationSlashx-elf` = "application/x-elf".asInstanceOf[`applicationSlashx-elf`]
   
   @js.native
   sealed trait `applicationSlashx-esri-shape`
@@ -391,6 +409,12 @@ object fileTypeStrings {
     extends StObject
        with MimeType
   inline def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
+  
+  @js.native
+  sealed trait applicationSlashzstd
+    extends StObject
+       with MimeType
+  inline def applicationSlashzstd: applicationSlashzstd = "application/zstd".asInstanceOf[applicationSlashzstd]
   
   @js.native
   sealed trait ar
@@ -603,6 +627,12 @@ object fileTypeStrings {
   inline def cfb: cfb = "cfb".asInstanceOf[cfb]
   
   @js.native
+  sealed trait chm
+    extends StObject
+       with FileExtension
+  inline def chm: chm = "chm".asInstanceOf[chm]
+  
+  @js.native
   sealed trait cr2
     extends StObject
        with FileExtension
@@ -661,6 +691,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def dsf: dsf = "dsf".asInstanceOf[dsf]
+  
+  @js.native
+  sealed trait elf
+    extends StObject
+       with FileExtension
+  inline def elf: elf = "elf".asInstanceOf[elf]
   
   @js.native
   sealed trait eot
@@ -885,6 +921,12 @@ object fileTypeStrings {
   inline def imageSlashjpx: imageSlashjpx = "image/jpx".asInstanceOf[imageSlashjpx]
   
   @js.native
+  sealed trait imageSlashjxl
+    extends StObject
+       with MimeType
+  inline def imageSlashjxl: imageSlashjxl = "image/jxl".asInstanceOf[imageSlashjxl]
+  
+  @js.native
   sealed trait imageSlashktx
     extends StObject
        with MimeType
@@ -981,6 +1023,12 @@ object fileTypeStrings {
   inline def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
   
   @js.native
+  sealed trait `imageSlashx-xcf`
+    extends StObject
+       with MimeType
+  inline def `imageSlashx-xcf`: `imageSlashx-xcf` = "image/x-xcf".asInstanceOf[`imageSlashx-xcf`]
+  
+  @js.native
   sealed trait indd
     extends StObject
        with FileExtension
@@ -1015,6 +1063,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def jpx: jpx = "jpx".asInstanceOf[jpx]
+  
+  @js.native
+  sealed trait jxl
+    extends StObject
+       with FileExtension
+  inline def jxl: jxl = "jxl".asInstanceOf[jxl]
   
   @js.native
   sealed trait jxr
@@ -1099,6 +1153,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def mobi: mobi = "mobi".asInstanceOf[mobi]
+  
+  @js.native
+  sealed trait modelSlash3mf
+    extends StObject
+       with MimeType
+  inline def modelSlash3mf: modelSlash3mf = "model/3mf".asInstanceOf[modelSlash3mf]
   
   @js.native
   sealed trait `modelSlashgltf-binary`
@@ -1377,6 +1437,12 @@ object fileTypeStrings {
   inline def textSlashcalendar: textSlashcalendar = "text/calendar".asInstanceOf[textSlashcalendar]
   
   @js.native
+  sealed trait textSlashvcard
+    extends StObject
+       with MimeType
+  inline def textSlashvcard: textSlashvcard = "text/vcard".asInstanceOf[textSlashvcard]
+  
+  @js.native
   sealed trait tif
     extends StObject
        with FileExtension
@@ -1387,6 +1453,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def ttf: ttf = "ttf".asInstanceOf[ttf]
+  
+  @js.native
+  sealed trait vcf
+    extends StObject
+       with FileExtension
+  inline def vcf: vcf = "vcf".asInstanceOf[vcf]
   
   @js.native
   sealed trait videoSlash3gpp
@@ -1527,6 +1599,12 @@ object fileTypeStrings {
   inline def wv: wv = "wv".asInstanceOf[wv]
   
   @js.native
+  sealed trait xcf
+    extends StObject
+       with FileExtension
+  inline def xcf: xcf = "xcf".asInstanceOf[xcf]
+  
+  @js.native
   sealed trait xlsx
     extends StObject
        with FileExtension
@@ -1561,4 +1639,10 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def zip: zip = "zip".asInstanceOf[zip]
+  
+  @js.native
+  sealed trait zst
+    extends StObject
+       with FileExtension
+  inline def zst: zst = "zst".asInstanceOf[zst]
 }

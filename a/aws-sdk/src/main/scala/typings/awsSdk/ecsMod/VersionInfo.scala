@@ -17,7 +17,7 @@ trait VersionInfo extends StObject {
   var agentVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The Docker version running on the container instance.
+    * The Docker version that's running on the container instance.
     */
   var dockerVersion: js.UndefOr[String] = js.undefined
 }

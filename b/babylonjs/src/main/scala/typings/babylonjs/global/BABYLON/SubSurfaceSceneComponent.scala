@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SubSurfaceSceneComponent")
 @js.native
-class SubSurfaceSceneComponent protected ()
+open class SubSurfaceSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SubSurfaceSceneComponent {
   /**

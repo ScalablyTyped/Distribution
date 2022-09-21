@@ -2,10 +2,10 @@ package typings.jsforce
 
 import typings.jsforce.recordMod.Record
 import typings.jsforce.recordResultMod.RecordResult
+import typings.jsforce.recordStreamMod.Parsable
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object batchMod {
   
   @JSImport("jsforce/batch", "Batch")
   @js.native
-  class Batch () extends Writable {
+  open class Batch () extends Writable {
     def this(opts: WritableOptions) = this()
     
     def check(): js.Promise[BatchInfo] = js.native
@@ -24,31 +24,33 @@ object batchMod {
     def execute(input: String): Batch = js.native
     def execute(
       input: String,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
-    def execute(input: js.Array[Record[js.Any]]): Batch = js.native
+    def execute(input: js.Array[Record[Any]]): Batch = js.native
     def execute(
-      input: js.Array[Record[js.Any]],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      input: js.Array[Record[Any]],
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def execute(
       input: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def execute(input: Stream): Batch = js.native
     def execute(
       input: Stream,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     
     def poll(interval: Double, timeout: Double): Unit = js.native
     
+    def result(resultId: String): Parsable[Any] = js.native
+    
     def retrieve(): js.Promise[js.Array[BatchResultInfo | RecordResult]] = js.native
     def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, Unit]): js.Promise[js.Array[BatchResultInfo | RecordResult]] = js.native
     
-    def `then`(): js.Promise[js.Any] = js.native
+    def `then`(): js.Promise[Any] = js.native
     
-    def thenAll(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def thenAll(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
   }
   
   trait BatchInfo extends StObject {
@@ -129,7 +131,7 @@ object batchMod {
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

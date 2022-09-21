@@ -17,7 +17,12 @@ object fullscreenViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Fullscreen/FullscreenViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [Fullscreen](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with FullscreenViewModel {
     def this(properties: FullscreenViewModelProperties) = this()

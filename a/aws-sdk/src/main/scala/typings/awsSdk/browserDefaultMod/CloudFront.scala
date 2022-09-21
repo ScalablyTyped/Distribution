@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudFront () extends ^ {
+open class CloudFront () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
 object CloudFront {
   
   @JSImport("aws-sdk/clients/browser_default", "CloudFront.Signer")
   @js.native
-  class Signer protected ()
+  open class Signer protected ()
     extends typings.awsSdk.cloudfrontMod.Signer {
     /**
       * A signer object can be used to generate signed URLs and cookies for granting access to content on restricted CloudFront distributions.

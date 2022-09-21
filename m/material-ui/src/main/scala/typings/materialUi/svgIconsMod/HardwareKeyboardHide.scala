@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "HardwareKeyboardHide")
 @js.native
-class HardwareKeyboardHide ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class HardwareKeyboardHide ()
+  extends Component[SvgIconProps, js.Object, Any]

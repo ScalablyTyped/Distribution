@@ -9,19 +9,19 @@ trait SpliceCommand
      with Command {
   
   @JSName("$splice")
-  var $splice: js.Array[js.Array[js.Any]]
+  var $splice: js.Array[js.Array[scala.Any]]
 }
 object SpliceCommand {
   
-  inline def apply($splice: js.Array[js.Array[js.Any]]): SpliceCommand = {
+  inline def apply($splice: js.Array[js.Array[scala.Any]]): SpliceCommand = {
     val __obj = js.Dynamic.literal($splice = $splice.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpliceCommand]
   }
   
   extension [Self <: SpliceCommand](x: Self) {
     
-    inline def set$splice(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
+    inline def set$splice(value: js.Array[js.Array[scala.Any]]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
     
-    inline def set$spliceVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "$splice", js.Array(value :_*))
+    inline def set$spliceVarargs(value: js.Array[scala.Any]*): Self = StObject.set(x, "$splice", js.Array(value*))
   }
 }

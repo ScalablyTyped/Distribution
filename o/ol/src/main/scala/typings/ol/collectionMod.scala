@@ -14,7 +14,7 @@ object collectionMod {
   
   @JSImport("ol/Collection", JSImport.Default)
   @js.native
-  class default[T] () extends Collection[T] {
+  open class default[T] () extends Collection[T] {
     def this(opt_array: js.Array[T]) = this()
     def this(opt_array: js.Array[T], opt_options: Options) = this()
     def this(opt_array: Unit, opt_options: Options) = this()
@@ -22,7 +22,7 @@ object collectionMod {
   
   @JSImport("ol/Collection", "CollectionEvent")
   @js.native
-  class CollectionEvent[T] protected ()
+  open class CollectionEvent[T] protected ()
     extends typings.ol.eventMod.default {
     def this(`type`: CollectionEventType) = this()
     def this(`type`: CollectionEventType, opt_element: T) = this()
@@ -58,7 +58,7 @@ object collectionMod {
     /**
       * Iterate over each element, calling the provided callback.
       */
-    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], js.Any]): Unit = js.native
+    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ Double, /* p2 */ js.Array[T], Any]): Unit = js.native
     
     /**
       * Get a reference to the underlying Array object. Warning: if the array

@@ -45,7 +45,7 @@ object SentMessageInfo {
     
     inline def setAccepted(value: js.Array[String]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
-    inline def setAcceptedVarargs(value: String*): Self = StObject.set(x, "accepted", js.Array(value :_*))
+    inline def setAcceptedVarargs(value: String*): Self = StObject.set(x, "accepted", js.Array(value*))
     
     inline def setEnvelopeTime(value: Double): Self = StObject.set(x, "envelopeTime", value.asInstanceOf[js.Any])
     
@@ -59,9 +59,9 @@ object SentMessageInfo {
     
     inline def setRejectedErrorsUndefined: Self = StObject.set(x, "rejectedErrors", js.undefined)
     
-    inline def setRejectedErrorsVarargs(value: SMTPError*): Self = StObject.set(x, "rejectedErrors", js.Array(value :_*))
+    inline def setRejectedErrorsVarargs(value: SMTPError*): Self = StObject.set(x, "rejectedErrors", js.Array(value*))
     
-    inline def setRejectedVarargs(value: String*): Self = StObject.set(x, "rejected", js.Array(value :_*))
+    inline def setRejectedVarargs(value: String*): Self = StObject.set(x, "rejected", js.Array(value*))
     
     inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

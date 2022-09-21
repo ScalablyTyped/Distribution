@@ -10,12 +10,12 @@ trait fieldset
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("config")
   var config_fieldset: fieldsetConfig = js.native
   
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   def resizeChildren(): Unit = js.native
 }

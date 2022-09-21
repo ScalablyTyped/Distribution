@@ -8,5 +8,5 @@ object createBucketConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_CreateBucketConfiguration", "_CreateBucketConfiguration")
   @js.native
-  val CreateBucketConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateBucketConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

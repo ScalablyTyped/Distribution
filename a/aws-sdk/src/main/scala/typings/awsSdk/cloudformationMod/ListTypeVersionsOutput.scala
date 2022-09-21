@@ -12,7 +12,7 @@ trait ListTypeVersionsOutput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
-    * A list of TypeVersionSummary structures that contain information about the specified type's versions.
+    * A list of TypeVersionSummary structures that contain information about the specified extension's versions.
     */
   var TypeVersionSummaries: js.UndefOr[typings.awsSdk.cloudformationMod.TypeVersionSummaries] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListTypeVersionsOutput {
     
     inline def setTypeVersionSummariesUndefined: Self = StObject.set(x, "TypeVersionSummaries", js.undefined)
     
-    inline def setTypeVersionSummariesVarargs(value: TypeVersionSummary*): Self = StObject.set(x, "TypeVersionSummaries", js.Array(value :_*))
+    inline def setTypeVersionSummariesVarargs(value: TypeVersionSummary*): Self = StObject.set(x, "TypeVersionSummaries", js.Array(value*))
   }
 }

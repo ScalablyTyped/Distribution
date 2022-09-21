@@ -8,7 +8,6 @@ import typings.vegaLite.channeldefMod.OrderFieldDef
 import typings.vegaLite.channeldefMod.SecondaryChannelDef
 import typings.vegaLite.channeldefMod.StringFieldDef
 import typings.vegaLite.scaleComponentMod.ScaleComponent
-import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcStackMod.StackProperties
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaLite.vegaSchemaMod.VgValueRef
@@ -20,10 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined vega-lite.vega-lite/build/src/compile/mark/encode/valueref.MidPointParams & {  channel :vega-lite.vega-lite/build/src/channel.PositionChannel | vega-lite.vega-lite/build/src/channel.PolarPositionChannel} */
 trait MidPointParamschannelPosi extends StObject {
   
-  /**
-    * Allow overriding band instead of reading to field def since band is applied to size (width/height) instead of the position for x/y-position with band scales.
-    */
-  var band: js.UndefOr[Double] = js.undefined
+  var bandPosition: js.UndefOr[Double | SignalRef] = js.undefined
   
   var channel: typings.vegaLite.channelMod.Channel & (PositionChannel | PolarPositionChannel)
   
@@ -35,9 +31,9 @@ trait MidPointParamschannelPosi extends StObject {
   
   var defaultRef: VgValueRef | js.Function0[VgValueRef]
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
   
-  var offset: js.UndefOr[Double | SignalRef] = js.undefined
+  var offset: js.UndefOr[Double | SignalRef | VgValueRef] = js.undefined
   
   var scale: ScaleComponent
   
@@ -51,7 +47,7 @@ object MidPointParamschannelPosi {
     channel: typings.vegaLite.channelMod.Channel & (PositionChannel | PolarPositionChannel),
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
-    markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef],
+    markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef],
     scale: ScaleComponent,
     scaleName: String
   ): MidPointParamschannelPosi = {
@@ -61,9 +57,9 @@ object MidPointParamschannelPosi {
   
   extension [Self <: MidPointParamschannelPosi](x: Self) {
     
-    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBandPosition(value: Double | SignalRef): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     
-    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
     inline def setChannel(value: typings.vegaLite.channelMod.Channel & (PositionChannel | PolarPositionChannel)): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
@@ -79,7 +75,7 @@ object MidPointParamschannelPosi {
     
     inline def setChannelDefVarargs(
       value: ((FieldDefWithoutScale[String, StandardType]) | OrderFieldDef[String] | StringFieldDef[String])*
-    ): Self = StObject.set(x, "channelDef", js.Array(value :_*))
+    ): Self = StObject.set(x, "channelDef", js.Array(value*))
     
     inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
@@ -87,9 +83,9 @@ object MidPointParamschannelPosi {
     
     inline def setDefaultRefFunction0(value: () => VgValueRef): Self = StObject.set(x, "defaultRef", js.Any.fromFunction0(value))
     
-    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | SignalRef | VgValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     

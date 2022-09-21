@@ -8,5 +8,5 @@ object putFileMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PutFile", "PutFile")
   @js.native
-  val PutFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

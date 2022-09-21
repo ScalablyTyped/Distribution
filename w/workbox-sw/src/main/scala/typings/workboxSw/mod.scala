@@ -1,7 +1,6 @@
 package typings.workboxSw
 
 import typings.std.HeadersInit
-import typings.std.RegExp
 import typings.std.Request
 import typings.std.Response
 import typings.workboxBackgroundSync.queueMod.QueueOptions
@@ -51,7 +50,7 @@ object mod {
         
         @JSGlobal("workbox.backgroundSync.Plugin")
         @js.native
-        class Plugin protected ()
+        open class Plugin protected ()
           extends typings.workboxBackgroundSync.mod.Plugin {
           def this(name: String) = this()
           def this(name: String, options: QueueOptions) = this()
@@ -59,7 +58,7 @@ object mod {
         
         @JSGlobal("workbox.backgroundSync.Queue")
         @js.native
-        class Queue protected ()
+        open class Queue protected ()
           extends typings.workboxBackgroundSync.mod.Queue {
           def this(name: String) = this()
           def this(name: String, options: QueueOptions) = this()
@@ -75,14 +74,14 @@ object mod {
         
         @JSGlobal("workbox.broadcastUpdate.BroadcastCacheUpdate")
         @js.native
-        class BroadcastCacheUpdate ()
+        open class BroadcastCacheUpdate ()
           extends typings.workboxBroadcastUpdate.mod.BroadcastCacheUpdate {
           def this(options: BroadcastCacheUpdateOptions) = this()
         }
         
         @JSGlobal("workbox.broadcastUpdate.Plugin")
         @js.native
-        class Plugin ()
+        open class Plugin ()
           extends typings.workboxBroadcastUpdate.mod.Plugin {
           def this(options: BroadcastCacheUpdateOptions) = this()
         }
@@ -95,14 +94,14 @@ object mod {
         
         @JSGlobal("workbox.cacheableResponse.CacheableResponse")
         @js.native
-        class CacheableResponse ()
+        open class CacheableResponse ()
           extends typings.workboxCacheableResponse.mod.CacheableResponse {
           def this(config: CacheableResponseConfig) = this()
         }
         
         @JSGlobal("workbox.cacheableResponse.Plugin")
         @js.native
-        class Plugin ()
+        open class Plugin ()
           extends typings.workboxCacheableResponse.mod.Plugin {
           def this(config: CacheableResponseConfig) = this()
         }
@@ -133,7 +132,7 @@ object mod {
         
         @JSGlobal("workbox.expiration.CacheExpiration")
         @js.native
-        class CacheExpiration protected ()
+        open class CacheExpiration protected ()
           extends typings.workboxExpiration.mod.CacheExpiration {
           def this(cacheName: String) = this()
           def this(cacheName: String, config: CacheExpirationConfig) = this()
@@ -141,7 +140,7 @@ object mod {
         
         @JSGlobal("workbox.expiration.Plugin")
         @js.native
-        class Plugin ()
+        open class Plugin ()
           extends typings.workboxExpiration.mod.Plugin {
           def this(config: ExpirationPluginConfig) = this()
         }
@@ -184,7 +183,7 @@ object mod {
         
         @JSGlobal("workbox.precaching.PrecacheController")
         @js.native
-        class PrecacheController ()
+        open class PrecacheController ()
           extends typings.workboxPrecaching.mod.PrecacheController {
           def this(cacheName: String) = this()
         }
@@ -213,7 +212,7 @@ object mod {
         
         @JSGlobal("workbox.rangeRequests.Plugin")
         @js.native
-        class Plugin ()
+        open class Plugin ()
           extends typings.workboxRangeRequests.mod.Plugin
         
         inline def createPartialResponse(request: Request, originalResponse: Response): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartialResponse")(request.asInstanceOf[js.Any], originalResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
@@ -228,7 +227,7 @@ object mod {
         
         @JSGlobal("workbox.routing.NavigationRoute")
         @js.native
-        class NavigationRoute protected ()
+        open class NavigationRoute protected ()
           extends typings.workboxRouting.mod.NavigationRoute {
           def this(handler: RouteHandler) = this()
           def this(handler: RouteHandler, options: NavigationRouteOptions) = this()
@@ -236,15 +235,15 @@ object mod {
         
         @JSGlobal("workbox.routing.RegExpRoute")
         @js.native
-        class RegExpRoute protected ()
+        open class RegExpRoute protected ()
           extends typings.workboxRouting.mod.RegExpRoute {
-          def this(regExp: RegExp, handler: RouteHandler) = this()
-          def this(regExp: RegExp, handler: RouteHandler, method: HTTPMethod) = this()
+          def this(regExp: js.RegExp, handler: RouteHandler) = this()
+          def this(regExp: js.RegExp, handler: RouteHandler, method: HTTPMethod) = this()
         }
         
         @JSGlobal("workbox.routing.Route")
         @js.native
-        class Route[MatchReturn] protected ()
+        open class Route[MatchReturn] protected ()
           extends typings.workboxRouting.mod.Route[MatchReturn] {
           def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler) = this()
           def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod) = this()
@@ -252,7 +251,7 @@ object mod {
         
         @JSGlobal("workbox.routing.Router")
         @js.native
-        class Router ()
+        open class Router ()
           extends typings.workboxRouting.mod.Router
         
         inline def registerNavigationRoute(cachedAssetUrl: String): typings.workboxRouting.navigationRouteMod.NavigationRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.navigationRouteMod.NavigationRoute]
@@ -262,14 +261,14 @@ object mod {
         inline def registerRoute(capture: String, handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
         inline def registerRoute(capture: String, handler: RouteHandler): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
         inline def registerRoute(capture: String, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
-        inline def registerRoute(capture: RegExp): typings.workboxRouting.regExpRouteMod.RegExpRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
-        inline def registerRoute(capture: RegExp, handler: Unit, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
-        inline def registerRoute(capture: RegExp, handler: RouteHandler): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
-        inline def registerRoute(capture: RegExp, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
-        inline def registerRoute(capture: RegisterRouteCapture): typings.workboxRouting.routeMod.Route[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
-        inline def registerRoute(capture: RegisterRouteCapture, handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
-        inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
-        inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
+        inline def registerRoute(capture: js.RegExp): typings.workboxRouting.regExpRouteMod.RegExpRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        inline def registerRoute(capture: js.RegExp, handler: Unit, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        inline def registerRoute(capture: js.RegExp, handler: RouteHandler): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        inline def registerRoute(capture: js.RegExp, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        inline def registerRoute(capture: RegisterRouteCapture): typings.workboxRouting.routeMod.Route[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[Any]]
+        inline def registerRoute(capture: RegisterRouteCapture, handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Any]]
+        inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): typings.workboxRouting.routeMod.Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Any]]
+        inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Any]]
         inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
         inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
         inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
@@ -296,35 +295,35 @@ object mod {
         
         @JSGlobal("workbox.strategies.CacheFirst")
         @js.native
-        class CacheFirst ()
+        open class CacheFirst ()
           extends typings.workboxStrategies.mod.CacheFirst {
           def this(options: CacheFirstOptions) = this()
         }
         
         @JSGlobal("workbox.strategies.CacheOnly")
         @js.native
-        class CacheOnly ()
+        open class CacheOnly ()
           extends typings.workboxStrategies.mod.CacheOnly {
           def this(options: CacheOnlyOptions) = this()
         }
         
         @JSGlobal("workbox.strategies.NetworkFirst")
         @js.native
-        class NetworkFirst ()
+        open class NetworkFirst ()
           extends typings.workboxStrategies.mod.NetworkFirst {
           def this(options: NetworkFirstOptions) = this()
         }
         
         @JSGlobal("workbox.strategies.NetworkOnly")
         @js.native
-        class NetworkOnly ()
+        open class NetworkOnly ()
           extends typings.workboxStrategies.mod.NetworkOnly {
           def this(options: NetworkOnlyOptions) = this()
         }
         
         @JSGlobal("workbox.strategies.StaleWhileRevalidate")
         @js.native
-        class StaleWhileRevalidate ()
+        open class StaleWhileRevalidate ()
           extends typings.workboxStrategies.mod.StaleWhileRevalidate {
           def this(options: StaleWhileRevalidateOptions) = this()
         }

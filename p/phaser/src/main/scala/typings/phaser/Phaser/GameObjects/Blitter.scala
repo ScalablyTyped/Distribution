@@ -13,7 +13,6 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Structs.List
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,19 +78,19 @@ trait Blitter
   def create(x: Double, y: Double): Bob = js.native
   def create(x: Double, y: Double, frame: String): Bob = js.native
   def create(x: Double, y: Double, frame: String, visible: Boolean): Bob = js.native
-  def create(x: Double, y: Double, frame: String, visible: Boolean, index: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: String, visible: Unit, index: integer): Bob = js.native
+  def create(x: Double, y: Double, frame: String, visible: Boolean, index: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: String, visible: Unit, index: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: Double, visible: Boolean): Bob = js.native
+  def create(x: Double, y: Double, frame: Double, visible: Boolean, index: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: Double, visible: Unit, index: Double): Bob = js.native
   def create(x: Double, y: Double, frame: Unit, visible: Boolean): Bob = js.native
-  def create(x: Double, y: Double, frame: Unit, visible: Boolean, index: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: Unit, visible: Unit, index: integer): Bob = js.native
+  def create(x: Double, y: Double, frame: Unit, visible: Boolean, index: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: Unit, visible: Unit, index: Double): Bob = js.native
   def create(x: Double, y: Double, frame: Frame): Bob = js.native
   def create(x: Double, y: Double, frame: Frame, visible: Boolean): Bob = js.native
-  def create(x: Double, y: Double, frame: Frame, visible: Boolean, index: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: Frame, visible: Unit, index: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: integer, visible: Boolean): Bob = js.native
-  def create(x: Double, y: Double, frame: integer, visible: Boolean, index: integer): Bob = js.native
-  def create(x: Double, y: Double, frame: integer, visible: Unit, index: integer): Bob = js.native
+  def create(x: Double, y: Double, frame: Frame, visible: Boolean, index: Double): Bob = js.native
+  def create(x: Double, y: Double, frame: Frame, visible: Unit, index: Double): Bob = js.native
   
   /**
     * Creates multiple Bob objects within this Blitter and then passes each of them to the specified callback.
@@ -100,21 +99,21 @@ trait Blitter
     * @param frame The Frame the Bobs will use. It must be part of the Blitter Texture.
     * @param visible Should the created Bob render or not? Default true.
     */
-  def createFromCallback(callback: CreateCallback, quantity: integer): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: String): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: String, visible: Boolean): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: js.Array[Frame | String | integer]): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: String): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: String, visible: Boolean): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: js.Array[Double | Frame | String]): js.Array[Bob] = js.native
   def createFromCallback(
     callback: CreateCallback,
-    quantity: integer,
-    frame: js.Array[Frame | String | integer],
+    quantity: Double,
+    frame: js.Array[Double | Frame | String],
     visible: Boolean
   ): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: Unit, visible: Boolean): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: Frame): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: integer): js.Array[Bob] = js.native
-  def createFromCallback(callback: CreateCallback, quantity: integer, frame: integer, visible: Boolean): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: Double): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: Double, visible: Boolean): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: Unit, visible: Boolean): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: Frame): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: Double, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
   
   /**
     * Creates multiple Bobs in one call.
@@ -127,16 +126,16 @@ trait Blitter
     * @param frame The Frame the Bobs will use. It must be part of the Blitter Texture.
     * @param visible Should the created Bob render or not? Default true.
     */
-  def createMultiple(quantity: integer): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: String): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: String, visible: Boolean): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: js.Array[Frame | String | integer]): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: js.Array[Frame | String | integer], visible: Boolean): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: Unit, visible: Boolean): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: Frame): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: integer): js.Array[Bob] = js.native
-  def createMultiple(quantity: integer, frame: integer, visible: Boolean): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: String): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: String, visible: Boolean): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: js.Array[Double | Frame | String]): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: js.Array[Double | Frame | String], visible: Boolean): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: Double): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: Double, visible: Boolean): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: Unit, visible: Boolean): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: Frame): js.Array[Bob] = js.native
+  def createMultiple(quantity: Double, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
   
   /**
     * Is the Blitter considered dirty?

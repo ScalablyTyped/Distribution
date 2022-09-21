@@ -4,7 +4,6 @@ import typings.scriptExtHtmlWebpackPlugin.mod.ScriptMatchingPatternBase
 import typings.scriptExtHtmlWebpackPlugin.scriptExtHtmlWebpackPluginStrings.all
 import typings.scriptExtHtmlWebpackPlugin.scriptExtHtmlWebpackPluginStrings.async
 import typings.scriptExtHtmlWebpackPlugin.scriptExtHtmlWebpackPluginStrings.initial
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ object anon {
       
       inline def setTest(value: ScriptMatchingPatternBase): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      inline def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "test", js.Array(value*))
     }
   }
 }

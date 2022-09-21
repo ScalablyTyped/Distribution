@@ -23,7 +23,7 @@ object ArrayParamUriParamcritica {
     
     inline def setArray(value: js.Array[UriParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    inline def setArrayVarargs(value: UriParam*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: UriParam*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

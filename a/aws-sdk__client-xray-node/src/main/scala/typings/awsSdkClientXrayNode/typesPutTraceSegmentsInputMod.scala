@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesPutTraceSegmentsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -38,11 +37,11 @@ object typesPutTraceSegmentsInputMod {
     /**
       * <p>A string containing a JSON document defining one or more segments or subsegments.</p>
       */
-    var TraceSegmentDocuments: js.Array[String] | Iterable[String]
+    var TraceSegmentDocuments: js.Array[String] | js.Iterable[String]
   }
   object PutTraceSegmentsInput {
     
-    inline def apply(TraceSegmentDocuments: js.Array[String] | Iterable[String]): PutTraceSegmentsInput = {
+    inline def apply(TraceSegmentDocuments: js.Array[String] | js.Iterable[String]): PutTraceSegmentsInput = {
       val __obj = js.Dynamic.literal(TraceSegmentDocuments = TraceSegmentDocuments.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutTraceSegmentsInput]
     }
@@ -54,7 +53,7 @@ object typesPutTraceSegmentsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -63,9 +62,9 @@ object typesPutTraceSegmentsInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setTraceSegmentDocuments(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "TraceSegmentDocuments", value.asInstanceOf[js.Any])
+      inline def setTraceSegmentDocuments(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "TraceSegmentDocuments", value.asInstanceOf[js.Any])
       
-      inline def setTraceSegmentDocumentsVarargs(value: String*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value :_*))
+      inline def setTraceSegmentDocumentsVarargs(value: String*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value*))
     }
   }
 }

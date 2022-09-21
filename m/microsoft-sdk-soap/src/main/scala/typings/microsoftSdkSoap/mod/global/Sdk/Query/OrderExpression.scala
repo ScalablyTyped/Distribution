@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.OrderExpression")
 @js.native
-class OrderExpression () extends StObject
+open class OrderExpression () extends StObject

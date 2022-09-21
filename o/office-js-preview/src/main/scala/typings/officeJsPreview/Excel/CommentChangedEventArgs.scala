@@ -14,49 +14,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Occurs when existing comments are changed.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait CommentChangedEventArgs extends StObject {
   
   /**
-    *
     * Gets the change type that represents how the changed event is triggered.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var changeType: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited
   
   /**
+    * Get the `CommentDetail` array which contains the comment ID and IDs of its related replies.
     *
-    * Gets the `CommentDetail` array which contains the comment ID and IDs of its related replies.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var commentDetails: js.Array[CommentDetail]
   
   /**
-    *
     * Specifies the source of the event. See `Excel.EventSource` for details.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var source: EventSource | Local | Remote
   
   /**
-    *
     * Gets the type of the event. See `Excel.EventType` for details.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var `type`: CommentChanged
   
   /**
-    *
     * Gets the ID of the worksheet in which the event happened.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var worksheetId: String
@@ -82,7 +82,7 @@ object CommentChangedEventArgs {
     
     inline def setCommentDetails(value: js.Array[CommentDetail]): Self = StObject.set(x, "commentDetails", value.asInstanceOf[js.Any])
     
-    inline def setCommentDetailsVarargs(value: CommentDetail*): Self = StObject.set(x, "commentDetails", js.Array(value :_*))
+    inline def setCommentDetailsVarargs(value: CommentDetail*): Self = StObject.set(x, "commentDetails", js.Array(value*))
     
     inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

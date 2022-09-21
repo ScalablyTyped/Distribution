@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("react-linkify", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   trait MatchInfo extends StObject {
     
@@ -123,5 +123,5 @@ object mod {
     }
   }
   
-  type ReactLinkify = Component[Props, js.Object, js.Any]
+  type ReactLinkify = Component[Props, js.Object, Any]
 }

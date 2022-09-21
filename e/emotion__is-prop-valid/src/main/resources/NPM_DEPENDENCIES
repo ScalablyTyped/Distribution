@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/is-prop-valid" : "0.8.8"
+      "@emotion/is-prop-valid" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/is-prop-valid" : "0.8.8"
+      "@emotion/is-prop-valid" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

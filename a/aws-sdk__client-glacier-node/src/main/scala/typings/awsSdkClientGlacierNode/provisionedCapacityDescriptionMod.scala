@@ -8,5 +8,5 @@ object provisionedCapacityDescriptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_ProvisionedCapacityDescription", "_ProvisionedCapacityDescription")
   @js.native
-  val ProvisionedCapacityDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ProvisionedCapacityDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -13,6 +13,18 @@ trait ApplicationPolicy extends StObject {
     */
   var accessibleTrackIds: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * Specifies whether the app is allowed networking when the VPN is not connected and alwaysOnVpnPackage.lockdownEnabled is enabled. If set to VPN_LOCKDOWN_ENFORCED, the app is not
+    * allowed networking, and if set to VPN_LOCKDOWN_EXEMPTION, the app is allowed networking. Only supported on devices running Android 10 and above. If this is not supported by the
+    * device, the device will contain a NonComplianceDetail with non_compliance_reason set to API_LEVEL and a fieldPath. If this is not applicable to the app, the device will contain a
+    * NonComplianceDetail with non_compliance_reason set to UNSUPPORTED and a fieldPath. The fieldPath is set to applications[i].alwaysOnVpnLockdownExemption, where i is the index of the
+    * package in the applications policy.
+    */
+  var alwaysOnVpnLockdownExemption: js.UndefOr[String] = js.undefined
+  
+  /** Controls the auto-update mode for the app. */
+  var autoUpdateMode: js.UndefOr[String] = js.undefined
+  
   /** Controls whether the app can communicate with itself across a device’s work and personal profiles, subject to user consent. */
   var connectedWorkAndPersonalApp: js.UndefOr[String] = js.undefined
   
@@ -28,6 +40,9 @@ trait ApplicationPolicy extends StObject {
   /** Whether the app is disabled. When disabled, the app data is still preserved. */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /** Configuration to enable this app as an extension app, with the capability of interacting with Android Device Policy offline.This field can be set for at most one app. */
+  var extensionConfig: js.UndefOr[ExtensionConfig] = js.undefined
+  
   /** The type of installation to perform. */
   var installType: js.UndefOr[String] = js.undefined
   
@@ -42,7 +57,7 @@ trait ApplicationPolicy extends StObject {
   var managedConfiguration: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[Any]
   ] = js.undefined
   
   /** The managed configurations template for the app, saved from the managed configurations iframe. This field is ignored if managed_configuration is set. */
@@ -74,7 +89,15 @@ object ApplicationPolicy {
     
     inline def setAccessibleTrackIdsUndefined: Self = StObject.set(x, "accessibleTrackIds", js.undefined)
     
-    inline def setAccessibleTrackIdsVarargs(value: String*): Self = StObject.set(x, "accessibleTrackIds", js.Array(value :_*))
+    inline def setAccessibleTrackIdsVarargs(value: String*): Self = StObject.set(x, "accessibleTrackIds", js.Array(value*))
+    
+    inline def setAlwaysOnVpnLockdownExemption(value: String): Self = StObject.set(x, "alwaysOnVpnLockdownExemption", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysOnVpnLockdownExemptionUndefined: Self = StObject.set(x, "alwaysOnVpnLockdownExemption", js.undefined)
+    
+    inline def setAutoUpdateMode(value: String): Self = StObject.set(x, "autoUpdateMode", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUpdateModeUndefined: Self = StObject.set(x, "autoUpdateMode", js.undefined)
     
     inline def setConnectedWorkAndPersonalApp(value: String): Self = StObject.set(x, "connectedWorkAndPersonalApp", value.asInstanceOf[js.Any])
     
@@ -88,11 +111,15 @@ object ApplicationPolicy {
     
     inline def setDelegatedScopesUndefined: Self = StObject.set(x, "delegatedScopes", js.undefined)
     
-    inline def setDelegatedScopesVarargs(value: String*): Self = StObject.set(x, "delegatedScopes", js.Array(value :_*))
+    inline def setDelegatedScopesVarargs(value: String*): Self = StObject.set(x, "delegatedScopes", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setExtensionConfig(value: ExtensionConfig): Self = StObject.set(x, "extensionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionConfigUndefined: Self = StObject.set(x, "extensionConfig", js.undefined)
     
     inline def setInstallType(value: String): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
     
@@ -105,7 +132,7 @@ object ApplicationPolicy {
     inline def setManagedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy & TopLevel[Any]
     ): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
     inline def setManagedConfigurationTemplate(value: ManagedConfigurationTemplate): Self = StObject.set(x, "managedConfigurationTemplate", value.asInstanceOf[js.Any])
@@ -126,6 +153,6 @@ object ApplicationPolicy {
     
     inline def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
-    inline def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
+    inline def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value*))
   }
 }

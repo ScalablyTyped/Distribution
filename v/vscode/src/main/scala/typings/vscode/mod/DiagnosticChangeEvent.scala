@@ -22,6 +22,6 @@ object DiagnosticChangeEvent {
     
     inline def setUris(value: js.Array[Uri]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "uris", js.Array(value*))
   }
 }

@@ -81,7 +81,7 @@ trait Annotation extends StObject {
   /**
     * Data that you define that is assigned to the annotation.
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * A numeric hint the map uses to prioritize displaying annotations.

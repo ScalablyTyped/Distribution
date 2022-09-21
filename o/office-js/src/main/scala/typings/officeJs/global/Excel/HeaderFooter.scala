@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.HeaderFooter")
 @js.native
-class HeaderFooter ()
+open class HeaderFooter ()
   extends StObject
      with typings.officeJs.Excel.HeaderFooter {
   

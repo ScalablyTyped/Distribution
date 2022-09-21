@@ -1,7 +1,7 @@
 
 # Scala.js typings for focus-trap-react
 
-Typings are for version 6.0.0
+Typings are for version 10.0.0
 
 ## Library description:
 A React component that traps focus.
@@ -10,15 +10,12 @@ A React component that traps focus.
 | ------------------ | :-------------: |
 | Full name          | focus-trap-react |
 | Keywords           | react, reactjs, react-component, aria, accessibility, modal, dialog, focus, keyboard |
-| # releases         | 11 |
-| # dependents       | 122 |
-| # downloads        | 9608301 |
-| # stars            | 2 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 1697244.3333333333 |
+| # stars            | 571.0 |
 
 ## Links
-- [Homepage](https://github.com/focus-trap/focus-trap-react#readme)
-- [Bugs](https://github.com/focus-trap/focus-trap-react/issues)
-- [Repository](https://github.com/focus-trap/focus-trap-react)
 - [Npm](https://www.npmjs.com/package/focus-trap-react)
     
 

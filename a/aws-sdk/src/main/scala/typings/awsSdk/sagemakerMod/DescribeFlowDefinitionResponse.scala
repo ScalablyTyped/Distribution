@@ -9,7 +9,7 @@ trait DescribeFlowDefinitionResponse extends StObject {
   /**
     * The timestamp when the flow definition was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The reason your flow definition failed.
@@ -52,14 +52,14 @@ trait DescribeFlowDefinitionResponse extends StObject {
   var OutputConfig: FlowDefinitionOutputConfig
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) execution role for the flow definition.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services Identity and Access Management (IAM) execution role for the flow definition.
     */
   var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
 }
 object DescribeFlowDefinitionResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     FlowDefinitionArn: FlowDefinitionArn,
     FlowDefinitionName: FlowDefinitionName,
     FlowDefinitionStatus: FlowDefinitionStatus,
@@ -73,7 +73,7 @@ object DescribeFlowDefinitionResponse {
   
   extension [Self <: DescribeFlowDefinitionResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

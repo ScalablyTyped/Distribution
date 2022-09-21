@@ -96,7 +96,7 @@ object anon {
   trait Buffer extends StObject {
     
     /** The buffer passed to `#read()`, but offset-adjusted */
-    var buffer: typings.node.Buffer
+    var buffer: typings.node.bufferMod.global.Buffer
     
     /** The number of bytes successfully read */
     var bytesRead: Double
@@ -106,14 +106,14 @@ object anon {
   }
   object Buffer {
     
-    inline def apply(buffer: typings.node.Buffer, bytesRead: Double, position: Double): Buffer = {
+    inline def apply(buffer: typings.node.bufferMod.global.Buffer, bytesRead: Double, position: Double): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
     extension [Self <: Buffer](x: Self) {
       
-      inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
       

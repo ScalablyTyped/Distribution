@@ -212,7 +212,7 @@ object mod {
     var prettify_separator: js.UndefOr[String] = js.undefined
     
     // Traverse extra CSS-classes to sliders container [Default: —]
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     var skin: js.UndefOr[flat | big | modern | round | sharp | square] = js.undefined
     
@@ -238,7 +238,7 @@ object mod {
     var `type`: js.UndefOr[String] = js.undefined
     
     // Allow user to drag whole range. Only for **double** type [Default: false]
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
     
     // Used for **double** type and only if prefix or postfix was set up. Determine how to decorate close values. For example: **$10k — $100k** or **$10 — 100k** [Default: true]
     var values_separator: js.UndefOr[String] = js.undefined
@@ -384,7 +384,7 @@ object mod {
       
       inline def setPrettify_separatorUndefined: Self = StObject.set(x, "prettify_separator", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
@@ -420,11 +420,11 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setValues_separator(value: String): Self = StObject.set(x, "values_separator", value.asInstanceOf[js.Any])
       

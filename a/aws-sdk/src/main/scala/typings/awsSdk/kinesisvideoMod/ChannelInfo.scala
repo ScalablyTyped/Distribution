@@ -29,7 +29,7 @@ trait ChannelInfo extends StObject {
   /**
     * The time at which the signaling channel was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A structure that contains the configuration for the SINGLE_MASTER channel type.
@@ -66,7 +66,7 @@ object ChannelInfo {
     
     inline def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

@@ -2,17 +2,21 @@ package typings.libphonenumberJs
 
 import typings.libphonenumberJs.anon.DefaultCallingCode
 import typings.libphonenumberJs.anon.DefaultCountry
+import typings.libphonenumberJs.anon.V2
 import typings.libphonenumberJs.anon.`0`
-import typings.libphonenumberJs.anon.countryinCountryCodeNatio
 import typings.libphonenumberJs.typesMod.CountryCallingCode
 import typings.libphonenumberJs.typesMod.CountryCode
+import typings.libphonenumberJs.typesMod.E164Number
+import typings.libphonenumberJs.typesMod.Examples
 import typings.libphonenumberJs.typesMod.Extension
-import typings.libphonenumberJs.typesMod.Metadata
+import typings.libphonenumberJs.typesMod.MetadataJson
 import typings.libphonenumberJs.typesMod.NationalNumber
 import typings.libphonenumberJs.typesMod.NumberFormat
 import typings.libphonenumberJs.typesMod.NumberFound
 import typings.libphonenumberJs.typesMod.NumberFoundLegacy
 import typings.libphonenumberJs.typesMod.NumberType
+import typings.libphonenumberJs.typesMod.NumberingPlan
+import typings.libphonenumberJs.typesMod.ValidatePhoneNumberLengthResult
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,33 +34,54 @@ object mod {
   
   @JSImport("libphonenumber-js", "AsYouType")
   @js.native
-  class AsYouType () extends StObject {
-    def this(defaultCountryCode: DefaultCallingCode) = this()
+  open class AsYouType () extends StObject {
+    def this(defaultCountryCode: DefaultCountry) = this()
     def this(defaultCountryCode: CountryCode) = this()
     
     var country: js.UndefOr[CountryCode] = js.native
     
+    def getCallingCode(): js.UndefOr[String] = js.native
+    
     def getChars(): String = js.native
+    
+    def getCountry(): js.UndefOr[CountryCode] = js.native
     
     def getNationalNumber(): String = js.native
     
     def getNumber(): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
     
+    def getNumberValue(): js.UndefOr[E164Number] = js.native
+    
     def getTemplate(): String = js.native
     
     def input(text: String): String = js.native
     
+    def isInternational(): Boolean = js.native
+    
+    def isPossible(): Boolean = js.native
+    
+    def isValid(): Boolean = js.native
+    
     def reset(): Unit = js.native
+  }
+  
+  @JSImport("libphonenumber-js", "Metadata")
+  @js.native
+  open class Metadata () extends StObject {
+    
+    var numberingPlan: js.UndefOr[NumberingPlan] = js.native
+    
+    def selectNumberingPlan(country: CountryCode): Unit = js.native
   }
   
   @JSImport("libphonenumber-js", "ParseError")
   @js.native
-  class ParseError ()
+  open class ParseError ()
     extends typings.libphonenumberJs.typesMod.ParseError
   
   @JSImport("libphonenumber-js", "ParsedNumberSearch")
   @js.native
-  class ParsedNumberSearch protected () extends StObject {
+  open class ParsedNumberSearch protected () extends StObject {
     def this(text: String) = this()
     def this(text: String, options: `0`) = this()
     
@@ -67,21 +92,21 @@ object mod {
   
   @JSImport("libphonenumber-js", "PhoneNumber")
   @js.native
-  class PhoneNumber protected ()
+  open class PhoneNumber protected ()
     extends typings.libphonenumberJs.typesMod.PhoneNumber {
     def this(
       countryCallingCodeOrCountry: CountryCallingCode,
       nationalNumber: NationalNumber,
-      metadata: Metadata
+      metadata: MetadataJson
     ) = this()
-    def this(countryCallingCodeOrCountry: CountryCode, nationalNumber: NationalNumber, metadata: Metadata) = this()
+    def this(countryCallingCodeOrCountry: CountryCode, nationalNumber: NationalNumber, metadata: MetadataJson) = this()
   }
   
   @JSImport("libphonenumber-js", "PhoneNumberMatcher")
   @js.native
-  class PhoneNumberMatcher protected () extends StObject {
+  open class PhoneNumberMatcher protected () extends StObject {
     def this(text: String) = this()
-    def this(text: String, options: DefaultCountry) = this()
+    def this(text: String, options: V2) = this()
     
     def hasNext(): Boolean = js.native
     
@@ -89,7 +114,7 @@ object mod {
   }
   
   inline def findNumbers(text: String): js.Array[NumberFoundLegacy] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[NumberFoundLegacy]]
-  inline def findNumbers(text: String, options: DefaultCountry): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  inline def findNumbers(text: String, options: V2): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
   inline def findNumbers(text: String, options: CountryCode): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
   
   inline def findParsedNumbers(text: String): js.Array[NumberFoundLegacy] = ^.asInstanceOf[js.Dynamic].applyDynamic("findParsedNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[NumberFoundLegacy]]
@@ -97,7 +122,7 @@ object mod {
   inline def findParsedNumbers(text: String, options: CountryCode): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
   
   inline def findPhoneNumbersInText(text: String): js.Array[NumberFound] = ^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[NumberFound]]
-  inline def findPhoneNumbersInText(text: String, options: DefaultCallingCode): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  inline def findPhoneNumbersInText(text: String, options: DefaultCountry): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
   inline def findPhoneNumbersInText(text: String, options: CountryCode): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
   
   inline def format(parsedNumber: ParsedNumber, format: NumberFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(parsedNumber.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -118,7 +143,7 @@ object mod {
   
   inline def getCountryCallingCode(countryCode: CountryCode): CountryCallingCode = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountryCallingCode")(countryCode.asInstanceOf[js.Any]).asInstanceOf[CountryCallingCode]
   
-  inline def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(country.asInstanceOf[js.Any], examples.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
+  inline def getExampleNumber(country: CountryCode, examples: Examples): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(country.asInstanceOf[js.Any], examples.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
   
   inline def getExtPrefix(countryCode: CountryCode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtPrefix")(countryCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -132,6 +157,10 @@ object mod {
   inline def isPossibleNumber(phone: NationalNumber): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPossibleNumber")(phone.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isPossibleNumber(phone: NationalNumber, country: CountryCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossibleNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def isPossiblePhoneNumber(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPossiblePhoneNumber")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPossiblePhoneNumber(text: String, defaultCountry: DefaultCountry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossiblePhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPossiblePhoneNumber(text: String, defaultCountry: CountryCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossiblePhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def isSupportedCountry(countryCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedCountry")(countryCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidNumber(parsedNumber: ParsedNumber): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(parsedNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -139,6 +168,10 @@ object mod {
   inline def isValidNumber(phone: NationalNumber, country: CountryCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isValidNumberForRegion(phone: NationalNumber, country: CountryCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumberForRegion")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidPhoneNumber(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPhoneNumber(text: String, defaultCountry: DefaultCountry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidPhoneNumber(text: String, defaultCountry: CountryCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def parse(text: String): ParsedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedNumber]
   inline def parse(text: String, options: ParseNumberOptions): ParsedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber]
@@ -165,7 +198,7 @@ object mod {
   inline def parsePhoneNumberWithError(text: String, defaultCountry: CountryCode): typings.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberWithError")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[typings.libphonenumberJs.typesMod.PhoneNumber]
   
   inline def searchNumbers(text: String): IterableIterator[NumberFoundLegacy] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[NumberFoundLegacy]]
-  inline def searchNumbers(text: String, options: DefaultCountry): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  inline def searchNumbers(text: String, options: V2): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
   inline def searchNumbers(text: String, options: CountryCode): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
   
   inline def searchParsedNumbers(text: String): IterableIterator[NumberFoundLegacy] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchParsedNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[NumberFoundLegacy]]
@@ -173,10 +206,14 @@ object mod {
   inline def searchParsedNumbers(text: String, options: CountryCode): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
   
   inline def searchPhoneNumbersInText(text: String): IterableIterator[NumberFound] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[NumberFound]]
-  inline def searchPhoneNumbersInText(text: String, options: DefaultCallingCode): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  inline def searchPhoneNumbersInText(text: String, options: DefaultCountry): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
   inline def searchPhoneNumbersInText(text: String, options: CountryCode): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
   
-  type FormatExtension = js.Function3[/* number */ String, /* extension */ String, /* metadata */ Metadata, String]
+  inline def validatePhoneNumberLength(text: String): js.UndefOr[ValidatePhoneNumberLengthResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePhoneNumberLength")(text.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ValidatePhoneNumberLengthResult]]
+  inline def validatePhoneNumberLength(text: String, defaultCountry: DefaultCountry): js.UndefOr[ValidatePhoneNumberLengthResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePhoneNumberLength")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ValidatePhoneNumberLengthResult]]
+  inline def validatePhoneNumberLength(text: String, defaultCountry: CountryCode): js.UndefOr[ValidatePhoneNumberLengthResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePhoneNumberLength")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ValidatePhoneNumberLengthResult]]
+  
+  type FormatExtension = js.Function3[/* number */ String, /* extension */ String, /* metadata */ MetadataJson, String]
   
   trait FormatNumberOptions extends StObject {
     
@@ -197,7 +234,7 @@ object mod {
     
     extension [Self <: FormatNumberOptions](x: Self) {
       
-      inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ Metadata) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
+      inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ MetadataJson) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
       inline def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
       
@@ -230,7 +267,7 @@ object mod {
     
     extension [Self <: FormatNumberOptionsWithoutIDD](x: Self) {
       
-      inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ Metadata) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
+      inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ MetadataJson) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
       inline def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
       

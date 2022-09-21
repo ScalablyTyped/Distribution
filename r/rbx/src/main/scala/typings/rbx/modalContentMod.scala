@@ -54,7 +54,7 @@ object modalContentMod {
   
   @JSImport("rbx/components/modal/modal-content", "ModalContent")
   @js.native
-  val ModalContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val ModalContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait ModalContentProps extends StObject {

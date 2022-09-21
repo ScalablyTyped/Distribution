@@ -11,7 +11,7 @@ trait SliderOptions extends StObject {
   
   var initial: js.UndefOr[Double] = js.undefined
   
-  var on_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var on_change: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var precision: js.UndefOr[Double] = js.undefined
   
@@ -40,7 +40,7 @@ object SliderOptions {
     
     inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    inline def setOn_change(value: () => js.Any): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
+    inline def setOn_change(value: () => Any): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
     
     inline def setOn_changeUndefined: Self = StObject.set(x, "on_change", js.undefined)
     

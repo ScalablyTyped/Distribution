@@ -34,18 +34,18 @@ object ConverterHint {
     
     inline def setConverterHint(value: (js.Array[placeholder | notewindow | none]) | placeholder | notewindow | none): Self = StObject.set(x, "converterHint", value.asInstanceOf[js.Any])
     
-    inline def setConverterHintVarargs(value: (placeholder | notewindow | none)*): Self = StObject.set(x, "converterHint", js.Array(value :_*))
+    inline def setConverterHintVarargs(value: (placeholder | notewindow | none)*): Self = StObject.set(x, "converterHint", js.Array(value*))
     
     inline def setHelpInstruction(value: (js.Array[notewindow | none]) | notewindow | none): Self = StObject.set(x, "helpInstruction", value.asInstanceOf[js.Any])
     
-    inline def setHelpInstructionVarargs(value: (notewindow | none)*): Self = StObject.set(x, "helpInstruction", js.Array(value :_*))
+    inline def setHelpInstructionVarargs(value: (notewindow | none)*): Self = StObject.set(x, "helpInstruction", js.Array(value*))
     
     inline def setMessages(value: (js.Array[`inline` | notewindow | none]) | `inline` | notewindow | none): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: (`inline` | notewindow | none)*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: (`inline` | notewindow | none)*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setValidatorHint(value: (js.Array[notewindow | none]) | notewindow | none): Self = StObject.set(x, "validatorHint", value.asInstanceOf[js.Any])
     
-    inline def setValidatorHintVarargs(value: (notewindow | none)*): Self = StObject.set(x, "validatorHint", js.Array(value :_*))
+    inline def setValidatorHintVarargs(value: (notewindow | none)*): Self = StObject.set(x, "validatorHint", js.Array(value*))
   }
 }

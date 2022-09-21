@@ -1,7 +1,6 @@
 package typings.rcTreeSelect
 
-import typings.rcTreeSelect.interfaceMod.SelectSource
-import typings.rcTreeSelect.useKeyValueMappingMod._SkipType
+import typings.rcTreeSelect.treeSelectMod.SelectSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,15 +36,10 @@ object rcTreeSelectStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait checkbox
-    extends StObject
-       with _SkipType
-  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  
-  @js.native
   sealed trait clear
     extends StObject
        with SelectSource
+       with typings.rcTreeSelect.interfaceMod.SelectSource
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
@@ -96,6 +90,7 @@ object rcTreeSelectStrings {
   sealed trait input
     extends StObject
        with SelectSource
+       with typings.rcTreeSelect.interfaceMod.SelectSource
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -113,6 +108,10 @@ object rcTreeSelectStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait menu extends StObject
@@ -138,6 +137,7 @@ object rcTreeSelectStrings {
   sealed trait option
     extends StObject
        with SelectSource
+       with typings.rcTreeSelect.interfaceMod.SelectSource
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
@@ -169,15 +169,18 @@ object rcTreeSelectStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait select
-    extends StObject
-       with _SkipType
-  inline def select: select = "select".asInstanceOf[select]
+  sealed trait responsive extends StObject
+  inline def responsive: responsive = "responsive".asInstanceOf[responsive]
+  
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait selection
     extends StObject
        with SelectSource
+       with typings.rcTreeSelect.interfaceMod.SelectSource
   inline def selection: selection = "selection".asInstanceOf[selection]
   
   @js.native

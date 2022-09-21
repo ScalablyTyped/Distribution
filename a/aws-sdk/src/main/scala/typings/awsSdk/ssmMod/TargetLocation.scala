@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetLocation extends StObject {
   
   /**
-    * The AWS accounts targeted by the current Automation execution.
+    * The Amazon Web Services accounts targeted by the current Automation execution.
     */
   var Accounts: js.UndefOr[typings.awsSdk.ssmMod.Accounts] = js.undefined
   
   /**
-    * The Automation execution role used by the currently running Automation.
+    * The Automation execution role used by the currently running Automation. If not specified, the default value is AWS-SystemsManager-AutomationExecutionRole.
     */
   var ExecutionRoleName: js.UndefOr[typings.awsSdk.ssmMod.ExecutionRoleName] = js.undefined
   
   /**
-    * The AWS Regions targeted by the current Automation execution.
+    * The Amazon Web Services Regions targeted by the current Automation execution.
     */
   var Regions: js.UndefOr[typings.awsSdk.ssmMod.Regions] = js.undefined
   
   /**
-    * The maximum number of AWS accounts and AWS regions allowed to run the Automation concurrently 
+    * The maximum number of Amazon Web Services Regions and Amazon Web Services accounts allowed to run the Automation concurrently.
     */
   var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
   
   /**
-    * The maximum number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation. 
+    * The maximum number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation.
     */
   var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.undefined
 }
@@ -44,7 +44,7 @@ object TargetLocation {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value*))
     
     inline def setExecutionRoleName(value: ExecutionRoleName): Self = StObject.set(x, "ExecutionRoleName", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object TargetLocation {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
-    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value*))
     
     inline def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
     

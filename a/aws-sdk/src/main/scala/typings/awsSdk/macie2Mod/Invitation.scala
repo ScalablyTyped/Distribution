@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Invitation extends StObject {
   
   /**
-    * The AWS account ID for the account that sent the invitation.
+    * The Amazon Web Services account ID for the account that sent the invitation.
     */
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * The unique identifier for the invitation. Amazon Macie uses this identifier to validate the inviter account with the invitee account.
+    * The unique identifier for the invitation.
     */
   var invitationId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the invitation was sent.
     */
-  var invitedAt: js.UndefOr[timestampIso8601] = js.undefined
+  var invitedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the relationship between the account that sent the invitation (inviter account) and the account that received the invitation (invitee account).
+    * The status of the relationship between the account that sent the invitation and the account that received the invitation.
     */
   var relationshipStatus: js.UndefOr[RelationshipStatus] = js.undefined
 }
@@ -43,7 +43,7 @@ object Invitation {
     
     inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
-    inline def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: js.Date): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
     inline def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     

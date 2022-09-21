@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.joi.mod._Schema because Already inherited */ @js.native
+@js.native
 trait BinarySchema
   extends StObject
-     with AnySchema {
+     with AnySchema[Any]
+     with _Schema[Any] {
   
   /**
     * Sets the string encoding format if a string input is converted to a buffer.

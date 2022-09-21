@@ -25,10 +25,10 @@ object UrlClassification {
     
     inline def setFirstParty(value: UrlClassificationParty): Self = StObject.set(x, "firstParty", value.asInstanceOf[js.Any])
     
-    inline def setFirstPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "firstParty", js.Array(value :_*))
+    inline def setFirstPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "firstParty", js.Array(value*))
     
     inline def setThirdParty(value: UrlClassificationParty): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
     
-    inline def setThirdPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "thirdParty", js.Array(value :_*))
+    inline def setThirdPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "thirdParty", js.Array(value*))
   }
 }

@@ -54,6 +54,9 @@ trait ParagraphStyleSuggestionState extends StObject {
   /** Indicates if there was a suggested change to named_style_type. */
   var namedStyleTypeSuggested: js.UndefOr[Boolean] = js.undefined
   
+  /** Indicates if there was a suggested change to page_break_before. */
+  var pageBreakBeforeSuggested: js.UndefOr[Boolean] = js.undefined
+  
   /** A mask that indicates which of the fields in shading have been changed in this suggestion. */
   var shadingSuggestionState: js.UndefOr[ShadingSuggestionState] = js.undefined
   
@@ -138,6 +141,10 @@ object ParagraphStyleSuggestionState {
     inline def setNamedStyleTypeSuggested(value: Boolean): Self = StObject.set(x, "namedStyleTypeSuggested", value.asInstanceOf[js.Any])
     
     inline def setNamedStyleTypeSuggestedUndefined: Self = StObject.set(x, "namedStyleTypeSuggested", js.undefined)
+    
+    inline def setPageBreakBeforeSuggested(value: Boolean): Self = StObject.set(x, "pageBreakBeforeSuggested", value.asInstanceOf[js.Any])
+    
+    inline def setPageBreakBeforeSuggestedUndefined: Self = StObject.set(x, "pageBreakBeforeSuggested", js.undefined)
     
     inline def setShadingSuggestionState(value: ShadingSuggestionState): Self = StObject.set(x, "shadingSuggestionState", value.asInstanceOf[js.Any])
     

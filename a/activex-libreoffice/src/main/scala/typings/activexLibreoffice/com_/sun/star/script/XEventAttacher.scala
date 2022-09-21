@@ -19,7 +19,7 @@ trait XEventAttacher
   def attachListener(
     xTarget: XInterface,
     xAllListener: XAllListener,
-    aHelper: js.Any,
+    aHelper: Any,
     aListenerType: String,
     aAddListenerParam: String
   ): XEventListener
@@ -33,7 +33,7 @@ trait XEventAttacher
   def attachSingleEventListener(
     xTarget: XInterface,
     xAllListener: XAllListener,
-    aHelper: js.Any,
+    aHelper: Any,
     aListenerType: String,
     aAddListenerParam: String,
     aEventMethod: String
@@ -55,9 +55,9 @@ object XEventAttacher {
   
   inline def apply(
     acquire: () => Unit,
-    attachListener: (XInterface, XAllListener, js.Any, String, String) => XEventListener,
-    attachSingleEventListener: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener,
-    queryInterface: `type` => js.Any,
+    attachListener: (XInterface, XAllListener, Any, String, String) => XEventListener,
+    attachSingleEventListener: (XInterface, XAllListener, Any, String, String, String) => XEventListener,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeListener: (XInterface, String, String, XEventListener) => Unit
   ): XEventAttacher = {
@@ -67,9 +67,9 @@ object XEventAttacher {
   
   extension [Self <: XEventAttacher](x: Self) {
     
-    inline def setAttachListener(value: (XInterface, XAllListener, js.Any, String, String) => XEventListener): Self = StObject.set(x, "attachListener", js.Any.fromFunction5(value))
+    inline def setAttachListener(value: (XInterface, XAllListener, Any, String, String) => XEventListener): Self = StObject.set(x, "attachListener", js.Any.fromFunction5(value))
     
-    inline def setAttachSingleEventListener(value: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener): Self = StObject.set(x, "attachSingleEventListener", js.Any.fromFunction6(value))
+    inline def setAttachSingleEventListener(value: (XInterface, XAllListener, Any, String, String, String) => XEventListener): Self = StObject.set(x, "attachSingleEventListener", js.Any.fromFunction6(value))
     
     inline def setRemoveListener(value: (XInterface, String, String, XEventListener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction4(value))
   }

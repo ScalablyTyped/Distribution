@@ -10,12 +10,12 @@ object camerasIndexMod {
   
   @JSImport("babylonjs/Behaviors/Cameras/index", "AutoRotationBehavior")
   @js.native
-  class AutoRotationBehavior ()
+  open class AutoRotationBehavior ()
     extends typings.babylonjs.autoRotationBehaviorMod.AutoRotationBehavior
   
   @JSImport("babylonjs/Behaviors/Cameras/index", "BouncingBehavior")
   @js.native
-  class BouncingBehavior ()
+  open class BouncingBehavior ()
     extends typings.babylonjs.bouncingBehaviorMod.BouncingBehavior
   /* static members */
   object BouncingBehavior {
@@ -43,7 +43,7 @@ object camerasIndexMod {
   
   @JSImport("babylonjs/Behaviors/Cameras/index", "FramingBehavior")
   @js.native
-  class FramingBehavior ()
+  open class FramingBehavior ()
     extends typings.babylonjs.framingBehaviorMod.FramingBehavior
   /* static members */
   object FramingBehavior {

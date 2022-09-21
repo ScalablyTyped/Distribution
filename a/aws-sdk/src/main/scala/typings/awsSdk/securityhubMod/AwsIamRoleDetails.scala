@@ -70,7 +70,7 @@ object AwsIamRoleDetails {
     
     inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    inline def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value*))
     
     inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object AwsIamRoleDetails {
     
     inline def setInstanceProfileListUndefined: Self = StObject.set(x, "InstanceProfileList", js.undefined)
     
-    inline def setInstanceProfileListVarargs(value: AwsIamInstanceProfile*): Self = StObject.set(x, "InstanceProfileList", js.Array(value :_*))
+    inline def setInstanceProfileListVarargs(value: AwsIamInstanceProfile*): Self = StObject.set(x, "InstanceProfileList", js.Array(value*))
     
     inline def setMaxSessionDuration(value: Integer): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
     
@@ -106,6 +106,6 @@ object AwsIamRoleDetails {
     
     inline def setRolePolicyListUndefined: Self = StObject.set(x, "RolePolicyList", js.undefined)
     
-    inline def setRolePolicyListVarargs(value: AwsIamRolePolicy*): Self = StObject.set(x, "RolePolicyList", js.Array(value :_*))
+    inline def setRolePolicyListVarargs(value: AwsIamRolePolicy*): Self = StObject.set(x, "RolePolicyList", js.Array(value*))
   }
 }

@@ -19,9 +19,9 @@ object anon {
     
     var applicationKeyId: String
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
   }
   object applicationKeyIdstringCom {
     
@@ -34,9 +34,9 @@ object anon {
       
       inline def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -47,9 +47,9 @@ object anon {
   /* Inlined {  bucketId :string} & backblaze-b2.backblaze-b2.CommonArgs */
   trait bucketIdstringCommonArgs extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var bucketId: String
   }
@@ -62,9 +62,9 @@ object anon {
     
     extension [Self <: bucketIdstringCommonArgs](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -77,9 +77,9 @@ object anon {
   /* Inlined {  bucketId :string,   fileName :string} & backblaze-b2.backblaze-b2.CommonArgs */
   trait bucketIdstringfileNamestr extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var bucketId: String
     
@@ -94,9 +94,9 @@ object anon {
     
     extension [Self <: bucketIdstringfileNamestr](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -111,9 +111,9 @@ object anon {
   /* Inlined {  fileId :string} & backblaze-b2.backblaze-b2.CommonArgs */
   trait fileIdstringCommonArgs extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var fileId: String
   }
@@ -126,9 +126,9 @@ object anon {
     
     extension [Self <: fileIdstringCommonArgs](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -141,9 +141,9 @@ object anon {
   /* Inlined {  fileId :string} & backblaze-b2.backblaze-b2.DownloadFileOpts */
   trait fileIdstringDownloadFileO extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var fileId: String
     
@@ -160,9 +160,9 @@ object anon {
     
     extension [Self <: fileIdstringDownloadFileO](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -170,7 +170,7 @@ object anon {
       
       inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
-      inline def setOnDownloadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
+      inline def setOnDownloadProgress(value: /* event */ Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
       
       inline def setOnDownloadProgressNull: Self = StObject.set(x, "onDownloadProgress", null)
       
@@ -183,9 +183,9 @@ object anon {
   /* Inlined {  fileId :string,   fileName :string} & backblaze-b2.backblaze-b2.CommonArgs */
   trait fileIdstringfileNamestrin extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var fileId: String
     
@@ -200,9 +200,9 @@ object anon {
     
     extension [Self <: fileIdstringfileNamestrin](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -217,9 +217,9 @@ object anon {
   /* Inlined {  fileId :string,   partSha1Array :std.Array<string>} & backblaze-b2.backblaze-b2.CommonArgs */
   trait fileIdstringpartSha1Array extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var fileId: String
     
@@ -234,9 +234,9 @@ object anon {
     
     extension [Self <: fileIdstringpartSha1Array](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       
@@ -246,16 +246,16 @@ object anon {
       
       inline def setPartSha1Array(value: js.Array[String]): Self = StObject.set(x, "partSha1Array", value.asInstanceOf[js.Any])
       
-      inline def setPartSha1ArrayVarargs(value: String*): Self = StObject.set(x, "partSha1Array", js.Array(value :_*))
+      inline def setPartSha1ArrayVarargs(value: String*): Self = StObject.set(x, "partSha1Array", js.Array(value*))
     }
   }
   
   /* Inlined {  maxKeyCount :number,   startApplicationKeyId :string} & backblaze-b2.backblaze-b2.CommonArgs */
   trait maxKeyCountnumberstartApp extends StObject {
     
-    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axios: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
     
     var maxKeyCount: Double
     
@@ -270,9 +270,9 @@ object anon {
     
     extension [Self <: maxKeyCountnumberstartApp](x: Self) {
       
-      inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
-      inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
       

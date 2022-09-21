@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEasingFunction extends StObject {
   
   /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
+    * Given an input gradient between 0 and 1, this returns the corresponding value
     * of the easing function.
     * The link below provides some of the most common examples of easing functions.
     * @see https://easings.net/

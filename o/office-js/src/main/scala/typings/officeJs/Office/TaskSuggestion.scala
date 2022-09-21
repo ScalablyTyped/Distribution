@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait TaskSuggestion extends StObject {
   
@@ -39,7 +39,7 @@ object TaskSuggestion {
     
     inline def setAssignees(value: js.Array[EmailUser]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
-    inline def setAssigneesVarargs(value: EmailUser*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+    inline def setAssigneesVarargs(value: EmailUser*): Self = StObject.set(x, "assignees", js.Array(value*))
     
     inline def setTaskString(value: String): Self = StObject.set(x, "taskString", value.asInstanceOf[js.Any])
   }

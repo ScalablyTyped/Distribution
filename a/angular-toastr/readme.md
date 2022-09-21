@@ -10,10 +10,10 @@ Typings are for version v1.6.0
 | ------------------ | :-------------: |
 | Full name          | angular-toastr |
 | Keywords           | angularjs, toastr, popup |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 771225 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 193272.66666666666 |
+| # stars            | 1313.0 |
 
 ## Links
 - [Homepage](https://github.com/Foxandxss/angular-toastr#readme)

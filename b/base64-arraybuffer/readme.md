@@ -1,7 +1,7 @@
 
 # Scala.js typings for base64-arraybuffer
 
-Typings are for version 0.1
+Typings are for version 1.0.2
 
 ## Library description:
 Encode/decode base64 data into ArrayBuffers
@@ -10,10 +10,10 @@ Encode/decode base64 data into ArrayBuffers
 | ------------------ | :-------------: |
 | Full name          | base64-arraybuffer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 179392497 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2140290666666668E7 |
+| # stars            | 263.0 |
 
 ## Links
 - [Homepage](https://github.com/niklasvh/base64-arraybuffer)
@@ -24,7 +24,7 @@ Encode/decode base64 data into ArrayBuffers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

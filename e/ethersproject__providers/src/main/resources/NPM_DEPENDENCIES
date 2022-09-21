@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/providers" : "5.0.15"
+      "@ethersproject/providers" : "5.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/providers" : "5.0.15"
+      "@ethersproject/providers" : "5.7.1"
     }
   ],
   "compile-devDependencies" : [

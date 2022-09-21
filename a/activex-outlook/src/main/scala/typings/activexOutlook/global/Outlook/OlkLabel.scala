@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkLabel")
 @js.native
-/* private */ class OlkLabel ()
+/* private */ open class OlkLabel ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkLabel {
   
@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var UseHeaderColor: Boolean = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   /* CompleteClass */
   var WordWrap: Boolean = js.native

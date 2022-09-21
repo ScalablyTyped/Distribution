@@ -14,15 +14,19 @@ trait Permission
     */
   var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // For user type permissions, the details of the users &amp; applications for this permission. Read-only.
   var grantedTo: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  // For link type permissions, the details of the users to whom permission was granted. Read-only.
   var grantedToIdentities: js.UndefOr[NullableOption[js.Array[IdentitySet]]] = js.undefined
   
+  // For link type permissions, the details of the users to whom permission was granted. Read-only.
+  var grantedToIdentitiesV2: js.UndefOr[NullableOption[js.Array[SharePointIdentitySet]]] = js.undefined
+  
+  // For user type permissions, the details of the users and applications for this permission. Read-only.
+  var grantedToV2: js.UndefOr[NullableOption[SharePointIdentitySet]] = js.undefined
+  
   /**
-    * This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and
-    * for OneDrive Personal only.
+    * Indicates whether the password is set for this permission. This property only appears in the response. Optional.
+    * Read-only. For OneDrive Personal only..
     */
   var hasPassword: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -35,7 +39,7 @@ trait Permission
   // Provides the link details of the current permission, if it is a link type permissions. Read-only.
   var link: js.UndefOr[NullableOption[SharingLink]] = js.undefined
   
-  // The type of permission, e.g. read. See below for the full list of roles. Read-only.
+  // The type of permission, for example, read. See below for the full list of roles. Read-only.
   var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // A unique token that can be used to access this shared item via the **shares** API. Read-only.
@@ -64,11 +68,25 @@ object Permission {
     
     inline def setGrantedToIdentitiesUndefined: Self = StObject.set(x, "grantedToIdentities", js.undefined)
     
-    inline def setGrantedToIdentitiesVarargs(value: IdentitySet*): Self = StObject.set(x, "grantedToIdentities", js.Array(value :_*))
+    inline def setGrantedToIdentitiesV2(value: NullableOption[js.Array[SharePointIdentitySet]]): Self = StObject.set(x, "grantedToIdentitiesV2", value.asInstanceOf[js.Any])
+    
+    inline def setGrantedToIdentitiesV2Null: Self = StObject.set(x, "grantedToIdentitiesV2", null)
+    
+    inline def setGrantedToIdentitiesV2Undefined: Self = StObject.set(x, "grantedToIdentitiesV2", js.undefined)
+    
+    inline def setGrantedToIdentitiesV2Varargs(value: SharePointIdentitySet*): Self = StObject.set(x, "grantedToIdentitiesV2", js.Array(value*))
+    
+    inline def setGrantedToIdentitiesVarargs(value: IdentitySet*): Self = StObject.set(x, "grantedToIdentities", js.Array(value*))
     
     inline def setGrantedToNull: Self = StObject.set(x, "grantedTo", null)
     
     inline def setGrantedToUndefined: Self = StObject.set(x, "grantedTo", js.undefined)
+    
+    inline def setGrantedToV2(value: NullableOption[SharePointIdentitySet]): Self = StObject.set(x, "grantedToV2", value.asInstanceOf[js.Any])
+    
+    inline def setGrantedToV2Null: Self = StObject.set(x, "grantedToV2", null)
+    
+    inline def setGrantedToV2Undefined: Self = StObject.set(x, "grantedToV2", js.undefined)
     
     inline def setHasPassword(value: NullableOption[Boolean]): Self = StObject.set(x, "hasPassword", value.asInstanceOf[js.Any])
     
@@ -100,7 +118,7 @@ object Permission {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setShareId(value: NullableOption[String]): Self = StObject.set(x, "shareId", value.asInstanceOf[js.Any])
     

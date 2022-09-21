@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Burr")
 @js.native
-class Burr ()
+open class Burr ()
   extends typings.ranjs.mod.dist.Burr {
   def this(c: Double) = this()
   def this(c: Double, k: Double) = this()

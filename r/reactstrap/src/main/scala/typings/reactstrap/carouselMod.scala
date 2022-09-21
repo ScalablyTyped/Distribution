@@ -3,10 +3,10 @@ package typings.reactstrap
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
 import typings.reactstrap.reactstrapBooleans.`false`
 import typings.reactstrap.reactstrapStrings.carousel
 import typings.reactstrap.reactstrapStrings.hover
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object carouselMod {
   
-  @JSImport("reactstrap/lib/Carousel", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Carousel", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CarouselProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CarouselProps, js.Object, Any]
   
-  type Carousel = Component[CarouselProps, js.Object, js.Any]
+  type Carousel = Component[CarouselProps, js.Object, Any]
   
   trait CarouselProps
     extends StObject
@@ -47,13 +47,17 @@ object carouselMod {
   trait CommonCarouselProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var activeIndex: js.UndefOr[Double] = js.undefined
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
+    var dark: js.UndefOr[Boolean] = js.undefined
+    
     var enableTouch: js.UndefOr[Boolean] = js.undefined
+    
+    var fade: js.UndefOr[Boolean] = js.undefined
     
     var interval: js.UndefOr[Double | String | Boolean] = js.undefined
     
@@ -86,9 +90,17 @@ object carouselMod {
       
       inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
+      inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      
+      inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+      
       inline def setEnableTouch(value: Boolean): Self = StObject.set(x, "enableTouch", value.asInstanceOf[js.Any])
       
       inline def setEnableTouchUndefined: Self = StObject.set(x, "enableTouch", js.undefined)
+      
+      inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
       
       inline def setInterval(value: Double | String | Boolean): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -130,7 +142,7 @@ object carouselMod {
     
     var indicators: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.Array[js.Any]
+    var items: js.Array[Any]
     
     var next: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -138,7 +150,7 @@ object carouselMod {
   }
   object UncontrolledCarouselProps {
     
-    inline def apply(items: js.Array[js.Any]): UncontrolledCarouselProps = {
+    inline def apply(items: js.Array[Any]): UncontrolledCarouselProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[UncontrolledCarouselProps]
     }
@@ -157,9 +169,9 @@ object carouselMod {
       
       inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.EventTarget")
 @js.native
-class EventTarget ()
+open class EventTarget ()
   extends StObject
      with typings.cannon.CANNON.EventTarget {
   

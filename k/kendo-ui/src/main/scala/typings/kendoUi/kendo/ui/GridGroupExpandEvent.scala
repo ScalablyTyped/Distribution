@@ -11,7 +11,7 @@ trait GridGroupExpandEvent
   
   var element: js.UndefOr[JQuery] = js.undefined
   
-  var group: js.UndefOr[js.Any] = js.undefined
+  var group: js.UndefOr[Any] = js.undefined
 }
 object GridGroupExpandEvent {
   
@@ -26,7 +26,7 @@ object GridGroupExpandEvent {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }

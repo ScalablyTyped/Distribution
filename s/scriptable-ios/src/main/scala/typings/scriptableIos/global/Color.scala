@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Color")
 @js.native
-class Color protected ()
+open class Color protected ()
   extends StObject
      with typings.scriptableIos.Color {
   /**
@@ -25,6 +25,7 @@ class Color protected ()
     * @param alpha - Alpha value.
     * @see https://docs.scriptable.app/color/#-new-color
     */
+  def this(hex: String) = this()
   def this(hex: String, alpha: Double) = this()
   
   /**

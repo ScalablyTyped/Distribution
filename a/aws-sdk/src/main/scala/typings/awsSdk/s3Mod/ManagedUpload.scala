@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aws-sdk/clients/s3", "ManagedUpload")
 @js.native
-class ManagedUpload protected ()
+open class ManagedUpload protected ()
   extends typings.awsSdk.managedUploadMod.ManagedUpload {
   /**
     * Creates a managed upload object with a set of configuration options.

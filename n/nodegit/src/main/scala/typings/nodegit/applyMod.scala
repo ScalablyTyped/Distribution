@@ -16,7 +16,7 @@ object applyMod {
   
   @JSImport("nodegit/apply", "Apply")
   @js.native
-  class Apply () extends StObject
+  open class Apply () extends StObject
   /* static members */
   object Apply {
     

@@ -36,8 +36,8 @@ trait QuotaUserResourceUploadType extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
   var projectId: String
   

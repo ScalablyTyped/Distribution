@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CustomLayout")
 @js.native
-/* private */ class CustomLayout ()
+/* private */ open class CustomLayout ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CustomLayout {
   
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.CustomLayout_typekey")

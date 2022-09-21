@@ -10,10 +10,10 @@ Filter CSS rules
 | ------------------ | :-------------: |
 | Full name          | filter-css |
 | Keywords           | css, filter, parse |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 671066 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 38902.333333333336 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/bezoerb/filter-css#readme)

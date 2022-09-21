@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "InactivityTimer")
 @js.native
-class InactivityTimer () extends NativeObject {
+/**
+  * A timer that triggers when the app has not been interacted with for a configurable interval.
+  */
+open class InactivityTimer () extends NativeObject {
   def this(properties: Properties[InactivityTimer, OmitInactivityTimerset]) = this()
   
   /**

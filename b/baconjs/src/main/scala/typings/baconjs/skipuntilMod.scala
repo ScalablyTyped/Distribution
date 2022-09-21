@@ -11,10 +11,7 @@ object skipuntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[V](
-    src: typings.baconjs.observableMod.default[V],
-    starter: typings.baconjs.observableMod.default[js.Any]
-  ): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
+  inline def default[V](src: typings.baconjs.observableMod.default[V], starter: typings.baconjs.observableMod.default[Any]): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
   
-  inline def skipUntil[V](src: default[V], starter: default[js.Any]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  inline def skipUntil[V](src: default[V], starter: default[Any]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[default[V]]
 }

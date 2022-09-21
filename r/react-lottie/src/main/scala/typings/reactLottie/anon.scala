@@ -15,7 +15,7 @@ object anon {
     /**
       * The canvas context
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Hides elements when opacity reaches 0. Only with SVG renderer.
@@ -30,7 +30,7 @@ object anon {
       */
     var progressiveLoad: js.UndefOr[Boolean] = js.undefined
     
-    var scaleMode: js.UndefOr[js.Any] = js.undefined
+    var scaleMode: js.UndefOr[Any] = js.undefined
   }
   object ClassName {
     
@@ -49,7 +49,7 @@ object anon {
       
       inline def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -65,7 +65,7 @@ object anon {
       
       inline def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
       
-      inline def setScaleMode(value: js.Any): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+      inline def setScaleMode(value: Any): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
       
       inline def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
     }

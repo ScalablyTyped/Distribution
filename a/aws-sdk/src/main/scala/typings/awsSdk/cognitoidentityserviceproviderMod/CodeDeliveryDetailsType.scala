@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeDeliveryDetailsType extends StObject {
   
   /**
-    * The attribute name.
+    * The name of the attribute that Amazon Cognito verifies with the code.
     */
   var AttributeName: js.UndefOr[AttributeNameType] = js.undefined
   
   /**
-    * The delivery medium (email message or phone number).
+    * The method that Amazon Cognito used to send the code.
     */
   var DeliveryMedium: js.UndefOr[DeliveryMediumType] = js.undefined
   
   /**
-    * The destination for the code delivery details.
+    * The email address or phone number destination where Amazon Cognito sent the code.
     */
   var Destination: js.UndefOr[StringType] = js.undefined
 }

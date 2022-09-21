@@ -1,5 +1,7 @@
 package typings.wicgMediasession
 
+import typings.std.MediaSessionAction
+import typings.std.MediaSessionPlaybackState
 import typings.wicgMediasession.anon.RequiredPickMediaSessionA
 import typings.wicgMediasession.wicgMediasessionStrings.seekto
 import org.scalablytyped.runtime.StObject
@@ -23,6 +25,16 @@ trait MediaSession extends StObject {
   @JSName("setActionHandler")
   def setActionHandler_seekto(action: seekto, listener: js.Function1[/* details */ RequiredPickMediaSessionA, Unit]): Unit = js.native
   
+  // Set/unset active camera
+  def setCameraActive(active: Boolean): Unit = js.native
+  
+  // Set/unset active microphone
+  def setMicrophoneActive(active: Boolean): Unit = js.native
+  
   // Set/unset position state
-  var setPositionState: js.UndefOr[SetPositionState] = js.native
+  def setPositionState(): Unit = js.native
+  def setPositionState(playbackState: MediaPositionState): Unit = js.native
+  // Set/unset position state
+  @JSName("setPositionState")
+  var setPositionState_Original: SetPositionState = js.native
 }

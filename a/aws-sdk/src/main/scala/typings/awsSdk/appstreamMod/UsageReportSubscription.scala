@@ -9,7 +9,7 @@ trait UsageReportSubscription extends StObject {
   /**
     * The time when the last usage report was generated.
     */
-  var LastGeneratedReportDate: js.UndefOr[Timestamp] = js.undefined
+  var LastGeneratedReportDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon S3 bucket where generated reports are stored. If you enabled on-instance session scripts and Amazon S3 logging for your session script configuration, AppStream 2.0 created an S3 bucket to store the script output. The bucket is unique to your account and Region. When you enable usage reporting in this case, AppStream 2.0 uses the same bucket to store your usage reports. If you haven't already enabled on-instance session scripts, when you enable usage reports, AppStream 2.0 creates a new S3 bucket.
@@ -35,7 +35,7 @@ object UsageReportSubscription {
   
   extension [Self <: UsageReportSubscription](x: Self) {
     
-    inline def setLastGeneratedReportDate(value: Timestamp): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
+    inline def setLastGeneratedReportDate(value: js.Date): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
     
     inline def setLastGeneratedReportDateUndefined: Self = StObject.set(x, "LastGeneratedReportDate", js.undefined)
     
@@ -51,6 +51,6 @@ object UsageReportSubscription {
     
     inline def setSubscriptionErrorsUndefined: Self = StObject.set(x, "SubscriptionErrors", js.undefined)
     
-    inline def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = StObject.set(x, "SubscriptionErrors", js.Array(value :_*))
+    inline def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = StObject.set(x, "SubscriptionErrors", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xhr" : "2.5.0"
+      "xhr" : "2.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "xhr" : "2.5.0"
+      "xhr" : "2.6.0"
     }
   ],
   "compile-devDependencies" : [

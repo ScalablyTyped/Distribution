@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("nonogram-solver", "Puzzle")
   @js.native
-  class Puzzle protected () extends StObject {
+  open class Puzzle protected () extends StObject {
     def this(data: String) = this()
     def this(data: Input) = this()
     
@@ -59,17 +59,17 @@ object mod {
       
       inline def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setContent(value: js.Array[State]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setRows(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   

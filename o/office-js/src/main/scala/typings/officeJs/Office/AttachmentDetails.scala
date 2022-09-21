@@ -10,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
   *
+  * @remarks
   * [Api set: Mailbox 1.1]
   *
-  * @remarks
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait AttachmentDetails extends StObject {
   
@@ -27,6 +26,12 @@ trait AttachmentDetails extends StObject {
   
   /**
     * Gets the MIME content type of the attachment.
+    *
+    * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained
+    * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly. For details,
+    * refer to the {@link https://devblogs.microsoft.com/microsoft365dev/outlook-javascript-api-deprecation-for-attachmentdetails-contenttype-property/ | related blog post }.
+    *
+    * @deprecated If you require specific content types, grab the attachment's extension and process accordingly.
     */
   var contentType: String
   

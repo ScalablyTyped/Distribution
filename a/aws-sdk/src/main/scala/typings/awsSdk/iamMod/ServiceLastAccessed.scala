@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceLastAccessed extends StObject {
   
   /**
-    * The date and time, in ISO 8601 date-time format, when an authenticated entity most recently attempted to access the service. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The date and time, in ISO 8601 date-time format, when an authenticated entity most recently attempted to access the service. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
-  var LastAuthenticated: js.UndefOr[dateType] = js.undefined
+  var LastAuthenticated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ARN of the authenticated entity (user or role) that last attempted to access the service. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The ARN of the authenticated entity (user or role) that last attempted to access the service. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
   var LastAuthenticatedEntity: js.UndefOr[arnType] = js.undefined
   
   /**
-    * The Region from which the authenticated entity (user or role) last attempted to access the service. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The Region from which the authenticated entity (user or role) last attempted to access the service. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
   var LastAuthenticatedRegion: js.UndefOr[stringType] = js.undefined
   
@@ -27,7 +27,7 @@ trait ServiceLastAccessed extends StObject {
   var ServiceName: serviceNameType
   
   /**
-    * The namespace of the service in which access was attempted. To learn the service namespace of a service, go to Actions, Resources, and Condition Keys for AWS Services in the IAM User Guide. Choose the name of the service to view details for that service. In the first paragraph, find the service prefix. For example, (service prefix: a4b). For more information about service namespaces, see AWS Service Namespaces in the AWS General Reference.
+    * The namespace of the service in which access was attempted. To learn the service namespace of a service, see Actions, resources, and condition keys for Amazon Web Services services in the Service Authorization Reference. Choose the name of the service to view details for that service. In the first paragraph, find the service prefix. For example, (service prefix: a4b). For more information about service namespaces, see Amazon Web Services Service Namespaces in the Amazon Web Services General Reference.
     */
   var ServiceNamespace: serviceNamespaceType
   
@@ -50,7 +50,7 @@ object ServiceLastAccessed {
   
   extension [Self <: ServiceLastAccessed](x: Self) {
     
-    inline def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticated(value: js.Date): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
     
     inline def setLastAuthenticatedEntity(value: arnType): Self = StObject.set(x, "LastAuthenticatedEntity", value.asInstanceOf[js.Any])
     
@@ -74,6 +74,6 @@ object ServiceLastAccessed {
     
     inline def setTrackedActionsLastAccessedUndefined: Self = StObject.set(x, "TrackedActionsLastAccessed", js.undefined)
     
-    inline def setTrackedActionsLastAccessedVarargs(value: TrackedActionLastAccessed*): Self = StObject.set(x, "TrackedActionsLastAccessed", js.Array(value :_*))
+    inline def setTrackedActionsLastAccessedVarargs(value: TrackedActionLastAccessed*): Self = StObject.set(x, "TrackedActionsLastAccessed", js.Array(value*))
   }
 }

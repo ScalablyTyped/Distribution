@@ -42,7 +42,7 @@ object mod {
       * @param name Event name
       * @param args Arguments that will be passed to each handler
       */
-    def emit(name: LayzrEvents, args: js.Any*): LayzrInstance = js.native
+    def emit(name: LayzrEvents, args: Any*): LayzrInstance = js.native
     
     /**
       * Add or remove the scroll and resize event handlers.

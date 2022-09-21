@@ -57,7 +57,12 @@ trait AwsCloudFrontDistributionDetails extends StObject {
   var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A unique identifier that specifies the AWS WAF web ACL, if any, to associate with this distribution.
+    * Provides information about the TLS/SSL configuration that the distribution uses to communicate with viewers.
+    */
+  var ViewerCertificate: js.UndefOr[AwsCloudFrontDistributionViewerCertificate] = js.undefined
+  
+  /**
+    * A unique identifier that specifies the WAF web ACL, if any, to associate with this distribution.
     */
   var WebAclId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -109,6 +114,10 @@ object AwsCloudFrontDistributionDetails {
     inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setViewerCertificate(value: AwsCloudFrontDistributionViewerCertificate): Self = StObject.set(x, "ViewerCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setViewerCertificateUndefined: Self = StObject.set(x, "ViewerCertificate", js.undefined)
     
     inline def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     

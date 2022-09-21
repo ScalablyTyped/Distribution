@@ -43,7 +43,7 @@ object DataTruncation {
     Index: Double,
     IsParameter: Boolean,
     Message: String,
-    NextException: js.Any,
+    NextException: Any,
     SQLState: String,
     TransferSize: Double
   ): DataTruncation = {

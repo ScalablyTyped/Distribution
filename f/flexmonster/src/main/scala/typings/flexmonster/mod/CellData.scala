@@ -75,7 +75,7 @@ object CellData {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: js.Object*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Object*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setEscapedLabel(value: String): Self = StObject.set(x, "escapedLabel", value.asInstanceOf[js.Any])
     
@@ -141,13 +141,13 @@ object CellData {
     
     inline def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
     
-    inline def setRecordIdVarargs(value: String*): Self = StObject.set(x, "recordId", js.Array(value :_*))
+    inline def setRecordIdVarargs(value: String*): Self = StObject.set(x, "recordId", js.Array(value*))
     
     inline def setRowData(value: js.Array[CellData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     
-    inline def setRowDataVarargs(value: CellData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+    inline def setRowDataVarargs(value: CellData*): Self = StObject.set(x, "rowData", js.Array(value*))
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
@@ -157,7 +157,7 @@ object CellData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

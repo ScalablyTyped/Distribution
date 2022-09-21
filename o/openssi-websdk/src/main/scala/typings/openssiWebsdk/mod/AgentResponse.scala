@@ -27,6 +27,6 @@ object AgentResponse {
     
     inline def setResults(value: js.Array[CredentialDefinition | CredentialSchema]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: (CredentialDefinition | CredentialSchema)*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: (CredentialDefinition | CredentialSchema)*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

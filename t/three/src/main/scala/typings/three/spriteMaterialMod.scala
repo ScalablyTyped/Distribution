@@ -5,6 +5,7 @@ import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,38 +14,44 @@ object spriteMaterialMod {
   
   @JSImport("three/src/materials/SpriteMaterial", "SpriteMaterial")
   @js.native
-  class SpriteMaterial () extends Material {
+  open class SpriteMaterial () extends Material {
     def this(parameters: SpriteMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default new THREE.Color( 0xffffff )
-    	 */
+      * @default new THREE.Color( 0xffffff )
+      */
     var color: Color = js.native
     
     def copy(source: SpriteMaterial): this.type = js.native
     
+    /**
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
+    
     val isSpriteMaterial: `true` = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var rotation: Double = js.native
     
     def setValues(parameters: SpriteMaterialParameters): Unit = js.native
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var sizeAttenuation: Boolean = js.native
   }
   
@@ -54,7 +61,9 @@ object spriteMaterialMod {
     
     var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
     
     var map: js.UndefOr[Texture | Null] = js.undefined
     
@@ -77,9 +86,13 @@ object spriteMaterialMod {
       
       inline def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
       
       inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

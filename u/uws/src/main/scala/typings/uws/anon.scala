@@ -98,7 +98,7 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var target: WebSocket
     
@@ -106,7 +106,7 @@ object anon {
   }
   object Data {
     
-    inline def apply(data: js.Any, target: WebSocket, `type`: String): Data = {
+    inline def apply(data: Any, target: WebSocket, `type`: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
@@ -114,7 +114,7 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -195,7 +195,7 @@ object anon {
   
   trait Type extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var target: this.type
     
@@ -203,7 +203,7 @@ object anon {
   }
   object Type {
     
-    inline def apply(data: js.Any, target: Type, `type`: String): Type = {
+    inline def apply(data: Any, target: Type, `type`: String): Type = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
@@ -211,7 +211,7 @@ object anon {
     
     extension [Self <: Type](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: Type): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

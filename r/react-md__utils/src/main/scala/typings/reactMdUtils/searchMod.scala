@@ -1,12 +1,11 @@
 package typings.reactMdUtils
 
 import typings.reactMdUtils.caseInsensitiveFilterMod.CaseInsensitiveOptions
+import typings.reactMdUtils.searchUtilsMod.GetItemValue_
+import typings.reactMdUtils.searchUtilsMod.SearchOptions
 import typings.reactMdUtils.useKeyboardSearchMod.KeyboardSearchOptions
 import typings.reactMdUtils.useKeyboardSearchMod.ReturnValue
-import typings.reactMdUtils.utilsMod.GetItemValue_
-import typings.reactMdUtils.utilsMod.SearchOptions
 import typings.std.HTMLElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object searchMod {
   
   @JSImport("@react-md/utils/types/search", "DEFAULT_GET_ITEM_VALUE")
   @js.native
-  val DEFAULT_GET_ITEM_VALUE: js.Function2[/* item */ js.Any, /* valueKey */ js.UndefOr[String], String] = js.native
+  val DEFAULT_GET_ITEM_VALUE: js.Function2[/* item */ Any, /* valueKey */ js.UndefOr[String], String] = js.native
   
   @JSImport("@react-md/utils/types/search", "DEFAULT_IGNORE_WHITESPACE")
   @js.native
@@ -34,8 +33,8 @@ object searchMod {
     
     @JSImport("@react-md/utils/types/search", "DEFAULT_SEARCH_OPTIONS.getItemValue")
     @js.native
-    def getItemValue: GetItemValue_[js.Any] = js.native
-    inline def getItemValue_=(x: GetItemValue_[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItemValue")(x.asInstanceOf[js.Any])
+    def getItemValue: GetItemValue_[Any] = js.native
+    inline def getItemValue_=(x: GetItemValue_[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItemValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@react-md/utils/types/search", "DEFAULT_SEARCH_OPTIONS.ignoreWhitespace")
     @js.native
@@ -79,10 +78,10 @@ object searchMod {
   inline def fuzzyFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def fuzzyFilter[T](query: String, searchable: js.Array[T], options: SearchOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def getFuzzyRegExp(query: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFuzzyRegExp")(query.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def getFuzzyRegExp(query: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFuzzyRegExp")(query.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def getItemValue(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getItemValue(item: js.Any, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getItemValue(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getItemValue(item: Any, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getSearchString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getSearchString(value: String, lowercase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any])).asInstanceOf[String]

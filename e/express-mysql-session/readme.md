@@ -10,10 +10,10 @@ A MySQL session store for express.js
 | ------------------ | :-------------: |
 | Full name          | express-mysql-session |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 22 |
-| # downloads        | 591349 |
-| # stars            | 18 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 89921.66666666667 |
+| # stars            | 285.0 |
 
 ## Links
 - [Homepage](https://github.com/chill117/express-mysql-session#readme)

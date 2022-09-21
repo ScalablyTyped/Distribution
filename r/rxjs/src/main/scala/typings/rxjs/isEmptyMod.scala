@@ -1,13 +1,13 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.OperatorFunction
+import typings.rxjs.internalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isEmptyMod {
   
-  @JSImport("rxjs/internal/operators/isEmpty", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/isEmpty", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

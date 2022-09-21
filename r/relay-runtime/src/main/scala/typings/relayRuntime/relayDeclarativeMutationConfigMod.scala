@@ -154,7 +154,7 @@ object relayDeclarativeMutationConfigMod {
       
       inline def setConnectionInfoUndefined: Self = StObject.set(x, "connectionInfo", js.undefined)
       
-      inline def setConnectionInfoVarargs(value: Filters*): Self = StObject.set(x, "connectionInfo", js.Array(value :_*))
+      inline def setConnectionInfoVarargs(value: Filters*): Self = StObject.set(x, "connectionInfo", js.Array(value*))
       
       inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
       
@@ -172,7 +172,7 @@ object relayDeclarativeMutationConfigMod {
       
       inline def setRangeBehaviors(value: RangeBehaviors): Self = StObject.set(x, "rangeBehaviors", value.asInstanceOf[js.Any])
       
-      inline def setRangeBehaviorsFunction1(value: /* connectionArgs */ StringDictionary[js.Any] => RangeOperations): Self = StObject.set(x, "rangeBehaviors", js.Any.fromFunction1(value))
+      inline def setRangeBehaviorsFunction1(value: /* connectionArgs */ StringDictionary[Any] => RangeOperations): Self = StObject.set(x, "rangeBehaviors", js.Any.fromFunction1(value))
       
       inline def setRangeBehaviorsUndefined: Self = StObject.set(x, "rangeBehaviors", js.undefined)
       
@@ -182,7 +182,7 @@ object relayDeclarativeMutationConfigMod {
   
   type RangeBehaviors = RangeBehaviorsFunction | RangeBehaviorsObject
   
-  type RangeBehaviorsFunction = js.Function1[/* connectionArgs */ StringDictionary[js.Any], RangeOperations]
+  type RangeBehaviorsFunction = js.Function1[/* connectionArgs */ StringDictionary[Any], RangeOperations]
   
   type RangeBehaviorsObject = StringDictionary[RangeOperations]
   
@@ -218,7 +218,7 @@ object relayDeclarativeMutationConfigMod {
       
       inline def setConnectionKeysUndefined: Self = StObject.set(x, "connectionKeys", js.undefined)
       
-      inline def setConnectionKeysVarargs(value: Key*): Self = StObject.set(x, "connectionKeys", js.Array(value :_*))
+      inline def setConnectionKeysVarargs(value: Key*): Self = StObject.set(x, "connectionKeys", js.Array(value*))
       
       inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
       
@@ -226,7 +226,7 @@ object relayDeclarativeMutationConfigMod {
       
       inline def setDeletedIDFieldName(value: String | js.Array[String]): Self = StObject.set(x, "deletedIDFieldName", value.asInstanceOf[js.Any])
       
-      inline def setDeletedIDFieldNameVarargs(value: String*): Self = StObject.set(x, "deletedIDFieldName", js.Array(value :_*))
+      inline def setDeletedIDFieldNameVarargs(value: String*): Self = StObject.set(x, "deletedIDFieldName", js.Array(value*))
       
       inline def setParentID(value: String): Self = StObject.set(x, "parentID", value.asInstanceOf[js.Any])
       
@@ -238,7 +238,7 @@ object relayDeclarativeMutationConfigMod {
       
       inline def setPathToConnection(value: js.Array[String]): Self = StObject.set(x, "pathToConnection", value.asInstanceOf[js.Any])
       
-      inline def setPathToConnectionVarargs(value: String*): Self = StObject.set(x, "pathToConnection", js.Array(value :_*))
+      inline def setPathToConnectionVarargs(value: String*): Self = StObject.set(x, "pathToConnection", js.Array(value*))
       
       inline def setType(value: RANGE_DELETE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

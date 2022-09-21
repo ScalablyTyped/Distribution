@@ -33,6 +33,6 @@ object QueryStringObject {
     
     inline def setQueryStringsAllowListUndefined: Self = StObject.set(x, "queryStringsAllowList", js.undefined)
     
-    inline def setQueryStringsAllowListVarargs(value: String*): Self = StObject.set(x, "queryStringsAllowList", js.Array(value :_*))
+    inline def setQueryStringsAllowListVarargs(value: String*): Self = StObject.set(x, "queryStringsAllowList", js.Array(value*))
   }
 }

@@ -10,9 +10,9 @@ trait ClearButtonProps
   extends StObject
      with HTMLAttributes[button] {
   
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
-  
   var label: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[TypeaheadBsSizes] = js.undefined
 }
 object ClearButtonProps {
   
@@ -23,12 +23,12 @@ object ClearButtonProps {
   
   extension [Self <: ClearButtonProps](x: Self) {
     
-    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
-    
-    inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
-    
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setSize(value: TypeaheadBsSizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

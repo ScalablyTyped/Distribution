@@ -15,7 +15,7 @@ object render {
     */
   @JSGlobal("H.map.render.RenderEngine")
   @js.native
-  class RenderEngine protected ()
+  open class RenderEngine protected ()
     extends StObject
        with typings.heremaps.H.map.render.RenderEngine {
     /**
@@ -84,7 +84,7 @@ object render {
       */
     @JSGlobal("H.map.render.p2d.RenderEngine")
     @js.native
-    class RenderEngine protected ()
+    open class RenderEngine protected ()
       extends StObject
          with typings.heremaps.H.map.render.p2d.RenderEngine {
       /**

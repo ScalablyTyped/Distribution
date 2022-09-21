@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Tile WMS options.
   * @api stable
   */
-class TileWMS () extends TileImage {
+open class TileWMS () extends TileImage {
   def this(opt_options: TileWMSOptions) = this()
   
   /**

@@ -7,6 +7,7 @@ import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
 import typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
 import typings.officeUiFabricReact.groupedListBaseMod.IGroupedListState
 import typings.officeUiFabricReact.groupedListSectionMod.IGroupedListSectionProps
+import typings.officeUiFabricReact.groupedListTypesMod.IGroup
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
@@ -14,6 +15,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libGroupedListMod {
+  
+  @JSImport("office-ui-fabric-react/lib/GroupedList", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/GroupedList", "CollapseAllVisibility")
   @js.native
@@ -26,6 +31,9 @@ object libGroupedListMod {
     
     /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible & Double = js.native
   }
+  
+  inline def GetGroupCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetGroupCount")().asInstanceOf[Double]
+  inline def GetGroupCount(groups: js.Array[IGroup]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetGroupCount")(groups.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("office-ui-fabric-react/lib/GroupedList", "GroupFooter")
   @js.native
@@ -49,7 +57,7 @@ object libGroupedListMod {
   
   @JSImport("office-ui-fabric-react/lib/GroupedList", "GroupedListBase")
   @js.native
-  class GroupedListBase protected ()
+  open class GroupedListBase protected ()
     extends typings.officeUiFabricReact.groupedListMod.GroupedListBase {
     def this(props: IGroupedListProps) = this()
   }
@@ -70,7 +78,7 @@ object libGroupedListMod {
   
   @JSImport("office-ui-fabric-react/lib/GroupedList", "GroupedListSection")
   @js.native
-  class GroupedListSection protected ()
+  open class GroupedListSection protected ()
     extends typings.officeUiFabricReact.groupedListMod.GroupedListSection {
     def this(props: IGroupedListSectionProps) = this()
   }

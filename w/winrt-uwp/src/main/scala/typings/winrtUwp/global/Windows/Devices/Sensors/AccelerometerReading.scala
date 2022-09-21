@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,5 +25,5 @@ abstract class AccelerometerReading ()
   
   /** Gets the time at which the sensor reported the reading. */
   /* CompleteClass */
-  var timestamp: Date = js.native
+  var timestamp: js.Date = js.native
 }

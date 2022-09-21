@@ -7,55 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object operationMod {
   
-  @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource")
+  @JSImport("@firebase/database/dist/node-esm/src/core/operation/Operation", JSImport.Namespace)
   @js.native
-  class OperationSource protected () extends StObject {
-    def this(fromUser: Boolean, fromServer: Boolean, queryId: String, tagged: Boolean) = this()
-    def this(fromUser: Boolean, fromServer: Boolean, queryId: Null, tagged: Boolean) = this()
-    
-    var fromServer: Boolean = js.native
-    
-    var fromUser: Boolean = js.native
-    
-    var queryId: String | Null = js.native
-    
-    var tagged: Boolean = js.native
-  }
-  /* static members */
-  object OperationSource {
-    
-    @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * @const
-      * @type {!OperationSource}
-      */
-    @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource.Server")
-    @js.native
-    def Server: OperationSource = js.native
-    inline def Server_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
-    
-    /**
-      * @const
-      * @type {!OperationSource}
-      */
-    @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource.User")
-    @js.native
-    def User: OperationSource = js.native
-    inline def User_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("User")(x.asInstanceOf[js.Any])
-    
-    /**
-      * @param {string} queryId
-      * @return {!OperationSource}
-      */
-    inline def forServerTaggedQuery(queryId: String): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("forServerTaggedQuery")(queryId.asInstanceOf[js.Any]).asInstanceOf[OperationSource]
-  }
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait OperationType extends StObject
-  @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationType")
+  @JSImport("@firebase/database/dist/node-esm/src/core/operation/Operation", "OperationType")
   @js.native
   object OperationType extends StObject {
     
@@ -87,27 +45,20 @@ object operationMod {
     /* 0 */ val OVERWRITE: typings.firebaseDatabase.operationMod.OperationType.OVERWRITE & Double = js.native
   }
   
+  inline def newOperationSourceServer(): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("newOperationSourceServer")().asInstanceOf[OperationSource]
+  
+  inline def newOperationSourceServerTaggedQuery(queryId: String): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("newOperationSourceServerTaggedQuery")(queryId.asInstanceOf[js.Any]).asInstanceOf[OperationSource]
+  
+  inline def newOperationSourceUser(): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("newOperationSourceUser")().asInstanceOf[OperationSource]
+  
   trait Operation extends StObject {
     
-    /**
-      * @param {string} childName
-      * @return {?Operation}
-      */
     def operationForChild(childName: String): Operation | Null
     
-    /**
-      * @type {!Path}
-      */
     var path: Path
     
-    /**
-      * @type {!OperationSource}
-      */
     var source: OperationSource
     
-    /**
-      * @type {!OperationType}
-      */
     var `type`: OperationType
   }
   object Operation {
@@ -132,6 +83,37 @@ object operationMod {
       inline def setSource(value: OperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setType(value: OperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OperationSource extends StObject {
+    
+    var fromServer: Boolean
+    
+    var fromUser: Boolean
+    
+    var queryId: String | Null
+    
+    var tagged: Boolean
+  }
+  object OperationSource {
+    
+    inline def apply(fromServer: Boolean, fromUser: Boolean, tagged: Boolean): OperationSource = {
+      val __obj = js.Dynamic.literal(fromServer = fromServer.asInstanceOf[js.Any], fromUser = fromUser.asInstanceOf[js.Any], tagged = tagged.asInstanceOf[js.Any], queryId = null)
+      __obj.asInstanceOf[OperationSource]
+    }
+    
+    extension [Self <: OperationSource](x: Self) {
+      
+      inline def setFromServer(value: Boolean): Self = StObject.set(x, "fromServer", value.asInstanceOf[js.Any])
+      
+      inline def setFromUser(value: Boolean): Self = StObject.set(x, "fromUser", value.asInstanceOf[js.Any])
+      
+      inline def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+      
+      inline def setQueryIdNull: Self = StObject.set(x, "queryId", null)
+      
+      inline def setTagged(value: Boolean): Self = StObject.set(x, "tagged", value.asInstanceOf[js.Any])
     }
   }
 }

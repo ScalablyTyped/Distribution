@@ -10,10 +10,10 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-device-orientation |
 | Keywords           | cordova, device, orientation, ecosystem:cordova, cordova-firefoxos, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-blackberry10, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows8, cordova-tizen, cordova-browser |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 73920 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5576.0 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-device-orientation#readme)

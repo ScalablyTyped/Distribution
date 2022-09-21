@@ -10,10 +10,10 @@ Fetch-based http client for use with npm registry APIs
 | ------------------ | :-------------: |
 | Full name          | npm-registry-fetch |
 | Keywords           | npm, registry, fetch |
-| # releases         | 27 |
-| # dependents       | 58 |
-| # downloads        | 126554829 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5781434333333332E7 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/npm-registry-fetch#readme)

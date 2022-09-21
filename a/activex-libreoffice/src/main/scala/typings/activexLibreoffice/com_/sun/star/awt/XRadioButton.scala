@@ -36,7 +36,7 @@ object XRadioButton {
     acquire: () => Unit,
     addItemListener: XItemListener => Unit,
     getState: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeItemListener: XItemListener => Unit,
     setLabel: String => Unit,

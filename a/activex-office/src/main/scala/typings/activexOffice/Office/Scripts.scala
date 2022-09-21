@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Scripts extends StObject {
   
-  def apply(Index: js.Any): Script = js.native
+  def apply(Index: Any): Script = js.native
   
   /**
     * @param Location [Location=2]
@@ -17,7 +17,7 @@ trait Scripts extends StObject {
     * @param ScriptText [ScriptText='']
     */
   def Add(
-    Anchor: js.UndefOr[js.Any],
+    Anchor: js.UndefOr[Any],
     Location: js.UndefOr[MsoScriptLocation],
     Language: js.UndefOr[MsoScriptLanguage],
     Id: js.UndefOr[String],
@@ -25,7 +25,7 @@ trait Scripts extends StObject {
     ScriptText: js.UndefOr[String]
   ): Script = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -33,7 +33,7 @@ trait Scripts extends StObject {
   
   def Delete(): Unit = js.native
   
-  def Item(Index: js.Any): Script = js.native
+  def Item(Index: Any): Script = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

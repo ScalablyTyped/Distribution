@@ -49,7 +49,7 @@ trait HttpCookiePairHeaderValueCollection
     */
   def getView(): IVectorView[HttpCookiePairHeaderValue] = js.native
   
-  def indexOf(value: HttpCookiePairHeaderValue, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpCookiePairHeaderValue, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

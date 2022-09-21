@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "UpdateBaiduChannelCommand")
 @js.native
-class UpdateBaiduChannelCommand protected ()
+open class UpdateBaiduChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateBaiduChannelCommandMod.UpdateBaiduChannelCommand {
   def this(input: UpdateBaiduChannelInput) = this()
 }

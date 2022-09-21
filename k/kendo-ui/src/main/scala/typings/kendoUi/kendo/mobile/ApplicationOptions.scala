@@ -8,6 +8,8 @@ trait ApplicationOptions extends StObject {
   
   var browserHistory: js.UndefOr[Boolean] = js.undefined
   
+  var hashBang: js.UndefOr[Boolean] = js.undefined
+  
   var hideAddressBar: js.UndefOr[Boolean] = js.undefined
   
   var init: js.UndefOr[js.Function1[/* e */ ApplicationEvent, Unit]] = js.undefined
@@ -22,7 +24,11 @@ trait ApplicationOptions extends StObject {
   
   var platform: js.UndefOr[String] = js.undefined
   
+  var pushState: js.UndefOr[Boolean] = js.undefined
+  
   var retina: js.UndefOr[Boolean] = js.undefined
+  
+  var root: js.UndefOr[String] = js.undefined
   
   var serverNavigation: js.UndefOr[Boolean] = js.undefined
   
@@ -35,6 +41,8 @@ trait ApplicationOptions extends StObject {
   var updateDocumentTitle: js.UndefOr[Boolean] = js.undefined
   
   var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
+  
+  var webAppCapable: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationOptions {
   
@@ -48,6 +56,10 @@ object ApplicationOptions {
     inline def setBrowserHistory(value: Boolean): Self = StObject.set(x, "browserHistory", value.asInstanceOf[js.Any])
     
     inline def setBrowserHistoryUndefined: Self = StObject.set(x, "browserHistory", js.undefined)
+    
+    inline def setHashBang(value: Boolean): Self = StObject.set(x, "hashBang", value.asInstanceOf[js.Any])
+    
+    inline def setHashBangUndefined: Self = StObject.set(x, "hashBang", js.undefined)
     
     inline def setHideAddressBar(value: Boolean): Self = StObject.set(x, "hideAddressBar", value.asInstanceOf[js.Any])
     
@@ -77,9 +89,17 @@ object ApplicationOptions {
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    
     inline def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
     
     inline def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     inline def setServerNavigation(value: Boolean): Self = StObject.set(x, "serverNavigation", value.asInstanceOf[js.Any])
     
@@ -104,5 +124,9 @@ object ApplicationOptions {
     inline def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
     
     inline def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
+    
+    inline def setWebAppCapable(value: Boolean): Self = StObject.set(x, "webAppCapable", value.asInstanceOf[js.Any])
+    
+    inline def setWebAppCapableUndefined: Self = StObject.set(x, "webAppCapable", js.undefined)
   }
 }

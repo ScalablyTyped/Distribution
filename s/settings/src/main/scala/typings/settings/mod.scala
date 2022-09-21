@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("settings", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Settings {
     def this(pathOrModule: PathOrModule) = this()
@@ -19,7 +19,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var defaults: js.UndefOr[js.Any] = js.undefined
+    var defaults: js.UndefOr[Any] = js.undefined
     
     var env: js.UndefOr[String] = js.undefined
     
@@ -34,7 +34,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
@@ -50,5 +50,5 @@ object mod {
   
   type PathOrModule = String | DictenvName
   
-  type Settings = StringDictionary[js.Any]
+  type Settings = StringDictionary[Any]
 }

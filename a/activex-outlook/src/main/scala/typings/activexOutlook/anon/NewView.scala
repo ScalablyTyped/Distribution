@@ -8,11 +8,11 @@ trait NewView extends StObject {
   
   var Cancel: Boolean
   
-  val NewView: js.Any
+  val NewView: Any
 }
 object NewView {
   
-  inline def apply(Cancel: Boolean, NewView: js.Any): NewView = {
+  inline def apply(Cancel: Boolean, NewView: Any): NewView = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], NewView = NewView.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewView]
   }
@@ -21,6 +21,6 @@ object NewView {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setNewView(value: js.Any): Self = StObject.set(x, "NewView", value.asInstanceOf[js.Any])
+    inline def setNewView(value: Any): Self = StObject.set(x, "NewView", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-permissions
 
-Typings are for version 9.3.0
+Typings are for version 13.2.0
 
 ## Library description:
 Allows you prompt for various permissions to access device sensors, personal data, etc.
@@ -10,13 +10,13 @@ Allows you prompt for various permissions to access device sensors, personal dat
 | ------------------ | :-------------: |
 | Full name          | expo-permissions |
 | Keywords           | react-native, expo, permissions |
-| # releases         | 31 |
-| # dependents       | 17 |
-| # downloads        | 2245878 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 220321.0 |
+| # stars            | 17320.0 |
 
 ## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/permissions/)
+- [Homepage](https://github.com/expo/expo#readme)
 - [Bugs](https://github.com/expo/expo/issues)
 - [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/expo-permissions)

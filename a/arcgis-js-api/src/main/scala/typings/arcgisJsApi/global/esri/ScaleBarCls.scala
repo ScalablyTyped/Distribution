@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html)
   */
-class ScaleBarCls ()
+open class ScaleBarCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ScaleBar {
   def this(properties: ScaleBarProperties) = this()

@@ -14,7 +14,7 @@ trait PortfolioDetail extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[CreationTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the portfolio.
@@ -49,7 +49,7 @@ object PortfolioDetail {
     
     inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    inline def setCreatedTime(value: CreationTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

@@ -42,6 +42,6 @@ object ServerGroupLaunchConfiguration {
     
     inline def setServerLaunchConfigurationsUndefined: Self = StObject.set(x, "serverLaunchConfigurations", js.undefined)
     
-    inline def setServerLaunchConfigurationsVarargs(value: ServerLaunchConfiguration*): Self = StObject.set(x, "serverLaunchConfigurations", js.Array(value :_*))
+    inline def setServerLaunchConfigurationsVarargs(value: ServerLaunchConfiguration*): Self = StObject.set(x, "serverLaunchConfigurations", js.Array(value*))
   }
 }

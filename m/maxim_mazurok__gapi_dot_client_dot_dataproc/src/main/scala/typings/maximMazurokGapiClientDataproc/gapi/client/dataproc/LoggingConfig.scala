@@ -11,7 +11,7 @@ trait LoggingConfig extends StObject {
   var driverLogLevels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.LoggingConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.LoggingConfig & TopLevel[Any]
   ] = js.undefined
 }
 object LoggingConfig {
@@ -26,7 +26,7 @@ object LoggingConfig {
     inline def setDriverLogLevels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.LoggingConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.LoggingConfig & TopLevel[Any]
     ): Self = StObject.set(x, "driverLogLevels", value.asInstanceOf[js.Any])
     
     inline def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)

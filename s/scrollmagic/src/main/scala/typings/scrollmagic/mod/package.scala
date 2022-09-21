@@ -1,23 +1,30 @@
 package typings.scrollmagic.mod
 
+import typings.scrollmagic.mod.^
+import typings.scrollmagic.scrollmagicStrings.enter
+import typings.scrollmagic.scrollmagicStrings.leave
+import typings.scrollmagic.scrollmagicStrings.progress
+import typings.scrollmagic.scrollmagicStrings.remove
+import typings.scrollmagic.scrollmagicStrings.start
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def version: java.lang.String = typings.scrollmagic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type ElementOrSelector = typings.std.Element | java.lang.String
+type ElementOrSelector = Element | String
 
-type EnterEvent = typings.scrollmagic.mod.SceneProgressEvent[typings.scrollmagic.scrollmagicStrings.enter]
+type EnterEvent = SceneProgressEvent[enter]
 
-type LeaveEvent = typings.scrollmagic.mod.SceneProgressEvent[typings.scrollmagic.scrollmagicStrings.leave]
+type LeaveEvent = SceneProgressEvent[leave]
 
-type ProgressEvent = typings.scrollmagic.mod.SceneProgressEvent[typings.scrollmagic.scrollmagicStrings.progress]
+type ProgressEvent = SceneProgressEvent[progress]
 
-type RemoveEvent = typings.scrollmagic.mod.Event[typings.scrollmagic.scrollmagicStrings.remove]
+type RemoveEvent = Event[remove]
 
-type StartEvent = typings.scrollmagic.mod.SceneProgressEvent[typings.scrollmagic.scrollmagicStrings.start]
+type StartEvent = SceneProgressEvent[start]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -25,4 +32,4 @@ type StartEvent = typings.scrollmagic.mod.SceneProgressEvent[typings.scrollmagic
   - typings.scrollmagic.scrollmagicStrings.onCenter
   - typings.scrollmagic.scrollmagicStrings.onLeave
 */
-type TriggerHook = typings.scrollmagic.mod._TriggerHook | scala.Double
+type TriggerHook = _TriggerHook | Double

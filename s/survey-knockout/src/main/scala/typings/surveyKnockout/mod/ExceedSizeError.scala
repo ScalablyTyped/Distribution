@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ExceedSizeError")
 @js.native
-class ExceedSizeError protected () extends SurveyError {
+open class ExceedSizeError protected () extends SurveyError {
   def this(maxSize: Double) = this()
   def this(maxSize: Double, errorOwner: ISurveyErrorOwner) = this()
 }

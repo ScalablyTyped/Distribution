@@ -5,6 +5,7 @@ import typings.antDesignReactNative.buttonStyleMod.ButtonStyles
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.antDesignReactNative.propsTypeMod.ButtonPropsType
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityProps
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -24,7 +25,7 @@ object buttonMod {
   
   @JSImport("@ant-design/react-native/lib/button", JSImport.Default)
   @js.native
-  class default protected () extends Button {
+  open class default protected () extends Button {
     def this(props: ButtonProps) = this()
   }
   /* static members */
@@ -41,20 +42,19 @@ object buttonMod {
   }
   
   @js.native
-  trait Button
-    extends Component[ButtonProps, js.Any, js.Any] {
+  trait Button extends Component[ButtonProps, Any, Any] {
     
-    def onHideUnderlay(arg: js.Any*): Unit = js.native
+    def onHideUnderlay(): Unit = js.native
     
-    def onPressIn(arg: js.Any*): Unit = js.native
+    def onPressIn(event: GestureResponderEvent): Unit = js.native
     
-    def onPressOut(arg: js.Any*): Unit = js.native
+    def onPressOut(event: GestureResponderEvent): Unit = js.native
     
-    def onShowUnderlay(arg: js.Any*): Unit = js.native
+    def onShowUnderlay(): Unit = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: disabled. Inlined onPress, onPressOut, hitSlop, style, onFocus, onLayout, delayLongPress, onLongPress, onBlur, delayPressOut, pressRetentionOffset, delayPressIn, onPressIn, testID
+  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: disabled. Inlined onPress, onPressOut, hitSlop, style, onFocus, onLayout, delayLongPress, onLongPress, onBlur, delayPressOut, pressRetentionOffset, children, delayPressIn, onPressIn, testID
   - typings.reactNative.mod.TouchableHighlightProps because var conflicts: disabled. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity */ trait ButtonProps
     extends StObject
        with ButtonPropsType
@@ -69,6 +69,8 @@ object buttonMod {
     var activeOpacity: js.UndefOr[Double] = js.undefined
     
     var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Delay in ms, from onPressIn, before onLongPress is called.
@@ -122,7 +124,11 @@ object buttonMod {
     
     var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[js.UndefOr[js.Any | (/* event */ GestureResponderEvent)], Unit]] = js.undefined
+    /**
+      * Called when the touch is released,
+      * but not if cancelled (e.g. by a scroll that steals the responder lock).
+      */
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
     var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
@@ -177,6 +183,10 @@ object buttonMod {
       
       inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
       inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
@@ -213,7 +223,7 @@ object buttonMod {
       
       inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
       
-      inline def setOnPress(value: js.UndefOr[js.Any | (/* event */ GestureResponderEvent)] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
       inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
       

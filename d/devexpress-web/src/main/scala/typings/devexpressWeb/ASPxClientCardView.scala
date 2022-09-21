@@ -160,7 +160,7 @@ trait ASPxClientCardView
     * Deletes a card with the specified key value.
     * @param key An object that uniquely identifies the card.
     */
-  def DeleteCardByKey(key: js.Any): Unit = js.native
+  def DeleteCardByKey(key: Any): Unit = js.native
   
   /**
     * Occurs on the client after a callback's server-side processing has been completed.
@@ -323,7 +323,7 @@ trait ASPxClientCardView
   /**
     * Returns key values of selected cards displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
+  def GetSelectedKeysOnPage(): js.Array[Any] = js.native
   
   /**
     * Returns the index of the first card displayed within the grid's active page.
@@ -476,14 +476,14 @@ trait ASPxClientCardView
   def SelectCards(visibleIndices: Double, selected: Boolean): Unit = js.native
   def SelectCards(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
-  def SelectCardsByKey(keys: js.Any): Unit = js.native
-  def SelectCardsByKey(keys: js.Any, selected: Boolean): Unit = js.native
   /**
     * Selects or deselects the specified card displayed within the CardView.
     * @param selected true to select the specified card; false to deselect the card.
     */
-  def SelectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
-  def SelectCardsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[Any]): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[Any], selected: Boolean): Unit = js.native
+  def SelectCardsByKey(keys: Any): Unit = js.native
+  def SelectCardsByKey(keys: Any, selected: Boolean): Unit = js.native
   
   /**
     * Fires after the selection has been changed.
@@ -534,7 +534,7 @@ trait ASPxClientCardView
     * @param showAtElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
   def ShowCustomizationWindow(): Unit = js.native
-  def ShowCustomizationWindow(showAtElement: js.Any): Unit = js.native
+  def ShowCustomizationWindow(showAtElement: Any): Unit = js.native
   
   /**
     * Displays the Filter Control.
@@ -582,7 +582,7 @@ trait ASPxClientCardView
     * Switches the ASPxCardView to edit mode.
     * @param key An object that uniquely identifies a card to be edited.
     */
-  def StartEditCardByKey(key: js.Any): Unit = js.native
+  def StartEditCardByKey(key: Any): Unit = js.native
   
   def Ungroup(column: String): Unit = js.native
   def Ungroup(column: Double): Unit = js.native
@@ -609,12 +609,12 @@ trait ASPxClientCardView
   def UnselectCards(visibleIndices: js.Array[Double]): Unit = js.native
   def UnselectCards(visibleIndices: Double): Unit = js.native
   
-  def UnselectCardsByKey(keys: js.Any): Unit = js.native
   /**
     * Deselects the specified cards displayed within the ASPxCardView.
     * @param keys An array of objects that uniquely identify the cards.
     */
-  def UnselectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def UnselectCardsByKey(keys: js.Array[Any]): Unit = js.native
+  def UnselectCardsByKey(keys: Any): Unit = js.native
   
   /**
     * Deselects all grid cards that match the filter criteria currently applied to the CardView.

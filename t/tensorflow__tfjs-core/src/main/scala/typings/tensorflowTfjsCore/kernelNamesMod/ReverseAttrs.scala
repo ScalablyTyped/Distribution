@@ -19,6 +19,6 @@ object ReverseAttrs {
     
     inline def setDims(value: Double | js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     
-    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value*))
   }
 }

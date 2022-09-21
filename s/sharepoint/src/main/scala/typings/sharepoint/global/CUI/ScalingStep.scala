@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ScalingStep")
 @js.native
-class ScalingStep ()
+open class ScalingStep ()
   extends StObject
      with typings.sharepoint.CUI.ScalingStep

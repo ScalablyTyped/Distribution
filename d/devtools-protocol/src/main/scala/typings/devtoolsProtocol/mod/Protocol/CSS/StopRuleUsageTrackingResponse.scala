@@ -19,6 +19,6 @@ object StopRuleUsageTrackingResponse {
     
     inline def setRuleUsage(value: js.Array[RuleUsage]): Self = StObject.set(x, "ruleUsage", value.asInstanceOf[js.Any])
     
-    inline def setRuleUsageVarargs(value: RuleUsage*): Self = StObject.set(x, "ruleUsage", js.Array(value :_*))
+    inline def setRuleUsageVarargs(value: RuleUsage*): Self = StObject.set(x, "ruleUsage", js.Array(value*))
   }
 }

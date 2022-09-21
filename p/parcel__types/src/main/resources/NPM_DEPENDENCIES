@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@parcel/types" : "2.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@parcel/types" : "2.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SourceMapEntry")
 @js.native
-class SourceMapEntry protected ()
+open class SourceMapEntry protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SourceMapEntry {
   def this(

@@ -12,8 +12,8 @@ object ruleContextMod {
   
   @JSImport("antlr4/RuleContext", "RuleContext")
   @js.native
-  class RuleContext protected () extends RuleNode {
-    def this(parent: js.Any, invokingState: Double) = this()
+  open class RuleContext protected () extends RuleNode {
+    def this(parent: Any, invokingState: Double) = this()
     
     def accept(visitor: ParseTreeVisitor): Unit = js.native
     
@@ -21,7 +21,7 @@ object ruleContextMod {
     
     def getAltNumber(): Double = js.native
     
-    def getChild(i: Double): js.Any = js.native
+    def getChild(i: Double): Any = js.native
     
     def getChildCount(): Double = js.native
     
@@ -41,6 +41,6 @@ object ruleContextMod {
     
     def setAltNumber(altNumber: Double): Unit = js.native
     
-    def toStringTree(ruleNames: js.Array[String], recog: js.Any): String = js.native
+    def toStringTree(ruleNames: js.Array[String], recog: Any): String = js.native
   }
 }

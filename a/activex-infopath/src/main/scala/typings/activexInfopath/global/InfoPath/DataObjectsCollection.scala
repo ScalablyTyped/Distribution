@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataObjectsCollection")
 @js.native
-/* private */ class DataObjectsCollection ()
+/* private */ open class DataObjectsCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataObjectsCollection {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotDataObjectsCollection_typekey: typings.activexInfopath.InfoPath.DataObjectsCollection = js.native
   
   /* CompleteClass */
-  override def Item(varIndex: js.Any): typings.activexInfopath.InfoPath.DataSourceObject = js.native
+  override def Item(varIndex: Any): typings.activexInfopath.InfoPath.DataSourceObject = js.native
 }

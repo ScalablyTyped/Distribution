@@ -54,7 +54,7 @@ object anon {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
     }
   }
   

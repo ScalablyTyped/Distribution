@@ -25,6 +25,6 @@ object SocketTcpServerPermission {
     
     inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
-    inline def setListenVarargs(value: String*): Self = StObject.set(x, "listen", js.Array(value :_*))
+    inline def setListenVarargs(value: String*): Self = StObject.set(x, "listen", js.Array(value*))
   }
 }

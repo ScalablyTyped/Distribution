@@ -17,9 +17,14 @@ trait CreateModelInput extends StObject {
   var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute instances or for batch transform jobs. Deploying on ML compute instances is part of model hosting. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
+    * The Amazon Resource Name (ARN) of the IAM role that SageMaker can assume to access model artifacts and docker image for deployment on ML compute instances or for batch transform jobs. Deploying on ML compute instances is part of model hosting. For more information, see SageMaker Roles.   To be able to pass this role to SageMaker, the caller of this API must have the iam:PassRole permission. 
     */
   var ExecutionRoleArn: RoleArn
+  
+  /**
+    * Specifies details of how containers in a multi-container endpoint are called.
+    */
+  var InferenceExecutionConfig: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceExecutionConfig] = js.undefined
   
   /**
     * The name of the new model.
@@ -32,7 +37,7 @@ trait CreateModelInput extends StObject {
   var PrimaryContainer: js.UndefOr[ContainerDefinition] = js.undefined
   
   /**
-    * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+    * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web Services Resources.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -54,13 +59,17 @@ object CreateModelInput {
     
     inline def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
     
-    inline def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value*))
     
     inline def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
     inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
     
     inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceExecutionConfig(value: InferenceExecutionConfig): Self = StObject.set(x, "InferenceExecutionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceExecutionConfigUndefined: Self = StObject.set(x, "InferenceExecutionConfig", js.undefined)
     
     inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
@@ -72,7 +81,7 @@ object CreateModelInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     

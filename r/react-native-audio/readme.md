@@ -11,14 +11,11 @@ React Native extension for recording audio
 | Full name          | react-native-audio |
 | Keywords           | react-native, audio, record |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 245641 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 21008.666666666668 |
+| # stars            | 1128.0 |
 
 ## Links
-- [Homepage](https://github.com/jsierles/react-native-audio#readme)
-- [Bugs](https://github.com/jsierles/react-native-audio/issues)
-- [Repository](https://github.com/jsierles/react-native-audio)
 - [Npm](https://www.npmjs.com/package/react-native-audio)
     
 

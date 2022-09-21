@@ -27,7 +27,7 @@ object End {
     
     inline def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     

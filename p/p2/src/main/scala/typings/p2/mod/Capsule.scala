@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Capsule")
 @js.native
-class Capsule () extends Shape {
+open class Capsule () extends Shape {
   def this(options: CapsuleOptions) = this()
   
   var length: Double = js.native

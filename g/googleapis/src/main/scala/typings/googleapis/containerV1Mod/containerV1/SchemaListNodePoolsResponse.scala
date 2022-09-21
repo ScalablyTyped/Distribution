@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * ListNodePoolsResponse is the result of ListNodePoolsRequest.
-  */
 trait SchemaListNodePoolsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListNodePoolsResponse {
     
     inline def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
     
-    inline def setNodePoolsVarargs(value: SchemaNodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
+    inline def setNodePoolsVarargs(value: SchemaNodePool*): Self = StObject.set(x, "nodePools", js.Array(value*))
   }
 }

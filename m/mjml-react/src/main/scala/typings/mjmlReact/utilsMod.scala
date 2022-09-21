@@ -1,6 +1,7 @@
 package typings.mjmlReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addQueryParams(url: String, params: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addQueryParams(url: String, params: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def fixConditionalComment(html: String, havingContent: String, newCondition: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fixConditionalComment")(html.asInstanceOf[js.Any], havingContent.asInstanceOf[js.Any], newCondition.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -19,6 +20,10 @@ object utilsMod {
   inline def getTextAlign(value: String, fallback: TextAlignment): TextAlignment = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextAlign")(value.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[TextAlignment]
   
   inline def namedEntityToHexCode(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namedEntityToHexCode")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def renderToJson(whatToRender: ReactNode): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJson")(whatToRender.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
+  inline def renderToJson2(whatToRender: ReactNode): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJson2")(whatToRender.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def toMobileFontSize(sizeWithUnit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toMobileFontSize")(sizeWithUnit.asInstanceOf[js.Any]).asInstanceOf[Double]
   

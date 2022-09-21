@@ -17,7 +17,7 @@ object queueMod {
   
   @JSImport("promise-the-world/queue", "Queue")
   @js.native
-  class Queue () extends StObject {
+  open class Queue () extends StObject {
     
     def add[T](factory: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
     

@@ -9,15 +9,12 @@ jQuery Finger unifies click and touch events by removing the 300ms delay on touc
 | ------------------ | :-------------: |
 | Full name          | jquery.finger |
 | Keywords           | jquery, tap, doubletap, swipe, flick, drag, move, gestures, touch, tappable, event, mobile, tablet |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 22418 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 451.3333333333333 |
+| # stars            | 425.0 |
 
 ## Links
-- [Homepage](https://github.com/ngryman/jquery.finger)
-- [Bugs](https://github.com/ngryman/jquery.finger/issues)
-- [Repository](https://github.com/ngryman/jquery.finger)
 - [Npm](https://www.npmjs.com/package/jquery.finger)
     
 

@@ -32,7 +32,7 @@ object GitForkOperationStatusDetail {
     
     inline def setAllSteps(value: js.Array[String]): Self = StObject.set(x, "allSteps", value.asInstanceOf[js.Any])
     
-    inline def setAllStepsVarargs(value: String*): Self = StObject.set(x, "allSteps", js.Array(value :_*))
+    inline def setAllStepsVarargs(value: String*): Self = StObject.set(x, "allSteps", js.Array(value*))
     
     inline def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
     

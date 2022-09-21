@@ -8,7 +8,7 @@ trait SwitchChangeEvent
   extends StObject
      with SwitchEvent {
   
-  var checked: js.UndefOr[js.Any] = js.undefined
+  var checked: js.UndefOr[Any] = js.undefined
 }
 object SwitchChangeEvent {
   
@@ -19,7 +19,7 @@ object SwitchChangeEvent {
   
   extension [Self <: SwitchChangeEvent](x: Self) {
     
-    inline def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
   }

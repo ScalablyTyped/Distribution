@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.BufferGeometry")
 @js.native
 /**
-	 * This creates a new BufferGeometry. It also sets several properties to an default value.
-	 */
-class BufferGeometry ()
+  * This creates a new BufferGeometry. It also sets several properties to an default value.
+  */
+open class BufferGeometry ()
   extends typings.three.mod.BufferGeometry

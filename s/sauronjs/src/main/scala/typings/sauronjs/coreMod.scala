@@ -16,7 +16,7 @@ object coreMod {
   
   @JSImport("sauronjs/src/core", "Component")
   @js.native
-  class Component protected ()
+  open class Component protected ()
     extends typings.sauronjs.componentMod.^ {
     def this(params: ComponentParameters) = this()
   }
@@ -36,12 +36,12 @@ object coreMod {
   
   @JSImport("sauronjs/src/core", "Service")
   @js.native
-  class Service protected ()
+  open class Service protected ()
     extends typings.sauronjs.serviceMod.^ {
     def this(pubs: js.Array[String], subs: js.Array[String]) = this()
   }
   
-  inline def attachSubject(`object`: typings.sauronjs.serviceMod.^): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("attachSubject")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def attachSubject(`object`: typings.sauronjs.serviceMod.^): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("attachSubject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def cache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")().asInstanceOf[Unit]
   inline def cache(id: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(id.asInstanceOf[js.Any]).asInstanceOf[Cache]
@@ -49,5 +49,5 @@ object coreMod {
   inline def instance(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
   inline def instance(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
   
-  inline def next(channels: js.Array[String], event: String, data: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(channels.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def next(channels: js.Array[String], event: String, data: Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(channels.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

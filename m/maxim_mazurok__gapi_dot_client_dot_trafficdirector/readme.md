@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_trafficdirector
 
-Typings are for version 2.0.20201105
+Typings are for version 2.0.20220805
 
 ## Library description:
 TypeScript typings for Traffic Director API v2
@@ -10,10 +10,10 @@ TypeScript typings for Traffic Director API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.trafficdirector |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 1041 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 856.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

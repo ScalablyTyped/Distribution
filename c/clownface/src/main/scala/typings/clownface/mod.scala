@@ -2,14 +2,13 @@ package typings.clownface
 
 import typings.clownface.anon.ToString
 import typings.clownface.contextMod.Context
-import typings.rdfJs.mod.BlankNode
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.Literal
-import typings.rdfJs.mod.NamedNode
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.QuadGraph
-import typings.rdfJs.mod.Term
-import typings.std.Iterable
+import typings.rdfjsTypes.dataModelMod.BlankNode
+import typings.rdfjsTypes.dataModelMod.Literal
+import typings.rdfjsTypes.dataModelMod.NamedNode
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.QuadGraph
+import typings.rdfjsTypes.dataModelMod.Term
+import typings.rdfjsTypes.datasetMod.DatasetCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,6 +82,7 @@ object mod {
     def blankNode(): AnyPointer[BlankNode, D] = js.native
     def blankNode(value: (AnyPointer[BlankNode, D]) | (MultiPointer[BlankNode, D])): AnyPointer[BlankNode, D] = js.native
     def blankNode(values: js.Array[String]): AnyPointer[js.Array[BlankNode], D] = js.native
+    def blankNode(values: js.Iterable[BlankNode | (GraphPointer[BlankNode, D])]): AnyPointer[js.Array[BlankNode], D] = js.native
     def blankNode(value: SingleOrOneElementArray[String]): AnyPointer[BlankNode, D] = js.native
     
     val dataset: D = js.native
@@ -90,14 +90,27 @@ object mod {
     val datasets: js.Array[D] = js.native
     
     def deleteIn(): AnyPointer[T, D] = js.native
+    def deleteIn(predicates: Unit, subjects: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     def deleteIn(predicates: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
+    def deleteIn(predicates: SingleOrArrayOfTerms[Term], subjects: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     
     def deleteList(predicates: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     
     def deleteOut(): AnyPointer[T, D] = js.native
+    def deleteOut(predicates: Unit, objects: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     def deleteOut(predicates: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
+    def deleteOut(predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTerms[Term]): AnyPointer[T, D] = js.native
     
-    def filter(cb: js.Function1[/* quad */ Iteratee[T, D], Boolean]): AnyPointer[T, D] = js.native
+    def filter(
+      cb: js.Function3[
+          /* ptr */ Iteratee[T, D], 
+          /* index */ Double, 
+          /* pointers */ js.Array[GraphPointer[ExtractContext[T], DatasetCore[Quad, Quad]]], 
+          Boolean
+        ]
+    ): AnyPointer[T, D] = js.native
+    @JSName("filter")
+    def filter_S_T[S /* <: T */](cb: FilterCallback[T, D, S]): AnyPointer[S, D] = js.native
     
     def forEach(cb: js.Function1[/* quad */ Iteratee[T, D], Unit]): this.type = js.native
     
@@ -107,7 +120,9 @@ object mod {
     def in(): MultiPointer[NamedNode[String] | BlankNode, D] = js.native
     def in(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[NamedNode[String] | BlankNode, D] = js.native
     
-    def list(): (Iterable[Iteratee[T, D]]) | Null = js.native
+    def isList(): Boolean = js.native
+    
+    def list(): (js.Iterable[Iteratee[Term, D]]) | Null = js.native
     
     def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D])): AnyPointer[Literal, D] = js.native
     def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]), languageOrDatatype: String): AnyPointer[Literal, D] = js.native
@@ -115,9 +130,12 @@ object mod {
       value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]),
       languageOrDatatype: NamedNode[String]
     ): AnyPointer[Literal, D] = js.native
-    def literal(values: js.Array[Boolean | String | Double | Term | Null]): AnyPointer[js.Array[Literal], D] = js.native
-    def literal(values: js.Array[Boolean | String | Double | Term | Null], languageOrDatatype: String): AnyPointer[js.Array[Literal], D] = js.native
-    def literal(values: js.Array[Boolean | String | Double | Term | Null], languageOrDatatype: NamedNode[String]): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Array[Boolean | String | Double | Null]): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Array[Boolean | String | Double | Null], languageOrDatatype: String): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Array[Boolean | String | Double | Null], languageOrDatatype: NamedNode[String]): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Iterable[(GraphPointer[Literal, D]) | Literal]): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Iterable[(GraphPointer[Literal, D]) | Literal], languageOrDatatype: String): AnyPointer[js.Array[Literal], D] = js.native
+    def literal(values: js.Iterable[(GraphPointer[Literal, D]) | Literal], languageOrDatatype: NamedNode[String]): AnyPointer[js.Array[Literal], D] = js.native
     def literal(value: SingleOrOneElementArray[Boolean | String | Double | Term | Null]): AnyPointer[Literal, D] = js.native
     def literal(
       value: SingleOrOneElementArray[Boolean | String | Double | Term | Null],
@@ -130,14 +148,17 @@ object mod {
     
     def map[X](cb: js.Function2[/* quad */ Iteratee[T, D], /* index */ Double, X]): js.Array[X] = js.native
     
-    def namedNode(value: (AnyPointer[NamedNode[String], D]) | (MultiPointer[NamedNode[String], D])): AnyPointer[NamedNode[String], D] = js.native
     def namedNode(values: js.Array[String | NamedNode[String]]): AnyPointer[js.Array[NamedNode[String]], D] = js.native
-    def namedNode(value: SingleOrOneElementArray[String | NamedNode[String]]): AnyPointer[NamedNode[String], D] = js.native
+    def namedNode(values: js.Iterable[(GraphPointer[NamedNode[String], D]) | NamedNode[String]]): AnyPointer[js.Array[NamedNode[String]], D] = js.native
+    def namedNode(values: MultiPointer[NamedNode[String], D]): AnyPointer[js.Array[NamedNode[String]], D] = js.native
+    def namedNode[Iri /* <: String */](value: SingleOrOneElementArray[String | NamedNode[Iri] | (AnyPointer[NamedNode[Iri], D])]): AnyPointer[NamedNode[Iri], D] = js.native
     
     def node(): AnyPointer[BlankNode, D] = js.native
     def node(value: Null, options: NodeOptions): AnyPointer[BlankNode, D] = js.native
     def node(values: js.Array[Boolean | Double | Null | String | Term]): AnyPointer[js.Array[Literal], D] = js.native
     def node(values: js.Array[Boolean | Double | Null | String | Term], options: NodeOptions): AnyPointer[js.Array[Literal], D] = js.native
+    def node(values: js.Iterable[BlankNode | Term]): AnyPointer[js.Array[BlankNode], D] = js.native
+    def node(values: js.Iterable[BlankNode | Term], options: NodeOptions): AnyPointer[js.Array[BlankNode], D] = js.native
     def node(value: SingleOrOneElementArray[Boolean | String | Double]): AnyPointer[Literal, D] = js.native
     def node(value: SingleOrOneElementArray[Boolean | String | Double], options: NodeOptions): AnyPointer[Literal, D] = js.native
     def node[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D])): AnyPointer[X, D] = js.native
@@ -147,9 +168,17 @@ object mod {
     @JSName("node")
     def node_X_ArrayTerm[X /* <: js.Array[Term] */](values: X, options: NodeOptions): AnyPointer[X, D] = js.native
     @JSName("node")
+    def node_X_Term[X /* <: Term */](value: js.Iterable[X]): AnyPointer[js.Array[X], D] = js.native
+    @JSName("node")
+    def node_X_Term[X /* <: Term */](value: js.Iterable[X], options: NodeOptions): AnyPointer[js.Array[X], D] = js.native
+    @JSName("node")
     def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X]): AnyPointer[X, D] = js.native
     @JSName("node")
     def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X], options: NodeOptions): AnyPointer[X, D] = js.native
+    @JSName("node")
+    def node_X_Term_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]]): MultiPointer[X, D] = js.native
+    @JSName("node")
+    def node_X_Term_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]], options: NodeOptions): MultiPointer[X, D] = js.native
     
     def out(): MultiPointer[Term, D] = js.native
     def out(predicates: Unit, options: OutOptions): MultiPointer[Literal, D] = js.native
@@ -162,12 +191,7 @@ object mod {
     
     val terms: (js.Array[T | Term]) | T = js.native
     
-    def toArray(): js.Array[
-        AnyPointer[
-          T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any), 
-          D
-        ]
-      ] = js.native
+    def toArray(): js.Array[AnyPointer[ExtractContext[T], D]] = js.native
     
     val value: js.UndefOr[
         String | (/* import warning: importer.ImportType#apply Failed type conversion: string[0] */ js.Any)
@@ -206,7 +230,7 @@ object mod {
       
       inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value*))
     }
   }
   
@@ -244,7 +268,7 @@ object mod {
       
       inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value*))
     }
   }
   
@@ -282,7 +306,7 @@ object mod {
       
       inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value*))
     }
   }
   
@@ -316,15 +340,24 @@ object mod {
       
       inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
       inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value*))
     }
   }
+  
+  type ExtractContext[T /* <: AnyContext */] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
+  
+  type FilterCallback[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */, S /* <: T */] = js.Function3[
+    /* ptr */ Iteratee[T, D], 
+    /* index */ Double, 
+    /* pointers */ js.Array[GraphPointer[ExtractContext[T], DatasetCore[Quad, Quad]]], 
+    /* is clownface.clownface.Predicate<S, any> */ Boolean
+  ]
   
   type GraphPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[T, D]
   
@@ -332,6 +365,11 @@ object mod {
     (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any) | T, 
     D
   ]
+  
+  @js.native
+  trait ListPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */]
+    extends StObject
+       with AnyPointer[T, D]
   
   type MultiPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[T | js.Array[T], D]
   
@@ -387,9 +425,14 @@ object mod {
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value*))
     }
   }
+  
+  type Predicate[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] = Iteratee[
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any) | T, 
+    D
+  ]
   
   type SingleOrArray[T] = T | js.Array[T]
   

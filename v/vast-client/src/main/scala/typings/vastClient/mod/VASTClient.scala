@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vast-client", "VASTClient")
 @js.native
-class VASTClient () extends StObject {
+open class VASTClient () extends StObject {
   def this(/**
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0

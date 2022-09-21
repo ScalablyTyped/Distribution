@@ -1,7 +1,7 @@
 
 # Scala.js typings for typed-undo
 
-Typings are for version 2.1.0
+Typings are for version 2.4.0
 
 ## Library description:
 A low memory UndoManager for TypeScript (and JavaScript)
@@ -10,10 +10,10 @@ A low memory UndoManager for TypeScript (and JavaScript)
 | ------------------ | :-------------: |
 | Full name          | typed-undo |
 | Keywords           | TypeScript, Undo, UndoManager |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1334 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 618.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/Lusito/typed-undo)

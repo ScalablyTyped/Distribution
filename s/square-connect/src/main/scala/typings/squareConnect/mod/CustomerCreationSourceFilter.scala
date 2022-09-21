@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerCreationSourceFilter")
 @js.native
-class CustomerCreationSourceFilter () extends StObject {
+open class CustomerCreationSourceFilter () extends StObject {
   
   /**
     * Indicates whether a customer profile matching the filter criteria should be included in the result or excluded

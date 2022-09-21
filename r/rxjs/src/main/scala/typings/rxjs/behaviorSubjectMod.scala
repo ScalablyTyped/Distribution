@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object behaviorSubjectMod {
   
-  @JSImport("rxjs/internal/BehaviorSubject", "BehaviorSubject")
+  @JSImport("rxjs/dist/types/internal/BehaviorSubject", "BehaviorSubject")
   @js.native
-  class BehaviorSubject[T] protected () extends Subject[T] {
+  open class BehaviorSubject[T] protected () extends Subject[T] {
     def this(_value: T) = this()
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     def getValue(): T = js.native
     
-    val value: T = js.native
+    def value: T = js.native
   }
 }

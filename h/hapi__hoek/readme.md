@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__hoek
 
-Typings are for version 9.1.0
+Typings are for version 10.0.1
 
 ## Library description:
 General purpose node utilities
@@ -10,10 +10,10 @@ General purpose node utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/hoek |
 | Keywords           | utilities |
-| # releases         | 33 |
-| # dependents       | 274 |
-| # downloads        | 258998598 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4176723666666664E7 |
+| # stars            | 473.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/hoek#readme)

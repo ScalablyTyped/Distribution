@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CircleLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[CircleLayout] = js.undefined
+  @JSName("layout")
+  var layout_CircleLayer: js.UndefOr[CircleLayout] = js.undefined
   
-  var paint: js.UndefOr[CirclePaint] = js.undefined
+  @JSName("paint")
+  var paint_CircleLayer: js.UndefOr[CirclePaint] = js.undefined
   
-  var `type`: circle
+  @JSName("type")
+  var type_CircleLayer: circle
 }
 object CircleLayer {
   

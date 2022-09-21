@@ -9,5 +9,5 @@ object logMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Log$ * / any */ @JSImport("wonder.js/dist/es2015/utils/Log", "Log")
   @js.native
-  class Log () extends StObject
+  open class Log () extends StObject
 }

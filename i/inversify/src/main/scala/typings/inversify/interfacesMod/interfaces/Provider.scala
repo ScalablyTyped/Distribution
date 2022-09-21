@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Provider[T] extends StObject {
   
-  def apply(args: js.Any*): (js.Function1[/* repeated */ js.Any, js.Promise[T]]) | js.Promise[T] = js.native
+  def apply(args: Any*): (js.Function1[/* repeated */ Any, js.Promise[T]]) | js.Promise[T] = js.native
 }

@@ -1,21 +1,21 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.anon.PartialICollapsibleListPr
-import typings.blueprintjsCore.collapsibleListMod.ICollapsibleListProps
+import typings.blueprintjsCore.anon.PartialCollapsibleListPro
+import typings.blueprintjsCore.collapsibleListMod.CollapsibleListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "CollapsibleList")
 @js.native
-class CollapsibleList protected ()
+open class CollapsibleList protected ()
   extends typings.blueprintjsCore.componentsMod.CollapsibleList {
-  def this(props: ICollapsibleListProps) = this()
+  def this(props: CollapsibleListProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ICollapsibleListProps, context: js.Any) = this()
+  def this(props: CollapsibleListProps, context: Any) = this()
 }
 /* static members */
 object CollapsibleList {
@@ -26,8 +26,8 @@ object CollapsibleList {
   
   @JSImport("@blueprintjs/core", "CollapsibleList.defaultProps")
   @js.native
-  def defaultProps: PartialICollapsibleListPr = js.native
-  inline def defaultProps_=(x: PartialICollapsibleListPr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialCollapsibleListPro = js.native
+  inline def defaultProps_=(x: PartialCollapsibleListPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "CollapsibleList.displayName")
   @js.native

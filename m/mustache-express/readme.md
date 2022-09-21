@@ -10,10 +10,10 @@ Use mustache, including partials, in Express 3
 | ------------------ | :-------------: |
 | Full name          | mustache-express |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 834603 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 116264.33333333333 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/bryanburgers/node-mustache-express#readme)

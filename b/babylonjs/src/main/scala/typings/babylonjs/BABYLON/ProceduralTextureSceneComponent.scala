@@ -8,12 +8,12 @@ trait ProceduralTextureSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _beforeClear: js.Any
+  /* private */ var _beforeClear: Any
 }
 object ProceduralTextureSceneComponent {
   
   inline def apply(
-    _beforeClear: js.Any,
+    _beforeClear: Any,
     dispose: () => Unit,
     name: String,
     rebuild: () => Unit,
@@ -26,6 +26,6 @@ object ProceduralTextureSceneComponent {
   
   extension [Self <: ProceduralTextureSceneComponent](x: Self) {
     
-    inline def set_beforeClear(value: js.Any): Self = StObject.set(x, "_beforeClear", value.asInstanceOf[js.Any])
+    inline def set_beforeClear(value: Any): Self = StObject.set(x, "_beforeClear", value.asInstanceOf[js.Any])
   }
 }

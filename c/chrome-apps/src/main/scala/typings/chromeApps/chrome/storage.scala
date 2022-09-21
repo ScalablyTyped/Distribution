@@ -55,7 +55,7 @@ object storage {
       * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
       * Parameter items: Object with items in their key-value mappings.
       */
-    def get(callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+    def get(callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
     /**
       * Gets one or more items from storage.
       * @param keys A single key to get, list of keys to get, or a interface specifying default values.
@@ -63,10 +63,10 @@ object storage {
       * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
       * Parameter items: Object with items in their key-value mappings.
       */
-    def get(keys: String, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: js.Object, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+    def get(keys: String, callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: js.Object, callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
     
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
@@ -136,10 +136,10 @@ object storage {
   trait StorageChange extends StObject {
     
     /** The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
   }
   object StorageChange {
     
@@ -150,11 +150,11 @@ object storage {
     
     extension [Self <: StorageChange](x: Self) {
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }

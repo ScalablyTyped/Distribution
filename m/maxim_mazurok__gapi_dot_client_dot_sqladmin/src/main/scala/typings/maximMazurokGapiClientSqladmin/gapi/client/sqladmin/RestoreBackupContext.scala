@@ -12,7 +12,7 @@ trait RestoreBackupContext extends StObject {
   /** The ID of the instance that the backup was taken from. */
   var instanceId: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#restoreBackupContext*. */
+  /** This is always `sql#restoreBackupContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The full project ID of the source instance. */

@@ -1,26 +1,30 @@
 package typings.materialUiLab
 
+import org.scalablytyped.runtime.Shortcut
+import typings.materialUiCore.overridableComponentMod.OverridableComponent
+import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.materialUiLab.anon.Color
+import typings.materialUiLab.materialUiLabStrings.div
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object paginationItemPaginationItemMod {
+object paginationItemPaginationItemMod extends Shortcut {
   
   /**
     *
     * Demos:
     *
-    * - [Pagination](https://material-ui.com/components/pagination/)
+    * - [Pagination](https://mui.com/components/pagination/)
     *
     * API:
     *
-    * - [PaginationItem API](https://material-ui.com/api/pagination-item/)
+    * - [PaginationItem API](https://mui.com/api/pagination-item/)
     */
   @JSImport("@material-ui/lab/PaginationItem/PaginationItem", JSImport.Default)
   @js.native
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<PaginationItemTypeMap> */ js.Any = js.native
+  val default: OverridableComponent[PaginationItemTypeMap[js.Object, div]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.root
@@ -73,9 +77,9 @@ object paginationItemPaginationItemMod {
     inline def textSecondary: typings.materialUiLab.materialUiLabStrings.textSecondary = "textSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textSecondary]
   }
   
-  type PaginationItemProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<PaginationItemTypeMap<P, D>, D> */ js.Any
+  type PaginationItemProps[D /* <: ElementType[Any] */, P] = OverrideProps[PaginationItemTypeMap[P, D], D]
   
-  trait PaginationItemTypeMap[P, D /* <: ElementType[js.Any] */] extends StObject {
+  trait PaginationItemTypeMap[P, D /* <: ElementType[Any] */] extends StObject {
     
     var classKey: PaginationItemClassKey
     
@@ -85,12 +89,12 @@ object paginationItemPaginationItemMod {
   }
   object PaginationItemTypeMap {
     
-    inline def apply[P, D /* <: ElementType[js.Any] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P & Color): PaginationItemTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType[Any] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P & Color): PaginationItemTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationItemTypeMap[P, D]]
     }
     
-    extension [Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[js.Any] */](x: Self & (PaginationItemTypeMap[P, D])) {
+    extension [Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (PaginationItemTypeMap[P, D])) {
       
       inline def setClassKey(value: PaginationItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       
@@ -99,4 +103,9 @@ object paginationItemPaginationItemMod {
       inline def setProps(value: P & Color): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = OverridableComponent[PaginationItemTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `paginationItemPaginationItemMod.foo` */
+  override def _to: OverridableComponent[PaginationItemTypeMap[js.Object, div]] = default
 }

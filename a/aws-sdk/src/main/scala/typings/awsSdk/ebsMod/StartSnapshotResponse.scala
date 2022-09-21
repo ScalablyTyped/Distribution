@@ -17,12 +17,12 @@ trait StartSnapshotResponse extends StObject {
   var Description: js.UndefOr[typings.awsSdk.ebsMod.Description] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) used to encrypt the snapshot.
+    * The Amazon Resource Name (ARN) of the Key Management Service (KMS) key used to encrypt the snapshot.
     */
   var KmsKeyArn: js.UndefOr[typings.awsSdk.ebsMod.KmsKeyArn] = js.undefined
   
   /**
-    * The AWS account ID of the snapshot owner.
+    * The Amazon Web Services account ID of the snapshot owner.
     */
   var OwnerId: js.UndefOr[typings.awsSdk.ebsMod.OwnerId] = js.undefined
   
@@ -39,7 +39,7 @@ trait StartSnapshotResponse extends StObject {
   /**
     * The timestamp when the snapshot was created.
     */
-  var StartTime: js.UndefOr[TimeStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the snapshot.
@@ -89,7 +89,7 @@ object StartSnapshotResponse {
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -101,7 +101,7 @@ object StartSnapshotResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVolumeSize(value: VolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     

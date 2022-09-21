@@ -1,7 +1,7 @@
 
 # Scala.js typings for stackframe
 
-Typings are for version 1.2.0
+Typings are for version 1.3.4
 
 ## Library description:
 JS Object representation of a stack frame
@@ -10,10 +10,10 @@ JS Object representation of a stack frame
 | ------------------ | :-------------: |
 | Full name          | stackframe |
 | Keywords           | stacktrace, error, debugger, stack frame |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 150595290 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1793178E7 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://www.stacktracejs.com)

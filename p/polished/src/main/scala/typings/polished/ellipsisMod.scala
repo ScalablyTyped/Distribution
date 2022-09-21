@@ -13,5 +13,10 @@ object ellipsisMod {
   
   inline def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
   inline def default(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(width: String, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
   inline def default(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(width: Double, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(width: Null, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(width: Unit): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(width: Unit, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
 }

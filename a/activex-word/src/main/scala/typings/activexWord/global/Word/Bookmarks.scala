@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Bookmarks")
 @js.native
-/* private */ class Bookmarks ()
+/* private */ open class Bookmarks ()
   extends StObject
      with typings.activexWord.Word.Bookmarks

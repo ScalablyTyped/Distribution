@@ -17,6 +17,6 @@ object utilsMod {
   {[ K in keyof T ]: T[K]}
     */ typings.expressValidator.expressValidatorStrings.bindAll & TopLevel[T]]
   
-  inline def toString_(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toString_(value: js.Any, deep: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toString_(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(value: Any, deep: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[String]
 }

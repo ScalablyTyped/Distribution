@@ -33,6 +33,6 @@ object ListRecipesResponse {
     
     inline def setRecipesUndefined: Self = StObject.set(x, "recipes", js.undefined)
     
-    inline def setRecipesVarargs(value: RecipeSummary*): Self = StObject.set(x, "recipes", js.Array(value :_*))
+    inline def setRecipesVarargs(value: RecipeSummary*): Self = StObject.set(x, "recipes", js.Array(value*))
   }
 }

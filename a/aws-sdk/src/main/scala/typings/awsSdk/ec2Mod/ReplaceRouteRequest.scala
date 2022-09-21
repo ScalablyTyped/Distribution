@@ -12,6 +12,11 @@ trait ReplaceRouteRequest extends StObject {
   var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the core network.
+    */
+  var CoreNetworkArn: js.UndefOr[typings.awsSdk.ec2Mod.CoreNetworkArn] = js.undefined
+  
+  /**
     * The IPv4 CIDR address block used for the destination match. The value that you provide must match the CIDR of an existing route in the table.
     */
   var DestinationCidrBlock: js.UndefOr[String] = js.undefined
@@ -98,6 +103,10 @@ object ReplaceRouteRequest {
     inline def setCarrierGatewayId(value: CarrierGatewayId): Self = StObject.set(x, "CarrierGatewayId", value.asInstanceOf[js.Any])
     
     inline def setCarrierGatewayIdUndefined: Self = StObject.set(x, "CarrierGatewayId", js.undefined)
+    
+    inline def setCoreNetworkArn(value: CoreNetworkArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkArnUndefined: Self = StObject.set(x, "CoreNetworkArn", js.undefined)
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object poolMod {
   
   @JSImport("material-ui/svg-icons/places/pool", JSImport.Default)
   @js.native
-  class default () extends PlacesPool
+  open class default () extends PlacesPool
   
   @JSImport("material-ui/svg-icons/places/pool", "PlacesPool")
   @js.native
-  class PlacesPool ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesPool ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object indexMapMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/IndexMap", "IndexMap")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/IndexMap", "IndexMap")
   @js.native
-  class IndexMap protected () extends StObject {
+  open class IndexMap protected () extends StObject {
     def this(
       indexes_ : StringDictionary[(SortedMap[NamedNode, Node]) | (/*FallbackType*/ js.Object)],
       indexSet_ : StringDictionary[Index]
@@ -30,9 +30,9 @@ object indexMapMod {
     
     def hasIndex(indexDefinition: Index): Boolean = js.native
     
-    /* private */ var indexSet_ : js.Any = js.native
+    /* private */ var indexSet_ : Any = js.native
     
-    /* private */ var indexes_ : js.Any = js.native
+    /* private */ var indexes_ : Any = js.native
     
     /**
       * Create a new IndexMap instance with the given value removed

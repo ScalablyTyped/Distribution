@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object resolvePackagePathMod {
   
   inline def apply(
-    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any
+    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ Any
   ): String | Null = ^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   inline def apply(
-    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
+    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ Any,
     name: String
   ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   inline def apply(
-    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
+    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ Any,
     name: String,
     dir: String
   ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   inline def apply(
-    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
+    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ Any,
     name: Unit,
     dir: String
   ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
@@ -34,6 +34,12 @@ object resolvePackagePathMod {
   def findPackagePath: js.Function3[/* realFilePathCache */ Cache, /* name */ String, /* dir */ String, String | Null] = js.native
   
   inline def findPackagePath_=(x: js.Function3[/* realFilePathCache */ Cache, /* name */ String, /* dir */ String, String | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findPackagePath")(x.asInstanceOf[js.Any])
+  
+  @JSImport("resolve-package-path/lib/resolve-package-path", "_findUpPackagePath")
+  @js.native
+  def findUpPackagePath: js.Function2[/* findUpCache */ Cache, /* initialSearchDir */ String, String | Null] = js.native
+  
+  inline def findUpPackagePath_=(x: js.Function2[/* findUpCache */ Cache, /* initialSearchDir */ String, String | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findUpPackagePath")(x.asInstanceOf[js.Any])
   
   @JSImport("resolve-package-path/lib/resolve-package-path", "_getRealDirectoryPath")
   @js.native

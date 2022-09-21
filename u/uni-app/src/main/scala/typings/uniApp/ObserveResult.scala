@@ -19,7 +19,7 @@ trait ObserveResult extends StObject {
   /**
     * 相交区域的边界
     */
-  var intersectionRect: js.UndefOr[js.Any] = js.undefined
+  var intersectionRect: js.UndefOr[Any] = js.undefined
   
   /**
     * 参照区域的边界
@@ -48,7 +48,7 @@ object ObserveResult {
     
     inline def setIntersectionRatioUndefined: Self = StObject.set(x, "intersectionRatio", js.undefined)
     
-    inline def setIntersectionRect(value: js.Any): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
+    inline def setIntersectionRect(value: Any): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
     inline def setIntersectionRectUndefined: Self = StObject.set(x, "intersectionRect", js.undefined)
     

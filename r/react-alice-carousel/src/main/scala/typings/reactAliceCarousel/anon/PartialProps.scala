@@ -2,6 +2,7 @@ package typings.reactAliceCarousel.anon
 
 import typings.reactAliceCarousel.reactAliceCarouselStrings.action
 import typings.reactAliceCarousel.reactAliceCarouselStrings.all
+import typings.reactAliceCarousel.reactAliceCarouselStrings.alternate
 import typings.reactAliceCarousel.reactAliceCarouselStrings.default
 import typings.reactAliceCarousel.reactAliceCarouselStrings.fadeout
 import typings.reactAliceCarousel.reactAliceCarouselStrings.ltr
@@ -13,9 +14,11 @@ import typings.reactAliceCarousel.typesMod.AnimationType
 import typings.reactAliceCarousel.typesMod.AutoPlayStrategy
 import typings.reactAliceCarousel.typesMod.AutoplayDirection
 import typings.reactAliceCarousel.typesMod.ControlsStrategy
+import typings.reactAliceCarousel.typesMod.DotsItem
 import typings.reactAliceCarousel.typesMod.EventObject
 import typings.reactAliceCarousel.typesMod.Responsive
 import typings.reactAliceCarousel.typesMod.RootElement
+import typings.reactAliceCarousel.typesMod.SlideInfo
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,9 +49,9 @@ trait PartialProps extends StObject {
   
   var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
-  var controlsStrategy: js.UndefOr[default | responsive | ControlsStrategy] = js.undefined
+  var controlsStrategy: js.UndefOr[default | responsive | alternate | String | ControlsStrategy] = js.undefined
   
   var disableButtonsControls: js.UndefOr[Boolean] = js.undefined
   
@@ -58,9 +61,15 @@ trait PartialProps extends StObject {
   
   var infinite: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var innerWidth: js.UndefOr[Double] = js.undefined
+  
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   var mouseTracking: js.UndefOr[Boolean] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
   
   var onInitialized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
@@ -80,7 +89,21 @@ trait PartialProps extends StObject {
   
   var preservePosition: js.UndefOr[Boolean] = js.undefined
   
+  var renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, Any]] = js.undefined
+  
+  var renderKey: js.UndefOr[Double] = js.undefined
+  
+  var renderNextButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+  
+  var renderPlayPauseButton: js.UndefOr[js.Function1[/* hasIsPlaying */ IsPlaying, Any]] = js.undefined
+  
+  var renderPrevButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+  
+  var renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, Any]] = js.undefined
+  
   var responsive: js.UndefOr[Responsive] = js.undefined
+  
+  var ssrSilentMode: js.UndefOr[Boolean] = js.undefined
   
   var swipeDelta: js.UndefOr[Double] = js.undefined
   
@@ -143,11 +166,11 @@ object PartialProps {
     
     inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setControlsStrategy(value: default | responsive | ControlsStrategy): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
+    inline def setControlsStrategy(value: default | responsive | alternate | String | ControlsStrategy): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
     
     inline def setControlsStrategyUndefined: Self = StObject.set(x, "controlsStrategy", js.undefined)
     
@@ -167,15 +190,27 @@ object PartialProps {
     
     inline def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setKeyboardNavigation(value: Boolean): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
     inline def setMouseTracking(value: Boolean): Self = StObject.set(x, "mouseTracking", value.asInstanceOf[js.Any])
     
     inline def setMouseTrackingUndefined: Self = StObject.set(x, "mouseTracking", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOnInitialized(value: /* e */ EventObject => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
     
@@ -209,9 +244,37 @@ object PartialProps {
     
     inline def setPreservePositionUndefined: Self = StObject.set(x, "preservePosition", js.undefined)
     
+    inline def setRenderDotsItem(value: /* e */ DotsItem => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
+    
+    inline def setRenderDotsItemUndefined: Self = StObject.set(x, "renderDotsItem", js.undefined)
+    
+    inline def setRenderKey(value: Double): Self = StObject.set(x, "renderKey", value.asInstanceOf[js.Any])
+    
+    inline def setRenderKeyUndefined: Self = StObject.set(x, "renderKey", js.undefined)
+    
+    inline def setRenderNextButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+    
+    inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
+    
+    inline def setRenderPlayPauseButton(value: /* hasIsPlaying */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+    
+    inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
+    
+    inline def setRenderPrevButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+    
+    inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
+    
+    inline def setRenderSlideInfo(value: /* e */ SlideInfo => Any): Self = StObject.set(x, "renderSlideInfo", js.Any.fromFunction1(value))
+    
+    inline def setRenderSlideInfoUndefined: Self = StObject.set(x, "renderSlideInfo", js.undefined)
+    
     inline def setResponsive(value: Responsive): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setSsrSilentMode(value: Boolean): Self = StObject.set(x, "ssrSilentMode", value.asInstanceOf[js.Any])
+    
+    inline def setSsrSilentModeUndefined: Self = StObject.set(x, "ssrSilentMode", js.undefined)
     
     inline def setSwipeDelta(value: Double): Self = StObject.set(x, "swipeDelta", value.asInstanceOf[js.Any])
     

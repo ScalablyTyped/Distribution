@@ -1,7 +1,6 @@
 package typings.highland
 
 import typings.highland.Highland.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +16,13 @@ object global {
     // TODO is this public?
     @JSGlobal("Highland.StreamError")
     @js.native
-    class StreamError protected ()
+    open class StreamError protected ()
       extends StObject
          with typings.highland.Highland.StreamError {
-      def this(err: Error) = this()
+      def this(err: js.Error) = this()
       
       /* CompleteClass */
-      var error: Error = js.native
+      var error: js.Error = js.native
     }
     
     /**
@@ -32,7 +31,7 @@ object global {
     // TODO is this public?
     @JSGlobal("Highland.StreamRedirect")
     @js.native
-    class StreamRedirect[R] protected ()
+    open class StreamRedirect[R] protected ()
       extends StObject
          with typings.highland.Highland.StreamRedirect[R] {
       def this(to: Stream[R]) = this()

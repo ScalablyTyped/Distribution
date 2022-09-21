@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Specifies the host Office application in which the add-in is running.
+  * 
+  * @remarks
+  * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
   */
 @JSGlobal("Office.HostType")
 @js.native

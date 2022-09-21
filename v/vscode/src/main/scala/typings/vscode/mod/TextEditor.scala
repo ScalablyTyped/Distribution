@@ -17,11 +17,11 @@ trait TextEditor extends StObject {
   /**
     * Perform an edit on the document associated with this text editor.
     *
-    * The given callback-function is invoked with an [edit-builder](#TextEditorEdit) which must
+    * The given callback-function is invoked with an {@link TextEditorEdit edit-builder} which must
     * be used to make edits. Note that the edit-builder is only valid while the
     * callback executes.
     *
-    * @param callback A function which can create edits using an [edit-builder](#TextEditorEdit).
+    * @param callback A function which can create edits using an {@link TextEditorEdit edit-builder}.
     * @param options The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
     * @return A promise that resolves with a value indicating if the edits could be applied.
     */
@@ -37,7 +37,7 @@ trait TextEditor extends StObject {
   def hide(): Unit = js.native
   
   /**
-    * Insert a [snippet](#SnippetString) and put the editor into snippet mode. "Snippet mode"
+    * Insert a {@link SnippetString snippet} and put the editor into snippet mode. "Snippet mode"
     * means the editor adds placeholders and additional cursors so that the user can complete
     * or accept the snippet.
     *
@@ -82,21 +82,23 @@ trait TextEditor extends StObject {
   
   /**
     * Adds a set of decorations to the text editor. If a set of decorations already exists with
-    * the given [decoration type](#TextEditorDecorationType), they will be replaced.
+    * the given {@link TextEditorDecorationType decoration type}, they will be replaced. If
+    * `rangesOrOptions` is empty, the existing decorations with the given {@link TextEditorDecorationType decoration type}
+    * will be removed.
     *
-    * @see [createTextEditorDecorationType](#window.createTextEditorDecorationType).
+    * @see {@link window.createTextEditorDecorationType createTextEditorDecorationType}.
     *
     * @param decorationType A decoration type.
-    * @param rangesOrOptions Either [ranges](#Range) or more detailed [options](#DecorationOptions).
+    * @param rangesOrOptions Either {@link Range ranges} or more detailed {@link DecorationOptions options}.
     */
   def setDecorations(decorationType: TextEditorDecorationType, rangesOrOptions: js.Array[DecorationOptions | Range]): Unit = js.native
   
   /**
     * Show the text editor.
     *
-    * @deprecated Use [window.showTextDocument](#window.showTextDocument) instead.
+    * @deprecated Use {@link window.showTextDocument} instead.
     *
-    * @param column The [column](#ViewColumn) in which to show this editor.
+    * @param column The {@link ViewColumn column} in which to show this editor.
     * This method shows unexpected behavior and will be removed in the next major update.
     */
   def show(): Unit = js.native

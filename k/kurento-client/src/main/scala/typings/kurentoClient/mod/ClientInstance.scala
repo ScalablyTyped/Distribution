@@ -13,7 +13,9 @@ trait ClientInstance extends StObject {
   def close(): Unit = js.native
   
   def create(`type`: String): js.Promise[MediaElement] = js.native
-  def create(`type`: String, options: Record[String, js.Any]): js.Promise[MediaElement] = js.native
+  def create(`type`: String, options: Record[String, Any]): js.Promise[MediaElement] = js.native
+  @JSName("create")
+  def create_Composite(`type`: typings.kurentoClient.kurentoClientStrings.Composite): js.Promise[Composite] = js.native
   @JSName("create")
   def create_MediaPipeline(`type`: typings.kurentoClient.kurentoClientStrings.MediaPipeline): js.Promise[MediaPipeline] = js.native
   @JSName("create")
@@ -26,11 +28,16 @@ trait ClientInstance extends StObject {
     options: RecorderEndpointOptions
   ): js.Promise[RecorderEndpoint] = js.native
   @JSName("create")
+  def create_RtpEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.RtpEndpoint): js.Promise[RtpEndpoint] = js.native
+  @JSName("create")
+  def create_RtpEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.RtpEndpoint, options: RtpEndpointOptions): js.Promise[RtpEndpoint] = js.native
+  @JSName("create")
   def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint): js.Promise[WebRtcEndpoint] = js.native
   @JSName("create")
   def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint, options: UseDataChannels): js.Promise[WebRtcEndpoint] = js.native
   
-  def getMediaobjectById(objectId: String): js.Promise[MediaPipeline | WebRtcEndpoint | RecorderEndpoint] = js.native
+  // tslint:disable-next-line
+  def getMediaobjectById[T /* <: MediaObject */](objectId: String): js.Promise[T] = js.native
   
   def getServerManager(): js.Promise[ServerManager] = js.native
   def getServerManager(callback: Callback[ServerManager]): js.Promise[ServerManager] = js.native

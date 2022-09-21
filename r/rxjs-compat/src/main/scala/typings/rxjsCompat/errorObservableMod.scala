@@ -9,7 +9,7 @@ object errorObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/ErrorObservable", "ErrorObservable")
   @js.native
-  class ErrorObservable[T] () extends StObject
+  open class ErrorObservable[T] () extends StObject
   /* static members */
   object ErrorObservable {
     
@@ -17,10 +17,10 @@ object errorObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](error: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](error: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[T](
-      error: js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      error: Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

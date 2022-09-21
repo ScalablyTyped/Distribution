@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response to a batch get contact groups request.
-  */
 trait SchemaBatchGetContactGroupsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBatchGetContactGroupsResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: SchemaContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

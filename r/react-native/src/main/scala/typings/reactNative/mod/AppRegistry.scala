@@ -22,7 +22,10 @@ object AppRegistry {
   
   inline def registerRunnable(appKey: String, func: Runnable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRunnable")(appKey.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def runApplication(appKey: String, appParameters: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runApplication")(appKey.asInstanceOf[js.Any], appParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def runApplication(appKey: String, appParameters: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runApplication")(appKey.asInstanceOf[js.Any], appParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setSurfaceProps(appKey: String, appParameters: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSurfaceProps")(appKey.asInstanceOf[js.Any], appParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSurfaceProps(appKey: String, appParameters: Any, displayMode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSurfaceProps")(appKey.asInstanceOf[js.Any], appParameters.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def unmountApplicationComponentAtRootTag(rootTag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountApplicationComponentAtRootTag")(rootTag.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

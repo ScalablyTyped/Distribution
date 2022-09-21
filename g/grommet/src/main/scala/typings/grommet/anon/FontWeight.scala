@@ -1,9 +1,11 @@
 package typings.grommet.anon
 
+import typings.grommet.anchorMod.AnchorExtendedProps
 import typings.grommet.baseMod.ExtendProps
 import typings.grommet.baseMod.ExtendType
 import typings.grommet.baseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.PropsOf
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
@@ -14,9 +16,11 @@ trait FontWeight extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[PropsOf[FC[AnchorExtendedProps]]]] = js.undefined
   
   var fontWeight: js.UndefOr[Double] = js.undefined
+  
+  var gap: js.UndefOr[GapType] = js.undefined
   
   var hover: js.UndefOr[TextDecoration] = js.undefined
   
@@ -35,10 +39,10 @@ object FontWeight {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setExtend(value: ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[PropsOf[FC[AnchorExtendedProps]]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     inline def setExtendFunction1(
-      value: /* props */ ExtendProps[PropsOf[FC[AnchorPropsOmitDetailedHT]]] => ExtendValue[PropsOf[FC[AnchorPropsOmitDetailedHT]]]
+      value: /* props */ ExtendProps[PropsOf[FC[AnchorExtendedProps]]] => ExtendValue[PropsOf[FC[AnchorExtendedProps]]]
     ): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
@@ -46,6 +50,10 @@ object FontWeight {
     inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
     inline def setHover(value: TextDecoration): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

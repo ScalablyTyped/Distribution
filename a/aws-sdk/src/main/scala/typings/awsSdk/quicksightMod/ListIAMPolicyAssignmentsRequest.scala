@@ -12,7 +12,7 @@ trait ListIAMPolicyAssignmentsRequest extends StObject {
   var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
-    * The ID of the AWS account that contains these IAM policy assignments.
+    * The ID of the Amazon Web Services account that contains these IAM policy assignments.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

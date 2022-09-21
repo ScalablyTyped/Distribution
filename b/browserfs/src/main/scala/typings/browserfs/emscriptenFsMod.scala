@@ -2,8 +2,6 @@ package typings.browserfs
 
 import typings.browserfs.anon.Opts
 import typings.browserfs.anon.`0`
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,23 +10,23 @@ object emscriptenFsMod {
   
   @JSImport("browserfs/dist/node/generic/emscripten_fs", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BFSEmscriptenFS {
-    def this(_FS: js.Any) = this()
-    def this(_FS: js.Any, _PATH: js.Any) = this()
-    def this(_FS: Unit, _PATH: js.Any) = this()
-    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
-    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
-    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Any) = this()
+    def this(_FS: Any, _PATH: Any) = this()
+    def this(_FS: Unit, _PATH: Any) = this()
+    def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Any) = this()
+    def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Any) = this()
+    def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Any) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Any) = this()
+    def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Any, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
+    def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Any, nodefs: typings.browserfs.fSMod.default) = this()
     def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: typings.browserfs.fSMod.default) = this()
   }
   
@@ -37,36 +35,36 @@ object emscriptenFsMod {
     extends StObject
        with EmscriptenFS {
     
-    /* private */ var ERRNO_CODES: js.Any = js.native
+    /* private */ var ERRNO_CODES: Any = js.native
     
-    /* private */ var FS: js.Any = js.native
+    /* private */ var FS: Any = js.native
     
-    /* private */ var PATH: js.Any = js.native
+    /* private */ var PATH: Any = js.native
     
     def createNode(parent: Null, name: String, mode: Double): EmscriptenFSNode = js.native
-    def createNode(parent: Null, name: String, mode: Double, dev: js.Any): EmscriptenFSNode = js.native
+    def createNode(parent: Null, name: String, mode: Double, dev: Any): EmscriptenFSNode = js.native
     
     def flagsToPermissionString(flags: String): String = js.native
     def flagsToPermissionString(flags: Double): String = js.native
     
     var flagsToPermissionStringMap: `0` = js.native
     
-    def getERRNO_CODES(): js.Any = js.native
+    def getERRNO_CODES(): Any = js.native
     
-    def getFS(): js.Any = js.native
+    def getFS(): Any = js.native
     
     def getNodeFS(): typings.browserfs.fSMod.default = js.native
     
-    def getPATH(): js.Any = js.native
+    def getPATH(): Any = js.native
     
-    /* private */ var nodefs: js.Any = js.native
+    /* private */ var nodefs: Any = js.native
   }
   
   @js.native
   trait EmscriptenFS extends StObject {
     
     def createNode(parent: EmscriptenFSNode, name: String, mode: Double): EmscriptenFSNode = js.native
-    def createNode(parent: EmscriptenFSNode, name: String, mode: Double, dev: js.Any): EmscriptenFSNode = js.native
+    def createNode(parent: EmscriptenFSNode, name: String, mode: Double, dev: Any): EmscriptenFSNode = js.native
     
     def getMode(path: String): Double = js.native
     
@@ -129,7 +127,7 @@ object emscriptenFsMod {
     
     def lookup(parent: EmscriptenFSNode, name: String): EmscriptenFSNode
     
-    def mknod(parent: EmscriptenFSNode, name: String, mode: Double, dev: js.Any): EmscriptenFSNode
+    def mknod(parent: EmscriptenFSNode, name: String, mode: Double, dev: Any): EmscriptenFSNode
     
     def readdir(node: EmscriptenFSNode): js.Array[String]
     
@@ -150,7 +148,7 @@ object emscriptenFsMod {
     inline def apply(
       getattr: EmscriptenFSNode => Stats,
       lookup: (EmscriptenFSNode, String) => EmscriptenFSNode,
-      mknod: (EmscriptenFSNode, String, Double, js.Any) => EmscriptenFSNode,
+      mknod: (EmscriptenFSNode, String, Double, Any) => EmscriptenFSNode,
       readdir: EmscriptenFSNode => js.Array[String],
       readlink: EmscriptenFSNode => String,
       rename: (EmscriptenFSNode, EmscriptenFSNode, String) => Unit,
@@ -169,7 +167,7 @@ object emscriptenFsMod {
       
       inline def setLookup(value: (EmscriptenFSNode, String) => EmscriptenFSNode): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
       
-      inline def setMknod(value: (EmscriptenFSNode, String, Double, js.Any) => EmscriptenFSNode): Self = StObject.set(x, "mknod", js.Any.fromFunction4(value))
+      inline def setMknod(value: (EmscriptenFSNode, String, Double, Any) => EmscriptenFSNode): Self = StObject.set(x, "mknod", js.Any.fromFunction4(value))
       
       inline def setReaddir(value: EmscriptenFSNode => js.Array[String]): Self = StObject.set(x, "readdir", js.Any.fromFunction1(value))
       
@@ -191,7 +189,7 @@ object emscriptenFsMod {
     
     var flags: String
     
-    var nfd: js.Any
+    var nfd: Any
     
     var node: EmscriptenFSNode
     
@@ -199,7 +197,7 @@ object emscriptenFsMod {
   }
   object EmscriptenStream {
     
-    inline def apply(flags: String, nfd: js.Any, node: EmscriptenFSNode, position: Double): EmscriptenStream = {
+    inline def apply(flags: String, nfd: Any, node: EmscriptenFSNode, position: Double): EmscriptenStream = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], nfd = nfd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmscriptenStream]
     }
@@ -208,7 +206,7 @@ object emscriptenFsMod {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setNfd(value: js.Any): Self = StObject.set(x, "nfd", value.asInstanceOf[js.Any])
+      inline def setNfd(value: Any): Self = StObject.set(x, "nfd", value.asInstanceOf[js.Any])
       
       inline def setNode(value: EmscriptenFSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -224,9 +222,21 @@ object emscriptenFsMod {
     
     def open(stream: EmscriptenStream): Unit
     
-    def read(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double
+    def read(
+      stream: EmscriptenStream,
+      buffer: js.typedarray.Uint8Array,
+      offset: Double,
+      length: Double,
+      position: Double
+    ): Double
     
-    def write(stream: EmscriptenStream, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double
+    def write(
+      stream: EmscriptenStream,
+      buffer: js.typedarray.Uint8Array,
+      offset: Double,
+      length: Double,
+      position: Double
+    ): Double
   }
   object EmscriptenStreamOps {
     
@@ -234,8 +244,8 @@ object emscriptenFsMod {
       close: EmscriptenStream => Unit,
       llseek: (EmscriptenStream, Double, Double) => Double,
       open: EmscriptenStream => Unit,
-      read: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double,
-      write: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double
+      read: (EmscriptenStream, js.typedarray.Uint8Array, Double, Double, Double) => Double,
+      write: (EmscriptenStream, js.typedarray.Uint8Array, Double, Double, Double) => Double
     ): EmscriptenStreamOps = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), llseek = js.Any.fromFunction3(llseek), open = js.Any.fromFunction1(open), read = js.Any.fromFunction5(read), write = js.Any.fromFunction5(write))
       __obj.asInstanceOf[EmscriptenStreamOps]
@@ -249,21 +259,21 @@ object emscriptenFsMod {
       
       inline def setOpen(value: EmscriptenStream => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      inline def setRead(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction5(value))
+      inline def setRead(value: (EmscriptenStream, js.typedarray.Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction5(value))
       
-      inline def setWrite(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
+      inline def setWrite(value: (EmscriptenStream, js.typedarray.Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
     }
   }
   
   trait Stats extends StObject {
     
-    var atime: Date
+    var atime: js.Date
     
     var blksize: Double
     
     var blocks: Double
     
-    var ctime: Date
+    var ctime: js.Date
     
     var dev: Double
     
@@ -273,7 +283,7 @@ object emscriptenFsMod {
     
     var mode: Double
     
-    var mtime: Date
+    var mtime: js.Date
     
     var nlink: Double
     
@@ -288,15 +298,15 @@ object emscriptenFsMod {
   object Stats {
     
     inline def apply(
-      atime: Date,
+      atime: js.Date,
       blksize: Double,
       blocks: Double,
-      ctime: Date,
+      ctime: js.Date,
       dev: Double,
       gid: Double,
       ino: Double,
       mode: Double,
-      mtime: Date,
+      mtime: js.Date,
       nlink: Double,
       rdev: Double,
       size: Double,
@@ -308,13 +318,13 @@ object emscriptenFsMod {
     
     extension [Self <: Stats](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -324,7 +334,7 @@ object emscriptenFsMod {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       

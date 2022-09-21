@@ -10,9 +10,9 @@ This plugin is used to fix elements on the page (top, bottom, anywhere); however
 | Full name          | scrolltofixed |
 | Keywords           | scroll, fixed, jquery |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 50231 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6382.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/bigspotteddog/ScrollToFixed)

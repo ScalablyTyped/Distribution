@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InputFieldGroupConstructor
   extends StObject
-     with Instantiable0[InputFieldGroup]
+     with /**
+  * This is a read-only support class that represents a group of input fields.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html)
+  */
+Instantiable0[InputFieldGroup]
      with Instantiable1[/* properties */ InputFieldGroupProperties, InputFieldGroup]

@@ -2,13 +2,19 @@ package typings.reactModal
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactModal.anon.Content
+import typings.reactModal.reactModalStrings.div
 import typings.std.Element
+import typings.std.HTMLCollection
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +23,7 @@ object mod {
   
   @JSImport("react-modal", JSImport.Namespace)
   @js.native
-  class ^ () extends ReactModal
+  open class ^ () extends ReactModal
   @JSImport("react-modal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -126,7 +132,7 @@ object mod {
   trait Props extends StObject {
     
     /* Set this to properly hide your application from assistive screenreaders and other assistive technologies while the modal is open. */
-    var appElement: js.UndefOr[HTMLElement | js.Object] = js.undefined
+    var appElement: js.UndefOr[HTMLElement | js.Array[HTMLElement] | HTMLCollection | NodeList] = js.undefined
     
     /* Additional aria attributes. */
     var aria: js.UndefOr[Aria] = js.undefined
@@ -137,11 +143,18 @@ object mod {
     /* String className to be applied to the document.body (must be a constant string). When set to null it doesn't add any class to document.body. */
     var bodyOpenClassName: js.UndefOr[String | Null] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /* String or object className to be applied to the modal content. */
     var className: js.UndefOr[String | Classes] = js.undefined
     
     /* Number indicating the milliseconds to wait before closing the modal. Defaults to zero (no timeout). */
     var closeTimeoutMS: js.UndefOr[Double] = js.undefined
+    
+    /* Custom Content element. */
+    var contentElement: js.UndefOr[
+        js.Function2[/* props */ ComponentPropsWithRef[div], /* children */ ReactNode, ReactElement]
+      ] = js.undefined
     
     /* String indicating how the content container should be announced to screenreaders. */
     var contentLabel: js.UndefOr[String] = js.undefined
@@ -150,7 +163,7 @@ object mod {
     var contentRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.undefined
     
     /* Additional data attributes to be applied to to the modal content in the form of "data-*" */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /* String className to be applied to the document.html (must be a constant string). Defaults to null. */
     var htmlOpenClassName: js.UndefOr[String | Null] = js.undefined
@@ -175,6 +188,11 @@ object mod {
     /* String or object className to be applied to the overlay. */
     var overlayClassName: js.UndefOr[String | Classes] = js.undefined
     
+    /* Custom Overlay element. */
+    var overlayElement: js.UndefOr[
+        js.Function2[/* props */ ComponentPropsWithRef[div], /* contentEl */ ReactElement, ReactElement]
+      ] = js.undefined
+    
     /* Function accepting the ref for the overlay */
     var overlayRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.undefined
     
@@ -183,6 +201,9 @@ object mod {
     
     /* String className to be applied to the portal. Defaults to "ReactModalPortal". */
     var portalClassName: js.UndefOr[String] = js.undefined
+    
+    /* Boolean indicating if the modal should use the preventScroll flag when restoring focus to the element that had focus prior to its display. */
+    var preventScroll: js.UndefOr[Boolean] = js.undefined
     
     /* String indicating the role of the modal, allowing the 'dialog' role to be applied if desired. Defaults to "dialog". */
     var role: js.UndefOr[String | Null] = js.undefined
@@ -214,9 +235,11 @@ object mod {
     
     extension [Self <: Props](x: Self) {
       
-      inline def setAppElement(value: HTMLElement | js.Object): Self = StObject.set(x, "appElement", value.asInstanceOf[js.Any])
+      inline def setAppElement(value: HTMLElement | js.Array[HTMLElement] | HTMLCollection | NodeList): Self = StObject.set(x, "appElement", value.asInstanceOf[js.Any])
       
       inline def setAppElementUndefined: Self = StObject.set(x, "appElement", js.undefined)
+      
+      inline def setAppElementVarargs(value: HTMLElement*): Self = StObject.set(x, "appElement", js.Array(value*))
       
       inline def setAria(value: Aria): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
@@ -232,6 +255,10 @@ object mod {
       
       inline def setBodyOpenClassNameUndefined: Self = StObject.set(x, "bodyOpenClassName", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String | Classes): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -239,6 +266,10 @@ object mod {
       inline def setCloseTimeoutMS(value: Double): Self = StObject.set(x, "closeTimeoutMS", value.asInstanceOf[js.Any])
       
       inline def setCloseTimeoutMSUndefined: Self = StObject.set(x, "closeTimeoutMS", js.undefined)
+      
+      inline def setContentElement(value: (/* props */ ComponentPropsWithRef[div], /* children */ ReactNode) => ReactElement): Self = StObject.set(x, "contentElement", js.Any.fromFunction2(value))
+      
+      inline def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
       
       inline def setContentLabel(value: String): Self = StObject.set(x, "contentLabel", value.asInstanceOf[js.Any])
       
@@ -248,7 +279,7 @@ object mod {
       
       inline def setContentRefUndefined: Self = StObject.set(x, "contentRef", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -280,6 +311,10 @@ object mod {
       
       inline def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
       
+      inline def setOverlayElement(value: (/* props */ ComponentPropsWithRef[div], /* contentEl */ ReactElement) => ReactElement): Self = StObject.set(x, "overlayElement", js.Any.fromFunction2(value))
+      
+      inline def setOverlayElementUndefined: Self = StObject.set(x, "overlayElement", js.undefined)
+      
       inline def setOverlayRef(value: /* instance */ HTMLDivElement => Unit): Self = StObject.set(x, "overlayRef", js.Any.fromFunction1(value))
       
       inline def setOverlayRefUndefined: Self = StObject.set(x, "overlayRef", js.undefined)
@@ -291,6 +326,10 @@ object mod {
       inline def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
       
       inline def setPortalClassNameUndefined: Self = StObject.set(x, "portalClassName", js.undefined)
+      
+      inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -326,7 +365,7 @@ object mod {
   
   @js.native
   trait ReactModal
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
     var portal: Null | Content = js.native
   }

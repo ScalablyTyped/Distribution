@@ -6,48 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(input: js.Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
-  inline def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  /**
-  Parse yes/no like values.
-  The following case-insensitive values are recognized: `'y', 'yes', 'true', true, '1', 1, 'n', 'no', 'false', false, '0', 0`, 'on', 'off'
-  @param input - Value that should be converted.
-  @returns The parsed input if it can be parsed or the default value defined in the `default` option.
-  @example
-  ```
-  import yn = require('yn');
-  yn('y');
-  //=> true
-  yn('NO');
-  //=> false
-  yn(true);
-  //=> true
-  yn('abomasum');
-  //=> undefined
-  yn('abomasum', {default: false});
-  //=> false
-  yn('mo', {lenient: true});
-  //=> false
-  ```
-  */
-  inline def apply(input: js.Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   @JSImport("yn", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(input: Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def default(input: Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def default(input: Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait Options extends StObject {
     
     /**
-    		Default value if no match was found.
-    		@default undefined
-    		*/
+    	The default value if no match was found.
+    	@default undefined
+    	*/
     val default: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Use a key distance-based score to leniently accept typos of `yes` and `no`.
-    		@default false
-    		*/
+    	Use a key distance-based score to leniently accept typos of `yes` and `no`.
+    	@default false
+    	*/
     val lenient: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -74,7 +52,7 @@ object mod {
        with Options {
     
     @JSName("default")
-    var default_OptionsWithDefault: Boolean
+    val default_OptionsWithDefault: Boolean
   }
   object OptionsWithDefault {
     

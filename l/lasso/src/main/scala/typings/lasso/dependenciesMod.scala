@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.lasso.anon.Crossorigin
 import typings.lasso.lassoContextMod.default
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ object dependenciesMod {
   
   inline def createRegistry(): DependencyRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegistry")().asInstanceOf[DependencyRegistry]
   
-  inline def isDependency(d: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDependency")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDependency(d: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDependency")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isRegistry(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistry")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRegistry(o: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistry")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Bundle extends StObject {
     
@@ -38,13 +37,13 @@ object dependenciesMod {
       
       inline def setDependencies(value: js.Array[DependencyConfig | String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
-  type Callback = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], js.Any]
+  type Callback = js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Any], Any]
   
   @js.native
   trait Dependency
@@ -56,30 +55,30 @@ object dependenciesMod {
     
     var _packageDependency: js.UndefOr[Boolean] = js.native
     
-    def calculateKey(lassoContext: default, callback: Callback): js.Any = js.native
+    def calculateKey(lassoContext: default, callback: Callback): Any = js.native
     
     def calculateKeyFromProps(): String = js.native
     
     var contentType: js.UndefOr[String] = js.native
     
-    def createPackageManifest(): js.Any = js.native
-    def createPackageManifest(manifest: js.Any): js.Any = js.native
-    def createPackageManifest(manifest: js.Any, dirname: String): js.Any = js.native
-    def createPackageManifest(manifest: js.Any, dirname: String, filename: String): js.Any = js.native
-    def createPackageManifest(manifest: js.Any, dirname: Unit, filename: String): js.Any = js.native
-    def createPackageManifest(manifest: Unit, dirname: String): js.Any = js.native
-    def createPackageManifest(manifest: Unit, dirname: String, filename: String): js.Any = js.native
-    def createPackageManifest(manifest: Unit, dirname: Unit, filename: String): js.Any = js.native
+    def createPackageManifest(): Any = js.native
+    def createPackageManifest(manifest: Any): Any = js.native
+    def createPackageManifest(manifest: Any, dirname: String): Any = js.native
+    def createPackageManifest(manifest: Any, dirname: String, filename: String): Any = js.native
+    def createPackageManifest(manifest: Any, dirname: Unit, filename: String): Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: String): Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: String, filename: String): Any = js.native
+    def createPackageManifest(manifest: Unit, dirname: Unit, filename: String): Any = js.native
     
-    def createReadStream(lassoContext: default): js.Any = js.native
+    def createReadStream(lassoContext: default): Any = js.native
     
-    def doCalculateKey(lassoContext: default, callback: Callback): js.Any = js.native
+    def doCalculateKey(lassoContext: default, callback: Callback): Any = js.native
     
-    def doGetLastModified(lassoContext: js.Any, callback: Callback): js.Any = js.native
+    def doGetLastModified(lassoContext: Any, callback: Callback): Any = js.native
     
     def doInit(lassoContext: default, callback: Callback): Unit = js.native
     
-    def getContentType(): js.Any = js.native
+    def getContentType(): Any = js.native
     
     def getDefaultBundleName(): String = js.native
     def getDefaultBundleName(pageBundleName: String): String = js.native
@@ -88,37 +87,37 @@ object dependenciesMod {
     
     def getDir(): String | Null = js.native
     
-    def getFileLastModified(path: String, callback: Callback): js.Any = js.native
+    def getFileLastModified(path: String, callback: Callback): Any = js.native
     
-    def getJavaScriptSlot(): js.Any = js.native
+    def getJavaScriptSlot(): Any = js.native
     
-    def getKey(): js.Any = js.native
+    def getKey(): Any = js.native
     
-    def getLastModified(lassoContext: default, callback: Callback): js.Any = js.native
+    def getLastModified(lassoContext: default, callback: Callback): Any = js.native
     
-    def getPackageManifest(lassoContext: default, callback: Callback): js.Any = js.native
+    def getPackageManifest(lassoContext: default, callback: Callback): Any = js.native
     
     def getParentManifestDir(): String = js.native
     
     def getParentManifestPath(): String = js.native
     
-    def getPropsKey(): js.Any = js.native
+    def getPropsKey(): Any = js.native
     
-    def getReadCacheKey(): js.Any = js.native
+    def getReadCacheKey(): Any = js.native
     
-    def getSlot(): js.Any = js.native
+    def getSlot(): Any = js.native
     
-    def getSourceFile(): js.Any = js.native
+    def getSourceFile(): Any = js.native
     
-    def getStyleSheetSlot(): js.Any = js.native
+    def getStyleSheetSlot(): Any = js.native
     
     def hasContent(): Boolean = js.native
     
     def hasModifiedFingerprint(): Boolean = js.native
     
-    def init(lassoContext: default, callback: Callback): js.Any = js.native
+    def init(lassoContext: default, callback: Callback): Any = js.native
     
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     def isCompiled(): Boolean = js.native
     
@@ -140,12 +139,12 @@ object dependenciesMod {
     
     var properties: js.UndefOr[StringDictionary[String]] = js.native
     
-    def read(context: js.Any, callback: Callback): js.Any = js.native
+    def read(context: Any, callback: Callback): Any = js.native
     
     def resolvePath(path: String): String = js.native
     def resolvePath(path: String, from: String): String = js.native
     
-    def set(props: js.Any): Unit = js.native
+    def set(props: Any): Unit = js.native
     
     def shouldCache(lassoContext: default): Boolean = js.native
   }
@@ -207,7 +206,7 @@ object dependenciesMod {
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -270,46 +269,46 @@ object dependenciesMod {
   @js.native
   trait DependencyRegistry extends StObject {
     
-    def addNormalizer(normalizerFunc: js.Any): js.Any = js.native
+    def addNormalizer(normalizerFunc: Any): Any = js.native
     
-    def createDependency(config: js.Any, dirname: String): js.Any = js.native
-    def createDependency(config: js.Any, dirname: String, filename: String): js.Any = js.native
+    def createDependency(config: Any, dirname: String): Any = js.native
+    def createDependency(config: Any, dirname: String, filename: String): Any = js.native
     
-    def createRequireHandler(path: String, lassoContext: default, userOptions: js.Any): js.Any = js.native
+    def createRequireHandler(path: String, lassoContext: default, userOptions: Any): Any = js.native
     
-    def createResourceTransformType(transformFunc: js.Any): js.Any = js.native
+    def createResourceTransformType(transformFunc: Any): Any = js.native
     
-    var extensions: js.Any = js.native
+    var extensions: Any = js.native
     
-    def getRequireExtensionNames(): js.Any = js.native
+    def getRequireExtensionNames(): Any = js.native
     
-    def getRequireHandler(path: String, lassoContext: default): js.Any = js.native
+    def getRequireHandler(path: String, lassoContext: default): Any = js.native
     
-    def getType(`type`: String): js.Any = js.native
+    def getType(`type`: String): Any = js.native
     
-    def normalizeDependencies(dependencies: js.Array[js.Any], dirname: String, filename: String, callback: Callback): js.Any = js.native
+    def normalizeDependencies(dependencies: js.Array[Any], dirname: String, filename: String, callback: Callback): Any = js.native
     
     def registerDefaults(): Unit = js.native
     
     def registerExtension(`extension`: String, `type`: String): Unit = js.native
     
-    def registerJavaScriptType(`type`: String, mixins: js.Any): Unit = js.native
+    def registerJavaScriptType(`type`: String, mixins: Any): Unit = js.native
     
-    def registerPackageType(`type`: String, mixins: js.Any): Unit = js.native
+    def registerPackageType(`type`: String, mixins: Any): Unit = js.native
     
-    def registerRequireExtension(ext: String, options: js.Any): Unit = js.native
+    def registerRequireExtension(ext: String, options: Any): Unit = js.native
     
-    def registerRequireType(`type`: String, options: js.Any): Unit = js.native
+    def registerRequireType(`type`: String, options: Any): Unit = js.native
     
-    def registerStyleSheetType(`type`: String, mixins: js.Any): Unit = js.native
+    def registerStyleSheetType(`type`: String, mixins: Any): Unit = js.native
     
-    def registerType(`type`: String, mixins: js.Any): Unit = js.native
+    def registerType(`type`: String, mixins: Any): Unit = js.native
     
-    var registeredTypes: js.Any = js.native
+    var registeredTypes: Any = js.native
     
-    var requireExtensionNames: js.Any = js.native
+    var requireExtensionNames: Any = js.native
     
-    var requireExtensions: js.Any = js.native
+    var requireExtensions: Any = js.native
     
     def typeForPath(path: String): String = js.native
   }

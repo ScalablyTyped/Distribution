@@ -23,7 +23,7 @@ object astBuilderMod {
   
   @JSImport("gherkin/dist/src/AstBuilder", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AstBuilder {
     def this(newId: NewId) = this()
@@ -34,34 +34,34 @@ object astBuilderMod {
     
     def build(token: typings.gherkin.tokenMod.default): Unit = js.native
     
-    /* private */ var comments: js.Any = js.native
+    /* private */ var comments: Any = js.native
     
     def currentNode(): typings.gherkin.astNodeMod.default = js.native
     
     def endRule(ruleType: RuleType): Unit = js.native
     
-    def ensureCellCount(rows: js.Array[js.Any]): Unit = js.native
+    def ensureCellCount(rows: js.Array[Any]): Unit = js.native
     
     def getCells(tableRowToken: typings.gherkin.tokenMod.default): js.Array[TableCell] = js.native
     
-    def getDescription(node: typings.gherkin.astNodeMod.default): js.Any = js.native
+    def getDescription(node: typings.gherkin.astNodeMod.default): Any = js.native
     
     def getLocation(token: typings.gherkin.tokenMod.default): ILocation = js.native
     def getLocation(token: typings.gherkin.tokenMod.default, column: Double): ILocation = js.native
     
-    def getResult(): js.Any = js.native
+    def getResult(): Any = js.native
     
-    def getSteps(node: typings.gherkin.astNodeMod.default): js.Array[js.Any] = js.native
+    def getSteps(node: typings.gherkin.astNodeMod.default): js.Array[Any] = js.native
     
     def getTableRows(node: typings.gherkin.astNodeMod.default): js.Array[TableRow] = js.native
     
     def getTags(node: typings.gherkin.astNodeMod.default): js.Array[ITag] = js.native
     
-    /* private */ val newId: js.Any = js.native
+    /* private */ val newId: Any = js.native
     
     def reset(): Unit = js.native
     
-    /* private */ var stack: js.Any = js.native
+    /* private */ var stack: Any = js.native
     
     def startRule(ruleType: RuleType): Unit = js.native
     

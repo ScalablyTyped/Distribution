@@ -12,12 +12,17 @@ trait ContinueRequestRequest extends StObject {
   var headers: js.UndefOr[js.Array[HeaderEntry]] = js.undefined
   
   /**
+    * If set, overrides response interception behavior for this request.
+    */
+  var interceptResponse: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If set, the request method is overridden.
     */
   var method: js.UndefOr[String] = js.undefined
   
   /**
-    * If set, overrides the post data in the request.
+    * If set, overrides the post data in the request. (Encoded as a base64 string when passed over JSON)
     */
   var postData: js.UndefOr[String] = js.undefined
   
@@ -44,7 +49,11 @@ object ContinueRequestRequest {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "headers", js.Array(value*))
+    
+    inline def setInterceptResponse(value: Boolean): Self = StObject.set(x, "interceptResponse", value.asInstanceOf[js.Any])
+    
+    inline def setInterceptResponseUndefined: Self = StObject.set(x, "interceptResponse", js.undefined)
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

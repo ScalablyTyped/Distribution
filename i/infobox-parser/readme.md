@@ -10,10 +10,10 @@ Parse Wikipedia Infobox Source
 | ------------------ | :-------------: |
 | Full name          | infobox-parser |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 228016 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 21471.666666666668 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/dijs/infobox-parser#readme)

@@ -17,7 +17,7 @@ trait PartialEvent extends StObject {
   
   var intercom_user_id: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   var user_id: js.UndefOr[String] = js.undefined
 }
@@ -50,7 +50,7 @@ object PartialEvent {
     
     inline def setIntercom_user_idUndefined: Self = StObject.set(x, "intercom_user_id", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

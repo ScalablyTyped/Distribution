@@ -14,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyChange[LHS](target: LHS, source: Any, change: Diff_[LHS, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def applyDiff[LHS, RHS](target: LHS, source: RHS): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiff")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def applyDiff[LHS, RHS](target: LHS, source: RHS, filter: Filter[LHS, RHS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiff")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -42,16 +42,16 @@ object mod {
     orderIndependent: Boolean
   ): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], orderIndependent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
   
-  inline def orderIndepHash(`object`: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("orderIndepHash")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def orderIndepHash(`object`: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("orderIndepHash")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def orderIndependentDeepDiff[LHS, RHS](
     lhs: LHS,
     rhs: RHS,
     changes: js.Array[Diff_[LHS, RHS]],
     prefilter: PreFilter[LHS, RHS],
-    path: js.Array[js.Any],
-    key: js.Any,
-    stack: js.Array[js.Any]
+    path: js.Array[Any],
+    key: Any,
+    stack: js.Array[Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDeepDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], path.asInstanceOf[js.Any], key.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
@@ -62,7 +62,7 @@ object mod {
   inline def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
   inline def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
   
-  inline def revertChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("revertChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def revertChange[LHS](target: LHS, source: Any, change: Diff_[LHS, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("revertChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Accumulator[LHS, RHS] extends StObject {
     
@@ -95,7 +95,7 @@ object mod {
     
     var kind: A
     
-    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DiffArray {
     
@@ -112,23 +112,23 @@ object mod {
       
       inline def setKind(value: A): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
   trait DiffDeleted[LHS]
     extends StObject
-       with Diff_[LHS, js.Any] {
+       with Diff_[LHS, Any] {
     
     var kind: D
     
     var lhs: LHS
     
-    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DiffDeleted {
     
@@ -143,11 +143,11 @@ object mod {
       
       inline def setLhs(value: LHS): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -159,7 +159,7 @@ object mod {
     
     var lhs: LHS
     
-    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
     
     var rhs: RHS
   }
@@ -176,11 +176,11 @@ object mod {
       
       inline def setLhs(value: LHS): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRhs(value: RHS): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
     }
@@ -188,11 +188,11 @@ object mod {
   
   trait DiffNew[RHS]
     extends StObject
-       with Diff_[js.Any, RHS] {
+       with Diff_[Any, RHS] {
     
     var kind: N
     
-    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
     
     var rhs: RHS
   }
@@ -207,11 +207,11 @@ object mod {
       
       inline def setKind(value: N): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRhs(value: RHS): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
     }
@@ -253,21 +253,21 @@ object mod {
   
   type PreFilter[LHS, RHS] = PreFilterFunction | (PreFilterObject[LHS, RHS])
   
-  type PreFilterFunction = js.Function2[/* path */ js.Array[js.Any], /* key */ js.Any, Boolean]
+  type PreFilterFunction = js.Function2[/* path */ js.Array[Any], /* key */ Any, Boolean]
   
   trait PreFilterObject[LHS, RHS] extends StObject {
     
     var normalize: js.UndefOr[
         js.Function4[
-          /* currentPath */ js.Any, 
-          /* key */ js.Any, 
+          /* currentPath */ Any, 
+          /* key */ Any, 
           /* lhs */ LHS, 
           /* rhs */ RHS, 
           js.UndefOr[js.Tuple2[LHS, RHS]]
         ]
       ] = js.undefined
     
-    var prefilter: js.UndefOr[js.Function2[/* path */ js.Array[js.Any], /* key */ js.Any, Boolean]] = js.undefined
+    var prefilter: js.UndefOr[js.Function2[/* path */ js.Array[Any], /* key */ Any, Boolean]] = js.undefined
   }
   object PreFilterObject {
     
@@ -279,12 +279,12 @@ object mod {
     extension [Self <: PreFilterObject[?, ?], LHS, RHS](x: Self & (PreFilterObject[LHS, RHS])) {
       
       inline def setNormalize(
-        value: (/* currentPath */ js.Any, /* key */ js.Any, /* lhs */ LHS, /* rhs */ RHS) => js.UndefOr[js.Tuple2[LHS, RHS]]
+        value: (/* currentPath */ Any, /* key */ Any, /* lhs */ LHS, /* rhs */ RHS) => js.UndefOr[js.Tuple2[LHS, RHS]]
       ): Self = StObject.set(x, "normalize", js.Any.fromFunction4(value))
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      inline def setPrefilter(value: (/* path */ js.Array[js.Any], /* key */ js.Any) => Boolean): Self = StObject.set(x, "prefilter", js.Any.fromFunction2(value))
+      inline def setPrefilter(value: (/* path */ js.Array[Any], /* key */ Any) => Boolean): Self = StObject.set(x, "prefilter", js.Any.fromFunction2(value))
       
       inline def setPrefilterUndefined: Self = StObject.set(x, "prefilter", js.undefined)
     }

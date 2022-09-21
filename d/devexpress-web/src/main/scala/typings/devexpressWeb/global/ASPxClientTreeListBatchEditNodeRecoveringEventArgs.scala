@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListBatchEditNodeRecoveringEventArgs")
 @js.native
-class ASPxClientTreeListBatchEditNodeRecoveringEventArgs protected ()
+open class ASPxClientTreeListBatchEditNodeRecoveringEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListBatchEditNodeRecoveringEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientTreeListBatchEditNodeRecoveringEventArgs protected ()
     * @param nodeKey A string object that is the node key.
     * @param nodeValues An object representing the node values.
     */
-  def this(nodeKey: String, nodeValues: js.Any) = this()
+  def this(nodeKey: String, nodeValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -35,5 +35,5 @@ class ASPxClientTreeListBatchEditNodeRecoveringEventArgs protected ()
     * Gets a hashtable that maintains information about recovered cells.
     */
   /* CompleteClass */
-  var nodeValues: js.Any = js.native
+  var nodeValues: Any = js.native
 }

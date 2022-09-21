@@ -14,7 +14,7 @@ trait Two extends StObject {
   
   def appendTo(domElement: HTMLElement): this.type = js.native
   
-  def bind(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  def bind(event: String, callback: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   def clear(): this.type = js.native
   
@@ -52,6 +52,8 @@ trait Two extends StObject {
   
   def makeStar(ox: Double, oy: Double, or: Double, ir: Double, sides: Double): Star = js.native
   
+  def makeText(message: String, x: Double, y: Double, styles: Any): Text = js.native
+  
   def pause(): this.type = js.native
   
   def play(): this.type = js.native
@@ -73,8 +75,8 @@ trait Two extends StObject {
   
   def unbind(): this.type = js.native
   def unbind(event: String): this.type = js.native
-  def unbind(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  def unbind(event: Null, callback: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  def unbind(event: String, callback: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def unbind(event: Null, callback: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   def update(): this.type = js.native
   

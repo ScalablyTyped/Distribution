@@ -4,7 +4,7 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.materialRipple.materialRippleStrings.resize
 import typings.materialRipple.typesMod.MDCRipplePoint
-import typings.std.ClientRect
+import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object adapterMod {
     
     def browserSupportsCssVars(): Boolean = js.native
     
-    def computeBoundingRect(): ClientRect = js.native
+    def computeBoundingRect(): DOMRect = js.native
     
     def containsEventTarget(): Boolean = js.native
     def containsEventTarget(target: EventTarget): Boolean = js.native

@@ -2,6 +2,8 @@ package typings.rabinWasm
 
 import typings.rabinWasm.mod.ASModule.i32
 import typings.rabinWasm.mod.ASModule.u32
+import typings.rabinWasm.mod.ASModule.u64
+import typings.rabinWasm.mod.ASModule.usize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,49 +24,49 @@ object mod {
     
     @JSImport("rabin-wasm/dist/rabin-wasm", "default.Rabin")
     @js.native
-    class Rabin protected ()
+    open class Rabin protected ()
       extends StObject
          with typings.rabinWasm.mod.ASModule.Rabin {
       def this(average_bits: u32, minsize: u32, maxsize: u32, window_size: i32) = this()
       
       /* CompleteClass */
-      var chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_cut_fingerprint: u64 = js.native
       
       /* CompleteClass */
-      var chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_length: u64 = js.native
       
       /* CompleteClass */
-      var chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_start: u64 = js.native
       
       /* CompleteClass */
-      var count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var count: u64 = js.native
       
       /* CompleteClass */
-      var digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var digest: u64 = js.native
       
       /* CompleteClass */
-      override def fingerprint(buf: u32, lengths: u32): u32 = js.native
+      override def fingerprint(buf: usize, lengths: usize): usize = js.native
       
       /* CompleteClass */
-      var mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var mask: u64 = js.native
       
       /* CompleteClass */
-      var maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var maxsize: u64 = js.native
       
       /* CompleteClass */
-      var minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var minsize: u64 = js.native
       
       /* CompleteClass */
-      var polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var polynomial: u64 = js.native
       
       /* CompleteClass */
-      var pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var pos: u64 = js.native
       
       /* CompleteClass */
-      var start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var start: u64 = js.native
       
       /* CompleteClass */
-      var window: u32 = js.native
+      var window: usize = js.native
       
       /* CompleteClass */
       var window_size: i32 = js.native
@@ -79,59 +81,54 @@ object mod {
     
     inline def Uint8ArrayID_=(x: u32): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uint8Array_ID")(x.asInstanceOf[js.Any])
     
-    inline def alloc(size: u32, id: u32): u32 = (^.asInstanceOf[js.Dynamic].applyDynamic("__alloc")(size.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[u32]
+    inline def alloc(size: usize, id: u32): usize = (^.asInstanceOf[js.Dynamic].applyDynamic("__alloc")(size.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[usize]
     
     inline def collect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__collect")().asInstanceOf[Unit]
     
-    inline def degree(
-      polynom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-    ): i32 = ^.asInstanceOf[js.Dynamic].applyDynamic("degree")(polynom.asInstanceOf[js.Any]).asInstanceOf[i32]
+    inline def degree(polynom: u64): i32 = ^.asInstanceOf[js.Dynamic].applyDynamic("degree")(polynom.asInstanceOf[js.Any]).asInstanceOf[i32]
     
-    inline def mod(
-      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def mod(x: u64, p: u64): u64 = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[u64]
     
-    inline def release(ptr: u32): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__release")(ptr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def release(ptr: usize): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__release")(ptr.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def retain(ptr: u32): u32 = ^.asInstanceOf[js.Dynamic].applyDynamic("__retain")(ptr.asInstanceOf[js.Any]).asInstanceOf[u32]
+    inline def retain(ptr: usize): usize = ^.asInstanceOf[js.Dynamic].applyDynamic("__retain")(ptr.asInstanceOf[js.Any]).asInstanceOf[usize]
     
     @JSImport("rabin-wasm/dist/rabin-wasm", "default.__rtti_base")
     @js.native
-    def rttiBase: u32 = js.native
+    def rttiBase: usize = js.native
     
-    inline def rttiBase_=(x: u32): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__rtti_base")(x.asInstanceOf[js.Any])
+    inline def rttiBase_=(x: usize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__rtti_base")(x.asInstanceOf[js.Any])
   }
   
   object ASModule {
     
     trait Rabin extends StObject {
       
-      var chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var chunk_cut_fingerprint: u64
       
-      var chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var chunk_length: u64
       
-      var chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var chunk_start: u64
       
-      var count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var count: u64
       
-      var digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var digest: u64
       
-      def fingerprint(buf: u32, lengths: u32): u32
+      def fingerprint(buf: usize, lengths: usize): usize
       
-      var mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var mask: u64
       
-      var maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var maxsize: u64
       
-      var minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var minsize: u64
       
-      var polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var polynomial: u64
       
-      var pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var pos: u64
       
-      var start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
+      var start: u64
       
-      var window: u32
+      var window: usize
       
       var window_size: i32
       
@@ -140,19 +137,19 @@ object mod {
     object Rabin {
       
       inline def apply(
-        chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        fingerprint: (u32, u32) => u32,
-        mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
-        window: u32,
+        chunk_cut_fingerprint: u64,
+        chunk_length: u64,
+        chunk_start: u64,
+        count: u64,
+        digest: u64,
+        fingerprint: (usize, usize) => usize,
+        mask: u64,
+        maxsize: u64,
+        minsize: u64,
+        polynomial: u64,
+        pos: u64,
+        start: u64,
+        window: usize,
         window_size: i32,
         wpos: i32
       ): Rabin = {
@@ -162,53 +159,31 @@ object mod {
       
       extension [Self <: Rabin](x: Self) {
         
-        inline def setChunk_cut_fingerprint(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "chunk_cut_fingerprint", value.asInstanceOf[js.Any])
+        inline def setChunk_cut_fingerprint(value: u64): Self = StObject.set(x, "chunk_cut_fingerprint", value.asInstanceOf[js.Any])
         
-        inline def setChunk_length(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "chunk_length", value.asInstanceOf[js.Any])
+        inline def setChunk_length(value: u64): Self = StObject.set(x, "chunk_length", value.asInstanceOf[js.Any])
         
-        inline def setChunk_start(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "chunk_start", value.asInstanceOf[js.Any])
+        inline def setChunk_start(value: u64): Self = StObject.set(x, "chunk_start", value.asInstanceOf[js.Any])
         
-        inline def setCount(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: u64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        inline def setDigest(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+        inline def setDigest(value: u64): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
         
-        inline def setFingerprint(value: (u32, u32) => u32): Self = StObject.set(x, "fingerprint", js.Any.fromFunction2(value))
+        inline def setFingerprint(value: (usize, usize) => usize): Self = StObject.set(x, "fingerprint", js.Any.fromFunction2(value))
         
-        inline def setMask(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+        inline def setMask(value: u64): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
-        inline def setMaxsize(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
+        inline def setMaxsize(value: u64): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
         
-        inline def setMinsize(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "minsize", value.asInstanceOf[js.Any])
+        inline def setMinsize(value: u64): Self = StObject.set(x, "minsize", value.asInstanceOf[js.Any])
         
-        inline def setPolynomial(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "polynomial", value.asInstanceOf[js.Any])
+        inline def setPolynomial(value: u64): Self = StObject.set(x, "polynomial", value.asInstanceOf[js.Any])
         
-        inline def setPos(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+        inline def setPos(value: u64): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
         
-        inline def setStart(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-        ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: u64): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        inline def setWindow(value: u32): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+        inline def setWindow(value: usize): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
         
         inline def setWindow_size(value: i32): Self = StObject.set(x, "window_size", value.asInstanceOf[js.Any])
         
@@ -216,7 +191,7 @@ object mod {
       }
     }
     
-    type bool = js.Any
+    type bool = Any
     
     type f32 = Double
     
@@ -226,12 +201,20 @@ object mod {
     
     type i32 = Double
     
+    type i64 = js.BigInt
+    
     type i8 = Double
+    
+    type isize = Double
     
     type u16 = Double
     
     type u32 = Double
     
+    type u64 = js.BigInt
+    
     type u8 = Double
+    
+    type usize = Double
   }
 }

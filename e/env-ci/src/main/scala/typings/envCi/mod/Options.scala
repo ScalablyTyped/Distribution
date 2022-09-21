@@ -9,7 +9,7 @@ trait Options extends StObject {
   
   var cwd: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var env: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object Options {
   
@@ -24,7 +24,7 @@ object Options {
     
     inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    inline def setEnv(value: StringDictionary[js.Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
   }

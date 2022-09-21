@@ -18,8 +18,7 @@ trait BuildBazelRemoteExecutionV2OutputFile extends StObject {
   /** True if file is executable, false otherwise. */
   var isExecutable: js.UndefOr[Boolean] = js.undefined
   
-  /** The supported node properties of the OutputFile, if requested by the Action. */
-  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.undefined
+  var nodeProperties: js.UndefOr[BuildBazelRemoteExecutionV2NodeProperties] = js.undefined
   
   /**
     * The full path of the file relative to the working directory, including the filename. The path separator is a forward slash `/`. Since this is a relative path, it MUST NOT begin with
@@ -48,11 +47,9 @@ object BuildBazelRemoteExecutionV2OutputFile {
     
     inline def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
     
-    inline def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: BuildBazelRemoteExecutionV2NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
     inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
-    
-    inline def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

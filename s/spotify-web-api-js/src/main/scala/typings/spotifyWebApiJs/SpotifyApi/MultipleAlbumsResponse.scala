@@ -25,6 +25,6 @@ object MultipleAlbumsResponse {
     
     inline def setAlbums(value: js.Array[AlbumObjectFull]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    inline def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value :_*))
+    inline def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value*))
   }
 }

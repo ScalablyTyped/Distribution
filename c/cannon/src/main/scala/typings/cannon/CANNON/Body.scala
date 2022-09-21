@@ -96,9 +96,9 @@ trait Body
   
   var quaternion: Quaternion = js.native
   
-  var shapeOffsets: js.Array[js.Any] = js.native
+  var shapeOffsets: js.Array[Any] = js.native
   
-  var shapeOrientations: js.Array[js.Any] = js.native
+  var shapeOrientations: js.Array[Any] = js.native
   
   var shapes: js.Array[Shape] = js.native
   

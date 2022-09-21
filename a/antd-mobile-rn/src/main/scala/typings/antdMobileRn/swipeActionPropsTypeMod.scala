@@ -45,7 +45,7 @@ object swipeActionPropsTypeMod {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setLeftVarargs(value: ClassName[T]*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: ClassName[T]*): Self = StObject.set(x, "left", js.Array(value*))
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -59,7 +59,7 @@ object swipeActionPropsTypeMod {
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setRightVarargs(value: ClassName[T]*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: ClassName[T]*): Self = StObject.set(x, "right", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

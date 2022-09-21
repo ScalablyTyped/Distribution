@@ -26,6 +26,8 @@ trait ChartCategoryAxisItemLabels extends StObject {
   
   var padding: js.UndefOr[Double | ChartCategoryAxisItemLabelsPadding] = js.undefined
   
+  var position: js.UndefOr[String] = js.undefined
+  
   var rotation: js.UndefOr[String | Double | ChartCategoryAxisItemLabelsRotation] = js.undefined
   
   var skip: js.UndefOr[Double] = js.undefined
@@ -86,6 +88,10 @@ object ChartCategoryAxisItemLabels {
     inline def setPadding(value: Double | ChartCategoryAxisItemLabelsPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setRotation(value: String | Double | ChartCategoryAxisItemLabelsRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

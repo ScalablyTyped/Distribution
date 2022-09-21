@@ -22,7 +22,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Array")
     @js.native
-    class Array[T] ()
+    open class Array[T] ()
       extends StObject
          with Chainable[T, typings.sugar.Array[T]] {
       def this(obj: Double) = this()
@@ -35,7 +35,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Date")
     @js.native
-    class Date ()
+    open class Date ()
       extends StObject
          with typings.sugar.sugarjs.Date.Chainable[typings.sugar.Date] {
       def this(d: java.lang.String) = this()
@@ -50,7 +50,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Function")
     @js.native
-    class Function ()
+    open class Function ()
       extends StObject
          with typings.sugar.sugarjs.Function.Chainable[typings.sugar.Function] {
       def this(raw: typings.sugar.Function) = this()
@@ -59,7 +59,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Number")
     @js.native
-    class Number ()
+    open class Number ()
       extends StObject
          with typings.sugar.sugarjs.Number.Chainable[Double] {
       def this(raw: Double) = this()
@@ -68,7 +68,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Object")
     @js.native
-    class Object ()
+    open class Object ()
       extends StObject
          with ChainableBase[js.Object] {
       def this(raw: js.Object) = this()
@@ -77,7 +77,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.RegExp")
     @js.native
-    class RegExp ()
+    open class RegExp ()
       extends StObject
          with typings.sugar.sugarjs.RegExp.Chainable[typings.sugar.RegExp] {
       def this(raw: typings.sugar.RegExp) = this()
@@ -107,7 +107,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.String")
     @js.native
-    class String ()
+    open class String ()
       extends StObject
          with typings.sugar.sugarjs.String.Chainable[java.lang.String] {
       def this(raw: java.lang.String) = this()

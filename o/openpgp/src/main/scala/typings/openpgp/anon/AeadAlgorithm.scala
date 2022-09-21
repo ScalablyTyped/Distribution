@@ -1,6 +1,5 @@
 package typings.openpgp.anon
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,11 @@ trait AeadAlgorithm extends StObject {
   
   var algorithm: String
   
-  var data: Uint8Array
+  var data: js.typedarray.Uint8Array
 }
 object AeadAlgorithm {
   
-  inline def apply(aeadAlgorithm: String, algorithm: String, data: Uint8Array): AeadAlgorithm = {
+  inline def apply(aeadAlgorithm: String, algorithm: String, data: js.typedarray.Uint8Array): AeadAlgorithm = {
     val __obj = js.Dynamic.literal(aeadAlgorithm = aeadAlgorithm.asInstanceOf[js.Any], algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AeadAlgorithm]
   }
@@ -26,6 +25,6 @@ object AeadAlgorithm {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

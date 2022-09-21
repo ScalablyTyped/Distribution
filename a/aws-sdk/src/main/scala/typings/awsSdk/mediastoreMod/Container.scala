@@ -19,7 +19,7 @@ trait Container extends StObject {
   /**
     * Unix timestamp.
     */
-  var CreationTime: js.UndefOr[TimeStamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The DNS endpoint of the container. Use the endpoint to identify the specific container when sending requests to the data plane. The service assigns this value when the container is created. Once the value has been assigned, it does not change.
@@ -53,7 +53,7 @@ object Container {
     
     inline def setAccessLoggingEnabledUndefined: Self = StObject.set(x, "AccessLoggingEnabled", js.undefined)
     
-    inline def setCreationTime(value: TimeStamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

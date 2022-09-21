@@ -43,7 +43,7 @@ object PreRenderedChunk {
     
     inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value*))
     
     inline def setFacadeModuleId(value: String): Self = StObject.set(x, "facadeModuleId", value.asInstanceOf[js.Any])
     

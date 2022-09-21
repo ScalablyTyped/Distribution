@@ -9,7 +9,7 @@ trait JQueryStatic extends StObject {
   /**
     * This method allows you to call Colorbox without having to assign it to an element.
     */
-  def colorbox(settings: ColorboxSettings): js.Any
+  def colorbox(settings: ColorboxSettings): Any
   @JSName("colorbox")
   var colorbox_Original: ColorboxStatic
 }

@@ -23,7 +23,7 @@ object ReturnTypeGetResourceContentResponse {
     
     inline def setParamsType(value: js.Array[GetResourceContentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetResourceContentRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetResourceContentRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetResourceContentResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object siteMoveSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SiteMoveSmall", JSImport.Default)
   @js.native
-  val default: SFC[SiteMoveSmallProps] = js.native
+  val default: FC[SiteMoveSmallProps] = js.native
   
   trait SiteMoveSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object SiteMoveSmallProps {
     
@@ -29,14 +29,14 @@ object siteMoveSmallMod extends Shortcut {
     
     extension [Self <: SiteMoveSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[SiteMoveSmallProps]
+  type _To = FC[SiteMoveSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `siteMoveSmallMod.foo` */
-  override def _to: SFC[SiteMoveSmallProps] = default
+  override def _to: FC[SiteMoveSmallProps] = default
 }

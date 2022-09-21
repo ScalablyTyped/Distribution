@@ -12,13 +12,12 @@ object alertContainerNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/AlertContainer.native", JSImport.Default)
   @js.native
-  class default protected () extends AlertContainer {
+  open class default protected () extends AlertContainer {
     def this(props: AlertContainerProps) = this()
   }
   
   @js.native
-  trait AlertContainer
-    extends Component[AlertContainerProps, js.Any, js.Any] {
+  trait AlertContainer extends Component[AlertContainerProps, Any, Any] {
     
     def onClose(): Unit = js.native
   }
@@ -44,7 +43,7 @@ object alertContainerNativeMod {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpotInstanceStatus extends StObject {
   
   /**
-    * The status code. For a list of status codes, see Spot status codes in the Amazon EC2 User Guide for Linux Instances.
+    * The status code. For a list of status codes, see Spot request status codes in the Amazon EC2 User Guide for Linux Instances.
     */
   var Code: js.UndefOr[String] = js.undefined
   
@@ -19,7 +19,7 @@ trait SpotInstanceStatus extends StObject {
   /**
     * The date and time of the most recent status update, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.undefined
+  var UpdateTime: js.UndefOr[js.Date] = js.undefined
 }
 object SpotInstanceStatus {
   
@@ -38,7 +38,7 @@ object SpotInstanceStatus {
     
     inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    inline def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }

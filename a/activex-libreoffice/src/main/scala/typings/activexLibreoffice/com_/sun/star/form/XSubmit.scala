@@ -46,7 +46,7 @@ object XSubmit {
   inline def apply(
     acquire: () => Unit,
     addSubmitListener: XSubmitListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSubmitListener: XSubmitListener => Unit,
     submit: (XControl, MouseEvent) => Unit

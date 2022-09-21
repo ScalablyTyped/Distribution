@@ -17,7 +17,7 @@ trait GoogleActionsV2OrdersProposedOrder extends StObject {
     * For example, if the order includes a location then this extension will
     * contain a OrderLocation value.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Optional id for this ProposedOrder. Included as part of the
@@ -59,7 +59,7 @@ object GoogleActionsV2OrdersProposedOrder {
     
     inline def setCartUndefined: Self = StObject.set(x, "cart", js.undefined)
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -75,7 +75,7 @@ object GoogleActionsV2OrdersProposedOrder {
     
     inline def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
     
-    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
+    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value*))
     
     inline def setTermsOfServiceUrl(value: String): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
     

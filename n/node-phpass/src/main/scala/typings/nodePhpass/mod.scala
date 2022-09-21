@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("node-phpass", "PasswordHash")
   @js.native
-  class PasswordHash () extends StObject {
+  open class PasswordHash () extends StObject {
     def this(length: Double) = this()
     def this(length: Double, portable: Boolean) = this()
     def this(length: Unit, portable: Boolean) = this()

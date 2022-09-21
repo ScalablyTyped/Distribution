@@ -33,6 +33,6 @@ object ListTagOptionsOutput {
     
     inline def setTagOptionDetailsUndefined: Self = StObject.set(x, "TagOptionDetails", js.undefined)
     
-    inline def setTagOptionDetailsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptionDetails", js.Array(value :_*))
+    inline def setTagOptionDetailsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptionDetails", js.Array(value*))
   }
 }

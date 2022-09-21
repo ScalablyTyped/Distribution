@@ -21,7 +21,7 @@ trait IQueue
     * @param obj Object The item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var remove: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* obj */ js.UndefOr[Any], Any]] = js.undefined
 }
 object IQueue {
   
@@ -40,7 +40,7 @@ object IQueue {
     
     inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    inline def setRemove(value: /* obj */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* obj */ js.UndefOr[Any] => Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }

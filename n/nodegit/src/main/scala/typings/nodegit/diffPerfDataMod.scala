@@ -8,7 +8,7 @@ object diffPerfDataMod {
   
   @JSImport("nodegit/diff-perf-data", "DiffPerfdata")
   @js.native
-  class DiffPerfdata () extends StObject {
+  open class DiffPerfdata () extends StObject {
     
     var oidCalculations: Double = js.native
     

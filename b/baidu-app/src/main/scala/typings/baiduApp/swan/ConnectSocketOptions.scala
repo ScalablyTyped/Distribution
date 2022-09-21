@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // WebSocket
 trait ConnectSocketOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** HTTP Header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
@@ -45,7 +45,7 @@ object ConnectSocketOptions {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

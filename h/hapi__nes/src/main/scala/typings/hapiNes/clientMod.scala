@@ -14,47 +14,47 @@ object clientMod {
   
   @JSImport("@hapi/nes/lib/client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(url: String) = this()
     def this(url: String, options: ClientOptions) = this()
     
-    def connect(): js.Promise[js.Any] = js.native
-    def connect(options: ClientConnectOptions): js.Promise[js.Any] = js.native
+    def connect(): js.Promise[Any] = js.native
+    def connect(options: ClientConnectOptions): js.Promise[Any] = js.native
     
-    def disconnect(): js.Promise[js.Any] = js.native
+    def disconnect(): js.Promise[Any] = js.native
     
-    var id: js.Any = js.native
+    var id: Any = js.native
     
-    def message(message: js.Any): js.Promise[js.Any] = js.native
+    def message(message: Any): js.Promise[Any] = js.native
     
     def onConnect(): Unit = js.native
     
     def onDisconnect(willReconnect: Boolean, log: Code): Unit = js.native
     
-    def onError(err: js.Any): Unit = js.native
+    def onError(err: Any): Unit = js.native
     
-    def onUpdate(message: js.Any): Unit = js.native
+    def onUpdate(message: Any): Unit = js.native
     
-    def overrideReconnectionAuth(auth: js.Any): Unit = js.native
+    def overrideReconnectionAuth(auth: Any): Unit = js.native
     
-    def reauthenticate(auth: js.Any): js.Promise[`true`] = js.native
+    def reauthenticate(auth: Any): js.Promise[`true`] = js.native
     
     // can be `null | number` but also the "socket" value from websocket message data.
-    def request(options: String): js.Promise[js.Any] = js.native
-    def request(options: ClientRequestOptions): js.Promise[js.Any] = js.native
+    def request(options: String): js.Promise[Any] = js.native
+    def request(options: ClientRequestOptions): js.Promise[Any] = js.native
     
-    def subscribe(path: String, handler: Handler): js.Promise[js.Any] = js.native
+    def subscribe(path: String, handler: Handler): js.Promise[Any] = js.native
     
     def subscriptions(): js.Array[String] = js.native
     
-    def unsubscribe(path: String): js.Promise[js.Any] = js.native
-    def unsubscribe(path: String, handler: Handler): js.Promise[js.Any] = js.native
+    def unsubscribe(path: String): js.Promise[Any] = js.native
+    def unsubscribe(path: String, handler: Handler): js.Promise[Any] = js.native
   }
   object Client {
     
     trait ClientConnectOptions extends StObject {
       
-      var auth: js.UndefOr[js.Any] = js.undefined
+      var auth: js.UndefOr[Any] = js.undefined
       
       var delay: js.UndefOr[Double] = js.undefined
       
@@ -73,7 +73,7 @@ object clientMod {
       
       extension [Self <: ClientConnectOptions](x: Self) {
         
-        inline def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
         inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
@@ -99,7 +99,7 @@ object clientMod {
       
       var timeout: js.UndefOr[Double | Boolean] = js.undefined
       
-      var ws: js.UndefOr[js.Any] = js.undefined
+      var ws: js.UndefOr[Any] = js.undefined
     }
     object ClientOptions {
       
@@ -114,7 +114,7 @@ object clientMod {
         
         inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        inline def setWs(value: js.Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+        inline def setWs(value: Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
         
         inline def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
       }
@@ -128,7 +128,7 @@ object clientMod {
       
       var path: String
       
-      var payload: js.UndefOr[js.Any] = js.undefined
+      var payload: js.UndefOr[Any] = js.undefined
     }
     object ClientRequestOptions {
       
@@ -149,7 +149,7 @@ object clientMod {
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+        inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
         inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       }
@@ -174,6 +174,6 @@ object clientMod {
       }
     }
     
-    type Handler = js.Function2[/* message */ js.Any, /* flags */ ClientSubscribeFlags, Unit]
+    type Handler = js.Function2[/* message */ Any, /* flags */ ClientSubscribeFlags, Unit]
   }
 }

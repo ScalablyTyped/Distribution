@@ -9,7 +9,7 @@ trait MessageBoxesDefault extends StObject {
   var baseClass: js.UndefOr[String] = js.undefined
   
   // when messagebox remove method is called but before it is actually hidden
-  var beforeClose: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var beforeClose: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
   
   var buttonsAlign: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait MessageBoxesDefault extends StObject {
   var closeOnEsc: js.UndefOr[Boolean] = js.undefined
   
   // after messagebox is hidden
-  var closed: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var closed: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
   
   // Make messagebox draggable
   var customBtnClass: js.UndefOr[String] = js.undefined
@@ -51,7 +51,7 @@ trait MessageBoxesDefault extends StObject {
   
   // events
   // when messagebox show is called but before it is actually shown
-  var onShow: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
   
   var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], this.type]] = js.undefined
   
@@ -72,7 +72,7 @@ trait MessageBoxesDefault extends StObject {
   var showClass: js.UndefOr[String] = js.undefined
   
   // after messagebox is shown
-  var shown: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var shown: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -91,7 +91,7 @@ object MessageBoxesDefault {
     
     inline def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
     
-    inline def setBeforeClose(value: /* lobibox */ js.Any => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+    inline def setBeforeClose(value: /* lobibox */ Any => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
@@ -107,7 +107,7 @@ object MessageBoxesDefault {
     
     inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
     
-    inline def setClosed(value: /* lobibox */ js.Any => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+    inline def setClosed(value: /* lobibox */ Any => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     
     inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
@@ -155,7 +155,7 @@ object MessageBoxesDefault {
     
     inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
-    inline def setOnShow(value: /* lobibox */ js.Any => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* lobibox */ Any => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
@@ -189,7 +189,7 @@ object MessageBoxesDefault {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setShown(value: /* lobibox */ js.Any => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
+    inline def setShown(value: /* lobibox */ Any => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
     
     inline def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
     

@@ -123,7 +123,7 @@ object XExtendedToolkit {
     getActiveTopWindow: () => XTopWindow,
     getTopWindow: Double => XTopWindow,
     getTopWindowCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeFocusListener: XFocusListener => Unit,
     removeKeyHandler: XKeyHandler => Unit,

@@ -1,60 +1,84 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.HTMLCanvasElement
-import typings.babylonjs.WebGLRenderingContext
+import typings.babylonjs.OffscreenCanvas
+import typings.babylonjs.WebGL2RenderingContext
 import typings.babylonjs.iaudioengineMod.IAudioEngine
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
 import typings.babylonjs.loadingScreenMod.ILoadingScreen
 import typings.babylonjs.thinEngineMod.EngineOptions
 import typings.babylonjs.typesMod.Nullable
+import typings.std.AudioContext
+import typings.std.AudioDestinationNode
 import typings.std.HTMLElement
+import typings.std.MediaStreamAudioDestinationNode
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Engine")
 @js.native
-class Engine protected ()
+open class Engine protected ()
   extends typings.babylonjs.enginesIndexMod.Engine {
   /**
     * Creates a new engine
-    * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
+    * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which already used the WebGL context
     * @param antialias defines enable antialiasing (default: false)
     * @param options defines further options to be sent to the getContext() function
     * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
     */
-  def this(canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext]) = this()
-  def this(canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext], antialias: Boolean) = this()
+  def this(canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ]) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
+    antialias: Boolean
+  ) = this()
+  def this(
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Boolean,
     options: EngineOptions
   ) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Unit,
     options: EngineOptions
   ) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Boolean,
     options: Unit,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Boolean,
     options: EngineOptions,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Unit,
     options: Unit,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    canvasOrContext: Nullable[
+        HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+      ],
     antialias: Unit,
     options: EngineOptions,
     adaptToDeviceRatio: Boolean
@@ -137,7 +161,11 @@ object Engine {
     * Default AudioEngine factory responsible of creating the Audio Engine.
     * By default, this will create a BabylonJS Audio Engine if the workload has been embedded.
     */
-  inline def AudioEngineFactory(hostElement: Nullable[HTMLElement]): IAudioEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioEngineFactory")(hostElement.asInstanceOf[js.Any]).asInstanceOf[IAudioEngine]
+  inline def AudioEngineFactory(
+    hostElement: Nullable[HTMLElement],
+    audioContext: Nullable[AudioContext],
+    audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode]
+  ): IAudioEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("AudioEngineFactory")(hostElement.asInstanceOf[js.Any], audioContext.asInstanceOf[js.Any], audioDestination.asInstanceOf[js.Any])).asInstanceOf[IAudioEngine]
   
   /** Passed to stencilOperation to specify that stencil value must be decremented */
   @JSImport("babylonjs/index", "Engine.DECR")
@@ -149,29 +177,29 @@ object Engine {
   @js.native
   val DECR_WRAP: Double = js.native
   
-  /** Defines that the ressource was successfully delay loaded */
+  /** Defines that the resource was successfully delay loaded */
   @JSImport("babylonjs/index", "Engine.DELAYLOADSTATE_LOADED")
   @js.native
   val DELAYLOADSTATE_LOADED: Double = js.native
   
-  /** Defines that the ressource is currently delay loading */
+  /** Defines that the resource is currently delay loading */
   @JSImport("babylonjs/index", "Engine.DELAYLOADSTATE_LOADING")
   @js.native
   val DELAYLOADSTATE_LOADING: Double = js.native
   
-  /** Defines that the ressource is not delayed*/
+  /** Defines that the resource is not delayed*/
   @JSImport("babylonjs/index", "Engine.DELAYLOADSTATE_NONE")
   @js.native
   val DELAYLOADSTATE_NONE: Double = js.native
   
-  /** Defines that the ressource is delayed and has not started loading */
+  /** Defines that the resource is delayed and has not started loading */
   @JSImport("babylonjs/index", "Engine.DELAYLOADSTATE_NOTLOADED")
   @js.native
   val DELAYLOADSTATE_NOTLOADED: Double = js.native
   
   /**
     * Method called to create the default loading screen.
-    * This can be overriden in your own app.
+    * This can be overridden in your own app.
     * @param canvas The rendering canvas element
     * @returns The loading screen
     */
@@ -246,7 +274,7 @@ object Engine {
     */
   inline def OfflineProviderFactory(
     urlToScene: String,
-    callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any],
+    callbackManifestChecked: js.Function1[/* checked */ Boolean, Any],
     disableManifestCheck: Boolean
   ): IOfflineProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("OfflineProviderFactory")(urlToScene.asInstanceOf[js.Any], callbackManifestChecked.asInstanceOf[js.Any], disableManifestCheck.asInstanceOf[js.Any])).asInstanceOf[IOfflineProvider]
   
@@ -525,7 +553,7 @@ object Engine {
   @js.native
   val TEXTURE_NEAREST_NEAREST_MIPNEAREST: Double = js.native
   
-  /** nearest is mag = nearest and min = nearest and mip = linear */
+  /** nearest is mag = nearest and min = nearest and mip = none */
   @JSImport("babylonjs/index", "Engine.TEXTURE_NEAREST_SAMPLINGMODE")
   @js.native
   val TEXTURE_NEAREST_SAMPLINGMODE: Double = js.native
@@ -570,6 +598,11 @@ object Engine {
     */
   inline def _ExitPointerlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_ExitPointerlock")().asInstanceOf[Unit]
   
+  @JSImport("babylonjs/index", "Engine._RenderPassIdCounter")
+  @js.native
+  def _RenderPassIdCounter: Double = js.native
+  inline def _RenderPassIdCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RenderPassIdCounter")(x.asInstanceOf[js.Any])
+  
   /**
     * Ask the browser to promote the current element to fullscreen rendering mode
     * @param element defines the DOM element to promote
@@ -604,6 +637,6 @@ object Engine {
     */
   @JSImport("babylonjs/index", "Engine.audioEngine")
   @js.native
-  def audioEngine: IAudioEngine = js.native
-  inline def audioEngine_=(x: IAudioEngine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
+  def audioEngine: Nullable[IAudioEngine] = js.native
+  inline def audioEngine_=(x: Nullable[IAudioEngine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
 }

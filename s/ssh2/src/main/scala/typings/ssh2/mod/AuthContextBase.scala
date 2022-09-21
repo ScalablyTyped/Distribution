@@ -15,10 +15,8 @@ trait AuthContextBase extends EventEmitter {
   def accept(): Unit = js.native
   
   /** The method of authentication. */
-  var method: String = js.native
+  var method: AuthenticationType = js.native
   
-  def on(event: String, listener: js.Function): this.type = js.native
-  def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
     * Emitted when the client aborts the authentication request.
     */
@@ -29,13 +27,9 @@ trait AuthContextBase extends EventEmitter {
     * Rejects the authentication request.
     */
   def reject(): Unit = js.native
-  def reject(authMethodsLeft: js.Array[String]): Unit = js.native
-  def reject(authMethodsLeft: js.Array[String], isPartialSuccess: Boolean): Unit = js.native
+  def reject(authMethodsLeft: js.Array[AuthenticationType]): Unit = js.native
+  def reject(authMethodsLeft: js.Array[AuthenticationType], isPartialSuccess: Boolean): Unit = js.native
   def reject(authMethodsLeft: Unit, isPartialSuccess: Boolean): Unit = js.native
-  /**
-    * Rejects the authentication request.
-    */
-  def reject(isPartialSuccess: Boolean): Unit = js.native
   
   /** The service requesting authentication. */
   var service: String = js.native

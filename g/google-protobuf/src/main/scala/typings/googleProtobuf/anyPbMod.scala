@@ -6,7 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,27 +14,27 @@ object anyPbMod {
   
   @JSImport("google-protobuf/google/protobuf/any_pb", "Any")
   @js.native
-  class Any () extends Message {
+  open class Any () extends Message {
     
     def getTypeName(): String = js.native
     
     def getTypeUrl(): String = js.native
     
-    def getValue(): Uint8Array | String = js.native
+    def getValue(): js.typedarray.Uint8Array | String = js.native
     
     def getValue_asB64(): String = js.native
     
-    def getValue_asU8(): Uint8Array = js.native
+    def getValue_asU8(): js.typedarray.Uint8Array = js.native
     
-    def pack(serialized: Uint8Array, name: String): Unit = js.native
-    def pack(serialized: Uint8Array, name: String, typeUrlPrefix: String): Unit = js.native
+    def pack(serialized: js.typedarray.Uint8Array, name: String): Unit = js.native
+    def pack(serialized: js.typedarray.Uint8Array, name: String, typeUrlPrefix: String): Unit = js.native
     
     def setTypeUrl(value: String): Any = js.native
     
     def setValue(value: String): Any = js.native
-    def setValue(value: Uint8Array): Any = js.native
+    def setValue(value: js.typedarray.Uint8Array): Any = js.native
     
-    def unpack[T /* <: Message */](deserialize: js.Function1[/* packed */ Uint8Array, T], name: String): T | Null = js.native
+    def unpack[T /* <: Message */](deserialize: js.Function1[/* packed */ js.typedarray.Uint8Array, T], name: String): T | Null = js.native
   }
   /* static members */
   object Any {
@@ -44,7 +43,7 @@ object anyPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def deserializeBinaryFromReader(message: Any, reader: BinaryReader): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Any]
     
@@ -67,11 +66,11 @@ object anyPbMod {
       
       var typeUrl: String
       
-      var value: Uint8Array | String
+      var value: js.typedarray.Uint8Array | String
     }
     object AsObject {
       
-      inline def apply(typeUrl: String, value: Uint8Array | String): AsObject = {
+      inline def apply(typeUrl: String, value: js.typedarray.Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(typeUrl = typeUrl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
@@ -80,7 +79,7 @@ object anyPbMod {
         
         inline def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
         
-        inline def setValue(value: Uint8Array | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

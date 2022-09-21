@@ -9,7 +9,12 @@ trait PerturbNormalBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _tangentSpaceParameterName: js.Any = js.native
+  /**
+    * Gets the TBN input component
+    */
+  def TBN: NodeMaterialConnectionPoint = js.native
+  
+  /* private */ var _tangentSpaceParameterName: Any = js.native
   
   /** Gets or sets a boolean indicating that normal should be inverted on X axis */
   var invertX: Boolean = js.native
@@ -28,14 +33,37 @@ trait PerturbNormalBlock
   def output: NodeMaterialConnectionPoint = js.native
   
   /**
+    * Gets the parallax height input component
+    */
+  def parallaxHeight: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the parallax scale input component
+    */
+  def parallaxScale: NodeMaterialConnectionPoint = js.native
+  
+  /**
     * Gets the strength input component
     */
   def strength: NodeMaterialConnectionPoint = js.native
+  
+  /** Gets or sets a boolean indicating that parallax occlusion should be enabled */
+  var useParallaxOcclusion: Boolean = js.native
   
   /**
     * Gets the uv input component
     */
   def uv: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the uv offset output component
+    */
+  def uvOffset: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the view direction input component
+    */
+  def viewDirection: NodeMaterialConnectionPoint = js.native
   
   /**
     * Gets the world normal input component

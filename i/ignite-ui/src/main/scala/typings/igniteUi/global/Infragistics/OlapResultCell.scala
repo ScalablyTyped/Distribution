@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapResultCell")
 @js.native
-class OlapResultCell ()
+open class OlapResultCell ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapResultCell {
   

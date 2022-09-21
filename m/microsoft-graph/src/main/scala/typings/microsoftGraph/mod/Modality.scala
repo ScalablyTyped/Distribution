@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.video
   - typings.microsoftGraph.microsoftGraphStrings.videoBasedScreenSharing
   - typings.microsoftGraph.microsoftGraphStrings.data
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait Modality extends StObject
 object Modality {
@@ -18,7 +19,7 @@ object Modality {
   
   inline def data: typings.microsoftGraph.microsoftGraphStrings.data = "data".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.data]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
   inline def video: typings.microsoftGraph.microsoftGraphStrings.video = "video".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.video]
   

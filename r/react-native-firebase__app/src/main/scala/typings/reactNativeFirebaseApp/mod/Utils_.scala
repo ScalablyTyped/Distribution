@@ -9,7 +9,7 @@ object Utils_ {
   
   @JSImport("@react-native-firebase/app", "Utils.Module")
   @js.native
-  class Module () extends FirebaseModule {
+  open class Module () extends FirebaseModule {
     
     /**
       * Returns PlayServicesAvailability properties
@@ -243,6 +243,11 @@ object Utils_ {
       *
       * Use this directory to place documents that have been created by the user.
       *
+      * Normally this is the external files directory on Android but if no external storage directory found,
+      * e.g. removable media has been ejected by the user, it will fall back to internal storage. This may
+      * under rare circumstances where device storage environment changes cause the directory to be different
+      * between runs of the application
+      *
       * ```js
       * firebase.utils.FilePath.DOCUMENT_DIRECTORY;
       * ```
@@ -270,6 +275,7 @@ object Utils_ {
       * Traditionally this is an SD card, but it may also be implemented as built-in storage on a device.
       *
       * Returns null if no external storage directory found, e.g. removable media has been ejected by the user.
+      * Requires special permission granted by Play Store review team on Android, is unlikely to be a valid path.
       *
       * ```js
       * firebase.utils.FilePath.EXTERNAL_STORAGE_DIRECTORY;
@@ -303,6 +309,7 @@ object Utils_ {
     
     /**
       * Returns an absolute path to a directory in which to place movies that are available to the user.
+      * Requires special permission granted by Play Store review team on Android, is unlikely to be a valid path.
       *
       * ```js
       * firebase.utils.FilePath.MOVIES_DIRECTORY;
@@ -312,6 +319,7 @@ object Utils_ {
     
     /**
       * Returns an absolute path to a directory in which to place pictures that are available to the user.
+      * Requires special permission granted by Play Store review team on Android, is unlikely to be a valid path.
       *
       * ```js
       * firebase.utils.FilePath.PICTURES_DIRECTORY;

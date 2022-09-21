@@ -21,7 +21,7 @@ object StreamSocketListener {
     control: StreamSocketListenerControl,
     dispose: () => Unit,
     information: StreamSocketListenerInformation,
-    onconnectionreceived: js.Any
+    onconnectionreceived: Any
   ): StreamSocketListener = {
     val __obj = js.Dynamic.literal(bindEndpointAsync = js.Any.fromFunction2(bindEndpointAsync), bindServiceNameAsync = js.Any.fromFunction1(bindServiceNameAsync), close = js.Any.fromFunction0(close), control = control.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), information = information.asInstanceOf[js.Any], onconnectionreceived = onconnectionreceived.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSocketListener]

@@ -35,7 +35,7 @@ object ShiftItem {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: ShiftActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: ShiftActivity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

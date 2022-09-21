@@ -1,6 +1,5 @@
 package typings.timezonecomplete
 
-import typings.std.Date
 import typings.timezonecomplete.basicsMod.TimeStruct
 import typings.timezonecomplete.basicsMod.TimeUnit
 import typings.timezonecomplete.basicsMod.WeekDay
@@ -25,7 +24,7 @@ object datetimeMod {
     * Constructor. Creates current time in local timezone.
     * @throws nothing
     */
-  class DateTime () extends StObject {
+  open class DateTime () extends StObject {
     /**
       * Constructor. Parses ISO timestamp string.
       * Non-existing local times are normalized by rounding up to the next DST offset.
@@ -86,12 +85,12 @@ object datetimeMod {
       * @throws timezonecomplete.Argument.GetFuncs if the getFuncs argument is invalid
       * @throws timezonecomplete.Argument.TimeZone if the time zone argument is invalid
       */
-    def this(date: Date, getFuncs: DateFunctions) = this()
+    def this(date: js.Date, getFuncs: DateFunctions) = this()
     def this(isoString: String, timeZone: TimeZone) = this()
     def this(tm: TimeStruct, timeZone: TimeZone) = this()
     def this(unixTimestamp: Double, timeZone: TimeZone) = this()
     def this(dateString: String, formatString: String, timeZone: TimeZone) = this()
-    def this(date: Date, getFuncs: DateFunctions, timeZone: TimeZone) = this()
+    def this(date: js.Date, getFuncs: DateFunctions, timeZone: TimeZone) = this()
     /**
       * Constructor. Note that unlike JavaScript dates we require fields to be in normal ranges.
       * Use the add(duration) or sub(duration) for arithmetic.
@@ -359,30 +358,30 @@ object datetimeMod {
       * @throws Argument.Amount if amount is not finite or if it's not an integer and you're adding months or years
       * @throws Argument.Unit for invalid time unit
       */
-    /* private */ var _addToTimeStruct: js.Any = js.native
+    /* private */ var _addToTimeStruct: Any = js.native
     
     /**
       *
       * @param n
       * @throws nothing
       */
-    /* private */ var _unixTimeStampToExcel: js.Any = js.native
+    /* private */ var _unixTimeStampToExcel: Any = js.native
     
     /**
       * UTC timestamp (lazily calculated, use getter for utcDate instead)
       */
-    /* private */ var _utcDate: js.Any = js.native
+    /* private */ var _utcDate: Any = js.native
     
     /**
       * Original time zone this instance was created for.
       * Can be undefined for unaware timestamps
       */
-    /* private */ var _zone: js.Any = js.native
+    /* private */ var _zone: Any = js.native
     
     /**
       * Local timestamp (lazily calculated)
       */
-    /* private */ var _zoneDate: js.Any = js.native
+    /* private */ var _zoneDate: Any = js.native
     
     /**
       * Add an amount of time relative to UTC, as regularly as possible. Returns a new DateTime
@@ -654,7 +653,7 @@ object datetimeMod {
       * This is because Date calculates getUTCX() from getX() applying local time zone.
       * @throws nothing
       */
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     /**
       * Create an Excel timestamp for this datetime converted to the given zone.
@@ -719,8 +718,8 @@ object datetimeMod {
       * UTC timestamp (lazily calculated)
       * @throws nothing
       */
-    /* private */ def utcDate: js.Any = js.native
-    /* private */ def utcDate_=(value: js.Any): Unit = js.native
+    /* private */ def utcDate: Any = js.native
+    /* private */ def utcDate_=(value: Any): Unit = js.native
     
     /**
       * @return The UTC day of the month 1-31
@@ -874,8 +873,8 @@ object datetimeMod {
       * Local timestamp (lazily calculated)
       * @throws nothing
       */
-    /* private */ def zoneDate: js.Any = js.native
-    /* private */ def zoneDate_=(value: js.Any): Unit = js.native
+    /* private */ def zoneDate: Any = js.native
+    /* private */ def zoneDate_=(value: Any): Unit = js.native
   }
   /* static members */
   object DateTime {
@@ -890,8 +889,8 @@ object datetimeMod {
       */
     @JSImport("timezonecomplete/dist/lib/datetime", "DateTime._splitDateFromTimeZone")
     @js.native
-    def _splitDateFromTimeZone: js.Any = js.native
-    inline def _splitDateFromTimeZone_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
+    def _splitDateFromTimeZone: Any = js.native
+    inline def _splitDateFromTimeZone_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
     
     /**
       * Check whether a given date exists in the given time zone.
@@ -979,7 +978,7 @@ object datetimeMod {
     inline def timeSource_=(x: TimeSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeSource")(x.asInstanceOf[js.Any])
   }
   
-  inline def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
+  inline def isDateTime(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
   
   inline def now(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[DateTime]
   inline def now(timeZone: TimeZone): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[DateTime]

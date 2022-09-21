@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response to a update availability request.
-  */
 trait SchemaUpdateAvailabilityResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaUpdateAvailabilityResponse {
     
     inline def setAvailabilitiesUndefined: Self = StObject.set(x, "availabilities", js.undefined)
     
-    inline def setAvailabilitiesVarargs(value: SchemaAvailability*): Self = StObject.set(x, "availabilities", js.Array(value :_*))
+    inline def setAvailabilitiesVarargs(value: SchemaAvailability*): Self = StObject.set(x, "availabilities", js.Array(value*))
   }
 }

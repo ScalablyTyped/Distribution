@@ -29,7 +29,7 @@ object DescribeCoipPoolsResult {
     
     inline def setCoipPoolsUndefined: Self = StObject.set(x, "CoipPools", js.undefined)
     
-    inline def setCoipPoolsVarargs(value: CoipPool*): Self = StObject.set(x, "CoipPools", js.Array(value :_*))
+    inline def setCoipPoolsVarargs(value: CoipPool*): Self = StObject.set(x, "CoipPools", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

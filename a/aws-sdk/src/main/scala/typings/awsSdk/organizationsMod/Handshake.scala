@@ -12,14 +12,14 @@ trait Handshake extends StObject {
   var Action: js.UndefOr[ActionType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of a handshake. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
+    * The Amazon Resource Name (ARN) of a handshake. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the Amazon Web Services Service Authorization Reference.
     */
   var Arn: js.UndefOr[HandshakeArn] = js.undefined
   
   /**
     * The date and time that the handshake expires. If the recipient of the handshake request fails to respond before the specified date and time, the handshake becomes inactive and is no longer valid.
     */
-  var ExpirationTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ExpirationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier (ID) of a handshake. The originating account creates the ID when it initiates the handshake. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lowercase letters or digits.
@@ -34,7 +34,7 @@ trait Handshake extends StObject {
   /**
     * The date and time that the handshake request was made.
     */
-  var RequestedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var RequestedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Additional information that is needed to process the handshake.
@@ -63,7 +63,7 @@ object Handshake {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setExpirationTimestamp(value: Timestamp): Self = StObject.set(x, "ExpirationTimestamp", value.asInstanceOf[js.Any])
+    inline def setExpirationTimestamp(value: js.Date): Self = StObject.set(x, "ExpirationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimestampUndefined: Self = StObject.set(x, "ExpirationTimestamp", js.undefined)
     
@@ -75,9 +75,9 @@ object Handshake {
     
     inline def setPartiesUndefined: Self = StObject.set(x, "Parties", js.undefined)
     
-    inline def setPartiesVarargs(value: HandshakeParty*): Self = StObject.set(x, "Parties", js.Array(value :_*))
+    inline def setPartiesVarargs(value: HandshakeParty*): Self = StObject.set(x, "Parties", js.Array(value*))
     
-    inline def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
+    inline def setRequestedTimestamp(value: js.Date): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
     
@@ -85,7 +85,7 @@ object Handshake {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setState(value: HandshakeState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

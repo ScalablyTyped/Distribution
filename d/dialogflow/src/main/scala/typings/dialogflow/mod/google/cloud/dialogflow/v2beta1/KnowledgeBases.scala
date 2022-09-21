@@ -8,7 +8,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeBases.Upd
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a KnowledgeBases */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases")
 @js.native
-class KnowledgeBases protected () extends Service {
+open class KnowledgeBases protected () extends Service {
   /**
     * Constructs a new KnowledgeBases service.
     * @param rpcImpl RPC implementation
@@ -117,21 +116,21 @@ object KnowledgeBases {
     * @param error Error, if any
     * @param [response] KnowledgeBase
     */
-  type CreateKnowledgeBaseCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
+  type CreateKnowledgeBaseCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.KnowledgeBases#deleteKnowledgeBase}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteKnowledgeBaseCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteKnowledgeBaseCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.KnowledgeBases#getKnowledgeBase}.
     * @param error Error, if any
     * @param [response] KnowledgeBase
     */
-  type GetKnowledgeBaseCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
+  type GetKnowledgeBaseCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.KnowledgeBases#listKnowledgeBases}.
@@ -139,7 +138,7 @@ object KnowledgeBases {
     * @param [response] ListKnowledgeBasesResponse
     */
   type ListKnowledgeBasesCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[ListKnowledgeBasesResponse], 
     Unit
   ]
@@ -149,5 +148,5 @@ object KnowledgeBases {
     * @param error Error, if any
     * @param [response] KnowledgeBase
     */
-  type UpdateKnowledgeBaseCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
+  type UpdateKnowledgeBaseCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[KnowledgeBase], Unit]
 }

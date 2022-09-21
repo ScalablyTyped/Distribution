@@ -12,12 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PoolAttributes extends StObject {
   
   /**
-    * Further statistics can be enabled by setting the createPool() poolAttrs parameter _enableStats to true.
-    * Statistics can be output to the console by calling the pool._logStats() method.
-    */
-  var _enableStats: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * An alias of connectionString. Only one of the properties should be used.
     * The Oracle database instance used by connections in the pool.
     * The string can be an Easy Connect string, or a Net Service Name from a tnsnames.ora file, or the name of a local Oracle database instance.
@@ -40,6 +34,12 @@ trait PoolAttributes extends StObject {
     * @since 2.2
     */
   var edition: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Further statistics can be enabled by setting the createPool() poolAttrs parameter _enableStats to true.
+    * Statistics can be output to the console by calling the pool.logStatistics() method.
+    */
+  var enableStatistics: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate whether Oracle Call Interface events mode should be enabled for this pool.
@@ -106,7 +106,7 @@ trait PoolAttributes extends StObject {
   /**
     * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
     * This optional property overrides the oracledb.poolMaxPerShard property.
-    * 
+    *
     * @since 4.1
     */
   var poolMaxPerShard: js.UndefOr[Double] = js.undefined
@@ -139,14 +139,14 @@ trait PoolAttributes extends StObject {
   
   /**
     * The maximum number of pending pool.getConnection() calls that can be queued.
-    * 
+    *
     * When the number of pool.getConnection() calls that have been queued waiting for an available connection reaches queueMax,
     * then any future pool.getConnection() calls will immediately return an error and will not be queued.
-    * 
+    *
     * If queueMax is -1, then the queue length is not limited.
-    * 
+    *
     * This property may be overridden when creating a connection pool.
-    * 
+    *
     * @default 500
     */
   var queueMax: js.UndefOr[Double] = js.undefined
@@ -154,7 +154,7 @@ trait PoolAttributes extends StObject {
   /**
     * This property was removed in node-oracledb 3.0 and queuing was always enabled.
     * In node-oracledb 5.0, set queueMax to 0 to disable queuing.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#connpoolqueue
     */
   var queueRequests: js.UndefOr[Double] = js.undefined
@@ -230,6 +230,10 @@ object PoolAttributes {
     inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
     
     inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+    
+    inline def setEnableStatistics(value: Boolean): Self = StObject.set(x, "enableStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setEnableStatisticsUndefined: Self = StObject.set(x, "enableStatistics", js.undefined)
     
     inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
@@ -309,9 +313,5 @@ object PoolAttributes {
     inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
-    
-    inline def set_enableStats(value: Boolean): Self = StObject.set(x, "_enableStats", value.asInstanceOf[js.Any])
-    
-    inline def set_enableStatsUndefined: Self = StObject.set(x, "_enableStats", js.undefined)
   }
 }

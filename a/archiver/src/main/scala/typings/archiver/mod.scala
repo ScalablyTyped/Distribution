@@ -17,12 +17,11 @@ import typings.archiver.archiverStrings.progress
 import typings.archiver.archiverStrings.unpipe
 import typings.archiver.archiverStrings.warning
 import typings.glob.mod.IOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.zlibMod.ZlibOptions
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,23 +38,25 @@ object mod {
   
   @JSImport("archiver", "ArchiverError")
   @js.native
-  class ArchiverError protected ()
+  open class ArchiverError protected ()
     extends StObject
        with Error {
-    def this(code: String, data: js.Any) = this()
+    def this(code: String, data: Any) = this()
     
     var code: String = js.native
     
     // Since archiver format support is modular, we cannot enumerate all possible error codes, as the modules can throw arbitrary ones.
-    var data: js.Any = js.native
+    var data: Any = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var path: js.UndefOr[js.Any] = js.native
+    var path: js.UndefOr[Any] = js.native
   }
   
   inline def create(format: String): Archiver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
@@ -64,6 +65,7 @@ object mod {
   /** Check if the format is already registered. */
   inline def isRegisteredFormat(format: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegisteredFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  // tslint:disable-next-line:ban-types Function
   inline def registerFormat(format: String, module: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(format.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
@@ -81,10 +83,10 @@ object mod {
     def append(source: Readable, data: EntryData | TarEntryData): this.type = js.native
     def append(source: Readable, data: ZipEntryData): this.type = js.native
     
+    /** if false is passed for destpath, the path of a chunk of data in the archive is set to the root */
     def directory(dirpath: String, destpath: String): this.type = js.native
     def directory(dirpath: String, destpath: String, data: PartialEntryData): this.type = js.native
     def directory(dirpath: String, destpath: String, data: EntryDataFunction): this.type = js.native
-    /** if false is passed for destpath, the path of a chunk of data in the archive is set to the root */
     @JSName("directory")
     def directory_false(dirpath: String, destpath: `false`): this.type = js.native
     @JSName("directory")
@@ -99,36 +101,30 @@ object mod {
     def glob(pattern: String, options: IOptions): this.type = js.native
     def glob(pattern: String, options: IOptions, data: PartialEntryData): this.type = js.native
     
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    def on(event: close | drain | finish, listener: js.Function0[Unit]): this.type = js.native
+    def on(
+      event: error | pipe | unpipe | warning,
+      listener: js.Function1[(/* error */ ArchiverError) | (/* src */ Readable), Unit]
+    ): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
     @JSName("on")
-    def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
     def on_entry(event: entry, listener: js.Function1[/* entry */ EntryData, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ ArchiverError, Unit]): this.type = js.native
-    @JSName("on")
-    def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("on")
     def on_progress(event: progress, listener: js.Function1[/* progress */ ProgressData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("on")
-    def on_warning(event: warning, listener: js.Function1[/* error */ ArchiverError, Unit]): this.type = js.native
     
     def pointer(): Double = js.native
     
     def setFormat(format: String): this.type = js.native
     
+    // tslint:disable-next-line:ban-types Function
     def setModule(module: js.Function): this.type = js.native
     
     def symlink(filepath: String, target: String): this.type = js.native
     def symlink(filepath: String, target: String, mode: Double): this.type = js.native
     
+    // tslint:disable-next-line:ban-types Function
     def use(plugin: js.Function): this.type = js.native
   }
   
@@ -147,7 +143,7 @@ object mod {
   }
   
   // tslint:disable-next-line:ban-types support for ConstructorFn function and classes
-  type ConstructorFn[T] = js.Function | (Instantiable1[/* params (repeated) */ js.Any, T])
+  type ConstructorFn[T] = js.Function | (Instantiable1[/* params (repeated) */ Any, T])
   
   trait CoreOptions extends StObject {
     
@@ -171,7 +167,7 @@ object mod {
   trait EntryData extends StObject {
     
     /** Sets the entry date */
-    var date: js.UndefOr[Date | String] = js.undefined
+    var date: js.UndefOr[js.Date | String] = js.undefined
     
     /** Sets the entry permissions */
     var mode: js.UndefOr[Double] = js.undefined
@@ -200,7 +196,7 @@ object mod {
     
     extension [Self <: EntryData](x: Self) {
       
-      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -372,6 +368,9 @@ object mod {
     
     var forceZip64: js.UndefOr[Boolean] = js.undefined
     
+    /** @default false */
+    var namePrependSlash: js.UndefOr[Boolean] = js.undefined
+    
     var store: js.UndefOr[Boolean] = js.undefined
     
     var zlib: js.UndefOr[ZlibOptions] = js.undefined
@@ -396,6 +395,10 @@ object mod {
       inline def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
       
       inline def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
+      
+      inline def setNamePrependSlash(value: Boolean): Self = StObject.set(x, "namePrependSlash", value.asInstanceOf[js.Any])
+      
+      inline def setNamePrependSlashUndefined: Self = StObject.set(x, "namePrependSlash", js.undefined)
       
       inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

@@ -24,6 +24,6 @@ object DeleteFacesResponse {
     
     inline def setDeletedFacesUndefined: Self = StObject.set(x, "DeletedFaces", js.undefined)
     
-    inline def setDeletedFacesVarargs(value: FaceId*): Self = StObject.set(x, "DeletedFaces", js.Array(value :_*))
+    inline def setDeletedFacesVarargs(value: FaceId*): Self = StObject.set(x, "DeletedFaces", js.Array(value*))
   }
 }

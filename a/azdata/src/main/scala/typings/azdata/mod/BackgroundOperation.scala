@@ -17,10 +17,10 @@ trait BackgroundOperation extends StObject {
   /**
     * Event raised when operation is canceled in UI
     */
-  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * Event raised when operation is canceled in UI
     */

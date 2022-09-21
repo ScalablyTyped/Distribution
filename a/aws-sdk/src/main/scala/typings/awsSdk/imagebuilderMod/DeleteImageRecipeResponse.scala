@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteImageRecipeResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image recipe that was deleted. 
+    * The Amazon Resource Name (ARN) of the image recipe that was deleted.
     */
   var imageRecipeArn: js.UndefOr[ImageRecipeArn] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

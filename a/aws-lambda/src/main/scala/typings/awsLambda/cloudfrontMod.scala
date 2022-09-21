@@ -2,8 +2,14 @@ package typings.awsLambda
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.anon.Action
+import typings.awsLambda.anon.Cookies
 import typings.awsLambda.anon.DistributionDomainName
+import typings.awsLambda.anon.DistributionId
+import typings.awsLambda.anon.Headers
+import typings.awsLambda.anon.Ip
 import typings.awsLambda.anon.Key
+import typings.awsLambda.anon.MultiValue
+import typings.awsLambda.anon.MultiValueValue
 import typings.awsLambda.awsLambdaStrings.`origin-access-identity`
 import typings.awsLambda.awsLambdaStrings.base64
 import typings.awsLambda.awsLambdaStrings.http
@@ -69,7 +75,7 @@ object cloudfrontMod {
       
       inline def setSslProtocols(value: js.Array[String]): Self = StObject.set(x, "sslProtocols", value.asInstanceOf[js.Any])
       
-      inline def setSslProtocolsVarargs(value: String*): Self = StObject.set(x, "sslProtocols", js.Array(value :_*))
+      inline def setSslProtocolsVarargs(value: String*): Self = StObject.set(x, "sslProtocols", js.Array(value*))
     }
   }
   
@@ -89,6 +95,88 @@ object cloudfrontMod {
       inline def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
+  
+  type CloudFrontFunctionsCookies = StringDictionary[MultiValue]
+  
+  trait CloudFrontFunctionsEvent extends StObject {
+    
+    /**
+      * ## Context object
+      * The `context` object contains contextual information about the event. It includes the following fields:
+      * - `distributionDomainName`
+      * - `distributionId`
+      * - `eventType`
+      * - `requestId`
+      */
+    var context: DistributionId
+    
+    /**
+      * ## Request object
+      * The `request` object contains a representation of a viewer-to-CloudFront HTTP request.
+      * In the `event` object that’s passed to your function, the `request` object represents the
+      * actual request that CloudFront received from the viewer.
+      *
+      * If your function code returns a `request` object to CloudFront, it must use this same structure.
+      *
+      * The `request` object contains the following fields:
+      * - `method`
+      * - `uri`
+      * - `querystring`
+      * - `headers`
+      * - `cookies`
+      */
+    var request: Cookies
+    
+    /**
+      * ## Response object
+      *
+      * The `response` object contains a representation of a CloudFront-to-viewer HTTP response.
+      * In the `event` object that’s passed to your function, the `response` object represents CloudFront’s actual response to a viewer request.
+      *
+      * If your function code returns a `response` object, it must use this same structure.
+      *
+      * The `response` object contains the following fields:
+      */
+    var response: Headers
+    
+    /**
+      * ## Version field
+      * The version field contains a string that specifies the version of the
+      * CloudFront Functions event object. The current version is 1.0.
+      */
+    var version: String
+    
+    /**
+      * ## Viewer object
+      * The `viewer` object contains an `ip` field whose value is the IP address of the viewer (client) that sent the request.
+      * If the viewer request came through an HTTP proxy or a load balancer, the value is the IP address of the proxy or load balancer.
+      */
+    var viewer: Ip
+  }
+  object CloudFrontFunctionsEvent {
+    
+    inline def apply(context: DistributionId, request: Cookies, response: Headers, version: String, viewer: Ip): CloudFrontFunctionsEvent = {
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], viewer = viewer.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CloudFrontFunctionsEvent]
+    }
+    
+    extension [Self <: CloudFrontFunctionsEvent](x: Self) {
+      
+      inline def setContext(value: DistributionId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setRequest(value: Cookies): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      
+      inline def setResponse(value: Headers): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setViewer(value: Ip): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type CloudFrontFunctionsHeaders = StringDictionary[MultiValueValue]
+  
+  type CloudFrontFunctionsQuerystring = StringDictionary[MultiValueValue]
   
   type CloudFrontHeaders = StringDictionary[js.Array[Key]]
   

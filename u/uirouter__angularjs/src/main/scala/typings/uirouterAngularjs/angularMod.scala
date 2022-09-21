@@ -8,5 +8,5 @@ object angularMod {
   
   @JSImport("@uirouter/angularjs/lib/angular", "ng")
   @js.native
-  val ng: js.Any = js.native
+  val ng: Any = js.native
 }

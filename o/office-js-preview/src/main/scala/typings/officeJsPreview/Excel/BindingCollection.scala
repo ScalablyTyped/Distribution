@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the collection of all the binding objects that are part of the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -22,102 +22,102 @@ trait BindingCollection
   extends StObject
      with ClientObject {
   
+  def add(
+    range: String,
+    bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text,
+    id: String
+  ): Binding = js.native
   def add(range: String, bindingType: BindingType, id: String): Binding = js.native
   /**
     * Add a new binding to a particular Range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
-    * @param range Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
+    * @param range Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
+    */
+  def add(
+    range: Range,
+    bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text,
+    id: String
+  ): Binding = js.native
+  /**
+    * Add a new binding to a particular Range.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.3]
+    *
+    * @param range Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
     */
   def add(range: Range, bindingType: BindingType, id: String): Binding = js.native
   
   /**
     * Add a new binding based on a named item in the workbook.
-    If the named item references to multiple areas, the "InvalidReference" error will be returned.
+    If the named item references to multiple areas, the `InvalidReference` error will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
     * @param name Name from which to create binding.
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
     */
-  def addFromNamedItem(name: String, bindingType: BindingType, id: String): Binding = js.native
+  def addFromNamedItem(
+    name: String,
+    bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text,
+    id: String
+  ): Binding = js.native
   /**
     * Add a new binding based on a named item in the workbook.
-    If the named item references to multiple areas, the "InvalidReference" error will be returned.
+    If the named item references to multiple areas, the `InvalidReference` error will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
     * @param name Name from which to create binding.
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
     */
-  @JSName("addFromNamedItem")
-  def addFromNamedItem_Range(name: String, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range, id: String): Binding = js.native
-  @JSName("addFromNamedItem")
-  def addFromNamedItem_Table(name: String, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Table, id: String): Binding = js.native
-  @JSName("addFromNamedItem")
-  def addFromNamedItem_Text(name: String, bindingType: Text, id: String): Binding = js.native
+  def addFromNamedItem(name: String, bindingType: BindingType, id: String): Binding = js.native
   
   /**
     * Add a new binding based on the current selection.
-    If the selection has multiple areas, the "InvalidReference" error will be returned.
+    If the selection has multiple areas, the `InvalidReference` error will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
+    */
+  def addFromSelection(
+    bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text,
+    id: String
+  ): Binding = js.native
+  /**
+    * Add a new binding based on the current selection.
+    If the selection has multiple areas, the `InvalidReference` error will be returned.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.3]
+    *
+    * @param bindingType Type of binding. See `Excel.BindingType`.
+    * @param id Name of the binding.
     */
   def addFromSelection(bindingType: BindingType, id: String): Binding = js.native
-  /**
-    * Add a new binding based on the current selection.
-    If the selection has multiple areas, the "InvalidReference" error will be returned.
-    *
-    * [Api set: ExcelApi 1.3]
-    *
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
-    */
-  @JSName("addFromSelection")
-  def addFromSelection_Range(bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range, id: String): Binding = js.native
-  @JSName("addFromSelection")
-  def addFromSelection_Table(bindingType: typings.officeJsPreview.officeJsPreviewStrings.Table, id: String): Binding = js.native
-  @JSName("addFromSelection")
-  def addFromSelection_Text(bindingType: Text, id: String): Binding = js.native
-  
-  @JSName("add")
-  def add_Range(range: String, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range, id: String): Binding = js.native
-  /**
-    * Add a new binding to a particular Range.
-    *
-    * [Api set: ExcelApi 1.3]
-    *
-    * @param range Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-    * @param bindingType Type of binding. See Excel.BindingType.
-    * @param id Name of binding.
-    */
-  @JSName("add")
-  def add_Range(range: Range, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Range, id: String): Binding = js.native
-  @JSName("add")
-  def add_Table(range: String, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Table, id: String): Binding = js.native
-  @JSName("add")
-  def add_Table(range: Range, bindingType: typings.officeJsPreview.officeJsPreviewStrings.Table, id: String): Binding = js.native
-  @JSName("add")
-  def add_Text(range: String, bindingType: Text, id: String): Binding = js.native
-  @JSName("add")
-  def add_Text(range: Range, bindingType: Text, id: String): Binding = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_BindingCollection: RequestContext = js.native
   
   /**
-    *
     * Returns the number of bindings in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -125,6 +125,7 @@ trait BindingCollection
   /**
     * Gets the number of bindings in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -132,15 +133,17 @@ trait BindingCollection
   /**
     * Gets a binding object by ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param id Id of the binding object to be retrieved.
+    * @param id ID of the binding object to be retrieved.
     */
   def getItem(id: String): Binding = js.native
   
   /**
     * Gets a binding object based on its position in the items array.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
@@ -148,11 +151,13 @@ trait BindingCollection
   def getItemAt(index: Double): Binding = js.native
   
   /**
-    * Gets a binding object by ID. If the binding object does not exist, will return a null object.
+    * Gets a binding object by ID. If the binding object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
-    * @param id Id of the binding object to be retrieved.
+    * @param id ID of the binding object to be retrieved.
     */
   def getItemOrNullObject(id: String): Binding = js.native
   

@@ -8,5 +8,5 @@ object queryInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/QueryInput", "QueryInput")
   @js.native
-  val QueryInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val QueryInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

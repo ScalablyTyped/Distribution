@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.StoryPointSwitchEvent")
 @js.native
-class StoryPointSwitchEvent ()
+open class StoryPointSwitchEvent ()
   extends StObject
      with typings.tableau.tableau.StoryPointSwitchEvent {
   

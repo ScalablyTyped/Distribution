@@ -1,17 +1,87 @@
 package typings.egjsAxes
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import typings.egjsAxes.axesMod.AxesOption
 import typings.egjsAxes.axisManagerMod.Axis
-import typings.egjsAxes.constMod.DIRECTION
-import typings.egjsAxes.panInputMod.PanInput
-import typings.egjsAxes.panInputMod.PanInputOption
-import typings.std.HTMLElement
+import typings.egjsAxes.eventManagerMod.EventManager
+import typings.egjsAxes.interruptManagerMod.InterruptManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait AnimationManager extends StObject {
+    
+    var animationManager: typings.egjsAxes.animationManagerMod.AnimationManager
+    
+    var axisManager: typings.egjsAxes.axisManagerMod.AxisManager
+    
+    var eventManager: EventManager
+    
+    var interruptManager: InterruptManager
+    
+    var options: AxesOption
+  }
+  object AnimationManager {
+    
+    inline def apply(
+      animationManager: typings.egjsAxes.animationManagerMod.AnimationManager,
+      axisManager: typings.egjsAxes.axisManagerMod.AxisManager,
+      eventManager: EventManager,
+      interruptManager: InterruptManager,
+      options: AxesOption
+    ): AnimationManager = {
+      val __obj = js.Dynamic.literal(animationManager = animationManager.asInstanceOf[js.Any], axisManager = axisManager.asInstanceOf[js.Any], eventManager = eventManager.asInstanceOf[js.Any], interruptManager = interruptManager.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AnimationManager]
+    }
+    
+    extension [Self <: AnimationManager](x: Self) {
+      
+      inline def setAnimationManager(value: typings.egjsAxes.animationManagerMod.AnimationManager): Self = StObject.set(x, "animationManager", value.asInstanceOf[js.Any])
+      
+      inline def setAxisManager(value: typings.egjsAxes.axisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
+      
+      inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+      
+      inline def setInterruptManager(value: InterruptManager): Self = StObject.set(x, "interruptManager", value.asInstanceOf[js.Any])
+      
+      inline def setOptions(value: AxesOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AxisManager extends StObject {
+    
+    var axisManager: typings.egjsAxes.axisManagerMod.AxisManager
+    
+    var eventManager: EventManager
+    
+    var interruptManager: InterruptManager
+    
+    var options: AxesOption
+  }
+  object AxisManager {
+    
+    inline def apply(
+      axisManager: typings.egjsAxes.axisManagerMod.AxisManager,
+      eventManager: EventManager,
+      interruptManager: InterruptManager,
+      options: AxesOption
+    ): AxisManager = {
+      val __obj = js.Dynamic.literal(axisManager = axisManager.asInstanceOf[js.Any], eventManager = eventManager.asInstanceOf[js.Any], interruptManager = interruptManager.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AxisManager]
+    }
+    
+    extension [Self <: AxisManager](x: Self) {
+      
+      inline def setAxisManager(value: typings.egjsAxes.axisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
+      
+      inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+      
+      inline def setInterruptManager(value: InterruptManager): Self = StObject.set(x, "interruptManager", value.asInstanceOf[js.Any])
+      
+      inline def setOptions(value: AxesOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait DestPos extends StObject {
     
@@ -34,17 +104,24 @@ object anon {
     }
   }
   
-  @js.native
-  trait TypeofPanInput
-    extends StObject
-       with Instantiable1[(/* el */ HTMLElement) | (/* el */ String), PanInput]
-       with Instantiable2[(/* el */ HTMLElement) | (/* el */ String), /* options */ PanInputOption, PanInput] {
+  trait X extends StObject {
     
-    def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = js.native
+    var x: Double
     
-    def getNextOffset(speeds: js.Array[Double], deceleration: Double): js.Array[Double] = js.native
+    var y: Double
+  }
+  object X {
     
-    def useDirection(checkType: DIRECTION, direction: DIRECTION): Boolean = js.native
-    def useDirection(checkType: DIRECTION, direction: DIRECTION, userDirection: DIRECTION): Boolean = js.native
+    inline def apply(x: Double, y: Double): X = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[X]
+    }
+    
+    extension [Self <: X](x: Self) {
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
   }
 }

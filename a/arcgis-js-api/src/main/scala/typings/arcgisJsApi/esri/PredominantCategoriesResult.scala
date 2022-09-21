@@ -33,6 +33,6 @@ object PredominantCategoriesResult {
     
     inline def setPredominantCategoryInfos(value: js.Array[PredominantCategoriesResultPredominantCategoryInfos]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
     
-    inline def setPredominantCategoryInfosVarargs(value: PredominantCategoriesResultPredominantCategoryInfos*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
+    inline def setPredominantCategoryInfosVarargs(value: PredominantCategoriesResultPredominantCategoryInfos*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value*))
   }
 }

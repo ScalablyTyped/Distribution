@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A newly constructed Shape has a default .figure of "None", which constructs a rectangular geometry, and is filled and stroked with a black brush.
   */
-class Shape () extends GraphObject {
+open class Shape () extends GraphObject {
   
   /**Gets or sets the figure name, used to construct a Geometry.*/
   var figure: String = js.native

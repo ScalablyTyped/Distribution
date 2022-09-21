@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(opts: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(opts: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("koa-dec-router", "CTRL_PATH")
   @js.native
@@ -28,23 +28,23 @@ object mod {
   @js.native
   val ROUTES: js.Symbol = js.native
   
-  inline def all(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def all(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def controller(path: js.Any, opts: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def controller(path: js.Any, opts: Unit, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def controller(path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def controller(path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
-  inline def del(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def del(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def get(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def head(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def head(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def patch(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def patch(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def post(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def post(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def put(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def put(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def route(method: String, path: js.Any, opts: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def route(method: String, path: js.Any, opts: Unit, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def route(method: String, path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def route(method: String, path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourcePermissionsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The ID for the file or Team Drive.
+    * The ID for the file or shared drive.
     */
   var fileId: js.UndefOr[String] = js.undefined
   
@@ -38,20 +29,22 @@ trait ParamsResourcePermissionsPatch
   var requestBody: js.UndefOr[SchemaPermission] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether changing a role to 'owner' downgrades the current owners to
-    * writers. Does nothing if the specified role is not 'owner'.
+    * Whether changing a role to 'owner' downgrades the current owners to writers. Does nothing if the specified role is not 'owner'.
     */
   var transferOwnership: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Issue the request as a domain administrator; if set to true, then the
-    * requester will be granted access if they are an administrator of the
-    * domain to which the item belongs.
+    * Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
     */
   var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
 }
@@ -63,10 +56,6 @@ object ParamsResourcePermissionsPatch {
   }
   
   extension [Self <: ParamsResourcePermissionsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
@@ -83,6 +72,10 @@ object ParamsResourcePermissionsPatch {
     inline def setRequestBody(value: SchemaPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

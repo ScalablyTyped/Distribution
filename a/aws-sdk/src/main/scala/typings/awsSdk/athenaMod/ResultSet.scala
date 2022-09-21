@@ -33,6 +33,6 @@ object ResultSet {
     
     inline def setRowsUndefined: Self = StObject.set(x, "Rows", js.undefined)
     
-    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value*))
   }
 }

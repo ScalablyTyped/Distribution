@@ -4,22 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * When a task splits using WorkItemStatus.dynamic_source_split, this message
-  * describes the two parts of the split relative to the description of the
-  * current task&#39;s input.
-  */
 trait SchemaDynamicSourceSplit extends StObject {
   
   /**
-    * Primary part (continued to be processed by worker). Specified relative to
-    * the previously-current source. Becomes current.
+    * Primary part (continued to be processed by worker). Specified relative to the previously-current source. Becomes current.
     */
   var primary: js.UndefOr[SchemaDerivedSource] = js.undefined
   
   /**
-    * Residual part (returned to the pool of work). Specified relative to the
-    * previously-current source.
+    * Residual part (returned to the pool of work). Specified relative to the previously-current source.
     */
   var residual: js.UndefOr[SchemaDerivedSource] = js.undefined
 }

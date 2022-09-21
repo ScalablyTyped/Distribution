@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PipeableContravariant[F] extends StObject {
   
   def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
   ]
 }
 object PipeableContravariant {
   
   inline def apply[F](
-    contramap: js.Function1[js.Any, js.Any] => js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    contramap: js.Function1[Any, Any] => js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
     ]
   ): PipeableContravariant[F] = {
     val __obj = js.Dynamic.literal(contramap = js.Any.fromFunction1(contramap))
@@ -26,9 +26,9 @@ object PipeableContravariant {
   extension [Self <: PipeableContravariant[?], F](x: Self & PipeableContravariant[F]) {
     
     inline def setContramap(
-      value: js.Function1[js.Any, js.Any] => js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+      value: js.Function1[Any, Any] => js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
         ]
     ): Self = StObject.set(x, "contramap", js.Any.fromFunction1(value))
   }

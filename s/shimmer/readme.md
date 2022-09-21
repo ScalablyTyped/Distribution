@@ -10,10 +10,10 @@ Safe(r) monkeypatching for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | shimmer |
 | Keywords           | monkeypatch, swizzle, wrapping, danger, hmm, shim |
-| # releases         | 2 |
-| # dependents       | 214 |
-| # downloads        | 97935581 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5038374E7 |
+| # stars            | 221.0 |
 
 ## Links
 - [Homepage](https://github.com/othiym23/shimmer#readme)

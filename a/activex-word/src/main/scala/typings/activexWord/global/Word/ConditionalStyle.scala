@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ConditionalStyle")
 @js.native
-/* private */ class ConditionalStyle ()
+/* private */ open class ConditionalStyle ()
   extends StObject
      with typings.activexWord.Word.ConditionalStyle {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RightPadding: Double = js.native

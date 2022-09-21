@@ -1,473 +1,465 @@
 package typings.forceGraph
 
-import typings.forceGraph.anon.ForceGraphInstancexnumber
+import org.scalablytyped.runtime.StringDictionary
+import typings.forceGraph.anon.K
 import typings.forceGraph.anon.X
+import typings.forceGraph.anon.Y
 import typings.forceGraph.forceGraphStrings.center
 import typings.forceGraph.forceGraphStrings.charge
 import typings.forceGraph.forceGraphStrings.link
-import typings.forceGraph.mod.ForceGraph.ForceGraphInstance
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  object default {
+  @JSImport("force-graph", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): ForceGraphInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ForceGraphInstance]
+  
+  type Accessor[In, Out] = Out | String | (js.Function1[/* obj */ In, Out])
+  
+  type CanvasCustomRenderFn[T] = js.Function3[
+    /* obj */ T, 
+    /* canvasContext */ CanvasRenderingContext2D, 
+    /* globalScale */ Double, 
+    Unit
+  ]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.forceGraph.forceGraphStrings.replace
+    - typings.forceGraph.forceGraphStrings.before
+    - typings.forceGraph.forceGraphStrings.after
+  */
+  trait CanvasCustomRenderMode extends StObject
+  object CanvasCustomRenderMode {
     
-    inline def apply(): ForceGraphInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ForceGraphInstance]
+    inline def after: typings.forceGraph.forceGraphStrings.after = "after".asInstanceOf[typings.forceGraph.forceGraphStrings.after]
     
-    @JSImport("force-graph", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    inline def before: typings.forceGraph.forceGraphStrings.before = "before".asInstanceOf[typings.forceGraph.forceGraphStrings.before]
+    
+    inline def replace: typings.forceGraph.forceGraphStrings.replace = "replace".asInstanceOf[typings.forceGraph.forceGraphStrings.replace]
   }
   
-  object ForceGraph {
+  type CanvasCustomRenderModeFn[T] = js.Function1[/* obj */ T, CanvasCustomRenderMode | Any]
+  
+  type CanvasPointerAreaPaintFn[T] = js.Function4[
+    /* obj */ T, 
+    /* paintColor */ String, 
+    /* canvasContext */ CanvasRenderingContext2D, 
+    /* globalScale */ Double, 
+    Unit
+  ]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.forceGraph.forceGraphStrings.td
+    - typings.forceGraph.forceGraphStrings.bu
+    - typings.forceGraph.forceGraphStrings.lr
+    - typings.forceGraph.forceGraphStrings.rl
+    - typings.forceGraph.forceGraphStrings.radialout
+    - typings.forceGraph.forceGraphStrings.radialin
+  */
+  trait DagMode extends StObject
+  object DagMode {
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.forceGraph.forceGraphStrings.td
-      - typings.forceGraph.forceGraphStrings.bu
-      - typings.forceGraph.forceGraphStrings.lr
-      - typings.forceGraph.forceGraphStrings.rl
-      - typings.forceGraph.forceGraphStrings.radialout
-      - typings.forceGraph.forceGraphStrings.radialin
-    */
-    trait DagMode extends StObject
-    object DagMode {
-      
-      inline def bu: typings.forceGraph.forceGraphStrings.bu = "bu".asInstanceOf[typings.forceGraph.forceGraphStrings.bu]
-      
-      inline def lr: typings.forceGraph.forceGraphStrings.lr = "lr".asInstanceOf[typings.forceGraph.forceGraphStrings.lr]
-      
-      inline def radialin: typings.forceGraph.forceGraphStrings.radialin = "radialin".asInstanceOf[typings.forceGraph.forceGraphStrings.radialin]
-      
-      inline def radialout: typings.forceGraph.forceGraphStrings.radialout = "radialout".asInstanceOf[typings.forceGraph.forceGraphStrings.radialout]
-      
-      inline def rl: typings.forceGraph.forceGraphStrings.rl = "rl".asInstanceOf[typings.forceGraph.forceGraphStrings.rl]
-      
-      inline def td: typings.forceGraph.forceGraphStrings.td = "td".asInstanceOf[typings.forceGraph.forceGraphStrings.td]
+    inline def bu: typings.forceGraph.forceGraphStrings.bu = "bu".asInstanceOf[typings.forceGraph.forceGraphStrings.bu]
+    
+    inline def lr: typings.forceGraph.forceGraphStrings.lr = "lr".asInstanceOf[typings.forceGraph.forceGraphStrings.lr]
+    
+    inline def radialin: typings.forceGraph.forceGraphStrings.radialin = "radialin".asInstanceOf[typings.forceGraph.forceGraphStrings.radialin]
+    
+    inline def radialout: typings.forceGraph.forceGraphStrings.radialout = "radialout".asInstanceOf[typings.forceGraph.forceGraphStrings.radialout]
+    
+    inline def rl: typings.forceGraph.forceGraphStrings.rl = "rl".asInstanceOf[typings.forceGraph.forceGraphStrings.rl]
+    
+    inline def td: typings.forceGraph.forceGraphStrings.td = "td".asInstanceOf[typings.forceGraph.forceGraphStrings.td]
+  }
+  
+  @js.native
+  trait ForceFn
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    def apply(alpha: Double): Unit = js.native
+    
+    var initialize: js.UndefOr[js.Function2[/* nodes */ js.Array[NodeObject], /* repeated */ Any, Unit]] = js.native
+  }
+  
+  @js.native
+  trait ForceGraphGenericInstance[ChainableInstance] extends StObject {
+    
+    def apply(element: HTMLElement): ChainableInstance = js.native
+    
+    def _destructor(): Unit = js.native
+    
+    def autoPauseRedraw(): ChainableInstance = js.native
+    def autoPauseRedraw(enable: Boolean): ChainableInstance = js.native
+    // Render control
+    @JSName("autoPauseRedraw")
+    def autoPauseRedraw_Boolean(): Boolean = js.native
+    
+    def backgroundColor(): ChainableInstance = js.native
+    def backgroundColor(color: String): ChainableInstance = js.native
+    @JSName("backgroundColor")
+    def backgroundColor_String(): String = js.native
+    
+    def centerAt(): ChainableInstance = js.native
+    def centerAt(x: Double): ChainableInstance = js.native
+    def centerAt(x: Double, y: Double): ChainableInstance = js.native
+    def centerAt(x: Double, y: Double, durationMs: Double): ChainableInstance = js.native
+    def centerAt(x: Double, y: Unit, durationMs: Double): ChainableInstance = js.native
+    def centerAt(x: Unit, y: Double): ChainableInstance = js.native
+    def centerAt(x: Unit, y: Double, durationMs: Double): ChainableInstance = js.native
+    def centerAt(x: Unit, y: Unit, durationMs: Double): ChainableInstance = js.native
+    @JSName("centerAt")
+    def centerAt_X(): X = js.native
+    
+    def cooldownTicks(): Double = js.native
+    def cooldownTicks(ticks: Double): ChainableInstance = js.native
+    
+    def cooldownTime(): Double = js.native
+    def cooldownTime(milliseconds: Double): ChainableInstance = js.native
+    
+    def d3AlphaDecay(): Double = js.native
+    def d3AlphaDecay(alphaDecay: Double): ChainableInstance = js.native
+    
+    def d3AlphaMin(): Double = js.native
+    def d3AlphaMin(alphaMin: Double): ChainableInstance = js.native
+    
+    def d3Force(forceName: link | charge | center): js.UndefOr[ForceFn] = js.native
+    def d3Force(forceName: link | charge | center, forceFn: ForceFn): ChainableInstance = js.native
+    def d3Force(forceName: String): js.UndefOr[ForceFn] = js.native
+    def d3Force(forceName: String, forceFn: ForceFn): ChainableInstance = js.native
+    
+    def d3ReheatSimulation(): ChainableInstance = js.native
+    
+    def d3VelocityDecay(): Double = js.native
+    def d3VelocityDecay(velocityDecay: Double): ChainableInstance = js.native
+    
+    def dagLevelDistance(): Double | Null = js.native
+    def dagLevelDistance(distance: Double): ChainableInstance = js.native
+    
+    // Force engine (d3-force) configuration
+    def dagMode(): DagMode = js.native
+    def dagMode(mode: DagMode): ChainableInstance = js.native
+    
+    def dagNodeFilter(): js.Function1[/* node */ NodeObject, Boolean] = js.native
+    def dagNodeFilter(filterFn: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
+    
+    def emitParticle(link: LinkObject): ChainableInstance = js.native
+    
+    def enableNodeDrag(): Boolean = js.native
+    def enableNodeDrag(enable: Boolean): ChainableInstance = js.native
+    
+    def enablePanInteraction(): Boolean = js.native
+    def enablePanInteraction(enable: Boolean): ChainableInstance = js.native
+    
+    def enablePointerInteraction(): ChainableInstance = js.native
+    def enablePointerInteraction(enable: Boolean): ChainableInstance = js.native
+    @JSName("enablePointerInteraction")
+    def enablePointerInteraction_Boolean(): Boolean = js.native
+    
+    def enableZoomInteraction(): Boolean = js.native
+    def enableZoomInteraction(enable: Boolean): ChainableInstance = js.native
+    
+    // Utility
+    def getGraphBbox(): Y = js.native
+    def getGraphBbox(nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): Y = js.native
+    
+    def graph2ScreenCoords(x: Double, y: Double): X = js.native
+    
+    // Data input
+    def graphData(): GraphData = js.native
+    def graphData(data: GraphData): ChainableInstance = js.native
+    
+    def height(): Double = js.native
+    def height(height: Double): ChainableInstance = js.native
+    
+    def linkAutoColorBy(): LinkAccessor[String | Null] = js.native
+    def linkAutoColorBy(colorByAccessor: LinkAccessor[String | Null]): ChainableInstance = js.native
+    
+    def linkCanvasObject(): CanvasCustomRenderFn[LinkObject] = js.native
+    def linkCanvasObject(renderFn: CanvasCustomRenderFn[LinkObject]): ChainableInstance = js.native
+    
+    def linkCanvasObjectMode(): String | CanvasCustomRenderModeFn[LinkObject] = js.native
+    def linkCanvasObjectMode(modeAccessor: String): ChainableInstance = js.native
+    def linkCanvasObjectMode(modeAccessor: CanvasCustomRenderModeFn[LinkObject]): ChainableInstance = js.native
+    
+    def linkColor(): LinkAccessor[String] = js.native
+    def linkColor(colorAccessor: LinkAccessor[String]): ChainableInstance = js.native
+    
+    def linkCurvature(): LinkAccessor[Double] = js.native
+    def linkCurvature(curvatureAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkDirectionalArrowColor(): LinkAccessor[String] = js.native
+    def linkDirectionalArrowColor(colorAccessor: LinkAccessor[String]): ChainableInstance = js.native
+    
+    def linkDirectionalArrowLength(): LinkAccessor[Double] = js.native
+    def linkDirectionalArrowLength(lengthAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkDirectionalArrowRelPos(): LinkAccessor[Double] = js.native
+    def linkDirectionalArrowRelPos(fractionAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkDirectionalParticleColor(): LinkAccessor[String] = js.native
+    def linkDirectionalParticleColor(colorAccessor: LinkAccessor[String]): ChainableInstance = js.native
+    
+    def linkDirectionalParticleSpeed(): LinkAccessor[Double] = js.native
+    def linkDirectionalParticleSpeed(relDistancePerFrameAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkDirectionalParticleWidth(): LinkAccessor[Double] = js.native
+    def linkDirectionalParticleWidth(widthAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkDirectionalParticles(): LinkAccessor[Double] = js.native
+    def linkDirectionalParticles(numParticlesAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def linkHoverPrecision(): Double = js.native
+    def linkHoverPrecision(precision: Double): ChainableInstance = js.native
+    
+    // Link styling
+    def linkLabel(): LinkAccessor[String] = js.native
+    def linkLabel(labelAccessor: LinkAccessor[String]): ChainableInstance = js.native
+    
+    def linkLineDash(): LinkAccessor[js.Array[Double] | Null] = js.native
+    def linkLineDash(linkLineDashAccessor: LinkAccessor[js.Array[Double] | Null]): ChainableInstance = js.native
+    
+    def linkPointerAreaPaint(): CanvasPointerAreaPaintFn[LinkObject] = js.native
+    def linkPointerAreaPaint(renderFn: CanvasPointerAreaPaintFn[LinkObject]): ChainableInstance = js.native
+    
+    def linkSource(): String = js.native
+    def linkSource(source: String): ChainableInstance = js.native
+    
+    def linkTarget(): String = js.native
+    def linkTarget(target: String): ChainableInstance = js.native
+    
+    def linkVisibility(): LinkAccessor[Boolean] = js.native
+    def linkVisibility(visibilityAccessor: LinkAccessor[Boolean]): ChainableInstance = js.native
+    
+    def linkWidth(): LinkAccessor[Double] = js.native
+    def linkWidth(widthAccessor: LinkAccessor[Double]): ChainableInstance = js.native
+    
+    def maxZoom(): Double = js.native
+    def maxZoom(scale: Double): ChainableInstance = js.native
+    
+    def minZoom(): Double = js.native
+    def minZoom(scale: Double): ChainableInstance = js.native
+    
+    def nodeAutoColorBy(): NodeAccessor[String | Null] = js.native
+    def nodeAutoColorBy(colorByAccessor: NodeAccessor[String | Null]): ChainableInstance = js.native
+    
+    def nodeCanvasObject(): CanvasCustomRenderFn[NodeObject] = js.native
+    def nodeCanvasObject(renderFn: CanvasCustomRenderFn[NodeObject]): ChainableInstance = js.native
+    
+    def nodeCanvasObjectMode(): String | CanvasCustomRenderModeFn[NodeObject] = js.native
+    def nodeCanvasObjectMode(modeAccessor: String): ChainableInstance = js.native
+    def nodeCanvasObjectMode(modeAccessor: CanvasCustomRenderModeFn[NodeObject]): ChainableInstance = js.native
+    
+    def nodeColor(): NodeAccessor[String] = js.native
+    def nodeColor(colorAccessor: NodeAccessor[String]): ChainableInstance = js.native
+    
+    def nodeId(): String = js.native
+    def nodeId(id: String): ChainableInstance = js.native
+    
+    def nodeLabel(): NodeAccessor[String] = js.native
+    def nodeLabel(labelAccessor: NodeAccessor[String]): ChainableInstance = js.native
+    
+    def nodePointerAreaPaint(): CanvasPointerAreaPaintFn[NodeObject] = js.native
+    def nodePointerAreaPaint(renderFn: CanvasPointerAreaPaintFn[NodeObject]): ChainableInstance = js.native
+    
+    // Node styling
+    def nodeRelSize(): Double = js.native
+    def nodeRelSize(size: Double): ChainableInstance = js.native
+    
+    def nodeVal(): NodeAccessor[Double] = js.native
+    def nodeVal(valAccessor: NodeAccessor[Double]): ChainableInstance = js.native
+    
+    def nodeVisibility(): NodeAccessor[Boolean] = js.native
+    def nodeVisibility(visibilityAccessor: NodeAccessor[Boolean]): ChainableInstance = js.native
+    
+    def onBackgroundClick(callback: js.Function1[/* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    def onBackgroundRightClick(callback: js.Function1[/* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    def onDagError(): js.Function1[/* loopNodeIds */ js.Array[String | Double], Unit] = js.native
+    def onDagError(errorHandleFn: js.Function1[/* loopNodeIds */ js.Array[String | Double], Unit]): ChainableInstance = js.native
+    
+    def onEngineStop(callback: js.Function0[Unit]): ChainableInstance = js.native
+    
+    def onEngineTick(callback: js.Function0[Unit]): ChainableInstance = js.native
+    
+    def onLinkClick(callback: js.Function2[/* link */ LinkObject, /* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    def onLinkHover(callback: js.Function2[/* link */ LinkObject | Null, /* previousLink */ LinkObject | Null, Unit]): ChainableInstance = js.native
+    
+    def onLinkRightClick(callback: js.Function2[/* link */ LinkObject, /* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    // Interaction
+    def onNodeClick(callback: js.Function2[/* node */ NodeObject, /* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    def onNodeDrag(callback: js.Function2[/* node */ NodeObject, /* translate */ X, Unit]): ChainableInstance = js.native
+    
+    def onNodeDragEnd(callback: js.Function2[/* node */ NodeObject, /* translate */ X, Unit]): ChainableInstance = js.native
+    
+    def onNodeHover(callback: js.Function2[/* node */ NodeObject | Null, /* previousNode */ NodeObject | Null, Unit]): ChainableInstance = js.native
+    
+    def onNodeRightClick(callback: js.Function2[/* node */ NodeObject, /* event */ MouseEvent, Unit]): ChainableInstance = js.native
+    
+    def onRenderFramePost(
+      callback: js.Function2[/* canvasContext */ CanvasRenderingContext2D, /* globalScale */ Double, Unit]
+    ): ChainableInstance = js.native
+    
+    def onRenderFramePre(
+      callback: js.Function2[/* canvasContext */ CanvasRenderingContext2D, /* globalScale */ Double, Unit]
+    ): ChainableInstance = js.native
+    
+    def onZoom(callback: js.Function1[/* transform */ K, Unit]): ChainableInstance = js.native
+    
+    def onZoomEnd(callback: js.Function1[/* transform */ K, Unit]): ChainableInstance = js.native
+    
+    def pauseAnimation(): ChainableInstance = js.native
+    
+    def resetProps(): ChainableInstance = js.native
+    
+    def resumeAnimation(): ChainableInstance = js.native
+    
+    def screen2GraphCoords(x: Double, y: Double): X = js.native
+    
+    def warmupTicks(): Double = js.native
+    def warmupTicks(ticks: Double): ChainableInstance = js.native
+    
+    // Container layout
+    def width(): Double = js.native
+    def width(width: Double): ChainableInstance = js.native
+    
+    def zoom(): Double = js.native
+    def zoom(scale: Double): ChainableInstance = js.native
+    def zoom(scale: Double, durationMs: Double): ChainableInstance = js.native
+    
+    def zoomToFit(): ChainableInstance = js.native
+    def zoomToFit(durationMs: Double): ChainableInstance = js.native
+    def zoomToFit(durationMs: Double, padding: Double): ChainableInstance = js.native
+    def zoomToFit(durationMs: Double, padding: Double, nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
+    def zoomToFit(durationMs: Double, padding: Unit, nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
+    def zoomToFit(durationMs: Unit, padding: Double): ChainableInstance = js.native
+    def zoomToFit(durationMs: Unit, padding: Double, nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
+    def zoomToFit(durationMs: Unit, padding: Unit, nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
+  }
+  
+  @js.native
+  trait ForceGraphInstance
+    extends StObject
+       with ForceGraphGenericInstance[ForceGraphInstance]
+  
+  trait GraphData extends StObject {
+    
+    var links: js.Array[LinkObject]
+    
+    var nodes: js.Array[NodeObject]
+  }
+  object GraphData {
+    
+    inline def apply(links: js.Array[LinkObject], nodes: js.Array[NodeObject]): GraphData = {
+      val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GraphData]
     }
     
-    type ForceFn = js.Function1[/* node */ X, Double]
+    extension [Self <: GraphData](x: Self) {
+      
+      inline def setLinks(value: js.Array[LinkObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      
+      inline def setLinksVarargs(value: LinkObject*): Self = StObject.set(x, "links", js.Array(value*))
+      
+      inline def setNodes(value: js.Array[NodeObject]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      
+      inline def setNodesVarargs(value: NodeObject*): Self = StObject.set(x, "nodes", js.Array(value*))
+    }
+  }
+  
+  type LinkAccessor[T] = Accessor[LinkObject, T]
+  
+  trait LinkObject extends StObject {
     
-    /**
-      * Represents ForceGraph runtime object
-      * @example:
-      *  // Create an empty ForceGraph instance on an existing DOM element
-      *  let forceGraph = ForceGraph();
-      *  forceGraph(myHtmlElement);
-      *  forceGraph.graphData([]);
-      *
-      *  // Destroy the ForceGraph instance
-      *  forceGraph._destructor();
-      */
-    @js.native
-    trait ForceGraphInstance extends StObject {
-      
-      // Init / de-init
-      def apply(element: HTMLElement): ForceGraphInstance = js.native
-      
-      def _destructor(): Unit = js.native
-      
-      def backgroundColor(): ForceGraphInstance & String = js.native
-      def backgroundColor(color: String): ForceGraphInstance & String = js.native
-      
-      def centerAt(): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Double, y: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Double, y: Double, milliseconds: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Double, y: Unit, milliseconds: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Unit, y: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Unit, y: Double, milliseconds: Double): ForceGraphInstancexnumber = js.native
-      def centerAt(x: Unit, y: Unit, milliseconds: Double): ForceGraphInstancexnumber = js.native
-      
-      def cooldownTicks(): ForceGraphInstance & Double = js.native
-      def cooldownTicks(ticks: Double): ForceGraphInstance & Double = js.native
-      
-      def cooldownTime(): ForceGraphInstance & Double = js.native
-      def cooldownTime(milliseconds: Double): ForceGraphInstance & Double = js.native
-      
-      def d3AlphaDecay(): ForceGraphInstance & Double = js.native
-      def d3AlphaDecay(decay: Double): ForceGraphInstance & Double = js.native
-      
-      def d3Force(force: String): ForceGraphInstance & ForceFn = js.native
-      def d3Force(force: String, forceFn: ForceFn): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_center(force: center): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_center(force: center, forceFn: ForceFn): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_charge(force: charge): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_charge(force: charge, forceFn: ForceFn): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_link(force: link): ForceGraphInstance & ForceFn = js.native
-      @JSName("d3Force")
-      def d3Force_link(force: link, forceFn: ForceFn): ForceGraphInstance & ForceFn = js.native
-      
-      def d3ReheatSimulation(): ForceGraphInstance = js.native
-      
-      def d3VelocityDecay(): ForceGraphInstance & Double = js.native
-      def d3VelocityDecay(decay: Double): ForceGraphInstance & Double = js.native
-      
-      def dagLevelDistance(): ForceGraphInstance & Double = js.native
-      def dagLevelDistance(distance: Double): ForceGraphInstance & Double = js.native
-      
-      // Force engine configuration
-      def dagMode(): ForceGraphInstance & DagMode = js.native
-      def dagMode(mode: DagMode): ForceGraphInstance & DagMode = js.native
-      
-      def emitParticle(link: GraphLinkObject): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      
-      def enableNodeDrag(): ForceGraphInstance & Boolean = js.native
-      def enableNodeDrag(enable: Boolean): ForceGraphInstance & Boolean = js.native
-      
-      def enablePointerInteraction(): ForceGraphInstance & Boolean = js.native
-      def enablePointerInteraction(enable: Boolean): ForceGraphInstance & Boolean = js.native
-      
-      def enableZoomPanInteraction(): ForceGraphInstance & Boolean = js.native
-      def enableZoomPanInteraction(enable: Boolean): ForceGraphInstance & Boolean = js.native
-      
-      // Data input
-      def graphData(): ForceGraphInstance & GraphData = js.native
-      def graphData(data: GraphData): ForceGraphInstance & GraphData = js.native
-      
-      def height(): ForceGraphInstance & Double = js.native
-      def height(height: Double): ForceGraphInstance & Double = js.native
-      
-      def linkAutoColorBy(): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkAutoColorBy(attribute: String): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkAutoColorBy(attribute: LinkAccessorFn[String]): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      
-      def linkCanvasObject(): ForceGraphInstance & LinkCanvasCallbackFn = js.native
-      def linkCanvasObject(callback: LinkCanvasCallbackFn): ForceGraphInstance & LinkCanvasCallbackFn = js.native
-      
-      def linkColor(): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkColor(color: String): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkColor(color: LinkAccessorFn[String]): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      
-      def linkCurvature(): ForceGraphInstance = js.native
-      def linkCurvature(curvature: String): ForceGraphInstance = js.native
-      def linkCurvature(curvature: Double): ForceGraphInstance = js.native
-      def linkCurvature(curvature: LinkAccessorFn[Double]): ForceGraphInstance = js.native
-      
-      def linkDirectionalArrowColor(): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkDirectionalArrowColor(color: String): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkDirectionalArrowColor(color: LinkAccessorFn[String]): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      
-      def linkDirectionalArrowLength(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowLength(length: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowLength(length: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowLength(length: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def linkDirectionalArrowRelPos(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowRelPos(ratio: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowRelPos(ratio: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalArrowRelPos(ratio: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def linkDirectionalParticleColor(): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkDirectionalParticleColor(color: String): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      def linkDirectionalParticleColor(color: LinkAccessorFn[String]): ForceGraphInstance & (String | LinkAccessorFn[String]) = js.native
-      
-      def linkDirectionalParticleSpeed(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleSpeed(speed: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleSpeed(speed: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleSpeed(speed: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def linkDirectionalParticleWidth(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleWidth(width: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleWidth(width: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticleWidth(width: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def linkDirectionalParticles(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticles(particleCount: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticles(particleCount: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkDirectionalParticles(particleCount: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def linkHoverPrecision(): ForceGraphInstance & Double = js.native
-      def linkHoverPrecision(precision: Double): ForceGraphInstance & Double = js.native
-      
-      // Link styling
-      def linkLabel(): ForceGraphInstance & (String | LinkAccessorFn[js.UndefOr[String]]) = js.native
-      def linkLabel(label: String): ForceGraphInstance & (String | LinkAccessorFn[js.UndefOr[String]]) = js.native
-      def linkLabel(label: LinkAccessorFn[js.UndefOr[String]]): ForceGraphInstance & (String | LinkAccessorFn[js.UndefOr[String]]) = js.native
-      
-      def linkSource(): ForceGraphInstance & String = js.native
-      def linkSource(source: String): ForceGraphInstance & String = js.native
-      
-      def linkTarget(): ForceGraphInstance & String = js.native
-      def linkTarget(target: String): ForceGraphInstance & String = js.native
-      
-      def linkVisibility(): ForceGraphInstance & (Boolean | String | LinkAccessorFn[Boolean]) = js.native
-      def linkVisibility(visible: String): ForceGraphInstance & (Boolean | String | LinkAccessorFn[Boolean]) = js.native
-      def linkVisibility(visible: Boolean): ForceGraphInstance & (Boolean | String | LinkAccessorFn[Boolean]) = js.native
-      def linkVisibility(visible: LinkAccessorFn[Boolean]): ForceGraphInstance & (Boolean | String | LinkAccessorFn[Boolean]) = js.native
-      
-      def linkWidth(): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkWidth(width: String): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkWidth(width: Double): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      def linkWidth(width: LinkAccessorFn[Double]): ForceGraphInstance & (Double | String | LinkAccessorFn[Double]) = js.native
-      
-      def nodeAutoColorBy(): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      def nodeAutoColorBy(attribute: String): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      def nodeAutoColorBy(attribute: NodeAccessorFn[String]): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      
-      def nodeCanvasObject(): ForceGraphInstance & NodeCanvasCallbackFn = js.native
-      def nodeCanvasObject(callback: NodeCanvasCallbackFn): ForceGraphInstance & NodeCanvasCallbackFn = js.native
-      
-      def nodeColor(): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      def nodeColor(color: String): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      def nodeColor(color: NodeAccessorFn[String]): ForceGraphInstance & (String | NodeAccessorFn[String]) = js.native
-      
-      def nodeId(): ForceGraphInstance & String = js.native
-      def nodeId(id: String): ForceGraphInstance & String = js.native
-      
-      def nodeLabel(): ForceGraphInstance & (String | NodeAccessorFn[js.UndefOr[String]]) = js.native
-      def nodeLabel(label: String): ForceGraphInstance & (String | NodeAccessorFn[js.UndefOr[String]]) = js.native
-      def nodeLabel(label: NodeAccessorFn[js.UndefOr[String]]): ForceGraphInstance & (String | NodeAccessorFn[js.UndefOr[String]]) = js.native
-      
-      // Node styling
-      def nodeRelSize(): ForceGraphInstance & Double = js.native
-      def nodeRelSize(size: Double): ForceGraphInstance & Double = js.native
-      
-      def nodeVal(): ForceGraphInstance & (Double | String | NodeAccessorFn[Double]) = js.native
-      def nodeVal(`val`: String): ForceGraphInstance & (Double | String | NodeAccessorFn[Double]) = js.native
-      def nodeVal(`val`: Double): ForceGraphInstance & (Double | String | NodeAccessorFn[Double]) = js.native
-      def nodeVal(`val`: NodeAccessorFn[Double]): ForceGraphInstance & (Double | String | NodeAccessorFn[Double]) = js.native
-      
-      def onEngineStop(callback: js.Function0[Unit]): ForceGraphInstance = js.native
-      
-      def onEngineTick(callback: js.Function0[Unit]): ForceGraphInstance = js.native
-      
-      def onLinkClick(callback: LinkEventCallback): ForceGraphInstance = js.native
-      
-      def onLinkHover(
-        callback: js.Function2[
-              /* link */ js.UndefOr[GraphLinkObject], 
-              /* previousLink */ js.UndefOr[GraphLinkObject], 
-              Unit
-            ]
-      ): ForceGraphInstance = js.native
-      
-      def onLinkRightClick(callback: LinkEventCallback): ForceGraphInstance = js.native
-      
-      // Interaction
-      def onNodeClick(callback: NodeEventCallback): ForceGraphInstance = js.native
-      
-      def onNodeDrag(callback: NodeEventCallback): ForceGraphInstance = js.native
-      
-      def onNodeDragEnd(callback: NodeEventCallback): ForceGraphInstance = js.native
-      
-      def onNodeHover(
-        callback: js.Function2[
-              /* node */ js.UndefOr[GraphNodeObject], 
-              /* previousNode */ js.UndefOr[GraphNodeObject], 
-              Unit
-            ]
-      ): ForceGraphInstance = js.native
-      
-      def onNodeRightClick(callback: NodeEventCallback): ForceGraphInstance = js.native
-      
-      // Render control
-      def pauseAnimation(): ForceGraphInstance = js.native
-      
-      def refresh(): ForceGraphInstance = js.native
-      
-      // Alias for pauseAnimation()
-      def resumeAnimation(): ForceGraphInstance = js.native
-      
-      def stopAnimation(): ForceGraphInstance = js.native
-      
-      def warmupTicks(): ForceGraphInstance & Double = js.native
-      def warmupTicks(ticks: Double): ForceGraphInstance & Double = js.native
-      
-      // Container layout
-      def width(): ForceGraphInstance & Double = js.native
-      def width(width: Double): ForceGraphInstance & Double = js.native
-      
-      def zoom(): ForceGraphInstance & Double = js.native
-      def zoom(zoomLevel: Double): ForceGraphInstance & Double = js.native
-      def zoom(zoomLevel: Double, duration: Double): ForceGraphInstance & Double = js.native
-      def zoom(zoomLevel: Unit, duration: Double): ForceGraphInstance & Double = js.native
+    var source: js.UndefOr[String | Double | NodeObject] = js.undefined
+    
+    var target: js.UndefOr[String | Double | NodeObject] = js.undefined
+  }
+  object LinkObject {
+    
+    inline def apply(): LinkObject = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LinkObject]
     }
     
-    /**
-      * Interfaces
-      */
-    trait GraphData extends StObject {
+    extension [Self <: LinkObject](x: Self) {
       
-      var links: js.Array[GraphLink]
+      inline def setSource(value: String | Double | NodeObject): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      var nodes: js.Array[GraphNode]
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      
+      inline def setTarget(value: String | Double | NodeObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
-    object GraphData {
-      
-      inline def apply(links: js.Array[GraphLink], nodes: js.Array[GraphNode]): GraphData = {
-        val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphData]
-      }
-      
-      extension [Self <: GraphData](x: Self) {
-        
-        inline def setLinks(value: js.Array[GraphLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
-        
-        inline def setLinksVarargs(value: GraphLink*): Self = StObject.set(x, "links", js.Array(value :_*))
-        
-        inline def setNodes(value: js.Array[GraphNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
-        
-        inline def setNodesVarargs(value: GraphNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
-      }
+  }
+  
+  type NodeAccessor[T] = Accessor[NodeObject, T]
+  
+  trait NodeObject extends StObject {
+    
+    var fx: js.UndefOr[Double] = js.undefined
+    
+    var fy: js.UndefOr[Double] = js.undefined
+    
+    var id: js.UndefOr[String | Double] = js.undefined
+    
+    var vx: js.UndefOr[Double] = js.undefined
+    
+    var vy: js.UndefOr[Double] = js.undefined
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
+  }
+  object NodeObject {
+    
+    inline def apply(): NodeObject = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NodeObject]
     }
     
-    trait GraphEntity extends StObject {
+    extension [Self <: NodeObject](x: Self) {
       
-      var id: String
+      inline def setFx(value: Double): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+      
+      inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+      
+      inline def setFy(value: Double): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
+      
+      inline def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
+      
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setVx(value: Double): Self = StObject.set(x, "vx", value.asInstanceOf[js.Any])
+      
+      inline def setVxUndefined: Self = StObject.set(x, "vx", js.undefined)
+      
+      inline def setVy(value: Double): Self = StObject.set(x, "vy", value.asInstanceOf[js.Any])
+      
+      inline def setVyUndefined: Self = StObject.set(x, "vy", js.undefined)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
-    object GraphEntity {
-      
-      inline def apply(id: String): GraphEntity = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphEntity]
-      }
-      
-      extension [Self <: GraphEntity](x: Self) {
-        
-        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    trait GraphLink
-      extends StObject
-         with GraphEntity {
-      
-      var source: String | GraphNode
-      
-      var target: String | GraphNode
-      
-      var `type`: String
-    }
-    object GraphLink {
-      
-      inline def apply(id: String, source: String | GraphNode, target: String | GraphNode, `type`: String): GraphLink = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphLink]
-      }
-      
-      extension [Self <: GraphLink](x: Self) {
-        
-        inline def setSource(value: String | GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-        
-        inline def setTarget(value: String | GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-        
-        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    trait GraphLinkObject
-      extends StObject
-         with GraphLink {
-      
-      @JSName("source")
-      var source_GraphLinkObject: GraphNode
-      
-      @JSName("target")
-      var target_GraphLinkObject: GraphNode
-    }
-    object GraphLinkObject {
-      
-      inline def apply(id: String, source: GraphNode, target: GraphNode, `type`: String): GraphLinkObject = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphLinkObject]
-      }
-      
-      extension [Self <: GraphLinkObject](x: Self) {
-        
-        inline def setSource(value: GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-        
-        inline def setTarget(value: GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    trait GraphNode
-      extends StObject
-         with GraphEntity {
-      
-      var name: js.UndefOr[String] = js.undefined
-      
-      var `val`: js.UndefOr[js.Any] = js.undefined
-    }
-    object GraphNode {
-      
-      inline def apply(id: String): GraphNode = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphNode]
-      }
-      
-      extension [Self <: GraphNode](x: Self) {
-        
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        
-        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-        
-        inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
-        
-        inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
-      }
-    }
-    
-    trait GraphNodeObject
-      extends StObject
-         with GraphNode {
-      
-      var index: Double
-      
-      var x: Double
-      
-      var y: Double
-    }
-    object GraphNodeObject {
-      
-      inline def apply(id: String, index: Double, x: Double, y: Double): GraphNodeObject = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-        __obj.asInstanceOf[GraphNodeObject]
-      }
-      
-      extension [Self <: GraphNodeObject](x: Self) {
-        
-        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-        
-        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-        
-        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    type LinkAccessorFn[T] = js.Function1[/* link */ GraphLinkObject, T]
-    
-    type LinkCanvasCallbackFn = js.Function3[
-        /* link */ GraphLinkObject, 
-        /* canvasContext */ CanvasRenderingContext2D, 
-        /* globalScale */ Double, 
-        Unit
-      ]
-    
-    type LinkEventCallback = js.Function1[/* link */ GraphLinkObject, Unit]
-    
-    /**
-      * Types
-      */
-    type NodeAccessorFn[T] = js.Function1[/* node */ GraphNodeObject, T]
-    
-    type NodeCanvasCallbackFn = js.Function3[
-        /* node */ GraphNodeObject, 
-        /* canvasContext */ CanvasRenderingContext2D, 
-        /* globalScale */ Double, 
-        Unit
-      ]
-    
-    type NodeEventCallback = js.Function1[/* node */ GraphNodeObject, Unit]
   }
 }

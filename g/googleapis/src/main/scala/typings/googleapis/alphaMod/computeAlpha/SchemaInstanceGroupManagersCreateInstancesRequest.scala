@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * InstanceGroupManagers.createInstances
-  */
 trait SchemaInstanceGroupManagersCreateInstancesRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaInstanceGroupManagersCreateInstancesRequest {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value*))
   }
 }

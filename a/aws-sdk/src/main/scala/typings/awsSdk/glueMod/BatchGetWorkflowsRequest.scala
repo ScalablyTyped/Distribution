@@ -31,6 +31,6 @@ object BatchGetWorkflowsRequest {
     
     inline def setNames(value: WorkflowNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: NameString*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: NameString*): Self = StObject.set(x, "Names", js.Array(value*))
   }
 }

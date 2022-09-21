@@ -8,7 +8,7 @@ object speedMod {
   
   @JSImport("rot-js/lib/scheduler/speed", JSImport.Default)
   @js.native
-  class default[T /* <: SpeedActor */] () extends Speed[T]
+  open class default[T /* <: SpeedActor */] () extends Speed[T]
   
   @js.native
   trait Speed[T /* <: SpeedActor */]

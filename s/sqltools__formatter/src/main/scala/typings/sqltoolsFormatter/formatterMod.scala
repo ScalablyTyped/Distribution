@@ -10,7 +10,7 @@ object formatterMod {
   
   @JSImport("@sqltools/formatter/lib/core/Formatter", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Formatter {
     def this(cfg: Config, tokenizer: typings.sqltoolsFormatter.tokenizerMod.default) = this()
@@ -90,34 +90,34 @@ object formatterMod {
     override def indentComment(comment: String): String = js.native
     
     /* private */ /* CompleteClass */
-    var indentation: js.Any = js.native
+    var indentation: Any = js.native
     
     /* private */ /* CompleteClass */
-    var index: js.Any = js.native
+    var index: Any = js.native
     
     /* private */ /* CompleteClass */
-    var inlineBlock: js.Any = js.native
+    var inlineBlock: Any = js.native
     
     /* private */ /* CompleteClass */
-    var params: js.Any = js.native
+    var params: Any = js.native
     
     /* private */ /* CompleteClass */
-    var previousNonWhiteSpace: js.Any = js.native
+    var previousNonWhiteSpace: Any = js.native
     
     /* private */ /* CompleteClass */
-    var previousReservedWord: js.Any = js.native
+    var previousReservedWord: Any = js.native
     
     /* CompleteClass */
     override def previousToken(): Token = js.native
     
     /* private */ /* CompleteClass */
-    var tokenOverride: js.Any = js.native
+    var tokenOverride: Any = js.native
     
     /* CompleteClass */
     var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default = js.native
     
     /* private */ /* CompleteClass */
-    var tokens: js.Any = js.native
+    var tokens: Any = js.native
   }
   
   trait Formatter extends StObject {
@@ -168,25 +168,25 @@ object formatterMod {
     
     def indentComment(comment: String): String
     
-    /* private */ var indentation: js.Any
+    /* private */ var indentation: Any
     
-    /* private */ var index: js.Any
+    /* private */ var index: Any
     
-    /* private */ var inlineBlock: js.Any
+    /* private */ var inlineBlock: Any
     
-    /* private */ var params: js.Any
+    /* private */ var params: Any
     
-    /* private */ var previousNonWhiteSpace: js.Any
+    /* private */ var previousNonWhiteSpace: Any
     
-    /* private */ var previousReservedWord: js.Any
+    /* private */ var previousReservedWord: Any
     
     def previousToken(): Token
     
-    /* private */ var tokenOverride: js.Any
+    /* private */ var tokenOverride: Any
     
     var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default
     
-    /* private */ var tokens: js.Any
+    /* private */ var tokens: Any
   }
   object Formatter {
     
@@ -214,16 +214,16 @@ object formatterMod {
       formatWithoutSpaces: (Token, String) => String,
       getFormattedQueryFromTokens: () => String,
       indentComment: String => String,
-      indentation: js.Any,
-      index: js.Any,
-      inlineBlock: js.Any,
-      params: js.Any,
-      previousNonWhiteSpace: js.Any,
-      previousReservedWord: js.Any,
+      indentation: Any,
+      index: Any,
+      inlineBlock: Any,
+      params: Any,
+      previousNonWhiteSpace: Any,
+      previousReservedWord: Any,
       previousToken: () => Token,
-      tokenOverride: js.Any,
+      tokenOverride: Any,
       tokenizer: typings.sqltoolsFormatter.tokenizerMod.default,
-      tokens: js.Any
+      tokens: Any
     ): Formatter = {
       val __obj = js.Dynamic.literal(addNewline = js.Any.fromFunction1(addNewline), cfg = cfg.asInstanceOf[js.Any], equalizeWhitespace = js.Any.fromFunction1(equalizeWhitespace), format = js.Any.fromFunction1(format), formatBlockComment = js.Any.fromFunction2(formatBlockComment), formatCase = js.Any.fromFunction1(formatCase), formatClosingParentheses = js.Any.fromFunction2(formatClosingParentheses), formatComma = js.Any.fromFunction2(formatComma), formatLineComment = js.Any.fromFunction2(formatLineComment), formatNewlineReservedWord = js.Any.fromFunction2(formatNewlineReservedWord), formatOpeningParentheses = js.Any.fromFunction2(formatOpeningParentheses), formatPlaceholder = js.Any.fromFunction2(formatPlaceholder), formatQuerySeparator = js.Any.fromFunction2(formatQuerySeparator), formatReserved = js.Any.fromFunction2(formatReserved), formatReservedWord = js.Any.fromFunction1(formatReservedWord), formatTopLevelReservedWord = js.Any.fromFunction2(formatTopLevelReservedWord), formatTopLevelReservedWordNoIndent = js.Any.fromFunction2(formatTopLevelReservedWordNoIndent), formatWhitespace = js.Any.fromFunction2(formatWhitespace), formatWithSpaceAfter = js.Any.fromFunction2(formatWithSpaceAfter), formatWithSpaces = js.Any.fromFunction2(formatWithSpaces), formatWithoutSpaces = js.Any.fromFunction2(formatWithoutSpaces), getFormattedQueryFromTokens = js.Any.fromFunction0(getFormattedQueryFromTokens), indentComment = js.Any.fromFunction1(indentComment), indentation = indentation.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], inlineBlock = inlineBlock.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], previousNonWhiteSpace = previousNonWhiteSpace.asInstanceOf[js.Any], previousReservedWord = previousReservedWord.asInstanceOf[js.Any], previousToken = js.Any.fromFunction0(previousToken), tokenOverride = tokenOverride.asInstanceOf[js.Any], tokenizer = tokenizer.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[Formatter]
@@ -277,25 +277,25 @@ object formatterMod {
       
       inline def setIndentComment(value: String => String): Self = StObject.set(x, "indentComment", js.Any.fromFunction1(value))
       
-      inline def setIndentation(value: js.Any): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+      inline def setIndentation(value: Any): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
       
-      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setInlineBlock(value: js.Any): Self = StObject.set(x, "inlineBlock", value.asInstanceOf[js.Any])
+      inline def setInlineBlock(value: Any): Self = StObject.set(x, "inlineBlock", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setPreviousNonWhiteSpace(value: js.Any): Self = StObject.set(x, "previousNonWhiteSpace", value.asInstanceOf[js.Any])
+      inline def setPreviousNonWhiteSpace(value: Any): Self = StObject.set(x, "previousNonWhiteSpace", value.asInstanceOf[js.Any])
       
-      inline def setPreviousReservedWord(value: js.Any): Self = StObject.set(x, "previousReservedWord", value.asInstanceOf[js.Any])
+      inline def setPreviousReservedWord(value: Any): Self = StObject.set(x, "previousReservedWord", value.asInstanceOf[js.Any])
       
       inline def setPreviousToken(value: () => Token): Self = StObject.set(x, "previousToken", js.Any.fromFunction0(value))
       
-      inline def setTokenOverride(value: js.Any): Self = StObject.set(x, "tokenOverride", value.asInstanceOf[js.Any])
+      inline def setTokenOverride(value: Any): Self = StObject.set(x, "tokenOverride", value.asInstanceOf[js.Any])
       
       inline def setTokenizer(value: typings.sqltoolsFormatter.tokenizerMod.default): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
       
-      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
 }

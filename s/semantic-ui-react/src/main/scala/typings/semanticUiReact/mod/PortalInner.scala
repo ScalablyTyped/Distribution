@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "PortalInner")
 @js.native
-class PortalInner () extends default
+open class PortalInner () extends default

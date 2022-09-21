@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "RTCIceCandidateType")
 @js.native
-class RTCIceCandidateType () extends StObject {
+open class RTCIceCandidateType () extends StObject {
   
   var candidate: String = js.native
   

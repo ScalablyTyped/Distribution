@@ -10,5 +10,5 @@ trait PickerFactory
   extends Factory[
       PickerConstructor, 
       InstanceType[PickerConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[PickerConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

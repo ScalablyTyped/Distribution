@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to apply configuration to an existing tenant project.
-  */
 trait SchemaApplyTenantProjectConfigRequest extends StObject {
   
   /**
@@ -15,9 +12,9 @@ trait SchemaApplyTenantProjectConfigRequest extends StObject {
   var projectConfig: js.UndefOr[SchemaTenantProjectConfig] = js.undefined
   
   /**
-    * Tag of the project. Must be less than 128 characters. Required.
+    * Required. Tag of the project. Must be less than 128 characters. Required.
     */
-  var tag: js.UndefOr[String] = js.undefined
+  var tag: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApplyTenantProjectConfigRequest {
   
@@ -33,6 +30,8 @@ object SchemaApplyTenantProjectConfigRequest {
     inline def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagNull: Self = StObject.set(x, "tag", null)
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

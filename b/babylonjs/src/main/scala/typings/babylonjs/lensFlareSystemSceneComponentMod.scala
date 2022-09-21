@@ -12,7 +12,7 @@ object lensFlareSystemSceneComponentMod {
   
   @JSImport("babylonjs/LensFlares/lensFlareSystemSceneComponent", "LensFlareSystemSceneComponent")
   @js.native
-  class LensFlareSystemSceneComponent protected ()
+  open class LensFlareSystemSceneComponent protected ()
     extends StObject
        with ISceneSerializableComponent {
     /**
@@ -21,7 +21,7 @@ object lensFlareSystemSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _draw: js.Any = js.native
+    /* private */ var _draw: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -67,11 +67,19 @@ object lensFlareSystemSceneComponentMod {
       def addLensFlareSystem(newLensFlareSystem: LensFlareSystem): Unit
       
       /**
-        * Gets a lens flare system using its id
-        * @param id defines the id to look for
+        * Gets a lens flare system using its Id
+        * @param id defines the Id to look for
         * @returns the lens flare system or null if not found
+        * @deprecated Please use getLensFlareSystemById instead
         */
       def getLensFlareSystemByID(id: String): Nullable[LensFlareSystem]
+      
+      /**
+        * Gets a lens flare system using its Id
+        * @param id defines the Id to look for
+        * @returns the lens flare system or null if not found
+        */
+      def getLensFlareSystemById(id: String): Nullable[LensFlareSystem]
       
       /**
         * Gets a lens flare system using its name
@@ -98,11 +106,12 @@ object lensFlareSystemSceneComponentMod {
       inline def apply(
         addLensFlareSystem: LensFlareSystem => Unit,
         getLensFlareSystemByID: String => Nullable[LensFlareSystem],
+        getLensFlareSystemById: String => Nullable[LensFlareSystem],
         getLensFlareSystemByName: String => Nullable[LensFlareSystem],
         lensFlareSystems: js.Array[LensFlareSystem],
         removeLensFlareSystem: LensFlareSystem => Double
       ): AbstractScene = {
-        val __obj = js.Dynamic.literal(addLensFlareSystem = js.Any.fromFunction1(addLensFlareSystem), getLensFlareSystemByID = js.Any.fromFunction1(getLensFlareSystemByID), getLensFlareSystemByName = js.Any.fromFunction1(getLensFlareSystemByName), lensFlareSystems = lensFlareSystems.asInstanceOf[js.Any], removeLensFlareSystem = js.Any.fromFunction1(removeLensFlareSystem))
+        val __obj = js.Dynamic.literal(addLensFlareSystem = js.Any.fromFunction1(addLensFlareSystem), getLensFlareSystemByID = js.Any.fromFunction1(getLensFlareSystemByID), getLensFlareSystemById = js.Any.fromFunction1(getLensFlareSystemById), getLensFlareSystemByName = js.Any.fromFunction1(getLensFlareSystemByName), lensFlareSystems = lensFlareSystems.asInstanceOf[js.Any], removeLensFlareSystem = js.Any.fromFunction1(removeLensFlareSystem))
         __obj.asInstanceOf[AbstractScene]
       }
       
@@ -116,7 +125,7 @@ object lensFlareSystemSceneComponentMod {
         
         inline def setLensFlareSystems(value: js.Array[LensFlareSystem]): Self = StObject.set(x, "lensFlareSystems", value.asInstanceOf[js.Any])
         
-        inline def setLensFlareSystemsVarargs(value: LensFlareSystem*): Self = StObject.set(x, "lensFlareSystems", js.Array(value :_*))
+        inline def setLensFlareSystemsVarargs(value: LensFlareSystem*): Self = StObject.set(x, "lensFlareSystems", js.Array(value*))
         
         inline def setRemoveLensFlareSystem(value: LensFlareSystem => Double): Self = StObject.set(x, "removeLensFlareSystem", js.Any.fromFunction1(value))
       }

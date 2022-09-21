@@ -10,7 +10,7 @@ object crossBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/crossBlock", "CrossBlock")
   @js.native
-  class CrossBlock protected () extends NodeMaterialBlock {
+  open class CrossBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new CrossBlock
       * @param name defines the block name

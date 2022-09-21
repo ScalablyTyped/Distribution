@@ -1,7 +1,7 @@
 
 # Scala.js typings for docusign-esign
 
-Typings are for version 5.5
+Typings are for version 5.6
 
 ## Library description:
 DocuSign Node.js API client.
@@ -10,10 +10,10 @@ DocuSign Node.js API client.
 | ------------------ | :-------------: |
 | Full name          | docusign-esign |
 | Keywords           | docusign, signature, esignature, esign, digital, electronic, transaction, document, certificate, DTM, PDF |
-| # releases         | 42 |
-| # dependents       | 4 |
-| # downloads        | 576939 |
-| # stars            | 2 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 193904.66666666666 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/docusign/docusign-node-client#readme)

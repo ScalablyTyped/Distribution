@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait vscroll extends StObject {
   
+  @JSName("$skin")
+  def $skin(args: Any*): Any = js.native
+  @JSName("$skin")
+  var $skin_Original: WebixCallback = js.native
+  
   def activeArea(node: HTMLElement): Unit = js.native
   
   def attachEvent(`type`: vscrollEventName, functor: WebixCallback): String | Double = js.native
@@ -16,11 +21,11 @@ trait vscroll extends StObject {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   var config: vscrollConfig = js.native
   
-  def define(property: String, value: js.Any): Unit = js.native
+  def define(property: String, value: Any): Unit = js.native
   
   def detachEvent(id: String): Unit = js.native
   
@@ -30,7 +35,7 @@ trait vscroll extends StObject {
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   var name: String = js.native
   

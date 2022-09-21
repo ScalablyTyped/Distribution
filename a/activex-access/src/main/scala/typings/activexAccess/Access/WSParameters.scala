@@ -17,5 +17,5 @@ trait WSParameters extends StObject {
   def Item(Index: String): WSParameter = js.native
   def Item(Index: Double): WSParameter = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

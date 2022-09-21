@@ -10,15 +10,15 @@ A utility-first CSS-in-JS framework built for React (styled-components bindings)
 | ------------------ | :-------------: |
 | Full name          | @xstyled/styled-components |
 | Keywords           | styled-components, css, system, styled-system, tailwindcss |
-| # releases         | 58 |
-| # dependents       | 10 |
-| # downloads        | 248386 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 50390.0 |
+| # stars            | 2000.0 |
 
 ## Links
 - [Homepage](https://xstyled.dev)
 - [Bugs](https://github.com/gregberge/xstyled/issues)
-- [Repository](https://github.com/gregberge/xstyled)
+- [Repository](https://github.com/gregberge/xstyled/tree/master)
 - [Npm](https://www.npmjs.com/package/%40xstyled%2Fstyled-components)
     
 

@@ -105,7 +105,24 @@ object Cast {
       
       inline def setSinks(value: js.Array[Sink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
       
-      inline def setSinksVarargs(value: Sink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
+      inline def setSinksVarargs(value: Sink*): Self = StObject.set(x, "sinks", js.Array(value*))
+    }
+  }
+  
+  trait StartDesktopMirroringRequest extends StObject {
+    
+    var sinkName: String
+  }
+  object StartDesktopMirroringRequest {
+    
+    inline def apply(sinkName: String): StartDesktopMirroringRequest = {
+      val __obj = js.Dynamic.literal(sinkName = sinkName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StartDesktopMirroringRequest]
+    }
+    
+    extension [Self <: StartDesktopMirroringRequest](x: Self) {
+      
+      inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
   }
   

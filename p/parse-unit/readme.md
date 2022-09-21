@@ -10,10 +10,10 @@ parses number and unit, '20px' into [20, 'px']
 | ------------------ | :-------------: |
 | Full name          | parse-unit |
 | Keywords           | parse, number, string, str, split, unit, in, m, px, %, pt, pc, em, deg, rad, css, value |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 7286318 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 836675.3333333334 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/mattdesl/parse-unit)

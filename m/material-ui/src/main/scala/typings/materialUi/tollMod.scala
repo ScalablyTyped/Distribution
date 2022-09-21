@@ -10,10 +10,10 @@ object tollMod {
   
   @JSImport("material-ui/svg-icons/action/toll", JSImport.Default)
   @js.native
-  class default () extends ActionToll
+  open class default () extends ActionToll
   
   @JSImport("material-ui/svg-icons/action/toll", "ActionToll")
   @js.native
-  class ActionToll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionToll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

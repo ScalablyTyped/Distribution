@@ -30,7 +30,7 @@ object TupleExpression {
     
     inline def setComponents(value: js.Array[Expression]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     

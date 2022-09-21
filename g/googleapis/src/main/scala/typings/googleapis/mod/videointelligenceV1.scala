@@ -11,38 +11,63 @@ object videointelligenceV1 {
   
   @JSImport("googleapis", "videointelligence_v1.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceOperations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Operations$Projects")
+  @js.native
+  open class ResourceOperationsProjects protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceOperationsProjects {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Operations$Projects$Locations")
+  @js.native
+  open class ResourceOperationsProjectsLocations protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceOperationsProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Operations$Projects$Locations$Operations")
+  @js.native
+  open class ResourceOperationsProjectsLocationsOperations protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceOperationsProjectsLocationsOperations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Projects")
+  @js.native
+  open class ResourceProjects protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceProjects {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Projects$Locations")
+  @js.native
+  open class ResourceProjectsLocations protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "videointelligence_v1.Resource$Projects$Locations$Operations")
+  @js.native
+  open class ResourceProjectsLocationsOperations protected ()
+    extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceProjectsLocationsOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "videointelligence_v1.Resource$Videos")
   @js.native
-  class ResourceVideos protected ()
+  open class ResourceVideos protected ()
     extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.ResourceVideos {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Cloud Video Intelligence API
-    *
-    * Detects objects, explicit content, and scene changes in videos. It also
-    * specifies the region for annotation and transcribes speech to text.
-    * Supports both asynchronous API and streaming API.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const videointelligence = google.videointelligence('v1');
-    *
-    * @namespace videointelligence
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Videointelligence
-    */
   @JSImport("googleapis", "videointelligence_v1.Videointelligence")
   @js.native
-  class Videointelligence protected ()
+  open class Videointelligence protected ()
     extends typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Videointelligence {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

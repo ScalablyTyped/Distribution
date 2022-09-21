@@ -7,36 +7,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("gettext.js", "i18n")
+  inline def apply(): Gettext = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Gettext]
+  inline def apply(options: GettextOptions): Gettext = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Gettext]
+  
+  @JSImport("gettext.js", JSImport.Namespace)
   @js.native
-  val i18n: GettextStatic = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Gettext extends StObject {
     
-    def __(msgid: String, args: js.Any*): String = js.native
+    def __(msgid: String, args: Any*): String = js.native
     
-    def _n(msgid: String, msgid_plural: String, n: Double, args: js.Any*): String = js.native
+    def _n(msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
-    def _p(msgctxt: String, msgid: String, args: js.Any*): String = js.native
+    def _p(msgctxt: String, msgid: String, args: Any*): String = js.native
     
-    def dcnpgettext(domain: String, msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: js.Any*): String = js.native
+    def dcnpgettext(
+      domain: Optionull[String],
+      msgctxt: Optionull[String],
+      msgid: String,
+      msgid_plural: Optionull[String],
+      n: Optionull[Double],
+      args: Any*
+    ): String = js.native
+    
+    def expand_locale(locale: String): js.Array[String] = js.native
     
     def getLocale(): String = js.native
     
-    def gettext(msgid: String, args: js.Any*): String = js.native
+    def gettext(msgid: String, args: Any*): String = js.native
     
     def loadJSON(jsonData: JsonData): Gettext = js.native
     def loadJSON(jsonData: JsonData, domain: String): Gettext = js.native
     
-    def ngettext(msgid: String, msgid_plural: String, n: Double, args: js.Any*): String = js.native
+    def ngettext(msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
-    def pgettext(msgctxt: String, msgid: String, args: js.Any*): String = js.native
+    def pgettext(msgctxt: String, msgid: String, args: Any*): String = js.native
     
     def setLocale(locale: String): Gettext = js.native
     
     def setMessages(domain: String, locale: String, messages: JsonDataMessages): Gettext = js.native
     def setMessages(domain: String, locale: String, messages: JsonDataMessages, plural_forms: PluralForm): Gettext = js.native
+    
+    def strfmt(fmt: String, args: Any*): String = js.native
     
     def textdomain(): Gettext | String = js.native
     def textdomain(domain: String): Gettext | String = js.native
@@ -78,8 +92,6 @@ object mod {
       inline def setPlural_funcUndefined: Self = StObject.set(x, "plural_func", js.undefined)
     }
   }
-  
-  type GettextStatic = js.Function1[/* options */ js.UndefOr[GettextOptions], Gettext]
   
   trait JsonData
     extends StObject
@@ -125,6 +137,8 @@ object mod {
   }
   
   type JsonDataMessages = StringDictionary[String | js.Array[String] | JsonDataHeader]
+  
+  type Optionull[T] = js.UndefOr[T | Null]
   
   type PluralForm = js.Function1[/* n */ Double, Double]
 }

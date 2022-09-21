@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event generated when a product&#39;s approval status is changed.
-  */
 trait SchemaProductApprovalEvent extends StObject {
   
   /**
-    * Whether the product was approved or unapproved. This field will always be
-    * present.
+    * Whether the product was approved or unapproved. This field will always be present.
     */
-  var approved: js.UndefOr[String] = js.undefined
+  var approved: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) for
-    * which the approval status has changed. This field will always be present.
+    * The id of the product (e.g. "app:com.google.android.gm") for which the approval status has changed. This field will always be present.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductApprovalEvent {
   
@@ -32,9 +27,13 @@ object SchemaProductApprovalEvent {
     
     inline def setApproved(value: String): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
+    inline def setApprovedNull: Self = StObject.set(x, "approved", null)
+    
     inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }

@@ -10,15 +10,12 @@ A simple, modern, browser notification system
 | ------------------ | :-------------: |
 | Full name          | humane-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 79326 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7826.666666666667 |
+| # stars            | 2082.0 |
 
 ## Links
-- [Homepage](http://wavded.github.com/humane-js/)
-- [Bugs](https://github.com/wavded/humane-js/issues)
-- [Repository](https://github.com/wavded/humane-js)
 - [Npm](https://www.npmjs.com/package/humane-js)
     
 

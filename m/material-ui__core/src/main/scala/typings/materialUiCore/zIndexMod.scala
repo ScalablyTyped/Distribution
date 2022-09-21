@@ -23,6 +23,8 @@ object zIndexMod extends Shortcut {
     
     var snackbar: Double
     
+    var speedDial: Double
+    
     var tooltip: Double
   }
   object ZIndex {
@@ -33,9 +35,10 @@ object zIndexMod extends Shortcut {
       mobileStepper: Double,
       modal: Double,
       snackbar: Double,
+      speedDial: Double,
       tooltip: Double
     ): ZIndex = {
-      val __obj = js.Dynamic.literal(appBar = appBar.asInstanceOf[js.Any], drawer = drawer.asInstanceOf[js.Any], mobileStepper = mobileStepper.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], snackbar = snackbar.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(appBar = appBar.asInstanceOf[js.Any], drawer = drawer.asInstanceOf[js.Any], mobileStepper = mobileStepper.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], snackbar = snackbar.asInstanceOf[js.Any], speedDial = speedDial.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZIndex]
     }
     
@@ -50,6 +53,8 @@ object zIndexMod extends Shortcut {
       inline def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
       inline def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
+      
+      inline def setSpeedDial(value: Double): Self = StObject.set(x, "speedDial", value.asInstanceOf[js.Any])
       
       inline def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     }
@@ -67,6 +72,8 @@ object zIndexMod extends Shortcut {
     var modal: js.UndefOr[Double] = js.undefined
     
     var snackbar: js.UndefOr[Double] = js.undefined
+    
+    var speedDial: js.UndefOr[Double] = js.undefined
     
     var tooltip: js.UndefOr[Double] = js.undefined
   }
@@ -98,6 +105,10 @@ object zIndexMod extends Shortcut {
       inline def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
       
       inline def setSnackbarUndefined: Self = StObject.set(x, "snackbar", js.undefined)
+      
+      inline def setSpeedDial(value: Double): Self = StObject.set(x, "speedDial", value.asInstanceOf[js.Any])
+      
+      inline def setSpeedDialUndefined: Self = StObject.set(x, "speedDial", js.undefined)
       
       inline def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       

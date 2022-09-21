@@ -8,12 +8,12 @@ object vow {
   
   @JSGlobal("ymaps.vow.Deferred")
   @js.native
-  class Deferred ()
+  open class Deferred ()
     extends typings.yandexMaps.mod.vow.Deferred
   
   @JSGlobal("ymaps.vow.Promise")
   @js.native
-  class Promise ()
+  open class Promise ()
     extends typings.yandexMaps.mod.vow.Promise {
     def this(resolver: js.Function0[Unit]) = this()
   }

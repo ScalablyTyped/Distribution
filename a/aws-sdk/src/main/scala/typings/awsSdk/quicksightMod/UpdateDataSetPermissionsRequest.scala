@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDataSetPermissionsRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The ID for the dataset whose permissions you want to update. This ID is unique per AWS Region for each AWS account.
+    * The ID for the dataset whose permissions you want to update. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSetId: ResourceId
   
@@ -43,12 +43,12 @@ object UpdateDataSetPermissionsRequest {
     
     inline def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
     
-    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
+    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value*))
     
     inline def setRevokePermissions(value: ResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
     
     inline def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
     
-    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
+    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value*))
   }
 }

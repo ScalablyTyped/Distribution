@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Simplex3D")
 @js.native
-class Simplex3D () extends StObject {
+open class Simplex3D () extends StObject {
   def this(seed: Double) = this()
   
   var gradP: js.Array[Grad] = js.native

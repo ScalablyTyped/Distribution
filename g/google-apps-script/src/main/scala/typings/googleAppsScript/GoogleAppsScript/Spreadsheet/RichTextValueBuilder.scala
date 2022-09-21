@@ -13,6 +13,11 @@ trait RichTextValueBuilder extends StObject {
   
   def build(): RichTextValue = js.native
   
+  def setLinkUrl(): RichTextValueBuilder = js.native
+  def setLinkUrl(linkUrl: String): RichTextValueBuilder = js.native
+  def setLinkUrl(startOffset: Integer, endOffset: Integer): RichTextValueBuilder = js.native
+  def setLinkUrl(startOffset: Integer, endOffset: Integer, linkUrl: String): RichTextValueBuilder = js.native
+  
   def setText(text: String): RichTextValueBuilder = js.native
   
   def setTextStyle(): RichTextValueBuilder = js.native

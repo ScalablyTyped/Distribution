@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseBindingData extends StObject {
+trait BaseBindingData[Scope] extends StObject {
   
-  var evaluate: js.UndefOr[js.Function1[/* scope */ js.Any, js.Any]] = js.undefined
+  var evaluate: js.UndefOr[js.Function1[/* scope */ Scope, Any]] = js.undefined
   
   var redundantAttribute: js.UndefOr[String] = js.undefined
   
@@ -16,14 +16,14 @@ trait BaseBindingData extends StObject {
 }
 object BaseBindingData {
   
-  inline def apply(): BaseBindingData = {
+  inline def apply[Scope](): BaseBindingData[Scope] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[BaseBindingData]
+    __obj.asInstanceOf[BaseBindingData[Scope]]
   }
   
-  extension [Self <: BaseBindingData](x: Self) {
+  extension [Self <: BaseBindingData[?], Scope](x: Self & BaseBindingData[Scope]) {
     
-    inline def setEvaluate(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
+    inline def setEvaluate(value: /* scope */ Scope => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     
     inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
     

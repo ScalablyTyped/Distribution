@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "ProxyConfigList")
 @js.native
-class ProxyConfigList protected () extends PropertyList[ProxyConfig] {
-  def this(parent: js.Any, populate: js.Array[ProxyConfig]) = this()
+open class ProxyConfigList protected () extends PropertyList[ProxyConfig] {
+  def this(parent: Any, populate: js.Array[ProxyConfig]) = this()
   
   def resolve(url: String): ProxyConfig = js.native
   def resolve(url: Url): ProxyConfig = js.native
@@ -19,5 +19,5 @@ object ProxyConfigList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isProxyConfigList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfigList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isProxyConfigList(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfigList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

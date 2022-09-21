@@ -11,7 +11,7 @@ object interpolatedColorLegendMod {
   
   @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend")
   @js.native
-  class InterpolatedColorLegend protected () extends Component {
+  open class InterpolatedColorLegend protected () extends Component {
     /**
       * Creates an InterpolatedColorLegend.
       *
@@ -24,35 +24,35 @@ object interpolatedColorLegendMod {
       */
     def this(interpolatedColorScale: InterpolatedColor) = this()
     
-    /* private */ var _expands: js.Any = js.native
+    /* private */ var _expands: Any = js.native
     
-    /* private */ var _formatter: js.Any = js.native
+    /* private */ var _formatter: Any = js.native
     
-    /* private */ def _generateTicks(numSwatches: js.Any): js.Any = js.native
+    /* private */ var _generateTicks: Any = js.native
     
-    /* private */ def _isVertical(): js.Any = js.native
+    /* private */ var _isVertical: Any = js.native
     
-    /* private */ var _lowerLabel: js.Any = js.native
+    /* private */ var _lowerLabel: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
-    /* private */ var _redrawCallback: js.Any = js.native
+    /* private */ var _redrawCallback: Any = js.native
     
-    /* private */ var _scale: js.Any = js.native
+    /* private */ var _scale: Any = js.native
     
-    /* private */ var _swatchBoundingBox: js.Any = js.native
+    /* private */ var _swatchBoundingBox: Any = js.native
     
-    /* private */ var _swatchContainer: js.Any = js.native
+    /* private */ var _swatchContainer: Any = js.native
     
-    /* private */ var _textPadding: js.Any = js.native
+    /* private */ var _textPadding: Any = js.native
     
-    /* private */ var _upperLabel: js.Any = js.native
+    /* private */ var _upperLabel: Any = js.native
     
-    /* private */ var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: Any = js.native
     
-    /* private */ var _writer: js.Any = js.native
+    /* private */ var _writer: Any = js.native
     
     /**
       * Gets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
@@ -109,9 +109,12 @@ object interpolatedColorLegendMod {
     
     @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._DEFAULT_NUM_SWATCHES")
     @js.native
-    def _DEFAULT_NUM_SWATCHES: js.Any = js.native
-    inline def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
+    def _DEFAULT_NUM_SWATCHES: Any = js.native
+    inline def _DEFAULT_NUM_SWATCHES_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    inline def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._ensureOrientation")
+    @js.native
+    def _ensureOrientation: Any = js.native
+    inline def _ensureOrientation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ensureOrientation")(x.asInstanceOf[js.Any])
   }
 }

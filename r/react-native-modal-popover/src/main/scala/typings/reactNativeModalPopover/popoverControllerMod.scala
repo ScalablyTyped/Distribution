@@ -12,16 +12,15 @@ object popoverControllerMod {
   
   @JSImport("react-native-modal-popover/lib/PopoverController", "PopoverController")
   @js.native
-  class PopoverController protected ()
-    extends PureComponent[Props, State, js.Any] {
+  open class PopoverController protected () extends PureComponent[Props, State, Any] {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
     
-    /* private */ var closePopover: js.Any = js.native
+    /* private */ var closePopover: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopoverController(): Unit = js.native
@@ -29,15 +28,15 @@ object popoverControllerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPopoverController(): Unit = js.native
     
-    /* private */ var onOrientationChange: js.Any = js.native
+    /* private */ var onOrientationChange: Any = js.native
     
-    /* private */ var onTouchableMeasured: js.Any = js.native
+    /* private */ var onTouchableMeasured: Any = js.native
     
-    /* private */ var openPopover: js.Any = js.native
+    /* private */ var openPopover: Any = js.native
     
-    /* private */ var setTouchableRef: js.Any = js.native
+    /* private */ var setTouchableRef: Any = js.native
     
-    /* private */ var touchable: js.Any = js.native
+    /* private */ var touchable: Any = js.native
   }
   /* static members */
   object PopoverController {
@@ -62,7 +61,7 @@ object popoverControllerMod {
     
     var popoverVisible: Boolean
     
-    def setPopoverAnchor(ref: js.Any): Unit
+    def setPopoverAnchor(ref: Any): Unit
   }
   object PopoverControllerRenderProps {
     
@@ -71,7 +70,7 @@ object popoverControllerMod {
       openPopover: () => Unit,
       popoverAnchorRect: Rect,
       popoverVisible: Boolean,
-      setPopoverAnchor: js.Any => Unit
+      setPopoverAnchor: Any => Unit
     ): PopoverControllerRenderProps = {
       val __obj = js.Dynamic.literal(closePopover = js.Any.fromFunction0(closePopover), openPopover = js.Any.fromFunction0(openPopover), popoverAnchorRect = popoverAnchorRect.asInstanceOf[js.Any], popoverVisible = popoverVisible.asInstanceOf[js.Any], setPopoverAnchor = js.Any.fromFunction1(setPopoverAnchor))
       __obj.asInstanceOf[PopoverControllerRenderProps]
@@ -87,11 +86,13 @@ object popoverControllerMod {
       
       inline def setPopoverVisible(value: Boolean): Self = StObject.set(x, "popoverVisible", value.asInstanceOf[js.Any])
       
-      inline def setSetPopoverAnchor(value: js.Any => Unit): Self = StObject.set(x, "setPopoverAnchor", js.Any.fromFunction1(value))
+      inline def setSetPopoverAnchor(value: Any => Unit): Self = StObject.set(x, "setPopoverAnchor", js.Any.fromFunction1(value))
     }
   }
   
   trait Props extends StObject {
+    
+    var calculateStatusBar: js.UndefOr[Boolean] = js.undefined
     
     def children(props: PopoverControllerRenderProps): ReactElement
   }
@@ -103,6 +104,10 @@ object popoverControllerMod {
     }
     
     extension [Self <: Props](x: Self) {
+      
+      inline def setCalculateStatusBar(value: Boolean): Self = StObject.set(x, "calculateStatusBar", value.asInstanceOf[js.Any])
+      
+      inline def setCalculateStatusBarUndefined: Self = StObject.set(x, "calculateStatusBar", js.undefined)
       
       inline def setChildren(value: PopoverControllerRenderProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }

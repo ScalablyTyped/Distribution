@@ -9,7 +9,7 @@ trait StartAuditMitigationActionsTaskResponse extends StObject {
   /**
     * The unique identifier for the audit mitigation task. This matches the taskId that you specified in the request.
     */
-  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.undefined
+  var taskId: js.UndefOr[MitigationActionsTaskId] = js.undefined
 }
 object StartAuditMitigationActionsTaskResponse {
   
@@ -20,7 +20,7 @@ object StartAuditMitigationActionsTaskResponse {
   
   extension [Self <: StartAuditMitigationActionsTaskResponse](x: Self) {
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }

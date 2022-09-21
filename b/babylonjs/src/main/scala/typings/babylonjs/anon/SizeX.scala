@@ -1,18 +1,24 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Color4
-import typings.babylonjs.BABYLON.Vector4
+import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.mathVectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SizeX extends StObject {
   
-  var custom: js.UndefOr[js.Any] = js.undefined
+  var backUVs: js.UndefOr[Vector4] = js.undefined
+  
+  var custom: js.UndefOr[Any] = js.undefined
   
   var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
   
   var faceUV: js.UndefOr[js.Array[Vector4]] = js.undefined
+  
+  var flat: js.UndefOr[Boolean] = js.undefined
+  
+  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
@@ -37,7 +43,11 @@ object SizeX {
   
   extension [Self <: SizeX](x: Self) {
     
-    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    
+    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    
+    inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -45,13 +55,21 @@ object SizeX {
     
     inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
+    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
     
     inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
+    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
+    
+    inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    
+    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    
+    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
+    
+    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     

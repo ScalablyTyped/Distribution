@@ -22,6 +22,6 @@ object DescribeTrustedAdvisorCheckSummariesRequest {
     
     inline def setCheckIds(value: StringList): Self = StObject.set(x, "checkIds", value.asInstanceOf[js.Any])
     
-    inline def setCheckIdsVarargs(value: String*): Self = StObject.set(x, "checkIds", js.Array(value :_*))
+    inline def setCheckIdsVarargs(value: String*): Self = StObject.set(x, "checkIds", js.Array(value*))
   }
 }

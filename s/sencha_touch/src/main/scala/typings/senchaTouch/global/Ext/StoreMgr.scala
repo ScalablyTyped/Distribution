@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.StoreMgr")
 @js.native
-class StoreMgr ()
+open class StoreMgr ()
   extends StObject
      with typings.senchaTouch.Ext.StoreMgr
 /* static members */
@@ -25,37 +25,37 @@ object StoreMgr {
     * @param item Object The item to add.
     * @returns Object The item added.
     */
-  inline def add(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[js.Any]
-  inline def add(key: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def add(key: java.lang.String, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def add(key: Unit, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def add(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Any]
+  inline def add(key: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def add(key: java.lang.String, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def add(key: Unit, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Adds all elements of an Array or an Object to the collection
     * @param addItems Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if {@link} Ext.util.MixedCollection.allowFunctions allowFunctions} has been set to true.
     */
   inline def addAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")().asInstanceOf[Unit]
-  inline def addAll(addItems: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")(addItems.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAll(addItems: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")(addItems.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] This method adds a filter
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     */
   inline def addFilter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")().asInstanceOf[Unit]
-  inline def addFilter(filter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFilter(filter: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] This method adds all the filters in a passed array
     * @param filters Object
     * @returns Object
     */
-  inline def addFilters(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilters")().asInstanceOf[js.Any]
-  inline def addFilters(filters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilters")(filters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addFilters(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilters")().asInstanceOf[Any]
+  inline def addFilters(filters: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFilters")(filters.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method adds a sorter
     * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
     * @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
     */
   inline def addSorter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")().asInstanceOf[Unit]
-  inline def addSorter(sorter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")(sorter.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addSorter(sorter: js.Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")(sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addSorter(sorter: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")(sorter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addSorter(sorter: Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")(sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addSorter(sorter: Unit, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSorter")(sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] This method adds all the sorters in a passed array
@@ -77,22 +77,22 @@ object StoreMgr {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Removes all items from the collection  */
   inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
@@ -102,7 +102,7 @@ object StoreMgr {
     * @returns Boolean true if the collection contains the Object as an item.
     */
   inline def contains(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")().asInstanceOf[Boolean]
-  inline def contains(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def contains(item: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Method] Returns true if the collection contains the passed Object as a key
     * @param key String The key to look for in the collection.
@@ -114,8 +114,8 @@ object StoreMgr {
   /** [Property] (Object) */
   @JSGlobal("Ext.StoreMgr.currentSortFn")
   @js.native
-  def currentSortFn: js.Any = js.native
-  inline def currentSortFn_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentSortFn")(x.asInstanceOf[js.Any])
+  def currentSortFn: Any = js.native
+  inline def currentSortFn_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentSortFn")(x.asInstanceOf[js.Any])
   
   /** [Method]  */
   inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
@@ -137,18 +137,18 @@ object StoreMgr {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
   inline def each(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("each")().asInstanceOf[Unit]
-  inline def each(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def each(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def each(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def each(fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
   inline def eachKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")().asInstanceOf[Unit]
-  inline def eachKey(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def eachKey(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def eachKey(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def eachKey(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def eachKey(fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def eachKey(fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachKey")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] This method will sort a collection based on the currently configured sorters
     * @param property Object
@@ -158,21 +158,21 @@ object StoreMgr {
     * @returns Array
     */
   inline def filter(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: js.Any, anyMatch: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: js.Any, anyMatch: js.Any, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: js.Any, anyMatch: Unit, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: Unit, anyMatch: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: Unit, anyMatch: js.Any, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: js.Any, value: Unit, anyMatch: Unit, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: js.Any, anyMatch: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: js.Any, anyMatch: js.Any, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: js.Any, anyMatch: Unit, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: Unit, anyMatch: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: Unit, anyMatch: js.Any, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def filter(property: Unit, value: Unit, anyMatch: Unit, caseSensitive: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Any, anyMatch: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Any, anyMatch: Any, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Any, anyMatch: Unit, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Unit, anyMatch: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Unit, anyMatch: Any, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Any, value: Unit, anyMatch: Unit, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Any, anyMatch: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Any, anyMatch: Any, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Any, anyMatch: Unit, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Unit, anyMatch: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Unit, anyMatch: Any, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def filter(property: Unit, value: Unit, anyMatch: Unit, caseSensitive: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], anyMatch.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Method] Filter by a function
     * @param fn Function The function to be called.
@@ -180,9 +180,9 @@ object StoreMgr {
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   inline def filterBy(): IMixedCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")().asInstanceOf[IMixedCollection]
-  inline def filterBy(fn: js.Any): IMixedCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any]).asInstanceOf[IMixedCollection]
-  inline def filterBy(fn: js.Any, scope: js.Any): IMixedCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMixedCollection]
-  inline def filterBy(fn: Unit, scope: js.Any): IMixedCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMixedCollection]
+  inline def filterBy(fn: Any): IMixedCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any]).asInstanceOf[IMixedCollection]
+  inline def filterBy(fn: Any, scope: Any): IMixedCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMixedCollection]
+  inline def filterBy(fn: Unit, scope: Any): IMixedCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("filterBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMixedCollection]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.StoreMgr.filtered")
@@ -195,10 +195,10 @@ object StoreMgr {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     * @returns Object The first item in the collection which returned true from the selection function.
     */
-  inline def findBy(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")().asInstanceOf[js.Any]
-  inline def findBy(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def findBy(fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def findBy(fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findBy(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")().asInstanceOf[Any]
+  inline def findBy(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def findBy(fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def findBy(fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Find the index of the first matching object in this collection by a function
     * @param fn Function The function to be called.
@@ -207,12 +207,12 @@ object StoreMgr {
     * @returns Number The matched index, or -1 if the item was not found.
     */
   inline def findIndexBy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")().asInstanceOf[Double]
-  inline def findIndexBy(fn: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def findIndexBy(fn: js.Any, scope: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def findIndexBy(fn: js.Any, scope: js.Any, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def findIndexBy(fn: js.Any, scope: Unit, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def findIndexBy(fn: Unit, scope: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def findIndexBy(fn: Unit, scope: js.Any, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndexBy(fn: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def findIndexBy(fn: Any, scope: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndexBy(fn: Any, scope: Any, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndexBy(fn: Any, scope: Unit, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndexBy(fn: Unit, scope: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndexBy(fn: Unit, scope: Any, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def findIndexBy(fn: Unit, scope: Unit, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** [Method] This method returns the index that a given item would be inserted into a given array based on the current sorters
@@ -221,28 +221,28 @@ object StoreMgr {
     * @returns Number The index for the given item in the given array based on the current sorters.
     */
   inline def findInsertionIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")().asInstanceOf[Double]
-  inline def findInsertionIndex(items: Unit, item: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findInsertionIndex(items: Unit, item: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def findInsertionIndex(items: typings.senchaTouch.Ext.Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def findInsertionIndex(items: typings.senchaTouch.Ext.Array, item: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findInsertionIndex(items: typings.senchaTouch.Ext.Array, item: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findInsertionIndex")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** [Method] Returns the first item in the collection
     * @returns Object the first item in the collection.
     */
-  inline def first(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.Any]
+  inline def first(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[Any]
   
   /** [Method] Returns the item associated with the passed key OR index
     * @param key String/Number The key or index of the item.
     * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
     */
-  inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
-  inline def get(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Any]
+  inline def get(key: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns the item at the specified index
     * @param index Number The index of the item.
     * @returns Object The item at the specified index.
     */
-  inline def getAt(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")().asInstanceOf[js.Any]
-  inline def getAt(index: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(index.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAt(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")().asInstanceOf[Any]
+  inline def getAt(index: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(index.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns the value of autoFilter
     * @returns Boolean
@@ -258,8 +258,8 @@ object StoreMgr {
     * @param key String/Number The key of the item.
     * @returns Object The item associated with the passed key.
     */
-  inline def getByKey(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getByKey")().asInstanceOf[js.Any]
-  inline def getByKey(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getByKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getByKey(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getByKey")().asInstanceOf[Any]
+  inline def getByKey(key: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns the number of items in the collection
     * @returns Number the number of items in the collection.
@@ -274,7 +274,7 @@ object StoreMgr {
   /** [Method] Returns an up to date sort function
     * @returns Function sortFn The sort function.
     */
-  inline def getFilterFn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterFn")().asInstanceOf[js.Any]
+  inline def getFilterFn(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterFn")().asInstanceOf[Any]
   
   /** [Method] Returns the value of filterRoot
     * @returns String
@@ -290,15 +290,15 @@ object StoreMgr {
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] getKey implementation for MixedCollection
     * @param o Object
     * @returns Object The key for the passed item.
     */
-  inline def getKey(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")().asInstanceOf[js.Any]
-  inline def getKey(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getKey(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")().asInstanceOf[Any]
+  inline def getKey(o: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(o.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns a range of items in this collection
     * @param start Number The starting index.
@@ -313,7 +313,7 @@ object StoreMgr {
   /** [Method] Returns an up to date sort function
     * @returns Function The sort function.
     */
-  inline def getSortFn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortFn")().asInstanceOf[js.Any]
+  inline def getSortFn(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortFn")().asInstanceOf[Any]
   
   /** [Method] Returns the value of sortRoot
     * @returns String
@@ -330,7 +330,7 @@ object StoreMgr {
     * @returns Number Index of the item. Returns -1 if not found.
     */
   inline def indexOf(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")().asInstanceOf[Double]
-  inline def indexOf(item: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(item.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def indexOf(item: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(item.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /** [Method] Returns index within the collection of the passed key
     * @param key String The key to find the index of.
@@ -342,15 +342,15 @@ object StoreMgr {
   /** [Property] (Object) */
   @JSGlobal("Ext.StoreMgr.indices")
   @js.native
-  def indices: js.Any = js.native
-  inline def indices_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indices")(x.asInstanceOf[js.Any])
+  def indices: Any = js.native
+  inline def indices_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indices")(x.asInstanceOf[js.Any])
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  inline def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
-  inline def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def initConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Any]
+  inline def initConfig(instanceConfig: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Inserts an item at the specified index in the collection
     * @param index Number The index to insert the item at.
@@ -358,24 +358,24 @@ object StoreMgr {
     * @param item Object If the second parameter was a key, the new item.
     * @returns Object The item inserted.
     */
-  inline def insert(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[js.Any]
-  inline def insert(index: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def insert(index: Double, key: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insert(index: Double, key: java.lang.String, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insert(index: Double, key: Unit, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insert(index: Unit, key: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insert(index: Unit, key: java.lang.String, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insert(index: Unit, key: Unit, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def insert(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[Any]
+  inline def insert(index: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def insert(index: Double, key: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insert(index: Double, key: java.lang.String, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insert(index: Double, key: Unit, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insert(index: Unit, key: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insert(index: Unit, key: java.lang.String, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insert(index: Unit, key: Unit, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] This method adds a filter at a given index
     * @param index Number The index at which to insert the filter.
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     * @returns Object
     */
-  inline def insertFilter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")().asInstanceOf[js.Any]
-  inline def insertFilter(index: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def insertFilter(index: Double, filter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def insertFilter(index: Unit, filter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def insertFilter(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")().asInstanceOf[Any]
+  inline def insertFilter(index: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def insertFilter(index: Double, filter: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def insertFilter(index: Unit, filter: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFilter")(index.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] This method inserts all the filters in the passed array at the given index
     * @param index Number The index at which to insert the filters.
@@ -394,11 +394,11 @@ object StoreMgr {
     */
   inline def insertSorter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")().asInstanceOf[Unit]
   inline def insertSorter(index: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def insertSorter(index: Double, sorter: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertSorter(index: Double, sorter: js.Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertSorter(index: Double, sorter: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertSorter(index: Double, sorter: Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertSorter(index: Double, sorter: Unit, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertSorter(index: Unit, sorter: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertSorter(index: Unit, sorter: js.Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertSorter(index: Unit, sorter: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertSorter(index: Unit, sorter: Any, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertSorter(index: Unit, sorter: Unit, defaultDirection: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSorter")(index.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] This method inserts all the sorters in the passed array at the given index
@@ -421,7 +421,7 @@ object StoreMgr {
   /** [Method] Returns the last item in the collection
     * @returns Object the last item in the collection.
     */
-  inline def last(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.Any]
+  inline def last(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[Any]
   
   /** [Property] (Number) */
   @JSGlobal("Ext.StoreMgr.length")
@@ -434,13 +434,13 @@ object StoreMgr {
     * @returns Ext.data.Store
     */
   inline def lookup(): IStore = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")().asInstanceOf[IStore]
-  inline def lookup(store: js.Any): IStore = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(store.asInstanceOf[js.Any]).asInstanceOf[IStore]
+  inline def lookup(store: Any): IStore = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(store.asInstanceOf[js.Any]).asInstanceOf[IStore]
   
   /** [Property] (Object) */
   @JSGlobal("Ext.StoreMgr.map")
   @js.native
-  def map: js.Any = js.native
-  inline def map_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
+  def map: Any = js.native
+  inline def map_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
   
   /** [Method] Registers one or more Stores with the StoreManager
     * @param stores Ext.data.Store... Any number of Store instances.
@@ -451,8 +451,8 @@ object StoreMgr {
     * @param item Object The item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  inline def remove(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[js.Any]
-  inline def remove(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def remove(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[Any]
+  inline def remove(item: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Remove all items in the passed array from the collection
     * @param items Array An array of items to be removed.
@@ -465,45 +465,45 @@ object StoreMgr {
     * @param index Number The index within the collection of the item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  inline def removeAt(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")().asInstanceOf[js.Any]
-  inline def removeAt(index: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(index.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def removeAt(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")().asInstanceOf[Any]
+  inline def removeAt(index: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(index.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Removed an item associated with the passed key from the collection
     * @param key String The key of the item to remove.
     * @returns Object/Boolean The item removed or false if no item was removed.
     */
-  inline def removeAtKey(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAtKey")().asInstanceOf[js.Any]
-  inline def removeAtKey(key: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAtKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def removeAtKey(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAtKey")().asInstanceOf[Any]
+  inline def removeAtKey(key: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAtKey")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method removes all the filters in a passed array
     * @param filters Object
     * @returns Ext.util.Collection this
     */
   inline def removeFilters(): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFilters")().asInstanceOf[ICollection]
-  inline def removeFilters(filters: js.Any): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFilters")(filters.asInstanceOf[js.Any]).asInstanceOf[ICollection]
+  inline def removeFilters(filters: Any): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFilters")(filters.asInstanceOf[js.Any]).asInstanceOf[ICollection]
   
   /** [Method] This method removes a sorter
     * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
     */
   inline def removeSorter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorter")().asInstanceOf[Unit]
-  inline def removeSorter(sorter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorter")(sorter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeSorter(sorter: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorter")(sorter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] This method removes all the sorters in a passed array
     * @param sorters Object
     * @returns Ext.util.Collection this
     */
   inline def removeSorters(): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorters")().asInstanceOf[ICollection]
-  inline def removeSorters(sorters: js.Any): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorters")(sorters.asInstanceOf[js.Any]).asInstanceOf[ICollection]
+  inline def removeSorters(sorters: Any): ICollection = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSorters")(sorters.asInstanceOf[js.Any]).asInstanceOf[ICollection]
   
   /** [Method] Replaces an item in the collection
     * @param oldKey String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
     * @param item Object {Object} item (optional) If the first parameter passed was a key, the item to associate with that key.
     * @returns Object The new item.
     */
-  inline def replace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")().asInstanceOf[js.Any]
-  inline def replace(oldKey: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def replace(oldKey: java.lang.String, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def replace(oldKey: Unit, item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def replace(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")().asInstanceOf[Any]
+  inline def replace(oldKey: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def replace(oldKey: java.lang.String, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def replace(oldKey: Unit, item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(oldKey.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.StoreMgr.self")
@@ -559,9 +559,9 @@ object StoreMgr {
     * @returns Array The array you passed after it is sorted.
     */
   inline def sort(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")().asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def sort(sorters: js.Any): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def sort(sorters: js.Any, defaultDirection: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
-  inline def sort(sorters: Unit, defaultDirection: js.Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def sort(sorters: Any): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def sort(sorters: Any, defaultDirection: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def sort(sorters: Unit, defaultDirection: Any): typings.senchaTouch.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(sorters.asInstanceOf[js.Any], defaultDirection.asInstanceOf[js.Any])).asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.StoreMgr.sorted")
@@ -578,5 +578,5 @@ object StoreMgr {
     * @param stores String/Object... Any number of Store instances or ID-s.
     */
   inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
-  inline def unregister(stores: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(stores.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregister(stores: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(stores.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

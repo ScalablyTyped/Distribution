@@ -10,11 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.ellipse
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.line
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
-import typings.arcgisJsApi.arcgisJsApiStrings.triangle
+import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ trait FeatureTemplateProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#drawingTool)
     */
   var drawingTool: js.UndefOr[
-    `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
+    `auto-complete-polygon` | circle | ellipse | freehand | line | none_ | point | polygon | rectangle | arrow | triangle_ | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
   ] = js.undefined
   
   /**
@@ -65,7 +65,7 @@ object FeatureTemplateProperties {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDrawingTool(
-      value: `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
+      value: `auto-complete-polygon` | circle | ellipse | freehand | line | none_ | point | polygon | rectangle | arrow | triangle_ | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
     ): Self = StObject.set(x, "drawingTool", value.asInstanceOf[js.Any])
     
     inline def setDrawingToolUndefined: Self = StObject.set(x, "drawingTool", js.undefined)

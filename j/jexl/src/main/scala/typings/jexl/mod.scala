@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jexl.anon.Instantiable
 import typings.jexl.expressionMod.Context
 import typings.jexl.expressionMod.default
+import typings.jexl.grammarMod.Grammar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,16 +19,16 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jexl", "Jexl")
   @js.native
-  class JexlCls ()
+  open class JexlCls ()
     extends StObject
        with Jexl
   
-  type BinaryOpFunction = js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  type BinaryOpFunction = js.Function2[/* left */ Any, /* right */ Any, Any]
   
   /**
     * Jexl is the Javascript Expression Language, capable of parsing and
     * evaluating basic to complex expression strings, combined with advanced
-    * xpath-like drilldown into native Javascript objects.
+    * xpath-like drill down into native Javascript objects.
     */
   @js.native
   trait BuildableJexl
@@ -37,6 +38,12 @@ object mod extends Shortcut {
     var Jexl: Instantiable = js.native
   }
   
+  @js.native
+  trait FunctionFunction extends StObject {
+    
+    def apply(value: Any, args: Any*): Any = js.native
+  }
+  
   /**
     * Jexl is the Javascript Expression Language, capable of parsing and
     * evaluating basic to complex expression strings, combined with advanced
@@ -44,6 +51,11 @@ object mod extends Shortcut {
     */
   @js.native
   trait Jexl extends StObject {
+    
+    /**
+      * The grammar used to compile the expression.
+      */
+    var _grammar: Grammar = js.native
     
     /**
       * Adds a binary operator to Jexl at the specified precedence. The higher the
@@ -62,6 +74,24 @@ object mod extends Shortcut {
       *      value, or a Promise that resolves with the resulting value.
       */
     def addBinaryOp(operator: String, precedence: Double, fn: BinaryOpFunction): Unit = js.native
+    
+    /**
+      * Adds or replaces an expression function in this Jexl instance.
+      * @param name The name of the expression function, as it will be
+      *      used within Jexl expressions.
+      * @param fn The javascript function to be executed when this
+      *      expression function is invoked. It will be provided with each argument
+      *      supplied in the expression, in the same order.
+      */
+    def addFunction(name: String, fn: FunctionFunction): Unit = js.native
+    
+    /**
+      * Syntactic sugar for calling {@link #addFunction} repeatedly. This function
+      * accepts a map of one or more expression function names to their javascript
+      * function counterpart.
+      * @param map A map of expression function names to javascript functions.
+      */
+    def addFunctions(map: StringDictionary[FunctionFunction]): Unit = js.native
     
     /**
       * Adds or replaces a transform function in this Jexl instance.
@@ -117,8 +147,8 @@ object mod extends Shortcut {
       *      made accessible to the Jexl expression when evaluating it
       * @returns resolves with the result of the evaluation.
       */
-    def eval(expression: String): js.Promise[js.Any] = js.native
-    def eval(expression: String, context: Context): js.Promise[js.Any] = js.native
+    def eval(expression: String): js.Promise[Any] = js.native
+    def eval(expression: String, context: Context): js.Promise[Any] = js.native
     
     /**
       * Synchronously evaluates a Jexl string within an optional context.
@@ -128,8 +158,15 @@ object mod extends Shortcut {
       * @returns the result of the evaluation.
       * @throws on error
       */
-    def evalSync(expression: String): js.Any = js.native
-    def evalSync(expression: String, context: Context): js.Any = js.native
+    def evalSync(expression: String): Any = js.native
+    def evalSync(expression: String, context: Context): Any = js.native
+    
+    /**
+      * Retrieves a previously set expression function.
+      * @param name The name of the expression function
+      * @returns The expression function
+      */
+    def getFunction(name: String): FunctionFunction = js.native
     
     /**
       * Retrieves a previously set transform function.
@@ -148,10 +185,10 @@ object mod extends Shortcut {
   @js.native
   trait TransformFunction extends StObject {
     
-    def apply(value: js.Any, args: js.Any*): js.Any = js.native
+    def apply(value: Any, args: Any*): Any = js.native
   }
   
-  type UnaryOpFunction = js.Function1[/* right */ js.Any, js.Any]
+  type UnaryOpFunction = js.Function1[/* right */ Any, Any]
   
   type _To = BuildableJexl
   

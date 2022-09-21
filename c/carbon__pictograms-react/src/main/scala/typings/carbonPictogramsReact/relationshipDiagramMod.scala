@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object relationshipDiagramMod extends Shortcut {
   
-  @JSImport("@carbon/pictograms-react/lib/relationship-diagram", JSImport.Default)
+  @JSImport("@carbon/pictograms-react/lib/relationship--diagram", JSImport.Namespace)
   @js.native
-  val default: CarbonPictogramType = js.native
+  val ^ : CarbonPictogramType = js.native
   
   type _To = CarbonPictogramType
   
-  /* This means you don't have to write `default`, but can instead just say `relationshipDiagramMod.foo` */
-  override def _to: CarbonPictogramType = default
+  /* This means you don't have to write `^`, but can instead just say `relationshipDiagramMod.foo` */
+  override def _to: CarbonPictogramType = ^
 }

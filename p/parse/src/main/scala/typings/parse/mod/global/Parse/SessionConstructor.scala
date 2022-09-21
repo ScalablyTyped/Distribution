@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SessionConstructor
   extends StObject
-     with ObjectStatic
+     with ObjectStatic[Session[Attributes]]
      with Instantiable0[Session[Attributes]]
      with Instantiable1[/* attributes */ Attributes, Session[Attributes]] {
   

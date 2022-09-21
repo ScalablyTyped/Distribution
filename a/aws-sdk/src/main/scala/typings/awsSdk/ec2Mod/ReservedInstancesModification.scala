@@ -14,12 +14,12 @@ trait ReservedInstancesModification extends StObject {
   /**
     * The time when the modification request was created.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time for the modification to become effective.
     */
-  var EffectiveDate: js.UndefOr[DateTime] = js.undefined
+  var EffectiveDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains target configurations along with their corresponding new Reserved Instance IDs.
@@ -49,7 +49,7 @@ trait ReservedInstancesModification extends StObject {
   /**
     * The time when the modification request was last updated.
     */
-  var UpdateDate: js.UndefOr[DateTime] = js.undefined
+  var UpdateDate: js.UndefOr[js.Date] = js.undefined
 }
 object ReservedInstancesModification {
   
@@ -64,11 +64,11 @@ object ReservedInstancesModification {
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    inline def setCreateDate(value: DateTime): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    inline def setEffectiveDate(value: DateTime): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
+    inline def setEffectiveDate(value: js.Date): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
     
     inline def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
     
@@ -76,13 +76,13 @@ object ReservedInstancesModification {
     
     inline def setModificationResultsUndefined: Self = StObject.set(x, "ModificationResults", js.undefined)
     
-    inline def setModificationResultsVarargs(value: ReservedInstancesModificationResult*): Self = StObject.set(x, "ModificationResults", js.Array(value :_*))
+    inline def setModificationResultsVarargs(value: ReservedInstancesModificationResult*): Self = StObject.set(x, "ModificationResults", js.Array(value*))
     
     inline def setReservedInstancesIds(value: ReservedIntancesIds): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
     inline def setReservedInstancesIdsUndefined: Self = StObject.set(x, "ReservedInstancesIds", js.undefined)
     
-    inline def setReservedInstancesIdsVarargs(value: ReservedInstancesId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
+    inline def setReservedInstancesIdsVarargs(value: ReservedInstancesId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value*))
     
     inline def setReservedInstancesModificationId(value: String): Self = StObject.set(x, "ReservedInstancesModificationId", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object ReservedInstancesModification {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdateDate(value: DateTime): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }

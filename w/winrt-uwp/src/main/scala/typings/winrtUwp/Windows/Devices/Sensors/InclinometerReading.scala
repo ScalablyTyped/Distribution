@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait InclinometerReading extends StObject {
   var rollDegrees: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** Gets the inclinometer's z-axis accuracy. */
   var yawAccuracy: MagnetometerAccuracy
@@ -28,7 +27,7 @@ object InclinometerReading {
   inline def apply(
     pitchDegrees: Double,
     rollDegrees: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     yawAccuracy: MagnetometerAccuracy,
     yawDegrees: Double
   ): InclinometerReading = {
@@ -42,7 +41,7 @@ object InclinometerReading {
     
     inline def setRollDegrees(value: Double): Self = StObject.set(x, "rollDegrees", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
     

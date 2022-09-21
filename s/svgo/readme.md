@@ -1,7 +1,7 @@
 
 # Scala.js typings for svgo
 
-Typings are for version 1.3
+Typings are for version 2.8.0
 
 ## Library description:
 Nodejs-based tool for optimizing SVG vector graphics files
@@ -10,10 +10,10 @@ Nodejs-based tool for optimizing SVG vector graphics files
 | ------------------ | :-------------: |
 | Full name          | svgo |
 | Keywords           | svgo, svg, optimize, minify |
-| # releases         | 10 |
-| # dependents       | 787 |
-| # downloads        | 422458923 |
-| # stars            | 64 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 6.0099577666666664E7 |
+| # stars            | 17857.0 |
 
 ## Links
 - [Homepage](https://github.com/svg/svgo)
@@ -24,7 +24,7 @@ Nodejs-based tool for optimizing SVG vector graphics files
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

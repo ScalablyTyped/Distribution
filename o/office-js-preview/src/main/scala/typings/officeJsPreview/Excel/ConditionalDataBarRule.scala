@@ -13,25 +13,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a rule-type for a data bar.
   *
-  * Represents a rule-type for a Data Bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalDataBarRule extends StObject {
   
   /**
+    * The formula, if required, on which to evaluate the data bar rule.
     *
-    * The formula, if required, to evaluate the databar rule on.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula: js.UndefOr[String] = js.undefined
   
   /**
+    * The type of rule for the data bar.
     *
-    * The type of rule for the databar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var `type`: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile

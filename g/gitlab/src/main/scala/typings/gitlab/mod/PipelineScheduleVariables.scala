@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "PipelineScheduleVariables")
 @js.native
-class PipelineScheduleVariables ()
+open class PipelineScheduleVariables ()
   extends typings.gitlab.servicesMod.PipelineScheduleVariables {
   def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
 }

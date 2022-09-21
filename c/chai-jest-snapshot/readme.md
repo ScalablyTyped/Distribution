@@ -10,15 +10,12 @@ Chai assertion that provides Jest's snapshot testing
 | ------------------ | :-------------: |
 | Full name          | chai-jest-snapshot |
 | Keywords           | mocha, chai, assertion, helper, jest, snapshot, react, test, spec, testing |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 1002311 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62062.333333333336 |
+| # stars            | 99.0 |
 
 ## Links
-- [Homepage](https://github.com/suchipi/chai-jest-snapshot#readme)
-- [Bugs](https://github.com/suchipi/chai-jest-snapshot/issues)
-- [Repository](https://github.com/suchipi/chai-jest-snapshot)
 - [Npm](https://www.npmjs.com/package/chai-jest-snapshot)
     
 

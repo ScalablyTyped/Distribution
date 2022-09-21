@@ -1,36 +1,38 @@
 package typings.ace.AceAjax
 
+import typings.ace.aceStrings.insert
+import typings.ace.aceStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Delta extends StObject {
   
-  var action: String
+  var action: insert | remove
+  
+  var end: Position
   
   var lines: js.Array[String]
   
-  var range: Range
-  
-  var text: String
+  var start: Position
 }
 object Delta {
   
-  inline def apply(action: String, lines: js.Array[String], range: Range, text: String): Delta = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(action: insert | remove, end: Position, lines: js.Array[String], start: Position): Delta = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
   
   extension [Self <: Delta](x: Self) {
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: insert | remove): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value*))
     
-    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
-    
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

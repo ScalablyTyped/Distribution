@@ -1,15 +1,16 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.ui.dxForm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FormData extends StObject {
   
-  var component: js.UndefOr[dxForm] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
+  
+  var xhrFields: js.UndefOr[Any] = js.undefined
 }
 object FormData {
   
@@ -20,12 +21,16 @@ object FormData {
   
   extension [Self <: FormData](x: Self) {
     
-    inline def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-    
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setXhrFields(value: Any): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+    
+    inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
   }
 }

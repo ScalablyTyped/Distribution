@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConstantSourceOptions extends StObject {
   
+  /* standard dom */
   var offset: js.UndefOr[Double] = js.undefined
 }
 object ConstantSourceOptions {

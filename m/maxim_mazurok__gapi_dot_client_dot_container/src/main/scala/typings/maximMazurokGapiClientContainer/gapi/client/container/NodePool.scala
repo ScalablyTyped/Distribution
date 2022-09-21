@@ -23,7 +23,7 @@ trait NodePool extends StObject {
   
   /**
     * [Output only] The resource URLs of the [managed instance groups](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances) associated with this
-    * node pool.
+    * node pool. During the node pool blue-green upgrade operation, the URLs contain both blue and green resources.
     */
   var instanceGroupUrls: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -43,6 +43,9 @@ trait NodePool extends StObject {
   /** The name of the node pool. */
   var name: js.UndefOr[String] = js.undefined
   
+  /** Networking configuration for this NodePool. If specified, it overrides the cluster-level defaults. */
+  var networkConfig: js.UndefOr[NodeNetworkConfig] = js.undefined
+  
   /** [Output only] The pod CIDR block size per node in this node pool. */
   var podIpv4CidrSize: js.UndefOr[Double] = js.undefined
   
@@ -52,8 +55,11 @@ trait NodePool extends StObject {
   /** [Output only] The status of the nodes in this pool instance. */
   var status: js.UndefOr[String] = js.undefined
   
-  /** [Output only] Additional information about the current status of this node pool instance, if available. */
+  /** [Output only] Deprecated. Use conditions instead. Additional information about the current status of this node pool instance, if available. */
   var statusMessage: js.UndefOr[String] = js.undefined
+  
+  /** Output only. [Output only] Update info contains relevant information during a node pool update. */
+  var updateInfo: js.UndefOr[UpdateInfo] = js.undefined
   
   /** Upgrade settings control disruption and speed of the upgrade. */
   var upgradeSettings: js.UndefOr[UpgradeSettings] = js.undefined
@@ -78,7 +84,7 @@ object NodePool {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setConfig(value: NodeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
@@ -92,13 +98,13 @@ object NodePool {
     
     inline def setInstanceGroupUrlsUndefined: Self = StObject.set(x, "instanceGroupUrls", js.undefined)
     
-    inline def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value :_*))
+    inline def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value*))
     
     inline def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setManagement(value: NodeManagement): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
@@ -111,6 +117,10 @@ object NodePool {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNetworkConfig(value: NodeNetworkConfig): Self = StObject.set(x, "networkConfig", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkConfigUndefined: Self = StObject.set(x, "networkConfig", js.undefined)
     
     inline def setPodIpv4CidrSize(value: Double): Self = StObject.set(x, "podIpv4CidrSize", value.asInstanceOf[js.Any])
     
@@ -127,6 +137,10 @@ object NodePool {
     inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setUpdateInfo(value: UpdateInfo): Self = StObject.set(x, "updateInfo", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateInfoUndefined: Self = StObject.set(x, "updateInfo", js.undefined)
     
     inline def setUpgradeSettings(value: UpgradeSettings): Self = StObject.set(x, "upgradeSettings", value.asInstanceOf[js.Any])
     

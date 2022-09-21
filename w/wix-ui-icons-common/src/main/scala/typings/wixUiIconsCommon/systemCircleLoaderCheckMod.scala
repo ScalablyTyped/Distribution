@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.circleLoaderCheckMod.CircleLoaderCheckProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemCircleLoaderCheckMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/CircleLoaderCheck", JSImport.Default)
   @js.native
-  val default: SFC[CircleLoaderCheckProps] = js.native
+  val default: FC[CircleLoaderCheckProps] = js.native
   
-  type _To = SFC[CircleLoaderCheckProps]
+  type _To = FC[CircleLoaderCheckProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemCircleLoaderCheckMod.foo` */
-  override def _to: SFC[CircleLoaderCheckProps] = default
+  override def _to: FC[CircleLoaderCheckProps] = default
 }

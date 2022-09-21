@@ -9,6 +9,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Attachment extends StObject {
+    
+    var attachment: js.UndefOr[typings.nodeZendesk.mod.Attachments.Attachment] = js.undefined
+    
+    var attachments: js.UndefOr[js.Array[typings.nodeZendesk.mod.Attachments.Attachment]] = js.undefined
+    
+    var token: String
+  }
+  object Attachment {
+    
+    inline def apply(token: String): Attachment = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Attachment]
+    }
+    
+    extension [Self <: Attachment](x: Self) {
+      
+      inline def setAttachment(value: typings.nodeZendesk.mod.Attachments.Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+      
+      inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+      
+      inline def setAttachments(value: js.Array[typings.nodeZendesk.mod.Attachments.Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      
+      inline def setAttachmentsVarargs(value: typings.nodeZendesk.mod.Attachments.Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Body extends StObject {
     
     var body: String
@@ -17,7 +48,7 @@ object anon {
     
     var public: js.UndefOr[Boolean] = js.undefined
     
-    var scoped_body: js.UndefOr[js.Any] = js.undefined
+    var scoped_body: js.UndefOr[Any] = js.undefined
   }
   object Body {
     
@@ -36,7 +67,7 @@ object anon {
       
       inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      inline def setScoped_body(value: js.Any): Self = StObject.set(x, "scoped_body", value.asInstanceOf[js.Any])
+      inline def setScoped_body(value: Any): Self = StObject.set(x, "scoped_body", value.asInstanceOf[js.Any])
       
       inline def setScoped_bodyUndefined: Self = StObject.set(x, "scoped_body", js.undefined)
     }
@@ -80,7 +111,7 @@ object anon {
       
       inline def setExternal_ids(value: js.Array[ZendeskID]): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
       
-      inline def setExternal_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "external_ids", js.Array(value :_*))
+      inline def setExternal_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "external_ids", js.Array(value*))
     }
   }
   
@@ -124,7 +155,7 @@ object anon {
       
       inline def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value*))
     }
   }
 }

@@ -10,10 +10,10 @@ Simple to use React Hook with click outside functionality
 | ------------------ | :-------------: |
 | Full name          | react-click-outside-hook |
 | Keywords           | react, component, hooks, clickoutside, onClickOutside, useClickOutside |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 198055 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 35570.333333333336 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/bdeloeste/react-click-outside-hook#readme)

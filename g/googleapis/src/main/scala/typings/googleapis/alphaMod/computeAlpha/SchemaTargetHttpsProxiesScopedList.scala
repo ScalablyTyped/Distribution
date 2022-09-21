@@ -13,10 +13,9 @@ trait SchemaTargetHttpsProxiesScopedList extends StObject {
   var targetHttpsProxies: js.UndefOr[js.Array[SchemaTargetHttpsProxy]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of backend services when
-    * the list is empty.
+    * Informational warning which replaces the list of backend services when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaTargetHttpsProxiesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaTargetHttpsProxiesScopedList {
     
     inline def setTargetHttpsProxiesUndefined: Self = StObject.set(x, "targetHttpsProxies", js.undefined)
     
-    inline def setTargetHttpsProxiesVarargs(value: SchemaTargetHttpsProxy*): Self = StObject.set(x, "targetHttpsProxies", js.Array(value :_*))
+    inline def setTargetHttpsProxiesVarargs(value: SchemaTargetHttpsProxy*): Self = StObject.set(x, "targetHttpsProxies", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

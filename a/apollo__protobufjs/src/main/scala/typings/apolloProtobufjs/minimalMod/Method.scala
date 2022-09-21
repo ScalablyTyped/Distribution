@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@apollo/protobufjs/minimal", "Method")
 @js.native
-class Method protected ()
+open class Method protected ()
   extends typings.apolloProtobufjs.mod.Method {
   /**
     * Constructs a new service method instance.
@@ -26,9 +26,9 @@ class Method protected ()
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
-    responseStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
-    options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]],
+    requestStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    options: js.UndefOr[StringDictionary[Any]],
     comment: js.UndefOr[String]
   ) = this()
 }

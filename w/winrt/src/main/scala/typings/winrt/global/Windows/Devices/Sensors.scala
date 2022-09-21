@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrt.Windows.Devices.Sensors.SimpleOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.Accelerometer")
   @js.native
-  class Accelerometer ()
+  open class Accelerometer ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.Accelerometer {
     
@@ -21,10 +20,10 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
-    var onshaken: js.Any = js.native
+    var onshaken: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -41,7 +40,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.AccelerometerReading")
   @js.native
-  class AccelerometerReading ()
+  open class AccelerometerReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.AccelerometerReading {
     
@@ -55,12 +54,12 @@ object Sensors {
     var accelerationZ: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.AccelerometerReadingChangedEventArgs")
   @js.native
-  class AccelerometerReadingChangedEventArgs ()
+  open class AccelerometerReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.AccelerometerReadingChangedEventArgs {
     
@@ -70,17 +69,17 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.AccelerometerShakenEventArgs")
   @js.native
-  class AccelerometerShakenEventArgs ()
+  open class AccelerometerShakenEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.AccelerometerShakenEventArgs {
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.Compass")
   @js.native
-  class Compass ()
+  open class Compass ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.Compass {
     
@@ -91,7 +90,7 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -108,7 +107,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.CompassReading")
   @js.native
-  class CompassReading ()
+  open class CompassReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.CompassReading {
     
@@ -119,12 +118,12 @@ object Sensors {
     var headingTrueNorth: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.CompassReadingChangedEventArgs")
   @js.native
-  class CompassReadingChangedEventArgs ()
+  open class CompassReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.CompassReadingChangedEventArgs {
     
@@ -134,7 +133,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.Gyrometer")
   @js.native
-  class Gyrometer ()
+  open class Gyrometer ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.Gyrometer {
     
@@ -145,7 +144,7 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -162,7 +161,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.GyrometerReading")
   @js.native
-  class GyrometerReading ()
+  open class GyrometerReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.GyrometerReading {
     
@@ -176,12 +175,12 @@ object Sensors {
     var angularVelocityZ: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.GyrometerReadingChangedEventArgs")
   @js.native
-  class GyrometerReadingChangedEventArgs ()
+  open class GyrometerReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.GyrometerReadingChangedEventArgs {
     
@@ -191,7 +190,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.Inclinometer")
   @js.native
-  class Inclinometer ()
+  open class Inclinometer ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.Inclinometer {
     
@@ -202,7 +201,7 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -219,7 +218,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.InclinometerReading")
   @js.native
-  class InclinometerReading ()
+  open class InclinometerReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.InclinometerReading {
     
@@ -230,7 +229,7 @@ object Sensors {
     var rollDegrees: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /* CompleteClass */
     var yawDegrees: Double = js.native
@@ -238,7 +237,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.InclinometerReadingChangedEventArgs")
   @js.native
-  class InclinometerReadingChangedEventArgs ()
+  open class InclinometerReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.InclinometerReadingChangedEventArgs {
     
@@ -248,7 +247,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.LightSensor")
   @js.native
-  class LightSensor ()
+  open class LightSensor ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.LightSensor {
     
@@ -259,7 +258,7 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -276,7 +275,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.LightSensorReading")
   @js.native
-  class LightSensorReading ()
+  open class LightSensorReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.LightSensorReading {
     
@@ -284,12 +283,12 @@ object Sensors {
     var illuminanceInLux: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.LightSensorReadingChangedEventArgs")
   @js.native
-  class LightSensorReadingChangedEventArgs ()
+  open class LightSensorReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.LightSensorReadingChangedEventArgs {
     
@@ -299,7 +298,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.OrientationSensor")
   @js.native
-  class OrientationSensor ()
+  open class OrientationSensor ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.OrientationSensor {
     
@@ -310,7 +309,7 @@ object Sensors {
     var minimumReportInterval: Double = js.native
     
     /* CompleteClass */
-    var onreadingchanged: js.Any = js.native
+    var onreadingchanged: Any = js.native
     
     /* CompleteClass */
     var reportInterval: Double = js.native
@@ -327,7 +326,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.OrientationSensorReading")
   @js.native
-  class OrientationSensorReading ()
+  open class OrientationSensorReading ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.OrientationSensorReading {
     
@@ -338,12 +337,12 @@ object Sensors {
     var rotationMatrix: typings.winrt.Windows.Devices.Sensors.SensorRotationMatrix = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Sensors.OrientationSensorReadingChangedEventArgs")
   @js.native
-  class OrientationSensorReadingChangedEventArgs ()
+  open class OrientationSensorReadingChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.OrientationSensorReadingChangedEventArgs {
     
@@ -353,7 +352,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.SensorQuaternion")
   @js.native
-  class SensorQuaternion ()
+  open class SensorQuaternion ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.SensorQuaternion {
     
@@ -372,7 +371,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.SensorRotationMatrix")
   @js.native
-  class SensorRotationMatrix ()
+  open class SensorRotationMatrix ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.SensorRotationMatrix {
     
@@ -426,7 +425,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensor")
   @js.native
-  class SimpleOrientationSensor ()
+  open class SimpleOrientationSensor ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensor {
     
@@ -434,7 +433,7 @@ object Sensors {
     override def getCurrentOrientation(): SimpleOrientation = js.native
     
     /* CompleteClass */
-    var onorientationchanged: js.Any = js.native
+    var onorientationchanged: Any = js.native
   }
   /* static members */
   object SimpleOrientationSensor {
@@ -448,7 +447,7 @@ object Sensors {
   
   @JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensorOrientationChangedEventArgs")
   @js.native
-  class SimpleOrientationSensorOrientationChangedEventArgs ()
+  open class SimpleOrientationSensorOrientationChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensorOrientationChangedEventArgs {
     
@@ -456,6 +455,6 @@ object Sensors {
     var orientation: SimpleOrientation = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
 }

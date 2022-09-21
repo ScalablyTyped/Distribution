@@ -10,7 +10,7 @@ trait AddApiKeyOptionsPickReque extends StObject {
   
   var cacheable: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var data: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
@@ -65,7 +65,7 @@ object AddApiKeyOptionsPickReque {
     
     inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -81,7 +81,7 @@ object AddApiKeyOptionsPickReque {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object AddApiKeyOptionsPickReque {
     
     inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

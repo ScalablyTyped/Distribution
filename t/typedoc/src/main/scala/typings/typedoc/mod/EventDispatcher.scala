@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "EventDispatcher")
 @js.native
-class EventDispatcher ()
+open class EventDispatcher ()
   extends typings.typedoc.utilsEventsMod.EventDispatcher

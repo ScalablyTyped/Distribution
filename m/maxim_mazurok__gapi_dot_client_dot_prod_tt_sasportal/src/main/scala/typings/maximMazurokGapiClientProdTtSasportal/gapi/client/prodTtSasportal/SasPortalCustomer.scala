@@ -36,6 +36,6 @@ object SasPortalCustomer {
     
     inline def setSasUserIdsUndefined: Self = StObject.set(x, "sasUserIds", js.undefined)
     
-    inline def setSasUserIdsVarargs(value: String*): Self = StObject.set(x, "sasUserIds", js.Array(value :_*))
+    inline def setSasUserIdsVarargs(value: String*): Self = StObject.set(x, "sasUserIds", js.Array(value*))
   }
 }

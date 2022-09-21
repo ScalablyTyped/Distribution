@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 椭圆
   * @param options 选项
   */
-class Ellipse[ExtraData] ()
+open class Ellipse[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Ellipse[ExtraData] {
   def this(options: Options[ExtraData]) = this()

@@ -10,10 +10,10 @@ A service worker helper library to route request URLs to handlers.
 | ------------------ | :-------------: |
 | Full name          | workbox-routing |
 | Keywords           | workbox, workboxjs, service worker, sw, router, routing |
-| # releases         | 29 |
-| # dependents       | 20 |
-| # downloads        | 118546552 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7893585E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

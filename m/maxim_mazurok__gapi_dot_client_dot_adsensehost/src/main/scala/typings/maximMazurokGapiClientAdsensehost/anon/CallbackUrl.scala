@@ -77,7 +77,7 @@ object CallbackUrl {
     
     inline def setProductCode(value: String | js.Array[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
-    inline def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value :_*))
+    inline def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value*))
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     

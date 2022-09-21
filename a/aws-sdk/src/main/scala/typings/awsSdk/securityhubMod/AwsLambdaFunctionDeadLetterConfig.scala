@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsLambdaFunctionDeadLetterConfig extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of an Amazon SQS queue or Amazon SNS topic.
+    * The ARN of an SQS queue or SNS topic.
     */
   var TargetArn: js.UndefOr[NonEmptyString] = js.undefined
 }

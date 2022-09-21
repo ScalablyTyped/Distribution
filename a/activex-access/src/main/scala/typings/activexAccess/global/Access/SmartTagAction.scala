@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.SmartTagAction")
 @js.native
-/* private */ class SmartTagAction ()
+/* private */ open class SmartTagAction ()
   extends StObject
      with typings.activexAccess.Access.SmartTagAction {
   
@@ -27,5 +27,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

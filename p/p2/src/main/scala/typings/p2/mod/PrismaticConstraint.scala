@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "PrismaticConstraint")
 @js.native
-class PrismaticConstraint protected () extends Constraint {
+open class PrismaticConstraint protected () extends Constraint {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, options: PrismaticConstraintOptions) = this()
   

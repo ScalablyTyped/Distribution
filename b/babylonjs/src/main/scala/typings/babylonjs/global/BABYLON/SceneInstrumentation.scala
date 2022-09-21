@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SceneInstrumentation")
 @js.native
-class SceneInstrumentation protected ()
+open class SceneInstrumentation protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SceneInstrumentation {
   /**

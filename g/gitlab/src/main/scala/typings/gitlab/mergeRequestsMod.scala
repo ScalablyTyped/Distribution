@@ -1,15 +1,15 @@
 package typings.gitlab
 
-import typings.gitlab.anon.`0`
-import typings.gitlab.anon.`1`
+import typings.gitlab.anon.PaginatedRequestOptions
+import typings.gitlab.anon.groupIdstringnumberPagina
 import typings.gitlab.anon.mergerequestIIdnumberunde
+import typings.gitlab.anon.projectIdstringnumberPagi
 import typings.gitlab.anon.shastringundefinedBaseReq
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.gitlabBooleans.`true`
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
-import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object mergeRequestsMod {
   
   @JSImport("gitlab/dist/types/core/services/MergeRequests", "MergeRequests")
   @js.native
-  class MergeRequests () extends BaseService {
+  open class MergeRequests () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def accept(projectId: String, mergerequestIId: Double): js.Promise[js.Object] = js.native
@@ -45,7 +45,9 @@ object mergeRequestsMod {
     def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String): js.Promise[js.Object] = js.native
     def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     
-    def all(hasProjectIdGroupIdOptions: (`0` | `1` | js.Object) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: groupIdstringnumberPagina): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
     
     def approvalState(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
     def approvalState(projectId: String, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[GetResponse] = js.native

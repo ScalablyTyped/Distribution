@@ -8,7 +8,7 @@ object integerPoolMod {
   
   @JSImport("guacamole-client/lib/IntegerPool", "IntegerPool")
   @js.native
-  class IntegerPool () extends StObject {
+  open class IntegerPool () extends StObject {
     
     /**
       * Frees the given integer, allowing it to be reused.

@@ -10,10 +10,10 @@ object fingerprintMod {
   
   @JSImport("material-ui/svg-icons/action/fingerprint", JSImport.Default)
   @js.native
-  class default () extends ActionFingerprint
+  open class default () extends ActionFingerprint
   
   @JSImport("material-ui/svg-icons/action/fingerprint", "ActionFingerprint")
   @js.native
-  class ActionFingerprint ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFingerprint ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

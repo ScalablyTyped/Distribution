@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for a specific contact group.
-  */
 trait SchemaContactGroupResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaContactGroupResponse extends StObject {
   /**
     * The original requested resource name.
     */
-  var requestedResourceName: js.UndefOr[String] = js.undefined
+  var requestedResourceName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The status of the response.
@@ -38,6 +35,8 @@ object SchemaContactGroupResponse {
     inline def setContactGroupUndefined: Self = StObject.set(x, "contactGroup", js.undefined)
     
     inline def setRequestedResourceName(value: String): Self = StObject.set(x, "requestedResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedResourceNameNull: Self = StObject.set(x, "requestedResourceName", null)
     
     inline def setRequestedResourceNameUndefined: Self = StObject.set(x, "requestedResourceName", js.undefined)
     

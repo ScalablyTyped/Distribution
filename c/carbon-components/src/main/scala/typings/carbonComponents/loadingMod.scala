@@ -1,5 +1,7 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialLoadingOptions
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +11,11 @@ object loadingMod {
   
   @JSImport("carbon-components/components/loading/loading", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Loading {
-    def this(element: js.Any, options: js.Any) = this()
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialLoadingOptions) = this()
     
     /* CompleteClass */
     override def _deleteElement(): Unit = js.native
@@ -21,10 +24,10 @@ object loadingMod {
     override def end(): Unit = js.native
     
     /* CompleteClass */
-    override def isActive(): js.Any = js.native
+    override def isActive(): Boolean = js.native
     
     /* CompleteClass */
-    override def set(active: js.Any): this.type = js.native
+    override def set(active: Boolean): this.type = js.native
     
     /* CompleteClass */
     override def toggle(): this.type = js.native
@@ -38,8 +41,8 @@ object loadingMod {
     /* static member */
     @JSImport("carbon-components/components/loading/loading", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -49,9 +52,9 @@ object loadingMod {
     
     def end(): Unit
     
-    def isActive(): js.Any
+    def isActive(): Boolean
     
-    def set(active: js.Any): this.type
+    def set(active: Boolean): this.type
     
     def toggle(): this.type
   }
@@ -60,8 +63,8 @@ object loadingMod {
     inline def apply(
       _deleteElement: () => Unit,
       end: () => Unit,
-      isActive: () => js.Any,
-      set: js.Any => Loading,
+      isActive: () => Boolean,
+      set: Boolean => Loading,
       toggle: () => Loading
     ): Loading = {
       val __obj = js.Dynamic.literal(_deleteElement = js.Any.fromFunction0(_deleteElement), end = js.Any.fromFunction0(end), isActive = js.Any.fromFunction0(isActive), set = js.Any.fromFunction1(set), toggle = js.Any.fromFunction0(toggle))
@@ -72,13 +75,57 @@ object loadingMod {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      inline def setIsActive(value: () => js.Any): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+      inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
       
-      inline def setSet(value: js.Any => Loading): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: Boolean => Loading): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
       inline def setToggle(value: () => Loading): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
       inline def set_deleteElement(value: () => Unit): Self = StObject.set(x, "_deleteElement", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait LoadingOptions extends StObject {
+    
+    var active: Boolean
+    
+    var classLoadingOverlay: String
+    
+    var classLoadingOverlayStop: String
+    
+    var classLoadingStop: String
+    
+    var selectorInit: String
+    
+    var selectorLoadingOverlay: String
+  }
+  object LoadingOptions {
+    
+    inline def apply(
+      active: Boolean,
+      classLoadingOverlay: String,
+      classLoadingOverlayStop: String,
+      classLoadingStop: String,
+      selectorInit: String,
+      selectorLoadingOverlay: String
+    ): LoadingOptions = {
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], classLoadingOverlay = classLoadingOverlay.asInstanceOf[js.Any], classLoadingOverlayStop = classLoadingOverlayStop.asInstanceOf[js.Any], classLoadingStop = classLoadingStop.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any], selectorLoadingOverlay = selectorLoadingOverlay.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LoadingOptions]
+    }
+    
+    extension [Self <: LoadingOptions](x: Self) {
+      
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      
+      inline def setClassLoadingOverlay(value: String): Self = StObject.set(x, "classLoadingOverlay", value.asInstanceOf[js.Any])
+      
+      inline def setClassLoadingOverlayStop(value: String): Self = StObject.set(x, "classLoadingOverlayStop", value.asInstanceOf[js.Any])
+      
+      inline def setClassLoadingStop(value: String): Self = StObject.set(x, "classLoadingStop", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorLoadingOverlay(value: String): Self = StObject.set(x, "selectorLoadingOverlay", value.asInstanceOf[js.Any])
     }
   }
 }

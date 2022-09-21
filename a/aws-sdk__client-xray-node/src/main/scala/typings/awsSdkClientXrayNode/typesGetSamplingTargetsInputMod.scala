@@ -3,7 +3,6 @@ package typings.awsSdkClientXrayNode
 import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientXrayNode.typesSamplingStatisticsDocumentMod.SamplingStatisticsDocument
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesGetSamplingTargetsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -39,12 +38,12 @@ object typesGetSamplingTargetsInputMod {
     /**
       * <p>Information about rules that the service is using to sample requests.</p>
       */
-    var SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]
+    var SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | js.Iterable[SamplingStatisticsDocument]
   }
   object GetSamplingTargetsInput {
     
     inline def apply(
-      SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]
+      SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | js.Iterable[SamplingStatisticsDocument]
     ): GetSamplingTargetsInput = {
       val __obj = js.Dynamic.literal(SamplingStatisticsDocuments = SamplingStatisticsDocuments.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSamplingTargetsInput]
@@ -57,7 +56,7 @@ object typesGetSamplingTargetsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -66,9 +65,9 @@ object typesGetSamplingTargetsInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setSamplingStatisticsDocuments(value: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
+      inline def setSamplingStatisticsDocuments(value: js.Array[SamplingStatisticsDocument] | js.Iterable[SamplingStatisticsDocument]): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
       
-      inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
+      inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value*))
     }
   }
 }

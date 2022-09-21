@@ -9,9 +9,11 @@ trait WebXRProfiledMotionController
   extends StObject
      with WebXRAbstractMotionController {
   
-  /* private */ var _buttonMeshMapping: js.Any = js.native
+  /* private */ var _buttonMeshMapping: Any = js.native
   
-  /* private */ var _repositoryUrl: js.Any = js.native
+  /* private */ var _repositoryUrl: Any = js.native
   
-  /* private */ var _touchDots: js.Any = js.native
+  /* private */ var _touchDots: Any = js.native
+  
+  /* private */ var controllerCache: Any = js.native
 }

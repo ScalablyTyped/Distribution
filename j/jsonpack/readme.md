@@ -10,15 +10,12 @@ A compression algorithm for JSON
 | ------------------ | :-------------: |
 | Full name          | jsonpack |
 | Keywords           | compress, json |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 1266521 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 408581.3333333333 |
+| # stars            | 279.0 |
 
 ## Links
-- [Homepage](https://github.com/sapienlab/jsonpack)
-- [Bugs](https://github.com/sapienlab/jsonpack/issues)
-- [Repository](https://github.com/sapienlab/jsonpack)
 - [Npm](https://www.npmjs.com/package/jsonpack)
     
 

@@ -24,6 +24,12 @@ object reactCalendarTimelineStrings {
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
+  sealed trait isoWeek
+    extends StObject
+       with Unit
+  inline def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
+  
+  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   

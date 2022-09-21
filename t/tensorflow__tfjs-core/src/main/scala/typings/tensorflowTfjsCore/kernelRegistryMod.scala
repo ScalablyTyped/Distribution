@@ -74,7 +74,7 @@ object kernelRegistryMod {
       
       inline def setInputsToSaveUndefined: Self = StObject.set(x, "inputsToSave", js.undefined)
       
-      inline def setInputsToSaveVarargs(value: String*): Self = StObject.set(x, "inputsToSave", js.Array(value :_*))
+      inline def setInputsToSaveVarargs(value: String*): Self = StObject.set(x, "inputsToSave", js.Array(value*))
       
       inline def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
       
@@ -82,7 +82,7 @@ object kernelRegistryMod {
       
       inline def setOutputsToSaveUndefined: Self = StObject.set(x, "outputsToSave", js.undefined)
       
-      inline def setOutputsToSaveVarargs(value: Boolean*): Self = StObject.set(x, "outputsToSave", js.Array(value :_*))
+      inline def setOutputsToSaveVarargs(value: Boolean*): Self = StObject.set(x, "outputsToSave", js.Array(value*))
       
       inline def setSaveAllInputs(value: Boolean): Self = StObject.set(x, "saveAllInputs", value.asInstanceOf[js.Any])
       
@@ -157,7 +157,7 @@ object kernelRegistryMod {
     }
   }
   
-  type NamedTensorInfoMap = StringDictionary[TensorInfo]
+  type NamedTensorInfoMap = StringDictionary[js.UndefOr[TensorInfo]]
   
   trait TensorInfo extends StObject {
     
@@ -182,7 +182,7 @@ object kernelRegistryMod {
       
       inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
     }
   }
 }

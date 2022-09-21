@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The CreateCollectdTimeSeries request.
-  */
 trait SchemaCreateCollectdTimeSeriesRequest extends StObject {
   
   /**
-    * The collectd payloads representing the time series data. You must not
-    * include more than a single point for each time series, so no two payloads
-    * can have the same values for all of the fields plugin, plugin_instance,
-    * type, and type_instance.
+    * The collectd payloads representing the time series data. You must not include more than a single point for each time series, so no two payloads can have the same values for all of the fields plugin, plugin_instance, type, and type_instance.
     */
   var collectdPayloads: js.UndefOr[js.Array[SchemaCollectdPayload]] = js.undefined
   
   /**
-    * The version of collectd that collected the data. Example:
-    * &quot;5.3.0-192.el6&quot;.
+    * The version of collectd that collected the data. Example: "5.3.0-192.el6".
     */
-  var collectdVersion: js.UndefOr[String] = js.undefined
+  var collectdVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The monitored resource associated with the time series.
@@ -41,9 +34,11 @@ object SchemaCreateCollectdTimeSeriesRequest {
     
     inline def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
     
-    inline def setCollectdPayloadsVarargs(value: SchemaCollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
+    inline def setCollectdPayloadsVarargs(value: SchemaCollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value*))
     
     inline def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
+    
+    inline def setCollectdVersionNull: Self = StObject.set(x, "collectdVersion", null)
     
     inline def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
     

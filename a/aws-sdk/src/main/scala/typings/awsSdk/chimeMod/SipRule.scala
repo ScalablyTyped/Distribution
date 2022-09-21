@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SipRule extends StObject {
   
   /**
-    * The SIP rule created timestamp, in ISO 8601 format.
+    * The time at which the SIP rule was created, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates if the SIP rule is enabled or disabled. You must disable a rule before you can delete it.
+    * Indicates whether the SIP rule is enabled or disabled. You must disable a rule before you can delete it.
     */
   var Disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -27,12 +27,12 @@ trait SipRule extends StObject {
   var SipRuleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * List of SIP media applications with priority and AWS Region. You can only use one SIP application per AWS Region and priority combination.
+    * Target SIP media application and other details, such as priority and AWS Region, to be specified in the SIP rule. Only one SIP rule per AWS Region can be provided.
     */
   var TargetApplications: js.UndefOr[SipRuleTargetApplicationList] = js.undefined
   
   /**
-    * The type of trigger whose value is assigned to the SIP rule in TriggerValue.
+    * The type of trigger assigned to the SIP rule in TriggerValue, currently RequestUriHostname or ToPhoneNumber.
     */
   var TriggerType: js.UndefOr[SipRuleTriggerType] = js.undefined
   
@@ -42,9 +42,9 @@ trait SipRule extends StObject {
   var TriggerValue: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The SIP rule updated timestamp, in ISO 8601 format.
+    * The time at which the SIP rule was last updated, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object SipRule {
   
@@ -55,7 +55,7 @@ object SipRule {
   
   extension [Self <: SipRule](x: Self) {
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -75,7 +75,7 @@ object SipRule {
     
     inline def setTargetApplicationsUndefined: Self = StObject.set(x, "TargetApplications", js.undefined)
     
-    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
+    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value*))
     
     inline def setTriggerType(value: SipRuleTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object SipRule {
     
     inline def setTriggerValueUndefined: Self = StObject.set(x, "TriggerValue", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }

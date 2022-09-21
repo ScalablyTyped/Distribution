@@ -34,6 +34,6 @@ object IPAMConfig {
     
     inline def setLinkLocalIPsUndefined: Self = StObject.set(x, "LinkLocalIPs", js.undefined)
     
-    inline def setLinkLocalIPsVarargs(value: String*): Self = StObject.set(x, "LinkLocalIPs", js.Array(value :_*))
+    inline def setLinkLocalIPsVarargs(value: String*): Self = StObject.set(x, "LinkLocalIPs", js.Array(value*))
   }
 }

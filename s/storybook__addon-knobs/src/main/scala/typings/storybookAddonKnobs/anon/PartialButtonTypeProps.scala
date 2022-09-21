@@ -28,7 +28,7 @@ object PartialButtonTypeProps {
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    inline def setOnClick(value: /* knob */ ButtonTypeKnob => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* knob */ ButtonTypeKnob => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

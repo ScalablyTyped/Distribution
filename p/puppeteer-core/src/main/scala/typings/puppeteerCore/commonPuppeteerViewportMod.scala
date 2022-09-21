@@ -8,16 +8,39 @@ object commonPuppeteerViewportMod {
   
   trait Viewport extends StObject {
     
+    /**
+      * Specify device scale factor.
+      * See {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio | devicePixelRatio} for more info.
+      * @defaultValue 1
+      */
     var deviceScaleFactor: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Specify if the viewport supports touch events.
+      * @defaultValue false
+      */
     var hasTouch: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The page height in pixels.
+      */
     var height: Double
     
+    /**
+      * Specifies if the viewport is in landscape mode.
+      * @defaultValue false
+      */
     var isLandscape: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the `meta viewport` tag is taken into account.
+      * @defaultValue false
+      */
     var isMobile: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The page width in pixels.
+      */
     var width: Double
   }
   object Viewport {

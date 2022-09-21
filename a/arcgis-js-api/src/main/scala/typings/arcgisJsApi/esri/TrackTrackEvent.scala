@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrackTrackEvent extends StObject {
   
-  var position: js.Any
+  var position: Any
 }
 object TrackTrackEvent {
   
-  inline def apply(position: js.Any): TrackTrackEvent = {
+  inline def apply(position: Any): TrackTrackEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackTrackEvent]
   }
   
   extension [Self <: TrackTrackEvent](x: Self) {
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

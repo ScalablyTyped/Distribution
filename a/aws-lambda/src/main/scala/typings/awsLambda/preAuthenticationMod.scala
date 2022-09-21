@@ -37,5 +37,5 @@ object preAuthenticationMod {
     }
   }
   
-  type PreAuthenticationTriggerHandler = Handler[PreAuthenticationTriggerEvent, js.Any]
+  type PreAuthenticationTriggerHandler = Handler[PreAuthenticationTriggerEvent, Any]
 }

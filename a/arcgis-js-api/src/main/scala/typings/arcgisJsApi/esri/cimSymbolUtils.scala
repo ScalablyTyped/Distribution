@@ -4,6 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Provides utility functions for [CIMSymbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html)
+  */
+@js.native
 trait cimSymbolUtils extends StObject {
   
   /**
@@ -11,69 +17,44 @@ trait cimSymbolUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#applyCIMSymbolColor)
     */
-  def applyCIMSymbolColor(symbol: CIMSymbol, color: Color_): Unit
+  def applyCIMSymbolColor(symbol: CIMSymbol, color: Color_): scala.Unit = js.native
+  def applyCIMSymbolColor(symbol: CIMSymbol, color: Color_, options: cimSymbolUtilsApplyCIMSymbolColorOptions): scala.Unit = js.native
   
   /**
     * Sets the rotation value of a CIMSymbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#applyCIMSymbolRotation)
     */
-  def applyCIMSymbolRotation(symbol: CIMSymbol, rotation: Double): Unit
+  def applyCIMSymbolRotation(symbol: CIMSymbol, rotation: Double): scala.Unit = js.native
+  def applyCIMSymbolRotation(symbol: CIMSymbol, rotation: Double, clockwise: Boolean): scala.Unit = js.native
   
   /**
     * Returns the first color of the symbol layers in a CIMSymbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#getCIMSymbolColor)
     */
-  def getCIMSymbolColor(symbol: CIMSymbol): Color_
+  def getCIMSymbolColor(symbol: CIMSymbol): Color_ = js.native
   
   /**
     * Returns the rotation value of a CIMSymbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#getCIMSymbolRotation)
     */
-  def getCIMSymbolRotation(symbol: CIMSymbol): Double
+  def getCIMSymbolRotation(symbol: CIMSymbol): Double = js.native
+  def getCIMSymbolRotation(symbol: CIMSymbol, clockwise: Boolean): Double = js.native
   
   /**
     * Returns the size of a given CIMSymbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#getCIMSymbolSize)
     */
-  def getCIMSymbolSize(symbol: CIMSymbol): Double
+  def getCIMSymbolSize(symbol: CIMSymbol): Double = js.native
   
   /**
     * Scales the largest layer of a CIMSymbol to a given size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#scaleCIMSymbolTo)
     */
-  def scaleCIMSymbolTo(symbol: CIMSymbol, size: Double): Unit
-}
-object cimSymbolUtils {
-  
-  inline def apply(
-    applyCIMSymbolColor: (CIMSymbol, Color_) => Unit,
-    applyCIMSymbolRotation: (CIMSymbol, Double) => Unit,
-    getCIMSymbolColor: CIMSymbol => Color_,
-    getCIMSymbolRotation: CIMSymbol => Double,
-    getCIMSymbolSize: CIMSymbol => Double,
-    scaleCIMSymbolTo: (CIMSymbol, Double) => Unit
-  ): cimSymbolUtils = {
-    val __obj = js.Dynamic.literal(applyCIMSymbolColor = js.Any.fromFunction2(applyCIMSymbolColor), applyCIMSymbolRotation = js.Any.fromFunction2(applyCIMSymbolRotation), getCIMSymbolColor = js.Any.fromFunction1(getCIMSymbolColor), getCIMSymbolRotation = js.Any.fromFunction1(getCIMSymbolRotation), getCIMSymbolSize = js.Any.fromFunction1(getCIMSymbolSize), scaleCIMSymbolTo = js.Any.fromFunction2(scaleCIMSymbolTo))
-    __obj.asInstanceOf[cimSymbolUtils]
-  }
-  
-  extension [Self <: cimSymbolUtils](x: Self) {
-    
-    inline def setApplyCIMSymbolColor(value: (CIMSymbol, Color_) => Unit): Self = StObject.set(x, "applyCIMSymbolColor", js.Any.fromFunction2(value))
-    
-    inline def setApplyCIMSymbolRotation(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "applyCIMSymbolRotation", js.Any.fromFunction2(value))
-    
-    inline def setGetCIMSymbolColor(value: CIMSymbol => Color_): Self = StObject.set(x, "getCIMSymbolColor", js.Any.fromFunction1(value))
-    
-    inline def setGetCIMSymbolRotation(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolRotation", js.Any.fromFunction1(value))
-    
-    inline def setGetCIMSymbolSize(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolSize", js.Any.fromFunction1(value))
-    
-    inline def setScaleCIMSymbolTo(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "scaleCIMSymbolTo", js.Any.fromFunction2(value))
-  }
+  def scaleCIMSymbolTo(symbol: CIMSymbol, size: Double): scala.Unit = js.native
+  def scaleCIMSymbolTo(symbol: CIMSymbol, size: Double, options: cimSymbolUtilsScaleCIMSymbolToOptions): scala.Unit = js.native
 }

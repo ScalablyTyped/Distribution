@@ -17,6 +17,11 @@ trait GetSavingsPlansUtilizationRequest extends StObject {
   var Granularity: js.UndefOr[typings.awsSdk.costexplorerMod.Granularity] = js.undefined
   
   /**
+    * The value that you want to sort the data by. The following values are supported for Key:    UtilizationPercentage     TotalCommitment     UsedCommitment     UnusedCommitment     NetSavings    The supported values for SortOrder are ASCENDING and DESCENDING.
+    */
+  var SortBy: js.UndefOr[SortDefinition] = js.undefined
+  
+  /**
     * The time period that you want the usage and costs for. The Start date must be within 13 months. The End date must be after the Start date, and before the current date. Future dates can't be used as an End date.
     */
   var TimePeriod: DateInterval
@@ -37,6 +42,10 @@ object GetSavingsPlansUtilizationRequest {
     inline def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
     inline def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
+    
+    inline def setSortBy(value: SortDefinition): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }

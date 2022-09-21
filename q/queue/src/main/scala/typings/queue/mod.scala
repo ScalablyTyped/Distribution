@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("queue", JSImport.Default)
   @js.native
-  class defaultCls () extends Queue {
+  open class defaultCls () extends Queue {
     def this(options: Options) = this()
   }
   
@@ -43,7 +42,7 @@ object mod extends Shortcut {
       *
       * @default null
       */
-    var results: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var results: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Milliseconds to wait for a job to execute its callback.
@@ -69,11 +68,11 @@ object mod extends Shortcut {
       
       inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Any*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -100,7 +99,7 @@ object mod extends Shortcut {
       * @param error error of why the stop has occurred, to be passed to start callback if supplied.
       */
     def end(): Unit = js.native
-    def end(error: Error): Unit = js.native
+    def end(error: js.Error): Unit = js.native
     
     /**
       * Returns the first (least) index of an element within the Queue equal to the specified value, or -1 if none is found.
@@ -140,7 +139,7 @@ object mod extends Shortcut {
     /**
       * An array to set job callback arguments on.
       */
-    var results: js.Array[js.Any] | Null = js.native
+    var results: js.Array[Any] | Null = js.native
     
     /**
       * Reverses the order of the elements of the Queue in place.
@@ -186,7 +185,7 @@ object mod extends Shortcut {
       * @param callback Callback to be called when the queue empties or when an error occurs.
       */
     def start(): Unit = js.native
-    def start(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    def start(callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * Stops the queue.
@@ -228,7 +227,7 @@ object mod extends Shortcut {
     var timeout: js.UndefOr[Double] = js.native
   }
   
-  type QueueWorkerCallback = js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[js.Object], Unit]
+  type QueueWorkerCallback = js.Function2[/* error */ js.UndefOr[js.Error], /* data */ js.UndefOr[js.Object], Unit]
   
   type _To = QueueConstructor
   

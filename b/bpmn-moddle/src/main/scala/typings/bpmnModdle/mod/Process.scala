@@ -73,13 +73,13 @@ object Process {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setAuditing(value: Auditing): Self = StObject.set(x, "auditing", value.asInstanceOf[js.Any])
     
     inline def setCorrelationSubscriptions(value: js.Array[CorrelationSubscription]): Self = StObject.set(x, "correlationSubscriptions", value.asInstanceOf[js.Any])
     
-    inline def setCorrelationSubscriptionsVarargs(value: CorrelationSubscription*): Self = StObject.set(x, "correlationSubscriptions", js.Array(value :_*))
+    inline def setCorrelationSubscriptionsVarargs(value: CorrelationSubscription*): Self = StObject.set(x, "correlationSubscriptions", js.Array(value*))
     
     inline def setDefinitionalCollaborationRef(value: Collaboration): Self = StObject.set(x, "definitionalCollaborationRef", value.asInstanceOf[js.Any])
     
@@ -99,16 +99,16 @@ object Process {
     
     inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setResources(value: js.Array[ResourceRole]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: ResourceRole*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ResourceRole*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSupportedInterfaceRef(value: Interface): Self = StObject.set(x, "supportedInterfaceRef", value.asInstanceOf[js.Any])
     
     inline def setSupports(value: js.Array[Process]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    inline def setSupportsVarargs(value: Process*): Self = StObject.set(x, "supports", js.Array(value :_*))
+    inline def setSupportsVarargs(value: Process*): Self = StObject.set(x, "supports", js.Array(value*))
   }
 }

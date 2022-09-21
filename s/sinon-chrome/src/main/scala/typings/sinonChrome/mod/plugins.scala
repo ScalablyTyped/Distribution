@@ -11,13 +11,13 @@ object plugins {
   
   @JSImport("sinon-chrome", "plugins.CookiePlugin")
   @js.native
-  class CookiePlugin () extends StObject {
+  open class CookiePlugin () extends StObject {
     def this(state: js.Array[Cookie]) = this()
   }
   
   @JSImport("sinon-chrome", "plugins.I18nPlugin")
   @js.native
-  class I18nPlugin () extends StObject {
+  open class I18nPlugin () extends StObject {
     def this(translations: Translations) = this()
   }
   

@@ -12,7 +12,7 @@ trait ASPxClientDiagramItemClickEventArgs
      with ASPxClientEventArgs {
   
   /**
-    * Gets an object that provides information about an item (shape or connector) related to the event.
+    * Gets an object that provides information about an item (DiagramShape or DiagramConnector) related to the event.
     */
   var item: DiagramItem
 }

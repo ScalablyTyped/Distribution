@@ -4,25 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The specification for fault injection introduced into traffic to test the
-  * resiliency of clients to backend service failure. As part of fault
-  * injection, when clients send requests to a backend service, delays can be
-  * introduced by Loadbalancer on a percentage of requests before sending those
-  * request to the backend service. Similarly requests from clients can be
-  * aborted by the Loadbalancer for a percentage of requests.
-  */
 trait SchemaHttpFaultInjection extends StObject {
   
   /**
-    * The specification for how client requests are aborted as part of fault
-    * injection.
+    * The specification for how client requests are aborted as part of fault injection.
     */
   var abort: js.UndefOr[SchemaHttpFaultAbort] = js.undefined
   
   /**
-    * The specification for how client requests are delayed as part of fault
-    * injection, before being sent to a backend service.
+    * The specification for how client requests are delayed as part of fault injection, before being sent to a backend service.
     */
   var delay: js.UndefOr[SchemaHttpFaultDelay] = js.undefined
 }

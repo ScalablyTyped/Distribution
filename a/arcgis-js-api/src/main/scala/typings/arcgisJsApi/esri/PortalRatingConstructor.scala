@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalRatingConstructor
   extends StObject
-     with Instantiable0[PortalRating]
+     with /**
+  * PortalRating provides details about the rating associated with a [Portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html)
+  */
+Instantiable0[PortalRating]
      with Instantiable1[/* properties */ PortalRatingProperties, PortalRating]

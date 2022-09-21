@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fraction.js" : "4.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fraction.js" : "4.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

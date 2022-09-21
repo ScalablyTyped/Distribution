@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MatterPermission extends StObject {
   
-  /** The account ID, as provided by Admin SDK. */
+  /** The account ID, as provided by the [Admin SDK](https://developers.google.com/admin-sdk/). */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** The user's role in this matter. */
+  /** The user's role for the matter. */
   var role: js.UndefOr[String] = js.undefined
 }
 object MatterPermission {

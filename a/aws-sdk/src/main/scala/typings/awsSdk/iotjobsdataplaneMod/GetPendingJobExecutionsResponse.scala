@@ -29,12 +29,12 @@ object GetPendingJobExecutionsResponse {
     
     inline def setInProgressJobsUndefined: Self = StObject.set(x, "inProgressJobs", js.undefined)
     
-    inline def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "inProgressJobs", js.Array(value :_*))
+    inline def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "inProgressJobs", js.Array(value*))
     
     inline def setQueuedJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "queuedJobs", value.asInstanceOf[js.Any])
     
     inline def setQueuedJobsUndefined: Self = StObject.set(x, "queuedJobs", js.undefined)
     
-    inline def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "queuedJobs", js.Array(value :_*))
+    inline def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "queuedJobs", js.Array(value*))
   }
 }

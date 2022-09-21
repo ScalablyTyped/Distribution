@@ -10,10 +10,10 @@ A small bit of JavaScript that recognizes the Konami code
 | ------------------ | :-------------: |
 | Full name          | konami.js |
 | Keywords           | konami |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 85 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 150.33333333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/grunka/konami.js#readme)

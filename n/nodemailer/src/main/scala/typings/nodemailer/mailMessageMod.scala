@@ -1,7 +1,6 @@
 package typings.nodemailer
 
 import typings.nodemailer.mailerMod.Options
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,45 +9,49 @@ object mailMessageMod {
   
   @JSImport("nodemailer/lib/mailer/mail-message", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^[T] protected ()
     extends StObject
-       with MailMessage {
-    def this(mailer: typings.nodemailer.mailerMod.^, data: Options) = this()
+       with MailMessage[T] {
+    def this(mailer: typings.nodemailer.mailerMod.^[T], data: Options) = this()
   }
   
   @js.native
-  trait MailMessage extends StObject {
+  trait MailMessage[T] extends StObject {
     
     var data: Options = js.native
     
-    var mailer: typings.nodemailer.mailerMod.^ = js.native
+    var mailer: typings.nodemailer.mailerMod.^[T] = js.native
     
     var message: typings.nodemailer.mimeNodeMod.^ = js.native
     
-    def normalize(callback: js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[Options], Unit]): Unit = js.native
+    def normalize(
+      callback: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Options], Unit]
+    ): Unit = js.native
     
-    def resolveAll(callback: js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[Options], Unit]): Unit = js.native
+    def resolveAll(
+      callback: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Options], Unit]
+    ): Unit = js.native
     
     def resolveContent(
-      data: js.Array[js.Any],
+      data: js.Array[Any],
       key: String,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
-    ): js.Promise[js.Any] = js.native
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ js.UndefOr[Any], Any]
+    ): js.Promise[Any] = js.native
     def resolveContent(
-      data: js.Array[js.Any],
+      data: js.Array[Any],
       key: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
-    ): js.Promise[js.Any] = js.native
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ js.UndefOr[Any], Any]
+    ): js.Promise[Any] = js.native
     def resolveContent(
       data: js.Object,
       key: String,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
-    ): js.Promise[js.Any] = js.native
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ js.UndefOr[Any], Any]
+    ): js.Promise[Any] = js.native
     def resolveContent(
       data: js.Object,
       key: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[js.Any], js.Any]
-    ): js.Promise[js.Any] = js.native
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ js.UndefOr[Any], Any]
+    ): js.Promise[Any] = js.native
     
     def setListHeaders(): Unit = js.native
     

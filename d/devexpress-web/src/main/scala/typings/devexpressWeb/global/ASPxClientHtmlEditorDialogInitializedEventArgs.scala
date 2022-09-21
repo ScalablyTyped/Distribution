@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorDialogInitializedEventArgs")
 @js.native
-class ASPxClientHtmlEditorDialogInitializedEventArgs ()
+open class ASPxClientHtmlEditorDialogInitializedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorDialogInitializedEventArgs {
   

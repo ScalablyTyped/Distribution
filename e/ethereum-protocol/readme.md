@@ -10,10 +10,10 @@ This package is a stub so that noone takes the name. We need it to publish @type
 | ------------------ | :-------------: |
 | Full name          | ethereum-protocol |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 449574 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104648.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ethereum-protocol)

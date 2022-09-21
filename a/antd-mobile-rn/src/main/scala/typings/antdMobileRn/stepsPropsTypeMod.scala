@@ -8,7 +8,7 @@ object stepsPropsTypeMod {
   
   trait StepsPropsType extends StObject {
     
-    var children: js.Array[js.Any]
+    var children: js.Array[Any]
     
     var current: js.UndefOr[Double] = js.undefined
     
@@ -16,16 +16,16 @@ object stepsPropsTypeMod {
   }
   object StepsPropsType {
     
-    inline def apply(children: js.Array[js.Any]): StepsPropsType = {
+    inline def apply(children: js.Array[Any]): StepsPropsType = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsPropsType]
     }
     
     extension [Self <: StepsPropsType](x: Self) {
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

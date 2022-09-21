@@ -37,7 +37,7 @@ object BatchUpdateValuesByDataFilterResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: UpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: UpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

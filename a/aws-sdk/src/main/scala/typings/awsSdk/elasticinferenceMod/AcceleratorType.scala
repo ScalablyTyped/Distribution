@@ -42,6 +42,6 @@ object AcceleratorType {
     
     inline def setThroughputInfoUndefined: Self = StObject.set(x, "throughputInfo", js.undefined)
     
-    inline def setThroughputInfoVarargs(value: KeyValuePair*): Self = StObject.set(x, "throughputInfo", js.Array(value :_*))
+    inline def setThroughputInfoVarargs(value: KeyValuePair*): Self = StObject.set(x, "throughputInfo", js.Array(value*))
   }
 }

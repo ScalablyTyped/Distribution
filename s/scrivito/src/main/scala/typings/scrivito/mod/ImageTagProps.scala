@@ -12,14 +12,14 @@ trait ImageTagProps
   
   var alt: js.UndefOr[String] = js.undefined
   
-  var attribute: String
+  var attribute: js.UndefOr[String] = js.undefined
   
   var content: Binary | Obj | Widget
 }
 object ImageTagProps {
   
-  inline def apply(attribute: String, content: Binary | Obj | Widget): ImageTagProps = {
-    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
+  inline def apply(content: Binary | Obj | Widget): ImageTagProps = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageTagProps]
   }
   
@@ -30,6 +30,8 @@ object ImageTagProps {
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     inline def setContent(value: Binary | Obj | Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

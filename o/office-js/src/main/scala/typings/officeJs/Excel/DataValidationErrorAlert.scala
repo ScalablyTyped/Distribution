@@ -8,41 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the error alert properties for the data validation.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait DataValidationErrorAlert extends StObject {
   
   /**
+    * Represents the error alert message.
     *
-    * Represents error alert message.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var message: String
   
   /**
+    * Specifies whether to show an error alert dialog when a user enters invalid data. The default is `true`.
     *
-    * Specifies whether to show an error alert dialog when a user enters invalid data. The default is true.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAlert: Boolean
   
   /**
+    * The data validation alert type, please see `Excel.DataValidationAlertStyle` for details.
     *
-    * The data validation alert type, please see Excel.DataValidationAlertStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var style: DataValidationAlertStyle | Stop | Warning | Information
   
   /**
+    * Represents the error alert dialog title.
     *
-    * Represents error alert dialog title.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var title: String

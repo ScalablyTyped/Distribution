@@ -14,7 +14,7 @@ trait SchemaResultDisplayMetadata extends StObject {
   /**
     * The display label for the object.
     */
-  var objectTypeLabel: js.UndefOr[String] = js.undefined
+  var objectTypeLabel: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResultDisplayMetadata {
   
@@ -29,9 +29,11 @@ object SchemaResultDisplayMetadata {
     
     inline def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
-    inline def setMetalinesVarargs(value: SchemaResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value :_*))
+    inline def setMetalinesVarargs(value: SchemaResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value*))
     
     inline def setObjectTypeLabel(value: String): Self = StObject.set(x, "objectTypeLabel", value.asInstanceOf[js.Any])
+    
+    inline def setObjectTypeLabelNull: Self = StObject.set(x, "objectTypeLabel", null)
     
     inline def setObjectTypeLabelUndefined: Self = StObject.set(x, "objectTypeLabel", js.undefined)
   }

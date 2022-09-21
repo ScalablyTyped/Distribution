@@ -1,13 +1,12 @@
 package typings.highcharts.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Time")
 @js.native
-class Time_ protected () extends StObject {
+open class Time_ protected () extends StObject {
   /**
     * The Time class. Time settings are applied in general for each page using
     * `Highcharts.setOptions`, or individually for each Chart item through the
@@ -79,8 +78,10 @@ class Time_ protected () extends StObject {
     *
     * @return The formatted date.
     */
+  def dateFormat(format: String): String = js.native
   def dateFormat(format: String, timestamp: Double): String = js.native
   def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
+  def dateFormat(format: String, timestamp: Unit, capitalize: Boolean): String = js.native
   
   /**
     * Get the value of a date object in given units, and subject to the Time
@@ -91,7 +92,7 @@ class Time_ protected () extends StObject {
     *
     * @return The given time unit
     */
-  def get(unit: TimeUnitValue, date: Date): Double = js.native
+  def get(unit: TimeUnitValue, date: js.Date): Double = js.native
   
   /**
     * Return an array with time positions distributed on round time values
@@ -106,6 +107,8 @@ class Time_ protected () extends StObject {
     *
     * @param max
     *        The maximum in axis values
+    *
+    * @return Time positions
     */
   def getTimeTicks(normalizedInterval: TimeNormalizedObject): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double): AxisTickPositionsArray = js.native
@@ -178,5 +181,5 @@ class Time_ protected () extends StObject {
     *
     * @return The epoch milliseconds of the updated date
     */
-  def set(unit: TimeUnitValue, date: Date, value: Double): Double = js.native
+  def set(unit: TimeUnitValue, date: js.Date, value: Double): Double = js.native
 }

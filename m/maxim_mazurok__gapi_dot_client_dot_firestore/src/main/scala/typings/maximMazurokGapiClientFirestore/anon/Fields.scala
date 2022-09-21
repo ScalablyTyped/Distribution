@@ -25,16 +25,7 @@ trait Fields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * A field name of the form `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/fields/{field_path}` A field path may be a simple field name, e.g.
-    * `address` or a path to fields within map_value , e.g. `address.city`, or a special field path. The only valid special field is `*`, which represents any field. Field paths may
-    * be quoted using ` (backtick). The only character that needs to be escaped within a quoted field path is the backtick character itself, escaped using a backslash. Special
-    * characters in field paths that must be quoted include: `*`, `.`, ``` (backtick), `[`, `]`, as well as any ascii symbolic characters. Examples: (Note: Comments here are written
-    * in markdown syntax, so there is an additional layer of backticks to represent a code block) `\`address.city\`` represents a field named `address.city`, not the map key `city` in
-    * the field `address`. `\`*\`` represents a field named `*`, not any field. A special `Field` contains the default indexing settings for all fields. This field's resource name is:
-    * `projects/{project_id}/databases/{database_id}/collectionGroups/__default__/fields/ *` Indexes defined on this `Field` will be applied to all fields which do not have their own
-    * `Field` index configuration.
-    */
+  /** The resource name of the Database. Format: `projects/{project}/databases/{database}` */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -46,7 +37,7 @@ trait Fields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** A mask, relative to the field. If specified, only configuration specified by this field_mask will be updated in the field. */
+  /** The list of fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

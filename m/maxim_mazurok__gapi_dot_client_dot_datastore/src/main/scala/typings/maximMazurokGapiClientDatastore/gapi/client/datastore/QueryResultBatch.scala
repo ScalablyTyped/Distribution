@@ -18,6 +18,13 @@ trait QueryResultBatch extends StObject {
   /** The state of the query after the current batch. */
   var moreResults: js.UndefOr[String] = js.undefined
   
+  /**
+    * Read timestamp this batch was returned from. This applies to the range of results from the query's `start_cursor` (or the beginning of the query if no cursor was given) to this
+    * batch's `end_cursor` (not the query's `end_cursor`). In a single transaction, subsequent query result batches for the same query can have a greater timestamp. Each batch's read
+    * timestamp is valid for all preceding batches. This value will not be set for eventually consistent queries in Cloud Datastore.
+    */
+  var readTime: js.UndefOr[String] = js.undefined
+  
   /** A cursor that points to the position after the last skipped result. Will be set when `skipped_results` != 0. */
   var skippedCursor: js.UndefOr[String] = js.undefined
   
@@ -52,11 +59,15 @@ object QueryResultBatch {
     
     inline def setEntityResultsUndefined: Self = StObject.set(x, "entityResults", js.undefined)
     
-    inline def setEntityResultsVarargs(value: EntityResult*): Self = StObject.set(x, "entityResults", js.Array(value :_*))
+    inline def setEntityResultsVarargs(value: EntityResult*): Self = StObject.set(x, "entityResults", js.Array(value*))
     
     inline def setMoreResults(value: String): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
     
     inline def setMoreResultsUndefined: Self = StObject.set(x, "moreResults", js.undefined)
+    
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     inline def setSkippedCursor(value: String): Self = StObject.set(x, "skippedCursor", value.asInstanceOf[js.Any])
     

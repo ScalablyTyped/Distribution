@@ -1,7 +1,7 @@
 
 # Scala.js typings for resize-img
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Resize images in memory
@@ -10,10 +10,10 @@ Resize images in memory
 | ------------------ | :-------------: |
 | Full name          | resize-img |
 | Keywords           | bmp, fast, image, jpeg, jpg, memory, png, resize |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 5281036 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 655343.6666666666 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/resize-img#readme)

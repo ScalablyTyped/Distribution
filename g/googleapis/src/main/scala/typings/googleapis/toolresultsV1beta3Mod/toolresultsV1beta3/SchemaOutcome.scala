@@ -4,39 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Interprets a result so that humans and machines can act on it.
-  */
 trait SchemaOutcome extends StObject {
   
   /**
-    * More information about a FAILURE outcome.  Returns INVALID_ARGUMENT if
-    * this field is set but the summary is not FAILURE.  Optional
+    * More information about a FAILURE outcome. Returns INVALID_ARGUMENT if this field is set but the summary is not FAILURE. Optional
     */
   var failureDetail: js.UndefOr[SchemaFailureDetail] = js.undefined
   
   /**
-    * More information about an INCONCLUSIVE outcome.  Returns INVALID_ARGUMENT
-    * if this field is set but the summary is not INCONCLUSIVE.  Optional
+    * More information about an INCONCLUSIVE outcome. Returns INVALID_ARGUMENT if this field is set but the summary is not INCONCLUSIVE. Optional
     */
   var inconclusiveDetail: js.UndefOr[SchemaInconclusiveDetail] = js.undefined
   
   /**
-    * More information about a SKIPPED outcome.  Returns INVALID_ARGUMENT if
-    * this field is set but the summary is not SKIPPED.  Optional
+    * More information about a SKIPPED outcome. Returns INVALID_ARGUMENT if this field is set but the summary is not SKIPPED. Optional
     */
   var skippedDetail: js.UndefOr[SchemaSkippedDetail] = js.undefined
   
   /**
-    * More information about a SUCCESS outcome.  Returns INVALID_ARGUMENT if
-    * this field is set but the summary is not SUCCESS.  Optional
+    * More information about a SUCCESS outcome. Returns INVALID_ARGUMENT if this field is set but the summary is not SUCCESS. Optional
     */
   var successDetail: js.UndefOr[SchemaSuccessDetail] = js.undefined
   
   /**
-    * The simplest way to interpret a result.  Required
+    * The simplest way to interpret a result. Required
     */
-  var summary: js.UndefOr[String] = js.undefined
+  var summary: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOutcome {
   
@@ -64,6 +57,8 @@ object SchemaOutcome {
     inline def setSuccessDetailUndefined: Self = StObject.set(x, "successDetail", js.undefined)
     
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetHealthCheckResponse extends StObject {
   
   /**
-    * A complex type that contains information about one health check that is associated with the current AWS account.
+    * A complex type that contains information about one health check that is associated with the current Amazon Web Services account.
     */
   var HealthCheck: typings.awsSdk.route53Mod.HealthCheck
 }

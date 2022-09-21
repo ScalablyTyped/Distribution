@@ -10,12 +10,10 @@ object panelCollapseMod {
   
   @JSImport("react-bootstrap/lib/PanelCollapse", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelCollapseProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelCollapseProps, js.Object, Any]
   
-  @js.native
-  trait PanelCollapse
-    extends Component[PanelCollapseProps, js.Object, js.Any]
+  type PanelCollapse = Component[PanelCollapseProps, js.Object, Any]
   
   trait PanelCollapseProps
     extends StObject

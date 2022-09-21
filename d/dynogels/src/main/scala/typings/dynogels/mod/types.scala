@@ -11,13 +11,13 @@ object types {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def binarySet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("binarySet")().asInstanceOf[AnySchema]
+  inline def binarySet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("binarySet")().asInstanceOf[AnySchema[Any]]
   
-  inline def numberSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSet")().asInstanceOf[AnySchema]
+  inline def numberSet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSet")().asInstanceOf[AnySchema[Any]]
   
-  inline def stringSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("stringSet")().asInstanceOf[AnySchema]
+  inline def stringSet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringSet")().asInstanceOf[AnySchema[Any]]
   
-  inline def timeUUID(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUUID")().asInstanceOf[AnySchema]
+  inline def timeUUID(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUUID")().asInstanceOf[AnySchema[Any]]
   
-  inline def uuid(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[AnySchema]
+  inline def uuid(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[AnySchema[Any]]
 }

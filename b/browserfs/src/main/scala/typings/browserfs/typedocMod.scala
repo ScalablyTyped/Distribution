@@ -19,7 +19,7 @@ object typedocMod {
     /**
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */
-    def BFSRequire(module: String): js.Any
+    def BFSRequire(module: String): Any
     /**
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */
@@ -78,16 +78,11 @@ object typedocMod {
       * This allows you to write code as if you were running inside Node.
       * @param obj The object to install things onto (e.g. window)
       */
-    def install(obj: js.Any): Unit
+    def install(obj: Any): Unit
   }
   object BrowserFS {
     
-    inline def apply(
-      BFSRequire: FnCall,
-      FileSystem: AsyncMirror,
-      initialize: FileSystem => Unit,
-      install: js.Any => Unit
-    ): BrowserFS = {
+    inline def apply(BFSRequire: FnCall, FileSystem: AsyncMirror, initialize: FileSystem => Unit, install: Any => Unit): BrowserFS = {
       val __obj = js.Dynamic.literal(BFSRequire = BFSRequire.asInstanceOf[js.Any], FileSystem = FileSystem.asInstanceOf[js.Any], initialize = js.Any.fromFunction1(initialize), install = js.Any.fromFunction1(install))
       __obj.asInstanceOf[BrowserFS]
     }
@@ -100,7 +95,7 @@ object typedocMod {
       
       inline def setInitialize(value: FileSystem => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      inline def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
+      inline def setInstall(value: Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
     }
   }
 }

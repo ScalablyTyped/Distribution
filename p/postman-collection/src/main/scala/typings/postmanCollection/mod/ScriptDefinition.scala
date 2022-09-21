@@ -27,7 +27,7 @@ object ScriptDefinition {
     
     inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    inline def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value :_*))
+    inline def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value*))
     
     inline def setSrc(value: String | Url): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

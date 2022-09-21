@@ -23,7 +23,7 @@ object anon {
       
       inline def setFiles(value: js.Array[IStaticFilesLoaderOptions]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: IStaticFilesLoaderOptions*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IStaticFilesLoaderOptions*): Self = StObject.set(x, "files", js.Array(value*))
     }
   }
   
@@ -31,25 +31,25 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(translationId: String): String = js.native
-    def apply(translationId: String, interpolateParams: js.Any): String = js.native
-    def apply(translationId: String, interpolateParams: js.Any, interpolation: String): String = js.native
-    def apply(translationId: String, interpolateParams: js.Any, interpolation: String, forceLanguage: String): String = js.native
-    def apply(translationId: String, interpolateParams: js.Any, interpolation: Unit, forceLanguage: String): String = js.native
+    def apply(translationId: String, interpolateParams: Any): String = js.native
+    def apply(translationId: String, interpolateParams: Any, interpolation: String): String = js.native
+    def apply(translationId: String, interpolateParams: Any, interpolation: String, forceLanguage: String): String = js.native
+    def apply(translationId: String, interpolateParams: Any, interpolation: Unit, forceLanguage: String): String = js.native
     def apply(translationId: String, interpolateParams: Unit, interpolation: String): String = js.native
     def apply(translationId: String, interpolateParams: Unit, interpolation: String, forceLanguage: String): String = js.native
     def apply(translationId: String, interpolateParams: Unit, interpolation: Unit, forceLanguage: String): String = js.native
     def apply(translationIds: js.Array[String]): StringDictionary[String] = js.native
-    def apply(translationIds: js.Array[String], interpolateParams: js.Any): StringDictionary[String] = js.native
-    def apply(translationIds: js.Array[String], interpolateParams: js.Any, interpolation: String): StringDictionary[String] = js.native
+    def apply(translationIds: js.Array[String], interpolateParams: Any): StringDictionary[String] = js.native
+    def apply(translationIds: js.Array[String], interpolateParams: Any, interpolation: String): StringDictionary[String] = js.native
     def apply(
       translationIds: js.Array[String],
-      interpolateParams: js.Any,
+      interpolateParams: Any,
       interpolation: String,
       forceLanguage: String
     ): StringDictionary[String] = js.native
     def apply(
       translationIds: js.Array[String],
-      interpolateParams: js.Any,
+      interpolateParams: Any,
       interpolation: Unit,
       forceLanguage: String
     ): StringDictionary[String] = js.native

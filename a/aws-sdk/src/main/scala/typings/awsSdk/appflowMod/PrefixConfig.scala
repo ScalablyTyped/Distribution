@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrefixConfig extends StObject {
   
   /**
-    *  Determines the format of the prefix, and whether it applies to the file name, file path, or both. 
+    *  Determines the level of granularity that's included in the prefix. 
     */
   var prefixFormat: js.UndefOr[PrefixFormat] = js.undefined
   
   /**
-    *  Determines the level of granularity that's included in the prefix. 
+    *  Determines the format of the prefix, and whether it applies to the file name, file path, or both. 
     */
   var prefixType: js.UndefOr[PrefixType] = js.undefined
 }

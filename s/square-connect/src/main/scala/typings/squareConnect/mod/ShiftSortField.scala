@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ShiftSortField")
 @js.native
-class ShiftSortField () extends StObject
+open class ShiftSortField () extends StObject

@@ -35,16 +35,16 @@ object ReGeocode {
     
     inline def setCrosses(value: js.Array[Cross]): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
     
-    inline def setCrossesVarargs(value: Cross*): Self = StObject.set(x, "crosses", js.Array(value :_*))
+    inline def setCrossesVarargs(value: Cross*): Self = StObject.set(x, "crosses", js.Array(value*))
     
     inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
     inline def setPois(value: js.Array[ReGeocodePoi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
     
-    inline def setPoisVarargs(value: ReGeocodePoi*): Self = StObject.set(x, "pois", js.Array(value :_*))
+    inline def setPoisVarargs(value: ReGeocodePoi*): Self = StObject.set(x, "pois", js.Array(value*))
     
     inline def setRoads(value: js.Array[Road]): Self = StObject.set(x, "roads", value.asInstanceOf[js.Any])
     
-    inline def setRoadsVarargs(value: Road*): Self = StObject.set(x, "roads", js.Array(value :_*))
+    inline def setRoadsVarargs(value: Road*): Self = StObject.set(x, "roads", js.Array(value*))
   }
 }

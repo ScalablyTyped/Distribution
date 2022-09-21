@@ -100,7 +100,7 @@ object Active {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setRestrictions(value: NoteRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
@@ -110,19 +110,19 @@ object Active {
     
     inline def setSharedNotesUndefined: Self = StObject.set(x, "sharedNotes", js.undefined)
     
-    inline def setSharedNotesVarargs(value: SharedNote*): Self = StObject.set(x, "sharedNotes", js.Array(value :_*))
+    inline def setSharedNotesVarargs(value: SharedNote*): Self = StObject.set(x, "sharedNotes", js.Array(value*))
     
     inline def setTagGuids(value: js.Array[String]): Self = StObject.set(x, "tagGuids", value.asInstanceOf[js.Any])
     
     inline def setTagGuidsUndefined: Self = StObject.set(x, "tagGuids", js.undefined)
     
-    inline def setTagGuidsVarargs(value: String*): Self = StObject.set(x, "tagGuids", js.Array(value :_*))
+    inline def setTagGuidsVarargs(value: String*): Self = StObject.set(x, "tagGuids", js.Array(value*))
     
     inline def setTagNames(value: js.Array[String]): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
     
     inline def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
     
-    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value :_*))
+    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

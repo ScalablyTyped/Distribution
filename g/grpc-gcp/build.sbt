@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "grpc-gcp"
-version := "0.1.1-e52354"
-scalaVersion := "2.12.8"
+version := "1.0.0-692889"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "grpc" % "1.20.2-509871",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-2c1544",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.0-db6617",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-7b2a61",
+  "org.scalablytyped" %%% "long" % "5.2.0-13a867",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "protobufjs" % "7.1.1-ba42e8",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

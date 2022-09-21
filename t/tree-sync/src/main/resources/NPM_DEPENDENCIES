@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tree-sync" : "1.4.0"
+      "tree-sync" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tree-sync" : "1.4.0"
+      "tree-sync" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

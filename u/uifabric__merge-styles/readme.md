@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__merge-styles
 
-Typings are for version 7.19.1
+Typings are for version 7.20.0
 
 ## Library description:
 Style loading utilities.
@@ -10,10 +10,10 @@ Style loading utilities.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/merge-styles |
 | Keywords           | - |
-| # releases         | 97 |
-| # dependents       | 28 |
-| # downloads        | 4414040 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 296646.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

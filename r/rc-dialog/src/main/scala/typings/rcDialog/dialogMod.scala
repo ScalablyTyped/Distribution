@@ -1,6 +1,7 @@
 package typings.rcDialog
 
 import typings.rcDialog.idialogproptypesMod.IDialogPropTypes
+import typings.rcUtil.scrollLockerMod.default
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object dialogMod {
     
     def getOpenCount(): Double
     
-    var switchScrollingEffect: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var scrollLocker: js.UndefOr[default] = js.undefined
   }
   object IDialogChildProps {
     
@@ -33,9 +34,9 @@ object dialogMod {
       
       inline def setGetOpenCount(value: () => Double): Self = StObject.set(x, "getOpenCount", js.Any.fromFunction0(value))
       
-      inline def setSwitchScrollingEffect(value: () => Unit): Self = StObject.set(x, "switchScrollingEffect", js.Any.fromFunction0(value))
+      inline def setScrollLocker(value: default): Self = StObject.set(x, "scrollLocker", value.asInstanceOf[js.Any])
       
-      inline def setSwitchScrollingEffectUndefined: Self = StObject.set(x, "switchScrollingEffect", js.undefined)
+      inline def setScrollLockerUndefined: Self = StObject.set(x, "scrollLocker", js.undefined)
     }
   }
 }

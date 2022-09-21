@@ -17,7 +17,7 @@ trait UserAuthConfigInfo extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy.
+    * Whether to require or disallow Amazon Web Services Identity and Access Management (IAM) authentication for connections to the proxy. The ENABLED value is valid only for proxies with RDS for Microsoft SQL Server.
     */
   var IAMAuth: js.UndefOr[IAMAuthMode] = js.undefined
   

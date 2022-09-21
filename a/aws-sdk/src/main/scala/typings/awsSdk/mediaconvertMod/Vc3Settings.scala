@@ -32,6 +32,11 @@ trait Vc3Settings extends StObject {
   var InterlaceMode: js.UndefOr[Vc3InterlaceMode] = js.undefined
   
   /**
+    * Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing (INTERLACED_OPTIMIZE) to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing (INTERLACED), for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine (telecine) to None (NONE) or Soft (SOFT). You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode (interlaceMode) to a value other than Progressive (PROGRESSIVE).
+    */
+  var ScanTypeConversionMode: js.UndefOr[Vc3ScanTypeConversionMode] = js.undefined
+  
+  /**
     * Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output by relabeling the video frames and resampling your audio. Note that enabling this setting will slightly reduce the duration of your video. Related settings: You must also set Framerate to 25. In your JSON job specification, set (framerateControl) to (SPECIFIED), (framerateNumerator) to 25 and (framerateDenominator) to 1.
     */
   var SlowPal: js.UndefOr[Vc3SlowPal] = js.undefined
@@ -74,6 +79,10 @@ object Vc3Settings {
     inline def setInterlaceMode(value: Vc3InterlaceMode): Self = StObject.set(x, "InterlaceMode", value.asInstanceOf[js.Any])
     
     inline def setInterlaceModeUndefined: Self = StObject.set(x, "InterlaceMode", js.undefined)
+    
+    inline def setScanTypeConversionMode(value: Vc3ScanTypeConversionMode): Self = StObject.set(x, "ScanTypeConversionMode", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeConversionModeUndefined: Self = StObject.set(x, "ScanTypeConversionMode", js.undefined)
     
     inline def setSlowPal(value: Vc3SlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
     

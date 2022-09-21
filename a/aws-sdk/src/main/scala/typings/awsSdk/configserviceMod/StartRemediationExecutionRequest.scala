@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartRemediationExecutionRequest extends StObject {
   
   /**
-    * The list of names of AWS Config rules that you want to run remediation execution for.
+    * The list of names of Config rules that you want to run remediation execution for.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
@@ -29,6 +29,6 @@ object StartRemediationExecutionRequest {
     
     inline def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
     
-    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value*))
   }
 }

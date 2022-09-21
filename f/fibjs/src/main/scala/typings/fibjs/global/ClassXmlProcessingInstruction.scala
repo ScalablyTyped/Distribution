@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_XmlProcessingInstruction")
 @js.native
-class ClassXmlProcessingInstruction ()
+open class ClassXmlProcessingInstruction ()
   extends StObject
      with typings.fibjs.ClassXmlProcessingInstruction

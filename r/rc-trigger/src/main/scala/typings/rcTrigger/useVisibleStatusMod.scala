@@ -17,6 +17,7 @@ object useVisibleStatusMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - typings.rcTrigger.rcTriggerStrings.measure
+    - typings.rcTrigger.rcTriggerStrings.alignPre
     - typings.rcTrigger.rcTriggerStrings.align
     - typings.rcTrigger.rcTriggerStrings.aligned
     - typings.rcTrigger.rcTriggerStrings.motion

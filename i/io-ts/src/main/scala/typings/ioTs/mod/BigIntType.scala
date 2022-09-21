@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "BigIntType")
 @js.native
-class BigIntType ()
-  extends Type_[js.BigInt, js.BigInt, js.Any] {
+open class BigIntType ()
+  extends Type_[js.BigInt, js.BigInt, Any] {
   
   /**
     * @since 1.0.0

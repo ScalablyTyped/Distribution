@@ -3,9 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.MigrationsListReposForUserEndpoint
-import typings.octokitTypes.endpointsMod.MigrationsListReposForUserResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -14,15 +14,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `776` extends StObject {
   
-  var parameters: RequestParameters & (Omit[MigrationsListReposForUserEndpoint, baseUrl | headers | mediaType])
+  var parameters: RequestParameters & (Omit[
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+    ]) & RequiredPreview[Any], 
+    baseUrl | headers | mediaType
+  ])
   
-  var response: OctokitResponse[MigrationsListReposForUserResponseData]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+  ]
 }
 object `776` {
   
   inline def apply(
-    parameters: RequestParameters & (Omit[MigrationsListReposForUserEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[MigrationsListReposForUserResponseData]
+    parameters: RequestParameters & (Omit[
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+      ]) & RequiredPreview[Any], 
+      baseUrl | headers | mediaType
+    ]),
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+    ]
   ): `776` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`776`]
@@ -31,9 +45,18 @@ object `776` {
   extension [Self <: `776`](x: Self) {
     
     inline def setParameters(
-      value: RequestParameters & (Omit[MigrationsListReposForUserEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+          ]) & RequiredPreview[Any], 
+          baseUrl | headers | mediaType
+        ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[MigrationsListReposForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/actions/caches']['delete'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

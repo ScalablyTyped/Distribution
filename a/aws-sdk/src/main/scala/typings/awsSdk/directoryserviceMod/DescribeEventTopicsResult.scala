@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEventTopicsResult extends StObject {
   
   /**
-    * A list of SNS topic names that receive status messages from the specified Directory ID.
+    * A list of Amazon SNS topic names that receive status messages from the specified Directory ID.
     */
   var EventTopics: js.UndefOr[typings.awsSdk.directoryserviceMod.EventTopics] = js.undefined
 }
@@ -24,6 +24,6 @@ object DescribeEventTopicsResult {
     
     inline def setEventTopicsUndefined: Self = StObject.set(x, "EventTopics", js.undefined)
     
-    inline def setEventTopicsVarargs(value: EventTopic*): Self = StObject.set(x, "EventTopics", js.Array(value :_*))
+    inline def setEventTopicsVarargs(value: EventTopic*): Self = StObject.set(x, "EventTopics", js.Array(value*))
   }
 }

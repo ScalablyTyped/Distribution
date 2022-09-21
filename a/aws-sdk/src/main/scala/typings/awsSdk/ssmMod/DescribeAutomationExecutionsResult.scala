@@ -29,7 +29,7 @@ object DescribeAutomationExecutionsResult {
     
     inline def setAutomationExecutionMetadataListUndefined: Self = StObject.set(x, "AutomationExecutionMetadataList", js.undefined)
     
-    inline def setAutomationExecutionMetadataListVarargs(value: AutomationExecutionMetadata*): Self = StObject.set(x, "AutomationExecutionMetadataList", js.Array(value :_*))
+    inline def setAutomationExecutionMetadataListVarargs(value: AutomationExecutionMetadata*): Self = StObject.set(x, "AutomationExecutionMetadataList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

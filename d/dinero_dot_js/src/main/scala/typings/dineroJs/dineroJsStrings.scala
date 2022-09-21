@@ -273,6 +273,12 @@ object dineroJsStrings {
   inline def DOP: DOP = "DOP".asInstanceOf[DOP]
   
   @js.native
+  sealed trait DOWN
+    extends StObject
+       with RoundingMode
+  inline def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
+  
+  @js.native
   sealed trait DZD
     extends StObject
        with Currency

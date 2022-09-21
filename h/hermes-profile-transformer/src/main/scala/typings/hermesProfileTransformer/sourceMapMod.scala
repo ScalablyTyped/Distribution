@@ -40,15 +40,15 @@ object sourceMapMod {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setSourceContent(value: js.Array[String]): Self = StObject.set(x, "sourceContent", value.asInstanceOf[js.Any])
       
-      inline def setSourceContentVarargs(value: String*): Self = StObject.set(x, "sourceContent", js.Array(value :_*))
+      inline def setSourceContentVarargs(value: String*): Self = StObject.set(x, "sourceContent", js.Array(value*))
       
       inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -56,7 +56,7 @@ object sourceMapMod {
       
       inline def setX_facebook_sourcesNull: Self = StObject.set(x, "x_facebook_sources", null)
       
-      inline def setX_facebook_sourcesVarargs(value: Mappings*): Self = StObject.set(x, "x_facebook_sources", js.Array(value :_*))
+      inline def setX_facebook_sourcesVarargs(value: Mappings*): Self = StObject.set(x, "x_facebook_sources", js.Array(value*))
     }
   }
 }

@@ -29,17 +29,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ReferencesEvents,
-    event: ItemAdded,
-    argNames: js.Array[Reference],
-    handler: js.ThisFunction1[
-      /* this */ ReferencesEvents, 
-      /* parameter */ typings.activexVbide.anon.Reference, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: ReferencesEvents,
-    event: ItemRemoved,
+    event: ItemAdded | ItemRemoved,
     argNames: js.Array[Reference],
     handler: js.ThisFunction1[
       /* this */ ReferencesEvents, 
@@ -49,13 +39,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: References,
-    event: ItemAdded,
-    argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ References, /* parameter */ typings.activexVbide.anon.Reference, Unit]
-  ): Unit = js.native
-  def on(
-    obj: References,
-    event: ItemRemoved,
+    event: ItemAdded | ItemRemoved,
     argNames: js.Array[Reference],
     handler: js.ThisFunction1[/* this */ References, /* parameter */ typings.activexVbide.anon.Reference, Unit]
   ): Unit = js.native

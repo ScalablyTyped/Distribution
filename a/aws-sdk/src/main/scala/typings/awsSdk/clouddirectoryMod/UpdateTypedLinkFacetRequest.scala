@@ -42,11 +42,11 @@ object UpdateTypedLinkFacetRequest {
     
     inline def setAttributeUpdates(value: TypedLinkFacetAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
-    inline def setAttributeUpdatesVarargs(value: TypedLinkFacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
+    inline def setAttributeUpdatesVarargs(value: TypedLinkFacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value*))
     
     inline def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     
-    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
+    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value*))
     
     inline def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

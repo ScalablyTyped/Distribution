@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpParameters extends StObject {
   
   /**
-    * The headers that need to be sent as part of request invoking the API Gateway REST API.
+    * The headers that need to be sent as part of request invoking the API Gateway REST API or EventBridge ApiDestination.
     */
   var HeaderParameters: js.UndefOr[HeaderParametersMap] = js.undefined
   
   /**
-    * The path parameter values to be used to populate API Gateway REST API path wildcards ("*").
+    * The path parameter values to be used to populate API Gateway REST API or EventBridge ApiDestination path wildcards ("*").
     */
   var PathParameterValues: js.UndefOr[PathParameterList] = js.undefined
   
   /**
-    * The query string keys/values that need to be sent as part of request invoking the API Gateway REST API.
+    * The query string keys/values that need to be sent as part of request invoking the API Gateway REST API or EventBridge ApiDestination.
     */
   var QueryStringParameters: js.UndefOr[QueryStringParametersMap] = js.undefined
 }
@@ -38,7 +38,7 @@ object HttpParameters {
     
     inline def setPathParameterValuesUndefined: Self = StObject.set(x, "PathParameterValues", js.undefined)
     
-    inline def setPathParameterValuesVarargs(value: PathParameter*): Self = StObject.set(x, "PathParameterValues", js.Array(value :_*))
+    inline def setPathParameterValuesVarargs(value: PathParameter*): Self = StObject.set(x, "PathParameterValues", js.Array(value*))
     
     inline def setQueryStringParameters(value: QueryStringParametersMap): Self = StObject.set(x, "QueryStringParameters", value.asInstanceOf[js.Any])
     

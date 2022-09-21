@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiPushSubscription")
 @js.native
-class KiiPushSubscription ()
+open class KiiPushSubscription ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiPushSubscription

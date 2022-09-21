@@ -1,21 +1,31 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.hovered
-import typings.devextreme.devextremeStrings.normal
-import typings.devextreme.devextremeStrings.selected
+import typings.devextreme.mod.DevExpress.common.charts.LegendMarkerState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Fill extends StObject {
   
+  /**
+    * The marker&apos;s color.
+    */
   var fill: js.UndefOr[String] = js.undefined
   
+  /**
+    * The marker&apos;s opacity.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * The markerSize in pixels.
+    */
   var size: js.UndefOr[Double] = js.undefined
   
-  var state: js.UndefOr[normal | hovered | selected] = js.undefined
+  /**
+    * The marker&apos;s state.
+    */
+  var state: js.UndefOr[LegendMarkerState] = js.undefined
 }
 object Fill {
   
@@ -38,7 +48,7 @@ object Fill {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setState(value: normal | hovered | selected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: LegendMarkerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

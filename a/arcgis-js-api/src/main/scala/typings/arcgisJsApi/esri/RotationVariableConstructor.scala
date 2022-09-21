@@ -17,5 +17,5 @@ trait RotationVariableConstructor
 Instantiable0[RotationVariable]
      with Instantiable1[/* properties */ RotationVariableProperties, RotationVariable] {
   
-  def fromJSON(json: js.Any): RotationVariable = js.native
+  def fromJSON(json: Any): RotationVariable = js.native
 }

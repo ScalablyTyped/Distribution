@@ -6,16 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Length extends StObject {
   
+  /**
+    * Specifies the color of the scale&apos;s major ticks.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the length of the scale&apos;s major ticks.
+    */
   var length: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the opacity of the scale&apos;s major ticks.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var shift: js.UndefOr[Double] = js.undefined
-  
+  /**
+    * Indicates whether scale major ticks are visible or not.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the width of the scale&apos;s major ticks.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Length {
@@ -38,10 +51,6 @@ object Length {
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-    
-    inline def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
-    
-    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

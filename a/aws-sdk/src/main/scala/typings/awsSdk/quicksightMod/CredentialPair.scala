@@ -34,7 +34,7 @@ object CredentialPair {
     
     inline def setAlternateDataSourceParametersUndefined: Self = StObject.set(x, "AlternateDataSourceParameters", js.undefined)
     
-    inline def setAlternateDataSourceParametersVarargs(value: DataSourceParameters*): Self = StObject.set(x, "AlternateDataSourceParameters", js.Array(value :_*))
+    inline def setAlternateDataSourceParametersVarargs(value: DataSourceParameters*): Self = StObject.set(x, "AlternateDataSourceParameters", js.Array(value*))
     
     inline def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

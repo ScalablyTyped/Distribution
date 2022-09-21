@@ -1,8 +1,6 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.WebGLUniformLocation
-import typings.std.Float32Array
-import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +10,13 @@ trait Effect
   extends StObject
      with IDisposable {
   
-  /* private */ var _allFallbacksProcessed: js.Any = js.native
+  /* private */ var _allFallbacksProcessed: Any = js.native
   
-  /* private */ var _attributeLocationByName: js.Any = js.native
+  /* private */ var _attributeLocationByName: Any = js.native
   
-  /* private */ var _attributes: js.Any = js.native
+  /* private */ var _attributes: Any = js.native
   
-  /* private */ var _attributesNames: js.Any = js.native
+  /* private */ var _attributesNames: Any = js.native
   
   /**
     * Binds a texture to the engine to be used as output of the shader.
@@ -31,37 +29,29 @@ trait Effect
   /** @hidden */
   var _bonesComputationForcedToCPU: Boolean = js.native
   
-  /** @hidden */
-  def _cacheFloat2(uniformName: String, x: Double, y: Double): Boolean = js.native
+  /* private */ var _checkIsReady: Any = js.native
+  
+  /* private */ var _compilationError: Any = js.native
   
   /** @hidden */
-  def _cacheFloat3(uniformName: String, x: Double, y: Double, z: Double): Boolean = js.native
+  var _engine: Engine = js.native
+  
+  /* private */ var _fallbacks: Any = js.native
   
   /** @hidden */
-  def _cacheFloat4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+  var _fragmentSourceCode: String = js.native
   
-  /** @hidden */
-  def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
+  /* private */ var _fragmentSourceCodeOverride: Any = js.native
   
-  /* private */ var _checkIsReady: js.Any = js.native
+  /* private */ var _getShaderCodeAndErrorLine: Any = js.native
   
-  /* private */ var _compilationError: js.Any = js.native
+  /* private */ var _indexParameters: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _isDisposed: Any = js.native
   
-  /* private */ var _fallbacks: js.Any = js.native
+  /* private */ var _isReady: Any = js.native
   
-  /* private */ var _fragmentSourceCode: js.Any = js.native
-  
-  /* private */ var _fragmentSourceCodeOverride: js.Any = js.native
-  
-  /* private */ var _getShaderCodeAndErrorLine: js.Any = js.native
-  
-  /* private */ var _indexParameters: js.Any = js.native
-  
-  /* private */ var _isReady: js.Any = js.native
-  
-  /* private */ var _isReadyInternal: js.Any = js.native
+  /* private */ var _isReadyInternal: Any = js.native
   
   /**
     * Key for the effect.
@@ -69,7 +59,7 @@ trait Effect
     */
   var _key: String = js.native
   
-  /* private */ var _loadShader: js.Any = js.native
+  /* private */ var _loadShader: Any = js.native
   
   /** @hidden */
   var _multiTarget: Boolean = js.native
@@ -89,11 +79,15 @@ trait Effect
     */
   def _prepareEffect(): Unit = js.native
   
-  /* private */ var _processCompilationErrors: js.Any = js.native
+  /* private */ var _processCompilationErrors: Any = js.native
   
-  /* private */ var _rawFragmentSourceCode: js.Any = js.native
+  /* private */ var _processingContext: Any = js.native
   
-  /* private */ var _rawVertexSourceCode: js.Any = js.native
+  /** @hidden */
+  /* private */ var _rawFragmentSourceCode: Any = js.native
+  
+  /** @hidden */
+  /* private */ var _rawVertexSourceCode: Any = js.native
   
   /**
     * Recompiles the webGL program
@@ -110,33 +104,42 @@ trait Effect
     onError: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
   
-  /* private */ var _samplerList: js.Any = js.native
+  /** @hidden */
+  var _samplerList: js.Array[String] = js.native
   
-  /* private */ var _samplers: js.Any = js.native
+  /* private */ var _samplers: Any = js.native
   
-  /* private */ var _transformFeedbackVaryings: js.Any = js.native
+  /* private */ var _shaderLanguage: Any = js.native
   
-  /* private */ var _uniformBuffersNames: js.Any = js.native
+  /* private */ var _transformFeedbackVaryings: Any = js.native
   
-  /* private */ var _uniformBuffersNamesList: js.Any = js.native
+  /** @hidden */
+  var _uniformBuffersNames: org.scalablytyped.runtime.StringDictionary[Double] = js.native
   
-  /* private */ var _uniforms: js.Any = js.native
+  /* private */ var _uniformBuffersNamesList: Any = js.native
   
-  /* private */ var _uniformsNames: js.Any = js.native
+  /* private */ var _uniforms: Any = js.native
   
-  /* private */ var _useFinalCode: js.Any = js.native
+  /* private */ var _uniformsNames: Any = js.native
   
-  /* private */ var _valueCache: js.Any = js.native
+  /* private */ var _useFinalCode: Any = js.native
   
-  /* private */ var _vertexSourceCode: js.Any = js.native
+  /** @hidden */
+  var _vertexSourceCode: String = js.native
   
-  /* private */ var _vertexSourceCodeOverride: js.Any = js.native
+  /* private */ var _vertexSourceCodeOverride: Any = js.native
   
   /**
     * @hidden
     * Specifies if the effect was previously ready
     */
   var _wasPreviouslyReady: Boolean = js.native
+  
+  /**
+    * @hidden
+    * Specifies if the effect was previously using instances
+    */
+  var _wasPreviouslyUsingInstances: Nullable[Boolean] = js.native
   
   /**
     * Gets a boolean indicating that all fallbacks were used during compilation
@@ -164,7 +167,7 @@ trait Effect
   var defines: String = js.native
   
   /**
-    * Adds a callback to the onCompiled observable and call the callback imediatly if already ready.
+    * Adds a callback to the onCompiled observable and call the callback immediately if already ready.
     * @param func The callback to be used.
     */
   def executeWhenCompiled(func: js.Function1[/* effect */ this.type, Unit]): Unit = js.native
@@ -190,7 +193,7 @@ trait Effect
   
   /**
     * The number of attributes.
-    * @returns the numnber of attributes.
+    * @returns the number of attributes.
     */
   def getAttributesCount(): Double = js.native
   
@@ -216,7 +219,7 @@ trait Effect
     * Returns the index parameters used to create the effect
     * @returns The index parameters object
     */
-  def getIndexParameters(): js.Any = js.native
+  def getIndexParameters(): Any = js.native
   
   /**
     * The pipeline context for this effect
@@ -275,7 +278,7 @@ trait Effect
   /**
     * Name of the effect.
     */
-  var name: js.Any = js.native
+  var name: Any = js.native
   
   /**
     * Callback that will be called when effect is bound.
@@ -391,6 +394,13 @@ trait Effect
   def setDirectColor4(uniformName: String, color4: IColor4Like): Effect = js.native
   
   /**
+    * Sets an external texture on the engine to be used in the shader.
+    * @param name Name of the external texture variable.
+    * @param texture Texture to set.
+    */
+  def setExternalTexture(name: String, texture: Nullable[ExternalTexture]): Unit = js.native
+  
+  /**
     * Sets a float on a uniform variable.
     * @param uniformName Name of the variable.
     * @param value value to be set.
@@ -434,7 +444,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setFloatArray(uniformName: String, array: Float32Array): Effect = js.native
+  def setFloatArray(uniformName: String, array: FloatArray): Effect = js.native
   
   /**
     * Sets an float array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
@@ -442,7 +452,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setFloatArray2(uniformName: String, array: Float32Array): Effect = js.native
+  def setFloatArray2(uniformName: String, array: FloatArray): Effect = js.native
   
   /**
     * Sets an float array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
@@ -450,7 +460,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setFloatArray3(uniformName: String, array: Float32Array): Effect = js.native
+  def setFloatArray3(uniformName: String, array: FloatArray): Effect = js.native
   
   /**
     * Sets an float array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
@@ -458,10 +468,10 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setFloatArray4(uniformName: String, array: Float32Array): Effect = js.native
+  def setFloatArray4(uniformName: String, array: FloatArray): Effect = js.native
   
   /**
-    * Sets an interger value on a uniform variable.
+    * Sets an integer value on a uniform variable.
     * @param uniformName Name of the variable.
     * @param value Value to be set.
     * @returns this effect.
@@ -469,12 +479,42 @@ trait Effect
   def setInt(uniformName: String, value: Double): Effect = js.native
   
   /**
+    * Sets an int2 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First int in int2.
+    * @param y Second int in int2.
+    * @returns this effect.
+    */
+  def setInt2(uniformName: String, x: Double, y: Double): Effect = js.native
+  
+  /**
+    * Sets an int3 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First int in int3.
+    * @param y Second int in int3.
+    * @param z Third int in int3.
+    * @returns this effect.
+    */
+  def setInt3(uniformName: String, x: Double, y: Double, z: Double): Effect = js.native
+  
+  /**
+    * Sets an int4 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First int in int4.
+    * @param y Second int in int4.
+    * @param z Third int in int4.
+    * @param w Fourth int in int4.
+    * @returns this effect.
+    */
+  def setInt4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Effect = js.native
+  
+  /**
     * Sets an int array on a uniform variable.
     * @param uniformName Name of the variable.
     * @param array array to be set.
     * @returns this effect.
     */
-  def setIntArray(uniformName: String, array: Int32Array): Effect = js.native
+  def setIntArray(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
   
   /**
     * Sets an int array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
@@ -482,7 +522,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setIntArray2(uniformName: String, array: Int32Array): Effect = js.native
+  def setIntArray2(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
   
   /**
     * Sets an int array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
@@ -490,7 +530,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setIntArray3(uniformName: String, array: Int32Array): Effect = js.native
+  def setIntArray3(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
   
   /**
     * Sets an int array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
@@ -498,7 +538,7 @@ trait Effect
     * @param array array to be set.
     * @returns this effect.
     */
-  def setIntArray4(uniformName: String, array: Int32Array): Effect = js.native
+  def setIntArray4(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
   
   def setMatrices(uniformName: String, matrices: js.Array[Double]): Effect = js.native
   /**
@@ -507,7 +547,7 @@ trait Effect
     * @param matrices matrices to be set.
     * @returns this effect.
     */
-  def setMatrices(uniformName: String, matrices: Float32Array): Effect = js.native
+  def setMatrices(uniformName: String, matrices: js.typedarray.Float32Array): Effect = js.native
   
   /**
     * Sets matrix on a uniform variable.
@@ -519,21 +559,36 @@ trait Effect
   
   def setMatrix2x2(uniformName: String, matrix: js.Array[Double]): Effect = js.native
   /**
-    * Sets a 2x2 matrix on a uniform variable. (Speicified as [1,2,3,4] will result in [1,2][3,4] matrix)
+    * Sets a 2x2 matrix on a uniform variable. (Specified as [1,2,3,4] will result in [1,2][3,4] matrix)
     * @param uniformName Name of the variable.
     * @param matrix matrix to be set.
     * @returns this effect.
     */
-  def setMatrix2x2(uniformName: String, matrix: Float32Array): Effect = js.native
+  def setMatrix2x2(uniformName: String, matrix: js.typedarray.Float32Array): Effect = js.native
   
   def setMatrix3x3(uniformName: String, matrix: js.Array[Double]): Effect = js.native
   /**
-    * Sets a 3x3 matrix on a uniform variable. (Speicified as [1,2,3,4,5,6,7,8,9] will result in [1,2,3][4,5,6][7,8,9] matrix)
+    * Sets a 3x3 matrix on a uniform variable. (Specified as [1,2,3,4,5,6,7,8,9] will result in [1,2,3][4,5,6][7,8,9] matrix)
     * @param uniformName Name of the variable.
     * @param matrix matrix to be set.
     * @returns this effect.
     */
-  def setMatrix3x3(uniformName: String, matrix: Float32Array): Effect = js.native
+  def setMatrix3x3(uniformName: String, matrix: js.typedarray.Float32Array): Effect = js.native
+  
+  /**
+    * Sets a Quaternion on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param quaternion Value to be set.
+    * @returns this effect.
+    */
+  def setQuaternion(uniformName: String, quaternion: IQuaternionLike): Effect = js.native
+  
+  /**
+    * Sets a storage buffer on the engine to be used in the shader.
+    * @param name Name of the storage buffer variable.
+    * @param buffer Storage buffer to set.
+    */
+  def setStorageBuffer(name: String, buffer: Nullable[StorageBuffer]): Unit = js.native
   
   /**
     * Sets a texture on the engine to be used in the shader.
@@ -563,6 +618,13 @@ trait Effect
     * @param postProcess Post process to get the output texture from.
     */
   def setTextureFromPostProcessOutput(channel: String, postProcess: Nullable[PostProcess]): Unit = js.native
+  
+  /**
+    * Sets a sampler on the engine to be used in the shader.
+    * @param name Name of the sampler variable.
+    * @param sampler Sampler to set.
+    */
+  def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
   
   /**
     * Sets a Vector2 on a uniform variable.

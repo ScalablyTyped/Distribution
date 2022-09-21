@@ -8,5 +8,5 @@ object invalidGrantTokenExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/InvalidGrantTokenException", "InvalidGrantTokenException")
   @js.native
-  val InvalidGrantTokenException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidGrantTokenException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

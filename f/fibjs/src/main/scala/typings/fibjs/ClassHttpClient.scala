@@ -34,7 +34,7 @@ trait ClassHttpClient
     * @readonly
     * @type NArray
     */
-  var cookies: js.Array[js.Any] = js.native
+  var cookies: js.Array[Any] = js.native
   
   /**
     * 

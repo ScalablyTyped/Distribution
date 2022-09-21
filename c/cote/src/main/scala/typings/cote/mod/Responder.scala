@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cote", "Responder")
 @js.native
-class Responder protected () extends Component {
+open class Responder protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */
@@ -24,7 +24,13 @@ class Responder protected () extends Component {
   discoveryOptions: DiscoveryOptions
   ) = this()
   
-  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[js.Any]]): this.type = js.native
+  /**
+    * Listens to internal `cote:added` and `cote:removed` events.
+    *
+    * @param listener Callback.
+    */
+  def on(`type`: coteColonadded | coteColonremoved, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
+  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[Any]]): this.type = js.native
   /**
     * Responds to certain requests from a Requester.
     *
@@ -35,26 +41,17 @@ class Responder protected () extends Component {
     `type`: String,
     listener: js.Function2[
       /* event */ T, 
-      /* callback */ js.Function2[/* error */ js.Any, /* result */ js.Any, Unit], 
+      /* callback */ js.Function2[/* error */ Any, /* result */ Any, Unit], 
       Unit
     ]
   ): this.type = js.native
-  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, js.Promise[js.Any]]): this.type = js.native
+  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, js.Promise[Any]]): this.type = js.native
   def on[T /* <: Event */](
     `type`: js.Array[String],
     listener: js.Function2[
       /* event */ T, 
-      /* callback */ js.Function2[/* error */ js.Any, /* result */ js.Any, Unit], 
+      /* callback */ js.Function2[/* error */ Any, /* result */ Any, Unit], 
       Unit
     ]
   ): this.type = js.native
-  /**
-    * Listens to internal `cote:added` and `cote:removed` events.
-    *
-    * @param listener Callback.
-    */
-  @JSName("on")
-  def on_coteadded(`type`: coteColonadded, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
-  @JSName("on")
-  def on_coteremoved(`type`: coteColonremoved, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
 }

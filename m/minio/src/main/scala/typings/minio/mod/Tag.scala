@@ -1,0 +1,26 @@
+package typings.minio.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Tag extends StObject {
+  
+  var Key: String
+  
+  var Value: String
+}
+object Tag {
+  
+  inline def apply(Key: String, Value: String): Tag = {
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tag]
+  }
+  
+  extension [Self <: Tag](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__abstract-signer
 
-Typings are for version 5.0.8
+Typings are for version 5.7.0
 
 ## Library description:
 An Abstract Class for desribing an Ethereum Signer for ethers.
@@ -10,10 +10,10 @@ An Abstract Class for desribing an Ethereum Signer for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abstract-signer |
 | Keywords           | Ethereum, ethers |
-| # releases         | 41 |
-| # dependents       | 37 |
-| # downloads        | 1889465 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 3549135.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

@@ -89,7 +89,7 @@ object XSpinValue {
     getOrientation: () => Double,
     getSpinIncrement: () => Double,
     getValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAdjustmentListener: XAdjustmentListener => Unit,
     setMaximum: Double => Unit,

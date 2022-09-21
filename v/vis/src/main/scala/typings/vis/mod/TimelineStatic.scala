@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimelineStatic
   extends StObject
-     with Instantiable2[/* id */ HTMLElement, /* data */ js.Any, Timeline]
-     with Instantiable3[/* id */ HTMLElement, /* data */ js.Any, /* options */ js.Any, Timeline]
+     with Instantiable2[/* id */ HTMLElement, /* data */ Any, Timeline]
+     with Instantiable3[/* id */ HTMLElement, /* data */ Any, /* options */ Any, Timeline]

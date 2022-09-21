@@ -63,7 +63,7 @@ object XController2 {
     Model: XModel,
     Sidebar: XSidebarProvider,
     ViewControllerName: String,
-    ViewData: js.Any,
+    ViewData: Any,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     attachFrame: XFrame => Unit,
@@ -72,11 +72,11 @@ object XController2 {
     getFrame: () => XFrame,
     getModel: () => XModel,
     getSidebar: () => XSidebarProvider,
-    getViewData: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getViewData: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
-    restoreViewData: js.Any => Unit,
+    restoreViewData: Any => Unit,
     suspend: Boolean => Boolean
   ): XController2 = {
     val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow.asInstanceOf[js.Any], CreationArguments = CreationArguments.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], Sidebar = Sidebar.asInstanceOf[js.Any], ViewControllerName = ViewControllerName.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getSidebar = js.Any.fromFunction0(getSidebar), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))

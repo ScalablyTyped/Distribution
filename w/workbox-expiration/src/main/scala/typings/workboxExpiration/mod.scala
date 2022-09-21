@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("workbox-expiration", "CacheExpiration")
   @js.native
-  class CacheExpiration protected ()
+  open class CacheExpiration protected ()
     extends typings.workboxExpiration.cacheExpirationMod.CacheExpiration {
     def this(cacheName: String) = this()
     def this(cacheName: String, config: CacheExpirationConfig) = this()
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("workbox-expiration", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends typings.workboxExpiration.pluginMod.Plugin {
     def this(config: ExpirationPluginConfig) = this()
   }

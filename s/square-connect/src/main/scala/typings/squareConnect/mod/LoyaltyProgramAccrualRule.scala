@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyProgramAccrualRule")
 @js.native
-class LoyaltyProgramAccrualRule () extends StObject {
+open class LoyaltyProgramAccrualRule () extends StObject {
   
   /**
     * The type of the accrual rule that defines how buyers can earn points.

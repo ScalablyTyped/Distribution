@@ -34,7 +34,7 @@ object Button {
     
     /** return the event model for sever side processing.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns the button model
       */
@@ -61,7 +61,7 @@ object Button {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
@@ -195,7 +195,7 @@ object Button {
     /** It allows to define the characteristics of the Button control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and
       * imageRight options. See below to know about available ImagePosition
@@ -289,7 +289,7 @@ object Button {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       

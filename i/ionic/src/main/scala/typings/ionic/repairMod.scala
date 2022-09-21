@@ -15,7 +15,7 @@ object repairMod {
   
   @JSImport("ionic/commands/repair", "RepairCommand")
   @js.native
-  class RepairCommand protected () extends Command {
+  open class RepairCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def cordovaRepair(cordova: RequiredProjectIntegratio, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

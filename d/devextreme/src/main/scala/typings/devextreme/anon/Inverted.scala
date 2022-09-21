@@ -1,27 +1,42 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.continuous
-import typings.devextreme.devextremeStrings.datetime
-import typings.devextreme.devextremeStrings.logarithmic
-import typings.devextreme.devextremeStrings.numeric
-import typings.devextreme.devextremeStrings.string_
+import typings.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import typings.devextreme.mod.DevExpress.viz.dxRangeSelector.ChartAxisScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Inverted extends StObject {
   
+  /**
+    * Indicates whether or not the chart&apos;s value axis must be inverted.
+    */
   var inverted: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the value to be raised to a power when generating ticks for a logarithmic value axis.
+    */
   var logarithmBase: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the maximum value of the chart&apos;s value axis.
+    */
   var max: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the minimum value of the chart&apos;s value axis.
+    */
   var min: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[continuous | logarithmic] = js.undefined
+  /**
+    * Specifies the type of the value axis.
+    */
+  var `type`: js.UndefOr[ChartAxisScale] = js.undefined
   
-  var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
+  /**
+    * Specifies the desired type of axis values.
+    */
+  var valueType: js.UndefOr[ChartsDataType] = js.undefined
 }
 object Inverted {
   
@@ -48,11 +63,11 @@ object Inverted {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setType(value: continuous | logarithmic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartAxisScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValueType(value: datetime | numeric | string_): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: ChartsDataType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }

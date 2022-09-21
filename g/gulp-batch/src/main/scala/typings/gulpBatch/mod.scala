@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Function1[/* event */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: js.Any): js.Function1[/* event */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: js.Any, cb: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: js.Any, cb: js.Any, errorHandler: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: js.Any, cb: Unit, errorHandler: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: Unit, cb: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: Unit, cb: js.Any, errorHandler: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
-  inline def apply(opts: Unit, cb: Unit, errorHandler: js.Any): js.Function1[/* event */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ js.Any, Unit]]
+  inline def apply(): js.Function1[/* event */ Any, Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Any): js.Function1[/* event */ Any, Unit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Any, cb: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Any, cb: Any, errorHandler: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Any, cb: Unit, errorHandler: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Unit, cb: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Unit, cb: Any, errorHandler: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
+  inline def apply(opts: Unit, cb: Unit, errorHandler: Any): js.Function1[/* event */ Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Any, Unit]]
   
   @JSImport("gulp-batch", JSImport.Namespace)
   @js.native

@@ -22,6 +22,6 @@ object ListDelegatesResponse {
     
     inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedEventEmitter[T /* <: StringDictionary[js.Function1[/* args */ js.Any, js.Any]] */] extends StObject {
+trait TypedEventEmitter[T /* <: StringDictionary[js.Function1[/* args */ Any, Any]] */] extends StObject {
   
   def addListener[K /* <: /* keyof T */ String */](
     event: K,

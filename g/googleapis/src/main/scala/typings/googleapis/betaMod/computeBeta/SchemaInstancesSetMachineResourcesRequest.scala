@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstancesSetMachineResourcesRequest extends StObject {
   
   /**
-    * A list of the type and count of accelerator cards attached to the
-    * instance.
+    * A list of the type and count of accelerator cards attached to the instance.
     */
   var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
 }
@@ -25,6 +24,6 @@ object SchemaInstancesSetMachineResourcesRequest {
     
     inline def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
     
-    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
+    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value*))
   }
 }

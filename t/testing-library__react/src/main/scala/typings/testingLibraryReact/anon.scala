@@ -1,19 +1,18 @@
 package typings.testingLibraryReact
 
 import typings.prettyFormat.mod.OptionsReceived
-import typings.react.mod.ComponentType
+import typings.react.mod.JSXElementConstructor
 import typings.react.mod.ReactElement
+import typings.reactDom.testUtilsMod.VoidOrUndefinedOnly
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.Parameters
+import typings.std.ReturnType
 import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
-import typings.testingLibraryDom.matchesMod.ByRoleMatcher
-import typings.testingLibraryDom.matchesMod.Matcher
-import typings.testingLibraryDom.matchesMod.MatcherOptions
 import typings.testingLibraryDom.queriesMod.AllByBoundAttribute
 import typings.testingLibraryDom.queriesMod.AllByRole
 import typings.testingLibraryDom.queriesMod.AllByText
-import typings.testingLibraryDom.queriesMod.ByRoleOptions
 import typings.testingLibraryDom.queriesMod.FindAllByBoundAttribute
 import typings.testingLibraryDom.queriesMod.FindAllByRole_
 import typings.testingLibraryDom.queriesMod.FindAllByText_
@@ -26,30 +25,67 @@ import typings.testingLibraryDom.queriesMod.GetByText_
 import typings.testingLibraryDom.queriesMod.QueryByBoundAttribute
 import typings.testingLibraryDom.queriesMod.QueryByRole_
 import typings.testingLibraryDom.queriesMod.QueryByText_
-import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
-import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  trait Children extends StObject {
+    
+    var children: ReactElement
+  }
+  object Children {
+    
+    inline def apply(children: ReactElement): Children = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Children]
+    }
+    
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Current[Result] extends StObject {
+    
+    /**
+      * The value returned by your renderHook callback
+      */
+    var current: Result
+  }
+  object Current {
+    
+    inline def apply[Result](current: Result): Current[Result] = {
+      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Current[Result]]
+    }
+    
+    extension [Self <: Current[?], Result](x: Self & Current[Result]) {
+      
+      inline def setCurrent(value: Result): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait FnCall extends StObject {
     
-    def apply(callback: js.Function0[js.UndefOr[Unit]]): Unit = js.native
+    def apply(callback: js.Function0[VoidOrUndefinedOnly]): Unit = js.native
   }
   
-  /* Inlined @testing-library/react.@testing-library/react.Omit<@testing-library/react.@testing-library/react.RenderOptions<{ readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute}>, 'queries'> */
+  /* Inlined @testing-library/react.@testing-library/react.Omit<@testing-library/react.@testing-library/react.RenderOptions<{readonly getAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly queryByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly findByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly queryByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly getAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly findByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly getAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly queryAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly queryAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly findAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly queryAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly getByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly queryAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly getByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>, readonly queryByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>, readonly queryAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly findByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly getAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly getAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>, readonly findAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly getByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>, readonly getByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly queryByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly getByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>}, std.HTMLElement, std.HTMLElement>, 'queries'> */
   trait OmitRenderOptionsreadonly extends StObject {
     
-    var baseElement: js.UndefOr[Element] = js.undefined
+    var baseElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var container: js.UndefOr[Element] = js.undefined
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
     var hydrate: js.UndefOr[Boolean] = js.undefined
     
-    var wrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+    var legacyRoot: js.UndefOr[Boolean] = js.undefined
+    
+    var wrapper: js.UndefOr[JSXElementConstructor[Children]] = js.undefined
   }
   object OmitRenderOptionsreadonly {
     
@@ -60,11 +96,11 @@ object anon {
     
     extension [Self <: OmitRenderOptionsreadonly](x: Self) {
       
-      inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: HTMLElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
       inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -72,21 +108,27 @@ object anon {
       
       inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
       
-      inline def setWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setLegacyRoot(value: Boolean): Self = StObject.set(x, "legacyRoot", value.asInstanceOf[js.Any])
+      
+      inline def setLegacyRootUndefined: Self = StObject.set(x, "legacyRoot", js.undefined)
+      
+      inline def setWrapper(value: JSXElementConstructor[Children]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperFunction1(value: Children => ReactElement | Null): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
       
       inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   
-  /* Inlined @testing-library/react.@testing-library/react.RenderResult<{ readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute}> */
+  /* Inlined @testing-library/react.@testing-library/react.RenderResult<{readonly getAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly queryByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly findByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly queryByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly getAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly findByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly getAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly queryAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly queryAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly findAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly queryAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly getByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly queryAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly getByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>, readonly queryByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>, readonly queryAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly findByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly getAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly getAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly findAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>, readonly findAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly getByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly findByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>, readonly getByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly queryByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly getByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>}, std.HTMLElement, std.HTMLElement> */
   @js.native
   trait RenderResultreadonlygetAl extends StObject {
     
     def asFragment(): DocumentFragment = js.native
     
-    var baseElement: Element = js.native
+    var baseElement: HTMLElement = js.native
     
-    var container: Element = js.native
+    var container: HTMLElement = js.native
     
     def debug(): Unit = js.native
     def debug(baseElement: js.Array[Element | DocumentFragment]): Unit = js.native
@@ -105,454 +147,676 @@ object anon {
     def debug(baseElement: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(baseElement: Element, maxLength: Unit, options: OptionsReceived): Unit = js.native
     
-    var findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByBoundAttribute[HTMLElement]], 
+          ReturnType[FindAllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByBoundAttribute[HTMLElement]], 
+          ReturnType[FindAllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByLabelText: BoundFunction[FindAllByText_] = js.native
+    var findAllByLabelText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByText_[HTMLElement]], 
+          ReturnType[FindAllByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByBoundAttribute[HTMLElement]], 
+          ReturnType[FindAllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByRole: BoundFunction[FindAllByRole_] = js.native
+    var findAllByRole: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByRole_[HTMLElement]], 
+          ReturnType[FindAllByRole_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByBoundAttribute[HTMLElement]], 
+          ReturnType[FindAllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByText: BoundFunction[FindAllByText_] = js.native
+    var findAllByText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByText_[HTMLElement]], 
+          ReturnType[FindAllByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
+    var findAllByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindAllByBoundAttribute[HTMLElement]], 
+          ReturnType[FindAllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByAltText: BoundFunction[FindByBoundAttribute] = js.native
+    var findByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByBoundAttribute[HTMLElement]], 
+          ReturnType[FindByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
+    var findByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByBoundAttribute[HTMLElement]], 
+          ReturnType[FindByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByLabelText: BoundFunction[FindByText_] = js.native
+    var findByLabelText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByText_[HTMLElement]], 
+          ReturnType[FindByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
+    var findByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByBoundAttribute[HTMLElement]], 
+          ReturnType[FindByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByRole: BoundFunction[FindByRole_] = js.native
+    var findByRole: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByRole_[HTMLElement]], 
+          ReturnType[FindByRole_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByTestId: BoundFunction[FindByBoundAttribute] = js.native
+    var findByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByBoundAttribute[HTMLElement]], 
+          ReturnType[FindByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByText: BoundFunction[FindByText_] = js.native
+    var findByText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByText_[HTMLElement]], 
+          ReturnType[FindByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var findByTitle: BoundFunction[FindByBoundAttribute] = js.native
+    var findByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[FindByBoundAttribute[HTMLElement]], 
+          ReturnType[FindByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getAllByLabelText: BoundFunction[AllByText] = js.native
+    var getAllByLabelText: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByText[HTMLElement]], ReturnType[AllByText[HTMLElement]]]
+      ] = js.native
     
-    var getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getAllByRole: BoundFunction[AllByRole] = js.native
+    var getAllByRole: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByRole[HTMLElement]], ReturnType[AllByRole[HTMLElement]]]
+      ] = js.native
     
-    var getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getAllByText: BoundFunction[AllByText] = js.native
+    var getAllByText: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByText[HTMLElement]], ReturnType[AllByText[HTMLElement]]]
+      ] = js.native
     
-    var getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
+    var getAllByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByAltText: BoundFunction[GetByBoundAttribute] = js.native
+    var getByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByBoundAttribute[HTMLElement]], 
+          ReturnType[GetByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
+    var getByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByBoundAttribute[HTMLElement]], 
+          ReturnType[GetByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByLabelText: BoundFunction[GetByText_] = js.native
+    var getByLabelText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByText_[HTMLElement]], 
+          ReturnType[GetByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
+    var getByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByBoundAttribute[HTMLElement]], 
+          ReturnType[GetByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByRole: BoundFunction[GetByRole_] = js.native
+    var getByRole: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByRole_[HTMLElement]], 
+          ReturnType[GetByRole_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByTestId: BoundFunction[GetByBoundAttribute] = js.native
+    var getByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByBoundAttribute[HTMLElement]], 
+          ReturnType[GetByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByText: BoundFunction[GetByText_] = js.native
+    var getByText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByText_[HTMLElement]], 
+          ReturnType[GetByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var getByTitle: BoundFunction[GetByBoundAttribute] = js.native
+    var getByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[GetByBoundAttribute[HTMLElement]], 
+          ReturnType[GetByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryAllByLabelText: BoundFunction[AllByText] = js.native
+    var queryAllByLabelText: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByText[HTMLElement]], ReturnType[AllByText[HTMLElement]]]
+      ] = js.native
     
-    var queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryAllByRole: BoundFunction[AllByRole] = js.native
+    var queryAllByRole: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByRole[HTMLElement]], ReturnType[AllByRole[HTMLElement]]]
+      ] = js.native
     
-    var queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryAllByText: BoundFunction[AllByText] = js.native
+    var queryAllByText: BoundFunction[
+        js.Function1[/* args */ Parameters[AllByText[HTMLElement]], ReturnType[AllByText[HTMLElement]]]
+      ] = js.native
     
-    var queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
+    var queryAllByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[AllByBoundAttribute[HTMLElement]], 
+          ReturnType[AllByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByAltText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByBoundAttribute[HTMLElement]], 
+          ReturnType[QueryByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByDisplayValue: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByBoundAttribute[HTMLElement]], 
+          ReturnType[QueryByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByLabelText: BoundFunction[QueryByText_] = js.native
+    var queryByLabelText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByText_[HTMLElement]], 
+          ReturnType[QueryByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByPlaceholderText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByBoundAttribute[HTMLElement]], 
+          ReturnType[QueryByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByRole: BoundFunction[QueryByRole_] = js.native
+    var queryByRole: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByRole_[HTMLElement]], 
+          ReturnType[QueryByRole_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByTestId: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByBoundAttribute[HTMLElement]], 
+          ReturnType[QueryByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByText: BoundFunction[QueryByText_] = js.native
+    var queryByText: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByText_[HTMLElement]], 
+          ReturnType[QueryByText_[HTMLElement]]
+        ]
+      ] = js.native
     
-    var queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
+    var queryByTitle: BoundFunction[
+        js.Function1[
+          /* args */ Parameters[QueryByBoundAttribute[HTMLElement]], 
+          ReturnType[QueryByBoundAttribute[HTMLElement]]
+        ]
+      ] = js.native
     
     def rerender(ui: ReactElement): Unit = js.native
     
-    def unmount(): Boolean = js.native
+    def unmount(): Unit = js.native
   }
   
   trait Typeofqueries extends StObject {
     
-    val findAllByAltText: FindAllByBoundAttribute
+    def findAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByDisplayValue: FindAllByBoundAttribute
+    def findAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByLabelText: FindAllByText_
+    def findAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]]
     
-    val findAllByPlaceholderText: FindAllByBoundAttribute
+    def findAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByRole: FindAllByRole_
+    def findAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+    ): ReturnType[FindAllByRole_[T]]
     
-    val findAllByTestId: FindAllByBoundAttribute
+    def findAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByText: FindAllByText_
+    def findAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]]
     
-    val findAllByTitle: FindAllByBoundAttribute
+    def findAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findByAltText: FindByBoundAttribute
+    def findByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByDisplayValue: FindByBoundAttribute
+    def findByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByLabelText: FindByText_
+    def findByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]]
     
-    val findByPlaceholderText: FindByBoundAttribute
+    def findByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByRole: FindByRole_
+    def findByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+    ): ReturnType[FindByRole_[T]]
     
-    val findByTestId: FindByBoundAttribute
+    def findByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByText: FindByText_
+    def findByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]]
     
-    val findByTitle: FindByBoundAttribute
+    def findByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val getAllByAltText: AllByBoundAttribute
+    def getAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByDisplayValue: AllByBoundAttribute
+    def getAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByLabelText: AllByText
+    def getAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val getAllByPlaceholderText: AllByBoundAttribute
+    def getAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByRole: AllByRole
+    def getAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]]
     
-    val getAllByTestId: AllByBoundAttribute
+    def getAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByText: AllByText
+    def getAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val getAllByTitle: AllByBoundAttribute
+    def getAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getByAltText: GetByBoundAttribute
+    def getByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByDisplayValue: GetByBoundAttribute
+    def getByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByLabelText: GetByText_
+    def getByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]]
     
-    val getByPlaceholderText: GetByBoundAttribute
+    def getByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByRole: GetByRole_
+    def getByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+    ): ReturnType[GetByRole_[T]]
     
-    val getByTestId: GetByBoundAttribute
+    def getByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByText: GetByText_
+    def getByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]]
     
-    val getByTitle: GetByBoundAttribute
+    def getByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val queryAllByAltText: AllByBoundAttribute
+    def queryAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByDisplayValue: AllByBoundAttribute
+    def queryAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByLabelText: AllByText
+    def queryAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val queryAllByPlaceholderText: AllByBoundAttribute
+    def queryAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByRole: AllByRole
+    def queryAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]]
     
-    val queryAllByTestId: AllByBoundAttribute
+    def queryAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByText: AllByText
+    def queryAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val queryAllByTitle: AllByBoundAttribute
+    def queryAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryByAltText: QueryByBoundAttribute
+    def queryByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByDisplayValue: QueryByBoundAttribute
+    def queryByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByLabelText: QueryByText_
+    def queryByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]]
     
-    val queryByPlaceholderText: QueryByBoundAttribute
+    def queryByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByRole: QueryByRole_
+    def queryByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+    ): ReturnType[QueryByRole_[T]]
     
-    val queryByTestId: QueryByBoundAttribute
+    def queryByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByText: QueryByText_
+    def queryByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]]
     
-    val queryByTitle: QueryByBoundAttribute
+    def queryByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
   }
   object Typeofqueries {
     
     inline def apply(
-      findAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      getAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      getAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement],
-      getAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      getAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement,
-      getByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement,
-      getByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement,
-      getByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      queryAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      queryAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement],
-      queryAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      queryAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null,
-      queryByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement | Null,
-      queryByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null,
-      queryByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
+      findAllByAltText: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByDisplayValue: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByLabelText: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]],
+      findAllByPlaceholderText: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByRole: Parameters[FindAllByRole_[Any]] => ReturnType[FindAllByRole_[Any]],
+      findAllByTestId: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByText: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]],
+      findAllByTitle: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findByAltText: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByDisplayValue: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByLabelText: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]],
+      findByPlaceholderText: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByRole: Parameters[FindByRole_[Any]] => ReturnType[FindByRole_[Any]],
+      findByTestId: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByText: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]],
+      findByTitle: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      getAllByAltText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByDisplayValue: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByLabelText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      getAllByPlaceholderText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByRole: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]],
+      getAllByTestId: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      getAllByTitle: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getByAltText: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByDisplayValue: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByLabelText: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]],
+      getByPlaceholderText: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByRole: Parameters[GetByRole_[Any]] => ReturnType[GetByRole_[Any]],
+      getByTestId: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByText: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]],
+      getByTitle: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      queryAllByAltText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByDisplayValue: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByLabelText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      queryAllByPlaceholderText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByRole: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]],
+      queryAllByTestId: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      queryAllByTitle: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryByAltText: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByDisplayValue: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByLabelText: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]],
+      queryByPlaceholderText: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByRole: Parameters[QueryByRole_[Any]] => ReturnType[QueryByRole_[Any]],
+      queryByTestId: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByText: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]],
+      queryByTitle: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]
     ): Typeofqueries = {
-      val __obj = js.Dynamic.literal(findAllByAltText = js.Any.fromFunction4(findAllByAltText), findAllByDisplayValue = js.Any.fromFunction4(findAllByDisplayValue), findAllByLabelText = js.Any.fromFunction4(findAllByLabelText), findAllByPlaceholderText = js.Any.fromFunction4(findAllByPlaceholderText), findAllByRole = js.Any.fromFunction4(findAllByRole), findAllByTestId = js.Any.fromFunction4(findAllByTestId), findAllByText = js.Any.fromFunction4(findAllByText), findAllByTitle = js.Any.fromFunction4(findAllByTitle), findByAltText = js.Any.fromFunction4(findByAltText), findByDisplayValue = js.Any.fromFunction4(findByDisplayValue), findByLabelText = js.Any.fromFunction4(findByLabelText), findByPlaceholderText = js.Any.fromFunction4(findByPlaceholderText), findByRole = js.Any.fromFunction4(findByRole), findByTestId = js.Any.fromFunction4(findByTestId), findByText = js.Any.fromFunction4(findByText), findByTitle = js.Any.fromFunction4(findByTitle), getAllByAltText = js.Any.fromFunction3(getAllByAltText), getAllByDisplayValue = js.Any.fromFunction3(getAllByDisplayValue), getAllByLabelText = js.Any.fromFunction3(getAllByLabelText), getAllByPlaceholderText = js.Any.fromFunction3(getAllByPlaceholderText), getAllByRole = js.Any.fromFunction3(getAllByRole), getAllByTestId = js.Any.fromFunction3(getAllByTestId), getAllByText = js.Any.fromFunction3(getAllByText), getAllByTitle = js.Any.fromFunction3(getAllByTitle), getByAltText = js.Any.fromFunction3(getByAltText), getByDisplayValue = js.Any.fromFunction3(getByDisplayValue), getByLabelText = js.Any.fromFunction3(getByLabelText), getByPlaceholderText = js.Any.fromFunction3(getByPlaceholderText), getByRole = js.Any.fromFunction3(getByRole), getByTestId = js.Any.fromFunction3(getByTestId), getByText = js.Any.fromFunction3(getByText), getByTitle = js.Any.fromFunction3(getByTitle), queryAllByAltText = js.Any.fromFunction3(queryAllByAltText), queryAllByDisplayValue = js.Any.fromFunction3(queryAllByDisplayValue), queryAllByLabelText = js.Any.fromFunction3(queryAllByLabelText), queryAllByPlaceholderText = js.Any.fromFunction3(queryAllByPlaceholderText), queryAllByRole = js.Any.fromFunction3(queryAllByRole), queryAllByTestId = js.Any.fromFunction3(queryAllByTestId), queryAllByText = js.Any.fromFunction3(queryAllByText), queryAllByTitle = js.Any.fromFunction3(queryAllByTitle), queryByAltText = js.Any.fromFunction3(queryByAltText), queryByDisplayValue = js.Any.fromFunction3(queryByDisplayValue), queryByLabelText = js.Any.fromFunction3(queryByLabelText), queryByPlaceholderText = js.Any.fromFunction3(queryByPlaceholderText), queryByRole = js.Any.fromFunction3(queryByRole), queryByTestId = js.Any.fromFunction3(queryByTestId), queryByText = js.Any.fromFunction3(queryByText), queryByTitle = js.Any.fromFunction3(queryByTitle))
+      val __obj = js.Dynamic.literal(findAllByAltText = js.Any.fromFunction1(findAllByAltText), findAllByDisplayValue = js.Any.fromFunction1(findAllByDisplayValue), findAllByLabelText = js.Any.fromFunction1(findAllByLabelText), findAllByPlaceholderText = js.Any.fromFunction1(findAllByPlaceholderText), findAllByRole = js.Any.fromFunction1(findAllByRole), findAllByTestId = js.Any.fromFunction1(findAllByTestId), findAllByText = js.Any.fromFunction1(findAllByText), findAllByTitle = js.Any.fromFunction1(findAllByTitle), findByAltText = js.Any.fromFunction1(findByAltText), findByDisplayValue = js.Any.fromFunction1(findByDisplayValue), findByLabelText = js.Any.fromFunction1(findByLabelText), findByPlaceholderText = js.Any.fromFunction1(findByPlaceholderText), findByRole = js.Any.fromFunction1(findByRole), findByTestId = js.Any.fromFunction1(findByTestId), findByText = js.Any.fromFunction1(findByText), findByTitle = js.Any.fromFunction1(findByTitle), getAllByAltText = js.Any.fromFunction1(getAllByAltText), getAllByDisplayValue = js.Any.fromFunction1(getAllByDisplayValue), getAllByLabelText = js.Any.fromFunction1(getAllByLabelText), getAllByPlaceholderText = js.Any.fromFunction1(getAllByPlaceholderText), getAllByRole = js.Any.fromFunction1(getAllByRole), getAllByTestId = js.Any.fromFunction1(getAllByTestId), getAllByText = js.Any.fromFunction1(getAllByText), getAllByTitle = js.Any.fromFunction1(getAllByTitle), getByAltText = js.Any.fromFunction1(getByAltText), getByDisplayValue = js.Any.fromFunction1(getByDisplayValue), getByLabelText = js.Any.fromFunction1(getByLabelText), getByPlaceholderText = js.Any.fromFunction1(getByPlaceholderText), getByRole = js.Any.fromFunction1(getByRole), getByTestId = js.Any.fromFunction1(getByTestId), getByText = js.Any.fromFunction1(getByText), getByTitle = js.Any.fromFunction1(getByTitle), queryAllByAltText = js.Any.fromFunction1(queryAllByAltText), queryAllByDisplayValue = js.Any.fromFunction1(queryAllByDisplayValue), queryAllByLabelText = js.Any.fromFunction1(queryAllByLabelText), queryAllByPlaceholderText = js.Any.fromFunction1(queryAllByPlaceholderText), queryAllByRole = js.Any.fromFunction1(queryAllByRole), queryAllByTestId = js.Any.fromFunction1(queryAllByTestId), queryAllByText = js.Any.fromFunction1(queryAllByText), queryAllByTitle = js.Any.fromFunction1(queryAllByTitle), queryByAltText = js.Any.fromFunction1(queryByAltText), queryByDisplayValue = js.Any.fromFunction1(queryByDisplayValue), queryByLabelText = js.Any.fromFunction1(queryByLabelText), queryByPlaceholderText = js.Any.fromFunction1(queryByPlaceholderText), queryByRole = js.Any.fromFunction1(queryByRole), queryByTestId = js.Any.fromFunction1(queryByTestId), queryByText = js.Any.fromFunction1(queryByText), queryByTitle = js.Any.fromFunction1(queryByTitle))
       __obj.asInstanceOf[Typeofqueries]
     }
     
     extension [Self <: Typeofqueries](x: Self) {
       
-      inline def setFindAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction4(value))
+      inline def setFindAllByAltText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction4(value))
+      inline def setFindAllByDisplayValue(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setFindAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction4(value))
+      inline def setFindAllByLabelText(value: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction4(value))
+      inline def setFindAllByPlaceholderText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction4(value))
+      inline def setFindAllByRole(value: Parameters[FindAllByRole_[Any]] => ReturnType[FindAllByRole_[Any]]): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction1(value))
       
-      inline def setFindAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction4(value))
+      inline def setFindAllByTestId(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setFindAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByText", js.Any.fromFunction4(value))
+      inline def setFindAllByText(value: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction4(value))
+      inline def setFindAllByTitle(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setFindByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByAltText", js.Any.fromFunction4(value))
+      inline def setFindByAltText(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByAltText", js.Any.fromFunction1(value))
       
-      inline def setFindByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction4(value))
+      inline def setFindByDisplayValue(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setFindByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction4(value))
+      inline def setFindByLabelText(value: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction1(value))
       
-      inline def setFindByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction4(value))
+      inline def setFindByPlaceholderText(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setFindByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByRole", js.Any.fromFunction4(value))
+      inline def setFindByRole(value: Parameters[FindByRole_[Any]] => ReturnType[FindByRole_[Any]]): Self = StObject.set(x, "findByRole", js.Any.fromFunction1(value))
       
-      inline def setFindByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByTestId", js.Any.fromFunction4(value))
+      inline def setFindByTestId(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByTestId", js.Any.fromFunction1(value))
       
-      inline def setFindByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByText", js.Any.fromFunction4(value))
+      inline def setFindByText(value: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByText", js.Any.fromFunction1(value))
       
-      inline def setFindByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByTitle", js.Any.fromFunction4(value))
+      inline def setFindByTitle(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByTitle", js.Any.fromFunction1(value))
       
-      inline def setGetAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction3(value))
+      inline def setGetAllByAltText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction3(value))
+      inline def setGetAllByDisplayValue(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setGetAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction3(value))
+      inline def setGetAllByLabelText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setGetAllByPlaceholderText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction3(value))
+      inline def setGetAllByRole(value: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction1(value))
       
-      inline def setGetAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction3(value))
+      inline def setGetAllByTestId(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setGetAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByText", js.Any.fromFunction3(value))
+      inline def setGetAllByText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction3(value))
+      inline def setGetAllByTitle(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setGetByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByAltText", js.Any.fromFunction3(value))
+      inline def setGetByAltText(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByAltText", js.Any.fromFunction1(value))
       
-      inline def setGetByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction3(value))
+      inline def setGetByDisplayValue(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setGetByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction3(value))
+      inline def setGetByLabelText(value: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction1(value))
       
-      inline def setGetByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setGetByPlaceholderText(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setGetByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByRole", js.Any.fromFunction3(value))
+      inline def setGetByRole(value: Parameters[GetByRole_[Any]] => ReturnType[GetByRole_[Any]]): Self = StObject.set(x, "getByRole", js.Any.fromFunction1(value))
       
-      inline def setGetByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByTestId", js.Any.fromFunction3(value))
+      inline def setGetByTestId(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTestId", js.Any.fromFunction1(value))
       
-      inline def setGetByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByText", js.Any.fromFunction3(value))
+      inline def setGetByText(value: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByText", js.Any.fromFunction1(value))
       
-      inline def setGetByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByTitle", js.Any.fromFunction3(value))
+      inline def setGetByTitle(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTitle", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction3(value))
+      inline def setQueryAllByAltText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction3(value))
+      inline def setQueryAllByDisplayValue(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction3(value))
+      inline def setQueryAllByLabelText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setQueryAllByPlaceholderText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction3(value))
+      inline def setQueryAllByRole(value: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction3(value))
+      inline def setQueryAllByTestId(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction3(value))
+      inline def setQueryAllByText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction3(value))
+      inline def setQueryAllByTitle(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setQueryByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction3(value))
+      inline def setQueryByAltText(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction1(value))
       
-      inline def setQueryByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction3(value))
+      inline def setQueryByDisplayValue(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setQueryByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction3(value))
+      inline def setQueryByLabelText(value: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction1(value))
       
-      inline def setQueryByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setQueryByPlaceholderText(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setQueryByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByRole", js.Any.fromFunction3(value))
+      inline def setQueryByRole(value: Parameters[QueryByRole_[Any]] => ReturnType[QueryByRole_[Any]]): Self = StObject.set(x, "queryByRole", js.Any.fromFunction1(value))
       
-      inline def setQueryByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction3(value))
+      inline def setQueryByTestId(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction1(value))
       
-      inline def setQueryByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByText", js.Any.fromFunction3(value))
+      inline def setQueryByText(value: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByText", js.Any.fromFunction1(value))
       
-      inline def setQueryByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction3(value))
+      inline def setQueryByTitle(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction1(value))
     }
   }
 }

@@ -1,6 +1,5 @@
 package typings.pluralize
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object mod {
     * @param replacement
     */
   inline def addPluralRule(rule: String, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPluralRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addPluralRule(rule: RegExp, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPluralRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPluralRule(rule: js.RegExp, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPluralRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Add a singularization rule to the collection.
@@ -40,7 +39,7 @@ object mod {
     * @param replacement
     */
   inline def addSingularRule(rule: String, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSingularRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addSingularRule(rule: RegExp, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSingularRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addSingularRule(rule: js.RegExp, replacemant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSingularRule")(rule.asInstanceOf[js.Any], replacemant.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Add an uncountable word rule.
@@ -48,7 +47,7 @@ object mod {
     * @param word
     */
   inline def addUncountableRule(word: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUncountableRule")(word.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addUncountableRule(word: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUncountableRule")(word.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addUncountableRule(word: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUncountableRule")(word.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Test if provided word is plural.

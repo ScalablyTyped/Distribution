@@ -13,7 +13,7 @@ object Management {
     
     @JSGlobal("Windows.Management.Core.ApplicationDataManager")
     @js.native
-    class ApplicationDataManager ()
+    open class ApplicationDataManager ()
       extends StObject
          with IApplicationDataManager
     /* static members */
@@ -57,7 +57,7 @@ object Management {
     
     @JSGlobal("Windows.Management.Deployment.DeploymentResult")
     @js.native
-    class DeploymentResult ()
+    open class DeploymentResult ()
       extends StObject
          with typings.winrt.Windows.Management.Deployment.DeploymentResult {
       
@@ -87,7 +87,7 @@ object Management {
     
     @JSGlobal("Windows.Management.Deployment.PackageManager")
     @js.native
-    class PackageManager ()
+    open class PackageManager ()
       extends StObject
          with typings.winrt.Windows.Management.Deployment.PackageManager
     
@@ -109,7 +109,7 @@ object Management {
     
     @JSGlobal("Windows.Management.Deployment.PackageUserInformation")
     @js.native
-    class PackageUserInformation ()
+    open class PackageUserInformation ()
       extends StObject
          with typings.winrt.Windows.Management.Deployment.PackageUserInformation {
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for csvrow
 
-Typings are for version 0.1
+Typings are for version 1.0
 
 ## Library description:
 parse a CSV row string
@@ -10,10 +10,10 @@ parse a CSV row string
 | ------------------ | :-------------: |
 | Full name          | csvrow |
 | Keywords           | csv, parse |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 9381 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1184.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/trentm/node-csvrow#readme)

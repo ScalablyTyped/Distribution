@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.UI")
 @js.native
-/* private */ class UI ()
+/* private */ open class UI ()
   extends StObject
      with typings.activexInfopath.InfoPath.UI

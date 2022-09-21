@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "List")
 @js.native
-class List () extends default
+open class List () extends default
 /* static members */
 object List {
   

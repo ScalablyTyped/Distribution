@@ -31,7 +31,7 @@ trait ICameraInput[TCamera /* <: Camera */] extends StObject {
   def detachControl(): Unit = js.native
   
   /**
-    * Gets the class name of the current intput.
+    * Gets the class name of the current input.
     * @returns the class name
     */
   def getClassName(): String = js.native

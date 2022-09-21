@@ -48,7 +48,7 @@ object anon {
   
   trait Contains extends StObject {
     
-    var contains: js.UndefOr[js.Any] = js.undefined
+    var contains: js.UndefOr[Any] = js.undefined
   }
   object Contains {
     
@@ -59,7 +59,7 @@ object anon {
     
     extension [Self <: Contains](x: Self) {
       
-      inline def setContains(value: js.Any): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: Any): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
       inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     }
@@ -86,11 +86,11 @@ object anon {
       */
     var defaultResolver: js.UndefOr[
         js.Function4[
-          /* values */ js.Array[js.Any], 
+          /* values */ js.Array[Any], 
           /* path */ js.Array[String], 
           /* mergeSchemas */ MergeSchemas, 
           /* options */ Options_[Schema], 
-          js.Any
+          Any
         ]
       ] = js.undefined
   }
@@ -104,7 +104,7 @@ object anon {
     extension [Self <: DefaultResolver[?], Schema /* <: JSONSchema */](x: Self & DefaultResolver[Schema]) {
       
       inline def setDefaultResolver(
-        value: (/* values */ js.Array[js.Any], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => js.Any
+        value: (/* values */ js.Array[Any], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => Any
       ): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction4(value))
       
       inline def setDefaultResolverUndefined: Self = StObject.set(x, "defaultResolver", js.undefined)
@@ -113,7 +113,7 @@ object anon {
   
   trait Examples extends StObject {
     
-    var examples: js.UndefOr[js.Any] = js.undefined
+    var examples: js.UndefOr[Any] = js.undefined
   }
   object Examples {
     
@@ -124,7 +124,7 @@ object anon {
     
     extension [Self <: Examples](x: Self) {
       
-      inline def setExamples(value: js.Any): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: Any): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
       inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     }
@@ -133,7 +133,7 @@ object anon {
   trait Id extends StObject {
     
     @JSName("$id")
-    var $id: js.UndefOr[js.Any] = js.undefined
+    var $id: js.UndefOr[Any] = js.undefined
   }
   object Id {
     
@@ -144,7 +144,7 @@ object anon {
     
     extension [Self <: Id](x: Self) {
       
-      inline def set$id(value: js.Any): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: Any): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
       inline def set$idUndefined: Self = StObject.set(x, "$id", js.undefined)
     }
@@ -169,7 +169,7 @@ object anon {
   
   trait PropertyNames extends StObject {
     
-    var propertyNames: js.UndefOr[js.Any] = js.undefined
+    var propertyNames: js.UndefOr[Any] = js.undefined
   }
   object PropertyNames {
     
@@ -180,7 +180,7 @@ object anon {
     
     extension [Self <: PropertyNames](x: Self) {
       
-      inline def setPropertyNames(value: js.Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
+      inline def setPropertyNames(value: Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
       
       inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
     }

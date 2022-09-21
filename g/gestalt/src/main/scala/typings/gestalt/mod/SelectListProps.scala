@@ -1,8 +1,10 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.Value
+import typings.gestalt.anon.ValueString
+import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
+import typings.gestalt.gestaltStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +21,11 @@ trait SelectListProps extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
+  var labelDisplay: js.UndefOr[visible | hidden] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
   
-  def onChange(args: Value): Unit
+  def onChange(args: ValueString): Unit
   
   var options: js.Array[typings.gestalt.anon.Label]
   
@@ -33,7 +37,7 @@ trait SelectListProps extends StObject {
 }
 object SelectListProps {
   
-  inline def apply(id: String, onChange: Value => Unit, options: js.Array[typings.gestalt.anon.Label]): SelectListProps = {
+  inline def apply(id: String, onChange: ValueString => Unit, options: js.Array[typings.gestalt.anon.Label]): SelectListProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListProps]
   }
@@ -56,17 +60,21 @@ object SelectListProps {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
+    inline def setLabelDisplay(value: visible | hidden): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDisplayUndefined: Self = StObject.set(x, "labelDisplay", js.undefined)
+    
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ValueString => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOptions(value: js.Array[typings.gestalt.anon.Label]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: typings.gestalt.anon.Label*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: typings.gestalt.anon.Label*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

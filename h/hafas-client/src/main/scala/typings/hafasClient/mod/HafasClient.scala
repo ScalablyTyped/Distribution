@@ -14,8 +14,12 @@ trait HafasClient extends StObject {
     */
   def arrivals(station: String): js.Promise[js.Array[Alternative]] = js.native
   def arrivals(station: String, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def arrivals(station: Location): js.Promise[js.Array[Alternative]] = js.native
+  def arrivals(station: Location, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
   def arrivals(station: Station): js.Promise[js.Array[Alternative]] = js.native
   def arrivals(station: Station, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def arrivals(station: Stop): js.Promise[js.Array[Alternative]] = js.native
+  def arrivals(station: Stop, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
   
   /**
     * Retrieves departures
@@ -24,8 +28,12 @@ trait HafasClient extends StObject {
     */
   def departures(station: String): js.Promise[js.Array[Alternative]] = js.native
   def departures(station: String, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def departures(station: Location): js.Promise[js.Array[Alternative]] = js.native
+  def departures(station: Location, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
   def departures(station: Station): js.Promise[js.Array[Alternative]] = js.native
   def departures(station: Station, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def departures(station: Stop): js.Promise[js.Array[Alternative]] = js.native
+  def departures(station: Stop, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
   
   /**
     * Retrieves journeys
@@ -39,18 +47,58 @@ trait HafasClient extends StObject {
   def journeys(from: String, to: Location, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: String, to: Station): js.Promise[Journeys] = js.native
   def journeys(from: String, to: Station, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: String, to: Stop): js.Promise[Journeys] = js.native
+  def journeys(from: String, to: Stop, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: String): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: String, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: Location): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: Location, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: Station): js.Promise[Journeys] = js.native
   def journeys(from: Location, to: Station, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Location, to: Stop): js.Promise[Journeys] = js.native
+  def journeys(from: Location, to: Stop, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: String): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: String, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: Location): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: Location, options: JourneysOptions): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: Station): js.Promise[Journeys] = js.native
   def journeys(from: Station, to: Station, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Station, to: Stop): js.Promise[Journeys] = js.native
+  def journeys(from: Station, to: Stop, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: String): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: String, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Location): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Location, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Station): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Station, options: JourneysOptions): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Stop): js.Promise[Journeys] = js.native
+  def journeys(from: Stop, to: Stop, options: JourneysOptions): js.Promise[Journeys] = js.native
+  
+  /**
+    * Retrieves journeys from trip id to station
+    * @param fromTripId id of trip
+    * @param previousStopover previous stopover
+    * @param to uid of station or Station or Stop
+    * @param options options
+    */
+  var journeysFromTrip: js.UndefOr[
+    js.Function4[
+      /* fromTripId */ String, 
+      /* previousStopover */ StopOver, 
+      /* to */ String | Station | Stop | Location, 
+      /* opt */ js.UndefOr[JourneysFromTripOptions], 
+      js.Promise[js.Array[Journey]]
+    ]
+  ] = js.native
+  
+  /**
+    * Fetches all lines known to the HAFAS endpoint
+    * @param query string
+    * @param opt LinesOptions
+    */
+  var lines: js.UndefOr[
+    js.Function2[/* query */ String, /* opt */ js.UndefOr[LinesOptions], js.Promise[js.Array[Line]]]
+  ] = js.native
   
   /**
     * Retrieves locations or stops
@@ -108,12 +156,29 @@ trait HafasClient extends StObject {
   ] = js.native
   
   /**
+    * Fetches all remarks known to the HAFAS endpoint
+    * @param opt RemarksOptions
+    */
+  var remarks: js.UndefOr[
+    js.Function1[/* opt */ js.UndefOr[RemarksOptions], js.Promise[js.Array[Warning]]]
+  ] = js.native
+  
+  /**
+    * Fetches meta information from the HAFAS endpoint
+    * @param opt ServerOptions
+    */
+  def serverInfo(): js.Promise[ServerInfo] = js.native
+  def serverInfo(opt: ServerOptions): js.Promise[ServerInfo] = js.native
+  
+  /**
     * Retrieves information about a stop
     * @param id uid of station
     * @param options options for search
     */
   def stop(id: String): js.Promise[Station | Stop | Location] = js.native
   def stop(id: String, options: StopOptions): js.Promise[Station | Stop | Location] = js.native
+  def stop(id: Stop): js.Promise[Station | Stop | Location] = js.native
+  def stop(id: Stop, options: StopOptions): js.Promise[Station | Stop | Location] = js.native
   
   /**
     * Refetch information about a trip
@@ -127,6 +192,19 @@ trait HafasClient extends StObject {
       /* name */ String, 
       /* options */ js.UndefOr[TripOptions], 
       js.Promise[Trip]
+    ]
+  ] = js.native
+  
+  /**
+    * Retrieves trips by name.
+    * @param lineNameOrFahrtNr string
+    * @param options options for search
+    */
+  var tripsByName: js.UndefOr[
+    js.Function2[
+      /* lineNameOrFahrtNr */ String, 
+      /* options */ js.UndefOr[TripsByNameOptions], 
+      js.Promise[js.Array[Trip]]
     ]
   ] = js.native
 }

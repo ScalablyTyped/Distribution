@@ -18,6 +18,8 @@ trait UnlayerOptions extends StObject {
   
   val designTagsConfig: js.UndefOr[DesignTagConfig] = js.undefined
   
+  val displayConditions: js.UndefOr[js.Array[DisplayCondition]] = js.undefined
+  
   val displayMode: js.UndefOr[DisplayMode] = js.undefined
   
   val editor: js.UndefOr[EditorConfig] = js.undefined
@@ -33,6 +35,8 @@ trait UnlayerOptions extends StObject {
   val projectId: js.UndefOr[Double] = js.undefined
   
   val safeHtml: js.UndefOr[Boolean] = js.undefined
+  
+  val specialLinks: js.UndefOr[js.Array[SpecialLink]] = js.undefined
   
   val tools: js.UndefOr[ToolsConfig] = js.undefined
   
@@ -57,19 +61,19 @@ object UnlayerOptions {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: js.Object*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: js.Object*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setCustomCSS(value: js.Array[String]): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
     
     inline def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
     
-    inline def setCustomCSSVarargs(value: String*): Self = StObject.set(x, "customCSS", js.Array(value :_*))
+    inline def setCustomCSSVarargs(value: String*): Self = StObject.set(x, "customCSS", js.Array(value*))
     
     inline def setCustomJS(value: js.Array[String]): Self = StObject.set(x, "customJS", value.asInstanceOf[js.Any])
     
     inline def setCustomJSUndefined: Self = StObject.set(x, "customJS", js.undefined)
     
-    inline def setCustomJSVarargs(value: String*): Self = StObject.set(x, "customJS", js.Array(value :_*))
+    inline def setCustomJSVarargs(value: String*): Self = StObject.set(x, "customJS", js.Array(value*))
     
     inline def setDesignTags(value: StringList): Self = StObject.set(x, "designTags", value.asInstanceOf[js.Any])
     
@@ -78,6 +82,12 @@ object UnlayerOptions {
     inline def setDesignTagsConfigUndefined: Self = StObject.set(x, "designTagsConfig", js.undefined)
     
     inline def setDesignTagsUndefined: Self = StObject.set(x, "designTags", js.undefined)
+    
+    inline def setDisplayConditions(value: js.Array[DisplayCondition]): Self = StObject.set(x, "displayConditions", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayConditionsUndefined: Self = StObject.set(x, "displayConditions", js.undefined)
+    
+    inline def setDisplayConditionsVarargs(value: DisplayCondition*): Self = StObject.set(x, "displayConditions", js.Array(value*))
     
     inline def setDisplayMode(value: DisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
@@ -103,7 +113,7 @@ object UnlayerOptions {
     
     inline def setMergeTagsUndefined: Self = StObject.set(x, "mergeTags", js.undefined)
     
-    inline def setMergeTagsVarargs(value: MergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
+    inline def setMergeTagsVarargs(value: MergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value*))
     
     inline def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
@@ -112,6 +122,12 @@ object UnlayerOptions {
     inline def setSafeHtml(value: Boolean): Self = StObject.set(x, "safeHtml", value.asInstanceOf[js.Any])
     
     inline def setSafeHtmlUndefined: Self = StObject.set(x, "safeHtml", js.undefined)
+    
+    inline def setSpecialLinks(value: js.Array[SpecialLink]): Self = StObject.set(x, "specialLinks", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialLinksUndefined: Self = StObject.set(x, "specialLinks", js.undefined)
+    
+    inline def setSpecialLinksVarargs(value: SpecialLink*): Self = StObject.set(x, "specialLinks", js.Array(value*))
     
     inline def setTools(value: ToolsConfig): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     

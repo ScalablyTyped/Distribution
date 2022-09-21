@@ -9,7 +9,7 @@ trait StartImageScanRequest extends StObject {
   var imageId: ImageIdentifier
   
   /**
-    * The AWS account ID associated with the registry that contains the repository in which to start an image scan request. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry that contains the repository in which to start an image scan request. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

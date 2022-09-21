@@ -10,10 +10,10 @@ Auth module for SocketCluster
 | ------------------ | :-------------: |
 | Full name          | sc-auth |
 | Keywords           | Auth, SocketCluster, JWT |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 1055715 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 45802.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/sc-auth)

@@ -10,10 +10,10 @@ A general purpose library for building credit card forms, validating inputs and 
 | ------------------ | :-------------: |
 | Full name          | payment |
 | Keywords           | payment, cc, card |
-| # releases         | 2 |
-| # dependents       | 57 |
-| # downloads        | 2441619 |
-| # stars            | 7 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 240301.66666666666 |
+| # stars            | 512.0 |
 
 ## Links
 - [Homepage](https://github.com/jessepollak/payment#readme)

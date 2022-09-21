@@ -6,21 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Y extends StObject {
   
-  var x: Double
+  var X: Double
   
-  var y: Double
+  var Y: Double
+  
+  var Z: Double
+  
+  var max: Double
 }
 object Y {
   
-  inline def apply(x: Double, y: Double): Y = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(X: Double, Y: Double, Z: Double, max: Double): Y = {
+    val __obj = js.Dynamic.literal(X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[Y]
   }
   
   extension [Self <: Y](x: Self) {
     
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    
+    inline def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
   }
 }

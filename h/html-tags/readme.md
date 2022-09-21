@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-tags
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 List of standard HTML tags
@@ -10,10 +10,10 @@ List of standard HTML tags
 | ------------------ | :-------------: |
 | Full name          | html-tags |
 | Keywords           | html, html5, tags, elements, list, whatwg, w3c, void, self-closing |
-| # releases         | 3 |
-| # dependents       | 101 |
-| # downloads        | 168919206 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5648024E7 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/html-tags#readme)

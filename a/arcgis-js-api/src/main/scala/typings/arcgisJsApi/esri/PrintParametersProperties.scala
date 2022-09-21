@@ -9,28 +9,28 @@ trait PrintParametersProperties extends StObject {
   /**
     * Additional parameters for the print service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#extraParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#extraParameters)
     */
-  var extraParameters: js.UndefOr[js.Any] = js.undefined
+  var extraParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * Specify the output spatial reference for the printout.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * Defines the layout template used for the printed map.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#template)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#template)
     */
   var template: js.UndefOr[PrintTemplateProperties] = js.undefined
   
   /**
     * The view to print.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#view)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#view)
     */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
@@ -43,7 +43,7 @@ object PrintParametersProperties {
   
   extension [Self <: PrintParametersProperties](x: Self) {
     
-    inline def setExtraParameters(value: js.Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
+    inline def setExtraParameters(value: Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
     
     inline def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
     

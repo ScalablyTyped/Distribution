@@ -2,7 +2,9 @@ package typings.phoenixLiveView
 
 import typings.phoenix.mod.Socket
 import typings.std.Event
+import typings.std.File
 import typings.std.HTMLElement
+import typings.std.HTMLInputElement
 import typings.std.Node
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -23,30 +25,27 @@ object mod {
     
     inline def canPushState(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canPushState")().asInstanceOf[Boolean]
     
-    inline def dropLocal(namespace: String, subkey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dropLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def dropLocal(namespace: String, subkey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dropLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def fetchPage(href: String, callback: js.Function2[/* status */ Double, /* resp */ js.UndefOr[String], js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchPage")(href.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def fetchPage(href: String, callback: js.Function2[/* status */ Double, /* resp */ js.UndefOr[String], Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchPage")(href.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def getCookie(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookie")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def getHashTargetEl(hash: js.Any): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashTargetEl")(hash.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+    inline def getHashTargetEl(maybeHash: Any): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashTargetEl")(maybeHash.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
-    inline def getLocal(namespace: String, subkey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getLocal(namespace: String, subkey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def localKey(namespace: String, subkey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localKey")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def pushState(kind: js.Any, meta: js.Any, to: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(kind.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def pushState(kind: String, meta: js.Object, to: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(kind.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def redirect(toURL: String, flash: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(toURL.asInstanceOf[js.Any], flash.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def redirect(toURL: String, flash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(toURL.asInstanceOf[js.Any], flash.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setCookie(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def updateLocal(
-      namespace: String,
-      subkey: String,
-      initial: js.Any,
-      func: js.Function1[/* current */ js.Any, js.Any]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def updateCurrentState(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCurrentState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def updateLocal(namespace: String, subkey: String, initial: Any, func: js.Function1[/* current */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocal")(namespace.asInstanceOf[js.Any], subkey.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   object DOM {
@@ -59,9 +58,11 @@ object mod {
     
     inline def byId(id: String): HTMLElement | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("byId")(id.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Unit]
     
-    inline def cleanChildNodes(container: js.Any, phxUpdate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanChildNodes")(container.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def childNodeLength(html: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodeLength")(html.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def cloneNode(node: Node, html: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(node.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[Node]
+    inline def cleanChildNodes(container: Node, phxUpdate: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanChildNodes")(container.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def cloneNode(node: Node, html: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(node.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[Node]
     
     inline def copyPrivates(target: HTMLElement, source: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPrivates")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -72,8 +73,8 @@ object mod {
       defaultDebounce: String,
       phxThrottle: String,
       defaultThrottle: String,
-      callback: js.Function0[js.Any]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      callback: js.Function0[Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def debounce(
       el: HTMLElement,
       event: Event,
@@ -81,8 +82,8 @@ object mod {
       defaultDebounce: String,
       phxThrottle: String,
       defaultThrottle: Null,
-      callback: js.Function0[js.Any]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      callback: js.Function0[Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def debounce(
       el: HTMLElement,
       event: Event,
@@ -90,8 +91,8 @@ object mod {
       defaultDebounce: Null,
       phxThrottle: String,
       defaultThrottle: String,
-      callback: js.Function0[js.Any]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      callback: js.Function0[Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def debounce(
       el: HTMLElement,
       event: Event,
@@ -99,15 +100,17 @@ object mod {
       defaultDebounce: Null,
       phxThrottle: String,
       defaultThrottle: Null,
-      callback: js.Function0[js.Any]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      callback: js.Function0[Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], phxDebounce.asInstanceOf[js.Any], defaultDebounce.asInstanceOf[js.Any], phxThrottle.asInstanceOf[js.Any], defaultThrottle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def deletePrivate(el: HTMLElement, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePrivate")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def discardError(container: HTMLElement, el: HTMLElement, phxFeedbackFor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("discardError")(container.asInstanceOf[js.Any], el.asInstanceOf[js.Any], phxFeedbackFor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def discardError(container: Node, el: HTMLElement, phxFeedbackFor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("discardError")(container.asInstanceOf[js.Any], el.asInstanceOf[js.Any], phxFeedbackFor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def dispatchEvent(target: Node, eventString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(target.asInstanceOf[js.Any], eventString.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def dispatchEvent(target: Node, eventString: String, detail: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(target.asInstanceOf[js.Any], eventString.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def filterWithinSameLiveView(nodes: js.Array[Node], parent: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filterWithinSameLiveView")(nodes.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def findComponentNode(node: Node, cid: Double): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("findComponentNode")(node.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
@@ -117,18 +120,30 @@ object mod {
     
     inline def findPhxChildrenInFragment(html: String, parentId: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhxChildrenInFragment")(html.asInstanceOf[js.Any], parentId.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
+    inline def findUploadInputs(node: Node): Unit | js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUploadInputs")(node.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Array[Any]]
+    
+    inline def hasSelectionRange(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSelectionRange")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     inline def incCycle(el: HTMLElement, key: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("incCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def incCycle(el: HTMLElement, key: String, trigger: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("incCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], trigger.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def incCycle(el: HTMLElement, key: String, trigger: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("incCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], trigger.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def isFormInput(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormInput")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
+    inline def isIgnored(el: HTMLElement, phxUpdate: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIgnored")(el.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
     inline def isNowTriggerFormExternal(el: HTMLElement, phxTriggerExternal: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNowTriggerFormExternal")(el.asInstanceOf[js.Any], phxTriggerExternal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def isPhxChild(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhxChild")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isPhxChild(el: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhxChild")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isPhxUpdate(el: HTMLElement, phxUpdate: js.Any, updateTypes: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPhxUpdate")(el.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any], updateTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isPhxDestroyed(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhxDestroyed")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isPhxUpdate(el: Node, phxUpdate: String, updateTypes: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPhxUpdate")(el.asInstanceOf[js.Any], phxUpdate.asInstanceOf[js.Any], updateTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def isTextualInput(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextualInput")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isUploadInput(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUploadInput")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def markPhxChildDestroyed(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markPhxChildDestroyed")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def mergeAttrs(target: HTMLElement, source: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def mergeAttrs(target: HTMLElement, source: HTMLElement, exclude: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -137,7 +152,9 @@ object mod {
     
     inline def once(el: HTMLElement, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def putPrivate(el: HTMLElement, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("putPrivate")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `private`(el: HTMLElement, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("private")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def putPrivate(el: HTMLElement, key: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("putPrivate")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def putTitle(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("putTitle")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -145,20 +162,23 @@ object mod {
     
     inline def restoreFocus(focused: HTMLElement, selectionStart: Double, selectionEnd: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreFocus")(focused.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any], selectionEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def showError(inputEl: HTMLElement, phxFeedbackFor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showError")(inputEl.asInstanceOf[js.Any], phxFeedbackFor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def syncAttrsToProps(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncAttrsToProps")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def syncPendingRef(ref: Double, fromEl: HTMLElement, toEl: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPendingRef")(ref.asInstanceOf[js.Any], fromEl.asInstanceOf[js.Any], toEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def syncPendingRef(ref: Null, fromEl: HTMLElement, toEl: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPendingRef")(ref.asInstanceOf[js.Any], fromEl.asInstanceOf[js.Any], toEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def syncPendingRef(fromEl: HTMLElement, toEl: HTMLElement, disableWith: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPendingRef")(fromEl.asInstanceOf[js.Any], toEl.asInstanceOf[js.Any], disableWith.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def triggerCycle(el: HTMLElement, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def triggerCycle(el: HTMLElement, key: String, currentCycle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerCycle")(el.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentCycle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def withinSameLiveView(node: Node, parent: Node): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("withinSameLiveView")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("phoenix_live_view", "LiveSocket")
   @js.native
-  class LiveSocket protected () extends StObject {
+  open class LiveSocket protected () extends StObject {
     // phxSocket should be the Socket class (LiveSocket will use the constructor)
-    def this(url: String, phxSocket: js.Any, opts: SocketOptions) = this()
+    def this(url: String, phxSocket: Any, opts: SocketOptions) = this()
     
     // public
     def connect(): Unit = js.native
@@ -169,7 +189,7 @@ object mod {
     
     def disableProfiling(): Unit = js.native
     
-    def disconnect(callback: js.Any): Unit = js.native
+    def disconnect(callback: Any): Unit = js.native
     
     def enableDebug(): Unit = js.native
     
@@ -183,51 +203,76 @@ object mod {
     
     def isDebugEnabled(): Boolean = js.native
     
-    def isPhxView(el: HTMLElement): Boolean = js.native
-    
     def isProfileEnabled(): Boolean = js.native
   }
   
   @JSImport("phoenix_live_view", "Rendered")
   @js.native
-  class Rendered protected () extends StObject {
-    def this(viewId: String, rendered: js.Any) = this()
+  open class Rendered protected () extends StObject {
+    def this(viewId: String, rendered: Any) = this()
     
     // public
-    def componentCIDs(diff: js.Any): js.Array[Double] = js.native
+    def componentCIDs(diff: Any): js.Array[Double] = js.native
     
     def componentToString(cid: Double): String = js.native
     
-    def expandStatics(diff: js.Any): Unit = js.native
+    def doRecursiveMerge(target: Any, source: Any): Unit = js.native
     
-    def getComponent(diff: js.Any, cid: Double): js.Any = js.native
+    def getComponent(diff: Any, cid: Double): Any = js.native
     
-    def isComponentOnlyDiff(diff: js.Any): Boolean = js.native
+    def isComponentOnlyDiff(diff: Any): Boolean = js.native
     
-    def mergeDiff(diff: js.Any): Unit = js.native
+    def mergeDiff(diff: Any): Unit = js.native
     
     def parentViewId(): String = js.native
     
-    def pruneCIDs(cids: js.Array[Double]): js.Any = js.native
+    def pruneCIDs(cids: js.Array[Double]): Any = js.native
     
     def recursiveMerge(target: js.Object, source: js.Object): Unit = js.native
     
-    def recursiveToString(rendered: js.Any, components: js.Any): String = js.native
-    def recursiveToString(rendered: js.Any, components: js.Any, onlyCids: js.Array[Double]): String = js.native
+    def recursiveToString(rendered: Any, components: Any): String = js.native
+    def recursiveToString(rendered: Any, components: Any, onlyCids: js.Array[Double]): String = js.native
     
     def toString(onlyCids: js.Array[Double]): String = js.native
   }
   
+  @JSImport("phoenix_live_view", "UploadEntry")
+  @js.native
+  open class UploadEntry protected () extends StObject {
+    def this(fileEl: HTMLInputElement, file: LiveViewFile, view: View) = this()
+    
+    def cancel(): Unit = js.native
+    
+    def error(reason: String): Unit = js.native
+    
+    var file: LiveViewFile = js.native
+    
+    var fileEl: HTMLInputElement = js.native
+    
+    def isDone(): Boolean = js.native
+    
+    var meta: js.Object | Null = js.native
+    
+    def metadata(): js.Object | Null = js.native
+    
+    def progress(progress: Double): Unit = js.native
+    
+    var view: View = js.native
+  }
+  
   @JSImport("phoenix_live_view", "View")
   @js.native
-  class View protected () extends StObject {
-    def this(el: HTMLElement, liveSocket: LiveSocket, parentView: View, href: String, o: js.Any) = this()
+  open class View protected () extends StObject {
+    def this(el: HTMLElement, liveSocket: LiveSocket, parentView: View, href: String, flash: String) = this()
     
-    def ackJoin(child: js.Any): Unit = js.native
+    // public?
+    def ackJoin(child: View): Unit = js.native
     
     def addHook(el: HTMLElement): Unit = js.native
     
-    def applyJoinPatch(live_patch: js.Any, html: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
+    def applyDiff(`type`: String, rawDiff: Any, callback: Any): Any = js.native
+    
+    def applyJoinPatch(live_patch: Any, html: String, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
     
     def applyPendingUpdates(): Unit = js.native
     
@@ -235,14 +280,16 @@ object mod {
     
     def bindChannel(): Unit = js.native
     
-    def binding(kind: String): js.Any = js.native
+    def binding(kind: String): Any = js.native
+    
+    def cancelSubmit(formEl: HTMLElement): Unit = js.native
     
     def closestComponentID(): Double | Null = js.native
     def closestComponentID(targetCtx: js.Object): Double | Null = js.native
     
     def componentID(el: HTMLElement): Double | Null = js.native
     
-    def componentPatch(diff: js.Any, cid: Double): Boolean = js.native
+    def componentPatch(diff: Any, cid: Double): Boolean = js.native
     
     def connectParams(): js.Object = js.native
     
@@ -251,9 +298,9 @@ object mod {
     
     def destroyAllChildren(): Unit = js.native
     
-    def destroyDescendent(id: String): js.Any = js.native
+    def destroyDescendent(id: String): Any = js.native
     
-    def destroyHook(hook: ViewHookInterface): Unit = js.native
+    def destroyHook(hook: ViewHook): Unit = js.native
     
     def dispatchEvents(events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
     
@@ -267,13 +314,15 @@ object mod {
     
     def formsForRecovery(html: String): js.Array[HTMLElement] = js.native
     
-    def getChildById(id: String): js.Any = js.native
+    def getChildById(id: String): Any = js.native
     
-    def getDescendentByEl(el: HTMLElement): js.Any = js.native
+    def getDescendentByEl(el: HTMLElement): Any = js.native
     
-    def getHook(el: HTMLElement): ViewHookInterface = js.native
+    def getHook(el: HTMLElement): ViewHook = js.native
     
-    def getSession(): String = js.native
+    def getScheduledSubmit(formEl: HTMLElement): Any = js.native
+    
+    def getSession(): Any = js.native
     
     def getStatic(): String | Null = js.native
     
@@ -289,30 +338,29 @@ object mod {
     
     def isMain(): Boolean = js.native
     
-    def join(): js.Any = js.native
-    def join(callback: js.Function2[/* view */ this.type, /* joinCount */ Double, Unit]): js.Any = js.native
+    def join(callback: Any): Unit = js.native
     
-    def joinChild(el: HTMLElement): js.Any = js.native
+    def joinChild(el: HTMLElement): Any = js.native
     
     def joinNewChildren(): Unit = js.native
     
-    def log(kind: String, msgCallback: js.Any): Unit = js.native
+    def log(kind: String, msgCallback: Any): Unit = js.native
     
-    def maybePushComponentsDestroyed(destroyedCIDs: js.Array[Double]): js.Any = js.native
+    def maybePushComponentsDestroyed(destroyedCIDs: js.Array[Double]): Any = js.native
     
     def name(): String = js.native
     
     def onAllChildJoinsComplete(): Unit = js.native
     
-    def onChannel(event: String, cb: js.Function1[/* resp */ js.Any, Unit]): Unit = js.native
+    def onChannel(event: String, cb: js.Function1[/* resp */ Any, Unit]): Unit = js.native
     
-    def onClose(): Unit = js.native
+    def onClose(reason: String): Unit = js.native
     
-    def onError(reason: js.Any): Unit = js.native
+    def onError(reason: String): Unit = js.native
     
     def onJoin(resp: js.Object): Unit = js.native
     
-    def onJoinComplete(resp: js.Object, html: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
+    def onJoinComplete(resp: js.Object, html: String, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
     
     def onJoinError(resp: js.Object): Unit = js.native
     
@@ -324,34 +372,40 @@ object mod {
     
     def ownsElement(el: HTMLElement): Boolean = js.native
     
-    def performPatch(patch: js.Any, pruneCids: Boolean): Boolean = js.native
+    def performPatch(patch: Any, pruneCids: Boolean): Boolean = js.native
     
     def pushEvent(`type`: String, el: HTMLElement, targetCtx: js.Object, phxEvent: String, meta: js.Object): Unit = js.native
     def pushEvent(`type`: String, el: HTMLElement, targetCtx: Null, phxEvent: String, meta: js.Object): Unit = js.native
     
-    def pushFormRecovery(form: HTMLElement, callback: js.Any): Unit = js.native
+    def pushFileProgress(fileEl: HTMLElement, entryRef: String, progress: Double): Unit = js.native
+    def pushFileProgress(fileEl: HTMLElement, entryRef: String, progress: Double, onReply: js.Function0[Unit]): Unit = js.native
     
-    def pushFormSubmit(inputEl: HTMLElement, targetCtx: js.Object, kind: String, phxEvent: String, onReply: js.Any): Unit = js.native
-    def pushFormSubmit(inputEl: HTMLElement, targetCtx: Null, kind: String, phxEvent: String, onReply: js.Any): Unit = js.native
+    def pushFormRecovery(form: HTMLElement, callback: Any): Unit = js.native
     
-    def pushHookEvent(targetCtx: js.Object, event: String, payload: js.Object): Unit = js.native
-    def pushHookEvent(targetCtx: Null, event: String, payload: js.Object): Unit = js.native
+    def pushFormSubmit(formEl: HTMLElement, targetCtx: js.Object, phxEvent: String, onReply: Any): Unit = js.native
+    def pushFormSubmit(formEl: HTMLElement, targetCtx: Null, phxEvent: String, onReply: Any): Unit = js.native
     
-    def pushInput(inputEl: HTMLElement, targetCtx: js.Object, kind: String, phxEvent: String, callback: js.Any): Unit = js.native
-    def pushInput(inputEl: HTMLElement, targetCtx: Null, kind: String, phxEvent: String, callback: js.Any): Unit = js.native
+    def pushHookEvent(targetCtx: js.Object, event: String, payload: js.Object, onReply: Any): Unit = js.native
+    def pushHookEvent(targetCtx: Null, event: String, payload: js.Object, onReply: Any): Unit = js.native
+    
+    def pushInput(inputEl: HTMLElement, targetCtx: js.Object, phxEvent: String, callback: Any): Unit = js.native
+    def pushInput(inputEl: HTMLElement, targetCtx: Null, phxEvent: String, callback: Any): Unit = js.native
     
     def pushKey(keyElement: HTMLElement, targetCtx: js.Object, kind: String, phxEvent: String, meta: js.Object): Unit = js.native
     def pushKey(keyElement: HTMLElement, targetCtx: Null, kind: String, phxEvent: String, meta: js.Object): Unit = js.native
     
-    def pushLinkPatch(href: String, targetEl: HTMLElement, callback: js.Any): Unit = js.native
+    def pushLinkPatch(href: String, targetEl: HTMLElement, callback: Any): Unit = js.native
     
-    def pushWithReply(refGenerator: js.Any, event: String, payload: js.Object, onReply: js.Any): js.Any = js.native
+    def pushWithReply(refGenerator: Any, event: String, payload: js.Object): Any = js.native
+    def pushWithReply(refGenerator: Any, event: String, payload: js.Object, onReply: js.Function0[Unit]): Any = js.native
     
     def putRef(elements: js.Array[HTMLElement], event: String): js.Tuple2[Double, js.Array[HTMLElement]] = js.native
     
-    def renderContainer(diff: js.Any, kind: String): String = js.native
+    def renderContainer(diff: Any, kind: String): String = js.native
     
-    def setContainerClasses(classes: js.Any*): Unit = js.native
+    def scheduleSubmit(formEl: HTMLElement, ref: Double, callback: Any): Boolean = js.native
+    
+    def setContainerClasses(classes: String*): Unit = js.native
     
     def showLoader(): Unit = js.native
     def showLoader(timeout: Double): Unit = js.native
@@ -362,15 +416,20 @@ object mod {
     def targetComponentID(target: HTMLElement): Double | Null = js.native
     def targetComponentID(target: HTMLElement, targetCtx: js.Object): Double | Null = js.native
     
-    def triggerBeforeUpdate(fromEl: HTMLElement, toEl: HTMLElement): js.Any = js.native
+    def triggerAwaitingSubmit(formEl: HTMLElement): Unit = js.native
+    
+    def triggerBeforeUpdateHook(fromEl: HTMLElement, toEl: HTMLElement): Any = js.native
     
     def triggerReconnected(): Unit = js.native
     
-    def triggerUpdatedHook(hook: js.Any): Unit = js.native
-    
     def undoRefs(ref: Double): Unit = js.native
     
-    def update(diff: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
+    def update(diff: Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
+    
+    def uploadFiles(formEl: HTMLElement, targetCtx: js.Object, ref: Double, cid: Double, onComplete: Any): Unit = js.native
+    def uploadFiles(formEl: HTMLElement, targetCtx: Null, ref: Double, cid: Double, onComplete: Any): Unit = js.native
+    
+    def withinTargets(phxTarget: String, callback: Any): Unit = js.native
   }
   
   inline def debug(view: View, kind: String, msg: js.Object, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(view.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -415,7 +474,7 @@ object mod {
     
     var childrenOnly: js.UndefOr[Boolean] = js.undefined
     
-    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, js.Any]] = js.undefined
+    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, Any]] = js.undefined
     
     var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
@@ -444,7 +503,7 @@ object mod {
       
       inline def setChildrenOnlyUndefined: Self = StObject.set(x, "childrenOnly", js.undefined)
       
-      inline def setGetNodeKey(value: /* node */ Node => js.Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      inline def setGetNodeKey(value: /* node */ Node => Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
       inline def setGetNodeKeyUndefined: Self = StObject.set(x, "getNodeKey", js.undefined)
       
@@ -478,6 +537,54 @@ object mod {
     }
   }
   
+  @js.native
+  trait LiveViewFile
+    extends StObject
+       with File {
+    
+    var _phxRef: js.UndefOr[String] = js.native
+  }
+  
+  trait LiveViewUploaderMeta extends StObject {
+    
+    var last_modified: js.UndefOr[Double] = js.undefined
+    
+    var name: String
+    
+    var path: String
+    
+    var ref: String
+    
+    var size: Double
+    
+    var `type`: String
+  }
+  object LiveViewUploaderMeta {
+    
+    inline def apply(name: String, path: String, ref: String, size: Double, `type`: String): LiveViewUploaderMeta = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LiveViewUploaderMeta]
+    }
+    
+    extension [Self <: LiveViewUploaderMeta](x: Self) {
+      
+      inline def setLast_modified(value: Double): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
+      
+      inline def setLast_modifiedUndefined: Self = StObject.set(x, "last_modified", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait SocketOptions extends StObject {
     
     var bindingPrefix: js.UndefOr[String] = js.undefined
@@ -491,6 +598,8 @@ object mod {
     var loaderTimeout: js.UndefOr[Double] = js.undefined
     
     var params: js.UndefOr[js.Object] = js.undefined
+    
+    var uploaders: js.UndefOr[js.Object] = js.undefined
     
     var viewLogger: js.UndefOr[ViewLogger] = js.undefined
   }
@@ -527,14 +636,18 @@ object mod {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setViewLogger(value: (/* view */ View, /* kind */ String, /* msg */ js.Any, /* obj */ js.Any) => Unit): Self = StObject.set(x, "viewLogger", js.Any.fromFunction4(value))
+      inline def setUploaders(value: js.Object): Self = StObject.set(x, "uploaders", value.asInstanceOf[js.Any])
+      
+      inline def setUploadersUndefined: Self = StObject.set(x, "uploaders", js.undefined)
+      
+      inline def setViewLogger(value: (/* view */ View, /* kind */ String, /* msg */ Any, /* obj */ Any) => Unit): Self = StObject.set(x, "viewLogger", js.Any.fromFunction4(value))
       
       inline def setViewLoggerUndefined: Self = StObject.set(x, "viewLogger", js.undefined)
     }
   }
   
   @js.native
-  trait ViewHookInterface extends StObject {
+  trait ViewHook extends StObject {
     
     var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.native
     
@@ -552,18 +665,14 @@ object mod {
     var mounted: js.UndefOr[js.Function0[Unit]] = js.native
     
     def pushEvent(event: String, payload: js.Object): Unit = js.native
-    def pushEvent(
-      event: String,
-      payload: js.Object,
-      onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, js.Any]
-    ): Unit = js.native
+    def pushEvent(event: String, payload: js.Object, onReply: js.Function2[/* reply */ Any, /* ref */ Double, Any]): Unit = js.native
     
-    def pushEventTo(selectorOrTarget: js.Any, event: String, payload: js.Object): Unit = js.native
+    def pushEventTo(selectorOrTarget: Any, event: String, payload: js.Object): Unit = js.native
     def pushEventTo(
-      selectorOrTarget: js.Any,
+      selectorOrTarget: Any,
       event: String,
       payload: js.Object,
-      onReply: js.Function2[/* reply */ js.Any, /* ref */ Double, js.Any]
+      onReply: js.Function2[/* reply */ Any, /* ref */ Double, Any]
     ): Unit = js.native
     
     var reconnected: js.UndefOr[js.Function0[Unit]] = js.native
@@ -573,5 +682,5 @@ object mod {
     var viewName: String = js.native
   }
   
-  type ViewLogger = js.Function4[/* view */ View, /* kind */ String, /* msg */ js.Any, /* obj */ js.Any, Unit]
+  type ViewLogger = js.Function4[/* view */ View, /* kind */ String, /* msg */ Any, /* obj */ Any, Unit]
 }

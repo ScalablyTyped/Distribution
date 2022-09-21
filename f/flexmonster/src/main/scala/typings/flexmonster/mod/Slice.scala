@@ -40,13 +40,13 @@ object Slice {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Hierarchy*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Hierarchy*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDrillThrough(value: js.Array[String]): Self = StObject.set(x, "drillThrough", value.asInstanceOf[js.Any])
     
     inline def setDrillThroughUndefined: Self = StObject.set(x, "drillThrough", js.undefined)
     
-    inline def setDrillThroughVarargs(value: String*): Self = StObject.set(x, "drillThrough", js.Array(value :_*))
+    inline def setDrillThroughVarargs(value: String*): Self = StObject.set(x, "drillThrough", js.Array(value*))
     
     inline def setDrills(value: DrillAll): Self = StObject.set(x, "drills", value.asInstanceOf[js.Any])
     
@@ -60,25 +60,25 @@ object Slice {
     
     inline def setFlatOrderUndefined: Self = StObject.set(x, "flatOrder", js.undefined)
     
-    inline def setFlatOrderVarargs(value: String*): Self = StObject.set(x, "flatOrder", js.Array(value :_*))
+    inline def setFlatOrderVarargs(value: String*): Self = StObject.set(x, "flatOrder", js.Array(value*))
     
     inline def setMeasures(value: js.Array[Measure]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    inline def setMeasuresVarargs(value: Measure*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: Measure*): Self = StObject.set(x, "measures", js.Array(value*))
     
     inline def setReportFilters(value: js.Array[Hierarchy]): Self = StObject.set(x, "reportFilters", value.asInstanceOf[js.Any])
     
     inline def setReportFiltersUndefined: Self = StObject.set(x, "reportFilters", js.undefined)
     
-    inline def setReportFiltersVarargs(value: Hierarchy*): Self = StObject.set(x, "reportFilters", js.Array(value :_*))
+    inline def setReportFiltersVarargs(value: Hierarchy*): Self = StObject.set(x, "reportFilters", js.Array(value*))
     
     inline def setRows(value: js.Array[Hierarchy]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: Hierarchy*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Hierarchy*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSorting(value: Column): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     

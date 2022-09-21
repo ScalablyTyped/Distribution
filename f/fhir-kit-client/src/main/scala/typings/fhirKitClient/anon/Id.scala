@@ -1,6 +1,5 @@
 package typings.fhirKitClient.anon
 
-import typings.fhirKitClient.fhirKitClientStrings.Account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,12 @@ trait Id extends StObject {
   
   var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: Account
+  var resourceType: typings.fhirKitClient.mod.ResourceType
 }
 object Id {
   
-  inline def apply(id: String): Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "Account")
+  inline def apply(id: String, resourceType: typings.fhirKitClient.mod.ResourceType): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
@@ -34,6 +33,6 @@ object Id {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setResourceType(value: Account): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.mod.ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

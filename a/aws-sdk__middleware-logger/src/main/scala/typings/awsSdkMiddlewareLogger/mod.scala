@@ -16,16 +16,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getLoggerPlugin(options: js.Any): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getLoggerPlugin(options: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def loggerMiddleware(): js.Function2[
-    /* next */ InitializeHandler[js.Any, MetadataBearer], 
+    /* next */ InitializeHandler[Any, MetadataBearer], 
     /* context */ HandlerExecutionContext, 
-    InitializeHandler[js.Any, MetadataBearer]
+    InitializeHandler[Any, MetadataBearer]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("loggerMiddleware")().asInstanceOf[js.Function2[
-    /* next */ InitializeHandler[js.Any, MetadataBearer], 
+    /* next */ InitializeHandler[Any, MetadataBearer], 
     /* context */ HandlerExecutionContext, 
-    InitializeHandler[js.Any, MetadataBearer]
+    InitializeHandler[Any, MetadataBearer]
   ]]
   
   @JSImport("@aws-sdk/middleware-logger", "loggerMiddlewareOptions")

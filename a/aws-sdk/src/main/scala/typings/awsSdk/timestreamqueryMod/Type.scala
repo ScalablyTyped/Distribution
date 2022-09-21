@@ -17,7 +17,7 @@ trait Type extends StObject {
   var RowColumnInfo: js.UndefOr[ColumnInfoList] = js.undefined
   
   /**
-    * Indicates if the column is of type string, integer, boolean, double, timestamp, date, time. 
+    * Indicates if the column is of type string, integer, Boolean, double, timestamp, date, time. 
     */
   var ScalarType: js.UndefOr[typings.awsSdk.timestreamqueryMod.ScalarType] = js.undefined
   
@@ -43,7 +43,7 @@ object Type {
     
     inline def setRowColumnInfoUndefined: Self = StObject.set(x, "RowColumnInfo", js.undefined)
     
-    inline def setRowColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "RowColumnInfo", js.Array(value :_*))
+    inline def setRowColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "RowColumnInfo", js.Array(value*))
     
     inline def setScalarType(value: ScalarType): Self = StObject.set(x, "ScalarType", value.asInstanceOf[js.Any])
     

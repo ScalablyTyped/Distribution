@@ -40,7 +40,7 @@ object XTextSection {
     getAnchor: () => XTextRange,
     getChildSections: () => SafeArray[XTextSection],
     getParentSection: () => XTextSection,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XTextSection = {

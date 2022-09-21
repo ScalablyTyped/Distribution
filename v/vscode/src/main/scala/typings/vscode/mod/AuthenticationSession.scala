@@ -23,7 +23,7 @@ trait AuthenticationSession extends StObject {
   
   /**
     * The permissions granted by the session's access token. Available scopes
-    * are defined by the [AuthenticationProvider](#AuthenticationProvider).
+    * are defined by the {@link AuthenticationProvider}.
     */
   val scopes: js.Array[String]
 }
@@ -49,6 +49,6 @@ object AuthenticationSession {
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
   }
 }

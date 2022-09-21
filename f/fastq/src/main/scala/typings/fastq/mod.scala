@@ -1,6 +1,5 @@
 package typings.fastq
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,92 +13,55 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type done[R] = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[R], Unit]
+  inline def promise[C, T, R](context: C, worker: asyncWorker[C, T, R], concurrency: Double): queueAsPromised[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(context.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queueAsPromised[T, R]]
+  inline def promise[C, T, R](worker: asyncWorker[C, T, R], concurrency: Double): queueAsPromised[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queueAsPromised[T, R]]
   
-  type errorHandler[T] = js.Function2[/* err */ Error, /* task */ T, Unit]
+  type asyncWorker[C, T, R] = js.ThisFunction1[/* this */ C, /* task */ T, js.Promise[R]]
   
+  type done[R] = js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[R], Unit]
+  
+  type errorHandler[T] = js.Function2[/* err */ js.Error, /* task */ T, Unit]
+  
+  @js.native
   trait queue[T, R] extends StObject {
     
-    var concurrency: Double
+    var concurrency: Double = js.native
     
-    def drain(): js.Any
+    def drain(): Any = js.native
     
-    def empty(): Unit
+    def empty(): Unit = js.native
     
-    def error(handler: errorHandler[js.Any]): Unit
+    def error(handler: errorHandler[Any]): Unit = js.native
     
-    def getQueue(): js.Array[T]
+    def getQueue(): js.Array[T] = js.native
     
-    def idle(): Boolean
+    def idle(): Boolean = js.native
     
-    def kill(): js.Any
+    def kill(): Any = js.native
     
-    def killAndDrain(): js.Any
+    def killAndDrain(): Any = js.native
     
-    def length(): Double
+    def length(): Double = js.native
     
-    def pause(): js.Any
+    def pause(): Any = js.native
     
-    def push(task: T, done: done[R]): Unit
+    def push(task: T): Unit = js.native
+    def push(task: T, done: done[R]): Unit = js.native
     
-    def resume(): js.Any
+    def resume(): Any = js.native
     
-    def saturated(): Unit
+    def saturated(): Unit = js.native
     
-    def unshift(task: T, done: done[R]): Unit
+    def unshift(task: T): Unit = js.native
+    def unshift(task: T, done: done[R]): Unit = js.native
   }
-  object queue {
+  
+  @js.native
+  trait queueAsPromised[T, R]
+    extends StObject
+       with queue[T, R] {
     
-    inline def apply[T, R](
-      concurrency: Double,
-      drain: () => js.Any,
-      empty: () => Unit,
-      error: errorHandler[js.Any] => Unit,
-      getQueue: () => js.Array[T],
-      idle: () => Boolean,
-      kill: () => js.Any,
-      killAndDrain: () => js.Any,
-      length: () => Double,
-      pause: () => js.Any,
-      push: (T, done[R]) => Unit,
-      resume: () => js.Any,
-      saturated: () => Unit,
-      unshift: (T, done[R]) => Unit
-    ): queue[T, R] = {
-      val __obj = js.Dynamic.literal(concurrency = concurrency.asInstanceOf[js.Any], drain = js.Any.fromFunction0(drain), empty = js.Any.fromFunction0(empty), error = js.Any.fromFunction1(error), getQueue = js.Any.fromFunction0(getQueue), idle = js.Any.fromFunction0(idle), kill = js.Any.fromFunction0(kill), killAndDrain = js.Any.fromFunction0(killAndDrain), length = js.Any.fromFunction0(length), pause = js.Any.fromFunction0(pause), push = js.Any.fromFunction2(push), resume = js.Any.fromFunction0(resume), saturated = js.Any.fromFunction0(saturated), unshift = js.Any.fromFunction2(unshift))
-      __obj.asInstanceOf[queue[T, R]]
-    }
-    
-    extension [Self <: queue[?, ?], T, R](x: Self & (queue[T, R])) {
-      
-      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
-      
-      inline def setDrain(value: () => js.Any): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
-      
-      inline def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
-      
-      inline def setError(value: errorHandler[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-      
-      inline def setGetQueue(value: () => js.Array[T]): Self = StObject.set(x, "getQueue", js.Any.fromFunction0(value))
-      
-      inline def setIdle(value: () => Boolean): Self = StObject.set(x, "idle", js.Any.fromFunction0(value))
-      
-      inline def setKill(value: () => js.Any): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
-      
-      inline def setKillAndDrain(value: () => js.Any): Self = StObject.set(x, "killAndDrain", js.Any.fromFunction0(value))
-      
-      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
-      
-      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
-      
-      inline def setPush(value: (T, done[R]) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
-      
-      inline def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
-      
-      inline def setSaturated(value: () => Unit): Self = StObject.set(x, "saturated", js.Any.fromFunction0(value))
-      
-      inline def setUnshift(value: (T, done[R]) => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
-    }
+    def drained(): js.Promise[Unit] = js.native
   }
   
   type worker[C, T, R] = js.ThisFunction2[/* this */ C, /* task */ T, /* cb */ done[R], Unit]

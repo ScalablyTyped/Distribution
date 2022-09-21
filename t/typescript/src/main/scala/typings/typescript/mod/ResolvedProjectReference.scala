@@ -27,7 +27,7 @@ object ResolvedProjectReference {
     
     inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    inline def setReferencesVarargs(value: js.UndefOr[ResolvedProjectReference]*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: js.UndefOr[ResolvedProjectReference]*): Self = StObject.set(x, "references", js.Array(value*))
     
     inline def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
   }

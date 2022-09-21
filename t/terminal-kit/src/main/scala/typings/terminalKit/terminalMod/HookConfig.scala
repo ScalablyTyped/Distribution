@@ -1,6 +1,5 @@
 package typings.terminalKit.terminalMod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait HookConfig extends StObject {
   
   var style: js.UndefOr[CTerminal] = js.undefined
   
-  var tokenRegExp: js.UndefOr[RegExp] = js.undefined
+  var tokenRegExp: js.UndefOr[js.RegExp] = js.undefined
 }
 object HookConfig {
   
@@ -52,7 +51,7 @@ object HookConfig {
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value :_*))
+    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value*))
     
     inline def setHintStyle(value: CTerminal): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
     
@@ -62,7 +61,7 @@ object HookConfig {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTokenRegExp(value: RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
+    inline def setTokenRegExp(value: js.RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
     
     inline def setTokenRegExpUndefined: Self = StObject.set(x, "tokenRegExp", js.undefined)
   }

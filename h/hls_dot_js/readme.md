@@ -1,7 +1,7 @@
 
 # Scala.js typings for hls_dot_js
 
-Typings are for version 0.13
+Typings are for version 1.2.3
 
 ## Library description:
 JavaScript HLS client using MediaSourceExtension
@@ -10,10 +10,10 @@ JavaScript HLS client using MediaSourceExtension
 | ------------------ | :-------------: |
 | Full name          | hls.js |
 | Keywords           | - |
-| # releases         | 398 |
-| # dependents       | 158 |
-| # downloads        | 4763955 |
-| # stars            | 12 |
+| # releases         | 1109 |
+| # dependents       | 0.0 |
+| # downloads        | 1407920.0 |
+| # stars            | 11925.0 |
 
 ## Links
 - [Homepage](https://github.com/video-dev/hls.js)
@@ -24,7 +24,7 @@ JavaScript HLS client using MediaSourceExtension
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

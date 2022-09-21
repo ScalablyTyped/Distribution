@@ -52,7 +52,7 @@ object XFilePicker2 {
     getDisplayDirectory: () => String,
     getFiles: () => SafeArray[String],
     getSelectedFiles: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultName: String => Unit,
     setDisplayDirectory: String => Unit,

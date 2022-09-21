@@ -10,10 +10,10 @@ Lovefield - A relational database for web apps
 | ------------------ | :-------------: |
 | Full name          | lovefield |
 | Keywords           | lovefield |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 36496 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2778.6666666666665 |
+| # stars            | 6782.0 |
 
 ## Links
 - [Homepage](https://github.com/google/lovefield)

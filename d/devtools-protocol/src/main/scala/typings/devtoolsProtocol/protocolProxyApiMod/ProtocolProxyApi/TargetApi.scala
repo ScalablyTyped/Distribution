@@ -12,6 +12,7 @@ import typings.devtoolsProtocol.mod.Protocol.Target.AttachToBrowserTargetRespons
 import typings.devtoolsProtocol.mod.Protocol.Target.AttachToTargetRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.AttachToTargetResponse
 import typings.devtoolsProtocol.mod.Protocol.Target.AttachedToTargetEvent
+import typings.devtoolsProtocol.mod.Protocol.Target.AutoAttachRelatedRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.CloseTargetRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.CloseTargetResponse
 import typings.devtoolsProtocol.mod.Protocol.Target.CreateBrowserContextRequest
@@ -25,6 +26,7 @@ import typings.devtoolsProtocol.mod.Protocol.Target.ExposeDevToolsProtocolReques
 import typings.devtoolsProtocol.mod.Protocol.Target.GetBrowserContextsResponse
 import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetInfoRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetInfoResponse
+import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetsRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetsResponse
 import typings.devtoolsProtocol.mod.Protocol.Target.ReceivedMessageFromTargetEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.SendMessageToTargetRequest
@@ -56,6 +58,15 @@ trait TargetApi extends StObject {
     * Attaches to the target with given id.
     */
   def attachToTarget(params: AttachToTargetRequest): js.Promise[AttachToTargetResponse] = js.native
+  
+  /**
+    * Adds the specified target to the list of targets that will be monitored for any related target
+    * creation (such as child frames, child workers and new versions of service worker) and reported
+    * through `attachedToTarget`. The specified target is also auto-attached.
+    * This cancels the effect of any previous `setAutoAttach` and is also cancelled by subsequent
+    * `setAutoAttach`. Only available at the Browser target.
+    */
+  def autoAttachRelated(params: AutoAttachRelatedRequest): js.Promise[Unit] = js.native
   
   /**
     * Closes the target. If the target is a page that gets closed too.
@@ -109,7 +120,7 @@ trait TargetApi extends StObject {
   /**
     * Retrieves a list of available targets.
     */
-  def getTargets(): js.Promise[GetTargetsResponse] = js.native
+  def getTargets(params: GetTargetsRequest): js.Promise[GetTargetsResponse] = js.native
   
   /**
     * Issued when attached to target because of auto-attach or `attachToTarget` command.
@@ -164,6 +175,8 @@ trait TargetApi extends StObject {
     * Controls whether to automatically attach to new targets which are considered to be related to
     * this one. When turned on, attaches to all existing related targets as well. When turned off,
     * automatically detaches from all currently attached targets.
+    * This also clears all targets added by `autoAttachRelated` from the list of targets to watch
+    * for creation of related targets.
     */
   def setAutoAttach(params: SetAutoAttachRequest): js.Promise[Unit] = js.native
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereum-bloom-filters
 
-Typings are for version 1.0.7
+Typings are for version 1.0.10
 
 ## Library description:
 Ability to test bloom filters for ethereum.
@@ -10,10 +10,10 @@ Ability to test bloom filters for ethereum.
 | ------------------ | :-------------: |
 | Full name          | ethereum-bloom-filters |
 | Keywords           | ethereum, blockchain, blooms, bloom, bloom filters |
-| # releases         | 10 |
-| # dependents       | 19 |
-| # downloads        | 3621965 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1755748.6666666667 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/joshstevens19/ethereum-bloom-filters#readme)

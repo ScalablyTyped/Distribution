@@ -90,8 +90,8 @@ object escposStrings {
   inline def Backspace: Backspace = "\b".asInstanceOf[Backspace]
   
   @js.native
-  sealed trait Bell extends StObject
-  inline def Bell: Bell = "\u0007".asInstanceOf[Bell]
+  sealed trait Bel extends StObject
+  inline def Bel: Bel = "\u0007".asInstanceOf[Bel]
   
   @js.native
   sealed trait CENTER extends StObject

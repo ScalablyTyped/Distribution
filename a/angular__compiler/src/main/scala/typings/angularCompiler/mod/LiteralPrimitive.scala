@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "LiteralPrimitive")
 @js.native
-class LiteralPrimitive protected ()
-  extends typings.angularCompiler.compilerMod.LiteralPrimitive {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    value: js.Any
-  ) = this()
+open class LiteralPrimitive protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, value: Any) = this()
+  
+  var value: Any = js.native
 }

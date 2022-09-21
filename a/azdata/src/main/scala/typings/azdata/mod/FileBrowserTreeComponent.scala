@@ -8,21 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.FileBrowserTreeProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined ownerUri */ @js.native
+- typings.azdata.mod.FileBrowserTreeProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined ownerUri */ @js.native
 trait FileBrowserTreeComponent
   extends StObject
      with Component {
   
-  def onDidChange(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidChange(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onDidChange")
-  var onDidChange_Original: Event[js.Any] = js.native
+  var onDidChange_Original: Event[Any] = js.native
   
   var ownerUri: String = js.native
 }

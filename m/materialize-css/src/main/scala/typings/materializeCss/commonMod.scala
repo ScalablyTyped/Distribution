@@ -94,9 +94,9 @@ object commonMod {
         
         inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
         
-        inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+        inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
         
-        inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+        inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
         
         inline def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
         
@@ -106,13 +106,13 @@ object commonMod {
         
         inline def setWeekdaysAbbrev(value: js.Array[String]): Self = StObject.set(x, "weekdaysAbbrev", value.asInstanceOf[js.Any])
         
-        inline def setWeekdaysAbbrevVarargs(value: String*): Self = StObject.set(x, "weekdaysAbbrev", js.Array(value :_*))
+        inline def setWeekdaysAbbrevVarargs(value: String*): Self = StObject.set(x, "weekdaysAbbrev", js.Array(value*))
         
         inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
         
-        inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+        inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
         
-        inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+        inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
       }
     }
     

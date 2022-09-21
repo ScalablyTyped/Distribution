@@ -45,7 +45,7 @@ object anon {
     
     var sort: js.UndefOr[SortSpecifier] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* doc */ js.Any, Unit]] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* doc */ Any, Unit]] = js.undefined
   }
   object Fields {
     
@@ -76,7 +76,7 @@ object anon {
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* doc */ Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -363,7 +363,7 @@ object anon {
     
     var sort: js.UndefOr[SortSpecifier] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* doc */ js.Any, Unit]] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* doc */ Any, Unit]] = js.undefined
   }
   object Reactive {
     
@@ -390,7 +390,7 @@ object anon {
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* doc */ Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

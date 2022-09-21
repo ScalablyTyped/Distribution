@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object shortcutMod {
   
-  @JSImport("@storybook/api/dist/lib/shortcut", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/lib/shortcut", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

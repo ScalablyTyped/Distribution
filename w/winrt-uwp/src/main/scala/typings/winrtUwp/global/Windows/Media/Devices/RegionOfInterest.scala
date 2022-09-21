@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Devices.RegionOfInterest")
 @js.native
 /** Creates a new instance of the RegionOfInterest control. */
-class RegionOfInterest ()
+open class RegionOfInterest ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.RegionOfInterest {
   

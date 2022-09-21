@@ -65,7 +65,7 @@ object SecureScore {
     
     inline def setAverageComparativeScoresUndefined: Self = StObject.set(x, "averageComparativeScores", js.undefined)
     
-    inline def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = StObject.set(x, "averageComparativeScores", js.Array(value :_*))
+    inline def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = StObject.set(x, "averageComparativeScores", js.Array(value*))
     
     inline def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object SecureScore {
     
     inline def setControlScoresUndefined: Self = StObject.set(x, "controlScores", js.undefined)
     
-    inline def setControlScoresVarargs(value: ControlScore*): Self = StObject.set(x, "controlScores", js.Array(value :_*))
+    inline def setControlScoresVarargs(value: ControlScore*): Self = StObject.set(x, "controlScores", js.Array(value*))
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object SecureScore {
     
     inline def setEnabledServicesUndefined: Self = StObject.set(x, "enabledServices", js.undefined)
     
-    inline def setEnabledServicesVarargs(value: String*): Self = StObject.set(x, "enabledServices", js.Array(value :_*))
+    inline def setEnabledServicesVarargs(value: String*): Self = StObject.set(x, "enabledServices", js.Array(value*))
     
     inline def setLicensedUserCount(value: NullableOption[Double]): Self = StObject.set(x, "licensedUserCount", value.asInstanceOf[js.Any])
     

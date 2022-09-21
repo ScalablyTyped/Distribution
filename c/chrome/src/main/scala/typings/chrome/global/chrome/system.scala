@@ -43,6 +43,7 @@ object system {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def getInfo(): js.Promise[CpuInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")().asInstanceOf[js.Promise[CpuInfo]]
     inline def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
@@ -115,9 +116,12 @@ object system {
     
     inline def enableUnifiedDesktop(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUnifiedDesktop")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    inline def getDisplayLayout(): js.Promise[js.Array[DisplayLayout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayLayout")().asInstanceOf[js.Promise[js.Array[DisplayLayout]]]
     inline def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayLayout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    inline def getInfo(): js.Promise[js.Array[DisplayInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")().asInstanceOf[js.Promise[js.Array[DisplayInfo]]]
     inline def getInfo(callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getInfo(flags: DisplayInfoFlags): js.Promise[js.Array[DisplayInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(flags.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DisplayInfo]]]
     inline def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("chrome.system.display.onDisplayChanged")
@@ -135,12 +139,19 @@ object system {
     inline def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def setDisplayLayout_Promise(layouts: js.Array[DisplayLayout]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
     inline def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def setDisplayProperties_Promise(id: String, info: DisplayPropertiesInfo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    inline def setMirrorMode(info: MirrorModeInfo): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def setMirrorMode(info: MirrorModeInfoMixed): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def showNativeTouchCalibration(id: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showNativeTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     inline def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showNativeTouchCalibration")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def startCustomTouchCalibration(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCustomTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -160,6 +171,7 @@ object system {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def getInfo(): js.Promise[MemoryInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")().asInstanceOf[js.Promise[MemoryInfo]]
     inline def getInfo(callback: js.Function1[/* info */ MemoryInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
@@ -177,10 +189,13 @@ object system {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def ejectDevice(id: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ejectDevice")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     inline def ejectDevice(id: String, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ejectDevice")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def getAvailableCapacity(id: String): js.Promise[StorageCapacityInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCapacity")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StorageCapacityInfo]]
     inline def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCapacity")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def getInfo(): js.Promise[js.Array[StorageUnitInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")().asInstanceOf[js.Promise[js.Array[StorageUnitInfo]]]
     inline def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.system.storage.onAttached")

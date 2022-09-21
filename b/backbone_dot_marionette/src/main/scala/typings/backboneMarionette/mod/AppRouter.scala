@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone.marionette", "AppRouter")
 @js.native
-class AppRouter () extends Router {
+open class AppRouter () extends Router {
   def this(options: AppRouterOptions) = this()
   
   /**
@@ -18,17 +18,17 @@ class AppRouter () extends Router {
   /**
     * An object that contains the methods specified in appRoutes.
     */
-  var controller: js.Any = js.native
+  var controller: Any = js.native
   
   /**
     * Fires whenever the user navigates to a new route in your application
     * that matches a route.
     */
-  def onRoute(name: String, path: String, args: js.Array[js.Any]): Unit = js.native
+  def onRoute(name: String, path: String, args: js.Array[Any]): Unit = js.native
   
   /**
     * Specify a controller with the multiple routes at runtime. This will
     * preserve the existing controller as well.
     */
-  def processAppRoutes(controller: js.Any, appRoutes: AppRoutes): Unit = js.native
+  def processAppRoutes(controller: Any, appRoutes: AppRoutes): Unit = js.native
 }

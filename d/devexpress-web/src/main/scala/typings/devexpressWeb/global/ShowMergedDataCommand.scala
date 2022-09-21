@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShowMergedDataCommand")
 @js.native
-class ShowMergedDataCommand ()
+open class ShowMergedDataCommand ()
   extends StObject
      with typings.devexpressWeb.ShowMergedDataCommand {
   

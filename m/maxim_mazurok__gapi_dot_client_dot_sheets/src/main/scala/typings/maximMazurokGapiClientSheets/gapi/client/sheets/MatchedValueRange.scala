@@ -25,7 +25,7 @@ object MatchedValueRange {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
     
     inline def setValueRange(value: ValueRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     

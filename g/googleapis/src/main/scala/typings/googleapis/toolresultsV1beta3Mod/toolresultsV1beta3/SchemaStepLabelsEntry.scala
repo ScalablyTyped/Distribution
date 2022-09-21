@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaStepLabelsEntry extends StObject {
   
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStepLabelsEntry {
   
@@ -21,9 +21,13 @@ object SchemaStepLabelsEntry {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

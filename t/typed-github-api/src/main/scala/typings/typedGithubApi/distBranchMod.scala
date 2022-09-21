@@ -13,7 +13,7 @@ object distBranchMod {
   
   @JSImport("typed-github-api/dist/branch", "BranchClass")
   @js.native
-  class BranchClass protected ()
+  open class BranchClass protected ()
     extends BranchRefClass
        with Branch {
     def this(repository: RepositoryRefClass, data: typings.typedGithubApi.branchMod.Branch) = this()

@@ -11,7 +11,7 @@ object distLabelMod {
   
   @JSImport("typed-github-api/dist/label", "LabelClass")
   @js.native
-  class LabelClass protected ()
+  open class LabelClass protected ()
     extends GitHubRef
        with Label {
     def this(data: typings.typedGithubApi.labelMod.Label, options: OptionsOrRef) = this()

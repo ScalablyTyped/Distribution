@@ -7,62 +7,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceQuota extends StObject {
   
   /**
-    * Specifies if the quota value can be increased.
+    * Indicates whether the quota value can be increased.
     */
   var Adjustable: js.UndefOr[QuotaAdjustable] = js.undefined
   
   /**
-    * Specifies the ErrorCode and ErrorMessage when success isn't achieved.
+    * The error code and error reason.
     */
   var ErrorReason: js.UndefOr[typings.awsSdk.servicequotasMod.ErrorReason] = js.undefined
   
   /**
-    * Specifies if the quota is global.
+    * Indicates whether the quota is global.
     */
   var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.undefined
   
   /**
-    * Identifies the unit and value of how time is measured.
+    * The period of time.
     */
   var Period: js.UndefOr[QuotaPeriod] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the service quota.
+    * The Amazon Resource Name (ARN) of the quota.
     */
   var QuotaArn: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaArn] = js.undefined
   
   /**
-    * The code identifier for the service quota specified.
+    * The quota identifier.
     */
   var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.undefined
   
   /**
-    * The name identifier of the service quota.
+    * The quota name.
     */
   var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.undefined
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
-    * The name of the AWS service specified in the increase request. 
+    * The service name.
     */
   var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
   
   /**
-    * The unit of measurement for the value of the service quota.
+    * The unit of measurement.
     */
   var Unit: js.UndefOr[QuotaUnit] = js.undefined
   
   /**
-    * Specifies the details about the measurement. 
+    * Information about the measurement.
     */
   var UsageMetric: js.UndefOr[MetricInfo] = js.undefined
   
   /**
-    * The value of service quota.
+    * The quota value.
     */
   var Value: js.UndefOr[QuotaValue] = js.undefined
 }

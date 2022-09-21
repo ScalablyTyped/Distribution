@@ -12,7 +12,7 @@ trait UpdateSSHPublicKeyRequest extends StObject {
   var SSHPublicKeyId: publicKeyIdType
   
   /**
-    * The status to assign to the SSH public key. Active means that the key can be used for authentication with an AWS CodeCommit repository. Inactive means that the key cannot be used.
+    * The status to assign to the SSH public key. Active means that the key can be used for authentication with an CodeCommit repository. Inactive means that the key cannot be used.
     */
   var Status: statusType
   

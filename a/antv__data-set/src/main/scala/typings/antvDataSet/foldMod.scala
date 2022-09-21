@@ -29,7 +29,7 @@ object foldMod {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -39,7 +39,7 @@ object foldMod {
       
       inline def setRetainsUndefined: Self = StObject.set(x, "retains", js.undefined)
       
-      inline def setRetainsVarargs(value: String*): Self = StObject.set(x, "retains", js.Array(value :_*))
+      inline def setRetainsVarargs(value: String*): Self = StObject.set(x, "retains", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

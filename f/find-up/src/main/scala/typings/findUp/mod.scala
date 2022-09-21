@@ -1,120 +1,75 @@
 package typings.findUp
 
-import typings.findUp.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Find a file or directory by walking up parent directories.
-  	@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.
-  	@returns The first path found or `undefined` if none could be found.
-  	@example
-  	```
-  	import path = require('path');
-  	import findUp = require('find-up');
-  	(async () => {
-  		console.log(await findUp(async directory => {
-  			const hasUnicorns = await findUp.exists(path.join(directory, 'unicorn.png'));
-  			return hasUnicorns && directory;
-  		}, {type: 'directory'}));
-  		//=> '/Users/sindresorhus'
-  	})();
-  	```
-  	*/
-  inline def apply(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  inline def apply(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]], options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  /**
-  	Find a file or directory by walking up parent directories.
-  	@param name - Name of the file or directory to find. Can be multiple.
-  	@returns The first path found (by respecting the order of `name`s) or `undefined` if none could be found.
-  	@example
-  	```
-  	// /
-  	// └── Users
-  	//     └── sindresorhus
-  	//         ├── unicorn.png
-  	//         └── foo
-  	//             └── bar
-  	//                 ├── baz
-  	//                 └── example.js
-  	// example.js
-  	import findUp = require('find-up');
-  	(async () => {
-  		console.log(await findUp('unicorn.png'));
-  		//=> '/Users/sindresorhus/unicorn.png'
-  		console.log(await findUp(['rainbow.png', 'unicorn.png']));
-  		//=> '/Users/sindresorhus/unicorn.png'
-  	})();
-  	```
-  	*/
-  inline def apply(name: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  inline def apply(name: String, options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  inline def apply(name: js.Array[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  inline def apply(name: js.Array[String], options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  
   @JSImport("find-up", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Check if a path exists.
-  	@param path - Path to a file or directory.
-  	@returns Whether the path exists.
-  	@example
-  	```
-  	import findUp = require('find-up');
-  	(async () => {
-  		console.log(await findUp.exists('/Users/sindresorhus/unicorn.png'));
-  		//=> true
-  	})();
-  	```
-  	*/
-  inline def exists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def findUp(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def findUp(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]], options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def findUp(name: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def findUp(name: String, options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def findUp(name: js.Array[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def findUp(name: js.Array[String], options: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUp")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  /**
-  	Return this in a `matcher` function to stop the search and force `findUp` to immediately return `undefined`.
-  	*/
-  @JSImport("find-up", "stop")
+  inline def findUpMultiple(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findUpMultiple(matcher: js.Function1[/* directory */ String, Match | js.Promise[Match]], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findUpMultiple(name: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findUpMultiple(name: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findUpMultiple(name: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findUpMultiple(name: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultiple")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
+  inline def findUpMultipleSync(matcher: js.Function1[/* directory */ String, Match]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findUpMultipleSync(matcher: js.Function1[/* directory */ String, Match], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def findUpMultipleSync(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findUpMultipleSync(name: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def findUpMultipleSync(name: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findUpMultipleSync(name: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpMultipleSync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @JSImport("find-up", "findUpStop")
   @js.native
-  val stop: StopSymbol = js.native
+  val findUpStop: js.Symbol = js.native
   
-  @JSImport("find-up", "sync")
-  @js.native
-  def sync: Call = js.native
-  /**
-  		Synchronously find a file or directory by walking up parent directories.
-  		@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.
-  		@returns The first path found or `undefined` if none could be found.
-  		@example
-  		```
-  		import path = require('path');
-  		import findUp = require('find-up');
-  		console.log(findUp.sync(directory => {
-  			const hasUnicorns = findUp.sync.exists(path.join(directory, 'unicorn.png'));
-  			return hasUnicorns && directory;
-  		}, {type: 'directory'}));
-  		//=> '/Users/sindresorhus'
-  		```
-  		*/
-  inline def sync(matcher: js.Function1[/* directory */ String, Match]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def sync(matcher: js.Function1[/* directory */ String, Match], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  /**
-  		Synchronously find a file or directory by walking up parent directories.
-  		@param name - Name of the file or directory to find. Can be multiple.
-  		@returns The first path found (by respecting the order of `name`s) or `undefined` if none could be found.
-  		*/
-  inline def sync(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def sync(name: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  inline def sync(name: js.Array[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def sync(name: js.Array[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  inline def sync_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
+  inline def findUpSync(matcher: js.Function1[/* directory */ String, Match]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def findUpSync(matcher: js.Function1[/* directory */ String, Match], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def findUpSync(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def findUpSync(name: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def findUpSync(name: js.Array[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def findUpSync(name: js.Array[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUpSync")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  type Match = js.UndefOr[String | StopSymbol]
+  inline def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  type Options = typings.locatePath.mod.Options
+  inline def pathExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  type StopSymbol = js.Symbol
+  type Match = js.UndefOr[String | js.Symbol]
+  
+  trait Options
+    extends StObject
+       with typings.locatePath.mod.Options {
+    
+    /**
+    	The path to the directory to stop the search before reaching root if there were no matches before the `stopAt` directory.
+    	@default path.parse(cwd).root
+    	*/
+    val stopAt: js.UndefOr[String] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setStopAt(value: String): Self = StObject.set(x, "stopAt", value.asInstanceOf[js.Any])
+      
+      inline def setStopAtUndefined: Self = StObject.set(x, "stopAt", js.undefined)
+    }
+  }
 }

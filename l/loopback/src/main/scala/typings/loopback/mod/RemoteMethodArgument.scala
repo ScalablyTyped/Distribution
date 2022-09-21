@@ -96,7 +96,7 @@ object RemoteMethodArgument {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
     
     inline def setHttp(value: RemoteHttpOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

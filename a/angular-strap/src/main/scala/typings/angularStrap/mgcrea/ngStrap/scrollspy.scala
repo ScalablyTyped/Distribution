@@ -17,17 +17,17 @@ object scrollspy {
     
     def checkOffsets(): Unit
     
-    def trackElement(target: js.Any, source: js.Any): Unit
+    def trackElement(target: Any, source: Any): Unit
     
-    def untrackElement(target: js.Any, source: js.Any): Unit
+    def untrackElement(target: Any, source: Any): Unit
   }
   object IScrollspy {
     
     inline def apply(
       activate: Double => Unit,
       checkOffsets: () => Unit,
-      trackElement: (js.Any, js.Any) => Unit,
-      untrackElement: (js.Any, js.Any) => Unit
+      trackElement: (Any, Any) => Unit,
+      untrackElement: (Any, Any) => Unit
     ): IScrollspy = {
       val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), checkOffsets = js.Any.fromFunction0(checkOffsets), trackElement = js.Any.fromFunction2(trackElement), untrackElement = js.Any.fromFunction2(untrackElement))
       __obj.asInstanceOf[IScrollspy]
@@ -39,9 +39,9 @@ object scrollspy {
       
       inline def setCheckOffsets(value: () => Unit): Self = StObject.set(x, "checkOffsets", js.Any.fromFunction0(value))
       
-      inline def setTrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "trackElement", js.Any.fromFunction2(value))
+      inline def setTrackElement(value: (Any, Any) => Unit): Self = StObject.set(x, "trackElement", js.Any.fromFunction2(value))
       
-      inline def setUntrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "untrackElement", js.Any.fromFunction2(value))
+      inline def setUntrackElement(value: (Any, Any) => Unit): Self = StObject.set(x, "untrackElement", js.Any.fromFunction2(value))
     }
   }
   

@@ -37,7 +37,7 @@ object Requester {
     
     inline def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
     
-    inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+    inline def setSendMessage(value: (/* message */ Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
     
     inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
     

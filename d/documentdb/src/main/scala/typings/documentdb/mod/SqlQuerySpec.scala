@@ -23,7 +23,7 @@ object SqlQuerySpec {
     
     inline def setParameters(value: js.Array[SqlParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

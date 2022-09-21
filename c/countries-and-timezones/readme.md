@@ -1,7 +1,7 @@
 
 # Scala.js typings for countries-and-timezones
 
-Typings are for version 2.0
+Typings are for version 3.3.0
 
 ## Library description:
 Minimalistic library to work with countries and timezones data.
@@ -11,9 +11,9 @@ Minimalistic library to work with countries and timezones data.
 | Full name          | countries-and-timezones |
 | Keywords           | Countries, Timezones, Country, Timezone, Time, Date, DST, IANA, ICANN |
 | # releases         | 13 |
-| # dependents       | 24 |
-| # downloads        | 958833 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 330709.3333333333 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/manuelmhtr/countries-and-timezones#readme)
@@ -24,7 +24,7 @@ Minimalistic library to work with countries and timezones data.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

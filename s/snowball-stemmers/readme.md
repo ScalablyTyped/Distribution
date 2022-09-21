@@ -11,14 +11,11 @@ JS Port from Snowball Stemmers http://snowball.tartarus.org/
 | Full name          | snowball-stemmers |
 | Keywords           | Snowball, Stemmer |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 5683 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 295.0 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/mazko/jssnowball#readme)
-- [Bugs](https://github.com/mazko/jssnowball/issues)
-- [Repository](https://github.com/mazko/jssnowball)
 - [Npm](https://www.npmjs.com/package/snowball-stemmers)
     
 

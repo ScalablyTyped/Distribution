@@ -40,7 +40,7 @@ object anon {
       
       inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
       
-      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
       
       inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object anon {
       
       inline def setAuthors(value: js.Array[Name]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
       
       inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -118,7 +118,7 @@ object anon {
       
       inline def setCategories(value: js.Array[SubCategories]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: SubCategories*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: SubCategories*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setComplete(value: Maybe[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -284,7 +284,7 @@ object anon {
       
       inline def setSubCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "subCategories", value.asInstanceOf[js.Any])
       
-      inline def setSubCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "subCategories", js.Array(value :_*))
+      inline def setSubCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "subCategories", js.Array(value*))
     }
   }
 }

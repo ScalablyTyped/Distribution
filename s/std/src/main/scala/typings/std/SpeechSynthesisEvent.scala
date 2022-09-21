@@ -10,13 +10,18 @@ trait SpeechSynthesisEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val charIndex: Double = js.native
   
+  /* standard dom */
   val charLength: Double = js.native
   
+  /* standard dom */
   val elapsedTime: Double = js.native
   
+  /* standard dom */
   val name: java.lang.String = js.native
   
+  /* standard dom */
   val utterance: SpeechSynthesisUtterance = js.native
 }

@@ -14,7 +14,7 @@ trait DescribeEventsMessage extends StObject {
   /**
     *  If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur up to, but not including, the EndTime. 
     */
-  var EndTime: js.UndefOr[TimeFilterEnd] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this environment.
@@ -54,7 +54,7 @@ trait DescribeEventsMessage extends StObject {
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur on or after this time.
     */
-  var StartTime: js.UndefOr[TimeFilterStart] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that are associated with this environment configuration.
@@ -79,7 +79,7 @@ object DescribeEventsMessage {
     
     inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    inline def setEndTime(value: TimeFilterEnd): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -111,7 +111,7 @@ object DescribeEventsMessage {
     
     inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
-    inline def setStartTime(value: TimeFilterStart): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

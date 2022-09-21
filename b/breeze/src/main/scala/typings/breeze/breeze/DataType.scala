@@ -2,7 +2,6 @@ package typings.breeze.breeze
 
 import typings.breeze.anon.NextNumber
 import typings.breeze.breeze.core.IEnum
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,20 +41,23 @@ trait DataType
   
   var Undefined: DataTypeSymbol = js.native
   
+  def addSymbol(): DataTypeSymbol = js.native
+  def addSymbol(propertiesObj: Any): DataTypeSymbol = js.native
+  
   var constants: NextNumber = js.native
   
   def fromEdmDataType(typeName: String): DataTypeSymbol = js.native
   
-  def fromValue(`val`: js.Any): DataTypeSymbol = js.native
+  def fromValue(`val`: Any): DataTypeSymbol = js.native
   
-  def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ js.Any, js.Any] = js.native
+  def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ Any, Any] = js.native
   
-  def parseDateAsUTC(source: js.Any): Date = js.native
+  def parseDateAsUTC(source: Any): js.Date = js.native
   
-  def parseDateFromServer(date: js.Any): Date = js.native
+  def parseDateFromServer(date: Any): js.Date = js.native
   
-  def parseRawValue(`val`: js.Any): js.Any = js.native
-  def parseRawValue(`val`: js.Any, dataType: DataTypeSymbol): js.Any = js.native
+  def parseRawValue(`val`: Any): Any = js.native
+  def parseRawValue(`val`: Any, dataType: DataTypeSymbol): Any = js.native
   
-  def parseTimeFromServer(source: js.Any): String = js.native
+  def parseTimeFromServer(source: Any): String = js.native
 }

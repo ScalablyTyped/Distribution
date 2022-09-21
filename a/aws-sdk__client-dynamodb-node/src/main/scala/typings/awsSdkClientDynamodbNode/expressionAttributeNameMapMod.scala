@@ -10,7 +10,7 @@ object expressionAttributeNameMapMod {
   @JSImport("@aws-sdk/client-dynamodb-node/model/_ExpressionAttributeNameMap", "_ExpressionAttributeNameMap")
   @js.native
   val ExpressionAttributeNameMap: Map[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
 }

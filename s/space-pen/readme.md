@@ -10,9 +10,9 @@ Write markup on the final frontier
 | Full name          | space-pen |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 1839760 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 74870.0 |
+| # stars            | 598.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/space-pen#readme)

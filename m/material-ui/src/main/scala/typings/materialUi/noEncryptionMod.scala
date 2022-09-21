@@ -10,10 +10,10 @@ object noEncryptionMod {
   
   @JSImport("material-ui/svg-icons/notification/no-encryption", JSImport.Default)
   @js.native
-  class default () extends NotificationNoEncryption
+  open class default () extends NotificationNoEncryption
   
   @JSImport("material-ui/svg-icons/notification/no-encryption", "NotificationNoEncryption")
   @js.native
-  class NotificationNoEncryption ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationNoEncryption ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

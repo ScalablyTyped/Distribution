@@ -96,7 +96,7 @@ object SetAccountInfoResponse {
     
     inline def setProviderUserInfoUndefined: Self = StObject.set(x, "providerUserInfo", js.undefined)
     
-    inline def setProviderUserInfoVarargs(value: DisplayName*): Self = StObject.set(x, "providerUserInfo", js.Array(value :_*))
+    inline def setProviderUserInfoVarargs(value: DisplayName*): Self = StObject.set(x, "providerUserInfo", js.Array(value*))
     
     inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     

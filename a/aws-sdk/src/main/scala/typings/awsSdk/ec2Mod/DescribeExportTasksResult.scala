@@ -24,6 +24,6 @@ object DescribeExportTasksResult {
     
     inline def setExportTasksUndefined: Self = StObject.set(x, "ExportTasks", js.undefined)
     
-    inline def setExportTasksVarargs(value: ExportTask*): Self = StObject.set(x, "ExportTasks", js.Array(value :_*))
+    inline def setExportTasksVarargs(value: ExportTask*): Self = StObject.set(x, "ExportTasks", js.Array(value*))
   }
 }

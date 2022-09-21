@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.LogCauchy")
 @js.native
-class LogCauchy ()
+open class LogCauchy ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.LogCauchy] {
   def this(mu: Double) = this()

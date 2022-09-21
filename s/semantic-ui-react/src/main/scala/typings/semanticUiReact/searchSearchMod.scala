@@ -6,12 +6,13 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
+import typings.semanticUiReact.anon.PickSearchCategoryLayoutP
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.inputInputMod.InputProps
 import typings.semanticUiReact.searchCategoryMod.SearchCategoryProps
@@ -36,10 +37,9 @@ object searchSearchMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Search/Search", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[SearchProps, ComponentState, js.Any] {
+  open class default protected () extends Component[SearchProps, ComponentState, Any] {
     def this(props: SearchProps) = this()
-    def this(props: SearchProps, context: js.Any) = this()
+    def this(props: SearchProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -50,10 +50,9 @@ object searchSearchMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Search/Search", "default.Result")
     @js.native
-    class Result protected ()
-      extends Component[SearchResultProps, ComponentState, js.Any] {
+    open class Result protected () extends Component[SearchResultProps, ComponentState, Any] {
       def this(props: SearchResultProps) = this()
-      def this(props: SearchResultProps, context: js.Any) = this()
+      def this(props: SearchResultProps, context: Any) = this()
     }
     
     type _To = SearchComponent
@@ -67,17 +66,17 @@ object searchSearchMod {
     extends StObject
        with ComponentClass[SearchProps, ComponentState] {
     
-    var Category: StatelessComponent[SearchCategoryProps] = js.native
+    var Category: FC[SearchCategoryProps] = js.native
     
     var Result: ComponentClass[SearchResultProps, ComponentState] = js.native
     
-    var Results: StatelessComponent[SearchResultsProps] = js.native
+    var Results: FC[SearchResultsProps] = js.native
   }
   
   trait SearchProps
     extends StObject
        with StrictSearchProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SearchProps {
     
     inline def apply(): SearchProps = {
@@ -90,18 +89,18 @@ object searchSearchMod {
     extends StObject
        with SearchProps {
     
-    var result: js.Any
+    var result: Any
   }
   object SearchResultData {
     
-    inline def apply(result: js.Any): SearchResultData = {
+    inline def apply(result: Any): SearchResultData = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResultData]
     }
     
     extension [Self <: SearchResultData](x: Self) {
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,7 +113,7 @@ object searchSearchMod {
     var aligned: js.UndefOr[String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A search can display results from remote content ordered by categories. */
     var category: js.UndefOr[Boolean] = js.undefined
@@ -125,11 +124,10 @@ object searchSearchMod {
     /**
       * Renders the SearchCategory layout.
       *
-      * @param {object} categoryContent - The Renderable SearchCategory contents.
-      * @param {object} resultsContent - The Renderable SearchResult contents.
+      * @param {object} props - The SearchCategoryLayout props object.
       * @returns {*} - Renderable SearchCategory layout.
       */
-    var categoryLayoutRenderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.undefined
+    var categoryLayoutRenderer: js.UndefOr[js.Function1[/* props */ PickSearchCategoryLayoutP, ReactElement]] = js.undefined
     
     /**
       * Renders the SearchCategory contents.
@@ -155,7 +153,7 @@ object searchSearchMod {
     var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     /** Shorthand for input element. */
     var input: js.UndefOr[SemanticShorthandItem[InputProps]] = js.undefined
@@ -246,6 +244,9 @@ object searchSearchMod {
     /** Controls whether or not the results menu is displayed. */
     var open: js.UndefOr[Boolean] = js.undefined
     
+    /** A search can show placeholder text when empty. */
+    var placeholder: js.UndefOr[String] = js.undefined
+    
     /**
       * Renders the SearchResult contents.
       *
@@ -259,7 +260,7 @@ object searchSearchMod {
       * - array of Search.Result props e.g. `{ title: '', description: '' }` or
       * - object of categories e.g. `{ name: '', results: [{ title: '', description: '' }]`
       */
-    var results: js.UndefOr[js.Array[js.Any] | (Record[String, js.Any])] = js.undefined
+    var results: js.UndefOr[js.Array[Any] | (Record[String, Any])] = js.undefined
     
     /** Whether the search should automatically select the first result after searching. */
     var selectFirstResult: js.UndefOr[Boolean] = js.undefined
@@ -286,13 +287,13 @@ object searchSearchMod {
       
       inline def setAlignedUndefined: Self = StObject.set(x, "aligned", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       inline def setCategory(value: Boolean): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      inline def setCategoryLayoutRenderer(value: /* props */ SearchCategoryProps => ReactElement): Self = StObject.set(x, "categoryLayoutRenderer", js.Any.fromFunction1(value))
+      inline def setCategoryLayoutRenderer(value: /* props */ PickSearchCategoryLayoutP => ReactElement): Self = StObject.set(x, "categoryLayoutRenderer", js.Any.fromFunction1(value))
       
       inline def setCategoryLayoutRendererUndefined: Self = StObject.set(x, "categoryLayoutRenderer", js.undefined)
       
@@ -318,7 +319,7 @@ object searchSearchMod {
       
       inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -378,15 +379,19 @@ object searchSearchMod {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
       inline def setResultRenderer(value: /* props */ SearchResultProps => ReactElement): Self = StObject.set(x, "resultRenderer", js.Any.fromFunction1(value))
       
       inline def setResultRendererUndefined: Self = StObject.set(x, "resultRenderer", js.undefined)
       
-      inline def setResults(value: js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Any] | (Record[String, Any])): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Any*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
       

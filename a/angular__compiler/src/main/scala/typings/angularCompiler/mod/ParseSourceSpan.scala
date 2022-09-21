@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ParseSourceSpan")
 @js.native
-class ParseSourceSpan protected ()
-  extends typings.angularCompiler.compilerMod.ParseSourceSpan {
+open class ParseSourceSpan protected () extends StObject {
   /**
     * Create an object that holds information about spans of tokens/nodes captured during
     * lexing/parsing of text.
@@ -31,25 +30,16 @@ class ParseSourceSpan protected ()
     * @param details
     * Additional information (such as identifier names) that should be associated with the span.
     */
-  def this(
-    start: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    end: typings.angularCompiler.srcParseUtilMod.ParseLocation
-  ) = this()
-  def this(
-    start: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    end: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    fullStart: typings.angularCompiler.srcParseUtilMod.ParseLocation
-  ) = this()
-  def this(
-    start: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    end: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    fullStart: Unit,
-    details: String
-  ) = this()
-  def this(
-    start: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    end: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    fullStart: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    details: String
-  ) = this()
+  def this(start: ParseLocation, end: ParseLocation) = this()
+  def this(start: ParseLocation, end: ParseLocation, fullStart: ParseLocation) = this()
+  def this(start: ParseLocation, end: ParseLocation, fullStart: Unit, details: String) = this()
+  def this(start: ParseLocation, end: ParseLocation, fullStart: ParseLocation, details: String) = this()
+  
+  var details: String | Null = js.native
+  
+  var end: ParseLocation = js.native
+  
+  var fullStart: ParseLocation = js.native
+  
+  var start: ParseLocation = js.native
 }

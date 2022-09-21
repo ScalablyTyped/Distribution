@@ -8,5 +8,5 @@ object listKeysMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/ListKeys", "ListKeys")
   @js.native
-  val ListKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

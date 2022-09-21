@@ -39,7 +39,7 @@ object ExpectedAttributeValue {
     
     inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
     
-    inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+    inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value*))
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

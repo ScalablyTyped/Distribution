@@ -29,7 +29,7 @@ object Defaulttitle {
     
     inline def setFile_filtersUndefined: Self = StObject.set(x, "file_filters", js.undefined)
     
-    inline def setFile_filtersVarargs(value: String*): Self = StObject.set(x, "file_filters", js.Array(value :_*))
+    inline def setFile_filtersVarargs(value: String*): Self = StObject.set(x, "file_filters", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

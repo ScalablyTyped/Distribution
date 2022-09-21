@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventTriggerMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/event-trigger", JSImport.Namespace)
+  @JSImport("ngx-infinite-scroll/lib/services/event-trigger", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -84,22 +84,22 @@ object eventTriggerMod {
   
   trait ITriggerEvents extends StObject {
     
-    def down(event: js.Any): js.Any
+    def down(event: Any): Any
     
-    def up(event: js.Any): js.Any
+    def up(event: Any): Any
   }
   object ITriggerEvents {
     
-    inline def apply(down: js.Any => js.Any, up: js.Any => js.Any): ITriggerEvents = {
+    inline def apply(down: Any => Any, up: Any => Any): ITriggerEvents = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), up = js.Any.fromFunction1(up))
       __obj.asInstanceOf[ITriggerEvents]
     }
     
     extension [Self <: ITriggerEvents](x: Self) {
       
-      inline def setDown(value: js.Any => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: Any => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      inline def setUp(value: js.Any => js.Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: Any => Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
     }
   }
 }

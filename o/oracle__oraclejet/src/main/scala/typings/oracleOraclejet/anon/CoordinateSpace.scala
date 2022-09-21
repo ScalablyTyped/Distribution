@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CoordinateSpace extends StObject {
   
-  var coordinateSpace: js.Any
+  var coordinateSpace: Any
   
-  var id: js.Any
+  var id: Any
   
   var labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
   
@@ -17,8 +17,8 @@ trait CoordinateSpace extends StObject {
 object CoordinateSpace {
   
   inline def apply(
-    coordinateSpace: js.Any,
-    id: js.Any,
+    coordinateSpace: Any,
+    id: Any,
     labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout,
     path: String
   ): CoordinateSpace = {
@@ -28,9 +28,9 @@ object CoordinateSpace {
   
   extension [Self <: CoordinateSpace](x: Self) {
     
-    inline def setCoordinateSpace(value: js.Any): Self = StObject.set(x, "coordinateSpace", value.asInstanceOf[js.Any])
+    inline def setCoordinateSpace(value: Any): Self = StObject.set(x, "coordinateSpace", value.asInstanceOf[js.Any])
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLabelLayout(value: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
     

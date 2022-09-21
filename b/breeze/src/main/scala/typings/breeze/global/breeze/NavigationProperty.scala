@@ -1,6 +1,5 @@
 package typings.breeze.global.breeze
 
-import typings.breeze.breeze.IStructuralType
 import typings.breeze.breeze.NavigationPropertyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.NavigationProperty")
 @js.native
-class NavigationProperty protected ()
+open class NavigationProperty protected ()
   extends StObject
      with typings.breeze.breeze.NavigationProperty {
   def this(config: NavigationPropertyOptions) = this()
@@ -17,13 +16,22 @@ class NavigationProperty protected ()
   var associationName: String = js.native
   
   /* CompleteClass */
+  var custom: Any = js.native
+  
+  /* CompleteClass */
   var displayName: String = js.native
   
   /* CompleteClass */
   var entityType: typings.breeze.breeze.EntityType = js.native
   
   /* CompleteClass */
+  var entityTypeName: String = js.native
+  
+  /* CompleteClass */
   var foreignKeyNames: js.Array[String] = js.native
+  
+  /* CompleteClass */
+  var foreignKeyNamesOnServer: js.Array[String] = js.native
   
   /* CompleteClass */
   var inverse: typings.breeze.breeze.NavigationProperty = js.native
@@ -44,7 +52,7 @@ class NavigationProperty protected ()
   var nameOnServer: String = js.native
   
   /* CompleteClass */
-  var parentType: IStructuralType = js.native
+  var parentType: typings.breeze.breeze.EntityType | typings.breeze.breeze.ComplexType = js.native
   
   /* CompleteClass */
   var relatedDataProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native

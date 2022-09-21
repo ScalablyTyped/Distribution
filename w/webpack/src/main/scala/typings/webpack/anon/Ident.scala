@@ -1,32 +1,31 @@
 package typings.webpack.anon
 
-import typings.webpack.webpackOptionsMod.RuleSetLoader
-import typings.webpack.webpackOptionsMod.RuleSetQuery
+import org.scalablytyped.runtime.StringDictionary
+import typings.webpack.mod._RuleSetUse
+import typings.webpack.mod._RuleSetUseItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Ident extends StObject {
+trait Ident
+  extends StObject
+     with _RuleSetUse
+     with _RuleSetUseItem {
   
   /**
-  			 * Unique loader identifier
+  			 * Unique loader options identifier.
   			 */
   var ident: js.UndefOr[String] = js.undefined
   
   /**
-  			 * Loader name
+  			 * Loader name.
   			 */
-  var loader: js.UndefOr[RuleSetLoader] = js.undefined
+  var loader: js.UndefOr[String] = js.undefined
   
   /**
-  			 * Loader options
+  			 * Loader options.
   			 */
-  var options: js.UndefOr[RuleSetQuery] = js.undefined
-  
-  /**
-  			 * Loader query
-  			 */
-  var query: js.UndefOr[RuleSetQuery] = js.undefined
+  var options: js.UndefOr[String | StringDictionary[Any]] = js.undefined
 }
 object Ident {
   
@@ -41,16 +40,12 @@ object Ident {
     
     inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
     
-    inline def setLoader(value: RuleSetLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
-    inline def setOptions(value: RuleSetQuery): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String | StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-    
-    inline def setQuery(value: RuleSetQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    
-    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

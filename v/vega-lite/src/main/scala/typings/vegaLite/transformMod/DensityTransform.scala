@@ -104,7 +104,7 @@ object DensityTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setMaxsteps(value: Double): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object createFunctionOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/CreateFunctionOutput", "CreateFunctionOutput")
   @js.native
-  val CreateFunctionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateFunctionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

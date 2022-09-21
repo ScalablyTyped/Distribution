@@ -23,11 +23,11 @@ object anon {
       
       inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
 }

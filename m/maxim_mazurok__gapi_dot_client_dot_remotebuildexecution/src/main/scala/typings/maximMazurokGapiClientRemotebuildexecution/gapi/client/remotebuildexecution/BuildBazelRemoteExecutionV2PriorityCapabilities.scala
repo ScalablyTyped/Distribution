@@ -21,6 +21,6 @@ object BuildBazelRemoteExecutionV2PriorityCapabilities {
     
     inline def setPrioritiesUndefined: Self = StObject.set(x, "priorities", js.undefined)
     
-    inline def setPrioritiesVarargs(value: BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value :_*))
+    inline def setPrioritiesVarargs(value: BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value*))
   }
 }

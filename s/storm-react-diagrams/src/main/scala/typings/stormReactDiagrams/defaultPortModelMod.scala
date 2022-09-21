@@ -13,7 +13,7 @@ object defaultPortModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultPortModel", "DefaultPortModel")
   @js.native
-  class DefaultPortModel protected () extends PortModel {
+  open class DefaultPortModel protected () extends PortModel {
     def this(isInput: Boolean, name: String) = this()
     def this(isInput: Boolean, name: String, label: String) = this()
     def this(isInput: Boolean, name: String, label: String, id: String) = this()

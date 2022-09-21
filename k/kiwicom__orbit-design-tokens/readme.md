@@ -10,15 +10,15 @@ Design tokens for Kiwi.com.
 | ------------------ | :-------------: |
 | Full name          | @kiwicom/orbit-design-tokens |
 | Keywords           | orbit, ui, design |
-| # releases         | 28 |
-| # dependents       | 4 |
-| # downloads        | 343461 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 16448.0 |
+| # stars            | 1245.0 |
 
 ## Links
-- [Homepage](https://github.com/kiwicom/orbit-design-tokens#readme)
-- [Bugs](https://github.com/kiwicom/orbit-design-tokens/issues)
-- [Repository](https://github.com/kiwicom/orbit-design-tokens)
+- [Homepage](https://github.com/kiwicom/orbit#readme)
+- [Bugs](https://github.com/kiwicom/orbit/issues)
+- [Repository](https://github.com/kiwicom/orbit)
 - [Npm](https://www.npmjs.com/package/%40kiwicom%2Forbit-design-tokens)
     
 

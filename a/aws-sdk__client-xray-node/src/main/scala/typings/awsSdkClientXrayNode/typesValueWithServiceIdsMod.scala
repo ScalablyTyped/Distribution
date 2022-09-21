@@ -4,7 +4,6 @@ import typings.awsSdkClientXrayNode.typesAnnotationValueMod.AnnotationValue
 import typings.awsSdkClientXrayNode.typesAnnotationValueMod.UnmarshalledAnnotationValue
 import typings.awsSdkClientXrayNode.typesServiceIdMod.ServiceId
 import typings.awsSdkClientXrayNode.typesServiceIdMod.UnmarshalledServiceId
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object typesValueWithServiceIdsMod {
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
     }
   }
   
@@ -58,7 +57,7 @@ object typesValueWithServiceIdsMod {
     /**
       * <p>Services to which the annotation applies.</p>
       */
-    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.undefined
+    var ServiceIds: js.UndefOr[js.Array[ServiceId] | js.Iterable[ServiceId]] = js.undefined
   }
   object ValueWithServiceIds {
     
@@ -73,11 +72,11 @@ object typesValueWithServiceIdsMod {
       
       inline def setAnnotationValueUndefined: Self = StObject.set(x, "AnnotationValue", js.undefined)
       
-      inline def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[ServiceId] | js.Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
     }
   }
 }

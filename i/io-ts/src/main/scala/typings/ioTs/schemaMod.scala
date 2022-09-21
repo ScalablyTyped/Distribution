@@ -13,27 +13,27 @@ object schemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Schemable1[S]): js.Function1[
-    /* schema */ Schema[js.Any], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any
+  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](S: Schemable1[S]): js.Function1[
+    /* schema */ Schema[Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpreter")(S.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* schema */ Schema[js.Any], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any
+    /* schema */ Schema[Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ Any
   ]]
-  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Schemable2C[S, js.Any]): js.Function1[
-    /* schema */ Schema[js.Any], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ js.Any
+  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](S: Schemable2C[S, Any]): js.Function1[
+    /* schema */ Schema[Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpreter")(S.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* schema */ Schema[js.Any], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ js.Any
+    /* schema */ Schema[Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ Any
   ]]
   
   inline def make[A](schema: Schema[A]): Schema[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(schema.asInstanceOf[js.Any]).asInstanceOf[Schema[A]]
   
   type Schema[A] = js.Function1[
-    /* S */ Schemable[js.Any], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any
+    /* S */ Schemable[Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ Any
   ]
   
-  type TypeOf[S] = js.Any
+  type TypeOf[S] = Any
 }

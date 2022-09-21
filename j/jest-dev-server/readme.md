@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-dev-server
 
-Typings are for version 4.2
+Typings are for version 5.0
 
 ## Library description:
 Starts a server before your Jest tests and tears it down after.
@@ -10,15 +10,15 @@ Starts a server before your Jest tests and tears it down after.
 | ------------------ | :-------------: |
 | Full name          | jest-dev-server |
 | Keywords           | jest, jest-environment, server |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 7535125 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1014822.6666666666 |
+| # stars            | 3347.0 |
 
 ## Links
-- [Homepage](https://github.com/smooth-code/jest-puppeteer#readme)
+- [Homepage](https://github.com/smooth-code/jest-puppeteer/tree/master#readme)
 - [Bugs](https://github.com/smooth-code/jest-puppeteer/issues)
-- [Repository](https://github.com/smooth-code/jest-puppeteer)
+- [Repository](https://github.com/smooth-code/jest-puppeteer/tree/master)
 - [Npm](https://www.npmjs.com/package/jest-dev-server)
     
 

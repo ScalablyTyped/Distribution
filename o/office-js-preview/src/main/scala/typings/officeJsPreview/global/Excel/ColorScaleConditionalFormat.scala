@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the color scale criteria for conditional formatting.
   *
-  * Represents ColorScale criteria for conditional formatting.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ColorScaleConditionalFormat")
 @js.native
-class ColorScaleConditionalFormat ()
+open class ColorScaleConditionalFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ColorScaleConditionalFormat {
   

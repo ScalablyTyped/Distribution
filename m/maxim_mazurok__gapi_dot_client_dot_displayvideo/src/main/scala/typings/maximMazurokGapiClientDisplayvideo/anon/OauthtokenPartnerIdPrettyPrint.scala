@@ -13,7 +13,7 @@ trait OauthtokenPartnerIdPrettyPrint extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the inventory source group. The parent partner will not have access to this group. */
+  /** The ID of the advertiser that the request is being made within. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
@@ -31,10 +31,7 @@ trait OauthtokenPartnerIdPrettyPrint extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * The ID of the partner that owns the inventory source group. Only this partner will have write access to this group. Only advertisers to which this group is explicitly shared
-    * will have read access to this group.
-    */
+  /** The ID of the partner that the request is being made within. */
   var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */

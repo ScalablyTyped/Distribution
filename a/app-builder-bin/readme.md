@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-builder-bin
 
-Typings are for version 3.5.10
+Typings are for version 4.1.2
 
 ## Library description:
 app-builder precompiled binaries
@@ -10,15 +10,12 @@ app-builder precompiled binaries
 | ------------------ | :-------------: |
 | Full name          | app-builder-bin |
 | Keywords           | snap, appimage, icns |
-| # releases         | 54 |
-| # dependents       | 12 |
-| # downloads        | 7057466 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1539266.3333333333 |
+| # stars            | 87.0 |
 
 ## Links
-- [Homepage](https://github.com/develar/app-builder#readme)
-- [Bugs](https://github.com/develar/app-builder/issues)
-- [Repository](https://github.com/develar/app-builder)
 - [Npm](https://www.npmjs.com/package/app-builder-bin)
     
 

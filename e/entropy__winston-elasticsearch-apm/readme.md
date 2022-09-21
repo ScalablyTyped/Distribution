@@ -11,9 +11,9 @@ Winston transport to send error stacks to Elasticsearch APM
 | Full name          | @entropy/winston-elasticsearch-apm |
 | Keywords           | winston, elasticsearch, apm |
 | # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 427 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5447.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40entropy%2Fwinston-elasticsearch-apm)

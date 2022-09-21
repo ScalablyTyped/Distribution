@@ -1,6 +1,5 @@
 package typings.timeago
 
-import typings.std.Date
 import typings.std.Element
 import typings.timeago.Timeago.TimeagoStatic
 import org.scalablytyped.runtime.StObject
@@ -10,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryStatic extends StObject {
   
   def timeago(timestamp: String): String
+  def timeago(timestamp: js.Date): String
   def timeago(timestamp: Double): String
-  def timeago(timestamp: Date): String
   def timeago(timestamp: Element): String
   @JSName("timeago")
   var timeago_Original: TimeagoStatic

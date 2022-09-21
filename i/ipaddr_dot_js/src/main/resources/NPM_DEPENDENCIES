@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipaddr.js" : "1.9.1"
+      "ipaddr.js" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipaddr.js" : "1.9.1"
+      "ipaddr.js" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

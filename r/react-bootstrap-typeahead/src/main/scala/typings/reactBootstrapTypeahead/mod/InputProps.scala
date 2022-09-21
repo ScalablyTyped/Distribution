@@ -3,6 +3,7 @@ package typings.reactBootstrapTypeahead.mod
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -13,6 +14,7 @@ import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -52,13 +54,13 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.dialog
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.done
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.email
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.enter
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.environment
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.execute
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.go
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.grammar
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.grid
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.horizontal
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inherit
-import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.input
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.link
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.list
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.listbox
@@ -87,6 +89,7 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.text
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.time
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.tree
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.url
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.user
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.vertical
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.yes
 import typings.std.Event
@@ -95,7 +98,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent react-bootstrap-typeahead.react-bootstrap-typeahead.Omit<react.react.InputHTMLAttributes<'input'>, 'onBlur' | 'onChange' | 'onFocus' | 'onKeyDown'> */
+/* Inlined parent react-bootstrap-typeahead.react-bootstrap-typeahead.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'onBlur' | 'onChange' | 'onFocus' | 'onKeyDown'> */
 trait InputProps extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
@@ -108,11 +111,11 @@ trait InputProps extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
@@ -130,21 +133,21 @@ trait InputProps extends StObject {
   
   var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
@@ -158,11 +161,11 @@ trait InputProps extends StObject {
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
@@ -174,13 +177,13 @@ trait InputProps extends StObject {
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-required`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
@@ -190,7 +193,7 @@ trait InputProps extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
@@ -214,7 +217,7 @@ trait InputProps extends StObject {
   
   var autoSave: js.UndefOr[String] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   var checked: js.UndefOr[Boolean] = js.undefined
   
@@ -264,7 +267,7 @@ trait InputProps extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
@@ -296,155 +299,155 @@ trait InputProps extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var onAbort: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[input]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[input]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
   
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[input]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
   
-  var onAuxClick: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[input]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[input]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[input]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[input]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCopy: js.UndefOr[ClipboardEventHandler[input]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[input]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[input]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[input]] = js.undefined
+  var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[input]] = js.undefined
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[input]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[input]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onLoad: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[input]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[input]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerDown: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[input]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[input]] = js.undefined
+  var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onScroll: js.UndefOr[UIEventHandler[input]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onSelect: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[input]] = js.undefined
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[TouchEventHandler[input]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[input]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[input]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[input]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[input]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[input]] = js.undefined
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   
-  var onWheel: js.UndefOr[WheelEventHandler[input]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
   
   var pattern: js.UndefOr[String] = js.undefined
   
@@ -464,7 +467,7 @@ trait InputProps extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
@@ -493,7 +496,7 @@ trait InputProps extends StObject {
   
   var translate: js.UndefOr[yes | no] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
@@ -534,7 +537,7 @@ object InputProps {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -542,7 +545,7 @@ object InputProps {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -578,7 +581,7 @@ object InputProps {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -590,7 +593,7 @@ object InputProps {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -598,7 +601,7 @@ object InputProps {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -606,7 +609,7 @@ object InputProps {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -634,15 +637,15 @@ object InputProps {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -666,7 +669,7 @@ object InputProps {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -676,7 +679,7 @@ object InputProps {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -696,7 +699,7 @@ object InputProps {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -744,7 +747,7 @@ object InputProps {
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -792,7 +795,7 @@ object InputProps {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
@@ -846,7 +849,7 @@ object InputProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -910,303 +913,303 @@ object InputProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnAbort(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+    inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnAnimationEnd(value: AnimationEvent[input] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+    inline def setOnAnimationEnd(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
     inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
-    inline def setOnAnimationIteration(value: AnimationEvent[input] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+    inline def setOnAnimationIteration(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
     
     inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
-    inline def setOnAnimationStart(value: AnimationEvent[input] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+    inline def setOnAnimationStart(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
-    inline def setOnAuxClick(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+    inline def setOnAuxClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
     inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
-    inline def setOnBeforeInput(value: FormEvent[input] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+    inline def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnCanPlay(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+    inline def setOnCanPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
-    inline def setOnCanPlayThrough(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+    inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
     
     inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
     
     inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
-    inline def setOnClick(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnCompositionEnd(value: CompositionEvent[input] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+    inline def setOnCompositionEnd(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
     inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
-    inline def setOnCompositionStart(value: CompositionEvent[input] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+    inline def setOnCompositionStart(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
     
     inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
-    inline def setOnCompositionUpdate(value: CompositionEvent[input] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+    inline def setOnCompositionUpdate(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    inline def setOnContextMenu(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
-    inline def setOnCopy(value: ClipboardEvent[input] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+    inline def setOnCopy(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
     
     inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
-    inline def setOnCut(value: ClipboardEvent[input] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+    inline def setOnCut(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDoubleClick(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnDoubleClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
-    inline def setOnDrag(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragEnd(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    inline def setOnDragEnter(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+    inline def setOnDragEnter(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
     
     inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
-    inline def setOnDragExit(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+    inline def setOnDragExit(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
     
     inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
-    inline def setOnDragLeave(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+    inline def setOnDragLeave(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
     
     inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
-    inline def setOnDragOver(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+    inline def setOnDragOver(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
     
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
-    inline def setOnDragStart(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    inline def setOnDrop(value: DragEvent[input] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+    inline def setOnDrop(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
     
     inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
-    inline def setOnDurationChange(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+    inline def setOnDurationChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
-    inline def setOnEmptied(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+    inline def setOnEmptied(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
     
     inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
-    inline def setOnEncrypted(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+    inline def setOnEncrypted(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
     
     inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
-    inline def setOnEnded(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+    inline def setOnEnded(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnError(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnInput(value: FormEvent[input] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+    inline def setOnInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
     inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
-    inline def setOnInvalid(value: FormEvent[input] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+    inline def setOnInvalid(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeyPress(value: KeyboardEvent[input] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+    inline def setOnKeyPress(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
     inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
-    inline def setOnKeyUp(value: KeyboardEvent[input] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
-    inline def setOnLoad(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    inline def setOnLoadStart(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+    inline def setOnLoadStart(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
     
     inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnLoadedData(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+    inline def setOnLoadedData(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
     
     inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
-    inline def setOnLoadedMetadata(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+    inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
     
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnMouseDown(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    inline def setOnMouseEnter(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseLeave(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
-    inline def setOnMouseMove(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    inline def setOnMouseOut(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    inline def setOnMouseOut(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    inline def setOnMouseOver(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    inline def setOnMouseOver(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    inline def setOnMouseUp(value: MouseEvent[input, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    inline def setOnMouseUp(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
-    inline def setOnPaste(value: ClipboardEvent[input] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+    inline def setOnPaste(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
     inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
-    inline def setOnPause(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+    inline def setOnPause(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
-    inline def setOnPlay(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+    inline def setOnPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
-    inline def setOnPlaying(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+    inline def setOnPlaying(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
     
     inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
-    inline def setOnPointerCancel(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    inline def setOnPointerCancel(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
     inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
-    inline def setOnPointerDown(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    inline def setOnPointerDown(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
     
     inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
-    inline def setOnPointerEnter(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    inline def setOnPointerEnter(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
     
     inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
-    inline def setOnPointerLeave(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    inline def setOnPointerLeave(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
     
     inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
-    inline def setOnPointerMove(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    inline def setOnPointerMove(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
     
     inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
-    inline def setOnPointerOut(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+    inline def setOnPointerOut(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
     
     inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
-    inline def setOnPointerOver(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+    inline def setOnPointerOver(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
     
     inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
-    inline def setOnPointerUp(value: PointerEvent[input] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    inline def setOnPointerUp(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
-    inline def setOnProgress(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
-    inline def setOnRateChange(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+    inline def setOnRateChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
     
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
-    inline def setOnReset(value: FormEvent[input] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+    inline def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
-    inline def setOnScroll(value: UIEvent[input, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSeeked(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+    inline def setOnSeeked(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
-    inline def setOnSeeking(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+    inline def setOnSeeking(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
-    inline def setOnSelect(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnStalled(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+    inline def setOnStalled(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     
     inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
-    inline def setOnSubmit(value: FormEvent[input] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    inline def setOnSubmit(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
-    inline def setOnSuspend(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+    inline def setOnSuspend(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
     
     inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
-    inline def setOnTimeUpdate(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+    inline def setOnTimeUpdate(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
-    inline def setOnTouchCancel(value: TouchEvent[input] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    inline def setOnTouchCancel(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
     inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
-    inline def setOnTouchEnd(value: TouchEvent[input] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    inline def setOnTouchEnd(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
-    inline def setOnTouchMove(value: TouchEvent[input] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    inline def setOnTouchMove(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
-    inline def setOnTouchStart(value: TouchEvent[input] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    inline def setOnTouchStart(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setOnTransitionEnd(value: TransitionEvent[input] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+    inline def setOnTransitionEnd(value: TransitionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
-    inline def setOnVolumeChange(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+    inline def setOnVolumeChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
-    inline def setOnWaiting(value: SyntheticEvent[input, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+    inline def setOnWaiting(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
-    inline def setOnWheel(value: WheelEvent[input] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+    inline def setOnWheel(value: WheelEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
@@ -1246,7 +1249,7 @@ object InputProps {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -1302,7 +1305,7 @@ object InputProps {
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -1318,7 +1321,7 @@ object InputProps {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
     

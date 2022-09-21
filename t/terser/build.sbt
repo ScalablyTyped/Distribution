@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "terser"
-version := "5.5.0-c73fc5"
-scalaVersion := "3.0.1"
+version := "5.15.0-3c5d1c"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "jridgewell__gen-mapping" % "0.3.2-dfc28b",
+  "org.scalablytyped" %%% "jridgewell__trace-mapping" % "0.3.15-7a644b",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,12 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.script
 
+import typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** makes it possible to generate the adapters from specific interfaces to the interface {@link XAllListener} . */
-type AllListenerAdapter = typings.activexLibreoffice.com_.sun.star.script.XAllListenerAdapterService
+type AllListenerAdapter = XAllListenerAdapterService
 
 /**
   * is thrown by an attacher if an adapter service cannot create the appropriate adapter.
@@ -14,7 +16,7 @@ type AllListenerAdapter = typings.activexLibreoffice.com_.sun.star.script.XAllLi
   * @see com.sun.star.script.XEventAttacher
   * @see com.sun.star.script.XEventAttacherManager
   */
-type CannotCreateAdapterException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type CannotCreateAdapterException = Exception
 
 /**
   * This service provides a widening converter converting from one type to another, if possible.
@@ -38,7 +40,7 @@ type CannotCreateAdapterException = typings.activexLibreoffice.com_.sun.star.uno
   * length of the string is 1 or 0.14: only converts if the types are equal or the source type is derived from the destination type.15: only converts if
   * each element of the source sequence can be converted to an element of the destination sequence.
   */
-type Converter = typings.activexLibreoffice.com_.sun.star.script.XTypeConverter
+type Converter = XTypeConverter
 
 /**
   * service that any scripting engine must implement.
@@ -47,7 +49,7 @@ type Converter = typings.activexLibreoffice.com_.sun.star.script.XTypeConverter
   * com.sun.star.script.XInvocation} .
   * @deprecated Deprecated
   */
-type Engine = typings.activexLibreoffice.com_.sun.star.script.XEngine
+type Engine = XEngine
 
 /**
   * factory service that allows construction of {@link Invocation} objects.
@@ -57,7 +59,7 @@ type Engine = typings.activexLibreoffice.com_.sun.star.script.XEngine
   *
   * The adapter has to support {@link com.sun.star.script.XInvocation} . The adapter may also support {@link com.sun.star.script.XInvocation2} .
   */
-type Invocation = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+type Invocation = XSingleServiceFactory
 
 /**
   * Provides functionality to create an adapter that supports (a) special interface type(s) and maps calls to the interface's methods to an invocation
@@ -69,7 +71,7 @@ type Invocation = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFa
   * The adapter has to support {@link com.sun.star.script.XInvocationAdapterFactory} . The adapter may also support {@link
   * com.sun.star.script.XInvocationAdapterFactory2} .
   */
-type InvocationAdapterFactory = typings.activexLibreoffice.com_.sun.star.script.XInvocationAdapterFactory2
+type InvocationAdapterFactory = XInvocationAdapterFactory2
 
 /**
   * service is implementation of a {@link JavaScript} interpreter.
@@ -77,16 +79,16 @@ type InvocationAdapterFactory = typings.activexLibreoffice.com_.sun.star.script.
   * The interpreter should be similar to {@link JavaScript} 1.1. The exact behavior will be specified in future.
   * @deprecated Deprecated
   */
-type JavaScript = typings.activexLibreoffice.com_.sun.star.script.Engine
+type JavaScript = Engine
 
 /**
   * is thrown when an operation on a unloaded library is attempted which requires the library being loaded.
   * @since OOo 3.0
   */
-type LibraryNotLoadedException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type LibraryNotLoadedException = Exception
 
 /**
   * Provides documentation for UNO services
   * @since LibreOffice 5.1
   */
-type theServiceDocumenter = typings.activexLibreoffice.com_.sun.star.script.XServiceDocumenter
+type theServiceDocumenter = XServiceDocumenter

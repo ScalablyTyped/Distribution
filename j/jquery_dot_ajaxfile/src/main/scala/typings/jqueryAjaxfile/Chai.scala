@@ -1,7 +1,5 @@
 package typings.jqueryAjaxfile
 
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,202 +13,202 @@ object Chai {
       * @param expression Expression to test for truthiness.
       * @param message Message to display on error.
       */
-    def apply(expression: js.Any): Unit = js.native
-    def apply(expression: js.Any, message: String): Unit = js.native
+    def apply(expression: Any): Unit = js.native
+    def apply(expression: Any, message: String): Unit = js.native
     
     def Throw(fn: js.Function): Unit = js.native
     def Throw(fn: js.Function, errType: js.Function): Unit = js.native
     def Throw(fn: js.Function, errType: js.Function, msg: String): Unit = js.native
-    def Throw(fn: js.Function, errType: js.Function, regExp: RegExp): Unit = js.native
+    def Throw(fn: js.Function, errType: js.Function, regExp: js.RegExp): Unit = js.native
     def Throw(fn: js.Function, msg: String): Unit = js.native
-    def Throw(fn: js.Function, regExp: RegExp): Unit = js.native
+    def Throw(fn: js.Function, regExp: js.RegExp): Unit = js.native
     
     def closeTo(act: Double, exp: Double, delta: Double): Unit = js.native
     def closeTo(act: Double, exp: Double, delta: Double, msg: String): Unit = js.native
     
-    def deepEqual(act: js.Any, exp: js.Any): Unit = js.native
-    def deepEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def deepEqual(act: Any, exp: Any): Unit = js.native
+    def deepEqual(act: Any, exp: Any, msg: String): Unit = js.native
     
     def deepProperty(obj: Object, prop: String): Unit = js.native
     def deepProperty(obj: Object, prop: String, msg: String): Unit = js.native
     
-    def deepPropertyNotVal(obj: Object, prop: String, `val`: js.Any): Unit = js.native
-    def deepPropertyNotVal(obj: Object, prop: String, `val`: js.Any, msg: String): Unit = js.native
+    def deepPropertyNotVal(obj: Object, prop: String, `val`: Any): Unit = js.native
+    def deepPropertyNotVal(obj: Object, prop: String, `val`: Any, msg: String): Unit = js.native
     
-    def deepPropertyVal(obj: Object, prop: String, `val`: js.Any): Unit = js.native
-    def deepPropertyVal(obj: Object, prop: String, `val`: js.Any, msg: String): Unit = js.native
+    def deepPropertyVal(obj: Object, prop: String, `val`: Any): Unit = js.native
+    def deepPropertyVal(obj: Object, prop: String, `val`: Any, msg: String): Unit = js.native
     
     def doesNotThrow(fn: js.Function): Unit = js.native
     def doesNotThrow(fn: js.Function, errType: js.Function): Unit = js.native
     def doesNotThrow(fn: js.Function, errType: js.Function, msg: String): Unit = js.native
-    def doesNotThrow(fn: js.Function, errType: js.Function, regExp: RegExp): Unit = js.native
+    def doesNotThrow(fn: js.Function, errType: js.Function, regExp: js.RegExp): Unit = js.native
     def doesNotThrow(fn: js.Function, msg: String): Unit = js.native
-    def doesNotThrow(fn: js.Function, regExp: RegExp): Unit = js.native
+    def doesNotThrow(fn: js.Function, regExp: js.RegExp): Unit = js.native
     
-    def equal(act: js.Any, exp: js.Any): Unit = js.native
-    def equal(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def equal(act: Any, exp: Any): Unit = js.native
+    def equal(act: Any, exp: Any, msg: String): Unit = js.native
     
     def fail(): Unit = js.native
-    def fail(actual: js.Any): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, msg: String, operator: String): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, msg: Unit, operator: String): Unit = js.native
-    def fail(actual: js.Any, expected: Unit, msg: String): Unit = js.native
-    def fail(actual: js.Any, expected: Unit, msg: String, operator: String): Unit = js.native
-    def fail(actual: js.Any, expected: Unit, msg: Unit, operator: String): Unit = js.native
-    def fail(actual: Unit, expected: js.Any): Unit = js.native
-    def fail(actual: Unit, expected: js.Any, msg: String): Unit = js.native
-    def fail(actual: Unit, expected: js.Any, msg: String, operator: String): Unit = js.native
-    def fail(actual: Unit, expected: js.Any, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: Any): Unit = js.native
+    def fail(actual: Any, expected: Any): Unit = js.native
+    def fail(actual: Any, expected: Any, msg: String): Unit = js.native
+    def fail(actual: Any, expected: Any, msg: String, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Any, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Unit, msg: String): Unit = js.native
+    def fail(actual: Any, expected: Unit, msg: String, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Unit, msg: Unit, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: Any): Unit = js.native
+    def fail(actual: Unit, expected: Any, msg: String): Unit = js.native
+    def fail(actual: Unit, expected: Any, msg: String, operator: String): Unit = js.native
+    def fail(actual: Unit, expected: Any, msg: Unit, operator: String): Unit = js.native
     def fail(actual: Unit, expected: Unit, msg: String): Unit = js.native
     def fail(actual: Unit, expected: Unit, msg: String, operator: String): Unit = js.native
     def fail(actual: Unit, expected: Unit, msg: Unit, operator: String): Unit = js.native
     
-    def ifError(`val`: js.Any): Unit = js.native
-    def ifError(`val`: js.Any, msg: String): Unit = js.native
+    def ifError(`val`: Any): Unit = js.native
+    def ifError(`val`: Any, msg: String): Unit = js.native
     
-    def include(exp: String, inc: js.Any): Unit = js.native
-    def include(exp: String, inc: js.Any, msg: String): Unit = js.native
-    def include(exp: js.Array[js.Any], inc: js.Any): Unit = js.native
-    def include(exp: js.Array[js.Any], inc: js.Any, msg: String): Unit = js.native
+    def include(exp: String, inc: Any): Unit = js.native
+    def include(exp: String, inc: Any, msg: String): Unit = js.native
+    def include(exp: js.Array[Any], inc: Any): Unit = js.native
+    def include(exp: js.Array[Any], inc: Any, msg: String): Unit = js.native
     
-    def includeMembers(set1: js.Array[js.Any], set2: js.Array[js.Any]): Unit = js.native
-    def includeMembers(set1: js.Array[js.Any], set2: js.Array[js.Any], msg: String): Unit = js.native
+    def includeMembers(set1: js.Array[Any], set2: js.Array[Any]): Unit = js.native
+    def includeMembers(set1: js.Array[Any], set2: js.Array[Any], msg: String): Unit = js.native
     
-    def instanceOf(`val`: js.Any, `type`: js.Function): Unit = js.native
-    def instanceOf(`val`: js.Any, `type`: js.Function, msg: String): Unit = js.native
+    def instanceOf(`val`: Any, `type`: js.Function): Unit = js.native
+    def instanceOf(`val`: Any, `type`: js.Function, msg: String): Unit = js.native
     
-    def isArray(`val`: js.Any): Unit = js.native
-    def isArray(`val`: js.Any, msg: String): Unit = js.native
+    def isArray(`val`: Any): Unit = js.native
+    def isArray(`val`: Any, msg: String): Unit = js.native
     
-    def isBoolean(`val`: js.Any): Unit = js.native
-    def isBoolean(`val`: js.Any, msg: String): Unit = js.native
+    def isBoolean(`val`: Any): Unit = js.native
+    def isBoolean(`val`: Any, msg: String): Unit = js.native
     
-    def isDefined(`val`: js.Any): Unit = js.native
-    def isDefined(`val`: js.Any, msg: String): Unit = js.native
+    def isDefined(`val`: Any): Unit = js.native
+    def isDefined(`val`: Any, msg: String): Unit = js.native
     
-    def isFalse(`val`: js.Any): Unit = js.native
-    def isFalse(`val`: js.Any, msg: String): Unit = js.native
+    def isFalse(`val`: Any): Unit = js.native
+    def isFalse(`val`: Any, msg: String): Unit = js.native
     
-    def isFunction(`val`: js.Any): Unit = js.native
-    def isFunction(`val`: js.Any, msg: String): Unit = js.native
+    def isFunction(`val`: Any): Unit = js.native
+    def isFunction(`val`: Any, msg: String): Unit = js.native
     
-    def isNotArray(`val`: js.Any): Unit = js.native
-    def isNotArray(`val`: js.Any, msg: String): Unit = js.native
+    def isNotArray(`val`: Any): Unit = js.native
+    def isNotArray(`val`: Any, msg: String): Unit = js.native
     
-    def isNotBoolean(`val`: js.Any): Unit = js.native
-    def isNotBoolean(`val`: js.Any, msg: String): Unit = js.native
+    def isNotBoolean(`val`: Any): Unit = js.native
+    def isNotBoolean(`val`: Any, msg: String): Unit = js.native
     
-    def isNotFunction(`val`: js.Any): Unit = js.native
-    def isNotFunction(`val`: js.Any, msg: String): Unit = js.native
+    def isNotFunction(`val`: Any): Unit = js.native
+    def isNotFunction(`val`: Any, msg: String): Unit = js.native
     
-    def isNotNull(`val`: js.Any): Unit = js.native
-    def isNotNull(`val`: js.Any, msg: String): Unit = js.native
+    def isNotNull(`val`: Any): Unit = js.native
+    def isNotNull(`val`: Any, msg: String): Unit = js.native
     
-    def isNotNumber(`val`: js.Any): Unit = js.native
-    def isNotNumber(`val`: js.Any, msg: String): Unit = js.native
+    def isNotNumber(`val`: Any): Unit = js.native
+    def isNotNumber(`val`: Any, msg: String): Unit = js.native
     
-    def isNotObject(`val`: js.Any): Unit = js.native
-    def isNotObject(`val`: js.Any, msg: String): Unit = js.native
+    def isNotObject(`val`: Any): Unit = js.native
+    def isNotObject(`val`: Any, msg: String): Unit = js.native
     
-    def isNotString(`val`: js.Any): Unit = js.native
-    def isNotString(`val`: js.Any, msg: String): Unit = js.native
+    def isNotString(`val`: Any): Unit = js.native
+    def isNotString(`val`: Any, msg: String): Unit = js.native
     
-    def isNull(`val`: js.Any): Unit = js.native
-    def isNull(`val`: js.Any, msg: String): Unit = js.native
+    def isNull(`val`: Any): Unit = js.native
+    def isNull(`val`: Any, msg: String): Unit = js.native
     
-    def isNumber(`val`: js.Any): Unit = js.native
-    def isNumber(`val`: js.Any, msg: String): Unit = js.native
+    def isNumber(`val`: Any): Unit = js.native
+    def isNumber(`val`: Any, msg: String): Unit = js.native
     
-    def isObject(`val`: js.Any): Unit = js.native
-    def isObject(`val`: js.Any, msg: String): Unit = js.native
+    def isObject(`val`: Any): Unit = js.native
+    def isObject(`val`: Any, msg: String): Unit = js.native
     
-    def isString(`val`: js.Any): Unit = js.native
-    def isString(`val`: js.Any, msg: String): Unit = js.native
+    def isString(`val`: Any): Unit = js.native
+    def isString(`val`: Any, msg: String): Unit = js.native
     
-    def isTrue(`val`: js.Any): Unit = js.native
-    def isTrue(`val`: js.Any, msg: String): Unit = js.native
+    def isTrue(`val`: Any): Unit = js.native
+    def isTrue(`val`: Any, msg: String): Unit = js.native
     
-    def isUndefined(`val`: js.Any): Unit = js.native
-    def isUndefined(`val`: js.Any, msg: String): Unit = js.native
+    def isUndefined(`val`: Any): Unit = js.native
+    def isUndefined(`val`: Any, msg: String): Unit = js.native
     
-    def lengthOf(exp: js.Any, len: Double): Unit = js.native
-    def lengthOf(exp: js.Any, len: Double, msg: String): Unit = js.native
+    def lengthOf(exp: Any, len: Double): Unit = js.native
+    def lengthOf(exp: Any, len: Double, msg: String): Unit = js.native
     
-    def `match`(exp: js.Any, re: RegExp): Unit = js.native
-    def `match`(exp: js.Any, re: RegExp, msg: String): Unit = js.native
+    def `match`(exp: Any, re: js.RegExp): Unit = js.native
+    def `match`(exp: Any, re: js.RegExp, msg: String): Unit = js.native
     
-    def notDeepEqual(act: js.Any, exp: js.Any): Unit = js.native
-    def notDeepEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def notDeepEqual(act: Any, exp: Any): Unit = js.native
+    def notDeepEqual(act: Any, exp: Any, msg: String): Unit = js.native
     
     def notDeepProperty(obj: Object, prop: String): Unit = js.native
     def notDeepProperty(obj: Object, prop: String, msg: String): Unit = js.native
     
-    def notEqual(act: js.Any, exp: js.Any): Unit = js.native
-    def notEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def notEqual(act: Any, exp: Any): Unit = js.native
+    def notEqual(act: Any, exp: Any, msg: String): Unit = js.native
     
-    def notInclude(exp: String, inc: js.Any): Unit = js.native
-    def notInclude(exp: String, inc: js.Any, msg: String): Unit = js.native
-    def notInclude(exp: js.Array[js.Any], inc: js.Any): Unit = js.native
-    def notInclude(exp: js.Array[js.Any], inc: js.Any, msg: String): Unit = js.native
+    def notInclude(exp: String, inc: Any): Unit = js.native
+    def notInclude(exp: String, inc: Any, msg: String): Unit = js.native
+    def notInclude(exp: js.Array[Any], inc: Any): Unit = js.native
+    def notInclude(exp: js.Array[Any], inc: Any, msg: String): Unit = js.native
     
-    def notInstanceOf(`val`: js.Any, `type`: js.Function): Unit = js.native
-    def notInstanceOf(`val`: js.Any, `type`: js.Function, msg: String): Unit = js.native
+    def notInstanceOf(`val`: Any, `type`: js.Function): Unit = js.native
+    def notInstanceOf(`val`: Any, `type`: js.Function, msg: String): Unit = js.native
     
-    def notMatch(exp: js.Any, re: RegExp): Unit = js.native
-    def notMatch(exp: js.Any, re: RegExp, msg: String): Unit = js.native
+    def notMatch(exp: Any, re: js.RegExp): Unit = js.native
+    def notMatch(exp: Any, re: js.RegExp, msg: String): Unit = js.native
     
-    def notOk(`val`: js.Any): Unit = js.native
-    def notOk(`val`: js.Any, msg: String): Unit = js.native
+    def notOk(`val`: Any): Unit = js.native
+    def notOk(`val`: Any, msg: String): Unit = js.native
     
     def notProperty(obj: Object, prop: String): Unit = js.native
     def notProperty(obj: Object, prop: String, msg: String): Unit = js.native
     
-    def notStrictEqual(act: js.Any, exp: js.Any): Unit = js.native
-    def notStrictEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def notStrictEqual(act: Any, exp: Any): Unit = js.native
+    def notStrictEqual(act: Any, exp: Any, msg: String): Unit = js.native
     
-    def notTypeOf(`val`: js.Any, `type`: String): Unit = js.native
-    def notTypeOf(`val`: js.Any, `type`: String, msg: String): Unit = js.native
+    def notTypeOf(`val`: Any, `type`: String): Unit = js.native
+    def notTypeOf(`val`: Any, `type`: String, msg: String): Unit = js.native
     
-    def ok(`val`: js.Any): Unit = js.native
-    def ok(`val`: js.Any, msg: String): Unit = js.native
+    def ok(`val`: Any): Unit = js.native
+    def ok(`val`: Any, msg: String): Unit = js.native
     
-    def operator(`val`: js.Any, operator: String, val2: js.Any): Unit = js.native
-    def operator(`val`: js.Any, operator: String, val2: js.Any, msg: String): Unit = js.native
+    def operator(`val`: Any, operator: String, val2: Any): Unit = js.native
+    def operator(`val`: Any, operator: String, val2: Any, msg: String): Unit = js.native
     
     def property(obj: Object, prop: String): Unit = js.native
     def property(obj: Object, prop: String, msg: String): Unit = js.native
     
-    def propertyNotVal(obj: Object, prop: String, `val`: js.Any): Unit = js.native
-    def propertyNotVal(obj: Object, prop: String, `val`: js.Any, msg: String): Unit = js.native
+    def propertyNotVal(obj: Object, prop: String, `val`: Any): Unit = js.native
+    def propertyNotVal(obj: Object, prop: String, `val`: Any, msg: String): Unit = js.native
     
-    def propertyVal(obj: Object, prop: String, `val`: js.Any): Unit = js.native
-    def propertyVal(obj: Object, prop: String, `val`: js.Any, msg: String): Unit = js.native
+    def propertyVal(obj: Object, prop: String, `val`: Any): Unit = js.native
+    def propertyVal(obj: Object, prop: String, `val`: Any, msg: String): Unit = js.native
     
-    def sameMembers(set1: js.Array[js.Any], set2: js.Array[js.Any]): Unit = js.native
-    def sameMembers(set1: js.Array[js.Any], set2: js.Array[js.Any], msg: String): Unit = js.native
+    def sameMembers(set1: js.Array[Any], set2: js.Array[Any]): Unit = js.native
+    def sameMembers(set1: js.Array[Any], set2: js.Array[Any], msg: String): Unit = js.native
     
-    def strictEqual(act: js.Any, exp: js.Any): Unit = js.native
-    def strictEqual(act: js.Any, exp: js.Any, msg: String): Unit = js.native
+    def strictEqual(act: Any, exp: Any): Unit = js.native
+    def strictEqual(act: Any, exp: Any, msg: String): Unit = js.native
     
     //alias frenzy
     def `throw`(fn: js.Function): Unit = js.native
     def `throw`(fn: js.Function, errType: js.Function): Unit = js.native
     def `throw`(fn: js.Function, errType: js.Function, msg: String): Unit = js.native
-    def `throw`(fn: js.Function, errType: js.Function, regExp: RegExp): Unit = js.native
+    def `throw`(fn: js.Function, errType: js.Function, regExp: js.RegExp): Unit = js.native
     def `throw`(fn: js.Function, msg: String): Unit = js.native
-    def `throw`(fn: js.Function, regExp: RegExp): Unit = js.native
+    def `throw`(fn: js.Function, regExp: js.RegExp): Unit = js.native
     
     def throws(fn: js.Function): Unit = js.native
     def throws(fn: js.Function, errType: js.Function): Unit = js.native
     def throws(fn: js.Function, errType: js.Function, msg: String): Unit = js.native
-    def throws(fn: js.Function, errType: js.Function, regExp: RegExp): Unit = js.native
+    def throws(fn: js.Function, errType: js.Function, regExp: js.RegExp): Unit = js.native
     def throws(fn: js.Function, msg: String): Unit = js.native
-    def throws(fn: js.Function, regExp: RegExp): Unit = js.native
+    def throws(fn: js.Function, regExp: js.RegExp): Unit = js.native
     
-    def typeOf(`val`: js.Any, `type`: String): Unit = js.native
-    def typeOf(`val`: js.Any, `type`: String, msg: String): Unit = js.native
+    def typeOf(`val`: Any, `type`: String): Unit = js.native
+    def typeOf(`val`: Any, `type`: String, msg: String): Unit = js.native
   }
   
   type AssertStatic = Assert
@@ -228,22 +226,22 @@ object Chai {
     var Arguments_Original: Assertion = js.native
     
     def Throw(): Assertion = js.native
+    def Throw(constructor: js.Error): Assertion = js.native
+    def Throw(constructor: js.Error, expected: String): Assertion = js.native
+    def Throw(constructor: js.Error, expected: String, message: String): Assertion = js.native
+    def Throw(constructor: js.Error, expected: js.RegExp): Assertion = js.native
+    def Throw(constructor: js.Error, expected: js.RegExp, message: String): Assertion = js.native
+    def Throw(constructor: js.Error, expected: Unit, message: String): Assertion = js.native
     def Throw(constructor: js.Function): Assertion = js.native
     def Throw(constructor: js.Function, expected: String): Assertion = js.native
     def Throw(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def Throw(constructor: js.Function, expected: js.RegExp): Assertion = js.native
+    def Throw(constructor: js.Function, expected: js.RegExp, message: String): Assertion = js.native
     def Throw(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
-    def Throw(constructor: js.Function, expected: RegExp): Assertion = js.native
-    def Throw(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
-    def Throw(constructor: Error): Assertion = js.native
-    def Throw(constructor: Error, expected: String): Assertion = js.native
-    def Throw(constructor: Error, expected: String, message: String): Assertion = js.native
-    def Throw(constructor: Error, expected: Unit, message: String): Assertion = js.native
-    def Throw(constructor: Error, expected: RegExp): Assertion = js.native
-    def Throw(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def Throw(expected: String): Assertion = js.native
     def Throw(expected: String, message: String): Assertion = js.native
-    def Throw(expected: RegExp): Assertion = js.native
-    def Throw(expected: RegExp, message: String): Assertion = js.native
+    def Throw(expected: js.RegExp): Assertion = js.native
+    def Throw(expected: js.RegExp, message: String): Assertion = js.native
     @JSName("Throw")
     var Throw_Original: Throw = js.native
     
@@ -281,28 +279,26 @@ object Chai {
     @JSName("empty")
     var empty_Original: Assertion = js.native
     
-    def eq(value: js.Any): Assertion = js.native
-    def eq(value: js.Any, message: String): Assertion = js.native
+    def eq(value: Any, message: String): Assertion = js.native
     @JSName("eq")
     var eq_Original: Equal = js.native
     
-    def eql(value: js.Any): Assertion = js.native
-    def eql(value: js.Any, message: String): Assertion = js.native
+    def eql(value: Any): Assertion = js.native
+    def eql(value: Any, message: String): Assertion = js.native
     @JSName("eql")
     var eql_Original: Equal = js.native
     
-    def eqls(value: js.Any): Assertion = js.native
-    def eqls(value: js.Any, message: String): Assertion = js.native
+    def eqls(value: Any): Assertion = js.native
+    def eqls(value: Any, message: String): Assertion = js.native
     @JSName("eqls")
     var eqls_Original: Equal = js.native
     
-    def equal(value: js.Any): Assertion = js.native
-    def equal(value: js.Any, message: String): Assertion = js.native
+    def equal(value: Any): Assertion = js.native
+    def equal(value: Any, message: String): Assertion = js.native
     @JSName("equal")
     var equal_Original: Equal = js.native
     
-    def equals(value: js.Any): Assertion = js.native
-    def equals(value: js.Any, message: String): Assertion = js.native
+    def equals(value: Any, message: String): Assertion = js.native
     @JSName("equals")
     var equals_Original: Equal = js.native
     
@@ -338,7 +334,7 @@ object Chai {
     def key(string: String): Assertion = js.native
     
     def keys(keys: String*): Assertion = js.native
-    def keys(keys: js.Array[js.Any]): Assertion = js.native
+    def keys(keys: js.Array[Any]): Assertion = js.native
     @JSName("keys")
     var keys_Original: Keys = js.native
     
@@ -355,11 +351,11 @@ object Chai {
     
     def `match`(regexp: String): Assertion = js.native
     def `match`(regexp: String, message: String): Assertion = js.native
-    def `match`(regexp: RegExp): Assertion = js.native
-    def `match`(regexp: RegExp, message: String): Assertion = js.native
+    def `match`(regexp: js.RegExp): Assertion = js.native
+    def `match`(regexp: js.RegExp, message: String): Assertion = js.native
     
-    def members(set: js.Array[js.Any]): Assertion = js.native
-    def members(set: js.Array[js.Any], message: String): Assertion = js.native
+    def members(set: js.Array[Any]): Assertion = js.native
+    def members(set: js.Array[Any], message: String): Assertion = js.native
     @JSName("members")
     var members_Original: Members = js.native
     
@@ -384,8 +380,8 @@ object Chai {
     var ownProperty_Original: OwnProperty = js.native
     
     def property(name: String): Assertion = js.native
-    def property(name: String, value: js.Any): Assertion = js.native
-    def property(name: String, value: js.Any, message: String): Assertion = js.native
+    def property(name: String, value: Any): Assertion = js.native
+    def property(name: String, value: Any, message: String): Assertion = js.native
     def property(name: String, value: Unit, message: String): Assertion = js.native
     @JSName("property")
     var property_Original: Property = js.native
@@ -400,42 +396,42 @@ object Chai {
     def string(string: String, message: String): Assertion = js.native
     
     def `throw`(): Assertion = js.native
+    def `throw`(constructor: js.Error): Assertion = js.native
+    def `throw`(constructor: js.Error, expected: String): Assertion = js.native
+    def `throw`(constructor: js.Error, expected: String, message: String): Assertion = js.native
+    def `throw`(constructor: js.Error, expected: js.RegExp): Assertion = js.native
+    def `throw`(constructor: js.Error, expected: js.RegExp, message: String): Assertion = js.native
+    def `throw`(constructor: js.Error, expected: Unit, message: String): Assertion = js.native
     def `throw`(constructor: js.Function): Assertion = js.native
     def `throw`(constructor: js.Function, expected: String): Assertion = js.native
     def `throw`(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def `throw`(constructor: js.Function, expected: js.RegExp): Assertion = js.native
+    def `throw`(constructor: js.Function, expected: js.RegExp, message: String): Assertion = js.native
     def `throw`(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
-    def `throw`(constructor: js.Function, expected: RegExp): Assertion = js.native
-    def `throw`(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
-    def `throw`(constructor: Error): Assertion = js.native
-    def `throw`(constructor: Error, expected: String): Assertion = js.native
-    def `throw`(constructor: Error, expected: String, message: String): Assertion = js.native
-    def `throw`(constructor: Error, expected: Unit, message: String): Assertion = js.native
-    def `throw`(constructor: Error, expected: RegExp): Assertion = js.native
-    def `throw`(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def `throw`(expected: String): Assertion = js.native
     def `throw`(expected: String, message: String): Assertion = js.native
-    def `throw`(expected: RegExp): Assertion = js.native
-    def `throw`(expected: RegExp, message: String): Assertion = js.native
+    def `throw`(expected: js.RegExp): Assertion = js.native
+    def `throw`(expected: js.RegExp, message: String): Assertion = js.native
     @JSName("throw")
     var throw_Original: Throw = js.native
     
     def throws(): Assertion = js.native
+    def throws(constructor: js.Error): Assertion = js.native
+    def throws(constructor: js.Error, expected: String): Assertion = js.native
+    def throws(constructor: js.Error, expected: String, message: String): Assertion = js.native
+    def throws(constructor: js.Error, expected: js.RegExp): Assertion = js.native
+    def throws(constructor: js.Error, expected: js.RegExp, message: String): Assertion = js.native
+    def throws(constructor: js.Error, expected: Unit, message: String): Assertion = js.native
     def throws(constructor: js.Function): Assertion = js.native
     def throws(constructor: js.Function, expected: String): Assertion = js.native
     def throws(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def throws(constructor: js.Function, expected: js.RegExp): Assertion = js.native
+    def throws(constructor: js.Function, expected: js.RegExp, message: String): Assertion = js.native
     def throws(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
-    def throws(constructor: js.Function, expected: RegExp): Assertion = js.native
-    def throws(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
-    def throws(constructor: Error): Assertion = js.native
-    def throws(constructor: Error, expected: String): Assertion = js.native
-    def throws(constructor: Error, expected: String, message: String): Assertion = js.native
-    def throws(constructor: Error, expected: Unit, message: String): Assertion = js.native
-    def throws(constructor: Error, expected: RegExp): Assertion = js.native
-    def throws(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def throws(expected: String): Assertion = js.native
     def throws(expected: String, message: String): Assertion = js.native
-    def throws(expected: RegExp): Assertion = js.native
-    def throws(expected: RegExp, message: String): Assertion = js.native
+    def throws(expected: js.RegExp): Assertion = js.native
+    def throws(expected: js.RegExp, message: String): Assertion = js.native
     @JSName("throws")
     var throws_Original: Throw = js.native
     
@@ -479,7 +475,7 @@ object Chai {
     }
   }
   
-  type AssertionStatic = js.Function2[/* target */ js.Any, /* message */ js.UndefOr[String], Assertion]
+  type AssertionStatic = js.Function2[/* target */ Any, /* message */ js.UndefOr[String], Assertion]
   
   trait ChaiStatic extends StObject {
     
@@ -487,15 +483,15 @@ object Chai {
       * @param expression Expression to test for truthiness.
       * @param message Message to display on error.
       */
-    def assert(expression: js.Any): Unit
-    def assert(expression: js.Any, message: String): Unit
+    def assert(expression: Any): Unit
+    def assert(expression: Any, message: String): Unit
     @JSName("assert")
     var assert_Original: AssertStatic
     
     var config: Config
     
-    def expect(target: js.Any): Assertion
-    def expect(target: js.Any, message: String): Assertion
+    def expect(target: Any): Assertion
+    def expect(target: Any, message: String): Assertion
     @JSName("expect")
     var expect_Original: ExpectStatic
     
@@ -504,16 +500,16 @@ object Chai {
     /**
       * Provides a way to extend the internals of Chai
       */
-    def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit]): js.Any
+    def use(fn: js.Function2[/* chai */ Any, /* utils */ Any, Unit]): Any
   }
   object ChaiStatic {
     
     inline def apply(
       assert: AssertStatic,
       config: Config,
-      expect: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
+      expect: (/* target */ Any, /* message */ js.UndefOr[String]) => Assertion,
       should: () => Should,
-      use: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any
+      use: js.Function2[/* chai */ Any, /* utils */ Any, Unit] => Any
     ): ChaiStatic = {
       val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], expect = js.Any.fromFunction2(expect), should = js.Any.fromFunction0(should), use = js.Any.fromFunction1(use))
       __obj.asInstanceOf[ChaiStatic]
@@ -525,11 +521,11 @@ object Chai {
       
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setExpect(value: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
+      inline def setExpect(value: (/* target */ Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
       
       inline def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
       
-      inline def setUse(value: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: js.Function2[/* chai */ Any, /* utils */ Any, Unit] => Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   
@@ -552,8 +548,8 @@ object Chai {
   
   trait Deep extends StObject {
     
-    def equal(value: js.Any): Assertion
-    def equal(value: js.Any, message: String): Assertion
+    def equal(value: Any): Assertion
+    def equal(value: Any, message: String): Assertion
     @JSName("equal")
     var equal_Original: Equal
     
@@ -567,8 +563,8 @@ object Chai {
     var include_Original: Include
     
     def property(name: String): Assertion
-    def property(name: String, value: js.Any): Assertion
-    def property(name: String, value: js.Any, message: String): Assertion
+    def property(name: String, value: Any): Assertion
+    def property(name: String, value: Any, message: String): Assertion
     def property(name: String, value: Unit, message: String): Assertion
     @JSName("property")
     var property_Original: Property
@@ -576,9 +572,9 @@ object Chai {
   object Deep {
     
     inline def apply(
-      equal: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
+      equal: (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion,
       include: Include,
-      property: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
+      property: (/* name */ String, /* value */ js.UndefOr[Any], /* message */ js.UndefOr[String]) => Assertion
     ): Deep = {
       val __obj = js.Dynamic.literal(equal = js.Any.fromFunction2(equal), include = include.asInstanceOf[js.Any], property = js.Any.fromFunction3(property))
       __obj.asInstanceOf[Deep]
@@ -586,17 +582,17 @@ object Chai {
     
     extension [Self <: Deep](x: Self) {
       
-      inline def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      inline def setEqual(value: (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
       inline def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setProperty(
-        value: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
+        value: (/* name */ String, /* value */ js.UndefOr[Any], /* message */ js.UndefOr[String]) => Assertion
       ): Self = StObject.set(x, "property", js.Any.fromFunction3(value))
     }
   }
   
-  type Equal = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[String], Assertion]
+  type Equal = js.Function2[/* value */ Any, /* message */ js.UndefOr[String], Assertion]
   
   type ExpectStatic = AssertionStatic
   
@@ -611,12 +607,12 @@ object Chai {
     def apply(value: Object, message: String): Assertion = js.native
     
     def keys(keys: String*): Assertion = js.native
-    def keys(keys: js.Array[js.Any]): Assertion = js.native
+    def keys(keys: js.Array[Any]): Assertion = js.native
     @JSName("keys")
     var keys_Original: Keys = js.native
     
-    def members(set: js.Array[js.Any]): Assertion = js.native
-    def members(set: js.Array[js.Any], message: String): Assertion = js.native
+    def members(set: js.Array[Any]): Assertion = js.native
+    def members(set: js.Array[Any], message: String): Assertion = js.native
     @JSName("members")
     var members_Original: Members = js.native
   }
@@ -627,7 +623,7 @@ object Chai {
   trait Keys extends StObject {
     
     def apply(keys: String*): Assertion = js.native
-    def apply(keys: js.Array[js.Any]): Assertion = js.native
+    def apply(keys: js.Array[Any]): Assertion = js.native
   }
   
   trait LanguageChains extends StObject {
@@ -759,7 +755,7 @@ object Chai {
     def apply(length: Double, message: String): Assertion = js.native
   }
   
-  type Members = js.Function2[/* set */ js.Array[js.Any], /* message */ js.UndefOr[String], Assertion]
+  type Members = js.Function2[/* set */ js.Array[Any], /* message */ js.UndefOr[String], Assertion]
   
   type NumberComparer = js.Function2[/* value */ Double, /* message */ js.UndefOr[String], Assertion]
   
@@ -824,7 +820,7 @@ object Chai {
   
   type Property = js.Function3[
     /* name */ String, 
-    /* value */ js.UndefOr[js.Any], 
+    /* value */ js.UndefOr[Any], 
     /* message */ js.UndefOr[String], 
     Assertion
   ]
@@ -834,10 +830,10 @@ object Chai {
     extends StObject
        with ShouldAssertion {
     
-    def fail(actual: js.Any, expected: js.Any): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, message: String): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, message: String, operator: String): Unit = js.native
-    def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Any): Unit = js.native
+    def fail(actual: Any, expected: Any, message: String): Unit = js.native
+    def fail(actual: Any, expected: Any, message: String, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Any, message: Unit, operator: String): Unit = js.native
     
     var not: ShouldAssertion = js.native
   }
@@ -846,48 +842,48 @@ object Chai {
   trait ShouldAssertion extends StObject {
     
     def Throw(actual: js.Function): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error, expected: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error, expected: String, message: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error, expected: js.RegExp): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error, expected: js.RegExp, message: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Error, expected: Unit, message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Function, expected: js.RegExp): Unit = js.native
+    def Throw(actual: js.Function, constructor: js.Function, expected: js.RegExp, message: String): Unit = js.native
     def Throw(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
-    def Throw(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
-    def Throw(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: String): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
-    def Throw(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def Throw(actual: js.Function, expected: String): Unit = js.native
     def Throw(actual: js.Function, expected: String, message: String): Unit = js.native
-    def Throw(actual: js.Function, expected: RegExp): Unit = js.native
-    def Throw(actual: js.Function, expected: RegExp, message: String): Unit = js.native
+    def Throw(actual: js.Function, expected: js.RegExp): Unit = js.native
+    def Throw(actual: js.Function, expected: js.RegExp, message: String): Unit = js.native
     @JSName("Throw")
     var Throw_Original: ShouldThrow = js.native
     
-    def equal(value1: js.Any, value2: js.Any): Unit = js.native
-    def equal(value1: js.Any, value2: js.Any, message: String): Unit = js.native
+    def equal(value1: Any, value2: Any): Unit = js.native
+    def equal(value1: Any, value2: Any, message: String): Unit = js.native
     
-    def exist(value: js.Any): Unit = js.native
-    def exist(value: js.Any, message: String): Unit = js.native
+    def exist(value: Any): Unit = js.native
+    def exist(value: Any, message: String): Unit = js.native
     
     def `throw`(actual: js.Function): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error, expected: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error, expected: String, message: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error, expected: js.RegExp): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error, expected: js.RegExp, message: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Error, expected: Unit, message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Function, expected: js.RegExp): Unit = js.native
+    def `throw`(actual: js.Function, constructor: js.Function, expected: js.RegExp, message: String): Unit = js.native
     def `throw`(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
-    def `throw`(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
-    def `throw`(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: String): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
-    def `throw`(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def `throw`(actual: js.Function, expected: String): Unit = js.native
     def `throw`(actual: js.Function, expected: String, message: String): Unit = js.native
-    def `throw`(actual: js.Function, expected: RegExp): Unit = js.native
-    def `throw`(actual: js.Function, expected: RegExp, message: String): Unit = js.native
+    def `throw`(actual: js.Function, expected: js.RegExp): Unit = js.native
+    def `throw`(actual: js.Function, expected: js.RegExp, message: String): Unit = js.native
     @JSName("throw")
     var throw_Original: ShouldThrow = js.native
   }
@@ -896,44 +892,44 @@ object Chai {
   trait ShouldThrow extends StObject {
     
     def apply(actual: js.Function): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error, expected: String): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error, expected: String, message: String): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error, expected: js.RegExp): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error, expected: js.RegExp, message: String): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Error, expected: Unit, message: String): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: String): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: String, message: String): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Function, expected: js.RegExp): Unit = js.native
+    def apply(actual: js.Function, constructor: js.Function, expected: js.RegExp, message: String): Unit = js.native
     def apply(actual: js.Function, constructor: js.Function, expected: Unit, message: String): Unit = js.native
-    def apply(actual: js.Function, constructor: js.Function, expected: RegExp): Unit = js.native
-    def apply(actual: js.Function, constructor: js.Function, expected: RegExp, message: String): Unit = js.native
-    def apply(actual: js.Function, constructor: Error): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: String): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: String, message: String): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: Unit, message: String): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: RegExp): Unit = js.native
-    def apply(actual: js.Function, constructor: Error, expected: RegExp, message: String): Unit = js.native
     def apply(actual: js.Function, expected: String): Unit = js.native
     def apply(actual: js.Function, expected: String, message: String): Unit = js.native
-    def apply(actual: js.Function, expected: RegExp): Unit = js.native
-    def apply(actual: js.Function, expected: RegExp, message: String): Unit = js.native
+    def apply(actual: js.Function, expected: js.RegExp): Unit = js.native
+    def apply(actual: js.Function, expected: js.RegExp, message: String): Unit = js.native
   }
   
   @js.native
   trait Throw extends StObject {
     
     def apply(): Assertion = js.native
+    def apply(constructor: js.Error): Assertion = js.native
+    def apply(constructor: js.Error, expected: String): Assertion = js.native
+    def apply(constructor: js.Error, expected: String, message: String): Assertion = js.native
+    def apply(constructor: js.Error, expected: js.RegExp): Assertion = js.native
+    def apply(constructor: js.Error, expected: js.RegExp, message: String): Assertion = js.native
+    def apply(constructor: js.Error, expected: Unit, message: String): Assertion = js.native
     def apply(constructor: js.Function): Assertion = js.native
     def apply(constructor: js.Function, expected: String): Assertion = js.native
     def apply(constructor: js.Function, expected: String, message: String): Assertion = js.native
+    def apply(constructor: js.Function, expected: js.RegExp): Assertion = js.native
+    def apply(constructor: js.Function, expected: js.RegExp, message: String): Assertion = js.native
     def apply(constructor: js.Function, expected: Unit, message: String): Assertion = js.native
-    def apply(constructor: js.Function, expected: RegExp): Assertion = js.native
-    def apply(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
-    def apply(constructor: Error): Assertion = js.native
-    def apply(constructor: Error, expected: String): Assertion = js.native
-    def apply(constructor: Error, expected: String, message: String): Assertion = js.native
-    def apply(constructor: Error, expected: Unit, message: String): Assertion = js.native
-    def apply(constructor: Error, expected: RegExp): Assertion = js.native
-    def apply(constructor: Error, expected: RegExp, message: String): Assertion = js.native
     def apply(expected: String): Assertion = js.native
     def apply(expected: String, message: String): Assertion = js.native
-    def apply(expected: RegExp): Assertion = js.native
-    def apply(expected: RegExp, message: String): Assertion = js.native
+    def apply(expected: js.RegExp): Assertion = js.native
+    def apply(expected: js.RegExp, message: String): Assertion = js.native
   }
   
   @js.native

@@ -9,7 +9,7 @@ object transposePackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/transpose_packed_gpu", "TransposePackedProgram")
   @js.native
-  class TransposePackedProgram protected ()
+  open class TransposePackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(aShape: js.Array[Double], newDim: js.Array[Double]) = this()

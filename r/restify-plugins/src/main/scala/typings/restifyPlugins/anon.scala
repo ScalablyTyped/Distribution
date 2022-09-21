@@ -21,7 +21,7 @@ object anon {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
     }
   }
   
@@ -31,7 +31,7 @@ object anon {
     
     var overrideParams: js.UndefOr[Boolean] = js.undefined
     
-    var reviver: js.UndefOr[js.Any] = js.undefined
+    var reviver: js.UndefOr[Any] = js.undefined
   }
   object MapParams {
     
@@ -50,7 +50,7 @@ object anon {
       
       inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
       
-      inline def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+      inline def setReviver(value: Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
       
       inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     }
@@ -111,18 +111,18 @@ object anon {
   
   trait UserAgentRegExp extends StObject {
     
-    var userAgentRegExp: js.Any
+    var userAgentRegExp: Any
   }
   object UserAgentRegExp {
     
-    inline def apply(userAgentRegExp: js.Any): UserAgentRegExp = {
+    inline def apply(userAgentRegExp: Any): UserAgentRegExp = {
       val __obj = js.Dynamic.literal(userAgentRegExp = userAgentRegExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentRegExp]
     }
     
     extension [Self <: UserAgentRegExp](x: Self) {
       
-      inline def setUserAgentRegExp(value: js.Any): Self = StObject.set(x, "userAgentRegExp", value.asInstanceOf[js.Any])
+      inline def setUserAgentRegExp(value: Any): Self = StObject.set(x, "userAgentRegExp", value.asInstanceOf[js.Any])
     }
   }
 }

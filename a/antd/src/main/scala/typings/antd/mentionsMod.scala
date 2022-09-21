@@ -2,11 +2,12 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.antd.statusUtilsMod.InputStatus
 import typings.rcMentions.mentionsMod.MentionsProps
+import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
-import typings.react.mod.SFC
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,14 +21,14 @@ object mentionsMod extends Shortcut {
   
   @JSImport("antd/lib/mentions", "Option")
   @js.native
-  val Option: SFC[typings.rcMentions.optionMod.OptionProps] = js.native
+  val Option: FC[typings.rcMentions.optionMod.OptionProps] = js.native
   
   @js.native
   trait CompoundedComponent
     extends StObject
        with ForwardRefExoticComponent[MentionProps & RefAttributes[HTMLElement]] {
     
-    var Option: SFC[typings.rcMentions.optionMod.OptionProps] = js.native
+    var Option: FC[typings.rcMentions.optionMod.OptionProps] = js.native
     
     def getMentions(value: String): js.Array[MentionsEntity] = js.native
     def getMentions(value: String, config: MentionsConfig): js.Array[MentionsEntity] = js.native
@@ -50,6 +51,8 @@ object mentionsMod extends Shortcut {
        with MentionsProps {
     
     var loading: js.UndefOr[Boolean] = js.undefined
+    
+    var status: js.UndefOr[InputStatus] = js.undefined
   }
   object MentionProps {
     
@@ -63,6 +66,10 @@ object mentionsMod extends Shortcut {
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -102,7 +109,7 @@ object mentionsMod extends Shortcut {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      inline def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
+      inline def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value*))
       
       inline def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
@@ -133,7 +140,7 @@ object mentionsMod extends Shortcut {
   
   trait OptionProps
     extends StObject
-       with /* customProp */ StringDictionary[js.Any] {
+       with /* customProp */ StringDictionary[Any] {
     
     var children: ReactNode
     

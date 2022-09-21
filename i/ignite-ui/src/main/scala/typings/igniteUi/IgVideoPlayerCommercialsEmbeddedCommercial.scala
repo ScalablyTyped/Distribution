@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercialsEmbeddedCommercial
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the end second of the embedded commercial.

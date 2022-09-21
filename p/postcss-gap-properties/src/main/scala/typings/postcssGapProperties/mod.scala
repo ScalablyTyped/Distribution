@@ -1,7 +1,7 @@
 package typings.postcssGapProperties
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Plugin
 import typings.postcssGapProperties.mod.GapProperties.GapPropertiesPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +11,11 @@ object mod extends Shortcut {
   
   @JSImport("postcss-gap-properties", JSImport.Namespace)
   @js.native
-  val ^ : GapPropertiesPlugin = js.native
+  val ^ : js.Object & GapPropertiesPlugin = js.native
   
   object GapProperties {
     
-    type GapPropertiesPlugin = Plugin_[Options]
+    type GapPropertiesPlugin = Plugin
     
     trait Options extends StObject {
       
@@ -40,8 +40,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = GapPropertiesPlugin
+  type _To = js.Object & GapPropertiesPlugin
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: GapPropertiesPlugin = ^
+  override def _to: js.Object & GapPropertiesPlugin = ^
 }

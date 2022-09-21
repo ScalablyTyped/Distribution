@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ELBv2 ()
+open class ELBv2 ()
   extends typings.awsSdk.mod.ELBv2 {
   def this(options: ClientConfiguration) = this()
 }

@@ -10,10 +10,10 @@ Check if a value is a natural number
 | ------------------ | :-------------: |
 | Full name          | is-natural-number |
 | Keywords           | number, natural, check, int, integer, math, mathematics, range, browser, client-side |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 139998676 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2216012E7 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/shinnn/is-natural-number.js#readme)

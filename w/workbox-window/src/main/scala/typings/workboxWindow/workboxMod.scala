@@ -26,7 +26,7 @@ object workboxMod {
   
   @JSImport("workbox-window/Workbox", "Workbox")
   @js.native
-  class Workbox protected () extends EventTargetShim {
+  open class Workbox protected () extends EventTargetShim {
     def this(scriptURL: String) = this()
     def this(scriptURL: String, registerOptions: RegistrationOptions) = this()
     
@@ -79,7 +79,7 @@ object workboxMod {
     
     def getSW(): js.Promise[ServiceWorker] = js.native
     
-    def messageSW(data: js.Any): js.Promise[js.Any] = js.native
+    def messageSW(data: Any): js.Promise[Any] = js.native
     
     def register(): js.Promise[ServiceWorkerRegistration] = js.native
     def register(options: RegisterOptions): js.Promise[ServiceWorkerRegistration] = js.native

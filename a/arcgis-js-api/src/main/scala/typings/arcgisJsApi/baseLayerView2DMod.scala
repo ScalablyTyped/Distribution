@@ -22,7 +22,7 @@ object baseLayerView2DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BaseLayerView2D {
     def this(properties: BaseLayerView2DProperties) = this()

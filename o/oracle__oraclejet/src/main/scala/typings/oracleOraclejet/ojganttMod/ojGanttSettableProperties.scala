@@ -135,7 +135,7 @@ object ojGanttSettableProperties {
     
     inline def setReferenceObjects(value: js.Array[ReferenceObject]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
     
-    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
+    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value*))
     
     inline def setRowAxis(value: MaxWidth[K2, D2]): Self = StObject.set(x, "rowAxis", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object ojGanttSettableProperties {
     
     inline def setSelectionMode(value: single | multiple | none): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
-    inline def setSelectionVarargs(value: K2*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: K2*): Self = StObject.set(x, "selection", js.Array(value*))
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ object awsMod {
   
   @JSImport("serverless/aws", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.serverless.awsProviderMod.^ {
     def this(serverless: Serverless, options: Options) = this()
   }

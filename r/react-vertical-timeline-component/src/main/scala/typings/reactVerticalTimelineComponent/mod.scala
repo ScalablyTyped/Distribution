@@ -3,6 +3,8 @@ package typings.reactVerticalTimelineComponent
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStrings.`1-column-left`
+import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStrings.`1-column-right`
 import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStrings.`1-column`
 import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStrings.`2-columns`
 import org.scalablytyped.runtime.StObject
@@ -13,29 +15,31 @@ object mod {
   
   @JSImport("react-vertical-timeline-component", "VerticalTimeline")
   @js.native
-  class VerticalTimeline protected ()
-    extends Component[VerticalTimelineProps, js.Object, js.Any] {
+  open class VerticalTimeline protected ()
+    extends Component[VerticalTimelineProps, js.Object, Any] {
     def this(props: VerticalTimelineProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: VerticalTimelineProps, context: js.Any) = this()
+    def this(props: VerticalTimelineProps, context: Any) = this()
   }
   
   @JSImport("react-vertical-timeline-component", "VerticalTimelineElement")
   @js.native
-  class VerticalTimelineElement protected ()
-    extends Component[VerticalTimelineElementProps, js.Object, js.Any] {
+  open class VerticalTimelineElement protected ()
+    extends Component[VerticalTimelineElementProps, js.Object, Any] {
     def this(props: VerticalTimelineElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: VerticalTimelineElementProps, context: js.Any) = this()
+    def this(props: VerticalTimelineElementProps, context: Any) = this()
   }
   
   trait VerticalTimelineElementProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -57,7 +61,7 @@ object mod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var intersectionObserverProps: js.UndefOr[js.Any] = js.undefined
+    var intersectionObserverProps: js.UndefOr[Any] = js.undefined
     
     var onTimelineElementClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -66,6 +70,8 @@ object mod {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var textClassName: js.UndefOr[String] = js.undefined
+    
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object VerticalTimelineElementProps {
     
@@ -75,6 +81,10 @@ object mod {
     }
     
     extension [Self <: VerticalTimelineElementProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -116,7 +126,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIntersectionObserverProps(value: js.Any): Self = StObject.set(x, "intersectionObserverProps", value.asInstanceOf[js.Any])
+      inline def setIntersectionObserverProps(value: Any): Self = StObject.set(x, "intersectionObserverProps", value.asInstanceOf[js.Any])
       
       inline def setIntersectionObserverPropsUndefined: Self = StObject.set(x, "intersectionObserverProps", js.undefined)
       
@@ -135,6 +145,10 @@ object mod {
       inline def setTextClassName(value: String): Self = StObject.set(x, "textClassName", value.asInstanceOf[js.Any])
       
       inline def setTextClassNameUndefined: Self = StObject.set(x, "textClassName", js.undefined)
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -142,9 +156,13 @@ object mod {
     
     var animate: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[`1-column` | `2-columns`] = js.undefined
+    var layout: js.UndefOr[`1-column` | `1-column-left` | `1-column-right` | `2-columns`] = js.undefined
+    
+    var lineColor: js.UndefOr[String] = js.undefined
   }
   object VerticalTimelineProps {
     
@@ -159,13 +177,21 @@ object mod {
       
       inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setLayout(value: `1-column` | `2-columns`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: `1-column` | `1-column-left` | `1-column-right` | `2-columns`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      
+      inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+      
+      inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     }
   }
 }

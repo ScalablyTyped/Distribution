@@ -20,7 +20,7 @@ trait HeaderFooter extends StObject {
   
   val PageNumbers: typings.activexWord.Word.PageNumbers
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -39,7 +39,7 @@ object HeaderFooter {
     IsHeader: Boolean,
     LinkToPrevious: Boolean,
     PageNumbers: PageNumbers,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Shapes: Shapes,
     WordDotHeaderFooter_typekey: HeaderFooter
@@ -65,7 +65,7 @@ object HeaderFooter {
     
     inline def setPageNumbers(value: PageNumbers): Self = StObject.set(x, "PageNumbers", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

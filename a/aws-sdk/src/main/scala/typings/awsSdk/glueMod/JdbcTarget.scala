@@ -38,7 +38,7 @@ object JdbcTarget {
     
     inline def setExclusionsUndefined: Self = StObject.set(x, "Exclusions", js.undefined)
     
-    inline def setExclusionsVarargs(value: Path*): Self = StObject.set(x, "Exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: Path*): Self = StObject.set(x, "Exclusions", js.Array(value*))
     
     inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

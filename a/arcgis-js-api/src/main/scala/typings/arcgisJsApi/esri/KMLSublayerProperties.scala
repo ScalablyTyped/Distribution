@@ -32,14 +32,14 @@ trait KMLSublayerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#networkLink)
     */
-  var networkLink: js.UndefOr[js.Any] = js.undefined
+  var networkLink: js.UndefOr[Any] = js.undefined
   
   /**
     * The raw KML data for this sublayer, in JSON format, as returned by the [KML utility service](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#kmlServiceUrl).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * A collection of [KMLSublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html).
@@ -83,11 +83,11 @@ object KMLSublayerProperties {
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    inline def setNetworkLink(value: js.Any): Self = StObject.set(x, "networkLink", value.asInstanceOf[js.Any])
+    inline def setNetworkLink(value: Any): Self = StObject.set(x, "networkLink", value.asInstanceOf[js.Any])
     
     inline def setNetworkLinkUndefined: Self = StObject.set(x, "networkLink", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
@@ -95,7 +95,7 @@ object KMLSublayerProperties {
     
     inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    inline def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

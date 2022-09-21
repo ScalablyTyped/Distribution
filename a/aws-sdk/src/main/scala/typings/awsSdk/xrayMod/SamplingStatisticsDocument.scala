@@ -34,7 +34,7 @@ trait SamplingStatisticsDocument extends StObject {
   /**
     * The current time.
     */
-  var Timestamp: typings.awsSdk.xrayMod.Timestamp
+  var Timestamp: js.Date
 }
 object SamplingStatisticsDocument {
   
@@ -43,7 +43,7 @@ object SamplingStatisticsDocument {
     RequestCount: RequestCount,
     RuleName: RuleName,
     SampledCount: SampledCount,
-    Timestamp: Timestamp
+    Timestamp: js.Date
   ): SamplingStatisticsDocument = {
     val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingStatisticsDocument]
@@ -63,6 +63,6 @@ object SamplingStatisticsDocument {
     
     inline def setSampledCount(value: SampledCount): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

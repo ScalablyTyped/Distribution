@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.UI.Notifications.BadgeNotification
@@ -57,7 +56,7 @@ object PushNotifications {
   @js.native
   trait PushNotificationChannel extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
@@ -68,7 +67,7 @@ object PushNotifications {
     def close(): Unit = js.native
     
     /** Gets the time at which the channel expires. Notifications sent to this channel after this time are rejected. */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /** Fires when a push notification has arrived on this channel. */
     def onpushnotificationreceived(ev: PushNotificationReceivedEventArgs & WinRTEvent[PushNotificationChannel]): Unit = js.native
@@ -76,7 +75,7 @@ object PushNotifications {
     @JSName("onpushnotificationreceived")
     var onpushnotificationreceived_Original: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
@@ -102,7 +101,7 @@ object PushNotifications {
     /** Gets the type of push notification that has been received from the app server. */
     var notificationType: PushNotificationType
     
-    var rawNotification: js.Any
+    var rawNotification: Any
     
     /* unmapped type */
     /** Gets the content of a tile update to perform in response to this push notification. */
@@ -117,7 +116,7 @@ object PushNotifications {
       badgeNotification: BadgeNotification,
       cancel: Boolean,
       notificationType: PushNotificationType,
-      rawNotification: js.Any,
+      rawNotification: Any,
       tileNotification: TileNotification,
       toastNotification: ToastNotification
     ): PushNotificationReceivedEventArgs = {
@@ -133,7 +132,7 @@ object PushNotifications {
       
       inline def setNotificationType(value: PushNotificationType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      inline def setRawNotification(value: js.Any): Self = StObject.set(x, "rawNotification", value.asInstanceOf[js.Any])
+      inline def setRawNotification(value: Any): Self = StObject.set(x, "rawNotification", value.asInstanceOf[js.Any])
       
       inline def setTileNotification(value: TileNotification): Self = StObject.set(x, "tileNotification", value.asInstanceOf[js.Any])
       

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(options: babel): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(options: babel): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@webpack-blocks/babel", JSImport.Namespace)
   @js.native
@@ -38,13 +38,13 @@ object mod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPresets(value: js.Array[String]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
       inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
       
-      inline def setPresetsVarargs(value: String*): Self = StObject.set(x, "presets", js.Array(value :_*))
+      inline def setPresetsVarargs(value: String*): Self = StObject.set(x, "presets", js.Array(value*))
     }
   }
 }

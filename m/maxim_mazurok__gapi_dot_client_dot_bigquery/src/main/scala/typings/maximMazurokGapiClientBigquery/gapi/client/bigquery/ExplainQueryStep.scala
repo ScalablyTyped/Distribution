@@ -29,6 +29,6 @@ object ExplainQueryStep {
     
     inline def setSubstepsUndefined: Self = StObject.set(x, "substeps", js.undefined)
     
-    inline def setSubstepsVarargs(value: String*): Self = StObject.set(x, "substeps", js.Array(value :_*))
+    inline def setSubstepsVarargs(value: String*): Self = StObject.set(x, "substeps", js.Array(value*))
   }
 }

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of links, which are references from this span to a span in the
-  * same or different trace.
-  */
 trait SchemaLinks extends StObject {
   
   /**
-    * The number of dropped links after the maximum size was enforced. If this
-    * value is 0, then no links were dropped.
+    * The number of dropped links after the maximum size was enforced. If this value is 0, then no links were dropped.
     */
-  var droppedLinksCount: js.UndefOr[Double] = js.undefined
+  var droppedLinksCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A collection of links.
@@ -32,12 +27,14 @@ object SchemaLinks {
     
     inline def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
     
+    inline def setDroppedLinksCountNull: Self = StObject.set(x, "droppedLinksCount", null)
+    
     inline def setDroppedLinksCountUndefined: Self = StObject.set(x, "droppedLinksCount", js.undefined)
     
     inline def setLink(value: js.Array[SchemaLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setLinkVarargs(value: SchemaLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: SchemaLink*): Self = StObject.set(x, "link", js.Array(value*))
   }
 }

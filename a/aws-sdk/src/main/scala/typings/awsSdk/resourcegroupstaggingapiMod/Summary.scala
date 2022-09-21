@@ -17,17 +17,17 @@ trait Summary extends StObject {
   var NonCompliantResources: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.NonCompliantResources] = js.undefined
   
   /**
-    * The AWS Region that the summary applies to.
+    * The Amazon Web Services Region that the summary applies to.
     */
   var Region: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.Region] = js.undefined
   
   /**
-    * The AWS resource type.
+    * The Amazon Web Services resource type.
     */
   var ResourceType: js.UndefOr[AmazonResourceType] = js.undefined
   
   /**
-    * The account identifier or the root identifier of the organization. If you don't know the root ID, you can call the AWS Organizations ListRoots API.
+    * The account identifier or the root identifier of the organization. If you don't know the root ID, you can call the Organizations ListRoots API.
     */
   var TargetId: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.TargetId] = js.undefined
   

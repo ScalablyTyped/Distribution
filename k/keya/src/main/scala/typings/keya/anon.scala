@@ -29,20 +29,20 @@ object anon {
   
   trait Value[T] extends StObject {
     
-    var key: js.Any
+    var key: Any
     
     var value: T
   }
   object Value {
     
-    inline def apply[T](key: js.Any, value: T): Value[T] = {
+    inline def apply[T](key: Any, value: T): Value[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[T]]
     }
     
     extension [Self <: Value[?], T](x: Self & Value[T]) {
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

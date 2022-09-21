@@ -22,6 +22,6 @@ object GoogleApiServiceusageV1OperationMetadata {
     
     inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value*))
   }
 }

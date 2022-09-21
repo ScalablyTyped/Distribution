@@ -29,17 +29,17 @@ object configBaseMod {
     
     def generateContext(inputs: CommandLineInputs, options: CommandLineOptions): ConfigContext = js.native
     
-    def interpretValue(): js.Any = js.native
-    def interpretValue(v: String): js.Any = js.native
-    def interpretValue(v: String, expectJson: Boolean): js.Any = js.native
-    def interpretValue(v: Unit, expectJson: Boolean): js.Any = js.native
+    def interpretValue(): Any = js.native
+    def interpretValue(v: String): Any = js.native
+    def interpretValue(v: String, expectJson: Boolean): Any = js.native
+    def interpretValue(v: Unit, expectJson: Boolean): Any = js.native
     
-    def jsonStringify(v: js.Any): String = js.native
+    def jsonStringify(v: Any): String = js.native
   }
   
   inline def getConfig(ctx: ConfigContext): FlexibleConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(ctx.asInstanceOf[js.Any]).asInstanceOf[FlexibleConfigFile]
   
-  inline def getConfigValue(ctx: ConfigContext): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getConfigValue(ctx: ConfigContext): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def setConfigValue(ctx: ConfigContext & OriginalValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -55,7 +55,7 @@ object configBaseMod {
     
     var root: Boolean
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object BaseConfigContext {
     
@@ -76,7 +76,7 @@ object configBaseMod {
       
       inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -100,7 +100,7 @@ object configBaseMod {
     }
   }
   
-  type FlexibleConfigFile = StringDictionary[js.Any]
+  type FlexibleConfigFile = StringDictionary[Any]
   
   trait GlobalConfigContext
     extends StObject

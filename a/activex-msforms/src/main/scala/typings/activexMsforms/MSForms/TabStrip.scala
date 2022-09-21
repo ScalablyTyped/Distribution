@@ -56,7 +56,7 @@ trait TabStrip extends StObject {
   
   var TabOrientation: fmTabOrientation
   
-  def Tabs(varg: js.Any): js.Any
+  def Tabs(varg: Any): Any
   @JSName("Tabs")
   val Tabs_Original: Tabs
   

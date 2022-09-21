@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.SliderStep> */
 trait PartialSliderStep extends StObject {
   
-  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var args: js.UndefOr[js.Array[Any]] = js.undefined
   
   var execute: js.UndefOr[Boolean] = js.undefined
   
@@ -33,11 +33,11 @@ object PartialSliderStep {
   
   extension [Self <: PartialSliderStep](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ object Lane {
     
     inline def setIndications(value: js.Array[Indication]): Self = StObject.set(x, "indications", value.asInstanceOf[js.Any])
     
-    inline def setIndicationsVarargs(value: Indication*): Self = StObject.set(x, "indications", js.Array(value :_*))
+    inline def setIndicationsVarargs(value: Indication*): Self = StObject.set(x, "indications", js.Array(value*))
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }

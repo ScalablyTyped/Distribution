@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrdersCreateTestOrderRequest extends StObject {
   
   /**
-    * The CLDR territory code of the country of the test order to create. Affects the currency and addresses of orders created via `template_name`, or the addresses of orders created via
-    * `test_order`. Acceptable values are: - "`US`" - "`FR`" Defaults to `US`.
+    * The CLDR territory code of the country of the test order to create. Affects the currency and addresses of orders created through `template_name`, or the addresses of orders created
+    * through `test_order`. Acceptable values are: - "`US`" - "`FR`" Defaults to "`US`".
     */
   var country: js.UndefOr[String] = js.undefined
   

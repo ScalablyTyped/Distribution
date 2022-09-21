@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
-import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.CryptoKeyVersion
+import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.AsymmetricDecryptRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait PrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for this CryptoKeyVersion in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/cryptoKeyVersions/ *`. */
+  /** Required. The resource name of the CryptoKeyVersion to use for decryption. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,10 +39,7 @@ trait PrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CryptoKeyVersion
-  
-  /** Required. List of fields to be updated in this request. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var resource: AsymmetricDecryptRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(name: String, resource: CryptoKeyVersion): PrettyPrint = {
+  inline def apply(name: String, resource: AsymmetricDecryptRequest): PrettyPrint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
@@ -97,11 +94,7 @@ object PrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CryptoKeyVersion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: AsymmetricDecryptRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

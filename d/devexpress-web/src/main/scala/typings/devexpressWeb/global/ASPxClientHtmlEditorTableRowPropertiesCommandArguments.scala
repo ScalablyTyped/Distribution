@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorTableRowPropertiesCommandArguments")
 @js.native
-class ASPxClientHtmlEditorTableRowPropertiesCommandArguments protected ()
+open class ASPxClientHtmlEditorTableRowPropertiesCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorTableRowPropertiesCommandArguments {
   /**
@@ -17,13 +17,13 @@ class ASPxClientHtmlEditorTableRowPropertiesCommandArguments protected ()
     * @param htmlEditor The html editor in which the target element is located.
     * @param selectedElement The element currently selected in the HTML editor.
     */
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Contains the style settings specifying the appearance of the specified table row.

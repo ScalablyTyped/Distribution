@@ -15,13 +15,13 @@ object anon {
     
     var key: String
     
-    var ref: js.Any
+    var ref: Any
     
     var role: String
   }
   object ClassName {
     
-    inline def apply(className: String, id: String, key: String, ref: js.Any, role: String): ClassName = {
+    inline def apply(className: String, id: String, key: String, ref: Any, role: String): ClassName = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
@@ -34,7 +34,7 @@ object anon {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }

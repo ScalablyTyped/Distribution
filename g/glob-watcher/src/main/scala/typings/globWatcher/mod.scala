@@ -17,45 +17,45 @@ object mod {
     */
   inline def apply(globs: String): FSWatcher = ^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
   inline def apply(globs: String, cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
-  inline def apply(globs: String, cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  inline def apply(globs: String, cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: String, opt: Unit, cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(
     globs: String,
     opt: Unit,
-    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: String, opt: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: String, opt: WatchOptions, cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(
     globs: String,
     opt: WatchOptions,
-    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: js.Array[String]): FSWatcher = ^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
   inline def apply(globs: js.Array[String], cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(
     globs: js.Array[String],
-    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: js.Array[String], opt: Unit, cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(
     globs: js.Array[String],
     opt: Unit,
-    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: js.Array[String], opt: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(globs: js.Array[String], opt: WatchOptions, cb: js.Function0[AsyncType]): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def apply(
     globs: js.Array[String],
     opt: WatchOptions,
-    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
   @JSImport("glob-watcher", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type AsyncType = EventEmitter | js.Thenable[js.Any] | Subscribe
+  type AsyncType = EventEmitter | js.Thenable[Any] | Subscribe
   
   // copied from https://github.com/paulmillr/chokidar/blob/5e09c85ea04ffb7fd9cdb829892540e93ce63553/types/index.d.ts
   trait AwaitWriteFinishOptions extends StObject {
@@ -92,7 +92,7 @@ object mod {
   trait WatchOptions extends StObject {
     
     /**
-      * If relying upon the [`fs.Stats`](http://nodejs.org/api/fs.html#fs_class_fs_stats) object that
+      * If relying upon the [`fs.Stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object that
       * may get passed with `add`, `addDir`, and `change` events, set this to `true` to ensure it is
       * provided even in cases where it wasn't already available from the underlying watch events.
       */
@@ -172,9 +172,9 @@ object mod {
       * be ignored. The whole relative or absolute path is tested, not just filename. If a function
       * with two arguments is provided, it gets called twice per path - once with a single argument
       * (the path), second time with two arguments (the path and the
-      * [`fs.Stats`](http://nodejs.org/api/fs.html#fs_class_fs_stats) object of that path).
+      * [`fs.Stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object of that path).
       */
-    var ignored: js.UndefOr[js.Any] = js.undefined
+    var ignored: js.UndefOr[Any] = js.undefined
     
     /**
       * Interval of file system polling.
@@ -256,7 +256,7 @@ object mod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
       
@@ -270,7 +270,7 @@ object mod {
       
       inline def setIgnorePermissionErrorsUndefined: Self = StObject.set(x, "ignorePermissionErrors", js.undefined)
       
-      inline def setIgnored(value: js.Any): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: Any): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
       inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       

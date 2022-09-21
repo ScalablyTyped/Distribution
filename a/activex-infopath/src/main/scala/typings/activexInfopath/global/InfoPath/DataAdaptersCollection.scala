@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataAdaptersCollection")
 @js.native
-/* private */ class DataAdaptersCollection ()
+/* private */ open class DataAdaptersCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataAdaptersCollection {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotDataAdaptersCollection_typekey: typings.activexInfopath.InfoPath.DataAdaptersCollection = js.native
   
   /* CompleteClass */
-  override def Item(varIndex: js.Any): js.Any = js.native
+  override def Item(varIndex: Any): Any = js.native
 }

@@ -47,7 +47,7 @@ object ListGeoLocationsResponse {
     
     inline def setGeoLocationDetailsList(value: GeoLocationDetailsList): Self = StObject.set(x, "GeoLocationDetailsList", value.asInstanceOf[js.Any])
     
-    inline def setGeoLocationDetailsListVarargs(value: GeoLocationDetails*): Self = StObject.set(x, "GeoLocationDetailsList", js.Array(value :_*))
+    inline def setGeoLocationDetailsListVarargs(value: GeoLocationDetails*): Self = StObject.set(x, "GeoLocationDetailsList", js.Array(value*))
     
     inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

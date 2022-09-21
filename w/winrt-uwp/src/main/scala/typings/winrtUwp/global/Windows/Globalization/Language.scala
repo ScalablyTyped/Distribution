@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A class that provides information related to BCP-47 language tags such as the language name and the script. */
 @JSGlobal("Windows.Globalization.Language")
 @js.native
-class Language protected ()
+open class Language protected ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.Language {
   /**

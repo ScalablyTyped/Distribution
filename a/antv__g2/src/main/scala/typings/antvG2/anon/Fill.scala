@@ -6,14 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Fill extends StObject {
   
-  var fill: js.UndefOr[String] = js.undefined
+  var fill: String
   
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fontFamily: Any
+  
+  var fontSize: Double
 }
 object Fill {
   
-  inline def apply(): Fill = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(fill: String, fontFamily: Any, fontSize: Double): Fill = {
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
   
@@ -21,10 +23,8 @@ object Fill {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: Any): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
-    
-    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
   }
 }

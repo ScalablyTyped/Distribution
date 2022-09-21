@@ -11,9 +11,9 @@ An easy way to require all files within a directory.
 | Full name          | require-all |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 456 |
-| # downloads        | 5489987 |
-| # stars            | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 906151.3333333334 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](https://github.com/felixge/node-require-all#readme)

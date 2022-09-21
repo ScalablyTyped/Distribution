@@ -60,12 +60,12 @@ trait Map
   extends StObject
      with EventEmitter {
   
-  def add(overlay: js.Array[Overlay[js.Any]]): Unit = js.native
+  def add(overlay: js.Array[Overlay[Any]]): Unit = js.native
   /**
     * 添加覆盖物/图层
     * @param overlay 覆盖物/图层
     */
-  def add(overlay: Overlay[js.Any]): Unit = js.native
+  def add(overlay: Overlay[Any]): Unit = js.native
   
   /**
     * 添加控件
@@ -112,15 +112,8 @@ trait Map
     * 返回添加的覆盖物对象
     * @param type 覆盖物类型
     */
-  def getAllOverlays(): js.Array[Overlay[js.Any]] = js.native
-  @JSName("getAllOverlays")
-  def getAllOverlays_circle(`type`: circle): js.Array[Overlay[js.Any]] = js.native
-  @JSName("getAllOverlays")
-  def getAllOverlays_marker(`type`: marker): js.Array[Overlay[js.Any]] = js.native
-  @JSName("getAllOverlays")
-  def getAllOverlays_polygon(`type`: polygon_): js.Array[Overlay[js.Any]] = js.native
-  @JSName("getAllOverlays")
-  def getAllOverlays_polyline(`type`: polyline): js.Array[Overlay[js.Any]] = js.native
+  def getAllOverlays(): js.Array[Overlay[Any]] = js.native
+  def getAllOverlays(`type`: marker | circle | polyline | polygon_): js.Array[Overlay[Any]] = js.native
   
   /**
     * 获取当前地图视图范围，获取当前可视区域
@@ -278,12 +271,12 @@ trait Map
     */
   def poiOnAMAP(obj: Location): Unit = js.native
   
-  def remove(overlay: js.Array[Overlay[js.Any]]): Unit = js.native
+  def remove(overlay: js.Array[Overlay[Any]]): Unit = js.native
   /**
     * 删除覆盖物/图层
     * @param overlay 覆盖物/图层
     */
-  def remove(overlay: Overlay[js.Any]): Unit = js.native
+  def remove(overlay: Overlay[Any]): Unit = js.native
   
   // TODO
   /**
@@ -343,32 +336,32 @@ trait Map
     * @param maxZoom 最大缩放级别
     */
   def setFitView(): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[js.Any]]): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[Any]]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[Any]], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[js.Any]],
+    overlayList: js.Array[Overlay[Any]],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double]
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[js.Any]],
+    overlayList: js.Array[Overlay[Any]],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[Any]], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[js.Any]],
+    overlayList: js.Array[Overlay[Any]],
     immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double]
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[js.Any]],
+    overlayList: js.Array[Overlay[Any]],
     immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[Any]], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Unit, immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Unit, immediately: Boolean, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
@@ -386,28 +379,24 @@ trait Map
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Unit, immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[js.Any]): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[js.Any], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any], immediately: Boolean, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: Overlay[js.Any],
-    immediately: Boolean,
-    avoid: js.Tuple4[Double, Double, Double, Double]
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: Overlay[js.Any],
+    overlayList: Overlay[Any],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[js.Any], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[js.Any], immediately: Unit, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any], immediately: Unit, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: Overlay[js.Any],
+    overlayList: Overlay[Any],
     immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[js.Any], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[Any], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   
   /**
     * 设置地图标注显示的顺序
@@ -918,7 +907,7 @@ object Map {
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
       
       inline def setForceVector(value: Boolean): Self = StObject.set(x, "forceVector", value.asInstanceOf[js.Any])
       
@@ -952,7 +941,7 @@ object Map {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setLogoUrl(value: String): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
       
@@ -976,7 +965,7 @@ object Map {
       
       inline def setMaskVarargs(
         value: ((js.Array[(js.Array[js.Tuple2[Double, Double]]) | (js.Tuple2[Double, Double])]) | (js.Tuple2[Double, Double]))*
-      ): Self = StObject.set(x, "mask", js.Array(value :_*))
+      ): Self = StObject.set(x, "mask", js.Array(value*))
       
       inline def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
       

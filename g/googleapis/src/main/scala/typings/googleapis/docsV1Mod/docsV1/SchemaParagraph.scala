@@ -5,15 +5,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A StructuralElement representing a paragraph. A paragraph is a range of
-  * content that is terminated with a newline character.
-  */
 trait SchemaParagraph extends StObject {
   
   /**
-    * The bullet for this paragraph. If not present, the paragraph does not
-    * belong to a list.
+    * The bullet for this paragraph. If not present, the paragraph does not belong to a list.
     */
   var bullet: js.UndefOr[SchemaBullet] = js.undefined
   
@@ -30,24 +25,22 @@ trait SchemaParagraph extends StObject {
   /**
     * The IDs of the positioned objects tethered to this paragraph.
     */
-  var positionedObjectIds: js.UndefOr[js.Array[String]] = js.undefined
+  var positionedObjectIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The suggested changes to this paragraph&#39;s bullet.
+    * The suggested changes to this paragraph's bullet.
     */
-  var suggestedBulletChanges: js.UndefOr[StringDictionary[SchemaSuggestedBullet]] = js.undefined
+  var suggestedBulletChanges: js.UndefOr[StringDictionary[SchemaSuggestedBullet] | Null] = js.undefined
   
   /**
-    * The suggested paragraph style changes to this paragraph, keyed by
-    * suggestion ID.
+    * The suggested paragraph style changes to this paragraph, keyed by suggestion ID.
     */
-  var suggestedParagraphStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedParagraphStyle]] = js.undefined
+  var suggestedParagraphStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedParagraphStyle] | Null] = js.undefined
   
   /**
-    * The IDs of the positioned objects that are suggested to be attached to
-    * this paragraph, keyed by suggestion ID.
+    * The IDs of the positioned objects that are suggested to be attached to this paragraph, keyed by suggestion ID.
     */
-  var suggestedPositionedObjectIds: js.UndefOr[StringDictionary[SchemaObjectReferences]] = js.undefined
+  var suggestedPositionedObjectIds: js.UndefOr[StringDictionary[SchemaObjectReferences] | Null] = js.undefined
 }
 object SchemaParagraph {
   
@@ -66,7 +59,7 @@ object SchemaParagraph {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: SchemaParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: SchemaParagraphElement*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
@@ -74,19 +67,27 @@ object SchemaParagraph {
     
     inline def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
     
+    inline def setPositionedObjectIdsNull: Self = StObject.set(x, "positionedObjectIds", null)
+    
     inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
     
-    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value*))
     
     inline def setSuggestedBulletChanges(value: StringDictionary[SchemaSuggestedBullet]): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedBulletChangesNull: Self = StObject.set(x, "suggestedBulletChanges", null)
     
     inline def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
     
     inline def setSuggestedParagraphStyleChanges(value: StringDictionary[SchemaSuggestedParagraphStyle]): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
     
+    inline def setSuggestedParagraphStyleChangesNull: Self = StObject.set(x, "suggestedParagraphStyleChanges", null)
+    
     inline def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
     
     inline def setSuggestedPositionedObjectIds(value: StringDictionary[SchemaObjectReferences]): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedPositionedObjectIdsNull: Self = StObject.set(x, "suggestedPositionedObjectIds", null)
     
     inline def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
   }

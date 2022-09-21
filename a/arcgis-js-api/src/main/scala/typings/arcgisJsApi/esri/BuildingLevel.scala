@@ -21,10 +21,12 @@ trait BuildingLevel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#clear)
     */
-  def clear(): Unit = js.native
+  def clear(): scala.Unit = js.native
   
   /**
     * Whether the filter is enabled.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#enabled)
     */
@@ -35,7 +37,7 @@ trait BuildingLevel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#getValueLabel)
     */
-  def getValueLabel(value: Double): String | js.Any = js.native
+  def getValueLabel(value: Double): String | Any = js.native
   
   /**
     * Whether the next value can be selected.
@@ -70,21 +72,21 @@ trait BuildingLevel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#next)
     */
-  def next(): Unit = js.native
+  def next(): scala.Unit = js.native
   
   /**
     * Selects the previous value, if available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#previous)
     */
-  def previous(): Unit = js.native
+  def previous(): scala.Unit = js.native
   
   /**
     * Selects the specified value for the filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html#select)
     */
-  def select(value: Double): Unit = js.native
+  def select(value: Double): scala.Unit = js.native
   
   /**
     * The value which is currently set on the filter.

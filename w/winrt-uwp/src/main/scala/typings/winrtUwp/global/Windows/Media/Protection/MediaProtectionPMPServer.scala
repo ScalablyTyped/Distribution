@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Protected Media Path (PMP) server to enable playback of protected content using digital rights management (DRM). */
 @JSGlobal("Windows.Media.Protection.MediaProtectionPMPServer")
 @js.native
-class MediaProtectionPMPServer protected ()
+open class MediaProtectionPMPServer protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.MediaProtectionPMPServer {
   /**

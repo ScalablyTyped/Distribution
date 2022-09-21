@@ -9,7 +9,7 @@ object lrnGradGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/lrn_grad_gpu", "LRNGradProgram")
   @js.native
-  class LRNGradProgram protected ()
+  open class LRNGradProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(inputShape: js.Array[Double], depthRadius: Double, bias: Double, alpha: Double, beta: Double) = this()

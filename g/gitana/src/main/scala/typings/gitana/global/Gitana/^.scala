@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Gitana")
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends typings.gitana.mod.^ {
-  def this(settings: js.Any) = this()
+  def this(settings: Any) = this()
 }
 @JSGlobal("Gitana")
 @js.native

@@ -10,17 +10,17 @@ trait DisplayControl
   extends StObject
      with ClientControl {
   
-  def add_oneTimeResultRendered(value: js.Any): Unit
+  def add_oneTimeResultRendered(value: Any): Unit
   
-  def add_queryReady(value: js.Any): Unit
+  def add_queryReady(value: Any): Unit
   
-  def add_resultRendered(value: js.Any): Unit
+  def add_resultRendered(value: Any): Unit
   
-  def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit
+  def dataProvider_QueryIssuing(sender: Any, e: Any): Unit
   
-  def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit
+  def dataProvider_ResultReady(sender: Any, e: Any): Unit
   
-  def get_currentResultTableCollection(): js.Any
+  def get_currentResultTableCollection(): Any
   
   def get_dataProvider(): DataProvider
   
@@ -32,27 +32,27 @@ trait DisplayControl
   
   def get_shouldShowNoResultMessage(): Boolean
   
-  def processQueryIssuing(queryState: js.Any): Unit
+  def processQueryIssuing(queryState: Any): Unit
   
-  def processResultReady(resultTableCollection: js.Any): Unit
+  def processResultReady(resultTableCollection: Any): Unit
   
-  def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit
+  def raiseOneTimeResultRenderedEvent(arg: Any): Unit
   
-  def raiseQueryReadyEvent(arg: js.Any): Unit
+  def raiseQueryReadyEvent(arg: Any): Unit
   
-  def raiseResultRenderedEvent(arg: js.Any): Unit
+  def raiseResultRenderedEvent(arg: Any): Unit
   
-  def refresh(queryState: js.Any): Unit
+  def refresh(queryState: Any): Unit
   
-  def remove_oneTimeResultRendered(value: js.Any): Unit
+  def remove_oneTimeResultRendered(value: Any): Unit
   
-  def remove_queryReady(value: js.Any): Unit
+  def remove_queryReady(value: Any): Unit
   
-  def remove_resultRendered(value: js.Any): Unit
+  def remove_resultRendered(value: Any): Unit
   
   def render(): Unit
   
-  def set_currentResultTableCollection(value: js.Any): js.Any
+  def set_currentResultTableCollection(value: Any): Any
   
   def set_emptyMessage(value: String): String
   
@@ -67,84 +67,84 @@ object DisplayControl {
   inline def apply(
     addCssClass: String => Unit,
     add_disposing: js.Function => Unit,
-    add_oneTimeResultRendered: js.Any => Unit,
+    add_oneTimeResultRendered: Any => Unit,
     add_propertyChanged: js.Function => Unit,
-    add_queryReady: js.Any => Unit,
-    add_resultRendered: js.Any => Unit,
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    add_queryReady: Any => Unit,
+    add_resultRendered: Any => Unit,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     beginUpdate: () => Unit,
-    clickHandler: Event => js.Any,
-    dataProvider_QueryIssuing: (js.Any, js.Any) => Unit,
-    dataProvider_ResultReady: (js.Any, js.Any) => Unit,
+    clickHandler: Event => Any,
+    dataProvider_QueryIssuing: (Any, Any) => Unit,
+    dataProvider_ResultReady: (Any, Any) => Unit,
     dispose: () => Unit,
     endUpdate: () => Unit,
     get_alternateErrorMessage: () => String,
-    get_currentResultTableCollection: () => js.Any,
+    get_currentResultTableCollection: () => Any,
     get_dataProvider: () => DataProvider,
     get_delayLoadTemplateScripts: () => Boolean,
     get_element: () => HTMLElement,
     get_emptyMessage: () => String,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
-    get_messages: () => js.Array[js.Any],
+    get_messages: () => js.Array[Any],
     get_nextUniqueId: () => String,
     get_queryGroupName: () => String,
     get_renderTemplateId: () => String,
     get_renderedResult: () => Boolean,
     get_shouldShowNoResultMessage: () => Boolean,
     get_showDataErrors: () => Boolean,
-    get_states: () => js.Any,
-    hasMessages: () => js.Any,
+    get_states: () => Any,
+    hasMessages: () => Any,
     initialize: () => Unit,
-    invokeAlternateRender: (js.Any, js.Any, js.Any) => js.Any,
-    invokeClientRenderer: (js.Any, js.Any) => js.Any,
-    loadRenderTemplateScripts: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean,
+    invokeAlternateRender: (Any, Any, Any) => Any,
+    invokeClientRenderer: (Any, Any) => Any,
+    loadRenderTemplateScripts: (Any, Any, Any, Any, Any) => Boolean,
     loadServerTemplateScripts: () => Unit,
     loaded: Boolean,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
-    processDataErrorMessages: js.Any => js.Any,
-    processDataProviderErrors: js.Any => Unit,
-    processQueryIssuing: js.Any => Unit,
-    processRenderingErrorMessages: js.Any => js.Any,
-    processResultReady: js.Any => Unit,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
-    raiseOneTimeResultRenderedEvent: js.Any => Unit,
+    onBubbleEvent: (Any, Any) => Boolean,
+    processDataErrorMessages: Any => Any,
+    processDataProviderErrors: Any => Unit,
+    processQueryIssuing: Any => Unit,
+    processRenderingErrorMessages: Any => Any,
+    processResultReady: Any => Unit,
+    raiseBubbleEvent: (Any, Any) => Unit,
+    raiseOneTimeResultRenderedEvent: Any => Unit,
     raisePropertyChanged: String => Unit,
-    raiseQueryReadyEvent: js.Any => Unit,
-    raiseResultRenderedEvent: js.Any => Unit,
-    refresh: js.Any => Unit,
+    raiseQueryReadyEvent: Any => Unit,
+    raiseResultRenderedEvent: Any => Unit,
+    refresh: Any => Unit,
     removeCssClass: String => Unit,
     remove_disposing: js.Function => Unit,
-    remove_oneTimeResultRendered: js.Any => Unit,
+    remove_oneTimeResultRendered: Any => Unit,
     remove_propertyChanged: js.Function => Unit,
-    remove_queryReady: js.Any => Unit,
-    remove_resultRendered: js.Any => Unit,
+    remove_queryReady: Any => Unit,
+    remove_resultRendered: Any => Unit,
     render: () => Unit,
-    renderControl: (js.Any, js.Any) => Unit,
-    scriptApplication_Load: (js.Any, js.Any) => Unit,
-    scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
-    scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
+    renderControl: (Any, Any) => Unit,
+    scriptApplication_Load: (Any, Any) => Unit,
+    scriptApplication_PostLoad: (Any, Any) => Unit,
+    scriptApplication_PreLoad: (Any, Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[js.Any],
-    setControlElementVisibility: Boolean => js.Any,
+    serverTemplateScriptsToLoad: js.Array[Any],
+    setControlElementVisibility: Boolean => Any,
     set_alternateErrorMessage: String => String,
-    set_currentResultTableCollection: js.Any => js.Any,
+    set_currentResultTableCollection: Any => Any,
     set_delayLoadTemplateScripts: Boolean => Boolean,
     set_emptyMessage: String => String,
     set_id: String => Unit,
-    set_messages: js.Array[js.Any] => js.Array[js.Any],
+    set_messages: js.Array[Any] => js.Array[Any],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,
     set_renderedResult: Boolean => Boolean,
     set_shouldShowNoResultMessage: Boolean => Boolean,
     set_showDataErrors: Boolean => Boolean,
-    set_states: js.Any => js.Any,
+    set_states: Any => Any,
     toggleCssClass: String => Unit,
-    updateDisplayControlWithNewMessages: () => js.Any,
+    updateDisplayControlWithNewMessages: () => Any,
     updated: () => Unit
   ): DisplayControl = {
     val __obj = js.Dynamic.literal(addCssClass = js.Any.fromFunction1(addCssClass), add_disposing = js.Any.fromFunction1(add_disposing), add_oneTimeResultRendered = js.Any.fromFunction1(add_oneTimeResultRendered), add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), add_queryReady = js.Any.fromFunction1(add_queryReady), add_resultRendered = js.Any.fromFunction1(add_resultRendered), alternateRenderContext = alternateRenderContext.asInstanceOf[js.Any], alternateRenderer = alternateRenderer.asInstanceOf[js.Any], beginUpdate = js.Any.fromFunction0(beginUpdate), clickHandler = js.Any.fromFunction1(clickHandler), dataProvider_QueryIssuing = js.Any.fromFunction2(dataProvider_QueryIssuing), dataProvider_ResultReady = js.Any.fromFunction2(dataProvider_ResultReady), dispose = js.Any.fromFunction0(dispose), endUpdate = js.Any.fromFunction0(endUpdate), get_alternateErrorMessage = js.Any.fromFunction0(get_alternateErrorMessage), get_currentResultTableCollection = js.Any.fromFunction0(get_currentResultTableCollection), get_dataProvider = js.Any.fromFunction0(get_dataProvider), get_delayLoadTemplateScripts = js.Any.fromFunction0(get_delayLoadTemplateScripts), get_element = js.Any.fromFunction0(get_element), get_emptyMessage = js.Any.fromFunction0(get_emptyMessage), get_events = js.Any.fromFunction0(get_events), get_id = js.Any.fromFunction0(get_id), get_isInitialLoad = js.Any.fromFunction0(get_isInitialLoad), get_isInitialized = js.Any.fromFunction0(get_isInitialized), get_isUpdating = js.Any.fromFunction0(get_isUpdating), get_messages = js.Any.fromFunction0(get_messages), get_nextUniqueId = js.Any.fromFunction0(get_nextUniqueId), get_queryGroupName = js.Any.fromFunction0(get_queryGroupName), get_renderTemplateId = js.Any.fromFunction0(get_renderTemplateId), get_renderedResult = js.Any.fromFunction0(get_renderedResult), get_shouldShowNoResultMessage = js.Any.fromFunction0(get_shouldShowNoResultMessage), get_showDataErrors = js.Any.fromFunction0(get_showDataErrors), get_states = js.Any.fromFunction0(get_states), hasMessages = js.Any.fromFunction0(hasMessages), initialize = js.Any.fromFunction0(initialize), invokeAlternateRender = js.Any.fromFunction3(invokeAlternateRender), invokeClientRenderer = js.Any.fromFunction2(invokeClientRenderer), loadRenderTemplateScripts = js.Any.fromFunction5(loadRenderTemplateScripts), loadServerTemplateScripts = js.Any.fromFunction0(loadServerTemplateScripts), loaded = loaded.asInstanceOf[js.Any], onBubbleEvent = js.Any.fromFunction2(onBubbleEvent), processDataErrorMessages = js.Any.fromFunction1(processDataErrorMessages), processDataProviderErrors = js.Any.fromFunction1(processDataProviderErrors), processQueryIssuing = js.Any.fromFunction1(processQueryIssuing), processRenderingErrorMessages = js.Any.fromFunction1(processRenderingErrorMessages), processResultReady = js.Any.fromFunction1(processResultReady), raiseBubbleEvent = js.Any.fromFunction2(raiseBubbleEvent), raiseOneTimeResultRenderedEvent = js.Any.fromFunction1(raiseOneTimeResultRenderedEvent), raisePropertyChanged = js.Any.fromFunction1(raisePropertyChanged), raiseQueryReadyEvent = js.Any.fromFunction1(raiseQueryReadyEvent), raiseResultRenderedEvent = js.Any.fromFunction1(raiseResultRenderedEvent), refresh = js.Any.fromFunction1(refresh), removeCssClass = js.Any.fromFunction1(removeCssClass), remove_disposing = js.Any.fromFunction1(remove_disposing), remove_oneTimeResultRendered = js.Any.fromFunction1(remove_oneTimeResultRendered), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged), remove_queryReady = js.Any.fromFunction1(remove_queryReady), remove_resultRendered = js.Any.fromFunction1(remove_resultRendered), render = js.Any.fromFunction0(render), renderControl = js.Any.fromFunction2(renderControl), scriptApplication_Load = js.Any.fromFunction2(scriptApplication_Load), scriptApplication_PostLoad = js.Any.fromFunction2(scriptApplication_PostLoad), scriptApplication_PreLoad = js.Any.fromFunction2(scriptApplication_PreLoad), serverTemplateScriptsCallback = js.Any.fromFunction0(serverTemplateScriptsCallback), serverTemplateScriptsToLoad = serverTemplateScriptsToLoad.asInstanceOf[js.Any], setControlElementVisibility = js.Any.fromFunction1(setControlElementVisibility), set_alternateErrorMessage = js.Any.fromFunction1(set_alternateErrorMessage), set_currentResultTableCollection = js.Any.fromFunction1(set_currentResultTableCollection), set_delayLoadTemplateScripts = js.Any.fromFunction1(set_delayLoadTemplateScripts), set_emptyMessage = js.Any.fromFunction1(set_emptyMessage), set_id = js.Any.fromFunction1(set_id), set_messages = js.Any.fromFunction1(set_messages), set_queryGroupName = js.Any.fromFunction1(set_queryGroupName), set_renderTemplateId = js.Any.fromFunction1(set_renderTemplateId), set_renderedResult = js.Any.fromFunction1(set_renderedResult), set_shouldShowNoResultMessage = js.Any.fromFunction1(set_shouldShowNoResultMessage), set_showDataErrors = js.Any.fromFunction1(set_showDataErrors), set_states = js.Any.fromFunction1(set_states), toggleCssClass = js.Any.fromFunction1(toggleCssClass), updateDisplayControlWithNewMessages = js.Any.fromFunction0(updateDisplayControlWithNewMessages), updated = js.Any.fromFunction0(updated))
@@ -153,17 +153,17 @@ object DisplayControl {
   
   extension [Self <: DisplayControl](x: Self) {
     
-    inline def setAdd_oneTimeResultRendered(value: js.Any => Unit): Self = StObject.set(x, "add_oneTimeResultRendered", js.Any.fromFunction1(value))
+    inline def setAdd_oneTimeResultRendered(value: Any => Unit): Self = StObject.set(x, "add_oneTimeResultRendered", js.Any.fromFunction1(value))
     
-    inline def setAdd_queryReady(value: js.Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
+    inline def setAdd_queryReady(value: Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
     
-    inline def setAdd_resultRendered(value: js.Any => Unit): Self = StObject.set(x, "add_resultRendered", js.Any.fromFunction1(value))
+    inline def setAdd_resultRendered(value: Any => Unit): Self = StObject.set(x, "add_resultRendered", js.Any.fromFunction1(value))
     
-    inline def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
+    inline def setDataProvider_QueryIssuing(value: (Any, Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
     
-    inline def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
+    inline def setDataProvider_ResultReady(value: (Any, Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
     
-    inline def setGet_currentResultTableCollection(value: () => js.Any): Self = StObject.set(x, "get_currentResultTableCollection", js.Any.fromFunction0(value))
+    inline def setGet_currentResultTableCollection(value: () => Any): Self = StObject.set(x, "get_currentResultTableCollection", js.Any.fromFunction0(value))
     
     inline def setGet_dataProvider(value: () => DataProvider): Self = StObject.set(x, "get_dataProvider", js.Any.fromFunction0(value))
     
@@ -175,27 +175,27 @@ object DisplayControl {
     
     inline def setGet_shouldShowNoResultMessage(value: () => Boolean): Self = StObject.set(x, "get_shouldShowNoResultMessage", js.Any.fromFunction0(value))
     
-    inline def setProcessQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "processQueryIssuing", js.Any.fromFunction1(value))
+    inline def setProcessQueryIssuing(value: Any => Unit): Self = StObject.set(x, "processQueryIssuing", js.Any.fromFunction1(value))
     
-    inline def setProcessResultReady(value: js.Any => Unit): Self = StObject.set(x, "processResultReady", js.Any.fromFunction1(value))
+    inline def setProcessResultReady(value: Any => Unit): Self = StObject.set(x, "processResultReady", js.Any.fromFunction1(value))
     
-    inline def setRaiseOneTimeResultRenderedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseOneTimeResultRenderedEvent", js.Any.fromFunction1(value))
+    inline def setRaiseOneTimeResultRenderedEvent(value: Any => Unit): Self = StObject.set(x, "raiseOneTimeResultRenderedEvent", js.Any.fromFunction1(value))
     
-    inline def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseQueryReadyEvent(value: Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
     
-    inline def setRaiseResultRenderedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseResultRenderedEvent", js.Any.fromFunction1(value))
+    inline def setRaiseResultRenderedEvent(value: Any => Unit): Self = StObject.set(x, "raiseResultRenderedEvent", js.Any.fromFunction1(value))
     
-    inline def setRefresh(value: js.Any => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+    inline def setRefresh(value: Any => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
-    inline def setRemove_oneTimeResultRendered(value: js.Any => Unit): Self = StObject.set(x, "remove_oneTimeResultRendered", js.Any.fromFunction1(value))
+    inline def setRemove_oneTimeResultRendered(value: Any => Unit): Self = StObject.set(x, "remove_oneTimeResultRendered", js.Any.fromFunction1(value))
     
-    inline def setRemove_queryReady(value: js.Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
+    inline def setRemove_queryReady(value: Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
     
-    inline def setRemove_resultRendered(value: js.Any => Unit): Self = StObject.set(x, "remove_resultRendered", js.Any.fromFunction1(value))
+    inline def setRemove_resultRendered(value: Any => Unit): Self = StObject.set(x, "remove_resultRendered", js.Any.fromFunction1(value))
     
     inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    inline def setSet_currentResultTableCollection(value: js.Any => js.Any): Self = StObject.set(x, "set_currentResultTableCollection", js.Any.fromFunction1(value))
+    inline def setSet_currentResultTableCollection(value: Any => Any): Self = StObject.set(x, "set_currentResultTableCollection", js.Any.fromFunction1(value))
     
     inline def setSet_emptyMessage(value: String => String): Self = StObject.set(x, "set_emptyMessage", js.Any.fromFunction1(value))
     

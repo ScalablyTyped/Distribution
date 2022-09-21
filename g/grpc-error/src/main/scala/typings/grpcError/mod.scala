@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("grpc-error", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GRPCError {
     def this(value: String) = this()
@@ -21,12 +21,14 @@ object mod {
     /* CompleteClass */
     var code: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
     /* CompleteClass */
     var metadata: js.Object = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

@@ -61,7 +61,7 @@ trait ListObject extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Publish(Target: SafeArray[String], LinkSource: Boolean): String = js.native
   
@@ -99,7 +99,7 @@ trait ListObject extends StObject {
   
   var Summary: String = js.native
   
-  var TableStyle: js.Any = js.native
+  var TableStyle: Any = js.native
   
   def TotalsRowRange(Address: String): Range = js.native
   def TotalsRowRange(RowIndex: Double): Range = js.native

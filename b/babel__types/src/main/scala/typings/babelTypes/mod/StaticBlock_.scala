@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with BlockParent
-     with Scopable {
+     with FunctionParent
+     with Scopable
+     with Standardized {
   
   var body: js.Array[Statement]
   
@@ -29,7 +31,7 @@ object StaticBlock_ {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setType(value: StaticBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

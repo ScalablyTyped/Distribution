@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object encodableHistogramMod {
   
-  @JSImport("hdr-histogram-js/EncodableHistogram", "EncodableHistogram")
+  @JSImport("hdr-histogram-js/dist/EncodableHistogram", "EncodableHistogram")
   @js.native
   abstract class EncodableHistogram () extends StObject
 }

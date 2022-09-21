@@ -10,10 +10,10 @@ The lodash method `_.isArrayBuffer` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isarraybuffer |
 | Keywords           | lodash-modularized, isarraybuffer |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1819 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 86.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

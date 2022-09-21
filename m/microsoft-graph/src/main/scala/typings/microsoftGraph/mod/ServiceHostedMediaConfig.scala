@@ -26,6 +26,6 @@ object ServiceHostedMediaConfig {
     
     inline def setPreFetchMediaUndefined: Self = StObject.set(x, "preFetchMedia", js.undefined)
     
-    inline def setPreFetchMediaVarargs(value: MediaInfo*): Self = StObject.set(x, "preFetchMedia", js.Array(value :_*))
+    inline def setPreFetchMediaVarargs(value: MediaInfo*): Self = StObject.set(x, "preFetchMedia", js.Array(value*))
   }
 }

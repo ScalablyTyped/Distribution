@@ -10,10 +10,10 @@ assertEqualJSX
 | ------------------ | :-------------: |
 | Full name          | assert-equal-jsx |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 745 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 83.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/assert-equal-jsx)

@@ -1,69 +1,44 @@
 package typings.typescriptTuple
 
-import typings.typescriptTuple.utilsMod.IndexesNormalize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
-  type AllIndexesEqual[Type, Tuple /* <: js.Array[js.Any] */] = IndexesNormalize[
-    typings.typescriptTuple.utilsMod.AllIndexesEqual[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]
-  ]
+  type Append[Tuple /* <: js.Array[Any] */, Addend] = Reverse[Prepend[Reverse[Tuple], Addend]]
   
-  type AllIndexesSubset[Type, Tuple /* <: js.Array[js.Any] */] = IndexesNormalize[
-    typings.typescriptTuple.utilsMod.AllIndexesSubset[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]
-  ]
+  type CompareLength[Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */] = typings.typescriptTuple.utilsMod.CompareLength[Left, Right]
   
-  type AllIndexesSuperset[Type, Tuple /* <: js.Array[js.Any] */] = IndexesNormalize[
-    typings.typescriptTuple.utilsMod.AllIndexesSuperset[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]
-  ]
+  type Concat[Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */] = typings.typescriptTuple.utilsMod.Concat[Left, Right]
   
-  type Append[Tuple /* <: js.Array[js.Any] */, Addend] = Reverse[Prepend[Reverse[Tuple], Addend]]
+  type ConcatMultiple[TupleSet /* <: js.Array[js.Array[Any]] */] = typings.typescriptTuple.utilsMod.ConcatMultiple[TupleSet]
   
-  type CompareLength[Left /* <: js.Array[js.Any] */, Right /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.CompareLength[Left, Right]
+  type Drop[Tuple /* <: js.Array[Any] */, Quantity /* <: Double */] = typings.typescriptTuple.utilsMod.Drop[Tuple, Quantity, js.Array[Any]]
   
-  type Concat[Left /* <: js.Array[js.Any] */, Right /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.Concat[Left, Right]
+  type FillTuple[Tuple /* <: js.Array[Any] */, Replacement] = typings.typescriptTuple.utilsMod.FillTuple[Tuple, Replacement, js.Array[Any]]
   
-  type ConcatMultiple[TupleSet /* <: js.Array[js.Array[js.Any]] */] = typings.typescriptTuple.utilsMod.ConcatMultiple[TupleSet]
+  type FilterTuple[TupleSet /* <: js.Array[Any] */, Mask] = typings.typescriptTuple.utilsMod.FilterTuple[TupleSet, Mask]
   
-  type FillTuple[Tuple /* <: js.Array[js.Any] */, Replacement] = typings.typescriptTuple.utilsMod.FillTuple[Tuple, Replacement, js.Array[js.Any]]
+  type First[Tuple /* <: Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: Tuple[0] */ js.Any
   
-  type First[Tuple /* <: Array[js.Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: Tuple[0] */ js.Any
+  type IsFinite[Tuple /* <: js.Array[Any] */, Finite, Infinite] = typings.typescriptTuple.utilsMod.IsFinite[Tuple, Finite, Infinite]
   
-  type FirstIndexEqual[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.FirstIndexEqual[Type, Tuple, NotFound, js.Array[js.Any]]
+  type Last[Tuple /* <: js.Array[Any] */] = typings.typescriptTuple.utilsMod.Last[Tuple, scala.Nothing]
   
-  type FirstIndexSubset[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.FirstIndexSubset[Type, Tuple, NotFound, js.Array[js.Any]]
+  type LongestTuple[TupleSet /* <: Array[js.Array[Any]] */] = typings.typescriptTuple.utilsMod.LongestTuple[TupleSet, js.Array[Any]]
   
-  type FirstIndexSuperset[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.FirstIndexSuperset[Type, Tuple, NotFound, js.Array[js.Any]]
+  type Prepend[Tuple /* <: js.Array[Any] */, Addend] = typings.typescriptTuple.utilsMod.Prepend[Tuple, Addend]
   
-  type IsFinite[Tuple /* <: js.Array[js.Any] */, Finite, Infinite] = typings.typescriptTuple.utilsMod.IsFinite[Tuple, Finite, Infinite]
+  type Repeat[Type, Count /* <: Double */] = typings.typescriptTuple.utilsMod.Repeat[Type, Count, js.Array[Any]]
   
-  type Last[Tuple /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.Last[Tuple, scala.Nothing]
+  type Reverse[Tuple /* <: js.Array[Any] */] = typings.typescriptTuple.utilsMod.Reverse[Tuple, js.Array[Any]]
   
-  type LastIndexEqual[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.LastIndexEqual[Type, Tuple, NotFound]
+  type ShortestTuple[TupleSet /* <: Array[js.Array[Any]] */] = typings.typescriptTuple.utilsMod.ShortestTuple[TupleSet, js.Array[Any]]
   
-  type LastIndexSubset[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.LastIndexSubset[Type, Tuple, NotFound]
+  type SliceStartQuantity[Tuple /* <: js.Array[Any] */, Start /* <: Double */, Quantity /* <: Double */] = typings.typescriptTuple.utilsMod.SliceStartQuantity[Tuple, Start, Quantity, js.Array[Any], js.Array[Any]]
   
-  type LastIndexSuperset[Type, Tuple /* <: js.Array[js.Any] */, NotFound] = typings.typescriptTuple.utilsMod.LastIndexSuperset[Type, Tuple, NotFound]
+  type SortTwoTuple[Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */, WhenEqual] = typings.typescriptTuple.utilsMod.SortTwoTuple[Left, Right, WhenEqual]
   
-  type LongestTuple[TupleSet /* <: Array[js.Array[js.Any]] */] = typings.typescriptTuple.utilsMod.LongestTuple[TupleSet, js.Array[js.Any]]
-  
-  type Prepend[Tuple /* <: js.Array[js.Any] */, Addend] = typings.typescriptTuple.utilsMod.Prepend[Tuple, Addend]
-  
-  type Repeat[Type, Count /* <: Double */] = typings.typescriptTuple.utilsMod.Repeat[Type, Count, js.Array[js.Any]]
-  
-  type Reverse[Tuple /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.Reverse[Tuple, js.Array[js.Any]]
-  
-  type ShortestTuple[TupleSet /* <: Array[js.Array[js.Any]] */] = typings.typescriptTuple.utilsMod.ShortestTuple[TupleSet, js.Array[js.Any]]
-  
-  type SingleTupleSet[Types /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.SingleTupleSet[Types, js.Array[js.Any]]
-  
-  type SliceStartQuantity[Tuple /* <: js.Array[js.Any] */, Start /* <: Double */, Quantity /* <: Double */] = typings.typescriptTuple.utilsMod.SliceStartQuantity[Tuple, Start, Quantity, js.Array[js.Any], js.Array[js.Any]]
-  
-  type SortTwoTuple[Left /* <: js.Array[js.Any] */, Right /* <: js.Array[js.Any] */, WhenEqual] = typings.typescriptTuple.utilsMod.SortTwoTuple[Left, Right, WhenEqual]
-  
-  type SplitInfiniteTuple[Tuple /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.SplitInfiniteTuple[Tuple]
-  
-  type Tail[Tuple /* <: js.Array[js.Any] */] = typings.typescriptTuple.utilsMod.Tail[Tuple]
+  type Tail[Tuple /* <: js.Array[Any] */] = typings.typescriptTuple.utilsMod.Tail[Tuple]
 }

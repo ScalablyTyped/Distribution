@@ -67,7 +67,7 @@ object ASPxClientRichEditFloatingObjectMovedEventArgs {
     
     inline def setPageIntervals(value: js.Array[Interval]): Self = StObject.set(x, "pageIntervals", value.asInstanceOf[js.Any])
     
-    inline def setPageIntervalsVarargs(value: Interval*): Self = StObject.set(x, "pageIntervals", js.Array(value :_*))
+    inline def setPageIntervalsVarargs(value: Interval*): Self = StObject.set(x, "pageIntervals", js.Array(value*))
     
     inline def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
   }

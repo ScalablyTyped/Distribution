@@ -19,8 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xterm.xtermStrings.`900`
   - scala.Double
 */
-type FontWeight = typings.xterm.mod._FontWeight | scala.Double
+type FontWeight = _FontWeight | Double
 
-type IEvent[T, U] = js.Function1[
-/* listener */ js.Function2[/* arg1 */ T, /* arg2 */ U, js.Any], 
-typings.xterm.mod.IDisposable]
+type IEvent[T, U] = js.Function1[/* listener */ js.Function2[/* arg1 */ T, /* arg2 */ U, Any], IDisposable]

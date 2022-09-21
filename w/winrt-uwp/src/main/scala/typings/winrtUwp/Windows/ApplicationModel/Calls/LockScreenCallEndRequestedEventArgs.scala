@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LockScreenCallEndRequestedEventArgs extends StObject {
   
   /** Gets the deadline by which the app must complete the deferral. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Requests to defer the default behavior of removing the app from the lock screen.
@@ -19,14 +18,14 @@ trait LockScreenCallEndRequestedEventArgs extends StObject {
 }
 object LockScreenCallEndRequestedEventArgs {
   
-  inline def apply(deadline: Date, getDeferral: () => LockScreenCallEndCallDeferral): LockScreenCallEndRequestedEventArgs = {
+  inline def apply(deadline: js.Date, getDeferral: () => LockScreenCallEndCallDeferral): LockScreenCallEndRequestedEventArgs = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[LockScreenCallEndRequestedEventArgs]
   }
   
   extension [Self <: LockScreenCallEndRequestedEventArgs](x: Self) {
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => LockScreenCallEndCallDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

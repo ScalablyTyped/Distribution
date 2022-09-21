@@ -12,7 +12,6 @@ import typings.express.mod.Handler
 import typings.keygrip.mod.Keygrip
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,26 +25,26 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cookies", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Cookies {
-    def this(request: IncomingMessage, response: ServerResponse) = this()
+    def this(request: IncomingMessage, response: ServerResponse[IncomingMessage]) = this()
     /**
       * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
       */
-    def this(request: IncomingMessage, response: ServerResponse, options: js.Array[String]) = this()
-    def this(request: IncomingMessage, response: ServerResponse, options: Option) = this()
+    def this(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: js.Array[String]) = this()
+    def this(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: Option) = this()
     /**
       * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
       */
     // tslint:disable-next-line:unified-signatures
-    def this(request: IncomingMessage, response: ServerResponse, options: Keygrip) = this()
+    def this(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: Keygrip) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cookies", "Cookie")
   @js.native
-  class CookieCls protected ()
+  open class CookieCls protected ()
     extends StObject
        with Cookie {
     def this(name: String) = this()
@@ -57,7 +56,7 @@ object mod extends Shortcut {
     var domain: String = js.native
     
     /* CompleteClass */
-    var expires: Date = js.native
+    var expires: js.Date = js.native
     
     /* CompleteClass */
     var httpOnly: Boolean = js.native
@@ -97,7 +96,7 @@ object mod extends Shortcut {
     
     var domain: String
     
-    var expires: Date
+    var expires: js.Date
     
     var httpOnly: Boolean
     
@@ -126,7 +125,7 @@ object mod extends Shortcut {
     
     inline def apply(
       domain: String,
-      expires: Date,
+      expires: js.Date,
       httpOnly: Boolean,
       maxAge: Double,
       maxage: Double,
@@ -146,7 +145,7 @@ object mod extends Shortcut {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
@@ -183,19 +182,20 @@ object mod extends Shortcut {
     
     var request: IncomingMessage = js.native
     
-    var response: ServerResponse = js.native
+    var response: ServerResponse[IncomingMessage] = js.native
     
     var secure: Boolean = js.native
     
-    def set(name: String): this.type = js.native
-    def set(name: String, opts: SetOption): this.type = js.native
     /**
       * This sets the given cookie in the response and returns
       * the current context to allow chaining.If the value is omitted,
       * an outbound header with an expired date is used to delete the cookie.
       */
+    def set(name: String): this.type = js.native
     def set(name: String, value: String): this.type = js.native
     def set(name: String, value: String, opts: SetOption): this.type = js.native
+    def set(name: String, value: Null, opts: SetOption): this.type = js.native
+    def set(name: String, value: Unit, opts: SetOption): this.type = js.native
   }
   
   @js.native
@@ -210,23 +210,27 @@ object mod extends Shortcut {
   // tslint:disable-next-line:unified-signatures
   Instantiable3[
           /* request */ IncomingMessage, 
-          /* response */ ServerResponse, 
+          /* response */ ServerResponse[IncomingMessage], 
           (/* options */ js.Array[String]) | (/* options */ Keygrip) | (/* options */ Option), 
           Cookies
         ]
-       with Instantiable2[/* request */ IncomingMessage, /* response */ ServerResponse, Cookies] {
+       with Instantiable2[
+          /* request */ IncomingMessage, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Cookies
+        ] {
     
-    def apply(request: IncomingMessage, response: ServerResponse): Cookies = js.native
+    def apply(request: IncomingMessage, response: ServerResponse[IncomingMessage]): Cookies = js.native
     /**
       * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
       */
-    def apply(request: IncomingMessage, response: ServerResponse, options: js.Array[String]): Cookies = js.native
-    def apply(request: IncomingMessage, response: ServerResponse, options: Option): Cookies = js.native
+    def apply(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: js.Array[String]): Cookies = js.native
+    def apply(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: Option): Cookies = js.native
     /**
       * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
       */
     // tslint:disable-next-line:unified-signatures
-    def apply(request: IncomingMessage, response: ServerResponse, options: Keygrip): Cookies = js.native
+    def apply(request: IncomingMessage, response: ServerResponse[IncomingMessage], options: Keygrip): Cookies = js.native
     
     var Cookie: Instantiable = js.native
     
@@ -283,7 +287,7 @@ object mod extends Shortcut {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
@@ -302,7 +306,7 @@ object mod extends Shortcut {
       * a Date object indicating the cookie's expiration
       * date (expires at the end of session by default).
       */
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTP(S),
@@ -368,7 +372,7 @@ object mod extends Shortcut {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       

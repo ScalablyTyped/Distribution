@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.CarouselItem")
 @js.native
-class CarouselItem ()
+open class CarouselItem ()
   extends typings.reactBootstrap.mod.CarouselItem

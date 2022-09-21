@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Common properties for a page element.  Note: When you initially create a
-  * PageElement, the API may modify the values of both `size` and `transform`,
-  * but the visual size will be unchanged.
-  */
 trait SchemaPageElementProperties extends StObject {
   
   /**
     * The object ID of the page where the element is located.
     */
-  var pageObjectId: js.UndefOr[String] = js.undefined
+  var pageObjectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The size of the element.
@@ -36,6 +31,8 @@ object SchemaPageElementProperties {
   extension [Self <: SchemaPageElementProperties](x: Self) {
     
     inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+    
+    inline def setPageObjectIdNull: Self = StObject.set(x, "pageObjectId", null)
     
     inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     

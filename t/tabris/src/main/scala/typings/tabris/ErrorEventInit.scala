@@ -10,7 +10,7 @@ trait ErrorEventInit
   
   var colno: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[Any] = js.undefined
   
   var filename: js.UndefOr[String] = js.undefined
   
@@ -31,7 +31,7 @@ object ErrorEventInit {
     
     inline def setColnoUndefined: Self = StObject.set(x, "colno", js.undefined)
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

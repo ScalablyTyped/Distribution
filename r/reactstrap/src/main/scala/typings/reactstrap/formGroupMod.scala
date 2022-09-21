@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formGroupMod {
   
-  @JSImport("reactstrap/lib/FormGroup", JSImport.Default)
+  @JSImport("reactstrap/types/lib/FormGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FormGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FormGroupProps, js.Object, Any]
   
-  type FormGroup = Component[FormGroupProps, js.Object, js.Any]
+  type FormGroup = Component[FormGroupProps, js.Object, Any]
   
   trait FormGroupProps
     extends StObject
        with HTMLAttributes[HTMLDivElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var check: js.UndefOr[Boolean] = js.undefined
     
@@ -30,11 +30,15 @@ object formGroupMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var floating: js.UndefOr[Boolean] = js.undefined
+    
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
     var row: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var switch: js.UndefOr[Boolean] = js.undefined
+    
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object FormGroupProps {
     
@@ -57,6 +61,10 @@ object formGroupMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+      
+      inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+      
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
@@ -65,7 +73,11 @@ object formGroupMod {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setSwitch(value: Boolean): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+      
+      inline def setSwitchUndefined: Self = StObject.set(x, "switch", js.undefined)
+      
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

@@ -32,11 +32,10 @@ trait CompletionItem extends StObject {
   var commitCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * An data entry field that is preserved on a completion item between
-    * a [CompletionRequest](#CompletionRequest) and a [CompletionResolveRequest]
-    * (#CompletionResolveRequest)
+    * A data entry field that is preserved on a completion item between a
+    * [CompletionRequest](#CompletionRequest) and a [CompletionResolveRequest](#CompletionResolveRequest).
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[LSPAny] = js.undefined
   
   /**
     * Indicates if this item is deprecated.
@@ -69,19 +68,32 @@ trait CompletionItem extends StObject {
     *
     * The `insertText` is subject to interpretation by the client side.
     * Some tools might not take the string literally. For example
-    * VS Code when code complete is requested in this example `con<cursor position>`
-    * and a completion item with an `insertText` of `console` is provided it
-    * will only insert `sole`. Therefore it is recommended to use `textEdit` instead
-    * since it avoids additional client side interpretation.
+    * VS Code when code complete is requested in this example
+    * `con<cursor position>` and a completion item with an `insertText` of
+    * `console` is provided it will only insert `sole`. Therefore it is
+    * recommended to use `textEdit` instead since it avoids additional client
+    * side interpretation.
     */
   var insertText: js.UndefOr[String] = js.undefined
   
   /**
-    * The format of the insert text. The format applies to both the `insertText` property
-    * and the `newText` property of a provided `textEdit`. If ommitted defaults to
-    * `InsertTextFormat.PlainText`.
+    * The format of the insert text. The format applies to both the
+    * `insertText` property and the `newText` property of a provided
+    * `textEdit`. If omitted defaults to `InsertTextFormat.PlainText`.
+    *
+    * Please note that the insertTextFormat doesn't apply to
+    * `additionalTextEdits`.
     */
   var insertTextFormat: js.UndefOr[InsertTextFormat] = js.undefined
+  
+  /**
+    * How whitespace and indentation is handled during completion
+    * item insertion. If not provided the clients default value depends on
+    * the `textDocument.completion.insertTextMode` client capability.
+    *
+    * @since 3.16.0
+    */
+  var insertTextMode: js.UndefOr[InsertTextMode] = js.undefined
   
   /**
     * The kind of this completion item. Based of the kind
@@ -90,11 +102,22 @@ trait CompletionItem extends StObject {
   var kind: js.UndefOr[CompletionItemKind] = js.undefined
   
   /**
-    * The label of this completion item. By default
-    * also the text that is inserted when selecting
-    * this completion.
+    * The label of this completion item.
+    *
+    * The label property is also by default the text that
+    * is inserted when selecting this completion.
+    *
+    * If label details are provided the label itself should
+    * be an unqualified name of the completion item.
     */
   var label: String
+  
+  /**
+    * Additional details for the label
+    *
+    * @since 3.17.0
+    */
+  var labelDetails: js.UndefOr[CompletionItemLabelDetails] = js.undefined
   
   /**
     * Select this item when showing.
@@ -124,10 +147,38 @@ trait CompletionItem extends StObject {
     * this completion. When an edit is provided the value of
     * [insertText](#CompletionItem.insertText) is ignored.
     *
-    * *Note:* The text edit's range must be a [single line] and it must contain the position
+    * Most editors support two different operations when accepting a completion
+    * item. One is to insert a completion text and the other is to replace an
+    * existing text with a completion text. Since this can usually not be
+    * predetermined by a server it can report both ranges. Clients need to
+    * signal support for `InsertReplaceEdits` via the
+    * `textDocument.completion.insertReplaceSupport` client capability
+    * property.
+    *
+    * *Note 1:* The text edit's range as well as both ranges from an insert
+    * replace edit must be a [single line] and they must contain the position
     * at which completion has been requested.
+    * *Note 2:* If an `InsertReplaceEdit` is returned the edit's insert range
+    * must be a prefix of the edit's replace range, that means it must be
+    * contained and starting at the same position.
+    *
+    * @since 3.16.0 additional type `InsertReplaceEdit`
     */
-  var textEdit: js.UndefOr[TextEdit] = js.undefined
+  var textEdit: js.UndefOr[TextEdit | InsertReplaceEdit] = js.undefined
+  
+  /**
+    * The edit text used if the completion item is part of a CompletionList and
+    * CompletionList defines an item default for the text edit range.
+    *
+    * Clients will only honor this property if they opt into completion list
+    * item defaults using the capability `completionList.itemDefaults`.
+    *
+    * If not provided and a list's default range is provided the label
+    * property is used as a text.
+    *
+    * @since 3.17.0
+    */
+  var textEditText: js.UndefOr[String] = js.undefined
 }
 object CompletionItem {
   
@@ -152,7 +203,7 @@ object CompletionItem {
     
     inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value*))
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
@@ -162,9 +213,9 @@ object CompletionItem {
     
     inline def setCommitCharactersUndefined: Self = StObject.set(x, "commitCharacters", js.undefined)
     
-    inline def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value :_*))
+    inline def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value*))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -190,6 +241,10 @@ object CompletionItem {
     
     inline def setInsertTextFormatUndefined: Self = StObject.set(x, "insertTextFormat", js.undefined)
     
+    inline def setInsertTextMode(value: InsertTextMode): Self = StObject.set(x, "insertTextMode", value.asInstanceOf[js.Any])
+    
+    inline def setInsertTextModeUndefined: Self = StObject.set(x, "insertTextMode", js.undefined)
+    
     inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
     inline def setKind(value: CompletionItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -197,6 +252,10 @@ object CompletionItem {
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDetails(value: CompletionItemLabelDetails): Self = StObject.set(x, "labelDetails", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDetailsUndefined: Self = StObject.set(x, "labelDetails", js.undefined)
     
     inline def setPreselect(value: Boolean): Self = StObject.set(x, "preselect", value.asInstanceOf[js.Any])
     
@@ -210,9 +269,13 @@ object CompletionItem {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value*))
     
-    inline def setTextEdit(value: TextEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
+    inline def setTextEdit(value: TextEdit | InsertReplaceEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
+    
+    inline def setTextEditText(value: String): Self = StObject.set(x, "textEditText", value.asInstanceOf[js.Any])
+    
+    inline def setTextEditTextUndefined: Self = StObject.set(x, "textEditText", js.undefined)
     
     inline def setTextEditUndefined: Self = StObject.set(x, "textEdit", js.undefined)
   }

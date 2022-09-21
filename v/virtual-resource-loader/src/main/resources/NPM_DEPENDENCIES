@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "virtual-resource-loader" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "virtual-resource-loader" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

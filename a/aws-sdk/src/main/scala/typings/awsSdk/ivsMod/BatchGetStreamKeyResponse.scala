@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchGetStreamKeyResponse extends StObject {
   
+  /**
+    * 
+    */
   var errors: js.UndefOr[BatchErrors] = js.undefined
   
+  /**
+    * 
+    */
   var streamKeys: js.UndefOr[StreamKeys] = js.undefined
 }
 object BatchGetStreamKeyResponse {
@@ -23,12 +29,12 @@ object BatchGetStreamKeyResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setStreamKeys(value: StreamKeys): Self = StObject.set(x, "streamKeys", value.asInstanceOf[js.Any])
     
     inline def setStreamKeysUndefined: Self = StObject.set(x, "streamKeys", js.undefined)
     
-    inline def setStreamKeysVarargs(value: StreamKey*): Self = StObject.set(x, "streamKeys", js.Array(value :_*))
+    inline def setStreamKeysVarargs(value: StreamKey*): Self = StObject.set(x, "streamKeys", js.Array(value*))
   }
 }

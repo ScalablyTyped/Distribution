@@ -32,7 +32,7 @@ object MasteryListDto {
     
     inline def setData(value: js.Array[StringDictionary[MasteryDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: StringDictionary[MasteryDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StringDictionary[MasteryDto]*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setTree(value: MasteryTreeDto): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     

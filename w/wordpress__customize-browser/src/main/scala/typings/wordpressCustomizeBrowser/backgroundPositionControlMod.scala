@@ -9,7 +9,7 @@ object backgroundPositionControlMod {
   
   @JSImport("@wordpress/customize-browser/BackgroundPositionControl", "BackgroundPositionControl")
   @js.native
-  class BackgroundPositionControl protected () extends Control {
+  open class BackgroundPositionControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
   }

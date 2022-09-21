@@ -10,9 +10,9 @@ trait Adaptor extends StObject {
   	 * @param value the value to evaluate
   	 * @param keypath the keypath of the value in the Ractive data
   	 * @param ractive the Ractive instance that is applying the value to the given keypath
-  	 * @returns true if the adaptor should be applied, false otherwisej
+  	 * @returns true if the adaptor should be applied, false otherwise
   	 */
-  def filter(value: js.Any, keypath: String, ractive: Ractive[Ractive[js.Any]]): Boolean
+  def filter(value: Any, keypath: String, ractive: Ractive[Ractive[Any]]): Boolean
   
   /** Called when Ractive is applying the adaptor to a value
   	 * @param ractive the Ractive instance that is applying the adaptor
@@ -21,13 +21,13 @@ trait Adaptor extends StObject {
   	 * @param prefixer a helper function to prefix a value map with the current keypath
   	 * @returns the adaptor
   	 */
-  def wrap(ractive: Ractive[Ractive[js.Any]], value: js.Any, keypath: String, prefixer: AdaptorPrefixer): AdaptorHandle
+  def wrap(ractive: Ractive[Ractive[Any]], value: Any, keypath: String, prefixer: AdaptorPrefixer): AdaptorHandle
 }
 object Adaptor {
   
   inline def apply(
-    filter: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean,
-    wrap: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle
+    filter: (Any, String, Ractive[Ractive[Any]]) => Boolean,
+    wrap: (Ractive[Ractive[Any]], Any, String, AdaptorPrefixer) => AdaptorHandle
   ): Adaptor = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction3(filter), wrap = js.Any.fromFunction4(wrap))
     __obj.asInstanceOf[Adaptor]
@@ -35,8 +35,8 @@ object Adaptor {
   
   extension [Self <: Adaptor](x: Self) {
     
-    inline def setFilter(value: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
+    inline def setFilter(value: (Any, String, Ractive[Ractive[Any]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
-    inline def setWrap(value: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
+    inline def setWrap(value: (Ractive[Ractive[Any]], Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
   }
 }

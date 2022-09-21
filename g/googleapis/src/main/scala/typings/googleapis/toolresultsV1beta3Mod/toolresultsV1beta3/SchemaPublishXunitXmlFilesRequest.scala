@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for StepService.PublishXunitXmlFiles.
-  */
 trait SchemaPublishXunitXmlFilesRequest extends StObject {
   
   /**
-    * URI of the Xunit XML files to publish.  The maximum size of the file this
-    * reference is pointing to is 50MB.  Required.
+    * URI of the Xunit XML files to publish. The maximum size of the file this reference is pointing to is 50MB. Required.
     */
   var xunitXmlFiles: js.UndefOr[js.Array[SchemaFileReference]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaPublishXunitXmlFilesRequest {
     
     inline def setXunitXmlFilesUndefined: Self = StObject.set(x, "xunitXmlFiles", js.undefined)
     
-    inline def setXunitXmlFilesVarargs(value: SchemaFileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value :_*))
+    inline def setXunitXmlFilesVarargs(value: SchemaFileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value*))
   }
 }

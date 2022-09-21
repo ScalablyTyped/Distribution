@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A named style. Paragraphs in the document can inherit their TextStyle and
-  * ParagraphStyle from this named style when they have the same named style
-  * type.
-  */
 trait SchemaNamedStyle extends StObject {
   
   /**
     * The type of this named style.
     */
-  var namedStyleType: js.UndefOr[String] = js.undefined
+  var namedStyleType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The paragraph style of this named style.
@@ -36,6 +31,8 @@ object SchemaNamedStyle {
   extension [Self <: SchemaNamedStyle](x: Self) {
     
     inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+    
+    inline def setNamedStyleTypeNull: Self = StObject.set(x, "namedStyleType", null)
     
     inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     

@@ -1,22 +1,28 @@
 package typings.reactSelect
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.CSSProperties
+import typings.emotionReact.emotionReactMod.jsx.JSX.Element
 import typings.react.mod.Component
-import typings.react.mod.ComponentType
-import typings.react.mod.ReactElement
+import typings.react.mod.Context
+import typings.react.mod.ContextType
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
+import typings.react.mod.RefCallback
+import typings.reactSelect.anon.Children
+import typings.reactSelect.anon.Cx
 import typings.reactSelect.anon.GetPortalPlacement
-import typings.reactSelect.reactSelectStrings.auto
 import typings.reactSelect.reactSelectStrings.bottom
 import typings.reactSelect.reactSelectStrings.top
+import typings.reactSelect.typesMod.CSSObjectWithLabel
+import typings.reactSelect.typesMod.CoercedMenuPlacement
 import typings.reactSelect.typesMod.CommonProps
-import typings.reactSelect.typesMod.InnerRef
+import typings.reactSelect.typesMod.CommonPropsAndClassName
+import typings.reactSelect.typesMod.GroupBase
 import typings.reactSelect.typesMod.MenuPlacement
 import typings.reactSelect.typesMod.MenuPosition
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.reactSelect.typesMod.Theme
 import typings.reactSelect.utilsMod.RectType
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,191 +30,205 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object menuMod {
   
-  @JSImport("react-select/src/components/Menu", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/components/Menu", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/components/Menu", JSImport.Default)
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  object LoadingMessage {
+    
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: NoticeProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("react-select/dist/declarations/src/components/Menu", "LoadingMessage")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-select/dist/declarations/src/components/Menu", "LoadingMessage.defaultProps")
+    @js.native
+    def defaultProps: Children = js.native
+    inline def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  inline def MenuList[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuListProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuList")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer")
   @js.native
-  class default[OptionType /* <: OptionTypeBase */] protected () extends Menu[OptionType] {
-    def this(props: MenuProps[OptionType]) = this()
+  open class MenuPlacer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] protected () extends Component[MenuPlacerProps[Option, IsMulti, Group], MenuState, Any] {
+    def this(props: MenuPlacerProps[Option, IsMulti, Group]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MenuProps[OptionType], context: js.Any) = this()
+    def this(props: MenuPlacerProps[Option, IsMulti, Group], context: Any) = this()
+    
+    @JSName("context")
+    var context_MenuPlacer: ContextType[Context[GetPortalPlacement]] = js.native
+    
+    var getPlacement: RefCallback[HTMLDivElement] = js.native
+    
+    def getUpdatedProps(): Cx[Option, IsMulti, Group] = js.native
   }
   /* static members */
-  object default {
+  object MenuPlacer {
     
-    @JSImport("react-select/src/components/Menu", JSImport.Default)
+    @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-select/src/components/Menu", "default.contextTypes")
+    @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer.contextType")
     @js.native
-    def contextTypes: GetPortalPlacement = js.native
-    inline def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextType: Context[GetPortalPlacement] = js.native
+    inline def contextType_=(x: Context[GetPortalPlacement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select/src/components/Menu", "LoadingMessage")
+  @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPortal")
   @js.native
-  val LoadingMessage: ComponentType[NoticeProps[js.Any]] = js.native
-  
-  @JSImport("react-select/src/components/Menu", "Menu")
-  @js.native
-  class Menu[OptionType /* <: OptionTypeBase */] protected ()
-    extends Component[MenuProps[OptionType], MenuState, js.Any] {
-    def this(props: MenuProps[OptionType]) = this()
+  open class MenuPortal[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] protected () extends Component[MenuPortalProps[Option, IsMulti, Group], MenuPortalState, Any] {
+    def this(props: MenuPortalProps[Option, IsMulti, Group]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MenuProps[OptionType], context: js.Any) = this()
+    def this(props: MenuPortalProps[Option, IsMulti, Group], context: Any) = this()
     
-    def getPlacement(ref: Ref[js.Any]): Unit = js.native
-    
-    def getState(): MenuProps[OptionType] & MenuState = js.native
+    def getPortalPlacement(hasPlacement: MenuState): Unit = js.native
   }
-  /* static members */
-  object Menu {
+  
+  object NoOptionsMessage {
     
-    @JSImport("react-select/src/components/Menu", "Menu")
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: NoticeProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("react-select/dist/declarations/src/components/Menu", "NoOptionsMessage")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-select/src/components/Menu", "Menu.contextTypes")
+    @JSImport("react-select/dist/declarations/src/components/Menu", "NoOptionsMessage.defaultProps")
     @js.native
-    def contextTypes: GetPortalPlacement = js.native
-    inline def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def defaultProps: Children = js.native
+    inline def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select/src/components/Menu", "MenuList")
-  @js.native
-  val MenuList: ComponentType[MenuListComponentProps[js.Any]] = js.native
+  inline def getMenuPlacement(hasMaxHeightMenuElMinHeightPlacementShouldScrollIsFixedPositionTheme: PlacementArgs): MenuState = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(hasMaxHeightMenuElMinHeightPlacementShouldScrollIsFixedPositionTheme.asInstanceOf[js.Any]).asInstanceOf[MenuState]
   
-  @JSImport("react-select/src/components/Menu", "MenuPortal")
-  @js.native
-  class MenuPortal[OptionType /* <: OptionTypeBase */] protected ()
-    extends Component[MenuPortalProps[OptionType], MenuPortalState, js.Any] {
-    def this(props: MenuPortalProps[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: MenuPortalProps[OptionType], context: js.Any) = this()
+  inline def loadingMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasHasBaseUnitColors: NoticeProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")(hasHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def menuCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasPlacementHasBorderRadiusSpacingColors: MenuProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(hasPlacementHasBorderRadiusSpacingColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def menuListCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasMaxHeightHasHasBaseUnit: MenuListProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(hasMaxHeightHasHasBaseUnit.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def menuPortalCSS(hasRectOffsetPosition: PortalStyleArgs): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(hasRectOffsetPosition.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def noOptionsMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasHasBaseUnitColors: NoticeProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")(hasHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  trait ChildrenProps extends StObject {
     
-    def getChildContext(): GetPortalPlacement = js.native
+    var placerProps: PlacerProps
     
-    // callback for occassions where the menu must "flip"
-    def getPortalPlacement(state: MenuState): Unit = js.native
+    var ref: RefCallback[HTMLDivElement]
   }
-  /* static members */
-  object MenuPortal {
+  object ChildrenProps {
     
-    @JSImport("react-select/src/components/Menu", "MenuPortal")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(placerProps: PlacerProps, ref: /* instance */ HTMLDivElement | Null => Unit): ChildrenProps = {
+      val __obj = js.Dynamic.literal(placerProps = placerProps.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
+      __obj.asInstanceOf[ChildrenProps]
+    }
     
-    @JSImport("react-select/src/components/Menu", "MenuPortal.childContextTypes")
-    @js.native
-    def childContextTypes: GetPortalPlacement = js.native
-    inline def childContextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    extension [Self <: ChildrenProps](x: Self) {
+      
+      inline def setPlacerProps(value: PlacerProps): Self = StObject.set(x, "placerProps", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    }
   }
   
-  @JSImport("react-select/src/components/Menu", "NoOptionsMessage")
   @js.native
-  val NoOptionsMessage: ComponentType[NoticeProps[js.Any]] = js.native
-  
-  inline def getMenuPlacement(args: PlacementArgs): MenuState = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(args.asInstanceOf[js.Any]).asInstanceOf[MenuState]
-  
-  inline def loadingMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")().asInstanceOf[CSSProperties]
-  
-  inline def menuCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  inline def menuListCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  inline def menuPortalCSS(args: PortalStyleArgs): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(args.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  inline def noOptionsMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")().asInstanceOf[CSSProperties]
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactSelect.menuMod.MenuListState because var conflicts: isMulti. Inlined maxHeight */ @js.native
-  trait MenuListComponentProps[OptionType /* <: OptionTypeBase */]
+  trait MenuListProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType]
-       with MenuListProps {
+       with CommonPropsAndClassName[Option, IsMulti, Group] {
     
-    /* Set the max height of the Menu component  */
+    /** The children to be rendered. */
+    var children: ReactNode = js.native
+    
+    /** The currently focused option */
+    var focusedOption: Option = js.native
+    
+    /** Props to be passed to the menu-list wrapper. */
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
+    
+    /** Inner ref to DOM ReactNode */
+    var innerRef: RefCallback[HTMLDivElement] = js.native
+    
+    /** Set the max height of the Menu component  */
     var maxHeight: Double = js.native
   }
   
-  trait MenuListProps extends StObject {
+  trait MenuPlacementProps extends StObject {
     
-    /** The children to be rendered. */
-    var children: ReactNode
+    /** Set the maximum height of the menu. */
+    var maxMenuHeight: Double
     
-    /** Inner ref to DOM Node */
-    var innerRef: InnerRef
+    /** Set whether the menu should be at the top, at the bottom. The auto options sets it to bottom. */
+    var menuPlacement: MenuPlacement
+    
+    /** The CSS position value of the menu, when "fixed" extra layout management is required */
+    var menuPosition: MenuPosition
+    
+    /** Set whether the page should scroll to show the menu. */
+    var menuShouldScrollIntoView: Boolean
+    
+    /** Set the minimum height of the menu. */
+    var minMenuHeight: Double
   }
-  object MenuListProps {
+  object MenuPlacementProps {
     
-    inline def apply(): MenuListProps = {
-      val __obj = js.Dynamic.literal(innerRef = null)
-      __obj.asInstanceOf[MenuListProps]
+    inline def apply(
+      maxMenuHeight: Double,
+      menuPlacement: MenuPlacement,
+      menuPosition: MenuPosition,
+      menuShouldScrollIntoView: Boolean,
+      minMenuHeight: Double
+    ): MenuPlacementProps = {
+      val __obj = js.Dynamic.literal(maxMenuHeight = maxMenuHeight.asInstanceOf[js.Any], menuPlacement = menuPlacement.asInstanceOf[js.Any], menuPosition = menuPosition.asInstanceOf[js.Any], menuShouldScrollIntoView = menuShouldScrollIntoView.asInstanceOf[js.Any], minMenuHeight = minMenuHeight.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MenuPlacementProps]
     }
     
-    extension [Self <: MenuListProps](x: Self) {
+    extension [Self <: MenuPlacementProps](x: Self) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setMaxMenuHeight(value: Double): Self = StObject.set(x, "maxMenuHeight", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setMenuPlacement(value: MenuPlacement): Self = StObject.set(x, "menuPlacement", value.asInstanceOf[js.Any])
       
-      inline def setInnerRef(value: InnerRef): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: MenuPosition): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setMenuShouldScrollIntoView(value: Boolean): Self = StObject.set(x, "menuShouldScrollIntoView", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
-    }
-  }
-  
-  // ==============================
-  // Menu List
-  // ==============================
-  trait MenuListState extends StObject {
-    
-    /** Set classname for isMulti */
-    var isMulti: Boolean
-    
-    /* Set the max height of the Menu component  */
-    var maxHeight: Double
-  }
-  object MenuListState {
-    
-    inline def apply(isMulti: Boolean, maxHeight: Double): MenuListState = {
-      val __obj = js.Dynamic.literal(isMulti = isMulti.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MenuListState]
-    }
-    
-    extension [Self <: MenuListState](x: Self) {
-      
-      inline def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
-      
-      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMinMenuHeight(value: Double): Self = StObject.set(x, "minMenuHeight", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait MenuPortalProps[OptionType /* <: OptionTypeBase */]
+  trait MenuPlacerProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType] {
+       with CommonProps[Option, IsMulti, Group]
+       with MenuPlacementProps {
     
-    var appendTo: HTMLElement = js.native
+    /** The children to be rendered. */
+    def children(childrenProps: ChildrenProps): ReactNode = js.native
+  }
+  
+  @js.native
+  trait MenuPortalProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
+    extends StObject
+       with CommonPropsAndClassName[Option, IsMulti, Group] {
+    
+    var appendTo: js.UndefOr[HTMLElement] = js.native
     
     var children: ReactNode = js.native
     
-    // ideally Menu<MenuProps>
-    var controlElement: HTMLElement = js.native
+    var controlElement: HTMLDivElement | Null = js.native
+    
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
     var menuPlacement: MenuPlacement = js.native
     
@@ -235,43 +255,29 @@ object menuMod {
   }
   
   @js.native
-  trait MenuProps[OptionType /* <: OptionTypeBase */]
+  trait MenuProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType] {
+       with CommonPropsAndClassName[Option, IsMulti, Group]
+       with MenuPlacementProps {
     
     /** The children to be rendered. */
-    var children: ReactElement = js.native
+    var children: ReactNode = js.native
     
-    /** Callback to update the portal after possible flip. */
-    def getPortalPlacement(state: MenuState): Unit = js.native
-    
-    /** Props to be passed to the menu wrapper. */
-    var innerProps: js.Object = js.native
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
     /** Reference to the internal element, consumed by the MenuPlacer component */
-    var innerRef: InnerRef = js.native
+    var innerRef: RefCallback[HTMLDivElement] = js.native
     
-    /** Set the maximum height of the menu. */
-    var maxMenuHeight: Double = js.native
+    var isLoading: Boolean = js.native
     
-    /** Set whether the menu should be at the top, at the bottom. The auto options sets it to bottom. */
-    var menuPlacement: MenuPlacement = js.native
-    
-    /* The CSS position value of the menu, when "fixed" extra layout management is required */
-    var menuPosition: MenuPosition = js.native
-    
-    /** Set whether the page should scroll to show the menu. */
-    var menuShouldScrollIntoView: Boolean = js.native
-    
-    /** Set the minimum height of the menu. */
-    var minMenuHeight: Double = js.native
+    var placement: CoercedMenuPlacement = js.native
   }
   
   trait MenuState extends StObject {
     
     var maxHeight: Double
     
-    var placement: bottom | top | Null
+    var placement: CoercedMenuPlacement | Null
   }
   object MenuState {
     
@@ -284,22 +290,22 @@ object menuMod {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      inline def setPlacement(value: bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: CoercedMenuPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementNull: Self = StObject.set(x, "placement", null)
     }
   }
   
   @js.native
-  trait NoticeProps[OptionType /* <: OptionTypeBase */]
+  trait NoticeProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType] {
+       with CommonPropsAndClassName[Option, IsMulti, Group] {
     
     /** The children to be rendered. */
     var children: ReactNode = js.native
     
     /** Props to be passed on to the wrapper. */
-    var innerProps: StringDictionary[js.Any] = js.native
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
   }
   
   trait PlacementArgs extends StObject {
@@ -308,13 +314,15 @@ object menuMod {
     
     var maxHeight: Double
     
-    var menuEl: Ref[js.Any]
+    var menuEl: HTMLDivElement | Null
     
     var minHeight: Double
     
-    var placement: bottom | top | auto
+    var placement: MenuPlacement
     
     var shouldScroll: Boolean
+    
+    var theme: Theme
   }
   object PlacementArgs {
     
@@ -322,10 +330,11 @@ object menuMod {
       isFixedPosition: Boolean,
       maxHeight: Double,
       minHeight: Double,
-      placement: bottom | top | auto,
-      shouldScroll: Boolean
+      placement: MenuPlacement,
+      shouldScroll: Boolean,
+      theme: Theme
     ): PlacementArgs = {
-      val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any], menuEl = null)
+      val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], menuEl = null)
       __obj.asInstanceOf[PlacementArgs]
     }
     
@@ -335,17 +344,38 @@ object menuMod {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      inline def setMenuEl(value: Ref[js.Any]): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
-      
-      inline def setMenuElFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "menuEl", js.Any.fromFunction1(value))
+      inline def setMenuEl(value: HTMLDivElement): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
       
       inline def setMenuElNull: Self = StObject.set(x, "menuEl", null)
       
       inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      inline def setPlacement(value: bottom | top | auto): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: MenuPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setShouldScroll(value: Boolean): Self = StObject.set(x, "shouldScroll", value.asInstanceOf[js.Any])
+      
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PlacerProps extends StObject {
+    
+    var maxHeight: Double
+    
+    var placement: CoercedMenuPlacement
+  }
+  object PlacerProps {
+    
+    inline def apply(maxHeight: Double, placement: CoercedMenuPlacement): PlacerProps = {
+      val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PlacerProps]
+    }
+    
+    extension [Self <: PlacerProps](x: Self) {
+      
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      
+      inline def setPlacement(value: CoercedMenuPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
   

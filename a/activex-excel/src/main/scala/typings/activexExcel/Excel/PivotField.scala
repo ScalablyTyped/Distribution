@@ -26,9 +26,9 @@ trait PivotField extends StObject {
   val AutoShowType: Double = js.native
   
   def AutoSort(Order: Double, Field: String): Unit = js.native
-  def AutoSort(Order: Double, Field: String, PivotLine: js.Any): Unit = js.native
-  def AutoSort(Order: Double, Field: String, PivotLine: js.Any, CustomSubtotal: js.Any): Unit = js.native
-  def AutoSort(Order: Double, Field: String, PivotLine: Unit, CustomSubtotal: js.Any): Unit = js.native
+  def AutoSort(Order: Double, Field: String, PivotLine: Any): Unit = js.native
+  def AutoSort(Order: Double, Field: String, PivotLine: Any, CustomSubtotal: Any): Unit = js.native
+  def AutoSort(Order: Double, Field: String, PivotLine: Unit, CustomSubtotal: Any): Unit = js.native
   
   val AutoSortCustomSubtotal: Double = js.native
   
@@ -38,9 +38,9 @@ trait PivotField extends StObject {
   
   val AutoSortPivotLine: PivotLine = js.native
   
-  var BaseField: js.Any = js.native
+  var BaseField: Any = js.native
   
-  var BaseItem: js.Any = js.native
+  var BaseItem: Any = js.native
   
   def CalculatedItems(): typings.activexExcel.Excel.CalculatedItems = js.native
   
@@ -157,7 +157,7 @@ trait PivotField extends StObject {
   
   var Orientation: XlPivotFieldOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentField: PivotField = js.native
   
@@ -173,7 +173,7 @@ trait PivotField extends StObject {
   def PivotItems(Index: String): PivotItem = js.native
   def PivotItems(Index: Double): PivotItem = js.native
   
-  var Position: js.Any = js.native
+  var Position: Any = js.native
   
   var PropertyOrder: Double = js.native
   

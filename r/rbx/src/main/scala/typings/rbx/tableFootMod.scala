@@ -54,7 +54,7 @@ object tableFootMod {
   
   @JSImport("rbx/elements/table/table-foot", "TableFoot")
   @js.native
-  val TableFoot: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val TableFoot: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait TableFootProps extends StObject {

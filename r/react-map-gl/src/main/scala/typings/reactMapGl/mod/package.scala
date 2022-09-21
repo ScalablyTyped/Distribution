@@ -1,26 +1,28 @@
 package typings.reactMapGl.mod
 
+import typings.react.mod.Context
+import typings.reactMapGl.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def MapContext: typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps] = typings.reactMapGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps]]
+inline def MapContext: Context[MapContextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[Context[MapContextProps]]
 
-type ContextViewStateChangeHandler = js.Function1[/* info */ typings.reactMapGl.mod.ContextViewStateChangeInfo, scala.Unit]
+type ContextViewStateChangeHandler = js.Function1[/* info */ ContextViewStateChangeInfo, Unit]
 
 type ContextViewportChangeHandler = js.Function3[
-/* viewState */ typings.reactMapGl.mod.ViewportProps, 
-/* interactionState */ typings.reactMapGl.mod.ExtraState, 
-/* oldViewState */ typings.reactMapGl.mod.ViewportProps, 
-scala.Unit]
+/* viewState */ ViewportProps, 
+/* interactionState */ ExtraState, 
+/* oldViewState */ ViewportProps, 
+Unit]
 
-type EasingFunction = js.Function1[/* t */ scala.Double, scala.Double]
+type EasingFunction = js.Function1[/* t */ Double, Double]
 
-type EventManager = js.Any
+type EventManager = Any
 
-type SVGRedrawOptions = typings.reactMapGl.mod.HTMLRedrawOptions
+type SVGRedrawOptions = HTMLRedrawOptions
 
-type ViewStateChangeHandler = js.Function1[/* info */ typings.reactMapGl.mod.ViewStateChangeInfo, scala.Unit]
+type ViewStateChangeHandler = js.Function1[/* info */ ViewStateChangeInfo, Unit]
 
-type ViewportChangeHandler = js.Function1[/* viewState */ typings.reactMapGl.mod.ViewportProps, scala.Unit]
+type ViewportChangeHandler = js.Function1[/* viewState */ ViewportProps, Unit]

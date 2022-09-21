@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "control.RouteEditor")
 @js.native
-class RouteEditor () extends Button {
+open class RouteEditor () extends Button {
   def this(parameters: IRouteEditorParameters) = this()
   
   def getRoute(): Route = js.native

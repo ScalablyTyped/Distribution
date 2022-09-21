@@ -10,10 +10,10 @@ Animate on scroll library
 | ------------------ | :-------------: |
 | Full name          | aos |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 2424435 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1112901.0 |
+| # stars            | 20641.0 |
 
 ## Links
 - [Homepage](https://michalsnik.github.io/aos/)

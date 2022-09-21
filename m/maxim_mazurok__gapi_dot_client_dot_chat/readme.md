@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_chat
 
-Typings are for version 1.0.20201114
+Typings are for version 1.0.20220805
 
 ## Library description:
 TypeScript typings for Google Chat API v1
@@ -10,12 +10,15 @@ TypeScript typings for Google Chat API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.chat |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 1 |
-| # downloads        | 1503 |
-| # stars            | 0 |
+| # releases         | 131 |
+| # dependents       | 0.0 |
+| # downloads        | 1367.3333333333333 |
+| # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
 - [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.chat)
     
 

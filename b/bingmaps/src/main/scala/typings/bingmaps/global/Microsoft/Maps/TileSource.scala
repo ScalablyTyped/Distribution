@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.TileSource")
 @js.native
-class TileSource protected ()
+open class TileSource protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.TileSource {
   /**

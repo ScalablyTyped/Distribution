@@ -34,7 +34,7 @@ object ReviewsResult {
     
     inline def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value*))
     
     inline def setTotalReviewCount(value: Double): Self = StObject.set(x, "totalReviewCount", value.asInstanceOf[js.Any])
   }

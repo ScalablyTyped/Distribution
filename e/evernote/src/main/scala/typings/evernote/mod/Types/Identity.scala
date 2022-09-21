@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Identity")
 @js.native
-class Identity () extends StObject {
+open class Identity () extends StObject {
   def this(args: Blocked) = this()
   
   var blocked: js.UndefOr[Boolean] = js.native

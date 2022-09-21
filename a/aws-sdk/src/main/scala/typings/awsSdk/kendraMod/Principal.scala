@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Principal extends StObject {
   
   /**
-    * Whether to allow or deny access to the principal.
+    * Whether to allow or deny document access to the principal.
     */
   var Access: ReadAccessType
+  
+  /**
+    * The identifier of the data source the principal should access documents from.
+    */
+  var DataSourceId: js.UndefOr[typings.awsSdk.kendraMod.DataSourceId] = js.undefined
   
   /**
     * The name of the user or group.
@@ -31,6 +36,10 @@ object Principal {
   extension [Self <: Principal](x: Self) {
     
     inline def setAccess(value: ReadAccessType): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
     
     inline def setName(value: PrincipalName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

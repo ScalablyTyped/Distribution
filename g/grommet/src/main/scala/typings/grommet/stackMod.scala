@@ -16,6 +16,7 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
@@ -28,7 +29,20 @@ object stackMod {
   
   @JSImport("grommet/components/Stack", "Stack")
   @js.native
-  val Stack: FC[StackProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
+  val Stack: FC[StackExtendedProps] = js.native
+  
+  trait StackExtendedProps
+    extends StObject
+       with StackProps
+       with ClassAttributes[HTMLDivElement]
+       with HTMLAttributes[HTMLDivElement]
+  object StackExtendedProps {
+    
+    inline def apply(): StackExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StackExtendedProps]
+    }
+  }
   
   trait StackProps extends StObject {
     
@@ -94,4 +108,6 @@ object stackMod {
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     }
   }
+  
+  type divProps = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
 }

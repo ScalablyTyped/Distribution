@@ -13,32 +13,32 @@ object anon {
   
   trait ErrorKey extends StObject {
     
-    var errorKey: js.UndefOr[js.Any] = js.undefined
+    var errorKey: js.UndefOr[Any] = js.undefined
     
-    var fromState: js.Any
+    var fromState: Any
     
-    var isCancelled: js.Any
+    var isCancelled: Any
     
-    var toState: js.Any
+    var toState: Any
   }
   object ErrorKey {
     
-    inline def apply(fromState: js.Any, isCancelled: js.Any, toState: js.Any): ErrorKey = {
+    inline def apply(fromState: Any, isCancelled: Any, toState: Any): ErrorKey = {
       val __obj = js.Dynamic.literal(fromState = fromState.asInstanceOf[js.Any], isCancelled = isCancelled.asInstanceOf[js.Any], toState = toState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorKey]
     }
     
     extension [Self <: ErrorKey](x: Self) {
       
-      inline def setErrorKey(value: js.Any): Self = StObject.set(x, "errorKey", value.asInstanceOf[js.Any])
+      inline def setErrorKey(value: Any): Self = StObject.set(x, "errorKey", value.asInstanceOf[js.Any])
       
       inline def setErrorKeyUndefined: Self = StObject.set(x, "errorKey", js.undefined)
       
-      inline def setFromState(value: js.Any): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
+      inline def setFromState(value: Any): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
       
-      inline def setIsCancelled(value: js.Any): Self = StObject.set(x, "isCancelled", value.asInstanceOf[js.Any])
+      inline def setIsCancelled(value: Any): Self = StObject.set(x, "isCancelled", value.asInstanceOf[js.Any])
       
-      inline def setToState(value: js.Any): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
+      inline def setToState(value: Any): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
     }
   }
   

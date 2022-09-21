@@ -12,7 +12,7 @@ object fromRatioMod {
   val ^ : js.Any = js.native
   
   inline def fromRatio(ratio: RatioInput): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
-  inline def fromRatio(ratio: RatioInput, opts: js.Any): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
+  inline def fromRatio(ratio: RatioInput, opts: Any): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
   
   inline def legacyRandom(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyRandom")().asInstanceOf[TinyColor_]
   

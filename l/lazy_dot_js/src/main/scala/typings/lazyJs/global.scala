@@ -20,7 +20,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def define(methodName: js.Array[String], overrides: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -30,7 +30,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def define(methodName: js.Array[String], overrides: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -40,7 +40,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def define(methodName: js.Array[String], overrides: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -50,7 +50,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def define(methodName: js.Array[String], overrides: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
   }
   

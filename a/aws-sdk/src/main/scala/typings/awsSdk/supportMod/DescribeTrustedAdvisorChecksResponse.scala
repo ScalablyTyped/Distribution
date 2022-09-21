@@ -22,6 +22,6 @@ object DescribeTrustedAdvisorChecksResponse {
     
     inline def setChecks(value: TrustedAdvisorCheckList): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
-    inline def setChecksVarargs(value: TrustedAdvisorCheckDescription*): Self = StObject.set(x, "checks", js.Array(value :_*))
+    inline def setChecksVarargs(value: TrustedAdvisorCheckDescription*): Self = StObject.set(x, "checks", js.Array(value*))
   }
 }

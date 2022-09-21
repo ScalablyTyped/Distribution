@@ -9,27 +9,29 @@ trait ScreenSpaceReflectionPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _enableSmoothReflections: js.Any = js.native
+  /* private */ var _enableSmoothReflections: Any = js.native
   
-  /* private */ var _forceGeometryBuffer: js.Any = js.native
+  /* private */ var _forceGeometryBuffer: Any = js.native
   
-  /* private */ var _geometryBufferRenderer: js.Any = js.native
+  /* private */ def _geometryBufferRenderer: Any = js.native
   
-  /* private */ var _prePassRenderer: js.Any = js.native
+  /* private */ var _isSceneRightHanded: Any = js.native
   
-  /* private */ var _reflectionSamples: js.Any = js.native
+  /* private */ def _prePassRenderer: Any = js.native
   
-  /* private */ var _smoothSteps: js.Any = js.native
+  /* private */ var _reflectionSamples: Any = js.native
   
-  /* private */ var _updateEffectDefines: js.Any = js.native
+  /* private */ var _smoothSteps: Any = js.native
+  
+  /* private */ var _updateEffectDefines: Any = js.native
   
   /**
-    * Gets wether or not smoothing reflections is enabled.
+    * Gets whether or not smoothing reflections is enabled.
     * Enabling smoothing will require more GPU power and can generate a drop in FPS.
     */
   def enableSmoothReflections: Boolean = js.native
   /**
-    * Sets wether or not smoothing reflections is enabled.
+    * Sets whether or not smoothing reflections is enabled.
     * Enabling smoothing will require more GPU power and can generate a drop in FPS.
     */
   def enableSmoothReflections_=(enabled: Boolean): Unit = js.native

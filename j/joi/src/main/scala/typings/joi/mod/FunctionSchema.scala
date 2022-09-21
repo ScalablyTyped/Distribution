@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.joi.mod._Schema because Already inherited */ @js.native
 trait FunctionSchema
   extends StObject
-     with ObjectSchema[js.Any] {
+     with ObjectSchema[Any] {
   
   /**
     * Specifies the arity of the function where:

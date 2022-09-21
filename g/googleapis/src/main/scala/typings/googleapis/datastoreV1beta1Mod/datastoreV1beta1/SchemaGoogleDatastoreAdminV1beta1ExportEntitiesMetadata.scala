@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for ExportEntities operations.
-  */
 trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesMetadata extends StObject {
   
   /**
@@ -20,13 +17,9 @@ trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesMetadata extends StObject {
   var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1beta1EntityFilter] = js.undefined
   
   /**
-    * Location for the export metadata and data files. This will be the same
-    * value as the
-    * google.datastore.admin.v1beta1.ExportEntitiesRequest.output_url_prefix
-    * field. The final output location is provided in
-    * google.datastore.admin.v1beta1.ExportEntitiesResponse.output_url.
+    * Location for the export metadata and data files. This will be the same value as the google.datastore.admin.v1beta1.ExportEntitiesRequest.output_url_prefix field. The final output location is provided in google.datastore.admin.v1beta1.ExportEntitiesResponse.output_url.
     */
-  var outputUrlPrefix: js.UndefOr[String] = js.undefined
+  var outputUrlPrefix: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An estimate of the number of bytes processed.
@@ -56,6 +49,8 @@ object SchemaGoogleDatastoreAdminV1beta1ExportEntitiesMetadata {
     inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
     inline def setOutputUrlPrefix(value: String): Self = StObject.set(x, "outputUrlPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUrlPrefixNull: Self = StObject.set(x, "outputUrlPrefix", null)
     
     inline def setOutputUrlPrefixUndefined: Self = StObject.set(x, "outputUrlPrefix", js.undefined)
     

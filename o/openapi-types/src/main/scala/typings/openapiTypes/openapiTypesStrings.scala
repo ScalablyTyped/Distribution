@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object openapiTypesStrings {
   
   @js.native
+  sealed trait PathItemObject extends StObject
+  inline def PathItemObject: PathItemObject = "PathItemObject".asInstanceOf[PathItemObject]
+  
+  @js.native
   sealed trait accessCode extends StObject
   inline def accessCode: accessCode = "accessCode".asInstanceOf[accessCode]
   
@@ -31,7 +35,12 @@ object openapiTypesStrings {
   sealed trait boolean
     extends StObject
        with NonArraySchemaObjectType
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @js.native
+  sealed trait components extends StObject
+  inline def components: components = "components".asInstanceOf[components]
   
   @js.native
   sealed trait http extends StObject
@@ -45,12 +54,20 @@ object openapiTypesStrings {
   sealed trait integer
     extends StObject
        with NonArraySchemaObjectType
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
   inline def integer: integer = "integer".asInstanceOf[integer]
+  
+  @js.native
+  sealed trait `null`
+    extends StObject
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
   sealed trait number
     extends StObject
        with NonArraySchemaObjectType
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
@@ -61,6 +78,7 @@ object openapiTypesStrings {
   sealed trait `object`
     extends StObject
        with NonArraySchemaObjectType
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
@@ -72,8 +90,17 @@ object openapiTypesStrings {
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
+  sealed trait paths extends StObject
+  inline def paths: paths = "paths".asInstanceOf[paths]
+  
+  @js.native
   sealed trait string
     extends StObject
        with NonArraySchemaObjectType
+       with typings.openapiTypes.mod.OpenAPIV31.NonArraySchemaObjectType
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait webhooks extends StObject
+  inline def webhooks: webhooks = "webhooks".asInstanceOf[webhooks]
 }

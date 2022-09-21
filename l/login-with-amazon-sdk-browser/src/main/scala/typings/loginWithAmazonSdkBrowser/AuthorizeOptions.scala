@@ -66,7 +66,7 @@ object AuthorizeOptions {
     
     inline def setScope(value: AuthorizeScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    inline def setScopeVarargs(value: AuthorizationScopeOptions*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: AuthorizationScopeOptions*): Self = StObject.set(x, "scope", js.Array(value*))
     
     inline def setScope_data(value: AuthorizeScopeData): Self = StObject.set(x, "scope_data", value.asInstanceOf[js.Any])
     

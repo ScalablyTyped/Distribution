@@ -10,14 +10,14 @@ object lineEquationMod {
   
   @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation")
   @js.native
-  class LineEquation protected () extends StObject {
+  open class LineEquation protected () extends StObject {
     def this(aParam: Double, bParam: Double, cParam: Double) = this()
     
-    /* private */ var aParam: js.Any = js.native
+    /* private */ var aParam: Any = js.native
     
-    /* private */ var bParam: js.Any = js.native
+    /* private */ var bParam: Any = js.native
     
-    /* private */ var cParam: js.Any = js.native
+    /* private */ var cParam: Any = js.native
     
     def equals(obj: LineEquation): Boolean = js.native
     

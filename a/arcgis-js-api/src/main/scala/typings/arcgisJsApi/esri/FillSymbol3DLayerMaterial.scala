@@ -16,12 +16,16 @@ trait FillSymbol3DLayerMaterial
   /**
     * The color of the fill.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
     */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
     * Specifies how the material `color` is applied to the geometry color/texture information.
+    *
+    * @default multiply
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
     */
@@ -34,8 +38,8 @@ object FillSymbol3DLayerMaterial {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, FillSymbol3DLayerMaterial]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], FillSymbol3DLayerMaterial]])
+      js.Function2[/* propertyName */ String, /* value */ Any, FillSymbol3DLayerMaterial]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], FillSymbol3DLayerMaterial]])
   ): FillSymbol3DLayerMaterial = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillSymbol3DLayerMaterial]

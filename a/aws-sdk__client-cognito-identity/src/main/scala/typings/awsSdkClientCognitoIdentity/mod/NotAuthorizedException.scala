@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeNotAut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object NotAuthorizedException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "NotAuthorizedException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.NotAuthorizedException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "NotAuthorizedException")
+@js.native
+open class NotAuthorizedException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.NotAuthorizedException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeNotAut) = this()
 }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplateOptionsConstructor
   extends StObject
-     with Instantiable0[TemplateOptions]
+     with /**
+  * Defines the layout template options used by the [Print](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) widget to generate the print page.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html)
+  */
+Instantiable0[TemplateOptions]
      with Instantiable1[/* properties */ TemplateOptionsProperties, TemplateOptions]

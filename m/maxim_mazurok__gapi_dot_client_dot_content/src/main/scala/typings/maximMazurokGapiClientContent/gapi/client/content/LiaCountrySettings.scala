@@ -9,7 +9,7 @@ trait LiaCountrySettings extends StObject {
   /** The settings for the About page. */
   var about: js.UndefOr[LiaAboutPageSettings] = js.undefined
   
-  /** Required. CLDR country code (e.g. "US"). */
+  /** Required. CLDR country code (for example, "US"). */
   var country: js.UndefOr[String] = js.undefined
   
   /** The status of the "Merchant hosted local storefront" feature. */

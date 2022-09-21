@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Common extends StObject {
   
-  var common: Record[String, js.Any]
+  var common: Record[String, Any]
   
-  var native: Record[String, js.Any]
+  var native: Record[String, Any]
 }
 object Common {
   
-  inline def apply(common: Record[String, js.Any], native: Record[String, js.Any]): Common = {
+  inline def apply(common: Record[String, Any], native: Record[String, Any]): Common = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]
   }
   
   extension [Self <: Common](x: Self) {
     
-    inline def setCommon(value: Record[String, js.Any]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: Record[String, Any]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Record[String, Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
   }
 }

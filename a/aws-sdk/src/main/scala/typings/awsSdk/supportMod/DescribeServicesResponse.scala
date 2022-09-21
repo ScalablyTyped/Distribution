@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeServicesResponse extends StObject {
   
   /**
-    * A JSON-formatted list of AWS services.
+    * A JSON-formatted list of Amazon Web Services services.
     */
   var services: js.UndefOr[ServiceList] = js.undefined
 }
@@ -24,6 +24,6 @@ object DescribeServicesResponse {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

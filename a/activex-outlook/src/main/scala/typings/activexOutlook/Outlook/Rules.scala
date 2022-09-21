@@ -17,17 +17,17 @@ trait Rules extends StObject {
   
   var IsRssRulesProcessingEnabled: Boolean = js.native
   
-  def Item(Index: js.Any): Rule = js.native
+  def Item(Index: Any): Rule = js.native
   
   /* private */ @JSName("Outlook.Rules_typekey")
   var OutlookDotRules_typekey: Rules = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: Any): Unit = js.native
   
   def Save(): Unit = js.native
-  def Save(ShowProgress: js.Any): Unit = js.native
+  def Save(ShowProgress: Any): Unit = js.native
   
   val Session: NameSpace = js.native
 }

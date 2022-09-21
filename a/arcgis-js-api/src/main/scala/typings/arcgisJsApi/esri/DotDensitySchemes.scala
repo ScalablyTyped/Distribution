@@ -63,6 +63,6 @@ object DotDensitySchemes {
     
     inline def setSecondarySchemes(value: js.Array[DotDensityScheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
-    inline def setSecondarySchemesVarargs(value: DotDensityScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
+    inline def setSecondarySchemesVarargs(value: DotDensityScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value*))
   }
 }

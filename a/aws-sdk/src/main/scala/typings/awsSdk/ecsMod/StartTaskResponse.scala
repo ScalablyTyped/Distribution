@@ -29,12 +29,12 @@ object StartTaskResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

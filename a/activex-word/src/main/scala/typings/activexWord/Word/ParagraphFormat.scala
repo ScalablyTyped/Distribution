@@ -74,7 +74,7 @@ trait ParagraphFormat extends StObject {
   
   var PageBreakBefore: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReadingOrder: WdReadingOrder
   
@@ -98,7 +98,7 @@ trait ParagraphFormat extends StObject {
   
   var SpaceBeforeAuto: Double
   
-  var Style: js.Any
+  var Style: Any
   
   def TabHangingIndent(Count: Double): Unit
   
@@ -152,7 +152,7 @@ object ParagraphFormat {
     OpenUp: () => Unit,
     OutlineLevel: WdOutlineLevel,
     PageBreakBefore: Double,
-    Parent: js.Any,
+    Parent: Any,
     ReadingOrder: WdReadingOrder,
     Reset: () => Unit,
     RightIndent: Double,
@@ -164,7 +164,7 @@ object ParagraphFormat {
     SpaceAfterAuto: Double,
     SpaceBefore: Double,
     SpaceBeforeAuto: Double,
-    Style: js.Any,
+    Style: Any,
     TabHangingIndent: Double => Unit,
     TabIndent: Double => Unit,
     TabStops: TabStops,
@@ -248,7 +248,7 @@ object ParagraphFormat {
     
     inline def setPageBreakBefore(value: Double): Self = StObject.set(x, "PageBreakBefore", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReadingOrder(value: WdReadingOrder): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     
@@ -272,7 +272,7 @@ object ParagraphFormat {
     
     inline def setSpaceBeforeAuto(value: Double): Self = StObject.set(x, "SpaceBeforeAuto", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     inline def setTabHangingIndent(value: Double => Unit): Self = StObject.set(x, "TabHangingIndent", js.Any.fromFunction1(value))
     

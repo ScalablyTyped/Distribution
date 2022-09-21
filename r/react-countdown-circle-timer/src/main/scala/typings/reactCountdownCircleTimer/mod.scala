@@ -1,124 +1,167 @@
 package typings.reactCountdownCircleTimer
 
-import typings.react.mod.Component
-import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
+import typings.reactCountdownCircleTimer.anon.ElapsedTime
+import typings.reactCountdownCircleTimer.anon.`0ColorHex1ColorHexArrayCo`
+import typings.reactCountdownCircleTimer.anon.`0number1numberArraynumber`
+import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.Numbersign$LeftcurlybracketstringRightcurlybracket
+import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.rgbLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.rgbaLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.urlLeftparenthesisNumbersign$LeftcurlybracketstringRightcurlybracketRightparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-countdown-circle-timer", "CountdownCircleTimer")
+  @JSImport("react-countdown-circle-timer/lib", JSImport.Namespace)
   @js.native
-  class CountdownCircleTimer protected ()
-    extends Component[Props, js.Object, js.Any] {
-    def this(props: Props) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Props, context: js.Any) = this()
+  val ^ : js.Any = js.native
+  
+  object CountdownCircleTimer {
+    
+    inline def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("react-countdown-circle-timer/lib", "CountdownCircleTimer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-countdown-circle-timer/lib", "CountdownCircleTimer.displayName")
+    @js.native
+    def displayName: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.CountdownCircleTimer = js.native
+    inline def displayName_=(x: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.CountdownCircleTimer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type ColorType = js.Array[js.Tuple2[String, js.UndefOr[Double]]]
+  inline def useCountdown(props: Props): ElapsedTime = ^.asInstanceOf[js.Dynamic].applyDynamic("useCountdown")(props.asInstanceOf[js.Any]).asInstanceOf[ElapsedTime]
   
-  type OnCompleteFunctionType = js.Function0[js.UndefOr[(js.Tuple2[Boolean, Double]) | Unit]]
+  type ColorFormat = ColorHex | ColorRGB | ColorRGBA | ColorURL
   
-  trait Props extends StObject {
+  type ColorHex = Numbersign$LeftcurlybracketstringRightcurlybracket
+  
+  type ColorRGB = rgbLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  
+  type ColorRGBA = rgbaLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  
+  type ColorURL = urlLeftparenthesisNumbersign$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  
+  trait MultipleColors extends StObject {
     
-    var colors: ColorType
+    /** Array of colors in HEX format. At least 2 colors should be provided */
+    var colors: `0ColorHex1ColorHexArrayCo`
     
-    var durationSeconds: Double
-    
-    var gradientUniqueKey: js.UndefOr[String] = js.undefined
-    
-    var isLinearGradient: js.UndefOr[Boolean] = js.undefined
-    
-    var isPlaying: js.UndefOr[Boolean] = js.undefined
-    
-    var onComplete: js.UndefOr[OnCompleteFunctionType] = js.undefined
-    
-    var renderTime: js.UndefOr[RenderTimeFunctionType] = js.undefined
-    
-    var size: js.UndefOr[Double] = js.undefined
-    
-    var strokeLinecap: js.UndefOr[StrokeLinecapType] = js.undefined
-    
-    var strokeWidth: js.UndefOr[Double] = js.undefined
-    
-    var trailColor: js.UndefOr[String] = js.undefined
+    /** Indicates the time when a color should switch to the next color. The first item should be the duration and the last one should be 0/goal. Example with duration of 10 seconds: [10, 6, 3, 0]  */
+    var colorsTime: `0number1numberArraynumber`
   }
-  object Props {
+  object MultipleColors {
     
-    inline def apply(colors: ColorType, durationSeconds: Double): Props = {
-      val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], durationSeconds = durationSeconds.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props]
+    inline def apply(colors: `0ColorHex1ColorHexArrayCo`, colorsTime: `0number1numberArraynumber`): MultipleColors = {
+      val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], colorsTime = colorsTime.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultipleColors]
     }
     
-    extension [Self <: Props](x: Self) {
+    extension [Self <: MultipleColors](x: Self) {
       
-      inline def setColors(value: ColorType): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: `0ColorHex1ColorHexArrayCo`): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: (js.Tuple2[String, js.UndefOr[Double]])*): Self = StObject.set(x, "colors", js.Array(value :_*))
-      
-      inline def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
-      
-      inline def setGradientUniqueKey(value: String): Self = StObject.set(x, "gradientUniqueKey", value.asInstanceOf[js.Any])
-      
-      inline def setGradientUniqueKeyUndefined: Self = StObject.set(x, "gradientUniqueKey", js.undefined)
-      
-      inline def setIsLinearGradient(value: Boolean): Self = StObject.set(x, "isLinearGradient", value.asInstanceOf[js.Any])
-      
-      inline def setIsLinearGradientUndefined: Self = StObject.set(x, "isLinearGradient", js.undefined)
-      
-      inline def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
-      
-      inline def setIsPlayingUndefined: Self = StObject.set(x, "isPlaying", js.undefined)
-      
-      inline def setOnComplete(value: () => js.UndefOr[(js.Tuple2[Boolean, Double]) | Unit]): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
-      
-      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
-      
-      inline def setRenderTime(
-        value: (/* remainingTime */ Double, /* elapsedTime */ Double, /* isPlaying */ Boolean) => ReactNode
-      ): Self = StObject.set(x, "renderTime", js.Any.fromFunction3(value))
-      
-      inline def setRenderTimeUndefined: Self = StObject.set(x, "renderTime", js.undefined)
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setStrokeLinecap(value: StrokeLinecapType): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
-      
-      inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
-      
-      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
-      
-      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
-      
-      inline def setTrailColor(value: String): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
-      
-      inline def setTrailColorUndefined: Self = StObject.set(x, "trailColor", js.undefined)
+      inline def setColorsTime(value: `0number1numberArraynumber`): Self = StObject.set(x, "colorsTime", value.asInstanceOf[js.Any])
     }
   }
   
-  type RenderTimeFunctionType = js.Function3[
-    /* remainingTime */ Double, 
-    /* elapsedTime */ Double, 
-    /* isPlaying */ Boolean, 
-    ReactNode
-  ]
+  trait OnComplete extends StObject {
+    
+    /** Delay in seconds before looping again. Default: 0 */
+    var delay: js.UndefOr[Double] = js.undefined
+    
+    /** Set new initial remaining when starting over the animation */
+    var newInitialRemainingTime: js.UndefOr[Double] = js.undefined
+    
+    /** Indicates if the loop should start over. Default: false */
+    var shouldRepeat: js.UndefOr[Boolean] = js.undefined
+  }
+  object OnComplete {
+    
+    inline def apply(): OnComplete = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OnComplete]
+    }
+    
+    extension [Self <: OnComplete](x: Self) {
+      
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      inline def setNewInitialRemainingTime(value: Double): Self = StObject.set(x, "newInitialRemainingTime", value.asInstanceOf[js.Any])
+      
+      inline def setNewInitialRemainingTimeUndefined: Self = StObject.set(x, "newInitialRemainingTime", js.undefined)
+      
+      inline def setShouldRepeat(value: Boolean): Self = StObject.set(x, "shouldRepeat", value.asInstanceOf[js.Any])
+      
+      inline def setShouldRepeatUndefined: Self = StObject.set(x, "shouldRepeat", js.undefined)
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round
-    - typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square
+    - typings.reactCountdownCircleTimer.anon.SingleColordurationnumber
+    - typings.reactCountdownCircleTimer.anon.MultipleColorsdurationnum
   */
-  trait StrokeLinecapType extends StObject
-  object StrokeLinecapType {
+  trait Props extends StObject
+  object Props {
     
-    inline def round: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round = "round".asInstanceOf[typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round]
+    inline def MultipleColorsdurationnum(colors: `0ColorHex1ColorHexArrayCo`, colorsTime: `0number1numberArraynumber`, duration: Double): typings.reactCountdownCircleTimer.anon.MultipleColorsdurationnum = {
+      val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], colorsTime = colorsTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactCountdownCircleTimer.anon.MultipleColorsdurationnum]
+    }
     
-    inline def square: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square = "square".asInstanceOf[typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square]
+    inline def SingleColordurationnumber(colors: ColorFormat, duration: Double): typings.reactCountdownCircleTimer.anon.SingleColordurationnumber = {
+      val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactCountdownCircleTimer.anon.SingleColordurationnumber]
+    }
+  }
+  
+  trait SingleColor extends StObject {
+    
+    /** Single valid color or url to a gradient */
+    var colors: ColorFormat
+    
+    /** Colors time works only when the colors prop is an array of colors*/
+    var colorsTime: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  object SingleColor {
+    
+    inline def apply(colors: ColorFormat): SingleColor = {
+      val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SingleColor]
+    }
+    
+    extension [Self <: SingleColor](x: Self) {
+      
+      inline def setColors(value: ColorFormat): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TimeProps extends StObject {
+    
+    var color: ColorFormat
+    
+    var elapsedTime: Double
+    
+    var remainingTime: Double
+  }
+  object TimeProps {
+    
+    inline def apply(color: ColorFormat, elapsedTime: Double, remainingTime: Double): TimeProps = {
+      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], remainingTime = remainingTime.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TimeProps]
+    }
+    
+    extension [Self <: TimeProps](x: Self) {
+      
+      inline def setColor(value: ColorFormat): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+      
+      inline def setRemainingTime(value: Double): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
+    }
   }
 }

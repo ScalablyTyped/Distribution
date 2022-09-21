@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemDescription extends StObject {
   
   /**
+    * The unique and consistent identifier of the Availability Zone in which the file system's One Zone storage classes exist. For example, use1-az1 is an Availability Zone ID for the us-east-1 Amazon Web Services Region, and it has the same location in every Amazon Web Services account.
+    */
+  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneId] = js.undefined
+  
+  /**
+    * Describes the Amazon Web Services Availability Zone in which the file system is located, and is valid only for file systems using One Zone storage classes. For more information, see Using EFS storage classes in the Amazon EFS User Guide.
+    */
+  var AvailabilityZoneName: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneName] = js.undefined
+  
+  /**
     * The time that the file system was created, in seconds (since 1970-01-01T00:00:00Z).
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The opaque string specified in the request.
@@ -32,7 +42,7 @@ trait FileSystemDescription extends StObject {
   var FileSystemId: typings.awsSdk.efsMod.FileSystemId
   
   /**
-    * The ID of an AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the encrypted file system.
+    * The ID of an KMS key used to protect the encrypted file system.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.efsMod.KmsKeyId] = js.undefined
   
@@ -52,7 +62,7 @@ trait FileSystemDescription extends StObject {
   var NumberOfMountTargets: MountTargetCount
   
   /**
-    * The AWS account that created the file system. If the file system was created by an IAM user, the parent account to which the user belongs is the owner.
+    * The Amazon Web Services account that created the file system. If the file system was created by an IAM user, the parent account to which the user belongs is the owner.
     */
   var OwnerId: AwsAccountId
   
@@ -62,7 +72,7 @@ trait FileSystemDescription extends StObject {
   var PerformanceMode: typings.awsSdk.efsMod.PerformanceMode
   
   /**
-    * The throughput, measured in MiB/s, that you want to provision for a file system. Valid values are 1-1024. Required if ThroughputMode is set to provisioned. The limit on throughput is 1024 MiB/s. You can get these limits increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
+    * The amount of provisioned throughput, measured in MiB/s, for the file system. Valid for file systems using ThroughputMode set to provisioned.
     */
   var ProvisionedThroughputInMibps: js.UndefOr[typings.awsSdk.efsMod.ProvisionedThroughputInMibps] = js.undefined
   
@@ -77,14 +87,14 @@ trait FileSystemDescription extends StObject {
   var Tags: typings.awsSdk.efsMod.Tags
   
   /**
-    * The throughput mode for a file system. There are two throughput modes to choose from for your file system: bursting and provisioned. If you set ThroughputMode to provisioned, you must also set a value for ProvisionedThroughPutInMibps. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change. 
+    * Displays the file system's throughput mode. For more information, see Throughput modes in the Amazon EFS User Guide. 
     */
   var ThroughputMode: js.UndefOr[typings.awsSdk.efsMod.ThroughputMode] = js.undefined
 }
 object FileSystemDescription {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     CreationToken: CreationToken,
     FileSystemId: FileSystemId,
     LifeCycleState: LifeCycleState,
@@ -100,7 +110,15 @@ object FileSystemDescription {
   
   extension [Self <: FileSystemDescription](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZoneId(value: AvailabilityZoneId): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "AvailabilityZoneId", js.undefined)
+    
+    inline def setAvailabilityZoneName(value: AvailabilityZoneName): Self = StObject.set(x, "AvailabilityZoneName", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneNameUndefined: Self = StObject.set(x, "AvailabilityZoneName", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationToken(value: CreationToken): Self = StObject.set(x, "CreationToken", value.asInstanceOf[js.Any])
     
@@ -138,7 +156,7 @@ object FileSystemDescription {
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setThroughputMode(value: ThroughputMode): Self = StObject.set(x, "ThroughputMode", value.asInstanceOf[js.Any])
     

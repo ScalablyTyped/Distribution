@@ -25,7 +25,7 @@ object RecordType {
     
     inline def setFields(value: js.Array[Type_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Type_ *): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Type_ *): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setType(value: typings.doctrine.doctrineStrings.RecordType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Datasets extends StObject {
   
   /**
-    * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v4.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
+    * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v5.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
     * @format uri
     */
   @JSName("$schema")
@@ -31,7 +31,7 @@ trait Datasets extends StObject {
     * Optional metadata that will be passed to Vega.
     * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
     */
-  var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
+  var usermeta: js.UndefOr[Dict[Any]] = js.undefined
 }
 object Datasets {
   
@@ -54,7 +54,7 @@ object Datasets {
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    inline def setUsermeta(value: Dict[Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
     inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
   }

@@ -1,8 +1,9 @@
 package typings.parse5SerializerStream
 
 import typings.node.streamMod.Readable
-import typings.parse5.mod.Node
-import typings.parse5.mod.SerializerOptions
+import typings.parse5.distSerializerMod.SerializerOptions
+import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ object mod {
     */
   @JSImport("parse5-serializer-stream", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Readable {
+  open class ^ protected () extends Readable {
     /**
       * Streaming AST node to an HTML serializer. A readable stream.
       *
@@ -40,7 +41,10 @@ object mod {
       * @param options - Serialization options.
       */
     def this(node: Node) = this()
-    def this(node: Node, options: SerializerOptions) = this()
+    def this(
+      node: Node,
+      options: SerializerOptions[TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any]]
+    ) = this()
   }
   
   /**

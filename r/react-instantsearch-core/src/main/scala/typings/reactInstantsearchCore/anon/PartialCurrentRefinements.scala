@@ -30,7 +30,7 @@ object PartialCurrentRefinements {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Refinement*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Refinement*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

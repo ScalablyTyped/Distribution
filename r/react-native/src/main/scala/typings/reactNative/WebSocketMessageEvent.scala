@@ -10,5 +10,5 @@ trait WebSocketMessageEvent
   extends StObject
      with Event {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[Any] = js.native
 }

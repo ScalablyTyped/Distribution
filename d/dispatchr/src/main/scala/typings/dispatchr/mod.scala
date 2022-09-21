@@ -36,7 +36,7 @@ object mod {
     
     def dehydrate(): DispatcherState = js.native
     
-    def dispatch(actionName: String, payload: js.Any): Unit = js.native
+    def dispatch(actionName: String, payload: Any): Unit = js.native
     
     var dispatcherInterface: DispatcherInterface = js.native
     
@@ -131,24 +131,24 @@ object mod {
       
       inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      inline def setStoresVarargs(value: StoreClass*): Self = StObject.set(x, "stores", js.Array(value :_*))
+      inline def setStoresVarargs(value: StoreClass*): Self = StObject.set(x, "stores", js.Array(value*))
     }
   }
   
   trait DispatcherState extends StObject {
     
-    var stores: StringDictionary[js.Any]
+    var stores: StringDictionary[Any]
   }
   object DispatcherState {
     
-    inline def apply(stores: StringDictionary[js.Any]): DispatcherState = {
+    inline def apply(stores: StringDictionary[Any]): DispatcherState = {
       val __obj = js.Dynamic.literal(stores = stores.asInstanceOf[js.Any])
       __obj.asInstanceOf[DispatcherState]
     }
     
     extension [Self <: DispatcherState](x: Self) {
       
-      inline def setStores(value: StringDictionary[js.Any]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: StringDictionary[Any]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     }
   }
   

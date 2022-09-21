@@ -8,5 +8,5 @@ object deleteBucketTaggingOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketTaggingOutput", "DeleteBucketTaggingOutput")
   @js.native
-  val DeleteBucketTaggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBucketTaggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

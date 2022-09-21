@@ -10,10 +10,10 @@ object musicVideoMod {
   
   @JSImport("material-ui/svg-icons/av/music-video", JSImport.Default)
   @js.native
-  class default () extends AvMusicVideo
+  open class default () extends AvMusicVideo
   
   @JSImport("material-ui/svg-icons/av/music-video", "AvMusicVideo")
   @js.native
-  class AvMusicVideo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvMusicVideo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

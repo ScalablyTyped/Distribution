@@ -11,8 +11,8 @@ import typings.maximMazurokGapiClientStorage.anon.PredefinedAcl
 import typings.maximMazurokGapiClientStorage.anon.PredefinedDefaultObjectAcl
 import typings.maximMazurokGapiClientStorage.anon.PrettyPrint
 import typings.maximMazurokGapiClientStorage.anon.Projection
-import typings.maximMazurokGapiClientStorage.anon.ProvisionalUserProject
 import typings.maximMazurokGapiClientStorage.anon.QuotaUser
+import typings.maximMazurokGapiClientStorage.anon.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +46,11 @@ trait BucketsResource extends StObject {
   
   /** Patches a bucket. Changes to the bucket will be readable immediately after writing, but configuration changes may take time to propagate. */
   def patch(request: Projection): Request[Bucket] = js.native
-  def patch(request: ProvisionalUserProject, body: Bucket): Request[Bucket] = js.native
+  def patch(request: QuotaUser, body: Bucket): Request[Bucket] = js.native
   
   def setIamPolicy(request: Fields, body: Policy): Request[Policy] = js.native
   /** Updates an IAM policy for the specified bucket. */
-  def setIamPolicy(request: QuotaUser): Request[Policy] = js.native
+  def setIamPolicy(request: Resource): Request[Policy] = js.native
   
   /** Tests a set of permissions on the given bucket to see which, if any, are held by the caller. */
   def testIamPermissions(): Request[TestIamPermissionsResponse] = js.native
@@ -58,5 +58,5 @@ trait BucketsResource extends StObject {
   
   /** Updates a bucket. Changes to the bucket will be readable immediately after writing, but configuration changes may take time to propagate. */
   def update(request: Projection): Request[Bucket] = js.native
-  def update(request: ProvisionalUserProject, body: Bucket): Request[Bucket] = js.native
+  def update(request: QuotaUser, body: Bucket): Request[Bucket] = js.native
 }

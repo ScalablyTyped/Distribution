@@ -19,7 +19,7 @@ trait SenderInAddressListRuleCondition extends StObject {
   /* private */ @JSName("Outlook.SenderInAddressListRuleCondition_typekey")
   var OutlookDotSenderInAddressListRuleCondition_typekey: SenderInAddressListRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,7 +32,7 @@ object SenderInAddressListRuleCondition {
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
     OutlookDotSenderInAddressListRuleCondition_typekey: SenderInAddressListRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): SenderInAddressListRuleCondition = {
     val __obj = js.Dynamic.literal(AddressList = AddressList.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object SenderInAddressListRuleCondition {
     
     inline def setOutlookDotSenderInAddressListRuleCondition_typekey(value: SenderInAddressListRuleCondition): Self = StObject.set(x, "Outlook.SenderInAddressListRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

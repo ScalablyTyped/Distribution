@@ -14,19 +14,23 @@ trait OnsActionSheetElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
-  var cancelable: js.Any = js.native
+  var animationOptions: js.UndefOr[js.Object] = js.native
   
-  var disabled: js.Any = js.native
+  var cancelable: Any = js.native
   
-  def hide(args: js.Any*): js.Any = js.native
+  var disabled: Any = js.native
   
-  var onDeviceBackButton: js.Any = js.native
+  def hide(args: Any*): Any = js.native
+  
+  var maskColor: js.UndefOr[String] = js.native
+  
+  var onDeviceBackButton: Any = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -35,7 +39,7 @@ trait OnsActionSheetElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
-  def show(args: js.Any*): js.Any = js.native
+  def show(args: Any*): Any = js.native
   
-  var visible: js.Any = js.native
+  var visible: Any = js.native
 }

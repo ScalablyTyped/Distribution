@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLList")
 @js.native
-class GraphQLList protected ()
+open class GraphQLList protected ()
   extends StObject
      with GraphQLInputType
      with GraphQLNullableType

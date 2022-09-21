@@ -43,12 +43,12 @@ trait RouteOptionsSecureObject extends StObject {
     * Note: this setting can create a security vulnerability in versions of Internet Exploere below 8, as well as unpatched versions of IE8. See here and here for more information. If you actively
     * support old versions of IE, it may be wise to explicitly set this flag to false.
     */
-  var xss: Boolean
+  var xss: js.UndefOr[Boolean] = js.undefined
 }
 object RouteOptionsSecureObject {
   
-  inline def apply(xss: Boolean): RouteOptionsSecureObject = {
-    val __obj = js.Dynamic.literal(xss = xss.asInstanceOf[js.Any])
+  inline def apply(): RouteOptionsSecureObject = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteOptionsSecureObject]
   }
   
@@ -75,5 +75,7 @@ object RouteOptionsSecureObject {
     inline def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
     
     inline def setXss(value: Boolean): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
+    
+    inline def setXssUndefined: Self = StObject.set(x, "xss", js.undefined)
   }
 }

@@ -13,13 +13,13 @@ trait ISelect
   var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultPhonePickerConfig: js.UndefOr[js.Any] = js.undefined
+  var defaultPhonePickerConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultTabletPickerConfig: js.UndefOr[js.Any] = js.undefined
+  var defaultTabletPickerConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var displayField: js.UndefOr[js.Any] = js.undefined
+  var displayField: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of autoSelect
     * @returns Boolean
@@ -29,17 +29,17 @@ trait ISelect
   /** [Method] Returns the value of defaultPhonePickerConfig
     * @returns Object
     */
-  var getDefaultPhonePickerConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDefaultPhonePickerConfig: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of defaultTabletPickerConfig
     * @returns Object
     */
-  var getDefaultTabletPickerConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDefaultTabletPickerConfig: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of displayField
     * @returns String/Number
     */
-  var getDisplayField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDisplayField: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of hiddenName
     * @returns String
@@ -54,17 +54,17 @@ trait ISelect
   /** [Method] Returns the value of store
     * @returns Ext.data.Store/Object/String
     */
-  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of usePicker
     * @returns String/Boolean
     */
-  var getUsePicker: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getUsePicker: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of valueField
     * @returns String/Number
     */
-  var getValueField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValueField: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String) */
   var hiddenName: js.UndefOr[String] = js.undefined
@@ -72,7 +72,7 @@ trait ISelect
   /** [Method] Called when the internal store s data has changed
     * @param store Object
     */
-  var onStoreDataChanged: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onStoreDataChanged: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Array) */
   var options: js.UndefOr[Array] = js.undefined
@@ -85,17 +85,17 @@ trait ISelect
   /** [Method] Sets the value of defaultPhonePickerConfig
     * @param defaultPhonePickerConfig Object The new value.
     */
-  var setDefaultPhonePickerConfig: js.UndefOr[js.Function1[/* defaultPhonePickerConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaultPhonePickerConfig: js.UndefOr[js.Function1[/* defaultPhonePickerConfig */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultTabletPickerConfig
     * @param defaultTabletPickerConfig Object The new value.
     */
-  var setDefaultTabletPickerConfig: js.UndefOr[js.Function1[/* defaultTabletPickerConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaultTabletPickerConfig: js.UndefOr[js.Function1[/* defaultTabletPickerConfig */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of displayField
     * @param displayField String/Number The new value.
     */
-  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of hiddenName
     * @param hiddenName String The new value.
@@ -110,23 +110,23 @@ trait ISelect
   /** [Method] Sets the value of store
     * @param store Ext.data.Store/Object/String The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of usePicker
     * @param usePicker String/Boolean The new value.
     */
-  var setUsePicker: js.UndefOr[js.Function1[/* usePicker */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUsePicker: js.UndefOr[js.Function1[/* usePicker */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of valueField
     * @param valueField String/Number The new value.
     */
-  var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Shows the picker for the select field whether that is a Ext picker Picker or a simple list  */
   var showPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.Store/Object/String) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
   /** [Method] Updates the underlying lt options gt list with new values
     * @param newOptions Array An array of options configurations to insert or append. selectBox.setOptions([  {text: 'First Option', value: 'first'},  {text: 'Second Option', value: 'second'},  {text: 'Third Option', value: 'third'} ]).setValue('third');  Note: option object member names should correspond with defined valueField and displayField values.
@@ -135,10 +135,10 @@ trait ISelect
   var updateOptions: js.UndefOr[js.Function1[/* newOptions */ js.UndefOr[Array], this.type]] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var usePicker: js.UndefOr[js.Any] = js.undefined
+  var usePicker: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var valueField: js.UndefOr[js.Any] = js.undefined
+  var valueField: js.UndefOr[Any] = js.undefined
 }
 object ISelect {
   
@@ -153,15 +153,15 @@ object ISelect {
     
     inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
-    inline def setDefaultPhonePickerConfig(value: js.Any): Self = StObject.set(x, "defaultPhonePickerConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultPhonePickerConfig(value: Any): Self = StObject.set(x, "defaultPhonePickerConfig", value.asInstanceOf[js.Any])
     
     inline def setDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "defaultPhonePickerConfig", js.undefined)
     
-    inline def setDefaultTabletPickerConfig(value: js.Any): Self = StObject.set(x, "defaultTabletPickerConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultTabletPickerConfig(value: Any): Self = StObject.set(x, "defaultTabletPickerConfig", value.asInstanceOf[js.Any])
     
     inline def setDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "defaultTabletPickerConfig", js.undefined)
     
-    inline def setDisplayField(value: js.Any): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: Any): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
@@ -169,15 +169,15 @@ object ISelect {
     
     inline def setGetAutoSelectUndefined: Self = StObject.set(x, "getAutoSelect", js.undefined)
     
-    inline def setGetDefaultPhonePickerConfig(value: () => js.Any): Self = StObject.set(x, "getDefaultPhonePickerConfig", js.Any.fromFunction0(value))
+    inline def setGetDefaultPhonePickerConfig(value: () => Any): Self = StObject.set(x, "getDefaultPhonePickerConfig", js.Any.fromFunction0(value))
     
     inline def setGetDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "getDefaultPhonePickerConfig", js.undefined)
     
-    inline def setGetDefaultTabletPickerConfig(value: () => js.Any): Self = StObject.set(x, "getDefaultTabletPickerConfig", js.Any.fromFunction0(value))
+    inline def setGetDefaultTabletPickerConfig(value: () => Any): Self = StObject.set(x, "getDefaultTabletPickerConfig", js.Any.fromFunction0(value))
     
     inline def setGetDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "getDefaultTabletPickerConfig", js.undefined)
     
-    inline def setGetDisplayField(value: () => js.Any): Self = StObject.set(x, "getDisplayField", js.Any.fromFunction0(value))
+    inline def setGetDisplayField(value: () => Any): Self = StObject.set(x, "getDisplayField", js.Any.fromFunction0(value))
     
     inline def setGetDisplayFieldUndefined: Self = StObject.set(x, "getDisplayField", js.undefined)
     
@@ -189,15 +189,15 @@ object ISelect {
     
     inline def setGetOptionsUndefined: Self = StObject.set(x, "getOptions", js.undefined)
     
-    inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
-    inline def setGetUsePicker(value: () => js.Any): Self = StObject.set(x, "getUsePicker", js.Any.fromFunction0(value))
+    inline def setGetUsePicker(value: () => Any): Self = StObject.set(x, "getUsePicker", js.Any.fromFunction0(value))
     
     inline def setGetUsePickerUndefined: Self = StObject.set(x, "getUsePicker", js.undefined)
     
-    inline def setGetValueField(value: () => js.Any): Self = StObject.set(x, "getValueField", js.Any.fromFunction0(value))
+    inline def setGetValueField(value: () => Any): Self = StObject.set(x, "getValueField", js.Any.fromFunction0(value))
     
     inline def setGetValueFieldUndefined: Self = StObject.set(x, "getValueField", js.undefined)
     
@@ -205,7 +205,7 @@ object ISelect {
     
     inline def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
     
-    inline def setOnStoreDataChanged(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStoreDataChanged", js.Any.fromFunction1(value))
+    inline def setOnStoreDataChanged(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onStoreDataChanged", js.Any.fromFunction1(value))
     
     inline def setOnStoreDataChangedUndefined: Self = StObject.set(x, "onStoreDataChanged", js.undefined)
     
@@ -217,15 +217,15 @@ object ISelect {
     
     inline def setSetAutoSelectUndefined: Self = StObject.set(x, "setAutoSelect", js.undefined)
     
-    inline def setSetDefaultPhonePickerConfig(value: /* defaultPhonePickerConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultPhonePickerConfig", js.Any.fromFunction1(value))
+    inline def setSetDefaultPhonePickerConfig(value: /* defaultPhonePickerConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaultPhonePickerConfig", js.Any.fromFunction1(value))
     
     inline def setSetDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "setDefaultPhonePickerConfig", js.undefined)
     
-    inline def setSetDefaultTabletPickerConfig(value: /* defaultTabletPickerConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultTabletPickerConfig", js.Any.fromFunction1(value))
+    inline def setSetDefaultTabletPickerConfig(value: /* defaultTabletPickerConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaultTabletPickerConfig", js.Any.fromFunction1(value))
     
     inline def setSetDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "setDefaultTabletPickerConfig", js.undefined)
     
-    inline def setSetDisplayField(value: /* displayField */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisplayField", js.Any.fromFunction1(value))
+    inline def setSetDisplayField(value: /* displayField */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDisplayField", js.Any.fromFunction1(value))
     
     inline def setSetDisplayFieldUndefined: Self = StObject.set(x, "setDisplayField", js.undefined)
     
@@ -237,15 +237,15 @@ object ISelect {
     
     inline def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
-    inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+    inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
-    inline def setSetUsePicker(value: /* usePicker */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUsePicker", js.Any.fromFunction1(value))
+    inline def setSetUsePicker(value: /* usePicker */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUsePicker", js.Any.fromFunction1(value))
     
     inline def setSetUsePickerUndefined: Self = StObject.set(x, "setUsePicker", js.undefined)
     
-    inline def setSetValueField(value: /* valueField */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValueField", js.Any.fromFunction1(value))
+    inline def setSetValueField(value: /* valueField */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValueField", js.Any.fromFunction1(value))
     
     inline def setSetValueFieldUndefined: Self = StObject.set(x, "setValueField", js.undefined)
     
@@ -253,7 +253,7 @@ object ISelect {
     
     inline def setShowPickerUndefined: Self = StObject.set(x, "showPicker", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
@@ -261,11 +261,11 @@ object ISelect {
     
     inline def setUpdateOptionsUndefined: Self = StObject.set(x, "updateOptions", js.undefined)
     
-    inline def setUsePicker(value: js.Any): Self = StObject.set(x, "usePicker", value.asInstanceOf[js.Any])
+    inline def setUsePicker(value: Any): Self = StObject.set(x, "usePicker", value.asInstanceOf[js.Any])
     
     inline def setUsePickerUndefined: Self = StObject.set(x, "usePicker", js.undefined)
     
-    inline def setValueField(value: js.Any): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    inline def setValueField(value: Any): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
     inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
   }

@@ -18,7 +18,7 @@ object exceptionMod {
     extends StObject
        with _Exception {
     
-    var code: String
+    var code: String | Double
     
     var message: js.UndefOr[String] = js.undefined
     
@@ -28,14 +28,14 @@ object exceptionMod {
   }
   object ExceptionWithCode {
     
-    inline def apply(code: String): ExceptionWithCode = {
+    inline def apply(code: String | Double): ExceptionWithCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionWithCode]
     }
     
     extension [Self <: ExceptionWithCode](x: Self) {
       
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -55,7 +55,7 @@ object exceptionMod {
     extends StObject
        with _Exception {
     
-    var code: js.UndefOr[String] = js.undefined
+    var code: js.UndefOr[String | Double] = js.undefined
     
     var message: String
     
@@ -72,7 +72,7 @@ object exceptionMod {
     
     extension [Self <: ExceptionWithMessage](x: Self) {
       
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
@@ -92,7 +92,7 @@ object exceptionMod {
     extends StObject
        with _Exception {
     
-    var code: js.UndefOr[String] = js.undefined
+    var code: js.UndefOr[String | Double] = js.undefined
     
     var message: js.UndefOr[String] = js.undefined
     
@@ -109,7 +109,7 @@ object exceptionMod {
     
     extension [Self <: ExceptionWithName](x: Self) {
       
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
@@ -128,7 +128,7 @@ object exceptionMod {
   trait _Exception extends StObject
   object _Exception {
     
-    inline def ExceptionWithCode(code: String): typings.opentelemetryApi.exceptionMod.ExceptionWithCode = {
+    inline def ExceptionWithCode(code: String | Double): typings.opentelemetryApi.exceptionMod.ExceptionWithCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.opentelemetryApi.exceptionMod.ExceptionWithCode]
     }

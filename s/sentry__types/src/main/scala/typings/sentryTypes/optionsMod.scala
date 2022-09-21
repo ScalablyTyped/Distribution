@@ -6,28 +6,44 @@ import typings.sentryTypes.breadcrumbMod.BreadcrumbHint
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
 import typings.sentryTypes.integrationMod.Integration
-import typings.sentryTypes.loglevelMod.LogLevel
+import typings.sentryTypes.scopeMod.CaptureContext
+import typings.sentryTypes.scopeMod.Scope
+import typings.sentryTypes.sdkmetadataMod.SdkMetadata
 import typings.sentryTypes.sentryTypesBooleans.`false`
+import typings.sentryTypes.stackframeMod.StackFrame
+import typings.sentryTypes.stacktraceMod.StackLineParser
+import typings.sentryTypes.stacktraceMod.StackParser
 import typings.sentryTypes.transactionMod.SamplingContext
+import typings.sentryTypes.transportMod.BaseTransportOptions
 import typings.sentryTypes.transportMod.Transport
-import typings.sentryTypes.transportMod.TransportClass
-import typings.sentryTypes.transportMod.TransportOptions
-import typings.std.RegExp
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  trait Options extends StObject {
+  trait ClientOptions[TO /* <: BaseTransportOptions */] extends StObject {
     
     /**
       * Options which are in beta, or otherwise not guaranteed to be stable.
       */
-    var _experiments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var _experiments: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    /**
+      * Set of metadata about the SDK that can be internally used to enhance envelopes and events,
+      * and provide additional data about every request.
+      */
+    var _metadata: js.UndefOr[SdkMetadata] = js.undefined
     
     /** Attaches stacktraces to pure capture message / log integrations */
     var attachStacktrace: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A flag enabling Sessions Tracking feature.
+      * By default, Sessions Tracking is enabled.
+      */
+    var autoSessionTracking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback invoked when adding a breadcrumb, allowing to optionally modify
@@ -61,23 +77,13 @@ object optionsMod {
       * @returns A new event that will be sent | null.
       */
     var beforeSend: js.UndefOr[
-        js.Function2[
-          /* event */ Event, 
-          /* hint */ js.UndefOr[EventHint], 
-          (js.Thenable[Event | Null]) | Event | Null
-        ]
+        js.Function2[/* event */ Event, /* hint */ EventHint, (js.Thenable[Event | Null]) | Event | Null]
       ] = js.undefined
     
     /**
       * Enable debug functionality in the SDK itself
       */
     var debug: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If this is set to false, default integrations will not be added, otherwise this will internally be set to the
-      * recommended default integrations.
-      */
-    var defaultIntegrations: js.UndefOr[`false` | js.Array[Integration]] = js.undefined
     
     /** Sets the distribution for all events */
     var dist: js.UndefOr[String] = js.undefined
@@ -89,9 +95,8 @@ object optionsMod {
     var dsn: js.UndefOr[String] = js.undefined
     
     /**
-      * Specifies whether this SDK should activate and send events to Sentry.
-      * Disabling the SDK reduces all overhead from instrumentation, collecting
-      * breadcrumbs and capturing events. Defaults to true.
+      * Specifies whether this SDK should send events to Sentry.
+      * Defaults to true.
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -102,19 +107,17 @@ object optionsMod {
       * A pattern for error messages which should not be sent to Sentry.
       * By default, all errors will be sent.
       */
-    var ignoreErrors: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    var ignoreErrors: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
+    /**
+      * Initial data to populate scope.
+      */
+    var initialScope: js.UndefOr[CaptureContext] = js.undefined
     
     /**
       * List of integrations that should be installed after SDK was initialized.
-      * Accepts either a list of integrations or a function that receives
-      * default integrations and returns a new, updated list.
       */
-    var integrations: js.UndefOr[
-        js.Array[Integration] | (js.Function1[/* integrations */ js.Array[Integration], js.Array[Integration]])
-      ] = js.undefined
-    
-    /** Console logging verbosity for the SDK Client. */
-    var logLevel: js.UndefOr[LogLevel] = js.undefined
+    var integrations: js.Array[Integration]
     
     /**
       * The maximum number of breadcrumbs sent with events. Defaults to 100.
@@ -122,7 +125,7 @@ object optionsMod {
       */
     var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
     
-    /** Maxium number of chars a single value can have before it will be truncated. */
+    /** Maximum number of chars a single value can have before it will be truncated. */
     var maxValueLength: js.UndefOr[Double] = js.undefined
     
     /**
@@ -137,14 +140,51 @@ object optionsMod {
     var normalizeDepth: js.UndefOr[Double] = js.undefined
     
     /**
+      * Maximum number of properties or elements that the normalization algorithm will output in any single array or object included in the normalized event.
+      * Used when normalizing an event before sending, on all of the listed attributes:
+      * - `breadcrumbs.data`
+      * - `user`
+      * - `contexts`
+      * - `extra`
+      * Defaults to `1000`
+      */
+    var normalizeMaxBreadth: js.UndefOr[Double] = js.undefined
+    
+    /**
       * The release identifier used when uploading respective source maps. Specify
       * this value to allow Sentry to resolve the correct source maps when
       * processing events.
       */
     var release: js.UndefOr[String] = js.undefined
     
-    /** A global sample rate to apply to all events (0 - 1). */
+    /**
+      * A global sample rate to apply to all events.
+      *
+      * 0.0 = 0% chance of a given event being sent (send no events) 1.0 = 100% chance of a given event being sent (send
+      * all events)
+      */
     var sampleRate: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Send SDK Client Reports.
+      * By default, Client Reports are enabled.
+      */
+    var sendClientReports: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Controls if potentially sensitive data should be sent to Sentry by default.
+      * Note that this only applies to data that the SDK is sending by default
+      * but not data that was explicitly set (e.g. by calling `Sentry.setUser()`).
+      *
+      * Defaults to `false`.
+      *
+      * NOTE: This option currently controls only a few data points in a selected
+      * set of SDKs. The goal for this option is to eventually control all sensitive
+      * data the SDK sets by default. However, this would be a breaking change so
+      * until the next major update this option only controls data points which were
+      * added in versions above `7.9.0`.
+      */
+    var sendDefaultPii: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls how many milliseconds to wait before shutting down. The default is
@@ -154,6 +194,19 @@ object optionsMod {
       * problems.
       */
     var shutdownTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A stack parser implementation
+      * By default, a stack parser is supplied for all supported platforms
+      */
+    def stackParser(stack: String): js.Array[StackFrame]
+    def stackParser(stack: String, skipFirst: Double): js.Array[StackFrame]
+    /**
+      * A stack parser implementation
+      * By default, a stack parser is supplied for all supported platforms
+      */
+    @JSName("stackParser")
+    var stackParser_Original: StackParser
     
     /**
       * Sample rate to determine trace sampling.
@@ -181,47 +234,55 @@ object optionsMod {
     var tracesSampler: js.UndefOr[js.Function1[/* samplingContext */ SamplingContext, Double | Boolean]] = js.undefined
     
     /**
-      * Transport object that should be used to send events to Sentry
+      * A function that takes transport options and returns the Transport object which is used to send events to Sentry.
+      * The function is invoked internally when the client is initialized.
       */
-    var transport: js.UndefOr[TransportClass[Transport]] = js.undefined
+    def transport(transportOptions: TO): Transport
     
     /**
       * Options for the default transport that the SDK uses.
       */
-    var transportOptions: js.UndefOr[TransportOptions] = js.undefined
-  }
-  object Options {
+    var transportOptions: js.UndefOr[Partial[TO]] = js.undefined
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+    /**
+      * A URL to an envelope tunnel endpoint. An envelope tunnel is an HTTP endpoint
+      * that accepts Sentry envelopes for forwarding. This can be used to force data
+      * through a custom server independent of the type of data.
+      */
+    var tunnel: js.UndefOr[String] = js.undefined
+  }
+  object ClientOptions {
+    
+    inline def apply[TO /* <: BaseTransportOptions */](
+      integrations: js.Array[Integration],
+      stackParser: (/* stack */ String, /* skipFirst */ js.UndefOr[Double]) => js.Array[StackFrame],
+      transport: TO => Transport
+    ): ClientOptions[TO] = {
+      val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], stackParser = js.Any.fromFunction2(stackParser), transport = js.Any.fromFunction1(transport))
+      __obj.asInstanceOf[ClientOptions[TO]]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: ClientOptions[?], TO /* <: BaseTransportOptions */](x: Self & ClientOptions[TO]) {
       
       inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
       inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
       
+      inline def setAutoSessionTracking(value: Boolean): Self = StObject.set(x, "autoSessionTracking", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSessionTrackingUndefined: Self = StObject.set(x, "autoSessionTracking", js.undefined)
+      
       inline def setBeforeBreadcrumb(value: (/* breadcrumb */ Breadcrumb, /* hint */ js.UndefOr[BreadcrumbHint]) => Breadcrumb | Null): Self = StObject.set(x, "beforeBreadcrumb", js.Any.fromFunction2(value))
       
       inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
       
-      inline def setBeforeSend(
-        value: (/* event */ Event, /* hint */ js.UndefOr[EventHint]) => (js.Thenable[Event | Null]) | Event | Null
-      ): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (js.Thenable[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
       
       inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
-      
-      inline def setDefaultIntegrations(value: `false` | js.Array[Integration]): Self = StObject.set(x, "defaultIntegrations", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultIntegrationsUndefined: Self = StObject.set(x, "defaultIntegrations", js.undefined)
-      
-      inline def setDefaultIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "defaultIntegrations", js.Array(value :_*))
       
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
@@ -239,25 +300,21 @@ object optionsMod {
       
       inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      inline def setIgnoreErrors(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
       inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
-      inline def setIgnoreErrorsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
+      inline def setIgnoreErrorsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
       
-      inline def setIntegrations(
-        value: js.Array[Integration] | (js.Function1[/* integrations */ js.Array[Integration], js.Array[Integration]])
-      ): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setInitialScope(value: CaptureContext): Self = StObject.set(x, "initialScope", value.asInstanceOf[js.Any])
       
-      inline def setIntegrationsFunction1(value: /* integrations */ js.Array[Integration] => js.Array[Integration]): Self = StObject.set(x, "integrations", js.Any.fromFunction1(value))
+      inline def setInitialScopeFunction1(value: /* scope */ Scope => Scope): Self = StObject.set(x, "initialScope", js.Any.fromFunction1(value))
       
-      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setInitialScopeUndefined: Self = StObject.set(x, "initialScope", js.undefined)
       
-      inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value :_*))
+      inline def setIntegrations(value: js.Array[Integration]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
-      
-      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value*))
       
       inline def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
       
@@ -271,6 +328,10 @@ object optionsMod {
       
       inline def setNormalizeDepthUndefined: Self = StObject.set(x, "normalizeDepth", js.undefined)
       
+      inline def setNormalizeMaxBreadth(value: Double): Self = StObject.set(x, "normalizeMaxBreadth", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizeMaxBreadthUndefined: Self = StObject.set(x, "normalizeMaxBreadth", js.undefined)
+      
       inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
       inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
@@ -279,9 +340,19 @@ object optionsMod {
       
       inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
+      inline def setSendClientReports(value: Boolean): Self = StObject.set(x, "sendClientReports", value.asInstanceOf[js.Any])
+      
+      inline def setSendClientReportsUndefined: Self = StObject.set(x, "sendClientReports", js.undefined)
+      
+      inline def setSendDefaultPii(value: Boolean): Self = StObject.set(x, "sendDefaultPii", value.asInstanceOf[js.Any])
+      
+      inline def setSendDefaultPiiUndefined: Self = StObject.set(x, "sendDefaultPii", js.undefined)
+      
       inline def setShutdownTimeout(value: Double): Self = StObject.set(x, "shutdownTimeout", value.asInstanceOf[js.Any])
       
       inline def setShutdownTimeoutUndefined: Self = StObject.set(x, "shutdownTimeout", js.undefined)
+      
+      inline def setStackParser(value: (/* stack */ String, /* skipFirst */ js.UndefOr[Double]) => js.Array[StackFrame]): Self = StObject.set(x, "stackParser", js.Any.fromFunction2(value))
       
       inline def setTracesSampleRate(value: Double): Self = StObject.set(x, "tracesSampleRate", value.asInstanceOf[js.Any])
       
@@ -291,17 +362,261 @@ object optionsMod {
       
       inline def setTracesSamplerUndefined: Self = StObject.set(x, "tracesSampler", js.undefined)
       
-      inline def setTransport(value: TransportClass[Transport]): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: TO => Transport): Self = StObject.set(x, "transport", js.Any.fromFunction1(value))
       
-      inline def setTransportOptions(value: TransportOptions): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
+      inline def setTransportOptions(value: Partial[TO]): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
+      
+      inline def setTransportOptionsUndefined: Self = StObject.set(x, "transportOptions", js.undefined)
+      
+      inline def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+      
+      inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+      
+      inline def set_experiments(value: StringDictionary[Any]): Self = StObject.set(x, "_experiments", value.asInstanceOf[js.Any])
+      
+      inline def set_experimentsUndefined: Self = StObject.set(x, "_experiments", js.undefined)
+      
+      inline def set_metadata(value: SdkMetadata): Self = StObject.set(x, "_metadata", value.asInstanceOf[js.Any])
+      
+      inline def set_metadataUndefined: Self = StObject.set(x, "_metadata", js.undefined)
+    }
+  }
+  
+  /* Inlined parent std.Omit<std.Partial<@sentry/types.@sentry/types/types/options.ClientOptions<TO>>, 'integrations' | 'transport' | 'stackParser'> */
+  trait Options[TO /* <: BaseTransportOptions */] extends StObject {
+    
+    var _experiments: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    var _metadata: js.UndefOr[SdkMetadata] = js.undefined
+    
+    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSessionTracking: js.UndefOr[Boolean] = js.undefined
+    
+    var beforeBreadcrumb: js.UndefOr[
+        js.Function2[
+          /* breadcrumb */ Breadcrumb, 
+          /* hint */ js.UndefOr[BreadcrumbHint], 
+          Breadcrumb | Null
+        ]
+      ] = js.undefined
+    
+    var beforeSend: js.UndefOr[
+        js.Function2[/* event */ Event, /* hint */ EventHint, (js.Thenable[Event | Null]) | Event | Null]
+      ] = js.undefined
+    
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If this is set to false, default integrations will not be added, otherwise this will internally be set to the
+      * recommended default integrations.
+      */
+    var defaultIntegrations: js.UndefOr[`false` | js.Array[Integration]] = js.undefined
+    
+    var dist: js.UndefOr[String] = js.undefined
+    
+    var dsn: js.UndefOr[String] = js.undefined
+    
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    var environment: js.UndefOr[String] = js.undefined
+    
+    var ignoreErrors: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
+    var initialScope: js.UndefOr[CaptureContext] = js.undefined
+    
+    /**
+      * List of integrations that should be installed after SDK was initialized.
+      * Accepts either a list of integrations or a function that receives
+      * default integrations and returns a new, updated list.
+      */
+    var integrations: js.UndefOr[
+        js.Array[Integration] | (js.Function1[/* integrations */ js.Array[Integration], js.Array[Integration]])
+      ] = js.undefined
+    
+    var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
+    
+    var maxValueLength: js.UndefOr[Double] = js.undefined
+    
+    var normalizeDepth: js.UndefOr[Double] = js.undefined
+    
+    var normalizeMaxBreadth: js.UndefOr[Double] = js.undefined
+    
+    var release: js.UndefOr[String] = js.undefined
+    
+    var sampleRate: js.UndefOr[Double] = js.undefined
+    
+    var sendClientReports: js.UndefOr[Boolean] = js.undefined
+    
+    var sendDefaultPii: js.UndefOr[Boolean] = js.undefined
+    
+    var shutdownTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A stack parser implementation or an array of stack line parsers
+      * By default, a stack parser is supplied for all supported browsers
+      */
+    var stackParser: js.UndefOr[StackParser | js.Array[StackLineParser]] = js.undefined
+    
+    var tracesSampleRate: js.UndefOr[Double] = js.undefined
+    
+    var tracesSampler: js.UndefOr[js.Function1[/* samplingContext */ SamplingContext, Double | Boolean]] = js.undefined
+    
+    /**
+      * A function that takes transport options and returns the Transport object which is used to send events to Sentry.
+      * The function is invoked internally during SDK initialization.
+      * By default, the SDK initializes its default transports.
+      */
+    var transport: js.UndefOr[js.Function1[/* transportOptions */ TO, Transport]] = js.undefined
+    
+    var transportOptions: js.UndefOr[Partial[TO]] = js.undefined
+    
+    var tunnel: js.UndefOr[String] = js.undefined
+  }
+  object Options {
+    
+    inline def apply[TO /* <: BaseTransportOptions */](): Options[TO] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options[TO]]
+    }
+    
+    extension [Self <: Options[?], TO /* <: BaseTransportOptions */](x: Self & Options[TO]) {
+      
+      inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
+      
+      inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
+      
+      inline def setAutoSessionTracking(value: Boolean): Self = StObject.set(x, "autoSessionTracking", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSessionTrackingUndefined: Self = StObject.set(x, "autoSessionTracking", js.undefined)
+      
+      inline def setBeforeBreadcrumb(value: (/* breadcrumb */ Breadcrumb, /* hint */ js.UndefOr[BreadcrumbHint]) => Breadcrumb | Null): Self = StObject.set(x, "beforeBreadcrumb", js.Any.fromFunction2(value))
+      
+      inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
+      
+      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (js.Thenable[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      
+      inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def setDefaultIntegrations(value: `false` | js.Array[Integration]): Self = StObject.set(x, "defaultIntegrations", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultIntegrationsUndefined: Self = StObject.set(x, "defaultIntegrations", js.undefined)
+      
+      inline def setDefaultIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "defaultIntegrations", js.Array(value*))
+      
+      inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
+      
+      inline def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
+      
+      inline def setDsn(value: String): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
+      
+      inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      
+      inline def setIgnoreErrors(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      
+      inline def setIgnoreErrorsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
+      
+      inline def setInitialScope(value: CaptureContext): Self = StObject.set(x, "initialScope", value.asInstanceOf[js.Any])
+      
+      inline def setInitialScopeFunction1(value: /* scope */ Scope => Scope): Self = StObject.set(x, "initialScope", js.Any.fromFunction1(value))
+      
+      inline def setInitialScopeUndefined: Self = StObject.set(x, "initialScope", js.undefined)
+      
+      inline def setIntegrations(
+        value: js.Array[Integration] | (js.Function1[/* integrations */ js.Array[Integration], js.Array[Integration]])
+      ): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrationsFunction1(value: /* integrations */ js.Array[Integration] => js.Array[Integration]): Self = StObject.set(x, "integrations", js.Any.fromFunction1(value))
+      
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value*))
+      
+      inline def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
+      
+      inline def setMaxBreadcrumbsUndefined: Self = StObject.set(x, "maxBreadcrumbs", js.undefined)
+      
+      inline def setMaxValueLength(value: Double): Self = StObject.set(x, "maxValueLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxValueLengthUndefined: Self = StObject.set(x, "maxValueLength", js.undefined)
+      
+      inline def setNormalizeDepth(value: Double): Self = StObject.set(x, "normalizeDepth", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizeDepthUndefined: Self = StObject.set(x, "normalizeDepth", js.undefined)
+      
+      inline def setNormalizeMaxBreadth(value: Double): Self = StObject.set(x, "normalizeMaxBreadth", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizeMaxBreadthUndefined: Self = StObject.set(x, "normalizeMaxBreadth", js.undefined)
+      
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      
+      inline def setSendClientReports(value: Boolean): Self = StObject.set(x, "sendClientReports", value.asInstanceOf[js.Any])
+      
+      inline def setSendClientReportsUndefined: Self = StObject.set(x, "sendClientReports", js.undefined)
+      
+      inline def setSendDefaultPii(value: Boolean): Self = StObject.set(x, "sendDefaultPii", value.asInstanceOf[js.Any])
+      
+      inline def setSendDefaultPiiUndefined: Self = StObject.set(x, "sendDefaultPii", js.undefined)
+      
+      inline def setShutdownTimeout(value: Double): Self = StObject.set(x, "shutdownTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setShutdownTimeoutUndefined: Self = StObject.set(x, "shutdownTimeout", js.undefined)
+      
+      inline def setStackParser(value: StackParser | js.Array[StackLineParser]): Self = StObject.set(x, "stackParser", value.asInstanceOf[js.Any])
+      
+      inline def setStackParserFunction2(value: (/* stack */ String, /* skipFirst */ js.UndefOr[Double]) => js.Array[StackFrame]): Self = StObject.set(x, "stackParser", js.Any.fromFunction2(value))
+      
+      inline def setStackParserUndefined: Self = StObject.set(x, "stackParser", js.undefined)
+      
+      inline def setStackParserVarargs(value: StackLineParser*): Self = StObject.set(x, "stackParser", js.Array(value*))
+      
+      inline def setTracesSampleRate(value: Double): Self = StObject.set(x, "tracesSampleRate", value.asInstanceOf[js.Any])
+      
+      inline def setTracesSampleRateUndefined: Self = StObject.set(x, "tracesSampleRate", js.undefined)
+      
+      inline def setTracesSampler(value: /* samplingContext */ SamplingContext => Double | Boolean): Self = StObject.set(x, "tracesSampler", js.Any.fromFunction1(value))
+      
+      inline def setTracesSamplerUndefined: Self = StObject.set(x, "tracesSampler", js.undefined)
+      
+      inline def setTransport(value: /* transportOptions */ TO => Transport): Self = StObject.set(x, "transport", js.Any.fromFunction1(value))
+      
+      inline def setTransportOptions(value: Partial[TO]): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
       
       inline def setTransportOptionsUndefined: Self = StObject.set(x, "transportOptions", js.undefined)
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      inline def set_experiments(value: StringDictionary[js.Any]): Self = StObject.set(x, "_experiments", value.asInstanceOf[js.Any])
+      inline def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+      
+      inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+      
+      inline def set_experiments(value: StringDictionary[Any]): Self = StObject.set(x, "_experiments", value.asInstanceOf[js.Any])
       
       inline def set_experimentsUndefined: Self = StObject.set(x, "_experiments", js.undefined)
+      
+      inline def set_metadata(value: SdkMetadata): Self = StObject.set(x, "_metadata", value.asInstanceOf[js.Any])
+      
+      inline def set_metadataUndefined: Self = StObject.set(x, "_metadata", js.undefined)
     }
   }
 }

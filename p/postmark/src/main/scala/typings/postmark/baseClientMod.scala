@@ -1,13 +1,11 @@
 package typings.postmark
 
-import typings.axios.mod.AxiosInstance
-import typings.axios.mod.AxiosPromise
-import typings.axios.mod.AxiosRequestConfig
 import typings.postmark.callbackMod.Callback
 import typings.postmark.clientOptionsMod.ClientOptions.HttpMethod
 import typings.postmark.errorHandlerMod.ErrorHandler
 import typings.postmark.modelsMod.ClientOptions.Configuration
 import typings.postmark.modelsMod.FilteringParameters
+import typings.postmark.modelsMod.HttpClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,68 +20,24 @@ object baseClientMod {
     /* protected */ def this(token: String, authHeader: String) = this()
     /* protected */ def this(token: String, authHeader: String, configOptions: Configuration) = this()
   }
-  /* static members */
-  object default {
-    
-    @JSImport("postmark/dist/client/BaseClient", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Client connection configuration options.
-      * You may modify these values and new clients will use them.
-      * Any values provided to a Client constructor will override default options.
-      */
-    @JSImport("postmark/dist/client/BaseClient", "default.DefaultOptions")
-    @js.native
-    def DefaultOptions: Configuration = js.native
-    inline def DefaultOptions_=(x: Configuration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOptions")(x.asInstanceOf[js.Any])
-  }
   
   @js.native
   trait BaseClient extends StObject {
     
-    /* private */ val authHeader: js.Any = js.native
-    
-    /**
-      * Create http client instance with default settings.
-      *
-      * @return {AxiosInstance}
-      */
-    /* private */ var buildDefaultHttpClient: js.Any = js.native
-    
-    /* private */ var clientOptions: js.Any = js.native
+    /* private */ val authHeader: Any = js.native
     
     var clientVersion: String = js.native
     
     /* protected */ var errorHandler: ErrorHandler = js.native
-    
-    /* private */ var getBaseHttpRequestURL: js.Any = js.native
     
     def getClientOptions(): Configuration = js.native
     
     /**
       * JSON object with default headers sent by HTTP request.
       */
-    def getComposedHttpRequestHeaders(): js.Object = js.native
+    /* private */ var getComposedHttpRequestHeaders: Any = js.native
     
-    /* private */ var getRequestTimeoutInSeconds: js.Any = js.native
-    
-    def httpClient(config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
-    def httpClient(url: String): AxiosPromise[js.Any] = js.native
-    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
-    @JSName("httpClient")
-    val httpClient_Original: AxiosInstance = js.native
-    
-    /**
-      * Process http request.
-      *
-      * @param method - Which type of http request will be executed.
-      * @param path - API URL endpoint.
-      * @param queryParameters - Querystring parameters used for http request.
-      * @param body - Data sent with http request.
-      */
-    /* private */ var httpRequest: js.Any = js.native
+    var httpClient: HttpClient = js.native
     
     /**
       * Process callback function for HTTP request.
@@ -91,7 +45,7 @@ object baseClientMod {
       * @param httpRequest - HTTP request for which callback will be executed
       * @param callback - callback function to be executed.
       */
-    /* private */ var processCallbackRequest: js.Any = js.native
+    /* private */ var processCallbackRequest: Any = js.native
     
     /**
       * Process HTTP request.
@@ -103,7 +57,7 @@ object baseClientMod {
       *
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
-    /* private */ var processHttpRequest: js.Any = js.native
+    /* private */ var processHttpRequest: Any = js.native
     
     /**
       * Process request for Postmark ClientOptions.
@@ -116,7 +70,7 @@ object baseClientMod {
       *
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
-    /* private */ var processRequest: js.Any = js.native
+    /* private */ var processRequest: Any = js.native
     
     /**
       * Process http request with sending body - data.
@@ -145,13 +99,13 @@ object baseClientMod {
       */
     /* protected */ def setDefaultPaginationValues(filter: FilteringParameters): Unit = js.native
     
-    /* private */ val token: js.Any = js.native
+    /* private */ val token: Any = js.native
     
     /**
       * Token can't be empty.
       *
       * @param {string} token - HTTP request token
       */
-    /* private */ var verifyToken: js.Any = js.native
+    /* private */ var verifyToken: Any = js.native
   }
 }

@@ -10,11 +10,11 @@ trait SearchDefinition extends StObject {
   
   var term: String
   
-  var where: AnyObject[js.Any]
+  var where: AnyObject[Any]
 }
 object SearchDefinition {
   
-  inline def apply(fields: js.Array[String], term: String, where: AnyObject[js.Any]): SearchDefinition = {
+  inline def apply(fields: js.Array[String], term: String, where: AnyObject[Any]): SearchDefinition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDefinition]
   }
@@ -23,10 +23,10 @@ object SearchDefinition {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    inline def setWhere(value: AnyObject[js.Any]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyObject[Any]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

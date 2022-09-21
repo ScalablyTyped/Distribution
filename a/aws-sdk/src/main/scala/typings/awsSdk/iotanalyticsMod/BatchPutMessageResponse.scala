@@ -24,6 +24,6 @@ object BatchPutMessageResponse {
     
     inline def setBatchPutMessageErrorEntriesUndefined: Self = StObject.set(x, "batchPutMessageErrorEntries", js.undefined)
     
-    inline def setBatchPutMessageErrorEntriesVarargs(value: BatchPutMessageErrorEntry*): Self = StObject.set(x, "batchPutMessageErrorEntries", js.Array(value :_*))
+    inline def setBatchPutMessageErrorEntriesVarargs(value: BatchPutMessageErrorEntry*): Self = StObject.set(x, "batchPutMessageErrorEntries", js.Array(value*))
   }
 }

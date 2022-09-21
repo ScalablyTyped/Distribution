@@ -31,7 +31,7 @@ object ConversionCountingConfig {
     
     inline def setFloodlightActivityConfigsUndefined: Self = StObject.set(x, "floodlightActivityConfigs", js.undefined)
     
-    inline def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = StObject.set(x, "floodlightActivityConfigs", js.Array(value :_*))
+    inline def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = StObject.set(x, "floodlightActivityConfigs", js.Array(value*))
     
     inline def setPostViewCountPercentageMillis(value: String): Self = StObject.set(x, "postViewCountPercentageMillis", value.asInstanceOf[js.Any])
     

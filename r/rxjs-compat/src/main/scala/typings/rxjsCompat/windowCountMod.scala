@@ -10,6 +10,6 @@ object windowCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def windowCount[T](windowSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def windowCount[T](windowSize: Double, startWindowEvery: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any], startWindowEvery.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def windowCount[T](windowSize: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def windowCount[T](windowSize: Double, startWindowEvery: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowCount")(windowSize.asInstanceOf[js.Any], startWindowEvery.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

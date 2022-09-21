@@ -13,6 +13,8 @@ trait LineCallout3DBorder
   /**
     * The color of the callout line border.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
     */
   var color: js.UndefOr[Color_] = js.undefined
@@ -23,7 +25,7 @@ object LineCallout3DBorder {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, LineCallout3DBorder]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], LineCallout3DBorder]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, LineCallout3DBorder]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], LineCallout3DBorder]])
   ): LineCallout3DBorder = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineCallout3DBorder]

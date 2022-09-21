@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "PropertyChangedArgs")
 @js.native
-class PropertyChangedArgs protected () extends StObject {
-  def this(propertyName: String, oldValue: js.Any) = this()
+open class PropertyChangedArgs protected () extends StObject {
+  def this(propertyName: String, oldValue: Any) = this()
   
-  var oldValue: js.Any = js.native
+  var oldValue: Any = js.native
   
   var propertyName: String = js.native
 }

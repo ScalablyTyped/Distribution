@@ -359,7 +359,7 @@ object anon {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMinVarargs(value: String*): Self = StObject.set(x, "min", js.Array(value :_*))
+      inline def setMinVarargs(value: String*): Self = StObject.set(x, "min", js.Array(value*))
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

@@ -27,12 +27,12 @@ trait CreateDevEndpointRequest extends StObject {
   var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Development endpoints that are created without specifying a Glue version default to Glue 0.9. You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
+    * Glue version determines the versions of Apache Spark and Python that Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints.  For more information about the available Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Development endpoints that are created without specifying a Glue version default to Glue 0.9. You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   
   /**
-    * The number of AWS Glue Data Processing Units (DPUs) to allocate to this DevEndpoint.
+    * The number of Glue Data Processing Units (DPUs) to allocate to this DevEndpoint.
     */
   var NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined
   
@@ -72,7 +72,7 @@ trait CreateDevEndpointRequest extends StObject {
   var SubnetId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The tags to use with this DevEndpoint. You may use tags to limit access to the DevEndpoint. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+    * The tags to use with this DevEndpoint. You may use tags to limit access to the DevEndpoint. For more information about tags in Glue, see Amazon Web Services Tags in Glue in the developer guide.
     */
   var Tags: js.UndefOr[TagsMap] = js.undefined
   
@@ -124,7 +124,7 @@ object CreateDevEndpointRequest {
     
     inline def setPublicKeysUndefined: Self = StObject.set(x, "PublicKeys", js.undefined)
     
-    inline def setPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "PublicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "PublicKeys", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
@@ -136,7 +136,7 @@ object CreateDevEndpointRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: GenericString*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: GenericString*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetId(value: GenericString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

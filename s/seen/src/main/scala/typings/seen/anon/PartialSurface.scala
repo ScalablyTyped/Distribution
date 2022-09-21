@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialSurface extends StObject {
   
   var constructor: js.UndefOr[
-    js.Function2[/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter], js.Any]
+    js.Function2[/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter], Any]
   ] = js.undefined
   
   var cullBackfaces: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +42,7 @@ object PartialSurface {
   
   extension [Self <: PartialSurface](x: Self) {
     
-    inline def setConstructor(value: (/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter]) => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
+    inline def setConstructor(value: (/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter]) => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
@@ -76,7 +76,7 @@ object PartialSurface {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setStroke(value: /* stroke */ String | Color => PartialSurface): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
     

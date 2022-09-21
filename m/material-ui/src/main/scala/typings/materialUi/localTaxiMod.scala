@@ -10,10 +10,10 @@ object localTaxiMod {
   
   @JSImport("material-ui/svg-icons/maps/local-taxi", JSImport.Default)
   @js.native
-  class default () extends MapsLocalTaxi
+  open class default () extends MapsLocalTaxi
   
   @JSImport("material-ui/svg-icons/maps/local-taxi", "MapsLocalTaxi")
   @js.native
-  class MapsLocalTaxi ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalTaxi ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

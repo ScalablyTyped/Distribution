@@ -20,7 +20,7 @@ object comboboxInputMod extends Shortcut {
   
   trait ComboboxInputProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var buttonProps: js.UndefOr[js.Object] = js.undefined
     

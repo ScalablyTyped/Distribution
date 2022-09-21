@@ -83,7 +83,7 @@ object anon {
     /**
       * Get the generated raw trie object
       */
-    def tree(): js.Any = js.native
+    def tree(): Any = js.native
   }
   
   @js.native
@@ -158,6 +158,6 @@ object anon {
     /**
       * Get the generated raw trie object
       */
-    def tree(): js.Any = js.native
+    def tree(): Any = js.native
   }
 }

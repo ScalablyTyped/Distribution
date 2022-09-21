@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSasportal.anon
 
-import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalNode
+import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalDeployment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent resource name where the node is to be created. */
+  /** Required. The parent resource name where the deployment is to be created. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait Parent extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SasPortalNode
+  var resource: SasPortalDeployment
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  inline def apply(parent: String, resource: SasPortalNode): Parent = {
+  inline def apply(parent: String, resource: SasPortalDeployment): Parent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
@@ -94,7 +94,7 @@ object Parent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SasPortalNode): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SasPortalDeployment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

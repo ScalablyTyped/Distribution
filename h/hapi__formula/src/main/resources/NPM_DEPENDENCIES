@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/formula" : "2.0.0"
+      "@hapi/formula" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/formula" : "2.0.0"
+      "@hapi/formula" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

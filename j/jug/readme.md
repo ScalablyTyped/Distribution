@@ -9,10 +9,10 @@ Graph engine prototype.
 | ------------------ | :-------------: |
 | Full name          | jug |
 | Keywords           | data-minering, machine-learning, graph-engine |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 660 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jug)

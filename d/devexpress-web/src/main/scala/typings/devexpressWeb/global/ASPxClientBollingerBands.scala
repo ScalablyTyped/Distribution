@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientBollingerBands")
 @js.native
-class ASPxClientBollingerBands ()
+open class ASPxClientBollingerBands ()
   extends StObject
      with typings.devexpressWeb.ASPxClientBollingerBands {
   

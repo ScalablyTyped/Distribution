@@ -10,10 +10,10 @@ The lodash method `_.isError` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.iserror |
 | Keywords           | lodash-modularized, iserror |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 3915584 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 582794.3333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

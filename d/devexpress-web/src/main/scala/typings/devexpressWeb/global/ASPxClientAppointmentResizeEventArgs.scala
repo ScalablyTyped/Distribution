@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentResizeEventArgs")
 @js.native
-class ASPxClientAppointmentResizeEventArgs protected ()
+open class ASPxClientAppointmentResizeEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentResizeEventArgs {
   /**

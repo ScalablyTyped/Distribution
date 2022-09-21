@@ -82,7 +82,7 @@ object CustomField {
     
     inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
     
-    inline def setListItemsVarargs(value: String*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+    inline def setListItemsVarargs(value: String*): Self = StObject.set(x, "listItems", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

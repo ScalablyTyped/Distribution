@@ -1,7 +1,6 @@
 package typings.pidusage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,31 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(pid: String): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
-  inline def apply(pid: String, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(pid: String, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  inline def apply(pid: String, callback: js.Function2[/* err */ js.Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pid: String, options: StringDictionary[Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
   inline def apply(
     pid: String,
-    options: StringDictionary[js.Any],
-    callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
+    options: StringDictionary[Any],
+    callback: js.Function2[/* err */ js.Error | Null, /* stats */ Stat, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(pid: Double): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
-  inline def apply(pid: Double, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(pid: Double, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  inline def apply(pid: Double, callback: js.Function2[/* err */ js.Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pid: Double, options: StringDictionary[Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
   inline def apply(
     pid: Double,
-    options: StringDictionary[js.Any],
-    callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
+    options: StringDictionary[Any],
+    callback: js.Function2[/* err */ js.Error | Null, /* stats */ Stat, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(pids: js.Array[Double | String]): js.Promise[StringDictionary[Stat]] = ^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StringDictionary[Stat]]]
   inline def apply(
     pids: js.Array[Double | String],
-    callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* stats */ StringDictionary[Stat], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(pids: js.Array[Double | String], options: StringDictionary[js.Any]): js.Promise[StringDictionary[Stat]] = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stat]]]
+  inline def apply(pids: js.Array[Double | String], options: StringDictionary[Any]): js.Promise[StringDictionary[Stat]] = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stat]]]
   inline def apply(
     pids: js.Array[Double | String],
-    options: StringDictionary[js.Any],
-    callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
+    options: StringDictionary[Any],
+    callback: js.Function2[/* err */ js.Error | Null, /* stats */ StringDictionary[Stat], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("pidusage", JSImport.Namespace)

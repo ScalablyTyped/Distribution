@@ -13,5 +13,5 @@ trait IconCriteria extends StObject {
   
   def Item(Index: Double): IconCriterion = js.native
   
-  def _Default(Index: js.Any): IconCriterion = js.native
+  def _Default(Index: Any): IconCriterion = js.native
 }

@@ -4,12 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A paragraph of text. Formatted text supported.
-  */
 trait SchemaTextParagraph extends StObject {
   
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTextParagraph {
   
@@ -21,6 +18,8 @@ object SchemaTextParagraph {
   extension [Self <: SchemaTextParagraph](x: Self) {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

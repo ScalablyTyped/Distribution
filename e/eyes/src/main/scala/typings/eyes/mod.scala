@@ -1,7 +1,7 @@
 package typings.eyes
 
 import typings.eyes.anon.All
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def inspect(thing: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def inspect(thing: js.Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inspect(thing: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def inspect(thing: Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def inspector(): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")().asInstanceOf[InspectorFunction]
   inline def inspector(options: EyesOptions): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")(options.asInstanceOf[js.Any]).asInstanceOf[InspectorFunction]
@@ -30,7 +30,7 @@ object mod {
     var pretty: js.UndefOr[Boolean] = js.undefined
     
     /** Stream to write to, or null */
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     /** Styles applied to stdout */
     var styles: js.UndefOr[All] = js.undefined
@@ -56,7 +56,7 @@ object mod {
       
       inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -66,5 +66,5 @@ object mod {
     }
   }
   
-  type InspectorFunction = js.Function2[/* thing */ js.Any, /* label */ js.UndefOr[String], String]
+  type InspectorFunction = js.Function2[/* thing */ Any, /* label */ js.UndefOr[String], String]
 }

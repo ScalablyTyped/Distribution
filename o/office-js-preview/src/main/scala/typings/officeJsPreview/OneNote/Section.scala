@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a OneNote section. Sections can contain pages.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
@@ -23,9 +23,9 @@ trait Section
      with ClientObject {
   
   /**
-    *
     * Adds a new page to the end of the section.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     *
     * @param title The title of the new page.
@@ -33,9 +33,9 @@ trait Section
   def addPage(title: String): Page = js.native
   
   /**
-    *
     * The client url of the section. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val clientUrl: String = js.native
@@ -45,9 +45,9 @@ trait Section
   var context_Section: RequestContext = js.native
   
   /**
-    *
     * Copies this section to specified notebook.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     *
     * @param destinationNotebook The notebook to copy this section to.
@@ -55,9 +55,9 @@ trait Section
   def copyToNotebook(destinationNotebook: Notebook): Section = js.native
   
   /**
-    *
     * Copies this section to specified section group.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     *
     * @param destinationSectionGroup The section group to copy this section to.
@@ -65,118 +65,105 @@ trait Section
   def copyToSectionGroup(destinationSectionGroup: SectionGroup): Section = js.native
   
   /**
-    *
     * Gets the REST API ID.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   def getRestApiId(): ClientResult[String] = js.native
   
   /**
-    *
     * Gets the ID of the section. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val id: String = js.native
   
   /**
-    *
     * Inserts a new section before or after the current section.
     *
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    *
+    * @param location The location of the new section relative to the current section.
+    * @param title The name of the new section.
+    */
+  def insertSectionAsSibling(location: Before | After, title: String): Section = js.native
+  /**
+    * Inserts a new section before or after the current section.
+    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     *
     * @param location The location of the new section relative to the current section.
     * @param title The name of the new section.
     */
   def insertSectionAsSibling(location: InsertLocation, title: String): Section = js.native
-  @JSName("insertSectionAsSibling")
-  def insertSectionAsSibling_After(location: After, title: String): Section = js.native
-  /**
-    *
-    * Inserts a new section before or after the current section.
-    *
-    * [Api set: OneNoteApi 1.1]
-    *
-    * @param location The location of the new section relative to the current section.
-    * @param title The name of the new section.
-    */
-  @JSName("insertSectionAsSibling")
-  def insertSectionAsSibling_Before(location: Before, title: String): Section = js.native
   
   /**
-    *
     * True if this section is encrypted with a password. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.2]
     */
   val isEncrypted: Boolean = js.native
   
   /**
-    *
     * True if this section is locked. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.2]
     */
   val isLocked: Boolean = js.native
   
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Section = js.native
-  def load(option: String): Section = js.native
-  def load(option: js.Array[String]): Section = js.native
-  def load(option: SectionLoadOptions): Section = js.native
-  def load(option: Expand): Section = js.native
+  def load(options: SectionLoadOptions): Section = js.native
+  def load(propertyNamesAndPaths: Expand): Section = js.native
+  def load(propertyNames: String): Section = js.native
+  def load(propertyNames: js.Array[String]): Section = js.native
   
   /**
-    *
     * Gets the name of the section. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val name: String = js.native
   
   /**
-    *
     * Gets the notebook that contains the section. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val notebook: Notebook = js.native
   
   /**
-    *
     * The collection of pages in the section. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val pages: PageCollection = js.native
   
   /**
-    *
     * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val parentSectionGroup: SectionGroup = js.native
   
   /**
-    *
     * Gets the section group that contains the section. Returns null if the section is a direct child of the notebook. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val parentSectionGroupOrNull: SectionGroup = js.native
@@ -188,19 +175,19 @@ trait Section
   def toJSON(): SectionData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Section = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Section = js.native
   
   /**
-    *
     * The web url of the page. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   val webUrl: String = js.native

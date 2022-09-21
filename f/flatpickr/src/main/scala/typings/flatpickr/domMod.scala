@@ -19,17 +19,17 @@ object domMod {
   inline def clearNode(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def createElement[T /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any,
     className: String
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def createElement[T /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any,
     className: String,
     content: String
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def createNumberInput(inputClassName: String): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberInput")(inputClassName.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
-  inline def createNumberInput(inputClassName: String, opts: Record[String, js.Any]): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumberInput")(inputClassName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
+  inline def createNumberInput(inputClassName: String, opts: Record[String, Any]): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumberInput")(inputClassName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
   
   inline def findParent(node: Element, condition: js.Function1[/* n */ Element, Boolean]): js.UndefOr[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParent")(node.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Element]]
   

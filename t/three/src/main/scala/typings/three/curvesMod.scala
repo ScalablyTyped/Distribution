@@ -10,7 +10,7 @@ object curvesMod {
   
   @JSImport("three/src/extras/curves/Curves", "ArcCurve")
   @js.native
-  class ArcCurve protected ()
+  open class ArcCurve protected ()
     extends typings.three.arcCurveMod.ArcCurve {
     def this(
       aX: Double,
@@ -25,12 +25,12 @@ object curvesMod {
   @JSImport("three/src/extras/curves/Curves", "CatmullRomCurve3")
   @js.native
   /**
-  	 * @param [points=[]]
-  	 * @param [closed=false]
-  	 * @param [curveType='centripetal']
-  	 * @param [tension=0.5]
-  	 */
-  class CatmullRomCurve3 ()
+    * @param [points=[]]
+    * @param [closed=false]
+    * @param [curveType='centripetal']
+    * @param [tension=0.5]
+    */
+  open class CatmullRomCurve3 ()
     extends typings.three.catmullRomCurve3Mod.CatmullRomCurve3 {
     def this(points: js.Array[Vector3]) = this()
     def this(points: js.Array[Vector3], closed: Boolean) = this()
@@ -51,14 +51,14 @@ object curvesMod {
   
   @JSImport("three/src/extras/curves/Curves", "CubicBezierCurve")
   @js.native
-  class CubicBezierCurve protected ()
+  open class CubicBezierCurve protected ()
     extends typings.three.cubicBezierCurveMod.CubicBezierCurve {
     def this(v0: Vector2, v1: Vector2, v2: Vector2, v3: Vector2) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "CubicBezierCurve3")
   @js.native
-  class CubicBezierCurve3 protected ()
+  open class CubicBezierCurve3 protected ()
     extends typings.three.cubicBezierCurve3Mod.CubicBezierCurve3 {
     def this(v0: Vector3, v1: Vector3, v2: Vector3, v3: Vector3) = this()
   }
@@ -80,7 +80,7 @@ object curvesMod {
   
   @JSImport("three/src/extras/curves/Curves", "EllipseCurve")
   @js.native
-  class EllipseCurve protected ()
+  open class EllipseCurve protected ()
     extends typings.three.ellipseCurveMod.EllipseCurve {
     def this(
       aX: Double,
@@ -96,35 +96,35 @@ object curvesMod {
   
   @JSImport("three/src/extras/curves/Curves", "LineCurve")
   @js.native
-  class LineCurve protected ()
+  open class LineCurve protected ()
     extends typings.three.lineCurveMod.LineCurve {
     def this(v1: Vector2, v2: Vector2) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "LineCurve3")
   @js.native
-  class LineCurve3 protected ()
+  open class LineCurve3 protected ()
     extends typings.three.lineCurve3Mod.LineCurve3 {
     def this(v1: Vector3, v2: Vector3) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "QuadraticBezierCurve")
   @js.native
-  class QuadraticBezierCurve protected ()
+  open class QuadraticBezierCurve protected ()
     extends typings.three.quadraticBezierCurveMod.QuadraticBezierCurve {
     def this(v0: Vector2, v1: Vector2, v2: Vector2) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "QuadraticBezierCurve3")
   @js.native
-  class QuadraticBezierCurve3 protected ()
+  open class QuadraticBezierCurve3 protected ()
     extends typings.three.quadraticBezierCurve3Mod.QuadraticBezierCurve3 {
     def this(v0: Vector3, v1: Vector3, v2: Vector3) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "SplineCurve")
   @js.native
-  class SplineCurve ()
+  open class SplineCurve ()
     extends typings.three.splineCurveMod.SplineCurve {
     def this(points: js.Array[Vector2]) = this()
   }

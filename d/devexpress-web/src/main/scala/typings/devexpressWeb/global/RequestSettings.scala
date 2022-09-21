@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RequestSettings")
 @js.native
-class RequestSettings ()
+open class RequestSettings ()
   extends StObject
      with typings.devexpressWeb.RequestSettings {
   

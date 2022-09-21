@@ -1,6 +1,5 @@
 package typings.passportStrategy
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("passport-strategy", "Strategy")
   @js.native
-  class Strategy ()
+  open class Strategy ()
     extends StObject
        with typings.passport.mod.Strategy {
     
@@ -23,7 +22,7 @@ object mod {
       * @param {Error} err
       * @api public
       */
-    def error(err: Error): Unit = js.native
+    def error(err: js.Error): Unit = js.native
     
     /**
       * Fail authentication, with optional `challenge` and `status`, defaulting
@@ -35,7 +34,7 @@ object mod {
       * @param {Number} status
       * @api public
       */
-    def fail(challenge: js.Any, status: Double): Unit = js.native
+    def fail(challenge: Any, status: Double): Unit = js.native
     def fail(status: Double): Unit = js.native
     
     /**
@@ -81,7 +80,7 @@ object mod {
       * @param {Object} info
       * @api public
       */
-    def success(user: js.Any): Unit = js.native
-    def success(user: js.Any, info: js.Any): Unit = js.native
+    def success(user: Any): Unit = js.native
+    def success(user: Any, info: Any): Unit = js.native
   }
 }

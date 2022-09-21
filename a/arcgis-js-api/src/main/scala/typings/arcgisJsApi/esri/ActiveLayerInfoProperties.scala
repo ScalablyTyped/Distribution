@@ -14,6 +14,15 @@ trait ActiveLayerInfoProperties extends StObject {
   var children: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
   
   /**
+    * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#hideLayersNotInCurrentView)
+    */
+  var hideLayersNotInCurrentView: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates if the legend's display of the layer's renderer is driven by the scale of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#isScaleDriven)
@@ -39,10 +48,14 @@ trait ActiveLayerInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#legendElements)
     */
-  var legendElements: js.UndefOr[js.Array[LegendElement]] = js.undefined
+  var legendElements: js.UndefOr[
+    js.Array[
+      SymbolTableElement | ColorRampElement | OpacityRampElement | SizeRampElement | HeatmapRampElement | RelationshipRampElement
+    ]
+  ] = js.undefined
   
   /**
-    * The ActiveLayerInfo of the parent [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
+    * The ActiveLayerInfo of the parent module:esri/layers/support/ISublayer or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#parent)
     */
@@ -56,11 +69,27 @@ trait ActiveLayerInfoProperties extends StObject {
   var ready: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#respectLayerVisibility)
+    */
+  var respectLayerVisibility: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The scale of the view instance in which the Legend is rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#scale)
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Only applies if the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer) is a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#sublayerIds)
+    */
+  var sublayerIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The text string that represents the legend's title.
@@ -96,7 +125,11 @@ object ActiveLayerInfoProperties {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setHideLayersNotInCurrentView(value: Boolean): Self = StObject.set(x, "hideLayersNotInCurrentView", value.asInstanceOf[js.Any])
+    
+    inline def setHideLayersNotInCurrentViewUndefined: Self = StObject.set(x, "hideLayersNotInCurrentView", js.undefined)
     
     inline def setIsScaleDriven(value: Boolean): Self = StObject.set(x, "isScaleDriven", value.asInstanceOf[js.Any])
     
@@ -110,11 +143,17 @@ object ActiveLayerInfoProperties {
     
     inline def setLayerViewUndefined: Self = StObject.set(x, "layerView", js.undefined)
     
-    inline def setLegendElements(value: js.Array[LegendElement]): Self = StObject.set(x, "legendElements", value.asInstanceOf[js.Any])
+    inline def setLegendElements(
+      value: js.Array[
+          SymbolTableElement | ColorRampElement | OpacityRampElement | SizeRampElement | HeatmapRampElement | RelationshipRampElement
+        ]
+    ): Self = StObject.set(x, "legendElements", value.asInstanceOf[js.Any])
     
     inline def setLegendElementsUndefined: Self = StObject.set(x, "legendElements", js.undefined)
     
-    inline def setLegendElementsVarargs(value: LegendElement*): Self = StObject.set(x, "legendElements", js.Array(value :_*))
+    inline def setLegendElementsVarargs(
+      value: (SymbolTableElement | ColorRampElement | OpacityRampElement | SizeRampElement | HeatmapRampElement | RelationshipRampElement)*
+    ): Self = StObject.set(x, "legendElements", js.Array(value*))
     
     inline def setParent(value: ActiveLayerInfoProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
@@ -124,9 +163,19 @@ object ActiveLayerInfoProperties {
     
     inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
+    inline def setRespectLayerVisibility(value: Boolean): Self = StObject.set(x, "respectLayerVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setRespectLayerVisibilityUndefined: Self = StObject.set(x, "respectLayerVisibility", js.undefined)
+    
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
+    
+    inline def setSublayerIdsUndefined: Self = StObject.set(x, "sublayerIds", js.undefined)
+    
+    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

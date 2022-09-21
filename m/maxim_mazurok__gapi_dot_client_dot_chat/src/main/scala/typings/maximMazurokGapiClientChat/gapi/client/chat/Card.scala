@@ -31,7 +31,7 @@ object Card {
     
     inline def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
     
-    inline def setCardActionsVarargs(value: CardAction*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
+    inline def setCardActionsVarargs(value: CardAction*): Self = StObject.set(x, "cardActions", js.Array(value*))
     
     inline def setHeader(value: CardHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object Card {
     
     inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    inline def setSectionsVarargs(value: Section*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: Section*): Self = StObject.set(x, "sections", js.Array(value*))
   }
 }

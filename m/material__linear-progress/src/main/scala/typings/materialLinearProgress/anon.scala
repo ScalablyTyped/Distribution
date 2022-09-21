@@ -1,5 +1,7 @@
 package typings.materialLinearProgress
 
+import typings.materialLinearProgress.typesMod.MDCResizeObserver
+import typings.materialLinearProgress.typesMod.MDCResizeObserverCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +47,13 @@ object anon {
     }
   }
   
-  trait ARIAVALUENOW extends StObject {
+  trait ARIAHIDDEN extends StObject {
+    
+    var ARIA_HIDDEN: String
+    
+    var ARIA_VALUEMAX: String
+    
+    var ARIA_VALUEMIN: String
     
     var ARIA_VALUENOW: String
     
@@ -55,19 +63,28 @@ object anon {
     
     var PRIMARY_BAR_SELECTOR: String
   }
-  object ARIAVALUENOW {
+  object ARIAHIDDEN {
     
     inline def apply(
+      ARIA_HIDDEN: String,
+      ARIA_VALUEMAX: String,
+      ARIA_VALUEMIN: String,
       ARIA_VALUENOW: String,
       BUFFER_BAR_SELECTOR: String,
       FLEX_BASIS: String,
       PRIMARY_BAR_SELECTOR: String
-    ): ARIAVALUENOW = {
-      val __obj = js.Dynamic.literal(ARIA_VALUENOW = ARIA_VALUENOW.asInstanceOf[js.Any], BUFFER_BAR_SELECTOR = BUFFER_BAR_SELECTOR.asInstanceOf[js.Any], FLEX_BASIS = FLEX_BASIS.asInstanceOf[js.Any], PRIMARY_BAR_SELECTOR = PRIMARY_BAR_SELECTOR.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ARIAVALUENOW]
+    ): ARIAHIDDEN = {
+      val __obj = js.Dynamic.literal(ARIA_HIDDEN = ARIA_HIDDEN.asInstanceOf[js.Any], ARIA_VALUEMAX = ARIA_VALUEMAX.asInstanceOf[js.Any], ARIA_VALUEMIN = ARIA_VALUEMIN.asInstanceOf[js.Any], ARIA_VALUENOW = ARIA_VALUENOW.asInstanceOf[js.Any], BUFFER_BAR_SELECTOR = BUFFER_BAR_SELECTOR.asInstanceOf[js.Any], FLEX_BASIS = FLEX_BASIS.asInstanceOf[js.Any], PRIMARY_BAR_SELECTOR = PRIMARY_BAR_SELECTOR.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAVALUENOW](x: Self) {
+    extension [Self <: ARIAHIDDEN](x: Self) {
+      
+      inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
+      
+      inline def setARIA_VALUEMAX(value: String): Self = StObject.set(x, "ARIA_VALUEMAX", value.asInstanceOf[js.Any])
+      
+      inline def setARIA_VALUEMIN(value: String): Self = StObject.set(x, "ARIA_VALUEMIN", value.asInstanceOf[js.Any])
       
       inline def setARIA_VALUENOW(value: String): Self = StObject.set(x, "ARIA_VALUENOW", value.asInstanceOf[js.Any])
       
@@ -84,12 +101,7 @@ object anon {
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var attachResizeObserver: js.UndefOr[
-        js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserverCallback */ /* callback */ js.Any, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserver */ js.Any) | Null
-        ]
-      ] = js.undefined
+    var attachResizeObserver: js.UndefOr[js.Function1[/* callback */ MDCResizeObserverCallback, MDCResizeObserver | Null]] = js.undefined
     
     var forceLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -122,9 +134,7 @@ object anon {
       
       inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      inline def setAttachResizeObserver(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserverCallback */ /* callback */ js.Any => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserver */ js.Any) | Null
-      ): Self = StObject.set(x, "attachResizeObserver", js.Any.fromFunction1(value))
+      inline def setAttachResizeObserver(value: /* callback */ MDCResizeObserverCallback => MDCResizeObserver | Null): Self = StObject.set(x, "attachResizeObserver", js.Any.fromFunction1(value))
       
       inline def setAttachResizeObserverUndefined: Self = StObject.set(x, "attachResizeObserver", js.undefined)
       

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aurelia-templating", "ViewCompileInstruction")
 @js.native
 /**
-  * Creates an instance of ViewCompileInstruction.
-  * @param targetShadowDOM Should the compilation target the Shadow DOM.
-  * @param compileSurrogate Should the compilation also include surrogate bindings and behaviors.
-  */
-class ViewCompileInstruction () extends StObject {
+	* Creates an instance of ViewCompileInstruction.
+	* @param targetShadowDOM Should the compilation target the Shadow DOM.
+	* @param compileSurrogate Should the compilation also include surrogate bindings and behaviors.
+	*/
+open class ViewCompileInstruction () extends StObject {
   def this(targetShadowDOM: Boolean) = this()
   def this(targetShadowDOM: Boolean, compileSurrogate: Boolean) = this()
   def this(targetShadowDOM: Unit, compileSurrogate: Boolean) = this()
   
-  var associatedModuleId: js.Any = js.native
+  var associatedModuleId: Any = js.native
   
   var compileSurrogate: Boolean = js.native
   
@@ -30,8 +30,8 @@ object ViewCompileInstruction {
   val ^ : js.Any = js.native
   
   /**
-    * The normal configuration for view compilation.
-    */
+  	* The normal configuration for view compilation.
+  	*/
   @JSImport("aurelia-templating", "ViewCompileInstruction.normal")
   @js.native
   def normal: ViewCompileInstruction = js.native

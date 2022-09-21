@@ -25,7 +25,7 @@ object ListCollectionIdsResponse {
     
     inline def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
-    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.httpAuth
 
-import typings.httpAuth.anon.IncomingMessageuserstring
+import typings.httpAuth.anon.User
 import typings.httpAuth.httpAuthBooleans.`false`
 import typings.httpAuth.httpAuthBooleans.`true`
 import typings.httpAuth.httpAuthStrings.auth
@@ -10,7 +10,6 @@ import typings.httpAuth.httpAuthStrings.success
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,8 +41,8 @@ object mod {
   @js.native
   trait Base extends EventEmitter {
     
-    /* private */ def ask(res: ServerResponse, result: BasicResult[Boolean]): Unit = js.native
-    /* private */ def ask(res: ServerResponse, result: DigestResult[Boolean]): Unit = js.native
+    /* private */ def ask(res: ServerResponse[IncomingMessage], result: BasicResult[Boolean]): Unit = js.native
+    /* private */ def ask(res: ServerResponse[IncomingMessage], result: DigestResult[Boolean]): Unit = js.native
     
     def check(): CheckedRequestListener = js.native
     def check(callback: CheckedRequestListener): CheckedRequestListener = js.native
@@ -67,7 +66,7 @@ object mod {
       callback: js.Function1[/* result */ BasicResult[`true`] | DigestResult[`true`], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, callback: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     def parseAuthorization(header: String): js.UndefOr[String | ClientOptions] = js.native
     
@@ -195,7 +194,7 @@ object mod {
     /* private */ def validate(hash: String, password: String): Boolean = js.native
   }
   
-  type CheckedRequestListener = js.Function2[/* req */ IncomingMessageuserstring, /* res */ ServerResponse, Unit]
+  type CheckedRequestListener = js.Function2[/* req */ IncomingMessage & User, /* res */ ServerResponse[IncomingMessage], Unit]
   
   trait ClientOptions extends StObject {
     
@@ -352,5 +351,5 @@ object mod {
     inline def none: typings.httpAuth.httpAuthStrings.none = "none".asInstanceOf[typings.httpAuth.httpAuthStrings.none]
   }
   
-  type ResultEmitter = js.Function1[/* result */ BasicResult[Boolean] | DigestResult[Boolean] | Error, Unit]
+  type ResultEmitter = js.Function1[/* result */ BasicResult[Boolean] | DigestResult[Boolean] | js.Error, Unit]
 }

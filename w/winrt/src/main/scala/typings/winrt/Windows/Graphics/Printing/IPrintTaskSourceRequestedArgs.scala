@@ -1,13 +1,12 @@
 package typings.winrt.Windows.Graphics.Printing
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IPrintTaskSourceRequestedArgs extends StObject {
   
-  var deadline: Date
+  var deadline: js.Date
   
   def getDeferral(): PrintTaskSourceRequestedDeferral
   
@@ -16,7 +15,7 @@ trait IPrintTaskSourceRequestedArgs extends StObject {
 object IPrintTaskSourceRequestedArgs {
   
   inline def apply(
-    deadline: Date,
+    deadline: js.Date,
     getDeferral: () => PrintTaskSourceRequestedDeferral,
     setSource: IPrintDocumentSource => Unit
   ): IPrintTaskSourceRequestedArgs = {
@@ -26,7 +25,7 @@ object IPrintTaskSourceRequestedArgs {
   
   extension [Self <: IPrintTaskSourceRequestedArgs](x: Self) {
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => PrintTaskSourceRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

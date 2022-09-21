@@ -26,17 +26,17 @@ object mod {
     
     trait Options extends StObject {
       
-      var broaderLeft: js.Any
+      var broaderLeft: scala.Any
       
-      var broaderRight: js.Any
+      var broaderRight: scala.Any
       
-      var equal: js.Any
+      var equal: scala.Any
       
-      var mismatch: js.Any
+      var mismatch: scala.Any
     }
     object Options {
       
-      inline def apply(broaderLeft: js.Any, broaderRight: js.Any, equal: js.Any, mismatch: js.Any): Options = {
+      inline def apply(broaderLeft: scala.Any, broaderRight: scala.Any, equal: scala.Any, mismatch: scala.Any): Options = {
         val __obj = js.Dynamic.literal(broaderLeft = broaderLeft.asInstanceOf[js.Any], broaderRight = broaderRight.asInstanceOf[js.Any], equal = equal.asInstanceOf[js.Any], mismatch = mismatch.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
@@ -78,13 +78,13 @@ object mod {
       
       extension [Self <: Options](x: Self) {
         
-        inline def setBroaderLeft(value: js.Any): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
+        inline def setBroaderLeft(value: scala.Any): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
         
-        inline def setBroaderRight(value: js.Any): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
+        inline def setBroaderRight(value: scala.Any): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
         
-        inline def setEqual(value: js.Any): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+        inline def setEqual(value: scala.Any): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
         
-        inline def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+        inline def setMismatch(value: scala.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
       }
     }
     

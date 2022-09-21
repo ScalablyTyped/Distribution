@@ -4,21 +4,36 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.csstype.mod.Properties
-import typings.std.Array
 import typings.std.Record
+import typings.treat.themeMod.ThemeOrAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type BasicCSSProperties = Properties[String | Double]
+  @js.native
+  trait Adapter extends StObject {
+    
+    def addLocalCss(css: js.Object): Unit = js.native
+    
+    def addTheme(theme: TreatTheme[ThemeOrAny]): Unit = js.native
+    
+    def addThemedCss(themeRef: ThemeRef, css: js.Object): Unit = js.native
+    
+    def getIdentName(local: String, scopeId: Double): String = js.native
+    def getIdentName(local: String, scopeId: Double, theme: ThemeOrAny): String = js.native
+    
+    def getThemes(): js.Array[TreatTheme[ThemeOrAny]] = js.native
+  }
+  
+  type BasicCSSProperties = Properties[String | Double, String]
   
   type CSSKeyframes = StringDictionary[BasicCSSProperties]
   
   trait CSSProperties
     extends StObject
-       with Properties[String | Double] {
+       with Properties[String | Double, String] {
     
     var `@keyframes`: js.UndefOr[CSSKeyframes | String] = js.undefined
   }
@@ -84,8 +99,8 @@ object typesMod {
   type PostCSS = js.Object
   
   type PseudoProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in treat.treat/lib/types/transformCSS.SimplePseudos[number] ]:? treat.treat/lib/types/types.CSSProperties}
-    */ typings.treat.treatStrings.PseudoProperties & TopLevel[js.Any]
+  {[ key in treat.treat/dist/declarations/src/transformCSS.SimplePseudos[number] ]:? treat.treat/dist/declarations/src/types.CSSProperties}
+    */ typings.treat.treatStrings.PseudoProperties & TopLevel[Any]
   
   type SelectorMap = StringDictionary[CSSProperties]
   
@@ -105,7 +120,7 @@ object typesMod {
   type StyleMap[StyleName /* <: String | Double */, StyleType] = Record[StyleName, StyleType]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ key in treat.treat/lib/types/transformCSS.SimplePseudos[number] ]:? treat.treat/lib/types/types.CSSProperties} */ trait StyleWithSelectors
+  - Dropped {[ key in treat.treat/dist/declarations/src/transformCSS.SimplePseudos[number] ]:? treat.treat/dist/declarations/src/types.CSSProperties} */ trait StyleWithSelectors
     extends StObject
        with CSSProperties {
     
@@ -132,25 +147,14 @@ object typesMod {
   
   type ThemedStyle[StyleType, Theme] = (js.Function1[/* theme */ Theme, StyleType]) | StyleType
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.treat.typesMod.TreatModuleObject
-    - typings.treat.typesMod.TreatModuleArray
-  */
-  trait TreatModule extends StObject
+  type TreatModule = TreatModuleObject | TreatModuleArray
   
-  @js.native
-  trait TreatModuleArray
-    extends StObject
-       with Array[TreatModuleValue]
-       with TreatModule
-       with _TreatModuleValue
+  type TreatModuleArray = js.Array[TreatModuleValue]
   
   trait TreatModuleObject
     extends StObject
        with /* index */ NumberDictionary[TreatModuleValue]
        with /* index */ StringDictionary[TreatModuleValue]
-       with TreatModule
-       with _TreatModuleValue
   object TreatModuleObject {
     
     inline def apply(): TreatModuleObject = {
@@ -159,16 +163,7 @@ object typesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - scala.Null
-    - scala.Unit
-    - typings.treat.typesMod.TreatModuleObject
-    - typings.treat.typesMod.TreatModuleArray
-  */
-  type TreatModuleValue = js.UndefOr[_TreatModuleValue | String | Double | Boolean | Null]
+  type TreatModuleValue = js.UndefOr[String | Double | Boolean | Null | TreatModuleObject | Any]
   
   trait TreatTheme[Tokens] extends StObject {
     
@@ -190,33 +185,4 @@ object typesMod {
       inline def setTokens(value: Tokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
-  
-  @js.native
-  trait WebpackTreat extends StObject {
-    
-    def addLocalCss(css: js.Object): Unit = js.native
-    
-    def addTheme(
-      theme: TreatTheme[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-        ]
-    ): Unit = js.native
-    
-    def addThemedCss(themeRef: ThemeRef, css: js.Object): Unit = js.native
-    
-    def getIdentName(local: String, scopeId: Double): String = js.native
-    def getIdentName(
-      local: String,
-      scopeId: Double,
-      theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-    ): String = js.native
-    
-    def getThemes(): js.Array[
-        TreatTheme[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-        ]
-      ] = js.native
-  }
-  
-  trait _TreatModuleValue extends StObject
 }

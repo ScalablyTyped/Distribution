@@ -29,6 +29,6 @@ object SecurityPosture {
     
     inline def setPostureDetailsUndefined: Self = StObject.set(x, "postureDetails", js.undefined)
     
-    inline def setPostureDetailsVarargs(value: PostureDetail*): Self = StObject.set(x, "postureDetails", js.Array(value :_*))
+    inline def setPostureDetailsVarargs(value: PostureDetail*): Self = StObject.set(x, "postureDetails", js.Array(value*))
   }
 }

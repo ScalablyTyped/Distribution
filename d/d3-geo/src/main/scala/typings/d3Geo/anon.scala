@@ -27,13 +27,13 @@ object anon {
   
   trait Properties extends StObject {
     
-    var properties: js.Any
+    var properties: Any
     
     var `type`: String
   }
   object Properties {
     
-    inline def apply(properties: js.Any, `type`: String): Properties = {
+    inline def apply(properties: Any, `type`: String): Properties = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Properties]
@@ -41,7 +41,7 @@ object anon {
     
     extension [Self <: Properties](x: Self) {
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

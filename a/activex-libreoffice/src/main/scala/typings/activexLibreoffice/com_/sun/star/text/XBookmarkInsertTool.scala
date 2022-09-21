@@ -22,7 +22,7 @@ object XBookmarkInsertTool {
   inline def apply(
     acquire: () => Unit,
     insertNewBookmark: (XTextRange, String) => XTextContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XBookmarkInsertTool = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), insertNewBookmark = js.Any.fromFunction2(insertNewBookmark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

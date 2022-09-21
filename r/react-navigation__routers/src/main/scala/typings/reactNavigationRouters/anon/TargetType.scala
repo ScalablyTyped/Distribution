@@ -10,7 +10,7 @@ trait TargetType
   extends StObject
      with StackActionType {
   
-  var payload: Name
+  var payload: NameParams
   
   var source: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait TargetType
 }
 object TargetType {
   
-  inline def apply(payload: Name): TargetType = {
+  inline def apply(payload: NameParams): TargetType = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PUSH")
     __obj.asInstanceOf[TargetType]
@@ -28,7 +28,7 @@ object TargetType {
   
   extension [Self <: TargetType](x: Self) {
     
-    inline def setPayload(value: Name): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: NameParams): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

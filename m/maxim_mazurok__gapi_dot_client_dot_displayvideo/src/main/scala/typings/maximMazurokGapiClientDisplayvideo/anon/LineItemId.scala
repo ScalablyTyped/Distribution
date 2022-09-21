@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.AssignedTargetingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,9 +40,6 @@ trait LineItemId extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: AssignedTargetingOption
-  
   /** Required. Identifies the type of this assigned targeting option. */
   var targetingType: String
   
@@ -55,8 +51,8 @@ trait LineItemId extends StObject {
 }
 object LineItemId {
   
-  inline def apply(advertiserId: String, lineItemId: String, resource: AssignedTargetingOption, targetingType: String): LineItemId = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], lineItemId = lineItemId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, lineItemId: String, targetingType: String): LineItemId = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], lineItemId = lineItemId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineItemId]
   }
   
@@ -101,8 +97,6 @@ object LineItemId {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: AssignedTargetingOption): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     

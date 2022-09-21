@@ -27,7 +27,7 @@ object ItemDefinition {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: EventDefinition*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventDefinition*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setRequest(value: RequestDefinition): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
@@ -37,6 +37,6 @@ object ItemDefinition {
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    inline def setResponseVarargs(value: ResponseDefinition*): Self = StObject.set(x, "response", js.Array(value :_*))
+    inline def setResponseVarargs(value: ResponseDefinition*): Self = StObject.set(x, "response", js.Array(value*))
   }
 }

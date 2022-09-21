@@ -8,11 +8,11 @@ trait MUIDataTableStateRows extends StObject {
   
   var data: js.Array[String]
   
-  var lookup: js.Any
+  var lookup: Any
 }
 object MUIDataTableStateRows {
   
-  inline def apply(data: js.Array[String], lookup: js.Any): MUIDataTableStateRows = {
+  inline def apply(data: js.Array[String], lookup: Any): MUIDataTableStateRows = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableStateRows]
   }
@@ -21,8 +21,8 @@ object MUIDataTableStateRows {
     
     inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setLookup(value: js.Any): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    inline def setLookup(value: Any): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
   }
 }

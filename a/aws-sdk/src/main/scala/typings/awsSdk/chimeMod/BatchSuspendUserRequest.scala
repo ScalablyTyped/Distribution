@@ -29,6 +29,6 @@ object BatchSuspendUserRequest {
     
     inline def setUserIdList(value: UserIdList): Self = StObject.set(x, "UserIdList", value.asInstanceOf[js.Any])
     
-    inline def setUserIdListVarargs(value: NonEmptyString*): Self = StObject.set(x, "UserIdList", js.Array(value :_*))
+    inline def setUserIdListVarargs(value: NonEmptyString*): Self = StObject.set(x, "UserIdList", js.Array(value*))
   }
 }

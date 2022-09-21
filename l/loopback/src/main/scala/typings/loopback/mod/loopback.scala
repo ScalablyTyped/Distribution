@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "loopback")
 @js.native
-class loopback () extends StObject {
+open class loopback () extends StObject {
   
   /** Path to a default favicon shipped with LoopBack.
     * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
@@ -149,7 +149,7 @@ object loopback {
     * @header loopback.createMode
     */
   /* static member */
-  inline def createModel(name: String, properties: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createModel(name: String, properties: Any, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Look up a model class by name from all models created by
@@ -197,7 +197,7 @@ object loopback {
     * @param {any} options (optional
     */
   /* static member */
-  inline def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remoteMethod(fn: js.Function0[Unit], options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a template helper

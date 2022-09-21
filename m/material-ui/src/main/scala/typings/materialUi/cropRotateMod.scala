@@ -10,10 +10,10 @@ object cropRotateMod {
   
   @JSImport("material-ui/svg-icons/image/crop-rotate", JSImport.Default)
   @js.native
-  class default () extends ImageCropRotate
+  open class default () extends ImageCropRotate
   
   @JSImport("material-ui/svg-icons/image/crop-rotate", "ImageCropRotate")
   @js.native
-  class ImageCropRotate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCropRotate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

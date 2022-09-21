@@ -14,7 +14,7 @@ object webGLAttributesMod {
   
   @JSImport("three/src/renderers/webgl/WebGLAttributes", "WebGLAttributes")
   @js.native
-  class WebGLAttributes protected () extends StObject {
+  open class WebGLAttributes protected () extends StObject {
     def this(gl: WebGL2RenderingContext, capabilities: WebGLCapabilities) = this()
     def this(gl: WebGLRenderingContext, capabilities: WebGLCapabilities) = this()
     

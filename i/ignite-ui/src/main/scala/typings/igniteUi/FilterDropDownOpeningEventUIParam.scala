@@ -9,7 +9,7 @@ trait FilterDropDownOpeningEventUIParam extends StObject {
   /**
     * A reference to the hierarchy.
     */
-  var hierarchy: js.UndefOr[js.Any] = js.undefined
+  var hierarchy: js.UndefOr[Any] = js.undefined
 }
 object FilterDropDownOpeningEventUIParam {
   
@@ -20,7 +20,7 @@ object FilterDropDownOpeningEventUIParam {
   
   extension [Self <: FilterDropDownOpeningEventUIParam](x: Self) {
     
-    inline def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    inline def setHierarchy(value: Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
   }

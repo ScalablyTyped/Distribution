@@ -102,7 +102,7 @@ object Page {
     
     inline def setSections(value: js.Array[Section]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: Section*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: Section*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

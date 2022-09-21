@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.BigTextElement")
 @js.native
-class BigTextElement protected () extends BoxElement {
+open class BigTextElement protected () extends BoxElement {
   def this(opts: BigTextOptions) = this()
   
   /**

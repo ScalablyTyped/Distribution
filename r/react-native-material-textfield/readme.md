@@ -10,10 +10,10 @@ Material textfield
 | ------------------ | :-------------: |
 | Full name          | react-native-material-textfield |
 | Keywords           | react, react-component, react-native, ios, android, material, input, textinput, field, textfield, floating, label |
-| # releases         | 7 |
-| # dependents       | 29 |
-| # downloads        | 1232155 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 87850.66666666667 |
+| # stars            | 882.0 |
 
 ## Links
 - [Homepage](https://github.com/n4kz/react-native-material-textfield#readme)

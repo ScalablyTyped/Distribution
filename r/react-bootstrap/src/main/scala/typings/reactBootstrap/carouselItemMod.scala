@@ -10,12 +10,10 @@ object carouselItemMod {
   
   @JSImport("react-bootstrap/lib/CarouselItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[CarouselItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[CarouselItemProps, js.Object, Any]
   
-  @js.native
-  trait CarouselItem
-    extends Component[CarouselItemProps, js.Object, js.Any]
+  type CarouselItem = Component[CarouselItemProps, js.Object, Any]
   
   trait CarouselItemProps
     extends StObject

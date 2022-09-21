@@ -4,81 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Images")
 @js.native
-class ResourceImages protected () extends StObject {
+open class ResourceImages protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * vision.images.annotate
-    * @desc Run image detection and annotation for a batch of images.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Cloud Vision API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/vision
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var vision = google.vision('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   vision.images.annotate(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias vision.images.annotate
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().BatchAnnotateImagesRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def annotate(): GaxiosPromise[SchemaBatchAnnotateImagesResponse] = js.native
   def annotate(callback: BodyResponseCallback[SchemaBatchAnnotateImagesResponse]): Unit = js.native
   def annotate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchAnnotateImagesResponse] = js.native
@@ -89,14 +25,166 @@ class ResourceImages protected () extends StObject {
   ): Unit = js.native
   def annotate(
     params: ParamsResourceImagesAnnotate,
-    options: BodyResponseCallback[SchemaBatchAnnotateImagesResponse],
-    callback: BodyResponseCallback[SchemaBatchAnnotateImagesResponse]
+    options: BodyResponseCallback[Readable | SchemaBatchAnnotateImagesResponse],
+    callback: BodyResponseCallback[Readable | SchemaBatchAnnotateImagesResponse]
   ): Unit = js.native
   def annotate(params: ParamsResourceImagesAnnotate, options: MethodOptions): GaxiosPromise[SchemaBatchAnnotateImagesResponse] = js.native
   def annotate(
     params: ParamsResourceImagesAnnotate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchAnnotateImagesResponse]
+  ): Unit = js.native
+  /**
+    * Run image detection and annotation for a batch of images.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/vision.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const vision = google.vision('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-vision',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await vision.images.annotate({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "parent": "my_parent",
+    *       //   "requests": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "responses": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def annotate(params: ParamsResourceImagesAnnotate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def annotate(
+    params: ParamsResourceImagesAnnotate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def asyncBatchAnnotate(): GaxiosPromise[SchemaOperation] = js.native
+  def asyncBatchAnnotate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def asyncBatchAnnotate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def asyncBatchAnnotate(params: ParamsResourceImagesAsyncbatchannotate): GaxiosPromise[SchemaOperation] = js.native
+  def asyncBatchAnnotate(params: ParamsResourceImagesAsyncbatchannotate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def asyncBatchAnnotate(
+    params: ParamsResourceImagesAsyncbatchannotate,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def asyncBatchAnnotate(params: ParamsResourceImagesAsyncbatchannotate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def asyncBatchAnnotate(
+    params: ParamsResourceImagesAsyncbatchannotate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Run asynchronous image detection and annotation for a list of images. Progress and results can be retrieved through the `google.longrunning.Operations` interface. `Operation.metadata` contains `OperationMetadata` (metadata). `Operation.response` contains `AsyncBatchAnnotateImagesResponse` (results). This service will write image annotation outputs to json files in customer GCS bucket, each json file containing BatchAnnotateImagesResponse proto.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/vision.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const vision = google.vision('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-vision',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await vision.images.asyncBatchAnnotate({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "outputConfig": {},
+    *       //   "parent": "my_parent",
+    *       //   "requests": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def asyncBatchAnnotate(params: ParamsResourceImagesAsyncbatchannotate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def asyncBatchAnnotate(
+    params: ParamsResourceImagesAsyncbatchannotate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var context: APIRequestContext = js.native

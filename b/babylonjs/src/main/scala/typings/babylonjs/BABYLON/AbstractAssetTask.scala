@@ -8,20 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AbstractAssetTask extends StObject {
   
-  /* private */ var _errorObject: js.Any = js.native
+  /* private */ var _errorObject: Any = js.native
   
-  /* private */ var _isCompleted: js.Any = js.native
+  /* private */ var _isCompleted: Any = js.native
+  
+  /* private */ var _onDoneCallback: Any = js.native
+  
+  /* private */ var _onErrorCallback: Any = js.native
   
   /**
     * Internal only
+    * @param message
+    * @param exception
     * @hidden
     */
   def _setErrorObject(): Unit = js.native
   def _setErrorObject(message: String): Unit = js.native
-  def _setErrorObject(message: String, exception: js.Any): Unit = js.native
-  def _setErrorObject(message: Unit, exception: js.Any): Unit = js.native
+  def _setErrorObject(message: String, exception: Any): Unit = js.native
+  def _setErrorObject(message: Unit, exception: Any): Unit = js.native
   
-  /* private */ var _taskState: js.Any = js.native
+  /* private */ var _taskState: Any = js.native
   
   /**
     * Gets the current error object (if task is in error)
@@ -37,22 +43,18 @@ trait AbstractAssetTask extends StObject {
     * Task name
     */ var name: String = js.native
   
-  /* private */ var onDoneCallback: js.Any = js.native
-  
   /**
     * Callback called when the task is not successful
     */
-  def onError(task: js.Any): Unit = js.native
-  def onError(task: js.Any, message: String): Unit = js.native
-  def onError(task: js.Any, message: String, exception: js.Any): Unit = js.native
-  def onError(task: js.Any, message: Unit, exception: js.Any): Unit = js.native
-  
-  /* private */ var onErrorCallback: js.Any = js.native
+  def onError(task: Any): Unit = js.native
+  def onError(task: Any, message: String): Unit = js.native
+  def onError(task: Any, message: String, exception: Any): Unit = js.native
+  def onError(task: Any, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful
     */
-  def onSuccess(task: js.Any): Unit = js.native
+  def onSuccess(task: Any): Unit = js.native
   
   /**
     * Reset will set the task state back to INIT, so the next load call of the assets manager will execute this task again.
@@ -69,7 +71,7 @@ trait AbstractAssetTask extends StObject {
   def run(
     scene: Scene,
     onSuccess: js.Function0[Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -81,7 +83,7 @@ trait AbstractAssetTask extends StObject {
   def runTask(
     scene: Scene,
     onSuccess: js.Function0[Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
   ): Unit = js.native
   
   /**

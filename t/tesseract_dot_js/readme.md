@@ -1,6 +1,7 @@
 
 # Scala.js typings for tesseract_dot_js
 
+Typings are for version 3.0.3
 
 ## Library description:
 Pure Javascript Multilingual OCR
@@ -9,10 +10,10 @@ Pure Javascript Multilingual OCR
 | ------------------ | :-------------: |
 | Full name          | tesseract.js |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 63 |
-| # downloads        | 909979 |
-| # stars            | 9 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 138289.33333333334 |
+| # stars            | 27490.0 |
 
 ## Links
 - [Homepage](https://github.com/naptha/tesseract.js)
@@ -23,7 +24,7 @@ Pure Javascript Multilingual OCR
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,16 +1,15 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerRecurrenceInfo")
 @js.native
-class BootstrapSchedulerRecurrenceInfo protected ()
+open class BootstrapSchedulerRecurrenceInfo protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceInfo {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def getDayNumber(): Double = js.native
@@ -19,7 +18,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   override def getDuration(): Double = js.native
   
   /* CompleteClass */
-  override def getEnd(): Date = js.native
+  override def getEnd(): js.Date = js.native
   
   /* CompleteClass */
   override def getMonth(): Double = js.native
@@ -37,7 +36,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   override def getRecurrenceType(): typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType = js.native
   
   /* CompleteClass */
-  override def getStart(): Date = js.native
+  override def getStart(): js.Date = js.native
   
   /* CompleteClass */
   override def getWeekDays(): typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.WeekDays = js.native
@@ -46,7 +45,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   override def getWeekOfMonth(): typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.WeekOfMonth = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override def setDayNumber(dayNumber: Double): Unit = js.native
@@ -55,7 +54,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   override def setDuration(duration: Double): Unit = js.native
   
   /* CompleteClass */
-  override def setEnd(end: Date): Unit = js.native
+  override def setEnd(end: js.Date): Unit = js.native
   
   /* CompleteClass */
   override def setMonth(month: Double): Unit = js.native
@@ -77,7 +76,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   ): Unit = js.native
   
   /* CompleteClass */
-  override def setStart(start: Date): Unit = js.native
+  override def setStart(start: js.Date): Unit = js.native
   
   /* CompleteClass */
   override def setWeekDays(weekDays: typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.WeekDays): Unit = js.native

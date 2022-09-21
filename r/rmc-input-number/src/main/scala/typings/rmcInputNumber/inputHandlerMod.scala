@@ -9,11 +9,11 @@ object inputHandlerMod {
   
   @JSImport("rmc-input-number/lib/InputHandler", JSImport.Default)
   @js.native
-  class default () extends InputHandler
+  open class default () extends InputHandler
   
   @js.native
   trait InputHandler
-    extends Component[PropsType, js.Object, js.Any]
+    extends Component[PropsType, js.Object, Any]
   
   trait PropsType extends StObject {
     
@@ -21,9 +21,9 @@ object inputHandlerMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    def onTouchEnd(e: js.Any): Unit
+    def onTouchEnd(e: Any): Unit
     
-    def onTouchStart(e: js.Any): Unit
+    def onTouchStart(e: Any): Unit
     
     var prefixCls: String
     
@@ -33,7 +33,7 @@ object inputHandlerMod {
   }
   object PropsType {
     
-    inline def apply(onTouchEnd: js.Any => Unit, onTouchStart: js.Any => Unit, prefixCls: String): PropsType = {
+    inline def apply(onTouchEnd: Any => Unit, onTouchStart: Any => Unit, prefixCls: String): PropsType = {
       val __obj = js.Dynamic.literal(onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsType]
     }
@@ -48,9 +48,9 @@ object inputHandlerMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOnTouchEnd(value: js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      inline def setOnTouchStart(value: js.Any => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: Any => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

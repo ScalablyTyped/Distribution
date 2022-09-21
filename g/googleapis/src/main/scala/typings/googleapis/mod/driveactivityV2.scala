@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object driveactivityV2 {
   
-  /**
-    * Drive Activity API
-    *
-    * Provides a historical view of activity in Google Drive.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const driveactivity = google.driveactivity('v2');
-    *
-    * @namespace driveactivity
-    * @type {Function}
-    * @version v2
-    * @variation v2
-    * @param {object=} options Options for Driveactivity
-    */
   @JSImport("googleapis", "driveactivity_v2.Driveactivity")
   @js.native
-  class Driveactivity protected ()
+  open class Driveactivity protected ()
     extends typings.googleapis.driveactivityV2Mod.driveactivityV2.Driveactivity {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,7 +19,7 @@ object driveactivityV2 {
   
   @JSImport("googleapis", "driveactivity_v2.Resource$Activity")
   @js.native
-  class ResourceActivity protected ()
+  open class ResourceActivity protected ()
     extends typings.googleapis.driveactivityV2Mod.driveactivityV2.ResourceActivity {
     def this(context: APIRequestContext) = this()
   }

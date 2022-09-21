@@ -57,22 +57,22 @@ object io {
   
   trait OL3Parser extends StObject {
     
-    def read(geometry: js.Any): Geometry
+    def read(geometry: Any): Geometry
     
-    def write(geometry: Geometry): js.Any
+    def write(geometry: Geometry): Any
   }
   object OL3Parser {
     
-    inline def apply(read: js.Any => Geometry, write: Geometry => js.Any): OL3Parser = {
+    inline def apply(read: Any => Geometry, write: Geometry => Any): OL3Parser = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[OL3Parser]
     }
     
     extension [Self <: OL3Parser](x: Self) {
       
-      inline def setRead(value: js.Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      inline def setWrite(value: Geometry => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Geometry => Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -106,5 +106,27 @@ object io {
     }
   }
   
-  trait WKTWriter extends StObject
+  trait WKTWriter extends StObject {
+    
+    /**
+      * Converts a <code>Geometry</code> to its Well-known Text representation.
+      *
+      * @param {Geometry} geometry a <code>Geometry</code> to process.
+      * @return {string} a <Geometry Tagged Text> string (see the OpenGIS Simple
+      *         Features Specification).
+      */
+    def write(geometry: Geometry): String
+  }
+  object WKTWriter {
+    
+    inline def apply(write: Geometry => String): WKTWriter = {
+      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+      __obj.asInstanceOf[WKTWriter]
+    }
+    
+    extension [Self <: WKTWriter](x: Self) {
+      
+      inline def setWrite(value: Geometry => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    }
+  }
 }

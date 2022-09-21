@@ -102,33 +102,33 @@ object EncodeEntry {
     
     inline def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
     
-    inline def setAriaRoleDescriptionVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ariaRoleDescription", js.Array(value :_*))
+    inline def setAriaRoleDescriptionVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ariaRoleDescription", js.Array(value*))
     
     inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
     
-    inline def setAriaRoleVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ariaRole", js.Array(value :_*))
+    inline def setAriaRoleVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ariaRole", js.Array(value*))
     
     inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
-    inline def setAriaVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "aria", js.Array(value :_*))
+    inline def setAriaVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "aria", js.Array(value*))
     
     inline def setBlend(value: ProductionRule[ScaledValueRef[Blend]]): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     inline def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
     
-    inline def setBlendVarargs(value: (Test & ScaledValueRef[Blend])*): Self = StObject.set(x, "blend", js.Array(value :_*))
+    inline def setBlendVarargs(value: (Test & ScaledValueRef[Blend])*): Self = StObject.set(x, "blend", js.Array(value*))
     
     inline def setCursor(value: ProductionRule[ScaledValueRef[Cursor]]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCursorVarargs(value: (Test & ScaledValueRef[Cursor])*): Self = StObject.set(x, "cursor", js.Array(value :_*))
+    inline def setCursorVarargs(value: (Test & ScaledValueRef[Cursor])*): Self = StObject.set(x, "cursor", js.Array(value*))
     
     inline def setDescription(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDescriptionVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "description", js.Array(value*))
     
     inline def setFill(value: ProductionRule[ColorValueRef]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
@@ -136,23 +136,23 @@ object EncodeEntry {
     
     inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    inline def setFillOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "fillOpacity", js.Array(value :_*))
+    inline def setFillOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "fillOpacity", js.Array(value*))
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFillVarargs(value: (Test & ColorValueRef)*): Self = StObject.set(x, "fill", js.Array(value :_*))
+    inline def setFillVarargs(value: (Test & ColorValueRef)*): Self = StObject.set(x, "fill", js.Array(value*))
     
     inline def setHeight(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHeightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "height", js.Array(value :_*))
+    inline def setHeightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "height", js.Array(value*))
     
     inline def setOpacity(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+    inline def setOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "opacity", js.Array(value*))
     
     inline def setStroke(value: ProductionRule[ColorValueRef]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
@@ -160,7 +160,7 @@ object EncodeEntry {
     
     inline def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
     
-    inline def setStrokeCapVarargs(value: (Test & ScaledValueRef[StrokeCap])*): Self = StObject.set(x, "strokeCap", js.Array(value :_*))
+    inline def setStrokeCapVarargs(value: (Test & ScaledValueRef[StrokeCap])*): Self = StObject.set(x, "strokeCap", js.Array(value*))
     
     inline def setStrokeDash(value: ProductionRule[ScaledValueRef[js.Array[Double]]]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
@@ -168,51 +168,51 @@ object EncodeEntry {
     
     inline def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
     
-    inline def setStrokeDashOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeDashOffset", js.Array(value :_*))
+    inline def setStrokeDashOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeDashOffset", js.Array(value*))
     
     inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
-    inline def setStrokeDashVarargs(value: (Test & ScaledValueRef[js.Array[Double]])*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+    inline def setStrokeDashVarargs(value: (Test & ScaledValueRef[js.Array[Double]])*): Self = StObject.set(x, "strokeDash", js.Array(value*))
     
     inline def setStrokeJoin(value: ProductionRule[ScaledValueRef[StrokeJoin]]): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
     inline def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
     
-    inline def setStrokeJoinVarargs(value: (Test & ScaledValueRef[StrokeJoin])*): Self = StObject.set(x, "strokeJoin", js.Array(value :_*))
+    inline def setStrokeJoinVarargs(value: (Test & ScaledValueRef[StrokeJoin])*): Self = StObject.set(x, "strokeJoin", js.Array(value*))
     
     inline def setStrokeMiterLimit(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
     inline def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
     
-    inline def setStrokeMiterLimitVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeMiterLimit", js.Array(value :_*))
+    inline def setStrokeMiterLimitVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeMiterLimit", js.Array(value*))
     
     inline def setStrokeOpacity(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    inline def setStrokeOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
+    inline def setStrokeOpacityVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOpacity", js.Array(value*))
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setStrokeVarargs(value: (Test & ColorValueRef)*): Self = StObject.set(x, "stroke", js.Array(value :_*))
+    inline def setStrokeVarargs(value: (Test & ColorValueRef)*): Self = StObject.set(x, "stroke", js.Array(value*))
     
     inline def setStrokeWidth(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
-    inline def setStrokeWidthVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
+    inline def setStrokeWidthVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeWidth", js.Array(value*))
     
     inline def setTooltip(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setTooltipVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "tooltip", js.Array(value :_*))
+    inline def setTooltipVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "tooltip", js.Array(value*))
     
     inline def setWidth(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWidthVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "width", js.Array(value*))
     
     inline def setX(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
@@ -220,17 +220,17 @@ object EncodeEntry {
     
     inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
-    inline def setX2Varargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "x2", js.Array(value :_*))
+    inline def setX2Varargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "x2", js.Array(value*))
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "x", js.Array(value*))
     
     inline def setXc(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "xc", value.asInstanceOf[js.Any])
     
     inline def setXcUndefined: Self = StObject.set(x, "xc", js.undefined)
     
-    inline def setXcVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "xc", js.Array(value :_*))
+    inline def setXcVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "xc", js.Array(value*))
     
     inline def setY(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
@@ -238,22 +238,22 @@ object EncodeEntry {
     
     inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     
-    inline def setY2Varargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "y2", js.Array(value :_*))
+    inline def setY2Varargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "y2", js.Array(value*))
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "y", js.Array(value*))
     
     inline def setYc(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "yc", value.asInstanceOf[js.Any])
     
     inline def setYcUndefined: Self = StObject.set(x, "yc", js.undefined)
     
-    inline def setYcVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "yc", js.Array(value :_*))
+    inline def setYcVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "yc", js.Array(value*))
     
     inline def setZindex(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     
     inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     
-    inline def setZindexVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "zindex", js.Array(value :_*))
+    inline def setZindexVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "zindex", js.Array(value*))
   }
 }

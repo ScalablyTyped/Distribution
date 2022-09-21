@@ -38,7 +38,7 @@ object ListKeyPoliciesResponse {
     
     inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    inline def setPolicyNamesVarargs(value: PolicyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: PolicyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value*))
     
     inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     

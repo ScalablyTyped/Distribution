@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 点标记
   * @param options 选项
   */
-class Marker[ExtraData] ()
+open class Marker[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Marker[ExtraData] {
   def this(options: Options[ExtraData]) = this()

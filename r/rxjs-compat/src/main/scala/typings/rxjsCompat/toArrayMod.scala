@@ -10,5 +10,5 @@ object toArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toArray[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Any]
+  inline def toArray[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[Any]
 }

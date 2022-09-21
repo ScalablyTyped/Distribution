@@ -2,7 +2,6 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.`0`
 import typings.ariClient.anon.`1`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +68,7 @@ trait Application
     * list means all events are allowed. * An empty "disallowed" list means no events are disallowed. * Disallowed events take precedence over allowed events if the event type
     * is specified in both lists.
     */
-  def filter(callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  def filter(callback: js.Function2[/* err */ js.Error, /* application */ this.type, Unit]): Unit = js.native
   def filter(params: `1`): js.Promise[Application] = js.native
   /**
     * Filter application events types.
@@ -85,7 +84,7 @@ trait Application
     *
     * @param [params.filter] - Specify which event types to allow/disallow.
     */
-  def filter(params: `1`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  def filter(params: `1`, callback: js.Function2[/* err */ js.Error, /* application */ this.type, Unit]): Unit = js.native
   
   /**
     * Get details of an application.
@@ -94,7 +93,7 @@ trait Application
   /**
     * Get details of an application.
     */
-  def get(callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* application */ this.type, Unit]): Unit = js.native
   
   /**
     * List all applications.
@@ -103,7 +102,7 @@ trait Application
   /**
     * List all applications.
     */
-  def list(callback: js.Function2[/* err */ Error, /* applications */ js.Array[this.type], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* applications */ js.Array[this.type], Unit]): Unit = js.native
   
   /**
     * Name of this application.
@@ -123,7 +122,7 @@ trait Application
     *
     * @param params.eventSource - URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}.
     */
-  def subscribe(params: `0`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  def subscribe(params: `0`, callback: js.Function2[/* err */ js.Error, /* application */ this.type, Unit]): Unit = js.native
   
   /**
     * Unsubscribe an application from an event source.
@@ -138,5 +137,5 @@ trait Application
     *
     * @param params.eventSource - URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}.
     */
-  def unsubscribe(params: `0`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  def unsubscribe(params: `0`, callback: js.Function2[/* err */ js.Error, /* application */ this.type, Unit]): Unit = js.native
 }

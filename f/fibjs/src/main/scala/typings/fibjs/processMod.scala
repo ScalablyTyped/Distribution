@@ -21,7 +21,7 @@ object processMod {
   
   @JSImport("process", "argv")
   @js.native
-  val argv: js.Array[js.Any] = js.native
+  val argv: js.Array[Any] = js.native
   
   inline def chdir(directory: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chdir")(directory.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -33,7 +33,7 @@ object processMod {
   
   @JSImport("process", "execArgv")
   @js.native
-  val execArgv: js.Array[js.Any] = js.native
+  val execArgv: js.Array[Any] = js.native
   
   @JSImport("process", "execPath")
   @js.native
@@ -46,16 +46,16 @@ object processMod {
   @js.native
   val exitCode: Double = js.native
   
-  inline def hrtime(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")().asInstanceOf[js.Array[js.Any]]
-  inline def hrtime(diff: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")(diff.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def hrtime(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")().asInstanceOf[js.Array[Any]]
+  inline def hrtime(diff: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")(diff.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def memoryUsage(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[js.Object]
   
-  inline def nextTick(func: js.Function, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nextTick(func: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def open(command: String): ClassSubProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any]).asInstanceOf[ClassSubProcess]
-  inline def open(command: String, args: js.Array[js.Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
-  inline def open(command: String, args: js.Array[js.Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+  inline def open(command: String, args: js.Array[Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+  inline def open(command: String, args: js.Array[Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
   inline def open(command: String, opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
   
   @JSImport("process", "platform")
@@ -63,13 +63,13 @@ object processMod {
   val platform: String = js.native
   
   inline def run(command: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def run(command: String, args: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def run(command: String, args: js.Array[js.Any], opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def run(command: String, args: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def run(command: String, args: js.Array[Any], opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def run(command: String, opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def start(command: String): ClassSubProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any]).asInstanceOf[ClassSubProcess]
-  inline def start(command: String, args: js.Array[js.Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
-  inline def start(command: String, args: js.Array[js.Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+  inline def start(command: String, args: js.Array[Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+  inline def start(command: String, args: js.Array[Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
   inline def start(command: String, opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
   
   @JSImport("process", "stderr")

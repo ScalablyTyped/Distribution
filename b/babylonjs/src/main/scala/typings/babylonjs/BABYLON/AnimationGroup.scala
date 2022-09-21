@@ -9,33 +9,36 @@ trait AnimationGroup
   extends StObject
      with IDisposable {
   
-  /* private */ var _animatables: js.Any = js.native
+  /* private */ var _animatables: Any = js.native
   
-  /* private */ var _animationLoopCount: js.Any = js.native
+  /* private */ var _animationLoopCount: Any = js.native
   
-  /* private */ var _animationLoopFlags: js.Any = js.native
+  /* private */ var _animationLoopFlags: Any = js.native
   
-  /* private */ var _checkAnimationGroupEnded: js.Any = js.native
+  /* private */ var _checkAnimationGroupEnded: Any = js.native
   
-  /* private */ var _from: js.Any = js.native
+  /* private */ var _from: Any = js.native
   
-  /* private */ var _isAdditive: js.Any = js.native
+  /* private */ var _isAdditive: Any = js.native
   
-  /* private */ var _isPaused: js.Any = js.native
+  /* private */ var _isPaused: Any = js.native
   
-  /* private */ var _isStarted: js.Any = js.native
+  /* private */ var _isStarted: Any = js.native
   
-  /* private */ var _loopAnimation: js.Any = js.native
+  /* private */ var _loopAnimation: Any = js.native
   
-  /* private */ var _processLoop: js.Any = js.native
+  /** @hidden */
+  var _parentContainer: Nullable[AbstractScene] = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _processLoop: Any = js.native
   
-  /* private */ var _speedRatio: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _targetedAnimations: js.Any = js.native
+  /* private */ var _speedRatio: Any = js.native
   
-  /* private */ var _to: js.Any = js.native
+  /* private */ var _targetedAnimations: Any = js.native
+  
+  /* private */ var _to: Any = js.native
   
   /**
     * Add an animation (with its target) in the group
@@ -43,7 +46,7 @@ trait AnimationGroup
     * @param target defines the target of the animation
     * @returns the TargetedAnimation object
     */
-  def addTargetedAnimation(animation: Animation, target: js.Any): TargetedAnimation = js.native
+  def addTargetedAnimation(animation: Animation, target: Any): TargetedAnimation = js.native
   
   /**
     * returning the list of animatables controlled by this animation group.
@@ -59,10 +62,13 @@ trait AnimationGroup
     * Clone the current animation group and returns a copy
     * @param newName defines the name of the new group
     * @param targetConverter defines an optional function used to convert current animation targets to new ones
-    * @returns the new aniamtion group
+    * @param cloneAnimations defines if the animations should be cloned or referenced
+    * @returns the new animation group
     */
   def clone(newName: String): AnimationGroup = js.native
-  def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ js.Any, js.Any]): AnimationGroup = js.native
+  def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ Any, Any]): AnimationGroup = js.native
+  def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ Any, Any], cloneAnimations: Boolean): AnimationGroup = js.native
+  def clone(newName: String, targetConverter: Unit, cloneAnimations: Boolean): AnimationGroup = js.native
   
   /**
     * Gets the first frame
@@ -78,7 +84,7 @@ trait AnimationGroup
   /**
     * Goes to a specific frame in this animation group
     * @param frame the frame number to go to
-    * @return the animationGroup
+    * @returns the animationGroup
     */
   def goToFrame(frame: Double): AnimationGroup = js.native
   
@@ -103,6 +109,11 @@ trait AnimationGroup
     */
   def loopAnimation: Boolean = js.native
   def loopAnimation_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets an object used to store user defined information for the node
+    */
+  var metadata: Any = js.native
   
   /** The name of the animation group */
   var name: String = js.native
@@ -180,12 +191,12 @@ trait AnimationGroup
     * Serializes the animationGroup to an object
     * @returns Serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Set animation weight for all animatables
     * @param weight defines the weight to use
-    * @return the animationGroup
+    * @returns the animationGroup
     * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
     */
   def setWeightForAllAnimatables(weight: Double): AnimationGroup = js.native
@@ -249,11 +260,11 @@ trait AnimationGroup
   
   /**
     * Synchronize and normalize all animatables with a source animatable
-    * @param root defines the root animatable to synchronize with
-    * @return the animationGroup
+    * @param root defines the root animatable to synchronize with (null to stop synchronizing)
+    * @returns the animationGroup
     * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
     */
-  def syncAllAnimationsWith(root: Animatable): AnimationGroup = js.native
+  def syncAllAnimationsWith(root: Nullable[Animatable]): AnimationGroup = js.native
   
   /**
     * Gets the targeted animations for this animation group

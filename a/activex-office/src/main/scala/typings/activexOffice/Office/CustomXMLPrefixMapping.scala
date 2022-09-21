@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomXMLPrefixMapping extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -15,18 +15,18 @@ trait CustomXMLPrefixMapping extends StObject {
   /* private */ @JSName("Office.CustomXMLPrefixMapping_typekey")
   var OfficeDotCustomXMLPrefixMapping_typekey: CustomXMLPrefixMapping
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Prefix: String
 }
 object CustomXMLPrefixMapping {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     NamespaceURI: String,
     OfficeDotCustomXMLPrefixMapping_typekey: CustomXMLPrefixMapping,
-    Parent: js.Any,
+    Parent: Any,
     Prefix: String
   ): CustomXMLPrefixMapping = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], NamespaceURI = NamespaceURI.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object CustomXMLPrefixMapping {
   
   extension [Self <: CustomXMLPrefixMapping](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -44,7 +44,7 @@ object CustomXMLPrefixMapping {
     
     inline def setOfficeDotCustomXMLPrefixMapping_typekey(value: CustomXMLPrefixMapping): Self = StObject.set(x, "Office.CustomXMLPrefixMapping_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }

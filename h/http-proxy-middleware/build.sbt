@@ -1,14 +1,18 @@
 organization := "org.scalablytyped"
 name := "http-proxy-middleware"
-version := "0.19-dt-20200515Z-98bd00"
-scalaVersion := "3.0.1"
+version := "2.0.6-28d13a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20201002Z-4e45b6",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20200320Z-65ec1e",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-6f01fe",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-c34bb1",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20220503Z-7f014a",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-21c0d6",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-11838a",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-77d826",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

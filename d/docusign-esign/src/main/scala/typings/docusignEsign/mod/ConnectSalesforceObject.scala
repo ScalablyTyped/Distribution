@@ -99,7 +99,7 @@ object ConnectSalesforceObject {
     
     inline def setSelectFieldsVarargs(
       value: (/* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField)*
-    ): Self = StObject.set(x, "selectFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "selectFields", js.Array(value*))
     
     inline def setSfObject(value: String): Self = StObject.set(x, "sfObject", value.asInstanceOf[js.Any])
     
@@ -119,6 +119,6 @@ object ConnectSalesforceObject {
     
     inline def setUpdateFieldsVarargs(
       value: (/* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField)*
-    ): Self = StObject.set(x, "updateFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "updateFields", js.Array(value*))
   }
 }

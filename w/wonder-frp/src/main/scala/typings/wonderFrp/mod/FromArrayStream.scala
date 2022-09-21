@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "FromArrayStream")
 @js.native
-class FromArrayStream protected ()
+open class FromArrayStream protected ()
   extends typings.wonderFrp.fromArrayStreamMod.FromArrayStream {
-  def this(array: js.Array[js.Any], scheduler: typings.wonderFrp.schedulerMod.Scheduler) = this()
+  def this(array: js.Array[Any], scheduler: typings.wonderFrp.schedulerMod.Scheduler) = this()
 }
 /* static members */
 object FromArrayStream {
@@ -17,5 +17,5 @@ object FromArrayStream {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(array: js.Array[js.Any], scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.fromArrayStreamMod.FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromArrayStreamMod.FromArrayStream]
+  inline def create(array: js.Array[Any], scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.fromArrayStreamMod.FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromArrayStreamMod.FromArrayStream]
 }

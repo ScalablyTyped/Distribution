@@ -7,137 +7,137 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbSnapshotDetails extends StObject {
   
   /**
-    * 
+    * The amount of storage (in gigabytes) to be initially allocated for the database instance.
     */
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * Specifies the name of the Availability Zone in which the DB instance was located at the time of the DB snapshot.
     */
   var AvailabilityZone: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * A name for the DB instance.
     */
   var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The name or ARN of the DB snapshot that is used to restore the DB instance.
     */
   var DbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The identifier for the source DB instance.
     */
   var DbiResourceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * Whether the DB snapshot is encrypted.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * 
+    * The name of the database engine to use for this DB instance. Valid values are as follows:    aurora     aurora-mysql     aurora-postgresql     c     mariadb     mysql     oracle-ee     oracle-se     oracle-se1     oracle-se2     sqlserver-ee     sqlserver-ex     sqlserver-se     sqlserver-web   
     */
   var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The version of the database engine.
     */
   var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * Whether mapping of IAM accounts to database accounts is enabled.
     */
   var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * 
+    * Specifies the time in Coordinated Universal Time (UTC) when the DB instance, from which the snapshot was taken, was created.
     */
   var InstanceCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * If Encrypted is true, the KMS key identifier for the encrypted DB snapshot.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * License model information for the restored DB instance.
     */
   var LicenseModel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The master user name for the DB snapshot.
     */
   var MasterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The option group name for the DB snapshot.
     */
   var OptionGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The percentage of the estimated data that has been transferred.
     */
   var PercentProgress: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The port that the database engine was listening on at the time of the snapshot.
     */
   var Port: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The number of CPU cores and the number of threads per core for the DB instance class of the DB instance.
     */
   var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.undefined
   
   /**
-    * 
+    * When the snapshot was taken in Coordinated Universal Time (UTC).
     */
   var SnapshotCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The type of the DB snapshot.
     */
   var SnapshotType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The DB snapshot ARN that the DB snapshot was copied from.
     */
   var SourceDbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The Amazon Web Services Region that the DB snapshot was created in or copied from.
     */
   var SourceRegion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The status of this DB snapshot.
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The storage type associated with the DB snapshot. Valid values are as follows:    gp2     io1     standard   
     */
   var StorageType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The ARN from the key store with which to associate the instance for TDE encryption.
     */
   var TdeCredentialArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The time zone of the DB snapshot.
     */
   var Timezone: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The VPC ID associated with the DB snapshot.
     */
   var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -222,7 +222,7 @@ object AwsRdsDbSnapshotDetails {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
     inline def setSnapshotCreateTime(value: NonEmptyString): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     

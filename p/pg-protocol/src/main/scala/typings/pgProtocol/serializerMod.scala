@@ -1,6 +1,6 @@
 package typings.pgProtocol
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pgProtocol.pgProtocolStrings.P
 import typings.pgProtocol.pgProtocolStrings.S
 import typings.std.Record
@@ -65,7 +65,7 @@ object serializerMod {
     
     var valueMapper: js.UndefOr[ValueMapper] = js.undefined
     
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object BindOpts {
     
@@ -88,15 +88,15 @@ object serializerMod {
       
       inline def setStatementUndefined: Self = StObject.set(x, "statement", js.undefined)
       
-      inline def setValueMapper(value: (/* param */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "valueMapper", js.Any.fromFunction2(value))
+      inline def setValueMapper(value: (/* param */ Any, /* index */ Double) => Any): Self = StObject.set(x, "valueMapper", js.Any.fromFunction2(value))
       
       inline def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -152,7 +152,7 @@ object serializerMod {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: Double*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Double*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -180,5 +180,5 @@ object serializerMod {
     }
   }
   
-  type ValueMapper = js.Function2[/* param */ js.Any, /* index */ Double, js.Any]
+  type ValueMapper = js.Function2[/* param */ Any, /* index */ Double, Any]
 }

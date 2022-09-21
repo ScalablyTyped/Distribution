@@ -29,7 +29,7 @@ object SolutionStackDescription {
     
     inline def setPermittedFileTypesUndefined: Self = StObject.set(x, "PermittedFileTypes", js.undefined)
     
-    inline def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = StObject.set(x, "PermittedFileTypes", js.Array(value :_*))
+    inline def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = StObject.set(x, "PermittedFileTypes", js.Array(value*))
     
     inline def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     

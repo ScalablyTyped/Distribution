@@ -33,6 +33,6 @@ object ListRepositoryAssociationsResponse {
     
     inline def setRepositoryAssociationSummariesUndefined: Self = StObject.set(x, "RepositoryAssociationSummaries", js.undefined)
     
-    inline def setRepositoryAssociationSummariesVarargs(value: RepositoryAssociationSummary*): Self = StObject.set(x, "RepositoryAssociationSummaries", js.Array(value :_*))
+    inline def setRepositoryAssociationSummariesVarargs(value: RepositoryAssociationSummary*): Self = StObject.set(x, "RepositoryAssociationSummaries", js.Array(value*))
   }
 }

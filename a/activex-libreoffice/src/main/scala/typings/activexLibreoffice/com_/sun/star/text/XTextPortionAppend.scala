@@ -35,7 +35,7 @@ object XTextPortionAppend {
     acquire: () => Unit,
     appendTextPortion: (String, PropertyValues) => XTextRange,
     insertTextPortion: (String, PropertyValues, XTextRange) => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextPortionAppend = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendTextPortion = js.Any.fromFunction2(appendTextPortion), insertTextPortion = js.Any.fromFunction3(insertTextPortion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

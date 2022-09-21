@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object memoryStorageMod {
   
-  @JSImport("@firebase/database/dist/src/core/storage/MemoryStorage", "MemoryStorage")
+  @JSImport("@firebase/database/dist/node-esm/src/core/storage/MemoryStorage", "MemoryStorage")
   @js.native
-  class MemoryStorage () extends StObject {
+  open class MemoryStorage () extends StObject {
     
-    /* private */ var cache_ : js.Any = js.native
+    /* private */ var cache_ : Any = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     var isInMemoryStorage: Boolean = js.native
     
     def remove(key: String): Unit = js.native
     
     def set(key: String): Unit = js.native
-    def set(key: String, value: js.Any): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
   }
 }

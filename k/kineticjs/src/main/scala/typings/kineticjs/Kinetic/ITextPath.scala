@@ -17,27 +17,27 @@ trait ITextPath
   
   def getText(): String = js.native
   
-  def getTextFill(): js.Any = js.native
+  def getTextFill(): Any = js.native
   
   def getTextHeight(): Double = js.native
   
-  def getTextStroke(): js.Any = js.native
+  def getTextStroke(): Any = js.native
   
   def getTextStrokeWidth(): Double = js.native
   
   def getTextWidth(): Double = js.native
   
-  def setFontFamily(fontFamily: String): js.Any = js.native
+  def setFontFamily(fontFamily: String): Any = js.native
   
-  def setFontSize(fontSize: Double): js.Any = js.native
+  def setFontSize(fontSize: Double): Any = js.native
   
-  def setFontStroke(textStroke: js.Any): js.Any = js.native
+  def setFontStroke(textStroke: Any): Any = js.native
   
-  def setFontStyle(fontStyle: String): js.Any = js.native
+  def setFontStyle(fontStyle: String): Any = js.native
   
-  def setText(text: String): js.Any = js.native
+  def setText(text: String): Any = js.native
   
-  def setTextFill(textFill: js.Any): js.Any = js.native
+  def setTextFill(textFill: Any): Any = js.native
   
-  def setTextStrokeWidth(textStrokeWidth: Double): js.Any = js.native
+  def setTextStrokeWidth(textStrokeWidth: Double): Any = js.native
 }

@@ -14,12 +14,12 @@ trait UpdateApplicationRequest extends StObject {
   /**
     * New description of the application to be updated.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[ApplicationDescription] = js.undefined
   
   /**
     * New name of the application to be updated.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[ApplicationName] = js.undefined
 }
 object UpdateApplicationRequest {
   
@@ -32,11 +32,11 @@ object UpdateApplicationRequest {
     
     inline def setConfigurationId(value: ApplicationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ApplicationDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ApplicationName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

@@ -1,6 +1,5 @@
 package typings.couchbase.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,7 +123,7 @@ trait BucketManager extends StObject {
     * @param callback The callback function.
     * @returns {}
     */
-  def insertDesignDocument(name: String, data: js.Any, callback: js.Function): Unit = js.native
+  def insertDesignDocument(name: String, data: Any, callback: js.Function): Unit = js.native
   
   /**
     * Unregisters a design document from this bucket.
@@ -141,14 +140,14 @@ trait BucketManager extends StObject {
     * @param callback The callback function.
     * @returns {}
     */
-  def upsertDesignDocument(name: String, data: js.Any, callback: js.Function): Unit = js.native
+  def upsertDesignDocument(name: String, data: Any, callback: js.Function): Unit = js.native
   
   /**
     * Watches a list of indexes, waiting for them to become available for use.
     * @param watchList List of indexes to watch.
     * @param callback The callback function.
     */
-  def watchIndexes(watchList: js.Array[String], callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  def watchIndexes(watchList: js.Array[String], callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
   /**
     * Watches a list of indexes, waiting for them to become available for use.
     * @param watchList List of indexes to watch.
@@ -158,6 +157,6 @@ trait BucketManager extends StObject {
   def watchIndexes(
     watchList: js.Array[String],
     options: WatchIndexesOptions,
-    callback: js.Function1[/* err */ Error | Null, Unit]
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
   ): Unit = js.native
 }

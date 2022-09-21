@@ -1,26 +1,24 @@
 package typings.documentdb.mod
 
+import typings.documentdb.documentdbStrings.Hash
+import typings.documentdb.documentdbStrings.Javascript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DatabaseMeta = typings.documentdb.mod.AbstractMeta
+type DatabaseMeta = AbstractMeta
 
-type DocumentQuery = typings.documentdb.mod.SqlQuerySpec | java.lang.String
+type DocumentQuery = SqlQuerySpec | String
 
-type PartitionKind = typings.documentdb.documentdbStrings.Hash
+type PartitionKind = Hash
 
-type Procedure = typings.documentdb.mod.UserScriptable
+type Procedure = UserScriptable
 
-type RequestCallback[TResult] = js.Function3[
-/* error */ typings.documentdb.mod.QueryError, 
-/* resource */ TResult, 
-/* responseHeaders */ js.Any, 
-scala.Unit]
+type RequestCallback[TResult] = js.Function3[/* error */ QueryError, /* resource */ TResult, /* responseHeaders */ Any, Unit]
 
-type UserDefinedFunctionMeta = typings.documentdb.mod.AbstractMeta
+type UserDefinedFunctionMeta = AbstractMeta
 
-type UserDefinedFunctionType = typings.documentdb.documentdbStrings.Javascript
+type UserDefinedFunctionType = Javascript
 
-type UserFunction = (js.Function1[/* repeated */ js.Any, scala.Unit]) | java.lang.String
+type UserFunction = (js.Function1[/* repeated */ Any, Unit]) | String

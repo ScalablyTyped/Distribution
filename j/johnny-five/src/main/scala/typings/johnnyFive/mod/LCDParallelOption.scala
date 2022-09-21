@@ -10,11 +10,11 @@ trait LCDParallelOption
   
   var backlight: js.UndefOr[Double] = js.undefined
   
-  var pins: js.Array[js.Any]
+  var pins: js.Array[Any]
 }
 object LCDParallelOption {
   
-  inline def apply(pins: js.Array[js.Any]): LCDParallelOption = {
+  inline def apply(pins: js.Array[Any]): LCDParallelOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDParallelOption]
   }
@@ -25,8 +25,8 @@ object LCDParallelOption {
     
     inline def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
     
-    inline def setPins(value: js.Array[js.Any]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: js.Array[Any]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    inline def setPinsVarargs(value: js.Any*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: Any*): Self = StObject.set(x, "pins", js.Array(value*))
   }
 }

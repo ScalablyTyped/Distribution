@@ -10,10 +10,10 @@ object rowingMod {
   
   @JSImport("material-ui/svg-icons/action/rowing", JSImport.Default)
   @js.native
-  class default () extends ActionRowing
+  open class default () extends ActionRowing
   
   @JSImport("material-ui/svg-icons/action/rowing", "ActionRowing")
   @js.native
-  class ActionRowing ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRowing ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

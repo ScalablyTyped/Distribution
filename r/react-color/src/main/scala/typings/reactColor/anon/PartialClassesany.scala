@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<reactcss.reactcss.Classes<any>> */
 trait PartialClassesany extends StObject {
   
-  var default: js.UndefOr[Partial[js.Any]] = js.undefined
+  var default: js.UndefOr[Partial[Any]] = js.undefined
 }
 object PartialClassesany {
   
@@ -19,7 +19,7 @@ object PartialClassesany {
   
   extension [Self <: PartialClassesany](x: Self) {
     
-    inline def setDefault(value: Partial[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Partial[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }

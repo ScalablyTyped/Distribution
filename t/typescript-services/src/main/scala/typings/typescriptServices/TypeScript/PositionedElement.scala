@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PositionedElement extends StObject {
   
-  /* private */ var _element: js.Any
+  /* private */ var _element: Any
   
-  /* private */ var _fullStart: js.Any
+  /* private */ var _fullStart: Any
   
-  /* private */ var _parent: js.Any
+  /* private */ var _parent: Any
   
   def childAt(index: Double): PositionedElement
   
@@ -53,9 +53,9 @@ trait PositionedElement extends StObject {
 object PositionedElement {
   
   inline def apply(
-    _element: js.Any,
-    _fullStart: js.Any,
-    _parent: js.Any,
+    _element: Any,
+    _fullStart: Any,
+    _parent: Any,
     childAt: Double => PositionedElement,
     childCount: () => Double,
     childEnd: ISyntaxElement => Double,
@@ -120,10 +120,10 @@ object PositionedElement {
     
     inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    inline def set_element(value: js.Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
+    inline def set_element(value: Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
     
-    inline def set_fullStart(value: js.Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
+    inline def set_fullStart(value: Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
     
-    inline def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+    inline def set_parent(value: Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
   }
 }

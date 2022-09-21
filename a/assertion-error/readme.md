@@ -1,7 +1,7 @@
 
 # Scala.js typings for assertion-error
 
-Typings are for version 1.1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Error constructor for test and validation frameworks that implements standardized AssertionError specification.
@@ -10,10 +10,10 @@ Error constructor for test and validation frameworks that implements standardize
 | ------------------ | :-------------: |
 | Full name          | assertion-error |
 | Keywords           | test, assertion, assertion-error |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 188034522 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1704718E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/chaijs/assertion-error#readme)

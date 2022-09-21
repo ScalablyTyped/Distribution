@@ -8,18 +8,16 @@ trait RTCRtpEncodingParameters
   extends StObject
      with RTCRtpCodingParameters {
   
+  /* standard dom */
   var active: js.UndefOr[scala.Boolean] = js.undefined
   
-  var codecPayloadType: js.UndefOr[Double] = js.undefined
-  
-  var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
-  
+  /* standard dom */
   var maxBitrate: js.UndefOr[Double] = js.undefined
   
-  var maxFramerate: js.UndefOr[Double] = js.undefined
+  /* standard dom */
+  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   
-  var ptime: js.UndefOr[Double] = js.undefined
-  
+  /* standard dom */
   var scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
 }
 object RTCRtpEncodingParameters {
@@ -35,25 +33,13 @@ object RTCRtpEncodingParameters {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
-    
-    inline def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
-    
-    inline def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
-    
-    inline def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
-    
     inline def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
     
     inline def setMaxBitrateUndefined: Self = StObject.set(x, "maxBitrate", js.undefined)
     
-    inline def setMaxFramerate(value: Double): Self = StObject.set(x, "maxFramerate", value.asInstanceOf[js.Any])
+    inline def setPriority(value: RTCPriorityType): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    inline def setMaxFramerateUndefined: Self = StObject.set(x, "maxFramerate", js.undefined)
-    
-    inline def setPtime(value: Double): Self = StObject.set(x, "ptime", value.asInstanceOf[js.Any])
-    
-    inline def setPtimeUndefined: Self = StObject.set(x, "ptime", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     inline def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
     

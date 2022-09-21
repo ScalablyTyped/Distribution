@@ -10,8 +10,8 @@ object searchBarMod {
   
   @JSImport("react-lazylog/build/SearchBar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SearchBarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SearchBarProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -25,7 +25,7 @@ object searchBarMod {
     inline def defaultProps_=(x: PartialSearchBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type SearchBar = Component[SearchBarProps, js.Object, js.Any]
+  type SearchBar = Component[SearchBarProps, js.Object, Any]
   
   trait SearchBarProps extends StObject {
     

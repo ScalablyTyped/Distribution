@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ExportFontInfo")
 @js.native
-class ExportFontInfo ()
+open class ExportFontInfo ()
   extends StObject
      with typings.devexpressWeb.ExportFontInfo {
   
@@ -17,7 +17,7 @@ class ExportFontInfo ()
     * Specifies a value that specifies the GDI character set used by the current font.
     */
   /* CompleteClass */
-  var GdiCharSet: js.Any = js.native
+  var GdiCharSet: Any = js.native
   
   /**
     * Specifies the name of the font used in the exported document.

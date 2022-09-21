@@ -27,7 +27,7 @@ object ListActionTypesOutput {
     
     inline def setActionTypes(value: ActionTypeList): Self = StObject.set(x, "actionTypes", value.asInstanceOf[js.Any])
     
-    inline def setActionTypesVarargs(value: ActionType*): Self = StObject.set(x, "actionTypes", js.Array(value :_*))
+    inline def setActionTypesVarargs(value: ActionType*): Self = StObject.set(x, "actionTypes", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

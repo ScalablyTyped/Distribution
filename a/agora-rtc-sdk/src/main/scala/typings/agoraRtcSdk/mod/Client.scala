@@ -1,10 +1,13 @@
 package typings.agoraRtcSdk.mod
 
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`2`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`active-speaker`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-ecb`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-gcm2`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-gcm`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-xts`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-256-gcm2`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-256-gcm`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-256-xts`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`camera-changed`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`channel-media-relay-event`
@@ -24,8 +27,8 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.`network-type-changed`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`peer-leave`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`peer-online`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`playout-device-changed`
-import typings.agoraRtcSdk.agoraRtcSdkStrings.`receive-metadata`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`recording-device-changed`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`sm4-128-ecb`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`stream-added`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`stream-fallback`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`stream-published`
@@ -48,25 +51,30 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.liveStreamingFailed
 import typings.agoraRtcSdk.agoraRtcSdkStrings.liveStreamingStarted
 import typings.agoraRtcSdk.agoraRtcSdkStrings.liveStreamingStopped
 import typings.agoraRtcSdk.agoraRtcSdkStrings.liveTranscodingUpdated
+import typings.agoraRtcSdk.agoraRtcSdkStrings.none
 import typings.agoraRtcSdk.agoraRtcSdkStrings.onTokenPrivilegeDidExpire
 import typings.agoraRtcSdk.agoraRtcSdkStrings.onTokenPrivilegeWillExpire
 import typings.agoraRtcSdk.agoraRtcSdkStrings.reconnect
+import typings.agoraRtcSdk.agoraRtcSdkStrings.rejoin
 import typings.agoraRtcSdk.agoraRtcSdkStrings.streamInjectedStatus
 import typings.agoraRtcSdk.anon.Attr
 import typings.agoraRtcSdk.anon.Bitrate
 import typings.agoraRtcSdk.anon.Code
 import typings.agoraRtcSdk.anon.CodeNumber
 import typings.agoraRtcSdk.anon.CurState
-import typings.agoraRtcSdk.anon.Forceturn
 import typings.agoraRtcSdk.anon.Reason
+import typings.agoraRtcSdk.anon.ReasonType
 import typings.agoraRtcSdk.anon.Role
 import typings.agoraRtcSdk.anon.State
 import typings.agoraRtcSdk.anon.StreamStream
 import typings.agoraRtcSdk.anon.Success
 import typings.agoraRtcSdk.anon.Type
+import typings.agoraRtcSdk.anon.TypeUrl
 import typings.agoraRtcSdk.anon.Uid
+import typings.agoraRtcSdk.anon.Url
 import typings.agoraRtcSdk.anon.Video
 import typings.agoraRtcSdk.anon.`0`
+import typings.agoraRtcSdk.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +88,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Client extends StObject {
   
   /**
-    * Injects an Online Media Stream to a Live Broadcast
+    * **Note**: Agora will soon stop the service for injecting online media streams on the client. If you have not implemented this service, Agora recommends that you do not use it.
+    *
+    * Injects an online media stream to a live interactive streaming channel.
     *
     * If this method is called successfully, the server pulls the voice or video stream and injects it into a live channel. This is applicable to scenarios where all of the audience members in the channel can watch a live show and interact with each other. See [Inject an Online Media Stream](https://docs.agora.io/en/Interactive%20Broadcast/inject_stream_web?platform=Web) for details.
     *
@@ -148,7 +158,7 @@ trait Client extends StObject {
     *   console.log("Disable dual stream success!")
     * }, function(err) {
     *   console.log(err)
-    * })
+    * });
     * ```
     * @param onSuccess The callback when the method succeeds.
     * @param onFailure The callback when the method fails. The following are common errors:
@@ -169,7 +179,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - If you have multiple web pages running the Web SDK, this function might not work.
+    * If you have multiple tabs running the Web SDK on one device, this function might not work.
     * @example **Sample code**
     * ``` javascript
     * client.enableAudioVolumeIndicator(); // Triggers the "volume-indicator" callback event every two seconds.
@@ -185,7 +195,7 @@ trait Client extends StObject {
   /**
     * Enables Dual Stream
     *
-    * This method enables the dual-stream mode on the publisher side. We recommend calling this method after joining a channel({@link Client.join}).
+    * This method enables dual-stream mode on the publisher side. We recommend calling this method after joining a channel({@link Client.join}).
     *
     * Dual streams are a hybrid of a high-quality video stream and a low-quality video stream:
     *
@@ -198,7 +208,6 @@ trait Client extends StObject {
     *
     * This method does not apply to the following scenarios:
     *
-    * -   The stream is created by defining the [[audioSource]] and [[videoSource]] properties.
     * -   Audio-only mode (audio: true, video: false)
     * -   Safari browser
     * -   Screen-sharing scenario
@@ -208,7 +217,7 @@ trait Client extends StObject {
     *   console.log("Enable dual stream success!")
     * }, function(err) {
     *   console.log(err)
-    * })
+    * });
     * ```
     * @param onSuccess The callback when the method succeeds.
     * @param onFailure The callback when the method fails. The following are common errors:
@@ -256,7 +265,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - Some of the statistics are calculated after the `stream-published` event, which may take at most 3 seconds.
+    * - Some of the statistics are calculated after the `stream-published` event, which may take at most 3 seconds. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the local audio stream.
@@ -264,16 +273,18 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getLocalAudioStats((localAudioStats) => {
+    * setInterval(() => {
+    *   client.getLocalAudioStats((localAudioStats) => {
     *     for(var uid in localAudioStats){
-    *          console.log(`Audio CodecType from ${uid}: ${localAudioStats[uid].CodecType}`);
-    *          console.log(`Audio MuteState from ${uid}: ${localAudioStats[uid].MuteState}`);
-    *          console.log(`Audio RecordingLevel from ${uid}: ${localAudioStats[uid].RecordingLevel}`);
-    *          console.log(`Audio SamplingRate from ${uid}: ${localAudioStats[uid].SamplingRate}`);
-    *          console.log(`Audio SendBitrate from ${uid}: ${localAudioStats[uid].SendBitrate}`);
-    *          console.log(`Audio SendLevel from ${uid}: ${localAudioStats[uid].SendLevel}`);
+    *       console.log(`Audio CodecType from ${uid}: ${localAudioStats[uid].CodecType}`);
+    *       console.log(`Audio MuteState from ${uid}: ${localAudioStats[uid].MuteState}`);
+    *       console.log(`Audio RecordingLevel from ${uid}: ${localAudioStats[uid].RecordingLevel}`);
+    *       console.log(`Audio SamplingRate from ${uid}: ${localAudioStats[uid].SamplingRate}`);
+    *       console.log(`Audio SendBitrate from ${uid}: ${localAudioStats[uid].SendBitrate}`);
+    *       console.log(`Audio SendLevel from ${uid}: ${localAudioStats[uid].SendLevel}`);
     *     }
-    * });
+    *   });
+    * }, 1000)
     * ```
     */
   def getLocalAudioStats(callback: js.Function1[/* stats */ LocalAudioStatsMap, Unit]): Unit = js.native
@@ -285,7 +296,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - Some of the statistics are calculated after the `stream-published` event, which may take at most 3 seconds.
+    * - Some of the statistics are calculated after the `stream-published` event, which may take at most 3 seconds. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the local video stream.
@@ -293,22 +304,24 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getLocalVideoStats((localVideoStats) => {
+    * setInterval(() => {
+    *   client.getLocalVideoStats((localVideoStats) => {
     *     for(var uid in localVideoStats){
-    *          console.log(`Video CaptureFrameRate from ${uid}: ${localVideoStats[uid].CaptureFrameRate}`);
-    *          console.log(`Video CaptureResolutionHeight from ${uid}: ${localVideoStats[uid].CaptureResolutionHeight}`);
-    *          console.log(`Video CaptureResolutionWidth from ${uid}: ${localVideoStats[uid].CaptureResolutionWidth}`);
-    *          console.log(`Video EncodeDelay from ${uid}: ${localVideoStats[uid].EncodeDelay}`);
-    *          console.log(`Video MuteState from ${uid}: ${localVideoStats[uid].MuteState}`);
-    *          console.log(`Video SendBitrate from ${uid}: ${localVideoStats[uid].SendBitrate}`);
-    *          console.log(`Video SendFrameRate from ${uid}: ${localVideoStats[uid].SendFrameRate}`);
-    *          console.log(`Video SendResolutionHeight from ${uid}: ${localVideoStats[uid].SendResolutionHeight}`);
-    *          console.log(`Video SendResolutionWidth from ${uid}: ${localVideoStats[uid].SendResolutionWidth}`);
-    *          console.log(`Video TargetSendBitrate from ${uid}: ${localVideoStats[uid].TargetSendBitrate}`);
-    *          console.log(`Video TotalDuration from ${uid}: ${localVideoStats[uid].TotalDuration}`);
-    *          console.log(`Video TotalFreezeTime from ${uid}: ${localVideoStats[uid].TotalFreezeTime}`);
+    *       console.log(`Video CaptureFrameRate from ${uid}: ${localVideoStats[uid].CaptureFrameRate}`);
+    *       console.log(`Video CaptureResolutionHeight from ${uid}: ${localVideoStats[uid].CaptureResolutionHeight}`);
+    *       console.log(`Video CaptureResolutionWidth from ${uid}: ${localVideoStats[uid].CaptureResolutionWidth}`);
+    *       console.log(`Video EncodeDelay from ${uid}: ${localVideoStats[uid].EncodeDelay}`);
+    *       console.log(`Video MuteState from ${uid}: ${localVideoStats[uid].MuteState}`);
+    *       console.log(`Video SendBitrate from ${uid}: ${localVideoStats[uid].SendBitrate}`);
+    *       console.log(`Video SendFrameRate from ${uid}: ${localVideoStats[uid].SendFrameRate}`);
+    *       console.log(`Video SendResolutionHeight from ${uid}: ${localVideoStats[uid].SendResolutionHeight}`);
+    *       console.log(`Video SendResolutionWidth from ${uid}: ${localVideoStats[uid].SendResolutionWidth}`);
+    *       console.log(`Video TargetSendBitrate from ${uid}: ${localVideoStats[uid].TargetSendBitrate}`);
+    *       console.log(`Video TotalDuration from ${uid}: ${localVideoStats[uid].TotalDuration}`);
+    *       console.log(`Video TotalFreezeTime from ${uid}: ${localVideoStats[uid].TotalFreezeTime}`);
     *     }
-    * });
+    *   });
+    * }, 1000)
     * ```
     */
   def getLocalVideoStats(callback: js.Function1[/* stats */ LocalVideoStatsMap, Unit]): Unit = js.native
@@ -368,7 +381,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - The statistics are calculated after the `stream-subscribed` event, which may take at most 3 seconds.
+    * - The statistics are calculated after the `stream-subscribed` event, which may take at most 3 seconds. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the remote audio stream.
@@ -376,19 +389,21 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getRemoteAudioStats((remoteAudioStatsMap) => {
+    * setInterval(() => {
+    *   client.getRemoteAudioStats((remoteAudioStatsMap) => {
     *     for(var uid in remoteAudioStatsMap){
-    *          console.log(`Audio CodecType from ${uid}: ${remoteAudioStatsMap[uid].CodecType}`);
-    *          console.log(`Audio End2EndDelay from ${uid}: ${remoteAudioStatsMap[uid].End2EndDelay}`);
-    *          console.log(`Audio MuteState from ${uid}: ${remoteAudioStatsMap[uid].MuteState}`);
-    *          console.log(`Audio PacketLossRate from ${uid}: ${remoteAudioStatsMap[uid].PacketLossRate}`);
-    *          console.log(`Audio RecvBitrate from ${uid}: ${remoteAudioStatsMap[uid].RecvBitrate}`);
-    *          console.log(`Audio RecvLevel from ${uid}: ${remoteAudioStatsMap[uid].RecvLevel}`);
-    *          console.log(`Audio TotalFreezeTime from ${uid}: ${remoteAudioStatsMap[uid].TotalFreezeTime}`);
-    *          console.log(`Audio TotalPlayDuration from ${uid}: ${remoteAudioStatsMap[uid].TotalPlayDuration}`);
-    *          console.log(`Audio TransportDelay from ${uid}: ${remoteAudioStatsMap[uid].TransportDelay}`);
+    *       console.log(`Audio CodecType from ${uid}: ${remoteAudioStatsMap[uid].CodecType}`);
+    *       console.log(`Audio End2EndDelay from ${uid}: ${remoteAudioStatsMap[uid].End2EndDelay}`);
+    *       console.log(`Audio MuteState from ${uid}: ${remoteAudioStatsMap[uid].MuteState}`);
+    *       console.log(`Audio PacketLossRate from ${uid}: ${remoteAudioStatsMap[uid].PacketLossRate}`);
+    *       console.log(`Audio RecvBitrate from ${uid}: ${remoteAudioStatsMap[uid].RecvBitrate}`);
+    *       console.log(`Audio RecvLevel from ${uid}: ${remoteAudioStatsMap[uid].RecvLevel}`);
+    *       console.log(`Audio TotalFreezeTime from ${uid}: ${remoteAudioStatsMap[uid].TotalFreezeTime}`);
+    *       console.log(`Audio TotalPlayDuration from ${uid}: ${remoteAudioStatsMap[uid].TotalPlayDuration}`);
+    *       console.log(`Audio TransportDelay from ${uid}: ${remoteAudioStatsMap[uid].TransportDelay}`);
     *     }
-    * });
+    *   });
+    * }, 1000)
     * ```
     */
   def getRemoteAudioStats(callback: js.Function1[/* stats */ RemoteAudioStatsMap, Unit]): Unit = js.native
@@ -400,7 +415,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - The statistics are calculated after the `stream-subscribed` event, which may take at most 3 seconds.
+    * - The statistics are calculated after the `stream-subscribed` event, which may take at most 3 seconds. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the remote video stream.
@@ -408,22 +423,24 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getRemoteVideoStats((remoteVideoStatsMap) => {
+    * setInterval(() => {
+    *   client.getRemoteVideoStats((remoteVideoStatsMap) => {
     *     for(var uid in remoteVideoStatsMap){
-    *          console.log(`Video End2EndDelay from ${uid}: ${remoteVideoStatsMap[uid].End2EndDelay}`);
-    *          console.log(`Video MuteState from ${uid}: ${remoteVideoStatsMap[uid].MuteState}`);
-    *          console.log(`Video PacketLossRate from ${uid}: ${remoteVideoStatsMap[uid].PacketLossRate}`);
-    *          console.log(`Video RecvBitrate from ${uid}: ${remoteVideoStatsMap[uid].RecvBitrate}`);
-    *          console.log(`Video RecvResolutionHeight from ${uid}: ${remoteVideoStatsMap[uid].RecvResolutionHeight}`);
-    *          console.log(`Video RecvResolutionWidth from ${uid}: ${remoteVideoStatsMap[uid].RecvResolutionWidth}`);
-    *          console.log(`Video RenderFrameRate from ${uid}: ${remoteVideoStatsMap[uid].RenderFrameRate}`);
-    *          console.log(`Video RenderResolutionHeight from ${uid}: ${remoteVideoStatsMap[uid].RenderResolutionHeight}`);
-    *          console.log(`Video RenderResolutionWidth from ${uid}: ${remoteVideoStatsMap[uid].RenderResolutionWidth}`);
-    *          console.log(`Video TotalFreezeTime from ${uid}: ${remoteVideoStatsMap[uid].TotalFreezeTime}`);
-    *          console.log(`Video TotalPlayDuration from ${uid}: ${remoteVideoStatsMap[uid].TotalPlayDuration}`);
-    *          console.log(`Video TransportDelay from ${uid}: ${remoteVideoStatsMap[uid].TransportDelay}`);
+    *       console.log(`Video End2EndDelay from ${uid}: ${remoteVideoStatsMap[uid].End2EndDelay}`);
+    *       console.log(`Video MuteState from ${uid}: ${remoteVideoStatsMap[uid].MuteState}`);
+    *       console.log(`Video PacketLossRate from ${uid}: ${remoteVideoStatsMap[uid].PacketLossRate}`);
+    *       console.log(`Video RecvBitrate from ${uid}: ${remoteVideoStatsMap[uid].RecvBitrate}`);
+    *       console.log(`Video RecvResolutionHeight from ${uid}: ${remoteVideoStatsMap[uid].RecvResolutionHeight}`);
+    *       console.log(`Video RecvResolutionWidth from ${uid}: ${remoteVideoStatsMap[uid].RecvResolutionWidth}`);
+    *       console.log(`Video RenderFrameRate from ${uid}: ${remoteVideoStatsMap[uid].RenderFrameRate}`);
+    *       console.log(`Video RenderResolutionHeight from ${uid}: ${remoteVideoStatsMap[uid].RenderResolutionHeight}`);
+    *       console.log(`Video RenderResolutionWidth from ${uid}: ${remoteVideoStatsMap[uid].RenderResolutionWidth}`);
+    *       console.log(`Video TotalFreezeTime from ${uid}: ${remoteVideoStatsMap[uid].TotalFreezeTime}`);
+    *       console.log(`Video TotalPlayDuration from ${uid}: ${remoteVideoStatsMap[uid].TotalPlayDuration}`);
+    *       console.log(`Video TransportDelay from ${uid}: ${remoteVideoStatsMap[uid].TransportDelay}`);
     *     }
-    * });
+    *   });
+    * }, 1000)
     * ```
     *
     */
@@ -436,7 +453,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - This method should be called after joining the channel, and it may take at most 3 seconds to retrieve the statistics.
+    * - This method should be called after joining the channel, and it may take at most 3 seconds to retrieve the statistics. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the session connection.
@@ -444,14 +461,16 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getSessionStats((stats) => {
+    * setInterval(() => {
+    *   client.getSessionStats((stats) => {
     *     console.log(`Current Session Duration: ${stats.Duration}`);
     *     console.log(`Current Session UserCount: ${stats.UserCount}`);
     *     console.log(`Current Session SendBytes: ${stats.SendBytes}`);
     *     console.log(`Current Session RecvBytes: ${stats.RecvBytes}`);
     *     console.log(`Current Session SendBitrate: ${stats.SendBitrate}`);
     *     console.log(`Current Session RecvBitrate: ${stats.RecvBitrate}`);
-    * });
+    *   });
+    * }, 1000)
     * ```
     */
   def getSessionStats(callback: js.Function1[/* stats */ SessionStats, Unit]): Unit = js.native
@@ -486,7 +505,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - Calculation of the statistics may take at most 3 seconds.
+    * - Calculation of the statistics may take at most 3 seconds. You can call this method periodically.
     * - This method supports the Chrome browser only.
     *
     * @param callback The callback contains the statistics of the transmission quality.
@@ -494,11 +513,13 @@ trait Client extends StObject {
     * @example **Sample code**
     *
     * ``` javascript
-    * client.getTransportStats((stats) => {
+    * setInterval(() => {
+    *   client.getTransportStats((stats) => {
     *     console.log(`Current Transport RTT: ${stats.RTT}`);
-    *     console.log(`Current Network Type: ${stats.networkType}`);
+    *     console.log(`Current Network Type: ${stats.NetworkType}`);
     *     console.log(`Current Transport OutgoingAvailableBandwidth: ${stats.OutgoingAvailableBandwidth}`);
-    * });
+    *   });
+    * }, 1000)
     * ```
     */
   def getTransportStats(callback: js.Function1[/* stats */ TransportStats, Unit]): Unit = js.native
@@ -567,53 +588,133 @@ trait Client extends StObject {
     * - If you use a number as the user ID, it should be a 32-bit unsigned integer with a value ranging from 0 to (2<sup>32</sup>-1).
     * - If you use a string as the user ID, the maximum length is 255 characters.
     * - You can use string UIDs to interoperate with the Native SDK 2.8 or later. Ensure that the Native SDK uses the User Account to join the channel. See [Use String User Accounts](https://docs.agora.io/en/faq/string).
-    * @param onSuccess The callback when the method succeeds. The server returns the uid which represents the identity of the user.
+    * @param optionalInfo (Optional) Additional information that you want to pass in. You can leave this parameter as empty or pass in channel-related information. Other users in the channel do not receive this information.
+    * @param onSuccess The callback when the method succeeds. The server returns the uid (number) which represents the identity of the user.
     * @param onFailure The callback when the method fails. The following are common errors:
-    * - "INVALID_OPERATION": Unable to join the channel. Usually due to calling `Client.join` repeatedly.
-    * - "UID_CONFLICT": The `uid` of the local client conflicts with other users in the channel.
-    * - "ERR_REPEAT_JOIN": The local client has already joined the channel.
-    * - "SOCKET_ERROR": The SDK disconnects with the Agora server when joining the channel.
+    * - `"INVALID_OPERATION"`: Unable to join the channel. Usually due to calling `Client.join` repeatedly.
+    * - `"UID_CONFLICT"`: The `uid` of the local client conflicts with other users in the channel.
+    * - `"ERR_REPEAT_JOIN"`: The local client has already joined the channel.
+    * - `"SOCKET_ERROR"`: The SDK disconnects with the Agora server when joining the channel.
+    * - `"CANNOT_MEET_AREA_DEMAND"`: The connection fails because the user is outside the chosen region for connection. For example, if you set {@link ClientConfig.areaCode} as `[AgoraRTC.AREAS.EUROPE]`, and a user tries to join the channel in North America, this error occurs. If `ClientConfig.areaCode` is not explicitly set, then by default the SDK requests servers across multiple regions and chooses an optimal connection, so the console log may print this error when a user joins the channel. In this case, you can ignore the error.
     */
   def join(tokenOrKey: String, channel: String): Unit = js.native
   def join(tokenOrKey: String, channel: String, uid: String): Unit = js.native
+  def join(tokenOrKey: String, channel: String, uid: String, optionalInfo: String): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: String,
+    optionalInfo: String,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(tokenOrKey: String, channel: String, uid: Double): Unit = js.native
+  def join(tokenOrKey: String, channel: String, uid: Double, optionalInfo: String): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: Double,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: Double,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: Double,
+    optionalInfo: String,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(tokenOrKey: String, channel: String, uid: Null, optionalInfo: String): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
@@ -621,62 +722,143 @@ trait Client extends StObject {
     tokenOrKey: String,
     channel: String,
     uid: Null,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: Null,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
     uid: Null,
+    optionalInfo: Unit,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(tokenOrKey: Null, channel: String): Unit = js.native
   def join(tokenOrKey: Null, channel: String, uid: String): Unit = js.native
+  def join(tokenOrKey: Null, channel: String, uid: String, optionalInfo: String): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: String,
+    optionalInfo: String,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: String,
+    optionalInfo: Unit,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(tokenOrKey: Null, channel: String, uid: Double): Unit = js.native
+  def join(tokenOrKey: Null, channel: String, uid: Double, optionalInfo: String): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: Double,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: Double,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: Double,
+    optionalInfo: String,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Double,
+    optionalInfo: Unit,
+    onSuccess: Unit,
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(tokenOrKey: Null, channel: String, uid: Null, optionalInfo: String): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Null,
+    optionalInfo: String,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
@@ -684,19 +866,22 @@ trait Client extends StObject {
     tokenOrKey: Null,
     channel: String,
     uid: Null,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: Null,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    optionalInfo: Unit,
+    onSuccess: js.Function1[/* uid */ Double, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
     channel: String,
     uid: Null,
+    optionalInfo: Unit,
     onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
@@ -745,10 +930,10 @@ trait Client extends StObject {
     *   console.log("Stream Published");
     *   evt.stream.play("divId");
     *   client.off("stream-published", processStreamPublished);
-    * })
+    * });
     * ```
     */
-  def off(eventType: String, callback: js.Any): Unit = js.native
+  def off(eventType: String, callback: Any): Unit = js.native
   
   /**
     * **DEPRECATED** from 3.0.2. Use `Client.on("volume-indicator")` instead.
@@ -764,7 +949,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_activespeaker(event: `active-speaker`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_activespeaker(event: `active-speaker`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when a camera is added or removed.
     * @example **Sample code**
@@ -777,7 +962,7 @@ trait Client extends StObject {
     *
     */
   @JSName("on")
-  def on_camerachanged(event: `camera-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_camerachanged(event: `camera-changed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Reports events during the media stream relay.
     *
@@ -813,9 +998,9 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_clientbanned(event: `client-banned`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_clientbanned(event: `client-banned`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
-    * Occurs when the user role switches in a live broadcast. For example, from a host to an audience or vice versa.
+    * Occurs when the user role switches in a live interactive streaming scenario. For example, from a host to an audience or vice versa.
     *
     * @example **Sample code**
     *
@@ -834,7 +1019,7 @@ trait Client extends StObject {
     * ``` javascript
     * client.on("connected", function() {
     *   console.log("connected");
-    * })
+    * });
     * ```
     *
     */
@@ -859,7 +1044,7 @@ trait Client extends StObject {
     * ``` javascript
     * client.on("connection-state-change", function(evt) {
     *   console.log(evt.prevState, evt.curState);
-    * })
+    * });
     * ```
     */
   @JSName("on")
@@ -880,7 +1065,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_crypterror(event: `crypt-error`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_crypterror(event: `crypt-error`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when a remote user of the Native SDK calls `enableLocalVideo(false)` to disable video capture.
     *
@@ -912,7 +1097,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_error(event: error, callback: js.Function1[/* evt */ Type, Unit]): Unit = js.native
+  def on_error(event: error, callback: js.Function1[/* evt */ ReasonType, Unit]): Unit = js.native
   /**
     * Reports exception events in the channel.
     *
@@ -931,7 +1116,7 @@ trait Client extends StObject {
     * ``` javascript
     * client.on("exception", function(evt) {
     *   console.log(evt.code, evt.msg, evt.uid);
-    * })
+    * });
     * ```
     */
   @JSName("on")
@@ -947,12 +1132,11 @@ trait Client extends StObject {
     * client.on('first-audio-frame-decode', function (evt) {
     *   console.log('first-audio-frame-decode');
     *   console.log(evt.stream);
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_firstaudioframedecode(event: `first-audio-frame-decode`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_firstaudioframedecode(event: `first-audio-frame-decode`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the first remote video frame is decoded.
     *
@@ -963,38 +1147,33 @@ trait Client extends StObject {
     * client.on('first-video-frame-decode', function (evt) {
     *   console.log('first-video-frame-decode');
     *   console.log(evt.stream);
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_firstvideoframedecode(event: `first-video-frame-decode`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_firstvideoframedecode(event: `first-video-frame-decode`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the live streaming fails.
     */
   @JSName("on")
-  def on_liveStreamingFailed(event: liveStreamingFailed, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_liveStreamingFailed(event: liveStreamingFailed, callback: js.Function1[/* evt */ Url, Unit]): Unit = js.native
   /**
     * Occurs when the live streaming starts.
     */
   @JSName("on")
-  def on_liveStreamingStarted(event: liveStreamingStarted, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_liveStreamingStarted(event: liveStreamingStarted, callback: js.Function1[/* evt */ Type, Unit]): Unit = js.native
   /**
     * Occurs when the live streaming stops.
     */
   @JSName("on")
-  def on_liveStreamingStopped(event: liveStreamingStopped, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_liveStreamingStopped(event: liveStreamingStopped, callback: js.Function1[/* evt */ TypeUrl, Unit]): Unit = js.native
   /**
     * Occurs when the live transcoding setting is updated.
     *
     * The SDK triggers this callback when the live transcoding setting is updated by calling the {@link setLiveTranscoding} method.
-    *
-    * **Note**
-    *
-    * The first call of the {@link setLiveTranscoding} method does not trigger this callback.
     */
   @JSName("on")
-  def on_liveTranscodingUpdated(event: liveTranscodingUpdated, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_liveTranscodingUpdated(event: liveTranscodingUpdated, callback: js.Function1[/* evt */ `0`, Unit]): Unit = js.native
   /**
     * Occurs when the peer user mutes the audio.
     * @example **Sample code**
@@ -1008,7 +1187,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_muteaudio(event: `mute-audio`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_muteaudio(event: `mute-audio`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the peer user turns off the video.
     * @example **Sample code**
@@ -1017,12 +1196,11 @@ trait Client extends StObject {
     *   var uid = evt.uid;
     *   console.log("mute video" + uid);
     *   //alert("mute video:" + uid);
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_mutevideo(event: `mute-video`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_mutevideo(event: `mute-video`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Reports the network quality of the local user once every two seconds.
     *
@@ -1063,7 +1241,7 @@ trait Client extends StObject {
     * See [Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API) for details.
     */
   @JSName("on")
-  def on_networktypechanged(event: `network-type-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_networktypechanged(event: `network-type-changed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the Token expires.
     *
@@ -1078,7 +1256,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_onTokenPrivilegeDidExpire(event: onTokenPrivilegeDidExpire, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_onTokenPrivilegeDidExpire(event: onTokenPrivilegeDidExpire, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the Token expires in 30 seconds.
     *
@@ -1093,7 +1271,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_onTokenPrivilegeWillExpire(event: onTokenPrivilegeWillExpire, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_onTokenPrivilegeWillExpire(event: onTokenPrivilegeWillExpire, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when a remote user becomes offline.
     *
@@ -1158,24 +1336,7 @@ trait Client extends StObject {
     * Only supports Chrome 49+.
     */
   @JSName("on")
-  def on_playoutdevicechanged(event: `playout-device-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
-  /**
-    *  Occurs when the local user receives metadata.
-    *
-    * **Since**
-    * <br>&emsp;&emsp;&emsp;*3.1.0*
-    *
-    * This callback reports the received metadata and the ID of the user who sends it.
-    * @example **Sample code**
-    * ``` javascript
-    * client.on("receive-metadata", function (evt) {
-    *   console.log("receive metadata from: ", evt.uid);
-    *   console.log("receive metadata: ", evt.metadata);
-    * })
-    * ```
-    */
-  @JSName("on")
-  def on_receivemetadata(event: `receive-metadata`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_playoutdevicechanged(event: `playout-device-changed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the SDK starts reconnecting to the server automatically after the connection is lost.
     *
@@ -1183,7 +1344,7 @@ trait Client extends StObject {
     * ``` javascript
     * client.on("reconnect", function() {
     *   console.log("reconnect");
-    * })
+    * });
     * ```
     *
     */
@@ -1201,12 +1362,26 @@ trait Client extends StObject {
     *
     */
   @JSName("on")
-  def on_recordingdevicechanged(event: `recording-device-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_recordingdevicechanged(event: `recording-device-changed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
+    * Occurs when the local user rejoins the channel successfully.
+    *
+    * @example **Sample code**
+    * ```
+    * client.on("rejoin", function() {
+    *   console.log("rejoin");
+    * });
+    * ```
+    */
+  @JSName("on")
+  def on_rejoin(event: rejoin, callback: js.Function0[Unit]): Unit = js.native
+  /**
+    * **Note**: Agora will soon stop the service for injecting online media streams on the client. If you have not implemented this service, Agora recommends that you do not use it.
+    *
     * Occurs when the injected online media stream's status is updated.
     */
   @JSName("on")
-  def on_streamInjectedStatus(event: streamInjectedStatus, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamInjectedStatus(event: streamInjectedStatus, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the remote stream is added.
     *
@@ -1220,13 +1395,12 @@ trait Client extends StObject {
     *     console.log("new stream added ", stream.getId());
     *     // Subscribe the stream.
     *     //……
-    * })
-    *
+    * });
     * ```
     *
     */
   @JSName("on")
-  def on_streamadded(event: `stream-added`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamadded(event: `stream-added`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the remote video stream falls back to an audio-only stream due to unreliable network conditions or switches back to the video after the network conditions improve.
     *
@@ -1247,21 +1421,20 @@ trait Client extends StObject {
     * client.on("stream-published", function(evt) {
     *     console.log("local stream published");
     *     //……
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_streampublished(event: `stream-published`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streampublished(event: `stream-published`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
-    * Occurs when the SDK finishes republishing or re-subscribing to a stream.
+    * Occurs when the SDK finishes republishing or resubscribing to a stream.
     *
     * @example **Sample code**
     *
     * ``` javascript
     * client.on('stream-reconnect-end', function(evt) {
     *   console.log(evt.uid, evt.success, evt.reason);
-    * })
+    * });
     * ```
     */
   @JSName("on")
@@ -1274,11 +1447,11 @@ trait Client extends StObject {
     * ``` javascript
     * client.on("stream-reconnect-start", function(evt) {
     *   console.log(evt.uid);
-    * })
+    * });
     * ```
     */
   @JSName("on")
-  def on_streamreconnectstart(event: `stream-reconnect-start`, callback: js.Function1[/* evt */ `0`, Unit]): Unit = js.native
+  def on_streamreconnectstart(event: `stream-reconnect-start`, callback: js.Function1[/* evt */ `1`, Unit]): Unit = js.native
   /**
     * Occurs when the remote stream is removed; for example, a peer user calls {@link Client.unpublish}.
     * @example **Sample code**
@@ -1292,7 +1465,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_streamremoved(event: `stream-removed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamremoved(event: `stream-removed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when a user subscribes to a remote stream.
     * @example **Sample code**
@@ -1302,12 +1475,11 @@ trait Client extends StObject {
     *     console.log("new stream subscribed ", stream.getId());
     *     // Play the stream.
     *     //……
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_streamsubscribed(event: `stream-subscribed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamsubscribed(event: `stream-subscribed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the type of a video stream changes.
     *
@@ -1328,7 +1500,7 @@ trait Client extends StObject {
     *
     */
   @JSName("on")
-  def on_streamtypechanged(event: `stream-type-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamtypechanged(event: `stream-type-changed`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the local stream is unpublished.
     * @example **Sample code**
@@ -1341,7 +1513,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_streamunpublished(event: `stream-unpublished`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_streamunpublished(event: `stream-unpublished`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when a remote stream adds or removes a track.
     *
@@ -1361,7 +1533,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_unmuteaudio(event: `unmute-audio`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_unmuteaudio(event: `unmute-audio`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the peer user turns on the video.
     * @example **Sample code**
@@ -1369,12 +1541,11 @@ trait Client extends StObject {
     * client.on("unmute-video", function (evt) {
     *   var uid = evt.uid;
     *   console.log("unmute video:" + uid);
-    * })
-    *
+    * });
     * ```
     */
   @JSName("on")
-  def on_unmutevideo(event: `unmute-video`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_unmutevideo(event: `unmute-video`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * This callback notifies the application of all the speaking remote users and their volumes.
     *
@@ -1392,7 +1563,7 @@ trait Client extends StObject {
     * ```
     */
   @JSName("on")
-  def on_volumeindicator(event: `volume-indicator`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_volumeindicator(event: `volume-indicator`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   
   /**
     * Publishes a Local Stream
@@ -1405,13 +1576,13 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * In a live broadcast, whoever calls this API is the host.
+    * In a live interactive streaming channel, whoever calls this API is the host.
     * @example **Sample code**
     * ``` javascript
     * client.publish(stream, function(err) {
     *     console.log(err);
     *     //……
-    * })
+    * });
     * ```
     * @param stream Stream object, which represents the local stream.
     * @param onFailure The callback when the method fails. The following are common errors:
@@ -1420,15 +1591,18 @@ trait Client extends StObject {
     * - "INVALID_OPERATION": The user is not in the channel, possibly because the user has not joined the channel or the connection is interrupted.
     * - "PUBLISH_STREAM_FAILED": Fails to publish the stream, usually because the connection is lost during publishing.
     * - "PEERCONNECTION_FAILED": Fails to establish the media transport channel.
+    * - "REQUEST_ABORT": The connection is lost during publishing the stream. You can listen for the `rejoin` event, and call `publish` again.
     */
   def publish(stream: Stream): Unit = js.native
   def publish(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   
   /**
+    * **Note**: Agora will soon stop the service for injecting online media streams on the client. If you have not implemented this service, Agora recommends that you do not use it.
+    *
     * Removes the Injected Stream
     *
-    * This method removes the HTTP/HTTPS URL address (added by [[addInjectStreamUrl]]) from the live broadcast.
-    * @param url URL address of the live streaming. ASCII characters only, and the string length must be greater that 0 and less than 256 bytes.
+    * This method removes the HTTP/HTTPS URL address (added by [[addInjectStreamUrl]]) from the live interactive streaming.
+    * @param url URL address of the injected stream. ASCII characters only, and the string length must be greater that 0 and less than 256 bytes.
     */
   def removeInjectStreamUrl(url: String): Unit = js.native
   
@@ -1463,23 +1637,6 @@ trait Client extends StObject {
   def renewToken(token: String): Unit = js.native
   
   /**
-    * Sends metadata.
-    *
-    * **Since**
-    * <br>&emsp;&emsp;&emsp;*3.1.0*
-    *
-    * This method adds metadata in a media stream, which allows you to diversify interactions in live broadcasts.
-    * Example metadata includes shopping links, digital coupons, and online quizzes.
-    *
-    * **Note**
-    * - This function supports the H.264 codec only. Ensure that you set `codec` as `"h264"` in `createClient`。
-    * - Ensure that you call this method after successfully publishing a stream.
-    * @param data String, the metadata to send. The maximum size is 1024 bytes.
-    * @param callback The result of sending metadata.
-    */
-  def sendMetadata(data: String, callback: js.Function1[/* err */ Null | String, Unit]): Unit = js.native
-  
-  /**
     * Sets the role of the user.
     *
     * This method is applicable only to the live mode.
@@ -1501,7 +1658,7 @@ trait Client extends StObject {
     *
     * In communication mode ([[mode]] set as `rtc`), this method does not take effect. All users are `host` by default.
     *
-    * @param role User role in a live broadcast:
+    * @param role User role:
     *
     * - `"audience"`: Audience, the default role. An audience can only receive streams.
     * - `"host"`: Host. A host can both send and receive streams.
@@ -1519,17 +1676,9 @@ trait Client extends StObject {
     * ```
     *
     */
-  @JSName("setClientRole")
-  def setClientRole_audience(role: audience): Unit = js.native
-  @JSName("setClientRole")
-  def setClientRole_audience(role: audience, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
-  @JSName("setClientRole")
-  def setClientRole_host(role: host): Unit = js.native
-  @JSName("setClientRole")
-  def setClientRole_host(role: host, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
+  def setClientRole(role: audience | host): Unit = js.native
+  def setClientRole(role: audience | host, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
   
-  @JSName("setEncryptionMode")
-  def setEncryptionMode_aes128ecb(encryptionMode: `aes-128-ecb`): Unit = js.native
   /**
     * Sets the Encryption Mode
     *
@@ -1545,29 +1694,38 @@ trait Client extends StObject {
     * @example `client.setEncryptionMode(encryptionMode);`
     * @param encryptionMode The encryption mode:
     *
-    * - aes-128-xts: Sets the encryption mode as AES128XTS.
-    * - aes-256-xts: Sets the encryption mode as AES256XTS.
-    * - aes-128-ecb: Sets the encryption mode as AES128ECB.
+    * - `"aes-128-xts"`: 128-bit AES encryption, XTS mode.
+    * - `"aes-256-xts"`: 256-bit AES encryption, XTS mode.
+    * - `"aes-128-ecb"`: 128-bit AES encryption, ECB mode.
+    * - `"aes-128-gcm"`: 128-bit AES encryption, GCM mode.
+    * - `"aes-256-gcm"`: 256-bit AES encryption, GCM mode.
+    * - `"aes-128-gcm2"`: 128-bit AES encryption, GCM mode, salt.
+    * - `"aes-256-gcm2"`: 256-bit AES encryption, GCM mode, salt.
+    * - `"sm4-128-ecb"`: 128-bit SM4 encryption, ECB mode.
+    * - `"none"`: No encryption.
     */
-  @JSName("setEncryptionMode")
-  def setEncryptionMode_aes128xts(encryptionMode: `aes-128-xts`): Unit = js.native
-  @JSName("setEncryptionMode")
-  def setEncryptionMode_aes256xts(encryptionMode: `aes-256-xts`): Unit = js.native
+  def setEncryptionMode(
+    encryptionMode: `aes-128-xts` | `aes-256-xts` | `aes-128-ecb` | `sm4-128-ecb` | `aes-128-gcm` | `aes-256-gcm` | `aes-128-gcm2` | `aes-256-gcm2` | none
+  ): Unit = js.native
+  def setEncryptionMode(
+    encryptionMode: `aes-128-xts` | `aes-256-xts` | `aes-128-ecb` | `sm4-128-ecb` | `aes-128-gcm` | `aes-256-gcm` | `aes-128-gcm2` | `aes-256-gcm2` | none,
+    salt: String
+  ): Unit = js.native
   
   /**
     * Enables Built-in Encryption
     *
     * Use this method with [[setEncryptionMode]] method to enable the built-in encryption before joining a channel.
     *
-    * All users in a channel must set the same encryption password.
+    * All users in a channel must set the same encryption secret.
     *
     * **Note**
     *
     * - Ensure you call [[setEncryptionSecret]] and [[setEncryptionMode]] before joining the channel, otherwise the encryption is disabled.
     * - Do not use this method for CDN live streaming.
-    * - If the encryption password is incorrect, the SDK triggers the `Client.on("crypt-error")` callback when publishing or subscribing to a stream.
+    * - If the encryption secret is incorrect, the SDK triggers the `Client.on("crypt-error")` callback when publishing or subscribing to a stream.
     * @example `client.setEncryptionSecret(password)`
-    * @param password The encryption password. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
+    * @param password The encryption secret. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes. When a user uses a weak secret, the SDK outputs a warning message to the Web Console and remind the users to use a strong password. A strong secret must contain at least eight characters and be a combination of uppercase and lowercase letters, numbers and special characters.
     */
   def setEncryptionSecret(password: String): Unit = js.native
   
@@ -1580,7 +1738,6 @@ trait Client extends StObject {
     * **Note**
     *
     * - Ensure that you [enable the RTMP Converter service](../../../cdn_streaming_web#prerequisites) before using this function.
-    * - The first call of this method does not trigger the `Client.on("liveTranscodingUpdated")` callback.
     * - Call {@link setLiveTranscoding} after {@link createStream}. For details, see [Push Streams to CDN](../../../cdn_streaming_web).
     * @param coding Transcoding settings, see {@link LiveTranscoding} for details.
     */
@@ -1653,10 +1810,10 @@ trait Client extends StObject {
     * - 0: High-bitrate, high-resolution video stream.
     * - 1: Low-bitrate, low-resolution video stream.
     */
-  @JSName("setRemoteVideoStreamType")
-  def setRemoteVideoStreamType_0(stream: Stream, streamType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`): Unit = js.native
-  @JSName("setRemoteVideoStreamType")
-  def setRemoteVideoStreamType_1(stream: Stream, streamType: `1`): Unit = js.native
+  def setRemoteVideoStreamType(
+    stream: Stream,
+    streamType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0` | typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
+  ): Unit = js.native
   
   /**
     * Sets Stream Fallback Option
@@ -1685,12 +1842,10 @@ trait Client extends StObject {
     * client.setStreamFallbackOption(remoteStream, 2);
     * ```
     */
-  @JSName("setStreamFallbackOption")
-  def setStreamFallbackOption_0(stream: Stream, fallbackType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`): Unit = js.native
-  @JSName("setStreamFallbackOption")
-  def setStreamFallbackOption_1(stream: Stream, fallbackType: `1`): Unit = js.native
-  @JSName("setStreamFallbackOption")
-  def setStreamFallbackOption_2(stream: Stream, fallbackType: `2`): Unit = js.native
+  def setStreamFallbackOption(
+    stream: Stream,
+    fallbackType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0` | typings.agoraRtcSdk.agoraRtcSdkNumbers.`1` | `2`
+  ): Unit = js.native
   
   /**
     * Deploys the TURN Server
@@ -1703,10 +1858,9 @@ trait Client extends StObject {
     *
     * Ensure that you call this API before {@link Client.join}.
     * @example `client.setTurnServer(config);`
-    * @param turnServer The TURN server settings. See {@link ClientConfig.turnServer} for details.
+    * @param turnServer An array of the {@link TurnServer} objects. You can pass configurations of multiple TURN servers to this parameter.
     */
-  def setTurnServer(): Unit = js.native
-  def setTurnServer(turnServer: js.Array[Forceturn]): Unit = js.native
+  def setTurnServer(turnServer: js.Array[TurnServer]): Unit = js.native
   
   /**
     * Starts relaying media streams across channels.
@@ -1724,7 +1878,7 @@ trait Client extends StObject {
     *
     * **Note**
     *
-    * - Contact sales-us@agora.io to enable this function.
+    * - Contact support@agora.io to enable this function.
     * - We do not support string user IDs in this API.
     * - Call this method only after joining a channel.
     * - In a live-broadcast channel, only a host can call this method.
@@ -1780,9 +1934,11 @@ trait Client extends StObject {
     *
     * This method must be called before joining the channel or after leaving the channel.
     *
-    * To use the cloud proxy service, some extra settings are needed, see [Use Cloud Proxy](https://docs.agora.io/en/Interactive%20Broadcast/cloud_proxy_web?platform=Web) for details.
+    * For the extra settings required for using the cloud proxy service, see [Use Cloud Proxy](https://docs.agora.io/en/Interactive%20Broadcast/cloud_proxy_web?platform=Web).
+    *
     */
   def startProxyServer(): Unit = js.native
+  def startProxyServer(`type`: Double): Unit = js.native
   
   /**
     * Stops the media stream relay.
@@ -1889,19 +2045,18 @@ trait Client extends StObject {
     *
     * This method unpublishes the local stream.
     *
-    * When the stream is unpublished, the `Client.on("stream-removed")` callback is triggered on the remote client.
+    * When the stream is unpublished, the `Client.on("stream-unpublished")` callback is triggered on the local client, and the `Client.on("stream-removed")` callback is triggered on the remote client.
     *
     * **Note**
     *
-    * In a live broadcast, the user role of a host switches to audience after unpublishing, and the `Client.on("peer-leave")` callback is triggered on the remote client.
+    * In a live interactive streaming scenario, the user role of a host switches to audience after unpublishing, and the `Client.on("peer-leave")` callback is triggered on the remote client.
     * @example
     * **Sample code**
     * ``` javascript
     * client.unpublish(stream, function(err) {
     *     console.log(err);
     *     //……
-    * })
-    *
+    * });
     * ```
     * @param stream Stream object, which represents the local stream.
     * @param onFailure The callback when the method fails. The following are common errors:
@@ -1922,8 +2077,7 @@ trait Client extends StObject {
     * client.unsubscribe(stream, function(err) {
     *     console.log(err);
     *     //……
-    * })
-    *
+    * });
     * ```
     * @param stream Stream object, which represents the remote stream.
     * @param onFailure The callback when the method fails. The following are common errors:

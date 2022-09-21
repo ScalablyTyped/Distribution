@@ -9,6 +9,7 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.SVGElement
 import typings.std.SVGMatrix
+import typings.std.TouchEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -215,7 +216,7 @@ object mod {
   
   inline def format(token: String, json: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(token.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def fragment(varargs: js.Any): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(varargs.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
+  inline def fragment(varargs: Any): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(varargs.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
   
   inline def getElementByPoint(x: Double, y: Double): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementByPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Element]
   
@@ -229,7 +230,7 @@ object mod {
   
   inline def hsl2rgb(h: Double, s: Double, l: Double): RGB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[RGB_]
   
-  inline def is(o: js.Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(o.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def is(o: Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(o.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def len(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("len")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -244,11 +245,11 @@ object mod {
   
   inline def parse(svg: String): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svg.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
   
-  inline def parsePathString(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def parsePathString(pathString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def parsePathString(pathString: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def parsePathString(pathString: js.Array[String]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def parseTransformString(TString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def parseTransformString(TString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def parseTransformString(TString: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def parseTransformString(TString: js.Array[String]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   @JSImport("snapsvg", "path")
   @js.native
@@ -267,9 +268,9 @@ object mod {
   
   inline def select(query: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(query.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def selectAll(query: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(query.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def selectAll(query: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def set(els: Element*): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(els.asInstanceOf[js.Any]).asInstanceOf[Set_]
+  inline def set(els: Element*): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(els.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Set_]
   
   inline def sin(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -282,7 +283,7 @@ object mod {
   
   trait Animation_ extends StObject {
     
-    var attr: StringDictionary[String | Double | Boolean | js.Any]
+    var attr: StringDictionary[String | Double | Boolean | Any]
     
     var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -292,14 +293,14 @@ object mod {
   }
   object Animation_ {
     
-    inline def apply(attr: StringDictionary[String | Double | Boolean | js.Any], duration: Double): Animation_ = {
+    inline def apply(attr: StringDictionary[String | Double | Boolean | Any], duration: Double): Animation_ = {
       val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[Animation_]
     }
     
     extension [Self <: Animation_](x: Self) {
       
-      inline def setAttr(value: StringDictionary[String | Double | Boolean | js.Any]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: StringDictionary[String | Double | Boolean | Any]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -414,21 +415,21 @@ object mod {
     
     def align(el: Element, way: String): Element = js.native
     
-    def animate(animation: js.Any): Element = js.native
-    def animate(attrs: StringDictionary[String | Double | Boolean | js.Any], duration: Double): Element = js.native
+    def animate(animation: Any): Element = js.native
+    def animate(attrs: StringDictionary[String | Double | Boolean | Any], duration: Double): Element = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double]
     ): Element = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double],
       callback: js.Function0[Unit]
     ): Element = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: Unit,
       callback: js.Function0[Unit]
@@ -443,7 +444,7 @@ object mod {
     def asPX(attr: String, value: String): Double = js.native
     
     def attr(param: String): String = js.native
-    def attr(params: StringDictionary[String | Double | Boolean | BBox | js.Any]): Element = js.native
+    def attr(params: StringDictionary[String | Double | Boolean | BBox | Any]): Element = js.native
     //TODO: check what is really returned
     @JSName("attr")
     def attr_viewBox(param: viewBox): BBox = js.native
@@ -453,13 +454,13 @@ object mod {
     def children(): js.Array[Element] = js.native
     
     def click(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def click(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def click(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
-    def data(key: String): js.Any = js.native
-    def data(key: String, value: js.Any): js.Any = js.native
+    def data(key: String): Any = js.native
+    def data(key: String, value: Any): Any = js.native
     
     def dblclick(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def dblclick(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def dblclick(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     def drag(): Element = js.native
     def drag(
@@ -485,7 +486,7 @@ object mod {
         ],
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.Any
+      moveThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -498,8 +499,8 @@ object mod {
         ],
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.Any,
-      startThisArg: js.Any
+      moveThisArg: Any,
+      startThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -512,9 +513,9 @@ object mod {
         ],
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.Any,
-      startThisArg: js.Any,
-      endThisArg: js.Any
+      moveThisArg: Any,
+      startThisArg: Any,
+      endThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -527,9 +528,9 @@ object mod {
         ],
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
-      moveThisArg: js.Any,
+      moveThisArg: Any,
       startThisArg: Unit,
-      endThisArg: js.Any
+      endThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -543,7 +544,7 @@ object mod {
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: Unit,
-      startThisArg: js.Any
+      startThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -557,8 +558,8 @@ object mod {
       onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: Unit,
-      startThisArg: js.Any,
-      endThisArg: js.Any
+      startThisArg: Any,
+      endThisArg: Any
     ): Element = js.native
     def drag(
       onMove: js.Function5[
@@ -573,7 +574,7 @@ object mod {
       onEnd: js.Function1[/* event */ MouseEvent, Unit],
       moveThisArg: Unit,
       startThisArg: Unit,
-      endThisArg: js.Any
+      endThisArg: Any
     ): Element = js.native
     
     def getAlign(el: Element, way: String): String = js.native
@@ -595,19 +596,19 @@ object mod {
     def hover(
       hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
       hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
-      inThisArg: js.Any,
-      outThisArg: js.Any
+      inThisArg: Any,
+      outThisArg: Any
     ): Element = js.native
     def hover(
       hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
       hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
       inThisArg: Unit,
-      outThisArg: js.Any
+      outThisArg: Any
     ): Element = js.native
     def hover(
       hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
       hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Element = js.native
     
     def inAnim(): js.Array[Anim] = js.native
@@ -621,19 +622,19 @@ object mod {
     def marker(x: Double, y: Double, width: Double, height: Double, refX: Double, refY: Double): Element = js.native
     
     def mousedown(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def mousedown(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def mousedown(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     def mousemove(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def mousemove(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def mousemove(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     def mouseout(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def mouseout(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def mouseout(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     def mouseover(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def mouseover(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def mouseover(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     def mouseup(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def mouseup(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def mouseup(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: Any): Element = js.native
     
     var node: HTMLElement = js.native
     
@@ -644,7 +645,7 @@ object mod {
     
     def parent(): Element = js.native
     
-    def pattern(x: js.Any, y: js.Any, width: js.Any, height: js.Any): Element = js.native
+    def pattern(x: Any, y: Any, width: Any, height: Any): Element = js.native
     
     def prepend(el: Element): Element = js.native
     
@@ -666,24 +667,24 @@ object mod {
     
     def toDefs(): Element = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     def toPattern(x: String, y: String, width: String, height: String): js.Object = js.native
     def toPattern(x: Double, y: Double, width: Double, height: Double): js.Object = js.native
     
     def toggleClass(value: String, flag: Boolean): Element = js.native
     
-    def touchcancel(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def touchcancel(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def touchcancel(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
+    def touchcancel(handler: js.Function1[/* event */ TouchEvent, Unit], thisArg: Any): Element = js.native
     
-    def touchend(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def touchend(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def touchend(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
+    def touchend(handler: js.Function1[/* event */ TouchEvent, Unit], thisArg: Any): Element = js.native
     
-    def touchmove(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def touchmove(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def touchmove(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
+    def touchmove(handler: js.Function1[/* event */ TouchEvent, Unit], thisArg: Any): Element = js.native
     
-    def touchstart(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
-    def touchstart(handler: js.Function1[/* event */ MouseEvent, Unit], thisArg: js.Any): Element = js.native
+    def touchstart(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
+    def touchstart(handler: js.Function1[/* event */ TouchEvent, Unit], thisArg: Any): Element = js.native
     
     def transform(): TransformationDescriptor = js.native
     def transform(tstr: String): Element = js.native
@@ -724,16 +725,16 @@ object mod {
     def unmouseup(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
     
     def untouchcancel(): Element = js.native
-    def untouchcancel(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
+    def untouchcancel(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
     
     def untouchend(): Element = js.native
-    def untouchend(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
+    def untouchend(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
     
     def untouchmove(): Element = js.native
-    def untouchmove(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
+    def untouchmove(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
     
     def untouchstart(): Element = js.native
-    def untouchstart(handler: js.Function1[/* event */ MouseEvent, Unit]): Element = js.native
+    def untouchstart(handler: js.Function1[/* event */ TouchEvent, Unit]): Element = js.native
     
     def use(): js.Object = js.native
   }
@@ -923,11 +924,11 @@ object mod {
       
       inline def setBez1(value: js.Array[Double]): Self = StObject.set(x, "bez1", value.asInstanceOf[js.Any])
       
-      inline def setBez1Varargs(value: Double*): Self = StObject.set(x, "bez1", js.Array(value :_*))
+      inline def setBez1Varargs(value: Double*): Self = StObject.set(x, "bez1", js.Array(value*))
       
       inline def setBez2(value: js.Array[Double]): Self = StObject.set(x, "bez2", value.asInstanceOf[js.Any])
       
-      inline def setBez2Varargs(value: Double*): Self = StObject.set(x, "bez2", js.Array(value :_*))
+      inline def setBez2Varargs(value: Double*): Self = StObject.set(x, "bez2", js.Array(value*))
       
       inline def setSegment1(value: Double): Self = StObject.set(x, "segment1", value.asInstanceOf[js.Any])
       
@@ -959,24 +960,24 @@ object mod {
     def filter(filstr: String): Element = js.native
     
     def g(): Paper = js.native
-    def g(varargs: js.Any): Paper = js.native
+    def g(varargs: Any): Paper = js.native
     
     def gradient(gradient: String): Gradient = js.native
     
-    def group(els: js.Any*): Paper = js.native
+    def group(els: Any*): Paper = js.native
     
     def image(src: String, x: Double, y: Double, width: Double, height: Double): Element = js.native
     
     def line(x1: Double, y1: Double, x2: Double, y2: Double): Element = js.native
     
-    def mask(varargs: js.Any): js.Object = js.native
+    def mask(varargs: Any): js.Object = js.native
     
     def path(pathSpec: String): Element = js.native
     def path(pathSpec: js.Array[js.Array[String | Double]]): Element = js.native
     
-    def polygon(varargs: js.Array[js.Any]): Element = js.native
+    def polygon(varargs: js.Array[Any]): Element = js.native
     
-    def polyline(varargs: js.Array[js.Any]): Element = js.native
+    def polyline(varargs: js.Array[Any]): Element = js.native
     
     def ptrn(
       x: Double,
@@ -1054,12 +1055,12 @@ object mod {
     def map(path: String, matrix: js.Object): String = js.native
     def map(path: String, matrix: Matrix_): String = js.native
     
-    def toAbsolute(path: String): js.Array[js.Any] = js.native
+    def toAbsolute(path: String): js.Array[Any] = js.native
     
-    def toCubic(pathString: String): js.Array[js.Any] = js.native
-    def toCubic(pathString: js.Array[String]): js.Array[js.Any] = js.native
+    def toCubic(pathString: String): js.Array[Any] = js.native
+    def toCubic(pathString: js.Array[String]): js.Array[Any] = js.native
     
-    def toRelative(path: String): js.Array[js.Any] = js.native
+    def toRelative(path: String): js.Array[Any] = js.native
   }
   
   trait RGBHSB extends StObject {
@@ -1155,33 +1156,33 @@ object mod {
     
     def animate(
       attrs: (js.Tuple4[
-          StringDictionary[String | Double | Boolean | js.Any], 
+          StringDictionary[String | Double | Boolean | Any], 
           js.UndefOr[Double], 
           js.UndefOr[js.Function1[/* num */ Double, Double]], 
           js.UndefOr[js.Function0[Unit]]
         ])*
     ): Element = js.native
-    def animate(attrs: StringDictionary[String | Double | Boolean | js.Any], duration: Double): Set_ = js.native
+    def animate(attrs: StringDictionary[String | Double | Boolean | Any], duration: Double): Set_ = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double]
     ): Set_ = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: js.Function1[/* num */ Double, Double],
       callback: js.Function0[Unit]
     ): Set_ = js.native
     def animate(
-      attrs: StringDictionary[String | Double | Boolean | js.Any],
+      attrs: StringDictionary[String | Double | Boolean | Any],
       duration: Double,
       easing: Unit,
       callback: js.Function0[Unit]
     ): Set_ = js.native
     
     def attr(param: String): Set_ = js.native
-    def attr(params: StringDictionary[String | Double | Boolean | BBox | js.Any]): Set_ = js.native
+    def attr(params: StringDictionary[String | Double | Boolean | BBox | Any]): Set_ = js.native
     @JSName("attr")
     def attr_viewBox(param: viewBox): Set_ = js.native
     

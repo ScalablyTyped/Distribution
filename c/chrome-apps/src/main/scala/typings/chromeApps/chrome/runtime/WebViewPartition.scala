@@ -28,7 +28,7 @@ object WebViewPartition {
     
     inline def setAccessible_resources(value: js.Array[String]): Self = StObject.set(x, "accessible_resources", value.asInstanceOf[js.Any])
     
-    inline def setAccessible_resourcesVarargs(value: String*): Self = StObject.set(x, "accessible_resources", js.Array(value :_*))
+    inline def setAccessible_resourcesVarargs(value: String*): Self = StObject.set(x, "accessible_resources", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

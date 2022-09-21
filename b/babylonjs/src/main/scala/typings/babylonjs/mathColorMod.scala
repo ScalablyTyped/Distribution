@@ -17,7 +17,7 @@ object mathColorMod {
     * @param g defines the green component (between 0 and 1, default is 0)
     * @param b defines the blue component (between 0 and 1, default is 0)
     */
-  class Color3 () extends StObject {
+  open class Color3 () extends StObject {
     def this(/**
       * Defines the red component (between 0 and 1, default is 0)
       */
@@ -216,9 +216,9 @@ object mathColorMod {
     var r: Double = js.native
     
     /**
-      * Multiplies in place each rgb value by scale
-      * @param scale defines the scaling factor
-      * @returns the updated Color3
+      * Creates a new Color3 with the current Color3 values multiplied by scale
+      * @param scale defines the scaling factor to apply
+      * @returns a new Color3 object
       */
     def scale(scale: Double): Color3 = js.native
     
@@ -229,6 +229,13 @@ object mathColorMod {
       * @returns the unmodified current Color3
       */
     def scaleAndAddToRef(scale: Double, result: Color3): Color3 = js.native
+    
+    /**
+      * Multiplies the Color3 values by the float "scale"
+      * @param scale defines the scaling factor to apply
+      * @returns the current updated Color3
+      */
+    def scaleInPlace(scale: Double): Color3 = js.native
     
     /**
       * Multiplies the rgb values by scale and stores the result into "result"
@@ -367,6 +374,15 @@ object mathColorMod {
     inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Unit, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Converts Hue, saturation and value to a new Color3 (RGB)
+      * @param hue defines the hue (value between 0 and 360)
+      * @param saturation defines the saturation (value between 0 and 1)
+      * @param value defines the value (value between 0 and 1)
+      * @returns a new Color3 object
+      */
+    inline def FromHSV(hue: Double, saturation: Double, value: Double): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromHSV")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Color3]
+    
+    /**
       * Creates a new Color3 from the string containing valid hexadecimal values
       * @param hex defines a string containing valid hexadecimal values
       * @returns a new Color3 object
@@ -395,13 +411,65 @@ object mathColorMod {
     inline def Green(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Green")().asInstanceOf[Color3]
     
     /**
-      * Convert Hue, saturation and value to a Color3 (RGB)
+      * Converts Hue, saturation and value to a Color3 (RGB)
       * @param hue defines the hue
       * @param saturation defines the saturation
       * @param value defines the value
       * @param result defines the Color3 where to store the RGB values
       */
     inline def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVtoRGBToRef")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Returns a new Color3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2"
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent Color3
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent Color3
+      * @param amount defines the amount on the interpolation spline (between 0 and 1)
+      * @returns the new Color3
+      */
+    inline def Hermite(
+      value1: DeepImmutable[Color3],
+      tangent1: DeepImmutable[Color3],
+      value2: DeepImmutable[Color3],
+      tangent2: DeepImmutable[Color3],
+      amount: Double
+    ): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Color3]
+    
+    /**
+      * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @returns 1st derivative
+      */
+    inline def Hermite1stDerivative(
+      value1: DeepImmutable[Color3],
+      tangent1: DeepImmutable[Color3],
+      value2: DeepImmutable[Color3],
+      tangent2: DeepImmutable[Color3],
+      time: Double
+    ): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Color3]
+    
+    /**
+      * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @param result define where to store the derivative
+      */
+    inline def Hermite1stDerivativeToRef(
+      value1: DeepImmutable[Color3],
+      tangent1: DeepImmutable[Color3],
+      value2: DeepImmutable[Color3],
+      tangent2: DeepImmutable[Color3],
+      time: Double,
+      result: Color3
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
@@ -465,8 +533,8 @@ object mathColorMod {
     
     @JSImport("babylonjs/Maths/math.color", "Color3._BlackReadOnly")
     @js.native
-    def _BlackReadOnly: js.Any = js.native
-    inline def _BlackReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
+    def _BlackReadOnly: Any = js.native
+    inline def _BlackReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.color", "Color4")
@@ -478,7 +546,7 @@ object mathColorMod {
     * @param b defines the blue component (between 0 and 1, default is 0)
     * @param a defines the alpha component (between 0 and 1, default is 1)
     */
-  class Color4 () extends StObject {
+  open class Color4 () extends StObject {
     def this(/**
       * Defines the red component (between 0 and 1, default is 0)
       */
@@ -739,7 +807,7 @@ object mathColorMod {
       * @param min defines minimum clamping value (default is 0)
       * @param max defines maximum clamping value (default is 1)
       * @param result defines color to store the result into.
-      * @returns the cuurent Color4
+      * @returns the current Color4
       */
     def clampToRef(min: Double, max: Double, result: Color4): Color4 = js.native
     def clampToRef(min: Double, max: Unit, result: Color4): Color4 = js.native
@@ -797,14 +865,14 @@ object mathColorMod {
     def getHashCode(): Double = js.native
     
     /**
-      * Multipy an Color4 value by another and return a new Color4 object
+      * Multiply an Color4 value by another and return a new Color4 object
       * @param color defines the Color4 value to multiply by
       * @returns a new Color4 object
       */
     def multiply(color: Color4): Color4 = js.native
     
     /**
-      * Multipy a Color4 value by another and push the result in a reference value
+      * Multiply a Color4 value by another and push the result in a reference value
       * @param color defines the Color4 value to multiply by
       * @param result defines the Color4 to fill the result in
       * @returns the result Color4
@@ -830,6 +898,13 @@ object mathColorMod {
       * @returns the unmodified current Color4
       */
     def scaleAndAddToRef(scale: Double, result: Color4): Color4 = js.native
+    
+    /**
+      * Multiplies the Color4 values by the float "scale"
+      * @param scale defines the scaling factor to apply
+      * @returns the current updated Color4
+      */
+    def scaleInPlace(scale: Double): Color4 = js.native
     
     /**
       * Multiplies the current Color4 values by scale and stores the result in "result"
@@ -870,8 +945,8 @@ object mathColorMod {
       * @param index defines an optional index in the target array to define where to start storing values
       * @returns the current Color4 object
       */
-    def toArray(array: js.Array[Double]): Color4 = js.native
-    def toArray(array: js.Array[Double], index: Double): Color4 = js.native
+    def toArray(array: FloatArray): Color4 = js.native
+    def toArray(array: FloatArray, index: Double): Color4 = js.native
     
     /**
       * Computes a new Color4 converted from the current one to gamma space
@@ -951,7 +1026,16 @@ object mathColorMod {
     inline def FromColor3(color3: DeepImmutable[Color3], alpha: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromColor3")(color3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color4]
     
     /**
-      * Creates a new Color4 from the string containing valid hexadecimal values
+      * Creates a new Color4 from the string containing valid hexadecimal values.
+      *
+      * A valid hex string is either in the format #RRGGBB or #RRGGBBAA.
+      *
+      * When a hex string without alpha is passed, the resulting Color4 has
+      * its alpha value set to 1.0.
+      *
+      * An invalid string results in a Color with all its channels set to 0.0,
+      * i.e. "transparent black".
+      *
       * @param hex defines a string containing valid hexadecimal values
       * @returns a new Color4 object
       */
@@ -966,6 +1050,58 @@ object mathColorMod {
       * @returns a new Color3 object
       */
     inline def FromInts(r: Double, g: Double, b: Double, a: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Color4]
+    
+    /**
+      * Interpolate between two Color4 using Hermite interpolation
+      * @param value1 defines first Color4
+      * @param tangent1 defines the incoming tangent
+      * @param value2 defines second Color4
+      * @param tangent2 defines the outgoing tangent
+      * @param amount defines the target Color4
+      * @returns the new interpolated Color4
+      */
+    inline def Hermite(
+      value1: DeepImmutable[Color4],
+      tangent1: DeepImmutable[Color4],
+      value2: DeepImmutable[Color4],
+      tangent2: DeepImmutable[Color4],
+      amount: Double
+    ): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Color4]
+    
+    /**
+      * Returns a new Color4 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @returns 1st derivative
+      */
+    inline def Hermite1stDerivative(
+      value1: DeepImmutable[Color4],
+      tangent1: DeepImmutable[Color4],
+      value2: DeepImmutable[Color4],
+      tangent2: DeepImmutable[Color4],
+      time: Double
+    ): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Color4]
+    
+    /**
+      * Update a Color4 with the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @param result define where to store the derivative
+      */
+    inline def Hermite1stDerivativeToRef(
+      value1: DeepImmutable[Color4],
+      tangent1: DeepImmutable[Color4],
+      value2: DeepImmutable[Color4],
+      tangent2: DeepImmutable[Color4],
+      time: Double,
+      result: Color4
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new Color4 object set with the linearly interpolated values of "amount" between the left Color4 object and the right Color4 object
@@ -988,7 +1124,7 @@ object mathColorMod {
   
   @JSImport("babylonjs/Maths/math.color", "TmpColors")
   @js.native
-  class TmpColors () extends StObject
+  open class TmpColors () extends StObject
   /* static members */
   object TmpColors {
     

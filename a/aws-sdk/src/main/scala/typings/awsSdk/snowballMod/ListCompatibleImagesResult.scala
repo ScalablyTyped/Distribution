@@ -29,7 +29,7 @@ object ListCompatibleImagesResult {
     
     inline def setCompatibleImagesUndefined: Self = StObject.set(x, "CompatibleImages", js.undefined)
     
-    inline def setCompatibleImagesVarargs(value: CompatibleImage*): Self = StObject.set(x, "CompatibleImages", js.Array(value :_*))
+    inline def setCompatibleImagesVarargs(value: CompatibleImage*): Self = StObject.set(x, "CompatibleImages", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

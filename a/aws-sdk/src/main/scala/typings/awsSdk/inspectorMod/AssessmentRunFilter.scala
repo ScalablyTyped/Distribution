@@ -66,7 +66,7 @@ object AssessmentRunFilter {
     
     inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
     
     inline def setStartTimeRange(value: TimestampRange): Self = StObject.set(x, "startTimeRange", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object AssessmentRunFilter {
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStatesVarargs(value: AssessmentRunState*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: AssessmentRunState*): Self = StObject.set(x, "states", js.Array(value*))
   }
 }

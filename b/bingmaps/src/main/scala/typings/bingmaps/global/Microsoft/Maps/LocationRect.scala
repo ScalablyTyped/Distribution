@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.LocationRect")
 @js.native
-class LocationRect protected ()
+open class LocationRect protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.LocationRect {
   /**
@@ -141,7 +141,7 @@ object LocationRect {
     * @param locations A list of locations.
     * @returns A LocationRect that encloses all the specified locations.
     */
-  inline def fromLocations(locations: typings.bingmaps.Microsoft.Maps.Location*): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromLocations(locations: typings.bingmaps.Microsoft.Maps.Location*): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   /**
     * Gets a LocationRect using an array of locations.
     * @param locations An array of locations.

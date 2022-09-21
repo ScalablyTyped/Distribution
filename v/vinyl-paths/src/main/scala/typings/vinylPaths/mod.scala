@@ -1,7 +1,6 @@
 package typings.vinylPaths
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +11,26 @@ object mod extends Shortcut {
   @js.native
   val ^ : PathsStatic = js.native
   
-  type Callback = js.Function1[/* path */ String, js.Any]
+  type Callback = js.Function1[/* path */ String, Any]
   
-  @js.native
-  trait Paths
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait Paths extends StObject {
     
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
+  }
+  object Paths {
+    
+    inline def apply(paths: js.Array[String]): Paths = {
+      val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Paths]
+    }
+    
+    extension [Self <: Paths](x: Self) {
+      
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
+    }
   }
   
   type PathsStatic = js.Function1[/* callback */ js.UndefOr[Callback], Paths]

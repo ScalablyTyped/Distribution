@@ -13,7 +13,7 @@ object packagesMod {
   
   @JSImport("gitlab/dist/types/core/services/Packages", "Packages")
   @js.native
-  class Packages () extends BaseService {
+  open class Packages () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

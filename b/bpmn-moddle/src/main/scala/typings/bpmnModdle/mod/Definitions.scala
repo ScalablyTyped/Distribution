@@ -64,21 +64,21 @@ object Definitions {
     
     inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRelationship(value: js.Array[Relationship]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    inline def setRelationshipVarargs(value: Relationship*): Self = StObject.set(x, "relationship", js.Array(value :_*))
+    inline def setRelationshipVarargs(value: Relationship*): Self = StObject.set(x, "relationship", js.Array(value*))
     
     inline def setRootElements(value: js.Array[RootElement]): Self = StObject.set(x, "rootElements", value.asInstanceOf[js.Any])
     
-    inline def setRootElementsVarargs(value: RootElement*): Self = StObject.set(x, "rootElements", js.Array(value :_*))
+    inline def setRootElementsVarargs(value: RootElement*): Self = StObject.set(x, "rootElements", js.Array(value*))
     
     inline def setTargetNamespace(value: String): Self = StObject.set(x, "targetNamespace", value.asInstanceOf[js.Any])
     

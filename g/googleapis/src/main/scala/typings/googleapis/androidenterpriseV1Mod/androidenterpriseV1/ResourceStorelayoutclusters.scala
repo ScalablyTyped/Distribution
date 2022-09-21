@@ -4,31 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Storelayoutclusters")
 @js.native
-class ResourceStorelayoutclusters protected () extends StObject {
+open class ResourceStorelayoutclusters protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * androidenterprise.storelayoutclusters.delete
-    * @desc Deletes a cluster.
-    * @alias androidenterprise.storelayoutclusters.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId The ID of the cluster.
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -36,8 +24,8 @@ class ResourceStorelayoutclusters protected () extends StObject {
   def delete(params: ParamsResourceStorelayoutclustersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceStorelayoutclustersDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceStorelayoutclustersDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -45,21 +33,62 @@ class ResourceStorelayoutclusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * androidenterprise.storelayoutclusters.get
-    * @desc Retrieves details of a cluster.
-    * @alias androidenterprise.storelayoutclusters.get
-    * @memberOf! ()
+    * Deletes a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidenterprise.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId The ID of the cluster.
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidenterprise = google.androidenterprise('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidenterprise'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidenterprise.storelayoutclusters.delete({
+    *     // The ID of the cluster.
+    *     clusterId: 'placeholder-value',
+    *     // The ID of the enterprise.
+    *     enterpriseId: 'placeholder-value',
+    *     // The ID of the page.
+    *     pageId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceStorelayoutclustersDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceStorelayoutclustersDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaStoreCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
@@ -67,8 +96,8 @@ class ResourceStorelayoutclusters protected () extends StObject {
   def get(params: ParamsResourceStorelayoutclustersGet, callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def get(
     params: ParamsResourceStorelayoutclustersGet,
-    options: BodyResponseCallback[SchemaStoreCluster],
-    callback: BodyResponseCallback[SchemaStoreCluster]
+    options: BodyResponseCallback[Readable | SchemaStoreCluster],
+    callback: BodyResponseCallback[Readable | SchemaStoreCluster]
   ): Unit = js.native
   def get(params: ParamsResourceStorelayoutclustersGet, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def get(
@@ -76,21 +105,70 @@ class ResourceStorelayoutclusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
-  
   /**
-    * androidenterprise.storelayoutclusters.insert
-    * @desc Inserts a new cluster in a page.
-    * @alias androidenterprise.storelayoutclusters.insert
-    * @memberOf! ()
+    * Retrieves details of a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidenterprise.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {().StoreCluster} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidenterprise = google.androidenterprise('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidenterprise'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidenterprise.storelayoutclusters.get({
+    *     // The ID of the cluster.
+    *     clusterId: 'placeholder-value',
+    *     // The ID of the enterprise.
+    *     enterpriseId: 'placeholder-value',
+    *     // The ID of the page.
+    *     pageId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "name": [],
+    *   //   "orderInPage": "my_orderInPage",
+    *   //   "productId": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceStorelayoutclustersGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceStorelayoutclustersGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaStoreCluster] = js.native
   def insert(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
@@ -101,8 +179,8 @@ class ResourceStorelayoutclusters protected () extends StObject {
   ): Unit = js.native
   def insert(
     params: ParamsResourceStorelayoutclustersInsert,
-    options: BodyResponseCallback[SchemaStoreCluster],
-    callback: BodyResponseCallback[SchemaStoreCluster]
+    options: BodyResponseCallback[Readable | SchemaStoreCluster],
+    callback: BodyResponseCallback[Readable | SchemaStoreCluster]
   ): Unit = js.native
   def insert(params: ParamsResourceStorelayoutclustersInsert, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def insert(
@@ -110,20 +188,79 @@ class ResourceStorelayoutclusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
-  
   /**
-    * androidenterprise.storelayoutclusters.list
-    * @desc Retrieves the details of all clusters on the specified page.
-    * @alias androidenterprise.storelayoutclusters.list
-    * @memberOf! ()
+    * Inserts a new cluster in a page.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidenterprise.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidenterprise = google.androidenterprise('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidenterprise'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidenterprise.storelayoutclusters.insert({
+    *     // The ID of the enterprise.
+    *     enterpriseId: 'placeholder-value',
+    *     // The ID of the page.
+    *     pageId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "id": "my_id",
+    *       //   "name": [],
+    *       //   "orderInPage": "my_orderInPage",
+    *       //   "productId": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "name": [],
+    *   //   "orderInPage": "my_orderInPage",
+    *   //   "productId": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceStorelayoutclustersInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceStorelayoutclustersInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaStoreLayoutClustersListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
@@ -134,8 +271,8 @@ class ResourceStorelayoutclusters protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceStorelayoutclustersList,
-    options: BodyResponseCallback[SchemaStoreLayoutClustersListResponse],
-    callback: BodyResponseCallback[SchemaStoreLayoutClustersListResponse]
+    options: BodyResponseCallback[Readable | SchemaStoreLayoutClustersListResponse],
+    callback: BodyResponseCallback[Readable | SchemaStoreLayoutClustersListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceStorelayoutclustersList, options: MethodOptions): GaxiosPromise[SchemaStoreLayoutClustersListResponse] = js.native
   def list(
@@ -143,54 +280,65 @@ class ResourceStorelayoutclusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreLayoutClustersListResponse]
   ): Unit = js.native
-  
   /**
-    * androidenterprise.storelayoutclusters.patch
-    * @desc Updates a cluster. This method supports patch semantics.
-    * @alias androidenterprise.storelayoutclusters.patch
-    * @memberOf! ()
+    * Retrieves the details of all clusters on the specified page.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidenterprise.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId The ID of the cluster.
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {().StoreCluster} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidenterprise = google.androidenterprise('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidenterprise'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidenterprise.storelayoutclusters.list({
+    *     // The ID of the enterprise.
+    *     enterpriseId: 'placeholder-value',
+    *     // The ID of the page.
+    *     pageId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "cluster": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def patch(): GaxiosPromise[SchemaStoreCluster] = js.native
-  def patch(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
-  def patch(params: ParamsResourceStorelayoutclustersPatch): GaxiosPromise[SchemaStoreCluster] = js.native
-  def patch(params: ParamsResourceStorelayoutclustersPatch, callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
-  def patch(
-    params: ParamsResourceStorelayoutclustersPatch,
-    options: BodyResponseCallback[SchemaStoreCluster],
-    callback: BodyResponseCallback[SchemaStoreCluster]
-  ): Unit = js.native
-  def patch(params: ParamsResourceStorelayoutclustersPatch, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
-  def patch(
-    params: ParamsResourceStorelayoutclustersPatch,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaStoreCluster]
+  def list(params: ParamsResourceStorelayoutclustersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceStorelayoutclustersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * androidenterprise.storelayoutclusters.update
-    * @desc Updates a cluster.
-    * @alias androidenterprise.storelayoutclusters.update
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId The ID of the cluster.
-    * @param {string} params.enterpriseId The ID of the enterprise.
-    * @param {string} params.pageId The ID of the page.
-    * @param {().StoreCluster} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def update(): GaxiosPromise[SchemaStoreCluster] = js.native
   def update(callback: BodyResponseCallback[SchemaStoreCluster]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
@@ -201,13 +349,87 @@ class ResourceStorelayoutclusters protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceStorelayoutclustersUpdate,
-    options: BodyResponseCallback[SchemaStoreCluster],
-    callback: BodyResponseCallback[SchemaStoreCluster]
+    options: BodyResponseCallback[Readable | SchemaStoreCluster],
+    callback: BodyResponseCallback[Readable | SchemaStoreCluster]
   ): Unit = js.native
   def update(params: ParamsResourceStorelayoutclustersUpdate, options: MethodOptions): GaxiosPromise[SchemaStoreCluster] = js.native
   def update(
     params: ParamsResourceStorelayoutclustersUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
+  ): Unit = js.native
+  /**
+    * Updates a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidenterprise.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const androidenterprise = google.androidenterprise('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidenterprise'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidenterprise.storelayoutclusters.update({
+    *     // The ID of the cluster.
+    *     clusterId: 'placeholder-value',
+    *     // The ID of the enterprise.
+    *     enterpriseId: 'placeholder-value',
+    *     // The ID of the page.
+    *     pageId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "id": "my_id",
+    *       //   "name": [],
+    *       //   "orderInPage": "my_orderInPage",
+    *       //   "productId": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "name": [],
+    *   //   "orderInPage": "my_orderInPage",
+    *   //   "productId": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceStorelayoutclustersUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceStorelayoutclustersUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

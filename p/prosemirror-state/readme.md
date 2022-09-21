@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-state
 
-Typings are for version 1.2
+Typings are for version 1.4.1
 
 ## Library description:
 ProseMirror editor state
@@ -11,9 +11,9 @@ ProseMirror editor state
 | Full name          | prosemirror-state |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 252 |
-| # downloads        | 6838066 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1757526.3333333333 |
+| # stars            | 120.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-state#readme)
@@ -24,7 +24,7 @@ ProseMirror editor state
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

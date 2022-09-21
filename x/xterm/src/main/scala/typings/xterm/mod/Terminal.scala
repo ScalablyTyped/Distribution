@@ -3,56 +3,10 @@ package typings.xterm.mod
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.RegExp
-import typings.std.Uint8Array
 import typings.xterm.anon.Cols
 import typings.xterm.anon.DomEvent
 import typings.xterm.anon.End
-import typings.xterm.xtermStrings.`100`
-import typings.xterm.xtermStrings.`200`
-import typings.xterm.xtermStrings.`300`
-import typings.xterm.xtermStrings.`400`
-import typings.xterm.xtermStrings.`500`
-import typings.xterm.xtermStrings.`600`
-import typings.xterm.xtermStrings.`700`
-import typings.xterm.xtermStrings.`800`
-import typings.xterm.xtermStrings.`900`
-import typings.xterm.xtermStrings.allowTransparency
-import typings.xterm.xtermStrings.bar
-import typings.xterm.xtermStrings.bellSound
-import typings.xterm.xtermStrings.bellStyle
-import typings.xterm.xtermStrings.block
-import typings.xterm.xtermStrings.bold
-import typings.xterm.xtermStrings.both
-import typings.xterm.xtermStrings.cancelEvents
-import typings.xterm.xtermStrings.convertEol
-import typings.xterm.xtermStrings.cursorBlink
-import typings.xterm.xtermStrings.cursorStyle
-import typings.xterm.xtermStrings.disableStdin
-import typings.xterm.xtermStrings.fontFamily
-import typings.xterm.xtermStrings.fontSize
-import typings.xterm.xtermStrings.fontWeight
-import typings.xterm.xtermStrings.fontWeightBold
-import typings.xterm.xtermStrings.letterSpacing
-import typings.xterm.xtermStrings.lineHeight
-import typings.xterm.xtermStrings.logLevel
-import typings.xterm.xtermStrings.macOptionIsMeta
-import typings.xterm.xtermStrings.none
-import typings.xterm.xtermStrings.normal
-import typings.xterm.xtermStrings.popOnBell
-import typings.xterm.xtermStrings.rendererType
-import typings.xterm.xtermStrings.rightClickSelectsWord
-import typings.xterm.xtermStrings.scrollback
-import typings.xterm.xtermStrings.sound
-import typings.xterm.xtermStrings.tabStopWidth
-import typings.xterm.xtermStrings.termName
-import typings.xterm.xtermStrings.theme
-import typings.xterm.xtermStrings.underline
-import typings.xterm.xtermStrings.visual
-import typings.xterm.xtermStrings.visualBell
-import typings.xterm.xtermStrings.windowsMode
-import typings.xterm.xtermStrings.wordSeparator
+import typings.xterm.anon.RequiredITerminalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,15 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options An object containing a set of options.
   */
-class Terminal ()
+open class Terminal ()
   extends StObject
      with IDisposable {
-  def this(options: ITerminalOptions) = this()
-  
-  /**
-    * @deprecated use `registerMarker` instead.
-    */
-  def addMarker(cursorYOffset: Double): js.UndefOr[IMarker] = js.native
+  def this(options: ITerminalOptions & ITerminalInitOnlyOptions) = this()
   
   /**
     * Attaches a custom key event handler which is run before keys are
@@ -91,9 +40,7 @@ class Terminal ()
   def blur(): Unit = js.native
   
   /**
-    * (EXPERIMENTAL) The terminal's current buffer, this might be either the
-    * normal buffer or the alt buffer depending on what's running in the
-    * terminal.
+    * Access to the terminal's normal and alt buffer.
     */
   val buffer: IBufferNamespace = js.native
   
@@ -106,6 +53,14 @@ class Terminal ()
     * Clears the current terminal selection.
     */
   def clearSelection(): Unit = js.native
+  
+  /**
+    * Clears the texture atlas of the canvas renderer if it's active. Doing this will force a
+    * redraw of all glyphs which can workaround issues causing the texture to become corrupt, for
+    * example Chromium/Nvidia has an issue where the texture gets messed up when resuming the OS
+    * from sleep.
+    */
+  def clearTextureAtlas(): Unit = js.native
   
   /**
     * The number of columns in the terminal's viewport. Use
@@ -121,14 +76,6 @@ class Terminal ()
     */
   def deregisterCharacterJoiner(joinerId: Double): Unit = js.native
   
-  /**
-    * (EXPERIMENTAL) Deregisters a link matcher if it has been registered.
-    * @deprecated The link matcher API is now deprecated in favor of the link
-    * provider API, see `registerLinkProvider`.
-    * @param matcherId The link matcher's ID (returned after register)
-    */
-  def deregisterLinkMatcher(matcherId: Double): Unit = js.native
-  
   /* CompleteClass */
   override def dispose(): Unit = js.native
   
@@ -143,82 +90,6 @@ class Terminal ()
   def focus(): Unit = js.native
   
   /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  def getOption(key: String): js.Any = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_allowTransparency(key: allowTransparency): Boolean = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_bellSound(key: bellSound): String = js.native
-  @JSName("getOption")
-  def getOption_bellStyle(key: bellStyle): String = js.native
-  @JSName("getOption")
-  def getOption_cancelEvents(key: cancelEvents): Boolean = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_cols(key: typings.xterm.xtermStrings.cols): Double = js.native
-  @JSName("getOption")
-  def getOption_convertEol(key: convertEol): Boolean = js.native
-  @JSName("getOption")
-  def getOption_cursorBlink(key: cursorBlink): Boolean = js.native
-  @JSName("getOption")
-  def getOption_cursorStyle(key: cursorStyle): String = js.native
-  @JSName("getOption")
-  def getOption_disableStdin(key: disableStdin): Boolean = js.native
-  @JSName("getOption")
-  def getOption_fontFamily(key: fontFamily): String = js.native
-  @JSName("getOption")
-  def getOption_fontSize(key: fontSize): Double = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_fontWeight(key: fontWeight): FontWeight = js.native
-  @JSName("getOption")
-  def getOption_fontWeightBold(key: fontWeightBold): FontWeight = js.native
-  @JSName("getOption")
-  def getOption_letterSpacing(key: letterSpacing): Double = js.native
-  @JSName("getOption")
-  def getOption_lineHeight(key: lineHeight): Double = js.native
-  @JSName("getOption")
-  def getOption_logLevel(key: logLevel): String = js.native
-  @JSName("getOption")
-  def getOption_macOptionIsMeta(key: macOptionIsMeta): Boolean = js.native
-  @JSName("getOption")
-  def getOption_popOnBell(key: popOnBell): Boolean = js.native
-  @JSName("getOption")
-  def getOption_rendererType(key: rendererType): String = js.native
-  @JSName("getOption")
-  def getOption_rightClickSelectsWord(key: rightClickSelectsWord): Boolean = js.native
-  @JSName("getOption")
-  def getOption_rows(key: typings.xterm.xtermStrings.rows): Double = js.native
-  @JSName("getOption")
-  def getOption_scrollback(key: scrollback): Double = js.native
-  @JSName("getOption")
-  def getOption_tabStopWidth(key: tabStopWidth): Double = js.native
-  @JSName("getOption")
-  def getOption_termName(key: termName): String = js.native
-  @JSName("getOption")
-  def getOption_visualBell(key: visualBell): Boolean = js.native
-  @JSName("getOption")
-  def getOption_windowsMode(key: windowsMode): Boolean = js.native
-  @JSName("getOption")
-  def getOption_wordSeparator(key: wordSeparator): String = js.native
-  
-  /**
     * Gets the terminal's current selection, this is useful for implementing
     * copy behavior outside of xterm.js.
     */
@@ -227,7 +98,7 @@ class Terminal ()
   /**
     * Gets the selection position or undefined if there is no selection.
     */
-  def getSelectionPosition(): js.UndefOr[ISelectionPosition] = js.native
+  def getSelectionPosition(): js.UndefOr[IBufferRange] = js.native
   
   /**
     * Gets whether the terminal has an active selection.
@@ -247,6 +118,23 @@ class Terminal ()
   val markers: js.Array[IMarker] = js.native
   
   /**
+    * Gets the terminal modes as set by SM/DECSET.
+    */
+  val modes: IModes = js.native
+  
+  /**
+    * Adds an event listener for when the bell is triggered.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onBell(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, Any]): IDisposable = js.native
+  /**
+    * Adds an event listener for when the bell is triggered.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onBell")
+  var onBell_Original: IEvent[Unit, Unit] = js.native
+  
+  /**
     * Adds an event listener for when a binary event fires. This is used to
     * enable non UTF-8 conformant binary messages to be sent to the backend.
     * Currently this is only used for a certain type of mouse reports that
@@ -255,7 +143,7 @@ class Terminal ()
     * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
     * @returns an `IDisposable` to stop listening.
     */
-  def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a binary event fires. This is used to
     * enable non UTF-8 conformant binary messages to be sent to the backend.
@@ -272,7 +160,7 @@ class Terminal ()
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
     */
-  def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
@@ -287,7 +175,7 @@ class Terminal ()
     * on to the backing pty.
     * @returns an `IDisposable` to stop listening.
     */
-  def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a data event fires. This happens for
     * example when the user types or pastes into the terminal. The event value
@@ -304,7 +192,7 @@ class Terminal ()
     * triggered it.
     * @returns an `IDisposable` to stop listening.
     */
-  def onKey(listener: js.Function2[/* arg1 */ DomEvent, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onKey(listener: js.Function2[/* arg1 */ DomEvent, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a key is pressed. The event value contains the
     * string that will be sent in the data event as well as the DOM event that
@@ -318,7 +206,7 @@ class Terminal ()
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
     */
-  def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
@@ -332,7 +220,7 @@ class Terminal ()
     * to `Terminal.rows - 1`).
     * @returns an `IDisposable` to stop listening.
     */
-  def onRender(listener: js.Function2[/* arg1 */ End, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onRender(listener: js.Function2[/* arg1 */ End, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when rows are rendered. The event value
     * contains the start row and end rows of the rendered area (ranges from `0`
@@ -347,7 +235,7 @@ class Terminal ()
     * contains the new size.
     * @returns an `IDisposable` to stop listening.
     */
-  def onResize(listener: js.Function2[/* arg1 */ Cols, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onResize(listener: js.Function2[/* arg1 */ Cols, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when the terminal is resized. The event value
     * contains the new size.
@@ -361,7 +249,7 @@ class Terminal ()
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */
-  def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
@@ -374,7 +262,7 @@ class Terminal ()
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
     */
-  def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
@@ -387,7 +275,7 @@ class Terminal ()
     * The event value is the new title.
     * @returns an `IDisposable` to stop listening.
     */
-  def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
+  def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, Any]): IDisposable = js.native
   /**
     * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
     * The event value is the new title.
@@ -395,6 +283,28 @@ class Terminal ()
     */
   @JSName("onTitleChange")
   var onTitleChange_Original: IEvent[String, Unit] = js.native
+  
+  /**
+    * Adds an event listener for when data has been parsed by the terminal,
+    * after {@link write} is called. This event is useful to listen for any
+    * changes in the buffer.
+    *
+    * This fires at most once per frame, after data parsing completes. Note
+    * that this can fire when there are still writes pending if there is a lot
+    * of data.
+    */
+  def onWriteParsed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, Any]): IDisposable = js.native
+  /**
+    * Adds an event listener for when data has been parsed by the terminal,
+    * after {@link write} is called. This event is useful to listen for any
+    * changes in the buffer.
+    *
+    * This fires at most once per frame, after data parsing completes. Note
+    * that this can fire when there are still writes pending if there is a lot
+    * of data.
+    */
+  @JSName("onWriteParsed")
+  var onWriteParsed_Original: IEvent[Unit, Unit] = js.native
   
   /**
     * Opens the terminal within an element.
@@ -405,8 +315,34 @@ class Terminal ()
   def open(parent: HTMLElement): Unit = js.native
   
   /**
-    * (EXPERIMENTAL) Get the parser interface to register
-    * custom escape sequence handlers.
+    * Gets or sets the terminal options. This supports setting multiple options.
+    *
+    * @example Get a single option
+    * ```typescript
+    * console.log(terminal.options.fontSize);
+    * ```
+    */
+  def options: RequiredITerminalOptions = js.native
+  /**
+    * Gets or sets the terminal options. This supports setting multiple options.
+    *
+    * @example Set a single option
+    * ```typescript
+    * terminal.options.fontSize = 12;
+    * ```
+    *
+    * @example Set multiple options
+    * ```typescript
+    * terminal.options = {
+    *   fontSize: 12,
+    *   fontFamily: 'Arial',
+    * };
+    * ```
+    */
+  def options_=(options: ITerminalOptions): Unit = js.native
+  
+  /**
+    * Get the parser interface to register custom escape sequence handlers.
     */
   val parser: IParser = js.native
   
@@ -456,38 +392,29 @@ class Terminal ()
   def registerCharacterJoiner(handler: js.Function1[/* text */ String, js.Array[js.Tuple2[Double, Double]]]): Double = js.native
   
   /**
-    * (EXPERIMENTAL) Registers a link matcher, allowing custom link patterns to
-    * be matched and handled.
-    * @deprecated The link matcher API is now deprecated in favor of the link
-    * provider API, see `registerLinkProvider`.
-    * @param regex The regular expression to search for, specifically this
-    * searches the textContent of the rows. You will want to use \s to match a
-    * space ' ' character for example.
-    * @param handler The callback when the link is called.
-    * @param options Options for the link matcher.
-    * @return The ID of the new matcher, this can be used to deregister.
+    * (EXPERIMENTAL) Adds a decoration to the terminal using
+    *  @param decorationOptions, which takes a marker and an optional anchor,
+    *  width, height, and x offset from the anchor. Returns the decoration or
+    *  undefined if the alt buffer is active or the marker has already been disposed of.
+    *  @throws when options include a negative x offset.
     */
-  def registerLinkMatcher(regex: RegExp, handler: js.Function2[/* event */ MouseEvent, /* uri */ String, Unit]): Double = js.native
-  def registerLinkMatcher(
-    regex: RegExp,
-    handler: js.Function2[/* event */ MouseEvent, /* uri */ String, Unit],
-    options: ILinkMatcherOptions
-  ): Double = js.native
+  def registerDecoration(decorationOptions: IDecorationOptions): js.UndefOr[IDecoration] = js.native
   
   /**
-    * (EXPERIMENTAL) Registers a link provider, allowing a custom parser to
-    * be used to match and handle links. Multiple link providers can be used,
-    * they will be asked in the order in which they are registered.
+    * Registers a link provider, allowing a custom parser to be used to match
+    * and handle links. Multiple link providers can be used, they will be asked
+    * in the order in which they are registered.
     * @param linkProvider The link provider to use to detect links.
     */
   def registerLinkProvider(linkProvider: ILinkProvider): IDisposable = js.native
   
   /**
-    * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
-    * alt buffer is active, undefined is returned.
+    * Adds a marker to the normal buffer and returns it. If the alt buffer is
+    * active, undefined is returned.
     * @param cursorYOffset The y position offset of the marker from the cursor.
     * @returns The new marker or undefined.
     */
+  def registerMarker(): js.UndefOr[IMarker] = js.native
   def registerMarker(cursorYOffset: Double): js.UndefOr[IMarker] = js.native
   
   /**
@@ -560,145 +487,6 @@ class Terminal ()
   def selectLines(start: Double, end: Double): Unit = js.native
   
   /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  def setOption(key: String, value: js.Any): Unit = js.native
-  def setOption(key: bellStyle, value: both): Unit = js.native
-  def setOption(key: bellStyle, value: none): Unit = js.native
-  def setOption(key: bellStyle, value: sound): Unit = js.native
-  def setOption(key: bellStyle, value: visual): Unit = js.native
-  def setOption(key: cursorStyle, value: bar): Unit = js.native
-  def setOption(key: cursorStyle, value: block): Unit = js.native
-  def setOption(key: cursorStyle, value: underline): Unit = js.native
-  def setOption(key: fontWeightBold, value: `100`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `200`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `300`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `400`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `500`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `600`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `700`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `800`): Unit = js.native
-  def setOption(key: fontWeightBold, value: `900`): Unit = js.native
-  def setOption(key: fontWeightBold, value: bold): Unit = js.native
-  def setOption(key: fontWeightBold, value: normal): Unit = js.native
-  def setOption(key: fontWeight, value: `100`): Unit = js.native
-  def setOption(key: fontWeight, value: `200`): Unit = js.native
-  def setOption(key: fontWeight, value: `300`): Unit = js.native
-  def setOption(key: fontWeight, value: `400`): Unit = js.native
-  def setOption(key: fontWeight, value: `500`): Unit = js.native
-  def setOption(key: fontWeight, value: `600`): Unit = js.native
-  def setOption(key: fontWeight, value: `700`): Unit = js.native
-  def setOption(key: fontWeight, value: `800`): Unit = js.native
-  def setOption(key: fontWeight, value: `900`): Unit = js.native
-  def setOption(key: fontWeight, value: bold): Unit = js.native
-  def setOption(key: fontWeight, value: normal): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_allowTransparency(key: allowTransparency, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_bellSound(key: bellSound, value: String): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_bellStyle(key: bellStyle): Unit = js.native
-  @JSName("setOption")
-  def setOption_cancelEvents(key: cancelEvents, value: Boolean): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_cols(key: typings.xterm.xtermStrings.cols, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_convertEol(key: convertEol, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_cursorBlink(key: cursorBlink, value: Boolean): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_cursorStyle(key: cursorStyle): Unit = js.native
-  @JSName("setOption")
-  def setOption_disableStdin(key: disableStdin, value: Boolean): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_fontFamily(key: fontFamily, value: String): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_fontSize(key: fontSize, value: Double): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_fontWeight(key: fontWeight): Unit = js.native
-  @JSName("setOption")
-  def setOption_fontWeight(key: fontWeight, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_fontWeightBold(key: fontWeightBold): Unit = js.native
-  @JSName("setOption")
-  def setOption_fontWeightBold(key: fontWeightBold, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_letterSpacing(key: letterSpacing, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_lineHeight(key: lineHeight, value: Double): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_logLevel(key: logLevel, value: LogLevel): Unit = js.native
-  @JSName("setOption")
-  def setOption_macOptionIsMeta(key: macOptionIsMeta, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_popOnBell(key: popOnBell, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_rightClickSelectsWord(key: rightClickSelectsWord, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_rows(key: typings.xterm.xtermStrings.rows, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_scrollback(key: scrollback, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_tabStopWidth(key: tabStopWidth, value: Double): Unit = js.native
-  @JSName("setOption")
-  def setOption_termName(key: termName, value: String): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_theme(key: theme, value: ITheme): Unit = js.native
-  @JSName("setOption")
-  def setOption_visualBell(key: visualBell, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_windowsMode(key: windowsMode, value: Boolean): Unit = js.native
-  @JSName("setOption")
-  def setOption_wordSeparator(key: wordSeparator, value: String): Unit = js.native
-  
-  /**
     * The textarea that accepts input for the terminal.
     */
   val textarea: js.UndefOr[HTMLTextAreaElement] = js.native
@@ -719,17 +507,8 @@ class Terminal ()
     */
   def write(data: String): Unit = js.native
   def write(data: String, callback: js.Function0[Unit]): Unit = js.native
-  def write(data: Uint8Array): Unit = js.native
-  def write(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
-  
-  /**
-    * Write UTF8 data to the terminal.
-    * @param data The data to write to the terminal.
-    * @param callback Optional callback when data was processed.
-    * @deprecated use `write` instead
-    */
-  def writeUtf8(data: Uint8Array): Unit = js.native
-  def writeUtf8(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
+  def write(data: js.typedarray.Uint8Array): Unit = js.native
+  def write(data: js.typedarray.Uint8Array, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Writes data to the terminal, followed by a break line character (\n).
@@ -741,8 +520,8 @@ class Terminal ()
     */
   def writeln(data: String): Unit = js.native
   def writeln(data: String, callback: js.Function0[Unit]): Unit = js.native
-  def writeln(data: Uint8Array): Unit = js.native
-  def writeln(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
+  def writeln(data: js.typedarray.Uint8Array): Unit = js.native
+  def writeln(data: js.typedarray.Uint8Array, callback: js.Function0[Unit]): Unit = js.native
 }
 /* static members */
 object Terminal {

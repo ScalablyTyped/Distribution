@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pnpm/network.ca-file" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pnpm/network.ca-file" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

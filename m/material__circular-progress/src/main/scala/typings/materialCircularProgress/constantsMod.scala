@@ -29,6 +29,11 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("@material/circular-progress/constants", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/circular-progress/constants", "strings.ARIA_VALUENOW")
     @js.native
     def ARIA_VALUENOW: String = js.native

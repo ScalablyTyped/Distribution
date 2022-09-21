@@ -20,7 +20,7 @@ object mod {
     * Create a new instance of Line object
     * @param buffer Object to be used as buffer
     */
-  class Line () extends StObject {
+  open class Line () extends StObject {
     def this(buffer: LineBuffer) = this()
     
     /**
@@ -61,7 +61,7 @@ object mod {
   
   @JSImport("clui", "LineBuffer")
   @js.native
-  class LineBuffer protected () extends StObject {
+  open class LineBuffer protected () extends StObject {
     /**
       * Creates an object for buffering a group of text lines and then outputting them
       * @param options Values to build the buffer
@@ -98,7 +98,7 @@ object mod {
   
   @JSImport("clui", "Progress")
   @js.native
-  class Progress protected () extends StObject {
+  open class Progress protected () extends StObject {
     /**
       * Creates a progress bar
       * @param length The desired length of the progress bar in characters
@@ -118,7 +118,7 @@ object mod {
   
   @JSImport("clui", "Spinner")
   @js.native
-  class Spinner protected () extends StObject {
+  open class Spinner protected () extends StObject {
     /**
       * Creates a new spinner
       * @param statusText The default text to display while the spinner is spinning

@@ -59,33 +59,33 @@ object mod {
   
   @JSImport("baconjs", "Bus")
   @js.native
-  class Bus[V] () extends default[V]
+  open class Bus[V] () extends default[V]
   
   @JSImport("baconjs", "CompositeUnsubscribe")
   @js.native
-  class CompositeUnsubscribe ()
+  open class CompositeUnsubscribe ()
     extends typings.baconjs.compositeunsubscribeMod.default {
     def this(ss: js.Array[Subscription]) = this()
   }
   
   @JSImport("baconjs", "Desc")
   @js.native
-  class Desc protected ()
+  open class Desc protected ()
     extends typings.baconjs.describeMod.Desc {
-    def this(context: js.Any, method: String) = this()
-    def this(context: js.Any, method: String, args: js.Array[js.Any]) = this()
+    def this(context: Any, method: String) = this()
+    def this(context: Any, method: String, args: js.Array[Any]) = this()
   }
   
   @JSImport("baconjs", "End")
   @js.native
-  class End ()
+  open class End ()
     extends typings.baconjs.eventMod.End
   
   @JSImport("baconjs", "Error")
   @js.native
-  class Error protected ()
+  open class Error protected ()
     extends typings.baconjs.eventMod.Error {
-    def this(error: js.Any) = this()
+    def this(error: Any) = this()
   }
   
   @JSImport("baconjs", "Event")
@@ -95,7 +95,7 @@ object mod {
   
   @JSImport("baconjs", "EventStream")
   @js.native
-  class EventStream[V] protected ()
+  open class EventStream[V] protected ()
     extends typings.baconjs.observableMod.EventStream[V] {
     def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V]) = this()
     def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
@@ -115,14 +115,14 @@ object mod {
   
   @JSImport("baconjs", "Initial")
   @js.native
-  class Initial[V] protected ()
+  open class Initial[V] protected ()
     extends typings.baconjs.eventMod.Initial[V] {
     def this(value: V) = this()
   }
   
   @JSImport("baconjs", "Next")
   @js.native
-  class Next[V] protected ()
+  open class Next[V] protected ()
     extends typings.baconjs.eventMod.Next[V] {
     def this(value: V) = this()
   }
@@ -136,7 +136,7 @@ object mod {
   
   @JSImport("baconjs", "Property")
   @js.native
-  class Property[V] protected ()
+  open class Property[V] protected ()
     extends typings.baconjs.observableMod.Property[V] {
     def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V]) = this()
     def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
@@ -170,13 +170,13 @@ object mod {
       Note: you need to install the `asEventStream` method on JQuery by calling
       [init()](#_.aseventstream) as in `Bacon.$.init($)`.
       */
-    inline def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): typings.baconjs.observableMod.EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[js.Any]]
-    inline def asEventStream(eventName: String, selector: Unit, eventTransformer: js.Any): typings.baconjs.observableMod.EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[js.Any]]
+    inline def asEventStream(eventName: String, selector: String, eventTransformer: Any): typings.baconjs.observableMod.EventStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[Any]]
+    inline def asEventStream(eventName: String, selector: Unit, eventTransformer: Any): typings.baconjs.observableMod.EventStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[Any]]
     
     /**
       * Installs the [asEventStream](#_.aseventstream) to the given jQuery/Zepto object (the `$` object).
       */
-    inline def init(jQuery: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(jQuery.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(jQuery: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(jQuery.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object _underscore {
@@ -199,13 +199,13 @@ object mod {
     
     @JSImport("baconjs", "_.any")
     @js.native
-    def any: js.Any = js.native
-    inline def any_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+    def any: Any = js.native
+    inline def any_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs", "_.bind")
     @js.native
     def bind: FnCallFnMe = js.native
-    inline def bind[F /* <: js.Function */](fn: F, me: js.Any): F = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], me.asInstanceOf[js.Any])).asInstanceOf[F]
+    inline def bind[F /* <: js.Function */](fn: F, me: Any): F = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], me.asInstanceOf[js.Any])).asInstanceOf[F]
     inline def bind_=(x: FnCallFnMe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bind")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs", "_.contains")
@@ -217,7 +217,7 @@ object mod {
     @JSImport("baconjs", "_.each")
     @js.native
     def each: Fn3 = js.native
-    inline def each[A](xs: js.Any, f: js.Function2[/* key */ String, /* x */ A, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(xs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def each[A](xs: Any, f: js.Function2[/* key */ String, /* x */ A, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(xs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def each_=(x: Fn3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("each")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs", "_.empty")
@@ -270,9 +270,9 @@ object mod {
     
     @JSImport("baconjs", "_.isFunction")
     @js.native
-    def isFunction: js.Function1[/* f */ js.Any, /* is std.Function */ Boolean] = js.native
-    inline def isFunction(f: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(f.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
-    inline def isFunction_=(x: js.Function1[/* f */ js.Any, /* is std.Function */ Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFunction")(x.asInstanceOf[js.Any])
+    def isFunction: js.Function1[/* f */ Any, /* is std.Function */ Boolean] = js.native
+    inline def isFunction(f: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(f.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    inline def isFunction_=(x: js.Function1[/* f */ Any, /* is std.Function */ Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFunction")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs", "_.last")
     @js.native
@@ -320,10 +320,10 @@ object mod {
     
     @JSImport("baconjs", "_.toString")
     @js.native
-    def toString_ : js.Function1[/* obj */ js.Any, String] = js.native
+    def toString_ : js.Function1[/* obj */ Any, String] = js.native
     
-    inline def toString_(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def toString__=(x: js.Function1[/* obj */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toString")(x.asInstanceOf[js.Any])
+    inline def toString_(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toString__=(x: js.Function1[/* obj */ Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toString")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs", "_.without")
     @js.native
@@ -332,9 +332,9 @@ object mod {
     inline def without_=(x: FnCallXXs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("without")(x.asInstanceOf[js.Any])
   }
   
-  inline def combine[R](fn: js.Function, observables: js.Array[typings.baconjs.observableMod.default[js.Any]]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
+  inline def combine[R](fn: js.Function, observables: js.Array[typings.baconjs.observableMod.default[Any]]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combine[R](fn: Function0[R]): typings.baconjs.observableMod.Property[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.Property[R]]
-  inline def combine[R](observables: js.Array[typings.baconjs.observableMod.default[js.Any]], fn: js.Function): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
+  inline def combine[R](observables: js.Array[typings.baconjs.observableMod.default[Any]], fn: js.Function): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combine[V, R](a: typings.baconjs.observableMod.default[V], fn: Function1[V, R]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combine[V, R](fn: Function1[V, R], a: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combine[V, V2, R](
@@ -410,7 +410,7 @@ object mod {
   
   inline def combineAsArray[V](
     streams: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): typings.baconjs.observableMod.Property[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAsArray")(streams.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.Property[js.Array[V]]]
+  ): typings.baconjs.observableMod.Property[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAsArray")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.Property[js.Array[V]]]
   
   inline def combineTemplate[T](template: T): typings.baconjs.observableMod.Property[CombinedTemplate[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.Property[CombinedTemplate[T]]]
   
@@ -420,9 +420,9 @@ object mod {
     f: Function2[V, V2, R]
   ): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTwo")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   
-  inline def combineWith[R](fn: js.Function, observables: js.Array[typings.baconjs.observableMod.default[js.Any]]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
+  inline def combineWith[R](fn: js.Function, observables: js.Array[typings.baconjs.observableMod.default[Any]]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combineWith[R](fn: Function0[R]): typings.baconjs.observableMod.Property[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.Property[R]]
-  inline def combineWith[R](observables: js.Array[typings.baconjs.observableMod.default[js.Any]], fn: js.Function): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
+  inline def combineWith[R](observables: js.Array[typings.baconjs.observableMod.default[Any]], fn: js.Function): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combineWith[V, R](a: typings.baconjs.observableMod.default[V], fn: Function1[V, R]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(a.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combineWith[V, R](fn: Function1[V, R], a: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[R]]
   inline def combineWith[V, V2, R](
@@ -498,7 +498,7 @@ object mod {
   
   inline def concatAll[V](
     streams_ : (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")(streams_.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  ): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")(streams_.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
   inline def constant[V](x: V): typings.baconjs.observableMod.Property[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(x.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.Property[V]]
   
@@ -507,21 +507,21 @@ object mod {
   inline def fromBinder[V](binder: Binder[V]): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinder")(binder.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   inline def fromBinder[V](binder: Binder[V], eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinder")(binder.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromCallback[V](f: js.Function, args: js.Any*): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromESObservable[V](_observable: js.Any): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(_observable.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromESObservable[V](_observable: Any): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(_observable.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromEvent[V](target: js.Any, eventSource: String): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEvent[V](target: js.Any, eventSource: String, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEvent[V](target: js.Any, eventSource: EventSourceFn): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEvent[V](target: js.Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEvent[V](target: Any, eventSource: String): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEvent[V](target: Any, eventSource: String, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEvent[V](target: Any, eventSource: EventSourceFn): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEvent[V](target: Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromEventTarget[V](target: js.Any, eventSource: String): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEventTarget[V](target: js.Any, eventSource: String, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEventTarget[V](target: js.Any, eventSource: EventSourceFn): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
-  inline def fromEventTarget[V](target: js.Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEventTarget[V](target: Any, eventSource: String): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEventTarget[V](target: Any, eventSource: String, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEventTarget[V](target: Any, eventSource: EventSourceFn): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromEventTarget[V](target: Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromNodeCallback[V](f: js.Function, args: js.Any*): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromNodeCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
   inline def fromPoll[V](delay: Double, poll: PollFunction[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(delay.asInstanceOf[js.Any], poll.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
@@ -534,7 +534,7 @@ object mod {
   
   inline def groupSimultaneous[V](
     streams: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): typings.baconjs.observableMod.EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous")(streams.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[js.Array[js.Array[V]]]]
+  ): typings.baconjs.observableMod.EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.EventStream[js.Array[js.Array[V]]]]
   
   inline def hasValue[V](e: typings.baconjs.eventMod.Event[V]): /* is baconjs.baconjs/types/event.Value<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Value<V> */ Boolean]
   
@@ -544,7 +544,7 @@ object mod {
   
   inline def isError[V](e: typings.baconjs.eventMod.Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Error */ Boolean]
   
-  inline def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Event<V> */ Boolean]
+  inline def isEvent[V](e: Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Event<V> */ Boolean]
   
   inline def isInitial[V](e: typings.baconjs.eventMod.Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitial")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Initial<V> */ Boolean]
   
@@ -554,7 +554,7 @@ object mod {
   
   inline def mergeAll[V](
     streams: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(streams.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  ): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
   @JSImport("baconjs", "more")
   @js.native
@@ -568,13 +568,13 @@ object mod {
   
   @JSImport("baconjs", "nullSink")
   @js.native
-  val nullSink: Sink[js.Any] = js.native
+  val nullSink: Sink[Any] = js.native
   
   @JSImport("baconjs", "nullVoidSink")
   @js.native
   val nullVoidSink: VoidSink = js.native
   
-  inline def onValues(args: js.Any*): Unsub = ^.asInstanceOf[js.Dynamic].applyDynamic("onValues")(args.asInstanceOf[js.Any]).asInstanceOf[Unsub]
+  inline def onValues(args: Any*): Unsub = ^.asInstanceOf[js.Dynamic].applyDynamic("onValues")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unsub]
   
   inline def once[V](value: V): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   inline def once[V](value: typings.baconjs.eventMod.Event[V]): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
@@ -597,20 +597,17 @@ object mod {
   
   inline def `try`[In, Out](f: js.Function1[/* value */ In, Out]): js.Function1[/* value */ In, typings.baconjs.observableMod.EventStream[Out]] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ In, typings.baconjs.observableMod.EventStream[Out]]]
   
-  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): typings.baconjs.observableMod.Property[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(initial.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.Property[Out]]
+  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): typings.baconjs.observableMod.Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.Property[Out]]
   
   @JSImport("baconjs", "version")
   @js.native
   val version: /* "__version__" */ String = js.native
   
-  inline def when[O](patterns: Pattern[O]*): typings.baconjs.observableMod.EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[O]]
+  inline def when[O](patterns: Pattern[O]*): typings.baconjs.observableMod.EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.EventStream[O]]
   
   inline def zipAsArray[V](
     args: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): typings.baconjs.observableMod.default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[js.Array[V]]]
+  ): typings.baconjs.observableMod.default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.default[js.Array[V]]]
   
-  inline def zipWith[Out](
-    f: js.Function1[/* repeated */ js.Any, Out],
-    streams: typings.baconjs.observableMod.default[js.Any]*
-  ): typings.baconjs.observableMod.EventStream[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[Out]]
+  inline def zipWith[Out](f: js.Function1[/* repeated */ Any, Out], streams: typings.baconjs.observableMod.default[Any]*): typings.baconjs.observableMod.EventStream[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(List(f.asInstanceOf[js.Any]).`++`(streams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[Out]]
 }

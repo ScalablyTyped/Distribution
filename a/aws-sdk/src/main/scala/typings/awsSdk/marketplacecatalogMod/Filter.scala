@@ -33,6 +33,6 @@ object Filter {
     
     inline def setValueListUndefined: Self = StObject.set(x, "ValueList", js.undefined)
     
-    inline def setValueListVarargs(value: StringValue*): Self = StObject.set(x, "ValueList", js.Array(value :_*))
+    inline def setValueListVarargs(value: FilterValueContent*): Self = StObject.set(x, "ValueList", js.Array(value*))
   }
 }

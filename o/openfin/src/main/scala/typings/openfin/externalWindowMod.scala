@@ -20,7 +20,7 @@ object externalWindowMod {
     * @hidden
     * Custom properties and metadata. This can be extended in specific context object.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String]
     

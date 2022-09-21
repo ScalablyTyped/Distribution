@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__sheet
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 A package for making temporary sheets of material (normally for navigation or details).
@@ -10,10 +10,10 @@ A package for making temporary sheets of material (normally for navigation or de
 | ------------------ | :-------------: |
 | Full name          | @react-md/sheet |
 | Keywords           | react-md, material design, react, sheet, bottom sheet, side sheet, component, components |
-| # releases         | 39 |
-| # dependents       | 2 |
-| # downloads        | 18132 |
-| # stars            | 0 |
+| # releases         | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 5433.666666666667 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/sheet/demos)

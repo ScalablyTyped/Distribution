@@ -1,6 +1,6 @@
 package typings.sawtoothSdk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +9,8 @@ object contextMod {
   
   @JSImport("sawtooth-sdk/processor/context", "Context")
   @js.native
-  class Context protected () extends StObject {
-    def this(stream: js.Any, contextId: String) = this()
+  open class Context protected () extends StObject {
+    def this(stream: Any, contextId: String) = this()
     
     /**
       * Add a new event to the execution result for this transaction.
@@ -24,8 +24,8 @@ object contextMod {
       * opaque to the validator.
       * @param [timeout] - an optional timeout
       */
-    def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer): js.Promise[js.Any] = js.native
-    def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer, timeout: Double): js.Promise[js.Any] = js.native
+    def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer): js.Promise[Any] = js.native
+    def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer, timeout: Double): js.Promise[Any] = js.native
     
     /**
       * Add a blob to the execution result for this transaction.
@@ -33,8 +33,8 @@ object contextMod {
       * @param data - the data to add
       * @param [timeout] - an optional timeout
       */
-    def addReceiptData(data: Buffer): js.Promise[js.Any] = js.native
-    def addReceiptData(data: Buffer, timeout: Double): js.Promise[js.Any] = js.native
+    def addReceiptData(data: Buffer): js.Promise[Any] = js.native
+    def addReceiptData(data: Buffer, timeout: Double): js.Promise[Any] = js.native
     
     /**
       * deleteState requests that each of the provided addresses be
@@ -45,8 +45,8 @@ object contextMod {
       * @param [timeout] - an optional timeout
       * @throws {AuthorizationException}
       */
-    def deleteState(addresses: js.Array[String]): js.Promise[js.Any] = js.native
-    def deleteState(addresses: js.Array[String], timeout: Double): js.Promise[js.Any] = js.native
+    def deleteState(addresses: js.Array[String]): js.Promise[Any] = js.native
+    def deleteState(addresses: js.Array[String], timeout: Double): js.Promise[Any] = js.native
     
     /**
       * getState queries the validator state for data at each of the
@@ -57,8 +57,8 @@ object contextMod {
       * @param [timeout] - an optional timeout
       * @throws {AuthorizationException}
       */
-    def getState(addresses: js.Array[String]): js.Promise[js.Any] = js.native
-    def getState(addresses: js.Array[String], timeout: Double): js.Promise[js.Any] = js.native
+    def getState(addresses: js.Array[String]): js.Promise[Any] = js.native
+    def getState(addresses: js.Array[String], timeout: Double): js.Promise[Any] = js.native
     
     /**
       * setState requests that each address in the provided dictionary
@@ -71,7 +71,7 @@ object contextMod {
       * @param [timeout] - an optional timeout
       * @throws {AuthorizationException}
       */
-    def setState(addressValuePairs: js.Object): js.Promise[js.Any] = js.native
-    def setState(addressValuePairs: js.Object, timeout: Double): js.Promise[js.Any] = js.native
+    def setState(addressValuePairs: js.Object): js.Promise[Any] = js.native
+    def setState(addressValuePairs: js.Object, timeout: Double): js.Promise[Any] = js.native
   }
 }

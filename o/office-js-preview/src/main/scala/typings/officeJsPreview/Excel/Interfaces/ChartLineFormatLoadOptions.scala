@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the formatting options for line elements.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartLineFormatLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ChartLineFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representing the color of lines in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the line style. See `Excel.ChartLineStyle` for details.
     *
-    * Represents the line style. See Excel.ChartLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lineStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents weight of the line, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var weight: js.UndefOr[Boolean] = js.undefined

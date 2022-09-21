@@ -15,7 +15,7 @@ trait AcceleratorTypeAggregatedList extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AcceleratorTypesScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AcceleratorTypeAggregatedList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AcceleratorTypeAggregatedList & TopLevel[Any]
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#acceleratorTypeAggregatedList for aggregated lists of accelerator types. */
@@ -52,7 +52,7 @@ object AcceleratorTypeAggregatedList {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AcceleratorTypesScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AcceleratorTypeAggregatedList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AcceleratorTypeAggregatedList & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -73,7 +73,7 @@ object AcceleratorTypeAggregatedList {
     
     inline def setUnreachablesUndefined: Self = StObject.set(x, "unreachables", js.undefined)
     
-    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value :_*))
+    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

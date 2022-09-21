@@ -19,7 +19,7 @@ trait GetDataSourceOutput extends StObject {
   /**
     * The time that the DataSource was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The AWS user account from which the DataSource was created. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
@@ -47,19 +47,19 @@ trait GetDataSourceOutput extends StObject {
   var DataSourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
-    * The schema used by all of the data files of this DataSource. Note This parameter is provided as part of the verbose format.
+    * The schema used by all of the data files of this DataSource.  Note: This parameter is provided as part of the verbose format.
     */
   var DataSourceSchema: js.UndefOr[DataSchema] = js.undefined
   
   /**
     * The epoch time when Amazon Machine Learning marked the DataSource as COMPLETED or FAILED. FinishedAt is only available when the DataSource is in the COMPLETED or FAILED state.
     */
-  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
+  var FinishedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time of the most recent edit to the DataSource. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A link to the file containing logs of CreateDataSourceFrom* operations.
@@ -90,10 +90,10 @@ trait GetDataSourceOutput extends StObject {
   /**
     * The epoch time when Amazon Machine Learning marked the DataSource as INPROGRESS. StartedAt isn't available if the DataSource is in the PENDING state.
     */
-  var StartedAt: js.UndefOr[EpochTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current status of the DataSource. This element can have one of the following values:   PENDING - Amazon ML submitted a request to create a DataSource.  INPROGRESS - The creation process is underway.  FAILED - The request to create a DataSource did not run to completion. It is not usable.  COMPLETED - The creation process completed successfully.  DELETED - The DataSource is marked as deleted. It is not usable. 
+    * The current status of the DataSource. This element can have one of the following values:    PENDING - Amazon ML submitted a request to create a DataSource.    INPROGRESS - The creation process is underway.    FAILED - The request to create a DataSource did not run to completion. It is not usable.    COMPLETED - The creation process completed successfully.    DELETED - The DataSource is marked as deleted. It is not usable.  
     */
   var Status: js.UndefOr[EntityStatus] = js.undefined
 }
@@ -114,7 +114,7 @@ object GetDataSourceOutput {
     
     inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -142,11 +142,11 @@ object GetDataSourceOutput {
     
     inline def setDataSourceSchemaUndefined: Self = StObject.set(x, "DataSourceSchema", js.undefined)
     
-    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
-    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
@@ -178,7 +178,7 @@ object GetDataSourceOutput {
     
     inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

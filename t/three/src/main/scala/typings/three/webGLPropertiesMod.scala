@@ -8,14 +8,14 @@ object webGLPropertiesMod {
   
   @JSImport("three/src/renderers/webgl/WebGLProperties", "WebGLProperties")
   @js.native
-  class WebGLProperties () extends StObject {
+  open class WebGLProperties () extends StObject {
     
     def dispose(): Unit = js.native
     
-    def get(`object`: js.Any): js.Any = js.native
+    def get(`object`: Any): Any = js.native
     
-    def remove(`object`: js.Any): Unit = js.native
+    def remove(`object`: Any): Unit = js.native
     
-    def update(`object`: js.Any, key: js.Any, value: js.Any): js.Any = js.native
+    def update(`object`: Any, key: Any, value: Any): Any = js.native
   }
 }

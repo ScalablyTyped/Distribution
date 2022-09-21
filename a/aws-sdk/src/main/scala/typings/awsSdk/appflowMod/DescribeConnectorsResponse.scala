@@ -12,6 +12,11 @@ trait DescribeConnectorsResponse extends StObject {
   var connectorConfigurations: js.UndefOr[ConnectorConfigurationsMap] = js.undefined
   
   /**
+    * Information about the connectors supported in Amazon AppFlow.
+    */
+  var connectors: js.UndefOr[ConnectorList] = js.undefined
+  
+  /**
     *  The pagination token for the next page of data. 
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
@@ -28,6 +33,12 @@ object DescribeConnectorsResponse {
     inline def setConnectorConfigurations(value: ConnectorConfigurationsMap): Self = StObject.set(x, "connectorConfigurations", value.asInstanceOf[js.Any])
     
     inline def setConnectorConfigurationsUndefined: Self = StObject.set(x, "connectorConfigurations", js.undefined)
+    
+    inline def setConnectors(value: ConnectorList): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
+    
+    inline def setConnectorsVarargs(value: ConnectorDetail*): Self = StObject.set(x, "connectors", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

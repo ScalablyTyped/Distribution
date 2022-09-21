@@ -5,7 +5,6 @@ import typings.cassandraDriver.anon.LogErroredRequests
 import typings.cassandraDriver.anon.ParamsQuery
 import typings.cassandraDriver.mod.ExecutionOptions
 import typings.cassandraDriver.mod.Host
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object trackerMod {
     
     @JSImport("cassandra-driver/lib/tracker", "tracker.RequestLogger")
     @js.native
-    class RequestLogger protected ()
+    open class RequestLogger protected ()
       extends StObject
          with RequestTracker {
       def this(options: LogErroredRequests) = this()
@@ -28,19 +27,19 @@ object trackerMod {
       def onError(
         host: Host,
         query: String,
-        parameters: js.Array[js.Any],
+        parameters: js.Array[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       def onError(
         host: Host,
         query: String,
-        parameters: StringDictionary[js.Any],
+        parameters: StringDictionary[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       def onError(
@@ -49,25 +48,25 @@ object trackerMod {
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       def onError(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: js.Array[js.Any],
+        parameters: js.Array[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       def onError(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: StringDictionary[js.Any],
+        parameters: StringDictionary[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       def onError(
@@ -76,14 +75,14 @@ object trackerMod {
         parameters: Null,
         executionOptions: ExecutionOptions,
         requestLength: Double,
-        err: Error,
+        err: js.Error,
         latency: js.Array[Double]
       ): Unit = js.native
       
       def onSuccess(
         host: Host,
         query: String,
-        parameters: js.Array[js.Any],
+        parameters: js.Array[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,
@@ -92,7 +91,7 @@ object trackerMod {
       def onSuccess(
         host: Host,
         query: String,
-        parameters: StringDictionary[js.Any],
+        parameters: StringDictionary[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,
@@ -110,7 +109,7 @@ object trackerMod {
       def onSuccess(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: js.Array[js.Any],
+        parameters: js.Array[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,
@@ -119,7 +118,7 @@ object trackerMod {
       def onSuccess(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: StringDictionary[js.Any],
+        parameters: StringDictionary[Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,

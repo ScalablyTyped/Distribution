@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,12 @@ trait ParamsResourceDatasetsDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Dataset ID of dataset being deleted
     */
   var datasetId: js.UndefOr[String] = js.undefined
   
   /**
-    * If True, delete all the tables in the dataset. If False and the dataset
-    * contains tables, the request will fail. Default is False
+    * If True, delete all the tables in the dataset. If False and the dataset contains tables, the request will fail. Default is False
     */
   var deleteContents: js.UndefOr[Boolean] = js.undefined
   
@@ -41,10 +31,6 @@ object ParamsResourceDatasetsDelete {
   }
   
   extension [Self <: ParamsResourceDatasetsDelete](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

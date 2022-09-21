@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `8` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-tree.leaves.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-tree.leaves.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
 }
 object `8` {
   
@@ -29,7 +29,7 @@ object `8` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

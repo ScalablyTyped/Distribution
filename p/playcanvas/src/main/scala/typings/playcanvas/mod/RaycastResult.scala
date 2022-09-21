@@ -5,40 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new RaycastResult.
-  * @property entity - The entity that was hit.
-  * @property point - The point at which the ray hit the entity in world space.
-  * @property normal - The normal vector of the surface where the ray hit in world space.
-  * @param entity - The entity that was hit.
-  * @param point - The point at which the ray hit the entity in world space.
-  * @param normal - The normal vector of the surface where the ray hit in world space.
+  * Object holding the result of a successful raycast hit.
   */
 @JSImport("playcanvas", "RaycastResult")
 @js.native
-class RaycastResult protected ()
-  extends StObject
-     with typings.playcanvas.pc.RaycastResult {
-  def this(
-    entity: typings.playcanvas.pc.Entity,
-    point: typings.playcanvas.pc.Vec3,
-    normal: typings.playcanvas.pc.Vec3
-  ) = this()
+open class RaycastResult protected () extends StObject {
+  /**
+    * Create a new RaycastResult instance.
+    *
+    * @param {Entity} entity - The entity that was hit.
+    * @param {Vec3} point - The point at which the ray hit the entity in world space.
+    * @param {Vec3} normal - The normal vector of the surface where the ray hit in world space.
+    * @hideconstructor
+    */
+  def this(entity: Entity, point: Vec3, normal: Vec3) = this()
   
   /**
     * The entity that was hit.
+    *
+    * @type {Entity}
     */
-  /* CompleteClass */
-  var entity: typings.playcanvas.pc.Entity = js.native
+  var entity: Entity = js.native
   
   /**
     * The normal vector of the surface where the ray hit in world space.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var normal: typings.playcanvas.pc.Vec3 = js.native
+  var normal: Vec3 = js.native
   
   /**
     * The point at which the ray hit the entity in world space.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var point: typings.playcanvas.pc.Vec3 = js.native
+  var point: Vec3 = js.native
 }

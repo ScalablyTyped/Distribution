@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("tough-cookie-filestore", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with FileCookieStore {
     def this(filePath: String) = this()
@@ -39,7 +39,7 @@ object mod {
     override def inspect(): String = js.native
     
     /* CompleteClass */
-    override def loadFromFile(filePath: String, cb: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    override def loadFromFile(filePath: String, cb: js.Function1[/* data */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
     override def putCookie(cookie: Cookie, path: String, key: String, cb: js.Function1[/* whatever */ Null, Unit]): Unit = js.native
@@ -51,7 +51,7 @@ object mod {
     override def removeCookies(domain: String, path: String, cb: js.Function1[/* whatever */ Null, Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def saveToFile(filePath: String, data: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    override def saveToFile(filePath: String, data: Any, cb: js.Function0[Unit]): Unit = js.native
     
     /* CompleteClass */
     var synchronous: Boolean = js.native
@@ -106,7 +106,7 @@ object mod {
     
     def inspect(): String
     
-    def loadFromFile(filePath: String, cb: js.Function1[/* data */ js.Any, Unit]): Unit
+    def loadFromFile(filePath: String, cb: js.Function1[/* data */ Any, Unit]): Unit
     
     def putCookie(cookie: Cookie, path: String, key: String, cb: js.Function1[/* whatever */ Null, Unit]): Unit
     
@@ -114,7 +114,7 @@ object mod {
     
     def removeCookies(domain: String, path: String, cb: js.Function1[/* whatever */ Null, Unit]): Unit
     
-    def saveToFile(filePath: String, data: js.Any, cb: js.Function0[Unit]): Unit
+    def saveToFile(filePath: String, data: Any, cb: js.Function0[Unit]): Unit
     
     var synchronous: Boolean
     
@@ -128,11 +128,11 @@ object mod {
       findCookies: (String, String, js.Function2[/* whatever */ Null, /* cookies */ js.Array[Cookie], Unit]) => Unit,
       idx: StringDictionary[StringDictionary[StringDictionary[Cookie]]],
       inspect: () => String,
-      loadFromFile: (String, js.Function1[/* data */ js.Any, Unit]) => Unit,
+      loadFromFile: (String, js.Function1[/* data */ Any, Unit]) => Unit,
       putCookie: (Cookie, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit,
       removeCookie: (String, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit,
       removeCookies: (String, String, js.Function1[/* whatever */ Null, Unit]) => Unit,
-      saveToFile: (String, js.Any, js.Function0[Unit]) => Unit,
+      saveToFile: (String, Any, js.Function0[Unit]) => Unit,
       synchronous: Boolean,
       updateCookie: (Cookie, Cookie, js.Function1[/* whatever */ Null, Unit]) => Unit
     ): FileCookieStore = {
@@ -156,7 +156,7 @@ object mod {
       
       inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      inline def setLoadFromFile(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
+      inline def setLoadFromFile(value: (String, js.Function1[/* data */ Any, Unit]) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
       
       inline def setPutCookie(value: (Cookie, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "putCookie", js.Any.fromFunction4(value))
       
@@ -164,7 +164,7 @@ object mod {
       
       inline def setRemoveCookies(value: (String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "removeCookies", js.Any.fromFunction3(value))
       
-      inline def setSaveToFile(value: (String, js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "saveToFile", js.Any.fromFunction3(value))
+      inline def setSaveToFile(value: (String, Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "saveToFile", js.Any.fromFunction3(value))
       
       inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
       

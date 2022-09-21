@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Decimal")
 @js.native
-class Decimal protected () extends AttributeBase {
+open class Decimal protected () extends AttributeBase {
   /**
     * A Decimal Attribute.
     * @param name The logical name of the attribute.

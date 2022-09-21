@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PopupConstructor
   extends StObject
      with /**
-  * The popup widget allows users to view content from feature attributes.
+  * The Popup widget allows users to view content from feature attributes.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html)
   */

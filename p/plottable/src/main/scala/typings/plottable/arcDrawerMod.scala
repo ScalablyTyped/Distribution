@@ -9,5 +9,5 @@ object arcDrawerMod {
   
   @JSImport("plottable/build/src/drawers/arcDrawer", "ArcSVGDrawer")
   @js.native
-  class ArcSVGDrawer () extends SVGDrawer
+  open class ArcSVGDrawer () extends SVGDrawer
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `5` extends StObject {
   
-  @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.undefined
+  var errors: js.UndefOr[js.Array[Message]] = js.undefined
 }
 object `5` {
   
@@ -18,8 +17,10 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Message]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    
+    inline def setErrorsVarargs(value: Message*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

@@ -24,7 +24,7 @@ trait PurchaseReservedInstancesOfferingRequest extends StObject {
   /**
     * The time at which to purchase the Reserved Instance, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var PurchaseTime: js.UndefOr[DateTime] = js.undefined
+  var PurchaseTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the Reserved Instance offering to purchase.
@@ -50,7 +50,7 @@ object PurchaseReservedInstancesOfferingRequest {
     
     inline def setLimitPriceUndefined: Self = StObject.set(x, "LimitPrice", js.undefined)
     
-    inline def setPurchaseTime(value: DateTime): Self = StObject.set(x, "PurchaseTime", value.asInstanceOf[js.Any])
+    inline def setPurchaseTime(value: js.Date): Self = StObject.set(x, "PurchaseTime", value.asInstanceOf[js.Any])
     
     inline def setPurchaseTimeUndefined: Self = StObject.set(x, "PurchaseTime", js.undefined)
     

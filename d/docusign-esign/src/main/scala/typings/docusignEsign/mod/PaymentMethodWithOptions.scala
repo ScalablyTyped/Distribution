@@ -43,7 +43,7 @@ object PaymentMethodWithOptions {
     
     inline def setSupportedOptionsUndefined: Self = StObject.set(x, "supportedOptions", js.undefined)
     
-    inline def setSupportedOptionsVarargs(value: String*): Self = StObject.set(x, "supportedOptions", js.Array(value :_*))
+    inline def setSupportedOptionsVarargs(value: String*): Self = StObject.set(x, "supportedOptions", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

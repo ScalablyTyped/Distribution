@@ -3,9 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint
-import typings.octokitTypes.endpointsMod.UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -15,20 +15,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `1096` extends StObject {
   
   var parameters: RequestParameters & (Omit[
-    UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint, 
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+    ]) & RequiredPreview[Any], 
     baseUrl | headers | mediaType
   ])
   
-  var response: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+  ]
 }
 object `1096` {
   
   inline def apply(
     parameters: RequestParameters & (Omit[
-      UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint, 
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+      ]) & RequiredPreview[Any], 
       baseUrl | headers | mediaType
     ]),
-    response: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+    ]
   ): `1096` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1096`]
@@ -38,11 +46,17 @@ object `1096` {
     
     inline def setParameters(
       value: RequestParameters & (Omit[
-          UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint, 
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+          ]) & RequiredPreview[Any], 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/labels']['get'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

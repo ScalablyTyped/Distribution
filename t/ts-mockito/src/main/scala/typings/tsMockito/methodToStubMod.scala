@@ -11,7 +11,7 @@ object methodToStubMod {
   
   @JSImport("ts-mockito/lib/MethodToStub", "MethodToStub")
   @js.native
-  class MethodToStub protected () extends StObject {
+  open class MethodToStub protected () extends StObject {
     def this(
       methodStubCollection: MethodStubCollection,
       matchers: js.Array[Matcher],

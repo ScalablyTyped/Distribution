@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Replaces all instances of text matching a criteria with replace text.
-  */
 trait SchemaReplaceAllTextRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaReplaceAllTextRequest extends StObject {
   /**
     * The text that will replace the matched text.
     */
-  var replaceText: js.UndefOr[String] = js.undefined
+  var replaceText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReplaceAllTextRequest {
   
@@ -33,6 +30,8 @@ object SchemaReplaceAllTextRequest {
     inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
     inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceTextNull: Self = StObject.set(x, "replaceText", null)
     
     inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
   }

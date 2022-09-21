@@ -10,10 +10,10 @@ Check if a Buffer/Uint8Array is a GZIP file
 | ------------------ | :-------------: |
 | Full name          | is-gzip |
 | Keywords           | archive, buffer, check, detect, gzip, type, uint8array |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 21386033 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1559486.6666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/is-gzip#readme)

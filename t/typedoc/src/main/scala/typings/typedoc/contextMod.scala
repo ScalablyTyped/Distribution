@@ -1,20 +1,17 @@
 package typings.typedoc
 
 import typings.typedoc.converterConverterMod.Converter
-import typings.typedoc.loggersMod.Logger
+import typings.typedoc.kindMod.ReflectionKind
+import typings.typedoc.libUtilsMod.Logger
+import typings.typedoc.modelsMod.DeclarationReflection
 import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.modelsMod.Reflection
 import typings.typescript.mod.CompilerOptions
-import typings.typescript.mod.MapLike
 import typings.typescript.mod.Node
-import typings.typescript.mod.NodeArray
 import typings.typescript.mod.Program
-import typings.typescript.mod.SourceFile
 import typings.typescript.mod.Symbol
 import typings.typescript.mod.Type
 import typings.typescript.mod.TypeChecker
-import typings.typescript.mod.TypeNode
-import typings.typescript.mod.TypeParameterDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,93 +20,131 @@ object contextMod {
   
   @JSImport("typedoc/dist/lib/converter/context", "Context")
   @js.native
-  class Context protected () extends StObject {
-    def this(converter: Converter, fileNames: js.Array[String], checker: TypeChecker, program: Program) = this()
+  open class Context protected () extends StObject {
+    /**
+      * Create a new Context instance.
+      *
+      * @param converter  The converter instance that has created the context.
+      * @internal
+      */
+    def this(converter: Converter, programs: js.Array[Program], project: ProjectReflection) = this()
+    def this(converter: Converter, programs: js.Array[Program], project: ProjectReflection, scope: Reflection) = this()
     
-    var checker: TypeChecker = js.native
+    /* private */ var _program: Any = js.native
     
-    var converter: Converter = js.native
+    def addChild(reflection: DeclarationReflection): Unit = js.native
+    
+    /**
+      * The TypeChecker instance returned by the TypeScript compiler.
+      */
+    def checker: TypeChecker = js.native
+    
+    /**
+      * The converter instance that has created the context.
+      */
+    val converter: Converter = js.native
+    
+    /* private */ var convertingTypeNode: Any = js.native
+    
+    def createDeclarationReflection(kind: ReflectionKind): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Unit, exportSymbol: Unit, nameOverride: String): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Unit, exportSymbol: Symbol): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Unit, exportSymbol: Symbol, nameOverride: String): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Symbol): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Symbol, exportSymbol: Unit, nameOverride: String): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Symbol, exportSymbol: Symbol): DeclarationReflection = js.native
+    def createDeclarationReflection(kind: ReflectionKind, symbol: Symbol, exportSymbol: Symbol, nameOverride: String): DeclarationReflection = js.native
     
     def expectSymbolAtLocation(node: Node): Symbol = js.native
     
-    /* private */ var externalPattern: js.Any = js.native
+    def finalizeDeclarationReflection(reflection: DeclarationReflection): Unit = js.native
     
-    /* private */ var extractTypeParameters: js.Any = js.native
-    
-    var fileNames: js.Array[String] = js.native
-    
+    /**
+      * Return the compiler options.
+      */
     def getCompilerOptions(): CompilerOptions = js.native
-    
-    def getLogger(): Logger = js.native
     
     def getSymbolAtLocation(node: Node): js.UndefOr[Symbol] = js.native
     
+    /**
+      * Return the type declaration of the given node.
+      *
+      * @param node  The TypeScript node whose type should be resolved.
+      * @returns The type declaration of the given node.
+      */
     def getTypeAtLocation(node: Node): js.UndefOr[Type] = js.native
     
-    def inherit(baseNode: Node): Reflection = js.native
-    def inherit(baseNode: Node, typeArguments: js.Array[TypeNode]): Reflection = js.native
+    /** @internal */
+    def isConvertingTypeNode(): Boolean = js.native
     
-    var inheritParent: js.UndefOr[Node] = js.native
+    /** @internal */
+    def logger: Logger = js.native
     
-    var inherited: js.UndefOr[js.Array[String]] = js.native
+    def postReflectionCreation(reflection: Reflection): Unit = js.native
+    def postReflectionCreation(reflection: Reflection, symbol: Unit, exportSymbol: Symbol): Unit = js.native
+    def postReflectionCreation(reflection: Reflection, symbol: Symbol): Unit = js.native
+    def postReflectionCreation(reflection: Reflection, symbol: Symbol, exportSymbol: Symbol): Unit = js.native
     
-    var inheritedChildren: js.UndefOr[js.Array[String]] = js.native
+    /**
+      * The program currently being converted.
+      * Accessing this property will throw if a source file is not currently being converted.
+      */
+    def program: Program = js.native
     
-    var isDeclaration: js.UndefOr[Boolean] = js.native
+    /**
+      * All programs being converted.
+      */
+    val programs: js.Array[Program] = js.native
     
-    var isExternal: js.UndefOr[Boolean] = js.native
+    /**
+      * The project that is currently processed.
+      */
+    val project: ProjectReflection = js.native
     
-    def isExternalFile(fileName: String): Boolean = js.native
-    
-    var isInherit: js.UndefOr[Boolean] = js.native
-    
-    def isOutsideDocumentation(fileName: String): Boolean = js.native
-    def isOutsideDocumentation(fileName: String, isExternal: Boolean): Boolean = js.native
-    
-    var program: Program = js.native
-    
-    var project: ProjectReflection = js.native
-    
+    /**
+      * Register a newly generated reflection. All created reflections should be
+      * passed to this method to ensure that the project helper functions work correctly.
+      *
+      * @param reflection  The reflection that should be registered.
+      * @param symbol  The symbol the given reflection was resolved from.
+      */
     def registerReflection(reflection: Reflection): Unit = js.native
     def registerReflection(reflection: Reflection, symbol: Symbol): Unit = js.native
     
-    def resolveAliasedSymbol(): js.UndefOr[Symbol] = js.native
-    def resolveAliasedSymbol(symbol: Symbol): js.UndefOr[Symbol] = js.native
-    @JSName("resolveAliasedSymbol")
-    def resolveAliasedSymbol_Symbol(symbol: Symbol): Symbol = js.native
+    def resolveAliasedSymbol(symbol: Symbol): Symbol = js.native
     
-    var scope: Reflection = js.native
+    /**
+      * The scope or parent reflection that is currently processed.
+      */
+    val scope: Reflection = js.native
     
+    /** @internal */
+    def setActiveProgram(): Unit = js.native
+    def setActiveProgram(program: Program): Unit = js.native
+    
+    /** @internal */
+    def setConvertingTypeNode(): Unit = js.native
+    
+    /** @internal */
+    var shouldBeStatic: Boolean = js.native
+    
+    def shouldIgnore(symbol: Symbol): Boolean = js.native
+    
+    /**
+      * Trigger a node reflection event.
+      *
+      * All events are dispatched on the current converter instance.
+      *
+      * @param name  The name of the event that should be triggered.
+      * @param reflection  The triggering reflection.
+      * @param node  The triggering TypeScript node if available.
+      */
     def trigger(name: String, reflection: Reflection): Unit = js.native
     def trigger(name: String, reflection: Reflection, node: Node): Unit = js.native
     
-    var typeArguments: js.UndefOr[js.Array[typings.typedoc.modelsMod.Type]] = js.native
-    
-    var typeParameters: js.UndefOr[MapLike[typings.typedoc.modelsMod.Type]] = js.native
-    
-    var visitStack: js.Array[Node] = js.native
-    
-    def withScope(scope: Unit, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Unit, parameters: Unit, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Unit, parameters: Unit, preserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Unit, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
-    def withScope(
-      scope: Unit,
-      parameters: NodeArray[TypeParameterDeclaration],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(scope: Reflection, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Reflection, parameters: Unit, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Reflection, parameters: Unit, preserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Reflection, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
-    def withScope(
-      scope: Reflection,
-      parameters: NodeArray[TypeParameterDeclaration],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    
-    def withSourceFile(node: SourceFile, callback: js.Function): Unit = js.native
+    /**
+      * @param callback  The callback function that should be executed with the changed context.
+      */
+    def withScope(scope: Reflection): Context = js.native
   }
 }

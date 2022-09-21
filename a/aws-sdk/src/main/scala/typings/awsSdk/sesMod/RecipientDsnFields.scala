@@ -29,7 +29,7 @@ trait RecipientDsnFields extends StObject {
   /**
     * The time the final delivery attempt was made, in RFC 822 date-time format.
     */
-  var LastAttemptDate: js.UndefOr[typings.awsSdk.sesMod.LastAttemptDate] = js.undefined
+  var LastAttemptDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The MTA to which the remote MTA attempted to deliver the message, formatted as specified in RFC 3464 (mta-name-type; mta-name). This parameter typically applies only to propagating synchronous bounces.
@@ -60,13 +60,13 @@ object RecipientDsnFields {
     
     inline def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
     
-    inline def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
+    inline def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value*))
     
     inline def setFinalRecipient(value: Address): Self = StObject.set(x, "FinalRecipient", value.asInstanceOf[js.Any])
     
     inline def setFinalRecipientUndefined: Self = StObject.set(x, "FinalRecipient", js.undefined)
     
-    inline def setLastAttemptDate(value: LastAttemptDate): Self = StObject.set(x, "LastAttemptDate", value.asInstanceOf[js.Any])
+    inline def setLastAttemptDate(value: js.Date): Self = StObject.set(x, "LastAttemptDate", value.asInstanceOf[js.Any])
     
     inline def setLastAttemptDateUndefined: Self = StObject.set(x, "LastAttemptDate", js.undefined)
     

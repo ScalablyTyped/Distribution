@@ -9,7 +9,7 @@ object concatGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/concat_gpu", "ConcatProgram")
   @js.native
-  class ConcatProgram protected ()
+  open class ConcatProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(shapes: js.Array[js.Tuple2[Double, Double]]) = this()

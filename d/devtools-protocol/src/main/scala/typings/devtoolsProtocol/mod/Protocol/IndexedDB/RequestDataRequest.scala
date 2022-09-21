@@ -33,14 +33,20 @@ trait RequestDataRequest extends StObject {
   var pageSize: integer
   
   /**
+    * At least and at most one of securityOrigin, storageKey must be specified.
     * Security origin.
     */
-  var securityOrigin: String
+  var securityOrigin: js.UndefOr[String] = js.undefined
   
   /**
     * Number of records to skip.
     */
   var skipCount: integer
+  
+  /**
+    * Storage key.
+    */
+  var storageKey: js.UndefOr[String] = js.undefined
 }
 object RequestDataRequest {
   
@@ -49,10 +55,9 @@ object RequestDataRequest {
     indexName: String,
     objectStoreName: String,
     pageSize: integer,
-    securityOrigin: String,
     skipCount: integer
   ): RequestDataRequest = {
-    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any], skipCount = skipCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], skipCount = skipCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDataRequest]
   }
   
@@ -72,6 +77,12 @@ object RequestDataRequest {
     
     inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     
+    inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+    
     inline def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
   }
 }

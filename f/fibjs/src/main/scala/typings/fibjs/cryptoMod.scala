@@ -53,7 +53,7 @@ object cryptoMod {
   
   @JSImport("crypto", "Cipher")
   @js.native
-  class Cipher ()
+  open class Cipher ()
     extends StObject
        with ClassCipher
   
@@ -95,7 +95,7 @@ object cryptoMod {
   
   @JSImport("crypto", "PKey")
   @js.native
-  class PKey ()
+  open class PKey ()
     extends StObject
        with ClassPKey
   
@@ -105,19 +105,19 @@ object cryptoMod {
   
   @JSImport("crypto", "X509Cert")
   @js.native
-  class X509Cert ()
+  open class X509Cert ()
     extends StObject
        with ClassX509Cert
   
   @JSImport("crypto", "X509Crl")
   @js.native
-  class X509Crl ()
+  open class X509Crl ()
     extends StObject
        with ClassX509Crl
   
   @JSImport("crypto", "X509Req")
   @js.native
-  class X509Req ()
+  open class X509Req ()
     extends StObject
        with ClassX509Req
   

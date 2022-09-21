@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "CollectionChangedEventArgs")
 @js.native
-class CollectionChangedEventArgs[T] protected () extends StObject {
+open class CollectionChangedEventArgs[T] protected () extends StObject {
   def this(action: CollectionChangedAction) = this()
   def this(action: CollectionChangedAction, oldItems: js.Array[T | (T & ObservableObject)]) = this()
   def this(

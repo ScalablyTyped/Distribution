@@ -54,7 +54,7 @@ object tableHeadingMod {
   
   @JSImport("rbx/elements/table/table-heading", "TableHeading")
   @js.native
-  val TableHeading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val TableHeading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait TableHeadingProps extends StObject {

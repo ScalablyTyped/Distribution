@@ -1,7 +1,7 @@
 
 # Scala.js typings for qiniu-js
 
-Typings are for version 2.5
+Typings are for version 3.4.1
 
 ## Library description:
 Javascript SDK for Qiniu Resource (Cloud) Storage AP
@@ -10,10 +10,10 @@ Javascript SDK for Qiniu Resource (Cloud) Storage AP
 | ------------------ | :-------------: |
 | Full name          | qiniu-js |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 222 |
-| # downloads        | 130304 |
-| # stars            | 1 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 20435.666666666668 |
+| # stars            | 1337.0 |
 
 ## Links
 - [Homepage](https://github.com/qiniu/js-sdk#readme)
@@ -24,7 +24,7 @@ Javascript SDK for Qiniu Resource (Cloud) Storage AP
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

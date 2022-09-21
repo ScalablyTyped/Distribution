@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__media
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 This package is used for including responsive media (images, videos, etc) within your app.
@@ -11,9 +11,9 @@ This package is used for including responsive media (images, videos, etc) within
 | Full name          | @react-md/media |
 | Keywords           | react-md, material design, react, component, components, responsive, images, videos, media |
 | # releases         | 37 |
-| # dependents       | 1 |
-| # downloads        | 15319 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4757.333333333333 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/media/demos)

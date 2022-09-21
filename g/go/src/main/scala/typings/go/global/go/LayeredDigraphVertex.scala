@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class LayeredDigraphVertex ()
+open class LayeredDigraphVertex ()
   extends typings.go.mod.LayeredDigraphVertex

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.AlphaMapFilter")
 @js.native
-class AlphaMapFilter protected ()
+open class AlphaMapFilter protected ()
   extends StObject
      with typings.easeljs.createjs.AlphaMapFilter {
   def this(alphaMap: HTMLCanvasElement) = this()

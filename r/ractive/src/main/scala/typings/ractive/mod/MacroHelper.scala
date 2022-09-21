@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ractive", "MacroHelper")
 @js.native
-class MacroHelper () extends ContextHelper {
+open class MacroHelper () extends ContextHelper {
   
   /**
   	 * Create an alias for the local context of the partial (@local).

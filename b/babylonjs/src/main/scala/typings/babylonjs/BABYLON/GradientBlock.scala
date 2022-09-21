@@ -9,7 +9,7 @@ trait GradientBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _writeColorConstant: js.Any = js.native
+  /* private */ var _writeColorConstant: Any = js.native
   
   /**
     * Gets or sets the list of color steps

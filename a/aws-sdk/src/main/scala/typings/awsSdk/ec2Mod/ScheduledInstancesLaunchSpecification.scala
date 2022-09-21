@@ -89,7 +89,7 @@ object ScheduledInstancesLaunchSpecification {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: ScheduledInstancesBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: ScheduledInstancesBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
     
     inline def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
@@ -121,7 +121,7 @@ object ScheduledInstancesLaunchSpecification {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: ScheduledInstancesNetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: ScheduledInstancesNetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setPlacement(value: ScheduledInstancesPlacement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
@@ -135,7 +135,7 @@ object ScheduledInstancesLaunchSpecification {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

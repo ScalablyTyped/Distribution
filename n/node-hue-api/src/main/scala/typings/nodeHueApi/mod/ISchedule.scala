@@ -1,7 +1,6 @@
 package typings.nodeHueApi.mod
 
 import typings.nodeHueApi.anon.Address
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +13,11 @@ trait ISchedule extends StObject {
   
   var name: String
   
-  var time: Date
+  var time: js.Date
 }
 object ISchedule {
   
-  inline def apply(command: Address, description: String, name: String, time: Date): ISchedule = {
+  inline def apply(command: Address, description: String, name: String, time: js.Date): ISchedule = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchedule]
   }
@@ -31,6 +30,6 @@ object ISchedule {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

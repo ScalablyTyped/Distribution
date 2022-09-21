@@ -10,7 +10,7 @@ object pathMod {
   
   @JSImport("three/src/extras/core/Path", "Path")
   @js.native
-  class Path () extends CurvePath[Vector2] {
+  open class Path () extends CurvePath[Vector2] {
     def this(points: js.Array[Vector2]) = this()
     
     def absarc(
@@ -45,8 +45,8 @@ object pathMod {
     def bezierCurveTo(aCP1x: Double, aCP1y: Double, aCP2x: Double, aCP2y: Double, aX: Double, aY: Double): this.type = js.native
     
     /**
-    	 * @default new THREE.Vector2()
-    	 */
+      * @default new THREE.Vector2()
+      */
     var currentPoint: Vector2 = js.native
     
     def ellipse(
@@ -61,8 +61,8 @@ object pathMod {
     ): this.type = js.native
     
     /**
-    	 * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
-    	 */
+      * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
+      */
     def fromPoints(vectors: js.Array[Vector2]): this.type = js.native
     
     def lineTo(x: Double, y: Double): this.type = js.native

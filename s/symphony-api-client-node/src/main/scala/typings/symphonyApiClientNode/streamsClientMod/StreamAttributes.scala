@@ -19,6 +19,6 @@ object StreamAttributes {
     
     inline def setMembers(value: js.Array[Double]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value*))
   }
 }

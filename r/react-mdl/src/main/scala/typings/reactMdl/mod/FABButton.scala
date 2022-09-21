@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "FABButton")
 @js.native
-class FABButton protected () extends _MDLComponent[FABButtonProps] {
+open class FABButton protected () extends _MDLComponent[FABButtonProps] {
   def this(props: FABButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FABButtonProps, context: js.Any) = this()
+  def this(props: FABButtonProps, context: Any) = this()
 }

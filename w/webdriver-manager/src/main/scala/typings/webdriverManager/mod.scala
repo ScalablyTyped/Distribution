@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK")
   @js.native
-  class AndroidSDK ()
+  open class AndroidSDK ()
     extends typings.webdriverManager.androidSdkMod.AndroidSDK {
     def this(alternateCDN: String) = this()
   }
@@ -64,7 +64,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "Appium")
   @js.native
-  class Appium ()
+  open class Appium ()
     extends typings.webdriverManager.appiumMod.Appium {
     def this(alternateCDN: String) = this()
   }
@@ -117,7 +117,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver")
   @js.native
-  class ChromeDriver ()
+  open class ChromeDriver ()
     extends typings.webdriverManager.chromeDriverMod.ChromeDriver {
     def this(opt_alternativeCdn: String) = this()
   }
@@ -151,7 +151,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver")
   @js.native
-  class GeckoDriver ()
+  open class GeckoDriver ()
     extends typings.webdriverManager.geckoDriverMod.GeckoDriver {
     def this(opt_alternativeCdn: String) = this()
   }
@@ -179,8 +179,8 @@ object mod {
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.suffixes")
     @js.native
-    def suffixes: js.Any = js.native
-    inline def suffixes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
+    def suffixes: Any = js.native
+    inline def suffixes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.versionDefault")
     @js.native
@@ -190,7 +190,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "IEDriver")
   @js.native
-  class IEDriver ()
+  open class IEDriver ()
     extends typings.webdriverManager.iedriverMod.IEDriver {
     def this(opt_alternativeCdn: String) = this()
   }
@@ -243,7 +243,7 @@ object mod {
   
   @JSImport("webdriver-manager/built/lib/binaries", "Standalone")
   @js.native
-  class Standalone ()
+  open class Standalone ()
     extends typings.webdriverManager.standaloneMod.Standalone {
     def this(opt_alternativeCdn: String) = this()
   }

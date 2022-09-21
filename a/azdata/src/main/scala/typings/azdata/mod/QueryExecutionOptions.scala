@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryExecutionOptions extends StObject {
   
-  var options: StringDictionary[js.Any]
+  var options: StringDictionary[Any]
 }
 object QueryExecutionOptions {
   
-  inline def apply(options: StringDictionary[js.Any]): QueryExecutionOptions = {
+  inline def apply(options: StringDictionary[Any]): QueryExecutionOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionOptions]
   }
   
   extension [Self <: QueryExecutionOptions](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

@@ -25,6 +25,6 @@ object ILinksList {
     
     inline def setLinks(value: js.Array[ILink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: ILink*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: ILink*): Self = StObject.set(x, "links", js.Array(value*))
   }
 }

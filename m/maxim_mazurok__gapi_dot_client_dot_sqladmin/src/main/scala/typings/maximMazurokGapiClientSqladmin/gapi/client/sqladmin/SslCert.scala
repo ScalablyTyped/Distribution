@@ -15,16 +15,16 @@ trait SslCert extends StObject {
   /** User supplied name. Constrained to [a-zA-Z.-_ ]+. */
   var commonName: js.UndefOr[String] = js.undefined
   
-  /** The time when the certificate was created in RFC 3339 format, for example *2012-11-15T16:19:00.094Z* */
+  /** The time when the certificate was created in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z` */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** The time when the certificate expires in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /** The time when the certificate expires in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
   var expirationTime: js.UndefOr[String] = js.undefined
   
   /** Name of the database instance. */
   var instance: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#sslCert*. */
+  /** This is always `sql#sslCert`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The URI of this resource. */

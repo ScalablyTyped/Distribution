@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ContentTypeCreationInformation")
 @js.native
-class ContentTypeCreationInformation ()
+open class ContentTypeCreationInformation ()
   extends StObject
      with typings.sharepoint.SP.ContentTypeCreationInformation {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,7 +20,7 @@ class ContentTypeCreationInformation ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_description(): String = js.native

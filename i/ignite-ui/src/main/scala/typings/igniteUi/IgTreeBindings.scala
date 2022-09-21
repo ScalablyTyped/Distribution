@@ -10,7 +10,7 @@ trait IgTreeBindings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets the next layer of bindings in a recursive fashion.

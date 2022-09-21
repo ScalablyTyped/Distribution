@@ -6,8 +6,6 @@ import typings.libnpmsearch.libnpmsearchStrings.maintenance
 import typings.libnpmsearch.libnpmsearchStrings.optimal
 import typings.libnpmsearch.libnpmsearchStrings.popularity
 import typings.libnpmsearch.libnpmsearchStrings.quality
-import typings.node.NodeJS.ReadWriteStream
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,10 +23,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stream(query: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def stream(query: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  inline def stream(query: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def stream(query: js.Array[String], opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def stream(query: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def stream(query: String, opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def stream(query: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def stream(query: js.Array[String], opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait DetailedResult extends StObject {
     
@@ -92,7 +90,7 @@ object mod {
   
   trait Result extends StObject {
     
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -113,7 +111,7 @@ object mod {
     
     extension [Self <: Result](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -125,13 +123,13 @@ object mod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setMaintainers(value: js.Array[Maintainer]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
       
       inline def setMaintainersUndefined: Self = StObject.set(x, "maintainers", js.undefined)
       
-      inline def setMaintainersVarargs(value: Maintainer*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Maintainer*): Self = StObject.set(x, "maintainers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

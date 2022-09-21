@@ -25,12 +25,12 @@ object TestRulesetResponse {
     
     inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
     
     inline def setTestResults(value: js.Array[TestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     inline def setTestResultsUndefined: Self = StObject.set(x, "testResults", js.undefined)
     
-    inline def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
+    inline def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value*))
   }
 }

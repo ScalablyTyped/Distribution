@@ -33,6 +33,6 @@ object DescribeTrafficMirrorSessionsResult {
     
     inline def setTrafficMirrorSessionsUndefined: Self = StObject.set(x, "TrafficMirrorSessions", js.undefined)
     
-    inline def setTrafficMirrorSessionsVarargs(value: TrafficMirrorSession*): Self = StObject.set(x, "TrafficMirrorSessions", js.Array(value :_*))
+    inline def setTrafficMirrorSessionsVarargs(value: TrafficMirrorSession*): Self = StObject.set(x, "TrafficMirrorSessions", js.Array(value*))
   }
 }

@@ -12,12 +12,12 @@ trait UpdateMemberDetectorsRequest extends StObject {
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
-    * An object describes which data sources will be updated.
+    * Describes which data sources will be updated.
     */
   var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
   /**
-    * The detector ID of the master account.
+    * The detector ID of the administrator account.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
@@ -32,7 +32,7 @@ object UpdateMemberDetectorsRequest {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     

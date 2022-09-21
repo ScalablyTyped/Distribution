@@ -7,50 +7,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Path3D extends StObject {
   
-  /* private */ var _alignTangentsWithPath: js.Any = js.native
+  /* private */ var _alignTangentsWithPath: Any = js.native
   
-  /* private */ var _binormals: js.Any = js.native
+  /* private */ var _binormals: Any = js.native
   
-  /* private */ var _compute: js.Any = js.native
+  /* private */ var _compute: Any = js.native
   
-  /* private */ var _curve: js.Any = js.native
+  /* private */ var _curve: Any = js.native
   
-  /* private */ var _distances: js.Any = js.native
+  /* private */ var _distances: Any = js.native
   
-  /* private */ var _getFirstNonNullVector: js.Any = js.native
+  /* private */ var _getFirstNonNullVector: Any = js.native
   
-  /* private */ var _getLastNonNullVector: js.Any = js.native
+  /* private */ var _getLastNonNullVector: Any = js.native
   
-  /* private */ var _normalVector: js.Any = js.native
+  /* private */ var _normalVector: Any = js.native
   
-  /* private */ var _normals: js.Any = js.native
+  /* private */ var _normals: Any = js.native
   
-  /* private */ val _pointAtData: js.Any = js.native
+  /* private */ val _pointAtData: Any = js.native
   
-  /* private */ var _raw: js.Any = js.native
+  /* private */ var _raw: Any = js.native
   
   /**
     * Updates the point at data from the specified parameters
     * @param position where along the path the interpolated point is, from 0.0 to 1.0
+    * @param subPosition
     * @param point the interpolated point
     * @param parentIndex the index of an existing curve point that is on, or else positionally the first behind, the interpolated point
+    * @param interpolateTNB
     */
-  /* private */ var _setPointAtData: js.Any = js.native
+  /* private */ var _setPointAtData: Any = js.native
   
-  /* private */ var _tangents: js.Any = js.native
+  /* private */ var _tangents: Any = js.native
   
   /**
     * Updates the point at interpolation matrix for the tangents, normals and binormals
     */
-  /* private */ var _updateInterpolationMatrix: js.Any = js.native
+  /* private */ var _updateInterpolationMatrix: Any = js.native
   
   /**
     * Updates the point at data for an interpolated point along this curve
     * @param position the position of the point along this curve, from 0.0 to 1.0
-    * @interpolateTNB wether to compute the interpolated tangent, normal and binormal
+    * @param interpolateTNB
+    * @interpolateTNB whether to compute the interpolated tangent, normal and binormal
     * @returns the (updated) point at data
     */
-  /* private */ var _updatePointAtData: js.Any = js.native
+  /* private */ var _updatePointAtData: Any = js.native
   
   /**
     * Returns the binormal vector of an interpolated Path3D curve point at the specified position along this path.

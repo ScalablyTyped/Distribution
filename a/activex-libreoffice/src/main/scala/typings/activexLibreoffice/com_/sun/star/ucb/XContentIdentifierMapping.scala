@@ -49,7 +49,7 @@ trait XContentIdentifierMapping
     * @param Value On input, a sequence of anys corresponding to the columns of the XRow (the first column goes into the zeroth position of the sequence, and
     * @returns `TRUE` if any of the columns contain data that (potentially) needs mapping (though maybe no mapping occurred for the concrete input data of this
     */
-  def mapRow(Value: js.Array[SeqEquiv[js.Any]]): Boolean
+  def mapRow(Value: js.Array[SeqEquiv[Any]]): Boolean
 }
 object XContentIdentifierMapping {
   
@@ -58,8 +58,8 @@ object XContentIdentifierMapping {
     mapContent: XContent => XContent,
     mapContentIdentifier: XContentIdentifier => XContentIdentifier,
     mapContentIdentifierString: String => String,
-    mapRow: js.Array[SeqEquiv[js.Any]] => Boolean,
-    queryInterface: `type` => js.Any,
+    mapRow: js.Array[SeqEquiv[Any]] => Boolean,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentIdentifierMapping = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), mapContent = js.Any.fromFunction1(mapContent), mapContentIdentifier = js.Any.fromFunction1(mapContentIdentifier), mapContentIdentifierString = js.Any.fromFunction1(mapContentIdentifierString), mapRow = js.Any.fromFunction1(mapRow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -74,6 +74,6 @@ object XContentIdentifierMapping {
     
     inline def setMapContentIdentifierString(value: String => String): Self = StObject.set(x, "mapContentIdentifierString", js.Any.fromFunction1(value))
     
-    inline def setMapRow(value: js.Array[SeqEquiv[js.Any]] => Boolean): Self = StObject.set(x, "mapRow", js.Any.fromFunction1(value))
+    inline def setMapRow(value: js.Array[SeqEquiv[Any]] => Boolean): Self = StObject.set(x, "mapRow", js.Any.fromFunction1(value))
   }
 }

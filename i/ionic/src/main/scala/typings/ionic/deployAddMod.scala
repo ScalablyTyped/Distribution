@@ -13,7 +13,7 @@ object deployAddMod {
   
   @JSImport("ionic/commands/deploy/add", "AddCommand")
   @js.native
-  class AddCommand protected () extends DeployConfCommand {
+  open class AddCommand protected () extends DeployConfCommand {
     def this(namespace: INamespace) = this()
     
     /* protected */ def buildCordovaDeployOptions(options: CommandLineOptions): js.Array[String] = js.native

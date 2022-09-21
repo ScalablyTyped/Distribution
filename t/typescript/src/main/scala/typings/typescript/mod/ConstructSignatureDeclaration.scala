@@ -17,7 +17,7 @@ trait ConstructSignatureDeclaration
      with HasJSDoc
      with SignatureDeclaration {
   
-  var _typeElementBrand: js.Any = js.native
+  var _typeElementBrand: Any = js.native
   
   @JSName("kind")
   val kind_ConstructSignatureDeclaration: ConstructSignature = js.native

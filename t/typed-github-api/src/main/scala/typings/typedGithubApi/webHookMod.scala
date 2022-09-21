@@ -25,7 +25,7 @@ object webHookMod {
   
   @JSImport("typed-github-api/dist/web-hook", "IssueWebHook")
   @js.native
-  class IssueWebHook protected ()
+  open class IssueWebHook protected ()
     extends WebHook[IssueWebHookData, typings.typedGithubApi.webHooksMod.IssueWebHookData] {
     def this(options: OptionsOrRef) = this()
     def this(secret: String, options: OptionsOrRef) = this()
@@ -41,17 +41,17 @@ object webHookMod {
     
     /* protected */ def convertData(request: WebHookData, data: TApiData): TData = js.native
     
-    /* private */ val handlers: js.Any = js.native
+    /* private */ val handlers: Any = js.native
     
     def registerAsyncHandler(handler: AsyncAction[TData]): Unit = js.native
     
     def registerHandler(handler: Action[TData]): Unit = js.native
     
-    /* private */ def requestHandler(req: js.Any, res: js.Any): js.Any = js.native
+    /* private */ def requestHandler(req: Any, res: Any): Any = js.native
     
     val router: Router = js.native
     
-    /* private */ var secret: js.Any = js.native
+    /* private */ var secret: Any = js.native
   }
   
   trait IssueWebHookData

@@ -158,10 +158,10 @@ object mod {
     /* 1 */ val Yield: typings.escodegen.mod.Precedence.Yield & Double = js.native
   }
   
-  inline def attachComments(ast: js.Any, comments: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(ast.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def attachComments(ast: Any, comments: Any, tokens: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(ast.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def generate(ast: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def generate(ast: js.Any, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(ast: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generate(ast: Any, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait FormatOptions extends StObject {
     

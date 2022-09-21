@@ -11,10 +11,10 @@ object graphEventMod {
   
   @JSImport("@antv/g-base/lib/event/graph-event", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with GraphEvent {
-    def this(`type`: js.Any, event: js.Any) = this()
+    def this(`type`: Any, event: Any) = this()
     
     /**
       * 是否允许冒泡
@@ -93,7 +93,7 @@ object graphEventMod {
     override def preventDefault(): Unit = js.native
     
     /* CompleteClass */
-    var propagationPath: js.Array[js.Any] = js.native
+    var propagationPath: js.Array[Any] = js.native
     
     /**
       * 是否阻止传播（向上冒泡）
@@ -231,7 +231,7 @@ object graphEventMod {
       */
     def preventDefault(): Unit
     
-    var propagationPath: js.Array[js.Any]
+    var propagationPath: js.Array[Any]
     
     /**
       * 是否阻止传播（向上冒泡）
@@ -304,7 +304,7 @@ object graphEventMod {
       name: String,
       originalEvent: Event,
       preventDefault: () => Unit,
-      propagationPath: js.Array[js.Any],
+      propagationPath: js.Array[Any],
       propagationStopped: Boolean,
       restore: () => Unit,
       save: () => Unit,
@@ -346,9 +346,9 @@ object graphEventMod {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      inline def setPropagationPath(value: js.Array[js.Any]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
+      inline def setPropagationPath(value: js.Array[Any]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
       
-      inline def setPropagationPathVarargs(value: js.Any*): Self = StObject.set(x, "propagationPath", js.Array(value :_*))
+      inline def setPropagationPathVarargs(value: Any*): Self = StObject.set(x, "propagationPath", js.Array(value*))
       
       inline def setPropagationStopped(value: Boolean): Self = StObject.set(x, "propagationStopped", value.asInstanceOf[js.Any])
       

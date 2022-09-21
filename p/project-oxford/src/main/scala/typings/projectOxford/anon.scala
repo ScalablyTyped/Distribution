@@ -41,7 +41,7 @@ object anon {
       
       inline def setDominantColors(value: js.Array[String]): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
       
-      inline def setDominantColorsVarargs(value: String*): Self = StObject.set(x, "dominantColors", js.Array(value :_*))
+      inline def setDominantColorsVarargs(value: String*): Self = StObject.set(x, "dominantColors", js.Array(value*))
       
       inline def setIsBWImg(value: Boolean): Self = StObject.set(x, "isBWImg", value.asInstanceOf[js.Any])
     }
@@ -237,7 +237,7 @@ object anon {
       
       inline def setLines(value: js.Array[Words]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setLinesVarargs(value: Words*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Words*): Self = StObject.set(x, "lines", js.Array(value*))
     }
   }
   
@@ -323,7 +323,7 @@ object anon {
       
       inline def setWords(value: js.Array[BoundingBox]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      inline def setWordsVarargs(value: BoundingBox*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: BoundingBox*): Self = StObject.set(x, "words", js.Array(value*))
     }
   }
 }

@@ -11,7 +11,7 @@ object noUnusedVariableRuleMod {
   
   @JSImport("tslint/lib/rules/noUnusedVariableRule", "Rule")
   @js.native
-  class Rule protected () extends TypedRule {
+  open class Rule protected () extends TypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */

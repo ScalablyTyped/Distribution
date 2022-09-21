@@ -25,7 +25,7 @@ object XGoalSeek {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     seekGoal: (CellAddress, CellAddress, String) => GoalResult
   ): XGoalSeek = {

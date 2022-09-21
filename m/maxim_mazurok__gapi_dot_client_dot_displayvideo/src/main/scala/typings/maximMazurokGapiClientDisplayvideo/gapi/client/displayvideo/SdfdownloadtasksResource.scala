@@ -1,8 +1,8 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUserResource
-import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserUploadType
+import typings.maximMazurokGapiClientDisplayvideo.anon.CallbackFieldsKeyOauthtoken
+import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUserUploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +15,8 @@ trait SdfdownloadtasksResource extends StObject {
     * If the request is successful, the response type of the operation is SdfDownloadTask. The response will not include the download files, which must be retrieved with media.download.
     * The state of operation can be retrieved with sdfdownloadtask.operations.get. Any errors can be found in the error.message. Note that error.details is expected to be empty.
     */
-  def create(request: PrettyPrintQuotaUserResource): Request[Operation] = js.native
-  def create(request: QuotaUserUploadType, body: CreateSdfDownloadTaskRequest): Request[Operation] = js.native
+  def create(request: CallbackFieldsKeyOauthtoken): Request[Operation] = js.native
+  def create(request: PrettyPrintQuotaUserUploadType, body: CreateSdfDownloadTaskRequest): Request[Operation] = js.native
   
   var operations: OperationsResource = js.native
 }

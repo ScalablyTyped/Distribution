@@ -33,7 +33,7 @@ object ILookupTableInfo {
     
     inline def setLookup(value: js.Array[ILookupInfo]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
     
-    inline def setLookupVarargs(value: ILookupInfo*): Self = StObject.set(x, "lookup", js.Array(value :_*))
+    inline def setLookupVarargs(value: ILookupInfo*): Self = StObject.set(x, "lookup", js.Array(value*))
     
     inline def setShowImage(value: Boolean): Self = StObject.set(x, "showImage", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object StartHCEOption {
     
     inline def setAid_list(value: js.Array[String]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
     
-    inline def setAid_listVarargs(value: String*): Self = StObject.set(x, "aid_list", js.Array(value :_*))
+    inline def setAid_listVarargs(value: String*): Self = StObject.set(x, "aid_list", js.Array(value*))
     
     inline def setComplete(value: /* res */ NFCError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

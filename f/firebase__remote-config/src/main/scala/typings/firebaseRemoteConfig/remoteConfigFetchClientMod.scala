@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object remoteConfigFetchClientMod {
   
-  @JSImport("@firebase/remote-config/dist/src/client/remote_config_fetch_client", "RemoteConfigAbortSignal")
+  @JSImport("@firebase/remote-config/dist/esm/src/client/remote_config_fetch_client", "RemoteConfigAbortSignal")
   @js.native
-  class RemoteConfigAbortSignal () extends StObject {
+  open class RemoteConfigAbortSignal () extends StObject {
     
     def abort(): Unit = js.native
     

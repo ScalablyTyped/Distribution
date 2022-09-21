@@ -9,7 +9,7 @@ trait Domain extends StObject {
   /** An opaque string used to identify this domain. */
   var legacyId: js.UndefOr[String] = js.undefined
   
-  /** The name of the domain, e.g. "google.com". */
+  /** The name of the domain, e.g. `google.com`. */
   var name: js.UndefOr[String] = js.undefined
 }
 object Domain {

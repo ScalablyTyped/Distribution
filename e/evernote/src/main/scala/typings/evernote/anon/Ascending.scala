@@ -55,7 +55,7 @@ object Ascending {
     
     inline def setTagGuidsUndefined: Self = StObject.set(x, "tagGuids", js.undefined)
     
-    inline def setTagGuidsVarargs(value: String*): Self = StObject.set(x, "tagGuids", js.Array(value :_*))
+    inline def setTagGuidsVarargs(value: String*): Self = StObject.set(x, "tagGuids", js.Array(value*))
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

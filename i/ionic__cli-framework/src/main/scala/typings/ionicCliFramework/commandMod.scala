@@ -44,7 +44,7 @@ object commandMod {
   
   @JSImport("@ionic/cli-framework/lib/command", "BaseCommandMap")
   @js.native
-  class BaseCommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, CommandMapGetter[C, N, M, I, O]]
+  open class BaseCommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, CommandMapGetter[C, N, M, I, O]]
   
   @JSImport("@ionic/cli-framework/lib/command", "BaseNamespace")
   @js.native
@@ -59,7 +59,7 @@ object commandMod {
   
   @JSImport("@ionic/cli-framework/lib/command", "BaseNamespaceMap")
   @js.native
-  class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
+  open class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
   
   @JSImport("@ionic/cli-framework/lib/command", "Command")
   @js.native
@@ -75,7 +75,7 @@ object commandMod {
   
   @JSImport("@ionic/cli-framework/lib/command", "CommandMap")
   @js.native
-  class CommandMap () extends BaseCommandMap[
+  open class CommandMap () extends BaseCommandMap[
           Command, 
           Namespace, 
           CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
@@ -101,7 +101,7 @@ object commandMod {
   
   @JSImport("@ionic/cli-framework/lib/command", "NamespaceMap")
   @js.native
-  class NamespaceMap () extends BaseNamespaceMap[
+  open class NamespaceMap () extends BaseNamespaceMap[
           Command, 
           Namespace, 
           CommandMetadata[CommandMetadataInput, CommandMetadataOption], 

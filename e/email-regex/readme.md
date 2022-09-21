@@ -1,7 +1,7 @@
 
 # Scala.js typings for email-regex
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Regular expression for matching email addresses
@@ -11,14 +11,11 @@ Regular expression for matching email addresses
 | Full name          | email-regex |
 | Keywords           | email, address, regex, regexp, string, match, text, test, find, pattern, validate |
 | # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 576944 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 74500.66666666667 |
+| # stars            | 113.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/email-regex#readme)
-- [Bugs](https://github.com/sindresorhus/email-regex/issues)
-- [Repository](https://github.com/sindresorhus/email-regex)
 - [Npm](https://www.npmjs.com/package/email-regex)
     
 

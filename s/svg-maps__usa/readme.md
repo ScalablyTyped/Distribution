@@ -10,10 +10,10 @@ Map of USA states
 | ------------------ | :-------------: |
 | Full name          | @svg-maps/usa |
 | Keywords           | svg, map, usa, states |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 6147 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5101.0 |
+| # stars            | 165.0 |
 
 ## Links
 - [Homepage](https://github.com/VictorCazanave/svg-maps#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for throng
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 A simple worker-manager for clustered apps
@@ -10,10 +10,10 @@ A simple worker-manager for clustered apps
 | ------------------ | :-------------: |
 | Full name          | throng |
 | Keywords           | cluster, worker, process |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 1843088 |
-| # stars            | 25 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 401294.6666666667 |
+| # stars            | 820.0 |
 
 ## Links
 - [Homepage](https://github.com/hunterloftis/throng)

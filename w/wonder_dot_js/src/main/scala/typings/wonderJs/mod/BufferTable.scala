@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BufferTable")
 @js.native
-class BufferTable ()
+open class BufferTable ()
   extends typings.wonderJs.bufferTableMod.BufferTable
 /* static members */
 object BufferTable {

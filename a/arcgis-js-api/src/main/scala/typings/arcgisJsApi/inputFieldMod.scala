@@ -17,7 +17,12 @@ object inputFieldMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/FeatureForm/InputField", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * This is a read-only support class that represents an input field.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html)
+    */
+  open class Class ()
     extends StObject
        with InputField {
     def this(properties: InputFieldProperties) = this()

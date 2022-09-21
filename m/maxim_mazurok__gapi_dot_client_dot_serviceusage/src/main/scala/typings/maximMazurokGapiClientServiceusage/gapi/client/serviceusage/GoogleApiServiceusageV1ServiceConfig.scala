@@ -49,7 +49,7 @@ object GoogleApiServiceusageV1ServiceConfig {
     
     inline def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
-    inline def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
+    inline def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value*))
     
     inline def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
@@ -63,13 +63,13 @@ object GoogleApiServiceusageV1ServiceConfig {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
     inline def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
-    inline def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
+    inline def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value*))
     
     inline def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     

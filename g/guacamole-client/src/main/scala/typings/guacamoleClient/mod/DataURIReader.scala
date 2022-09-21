@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "DataURIReader")
 @js.native
-class DataURIReader protected ()
+open class DataURIReader protected ()
   extends typings.guacamoleClient.dataURIReaderMod.DataURIReader {
   /**
     * @param stream The stream that data will be read from.

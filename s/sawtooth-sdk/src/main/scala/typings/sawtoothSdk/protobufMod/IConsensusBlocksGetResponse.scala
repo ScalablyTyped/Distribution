@@ -28,7 +28,7 @@ object IConsensusBlocksGetResponse {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: IConsensusBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: IConsensusBlock*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -110,11 +110,11 @@ object Loader {
     
     inline def setAssetsLoaded(value: js.Array[String]): Self = StObject.set(x, "assetsLoaded", value.asInstanceOf[js.Any])
     
-    inline def setAssetsLoadedVarargs(value: String*): Self = StObject.set(x, "assetsLoaded", js.Array(value :_*))
+    inline def setAssetsLoadedVarargs(value: String*): Self = StObject.set(x, "assetsLoaded", js.Array(value*))
     
     inline def setAssetsLoading(value: js.Array[String]): Self = StObject.set(x, "assetsLoading", value.asInstanceOf[js.Any])
     
-    inline def setAssetsLoadingVarargs(value: String*): Self = StObject.set(x, "assetsLoading", js.Array(value :_*))
+    inline def setAssetsLoadingVarargs(value: String*): Self = StObject.set(x, "assetsLoading", js.Array(value*))
     
     inline def setAssetsN(value: Double): Self = StObject.set(x, "assetsN", value.asInstanceOf[js.Any])
     

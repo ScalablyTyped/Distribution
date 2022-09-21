@@ -24,12 +24,12 @@ object `6` {
     
     inline def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
     
-    inline def setNewValVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "newVal", js.Array(value :_*))
+    inline def setNewValVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "newVal", js.Array(value*))
     
     inline def setOldVal(value: js.Array[CustomRequestHeaders]): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
     
     inline def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
     
-    inline def setOldValVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "oldVal", js.Array(value :_*))
+    inline def setOldValVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "oldVal", js.Array(value*))
   }
 }

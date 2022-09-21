@@ -19,5 +19,5 @@ trait WebServices extends StObject {
   def Item(Index: String): WebService = js.native
   def Item(Index: Double): WebService = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

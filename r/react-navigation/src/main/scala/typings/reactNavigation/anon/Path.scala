@@ -11,7 +11,7 @@ trait Path[Options, NavigationScreenPropType, ScreenProps] extends StObject {
   
   var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]] = js.undefined
   
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
 }
@@ -32,7 +32,7 @@ object Path {
     
     inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     

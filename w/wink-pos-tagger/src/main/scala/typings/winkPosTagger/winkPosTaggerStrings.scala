@@ -39,6 +39,18 @@ object winkPosTaggerStrings {
   inline def NN: NN = "NN".asInstanceOf[NN]
   
   @js.native
+  sealed trait NNP
+    extends StObject
+       with PosTag
+  inline def NNP: NNP = "NNP".asInstanceOf[NNP]
+  
+  @js.native
+  sealed trait NNS
+    extends StObject
+       with PosTag
+  inline def NNS: NNS = "NNS".asInstanceOf[NNS]
+  
+  @js.native
   sealed trait PRP
     extends StObject
        with PosTag

@@ -18,7 +18,7 @@ object ButtonEvents {
   
   extension [Self <: ButtonEvents](x: Self) {
     
-    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }

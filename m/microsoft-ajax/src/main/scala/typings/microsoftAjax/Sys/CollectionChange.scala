@@ -21,7 +21,7 @@ trait CollectionChange extends StObject {
   /**
     * @return An array of items that were added.
     */
-  var newItems: js.Array[js.Any]
+  var newItems: js.Array[Any]
   
   /**
     * The index where new items have been inserted.
@@ -33,7 +33,7 @@ trait CollectionChange extends StObject {
     * The items that were removed when the NotifyCollectionChangedAction object is set to remove.
     * @return An array containing the items that were removed.
     */
-  var oldItems: js.Array[js.Any]
+  var oldItems: js.Array[Any]
   
   /**
     * Gets the index where old items have been removed.
@@ -45,9 +45,9 @@ object CollectionChange {
   
   inline def apply(
     action: NotifyCollectionChangedAction,
-    newItems: js.Array[js.Any],
+    newItems: js.Array[Any],
     newStartingIndex: Double,
-    oldItems: js.Array[js.Any],
+    oldItems: js.Array[Any],
     oldStartingIndex: Double
   ): CollectionChange = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], newItems = newItems.asInstanceOf[js.Any], newStartingIndex = newStartingIndex.asInstanceOf[js.Any], oldItems = oldItems.asInstanceOf[js.Any], oldStartingIndex = oldStartingIndex.asInstanceOf[js.Any])
@@ -58,15 +58,15 @@ object CollectionChange {
     
     inline def setAction(value: NotifyCollectionChangedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setNewItems(value: js.Array[js.Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
+    inline def setNewItems(value: js.Array[Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
     
-    inline def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
+    inline def setNewItemsVarargs(value: Any*): Self = StObject.set(x, "newItems", js.Array(value*))
     
     inline def setNewStartingIndex(value: Double): Self = StObject.set(x, "newStartingIndex", value.asInstanceOf[js.Any])
     
-    inline def setOldItems(value: js.Array[js.Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+    inline def setOldItems(value: js.Array[Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
     
-    inline def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
+    inline def setOldItemsVarargs(value: Any*): Self = StObject.set(x, "oldItems", js.Array(value*))
     
     inline def setOldStartingIndex(value: Double): Self = StObject.set(x, "oldStartingIndex", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,6 @@ import typings.chrome.chrome.vpnProvider.VpnPacketReceptionEvent
 import typings.chrome.chrome.vpnProvider.VpnPlatformMessageEvent
 import typings.chrome.chrome.vpnProvider.VpnSessionParameters
 import typings.chrome.chrome.vpnProvider.VpnUiEvent
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,8 +58,8 @@ object vpnProvider {
   def onUIEvent: VpnUiEvent = js.native
   inline def onUIEvent_=(x: VpnUiEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUIEvent")(x.asInstanceOf[js.Any])
   
-  inline def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendPacket(data: js.typedarray.ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendPacket(data: js.typedarray.ArrayBuffer, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParameters")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

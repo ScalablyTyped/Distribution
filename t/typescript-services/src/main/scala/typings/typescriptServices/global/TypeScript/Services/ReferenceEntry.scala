@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.ReferenceEntry")
 @js.native
-class ReferenceEntry protected ()
+open class ReferenceEntry protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.ReferenceEntry {
   def this(fileName: String, minChar: Double, limChar: Double, isWriteAccess: Boolean) = this()

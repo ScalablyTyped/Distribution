@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Cylinder")
 @js.native
-class Cylinder protected ()
+open class Cylinder protected ()
   extends StObject
      with typings.cannon.CANNON.Shape {
   def this(radiusTop: Double, radiusBottom: Double, height: Double, numSegments: Double) = this()
@@ -19,6 +19,9 @@ class Cylinder protected ()
   
   /* CompleteClass */
   var collisionResponse: Boolean = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var `type`: Double = js.native

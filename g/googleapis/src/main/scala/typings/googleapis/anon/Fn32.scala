@@ -1,9 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1.Cloudfunctions
-import typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1.Options
+import typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1.Bigquerydatatransfer
+import typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1.Options
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.googleapisStrings.v1beta2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn32 extends StObject {
   
-  def apply(options: Options): Cloudfunctions = js.native
-  def apply(options: typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Options): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = js.native
-  def apply(version: v1): Cloudfunctions = js.native
-  def apply(version: v1beta2): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = js.native
+  def apply(options: Options): Bigquerydatatransfer = js.native
+  def apply(version: v1): Bigquerydatatransfer = js.native
 }

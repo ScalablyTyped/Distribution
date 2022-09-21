@@ -11,7 +11,7 @@ trait ToolBar
   extends StObject
      with Widget {
   
-  def add(command: js.Any): Unit = js.native
+  def add(command: Any): Unit = js.native
   
   def enable(command: String, enable: Boolean): Unit = js.native
   def enable(command: JQuery, enable: Boolean): Unit = js.native
@@ -25,6 +25,8 @@ trait ToolBar
   
   @JSName("options")
   var options_ToolBar: ToolBarOptions = js.native
+  
+  var overflowAnchor: JQuery = js.native
   
   var popup: Popup = js.native
   

@@ -1,6 +1,7 @@
 package typings.gtoken
 
-import typings.std.Error
+import typings.gaxios.commonMod.GaxiosOptions
+import typings.gaxios.commonMod.GaxiosPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object mod {
     *
     * @param options  Configuration object.
     */
-  class GoogleToken () extends StObject {
+  open class GoogleToken () extends StObject {
     def this(options: TokenOptions) = this()
     
     def accessToken: js.UndefOr[String] = js.native
@@ -25,11 +26,13 @@ object mod {
       * Configure the GoogleToken for re-use.
       * @param  {object} options Configuration object.
       */
-    /* private */ var configure: js.Any = js.native
+    /* private */ var configure: Any = js.native
+    
+    var eagerRefreshThresholdMillis: js.UndefOr[Double] = js.native
     
     var email: js.UndefOr[String] = js.native
     
-    /* private */ var ensureEmail: js.Any = js.native
+    /* private */ var ensureEmail: Any = js.native
     
     var expiresAt: js.UndefOr[Double] = js.native
     
@@ -50,9 +53,9 @@ object mod {
     def getToken(callback: GetTokenCallback, opts: GetTokenOptions): Unit = js.native
     def getToken(opts: GetTokenOptions): js.Promise[TokenData] = js.native
     
-    /* private */ var getTokenAsync: js.Any = js.native
+    /* private */ var getTokenAsync: Any = js.native
     
-    /* private */ var getTokenAsyncInner: js.Any = js.native
+    /* private */ var getTokenAsyncInner: Any = js.native
     
     /**
       * Returns whether the token has expired.
@@ -63,7 +66,14 @@ object mod {
     
     def idToken: js.UndefOr[String] = js.native
     
-    /* private */ var inFlightRequest: js.Any = js.native
+    /* private */ var inFlightRequest: Any = js.native
+    
+    /**
+      * Returns whether the token will expire within eagerRefreshThresholdMillis
+      *
+      * @return true if the token will be expired within eagerRefreshThresholdMillis, false otherwise.
+      */
+    def isTokenExpiring(): Boolean = js.native
     
     var iss: js.UndefOr[String] = js.native
     
@@ -78,7 +88,7 @@ object mod {
     /**
       * Request the token from Google.
       */
-    /* private */ var requestToken: js.Any = js.native
+    /* private */ var requestToken: Any = js.native
     
     /**
       * Revoke the token if one is set.
@@ -86,9 +96,9 @@ object mod {
       * @param callback The callback function.
       */
     def revokeToken(): js.Promise[Unit] = js.native
-    def revokeToken(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def revokeToken(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    /* private */ var revokeTokenAsync: js.Any = js.native
+    /* private */ var revokeTokenAsync: Any = js.native
     
     var scope: js.UndefOr[String] = js.native
     
@@ -97,6 +107,8 @@ object mod {
     var tokenExpires: js.UndefOr[Double] = js.native
     
     def tokenType: js.UndefOr[String] = js.native
+    
+    var transporter: Transporter = js.native
   }
   
   trait Credentials extends StObject {
@@ -122,7 +134,7 @@ object mod {
     }
   }
   
-  type GetTokenCallback = js.Function2[/* err */ Error | Null, /* token */ js.UndefOr[TokenData], Unit]
+  type GetTokenCallback = js.Function2[/* err */ js.Error | Null, /* token */ js.UndefOr[TokenData], Unit]
   
   trait GetTokenOptions extends StObject {
     
@@ -190,6 +202,8 @@ object mod {
     
     var additionalClaims: js.UndefOr[js.Object] = js.undefined
     
+    var eagerRefreshThresholdMillis: js.UndefOr[Double] = js.undefined
+    
     var email: js.UndefOr[String] = js.undefined
     
     var iss: js.UndefOr[String] = js.undefined
@@ -201,6 +215,8 @@ object mod {
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var sub: js.UndefOr[String] = js.undefined
+    
+    var transporter: js.UndefOr[Transporter] = js.undefined
   }
   object TokenOptions {
     
@@ -214,6 +230,10 @@ object mod {
       inline def setAdditionalClaims(value: js.Object): Self = StObject.set(x, "additionalClaims", value.asInstanceOf[js.Any])
       
       inline def setAdditionalClaimsUndefined: Self = StObject.set(x, "additionalClaims", js.undefined)
+      
+      inline def setEagerRefreshThresholdMillis(value: Double): Self = StObject.set(x, "eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
+      
+      inline def setEagerRefreshThresholdMillisUndefined: Self = StObject.set(x, "eagerRefreshThresholdMillis", js.undefined)
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -235,11 +255,32 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
       inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
+      
+      inline def setTransporterUndefined: Self = StObject.set(x, "transporter", js.undefined)
+    }
+  }
+  
+  trait Transporter extends StObject {
+    
+    def request[T](opts: GaxiosOptions): GaxiosPromise[T]
+  }
+  object Transporter {
+    
+    inline def apply(request: GaxiosOptions => GaxiosPromise[Any]): Transporter = {
+      val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
+      __obj.asInstanceOf[Transporter]
+    }
+    
+    extension [Self <: Transporter](x: Self) {
+      
+      inline def setRequest(value: GaxiosOptions => GaxiosPromise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
   }
 }

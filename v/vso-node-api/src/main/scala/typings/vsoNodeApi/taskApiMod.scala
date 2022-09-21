@@ -1,6 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter
 import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAttachment
@@ -20,7 +20,7 @@ object taskApiMod {
   
   @JSImport("vso-node-api/TaskApi", "TaskApi")
   @js.native
-  class TaskApi protected () extends ITaskApi {
+  open class TaskApi protected () extends ITaskApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -29,8 +29,8 @@ object taskApiMod {
   trait ITaskApi extends ClientApiBase {
     
     def appendLogContent(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
+      customHeaders: Any,
+      contentStream: ReadableStream[Any],
       scopeIdentifier: String,
       hubName: String,
       planId: String,
@@ -47,8 +47,8 @@ object taskApiMod {
     ): js.Promise[Unit] = js.native
     
     def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
+      customHeaders: Any,
+      contentStream: ReadableStream[Any],
       scopeIdentifier: String,
       hubName: String,
       planId: String,
@@ -82,7 +82,7 @@ object taskApiMod {
       recordId: String,
       `type`: String,
       name: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getAttachments(
       scopeIdentifier: String,

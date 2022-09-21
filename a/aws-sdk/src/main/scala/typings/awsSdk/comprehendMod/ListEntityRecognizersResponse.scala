@@ -29,7 +29,7 @@ object ListEntityRecognizersResponse {
     
     inline def setEntityRecognizerPropertiesListUndefined: Self = StObject.set(x, "EntityRecognizerPropertiesList", js.undefined)
     
-    inline def setEntityRecognizerPropertiesListVarargs(value: EntityRecognizerProperties*): Self = StObject.set(x, "EntityRecognizerPropertiesList", js.Array(value :_*))
+    inline def setEntityRecognizerPropertiesListVarargs(value: EntityRecognizerProperties*): Self = StObject.set(x, "EntityRecognizerPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

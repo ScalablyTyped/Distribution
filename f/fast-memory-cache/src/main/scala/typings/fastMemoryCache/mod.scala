@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("fast-memory-cache", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MemoryCache
   
@@ -19,9 +19,9 @@ object mod {
     
     def delete(key: String): Unit = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
-    def set(key: String, value: js.Any, expireTime: Double): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
+    def set(key: String, value: Any, expireTime: Double): Unit = js.native
   }
 }

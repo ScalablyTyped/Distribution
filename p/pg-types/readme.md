@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-types
 
-Typings are for version 2.2.0
+Typings are for version 4.0.0
 
 ## Library description:
 Query result type converters for node-postgres
@@ -10,10 +10,10 @@ Query result type converters for node-postgres
 | ------------------ | :-------------: |
 | Full name          | pg-types |
 | Keywords           | postgres, PostgreSQL, pg |
-| # releases         | 6 |
-| # dependents       | 22 |
-| # downloads        | 73387684 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2753358666666666E7 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-pg-types)

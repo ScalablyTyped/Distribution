@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of Paragraph objects.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.ParagraphCollection")
 @js.native
-class ParagraphCollection ()
+open class ParagraphCollection ()
   extends StObject
      with typings.officeJsPreview.OneNote.ParagraphCollection {
   

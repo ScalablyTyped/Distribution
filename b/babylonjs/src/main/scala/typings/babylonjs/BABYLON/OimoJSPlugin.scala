@@ -9,15 +9,15 @@ trait OimoJSPlugin
   extends StObject
      with IPhysicsEnginePlugin {
   
-  var BJSOIMO: js.Any = js.native
+  var BJSOIMO: Any = js.native
   
-  /* private */ var _fixedTimeStep: js.Any = js.native
+  /* private */ var _fixedTimeStep: Any = js.native
   
-  /* private */ var _raycastResult: js.Any = js.native
+  /* private */ var _raycastResult: Any = js.native
   
-  /* private */ var _tmpImpostorsArray: js.Any = js.native
+  /* private */ var _tmpImpostorsArray: Any = js.native
   
-  /* private */ var _tmpPositionVector: js.Any = js.native
+  /* private */ var _tmpPositionVector: Any = js.native
   
-  /* private */ var _useDeltaForWorldStep: js.Any = js.native
+  /* private */ var _useDeltaForWorldStep: Any = js.native
 }

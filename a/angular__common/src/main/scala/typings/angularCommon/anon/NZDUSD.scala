@@ -21,10 +21,10 @@ object NZDUSD {
     
     inline def setNZD(value: js.Array[String]): Self = StObject.set(x, "NZD", value.asInstanceOf[js.Any])
     
-    inline def setNZDVarargs(value: String*): Self = StObject.set(x, "NZD", js.Array(value :_*))
+    inline def setNZDVarargs(value: String*): Self = StObject.set(x, "NZD", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.horizontalRatioCheckedSmallMod.HorizontalRatioCheckedSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonHorizontalRatioCheckedSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/HorizontalRatioCheckedSmall", JSImport.Default)
   @js.native
-  val default: SFC[HorizontalRatioCheckedSmallProps] = js.native
+  val default: FC[HorizontalRatioCheckedSmallProps] = js.native
   
-  type _To = SFC[HorizontalRatioCheckedSmallProps]
+  type _To = FC[HorizontalRatioCheckedSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonHorizontalRatioCheckedSmallMod.foo` */
-  override def _to: SFC[HorizontalRatioCheckedSmallProps] = default
+  override def _to: FC[HorizontalRatioCheckedSmallProps] = default
 }

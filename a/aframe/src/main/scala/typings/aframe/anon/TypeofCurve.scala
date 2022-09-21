@@ -13,7 +13,7 @@ trait TypeofCurve
      with Instantiable0[Curve[Vector]] {
   
   /**
-  	 * @deprecated since r84.
-  	 */
-  def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = js.native
+    * @deprecated since r84.
+    */
+  def create(constructorFunc: js.Function0[Unit], getPointFunc: js.Function0[Unit]): js.Function0[Unit] = js.native
 }

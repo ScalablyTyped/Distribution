@@ -5,18 +5,18 @@ import typings.breeze.anon.MaxLength
 import typings.breeze.anon.MessageTemplate
 import typings.breeze.anon.MinLength
 import typings.breeze.breeze.ValidatorFunction
-import typings.std.RegExp
+import typings.breeze.breeze.ValidatorFunctionContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "Validator")
 @js.native
-class Validator protected ()
+open class Validator protected ()
   extends StObject
      with typings.breeze.breeze.Validator {
   def this(name: String, validatorFn: ValidatorFunction) = this()
-  def this(name: String, validatorFn: ValidatorFunction, context: js.Any) = this()
+  def this(name: String, validatorFn: ValidatorFunction, context: Any) = this()
 }
 /* static members */
 object Validator {
@@ -67,16 +67,16 @@ object Validator {
   inline def integer(context: MessageTemplate): typings.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")(context.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Validator]
   
   /** Creates a regular expression validator with a fixed expression. */
-  inline def makeRegExpValidator(validatorName: String, expression: RegExp, defaultMessage: String): typings.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Validator]
-  inline def makeRegExpValidator(validatorName: String, expression: RegExp, defaultMessage: String, context: js.Any): typings.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Validator]
+  inline def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String): typings.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Validator]
+  inline def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String, context: Any): typings.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Validator]
   
   inline def maxLength(context: MaxLength): typings.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(context.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Validator]
   
   /** Map of standard error message templates keyed by validator name.*/
   @JSImport("breeze", "Validator.messageTemplates")
   @js.native
-  def messageTemplates: js.Any = js.native
-  inline def messageTemplates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messageTemplates")(x.asInstanceOf[js.Any])
+  def messageTemplates: Any = js.native
+  inline def messageTemplates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messageTemplates")(x.asInstanceOf[js.Any])
   
   /** Always returns true */
   inline def none(): typings.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[typings.breeze.breeze.Validator]
@@ -93,7 +93,7 @@ object Validator {
   inline def register(validator: typings.breeze.breeze.Validator): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(validator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Register a validator factory so that any deserialized metadata can reference it.  */
-  inline def registerFactory(fn: js.Function0[this.type], name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFactory")(fn.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFactory(fn: js.Function1[/* context */ js.UndefOr[ValidatorFunctionContext], this.type], name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFactory")(fn.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Returns a regular expression validator; the expression must be specified in the context parameter */
   inline def regularExpression(context: Expression): typings.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("regularExpression")(context.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Validator]

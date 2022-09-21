@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstantiableIResizeFilter
   extends StObject
      with Instantiable0[IResizeFilter]
-     with Instantiable1[/* options */ js.Any, IResizeFilter] {
+     with Instantiable1[/* options */ Any, IResizeFilter] {
   
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IResizeFilter = js.native
+  def fromObject(`object`: Any): IResizeFilter = js.native
 }

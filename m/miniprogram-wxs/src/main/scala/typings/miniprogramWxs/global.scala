@@ -22,7 +22,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Error")
   @js.native
-  class Error ()
+  open class Error ()
     extends StObject
        with typings.miniprogramWxs.Error {
     def this(message: java.lang.String) = this()
@@ -41,14 +41,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("EvalError")
   @js.native
-  class EvalError ()
+  open class EvalError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -89,7 +91,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.Collator")
     @js.native
-    class CollatorCls ()
+    open class CollatorCls ()
       extends StObject
          with Collator {
       def this(locales: java.lang.String) = this()
@@ -127,7 +129,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.DateTimeFormat")
     @js.native
-    class DateTimeFormatCls ()
+    open class DateTimeFormatCls ()
       extends StObject
          with DateTimeFormat {
       def this(locales: java.lang.String) = this()
@@ -159,7 +161,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.NumberFormat")
     @js.native
-    class NumberFormatCls ()
+    open class NumberFormatCls ()
       extends StObject
          with NumberFormat {
       def this(locales: java.lang.String) = this()
@@ -207,14 +209,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("RangeError")
   @js.native
-  class RangeError ()
+  open class RangeError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -226,14 +230,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReferenceError")
   @js.native
-  class ReferenceError ()
+  open class ReferenceError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -245,14 +251,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("SyntaxError")
   @js.native
-  class SyntaxError ()
+  open class SyntaxError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -264,14 +272,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("TypeError")
   @js.native
-  class TypeError ()
+  open class TypeError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -283,14 +293,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("URIError")
   @js.native
-  class URIError ()
+  open class URIError ()
     extends StObject
        with typings.std.Error {
     def this(message: java.lang.String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: java.lang.String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: java.lang.String = js.native
   }
@@ -308,8 +320,8 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   }
   
   /**

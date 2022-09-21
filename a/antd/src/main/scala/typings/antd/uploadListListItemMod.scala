@@ -32,33 +32,35 @@ object uploadListListItemMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.native
     
-    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.native
+    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[Any], ReactNode])] = js.native
     
-    var file: UploadFile[js.Any] = js.native
+    var file: UploadFile[Any] = js.native
     
-    def iconRender(file: UploadFile[js.Any]): ReactNode = js.native
+    def iconRender(file: UploadFile[Any]): ReactNode = js.native
     
-    var isImgUrl: js.UndefOr[js.Function1[/* file */ UploadFile[js.Any], Boolean]] = js.native
+    var isImgUrl: js.UndefOr[js.Function1[/* file */ UploadFile[Any], Boolean]] = js.native
     
-    var itemRender: js.UndefOr[ItemRender[js.Any]] = js.native
+    var itemRender: js.UndefOr[ItemRender[Any]] = js.native
     
-    var items: js.Array[UploadFile[js.Any]] = js.native
+    var items: js.Array[UploadFile[Any]] = js.native
     
     var listType: js.UndefOr[UploadListType] = js.native
     
     var locale: UploadLocale = js.native
     
-    def onClose(file: UploadFile[js.Any]): Unit = js.native
+    def onClose(file: UploadFile[Any]): Unit = js.native
     
-    def onDownload(file: UploadFile[js.Any]): Unit = js.native
+    def onDownload(file: UploadFile[Any]): Unit = js.native
     
-    def onPreview(file: UploadFile[js.Any], e: SyntheticEvent[HTMLElement, Event]): Unit = js.native
+    def onPreview(file: UploadFile[Any], e: SyntheticEvent[HTMLElement, Event]): Unit = js.native
     
     var prefixCls: String = js.native
     
+    var previewIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[Any], ReactNode])] = js.native
+    
     var progress: js.UndefOr[UploadListProgressProps] = js.native
     
-    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.native
+    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[Any], ReactNode])] = js.native
     
     var showDownloadIcon: js.UndefOr[Boolean] = js.native
     

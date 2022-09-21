@@ -10,10 +10,10 @@ Turn any callback-based listener into an async iterator.
 | ------------------ | :-------------: |
 | Full name          | callback-to-async-iterator |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 35566 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24217.0 |
+| # stars            | 91.0 |
 
 ## Links
 - [Homepage](https://github.com/withspectrum/callback-to-async-iterator#readme)

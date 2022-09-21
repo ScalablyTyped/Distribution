@@ -22,7 +22,7 @@ object XFormattedString {
     String: String,
     acquire: () => Unit,
     getString: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XFormattedString = {

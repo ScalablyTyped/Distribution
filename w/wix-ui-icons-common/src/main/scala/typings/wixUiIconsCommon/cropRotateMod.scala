@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object cropRotateMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/CropRotate", JSImport.Default)
   @js.native
-  val default: SFC[CropRotateProps] = js.native
+  val default: FC[CropRotateProps] = js.native
   
   trait CropRotateProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CropRotateProps {
     
@@ -29,14 +29,14 @@ object cropRotateMod extends Shortcut {
     
     extension [Self <: CropRotateProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[CropRotateProps]
+  type _To = FC[CropRotateProps]
   
   /* This means you don't have to write `default`, but can instead just say `cropRotateMod.foo` */
-  override def _to: SFC[CropRotateProps] = default
+  override def _to: FC[CropRotateProps] = default
 }

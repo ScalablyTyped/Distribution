@@ -1,7 +1,5 @@
 package typings.reactNative
 
-import typings.std.ArrayBuffer
-import typings.std.Blob
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -28,7 +26,7 @@ trait Request
 object Request {
   
   inline def apply(
-    arrayBuffer: () => js.Promise[ArrayBuffer],
+    arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,
     constructor: js.Function,
@@ -36,7 +34,7 @@ object Request {
     formData: () => js.Promise[FormData],
     hasOwnProperty: PropertyKey => Boolean,
     headers: Headers,
-    json: () => js.Promise[js.Any],
+    json: () => js.Promise[Any],
     method: String,
     mode: RequestMode,
     propertyIsEnumerable: PropertyKey => Boolean,

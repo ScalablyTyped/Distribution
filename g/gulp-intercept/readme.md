@@ -10,10 +10,10 @@ Intercept Gulp streams and take full control of the content.
 | ------------------ | :-------------: |
 | Full name          | gulp-intercept |
 | Keywords           | gulpplugin, replace, intercept, swap, update, stream |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 67944 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6545.333333333333 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/khilnani/gulp-intercept#readme)

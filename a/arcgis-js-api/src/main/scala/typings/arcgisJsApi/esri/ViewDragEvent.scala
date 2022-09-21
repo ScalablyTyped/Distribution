@@ -16,11 +16,11 @@ trait ViewDragEvent extends StObject {
   
   var angle: Double
   
-  var button: js.Any
+  var button: Any
   
   var buttons: Double
   
-  var native: js.Any
+  var native: Any
   
   var origin: ViewDragEventOrigin
   
@@ -41,9 +41,9 @@ object ViewDragEvent {
   inline def apply(
     action: start | added | update | removed | end,
     angle: Double,
-    button: js.Any,
+    button: Any,
     buttons: Double,
-    native: js.Any,
+    native: Any,
     origin: ViewDragEventOrigin,
     radius: Double,
     stopPropagation: js.Function,
@@ -62,11 +62,11 @@ object ViewDragEvent {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    inline def setButton(value: js.Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: ViewDragEventOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

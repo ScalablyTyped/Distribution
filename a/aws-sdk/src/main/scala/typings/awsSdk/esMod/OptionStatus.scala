@@ -9,7 +9,7 @@ trait OptionStatus extends StObject {
   /**
     * Timestamp which tells the creation date for the entity.
     */
-  var CreationDate: UpdateTimestamp
+  var CreationDate: js.Date
   
   /**
     * Indicates whether the Elasticsearch domain is being deleted.
@@ -24,7 +24,7 @@ trait OptionStatus extends StObject {
   /**
     * Timestamp which tells the last updated time for the entity.
     */
-  var UpdateDate: UpdateTimestamp
+  var UpdateDate: js.Date
   
   /**
     * Specifies the latest version for the entity.
@@ -33,14 +33,14 @@ trait OptionStatus extends StObject {
 }
 object OptionStatus {
   
-  inline def apply(CreationDate: UpdateTimestamp, State: OptionState, UpdateDate: UpdateTimestamp): OptionStatus = {
+  inline def apply(CreationDate: js.Date, State: OptionState, UpdateDate: js.Date): OptionStatus = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UpdateDate = UpdateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionStatus]
   }
   
   extension [Self <: OptionStatus](x: Self) {
     
-    inline def setCreationDate(value: UpdateTimestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setPendingDeletion(value: Boolean): Self = StObject.set(x, "PendingDeletion", value.asInstanceOf[js.Any])
     
@@ -48,7 +48,7 @@ object OptionStatus {
     
     inline def setState(value: OptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDate(value: UpdateTimestamp): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateVersion(value: UIntValue): Self = StObject.set(x, "UpdateVersion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait Analysis extends StObject {
   /**
     * The time that the analysis was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARNs of the datasets of the analysis.
@@ -34,7 +34,7 @@ trait Analysis extends StObject {
   /**
     * The time that the analysis was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The descriptive name of the analysis.
@@ -73,7 +73,7 @@ object Analysis {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -81,15 +81,15 @@ object Analysis {
     
     inline def setDataSetArnsUndefined: Self = StObject.set(x, "DataSetArns", js.undefined)
     
-    inline def setDataSetArnsVarargs(value: Arn*): Self = StObject.set(x, "DataSetArns", js.Array(value :_*))
+    inline def setDataSetArnsVarargs(value: Arn*): Self = StObject.set(x, "DataSetArns", js.Array(value*))
     
     inline def setErrors(value: AnalysisErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: AnalysisError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AnalysisError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -101,7 +101,7 @@ object Analysis {
     
     inline def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value*))
     
     inline def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

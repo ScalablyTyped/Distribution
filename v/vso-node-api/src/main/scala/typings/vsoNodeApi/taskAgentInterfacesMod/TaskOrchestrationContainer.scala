@@ -40,7 +40,7 @@ object TaskOrchestrationContainer {
     
     inline def setChildren(value: js.Array[TaskOrchestrationItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TaskOrchestrationItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TaskOrchestrationItem*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     

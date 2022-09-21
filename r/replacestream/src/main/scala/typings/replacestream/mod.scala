@@ -1,20 +1,19 @@
 package typings.replacestream
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(search: String, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: String, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: String, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: String, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: RegExp, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: RegExp, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: RegExp, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(search: RegExp, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: String, replace: String): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: String, replace: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: String, replace: ReplaceFunction): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: String, replace: ReplaceFunction, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: js.RegExp, replace: String): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: js.RegExp, replace: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: js.RegExp, replace: ReplaceFunction): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: js.RegExp, replace: ReplaceFunction, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("replacestream", JSImport.Namespace)
   @js.native

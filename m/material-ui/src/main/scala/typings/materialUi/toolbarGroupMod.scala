@@ -10,10 +10,10 @@ object toolbarGroupMod {
   
   @JSImport("material-ui/Toolbar/ToolbarGroup", JSImport.Default)
   @js.native
-  class default () extends ToolbarGroup
+  open class default () extends ToolbarGroup
   
   @JSImport("material-ui/Toolbar/ToolbarGroup", "ToolbarGroup")
   @js.native
-  class ToolbarGroup ()
-    extends Component[ToolbarGroupProps, js.Object, js.Any]
+  open class ToolbarGroup ()
+    extends Component[ToolbarGroupProps, js.Object, Any]
 }

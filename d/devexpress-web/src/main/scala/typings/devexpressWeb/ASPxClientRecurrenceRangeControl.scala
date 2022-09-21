@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait ASPxClientRecurrenceRangeControl
   /**
     * Gets the recurrence end date.
     */
-  def GetEndDate(): Date
+  def GetEndDate(): js.Date
   
   /**
     * Gets how many times the appointment occurs.
@@ -31,7 +30,7 @@ trait ASPxClientRecurrenceRangeControl
     * Sets the recurrence end date.
     * @param date A JavaScript Date object that specifies the end date for the recurrence.
     */
-  def SetEndDate(date: Date): Unit
+  def SetEndDate(date: js.Date): Unit
   
   /**
     * Sets how many times the appointment occurs.
@@ -50,11 +49,11 @@ object ASPxClientRecurrenceRangeControl {
   inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
-    GetEndDate: () => Date,
+    GetEndDate: () => js.Date,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
+    GetMainElement: () => Any,
     GetOccurrenceCount: () => Double,
-    GetParentControl: () => js.Any,
+    GetParentControl: () => Any,
     GetRange: () => ASPxClientRecurrenceRange,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
@@ -62,7 +61,7 @@ object ASPxClientRecurrenceRangeControl {
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
     SendMessageToAssistiveTechnology: String => Unit,
     SetClientVisible: Boolean => Unit,
-    SetEndDate: Date => Unit,
+    SetEndDate: js.Date => Unit,
     SetHeight: Double => Unit,
     SetOccurrenceCount: Double => Unit,
     SetRange: ASPxClientRecurrenceRange => Unit,
@@ -76,13 +75,13 @@ object ASPxClientRecurrenceRangeControl {
   
   extension [Self <: ASPxClientRecurrenceRangeControl](x: Self) {
     
-    inline def setGetEndDate(value: () => Date): Self = StObject.set(x, "GetEndDate", js.Any.fromFunction0(value))
+    inline def setGetEndDate(value: () => js.Date): Self = StObject.set(x, "GetEndDate", js.Any.fromFunction0(value))
     
     inline def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "GetOccurrenceCount", js.Any.fromFunction0(value))
     
     inline def setGetRange(value: () => ASPxClientRecurrenceRange): Self = StObject.set(x, "GetRange", js.Any.fromFunction0(value))
     
-    inline def setSetEndDate(value: Date => Unit): Self = StObject.set(x, "SetEndDate", js.Any.fromFunction1(value))
+    inline def setSetEndDate(value: js.Date => Unit): Self = StObject.set(x, "SetEndDate", js.Any.fromFunction1(value))
     
     inline def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "SetOccurrenceCount", js.Any.fromFunction1(value))
     

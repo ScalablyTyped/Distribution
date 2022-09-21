@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Editors")
 @js.native
-/* private */ class Editors ()
+/* private */ open class Editors ()
   extends StObject
      with typings.activexWord.Word.Editors {
   
   /* CompleteClass */
-  override def Add(EditorID: js.Any): typings.activexWord.Word.Editor = js.native
+  override def Add(EditorID: Any): typings.activexWord.Word.Editor = js.native
   
   /* CompleteClass */
   override val Application: typings.activexWord.Word.Application = js.native
@@ -23,10 +23,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexWord.Word.Editor = js.native
+  override def Item(Index: Any): typings.activexWord.Word.Editor = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.Editors_typekey")

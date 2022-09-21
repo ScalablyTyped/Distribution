@@ -21,7 +21,7 @@ trait FloodlightGroup extends StObject {
   var customVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The display name of the Floodlight group. */
@@ -55,7 +55,7 @@ object FloodlightGroup {
     inline def setCustomVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[Any]
     ): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)

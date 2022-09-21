@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-docgen-typescript
 
-Typings are for version 1.20.5
+Typings are for version 2.2.2
 
 ## Library description:
-[![Build Status](https://travis-ci.org/styleguidist/react-docgen-typescript.svg)](https://travis-ci.org/styleguidist/react-docgen-typescript)
+[![Build Status](https://github.com/styleguidist/react-docgen-typescript/actions/workflows/nodejs.yml/badge.svg)](https://github.com/styleguidist/react-docgen-typescript/actions/workflows/nodejs.yml)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-docgen-typescript |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 77 |
-| # downloads        | 33724403 |
-| # stars            | 1 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3935943666666666E7 |
+| # stars            | 916.0 |
 
 ## Links
 - [Homepage](https://github.com/styleguidist/react-docgen-typescript/)

@@ -1,8 +1,11 @@
 package typings.jupyterlabMainmenu
 
+import typings.jupyterlabMainmenu.tokensMod.IMainMenu.IMenuOptions
+import typings.jupyterlabTranslation.tokensMod.TranslationBundle
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions
+import typings.jupyterlabUiComponents.mod.RankedMenu
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.Token
-import typings.luminoWidgets.menuMod.Menu.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +14,7 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "EditMenu")
   @js.native
-  class EditMenu protected ()
+  open class EditMenu protected ()
     extends typings.jupyterlabMainmenu.editMod.EditMenu {
     /**
       * Construct the edit menu.
@@ -21,19 +24,29 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "FileMenu")
   @js.native
-  class FileMenu protected ()
+  open class FileMenu protected ()
     extends typings.jupyterlabMainmenu.fileMod.FileMenu {
     def this(options: IOptions) = this()
   }
   
   @JSImport("@jupyterlab/mainmenu", "HelpMenu")
   @js.native
-  class HelpMenu protected ()
+  open class HelpMenu protected ()
     extends typings.jupyterlabMainmenu.helpMod.HelpMenu {
     /**
       * Construct the help menu.
       */
     def this(options: IOptions) = this()
+  }
+  
+  object IJupyterLabMenu {
+    
+    /**
+      * Default menu item rank
+      */
+    @JSImport("@jupyterlab/mainmenu", "IJupyterLabMenu.DEFAULT_RANK")
+    @js.native
+    val DEFAULT_RANK: /* 100 */ Double = js.native
   }
   
   @JSImport("@jupyterlab/mainmenu", "IMainMenu")
@@ -42,23 +55,18 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "JupyterLabMenu")
   @js.native
-  class JupyterLabMenu protected ()
-    extends typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu {
+  open class JupyterLabMenu protected () extends RankedMenu {
     /**
       * Construct a new menu.
       *
-      * @param options - Options for the phosphor menu.
-      *
-      * @param includeSeparators - whether to include separators between the
-      *   groups that are added to the menu.
+      * @param options - Options for the lumino menu.
       */
     def this(options: IOptions) = this()
-    def this(options: IOptions, includeSeparators: Boolean) = this()
   }
   
   @JSImport("@jupyterlab/mainmenu", "KernelMenu")
   @js.native
-  class KernelMenu protected ()
+  open class KernelMenu protected ()
     extends typings.jupyterlabMainmenu.kernelMod.KernelMenu {
     /**
       * Construct the kernel menu.
@@ -68,17 +76,33 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "MainMenu")
   @js.native
-  class MainMenu protected ()
+  open class MainMenu protected ()
     extends typings.jupyterlabMainmenu.mainmenuMod.MainMenu {
     /**
       * Construct the main menu bar.
       */
     def this(commands: CommandRegistry) = this()
   }
+  /* static members */
+  object MainMenu {
+    
+    @JSImport("@jupyterlab/mainmenu", "MainMenu")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Generate the menu.
+      *
+      * @param commands The command registry
+      * @param options The main menu options.
+      * @param trans - The application language translator.
+      */
+    inline def generateMenu(commands: CommandRegistry, options: IMenuOptions, trans: TranslationBundle): RankedMenu = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMenu")(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any], trans.asInstanceOf[js.Any])).asInstanceOf[RankedMenu]
+  }
   
   @JSImport("@jupyterlab/mainmenu", "RunMenu")
   @js.native
-  class RunMenu protected ()
+  open class RunMenu protected ()
     extends typings.jupyterlabMainmenu.runMod.RunMenu {
     /**
       * Construct the run menu.
@@ -88,7 +112,7 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "SettingsMenu")
   @js.native
-  class SettingsMenu protected ()
+  open class SettingsMenu protected ()
     extends typings.jupyterlabMainmenu.settingsMod.SettingsMenu {
     /**
       * Construct the settings menu.
@@ -98,7 +122,7 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "TabsMenu")
   @js.native
-  class TabsMenu protected ()
+  open class TabsMenu protected ()
     extends typings.jupyterlabMainmenu.tabsMod.TabsMenu {
     /**
       * Construct the tabs menu.
@@ -108,7 +132,7 @@ object mod {
   
   @JSImport("@jupyterlab/mainmenu", "ViewMenu")
   @js.native
-  class ViewMenu protected ()
+  open class ViewMenu protected ()
     extends typings.jupyterlabMainmenu.viewMod.ViewMenu {
     /**
       * Construct the view menu.

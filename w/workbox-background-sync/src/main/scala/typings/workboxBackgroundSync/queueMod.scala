@@ -9,23 +9,23 @@ object queueMod {
   
   @JSImport("workbox-background-sync/Queue", "Queue")
   @js.native
-  class Queue protected () extends StObject {
+  open class Queue protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, options: QueueOptions) = this()
     
-    def getAll(): js.Promise[js.Array[QueueEntry[js.Any]]] = js.native
+    def getAll(): js.Promise[js.Array[QueueEntry[Any]]] = js.native
     
     val name: String = js.native
     
-    def popRequest(): js.Promise[QueueEntry[js.Any]] = js.native
+    def popRequest(): js.Promise[QueueEntry[Any]] = js.native
     
-    def pushRequest(entry: QueueEntry[js.Any]): js.Promise[Unit] = js.native
+    def pushRequest(entry: QueueEntry[Any]): js.Promise[Unit] = js.native
     
     def registerSync(): js.Promise[Unit] = js.native
     
-    def shiftRequest(): js.Promise[QueueEntry[js.Any]] = js.native
+    def shiftRequest(): js.Promise[QueueEntry[Any]] = js.native
     
-    def unshiftRequest(entry: QueueEntry[js.Any]): js.Promise[Unit] = js.native
+    def unshiftRequest(entry: QueueEntry[Any]): js.Promise[Unit] = js.native
   }
   
   trait QueueEntry[Metadata] extends StObject {

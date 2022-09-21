@@ -21,6 +21,6 @@ object DidChangeConfigurationRegistrationOptions {
     
     inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
-    inline def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value :_*))
+    inline def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RedirectToArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   /**
     * The application for the jumping does not include the destination

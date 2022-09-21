@@ -1,13 +1,17 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.outputAstMod.TypeModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Type")
 @js.native
-abstract class Type ()
-  extends typings.angularCompiler.compilerMod.Type {
-  def this(modifiers: js.Array[TypeModifier]) = this()
+abstract class Type () extends StObject {
+  def this(modifiers: TypeModifier) = this()
+  
+  def hasModifier(modifier: TypeModifier): Boolean = js.native
+  
+  var modifiers: TypeModifier = js.native
+  
+  def visitType(visitor: TypeVisitor, context: Any): Any = js.native
 }

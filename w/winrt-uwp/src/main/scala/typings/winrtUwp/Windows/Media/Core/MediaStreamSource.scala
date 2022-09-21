@@ -20,11 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaStreamSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_closed(`type`: closed, listener: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, js.Any]): Unit = js.native
+  def addEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_samplerequested(
     `type`: samplerequested,
@@ -87,10 +87,10 @@ trait MediaStreamSource extends StObject {
   var onclosed_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs] = js.native
   
   /** Occurs when the MediaStreamSource is paused and stops requesting MediaStreamSample objects for an unspecified period of time, but is expected to resume requesting MediaStreamSample objects from the current position. */
-  def onpaused(ev: js.Any & WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onpaused(ev: Any & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource is paused and stops requesting MediaStreamSample objects for an unspecified period of time, but is expected to resume requesting MediaStreamSample objects from the current position. */
   @JSName("onpaused")
-  var onpaused_Original: TypedEventHandler[MediaStreamSource, js.Any] = js.native
+  var onpaused_Original: TypedEventHandler[MediaStreamSource, Any] = js.native
   
   /** Occurs when the MediaStreamSource request a MediaStreamSample for a specified stream. */
   def onsamplerequested(ev: MediaStreamSourceSampleRequestedEventArgs & WinRTEvent[MediaStreamSource]): Unit = js.native
@@ -110,11 +110,11 @@ trait MediaStreamSource extends StObject {
   @JSName("onswitchstreamsrequested")
   var onswitchstreamsrequested_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceSwitchStreamsRequestedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_closed(`type`: closed, listener: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, js.Any]): Unit = js.native
+  def removeEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_samplerequested(
     `type`: samplerequested,

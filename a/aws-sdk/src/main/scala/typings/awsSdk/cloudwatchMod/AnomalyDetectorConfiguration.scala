@@ -29,7 +29,7 @@ object AnomalyDetectorConfiguration {
     
     inline def setExcludedTimeRangesUndefined: Self = StObject.set(x, "ExcludedTimeRanges", js.undefined)
     
-    inline def setExcludedTimeRangesVarargs(value: Range*): Self = StObject.set(x, "ExcludedTimeRanges", js.Array(value :_*))
+    inline def setExcludedTimeRangesVarargs(value: Range*): Self = StObject.set(x, "ExcludedTimeRanges", js.Array(value*))
     
     inline def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = StObject.set(x, "MetricTimezone", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Record<keyof Resources, tabris.tabris.Selectable<string>> */
 trait TextResourceData[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof Resources ]: string}
-  */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */] extends StObject {
+  */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[Any] */] extends StObject {
   
   var build: Selectable[String]
   
@@ -18,14 +18,14 @@ object TextResourceData {
   
   inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: string}
-    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */](): TextResourceData[Resources] = {
+    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[Any] */](): TextResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextResourceData[Resources]]
   }
   
   extension [Self <: TextResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: string}
-    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */](x: Self & TextResourceData[Resources]) {
+    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[Any] */](x: Self & TextResourceData[Resources]) {
     
     inline def setBuild(value: Selectable[String]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

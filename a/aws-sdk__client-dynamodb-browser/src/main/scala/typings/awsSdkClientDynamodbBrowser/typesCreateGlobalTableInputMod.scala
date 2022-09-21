@@ -3,7 +3,6 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesReplicaMod.Replica
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesCreateGlobalTableInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,11 +43,11 @@ object typesCreateGlobalTableInputMod {
     /**
       * <p>The regions where the global table needs to be created.</p>
       */
-    var ReplicationGroup: js.Array[Replica] | Iterable[Replica]
+    var ReplicationGroup: js.Array[Replica] | js.Iterable[Replica]
   }
   object CreateGlobalTableInput {
     
-    inline def apply(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): CreateGlobalTableInput = {
+    inline def apply(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | js.Iterable[Replica]): CreateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateGlobalTableInput]
     }
@@ -60,7 +59,7 @@ object typesCreateGlobalTableInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,9 +70,9 @@ object typesCreateGlobalTableInputMod {
       
       inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      inline def setReplicationGroup(value: js.Array[Replica] | Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[Replica] | js.Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
 }

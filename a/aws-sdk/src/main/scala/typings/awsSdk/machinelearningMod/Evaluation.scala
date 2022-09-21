@@ -11,7 +11,7 @@ trait Evaluation extends StObject {
   /**
     * The time that the Evaluation was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The AWS user account that invoked the evaluation. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
@@ -28,7 +28,7 @@ trait Evaluation extends StObject {
     */
   var EvaluationId: js.UndefOr[EntityId] = js.undefined
   
-  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
+  var FinishedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location and name of the data in Amazon Simple Storage Server (Amazon S3) that is used in the evaluation.
@@ -38,7 +38,7 @@ trait Evaluation extends StObject {
   /**
     * The time of the most recent edit to the Evaluation. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the MLModel that is the focus of the evaluation.
@@ -60,10 +60,10 @@ trait Evaluation extends StObject {
     */
   var PerformanceMetrics: js.UndefOr[typings.awsSdk.machinelearningMod.PerformanceMetrics] = js.undefined
   
-  var StartedAt: js.UndefOr[EpochTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the evaluation. This element can have one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to evaluate an MLModel.  INPROGRESS - The evaluation is underway.  FAILED - The request to evaluate an MLModel did not run to completion. It is not usable.  COMPLETED - The evaluation process completed successfully.  DELETED - The Evaluation is marked as deleted. It is not usable. 
+    * The status of the evaluation. This element can have one of the following values:    PENDING - Amazon Machine Learning (Amazon ML) submitted a request to evaluate an MLModel.    INPROGRESS - The evaluation is underway.    FAILED - The request to evaluate an MLModel did not run to completion. It is not usable.    COMPLETED - The evaluation process completed successfully.    DELETED - The Evaluation is marked as deleted. It is not usable.  
     */
   var Status: js.UndefOr[EntityStatus] = js.undefined
 }
@@ -80,7 +80,7 @@ object Evaluation {
     
     inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -96,7 +96,7 @@ object Evaluation {
     
     inline def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
     
-    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
@@ -104,7 +104,7 @@ object Evaluation {
     
     inline def setInputDataLocationS3Undefined: Self = StObject.set(x, "InputDataLocationS3", js.undefined)
     
-    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
@@ -124,7 +124,7 @@ object Evaluation {
     
     inline def setPerformanceMetricsUndefined: Self = StObject.set(x, "PerformanceMetrics", js.undefined)
     
-    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

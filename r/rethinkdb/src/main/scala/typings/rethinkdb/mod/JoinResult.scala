@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JoinResult extends StObject {
   
-  var left: js.Any
+  var left: Any
   
-  var right: js.Any
+  var right: Any
 }
 object JoinResult {
   
-  inline def apply(left: js.Any, right: js.Any): JoinResult = {
+  inline def apply(left: Any, right: Any): JoinResult = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinResult]
   }
   
   extension [Self <: JoinResult](x: Self) {
     
-    inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

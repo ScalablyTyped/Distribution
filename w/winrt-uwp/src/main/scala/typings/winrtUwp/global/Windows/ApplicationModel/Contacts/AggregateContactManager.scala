@@ -20,7 +20,7 @@ abstract class AggregateContactManager ()
     * @return The list of individual (raw) contacts from the specified aggregate contact.
     */
   /* CompleteClass */
-  override def findRawContactsAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def findRawContactsAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously attempts to link contacts together to make an aggregate contact.

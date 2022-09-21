@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EC2InstanceLimit extends StObject {
   
   /**
-    * Number of instances of the specified type that are currently in use by this AWS account.
+    * The number of instances for the specified type and location that are currently being used by the Amazon Web Services account. 
     */
   var CurrentInstances: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Name of an EC2 instance type that is supported in Amazon GameLift. A fleet instance type determines the computing resources of each instance in the fleet, including CPU, memory, storage, and networking capacity. Amazon GameLift supports the following EC2 instance types. See Amazon EC2 Instance Types for detailed descriptions.
+    * The name of an Amazon EC2 instance type. See Amazon Elastic Compute Cloud Instance Types for detailed descriptions. 
     */
   var EC2InstanceType: js.UndefOr[typings.awsSdk.gameliftMod.EC2InstanceType] = js.undefined
   
   /**
-    * Number of instances allowed.
+    * The number of instances that is allowed for the specified instance type and location.
     */
   var InstanceLimit: js.UndefOr[WholeNumber] = js.undefined
+  
+  /**
+    * An Amazon Web Services Region code, such as us-west-2. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
 }
 object EC2InstanceLimit {
   
@@ -41,5 +46,9 @@ object EC2InstanceLimit {
     inline def setInstanceLimit(value: WholeNumber): Self = StObject.set(x, "InstanceLimit", value.asInstanceOf[js.Any])
     
     inline def setInstanceLimitUndefined: Self = StObject.set(x, "InstanceLimit", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

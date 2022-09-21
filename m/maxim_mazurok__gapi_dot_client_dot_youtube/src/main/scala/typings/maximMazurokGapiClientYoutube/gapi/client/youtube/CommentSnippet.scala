@@ -32,7 +32,7 @@ trait CommentSnippet extends StObject {
   /** The unique id of the parent comment, only set for replies. */
   var parentId: js.UndefOr[String] = js.undefined
   
-  /** The date and time when the comment was orignally published. The value is specified in ISO 8601 format. */
+  /** The date and time when the comment was originally published. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
@@ -47,7 +47,7 @@ trait CommentSnippet extends StObject {
     */
   var textOriginal: js.UndefOr[String] = js.undefined
   
-  /** The date and time when was last updated . The value is specified in ISO 8601 format. */
+  /** The date and time when the comment was last updated. */
   var updatedAt: js.UndefOr[String] = js.undefined
   
   /** The ID of the video the comment refers to, if any. */

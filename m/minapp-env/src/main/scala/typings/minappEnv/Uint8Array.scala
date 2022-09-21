@@ -65,7 +65,7 @@ trait Uint8Array
   ): scala.Boolean = js.native
   def every(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
@@ -88,10 +88,10 @@ trait Uint8Array
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Uint8Array = js.native
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): Uint8Array = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
   ): Uint8Array = js.native
   
   /**
@@ -108,7 +108,7 @@ trait Uint8Array
   ): js.UndefOr[Double] = js.native
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[Double] = js.native
   
   /**
@@ -125,7 +125,7 @@ trait Uint8Array
   ): Double = js.native
   def findIndex(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Double = js.native
   
   /**
@@ -138,7 +138,7 @@ trait Uint8Array
   def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -191,7 +191,7 @@ trait Uint8Array
   def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint8Array = js.native
   def map(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double],
-    thisArg: js.Any
+    thisArg: Any
   ): Uint8Array = js.native
   
   /**
@@ -330,7 +330,7 @@ trait Uint8Array
   ): scala.Boolean = js.native
   def some(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**

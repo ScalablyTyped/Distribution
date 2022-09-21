@@ -14,7 +14,7 @@ trait BlacklistEntry extends StObject {
   /**
     * The time when the blacklisting event occurred, shown in Unix time format.
     */
-  var ListingTime: js.UndefOr[Timestamp] = js.undefined
+  var ListingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the blacklist that the IP address appears on.
@@ -34,7 +34,7 @@ object BlacklistEntry {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setListingTime(value: Timestamp): Self = StObject.set(x, "ListingTime", value.asInstanceOf[js.Any])
+    inline def setListingTime(value: js.Date): Self = StObject.set(x, "ListingTime", value.asInstanceOf[js.Any])
     
     inline def setListingTimeUndefined: Self = StObject.set(x, "ListingTime", js.undefined)
     

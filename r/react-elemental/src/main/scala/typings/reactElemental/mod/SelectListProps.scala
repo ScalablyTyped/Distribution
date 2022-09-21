@@ -46,7 +46,7 @@ object SelectListProps {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: typings.reactElemental.anon.Label*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: typings.reactElemental.anon.Label*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

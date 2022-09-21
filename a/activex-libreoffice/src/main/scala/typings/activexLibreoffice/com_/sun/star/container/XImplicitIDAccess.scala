@@ -15,7 +15,7 @@ trait XImplicitIDAccess
   val ImplicitIDs: SafeArray[String]
   
   /** @returns the element with the specified implicit ID. */
-  def getByImplicitID(ID: String): js.Any
+  def getByImplicitID(ID: String): Any
   
   /** @returns a sequence with all existing implicit IDs. */
   def getImplicitIDs(): SafeArray[String]
@@ -26,11 +26,11 @@ object XImplicitIDAccess {
     ElementType: `type`,
     ImplicitIDs: SafeArray[String],
     acquire: () => Unit,
-    getByImplicitID: String => js.Any,
+    getByImplicitID: String => Any,
     getElementType: () => `type`,
     getImplicitIDs: () => SafeArray[String],
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XImplicitIDAccess = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], ImplicitIDs = ImplicitIDs.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByImplicitID = js.Any.fromFunction1(getByImplicitID), getElementType = js.Any.fromFunction0(getElementType), getImplicitIDs = js.Any.fromFunction0(getImplicitIDs), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -39,7 +39,7 @@ object XImplicitIDAccess {
   
   extension [Self <: XImplicitIDAccess](x: Self) {
     
-    inline def setGetByImplicitID(value: String => js.Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
+    inline def setGetByImplicitID(value: String => Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
     
     inline def setGetImplicitIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getImplicitIDs", js.Any.fromFunction0(value))
     

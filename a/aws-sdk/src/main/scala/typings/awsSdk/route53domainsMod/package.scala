@@ -9,7 +9,7 @@ type AccountId = java.lang.String
 
 type AddressLine = java.lang.String
 
-type BillingRecords = js.Array[typings.awsSdk.route53domainsMod.BillingRecord]
+type BillingRecords = js.Array[BillingRecord]
 
 type Boolean = scala.Boolean
 
@@ -27,9 +27,10 @@ type ContactNumber = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESELLER
   - java.lang.String
 */
-type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.String
+type ContactType = _ContactType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AC
   - typings.awsSdk.awsSdkStrings.AD
   - typings.awsSdk.awsSdkStrings.AE
   - typings.awsSdk.awsSdkStrings.AF
@@ -45,6 +46,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.AT
   - typings.awsSdk.awsSdkStrings.AU
   - typings.awsSdk.awsSdkStrings.AW
+  - typings.awsSdk.awsSdkStrings.AX
   - typings.awsSdk.awsSdkStrings.AZ
   - typings.awsSdk.awsSdkStrings.BA
   - typings.awsSdk.awsSdkStrings.BB
@@ -59,9 +61,11 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.BM
   - typings.awsSdk.awsSdkStrings.BN
   - typings.awsSdk.awsSdkStrings.BO
+  - typings.awsSdk.awsSdkStrings.BQ
   - typings.awsSdk.awsSdkStrings.BR
   - typings.awsSdk.awsSdkStrings.BS
   - typings.awsSdk.awsSdkStrings.BT
+  - typings.awsSdk.awsSdkStrings.BV
   - typings.awsSdk.awsSdkStrings.BW
   - typings.awsSdk.awsSdkStrings.BY
   - typings.awsSdk.awsSdkStrings.BZ
@@ -80,6 +84,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.CR
   - typings.awsSdk.awsSdkStrings.CU
   - typings.awsSdk.awsSdkStrings.CV
+  - typings.awsSdk.awsSdkStrings.CW
   - typings.awsSdk.awsSdkStrings.CX
   - typings.awsSdk.awsSdkStrings.CY
   - typings.awsSdk.awsSdkStrings.CZ
@@ -92,6 +97,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.EC
   - typings.awsSdk.awsSdkStrings.EE
   - typings.awsSdk.awsSdkStrings.EG
+  - typings.awsSdk.awsSdkStrings.EH
   - typings.awsSdk.awsSdkStrings.ER
   - typings.awsSdk.awsSdkStrings.ES
   - typings.awsSdk.awsSdkStrings.ET
@@ -105,18 +111,23 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.GB
   - typings.awsSdk.awsSdkStrings.GD
   - typings.awsSdk.awsSdkStrings.GE
+  - typings.awsSdk.awsSdkStrings.GF
+  - typings.awsSdk.awsSdkStrings.GG
   - typings.awsSdk.awsSdkStrings.GH
   - typings.awsSdk.awsSdkStrings.GI
   - typings.awsSdk.awsSdkStrings.GL
   - typings.awsSdk.awsSdkStrings.GM
   - typings.awsSdk.awsSdkStrings.GN
+  - typings.awsSdk.awsSdkStrings.GP
   - typings.awsSdk.awsSdkStrings.GQ
   - typings.awsSdk.awsSdkStrings.GR
+  - typings.awsSdk.awsSdkStrings.GS
   - typings.awsSdk.awsSdkStrings.GT
   - typings.awsSdk.awsSdkStrings.GU
   - typings.awsSdk.awsSdkStrings.GW
   - typings.awsSdk.awsSdkStrings.GY
   - typings.awsSdk.awsSdkStrings.HK
+  - typings.awsSdk.awsSdkStrings.HM
   - typings.awsSdk.awsSdkStrings.HN
   - typings.awsSdk.awsSdkStrings.HR
   - typings.awsSdk.awsSdkStrings.HT
@@ -126,10 +137,12 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.IL
   - typings.awsSdk.awsSdkStrings.IM
   - typings.awsSdk.awsSdkStrings.IN
+  - typings.awsSdk.awsSdkStrings.IO
   - typings.awsSdk.awsSdkStrings.IQ
   - typings.awsSdk.awsSdkStrings.IR
   - typings.awsSdk.awsSdkStrings.IS
   - typings.awsSdk.awsSdkStrings.IT
+  - typings.awsSdk.awsSdkStrings.JE
   - typings.awsSdk.awsSdkStrings.JM
   - typings.awsSdk.awsSdkStrings.JO
   - typings.awsSdk.awsSdkStrings.JP
@@ -168,6 +181,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.MN
   - typings.awsSdk.awsSdkStrings.MO
   - typings.awsSdk.awsSdkStrings.MP
+  - typings.awsSdk.awsSdkStrings.MQ
   - typings.awsSdk.awsSdkStrings.MR
   - typings.awsSdk.awsSdkStrings.MS
   - typings.awsSdk.awsSdkStrings.MT
@@ -180,6 +194,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.NA
   - typings.awsSdk.awsSdkStrings.NC
   - typings.awsSdk.awsSdkStrings.NE
+  - typings.awsSdk.awsSdkStrings.NF
   - typings.awsSdk.awsSdkStrings.NG
   - typings.awsSdk.awsSdkStrings.NI
   - typings.awsSdk.awsSdkStrings.NL
@@ -199,10 +214,12 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.PM
   - typings.awsSdk.awsSdkStrings.PN
   - typings.awsSdk.awsSdkStrings.PR
+  - typings.awsSdk.awsSdkStrings.PS
   - typings.awsSdk.awsSdkStrings.PT
   - typings.awsSdk.awsSdkStrings.PW
   - typings.awsSdk.awsSdkStrings.PY
   - typings.awsSdk.awsSdkStrings.QA
+  - typings.awsSdk.awsSdkStrings.RE
   - typings.awsSdk.awsSdkStrings.RO
   - typings.awsSdk.awsSdkStrings.RS
   - typings.awsSdk.awsSdkStrings.RU
@@ -215,18 +232,22 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.SG
   - typings.awsSdk.awsSdkStrings.SH
   - typings.awsSdk.awsSdkStrings.SI
+  - typings.awsSdk.awsSdkStrings.SJ
   - typings.awsSdk.awsSdkStrings.SK
   - typings.awsSdk.awsSdkStrings.SL
   - typings.awsSdk.awsSdkStrings.SM
   - typings.awsSdk.awsSdkStrings.SN
   - typings.awsSdk.awsSdkStrings.SO
   - typings.awsSdk.awsSdkStrings.SR
+  - typings.awsSdk.awsSdkStrings.SS
   - typings.awsSdk.awsSdkStrings.ST
   - typings.awsSdk.awsSdkStrings.SV
+  - typings.awsSdk.awsSdkStrings.SX
   - typings.awsSdk.awsSdkStrings.SY
   - typings.awsSdk.awsSdkStrings.SZ
   - typings.awsSdk.awsSdkStrings.TC
   - typings.awsSdk.awsSdkStrings.TD
+  - typings.awsSdk.awsSdkStrings.TF
   - typings.awsSdk.awsSdkStrings.TG
   - typings.awsSdk.awsSdkStrings.TH
   - typings.awsSdk.awsSdkStrings.TJ
@@ -235,6 +256,7 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.TM
   - typings.awsSdk.awsSdkStrings.TN
   - typings.awsSdk.awsSdkStrings.TO
+  - typings.awsSdk.awsSdkStrings.TP
   - typings.awsSdk.awsSdkStrings.TR
   - typings.awsSdk.awsSdkStrings.TT
   - typings.awsSdk.awsSdkStrings.TV
@@ -261,9 +283,11 @@ type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.ZW
   - java.lang.String
 */
-type CountryCode = typings.awsSdk.route53domainsMod._CountryCode | java.lang.String
+type CountryCode = _CountryCode | java.lang.String
 
-type CurrentExpiryYear = scala.Double
+type Currency = java.lang.String
+
+type CurrentExpiryYear = Double
 
 type DNSSec = java.lang.String
 
@@ -280,25 +304,29 @@ type DomainAuthCode = java.lang.String
   - typings.awsSdk.awsSdkStrings.DONT_KNOW
   - java.lang.String
 */
-type DomainAvailability = typings.awsSdk.route53domainsMod._DomainAvailability | java.lang.String
+type DomainAvailability = _DomainAvailability | java.lang.String
 
 type DomainName = java.lang.String
 
+type DomainPriceList = js.Array[DomainPrice]
+
+type DomainPriceName = java.lang.String
+
 type DomainStatus = java.lang.String
 
-type DomainStatusList = js.Array[typings.awsSdk.route53domainsMod.DomainStatus]
+type DomainStatusList = js.Array[DomainStatus]
 
-type DomainSuggestionsList = js.Array[typings.awsSdk.route53domainsMod.DomainSuggestion]
+type DomainSuggestionsList = js.Array[DomainSuggestion]
 
-type DomainSummaryList = js.Array[typings.awsSdk.route53domainsMod.DomainSummary]
+type DomainSummaryList = js.Array[DomainSummary]
 
-type DurationInYears = scala.Double
+type DurationInYears = Double
 
 type Email = java.lang.String
 
 type ErrorMessage = java.lang.String
 
-type ExtraParamList = js.Array[typings.awsSdk.route53domainsMod.ExtraParam]
+type ExtraParamList = js.Array[ExtraParam]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUNS_NUMBER
@@ -330,27 +358,37 @@ type ExtraParamList = js.Array[typings.awsSdk.route53domainsMod.ExtraParam]
   - typings.awsSdk.awsSdkStrings.VAT_NUMBER
   - typings.awsSdk.awsSdkStrings.UK_CONTACT_TYPE
   - typings.awsSdk.awsSdkStrings.UK_COMPANY_NUMBER
+  - typings.awsSdk.awsSdkStrings.EU_COUNTRY_OF_CITIZENSHIP
   - java.lang.String
 */
-type ExtraParamName = typings.awsSdk.route53domainsMod._ExtraParamName | java.lang.String
+type ExtraParamName = _ExtraParamName | java.lang.String
 
 type ExtraParamValue = java.lang.String
 
 type FIAuthKey = java.lang.String
 
+type FilterConditions = js.Array[FilterCondition]
+
 type GlueIp = java.lang.String
 
-type GlueIpList = js.Array[typings.awsSdk.route53domainsMod.GlueIp]
+type GlueIpList = js.Array[GlueIp]
 
 type HostName = java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
 type InvoiceId = java.lang.String
 
 type LangCode = java.lang.String
 
-type NameserverList = js.Array[typings.awsSdk.route53domainsMod.Nameserver]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DomainName
+  - typings.awsSdk.awsSdkStrings.Expiry
+  - java.lang.String
+*/
+type ListDomainsAttributeName = _ListDomainsAttributeName | java.lang.String
+
+type NameserverList = js.Array[Nameserver]
 
 type OperationId = java.lang.String
 
@@ -362,9 +400,9 @@ type OperationId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type OperationStatus = typings.awsSdk.route53domainsMod._OperationStatus | java.lang.String
+type OperationStatus = _OperationStatus | java.lang.String
 
-type OperationSummaryList = js.Array[typings.awsSdk.route53domainsMod.OperationSummary]
+type OperationSummaryList = js.Array[OperationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REGISTER_DOMAIN
@@ -387,13 +425,21 @@ type OperationSummaryList = js.Array[typings.awsSdk.route53domainsMod.OperationS
   - typings.awsSdk.awsSdkStrings.INTERNAL_TRANSFER_IN_DOMAIN
   - java.lang.String
 */
-type OperationType = typings.awsSdk.route53domainsMod._OperationType | java.lang.String
+type OperationType = _OperationType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LE
+  - typings.awsSdk.awsSdkStrings.GE
+  - typings.awsSdk.awsSdkStrings.BEGINS_WITH
+  - java.lang.String
+*/
+type Operator = _Operator | java.lang.String
 
 type PageMarker = java.lang.String
 
-type PageMaxItems = scala.Double
+type PageMaxItems = Double
 
-type Price = scala.Double
+type Price = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -401,7 +447,7 @@ type Price = scala.Double
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type ReachabilityStatus = typings.awsSdk.route53domainsMod._ReachabilityStatus | java.lang.String
+type ReachabilityStatus = _ReachabilityStatus | java.lang.String
 
 type RegistrarName = java.lang.String
 
@@ -413,19 +459,28 @@ type RegistryDomainId = java.lang.String
 
 type Reseller = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASC
+  - typings.awsSdk.awsSdkStrings.DESC
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | java.lang.String
+
 type State = java.lang.String
 
 type String = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.route53domainsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.route53domainsMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
+
+type TldName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRANSFERABLE
@@ -433,7 +488,11 @@ type Timestamp = typings.std.Date
   - typings.awsSdk.awsSdkStrings.DONT_KNOW
   - java.lang.String
 */
-type Transferable = typings.awsSdk.route53domainsMod._Transferable | java.lang.String
+type Transferable = _Transferable | java.lang.String
+
+type Value = java.lang.String
+
+type Values = js.Array[Value]
 
 type ZipCode = java.lang.String
 
@@ -442,4 +501,4 @@ type ZipCode = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.route53domainsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

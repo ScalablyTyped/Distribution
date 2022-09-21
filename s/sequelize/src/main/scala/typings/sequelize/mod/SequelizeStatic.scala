@@ -90,7 +90,7 @@ Instantiable3[
   /**
     * Provide access to continuation-local-storage (http://docs.sequelizejs.com/en/latest/api/sequelize/#transactionoptions-promise)
     */
-  var cls: js.Any = js.native
+  var cls: Any = js.native
   
   def useCLS(namespace: Namespace): Sequelize = js.native
 }

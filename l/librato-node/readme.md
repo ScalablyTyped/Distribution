@@ -10,13 +10,13 @@ A node.js client for Librato Metrics (http://metrics.librato.com/)
 | ------------------ | :-------------: |
 | Full name          | librato-node |
 | Keywords           | librato, metrics, express |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 1311429 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 17014.666666666668 |
+| # stars            | 38.0 |
 
 ## Links
-- [Homepage](http://goodeggs.github.com/librato-node/)
+- [Homepage](https://github.com/goodeggs/librato-node#readme)
 - [Bugs](https://github.com/goodeggs/librato-node/issues)
 - [Repository](https://github.com/goodeggs/librato-node)
 - [Npm](https://www.npmjs.com/package/librato-node)

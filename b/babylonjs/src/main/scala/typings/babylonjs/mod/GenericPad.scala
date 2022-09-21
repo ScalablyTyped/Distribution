@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "GenericPad")
 @js.native
-class GenericPad protected ()
+open class GenericPad protected ()
   extends typings.babylonjs.legacyMod.GenericPad {
   /**
     * Initializes the generic gamepad
@@ -14,5 +14,5 @@ class GenericPad protected ()
     * @param index The index of the generic gamepad
     * @param browserGamepad The browser gamepad
     */
-  def this(id: String, index: Double, browserGamepad: js.Any) = this()
+  def this(id: String, index: Double, browserGamepad: Any) = this()
 }

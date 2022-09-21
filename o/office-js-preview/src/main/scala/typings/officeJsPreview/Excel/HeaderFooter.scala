@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -19,19 +20,19 @@ trait HeaderFooter
      with ClientObject {
   
   /**
-    *
     * The center footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: String = js.native
   
   /**
-    *
     * The center header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerHeader: String = js.native
@@ -41,19 +42,19 @@ trait HeaderFooter
   var context_HeaderFooter: RequestContext = js.native
   
   /**
-    *
     * The left footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: String = js.native
   
   /**
-    *
     * The left header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: String = js.native
@@ -70,33 +71,27 @@ trait HeaderFooter
   def load(propertyNames: js.Array[String]): HeaderFooter = js.native
   
   /**
-    *
     * The right footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: String = js.native
   
   /**
-    *
     * The right header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightHeader: String = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: HeaderFooter): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.HeaderFooter): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

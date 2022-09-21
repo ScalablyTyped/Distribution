@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppInstanceAdminSummary extends StObject {
   
   /**
-    * The name and metadata of the app instance administrator.
+    * The details of the AppInstanceAdmin.
     */
   var Admin: js.UndefOr[Identity] = js.undefined
 }

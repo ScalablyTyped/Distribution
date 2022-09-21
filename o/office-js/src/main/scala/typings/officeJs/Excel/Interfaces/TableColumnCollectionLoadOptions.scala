@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the columns that are part of the table.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait TableColumnCollectionLoadOptions extends StObject {
@@ -19,41 +19,42 @@ trait TableColumnCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Retrieves the filter applied to the column.
     *
-    * For EACH ITEM in the collection: Retrieve the filter applied to the column.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var filter: js.UndefOr[FilterLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var index: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the name of the table column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
     *
-    * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var values: js.UndefOr[Boolean] = js.undefined

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMediaFileSelector")
 @js.native
-class ASPxClientMediaFileSelector ()
+open class ASPxClientMediaFileSelector ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMediaFileSelector {
   
@@ -37,13 +37,13 @@ class ASPxClientMediaFileSelector ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a URL text from the URL text box in Html Editor's media dialogs.

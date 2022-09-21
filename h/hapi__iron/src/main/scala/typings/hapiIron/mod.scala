@@ -10,7 +10,7 @@ import typings.hapiIron.hapiIronStrings.sha256
 import typings.hapiIron.mod.password.Hash
 import typings.hapiIron.mod.password.Secret
 import typings.hapiIron.mod.password.Specific
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,14 +45,14 @@ object mod {
   @js.native
   val macPrefix: String = js.native
   
-  inline def seal(`object`: js.Any, password: Password_, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def seal(`object`: js.Any, password: Secret, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def seal(`object`: js.Any, password: Specific, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def seal(`object`: Any, password: Password_, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def seal(`object`: Any, password: Secret, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def seal(`object`: Any, password: Specific, options: SealOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(`object`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def unseal(`sealed`: String, password: Password_): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def unseal(`sealed`: String, password: Password_, options: SealOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def unseal(`sealed`: String, password: Hash): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def unseal(`sealed`: String, password: Hash, options: SealOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def unseal(`sealed`: String, password: Password_): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def unseal(`sealed`: String, password: Password_, options: SealOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def unseal(`sealed`: String, password: Hash): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def unseal(`sealed`: String, password: Hash, options: SealOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unseal")(`sealed`.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   trait Algorithms_ extends StObject {
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Anchor")
 @js.native
-class Anchor () extends StObject {
+open class Anchor () extends StObject {
   def this(options: AnchorOptions) = this()
   
   /**

@@ -8,5 +8,5 @@ object streamNameListMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_StreamNameList", "_StreamNameList")
   @js.native
-  val StreamNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val StreamNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
 import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
@@ -19,12 +19,12 @@ object gridRowMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Grid/GridRow", JSImport.Default)
   @js.native
-  val default: StatelessComponent[GridRowProps] = js.native
+  val default: FC[GridRowProps] = js.native
   
   trait GridRowProps
     extends StObject
        with StrictGridRowProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object GridRowProps {
     
     inline def apply(): GridRowProps = {
@@ -36,7 +36,7 @@ object gridRowMod extends Shortcut {
   trait StrictGridRowProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A row can have its columns centered. */
     var centered: js.UndefOr[Boolean] = js.undefined
@@ -59,10 +59,10 @@ object gridRowMod extends Shortcut {
     /** A row can appear only for a specific device, or screen sizes. */
     var only: js.UndefOr[GridOnlyProp] = js.undefined
     
-    /** A  row can specify that its columns should reverse order at different device sizes. */
+    /** A row can specify that its columns should reverse order at different device sizes. */
     var reversed: js.UndefOr[GridReversedProp] = js.undefined
     
-    /** An can stretch its contents to take up the entire column height. */
+    /** A row can stretch its contents to take up the entire column height. */
     var stretched: js.UndefOr[Boolean] = js.undefined
     
     /** A row can specify its text alignment. */
@@ -80,7 +80,7 @@ object gridRowMod extends Shortcut {
     
     extension [Self <: StrictGridRowProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -130,8 +130,8 @@ object gridRowMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[GridRowProps]
+  type _To = FC[GridRowProps]
   
   /* This means you don't have to write `default`, but can instead just say `gridRowMod.foo` */
-  override def _to: StatelessComponent[GridRowProps] = default
+  override def _to: FC[GridRowProps] = default
 }

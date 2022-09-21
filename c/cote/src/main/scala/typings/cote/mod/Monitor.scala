@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cote", "Monitor")
 @js.native
-class Monitor protected () extends Component {
+open class Monitor protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */

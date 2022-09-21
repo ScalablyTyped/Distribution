@@ -8,7 +8,7 @@ trait EvaluatableExpressionProvider extends StObject {
   
   /**
     * Provide an evaluatable expression for the given document and position.
-    * VS Code will evaluate this expression in the active debug session and will show the result in the debug hover.
+    * The editor will evaluate this expression in the active debug session and will show the result in the debug hover.
     * The expression can be implicitly specified by the range in the underlying document or by explicitly returning an expression.
     *
     * @param document The document for which the debug hover is about to appear.

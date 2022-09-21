@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Logger extends StObject {
   
-  def debug(msg: String, args: js.Any*): Unit
-  def debug(obj: js.Object, msg: String, args: js.Any*): Unit
-  def debug(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def debug(msg: String, args: Any*): Unit
+  def debug(obj: js.Object, msg: String, args: Any*): Unit
+  def debug(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("debug")
   var debug_Original: LogFn
   
-  def error(msg: String, args: js.Any*): Unit
-  def error(obj: js.Object, msg: String, args: js.Any*): Unit
-  def error(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def error(msg: String, args: Any*): Unit
+  def error(obj: js.Object, msg: String, args: Any*): Unit
+  def error(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("error")
   var error_Original: LogFn
   
-  def fatal(msg: String, args: js.Any*): Unit
-  def fatal(obj: js.Object, msg: String, args: js.Any*): Unit
-  def fatal(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def fatal(msg: String, args: Any*): Unit
+  def fatal(obj: js.Object, msg: String, args: Any*): Unit
+  def fatal(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("fatal")
   var fatal_Original: LogFn
   
-  def info(msg: String, args: js.Any*): Unit
-  def info(obj: js.Object, msg: String, args: js.Any*): Unit
-  def info(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def info(msg: String, args: Any*): Unit
+  def info(obj: js.Object, msg: String, args: Any*): Unit
+  def info(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("info")
   var info_Original: LogFn
   
-  def trace(msg: String, args: js.Any*): Unit
-  def trace(obj: js.Object, msg: String, args: js.Any*): Unit
-  def trace(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def trace(msg: String, args: Any*): Unit
+  def trace(obj: js.Object, msg: String, args: Any*): Unit
+  def trace(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("trace")
   var trace_Original: LogFn
   
-  def warn(msg: String, args: js.Any*): Unit
-  def warn(obj: js.Object, msg: String, args: js.Any*): Unit
-  def warn(obj: js.Object, msg: Unit, args: js.Any*): Unit
+  def warn(msg: String, args: Any*): Unit
+  def warn(obj: js.Object, msg: String, args: Any*): Unit
+  def warn(obj: js.Object, msg: Unit, args: Any*): Unit
   @JSName("warn")
   var warn_Original: LogFn
 }

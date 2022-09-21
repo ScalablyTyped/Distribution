@@ -1,6 +1,7 @@
 package typings.luminoWidgets
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 import typings.luminoWidgets.titleMod.Title.Dataset
@@ -13,7 +14,9 @@ object titleMod {
   
   @JSImport("@lumino/widgets/types/title", "Title")
   @js.native
-  class Title[T] protected () extends StObject {
+  open class Title[T] protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new title.
       *
@@ -21,25 +24,27 @@ object titleMod {
       */
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _caption: js.Any = js.native
+    /* private */ var _caption: Any = js.native
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _className: js.Any = js.native
+    /* private */ var _className: Any = js.native
     
-    /* private */ var _closable: js.Any = js.native
+    /* private */ var _closable: Any = js.native
     
-    /* private */ var _dataset: js.Any = js.native
+    /* private */ var _dataset: Any = js.native
     
-    /* private */ var _icon: js.Any = js.native
+    /* private */ var _icon: Any = js.native
     
-    /* private */ var _iconClass: js.Any = js.native
+    /* private */ var _iconClass: Any = js.native
     
-    /* private */ var _iconLabel: js.Any = js.native
+    /* private */ var _iconLabel: Any = js.native
     
-    /* private */ var _label: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _mnemonic: js.Any = js.native
+    /* private */ var _label: Any = js.native
+    
+    /* private */ var _mnemonic: Any = js.native
     
     /**
       * Get the caption for the title.
@@ -100,6 +105,20 @@ object titleMod {
     var dataset: Dataset = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Get the icon renderer for the title.
       *
       * #### Notes
@@ -154,6 +173,15 @@ object titleMod {
       * @deprecated Use `icon` instead.
       */
     var iconRenderer: js.UndefOr[IRenderer] = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * Get the label for the title.

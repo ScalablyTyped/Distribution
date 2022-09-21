@@ -19,7 +19,7 @@ object esriJSONMod {
   
   @JSImport("ol/format/EsriJSON", JSImport.Default)
   @js.native
-  class default () extends EsriJSON {
+  open class default () extends EsriJSON {
     def this(opt_options: Options) = this()
   }
   
@@ -27,8 +27,8 @@ object esriJSONMod {
   trait EsriJSON
     extends typings.ol.jsonfeatureMod.default {
     
-    /* protected */ def readFeatureFromObject(`object`: js.Any, opt_options: Unit, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
-    /* protected */ def readFeatureFromObject(`object`: js.Any, opt_options: ReadOptions, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    /* protected */ def readFeatureFromObject(`object`: Any, opt_options: Unit, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    /* protected */ def readFeatureFromObject(`object`: Any, opt_options: ReadOptions, opt_idField: String): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     
     /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry): typings.ol.geometryMod.default = js.native
     /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
@@ -71,7 +71,7 @@ object esriJSONMod {
       
       inline def setRings(value: js.Array[js.Array[js.Array[js.Array[Double]]]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
       
-      inline def setRingsVarargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+      inline def setRingsVarargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "rings", js.Array(value*))
       
       inline def setSpatialReference(value: EsriJSONSpatialReferenceWkid): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
       

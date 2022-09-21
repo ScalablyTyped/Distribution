@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MonitoringBaselineConfig extends StObject {
   
   /**
+    * The name of the job that performs baselining for the monitoring job.
+    */
+  var BaseliningJobName: js.UndefOr[ProcessingJobName] = js.undefined
+  
+  /**
     * The baseline constraint file in Amazon S3 that the current monitoring job should validated against.
     */
   var ConstraintsResource: js.UndefOr[MonitoringConstraintsResource] = js.undefined
@@ -24,6 +29,10 @@ object MonitoringBaselineConfig {
   }
   
   extension [Self <: MonitoringBaselineConfig](x: Self) {
+    
+    inline def setBaseliningJobName(value: ProcessingJobName): Self = StObject.set(x, "BaseliningJobName", value.asInstanceOf[js.Any])
+    
+    inline def setBaseliningJobNameUndefined: Self = StObject.set(x, "BaseliningJobName", js.undefined)
     
     inline def setConstraintsResource(value: MonitoringConstraintsResource): Self = StObject.set(x, "ConstraintsResource", value.asInstanceOf[js.Any])
     

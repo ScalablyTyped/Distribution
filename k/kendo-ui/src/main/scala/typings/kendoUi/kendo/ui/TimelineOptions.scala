@@ -25,9 +25,11 @@ trait TimelineOptions extends StObject {
   
   var dataDescriptionField: js.UndefOr[String] = js.undefined
   
+  var dataImagesAltField: js.UndefOr[String] = js.undefined
+  
   var dataImagesField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
+  var dataSource: js.UndefOr[DataSource | Any] = js.undefined
   
   var dataSubTitleField: js.UndefOr[String] = js.undefined
   
@@ -44,6 +46,8 @@ trait TimelineOptions extends StObject {
   var expand: js.UndefOr[js.Function1[/* e */ TimelineExpandEvent, Unit]] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
+  
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
   var navigate: js.UndefOr[js.Function1[/* e */ TimelineNavigateEvent, Unit]] = js.undefined
   
@@ -96,11 +100,15 @@ object TimelineOptions {
     
     inline def setDataDescriptionFieldUndefined: Self = StObject.set(x, "dataDescriptionField", js.undefined)
     
+    inline def setDataImagesAltField(value: String): Self = StObject.set(x, "dataImagesAltField", value.asInstanceOf[js.Any])
+    
+    inline def setDataImagesAltFieldUndefined: Self = StObject.set(x, "dataImagesAltField", js.undefined)
+    
     inline def setDataImagesField(value: String): Self = StObject.set(x, "dataImagesField", value.asInstanceOf[js.Any])
     
     inline def setDataImagesFieldUndefined: Self = StObject.set(x, "dataImagesField", js.undefined)
     
-    inline def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -135,6 +143,10 @@ object TimelineOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     inline def setNavigate(value: /* e */ TimelineNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     

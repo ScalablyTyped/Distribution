@@ -10,10 +10,10 @@ object offlinePinMod {
   
   @JSImport("material-ui/svg-icons/action/offline-pin", JSImport.Default)
   @js.native
-  class default () extends ActionOfflinePin
+  open class default () extends ActionOfflinePin
   
   @JSImport("material-ui/svg-icons/action/offline-pin", "ActionOfflinePin")
   @js.native
-  class ActionOfflinePin ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionOfflinePin ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

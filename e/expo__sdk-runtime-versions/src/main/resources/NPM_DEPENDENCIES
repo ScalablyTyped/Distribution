@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@expo/sdk-runtime-versions" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@expo/sdk-runtime-versions" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

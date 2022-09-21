@@ -29,7 +29,7 @@ object DescribeConnectionsResponse {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "Connections", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

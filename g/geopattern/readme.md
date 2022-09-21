@@ -10,10 +10,10 @@ Generate beautiful SVG patterns
 | ------------------ | :-------------: |
 | Full name          | geopattern |
 | Keywords           | svg, pattern, geometric, background |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 87159 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12875.666666666666 |
+| # stars            | 1736.0 |
 
 ## Links
 - [Homepage](http://btmills.github.io/geopattern/geopattern.html)

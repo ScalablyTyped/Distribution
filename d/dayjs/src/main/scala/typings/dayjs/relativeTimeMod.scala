@@ -36,7 +36,7 @@ object relativeTimeMod extends Shortcut {
       
       inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
       
-      inline def setThresholdsVarargs(value: RelativeTimeThreshold*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+      inline def setThresholdsVarargs(value: RelativeTimeThreshold*): Self = StObject.set(x, "thresholds", js.Array(value*))
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.segmented because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.segmented")
+- typings.webix.webix.ui.segmented because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.segmented")
 @js.native
-class segmented ()
+open class segmented ()
   extends typings.webix.mod.ui.segmented

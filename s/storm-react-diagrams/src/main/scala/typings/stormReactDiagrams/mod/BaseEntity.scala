@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "BaseEntity")
 @js.native
-class BaseEntity[T /* <: BaseListener[js.Any] */] ()
+open class BaseEntity[T /* <: BaseListener[Any] */] ()
   extends typings.stormReactDiagrams.baseEntityMod.BaseEntity[T] {
   def this(id: String) = this()
 }

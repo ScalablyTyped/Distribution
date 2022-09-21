@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocumentLibraryVersion extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Comments: String
   
@@ -24,16 +24,16 @@ trait DocumentLibraryVersion extends StObject {
   /* private */ @JSName("Office.DocumentLibraryVersion_typekey")
   var OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion
   
-  def Open(): js.Any
+  def Open(): Any
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Restore(): js.Any
+  def Restore(): Any
 }
 object DocumentLibraryVersion {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Comments: String,
     Creator: Double,
     Delete: () => Unit,
@@ -41,9 +41,9 @@ object DocumentLibraryVersion {
     Modified: VarDate,
     ModifiedBy: String,
     OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion,
-    Open: () => js.Any,
-    Parent: js.Any,
-    Restore: () => js.Any
+    Open: () => Any,
+    Parent: Any,
+    Restore: () => Any
   ): DocumentLibraryVersion = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Comments = Comments.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Modified = Modified.asInstanceOf[js.Any], ModifiedBy = ModifiedBy.asInstanceOf[js.Any], Open = js.Any.fromFunction0(Open), Parent = Parent.asInstanceOf[js.Any], Restore = js.Any.fromFunction0(Restore))
     __obj.updateDynamic("Office.DocumentLibraryVersion_typekey")(OfficeDotDocumentLibraryVersion_typekey.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object DocumentLibraryVersion {
   
   extension [Self <: DocumentLibraryVersion](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
@@ -68,10 +68,10 @@ object DocumentLibraryVersion {
     
     inline def setOfficeDotDocumentLibraryVersion_typekey(value: DocumentLibraryVersion): Self = StObject.set(x, "Office.DocumentLibraryVersion_typekey", value.asInstanceOf[js.Any])
     
-    inline def setOpen(value: () => js.Any): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Any): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRestore(value: () => js.Any): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Any): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
   }
 }

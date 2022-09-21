@@ -9,7 +9,7 @@ object anon {
   @js.native
   trait Process extends StObject {
     
-    def process(css: String): js.Thenable[js.Any] = js.native
-    def process(css: String, options: js.Object): js.Thenable[js.Any] = js.native
+    def process(css: String): js.Thenable[Any] = js.native
+    def process(css: String, options: js.Object): js.Thenable[Any] = js.native
   }
 }

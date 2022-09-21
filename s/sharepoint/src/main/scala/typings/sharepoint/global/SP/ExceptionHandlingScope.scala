@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ExceptionHandlingScope")
 @js.native
-class ExceptionHandlingScope protected ()
+open class ExceptionHandlingScope protected ()
   extends StObject
      with typings.sharepoint.SP.ExceptionHandlingScope {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -24,7 +24,7 @@ class ExceptionHandlingScope protected ()
   override def get_serverErrorCode(): Double = js.native
   
   /* CompleteClass */
-  override def get_serverErrorDetails(): js.Any = js.native
+  override def get_serverErrorDetails(): Any = js.native
   
   /* CompleteClass */
   override def get_serverErrorTypeName(): String = js.native
@@ -36,14 +36,14 @@ class ExceptionHandlingScope protected ()
   override def get_serverStackTrace(): String = js.native
   
   /* CompleteClass */
-  override def startCatch(): js.Any = js.native
+  override def startCatch(): Any = js.native
   
   /* CompleteClass */
-  override def startFinally(): js.Any = js.native
+  override def startFinally(): Any = js.native
   
   /* CompleteClass */
-  override def startScope(): js.Any = js.native
+  override def startScope(): Any = js.native
   
   /* CompleteClass */
-  override def startTry(): js.Any = js.native
+  override def startTry(): Any = js.native
 }

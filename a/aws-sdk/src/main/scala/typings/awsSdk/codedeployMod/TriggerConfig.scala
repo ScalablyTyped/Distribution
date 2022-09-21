@@ -34,7 +34,7 @@ object TriggerConfig {
     
     inline def setTriggerEventsUndefined: Self = StObject.set(x, "triggerEvents", js.undefined)
     
-    inline def setTriggerEventsVarargs(value: TriggerEventType*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
+    inline def setTriggerEventsVarargs(value: TriggerEventType*): Self = StObject.set(x, "triggerEvents", js.Array(value*))
     
     inline def setTriggerName(value: TriggerName): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     

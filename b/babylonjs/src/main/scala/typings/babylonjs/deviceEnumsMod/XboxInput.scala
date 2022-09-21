@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait XboxInput
   extends StObject
-     with _DeviceInput[js.Any]
+     with _DeviceInput[Any]
 @JSImport("babylonjs/DeviceInput/InputDevices/deviceEnums", "XboxInput")
 @js.native
 object XboxInput extends StObject {

@@ -1,6 +1,5 @@
 package typings.heremaps.H.service
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object traffic {
     def requestIncidents(
       serviceParams: ServiceParameters,
       onResponse: js.Function1[/* result */ ServiceResult, Unit],
-      onError: js.Function1[/* error */ Error, Unit]
+      onError: js.Function1[/* error */ js.Error, Unit]
     ): JsonpRequestHandle = js.native
     
     /**
@@ -44,14 +43,14 @@ object traffic {
       y: Double,
       z: Double,
       onResponse: js.Function1[/* result */ ServiceResult, Unit],
-      onError: js.Function1[/* error */ Error, Unit]
+      onError: js.Function1[/* error */ js.Error, Unit]
     ): JsonpRequestHandle = js.native
     def requestIncidentsByTile(
       x: Double,
       y: Double,
       z: Double,
       onResponse: js.Function1[/* result */ ServiceResult, Unit],
-      onError: js.Function1[/* error */ Error, Unit],
+      onError: js.Function1[/* error */ js.Error, Unit],
       opt_serviceParams: ServiceParameters
     ): JsonpRequestHandle = js.native
   }

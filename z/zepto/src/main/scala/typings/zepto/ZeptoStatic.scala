@@ -25,7 +25,7 @@ trait ZeptoStatic extends StObject {
     * @see ZeptoStatic();
     * @param object
     **/
-  def apply(`object`: js.Any): ZeptoCollection = js.native
+  def apply(`object`: Any): ZeptoCollection = js.native
   /**
     * Core
     **/
@@ -44,7 +44,7 @@ trait ZeptoStatic extends StObject {
     * @see ZeptoStatic();
     * @param attributes
     **/
-  def apply(selector: String, context: js.Any): ZeptoCollection = js.native
+  def apply(selector: String, context: Any): ZeptoCollection = js.native
   
   /**
     * Event
@@ -56,7 +56,7 @@ trait ZeptoStatic extends StObject {
     * @param properties
     * @return
     **/
-  def Event(`type`: String, properties: js.Any): typings.std.Event = js.native
+  def Event(`type`: String, properties: Any): typings.std.Event = js.native
   
   /**
     * Ajax
@@ -127,21 +127,21 @@ trait ZeptoStatic extends StObject {
   def contains(parent: HTMLElement, node: HTMLElement): Boolean = js.native
   
   /**
-    * @see ZeptoStatic.each
-    **/
-  def each(collection: js.Any, fn: js.Function2[/* key */ String, /* value */ js.Any, Boolean]): Unit = js.native
-  /**
     * Iterate over array elements or object key-value pairs. Returning false from the iterator function stops the iteration.
     * @param collection
     * @param fn
     **/
-  def each(collection: js.Array[js.Any], fn: js.Function2[/* index */ Double, /* item */ js.Any, Boolean]): Unit = js.native
+  def each(collection: js.Array[Any], fn: js.Function2[/* index */ Double, /* item */ Any, Boolean]): Unit = js.native
+  /**
+    * @see ZeptoStatic.each
+    **/
+  def each(collection: Any, fn: js.Function2[/* key */ String, /* value */ Any, Boolean]): Unit = js.native
   
   /**
     * @see ZeptoStatic.extend
     * @param deep
     **/
-  def extend(deep: Boolean, target: js.Any, sources: js.Any*): js.Any = js.native
+  def extend(deep: Boolean, target: Any, sources: Any*): Any = js.native
   /**
     * Extend target object with properties from each of the source objects, overriding the properties on target.
     * By default, copying is shallow. An optional true for the first argument triggers deep (recursive) copying.
@@ -149,12 +149,12 @@ trait ZeptoStatic extends StObject {
     * @param sources
     * @return
     **/
-  def extend(target: js.Any, sources: js.Any*): js.Any = js.native
+  def extend(target: Any, sources: Any*): Any = js.native
   
   /**
     * Zepto.fn is an object that holds all of the methods that are available on Zepto collections, such as addClass(), attr(), and other. Adding a function to this object makes that method available on every Zepto collection.
     **/
-  var fn: js.Any = js.native
+  var fn: Any = js.native
   
   /**
     * Effects
@@ -170,8 +170,8 @@ trait ZeptoStatic extends StObject {
     **/
   def get(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
   /**
     * Perform an Ajax GET request. This is a shortcut for the $.ajax method.
@@ -179,10 +179,7 @@ trait ZeptoStatic extends StObject {
     * @param fn Callback function when the HTTP GET request is completed.
     * @return The XMLHttpRequest object.
     **/
-  def get(
-    url: String,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
-  ): XMLHttpRequest = js.native
+  def get(url: String, fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]): XMLHttpRequest = js.native
   
   /**
     * @see ZeptoStatic.getJSON
@@ -190,8 +187,8 @@ trait ZeptoStatic extends StObject {
     **/
   def getJSON(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
   /**
     * Get JSON data via Ajax GET request. This is a shortcut for the $.ajax method.
@@ -199,10 +196,7 @@ trait ZeptoStatic extends StObject {
     * @param fn Callback function when the HTTP GET request is completed.
     * @return The XMLHttpRequest object.
     **/
-  def getJSON(
-    url: String,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
-  ): XMLHttpRequest = js.native
+  def getJSON(url: String, fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]): XMLHttpRequest = js.native
   
   /**
     * Get a new array containing only the items for which the callback function returned true.
@@ -210,7 +204,7 @@ trait ZeptoStatic extends StObject {
     * @param fn
     * @return
     **/
-  def grep(items: js.Array[js.Any], fn: js.Function1[/* item */ js.Any, Boolean]): js.Array[js.Any] = js.native
+  def grep(items: js.Array[Any], fn: js.Function1[/* item */ Any, Boolean]): js.Array[Any] = js.native
   
   /**
     * Get the position of element inside an array, or -1 if not found.
@@ -219,36 +213,36 @@ trait ZeptoStatic extends StObject {
     * @param fromIndex
     * @return
     **/
-  def inArray(element: js.Any, array: js.Array[js.Any]): Double = js.native
-  def inArray(element: js.Any, array: js.Array[js.Any], fromIndex: Double): Double = js.native
+  def inArray(element: Any, array: js.Array[Any]): Double = js.native
+  def inArray(element: Any, array: js.Array[Any], fromIndex: Double): Double = js.native
   
   /**
     * True if the object is an array.
     * @param object
     * @return
     **/
-  def isArray(`object`: js.Any): Boolean = js.native
+  def isArray(`object`: Any): Boolean = js.native
   
   /**
     * True if the object is a function.
     * @param object
     * @return
     **/
-  def isFunction(`object`: js.Any): Boolean = js.native
+  def isFunction(`object`: Any): Boolean = js.native
   
   /**
     * True if the object is a “plain” JavaScript object, which is only true for object literals and objects created with new Object.
     * @param object
     * @return
     **/
-  def isPlainObject(`object`: js.Any): Boolean = js.native
+  def isPlainObject(`object`: Any): Boolean = js.native
   
   /**
     * True if the object is a window object. This is useful for iframes where each one has its own window, and where these objects fail the regular obj === window check.
     * @param object
     * @return
     **/
-  def isWindow(`object`: js.Any): Boolean = js.native
+  def isWindow(`object`: Any): Boolean = js.native
   
   /**
     * Iterate through elements of collection and return all results of running the iterator function, with null and undefined values filtered out.
@@ -256,7 +250,7 @@ trait ZeptoStatic extends StObject {
     * @param fn
     * @return
     **/
-  def map(collection: js.Array[js.Any], fn: js.Function2[/* item */ js.Any, /* index */ Double, js.Any]): js.Array[js.Any] = js.native
+  def map(collection: js.Array[Any], fn: js.Function2[/* item */ Any, /* index */ Double, Any]): js.Array[Any] = js.native
   
   /**
     * Detect
@@ -273,15 +267,15 @@ trait ZeptoStatic extends StObject {
     * @param shallow Only serialize the first level of `object`.
     * @return Seralized URL-encoded string representation of `object`.
     **/
-  def param(`object`: js.Any): String = js.native
-  def param(`object`: js.Any, shallow: Boolean): String = js.native
+  def param(`object`: Any): String = js.native
+  def param(`object`: Any, shallow: Boolean): String = js.native
   
   /**
     * Alias for the native JSON.parse method.
     * @param str
     * @retrun
     **/
-  def parseJSON(str: String): js.Any = js.native
+  def parseJSON(str: String): Any = js.native
   
   /**
     * @see ZeptoStatic.post
@@ -289,13 +283,13 @@ trait ZeptoStatic extends StObject {
     **/
   def post(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
   def post(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit],
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit],
     dataType: String
   ): XMLHttpRequest = js.native
   /**
@@ -304,20 +298,17 @@ trait ZeptoStatic extends StObject {
     * @param fn Callback function when the HTTP POST request is completed.
     * @return The XMLHttpRequest object.
     **/
+  def post(url: String, fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]): XMLHttpRequest = js.native
   def post(
     url: String,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
-  ): XMLHttpRequest = js.native
-  def post(
-    url: String,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit],
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit],
     dataType: String
   ): XMLHttpRequest = js.native
   
   /**
     * Get a function that ensures that the value of this in the original function refers to the context object. In the second form, the original function is read from the specific property of the context object.
     **/
-  def proxy(fn: js.Function, context: js.Any): js.Function = js.native
+  def proxy(fn: js.Function, context: Any): js.Function = js.native
   
   /**
     * Remove whitespace from beginning and end of a string; just like String.prototype.trim().
@@ -332,5 +323,5 @@ trait ZeptoStatic extends StObject {
     * @param object
     * @return
     **/
-  def `type`(`object`: js.Any): String = js.native
+  def `type`(`object`: Any): String = js.native
 }

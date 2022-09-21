@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListDataSourceResponse extends StObject {
   
   /**
-    * Token to retrieve the next page of results, or empty if there are no more
-    * results in the list.
+    * Token to retrieve the next page of results, or empty if there are no more results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   var sources: js.UndefOr[js.Array[SchemaDataSource]] = js.undefined
 }
@@ -25,12 +24,14 @@ object SchemaListDataSourceResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setSources(value: js.Array[SchemaDataSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SchemaDataSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaDataSource*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

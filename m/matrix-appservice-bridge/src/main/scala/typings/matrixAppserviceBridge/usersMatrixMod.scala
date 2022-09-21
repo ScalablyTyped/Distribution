@@ -10,7 +10,7 @@ object usersMatrixMod {
   
   @JSImport("matrix-appservice-bridge/lib/models/users/matrix", "MatrixUser")
   @js.native
-  class MatrixUser protected () extends StObject {
+  open class MatrixUser protected () extends StObject {
     /**
       * Construct a Matrix user.
       * @param userId The userId of the user.
@@ -19,13 +19,13 @@ object usersMatrixMod {
       *               to change the default value.
       */
     def this(userId: String) = this()
-    def this(userId: String, _data: Record[String, js.Any]) = this()
+    def this(userId: String, _data: Record[String, Any]) = this()
     def this(userId: String, _data: Unit, escape: Boolean) = this()
-    def this(userId: String, _data: Record[String, js.Any], escape: Boolean) = this()
+    def this(userId: String, _data: Record[String, Any], escape: Boolean) = this()
     
-    /* private */ val _data: js.Any = js.native
+    /* private */ val _data: Any = js.native
     
-    /* private */ var _localpart: js.Any = js.native
+    /* private */ var _localpart: Any = js.native
     
     /**
       * Make a userId conform to the matrix spec using QP escaping.
@@ -68,7 +68,7 @@ object usersMatrixMod {
       * @param val The data value. This value should be serializable via
       * <code>JSON.stringify(data)</code>.
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
     
     /**
       * Set the display name for this Matrix user.

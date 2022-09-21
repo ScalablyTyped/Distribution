@@ -8,7 +8,7 @@ object axisBaseMod {
   
   @JSImport("amcharts/AxisBase", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AxisBase {
     
@@ -110,7 +110,7 @@ object axisBaseMod {
       * The array of guides belonging to this axis.
       */
     /* CompleteClass */
-    var guides: js.Array[js.Any] = js.native
+    var guides: js.Array[Any] = js.native
     
     /**
       * If autoMargins of a chart is set to true, but you want this axis not to be measured when calculating margin,
@@ -298,7 +298,7 @@ object axisBaseMod {
     /**
       * The array of guides belonging to this axis.
       */
-    var guides: js.Array[js.Any]
+    var guides: js.Array[Any]
     
     /**
       * If autoMargins of a chart is set to true, but you want this axis not to be measured when calculating margin,
@@ -402,7 +402,7 @@ object axisBaseMod {
       gridColor: String,
       gridCount: Double,
       gridThickness: Double,
-      guides: js.Array[js.Any],
+      guides: js.Array[Any],
       ignoreAxisWidth: Boolean,
       inside: Boolean,
       labelFrequency: Double,
@@ -453,9 +453,9 @@ object axisBaseMod {
       
       inline def setGridThickness(value: Double): Self = StObject.set(x, "gridThickness", value.asInstanceOf[js.Any])
       
-      inline def setGuides(value: js.Array[js.Any]): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
+      inline def setGuides(value: js.Array[Any]): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
       
-      inline def setGuidesVarargs(value: js.Any*): Self = StObject.set(x, "guides", js.Array(value :_*))
+      inline def setGuidesVarargs(value: Any*): Self = StObject.set(x, "guides", js.Array(value*))
       
       inline def setIgnoreAxisWidth(value: Boolean): Self = StObject.set(x, "ignoreAxisWidth", value.asInstanceOf[js.Any])
       

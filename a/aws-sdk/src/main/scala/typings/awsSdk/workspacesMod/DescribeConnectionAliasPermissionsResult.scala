@@ -17,7 +17,7 @@ trait DescribeConnectionAliasPermissionsResult extends StObject {
   var ConnectionAliasPermissions: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionAliasPermissions] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -38,7 +38,7 @@ object DescribeConnectionAliasPermissionsResult {
     
     inline def setConnectionAliasPermissionsUndefined: Self = StObject.set(x, "ConnectionAliasPermissions", js.undefined)
     
-    inline def setConnectionAliasPermissionsVarargs(value: ConnectionAliasPermission*): Self = StObject.set(x, "ConnectionAliasPermissions", js.Array(value :_*))
+    inline def setConnectionAliasPermissionsVarargs(value: ConnectionAliasPermission*): Self = StObject.set(x, "ConnectionAliasPermissions", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

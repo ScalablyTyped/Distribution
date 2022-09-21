@@ -20,16 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojTextAreaSettableProperties
   extends StObject
-     with inputBaseSettableProperties[js.Any, js.Any, js.Any] {
+     with inputBaseSettableProperties[Any, Any, Any] {
   
-  var converter: Converter[js.Any] | RegisteredConverter | Null
+  var converter: Converter[Any] | RegisteredConverter | Null
   
   var rows: Double
 }
 object ojTextAreaSettableProperties {
   
   inline def apply(
-    asyncValidators: js.Array[AsyncValidator[js.Any]],
+    asyncValidators: js.Array[AsyncValidator[Any]],
     autocomplete: on | off | String,
     autofocus: Boolean,
     disabled: Boolean,
@@ -39,13 +39,13 @@ object ojTextAreaSettableProperties {
     labelHint: String,
     messagesCustom: js.Array[^],
     placeholder: String,
-    rawValue: js.Any,
+    rawValue: Any,
     readonly: Boolean,
     required: Boolean,
     rows: Double,
     translations: Regexp,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Any
+    value: Any
   ): ojTextAreaSettableProperties = {
     val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], converter = null, describedBy = null, validators = null)
     __obj.asInstanceOf[ojTextAreaSettableProperties]
@@ -53,7 +53,7 @@ object ojTextAreaSettableProperties {
   
   extension [Self <: ojTextAreaSettableProperties](x: Self) {
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     

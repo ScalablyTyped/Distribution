@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BoostDebugOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Show the number of points
-    * skipped through culling.
+    * (Highcharts, Highstock) Show the number of points skipped through
+    * culling.
     *
     * When set to true, the number of points skipped in series processing is
     * outputted. Points are skipped if they are closer than 1 pixel from each
@@ -17,8 +17,7 @@ trait BoostDebugOptions extends StObject {
   var showSkipSummary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Time the WebGL to SVG buffer
-    * copy
+    * (Highcharts, Highstock) Time the WebGL to SVG buffer copy
     *
     * After rendering, the result is copied to an image which is injected into
     * the SVG.
@@ -29,8 +28,7 @@ trait BoostDebugOptions extends StObject {
   var timeBufferCopy: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Time the building of the k-d
-    * tree.
+    * (Highcharts, Highstock) Time the building of the k-d tree.
     *
     * This outputs the time spent building the k-d tree used for markers etc.
     *
@@ -40,7 +38,7 @@ trait BoostDebugOptions extends StObject {
   var timeKDTree: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Time the series rendering.
+    * (Highcharts, Highstock) Time the series rendering.
     *
     * This outputs the time spent on actual rendering in the console when set
     * to true.
@@ -48,7 +46,7 @@ trait BoostDebugOptions extends StObject {
   var timeRendering: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Time the series processing.
+    * (Highcharts, Highstock) Time the series processing.
     *
     * This outputs the time spent on transforming the series data to vertex
     * buffers when set to true.
@@ -56,7 +54,7 @@ trait BoostDebugOptions extends StObject {
   var timeSeriesProcessing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Time the the WebGL setup.
+    * (Highcharts, Highstock) Time the the WebGL setup.
     *
     * This outputs the time spent on setting up the WebGL context, creating
     * shaders, and textures.

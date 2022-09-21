@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterStringFilter extends StObject {
   
   /**
-    * The name of the filter.  The ParameterStringFilter object is used by the DescribeParameters and GetParametersByPath API actions. However, not all of the pattern values listed for Key can be used with both actions. For DescribeActions, all of the listed patterns are valid, with the exception of Label. For GetParametersByPath, the following patterns listed for Key are not valid: tag, Name, Path, and Tier. For examples of CLI commands demonstrating valid parameter filter constructions, see Searching for Systems Manager parameters in the AWS Systems Manager User Guide. 
+    * The name of the filter. The ParameterStringFilter object is used by the DescribeParameters and GetParametersByPath API operations. However, not all of the pattern values listed for Key can be used with both operations. For DescribeParameters, all of the listed patterns are valid except Label. For GetParametersByPath, the following patterns listed for Key aren't valid: tag, DataType, Name, Path, and Tier. For examples of Amazon Web Services CLI commands demonstrating valid parameter filter constructions, see Searching for Systems Manager parameters in the Amazon Web Services Systems Manager User Guide.
     */
   var Key: ParameterStringFilterKey
   
@@ -40,6 +40,6 @@ object ParameterStringFilter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: ParameterStringFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ParameterStringFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

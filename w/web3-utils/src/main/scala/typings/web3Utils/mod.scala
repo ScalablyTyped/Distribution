@@ -1,6 +1,6 @@
 package typings.web3Utils
 
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import typings.web3Utils.anon.R
 import typings.web3Utils.web3UtilsStrings.gwei_
 import typings.web3Utils.web3UtilsStrings.kwei_
@@ -23,7 +23,7 @@ object mod {
   inline def checkAddressChecksum(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def checkAddressChecksum(address: String, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def encodePacked(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePacked")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def encodePacked(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePacked")(`val`.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String | Null]
   
   inline def fromAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -70,7 +70,7 @@ object mod {
   inline def isHexStrict(hex: Hex): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexStrict")(hex.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInBloom(bloom: String, value: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -111,13 +111,15 @@ object mod {
   
   inline def sha3(value: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   inline def sha3(value: typings.bnJs.mod.^): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def sha3(value: Buffer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def sha3Raw(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def sha3Raw(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sha3Raw(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def soliditySha3(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def soliditySha3(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3")(`val`.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String | Null]
   
-  inline def soliditySha3Raw(`val`: Mixed*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3Raw")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def soliditySha3Raw(`val`: Mixed*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3Raw")(`val`.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def stringToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -140,6 +142,10 @@ object mod {
   inline def toHex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toHex(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toHex(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def toNumber(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toNumber(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toNumber(value: typings.bnJs.mod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def toTwosComplement(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toTwosComplement(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -182,7 +188,7 @@ object mod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
@@ -244,7 +250,7 @@ object mod {
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -254,7 +260,7 @@ object mod {
       
       inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
       
@@ -292,7 +298,7 @@ object mod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
@@ -309,6 +315,7 @@ object mod {
     - typings.web3Utils.web3UtilsStrings.constructor
     - typings.web3Utils.web3UtilsStrings.event
     - typings.web3Utils.web3UtilsStrings.fallback
+    - typings.web3Utils.web3UtilsStrings.receive
   */
   trait AbiType extends StObject
   object AbiType {
@@ -320,6 +327,8 @@ object mod {
     inline def fallback: typings.web3Utils.web3UtilsStrings.fallback = "fallback".asInstanceOf[typings.web3Utils.web3UtilsStrings.fallback]
     
     inline def function: typings.web3Utils.web3UtilsStrings.function = "function".asInstanceOf[typings.web3Utils.web3UtilsStrings.function]
+    
+    inline def receive: typings.web3Utils.web3UtilsStrings.receive = "receive".asInstanceOf[typings.web3Utils.web3UtilsStrings.receive]
   }
   
   type Hex = String | Double
@@ -640,7 +649,7 @@ object mod {
     def isHexStrict(hex: Hex): Boolean = js.native
     
     def isInBloom(bloom: String, value: String): Boolean = js.native
-    def isInBloom(bloom: String, value: Uint8Array): Boolean = js.native
+    def isInBloom(bloom: String, value: js.typedarray.Uint8Array): Boolean = js.native
     
     def isTopic(topic: String): Boolean = js.native
     
@@ -707,6 +716,10 @@ object mod {
     def toHex(value: String): String = js.native
     def toHex(value: Double): String = js.native
     def toHex(value: typings.bnJs.mod.^): String = js.native
+    
+    def toNumber(value: String): Double = js.native
+    def toNumber(value: Double): Double = js.native
+    def toNumber(value: typings.bnJs.mod.^): Double = js.native
     
     def toTwosComplement(value: String): String = js.native
     def toTwosComplement(value: Double): String = js.native

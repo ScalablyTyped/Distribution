@@ -144,7 +144,7 @@ object usersClientMod {
       
       inline def setAvatarsUndefined: Self = StObject.set(x, "avatars", js.undefined)
       
-      inline def setAvatarsVarargs(value: Avatar*): Self = StObject.set(x, "avatars", js.Array(value :_*))
+      inline def setAvatarsVarargs(value: Avatar*): Self = StObject.set(x, "avatars", js.Array(value*))
       
       inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
@@ -224,7 +224,7 @@ object usersClientMod {
       
       inline def setUsers(value: js.Array[User]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
 }

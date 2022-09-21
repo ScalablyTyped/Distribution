@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSMediaRule")
 @js.native
-/* private */ class HTMLCSSMediaRule ()
+/* private */ open class HTMLCSSMediaRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSMediaRule

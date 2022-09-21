@@ -18,6 +18,6 @@ object LowLevelDevicesController {
   /* static member */
   @JSGlobal("Windows.Devices.LowLevelDevicesController.defaultProvider")
   @js.native
-  def defaultProvider: js.Any = js.native
-  inline def defaultProvider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProvider")(x.asInstanceOf[js.Any])
+  def defaultProvider: Any = js.native
+  inline def defaultProvider_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProvider")(x.asInstanceOf[js.Any])
 }

@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.InstanceTreeAccess")
 @js.native
-class InstanceTreeAccess ()
+open class InstanceTreeAccess ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.InstanceTreeAccess {
   
   /* CompleteClass */
-  var children: js.Any = js.native
+  var children: Any = js.native
   
   /* CompleteClass */
-  var dbIdToIndex: js.Any = js.native
+  var dbIdToIndex: Any = js.native
   
   /* CompleteClass */
-  var nameSuffixes: js.Any = js.native
+  var nameSuffixes: Any = js.native
   
   /* CompleteClass */
-  var names: js.Any = js.native
+  var names: Any = js.native
   
   /* CompleteClass */
-  var nodeBoxes: js.Any = js.native
+  var nodeBoxes: Any = js.native
   
   /* CompleteClass */
-  var nodes: js.Any = js.native
+  var nodes: Any = js.native
   
   /* CompleteClass */
   var numNodes: Double = js.native

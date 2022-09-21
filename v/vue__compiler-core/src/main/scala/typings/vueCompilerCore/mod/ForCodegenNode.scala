@@ -29,12 +29,13 @@ object ForCodegenNode {
   inline def apply(
     children: ForRenderListExpression,
     disableTracking: Boolean,
+    isComponent: Boolean,
     loc: SourceLocation,
     patchFlag: String,
     props: Unit,
     tag: js.Symbol
   ): ForCodegenNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = true, loc = loc.asInstanceOf[js.Any], patchFlag = patchFlag.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = true, isComponent = isComponent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], patchFlag = patchFlag.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(13)
     __obj.asInstanceOf[ForCodegenNode]
   }

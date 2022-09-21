@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Children extends StObject {
   
-  var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var children: js.UndefOr[js.Array[Any]] = js.undefined
   
   var value: js.UndefOr[String | Double] = js.undefined
 }
@@ -19,11 +19,11 @@ object Children {
   
   extension [Self <: Children](x: Self) {
     
-    inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

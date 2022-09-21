@@ -108,7 +108,7 @@ object CalendarListEntry {
     
     inline def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
     
-    inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+    inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value*))
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

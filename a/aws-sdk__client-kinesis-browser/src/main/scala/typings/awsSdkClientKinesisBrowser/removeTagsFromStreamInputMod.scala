@@ -8,5 +8,5 @@ object removeTagsFromStreamInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/RemoveTagsFromStreamInput", "RemoveTagsFromStreamInput")
   @js.native
-  val RemoveTagsFromStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RemoveTagsFromStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

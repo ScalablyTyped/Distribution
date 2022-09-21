@@ -25,6 +25,6 @@ object NamedStylesSuggestionState {
     
     inline def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
     
-    inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
+    inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value*))
   }
 }

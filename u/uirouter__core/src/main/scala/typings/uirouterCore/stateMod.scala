@@ -22,14 +22,14 @@ object stateMod {
   
   @JSImport("@uirouter/core/lib/state", "StateBuilder")
   @js.native
-  class StateBuilder protected ()
+  open class StateBuilder protected ()
     extends typings.uirouterCore.stateBuilderMod.StateBuilder {
     def this(matcher: typings.uirouterCore.stateMatcherMod.StateMatcher, urlMatcherFactory: UrlMatcherFactory) = this()
   }
   
   @JSImport("@uirouter/core/lib/state", "StateMatcher")
   @js.native
-  class StateMatcher protected ()
+  open class StateMatcher protected ()
     extends typings.uirouterCore.stateMatcherMod.StateMatcher {
     def this(_states: StringDictionary[typings.uirouterCore.stateObjectMod.StateObject]) = this()
   }
@@ -37,7 +37,7 @@ object stateMod {
   @JSImport("@uirouter/core/lib/state", "StateObject")
   @js.native
   /** @deprecated use State.create() */
-  class StateObject ()
+  open class StateObject ()
     extends typings.uirouterCore.stateObjectMod.StateObject {
     def this(config: StateDeclaration) = this()
   }
@@ -59,18 +59,18 @@ object stateMod {
     inline def create(stateDecl: _StateDeclaration): typings.uirouterCore.stateObjectMod.StateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.stateObjectMod.StateObject]
     
     /** Predicate which returns true if the object is an internal [[StateObject]] object */
-    inline def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]
+    inline def isState(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]
     
     /** Predicate which returns true if the object is an class with @State() decorator */
     inline def isStateClass(stateDecl: _StateDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateClass")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Predicate which returns true if the object is a [[StateDeclaration]] object */
-    inline def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateDeclaration")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean]
+    inline def isStateDeclaration(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateDeclaration")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean]
   }
   
   @JSImport("@uirouter/core/lib/state", "StateQueueManager")
   @js.native
-  class StateQueueManager protected ()
+  open class StateQueueManager protected ()
     extends typings.uirouterCore.stateQueueManagerMod.StateQueueManager {
     def this(
       router: UIRouter,
@@ -82,7 +82,7 @@ object stateMod {
   
   @JSImport("@uirouter/core/lib/state", "StateRegistry")
   @js.native
-  class StateRegistry protected ()
+  open class StateRegistry protected ()
     extends typings.uirouterCore.stateRegistryMod.StateRegistry {
     /** @internal */
     def this(router: UIRouter) = this()
@@ -90,7 +90,7 @@ object stateMod {
   
   @JSImport("@uirouter/core/lib/state", "StateService")
   @js.native
-  class StateService protected ()
+  open class StateService protected ()
     extends typings.uirouterCore.stateServiceMod.StateService {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
@@ -98,7 +98,7 @@ object stateMod {
   
   @JSImport("@uirouter/core/lib/state", "TargetState")
   @js.native
-  class TargetState protected ()
+  open class TargetState protected ()
     extends typings.uirouterCore.targetStateMod.TargetState {
     /**
       * The TargetState constructor
@@ -141,7 +141,7 @@ object stateMod {
     val ^ : js.Any = js.native
     
     /** Returns true if the object has a state property that might be a state or state name */
-    inline def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
+    inline def isDef(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
   }
   
   inline def resolvablesBuilder(state: typings.uirouterCore.stateObjectMod.StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]

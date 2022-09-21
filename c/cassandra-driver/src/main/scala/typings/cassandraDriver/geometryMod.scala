@@ -1,6 +1,6 @@
 package typings.cassandraDriver
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object geometryMod {
     
     @JSImport("cassandra-driver/lib/geometry", "geometry.LineString")
     @js.native
-    class LineString protected () extends StObject {
+    open class LineString protected () extends StObject {
       def this(args: Point*) = this()
       
       def equals(other: LineString): Boolean = js.native
@@ -35,7 +35,7 @@ object geometryMod {
     
     @JSImport("cassandra-driver/lib/geometry", "geometry.Point")
     @js.native
-    class Point protected () extends StObject {
+    open class Point protected () extends StObject {
       def this(x: Double, y: Double) = this()
       
       def equals(other: Point): Boolean = js.native
@@ -59,7 +59,7 @@ object geometryMod {
     
     @JSImport("cassandra-driver/lib/geometry", "geometry.Polygon")
     @js.native
-    class Polygon protected () extends StObject {
+    open class Polygon protected () extends StObject {
       def this(args: Point*) = this()
       
       def equals(other: Polygon): Boolean = js.native

@@ -12,7 +12,7 @@ trait AddThingToBillingGroupRequest extends StObject {
   var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
   
   /**
-    * The name of the billing group.
+    * The name of the billing group.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
   var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
   

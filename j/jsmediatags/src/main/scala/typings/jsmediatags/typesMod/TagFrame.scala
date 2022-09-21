@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TagFrame extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var description: String
   
@@ -16,14 +16,14 @@ trait TagFrame extends StObject {
 }
 object TagFrame {
   
-  inline def apply(data: js.Any, description: String, id: String, size: Double): TagFrame = {
+  inline def apply(data: Any, description: String, id: String, size: Double): TagFrame = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFrame]
   }
   
   extension [Self <: TagFrame](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

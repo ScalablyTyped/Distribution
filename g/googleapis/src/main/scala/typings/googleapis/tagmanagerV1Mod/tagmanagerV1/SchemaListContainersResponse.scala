@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Containers Response.
-  */
 trait SchemaListContainersResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListContainersResponse {
     
     inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    inline def setContainersVarargs(value: SchemaContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: SchemaContainer*): Self = StObject.set(x, "containers", js.Array(value*))
   }
 }

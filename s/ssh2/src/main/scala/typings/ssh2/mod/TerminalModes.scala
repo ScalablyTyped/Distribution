@@ -1,15 +1,12 @@
 package typings.ssh2.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ssh2.ssh2Numbers.`0`
 import typings.ssh2.ssh2Numbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TerminalModes
-  extends StObject
-     with /* mode */ StringDictionary[js.UndefOr[Double]] {
+trait TerminalModes extends StObject {
   
   /** 7 bit mode. */
   var CS7: js.UndefOr[`0` | `1`] = js.undefined

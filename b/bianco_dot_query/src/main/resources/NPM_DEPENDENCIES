@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bianco.query" : "1.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bianco.query" : "1.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SharedWorkspace extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Connected: Boolean = js.native
   
@@ -46,7 +46,7 @@ trait SharedWorkspace extends StObject {
   /* private */ @JSName("Office.SharedWorkspace_typekey")
   var OfficeDotSharedWorkspace_typekey: SharedWorkspace = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Refresh(): Unit = js.native
   

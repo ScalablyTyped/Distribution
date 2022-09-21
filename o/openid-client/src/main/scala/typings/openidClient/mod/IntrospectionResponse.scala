@@ -1,14 +1,14 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openidClient.anon.X5tS256
+import typings.openidClient.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IntrospectionResponse
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var active: Boolean
   
@@ -16,7 +16,7 @@ trait IntrospectionResponse
   
   var client_id: js.UndefOr[String] = js.undefined
   
-  var cnf: js.UndefOr[X5tS256] = js.undefined
+  var cnf: js.UndefOr[Dictkey] = js.undefined
   
   var exp: js.UndefOr[Double] = js.undefined
   
@@ -26,9 +26,13 @@ trait IntrospectionResponse
   
   var jti: js.UndefOr[String] = js.undefined
   
+  var nbf: js.UndefOr[Double] = js.undefined
+  
   var scope: String
   
   var sid: js.UndefOr[String] = js.undefined
+  
+  var sub: js.UndefOr[String] = js.undefined
   
   var token_type: js.UndefOr[String] = js.undefined
   
@@ -49,13 +53,13 @@ object IntrospectionResponse {
     
     inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
     
-    inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
+    inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value*))
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    inline def setCnf(value: X5tS256): Self = StObject.set(x, "cnf", value.asInstanceOf[js.Any])
+    inline def setCnf(value: Dictkey): Self = StObject.set(x, "cnf", value.asInstanceOf[js.Any])
     
     inline def setCnfUndefined: Self = StObject.set(x, "cnf", js.undefined)
     
@@ -75,11 +79,19 @@ object IntrospectionResponse {
     
     inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
     
+    inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
+    
+    inline def setNbfUndefined: Self = StObject.set(x, "nbf", js.undefined)
+    
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     
     inline def setSidUndefined: Self = StObject.set(x, "sid", js.undefined)
+    
+    inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    
+    inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
     inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     

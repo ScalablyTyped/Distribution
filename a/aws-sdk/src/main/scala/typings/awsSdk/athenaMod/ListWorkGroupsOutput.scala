@@ -12,7 +12,7 @@ trait ListWorkGroupsOutput extends StObject {
   var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
-    * The list of workgroups, including their names, descriptions, creation times, and states.
+    * A list of WorkGroupSummary objects that include the names, descriptions, creation times, and states for each workgroup.
     */
   var WorkGroups: js.UndefOr[WorkGroupsList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListWorkGroupsOutput {
     
     inline def setWorkGroupsUndefined: Self = StObject.set(x, "WorkGroups", js.undefined)
     
-    inline def setWorkGroupsVarargs(value: WorkGroupSummary*): Self = StObject.set(x, "WorkGroups", js.Array(value :_*))
+    inline def setWorkGroupsVarargs(value: WorkGroupSummary*): Self = StObject.set(x, "WorkGroups", js.Array(value*))
   }
 }

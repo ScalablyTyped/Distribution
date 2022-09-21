@@ -45,6 +45,6 @@ object X64WordArray {
     
     inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

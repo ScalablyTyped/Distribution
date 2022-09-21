@@ -8,7 +8,6 @@ import typings.multiparty.multipartyStrings.progress
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +16,13 @@ object mod {
   
   @JSImport("multiparty", "Form")
   @js.native
-  class Form () extends EventEmitter {
+  open class Form () extends EventEmitter {
     def this(options: FormOptions) = this()
     
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_field(event: field, listener: js.Function2[/* name */ String, /* value */ String, Unit]): this.type = js.native
     @JSName("on")
@@ -43,7 +42,7 @@ object mod {
     def parse(request: IncomingMessage): Unit = js.native
     def parse(
       request: IncomingMessage,
-      callback: js.Function3[/* error */ Error, /* fields */ js.Any, /* files */ js.Any, js.Any]
+      callback: js.Function3[/* error */ js.Error, /* fields */ Any, /* files */ Any, Any]
     ): Unit = js.native
   }
   
@@ -57,7 +56,7 @@ object mod {
     /**
       * the HTTP headers that were sent along with this file
       */
-    var headers: js.Any
+    var headers: Any
     
     /**
       * the filename that the user reports for the file
@@ -76,7 +75,7 @@ object mod {
   }
   object File {
     
-    inline def apply(fieldName: String, headers: js.Any, originalFilename: String, path: String, size: Double): File = {
+    inline def apply(fieldName: String, headers: Any, originalFilename: String, path: String, size: Double): File = {
       val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], originalFilename = originalFilename.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
@@ -85,7 +84,7 @@ object mod {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
       
@@ -203,7 +202,7 @@ object mod {
     /**
       * the headers for this part. For example, you may be interested in content-type
       */
-    var headers: js.Any = js.native
+    var headers: Any = js.native
     
     /**
       * the field name for this part

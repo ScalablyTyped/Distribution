@@ -15,6 +15,8 @@ trait IDisconnectPacket
   var cmd_IDisconnectPacket: disconnect
   
   var properties: js.UndefOr[ServerReference] = js.undefined
+  
+  var reasonCode: js.UndefOr[Double] = js.undefined
 }
 object IDisconnectPacket {
   
@@ -30,5 +32,9 @@ object IDisconnectPacket {
     inline def setProperties(value: ServerReference): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
   }
 }

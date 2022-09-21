@@ -1,6 +1,6 @@
 package typings.websocket.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.netMod.Socket
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("websocket", "server")
 @js.native
-class server () extends EventEmitter {
+open class server () extends EventEmitter {
   def this(serverConfig: IServerConfig) = this()
   
   @JSName("addListener")

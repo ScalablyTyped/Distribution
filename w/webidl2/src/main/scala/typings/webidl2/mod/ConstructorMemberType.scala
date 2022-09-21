@@ -31,7 +31,7 @@ object ConstructorMemberType {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setParent(value: InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

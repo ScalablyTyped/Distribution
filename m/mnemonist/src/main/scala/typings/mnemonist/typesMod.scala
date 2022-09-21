@@ -1,25 +1,25 @@
 package typings.mnemonist
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mnemonist/utils/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
+  
+  type ArrayLike = IArrayLike | js.typedarray.ArrayBuffer
+  
   @js.native
-  trait IArrayLike extends js.Object {
+  trait IArrayLike extends StObject {
+    
     var length: Double = js.native
+    
     def slice(from: Double): IArrayLike = js.native
     def slice(from: Double, to: Double): IArrayLike = js.native
   }
   
   @js.native
   trait IArrayLikeConstructor
-    extends Instantiable1[/* args (repeated) */ js.Any, ArrayLike]
-  
-  type ArrayLike = IArrayLike | ArrayBuffer
+    extends StObject
+       with Instantiable1[/* args (repeated) */ Any, ArrayLike]
 }
-

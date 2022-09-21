@@ -10,15 +10,12 @@ ES6 Harmony like collections such Map, WeakMap, and Set
 | ------------------ | :-------------: |
 | Full name          | es6-collections |
 | Keywords           | WeakMap, Map, Set, shim, polyfill, ES6, Harmony |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 506616 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25642.666666666668 |
+| # stars            | 257.0 |
 
 ## Links
-- [Homepage](https://github.com/WebReflection/es6-collections)
-- [Bugs](https://github.com/WebReflection/es6-collections/issues)
-- [Repository](https://github.com/WebReflection/es6-collections)
 - [Npm](https://www.npmjs.com/package/es6-collections)
     
 

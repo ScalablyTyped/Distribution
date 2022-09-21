@@ -483,7 +483,7 @@ object Transfer {
       
       inline def setSpaces(value: js.Array[Space]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+      inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value*))
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -538,13 +538,13 @@ object Transfer {
       
       inline def setAlters(value: js.Array[Alter]): Self = StObject.set(x, "alters", value.asInstanceOf[js.Any])
       
-      inline def setAltersVarargs(value: Alter*): Self = StObject.set(x, "alters", js.Array(value :_*))
+      inline def setAltersVarargs(value: Alter*): Self = StObject.set(x, "alters", js.Array(value*))
       
       inline def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
       
       inline def setVia_stops(value: js.Array[ViaStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
       
-      inline def setVia_stopsVarargs(value: ViaStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+      inline def setVia_stopsVarargs(value: ViaStop*): Self = StObject.set(x, "via_stops", js.Array(value*))
     }
   }
   
@@ -722,7 +722,7 @@ object Transfer {
       
       inline def setPlans(value: js.Array[TransferPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
       
-      inline def setPlansVarargs(value: TransferPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+      inline def setPlansVarargs(value: TransferPlan*): Self = StObject.set(x, "plans", js.Array(value*))
       
       inline def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
     }
@@ -893,7 +893,7 @@ object Transfer {
       
       inline def setType(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: scala.Nothing*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: scala.Nothing*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -1129,13 +1129,13 @@ object Transfer {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRailway_distance(value: Double): Self = StObject.set(x, "railway_distance", value.asInstanceOf[js.Any])
       
       inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setTaxi_distance(value: Double): Self = StObject.set(x, "taxi_distance", value.asInstanceOf[js.Any])
       
@@ -1215,7 +1215,7 @@ object Transfer {
       
       inline def setLines(value: js.Array[TransitLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setLinesVarargs(value: TransitLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: TransitLine*): Self = StObject.set(x, "lines", js.Array(value*))
       
       inline def setOff_station(value: Stop): Self = StObject.set(x, "off_station", value.asInstanceOf[js.Any])
       
@@ -1223,13 +1223,13 @@ object Transfer {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
       
       inline def setVia_stops(value: js.Array[Stop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
       
-      inline def setVia_stopsVarargs(value: Stop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+      inline def setVia_stopsVarargs(value: Stop*): Self = StObject.set(x, "via_stops", js.Array(value*))
     }
   }
   
@@ -1278,7 +1278,7 @@ object Transfer {
       
       inline def setEtime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
       
-      inline def setEtimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "etime", js.Array(value :_*))
+      inline def setEtimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "etime", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1286,7 @@ object Transfer {
       
       inline def setStime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
       
-      inline def setStimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "stime", js.Array(value :_*))
+      inline def setStimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "stime", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -1415,11 +1415,11 @@ object Transfer {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setSteps(value: js.Array[WalkStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: WalkStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: WalkStep*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
@@ -1517,7 +1517,7 @@ object Transfer {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       

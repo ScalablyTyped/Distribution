@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "ImageBase")
 @js.native
-class ImageBase protected () extends EventTarget {
+open class ImageBase protected () extends EventTarget {
   /**
     * @param extent Extent.
     * @param resolution Resolution.

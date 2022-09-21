@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Seamless {
   
-  type Callback = js.Function2[/* data */ js.Any, /* event */ js.Any, js.Any | Boolean | Unit]
+  type Callback = js.Function2[/* data */ Any, /* event */ Any, Any | Boolean | Unit]
   
   trait ConnectOptions extends StObject {
     
@@ -50,13 +50,13 @@ object Seamless {
       *  Called when the parent connects to this iframe.
       *  @default null
       */
-    var onConnect: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+    var onConnect: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
     
     /**
       *  Callback that is called when an update is triggered to the parent.
       *  @default null
       */
-    var onUpdate: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+    var onUpdate: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
     
     /**
       * If the child page requires cookies (See Child iFrame Cookie Problem section)
@@ -109,11 +109,11 @@ object Seamless {
       
       inline def setCookieFallbackMsgUndefined: Self = StObject.set(x, "cookieFallbackMsg", js.undefined)
       
-      inline def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* data */ Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      inline def setOnUpdate(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* data */ Any => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
       inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
@@ -138,12 +138,12 @@ object Seamless {
     
     var id: Double = js.native
     
-    var queue: js.Array[js.Any] = js.native
+    var queue: js.Array[Any] = js.native
     
     def receive(callback: Callback): Unit = js.native
     def receive(`type`: String, callback: Callback): Unit = js.native
     
-    def send(data: js.Any): Unit = js.native
+    def send(data: Any): Unit = js.native
     
     def setActive(active: Boolean): Unit = js.native
     
@@ -224,7 +224,7 @@ object Seamless {
       * Called when a child iframe has finished connecting.
       * @default null
       */
-    var onConnect: js.UndefOr[(js.Function1[/* data */ js.Any, Unit]) | Null] = js.undefined
+    var onConnect: js.UndefOr[(js.Function1[/* data */ Any, Unit]) | Null] = js.undefined
     
     /**
       * Show or not the loading indicator.
@@ -263,13 +263,13 @@ object Seamless {
       
       inline def setFallbackLinkHoverStylesUndefined: Self = StObject.set(x, "fallbackLinkHoverStyles", js.undefined)
       
-      inline def setFallbackLinkHoverStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkHoverStyles", js.Array(value :_*))
+      inline def setFallbackLinkHoverStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkHoverStyles", js.Array(value*))
       
       inline def setFallbackLinkStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackLinkStyles", value.asInstanceOf[js.Any])
       
       inline def setFallbackLinkStylesUndefined: Self = StObject.set(x, "fallbackLinkStyles", js.undefined)
       
-      inline def setFallbackLinkStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkStyles", js.Array(value :_*))
+      inline def setFallbackLinkStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkStyles", js.Array(value*))
       
       inline def setFallbackLinkText(value: String): Self = StObject.set(x, "fallbackLinkText", value.asInstanceOf[js.Any])
       
@@ -283,7 +283,7 @@ object Seamless {
       
       inline def setFallbackStylesUndefined: Self = StObject.set(x, "fallbackStyles", js.undefined)
       
-      inline def setFallbackStylesVarargs(value: String*): Self = StObject.set(x, "fallbackStyles", js.Array(value :_*))
+      inline def setFallbackStylesVarargs(value: String*): Self = StObject.set(x, "fallbackStyles", js.Array(value*))
       
       inline def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
       
@@ -303,7 +303,7 @@ object Seamless {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* data */ Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
       inline def setOnConnectNull: Self = StObject.set(x, "onConnect", null)
       
@@ -321,7 +321,7 @@ object Seamless {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   
@@ -335,15 +335,15 @@ object Seamless {
     def receive(callback: Callback): Unit = js.native
     def receive(`type`: String, callback: Callback): Unit = js.native
     
-    def seamless_error(data: js.Any, event: js.Any): Unit = js.native
+    def seamless_error(data: Any, event: Any): Unit = js.native
     
     var seamless_options: Options = js.native
     
-    def seamless_ready(data: js.Any, event: js.Any): Unit = js.native
+    def seamless_ready(data: Any, event: Any): Unit = js.native
     
-    def seamless_update(data: js.Any, event: js.Any): js.Any = js.native
+    def seamless_update(data: Any, event: Any): Any = js.native
     
-    def send(data: js.Any): Unit = js.native
+    def send(data: Any): Unit = js.native
   }
   
   trait Static extends StObject {

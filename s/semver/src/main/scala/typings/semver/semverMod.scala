@@ -1,6 +1,7 @@
 package typings.semver
 
 import typings.semver.mod.Options
+import typings.semver.mod.RangeOptions
 import typings.semver.mod.ReleaseType
 import typings.semver.semverNumbers.`-1`
 import typings.semver.semverNumbers.`0`
@@ -13,15 +14,15 @@ object semverMod {
   
   @JSImport("semver/classes/semver", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SemVer {
     def this(version: String) = this()
     def this(version: SemVer) = this()
     def this(version: String, optionsOrLoose: Boolean) = this()
-    def this(version: String, optionsOrLoose: Options) = this()
+    def this(version: String, optionsOrLoose: RangeOptions) = this()
     def this(version: SemVer, optionsOrLoose: Boolean) = this()
-    def this(version: SemVer, optionsOrLoose: Options) = this()
+    def this(version: SemVer, optionsOrLoose: RangeOptions) = this()
   }
   
   @js.native

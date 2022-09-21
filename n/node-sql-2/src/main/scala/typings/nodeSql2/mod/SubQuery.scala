@@ -12,15 +12,15 @@ trait SubQuery[T] extends StObject {
   def from(statement: String): SubQuery[T] = js.native
   def from(table: TableNode): SubQuery[T] = js.native
   
-  def group(nodes: js.Any*): SubQuery[T] = js.native
+  def group(nodes: Any*): SubQuery[T] = js.native
   
   def notExists(): BinaryNode = js.native
-  def notExists(subQuery: SubQuery[js.Any]): BinaryNode = js.native
+  def notExists(subQuery: SubQuery[Any]): BinaryNode = js.native
   
   def order(criteria: OrderByValueNode): SubQuery[T] = js.native
   
-  def select(nodes: js.Any*): SubQuery[T] = js.native
+  def select(nodes: Any*): SubQuery[T] = js.native
   def select[Name](node: Column[Name, T]): SubQuery[T] = js.native
   
-  def where(nodes: js.Any*): SubQuery[T] = js.native
+  def where(nodes: Any*): SubQuery[T] = js.native
 }

@@ -10,12 +10,10 @@ object mediaLeftMod {
   
   @JSImport("react-bootstrap/lib/MediaLeft", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[MediaLeftProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[MediaLeftProps, js.Object, Any]
   
-  @js.native
-  trait MediaLeft
-    extends Component[MediaLeftProps, js.Object, js.Any]
+  type MediaLeft = Component[MediaLeftProps, js.Object, Any]
   
   trait MediaLeftProps
     extends StObject

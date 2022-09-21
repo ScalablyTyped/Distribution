@@ -29,7 +29,7 @@ object accordionSkeletonMod extends Shortcut {
     /**
       * @deprecated
       */
-    var uid: js.UndefOr[js.Any] = js.undefined
+    var uid: js.UndefOr[Any] = js.undefined
   }
   object AccordionSkeletonProps {
     
@@ -52,7 +52,7 @@ object accordionSkeletonMod extends Shortcut {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setUid(value: js.Any): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Any): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
       inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }

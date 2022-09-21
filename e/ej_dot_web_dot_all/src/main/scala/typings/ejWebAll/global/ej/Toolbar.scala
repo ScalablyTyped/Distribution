@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Toolbar")
 @js.native
-class Toolbar protected ()
+open class Toolbar protected ()
   extends StObject
      with typings.ejWebAll.ej.Toolbar {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Toolbar {
   /* static member */
   @JSGlobal("ej.Toolbar.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Toolbar.ResponsiveType")
   @js.native

@@ -13,10 +13,9 @@ trait SchemaTargetPoolsScopedList extends StObject {
   var targetPools: js.UndefOr[js.Array[SchemaTargetPool]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of addresses when the list
-    * is empty.
+    * Informational warning which replaces the list of addresses when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaTargetPoolsScopedList {
   
@@ -31,9 +30,11 @@ object SchemaTargetPoolsScopedList {
     
     inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    inline def setTargetPoolsVarargs(value: SchemaTargetPool*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: SchemaTargetPool*): Self = StObject.set(x, "targetPools", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

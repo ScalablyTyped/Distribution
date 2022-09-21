@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateReturnShippingLabelResult extends StObject {
   
   /**
-    * The status information of the task on a Snow device that is being returned to AWS.
+    * The status information of the task on a Snow device that is being returned to Amazon Web Services.
     */
   var Status: js.UndefOr[ShippingLabelStatus] = js.undefined
 }

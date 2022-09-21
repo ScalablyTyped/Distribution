@@ -10,5 +10,6 @@ trait FocusEvent
   extends StObject
      with UIEvent {
   
+  /* standard dom */
   val relatedTarget: EventTarget | Null = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("procfs-stats", "StatStatic")
 @js.native
-class StatStatic () extends StObject {
+open class StatStatic () extends StObject {
   
   def argv(callback: Callback[js.Array[String]]): scala.Nothing = js.native
   

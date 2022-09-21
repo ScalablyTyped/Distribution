@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("react-flags-select", JSImport.Default)
   @js.native
-  class default () extends ReactFlagsSelect
+  open class default () extends ReactFlagsSelect
   
   trait Props extends StObject {
     
@@ -67,7 +67,7 @@ object mod {
       
       inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
       
       inline def setCustomLabels(value: StringDictionary[String]): Self = StObject.set(x, "customLabels", value.asInstanceOf[js.Any])
       
@@ -113,7 +113,7 @@ object mod {
   
   @js.native
   trait ReactFlagsSelect
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
     def updateSelected(countryCode: String): Unit = js.native
   }

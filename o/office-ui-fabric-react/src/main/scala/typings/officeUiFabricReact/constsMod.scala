@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object constsMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/color/consts", "HEX_REGEX")
   @js.native
-  val HEX_REGEX: RegExp = js.native
+  val HEX_REGEX: js.RegExp = js.native
   
   @JSImport("office-ui-fabric-react/lib/utilities/color/consts", "MAX_COLOR_ALPHA")
   @js.native
@@ -53,5 +52,5 @@ object constsMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/color/consts", "RGBA_REGEX")
   @js.native
-  val RGBA_REGEX: RegExp = js.native
+  val RGBA_REGEX: js.RegExp = js.native
 }

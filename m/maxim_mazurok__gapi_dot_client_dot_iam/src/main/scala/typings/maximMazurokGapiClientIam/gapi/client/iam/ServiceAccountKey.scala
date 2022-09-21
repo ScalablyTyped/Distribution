@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServiceAccountKey extends StObject {
   
+  /** The key status. */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
   /** Specifies the algorithm (and possibly key size) for the key. */
   var keyAlgorithm: js.UndefOr[String] = js.undefined
   
@@ -50,6 +53,10 @@ object ServiceAccountKey {
   }
   
   extension [Self <: ServiceAccountKey](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     

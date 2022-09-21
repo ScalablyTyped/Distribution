@@ -11,6 +11,9 @@ trait AadUserConversationMember
   // The email address of the user.
   var email: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // TenantId which the Azure AD user belongs to.
+  var tenantId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var user: js.UndefOr[NullableOption[User]] = js.undefined
   
   // The guid of the user.
@@ -30,6 +33,12 @@ object AadUserConversationMember {
     inline def setEmailNull: Self = StObject.set(x, "email", null)
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    
+    inline def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
+    
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     inline def setUser(value: NullableOption[User]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

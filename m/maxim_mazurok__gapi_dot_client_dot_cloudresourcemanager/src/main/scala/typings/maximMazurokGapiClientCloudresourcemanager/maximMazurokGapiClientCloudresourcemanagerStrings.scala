@@ -11,14 +11,22 @@ object maximMazurokGapiClientCloudresourcemanagerStrings {
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
+  sealed trait Project extends StObject
+  inline def Project: Project = "Project".asInstanceOf[Project]
+  
+  @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
+  sealed trait TagKey extends StObject
+  inline def TagKey: TagKey = "TagKey".asInstanceOf[TagKey]
   
   @js.native
   sealed trait cloudresourcemanager extends StObject
   inline def cloudresourcemanager: cloudresourcemanager = "cloudresourcemanager".asInstanceOf[cloudresourcemanager]
   
   @js.native
-  sealed trait v2 extends StObject
-  inline def v2: v2 = "v2".asInstanceOf[v2]
+  sealed trait v3 extends StObject
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

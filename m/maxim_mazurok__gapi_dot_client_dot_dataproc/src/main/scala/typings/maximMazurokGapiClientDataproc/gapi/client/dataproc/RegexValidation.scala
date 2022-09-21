@@ -22,6 +22,6 @@ object RegexValidation {
     
     inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value*))
   }
 }

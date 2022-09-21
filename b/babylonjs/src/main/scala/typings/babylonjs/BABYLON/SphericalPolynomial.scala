@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SphericalPolynomial extends StObject {
   
-  /* private */ var _harmonics: js.Any = js.native
+  /* private */ var _harmonics: Any = js.native
   
   /**
     * Adds an ambient color to the spherical polynomial
@@ -25,6 +25,13 @@ trait SphericalPolynomial extends StObject {
     * @param scale the amount to scale
     */
   def scaleInPlace(scale: Double): Unit = js.native
+  
+  /**
+    * Updates the spherical polynomial from harmonics
+    * @param harmonics the spherical harmonics
+    * @returns the spherical polynomial
+    */
+  def updateFromHarmonics(harmonics: SphericalHarmonics): SphericalPolynomial = js.native
   
   /**
     * The x coefficients of the spherical polynomial

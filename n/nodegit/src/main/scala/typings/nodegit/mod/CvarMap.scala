@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CvarMap")
 @js.native
-class CvarMap ()
+open class CvarMap ()
   extends typings.nodegit.cvarMapMod.CvarMap

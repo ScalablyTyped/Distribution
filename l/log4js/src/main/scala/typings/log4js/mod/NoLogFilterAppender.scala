@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NoLogFilterAppender
-  extends StObject
-     with Appender {
+trait NoLogFilterAppender extends StObject {
   
   // the name of an appender, defined in the same configuration, that you want to filter.
   var appender: String
@@ -33,7 +31,7 @@ object NoLogFilterAppender {
     
     inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setType(value: noLogFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

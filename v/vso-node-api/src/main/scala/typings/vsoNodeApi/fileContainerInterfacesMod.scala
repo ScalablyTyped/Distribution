@@ -1,6 +1,5 @@
 package typings.vsoNodeApi
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.EnumValuesAny
 import typings.vsoNodeApi.anon.EnumValuesCreated
 import typings.vsoNodeApi.anon.EnumValuesNone
@@ -117,14 +116,14 @@ object fileContainerInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.FileContainer")
     @js.native
-    def FileContainer: js.Any = js.native
+    def FileContainer: Any = js.native
     
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.FileContainerItem")
     @js.native
-    def FileContainerItem: js.Any = js.native
-    inline def FileContainerItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainerItem")(x.asInstanceOf[js.Any])
+    def FileContainerItem: Any = js.native
+    inline def FileContainerItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainerItem")(x.asInstanceOf[js.Any])
     
-    inline def FileContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainer")(x.asInstanceOf[js.Any])
+    inline def FileContainer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainer")(x.asInstanceOf[js.Any])
   }
   
   trait FileContainer extends StObject {
@@ -147,7 +146,7 @@ object fileContainerInterfacesMod {
     /**
       * Creation date.
       */
-    var dateCreated: Date
+    var dateCreated: js.Date
     
     /**
       * Description.
@@ -205,7 +204,7 @@ object fileContainerInterfacesMod {
       artifactUri: String,
       contentLocation: String,
       createdBy: String,
-      dateCreated: Date,
+      dateCreated: js.Date,
       description: String,
       id: Double,
       itemLocation: String,
@@ -229,7 +228,7 @@ object fileContainerInterfacesMod {
       
       inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: js.Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -275,12 +274,12 @@ object fileContainerInterfacesMod {
     /**
       * Creation date.
       */
-    var dateCreated: Date
+    var dateCreated: js.Date
     
     /**
       * Last modified date.
       */
-    var dateLastModified: Date
+    var dateLastModified: js.Date
     
     /**
       * Encoding of the file. Zero if not a file.
@@ -346,8 +345,8 @@ object fileContainerInterfacesMod {
       contentId: js.Array[Double],
       contentLocation: String,
       createdBy: String,
-      dateCreated: Date,
-      dateLastModified: Date,
+      dateCreated: js.Date,
+      dateLastModified: js.Date,
       fileEncoding: Double,
       fileHash: js.Array[Double],
       fileId: Double,
@@ -371,21 +370,21 @@ object fileContainerInterfacesMod {
       
       inline def setContentId(value: js.Array[Double]): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
-      inline def setContentIdVarargs(value: Double*): Self = StObject.set(x, "contentId", js.Array(value :_*))
+      inline def setContentIdVarargs(value: Double*): Self = StObject.set(x, "contentId", js.Array(value*))
       
       inline def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
       
       inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: js.Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      inline def setDateLastModified(value: Date): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
+      inline def setDateLastModified(value: js.Date): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
       
       inline def setFileEncoding(value: Double): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
       
       inline def setFileHash(value: js.Array[Double]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
       
-      inline def setFileHashVarargs(value: Double*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+      inline def setFileHashVarargs(value: Double*): Self = StObject.set(x, "fileHash", js.Array(value*))
       
       inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       

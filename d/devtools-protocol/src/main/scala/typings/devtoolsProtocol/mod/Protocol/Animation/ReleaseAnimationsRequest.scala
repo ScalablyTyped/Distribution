@@ -22,6 +22,6 @@ object ReleaseAnimationsRequest {
     
     inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value*))
   }
 }

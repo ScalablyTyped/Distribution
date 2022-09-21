@@ -1,7 +1,5 @@
 package typings.yadda
 
-import typings.std.Error
-import typings.std.RegExp
 import typings.yadda.contextMod.Properties
 import typings.yadda.yaddaStrings.__ON_DEFINE__
 import typings.yadda.yaddaStrings.__ON_EXECUTE__
@@ -19,10 +17,10 @@ object eventBusMod {
   
   @JSImport("yadda/lib/EventBus", "EventBus")
   @js.native
-  class EventBus () extends StObject {
+  open class EventBus () extends StObject {
     
     def on(
-      event_pattern: RegExp,
+      event_pattern: js.RegExp,
       callback: js.Function1[/* event */ ScenarioEvent | StepEvent | ExecuteEvent | DefineEvent, Unit]
     ): this.type = js.native
     @JSName("on")
@@ -40,7 +38,7 @@ object eventBusMod {
     def send_ONDEFINE(
       event_name: __ON_DEFINE__,
       event_data: DefineEvent,
-      next: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      next: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     @JSName("send")
     def send_ONEXECUTE(event_name: __ON_EXECUTE__, event_data: ExecuteEvent): Unit = js.native
@@ -48,7 +46,7 @@ object eventBusMod {
     def send_ONEXECUTE(
       event_name: __ON_EXECUTE__,
       event_data: ExecuteEvent,
-      next: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      next: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     @JSName("send")
     def send_ONSCENARIO(event_name: __ON_SCENARIO__, event_data: ScenarioEventData): Unit = js.native
@@ -56,7 +54,7 @@ object eventBusMod {
     def send_ONSCENARIO(
       event_name: __ON_SCENARIO__,
       event_data: ScenarioEventData,
-      next: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      next: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     @JSName("send")
     def send_ONSTEP(event_name: __ON_STEP__, event_data: StepEvent): Unit = js.native
@@ -64,7 +62,7 @@ object eventBusMod {
     def send_ONSTEP(
       event_name: __ON_STEP__,
       event_data: StepEvent,
-      next: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      next: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
   }
   
@@ -170,7 +168,7 @@ object eventBusMod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
@@ -220,7 +218,7 @@ object eventBusMod {
       
       inline def setScenario(value: js.Array[String]): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
-      inline def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value :_*))
+      inline def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value*))
     }
   }
   

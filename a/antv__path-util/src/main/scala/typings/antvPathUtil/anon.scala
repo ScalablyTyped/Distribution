@@ -8,7 +8,7 @@ object anon {
   
   trait ArcFlag extends StObject {
     
-    var arcFlag: js.Any
+    var arcFlag: Any
     
     var cx: Double
     
@@ -16,27 +16,27 @@ object anon {
     
     var endAngle: Double
     
-    var rx: js.Any
+    var rx: Any
     
-    var ry: js.Any
+    var ry: Any
     
     var startAngle: Double
     
-    var sweepFlag: js.Any
+    var sweepFlag: Any
     
     var xRotation: Double
   }
   object ArcFlag {
     
     inline def apply(
-      arcFlag: js.Any,
+      arcFlag: Any,
       cx: Double,
       cy: Double,
       endAngle: Double,
-      rx: js.Any,
-      ry: js.Any,
+      rx: Any,
+      ry: Any,
       startAngle: Double,
-      sweepFlag: js.Any,
+      sweepFlag: Any,
       xRotation: Double
     ): ArcFlag = {
       val __obj = js.Dynamic.literal(arcFlag = arcFlag.asInstanceOf[js.Any], cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], sweepFlag = sweepFlag.asInstanceOf[js.Any], xRotation = xRotation.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object anon {
     
     extension [Self <: ArcFlag](x: Self) {
       
-      inline def setArcFlag(value: js.Any): Self = StObject.set(x, "arcFlag", value.asInstanceOf[js.Any])
+      inline def setArcFlag(value: Any): Self = StObject.set(x, "arcFlag", value.asInstanceOf[js.Any])
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -53,13 +53,13 @@ object anon {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      inline def setRx(value: js.Any): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: Any): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      inline def setRy(value: js.Any): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: Any): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
       inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      inline def setSweepFlag(value: js.Any): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
+      inline def setSweepFlag(value: Any): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
       
       inline def setXRotation(value: Double): Self = StObject.set(x, "xRotation", value.asInstanceOf[js.Any])
     }

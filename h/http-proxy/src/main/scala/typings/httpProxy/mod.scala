@@ -7,18 +7,18 @@ import typings.httpProxy.httpProxyStrings.close
 import typings.httpProxy.httpProxyStrings.econnreset
 import typings.httpProxy.httpProxyStrings.end
 import typings.httpProxy.httpProxyStrings.error
+import typings.httpProxy.httpProxyStrings.open
 import typings.httpProxy.httpProxyStrings.proxyReq
 import typings.httpProxy.httpProxyStrings.proxyReqWs
 import typings.httpProxy.httpProxyStrings.proxyRes
 import typings.httpProxy.httpProxyStrings.start
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ object mod {
     * Creates the proxy server with specified options.
     * @param options - Config object passed to the proxy
     */
-  class ^ () extends Server {
+  open class ^ () extends Server {
     def this(options: ServerOptions) = this()
   }
   @JSImport("http-proxy", JSImport.Namespace)
@@ -65,11 +65,54 @@ object mod {
   inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
   inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  type ErrorCallback = js.Function4[
-    /* err */ Error, 
-    /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+  type CloseCallback[TIncomingMessage] = js.Function3[/* proxyRes */ TIncomingMessage, /* proxySocket */ Socket, /* proxyHead */ Any, Unit]
+  
+  type EconnresetCallback[TError, TIncomingMessage, TServerResponse] = js.Function4[
+    /* err */ TError, 
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse, 
+    /* target */ ProxyTargetUrl, 
+    Unit
+  ]
+  
+  type EndCallback[TIncomingMessage, TServerResponse] = js.Function3[
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse, 
+    /* proxyRes */ TIncomingMessage, 
+    Unit
+  ]
+  
+  type ErrorCallback[TError, TIncomingMessage, TServerResponse] = js.Function4[
+    /* err */ TError, 
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse | Socket, 
     /* target */ js.UndefOr[ProxyTargetUrl], 
+    Unit
+  ]
+  
+  type OpenCallback = js.Function1[/* proxySocket */ Socket, Unit]
+  
+  type ProxyReqCallback[TClientRequest, TIncomingMessage, TServerResponse] = js.Function4[
+    /* proxyReq */ TClientRequest, 
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse, 
+    /* options */ ServerOptions, 
+    Unit
+  ]
+  
+  type ProxyReqWsCallback[TClientRequest, TIncomingMessage] = js.Function5[
+    /* proxyReq */ TClientRequest, 
+    /* req */ TIncomingMessage, 
+    /* socket */ Socket, 
+    /* options */ ServerOptions, 
+    /* head */ Any, 
+    Unit
+  ]
+  
+  type ProxyResCallback[TIncomingMessage, TServerResponse] = js.Function3[
+    /* proxyRes */ TIncomingMessage, 
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse, 
     Unit
   ]
   
@@ -177,73 +220,55 @@ object mod {
     
     def on(event: String, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_close(
-      event: close,
-      listener: js.Function3[/* proxyRes */ IncomingMessage, /* proxySocket */ Socket, /* proxyHead */ js.Any, Unit]
-    ): this.type = js.native
+    def on_close(event: close, listener: CloseCallback[IncomingMessage]): this.type = js.native
     @JSName("on")
     def on_econnreset(
       event: econnreset,
-      listener: js.Function4[
-          /* err */ Error, 
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          /* target */ ProxyTargetUrl, 
-          Unit
-        ]
+      listener: EconnresetCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
     ): this.type = js.native
     @JSName("on")
-    def on_end(
-      event: end,
-      listener: js.Function3[
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          /* proxyRes */ IncomingMessage, 
-          Unit
-        ]
-    ): this.type = js.native
+    def on_end(event: end, listener: EndCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: ErrorCallback): this.type = js.native
+    def on_error(event: error, listener: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    @JSName("on")
+    def on_open(event: open, listener: OpenCallback): this.type = js.native
     @JSName("on")
     def on_proxyReq(
       event: proxyReq,
-      listener: js.Function4[
-          /* proxyReq */ ClientRequest, 
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          /* options */ ServerOptions, 
-          Unit
-        ]
+      listener: ProxyReqCallback[ClientRequest, IncomingMessage, ServerResponse[IncomingMessage]]
     ): this.type = js.native
     @JSName("on")
-    def on_proxyReqWs(
-      event: proxyReqWs,
-      listener: js.Function5[
-          /* proxyReq */ ClientRequest, 
-          /* req */ IncomingMessage, 
-          /* socket */ Socket, 
-          /* options */ ServerOptions, 
-          /* head */ js.Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def on_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, IncomingMessage]): this.type = js.native
     @JSName("on")
-    def on_proxyRes(
-      event: proxyRes,
-      listener: js.Function3[
-          /* proxyRes */ IncomingMessage, 
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          Unit
-        ]
-    ): this.type = js.native
+    def on_proxyRes(event: proxyRes, listener: ProxyResCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
     @JSName("on")
-    def on_start(
-      event: start,
-      listener: js.Function3[/* req */ IncomingMessage, /* res */ ServerResponse, /* target */ ProxyTargetUrl, Unit]
-    ): this.type = js.native
+    def on_start(event: start, listener: StartCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
     
     def once(event: String, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_close(event: close, listener: CloseCallback[IncomingMessage]): this.type = js.native
+    @JSName("once")
+    def once_econnreset(
+      event: econnreset,
+      listener: EconnresetCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
+    ): this.type = js.native
+    @JSName("once")
+    def once_end(event: end, listener: EndCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    @JSName("once")
+    def once_error(event: error, listener: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    @JSName("once")
+    def once_open(event: open, listener: OpenCallback): this.type = js.native
+    @JSName("once")
+    def once_proxyReq(
+      event: proxyReq,
+      listener: ProxyReqCallback[ClientRequest, IncomingMessage, ServerResponse[IncomingMessage]]
+    ): this.type = js.native
+    @JSName("once")
+    def once_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, IncomingMessage]): this.type = js.native
+    @JSName("once")
+    def once_proxyRes(event: proxyRes, listener: ProxyResCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    @JSName("once")
+    def once_start(event: start, listener: StartCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
     
     def removeListener(event: String, listener: js.Function0[Unit]): this.type = js.native
     
@@ -251,12 +276,22 @@ object mod {
       * Used for proxying regular HTTP(S) requests
       * @param req - Client request.
       * @param res - Client response.
-      * @param options - Additionnal options.
+      * @param options - Additional options.
       */
-    def web(req: IncomingMessage, res: ServerResponse): Unit = js.native
-    def web(req: IncomingMessage, res: ServerResponse, options: Unit, callback: ErrorCallback): Unit = js.native
-    def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions): Unit = js.native
-    def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions, callback: ErrorCallback): Unit = js.native
+    def web(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = js.native
+    def web(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      options: Unit,
+      callback: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
+    ): Unit = js.native
+    def web(req: IncomingMessage, res: ServerResponse[IncomingMessage], options: ServerOptions): Unit = js.native
+    def web(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      options: ServerOptions,
+      callback: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
+    ): Unit = js.native
     
     /**
       * Used for proxying regular HTTP(S) requests
@@ -265,22 +300,28 @@ object mod {
       * @param head - Client head.
       * @param options - Additionnal options.
       */
-    def ws(req: IncomingMessage, socket: js.Any, head: js.Any): Unit = js.native
-    def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: Unit, callback: ErrorCallback): Unit = js.native
-    def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: ServerOptions): Unit = js.native
+    def ws(req: IncomingMessage, socket: Any, head: Any): Unit = js.native
     def ws(
       req: IncomingMessage,
-      socket: js.Any,
-      head: js.Any,
+      socket: Any,
+      head: Any,
+      options: Unit,
+      callback: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
+    ): Unit = js.native
+    def ws(req: IncomingMessage, socket: Any, head: Any, options: ServerOptions): Unit = js.native
+    def ws(
+      req: IncomingMessage,
+      socket: Any,
+      head: Any,
       options: ServerOptions,
-      callback: ErrorCallback
+      callback: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
     ): Unit = js.native
   }
   
   trait ServerOptions extends StObject {
     
     /** Object to be passed to http(s).request. */
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     /** Basic authentication i.e. 'user:password' to compute an Authorization header. */
     var auth: js.UndefOr[String] = js.undefined
@@ -337,7 +378,7 @@ object mod {
     var selfHandleResponse: js.UndefOr[Boolean] = js.undefined
     
     /** Object to be passed to https.createServer(). */
-    var ssl: js.UndefOr[js.Any] = js.undefined
+    var ssl: js.UndefOr[Any] = js.undefined
     
     /** URL string to be parsed with the url module. */
     var target: js.UndefOr[ProxyTarget] = js.undefined
@@ -363,7 +404,7 @@ object mod {
     
     extension [Self <: ServerOptions](x: Self) {
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
@@ -439,7 +480,7 @@ object mod {
       
       inline def setSelfHandleResponseUndefined: Self = StObject.set(x, "selfHandleResponse", js.undefined)
       
-      inline def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
       inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
@@ -464,4 +505,11 @@ object mod {
       inline def setXfwdUndefined: Self = StObject.set(x, "xfwd", js.undefined)
     }
   }
+  
+  type StartCallback[TIncomingMessage, TServerResponse] = js.Function3[
+    /* req */ TIncomingMessage, 
+    /* res */ TServerResponse, 
+    /* target */ ProxyTargetUrl, 
+    Unit
+  ]
 }

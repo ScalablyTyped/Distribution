@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardPdfExportOptions")
 @js.native
-class DashboardPdfExportOptions ()
+open class DashboardPdfExportOptions ()
   extends StObject
      with typings.devexpressWeb.DashboardPdfExportOptions {
   

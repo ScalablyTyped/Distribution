@@ -175,7 +175,7 @@ object XSQLOutput {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     writeArray: XArray => Unit,
     writeBinaryStream: XInputStream => Unit,

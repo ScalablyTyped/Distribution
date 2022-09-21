@@ -24,6 +24,6 @@ object GetAuthorizationTokenResponse {
     
     inline def setAuthorizationDataUndefined: Self = StObject.set(x, "authorizationData", js.undefined)
     
-    inline def setAuthorizationDataVarargs(value: AuthorizationData*): Self = StObject.set(x, "authorizationData", js.Array(value :_*))
+    inline def setAuthorizationDataVarargs(value: AuthorizationData*): Self = StObject.set(x, "authorizationData", js.Array(value*))
   }
 }

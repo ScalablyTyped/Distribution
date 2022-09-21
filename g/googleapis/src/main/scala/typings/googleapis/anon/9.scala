@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `9` extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
 }
 object `9` {
   
@@ -17,8 +17,8 @@ object `9` {
   
   extension [Self <: `9`](x: Self) {
     
-    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

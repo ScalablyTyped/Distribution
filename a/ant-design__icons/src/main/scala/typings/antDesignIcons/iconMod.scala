@@ -1,7 +1,7 @@
 package typings.antDesignIcons
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIcons.anon.PickIconComponentPropsari
+import typings.antDesignIcons.anon.PickIconComponentPropsspi
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.ForwardRefExoticComponent
@@ -17,7 +17,7 @@ object iconMod extends Shortcut {
   
   @JSImport("@ant-design/icons/dist/components/Icon", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PickIconComponentPropsari] = js.native
+  val default: ForwardRefExoticComponent[PickIconComponentPropsspi] = js.native
   
   trait CustomIconComponentProps extends StObject {
     
@@ -95,7 +95,9 @@ object iconMod extends Shortcut {
     
     var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]] = js.undefined
+    var component: js.UndefOr[
+        (ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]) | ForwardRefExoticComponent[CustomIconComponentProps]
+      ] = js.undefined
     
     var viewBox: js.UndefOr[String] = js.undefined
   }
@@ -112,7 +114,9 @@ object iconMod extends Shortcut {
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      inline def setComponent(value: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(
+        value: (ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]) | ForwardRefExoticComponent[CustomIconComponentProps]
+      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -122,8 +126,8 @@ object iconMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PickIconComponentPropsari]
+  type _To = ForwardRefExoticComponent[PickIconComponentPropsspi]
   
   /* This means you don't have to write `default`, but can instead just say `iconMod.foo` */
-  override def _to: ForwardRefExoticComponent[PickIconComponentPropsari] = default
+  override def _to: ForwardRefExoticComponent[PickIconComponentPropsspi] = default
 }

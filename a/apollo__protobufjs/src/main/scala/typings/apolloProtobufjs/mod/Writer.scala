@@ -1,7 +1,5 @@
 package typings.apolloProtobufjs.mod
 
-import typings.long.mod.Long
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@apollo/protobufjs", "Writer")
 @js.native
 /** Constructs a new writer instance. */
-class Writer () extends StObject {
+open class Writer () extends StObject {
   
   /**
     * Writes a boolish value as a varint.
@@ -24,7 +22,7 @@ class Writer () extends StObject {
     * @param value Buffer or base64 encoded string to write
     * @returns `this`
     */
-  def bytes(value: Uint8Array): Writer = js.native
+  def bytes(value: js.typedarray.Uint8Array): Writer = js.native
   
   /**
     * Writes a double (64 bit float).
@@ -37,7 +35,7 @@ class Writer () extends StObject {
     * Finishes the write operation.
     * @returns Finished buffer
     */
-  def finish(): Uint8Array = js.native
+  def finish(): js.typedarray.Uint8Array = js.native
   
   /**
     * Writes an unsigned 32 bit value as fixed 32 bits.
@@ -47,14 +45,13 @@ class Writer () extends StObject {
   def fixed32(value: Double): Writer = js.native
   
   def fixed64(value: String): Writer = js.native
-  def fixed64(value: Double): Writer = js.native
   /**
     * Writes an unsigned 64 bit value as fixed 64 bits.
     * @param value Value to write
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def fixed64(value: Long): Writer = js.native
+  def fixed64(value: Double): Writer = js.native
   
   /**
     * Writes a float (32 bit).
@@ -81,14 +78,13 @@ class Writer () extends StObject {
   def int32(value: Double): Writer = js.native
   
   def int64(value: String): Writer = js.native
-  def int64(value: Double): Writer = js.native
   /**
     * Writes a signed 64 bit value as a varint.
     * @param value Value to write
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def int64(value: Long): Writer = js.native
+  def int64(value: Double): Writer = js.native
   
   /**
     * Resets to the last state and appends the fork state's current write length as a varint followed by its operations.
@@ -113,14 +109,13 @@ class Writer () extends StObject {
   def sfixed32(value: Double): Writer = js.native
   
   def sfixed64(value: String): Writer = js.native
-  def sfixed64(value: Double): Writer = js.native
   /**
     * Writes a signed 64 bit value as fixed 64 bits.
     * @param value Value to write
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def sfixed64(value: Long): Writer = js.native
+  def sfixed64(value: Double): Writer = js.native
   
   /**
     * Writes a 32 bit value as a varint, zig-zag encoded.
@@ -130,14 +125,13 @@ class Writer () extends StObject {
   def sint32(value: Double): Writer = js.native
   
   def sint64(value: String): Writer = js.native
-  def sint64(value: Double): Writer = js.native
   /**
     * Writes a signed 64 bit value as a varint, zig-zag encoded.
     * @param value Value to write
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def sint64(value: Long): Writer = js.native
+  def sint64(value: Double): Writer = js.native
   
   /** Linked forked states. */
   var states: js.Object | Null = js.native
@@ -160,14 +154,13 @@ class Writer () extends StObject {
   def uint32(value: Double): Writer = js.native
   
   def uint64(value: String): Writer = js.native
-  def uint64(value: Double): Writer = js.native
   /**
     * Writes an unsigned 64 bit value as a varint.
     * @param value Value to write
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def uint64(value: Long): Writer = js.native
+  def uint64(value: Double): Writer = js.native
 }
 /* static members */
 object Writer {
@@ -181,7 +174,7 @@ object Writer {
     * @param size Buffer size
     * @returns Buffer
     */
-  inline def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   /**
     * Creates a new writer.

@@ -15,7 +15,7 @@ object listIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/list/index.native", JSImport.Default)
   @js.native
-  class default () extends List
+  open class default () extends List
   /* static members */
   object default {
     
@@ -35,8 +35,7 @@ object listIndexNativeMod {
   }
   
   @js.native
-  trait List
-    extends Component[ListProps, js.Any, js.Any]
+  trait List extends Component[ListProps, Any, Any]
   
   trait ListProps
     extends StObject

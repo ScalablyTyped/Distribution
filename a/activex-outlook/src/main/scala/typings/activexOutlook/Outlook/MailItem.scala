@@ -52,7 +52,7 @@ trait MailItem extends StObject {
   
   val ConversationTopic: String = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val CreationTime: VarDate = js.native
   
@@ -109,7 +109,7 @@ trait MailItem extends StObject {
   
   val Links: typings.activexOutlook.Outlook.Links = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   def MarkAsTask(MarkInterval: OlMarkInterval): Unit = js.native
   
@@ -119,7 +119,7 @@ trait MailItem extends StObject {
   
   var Mileage: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   var NoAging: Boolean = js.native
   
@@ -132,7 +132,7 @@ trait MailItem extends StObject {
   
   val OutlookVersion: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Permission: OlPermission = js.native
   
@@ -144,7 +144,7 @@ trait MailItem extends StObject {
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
-  var RTFBody: js.Any = js.native
+  var RTFBody: Any = js.native
   
   var ReadReceiptRequested: Boolean = js.native
   
@@ -189,7 +189,7 @@ trait MailItem extends StObject {
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   var SaveSentMessageFolder: Folder = js.native
   

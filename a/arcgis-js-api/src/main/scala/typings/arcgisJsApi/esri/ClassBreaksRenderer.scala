@@ -16,19 +16,19 @@ trait ClassBreaksRenderer
      with RendererWithVisualVariables
      with typings.arcgisJsApi.esri.renderers.RendererWithVisualVariables {
   
-  def addClassBreakInfo(min: js.Any): Unit = js.native
-  def addClassBreakInfo(min: js.Any, max: Double): Unit = js.native
-  def addClassBreakInfo(min: js.Any, max: Double, symbol: Symbol): Unit = js.native
-  def addClassBreakInfo(min: js.Any, max: Unit, symbol: Symbol): Unit = js.native
+  def addClassBreakInfo(min: Any): scala.Unit = js.native
+  def addClassBreakInfo(min: Any, max: Double): scala.Unit = js.native
+  def addClassBreakInfo(min: Any, max: Double, symbol: Symbol): scala.Unit = js.native
+  def addClassBreakInfo(min: Any, max: scala.Unit, symbol: Symbol): scala.Unit = js.native
   /**
     * Adds a class break to the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#addClassBreakInfo)
     */
-  def addClassBreakInfo(min: Double): Unit = js.native
-  def addClassBreakInfo(min: Double, max: Double): Unit = js.native
-  def addClassBreakInfo(min: Double, max: Double, symbol: Symbol): Unit = js.native
-  def addClassBreakInfo(min: Double, max: Unit, symbol: Symbol): Unit = js.native
+  def addClassBreakInfo(min: Double): scala.Unit = js.native
+  def addClassBreakInfo(min: Double, max: Double): scala.Unit = js.native
+  def addClassBreakInfo(min: Double, max: Double, symbol: Symbol): scala.Unit = js.native
+  def addClassBreakInfo(min: Double, max: scala.Unit, symbol: Symbol): scala.Unit = js.native
   
   /**
     * When symbolizing polygon features with graduated symbols, set a [FillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html) on this property to visualize the boundaries of each feature.
@@ -105,7 +105,7 @@ trait ClassBreaksRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#removeClassBreakInfo)
     */
-  def removeClassBreakInfo(min: Double, max: Double): Unit = js.native
+  def removeClassBreakInfo(min: Double, max: Double): scala.Unit = js.native
   
   /**
     * The type of renderer.
@@ -116,14 +116,14 @@ trait ClassBreaksRenderer
   val type_ClassBreaksRenderer: `class-breaks` = js.native
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression)
     */
   var valueExpression: String = js.native
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpressionTitle)
     */

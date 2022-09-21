@@ -11,10 +11,10 @@ trait PrintTask
 object PrintTask {
   
   inline def apply(
-    oncompleted: js.Any,
-    onpreviewing: js.Any,
-    onprogressing: js.Any,
-    onsubmitting: js.Any,
+    oncompleted: Any,
+    onpreviewing: Any,
+    onprogressing: Any,
+    onsubmitting: Any,
     options: PrintTaskOptions,
     properties: DataPackagePropertySet,
     source: IPrintDocumentSource

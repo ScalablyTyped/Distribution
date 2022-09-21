@@ -1,7 +1,7 @@
 
 # Scala.js typings for load-json-file
 
-Typings are for version 6.2.0
+Typings are for version 7.0.1
 
 ## Library description:
 Read and parse a JSON file
@@ -9,11 +9,11 @@ Read and parse a JSON file
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | load-json-file |
-| Keywords           | read, json, parse, file, fs, graceful, load |
-| # releases         | 5 |
-| # dependents       | 424 |
-| # downloads        | 1234071493 |
-| # stars            | 12 |
+| Keywords           | read, json, parse, file, fs, load |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0102325233333333E8 |
+| # stars            | 215.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/load-json-file#readme)

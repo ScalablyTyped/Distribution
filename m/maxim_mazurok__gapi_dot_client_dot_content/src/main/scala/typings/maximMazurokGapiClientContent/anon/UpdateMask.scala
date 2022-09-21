@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.Region
+import typings.maximMazurokGapiClientContent.gapi.client.content.BuyOnGoogleProgramStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the merchant for which to update region definition. */
+  /** Required. The ID of the account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,13 +38,16 @@ trait UpdateMask extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the region to update. */
-  var regionId: String
+  /** Required. The program region code [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). Currently only US is available. */
+  var regionCode: String
   
   /** Request body */
-  var resource: Region
+  var resource: BuyOnGoogleProgramStatus
   
-  /** Optional. The field mask indicating the fields to update. */
+  /**
+    * The list of fields to update. If the update mask is not provided, then all the fields set in buyOnGoogleProgramStatus will be updated. Clearing fields is only possible if update
+    * mask is provided.
+    */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -55,8 +58,8 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(merchantId: String, regionId: String, resource: Region): UpdateMask = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], regionId = regionId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, regionCode: String, resource: BuyOnGoogleProgramStatus): UpdateMask = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], regionCode = regionCode.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
   
@@ -100,9 +103,9 @@ object UpdateMask {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setRegionId(value: String): Self = StObject.set(x, "regionId", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    inline def setResource(value: Region): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: BuyOnGoogleProgramStatus): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,7 @@ object ContinuousScale {
     
     inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
@@ -50,6 +50,6 @@ object ContinuousScale {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value*))
   }
 }

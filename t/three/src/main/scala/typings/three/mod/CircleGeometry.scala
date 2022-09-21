@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "CircleGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [segments=8]
-	 * @param [thetaStart=0]
-	 * @param [thetaLength=Math.PI * 2]
-	 */
-class CircleGeometry ()
-  extends typings.three.geometriesMod.CircleGeometry {
+  * @param [radius=1]
+  * @param [segments=8]
+  * @param [thetaStart=0]
+  * @param [thetaLength=Math.PI * 2]
+  */
+open class CircleGeometry ()
+  extends typings.three.threeMod.CircleGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, segments: Double) = this()
   def this(radius: Unit, segments: Double) = this()
@@ -29,4 +29,13 @@ class CircleGeometry ()
   def this(radius: Unit, segments: Double, thetaStart: Unit, thetaLength: Double) = this()
   def this(radius: Unit, segments: Unit, thetaStart: Double, thetaLength: Double) = this()
   def this(radius: Unit, segments: Unit, thetaStart: Unit, thetaLength: Double) = this()
+}
+/* static members */
+object CircleGeometry {
+  
+  @JSImport("three", "CircleGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typings.three.circleGeometryMod.CircleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.circleGeometryMod.CircleGeometry]
 }

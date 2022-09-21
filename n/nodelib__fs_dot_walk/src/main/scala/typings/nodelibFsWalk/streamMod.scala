@@ -9,7 +9,7 @@ object streamMod {
   
   @JSImport("@nodelib/fs.walk/out/providers/stream", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with StreamProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
@@ -18,10 +18,10 @@ object streamMod {
     override val _reader: typings.nodelibFsWalk.readersAsyncMod.default = js.native
     
     /* private */ /* CompleteClass */
-    override val _root: js.Any = js.native
+    override val _root: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val _settings: js.Any = js.native
+    override val _settings: Any = js.native
     
     /* protected */ /* CompleteClass */
     override val _stream: Readable = js.native
@@ -34,9 +34,9 @@ object streamMod {
     
     /* protected */ val _reader: typings.nodelibFsWalk.readersAsyncMod.default
     
-    /* private */ val _root: js.Any
+    /* private */ val _root: Any
     
-    /* private */ val _settings: js.Any
+    /* private */ val _settings: Any
     
     /* protected */ val _stream: Readable
     
@@ -46,8 +46,8 @@ object streamMod {
     
     inline def apply(
       _reader: typings.nodelibFsWalk.readersAsyncMod.default,
-      _root: js.Any,
-      _settings: js.Any,
+      _root: Any,
+      _settings: Any,
       _stream: Readable,
       read: () => Readable
     ): StreamProvider = {
@@ -61,9 +61,9 @@ object streamMod {
       
       inline def set_reader(value: typings.nodelibFsWalk.readersAsyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
       
-      inline def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
+      inline def set_root(value: Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       
-      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
       
       inline def set_stream(value: Readable): Self = StObject.set(x, "_stream", value.asInstanceOf[js.Any])
     }

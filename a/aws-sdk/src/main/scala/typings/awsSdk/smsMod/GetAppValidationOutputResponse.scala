@@ -24,6 +24,6 @@ object GetAppValidationOutputResponse {
     
     inline def setValidationOutputListUndefined: Self = StObject.set(x, "validationOutputList", js.undefined)
     
-    inline def setValidationOutputListVarargs(value: ValidationOutput*): Self = StObject.set(x, "validationOutputList", js.Array(value :_*))
+    inline def setValidationOutputListVarargs(value: ValidationOutput*): Self = StObject.set(x, "validationOutputList", js.Array(value*))
   }
 }

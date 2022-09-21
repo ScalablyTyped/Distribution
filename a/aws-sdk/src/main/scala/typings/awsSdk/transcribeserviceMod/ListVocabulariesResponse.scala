@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListVocabulariesResponse extends StObject {
   
   /**
-    * The ListVocabularies operation returns a page of vocabularies at a time. The maximum size of the page is set in the MaxResults parameter. If there are more jobs in the list than will fit on the page, Amazon Transcribe returns the NextPage token. To return in the next page of jobs, include the token in the next request to the ListVocabularies operation.
+    * If NextToken is present in your response, it indicates that not all results are displayed. To view the next set of results, copy the string associated with the NextToken parameter in your results output, then run your request again including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
-    * The requested vocabulary state.
+    * Lists all custom vocabularies that have the status specified in your request. Vocabularies are ordered by creation date, with the newest vocabulary first.
     */
   var Status: js.UndefOr[VocabularyState] = js.undefined
   
   /**
-    * A list of objects that describe the vocabularies that match the search criteria in the request.
+    * Provides information about the custom vocabularies that match the criteria specified in your request.
     */
   var Vocabularies: js.UndefOr[typings.awsSdk.transcribeserviceMod.Vocabularies] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListVocabulariesResponse {
     
     inline def setVocabulariesUndefined: Self = StObject.set(x, "Vocabularies", js.undefined)
     
-    inline def setVocabulariesVarargs(value: VocabularyInfo*): Self = StObject.set(x, "Vocabularies", js.Array(value :_*))
+    inline def setVocabulariesVarargs(value: VocabularyInfo*): Self = StObject.set(x, "Vocabularies", js.Array(value*))
   }
 }

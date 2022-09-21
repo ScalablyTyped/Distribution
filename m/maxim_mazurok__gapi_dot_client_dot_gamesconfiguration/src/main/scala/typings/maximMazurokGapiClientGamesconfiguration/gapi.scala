@@ -168,7 +168,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: AchievementConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: AchievementConfiguration*): Self = StObject.set(x, "items", js.Array(value*))
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -492,7 +492,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: LeaderboardConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: LeaderboardConfiguration*): Self = StObject.set(x, "items", js.Array(value*))
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -587,7 +587,7 @@ object gapi {
           
           inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
           
-          inline def setTranslationsVarargs(value: LocalizedString*): Self = StObject.set(x, "translations", js.Array(value :_*))
+          inline def setTranslationsVarargs(value: LocalizedString*): Self = StObject.set(x, "translations", js.Array(value*))
         }
       }
     }

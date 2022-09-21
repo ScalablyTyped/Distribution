@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.StaveTie")
 @js.native
-class StaveTie protected ()
+open class StaveTie protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.StaveTie {
   /**

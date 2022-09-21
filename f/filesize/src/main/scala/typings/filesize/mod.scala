@@ -2,13 +2,18 @@ package typings.filesize
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.filesize.anon.Exponent
 import typings.filesize.filesizeStrings.`object`
 import typings.filesize.filesizeStrings.array
+import typings.filesize.filesizeStrings.ceil
 import typings.filesize.filesizeStrings.exponent
+import typings.filesize.filesizeStrings.floor
 import typings.filesize.filesizeStrings.iec
 import typings.filesize.filesizeStrings.jedec
+import typings.filesize.filesizeStrings.round
 import typings.filesize.filesizeStrings.string
 import typings.filesize.mod.Filesize.Filesize
+import typings.std.Extract
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,19 +27,29 @@ object mod extends Shortcut {
   
   object Filesize {
     
+    type CanonicalOutput[O /* <: Options */] = (Extract[
+        /* import warning: importer.ImportType#apply Failed type conversion: O['output'] */ js.Any, 
+        /* keyof filesize.filesize.Filesize.ResultTypeMap<O> */ array | exponent | `object` | string
+      ]) | DefaultOutput[O]
+    
+    type DefaultOutput[O /* <: Options */] = string
+    
     @js.native
     trait Filesize extends StObject {
       
       def apply(bytes: Double): String = js.native
-      def apply(bytes: Double, options: Options): String = js.native
+      def apply[O /* <: Options */](bytes: Double, options: O): /* import warning: importer.ImportType#apply Failed type conversion: filesize.filesize.Filesize.ResultTypeMap<O>[filesize.filesize.Filesize.CanonicalOutput<O>] */ js.Any = js.native
       
-      def partial(options: Options): js.Function1[/* bytes */ Double, String] = js.native
+      def partial[O /* <: Options */](options: O): js.Function1[
+            /* bytes */ Double, 
+            /* import warning: importer.ImportType#apply Failed type conversion: filesize.filesize.Filesize.ResultTypeMap<O>[filesize.filesize.Filesize.CanonicalOutput<O>] */ js.Any
+          ] = js.native
     }
     
     trait Options extends StObject {
       
       /**
-        * Number base, default is 2
+        * Number base, default is 10
         */
       var base: js.UndefOr[Double] = js.undefined
       
@@ -74,9 +89,24 @@ object mod extends Shortcut {
       var output: js.UndefOr[array | exponent | `object` | string] = js.undefined
       
       /**
+        * Decimal place end padding, default is false
+        */
+      var pad: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Sets precision of numerical output, default is 0
+        */
+      var precision: js.UndefOr[Double] = js.undefined
+      
+      /**
         * Decimal place, default is 2
         */
       var round: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Rounding method, can be round, floor, or ceil, default is round
+        */
+      var roundingMethod: js.UndefOr[round | floor | ceil] = js.undefined
       
       /**
         * Decimal separator character, default is `.`
@@ -89,7 +119,7 @@ object mod extends Shortcut {
       var spacer: js.UndefOr[String] = js.undefined
       
       /**
-        * Standard unit of measure, can be iec or jedec, default is jedec; can be overruled by base
+        * Standard unit of measure, can be iec or jedec, default is iec; can be overruled by base
         */
       var standard: js.UndefOr[iec | jedec] = js.undefined
       
@@ -132,7 +162,7 @@ object mod extends Shortcut {
         
         inline def setFullformsUndefined: Self = StObject.set(x, "fullforms", js.undefined)
         
-        inline def setFullformsVarargs(value: String*): Self = StObject.set(x, "fullforms", js.Array(value :_*))
+        inline def setFullformsVarargs(value: String*): Self = StObject.set(x, "fullforms", js.Array(value*))
         
         inline def setLocale(value: String | Boolean): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
@@ -146,9 +176,21 @@ object mod extends Shortcut {
         
         inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
         
+        inline def setPad(value: Boolean): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+        
+        inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+        
+        inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+        
+        inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+        
         inline def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
         
         inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+        
+        inline def setRoundingMethod(value: round | floor | ceil): Self = StObject.set(x, "roundingMethod", value.asInstanceOf[js.Any])
+        
+        inline def setRoundingMethodUndefined: Self = StObject.set(x, "roundingMethod", js.undefined)
         
         inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
@@ -169,6 +211,37 @@ object mod extends Shortcut {
         inline def setUnix(value: Boolean): Self = StObject.set(x, "unix", value.asInstanceOf[js.Any])
         
         inline def setUnixUndefined: Self = StObject.set(x, "unix", js.undefined)
+      }
+    }
+    
+    // Result type inference from the output option
+    trait ResultTypeMap[O] extends StObject {
+      
+      var array: js.Tuple2[Double | String, String]
+      
+      var exponent: Double
+      
+      var `object`: Exponent
+      
+      var string: String
+    }
+    object ResultTypeMap {
+      
+      inline def apply[O](array: js.Tuple2[Double | String, String], exponent: Double, `object`: Exponent, string: String): ResultTypeMap[O] = {
+        val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], exponent = exponent.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+        __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ResultTypeMap[O]]
+      }
+      
+      extension [Self <: ResultTypeMap[?], O](x: Self & ResultTypeMap[O]) {
+        
+        inline def setArray(value: js.Tuple2[Double | String, String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+        
+        inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+        
+        inline def setObject(value: Exponent): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+        
+        inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       }
     }
     

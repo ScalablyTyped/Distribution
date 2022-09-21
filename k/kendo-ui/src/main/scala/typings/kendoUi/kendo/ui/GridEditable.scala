@@ -22,7 +22,7 @@ trait GridEditable extends StObject {
   
   var update: js.UndefOr[Boolean] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[Any] = js.undefined
 }
 object GridEditable {
   
@@ -65,7 +65,7 @@ object GridEditable {
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }

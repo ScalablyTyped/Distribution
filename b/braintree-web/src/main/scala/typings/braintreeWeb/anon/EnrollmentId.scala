@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnrollmentId extends StObject {
   
-  var card: js.Any
+  var card: Any
   
   var enrollmentId: String
   
@@ -17,7 +17,7 @@ trait EnrollmentId extends StObject {
 object EnrollmentId {
   
   inline def apply(
-    card: js.Any,
+    card: Any,
     enrollmentId: String,
     hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields,
     smsCode: String
@@ -28,7 +28,7 @@ object EnrollmentId {
   
   extension [Self <: EnrollmentId](x: Self) {
     
-    inline def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
     

@@ -10,13 +10,13 @@ trait IgButtonLink
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
-  var href: js.UndefOr[js.Any] = js.undefined
+  var href: js.UndefOr[Any] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
-  var title: js.UndefOr[js.Any] = js.undefined
+  var title: js.UndefOr[Any] = js.undefined
 }
 object IgButtonLink {
   
@@ -27,15 +27,15 @@ object IgButtonLink {
   
   extension [Self <: IgButtonLink](x: Self) {
     
-    inline def setHref(value: js.Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

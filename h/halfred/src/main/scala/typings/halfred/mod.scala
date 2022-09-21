@@ -15,18 +15,13 @@ object mod {
   
   inline def enableValidation(flag: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableValidation")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def parse(`object`: js.Any): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(`object`.asInstanceOf[js.Any]).asInstanceOf[Resource]
+  inline def parse(`object`: Any): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(`object`.asInstanceOf[js.Any]).asInstanceOf[Resource]
   
-  /**
-    * A Link Object represents a hyperlink from the containing resource to a URI.
-    *
-    * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5
-    */
   trait Link extends StObject {
     
     /**
       * The "deprecation" property is OPTIONAL.
-      * 
+      *
       * Its presence indicates that the link is to be deprecated (i.e.
       * removed) at a future date.  Its value is a URL that SHOULD provide
       * further information about the deprecation.
@@ -157,7 +152,6 @@ object mod {
     }
   }
   
-  /** @see https://github.com/basti1302/halfred#links-and-embedded-resources */
   type LinkCollection = StringDictionary[js.Array[Link]]
   
   trait Resource extends StObject {
@@ -239,7 +233,7 @@ object mod {
       * still have a reference to the source object) but it is a convenient way to get the part of
       * the source object that corresponds to an embedded resource.
       */
-    def original(): js.Any
+    def original(): Any
     
     /**
       * Returns the compact URI for the given full URL, if any
@@ -249,13 +243,13 @@ object mod {
     /**
       * Alias for validationIssues()
       */
-    def validation(): js.Any
+    def validation(): Any
     
     /**
       * Returns all validation issues. Validation issues are only gathered if validation has been
       * turned on by calling ``halfred.enableValidation()`` before calling ``halfred.parse``.
       */
-    def validationIssues(): js.Any
+    def validationIssues(): Any
   }
   object Resource {
     
@@ -274,10 +268,10 @@ object mod {
       hasCuries: () => Boolean,
       link: String => Link,
       linkArray: String => js.Array[Link],
-      original: () => js.Any,
+      original: () => Any,
       reverseResolveCurie: String => String,
-      validation: () => js.Any,
-      validationIssues: () => js.Any
+      validation: () => Any,
+      validationIssues: () => Any
     ): Resource = {
       val __obj = js.Dynamic.literal(allEmbeddedArrays = js.Any.fromFunction0(allEmbeddedArrays), allEmbeddedResourceArrays = js.Any.fromFunction0(allEmbeddedResourceArrays), allEmbeddedResources = js.Any.fromFunction0(allEmbeddedResources), allLinkArrays = js.Any.fromFunction0(allLinkArrays), allLinks = js.Any.fromFunction0(allLinks), curie = js.Any.fromFunction1(curie), curieArray = js.Any.fromFunction0(curieArray), embedded = js.Any.fromFunction1(embedded), embeddedArray = js.Any.fromFunction1(embeddedArray), embeddedResource = js.Any.fromFunction1(embeddedResource), embeddedResourceArray = js.Any.fromFunction1(embeddedResourceArray), hasCuries = js.Any.fromFunction0(hasCuries), link = js.Any.fromFunction1(link), linkArray = js.Any.fromFunction1(linkArray), original = js.Any.fromFunction0(original), reverseResolveCurie = js.Any.fromFunction1(reverseResolveCurie), validation = js.Any.fromFunction0(validation), validationIssues = js.Any.fromFunction0(validationIssues))
       __obj.asInstanceOf[Resource]
@@ -313,16 +307,15 @@ object mod {
       
       inline def setLinkArray(value: String => js.Array[Link]): Self = StObject.set(x, "linkArray", js.Any.fromFunction1(value))
       
-      inline def setOriginal(value: () => js.Any): Self = StObject.set(x, "original", js.Any.fromFunction0(value))
+      inline def setOriginal(value: () => Any): Self = StObject.set(x, "original", js.Any.fromFunction0(value))
       
       inline def setReverseResolveCurie(value: String => String): Self = StObject.set(x, "reverseResolveCurie", js.Any.fromFunction1(value))
       
-      inline def setValidation(value: () => js.Any): Self = StObject.set(x, "validation", js.Any.fromFunction0(value))
+      inline def setValidation(value: () => Any): Self = StObject.set(x, "validation", js.Any.fromFunction0(value))
       
-      inline def setValidationIssues(value: () => js.Any): Self = StObject.set(x, "validationIssues", js.Any.fromFunction0(value))
+      inline def setValidationIssues(value: () => Any): Self = StObject.set(x, "validationIssues", js.Any.fromFunction0(value))
     }
   }
   
-  /** @see https://github.com/basti1302/halfred#links-and-embedded-resources */
   type ResourceCollection = StringDictionary[js.Array[Resource]]
 }

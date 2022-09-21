@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new UndoManager with an optional maximum history size.
   * @param maxItems The max history size
   */
-class UndoManager () extends StObject {
+open class UndoManager () extends StObject {
   def this(maxItems: Double) = this()
   
   /**
@@ -24,8 +24,8 @@ class UndoManager () extends StObject {
     */
   def add(operation: TextOperation): Unit = js.native
   def add(operation: TextOperation, compose: Boolean): Unit = js.native
-  def add(operation: WrappedOperation[js.Any]): Unit = js.native
-  def add(operation: WrappedOperation[js.Any], compose: Boolean): Unit = js.native
+  def add(operation: WrappedOperation[Any]): Unit = js.native
+  def add(operation: WrappedOperation[Any], compose: Boolean): Unit = js.native
   
   /**
     * Is the redo stack not empty?
@@ -53,7 +53,7 @@ class UndoManager () extends StObject {
     * The inverse of `performUndo`.
     * @param fun The function
     */
-  def performRedo(fun: js.Function1[/* op */ WrappedOperation[js.Any], Unit]): Unit = js.native
+  def performRedo(fun: js.Function1[/* op */ WrappedOperation[Any], Unit]): Unit = js.native
   
   /**
     * Perform an undo by calling a function with the latest operation on the undo
@@ -61,9 +61,9 @@ class UndoManager () extends StObject {
     * @param fun The function is expected to call the `add` method with the inverse
     * of the operation, which pushes the inverse on the redo stack.
     */
-  def performUndo(fun: js.Function1[/* op */ WrappedOperation[js.Any], Unit]): Unit = js.native
+  def performUndo(fun: js.Function1[/* op */ WrappedOperation[Any], Unit]): Unit = js.native
   
-  var redoStack: js.Array[WrappedOperation[js.Any]] = js.native
+  var redoStack: js.Array[WrappedOperation[Any]] = js.native
   
   var state: UndoState = js.native
   
@@ -72,7 +72,7 @@ class UndoManager () extends StObject {
     * @param operation The op
     */
   def transform(operation: TextOperation): Unit = js.native
-  def transform(operation: WrappedOperation[js.Any]): Unit = js.native
+  def transform(operation: WrappedOperation[Any]): Unit = js.native
   
-  var undoStack: js.Array[WrappedOperation[js.Any]] = js.native
+  var undoStack: js.Array[WrappedOperation[Any]] = js.native
 }

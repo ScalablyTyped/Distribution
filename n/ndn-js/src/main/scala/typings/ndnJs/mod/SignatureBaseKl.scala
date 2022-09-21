@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "SignatureBaseKl")
 @js.native
-class SignatureBaseKl[T /* <: typings.ndnJs.signatureMod.Signature */] ()
+open class SignatureBaseKl[T /* <: typings.ndnJs.signatureMod.Signature */] ()
   extends typings.ndnJs.signatureMod.SignatureBaseKl[T]

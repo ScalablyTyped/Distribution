@@ -33,6 +33,6 @@ object GetSamplingStatisticSummariesResult {
     
     inline def setSamplingStatisticSummariesUndefined: Self = StObject.set(x, "SamplingStatisticSummaries", js.undefined)
     
-    inline def setSamplingStatisticSummariesVarargs(value: SamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value :_*))
+    inline def setSamplingStatisticSummariesVarargs(value: SamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value*))
   }
 }

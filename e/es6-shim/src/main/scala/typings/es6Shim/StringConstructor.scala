@@ -20,13 +20,13 @@ trait StringConstructor extends StObject {
     * @param template A well-formed template string call site representation.
     * @param substitutions A set of substitution values.
     */
-  def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String
+  def raw(template: TemplateStringsArray, substitutions: Any*): java.lang.String
 }
 object StringConstructor {
   
   inline def apply(
     fromCodePoint: /* repeated */ Double => java.lang.String,
-    raw: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String
+    raw: (TemplateStringsArray, /* repeated */ Any) => java.lang.String
   ): StringConstructor = {
     val __obj = js.Dynamic.literal(fromCodePoint = js.Any.fromFunction1(fromCodePoint), raw = js.Any.fromFunction2(raw))
     __obj.asInstanceOf[StringConstructor]
@@ -36,6 +36,6 @@ object StringConstructor {
     
     inline def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
     
-    inline def setRaw(value: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "raw", js.Any.fromFunction2(value))
+    inline def setRaw(value: (TemplateStringsArray, /* repeated */ Any) => java.lang.String): Self = StObject.set(x, "raw", js.Any.fromFunction2(value))
   }
 }

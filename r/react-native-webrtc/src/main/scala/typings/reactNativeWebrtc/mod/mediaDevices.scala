@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "mediaDevices")
 @js.native
-class mediaDevices () extends StObject {
+open class mediaDevices () extends StObject {
   
   def ondevicechange(): js.UndefOr[Unit] = js.native
 }
@@ -17,7 +17,7 @@ object mediaDevices {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def enumerateDevices(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateDevices")().asInstanceOf[js.Promise[js.Any]]
+  inline def enumerateDevices(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateDevices")().asInstanceOf[js.Promise[Any]]
   
-  inline def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream | Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserMedia")(constraints.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaStream | Boolean]]
+  inline def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserMedia")(constraints.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaStream]]
 }

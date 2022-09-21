@@ -16,40 +16,40 @@ object cardMod {
   
   @JSImport("material-ui/Card", JSImport.Default)
   @js.native
-  class default () extends Card
+  open class default () extends Card
   
   @JSImport("material-ui/Card", "Card")
   @js.native
-  class Card ()
-    extends Component[CardProps, js.Object, js.Any]
+  open class Card ()
+    extends Component[CardProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardActions")
   @js.native
-  class CardActions ()
-    extends Component[CardActionsProps, js.Object, js.Any]
+  open class CardActions ()
+    extends Component[CardActionsProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardExpandable")
   @js.native
-  class CardExpandable ()
-    extends Component[CardExpandableProps, js.Object, js.Any]
+  open class CardExpandable ()
+    extends Component[CardExpandableProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardHeader")
   @js.native
-  class CardHeader ()
-    extends Component[CardHeaderProps, js.Object, js.Any]
+  open class CardHeader ()
+    extends Component[CardHeaderProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardMedia")
   @js.native
-  class CardMedia ()
-    extends Component[CardMediaProps, js.Object, js.Any]
+  open class CardMedia ()
+    extends Component[CardMediaProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardText")
   @js.native
-  class CardText ()
-    extends Component[CardTextProps, js.Object, js.Any]
+  open class CardText ()
+    extends Component[CardTextProps, js.Object, Any]
   
   @JSImport("material-ui/Card", "CardTitle")
   @js.native
-  class CardTitle ()
-    extends Component[CardTitleProps, js.Object, js.Any]
+  open class CardTitle ()
+    extends Component[CardTitleProps, js.Object, Any]
 }

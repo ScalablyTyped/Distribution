@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetNodeInput extends StObject {
   
   /**
-    * The unique identifier of the member that owns the node.
+    * The unique identifier of the member that owns the node. Applies only to Hyperledger Fabric and is required for Hyperledger Fabric.
     */
-  var MemberId: ResourceIdString
+  var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
-    * The unique identifier of the network to which the node belongs.
+    * The unique identifier of the network that the node is on.
     */
   var NetworkId: ResourceIdString
   
@@ -23,14 +23,16 @@ trait GetNodeInput extends StObject {
 }
 object GetNodeInput {
   
-  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): GetNodeInput = {
-    val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
+  inline def apply(NetworkId: ResourceIdString, NodeId: ResourceIdString): GetNodeInput = {
+    val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNodeInput]
   }
   
   extension [Self <: GetNodeInput](x: Self) {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

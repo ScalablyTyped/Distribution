@@ -31,7 +31,7 @@ trait PageToken extends StObject {
   /** The maximum number of customers to show in a page of results. A number between 1 and 100 (inclusive). */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** A token specifying which result page to return. */
+  /** A token specifying which result page to return. This field has custom validations in ListCustomersRequestValidator */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */

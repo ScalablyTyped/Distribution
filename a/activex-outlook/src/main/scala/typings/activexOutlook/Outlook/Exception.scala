@@ -22,7 +22,7 @@ trait Exception extends StObject {
   /* private */ @JSName("Outlook.Exception_typekey")
   var OutlookDotException_typekey: Exception
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -36,7 +36,7 @@ object Exception {
     ItemProperties: ItemProperties,
     OriginalDate: VarDate,
     OutlookDotException_typekey: Exception,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Exception = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AppointmentItem = AppointmentItem.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Deleted = Deleted.asInstanceOf[js.Any], ItemProperties = ItemProperties.asInstanceOf[js.Any], OriginalDate = OriginalDate.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object Exception {
     
     inline def setOutlookDotException_typekey(value: Exception): Self = StObject.set(x, "Outlook.Exception_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

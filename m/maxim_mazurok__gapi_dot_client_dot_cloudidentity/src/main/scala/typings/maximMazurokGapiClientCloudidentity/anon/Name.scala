@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
-import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +19,12 @@ trait Name extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
+    * If you're using this API to manage another organization, use `customers/{customer}`, where customer is the customer to whom the device belongs.
+    */
+  var customer: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -27,8 +32,12 @@ trait Name extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device_id}/deviceUsers/{device_user_id}`, where device_id is
-    * the unique ID assigned to the Device, and device_user_id is the unique ID assigned to the User.
+    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the ClientState in format:
+    * `devices/{device}/deviceUsers/{device_user}/clientState/{partner}`, where partner corresponds to the partner storing the data. For partners belonging to the "BeyondCorp
+    * Alliance", this is the partner ID specified to you by Google. For all other callers, this is a string of the form: `{customer}-suffix`, where `customer` is your customer ID. The
+    * *suffix* is any string the caller specifies. This string will be displayed verbatim in the administration console. This suffix is used in setting up Custom Access Levels in
+    * Context-Aware Access. Your organization's customer ID can be obtained from the URL: `GET https://www.googleapis.com/admin/directory/v1/customers/my_customer` The `id` field in
+    * the response contains the customer ID starting with the letter 'C'. The customer ID to be used in this API is the string after the letter 'C' (not including 'C')
     */
   var name: String
   
@@ -41,8 +50,8 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest
+  /** Optional. Comma-separated list of fully qualified names of fields to be updated. If not specified, all updatable fields in ClientState are updated. */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +61,8 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): Name = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -74,6 +83,10 @@ object Name {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -97,7 +110,9 @@ object Name {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

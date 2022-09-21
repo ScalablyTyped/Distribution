@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait TaskAgent
   /**
     * Gets the date on which this agent was created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets or sets the maximum job parallelism allowed on this host.
@@ -35,12 +34,12 @@ trait TaskAgent
     */
   var pendingUpdate: TaskAgentUpdate
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Gets the date on which the last connectivity status change occurred.
     */
-  var statusChangedOn: Date
+  var statusChangedOn: js.Date
   
   var systemCapabilities: StringDictionary[String]
   
@@ -49,18 +48,18 @@ trait TaskAgent
 object TaskAgent {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     assignedRequest: TaskAgentJobRequest,
     authorization: TaskAgentAuthorization,
-    createdOn: Date,
+    createdOn: js.Date,
     enabled: Boolean,
     id: Double,
     maxParallelism: Double,
     name: String,
     pendingUpdate: TaskAgentUpdate,
-    properties: js.Any,
+    properties: Any,
     status: TaskAgentStatus,
-    statusChangedOn: Date,
+    statusChangedOn: js.Date,
     systemCapabilities: StringDictionary[String],
     userCapabilities: StringDictionary[String],
     version: String
@@ -75,15 +74,15 @@ object TaskAgent {
     
     inline def setAuthorization(value: TaskAgentAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setMaxParallelism(value: Double): Self = StObject.set(x, "maxParallelism", value.asInstanceOf[js.Any])
     
     inline def setPendingUpdate(value: TaskAgentUpdate): Self = StObject.set(x, "pendingUpdate", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setStatusChangedOn(value: Date): Self = StObject.set(x, "statusChangedOn", value.asInstanceOf[js.Any])
+    inline def setStatusChangedOn(value: js.Date): Self = StObject.set(x, "statusChangedOn", value.asInstanceOf[js.Any])
     
     inline def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
     

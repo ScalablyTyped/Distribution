@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "Envelope")
 @js.native
-class Envelope protected () extends StObject {
+open class Envelope protected () extends StObject {
   def this(bounds: EnvelopeBounds) = this()
   
   def contains(envelope: Envelope): Boolean = js.native

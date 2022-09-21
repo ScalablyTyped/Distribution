@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertPictureCommand")
 @js.native
-class InsertPictureCommand ()
+open class InsertPictureCommand ()
   extends StObject
      with typings.devexpressWeb.InsertPictureCommand {
   

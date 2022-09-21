@@ -19,6 +19,10 @@ object mod {
   @js.native
   val Cat: ComponentType[KawaiiProps] = js.native
   
+  @JSImport("react-kawaii", "Chocolate")
+  @js.native
+  val Chocolate: ComponentType[KawaiiProps] = js.native
+  
   @JSImport("react-kawaii", "CreditCard")
   @js.native
   val CreditCard: ComponentType[KawaiiProps] = js.native
@@ -26,6 +30,10 @@ object mod {
   @JSImport("react-kawaii", "File")
   @js.native
   val File: ComponentType[KawaiiProps] = js.native
+  
+  @JSImport("react-kawaii", "Folder")
+  @js.native
+  val Folder: ComponentType[KawaiiProps] = js.native
   
   @JSImport("react-kawaii", "Ghost")
   @js.native

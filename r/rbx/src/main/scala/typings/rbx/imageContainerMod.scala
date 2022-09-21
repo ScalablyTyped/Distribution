@@ -129,7 +129,7 @@ object imageContainerMod {
   
   @JSImport("rbx/elements/image/image-container", "ImageContainer")
   @js.native
-  val ImageContainer: ForwardRefAsExoticComponent[ImageContainerProps, ElementType[js.Any]] = js.native
+  val ImageContainer: ForwardRefAsExoticComponent[ImageContainerProps, ElementType[Any]] = js.native
   
   trait ImageContainerModifierProps extends StObject {
     

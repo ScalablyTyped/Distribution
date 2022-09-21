@@ -16,5 +16,5 @@ object observable {
   
   @JSImport("knockout", "observable.fn")
   @js.native
-  val fn: ObservableFunctions[js.Any] = js.native
+  val fn: ObservableFunctions[Any] = js.native
 }

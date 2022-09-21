@@ -4,28 +4,29 @@ import typings.azdata.mod.AlignContentType
 import typings.azdata.mod.AlignItemsType
 import typings.azdata.mod.DisplayType
 import typings.azdata.mod.FlexWrapType
+import typings.azdata.mod.InfoBoxStyle
 import typings.azdata.mod.InputBoxInputType
 import typings.azdata.mod.JustifyContentType
 import typings.azdata.mod.PositionType
 import typings.azdata.mod.TextAlignType
+import typings.azdata.mod.VisualizationType
+import typings.azdata.mod.connection.ConnectionEventType
 import typings.azdata.mod.nb.CellType
 import typings.azdata.mod.nb.Channel
 import typings.azdata.mod.nb.KernelStatus
 import typings.azdata.mod.nb.OutputTypeName
 import typings.azdata.mod.nb.StreamType
 import typings.azdata.mod.queryeditor.QueryEventType
+import typings.azdata.mod.window.CloseReason
 import typings.azdata.mod.window.DialogButtonPosition
+import typings.azdata.mod.window.DialogPosition
+import typings.azdata.mod.window.DialogStyle
+import typings.azdata.mod.window._DialogWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object azdataStrings {
-  
-  @js.native
-  sealed trait `Spacetable-column-group`
-    extends StObject
-       with DisplayType
-  inline def `Spacetable-column-group`: `Spacetable-column-group` = (" table-column-group").asInstanceOf[`Spacetable-column-group`]
   
   @js.native
   sealed trait _empty
@@ -44,10 +45,22 @@ object azdataStrings {
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
+  sealed trait bar
+    extends StObject
+       with VisualizationType
+  inline def bar: bar = "bar".asInstanceOf[bar]
+  
+  @js.native
   sealed trait baseline
     extends StObject
        with AlignItemsType
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @js.native
+  sealed trait below
+    extends StObject
+       with DialogPosition
+  inline def below: below = "below".asInstanceOf[below]
   
   @js.native
   sealed trait block
@@ -66,6 +79,18 @@ object azdataStrings {
   inline def busy: busy = "busy".asInstanceOf[busy]
   
   @js.native
+  sealed trait callout
+    extends StObject
+       with DialogStyle
+  inline def callout: callout = "callout".asInstanceOf[callout]
+  
+  @js.native
+  sealed trait cancel
+    extends StObject
+       with CloseReason
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait center
     extends StObject
        with AlignContentType
@@ -73,6 +98,12 @@ object azdataStrings {
        with JustifyContentType
        with TextAlignType
   inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait close
+    extends StObject
+       with CloseReason
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait code
@@ -99,6 +130,12 @@ object azdataStrings {
   inline def contents: contents = "contents".asInstanceOf[contents]
   
   @js.native
+  sealed trait count
+    extends StObject
+       with VisualizationType
+  inline def count: count = "count".asInstanceOf[count]
+  
+  @js.native
   sealed trait date
     extends StObject
        with InputBoxInputType
@@ -123,6 +160,12 @@ object azdataStrings {
   inline def display_data: display_data = "display_data".asInstanceOf[display_data]
   
   @js.native
+  sealed trait doughnut
+    extends StObject
+       with VisualizationType
+  inline def doughnut: doughnut = "doughnut".asInstanceOf[doughnut]
+  
+  @js.native
   sealed trait email
     extends StObject
        with InputBoxInputType
@@ -137,6 +180,7 @@ object azdataStrings {
   @js.native
   sealed trait error
     extends StObject
+       with InfoBoxStyle
        with OutputTypeName
   inline def error: error = "error".asInstanceOf[error]
   
@@ -193,16 +237,40 @@ object azdataStrings {
   inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
+  sealed trait flyout
+    extends StObject
+       with DialogStyle
+  inline def flyout: flyout = "flyout".asInstanceOf[flyout]
+  
+  @js.native
   sealed trait grid
     extends StObject
        with DisplayType
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
+  sealed trait horizontalBar
+    extends StObject
+       with VisualizationType
+  inline def horizontalBar: horizontalBar = "horizontalBar".asInstanceOf[horizontalBar]
+  
+  @js.native
   sealed trait idle
     extends StObject
        with KernelStatus
   inline def idle: idle = "idle".asInstanceOf[idle]
+  
+  @js.native
+  sealed trait image
+    extends StObject
+       with VisualizationType
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
+  sealed trait information
+    extends StObject
+       with InfoBoxStyle
+  inline def information: information = "information".asInstanceOf[information]
   
   @js.native
   sealed trait inherit
@@ -278,8 +346,15 @@ object azdataStrings {
   sealed trait left
     extends StObject
        with DialogButtonPosition
+       with DialogPosition
        with TextAlignType
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait line
+    extends StObject
+       with VisualizationType
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait `list-item`
@@ -294,10 +369,22 @@ object azdataStrings {
   inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
+  sealed trait medium
+    extends StObject
+       with _DialogWidth
+  inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
   sealed trait month
     extends StObject
        with InputBoxInputType
   inline def month: month = "month".asInstanceOf[month]
+  
+  @js.native
+  sealed trait narrow
+    extends StObject
+       with _DialogWidth
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
   sealed trait none
@@ -309,6 +396,7 @@ object azdataStrings {
   sealed trait normal
     extends StObject
        with AlignItemsType
+       with DialogStyle
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -324,14 +412,40 @@ object azdataStrings {
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait ok extends StObject
+  sealed trait ok
+    extends StObject
+       with CloseReason
   inline def ok: ok = "ok".asInstanceOf[ok]
+  
+  @js.native
+  sealed trait onConnect
+    extends StObject
+       with ConnectionEventType
+  inline def onConnect: onConnect = "onConnect".asInstanceOf[onConnect]
+  
+  @js.native
+  sealed trait onConnectionChanged
+    extends StObject
+       with ConnectionEventType
+  inline def onConnectionChanged: onConnectionChanged = "onConnectionChanged".asInstanceOf[onConnectionChanged]
+  
+  @js.native
+  sealed trait onDisconnect
+    extends StObject
+       with ConnectionEventType
+  inline def onDisconnect: onDisconnect = "onDisconnect".asInstanceOf[onDisconnect]
   
   @js.native
   sealed trait password
     extends StObject
        with InputBoxInputType
   inline def password: password = "password".asInstanceOf[password]
+  
+  @js.native
+  sealed trait pie
+    extends StObject
+       with VisualizationType
+  inline def pie: pie = "pie".asInstanceOf[pie]
   
   @js.native
   sealed trait queryStart
@@ -399,6 +513,12 @@ object azdataStrings {
     extends StObject
        with AlignItemsType
   inline def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
+  
+  @js.native
+  sealed trait scatter
+    extends StObject
+       with VisualizationType
+  inline def scatter: scatter = "scatter".asInstanceOf[scatter]
   
   @js.native
   sealed trait search
@@ -482,9 +602,16 @@ object azdataStrings {
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
+  sealed trait success
+    extends StObject
+       with InfoBoxStyle
+  inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
   sealed trait table
     extends StObject
        with DisplayType
+       with VisualizationType
   inline def table: table = "table".asInstanceOf[table]
   
   @js.native
@@ -504,6 +631,12 @@ object azdataStrings {
     extends StObject
        with DisplayType
   inline def `table-column`: `table-column` = "table-column".asInstanceOf[`table-column`]
+  
+  @js.native
+  sealed trait `table-column-group`
+    extends StObject
+       with DisplayType
+  inline def `table-column-group`: `table-column-group` = "table-column-group".asInstanceOf[`table-column-group`]
   
   @js.native
   sealed trait `table-footer-group`
@@ -542,6 +675,16 @@ object azdataStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait timeSeries
+    extends StObject
+       with VisualizationType
+  inline def timeSeries: timeSeries = "timeSeries".asInstanceOf[timeSeries]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
   sealed trait unknown
     extends StObject
        with KernelStatus
@@ -578,10 +721,22 @@ object azdataStrings {
   inline def visualize: visualize = "visualize".asInstanceOf[visualize]
   
   @js.native
+  sealed trait warning
+    extends StObject
+       with InfoBoxStyle
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
   sealed trait week
     extends StObject
        with InputBoxInputType
   inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait wide
+    extends StObject
+       with _DialogWidth
+  inline def wide: wide = "wide".asInstanceOf[wide]
   
   @js.native
   sealed trait wrap

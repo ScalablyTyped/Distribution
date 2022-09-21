@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tokey/css-selector-parser" : "0.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tokey/css-selector-parser" : "0.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

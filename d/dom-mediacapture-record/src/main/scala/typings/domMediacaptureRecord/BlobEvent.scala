@@ -1,6 +1,7 @@
 package typings.domMediacaptureRecord
 
 import typings.std.Blob
+import typings.std.DOMHighResTimeStamp
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +14,5 @@ trait BlobEvent
   
   val data: Blob = js.native
   
-  val timecode: Double = js.native
+  val timecode: DOMHighResTimeStamp = js.native
 }

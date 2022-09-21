@@ -12,20 +12,20 @@ trait SchedulerStatic
      with Instantiable4[
       /* now */ js.Function0[Double], 
       /* schedule */ js.Function2[
-        /* state */ js.Any, 
-        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+        /* state */ Any, 
+        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
         IDisposable
       ], 
       /* scheduleRelative */ js.Function3[
-        /* state */ js.Any, 
+        /* state */ Any, 
         /* dueTime */ Double, 
-        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
         IDisposable
       ], 
       /* scheduleAbsolute */ js.Function3[
-        /* state */ js.Any, 
+        /* state */ Any, 
         /* dueTime */ Double, 
-        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
+        /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ Any, IDisposable], 
         IDisposable
       ], 
       Scheduler

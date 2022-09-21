@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("simplecrawler")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.simplecrawler.mod.^ {
       def this(initialURL: String) = this()
     }

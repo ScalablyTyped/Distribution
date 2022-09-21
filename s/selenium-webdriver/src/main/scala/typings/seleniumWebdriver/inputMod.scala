@@ -5,7 +5,6 @@ import typings.seleniumWebdriver.anon.AsyncBoolean
 import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.anon.X
 import typings.seleniumWebdriver.commandMod.Executor
-import typings.seleniumWebdriver.mod.ILocation
 import typings.seleniumWebdriver.mod.WebElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object inputMod {
   
   @JSImport("selenium-webdriver/lib/input", "Actions")
   @js.native
-  class Actions protected () extends StObject {
+  open class Actions protected () extends StObject {
     // region Constructors
     def this(executor: Executor) = this()
     def this(executor: Executor, options: Async) = this()
@@ -30,67 +29,37 @@ object inputMod {
     def clear(): js.Promise[Unit] = js.native
     
     /**
-      * Clicks a mouse button.
+      * Short-hand for performing a simple left-click (down/up) with the mouse.
       *
-      * If an element is provided, the mouse will first be moved to the center
-      * of that element. This is equivalent to:
-      *
-      *     sequence.mouseMove(element).click()
-      *
-      * @param {(./WebElement|input.Button)=} opt_elementOrButton Either
-      *     the element to interact with or the button to click with.
-      *     Defaults to {@link input.Button.LEFT} if neither an element nor
-      *     button is specified.
-      * @param {input.Button=} opt_button The button to use. Defaults to
-      *     {@link input.Button.LEFT}. Ignored if a button is provided as the
-      *     first argument.
-      * @return {!Actions} A self reference.
+      * @param {./WebElement=} element If specified, the mouse will
+      *     first be moved to the center of the element before performing the
+      *     click.
+      * @return {!Actions} a self reference.
       */
     def click(): Actions = js.native
-    def click(opt_elementOrButton: String): Actions = js.native
-    def click(opt_elementOrButton: String, opt_button: String): Actions = js.native
-    def click(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
-    def click(opt_elementOrButton: WebElement): Actions = js.native
-    def click(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+    def click(element: WebElement): Actions = js.native
     
     /**
       * Short-hand for performing a simple right-click (down/up) with the mouse.
       *
-      * @param {./webdriver.WebElement=} element If specified, the mouse will
+      * @param {./WebElement=} element If specified, the mouse will
       *     first be moved to the center of the element before performing the
       *     click.
       * @return {!Actions} a self reference.
       */
     def contextClick(): Actions = js.native
-    def contextClick(opt_elementOrButton: String): Actions = js.native
-    def contextClick(opt_elementOrButton: WebElement): Actions = js.native
+    def contextClick(element: WebElement): Actions = js.native
     
     /**
-      * Double-clicks a mouse button.
+      * Short-hand for performing a double left-click with the mouse.
       *
-      * If an element is provided, the mouse will first be moved to the center of
-      * that element. This is equivalent to:
-      *
-      *     sequence.mouseMove(element).doubleClick()
-      *
-      * Warning: this method currently only supports the left mouse button. See
-      * [issue 4047](http://code.google.com/p/selenium/issues/detail?id=4047).
-      *
-      * @param {(./WebElement|input.Button)=} opt_elementOrButton Either
-      *     the element to interact with or the button to click with.
-      *     Defaults to {@link input.Button.LEFT} if neither an element nor
-      *     button is specified.
-      * @param {input.Button=} opt_button The button to use. Defaults to
-      *     {@link input.Button.LEFT}. Ignored if a button is provided as the
-      *     first argument.
-      * @return {!Actions} A self reference.
+      * @param {./WebElement=} element If specified, the mouse will
+      *     first be moved to the center of the element before performing the
+      *     click.
+      * @return {!Actions} a self reference.
       */
     def doubleClick(): Actions = js.native
-    def doubleClick(opt_elementOrButton: String): Actions = js.native
-    def doubleClick(opt_elementOrButton: String, opt_button: String): Actions = js.native
-    def doubleClick(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
-    def doubleClick(opt_elementOrButton: WebElement): Actions = js.native
-    def doubleClick(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+    def doubleClick(element: WebElement): Actions = js.native
     
     /**
       * Convenience function for performing a 'drag and drop' manuever. The target
@@ -127,84 +96,6 @@ object inputMod {
     def keyboard(): Keyboard = js.native
     
     def mouse(): Pointer = js.native
-    
-    /**
-      * Presses a mouse button. The mouse button will not be released until
-      * {@link #mouseUp} is called, regardless of whether that call is made in this
-      * sequence or another. The behavior for out-of-order events (e.g. mouseDown,
-      * click) is undefined.
-      *
-      * If an element is provided, the mouse will first be moved to the center
-      * of that element. This is equivalent to:
-      *
-      *     sequence.mouseMove(element).mouseDown()
-      *
-      * Warning: this method currently only supports the left mouse button. See
-      * [issue 4047](http://code.google.com/p/selenium/issues/detail?id=4047).
-      *
-      * @param {(./WebElement|input.Button)=} opt_elementOrButton Either
-      *     the element to interact with or the button to click with.
-      *     Defaults to {@link input.Button.LEFT} if neither an element nor
-      *     button is specified.
-      * @param {input.Button=} opt_button The button to use. Defaults to
-      *     {@link input.Button.LEFT}. Ignored if a button is provided as the
-      *     first argument.
-      * @return {!Actions} A self reference.
-      */
-    def mouseDown(): Actions = js.native
-    def mouseDown(opt_elementOrButton: String): Actions = js.native
-    def mouseDown(opt_elementOrButton: String, opt_button: String): Actions = js.native
-    def mouseDown(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
-    def mouseDown(opt_elementOrButton: WebElement): Actions = js.native
-    def mouseDown(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
-    
-    def mouseMove(location: ILocation): Actions = js.native
-    def mouseMove(location: ILocation, opt_offset: ILocation): Actions = js.native
-    /**
-      * Moves the mouse.  The location to move to may be specified in terms of the
-      * mouse's current location, an offset relative to the top-left corner of an
-      * element, or an element (in which case the middle of the element is used).
-      *
-      * @param {(!./WebElement|{x: number, y: number})} location The
-      *     location to drag to, as either another WebElement or an offset in
-      *     pixels.
-      * @param {{x: number, y: number}=} opt_offset If the target {@code location}
-      *     is defined as a {@link ./WebElement}, this parameter defines
-      *     an offset within that element. The offset should be specified in pixels
-      *     relative to the top-left corner of the element's bounding box. If
-      *     omitted, the element's center will be used as the target offset.
-      * @return {!Actions} A self reference.
-      */
-    def mouseMove(location: WebElement): Actions = js.native
-    def mouseMove(location: WebElement, opt_offset: ILocation): Actions = js.native
-    
-    /**
-      * Releases a mouse button. Behavior is undefined for calling this function
-      * without a previous call to {@link #mouseDown}.
-      *
-      * If an element is provided, the mouse will first be moved to the center
-      * of that element. This is equivalent to:
-      *
-      *     sequence.mouseMove(element).mouseUp()
-      *
-      * Warning: this method currently only supports the left mouse button. See
-      * [issue 4047](http://code.google.com/p/selenium/issues/detail?id=4047).
-      *
-      * @param {(./WebElement|input.Button)=} opt_elementOrButton Either
-      *     the element to interact with or the button to click with.
-      *     Defaults to {@link input.Button.LEFT} if neither an element nor
-      *     button is specified.
-      * @param {input.Button=} opt_button The button to use. Defaults to
-      *     {@link input.Button.LEFT}. Ignored if a button is provided as the
-      *     first argument.
-      * @return {!Actions} A self reference.
-      */
-    def mouseUp(): Actions = js.native
-    def mouseUp(opt_elementOrButton: String): Actions = js.native
-    def mouseUp(opt_elementOrButton: String, opt_button: String): Actions = js.native
-    def mouseUp(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
-    def mouseUp(opt_elementOrButton: WebElement): Actions = js.native
-    def mouseUp(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
     
     /**
       * Inserts an action for moving the mouse `x` and `y` pixels relative to the
@@ -291,7 +182,7 @@ object inputMod {
   
   @JSImport("selenium-webdriver/lib/input", "Device")
   @js.native
-  class Device protected () extends StObject {
+  open class Device protected () extends StObject {
     def this(`type`: String, id: String) = this()
   }
   
@@ -305,7 +196,7 @@ object inputMod {
   
   @JSImport("selenium-webdriver/lib/input", "Keyboard")
   @js.native
-  class Keyboard protected () extends Device {
+  open class Keyboard protected () extends Device {
     def this(`type`: String, id: String) = this()
   }
   
@@ -335,7 +226,7 @@ object inputMod {
   
   @JSImport("selenium-webdriver/lib/input", "Pointer")
   @js.native
-  class Pointer protected () extends Device {
+  open class Pointer protected () extends Device {
     def this(`type`: String, id: String) = this()
   }
   

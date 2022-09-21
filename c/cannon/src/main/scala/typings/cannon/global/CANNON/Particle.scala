@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Particle")
 @js.native
-class Particle ()
+open class Particle ()
   extends StObject
      with typings.cannon.CANNON.Shape {
   
@@ -18,6 +18,9 @@ class Particle ()
   
   /* CompleteClass */
   var collisionResponse: Boolean = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var `type`: Double = js.native

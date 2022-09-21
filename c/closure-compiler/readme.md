@@ -9,10 +9,10 @@ Bindings to Google's Closure Compiler
 | ------------------ | :-------------: |
 | Full name          | closure-compiler |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1225253 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57155.0 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/tim-smart/node-closure#readme)

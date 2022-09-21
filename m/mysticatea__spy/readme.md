@@ -10,10 +10,10 @@ Just a spy library.
 | ------------------ | :-------------: |
 | Full name          | @mysticatea/spy |
 | Keywords           | spy, test, testing |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 844 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3468.3333333333335 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/mysticatea/spy#readme)

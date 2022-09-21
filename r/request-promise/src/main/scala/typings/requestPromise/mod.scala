@@ -23,7 +23,7 @@ object mod extends Shortcut {
   
   @JSImport("request-promise", JSImport.Namespace)
   @js.native
-  val ^ : RequestPromiseAPI[js.Any] = js.native
+  val ^ : RequestPromiseAPI[Any] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.requestPromise.mod.OptionsWithUri
@@ -77,7 +77,7 @@ object mod extends Shortcut {
     var cancel_Original: js.Function0[Unit] = js.native
     
     def `catch`[U](): Bluebird[U | T] = js.native
-    def `catch`[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | T] = js.native
+    def `catch`[U](onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U | T] = js.native
     def `catch`[U, E1](
       // tslint:disable-next-line:unified-signatures
     filter1: CatchFilter[E1],
@@ -523,9 +523,9 @@ object mod extends Shortcut {
     @JSName("catch")
     var catch_Original: FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] = js.native
     
-    def `finally`(handler: js.Function0[Resolvable[js.Any]]): Bluebird[T] = js.native
+    def `finally`(handler: js.Function0[Resolvable[Any]]): Bluebird[T] = js.native
     @JSName("finally")
-    var finally_Original: js.Function1[/* handler */ js.Function0[Resolvable[js.Any]], Bluebird[T]] = js.native
+    var finally_Original: js.Function1[/* handler */ js.Function0[Resolvable[Any]], Bluebird[T]] = js.native
     
     def promise(): typings.bluebird.mod.^[T] = js.native
     
@@ -533,10 +533,10 @@ object mod extends Shortcut {
     def `then`[U](onFulfill: js.Function1[/* value */ T, Resolvable[U]]): Bluebird[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, Resolvable[U]],
-      onReject: js.Function1[/* error */ js.Any, Resolvable[U]]
+      onReject: js.Function1[/* error */ Any, Resolvable[U]]
     ): Bluebird[U] = js.native
-    def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall[T] = js.native
     @JSName("then")
@@ -546,10 +546,10 @@ object mod extends Shortcut {
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, Resolvable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]
     ): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
@@ -557,12 +557,12 @@ object mod extends Shortcut {
     @JSName("then")
     def then_TResult1TResult2_Thenable[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
   }
   
   type RequestPromiseAPI[T] = RequestAPI[RequestPromise[T], RequestPromiseOptions, RequiredUriUrl]
@@ -577,10 +577,10 @@ object mod extends Shortcut {
     
     var transform: js.UndefOr[
         js.Function3[
-          /* body */ js.Any, 
+          /* body */ Any, 
           /* response */ Response, 
           /* resolveWithFullResponse */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -604,7 +604,7 @@ object mod extends Shortcut {
       inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
       
       inline def setTransform(
-        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => js.Any
+        value: (/* body */ Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransform2xxOnly(value: Boolean): Self = StObject.set(x, "transform2xxOnly", value.asInstanceOf[js.Any])
@@ -615,8 +615,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = RequestPromiseAPI[js.Any]
+  type _To = RequestPromiseAPI[Any]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: RequestPromiseAPI[js.Any] = ^
+  override def _to: RequestPromiseAPI[Any] = ^
 }

@@ -56,7 +56,7 @@ object gapi {
           
           inline def setClaimReviewUndefined: Self = StObject.set(x, "claimReview", js.undefined)
           
-          inline def setClaimReviewVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview*): Self = StObject.set(x, "claimReview", js.Array(value :_*))
+          inline def setClaimReviewVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview*): Self = StObject.set(x, "claimReview", js.Array(value*))
           
           inline def setClaimant(value: String): Self = StObject.set(x, "claimant", value.asInstanceOf[js.Any])
           
@@ -250,7 +250,7 @@ object gapi {
         
         /**
           * A list of links to works in which this claim appears, aside from the one specified in `claim_first_appearance`. Corresponds to
-          * `ClaimReview.itemReviewed[@type=Claim].appearance.url`.
+          * `ClaimReview.itemReviewed[@‍type=Claim].appearance.url`.
           */
         var claimAppearances: js.UndefOr[js.Array[String]] = js.undefined
         
@@ -260,7 +260,7 @@ object gapi {
         /** The date when the claim was made or entered public discourse. Corresponds to `ClaimReview.itemReviewed.datePublished`. */
         var claimDate: js.UndefOr[String] = js.undefined
         
-        /** A link to a work in which this claim first appears. Corresponds to `ClaimReview.itemReviewed[@type=Claim].firstAppearance.url`. */
+        /** A link to a work in which this claim first appears. Corresponds to `ClaimReview.itemReviewed[@‍type=Claim].firstAppearance.url`. */
         var claimFirstAppearance: js.UndefOr[String] = js.undefined
         
         /** The location where this claim was made. Corresponds to `ClaimReview.itemReviewed.name`. */
@@ -291,7 +291,7 @@ object gapi {
           
           inline def setClaimAppearancesUndefined: Self = StObject.set(x, "claimAppearances", js.undefined)
           
-          inline def setClaimAppearancesVarargs(value: String*): Self = StObject.set(x, "claimAppearances", js.Array(value :_*))
+          inline def setClaimAppearancesVarargs(value: String*): Self = StObject.set(x, "claimAppearances", js.Array(value*))
           
           inline def setClaimAuthor(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor): Self = StObject.set(x, "claimAuthor", value.asInstanceOf[js.Any])
           
@@ -366,7 +366,7 @@ object gapi {
           
           inline def setClaimReviewMarkupsUndefined: Self = StObject.set(x, "claimReviewMarkups", js.undefined)
           
-          inline def setClaimReviewMarkupsVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup*): Self = StObject.set(x, "claimReviewMarkups", js.Array(value :_*))
+          inline def setClaimReviewMarkupsVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup*): Self = StObject.set(x, "claimReviewMarkups", js.Array(value*))
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -407,7 +407,7 @@ object gapi {
           
           inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
           
-          inline def setClaimsVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1Claim*): Self = StObject.set(x, "claims", js.Array(value :_*))
+          inline def setClaimsVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1Claim*): Self = StObject.set(x, "claims", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -436,7 +436,7 @@ object gapi {
           
           inline def setClaimReviewMarkupPagesUndefined: Self = StObject.set(x, "claimReviewMarkupPages", js.undefined)
           
-          inline def setClaimReviewMarkupPagesVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage*): Self = StObject.set(x, "claimReviewMarkupPages", js.Array(value :_*))
+          inline def setClaimReviewMarkupPagesVarargs(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage*): Self = StObject.set(x, "claimReviewMarkupPages", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           

@@ -12,12 +12,12 @@ trait ListAssociatedAssetsRequest extends StObject {
   var assetId: ID
   
   /**
-    * The ID of the hierarchy by which child assets are associated to the asset. To find a hierarchy ID, use the DescribeAsset or DescribeAssetModel operations. This parameter is required if you choose CHILD for traversalDirection. For more information, see Asset hierarchies in the AWS IoT SiteWise User Guide.
+    * The ID of the hierarchy by which child assets are associated to the asset. To find a hierarchy ID, use the DescribeAsset or DescribeAssetModel operations. This parameter is required if you choose CHILD for traversalDirection. For more information, see Asset hierarchies in the IoT SiteWise User Guide.
     */
   var hierarchyId: js.UndefOr[ID] = js.undefined
   
   /**
-    * The maximum number of results to be returned per paginated request. Default: 50
+    * The maximum number of results to return for each paginated request. Default: 50
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "KeyChain")
 @js.native
-class KeyChain ()
+open class KeyChain ()
   extends typings.ndnJs.keyChainMod.KeyChain {
   def this(pibLocator: String, tpmLocator: String) = this()
   def this(pibLocator: String, tpmLocator: String, allowReset: Boolean) = this()

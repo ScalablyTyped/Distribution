@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait TestResultTrendFilter extends StObject {
   
   var envDefinitionIds: js.Array[Double]
   
-  var maxCompleteDate: Date
+  var maxCompleteDate: js.Date
   
   var publishContext: String
   
@@ -30,7 +29,7 @@ object TestResultTrendFilter {
     buildCount: Double,
     definitionIds: js.Array[Double],
     envDefinitionIds: js.Array[Double],
-    maxCompleteDate: Date,
+    maxCompleteDate: js.Date,
     publishContext: String,
     testRunTitles: js.Array[String],
     trendDays: Double
@@ -43,25 +42,25 @@ object TestResultTrendFilter {
     
     inline def setBranchNames(value: js.Array[String]): Self = StObject.set(x, "branchNames", value.asInstanceOf[js.Any])
     
-    inline def setBranchNamesVarargs(value: String*): Self = StObject.set(x, "branchNames", js.Array(value :_*))
+    inline def setBranchNamesVarargs(value: String*): Self = StObject.set(x, "branchNames", js.Array(value*))
     
     inline def setBuildCount(value: Double): Self = StObject.set(x, "buildCount", value.asInstanceOf[js.Any])
     
     inline def setDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "definitionIds", value.asInstanceOf[js.Any])
     
-    inline def setDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "definitionIds", js.Array(value :_*))
+    inline def setDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "definitionIds", js.Array(value*))
     
     inline def setEnvDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "envDefinitionIds", value.asInstanceOf[js.Any])
     
-    inline def setEnvDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "envDefinitionIds", js.Array(value :_*))
+    inline def setEnvDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "envDefinitionIds", js.Array(value*))
     
-    inline def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
+    inline def setMaxCompleteDate(value: js.Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
     
     inline def setPublishContext(value: String): Self = StObject.set(x, "publishContext", value.asInstanceOf[js.Any])
     
     inline def setTestRunTitles(value: js.Array[String]): Self = StObject.set(x, "testRunTitles", value.asInstanceOf[js.Any])
     
-    inline def setTestRunTitlesVarargs(value: String*): Self = StObject.set(x, "testRunTitles", js.Array(value :_*))
+    inline def setTestRunTitlesVarargs(value: String*): Self = StObject.set(x, "testRunTitles", js.Array(value*))
     
     inline def setTrendDays(value: Double): Self = StObject.set(x, "trendDays", value.asInstanceOf[js.Any])
   }

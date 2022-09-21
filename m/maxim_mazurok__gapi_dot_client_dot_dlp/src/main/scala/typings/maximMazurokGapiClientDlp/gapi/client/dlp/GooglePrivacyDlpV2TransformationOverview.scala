@@ -25,7 +25,7 @@ object GooglePrivacyDlpV2TransformationOverview {
     
     inline def setTransformationSummariesUndefined: Self = StObject.set(x, "transformationSummaries", js.undefined)
     
-    inline def setTransformationSummariesVarargs(value: GooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value :_*))
+    inline def setTransformationSummariesVarargs(value: GooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value*))
     
     inline def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
     

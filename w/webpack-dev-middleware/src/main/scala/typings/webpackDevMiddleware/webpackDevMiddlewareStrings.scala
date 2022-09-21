@@ -1,5 +1,6 @@
 package typings.webpackDevMiddleware
 
+import typings.webpackDevMiddleware.setupHooksMod._StatsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,26 +8,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object webpackDevMiddlewareStrings {
   
   @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
+  sealed trait detailed
+    extends StObject
+       with _StatsOptions
+  inline def detailed: detailed = "detailed".asInstanceOf[detailed]
   
   @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
+  sealed trait `errors-only`
+    extends StObject
+       with _StatsOptions
+  inline def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
   
   @js.native
-  sealed trait info extends StObject
-  inline def info: info = "info".asInstanceOf[info]
+  sealed trait `errors-warnings`
+    extends StObject
+       with _StatsOptions
+  inline def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
   
   @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
+  sealed trait minimal
+    extends StObject
+       with _StatsOptions
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait trace extends StObject
-  inline def trace: trace = "trace".asInstanceOf[trace]
+  sealed trait none
+    extends StObject
+       with _StatsOptions
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait warn extends StObject
-  inline def warn: warn = "warn".asInstanceOf[warn]
+  sealed trait normal
+    extends StObject
+       with _StatsOptions
+  inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
+  sealed trait summary
+    extends StObject
+       with _StatsOptions
+  inline def summary: summary = "summary".asInstanceOf[summary]
+  
+  @js.native
+  sealed trait verbose
+    extends StObject
+       with _StatsOptions
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

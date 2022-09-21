@@ -32,9 +32,7 @@ object ChildrenPersist {
     
     inline def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenFunction2(
-      value: (/* error */ typings.std.Error, /* state */ AsyncRejected[T, AbstractState[T]]) => ReactNode
-    ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+    inline def setChildrenFunction2(value: (/* error */ js.Error, /* state */ AsyncRejected[T, AbstractState[T]]) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

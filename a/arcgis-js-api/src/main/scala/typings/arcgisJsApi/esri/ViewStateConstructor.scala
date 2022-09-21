@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ViewStateConstructor
   extends StObject
-     with Instantiable0[ViewState]
+     with /**
+  * Object that holds information about the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) state.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-ViewState.html)
+  */
+Instantiable0[ViewState]
      with Instantiable1[/* properties */ ViewStateProperties, ViewState] {
   
-  def fromJSON(json: js.Any): ViewState = js.native
+  def fromJSON(json: Any): ViewState = js.native
 }

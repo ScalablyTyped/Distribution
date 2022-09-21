@@ -36,12 +36,6 @@ object CognitoIdentityProvider {
     __obj.asInstanceOf[CognitoIdentityProvider]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "CognitoIdentityProvider")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: CognitoIdentityProvider): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: CognitoIdentityProvider](x: Self) {
     
     inline def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])

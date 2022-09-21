@@ -1,12 +1,29 @@
 package typings.vscodeJsonrpc
 
+import typings.vscodeJsonrpc.connectionMod.TraceValues
 import typings.vscodeJsonrpc.messagesMod.LSPMessageType
-import typings.vscodeJsonrpc.mod.TraceValues
+import typings.vscodeJsonrpc.ralMod.MessageBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vscodeJsonrpcStrings {
+  
+  @js.native
+  sealed trait LinkedMap extends StObject
+  inline def LinkedMap: LinkedMap = "LinkedMap".asInstanceOf[LinkedMap]
+  
+  @js.native
+  sealed trait ascii
+    extends StObject
+       with MessageBufferEncoding
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @js.native
+  sealed trait compact
+    extends StObject
+       with TraceValues
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait messages
@@ -55,6 +72,12 @@ object vscodeJsonrpcStrings {
     extends StObject
        with LSPMessageType
   inline def `send-response`: `send-response` = "send-response".asInstanceOf[`send-response`]
+  
+  @js.native
+  sealed trait `utf-8`
+    extends StObject
+       with MessageBufferEncoding
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
   sealed trait verbose

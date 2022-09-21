@@ -11,7 +11,7 @@ object urlMod {
   
   @JSImport("apollo-server-env/dist/url", "URL")
   @js.native
-  class URL protected () extends StObject {
+  open class URL protected () extends StObject {
     def this(input: String) = this()
     def this(input: String, base: String) = this()
     def this(input: String, base: URL) = this()
@@ -45,7 +45,7 @@ object urlMod {
   
   @JSImport("apollo-server-env/dist/url", "URLSearchParams")
   @js.native
-  class URLSearchParams ()
+  open class URLSearchParams ()
     extends StObject
        with Iterable[js.Tuple2[String, String]] {
     def this(init: URLSearchParamsInit) = this()
@@ -76,5 +76,5 @@ object urlMod {
     def values(): IterableIterator[String] = js.native
   }
   
-  type URLSearchParamsInit = URLSearchParams | String | (StringDictionary[js.UndefOr[js.Object | js.Array[js.Object]]]) | (Iterable[js.Tuple2[String, js.Object]]) | (js.Array[js.Tuple2[String, js.Object]])
+  type URLSearchParamsInit = URLSearchParams | String | (StringDictionary[js.UndefOr[js.Object | js.Array[js.Object]]]) | (js.Iterable[js.Tuple2[String, js.Object]]) | (js.Array[js.Tuple2[String, js.Object]])
 }

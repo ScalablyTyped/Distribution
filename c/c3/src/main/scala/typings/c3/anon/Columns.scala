@@ -46,7 +46,7 @@ object Columns {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
@@ -60,7 +60,7 @@ object Columns {
     
     inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
+    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value*))
     
     inline def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ object refractionTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/refractionTexture", "RefractionTexture")
   @js.native
-  class RefractionTexture protected () extends RenderTargetTexture {
+  open class RefractionTexture protected () extends RenderTargetTexture {
     /**
       * Creates a refraction texture used by refraction channel of the standard material.
       * It is like a mirror but to see through a material.
@@ -21,7 +21,9 @@ object refractionTextureMod {
       * @param scene Define the scene the refraction belongs to
       * @param generateMipMaps Define if we need to generate mips level for the refraction
       */
+    def this(name: String, size: Double) = this()
     def this(name: String, size: Double, scene: Scene) = this()
+    def this(name: String, size: Double, scene: Unit, generateMipMaps: Boolean) = this()
     def this(name: String, size: Double, scene: Scene, generateMipMaps: Boolean) = this()
     
     /**

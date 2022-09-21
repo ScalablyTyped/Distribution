@@ -12,7 +12,7 @@ object knobManagerMod {
   
   @JSImport("@storybook/addon-knobs/dist/KnobManager", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with KnobManager {
     
@@ -23,7 +23,7 @@ object knobManagerMod {
     var calling: Boolean = js.native
     
     /* CompleteClass */
-    override def getKnobValue(hasValue: Knob[js.Any]): js.Any = js.native
+    override def getKnobValue(hasValue: Knob[Any]): Any = js.native
     
     /* CompleteClass */
     override def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
@@ -51,7 +51,7 @@ object knobManagerMod {
     
     var channel: js.UndefOr[Channel] = js.undefined
     
-    def getKnobValue(hasValue: Knob[js.Any]): js.Any
+    def getKnobValue(hasValue: Knob[Any]): Any
     
     def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
         /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
@@ -70,8 +70,8 @@ object knobManagerMod {
     inline def apply(
       _mayCallChannel: () => Unit,
       calling: Boolean,
-      getKnobValue: Knob[js.Any] => js.Any,
-      knob: (String, Knob[js.Any]) => Mutable[
+      getKnobValue: Knob[Any] => Any,
+      knob: (String, Knob[Any]) => Mutable[
           /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
         ],
       knobStore: typings.storybookAddonKnobs.knobStoreMod.default,
@@ -91,10 +91,10 @@ object knobManagerMod {
       
       inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      inline def setGetKnobValue(value: Knob[js.Any] => js.Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
+      inline def setGetKnobValue(value: Knob[Any] => Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
       
       inline def setKnob(
-        value: (String, Knob[js.Any]) => Mutable[
+        value: (String, Knob[Any]) => Mutable[
               /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
             ]
       ): Self = StObject.set(x, "knob", js.Any.fromFunction2(value))

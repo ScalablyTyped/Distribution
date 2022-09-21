@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DriveExportOptions extends StObject {
   
-  /** Set to true to include access level information for users with indirect access to files. */
+  /** To include access level information for users with [indirect access](https://support.google.com/vault/answer/6099459#metadata) to files, set to **true**. */
   var includeAccessInfo: js.UndefOr[Boolean] = js.undefined
 }
 object DriveExportOptions {

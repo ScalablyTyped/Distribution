@@ -9,7 +9,7 @@ trait UntagResourceRequest extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: ResourceARN
+  var ResourceArn: typings.awsSdk.networkmanagerMod.ResourceArn
   
   /**
     * The tag keys to remove from the specified resource.
@@ -18,17 +18,17 @@ trait UntagResourceRequest extends StObject {
 }
 object UntagResourceRequest {
   
-  inline def apply(ResourceArn: ResourceARN, TagKeys: TagKeyList): UntagResourceRequest = {
+  inline def apply(ResourceArn: ResourceArn, TagKeys: TagKeyList): UntagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceRequest]
   }
   
   extension [Self <: UntagResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: ResourceARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

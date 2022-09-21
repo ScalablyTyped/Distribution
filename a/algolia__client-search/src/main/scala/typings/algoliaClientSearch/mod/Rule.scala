@@ -61,7 +61,7 @@ object Rule {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setConsequence(value: Consequence): Self = StObject.set(x, "consequence", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object Rule {
     
     inline def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
     
-    inline def setValidityVarargs(value: TimeRange*): Self = StObject.set(x, "validity", js.Array(value :_*))
+    inline def setValidityVarargs(value: TimeRange*): Self = StObject.set(x, "validity", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PlayerFramework.PluginBase")
 @js.native
-class PluginBase ()
+open class PluginBase ()
   extends StObject
      with typings.playerframework.PlayerFramework.PluginBase {
   

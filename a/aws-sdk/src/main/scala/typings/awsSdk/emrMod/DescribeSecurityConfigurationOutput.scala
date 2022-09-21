@@ -9,7 +9,7 @@ trait DescribeSecurityConfigurationOutput extends StObject {
   /**
     * The date and time the security configuration was created
     */
-  var CreationDateTime: js.UndefOr[Date] = js.undefined
+  var CreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the security configuration.
@@ -30,7 +30,7 @@ object DescribeSecurityConfigurationOutput {
   
   extension [Self <: DescribeSecurityConfigurationOutput](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     

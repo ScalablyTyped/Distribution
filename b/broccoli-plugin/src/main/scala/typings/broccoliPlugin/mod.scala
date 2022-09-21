@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("broccoli-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Plugin {
     def this(inputNodes: js.Array[InputNode]) = this()
@@ -44,33 +44,33 @@ object mod {
     
     def __broccoliGetInfo__(): TransformNodeInfo = js.native
     
-    /* private */ var _annotation: js.Any = js.native
+    /* private */ var _annotation: Any = js.native
     
-    /* private */ var _baseConstructorCalled: js.Any = js.native
+    /* private */ var _baseConstructorCalled: Any = js.native
     
-    /* private */ var _checkOverrides: js.Any = js.native
+    /* private */ var _checkOverrides: Any = js.native
     
-    /* private */ var _initializeReadCompat: js.Any = js.native
+    /* private */ var _initializeReadCompat: Any = js.native
     
-    /* private */ var _inputNodes: js.Any = js.native
+    /* private */ var _inputNodes: Any = js.native
     
-    /* private */ var _instantiationStack: js.Any = js.native
+    /* private */ var _instantiationError: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ var _needsCache: js.Any = js.native
+    /* private */ var _needsCache: Any = js.native
     
-    /* private */ var _persistentOutput: js.Any = js.native
+    /* private */ var _persistentOutput: Any = js.native
     
-    /* private */ var _readCompat: js.Any = js.native
+    /* private */ var _readCompat: Any = js.native
     
-    /* private */ var _readCompatError: js.Any = js.native
+    /* private */ var _readCompatError: Any = js.native
     
-    /* private */ var _setup: js.Any = js.native
+    /* private */ var _setup: Any = js.native
     
-    /* private */ var _trackInputChanges: js.Any = js.native
+    /* private */ var _trackInputChanges: Any = js.native
     
-    /* private */ var _volatile: js.Any = js.native
+    /* private */ var _volatile: Any = js.native
     
     /**
       * Override this method in your subclass. It will be called on each (re-)build.
@@ -102,7 +102,7 @@ object mod {
       */
     var cachePath: js.UndefOr[String] = js.native
     
-    def cleanup(): Unit = js.native
+    def cleanup(): js.Promise[Unit] = js.native
     
     /**
       * Return the object on which Broccoli will call obj.build(). Called once after instantiation.
@@ -131,6 +131,6 @@ object mod {
     
     def read(readTree: MapSeriesIterator[InputNode]): js.UndefOr[js.Promise[String]] = js.native
     
-    /* private */ var rebuild: js.Any = js.native
+    /* private */ var rebuild: Any = js.native
   }
 }

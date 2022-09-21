@@ -18,7 +18,7 @@ trait OMathMatCol extends StObject {
   
   def Delete(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathMatCol_typekey")
   var WordDotOMathMatCol_typekey: OMathMatCol
@@ -32,7 +32,7 @@ object OMathMatCol {
     ColIndex: Double,
     Creator: Double,
     Delete: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathMatCol_typekey: OMathMatCol
   ): OMathMatCol = {
     val __obj = js.Dynamic.literal(Align = Align.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Args = Args.asInstanceOf[js.Any], ColIndex = ColIndex.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object OMathMatCol {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathMatCol_typekey(value: OMathMatCol): Self = StObject.set(x, "Word.OMathMatCol_typekey", value.asInstanceOf[js.Any])
   }

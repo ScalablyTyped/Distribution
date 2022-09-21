@@ -23,27 +23,19 @@ object ExpandedCallback {
   
   extension [Self <: ExpandedCallback](x: Self) {
     
-    inline def setLoad(
-      value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
-    ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    inline def setSetup(
-      value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
-    ): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
+    inline def setSetup(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
     
     inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
-    inline def setTeardown(
-      value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
-    ): Self = StObject.set(x, "teardown", js.Any.fromFunction2(value))
+    inline def setTeardown(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "teardown", js.Any.fromFunction2(value))
     
     inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     
-    inline def setUnload(
-      value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
-    ): Self = StObject.set(x, "unload", js.Any.fromFunction2(value))
+    inline def setUnload(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "unload", js.Any.fromFunction2(value))
     
     inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
   }

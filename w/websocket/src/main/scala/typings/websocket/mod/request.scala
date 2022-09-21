@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("websocket", "request")
 @js.native
-class request protected () extends EventEmitter {
+open class request protected () extends EventEmitter {
   def this(socket: Socket, httpRequest: IncomingMessage, config: IServerConfig) = this()
   
   def _handleSocketCloseBeforeAccept(): Unit = js.native
@@ -39,16 +39,16 @@ class request protected () extends EventEmitter {
   def accept(acceptedProtocol: String, allowedOrigin: String): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: Unit, cookies: js.Array[ICookie]): connection = js.native
+  def accept(acceptedProtocol: Null, allowedOrigin: String): connection = js.native
+  def accept(acceptedProtocol: Null, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
+  def accept(acceptedProtocol: Null, allowedOrigin: Unit, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: Unit, allowedOrigin: String): connection = js.native
   def accept(acceptedProtocol: Unit, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: Unit, allowedOrigin: Unit, cookies: js.Array[ICookie]): connection = js.native
   
+  def addListener(event: requestResolved | requestRejected, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_requestAccepted(event: requestAccepted, cb: js.Function1[/* connection */ connection, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_requestRejected(event: requestRejected, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_requestResolved(event: requestResolved, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
   
   var cookies: js.Array[ICookie] = js.native
   
@@ -61,13 +61,10 @@ class request protected () extends EventEmitter {
   /** `Sec-WebSocket-Key` */
   var key: String = js.native
   
+  // Events
+  def on(event: requestResolved | requestRejected, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
   @JSName("on")
   def on_requestAccepted(event: requestAccepted, cb: js.Function1[/* connection */ connection, Unit]): this.type = js.native
-  @JSName("on")
-  def on_requestRejected(event: requestRejected, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
-  // Events
-  @JSName("on")
-  def on_requestResolved(event: requestResolved, cb: js.Function1[/* request */ this.type, Unit]): this.type = js.native
   
   /**
     * If the client is a web browser, origin will be a string containing the URL
@@ -109,7 +106,7 @@ class request protected () extends EventEmitter {
   var remoteAddresses: js.Array[String] = js.native
   
   /** An array containing a list of extensions requested by the client */
-  var requestedExtensions: js.Array[js.Any] = js.native
+  var requestedExtensions: js.Array[Any] = js.native
   
   /**
     * List of strings that indicate the subprotocols the client would like to speak.

@@ -17,7 +17,7 @@ trait ResponseLaunchTemplateData extends StObject {
   var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationResponse] = js.undefined
   
   /**
-    * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
+    * The CPU options for the instance. For more information, see Optimizing CPU options in the Amazon Elastic Compute Cloud User Guide.
     */
   var CpuOptions: js.UndefOr[LaunchTemplateCpuOptions] = js.undefined
   
@@ -25,6 +25,11 @@ trait ResponseLaunchTemplateData extends StObject {
     * The credit option for CPU usage of the instance.
     */
   var CreditSpecification: js.UndefOr[typings.awsSdk.ec2Mod.CreditSpecification] = js.undefined
+  
+  /**
+    * Indicates whether the instance is enabled for stop protection. For more information, see Stop Protection.
+    */
+  var DisableApiStop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, indicates that the instance cannot be terminated using the Amazon EC2 console, command line tool, or API.
@@ -47,12 +52,12 @@ trait ResponseLaunchTemplateData extends StObject {
   var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorResponseList] = js.undefined
   
   /**
-    * Indicates whether the instance is enabled for AWS Nitro Enclaves.
+    * Indicates whether the instance is enabled for Amazon Web Services Nitro Enclaves.
     */
   var EnclaveOptions: js.UndefOr[LaunchTemplateEnclaveOptions] = js.undefined
   
   /**
-    * Indicates whether an instance is configured for hibernation. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
+    * Indicates whether an instance is configured for hibernation. For more information, see Hibernate your instance in the Amazon Elastic Compute Cloud User Guide.
     */
   var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptions] = js.undefined
   
@@ -77,6 +82,11 @@ trait ResponseLaunchTemplateData extends StObject {
   var InstanceMarketOptions: js.UndefOr[LaunchTemplateInstanceMarketOptions] = js.undefined
   
   /**
+    * The attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with these attributes. If you specify InstanceRequirements, you can't specify InstanceTypes.
+    */
+  var InstanceRequirements: js.UndefOr[typings.awsSdk.ec2Mod.InstanceRequirements] = js.undefined
+  
+  /**
     * The instance type.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
@@ -97,7 +107,12 @@ trait ResponseLaunchTemplateData extends StObject {
   var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseList] = js.undefined
   
   /**
-    * The metadata options for the instance. For more information, see Instance Metadata and User Data in the Amazon Elastic Compute Cloud User Guide.
+    * The maintenance options for your instance.
+    */
+  var MaintenanceOptions: js.UndefOr[LaunchTemplateInstanceMaintenanceOptions] = js.undefined
+  
+  /**
+    * The metadata options for the instance. For more information, see Instance metadata and user data in the Amazon Elastic Compute Cloud User Guide.
     */
   var MetadataOptions: js.UndefOr[LaunchTemplateInstanceMetadataOptions] = js.undefined
   
@@ -117,6 +132,11 @@ trait ResponseLaunchTemplateData extends StObject {
   var Placement: js.UndefOr[LaunchTemplatePlacement] = js.undefined
   
   /**
+    * The options for the instance hostname.
+    */
+  var PrivateDnsNameOptions: js.UndefOr[LaunchTemplatePrivateDnsNameOptions] = js.undefined
+  
+  /**
     * The ID of the RAM disk, if applicable.
     */
   var RamDiskId: js.UndefOr[String] = js.undefined
@@ -132,7 +152,7 @@ trait ResponseLaunchTemplateData extends StObject {
   var SecurityGroups: js.UndefOr[ValueStringList] = js.undefined
   
   /**
-    * The tags.
+    * The tags that are applied to the resources that are created during instance launch.
     */
   var TagSpecifications: js.UndefOr[LaunchTemplateTagSpecificationList] = js.undefined
   
@@ -154,7 +174,7 @@ object ResponseLaunchTemplateData {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: LaunchTemplateBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: LaunchTemplateBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
     
     inline def setCapacityReservationSpecification(value: LaunchTemplateCapacityReservationSpecificationResponse): Self = StObject.set(x, "CapacityReservationSpecification", value.asInstanceOf[js.Any])
     
@@ -168,6 +188,10 @@ object ResponseLaunchTemplateData {
     
     inline def setCreditSpecificationUndefined: Self = StObject.set(x, "CreditSpecification", js.undefined)
     
+    inline def setDisableApiStop(value: Boolean): Self = StObject.set(x, "DisableApiStop", value.asInstanceOf[js.Any])
+    
+    inline def setDisableApiStopUndefined: Self = StObject.set(x, "DisableApiStop", js.undefined)
+    
     inline def setDisableApiTermination(value: Boolean): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
     
     inline def setDisableApiTerminationUndefined: Self = StObject.set(x, "DisableApiTermination", js.undefined)
@@ -180,13 +204,13 @@ object ResponseLaunchTemplateData {
     
     inline def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "ElasticGpuSpecifications", js.undefined)
     
-    inline def setElasticGpuSpecificationsVarargs(value: ElasticGpuSpecificationResponse*): Self = StObject.set(x, "ElasticGpuSpecifications", js.Array(value :_*))
+    inline def setElasticGpuSpecificationsVarargs(value: ElasticGpuSpecificationResponse*): Self = StObject.set(x, "ElasticGpuSpecifications", js.Array(value*))
     
     inline def setElasticInferenceAccelerators(value: LaunchTemplateElasticInferenceAcceleratorResponseList): Self = StObject.set(x, "ElasticInferenceAccelerators", value.asInstanceOf[js.Any])
     
     inline def setElasticInferenceAcceleratorsUndefined: Self = StObject.set(x, "ElasticInferenceAccelerators", js.undefined)
     
-    inline def setElasticInferenceAcceleratorsVarargs(value: LaunchTemplateElasticInferenceAcceleratorResponse*): Self = StObject.set(x, "ElasticInferenceAccelerators", js.Array(value :_*))
+    inline def setElasticInferenceAcceleratorsVarargs(value: LaunchTemplateElasticInferenceAcceleratorResponse*): Self = StObject.set(x, "ElasticInferenceAccelerators", js.Array(value*))
     
     inline def setEnclaveOptions(value: LaunchTemplateEnclaveOptions): Self = StObject.set(x, "EnclaveOptions", value.asInstanceOf[js.Any])
     
@@ -212,6 +236,10 @@ object ResponseLaunchTemplateData {
     
     inline def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "InstanceMarketOptions", js.undefined)
     
+    inline def setInstanceRequirements(value: InstanceRequirements): Self = StObject.set(x, "InstanceRequirements", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceRequirementsUndefined: Self = StObject.set(x, "InstanceRequirements", js.undefined)
+    
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
@@ -228,7 +256,11 @@ object ResponseLaunchTemplateData {
     
     inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
-    inline def setLicenseSpecificationsVarargs(value: LaunchTemplateLicenseConfiguration*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
+    inline def setLicenseSpecificationsVarargs(value: LaunchTemplateLicenseConfiguration*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value*))
+    
+    inline def setMaintenanceOptions(value: LaunchTemplateInstanceMaintenanceOptions): Self = StObject.set(x, "MaintenanceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceOptionsUndefined: Self = StObject.set(x, "MaintenanceOptions", js.undefined)
     
     inline def setMetadataOptions(value: LaunchTemplateInstanceMetadataOptions): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
     
@@ -242,11 +274,15 @@ object ResponseLaunchTemplateData {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: LaunchTemplateInstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: LaunchTemplateInstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setPlacement(value: LaunchTemplatePlacement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
+    
+    inline def setPrivateDnsNameOptions(value: LaunchTemplatePrivateDnsNameOptions): Self = StObject.set(x, "PrivateDnsNameOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateDnsNameOptionsUndefined: Self = StObject.set(x, "PrivateDnsNameOptions", js.undefined)
     
     inline def setRamDiskId(value: String): Self = StObject.set(x, "RamDiskId", value.asInstanceOf[js.Any])
     
@@ -256,19 +292,19 @@ object ResponseLaunchTemplateData {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSecurityGroups(value: ValueStringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setTagSpecifications(value: LaunchTemplateTagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     

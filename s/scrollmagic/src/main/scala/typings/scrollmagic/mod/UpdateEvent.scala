@@ -1,7 +1,6 @@
 package typings.scrollmagic.mod
 
 import typings.scrollmagic.scrollmagicStrings.update
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +24,8 @@ object UpdateEvent {
     scrollPos: Double,
     startPos: Double,
     target: Scene,
-    timeStamp: Date,
-    timestamp: Date
+    timeStamp: js.Date,
+    timestamp: js.Date
   ): UpdateEvent = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], endPos = endPos.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], scrollPos = scrollPos.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("update")

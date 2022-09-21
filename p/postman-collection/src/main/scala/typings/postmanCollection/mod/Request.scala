@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.RequestDefinition because var conflicts: description, disabled, id, name. Inlined url, method, header, body, auth, proxy, certificate */ @JSImport("postman-collection", "Request")
 @js.native
-class Request protected () extends Property[RequestDefinition] {
+open class Request protected () extends Property[RequestDefinition] {
   def this(options: String) = this()
   def this(options: RequestDefinition) = this()
   
@@ -36,8 +36,8 @@ class Request protected () extends Property[RequestDefinition] {
   
   def forEachHeader(callback: js.Function2[/* header */ Header, /* context */ this.type, Unit]): Unit = js.native
   
-  def getHeaders(): js.Any = js.native
-  def getHeaders(options: Enabled): js.Any = js.native
+  def getHeaders(): Any = js.native
+  def getHeaders(options: Enabled): Any = js.native
   
   var header: js.UndefOr[js.Array[HeaderDefinition]] = js.native
   
@@ -60,7 +60,7 @@ class Request protected () extends Property[RequestDefinition] {
   
   def upsertHeader(header: HeaderDefinition): Unit = js.native
   
-  var url: String | Url = js.native
+  var url: String | Url | UrlDefinition = js.native
 }
 /* static members */
 object Request {
@@ -69,5 +69,5 @@ object Request {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isRequest(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRequest(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

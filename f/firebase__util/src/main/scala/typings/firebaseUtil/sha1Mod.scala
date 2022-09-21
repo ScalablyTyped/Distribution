@@ -1,22 +1,21 @@
 package typings.firebaseUtil
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha1Mod {
   
-  @JSImport("@firebase/util/dist/src/sha1", "Sha1")
+  @JSImport("@firebase/util/dist/node-esm/src/sha1", "Sha1")
   @js.native
-  class Sha1 () extends StObject {
+  open class Sha1 () extends StObject {
     
     /**
       * An array of 80 bytes, each a part of the message to be hashed.  Referred to
       * as the message schedule in the docs.
       * @private
       */
-    /* private */ var W_ : js.Any = js.native
+    /* private */ var W_ : Any = js.native
     
     var blockSize: Double = js.native
     
@@ -24,14 +23,14 @@ object sha1Mod {
       * A buffer holding the partially computed hash result.
       * @private
       */
-    /* private */ var buf_ : js.Any = js.native
+    /* private */ var buf_ : Any = js.native
     
     /**
       * Holds the previous values of accumulated variables a-e in the compress_
       * function.
       * @private
       */
-    /* private */ var chain_ : js.Any = js.native
+    /* private */ var chain_ : Any = js.native
     
     def compress_(buf: String): Unit = js.native
     def compress_(buf: String, offset: Double): Unit = js.native
@@ -43,8 +42,8 @@ object sha1Mod {
       */
     def compress_(buf: js.Array[Double]): Unit = js.native
     def compress_(buf: js.Array[Double], offset: Double): Unit = js.native
-    def compress_(buf: Uint8Array): Unit = js.native
-    def compress_(buf: Uint8Array, offset: Double): Unit = js.native
+    def compress_(buf: js.typedarray.Uint8Array): Unit = js.native
+    def compress_(buf: js.typedarray.Uint8Array, offset: Double): Unit = js.native
     
     /** @override */
     def digest(): js.Array[Double] = js.native
@@ -52,28 +51,28 @@ object sha1Mod {
     /**
       * @private {number}
       */
-    /* private */ var inbuf_ : js.Any = js.native
+    /* private */ var inbuf_ : Any = js.native
     
     /**
       * Contains data needed to pad messages less than 64 bytes.
       * @private
       */
-    /* private */ var pad_ : js.Any = js.native
+    /* private */ var pad_ : Any = js.native
     
     def reset(): Unit = js.native
     
     /**
       * @private {number}
       */
-    /* private */ var total_ : js.Any = js.native
+    /* private */ var total_ : Any = js.native
     
     def update(): Unit = js.native
     def update(bytes: String): Unit = js.native
     def update(bytes: String, length: Double): Unit = js.native
     def update(bytes: js.Array[Double]): Unit = js.native
     def update(bytes: js.Array[Double], length: Double): Unit = js.native
+    def update(bytes: js.typedarray.Uint8Array): Unit = js.native
+    def update(bytes: js.typedarray.Uint8Array, length: Double): Unit = js.native
     def update(bytes: Unit, length: Double): Unit = js.native
-    def update(bytes: Uint8Array): Unit = js.native
-    def update(bytes: Uint8Array, length: Double): Unit = js.native
   }
 }

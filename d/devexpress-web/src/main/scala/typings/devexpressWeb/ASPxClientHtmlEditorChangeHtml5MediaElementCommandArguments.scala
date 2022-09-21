@@ -40,7 +40,7 @@ object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
     id: String,
     loop: Boolean,
     preloadMode: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     showPlayerControls: Boolean,
     src: String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings

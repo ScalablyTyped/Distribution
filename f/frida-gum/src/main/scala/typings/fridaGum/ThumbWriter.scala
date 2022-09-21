@@ -16,6 +16,12 @@ trait ThumbWriter extends StObject {
   var base: NativePointer = js.native
   
   /**
+    * Determines whether a direct branch is possible between the two
+    * given memory locations.
+    */
+  def canBranchDirectlyBetween(from: NativePointerValue, to: NativePointerValue): Boolean = js.native
+  
+  /**
     * Memory location of the next byte of output.
     */
   var code: NativePointer = js.native
@@ -147,6 +153,11 @@ trait ThumbWriter extends StObject {
   def putBneLabel(labelId: String): Unit = js.native
   
   /**
+    * Puts code needed for branching/jumping to the given address.
+    */
+  def putBranchAddress(address: NativePointerValue): Unit = js.native
+  
+  /**
     * Puts an OS/architecture-specific breakpoint instruction.
     */
   def putBreakpoint(): Unit = js.native
@@ -239,6 +250,11 @@ trait ThumbWriter extends StObject {
   def putLdrbRegReg(dstReg: ArmRegister, srcReg: ArmRegister): Unit = js.native
   
   /**
+    * Puts a LSL instruction.
+    */
+  def putLslRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
+  
+  /**
     * Puts a LSLS instruction.
     */
   def putLslsRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
@@ -282,6 +298,13 @@ trait ThumbWriter extends StObject {
     * Puts a NOP instruction.
     */
   def putNop(): Unit = js.native
+  
+  /**
+    * Puts an OR instruction.
+    */
+  def putOrRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
+  def putOrRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64): Unit = js.native
+  def putOrRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64): Unit = js.native
   
   /**
     * Puts a POP instruction with the specified registers.
@@ -335,6 +358,16 @@ trait ThumbWriter extends StObject {
   def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Double): Unit = js.native
   def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Int64): Unit = js.native
   def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: UInt64): Unit = js.native
+  
+  /**
+    * Puts a VPOP RANGE instruction.
+    */
+  def putVpopRange(firstReg: ArmRegister, lastReg: ArmRegister): Unit = js.native
+  
+  /**
+    * Puts a VPUSH RANGE instruction.
+    */
+  def putVpushRange(firstReg: ArmRegister, lastReg: ArmRegister): Unit = js.native
   
   /**
     * Recycles instance.

@@ -22,10 +22,9 @@ object modalActionsMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalActions", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ModalActionsProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ModalActionsProps, ComponentState, Any] {
     def this(props: ModalActionsProps) = this()
-    def this(props: ModalActionsProps, context: js.Any) = this()
+    def this(props: ModalActionsProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalActions", JSImport.Default)
   @js.native
@@ -34,7 +33,7 @@ object modalActionsMod extends Shortcut {
   trait ModalActionsProps
     extends StObject
        with StrictModalActionsProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ModalActionsProps {
     
     inline def apply(): ModalActionsProps = {
@@ -49,7 +48,7 @@ object modalActionsMod extends Shortcut {
     var actions: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -87,9 +86,9 @@ object modalActionsMod extends Shortcut {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

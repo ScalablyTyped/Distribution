@@ -25,11 +25,11 @@ trait AccesstokenAlt extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. Resource name for this user, following the pattern "developers/{developer}/users/{email}". */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The package name of the application for which this subscription was purchased (for example, 'com.some.thing'). */
-  var packageName: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -37,11 +37,8 @@ trait AccesstokenAlt extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The purchased subscription ID (for example, 'monthly001'). */
-  var subscriptionId: String
-  
-  /** The token provided to the user's device when the subscription was purchased. */
-  var token: String
+  /** Optional. The list of fields to be updated. */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +48,8 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(packageName: String, subscriptionId: String, token: String): AccesstokenAlt = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+  inline def apply(name: String): AccesstokenAlt = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
   
@@ -82,11 +79,11 @@ object AccesstokenAlt {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -96,9 +93,9 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

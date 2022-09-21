@@ -23,6 +23,6 @@ object TfvcPolicyOverrideInfo {
     
     inline def setPolicyFailures(value: js.Array[TfvcPolicyFailureInfo]): Self = StObject.set(x, "policyFailures", value.asInstanceOf[js.Any])
     
-    inline def setPolicyFailuresVarargs(value: TfvcPolicyFailureInfo*): Self = StObject.set(x, "policyFailures", js.Array(value :_*))
+    inline def setPolicyFailuresVarargs(value: TfvcPolicyFailureInfo*): Self = StObject.set(x, "policyFailures", js.Array(value*))
   }
 }

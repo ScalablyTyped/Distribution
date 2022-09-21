@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_SslServer")
 @js.native
-class ClassSslServer protected ()
+open class ClassSslServer protected ()
   extends StObject
      with typings.fibjs.ClassSslServer {
   /**
@@ -33,7 +33,7 @@ class ClassSslServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[js.Any], port: Double, listener: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[Any], port: Double, listener: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslServer 构造函数
@@ -59,7 +59,7 @@ class ClassSslServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[js.Any], addr: String, port: Double, listener: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[Any], addr: String, port: Double, listener: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslServer 构造函数，在所有本机地址侦听

@@ -62,11 +62,11 @@ object mod {
     
     var hosts: js.Array[Host]
     
-    var options: js.Any
+    var options: Any
   }
   object ParsedUri {
     
-    inline def apply(db: String, hosts: js.Array[Host], options: js.Any): ParsedUri = {
+    inline def apply(db: String, hosts: js.Array[Host], options: Any): ParsedUri = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedUri]
     }
@@ -81,9 +81,9 @@ object mod {
       
       inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value*))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   

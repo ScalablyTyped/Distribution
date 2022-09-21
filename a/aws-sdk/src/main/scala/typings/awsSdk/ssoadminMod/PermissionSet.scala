@@ -9,7 +9,7 @@ trait PermissionSet extends StObject {
   /**
     * The date that the permission set was created.
     */
-  var CreatedDate: js.UndefOr[Date] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the PermissionSet.
@@ -45,7 +45,7 @@ object PermissionSet {
   
   extension [Self <: PermissionSet](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

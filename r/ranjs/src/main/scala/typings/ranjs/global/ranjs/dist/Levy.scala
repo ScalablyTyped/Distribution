@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Levy")
 @js.native
-class Levy ()
+open class Levy ()
   extends typings.ranjs.mod.dist.Levy {
   def this(mu: Double) = this()
   def this(mu: Double, c: Double) = this()

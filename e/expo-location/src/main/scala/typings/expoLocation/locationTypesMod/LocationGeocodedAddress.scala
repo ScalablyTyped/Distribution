@@ -6,30 +6,66 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationGeocodedAddress extends StObject {
   
+  /**
+    * City name of the address.
+    */
   var city: String | Null
   
+  /**
+    * Localized country name of the address.
+    */
   var country: String | Null
   
+  /**
+    * Additional city-level information like district name.
+    */
   var district: String | Null
   
+  /**
+    * Localized (ISO) country code of the address, if available.
+    */
   var isoCountryCode: String | Null
   
+  /**
+    * The name of the placemark, for example, "Tower Bridge".
+    */
   var name: String | Null
   
+  /**
+    * Postal code of the address.
+    */
   var postalCode: String | Null
   
+  /**
+    * The state or province associated with the address.
+    */
   var region: String | Null
   
+  /**
+    * Street name of the address.
+    */
   var street: String | Null
   
+  /**
+    * Street number of the address.
+    */
+  var streetNumber: String | Null
+  
+  /**
+    * Additional information about administrative area.
+    */
   var subregion: String | Null
   
+  /**
+    * The timezone identifier associated with the address.
+    * @platform ios
+    */
   var timezone: String | Null
 }
 object LocationGeocodedAddress {
   
   inline def apply(): LocationGeocodedAddress = {
-    val __obj = js.Dynamic.literal(city = null, country = null, district = null, isoCountryCode = null, name = null, postalCode = null, region = null, street = null, subregion = null, timezone = null)
+    val __obj = js.Dynamic.literal(city = null, country = null, district = null, isoCountryCode = null, name = null, postalCode = null, region = null, street = null, streetNumber = null, subregion = null, timezone = null)
     __obj.asInstanceOf[LocationGeocodedAddress]
   }
   
@@ -66,6 +102,10 @@ object LocationGeocodedAddress {
     inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
     inline def setStreetNull: Self = StObject.set(x, "street", null)
+    
+    inline def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
+    
+    inline def setStreetNumberNull: Self = StObject.set(x, "streetNumber", null)
     
     inline def setSubregion(value: String): Self = StObject.set(x, "subregion", value.asInstanceOf[js.Any])
     

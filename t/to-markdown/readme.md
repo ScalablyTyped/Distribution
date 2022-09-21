@@ -11,9 +11,9 @@ HTML-to-Markdown converter
 | Full name          | to-markdown |
 | Keywords           | markdown |
 | # releases         | 0 |
-| # dependents       | 111 |
-| # downloads        | 2861479 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 64196.0 |
+| # stars            | 6262.0 |
 
 ## Links
 - [Homepage](https://github.com/domchristie/to-markdown#readme)

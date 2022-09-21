@@ -1,7 +1,7 @@
 
 # Scala.js typings for ackee-tracker
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Transfer data to Ackee
@@ -10,10 +10,10 @@ Transfer data to Ackee
 | ------------------ | :-------------: |
 | Full name          | ackee-tracker |
 | Keywords           | ackee, tracking, tracker, analytics, statistics |
-| # releases         | 27 |
-| # dependents       | 7 |
-| # downloads        | 49526 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 5116.0 |
+| # stars            | 153.0 |
 
 ## Links
 - [Homepage](https://github.com/electerious/ackee-tracker)

@@ -1,6 +1,5 @@
 package typings.actionsOnGoogle.v2Mod
 
-import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,22 +99,6 @@ trait GoogleActionsOrdersV3Order extends StObject {
     * including websites, apps and email.
     */
   var userVisibleOrderId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated: Use OrderExtensions status instead.
-    * User visible label for the state of this order.
-    */
-  var userVisibleStateLabel: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated: Use verticals instead.
-    * These properties will apply to all line items, unless overridden in
-    * some line item. This vertical must match the line item level vertical type.
-    * Possible values:
-    * google.actions.orders.v3.verticals.purchase.PurchaseOrderExtension
-    * google.actions.orders.v3.verticals.ticket.TicketOrderExtension
-    */
-  var vertical: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleActionsOrdersV3Order {
   
@@ -142,7 +125,7 @@ object GoogleActionsOrdersV3Order {
     
     inline def setFollowUpActionsUndefined: Self = StObject.set(x, "followUpActions", js.undefined)
     
-    inline def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = StObject.set(x, "followUpActions", js.Array(value :_*))
+    inline def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = StObject.set(x, "followUpActions", js.Array(value*))
     
     inline def setGoogleOrderId(value: String): Self = StObject.set(x, "googleOrderId", value.asInstanceOf[js.Any])
     
@@ -172,13 +155,13 @@ object GoogleActionsOrdersV3Order {
     
     inline def setPriceAttributesUndefined: Self = StObject.set(x, "priceAttributes", js.undefined)
     
-    inline def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "priceAttributes", js.Array(value :_*))
+    inline def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "priceAttributes", js.Array(value*))
     
     inline def setPromotions(value: js.Array[GoogleActionsOrdersV3Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    inline def setPromotionsVarargs(value: GoogleActionsOrdersV3Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: GoogleActionsOrdersV3Promotion*): Self = StObject.set(x, "promotions", js.Array(value*))
     
     inline def setPurchase(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension): Self = StObject.set(x, "purchase", value.asInstanceOf[js.Any])
     
@@ -199,13 +182,5 @@ object GoogleActionsOrdersV3Order {
     inline def setUserVisibleOrderId(value: String): Self = StObject.set(x, "userVisibleOrderId", value.asInstanceOf[js.Any])
     
     inline def setUserVisibleOrderIdUndefined: Self = StObject.set(x, "userVisibleOrderId", js.undefined)
-    
-    inline def setUserVisibleStateLabel(value: String): Self = StObject.set(x, "userVisibleStateLabel", value.asInstanceOf[js.Any])
-    
-    inline def setUserVisibleStateLabelUndefined: Self = StObject.set(x, "userVisibleStateLabel", js.undefined)
-    
-    inline def setVertical(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
-    
-    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

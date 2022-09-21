@@ -1,8 +1,7 @@
 package typings.ebml.mod
 
 import typings.ebml.anon.Length
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,14 +26,14 @@ object tools {
     * @param data Data to be transformed
     * @return result
     */
-  inline def readDataFromTag(tagObj: TagMetadata, data: Buffer): Tag[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readDataFromTag")(tagObj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Tag[js.Any]]
+  inline def readDataFromTag(tagObj: TagMetadata, data: Buffer): Tag[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readDataFromTag")(tagObj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Tag[Any]]
   
   /**
     * get a date from a buffer
     * @param buff buffer from which to read the date
     * @return result
     */
-  inline def readDate(buff: Buffer): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("readDate")(buff.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def readDate(buff: Buffer): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("readDate")(buff.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   /**
     * get a floating-point number from a buffer

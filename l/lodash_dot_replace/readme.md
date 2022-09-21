@@ -10,10 +10,10 @@ The lodash method `_.replace` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.replace |
 | Keywords           | lodash-modularized, replace |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 174248 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20725.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

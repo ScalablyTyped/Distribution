@@ -59,19 +59,19 @@ object FindingFilter {
     
     inline def setAgentIdsUndefined: Self = StObject.set(x, "agentIds", js.undefined)
     
-    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
+    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value*))
     
     inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
     inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value*))
     
     inline def setCreationTimeRange(value: TimestampRange): Self = StObject.set(x, "creationTimeRange", value.asInstanceOf[js.Any])
     
@@ -81,24 +81,24 @@ object FindingFilter {
     
     inline def setRuleNamesUndefined: Self = StObject.set(x, "ruleNames", js.undefined)
     
-    inline def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "ruleNames", js.Array(value :_*))
+    inline def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "ruleNames", js.Array(value*))
     
     inline def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
     inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
     
     inline def setSeverities(value: SeverityList): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
     
     inline def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
     
-    inline def setSeveritiesVarargs(value: Severity*): Self = StObject.set(x, "severities", js.Array(value :_*))
+    inline def setSeveritiesVarargs(value: Severity*): Self = StObject.set(x, "severities", js.Array(value*))
     
     inline def setUserAttributes(value: AttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     inline def setUserAttributesUndefined: Self = StObject.set(x, "userAttributes", js.undefined)
     
-    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value*))
   }
 }

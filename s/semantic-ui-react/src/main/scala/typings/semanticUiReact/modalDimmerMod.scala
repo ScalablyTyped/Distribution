@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object modalDimmerMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalDimmer", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ModalDimmerProps] = js.native
+  val default: FC[ModalDimmerProps] = js.native
   
   trait ModalDimmerProps
     extends StObject
        with StrictModalDimmerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ModalDimmerProps {
     
     inline def apply(): ModalDimmerProps = {
@@ -30,7 +30,7 @@ object modalDimmerMod extends Shortcut {
   trait StrictModalDimmerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A dimmer can be blurred. */
     var blurring: js.UndefOr[Boolean] = js.undefined
@@ -51,7 +51,7 @@ object modalDimmerMod extends Shortcut {
     var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** The node where the modal should mount. Defaults to document.body. */
-    var mountNode: js.UndefOr[js.Any] = js.undefined
+    var mountNode: js.UndefOr[Any] = js.undefined
     
     /** A dimmer can make body scrollable. */
     var scrolling: js.UndefOr[Boolean] = js.undefined
@@ -65,7 +65,7 @@ object modalDimmerMod extends Shortcut {
     
     extension [Self <: StrictModalDimmerProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -93,7 +93,7 @@ object modalDimmerMod extends Shortcut {
       
       inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      inline def setMountNode(value: js.Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
       inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
@@ -103,8 +103,8 @@ object modalDimmerMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ModalDimmerProps]
+  type _To = FC[ModalDimmerProps]
   
   /* This means you don't have to write `default`, but can instead just say `modalDimmerMod.foo` */
-  override def _to: StatelessComponent[ModalDimmerProps] = default
+  override def _to: FC[ModalDimmerProps] = default
 }

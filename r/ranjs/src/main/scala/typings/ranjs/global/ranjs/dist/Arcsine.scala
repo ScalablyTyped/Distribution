@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Arcsine")
 @js.native
-class Arcsine ()
+open class Arcsine ()
   extends typings.ranjs.mod.dist.Arcsine {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

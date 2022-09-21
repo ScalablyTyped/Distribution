@@ -8,11 +8,11 @@ trait DefaultMessage extends StObject {
   
   var defaultMessage: js.UndefOr[String] = js.undefined
   
-  var id: js.Any
+  var id: Any
 }
 object DefaultMessage {
   
-  inline def apply(id: js.Any): DefaultMessage = {
+  inline def apply(id: Any): DefaultMessage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultMessage]
   }
@@ -23,6 +23,6 @@ object DefaultMessage {
     
     inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

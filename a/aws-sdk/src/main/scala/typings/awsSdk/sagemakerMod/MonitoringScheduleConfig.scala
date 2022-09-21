@@ -9,7 +9,17 @@ trait MonitoringScheduleConfig extends StObject {
   /**
     * Defines the monitoring job.
     */
-  var MonitoringJobDefinition: typings.awsSdk.sagemakerMod.MonitoringJobDefinition
+  var MonitoringJobDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringJobDefinition] = js.undefined
+  
+  /**
+    * The name of the monitoring job definition to schedule.
+    */
+  var MonitoringJobDefinitionName: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringJobDefinitionName] = js.undefined
+  
+  /**
+    * The type of the monitoring job definition to schedule.
+    */
+  var MonitoringType: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringType] = js.undefined
   
   /**
     * Configures the monitoring schedule.
@@ -18,14 +28,24 @@ trait MonitoringScheduleConfig extends StObject {
 }
 object MonitoringScheduleConfig {
   
-  inline def apply(MonitoringJobDefinition: MonitoringJobDefinition): MonitoringScheduleConfig = {
-    val __obj = js.Dynamic.literal(MonitoringJobDefinition = MonitoringJobDefinition.asInstanceOf[js.Any])
+  inline def apply(): MonitoringScheduleConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringScheduleConfig]
   }
   
   extension [Self <: MonitoringScheduleConfig](x: Self) {
     
     inline def setMonitoringJobDefinition(value: MonitoringJobDefinition): Self = StObject.set(x, "MonitoringJobDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringJobDefinitionName(value: MonitoringJobDefinitionName): Self = StObject.set(x, "MonitoringJobDefinitionName", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringJobDefinitionNameUndefined: Self = StObject.set(x, "MonitoringJobDefinitionName", js.undefined)
+    
+    inline def setMonitoringJobDefinitionUndefined: Self = StObject.set(x, "MonitoringJobDefinition", js.undefined)
+    
+    inline def setMonitoringType(value: MonitoringType): Self = StObject.set(x, "MonitoringType", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringTypeUndefined: Self = StObject.set(x, "MonitoringType", js.undefined)
     
     inline def setScheduleConfig(value: ScheduleConfig): Self = StObject.set(x, "ScheduleConfig", value.asInstanceOf[js.Any])
     

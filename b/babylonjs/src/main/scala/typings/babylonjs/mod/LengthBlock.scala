@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "LengthBlock")
 @js.native
-class LengthBlock protected ()
+open class LengthBlock protected ()
   extends typings.babylonjs.legacyMod.LengthBlock {
   /**
     * Creates a new LengthBlock

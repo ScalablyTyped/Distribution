@@ -6,20 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-kit", "MKRadioButton")
 @js.native
-class MKRadioButton protected ()
-  extends MKComponent[MKRadioButtonProperties, js.Any] {
+open class MKRadioButton protected () extends MKComponent[MKRadioButtonProperties, Any] {
   def this(props: MKRadioButtonProperties) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MKRadioButtonProperties, context: js.Any) = this()
+  def this(props: MKRadioButtonProperties, context: Any) = this()
 }
 object MKRadioButton {
   
   @JSImport("react-native-material-kit", "MKRadioButton.Group")
   @js.native
-  class Group ()
+  open class Group ()
     extends StObject
        with MKRadioButtonGroup {
     def this(onAdd: js.Function1[/* btn */ typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, Unit]) = this()
@@ -35,7 +34,7 @@ object MKRadioButton {
     def add(btn: typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton): Unit = js.native
     
     /* CompleteClass */
-    var buttons: js.Array[js.Any] = js.native
+    var buttons: js.Array[Any] = js.native
     
     def onChecked(btn: typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, checked: Boolean): Unit = js.native
     
@@ -44,5 +43,5 @@ object MKRadioButton {
   
   @JSImport("react-native-material-kit", "MKRadioButton.MKRadioButton")
   @js.native
-  class MKRadioButton () extends StObject
+  open class MKRadioButton () extends StObject
 }

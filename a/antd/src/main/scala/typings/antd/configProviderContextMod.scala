@@ -1,11 +1,12 @@
 package typings.antd
 
 import typings.antd.anon.AutoComplete
+import typings.antd.anon.Colon
 import typings.antd.anon.Ghost
-import typings.antd.anon.RequiredMark
+import typings.antd.anon.ShowSizeChanger
 import typings.antd.anon.Size
+import typings.antd.defaultRenderEmptyMod.RenderEmptyHandler
 import typings.antd.localeProviderMod.Locale
-import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.react.mod.ClassicComponentClass
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -31,7 +32,7 @@ object configProviderContextMod {
   @js.native
   val ConfigContext: Context[ConfigConsumerProps] = js.native
   
-  inline def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfigConsumer")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any]]
+  inline def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[Any], FC[ExportProps] & Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfigConsumer")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ IReactComponent[Any], FC[ExportProps] & Any]]
   
   trait BasicExportProps extends StObject {
     
@@ -82,9 +83,9 @@ object configProviderContextMod {
     
     var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.native
     
-    var form: js.UndefOr[RequiredMark] = js.native
+    var form: js.UndefOr[Colon] = js.native
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]] = js.native
     
     def getPrefixCls(): String = js.native
     def getPrefixCls(suffixCls: String): String = js.native
@@ -93,13 +94,17 @@ object configProviderContextMod {
     
     var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
     
+    var iconPrefixCls: js.UndefOr[String] = js.native
+    
     var input: js.UndefOr[AutoComplete] = js.native
     
     var locale: js.UndefOr[Locale] = js.native
     
     var pageHeader: js.UndefOr[Ghost] = js.native
     
-    var renderEmpty: RenderEmptyHandler = js.native
+    var pagination: js.UndefOr[ShowSizeChanger] = js.native
+    
+    var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.native
     
     var rootPrefixCls: js.UndefOr[String] = js.native
     
@@ -133,6 +138,55 @@ object configProviderContextMod {
   type DirectionType = js.UndefOr[_DirectionType]
   
   type IReactComponent[P] = FC[P] | (ComponentClass[P, ComponentState]) | ClassicComponentClass[P]
+  
+  trait Theme extends StObject {
+    
+    var errorColor: js.UndefOr[String] = js.undefined
+    
+    var infoColor: js.UndefOr[String] = js.undefined
+    
+    var primaryColor: js.UndefOr[String] = js.undefined
+    
+    var processingColor: js.UndefOr[String] = js.undefined
+    
+    var successColor: js.UndefOr[String] = js.undefined
+    
+    var warningColor: js.UndefOr[String] = js.undefined
+  }
+  object Theme {
+    
+    inline def apply(): Theme = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Theme]
+    }
+    
+    extension [Self <: Theme](x: Self) {
+      
+      inline def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
+      
+      inline def setErrorColorUndefined: Self = StObject.set(x, "errorColor", js.undefined)
+      
+      inline def setInfoColor(value: String): Self = StObject.set(x, "infoColor", value.asInstanceOf[js.Any])
+      
+      inline def setInfoColorUndefined: Self = StObject.set(x, "infoColor", js.undefined)
+      
+      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+      
+      inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+      
+      inline def setProcessingColor(value: String): Self = StObject.set(x, "processingColor", value.asInstanceOf[js.Any])
+      
+      inline def setProcessingColorUndefined: Self = StObject.set(x, "processingColor", js.undefined)
+      
+      inline def setSuccessColor(value: String): Self = StObject.set(x, "successColor", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessColorUndefined: Self = StObject.set(x, "successColor", js.undefined)
+      
+      inline def setWarningColor(value: String): Self = StObject.set(x, "warningColor", value.asInstanceOf[js.Any])
+      
+      inline def setWarningColorUndefined: Self = StObject.set(x, "warningColor", js.undefined)
+    }
+  }
   
   trait _DirectionType extends StObject
 }

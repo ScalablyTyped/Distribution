@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataRepositoryTask extends StObject {
   
-  var CreationTime: typings.awsSdk.fsxMod.CreationTime
+  var CreationTime: js.Date
   
   /**
     * The time that Amazon FSx completed processing the task, populated after the task is complete.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.fsxMod.EndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Failure message describing why the task failed, it is populated only when Lifecycle is set to FAILED.
@@ -37,7 +37,7 @@ trait DataRepositoryTask extends StObject {
   /**
     * The time that Amazon FSx began processing the task.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.fsxMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Provides the status of the number of files that the task has processed successfully and failed to process.
@@ -52,14 +52,14 @@ trait DataRepositoryTask extends StObject {
   var TaskId: typings.awsSdk.fsxMod.TaskId
   
   /**
-    * The type of data repository task; EXPORT_TO_REPOSITORY is the only type currently supported.
+    * The type of data repository task.   The EXPORT_TO_REPOSITORY data repository task exports from your Lustre file system from to a linked S3 bucket.   The IMPORT_METADATA_FROM_REPOSITORY data repository task imports metadata changes from a linked S3 bucket to your Lustre file system.  
     */
   var Type: DataRepositoryTaskType
 }
 object DataRepositoryTask {
   
   inline def apply(
-    CreationTime: CreationTime,
+    CreationTime: js.Date,
     FileSystemId: FileSystemId,
     Lifecycle: DataRepositoryTaskLifecycle,
     TaskId: TaskId,
@@ -71,9 +71,9 @@ object DataRepositoryTask {
   
   extension [Self <: DataRepositoryTask](x: Self) {
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -89,7 +89,7 @@ object DataRepositoryTask {
     
     inline def setPathsUndefined: Self = StObject.set(x, "Paths", js.undefined)
     
-    inline def setPathsVarargs(value: DataRepositoryTaskPath*): Self = StObject.set(x, "Paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: DataRepositoryTaskPath*): Self = StObject.set(x, "Paths", js.Array(value*))
     
     inline def setReport(value: CompletionReport): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object DataRepositoryTask {
     
     inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -111,7 +111,7 @@ object DataRepositoryTask {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,5 @@ object getViewportSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getViewportSize_height(direction: height): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewportSize")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  inline def getViewportSize_width(direction: width): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewportSize")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getViewportSize(direction: height | width): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewportSize")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

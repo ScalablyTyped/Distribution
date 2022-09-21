@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a trigger that is activated when the ActivitySensor receives input. This is used when your application needs to respond to the activity sensor. */
 @JSGlobal("Windows.ApplicationModel.Background.ActivitySensorTrigger")
 @js.native
-class ActivitySensorTrigger protected ()
+open class ActivitySensorTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ActivitySensorTrigger {
   /**

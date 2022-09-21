@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventName extends StObject {
   
   def callback(): scala.Unit = js.native
-  def callback(item: js.Any): scala.Unit = js.native
-  def callback(item: js.Any, index: Double): scala.Unit = js.native
-  def callback(item: js.Any, index: Double, event: js.Any): scala.Unit = js.native
-  def callback(item: js.Any, index: scala.Unit, event: js.Any): scala.Unit = js.native
+  def callback(item: Any): scala.Unit = js.native
+  def callback(item: Any, index: Double): scala.Unit = js.native
+  def callback(item: Any, index: Double, event: Any): scala.Unit = js.native
+  def callback(item: Any, index: scala.Unit, event: Any): scala.Unit = js.native
   def callback(item: scala.Unit, index: Double): scala.Unit = js.native
-  def callback(item: scala.Unit, index: Double, event: js.Any): scala.Unit = js.native
-  def callback(item: scala.Unit, index: scala.Unit, event: js.Any): scala.Unit = js.native
+  def callback(item: scala.Unit, index: Double, event: Any): scala.Unit = js.native
+  def callback(item: scala.Unit, index: scala.Unit, event: Any): scala.Unit = js.native
   
   var eventName: String = js.native
 }

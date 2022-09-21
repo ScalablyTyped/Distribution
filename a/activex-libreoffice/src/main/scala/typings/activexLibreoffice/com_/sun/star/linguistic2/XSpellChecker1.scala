@@ -24,7 +24,7 @@ object XSpellChecker1 {
     getLanguages: () => SafeArray[Double],
     hasLanguage: Double => Boolean,
     isValid: (String, Double, PropertyValues) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     spell: (String, Double, PropertyValues) => XSpellAlternatives
   ): XSpellChecker1 = {

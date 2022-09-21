@@ -38,7 +38,7 @@ object anon {
       
       inline def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: T*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: T*): Self = StObject.set(x, "columns", js.Array(value*))
     }
   }
   
@@ -59,7 +59,7 @@ object anon {
       
       inline def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: T*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: T*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setMethod(value: Column[T] => T): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     }

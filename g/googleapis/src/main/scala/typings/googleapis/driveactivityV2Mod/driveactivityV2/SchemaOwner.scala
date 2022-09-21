@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the owner of a Drive item.
-  */
 trait SchemaOwner extends StObject {
   
   /**
@@ -15,7 +12,12 @@ trait SchemaOwner extends StObject {
   var domain: js.UndefOr[SchemaDomain] = js.undefined
   
   /**
-    * The Team Drive that owns the Drive item.
+    * The drive that owns the item.
+    */
+  var drive: js.UndefOr[SchemaDriveReference] = js.undefined
+  
+  /**
+    * This field is deprecated; please use the `drive` field instead.
     */
   var teamDrive: js.UndefOr[SchemaTeamDriveReference] = js.undefined
   
@@ -36,6 +38,10 @@ object SchemaOwner {
     inline def setDomain(value: SchemaDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setDrive(value: SchemaDriveReference): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
+    
+    inline def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     inline def setTeamDrive(value: SchemaTeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     

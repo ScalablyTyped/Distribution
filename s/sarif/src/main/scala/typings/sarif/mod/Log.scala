@@ -51,7 +51,7 @@ object Log {
     
     inline def setInlineExternalPropertiesUndefined: Self = StObject.set(x, "inlineExternalProperties", js.undefined)
     
-    inline def setInlineExternalPropertiesVarargs(value: ExternalProperties*): Self = StObject.set(x, "inlineExternalProperties", js.Array(value :_*))
+    inline def setInlineExternalPropertiesVarargs(value: ExternalProperties*): Self = StObject.set(x, "inlineExternalProperties", js.Array(value*))
     
     inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object Log {
     
     inline def setRuns(value: js.Array[Run]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    inline def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value*))
     
     inline def setVersion(value: version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

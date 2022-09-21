@@ -1,6 +1,6 @@
 package typings.nodeForge.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,6 +18,7 @@ object hmac {
     - typings.nodeForge.nodeForgeStrings.sha1
     - typings.nodeForge.nodeForgeStrings.md5
     - typings.nodeForge.nodeForgeStrings.sha256
+    - typings.nodeForge.nodeForgeStrings.sha512
   */
   trait Algorithm extends StObject
   object Algorithm {
@@ -27,6 +28,8 @@ object hmac {
     inline def sha1: typings.nodeForge.nodeForgeStrings.sha1 = "sha1".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha1]
     
     inline def sha256: typings.nodeForge.nodeForgeStrings.sha256 = "sha256".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha256]
+    
+    inline def sha512: typings.nodeForge.nodeForgeStrings.sha512 = "sha512".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha512]
   }
   
   @js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.vec2")
 @js.native
-class vec2 ()
+open class vec2 ()
   extends typings.p2.mod.vec2
 /* static members */
 object vec2 {

@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type SocialSharingErrorCallback = js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit]
+type SocialSharingErrorCallback = js.Function1[/* msg */ js.UndefOr[String], Unit]
 
-type SocialSharingSuccessCallback[T] = js.Function1[/* result */ T, scala.Unit]
+type SocialSharingSuccessCallback[T] = js.Function1[/* result */ T, Unit]
 
-type SocialSharingW3C = js.Function1[
-/* shareData */ typings.cordovaPluginXSocialsharing.SocialSharingW3CData, 
-js.Promise[typings.cordovaPluginXSocialsharing.SocialSharingResult]]
+type SocialSharingW3C = js.Function1[/* shareData */ SocialSharingW3CData, js.Promise[SocialSharingResult]]

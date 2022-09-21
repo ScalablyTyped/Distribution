@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateModelVersionRequest extends StObject {
   
   /**
-    * The event details.
+    * The details of the external events data used for training the model version. Required if trainingDataSource is EXTERNAL_EVENTS.
     */
   var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
+  
+  /**
+    * The details of the ingested event used for training the model version. Required if your trainingDataSource is INGESTED_EVENTS.
+    */
+  var ingestedEventsDetail: js.UndefOr[IngestedEventsDetail] = js.undefined
   
   /**
     * The major version number.
@@ -44,6 +49,10 @@ object UpdateModelVersionRequest {
     
     inline def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
     
+    inline def setIngestedEventsDetail(value: IngestedEventsDetail): Self = StObject.set(x, "ingestedEventsDetail", value.asInstanceOf[js.Any])
+    
+    inline def setIngestedEventsDetailUndefined: Self = StObject.set(x, "ingestedEventsDetail", js.undefined)
+    
     inline def setMajorVersionNumber(value: wholeNumberVersionString): Self = StObject.set(x, "majorVersionNumber", value.asInstanceOf[js.Any])
     
     inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
@@ -54,6 +63,6 @@ object UpdateModelVersionRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

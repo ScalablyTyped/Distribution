@@ -15,7 +15,7 @@ object global {
       * 地理编码与逆地理编码
       * @param options 选项
       */
-    class Geocoder ()
+    open class Geocoder ()
       extends StObject
          with typings.amapJsApiGeocoder.AMap.Geocoder {
       def this(options: Options) = this()

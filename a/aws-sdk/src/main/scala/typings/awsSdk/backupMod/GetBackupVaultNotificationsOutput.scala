@@ -43,7 +43,7 @@ object GetBackupVaultNotificationsOutput {
     
     inline def setBackupVaultEventsUndefined: Self = StObject.set(x, "BackupVaultEvents", js.undefined)
     
-    inline def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = StObject.set(x, "BackupVaultEvents", js.Array(value :_*))
+    inline def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = StObject.set(x, "BackupVaultEvents", js.Array(value*))
     
     inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     

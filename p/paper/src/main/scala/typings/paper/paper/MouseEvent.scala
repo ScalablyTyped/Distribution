@@ -49,7 +49,7 @@ object MouseEvent {
   inline def apply(
     currentTarget: Item,
     delta: Point,
-    modifiers: js.Any,
+    modifiers: Any,
     point: Point,
     preventDefault: () => Unit,
     stop: () => Unit,

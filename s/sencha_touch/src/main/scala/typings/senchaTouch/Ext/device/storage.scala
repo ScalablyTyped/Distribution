@@ -25,7 +25,7 @@ object storage {
     /** [Method] Returns the value of databaseSize
       * @returns Object
       */
-    var getDatabaseSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDatabaseSize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of databaseVersion
       * @returns String
@@ -45,7 +45,7 @@ object storage {
     /** [Method] Sets the value of databaseSize
       * @param databaseSize Object The new value.
       */
-    var setDatabaseSize: js.UndefOr[js.Function1[/* databaseSize */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setDatabaseSize: js.UndefOr[js.Function1[/* databaseSize */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of databaseVersion
       * @param databaseVersion String The new value.
@@ -69,7 +69,7 @@ object storage {
       
       inline def setGetDatabaseNameUndefined: Self = StObject.set(x, "getDatabaseName", js.undefined)
       
-      inline def setGetDatabaseSize(value: () => js.Any): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
+      inline def setGetDatabaseSize(value: () => Any): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
       
       inline def setGetDatabaseSizeUndefined: Self = StObject.set(x, "getDatabaseSize", js.undefined)
       
@@ -85,7 +85,7 @@ object storage {
       
       inline def setSetDatabaseNameUndefined: Self = StObject.set(x, "setDatabaseName", js.undefined)
       
-      inline def setSetDatabaseSize(value: /* databaseSize */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDatabaseSize", js.Any.fromFunction1(value))
+      inline def setSetDatabaseSize(value: /* databaseSize */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDatabaseSize", js.Any.fromFunction1(value))
       
       inline def setSetDatabaseSizeUndefined: Self = StObject.set(x, "setDatabaseSize", js.undefined)
       
@@ -114,9 +114,9 @@ object storage {
         */
       var transaction: js.UndefOr[
             js.Function3[
-              /* sql */ js.UndefOr[js.Any], 
-              /* success */ js.UndefOr[js.Any], 
-              /* failure */ js.UndefOr[js.Any], 
+              /* sql */ js.UndefOr[Any], 
+              /* success */ js.UndefOr[Any], 
+              /* failure */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -131,7 +131,7 @@ object storage {
       extension [Self <: IDatabase](x: Self) {
         
         inline def setTransaction(
-          value: (/* sql */ js.UndefOr[js.Any], /* success */ js.UndefOr[js.Any], /* failure */ js.UndefOr[js.Any]) => Unit
+          value: (/* sql */ js.UndefOr[Any], /* success */ js.UndefOr[Any], /* failure */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "transaction", js.Any.fromFunction3(value))
         
         inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)

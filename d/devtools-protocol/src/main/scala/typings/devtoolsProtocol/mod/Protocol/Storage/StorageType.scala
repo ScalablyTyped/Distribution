@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.websql
   - typings.devtoolsProtocol.devtoolsProtocolStrings.service_workers
   - typings.devtoolsProtocol.devtoolsProtocolStrings.cache_storage
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.interest_groups
   - typings.devtoolsProtocol.devtoolsProtocolStrings.all
   - typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 */
@@ -32,6 +33,8 @@ object StorageType {
   inline def file_systems: typings.devtoolsProtocol.devtoolsProtocolStrings.file_systems = "file_systems".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.file_systems]
   
   inline def indexeddb: typings.devtoolsProtocol.devtoolsProtocolStrings.indexeddb = "indexeddb".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.indexeddb]
+  
+  inline def interest_groups: typings.devtoolsProtocol.devtoolsProtocolStrings.interest_groups = "interest_groups".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.interest_groups]
   
   inline def local_storage: typings.devtoolsProtocol.devtoolsProtocolStrings.local_storage = "local_storage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.local_storage]
   

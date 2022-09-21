@@ -45,7 +45,7 @@ object Rule {
     
     inline def setPredicates(value: Predicates): Self = StObject.set(x, "Predicates", value.asInstanceOf[js.Any])
     
-    inline def setPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "Predicates", js.Array(value :_*))
+    inline def setPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "Predicates", js.Array(value*))
     
     inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }

@@ -11,26 +11,29 @@ trait HTMLTableColElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /**
     * Sets or retrieves the alignment of the object relative to the display or table.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var align: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var ch: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var chOff: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -44,17 +47,18 @@ trait HTMLTableColElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Sets or retrieves the number of columns in the group.
-    */
+  /** Sets or retrieves the number of columns in the group. */
+  /* standard dom */
   var span: Double = js.native
   
   /** @deprecated */
+  /* standard dom */
   var vAlign: java.lang.String = js.native
   
   /**
     * Sets or retrieves the width of the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var width: java.lang.String = js.native
 }

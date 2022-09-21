@@ -19,5 +19,5 @@ object x {
   
   // Execute a function (specified by fname) exported by a Kamailio module. Additional parameters must be string
   // and they are passed to the Kamailio module function.
-  inline def modf(name: String, params: String*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modf")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def modf(name: String, params: String*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("modf")(List(name.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
 }

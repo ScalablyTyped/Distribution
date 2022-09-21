@@ -29,7 +29,7 @@ object SummarizedAttackVector {
     
     inline def setVectorCountersUndefined: Self = StObject.set(x, "VectorCounters", js.undefined)
     
-    inline def setVectorCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "VectorCounters", js.Array(value :_*))
+    inline def setVectorCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "VectorCounters", js.Array(value*))
     
     inline def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
   }

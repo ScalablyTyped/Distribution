@@ -1,7 +1,7 @@
 
 # Scala.js typings for nouislider
 
-Typings are for version v9.0.1
+Typings are for version 15.6.1
 
 ## Library description:
 noUiSlider is a lightweight JavaScript range slider.
@@ -10,10 +10,10 @@ noUiSlider is a lightweight JavaScript range slider.
 | ------------------ | :-------------: |
 | Full name          | nouislider |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 161 |
-| # downloads        | 6256031 |
-| # stars            | 9 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1005085.0 |
+| # stars            | 5283.0 |
 
 ## Links
 - [Homepage](https://github.com/leongersen/noUiSlider#readme)
@@ -24,7 +24,7 @@ noUiSlider is a lightweight JavaScript range slider.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

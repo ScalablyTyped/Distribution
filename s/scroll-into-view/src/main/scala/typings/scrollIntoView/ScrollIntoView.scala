@@ -15,6 +15,12 @@ object ScrollIntoView {
     /** pixels to offset left alignment */
     var leftOffset: js.UndefOr[Double] = js.undefined
     
+    /** boolean to prevent X scrolling */
+    var lockX: js.UndefOr[Boolean] = js.undefined
+    
+    /** boolean to prevent Y scrolling */
+    var lockY: js.UndefOr[Boolean] = js.undefined
+    
     /** 0 to 1, default 0.5 (center) */
     var top: js.UndefOr[Double] = js.undefined
     
@@ -37,6 +43,14 @@ object ScrollIntoView {
       inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
+      inline def setLockX(value: Boolean): Self = StObject.set(x, "lockX", value.asInstanceOf[js.Any])
+      
+      inline def setLockXUndefined: Self = StObject.set(x, "lockX", js.undefined)
+      
+      inline def setLockY(value: Boolean): Self = StObject.set(x, "lockY", value.asInstanceOf[js.Any])
+      
+      inline def setLockYUndefined: Self = StObject.set(x, "lockY", js.undefined)
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
@@ -63,7 +77,23 @@ object ScrollIntoView {
     
     var align: js.UndefOr[Alignment] = js.undefined
     
+    var cancellable: js.UndefOr[Boolean] = js.undefined
+    
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
     var ease: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
+    
+    var isScrollable: js.UndefOr[
+        js.Function2[
+          /* target */ HTMLElement, 
+          /* defaultIsScrollable */ js.Function1[/* target */ HTMLElement, Boolean], 
+          Boolean
+        ]
+      ] = js.undefined
+    
+    var isWindow: js.UndefOr[js.Function1[/* target */ HTMLElement, Boolean]] = js.undefined
+    
+    var maxSynchronousAlignments: js.UndefOr[Double] = js.undefined
     
     var time: js.UndefOr[Double] = js.undefined
     
@@ -82,9 +112,31 @@ object ScrollIntoView {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
+      inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
+      
+      inline def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
       inline def setEase(value: /* value */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      
+      inline def setIsScrollable(
+        value: (/* target */ HTMLElement, /* defaultIsScrollable */ js.Function1[/* target */ HTMLElement, Boolean]) => Boolean
+      ): Self = StObject.set(x, "isScrollable", js.Any.fromFunction2(value))
+      
+      inline def setIsScrollableUndefined: Self = StObject.set(x, "isScrollable", js.undefined)
+      
+      inline def setIsWindow(value: /* target */ HTMLElement => Boolean): Self = StObject.set(x, "isWindow", js.Any.fromFunction1(value))
+      
+      inline def setIsWindowUndefined: Self = StObject.set(x, "isWindow", js.undefined)
+      
+      inline def setMaxSynchronousAlignments(value: Double): Self = StObject.set(x, "maxSynchronousAlignments", value.asInstanceOf[js.Any])
+      
+      inline def setMaxSynchronousAlignmentsUndefined: Self = StObject.set(x, "maxSynchronousAlignments", js.undefined)
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

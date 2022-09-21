@@ -8,9 +8,9 @@ trait ComponentsSpacing extends StObject {
   
   var baseFontSize: js.UndefOr[Double] = js.undefined
   
-  var breakpoints: js.UndefOr[js.Object] = js.undefined
+  var colors: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[TabbedView] = js.undefined
+  var components: js.UndefOr[Button] = js.undefined
   
   var spacing: js.UndefOr[js.Object] = js.undefined
 }
@@ -27,11 +27,11 @@ object ComponentsSpacing {
     
     inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
-    inline def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setComponents(value: TabbedView): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Button): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     

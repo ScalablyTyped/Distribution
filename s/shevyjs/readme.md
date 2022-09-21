@@ -4,21 +4,18 @@
 Typings are for version 1.1
 
 ## Library description:
-Shevyjs is a CSS-in-JS solution for perfect vertical rhythm with your typography
+> Perfect vertical rhythm for typography and more in CSS-in-JS
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | shevyjs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 26946 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 615.3333333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/kyleshevlin/shevyjs#readme)
-- [Bugs](https://github.com/kyleshevlin/shevyjs/issues)
-- [Repository](https://github.com/kyleshevlin/shevyjs)
 - [Npm](https://www.npmjs.com/package/shevyjs)
     
 

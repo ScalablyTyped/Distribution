@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.pivotBaseMod.PivotBase
 import typings.officeUiFabricReact.pivotItemMod.PivotItem
@@ -125,6 +126,11 @@ object pivotTypesMod {
     var defaultSelectedKey: js.UndefOr[String] = js.undefined
     
     /**
+      * Props passed to the `FocusZone` component used as the root of `Pivot`.
+      */
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
+    
+    /**
       * Callback to customize how IDs are generated for each tab header.
       * Useful if you're rendering content outside and need to connect aria-labelledby.
       */
@@ -213,6 +219,10 @@ object pivotTypesMod {
       inline def setDefaultSelectedKey(value: String): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
       
       inline def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
+      
+      inline def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
+      
+      inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
       inline def setGetTabId(value: (/* itemKey */ String, /* index */ Double) => String): Self = StObject.set(x, "getTabId", js.Any.fromFunction2(value))
       

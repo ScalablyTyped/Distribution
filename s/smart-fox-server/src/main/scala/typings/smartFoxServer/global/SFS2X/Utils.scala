@@ -11,7 +11,7 @@ object Utils {
   
   @JSGlobal("SFS2X.Utils.ClientDisconnectionReason")
   @js.native
-  class ClientDisconnectionReason ()
+  open class ClientDisconnectionReason ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Utils.ClientDisconnectionReason
   /* static members */

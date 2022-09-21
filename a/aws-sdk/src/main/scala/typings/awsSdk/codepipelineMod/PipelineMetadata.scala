@@ -9,7 +9,7 @@ trait PipelineMetadata extends StObject {
   /**
     * The date and time the pipeline was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the pipeline.
@@ -19,7 +19,7 @@ trait PipelineMetadata extends StObject {
   /**
     * The date and time the pipeline was last updated, in timestamp format.
     */
-  var updated: js.UndefOr[Timestamp] = js.undefined
+  var updated: js.UndefOr[js.Date] = js.undefined
 }
 object PipelineMetadata {
   
@@ -30,7 +30,7 @@ object PipelineMetadata {
   
   extension [Self <: PipelineMetadata](x: Self) {
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -38,7 +38,7 @@ object PipelineMetadata {
     
     inline def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
     
-    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: js.Date): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }

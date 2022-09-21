@@ -1,7 +1,7 @@
 
 # Scala.js typings for slate
 
-Typings are for version 0.47
+Typings are for version 0.82.1
 
 ## Library description:
 A completely customizable framework for building rich text editors.
@@ -10,10 +10,10 @@ A completely customizable framework for building rich text editors.
 | ------------------ | :-------------: |
 | Full name          | slate |
 | Keywords           | canvas, contenteditable, custom, document, edit, editor, html, immutable, markdown, medium, paper, react, rich, richtext, richtext, slate, text, wysiwyg, wysiwym |
-| # releases         | 126 |
-| # dependents       | 220 |
-| # downloads        | 4264400 |
-| # stars            | 16 |
+| # releases         | 276 |
+| # dependents       | 0.0 |
+| # downloads        | 1594710.3333333333 |
+| # stars            | 25152.0 |
 
 ## Links
 - [Homepage](https://github.com/ianstormtaylor/slate#readme)
@@ -24,7 +24,7 @@ A completely customizable framework for building rich text editors.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

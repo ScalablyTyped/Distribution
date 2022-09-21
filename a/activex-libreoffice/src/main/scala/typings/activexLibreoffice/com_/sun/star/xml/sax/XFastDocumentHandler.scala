@@ -29,7 +29,7 @@ object XFastDocumentHandler {
     endDocument: () => Unit,
     endFastElement: Double => Unit,
     endUnknownElement: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDocumentLocator: XLocator => Unit,
     startDocument: () => Unit,

@@ -3,6 +3,7 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ImportSpecifier
 import typings.babelTypes.babelTypesStrings.`type`
 import typings.babelTypes.babelTypesStrings.typeof
+import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait ImportSpecifier_
   extends StObject
      with BaseNode
-     with ModuleSpecifier {
+     with ModuleSpecifier
+     with Standardized {
   
-  var importKind: `type` | typeof | Null
+  var importKind: `type` | typeof | value | Null
   
   var imported: Identifier_ | StringLiteral_
   
@@ -32,7 +34,7 @@ object ImportSpecifier_ {
   
   extension [Self <: ImportSpecifier_](x: Self) {
     
-    inline def setImportKind(value: `type` | typeof): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
+    inline def setImportKind(value: `type` | typeof | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
     

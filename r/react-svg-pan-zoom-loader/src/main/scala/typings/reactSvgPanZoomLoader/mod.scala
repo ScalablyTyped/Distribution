@@ -46,7 +46,7 @@ object mod {
   
   trait SvgLoaderSelectElementProps
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     var children: js.UndefOr[String] = js.undefined
     

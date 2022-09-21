@@ -10,7 +10,7 @@ trait PointColor extends StObject {
   
   var pointIndex: js.UndefOr[Double] = js.undefined
   
-  var pointName: js.UndefOr[js.Any] = js.undefined
+  var pointName: js.UndefOr[Any] = js.undefined
 }
 object PointColor {
   
@@ -29,7 +29,7 @@ object PointColor {
     
     inline def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
     
-    inline def setPointName(value: js.Any): Self = StObject.set(x, "pointName", value.asInstanceOf[js.Any])
+    inline def setPointName(value: Any): Self = StObject.set(x, "pointName", value.asInstanceOf[js.Any])
     
     inline def setPointNameUndefined: Self = StObject.set(x, "pointName", js.undefined)
   }

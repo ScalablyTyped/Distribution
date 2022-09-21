@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,14 +15,14 @@ trait ParamsResourceFilesUpdate
   var addParents: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * This parameter is deprecated and has no function.
     */
   var convert: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated. Adding files to multiple folders is no longer supported. Use shortcuts instead.
+    */
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the file to update.
@@ -34,24 +30,27 @@ trait ParamsResourceFilesUpdate
   var fileId: js.UndefOr[String] = js.undefined
   
   /**
+    * A comma-separated list of IDs of labels to include in the labelInfo part of the response.
+    */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies which additional view's permissions to include in the response. Only 'published' is supported.
+    */
+  var includePermissionsForView: js.UndefOr[String] = js.undefined
+  
+  /**
     * Media metadata
     */
   var media: js.UndefOr[Body] = js.undefined
   
   /**
-    * Determines the behavior in which modifiedDate is updated. This overrides
-    * setModifiedDate.
+    * Determines the behavior in which modifiedDate is updated. This overrides setModifiedDate.
     */
   var modifiedDateBehavior: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether a blob upload should create a new revision. If false, the blob
-    * data in the current head revision is replaced. If true or not set, a new
-    * blob is created as head revision, and previous unpinned revisions are
-    * preserved for a short period of time. Pinned revisions are stored
-    * indefinitely, using additional storage quota, up to a maximum of 200
-    * revisions. For details on how revisions are retained, see the Drive Help
-    * Center.
+    * Whether a blob upload should create a new revision. If false, the blob data in the current head revision is replaced. If true or not set, a new blob is created as head revision, and previous unpinned revisions are preserved for a short period of time. Pinned revisions are stored indefinitely, using additional storage quota, up to a maximum of 200 revisions. For details on how revisions are retained, see the Drive Help Center. Note that this field is ignored if there is no payload in the request.
     */
   var newRevision: js.UndefOr[Boolean] = js.undefined
   
@@ -61,14 +60,12 @@ trait ParamsResourceFilesUpdate
   var ocr: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If ocr is true, hints at the language to use. Valid values are BCP 47
-    * codes.
+    * If ocr is true, hints at the language to use. Valid values are BCP 47 codes.
     */
   var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to pin the new revision. A file can have a maximum of 200 pinned
-    * revisions.
+    * Whether to pin the new revision. A file can have a maximum of 200 pinned revisions. Note that this field is ignored if there is no payload in the request.
     */
   var pinned: js.UndefOr[Boolean] = js.undefined
   
@@ -83,16 +80,17 @@ trait ParamsResourceFilesUpdate
   var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
-    * Whether to set the modified date using the value supplied in the request
-    * body. Setting this field to true is equivalent to
-    * modifiedDateBehavior=fromBodyOrNow, and false is equivalent to
-    * modifiedDateBehavior=now. To prevent any changes to the modified date set
-    * modifiedDateBehavior=noChange.
+    * Whether to set the modified date using the value supplied in the request body. Setting this field to true is equivalent to modifiedDateBehavior=fromBodyOrNow, and false is equivalent to modifiedDateBehavior=now. To prevent any changes to the modified date set modifiedDateBehavior=noChange.
     */
   var setModifiedDate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
@@ -129,17 +127,25 @@ object ParamsResourceFilesUpdate {
     
     inline def setAddParentsUndefined: Self = StObject.set(x, "addParents", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
+    inline def setEnforceSingleParent(value: Boolean): Self = StObject.set(x, "enforceSingleParent", value.asInstanceOf[js.Any])
+    
+    inline def setEnforceSingleParentUndefined: Self = StObject.set(x, "enforceSingleParent", js.undefined)
+    
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
+    
+    inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePermissionsForViewUndefined: Self = StObject.set(x, "includePermissionsForView", js.undefined)
     
     inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
@@ -176,6 +182,10 @@ object ParamsResourceFilesUpdate {
     inline def setSetModifiedDate(value: Boolean): Self = StObject.set(x, "setModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setSetModifiedDateUndefined: Self = StObject.set(x, "setModifiedDate", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

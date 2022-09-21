@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DashboardGroupEntry = typings.vsoNodeApi.dashboardInterfacesMod.Dashboard
+type DashboardGroupEntry = Dashboard
 
-type DashboardGroupEntryResponse = typings.vsoNodeApi.dashboardInterfacesMod.DashboardGroupEntry
+type DashboardGroupEntryResponse = DashboardGroupEntry
 
-type DashboardResponse = typings.vsoNodeApi.dashboardInterfacesMod.DashboardGroupEntry
+type DashboardResponse = DashboardGroupEntry
 
-type WidgetResponse = typings.vsoNodeApi.dashboardInterfacesMod.Widget
+type WidgetResponse = Widget

@@ -11,9 +11,9 @@ A basic libray to stub logging calls when an external logger is expected.
 | Full name          | logstub |
 | Keywords           | log, logging, stub, mock, mocking, winston, bunyan, log4js, console |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 19958 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1263.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/OutOfSyncStudios/logstub#readme)

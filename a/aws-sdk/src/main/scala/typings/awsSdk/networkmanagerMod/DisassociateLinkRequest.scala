@@ -9,31 +9,31 @@ trait DisassociateLinkRequest extends StObject {
   /**
     * The ID of the device.
     */
-  var DeviceId: String
+  var DeviceId: typings.awsSdk.networkmanagerMod.DeviceId
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
   
   /**
     * The ID of the link.
     */
-  var LinkId: String
+  var LinkId: typings.awsSdk.networkmanagerMod.LinkId
 }
 object DisassociateLinkRequest {
   
-  inline def apply(DeviceId: String, GlobalNetworkId: String, LinkId: String): DisassociateLinkRequest = {
+  inline def apply(DeviceId: DeviceId, GlobalNetworkId: GlobalNetworkId, LinkId: LinkId): DisassociateLinkRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateLinkRequest]
   }
   
   extension [Self <: DisassociateLinkRequest](x: Self) {
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
   }
 }

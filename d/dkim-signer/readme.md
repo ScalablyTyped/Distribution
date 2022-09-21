@@ -10,10 +10,10 @@ DKIM signing code extracted from mailcomposer
 | ------------------ | :-------------: |
 | Full name          | dkim-signer |
 | Keywords           | DKIM, SMTP, mailcomposer |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 3423653 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 545269.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/dkim-signer)

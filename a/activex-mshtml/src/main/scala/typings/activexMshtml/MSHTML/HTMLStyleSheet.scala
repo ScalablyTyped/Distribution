@@ -22,7 +22,7 @@ trait HTMLStyleSheet extends StObject {
   def addRule(bstrSelector: String, bstrStyle: String): Double = js.native
   def addRule(bstrSelector: String, bstrStyle: String, lIndex: Double): Double = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   def cssRules(index: Double): IHTMLStyleSheetRule = js.native
   @JSName("cssRules")
@@ -42,15 +42,15 @@ trait HTMLStyleSheet extends StObject {
   
   var ie8_href: String = js.native
   
-  val ie9_href: js.Any = js.native
+  val ie9_href: Any = js.native
   
-  val ie9_media: js.Any = js.native
+  val ie9_media: Any = js.native
   
   val ie9_title: String = js.native
   
   val ie9_type: String = js.native
   
-  def imports(pvarIndex: js.Any): js.Any = js.native
+  def imports(pvarIndex: Any): Any = js.native
   @JSName("imports")
   val imports_Original: IHTMLStyleSheetsCollection = js.native
   

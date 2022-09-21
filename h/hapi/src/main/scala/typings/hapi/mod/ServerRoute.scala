@@ -3,7 +3,6 @@ package typings.hapi.mod
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Lifecycle.ReturnValue
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,14 +57,14 @@ object ServerRoute {
     inline def setHandler(value: Method | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     inline def setMethod(value: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setMethodVarargs(value: (HTTP_METHODS_PARTIAL | String)*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: (HTTP_METHODS_PARTIAL | String)*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setOptions(value: RouteOptions | (js.Function1[/* server */ Server, RouteOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
@@ -83,6 +82,6 @@ object ServerRoute {
     
     inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
-    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value*))
   }
 }

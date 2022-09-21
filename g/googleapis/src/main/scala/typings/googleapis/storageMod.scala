@@ -2,16 +2,20 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapis.googleapisStrings.v1beta2
 import typings.googleapis.storageV1Mod.storageV1.Options
 import typings.googleapis.storageV1Mod.storageV1.Storage
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +26,13 @@ object storageMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/storage", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/storage", "VERSIONS")
@@ -31,7 +42,7 @@ object storageMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/storage", "VERSIONS.v1")
     @js.native
-    class v1 protected () extends Storage {
+    open class v1 protected () extends Storage {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
@@ -43,32 +54,9 @@ object storageMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("googleapis/build/src/apis/storage", "VERSIONS.v1beta1")
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    @JSImport("googleapis/build/src/apis/storage", "VERSIONS.v1beta1")
-    @js.native
-    def v1beta1: Instantiable2[
-        /* options */ GlobalOptions, 
-        /* google */ js.UndefOr[GoogleConfigurable], 
-        typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage
-      ] = js.native
-    inline def v1beta1_=(
-      x: Instantiable2[
-          /* options */ GlobalOptions, 
-          /* google */ js.UndefOr[GoogleConfigurable], 
-          typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/storage", "VERSIONS.v1beta2")
     @js.native
-    class v1beta2 protected ()
+    open class v1beta2 protected ()
       extends typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -93,7 +81,25 @@ object storageMod {
     
     @JSImport("googleapis/build/src/apis/storage", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/storage", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/storage", "auth.Compute")
@@ -104,7 +110,7 @@ object storageMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -113,7 +119,7 @@ object storageMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/storage", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -122,13 +128,45 @@ object storageMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/storage", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/storage", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/storage", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/storage", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -158,21 +196,152 @@ object storageMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def storage(options: Options): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
-  inline def storage(options: typings.googleapis.storageV1beta1Mod.storageV1beta1.Options): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage]
   inline def storage(options: typings.googleapis.storageV1beta2Mod.storageV1beta2.Options): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage]
   
-  inline def storage_v1(version: v1): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  object storageV1 {
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Bucketaccesscontrols")
+    @js.native
+    open class ResourceBucketaccesscontrols protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceBucketaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Buckets")
+    @js.native
+    open class ResourceBuckets protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceBuckets {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Channels")
+    @js.native
+    open class ResourceChannels protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceChannels {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Defaultobjectaccesscontrols")
+    @js.native
+    open class ResourceDefaultobjectaccesscontrols protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceDefaultobjectaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Notifications")
+    @js.native
+    open class ResourceNotifications protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceNotifications {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Objectaccesscontrols")
+    @js.native
+    open class ResourceObjectaccesscontrols protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceObjectaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Objects")
+    @js.native
+    open class ResourceObjects protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceObjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Projects")
+    @js.native
+    open class ResourceProjects protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceProjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Projects$Hmackeys")
+    @js.native
+    open class ResourceProjectsHmackeys protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceProjectsHmackeys {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Resource$Projects$Serviceaccount")
+    @js.native
+    open class ResourceProjectsServiceaccount protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.ResourceProjectsServiceaccount {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1.Storage")
+    @js.native
+    open class Storage protected ()
+      extends typings.googleapis.storageV1Mod.storageV1.Storage {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
   
-  inline def storage_v1beta1(version: v1beta1): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage]
+  object storageV1beta2 {
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Bucketaccesscontrols")
+    @js.native
+    open class ResourceBucketaccesscontrols protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceBucketaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Buckets")
+    @js.native
+    open class ResourceBuckets protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceBuckets {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Channels")
+    @js.native
+    open class ResourceChannels protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceChannels {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Defaultobjectaccesscontrols")
+    @js.native
+    open class ResourceDefaultobjectaccesscontrols protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceDefaultobjectaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Objectaccesscontrols")
+    @js.native
+    open class ResourceObjectaccesscontrols protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceObjectaccesscontrols {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Resource$Objects")
+    @js.native
+    open class ResourceObjects protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.ResourceObjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/storage", "storage_v1beta2.Storage")
+    @js.native
+    open class Storage protected ()
+      extends typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
+  
+  inline def storage_v1(version: v1): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[Storage]
   
   inline def storage_v1beta2(version: v1beta2): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage]
 }

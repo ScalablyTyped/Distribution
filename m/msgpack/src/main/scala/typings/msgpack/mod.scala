@@ -34,7 +34,7 @@ object mod extends Shortcut {
   }
   
   type MsgPackDownloadCallback = js.Function3[
-    /* data */ js.Any, 
+    /* data */ Any, 
     /* option */ MsgPackDownloadOption, 
     /* result */ MsgPackCallbackResult, 
     Unit
@@ -103,15 +103,15 @@ object mod extends Shortcut {
       *
       * @return string or ByteArray or false. pack failed if false.
       */
-    def pack(data: js.Any): js.Any = js.native
-    def pack(data: js.Any, toString: Boolean): js.Any = js.native
+    def pack(data: Any): Any = js.native
+    def pack(data: Any, toString: Boolean): Any = js.native
     
     /**
       * @param data string or ByteArray.
       *
       * @return string or ByteArray or undefined. unpack failed if undefined.
       */
-    def unpack(data: js.Any): js.Any = js.native
+    def unpack(data: Any): Any = js.native
     
     def upload(url: String, option: MsgPackUploadOption, callback: MsgPackUploadCallback): Unit = js.native
     
@@ -141,7 +141,7 @@ object mod extends Shortcut {
     /**
       * string or ByteArray
       */
-    var data: js.Any
+    var data: Any
     
     /**
       * timeout sec.
@@ -155,7 +155,7 @@ object mod extends Shortcut {
   }
   object MsgPackUploadOption {
     
-    inline def apply(data: js.Any): MsgPackUploadOption = {
+    inline def apply(data: Any): MsgPackUploadOption = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[MsgPackUploadOption]
     }
@@ -170,7 +170,7 @@ object mod extends Shortcut {
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

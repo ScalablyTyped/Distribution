@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CMimeTypes")
 @js.native
-/* private */ class CMimeTypes ()
+/* private */ open class CMimeTypes ()
   extends StObject
      with typings.activexMshtml.MSHTML.CMimeTypes {
   

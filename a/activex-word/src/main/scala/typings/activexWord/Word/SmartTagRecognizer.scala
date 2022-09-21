@@ -16,7 +16,7 @@ trait SmartTagRecognizer extends StObject {
   
   val FullName: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val ProgID: String
   
@@ -31,7 +31,7 @@ object SmartTagRecognizer {
     Creator: Double,
     Enabled: Boolean,
     FullName: String,
-    Parent: js.Any,
+    Parent: Any,
     ProgID: String,
     WordDotSmartTagRecognizer_typekey: SmartTagRecognizer
   ): SmartTagRecognizer = {
@@ -52,7 +52,7 @@ object SmartTagRecognizer {
     
     inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProgID(value: String): Self = StObject.set(x, "ProgID", value.asInstanceOf[js.Any])
     

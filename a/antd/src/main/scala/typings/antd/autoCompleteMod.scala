@@ -1,6 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.anon.Children
+import typings.antd.anon.Option
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -27,6 +29,7 @@ import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
 import typings.antd.antdStrings.location
+import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
@@ -37,6 +40,8 @@ import typings.antd.antdStrings.page
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.responsive
+import typings.antd.antdStrings.rtl
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.text_
@@ -44,23 +49,25 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.selectMod.OptionType
-import typings.antd.selectMod.RefSelectProps
-import typings.rcSelect.anon.Mark
-import typings.rcSelect.generatorMod.CustomTagProps
-import typings.rcSelect.generatorMod.FilterFunc
-import typings.rcSelect.generatorMod.LabelValueType
-import typings.rcSelect.generatorMod.OnClear
-import typings.rcSelect.generatorMod.SingleType
-import typings.rcSelect.interfaceMod.OptionData
-import typings.rcSelect.interfaceMod.OptionGroupData
-import typings.rcSelect.interfaceMod.OptionsType
-import typings.rcSelect.interfaceMod.RenderDOMFunc
-import typings.rcSelect.interfaceMod.RenderNode
+import typings.antd.statusUtilsMod.InputStatus
+import typings.rcSelect.baseSelectMod.CustomTagProps
+import typings.rcSelect.baseSelectMod.DisplayValueType
+import typings.rcSelect.baseSelectMod.Placement
+import typings.rcSelect.baseSelectMod.RenderDOMFunc
+import typings.rcSelect.baseSelectMod.RenderNode
+import typings.rcSelect.selectMod.ArrayElementType
+import typings.rcSelect.selectMod.BaseOptionType
+import typings.rcSelect.selectMod.DefaultOptionType
+import typings.rcSelect.selectMod.FieldNames
+import typings.rcSelect.selectMod.FilterFunc
+import typings.rcSelect.selectMod.LabelInValueType
+import typings.rcSelect.selectMod.RawValueType
+import typings.rcSelect.selectMod.SelectHandler
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -69,13 +76,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,10 +91,10 @@ object autoCompleteMod extends Shortcut {
   
   @JSImport("antd/lib/auto-complete", JSImport.Default)
   @js.native
-  val default: RefAutoCompleteWithOption = js.native
+  val default: (js.Function1[/* props */ Children & (AutoCompleteProps[Any, DefaultOptionType]), ReactElement]) & Option = js.native
   
-  /* Inlined parent std.Omit<antd.antd/lib/select.InternalSelectProps<string>, 'inputIcon' | 'loading' | 'mode' | 'optionLabelProp' | 'labelInValue'> */
-  trait AutoCompleteProps extends StObject {
+  /* Inlined parent std.Omit<antd.antd/lib/select.InternalSelectProps<ValueType, OptionType>, 'inputIcon' | 'loading' | 'mode' | 'optionLabelProp' | 'labelInValue'> */
+  trait AutoCompleteProps[ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -95,11 +102,11 @@ object autoCompleteMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -117,21 +124,21 @@ object autoCompleteMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -145,11 +152,11 @@ object autoCompleteMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -161,13 +168,13 @@ object autoCompleteMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -177,7 +184,7 @@ object autoCompleteMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -205,7 +212,7 @@ object autoCompleteMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.undefined
+    var clearIcon: js.UndefOr[RenderNode] = js.undefined
     
     var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
     
@@ -213,14 +220,18 @@ object autoCompleteMod extends Shortcut {
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.undefined
+    var defaultValue: js.UndefOr[ValueType | Null] = js.undefined
     
-    var direction: js.UndefOr[String] = js.undefined
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownAlign: js.UndefOr[js.Any] = js.undefined
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
+    /**
+      * @deprecated `dropdownClassName` is deprecated which will be removed in next major version.
+      *   Please use `popupClassName` instead.
+      */
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.undefined
@@ -229,30 +240,32 @@ object autoCompleteMod extends Shortcut {
     
     var dropdownStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var filterOption: js.UndefOr[
-        Boolean | (FilterFunc[
-          /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
-        ])
-      ] = js.undefined
+    var fieldNames: js.UndefOr[FieldNames] = js.undefined
+    
+    var filterOption: js.UndefOr[Boolean | FilterFunc[OptionType]] = js.undefined
+    
+    var filterSort: js.UndefOr[js.Function2[/* optionA */ OptionType, /* optionB */ OptionType, Double]] = js.undefined
     
     var getInputElement: js.UndefOr[js.Function0[Element]] = js.undefined
     
     var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.undefined
     
+    var getRawInputElement: js.UndefOr[js.Function0[Element]] = js.undefined
+    
     var id: js.UndefOr[String] = js.undefined
     
     var inputValue: js.UndefOr[String] = js.undefined
-    
-    var internalProps: js.UndefOr[Mark[OptionsType]] = js.undefined
     
     var listHeight: js.UndefOr[Double] = js.undefined
     
     var listItemHeight: js.UndefOr[Double] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double] = js.undefined
+    var maxLength: js.UndefOr[Double] = js.undefined
+    
+    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
-        ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])
+        ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
       ] = js.undefined
     
     var maxTagTextLength: js.UndefOr[Double] = js.undefined
@@ -264,30 +277,20 @@ object autoCompleteMod extends Shortcut {
     var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function2[
-          /* value */ String, 
-          /* option */ (/* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any) | OptionsType, 
-          Unit
-        ]
+        js.Function2[/* value */ ValueType, /* option */ OptionType | js.Array[OptionType], Unit]
       ] = js.undefined
     
-    var onClear: js.UndefOr[OnClear] = js.undefined
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDeselect: js.UndefOr[
-        js.Function2[
-          /* value */ SingleType[String], 
-          /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ /* option */ js.Any, 
-          Unit
-        ]
-      ] = js.undefined
+    var onDeselect: js.UndefOr[SelectHandler[ArrayElementType[ValueType], OptionType]] = js.undefined
     
     var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
-    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
+    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement]] = js.undefined
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -303,25 +306,23 @@ object autoCompleteMod extends Shortcut {
     
     var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[
-        js.Function2[
-          /* value */ SingleType[String], 
-          /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ /* option */ js.Any, 
-          Unit
-        ]
-      ] = js.undefined
+    var onSelect: js.UndefOr[SelectHandler[ArrayElementType[ValueType], OptionType]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
     var optionFilterProp: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[OptionsType] = js.undefined
+    var options: js.UndefOr[js.Array[OptionType]] = js.undefined
     
     var placeholder: js.UndefOr[ReactNode] = js.undefined
     
+    var placement: js.UndefOr[Placement] = js.undefined
+    
+    var popupClassName: js.UndefOr[String] = js.undefined
+    
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode] = js.undefined
+    var removeIcon: js.UndefOr[RenderNode] = js.undefined
     
     var searchValue: js.UndefOr[String] = js.undefined
     
@@ -332,6 +333,8 @@ object autoCompleteMod extends Shortcut {
     var showSearch: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[SizeType] = js.undefined
+    
+    var status: js.UndefOr[InputStatus] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -345,18 +348,18 @@ object autoCompleteMod extends Shortcut {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.undefined
+    var value: js.UndefOr[ValueType | Null] = js.undefined
     
     var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object AutoCompleteProps {
     
-    inline def apply(): AutoCompleteProps = {
+    inline def apply[ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](): AutoCompleteProps[ValueType, OptionType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AutoCompleteProps]
+      __obj.asInstanceOf[AutoCompleteProps[ValueType, OptionType]]
     }
     
-    extension [Self <: AutoCompleteProps](x: Self) {
+    extension [Self <: AutoCompleteProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (AutoCompleteProps[ValueType, OptionType])) {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -370,7 +373,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -378,7 +381,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -414,7 +417,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -426,7 +429,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -434,7 +437,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -442,7 +445,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -470,15 +473,15 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -502,7 +505,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -512,7 +515,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -532,7 +535,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -588,7 +591,9 @@ object autoCompleteMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      inline def setClearIcon(value: RenderNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setClearIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "clearIcon", js.Any.fromFunction1(value))
       
       inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
       
@@ -596,7 +601,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: DataSourceItemType*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: DataSourceItemType*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDefaultActiveFirstOption(value: Boolean): Self = StObject.set(x, "defaultActiveFirstOption", value.asInstanceOf[js.Any])
       
@@ -606,11 +611,13 @@ object autoCompleteMod extends Shortcut {
       
       inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -618,7 +625,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDropdownAlign(value: js.Any): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
+      inline def setDropdownAlign(value: AlignType): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
       
       inline def setDropdownAlignUndefined: Self = StObject.set(x, "dropdownAlign", js.undefined)
       
@@ -638,27 +645,31 @@ object autoCompleteMod extends Shortcut {
       
       inline def setDropdownStyleUndefined: Self = StObject.set(x, "dropdownStyle", js.undefined)
       
-      inline def setFilterOption(
-        value: Boolean | (FilterFunc[
-              /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
-            ])
-      ): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: FieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      inline def setFilterOptionFunction2(
-        value: (/* inputValue */ String, /* option */ js.UndefOr[
-              /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
-            ]) => Boolean
-      ): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      
+      inline def setFilterOption(value: Boolean | FilterFunc[OptionType]): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
+      
+      inline def setFilterOptionFunction2(value: (/* inputValue */ String, /* option */ js.UndefOr[OptionType]) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
       inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
+      
+      inline def setFilterSort(value: (/* optionA */ OptionType, /* optionB */ OptionType) => Double): Self = StObject.set(x, "filterSort", js.Any.fromFunction2(value))
+      
+      inline def setFilterSortUndefined: Self = StObject.set(x, "filterSort", js.undefined)
       
       inline def setGetInputElement(value: () => Element): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
       
       inline def setGetInputElementUndefined: Self = StObject.set(x, "getInputElement", js.undefined)
       
-      inline def setGetPopupContainer(value: /* props */ js.Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* props */ Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      
+      inline def setGetRawInputElement(value: () => Element): Self = StObject.set(x, "getRawInputElement", js.Any.fromFunction0(value))
+      
+      inline def setGetRawInputElementUndefined: Self = StObject.set(x, "getRawInputElement", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -668,10 +679,6 @@ object autoCompleteMod extends Shortcut {
       
       inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      inline def setInternalProps(value: Mark[OptionsType]): Self = StObject.set(x, "internalProps", value.asInstanceOf[js.Any])
-      
-      inline def setInternalPropsUndefined: Self = StObject.set(x, "internalProps", js.undefined)
-      
       inline def setListHeight(value: Double): Self = StObject.set(x, "listHeight", value.asInstanceOf[js.Any])
       
       inline def setListHeightUndefined: Self = StObject.set(x, "listHeight", js.undefined)
@@ -680,13 +687,17 @@ object autoCompleteMod extends Shortcut {
       
       inline def setListItemHeightUndefined: Self = StObject.set(x, "listItemHeight", js.undefined)
       
-      inline def setMaxTagCount(value: Double): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      
+      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
-      inline def setMaxTagPlaceholder(value: ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])): Self = StObject.set(x, "maxTagPlaceholder", value.asInstanceOf[js.Any])
+      inline def setMaxTagPlaceholder(value: ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])): Self = StObject.set(x, "maxTagPlaceholder", value.asInstanceOf[js.Any])
       
-      inline def setMaxTagPlaceholderFunction1(value: /* omittedValues */ js.Array[LabelValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
+      inline def setMaxTagPlaceholderFunction1(value: /* omittedValues */ js.Array[DisplayValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
       
       inline def setMaxTagPlaceholderUndefined: Self = StObject.set(x, "maxTagPlaceholder", js.undefined)
       
@@ -696,7 +707,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def setMenuItemSelectedIcon(value: RenderNode): Self = StObject.set(x, "menuItemSelectedIcon", value.asInstanceOf[js.Any])
       
-      inline def setMenuItemSelectedIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "menuItemSelectedIcon", js.Any.fromFunction1(value))
+      inline def setMenuItemSelectedIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "menuItemSelectedIcon", js.Any.fromFunction1(value))
       
       inline def setMenuItemSelectedIconUndefined: Self = StObject.set(x, "menuItemSelectedIcon", js.undefined)
       
@@ -704,13 +715,11 @@ object autoCompleteMod extends Shortcut {
       
       inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(
-        value: (/* value */ String, /* option */ (/* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any) | OptionsType) => Unit
-      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ ValueType, /* option */ OptionType | js.Array[OptionType]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -718,13 +727,11 @@ object autoCompleteMod extends Shortcut {
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[typings.std.Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnDeselect(
-        value: (/* value */ SingleType[String], /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ /* option */ js.Any) => Unit
-      ): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
+      inline def setOnDeselect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
@@ -732,11 +739,11 @@ object autoCompleteMod extends Shortcut {
       
       inline def setOnDropdownVisibleChangeUndefined: Self = StObject.set(x, "onDropdownVisibleChange", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
+      inline def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnInputKeyDownUndefined: Self = StObject.set(x, "onInputKeyDown", js.undefined)
       
@@ -768,9 +775,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      inline def setOnSelect(
-        value: (/* value */ SingleType[String], /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ /* option */ js.Any) => Unit
-      ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -782,21 +787,31 @@ object autoCompleteMod extends Shortcut {
       
       inline def setOptionFilterPropUndefined: Self = StObject.set(x, "optionFilterProp", js.undefined)
       
-      inline def setOptions(value: OptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (OptionData | OptionGroupData)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionType*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
+      
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: RenderNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
@@ -808,7 +823,7 @@ object autoCompleteMod extends Shortcut {
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value :_*))
+      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
@@ -821,6 +836,10 @@ object autoCompleteMod extends Shortcut {
       inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -842,13 +861,15 @@ object autoCompleteMod extends Shortcut {
       
       inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
       
-      inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value :_*))
+      inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value*))
       
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -881,16 +902,8 @@ object autoCompleteMod extends Shortcut {
   
   type DataSourceItemType = DataSourceItemObject | ReactNode
   
-  @js.native
-  trait RefAutoCompleteWithOption
-    extends StObject
-       with ForwardRefExoticComponent[AutoCompleteProps & RefAttributes[RefSelectProps]] {
-    
-    var Option: OptionType = js.native
-  }
-  
-  type _To = RefAutoCompleteWithOption
+  type _To = (js.Function1[/* props */ Children & (AutoCompleteProps[Any, DefaultOptionType]), ReactElement]) & Option
   
   /* This means you don't have to write `default`, but can instead just say `autoCompleteMod.foo` */
-  override def _to: RefAutoCompleteWithOption = default
+  override def _to: (js.Function1[/* props */ Children & (AutoCompleteProps[Any, DefaultOptionType]), ReactElement]) & Option = default
 }

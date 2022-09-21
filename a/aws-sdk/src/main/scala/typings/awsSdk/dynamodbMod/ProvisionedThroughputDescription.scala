@@ -9,12 +9,12 @@ trait ProvisionedThroughputDescription extends StObject {
   /**
     * The date and time of the last provisioned throughput decrease for this table.
     */
-  var LastDecreaseDateTime: js.UndefOr[Date] = js.undefined
+  var LastDecreaseDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time of the last provisioned throughput increase for this table.
     */
-  var LastIncreaseDateTime: js.UndefOr[Date] = js.undefined
+  var LastIncreaseDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of provisioned throughput decreases for this table during this UTC calendar day. For current maximums on provisioned throughput decreases, see Service, Account, and Table Quotas in the Amazon DynamoDB Developer Guide.
@@ -40,11 +40,11 @@ object ProvisionedThroughputDescription {
   
   extension [Self <: ProvisionedThroughputDescription](x: Self) {
     
-    inline def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+    inline def setLastDecreaseDateTime(value: js.Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
     
-    inline def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+    inline def setLastIncreaseDateTime(value: js.Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
     

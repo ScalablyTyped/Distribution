@@ -2,12 +2,10 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.sinon.anon.Get
-import typings.sinon.anon.PartialSinonFakeTimersCon
+import typings.sinon.anon.PartialFakeTimerInstallOp
 import typings.sinon.sinonStrings.get
 import typings.sinon.sinonStrings.set
-import typings.std.Date
 import typings.std.Parameters
-import typings.std.PropertyDescriptor
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,8 +36,45 @@ trait SinonSandbox extends StObject {
     constructor: StubbableType[TType],
     overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TType ]:? sinon.sinon.SinonStubbedMember<TType[K]> | TType[K] extends (args : ...any): infer R? any : TType[K]}
-    */ typings.sinon.sinonStrings.SinonSandbox & TopLevel[js.Any]
+    */ typings.sinon.sinonStrings.SinonSandbox & TopLevel[Any]
   ): SinonStubbedInstance[TType] = js.native
+  
+  /**
+    * Creates a basic fake, with no behavior
+    */
+  def fake[TArgs /* <: js.Array[Any] */, TReturnValue](): SinonSpy[TArgs, TReturnValue] = js.native
+  /**
+    * Wraps an existing Function to record all interactions, while leaving it up to the func to provide the behavior.
+    * This is useful when complex behavior not covered by the sinon.fake.* methods is required or when wrapping an existing function or method.
+    */
+  def fake[TArgs /* <: js.Array[Any] */, TReturnValue](fn: js.Function1[/* args */ TArgs, TReturnValue]): SinonSpy[TArgs, TReturnValue] = js.native
+  @JSName("fake")
+  var fake_Original: SinonFake = js.native
+  
+  /**
+    * See custom matchers.
+    */
+  def `match`(callback: js.Function1[/* value */ Any, Boolean]): SinonMatcher = js.native
+  def `match`(callback: js.Function1[/* value */ Any, Boolean], message: String): SinonMatcher = js.native
+  /**
+    * Requires the value to be a string and match the given regular expression.
+    */
+  def `match`(expr: js.RegExp): SinonMatcher = js.native
+  /**
+    * Requires the value to be not null or undefined and have at least the same properties as expectation.
+    * This supports nested matchers.
+    */
+  def `match`(obj: js.Object): SinonMatcher = js.native
+  /**
+    * Requires the value to be a string and have the expectation as a substring.
+    */
+  def `match`(value: String): SinonMatcher = js.native
+  /**
+    * Requires the value to be == to the given number.
+    */
+  def `match`(value: Double): SinonMatcher = js.native
+  @JSName("match")
+  var match_Original: SinonMatch = js.native
   
   /**
     * Works exactly like sinon.mock
@@ -52,7 +87,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.mock
     */
-  def mock(obj: js.Any): SinonMock = js.native
+  def mock(obj: Any): SinonMock = js.native
   /**
     * Works exactly like sinon.mock
     */
@@ -138,14 +173,14 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.spy
     */
-  def spy(): SinonSpy[js.Array[js.Any], js.Any] = js.native
+  def spy(): SinonSpy[js.Array[Any], Any] = js.native
   /**
     * Spies on the provided function
     */
   /**
     * Works exactly like sinon.spy
     */
-  def spy[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
+  def spy[F /* <: js.Function1[/* repeated */ Any, Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
   /**
     * Creates a spy for object.method and replaces the original method with the spy.
     * An exception is thrown if the property is not already a function.
@@ -156,16 +191,24 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[js.Any | js.Array[js.Any], js.Any] = js.native
+  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[Any | js.Array[Any], Any] = js.native
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): PropertyDescriptor & (Get[T, K]) = js.native
+  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): js.PropertyDescriptor & (Get[T, K]) = js.native
   /**
     * Works exactly like sinon.spy
     */
   @JSName("spy")
   var spy_Original: SinonSpyStatic = js.native
+  /**
+    * Spies on all the object’s methods.
+    */
+  /**
+    * Works exactly like sinon.spy
+    */
+  @JSName("spy")
+  def spy_T_SinonSpiedInstance[T](obj: T): SinonSpiedInstance[T] = js.native
   
   /* tslint:enable:no-unnecessary-generics */
   /**
@@ -185,7 +228,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[TArgs /* <: js.Array[js.Any] */, R](): SinonStub[TArgs, R] = js.native
+  def stub[TArgs /* <: js.Array[Any] */, R](): SinonStub[TArgs, R] = js.native
   /**
     * Replaces obj.method with a stub function.
     * An exception is thrown if the property is not already a function.
@@ -194,7 +237,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[js.Any | js.Array[js.Any], js.Any] = js.native
+  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[Any | js.Array[Any], Any] = js.native
   /**
     * Works exactly like sinon.stub.
     */
@@ -225,9 +268,9 @@ trait SinonSandbox extends StObject {
     * @param config
     */
   def useFakeTimers(): SinonFakeTimers = js.native
+  def useFakeTimers(config: js.Date): SinonFakeTimers = js.native
   def useFakeTimers(config: Double): SinonFakeTimers = js.native
-  def useFakeTimers(config: PartialSinonFakeTimersCon): SinonFakeTimers = js.native
-  def useFakeTimers(config: Date): SinonFakeTimers = js.native
+  def useFakeTimers(config: PartialFakeTimerInstallOp): SinonFakeTimers = js.native
   
   /**
     * Causes Sinon to replace the native XMLHttpRequest object in browsers that support it with a custom implementation which does not send actual requests.
@@ -242,7 +285,7 @@ trait SinonSandbox extends StObject {
     * Returns the stub to allow chaining.
     * Since sinon@2.0.0
     */
-  def usingPromise(promiseLibrary: js.Any): SinonSandbox = js.native
+  def usingPromise(promiseLibrary: Any): SinonSandbox = js.native
   
   /**
     * Verifies all mocks created through the sandbox.

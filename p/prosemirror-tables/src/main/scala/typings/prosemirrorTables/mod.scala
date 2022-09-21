@@ -6,17 +6,14 @@ import typings.prosemirrorModel.mod.NodeSpec
 import typings.prosemirrorModel.mod.NodeType
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorModel.mod.Slice
 import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Plugin
 import typings.prosemirrorState.mod.PluginKey
 import typings.prosemirrorState.mod.Selection
-import typings.prosemirrorState.mod.SelectionRange
 import typings.prosemirrorState.mod.Transaction
-import typings.prosemirrorTables.anon.Anchor
-import typings.prosemirrorTables.anon.Buttom
+import typings.prosemirrorTables.anon.Bottom
 import typings.prosemirrorTables.anon.CellMinWidth
-import typings.prosemirrorTables.anon.RecordTableRolesNodeTypea
+import typings.prosemirrorTables.anon.RecordTableRolesNodeType
 import typings.prosemirrorTables.anon.UseDeprecatedLogic
 import typings.prosemirrorTables.prosemirrorTablesStrings.column
 import typings.prosemirrorTables.prosemirrorTablesStrings.row
@@ -34,59 +31,21 @@ object mod {
   
   @JSImport("prosemirror-tables", "CellSelection")
   @js.native
-  class CellSelection[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
-    def this($anchorCell: ResolvedPos[S]) = this()
-    def this($anchorCell: ResolvedPos[S], $headCell: ResolvedPos[S]) = this()
-    
-    @JSName("$anchor")
-    var $anchor: ResolvedPos[S] = js.native
+  open class CellSelection protected () extends Selection {
+    def this($anchorCell: ResolvedPos) = this()
+    def this($anchorCell: ResolvedPos, $headCell: ResolvedPos) = this()
     
     @JSName("$anchorCell")
-    var $anchorCell: ResolvedPos[S] = js.native
-    
-    @JSName("$from")
-    var $from: ResolvedPos[S] = js.native
-    
-    @JSName("$head")
-    var $head: ResolvedPos[S] = js.native
+    var $anchorCell: ResolvedPos = js.native
     
     @JSName("$headCell")
-    var $headCell: ResolvedPos[S] = js.native
+    var $headCell: ResolvedPos = js.native
     
-    @JSName("$to")
-    var $to: ResolvedPos[S] = js.native
-    
-    var anchor: Double = js.native
-    
-    def content(): Slice[S] = js.native
-    
-    var empty: Boolean = js.native
-    
-    def eq(other: Selection[S]): Boolean = js.native
-    
-    def forEachCell(f: js.Function2[/* node */ Node[S], /* pos */ Double, Unit]): Unit = js.native
-    
-    var from: Double = js.native
-    
-    def getBookmark(): Anchor = js.native
-    
-    var head: Double = js.native
+    def forEachCell(f: js.Function2[/* node */ Node, /* pos */ Double, Unit]): Unit = js.native
     
     def isColSelection(): Boolean = js.native
     
     def isRowSelection(): Boolean = js.native
-    
-    def map(doc: Node[S], mapping: Mappable): js.Any = js.native
-    
-    var ranges: js.Array[SelectionRange[S]] = js.native
-    
-    def replace(tr: Transaction[S], content: Slice[S]): Unit = js.native
-    
-    def replaceWith(tr: Transaction[S], node: Node[S]): Unit = js.native
-    
-    var to: Double = js.native
-    
-    def toJSON(): CellSelectionJSON = js.native
   }
   /* static members */
   object CellSelection {
@@ -95,21 +54,21 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def colSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S]): CellSelection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection[S]]
-    inline def colSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    inline def colSelection(anchorCell: ResolvedPos): CellSelection = ^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection]
+    inline def colSelection(anchorCell: ResolvedPos, headCell: ResolvedPos): CellSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("colSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection]
     
-    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchorCell: Double): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
-    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchorCell: Double, headCell: Double): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    inline def create(doc: Node, anchorCell: Double): CellSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection]
+    inline def create(doc: Node, anchorCell: Double, headCell: Double): CellSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection]
     
-    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], json: CellSelectionJSON): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    inline def fromJSON(doc: Node, json: CellSelectionJSON): CellSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[CellSelection]
     
-    inline def rowSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S]): CellSelection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection[S]]
-    inline def rowSelection[S /* <: Schema[js.Any, js.Any] */](anchorCell: ResolvedPos[S], headCell: ResolvedPos[S]): CellSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection[S]]
+    inline def rowSelection(anchorCell: ResolvedPos): CellSelection = ^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any]).asInstanceOf[CellSelection]
+    inline def rowSelection(anchorCell: ResolvedPos, headCell: ResolvedPos): CellSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("rowSelection")(anchorCell.asInstanceOf[js.Any], headCell.asInstanceOf[js.Any])).asInstanceOf[CellSelection]
   }
   
   @JSImport("prosemirror-tables", "TableMap")
   @js.native
-  class TableMap () extends StObject {
+  open class TableMap () extends StObject {
     
     def cellsInRect(rect: Rect): js.Array[Double] = js.native
     
@@ -123,7 +82,7 @@ object mod {
     
     def nextCell(pos: Double, axis: String, dir: Double): Double = js.native
     
-    def positionAt(row: Double, col: Double, table: Node[js.Any]): Double = js.native
+    def positionAt(row: Double, col: Double, table: Node): Double = js.native
     
     var problems: js.UndefOr[js.Array[js.Object]] = js.native
     
@@ -138,173 +97,154 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def get(table: Node[js.Any]): TableMap = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(table.asInstanceOf[js.Any]).asInstanceOf[TableMap]
+    inline def get(table: Node): TableMap = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(table.asInstanceOf[js.Any]).asInstanceOf[TableMap]
   }
   
   inline def addColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def addColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def addColumn[S /* <: Schema[js.Any, js.Any] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumn")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
+  inline def addColumn(transaction: Transaction, rect: TableRect, row: Double): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumn")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  inline def addColumnAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def addColumnAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addColumnAfter(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def addColumnAfter(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def addColumnBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def addColumnBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addColumnBefore(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def addColumnBefore(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def addRow[S /* <: Schema[js.Any, js.Any] */](transaction: Transaction[S], rect: TableRect, row: Double): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("addRow")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
+  inline def addRow(transaction: Transaction, rect: TableRect, row: Double): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("addRow")(transaction.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  inline def addRowAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def addRowAfter[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addRowAfter(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def addRowAfter(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowAfter")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def addRowBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def addRowBefore[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addRowBefore(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def addRowBefore(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addRowBefore")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def cellAround[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S]): ResolvedPos[S] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cellAround")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos[S] | Null]
+  inline def cellAround(pos: ResolvedPos): ResolvedPos | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cellAround")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos | Null]
   
-  inline def colCount(pos: ResolvedPos[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colCount")(pos.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def colCount(pos: ResolvedPos): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colCount")(pos.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def columnIsHeader(map: TableMap, table: Node[js.Any], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("columnIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def columnIsHeader(map: TableMap, table: Node, col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("columnIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def columnResizing[S /* <: Schema[js.Any, js.Any] */](props: CellMinWidth[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnResizing")(props.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
+  inline def columnResizing(props: CellMinWidth): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnResizing")(props.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
   
   @JSImport("prosemirror-tables", "columnResizingPluginKey")
   @js.native
-  val columnResizingPluginKey: PluginKey[js.Any, js.Any] = js.native
+  val columnResizingPluginKey: PluginKey[Any] = js.native
   
-  inline def deleteColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def deleteColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def deleteColumn(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def deleteColumn(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def deleteRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def deleteRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def deleteRow(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def deleteRow(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def deleteTable[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def deleteTable[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def deleteTable(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def deleteTable(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def findCell(pos: ResolvedPos[js.Any]): Buttom = ^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(pos.asInstanceOf[js.Any]).asInstanceOf[Buttom]
+  inline def findCell(pos: ResolvedPos): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(pos.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
-  inline def fixTables[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Null | Transaction[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any]).asInstanceOf[Null | Transaction[S]]
-  inline def fixTables[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], oldState: EditorState[S]): Null | Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any], oldState.asInstanceOf[js.Any])).asInstanceOf[Null | Transaction[S]]
+  inline def fixTables(state: EditorState): Null | Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any]).asInstanceOf[Null | Transaction]
+  inline def fixTables(state: EditorState, oldState: EditorState): Null | Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fixTables")(state.asInstanceOf[js.Any], oldState.asInstanceOf[js.Any])).asInstanceOf[Null | Transaction]
   
   @JSImport("prosemirror-tables", "fixTablesKey")
   @js.native
-  val fixTablesKey: PluginKey[js.Any, js.Any] = js.native
+  val fixTablesKey: PluginKey[Any] = js.native
   
-  inline def goToNextCell[S /* <: Schema[js.Any, js.Any] */](direction: Double): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+  inline def goToNextCell(direction: Double): js.Function2[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("goToNextCell")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ]]
   
-  inline def inSameTable[S /* <: Schema[js.Any, js.Any] */]($a: ResolvedPos[S], $b: ResolvedPos[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inSameTable")($a.asInstanceOf[js.Any], $b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inSameTable($a: ResolvedPos, $b: ResolvedPos): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inSameTable")($a.asInstanceOf[js.Any], $b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isInTable(state: EditorState[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInTable(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def mergeCells[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def mergeCells[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def mergeCells(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def mergeCells(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def moveCellForward[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S]): ResolvedPos[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveCellForward")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos[S]]
+  inline def moveCellForward(pos: ResolvedPos): ResolvedPos = ^.asInstanceOf[js.Dynamic].applyDynamic("moveCellForward")(pos.asInstanceOf[js.Any]).asInstanceOf[ResolvedPos]
   
-  inline def nextCell[S /* <: Schema[js.Any, js.Any] */](pos: ResolvedPos[S], axis: String, dir: Double): Null | ResolvedPos[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextCell")(pos.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Null | ResolvedPos[S]]
+  inline def nextCell(pos: ResolvedPos, axis: String, dir: Double): Null | ResolvedPos = (^.asInstanceOf[js.Dynamic].applyDynamic("nextCell")(pos.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Null | ResolvedPos]
   
   inline def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def removeColSpan[T /* <: js.Object */](attrs: T, pos: Double, n: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeColSpan")(attrs.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def rowIsHeader[S /* <: Schema[js.Any, js.Any] */](map: TableMap, table: Node[S], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rowIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rowIsHeader(map: TableMap, table: Node, row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rowIsHeader")(map.asInstanceOf[js.Any], table.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def selectedRect[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): TableRect = ^.asInstanceOf[js.Dynamic].applyDynamic("selectedRect")(state.asInstanceOf[js.Any]).asInstanceOf[TableRect]
+  inline def selectedRect(state: EditorState): TableRect = ^.asInstanceOf[js.Dynamic].applyDynamic("selectedRect")(state.asInstanceOf[js.Any]).asInstanceOf[TableRect]
   
-  inline def selectionCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): js.UndefOr[ResolvedPos[S] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionCell")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResolvedPos[S] | Null]]
+  inline def selectionCell(state: EditorState): js.UndefOr[ResolvedPos | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionCell")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResolvedPos | Null]]
   
-  inline def setCellAttr[S /* <: Schema[js.Any, js.Any] */](name: String, value: js.Any): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+  inline def setCellAttr(name: String, value: Any): js.Function2[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellAttr")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ]]
   
-  inline def splitCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def splitCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def splitCell(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def splitCell(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def splitCellWithType[S /* <: Schema[js.Any, js.Any] */](getCellType: js.Function1[/* options */ GetCellTypeOptions, NodeType[S]]): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+  inline def splitCellWithType(getCellType: js.Function1[/* options */ GetCellTypeOptions, NodeType]): js.Function2[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCellWithType")(getCellType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ]]
   
-  inline def tableEditing(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")().asInstanceOf[Plugin[js.Any, js.Any]]
-  inline def tableEditing(options: TableEditingOptions): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def tableEditing(): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")().asInstanceOf[Plugin[Any]]
+  inline def tableEditing(options: TableEditingOptions): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("tableEditing")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
   
   @JSImport("prosemirror-tables", "tableEditingKey")
   @js.native
-  val tableEditingKey: PluginKey[js.Any, js.Any] = js.native
+  val tableEditingKey: PluginKey[Any] = js.native
   
-  inline def tableNodeTypes(schema: Schema[js.Any, js.Any]): RecordTableRolesNodeTypea = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNodeTypes")(schema.asInstanceOf[js.Any]).asInstanceOf[RecordTableRolesNodeTypea]
+  inline def tableNodeTypes(schema: Schema[Any, Any]): RecordTableRolesNodeType = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNodeTypes")(schema.asInstanceOf[js.Any]).asInstanceOf[RecordTableRolesNodeType]
   
   inline def tableNodes(options: TableNodesOptions): TableNodes_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNodes")(options.asInstanceOf[js.Any]).asInstanceOf[TableNodes_]
   
-  inline def toggleHeaderCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def toggleHeaderCell[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def toggleHeaderColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def toggleHeaderColumn[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def toggleHeaderRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def toggleHeaderRow[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def toggleHeader_column[S /* <: Schema[js.Any, js.Any] */](`type`: column): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+  inline def toggleHeader(`type`: column | row): js.Function2[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ]]
-  inline def toggleHeader_column[S /* <: Schema[js.Any, js.Any] */](`type`: column, options: UseDeprecatedLogic): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+  inline def toggleHeader(`type`: column | row, options: UseDeprecatedLogic): js.Function2[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
     Boolean
   ]]
   
-  inline def toggleHeader_row[S /* <: Schema[js.Any, js.Any] */](`type`: row): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-    Boolean
-  ]]
-  inline def toggleHeader_row[S /* <: Schema[js.Any, js.Any] */](`type`: row, options: UseDeprecatedLogic): js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeader")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState[S], 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-    Boolean
-  ]]
+  inline def toggleHeaderCell(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def toggleHeaderCell(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderCell")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def updateColumnsOnResize(node: Node[js.Any], colgroup: Element, table: Element, cellMinWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def updateColumnsOnResize(node: Node[js.Any], colgroup: Element, table: Element, cellMinWidth: Double, overrideCol: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toggleHeaderColumn(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def toggleHeaderColumn(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderColumn")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def toggleHeaderRow(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def toggleHeaderRow(state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleHeaderRow")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def updateColumnsOnResize(node: Node, colgroup: Element, table: Element, cellMinWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateColumnsOnResize(node: Node, colgroup: Element, table: Element, cellMinWidth: Double, overrideCol: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def updateColumnsOnResize(
-    node: Node[js.Any],
+    node: Node,
     colgroup: Element,
     table: Element,
     cellMinWidth: Double,
@@ -312,7 +252,7 @@ object mod {
     overrideValue: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateColumnsOnResize")(node.asInstanceOf[js.Any], colgroup.asInstanceOf[js.Any], table.asInstanceOf[js.Any], cellMinWidth.asInstanceOf[js.Any], overrideCol.asInstanceOf[js.Any], overrideValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def updateColumnsOnResize(
-    node: Node[js.Any],
+    node: Node,
     colgroup: Element,
     table: Element,
     cellMinWidth: Double,
@@ -322,7 +262,7 @@ object mod {
   
   trait CellAttributes extends StObject {
     
-    var default: js.Any
+    var default: Any
     
     var getFromDOM: js.UndefOr[typings.prosemirrorTables.mod.getFromDOM] = js.undefined
     
@@ -330,22 +270,51 @@ object mod {
   }
   object CellAttributes {
     
-    inline def apply(default: js.Any): CellAttributes = {
+    inline def apply(default: Any): CellAttributes = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellAttributes]
     }
     
     extension [Self <: CellAttributes](x: Self) {
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      inline def setGetFromDOM(value: /* dom */ Element => js.Any): Self = StObject.set(x, "getFromDOM", js.Any.fromFunction1(value))
+      inline def setGetFromDOM(value: /* dom */ Element => Any): Self = StObject.set(x, "getFromDOM", js.Any.fromFunction1(value))
       
       inline def setGetFromDOMUndefined: Self = StObject.set(x, "getFromDOM", js.undefined)
       
-      inline def setSetDOMAttr(value: (/* value */ js.Any, /* attrs */ js.Any) => js.Any): Self = StObject.set(x, "setDOMAttr", js.Any.fromFunction2(value))
+      inline def setSetDOMAttr(value: (/* value */ Any, /* attrs */ Any) => Any): Self = StObject.set(x, "setDOMAttr", js.Any.fromFunction2(value))
       
       inline def setSetDOMAttrUndefined: Self = StObject.set(x, "setDOMAttr", js.undefined)
+    }
+  }
+  
+  trait CellBookmark extends StObject {
+    
+    var anchor: Double
+    
+    var head: Double
+    
+    def map(mapping: Mappable): CellBookmark
+    
+    def resolve(doc: Node): Selection
+  }
+  object CellBookmark {
+    
+    inline def apply(anchor: Double, head: Double, map: Mappable => CellBookmark, resolve: Node => Selection): CellBookmark = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[CellBookmark]
+    }
+    
+    extension [Self <: CellBookmark](x: Self) {
+      
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      
+      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      
+      inline def setMap(value: Mappable => CellBookmark): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      
+      inline def setResolve(value: Node => Selection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   
@@ -379,13 +348,13 @@ object mod {
     
     var col: Double
     
-    var node: Node[js.Any]
+    var node: Node
     
     var row: Double
   }
   object GetCellTypeOptions {
     
-    inline def apply(col: Double, node: Node[js.Any], row: Double): GetCellTypeOptions = {
+    inline def apply(col: Double, node: Node, row: Double): GetCellTypeOptions = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCellTypeOptions]
     }
@@ -394,7 +363,7 @@ object mod {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: Node[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
@@ -510,7 +479,7 @@ object mod {
     
     var map: TableMap
     
-    var table: Node[js.Any]
+    var table: Node
     
     var tableStart: Double
   }
@@ -521,7 +490,7 @@ object mod {
       left: Double,
       map: TableMap,
       right: Double,
-      table: Node[js.Any],
+      table: Node,
       tableStart: Double,
       top: Double
     ): TableRect = {
@@ -533,7 +502,7 @@ object mod {
       
       inline def setMap(value: TableMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setTable(value: Node[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Node): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
       inline def setTableStart(value: Double): Self = StObject.set(x, "tableStart", value.asInstanceOf[js.Any])
     }
@@ -557,7 +526,7 @@ object mod {
     inline def table: typings.prosemirrorTables.prosemirrorTablesStrings.table = "table".asInstanceOf[typings.prosemirrorTables.prosemirrorTablesStrings.table]
   }
   
-  type getFromDOM = js.Function1[/* dom */ Element, js.Any]
+  type getFromDOM = js.Function1[/* dom */ Element, Any]
   
-  type setDOMAttr = js.Function2[/* value */ js.Any, /* attrs */ js.Any, js.Any]
+  type setDOMAttr = js.Function2[/* value */ Any, /* attrs */ Any, Any]
 }

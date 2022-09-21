@@ -25,7 +25,7 @@ object ProfilerSessionEvents {
     
     inline def setEventsLost(value: Boolean): Self = StObject.set(x, "eventsLost", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: ProfilerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ProfilerEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }

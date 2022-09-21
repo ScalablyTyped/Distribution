@@ -11,6 +11,14 @@ object reactSizemeStrings {
   inline def debounce: debounce = "debounce".asInstanceOf[debounce]
   
   @js.native
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @js.native
   sealed trait size extends StObject
   inline def size: size = "size".asInstanceOf[size]
   

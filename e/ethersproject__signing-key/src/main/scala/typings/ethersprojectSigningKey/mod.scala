@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("@ethersproject/signing-key", "SigningKey")
   @js.native
-  class SigningKey protected () extends StObject {
+  open class SigningKey protected () extends StObject {
     def this(privateKey: BytesLike) = this()
     
     def _addPoint(other: BytesLike): String = js.native
@@ -41,7 +41,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isSigningKey(value: js.Any): /* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigningKey")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean]
+    inline def isSigningKey(value: Any): /* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigningKey")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean]
   }
   
   inline def computePublicKey(key: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computePublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]

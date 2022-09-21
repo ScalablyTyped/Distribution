@@ -33,6 +33,6 @@ object ListStacksInput {
     
     inline def setStackStatusFilterUndefined: Self = StObject.set(x, "StackStatusFilter", js.undefined)
     
-    inline def setStackStatusFilterVarargs(value: StackStatus*): Self = StObject.set(x, "StackStatusFilter", js.Array(value :_*))
+    inline def setStackStatusFilterVarargs(value: StackStatus*): Self = StObject.set(x, "StackStatusFilter", js.Array(value*))
   }
 }

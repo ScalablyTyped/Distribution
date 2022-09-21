@@ -9,10 +9,10 @@ Provides access to Apigee-specific functionality
 | ------------------ | :-------------: |
 | Full name          | apigee-access |
 | Keywords           | apigee |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 37872 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2215.3333333333335 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/apigee/apigee-access)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.Language")
 @js.native
-class Language () extends StObject
+open class Language () extends StObject
 object Language {
   
   @JSImport("akumina-core", "Digispace.Language")

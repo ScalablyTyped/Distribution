@@ -6,6 +6,7 @@ import typings.tuyaPanelKit.anon.Back
 import typings.tuyaPanelKit.anon.CheckDpExist
 import typings.tuyaPanelKit.anon.Dictkey
 import typings.tuyaPanelKit.anon.Emit
+import typings.tuyaPanelKit.typesMod.NavigationContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,8 +24,8 @@ object TYSdk {
   
   @JSImport("tuya-panel-kit", "TYSdk.Navigator")
   @js.native
-  def Navigator: DeprecatedNavigator = js.native
-  inline def Navigator_=(x: DeprecatedNavigator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Navigator")(x.asInstanceOf[js.Any])
+  def Navigator: DeprecatedNavigator | NavigationContainerRef = js.native
+  inline def Navigator_=(x: DeprecatedNavigator | NavigationContainerRef): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Navigator")(x.asInstanceOf[js.Any])
   
   /**
     * @param a api name
@@ -32,8 +33,8 @@ object TYSdk {
     * @param version - api version, default 1.0
     */
   // tslint:disable-next-line no-unnecessary-generics
-  inline def apiRequest[T](a: String, postData: Record[String, js.Any]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def apiRequest[T](a: String, postData: Record[String, js.Any], version: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apiRequest[T](a: String, postData: Record[String, Any]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apiRequest[T](a: String, postData: Record[String, Any], version: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiRequest")(a.asInstanceOf[js.Any], postData.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def applyNavigator(navigator: DeprecatedNavigator): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyNavigator")(navigator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -64,7 +65,7 @@ object TYSdk {
   
   @JSImport("tuya-panel-kit", "TYSdk.__unInitializeDps")
   @js.native
-  def unInitializeDps: js.UndefOr[Record[Double, js.Any]] = js.native
+  def unInitializeDps: js.UndefOr[Record[Double, Any]] = js.native
   
-  inline def unInitializeDps_=(x: js.UndefOr[Record[Double, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__unInitializeDps")(x.asInstanceOf[js.Any])
+  inline def unInitializeDps_=(x: js.UndefOr[Record[Double, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__unInitializeDps")(x.asInstanceOf[js.Any])
 }

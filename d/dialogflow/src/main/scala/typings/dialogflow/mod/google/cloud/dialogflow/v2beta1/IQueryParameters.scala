@@ -52,7 +52,7 @@ object IQueryParameters {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setGeoLocation(value: ILatLng): Self = StObject.set(x, "geoLocation", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object IQueryParameters {
     
     inline def setKnowledgeBaseNamesUndefined: Self = StObject.set(x, "knowledgeBaseNames", js.undefined)
     
-    inline def setKnowledgeBaseNamesVarargs(value: String*): Self = StObject.set(x, "knowledgeBaseNames", js.Array(value :_*))
+    inline def setKnowledgeBaseNamesVarargs(value: String*): Self = StObject.set(x, "knowledgeBaseNames", js.Array(value*))
     
     inline def setPayload(value: IStruct): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object IQueryParameters {
     
     inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    inline def setSessionEntityTypesVarargs(value: ISessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: ISessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value*))
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

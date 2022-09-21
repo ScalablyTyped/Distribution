@@ -22,6 +22,6 @@ object TableRow {
     
     inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
-    inline def setFVarargs(value: TableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
+    inline def setFVarargs(value: TableCell*): Self = StObject.set(x, "f", js.Array(value*))
   }
 }

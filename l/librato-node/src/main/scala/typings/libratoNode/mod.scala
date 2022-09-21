@@ -6,7 +6,6 @@ import typings.libratoNode.libratoNodeBooleans.`false`
 import typings.libratoNode.libratoNodeBooleans.`true`
 import typings.libratoNode.libratoNodeStrings.SIGINT
 import typings.libratoNode.libratoNodeStrings.error
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod {
   inline def configure(config: LibratoSimulate): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
-  inline def flush(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def flush(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def increment(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def increment(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -56,61 +55,61 @@ object mod {
   
   inline def on_SIGINT(event: SIGINT, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def on_error(event: error, handler: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_error(event: error, handler: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
   inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
-  inline def stop(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
     opts: Unit,
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def timing(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit], opts: CustomSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def timing(
     name: String,
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
     opts: CustomSource,
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def timing_T_T[T](
     name: String,
     fn: js.Function1[
-      /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
+      /* done */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ T, T], 
       Unit
     ]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def timing_T_T[T](
     name: String,
     fn: js.Function1[
-      /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
+      /* done */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ T, T], 
       Unit
     ],
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def timing_T_T[T](
     name: String,
     fn: js.Function1[
-      /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
+      /* done */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ T, T], 
       Unit
     ],
     opts: Unit,
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def timing_T_T[T](
     name: String,
     fn: js.Function1[
-      /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
+      /* done */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ T, T], 
       Unit
     ],
     opts: CustomSource
@@ -118,11 +117,11 @@ object mod {
   inline def timing_T_T[T](
     name: String,
     fn: js.Function1[
-      /* done */ js.Function2[/* err */ js.UndefOr[Error | Null], /* result */ T, T], 
+      /* done */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ T, T], 
       Unit
     ],
     opts: CustomSource,
-    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait CustomSource extends StObject {

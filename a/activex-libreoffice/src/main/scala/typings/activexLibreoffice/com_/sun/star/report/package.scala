@@ -5,29 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type FixedLine = typings.activexLibreoffice.com_.sun.star.report.XFixedLine
+type FixedLine = XFixedLine
 
-type FixedText = typings.activexLibreoffice.com_.sun.star.report.XFixedText
+type FixedText = XFixedText
 
-type FormatCondition = typings.activexLibreoffice.com_.sun.star.report.XFormatCondition
+type FormatCondition = XFormatCondition
 
-type FormattedField = typings.activexLibreoffice.com_.sun.star.report.XFormattedField
+type FormattedField = XFormattedField
 
-type Group = typings.activexLibreoffice.com_.sun.star.report.XGroup
+type Group = XGroup
 
-type Groups = typings.activexLibreoffice.com_.sun.star.report.XGroups
+type Groups = XGroups
 
-type ImageControl = typings.activexLibreoffice.com_.sun.star.report.XImageControl
+type ImageControl = XImageControl
 
-type ReportControlFormat = typings.activexLibreoffice.com_.sun.star.report.XReportControlFormat
+type ReportControlFormat = XReportControlFormat
 
-type ReportControlModel = typings.activexLibreoffice.com_.sun.star.report.XReportControlModel
+type ReportControlModel = XReportControlModel
 
-type ReportDefinition = typings.activexLibreoffice.com_.sun.star.report.XReportDefinition
+type ReportDefinition = XReportDefinition
 
 /** @since LibreOffice 4.1 */
-type ReportEngine = typings.activexLibreoffice.com_.sun.star.report.XReportEngine
+type ReportEngine = XReportEngine
 
-type Section = typings.activexLibreoffice.com_.sun.star.report.XSection
+type Section = XSection
 
-type Shape = typings.activexLibreoffice.com_.sun.star.report.XShape
+type Shape = XShape

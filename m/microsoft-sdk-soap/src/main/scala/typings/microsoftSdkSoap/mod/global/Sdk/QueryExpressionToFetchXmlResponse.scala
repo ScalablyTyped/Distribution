@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.QueryExpressionToFetchXmlResponse")
 @js.native
-class QueryExpressionToFetchXmlResponse protected () extends OrganizationResponse {
+open class QueryExpressionToFetchXmlResponse protected () extends OrganizationResponse {
   def this(responseXml: java.lang.String) = this()
   
   /**

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.graygelf.graygelfStrings.deflate
 import typings.graygelf.graygelfStrings.gzip
 import typings.graygelf.mod.GelfMessage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +17,10 @@ object anon {
     def a(short_message: String, full_message: String): GelfMessage = js.native
     def a(short_message: String, full_message: String, customFields: GelfMessage): GelfMessage = js.native
     def a(short_message: String, full_message: Unit, customFields: GelfMessage): GelfMessage = js.native
-    def a(short_message: Error): GelfMessage = js.native
-    def a(short_message: Error, full_message: String): GelfMessage = js.native
-    def a(short_message: Error, full_message: String, customFields: GelfMessage): GelfMessage = js.native
-    def a(short_message: Error, full_message: Unit, customFields: GelfMessage): GelfMessage = js.native
+    def a(short_message: js.Error): GelfMessage = js.native
+    def a(short_message: js.Error, full_message: String): GelfMessage = js.native
+    def a(short_message: js.Error, full_message: String, customFields: GelfMessage): GelfMessage = js.native
+    def a(short_message: js.Error, full_message: Unit, customFields: GelfMessage): GelfMessage = js.native
   }
   
   trait AlwaysCompress extends StObject {

@@ -3,12 +3,11 @@ package typings.phaser.phaserMod
 import typings.phaser.CameraRotateCallback
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Input.Keyboard.Key
-import typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.MultiPipeline
 import typings.phaser.Phaser.Types.Cameras.Controls.FixedKeyControlConfig
 import typings.phaser.Phaser.Types.Cameras.Controls.SmoothedKeyControlConfig
 import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraFadeCallback
 import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraFlashCallback
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +37,7 @@ object Cameras {
       */
     @JSImport("phaser", "Cameras.Controls.FixedKeyControl")
     @js.native
-    class FixedKeyControl protected ()
+    open class FixedKeyControl protected ()
       extends StObject
          with typings.phaser.Phaser.Cameras.Controls.FixedKeyControl {
       /**
@@ -76,6 +75,18 @@ object Cameras {
         */
       /* CompleteClass */
       var left: Key = js.native
+      
+      /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      /* CompleteClass */
+      var maxZoom: Double = js.native
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      /* CompleteClass */
+      var minZoom: Double = js.native
       
       /**
         * The Key to be pressed that will move the Camera right.
@@ -174,7 +185,7 @@ object Cameras {
       */
     @JSImport("phaser", "Cameras.Controls.SmoothedKeyControl")
     @js.native
-    class SmoothedKeyControl protected ()
+    open class SmoothedKeyControl protected ()
       extends StObject
          with typings.phaser.Phaser.Cameras.Controls.SmoothedKeyControl {
       /**
@@ -248,6 +259,18 @@ object Cameras {
         */
       /* CompleteClass */
       var maxSpeedY: Double = js.native
+      
+      /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      /* CompleteClass */
+      var maxZoom: Double = js.native
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      /* CompleteClass */
+      var minZoom: Double = js.native
       
       /**
         * The Key to be pressed that will move the Camera right.
@@ -340,7 +363,7 @@ object Cameras {
       */
     @JSImport("phaser", "Cameras.Scene2D.BaseCamera")
     @js.native
-    class BaseCamera protected ()
+    open class BaseCamera protected ()
       extends StObject
          with typings.phaser.Phaser.Cameras.Scene2D.BaseCamera {
       /**
@@ -394,7 +417,7 @@ object Cameras {
       */
     @JSImport("phaser", "Cameras.Scene2D.Camera")
     @js.native
-    class Camera protected ()
+    open class Camera protected ()
       extends StObject
          with typings.phaser.Phaser.Cameras.Scene2D.Camera {
       /**
@@ -519,7 +542,7 @@ object Cameras {
       * viewport, and changing the viewport has no impact on the scrolling.
       * 
       * By default a Camera will render all Game Objects it can see. You can change this using the `ignore` method,
-      * allowing you to filter Game Objects out on a per-Camera basis. The Camera Manager can manage up to 31 unique 
+      * allowing you to filter Game Objects out on a per-Camera basis. The Camera Manager can manage up to 31 unique
       * 'Game Object ignore capable' Cameras. Any Cameras beyond 31 that you create will all be given a Camera ID of
       * zero, meaning that they cannot be used for Game Object exclusion. This means if you need your Camera to ignore
       * Game Objects, make sure it's one of the first 31 created.
@@ -528,7 +551,7 @@ object Cameras {
       */
     @JSImport("phaser", "Cameras.Scene2D.CameraManager")
     @js.native
-    class CameraManager protected ()
+    open class CameraManager protected ()
       extends StObject
          with typings.phaser.Phaser.Cameras.Scene2D.CameraManager {
       /**
@@ -553,7 +576,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.Fade")
       @js.native
-      class Fade protected ()
+      open class Fade protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.Fade {
         /**
@@ -585,7 +608,7 @@ object Cameras {
           * The duration of the effect, in milliseconds.
           */
         /* CompleteClass */
-        override val duration: integer = js.native
+        override val duration: Double = js.native
         
         /**
           * Called internally when the effect completes.
@@ -617,11 +640,11 @@ object Cameras {
         
         /**
           * Called internally by the WebGL Renderer.
-          * @param pipeline The WebGL Pipeline to render to.
+          * @param pipeline The WebGL Pipeline to render to. Must provide the `drawFillRect` method.
           * @param getTintFunction A function that will return the gl safe tint colors.
           */
         /* CompleteClass */
-        override def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean = js.native
+        override def postRenderWebGL(pipeline: MultiPipeline, getTintFunction: js.Function): Boolean = js.native
         
         /**
           * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
@@ -651,13 +674,13 @@ object Cameras {
         /* CompleteClass */
         override def start(
           direction: js.UndefOr[Boolean],
-          duration: js.UndefOr[integer],
-          red: js.UndefOr[integer],
-          green: js.UndefOr[integer],
-          blue: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
+          red: js.UndefOr[Double],
+          green: js.UndefOr[Double],
+          blue: js.UndefOr[Double],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraFadeCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
         
         /**
@@ -666,7 +689,7 @@ object Cameras {
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
         /* CompleteClass */
-        override def update(time: integer, delta: Double): Unit = js.native
+        override def update(time: Double, delta: Double): Unit = js.native
       }
       
       /**
@@ -682,7 +705,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.Flash")
       @js.native
-      class Flash protected ()
+      open class Flash protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.Flash {
         /**
@@ -707,7 +730,7 @@ object Cameras {
           * The duration of the effect, in milliseconds.
           */
         /* CompleteClass */
-        override val duration: integer = js.native
+        override val duration: Double = js.native
         
         /**
           * Called internally when the effect completes.
@@ -730,11 +753,11 @@ object Cameras {
         
         /**
           * Called internally by the WebGL Renderer.
-          * @param pipeline The WebGL Pipeline to render to.
+          * @param pipeline The WebGL Pipeline to render to. Must provide the `drawFillRect` method.
           * @param getTintFunction A function that will return the gl safe tint colors.
           */
         /* CompleteClass */
-        override def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean = js.native
+        override def postRenderWebGL(pipeline: MultiPipeline, getTintFunction: js.Function): Boolean = js.native
         
         /**
           * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
@@ -752,9 +775,9 @@ object Cameras {
         /**
           * Flashes the Camera to or from the given color over the duration specified.
           * @param duration The duration of the effect in milliseconds. Default 250.
-          * @param red The amount to fade the red channel towards. A value between 0 and 255. Default 255.
-          * @param green The amount to fade the green channel towards. A value between 0 and 255. Default 255.
-          * @param blue The amount to fade the blue channel towards. A value between 0 and 255. Default 255.
+          * @param red The amount to flash the red channel towards. A value between 0 and 255. Default 255.
+          * @param green The amount to flash the green channel towards. A value between 0 and 255. Default 255.
+          * @param blue The amount to flash the blue channel towards. A value between 0 and 255. Default 255.
           * @param force Force the effect to start immediately, even if already running. Default false.
           * @param callback This callback will be invoked every frame for the duration of the effect.
           * It is sent two arguments: A reference to the camera and a progress amount between 0 and 1 indicating how complete the effect is.
@@ -762,13 +785,13 @@ object Cameras {
           */
         /* CompleteClass */
         override def start(
-          duration: js.UndefOr[integer],
-          red: js.UndefOr[integer],
-          green: js.UndefOr[integer],
-          blue: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
+          red: js.UndefOr[Double],
+          green: js.UndefOr[Double],
+          blue: js.UndefOr[Double],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraFlashCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
         
         /**
@@ -777,7 +800,7 @@ object Cameras {
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
         /* CompleteClass */
-        override def update(time: integer, delta: Double): Unit = js.native
+        override def update(time: Double, delta: Double): Unit = js.native
       }
       
       /**
@@ -794,7 +817,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.Pan")
       @js.native
-      class Pan protected ()
+      open class Pan protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.Pan {
         /**
@@ -824,7 +847,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.RotateTo")
       @js.native
-      class RotateTo protected ()
+      open class RotateTo protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.RotateTo {
         /**
@@ -867,7 +890,7 @@ object Cameras {
           * The duration of the effect, in milliseconds.
           */
         /* CompleteClass */
-        override val duration: integer = js.native
+        override val duration: Double = js.native
         
         /**
           * The ease function to use during the Rotate.
@@ -929,11 +952,11 @@ object Cameras {
         override def start(
           radians: Double,
           shortestPath: js.UndefOr[Boolean],
-          duration: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
           ease: js.UndefOr[String | js.Function],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraRotateCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
         
         /**
@@ -942,7 +965,7 @@ object Cameras {
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
         /* CompleteClass */
-        override def update(time: integer, delta: Double): Unit = js.native
+        override def update(time: Double, delta: Double): Unit = js.native
       }
       
       /**
@@ -958,7 +981,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.Shake")
       @js.native
-      class Shake protected ()
+      open class Shake protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.Shake {
         /**
@@ -978,7 +1001,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Effects.Zoom")
       @js.native
-      class Zoom protected ()
+      open class Zoom protected ()
         extends StObject
            with typings.phaser.Phaser.Cameras.Scene2D.Effects.Zoom {
         /**
@@ -998,7 +1021,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.DESTROY")
       @js.native
-      val DESTROY: js.Any = js.native
+      val DESTROY: Any = js.native
       
       /**
         * The Camera Fade In Complete Event.
@@ -1009,7 +1032,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_IN_COMPLETE")
       @js.native
-      val FADE_IN_COMPLETE: js.Any = js.native
+      val FADE_IN_COMPLETE: Any = js.native
       
       /**
         * The Camera Fade In Start Event.
@@ -1020,7 +1043,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_IN_START")
       @js.native
-      val FADE_IN_START: js.Any = js.native
+      val FADE_IN_START: Any = js.native
       
       /**
         * The Camera Fade Out Complete Event.
@@ -1031,7 +1054,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_OUT_COMPLETE")
       @js.native
-      val FADE_OUT_COMPLETE: js.Any = js.native
+      val FADE_OUT_COMPLETE: Any = js.native
       
       /**
         * The Camera Fade Out Start Event.
@@ -1042,7 +1065,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_OUT_START")
       @js.native
-      val FADE_OUT_START: js.Any = js.native
+      val FADE_OUT_START: Any = js.native
       
       /**
         * The Camera Flash Complete Event.
@@ -1051,7 +1074,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FLASH_COMPLETE")
       @js.native
-      val FLASH_COMPLETE: js.Any = js.native
+      val FLASH_COMPLETE: Any = js.native
       
       /**
         * The Camera Flash Start Event.
@@ -1060,7 +1083,20 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FLASH_START")
       @js.native
-      val FLASH_START: js.Any = js.native
+      val FLASH_START: Any = js.native
+      
+      /**
+        * The Camera Follower Update Event.
+        * 
+        * This event is dispatched by a Camera instance when it is following a
+        * Game Object and the Camera position has been updated as a result of
+        * that following.
+        * 
+        * Listen to it from a Camera instance using: `camera.on('followupdate', listener)`.
+        */
+      @JSImport("phaser", "Cameras.Scene2D.Events.FOLLOW_UPDATE")
+      @js.native
+      val FOLLOW_UPDATE: Any = js.native
       
       /**
         * The Camera Pan Complete Event.
@@ -1069,7 +1105,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PAN_COMPLETE")
       @js.native
-      val PAN_COMPLETE: js.Any = js.native
+      val PAN_COMPLETE: Any = js.native
       
       /**
         * The Camera Pan Start Event.
@@ -1078,7 +1114,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PAN_START")
       @js.native
-      val PAN_START: js.Any = js.native
+      val PAN_START: Any = js.native
       
       /**
         * The Camera Post-Render Event.
@@ -1090,7 +1126,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.POST_RENDER")
       @js.native
-      val POST_RENDER: js.Any = js.native
+      val POST_RENDER: Any = js.native
       
       /**
         * The Camera Pre-Render Event.
@@ -1102,7 +1138,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PRE_RENDER")
       @js.native
-      val PRE_RENDER: js.Any = js.native
+      val PRE_RENDER: Any = js.native
       
       /**
         * The Camera Rotate Complete Event.
@@ -1111,7 +1147,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ROTATE_COMPLETE")
       @js.native
-      val ROTATE_COMPLETE: js.Any = js.native
+      val ROTATE_COMPLETE: Any = js.native
       
       /**
         * The Camera Rotate Start Event.
@@ -1120,7 +1156,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ROTATE_START")
       @js.native
-      val ROTATE_START: js.Any = js.native
+      val ROTATE_START: Any = js.native
       
       /**
         * The Camera Shake Complete Event.
@@ -1129,7 +1165,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.SHAKE_COMPLETE")
       @js.native
-      val SHAKE_COMPLETE: js.Any = js.native
+      val SHAKE_COMPLETE: Any = js.native
       
       /**
         * The Camera Shake Start Event.
@@ -1138,7 +1174,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.SHAKE_START")
       @js.native
-      val SHAKE_START: js.Any = js.native
+      val SHAKE_START: Any = js.native
       
       /**
         * The Camera Zoom Complete Event.
@@ -1147,7 +1183,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ZOOM_COMPLETE")
       @js.native
-      val ZOOM_COMPLETE: js.Any = js.native
+      val ZOOM_COMPLETE: Any = js.native
       
       /**
         * The Camera Zoom Start Event.
@@ -1156,7 +1192,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ZOOM_START")
       @js.native
-      val ZOOM_START: js.Any = js.native
+      val ZOOM_START: Any = js.native
     }
   }
 }

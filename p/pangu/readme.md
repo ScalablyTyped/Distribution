@@ -1,7 +1,7 @@
 
 # Scala.js typings for pangu
 
-Typings are for version 3.3
+Typings are for version 4.0
 
 ## Library description:
 Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean) and half-width characters (alphabetical letters, numerical digits and symbols).
@@ -10,10 +10,10 @@ Paranoid text spacing for good readability, to automatically insert whitespace b
 | ------------------ | :-------------: |
 | Full name          | pangu |
 | Keywords           | pangu, text-spacing, spacing, text, html, typesetting, readability, cli, chinese, japanese, korean, obsessive-compulsive-disorder, ocd, paranoia |
-| # releases         | 9 |
-| # dependents       | 24 |
-| # downloads        | 139714 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 336527.0 |
+| # stars            | 3491.0 |
 
 ## Links
 - [Homepage](https://github.com/vinta/pangu.js)

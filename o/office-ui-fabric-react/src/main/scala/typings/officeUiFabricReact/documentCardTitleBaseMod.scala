@@ -10,29 +10,28 @@ object documentCardTitleBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardTitle.base", "DocumentCardTitleBase")
   @js.native
-  class DocumentCardTitleBase protected ()
-    extends Component[IDocumentCardTitleProps, IDocumentCardTitleState, js.Any] {
+  open class DocumentCardTitleBase protected () extends Component[IDocumentCardTitleProps, IDocumentCardTitleState, Any] {
     def this(props: IDocumentCardTitleProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _measureTitleElement: js.Any = js.native
+    /* private */ var _measureTitleElement: Any = js.native
     
-    /* private */ var _shrinkTitle: js.Any = js.native
+    /* private */ var _shrinkTitle: Any = js.native
     
-    /* private */ var _titleElement: js.Any = js.native
+    /* private */ var _titleElement: Any = js.native
     
-    /* private */ var _titleTruncationTimer: js.Any = js.native
+    /* private */ var _titleTruncationTimer: Any = js.native
     
-    /* private */ var _truncateTitle: js.Any = js.native
+    /* private */ var _truncateTitle: Any = js.native
     
-    /* private */ var _truncateWhenInAnimation: js.Any = js.native
+    /* private */ var _truncateWhenInAnimation: Any = js.native
     
-    /* private */ var _updateTruncation: js.Any = js.native
+    /* private */ var _updateTruncation: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDocumentCardTitleBase(): Unit = js.native

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Styles extends StObject {
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object Styles {
   
-  inline def apply(styles: StringDictionary[RegisteredStyle[js.Any]]): Styles = {
+  inline def apply(styles: StringDictionary[RegisteredStyle[Any]]): Styles = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
   
   extension [Self <: Styles](x: Self) {
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

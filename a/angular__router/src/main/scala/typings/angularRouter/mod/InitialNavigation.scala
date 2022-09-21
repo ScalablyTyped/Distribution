@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularRouter.angularRouterStrings.disabled
-  - typings.angularRouter.angularRouterStrings.enabled
   - typings.angularRouter.angularRouterStrings.enabledBlocking
   - typings.angularRouter.angularRouterStrings.enabledNonBlocking
 */
@@ -14,8 +13,6 @@ trait InitialNavigation extends StObject
 object InitialNavigation {
   
   inline def disabled: typings.angularRouter.angularRouterStrings.disabled = "disabled".asInstanceOf[typings.angularRouter.angularRouterStrings.disabled]
-  
-  inline def enabled: typings.angularRouter.angularRouterStrings.enabled = "enabled".asInstanceOf[typings.angularRouter.angularRouterStrings.enabled]
   
   inline def enabledBlocking: typings.angularRouter.angularRouterStrings.enabledBlocking = "enabledBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledBlocking]
   

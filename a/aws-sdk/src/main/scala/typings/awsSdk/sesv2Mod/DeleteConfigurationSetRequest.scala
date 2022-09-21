@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteConfigurationSetRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to delete.
+    * The name of the configuration set.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
 }

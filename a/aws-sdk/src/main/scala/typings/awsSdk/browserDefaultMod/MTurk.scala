@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class MTurk () extends ^ {
+open class MTurk () extends ^ {
   def this(options: ClientConfiguration) = this()
 }

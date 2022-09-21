@@ -3,6 +3,7 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Attributes.Attribute
 import typings.xrm.Xrm.Collection.ItemCollection
+import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.Xrm.ProcessFlow.ProcessManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Data extends StObject {
   
   /**
+    * Adds a function to be called when form data is loaded.
+    * @param handler The function to be executed when the form data loads. The function will be added to the bottom of the event handler pipeline.
+    */
+  def addOnLoad(handler: ContextSensitiveHandler): Unit = js.native
+  
+  /**
     * Collection of non-entity data on the form.
     * Items in this collection are of the same type as the attributes collection, but they are not attributes of the form entity.
     * In V9 this is only available in the Unified Client
@@ -24,13 +31,25 @@ trait Data extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     * @see {@link Attributes}
     */
-  var attributes: ItemCollection[Attribute] = js.native
+  var attributes: ItemCollection[Attribute[Any]] = js.native
   
   /**
     * The record context of the form, {@link Entity formContext.data.entity}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-entity External Link: formContext.data.entity (Client API reference)}
     */
   var entity: Entity = js.native
+  
+  /**
+    * Gets a boolean value indicating whether the form data has been modified.
+    * @returns Returns true if the form data has changed; false otherwise.
+    */
+  def getIsDirty(): Boolean = js.native
+  
+  /**
+    * Gets a boolean value indicating whether all of the form data is valid. This includes the main entity and any unbound attributes.
+    * @returns Returns true if all of the form data is valid; false otherwise.
+    */
+  def isValid(): Boolean = js.native
   
   /**
     * The process API for {@link ProcessFlow.ProcessManager formContext.ui.process}.
@@ -45,6 +64,12 @@ trait Data extends StObject {
     * @returns Returns an asynchronous promise.
     */
   def refresh(save: Boolean): PromiseLike[Unit] = js.native
+  
+  /**
+    * Removes a function to be called when form data is loaded.
+    * @param handler The function to be removed when the form data loads.
+    */
+  def removeOnLoad(handler: ContextSensitiveHandler): Unit = js.native
   
   /**
     * Asynchronously saves the record.

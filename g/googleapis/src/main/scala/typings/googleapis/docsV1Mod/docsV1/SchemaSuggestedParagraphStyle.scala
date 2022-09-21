@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A suggested change to a ParagraphStyle.
-  */
 trait SchemaSuggestedParagraphStyle extends StObject {
   
   /**
-    * A ParagraphStyle that only includes the changes made in this suggestion.
-    * This can be used along with the paragraph_suggestion_state to see which
-    * fields have changed and their new values.
+    * A ParagraphStyle that only includes the changes made in this suggestion. This can be used along with the paragraph_style_suggestion_state to see which fields have changed and their new values.
     */
   var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.undefined
   
   /**
-    * A mask that indicates which of the fields on the base ParagraphStyle have
-    * been changed in this suggestion.
+    * A mask that indicates which of the fields on the base ParagraphStyle have been changed in this suggestion.
     */
   var paragraphStyleSuggestionState: js.UndefOr[SchemaParagraphStyleSuggestionState] = js.undefined
 }

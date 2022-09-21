@@ -29,6 +29,6 @@ object RequestDataResponse {
     
     inline def setObjectStoreDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "objectStoreDataEntries", value.asInstanceOf[js.Any])
     
-    inline def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "objectStoreDataEntries", js.Array(value :_*))
+    inline def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "objectStoreDataEntries", js.Array(value*))
   }
 }

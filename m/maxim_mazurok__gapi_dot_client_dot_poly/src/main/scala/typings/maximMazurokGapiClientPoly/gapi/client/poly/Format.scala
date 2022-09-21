@@ -42,7 +42,7 @@ object Format {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: File*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: File*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setRoot(value: File): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

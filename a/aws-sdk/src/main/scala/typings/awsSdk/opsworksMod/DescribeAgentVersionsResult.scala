@@ -24,6 +24,6 @@ object DescribeAgentVersionsResult {
     
     inline def setAgentVersionsUndefined: Self = StObject.set(x, "AgentVersions", js.undefined)
     
-    inline def setAgentVersionsVarargs(value: AgentVersion*): Self = StObject.set(x, "AgentVersions", js.Array(value :_*))
+    inline def setAgentVersionsVarargs(value: AgentVersion*): Self = StObject.set(x, "AgentVersions", js.Array(value*))
   }
 }

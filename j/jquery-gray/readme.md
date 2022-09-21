@@ -11,9 +11,9 @@ Make an image grayscale in all browsers.
 | Full name          | jquery-gray |
 | Keywords           | gray, grey, grayscale, images, image, jquery, jquery-plugin, ecosystem:jquery |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 45835 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10785.0 |
+| # stars            | 566.0 |
 
 ## Links
 - [Homepage](https://github.com/karlhorky/gray#readme)

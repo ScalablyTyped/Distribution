@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nextServer.anon.App
 import typings.nextServer.libUtilsMod.NextPageContext
 import typings.nextServer.mittMod.MittEmitter
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.UrlObject
 import typings.react.mod.ComponentType
-import typings.std.Error
 import typings.std.PopStateEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +15,12 @@ object routerMod {
   
   @JSImport("next-server/dist/lib/router/router", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Router {
     def this(
       pathname: String,
-      query: ParsedUrlQuery,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       as: String,
       hasInitialPropsPageLoaderAppWrapAppComponentErrSubscription: App
     ) = this()
@@ -34,7 +32,7 @@ object routerMod {
     var pathname: String = js.native
     
     /* CompleteClass */
-    var query: ParsedUrlQuery = js.native
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any = js.native
     
     /* CompleteClass */
     var route: String = js.native
@@ -60,13 +58,18 @@ object routerMod {
     
     var pathname: String
     
-    var query: ParsedUrlQuery
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
     
     var route: String
   }
   object BaseRouter {
     
-    inline def apply(asPath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
+    inline def apply(
+      asPath: String,
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
+      route: String
+    ): BaseRouter = {
       val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseRouter]
     }
@@ -77,13 +80,15 @@ object routerMod {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
-  type BeforePopStateCallback = js.Function1[/* state */ js.Any, Boolean]
+  type BeforePopStateCallback = js.Function1[/* state */ Any, Boolean]
   
   type ComponentLoadCancel = js.Function0[Unit] | Null
   
@@ -109,7 +114,7 @@ object routerMod {
         js.Promise[Boolean]
       ]
     
-    var query: ParsedUrlQuery
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
     
     var reload: js.Function0[Unit]
     
@@ -132,7 +137,7 @@ object routerMod {
       pathname: String,
       prefetch: /* url */ String => js.Promise[Unit],
       push: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean],
-      query: ParsedUrlQuery,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       reload: () => Unit,
       replace: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean],
       route: String
@@ -159,7 +164,9 @@ object routerMod {
         value: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean]
       ): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
       
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
       
@@ -175,11 +182,11 @@ object routerMod {
     
     var Component: ComponentType[js.Object]
     
-    var err: js.UndefOr[Error] = js.undefined
+    var err: js.UndefOr[js.Error] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
   }
   object RouteInfo {
     
@@ -192,15 +199,15 @@ object routerMod {
       
       inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
@@ -213,7 +220,7 @@ object routerMod {
     
     var _bps: js.UndefOr[BeforePopStateCallback] = js.native
     
-    def _wrapApp(App: ComponentType[js.Object]): js.Any = js.native
+    def _wrapApp(App: ComponentType[js.Object]): Any = js.native
     
     def abortComponentLoad(as: String): Unit = js.native
     
@@ -228,7 +235,7 @@ object routerMod {
       */
     def beforePopState(cb: BeforePopStateCallback): Unit = js.native
     
-    def change(method: String, _url: Url, _as: Url, options: js.Any): js.Promise[Boolean] = js.native
+    def change(method: String, _url: Url, _as: Url, options: Any): js.Promise[Boolean] = js.native
     
     def changeState(method: String, url: String, as: String): Unit = js.native
     def changeState(method: String, url: String, as: String, options: js.Object): Unit = js.native
@@ -244,10 +251,10 @@ object routerMod {
     
     def fetchComponent(route: String): js.Promise[ComponentType[js.Object]] = js.native
     
-    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[js.Any] = js.native
+    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[Any] = js.native
     
-    def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[RouteInfo] = js.native
-    def getRouteInfo(route: String, pathname: String, query: js.Any, as: String, shallow: Boolean): js.Promise[RouteInfo] = js.native
+    def getRouteInfo(route: String, pathname: String, query: Any, as: String): js.Promise[RouteInfo] = js.native
+    def getRouteInfo(route: String, pathname: String, query: Any, as: String, shallow: Boolean): js.Promise[RouteInfo] = js.native
     
     def notify(data: RouteInfo): Unit = js.native
     
@@ -255,7 +262,7 @@ object routerMod {
     
     def onlyAHashChange(as: String): Boolean = js.native
     
-    var pageLoader: js.Any = js.native
+    var pageLoader: Any = js.native
     
     /**
       * Prefetch `page` code, you may wait for the data during `page` rendering.
@@ -290,7 +297,7 @@ object routerMod {
     
     def scrollToHash(as: String): Unit = js.native
     
-    def set(route: String, pathname: String, query: js.Any, as: String, data: RouteInfo): Unit = js.native
+    def set(route: String, pathname: String, query: Any, as: String, data: RouteInfo): Unit = js.native
     
     var sub: Subscription = js.native
     

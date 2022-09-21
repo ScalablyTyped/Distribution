@@ -11,11 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Pool extends StObject {
   
   /**
-    * If _enableStats is true, this method can be used to output statistics to the console.
-    */
-  def _logStats(): Unit = js.native
-  
-  /**
     * This call closes connections in the pool and terminates the connection pool.
     *
     * If a drainTime is not given, then any open connections should be released with connection.close()
@@ -102,6 +97,16 @@ trait Pool extends StObject {
   ): Unit = js.native
   
   /**
+    * Method to obtain a JSON object with all statistical metrics and pool properties
+    */
+  def getStatistics(): Statistics = js.native
+  
+  /**
+    * If enableStatistics is true, this method can be used to output statistics to the console.
+    */
+  def logStatistics(): Unit = js.native
+  
+  /**
     * The alias of this pool in the connection pool cache. An alias cannot be changed once the pool has been created.
     */
   val poolAlias: js.UndefOr[String] = js.native
@@ -118,7 +123,7 @@ trait Pool extends StObject {
   
   /**
     * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
-    * 
+    *
     * @since 4.1
     */
   val poolMaxPerShard: Double = js.native
@@ -144,6 +149,17 @@ trait Pool extends StObject {
     * The time (in milliseconds) that a connection request should wait in the queue before the request is terminated.
     */
   val queueTimeout: Double = js.native
+  
+  /**
+    * Allows a subset of pool creation properties to be changed without needing to restart the pool or restart the application. 
+    * Properties such as the maximum number of connections in the pool, or the statement cache size used by connections can be changed. 
+    * Properties are optional. 
+    * Unspecified properties will leave those pool properties unchanged. The properties are processed in two stages. 
+    * After any size change has been processed, reconfiguration on the other properties is done sequentially.
+    * If an error such as an invalid value occurs when changing one property, then an error will be thrown but any already changed properties will retain their new values.
+    */
+  def reconfigure(poolAttrs: PoolAttributes): js.Promise[Unit] = js.native
+  def reconfigure(poolAttrs: PoolAttributes, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   
   /**
     * One of the POOL_STATUS_* constants indicating whether the pool is open, being drained of in-use connections, or has been closed.

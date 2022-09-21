@@ -1,13 +1,21 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Canaries = js.Array[typings.awsSdk.syntheticsMod.Canary]
+type BaseScreenshotConfigIgnoreCoordinate = java.lang.String
 
-type CanariesLastRun = js.Array[typings.awsSdk.syntheticsMod.CanaryLastRun]
+type BaseScreenshotIgnoreCoordinates = js.Array[BaseScreenshotConfigIgnoreCoordinate]
+
+type BaseScreenshots = js.Array[BaseScreenshot]
+
+type Canaries = js.Array[Canary]
+
+type CanariesLastRun = js.Array[CanaryLastRun]
 
 type CanaryArn = java.lang.String
 
@@ -19,16 +27,16 @@ type CanaryName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CanaryRunState = typings.awsSdk.syntheticsMod._CanaryRunState | java.lang.String
+type CanaryRunState = _CanaryRunState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CANARY_FAILURE
   - typings.awsSdk.awsSdkStrings.EXECUTION_FAILURE
   - java.lang.String
 */
-type CanaryRunStateReasonCode = typings.awsSdk.syntheticsMod._CanaryRunStateReasonCode | java.lang.String
+type CanaryRunStateReasonCode = _CanaryRunStateReasonCode | java.lang.String
 
-type CanaryRuns = js.Array[typings.awsSdk.syntheticsMod.CanaryRun]
+type CanaryRuns = js.Array[CanaryRun]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -42,55 +50,101 @@ type CanaryRuns = js.Array[typings.awsSdk.syntheticsMod.CanaryRun]
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type CanaryState = typings.awsSdk.syntheticsMod._CanaryState | java.lang.String
+type CanaryState = _CanaryState | java.lang.String
 
-type CanaryStateReasonCode = typings.awsSdk.awsSdkStrings.INVALID_PERMISSIONS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INVALID_PERMISSIONS
+  - typings.awsSdk.awsSdkStrings.CREATE_PENDING
+  - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATE_PENDING
+  - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.UPDATE_COMPLETE
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_COMPLETE
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+  - typings.awsSdk.awsSdkStrings.SYNC_DELETE_IN_PROGRESS
+  - java.lang.String
+*/
+type CanaryStateReasonCode = _CanaryStateReasonCode | java.lang.String
+
+type CodeHandler = java.lang.String
+
+type DescribeCanariesLastRunNameFilter = js.Array[CanaryName]
+
+type DescribeCanariesNameFilter = js.Array[CanaryName]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SSE_S3
+  - typings.awsSdk.awsSdkStrings.SSE_KMS
+  - java.lang.String
+*/
+type EncryptionMode = _EncryptionMode | java.lang.String
 
 type EnvironmentVariableName = java.lang.String
 
 type EnvironmentVariableValue = java.lang.String
 
-type EnvironmentVariablesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.syntheticsMod.EnvironmentVariableValue]
+type EnvironmentVariablesMap = StringDictionary[EnvironmentVariableValue]
 
 type FunctionArn = java.lang.String
 
-type MaxCanaryResults = scala.Double
+type GroupArn = java.lang.String
 
-type MaxFifteenMinutesInSeconds = scala.Double
+type GroupIdentifier = java.lang.String
 
-type MaxOneYearInSeconds = scala.Double
+type GroupName = java.lang.String
 
-type MaxSize100 = scala.Double
+type GroupSummaryList = js.Array[GroupSummary]
 
-type MaxSize1024 = scala.Double
+type KmsKeyArn = java.lang.String
 
-type MaxSize3008 = scala.Double
+type MaxCanaryResults = Double
 
-type NullableBoolean = scala.Boolean
+type MaxFifteenMinutesInSeconds = Double
+
+type MaxGroupResults = Double
+
+type MaxOneYearInSeconds = Double
+
+type MaxSize100 = Double
+
+type MaxSize1024 = Double
+
+type MaxSize3008 = Double
+
+type NullableBoolean = Boolean
+
+type PaginationToken = java.lang.String
+
+type ResourceArn = java.lang.String
 
 type RoleArn = java.lang.String
 
-type RuntimeVersionList = js.Array[typings.awsSdk.syntheticsMod.RuntimeVersion]
+type RuntimeVersionList = js.Array[RuntimeVersion]
 
 type SecurityGroupId = java.lang.String
 
-type SecurityGroupIds = js.Array[typings.awsSdk.syntheticsMod.SecurityGroupId]
+type SecurityGroupIds = js.Array[SecurityGroupId]
 
 type String = java.lang.String
 
+type StringList = js.Array[String]
+
 type SubnetId = java.lang.String
 
-type SubnetIds = js.Array[typings.awsSdk.syntheticsMod.SubnetId]
+type SubnetIds = js.Array[SubnetId]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.syntheticsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.syntheticsMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type Token = java.lang.String
 
@@ -98,11 +152,11 @@ type UUID = java.lang.String
 
 type VpcId = java.lang.String
 
-type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.syntheticsMod.Blob | java.lang.String
+type _Blob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-10-11`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.syntheticsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

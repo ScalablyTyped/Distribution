@@ -32,7 +32,7 @@ object ArangoSearchViewCollectionLink {
     
     inline def setAnalyzersUndefined: Self = StObject.set(x, "analyzers", js.undefined)
     
-    inline def setAnalyzersVarargs(value: String*): Self = StObject.set(x, "analyzers", js.Array(value :_*))
+    inline def setAnalyzersVarargs(value: String*): Self = StObject.set(x, "analyzers", js.Array(value*))
     
     inline def setFields(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSONObject
   extends StObject
      with /* name */ StringDictionary[JSONValue]
-     with _JSONValue
 object JSONObject {
   
   inline def apply(): JSONObject = {

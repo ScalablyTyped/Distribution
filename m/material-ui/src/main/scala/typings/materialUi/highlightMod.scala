@@ -10,10 +10,10 @@ object highlightMod {
   
   @JSImport("material-ui/svg-icons/editor/highlight", JSImport.Default)
   @js.native
-  class default () extends EditorHighlight
+  open class default () extends EditorHighlight
   
   @JSImport("material-ui/svg-icons/editor/highlight", "EditorHighlight")
   @js.native
-  class EditorHighlight ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorHighlight ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -24,6 +24,7 @@ import typings.tsutils.tsutilsStrings.emitBOM
 import typings.tsutils.tsutilsStrings.emitDeclarationOnly
 import typings.tsutils.tsutilsStrings.emitDecoratorMetadata
 import typings.tsutils.tsutilsStrings.esModuleInterop
+import typings.tsutils.tsutilsStrings.exactOptionalPropertyTypes
 import typings.tsutils.tsutilsStrings.experimentalDecorators
 import typings.tsutils.tsutilsStrings.forceConsistentCasingInFileNames
 import typings.tsutils.tsutilsStrings.importHelpers
@@ -42,7 +43,9 @@ import typings.tsutils.tsutilsStrings.locale
 import typings.tsutils.tsutilsStrings.mapRoot
 import typings.tsutils.tsutilsStrings.maxNodeModuleJsDepth
 import typings.tsutils.tsutilsStrings.module
+import typings.tsutils.tsutilsStrings.moduleDetection
 import typings.tsutils.tsutilsStrings.moduleResolution
+import typings.tsutils.tsutilsStrings.moduleSuffixes
 import typings.tsutils.tsutilsStrings.newLine
 import typings.tsutils.tsutilsStrings.noEmit
 import typings.tsutils.tsutilsStrings.noEmitHelpers
@@ -50,10 +53,12 @@ import typings.tsutils.tsutilsStrings.noEmitOnError
 import typings.tsutils.tsutilsStrings.noErrorTruncation
 import typings.tsutils.tsutilsStrings.noFallthroughCasesInSwitch
 import typings.tsutils.tsutilsStrings.noImplicitAny
+import typings.tsutils.tsutilsStrings.noImplicitOverride
 import typings.tsutils.tsutilsStrings.noImplicitReturns
 import typings.tsutils.tsutilsStrings.noImplicitThis
 import typings.tsutils.tsutilsStrings.noImplicitUseStrict
 import typings.tsutils.tsutilsStrings.noLib
+import typings.tsutils.tsutilsStrings.noPropertyAccessFromIndexSignature
 import typings.tsutils.tsutilsStrings.noResolve
 import typings.tsutils.tsutilsStrings.noStrictGenericChecks
 import typings.tsutils.tsutilsStrings.noUncheckedIndexedAccess
@@ -65,6 +70,7 @@ import typings.tsutils.tsutilsStrings.outFile
 import typings.tsutils.tsutilsStrings.paths
 import typings.tsutils.tsutilsStrings.preserveConstEnums
 import typings.tsutils.tsutilsStrings.preserveSymlinks
+import typings.tsutils.tsutilsStrings.preserveValueImports
 import typings.tsutils.tsutilsStrings.project
 import typings.tsutils.tsutilsStrings.reactNamespace
 import typings.tsutils.tsutilsStrings.removeComments
@@ -91,20 +97,24 @@ import typings.tsutils.tsutilsStrings.tsBuildInfoFile
 import typings.tsutils.tsutilsStrings.typeRoots
 import typings.tsutils.tsutilsStrings.types
 import typings.tsutils.tsutilsStrings.useDefineForClassFields
+import typings.tsutils.tsutilsStrings.useUnknownInCatchVariables
 import typings.tsutils.utilUtilMod._ImportLike
 import typings.typescript.mod.ArrayTypeNode
+import typings.typescript.mod.AssertClause
 import typings.typescript.mod.BaseType
 import typings.typescript.mod.BindingName
 import typings.typescript.mod.BindingPattern
-import typings.typescript.mod.Decorator
+import typings.typescript.mod.CatchClause
 import typings.typescript.mod.DestructuringPattern
 import typings.typescript.mod.DotDotDotToken
+import typings.typescript.mod.ExclamationToken
 import typings.typescript.mod.Expression
 import typings.typescript.mod.ExternalModuleReference
 import typings.typescript.mod.GenericType
 import typings.typescript.mod.Identifier
 import typings.typescript.mod.LeftHandSideExpression
-import typings.typescript.mod.ModifiersArray
+import typings.typescript.mod.Modifier
+import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.ModuleBlock
 import typings.typescript.mod.ModuleReference
 import typings.typescript.mod.NamedExportBindings
@@ -123,8 +133,10 @@ import typings.typescript.mod.SyntaxKind
 import typings.typescript.mod.SyntaxKind.BindingElement
 import typings.typescript.mod.SyntaxKind.CallExpression
 import typings.typescript.mod.SyntaxKind.ExportDeclaration
+import typings.typescript.mod.SyntaxKind.ExpressionStatement
 import typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration
 import typings.typescript.mod.SyntaxKind.ImportKeyword
+import typings.typescript.mod.SyntaxKind.VariableDeclaration
 import typings.typescript.mod.Token
 import typings.typescript.mod.TupleType
 import typings.typescript.mod.TupleTypeNode
@@ -132,6 +144,7 @@ import typings.typescript.mod.Type
 import typings.typescript.mod.TypeFlags
 import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeReferenceNode
+import typings.typescript.mod.VariableDeclarationList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,9 +155,19 @@ object anon {
   @js.native
   trait BindingElementnameIdentif extends StObject {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
     
@@ -202,7 +225,17 @@ object anon {
     
     val kind: BindingElement = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val name: BindingName & Identifier = js.native
     
@@ -215,25 +248,35 @@ object anon {
   
   trait Body extends StObject
   
-  /* Inlined typescript.typescript.CallExpression & {  expression :typescript.typescript.Token<typescript.typescript.SyntaxKind.ImportKeyword> | typescript.typescript.Identifier & {  text :'require'},   arguments :[typescript.typescript.Expression]} */
+  /* Inlined typescript.typescript.CallExpression & {  expression :typescript.typescript.Token<typescript.typescript.SyntaxKind.ImportKeyword> | typescript.typescript.Identifier & {  text :'require'},   arguments :[typescript.typescript.Expression, ...std.Array<typescript.typescript.Expression>]} */
   @js.native
   trait CallExpressionexpressionT
     extends StObject
        with _ImportLike {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    var _expressionBrand: js.Any = js.native
+    var _expressionBrand: Any = js.native
     
-    var _leftHandSideExpressionBrand: js.Any = js.native
+    var _leftHandSideExpressionBrand: Any = js.native
     
-    var _unaryExpressionBrand: js.Any = js.native
+    var _unaryExpressionBrand: Any = js.native
     
-    var _updateExpressionBrand: js.Any = js.native
+    var _updateExpressionBrand: Any = js.native
     
-    val arguments: NodeArray[Expression] & js.Array[Expression] = js.native
+    val arguments: NodeArray[Expression] & Array[Expression] = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -289,7 +332,17 @@ object anon {
     
     val kind: CallExpression = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val parent: Node = js.native
     
@@ -306,11 +359,23 @@ object anon {
     extends StObject
        with _ImportLike {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    var _statementBrand: js.Any = js.native
+    var _statementBrand: Any = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    val assertClause: js.UndefOr[AssertClause] = js.native
+    
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -369,7 +434,7 @@ object anon {
     
     val kind: ExportDeclaration = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
     
     /** If this is not a StringLiteral it will be a grammar error. */
     val moduleSpecifier: js.UndefOr[Expression] & js.Object = js.native
@@ -381,25 +446,124 @@ object anon {
     val pos: Double = js.native
   }
   
+  /* Inlined typescript.typescript.ExpressionStatement & {  expression :typescript.typescript.CallExpression} */
+  @js.native
+  trait ExpressionStatementexpres extends StObject {
+    
+    var _statementBrand: Any = js.native
+    
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
+    
+    val end: Double = js.native
+    
+    val expression: Expression & typings.typescript.mod.CallExpression = js.native
+    
+    val flags: NodeFlags = js.native
+    
+    def forEachChild[T](cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]]): js.UndefOr[T] = js.native
+    def forEachChild[T](
+      cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]],
+      cbNodeArray: js.Function1[/* nodes */ NodeArray[this.type], js.UndefOr[T]]
+    ): js.UndefOr[T] = js.native
+    
+    def getChildAt(index: Double): Node = js.native
+    def getChildAt(index: Double, sourceFile: SourceFile): Node = js.native
+    
+    def getChildCount(): Double = js.native
+    def getChildCount(sourceFile: SourceFile): Double = js.native
+    
+    def getChildren(): js.Array[Node] = js.native
+    def getChildren(sourceFile: SourceFile): js.Array[Node] = js.native
+    
+    def getEnd(): Double = js.native
+    
+    def getFirstToken(): js.UndefOr[Node] = js.native
+    def getFirstToken(sourceFile: SourceFile): js.UndefOr[Node] = js.native
+    
+    def getFullStart(): Double = js.native
+    
+    def getFullText(): String = js.native
+    def getFullText(sourceFile: SourceFile): String = js.native
+    
+    def getFullWidth(): Double = js.native
+    
+    def getLastToken(): js.UndefOr[Node] = js.native
+    def getLastToken(sourceFile: SourceFile): js.UndefOr[Node] = js.native
+    
+    def getLeadingTriviaWidth(): Double = js.native
+    def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
+    
+    def getSourceFile(): SourceFile = js.native
+    
+    def getStart(): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: SourceFile): Double = js.native
+    def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
+    
+    def getText(): String = js.native
+    def getText(sourceFile: SourceFile): String = js.native
+    
+    def getWidth(): Double = js.native
+    def getWidth(sourceFile: SourceFileLike): Double = js.native
+    
+    val kind: ExpressionStatement = js.native
+    
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
+    
+    val parent: Node = js.native
+    
+    val pos: Double = js.native
+  }
+  
   /* Inlined typescript.typescript.Identifier & {  text :'Symbol',   escapedText :'symbol'} */
   @js.native
   trait IdentifiertextSymbolescap extends StObject {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    var _expressionBrand: js.Any = js.native
+    var _expressionBrand: Any = js.native
     
-    var _leftHandSideExpressionBrand: js.Any = js.native
+    var _leftHandSideExpressionBrand: Any = js.native
     
-    var _memberExpressionBrand: js.Any = js.native
+    var _memberExpressionBrand: Any = js.native
     
-    var _primaryExpressionBrand: js.Any = js.native
+    var _primaryExpressionBrand: Any = js.native
     
-    var _unaryExpressionBrand: js.Any = js.native
+    var _unaryExpressionBrand: Any = js.native
     
-    var _updateExpressionBrand: js.Any = js.native
+    var _updateExpressionBrand: Any = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -461,7 +625,17 @@ object anon {
     
     val kind: typings.typescript.mod.SyntaxKind.Identifier = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
     
@@ -476,21 +650,31 @@ object anon {
   @js.native
   trait Identifiertextrequire extends StObject {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    var _expressionBrand: js.Any = js.native
+    var _expressionBrand: Any = js.native
     
-    var _leftHandSideExpressionBrand: js.Any = js.native
+    var _leftHandSideExpressionBrand: Any = js.native
     
-    var _memberExpressionBrand: js.Any = js.native
+    var _memberExpressionBrand: Any = js.native
     
-    var _primaryExpressionBrand: js.Any = js.native
+    var _primaryExpressionBrand: Any = js.native
     
-    var _unaryExpressionBrand: js.Any = js.native
+    var _unaryExpressionBrand: Any = js.native
     
-    var _updateExpressionBrand: js.Any = js.native
+    var _updateExpressionBrand: Any = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -552,7 +736,17 @@ object anon {
     
     val kind: typings.typescript.mod.SyntaxKind.Identifier = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
     
@@ -569,11 +763,21 @@ object anon {
     extends StObject
        with _ImportLike {
     
-    var _declarationBrand: js.Any = js.native
+    var _declarationBrand: Any = js.native
     
-    var _statementBrand: js.Any = js.native
+    var _statementBrand: Any = js.native
     
-    val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -625,9 +829,11 @@ object anon {
     def getWidth(): Double = js.native
     def getWidth(sourceFile: SourceFileLike): Double = js.native
     
+    val isTypeOnly: Boolean = js.native
+    
     val kind: ImportEqualsDeclaration = js.native
     
-    val modifiers: js.UndefOr[ModifiersArray] = js.native
+    val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
     
     val moduleReference: ModuleReference & ExternalModuleReference = js.native
     
@@ -687,6 +893,8 @@ object anon {
     
     var esModuleInterop: js.UndefOr[typings.tsutils.tsutilsStrings.esModuleInterop] = js.undefined
     
+    var exactOptionalPropertyTypes: js.UndefOr[typings.tsutils.tsutilsStrings.exactOptionalPropertyTypes] = js.undefined
+    
     var experimentalDecorators: js.UndefOr[typings.tsutils.tsutilsStrings.experimentalDecorators] = js.undefined
     
     var forceConsistentCasingInFileNames: js.UndefOr[typings.tsutils.tsutilsStrings.forceConsistentCasingInFileNames] = js.undefined
@@ -723,7 +931,11 @@ object anon {
     
     var module: js.UndefOr[typings.tsutils.tsutilsStrings.module] = js.undefined
     
+    var moduleDetection: js.UndefOr[typings.tsutils.tsutilsStrings.moduleDetection] = js.undefined
+    
     var moduleResolution: js.UndefOr[typings.tsutils.tsutilsStrings.moduleResolution] = js.undefined
+    
+    var moduleSuffixes: js.UndefOr[typings.tsutils.tsutilsStrings.moduleSuffixes] = js.undefined
     
     var newLine: js.UndefOr[typings.tsutils.tsutilsStrings.newLine] = js.undefined
     
@@ -739,6 +951,8 @@ object anon {
     
     var noImplicitAny: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitAny] = js.undefined
     
+    var noImplicitOverride: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitOverride] = js.undefined
+    
     var noImplicitReturns: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitReturns] = js.undefined
     
     var noImplicitThis: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitThis] = js.undefined
@@ -746,6 +960,8 @@ object anon {
     var noImplicitUseStrict: js.UndefOr[typings.tsutils.tsutilsStrings.noImplicitUseStrict] = js.undefined
     
     var noLib: js.UndefOr[typings.tsutils.tsutilsStrings.noLib] = js.undefined
+    
+    var noPropertyAccessFromIndexSignature: js.UndefOr[typings.tsutils.tsutilsStrings.noPropertyAccessFromIndexSignature] = js.undefined
     
     var noResolve: js.UndefOr[typings.tsutils.tsutilsStrings.noResolve] = js.undefined
     
@@ -768,6 +984,8 @@ object anon {
     var preserveConstEnums: js.UndefOr[typings.tsutils.tsutilsStrings.preserveConstEnums] = js.undefined
     
     var preserveSymlinks: js.UndefOr[typings.tsutils.tsutilsStrings.preserveSymlinks] = js.undefined
+    
+    var preserveValueImports: js.UndefOr[typings.tsutils.tsutilsStrings.preserveValueImports] = js.undefined
     
     var project: js.UndefOr[typings.tsutils.tsutilsStrings.project] = js.undefined
     
@@ -816,6 +1034,8 @@ object anon {
     var types: js.UndefOr[typings.tsutils.tsutilsStrings.types] = js.undefined
     
     var useDefineForClassFields: js.UndefOr[typings.tsutils.tsutilsStrings.useDefineForClassFields] = js.undefined
+    
+    var useUnknownInCatchVariables: js.UndefOr[typings.tsutils.tsutilsStrings.useUnknownInCatchVariables] = js.undefined
   }
   object KinkeyofCompilerOptionsNo {
     
@@ -918,6 +1138,10 @@ object anon {
       
       inline def setEsModuleInteropUndefined: Self = StObject.set(x, "esModuleInterop", js.undefined)
       
+      inline def setExactOptionalPropertyTypes(value: exactOptionalPropertyTypes): Self = StObject.set(x, "exactOptionalPropertyTypes", value.asInstanceOf[js.Any])
+      
+      inline def setExactOptionalPropertyTypesUndefined: Self = StObject.set(x, "exactOptionalPropertyTypes", js.undefined)
+      
       inline def setExperimentalDecorators(value: experimentalDecorators): Self = StObject.set(x, "experimentalDecorators", value.asInstanceOf[js.Any])
       
       inline def setExperimentalDecoratorsUndefined: Self = StObject.set(x, "experimentalDecorators", js.undefined)
@@ -988,9 +1212,17 @@ object anon {
       
       inline def setModule(value: module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
+      inline def setModuleDetection(value: moduleDetection): Self = StObject.set(x, "moduleDetection", value.asInstanceOf[js.Any])
+      
+      inline def setModuleDetectionUndefined: Self = StObject.set(x, "moduleDetection", js.undefined)
+      
       inline def setModuleResolution(value: moduleResolution): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
       
       inline def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
+      
+      inline def setModuleSuffixes(value: moduleSuffixes): Self = StObject.set(x, "moduleSuffixes", value.asInstanceOf[js.Any])
+      
+      inline def setModuleSuffixesUndefined: Self = StObject.set(x, "moduleSuffixes", js.undefined)
       
       inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
@@ -1022,6 +1254,10 @@ object anon {
       
       inline def setNoImplicitAnyUndefined: Self = StObject.set(x, "noImplicitAny", js.undefined)
       
+      inline def setNoImplicitOverride(value: noImplicitOverride): Self = StObject.set(x, "noImplicitOverride", value.asInstanceOf[js.Any])
+      
+      inline def setNoImplicitOverrideUndefined: Self = StObject.set(x, "noImplicitOverride", js.undefined)
+      
       inline def setNoImplicitReturns(value: noImplicitReturns): Self = StObject.set(x, "noImplicitReturns", value.asInstanceOf[js.Any])
       
       inline def setNoImplicitReturnsUndefined: Self = StObject.set(x, "noImplicitReturns", js.undefined)
@@ -1037,6 +1273,10 @@ object anon {
       inline def setNoLib(value: noLib): Self = StObject.set(x, "noLib", value.asInstanceOf[js.Any])
       
       inline def setNoLibUndefined: Self = StObject.set(x, "noLib", js.undefined)
+      
+      inline def setNoPropertyAccessFromIndexSignature(value: noPropertyAccessFromIndexSignature): Self = StObject.set(x, "noPropertyAccessFromIndexSignature", value.asInstanceOf[js.Any])
+      
+      inline def setNoPropertyAccessFromIndexSignatureUndefined: Self = StObject.set(x, "noPropertyAccessFromIndexSignature", js.undefined)
       
       inline def setNoResolve(value: noResolve): Self = StObject.set(x, "noResolve", value.asInstanceOf[js.Any])
       
@@ -1081,6 +1321,10 @@ object anon {
       inline def setPreserveSymlinks(value: preserveSymlinks): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
       inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
+      
+      inline def setPreserveValueImports(value: preserveValueImports): Self = StObject.set(x, "preserveValueImports", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveValueImportsUndefined: Self = StObject.set(x, "preserveValueImports", js.undefined)
       
       inline def setProject(value: project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
@@ -1177,23 +1421,10 @@ object anon {
       inline def setUseDefineForClassFields(value: useDefineForClassFields): Self = StObject.set(x, "useDefineForClassFields", value.asInstanceOf[js.Any])
       
       inline def setUseDefineForClassFieldsUndefined: Self = StObject.set(x, "useDefineForClassFields", js.undefined)
-    }
-  }
-  
-  trait Name extends StObject {
-    
-    var name: Identifier
-  }
-  object Name {
-    
-    inline def apply(name: Identifier): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
-    }
-    
-    extension [Self <: Name](x: Self) {
       
-      inline def setName(value: Identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setUseUnknownInCatchVariables(value: useUnknownInCatchVariables): Self = StObject.set(x, "useUnknownInCatchVariables", value.asInstanceOf[js.Any])
+      
+      inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
     }
   }
   
@@ -1235,6 +1466,8 @@ object anon {
     def isClass(): /* is typescript.typescript.InterfaceType */ Boolean
     
     def isClassOrInterface(): /* is typescript.typescript.InterfaceType */ Boolean
+    
+    def isIndexType(): /* is typescript.typescript.IndexType */ Boolean
     
     def isIntersection(): /* is typescript.typescript.IntersectionType */ Boolean
     
@@ -1281,6 +1514,7 @@ object anon {
       getSymbol: () => js.UndefOr[typings.typescript.mod.Symbol],
       isClass: () => /* is typescript.typescript.InterfaceType */ Boolean,
       isClassOrInterface: () => /* is typescript.typescript.InterfaceType */ Boolean,
+      isIndexType: () => /* is typescript.typescript.IndexType */ Boolean,
       isIntersection: () => /* is typescript.typescript.IntersectionType */ Boolean,
       isLiteral: () => /* is typescript.typescript.LiteralType */ Boolean,
       isNumberLiteral: () => /* is typescript.typescript.NumberLiteralType */ Boolean,
@@ -1292,7 +1526,7 @@ object anon {
       symbol: typings.typescript.mod.Symbol,
       target: GenericType & TupleType
     ): TypeReferencetargetTupleT = {
-      val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIndexType = js.Any.fromFunction0(isIndexType), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeReferencetargetTupleT]
     }
     
@@ -1306,7 +1540,7 @@ object anon {
       
       inline def setAliasTypeArgumentsUndefined: Self = StObject.set(x, "aliasTypeArguments", js.undefined)
       
-      inline def setAliasTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "aliasTypeArguments", js.Array(value :_*))
+      inline def setAliasTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "aliasTypeArguments", js.Array(value*))
       
       inline def setFlags(value: TypeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -1340,6 +1574,8 @@ object anon {
       
       inline def setIsClassOrInterface(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = StObject.set(x, "isClassOrInterface", js.Any.fromFunction0(value))
       
+      inline def setIsIndexType(value: () => /* is typescript.typescript.IndexType */ Boolean): Self = StObject.set(x, "isIndexType", js.Any.fromFunction0(value))
+      
       inline def setIsIntersection(value: () => /* is typescript.typescript.IntersectionType */ Boolean): Self = StObject.set(x, "isIntersection", js.Any.fromFunction0(value))
       
       inline def setIsLiteral(value: () => /* is typescript.typescript.LiteralType */ Boolean): Self = StObject.set(x, "isLiteral", js.Any.fromFunction0(value))
@@ -1372,8 +1608,103 @@ object anon {
       
       inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
       
-      inline def setTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
+      inline def setTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "typeArguments", js.Array(value*))
     }
+  }
+  
+  /* Inlined typescript.typescript.VariableDeclaration & {  name :typescript.typescript.Identifier} */
+  @js.native
+  trait VariableDeclarationnameId extends StObject {
+    
+    var _declarationBrand: Any = js.native
+    
+    /**
+      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+      * Use `ts.getDecorators()` to get the decorators of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+      * ```
+      */
+    val decorators: Unit = js.native
+    
+    val end: Double = js.native
+    
+    val exclamationToken: js.UndefOr[ExclamationToken] = js.native
+    
+    val flags: NodeFlags = js.native
+    
+    def forEachChild[T](cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]]): js.UndefOr[T] = js.native
+    def forEachChild[T](
+      cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]],
+      cbNodeArray: js.Function1[/* nodes */ NodeArray[this.type], js.UndefOr[T]]
+    ): js.UndefOr[T] = js.native
+    
+    def getChildAt(index: Double): Node = js.native
+    def getChildAt(index: Double, sourceFile: SourceFile): Node = js.native
+    
+    def getChildCount(): Double = js.native
+    def getChildCount(sourceFile: SourceFile): Double = js.native
+    
+    def getChildren(): js.Array[Node] = js.native
+    def getChildren(sourceFile: SourceFile): js.Array[Node] = js.native
+    
+    def getEnd(): Double = js.native
+    
+    def getFirstToken(): js.UndefOr[Node] = js.native
+    def getFirstToken(sourceFile: SourceFile): js.UndefOr[Node] = js.native
+    
+    def getFullStart(): Double = js.native
+    
+    def getFullText(): String = js.native
+    def getFullText(sourceFile: SourceFile): String = js.native
+    
+    def getFullWidth(): Double = js.native
+    
+    def getLastToken(): js.UndefOr[Node] = js.native
+    def getLastToken(sourceFile: SourceFile): js.UndefOr[Node] = js.native
+    
+    def getLeadingTriviaWidth(): Double = js.native
+    def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
+    
+    def getSourceFile(): SourceFile = js.native
+    
+    def getStart(): Double = js.native
+    def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
+    def getStart(sourceFile: SourceFile): Double = js.native
+    def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
+    
+    def getText(): String = js.native
+    def getText(sourceFile: SourceFile): String = js.native
+    
+    def getWidth(): Double = js.native
+    def getWidth(sourceFile: SourceFileLike): Double = js.native
+    
+    val initializer: js.UndefOr[Expression] = js.native
+    
+    val kind: VariableDeclaration = js.native
+    
+    /**
+      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+      *
+      * For example:
+      * ```ts
+      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+      * ```
+      */
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
+    
+    val name: BindingName & Identifier = js.native
+    
+    val parent: VariableDeclarationList | CatchClause = js.native
+    
+    val pos: Double = js.native
+    
+    val `type`: js.UndefOr[TypeNode] = js.native
   }
   
   /* Inlined {[ _ in keyof typescript.typescript.CompilerOptions ]: infer U} */
@@ -1471,6 +1802,10 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
+    var exactOptionalPropertyTypes: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
     var experimentalDecorators: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
@@ -1543,7 +1878,15 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
+    var moduleDetection: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
     var moduleResolution: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
+    var moduleSuffixes: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
@@ -1575,6 +1918,10 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
+    var noImplicitOverride: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
     var noImplicitReturns: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
@@ -1588,6 +1935,10 @@ object anon {
       ] = js.undefined
     
     var noLib: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
+    var noPropertyAccessFromIndexSignature: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
@@ -1632,6 +1983,10 @@ object anon {
       ] = js.undefined
     
     var preserveSymlinks: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
+    var preserveValueImports: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
     
@@ -1728,6 +2083,10 @@ object anon {
       ] = js.undefined
     
     var useDefineForClassFields: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
+      ] = js.undefined
+    
+    var useUnknownInCatchVariables: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
       ] = js.undefined
   }
@@ -1832,6 +2191,10 @@ object anon {
       
       inline def setEsModuleInteropUndefined: Self = StObject.set(x, "esModuleInterop", js.undefined)
       
+      inline def setExactOptionalPropertyTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "exactOptionalPropertyTypes", value.asInstanceOf[js.Any])
+      
+      inline def setExactOptionalPropertyTypesUndefined: Self = StObject.set(x, "exactOptionalPropertyTypes", js.undefined)
+      
       inline def setExperimentalDecorators(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "experimentalDecorators", value.asInstanceOf[js.Any])
       
       inline def setExperimentalDecoratorsUndefined: Self = StObject.set(x, "experimentalDecorators", js.undefined)
@@ -1902,9 +2265,17 @@ object anon {
       
       inline def setModule(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
+      inline def setModuleDetection(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "moduleDetection", value.asInstanceOf[js.Any])
+      
+      inline def setModuleDetectionUndefined: Self = StObject.set(x, "moduleDetection", js.undefined)
+      
       inline def setModuleResolution(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
       
       inline def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
+      
+      inline def setModuleSuffixes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "moduleSuffixes", value.asInstanceOf[js.Any])
+      
+      inline def setModuleSuffixesUndefined: Self = StObject.set(x, "moduleSuffixes", js.undefined)
       
       inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
@@ -1936,6 +2307,10 @@ object anon {
       
       inline def setNoImplicitAnyUndefined: Self = StObject.set(x, "noImplicitAny", js.undefined)
       
+      inline def setNoImplicitOverride(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "noImplicitOverride", value.asInstanceOf[js.Any])
+      
+      inline def setNoImplicitOverrideUndefined: Self = StObject.set(x, "noImplicitOverride", js.undefined)
+      
       inline def setNoImplicitReturns(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "noImplicitReturns", value.asInstanceOf[js.Any])
       
       inline def setNoImplicitReturnsUndefined: Self = StObject.set(x, "noImplicitReturns", js.undefined)
@@ -1951,6 +2326,10 @@ object anon {
       inline def setNoLib(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "noLib", value.asInstanceOf[js.Any])
       
       inline def setNoLibUndefined: Self = StObject.set(x, "noLib", js.undefined)
+      
+      inline def setNoPropertyAccessFromIndexSignature(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "noPropertyAccessFromIndexSignature", value.asInstanceOf[js.Any])
+      
+      inline def setNoPropertyAccessFromIndexSignatureUndefined: Self = StObject.set(x, "noPropertyAccessFromIndexSignature", js.undefined)
       
       inline def setNoResolve(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "noResolve", value.asInstanceOf[js.Any])
       
@@ -1995,6 +2374,10 @@ object anon {
       inline def setPreserveSymlinks(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
       inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
+      
+      inline def setPreserveValueImports(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "preserveValueImports", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveValueImportsUndefined: Self = StObject.set(x, "preserveValueImports", js.undefined)
       
       inline def setProject(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
@@ -2091,6 +2474,10 @@ object anon {
       inline def setUseDefineForClassFields(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "useDefineForClassFields", value.asInstanceOf[js.Any])
       
       inline def setUseDefineForClassFieldsUndefined: Self = StObject.set(x, "useDefineForClassFields", js.undefined)
+      
+      inline def setUseUnknownInCatchVariables(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "useUnknownInCatchVariables", value.asInstanceOf[js.Any])
+      
+      inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
     }
   }
 }

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("graphlib", "Graph")
   @js.native
-  class Graph () extends StObject {
+  open class Graph () extends StObject {
     def this(options: GraphOptions) = this()
     
     /**
@@ -29,7 +29,7 @@ object mod {
       * @argument edge - edge descriptor.
       * @returns value associated with specified edge.
       */
-    def edge(e: Edge): js.Any = js.native
+    def edge(e: Edge): Any = js.native
     /**
       * Gets the label for the specified edge.
       * Complexity: O(1).
@@ -39,8 +39,8 @@ object mod {
       * @argument name - name of the edge (actual for multigraph).
       * @returns value associated with specified edge.
       */
-    def edge(v: String, w: String): js.Any = js.native
-    def edge(v: String, w: String, name: String): js.Any = js.native
+    def edge(v: String, w: String): Any = js.native
+    def edge(v: String, w: String, name: String): Any = js.native
     
     /**
       * Gets the number of edges in the graph.
@@ -154,7 +154,7 @@ object mod {
       * 
       * @returns label value of the node.
       */
-    def node(name: String): js.Any = js.native
+    def node(name: String): Any = js.native
     
     /**
       * Gets the number of nodes in the graph.
@@ -256,7 +256,7 @@ object mod {
       * @argument labelFn - default edge label factory function.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultEdgeLabel(labelFn: js.Function1[/* v */ String, js.Any]): Graph = js.native
+    def setDefaultEdgeLabel(labelFn: js.Function1[/* v */ String, Any]): Graph = js.native
     /**
       * Sets the default edge label. This label will be assigned as default label
       * in case if no label was specified while setting an edge.
@@ -265,7 +265,7 @@ object mod {
       * @argument label - default edge label.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultEdgeLabel(label: js.Any): Graph = js.native
+    def setDefaultEdgeLabel(label: Any): Graph = js.native
     
     /**
       * Sets the default node label factory function. This function will be invoked
@@ -276,7 +276,7 @@ object mod {
       * @argument labelFn - default node label factory function.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultNodeLabel(labelFn: js.Function1[/* v */ String, js.Any]): Graph = js.native
+    def setDefaultNodeLabel(labelFn: js.Function1[/* v */ String, Any]): Graph = js.native
     /**
       * Sets the default node label. This label will be assigned as default label
       * in case if no label was specified while setting a node.
@@ -285,7 +285,7 @@ object mod {
       * @argument label - default node label.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultNodeLabel(label: js.Any): Graph = js.native
+    def setDefaultNodeLabel(label: Any): Graph = js.native
     
     /**
       * Creates or updates the label for the specified edge. If label is supplied it is 
@@ -299,7 +299,7 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setEdge(edge: Edge): Graph = js.native
-    def setEdge(edge: Edge, label: js.Any): Graph = js.native
+    def setEdge(edge: Edge, label: Any): Graph = js.native
     /**
       * Creates or updates the label for the edge (v, w) with the optionally supplied
       * name. If label is supplied it is set as the value for the edge. If label is not
@@ -314,8 +314,8 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setEdge(v: String, w: String): Graph = js.native
-    def setEdge(v: String, w: String, label: js.Any): Graph = js.native
-    def setEdge(v: String, w: String, label: js.Any, name: String): Graph = js.native
+    def setEdge(v: String, w: String, label: Any): Graph = js.native
+    def setEdge(v: String, w: String, label: Any, name: String): Graph = js.native
     def setEdge(v: String, w: String, label: Unit, name: String): Graph = js.native
     
     /**
@@ -324,7 +324,7 @@ object mod {
       * @argument label - label value.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setGraph(label: js.Any): Graph = js.native
+    def setGraph(label: Any): Graph = js.native
     
     /**
       * Creates or updates the value for the node v in the graph. If label is supplied
@@ -337,7 +337,7 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setNode(name: String): Graph = js.native
-    def setNode(name: String, label: js.Any): Graph = js.native
+    def setNode(name: String, label: Any): Graph = js.native
     
     /**
       * Invokes setNode method for each node in names list.
@@ -348,7 +348,7 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setNodes(names: js.Array[String]): Graph = js.native
-    def setNodes(names: js.Array[String], label: js.Any): Graph = js.native
+    def setNodes(names: js.Array[String], label: Any): Graph = js.native
     
     /**
       * Sets node p as a parent for node v if it is defined, or removes the
@@ -374,7 +374,7 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setPath(nodes: js.Array[String]): Graph = js.native
-    def setPath(nodes: js.Array[String], label: js.Any): Graph = js.native
+    def setPath(nodes: js.Array[String], label: Any): Graph = js.native
     
     /**
       * Gets list of nodes without out-edges.

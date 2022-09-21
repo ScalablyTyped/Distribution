@@ -1,6 +1,5 @@
 package typings.saxes.mod
 
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param opt The parser options.
   */
-class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
+open class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
   def this(opt: O) = this()
   
   /**
@@ -19,13 +18,13 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   var ENTITIES: Record[String, String] = js.native
   
-  /* private */ var _closed: js.Any = js.native
+  /* private */ var _closed: Any = js.native
   
   def _init(): Unit = js.native
   
-  /* private */ var attribList: js.Any = js.native
+  /* private */ var attribList: Any = js.native
   
-  /* private */ var attributeHandler: js.Any = js.native
+  /* private */ var attributeHandler: Any = js.native
   
   /**
     * Capture characters that satisfy ``isNameChar`` into the ``name`` field of
@@ -35,7 +34,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * the end of the chunk. The return value cannot be NL_LIKE: NL is returned
     * instead.
     */
-  /* private */ var captureNameChars: js.Any = js.native
+  /* private */ var captureNameChars: Any = js.native
   
   /**
     * Capture characters into a buffer until encountering one of a set of
@@ -48,7 +47,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * the end of the chunk. The return value cannot be NL_LIKE: NL is returned
     * instead.
     */
-  /* private */ var captureTo: js.Any = js.native
+  /* private */ var captureTo: Any = js.native
   
   /**
     * Capture characters into a buffer until encountering a character.
@@ -59,15 +58,15 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * @return ``true`` if we ran into the character. Otherwise, we ran into the
     * end of the current chunk.
     */
-  /* private */ var captureToChar: js.Any = js.native
+  /* private */ var captureToChar: Any = js.native
   
-  /* private */ var carriedFromPrevious: js.Any = js.native
+  /* private */ var carriedFromPrevious: Any = js.native
   
-  /* private */ var cdataHandler: js.Any = js.native
+  /* private */ var cdataHandler: Any = js.native
   
-  /* private */ var chunk: js.Any = js.native
+  /* private */ var chunk: Any = js.native
   
-  /* private */ var chunkPosition: js.Any = js.native
+  /* private */ var chunkPosition: Any = js.native
   
   /**
     * Close the current stream. Perform final well-formedness checks and reset
@@ -82,9 +81,9 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * the whole tag. This method checks for well-formeness and then emits
     * ``onclosetag``.
     */
-  /* private */ var closeTag: js.Any = js.native
+  /* private */ var closeTag: Any = js.native
   
-  /* private */ var closeTagHandler: js.Any = js.native
+  /* private */ var closeTagHandler: Any = js.native
   
   /**
     * Indicates whether or not the parser is closed. If ``true``, wait for
@@ -92,7 +91,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   def closed: Boolean = js.native
   
-  /* private */ var closedRoot: js.Any = js.native
+  /* private */ var closedRoot: Any = js.native
   
   /**
     * The column number of the next character to be read by the parser.  *
@@ -120,13 +119,13 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   def columnIndex: Double = js.native
   
-  /* private */ var commentHandler: js.Any = js.native
+  /* private */ var commentHandler: Any = js.native
   
-  /* private */ var currentXMLVersion: js.Any = js.native
+  /* private */ var currentXMLVersion: Any = js.native
   
-  /* private */ var doctype: js.Any = js.native
+  /* private */ var doctype: Any = js.native
   
-  /* private */ var doctypeHandler: js.Any = js.native
+  /* private */ var doctypeHandler: Any = js.native
   
   /**
     * End parsing. This performs final well-formedness checks and resets the
@@ -134,15 +133,15 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns this
     */
-  /* private */ var end: js.Any = js.native
+  /* private */ var end: Any = js.native
   
-  /* private */ var endHandler: js.Any = js.native
+  /* private */ var endHandler: Any = js.native
   
-  /* private */ var entity: js.Any = js.native
+  /* private */ var entity: Any = js.native
   
-  /* private */ var entityReturnState: js.Any = js.native
+  /* private */ var entityReturnState: Any = js.native
   
-  /* private */ var errorHandler: js.Any = js.native
+  /* private */ var errorHandler: Any = js.native
   
   /**
     * Report a parsing error. This method is made public so that client code may
@@ -155,13 +154,13 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   def fail(message: String): this.type = js.native
   
-  /* private */ val fileName: js.Any = js.native
+  /* private */ val fileName: Any = js.native
   
-  /* private */ var forbiddenState: js.Any = js.native
+  /* private */ var forbiddenState: Any = js.native
   
-  /* private */ val fragmentOpt: js.Any = js.native
+  /* private */ val fragmentOpt: Any = js.native
   
-  /* private */ var getCode: js.Any = js.native
+  /* private */ var getCode: Any = js.native
   
   /**
     * Get a single code point out of the current chunk. This updates the current
@@ -171,7 +170,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns The character read.
     */
-  /* private */ var getCode10: js.Any = js.native
+  /* private */ var getCode10: Any = js.native
   
   /**
     * Get a single code point out of the current chunk. This updates the current
@@ -181,23 +180,23 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns {number} The character read.
     */
-  /* private */ var getCode11: js.Any = js.native
+  /* private */ var getCode11: Any = js.native
   
   /**
     * Like ``getCode`` but with the return value normalized so that ``NL`` is
     * returned for ``NL_LIKE``.
     */
-  /* private */ var getCodeNorm: js.Any = js.native
+  /* private */ var getCodeNorm: Any = js.native
   
-  /* private */ var handleTextInRoot: js.Any = js.native
+  /* private */ var handleTextInRoot: Any = js.native
   
-  /* private */ var handleTextOutsideRoot: js.Any = js.native
+  /* private */ var handleTextOutsideRoot: Any = js.native
   
-  /* private */ var i: js.Any = js.native
+  /* private */ var i: Any = js.native
   
-  /* private */ var isChar: js.Any = js.native
+  /* private */ var isChar: Any = js.native
   
-  /* private */ val isName: js.Any = js.native
+  /* private */ val isName: Any = js.native
   
   /**
     * The line number of the next character to be read by the parser. This field
@@ -215,15 +214,15 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns An error object with a properly formatted message.
     */
-  def makeError(message: String): Error = js.native
+  def makeError(message: String): js.Error = js.native
   
-  /* private */ var name: js.Any = js.native
+  /* private */ var name: Any = js.native
   
-  /* private */ val nameCheck: js.Any = js.native
+  /* private */ val nameCheck: Any = js.native
   
-  /* private */ val nameStartCheck: js.Any = js.native
+  /* private */ val nameStartCheck: Any = js.native
   
-  /* private */ val ns: js.Any = js.native
+  /* private */ val ns: Any = js.native
   
   /**
     * Unset an event handler.
@@ -248,20 +247,20 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * seen the whole tag. This method checks for well-formeness and then emits
     * ``onopentag`` and ``onclosetag``.
     */
-  /* private */ var openSelfClosingTag: js.Any = js.native
+  /* private */ var openSelfClosingTag: Any = js.native
   
   /**
     * Handle a complete open tag. This parser code calls this once it has seen
     * the whole tag. This method checks for well-formeness and then emits
     * ``onopentag``.
     */
-  /* private */ var openTag: js.Any = js.native
+  /* private */ var openTag: Any = js.native
   
-  /* private */ var openTagHandler: js.Any = js.native
+  /* private */ var openTagHandler: Any = js.native
   
-  /* private */ var openTagStartHandler: js.Any = js.native
+  /* private */ var openTagStartHandler: Any = js.native
   
-  /* private */ var openWakaBang: js.Any = js.native
+  /* private */ var openWakaBang: Any = js.native
   
   val opt: SaxesOptions = js.native
   
@@ -272,11 +271,11 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns The parsed entity.
     */
-  /* private */ var parseEntity: js.Any = js.native
+  /* private */ var parseEntity: Any = js.native
   
-  /* private */ var piHandler: js.Any = js.native
+  /* private */ var piHandler: Any = js.native
   
-  /* private */ var piTarget: js.Any = js.native
+  /* private */ var piTarget: Any = js.native
   
   /**
     * The stream position the parser is currently looking at. This field is
@@ -287,23 +286,23 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   def position: Double = js.native
   
-  /* private */ var positionAtNewLine: js.Any = js.native
+  /* private */ var positionAtNewLine: Any = js.native
   
-  /* private */ var prevI: js.Any = js.native
+  /* private */ var prevI: Any = js.native
   
-  /* private */ var processAttribs: js.Any = js.native
+  /* private */ var processAttribs: Any = js.native
   
-  /* private */ var processAttribsNS: js.Any = js.native
+  /* private */ var processAttribsNS: Any = js.native
   
-  /* private */ var processAttribsPlain: js.Any = js.native
+  /* private */ var processAttribsPlain: Any = js.native
   
-  /* private */ var pushAttrib: js.Any = js.native
+  /* private */ var pushAttrib: Any = js.native
   
-  /* private */ var pushAttribNS: js.Any = js.native
+  /* private */ var pushAttribNS: Any = js.native
   
-  /* private */ var pushAttribPlain: js.Any = js.native
+  /* private */ var pushAttribPlain: Any = js.native
   
-  /* private */ var q: js.Any = js.native
+  /* private */ var q: Any = js.native
   
   /**
     * Parse a qname into its prefix and local name parts.
@@ -312,13 +311,13 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     *
     * @returns
     */
-  /* private */ var qname: js.Any = js.native
+  /* private */ var qname: Any = js.native
   
-  /* private */ var readyHandler: js.Any = js.native
+  /* private */ var readyHandler: Any = js.native
   
-  /* private */ var reportedTextAfterRoot: js.Any = js.native
+  /* private */ var reportedTextAfterRoot: Any = js.native
   
-  /* private */ var reportedTextBeforeRoot: js.Any = js.native
+  /* private */ var reportedTextBeforeRoot: Any = js.native
   
   /**
     * Resolve a namespace prefix.
@@ -329,99 +328,99 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   def resolve(prefix: String): js.UndefOr[String] = js.native
   
-  /* private */ var sAttrib: js.Any = js.native
+  /* private */ var sAttrib: Any = js.native
   
-  /* private */ var sAttribName: js.Any = js.native
+  /* private */ var sAttribName: Any = js.native
   
-  /* private */ var sAttribNameSawWhite: js.Any = js.native
+  /* private */ var sAttribNameSawWhite: Any = js.native
   
-  /* private */ var sAttribValue: js.Any = js.native
+  /* private */ var sAttribValue: Any = js.native
   
-  /* private */ var sAttribValueClosed: js.Any = js.native
+  /* private */ var sAttribValueClosed: Any = js.native
   
-  /* private */ var sAttribValueQuoted: js.Any = js.native
+  /* private */ var sAttribValueQuoted: Any = js.native
   
-  /* private */ var sAttribValueUnquoted: js.Any = js.native
+  /* private */ var sAttribValueUnquoted: Any = js.native
   
-  /* private */ var sBegin: js.Any = js.native
+  /* private */ var sBegin: Any = js.native
   
-  /* private */ var sBeginWhitespace: js.Any = js.native
+  /* private */ var sBeginWhitespace: Any = js.native
   
-  /* private */ var sCData: js.Any = js.native
+  /* private */ var sCData: Any = js.native
   
-  /* private */ var sCDataEnding: js.Any = js.native
+  /* private */ var sCDataEnding: Any = js.native
   
-  /* private */ var sCDataEnding2: js.Any = js.native
+  /* private */ var sCDataEnding2: Any = js.native
   
-  /* private */ var sCloseTag: js.Any = js.native
+  /* private */ var sCloseTag: Any = js.native
   
-  /* private */ var sCloseTagSawWhite: js.Any = js.native
+  /* private */ var sCloseTagSawWhite: Any = js.native
   
-  /* private */ var sComment: js.Any = js.native
+  /* private */ var sComment: Any = js.native
   
-  /* private */ var sCommentEnded: js.Any = js.native
+  /* private */ var sCommentEnded: Any = js.native
   
-  /* private */ var sCommentEnding: js.Any = js.native
+  /* private */ var sCommentEnding: Any = js.native
   
-  /* private */ var sDTD: js.Any = js.native
+  /* private */ var sDTD: Any = js.native
   
-  /* private */ var sDTDComment: js.Any = js.native
+  /* private */ var sDTDComment: Any = js.native
   
-  /* private */ var sDTDCommentEnded: js.Any = js.native
+  /* private */ var sDTDCommentEnded: Any = js.native
   
-  /* private */ var sDTDCommentEnding: js.Any = js.native
+  /* private */ var sDTDCommentEnding: Any = js.native
   
-  /* private */ var sDTDOpenWaka: js.Any = js.native
+  /* private */ var sDTDOpenWaka: Any = js.native
   
-  /* private */ var sDTDOpenWakaBang: js.Any = js.native
+  /* private */ var sDTDOpenWakaBang: Any = js.native
   
-  /* private */ var sDTDPI: js.Any = js.native
+  /* private */ var sDTDPI: Any = js.native
   
-  /* private */ var sDTDPIEnding: js.Any = js.native
+  /* private */ var sDTDPIEnding: Any = js.native
   
-  /* private */ var sDTDQuoted: js.Any = js.native
+  /* private */ var sDTDQuoted: Any = js.native
   
-  /* private */ var sDoctype: js.Any = js.native
+  /* private */ var sDoctype: Any = js.native
   
-  /* private */ var sDoctypeQuote: js.Any = js.native
+  /* private */ var sDoctypeQuote: Any = js.native
   
-  /* private */ var sEntity: js.Any = js.native
+  /* private */ var sEntity: Any = js.native
   
-  /* private */ var sOpenTag: js.Any = js.native
+  /* private */ var sOpenTag: Any = js.native
   
-  /* private */ var sOpenTagSlash: js.Any = js.native
+  /* private */ var sOpenTagSlash: Any = js.native
   
-  /* private */ var sOpenWaka: js.Any = js.native
+  /* private */ var sOpenWaka: Any = js.native
   
-  /* private */ var sOpenWakaBang: js.Any = js.native
+  /* private */ var sOpenWakaBang: Any = js.native
   
-  /* private */ var sPIBody: js.Any = js.native
+  /* private */ var sPIBody: Any = js.native
   
-  /* private */ var sPIEnding: js.Any = js.native
+  /* private */ var sPIEnding: Any = js.native
   
-  /* private */ var sPIFirstChar: js.Any = js.native
+  /* private */ var sPIFirstChar: Any = js.native
   
-  /* private */ var sPIRest: js.Any = js.native
+  /* private */ var sPIRest: Any = js.native
   
-  /* private */ var sText: js.Any = js.native
+  /* private */ var sText: Any = js.native
   
-  /* private */ var sXMLDeclEnding: js.Any = js.native
+  /* private */ var sXMLDeclEnding: Any = js.native
   
-  /* private */ var sXMLDeclEq: js.Any = js.native
+  /* private */ var sXMLDeclEq: Any = js.native
   
-  /* private */ var sXMLDeclName: js.Any = js.native
+  /* private */ var sXMLDeclName: Any = js.native
   
-  /* private */ var sXMLDeclNameStart: js.Any = js.native
+  /* private */ var sXMLDeclNameStart: Any = js.native
   
-  /* private */ var sXMLDeclSeparator: js.Any = js.native
+  /* private */ var sXMLDeclSeparator: Any = js.native
   
-  /* private */ var sXMLDeclValue: js.Any = js.native
+  /* private */ var sXMLDeclValue: Any = js.native
   
-  /* private */ var sXMLDeclValueStart: js.Any = js.native
+  /* private */ var sXMLDeclValueStart: Any = js.native
   
-  /* private */ var sawRoot: js.Any = js.native
+  /* private */ var sawRoot: Any = js.native
   
-  /* private */ var setXMLVersion: js.Any = js.native
+  /* private */ var setXMLVersion: Any = js.native
   
   /**
     * Skip white spaces.
@@ -430,25 +429,25 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     * the end of the chunk. The return value cannot be NL_LIKE: NL is returned
     * instead.
     */
-  /* private */ var skipSpaces: js.Any = js.native
+  /* private */ var skipSpaces: Any = js.native
   
-  /* private */ var state: js.Any = js.native
+  /* private */ var state: Any = js.native
   
-  /* private */ val stateTable: js.Any = js.native
+  /* private */ val stateTable: Any = js.native
   
-  /* private */ var tag: js.Any = js.native
+  /* private */ var tag: Any = js.native
   
-  /* private */ var tags: js.Any = js.native
+  /* private */ var tags: Any = js.native
   
-  /* private */ var text: js.Any = js.native
+  /* private */ var text: Any = js.native
   
-  /* private */ var textHandler: js.Any = js.native
+  /* private */ var textHandler: Any = js.native
   
-  /* private */ var topNS: js.Any = js.native
+  /* private */ var topNS: Any = js.native
   
-  /* private */ val trackPosition: js.Any = js.native
+  /* private */ val trackPosition: Any = js.native
   
-  /* private */ var unget: js.Any = js.native
+  /* private */ var unget: Any = js.native
   
   /**
     * Write a XML data to the parser.
@@ -466,11 +465,11 @@ class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
     */
   var xmlDecl: XMLDecl = js.native
   
-  /* private */ var xmlDeclExpects: js.Any = js.native
+  /* private */ var xmlDeclExpects: Any = js.native
   
-  /* private */ var xmlDeclPossible: js.Any = js.native
+  /* private */ var xmlDeclPossible: Any = js.native
   
-  /* private */ var xmldeclHandler: js.Any = js.native
+  /* private */ var xmldeclHandler: Any = js.native
   
-  /* private */ val xmlnsOpt: js.Any = js.native
+  /* private */ val xmlnsOpt: Any = js.native
 }

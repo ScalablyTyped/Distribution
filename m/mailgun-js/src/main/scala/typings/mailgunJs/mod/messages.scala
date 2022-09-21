@@ -35,7 +35,7 @@ object messages {
     }
   }
   
-  type BatchSendRecipientVars = StringDictionary[StringDictionary[js.Any]]
+  type BatchSendRecipientVars = StringDictionary[StringDictionary[Any]]
   
   trait SendData extends StObject {
     
@@ -117,19 +117,19 @@ object messages {
       
       inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
       
-      inline def setAttachmentVarargs(value: AttachmentData*): Self = StObject.set(x, "attachment", js.Array(value :_*))
+      inline def setAttachmentVarargs(value: AttachmentData*): Self = StObject.set(x, "attachment", js.Array(value*))
       
       inline def setBcc(value: String | js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
       inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value*))
       
       inline def setCc(value: String | js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
       inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
+      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -159,7 +159,7 @@ object messages {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setInlineVarargs(value: AttachmentData*): Self = StObject.set(x, "inline", js.Array(value :_*))
+      inline def setInlineVarargs(value: AttachmentData*): Self = StObject.set(x, "inline", js.Array(value*))
       
       inline def setOColondeliverytime(value: String): Self = StObject.set(x, "o:deliverytime", value.asInstanceOf[js.Any])
       
@@ -181,7 +181,7 @@ object messages {
       
       inline def setOColontagUndefined: Self = StObject.set(x, "o:tag", js.undefined)
       
-      inline def setOColontagVarargs(value: String*): Self = StObject.set(x, "o:tag", js.Array(value :_*))
+      inline def setOColontagVarargs(value: String*): Self = StObject.set(x, "o:tag", js.Array(value*))
       
       inline def setOColontestmode(value: yes | no | true_ | false_ | True | False): Self = StObject.set(x, "o:testmode", value.asInstanceOf[js.Any])
       
@@ -209,7 +209,7 @@ object messages {
       
       inline def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -237,7 +237,7 @@ object messages {
   trait SendTemplateData
     extends StObject
        with SendData
-       with /* templateVariable */ StringDictionary[js.Any] {
+       with /* templateVariable */ StringDictionary[Any] {
     
     var template: String
   }

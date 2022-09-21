@@ -28,7 +28,7 @@ object ListFilterSetsResponse {
     
     inline def setFilterSetsUndefined: Self = StObject.set(x, "filterSets", js.undefined)
     
-    inline def setFilterSetsVarargs(value: FilterSet*): Self = StObject.set(x, "filterSets", js.Array(value :_*))
+    inline def setFilterSetsVarargs(value: FilterSet*): Self = StObject.set(x, "filterSets", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

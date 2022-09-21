@@ -28,6 +28,10 @@ object builderUtilRuntimeStrings {
   inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
   sealed trait PUT extends StObject
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
@@ -44,24 +48,32 @@ object builderUtilRuntimeStrings {
   inline def STANDARD_IA: STANDARD_IA = "STANDARD_IA".asInstanceOf[STANDARD_IA]
   
   @js.native
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
+  
+  @js.native
   sealed trait awsColonkms extends StObject
   inline def awsColonkms: awsColonkms = "aws:kms".asInstanceOf[awsColonkms]
   
   @js.native
-  sealed trait base64 extends StObject
-  inline def base64: base64 = "base64".asInstanceOf[base64]
+  sealed trait beta extends StObject
+  inline def beta: beta = "beta".asInstanceOf[beta]
   
   @js.native
-  sealed trait bintray
+  sealed trait bitbucket
     extends StObject
        with PublishProvider
-  inline def bintray: bintray = "bintray".asInstanceOf[bintray]
+  inline def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
   
   @js.native
   sealed trait custom
     extends StObject
        with PublishProvider
   inline def custom: custom = "custom".asInstanceOf[custom]
+  
+  @js.native
+  sealed trait dev extends StObject
+  inline def dev: dev = "dev".asInstanceOf[dev]
   
   @js.native
   sealed trait draft extends StObject
@@ -80,10 +92,6 @@ object builderUtilRuntimeStrings {
   inline def github: github = "github".asInstanceOf[github]
   
   @js.native
-  sealed trait hex extends StObject
-  inline def hex: hex = "hex".asInstanceOf[hex]
-  
-  @js.native
   sealed trait http extends StObject
   inline def http: http = "http".asInstanceOf[http]
   
@@ -92,8 +100,10 @@ object builderUtilRuntimeStrings {
   inline def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait latin1 extends StObject
-  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  sealed trait keygen
+    extends StObject
+       with PublishProvider
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait prerelease extends StObject
@@ -106,6 +116,10 @@ object builderUtilRuntimeStrings {
   @js.native
   sealed trait `public-read` extends StObject
   inline def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
+  
+  @js.native
+  sealed trait rc extends StObject
+  inline def rc: rc = "rc".asInstanceOf[rc]
   
   @js.native
   sealed trait release extends StObject
@@ -128,4 +142,8 @@ object builderUtilRuntimeStrings {
     extends StObject
        with PublishProvider
   inline def spaces: spaces = "spaces".asInstanceOf[spaces]
+  
+  @js.native
+  sealed trait stable extends StObject
+  inline def stable: stable = "stable".asInstanceOf[stable]
 }

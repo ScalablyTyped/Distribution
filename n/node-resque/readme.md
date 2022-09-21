@@ -10,10 +10,10 @@ an opinionated implementation of resque in node
 | ------------------ | :-------------: |
 | Full name          | node-resque |
 | Keywords           | delayed, queue, resque, redis, work, worker, background, job, task |
-| # releases         | 33 |
-| # dependents       | 19 |
-| # downloads        | 397561 |
-| # stars            | 11 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 53509.666666666664 |
+| # stars            | 1127.0 |
 
 ## Links
 - [Homepage](http://github.com/actionhero/node-resque)

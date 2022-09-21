@@ -66,7 +66,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
     
     inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    inline def setPricesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "prices", js.Array(value*))
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
     
     inline def setSubOptionsUndefined: Self = StObject.set(x, "subOptions", js.undefined)
     
-    inline def setSubOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "subOptions", js.Array(value :_*))
+    inline def setSubOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "subOptions", js.Array(value*))
   }
 }

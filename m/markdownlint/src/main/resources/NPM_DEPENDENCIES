@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "markdownlint" : "0.21.1"
+      "markdownlint" : "0.26.2"
     }
   ],
   "test-dependencies" : [
     {
-      "markdownlint" : "0.21.1"
+      "markdownlint" : "0.26.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,25 +1,26 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
-@js.native
-class DbRemoteDocumentGlobal protected () extends js.Object {
+trait DbRemoteDocumentGlobal extends StObject {
+  
   /**
-    * @param byteSize Approximately the total size in bytes of all the documents in the document
-    * cache.
+    * Approximately the total size in bytes of all the
+    * documents in the document cache.
     */
-  def this(byteSize: Double) = this()
-  var byteSize: Double = js.native
+  var byteSize: Double
 }
-
-/* static members */
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
-@js.native
-object DbRemoteDocumentGlobal extends js.Object {
-  var key: String = js.native
-  var store: String = js.native
+object DbRemoteDocumentGlobal {
+  
+  inline def apply(byteSize: Double): DbRemoteDocumentGlobal = {
+    val __obj = js.Dynamic.literal(byteSize = byteSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbRemoteDocumentGlobal]
+  }
+  
+  extension [Self <: DbRemoteDocumentGlobal](x: Self) {
+    
+    inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
+  }
 }
-

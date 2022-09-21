@@ -85,7 +85,7 @@ object ContinueLegendCfg {
     
     inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setHandler(value: ContinueLegendHandlerCfg): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
@@ -103,6 +103,6 @@ object ContinueLegendCfg {
     
     inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

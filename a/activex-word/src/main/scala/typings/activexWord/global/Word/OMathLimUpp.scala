@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathLimUpp")
 @js.native
-/* private */ class OMathLimUpp ()
+/* private */ open class OMathLimUpp ()
   extends StObject
      with typings.activexWord.Word.OMathLimUpp {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Lim: typings.activexWord.Word.OMath = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def ToLimLow(): typings.activexWord.Word.OMathFunction = js.native

@@ -20,7 +20,7 @@ object cardMod {
     
     /**
       * Boolean if the card should use a border instead of box-shadow. Enabling
-      * this prop will always disable the `raiseable` prop.
+      * this prop will always disable the `raisable` prop.
       */
     var bordered: js.UndefOr[Boolean] = js.undefined
     
@@ -34,6 +34,9 @@ object cardMod {
       * Boolean if the card should gain additional box-shadow elevation once
       * hovered.
       */
+    var raisable: js.UndefOr[Boolean] = js.undefined
+    
+    /** @deprecated \@since 5.1.3 Use {@link raisable} instead. */
     var raiseable: js.UndefOr[Boolean] = js.undefined
   }
   object CardProps {
@@ -52,6 +55,10 @@ object cardMod {
       inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
       inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      
+      inline def setRaisable(value: Boolean): Self = StObject.set(x, "raisable", value.asInstanceOf[js.Any])
+      
+      inline def setRaisableUndefined: Self = StObject.set(x, "raisable", js.undefined)
       
       inline def setRaiseable(value: Boolean): Self = StObject.set(x, "raiseable", value.asInstanceOf[js.Any])
       

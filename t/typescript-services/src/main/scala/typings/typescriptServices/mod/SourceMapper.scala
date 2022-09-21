@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SourceMapper")
 @js.native
-class SourceMapper protected ()
+open class SourceMapper protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SourceMapper {
   def this(
@@ -20,7 +20,7 @@ class SourceMapper protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var allSourceMappings: js.Any = js.native
+  var allSourceMappings: Any = js.native
   
   /* CompleteClass */
   var currentMappings: js.Array[js.Array[typings.typescriptServices.TypeScript.SourceMapping]] = js.native
@@ -41,13 +41,13 @@ class SourceMapper protected ()
   override def increaseMappingLevel(ast: IASTSpan): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var jsFile: js.Any = js.native
+  var jsFile: Any = js.native
   
   /* private */ /* CompleteClass */
-  var jsFileName: js.Any = js.native
+  var jsFileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var mappingLevel: js.Any = js.native
+  var mappingLevel: Any = js.native
   
   /* CompleteClass */
   var names: js.Array[String] = js.native
@@ -59,28 +59,28 @@ class SourceMapper protected ()
   ): Unit = js.native
   
   /* private */ /* CompleteClass */
-  override def setNewSourceFilePath(document: js.Any, emitOptions: js.Any): js.Any = js.native
+  override def setNewSourceFilePath(document: Any, emitOptions: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def setSourceMapOptions(document: js.Any, jsFilePath: js.Any, emitOptions: js.Any, resolvePath: js.Any): js.Any = js.native
+  override def setSourceMapOptions(document: Any, jsFilePath: Any, emitOptions: Any, resolvePath: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceMapDirectory: js.Any = js.native
+  var sourceMapDirectory: Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceMapEntries: js.Any = js.native
+  var sourceMapEntries: Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceMapOut: js.Any = js.native
+  var sourceMapOut: Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceMapPath: js.Any = js.native
+  var sourceMapPath: Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceRoot: js.Any = js.native
+  var sourceRoot: Any = js.native
   
   /* private */ /* CompleteClass */
-  var tsFilePaths: js.Any = js.native
+  var tsFilePaths: Any = js.native
 }
 object SourceMapper {
   

@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object materialTextfieldConstantsMod {
   
   /**
-    * Label should always float for these types as they show some UI even if value is empty.
+    * Label should always float for these types as they show some UI even if value
+    * is empty.
     */
   @JSImport("@material/textfield/constants", "ALWAYS_FLOAT_TYPES")
   @js.native
   val ALWAYS_FLOAT_TYPES: js.Array[String] = js.native
   
   /**
-    * Whitelist based off of https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+    * Whitelist based off of
+    * https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
     * under the "Validation-related attributes" section.
     */
   @JSImport("@material/textfield/constants", "VALIDATION_ATTR_WHITELIST")
@@ -72,6 +74,11 @@ object materialTextfieldConstantsMod {
     def TEXTAREA: String = js.native
     inline def TEXTAREA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTAREA")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/textfield/constants", "cssClasses.WITH_INTERNAL_COUNTER")
+    @js.native
+    def WITH_INTERNAL_COUNTER: String = js.native
+    inline def WITH_INTERNAL_COUNTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_INTERNAL_COUNTER")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/textfield/constants", "cssClasses.WITH_LEADING_ICON")
     @js.native
     def WITH_LEADING_ICON: String = js.native
@@ -95,28 +102,6 @@ object materialTextfieldConstantsMod {
     inline def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object strings {
     
     @JSImport("@material/textfield/constants", "strings")

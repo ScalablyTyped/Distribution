@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.LineMap")
 @js.native
-class LineMap protected ()
+open class LineMap protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.LineMap {
   def this(_computeLineStarts: js.Function0[js.Array[Double]], length: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _computeLineStarts: js.Any = js.native
+  var _computeLineStarts: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lineStarts: js.Any = js.native
+  var _lineStarts: Any = js.native
   
   /* CompleteClass */
   override def equals(other: typings.typescriptServices.TypeScript.LineMap): Boolean = js.native
@@ -38,7 +38,7 @@ class LineMap protected ()
   override def getPosition(line: Double, character: Double): Double = js.native
   
   /* private */ /* CompleteClass */
-  var length: js.Any = js.native
+  var length: Any = js.native
   
   /* CompleteClass */
   override def lineCount(): Double = js.native
@@ -47,7 +47,7 @@ class LineMap protected ()
   override def lineStarts(): js.Array[Double] = js.native
   
   /* CompleteClass */
-  override def toJSON(key: js.Any): Length = js.native
+  override def toJSON(key: Any): Length = js.native
 }
 object LineMap {
   

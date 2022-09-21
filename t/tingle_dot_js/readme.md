@@ -10,15 +10,12 @@ A simple modal plugin written in pure JavaScript
 | ------------------ | :-------------: |
 | Full name          | tingle.js |
 | Keywords           | modal, popup, window, dialog, popin, lightbox |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 188736 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21029.0 |
+| # stars            | 1448.0 |
 
 ## Links
-- [Homepage](https://github.com/robinparisi/tingle#readme)
-- [Bugs](https://github.com/robinparisi/tingle/issues)
-- [Repository](https://github.com/robinparisi/tingle)
 - [Npm](https://www.npmjs.com/package/tingle.js)
     
 

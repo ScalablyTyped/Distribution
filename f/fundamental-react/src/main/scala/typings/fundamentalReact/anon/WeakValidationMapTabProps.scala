@@ -19,13 +19,13 @@ trait WeakValidationMapTabProps extends StObject {
   
   var index: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var linkProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var linkProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]] = js.undefined
+  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ Any, Any]) | Null]]] = js.undefined
   
   var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var tabContentProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var tabContentProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
@@ -58,11 +58,11 @@ object WeakValidationMapTabProps {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setLinkProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+    inline def setLinkProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     inline def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
-    inline def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ Any, Any]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -70,7 +70,7 @@ object WeakValidationMapTabProps {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setTabContentProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
+    inline def setTabContentProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
     
     inline def setTabContentPropsUndefined: Self = StObject.set(x, "tabContentProps", js.undefined)
     

@@ -11,7 +11,7 @@ trait MapViewConstraints
      with Object {
   
   /**
-    * A read-only property that specifies the levels of detail (LODs) read from the [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
+    * A read-only property that specifies the levels of  detail (LODs) read from the [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
@@ -90,12 +90,16 @@ trait MapViewConstraints
   /**
     * Indicates whether the user can rotate the map.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
   var rotationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, the view snaps to the next LOD when zooming in or out.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
@@ -118,7 +122,7 @@ object MapViewConstraints {
     
     inline def setEffectiveLODsUndefined: Self = StObject.set(x, "effectiveLODs", js.undefined)
     
-    inline def setEffectiveLODsVarargs(value: LOD*): Self = StObject.set(x, "effectiveLODs", js.Array(value :_*))
+    inline def setEffectiveLODsVarargs(value: LOD*): Self = StObject.set(x, "effectiveLODs", js.Array(value*))
     
     inline def setEffectiveMaxScale(value: Double): Self = StObject.set(x, "effectiveMaxScale", value.asInstanceOf[js.Any])
     
@@ -144,7 +148,7 @@ object MapViewConstraints {
     
     inline def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
     
-    inline def setLodsVarargs(value: LOD*): Self = StObject.set(x, "lods", js.Array(value :_*))
+    inline def setLodsVarargs(value: LOD*): Self = StObject.set(x, "lods", js.Array(value*))
     
     inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     

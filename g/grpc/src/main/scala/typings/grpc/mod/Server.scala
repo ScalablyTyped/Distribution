@@ -1,6 +1,5 @@
 package typings.grpc.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * server.start();
   * ```
   */
-class Server () extends StObject {
+open class Server () extends StObject {
   def this(options: js.Object) = this()
   
   /**
@@ -63,7 +62,7 @@ class Server () extends StObject {
   def bindAsync(
     port: String,
     creds: ServerCredentials,
-    callback: js.Function2[/* error */ Error | Null, /* port */ Double, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* port */ Double, Unit]
   ): Unit = js.native
   
   /**

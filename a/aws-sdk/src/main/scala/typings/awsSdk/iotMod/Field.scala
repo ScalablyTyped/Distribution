@@ -12,7 +12,7 @@ trait Field extends StObject {
   var name: js.UndefOr[FieldName] = js.undefined
   
   /**
-    * The datatype of the field.
+    * The data type of the field.
     */
   var `type`: js.UndefOr[FieldType] = js.undefined
 }

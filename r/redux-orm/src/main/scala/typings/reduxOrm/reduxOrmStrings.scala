@@ -28,10 +28,6 @@ object reduxOrmStrings {
   inline def ORM: ORM = "ORM".asInstanceOf[ORM]
   
   @js.native
-  sealed trait ORMOpts extends StObject
-  inline def ORMOpts: ORMOpts = "ORMOpts".asInstanceOf[ORMOpts]
-  
-  @js.native
   sealed trait OrmSession extends StObject
   inline def OrmSession: OrmSession = "OrmSession".asInstanceOf[OrmSession]
   

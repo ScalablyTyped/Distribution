@@ -33,6 +33,6 @@ object ListReplaysResponse {
     
     inline def setReplaysUndefined: Self = StObject.set(x, "Replays", js.undefined)
     
-    inline def setReplaysVarargs(value: Replay*): Self = StObject.set(x, "Replays", js.Array(value :_*))
+    inline def setReplaysVarargs(value: Replay*): Self = StObject.set(x, "Replays", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ object SheetView {
     Application: Application,
     Creator: XlCreator,
     ExcelDotDialogSheetView_typekey: typings.activexExcel.Excel.DialogSheetView,
-    Parent: js.Any,
+    Parent: Any,
     Sheet: DialogSheet
   ): typings.activexExcel.Excel.DialogSheetView = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any])
@@ -32,7 +32,7 @@ object SheetView {
     DisplayOutline: Boolean,
     DisplayZeros: Boolean,
     ExcelDotWorksheetView_typekey: typings.activexExcel.Excel.WorksheetView,
-    Parent: js.Any,
+    Parent: Any,
     Sheet: Worksheet
   ): typings.activexExcel.Excel.WorksheetView = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DisplayFormulas = DisplayFormulas.asInstanceOf[js.Any], DisplayGridlines = DisplayGridlines.asInstanceOf[js.Any], DisplayHeadings = DisplayHeadings.asInstanceOf[js.Any], DisplayOutline = DisplayOutline.asInstanceOf[js.Any], DisplayZeros = DisplayZeros.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any])

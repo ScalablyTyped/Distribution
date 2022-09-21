@@ -22,14 +22,14 @@ trait Cell extends StObject {
   val Creator: Double = js.native
   
   def Delete(): Unit = js.native
-  def Delete(ShiftCells: js.Any): Unit = js.native
+  def Delete(ShiftCells: Any): Unit = js.native
   
   var FitText: Boolean = js.native
   
   def Formula(): Unit = js.native
-  def Formula(Formula: js.Any): Unit = js.native
-  def Formula(Formula: js.Any, NumFormat: js.Any): Unit = js.native
-  def Formula(Formula: Unit, NumFormat: js.Any): Unit = js.native
+  def Formula(Formula: Any): Unit = js.native
+  def Formula(Formula: Any, NumFormat: Any): Unit = js.native
+  def Formula(Formula: Unit, NumFormat: Any): Unit = js.native
   
   var Height: Double = js.native
   
@@ -45,7 +45,7 @@ trait Cell extends StObject {
   
   val Next: Cell = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreferredWidth: Double = js.native
   
@@ -63,16 +63,16 @@ trait Cell extends StObject {
   
   def Select(): Unit = js.native
   
-  def SetHeight(RowHeight: js.Any, HeightRule: WdRowHeightRule): Unit = js.native
+  def SetHeight(RowHeight: Any, HeightRule: WdRowHeightRule): Unit = js.native
   
   def SetWidth(ColumnWidth: Double, RulerStyle: WdRulerStyle): Unit = js.native
   
   val Shading: typings.activexWord.Word.Shading = js.native
   
   def Split(): Unit = js.native
-  def Split(NumRows: js.Any): Unit = js.native
-  def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
-  def Split(NumRows: Unit, NumColumns: js.Any): Unit = js.native
+  def Split(NumRows: Any): Unit = js.native
+  def Split(NumRows: Any, NumColumns: Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: Any): Unit = js.native
   
   val Tables: typings.activexWord.Word.Tables = js.native
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-emails
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get all email addresses in a string
@@ -11,14 +11,11 @@ Get all email addresses in a string
 | Full name          | get-emails |
 | Keywords           | get, extract, find, scrape, text, string, email, address, emails |
 | # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 88838 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8940.333333333334 |
+| # stars            | 55.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/get-emails#readme)
-- [Bugs](https://github.com/sindresorhus/get-emails/issues)
-- [Repository](https://github.com/sindresorhus/get-emails)
 - [Npm](https://www.npmjs.com/package/get-emails)
     
 

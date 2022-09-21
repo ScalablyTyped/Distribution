@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAccountSettingsRequest extends StObject {
   
   /**
-    * The ID for the AWS account that contains the settings that you want to list.
+    * The ID for the Amazon Web Services account that contains the settings that you want to list.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
 }

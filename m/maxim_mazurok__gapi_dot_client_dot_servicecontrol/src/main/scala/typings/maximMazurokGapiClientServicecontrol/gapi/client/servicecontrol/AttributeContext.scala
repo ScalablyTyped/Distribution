@@ -18,7 +18,7 @@ trait AttributeContext extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -61,7 +61,7 @@ object AttributeContext {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -70,8 +70,8 @@ object AttributeContext {
     inline def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any])*
+    ): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setOrigin(value: Peer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

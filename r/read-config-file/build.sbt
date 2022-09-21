@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "6.0.0-304b69"
-scalaVersion := "3.0.1"
+version := "6.2.0-84fb6b"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dotenv" % "8.2.0-c9c998",
-  "org.scalablytyped" %%% "lazy-val" % "1.0.4-16f850",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "dotenv" % "16.0.2-b79d24",
+  "org.scalablytyped" %%% "lazy-val" % "1.0.5-3f22af",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

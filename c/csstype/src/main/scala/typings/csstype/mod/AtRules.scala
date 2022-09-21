@@ -12,10 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`@font-feature-values`
   - typings.csstype.csstypeStrings.`@import`
   - typings.csstype.csstypeStrings.`@keyframes`
+  - typings.csstype.csstypeStrings.`@layer`
   - typings.csstype.csstypeStrings.`@media`
   - typings.csstype.csstypeStrings.`@namespace`
   - typings.csstype.csstypeStrings.`@page`
   - typings.csstype.csstypeStrings.`@property`
+  - typings.csstype.csstypeStrings.`@scroll-timeline`
   - typings.csstype.csstypeStrings.`@supports`
   - typings.csstype.csstypeStrings.`@viewport`
 */
@@ -36,6 +38,8 @@ object AtRules {
   
   inline def `@keyframes`: typings.csstype.csstypeStrings.`@keyframes` = "@keyframes".asInstanceOf[typings.csstype.csstypeStrings.`@keyframes`]
   
+  inline def `@layer`: typings.csstype.csstypeStrings.`@layer` = "@layer".asInstanceOf[typings.csstype.csstypeStrings.`@layer`]
+  
   inline def `@media`: typings.csstype.csstypeStrings.`@media` = "@media".asInstanceOf[typings.csstype.csstypeStrings.`@media`]
   
   inline def `@namespace`: typings.csstype.csstypeStrings.`@namespace` = "@namespace".asInstanceOf[typings.csstype.csstypeStrings.`@namespace`]
@@ -43,6 +47,8 @@ object AtRules {
   inline def `@page`: typings.csstype.csstypeStrings.`@page` = "@page".asInstanceOf[typings.csstype.csstypeStrings.`@page`]
   
   inline def `@property`: typings.csstype.csstypeStrings.`@property` = "@property".asInstanceOf[typings.csstype.csstypeStrings.`@property`]
+  
+  inline def `@scroll-timeline`: typings.csstype.csstypeStrings.`@scroll-timeline` = "@scroll-timeline".asInstanceOf[typings.csstype.csstypeStrings.`@scroll-timeline`]
   
   inline def `@supports`: typings.csstype.csstypeStrings.`@supports` = "@supports".asInstanceOf[typings.csstype.csstypeStrings.`@supports`]
   

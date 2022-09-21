@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking.Connectivity
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IReference
 import org.scalablytyped.runtime.StObject
@@ -14,8 +13,8 @@ trait IConnectionProfile extends StObject {
   
   def getDataPlanStatus(): DataPlanStatus = js.native
   
-  def getLocalUsage(StartTime: Date, EndTime: Date): DataUsage = js.native
-  def getLocalUsage(StartTime: Date, EndTime: Date, States: RoamingStates): DataUsage = js.native
+  def getLocalUsage(StartTime: js.Date, EndTime: js.Date): DataUsage = js.native
+  def getLocalUsage(StartTime: js.Date, EndTime: js.Date, States: RoamingStates): DataUsage = js.native
   
   def getNetworkConnectivityLevel(): NetworkConnectivityLevel = js.native
   

@@ -49,7 +49,7 @@ trait PartialViolinData
   
   var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.undefined
   
-  var marker: js.UndefOr[PartialoutliercolorColors] = js.undefined
+  var marker: js.UndefOr[PartialBoxPlotMarkerColor] = js.undefined
   
   var meanline: js.UndefOr[Partialvisiblebooleancolo] = js.undefined
   
@@ -73,7 +73,7 @@ trait PartialViolinData
   
   var side: js.UndefOr[both | positive | negative] = js.undefined
   
-  var span: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var span: js.UndefOr[js.Array[Any]] = js.undefined
   
   var spanmode: js.UndefOr[soft | hard | manual] = js.undefined
   
@@ -122,7 +122,7 @@ object PartialViolinData {
     
     inline def setFillcolorUndefined: Self = StObject.set(x, "fillcolor", js.undefined)
     
-    inline def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value :_*))
+    inline def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value*))
     
     inline def setHoveron(value: violins | points | kde | all | String): Self = StObject.set(x, "hoveron", value.asInstanceOf[js.Any])
     
@@ -132,13 +132,13 @@ object PartialViolinData {
     
     inline def setHovertemplateUndefined: Self = StObject.set(x, "hovertemplate", js.undefined)
     
-    inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value :_*))
+    inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value*))
     
     inline def setHovertext(value: String | js.Array[String]): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
     inline def setHovertextUndefined: Self = StObject.set(x, "hovertext", js.undefined)
     
-    inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value :_*))
+    inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value*))
     
     inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
@@ -148,7 +148,7 @@ object PartialViolinData {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setMarker(value: PartialoutliercolorColors): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
@@ -196,11 +196,11 @@ object PartialViolinData {
     
     inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
-    inline def setSpan(value: js.Array[js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: js.Array[Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
-    inline def setSpanVarargs(value: js.Any*): Self = StObject.set(x, "span", js.Array(value :_*))
+    inline def setSpanVarargs(value: Any*): Self = StObject.set(x, "span", js.Array(value*))
     
     inline def setSpanmode(value: soft | hard | manual): Self = StObject.set(x, "spanmode", value.asInstanceOf[js.Any])
     
@@ -210,7 +210,7 @@ object PartialViolinData {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setType(value: violin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -234,7 +234,7 @@ object PartialViolinData {
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value*))
     
     inline def setY(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
@@ -246,6 +246,6 @@ object PartialViolinData {
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value*))
   }
 }

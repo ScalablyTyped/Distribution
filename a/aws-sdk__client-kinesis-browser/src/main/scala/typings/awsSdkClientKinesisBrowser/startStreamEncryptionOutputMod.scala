@@ -8,5 +8,5 @@ object startStreamEncryptionOutputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/StartStreamEncryptionOutput", "StartStreamEncryptionOutput")
   @js.native
-  val StartStreamEncryptionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val StartStreamEncryptionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

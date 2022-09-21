@@ -17,7 +17,7 @@ trait JobDetail extends StObject {
   var attempts: js.UndefOr[AttemptDetails] = js.undefined
   
   /**
-    * An object representing the details of the container that is associated with the job.
+    * An object representing the details of the container that's associated with the job.
     */
   var container: js.UndefOr[ContainerDetail] = js.undefined
   
@@ -27,7 +27,7 @@ trait JobDetail extends StObject {
   var createdAt: js.UndefOr[Long] = js.undefined
   
   /**
-    * A list of job IDs on which this job depends.
+    * A list of job IDs that this job depends on.
     */
   var dependsOn: js.UndefOr[JobDependencyList] = js.undefined
   
@@ -37,7 +37,7 @@ trait JobDetail extends StObject {
   var jobArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The job definition that is used by this job.
+    * The Amazon Resource Name (ARN) of the job definition that's used by this job.
     */
   var jobDefinition: String
   
@@ -52,17 +52,17 @@ trait JobDetail extends StObject {
   var jobName: String
   
   /**
-    * The Amazon Resource Name (ARN) of the job queue with which the job is associated.
+    * The Amazon Resource Name (ARN) of the job queue that the job is associated with.
     */
   var jobQueue: String
   
   /**
-    * An object representing the details of a node that is associated with a multi-node parallel job.
+    * An object representing the details of a node that's associated with a multi-node parallel job.
     */
   var nodeDetails: js.UndefOr[NodeDetails] = js.undefined
   
   /**
-    * An object representing the node properties of a multi-node parallel job.
+    * An object representing the node properties of a multi-node parallel job.  This isn't applicable to jobs that are running on Fargate resources. 
     */
   var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
   
@@ -72,17 +72,37 @@ trait JobDetail extends StObject {
   var parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
+    * The platform capabilities required by the job definition. If no value is specified, it defaults to EC2. Jobs run on Fargate resources specify FARGATE.
+    */
+  var platformCapabilities: js.UndefOr[PlatformCapabilityList] = js.undefined
+  
+  /**
+    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags aren't propagated. Tags can only be propagated to the tasks during task creation. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
+    */
+  var propagateTags: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The retry strategy to use for this job if an attempt fails.
     */
   var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   
   /**
-    * The Unix timestamp (in milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state). This parameter is not provided for child jobs of array jobs or multi-node parallel jobs.
+    * The scheduling policy of the job definition. This only affects jobs in job queues with a fair share policy. Jobs with a higher scheduling priority are scheduled before jobs with a lower scheduling priority.
+    */
+  var schedulingPriority: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The share identifier for the job.
+    */
+  var shareIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Unix timestamp (in milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state). This parameter isn't provided for child jobs of array jobs or multi-node parallel jobs.
     */
   var startedAt: Long
   
   /**
-    * The current status for the job.  If your jobs do not progress to STARTING, see Jobs Stuck in RUNNABLE Status in the troubleshooting section of the AWS Batch User Guide. 
+    * The current status for the job.  If your jobs don't progress to STARTING, see Jobs stuck in RUNNABLE status in the troubleshooting section of the Batch User Guide. 
     */
   var status: JobStatus
   
@@ -130,7 +150,7 @@ object JobDetail {
     
     inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
-    inline def setAttemptsVarargs(value: AttemptDetail*): Self = StObject.set(x, "attempts", js.Array(value :_*))
+    inline def setAttemptsVarargs(value: AttemptDetail*): Self = StObject.set(x, "attempts", js.Array(value*))
     
     inline def setContainer(value: ContainerDetail): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
@@ -144,7 +164,7 @@ object JobDetail {
     
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    inline def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value*))
     
     inline def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
@@ -170,9 +190,27 @@ object JobDetail {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
+    inline def setPlatformCapabilities(value: PlatformCapabilityList): Self = StObject.set(x, "platformCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformCapabilitiesUndefined: Self = StObject.set(x, "platformCapabilities", js.undefined)
+    
+    inline def setPlatformCapabilitiesVarargs(value: PlatformCapability*): Self = StObject.set(x, "platformCapabilities", js.Array(value*))
+    
+    inline def setPropagateTags(value: Boolean): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
+    
+    inline def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
+    
     inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
     inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+    
+    inline def setSchedulingPriority(value: Integer): Self = StObject.set(x, "schedulingPriority", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulingPriorityUndefined: Self = StObject.set(x, "schedulingPriority", js.undefined)
+    
+    inline def setShareIdentifier(value: String): Self = StObject.set(x, "shareIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setShareIdentifierUndefined: Self = StObject.set(x, "shareIdentifier", js.undefined)
     
     inline def setStartedAt(value: Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     

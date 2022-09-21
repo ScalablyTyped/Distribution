@@ -22,6 +22,6 @@ object PublisherQueryResult {
     
     inline def setResults(value: js.Array[PublisherFilterResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: PublisherFilterResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: PublisherFilterResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

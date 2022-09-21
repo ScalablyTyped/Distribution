@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Map")
 @js.native
-class Map protected ()
+open class Map protected ()
   extends typings.openlayers.mod.Map {
   /**
     * @classdesc

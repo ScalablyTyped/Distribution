@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.MapType")
 @js.native
-class MapType protected ()
+open class MapType protected ()
   extends StObject
      with typings.bmapgl.BMapGL.MapType {
   def this(name: String, layers: js.Array[typings.bmapgl.BMapGL.TileLayer]) = this()

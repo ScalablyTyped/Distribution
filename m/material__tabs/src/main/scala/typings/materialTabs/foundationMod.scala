@@ -14,7 +14,7 @@ object foundationMod {
   
   @JSImport("@material/tabs/tab-bar-scroller/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTabBarScrollerFoundation {
+  open class default () extends MDCTabBarScrollerFoundation {
     def this(adapter: PartialMDCTabBarScrollerA) = this()
   }
   /* static members */
@@ -35,7 +35,7 @@ object foundationMod {
   
   @JSImport("@material/tabs/tab-bar-scroller/foundation", "MDCTabBarScrollerFoundation")
   @js.native
-  class MDCTabBarScrollerFoundation () extends MDCFoundation[MDCTabBarScrollerAdapter] {
+  open class MDCTabBarScrollerFoundation () extends MDCFoundation[MDCTabBarScrollerAdapter] {
     def this(adapter: PartialMDCTabBarScrollerA) = this()
     
     def layout(): Unit = js.native

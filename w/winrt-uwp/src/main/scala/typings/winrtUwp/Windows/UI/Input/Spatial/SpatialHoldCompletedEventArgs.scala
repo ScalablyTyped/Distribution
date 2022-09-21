@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialHoldCompletedEventArgs extends StObject {
   
-  var interactionSourceKind: js.Any
+  var interactionSourceKind: Any
 }
 object SpatialHoldCompletedEventArgs {
   
-  inline def apply(interactionSourceKind: js.Any): SpatialHoldCompletedEventArgs = {
+  inline def apply(interactionSourceKind: Any): SpatialHoldCompletedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialHoldCompletedEventArgs]
   }
   
   extension [Self <: SpatialHoldCompletedEventArgs](x: Self) {
     
-    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
   }
 }

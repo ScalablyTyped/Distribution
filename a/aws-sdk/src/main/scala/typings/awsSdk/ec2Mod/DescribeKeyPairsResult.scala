@@ -24,6 +24,6 @@ object DescribeKeyPairsResult {
     
     inline def setKeyPairsUndefined: Self = StObject.set(x, "KeyPairs", js.undefined)
     
-    inline def setKeyPairsVarargs(value: KeyPairInfo*): Self = StObject.set(x, "KeyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: KeyPairInfo*): Self = StObject.set(x, "KeyPairs", js.Array(value*))
   }
 }

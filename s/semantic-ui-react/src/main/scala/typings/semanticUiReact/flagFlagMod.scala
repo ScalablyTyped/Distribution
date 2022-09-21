@@ -10,10 +10,10 @@ object flagFlagMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Flag/Flag", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[FlagProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[FlagProps, js.Object, Any]
   
-  type Flag = PureComponent[FlagProps, js.Object, js.Any]
+  type Flag = PureComponent[FlagProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.semanticUiReact.semanticUiReactStrings.ad
@@ -1506,7 +1506,7 @@ object flagFlagMod {
   trait FlagProps
     extends StObject
        with StrictFlagProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FlagProps {
     
     inline def apply(name: FlagNameValues): FlagProps = {
@@ -1518,7 +1518,7 @@ object flagFlagMod {
   trait StrictFlagProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -1535,7 +1535,7 @@ object flagFlagMod {
     
     extension [Self <: StrictFlagProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

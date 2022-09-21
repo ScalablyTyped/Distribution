@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "Page")
 @js.native
-class Page () extends PageModel {
+open class Page () extends PageModel {
   def this(name: String) = this()
+  
+  var _implementor: ImplementorBase = js.native
   
   /* protected */ def onCreating(): Unit = js.native
 }

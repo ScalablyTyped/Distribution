@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.context because var conflicts: $height, $scope, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.context")
+- typings.webix.webix.ui.context because var conflicts: $dragCreate_Original, $dragDestroy_Original, $dragPos_Original, $height, $scope, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.context")
 @js.native
-class context ()
+open class context ()
   extends typings.webix.mod.ui.context

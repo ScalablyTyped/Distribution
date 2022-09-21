@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Behavior")
 @js.native
-class Behavior protected () extends StObject {
+open class Behavior protected () extends StObject {
   def this(sprite: Drawable) = this()
   def this(sprite: Drawable, options: JSObject) = this()
   

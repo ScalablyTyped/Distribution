@@ -13,6 +13,9 @@ object distCommonMod {
   inline def checkDataFormat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDataFormat")().asInstanceOf[Unit]
   inline def checkDataFormat(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDataFormat")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def checkInterpolationFormat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInterpolationFormat")().asInstanceOf[Unit]
+  inline def checkInterpolationFormat(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInterpolationFormat")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def checkPaddingMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPaddingMode")().asInstanceOf[Unit]
   inline def checkPaddingMode(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPaddingMode")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

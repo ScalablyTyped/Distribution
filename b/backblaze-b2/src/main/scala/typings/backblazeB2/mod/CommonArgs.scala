@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommonArgs extends StObject {
   
-  var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var axios: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var axiosOverride: js.UndefOr[Record[String, Any]] = js.undefined
 }
 object CommonArgs {
   
@@ -20,9 +20,9 @@ object CommonArgs {
   
   extension [Self <: CommonArgs](x: Self) {
     
-    inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+    inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     
-    inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+    inline def setAxiosOverride(value: Record[String, Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
     
     inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
     

@@ -10,10 +10,10 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-update |
 | Keywords           | react, react-addon |
-| # releases         | 2 |
-| # dependents       | 219 |
-| # downloads        | 2827307 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 264863.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

@@ -10,5 +10,5 @@ object configMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Any]
 }

@@ -1,13 +1,13 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.TypeofMenuDivider
-import typings.blueprintjsCore.anon.TypeofMenuItem
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
+import typings.react.mod.Ref
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
 import typings.react.reactStrings.inherit
@@ -30,10 +30,10 @@ object menuMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu")
   @js.native
-  class Menu protected ()
-    extends AbstractPureComponent2[IMenuProps, js.Object, js.Object] {
-    def this(props: IMenuProps) = this()
-    def this(props: IMenuProps, context: js.Any) = this()
+  open class Menu protected ()
+    extends AbstractPureComponent2[MenuProps, js.Object, js.Object] {
+    def this(props: MenuProps) = this()
+    def this(props: MenuProps, context: Any) = this()
   }
   /* static members */
   object Menu {
@@ -41,16 +41,6 @@ object menuMod {
     @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu")
     @js.native
     val ^ : js.Any = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu.Divider")
-    @js.native
-    def Divider: TypeofMenuDivider = js.native
-    inline def Divider_=(x: TypeofMenuDivider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu.Item")
-    @js.native
-    def Item: TypeofMenuItem = js.native
-    inline def Item_=(x: TypeofMenuItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu.displayName")
     @js.native
@@ -99,7 +89,7 @@ object menuMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -144,7 +134,7 @@ object menuMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -167,7 +157,7 @@ object menuMod {
     var typeof: js.UndefOr[String] = js.undefined
     
     /** Ref handler that receives the HTML `<ul>` element backing this component. */
-    var ulRef: js.UndefOr[js.Function1[/* ref */ HTMLUListElement | Null, js.Any]] = js.undefined
+    var ulRef: js.UndefOr[Ref[HTMLUListElement]] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
@@ -226,7 +216,7 @@ object menuMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -244,7 +234,7 @@ object menuMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -308,7 +298,7 @@ object menuMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -352,7 +342,11 @@ object menuMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUlRef(value: /* ref */ HTMLUListElement | Null => js.Any): Self = StObject.set(x, "ulRef", js.Any.fromFunction1(value))
+      inline def setUlRef(value: Ref[HTMLUListElement]): Self = StObject.set(x, "ulRef", value.asInstanceOf[js.Any])
+      
+      inline def setUlRefFunction1(value: /* instance */ HTMLUListElement | Null => Unit): Self = StObject.set(x, "ulRef", js.Any.fromFunction1(value))
+      
+      inline def setUlRefNull: Self = StObject.set(x, "ulRef", null)
       
       inline def setUlRefUndefined: Self = StObject.set(x, "ulRef", js.undefined)
       
@@ -365,4 +359,6 @@ object menuMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  type MenuProps = IMenuProps
 }

@@ -93,8 +93,8 @@ trait XPropertyHandler
     */
   def actuatingPropertyChanged(
     ActuatingPropertyName: String,
-    NewValue: js.Any,
-    OldValue: js.Any,
+    NewValue: Any,
+    OldValue: Any,
     InspectorUI: XObjectInspectorUI,
     FirstTimeInit: Boolean
   ): Unit
@@ -138,7 +138,7 @@ trait XPropertyHandler
     * @see getPropertyValue
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def convertToControlValue(PropertyName: String, PropertyValue: js.Any, ControlValueType: `type`): js.Any
+  def convertToControlValue(PropertyName: String, PropertyValue: Any, ControlValueType: `type`): Any
   
   /**
     * converts a given control-compatible value to a property value
@@ -156,7 +156,7 @@ trait XPropertyHandler
     * @see getPropertyValue
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def convertToPropertyValue(PropertyName: String, ControlValue: js.Any): js.Any
+  def convertToPropertyValue(PropertyName: String, ControlValue: Any): Any
   
   /**
     * describes the UI to be used to represent the property
@@ -197,7 +197,7 @@ trait XPropertyHandler
     * @param PropertyName the name of the property whose value is to be retrieved
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def getPropertyValue(PropertyName: String): js.Any
+  def getPropertyValue(PropertyName: String): Any
   
   /**
     * returns the properties which are to be superseded by this handler
@@ -287,7 +287,7 @@ trait XPropertyHandler
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     * @throws com::sun::star::lang::NullPointerException if InspectorUI is `NULL`
     */
-  def onInteractivePropertySelection(PropertyName: String, Primary: Boolean, outData: js.Array[js.Any], InspectorUI: XObjectInspectorUI): InteractiveSelectionResult
+  def onInteractivePropertySelection(PropertyName: String, Primary: Boolean, outData: js.Array[Any], InspectorUI: XObjectInspectorUI): InteractiveSelectionResult
   
   /**
     * revokes a listener for notification about property value changes
@@ -301,7 +301,7 @@ trait XPropertyHandler
     * @param Value the property value to set
     * @throws com::sun::star::beans::UnknownPropertyException if the given property is not supported by the property handler
     */
-  def setPropertyValue(PropertyName: String, Value: js.Any): Unit
+  def setPropertyValue(PropertyName: String, Value: Any): Unit
   
   /**
     * suspends the handler
@@ -327,26 +327,26 @@ object XPropertyHandler {
     SupersededProperties: SafeArray[String],
     SupportedProperties: SafeArray[Property],
     acquire: () => Unit,
-    actuatingPropertyChanged: (String, js.Any, js.Any, XObjectInspectorUI, Boolean) => Unit,
+    actuatingPropertyChanged: (String, Any, Any, XObjectInspectorUI, Boolean) => Unit,
     addEventListener: XEventListener => Unit,
     addPropertyChangeListener: XPropertyChangeListener => Unit,
-    convertToControlValue: (String, js.Any, `type`) => js.Any,
-    convertToPropertyValue: (String, js.Any) => js.Any,
+    convertToControlValue: (String, Any, `type`) => Any,
+    convertToPropertyValue: (String, Any) => Any,
     describePropertyLine: (String, XPropertyControlFactory) => LineDescriptor,
     dispose: () => Unit,
     getActuatingProperties: () => SafeArray[String],
     getPropertyState: String => PropertyState,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getSupersededProperties: () => SafeArray[String],
     getSupportedProperties: () => SafeArray[Property],
     inspect: XInterface => Unit,
     isComposable: String => Boolean,
-    onInteractivePropertySelection: (String, Boolean, js.Array[js.Any], XObjectInspectorUI) => InteractiveSelectionResult,
-    queryInterface: `type` => js.Any,
+    onInteractivePropertySelection: (String, Boolean, js.Array[Any], XObjectInspectorUI) => InteractiveSelectionResult,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removePropertyChangeListener: XPropertyChangeListener => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     suspend: Boolean => Boolean
   ): XPropertyHandler = {
     val __obj = js.Dynamic.literal(ActuatingProperties = ActuatingProperties.asInstanceOf[js.Any], SupersededProperties = SupersededProperties.asInstanceOf[js.Any], SupportedProperties = SupportedProperties.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), actuatingPropertyChanged = js.Any.fromFunction5(actuatingPropertyChanged), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction1(addPropertyChangeListener), convertToControlValue = js.Any.fromFunction3(convertToControlValue), convertToPropertyValue = js.Any.fromFunction2(convertToPropertyValue), describePropertyLine = js.Any.fromFunction2(describePropertyLine), dispose = js.Any.fromFunction0(dispose), getActuatingProperties = js.Any.fromFunction0(getActuatingProperties), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSupersededProperties = js.Any.fromFunction0(getSupersededProperties), getSupportedProperties = js.Any.fromFunction0(getSupportedProperties), inspect = js.Any.fromFunction1(inspect), isComposable = js.Any.fromFunction1(isComposable), onInteractivePropertySelection = js.Any.fromFunction4(onInteractivePropertySelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction1(removePropertyChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), suspend = js.Any.fromFunction1(suspend))
@@ -357,13 +357,13 @@ object XPropertyHandler {
     
     inline def setActuatingProperties(value: SafeArray[String]): Self = StObject.set(x, "ActuatingProperties", value.asInstanceOf[js.Any])
     
-    inline def setActuatingPropertyChanged(value: (String, js.Any, js.Any, XObjectInspectorUI, Boolean) => Unit): Self = StObject.set(x, "actuatingPropertyChanged", js.Any.fromFunction5(value))
+    inline def setActuatingPropertyChanged(value: (String, Any, Any, XObjectInspectorUI, Boolean) => Unit): Self = StObject.set(x, "actuatingPropertyChanged", js.Any.fromFunction5(value))
     
     inline def setAddPropertyChangeListener(value: XPropertyChangeListener => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction1(value))
     
-    inline def setConvertToControlValue(value: (String, js.Any, `type`) => js.Any): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction3(value))
+    inline def setConvertToControlValue(value: (String, Any, `type`) => Any): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction3(value))
     
-    inline def setConvertToPropertyValue(value: (String, js.Any) => js.Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
+    inline def setConvertToPropertyValue(value: (String, Any) => Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
     
     inline def setDescribePropertyLine(value: (String, XPropertyControlFactory) => LineDescriptor): Self = StObject.set(x, "describePropertyLine", js.Any.fromFunction2(value))
     
@@ -371,7 +371,7 @@ object XPropertyHandler {
     
     inline def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
     
-    inline def setGetPropertyValue(value: String => js.Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetPropertyValue(value: String => Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
     
     inline def setGetSupersededProperties(value: () => SafeArray[String]): Self = StObject.set(x, "getSupersededProperties", js.Any.fromFunction0(value))
     
@@ -381,11 +381,11 @@ object XPropertyHandler {
     
     inline def setIsComposable(value: String => Boolean): Self = StObject.set(x, "isComposable", js.Any.fromFunction1(value))
     
-    inline def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[js.Any], XObjectInspectorUI) => InteractiveSelectionResult): Self = StObject.set(x, "onInteractivePropertySelection", js.Any.fromFunction4(value))
+    inline def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[Any], XObjectInspectorUI) => InteractiveSelectionResult): Self = StObject.set(x, "onInteractivePropertySelection", js.Any.fromFunction4(value))
     
     inline def setRemovePropertyChangeListener(value: XPropertyChangeListener => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction1(value))
     
-    inline def setSetPropertyValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
+    inline def setSetPropertyValue(value: (String, Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
     
     inline def setSupersededProperties(value: SafeArray[String]): Self = StObject.set(x, "SupersededProperties", value.asInstanceOf[js.Any])
     

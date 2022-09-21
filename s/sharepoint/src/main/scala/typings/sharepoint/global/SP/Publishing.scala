@@ -10,7 +10,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.AddinPlugin")
   @js.native
-  class AddinPlugin protected ()
+  open class AddinPlugin protected ()
     extends StObject
        with typings.sharepoint.SP.Publishing.AddinPlugin {
     def this(ctx: typings.sharepoint.SP.ClientContext) = this()
@@ -18,7 +18,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.AddinSettings")
   @js.native
-  class AddinSettings protected ()
+  open class AddinSettings protected ()
     extends StObject
        with typings.sharepoint.SP.Publishing.AddinSettings {
     def this(ctx: typings.sharepoint.SP.ClientContext, id: typings.sharepoint.SP.Guid) = this()
@@ -26,13 +26,13 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.CustomizableString")
   @js.native
-  class CustomizableString ()
+  open class CustomizableString ()
     extends StObject
        with typings.sharepoint.SP.Publishing.CustomizableString
   
   @JSGlobal("SP.Publishing.DesignPackage")
   @js.native
-  class DesignPackage ()
+  open class DesignPackage ()
     extends StObject
        with typings.sharepoint.SP.Publishing.DesignPackage
   object DesignPackage {
@@ -81,12 +81,12 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.DesignPackageInfo")
   @js.native
-  class DesignPackageInfo ()
+  open class DesignPackageInfo ()
     extends StObject
        with typings.sharepoint.SP.Publishing.DesignPackageInfo {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -95,7 +95,7 @@ object Publishing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_majorVersion(): Double = js.native
@@ -133,12 +133,12 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.ImageRendition")
   @js.native
-  class ImageRendition ()
+  open class ImageRendition ()
     extends StObject
        with typings.sharepoint.SP.Publishing.ImageRendition {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -147,7 +147,7 @@ object Publishing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_height(): Double = js.native
@@ -201,7 +201,7 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTerm")
     @js.native
-    class NavigationTerm ()
+    open class NavigationTerm ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.NavigationTerm
     object NavigationTerm {
@@ -228,7 +228,7 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSet")
     @js.native
-    class NavigationTermSet ()
+    open class NavigationTermSet ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet
     object NavigationTermSet {
@@ -255,13 +255,13 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSetItem")
     @js.native
-    class NavigationTermSetItem ()
+    open class NavigationTermSetItem ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetItem
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSetView")
     @js.native
-    class NavigationTermSetView protected ()
+    open class NavigationTermSetView protected ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView {
       def this(
@@ -282,7 +282,7 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.StandardNavigationSettings")
     @js.native
-    class StandardNavigationSettings ()
+    open class StandardNavigationSettings ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSettings
     
@@ -304,7 +304,7 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation")
     @js.native
-    class TaxonomyNavigation ()
+    open class TaxonomyNavigation ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.TaxonomyNavigation
     object TaxonomyNavigation {
@@ -351,7 +351,7 @@ object Publishing {
     
     @JSGlobal("SP.Publishing.Navigation.WebNavigationSettings")
     @js.native
-    class WebNavigationSettings protected ()
+    open class WebNavigationSettings protected ()
       extends StObject
          with typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings {
       def this(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web) = this()
@@ -360,12 +360,12 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.PageLayoutCreationInformation")
   @js.native
-  class PageLayoutCreationInformation ()
+  open class PageLayoutCreationInformation ()
     extends StObject
        with typings.sharepoint.SP.Publishing.PageLayoutCreationInformation {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -374,7 +374,7 @@ object Publishing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_associatedContentTypeId(): String = js.native
@@ -418,7 +418,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.PublishingPage")
   @js.native
-  class PublishingPage ()
+  open class PublishingPage ()
     extends StObject
        with typings.sharepoint.SP.Publishing.PublishingPage
   object PublishingPage {
@@ -428,20 +428,17 @@ object Publishing {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def getPublishingPage(
-      context: typings.sharepoint.SP.ClientContext,
-      sourceListItem: typings.sharepoint.SP.ListItem[js.Any]
-    ): typings.sharepoint.SP.Publishing.PublishingPage = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublishingPage")(context.asInstanceOf[js.Any], sourceListItem.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.PublishingPage]
+    inline def getPublishingPage(context: typings.sharepoint.SP.ClientContext, sourceListItem: typings.sharepoint.SP.ListItem[Any]): typings.sharepoint.SP.Publishing.PublishingPage = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublishingPage")(context.asInstanceOf[js.Any], sourceListItem.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.PublishingPage]
   }
   
   @JSGlobal("SP.Publishing.PublishingPageInformation")
   @js.native
-  class PublishingPageInformation ()
+  open class PublishingPageInformation ()
     extends StObject
        with typings.sharepoint.SP.Publishing.PublishingPageInformation {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -450,7 +447,7 @@ object Publishing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_folder(): typings.sharepoint.SP.Folder = js.native
@@ -459,7 +456,7 @@ object Publishing {
     override def get_name(): String = js.native
     
     /* CompleteClass */
-    override def get_pageLayoutListItem(): typings.sharepoint.SP.ListItem[js.Any] = js.native
+    override def get_pageLayoutListItem(): typings.sharepoint.SP.ListItem[Any] = js.native
     
     /* CompleteClass */
     override def get_typeId(): String = js.native
@@ -471,7 +468,7 @@ object Publishing {
     override def set_name(value: String): String = js.native
     
     /* CompleteClass */
-    override def set_pageLayoutListItem(value: typings.sharepoint.SP.ListItem[js.Any]): typings.sharepoint.SP.ListItem[js.Any] = js.native
+    override def set_pageLayoutListItem(value: typings.sharepoint.SP.ListItem[Any]): typings.sharepoint.SP.ListItem[Any] = js.native
     
     /* CompleteClass */
     override def writeToXml(
@@ -482,7 +479,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.PublishingSite")
   @js.native
-  class PublishingSite ()
+  open class PublishingSite ()
     extends StObject
        with typings.sharepoint.SP.ClientObject
   object PublishingSite {
@@ -500,7 +497,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.PublishingWeb")
   @js.native
-  class PublishingWeb ()
+  open class PublishingWeb ()
     extends StObject
        with typings.sharepoint.SP.Publishing.PublishingWeb
   object PublishingWeb {
@@ -515,13 +512,13 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.ScheduledItem")
   @js.native
-  class ScheduledItem ()
+  open class ScheduledItem ()
     extends StObject
        with typings.sharepoint.SP.Publishing.ScheduledItem
   
   @JSGlobal("SP.Publishing.SiteImageRenditions")
   @js.native
-  class SiteImageRenditions ()
+  open class SiteImageRenditions ()
     extends StObject
        with typings.sharepoint.SP.Publishing.SiteImageRenditions
   object SiteImageRenditions {
@@ -542,7 +539,7 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.SiteServicesAddins")
   @js.native
-  class SiteServicesAddins ()
+  open class SiteServicesAddins ()
     extends StObject
        with typings.sharepoint.SP.Publishing.SiteServicesAddins
   object SiteServicesAddins {
@@ -575,13 +572,13 @@ object Publishing {
   
   @JSGlobal("SP.Publishing.VariationLabel")
   @js.native
-  class VariationLabel ()
+  open class VariationLabel ()
     extends StObject
        with typings.sharepoint.SP.Publishing.VariationLabel
   
   @JSGlobal("SP.Publishing.Variations")
   @js.native
-  class Variations ()
+  open class Variations ()
     extends StObject
        with typings.sharepoint.SP.ClientObject
   object Variations {

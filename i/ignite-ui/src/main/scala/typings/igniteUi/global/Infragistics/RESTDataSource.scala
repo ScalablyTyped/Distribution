@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.RESTDataSource")
 @js.native
-class RESTDataSource protected ()
+open class RESTDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.RESTDataSource {
   def this(settings: RESTDataSourceSettings) = this()

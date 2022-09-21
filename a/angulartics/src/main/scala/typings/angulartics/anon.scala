@@ -58,15 +58,15 @@ object anon {
       
       inline def setExcludedRoutes(value: js.Array[String]): Self = StObject.set(x, "excludedRoutes", value.asInstanceOf[js.Any])
       
-      inline def setExcludedRoutesVarargs(value: String*): Self = StObject.set(x, "excludedRoutes", js.Array(value :_*))
+      inline def setExcludedRoutesVarargs(value: String*): Self = StObject.set(x, "excludedRoutes", js.Array(value*))
       
       inline def setQueryKeysBlacklisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysBlacklisted", value.asInstanceOf[js.Any])
       
-      inline def setQueryKeysBlacklistedVarargs(value: String*): Self = StObject.set(x, "queryKeysBlacklisted", js.Array(value :_*))
+      inline def setQueryKeysBlacklistedVarargs(value: String*): Self = StObject.set(x, "queryKeysBlacklisted", js.Array(value*))
       
       inline def setQueryKeysWhitelisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysWhitelisted", value.asInstanceOf[js.Any])
       
-      inline def setQueryKeysWhitelistedVarargs(value: String*): Self = StObject.set(x, "queryKeysWhitelisted", js.Array(value :_*))
+      inline def setQueryKeysWhitelistedVarargs(value: String*): Self = StObject.set(x, "queryKeysWhitelisted", js.Array(value*))
       
       inline def setTrackRelativePath(value: Boolean): Self = StObject.set(x, "trackRelativePath", value.asInstanceOf[js.Any])
       

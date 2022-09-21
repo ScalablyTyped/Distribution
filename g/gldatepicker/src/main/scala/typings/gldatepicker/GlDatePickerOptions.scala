@@ -1,6 +1,5 @@
 package typings.gldatepicker
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +27,13 @@ trait GlDatePickerOptions extends StObject {
   var nextArrow: js.UndefOr[String] = js.undefined
   
   var onClick: js.UndefOr[
-    js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any, Unit]
+    js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ js.Date, /* data */ Any, Unit]
   ] = js.undefined
   
   var onHide: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.undefined
   
   var onHover: js.UndefOr[
-    js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any, Unit]
+    js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ js.Date, /* data */ Any, Unit]
   ] = js.undefined
   
   var onShow: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.undefined
@@ -51,13 +50,13 @@ trait GlDatePickerOptions extends StObject {
   
   var selectableYears: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var selectedDate: js.UndefOr[Date] = js.undefined
+  var selectedDate: js.UndefOr[js.Date] = js.undefined
   
   var showAlways: js.UndefOr[Boolean] = js.undefined
   
   var specialDates: js.UndefOr[js.Array[GlDatePickerSpecialDate]] = js.undefined
   
-  var todayDate: js.UndefOr[Date] = js.undefined
+  var todayDate: js.UndefOr[js.Date] = js.undefined
   
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -94,7 +93,7 @@ object GlDatePickerOptions {
     
     inline def setDowNamesUndefined: Self = StObject.set(x, "dowNames", js.undefined)
     
-    inline def setDowNamesVarargs(value: String*): Self = StObject.set(x, "dowNames", js.Array(value :_*))
+    inline def setDowNamesVarargs(value: String*): Self = StObject.set(x, "dowNames", js.Array(value*))
     
     inline def setDowOffset(value: Double): Self = StObject.set(x, "dowOffset", value.asInstanceOf[js.Any])
     
@@ -108,13 +107,13 @@ object GlDatePickerOptions {
     
     inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
-    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
     
     inline def setNextArrow(value: String): Self = StObject.set(x, "nextArrow", value.asInstanceOf[js.Any])
     
     inline def setNextArrowUndefined: Self = StObject.set(x, "nextArrow", js.undefined)
     
-    inline def setOnClick(value: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction4(value))
+    inline def setOnClick(value: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ js.Date, /* data */ Any) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction4(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -122,7 +121,7 @@ object GlDatePickerOptions {
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnHover(value: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction4(value))
+    inline def setOnHover(value: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ js.Date, /* data */ Any) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction4(value))
     
     inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
@@ -138,33 +137,33 @@ object GlDatePickerOptions {
     
     inline def setSelectableDOWUndefined: Self = StObject.set(x, "selectableDOW", js.undefined)
     
-    inline def setSelectableDOWVarargs(value: Double*): Self = StObject.set(x, "selectableDOW", js.Array(value :_*))
+    inline def setSelectableDOWVarargs(value: Double*): Self = StObject.set(x, "selectableDOW", js.Array(value*))
     
     inline def setSelectableDateRange(value: js.Array[GlDatePickerDateRange]): Self = StObject.set(x, "selectableDateRange", value.asInstanceOf[js.Any])
     
     inline def setSelectableDateRangeUndefined: Self = StObject.set(x, "selectableDateRange", js.undefined)
     
-    inline def setSelectableDateRangeVarargs(value: GlDatePickerDateRange*): Self = StObject.set(x, "selectableDateRange", js.Array(value :_*))
+    inline def setSelectableDateRangeVarargs(value: GlDatePickerDateRange*): Self = StObject.set(x, "selectableDateRange", js.Array(value*))
     
     inline def setSelectableDates(value: js.Array[GlDatePickerDate]): Self = StObject.set(x, "selectableDates", value.asInstanceOf[js.Any])
     
     inline def setSelectableDatesUndefined: Self = StObject.set(x, "selectableDates", js.undefined)
     
-    inline def setSelectableDatesVarargs(value: GlDatePickerDate*): Self = StObject.set(x, "selectableDates", js.Array(value :_*))
+    inline def setSelectableDatesVarargs(value: GlDatePickerDate*): Self = StObject.set(x, "selectableDates", js.Array(value*))
     
     inline def setSelectableMonths(value: js.Array[Double]): Self = StObject.set(x, "selectableMonths", value.asInstanceOf[js.Any])
     
     inline def setSelectableMonthsUndefined: Self = StObject.set(x, "selectableMonths", js.undefined)
     
-    inline def setSelectableMonthsVarargs(value: Double*): Self = StObject.set(x, "selectableMonths", js.Array(value :_*))
+    inline def setSelectableMonthsVarargs(value: Double*): Self = StObject.set(x, "selectableMonths", js.Array(value*))
     
     inline def setSelectableYears(value: js.Array[Double]): Self = StObject.set(x, "selectableYears", value.asInstanceOf[js.Any])
     
     inline def setSelectableYearsUndefined: Self = StObject.set(x, "selectableYears", js.undefined)
     
-    inline def setSelectableYearsVarargs(value: Double*): Self = StObject.set(x, "selectableYears", js.Array(value :_*))
+    inline def setSelectableYearsVarargs(value: Double*): Self = StObject.set(x, "selectableYears", js.Array(value*))
     
-    inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+    inline def setSelectedDate(value: js.Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
     
     inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
     
@@ -176,9 +175,9 @@ object GlDatePickerOptions {
     
     inline def setSpecialDatesUndefined: Self = StObject.set(x, "specialDates", js.undefined)
     
-    inline def setSpecialDatesVarargs(value: GlDatePickerSpecialDate*): Self = StObject.set(x, "specialDates", js.Array(value :_*))
+    inline def setSpecialDatesVarargs(value: GlDatePickerSpecialDate*): Self = StObject.set(x, "specialDates", js.Array(value*))
     
-    inline def setTodayDate(value: Date): Self = StObject.set(x, "todayDate", value.asInstanceOf[js.Any])
+    inline def setTodayDate(value: js.Date): Self = StObject.set(x, "todayDate", value.asInstanceOf[js.Any])
     
     inline def setTodayDateUndefined: Self = StObject.set(x, "todayDate", js.undefined)
     

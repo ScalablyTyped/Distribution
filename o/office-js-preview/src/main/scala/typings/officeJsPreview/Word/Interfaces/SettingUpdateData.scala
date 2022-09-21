@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SettingUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the value of the setting.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object SettingUpdateData {
   
@@ -25,7 +25,7 @@ object SettingUpdateData {
   
   extension [Self <: SettingUpdateData](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

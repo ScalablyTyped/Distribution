@@ -10,15 +10,12 @@ Javascript SignalR client without jQuery dependency
 | ------------------ | :-------------: |
 | Full name          | signalr-no-jquery |
 | Keywords           | signalr |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 89106 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18539.333333333332 |
+| # stars            | 113.0 |
 
 ## Links
-- [Homepage](https://github.com/DVLP/signalr-no-jquery)
-- [Bugs](https://github.com/DVLP/signalr-no-jquery/issues)
-- [Repository](https://github.com/DVLP/signalr-no-jquery)
 - [Npm](https://www.npmjs.com/package/signalr-no-jquery)
     
 

@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceReviewsReply
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Unique identifier for the Android app for which we want reviews; for
-    * example, "com.spiffygame".
+    * Package name of the app.
     */
   var packageName: js.UndefOr[String] = js.undefined
   
@@ -29,7 +19,7 @@ trait ParamsResourceReviewsReply
   var requestBody: js.UndefOr[SchemaReviewsReplyRequest] = js.undefined
   
   /**
-    *
+    * Unique identifier for a review.
     */
   var reviewId: js.UndefOr[String] = js.undefined
 }
@@ -41,10 +31,6 @@ object ParamsResourceReviewsReply {
   }
   
   extension [Self <: ParamsResourceReviewsReply](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

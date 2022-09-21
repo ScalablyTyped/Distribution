@@ -29,7 +29,7 @@ object DescribeDhcpOptionsResult {
     
     inline def setDhcpOptionsUndefined: Self = StObject.set(x, "DhcpOptions", js.undefined)
     
-    inline def setDhcpOptionsVarargs(value: DhcpOptions*): Self = StObject.set(x, "DhcpOptions", js.Array(value :_*))
+    inline def setDhcpOptionsVarargs(value: DhcpOptions*): Self = StObject.set(x, "DhcpOptions", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

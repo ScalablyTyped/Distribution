@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PDispWindow extends StObject {
   
-  val pDispWindow: js.Any
+  val pDispWindow: Any
 }
 object PDispWindow {
   
-  inline def apply(pDispWindow: js.Any): PDispWindow = {
+  inline def apply(pDispWindow: Any): PDispWindow = {
     val __obj = js.Dynamic.literal(pDispWindow = pDispWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDispWindow]
   }
   
   extension [Self <: PDispWindow](x: Self) {
     
-    inline def setPDispWindow(value: js.Any): Self = StObject.set(x, "pDispWindow", value.asInstanceOf[js.Any])
+    inline def setPDispWindow(value: Any): Self = StObject.set(x, "pDispWindow", value.asInstanceOf[js.Any])
   }
 }

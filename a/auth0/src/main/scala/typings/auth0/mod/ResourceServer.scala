@@ -101,7 +101,7 @@ object ResourceServer {
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: Description*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: Description*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSigning_alg(value: HS256 | RS256): Self = StObject.set(x, "signing_alg", value.asInstanceOf[js.Any])
     

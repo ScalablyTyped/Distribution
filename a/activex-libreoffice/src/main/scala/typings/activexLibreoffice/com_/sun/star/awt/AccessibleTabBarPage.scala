@@ -68,7 +68,7 @@ object AccessibleTabBarPage {
     getTitledBorderText: () => String,
     getToolTipText: () => String,
     grabFocus: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit
   ): AccessibleTabBarPage = {

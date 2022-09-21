@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the font attributes (font name, font size, color, etc.) for an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait RangeFontLoadOptions extends StObject {
@@ -19,88 +19,88 @@ trait RangeFontLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the bold status of the font.
     *
-    * Represents the bold status of font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the italic status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Font size.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
     *
-    * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the subscript status of font.
+    Returns `true` if all the fonts of the range are subscript.
+    Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+    Returns `null` otherwise.
     *
-    * Specifies the Subscript status of font.
-    Returns True if all the fonts of the range are Subscript.
-    Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
-    Returns Null otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the superscript status of font.
+    Returns `true` if all the fonts of the range are superscript.
+    Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+    Returns `null` otherwise.
     *
-    * Specifies the Superscript status of font.
-    Returns True if all the fonts of the range are Superscript.
-    Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
-    Returns Null otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
     *
-    * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: js.UndefOr[Boolean] = js.undefined

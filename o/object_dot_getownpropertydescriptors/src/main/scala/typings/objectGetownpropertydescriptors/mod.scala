@@ -2,7 +2,6 @@ package typings.objectGetownpropertydescriptors
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.std.PropertyDescriptor
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object mod {
     * Returns an object containing all own property descriptors of an object
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  inline def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor]]
+  inline def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[js.PropertyDescriptor]]
   
   @JSImport("object.getownpropertydescriptors", JSImport.Namespace)
   @js.native
@@ -30,7 +29,7 @@ object mod {
     ]
   ]]
   
-  inline def implementation[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor]]
+  inline def implementation[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[js.PropertyDescriptor]]
   
   inline def shim(): ReturnType[
     js.Function0[

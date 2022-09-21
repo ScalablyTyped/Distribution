@@ -1,7 +1,7 @@
 
 # Scala.js typings for egjs__component
 
-Typings are for version 2.0
+Typings are for version 3.0.2
 
 ## Library description:
 A base class utility that manages events and options in modules.
@@ -10,10 +10,10 @@ A base class utility that manages events and options in modules.
 | ------------------ | :-------------: |
 | Full name          | @egjs/component |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 338872 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 132015.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://naver.github.io/egjs-component)
@@ -24,7 +24,7 @@ A base class utility that manages events and options in modules.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

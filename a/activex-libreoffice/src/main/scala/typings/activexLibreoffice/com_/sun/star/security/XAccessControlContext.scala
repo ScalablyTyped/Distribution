@@ -32,14 +32,14 @@ trait XAccessControlContext
     * @see com.sun.star.connection.SocketPermission
     * @throws AccessControlException thrown if access is denied
     */
-  def checkPermission(perm: js.Any): Unit
+  def checkPermission(perm: Any): Unit
 }
 object XAccessControlContext {
   
   inline def apply(
     acquire: () => Unit,
-    checkPermission: js.Any => Unit,
-    queryInterface: `type` => js.Any,
+    checkPermission: Any => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessControlContext = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkPermission = js.Any.fromFunction1(checkPermission), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -48,6 +48,6 @@ object XAccessControlContext {
   
   extension [Self <: XAccessControlContext](x: Self) {
     
-    inline def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
+    inline def setCheckPermission(value: Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
   }
 }

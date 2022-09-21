@@ -2,8 +2,11 @@ package typings.sequelize.mod
 
 import typings.sequelize.sequelizeBooleans.`false`
 import typings.sequelize.sequelizeStrings.any
-import typings.std.Date
-import typings.std.RegExp
+import typings.validator.anon.strongPasswordOptionsretu
+import typings.validator.anon.strongPasswordOptionsretuMinLength
+import typings.validator.isEmailMod.IsEmailOptions
+import typings.validator.isFQDNMod.IsFQDNOptions
+import typings.validator.isURLMod.IsURLOptions
 import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
 import typings.validator.mod.validator.FloatLocale
@@ -11,12 +14,14 @@ import typings.validator.mod.validator.HashAlgorithm
 import typings.validator.mod.validator.IPVersion
 import typings.validator.mod.validator.ISBNVersion
 import typings.validator.mod.validator.IdentityCardLocale
+import typings.validator.mod.validator.IsAlphaOptions
+import typings.validator.mod.validator.IsAlphanumericOptions
+import typings.validator.mod.validator.IsBase64Options
 import typings.validator.mod.validator.IsByteLengthOptions
 import typings.validator.mod.validator.IsCurrencyOptions
+import typings.validator.mod.validator.IsDateOptions
 import typings.validator.mod.validator.IsDecimalOptions
-import typings.validator.mod.validator.IsEmailOptions
 import typings.validator.mod.validator.IsEmptyOptions
-import typings.validator.mod.validator.IsFQDNOptions
 import typings.validator.mod.validator.IsFloatOptions
 import typings.validator.mod.validator.IsISO8601Options
 import typings.validator.mod.validator.IsISSNOptions
@@ -25,7 +30,6 @@ import typings.validator.mod.validator.IsLengthOptions
 import typings.validator.mod.validator.IsMACAddressOptions
 import typings.validator.mod.validator.IsMobilePhoneOptions
 import typings.validator.mod.validator.IsNumericOptions
-import typings.validator.mod.validator.IsURLOptions
 import typings.validator.mod.validator.MobilePhoneLocale
 import typings.validator.mod.validator.NormalizeEmailOptions
 import typings.validator.mod.validator.PostalCodeLocale
@@ -58,7 +62,7 @@ trait ValidatorJSType extends StObject {
     *
     * @param seed - Seed
     */
-  def contains(str: String, seed: js.Any): Boolean = js.native
+  def contains(str: String, seed: Any): Boolean = js.native
   
   /**
     * Check if the string matches the comparison.
@@ -72,6 +76,11 @@ trait ValidatorJSType extends StObject {
     */
   def escape(input: String): String = js.native
   
+  /* was `typeof _isIBAN.locales` */
+  val ibanLocales: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ Any
+  ] = js.native
+  
   /**
     * Check if the string is a date that's after the specified date.
     *
@@ -84,9 +93,12 @@ trait ValidatorJSType extends StObject {
     * Check if the string contains only letters (a-zA-Z).
     *
     * @param [locale] - AlphaLocale
+    * @param [options] - IsAlphaOptions
     */
   def isAlpha(str: String): Boolean = js.native
+  def isAlpha(str: String, locale: Unit, options: IsAlphaOptions): Boolean = js.native
   def isAlpha(str: String, locale: AlphaLocale): Boolean = js.native
+  def isAlpha(str: String, locale: AlphaLocale, options: IsAlphaOptions): Boolean = js.native
   
   val isAlphaLocales: js.Array[AlphaLocale] = js.native
   
@@ -94,9 +106,12 @@ trait ValidatorJSType extends StObject {
     * Check if the string contains only letters and numbers.
     *
     * @param [locale] - AlphanumericLocale
+    * @param [options] - IsAlphanumericOptions
     */
   def isAlphanumeric(str: String): Boolean = js.native
+  def isAlphanumeric(str: String, locale: Unit, options: IsAlphanumericOptions): Boolean = js.native
   def isAlphanumeric(str: String, locale: AlphanumericLocale): Boolean = js.native
+  def isAlphanumeric(str: String, locale: AlphanumericLocale, options: IsAlphanumericOptions): Boolean = js.native
   
   val isAlphanumericLocales: js.Array[AlphanumericLocale] = js.native
   
@@ -116,9 +131,17 @@ trait ValidatorJSType extends StObject {
   def isBase32(str: String): Boolean = js.native
   
   /**
+    * check if a string is base58 encoded
+    */
+  def isBase58(str: String): Boolean = js.native
+  
+  /**
     * Check if a string is base64 encoded.
+    *
+    * @param [options] - Options
     */
   def isBase64(str: String): Boolean = js.native
+  def isBase64(str: String, options: IsBase64Options): Boolean = js.native
   
   /**
     * Check if the string is a date that's before the specified date.
@@ -128,10 +151,9 @@ trait ValidatorJSType extends StObject {
   def isBefore(str: String): Boolean = js.native
   def isBefore(str: String, date: String): Boolean = js.native
   
-  /**
-    * check if a string is a boolean.
-    */
+  /* was `typeof _isBoolean.default` */
   def isBoolean(str: String): Boolean = js.native
+  def isBoolean(str: String, options: typings.validator.isBooleanMod.Options): Boolean = js.native
   
   /**
     * Check if the string is a valid BTC address.
@@ -165,6 +187,12 @@ trait ValidatorJSType extends StObject {
   def isDataURI(str: String): Boolean = js.native
   
   /**
+    * Check if the string is a valid date.
+    */
+  def isDate(str: String): Boolean = js.native
+  def isDate(str: String, options: IsDateOptions): Boolean = js.native
+  
+  /**
     * Check if the string represents a decimal number,
     * such as `0.1`, `.3`, `1.1`, `1.00003`, `4.0` etc.
     *
@@ -185,11 +213,7 @@ trait ValidatorJSType extends StObject {
     */
   def isEAN(str: String): Boolean = js.native
   
-  /**
-    * Check if the string is an email.
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isEmail.default` */
   def isEmail(str: String): Boolean = js.native
   def isEmail(str: String, options: IsEmailOptions): Boolean = js.native
   
@@ -206,11 +230,7 @@ trait ValidatorJSType extends StObject {
     */
   def isEthereumAddress(str: String): Boolean = js.native
   
-  /**
-    * Check if the string is a fully qualified domain name (e.g. `domain.com`).
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isFQDN.default` */
   def isFQDN(str: String): Boolean = js.native
   def isFQDN(str: String, options: IsFQDNOptions): Boolean = js.native
   
@@ -257,9 +277,7 @@ trait ValidatorJSType extends StObject {
     */
   def isHexadecimal(str: String): Boolean = js.native
   
-  /**
-    * Check if a string is a IBAN (International Bank Account Number).
-    */
+  /* was `typeof _isIBAN.default` */
   def isIBAN(str: String): Boolean = js.native
   
   /**
@@ -271,9 +289,10 @@ trait ValidatorJSType extends StObject {
   def isIP(str: String, version: IPVersion): Boolean = js.native
   
   /**
-    * Check if the string is an IP Range (version 4 only).
+    * Check if the string is an IP Range (version 4 or 6).
     */
   def isIPRange(str: String): Boolean = js.native
+  def isIPRange(str: String, version: IPVersion): Boolean = js.native
   
   /**
     * Check if the string is an ISBN (version 10 or 13).
@@ -297,6 +316,9 @@ trait ValidatorJSType extends StObject {
     * Check if the string is a valid [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) officially assigned country code.
     */
   def isISO31661Alpha3(str: String): Boolean = js.native
+  
+  /* was `typeof _isISO4217.default` */
+  def isISO4217(str: String): Boolean = js.native
   
   /**
     * Check if the string is a valid [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date.
@@ -334,7 +356,7 @@ trait ValidatorJSType extends StObject {
     *
     * @param values - Allowed values.
     */
-  def isIn(str: String, values: js.Array[js.Any]): Boolean = js.native
+  def isIn(str: String, values: js.Array[Any]): Boolean = js.native
   
   /**
     * Check if the string is an integer.
@@ -460,15 +482,15 @@ trait ValidatorJSType extends StObject {
     */
   def isPort(str: String): Boolean = js.native
   
-  def isPostalCode(str: String, locale: PostalCodeLocale): Boolean = js.native
-  
-  val isPostalCodeLocales: js.Array[PostalCodeLocale] = js.native
-  
   /**
     * Check if the string is a postal code
     *
     * @param locale - PostalCodeLocale
     */
+  def isPostalCode(str: String, locale: PostalCodeLocale): Boolean = js.native
+  
+  val isPostalCodeLocales: js.Array[PostalCodeLocale] = js.native
+  
   @JSName("isPostalCode")
   def isPostalCode_any(str: String, locale: any): Boolean = js.native
   
@@ -495,16 +517,22 @@ trait ValidatorJSType extends StObject {
     */
   def isSlug(str: String): Boolean = js.native
   
+  def isStrongPassword(str: String): Double = js.native
+  def isStrongPassword(str: String, options: strongPasswordOptionsretu): Boolean = js.native
+  def isStrongPassword(str: String, options: strongPasswordOptionsretuMinLength): Double = js.native
+  @JSName("isStrongPassword")
+  def isStrongPassword_Boolean(str: String): Boolean = js.native
+  
   /**
     * Check if the string contains any surrogate pairs chars.
     */
   def isSurrogatePair(str: String): Boolean = js.native
   
-  /**
-    * Check if the string is an URL.
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isTaxID.default` */
+  def isTaxID(str: String): Boolean = js.native
+  def isTaxID(str: String, locale: String): Boolean = js.native
+  
+  /* was `typeof _isURL.default` */
   def isURL(str: String): Boolean = js.native
   def isURL(str: String, options: IsURLOptions): Boolean = js.native
   
@@ -520,6 +548,11 @@ trait ValidatorJSType extends StObject {
     * Check if the string is uppercase.
     */
   def isUppercase(str: String): Boolean = js.native
+  
+  /**
+    * Checks that the string is a [valid VAT number
+    */
+  def isVAT(str: String, countryCode: String): Boolean = js.native
   
   /**
     * Check if the string contains a mixture of full and half-width chars.
@@ -555,7 +588,7 @@ trait ValidatorJSType extends StObject {
     *
     * @param pattern - `/foo/i`
     */
-  def matches(str: String, pattern: RegExp): Boolean = js.native
+  def matches(str: String, pattern: js.RegExp): Boolean = js.native
   
   /**
     * Canonicalizes an email address. (This doesn't validate that the input is an email, if you want to validate the email use `isEmail` beforehand)
@@ -594,7 +627,7 @@ trait ValidatorJSType extends StObject {
   /**
     * Convert the input string to a `Date`, or `null` if the input is not a date.
     */
-  def toDate(input: String): Date | Null = js.native
+  def toDate(input: String): js.Date | Null = js.native
   
   /**
     * Convert the input string to a float, or `NaN` if the input is not a float.
@@ -612,7 +645,7 @@ trait ValidatorJSType extends StObject {
   /**
     * Converts to string.
     */
-  def toString(input: js.Any): String = js.native
+  def toString(input: Any): String = js.native
   
   /**
     * Trim characters from both sides of the input.

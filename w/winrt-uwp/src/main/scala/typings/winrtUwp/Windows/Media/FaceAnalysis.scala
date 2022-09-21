@@ -40,14 +40,14 @@ object FaceAnalysis {
       * @param image The image data to be processed for face detection.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def detectFacesAsync(image: SoftwareBitmap): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
+    def detectFacesAsync(image: SoftwareBitmap): IPromiseWithIAsyncOperation[IVector[Any]] = js.native
     /**
       * Asynchronously detects faces in the provided SoftwareBitmap within the specified search area.
       * @param image The image data to be processed for face detection.
       * @param searchArea The bounds within the SoftwareBitmap in which face detection will be performed.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def detectFacesAsync(image: SoftwareBitmap, searchArea: BitmapBounds): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
+    def detectFacesAsync(image: SoftwareBitmap, searchArea: BitmapBounds): IPromiseWithIAsyncOperation[IVector[Any]] = js.native
     
     /** Gets or sets the maximum detectable face size, in pixels. */
     var maxDetectableFaceSize: BitmapSize = js.native
@@ -70,14 +70,14 @@ object FaceAnalysis {
       * @param videoFrame The VideoFrame in which faces are detected or tracked.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def processNextFrameAsync(videoFrame: VideoFrame): IPromiseWithIAsyncOperation[IVector[js.Any]]
+    def processNextFrameAsync(videoFrame: VideoFrame): IPromiseWithIAsyncOperation[IVector[Any]]
   }
   object FaceTracker {
     
     inline def apply(
       maxDetectableFaceSize: BitmapSize,
       minDetectableFaceSize: BitmapSize,
-      processNextFrameAsync: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]
+      processNextFrameAsync: VideoFrame => IPromiseWithIAsyncOperation[IVector[Any]]
     ): FaceTracker = {
       val __obj = js.Dynamic.literal(maxDetectableFaceSize = maxDetectableFaceSize.asInstanceOf[js.Any], minDetectableFaceSize = minDetectableFaceSize.asInstanceOf[js.Any], processNextFrameAsync = js.Any.fromFunction1(processNextFrameAsync))
       __obj.asInstanceOf[FaceTracker]
@@ -89,7 +89,7 @@ object FaceAnalysis {
       
       inline def setMinDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "minDetectableFaceSize", value.asInstanceOf[js.Any])
       
-      inline def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
+      inline def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[Any]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
     }
   }
 }

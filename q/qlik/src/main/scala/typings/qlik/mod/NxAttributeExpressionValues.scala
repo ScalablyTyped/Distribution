@@ -19,6 +19,6 @@ object NxAttributeExpressionValues {
     
     inline def setQValues(value: js.Array[NxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: NxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: NxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

@@ -1,31 +1,22 @@
 package typings.ariaQuery.mod
 
+import typings.ariaQuery.ariaQueryStrings.code
+import typings.ariaQuery.mod.^
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def aria: typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("aria").asInstanceOf[typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition]]
+inline def aria: MapLike[ARIAProperty, ARIAPropertyDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("aria").asInstanceOf[MapLike[ARIAProperty, ARIAPropertyDefinition]]
 
-inline def dom: typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition]]
+inline def dom: MapLike[String, DOMDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[MapLike[String, DOMDefinition]]
 
-inline def elementRoles: typings.std.Map[
-typings.ariaQuery.mod.ARIARoleRelationConcept, 
-typings.std.Set[typings.ariaQuery.mod.ARIARoleDefintionKey]] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("elementRoles").asInstanceOf[typings.std.Map[
-typings.ariaQuery.mod.ARIARoleRelationConcept, 
-typings.std.Set[typings.ariaQuery.mod.ARIARoleDefintionKey]]]
+inline def elementRoles: MapLike[ARIARoleRelationConcept, Set[ARIARoleDefintionKey]] = ^.asInstanceOf[js.Dynamic].selectDynamic("elementRoles").asInstanceOf[MapLike[ARIARoleRelationConcept, Set[ARIARoleDefintionKey]]]
 
-inline def roleElements: typings.std.Map[
-typings.ariaQuery.mod.ARIARoleDefintionKey, 
-typings.std.Set[typings.ariaQuery.mod.ARIARoleRelationConcept]] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("roleElements").asInstanceOf[typings.std.Map[
-typings.ariaQuery.mod.ARIARoleDefintionKey, 
-typings.std.Set[typings.ariaQuery.mod.ARIARoleRelationConcept]]]
+inline def roleElements: MapLike[ARIARoleDefintionKey, Set[ARIARoleRelationConcept]] = ^.asInstanceOf[js.Dynamic].selectDynamic("roleElements").asInstanceOf[MapLike[ARIARoleDefintionKey, Set[ARIARoleRelationConcept]]]
 
-inline def roles: typings.std.Map[
-typings.ariaQuery.mod.ARIARoleDefintionKey, 
-typings.ariaQuery.mod.ARIARoleDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("roles").asInstanceOf[typings.std.Map[
-typings.ariaQuery.mod.ARIARoleDefintionKey, 
-typings.ariaQuery.mod.ARIARoleDefinition]]
+inline def roles: MapLike[ARIARoleDefintionKey, ARIARoleDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("roles").asInstanceOf[MapLike[ARIARoleDefintionKey, ARIARoleDefinition]]
 
 /* Rewritten from type alias, can be one of: 
   - typings.ariaQuery.mod.ARIAWidgetRole
@@ -36,13 +27,13 @@ typings.ariaQuery.mod.ARIARoleDefinition]]
   - typings.ariaQuery.mod.ARIAWindowRole
   - typings.ariaQuery.mod.ARIAUncategorizedRole
 */
-type ARIARole = typings.ariaQuery.mod._ARIARole | typings.ariaQuery.mod.ARIAUncategorizedRole
+type ARIARole = _ARIARole | ARIAUncategorizedRole
 
 /* Rewritten from type alias, can be one of: 
   - typings.ariaQuery.mod.ARIAAbstractRole
   - typings.ariaQuery.mod.ARIARole
   - typings.ariaQuery.mod.ARIADPubRole
 */
-type ARIARoleDefintionKey = typings.ariaQuery.mod._ARIARoleDefintionKey | typings.ariaQuery.mod.ARIAUncategorizedRole
+type ARIARoleDefintionKey = _ARIARoleDefintionKey | ARIAUncategorizedRole
 
-type ARIAUncategorizedRole = typings.ariaQuery.ariaQueryStrings.code
+type ARIAUncategorizedRole = code

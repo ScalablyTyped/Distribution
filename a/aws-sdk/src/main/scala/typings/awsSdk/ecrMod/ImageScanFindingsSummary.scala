@@ -14,12 +14,12 @@ trait ImageScanFindingsSummary extends StObject {
   /**
     * The time of the last completed image scan.
     */
-  var imageScanCompletedAt: js.UndefOr[ScanTimestamp] = js.undefined
+  var imageScanCompletedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time when the vulnerability data was last scanned.
     */
-  var vulnerabilitySourceUpdatedAt: js.UndefOr[VulnerabilitySourceUpdateTimestamp] = js.undefined
+  var vulnerabilitySourceUpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object ImageScanFindingsSummary {
   
@@ -34,11 +34,11 @@ object ImageScanFindingsSummary {
     
     inline def setFindingSeverityCountsUndefined: Self = StObject.set(x, "findingSeverityCounts", js.undefined)
     
-    inline def setImageScanCompletedAt(value: ScanTimestamp): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
+    inline def setImageScanCompletedAt(value: js.Date): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
     
     inline def setImageScanCompletedAtUndefined: Self = StObject.set(x, "imageScanCompletedAt", js.undefined)
     
-    inline def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setVulnerabilitySourceUpdatedAt(value: js.Date): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setVulnerabilitySourceUpdatedAtUndefined: Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", js.undefined)
   }

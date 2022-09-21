@@ -12,7 +12,7 @@ trait ExponentialRolloutRate extends StObject {
   var baseRatePerMinute: RolloutRatePerMinute
   
   /**
-    * The exponential factor to increase the rate of rollout for a job. AWS IoT supports up to one digit after the decimal (for example, 1.5, but not 1.55).
+    * The exponential factor to increase the rate of rollout for a job. Amazon Web Services IoT Core supports up to one digit after the decimal (for example, 1.5, but not 1.55).
     */
   var incrementFactor: IncrementFactor
   

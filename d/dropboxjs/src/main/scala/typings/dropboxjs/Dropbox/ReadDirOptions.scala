@@ -12,7 +12,7 @@ trait ReadDirOptions extends StObject {
   
   var httpCache: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[js.Any] = js.undefined
+  var limit: js.UndefOr[Any] = js.undefined
   
   var removed: js.UndefOr[Boolean] = js.undefined
   
@@ -39,7 +39,7 @@ object ReadDirOptions {
     
     inline def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
     
-    inline def setLimit(value: js.Any): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Any): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     

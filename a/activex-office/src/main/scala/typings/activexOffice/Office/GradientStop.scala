@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GradientStop extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Color: ColorFormat
   
@@ -22,7 +22,7 @@ trait GradientStop extends StObject {
 object GradientStop {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Color: ColorFormat,
     Creator: Double,
     OfficeDotGradientStop_typekey: GradientStop,
@@ -36,7 +36,7 @@ object GradientStop {
   
   extension [Self <: GradientStop](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setColor(value: ColorFormat): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

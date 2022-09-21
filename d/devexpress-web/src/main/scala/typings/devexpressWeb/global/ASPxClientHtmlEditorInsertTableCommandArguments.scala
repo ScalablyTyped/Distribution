@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorInsertTableCommandArguments")
 @js.native
-class ASPxClientHtmlEditorInsertTableCommandArguments protected ()
+open class ASPxClientHtmlEditorInsertTableCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorInsertTableCommandArguments {
   /**
@@ -17,7 +17,7 @@ class ASPxClientHtmlEditorInsertTableCommandArguments protected ()
     * @param htmlEditor The HTML editor executing a command.
     * @param elementToReplace The element that will be replaced by the inserted table element.
     */
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, elementToReplace: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, elementToReplace: Any) = this()
   
   /**
     * Determines the position of the target table element.
@@ -71,7 +71,7 @@ class ASPxClientHtmlEditorInsertTableCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Contains the style settings defining the appearance of the target table element.

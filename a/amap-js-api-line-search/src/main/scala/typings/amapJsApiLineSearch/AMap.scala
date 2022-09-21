@@ -226,7 +226,7 @@ object AMap {
         
         inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
         
         inline def setStart_stop(value: String): Self = StObject.set(x, "start_stop", value.asInstanceOf[js.Any])
         
@@ -322,7 +322,7 @@ object AMap {
         
         inline def setVia_stops(value: js.Array[BusStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
         
-        inline def setVia_stopsVarargs(value: BusStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+        inline def setVia_stopsVarargs(value: BusStop*): Self = StObject.set(x, "via_stops", js.Array(value*))
       }
     }
     
@@ -386,7 +386,7 @@ object AMap {
       /**
         * 查该城市无此公交站时，返回的建议城市列表
         */
-      var cityList: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var cityList: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * 成功状态文字描述
@@ -396,7 +396,7 @@ object AMap {
       /**
         * 查无此公交站时，返回的建议关键字列表
         */
-      var keywordList: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var keywordList: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * 根据查询条件返回公交路线信息
@@ -412,23 +412,23 @@ object AMap {
       
       extension [Self <: SearchResult](x: Self) {
         
-        inline def setCityList(value: js.Array[js.Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
+        inline def setCityList(value: js.Array[Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
         
         inline def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
         
-        inline def setCityListVarargs(value: js.Any*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+        inline def setCityListVarargs(value: Any*): Self = StObject.set(x, "cityList", js.Array(value*))
         
         inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        inline def setKeywordList(value: js.Array[js.Any]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
+        inline def setKeywordList(value: js.Array[Any]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
         
         inline def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
         
-        inline def setKeywordListVarargs(value: js.Any*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+        inline def setKeywordListVarargs(value: Any*): Self = StObject.set(x, "keywordList", js.Array(value*))
         
         inline def setLineInfo(value: js.Array[LineInfo]): Self = StObject.set(x, "lineInfo", value.asInstanceOf[js.Any])
         
-        inline def setLineInfoVarargs(value: LineInfo*): Self = StObject.set(x, "lineInfo", js.Array(value :_*))
+        inline def setLineInfoVarargs(value: LineInfo*): Self = StObject.set(x, "lineInfo", js.Array(value*))
       }
     }
     

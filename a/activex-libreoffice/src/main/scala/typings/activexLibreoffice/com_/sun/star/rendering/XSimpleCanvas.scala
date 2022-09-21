@@ -208,7 +208,7 @@ object XSimpleCanvas {
     getCurrentViewState: () => ViewState,
     getDevice: () => XGraphicDevice,
     getFontMetrics: () => FontMetrics,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectFont: (String, Double, Boolean, Boolean) => Unit,
     setFillColor: typings.activexLibreoffice.com_.sun.star.util.Color => Unit,

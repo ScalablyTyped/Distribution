@@ -11,6 +11,7 @@ trait GetResource extends StObject {
   def action(action: String): GetResourceAction = js.native
   
   def id(value: String): GetResource = js.native
+  def id(value: Double): GetResource = js.native
   
   def request(): js.Promise[GetResponse] = js.native
   def request(params: GetParams): js.Promise[GetResponse] = js.native

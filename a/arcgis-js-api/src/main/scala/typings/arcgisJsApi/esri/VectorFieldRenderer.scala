@@ -14,7 +14,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`ocean-current-m`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-scalar`
 import typings.arcgisJsApi.arcgisJsApiStrings.`single-arrow`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-field`
-import typings.arcgisJsApi.arcgisJsApiStrings.`wind-speed`
+import typings.arcgisJsApi.arcgisJsApiStrings.`wind-barb`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +35,8 @@ trait VectorFieldRenderer
   /**
     * Defines the flow direction of the data.
     *
+    * @default "flow-from"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
     */
   var flowRepresentation: `flow-from` | `flow-to` = js.native
@@ -42,12 +44,16 @@ trait VectorFieldRenderer
   /**
     * Predefined symbol styles used to represent the vector flow.
     *
+    * @default "single-arrow"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
     */
-  var style: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-speed` = js.native
+  var style: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb` = js.native
   
   /**
     * Determines the density of the symbols.
+    *
+    * @default 50
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
     */

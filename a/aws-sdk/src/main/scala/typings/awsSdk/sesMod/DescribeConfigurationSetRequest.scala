@@ -29,7 +29,7 @@ object DescribeConfigurationSetRequest {
     
     inline def setConfigurationSetAttributeNamesUndefined: Self = StObject.set(x, "ConfigurationSetAttributeNames", js.undefined)
     
-    inline def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = StObject.set(x, "ConfigurationSetAttributeNames", js.Array(value :_*))
+    inline def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = StObject.set(x, "ConfigurationSetAttributeNames", js.Array(value*))
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }

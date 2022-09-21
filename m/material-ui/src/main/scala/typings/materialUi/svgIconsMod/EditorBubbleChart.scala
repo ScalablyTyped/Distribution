@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "EditorBubbleChart")
 @js.native
-class EditorBubbleChart ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class EditorBubbleChart ()
+  extends Component[SvgIconProps, js.Object, Any]

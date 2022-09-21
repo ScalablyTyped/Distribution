@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "SubjectObserver")
 @js.native
-class SubjectObserver ()
+open class SubjectObserver ()
   extends typings.wonderFrp.subjectObserverMod.SubjectObserver

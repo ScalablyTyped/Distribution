@@ -2,7 +2,6 @@ package typings.death
 
 import typings.death.anon.Debug
 import typings.death.anon.SIGINT
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,10 +49,10 @@ object mod {
     *  OFF_DEATH();
     */
   inline def apply(options: Debug): js.Function1[
-    /* callback */ js.Function2[/* signalOrErr */ Signal | Error, /* origin */ js.UndefOr[String], Unit], 
+    /* callback */ js.Function2[/* signalOrErr */ Signal | js.Error, /* origin */ js.UndefOr[String], Unit], 
     js.Function0[Unit]
   ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* callback */ js.Function2[/* signalOrErr */ Signal | Error, /* origin */ js.UndefOr[String], Unit], 
+    /* callback */ js.Function2[/* signalOrErr */ Signal | js.Error, /* origin */ js.UndefOr[String], Unit], 
     js.Function0[Unit]
   ]]
   /**

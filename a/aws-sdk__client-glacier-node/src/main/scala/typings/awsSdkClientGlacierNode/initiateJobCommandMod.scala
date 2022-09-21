@@ -16,7 +16,7 @@ object initiateJobCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/InitiateJobCommand", "InitiateJobCommand")
   @js.native
-  class InitiateJobCommand protected ()
+  open class InitiateJobCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object initiateJobCommandMod {
     override val middlewareStack: MiddlewareStack[InitiateJobInput, InitiateJobOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[InitiateJobInput, InitiateJobOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[InitiateJobInput, InitiateJobOutput] = js.native
   }
 }

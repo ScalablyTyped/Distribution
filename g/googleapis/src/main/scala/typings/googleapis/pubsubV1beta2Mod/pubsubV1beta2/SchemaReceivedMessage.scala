@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A message and its corresponding acknowledgment ID.
-  */
 trait SchemaReceivedMessage extends StObject {
   
   /**
     * This ID can be used to acknowledge the received message.
     */
-  var ackId: js.UndefOr[String] = js.undefined
+  var ackId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The message.
@@ -29,6 +26,8 @@ object SchemaReceivedMessage {
   extension [Self <: SchemaReceivedMessage](x: Self) {
     
     inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    
+    inline def setAckIdNull: Self = StObject.set(x, "ackId", null)
     
     inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     

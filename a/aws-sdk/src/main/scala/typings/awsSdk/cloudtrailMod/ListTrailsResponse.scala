@@ -33,6 +33,6 @@ object ListTrailsResponse {
     
     inline def setTrailsUndefined: Self = StObject.set(x, "Trails", js.undefined)
     
-    inline def setTrailsVarargs(value: TrailInfo*): Self = StObject.set(x, "Trails", js.Array(value :_*))
+    inline def setTrailsVarargs(value: TrailInfo*): Self = StObject.set(x, "Trails", js.Array(value*))
   }
 }

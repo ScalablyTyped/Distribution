@@ -130,7 +130,7 @@ object global {
     
     @js.native
     trait ElementClass
-      extends typings.react.mod.Component[js.Any, js.Object, js.Any]
+      extends typings.react.mod.Component[Any, js.Object, Any]
     
     type IntrinsicAttributes = typings.react.mod.Attributes
     
@@ -1285,6 +1285,6 @@ object global {
     
     // We can't recurse forever because `type` can't be self-referential;
     // let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa
-    type LibraryManagedAttributes[C, P] = ReactManagedAttributes[js.Any | C, P]
+    type LibraryManagedAttributes[C, P] = ReactManagedAttributes[Any | C, P]
   }
 }

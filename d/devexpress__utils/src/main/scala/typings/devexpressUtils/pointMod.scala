@@ -14,7 +14,7 @@ object pointMod {
   
   @JSImport("@devexpress/utils/lib/geometry/point", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with IPoint
        with ICloneable[Point]

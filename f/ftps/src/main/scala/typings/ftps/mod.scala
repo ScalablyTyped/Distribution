@@ -1,6 +1,5 @@
 package typings.ftps
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("ftps", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with FTP {
     def this(options: FTPOptions) = this()
@@ -27,15 +26,15 @@ object mod {
     // Helpers
     def escapeshell(cmd: String): String = js.native
     
-    def exec(cmdsOrCallback: String): js.Any = js.native
-    def exec(cmdsOrCallback: String, callback: FTPCallbackFunction): js.Any = js.native
-    def exec(cmdsOrCallback: js.Array[String]): js.Any = js.native
-    def exec(cmdsOrCallback: js.Array[String], callback: FTPCallbackFunction): js.Any = js.native
-    def exec(cmdsOrCallback: FTPCallbackFunction): js.Any = js.native
-    def exec(cmdsOrCallback: FTPCallbackFunction, callback: FTPCallbackFunction): js.Any = js.native
+    def exec(cmdsOrCallback: String): Any = js.native
+    def exec(cmdsOrCallback: String, callback: FTPCallbackFunction): Any = js.native
+    def exec(cmdsOrCallback: js.Array[String]): Any = js.native
+    def exec(cmdsOrCallback: js.Array[String], callback: FTPCallbackFunction): Any = js.native
+    def exec(cmdsOrCallback: FTPCallbackFunction): Any = js.native
+    def exec(cmdsOrCallback: FTPCallbackFunction, callback: FTPCallbackFunction): Any = js.native
     
-    def execAsStream(cmds: String): js.Any = js.native
-    def execAsStream(cmds: js.Array[String]): js.Any = js.native
+    def execAsStream(cmds: String): Any = js.native
+    def execAsStream(cmds: js.Array[String]): Any = js.native
     
     def get(remotePath: String, localPath: String): FTP = js.native
     
@@ -62,7 +61,7 @@ object mod {
     def rmdir(paths: String*): FTP = js.native
   }
   
-  type FTPCallbackFunction = js.Function2[/* err */ Error | Null, /* results */ FTPResults, js.Any]
+  type FTPCallbackFunction = js.Function2[/* err */ js.Error | Null, /* results */ FTPResults, Any]
   
   trait FTPOptions extends StObject {
     
@@ -92,7 +91,7 @@ object mod {
     
     var retryIntervalMultiplier: js.UndefOr[Double] = js.undefined
     
-    var sshKeyPath: js.UndefOr[Boolean] = js.undefined
+    var sshKeyPath: js.UndefOr[String] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
     
@@ -157,7 +156,7 @@ object mod {
       
       inline def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
       
-      inline def setSshKeyPath(value: Boolean): Self = StObject.set(x, "sshKeyPath", value.asInstanceOf[js.Any])
+      inline def setSshKeyPath(value: String): Self = StObject.set(x, "sshKeyPath", value.asInstanceOf[js.Any])
       
       inline def setSshKeyPathUndefined: Self = StObject.set(x, "sshKeyPath", js.undefined)
       
@@ -175,7 +174,7 @@ object mod {
     
     var data: String | Null
     
-    var error: Error | Null
+    var error: js.Error | Null
   }
   object FTPResults {
     
@@ -190,7 +189,7 @@ object mod {
       
       inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
     }
@@ -198,7 +197,7 @@ object mod {
   
   trait MirrorOptions extends StObject {
     
-    var filter: js.UndefOr[js.Any] = js.undefined
+    var filter: js.UndefOr[Any] = js.undefined
     
     var localDir: js.UndefOr[String] = js.undefined
     
@@ -219,7 +218,7 @@ object mod {
     
     extension [Self <: MirrorOptions](x: Self) {
       
-      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       

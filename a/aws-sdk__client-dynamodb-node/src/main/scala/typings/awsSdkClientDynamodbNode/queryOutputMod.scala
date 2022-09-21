@@ -8,5 +8,5 @@ object queryOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/QueryOutput", "QueryOutput")
   @js.native
-  val QueryOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val QueryOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

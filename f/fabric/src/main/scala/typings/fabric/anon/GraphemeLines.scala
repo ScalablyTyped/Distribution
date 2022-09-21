@@ -30,18 +30,18 @@ object GraphemeLines {
     
     inline def setGraphemeLines(value: js.Array[String]): Self = StObject.set(x, "graphemeLines", value.asInstanceOf[js.Any])
     
-    inline def setGraphemeLinesVarargs(value: String*): Self = StObject.set(x, "graphemeLines", js.Array(value :_*))
+    inline def setGraphemeLinesVarargs(value: String*): Self = StObject.set(x, "graphemeLines", js.Array(value*))
     
     inline def setGraphemeText(value: js.Array[String]): Self = StObject.set(x, "graphemeText", value.asInstanceOf[js.Any])
     
-    inline def setGraphemeTextVarargs(value: String*): Self = StObject.set(x, "graphemeText", js.Array(value :_*))
+    inline def setGraphemeTextVarargs(value: String*): Self = StObject.set(x, "graphemeText", js.Array(value*))
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def set_unwrappedLines(value: js.Array[String]): Self = StObject.set(x, "_unwrappedLines", value.asInstanceOf[js.Any])
     
-    inline def set_unwrappedLinesVarargs(value: String*): Self = StObject.set(x, "_unwrappedLines", js.Array(value :_*))
+    inline def set_unwrappedLinesVarargs(value: String*): Self = StObject.set(x, "_unwrappedLines", js.Array(value*))
   }
 }

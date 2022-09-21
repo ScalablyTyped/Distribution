@@ -31,7 +31,7 @@ object MSearchTemplateParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setSearch_type(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = StObject.set(x, "search_type", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object MSearchTemplateParams {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -16,13 +16,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.CreateScopeInfo")
   @js.native
-  def CreateScopeInfo: js.Any = js.native
-  inline def CreateScopeInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateScopeInfo")(x.asInstanceOf[js.Any])
+  def CreateScopeInfo: Any = js.native
+  inline def CreateScopeInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateScopeInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.FrameworkIdentityInfo")
   @js.native
-  def FrameworkIdentityInfo: js.Any = js.native
-  inline def FrameworkIdentityInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameworkIdentityInfo")(x.asInstanceOf[js.Any])
+  def FrameworkIdentityInfo: Any = js.native
+  inline def FrameworkIdentityInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameworkIdentityInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.FrameworkIdentityType")
   @js.native
@@ -36,18 +36,18 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.IdentityBatchInfo")
   @js.native
-  def IdentityBatchInfo: js.Any = js.native
-  inline def IdentityBatchInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentityBatchInfo")(x.asInstanceOf[js.Any])
+  def IdentityBatchInfo: Any = js.native
+  inline def IdentityBatchInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentityBatchInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.IdentityScope")
   @js.native
-  def IdentityScope: js.Any = js.native
-  inline def IdentityScope_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentityScope")(x.asInstanceOf[js.Any])
+  def IdentityScope: Any = js.native
+  inline def IdentityScope_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentityScope")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.IdentitySnapshot")
   @js.native
-  def IdentitySnapshot: js.Any = js.native
-  inline def IdentitySnapshot_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentitySnapshot")(x.asInstanceOf[js.Any])
+  def IdentitySnapshot: Any = js.native
+  inline def IdentitySnapshot_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdentitySnapshot")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/IdentitiesInterfaces", "TypeInfo.QueryMembership")
   @js.native

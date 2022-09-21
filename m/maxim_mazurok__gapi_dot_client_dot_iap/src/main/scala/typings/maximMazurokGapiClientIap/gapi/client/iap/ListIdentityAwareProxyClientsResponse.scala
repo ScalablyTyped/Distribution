@@ -25,7 +25,7 @@ object ListIdentityAwareProxyClientsResponse {
     
     inline def setIdentityAwareProxyClientsUndefined: Self = StObject.set(x, "identityAwareProxyClients", js.undefined)
     
-    inline def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = StObject.set(x, "identityAwareProxyClients", js.Array(value :_*))
+    inline def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = StObject.set(x, "identityAwareProxyClients", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -243,7 +243,7 @@ object CoreEvents {
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
     inline def setOnComplete(
-      value: (/* id */ Double, /* name */ String, /* responseJSON */ js.Any, /* xhr */ XMLHttpRequest) => Unit
+      value: (/* id */ Double, /* name */ String, /* responseJSON */ Any, /* xhr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -277,13 +277,13 @@ object CoreEvents {
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
     inline def setOnResume(
-      value: (/* id */ Double, /* name */ String, /* chunkData */ js.Any, /* customResumeData */ js.Any) => Unit | js.Promise[js.Any]
+      value: (/* id */ Double, /* name */ String, /* chunkData */ Any, /* customResumeData */ Any) => Unit | js.Promise[Any]
     ): Self = StObject.set(x, "onResume", js.Any.fromFunction4(value))
     
     inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
     
     inline def setOnSessionRequestComplete(
-      value: (/* response */ js.Array[js.Any], /* success */ Boolean, /* xhrOrXdr */ XMLHttpRequest) => Unit
+      value: (/* response */ js.Array[Any], /* success */ Boolean, /* xhrOrXdr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onSessionRequestComplete", js.Any.fromFunction3(value))
     
     inline def setOnSessionRequestCompleteUndefined: Self = StObject.set(x, "onSessionRequestComplete", js.undefined)
@@ -310,12 +310,10 @@ object CoreEvents {
     
     inline def setOnUpload(value: (/* id */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onUpload", js.Any.fromFunction2(value))
     
-    inline def setOnUploadChunk(
-      value: (/* id */ Double, /* name */ String, /* chunkData */ ChunkData) => Unit | js.Promise[js.Any]
-    ): Self = StObject.set(x, "onUploadChunk", js.Any.fromFunction3(value))
+    inline def setOnUploadChunk(value: (/* id */ Double, /* name */ String, /* chunkData */ ChunkData) => Unit | js.Promise[Any]): Self = StObject.set(x, "onUploadChunk", js.Any.fromFunction3(value))
     
     inline def setOnUploadChunkSuccess(
-      value: (/* id */ Double, /* chunkData */ ChunkData, /* responseJSON */ js.Any, /* xhr */ XMLHttpRequest) => Unit
+      value: (/* id */ Double, /* chunkData */ ChunkData, /* responseJSON */ Any, /* xhr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onUploadChunkSuccess", js.Any.fromFunction4(value))
     
     inline def setOnUploadChunkSuccessUndefined: Self = StObject.set(x, "onUploadChunkSuccess", js.undefined)

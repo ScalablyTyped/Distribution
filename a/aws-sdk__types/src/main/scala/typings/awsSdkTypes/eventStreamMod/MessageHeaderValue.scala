@@ -1,7 +1,5 @@
 package typings.awsSdkTypes.eventStreamMod
 
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageHeaderValue extends StObject
 object MessageHeaderValue {
   
-  inline def BinaryHeaderValue(value: Uint8Array): typings.awsSdkTypes.eventStreamMod.BinaryHeaderValue = {
+  inline def BinaryHeaderValue(value: js.typedarray.Uint8Array): typings.awsSdkTypes.eventStreamMod.BinaryHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("binary")
     __obj.asInstanceOf[typings.awsSdkTypes.eventStreamMod.BinaryHeaderValue]
@@ -62,7 +60,7 @@ object MessageHeaderValue {
     __obj.asInstanceOf[typings.awsSdkTypes.eventStreamMod.StringHeaderValue]
   }
   
-  inline def TimestampHeaderValue(value: Date): typings.awsSdkTypes.eventStreamMod.TimestampHeaderValue = {
+  inline def TimestampHeaderValue(value: js.Date): typings.awsSdkTypes.eventStreamMod.TimestampHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("timestamp")
     __obj.asInstanceOf[typings.awsSdkTypes.eventStreamMod.TimestampHeaderValue]

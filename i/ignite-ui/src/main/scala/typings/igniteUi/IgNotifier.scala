@@ -11,7 +11,7 @@ trait IgNotifier
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Allows setting the respective state CSS on the target element (used to apply border color by default)
@@ -51,7 +51,7 @@ trait IgNotifier
     * Sets the containment for the popover. Accepts a jQuery object
     *
     */
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
@@ -81,7 +81,7 @@ trait IgNotifier
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var directionPriority: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Sets the content for the popover header
@@ -238,7 +238,7 @@ object IgNotifier {
     
     inline def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
@@ -248,11 +248,11 @@ object IgNotifier {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setDirectionPriority(value: js.Array[js.Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
+    inline def setDirectionPriority(value: js.Array[Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
     
     inline def setDirectionPriorityUndefined: Self = StObject.set(x, "directionPriority", js.undefined)
     
-    inline def setDirectionPriorityVarargs(value: js.Any*): Self = StObject.set(x, "directionPriority", js.Array(value :_*))
+    inline def setDirectionPriorityVarargs(value: Any*): Self = StObject.set(x, "directionPriority", js.Array(value*))
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

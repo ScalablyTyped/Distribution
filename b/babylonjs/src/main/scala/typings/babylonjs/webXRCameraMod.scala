@@ -15,7 +15,7 @@ object webXRCameraMod {
   
   @JSImport("babylonjs/XR/webXRCamera", "WebXRCamera")
   @js.native
-  class WebXRCamera protected () extends FreeCamera {
+  open class WebXRCamera protected () extends FreeCamera {
     /**
       * Creates a new webXRCamera, this should only be set at the camera after it has been updated by the xrSessionManager
       * @param name the name of the camera
@@ -24,34 +24,34 @@ object webXRCameraMod {
       */
     def this(name: String, scene: Scene, _xrSessionManager: WebXRSessionManager) = this()
     
-    /* private */ var _firstFrame: js.Any = js.native
+    /* private */ var _firstFrame: Any = js.native
     
-    /* private */ var _referenceQuaternion: js.Any = js.native
+    /**
+      * The last XRViewerPose from the current XRFrame
+      * @hidden
+      */
+    var _lastXRViewerPose: js.UndefOr[XRViewerPose] = js.native
     
-    /* private */ var _referencedPosition: js.Any = js.native
+    /* private */ var _referenceQuaternion: Any = js.native
     
-    /* private */ var _rotate180: js.Any = js.native
+    /* private */ var _referencedPosition: Any = js.native
     
-    /* private */ var _setTrackingState: js.Any = js.native
+    /* private */ var _rotate180: Any = js.native
     
-    /* private */ var _trackingState: js.Any = js.native
+    /* private */ var _setTrackingState: Any = js.native
+    
+    /* private */ var _trackingState: Any = js.native
     
     /** @hidden */
     def _updateForDualEyeDebugging(): Unit = js.native
     
-    /* private */ var _updateFromXRSession: js.Any = js.native
+    /* private */ var _updateFromXRSession: Any = js.native
     
-    /* private */ var _updateNumberOfRigCameras: js.Any = js.native
+    /* private */ var _updateNumberOfRigCameras: Any = js.native
     
-    /* private */ var _updateReferenceSpace: js.Any = js.native
+    /* private */ var _updateReferenceSpace: Any = js.native
     
-    /* private */ var _updateReferenceSpaceOffset: js.Any = js.native
-    
-    /* private */ var _xrInvPositionCache: js.Any = js.native
-    
-    /* private */ var _xrInvQuaternionCache: js.Any = js.native
-    
-    /* private */ var _xrSessionManager: js.Any = js.native
+    /* private */ var _xrSessionManager: Any = js.native
     
     /**
       * Should position compensation execute on first frame.
@@ -95,5 +95,17 @@ object webXRCameraMod {
       * Get the current XR tracking state of the camera
       */
     def trackingState: WebXRTrackingState = js.native
+  }
+  /* static members */
+  object WebXRCamera {
+    
+    @JSImport("babylonjs/XR/webXRCamera", "WebXRCamera")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/XR/webXRCamera", "WebXRCamera._ScaleReadOnly")
+    @js.native
+    def _ScaleReadOnly: Any = js.native
+    inline def _ScaleReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ScaleReadOnly")(x.asInstanceOf[js.Any])
   }
 }

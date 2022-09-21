@@ -18,18 +18,18 @@ object observablemapMod {
   /**
     * Construct a new observable map.
     */
-  class ObservableMap[T] ()
+  open class ObservableMap[T] ()
     extends StObject
        with IObservableMap[T] {
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _itemCmp: js.Any = js.native
+    /* private */ var _itemCmp: Any = js.native
     
-    /* private */ var _map: js.Any = js.native
+    /* private */ var _map: Any = js.native
     
     /**
       * A signal emitted when the map has changed.

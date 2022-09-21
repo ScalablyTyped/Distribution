@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxDocument Class */
 @JSGlobal("FAXCOMEXLib.FaxDocument")
 @js.native
-/* private */ class FaxDocument ()
+/* private */ open class FaxDocument ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxDocument {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** Full paths to the fax document body files */
   /* CompleteClass */
-  var Bodies: js.Any = js.native
+  var Bodies: Any = js.native
   
   /** Full path to the fax document body file */
   /* CompleteClass */
@@ -115,9 +115,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** Connect to server, submit the fax document, disconnect */
   /* CompleteClass */
-  override def Submit2(bstrFaxServerName: String, pvFaxOutgoingJobIDs: js.Any): Double = js.native
+  override def Submit2(bstrFaxServerName: String, pvFaxOutgoingJobIDs: Any): Double = js.native
   
   /** Tapi connection */
   /* CompleteClass */
-  var TapiConnection: js.Any = js.native
+  var TapiConnection: Any = js.native
 }

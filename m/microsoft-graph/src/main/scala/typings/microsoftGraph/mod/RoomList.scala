@@ -11,7 +11,6 @@ trait RoomList
   // The email address of the room list.
   var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Read-only. Nullable.
   var rooms: js.UndefOr[NullableOption[js.Array[Room]]] = js.undefined
 }
 object RoomList {
@@ -35,6 +34,6 @@ object RoomList {
     
     inline def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
     
-    inline def setRoomsVarargs(value: Room*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: Room*): Self = StObject.set(x, "rooms", js.Array(value*))
   }
 }

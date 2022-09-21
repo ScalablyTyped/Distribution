@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Declaration
-     with Statement {
+     with Statement
+     with TypeScript {
   
   var body: TSModuleBlock_ | TSModuleDeclaration_
   

@@ -10,12 +10,13 @@ abstract class AnimationFactory () extends StObject {
   
   /**
     * Creates an `AnimationPlayer` instance for the reusable animation defined by
-    * the `AnimationBuilder`.`build()` method that created this factory.
-    * Attaches the new player a DOM element.
-    * @param element The DOM element to which to attach the animation.
+    * the <code>[AnimationBuilder.build](api/animations/AnimationBuilder#build)()</code>
+    * method that created this factory and attaches the new player a DOM element.
+    *
+    * @param element The DOM element to which to attach the player.
     * @param options A set of options that can include a time delay and
     * additional developer-defined parameters.
     */
-  def create(element: js.Any): AnimationPlayer = js.native
-  def create(element: js.Any, options: AnimationOptions): AnimationPlayer = js.native
+  def create(element: Any): AnimationPlayer = js.native
+  def create(element: Any, options: AnimationOptions): AnimationPlayer = js.native
 }

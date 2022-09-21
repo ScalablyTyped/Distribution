@@ -19,17 +19,17 @@ trait ResultEvent
     *
     * This can be any of the possible return types described for the {@link AddIn} service, except {@link XVolatileResult} .
     */
-  var Value: js.Any
+  var Value: Any
 }
 object ResultEvent {
   
-  inline def apply(Source: XInterface, Value: js.Any): ResultEvent = {
+  inline def apply(Source: XInterface, Value: Any): ResultEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultEvent]
   }
   
   extension [Self <: ResultEvent](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

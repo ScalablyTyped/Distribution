@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined dav.dav.Partial<dav.dav.DAVObject> */
 trait DAVObjectOptions extends StObject {
   
-  var constructor: js.UndefOr[js.Function1[/* options */ this.type, js.Any]] = js.undefined
+  var constructor: js.UndefOr[js.Function1[/* options */ this.type, Any]] = js.undefined
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ object DAVObjectOptions {
   
   extension [Self <: DAVObjectOptions](x: Self) {
     
-    inline def setConstructor(value: DAVObjectOptions => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: DAVObjectOptions => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     

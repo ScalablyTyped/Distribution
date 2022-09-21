@@ -8,11 +8,11 @@ trait ConfigStatic extends StObject {
   
   def create(): YogaConfig
   
-  def destroy(config: YogaConfig): js.Any
+  def destroy(config: YogaConfig): Any
 }
 object ConfigStatic {
   
-  inline def apply(create: () => YogaConfig, destroy: YogaConfig => js.Any): ConfigStatic = {
+  inline def apply(create: () => YogaConfig, destroy: YogaConfig => Any): ConfigStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy))
     __obj.asInstanceOf[ConfigStatic]
   }
@@ -21,6 +21,6 @@ object ConfigStatic {
     
     inline def setCreate(value: () => YogaConfig): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    inline def setDestroy(value: YogaConfig => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: YogaConfig => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
   }
 }

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaDeobfuscationFilesUploadResponse extends StObject {
   
+  /**
+    * The uploaded Deobfuscation File configuration.
+    */
   var deobfuscationFile: js.UndefOr[SchemaDeobfuscationFile] = js.undefined
 }
 object SchemaDeobfuscationFilesUploadResponse {

@@ -16,12 +16,10 @@ object blockMod {
   
   @JSImport("react-color/lib/components/block/Block", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[BlockPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[BlockPickerProps, js.Object, Any]
   
-  @js.native
-  trait BlockPicker
-    extends Component[BlockPickerProps, js.Object, js.Any]
+  type BlockPicker = Component[BlockPickerProps, js.Object, Any]
   
   trait BlockPickerProps
     extends StObject
@@ -51,7 +49,7 @@ object blockMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       

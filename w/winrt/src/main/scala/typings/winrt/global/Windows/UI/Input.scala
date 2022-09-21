@@ -34,7 +34,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.CrossSlidingEventArgs")
   @js.native
-  class CrossSlidingEventArgs ()
+  open class CrossSlidingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.CrossSlidingEventArgs {
     
@@ -72,7 +72,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.DraggingEventArgs")
   @js.native
-  class DraggingEventArgs ()
+  open class DraggingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.DraggingEventArgs {
     
@@ -102,18 +102,18 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.EdgeGesture")
   @js.native
-  class EdgeGesture ()
+  open class EdgeGesture ()
     extends StObject
        with typings.winrt.Windows.UI.Input.EdgeGesture {
     
     /* CompleteClass */
-    var oncanceled: js.Any = js.native
+    var oncanceled: Any = js.native
     
     /* CompleteClass */
-    var oncompleted: js.Any = js.native
+    var oncompleted: Any = js.native
     
     /* CompleteClass */
-    var onstarting: js.Any = js.native
+    var onstarting: Any = js.native
   }
   /* static members */
   object EdgeGesture {
@@ -127,7 +127,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.EdgeGestureEventArgs")
   @js.native
-  class EdgeGestureEventArgs ()
+  open class EdgeGestureEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.EdgeGestureEventArgs {
     
@@ -151,7 +151,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.GestureRecognizer")
   @js.native
-  class GestureRecognizer ()
+  open class GestureRecognizer ()
     extends StObject
        with typings.winrt.Windows.UI.Input.GestureRecognizer {
     
@@ -207,31 +207,31 @@ object Input {
     var mouseWheelParameters: typings.winrt.Windows.UI.Input.MouseWheelParameters = js.native
     
     /* CompleteClass */
-    var oncrosssliding: js.Any = js.native
+    var oncrosssliding: Any = js.native
     
     /* CompleteClass */
-    var ondragging: js.Any = js.native
+    var ondragging: Any = js.native
     
     /* CompleteClass */
-    var onholding: js.Any = js.native
+    var onholding: Any = js.native
     
     /* CompleteClass */
-    var onmanipulationcompleted: js.Any = js.native
+    var onmanipulationcompleted: Any = js.native
     
     /* CompleteClass */
-    var onmanipulationinertiastarting: js.Any = js.native
+    var onmanipulationinertiastarting: Any = js.native
     
     /* CompleteClass */
-    var onmanipulationstarted: js.Any = js.native
+    var onmanipulationstarted: Any = js.native
     
     /* CompleteClass */
-    var onmanipulationupdated: js.Any = js.native
+    var onmanipulationupdated: Any = js.native
     
     /* CompleteClass */
-    var onrighttapped: js.Any = js.native
+    var onrighttapped: Any = js.native
     
     /* CompleteClass */
-    var ontapped: js.Any = js.native
+    var ontapped: Any = js.native
     
     /* CompleteClass */
     var pivotCenter: Point = js.native
@@ -306,7 +306,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.HoldingEventArgs")
   @js.native
-  class HoldingEventArgs ()
+  open class HoldingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.HoldingEventArgs {
     
@@ -338,7 +338,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkDrawingAttributes")
     @js.native
-    class InkDrawingAttributes ()
+    open class InkDrawingAttributes ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkDrawingAttributes {
       
@@ -360,7 +360,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkManager")
     @js.native
-    class InkManager ()
+    open class InkManager ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkManager {
       
@@ -435,7 +435,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkRecognitionResult")
     @js.native
-    class InkRecognitionResult ()
+    open class InkRecognitionResult ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkRecognitionResult {
       
@@ -465,7 +465,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkRecognizer")
     @js.native
-    class InkRecognizer ()
+    open class InkRecognizer ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkRecognizer {
       
@@ -475,7 +475,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkRecognizerContainer")
     @js.native
-    class InkRecognizerContainer ()
+    open class InkRecognizerContainer ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkRecognizerContainer {
       
@@ -494,7 +494,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkStroke")
     @js.native
-    class InkStroke ()
+    open class InkStroke ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkStroke {
       
@@ -516,7 +516,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkStrokeBuilder")
     @js.native
-    class InkStrokeBuilder ()
+    open class InkStrokeBuilder ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkStrokeBuilder {
       
@@ -538,7 +538,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkStrokeContainer")
     @js.native
-    class InkStrokeContainer ()
+    open class InkStrokeContainer ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkStrokeContainer {
       
@@ -587,7 +587,7 @@ object Input {
     
     @JSGlobal("Windows.UI.Input.Inking.InkStrokeRenderingSegment")
     @js.native
-    class InkStrokeRenderingSegment ()
+    open class InkStrokeRenderingSegment ()
       extends StObject
          with typings.winrt.Windows.UI.Input.Inking.InkStrokeRenderingSegment {
       
@@ -628,7 +628,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.ManipulationCompletedEventArgs")
   @js.native
-  class ManipulationCompletedEventArgs ()
+  open class ManipulationCompletedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.ManipulationCompletedEventArgs {
     
@@ -647,7 +647,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.ManipulationInertiaStartingEventArgs")
   @js.native
-  class ManipulationInertiaStartingEventArgs ()
+  open class ManipulationInertiaStartingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.ManipulationInertiaStartingEventArgs {
     
@@ -669,7 +669,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.ManipulationStartedEventArgs")
   @js.native
-  class ManipulationStartedEventArgs ()
+  open class ManipulationStartedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.ManipulationStartedEventArgs {
     
@@ -685,7 +685,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.ManipulationUpdatedEventArgs")
   @js.native
-  class ManipulationUpdatedEventArgs ()
+  open class ManipulationUpdatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.ManipulationUpdatedEventArgs {
     
@@ -707,7 +707,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.MouseWheelParameters")
   @js.native
-  class MouseWheelParameters ()
+  open class MouseWheelParameters ()
     extends StObject
        with typings.winrt.Windows.UI.Input.MouseWheelParameters {
     
@@ -726,7 +726,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.PointerPoint")
   @js.native
-  class PointerPoint ()
+  open class PointerPoint ()
     extends StObject
        with typings.winrt.Windows.UI.Input.PointerPoint {
     
@@ -770,7 +770,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.PointerPointProperties")
   @js.native
-  class PointerPointProperties ()
+  open class PointerPointProperties ()
     extends StObject
        with typings.winrt.Windows.UI.Input.PointerPointProperties {
     
@@ -879,7 +879,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
   @js.native
-  class PointerVisualizationSettings ()
+  open class PointerVisualizationSettings ()
     extends StObject
        with typings.winrt.Windows.UI.Input.PointerVisualizationSettings {
     
@@ -901,7 +901,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.RightTappedEventArgs")
   @js.native
-  class RightTappedEventArgs ()
+  open class RightTappedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.RightTappedEventArgs {
     
@@ -914,7 +914,7 @@ object Input {
   
   @JSGlobal("Windows.UI.Input.TappedEventArgs")
   @js.native
-  class TappedEventArgs ()
+  open class TappedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Input.TappedEventArgs {
     

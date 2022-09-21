@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "RecordsCounter")
 @js.native
-class RecordsCounter protected () extends AbstractRecordTool {
+open class RecordsCounter protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
   
   def count(params: Params): js.Promise[Double] = js.native

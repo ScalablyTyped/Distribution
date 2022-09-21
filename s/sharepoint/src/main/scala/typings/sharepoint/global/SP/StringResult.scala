@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.StringResult")
 @js.native
-class StringResult ()
+open class StringResult ()
   extends StObject
      with typings.sharepoint.SP.StringResult {
   

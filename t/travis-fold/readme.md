@@ -10,15 +10,12 @@ Tiny Module for emitting folding syntax for Travis CI output
 | ------------------ | :-------------: |
 | Full name          | travis-fold |
 | Keywords           | travis, travis-ci, folding |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 209643 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10270.0 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/macbre/travis-fold#readme)
-- [Bugs](https://github.com/macbre/travis-fold/issues)
-- [Repository](https://github.com/macbre/travis-fold)
 - [Npm](https://www.npmjs.com/package/travis-fold)
     
 

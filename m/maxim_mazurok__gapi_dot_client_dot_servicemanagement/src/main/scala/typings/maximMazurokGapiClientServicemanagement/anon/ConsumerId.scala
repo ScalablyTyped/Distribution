@@ -31,7 +31,7 @@ trait ConsumerId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 100. */
+  /** The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 500. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** Token identifying which result to start with; returned by a previous list call. */

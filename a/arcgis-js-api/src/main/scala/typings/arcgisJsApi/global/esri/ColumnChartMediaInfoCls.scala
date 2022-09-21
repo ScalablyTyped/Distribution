@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html)
   */
-class ColumnChartMediaInfoCls ()
+open class ColumnChartMediaInfoCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ColumnChartMediaInfo {
   def this(properties: ColumnChartMediaInfoProperties) = this()
@@ -43,15 +43,17 @@ class ColumnChartMediaInfoCls ()
   var title: String = js.native
   
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
   
   /**
     * Indicates the type of chart.
+    *
+    * @default column-chart
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html#type)
     */

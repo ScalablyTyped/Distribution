@@ -2,7 +2,6 @@ package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait BreadcrumbMap extends StObject {
   
   var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
+  var location: js.UndefOr[Location | Pathname] = js.undefined
 }
 object BreadcrumbMap {
   
@@ -27,7 +26,7 @@ object BreadcrumbMap {
     
     inline def setBreadcrumbMapUndefined: Self = StObject.set(x, "breadcrumbMap", js.undefined)
     
-    inline def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }

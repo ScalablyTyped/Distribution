@@ -19,15 +19,14 @@ object tabsBaseMod {
   
   @JSImport("rmc-tabs/lib/Tabs.base", "StateType")
   @js.native
-  class StateType () extends StObject {
+  open class StateType () extends StObject {
     
     var currentTab: Double = js.native
   }
   
   @JSImport("rmc-tabs/lib/Tabs.base", "Tabs")
   @js.native
-  abstract class Tabs[P /* <: PropsType */, S /* <: StateType */] protected ()
-    extends PureComponent[P, S, js.Any] {
+  abstract class Tabs[P /* <: PropsType */, S /* <: StateType */] protected () extends PureComponent[P, S, Any] {
     def this(props: P) = this()
     
     @JSName("componentDidMount")
@@ -50,28 +49,28 @@ object tabsBaseMod {
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]]
-    ): js.Any = js.native
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[Any]]
+    ): Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[Any]],
       defaultPrefix: String
-    ): js.Any = js.native
+    ): Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[Any]],
       defaultPrefix: String,
       allPrefix: String
-    ): js.Any = js.native
+    ): Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[Any]],
       defaultPrefix: Unit,
       allPrefix: String
-    ): js.Any = js.native
+    ): Any = js.native
     
     def getSubElements(): js.Function2[
         /* defaultPrefix */ js.UndefOr[String], 
@@ -85,27 +84,24 @@ object tabsBaseMod {
     
     def goToTab(index: Double): Boolean = js.native
     def goToTab(index: Double, force: Boolean): Boolean = js.native
-    def goToTab(index: Double, force: Boolean, newState: js.Any): Boolean = js.native
-    def goToTab(index: Double, force: Boolean, newState: js.Any, props: P): Boolean = js.native
+    def goToTab(index: Double, force: Boolean, newState: Any): Boolean = js.native
+    def goToTab(index: Double, force: Boolean, newState: Any, props: P): Boolean = js.native
     def goToTab(index: Double, force: Boolean, newState: Unit, props: P): Boolean = js.native
-    def goToTab(index: Double, force: Unit, newState: js.Any): Boolean = js.native
-    def goToTab(index: Double, force: Unit, newState: js.Any, props: P): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: Any): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: Any, props: P): Boolean = js.native
     def goToTab(index: Double, force: Unit, newState: Unit, props: P): Boolean = js.native
     
     /* protected */ var instanceId: Double = js.native
     
     def isTabVertical(): Boolean = js.native
-    @JSName("isTabVertical")
-    def isTabVertical_horizontal(direction: horizontal): Boolean = js.native
-    @JSName("isTabVertical")
-    def isTabVertical_vertical(direction: vertical): Boolean = js.native
+    def isTabVertical(direction: horizontal | vertical): Boolean = js.native
     
     /** compatible for different between react and preact in `setState`. */
-    /* private */ var nextCurrentTab: js.Any = js.native
+    /* private */ var nextCurrentTab: Any = js.native
     
     /* protected */ var prevCurrentTab: Double = js.native
     
-    def renderTabBar(tabBarProps: js.Any, DefaultTabBar: ComponentClass[js.Object, ComponentState]): js.UndefOr[js.Object | Null] = js.native
+    def renderTabBar(tabBarProps: Any, DefaultTabBar: ComponentClass[js.Object, ComponentState]): js.UndefOr[js.Object | Null] = js.native
     
     def shouldRenderTab(idx: Double): Boolean = js.native
     

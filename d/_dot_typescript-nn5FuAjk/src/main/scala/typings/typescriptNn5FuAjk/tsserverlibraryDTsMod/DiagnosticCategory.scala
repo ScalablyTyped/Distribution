@@ -1,0 +1,39 @@
+package typings.typescriptNn5FuAjk.tsserverlibraryDTsMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+sealed trait DiagnosticCategory extends StObject
+@JSImport(".typescript-nn5FuAjk/lib/tsserverlibrary.d.ts", "DiagnosticCategory")
+@js.native
+object DiagnosticCategory extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[DiagnosticCategory & Double] = js.native
+  
+  @js.native
+  sealed trait Error
+    extends StObject
+       with DiagnosticCategory
+  /* 1 */ val Error: typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.DiagnosticCategory.Error & Double = js.native
+  
+  @js.native
+  sealed trait Message
+    extends StObject
+       with DiagnosticCategory
+  /* 3 */ val Message: typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.DiagnosticCategory.Message & Double = js.native
+  
+  @js.native
+  sealed trait Suggestion
+    extends StObject
+       with DiagnosticCategory
+  /* 2 */ val Suggestion: typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.DiagnosticCategory.Suggestion & Double = js.native
+  
+  @js.native
+  sealed trait Warning
+    extends StObject
+       with DiagnosticCategory
+  /* 0 */ val Warning: typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.DiagnosticCategory.Warning & Double = js.native
+}

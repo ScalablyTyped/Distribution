@@ -39,11 +39,11 @@ trait ExternalReference extends StObject {
     * @see com.sun.star.sheet.SingleReference
     * @see com.sun.star.sheet.ComplexReference
     */
-  var Reference: js.Any
+  var Reference: Any
 }
 object ExternalReference {
   
-  inline def apply(Index: Double, Reference: js.Any): ExternalReference = {
+  inline def apply(Index: Double, Reference: Any): ExternalReference = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalReference]
   }
@@ -52,6 +52,6 @@ object ExternalReference {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setReference(value: js.Any): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Any): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
   }
 }

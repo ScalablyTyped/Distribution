@@ -10,10 +10,10 @@ The lodash method `_.endsWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.endswith |
 | Keywords           | lodash-modularized, endswith |
-| # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 9488720 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 594619.6666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

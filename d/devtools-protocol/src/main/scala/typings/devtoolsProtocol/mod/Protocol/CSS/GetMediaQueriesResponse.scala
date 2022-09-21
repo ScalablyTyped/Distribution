@@ -19,6 +19,6 @@ object GetMediaQueriesResponse {
     
     inline def setMedias(value: js.Array[CSSMedia]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
     
-    inline def setMediasVarargs(value: CSSMedia*): Self = StObject.set(x, "medias", js.Array(value :_*))
+    inline def setMediasVarargs(value: CSSMedia*): Self = StObject.set(x, "medias", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ object lockedFsMod {
   
   @JSImport("browserfs/dist/node/generic/locked_fs", JSImport.Default)
   @js.native
-  class default[T /* <: FileSystem */] protected ()
+  open class default[T /* <: FileSystem */] protected ()
     extends StObject
        with LockedFS[T] {
     def this(fs: T) = this()
@@ -22,18 +22,18 @@ object lockedFsMod {
     extends StObject
        with FileSystem {
     
-    /* private */ var _fs: js.Any = js.native
+    /* private */ var _fs: Any = js.native
     
-    /* private */ var _mu: js.Any = js.native
+    /* private */ var _mu: Any = js.native
     
-    def appendFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
-    def appendFileSync(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
+    def appendFileSync(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
     
     def getFSUnlocked(): T = js.native
     
     def initialize(cb: BFSOneArgCallback): Unit = js.native
     
-    def writeFileSync(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
+    def writeFileSync(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NodeMaterialDefines")
 @js.native
-class NodeMaterialDefines ()
+open class NodeMaterialDefines ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialDefines {
   
@@ -23,6 +23,9 @@ class NodeMaterialDefines ()
   var CONTRAST: Boolean = js.native
   
   /* CompleteClass */
+  var DITHER: Boolean = js.native
+  
+  /* CompleteClass */
   var EXPOSURE: Boolean = js.native
   
   /* CompleteClass */
@@ -36,6 +39,9 @@ class NodeMaterialDefines ()
   
   /* CompleteClass */
   var SAMPLER3DGREENDEPTH: Boolean = js.native
+  
+  /* CompleteClass */
+  var SKIPFINALCOLORCLAMP: Boolean = js.native
   
   /* CompleteClass */
   var TONEMAPPING: Boolean = js.native

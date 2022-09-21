@@ -10,15 +10,12 @@ An AngularJS UI component that can sort nested lists, provides drag & drop suppo
 | ------------------ | :-------------: |
 | Full name          | angular-ui-tree |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1194576 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 231136.0 |
+| # stars            | 2596.0 |
 
 ## Links
-- [Homepage](https://github.com/angular-ui-tree/angular-ui-tree#readme)
-- [Bugs](https://github.com/angular-ui-tree/angular-ui-tree/issues)
-- [Repository](https://github.com/angular-ui-tree/angular-ui-tree)
 - [Npm](https://www.npmjs.com/package/angular-ui-tree)
     
 

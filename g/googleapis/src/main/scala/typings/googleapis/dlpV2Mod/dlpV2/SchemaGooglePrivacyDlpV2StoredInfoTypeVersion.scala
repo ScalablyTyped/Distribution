@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Version of a StoredInfoType, including the configuration used to build it,
-  * create timestamp, and current state.
-  */
 trait SchemaGooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
   
   /**
@@ -16,31 +12,24 @@ trait SchemaGooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
   var config: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] = js.undefined
   
   /**
-    * Create timestamp of the version. Read-only, determined by the system when
-    * the version is created.
+    * Create timestamp of the version. Read-only, determined by the system when the version is created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Errors that occurred when creating this storedInfoType version, or
-    * anomalies detected in the storedInfoType data that render it unusable.
-    * Only the five most recent errors will be displayed, with the most recent
-    * error appearing first. &lt;p&gt;For example, some of the data for stored
-    * custom dictionaries is put in the user&#39;s Google Cloud Storage bucket,
-    * and if this data is modified or deleted by the user or another system,
-    * the dictionary becomes invalid. &lt;p&gt;If any errors occur, fix the
-    * problem indicated by the error message and use the UpdateStoredInfoType
-    * API method to create another version of the storedInfoType to continue
-    * using it, reusing the same `config` if it was not the source of the
-    * error.
+    * Errors that occurred when creating this storedInfoType version, or anomalies detected in the storedInfoType data that render it unusable. Only the five most recent errors will be displayed, with the most recent error appearing first. For example, some of the data for stored custom dictionaries is put in the user's Cloud Storage bucket, and if this data is modified or deleted by the user or another system, the dictionary becomes invalid. If any errors occur, fix the problem indicated by the error message and use the UpdateStoredInfoType API method to create another version of the storedInfoType to continue using it, reusing the same `config` if it was not the source of the error.
     */
   var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.undefined
   
   /**
-    * Stored info type version state. Read-only, updated by the system during
-    * dictionary creation.
+    * Stored info type version state. Read-only, updated by the system during dictionary creation.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Statistics about this storedInfoType version.
+    */
+  var stats: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeStats] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2StoredInfoTypeVersion {
   
@@ -57,16 +46,24 @@ object SchemaGooglePrivacyDlpV2StoredInfoTypeVersion {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setErrors(value: js.Array[SchemaGooglePrivacyDlpV2Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setStats(value: SchemaGooglePrivacyDlpV2StoredInfoTypeStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
   }
 }

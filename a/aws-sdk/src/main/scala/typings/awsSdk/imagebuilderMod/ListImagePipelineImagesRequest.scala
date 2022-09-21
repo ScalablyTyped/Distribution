@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImagePipelineImagesRequest extends StObject {
   
   /**
-    * The filters. 
+    * Use the following filters to streamline results:    name     version   
     */
   var filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the image pipeline whose images you want to view. 
+    * The Amazon Resource Name (ARN) of the image pipeline whose images you want to view.
     */
   var imagePipelineArn: ImagePipelineArn
   
   /**
-    * The maximum items to return in a request. 
+    * The maximum items to return in a request.
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   
   /**
-    * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -39,7 +39,7 @@ object ListImagePipelineImagesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
     

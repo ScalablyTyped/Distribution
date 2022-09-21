@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "Collection")
 @js.native
-class Collection protected ()
+open class Collection protected ()
   extends typings.reactVirtualized.esCollectionMod.Collection {
   def this(props: CollectionProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CollectionProps, context: js.Any) = this()
+  def this(props: CollectionProps, context: Any) = this()
 }
 /* static members */
 object Collection {

@@ -29,7 +29,7 @@ object DescribeAppsRequest {
     
     inline def setAppIdsUndefined: Self = StObject.set(x, "AppIds", js.undefined)
     
-    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "AppIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "AppIds", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

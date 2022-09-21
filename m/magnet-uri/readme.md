@@ -10,10 +10,10 @@ Parse a magnet URI and return an object of keys/values
 | ------------------ | :-------------: |
 | Full name          | magnet-uri |
 | Keywords           | bittorrent, cryptolinks, magnet, p2p, peer-to-peer, uri, urn, webtorrent |
-| # releases         | 5 |
-| # dependents       | 35 |
-| # downloads        | 619313 |
-| # stars            | 4 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 369876.0 |
+| # stars            | 200.0 |
 
 ## Links
 - [Homepage](https://github.com/webtorrent/magnet-uri#readme)

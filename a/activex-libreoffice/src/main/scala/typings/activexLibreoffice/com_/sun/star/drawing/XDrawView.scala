@@ -35,7 +35,7 @@ object XDrawView {
     CurrentPage: XDrawPage,
     acquire: () => Unit,
     getCurrentPage: () => XDrawPage,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCurrentPage: XDrawPage => Unit
   ): XDrawView = {

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PresetCriteriaConditionalFormatData extends StObject {
   
   /**
-    *
     * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatData] = js.undefined
   
   /**
-    *
     * The rule of the conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[ConditionalPresetCriteriaRule] = js.undefined

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerDialogModel")
 @js.native
-class ASPxDesignerDialogModel ()
+open class ASPxDesignerDialogModel ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerDialogModel {
   
@@ -17,7 +17,7 @@ class ASPxDesignerDialogModel ()
   override def onShow(tab: typings.devexpressWeb.ASPxDesignerNavigateTab): Unit = js.native
   
   /* CompleteClass */
-  var popupButtons: js.Array[js.Any] = js.native
+  var popupButtons: js.Array[Any] = js.native
   
   /* CompleteClass */
   override def setUrl(url: String): Unit = js.native

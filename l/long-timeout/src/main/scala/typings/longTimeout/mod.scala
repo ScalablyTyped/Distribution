@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("long-timeout", "Timeout")
   @js.native
-  class Timeout protected () extends StObject {
+  open class Timeout protected () extends StObject {
     def this(listener: Listener, ms: Double) = this()
     
     var after: Double = js.native
     
     def close(): Unit = js.native
     
-    def listener(args: js.Any*): Unit = js.native
+    def listener(args: Any*): Unit = js.native
     @JSName("listener")
     var listener_Original: Listener = js.native
     
@@ -45,6 +45,6 @@ object mod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

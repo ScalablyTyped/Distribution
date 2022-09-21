@@ -10,10 +10,10 @@ Configure async validation mode in Ajv - JSON-Schema validator
 | ------------------ | :-------------: |
 | Full name          | ajv-async |
 | Keywords           | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, async, asynchronous, asynchronous validation, ajv, generators, async-function, co, nodent, regenerator |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 78799 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4513.333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/ajv-async#readme)

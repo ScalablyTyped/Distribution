@@ -10,10 +10,10 @@ The streaming build system.
 | ------------------ | :-------------: |
 | Full name          | gulp |
 | Keywords           | build, stream, system, make, tool, asset, pipeline, series, parallel, streaming |
-| # releases         | 3 |
-| # dependents       | 6906 |
-| # downloads        | 65962723 |
-| # stars            | 1429 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5994461.666666667 |
+| # stars            | 32613.0 |
 
 ## Links
 - [Homepage](https://gulpjs.com)

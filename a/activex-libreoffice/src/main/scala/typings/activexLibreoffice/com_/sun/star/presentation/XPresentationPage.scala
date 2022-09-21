@@ -36,12 +36,12 @@ object XPresentationPage {
     NotesPage: XDrawPage,
     acquire: () => Unit,
     add: XShape => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     getNotesPage: () => XDrawPage,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XShape => Unit
   ): XPresentationPage = {

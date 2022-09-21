@@ -47,11 +47,11 @@ object anon {
     
     var data: String
     
-    var topics: js.Array[js.Any]
+    var topics: js.Array[Any]
   }
   object Data {
     
-    inline def apply(data: String, topics: js.Array[js.Any]): Data = {
+    inline def apply(data: String, topics: js.Array[Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -60,9 +60,9 @@ object anon {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setTopics(value: js.Array[js.Any]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[Any]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: js.Any*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: Any*): Self = StObject.set(x, "topics", js.Array(value*))
     }
   }
   

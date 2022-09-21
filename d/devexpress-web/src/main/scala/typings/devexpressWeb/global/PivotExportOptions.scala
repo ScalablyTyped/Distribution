@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("PivotExportOptions")
 @js.native
-class PivotExportOptions ()
+open class PivotExportOptions ()
   extends StObject
      with typings.devexpressWeb.PivotExportOptions {
   

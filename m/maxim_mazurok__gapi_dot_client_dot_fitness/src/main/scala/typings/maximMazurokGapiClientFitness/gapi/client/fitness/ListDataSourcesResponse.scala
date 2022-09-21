@@ -22,6 +22,6 @@ object ListDataSourcesResponse {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: DataSource*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: DataSource*): Self = StObject.set(x, "dataSource", js.Array(value*))
   }
 }

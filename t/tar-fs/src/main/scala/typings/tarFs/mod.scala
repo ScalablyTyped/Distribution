@@ -1,7 +1,6 @@
 package typings.tarFs
 
 import typings.node.fsMod.ReadStream
-import typings.std.Date
 import typings.tarFs.tarFsStrings.directory
 import typings.tarFs.tarFsStrings.file
 import typings.tarFs.tarFsStrings.link
@@ -65,7 +64,7 @@ object mod {
     
     var mode: Double
     
-    var mtime: Date
+    var mtime: js.Date
     
     var name: String
     
@@ -80,7 +79,7 @@ object mod {
     inline def apply(
       gid: Double,
       mode: Double,
-      mtime: Date,
+      mtime: js.Date,
       name: String,
       size: Double,
       `type`: file | directory | link | symlink,
@@ -97,7 +96,7 @@ object mod {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -208,7 +207,7 @@ object mod {
       
       inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setFinalize_(value: Boolean): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
       

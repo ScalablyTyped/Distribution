@@ -8,5 +8,5 @@ object pathDoesNotExistExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PathDoesNotExistException", "PathDoesNotExistException")
   @js.native
-  val PathDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PathDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

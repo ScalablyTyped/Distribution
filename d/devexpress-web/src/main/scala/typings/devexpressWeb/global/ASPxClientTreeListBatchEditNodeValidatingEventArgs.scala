@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListBatchEditNodeValidatingEventArgs")
 @js.native
-class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected ()
+open class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListBatchEditNodeValidatingEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected ()
     * @param nodeKey A String value that identifies the processed node.
     * @param validationInfo An object containing validation information.
     */
-  def this(nodeKey: String, validationInfo: js.Any) = this()
+  def this(nodeKey: String, validationInfo: Any) = this()
   
   /**
     * Gets the node's key value.
@@ -29,5 +29,5 @@ class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected ()
     * Provides validation information of a validated node.
     */
   /* CompleteClass */
-  var validationInfo: js.Any = js.native
+  var validationInfo: Any = js.native
 }

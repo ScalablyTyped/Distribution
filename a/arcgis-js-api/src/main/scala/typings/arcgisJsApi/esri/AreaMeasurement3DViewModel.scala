@@ -1,20 +1,8 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-inches`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-meters`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-miles`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-us-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-yards`
-import typings.arcgisJsApi.arcgisJsApiStrings.acres
-import typings.arcgisJsApi.arcgisJsApiStrings.ares
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
-import typings.arcgisJsApi.arcgisJsApiStrings.hectares
-import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.measured
 import typings.arcgisJsApi.arcgisJsApiStrings.measuring
-import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,18 +14,18 @@ trait AreaMeasurement3DViewModel
      with Accessor {
   
   /**
-    * Clears the current measurement.
+    * The area measurement analysis object being created or modified by the view model.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#clear)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#analysis)
     */
-  def clear(): Unit = js.native
+  val analysis: AreaMeasurementAnalysis = js.native
   
   /**
     * Clears the current measurement.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#clearMeasurement)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#clear)
     */
-  def clearMeasurement(): Unit = js.native
+  def clear(): scala.Unit = js.native
   
   /**
     * The current measurement of the area.
@@ -49,19 +37,14 @@ trait AreaMeasurement3DViewModel
   /**
     * Starts a new measurement.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#newMeasurement)
-    */
-  def newMeasurement(): Unit = js.native
-  
-  /**
-    * Starts a new measurement.
-    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#start)
     */
-  def start(): Unit = js.native
+  def start(): scala.Unit = js.native
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#state)
     */
@@ -72,16 +55,14 @@ trait AreaMeasurement3DViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unit)
     */
-  var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = js.native
+  var unit: SystemOrAreaUnit = js.native
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unitOptions)
     */
-  var unitOptions: js.Array[
-    metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-  ] = js.native
+  var unitOptions: js.Array[SystemOrAreaUnit] = js.native
   
   /**
     * The view from which the widget will operate.

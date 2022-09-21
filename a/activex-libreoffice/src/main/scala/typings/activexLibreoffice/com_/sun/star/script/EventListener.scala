@@ -12,7 +12,7 @@ trait EventListener extends StObject {
   
   var EventMethod: String
   
-  var Helper: js.Any
+  var Helper: Any
   
   var ListenerType: String
 }
@@ -22,7 +22,7 @@ object EventListener {
     AddListenerParam: String,
     AllListener: XAllListener,
     EventMethod: String,
-    Helper: js.Any,
+    Helper: Any,
     ListenerType: String
   ): EventListener = {
     val __obj = js.Dynamic.literal(AddListenerParam = AddListenerParam.asInstanceOf[js.Any], AllListener = AllListener.asInstanceOf[js.Any], EventMethod = EventMethod.asInstanceOf[js.Any], Helper = Helper.asInstanceOf[js.Any], ListenerType = ListenerType.asInstanceOf[js.Any])
@@ -37,7 +37,7 @@ object EventListener {
     
     inline def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
     
-    inline def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
     
     inline def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
   }

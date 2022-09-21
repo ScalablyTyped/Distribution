@@ -9,12 +9,12 @@ trait ListLabelingJobsForWorkteamRequest extends StObject {
   /**
     * A filter that returns only labeling jobs created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only labeling jobs created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter the limits jobs to only the ones whose job reference code contains the specified string.
@@ -55,11 +55,11 @@ object ListLabelingJobsForWorkteamRequest {
   
   extension [Self <: ListLabelingJobsForWorkteamRequest](x: Self) {
     
-    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     

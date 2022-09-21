@@ -2,7 +2,6 @@ package typings.apidoc
 
 import typings.apidoc.mod.ParsedFile
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +10,24 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: Record[String, js.Any]
+    var data: js.Array[Record[String, Any]]
     
-    var project: Record[String, js.Any]
+    var project: Record[String, Any]
   }
   object Data {
     
-    inline def apply(data: Record[String, js.Any], project: Record[String, js.Any]): Data = {
+    inline def apply(data: js.Array[Record[String, Any]], project: Record[String, Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setProject(value: Record[String, js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setDataVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setProject(value: Record[String, Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,22 +58,22 @@ object anon {
   
   trait DocBlocksRegExp extends StObject {
     
-    var docBlocksRegExp: RegExp
+    var docBlocksRegExp: js.RegExp
     
-    var inlineRegExp: RegExp
+    var inlineRegExp: js.RegExp
   }
   object DocBlocksRegExp {
     
-    inline def apply(docBlocksRegExp: RegExp, inlineRegExp: RegExp): DocBlocksRegExp = {
+    inline def apply(docBlocksRegExp: js.RegExp, inlineRegExp: js.RegExp): DocBlocksRegExp = {
       val __obj = js.Dynamic.literal(docBlocksRegExp = docBlocksRegExp.asInstanceOf[js.Any], inlineRegExp = inlineRegExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocBlocksRegExp]
     }
     
     extension [Self <: DocBlocksRegExp](x: Self) {
       
-      inline def setDocBlocksRegExp(value: RegExp): Self = StObject.set(x, "docBlocksRegExp", value.asInstanceOf[js.Any])
+      inline def setDocBlocksRegExp(value: js.RegExp): Self = StObject.set(x, "docBlocksRegExp", value.asInstanceOf[js.Any])
       
-      inline def setInlineRegExp(value: RegExp): Self = StObject.set(x, "inlineRegExp", value.asInstanceOf[js.Any])
+      inline def setInlineRegExp(value: js.RegExp): Self = StObject.set(x, "inlineRegExp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,13 +106,13 @@ object anon {
       
       inline def setMarkdownFieldsUndefined: Self = StObject.set(x, "markdownFields", js.undefined)
       
-      inline def setMarkdownFieldsVarargs(value: String*): Self = StObject.set(x, "markdownFields", js.Array(value :_*))
+      inline def setMarkdownFieldsVarargs(value: String*): Self = StObject.set(x, "markdownFields", js.Array(value*))
       
       inline def setMarkdownRemovePTags(value: js.Array[String]): Self = StObject.set(x, "markdownRemovePTags", value.asInstanceOf[js.Any])
       
       inline def setMarkdownRemovePTagsUndefined: Self = StObject.set(x, "markdownRemovePTags", js.undefined)
       
-      inline def setMarkdownRemovePTagsVarargs(value: String*): Self = StObject.set(x, "markdownRemovePTags", js.Array(value :_*))
+      inline def setMarkdownRemovePTagsVarargs(value: String*): Self = StObject.set(x, "markdownRemovePTags", js.Array(value*))
       
       inline def setParse(value: (String, String, String) => Description): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
@@ -121,22 +122,22 @@ object anon {
   
   trait Global extends StObject {
     
-    var global: js.Any
+    var global: Any
     
-    var local: js.Any
+    var local: Any
   }
   object Global {
     
-    inline def apply(global: js.Any, local: js.Any): Global = {
+    inline def apply(global: Any, local: Any): Global = {
       val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
       __obj.asInstanceOf[Global]
     }
     
     extension [Self <: Global](x: Self) {
       
-      inline def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      inline def setLocal(value: js.Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     }
   }
   

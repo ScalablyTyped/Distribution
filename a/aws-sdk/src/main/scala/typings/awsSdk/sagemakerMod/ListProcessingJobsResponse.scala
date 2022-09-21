@@ -31,6 +31,6 @@ object ListProcessingJobsResponse {
     
     inline def setProcessingJobSummaries(value: ProcessingJobSummaries): Self = StObject.set(x, "ProcessingJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setProcessingJobSummariesVarargs(value: ProcessingJobSummary*): Self = StObject.set(x, "ProcessingJobSummaries", js.Array(value :_*))
+    inline def setProcessingJobSummariesVarargs(value: ProcessingJobSummary*): Self = StObject.set(x, "ProcessingJobSummaries", js.Array(value*))
   }
 }

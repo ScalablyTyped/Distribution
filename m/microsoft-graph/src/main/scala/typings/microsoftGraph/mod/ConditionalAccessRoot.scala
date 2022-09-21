@@ -8,8 +8,10 @@ trait ConditionalAccessRoot
   extends StObject
      with Entity {
   
+  // Read-only. Nullable. Returns a collection of the specified named locations.
   var namedLocations: js.UndefOr[NullableOption[js.Array[NamedLocation]]] = js.undefined
   
+  // Read-only. Nullable. Returns a collection of the specified Conditional Access (CA) policies.
   var policies: js.UndefOr[NullableOption[js.Array[ConditionalAccessPolicy]]] = js.undefined
 }
 object ConditionalAccessRoot {
@@ -27,7 +29,7 @@ object ConditionalAccessRoot {
     
     inline def setNamedLocationsUndefined: Self = StObject.set(x, "namedLocations", js.undefined)
     
-    inline def setNamedLocationsVarargs(value: NamedLocation*): Self = StObject.set(x, "namedLocations", js.Array(value :_*))
+    inline def setNamedLocationsVarargs(value: NamedLocation*): Self = StObject.set(x, "namedLocations", js.Array(value*))
     
     inline def setPolicies(value: NullableOption[js.Array[ConditionalAccessPolicy]]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
@@ -35,6 +37,6 @@ object ConditionalAccessRoot {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: ConditionalAccessPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ConditionalAccessPolicy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

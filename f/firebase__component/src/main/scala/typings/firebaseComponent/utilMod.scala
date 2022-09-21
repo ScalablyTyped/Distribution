@@ -1,5 +1,6 @@
 package typings.firebaseComponent
 
+import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseComponent.componentMod.Component
 import typings.firebaseComponent.firebaseComponentStrings.badtest
 import typings.firebaseComponent.firebaseComponentStrings.fireball
@@ -14,12 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilMod {
   
-  @JSImport("@firebase/component/dist/test/util", JSImport.Namespace)
+  @JSImport("@firebase/component/dist/esm/test/util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getFakeApp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[js.Any]
-  inline def getFakeApp(appName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
+  inline def getFakeApp(appName: String): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(appName.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
   
   inline def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
   inline def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]

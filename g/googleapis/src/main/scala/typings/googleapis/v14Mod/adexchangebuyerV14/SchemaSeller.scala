@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaSeller extends StObject {
   
   /**
-    * The unique id for the seller. The seller fills in this field. The seller
-    * account id is then available to buyer in the product.
+    * The unique id for the seller. The seller fills in this field. The seller account id is then available to buyer in the product.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional sub-account id for the seller.
     */
-  var subAccountId: js.UndefOr[String] = js.undefined
+  var subAccountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSeller {
   
@@ -28,9 +27,13 @@ object SchemaSeller {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setSubAccountIdNull: Self = StObject.set(x, "subAccountId", null)
     
     inline def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
   }

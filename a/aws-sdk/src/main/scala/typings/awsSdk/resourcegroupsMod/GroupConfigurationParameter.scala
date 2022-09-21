@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroupConfigurationParameter extends StObject {
   
   /**
-    * The name of the group configuration parameter. You can specify the following string values:   For configuration item type AWS::ResourceGroups::Generic:    allowed-resource-types  Specifies the types of resources that you can add to this group by using the GroupResources operation.     For configuration item type AWS::EC2::CapacityReservationPool:   None - This configuration item type doesn't support any parameters.   For more information about EC2 capacity reservation groups, see Working with capacity reservation groups in the EC2 Users Guide.  
+    * The name of the group configuration parameter. For the list of parameters that you can use with each configuration item type, see Supported resource types and parameters.
     */
   var Name: GroupConfigurationParameterName
   
   /**
-    * The values of for this parameter. You can specify the following string value:   For item type allowed-resource-types: the only supported parameter value is AWS::EC2::CapacityReservation.  
+    * The value or values to be used for the specified parameter. For the list of values you can use with each parameter, see Supported resource types and parameters.
     */
   var Values: js.UndefOr[GroupConfigurationParameterValueList] = js.undefined
 }
@@ -31,6 +31,6 @@ object GroupConfigurationParameter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

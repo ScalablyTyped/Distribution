@@ -1,10 +1,11 @@
 package typings.spdy
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.nodeNetMod.Socket
 import typings.spdy.anon.Connection
 import typings.spdy.anon.Plain
 import typings.spdy.mod.agent.Agent
 import typings.spdy.mod.server.Server
-import typings.spdy.mod.socket.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,19 +24,19 @@ object mod {
     
     @JSImport("spdy", "agent.Agent")
     @js.native
-    class Agent ()
+    open class Agent ()
       extends typings.node.httpsMod.Agent {
       def this(options: typings.node.httpsMod.AgentOptions) = this()
     }
     
     @JSImport("spdy", "agent.PlainAgent")
     @js.native
-    class PlainAgent ()
+    open class PlainAgent ()
       extends typings.node.httpMod.Agent {
       def this(opts: typings.node.httpMod.AgentOptions) = this()
     }
     
-    inline def create(base: js.Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent | typings.spdy.mod.agent.PlainAgent]
+    inline def create(base: Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent | typings.spdy.mod.agent.PlainAgent]
     
     trait AgentOptions
       extends StObject
@@ -59,22 +60,22 @@ object mod {
     }
   }
   
-  inline def createAgent(base: js.Any, options: AgentOptions): Agent_ | PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent_ | PlainAgent]
+  inline def createAgent(base: Any, options: AgentOptions): Agent_ | PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent_ | PlainAgent]
   inline def createAgent(options: AgentOptions): Agent_ | PlainAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(options.asInstanceOf[js.Any]).asInstanceOf[Agent_ | PlainAgent]
   
   inline def createServer(
-    base: js.Any,
+    base: Any,
     options: ServerOptions,
     handler: js.Function2[
       /* request */ IncomingMessage, 
-      /* response */ typings.node.httpMod.ServerResponse, 
+      /* response */ typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
       Unit
     ]
   ): Server_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server_]
   inline def createServer(
     handler: js.Function2[
       /* request */ IncomingMessage, 
-      /* response */ typings.node.httpMod.ServerResponse, 
+      /* response */ typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
       Unit
     ]
   ): Server_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(handler.asInstanceOf[js.Any]).asInstanceOf[Server_]
@@ -82,7 +83,7 @@ object mod {
     options: ServerOptions,
     handler: js.Function2[
       /* request */ IncomingMessage, 
-      /* response */ typings.node.httpMod.ServerResponse, 
+      /* response */ typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
       Unit
     ]
   ): Server_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server_]
@@ -102,7 +103,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def end(data: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def end(data: Any, encoding: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def writeHead(statusCode: Double, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeHead(statusCode: Double, reason: String, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -115,33 +116,51 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def create(
-      base: js.Any,
-      options: typings.node.httpsMod.ServerOptions,
+      base: Any,
+      options: typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ],
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
-          /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse, 
+          /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
           Unit
         ]
     ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server]
     inline def create(
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
-          /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse, 
+          /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
           Unit
         ]
     ): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(handler.asInstanceOf[js.Any]).asInstanceOf[Server]
     inline def create(
-      options: typings.node.httpsMod.ServerOptions,
+      options: typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ],
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
-          /* response */ typings.node.httpMod.ServerResponse, 
+          /* response */ typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage], 
           Unit
         ]
     ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server]
     
     type IncomingMessage = typings.node.httpMod.IncomingMessage
     
-    type PlainServer = typings.node.httpMod.Server
+    type PlainServer = typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+        ]
+      ]
     
     /* Rewritten from type alias, can be one of: 
       - typings.spdy.spdyStrings.h2
@@ -171,9 +190,9 @@ object mod {
       
       var method: js.UndefOr[String] = js.undefined
       
-      var request: js.UndefOr[js.Any] = js.undefined
+      var request: js.UndefOr[Any] = js.undefined
       
-      var response: js.UndefOr[js.Any] = js.undefined
+      var response: js.UndefOr[Any] = js.undefined
       
       var status: js.UndefOr[Double] = js.undefined
     }
@@ -190,11 +209,11 @@ object mod {
         
         inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
         inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
         
-        inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
         inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
         
@@ -204,11 +223,23 @@ object mod {
       }
     }
     
-    type Server = typings.node.httpsMod.Server
+    type Server = typings.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+        ]
+      ]
     
     trait ServerOptions
       extends StObject
-         with typings.node.httpsMod.ServerOptions {
+         with typings.node.httpsMod.ServerOptions[
+              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ] {
       
       var spdy: js.UndefOr[Connection] = js.undefined
     }
@@ -229,9 +260,9 @@ object mod {
     
     @js.native
     trait ServerResponse
-      extends typings.node.httpMod.ServerResponse {
+      extends typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage] {
       
-      def push(filename: String, options: PushOptions): js.Any = js.native
+      def push(filename: String, options: PushOptions): Any = js.native
     }
   }
   
@@ -242,22 +273,22 @@ object mod {
   @js.native
   trait Handle extends StObject {
     
-    def assignClientRequest(req: js.Any): Unit = js.native
+    def assignClientRequest(req: Any): Unit = js.native
     
-    def assignRequest(req: js.Any): Unit = js.native
+    def assignRequest(req: Any): Unit = js.native
     
-    def assignResponse(res: js.Any): Unit = js.native
+    def assignResponse(res: Any): Unit = js.native
     
     def assignSocket(socket: Socket_, options: js.Object): Unit = js.native
     
-    def create(options: js.Object, stream: js.Any, socket: Socket_): Handle = js.native
+    def create(options: js.Object, stream: Any, socket: Socket_): Handle = js.native
     
     def emitRequest(): Unit = js.native
     
-    def emitResponse(status: js.Any, headers: js.Any): Unit = js.native
+    def emitResponse(status: Any, headers: Any): Unit = js.native
     
-    def getStream(): js.Any = js.native
-    def getStream(callback: js.Function1[/* stream */ js.Any, Unit]): js.Any = js.native
+    def getStream(): Any = js.native
+    def getStream(callback: js.Function1[/* stream */ Any, Unit]): Any = js.native
   }
   
   type IncomingMessage = typings.spdy.mod.server.IncomingMessage
@@ -274,7 +305,7 @@ object mod {
   
   type Server_ = Server
   
-  type Socket_ = Socket
+  type Socket_ = typings.spdy.mod.socket.Socket
   
   object socket {
     

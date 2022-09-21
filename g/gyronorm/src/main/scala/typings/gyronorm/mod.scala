@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("gyronorm", "GyroNorm")
   @js.native
-  class GyroNorm () extends StObject {
+  open class GyroNorm () extends StObject {
     
     def init(options: Options): js.Promise[Unit] = js.native
     

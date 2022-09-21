@@ -29,7 +29,7 @@ object EnableFastSnapshotRestoreErrorItem {
     
     inline def setFastSnapshotRestoreStateErrorsUndefined: Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.undefined)
     
-    inline def setFastSnapshotRestoreStateErrorsVarargs(value: EnableFastSnapshotRestoreStateErrorItem*): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.Array(value :_*))
+    inline def setFastSnapshotRestoreStateErrorsVarargs(value: EnableFastSnapshotRestoreStateErrorItem*): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.Array(value*))
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Overlay")
 @js.native
-class Overlay ()
+open class Overlay ()
   extends StObject
      with typings.bmapgl.BMapGL.Overlay
 object Overlay {

@@ -1,18 +1,17 @@
 package typings.storybookApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.history.mod.LocationState
-import typings.reachRouter.mod.WindowLocation
 import typings.react.mod.ReactElement
 import typings.storybookApi.mod.ModuleFn
 import typings.storybookApi.storeMod.Options
+import typings.storybookRouter.anon.PartialLocationAncestorOrigins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonsMod {
   
-  @JSImport("@storybook/api/dist/modules/addons", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/modules/addons", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -21,13 +20,13 @@ object addonsMod {
   inline def ensurePanel(panels: Panels, selectedPanel: String, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def ensurePanel(panels: Panels, selectedPanel: Unit, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@storybook/api/dist/modules/addons", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/addons", "init")
   @js.native
   val init: ModuleFn = js.native
   
   @js.native
   sealed trait types extends StObject
-  @JSImport("@storybook/api/dist/modules/addons", "types")
+  @JSImport("@storybook/api/dist/ts3.9/modules/addons", "types")
   @js.native
   object types extends StObject {
     
@@ -132,7 +131,7 @@ object addonsMod {
   
   trait MatchOptions extends StObject {
     
-    var location: WindowLocation[LocationState]
+    var location: PartialLocationAncestorOrigins
     
     var path: String
     
@@ -142,14 +141,14 @@ object addonsMod {
   }
   object MatchOptions {
     
-    inline def apply(location: WindowLocation[LocationState], path: String, storyId: String): MatchOptions = {
+    inline def apply(location: PartialLocationAncestorOrigins, path: String, storyId: String): MatchOptions = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchOptions]
     }
     
     extension [Self <: MatchOptions](x: Self) {
       
-      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -186,7 +185,7 @@ object addonsMod {
   
   trait RouteOptions extends StObject {
     
-    var location: WindowLocation[LocationState]
+    var location: PartialLocationAncestorOrigins
     
     var path: String
     
@@ -196,14 +195,14 @@ object addonsMod {
   }
   object RouteOptions {
     
-    inline def apply(location: WindowLocation[LocationState], path: String, storyId: String): RouteOptions = {
+    inline def apply(location: PartialLocationAncestorOrigins, path: String, storyId: String): RouteOptions = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteOptions]
     }
     
     extension [Self <: RouteOptions](x: Self) {
       
-      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait PresetSettings extends StObject {
   var AudioDescriptions: js.UndefOr[listOfAudioDescription] = js.undefined
   
   /**
-    * Caption settings for this preset. There can be multiple caption settings in a single output.
+    * This object holds groups of settings related to captions for one output. For each output that has captions, include one instance of CaptionDescriptions.
     */
   var CaptionDescriptions: js.UndefOr[listOfCaptionDescriptionPreset] = js.undefined
   
@@ -22,7 +22,7 @@ trait PresetSettings extends StObject {
   var ContainerSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ContainerSettings] = js.undefined
   
   /**
-    * (VideoDescription) contains a group of video encoding settings. The specific video settings depend on the video codec that you choose when you specify a value for Video codec (codec). Include one instance of (VideoDescription) per output.
+    * VideoDescription contains a group of video encoding settings. The specific video settings depend on the video codec that you choose for the property codec. Include one instance of VideoDescription per output.
     */
   var VideoDescription: js.UndefOr[typings.awsSdk.mediaconvertMod.VideoDescription] = js.undefined
 }
@@ -39,13 +39,13 @@ object PresetSettings {
     
     inline def setAudioDescriptionsUndefined: Self = StObject.set(x, "AudioDescriptions", js.undefined)
     
-    inline def setAudioDescriptionsVarargs(value: AudioDescription*): Self = StObject.set(x, "AudioDescriptions", js.Array(value :_*))
+    inline def setAudioDescriptionsVarargs(value: AudioDescription*): Self = StObject.set(x, "AudioDescriptions", js.Array(value*))
     
     inline def setCaptionDescriptions(value: listOfCaptionDescriptionPreset): Self = StObject.set(x, "CaptionDescriptions", value.asInstanceOf[js.Any])
     
     inline def setCaptionDescriptionsUndefined: Self = StObject.set(x, "CaptionDescriptions", js.undefined)
     
-    inline def setCaptionDescriptionsVarargs(value: CaptionDescriptionPreset*): Self = StObject.set(x, "CaptionDescriptions", js.Array(value :_*))
+    inline def setCaptionDescriptionsVarargs(value: CaptionDescriptionPreset*): Self = StObject.set(x, "CaptionDescriptions", js.Array(value*))
     
     inline def setContainerSettings(value: ContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
     

@@ -1,19 +1,19 @@
 
 # Scala.js typings for onfleet__node-onfleet
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
-Official client library for accessing the Onfleet API
+Onfleet's Node.js API Wrapper Package
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @onfleet/node-onfleet |
 | Keywords           | node-onfleet |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 43205 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 14547.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://onfleet.com/)

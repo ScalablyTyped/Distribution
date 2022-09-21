@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RootPrefixCls extends StObject {
   
-  var rootPrefixCls: js.UndefOr[String] = js.undefined
+  var rootPrefixCls: String
 }
 object RootPrefixCls {
   
-  inline def apply(): RootPrefixCls = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(rootPrefixCls: String): RootPrefixCls = {
+    val __obj = js.Dynamic.literal(rootPrefixCls = rootPrefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[RootPrefixCls]
   }
   
   extension [Self <: RootPrefixCls](x: Self) {
     
     inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
-    
-    inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ValueCondition")
 @js.native
-class ValueCondition protected ()
+open class ValueCondition protected ()
   extends typings.babylonjs.indexMod.ValueCondition {
   /**
     * Creates a new ValueCondition
@@ -18,19 +18,19 @@ class ValueCondition protected ()
     */
   def this(
     actionManager: typings.babylonjs.actionManagerMod.ActionManager,
-    target: js.Any,
+    target: Any,
     /** path to specify the property of the target the conditional operator uses  */
   propertyPath: String,
     /** the value compared by the conditional operator against the current value of the property */
-  value: js.Any
+  value: Any
   ) = this()
   def this(
     actionManager: typings.babylonjs.actionManagerMod.ActionManager,
-    target: js.Any,
+    target: Any,
     /** path to specify the property of the target the conditional operator uses  */
   propertyPath: String,
     /** the value compared by the conditional operator against the current value of the property */
-  value: js.Any,
+  value: Any,
     /** the conditional operator, default ValueCondition.IsEqual */
   operator: Double
   ) = this()
@@ -55,8 +55,8 @@ object ValueCondition {
     */
   @JSImport("babylonjs/Legacy/legacy", "ValueCondition._IsDifferent")
   @js.native
-  def _IsDifferent: js.Any = js.native
-  inline def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
+  def _IsDifferent: Any = js.native
+  inline def _IsDifferent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -64,8 +64,8 @@ object ValueCondition {
     */
   @JSImport("babylonjs/Legacy/legacy", "ValueCondition._IsEqual")
   @js.native
-  def _IsEqual: js.Any = js.native
-  inline def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
+  def _IsEqual: Any = js.native
+  inline def _IsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -73,8 +73,8 @@ object ValueCondition {
     */
   @JSImport("babylonjs/Legacy/legacy", "ValueCondition._IsGreater")
   @js.native
-  def _IsGreater: js.Any = js.native
-  inline def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
+  def _IsGreater: Any = js.native
+  inline def _IsGreater_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -82,6 +82,6 @@ object ValueCondition {
     */
   @JSImport("babylonjs/Legacy/legacy", "ValueCondition._IsLesser")
   @js.native
-  def _IsLesser: js.Any = js.native
-  inline def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
+  def _IsLesser: Any = js.native
+  inline def _IsLesser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
 }

@@ -42,6 +42,6 @@ object ListFirewallsRequest {
     
     inline def setVpcIdsUndefined: Self = StObject.set(x, "VpcIds", js.undefined)
     
-    inline def setVpcIdsVarargs(value: VpcId*): Self = StObject.set(x, "VpcIds", js.Array(value :_*))
+    inline def setVpcIdsVarargs(value: VpcId*): Self = StObject.set(x, "VpcIds", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object ListFirewallsResponse {
     
     inline def setFirewallsUndefined: Self = StObject.set(x, "Firewalls", js.undefined)
     
-    inline def setFirewallsVarargs(value: FirewallMetadata*): Self = StObject.set(x, "Firewalls", js.Array(value :_*))
+    inline def setFirewallsVarargs(value: FirewallMetadata*): Self = StObject.set(x, "Firewalls", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

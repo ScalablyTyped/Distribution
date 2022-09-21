@@ -22,7 +22,7 @@ trait IAMPolicyAssignment extends StObject {
   var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: js.UndefOr[typings.awsSdk.quicksightMod.AwsAccountId] = js.undefined
   

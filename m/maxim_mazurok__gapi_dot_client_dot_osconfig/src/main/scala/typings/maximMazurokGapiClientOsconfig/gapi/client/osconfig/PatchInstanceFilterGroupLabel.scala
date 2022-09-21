@@ -11,7 +11,7 @@ trait PatchInstanceFilterGroupLabel extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.PatchInstanceFilterGroupLabel & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.PatchInstanceFilterGroupLabel & TopLevel[Any]
   ] = js.undefined
 }
 object PatchInstanceFilterGroupLabel {
@@ -26,7 +26,7 @@ object PatchInstanceFilterGroupLabel {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.PatchInstanceFilterGroupLabel & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.PatchInstanceFilterGroupLabel & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

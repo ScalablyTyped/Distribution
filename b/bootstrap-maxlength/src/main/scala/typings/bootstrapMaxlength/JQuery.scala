@@ -19,18 +19,18 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_maxlengthhidden(
     events: maxlengthDothidden,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   @JSName("on")
   def on_maxlengthshown(
     events: maxlengthDotshown,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   
   @JSName("trigger")
   def trigger_maxlengthreposition(eventType: maxlengthDotreposition): JQuery = js.native
   @JSName("trigger")
-  def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Array[js.Any]): JQuery = js.native
+  def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Array[Any]): JQuery = js.native
   @JSName("trigger")
   def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Object): JQuery = js.native
 }

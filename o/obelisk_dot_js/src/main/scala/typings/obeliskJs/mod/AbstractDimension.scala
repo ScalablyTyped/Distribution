@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "AbstractDimension")
 @js.native
-class AbstractDimension () extends StObject {
+open class AbstractDimension () extends StObject {
   
   var tall: Boolean = js.native
   

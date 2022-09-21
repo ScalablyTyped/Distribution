@@ -16,17 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IQService
   extends StObject
      with Instantiable1[
-      /* resolver */ js.Function2[
-        /* resolve */ IQResolveReject[js.Object], 
-        /* reject */ IQResolveReject[js.Any], 
-        js.Any
-      ], 
+      /* resolver */ js.Function2[/* resolve */ IQResolveReject[js.Object], /* reject */ IQResolveReject[Any], Any], 
       IPromise[js.Object]
     ] {
   
-  def apply[T](
-    resolver: js.Function2[/* resolve */ IQResolveReject[T], /* reject */ IQResolveReject[js.Any], js.Any]
-  ): IPromise[T] = js.native
+  def apply[T](resolver: js.Function2[/* resolve */ IQResolveReject[T], /* reject */ IQResolveReject[Any], Any]): IPromise[T] = js.native
   
   /**
     * Combines multiple promises into a single promise that is resolved when all of the input promises are resolved.
@@ -38,7 +32,7 @@ trait IQService
   def all[T](
     promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]}
-    */ typings.angular.angularStrings.IQService & TopLevel[js.Any]
+    */ typings.angular.angularStrings.IQService & TopLevel[Any]
   ): IPromise[T] = js.native
   def all[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[TAll]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | IPromise[T1], T2 | IPromise[T2]]): IPromise[js.Tuple2[T1, T2]] = js.native
@@ -142,7 +136,7 @@ trait IQService
     * @param reason Constant, message, exception or an object representing the rejection reason.
     */
   def reject(): IPromise[scala.Nothing] = js.native
-  def reject(reason: js.Any): IPromise[scala.Nothing] = js.native
+  def reject(reason: Any): IPromise[scala.Nothing] = js.native
   
   /**
     * Wraps an object that might be a value or a (3rd party) then-able promise into a $q promise. This is useful when you are dealing with an object that might or might not be a promise, or if the promise comes from a source that can't be trusted.
@@ -179,25 +173,25 @@ trait IQService
   def when[TResult, T](
     value: T,
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, js.Any]
+    errorCallback: js.Function1[/* reason */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, js.Any],
-    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+    errorCallback: js.Function1[/* reason */ Any, Any],
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: Null,
-    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: Unit,
-    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: js.Thenable[T],
@@ -206,13 +200,13 @@ trait IQService
   def when[TResult, TResult2, T](
     value: js.Thenable[T],
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+    errorCallback: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
   ): IPromise[TResult | TResult2] = js.native
   def when[TResult, TResult2, T](
     value: js.Thenable[T],
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
-    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+    errorCallback: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult | TResult2] = js.native
   @JSName("when")
   def when_T1T2[T1, T2](value: T2): IPromise[T1 | T2] = js.native

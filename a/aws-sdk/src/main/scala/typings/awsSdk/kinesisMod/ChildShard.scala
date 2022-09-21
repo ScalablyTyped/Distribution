@@ -8,8 +8,14 @@ trait ChildShard extends StObject {
   
   var HashKeyRange: typings.awsSdk.kinesisMod.HashKeyRange
   
+  /**
+    * The current shard that is the parent of the existing child shard.
+    */
   var ParentShards: ShardIdList
   
+  /**
+    * The shard ID of the existing child shard of the current shard.
+    */
   var ShardId: typings.awsSdk.kinesisMod.ShardId
 }
 object ChildShard {
@@ -25,7 +31,7 @@ object ChildShard {
     
     inline def setParentShards(value: ShardIdList): Self = StObject.set(x, "ParentShards", value.asInstanceOf[js.Any])
     
-    inline def setParentShardsVarargs(value: ShardId*): Self = StObject.set(x, "ParentShards", js.Array(value :_*))
+    inline def setParentShardsVarargs(value: ShardId*): Self = StObject.set(x, "ParentShards", js.Array(value*))
     
     inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
   }

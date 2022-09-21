@@ -39,17 +39,17 @@ trait PolyfillXMLHttpRequest
     * @param  password NOT SUPPORTED
     */
   @JSName("open")
-  def open_true(method: String, url: String, async: `true`, user: js.Any, password: js.Any): Unit = js.native
+  def open_true(method: String, url: String, async: `true`, user: Any, password: Any): Unit = js.native
   
   def overrideMimeType(mime: String): Unit = js.native
   
   var readyState: Double = js.native
   
-  var response: js.Any = js.native
+  var response: Any = js.native
   
-  var responseHeaders: js.Any = js.native
+  var responseHeaders: Any = js.native
   
-  var responseText: js.Any = js.native
+  var responseText: Any = js.native
   
   var responseType: String = js.native
   
@@ -59,7 +59,7 @@ trait PolyfillXMLHttpRequest
     * Invoke this function to send HTTP request, and set body.
     * @param body Body in RNfetchblob flavor
     */
-  def send(body: js.Any): Unit = js.native
+  def send(body: Any): Unit = js.native
   
   def setRequestHeader(name: String, value: String): Unit = js.native
   

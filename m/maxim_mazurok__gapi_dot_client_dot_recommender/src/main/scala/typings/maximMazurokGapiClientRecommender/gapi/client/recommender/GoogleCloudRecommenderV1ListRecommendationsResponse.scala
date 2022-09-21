@@ -29,6 +29,6 @@ object GoogleCloudRecommenderV1ListRecommendationsResponse {
     
     inline def setRecommendationsUndefined: Self = StObject.set(x, "recommendations", js.undefined)
     
-    inline def setRecommendationsVarargs(value: GoogleCloudRecommenderV1Recommendation*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: GoogleCloudRecommenderV1Recommendation*): Self = StObject.set(x, "recommendations", js.Array(value*))
   }
 }

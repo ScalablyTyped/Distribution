@@ -12,14 +12,14 @@ trait DataSetSummary extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * Indicates if the dataset has column level permission configured. 
+    * A value that indicates if the dataset has column level permission configured.
     */
   var ColumnLevelPermissionRulesApplied: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time that this dataset was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the dataset.
@@ -27,14 +27,14 @@ trait DataSetSummary extends StObject {
   var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * Indicates whether you want to import the data into SPICE.
+    * A value that indicates whether you want to import the data into SPICE.
     */
   var ImportMode: js.UndefOr[DataSetImportMode] = js.undefined
   
   /**
     * The last time that this dataset was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A display name for the dataset.
@@ -45,6 +45,11 @@ trait DataSetSummary extends StObject {
     * The row-level security configuration for the dataset.
     */
   var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
+  
+  /**
+    * Whether or not the row level permission tags are applied.
+    */
+  var RowLevelPermissionTagConfigurationApplied: js.UndefOr[Boolean] = js.undefined
 }
 object DataSetSummary {
   
@@ -63,7 +68,7 @@ object DataSetSummary {
     
     inline def setColumnLevelPermissionRulesAppliedUndefined: Self = StObject.set(x, "ColumnLevelPermissionRulesApplied", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -75,7 +80,7 @@ object DataSetSummary {
     
     inline def setImportModeUndefined: Self = StObject.set(x, "ImportMode", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -86,5 +91,9 @@ object DataSetSummary {
     inline def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = StObject.set(x, "RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
     
     inline def setRowLevelPermissionDataSetUndefined: Self = StObject.set(x, "RowLevelPermissionDataSet", js.undefined)
+    
+    inline def setRowLevelPermissionTagConfigurationApplied(value: Boolean): Self = StObject.set(x, "RowLevelPermissionTagConfigurationApplied", value.asInstanceOf[js.Any])
+    
+    inline def setRowLevelPermissionTagConfigurationAppliedUndefined: Self = StObject.set(x, "RowLevelPermissionTagConfigurationApplied", js.undefined)
   }
 }

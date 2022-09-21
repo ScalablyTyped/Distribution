@@ -23,7 +23,7 @@ object ReferenceMark {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setName: String => Unit

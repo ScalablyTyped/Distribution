@@ -12,7 +12,7 @@ trait BindingDelta extends StObject {
   /** The condition that is associated with this binding. */
   var condition: js.UndefOr[Expr] = js.undefined
   
-  /** A single identity requesting access for a Cloud Platform resource. Follows the same format of Binding.members. Required */
+  /** A single identity requesting access for a Google Cloud resource. Follows the same format of Binding.members. Required */
   var member: js.UndefOr[String] = js.undefined
   
   /** Role that is assigned to `members`. For example, `roles/viewer`, `roles/editor`, or `roles/owner`. Required */

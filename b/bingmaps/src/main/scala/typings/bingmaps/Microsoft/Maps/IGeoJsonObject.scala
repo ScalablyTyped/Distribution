@@ -19,10 +19,10 @@ trait IGeoJsonObject extends StObject {
   var geometry: js.UndefOr[IGeoJsonObject] = js.undefined
   
   /** identifier of a feature (only applicable if the type is 'feature') */
-  var id: js.UndefOr[js.Any] = js.undefined
+  var id: js.UndefOr[Any] = js.undefined
   
   /** Additional properties of the object as a key,value pair */
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
   
   /** 
     * Type of the object 
@@ -53,29 +53,29 @@ object IGeoJsonObject {
     
     inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    inline def setCoordinatesVarargs(value: ((js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double)*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: ((js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double)*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setFeatures(value: js.Array[IGeoJsonObject]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: IGeoJsonObject*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: IGeoJsonObject*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setGeometries(value: js.Array[IGeoJsonObject]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    inline def setGeometriesVarargs(value: IGeoJsonObject*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: IGeoJsonObject*): Self = StObject.set(x, "geometries", js.Array(value*))
     
     inline def setGeometry(value: IGeoJsonObject): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

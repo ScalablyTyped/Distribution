@@ -10,10 +10,10 @@ A passport.js add-on to provide automatic OAuth 2.0 token refreshing.
 | ------------------ | :-------------: |
 | Full name          | passport-oauth2-refresh |
 | Keywords           | passport, oauth, oauth2, auth, authentication |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 491989 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 55644.0 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/fiznool/passport-oauth2-refresh)

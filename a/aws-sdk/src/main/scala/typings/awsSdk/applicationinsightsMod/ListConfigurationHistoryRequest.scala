@@ -9,7 +9,7 @@ trait ListConfigurationHistoryRequest extends StObject {
   /**
     * The end time of the event.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the configuration update event. Possible values include INFO, WARN, and ERROR.
@@ -34,7 +34,7 @@ trait ListConfigurationHistoryRequest extends StObject {
   /**
     * The start time of the event. 
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ListConfigurationHistoryRequest {
   
@@ -45,7 +45,7 @@ object ListConfigurationHistoryRequest {
   
   extension [Self <: ListConfigurationHistoryRequest](x: Self) {
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -65,7 +65,7 @@ object ListConfigurationHistoryRequest {
     
     inline def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

@@ -8,5 +8,5 @@ object deleteSamplingRuleMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/DeleteSamplingRule", "DeleteSamplingRule")
   @js.native
-  val DeleteSamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteSamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

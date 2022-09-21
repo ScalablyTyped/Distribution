@@ -45,7 +45,7 @@ trait GridLayout extends StObject {
     * @param pressedKey The key that was pressed.
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
-  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any
+  def getAdjacent(currentItem: Any, pressedKey: Key): Any
   
   /**
     * Gets or sets the position of group headers.
@@ -90,7 +90,7 @@ trait GridLayout extends StObject {
     * @param modifiedItems
     * @param modifiedGroups
     **/
-  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit
+  def layout(tree: Any, changedRange: Any, modifiedItems: Any, modifiedGroups: Any): Unit
   
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the maximumRowsOrColumns property.
@@ -105,7 +105,7 @@ trait GridLayout extends StObject {
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  var numberOfItemsPerItemsBlock: js.Any
+  var numberOfItemsPerItemsBlock: Any
   
   /**
     * Gets or sets the orientation of the GridLayout.
@@ -130,17 +130,17 @@ object GridLayout {
     dragLeave: () => Unit,
     dragOver: () => Unit,
     executeAnimations: () => Unit,
-    getAdjacent: (js.Any, Key) => js.Any,
+    getAdjacent: (Any, Key) => Any,
     groupHeaderPosition: HeaderPosition,
     groupInfo: js.Function,
     hitTest: (Double, Double) => Unit,
     initialize: (ILayoutSite2, Boolean) => Unit,
     itemInfo: js.Function,
     itemsFromRange: (Double, Double) => Unit,
-    layout: (js.Any, js.Any, js.Any, js.Any) => Unit,
+    layout: (Any, Any, Any, Any) => Unit,
     maxRows: Double,
     maximumRowsOrColumns: Double,
-    numberOfItemsPerItemsBlock: js.Any,
+    numberOfItemsPerItemsBlock: Any,
     orientation: Orientation,
     setupAnimations: () => Unit,
     uninitialize: () => Unit
@@ -161,7 +161,7 @@ object GridLayout {
     
     inline def setExecuteAnimations(value: () => Unit): Self = StObject.set(x, "executeAnimations", js.Any.fromFunction0(value))
     
-    inline def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
+    inline def setGetAdjacent(value: (Any, Key) => Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
     
     inline def setGroupHeaderPosition(value: HeaderPosition): Self = StObject.set(x, "groupHeaderPosition", value.asInstanceOf[js.Any])
     
@@ -175,13 +175,13 @@ object GridLayout {
     
     inline def setItemsFromRange(value: (Double, Double) => Unit): Self = StObject.set(x, "itemsFromRange", js.Any.fromFunction2(value))
     
-    inline def setLayout(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
+    inline def setLayout(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
     
     inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     inline def setMaximumRowsOrColumns(value: Double): Self = StObject.set(x, "maximumRowsOrColumns", value.asInstanceOf[js.Any])
     
-    inline def setNumberOfItemsPerItemsBlock(value: js.Any): Self = StObject.set(x, "numberOfItemsPerItemsBlock", value.asInstanceOf[js.Any])
+    inline def setNumberOfItemsPerItemsBlock(value: Any): Self = StObject.set(x, "numberOfItemsPerItemsBlock", value.asInstanceOf[js.Any])
     
     inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

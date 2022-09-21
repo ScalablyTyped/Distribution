@@ -15,5 +15,5 @@ object filterFuncMod {
     js.Array[T]
   ]
   
-  type IFilterValues = StringDictionary[js.Any]
+  type IFilterValues = StringDictionary[Any]
 }

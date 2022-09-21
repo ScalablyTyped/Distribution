@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param items The completion items.
   * @param isIncomplete The list is not complete.
   */
-class CompletionList[T /* <: CompletionItem */] () extends StObject {
+open class CompletionList[T /* <: CompletionItem */] () extends StObject {
   def this(items: js.Array[T]) = this()
   def this(items: js.Array[T], isIncomplete: Boolean) = this()
   def this(items: Unit, isIncomplete: Boolean) = this()

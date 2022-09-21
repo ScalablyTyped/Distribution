@@ -1,6 +1,5 @@
 package typings.winrt.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
@@ -131,23 +130,23 @@ object Store {
   
   trait ILicenseInformation extends StObject {
     
-    var expirationDate: Date
+    var expirationDate: js.Date
     
     var isActive: Boolean
     
     var isTrial: Boolean
     
-    var onlicensechanged: js.Any
+    var onlicensechanged: Any
     
     var productLicenses: IMapView[String, ProductLicense]
   }
   object ILicenseInformation {
     
     inline def apply(
-      expirationDate: Date,
+      expirationDate: js.Date,
       isActive: Boolean,
       isTrial: Boolean,
-      onlicensechanged: js.Any,
+      onlicensechanged: Any,
       productLicenses: IMapView[String, ProductLicense]
     ): ILicenseInformation = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isTrial = isTrial.asInstanceOf[js.Any], onlicensechanged = onlicensechanged.asInstanceOf[js.Any], productLicenses = productLicenses.asInstanceOf[js.Any])
@@ -156,13 +155,13 @@ object Store {
     
     extension [Self <: ILicenseInformation](x: Self) {
       
-      inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
       inline def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
       
-      inline def setOnlicensechanged(value: js.Any): Self = StObject.set(x, "onlicensechanged", value.asInstanceOf[js.Any])
+      inline def setOnlicensechanged(value: Any): Self = StObject.set(x, "onlicensechanged", value.asInstanceOf[js.Any])
       
       inline def setProductLicenses(value: IMapView[String, ProductLicense]): Self = StObject.set(x, "productLicenses", value.asInstanceOf[js.Any])
     }
@@ -214,7 +213,7 @@ object Store {
   
   trait IProductLicense extends StObject {
     
-    var expirationDate: Date
+    var expirationDate: js.Date
     
     var isActive: Boolean
     
@@ -222,14 +221,14 @@ object Store {
   }
   object IProductLicense {
     
-    inline def apply(expirationDate: Date, isActive: Boolean, productId: String): IProductLicense = {
+    inline def apply(expirationDate: js.Date, isActive: Boolean, productId: String): IProductLicense = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProductLicense]
     }
     
     extension [Self <: IProductLicense](x: Self) {
       
-      inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -270,10 +269,10 @@ object Store {
   object LicenseInformation {
     
     inline def apply(
-      expirationDate: Date,
+      expirationDate: js.Date,
       isActive: Boolean,
       isTrial: Boolean,
-      onlicensechanged: js.Any,
+      onlicensechanged: Any,
       productLicenses: IMapView[String, ProductLicense]
     ): LicenseInformation = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isTrial = isTrial.asInstanceOf[js.Any], onlicensechanged = onlicensechanged.asInstanceOf[js.Any], productLicenses = productLicenses.asInstanceOf[js.Any])
@@ -304,7 +303,7 @@ object Store {
        with IProductLicense
   object ProductLicense {
     
-    inline def apply(expirationDate: Date, isActive: Boolean, productId: String): ProductLicense = {
+    inline def apply(expirationDate: js.Date, isActive: Boolean, productId: String): ProductLicense = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProductLicense]
     }

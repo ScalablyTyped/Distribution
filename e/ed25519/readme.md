@@ -4,16 +4,16 @@
 Typings are for version 0.0
 
 ## Library description:
-An Ed25519 implementation for node.js
+An Ed25519 elliptic-curve cryptography implementation for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ed25519 |
 | Keywords           | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
-| # releases         | 1 |
-| # dependents       | 59 |
-| # downloads        | 226459 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24007.0 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/dazoe/ed25519#readme)

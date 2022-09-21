@@ -26,7 +26,7 @@ trait PrestoJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[Any]
   ] = js.undefined
   
   /** The HCFS URI of the script that contains SQL queries. */
@@ -48,7 +48,7 @@ object PrestoJob {
     
     inline def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
     
-    inline def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
+    inline def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value*))
     
     inline def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object PrestoJob {
     inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

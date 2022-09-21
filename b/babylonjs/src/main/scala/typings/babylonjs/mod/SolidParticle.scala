@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "SolidParticle")
 @js.native
-class SolidParticle protected ()
+open class SolidParticle protected ()
   extends typings.babylonjs.legacyMod.SolidParticle {
   /**
     * Creates a Solid Particle object.

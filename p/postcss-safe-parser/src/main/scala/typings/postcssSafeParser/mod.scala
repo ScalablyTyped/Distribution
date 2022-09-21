@@ -2,6 +2,7 @@ package typings.postcssSafeParser
 
 import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Parser
+import typings.postcss.mod.Root_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : PostCssSafeParser = js.native
   
-  type PostCssSafeParser = Parser
+  type PostCssSafeParser = Parser[Root_]
   
   type _To = PostCssSafeParser
   

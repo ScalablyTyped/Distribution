@@ -57,37 +57,37 @@ object TextEncodeEntry {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value :_*))
+    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value*))
     
     inline def setBaseline(value: ProductionRule[TextBaselineValueRef]): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
-    inline def setBaselineVarargs(value: (Test & TextBaselineValueRef)*): Self = StObject.set(x, "baseline", js.Array(value :_*))
+    inline def setBaselineVarargs(value: (Test & TextBaselineValueRef)*): Self = StObject.set(x, "baseline", js.Array(value*))
     
     inline def setDir(value: ProductionRule[ScaledValueRef[TextDirection]]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    inline def setDirVarargs(value: (Test & ScaledValueRef[TextDirection])*): Self = StObject.set(x, "dir", js.Array(value :_*))
+    inline def setDirVarargs(value: (Test & ScaledValueRef[TextDirection])*): Self = StObject.set(x, "dir", js.Array(value*))
     
     inline def setDx(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
-    inline def setDxVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "dx", js.Array(value :_*))
+    inline def setDxVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "dx", js.Array(value*))
     
     inline def setDy(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    inline def setDyVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "dy", js.Array(value :_*))
+    inline def setDyVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "dy", js.Array(value*))
     
     inline def setEllipsis(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
     inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    inline def setEllipsisVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ellipsis", js.Array(value :_*))
+    inline def setEllipsisVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "ellipsis", js.Array(value*))
     
     inline def setFont(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -95,52 +95,52 @@ object TextEncodeEntry {
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setFontSizeVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+    inline def setFontSizeVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "fontSize", js.Array(value*))
     
     inline def setFontStyle(value: ProductionRule[FontStyleValueRef]): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontStyleVarargs(value: (Test & FontStyleValueRef)*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+    inline def setFontStyleVarargs(value: (Test & FontStyleValueRef)*): Self = StObject.set(x, "fontStyle", js.Array(value*))
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFontVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "font", js.Array(value :_*))
+    inline def setFontVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "font", js.Array(value*))
     
     inline def setFontWeight(value: ProductionRule[FontWeightValueRef]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFontWeightVarargs(value: (Test & FontWeightValueRef)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+    inline def setFontWeightVarargs(value: (Test & FontWeightValueRef)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
     
     inline def setLimit(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    inline def setLimitVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "limit", js.Array(value :_*))
+    inline def setLimitVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "limit", js.Array(value*))
     
     inline def setLineBreak(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
     
     inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
     
-    inline def setLineBreakVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "lineBreak", js.Array(value :_*))
+    inline def setLineBreakVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "lineBreak", js.Array(value*))
     
     inline def setLineHeight(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setLineHeightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
+    inline def setLineHeightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "lineHeight", js.Array(value*))
     
     inline def setRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "radius", js.Array(value*))
     
     inline def setText(value: ProductionRule[TextValueRef]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: (Test & TextValueRef)*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: (Test & TextValueRef)*): Self = StObject.set(x, "text", js.Array(value*))
   }
 }

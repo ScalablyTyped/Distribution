@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Start extends StObject {
   
+  var limit: js.UndefOr[Double] = js.undefined
+  
   var ownerId: js.UndefOr[String] = js.undefined
   
   var start: js.UndefOr[String] = js.undefined
@@ -18,6 +20,10 @@ object Start {
   }
   
   extension [Self <: Start](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     

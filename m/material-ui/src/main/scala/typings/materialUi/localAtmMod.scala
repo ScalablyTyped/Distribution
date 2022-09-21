@@ -10,10 +10,10 @@ object localAtmMod {
   
   @JSImport("material-ui/svg-icons/maps/local-atm", JSImport.Default)
   @js.native
-  class default () extends MapsLocalAtm
+  open class default () extends MapsLocalAtm
   
   @JSImport("material-ui/svg-icons/maps/local-atm", "MapsLocalAtm")
   @js.native
-  class MapsLocalAtm ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalAtm ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -34,7 +34,7 @@ object UpdateXssMatchSetRequest {
     
     inline def setUpdates(value: XssMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: XssMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: XssMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
     
     inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }

@@ -15,15 +15,15 @@ object rendererMod {
   
   @JSImport("vega-typings/types/runtime/renderer", "CanvasHandler")
   @js.native
-  class CanvasHandler () extends Handler
+  open class CanvasHandler () extends Handler
   
   @JSImport("vega-typings/types/runtime/renderer", "Handler")
   @js.native
-  class Handler () extends StObject
+  open class Handler () extends StObject
   
   @JSImport("vega-typings/types/runtime/renderer", "Renderer")
   @js.native
-  class Renderer protected () extends StObject {
+  open class Renderer protected () extends StObject {
     def this(loader: Loader_) = this()
     
     def initialize(el: HTMLElement, width: Double, height: Double, origin: js.Array[Double]): this.type = js.native

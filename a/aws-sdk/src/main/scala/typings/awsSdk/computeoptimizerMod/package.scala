@@ -1,37 +1,101 @@
 package typings.awsSdk.computeoptimizerMod
 
+import typings.awsSdk.awsSdkStrings.Csv_
+import typings.awsSdk.awsSdkStrings.Duration_
+import typings.awsSdk.awsSdkStrings.Finding_
+import typings.awsSdk.awsSdkStrings.Status_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountEnrollmentStatuses = js.Array[AccountEnrollmentStatus]
 
-type AccountIds = js.Array[typings.awsSdk.computeoptimizerMod.AccountId]
+type AccountId = String
 
-type AutoScalingGroupArn = java.lang.String
+type AccountIds = js.Array[AccountId]
 
-type AutoScalingGroupArns = js.Array[typings.awsSdk.computeoptimizerMod.AutoScalingGroupArn]
+type AutoScalingGroupArn = String
 
-type AutoScalingGroupName = java.lang.String
+type AutoScalingGroupArns = js.Array[AutoScalingGroupArn]
 
-type AutoScalingGroupRecommendationOptions = js.Array[typings.awsSdk.computeoptimizerMod.AutoScalingGroupRecommendationOption]
+type AutoScalingGroupName = String
 
-type AutoScalingGroupRecommendations = js.Array[typings.awsSdk.computeoptimizerMod.AutoScalingGroupRecommendation]
+type AutoScalingGroupRecommendationOptions = js.Array[AutoScalingGroupRecommendationOption]
 
-type Code = java.lang.String
+type AutoScalingGroupRecommendations = js.Array[AutoScalingGroupRecommendation]
 
-type CreationTimestamp = typings.std.Date
+type Code = String
 
-type CurrentInstanceType = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_ARM64
+  - typings.awsSdk.awsSdkStrings.CURRENT
+  - java.lang.String
+*/
+type CpuVendorArchitecture = _CpuVendorArchitecture | String
 
-type DesiredCapacity = scala.Double
+type CpuVendorArchitectures = js.Array[CpuVendorArchitecture]
 
-type DestinationBucket = java.lang.String
+type CreationTimestamp = js.Date
 
-type DestinationKey = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.USD
+  - typings.awsSdk.awsSdkStrings.CNY
+  - java.lang.String
+*/
+type Currency = _Currency | String
 
-type DestinationKeyPrefix = java.lang.String
+type CurrentInstanceType = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VeryLow
+  - typings.awsSdk.awsSdkStrings.Low_
+  - typings.awsSdk.awsSdkStrings.Medium_
+  - typings.awsSdk.awsSdkStrings.High_
+  - java.lang.String
+*/
+type CurrentPerformanceRisk = _CurrentPerformanceRisk | String
+
+type DesiredCapacity = Double
+
+type DestinationBucket = String
+
+type DestinationKey = String
+
+type DestinationKeyPrefix = String
+
+type EBSFilterName = Finding_ | String
+
+type EBSFilters = js.Array[EBSFilter]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Optimized
+  - typings.awsSdk.awsSdkStrings.NotOptimized
+  - java.lang.String
+*/
+type EBSFinding = _EBSFinding | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VolumeReadOpsPerSecond
+  - typings.awsSdk.awsSdkStrings.VolumeWriteOpsPerSecond
+  - typings.awsSdk.awsSdkStrings.VolumeReadBytesPerSecond
+  - typings.awsSdk.awsSdkStrings.VolumeWriteBytesPerSecond
+  - java.lang.String
+*/
+type EBSMetricName = _EBSMetricName | String
+
+type EBSUtilizationMetrics = js.Array[EBSUtilizationMetric]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - java.lang.String
+*/
+type EnhancedInfrastructureMetrics = _EnhancedInfrastructureMetrics | String
+
+type EnrollmentFilterName = Status_ | String
+
+type EnrollmentFilters = js.Array[EnrollmentFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AccountId
@@ -44,6 +108,14 @@ type DestinationKeyPrefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsWriteOpsPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsReadBytesPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsWriteBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskReadOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskWriteOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskReadBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskWriteBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkInBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkOutBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkPacketsInPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkPacketsOutPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
   - typings.awsSdk.awsSdkStrings.CurrentConfigurationInstanceType
   - typings.awsSdk.awsSdkStrings.CurrentConfigurationDesiredCapacity
@@ -71,17 +143,27 @@ type DestinationKeyPrefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsStorage
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsNetwork
   - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+  - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesCpuVendorArchitectures
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesInferredWorkloadTypes
+  - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsMigrationEffort
   - java.lang.String
 */
-type ExportableAutoScalingGroupField = typings.awsSdk.computeoptimizerMod._ExportableAutoScalingGroupField | java.lang.String
+type ExportableAutoScalingGroupField = _ExportableAutoScalingGroupField | String
 
-type ExportableAutoScalingGroupFields = js.Array[typings.awsSdk.computeoptimizerMod.ExportableAutoScalingGroupField]
+type ExportableAutoScalingGroupFields = js.Array[ExportableAutoScalingGroupField]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AccountId
   - typings.awsSdk.awsSdkStrings.InstanceArn
   - typings.awsSdk.awsSdkStrings.InstanceName
   - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCodes
   - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
   - typings.awsSdk.awsSdkStrings.CurrentInstanceType
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsCpuMaximum
@@ -90,6 +172,14 @@ type ExportableAutoScalingGroupFields = js.Array[typings.awsSdk.computeoptimizer
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsWriteOpsPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsReadBytesPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.UtilizationMetricsEbsWriteBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskReadOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskWriteOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskReadBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDiskWriteBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkInBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkOutBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkPacketsInPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsNetworkPacketsOutPerSecondMaximum
   - typings.awsSdk.awsSdkStrings.CurrentOnDemandPrice
   - typings.awsSdk.awsSdkStrings.CurrentStandardOneYearNoUpfrontReservedPrice
   - typings.awsSdk.awsSdkStrings.CurrentStandardThreeYearNoUpfrontReservedPrice
@@ -100,6 +190,7 @@ type ExportableAutoScalingGroupFields = js.Array[typings.awsSdk.computeoptimizer
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsInstanceType
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsPlatformDifferences
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsVcpus
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsMemory
@@ -111,28 +202,106 @@ type ExportableAutoScalingGroupFields = js.Array[typings.awsSdk.computeoptimizer
   - typings.awsSdk.awsSdkStrings.RecommendationsSourcesRecommendationSourceArn
   - typings.awsSdk.awsSdkStrings.RecommendationsSourcesRecommendationSourceType
   - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+  - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesCpuVendorArchitectures
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesInferredWorkloadTypes
+  - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsMigrationEffort
   - java.lang.String
 */
-type ExportableInstanceField = typings.awsSdk.computeoptimizerMod._ExportableInstanceField | java.lang.String
+type ExportableInstanceField = _ExportableInstanceField | String
 
-type ExportableInstanceFields = js.Array[typings.awsSdk.computeoptimizerMod.ExportableInstanceField]
+type ExportableInstanceFields = js.Array[ExportableInstanceField]
 
-type FailureReason = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AccountId
+  - typings.awsSdk.awsSdkStrings.FunctionArn
+  - typings.awsSdk.awsSdkStrings.FunctionVersion
+  - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCodes
+  - typings.awsSdk.awsSdkStrings.NumberOfInvocations
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDurationMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsDurationAverage
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsMemoryMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsMemoryAverage
+  - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationMemorySize
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationTimeout
+  - typings.awsSdk.awsSdkStrings.CurrentCostTotal
+  - typings.awsSdk.awsSdkStrings.CurrentCostAverage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMemorySize
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsCostLow
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsCostHigh
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationExpected
+  - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+  - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - java.lang.String
+*/
+type ExportableLambdaFunctionField = _ExportableLambdaFunctionField | String
 
-type FileFormat = typings.awsSdk.awsSdkStrings.Csv_ | java.lang.String
+type ExportableLambdaFunctionFields = js.Array[ExportableLambdaFunctionField]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AccountId
+  - typings.awsSdk.awsSdkStrings.VolumeArn
+  - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsVolumeReadOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsVolumeWriteOpsPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsVolumeReadBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsVolumeWriteBytesPerSecondMaximum
+  - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeType
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeBaselineIOPS
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeBaselineThroughput
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeBurstIOPS
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeBurstThroughput
+  - typings.awsSdk.awsSdkStrings.CurrentConfigurationVolumeSize
+  - typings.awsSdk.awsSdkStrings.CurrentMonthlyPrice
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeType
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeBaselineIOPS
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeBaselineThroughput
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeBurstIOPS
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeBurstThroughput
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationVolumeSize
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsMonthlyPrice
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+  - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - java.lang.String
+*/
+type ExportableVolumeField = _ExportableVolumeField | String
+
+type ExportableVolumeFields = js.Array[ExportableVolumeField]
+
+type FailureReason = String
+
+type FileFormat = Csv_ | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCodes
   - typings.awsSdk.awsSdkStrings.RecommendationSourceType
   - java.lang.String
 */
-type FilterName = typings.awsSdk.computeoptimizerMod._FilterName | java.lang.String
+type FilterName = _FilterName | String
 
-type FilterValue = java.lang.String
+type FilterValue = String
 
-type FilterValues = js.Array[typings.awsSdk.computeoptimizerMod.FilterValue]
+type FilterValues = js.Array[FilterValue]
 
-type Filters = js.Array[typings.awsSdk.computeoptimizerMod.Filter]
+type Filters = js.Array[Filter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Underprovisioned
@@ -141,36 +310,95 @@ type Filters = js.Array[typings.awsSdk.computeoptimizerMod.Filter]
   - typings.awsSdk.awsSdkStrings.NotOptimized
   - java.lang.String
 */
-type Finding = typings.awsSdk.computeoptimizerMod._Finding | java.lang.String
+type Finding = _Finding | String
 
-type GetRecommendationErrors = js.Array[typings.awsSdk.computeoptimizerMod.GetRecommendationError]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MemoryOverprovisioned
+  - typings.awsSdk.awsSdkStrings.MemoryUnderprovisioned
+  - java.lang.String
+*/
+type FindingReasonCode = _FindingReasonCode | String
 
-type Identifier = java.lang.String
+type FunctionArn = String
 
-type IncludeMemberAccounts = scala.Boolean
+type FunctionArns = js.Array[FunctionArn]
 
-type InstanceArn = java.lang.String
+type FunctionVersion = String
 
-type InstanceArns = js.Array[typings.awsSdk.computeoptimizerMod.InstanceArn]
+type GetRecommendationErrors = js.Array[GetRecommendationError]
 
-type InstanceName = java.lang.String
+type High = Double
 
-type InstanceRecommendations = js.Array[typings.awsSdk.computeoptimizerMod.InstanceRecommendation]
+type Identifier = String
 
-type InstanceType = java.lang.String
+type IncludeMemberAccounts = Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AmazonEmr
+  - typings.awsSdk.awsSdkStrings.ApacheCassandra
+  - typings.awsSdk.awsSdkStrings.ApacheHadoop
+  - typings.awsSdk.awsSdkStrings.Memcached
+  - typings.awsSdk.awsSdkStrings.Nginx
+  - typings.awsSdk.awsSdkStrings.PostgreSql_
+  - typings.awsSdk.awsSdkStrings.Redis
+  - java.lang.String
+*/
+type InferredWorkloadType = _InferredWorkloadType | String
+
+type InferredWorkloadTypes = js.Array[InferredWorkloadType]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - java.lang.String
+*/
+type InferredWorkloadTypesPreference = _InferredWorkloadTypesPreference | String
+
+type InstanceArn = String
+
+type InstanceArns = js.Array[InstanceArn]
+
+type InstanceName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CPUOverprovisioned
+  - typings.awsSdk.awsSdkStrings.CPUUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.MemoryOverprovisioned
+  - typings.awsSdk.awsSdkStrings.MemoryUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.EBSThroughputOverprovisioned
+  - typings.awsSdk.awsSdkStrings.EBSThroughputUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.EBSIOPSOverprovisioned
+  - typings.awsSdk.awsSdkStrings.EBSIOPSUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.NetworkBandwidthOverprovisioned
+  - typings.awsSdk.awsSdkStrings.NetworkBandwidthUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.NetworkPPSOverprovisioned
+  - typings.awsSdk.awsSdkStrings.NetworkPPSUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.DiskIOPSOverprovisioned
+  - typings.awsSdk.awsSdkStrings.DiskIOPSUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.DiskThroughputOverprovisioned
+  - typings.awsSdk.awsSdkStrings.DiskThroughputUnderprovisioned
+  - java.lang.String
+*/
+type InstanceRecommendationFindingReasonCode = _InstanceRecommendationFindingReasonCode | String
+
+type InstanceRecommendationFindingReasonCodes = js.Array[InstanceRecommendationFindingReasonCode]
+
+type InstanceRecommendations = js.Array[InstanceRecommendation]
+
+type InstanceType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ResourceType
   - typings.awsSdk.awsSdkStrings.JobStatus
   - java.lang.String
 */
-type JobFilterName = typings.awsSdk.computeoptimizerMod._JobFilterName | java.lang.String
+type JobFilterName = _JobFilterName | String
 
-type JobFilters = js.Array[typings.awsSdk.computeoptimizerMod.JobFilter]
+type JobFilters = js.Array[JobFilter]
 
-type JobId = java.lang.String
+type JobId = String
 
-type JobIds = js.Array[typings.awsSdk.computeoptimizerMod.JobId]
+type JobIds = js.Array[JobId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Queued_
@@ -179,23 +407,89 @@ type JobIds = js.Array[typings.awsSdk.computeoptimizerMod.JobId]
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.computeoptimizerMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
-type LastRefreshTimestamp = typings.std.Date
+type LambdaFunctionMemoryMetricName = Duration_ | String
 
-type LastUpdatedTimestamp = typings.std.Date
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LowerBound
+  - typings.awsSdk.awsSdkStrings.UpperBound
+  - typings.awsSdk.awsSdkStrings.Expected
+  - java.lang.String
+*/
+type LambdaFunctionMemoryMetricStatistic = _LambdaFunctionMemoryMetricStatistic | String
 
-type LookBackPeriodInDays = scala.Double
+type LambdaFunctionMemoryProjectedMetrics = js.Array[LambdaFunctionMemoryProjectedMetric]
 
-type MaxResults = scala.Double
+type LambdaFunctionMemoryRecommendationOptions = js.Array[LambdaFunctionMemoryRecommendationOption]
 
-type MaxSize = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Duration_
+  - typings.awsSdk.awsSdkStrings.Memory_
+  - java.lang.String
+*/
+type LambdaFunctionMetricName = _LambdaFunctionMetricName | String
 
-type MemberAccountsEnrolled = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Maximum_
+  - typings.awsSdk.awsSdkStrings.Average_
+  - java.lang.String
+*/
+type LambdaFunctionMetricStatistic = _LambdaFunctionMetricStatistic | String
 
-type Message = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCode
+  - java.lang.String
+*/
+type LambdaFunctionRecommendationFilterName = _LambdaFunctionRecommendationFilterName | String
 
-type MetadataKey = java.lang.String
+type LambdaFunctionRecommendationFilters = js.Array[LambdaFunctionRecommendationFilter]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Optimized
+  - typings.awsSdk.awsSdkStrings.NotOptimized
+  - typings.awsSdk.awsSdkStrings.Unavailable_
+  - java.lang.String
+*/
+type LambdaFunctionRecommendationFinding = _LambdaFunctionRecommendationFinding | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MemoryOverprovisioned
+  - typings.awsSdk.awsSdkStrings.MemoryUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.InsufficientData
+  - typings.awsSdk.awsSdkStrings.Inconclusive
+  - java.lang.String
+*/
+type LambdaFunctionRecommendationFindingReasonCode = _LambdaFunctionRecommendationFindingReasonCode | String
+
+type LambdaFunctionRecommendationFindingReasonCodes = js.Array[LambdaFunctionRecommendationFindingReasonCode]
+
+type LambdaFunctionRecommendations = js.Array[LambdaFunctionRecommendation]
+
+type LambdaFunctionUtilizationMetrics = js.Array[LambdaFunctionUtilizationMetric]
+
+type LastRefreshTimestamp = js.Date
+
+type LastUpdatedTimestamp = js.Date
+
+type LookBackPeriodInDays = Double
+
+type Low = Double
+
+type MaxResults = Double
+
+type MaxSize = Double
+
+type Medium = Double
+
+type MemberAccountsEnrolled = Boolean
+
+type MemorySize = Double
+
+type Message = String
+
+type MetadataKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Cpu_
@@ -204,62 +498,128 @@ type MetadataKey = java.lang.String
   - typings.awsSdk.awsSdkStrings.EBS_WRITE_OPS_PER_SECOND
   - typings.awsSdk.awsSdkStrings.EBS_READ_BYTES_PER_SECOND
   - typings.awsSdk.awsSdkStrings.EBS_WRITE_BYTES_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.DISK_READ_OPS_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.DISK_WRITE_OPS_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.DISK_READ_BYTES_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.DISK_WRITE_BYTES_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.NETWORK_IN_BYTES_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.NETWORK_OUT_BYTES_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.NETWORK_PACKETS_IN_PER_SECOND
+  - typings.awsSdk.awsSdkStrings.NETWORK_PACKETS_OUT_PER_SECOND
   - java.lang.String
 */
-type MetricName = typings.awsSdk.computeoptimizerMod._MetricName | java.lang.String
+type MetricName = _MetricName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Maximum_
   - typings.awsSdk.awsSdkStrings.Average_
   - java.lang.String
 */
-type MetricStatistic = typings.awsSdk.computeoptimizerMod._MetricStatistic | java.lang.String
+type MetricStatistic = _MetricStatistic | String
 
-type MetricValue = scala.Double
+type MetricValue = Double
 
-type MetricValues = js.Array[typings.awsSdk.computeoptimizerMod.MetricValue]
+type MetricValues = js.Array[MetricValue]
 
-type MinSize = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VeryLow
+  - typings.awsSdk.awsSdkStrings.Low_
+  - typings.awsSdk.awsSdkStrings.Medium_
+  - typings.awsSdk.awsSdkStrings.High_
+  - java.lang.String
+*/
+type MigrationEffort = _MigrationEffort | String
 
-type NextToken = java.lang.String
+type MinSize = Double
 
-type PerformanceRisk = scala.Double
+type NextToken = String
 
-type Period = scala.Double
+type NumberOfInvocations = Double
 
-type ProjectedMetrics = js.Array[typings.awsSdk.computeoptimizerMod.ProjectedMetric]
+type NumberOfMemberAccountsOptedIn = Double
 
-type ProjectedUtilizationMetrics = js.Array[typings.awsSdk.computeoptimizerMod.UtilizationMetric]
+type PerformanceRisk = Double
 
-type Rank = scala.Double
+type Period = Double
 
-type RecommendationExportJobs = js.Array[typings.awsSdk.computeoptimizerMod.RecommendationExportJob]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Hypervisor_
+  - typings.awsSdk.awsSdkStrings.NetworkInterface
+  - typings.awsSdk.awsSdkStrings.StorageInterface
+  - typings.awsSdk.awsSdkStrings.InstanceStoreAvailability
+  - typings.awsSdk.awsSdkStrings.VirtualizationType
+  - typings.awsSdk.awsSdkStrings.Architecture
+  - java.lang.String
+*/
+type PlatformDifference = _PlatformDifference | String
 
-type RecommendationOptions = js.Array[typings.awsSdk.computeoptimizerMod.InstanceRecommendationOption]
+type PlatformDifferences = js.Array[PlatformDifference]
 
-type RecommendationSourceArn = java.lang.String
+type ProjectedMetrics = js.Array[ProjectedMetric]
+
+type ProjectedUtilizationMetrics = js.Array[UtilizationMetric]
+
+type Rank = Double
+
+type ReasonCodeSummaries = js.Array[ReasonCodeSummary]
+
+type RecommendationExportJobs = js.Array[RecommendationExportJob]
+
+type RecommendationOptions = js.Array[InstanceRecommendationOption]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EnhancedInfrastructureMetrics
+  - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
+  - java.lang.String
+*/
+type RecommendationPreferenceName = _RecommendationPreferenceName | String
+
+type RecommendationPreferenceNames = js.Array[RecommendationPreferenceName]
+
+type RecommendationPreferencesDetails = js.Array[RecommendationPreferencesDetail]
+
+type RecommendationSourceArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Ec2Instance_
   - typings.awsSdk.awsSdkStrings.AutoScalingGroup
+  - typings.awsSdk.awsSdkStrings.EbsVolume
+  - typings.awsSdk.awsSdkStrings.LambdaFunction
   - java.lang.String
 */
-type RecommendationSourceType = typings.awsSdk.computeoptimizerMod._RecommendationSourceType | java.lang.String
+type RecommendationSourceType = _RecommendationSourceType | String
 
-type RecommendationSources = js.Array[typings.awsSdk.computeoptimizerMod.RecommendationSource]
+type RecommendationSources = js.Array[RecommendationSource]
 
-type RecommendationSummaries = js.Array[typings.awsSdk.computeoptimizerMod.RecommendationSummary]
+type RecommendationSummaries = js.Array[RecommendationSummary]
 
-type RecommendedInstanceType = java.lang.String
+type RecommendedInstanceType = String
 
-type RecommendedOptionProjectedMetrics = js.Array[typings.awsSdk.computeoptimizerMod.RecommendedOptionProjectedMetric]
+type RecommendedOptionProjectedMetrics = js.Array[RecommendedOptionProjectedMetric]
+
+type ResourceArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Ec2Instance_
   - typings.awsSdk.awsSdkStrings.AutoScalingGroup
+  - typings.awsSdk.awsSdkStrings.EbsVolume
+  - typings.awsSdk.awsSdkStrings.LambdaFunction
+  - typings.awsSdk.awsSdkStrings.NotApplicable
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.computeoptimizerMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | String
+
+type SavingsOpportunityPercentage = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Organization_
+  - typings.awsSdk.awsSdkStrings.AccountId
+  - typings.awsSdk.awsSdkStrings.ResourceArn
+  - java.lang.String
+*/
+type ScopeName = _ScopeName | String
+
+type ScopeValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -268,23 +628,47 @@ type ResourceType = typings.awsSdk.computeoptimizerMod._ResourceType | java.lang
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type Status = typings.awsSdk.computeoptimizerMod._Status | java.lang.String
+type Status = _Status | String
 
-type StatusReason = java.lang.String
+type StatusReason = String
 
-type Summaries = js.Array[typings.awsSdk.computeoptimizerMod.Summary]
+type Summaries = js.Array[Summary]
 
-type SummaryValue = scala.Double
+type SummaryValue = Double
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type Timestamps = js.Array[typings.awsSdk.computeoptimizerMod.Timestamp]
+type Timestamps = js.Array[js.Date]
 
-type UtilizationMetrics = js.Array[typings.awsSdk.computeoptimizerMod.UtilizationMetric]
+type UtilizationMetrics = js.Array[UtilizationMetric]
+
+type Value = Double
+
+type VeryLow = Double
+
+type VolumeArn = String
+
+type VolumeArns = js.Array[VolumeArn]
+
+type VolumeBaselineIOPS = Double
+
+type VolumeBaselineThroughput = Double
+
+type VolumeBurstIOPS = Double
+
+type VolumeBurstThroughput = Double
+
+type VolumeRecommendationOptions = js.Array[VolumeRecommendationOption]
+
+type VolumeRecommendations = js.Array[VolumeRecommendation]
+
+type VolumeSize = Double
+
+type VolumeType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-11-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.computeoptimizerMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -35,6 +35,8 @@ trait Basemap
   /**
     * Indicates whether the basemap instance has loaded.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#loaded)
     */
   val loaded: Boolean = js.native

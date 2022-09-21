@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.Timestamp")
 @js.native
-class Timestamp ()
+open class Timestamp ()
   extends StObject
      with ITimestamp {
   
@@ -22,7 +22,7 @@ class Timestamp ()
   var Fraction: Double = js.native
   
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /* CompleteClass */
   var Hour: Double = js.native
@@ -40,7 +40,7 @@ class Timestamp ()
   var Second: Double = js.native
   
   /* CompleteClass */
-  override def SetValue(Value: js.Any): Unit = js.native
+  override def SetValue(Value: Any): Unit = js.native
   
   /* CompleteClass */
   override def UtcToLocalTime(): ITimestamp = js.native

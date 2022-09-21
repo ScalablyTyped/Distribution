@@ -14,7 +14,7 @@ object libOverlayMod {
   
   @JSImport("office-ui-fabric-react/lib/Overlay", "OverlayBase")
   @js.native
-  class OverlayBase protected ()
+  open class OverlayBase protected ()
     extends typings.officeUiFabricReact.overlayMod.OverlayBase {
     def this(props: IOverlayProps) = this()
   }

@@ -32,7 +32,7 @@ trait AudioDescription extends StObject {
   var AudioTypeControl: js.UndefOr[typings.awsSdk.mediaconvertMod.AudioTypeControl] = js.undefined
   
   /**
-    * Audio codec settings (CodecSettings) under (AudioDescriptions) contains the group of settings related to audio encoding. The settings in this group vary depending on the value that you choose for Audio codec (Codec). For each codec enum that you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * AAC, AacSettings * MP2, Mp2Settings * MP3, Mp3Settings * WAV, WavSettings * AIFF, AiffSettings * AC3, Ac3Settings * EAC3, Eac3Settings * EAC3_ATMOS, Eac3AtmosSettings * VORBIS, VorbisSettings * OPUS, OpusSettings
+    * Settings related to audio encoding. The settings in this group vary depending on the value that you choose for your audio codec.
     */
   var CodecSettings: js.UndefOr[AudioCodecSettings] = js.undefined
   

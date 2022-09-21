@@ -34,7 +34,7 @@ object XModule {
     Identifier: String,
     acquire: () => Unit,
     getIdentifier: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setIdentifier: String => Unit
   ): XModule = {

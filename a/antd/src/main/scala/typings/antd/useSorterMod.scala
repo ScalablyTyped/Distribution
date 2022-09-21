@@ -9,6 +9,7 @@ import typings.antd.tableInterfaceMod.SortOrder
 import typings.antd.tableInterfaceMod.SorterResult
 import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.tableInterfaceMod.TransformColumns
+import typings.antd.tooltipMod.TooltipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +81,7 @@ object useSorterMod {
     
     var prefixCls: String = js.native
     
-    var showSorterTooltip: js.UndefOr[Boolean] = js.native
+    var showSorterTooltip: js.UndefOr[Boolean | TooltipProps] = js.native
     
     var sortDirections: js.Array[SortOrder] = js.native
     

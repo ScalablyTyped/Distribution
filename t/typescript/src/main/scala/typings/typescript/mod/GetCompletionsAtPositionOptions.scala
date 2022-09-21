@@ -19,6 +19,8 @@ trait GetCompletionsAtPositionOptions
     * (as opposed to when the user explicitly requested them) this should be set.
     */
   var triggerCharacter: js.UndefOr[CompletionsTriggerCharacter] = js.undefined
+  
+  var triggerKind: js.UndefOr[CompletionTriggerKind] = js.undefined
 }
 object GetCompletionsAtPositionOptions {
   
@@ -40,5 +42,9 @@ object GetCompletionsAtPositionOptions {
     inline def setTriggerCharacter(value: CompletionsTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     
     inline def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
+    
+    inline def setTriggerKind(value: CompletionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerKindUndefined: Self = StObject.set(x, "triggerKind", js.undefined)
   }
 }

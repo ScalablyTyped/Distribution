@@ -22,7 +22,7 @@ object featureFormMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with FeatureForm {
     def this(properties: FeatureFormProperties) = this()

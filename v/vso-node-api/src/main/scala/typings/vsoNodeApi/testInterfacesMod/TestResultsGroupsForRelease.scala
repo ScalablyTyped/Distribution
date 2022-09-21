@@ -32,7 +32,7 @@ object TestResultsGroupsForRelease {
     
     inline def setFields(value: js.Array[FieldDetailsForTestResults]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setReleaseEnvId(value: Double): Self = StObject.set(x, "releaseEnvId", value.asInstanceOf[js.Any])
     

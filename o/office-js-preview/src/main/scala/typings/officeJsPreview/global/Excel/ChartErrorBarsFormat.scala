@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for chart error bars.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartErrorBarsFormat")
 @js.native
-class ChartErrorBarsFormat ()
+open class ChartErrorBarsFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartErrorBarsFormat {
   

@@ -20,6 +20,6 @@ object QFieldValues {
     
     inline def setQFieldValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qFieldValues", value.asInstanceOf[js.Any])
     
-    inline def setQFieldValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qFieldValues", js.Array(value :_*))
+    inline def setQFieldValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qFieldValues", js.Array(value*))
   }
 }

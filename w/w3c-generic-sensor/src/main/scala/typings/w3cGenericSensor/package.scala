@@ -1,17 +1,18 @@
 package typings.w3cGenericSensor
 
+import typings.std.DOMMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AbsoluteOrientationSensor = typings.w3cGenericSensor.OrientationSensor
+type AbsoluteOrientationSensor = OrientationSensor
 
-type GravitySensor = typings.w3cGenericSensor.Accelerometer
+type GravitySensor = Accelerometer
 
-type LinearAccelerationSensor = typings.w3cGenericSensor.Accelerometer
+type LinearAccelerationSensor = Accelerometer
 
-type RelativeOrientationSensor = typings.w3cGenericSensor.OrientationSensor
+type RelativeOrientationSensor = OrientationSensor
 
 // Orientation Sensor: https://www.w3.org/TR/orientation-sensor/
-type RotationMatrixType = typings.std.Float32Array | typings.std.Float64Array | typings.std.DOMMatrix
+type RotationMatrixType = js.typedarray.Float32Array | js.typedarray.Float64Array | DOMMatrix

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientListBoxItem")
 @js.native
-class BootstrapClientListBoxItem ()
+open class BootstrapClientListBoxItem ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientListBoxItem

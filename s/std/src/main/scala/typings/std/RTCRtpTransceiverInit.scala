@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCRtpTransceiverInit extends StObject {
   
+  /* standard dom */
   var direction: js.UndefOr[RTCRtpTransceiverDirection] = js.undefined
   
+  /* standard dom */
   var sendEncodings: js.UndefOr[js.Array[RTCRtpEncodingParameters]] = js.undefined
   
+  /* standard dom */
   var streams: js.UndefOr[js.Array[MediaStream]] = js.undefined
 }
 object RTCRtpTransceiverInit {
@@ -29,12 +32,12 @@ object RTCRtpTransceiverInit {
     
     inline def setSendEncodingsUndefined: Self = StObject.set(x, "sendEncodings", js.undefined)
     
-    inline def setSendEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "sendEncodings", js.Array(value :_*))
+    inline def setSendEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "sendEncodings", js.Array(value*))
     
     inline def setStreams(value: js.Array[MediaStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
     inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
   }
 }

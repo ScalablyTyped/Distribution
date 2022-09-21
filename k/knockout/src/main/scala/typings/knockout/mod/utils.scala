@@ -9,7 +9,6 @@ import typings.std.Element
 import typings.std.EventListener
 import typings.std.HTMLFormElement
 import typings.std.Node
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +26,25 @@ object utils {
   inline def arrayFilter[T](
     array: js.Array[T],
     predicate: js.Function2[/* item */ T, /* index */ Double, Boolean],
-    predicateOwner: js.Any
+    predicateOwner: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFilter")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], predicateOwner.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def arrayFirst[T](array: js.Array[T], predicate: js.Function2[/* item */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFirst")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def arrayFirst[T](
     array: js.Array[T],
     predicate: js.Function2[/* item */ T, /* index */ Double, Boolean],
-    predicateOwner: js.Any
+    predicateOwner: Any
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFirst")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], predicateOwner.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def arrayForEach[T](array: js.Array[T], action: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayForEach")(array.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def arrayForEach[T](
-    array: js.Array[T],
-    action: js.Function2[/* item */ T, /* index */ Double, Unit],
-    actionOwner: js.Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayForEach")(array.asInstanceOf[js.Any], action.asInstanceOf[js.Any], actionOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayForEach[T](array: js.Array[T], action: js.Function2[/* item */ T, /* index */ Double, Unit], actionOwner: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayForEach")(array.asInstanceOf[js.Any], action.asInstanceOf[js.Any], actionOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def arrayGetDistinctValues[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayGetDistinctValues")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def arrayIndexOf[T](array: MaybeObservableArray[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def arrayMap[T, U](array: js.Array[T], mapping: js.Function2[/* item */ T, /* index */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMap")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
-  inline def arrayMap[T, U](
-    array: js.Array[T],
-    mapping: js.Function2[/* item */ T, /* index */ Double, U],
-    mappingOwner: js.Any
-  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMap")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], mappingOwner.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def arrayMap[T, U](array: js.Array[T], mapping: js.Function2[/* item */ T, /* index */ Double, U], mappingOwner: Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMap")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], mappingOwner.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
   inline def arrayPushAll[T](array: MaybeObservableArray[T], valuesToPush: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPushAll")(array.asInstanceOf[js.Any], valuesToPush.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
@@ -93,18 +84,18 @@ object utils {
   
   @JSImport("knockout", "utils.fieldsIncludedWithJsonPost")
   @js.native
-  val fieldsIncludedWithJsonPost: js.Array[String | RegExp] = js.native
+  val fieldsIncludedWithJsonPost: js.Array[String | js.RegExp] = js.native
   
-  inline def getFormFields(form: HTMLFormElement, fieldName: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def getFormFields(form: HTMLFormElement, fieldName: RegExp): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def getFormFields(form: HTMLFormElement, fieldName: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def getFormFields(form: HTMLFormElement, fieldName: js.RegExp): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def objectForEach(obj: js.Object, action: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectForEach")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectForEach(obj: js.Object, action: js.Function2[/* key */ String, /* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectForEach")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def objectForEach[T](obj: StringDictionary[T], action: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectForEach")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def parseHtmlFragment(html: String): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(html.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   inline def parseHtmlFragment(html: String, documentContext: Document): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(html.asInstanceOf[js.Any], documentContext.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  inline def parseJson(jsonString: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseJson(jsonString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(jsonString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def parseJson_T_T[T](jsonString: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(jsonString.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -140,12 +131,12 @@ object utils {
   
   inline def setTextContent(element: Node, textContent: MaybeSubscribable[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextContent")(element.asInstanceOf[js.Any], textContent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stringifyJson(data: MaybeSubscribable[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringifyJson(data: MaybeSubscribable[js.Any], replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringifyJson(data: MaybeSubscribable[js.Any], replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any], replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any], replacer: js.Function, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any], replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any], replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyJson(data: MaybeSubscribable[Any], replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def toggleDomNodeCssClass(node: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleDomNodeCssClass")(node.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def toggleDomNodeCssClass(node: Element, className: String, shouldHaveClass: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleDomNodeCssClass")(node.asInstanceOf[js.Any], className.asInstanceOf[js.Any], shouldHaveClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -293,7 +284,7 @@ object utils {
       
       inline def setIncludeFieldsUndefined: Self = StObject.set(x, "includeFields", js.undefined)
       
-      inline def setIncludeFieldsVarargs(value: String*): Self = StObject.set(x, "includeFields", js.Array(value :_*))
+      inline def setIncludeFieldsVarargs(value: String*): Self = StObject.set(x, "includeFields", js.Array(value*))
       
       inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

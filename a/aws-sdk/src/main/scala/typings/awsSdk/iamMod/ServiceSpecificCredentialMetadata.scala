@@ -9,7 +9,7 @@ trait ServiceSpecificCredentialMetadata extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the service-specific credential were created.
     */
-  var CreateDate: dateType
+  var CreateDate: js.Date
   
   /**
     * The name of the service associated with the service-specific credential.
@@ -39,7 +39,7 @@ trait ServiceSpecificCredentialMetadata extends StObject {
 object ServiceSpecificCredentialMetadata {
   
   inline def apply(
-    CreateDate: dateType,
+    CreateDate: js.Date,
     ServiceName: serviceName,
     ServiceSpecificCredentialId: serviceSpecificCredentialId,
     ServiceUserName: serviceUserName,
@@ -52,7 +52,7 @@ object ServiceSpecificCredentialMetadata {
   
   extension [Self <: ServiceSpecificCredentialMetadata](x: Self) {
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     

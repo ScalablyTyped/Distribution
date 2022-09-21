@@ -1,9 +1,17 @@
 package typings.nats
 
-import typings.node.BufferEncoding
-import typings.node.eventsMod.EventEmitter
-import typings.node.tlsMod.TlsOptions
-import typings.std.Error
+import typings.nats.anon.PartialConsumerConfig
+import typings.nats.authenticatorMod.Authenticator
+import typings.nats.benchMod.BenchOpts
+import typings.nats.codecMod.Codec
+import typings.nats.headersMod.MsgHdrs
+import typings.nats.typesMod.ConnectionOptions
+import typings.nats.typesMod.ConsumerOptsBuilder
+import typings.nats.typesMod.JsMsg
+import typings.nats.typesMod.Msg
+import typings.nats.typesMod.Nanos
+import typings.nats.typesMod.NatsConnection
+import typings.nats.utilMod.Deferred_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,508 +22,404 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("nats", "BAD_AUTHENTICATION")
+  @JSImport("nats", "AckPolicy")
   @js.native
-  val BAD_AUTHENTICATION: String = js.native
-  
-  @JSImport("nats", "BAD_CALLBACK")
-  @js.native
-  val BAD_CALLBACK: String = js.native
-  
-  @JSImport("nats", "BAD_CREDS")
-  @js.native
-  val BAD_CREDS: String = js.native
-  
-  @JSImport("nats", "BAD_JSON")
-  @js.native
-  val BAD_JSON: String = js.native
-  
-  @JSImport("nats", "BAD_MSG")
-  @js.native
-  val BAD_MSG: String = js.native
-  
-  @JSImport("nats", "BAD_OPTIONS")
-  @js.native
-  val BAD_OPTIONS: String = js.native
-  
-  @JSImport("nats", "BAD_REPLY")
-  @js.native
-  val BAD_REPLY: String = js.native
-  
-  @JSImport("nats", "BAD_SUBJECT")
-  @js.native
-  val BAD_SUBJECT: String = js.native
-  
-  @JSImport("nats", "BAD_TIMEOUT")
-  @js.native
-  val BAD_TIMEOUT: String = js.native
-  
-  @JSImport("nats", "CLIENT_CERT_REQ")
-  @js.native
-  val CLIENT_CERT_REQ: String = js.native
-  
-  @JSImport("nats", "CONN_CLOSED")
-  @js.native
-  val CONN_CLOSED: String = js.native
-  
-  @JSImport("nats", "CONN_DRAINING")
-  @js.native
-  val CONN_DRAINING: String = js.native
-  
-  @JSImport("nats", "CONN_ERR")
-  @js.native
-  val CONN_ERR: String = js.native
-  
-  @JSImport("nats", "CONN_TIMEOUT")
-  @js.native
-  val CONN_TIMEOUT: String = js.native
-  
-  @JSImport("nats", "INVALID_ENCODING")
-  @js.native
-  val INVALID_ENCODING: String = js.native
-  
-  @JSImport("nats", "NATS_PROTOCOL_ERR")
-  @js.native
-  val NATS_PROTOCOL_ERR: String = js.native
-  
-  @JSImport("nats", "NKEY_OR_JWT_REQ")
-  @js.native
-  val NKEY_OR_JWT_REQ: String = js.native
-  
-  @JSImport("nats", "NON_SECURE_CONN_REQ")
-  @js.native
-  val NON_SECURE_CONN_REQ: String = js.native
-  
-  @JSImport("nats", "NO_ECHO_NOT_SUPPORTED")
-  @js.native
-  val NO_ECHO_NOT_SUPPORTED: String = js.native
-  
-  @JSImport("nats", "NO_SEED_IN_CREDS")
-  @js.native
-  val NO_SEED_IN_CREDS: String = js.native
-  
-  @JSImport("nats", "NO_USER_JWT_IN_CREDS")
-  @js.native
-  val NO_USER_JWT_IN_CREDS: String = js.native
-  
-  @JSImport("nats", "OPENSSL_ERR")
-  @js.native
-  val OPENSSL_ERR: String = js.native
-  
-  @JSImport("nats", "PERMISSIONS_ERR")
-  @js.native
-  val PERMISSIONS_ERR: String = js.native
-  
-  @JSImport("nats", "REQ_TIMEOUT")
-  @js.native
-  val REQ_TIMEOUT: String = js.native
-  
-  @JSImport("nats", "SECURE_CONN_REQ")
-  @js.native
-  val SECURE_CONN_REQ: String = js.native
-  
-  @JSImport("nats", "SIGCB_NOTFUNC")
-  @js.native
-  val SIGCB_NOTFUNC: String = js.native
-  
-  @JSImport("nats", "SIGNATURE_REQUIRED")
-  @js.native
-  val SIGNATURE_REQUIRED: String = js.native
-  
-  @JSImport("nats", "STALE_CONNECTION_ERR")
-  @js.native
-  val STALE_CONNECTION_ERR: String = js.native
-  
-  @JSImport("nats", "SUB_DRAINING")
-  @js.native
-  val SUB_DRAINING: String = js.native
-  
-  inline def connect(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Client]
-  inline def connect(opts: ClientOpts): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[Client]
-  inline def connect(url: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
-  inline def connect(url: String, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
-  inline def connect(url: Double): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
-  inline def connect(url: Double, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
-  inline def connect(url: Unit, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
-  
-  inline def createInbox(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")().asInstanceOf[String]
-  
-  @JSImport("nats", "version")
-  @js.native
-  val version: String = js.native
-  
-  @js.native
-  trait Client extends EventEmitter {
+  object AckPolicy extends StObject {
     
-    /**
-    	 * Close the connection to the server.
-    	 */
-    def close(): Unit = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.AckPolicy & String] = js.native
     
-    /**
-    	 * Create a properly formatted inbox subject.
-    	 */
-    def createInbox(): String = js.native
+    /* "all" */ val All: typings.nats.typesMod.AckPolicy.All & String = js.native
     
-    /**
-    	 * Drains all subscriptions. If an opt_callback is provided, the callback
-    	 * is called if there's an error with an error argument.
-    	 *
-    	 * Note that after calling drain, it is impossible to create new subscriptions
-    	 * or any requests. As soon as all messages for the draining subscriptions are
-    	 * processed, it is also impossible to publish new messages.
-    	 *
-    	 * A drained connection is closed when the opt_callback is called without arguments.
-    	 * @param callback
-    	 */
-    def drain(): Unit = js.native
-    def drain(callback: js.Function): Unit = js.native
+    /* "explicit" */ val Explicit: typings.nats.typesMod.AckPolicy.Explicit & String = js.native
     
-    /**
-    	 * Draining a subscription is similar to unsubscribe but inbound pending messages are
-    	 * not discarded. When the last in-flight message is processed, the subscription handler
-    	 * is removed.
-    	 * @param sid
-    	 * @param callback
-    	 */
-    def drainSubscription(sid: Double): Unit = js.native
-    def drainSubscription(sid: Double, callback: js.Function): Unit = js.native
+    /* "none" */ val None: typings.nats.typesMod.AckPolicy.None & String = js.native
     
-    /**
-    	 * Flush outbound queue to server and call optional callback when server has processed
-    	 * all data.
-    	 */
-    def flush(): Unit = js.native
-    def flush(callback: js.Function): Unit = js.native
-    
-    /**
-    	 * Report number of outstanding subscriptions on this connection.
-    	 */
-    def numSubscriptions(): Double = js.native
-    
-    /**
-    	 * Publish a message to the given subject, with optional reply and callback.
-    	 */
-    def publish(subject: String): Unit = js.native
-    def publish(subject: String, callback: js.Function): Unit = js.native
-    def publish(subject: String, msg: js.Any): Unit = js.native
-    def publish(subject: String, msg: js.Any, callback: js.Function): Unit = js.native
-    def publish(subject: String, msg: js.Any, reply: String): Unit = js.native
-    def publish(subject: String, msg: js.Any, reply: String, callback: js.Function): Unit = js.native
-    
-    /**
-    	 * Publish a message with an implicit inbox listener as the reply. Message is optional.
-    	 * This should be treated as a subscription. You can optionally indicate how many
-    	 * messages you only want to receive and how long to wait for the messages using
-    	 * opt_options = {max:N, timeout:N}. Otherwise you will need to unsubscribe to stop
-    	 * the message stream manually by calling unsubscribe() on the subscription id returned.
-    	 */
-    def request(subject: String, callback: js.Function): Double = js.native
-    def request(subject: String, msg: js.Any, callback: js.Function): Double = js.native
-    def request(subject: String, msg: js.Any, options: RequestOptions, callback: js.Function): Double = js.native
-    
-    def requestOne(subject: String, msg: js.Any, options: RequestOptions, timeout: Double, callback: js.Function): Double = js.native
-    def requestOne(subject: String, msg: js.Any, timeout: Double, callback: js.Function): Double = js.native
-    /**
-    	 * Publish a message with an implicit inbox listener as the reply. Message is optional.
-    	 * This should be treated as a subscription. Request one, will terminate the subscription
-    	 * after the first response is received or the timeout is reached.
-    	 * The callback can be called with either a message payload or a NatsError to indicate
-    	 * a timeout has been reached.
-    	 * The subscription id is returned.
-    	 */
-    def requestOne(subject: String, timeout: Double, callback: js.Function): Double = js.native
-    
-    /**
-    	 * Subscribe to a given subject, with optional options and callback. opts can be
-    	 * omitted, even with a callback. A subscription id is returned.
-    	 */
-    def subscribe(subject: String, callback: js.Function): Double = js.native
-    def subscribe(subject: String, opts: SubscribeOptions, callback: js.Function): Double = js.native
-    
-    /**
-    	 * Set a timeout on a subscription.
-    	 */
-    def timeout(sid: Double, timeout: Double, expected: Double, callback: js.Function1[/* sid */ Double, Unit]): Unit = js.native
-    
-    /**
-    	 * Unsubscribe to a given subscription id, with optional max number of messages before unsubscribing.
-    	 */
-    def unsubscribe(sid: Double): Unit = js.native
-    def unsubscribe(sid: Double, max: Double): Unit = js.native
+    /* "" */ val NotSet: typings.nats.typesMod.AckPolicy.NotSet & String = js.native
   }
   
-  trait ClientOpts extends StObject {
+  @JSImport("nats", "AdvisoryKind")
+  @js.native
+  object AdvisoryKind extends StObject {
     
-    var encoding: js.UndefOr[BufferEncoding] = js.undefined
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.AdvisoryKind & String] = js.native
     
-    var json: js.UndefOr[Boolean] = js.undefined
+    /* "api_audit" */ val API: typings.nats.typesMod.AdvisoryKind.API & String = js.native
     
-    var maxPingOut: js.UndefOr[Double] = js.undefined
+    /* "consumer_ack" */ val Ack: typings.nats.typesMod.AdvisoryKind.Ack & String = js.native
     
-    var maxReconnectAttempts: js.UndefOr[Double] = js.undefined
+    /* "consumer_action" */ val ConsumerAction: typings.nats.typesMod.AdvisoryKind.ConsumerAction & String = js.native
     
-    var name: js.UndefOr[String] = js.undefined
+    /* "consumer_leader_elected" */ val ConsumerLeaderElected: typings.nats.typesMod.AdvisoryKind.ConsumerLeaderElected & String = js.native
     
-    var nkey: js.UndefOr[String] = js.undefined
+    /* "consumer_quorum_lost" */ val ConsumerQuorumLost: typings.nats.typesMod.AdvisoryKind.ConsumerQuorumLost & String = js.native
     
-    var noEcho: js.UndefOr[Boolean] = js.undefined
+    /* "max_deliver" */ val MaxDeliver: typings.nats.typesMod.AdvisoryKind.MaxDeliver & String = js.native
     
-    var noRandomize: js.UndefOr[Boolean] = js.undefined
+    /* "restore_complete" */ val RestoreComplete: typings.nats.typesMod.AdvisoryKind.RestoreComplete & String = js.native
     
-    var nonceSigner: js.UndefOr[js.Function] = js.undefined
+    /* "restore_create" */ val RestoreCreate: typings.nats.typesMod.AdvisoryKind.RestoreCreate & String = js.native
     
-    var pass: js.UndefOr[String] = js.undefined
+    /* "snapshot_complete" */ val SnapshotComplete: typings.nats.typesMod.AdvisoryKind.SnapshotComplete & String = js.native
     
-    var pedantic: js.UndefOr[Boolean] = js.undefined
+    /* "snapshot_create" */ val SnapshotCreate: typings.nats.typesMod.AdvisoryKind.SnapshotCreate & String = js.native
     
-    var pingInterval: js.UndefOr[Double] = js.undefined
+    /* "stream_action" */ val StreamAction: typings.nats.typesMod.AdvisoryKind.StreamAction & String = js.native
     
-    var preserveBuffers: js.UndefOr[Boolean] = js.undefined
+    /* "stream_leader_elected" */ val StreamLeaderElected: typings.nats.typesMod.AdvisoryKind.StreamLeaderElected & String = js.native
     
-    var reconnect: js.UndefOr[Boolean] = js.undefined
+    /* "stream_quorum_lost" */ val StreamQuorumLost: typings.nats.typesMod.AdvisoryKind.StreamQuorumLost & String = js.native
     
-    var reconnectDelayHandler: js.UndefOr[js.Function0[Double]] = js.undefined
-    
-    var reconnectJitter: js.UndefOr[Double] = js.undefined
-    
-    var reconnectJitterTLS: js.UndefOr[Double] = js.undefined
-    
-    var reconnectTimeWait: js.UndefOr[Double] = js.undefined
-    
-    var servers: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var timeout: js.UndefOr[Double] = js.undefined
-    
-    var tls: js.UndefOr[Boolean | TlsOptions] = js.undefined
-    
-    var token: js.UndefOr[String] = js.undefined
-    
-    var tokenHandler: js.UndefOr[js.Function0[String]] = js.undefined
-    
-    var url: js.UndefOr[String] = js.undefined
-    
-    var useOldRequestStyle: js.UndefOr[Boolean] = js.undefined
-    
-    var user: js.UndefOr[String] = js.undefined
-    
-    var userCreds: js.UndefOr[String] = js.undefined
-    
-    var userJWT: js.UndefOr[js.Function0[String]] = js.undefined
-    
-    var verbose: js.UndefOr[Boolean] = js.undefined
-    
-    var waitOnFirstConnect: js.UndefOr[Boolean] = js.undefined
-    
-    var yieldTime: js.UndefOr[Double] = js.undefined
-  }
-  object ClientOpts {
-    
-    inline def apply(): ClientOpts = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ClientOpts]
-    }
-    
-    extension [Self <: ClientOpts](x: Self) {
-      
-      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
-      
-      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
-      
-      inline def setMaxPingOut(value: Double): Self = StObject.set(x, "maxPingOut", value.asInstanceOf[js.Any])
-      
-      inline def setMaxPingOutUndefined: Self = StObject.set(x, "maxPingOut", js.undefined)
-      
-      inline def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
-      
-      inline def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setNkey(value: String): Self = StObject.set(x, "nkey", value.asInstanceOf[js.Any])
-      
-      inline def setNkeyUndefined: Self = StObject.set(x, "nkey", js.undefined)
-      
-      inline def setNoEcho(value: Boolean): Self = StObject.set(x, "noEcho", value.asInstanceOf[js.Any])
-      
-      inline def setNoEchoUndefined: Self = StObject.set(x, "noEcho", js.undefined)
-      
-      inline def setNoRandomize(value: Boolean): Self = StObject.set(x, "noRandomize", value.asInstanceOf[js.Any])
-      
-      inline def setNoRandomizeUndefined: Self = StObject.set(x, "noRandomize", js.undefined)
-      
-      inline def setNonceSigner(value: js.Function): Self = StObject.set(x, "nonceSigner", value.asInstanceOf[js.Any])
-      
-      inline def setNonceSignerUndefined: Self = StObject.set(x, "nonceSigner", js.undefined)
-      
-      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
-      
-      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
-      
-      inline def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
-      
-      inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
-      
-      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
-      
-      inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
-      
-      inline def setPreserveBuffers(value: Boolean): Self = StObject.set(x, "preserveBuffers", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveBuffersUndefined: Self = StObject.set(x, "preserveBuffers", js.undefined)
-      
-      inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectDelayHandler(value: () => Double): Self = StObject.set(x, "reconnectDelayHandler", js.Any.fromFunction0(value))
-      
-      inline def setReconnectDelayHandlerUndefined: Self = StObject.set(x, "reconnectDelayHandler", js.undefined)
-      
-      inline def setReconnectJitter(value: Double): Self = StObject.set(x, "reconnectJitter", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectJitterTLS(value: Double): Self = StObject.set(x, "reconnectJitterTLS", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectJitterTLSUndefined: Self = StObject.set(x, "reconnectJitterTLS", js.undefined)
-      
-      inline def setReconnectJitterUndefined: Self = StObject.set(x, "reconnectJitter", js.undefined)
-      
-      inline def setReconnectTimeWait(value: Double): Self = StObject.set(x, "reconnectTimeWait", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectTimeWaitUndefined: Self = StObject.set(x, "reconnectTimeWait", js.undefined)
-      
-      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
-      
-      inline def setServers(value: js.Array[String]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
-      
-      inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
-      
-      inline def setServersVarargs(value: String*): Self = StObject.set(x, "servers", js.Array(value :_*))
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      inline def setTls(value: Boolean | TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
-      
-      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
-      
-      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-      
-      inline def setTokenHandler(value: () => String): Self = StObject.set(x, "tokenHandler", js.Any.fromFunction0(value))
-      
-      inline def setTokenHandlerUndefined: Self = StObject.set(x, "tokenHandler", js.undefined)
-      
-      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
-      
-      inline def setUseOldRequestStyle(value: Boolean): Self = StObject.set(x, "useOldRequestStyle", value.asInstanceOf[js.Any])
-      
-      inline def setUseOldRequestStyleUndefined: Self = StObject.set(x, "useOldRequestStyle", js.undefined)
-      
-      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
-      
-      inline def setUserCreds(value: String): Self = StObject.set(x, "userCreds", value.asInstanceOf[js.Any])
-      
-      inline def setUserCredsUndefined: Self = StObject.set(x, "userCreds", js.undefined)
-      
-      inline def setUserJWT(value: () => String): Self = StObject.set(x, "userJWT", js.Any.fromFunction0(value))
-      
-      inline def setUserJWTUndefined: Self = StObject.set(x, "userJWT", js.undefined)
-      
-      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
-      
-      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
-      
-      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
-      
-      inline def setWaitOnFirstConnect(value: Boolean): Self = StObject.set(x, "waitOnFirstConnect", value.asInstanceOf[js.Any])
-      
-      inline def setWaitOnFirstConnectUndefined: Self = StObject.set(x, "waitOnFirstConnect", js.undefined)
-      
-      inline def setYieldTime(value: Double): Self = StObject.set(x, "yieldTime", value.asInstanceOf[js.Any])
-      
-      inline def setYieldTimeUndefined: Self = StObject.set(x, "yieldTime", js.undefined)
-    }
+    /* "terminated" */ val Terminated: typings.nats.typesMod.AdvisoryKind.Terminated & String = js.native
   }
   
-  trait NatsError
-    extends StObject
-       with Error {
-    
-    var chainedError: Error
-    
-    var code: String
+  @JSImport("nats", "Bench")
+  @js.native
+  open class Bench protected ()
+    extends typings.nats.modMod.Bench {
+    def this(nc: NatsConnection) = this()
+    def this(nc: NatsConnection, opts: BenchOpts) = this()
   }
+  
+  @JSImport("nats", "DebugEvents")
+  @js.native
+  object DebugEvents extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.DebugEvents & String] = js.native
+    
+    /* "pingTimer" */ val PingTimer: typings.nats.typesMod.DebugEvents.PingTimer & String = js.native
+    
+    /* "reconnecting" */ val Reconnecting: typings.nats.typesMod.DebugEvents.Reconnecting & String = js.native
+    
+    /* "staleConnection" */ val StaleConnection: typings.nats.typesMod.DebugEvents.StaleConnection & String = js.native
+  }
+  
+  @JSImport("nats", "DeliverPolicy")
+  @js.native
+  object DeliverPolicy extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.DeliverPolicy & String] = js.native
+    
+    /* "all" */ val All: typings.nats.typesMod.DeliverPolicy.All & String = js.native
+    
+    /* "last" */ val Last: typings.nats.typesMod.DeliverPolicy.Last & String = js.native
+    
+    /* "last_per_subject" */ val LastPerSubject: typings.nats.typesMod.DeliverPolicy.LastPerSubject & String = js.native
+    
+    /* "new" */ val New: typings.nats.typesMod.DeliverPolicy.New & String = js.native
+    
+    /* "by_start_sequence" */ val StartSequence: typings.nats.typesMod.DeliverPolicy.StartSequence & String = js.native
+    
+    /* "by_start_time" */ val StartTime: typings.nats.typesMod.DeliverPolicy.StartTime & String = js.native
+  }
+  
+  @JSImport("nats", "DiscardPolicy")
+  @js.native
+  object DiscardPolicy extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.DiscardPolicy & String] = js.native
+    
+    /* "new" */ val New: typings.nats.typesMod.DiscardPolicy.New & String = js.native
+    
+    /* "old" */ val Old: typings.nats.typesMod.DiscardPolicy.Old & String = js.native
+  }
+  
+  @JSImport("nats", "Empty")
+  @js.native
+  val Empty: js.typedarray.Uint8Array = js.native
+  
+  @JSImport("nats", "ErrorCode")
+  @js.native
+  object ErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.errorMod.ErrorCode & String] = js.native
+    
+    /* "BAD API" */ val ApiError: typings.nats.errorMod.ErrorCode.ApiError & String = js.native
+    
+    /* "AUTHENTICATION_EXPIRED" */ val AuthenticationExpired: typings.nats.errorMod.ErrorCode.AuthenticationExpired & String = js.native
+    
+    /* "AUTHORIZATION_VIOLATION" */ val AuthorizationViolation: typings.nats.errorMod.ErrorCode.AuthorizationViolation & String = js.native
+    
+    /* "BAD_AUTHENTICATION" */ val BadAuthentication: typings.nats.errorMod.ErrorCode.BadAuthentication & String = js.native
+    
+    /* "BAD_CREDS" */ val BadCreds: typings.nats.errorMod.ErrorCode.BadCreds & String = js.native
+    
+    /* "BAD_HEADER" */ val BadHeader: typings.nats.errorMod.ErrorCode.BadHeader & String = js.native
+    
+    /* "BAD_JSON" */ val BadJson: typings.nats.errorMod.ErrorCode.BadJson & String = js.native
+    
+    /* "BAD_PAYLOAD" */ val BadPayload: typings.nats.errorMod.ErrorCode.BadPayload & String = js.native
+    
+    /* "BAD_SUBJECT" */ val BadSubject: typings.nats.errorMod.ErrorCode.BadSubject & String = js.native
+    
+    /* "CANCELLED" */ val Cancelled: typings.nats.errorMod.ErrorCode.Cancelled & String = js.native
+    
+    /* "CONNECTION_CLOSED" */ val ConnectionClosed: typings.nats.errorMod.ErrorCode.ConnectionClosed & String = js.native
+    
+    /* "CONNECTION_DRAINING" */ val ConnectionDraining: typings.nats.errorMod.ErrorCode.ConnectionDraining & String = js.native
+    
+    /* "CONNECTION_REFUSED" */ val ConnectionRefused: typings.nats.errorMod.ErrorCode.ConnectionRefused & String = js.native
+    
+    /* "CONNECTION_TIMEOUT" */ val ConnectionTimeout: typings.nats.errorMod.ErrorCode.ConnectionTimeout & String = js.native
+    
+    /* "DISCONNECT" */ val Disconnect: typings.nats.errorMod.ErrorCode.Disconnect & String = js.native
+    
+    /* "INVALID_OPTION" */ val InvalidOption: typings.nats.errorMod.ErrorCode.InvalidOption & String = js.native
+    
+    /* "INVALID_PAYLOAD" */ val InvalidPayload: typings.nats.errorMod.ErrorCode.InvalidPayload & String = js.native
+    
+    /* "404" */ val JetStream404NoMessages: typings.nats.errorMod.ErrorCode.JetStream404NoMessages & String = js.native
+    
+    /* "408" */ val JetStream408RequestTimeout: typings.nats.errorMod.ErrorCode.JetStream408RequestTimeout & String = js.native
+    
+    /* "409" */ val JetStream409: typings.nats.errorMod.ErrorCode.JetStream409 & String = js.native
+    
+    /* "409" */ val JetStream409MaxAckPendingExceeded: typings.nats.errorMod.ErrorCode.JetStream409MaxAckPendingExceeded & String = js.native
+    
+    /* "JESTREAM_INVALID_ACK" */ val JetStreamInvalidAck: typings.nats.errorMod.ErrorCode.JetStreamInvalidAck & String = js.native
+    
+    /* "503" */ val JetStreamNotEnabled: typings.nats.errorMod.ErrorCode.JetStreamNotEnabled & String = js.native
+    
+    /* "MAX_PAYLOAD_EXCEEDED" */ val MaxPayloadExceeded: typings.nats.errorMod.ErrorCode.MaxPayloadExceeded & String = js.native
+    
+    /* "503" */ val NoResponders: typings.nats.errorMod.ErrorCode.NoResponders & String = js.native
+    
+    /* "NOT_FUNC" */ val NotFunction: typings.nats.errorMod.ErrorCode.NotFunction & String = js.native
+    
+    /* "PERMISSIONS_VIOLATION" */ val PermissionsViolation: typings.nats.errorMod.ErrorCode.PermissionsViolation & String = js.native
+    
+    /* "NATS_PROTOCOL_ERR" */ val ProtocolError: typings.nats.errorMod.ErrorCode.ProtocolError & String = js.native
+    
+    /* "REQUEST_ERROR" */ val RequestError: typings.nats.errorMod.ErrorCode.RequestError & String = js.native
+    
+    /* "SERVER_OPT_NA" */ val ServerOptionNotAvailable: typings.nats.errorMod.ErrorCode.ServerOptionNotAvailable & String = js.native
+    
+    /* "SUB_CLOSED" */ val SubClosed: typings.nats.errorMod.ErrorCode.SubClosed & String = js.native
+    
+    /* "SUB_DRAINING" */ val SubDraining: typings.nats.errorMod.ErrorCode.SubDraining & String = js.native
+    
+    /* "TIMEOUT" */ val Timeout: typings.nats.errorMod.ErrorCode.Timeout & String = js.native
+    
+    /* "TLS" */ val Tls: typings.nats.errorMod.ErrorCode.Tls & String = js.native
+    
+    /* "UNKNOWN_ERROR" */ val Unknown: typings.nats.errorMod.ErrorCode.Unknown & String = js.native
+    
+    /* "WSS_REQUIRED" */ val WssRequired: typings.nats.errorMod.ErrorCode.WssRequired & String = js.native
+  }
+  
+  @JSImport("nats", "Events")
+  @js.native
+  object Events extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.Events & String] = js.native
+    
+    /* "disconnect" */ val Disconnect: typings.nats.typesMod.Events.Disconnect & String = js.native
+    
+    /* "error" */ val Error: typings.nats.typesMod.Events.Error & String = js.native
+    
+    /* "ldm" */ val LDM: typings.nats.typesMod.Events.LDM & String = js.native
+    
+    /* "reconnect" */ val Reconnect: typings.nats.typesMod.Events.Reconnect & String = js.native
+    
+    /* "update" */ val Update: typings.nats.typesMod.Events.Update & String = js.native
+  }
+  
+  inline def JSONCodec[T](): Codec[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCodec")().asInstanceOf[Codec[T]]
+  inline def JSONCodec[T](reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Codec[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCodec")(reviver.asInstanceOf[js.Any]).asInstanceOf[Codec[T]]
+  
+  @JSImport("nats", "JsHeaders")
+  @js.native
+  object JsHeaders extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.JsHeaders & String] = js.native
+    
+    /* "Nats-Consumer-Stalled" */ val ConsumerStalledHdr: typings.nats.typesMod.JsHeaders.ConsumerStalledHdr & String = js.native
+    
+    /* "Nats-Last-Consumer" */ val LastConsumerSeqHdr: typings.nats.typesMod.JsHeaders.LastConsumerSeqHdr & String = js.native
+    
+    /* "Nats-Last-Stream" */ val LastStreamSeqHdr: typings.nats.typesMod.JsHeaders.LastStreamSeqHdr & String = js.native
+    
+    /* "Nats-Msg-Size" */ val MessageSizeHdr: typings.nats.typesMod.JsHeaders.MessageSizeHdr & String = js.native
+    
+    /* "Nats-Rollup" */ val RollupHdr: typings.nats.typesMod.JsHeaders.RollupHdr & String = js.native
+    
+    /* "all" */ val RollupValueAll: typings.nats.typesMod.JsHeaders.RollupValueAll & String = js.native
+    
+    /* "sub" */ val RollupValueSubject: typings.nats.typesMod.JsHeaders.RollupValueSubject & String = js.native
+    
+    /* "Nats-Stream-Source" */ val StreamSourceHdr: typings.nats.typesMod.JsHeaders.StreamSourceHdr & String = js.native
+  }
+  
+  @JSImport("nats", "Match")
+  @js.native
+  object Match extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.nats.headersMod.Match & Double] = js.native
+    
+    /* 1 */ val CanonicalMIME: typings.nats.headersMod.Match.CanonicalMIME & Double = js.native
+    
+    /* 0 */ val Exact: typings.nats.headersMod.Match.Exact & Double = js.native
+    
+    /* 2 */ val IgnoreCase: typings.nats.headersMod.Match.IgnoreCase & Double = js.native
+  }
+  
+  @JSImport("nats", "Metric")
+  @js.native
+  open class Metric protected ()
+    extends typings.nats.modMod.Metric {
+    def this(name: String, duration: Double) = this()
+  }
+  /* static members */
+  object Metric {
+    
+    @JSImport("nats", "Metric")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def header(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("header")().asInstanceOf[String]
+  }
+  
+  @JSImport("nats", "MsgHdrsImpl")
+  @js.native
+  open class MsgHdrsImpl ()
+    extends typings.nats.modMod.MsgHdrsImpl
+  /* static members */
+  object MsgHdrsImpl {
+    
+    @JSImport("nats", "MsgHdrsImpl")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def decode(a: js.typedarray.Uint8Array): typings.nats.headersMod.MsgHdrsImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(a.asInstanceOf[js.Any]).asInstanceOf[typings.nats.headersMod.MsgHdrsImpl]
+    
+    inline def validHeaderValue(k: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validHeaderValue")(k.asInstanceOf[js.Any]).asInstanceOf[String]
+  }
+  
+  @JSImport("nats", "NatsError")
+  @js.native
+  open class NatsError protected ()
+    extends typings.nats.modMod.NatsError {
+    /**
+      * @param {String} message
+      * @param {String} code
+      * @param {Error} [chainedError]
+      * @constructor
+      *
+      * @api private
+      */
+    def this(message: String, code: String) = this()
+    def this(message: String, code: String, chainedError: js.Error) = this()
+  }
+  /* static members */
   object NatsError {
     
-    inline def apply(chainedError: Error, code: String, message: String, name: String): NatsError = {
-      val __obj = js.Dynamic.literal(chainedError = chainedError.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NatsError]
-    }
+    @JSImport("nats", "NatsError")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: NatsError](x: Self) {
-      
-      inline def setChainedError(value: Error): Self = StObject.set(x, "chainedError", value.asInstanceOf[js.Any])
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    }
+    inline def errorForCode(code: String): typings.nats.errorMod.NatsError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorForCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.nats.errorMod.NatsError]
+    inline def errorForCode(code: String, chainedError: js.Error): typings.nats.errorMod.NatsError = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForCode")(code.asInstanceOf[js.Any], chainedError.asInstanceOf[js.Any])).asInstanceOf[typings.nats.errorMod.NatsError]
   }
   
-  trait RequestOptions extends StObject {
+  @JSImport("nats", "Nuid")
+  @js.native
+  open class Nuid_ ()
+    extends typings.nats.modMod.Nuid_
+  
+  @JSImport("nats", "ReplayPolicy")
+  @js.native
+  object ReplayPolicy extends StObject {
     
-    var max: js.UndefOr[Double] = js.undefined
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.ReplayPolicy & String] = js.native
     
-    var timeout: js.UndefOr[Double] = js.undefined
-  }
-  object RequestOptions {
+    /* "instant" */ val Instant: typings.nats.typesMod.ReplayPolicy.Instant & String = js.native
     
-    inline def apply(): RequestOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RequestOptions]
-    }
-    
-    extension [Self <: RequestOptions](x: Self) {
-      
-      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-    }
+    /* "original" */ val Original: typings.nats.typesMod.ReplayPolicy.Original & String = js.native
   }
   
-  trait SubscribeOptions extends StObject {
+  @JSImport("nats", "RetentionPolicy")
+  @js.native
+  object RetentionPolicy extends StObject {
     
-    var max: js.UndefOr[Double] = js.undefined
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.RetentionPolicy & String] = js.native
     
-    var queue: js.UndefOr[String] = js.undefined
+    /* "interest" */ val Interest: typings.nats.typesMod.RetentionPolicy.Interest & String = js.native
+    
+    /* "limits" */ val Limits: typings.nats.typesMod.RetentionPolicy.Limits & String = js.native
+    
+    /* "workqueue" */ val Workqueue: typings.nats.typesMod.RetentionPolicy.Workqueue & String = js.native
   }
-  object SubscribeOptions {
+  
+  @JSImport("nats", "StorageType")
+  @js.native
+  object StorageType extends StObject {
     
-    inline def apply(): SubscribeOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SubscribeOptions]
-    }
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.nats.typesMod.StorageType & String] = js.native
     
-    extension [Self <: SubscribeOptions](x: Self) {
-      
-      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
-      
-      inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
-    }
+    /* "file" */ val File: typings.nats.typesMod.StorageType.File & String = js.native
+    
+    /* "memory" */ val Memory: typings.nats.typesMod.StorageType.Memory & String = js.native
   }
+  
+  inline def StringCodec(): Codec[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("StringCodec")().asInstanceOf[Codec[String]]
+  
+  inline def canonicalMIMEHeaderKey(k: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonicalMIMEHeaderKey")(k.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def checkJsError(msg: Msg): typings.nats.errorMod.NatsError | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("checkJsError")(msg.asInstanceOf[js.Any]).asInstanceOf[typings.nats.errorMod.NatsError | Null]
+  
+  inline def connect(): js.Promise[NatsConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[NatsConnection]]
+  inline def connect(opts: ConnectionOptions): js.Promise[NatsConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NatsConnection]]
+  
+  inline def consumerOpts(): ConsumerOptsBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("consumerOpts")().asInstanceOf[ConsumerOptsBuilder]
+  inline def consumerOpts(opts: PartialConsumerConfig): ConsumerOptsBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("consumerOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[ConsumerOptsBuilder]
+  
+  inline def createInbox(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")().asInstanceOf[String]
+  inline def createInbox(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def credsAuthenticator(creds: js.typedarray.Uint8Array): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("credsAuthenticator")(creds.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  
+  inline def deferred[T](): Deferred_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("deferred")().asInstanceOf[Deferred_[T]]
+  
+  inline def headers(): MsgHdrs = ^.asInstanceOf[js.Dynamic].applyDynamic("headers")().asInstanceOf[MsgHdrs]
+  
+  inline def isFlowControlMsg(msg: Msg): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlowControlMsg")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isHeartbeatMsg(msg: Msg): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeartbeatMsg")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def jwtAuthenticator(ajwt: String): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  inline def jwtAuthenticator(ajwt: String, seed: js.Function0[js.typedarray.Uint8Array]): Authenticator = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Authenticator]
+  inline def jwtAuthenticator(ajwt: String, seed: js.typedarray.Uint8Array): Authenticator = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Authenticator]
+  inline def jwtAuthenticator(ajwt: js.Function0[String]): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  inline def jwtAuthenticator(ajwt: js.Function0[String], seed: js.Function0[js.typedarray.Uint8Array]): Authenticator = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Authenticator]
+  inline def jwtAuthenticator(ajwt: js.Function0[String], seed: js.typedarray.Uint8Array): Authenticator = (^.asInstanceOf[js.Dynamic].applyDynamic("jwtAuthenticator")(ajwt.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Authenticator]
+  
+  inline def millis(ns: Nanos): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("millis")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def nanos(millis: Double): Nanos = ^.asInstanceOf[js.Dynamic].applyDynamic("nanos")(millis.asInstanceOf[js.Any]).asInstanceOf[Nanos]
+  
+  inline def nkeyAuthenticator(): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("nkeyAuthenticator")().asInstanceOf[Authenticator]
+  inline def nkeyAuthenticator(seed: js.Function0[js.typedarray.Uint8Array]): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("nkeyAuthenticator")(seed.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  inline def nkeyAuthenticator(seed: js.typedarray.Uint8Array): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("nkeyAuthenticator")(seed.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  
+  @JSImport("nats", "nuid")
+  @js.native
+  val nuid: typings.nats.nuidMod.Nuid_ = js.native
+  
+  inline def toJsMsg(m: Msg): JsMsg = ^.asInstanceOf[js.Dynamic].applyDynamic("toJsMsg")(m.asInstanceOf[js.Any]).asInstanceOf[JsMsg]
+  
+  inline def tokenAuthenticator(token: String): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenAuthenticator")(token.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  
+  inline def usernamePasswordAuthenticator(user: String): Authenticator = ^.asInstanceOf[js.Dynamic].applyDynamic("usernamePasswordAuthenticator")(user.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  inline def usernamePasswordAuthenticator(user: String, pass: String): Authenticator = (^.asInstanceOf[js.Dynamic].applyDynamic("usernamePasswordAuthenticator")(user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[Authenticator]
 }

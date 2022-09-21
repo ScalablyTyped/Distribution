@@ -19,6 +19,6 @@ object ReactionMixin {
     
     inline def setReactions(value: js.Array[Reaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
-    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "reactions", js.Array(value*))
   }
 }

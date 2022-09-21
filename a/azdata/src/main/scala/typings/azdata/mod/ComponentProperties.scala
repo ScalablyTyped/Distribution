@@ -1,6 +1,5 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,12 @@ trait ComponentProperties extends StObject {
   /**
     * Matches the CSS style key and its available values.
     */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
+  var CSSStyles: js.UndefOr[CssStyles] = js.undefined
+  
+  /**
+    * Corresponds to the aria-hidden accessibility attribute for this component
+    */
+  var ariaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Corresponds to the aria-label accessibility attribute for this component
@@ -59,6 +63,10 @@ object ComponentProperties {
   
   extension [Self <: ComponentProperties](x: Self) {
     
+    inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+    
     inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
     inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
@@ -71,7 +79,7 @@ object ComponentProperties {
     
     inline def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
     
-    inline def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     
     inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
     

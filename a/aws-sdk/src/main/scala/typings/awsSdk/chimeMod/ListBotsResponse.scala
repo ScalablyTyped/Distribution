@@ -29,7 +29,7 @@ object ListBotsResponse {
     
     inline def setBotsUndefined: Self = StObject.set(x, "Bots", js.undefined)
     
-    inline def setBotsVarargs(value: Bot*): Self = StObject.set(x, "Bots", js.Array(value :_*))
+    inline def setBotsVarargs(value: Bot*): Self = StObject.set(x, "Bots", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

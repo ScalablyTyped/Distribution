@@ -11,9 +11,9 @@ Supercharge supertest with a promise interface
 | Full name          | supertest-as-promised |
 | Keywords           | supertest, superagent, request, tdd, bdd, http, test, testing, promise, promised |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 1059530 |
-| # stars            | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 66077.66666666667 |
+| # stars            | 271.0 |
 
 ## Links
 - [Homepage](https://github.com/WhoopInc/supertest-as-promised)

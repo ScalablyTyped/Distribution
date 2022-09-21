@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaRegionInstanceGroupManagersSetTemplateRequest extends StObject {
   
   /**
-    * URL of the InstanceTemplate resource from which all new instances will be
-    * created.
+    * URL of the InstanceTemplate resource from which all new instances will be created.
     */
-  var instanceTemplate: js.UndefOr[String] = js.undefined
+  var instanceTemplate: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersSetTemplateRequest {
   
@@ -22,6 +21,8 @@ object SchemaRegionInstanceGroupManagersSetTemplateRequest {
   extension [Self <: SchemaRegionInstanceGroupManagersSetTemplateRequest](x: Self) {
     
     inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTemplateNull: Self = StObject.set(x, "instanceTemplate", null)
     
     inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
   }

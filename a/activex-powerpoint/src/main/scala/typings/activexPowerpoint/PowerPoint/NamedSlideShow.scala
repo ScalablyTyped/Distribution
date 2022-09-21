@@ -14,12 +14,12 @@ trait NamedSlideShow extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.NamedSlideShow_typekey")
   var PowerPointDotNamedSlideShow_typekey: NamedSlideShow
   
-  val SlideIDs: js.Any
+  val SlideIDs: Any
 }
 object NamedSlideShow {
   
@@ -28,9 +28,9 @@ object NamedSlideShow {
     Count: Double,
     Delete: () => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotNamedSlideShow_typekey: NamedSlideShow,
-    SlideIDs: js.Any
+    SlideIDs: Any
   ): NamedSlideShow = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SlideIDs = SlideIDs.asInstanceOf[js.Any])
     __obj.updateDynamic("PowerPoint.NamedSlideShow_typekey")(PowerPointDotNamedSlideShow_typekey.asInstanceOf[js.Any])
@@ -47,10 +47,10 @@ object NamedSlideShow {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotNamedSlideShow_typekey(value: NamedSlideShow): Self = StObject.set(x, "PowerPoint.NamedSlideShow_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSlideIDs(value: js.Any): Self = StObject.set(x, "SlideIDs", value.asInstanceOf[js.Any])
+    inline def setSlideIDs(value: Any): Self = StObject.set(x, "SlideIDs", value.asInstanceOf[js.Any])
   }
 }

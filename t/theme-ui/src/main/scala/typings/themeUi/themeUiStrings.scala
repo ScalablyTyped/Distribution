@@ -1,6 +1,5 @@
 package typings.themeUi
 
-import typings.themeUi.mod.StyledTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object themeUiStrings {
   
   @js.native
-  sealed trait a
-    extends StObject
-       with StyledTags
+  sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
   @js.native
@@ -42,9 +39,7 @@ object themeUiStrings {
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait b
-    extends StObject
-       with StyledTags
+  sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
   
   @js.native
@@ -64,9 +59,7 @@ object themeUiStrings {
   inline def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait blockquote
-    extends StObject
-       with StyledTags
+  sealed trait blockquote extends StObject
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
@@ -102,9 +95,7 @@ object themeUiStrings {
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait code
-    extends StObject
-       with StyledTags
+  sealed trait code extends StObject
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
@@ -136,12 +127,6 @@ object themeUiStrings {
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait delete
-    extends StObject
-       with StyledTags
-  inline def delete: delete = "delete".asInstanceOf[delete]
-  
-  @js.native
   sealed trait desc extends StObject
   inline def desc: desc = "desc".asInstanceOf[desc]
   
@@ -158,9 +143,7 @@ object themeUiStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait div
-    extends StObject
-       with StyledTags
+  sealed trait div extends StObject
   inline def div: div = "div".asInstanceOf[div]
   
   @js.native
@@ -176,9 +159,7 @@ object themeUiStrings {
   inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait em
-    extends StObject
-       with StyledTags
+  sealed trait em extends StObject
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
@@ -318,39 +299,27 @@ object themeUiStrings {
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait h1
-    extends StObject
-       with StyledTags
+  sealed trait h1 extends StObject
   inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait h2
-    extends StObject
-       with StyledTags
+  sealed trait h2 extends StObject
   inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait h3
-    extends StObject
-       with StyledTags
+  sealed trait h3 extends StObject
   inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait h4
-    extends StObject
-       with StyledTags
+  sealed trait h4 extends StObject
   inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait h5
-    extends StObject
-       with StyledTags
+  sealed trait h5 extends StObject
   inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait h6
-    extends StObject
-       with StyledTags
+  sealed trait h6 extends StObject
   inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
@@ -366,9 +335,7 @@ object themeUiStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait hr
-    extends StObject
-       with StyledTags
+  sealed trait hr extends StObject
   inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
@@ -376,9 +343,7 @@ object themeUiStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait i
-    extends StObject
-       with StyledTags
+  sealed trait i extends StObject
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
@@ -390,16 +355,8 @@ object themeUiStrings {
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait img
-    extends StObject
-       with StyledTags
+  sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
-  
-  @js.native
-  sealed trait inlineCode
-    extends StObject
-       with StyledTags
-  inline def inlineCode: inlineCode = "inlineCode".asInstanceOf[inlineCode]
   
   @js.native
   sealed trait input extends StObject
@@ -426,9 +383,7 @@ object themeUiStrings {
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait li
-    extends StObject
-       with StyledTags
+  sealed trait li extends StObject
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
@@ -496,9 +451,7 @@ object themeUiStrings {
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait ol
-    extends StObject
-       with StyledTags
+  sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
@@ -514,9 +467,7 @@ object themeUiStrings {
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
-  sealed trait p
-    extends StObject
-       with StyledTags
+  sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
   
   @js.native
@@ -544,9 +495,7 @@ object themeUiStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait pre
-    extends StObject
-       with StyledTags
+  sealed trait pre extends StObject
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
@@ -564,12 +513,6 @@ object themeUiStrings {
   @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
-  
-  @js.native
-  sealed trait root
-    extends StObject
-       with StyledTags
-  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait rp extends StObject
@@ -624,9 +567,7 @@ object themeUiStrings {
   inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait strong
-    extends StObject
-       with StyledTags
+  sealed trait strong extends StObject
   inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
@@ -658,9 +599,7 @@ object themeUiStrings {
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait table
-    extends StObject
-       with StyledTags
+  sealed trait table extends StObject
   inline def table: table = "table".asInstanceOf[table]
   
   @js.native
@@ -668,9 +607,7 @@ object themeUiStrings {
   inline def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
-  sealed trait td
-    extends StObject
-       with StyledTags
+  sealed trait td extends StObject
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
@@ -694,20 +631,12 @@ object themeUiStrings {
   inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
-  sealed trait th
-    extends StObject
-       with StyledTags
+  sealed trait th extends StObject
   inline def th: th = "th".asInstanceOf[th]
   
   @js.native
   sealed trait thead extends StObject
   inline def thead: thead = "thead".asInstanceOf[thead]
-  
-  @js.native
-  sealed trait thematicBreak
-    extends StObject
-       with StyledTags
-  inline def thematicBreak: thematicBreak = "thematicBreak".asInstanceOf[thematicBreak]
   
   @js.native
   sealed trait time extends StObject
@@ -718,9 +647,7 @@ object themeUiStrings {
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait tr
-    extends StObject
-       with StyledTags
+  sealed trait tr extends StObject
   inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
@@ -736,9 +663,7 @@ object themeUiStrings {
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait ul
-    extends StObject
-       with StyledTags
+  sealed trait ul extends StObject
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native

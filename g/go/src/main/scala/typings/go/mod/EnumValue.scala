@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("go", "EnumValue")
 @js.native
-class EnumValue () extends StObject
+open class EnumValue () extends StObject

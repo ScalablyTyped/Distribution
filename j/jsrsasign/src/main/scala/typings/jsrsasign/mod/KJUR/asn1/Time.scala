@@ -1,6 +1,7 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
 import typings.jsrsasign.anon.StringParamtypegenundefin
+import typings.jsrsasign.anon.Tlv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.Time")
 @js.native
-class Time ()
+open class Time ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.Time {
   def this(params: StringParamtypegenundefin) = this()
@@ -62,4 +63,8 @@ class Time ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
 }

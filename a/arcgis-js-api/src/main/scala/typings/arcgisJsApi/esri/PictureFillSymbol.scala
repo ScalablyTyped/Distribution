@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
-- typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
+@js.native
 trait PictureFillSymbol
   extends StObject
      with FillSymbol
@@ -18,6 +16,8 @@ trait PictureFillSymbol
   
   /**
     * The height of the image in points.
+    *
+    * @default 12
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#height)
     */
@@ -41,12 +41,16 @@ trait PictureFillSymbol
   /**
     * The width of the image in points.
     *
+    * @default 12
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#width)
     */
   var width: Double = js.native
   
   /**
     * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xoffset)
     */
@@ -55,6 +59,8 @@ trait PictureFillSymbol
   /**
     * The scale factor on the x axis of the symbol.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xscale)
     */
   var xscale: Double = js.native
@@ -62,12 +68,16 @@ trait PictureFillSymbol
   /**
     * The offset on the y-axis in pixels or points.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yoffset)
     */
   var yoffset: Double = js.native
   
   /**
     * The scale factor on the y axis of the symbol.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yscale)
     */

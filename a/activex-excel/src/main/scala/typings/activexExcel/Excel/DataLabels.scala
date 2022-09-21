@@ -11,7 +11,7 @@ trait DataLabels extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   var AutoText: Boolean = js.native
   
@@ -21,7 +21,7 @@ trait DataLabels extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   val Fill: ChartFillFormat = js.native
   
@@ -45,13 +45,13 @@ trait DataLabels extends StObject {
   
   var Orientation: XlOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlDataLabelPosition = js.native
   
   var ReadingOrder: Double = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Separator: String | XlDataLabelSeparator = js.native
   
@@ -69,9 +69,9 @@ trait DataLabels extends StObject {
   
   var ShowValue: Boolean = js.native
   
-  var Type: js.Any = js.native
+  var Type: Any = js.native
   
   var VerticalAlignment: VerticalAlignments = js.native
   
-  def _Default(Index: js.Any): DataLabel = js.native
+  def _Default(Index: Any): DataLabel = js.native
 }

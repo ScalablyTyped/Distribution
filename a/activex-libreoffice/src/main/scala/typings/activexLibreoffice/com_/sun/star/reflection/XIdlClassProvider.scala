@@ -15,17 +15,17 @@ trait XIdlClassProvider
   extends StObject
      with XInterface {
   
-  val IdlClasses: SafeArray[XIdlClass[js.Any]]
+  val IdlClasses: SafeArray[XIdlClass[Any]]
   
-  def getIdlClasses(): SafeArray[XIdlClass[js.Any]]
+  def getIdlClasses(): SafeArray[XIdlClass[Any]]
 }
 object XIdlClassProvider {
   
   inline def apply(
-    IdlClasses: SafeArray[XIdlClass[js.Any]],
+    IdlClasses: SafeArray[XIdlClass[Any]],
     acquire: () => Unit,
-    getIdlClasses: () => SafeArray[XIdlClass[js.Any]],
-    queryInterface: `type` => js.Any,
+    getIdlClasses: () => SafeArray[XIdlClass[Any]],
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIdlClassProvider = {
     val __obj = js.Dynamic.literal(IdlClasses = IdlClasses.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getIdlClasses = js.Any.fromFunction0(getIdlClasses), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -34,8 +34,8 @@ object XIdlClassProvider {
   
   extension [Self <: XIdlClassProvider](x: Self) {
     
-    inline def setGetIdlClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
+    inline def setGetIdlClasses(value: () => SafeArray[XIdlClass[Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
     
-    inline def setIdlClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
+    inline def setIdlClasses(value: SafeArray[XIdlClass[Any]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
   }
 }

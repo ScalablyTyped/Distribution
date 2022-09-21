@@ -53,6 +53,17 @@ object fileUploaderDropContainerMod extends Shortcut {
       * The event handler signature looks like `onAddFiles(evt, { addedFiles })`
       */
     var onAddFiles: js.UndefOr[js.Function2[/* event */ DragEvent[HTMLElement], /* content */ AddedFiles, Unit]] = js.undefined
+    
+    /**
+      * Provide a custom regex pattern for the acceptedTypes
+      */
+    var pattern: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Provide an accessibility role for the <FileUploaderButton>
+      */
+    @JSName("role")
+    var role_FileUploaderDropContainerProps: js.UndefOr[String] = js.undefined
   }
   object FileUploaderDropContainerProps {
     
@@ -67,7 +78,7 @@ object fileUploaderDropContainerMod extends Shortcut {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -88,6 +99,14 @@ object fileUploaderDropContainerMod extends Shortcut {
       inline def setOnAddFiles(value: (/* event */ DragEvent[HTMLElement], /* content */ AddedFiles) => Unit): Self = StObject.set(x, "onAddFiles", js.Any.fromFunction2(value))
       
       inline def setOnAddFilesUndefined: Self = StObject.set(x, "onAddFiles", js.undefined)
+      
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
   

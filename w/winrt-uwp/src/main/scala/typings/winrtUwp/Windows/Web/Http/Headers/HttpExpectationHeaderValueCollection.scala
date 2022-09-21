@@ -49,7 +49,7 @@ trait HttpExpectationHeaderValueCollection
     */
   def getView(): IVectorView[HttpExpectationHeaderValue] = js.native
   
-  def indexOf(value: HttpExpectationHeaderValue, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpExpectationHeaderValue, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

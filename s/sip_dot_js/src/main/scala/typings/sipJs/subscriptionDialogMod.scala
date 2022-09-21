@@ -19,7 +19,7 @@ object subscriptionDialogMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.subscriptionSubscriptionMod.Subscription because var conflicts: id. Inlined delegate, subscriptionExpires, subscriptionState, autoRefresh, subscribe, subscribe, subscribe, subscribe, refresh, unsubscribe */ @JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog")
   @js.native
-  class SubscriptionDialog protected () extends Dialog {
+  open class SubscriptionDialog protected () extends Dialog {
     def this(
       subscriptionEvent: String,
       subscriptionExpires: Double,
@@ -36,23 +36,23 @@ object subscriptionDialogMod {
       delegate: SubscriptionDelegate
     ) = this()
     
-    /* private */ var N: js.Any = js.native
+    /* private */ var N: Any = js.native
     
-    /* private */ var _autoRefresh: js.Any = js.native
+    /* private */ var _autoRefresh: Any = js.native
     
-    /* private */ var _subscriptionEvent: js.Any = js.native
+    /* private */ var _subscriptionEvent: Any = js.native
     
-    /* private */ var _subscriptionExpires: js.Any = js.native
+    /* private */ var _subscriptionExpires: Any = js.native
     
-    /* private */ var _subscriptionExpiresInitial: js.Any = js.native
+    /* private */ var _subscriptionExpiresInitial: Any = js.native
     
-    /* private */ var _subscriptionExpiresLastSet: js.Any = js.native
+    /* private */ var _subscriptionExpiresLastSet: Any = js.native
     
-    /* private */ var _subscriptionRefresh: js.Any = js.native
+    /* private */ var _subscriptionRefresh: Any = js.native
     
-    /* private */ var _subscriptionRefreshLastSet: js.Any = js.native
+    /* private */ var _subscriptionRefreshLastSet: Any = js.native
     
-    /* private */ var _subscriptionState: js.Any = js.native
+    /* private */ var _subscriptionState: Any = js.native
     
     def autoRefresh: Boolean = js.native
     def autoRefresh_=(autoRefresh: Boolean): Unit = js.native
@@ -62,18 +62,18 @@ object subscriptionDialogMod {
     
     var delegate: js.UndefOr[SubscriptionDelegate] = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
     /**
       * Handle in dialog NOTIFY requests.
       * This does not include the first NOTIFY which created the dialog.
       * @param message - The incoming NOTIFY request message.
       */
-    /* private */ var onNotify: js.Any = js.native
+    /* private */ var onNotify: Any = js.native
     
-    /* private */ var onRefresh: js.Any = js.native
+    /* private */ var onRefresh: Any = js.native
     
-    /* private */ var onTerminated: js.Any = js.native
+    /* private */ var onTerminated: Any = js.native
     
     /**
       * 4.1.2.2.  Refreshing of Subscriptions
@@ -81,13 +81,13 @@ object subscriptionDialogMod {
       */
     def refresh(): OutgoingSubscribeRequest = js.native
     
-    /* private */ var refreshTimer: js.Any = js.native
+    /* private */ var refreshTimer: Any = js.native
     
-    /* private */ var refreshTimerClear: js.Any = js.native
+    /* private */ var refreshTimerClear: Any = js.native
     
-    /* private */ var refreshTimerSet: js.Any = js.native
+    /* private */ var refreshTimerSet: Any = js.native
     
-    /* private */ var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: Any = js.native
     
     /**
       * 4.1.2.2.  Refreshing of Subscriptions
@@ -147,7 +147,7 @@ object subscriptionDialogMod {
       * cancel Timer N.
       * https://tools.ietf.org/html/rfc6665#section-4.1.2.2
       */
-    /* private */ var timerN: js.Any = js.native
+    /* private */ var timerN: Any = js.native
     
     /**
       * 4.1.2.3.  Unsubscribing

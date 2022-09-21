@@ -10,7 +10,7 @@ trait IgGridGroupByColumnSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables/disables grouping a column from the UI. By default all columns can be grouped.
@@ -40,7 +40,7 @@ trait IgGridGroupByColumnSettings
     * Specifies the sort order - ascending or descending when the column is initially grouped ([isGroupBy](ui.iggridgroupby#options:columnSettings.isGroupBy) = true).
     *
     */
-  var dir: js.UndefOr[js.Any] = js.undefined
+  var dir: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies a custom group by function, which accepts the column setting, the first and the second value to compare and returns bool. This option is deprecated - please use option [compareFunc](ui.iggridgroupby#options:columnSettings.compareFunc) instead.
@@ -61,7 +61,7 @@ trait IgGridGroupByColumnSettings
     * Enables/disables default summaries per group data island or specifies summaries that are applied to specific column no matter the group.
     *
     */
-  var groupSummaries: js.UndefOr[js.Any] = js.undefined
+  var groupSummaries: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the initial column grouped state.
@@ -92,7 +92,7 @@ object IgGridGroupByColumnSettings {
     
     inline def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
-    inline def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
@@ -104,7 +104,7 @@ object IgGridGroupByColumnSettings {
     
     inline def setGroupLabelFormatterUndefined: Self = StObject.set(x, "groupLabelFormatter", js.undefined)
     
-    inline def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
+    inline def setGroupSummaries(value: Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
     
     inline def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
     

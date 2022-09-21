@@ -31,7 +31,7 @@ object APNS2Target {
     
     inline def setExcludedDevicesUndefined: Self = StObject.set(x, "excludedDevices", js.undefined)
     
-    inline def setExcludedDevicesVarargs(value: String*): Self = StObject.set(x, "excludedDevices", js.Array(value :_*))
+    inline def setExcludedDevicesVarargs(value: String*): Self = StObject.set(x, "excludedDevices", js.Array(value*))
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }

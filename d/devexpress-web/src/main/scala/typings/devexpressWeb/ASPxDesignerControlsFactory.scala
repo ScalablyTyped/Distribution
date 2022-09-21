@@ -10,7 +10,7 @@ trait ASPxDesignerControlsFactory extends StObject {
   
   def getControlInfo(controlType: String): ASPxDesignerToolboxItem
   
-  def getControlType(model: js.Any): String
+  def getControlType(model: Any): String
   
   def getPropertyInfo(controlType: String, propertyDisplayName: String): ASPxDesignerElementSerializationInfo
   
@@ -33,7 +33,7 @@ object ASPxDesignerControlsFactory {
   inline def apply(
     createPopularBindingInfo: (ASPxDesignerElementSerializationInfoWithBindings, Boolean) => ASPxDesignerElementSerializationInfoWithBindings,
     getControlInfo: String => ASPxDesignerToolboxItem,
-    getControlType: js.Any => String,
+    getControlType: Any => String,
     getPropertyInfo: (String, String) => ASPxDesignerElementSerializationInfo,
     hideExpressionBindings: (String, /* repeated */ String) => Unit,
     inheritControl: (String, ASPxDesignerToolboxItem) => ASPxDesignerToolboxItem,
@@ -52,7 +52,7 @@ object ASPxDesignerControlsFactory {
     
     inline def setGetControlInfo(value: String => ASPxDesignerToolboxItem): Self = StObject.set(x, "getControlInfo", js.Any.fromFunction1(value))
     
-    inline def setGetControlType(value: js.Any => String): Self = StObject.set(x, "getControlType", js.Any.fromFunction1(value))
+    inline def setGetControlType(value: Any => String): Self = StObject.set(x, "getControlType", js.Any.fromFunction1(value))
     
     inline def setGetPropertyInfo(value: (String, String) => ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
     

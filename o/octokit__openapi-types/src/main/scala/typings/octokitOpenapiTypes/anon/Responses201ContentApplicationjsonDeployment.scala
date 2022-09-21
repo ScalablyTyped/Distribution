@@ -1,0 +1,30 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Responses201ContentApplicationjsonDeployment extends StObject {
+  
+  var parameters: `491`
+  
+  var requestBody: Content182
+  
+  var responses: `201ContentApplicationjsonDeployment`
+}
+object Responses201ContentApplicationjsonDeployment {
+  
+  inline def apply(parameters: `491`, requestBody: Content182, responses: `201ContentApplicationjsonDeployment`): Responses201ContentApplicationjsonDeployment = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Responses201ContentApplicationjsonDeployment]
+  }
+  
+  extension [Self <: Responses201ContentApplicationjsonDeployment](x: Self) {
+    
+    inline def setParameters(value: `491`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBody(value: Content182): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `201ContentApplicationjsonDeployment`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+  }
+}

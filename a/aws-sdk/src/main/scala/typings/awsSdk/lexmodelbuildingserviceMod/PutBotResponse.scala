@@ -34,7 +34,7 @@ trait PutBotResponse extends StObject {
   /**
     * The date that the bot was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the bot.
@@ -69,7 +69,7 @@ trait PutBotResponse extends StObject {
   /**
     * The date that the bot was updated. When you create a resource, the creation date and last updated date are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The target locale for the bot. 
@@ -135,7 +135,7 @@ object PutBotResponse {
     
     inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -163,9 +163,9 @@ object PutBotResponse {
     
     inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value*))
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
@@ -189,7 +189,7 @@ object PutBotResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

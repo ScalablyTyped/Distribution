@@ -65,7 +65,7 @@ object anon {
     var FONT_SANS_8_WHITE: String = js.native
     
     def loadFont(file: String): js.Promise[Font] = js.native
-    def loadFont(file: String, cb: GenericCallback[Font, js.Any, js.Any]): js.Promise[scala.Nothing] = js.native
+    def loadFont(file: String, cb: GenericCallback[Font, Any, Any]): js.Promise[scala.Nothing] = js.native
     
     def measureText(font: Font, text: PrintableText): Double = js.native
     

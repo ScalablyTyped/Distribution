@@ -1,6 +1,6 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
-import typings.iobroker.anon.Read
+import typings.iobroker.anon.Write
 import typings.iobroker.anon.langinLanguagesstringsmar
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ trait StateCommon
      with ObjectCommon {
   
   /** Configures this state as an alias for another state */
-  var alias: js.UndefOr[Read] = js.undefined
+  var alias: js.UndefOr[Write] = js.undefined
   
   /** Custom settings for this state */
-  var custom: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var custom: js.UndefOr[Record[String, Any]] = js.undefined
   
   /** the default value */
-  var `def`: js.UndefOr[js.Any] = js.undefined
+  var `def`: js.UndefOr[Any] = js.undefined
   
   /** the default status of the ack flag */
   var defAck: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +27,7 @@ trait StateCommon
   var desc: js.UndefOr[StringOrTranslated] = js.undefined
   
   /** attached history information */
-  var history: js.UndefOr[js.Any] = js.undefined
+  var history: js.UndefOr[Any] = js.undefined
   
   /** maximum value */
   var max: js.UndefOr[Double] = js.undefined
@@ -50,17 +50,23 @@ trait StateCommon
   
   /**
     * Dictionary of possible values for this state in the form
-    * <pre>
+    * ```jsonc
     * {
     *     "internal value 1": "displayed value 1",
     *     "internal value 2": "displayed value 2",
-    *     ...
+    *     // ...
     * }
-    * </pre>
+    * ```
+    *
+    * or as an array:
+    * ```jsonc
+    * [ "value 1", "value 2", // ... ]
+    * ```
+    *
     * In old ioBroker versions, this could also be a string of the form
-    * "val1:text1;val2:text2" (now deprecated)
+    * `"val1:text1;val2:text2"` (now deprecated)
     */
-  var states: js.UndefOr[(Record[String, String]) | String] = js.undefined
+  var states: js.UndefOr[(Record[String, String]) | js.Array[String] | String] = js.undefined
   
   /** allowed interval for numeric values */
   var step: js.UndefOr[Double] = js.undefined
@@ -86,15 +92,15 @@ object StateCommon {
   
   extension [Self <: StateCommon](x: Self) {
     
-    inline def setAlias(value: Read): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: Write): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    inline def setCustom(value: Record[String, js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Record[String, Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
     inline def setDefAck(value: Boolean): Self = StObject.set(x, "defAck", value.asInstanceOf[js.Any])
     
@@ -106,7 +112,7 @@ object StateCommon {
     
     inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
-    inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
@@ -126,9 +132,11 @@ object StateCommon {
     
     inline def setSmartNameUndefined: Self = StObject.set(x, "smartName", js.undefined)
     
-    inline def setStates(value: (Record[String, String]) | String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: (Record[String, String]) | js.Array[String] | String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value*))
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

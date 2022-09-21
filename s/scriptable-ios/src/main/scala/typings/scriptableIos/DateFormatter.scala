@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait DateFormatter extends StObject {
     * @param str - The string to parse into a date.
     * @see https://docs.scriptable.app/dateformatter/#-date
     */
-  def date(str: String): String
+  def date(str: String): js.Date
   
   /**
     * _Date format to be used by the formatter._
@@ -103,7 +102,7 @@ trait DateFormatter extends StObject {
     * @param date - The date to convert to a string.
     * @see https://docs.scriptable.app/dateformatter/#-string
     */
-  def string(date: Date): String
+  def string(date: js.Date): String
   
   /**
     * _Use a full style for the date._
@@ -188,10 +187,10 @@ trait DateFormatter extends StObject {
 object DateFormatter {
   
   inline def apply(
-    date: String => String,
+    date: String => js.Date,
     dateFormat: String,
     locale: String,
-    string: Date => String,
+    string: js.Date => String,
     useFullDateStyle: () => Unit,
     useFullTimeStyle: () => Unit,
     useLongDateStyle: () => Unit,
@@ -209,13 +208,13 @@ object DateFormatter {
   
   extension [Self <: DateFormatter](x: Self) {
     
-    inline def setDate(value: String => String): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
+    inline def setDate(value: String => js.Date): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    inline def setString(value: Date => String): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
+    inline def setString(value: js.Date => String): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
     
     inline def setUseFullDateStyle(value: () => Unit): Self = StObject.set(x, "useFullDateStyle", js.Any.fromFunction0(value))
     

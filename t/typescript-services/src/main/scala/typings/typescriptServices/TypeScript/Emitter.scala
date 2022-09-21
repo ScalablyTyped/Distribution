@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Emitter extends StObject {
   
-  /* private */ def canEmitDottedNameMemberAccessExpression(expression: js.Any): js.Any = js.native
+  /* private */ def canEmitDottedNameMemberAccessExpression(expression: Any): Any = js.native
   
   var captureThisStmtString: String = js.native
   
@@ -20,23 +20,23 @@ trait Emitter extends StObject {
     resolvePath: js.Function1[/* path */ String, String]
   ): Unit = js.native
   
-  /* private */ var currentVariableDeclaration: js.Any = js.native
+  /* private */ var currentVariableDeclaration: Any = js.native
   
-  /* private */ var declStack: js.Any = js.native
+  /* private */ var declStack: Any = js.native
   
-  /* private */ var detachedCommentsElement: js.Any = js.native
+  /* private */ var detachedCommentsElement: Any = js.native
   
   var document: Document = js.native
   
-  /* private */ def emit(ast: js.Any): js.Any = js.native
+  /* private */ def emit(ast: Any): Any = js.native
   
-  /* private */ def emitAccessorBody(funcDecl: js.Any, parameterList: js.Any, block: js.Any): js.Any = js.native
+  /* private */ def emitAccessorBody(funcDecl: Any, parameterList: Any, block: Any): Any = js.native
   
   def emitAccessorMemberDeclaration(funcDecl: AST, name: IASTToken, className: String, isProto: Boolean): Unit = js.native
   
   def emitAmbientVarDecl(varDecl: VariableDeclarator): Unit = js.native
   
-  /* private */ def emitAnyArrowFunctionExpression(arrowFunction: js.Any, funcName: js.Any, parameters: js.Any, block: js.Any, expression: js.Any): js.Any = js.native
+  /* private */ def emitAnyArrowFunctionExpression(arrowFunction: Any, funcName: Any, parameters: Any, block: Any, expression: Any): Any = js.native
   
   def emitArrayLiteralExpression(arrayLiteral: ArrayLiteralExpression): Unit = js.native
   
@@ -58,11 +58,11 @@ trait Emitter extends StObject {
   
   def emitClassDeclaration(declaration: ClassDeclaration): Unit = js.native
   
-  /* private */ def emitClassMemberFunctionDeclaration(classDecl: js.Any, funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitClassMemberFunctionDeclaration(classDecl: Any, funcDecl: Any): Any = js.native
   
-  /* private */ def emitClassMembers(classDecl: js.Any): js.Any = js.native
+  /* private */ def emitClassMembers(classDecl: Any): Any = js.native
   
-  /* private */ def emitCommaSeparatedList(parent: js.Any, list: js.Any, buffer: js.Any, preserveNewLines: js.Any): js.Any = js.native
+  /* private */ def emitCommaSeparatedList(parent: Any, list: Any, buffer: Any, preserveNewLines: Any): Any = js.native
   
   def emitComment(comment: Comment, trailing: Boolean, first: Boolean): Unit = js.native
   
@@ -85,17 +85,17 @@ trait Emitter extends StObject {
   
   def emitDefaultSwitchClause(clause: DefaultSwitchClause): Unit = js.native
   
-  /* private */ def emitDefaultValueAssignments(parameters: js.Any): js.Any = js.native
+  /* private */ def emitDefaultValueAssignments(parameters: Any): Any = js.native
   
   def emitDeleteExpression(expression: DeleteExpression): Unit = js.native
   
-  /* private */ def emitDetachedComments(list: js.Any): js.Any = js.native
+  /* private */ def emitDetachedComments(list: Any): Any = js.native
   
   def emitDoStatement(statement: DoStatement): Unit = js.native
   
-  /* private */ def emitDottedNameMemberAccessExpression(expression: js.Any): js.Any = js.native
+  /* private */ def emitDottedNameMemberAccessExpression(expression: Any): Any = js.native
   
-  /* private */ def emitDottedNameMemberAccessExpressionRecurse(expression: js.Any): js.Any = js.native
+  /* private */ def emitDottedNameMemberAccessExpressionRecurse(expression: Any): Any = js.native
   
   def emitElementAccessExpression(expression: ElementAccessExpression): Unit = js.native
   
@@ -119,13 +119,13 @@ trait Emitter extends StObject {
   
   def emitFunction(funcDecl: FunctionDeclaration): Unit = js.native
   
-  /* private */ def emitFunctionBodyStatements(name: js.Any, funcDecl: js.Any, parameterList: js.Any, block: js.Any, bodyExpression: js.Any): js.Any = js.native
+  /* private */ def emitFunctionBodyStatements(name: Any, funcDecl: Any, parameterList: Any, block: Any, bodyExpression: Any): Any = js.native
   
   def emitFunctionDeclaration(declaration: FunctionDeclaration): Unit = js.native
   
   def emitFunctionExpression(funcDecl: FunctionExpression): Unit = js.native
   
-  /* private */ def emitFunctionParameters(parameters: js.Any): js.Any = js.native
+  /* private */ def emitFunctionParameters(parameters: Any): Any = js.native
   
   def emitFunctionPropertyAssignment(funcProp: FunctionPropertyAssignment): Unit = js.native
   
@@ -160,11 +160,11 @@ trait Emitter extends StObject {
   
   def emitMemberAccessExpression(expression: MemberAccessExpression): Unit = js.native
   
-  /* private */ def emitMemberVariableDeclaration(varDecl: js.Any): js.Any = js.native
+  /* private */ def emitMemberVariableDeclaration(varDecl: Any): Any = js.native
   
-  /* private */ def emitModuleDeclaration(declaration: js.Any): js.Any = js.native
+  /* private */ def emitModuleDeclaration(declaration: Any): Any = js.native
   
-  /* private */ def emitModuleDeclarationWorker(moduleDecl: js.Any): js.Any = js.native
+  /* private */ def emitModuleDeclarationWorker(moduleDecl: Any): Any = js.native
   
   def emitName(name: Identifier, addThis: Boolean): Unit = js.native
   
@@ -178,15 +178,15 @@ trait Emitter extends StObject {
   
   def emitParameter(parameter: Parameter): Unit = js.native
   
-  /* private */ def emitParameterList(list: js.Any): js.Any = js.native
+  /* private */ def emitParameterList(list: Any): Any = js.native
   
-  /* private */ def emitParameterPropertyAndMemberVariableAssignments(): js.Any = js.native
+  /* private */ def emitParameterPropertyAndMemberVariableAssignments(): Any = js.native
   
   def emitParenthesizedArrowFunctionExpression(arrowFunction: ParenthesizedArrowFunctionExpression): Unit = js.native
   
   def emitParenthesizedExpression(parenthesizedExpression: ParenthesizedExpression): Unit = js.native
   
-  /* private */ def emitPossibleCopyrightHeaders(script: js.Any): js.Any = js.native
+  /* private */ def emitPossibleCopyrightHeaders(script: Any): Any = js.native
   
   def emitPostfixUnaryExpression(expression: PostfixUnaryExpression): Unit = js.native
   
@@ -198,7 +198,7 @@ trait Emitter extends StObject {
   
   def emitRegularExpressionLiteral(literal: RegularExpressionLiteral): Unit = js.native
   
-  /* private */ def emitRestParameterInitializer(parameters: js.Any): js.Any = js.native
+  /* private */ def emitRestParameterInitializer(parameters: Any): Any = js.native
   
   def emitReturnStatement(statement: ReturnStatement): Unit = js.native
   
@@ -236,7 +236,7 @@ trait Emitter extends StObject {
   
   def emitSingleModuleDeclaration(moduleDecl: ModuleDeclaration, moduleName: IASTToken): Unit = js.native
   
-  /* private */ def emitSourceUnit(sourceUnit: js.Any): js.Any = js.native
+  /* private */ def emitSourceUnit(sourceUnit: Any): Any = js.native
   
   def emitSpaceBetweenConstructs(node1: AST, node2: AST): Unit = js.native
   
@@ -246,7 +246,7 @@ trait Emitter extends StObject {
   
   def emitSuperExpression(expression: SuperExpression): Unit = js.native
   
-  /* private */ def emitSwitchClauseBody(body: js.Any): js.Any = js.native
+  /* private */ def emitSwitchClauseBody(body: Any): Any = js.native
   
   def emitSwitchStatement(statement: SwitchStatement): Unit = js.native
   
@@ -274,63 +274,63 @@ trait Emitter extends StObject {
   
   def emitWithStatement(statement: WithStatement): Unit = js.native
   
-  /* private */ def emitWorker(ast: js.Any): js.Any = js.native
+  /* private */ def emitWorker(ast: Any): Any = js.native
   
   var emittingFileName: String = js.native
   
-  /* private */ var exportAssignment: js.Any = js.native
+  /* private */ var exportAssignment: Any = js.native
   
   var extendsPrologueEmitted: Boolean = js.native
   
-  /* private */ def firstVariableDeclarator(statement: js.Any): js.Any = js.native
+  /* private */ def firstVariableDeclarator(statement: Any): Any = js.native
   
   def getConstantDecl(dotExpr: MemberAccessExpression): PullEnumElementDecl = js.native
   
-  /* private */ def getDetachedComments(element: js.Any): js.Any = js.native
+  /* private */ def getDetachedComments(element: Any): Any = js.native
   
-  /* private */ def getEnclosingDecl(): js.Any = js.native
+  /* private */ def getEnclosingDecl(): Any = js.native
   
   def getExportAssignment(): ExportAssignment = js.native
   
-  /* private */ def getImportDecls(fileName: js.Any): js.Any = js.native
+  /* private */ def getImportDecls(fileName: Any): Any = js.native
   
-  /* private */ def getIndentString(): js.Any = js.native
+  /* private */ def getIndentString(): Any = js.native
   
-  /* private */ def getModuleDeclToVerifyChildNameCollision(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
+  /* private */ def getModuleDeclToVerifyChildNameCollision(moduleDecl: Any, changeNameIfAnyDeclarationInContext: Any): Any = js.native
   
   def getModuleImportAndDependencyList(sourceUnit: SourceUnit): DependencyList = js.native
   
-  /* private */ def getModuleName(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
+  /* private */ def getModuleName(moduleDecl: Any, changeNameIfAnyDeclarationInContext: Any): Any = js.native
   
   def getOutputFiles(): js.Array[OutputFile] = js.native
   
-  /* private */ def getSymbolForEmit(ast: js.Any): js.Any = js.native
+  /* private */ def getSymbolForEmit(ast: Any): Any = js.native
   
   var globalThisCapturePrologueEmitted: Boolean = js.native
   
-  /* private */ def hasChildNameCollision(moduleName: js.Any, parentDecl: js.Any): js.Any = js.native
+  /* private */ def hasChildNameCollision(moduleName: Any, parentDecl: Any): Any = js.native
   
   var inArrowFunction: Boolean = js.native
   
-  /* private */ var inWithBlock: js.Any = js.native
+  /* private */ var inWithBlock: Any = js.native
   
   var indenter: Indenter = js.native
   
-  /* private */ def isDirectivePrologueElement(node: js.Any): js.Any = js.native
+  /* private */ def isDirectivePrologueElement(node: Any): Any = js.native
   
-  /* private */ def isNotAmbientOrHasInitializer(variableStatement: js.Any): js.Any = js.native
+  /* private */ def isNotAmbientOrHasInitializer(variableStatement: Any): Any = js.native
   
-  /* private */ def isOnSameLine(pos1: js.Any, pos2: js.Any): js.Any = js.native
+  /* private */ def isOnSameLine(pos1: Any, pos2: Any): Any = js.native
   
-  /* private */ def isPinnedOrTripleSlash(comment: js.Any): js.Any = js.native
+  /* private */ def isPinnedOrTripleSlash(comment: Any): Any = js.native
   
   var moduleName: String = js.native
   
   var outfile: TextWriter = js.native
   
-  /* private */ def popDecl(decl: js.Any): js.Any = js.native
+  /* private */ def popDecl(decl: Any): Any = js.native
   
-  /* private */ def pushDecl(decl: js.Any): js.Any = js.native
+  /* private */ def pushDecl(decl: Any): Any = js.native
   
   def recordSourceMappingEnd(ast: IASTSpan): Unit = js.native
   
@@ -340,9 +340,9 @@ trait Emitter extends StObject {
   
   def recordSourceMappingStart(ast: IASTSpan): Unit = js.native
   
-  /* private */ def requiresExtendsBlock(moduleElements: js.Any): js.Any = js.native
+  /* private */ def requiresExtendsBlock(moduleElements: Any): Any = js.native
   
-  /* private */ var semanticInfoChain: js.Any = js.native
+  /* private */ var semanticInfoChain: Any = js.native
   
   def setContainer(c: Double): Double = js.native
   
@@ -354,7 +354,7 @@ trait Emitter extends StObject {
   
   def shouldCaptureThis(ast: AST): Boolean = js.native
   
-  /* private */ def shouldEmit(ast: js.Any): js.Any = js.native
+  /* private */ def shouldEmit(ast: Any): Any = js.native
   
   def shouldEmitClassDeclaration(declaration: ClassDeclaration): Boolean = js.native
   
@@ -370,17 +370,17 @@ trait Emitter extends StObject {
   
   def shouldEmitVariableStatement(statement: VariableStatement): Boolean = js.native
   
-  /* private */ def shouldQualifySymbolNameWithParentName(symbol: js.Any): js.Any = js.native
+  /* private */ def shouldQualifySymbolNameWithParentName(symbol: Any): Any = js.native
   
   var sourceMapper: SourceMapper = js.native
   
-  /* private */ def symbolIsUsedInItsEnclosingContainer(symbol: js.Any, dynamic: js.Any): js.Any = js.native
+  /* private */ def symbolIsUsedInItsEnclosingContainer(symbol: Any, dynamic: Any): Any = js.native
   
   var thisClassNode: ClassDeclaration = js.native
   
   def tryEmitConstant(dotExpr: MemberAccessExpression): Boolean = js.native
   
-  /* private */ def updateLineAndColumn(s: js.Any): js.Any = js.native
+  /* private */ def updateLineAndColumn(s: Any): Any = js.native
   
   def writeCaptureThisStatement(ast: AST): Unit = js.native
   

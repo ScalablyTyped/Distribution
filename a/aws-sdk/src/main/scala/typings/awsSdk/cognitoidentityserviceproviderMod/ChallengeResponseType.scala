@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChallengeResponseType extends StObject {
   
   /**
-    * The challenge name
+    * The challenge name.
     */
   var ChallengeName: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeName] = js.undefined
   

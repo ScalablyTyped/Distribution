@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-swiper
 
-Typings are for version 1.5
+Typings are for version 1.6.0
 
 ## Library description:
 Swiper component for React Native.
@@ -10,10 +10,10 @@ Swiper component for React Native.
 | ------------------ | :-------------: |
 | Full name          | react-native-swiper |
 | Keywords           | react-component, react-native, ios |
-| # releases         | 13 |
-| # dependents       | 86 |
-| # downloads        | 2538997 |
-| # stars            | 27 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 270677.0 |
+| # stars            | 9938.0 |
 
 ## Links
 - [Homepage](https://github.com/leecade/react-native-swiper#readme)
@@ -24,7 +24,7 @@ Swiper component for React Native.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

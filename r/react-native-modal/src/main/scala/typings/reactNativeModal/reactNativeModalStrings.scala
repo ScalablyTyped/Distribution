@@ -14,6 +14,14 @@ object reactNativeModalStrings {
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
+  
+  @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
   sealed trait bounce extends StObject
   inline def bounce: bounce = "bounce".asInstanceOf[bounce]
   
@@ -56,6 +64,14 @@ object reactNativeModalStrings {
   @js.native
   sealed trait bounceOutUp extends StObject
   inline def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
+  
+  @js.native
+  sealed trait `box-none` extends StObject
+  inline def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
+  
+  @js.native
+  sealed trait `box-only` extends StObject
+  inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
   sealed trait center extends StObject
@@ -208,6 +224,18 @@ object reactNativeModalStrings {
   inline def lightSpeedOut: lightSpeedOut = "lightSpeedOut".asInstanceOf[lightSpeedOut]
   
   @js.native
+  sealed trait no extends StObject
+  inline def no: no = "no".asInstanceOf[no]
+  
+  @js.native
+  sealed trait `no-hide-descendants` extends StObject
+  inline def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait overFullScreen
     extends StObject
        with PresentationStyle
@@ -218,6 +246,10 @@ object reactNativeModalStrings {
     extends StObject
        with PresentationStyle
   inline def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
+  
+  @js.native
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
   sealed trait portrait
@@ -302,6 +334,10 @@ object reactNativeModalStrings {
   @js.native
   sealed trait wobble extends StObject
   inline def wobble: wobble = "wobble".asInstanceOf[wobble]
+  
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
   sealed trait zoomIn extends StObject

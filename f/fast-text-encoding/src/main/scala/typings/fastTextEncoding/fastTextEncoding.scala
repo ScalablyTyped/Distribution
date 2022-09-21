@@ -2,7 +2,6 @@ package typings.fastTextEncoding
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +23,8 @@ object fastTextEncoding {
   @js.native
   trait TextDecoderClass extends StObject {
     
-    def decode(buffer: Uint8Array): String = js.native
-    def decode(buffer: Uint8Array, options: TextEncodingOptions): String = js.native
+    def decode(buffer: js.typedarray.Uint8Array): String = js.native
+    def decode(buffer: js.typedarray.Uint8Array, options: TextEncodingOptions): String = js.native
     
     var encoding: String = js.native
     
@@ -65,8 +64,8 @@ object fastTextEncoding {
   @js.native
   trait TextEncoderClass extends StObject {
     
-    def encode(string: String): Uint8Array = js.native
-    def encode(string: String, options: TextEncodingOptions): Uint8Array = js.native
+    def encode(string: String): js.typedarray.Uint8Array = js.native
+    def encode(string: String, options: TextEncodingOptions): js.typedarray.Uint8Array = js.native
     
     var encoding: String = js.native
   }

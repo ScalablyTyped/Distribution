@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl]): String = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl], body: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl], body: Any): String = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("request-as-curl", JSImport.Namespace)
   @js.native

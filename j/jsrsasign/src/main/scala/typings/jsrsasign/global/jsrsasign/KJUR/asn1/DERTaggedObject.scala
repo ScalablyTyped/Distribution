@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERTaggedObject")
 @js.native
-class DERTaggedObject ()
+open class DERTaggedObject ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERTaggedObject {
   def this(params: ASN1ObjectParam) = this()
   def this(params: ExplicitParam) = this()

@@ -172,10 +172,21 @@ trait Raster
   var size: Size = js.native
   
   /** 
-    * Specifies if the raster should be smoothed when scaled up or if the
-    * pixels should be scaled up by repeating the nearest neighboring pixels.
+    * Determines if the raster is drawn with pixel smoothing when scaled up or
+    * down, and if so, at which quality its pixels are to be smoothed. The
+    * settings of this property control both the `imageSmoothingEnabled` and
+    * `imageSmoothingQuality` properties of the `CanvasRenderingContext2D`
+    * interface.
+    * 
+    * By default, smoothing is enabled at `'low'` quality. It can be set to of
+    * `'off'` to scale the raster's pixels by repeating the nearest neighboring
+    * pixels, or to `'low'`, `'medium'` or `'high'` to control the various
+    * degrees of available image smoothing quality.
+    * 
+    * For backward compatibility, it can can also be set to `false` (= `'off'`)
+    * or `true` (= `'low'`).
     */
-  var smoothing: Boolean = js.native
+  var smoothing: String = js.native
   
   /** 
     * The source of the raster, which can be set using a DOM Image, a Canvas,

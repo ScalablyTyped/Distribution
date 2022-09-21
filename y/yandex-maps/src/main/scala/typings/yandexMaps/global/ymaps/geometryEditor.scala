@@ -11,7 +11,7 @@ object geometryEditor {
   
   @JSGlobal("ymaps.geometryEditor.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends typings.yandexMaps.mod.geometryEditor.Circle {
     def this(geometry: ICircleGeometry) = this()
     def this(geometry: ICircleGeometry, options: js.Object) = this()
@@ -19,7 +19,7 @@ object geometryEditor {
   
   @JSGlobal("ymaps.geometryEditor.LineString")
   @js.native
-  class LineString protected ()
+  open class LineString protected ()
     extends typings.yandexMaps.mod.geometryEditor.LineString {
     def this(geometry: ILineStringGeometry) = this()
     def this(geometry: ILineStringGeometry, options: js.Object) = this()
@@ -27,12 +27,12 @@ object geometryEditor {
   
   @JSGlobal("ymaps.geometryEditor.Point")
   @js.native
-  class Point ()
+  open class Point ()
     extends typings.yandexMaps.mod.geometryEditor.Point
   
   @JSGlobal("ymaps.geometryEditor.Polygon")
   @js.native
-  class Polygon protected ()
+  open class Polygon protected ()
     extends typings.yandexMaps.mod.geometryEditor.Polygon {
     def this(geometry: IPolygonGeometry, options: js.Object) = this()
   }
@@ -41,37 +41,37 @@ object geometryEditor {
     
     @JSGlobal("ymaps.geometryEditor.model.ChildLineString")
     @js.native
-    class ChildLineString ()
+    open class ChildLineString ()
       extends typings.yandexMaps.mod.geometryEditor.model.ChildLineString
     
     @JSGlobal("ymaps.geometryEditor.model.ChildLinearRing")
     @js.native
-    class ChildLinearRing ()
+    open class ChildLinearRing ()
       extends typings.yandexMaps.mod.geometryEditor.model.ChildLinearRing
     
     @JSGlobal("ymaps.geometryEditor.model.ChildVertex")
     @js.native
-    class ChildVertex ()
+    open class ChildVertex ()
       extends typings.yandexMaps.mod.geometryEditor.model.ChildVertex
     
     @JSGlobal("ymaps.geometryEditor.model.Edge")
     @js.native
-    class Edge ()
+    open class Edge ()
       extends typings.yandexMaps.mod.geometryEditor.model.Edge
     
     @JSGlobal("ymaps.geometryEditor.model.EdgeGeometry")
     @js.native
-    class EdgeGeometry ()
+    open class EdgeGeometry ()
       extends typings.yandexMaps.mod.geometryEditor.model.EdgeGeometry
     
     @JSGlobal("ymaps.geometryEditor.model.RootLineString")
     @js.native
-    class RootLineString ()
+    open class RootLineString ()
       extends typings.yandexMaps.mod.geometryEditor.model.RootLineString
     
     @JSGlobal("ymaps.geometryEditor.model.RootPolygon")
     @js.native
-    class RootPolygon ()
+    open class RootPolygon ()
       extends typings.yandexMaps.mod.geometryEditor.model.RootPolygon
   }
   
@@ -79,22 +79,22 @@ object geometryEditor {
     
     @JSGlobal("ymaps.geometryEditor.view.Edge")
     @js.native
-    class Edge ()
+    open class Edge ()
       extends typings.yandexMaps.mod.geometryEditor.view.Edge
     
     @JSGlobal("ymaps.geometryEditor.view.MultiPath")
     @js.native
-    class MultiPath ()
+    open class MultiPath ()
       extends typings.yandexMaps.mod.geometryEditor.view.MultiPath
     
     @JSGlobal("ymaps.geometryEditor.view.Path")
     @js.native
-    class Path ()
+    open class Path ()
       extends typings.yandexMaps.mod.geometryEditor.view.Path
     
     @JSGlobal("ymaps.geometryEditor.view.Vertex")
     @js.native
-    class Vertex ()
+    open class Vertex ()
       extends typings.yandexMaps.mod.geometryEditor.view.Vertex
   }
 }

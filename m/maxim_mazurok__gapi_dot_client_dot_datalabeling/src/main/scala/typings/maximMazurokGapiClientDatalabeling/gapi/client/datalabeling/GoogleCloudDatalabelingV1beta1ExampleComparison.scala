@@ -29,6 +29,6 @@ object GoogleCloudDatalabelingV1beta1ExampleComparison {
     
     inline def setModelCreatedExamplesUndefined: Self = StObject.set(x, "modelCreatedExamples", js.undefined)
     
-    inline def setModelCreatedExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "modelCreatedExamples", js.Array(value :_*))
+    inline def setModelCreatedExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "modelCreatedExamples", js.Array(value*))
   }
 }

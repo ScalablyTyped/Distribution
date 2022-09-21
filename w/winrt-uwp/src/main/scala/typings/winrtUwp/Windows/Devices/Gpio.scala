@@ -187,7 +187,7 @@ object Gpio {
   @js.native
   trait GpioPin extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs]): Unit = js.native
     
@@ -225,7 +225,7 @@ object Gpio {
       */
     def read(): GpioPinValue = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs]): Unit = js.native
     
@@ -269,36 +269,36 @@ object Gpio {
     
     trait GpioPinProviderValueChangedEventArgs extends StObject {
       
-      var edge: js.Any
+      var edge: Any
     }
     object GpioPinProviderValueChangedEventArgs {
       
-      inline def apply(edge: js.Any): GpioPinProviderValueChangedEventArgs = {
+      inline def apply(edge: Any): GpioPinProviderValueChangedEventArgs = {
         val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any])
         __obj.asInstanceOf[GpioPinProviderValueChangedEventArgs]
       }
       
       extension [Self <: GpioPinProviderValueChangedEventArgs](x: Self) {
         
-        inline def setEdge(value: js.Any): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+        inline def setEdge(value: Any): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       }
     }
     
     /** Represents actions common to general-purpose I/O (GPIO) controller providers. */
     trait IGpioProvider extends StObject {
       
-      var getControllers: js.Any
+      var getControllers: Any
     }
     object IGpioProvider {
       
-      inline def apply(getControllers: js.Any): IGpioProvider = {
+      inline def apply(getControllers: Any): IGpioProvider = {
         val __obj = js.Dynamic.literal(getControllers = getControllers.asInstanceOf[js.Any])
         __obj.asInstanceOf[IGpioProvider]
       }
       
       extension [Self <: IGpioProvider](x: Self) {
         
-        inline def setGetControllers(value: js.Any): Self = StObject.set(x, "getControllers", value.asInstanceOf[js.Any])
+        inline def setGetControllers(value: Any): Self = StObject.set(x, "getControllers", value.asInstanceOf[js.Any])
       }
     }
   }

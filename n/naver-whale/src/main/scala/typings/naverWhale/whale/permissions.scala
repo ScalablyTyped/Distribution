@@ -40,13 +40,13 @@ object permissions {
       
       inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value*))
       
       inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
       inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
     }
   }
   

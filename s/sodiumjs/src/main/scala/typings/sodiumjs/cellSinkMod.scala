@@ -10,7 +10,7 @@ object cellSinkMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/CellSink", "CellSink")
   @js.native
-  class CellSink[A] protected () extends Cell[A] {
+  open class CellSink[A] protected () extends Cell[A] {
     /**
       * Construct a writable cell with the specified initial value. If multiple values are
       * sent in the same transaction, the specified function is used to combine them.

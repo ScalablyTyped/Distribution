@@ -1,39 +1,61 @@
 package typings.expressFileupload
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.busboy.mod.Limits
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
-import typings.node.Buffer
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.IncomingHttpHeaders
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: Options): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-fileupload", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("express-fileupload", "FileArray")
-  @js.native
-  class FileArray ()
-    extends StObject
-       with /* index */ StringDictionary[UploadedFile]
+  type FileArray = StringDictionary[UploadedFile | js.Array[UploadedFile]]
   
   /**
     * @see {@link https://github.com/richardgirges/express-fileupload#available-options}
     */
-  trait Options
-    extends StObject
-       with /* property */ StringDictionary[js.Any] {
+  // TODO: we need the `Partial<...>` part here because BusboyConfig properties used to be not optional
+  // in @types/busboy@0, users upgrading this type with a lockfile won't receive the update to
+  // newer busboy types this package actually requires
+  /* Inlined parent std.Partial<busboy.busboy.BusboyConfig> */
+  trait Options extends StObject {
     
     /**
       * Returns a HTTP 413 when the file is bigger than the size limit if `true`.
@@ -49,21 +71,40 @@ object mod {
     var createParentPath: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Turn on/off upload process logging.
-      * Can be useful for troubleshooting.
+      * Turn on/off upload process logging. Can be useful for troubleshooting.
       * @default false
       */
     var debug: js.UndefOr[Boolean] = js.undefined
+    
+    var defCharset: js.UndefOr[String] = js.undefined
+    
+    var defParamCharset: js.UndefOr[String] = js.undefined
+    
+    var fileHwm: js.UndefOr[Double] = js.undefined
+    
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
+    
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * User defined limit handler which will be invoked if the file is bigger than configured limits.
       * @default false
       */
-    var limitHandler: js.UndefOr[Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])] = js.undefined
+    var limitHandler: js.UndefOr[
+        Boolean | (RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ])
+      ] = js.undefined
+    
+    var limits: js.UndefOr[Limits] = js.undefined
     
     /**
-      * By default, `req.body` and `req.files`
-      * are flattened like this: `{'name': 'John', 'hobbies[0]': 'Cinema', 'hobbies[1]': 'Bike'}`
+      * By default, `req.body` and `req.files` are flattened like this:
+      * `{'name': 'John', 'hobbies[0]': 'Cinema', 'hobbies[1]': 'Bike'}
       *
       * When this option is enabled they are parsed in order to be nested like this:
       * `{'name': 'John', 'hobbies': ['Cinema', 'Bike']}`
@@ -72,13 +113,26 @@ object mod {
     var parseNested: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Preserves filename extension when using safeFileNames option.
-      * If set to `true`, will default to an extension length of 3.
-      * If set to `Number`, this will be the max allowable extension length.
-      * If an extension is smaller than the extension length, it remains untouched. If the extension is longer, it is shifted.
+      * Preserves filename extension when using `safeFileNames` option.
+      * If set to `true`, will default to an extension length of `3`.
+      * If set to `number`, this will be the max allowable extension length.
+      * If an extension is smaller than the extension length, it remains untouched. If the extension is longer,
+      * it is shifted.
       * @default false
+      *
+      * @example
+      * // true
+      * app.use(fileUpload({ safeFileNames: true, preserveExtension: true }));
+      * // myFileName.ext --> myFileName.ext
+      *
+      * @example
+      * // max extension length 2, extension shifted
+      * app.use(fileUpload({ safeFileNames: true, preserveExtension: 2 }));
+      * // myFileName.ext --> myFileNamee.xt
       */
     var preserveExtension: js.UndefOr[Boolean | Double] = js.undefined
+    
+    var preservePath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Response which will be send to client if file size limit exceeded when `abortOnLimit` set to `true`.
@@ -89,36 +143,45 @@ object mod {
     /**
       * Strips characters from the upload's filename.
       * You can use custom regex to determine what to strip.
-      * If set to true, non-alphanumeric characters except dashes and underscores will be stripped.
+      * If set to `true`, non-alphanumeric characters _except_ dashes and underscores will be stripped.
       * This option is off by default.
       * @default false
+      *
+      * @example
+      * // strip slashes from file names
+      * app.use(fileUpload({ safeFileNames: /\\/g }))
+      *
+      * @example
+      * app.use(fileUpload({ safeFileNames: true }))
       */
-    var safeFileNames: js.UndefOr[Boolean | RegExp] = js.undefined
+    var safeFileNames: js.UndefOr[Boolean | js.RegExp] = js.undefined
     
     /**
       * Path to store temporary files.
-      * Used along with the `useTempFiles` option.
-      * By default this module uses 'tmp' folder in the current working directory.
+      * Used along with the `useTempFiles` option. By default this module uses `'tmp'` folder
+      * in the current working directory.
       * You can use trailing slash, but it is not necessary.
-      * @default '/tmp'
+      * @default './tmp'
       */
     var tempFileDir: js.UndefOr[String] = js.undefined
     
     /**
-      * @default 60000
+      * This defines how long to wait for data before aborting. Set to `0` if you want to turn off timeout checks.
+      * @default 60_000
       */
     var uploadTimeout: js.UndefOr[Double] = js.undefined
     
     /**
-      * Applies uri decoding to file names if set true.
+      * Applies uri decoding to file names if set `true`.
       * @default false
       */
     var uriDecodeFileNames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default this module uploads files into RAM.
-      * Setting this option to True turns on using temporary files instead of utilising RAM. This avoids memory overflow issues when uploading large files
-      * or in case of uploading lots of files at same time.
+      * Setting this option to `true` turns on using temporary files instead of utilising RAM.
+      * This avoids memory overflow issues when uploading large files or in case of uploading
+      * lots of files at same time.
       * @default false
       */
     var useTempFiles: js.UndefOr[Boolean] = js.undefined
@@ -144,13 +207,43 @@ object mod {
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setLimitHandler(value: Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
+      inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
-      inline def setLimitHandlerFunction3(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "limitHandler", js.Any.fromFunction3(value))
+      inline def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
+      
+      inline def setDefParamCharset(value: String): Self = StObject.set(x, "defParamCharset", value.asInstanceOf[js.Any])
+      
+      inline def setDefParamCharsetUndefined: Self = StObject.set(x, "defParamCharset", js.undefined)
+      
+      inline def setFileHwm(value: Double): Self = StObject.set(x, "fileHwm", value.asInstanceOf[js.Any])
+      
+      inline def setFileHwmUndefined: Self = StObject.set(x, "fileHwm", js.undefined)
+      
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
+      inline def setLimitHandler(
+        value: Boolean | (RequestHandler[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ])
+      ): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
+      
+      inline def setLimitHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "limitHandler", js.Any.fromFunction3(value))
       
       inline def setLimitHandlerUndefined: Self = StObject.set(x, "limitHandler", js.undefined)
+      
+      inline def setLimits(value: Limits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
       inline def setParseNested(value: Boolean): Self = StObject.set(x, "parseNested", value.asInstanceOf[js.Any])
       
@@ -160,11 +253,15 @@ object mod {
       
       inline def setPreserveExtensionUndefined: Self = StObject.set(x, "preserveExtension", js.undefined)
       
+      inline def setPreservePath(value: Boolean): Self = StObject.set(x, "preservePath", value.asInstanceOf[js.Any])
+      
+      inline def setPreservePathUndefined: Self = StObject.set(x, "preservePath", js.undefined)
+      
       inline def setResponseOnLimit(value: String): Self = StObject.set(x, "responseOnLimit", value.asInstanceOf[js.Any])
       
       inline def setResponseOnLimitUndefined: Self = StObject.set(x, "responseOnLimit", js.undefined)
       
-      inline def setSafeFileNames(value: Boolean | RegExp): Self = StObject.set(x, "safeFileNames", value.asInstanceOf[js.Any])
+      inline def setSafeFileNames(value: Boolean | js.RegExp): Self = StObject.set(x, "safeFileNames", value.asInstanceOf[js.Any])
       
       inline def setSafeFileNamesUndefined: Self = StObject.set(x, "safeFileNames", js.undefined)
       
@@ -203,7 +300,7 @@ object mod {
     
     def mv(path: String): js.Promise[Unit] = js.native
     /** A function to move the file elsewhere on your server */
-    def mv(path: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def mv(path: String, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
     
     /** file name */
     var name: String = js.native
@@ -224,7 +321,7 @@ object mod {
       
       trait Request extends StObject {
         
-        var files: js.UndefOr[FileArray] = js.undefined
+        var files: js.UndefOr[FileArray | Null] = js.undefined
       }
       object Request {
         
@@ -236,6 +333,8 @@ object mod {
         extension [Self <: typings.expressFileupload.mod.global.Express.Request](x: Self) {
           
           inline def setFiles(value: FileArray): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+          
+          inline def setFilesNull: Self = StObject.set(x, "files", null)
           
           inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
         }

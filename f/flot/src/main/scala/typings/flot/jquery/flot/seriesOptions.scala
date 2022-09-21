@@ -10,9 +10,9 @@ trait seriesOptions extends StObject {
   
   var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
   
-  var highlightColor: js.UndefOr[js.Any] = js.undefined
+  var highlightColor: js.UndefOr[Any] = js.undefined
   
   var hoverable: js.UndefOr[Boolean] = js.undefined
   
@@ -46,11 +46,11 @@ object seriesOptions {
     
     inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setHighlightColor(value: js.Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     

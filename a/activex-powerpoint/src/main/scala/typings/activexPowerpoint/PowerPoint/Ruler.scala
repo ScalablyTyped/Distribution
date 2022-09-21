@@ -10,7 +10,7 @@ trait Ruler extends StObject {
   
   val Levels: RulerLevels
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Ruler_typekey")
   var PowerPointDotRuler_typekey: Ruler
@@ -22,7 +22,7 @@ object Ruler {
   inline def apply(
     Application: Application,
     Levels: RulerLevels,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotRuler_typekey: Ruler,
     TabStops: TabStops
   ): Ruler = {
@@ -37,7 +37,7 @@ object Ruler {
     
     inline def setLevels(value: RulerLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotRuler_typekey(value: Ruler): Self = StObject.set(x, "PowerPoint.Ruler_typekey", value.asInstanceOf[js.Any])
     

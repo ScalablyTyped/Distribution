@@ -1,26 +1,47 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import typings.vscodeLanguageserverTypes.anon.Language
+import typings.vscodeLanguageserverTypes.mod.^
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CodeActionKind = java.lang.String
+type ChangeAnnotationIdentifier = String
 
-type CompletionItemTag = typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
+type CodeActionKind = String
 
-inline def EOL: js.Array[java.lang.String] = typings.vscodeLanguageserverTypes.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[java.lang.String]]
+type CompletionItemTag = `1`
 
-type MarkedString = java.lang.String | typings.vscodeLanguageserverTypes.anon.Language
+type DocumentUri = String
 
-type SymbolTag = typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
+inline def EOL: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[String]]
 
-type Declaration = typings.vscodeLanguageserverTypes.mod.Location | js.Array[typings.vscodeLanguageserverTypes.mod.Location]
+type FoldingRangeKind = String
 
-type DeclarationLink = typings.vscodeLanguageserverTypes.mod.LocationLink
+type MarkedString = String | Language
 
-type Definition = typings.vscodeLanguageserverTypes.mod.Location | js.Array[typings.vscodeLanguageserverTypes.mod.Location]
+type SymbolTag = `1`
 
-type DefinitionLink = typings.vscodeLanguageserverTypes.mod.LocationLink
+type URI = String
 
-type DocumentUri = java.lang.String
+type integer = Double
+
+type uinteger = Double
+
+type Declaration = Location | js.Array[Location]
+
+type DeclarationLink = LocationLink
+
+type Definition = Location | js.Array[Location]
+
+type DefinitionLink = LocationLink
+
+type LSPAny = Any
+
+type LSPArray = js.Array[Any]
+
+type LSPObject = js.Object
+
+type decimal = Double

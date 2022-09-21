@@ -10,10 +10,10 @@ Convert streams (readable or writable) to promises
 | ------------------ | :-------------: |
 | Full name          | stream-to-promise |
 | Keywords           | stream, promise |
-| # releases         | 2 |
-| # dependents       | 153 |
-| # downloads        | 4544278 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1058921.3333333333 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/bendrucker/stream-to-promise)

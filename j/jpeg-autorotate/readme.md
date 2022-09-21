@@ -4,16 +4,16 @@
 Typings are for version 5.0
 
 ## Library description:
-Rotates JPEG images based on EXIF orientation
+Rotate JPEG images based on EXIF orientation
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jpeg-autorotate |
 | Keywords           | jpeg, rotate, autorotate, orientation, exif, thumbnail, cli |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 497902 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 145258.33333333334 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/johansatge/jpeg-autorotate#readme)

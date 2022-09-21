@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Dispute")
 @js.native
-class Dispute () extends StObject {
+open class Dispute () extends StObject {
   
   /**
     * The disputed amount. The amount can be less than the entire transaction amount.

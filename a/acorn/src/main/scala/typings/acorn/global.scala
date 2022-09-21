@@ -1,11 +1,15 @@
 package typings.acorn
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Instantiable4
+import typings.acorn.anon.Arrow
+import typings.acorn.anon.Bexpr
 import typings.acorn.anon.Call
 import typings.acorn.anon.TypeofParser
 import typings.acorn.mod.Options
 import typings.acorn.mod.Position
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +24,7 @@ object global {
     
     @JSGlobal("acorn.Node")
     @js.native
-    class Node protected ()
+    open class Node protected ()
       extends typings.acorn.mod.Node {
       def this(parser: typings.acorn.mod.Parser, pos: Double) = this()
       def this(parser: typings.acorn.mod.Parser, pos: Double, loc: typings.acorn.mod.SourceLocation) = this()
@@ -28,8 +32,9 @@ object global {
     
     @JSGlobal("acorn.Parser")
     @js.native
-    class Parser protected ()
+    open class Parser protected ()
       extends typings.acorn.mod.Parser {
+      // state.js
       def this(options: Options, input: String) = this()
       def this(options: Options, input: String, startPos: Double) = this()
     }
@@ -38,6 +43,192 @@ object global {
       @JSGlobal("acorn.Parser")
       @js.native
       val ^ : js.Any = js.native
+      
+      // index.js
+      /* static member */
+      /* was `typeof acorn` */
+      // index.js
+      /* static member */
+      /* was `typeof acorn` */
+      object acorn {
+        
+        @JSGlobal("acorn.Parser.acorn")
+        @js.native
+        val ^ : js.Any = js.native
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.Node")
+        @js.native
+        open class Node protected ()
+          extends typings.acorn.mod.Node {
+          def this(parser: typings.acorn.mod.Parser, pos: Double) = this()
+          def this(parser: typings.acorn.mod.Parser, pos: Double, loc: typings.acorn.mod.SourceLocation) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.Node")
+        @js.native
+        def Node: Instantiable3[
+                /* parser */ typings.acorn.mod.Parser, 
+                /* pos */ Double, 
+                /* loc */ js.UndefOr[typings.acorn.mod.SourceLocation], 
+                typings.acorn.mod.Node
+              ] = js.native
+        inline def Node_=(
+          x: Instantiable3[
+                  /* parser */ typings.acorn.mod.Parser, 
+                  /* pos */ Double, 
+                  /* loc */ js.UndefOr[typings.acorn.mod.SourceLocation], 
+                  typings.acorn.mod.Node
+                ]
+        ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.Parser")
+        @js.native
+        open class Parser protected ()
+          extends typings.acorn.mod.Parser {
+          // state.js
+          def this(options: Options, input: String) = this()
+          def this(options: Options, input: String, startPos: Double) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.Parser")
+        @js.native
+        def Parser: (Instantiable3[
+                /* options */ Options, 
+                /* input */ String, 
+                /* startPos */ js.UndefOr[Double], 
+                typings.acorn.mod.Parser
+              ]) | TypeofParser = js.native
+        inline def Parser_=(
+          x: (Instantiable3[
+                  /* options */ Options, 
+                  /* input */ String, 
+                  /* startPos */ js.UndefOr[Double], 
+                  typings.acorn.mod.Parser
+                ]) | TypeofParser
+        ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parser")(x.asInstanceOf[js.Any])
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.SourceLocation")
+        @js.native
+        open class SourceLocation protected ()
+          extends typings.acorn.mod.SourceLocation {
+          def this(p: typings.acorn.mod.Parser, start: Position, end: Position) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.SourceLocation")
+        @js.native
+        def SourceLocation: Instantiable3[
+                /* p */ typings.acorn.mod.Parser, 
+                /* start */ Position, 
+                /* end */ Position, 
+                typings.acorn.mod.SourceLocation
+              ] = js.native
+        inline def SourceLocation_=(
+          x: Instantiable3[
+                  /* p */ typings.acorn.mod.Parser, 
+                  /* start */ Position, 
+                  /* end */ Position, 
+                  typings.acorn.mod.SourceLocation
+                ]
+        ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SourceLocation")(x.asInstanceOf[js.Any])
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.TokContext")
+        @js.native
+        open class TokContext protected ()
+          extends typings.acorn.mod.TokContext {
+          def this(token: String, isExpr: Boolean, preserveSpace: Boolean) = this()
+          def this(
+            token: String,
+            isExpr: Boolean,
+            preserveSpace: Boolean,
+            `override`: js.Function1[/* p */ typings.acorn.mod.Parser, Unit]
+          ) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.TokContext")
+        @js.native
+        def TokContext: Instantiable4[
+                /* token */ String, 
+                /* isExpr */ Boolean, 
+                /* preserveSpace */ Boolean, 
+                /* override */ js.UndefOr[js.Function1[/* p */ typings.acorn.mod.Parser, Unit]], 
+                typings.acorn.mod.TokContext
+              ] = js.native
+        inline def TokContext_=(
+          x: Instantiable4[
+                  /* token */ String, 
+                  /* isExpr */ Boolean, 
+                  /* preserveSpace */ Boolean, 
+                  /* override */ js.UndefOr[js.Function1[/* p */ typings.acorn.mod.Parser, Unit]], 
+                  typings.acorn.mod.TokContext
+                ]
+        ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TokContext")(x.asInstanceOf[js.Any])
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.Token")
+        @js.native
+        open class Token protected ()
+          extends typings.acorn.mod.Token {
+          def this(p: typings.acorn.mod.Parser) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.Token")
+        @js.native
+        def Token: Instantiable1[/* p */ typings.acorn.mod.Parser, typings.acorn.mod.Token] = js.native
+        
+        /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+        @JSGlobal("acorn.Parser.acorn.TokenType")
+        @js.native
+        open class TokenType protected ()
+          extends typings.acorn.mod.TokenType {
+          def this(label: String) = this()
+          def this(label: String, conf: Any) = this()
+        }
+        @JSGlobal("acorn.Parser.acorn.TokenType")
+        @js.native
+        def TokenType: Instantiable2[/* label */ String, /* conf */ js.UndefOr[Any], typings.acorn.mod.TokenType] = js.native
+        inline def TokenType_=(x: Instantiable2[/* label */ String, /* conf */ js.UndefOr[Any], typings.acorn.mod.TokenType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TokenType")(x.asInstanceOf[js.Any])
+        
+        inline def Token_=(x: Instantiable1[/* p */ typings.acorn.mod.Parser, typings.acorn.mod.Token]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Token")(x.asInstanceOf[js.Any])
+        
+        @JSGlobal("acorn.Parser.acorn.defaultOptions")
+        @js.native
+        val defaultOptions: Options = js.native
+        
+        inline def getLineInfo(input: String, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineInfo")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
+        
+        inline def isIdentifierChar(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+        inline def isIdentifierChar(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        
+        inline def isIdentifierStart(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+        inline def isIdentifierStart(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        
+        inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+        
+        @JSGlobal("acorn.Parser.acorn.lineBreak")
+        @js.native
+        val lineBreak: js.RegExp = js.native
+        
+        @JSGlobal("acorn.Parser.acorn.lineBreakG")
+        @js.native
+        val lineBreakG: js.RegExp = js.native
+        
+        inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
+        
+        inline def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
+        
+        @JSGlobal("acorn.Parser.acorn.tokContexts")
+        @js.native
+        val tokContexts: Bexpr = js.native
+        
+        @JSGlobal("acorn.Parser.acorn.tokTypes")
+        @js.native
+        val tokTypes: Arrow = js.native
+        
+        inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+        
+        @JSGlobal("acorn.Parser.acorn.version")
+        @js.native
+        val version: String = js.native
+      }
       
       /* static member */
       inline def extend(
@@ -60,36 +251,34 @@ object global {
             /* input */ String, 
             /* startPos */ js.UndefOr[Double], 
             typings.acorn.mod.Parser
-          ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugins.asInstanceOf[js.Any]).asInstanceOf[TypeofParser & (Instantiable3[
+          ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TypeofParser & (Instantiable3[
             /* options */ Options, 
             /* input */ String, 
             /* startPos */ js.UndefOr[Double], 
             typings.acorn.mod.Parser
           ])]
       
+      // state.js
       /* static member */
-      inline def parse(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
       inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
       
       /* static member */
-      inline def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
       inline def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
       
       /* static member */
-      inline def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
       inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
     }
     
     @JSGlobal("acorn.SourceLocation")
     @js.native
-    class SourceLocation protected ()
+    open class SourceLocation protected ()
       extends typings.acorn.mod.SourceLocation {
       def this(p: typings.acorn.mod.Parser, start: Position, end: Position) = this()
     }
     
     @JSGlobal("acorn.TokContext")
     @js.native
-    class TokContext protected ()
+    open class TokContext protected ()
       extends typings.acorn.mod.TokContext {
       def this(token: String, isExpr: Boolean, preserveSpace: Boolean) = this()
       def this(
@@ -102,17 +291,17 @@ object global {
     
     @JSGlobal("acorn.Token")
     @js.native
-    class Token protected ()
+    open class Token protected ()
       extends typings.acorn.mod.Token {
       def this(p: typings.acorn.mod.Parser) = this()
     }
     
     @JSGlobal("acorn.TokenType")
     @js.native
-    class TokenType protected ()
+    open class TokenType protected ()
       extends typings.acorn.mod.TokenType {
       def this(label: String) = this()
-      def this(label: String, conf: js.Any) = this()
+      def this(label: String, conf: Any) = this()
     }
     
     @JSGlobal("acorn.defaultOptions")
@@ -131,19 +320,15 @@ object global {
     
     @JSGlobal("acorn.lineBreak")
     @js.native
-    val lineBreak: RegExp = js.native
+    val lineBreak: js.RegExp = js.native
     
     @JSGlobal("acorn.lineBreakG")
     @js.native
-    val lineBreakG: RegExp = js.native
+    val lineBreakG: js.RegExp = js.native
     
-    inline def parse(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
     inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     
-    inline def parseExpressionAt(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
-    inline def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     inline def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
-    inline def parseExpressionAt(input: String, pos: Unit, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     
     object tokContexts {
       
@@ -173,7 +358,25 @@ object global {
       @js.native
       def fExpr: typings.acorn.mod.TokContext = js.native
       
+      @JSGlobal("acorn.tokContexts.f_expr_gen")
+      @js.native
+      def fExprGen: typings.acorn.mod.TokContext = js.native
+      
+      inline def fExprGen_=(x: typings.acorn.mod.TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_expr_gen")(x.asInstanceOf[js.Any])
+      
       inline def fExpr_=(x: typings.acorn.mod.TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_expr")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.tokContexts.f_gen")
+      @js.native
+      def fGen: typings.acorn.mod.TokContext = js.native
+      
+      inline def fGen_=(x: typings.acorn.mod.TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_gen")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.tokContexts.f_stat")
+      @js.native
+      def fStat: typings.acorn.mod.TokContext = js.native
+      
+      inline def fStat_=(x: typings.acorn.mod.TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_stat")(x.asInstanceOf[js.Any])
       
       @JSGlobal("acorn.tokContexts.p_expr")
       @js.native
@@ -276,6 +479,11 @@ object global {
       @JSGlobal("acorn.tokTypes._class")
       @js.native
       val `class`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.tokTypes.coalesce")
+      @js.native
+      def coalesce: typings.acorn.mod.TokenType = js.native
+      inline def coalesce_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coalesce")(x.asInstanceOf[js.Any])
       
       @JSGlobal("acorn.tokTypes.colon")
       @js.native
@@ -403,6 +611,11 @@ object global {
       
       inline def instanceof_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceof")(x.asInstanceOf[js.Any])
       
+      @JSGlobal("acorn.tokTypes.invalidTemplate")
+      @js.native
+      def invalidTemplate: typings.acorn.mod.TokenType = js.native
+      inline def invalidTemplate_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidTemplate")(x.asInstanceOf[js.Any])
+      
       @JSGlobal("acorn.tokTypes.logicalAND")
       @js.native
       def logicalAND: typings.acorn.mod.TokenType = js.native
@@ -456,9 +669,20 @@ object global {
       def prefix: typings.acorn.mod.TokenType = js.native
       inline def prefix_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
       
+      @JSGlobal("acorn.tokTypes.privateId")
+      @js.native
+      def privateId: typings.acorn.mod.TokenType = js.native
+      inline def privateId_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("privateId")(x.asInstanceOf[js.Any])
+      
       @JSGlobal("acorn.tokTypes.question")
       @js.native
       def question: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.tokTypes.questionDot")
+      @js.native
+      def questionDot: typings.acorn.mod.TokenType = js.native
+      inline def questionDot_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("questionDot")(x.asInstanceOf[js.Any])
+      
       inline def question_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("question")(x.asInstanceOf[js.Any])
       
       @JSGlobal("acorn.tokTypes.regexp")
@@ -556,7 +780,6 @@ object global {
       val `with`: typings.acorn.mod.TokenType = js.native
     }
     
-    inline def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
     inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
     
     @JSGlobal("acorn.version")

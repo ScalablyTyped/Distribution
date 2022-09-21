@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedSheetViewUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the name of the sheet view.
     The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
 }

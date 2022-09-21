@@ -16,17 +16,17 @@ trait ErrorEvent
   extends StObject
      with EventObject {
   
-  var Reason: js.Any
+  var Reason: Any
 }
 object ErrorEvent {
   
-  inline def apply(Reason: js.Any, Source: XInterface): ErrorEvent = {
+  inline def apply(Reason: Any, Source: XInterface): ErrorEvent = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEvent]
   }
   
   extension [Self <: ErrorEvent](x: Self) {
     
-    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

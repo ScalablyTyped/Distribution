@@ -24,6 +24,6 @@ object SchemaGetOrderDealsResponse {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value*))
   }
 }

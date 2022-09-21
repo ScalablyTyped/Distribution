@@ -9,7 +9,7 @@ trait ColumnWidth extends StObject {
   
   var columnWidth: Double
   
-  var columnWidths: js.Any
+  var columnWidths: Any
   
   var headerIdWidths: Record[String, Double]
   
@@ -19,7 +19,7 @@ trait ColumnWidth extends StObject {
 }
 object ColumnWidth {
   
-  inline def apply(columnWidth: Double, columnWidths: js.Any, headerIdWidths: Record[String, Double]): ColumnWidth = {
+  inline def apply(columnWidth: Double, columnWidths: Any, headerIdWidths: Record[String, Double]): ColumnWidth = {
     val __obj = js.Dynamic.literal(columnWidth = columnWidth.asInstanceOf[js.Any], columnWidths = columnWidths.asInstanceOf[js.Any], headerIdWidths = headerIdWidths.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnWidth]
   }
@@ -28,7 +28,7 @@ object ColumnWidth {
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    inline def setColumnWidths(value: js.Any): Self = StObject.set(x, "columnWidths", value.asInstanceOf[js.Any])
+    inline def setColumnWidths(value: Any): Self = StObject.set(x, "columnWidths", value.asInstanceOf[js.Any])
     
     inline def setHeaderIdWidths(value: Record[String, Double]): Self = StObject.set(x, "headerIdWidths", value.asInstanceOf[js.Any])
     

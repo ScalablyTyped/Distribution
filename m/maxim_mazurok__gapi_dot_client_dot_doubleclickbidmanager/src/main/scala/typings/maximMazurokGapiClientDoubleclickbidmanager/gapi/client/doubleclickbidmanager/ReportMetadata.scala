@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReportMetadata extends StObject {
   
-  /** The path to the location in Google Cloud Storage where the report is stored. */
+  /** Output only. The path to the location in Google Cloud Storage where the report is stored. */
   var googleCloudStoragePath: js.UndefOr[String] = js.undefined
   
   /** The ending time for the data that is shown in the report. */
-  var reportDataEndTimeMs: js.UndefOr[String] = js.undefined
+  var reportDataEndDate: js.UndefOr[Date] = js.undefined
   
   /** The starting time for the data that is shown in the report. */
-  var reportDataStartTimeMs: js.UndefOr[String] = js.undefined
+  var reportDataStartDate: js.UndefOr[Date] = js.undefined
   
   /** Report status. */
   var status: js.UndefOr[ReportStatus] = js.undefined
@@ -31,13 +31,13 @@ object ReportMetadata {
     
     inline def setGoogleCloudStoragePathUndefined: Self = StObject.set(x, "googleCloudStoragePath", js.undefined)
     
-    inline def setReportDataEndTimeMs(value: String): Self = StObject.set(x, "reportDataEndTimeMs", value.asInstanceOf[js.Any])
+    inline def setReportDataEndDate(value: Date): Self = StObject.set(x, "reportDataEndDate", value.asInstanceOf[js.Any])
     
-    inline def setReportDataEndTimeMsUndefined: Self = StObject.set(x, "reportDataEndTimeMs", js.undefined)
+    inline def setReportDataEndDateUndefined: Self = StObject.set(x, "reportDataEndDate", js.undefined)
     
-    inline def setReportDataStartTimeMs(value: String): Self = StObject.set(x, "reportDataStartTimeMs", value.asInstanceOf[js.Any])
+    inline def setReportDataStartDate(value: Date): Self = StObject.set(x, "reportDataStartDate", value.asInstanceOf[js.Any])
     
-    inline def setReportDataStartTimeMsUndefined: Self = StObject.set(x, "reportDataStartTimeMs", js.undefined)
+    inline def setReportDataStartDateUndefined: Self = StObject.set(x, "reportDataStartDate", js.undefined)
     
     inline def setStatus(value: ReportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

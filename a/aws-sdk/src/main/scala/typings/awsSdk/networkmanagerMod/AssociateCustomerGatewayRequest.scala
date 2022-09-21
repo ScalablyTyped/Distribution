@@ -7,41 +7,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateCustomerGatewayRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the customer gateway. For more information, see Resources Defined by Amazon EC2.
+    * The Amazon Resource Name (ARN) of the customer gateway.
     */
-  var CustomerGatewayArn: String
+  var CustomerGatewayArn: typings.awsSdk.networkmanagerMod.CustomerGatewayArn
   
   /**
     * The ID of the device.
     */
-  var DeviceId: String
+  var DeviceId: typings.awsSdk.networkmanagerMod.DeviceId
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.undefined
+  var LinkId: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkId] = js.undefined
 }
 object AssociateCustomerGatewayRequest {
   
-  inline def apply(CustomerGatewayArn: String, DeviceId: String, GlobalNetworkId: String): AssociateCustomerGatewayRequest = {
+  inline def apply(CustomerGatewayArn: CustomerGatewayArn, DeviceId: DeviceId, GlobalNetworkId: GlobalNetworkId): AssociateCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayArn = CustomerGatewayArn.asInstanceOf[js.Any], DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateCustomerGatewayRequest]
   }
   
   extension [Self <: AssociateCustomerGatewayRequest](x: Self) {
     
-    inline def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArn(value: CustomerGatewayArn): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
   }

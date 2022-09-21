@@ -1,6 +1,5 @@
 package typings.parcelWatcher
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,24 +10,34 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@parcel/watcher", "ParcelWatcherSubscription")
-  @js.native
-  class ParcelWatcherSubscription () extends StObject {
+  inline def getEventsSince(dir: FilePath, snapshot: FilePath): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dir.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
+  inline def getEventsSince(dir: FilePath, snapshot: FilePath, opts: Options): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dir.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
+  
+  inline def subscribe(dir: FilePath, fn: SubscribeCallback): js.Promise[AsyncSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AsyncSubscription]]
+  inline def subscribe(dir: FilePath, fn: SubscribeCallback, opts: Options): js.Promise[AsyncSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AsyncSubscription]]
+  
+  inline def unsubscribe(dir: FilePath, fn: SubscribeCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unsubscribe(dir: FilePath, fn: SubscribeCallback, opts: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def writeSnapshot(dir: FilePath, snapshot: FilePath): js.Promise[FilePath] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dir.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FilePath]]
+  inline def writeSnapshot(dir: FilePath, snapshot: FilePath, opts: Options): js.Promise[FilePath] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dir.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FilePath]]
+  
+  trait AsyncSubscription extends StObject {
     
-    def unsubscribe(): js.Promise[Unit] = js.native
+    def unsubscribe(): js.Promise[Unit]
   }
-  
-  inline def getEventsSince(dirPath: String, snapshotPath: String): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
-  inline def getEventsSince(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
-  
-  inline def subscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
-  inline def subscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
-  
-  inline def unsubscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def unsubscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def writeSnapshot(dirPath: String, snapshotPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeSnapshot(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  object AsyncSubscription {
+    
+    inline def apply(unsubscribe: () => js.Promise[Unit]): AsyncSubscription = {
+      val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
+      __obj.asInstanceOf[AsyncSubscription]
+    }
+    
+    extension [Self <: AsyncSubscription](x: Self) {
+      
+      inline def setUnsubscribe(value: () => js.Promise[Unit]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.parcelWatcher.parcelWatcherStrings.`fs-events`
@@ -37,8 +46,8 @@ object mod {
     - typings.parcelWatcher.parcelWatcherStrings.windows
     - typings.parcelWatcher.parcelWatcherStrings.`brute-force`
   */
-  trait ParcelWatcherBackend extends StObject
-  object ParcelWatcherBackend {
+  trait BackendType extends StObject
+  object BackendType {
     
     inline def `brute-force`: typings.parcelWatcher.parcelWatcherStrings.`brute-force` = "brute-force".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.`brute-force`]
     
@@ -51,31 +60,25 @@ object mod {
     inline def windows: typings.parcelWatcher.parcelWatcherStrings.windows = "windows".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.windows]
   }
   
-  type ParcelWatcherCallback = js.Function2[
-    /* error */ js.UndefOr[Error], 
-    /* events */ js.UndefOr[js.Array[ParcelWatcherEvent]], 
-    js.Any
-  ]
-  
-  trait ParcelWatcherEvent extends StObject {
+  trait Event extends StObject {
     
-    var path: String
+    var path: FilePath
     
-    var `type`: ParcelWatcherEventType
+    var `type`: EventType
   }
-  object ParcelWatcherEvent {
+  object Event {
     
-    inline def apply(path: String, `type`: ParcelWatcherEventType): ParcelWatcherEvent = {
+    inline def apply(path: FilePath, `type`: EventType): Event = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ParcelWatcherEvent]
+      __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: ParcelWatcherEvent](x: Self) {
+    extension [Self <: Event](x: Self) {
       
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: FilePath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setType(value: ParcelWatcherEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,8 +87,8 @@ object mod {
     - typings.parcelWatcher.parcelWatcherStrings.update
     - typings.parcelWatcher.parcelWatcherStrings.delete
   */
-  trait ParcelWatcherEventType extends StObject
-  object ParcelWatcherEventType {
+  trait EventType extends StObject
+  object EventType {
     
     inline def create: typings.parcelWatcher.parcelWatcherStrings.create = "create".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.create]
     
@@ -94,30 +97,34 @@ object mod {
     inline def update: typings.parcelWatcher.parcelWatcherStrings.update = "update".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.update]
   }
   
-  trait ParcelWatcherOptions extends StObject {
+  type FilePath = String
+  
+  trait Options extends StObject {
     
-    var backend: js.UndefOr[ParcelWatcherBackend] = js.undefined
+    var backend: js.UndefOr[BackendType] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.undefined
+    var ignore: js.UndefOr[js.Array[FilePath]] = js.undefined
   }
-  object ParcelWatcherOptions {
+  object Options {
     
-    inline def apply(): ParcelWatcherOptions = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ParcelWatcherOptions]
+      __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: ParcelWatcherOptions](x: Self) {
+    extension [Self <: Options](x: Self) {
       
-      inline def setBackend(value: ParcelWatcherBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: BackendType): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
       inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[FilePath]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: FilePath*): Self = StObject.set(x, "ignore", js.Array(value*))
     }
   }
+  
+  type SubscribeCallback = js.Function2[/* err */ js.Error | Null, /* events */ js.Array[Event], Any]
 }

@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import typings.xstate.anon.ContextAny
 import typings.xstate.mod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import typings.xstate.typesMod.ActionObject
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.Guard
 import typings.xstate.typesMod.InvokeDefinition
+import typings.xstate.typesMod.ServiceMap
 import typings.xstate.xstateStrings.`final`
 import typings.xstate.xstateStrings.atomic
 import typings.xstate.xstateStrings.compound
@@ -23,13 +25,13 @@ object jsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def jsonify[T /* <: Record[String, js.Any] */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonify")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def jsonify[T /* <: Record[String, Any] */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonify")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def machineToJSON(stateNode: StateNode[js.Any, js.Any, EventObject, ContextAny]): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("machineToJSON")(stateNode.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
+  inline def machineToJSON(stateNode: StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled]): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("machineToJSON")(stateNode.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
   
   inline def parse(machineString: String): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(machineString.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
   
-  inline def stringify(machine: StateNode[js.Any, js.Any, EventObject, ContextAny]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(machine.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(machine: StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(machine.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stringifyFunction(fn: js.Function): JSONFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[JSONFunction]
   
@@ -53,15 +55,15 @@ object jsonMod {
   
   trait StateNodeConfig extends StObject {
     
-    var entry: js.Array[ActionObject[js.Any, js.Any]]
+    var entry: js.Array[ActionObject[Any, Any]]
     
-    var exit: js.Array[ActionObject[js.Any, js.Any]]
+    var exit: js.Array[ActionObject[Any, Any]]
     
     var id: String
     
     var initial: js.UndefOr[String] = js.undefined
     
-    var invoke: js.Array[InvokeDefinition[js.Any, js.Any]]
+    var invoke: js.Array[InvokeDefinition[Any, Any]]
     
     var key: String
     
@@ -74,10 +76,10 @@ object jsonMod {
   object StateNodeConfig {
     
     inline def apply(
-      entry: js.Array[ActionObject[js.Any, js.Any]],
-      exit: js.Array[ActionObject[js.Any, js.Any]],
+      entry: js.Array[ActionObject[Any, Any]],
+      exit: js.Array[ActionObject[Any, Any]],
       id: String,
-      invoke: js.Array[InvokeDefinition[js.Any, js.Any]],
+      invoke: js.Array[InvokeDefinition[Any, Any]],
       key: String,
       on: StringDictionary[js.Array[TransitionConfig]],
       states: Record[String, StateNodeConfig],
@@ -90,13 +92,13 @@ object jsonMod {
     
     extension [Self <: StateNodeConfig](x: Self) {
       
-      inline def setEntry(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      inline def setEntryVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "entry", js.Array(value :_*))
+      inline def setEntryVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "entry", js.Array(value*))
       
-      inline def setExit(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      inline def setExitVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "exit", js.Array(value :_*))
+      inline def setExitVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "exit", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -104,9 +106,9 @@ object jsonMod {
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      inline def setInvoke(value: js.Array[InvokeDefinition[js.Any, js.Any]]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+      inline def setInvoke(value: js.Array[InvokeDefinition[Any, Any]]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
       
-      inline def setInvokeVarargs(value: (InvokeDefinition[js.Any, js.Any])*): Self = StObject.set(x, "invoke", js.Array(value :_*))
+      inline def setInvokeVarargs(value: (InvokeDefinition[Any, Any])*): Self = StObject.set(x, "invoke", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -120,9 +122,9 @@ object jsonMod {
   
   trait TransitionConfig extends StObject {
     
-    var actions: js.Array[ActionObject[js.Any, js.Any]]
+    var actions: js.Array[ActionObject[Any, Any]]
     
-    var cond: js.UndefOr[Guard[js.Any, js.Any]] = js.undefined
+    var cond: js.UndefOr[Guard[Any, Any]] = js.undefined
     
     var eventType: String
     
@@ -133,7 +135,7 @@ object jsonMod {
   object TransitionConfig {
     
     inline def apply(
-      actions: js.Array[ActionObject[js.Any, js.Any]],
+      actions: js.Array[ActionObject[Any, Any]],
       eventType: String,
       source: String,
       target: js.Array[String]
@@ -144,11 +146,11 @@ object jsonMod {
     
     extension [Self <: TransitionConfig](x: Self) {
       
-      inline def setActions(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setCond(value: Guard[js.Any, js.Any]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+      inline def setCond(value: Guard[Any, Any]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
       
       inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
       
@@ -158,7 +160,7 @@ object jsonMod {
       
       inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
     }
   }
 }

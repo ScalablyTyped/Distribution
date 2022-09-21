@@ -49,7 +49,7 @@ object GoogleCloudDatalabelingV1beta1Instruction {
     
     inline def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
-    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
+    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

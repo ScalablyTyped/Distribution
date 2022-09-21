@@ -25,7 +25,7 @@ object SearchFoldersResponse {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

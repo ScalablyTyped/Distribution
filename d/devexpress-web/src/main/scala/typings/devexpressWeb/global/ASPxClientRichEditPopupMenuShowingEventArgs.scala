@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditPopupMenuShowingEventArgs")
 @js.native
-class ASPxClientRichEditPopupMenuShowingEventArgs protected ()
+open class ASPxClientRichEditPopupMenuShowingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditPopupMenuShowingEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientRichEditPopupMenuShowingEventArgs protected ()
   def this(menuItems: typings.devexpressWeb.ASPxClientRichEditPopupMenuItemCollection) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

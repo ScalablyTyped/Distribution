@@ -62,7 +62,7 @@ object PerfMetricsSummary {
     
     inline def setPerfMetricsUndefined: Self = StObject.set(x, "perfMetrics", js.undefined)
     
-    inline def setPerfMetricsVarargs(value: String*): Self = StObject.set(x, "perfMetrics", js.Array(value :_*))
+    inline def setPerfMetricsVarargs(value: String*): Self = StObject.set(x, "perfMetrics", js.Array(value*))
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

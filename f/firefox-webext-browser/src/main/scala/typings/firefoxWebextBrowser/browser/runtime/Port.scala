@@ -1,7 +1,6 @@
 package typings.firefoxWebextBrowser.browser.runtime
 
 import typings.firefoxWebextBrowser.WebExtEvent
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait Port extends StObject {
   
   def disconnect(): Unit
   
-  var error: js.UndefOr[Error] = js.undefined
+  var error: js.UndefOr[js.Error] = js.undefined
   
   var name: String
   
@@ -42,7 +41,7 @@ object Port {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

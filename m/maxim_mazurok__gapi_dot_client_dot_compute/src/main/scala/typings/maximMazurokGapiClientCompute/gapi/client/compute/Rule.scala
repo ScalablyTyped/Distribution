@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Rule extends StObject {
   
-  /** Required */
+  /** This is deprecated and has no effect. Do not use. */
   var action: js.UndefOr[String] = js.undefined
   
-  /** Additional restrictions that must be met. All conditions must pass for the rule to match. */
+  /** This is deprecated and has no effect. Do not use. */
   var conditions: js.UndefOr[js.Array[Condition]] = js.undefined
   
-  /** Human-readable description of the rule. */
+  /** This is deprecated and has no effect. Do not use. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** If one or more 'in' clauses are specified, the rule matches if the PRINCIPAL/AUTHORITY_SELECTOR is in at least one of these entries. */
+  /** This is deprecated and has no effect. Do not use. */
   var ins: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The config returned to callers of tech.iam.IAM.CheckPolicy for any entries that match the LOG action. */
+  /** This is deprecated and has no effect. Do not use. */
   var logConfigs: js.UndefOr[js.Array[LogConfig]] = js.undefined
   
-  /** If one or more 'not_in' clauses are specified, the rule matches if the PRINCIPAL/AUTHORITY_SELECTOR is in none of the entries. */
+  /** This is deprecated and has no effect. Do not use. */
   var notIns: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** A permission is a string of form '..' (e.g., 'storage.buckets.list'). A value of '*' matches all permissions, and a verb part of '*' (e.g., 'storage.buckets.*') matches all verbs. */
+  /** This is deprecated and has no effect. Do not use. */
   var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Rule {
@@ -44,7 +44,7 @@ object Rule {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -54,24 +54,24 @@ object Rule {
     
     inline def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
     
-    inline def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value :_*))
+    inline def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value*))
     
     inline def setLogConfigs(value: js.Array[LogConfig]): Self = StObject.set(x, "logConfigs", value.asInstanceOf[js.Any])
     
     inline def setLogConfigsUndefined: Self = StObject.set(x, "logConfigs", js.undefined)
     
-    inline def setLogConfigsVarargs(value: LogConfig*): Self = StObject.set(x, "logConfigs", js.Array(value :_*))
+    inline def setLogConfigsVarargs(value: LogConfig*): Self = StObject.set(x, "logConfigs", js.Array(value*))
     
     inline def setNotIns(value: js.Array[String]): Self = StObject.set(x, "notIns", value.asInstanceOf[js.Any])
     
     inline def setNotInsUndefined: Self = StObject.set(x, "notIns", js.undefined)
     
-    inline def setNotInsVarargs(value: String*): Self = StObject.set(x, "notIns", js.Array(value :_*))
+    inline def setNotInsVarargs(value: String*): Self = StObject.set(x, "notIns", js.Array(value*))
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

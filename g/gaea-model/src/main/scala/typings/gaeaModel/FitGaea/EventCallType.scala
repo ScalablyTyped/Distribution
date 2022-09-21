@@ -27,6 +27,6 @@ object EventCallType {
     
     inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    inline def setParamVarargs(value: EventCallTypeParam*): Self = StObject.set(x, "param", js.Array(value :_*))
+    inline def setParamVarargs(value: EventCallTypeParam*): Self = StObject.set(x, "param", js.Array(value*))
   }
 }

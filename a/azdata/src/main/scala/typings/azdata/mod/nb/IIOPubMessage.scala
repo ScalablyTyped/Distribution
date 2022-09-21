@@ -13,8 +13,8 @@ trait IIOPubMessage
 }
 object IIOPubMessage {
   
-  inline def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IIOPubMessage = {
-    val __obj = js.Dynamic.literal(channel = "iopub", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+  inline def apply(content: Any, `type`: Channel): IIOPubMessage = {
+    val __obj = js.Dynamic.literal(channel = "iopub", content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIOPubMessage]
   }

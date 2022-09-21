@@ -14,7 +14,7 @@ trait AccountKey extends StObject {
   /**
     * Any arguments that identify an instantiation of the provider
     */
-  var providerArgs: js.UndefOr[js.Any] = js.undefined
+  var providerArgs: js.UndefOr[Any] = js.undefined
   
   /**
     * Identifier of the provider
@@ -32,7 +32,7 @@ object AccountKey {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    inline def setProviderArgs(value: js.Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
+    inline def setProviderArgs(value: Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
     
     inline def setProviderArgsUndefined: Self = StObject.set(x, "providerArgs", js.undefined)
     

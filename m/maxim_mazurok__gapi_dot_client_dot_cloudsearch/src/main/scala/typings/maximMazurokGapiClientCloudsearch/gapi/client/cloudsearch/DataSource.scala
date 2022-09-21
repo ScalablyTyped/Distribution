@@ -28,11 +28,14 @@ trait DataSource extends StObject {
     */
   var itemsVisibility: js.UndefOr[js.Array[GSuitePrincipal]] = js.undefined
   
-  /** Name of the datasource resource. Format: datasources/{source_id}. The name is ignored when creating a datasource. */
+  /** The name of the datasource resource. Format: datasources/{source_id}. The name is ignored when creating a datasource. */
   var name: js.UndefOr[String] = js.undefined
   
   /** IDs of the Long Running Operations (LROs) currently running for this schema. */
   var operationIds: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Can a user request to get thumbnail URI for Items indexed in this data source. */
+  var returnThumbnailUrls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A short name or alias for the source. This value will be used to match the 'source' operator. For example, if the short name is *<value>* then queries like *source:<value>* will
@@ -66,13 +69,13 @@ object DataSource {
     
     inline def setIndexingServiceAccountsUndefined: Self = StObject.set(x, "indexingServiceAccounts", js.undefined)
     
-    inline def setIndexingServiceAccountsVarargs(value: String*): Self = StObject.set(x, "indexingServiceAccounts", js.Array(value :_*))
+    inline def setIndexingServiceAccountsVarargs(value: String*): Self = StObject.set(x, "indexingServiceAccounts", js.Array(value*))
     
     inline def setItemsVisibility(value: js.Array[GSuitePrincipal]): Self = StObject.set(x, "itemsVisibility", value.asInstanceOf[js.Any])
     
     inline def setItemsVisibilityUndefined: Self = StObject.set(x, "itemsVisibility", js.undefined)
     
-    inline def setItemsVisibilityVarargs(value: GSuitePrincipal*): Self = StObject.set(x, "itemsVisibility", js.Array(value :_*))
+    inline def setItemsVisibilityVarargs(value: GSuitePrincipal*): Self = StObject.set(x, "itemsVisibility", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -82,7 +85,11 @@ object DataSource {
     
     inline def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
-    inline def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
+    inline def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value*))
+    
+    inline def setReturnThumbnailUrls(value: Boolean): Self = StObject.set(x, "returnThumbnailUrls", value.asInstanceOf[js.Any])
+    
+    inline def setReturnThumbnailUrlsUndefined: Self = StObject.set(x, "returnThumbnailUrls", js.undefined)
     
     inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     

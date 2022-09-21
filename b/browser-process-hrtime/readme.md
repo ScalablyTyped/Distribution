@@ -11,9 +11,9 @@ Shim for process.hrtime in the browser
 | Full name          | browser-process-hrtime |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 96 |
-| # downloads        | 334554192 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.475819E7 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/kumavis/browser-process-hrtime#readme)

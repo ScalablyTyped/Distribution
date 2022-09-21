@@ -33,7 +33,7 @@ object ProcessesProcessLoadData {
     
     inline def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
     
-    inline def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
+    inline def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value*))
     
     inline def setProc(value: String): Self = StObject.set(x, "proc", value.asInstanceOf[js.Any])
   }

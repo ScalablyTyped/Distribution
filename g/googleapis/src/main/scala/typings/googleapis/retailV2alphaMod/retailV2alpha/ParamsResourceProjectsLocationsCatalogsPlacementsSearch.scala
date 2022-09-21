@@ -1,0 +1,38 @@
+package typings.googleapis.retailV2alphaMod.retailV2alpha
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceProjectsLocationsCatalogsPlacementsSearch
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Required. The resource name of the Retail Search serving config, such as `projects/x/locations/global/catalogs/default_catalog/servingConfigs/default_serving_config` or the name of the legacy placement resource, such as `projects/x/locations/global/catalogs/default_catalog/placements/default_search`. This field is used to identify the serving configuration name and the set of models that will be used to make the search.
+    */
+  var placement: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Request body metadata
+    */
+  var requestBody: js.UndefOr[SchemaGoogleCloudRetailV2alphaSearchRequest] = js.undefined
+}
+object ParamsResourceProjectsLocationsCatalogsPlacementsSearch {
+  
+  inline def apply(): ParamsResourceProjectsLocationsCatalogsPlacementsSearch = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceProjectsLocationsCatalogsPlacementsSearch]
+  }
+  
+  extension [Self <: ParamsResourceProjectsLocationsCatalogsPlacementsSearch](x: Self) {
+    
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setRequestBody(value: SchemaGoogleCloudRetailV2alphaSearchRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+  }
+}

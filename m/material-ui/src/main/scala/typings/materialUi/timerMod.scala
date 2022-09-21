@@ -10,10 +10,10 @@ object timerMod {
   
   @JSImport("material-ui/svg-icons/image/timer", JSImport.Default)
   @js.native
-  class default () extends ImageTimer
+  open class default () extends ImageTimer
   
   @JSImport("material-ui/svg-icons/image/timer", "ImageTimer")
   @js.native
-  class ImageTimer ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTimer ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

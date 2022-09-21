@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImageBuildVersionsResponse extends StObject {
   
   /**
-    * The list of image build versions. 
+    * The list of image build versions.
     */
   var imageSummaryList: js.UndefOr[ImageSummaryList] = js.undefined
   
   /**
-    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
+    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -34,7 +34,7 @@ object ListImageBuildVersionsResponse {
     
     inline def setImageSummaryListUndefined: Self = StObject.set(x, "imageSummaryList", js.undefined)
     
-    inline def setImageSummaryListVarargs(value: ImageSummary*): Self = StObject.set(x, "imageSummaryList", js.Array(value :_*))
+    inline def setImageSummaryListVarargs(value: ImageSummary*): Self = StObject.set(x, "imageSummaryList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -1,35 +1,44 @@
 package typings.parchment
 
-import typings.parchment.registryMod.Scope
+import typings.parchment.scopeMod.Scope
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("parchment/dist/src/blot/abstract/leaf", JSImport.Namespace)
-@js.native
-object leafMod extends js.Object {
+object leafMod {
+  
+  @JSImport("parchment/dist/typings/blot/abstract/leaf", JSImport.Default)
+  @js.native
+  open class default () extends LeafBlot
+  object default {
+    
+    @JSImport("parchment/dist/typings/blot/abstract/leaf", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/leaf", "default.scope")
+    @js.native
+    def scope: Scope = js.native
+    inline def scope_=(x: Scope): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def value(_domNode: Node): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(_domNode.asInstanceOf[js.Any]).asInstanceOf[Any]
+  }
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.parchment.linkedNodeMod.LinkedNode because Already inherited
   - typings.parchment.blotMod.Blot because Already inherited
-  - typings.parchment.blotMod.Leaf because var conflicts: domNode, next, parent, prev, scroll. Inlined index, position, value */ @js.native
+  - typings.parchment.blotMod.Leaf because var conflicts: domNode, next, parent, prev, scroll, statics. Inlined index, position, value */ @js.native
   trait LeafBlot
     extends typings.parchment.shadowMod.default {
+    
     def index(node: Node, offset: Double): Double = js.native
+    
     def position(index: Double): js.Tuple2[Node, Double] = js.native
-    def position(index: Double, inclusive: Boolean): js.Tuple2[Node, Double] = js.native
-    def value(): js.Any = js.native
+    def position(index: Double, _inclusive: Boolean): js.Tuple2[Node, Double] = js.native
+    
+    def value(): Any = js.native
   }
-  
-  @js.native
-  class default () extends LeafBlot
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var scope: Scope = js.native
-    def value(domNode: Node): js.Any = js.native
-  }
-  
 }
-

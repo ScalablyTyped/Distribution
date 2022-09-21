@@ -17,5 +17,5 @@ trait GroupElementConstructor
 Instantiable0[GroupElement]
      with Instantiable1[/* properties */ GroupElementProperties, GroupElement] {
   
-  def fromJSON(json: js.Any): GroupElement = js.native
+  def fromJSON(json: Any): GroupElement = js.native
 }

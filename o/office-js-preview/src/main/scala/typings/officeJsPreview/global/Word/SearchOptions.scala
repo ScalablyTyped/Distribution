@@ -6,16 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies the options to be included in a search operation.
   *
   * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.SearchOptions")
 @js.native
-class SearchOptions ()
+open class SearchOptions ()
   extends StObject
      with typings.officeJsPreview.Word.SearchOptions {
   

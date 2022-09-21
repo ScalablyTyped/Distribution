@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.OctreeBlock")
 @js.native
-class OctreeBlock[T] protected ()
+open class OctreeBlock[T] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.OctreeBlock[T] {
   /**
@@ -36,6 +36,14 @@ object OctreeBlock {
   val ^ : js.Any = js.native
   
   /**
+    * @param worldMin
+    * @param worldMax
+    * @param entries
+    * @param maxBlockCapacity
+    * @param currentDepth
+    * @param maxDepth
+    * @param target
+    * @param creationFunc
     * @hidden
     */
   inline def _CreateBlocks[T](

@@ -30,10 +30,10 @@ object mod {
   trait JUnitReporterConfiguration extends StObject {
     
     /** function (browser, result) to customize the classname attribute in xml testcase element */
-    var classNameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.undefined
+    var classNameFormatter: js.UndefOr[js.Function2[/* browser */ Any, /* result */ Any, String]] = js.undefined
     
     /** function (browser, result) to customize the name attribute in xml testcase element */
-    var nameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.undefined
+    var nameFormatter: js.UndefOr[js.Function2[/* browser */ Any, /* result */ Any, String]] = js.undefined
     
     /** results will be saved as $outputDir/$browserName.xml */
     var outputDir: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ object mod {
     var outputFile: js.UndefOr[String] = js.undefined
     
     /** key value pair of properties to add to the <properties> section of the report */
-    var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /** suite will become the package name attribute in xml testsuite element */
     var suite: js.UndefOr[String] = js.undefined
@@ -62,11 +62,11 @@ object mod {
     
     extension [Self <: JUnitReporterConfiguration](x: Self) {
       
-      inline def setClassNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "classNameFormatter", js.Any.fromFunction2(value))
+      inline def setClassNameFormatter(value: (/* browser */ Any, /* result */ Any) => String): Self = StObject.set(x, "classNameFormatter", js.Any.fromFunction2(value))
       
       inline def setClassNameFormatterUndefined: Self = StObject.set(x, "classNameFormatter", js.undefined)
       
-      inline def setNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction2(value))
+      inline def setNameFormatter(value: (/* browser */ Any, /* result */ Any) => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction2(value))
       
       inline def setNameFormatterUndefined: Self = StObject.set(x, "nameFormatter", js.undefined)
       
@@ -78,7 +78,7 @@ object mod {
       
       inline def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
       
-      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       

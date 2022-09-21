@@ -7,7 +7,7 @@ import typings.falcorJsonGraph.mod.JSONGraph
 import typings.falcorJsonGraph.mod.JSONGraphEnvelope
 import typings.falcorJsonGraph.mod.PathSet
 import typings.falcorJsonGraph.mod.PathValue_
-import typings.rx.Rx.Observable
+import typings.rxLiteAggregates.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("falcor-router", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FalcorRouter {
+  open class ^ protected () extends FalcorRouter {
     def this(routes: js.Array[RouteDefinition]) = this()
     def this(routes: js.Array[RouteDefinition], options: RouterOptions) = this()
   }
@@ -26,25 +26,25 @@ object mod {
   
   @JSImport("falcor-router", "CreatedRouter")
   @js.native
-  class CreatedRouter () extends FalcorRouter {
+  open class CreatedRouter () extends FalcorRouter {
     def this(options: RouterOptions) = this()
   }
   
   /* static member */
-  inline def createClass(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")().asInstanceOf[js.Any]
-  inline def createClass(routes: js.Array[RouteDefinition]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createClass(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")().asInstanceOf[Any]
+  inline def createClass(routes: js.Array[RouteDefinition]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(routes.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait CallRoute
     extends StObject
        with Route
        with RouteDefinition {
     
-    def call(callPath: RoutePathSet, args: js.Array[js.Any]): CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
+    def call(callPath: RoutePathSet, args: js.Array[Any]): CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
   }
   object CallRoute {
     
     inline def apply(
-      call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
+      call: (RoutePathSet, js.Array[Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): CallRoute = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call), route = route.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object mod {
     extension [Self <: CallRoute](x: Self) {
       
       inline def setCall(
-        value: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
+        value: (RoutePathSet, js.Array[Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
       ): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }
   }
@@ -120,7 +120,7 @@ object mod {
   object RouteDefinition {
     
     inline def CallRoute(
-      call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
+      call: (RoutePathSet, js.Array[Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): typings.falcorRouter.mod.CallRoute = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call), route = route.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object mod {
   
   type RoutePathSet = PathSet
   
-  type RouteResult = PathValue_ | js.Array[PathValue_] | JSONEnvelope[js.Any]
+  type RouteResult = PathValue_ | js.Array[PathValue_] | JSONEnvelope[Any]
   
   trait RouterOptions extends StObject {
     

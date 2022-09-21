@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogConfig extends StObject {
   
   /**
-    * The service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account. 
+    * The service role that AppSync assumes to publish to CloudWatch logs in your account.
     */
   var cloudWatchLogsRoleArn: String
   
@@ -17,7 +17,7 @@ trait LogConfig extends StObject {
   var excludeVerboseContent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The field logging level. Values can be NONE, ERROR, or ALL.     NONE: No field-level logs are captured.    ERROR: Logs the following information only for the fields that are in error:   The error section in the server response.   Field-level errors.   The generated request/response functions that got resolved for error fields.      ALL: The following information is logged for all fields in the query:   Field-level tracing information.   The generated request/response functions that got resolved for each field.    
+    * The field logging level. Values can be NONE, ERROR, or ALL.    NONE: No field-level logs are captured.    ERROR: Logs the following information only for the fields that are in error:   The error section in the server response.   Field-level errors.   The generated request/response functions that got resolved for error fields.      ALL: The following information is logged for all fields in the query:   Field-level tracing information.   The generated request/response functions that got resolved for each field.    
     */
   var fieldLogLevel: FieldLogLevel
 }

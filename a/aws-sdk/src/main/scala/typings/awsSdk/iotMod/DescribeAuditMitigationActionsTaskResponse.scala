@@ -19,12 +19,12 @@ trait DescribeAuditMitigationActionsTaskResponse extends StObject {
   /**
     * The date and time when the task was completed or canceled.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time when the task was started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Identifies the findings to which the mitigation actions are applied. This can be by audit checks, by audit task, or a set of findings.
@@ -54,17 +54,17 @@ object DescribeAuditMitigationActionsTaskResponse {
     
     inline def setActionsDefinitionUndefined: Self = StObject.set(x, "actionsDefinition", js.undefined)
     
-    inline def setActionsDefinitionVarargs(value: MitigationAction*): Self = StObject.set(x, "actionsDefinition", js.Array(value :_*))
+    inline def setActionsDefinitionVarargs(value: MitigationAction*): Self = StObject.set(x, "actionsDefinition", js.Array(value*))
     
     inline def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
     
     inline def setAuditCheckToActionsMappingUndefined: Self = StObject.set(x, "auditCheckToActionsMapping", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

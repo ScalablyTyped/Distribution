@@ -39,6 +39,6 @@ object ListVolumesOutput {
     
     inline def setVolumeInfosUndefined: Self = StObject.set(x, "VolumeInfos", js.undefined)
     
-    inline def setVolumeInfosVarargs(value: VolumeInfo*): Self = StObject.set(x, "VolumeInfos", js.Array(value :_*))
+    inline def setVolumeInfosVarargs(value: VolumeInfo*): Self = StObject.set(x, "VolumeInfos", js.Array(value*))
   }
 }

@@ -19,7 +19,7 @@ trait Editor
   
   def addEventListener(ev: String, callback: js.Function): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(ev: change, callback: js.Function1[/* ev */ EditorChangeEvent, js.Any]): Unit = js.native
+  def addEventListener_change(ev: change, callback: js.Function1[/* ev */ EditorChangeEvent, Any]): Unit = js.native
   
   /**
     * Indents the current line.
@@ -67,7 +67,7 @@ trait Editor
   def destroy(): Unit = js.native
   
   def execCommand(command: String): Unit = js.native
-  def execCommand(command: String, args: js.Any): Unit = js.native
+  def execCommand(command: String, args: Any): Unit = js.native
   
   /**
     * Attempts to find `needle` within the document. For more information on `options`, see [[Search `Search`]].
@@ -76,8 +76,8 @@ trait Editor
     * @param animate If `true` animate scrolling
     **/
   def find(needle: String): Unit = js.native
-  def find(needle: String, options: js.Any): Unit = js.native
-  def find(needle: String, options: js.Any, animate: Boolean): Unit = js.native
+  def find(needle: String, options: Any): Unit = js.native
+  def find(needle: String, options: Any, animate: Boolean): Unit = js.native
   def find(needle: String, options: Unit, animate: Boolean): Unit = js.native
   
   /**
@@ -86,8 +86,8 @@ trait Editor
     * @param animate If `true` animate scrolling
     **/
   def findNext(): Unit = js.native
-  def findNext(options: js.Any): Unit = js.native
-  def findNext(options: js.Any, animate: Boolean): Unit = js.native
+  def findNext(options: Any): Unit = js.native
+  def findNext(options: Any, animate: Boolean): Unit = js.native
   def findNext(options: Unit, animate: Boolean): Unit = js.native
   
   /**
@@ -96,8 +96,8 @@ trait Editor
     * @param animate If `true` animate scrolling
     **/
   def findPrevious(): Unit = js.native
-  def findPrevious(options: js.Any): Unit = js.native
-  def findPrevious(options: js.Any, animate: Boolean): Unit = js.native
+  def findPrevious(options: Any): Unit = js.native
+  def findPrevious(options: Any, animate: Boolean): Unit = js.native
   def findPrevious(options: Unit, animate: Boolean): Unit = js.native
   
   /**
@@ -153,7 +153,7 @@ trait Editor
   /**
     * {:Search.getOptions} For more information on `options`, see [[Search `Search`]].
     **/
-  def getLastSearchOptions(): js.Any = js.native
+  def getLastSearchOptions(): Any = js.native
   
   /**
     * {:VirtualRenderer.getLastVisibleRow}
@@ -333,7 +333,7 @@ trait Editor
     * @param fromRange The range of text you want moved within the document
     * @param toPosition The location (row and column) where you want to move the text to
     **/
-  def moveText(fromRange: Range, toPosition: js.Any): Range = js.native
+  def moveText(fromRange: Range, toPosition: Any): Range = js.native
   
   /**
     * Moves the cursor down in the document the specified number of times. Note that this does de-select the current selection.
@@ -401,7 +401,7 @@ trait Editor
   
   def off(ev: String, callback: js.Function): Unit = js.native
   
-  def on(ev: String, callback: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
+  def on(ev: String, callback: js.Function1[/* e */ Any, Any]): Unit = js.native
   
   /**
     * Emitted once the editor has been blurred.
@@ -409,9 +409,9 @@ trait Editor
   def onBlur(): Unit = js.native
   
   def onChangeMode(): Unit = js.native
-  def onChangeMode(e: js.Any): Unit = js.native
+  def onChangeMode(e: Any): Unit = js.native
   
-  def onCommandKey(e: js.Any, hashId: js.Any, keyCode: js.Any): Unit = js.native
+  def onCommandKey(e: Any, hashId: Double, keyCode: Double): Unit = js.native
   
   /**
     * Called whenever a text "copy" happens.
@@ -432,7 +432,7 @@ trait Editor
     * Emitted whenever the document is changed.
     * @param e Contains a single property, `data`, which has the delta of changes
     **/
-  def onDocumentChange(e: js.Any): Unit = js.native
+  def onDocumentChange(e: Any): Unit = js.native
   
   /**
     * Emitted once the editor comes into focus.
@@ -445,7 +445,7 @@ trait Editor
     **/
   def onPaste(text: String): Unit = js.native
   
-  def onSelectionChange(e: js.Any): Unit = js.native
+  def onSelectionChange(e: Any): Unit = js.native
   
   def onTextInput(text: String): Unit = js.native
   
@@ -497,7 +497,7 @@ trait Editor
     * @param options The [[Search `Search`]] options to use
     **/
   def replace(replacement: String): Unit = js.native
-  def replace(replacement: String, options: js.Any): Unit = js.native
+  def replace(replacement: String, options: Any): Unit = js.native
   
   /**
     * Replaces all occurances of `options.needle` with the value in `replacement`.
@@ -505,7 +505,7 @@ trait Editor
     * @param options The [[Search `Search`]] options to use
     **/
   def replaceAll(replacement: String): Unit = js.native
-  def replaceAll(replacement: String, options: js.Any): Unit = js.native
+  def replaceAll(replacement: String, options: Any): Unit = js.native
   
   /**
     * {:VirtualRenderer.onResize}

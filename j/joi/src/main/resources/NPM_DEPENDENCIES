@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "joi" : "17.3.0"
+      "joi" : "17.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "joi" : "17.3.0"
+      "joi" : "17.6.0"
     }
   ],
   "compile-devDependencies" : [

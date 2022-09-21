@@ -59,11 +59,11 @@ object ColumnInfo {
     
     inline def setQAttrDimInfo(value: js.Array[NxAttrDimInfo]): Self = StObject.set(x, "qAttrDimInfo", value.asInstanceOf[js.Any])
     
-    inline def setQAttrDimInfoVarargs(value: NxAttrDimInfo*): Self = StObject.set(x, "qAttrDimInfo", js.Array(value :_*))
+    inline def setQAttrDimInfoVarargs(value: NxAttrDimInfo*): Self = StObject.set(x, "qAttrDimInfo", js.Array(value*))
     
     inline def setQAttrExprInfo(value: js.Array[NxAttrExprInfo]): Self = StObject.set(x, "qAttrExprInfo", value.asInstanceOf[js.Any])
     
-    inline def setQAttrExprInfoVarargs(value: NxAttrExprInfo*): Self = StObject.set(x, "qAttrExprInfo", js.Array(value :_*))
+    inline def setQAttrExprInfoVarargs(value: NxAttrExprInfo*): Self = StObject.set(x, "qAttrExprInfo", js.Array(value*))
     
     inline def setQCardinal(value: String): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     

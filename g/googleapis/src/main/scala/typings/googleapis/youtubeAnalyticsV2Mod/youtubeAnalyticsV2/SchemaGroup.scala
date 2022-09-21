@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A group.
-  */
 trait SchemaGroup extends StObject {
   
   /**
-    * The `contentDetails` object contains additional information about the
-    * group, such as the number and type of items that it contains.
+    * The `contentDetails` object contains additional information about the group, such as the number and type of items that it contains.
     */
   var contentDetails: js.UndefOr[SchemaGroupContentDetails] = js.undefined
   
@@ -23,22 +19,20 @@ trait SchemaGroup extends StObject {
   /**
     * The Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the group.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies the API resource&#39;s type. The value will be
-    * `youtube#group`.
+    * Identifies the API resource's type. The value will be `youtube#group`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The `snippet` object contains basic information about the group,
-    * including its creation date and name.
+    * The `snippet` object contains basic information about the group, including its creation date and name.
     */
   var snippet: js.UndefOr[SchemaGroupSnippet] = js.undefined
 }
@@ -61,13 +55,19 @@ object SchemaGroup {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

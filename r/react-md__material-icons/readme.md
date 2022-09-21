@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__material-icons
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 This package is just a simple wrapper for using material icons within react-md as either font icons or svg icons.
@@ -10,10 +10,10 @@ This package is just a simple wrapper for using material icons within react-md a
 | ------------------ | :-------------: |
 | Full name          | @react-md/material-icons |
 | Keywords           | react-md, material design, react, component, components, icons, svg icon, font icon, material design icons |
-| # releases         | 37 |
-| # dependents       | 1 |
-| # downloads        | 27619 |
-| # stars            | 0 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 7289.333333333333 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/material-icons/demos)

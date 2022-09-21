@@ -42,6 +42,6 @@ object FilterCondition {
     
     inline def setStringValueListUndefined: Self = StObject.set(x, "StringValueList", js.undefined)
     
-    inline def setStringValueListVarargs(value: StringValue*): Self = StObject.set(x, "StringValueList", js.Array(value :_*))
+    inline def setStringValueListVarargs(value: StringValue*): Self = StObject.set(x, "StringValueList", js.Array(value*))
   }
 }

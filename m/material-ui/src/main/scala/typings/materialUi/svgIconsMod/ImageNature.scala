@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ImageNature")
 @js.native
-class ImageNature ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ImageNature ()
+  extends Component[SvgIconProps, js.Object, Any]

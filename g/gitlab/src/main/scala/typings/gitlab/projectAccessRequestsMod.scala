@@ -10,7 +10,7 @@ object projectAccessRequestsMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectAccessRequests", "ProjectAccessRequests")
   @js.native
-  class ProjectAccessRequests protected () extends ResourceAccessRequests {
+  open class ProjectAccessRequests protected () extends ResourceAccessRequests {
     def this(options: BaseServiceOptions) = this()
   }
 }

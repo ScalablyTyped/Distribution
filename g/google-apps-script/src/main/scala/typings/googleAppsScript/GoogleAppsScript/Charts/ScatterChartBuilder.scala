@@ -46,7 +46,7 @@ trait ScatterChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): ScatterChartBuilder = js.native
+  def setOption(option: String, value: Any): ScatterChartBuilder = js.native
   
   def setPointStyle(style: PointStyle): ScatterChartBuilder = js.native
   

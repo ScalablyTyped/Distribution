@@ -27,7 +27,7 @@ object BatchGetCommitsInput {
     
     inline def setCommitIds(value: CommitIdsInputList): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
     
-    inline def setCommitIdsVarargs(value: ObjectId*): Self = StObject.set(x, "commitIds", js.Array(value :_*))
+    inline def setCommitIdsVarargs(value: ObjectId*): Self = StObject.set(x, "commitIds", js.Array(value*))
     
     inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }

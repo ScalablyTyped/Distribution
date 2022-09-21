@@ -7,7 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeprecatedNavigatorRoute
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /**
+  * @language zh-CN
+  * @description 其他属性
+  * @defaultValue null
+  */
+/**
+  * @language en-US
+  * @description Other attributes
+  * @defaultValue null
+  */
+/* prop */ StringDictionary[Any] {
   
   var id: String
 }

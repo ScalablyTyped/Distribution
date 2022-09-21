@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChartMediaInfoValueConstructor
   extends StObject
-     with Instantiable0[ChartMediaInfoValue]
+     with /**
+  * The `ChartMediaInfoValue` class contains information for popups regarding how charts should be constructed.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html)
+  */
+Instantiable0[ChartMediaInfoValue]
      with Instantiable1[/* properties */ ChartMediaInfoValueProperties, ChartMediaInfoValue] {
   
-  def fromJSON(json: js.Any): ChartMediaInfoValue = js.native
+  def fromJSON(json: Any): ChartMediaInfoValue = js.native
 }

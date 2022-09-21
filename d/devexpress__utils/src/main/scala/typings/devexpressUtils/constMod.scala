@@ -10,7 +10,7 @@ object constMod {
   @js.native
   abstract class ConstInterval () extends StObject {
     
-    val center: Double = js.native
+    def center: Double = js.native
     
     def contains(pos: Double): Boolean = js.native
     
@@ -22,7 +22,7 @@ object constMod {
     
     def containsWithoutIntervalEndAndStart(pos: Double): Boolean = js.native
     
-    val end: Double = js.native
+    def end: Double = js.native
     
     def equals(obj: ConstInterval): Boolean = js.native
     
@@ -30,9 +30,9 @@ object constMod {
     
     def isNormalized(): Boolean = js.native
     
-    val length: Double = js.native
+    def length: Double = js.native
     
-    val start: Double = js.native
+    def start: Double = js.native
   }
   /* static members */
   object ConstInterval {

@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryEventConstructor
   extends StObject
      with Instantiable1[/* name */ String, JQueryEventObject]
-     with Instantiable2[/* name */ String, /* eventProperties */ js.Any, JQueryEventObject] {
+     with Instantiable2[/* name */ String, /* eventProperties */ Any, JQueryEventObject] {
   
   def apply(name: String): JQueryEventObject = js.native
-  def apply(name: String, eventProperties: js.Any): JQueryEventObject = js.native
+  def apply(name: String, eventProperties: Any): JQueryEventObject = js.native
 }

@@ -10,10 +10,10 @@ object visibilityOffMod {
   
   @JSImport("material-ui/svg-icons/action/visibility-off", JSImport.Default)
   @js.native
-  class default () extends ActionVisibilityOff
+  open class default () extends ActionVisibilityOff
   
   @JSImport("material-ui/svg-icons/action/visibility-off", "ActionVisibilityOff")
   @js.native
-  class ActionVisibilityOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionVisibilityOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

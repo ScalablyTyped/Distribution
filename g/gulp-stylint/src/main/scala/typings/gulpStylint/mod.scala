@@ -6,7 +6,6 @@ import typings.gulpStylint.anon.FailOnWarning
 import typings.gulpStylint.gulpStylintBooleans.`true`
 import typings.gulpStylint.gulpStylintStrings.fail
 import typings.gulpStylint.mod.GulpStylint.Options
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +19,15 @@ object mod extends Shortcut {
   @js.native
   trait GulpStylint extends StObject {
     
-    def apply(): ReadWriteStream = js.native
-    def apply(options: Options): ReadWriteStream = js.native
+    def apply(): Any = js.native
+    def apply(options: Options): Any = js.native
     
-    def reporter(): ReadWriteStream = js.native
-    def reporter(options: GulpStylint): ReadWriteStream = js.native
+    def reporter(): Any = js.native
+    def reporter(options: GulpStylint): Any = js.native
     @JSName("reporter")
-    def reporter_fail(identifier: fail): ReadWriteStream = js.native
+    def reporter_fail(identifier: fail): Any = js.native
     @JSName("reporter")
-    def reporter_fail(identifier: fail, options: FailOnWarning): ReadWriteStream = js.native
+    def reporter_fail(identifier: fail, options: FailOnWarning): Any = js.native
   }
   object GulpStylint {
     
@@ -53,9 +52,9 @@ object mod extends Shortcut {
       
       var config: js.UndefOr[String] = js.undefined
       
-      var reporter: js.UndefOr[js.Any] = js.undefined
+      var reporter: js.UndefOr[Any] = js.undefined
       
-      var rules: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var rules: js.UndefOr[StringDictionary[Any]] = js.undefined
     }
     object Options {
       
@@ -70,11 +69,11 @@ object mod extends Shortcut {
         
         inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
         
-        inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+        inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
         
         inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
         
-        inline def setRules(value: StringDictionary[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+        inline def setRules(value: StringDictionary[Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
         
         inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       }

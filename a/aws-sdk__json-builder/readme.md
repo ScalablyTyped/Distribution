@@ -10,10 +10,10 @@ A marshaller for the body portion of AWS's JSON and REST-JSON protocols
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/json-builder |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 210023 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12060.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fjson-builder)

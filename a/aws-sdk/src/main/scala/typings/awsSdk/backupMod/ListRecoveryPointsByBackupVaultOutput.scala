@@ -33,6 +33,6 @@ object ListRecoveryPointsByBackupVaultOutput {
     
     inline def setRecoveryPointsUndefined: Self = StObject.set(x, "RecoveryPoints", js.undefined)
     
-    inline def setRecoveryPointsVarargs(value: RecoveryPointByBackupVault*): Self = StObject.set(x, "RecoveryPoints", js.Array(value :_*))
+    inline def setRecoveryPointsVarargs(value: RecoveryPointByBackupVault*): Self = StObject.set(x, "RecoveryPoints", js.Array(value*))
   }
 }

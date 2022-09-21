@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUsagePlanKeyRequest extends StObject {
   
   /**
-    * [Required] The key Id of the to-be-retrieved UsagePlanKey resource representing a plan customer.
+    * The key Id of the to-be-retrieved UsagePlanKey resource representing a plan customer.
     */
   var keyId: String
   
   /**
-    * [Required] The Id of the UsagePlan resource representing the usage plan containing the to-be-retrieved UsagePlanKey resource representing a plan customer.
+    * The Id of the UsagePlan resource representing the usage plan containing the to-be-retrieved UsagePlanKey resource representing a plan customer.
     */
   var usagePlanId: String
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeHyperlinkCommand")
 @js.native
-class ChangeHyperlinkCommand ()
+open class ChangeHyperlinkCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeHyperlinkCommand {
   

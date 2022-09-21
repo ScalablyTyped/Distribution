@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Uses
   extends StObject
-     with /* _ */ StringDictionary[js.Any] {
+     with /* _ */ StringDictionary[Any] {
   
   var uses: js.UndefOr[js.Array[Plugin | String]] = js.undefined
 }
@@ -25,6 +25,6 @@ object Uses {
     
     inline def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
     
-    inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
+    inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value*))
   }
 }

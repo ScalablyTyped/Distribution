@@ -12,7 +12,7 @@ object anon {
   trait Cb extends StObject {
     
     def cb(err: ErrorArg): Unit = js.native
-    def cb(err: ErrorArg, out: js.Any): Unit = js.native
+    def cb(err: ErrorArg, out: Any): Unit = js.native
     
     var command: String = js.native
   }

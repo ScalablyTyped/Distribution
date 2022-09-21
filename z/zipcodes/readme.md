@@ -11,9 +11,9 @@ Useful zipcode database with helper methods
 | Full name          | zipcodes |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 809448 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 152276.66666666666 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/davglass/zipcodes#readme)

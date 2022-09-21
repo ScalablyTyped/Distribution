@@ -47,7 +47,7 @@ object RateBasedRule {
     
     inline def setMatchPredicates(value: Predicates): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
     
-    inline def setMatchPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "MatchPredicates", js.Array(value :_*))
+    inline def setMatchPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "MatchPredicates", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

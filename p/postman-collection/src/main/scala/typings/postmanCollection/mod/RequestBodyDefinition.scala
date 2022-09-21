@@ -36,7 +36,7 @@ object RequestBodyDefinition {
     
     inline def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
     
-    inline def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value :_*))
+    inline def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value*))
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,6 @@ object RequestBodyDefinition {
     
     inline def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
     
-    inline def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value :_*))
+    inline def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value*))
   }
 }

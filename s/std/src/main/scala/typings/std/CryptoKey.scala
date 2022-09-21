@@ -4,15 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The CryptoKey dictionary of the Web Crypto API represents a cryptographic key. */
+/**
+  * The CryptoKey dictionary of the Web Crypto API represents a cryptographic key.
+  * Available only in secure contexts.
+  */
 trait CryptoKey extends StObject {
   
+  /* standard dom */
   val algorithm: KeyAlgorithm
   
+  /* standard dom */
   val extractable: scala.Boolean
   
+  /* standard dom */
   val `type`: KeyType
   
+  /* standard dom */
   val usages: js.Array[KeyUsage]
 }
 object CryptoKey {
@@ -33,6 +40,6 @@ object CryptoKey {
     
     inline def setUsages(value: js.Array[KeyUsage]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
     
-    inline def setUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "usages", js.Array(value :_*))
+    inline def setUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "usages", js.Array(value*))
   }
 }

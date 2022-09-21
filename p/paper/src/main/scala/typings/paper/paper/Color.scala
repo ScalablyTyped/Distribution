@@ -175,7 +175,7 @@ trait Color extends StObject {
     * parameters that is supported by the various {@link Color}
     * constructors also work for calls of `set()`.
     */
-  def set(values: js.Any*): Color = js.native
+  def set(values: Any*): Color = js.native
   
   /** 
     * Returns the subtraction of the supplied color to the color as a new

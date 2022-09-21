@@ -29,6 +29,6 @@ object ListUserProcessesResponse {
     
     inline def setProcessesUndefined: Self = StObject.set(x, "processes", js.undefined)
     
-    inline def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = StObject.set(x, "processes", js.Array(value :_*))
+    inline def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = StObject.set(x, "processes", js.Array(value*))
   }
 }

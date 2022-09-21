@@ -22,12 +22,12 @@ trait DescribeMaintenanceWindowScheduleRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * The type of resource you want to retrieve information about. For example, "INSTANCE".
+    * The type of resource you want to retrieve information about. For example, INSTANCE.
     */
   var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.undefined
   
   /**
-    * The instance ID or key/value pair to retrieve information about.
+    * The managed node ID or key-value pair to retrieve information about.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
@@ -49,7 +49,7 @@ object DescribeMaintenanceWindowScheduleRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: PatchOrchestratorFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: PatchOrchestratorFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaintenanceWindowSearchMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object DescribeMaintenanceWindowScheduleRequest {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
     
     inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     

@@ -9,13 +9,13 @@ object prefixingKeyValueCacheMod {
   
   @JSImport("apollo-server-caching/dist/PrefixingKeyValueCache", "PrefixingKeyValueCache")
   @js.native
-  class PrefixingKeyValueCache[V] protected ()
+  open class PrefixingKeyValueCache[V] protected ()
     extends StObject
        with KeyValueCache[V] {
     def this(wrapped: KeyValueCache[V], prefix: String) = this()
     
-    /* private */ var prefix: js.Any = js.native
+    /* private */ var prefix: Any = js.native
     
-    /* private */ var wrapped: js.Any = js.native
+    /* private */ var wrapped: Any = js.native
   }
 }

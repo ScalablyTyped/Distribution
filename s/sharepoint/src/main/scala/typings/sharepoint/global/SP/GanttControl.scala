@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.GanttControl")
 @js.native
-class GanttControl ()
+open class GanttControl ()
   extends StObject
      with typings.sharepoint.SP.GanttControl {
   

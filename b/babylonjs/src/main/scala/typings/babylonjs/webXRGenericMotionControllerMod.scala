@@ -12,7 +12,7 @@ object webXRGenericMotionControllerMod {
   
   @JSImport("babylonjs/XR/motionController/webXRGenericMotionController", "WebXRGenericTriggerMotionController")
   @js.native
-  class WebXRGenericTriggerMotionController protected () extends WebXRAbstractMotionController {
+  open class WebXRGenericTriggerMotionController protected () extends WebXRAbstractMotionController {
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,

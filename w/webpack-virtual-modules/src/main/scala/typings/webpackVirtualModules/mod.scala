@@ -1,77 +1,74 @@
 package typings.webpackVirtualModules
 
 import typings.std.Record
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Plugin that allows dynamic generation of in-memory virtual modules for JavaScript builds
-    * created with webpack.
-    */
-  @JSImport("webpack-virtual-modules", JSImport.Namespace)
+  @JSImport("webpack-virtual-modules/lib", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with VirtualModulesPlugin {
     def this(modules: Record[String, String]) = this()
     
-    /**
-      * Attaches necessary hooks, in particular, `afterEnvironment`, `afterResolvers`, and `watchRun` hooks,
-      * to ensure that the virtual files are added dynamically.
-      */
+    /* private */ /* CompleteClass */
+    var _compiler: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var _staticModules: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var _watcher: Any = js.native
+    
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
     
-    /**
-      * Writes a static or dynamic virtual module to a path.
-      */
     /* CompleteClass */
-    override def writeModule(filePath: String, fileContents: String): Unit = js.native
+    override def writeModule(filePath: String, contents: String): Unit = js.native
   }
   
-  /**
-    * Plugin that allows dynamic generation of in-memory virtual modules for JavaScript builds
-    * created with webpack.
-    */
   trait VirtualModulesPlugin extends StObject {
     
-    /**
-      * Attaches necessary hooks, in particular, `afterEnvironment`, `afterResolvers`, and `watchRun` hooks,
-      * to ensure that the virtual files are added dynamically.
-      */
-    @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-    ): Unit
+    /* private */ var _compiler: Any
     
-    /**
-      * Writes a static or dynamic virtual module to a path.
-      */
-    def writeModule(filePath: String, fileContents: String): Unit
+    /* private */ var _staticModules: Any
+    
+    /* private */ var _watcher: Any
+    
+    @JSName("apply")
+    def apply(compiler: Compiler): Unit
+    
+    def writeModule(filePath: String, contents: String): Unit
   }
   object VirtualModulesPlugin {
     
     inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit,
+      _compiler: Any,
+      _staticModules: Any,
+      _watcher: Any,
+      apply: Compiler => Unit,
       writeModule: (String, String) => Unit
     ): VirtualModulesPlugin = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), writeModule = js.Any.fromFunction2(writeModule))
+      val __obj = js.Dynamic.literal(_compiler = _compiler.asInstanceOf[js.Any], _staticModules = _staticModules.asInstanceOf[js.Any], _watcher = _watcher.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), writeModule = js.Any.fromFunction2(writeModule))
       __obj.asInstanceOf[VirtualModulesPlugin]
     }
     
     extension [Self <: VirtualModulesPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
       inline def setWriteModule(value: (String, String) => Unit): Self = StObject.set(x, "writeModule", js.Any.fromFunction2(value))
+      
+      inline def set_compiler(value: Any): Self = StObject.set(x, "_compiler", value.asInstanceOf[js.Any])
+      
+      inline def set_staticModules(value: Any): Self = StObject.set(x, "_staticModules", value.asInstanceOf[js.Any])
+      
+      inline def set_watcher(value: Any): Self = StObject.set(x, "_watcher", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -9,7 +9,7 @@ trait Alter
   extends StObject
      with AST {
   
-  var expr: js.Any
+  var expr: Any
   
   var table: From
   
@@ -17,7 +17,7 @@ trait Alter
 }
 object Alter {
   
-  inline def apply(expr: js.Any, table: From): Alter = {
+  inline def apply(expr: Any, table: From): Alter = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("alter")
     __obj.asInstanceOf[Alter]
@@ -25,7 +25,7 @@ object Alter {
   
   extension [Self <: Alter](x: Self) {
     
-    inline def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     inline def setTable(value: From): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     

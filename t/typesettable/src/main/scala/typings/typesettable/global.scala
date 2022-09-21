@@ -23,7 +23,7 @@ object global {
     
     @JSGlobal("Typesetter.AbstractMeasurer")
     @js.native
-    class AbstractMeasurer protected ()
+    open class AbstractMeasurer protected ()
       extends typings.typesettable.mod.AbstractMeasurer {
       def this(ruler: IRuler) = this()
       def this(ruler: IRulerFactoryContext) = this()
@@ -50,7 +50,7 @@ object global {
     
     @JSGlobal("Typesetter.Cache")
     @js.native
-    class Cache[T] protected ()
+    open class Cache[T] protected ()
       extends typings.typesettable.mod.Cache[T] {
       /**
         * @constructor
@@ -62,7 +62,7 @@ object global {
     
     @JSGlobal("Typesetter.CacheCharacterMeasurer")
     @js.native
-    class CacheCharacterMeasurer protected ()
+    open class CacheCharacterMeasurer protected ()
       extends typings.typesettable.mod.CacheCharacterMeasurer {
       def this(ruler: IRuler) = this()
       def this(ruler: IRulerFactoryContext) = this()
@@ -72,7 +72,7 @@ object global {
     
     @JSGlobal("Typesetter.CacheMeasurer")
     @js.native
-    class CacheMeasurer protected ()
+    open class CacheMeasurer protected ()
       extends typings.typesettable.mod.CacheMeasurer {
       def this(ruler: IRuler) = this()
       def this(ruler: IRulerFactoryContext) = this()
@@ -80,7 +80,7 @@ object global {
     
     @JSGlobal("Typesetter.CanvasContext")
     @js.native
-    class CanvasContext protected ()
+    open class CanvasContext protected ()
       extends typings.typesettable.mod.CanvasContext {
       def this(ctx: CanvasRenderingContext2D) = this()
       def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
@@ -90,7 +90,7 @@ object global {
     
     @JSGlobal("Typesetter.CharacterMeasurer")
     @js.native
-    class CharacterMeasurer protected ()
+    open class CharacterMeasurer protected ()
       extends typings.typesettable.mod.CharacterMeasurer {
       def this(ruler: IRuler) = this()
       def this(ruler: IRulerFactoryContext) = this()
@@ -100,7 +100,7 @@ object global {
     
     @JSGlobal("Typesetter.HtmlContext")
     @js.native
-    class HtmlContext protected ()
+    open class HtmlContext protected ()
       extends typings.typesettable.mod.HtmlContext {
       /**
         * @param element - The CSS font styles applied to `element` will determine the
@@ -116,7 +116,7 @@ object global {
     
     @JSGlobal("Typesetter.HtmlUtils")
     @js.native
-    class HtmlUtils ()
+    open class HtmlUtils ()
       extends typings.typesettable.mod.HtmlUtils
     /* static members */
     object HtmlUtils {
@@ -128,7 +128,7 @@ object global {
       /**
         * Adds the variadic classnames to the Element
         */
-      inline def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addClasses(element: Element, classNames: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(List(element.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
       
       /**
         * Appends an HTML element with the specified tag name to the provided element.
@@ -136,12 +136,12 @@ object global {
         *
         * Returns the new element.
         */
-      inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+      inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[HTMLElement]
       
       /**
         * Creates and returns a new HTMLElement with the attached classnames.
         */
-      inline def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+      inline def create(tagName: String, classNames: String*): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HTMLElement]
       
       /**
         * Returns the width/height of HTMLElement's bounding box
@@ -151,7 +151,7 @@ object global {
     
     @JSGlobal("Typesetter.Measurer")
     @js.native
-    class Measurer protected ()
+    open class Measurer protected ()
       extends typings.typesettable.mod.Measurer {
       def this(ruler: IRuler) = this()
       def this(ruler: IRulerFactoryContext) = this()
@@ -161,7 +161,7 @@ object global {
     
     @JSGlobal("Typesetter.Methods")
     @js.native
-    class Methods ()
+    open class Methods ()
       extends typings.typesettable.mod.Methods
     /* static members */
     object Methods {
@@ -178,7 +178,7 @@ object global {
       /**
         * Shim for _.defaults
         */
-      inline def defaults(target: js.Any, objects: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def defaults(target: Any, objects: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
       /**
         * @param {any} a Object to check against b for equality.
@@ -188,14 +188,14 @@ object global {
         *          values associated with those keys. Values will be compared
         *          with ===.
         */
-      inline def objEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def objEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      inline def strictEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def strictEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
     
     @JSGlobal("Typesetter.SingleLineWrapper")
     @js.native
-    class SingleLineWrapper ()
+    open class SingleLineWrapper ()
       extends typings.typesettable.mod.SingleLineWrapper
     /* static members */
     object SingleLineWrapper {
@@ -206,13 +206,13 @@ object global {
       
       @JSGlobal("Typesetter.SingleLineWrapper.NO_WRAP_ITERATIONS")
       @js.native
-      def NO_WRAP_ITERATIONS: js.Any = js.native
-      inline def NO_WRAP_ITERATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_WRAP_ITERATIONS")(x.asInstanceOf[js.Any])
+      def NO_WRAP_ITERATIONS: Any = js.native
+      inline def NO_WRAP_ITERATIONS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_WRAP_ITERATIONS")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Typesetter.StringMethods")
     @js.native
-    class StringMethods ()
+    open class StringMethods ()
       extends typings.typesettable.mod.StringMethods
     /* static members */
     object StringMethods {
@@ -237,7 +237,7 @@ object global {
     
     @JSGlobal("Typesetter.SvgContext")
     @js.native
-    class SvgContext protected ()
+    open class SvgContext protected ()
       extends typings.typesettable.mod.SvgContext {
       def this(element: SVGElement) = this()
       def this(element: SVGElement, className: String) = this()
@@ -253,13 +253,13 @@ object global {
       
       @JSGlobal("Typesetter.SvgContext.AnchorMap")
       @js.native
-      def AnchorMap: js.Any = js.native
-      inline def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
+      def AnchorMap: Any = js.native
+      inline def AnchorMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Typesetter.SvgUtils")
     @js.native
-    class SvgUtils ()
+    open class SvgUtils ()
       extends typings.typesettable.mod.SvgUtils
     /* static members */
     object SvgUtils {
@@ -279,12 +279,12 @@ object global {
         *
         * Returns the new element.
         */
-      inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+      inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SVGElement]
       
       /**
         * Creates and returns a new SVGElement with the attached classnames.
         */
-      inline def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+      inline def create(tagName: String, classNames: String*): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
       
       /**
         * Returns the width/height of svg element's bounding box
@@ -294,14 +294,14 @@ object global {
     
     @JSGlobal("Typesetter.Tokenizer")
     @js.native
-    class Tokenizer ()
+    open class Tokenizer ()
       extends typings.typesettable.mod.Tokenizer
     
     @JSGlobal("Typesetter.Typesetter")
     @js.native
-    class Typesetter protected ()
+    open class Typesetter protected ()
       extends typings.typesettable.mod.Typesetter {
-      def this(context: ITypesetterContext[js.Any]) = this()
+      def this(context: ITypesetterContext[Any]) = this()
     }
     /* static members */
     object Typesetter {
@@ -328,20 +328,20 @@ object global {
     
     @JSGlobal("Typesetter.Wrapper")
     @js.native
-    class Wrapper ()
+    open class Wrapper ()
       extends typings.typesettable.mod.Wrapper
     
     @JSGlobal("Typesetter.Writer")
     @js.native
-    class Writer protected ()
+    open class Writer protected ()
       extends typings.typesettable.mod.Writer {
       def this(
         _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
-        _penFactory: IPenFactoryContext[js.Any]
+        _penFactory: IPenFactoryContext[Any]
       ) = this()
       def this(
         _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
-        _penFactory: IPenFactoryContext[js.Any],
+        _penFactory: IPenFactoryContext[Any],
         _wrapper: typings.typesettable.wrappersMod.Wrapper
       ) = this()
     }
@@ -354,8 +354,8 @@ object global {
       
       @JSGlobal("Typesetter.Writer.SupportedRotation")
       @js.native
-      def SupportedRotation: js.Any = js.native
-      inline def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
+      def SupportedRotation: Any = js.native
+      inline def SupportedRotation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Typesetter.Writer.XOffsetFactor")
       @js.native

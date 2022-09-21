@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.CompoundPath")
 @js.native
-class CompoundPath protected ()
+open class CompoundPath protected ()
   extends StObject
      with typings.paper.paper.CompoundPath {
   /** 

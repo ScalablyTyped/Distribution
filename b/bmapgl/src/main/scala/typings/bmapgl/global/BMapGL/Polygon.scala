@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Polygon {
   def this(points: js.Array[typings.bmapgl.BMapGL.Point]) = this()

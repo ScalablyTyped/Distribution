@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,14 +27,14 @@ trait TaskAgentPool
   /**
     * Gets the date/time of the pool creation.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets the scope identifier for groups/roles which are owned by this pool.
     */
   var groupScopeId: String
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Gets a value indicating whether or not roles have been provisioned for this pool.
@@ -58,13 +57,13 @@ object TaskAgentPool {
     administratorsGroup: IdentityRef,
     autoProvision: Boolean,
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     groupScopeId: String,
     id: Double,
     isHosted: Boolean,
     name: String,
     poolType: TaskAgentPoolType,
-    properties: js.Any,
+    properties: Any,
     provisioned: Boolean,
     scope: String,
     serviceAccountsGroup: IdentityRef,
@@ -82,11 +81,11 @@ object TaskAgentPool {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
     

@@ -11,10 +11,10 @@ object nimblePickerMod {
   
   @JSImport("emoji-mart/dist-es/components/picker/nimble-picker", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[NimblePickerProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[NimblePickerProps, js.Object, Any]
   
-  type NimblePicker = PureComponent[NimblePickerProps, js.Object, js.Any]
+  type NimblePicker = PureComponent[NimblePickerProps, js.Object, Any]
   
   trait NimblePickerProps
     extends StObject

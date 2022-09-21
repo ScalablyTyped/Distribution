@@ -17,6 +17,11 @@ trait Trigger extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
+    * Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires.
+    */
+  var EventBatchingCondition: js.UndefOr[typings.awsSdk.glueMod.EventBatchingCondition] = js.undefined
+  
+  /**
     * Reserved for future use.
     */
   var Id: js.UndefOr[IdString] = js.undefined
@@ -64,11 +69,15 @@ object Trigger {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setEventBatchingCondition(value: EventBatchingCondition): Self = StObject.set(x, "EventBatchingCondition", value.asInstanceOf[js.Any])
+    
+    inline def setEventBatchingConditionUndefined: Self = StObject.set(x, "EventBatchingCondition", js.undefined)
     
     inline def setId(value: IdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

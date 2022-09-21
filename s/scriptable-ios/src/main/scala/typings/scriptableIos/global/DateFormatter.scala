@@ -1,6 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To convert between dates and their textual representation, use the `string()` and `date()` functions.
   * @see https://docs.scriptable.app/dateformatter/#-new-dateformatter
   */
-class DateFormatter ()
+open class DateFormatter ()
   extends StObject
      with typings.scriptableIos.DateFormatter {
   
@@ -31,7 +30,7 @@ class DateFormatter ()
     * @see https://docs.scriptable.app/dateformatter/#-date
     */
   /* CompleteClass */
-  override def date(str: String): String = js.native
+  override def date(str: String): js.Date = js.native
   
   /**
     * _Date format to be used by the formatter._
@@ -117,7 +116,7 @@ class DateFormatter ()
     * @see https://docs.scriptable.app/dateformatter/#-string
     */
   /* CompleteClass */
-  override def string(date: Date): String = js.native
+  override def string(date: js.Date): String = js.native
   
   /**
     * _Use a full style for the date._

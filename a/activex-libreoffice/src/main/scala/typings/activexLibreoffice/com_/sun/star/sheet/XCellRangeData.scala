@@ -22,14 +22,14 @@ trait XCellRangeData
     *
     * Each element of the result contains a `double` or a `string` .
     */
-  val DataArray: SafeArray[SafeArray[js.Any]]
+  val DataArray: SafeArray[SafeArray[Any]]
   
   /**
     * gets an array from the contents of the cell range.
     *
     * Each element of the result contains a `double` or a `string` .
     */
-  def getDataArray(): SafeArray[SafeArray[js.Any]]
+  def getDataArray(): SafeArray[SafeArray[Any]]
   
   /**
     * fills the cell range with values from an array.
@@ -37,17 +37,17 @@ trait XCellRangeData
     * The size of the array must be the same as the size of the cell range. Each element of the array must contain a `double` or a `string` .
     * @throws com::sun::star::uno::RuntimeException If the size of the array is different from the current size.
     */
-  def setDataArray(aArray: SeqEquiv[SeqEquiv[js.Any]]): Unit
+  def setDataArray(aArray: SeqEquiv[SeqEquiv[Any]]): Unit
 }
 object XCellRangeData {
   
   inline def apply(
-    DataArray: SafeArray[SafeArray[js.Any]],
+    DataArray: SafeArray[SafeArray[Any]],
     acquire: () => Unit,
-    getDataArray: () => SafeArray[SafeArray[js.Any]],
-    queryInterface: `type` => js.Any,
+    getDataArray: () => SafeArray[SafeArray[Any]],
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setDataArray: SeqEquiv[SeqEquiv[js.Any]] => Unit
+    setDataArray: SeqEquiv[SeqEquiv[Any]] => Unit
   ): XCellRangeData = {
     val __obj = js.Dynamic.literal(DataArray = DataArray.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDataArray = js.Any.fromFunction0(getDataArray), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDataArray = js.Any.fromFunction1(setDataArray))
     __obj.asInstanceOf[XCellRangeData]
@@ -55,10 +55,10 @@ object XCellRangeData {
   
   extension [Self <: XCellRangeData](x: Self) {
     
-    inline def setDataArray(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
+    inline def setDataArray(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
     
-    inline def setGetDataArray(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDataArray", js.Any.fromFunction0(value))
+    inline def setGetDataArray(value: () => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getDataArray", js.Any.fromFunction0(value))
     
-    inline def setSetDataArray(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setDataArray", js.Any.fromFunction1(value))
+    inline def setSetDataArray(value: SeqEquiv[SeqEquiv[Any]] => Unit): Self = StObject.set(x, "setDataArray", js.Any.fromFunction1(value))
   }
 }

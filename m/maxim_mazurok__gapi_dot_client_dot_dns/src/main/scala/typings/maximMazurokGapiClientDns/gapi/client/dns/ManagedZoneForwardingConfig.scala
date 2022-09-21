@@ -8,7 +8,7 @@ trait ManagedZoneForwardingConfig extends StObject {
   
   var kind: js.UndefOr[String] = js.undefined
   
-  /** List of target name servers to forward to. Cloud DNS will select the best available name server if more than one target is given. */
+  /** List of target name servers to forward to. Cloud DNS selects the best available name server if more than one target is given. */
   var targetNameServers: js.UndefOr[js.Array[ManagedZoneForwardingConfigNameServerTarget]] = js.undefined
 }
 object ManagedZoneForwardingConfig {
@@ -28,6 +28,6 @@ object ManagedZoneForwardingConfig {
     
     inline def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
     
-    inline def setTargetNameServersVarargs(value: ManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
+    inline def setTargetNameServersVarargs(value: ManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value*))
   }
 }

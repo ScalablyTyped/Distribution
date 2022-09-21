@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Diagnostic")
 @js.native
-class Diagnostic protected ()
+open class Diagnostic protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Diagnostic {
   def this(
@@ -23,7 +23,7 @@ class Diagnostic protected ()
     start: Double,
     length: Double,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any]
+    _arguments: js.Array[Any]
   ) = this()
   def this(
     fileName: String,
@@ -31,7 +31,7 @@ class Diagnostic protected ()
     start: Double,
     length: Double,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any],
+    _arguments: js.Array[Any],
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ) = this()
   def this(
@@ -45,31 +45,31 @@ class Diagnostic protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _additionalLocations: js.Any = js.native
+  var _additionalLocations: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _arguments: js.Any = js.native
+  var _arguments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _diagnosticKey: js.Any = js.native
+  var _diagnosticKey: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _length: js.Any = js.native
+  var _length: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lineMap: js.Any = js.native
+  var _lineMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _start: js.Any = js.native
+  var _start: Any = js.native
   
   /* CompleteClass */
   override def additionalLocations(): js.Array[typings.typescriptServices.TypeScript.Location] = js.native
   
   /* CompleteClass */
-  override def arguments(): js.Array[js.Any] = js.native
+  override def arguments(): js.Array[Any] = js.native
   
   /* CompleteClass */
   override def character(): Double = js.native
@@ -102,7 +102,7 @@ class Diagnostic protected ()
   override def text(): String = js.native
   
   /* CompleteClass */
-  override def toJSON(key: js.Any): js.Any = js.native
+  override def toJSON(key: Any): Any = js.native
 }
 object Diagnostic {
   

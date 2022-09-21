@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetVocabularyResponse extends StObject {
   
   /**
-    * The S3 location where the vocabulary is stored. Use this URI to get the contents of the vocabulary. The URI is available for a limited time.
+    * The S3 location where the vocabulary is stored; use this URI to view or download the vocabulary.
     */
   var DownloadUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * If the VocabularyState field is FAILED, this field contains information about why the job failed.
+    * If VocabularyState is FAILED, FailureReason contains information about why the vocabulary request failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The language code of the vocabulary entries.
+    * The language code you selected for your custom vocabulary.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
-    * The date and time that the vocabulary was last modified.
+    * The date and time the specified vocabulary was last modified. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the vocabulary to return.
+    * The name of the custom vocabulary you requested information about.
     */
   var VocabularyName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyName] = js.undefined
   
   /**
-    * The processing state of the vocabulary.
+    * The processing state of your custom vocabulary. If the state is READY, you can use the vocabulary in a StartTranscriptionJob request.
     */
   var VocabularyState: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyState] = js.undefined
 }
@@ -57,7 +57,7 @@ object GetVocabularyResponse {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

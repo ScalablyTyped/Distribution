@@ -10,10 +10,10 @@ pell - the simplest and smallest WYSIWYG text editor for web, with no dependenci
 | ------------------ | :-------------: |
 | Full name          | pell |
 | Keywords           | text editor, editor, rich text, wysiwyg, contenteditable |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 462177 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 33594.0 |
+| # stars            | 11713.0 |
 
 ## Links
 - [Homepage](https://jaredreich.com/pell)

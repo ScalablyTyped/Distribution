@@ -8,7 +8,7 @@ trait MapZoomStartEvent
   extends StObject
      with MapEvent {
   
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  var originalEvent: js.UndefOr[Any] = js.undefined
 }
 object MapZoomStartEvent {
   
@@ -19,7 +19,7 @@ object MapZoomStartEvent {
   
   extension [Self <: MapZoomStartEvent](x: Self) {
     
-    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }

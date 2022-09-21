@@ -1,7 +1,7 @@
 
 # Scala.js typings for connect-livereload
 
-Typings are for version v0.5.3
+Typings are for version 0.6
 
 ## Library description:
 connect middleware for adding the livereload script to the response
@@ -10,10 +10,10 @@ connect middleware for adding the livereload script to the response
 | ------------------ | :-------------: |
 | Full name          | connect-livereload |
 | Keywords           | connect, livereload, live-reload |
-| # releases         | 0 |
-| # dependents       | 191 |
-| # downloads        | 9759031 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1052545.0 |
+| # stars            | 305.0 |
 
 ## Links
 - [Homepage](https://github.com/intesso/connect-livereload#readme)

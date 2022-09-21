@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "Animated.FlatList")
 @js.native
-class FlatList[ItemT] protected ()
-  extends Component[AnimatedProps[FlatListProps[ItemT]], js.Object, js.Any] {
+open class FlatList[ItemT] protected ()
+  extends Component[AnimatedProps[FlatListProps[ItemT]], js.Object, Any] {
   def this(props: AnimatedProps[FlatListProps[ItemT]]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AnimatedProps[FlatListProps[ItemT]], context: js.Any) = this()
+  def this(props: AnimatedProps[FlatListProps[ItemT]], context: Any) = this()
 }

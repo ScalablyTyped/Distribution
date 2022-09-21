@@ -10,7 +10,7 @@ object shape {
   
   @JSImport("yandex-maps", "shape.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with IShape {
     def this(pixelGeometry: IPixelCircleGeometry) = this()
@@ -40,7 +40,7 @@ object shape {
   
   @JSImport("yandex-maps", "shape.LineString")
   @js.native
-  class LineString protected ()
+  open class LineString protected ()
     extends StObject
        with IShape {
     def this(pixelGeometry: IPixelLineStringGeometry) = this()
@@ -70,7 +70,7 @@ object shape {
   
   @JSImport("yandex-maps", "shape.MultiPolygon")
   @js.native
-  class MultiPolygon protected ()
+  open class MultiPolygon protected ()
     extends StObject
        with IShape {
     def this(pixelGeometry: IPixelMultiPolygonGeometry) = this()
@@ -100,7 +100,7 @@ object shape {
   
   @JSImport("yandex-maps", "shape.Polygon")
   @js.native
-  class Polygon protected ()
+  open class Polygon protected ()
     extends StObject
        with IShape {
     def this(pixelGeometry: IPixelPolygonGeometry) = this()
@@ -130,7 +130,7 @@ object shape {
   
   @JSImport("yandex-maps", "shape.Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with IShape {
     def this(geometry: IPixelRectangleGeometry) = this()

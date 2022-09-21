@@ -12,14 +12,14 @@ trait accordionitem
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   def attachEvent(`type`: accordionitemEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: accordionitemEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def collapse(): Unit = js.native
   
@@ -32,19 +32,19 @@ trait accordionitem
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def on_click(args: js.Any*): js.Any = js.native
+  def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[js.Any] = js.native
+  var on_context: StringDictionary[Any] = js.native
   
-  def on_dblclick(args: js.Any*): js.Any = js.native
+  def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: WebixCallback = js.native
   
-  def on_mouse_move(args: js.Any*): js.Any = js.native
+  def on_mouse_move(args: Any*): Any = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
   

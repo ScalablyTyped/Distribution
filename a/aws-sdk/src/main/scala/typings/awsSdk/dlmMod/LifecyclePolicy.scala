@@ -9,12 +9,12 @@ trait LifecyclePolicy extends StObject {
   /**
     * The local date and time when the lifecycle policy was created.
     */
-  var DateCreated: js.UndefOr[Timestamp] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The local date and time when the lifecycle policy was last modified.
     */
-  var DateModified: js.UndefOr[Timestamp] = js.undefined
+  var DateModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the lifecycle policy.
@@ -65,11 +65,11 @@ object LifecyclePolicy {
   
   extension [Self <: LifecyclePolicy](x: Self) {
     
-    inline def setDateCreated(value: Timestamp): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateModified(value: Timestamp): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: js.Date): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
     inline def setDateModifiedUndefined: Self = StObject.set(x, "DateModified", js.undefined)
     

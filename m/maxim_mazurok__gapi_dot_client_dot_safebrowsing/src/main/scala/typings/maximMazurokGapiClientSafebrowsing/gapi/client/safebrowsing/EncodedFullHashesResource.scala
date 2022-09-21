@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EncodedFullHashesResource extends StObject {
   
-  def get(): Request[FindFullHashesResponse] = js.native
-  def get(request: Accesstoken): Request[FindFullHashesResponse] = js.native
+  def get(): Request[GoogleSecuritySafebrowsingV4FindFullHashesResponse] = js.native
+  def get(request: Accesstoken): Request[GoogleSecuritySafebrowsingV4FindFullHashesResponse] = js.native
 }

@@ -11,6 +11,7 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.quaternionMod.Quaternion
 import typings.three.sphericalMod.Spherical
 import typings.three.threeBooleans.`true`
+import typings.three.threeNumbers.`0`
 import typings.three.vector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object vector3Mod {
   
   @JSImport("three/src/math/Vector3", "Vector3")
   @js.native
-  class Vector3 ()
+  open class Vector3 ()
     extends StObject
        with Vector {
     def this(x: Double) = this()
@@ -32,20 +33,20 @@ object vector3Mod {
     def this(x: Unit, y: Unit, z: Double) = this()
     
     /**
-    	 * NOTE: The second argument is deprecated.
-    	 *
-    	 * add(v:T):T;
-    	 */
+      * NOTE: The second argument is deprecated.
+      *
+      * add(v:T):T;
+      */
     /* CompleteClass */
     override def add(v: Vector): this.type = js.native
     /**
-    	 * Adds v to this vector.
-    	 */
+      * Adds v to this vector.
+      */
     def add(v: Vector3): this.type = js.native
     
     /**
-    	 * Adds the scalar value s to this vector's values.
-    	 */
+      * Adds the scalar value s to this vector's values.
+      */
     /* CompleteClass */
     override def addScalar(scalar: Double): this.type = js.native
     
@@ -54,13 +55,13 @@ object vector3Mod {
     def addScaledVector(v: Vector3, s: Double): this.type = js.native
     
     /**
-    	 * addVectors(a:T, b:T):T;
-    	 */
+      * addVectors(a:T, b:T):T;
+      */
     /* CompleteClass */
     override def addVectors(a: Vector, b: Vector): this.type = js.native
     /**
-    	 * Sets this vector to a + b.
-    	 */
+      * Sets this vector to a + b.
+      */
     def addVectors(a: Vector3, b: Vector3): this.type = js.native
     
     def angleTo(v: Vector3): Double = js.native
@@ -86,84 +87,79 @@ object vector3Mod {
     def clampScalar(min: Double, max: Double): this.type = js.native
     
     /**
-    	 * copy(v:T):T;
-    	 */
+      * copy(v:T):T;
+      */
     /* CompleteClass */
     override def copy(v: Vector): this.type = js.native
     /**
-    	 * Copies value of v to this vector.
-    	 */
+      * Copies value of v to this vector.
+      */
     def copy(v: Vector3): this.type = js.native
     
     /**
-    	 * Sets this vector to cross product of itself and v.
-    	 */
+      * Sets this vector to cross product of itself and v.
+      */
     def cross(a: Vector3): this.type = js.native
     
     /**
-    	 * Sets this vector to cross product of a and b.
-    	 */
+      * Sets this vector to cross product of a and b.
+      */
     def crossVectors(a: Vector3, b: Vector3): this.type = js.native
     
     /**
-    	 * @deprecated Use {@link Vector3#manhattanDistanceTo .manhattanDistanceTo()} instead.
-    	 */
+      * @deprecated Use {@link Vector3#manhattanDistanceTo .manhattanDistanceTo()} instead.
+      */
     def distanceToManhattan(v: Vector3): Double = js.native
     
     /**
-    	 * Computes squared distance of this vector to v.
-    	 */
+      * Computes squared distance of this vector to v.
+      */
     @JSName("distanceToSquared")
     def distanceToSquared_MVector3(v: Vector3): Double = js.native
     
     /**
-    	 * Computes distance of this vector to v.
-    	 */
+      * Computes distance of this vector to v.
+      */
     @JSName("distanceTo")
     def distanceTo_MVector3(v: Vector3): Double = js.native
     
     def divide(v: Vector3): this.type = js.native
     
     /**
-    	 * divideScalar(s:number):T;
-    	 */
+      * divideScalar(s:number):T;
+      */
     /* CompleteClass */
     override def divideScalar(s: Double): this.type = js.native
     
     /**
-    	 * dot(v:T):T;
-    	 */
+      * dot(v:T):T;
+      */
     /* CompleteClass */
     override def dot(v: Vector): Double = js.native
     /**
-    	 * Computes dot product of this vector and v.
-    	 */
+      * Computes dot product of this vector and v.
+      */
     def dot(v: Vector3): Double = js.native
     
     /**
-    	 * equals(v:T):boolean;
-    	 */
+      * equals(v:T):boolean;
+      */
     /* CompleteClass */
     override def equals(v: Vector): Boolean = js.native
     /**
-    	 * Checks for strict equality of this vector and v.
-    	 */
+      * Checks for strict equality of this vector and v.
+      */
     def equals(v: Vector3): Boolean = js.native
     
     def floor(): this.type = js.native
     
     /**
-    	 * Sets this vector's x, y and z value from the provided array.
-    	 * @param array the source array.
-    	 * @param offset (optional) offset into the array. Default is 0.
-    	 */
+      * Sets this vector's x, y and z value from the provided array or array-like.
+      * @param array the source array or array-like.
+      * @param offset (optional) offset into the array. Default is 0.
+      */
     def fromArray(array: js.Array[Double]): this.type = js.native
     def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
-    /**
-    	 * Sets this vector's x, y and z value from the provided array-like.
-    	 * @param array the source array-like.
-    	 * @param offset (optional) offset into the array-like. Default is 0.
-    	 */
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
     
@@ -176,28 +172,28 @@ object vector3Mod {
     val isVector3: `true` = js.native
     
     /**
-    	 * length():number;
-    	 */
+      * length():number;
+      */
     /* CompleteClass */
     override def length(): Double = js.native
     
     /**
-    	 * Computes Manhattan length of this vector.
-    	 * http://en.wikipedia.org/wiki/Taxicab_geometry
-    	 *
-    	 * @deprecated Use {@link Vector3#manhattanLength .manhattanLength()} instead.
-    	 */
+      * Computes Manhattan length of this vector.
+      * http://en.wikipedia.org/wiki/Taxicab_geometry
+      *
+      * @deprecated Use {@link Vector3#manhattanLength .manhattanLength()} instead.
+      */
     def lengthManhattan(): Double = js.native
     
     /**
-    	 * lengthSq():number;
-    	 */
+      * lengthSq():number;
+      */
     /* CompleteClass */
     override def lengthSq(): Double = js.native
     
     /**
-    	 * lerp(v:T, alpha:number):T;
-    	 */
+      * lerp(v:T, alpha:number):T;
+      */
     /* CompleteClass */
     override def lerp(v: Vector, alpha: Double): this.type = js.native
     def lerp(v: Vector3, alpha: Double): this.type = js.native
@@ -205,23 +201,17 @@ object vector3Mod {
     def lerpVectors(v1: Vector3, v2: Vector3, alpha: Double): this.type = js.native
     
     /**
-    	 * Computes the Manhattan length (distance) from this vector to the given vector v
-    	 *
-    	 * @param {Vector3} v
-    	 *
-    	 * @return {number}
-    	 *
-    	 * @see {@link http://en.wikipedia.org/wiki/Taxicab_geometry|Wikipedia: Taxicab Geometry}
-    	 */
+      * Computes the Manhattan length (distance) from this vector to the given vector v
+      *
+      * see {@link http://en.wikipedia.org/wiki/Taxicab_geometry|Wikipedia: Taxicab Geometry}
+      */
     def manhattanDistanceTo(v: Vector3): Double = js.native
     
     /**
-    	 * Computes the Manhattan length of this vector.
-    	 *
-    	 * @return {number}
-    	 *
-    	 * @see {@link http://en.wikipedia.org/wiki/Taxicab_geometry|Wikipedia: Taxicab Geometry}
-    	 */
+      * Computes the Manhattan length of this vector.
+      *
+      * see {@link http://en.wikipedia.org/wiki/Taxicab_geometry|Wikipedia: Taxicab Geometry}
+      */
     def manhattanLength(): Double = js.native
     
     def max(v: Vector3): this.type = js.native
@@ -231,22 +221,22 @@ object vector3Mod {
     def multiply(v: Vector3): this.type = js.native
     
     /**
-    	 * multiplyScalar(s:number):T;
-    	 */
+      * multiplyScalar(s:number):T;
+      */
     /* CompleteClass */
     override def multiplyScalar(s: Double): this.type = js.native
     
     def multiplyVectors(a: Vector3, b: Vector3): this.type = js.native
     
     /**
-    	 * negate():T;
-    	 */
+      * negate():T;
+      */
     /* CompleteClass */
     override def negate(): this.type = js.native
     
     /**
-    	 * normalize():T;
-    	 */
+      * normalize():T;
+      */
     /* CompleteClass */
     override def normalize(): this.type = js.native
     
@@ -257,9 +247,11 @@ object vector3Mod {
     def projectOnVector(v: Vector3): this.type = js.native
     
     /**
-    	 * Sets this vector's x, y and z from Math.random
-    	 */
+      * Sets this vector's x, y and z from Math.random
+      */
     def random(): this.type = js.native
+    
+    def randomDirection(): this.type = js.native
     
     def reflect(vector: Vector3): this.type = js.native
     
@@ -270,8 +262,8 @@ object vector3Mod {
     /* CompleteClass */
     override def set(args: Double*): this.type = js.native
     /**
-    	 * Sets value of this vector.
-    	 */
+      * Sets value of this vector.
+      */
     def set(x: Double, y: Double, z: Double): this.type = js.native
     
     /* CompleteClass */
@@ -280,6 +272,11 @@ object vector3Mod {
     def setFromCylindrical(s: Cylindrical): this.type = js.native
     
     def setFromCylindricalCoords(radius: Double, theta: Double, y: Double): this.type = js.native
+    
+    /**
+      * Sets this vector's {@link x}, {@link y} and {@link z} components from the x, y, and z components of the specified {@link Euler Euler Angle}.
+      */
+    def setFromEuler(e: Euler): this.type = js.native
     
     def setFromMatrix3Column(matrix: Matrix3, index: Double): this.type = js.native
     
@@ -294,8 +291,8 @@ object vector3Mod {
     def setFromSphericalCoords(r: Double, phi: Double, theta: Double): this.type = js.native
     
     /**
-    	 * setLength(l:number):T;
-    	 */
+      * setLength(l:number):T;
+      */
     /* CompleteClass */
     override def setLength(l: Double): this.type = js.native
     
@@ -303,78 +300,87 @@ object vector3Mod {
     override def setScalar(scalar: Double): this.type = js.native
     
     /**
-    	 * Sets x value of this vector.
-    	 */
+      * Sets x value of this vector.
+      */
     def setX(x: Double): Vector3 = js.native
     
     /**
-    	 * Sets y value of this vector.
-    	 */
+      * Sets y value of this vector.
+      */
     def setY(y: Double): Vector3 = js.native
     
     /**
-    	 * Sets z value of this vector.
-    	 */
+      * Sets z value of this vector.
+      */
     def setZ(z: Double): Vector3 = js.native
     
     /**
-    	 * Subtracts v from this vector.
-    	 */
+      * Subtracts v from this vector.
+      */
     def sub(a: Vector3): this.type = js.native
     /**
-    	 * sub(v:T):T;
-    	 */
+      * sub(v:T):T;
+      */
     /* CompleteClass */
     override def sub(v: Vector): this.type = js.native
     
     def subScalar(s: Double): this.type = js.native
     
     /**
-    	 * subVectors(a:T, b:T):T;
-    	 */
+      * subVectors(a:T, b:T):T;
+      */
     /* CompleteClass */
     override def subVectors(a: Vector, b: Vector): this.type = js.native
     /**
-    	 * Sets this vector to a - b.
-    	 */
+      * Sets this vector to a - b.
+      */
     def subVectors(a: Vector3, b: Vector3): this.type = js.native
     
-    /**
-    	 * Returns an array [x, y, z], or copies x, y and z into the provided array.
-    	 * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.
-    	 * @param offset (optional) optional offset into the array.
-    	 * @return The created or provided array.
-    	 */
-    def toArray(): js.Array[Double] = js.native
+    def toArray(): Vector3Tuple = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
-    	 * Copies x, y and z into the provided array-like.
-    	 * @param array array-like to store the vector to.
-    	 * @param offset (optional) optional offset into the array-like.
-    	 * @return The provided array-like.
-    	 */
+      * Copies x, y and z into the provided array-like.
+      * @param array array-like to store the vector to.
+      * @param offset (optional) optional offset into the array-like.
+      * @return The provided array-like.
+      */
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+    def toArray(array: Vector3Tuple): Vector3Tuple = js.native
+    @JSName("toArray")
+    def toArray_0(array: Unit, offset: `0`): Vector3Tuple = js.native
+    @JSName("toArray")
+    def toArray_0(array: Vector3Tuple, offset: `0`): Vector3Tuple = js.native
+    /**
+      * Returns an array [x, y, z], or copies x, y and z into the provided array.
+      * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.
+      * @param offset (optional) optional offset into the array.
+      * @return The created or provided array.
+      */
+    @JSName("toArray")
+    def toArray_Array(): js.Array[Double] = js.native
     
     def transformDirection(m: Matrix4): this.type = js.native
     
     def unproject(camera: Camera): this.type = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var x: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var y: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var z: Double = js.native
   }
+  
+  type Vector3Tuple = js.Tuple3[Double, Double, Double]
 }

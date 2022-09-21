@@ -29,7 +29,7 @@ trait DescribeInputDeviceThumbnailResponse extends StObject {
   /**
     * The date and time the thumbnail was last updated at the device.
     */
-  var LastModified: js.UndefOr[timestamp] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeInputDeviceThumbnailResponse {
   
@@ -56,7 +56,7 @@ object DescribeInputDeviceThumbnailResponse {
     
     inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    inline def setLastModified(value: timestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
   }

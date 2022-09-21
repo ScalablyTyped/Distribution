@@ -17,6 +17,8 @@ trait EventBridge extends StObject {
   var pattern: js.UndefOr[PatternExisting | PatternInput] = js.undefined
   
   var schedule: js.UndefOr[String] = js.undefined
+  
+  var useCloudFormation: js.UndefOr[Boolean] = js.undefined
 }
 object EventBridge {
   
@@ -50,5 +52,9 @@ object EventBridge {
     inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    
+    inline def setUseCloudFormation(value: Boolean): Self = StObject.set(x, "useCloudFormation", value.asInstanceOf[js.Any])
+    
+    inline def setUseCloudFormationUndefined: Self = StObject.set(x, "useCloudFormation", js.undefined)
   }
 }

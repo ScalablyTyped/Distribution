@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.actionsOnGoogleStrings.DATETIME
 import typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_ADDRESS_VALUE
 import typings.actionsOnGoogle.actionsOnGoogleStrings.DIGITAL_PURCHASE_CHECK_RESULT
 import typings.actionsOnGoogle.actionsOnGoogleStrings.IS_FINAL_REPROMPT
-import typings.actionsOnGoogle.actionsOnGoogleStrings.LINK
 import typings.actionsOnGoogle.actionsOnGoogleStrings.MEDIA_STATUS
 import typings.actionsOnGoogle.actionsOnGoogleStrings.NEW_SURFACE
 import typings.actionsOnGoogle.actionsOnGoogleStrings.OPTION
@@ -24,7 +23,6 @@ import typings.actionsOnGoogle.completepurchaseMod.CompletePurchaseArgument
 import typings.actionsOnGoogle.confirmationMod.ConfirmationArgument
 import typings.actionsOnGoogle.datetimeMod.DateTimeArgument
 import typings.actionsOnGoogle.decisionMod.TransactionDecisionArgument
-import typings.actionsOnGoogle.deeplinkMod.DeepLinkArgument
 import typings.actionsOnGoogle.deliveryaddressMod.DeliveryAddressArgument
 import typings.actionsOnGoogle.digitalpurchasecheckMod.DigitalPurchaseCheckArgument
 import typings.actionsOnGoogle.mediaMod.MediaStatusArgument
@@ -50,7 +48,7 @@ object argumentArgumentMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Arguments")
   @js.native
   /** @hidden */
-  class Arguments () extends StObject {
+  open class Arguments () extends StObject {
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()
     
     /** @public */
@@ -67,8 +65,6 @@ object argumentArgumentMod {
     def get_DIGITALPURCHASECHECKRESULT(name: DIGITAL_PURCHASE_CHECK_RESULT): js.UndefOr[DigitalPurchaseCheckArgument] = js.native
     @JSName("get")
     def get_ISFINALREPROMPT(name: IS_FINAL_REPROMPT): js.UndefOr[FinalRepromptArgument] = js.native
-    @JSName("get")
-    def get_LINK(name: LINK): js.UndefOr[DeepLinkArgument] = js.native
     @JSName("get")
     def get_MEDIASTATUS(name: MEDIA_STATUS): js.UndefOr[MediaStatusArgument] = js.native
     @JSName("get")
@@ -135,7 +131,7 @@ object argumentArgumentMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Parsed")
   @js.native
-  class Parsed protected () extends StObject {
+  open class Parsed protected () extends StObject {
     /** @hidden */
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()
     
@@ -153,8 +149,6 @@ object argumentArgumentMod {
     def get_DIGITALPURCHASECHECKRESULT(name: DIGITAL_PURCHASE_CHECK_RESULT): js.UndefOr[DigitalPurchaseCheckArgument] = js.native
     @JSName("get")
     def get_ISFINALREPROMPT(name: IS_FINAL_REPROMPT): js.UndefOr[FinalRepromptArgument] = js.native
-    @JSName("get")
-    def get_LINK(name: LINK): js.UndefOr[DeepLinkArgument] = js.native
     @JSName("get")
     def get_MEDIASTATUS(name: MEDIA_STATUS): js.UndefOr[MediaStatusArgument] = js.native
     @JSName("get")
@@ -188,7 +182,7 @@ object argumentArgumentMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Raw")
   @js.native
-  class Raw protected () extends StObject {
+  open class Raw protected () extends StObject {
     /** @hidden */
     def this(list: js.Array[GoogleActionsV2Argument]) = this()
     
@@ -203,12 +197,12 @@ object argumentArgumentMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Status")
   @js.native
-  class Status protected () extends StObject {
+  open class Status protected () extends StObject {
     /** @hidden */
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()
     
     /** @public */
-    def get(name: String): js.UndefOr[GoogleRpcStatus] = js.native
+    def get(name: String): GoogleRpcStatus = js.native
     
     /** @public */
     var input: ArgumentsStatus = js.native
@@ -224,10 +218,10 @@ object argumentArgumentMod {
     - scala.Boolean
     - java.lang.String
     - typings.actionsOnGoogle.v2Mod.GoogleActionsV2Location
-    - typings.actionsOnGoogle.commonMod.ApiClientObjectMap[js.Any]
+    - typings.actionsOnGoogle.commonMod.ApiClientObjectMap[scala.Any]
     - typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTime
   */
-  type Argument = js.UndefOr[_Argument | ApiClientObjectMap[js.Any] | Double | Boolean | String]
+  type Argument = js.UndefOr[_Argument | ApiClientObjectMap[Any] | Double | Boolean | String]
   
   type ArgumentsIndexable = StringDictionary[Argument]
   
@@ -275,15 +269,6 @@ object argumentArgumentMod {
       * @public
       */
     var IS_FINAL_REPROMPT: js.UndefOr[FinalRepromptArgument] = js.undefined
-    
-    /**
-      * The link non status argument.
-      * Is undefined as a noop.
-      * Use {@link Status#get|conv.arguments.status.get('LINK')} to explicitly get the status.
-      * @public
-      * @deprecated
-      */
-    var LINK: js.UndefOr[DeepLinkArgument] = js.undefined
     
     /**
       * The status of MEDIA_STATUS intent.
@@ -402,10 +387,6 @@ object argumentArgumentMod {
       inline def setIS_FINAL_REPROMPT(value: FinalRepromptArgument): Self = StObject.set(x, "IS_FINAL_REPROMPT", value.asInstanceOf[js.Any])
       
       inline def setIS_FINAL_REPROMPTUndefined: Self = StObject.set(x, "IS_FINAL_REPROMPT", js.undefined)
-      
-      inline def setLINK(value: DeepLinkArgument): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
-      
-      inline def setLINKUndefined: Self = StObject.set(x, "LINK", js.undefined)
       
       inline def setMEDIA_STATUS(value: MediaStatusArgument): Self = StObject.set(x, "MEDIA_STATUS", value.asInstanceOf[js.Any])
       

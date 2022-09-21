@@ -13,7 +13,7 @@ object repeatMod {
   
   @JSImport("@lumino/algorithm/types/repeat", "RepeatIterator")
   @js.native
-  class RepeatIterator[T] protected ()
+  open class RepeatIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -25,9 +25,9 @@ object repeatMod {
       */
     def this(value: T, count: Double) = this()
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     /**
       * Get an iterator over the object's values.

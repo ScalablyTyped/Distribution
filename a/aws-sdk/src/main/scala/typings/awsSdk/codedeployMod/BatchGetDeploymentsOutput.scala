@@ -24,6 +24,6 @@ object BatchGetDeploymentsOutput {
     
     inline def setDeploymentsInfoUndefined: Self = StObject.set(x, "deploymentsInfo", js.undefined)
     
-    inline def setDeploymentsInfoVarargs(value: DeploymentInfo*): Self = StObject.set(x, "deploymentsInfo", js.Array(value :_*))
+    inline def setDeploymentsInfoVarargs(value: DeploymentInfo*): Self = StObject.set(x, "deploymentsInfo", js.Array(value*))
   }
 }

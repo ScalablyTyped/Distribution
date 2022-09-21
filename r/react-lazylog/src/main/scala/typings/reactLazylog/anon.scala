@@ -65,13 +65,13 @@ object anon {
     
     var lineClassName: js.UndefOr[String] = js.undefined
     
-    var loadingComponent: js.UndefOr[js.Any] = js.undefined
+    var loadingComponent: js.UndefOr[Any] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Any]] = js.undefined
     
-    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, js.Any]] = js.undefined
+    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, Any]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onLoad: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var overscanRowCount: js.UndefOr[Double] = js.undefined
     
@@ -144,25 +144,25 @@ object anon {
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      inline def setHighlightVarargs(value: Double*): Self = StObject.set(x, "highlight", js.Array(value :_*))
+      inline def setHighlightVarargs(value: Double*): Self = StObject.set(x, "highlight", js.Array(value*))
       
       inline def setLineClassName(value: String): Self = StObject.set(x, "lineClassName", value.asInstanceOf[js.Any])
       
       inline def setLineClassNameUndefined: Self = StObject.set(x, "lineClassName", js.undefined)
       
-      inline def setLoadingComponent(value: js.Any): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
+      inline def setLoadingComponent(value: Any): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
       
       inline def setLoadingComponentUndefined: Self = StObject.set(x, "loadingComponent", js.undefined)
       
-      inline def setOnError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnHighlight(value: /* range */ Range => js.Any): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
+      inline def setOnHighlight(value: /* range */ Range => Any): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
       
       inline def setOnHighlightUndefined: Self = StObject.set(x, "onHighlight", js.undefined)
       
-      inline def setOnLoad(value: () => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
@@ -236,7 +236,7 @@ object anon {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
       
@@ -335,7 +335,7 @@ object anon {
     
     var onLineNumberClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
-    var onRowClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onRowClick: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var rowHeight: js.UndefOr[Double] = js.undefined
     
@@ -356,7 +356,7 @@ object anon {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
       
@@ -374,7 +374,7 @@ object anon {
       
       inline def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
       
-      inline def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
+      inline def setOnRowClick(value: () => Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
       
       inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       

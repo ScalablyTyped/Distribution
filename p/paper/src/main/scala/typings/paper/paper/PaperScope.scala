@@ -189,7 +189,7 @@ trait PaperScope extends StObject {
     * with other libraries that rely on these constructors. Keep the library
     * scoped if you encounter issues caused by this.
     */
-  def install(scope: js.Any): Unit = js.native
+  def install(scope: Any): Unit = js.native
   
   /** 
     * The currently active project.
@@ -215,7 +215,7 @@ trait PaperScope extends StObject {
     * @option [settings.hitTolerance=0] {Number} the default tolerance for hit-
     *     tests, when no value is specified
     */
-  var settings: js.Any = js.native
+  var settings: Any = js.native
   
   def setup(element: String): Unit = js.native
   def setup(element: Size): Unit = js.native

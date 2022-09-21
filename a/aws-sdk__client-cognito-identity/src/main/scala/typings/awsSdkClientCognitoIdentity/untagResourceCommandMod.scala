@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object untagResourceCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/UntagResourceCommand", "UntagResourceCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/UntagResourceCommand", "UntagResourceCommand")
   @js.native
-  class UntagResourceCommand protected ()
-    extends Command[
+  open class UntagResourceCommand protected () extends Command[
           UntagResourceCommandInput, 
           UntagResourceCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: UntagResourceCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object untagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[UntagResourceCommandInput, UntagResourceCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type UntagResourceCommandInput = UntagResourceInput

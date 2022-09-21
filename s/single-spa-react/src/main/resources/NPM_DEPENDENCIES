@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "single-spa-react" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "single-spa-react" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

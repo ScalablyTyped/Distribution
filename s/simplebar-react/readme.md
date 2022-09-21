@@ -10,10 +10,10 @@ React component for SimpleBar
 | ------------------ | :-------------: |
 | Full name          | simplebar-react |
 | Keywords           | - |
-| # releases         | 55 |
-| # dependents       | 26 |
-| # downloads        | 64404063 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3098282.6666666665 |
+| # stars            | 4966.0 |
 
 ## Links
 - [Homepage](https://grsmto.github.io/simplebar/)

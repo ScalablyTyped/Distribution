@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "RequestFileError")
 @js.native
-class RequestFileError protected ()
+open class RequestFileError protected ()
   extends typings.babylonjs.legacyMod.RequestFileError {
   /**
     * Creates a new LoadFileError

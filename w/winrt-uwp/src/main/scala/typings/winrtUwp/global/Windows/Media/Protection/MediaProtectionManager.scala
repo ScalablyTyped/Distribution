@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.MediaProtectionManager")
 @js.native
 /** Initializes a new instance of the MediaProtectionManager class. */
-class MediaProtectionManager ()
+open class MediaProtectionManager ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.MediaProtectionManager

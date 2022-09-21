@@ -28,6 +28,6 @@ object SockendAdvertisement {
     
     inline def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
-    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value*))
   }
 }

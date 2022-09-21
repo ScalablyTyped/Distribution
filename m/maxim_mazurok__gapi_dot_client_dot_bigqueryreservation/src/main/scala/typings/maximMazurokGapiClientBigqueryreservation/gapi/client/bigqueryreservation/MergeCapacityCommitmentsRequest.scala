@@ -25,6 +25,6 @@ object MergeCapacityCommitmentsRequest {
     
     inline def setCapacityCommitmentIdsUndefined: Self = StObject.set(x, "capacityCommitmentIds", js.undefined)
     
-    inline def setCapacityCommitmentIdsVarargs(value: String*): Self = StObject.set(x, "capacityCommitmentIds", js.Array(value :_*))
+    inline def setCapacityCommitmentIdsVarargs(value: String*): Self = StObject.set(x, "capacityCommitmentIds", js.Array(value*))
   }
 }

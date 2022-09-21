@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Endpoint extends StObject {
   
+  /** A [Cloud SQL](https://cloud.google.com/sql) instance URI. */
+  var cloudSqlInstance: js.UndefOr[String] = js.undefined
+  
+  /** A cluster URI for [Google Kubernetes Engine master](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture). */
+  var gkeMasterCluster: js.UndefOr[String] = js.undefined
+  
   /** A Compute Engine instance URI. */
   var instance: js.UndefOr[String] = js.undefined
   
@@ -39,6 +45,14 @@ object Endpoint {
   }
   
   extension [Self <: Endpoint](x: Self) {
+    
+    inline def setCloudSqlInstance(value: String): Self = StObject.set(x, "cloudSqlInstance", value.asInstanceOf[js.Any])
+    
+    inline def setCloudSqlInstanceUndefined: Self = StObject.set(x, "cloudSqlInstance", js.undefined)
+    
+    inline def setGkeMasterCluster(value: String): Self = StObject.set(x, "gkeMasterCluster", value.asInstanceOf[js.Any])
+    
+    inline def setGkeMasterClusterUndefined: Self = StObject.set(x, "gkeMasterCluster", js.undefined)
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

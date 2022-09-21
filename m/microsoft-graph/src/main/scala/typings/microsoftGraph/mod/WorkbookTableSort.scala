@@ -35,7 +35,7 @@ object WorkbookTableSort {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: WorkbookSortField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: WorkbookSortField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     

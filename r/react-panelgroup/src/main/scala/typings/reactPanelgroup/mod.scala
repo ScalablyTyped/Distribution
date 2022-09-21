@@ -1,6 +1,7 @@
 package typings.reactPanelgroup
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactPanelgroup.reactPanelgroupStrings.column
 import typings.reactPanelgroup.reactPanelgroupStrings.dynamic
 import typings.reactPanelgroup.reactPanelgroupStrings.fixed
@@ -14,10 +15,10 @@ object mod {
   
   @JSImport("react-panelgroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PropTypes, js.Object, js.Any]
+  open class default ()
+    extends Component[PropTypes, js.Object, Any]
   
-  type PanelGroup = Component[PropTypes, js.Object, js.Any]
+  type PanelGroup = Component[PropTypes, js.Object, Any]
   
   trait PanelWidth extends StObject {
     
@@ -54,13 +55,15 @@ object mod {
       
       inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       
-      inline def setSnapVarargs(value: Double*): Self = StObject.set(x, "snap", js.Array(value :_*))
+      inline def setSnapVarargs(value: Double*): Self = StObject.set(x, "snap", js.Array(value*))
     }
   }
   
   trait PropTypes extends StObject {
     
     var borderColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var direction: js.UndefOr[row | column] = js.undefined
     
@@ -85,6 +88,10 @@ object mod {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDirection(value: row | column): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
@@ -101,7 +108,7 @@ object mod {
       
       inline def setPanelWidthsUndefined: Self = StObject.set(x, "panelWidths", js.undefined)
       
-      inline def setPanelWidthsVarargs(value: (PanelWidth | Null)*): Self = StObject.set(x, "panelWidths", js.Array(value :_*))
+      inline def setPanelWidthsVarargs(value: (PanelWidth | Null)*): Self = StObject.set(x, "panelWidths", js.Array(value*))
       
       inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       

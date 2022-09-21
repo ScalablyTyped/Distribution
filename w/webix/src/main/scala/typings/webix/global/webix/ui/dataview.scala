@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.dataview because var conflicts: $customPrint_Original, $dragHTML_Original, $dropAllow_Original, $dropHTML_Original, $height, $scope, $skin_Original, $view, $width, config, data, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, `type`, types, waitData. Inlined  */ @JSGlobal("webix.ui.dataview")
+- typings.webix.webix.ui.dataview because var conflicts: $customPrint_Original, $dragHTML_Original, $dropAllow_Original, $dropHTML_Original, $height, $scope, $setNode, $skin_Original, $view, $width, config, data, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, `type`, types, waitData. Inlined  */ @JSGlobal("webix.ui.dataview")
 @js.native
-class dataview ()
+open class dataview ()
   extends typings.webix.mod.ui.dataview

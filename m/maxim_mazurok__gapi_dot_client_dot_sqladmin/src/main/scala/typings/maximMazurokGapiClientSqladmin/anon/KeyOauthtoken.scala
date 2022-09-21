@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
-import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.SslCertsInsertRequest
+import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.SqlInstancesRescheduleMaintenanceRequestBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +35,14 @@ trait KeyOauthtoken extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the project that contains the instance. */
+  /** ID of the project that contains the instance. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SslCertsInsertRequest
+  var resource: SqlInstancesRescheduleMaintenanceRequestBody
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(instance: String, project: String, resource: SslCertsInsertRequest): KeyOauthtoken = {
+  inline def apply(instance: String, project: String, resource: SqlInstancesRescheduleMaintenanceRequestBody): KeyOauthtoken = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
@@ -99,7 +99,7 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SslCertsInsertRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SqlInstancesRescheduleMaintenanceRequestBody): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

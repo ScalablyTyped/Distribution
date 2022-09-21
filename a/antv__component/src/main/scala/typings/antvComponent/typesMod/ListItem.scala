@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListItem
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * 唯一值，用于动画或者查找
@@ -31,11 +31,11 @@ trait ListItem
     * 值
     * @type {any}
     */
-  var value: js.Any
+  var value: Any
 }
 object ListItem {
   
-  inline def apply(name: String, value: js.Any): ListItem = {
+  inline def apply(name: String, value: Any): ListItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItem]
   }
@@ -52,6 +52,6 @@ object ListItem {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -28,13 +28,16 @@ trait GooglePrivacyDlpV2PrimitiveTransformation extends StObject {
   var fixedSizeBucketingConfig: js.UndefOr[GooglePrivacyDlpV2FixedSizeBucketingConfig] = js.undefined
   
   /** Redact */
-  var redactConfig: js.UndefOr[js.Any] = js.undefined
+  var redactConfig: js.UndefOr[Any] = js.undefined
   
-  /** Replace */
+  /** Replace with a specified value. */
   var replaceConfig: js.UndefOr[GooglePrivacyDlpV2ReplaceValueConfig] = js.undefined
   
+  /** Replace with a value randomly drawn (with replacement) from a dictionary. */
+  var replaceDictionaryConfig: js.UndefOr[GooglePrivacyDlpV2ReplaceDictionaryConfig] = js.undefined
+  
   /** Replace with infotype */
-  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.undefined
+  var replaceWithInfoTypeConfig: js.UndefOr[Any] = js.undefined
   
   /** Time extraction */
   var timePartConfig: js.UndefOr[GooglePrivacyDlpV2TimePartConfig] = js.undefined
@@ -76,7 +79,7 @@ object GooglePrivacyDlpV2PrimitiveTransformation {
     
     inline def setFixedSizeBucketingConfigUndefined: Self = StObject.set(x, "fixedSizeBucketingConfig", js.undefined)
     
-    inline def setRedactConfig(value: js.Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
+    inline def setRedactConfig(value: Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
     
     inline def setRedactConfigUndefined: Self = StObject.set(x, "redactConfig", js.undefined)
     
@@ -84,7 +87,11 @@ object GooglePrivacyDlpV2PrimitiveTransformation {
     
     inline def setReplaceConfigUndefined: Self = StObject.set(x, "replaceConfig", js.undefined)
     
-    inline def setReplaceWithInfoTypeConfig(value: js.Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
+    inline def setReplaceDictionaryConfig(value: GooglePrivacyDlpV2ReplaceDictionaryConfig): Self = StObject.set(x, "replaceDictionaryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceDictionaryConfigUndefined: Self = StObject.set(x, "replaceDictionaryConfig", js.undefined)
+    
+    inline def setReplaceWithInfoTypeConfig(value: Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
     
     inline def setReplaceWithInfoTypeConfigUndefined: Self = StObject.set(x, "replaceWithInfoTypeConfig", js.undefined)
     

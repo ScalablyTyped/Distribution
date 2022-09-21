@@ -10,14 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distanceParametersMod extends Shortcut {
   
-  @JSImport("esri/tasks/support/DistanceParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/DistanceParameters", JSImport.Namespace)
   @js.native
   val ^ : js.Object & DistanceParametersConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/tasks/support/DistanceParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/DistanceParameters", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Defines the input parameters when calling [geometryService.distance()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#distance).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html)
+    */
+  open class Class ()
     extends StObject
        with DistanceParameters {
     def this(properties: DistanceParametersProperties) = this()

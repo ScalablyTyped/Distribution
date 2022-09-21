@@ -29,7 +29,7 @@ object ListDeploymentJobsResponse {
     
     inline def setDeploymentJobsUndefined: Self = StObject.set(x, "deploymentJobs", js.undefined)
     
-    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
+    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

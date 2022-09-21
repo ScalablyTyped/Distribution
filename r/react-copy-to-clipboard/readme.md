@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-copy-to-clipboard
 
-Typings are for version 4.3
+Typings are for version 5.0
 
 ## Library description:
 Copy-to-clipboard React component
@@ -11,9 +11,9 @@ Copy-to-clipboard React component
 | Full name          | react-copy-to-clipboard |
 | Keywords           | component, react-component, react, copy to clipboard, clipboard |
 | # releases         | 3 |
-| # dependents       | 486 |
-| # downloads        | 23545581 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 4109276.3333333335 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/nkbt/react-copy-to-clipboard)

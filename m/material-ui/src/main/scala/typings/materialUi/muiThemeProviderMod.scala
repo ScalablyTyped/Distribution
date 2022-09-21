@@ -10,10 +10,10 @@ object muiThemeProviderMod {
   
   @JSImport("material-ui/styles/MuiThemeProvider", JSImport.Default)
   @js.native
-  class default () extends MuiThemeProvider
+  open class default () extends MuiThemeProvider
   
   @JSImport("material-ui/styles/MuiThemeProvider", "MuiThemeProvider")
   @js.native
-  class MuiThemeProvider ()
-    extends Component[MuiThemeProviderProps, js.Object, js.Any]
+  open class MuiThemeProvider ()
+    extends Component[MuiThemeProviderProps, js.Object, Any]
 }

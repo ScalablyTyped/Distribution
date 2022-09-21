@@ -10,10 +10,9 @@ object abstractPureComponentMod {
   
   @JSImport("@blueprintjs/core/lib/esm/common/abstractPureComponent", "AbstractPureComponent")
   @js.native
-  abstract class AbstractPureComponent[P, S] protected ()
-    extends PureComponent[P, S, js.Any] {
+  abstract class AbstractPureComponent[P, S] protected () extends PureComponent[P, S, Any] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
     /**
       * Clear all known timeouts.
@@ -29,12 +28,13 @@ object abstractPureComponentMod {
     /**
       * Set a timeout and remember its ID.
       * All stored timeouts will be cleared when component unmounts.
+      *
       * @returns a "cancel" function that will clear timeout when invoked.
       */
     def setTimeout(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
     def setTimeout(callback: js.Function0[Unit], timeout: Double): js.Function0[Unit] = js.native
     
-    /* private */ var timeoutIds: js.Any = js.native
+    /* private */ var timeoutIds: Any = js.native
     
     /**
       * Ensures that the props specified for a component are valid.

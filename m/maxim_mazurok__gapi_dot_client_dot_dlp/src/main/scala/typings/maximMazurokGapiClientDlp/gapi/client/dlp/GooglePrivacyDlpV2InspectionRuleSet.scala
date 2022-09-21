@@ -25,12 +25,12 @@ object GooglePrivacyDlpV2InspectionRuleSet {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
     inline def setRules(value: js.Array[GooglePrivacyDlpV2InspectionRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: GooglePrivacyDlpV2InspectionRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: GooglePrivacyDlpV2InspectionRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

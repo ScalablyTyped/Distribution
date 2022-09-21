@@ -10,10 +10,10 @@ Vegas - Fullscreen Backgrounds and Slideshows.
 | ------------------ | :-------------: |
 | Full name          | vegas |
 | Keywords           | background, slideshow, fullscreen, vegas, jquery-plugin, jquery, zepto |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 60608 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3581.3333333333335 |
+| # stars            | 1798.0 |
 
 ## Links
 - [Homepage](http://vegas.jaysalvat.com)

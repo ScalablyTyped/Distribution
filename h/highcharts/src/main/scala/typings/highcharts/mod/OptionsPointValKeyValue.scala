@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.close
   - typings.highcharts.highchartsStrings.high
   - typings.highcharts.highchartsStrings.low
-  - typings.highcharts.highchartsStrings.open
 */
 trait OptionsPointValKeyValue extends StObject
 object OptionsPointValKeyValue {
@@ -18,6 +17,4 @@ object OptionsPointValKeyValue {
   inline def high: typings.highcharts.highchartsStrings.high = "high".asInstanceOf[typings.highcharts.highchartsStrings.high]
   
   inline def low: typings.highcharts.highchartsStrings.low = "low".asInstanceOf[typings.highcharts.highchartsStrings.low]
-  
-  inline def open: typings.highcharts.highchartsStrings.open = "open".asInstanceOf[typings.highcharts.highchartsStrings.open]
 }

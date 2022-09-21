@@ -27,13 +27,13 @@ object mod {
   
   @JSImport("ol", "AssertionError")
   @js.native
-  class AssertionError protected () extends default {
+  open class AssertionError protected () extends default {
     def this(code: Double) = this()
   }
   
   @JSImport("ol", "Collection")
   @js.native
-  class Collection[T] ()
+  open class Collection[T] ()
     extends typings.ol.collectionMod.default[T] {
     def this(opt_array: js.Array[T]) = this()
     def this(opt_array: js.Array[T], opt_options: Options) = this()
@@ -42,34 +42,34 @@ object mod {
   
   @JSImport("ol", "Disposable")
   @js.native
-  class Disposable ()
+  open class Disposable ()
     extends typings.ol.disposableMod.default
   
   @JSImport("ol", "Feature")
   @js.native
-  class Feature[GeomType /* <: typings.ol.geometryMod.default */] ()
+  open class Feature[GeomType /* <: typings.ol.geometryMod.default */] ()
     extends typings.ol.olFeatureMod.default[GeomType] {
     def this(opt_geometryOrProperties: GeomType) = this()
-    def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
+    def this(opt_geometryOrProperties: StringDictionary[Any]) = this()
   }
   
   @JSImport("ol", "Geolocation")
   @js.native
-  class Geolocation ()
+  open class Geolocation ()
     extends typings.ol.geolocationMod.default {
     def this(opt_options: typings.ol.geolocationMod.Options) = this()
   }
   
   @JSImport("ol", "Graticule")
   @js.native
-  class Graticule ()
+  open class Graticule ()
     extends typings.ol.graticuleMod.default {
     def this(opt_options: typings.ol.graticuleMod.Options) = this()
   }
   
   @JSImport("ol", "Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.ol.olImageMod.default {
     def this(
       extent: Extent,
@@ -99,7 +99,7 @@ object mod {
   
   @JSImport("ol", "ImageCanvas")
   @js.native
-  class ImageCanvas protected ()
+  open class ImageCanvas protected ()
     extends typings.ol.olImageCanvasMod.default {
     def this(extent: Extent, resolution: Double, pixelRatio: Double, canvas: HTMLCanvasElement) = this()
     def this(
@@ -113,7 +113,7 @@ object mod {
   
   @JSImport("ol", "ImageTile")
   @js.native
-  class ImageTile protected ()
+  open class ImageTile protected ()
     extends typings.ol.imageTileMod.default {
     def this(
       tileCoord: TileCoord,
@@ -134,21 +134,21 @@ object mod {
   
   @JSImport("ol", "Kinetic")
   @js.native
-  class Kinetic protected ()
+  open class Kinetic protected ()
     extends typings.ol.kineticMod.default {
     def this(decay: Double, minVelocity: Double, delay: Double) = this()
   }
   
   @JSImport("ol", "Map")
   @js.native
-  class Map protected ()
+  open class Map protected ()
     extends typings.ol.olMapMod.default {
     def this(options: MapOptions) = this()
   }
   
   @JSImport("ol", "MapBrowserEvent")
   @js.native
-  class MapBrowserEvent[EVENT /* <: UIEvent */] protected ()
+  open class MapBrowserEvent[EVENT /* <: UIEvent */] protected ()
     extends typings.ol.mapBrowserEventMod.default[EVENT] {
     def this(`type`: String, map: typings.ol.pluggableMapMod.default, originalEvent: EVENT) = this()
     def this(
@@ -175,7 +175,7 @@ object mod {
   
   @JSImport("ol", "MapBrowserEventHandler")
   @js.native
-  class MapBrowserEventHandler protected ()
+  open class MapBrowserEventHandler protected ()
     extends typings.ol.mapBrowserEventHandlerMod.default {
     def this(map: typings.ol.pluggableMapMod.default) = this()
     def this(map: typings.ol.pluggableMapMod.default, moveTolerance: Double) = this()
@@ -183,7 +183,7 @@ object mod {
   
   @JSImport("ol", "MapEvent")
   @js.native
-  class MapEvent protected ()
+  open class MapEvent protected ()
     extends typings.ol.mapEventMod.default {
     def this(`type`: String, map: typings.ol.pluggableMapMod.default) = this()
     def this(`type`: String, map: typings.ol.pluggableMapMod.default, opt_frameState: FrameState) = this()
@@ -191,26 +191,26 @@ object mod {
   
   @JSImport("ol", "Object")
   @js.native
-  class Object ()
+  open class Object ()
     extends typings.ol.objectMod.default {
-    def this(opt_values: StringDictionary[js.Any]) = this()
+    def this(opt_values: StringDictionary[Any]) = this()
   }
   
   @JSImport("ol", "Observable")
   @js.native
-  class Observable ()
+  open class Observable ()
     extends typings.ol.observableMod.default
   
   @JSImport("ol", "Overlay")
   @js.native
-  class Overlay protected ()
+  open class Overlay protected ()
     extends typings.ol.overlayMod.default {
     def this(options: typings.ol.overlayMod.Options) = this()
   }
   
   @JSImport("ol", "PluggableMap")
   @js.native
-  class PluggableMap protected ()
+  open class PluggableMap protected ()
     extends typings.ol.pluggableMapMod.default {
     def this(options: MapOptions) = this()
   }
@@ -225,19 +225,19 @@ object mod {
   
   @JSImport("ol", "TileCache")
   @js.native
-  class TileCache ()
+  open class TileCache ()
     extends typings.ol.tileCacheMod.default
   
   @JSImport("ol", "TileQueue")
   @js.native
-  class TileQueue protected ()
+  open class TileQueue protected ()
     extends typings.ol.tileQueueMod.default {
-    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[js.Any]) = this()
+    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[Any]) = this()
   }
   
   @JSImport("ol", "TileRange")
   @js.native
-  class TileRange protected ()
+  open class TileRange protected ()
     extends typings.ol.tileRangeMod.default {
     def this(minX: Double, maxX: Double, minY: Double, maxY: Double) = this()
   }
@@ -248,7 +248,7 @@ object mod {
   
   @JSImport("ol", "VectorRenderTile")
   @js.native
-  class VectorRenderTile protected ()
+  open class VectorRenderTile protected ()
     extends typings.ol.vectorRenderTileMod.default {
     def this(
       tileCoord: TileCoord,
@@ -263,7 +263,7 @@ object mod {
   
   @JSImport("ol", "VectorTile")
   @js.native
-  class VectorTile protected ()
+  open class VectorTile protected ()
     extends typings.ol.olVectorTileMod.default {
     def this(
       tileCoord: TileCoord,
@@ -284,10 +284,10 @@ object mod {
   
   @JSImport("ol", "View")
   @js.native
-  class View ()
+  open class View ()
     extends typings.ol.viewMod.default {
     def this(opt_options: ViewOptions) = this()
   }
   
-  inline def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUid(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

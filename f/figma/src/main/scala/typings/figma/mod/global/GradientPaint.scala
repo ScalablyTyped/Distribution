@@ -44,7 +44,7 @@ object GradientPaint {
     
     inline def setGradientStops(value: js.Array[ColorStop]): Self = StObject.set(x, "gradientStops", value.asInstanceOf[js.Any])
     
-    inline def setGradientStopsVarargs(value: ColorStop*): Self = StObject.set(x, "gradientStops", js.Array(value :_*))
+    inline def setGradientStopsVarargs(value: ColorStop*): Self = StObject.set(x, "gradientStops", js.Array(value*))
     
     inline def setGradientTransform(value: Transform): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     

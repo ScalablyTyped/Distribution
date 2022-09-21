@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFileSystemWindowsConfiguration extends StObject {
   
   /**
+    * The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system..
+    */
+  var AuditLogConfiguration: js.UndefOr[WindowsAuditLogCreateConfiguration] = js.undefined
+  
+  /**
     * The number of days to retain automatic daily backups. Setting this to zero (0) disables automatic daily backups. You can retain automatic daily backups for a maximum of 90 days. For more information, see Working with Automatic Daily Backups.
     */
   var AutomaticBackupRetentionDays: js.UndefOr[typings.awsSdk.fsxMod.AutomaticBackupRetentionDays] = js.undefined
@@ -39,6 +44,10 @@ object UpdateFileSystemWindowsConfiguration {
   }
   
   extension [Self <: UpdateFileSystemWindowsConfiguration](x: Self) {
+    
+    inline def setAuditLogConfiguration(value: WindowsAuditLogCreateConfiguration): Self = StObject.set(x, "AuditLogConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAuditLogConfigurationUndefined: Self = StObject.set(x, "AuditLogConfiguration", js.undefined)
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,5 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextAny
-import typings.xstate.anon.ContextTFinalContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ trait InvokeConfig[TContext, TEvent /* <: EventObject */] extends StObject {
     *
     * Data should be mapped to match the child machine's context shape.
     */
-  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
+  var data: js.UndefOr[(Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])] = js.undefined
   
   /**
     * @deprecated
@@ -37,24 +35,29 @@ trait InvokeConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
+    * Meta data related to this invocation
+    */
+  var meta: js.UndefOr[MetaObject] = js.undefined
+  
+  /**
     * The transition to take upon the invoked child machine reaching its final top-level state.
     */
-  var onDone: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])] = js.undefined
+  var onDone: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])] = js.undefined
   
   /**
     * The transition to take upon the invoked child machine sending an error event.
     */
-  var onError: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])] = js.undefined
+  var onError: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])] = js.undefined
   
   /**
     * The source of the machine to be invoked, or the machine itself.
     */
-  var src: String | InvokeSourceDefinition | (StateMachine[js.Any, js.Any, js.Any, ContextAny]) | (InvokeCreator[TContext, TEvent, js.Any])
+  var src: String | InvokeSourceDefinition | AnyStateMachine | (InvokeCreator[TContext, TEvent, Any, Any, TEvent])
 }
 object InvokeConfig {
   
   inline def apply[TContext, TEvent /* <: EventObject */](
-    src: String | InvokeSourceDefinition | (StateMachine[js.Any, js.Any, js.Any, ContextAny]) | (InvokeCreator[TContext, TEvent, js.Any])
+    src: String | InvokeSourceDefinition | AnyStateMachine | (InvokeCreator[TContext, TEvent, Any, Any, TEvent])
   ): InvokeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeConfig[TContext, TEvent]]
@@ -66,9 +69,9 @@ object InvokeConfig {
     
     inline def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
-    inline def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setDataFunction2(value: (TContext, TEvent) => Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -80,24 +83,28 @@ object InvokeConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setOnDone(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
+    inline def setMeta(value: MetaObject): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    
+    inline def setOnDone(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     
     inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
     
-    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onDone", js.Array(value :_*))
+    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[Any]])*): Self = StObject.set(x, "onDone", js.Array(value*))
     
-    inline def setOnError(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnErrorVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onError", js.Array(value :_*))
+    inline def setOnErrorVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[Any]])*): Self = StObject.set(x, "onError", js.Array(value*))
     
     inline def setSrc(
-      value: String | InvokeSourceDefinition | (StateMachine[js.Any, js.Any, js.Any, ContextAny]) | (InvokeCreator[TContext, TEvent, js.Any])
+      value: String | InvokeSourceDefinition | AnyStateMachine | (InvokeCreator[TContext, TEvent, Any, Any, TEvent])
     ): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     inline def setSrcFunction3(
-      value: (TContext, TEvent, /* meta */ InvokeMeta) => js.Thenable[js.Any] | (StateMachine[js.Any, js.Any, js.Any, ContextTFinalContext[js.Any]]) | Subscribable[js.Any] | InvokeCallback
+      value: (TContext, TEvent, /* meta */ InvokeMeta) => js.Thenable[Any] | (StateMachine[Any, Any, Any, Any, Any, Any, Any]) | Subscribable[EventObject] | (InvokeCallback[Any, TEvent]) | (Behavior[Any, Any])
     ): Self = StObject.set(x, "src", js.Any.fromFunction3(value))
   }
 }

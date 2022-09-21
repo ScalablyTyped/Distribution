@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateIdentityProviderRequest extends StObject {
   
   /**
-    * The identity provider attribute mapping to be changed.
+    * The IdP attribute mapping to be changed.
     */
   var AttributeMapping: js.UndefOr[AttributeMappingType] = js.undefined
   
   /**
-    * A list of identity provider identifiers.
+    * A list of IdP identifiers.
     */
   var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.undefined
   
   /**
-    * The identity provider details to be updated, such as MetadataURL and MetadataFile.
+    * The IdP details to be updated, such as MetadataURL and MetadataFile.
     */
   var ProviderDetails: js.UndefOr[ProviderDetailsType] = js.undefined
   
   /**
-    * The identity provider name.
+    * The IdP name.
     */
   var ProviderName: ProviderNameType
   
@@ -48,7 +48,7 @@ object UpdateIdentityProviderRequest {
     
     inline def setIdpIdentifiersUndefined: Self = StObject.set(x, "IdpIdentifiers", js.undefined)
     
-    inline def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value :_*))
+    inline def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value*))
     
     inline def setProviderDetails(value: ProviderDetailsType): Self = StObject.set(x, "ProviderDetails", value.asInstanceOf[js.Any])
     

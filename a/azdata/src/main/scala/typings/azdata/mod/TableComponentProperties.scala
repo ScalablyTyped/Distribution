@@ -14,7 +14,7 @@ trait TableComponentProperties
   
   var columns: js.Array[String | TableColumn]
   
-  var data: js.Array[js.Array[js.Any]]
+  var data: js.Array[js.Array[Any]]
   
   var fontSize: js.UndefOr[Double | String] = js.undefined
   
@@ -30,7 +30,7 @@ trait TableComponentProperties
 }
 object TableComponentProperties {
   
-  inline def apply(columns: js.Array[String | TableColumn], data: js.Array[js.Array[js.Any]]): TableComponentProperties = {
+  inline def apply(columns: js.Array[String | TableColumn], data: js.Array[js.Array[Any]]): TableComponentProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableComponentProperties]
   }
@@ -47,11 +47,11 @@ object TableComponentProperties {
     
     inline def setColumns(value: js.Array[String | TableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: (String | TableColumn)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (String | TableColumn)*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object TableComponentProperties {
     
     inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
-    inline def setSelectedRowsVarargs(value: Double*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
+    inline def setSelectedRowsVarargs(value: Double*): Self = StObject.set(x, "selectedRows", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -79,6 +79,6 @@ object TableComponentProperties {
     
     inline def setUpdateCellsUndefined: Self = StObject.set(x, "updateCells", js.undefined)
     
-    inline def setUpdateCellsVarargs(value: TableCell*): Self = StObject.set(x, "updateCells", js.Array(value :_*))
+    inline def setUpdateCellsVarargs(value: TableCell*): Self = StObject.set(x, "updateCells", js.Array(value*))
   }
 }

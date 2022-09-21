@@ -11,5 +11,5 @@ object geojsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(data: js.Any, _options: Unit, dataView: View): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], _options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(data: Any, _options: Unit, dataView: View): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], _options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

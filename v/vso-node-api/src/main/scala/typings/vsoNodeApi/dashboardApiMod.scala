@@ -18,7 +18,7 @@ object dashboardApiMod {
   
   @JSImport("vso-node-api/DashboardApi", "DashboardApi")
   @js.native
-  class DashboardApi protected () extends IDashboardApi {
+  open class DashboardApi protected () extends IDashboardApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

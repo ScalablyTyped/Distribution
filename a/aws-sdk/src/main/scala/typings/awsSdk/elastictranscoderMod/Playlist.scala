@@ -66,7 +66,7 @@ object Playlist {
     
     inline def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
-    inline def setOutputKeysVarargs(value: Key*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
+    inline def setOutputKeysVarargs(value: Key*): Self = StObject.set(x, "OutputKeys", js.Array(value*))
     
     inline def setPlayReadyDrm(value: PlayReadyDrm): Self = StObject.set(x, "PlayReadyDrm", value.asInstanceOf[js.Any])
     

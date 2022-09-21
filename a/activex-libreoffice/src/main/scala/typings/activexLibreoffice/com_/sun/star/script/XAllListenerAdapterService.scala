@@ -16,14 +16,14 @@ trait XAllListenerAdapterService
     *
     * To get the correct listener interface the returned {@link com.sun.star.uno.XInterface} has to be queried for it.
     */
-  def createAllListerAdapter(xListenerType: `type`, xListener: XAllListener, aHelper: js.Any): XInterface
+  def createAllListerAdapter(xListenerType: `type`, xListener: XAllListener, aHelper: Any): XInterface
 }
 object XAllListenerAdapterService {
   
   inline def apply(
     acquire: () => Unit,
-    createAllListerAdapter: (`type`, XAllListener, js.Any) => XInterface,
-    queryInterface: `type` => js.Any,
+    createAllListerAdapter: (`type`, XAllListener, Any) => XInterface,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAllListenerAdapterService = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAllListerAdapter = js.Any.fromFunction3(createAllListerAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -32,6 +32,6 @@ object XAllListenerAdapterService {
   
   extension [Self <: XAllListenerAdapterService](x: Self) {
     
-    inline def setCreateAllListerAdapter(value: (`type`, XAllListener, js.Any) => XInterface): Self = StObject.set(x, "createAllListerAdapter", js.Any.fromFunction3(value))
+    inline def setCreateAllListerAdapter(value: (`type`, XAllListener, Any) => XInterface): Self = StObject.set(x, "createAllListerAdapter", js.Any.fromFunction3(value))
   }
 }

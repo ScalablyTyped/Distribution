@@ -130,8 +130,8 @@ object EventTarget {
   @js.native
   trait Event
     extends StObject
-       with CustomEvent[js.Any]
-       with /* key */ StringDictionary[js.Any]
+       with CustomEvent[Any]
+       with /* key */ StringDictionary[Any]
   
   /**
     * All event listeners should follow the following format.
@@ -144,7 +144,7 @@ object EventTarget {
     */
   type EventListener = js.Function2[
     /* e */ typings.videoJs.mod.videojs.EventTarget.Event, 
-    /* data */ js.UndefOr[js.Any], 
+    /* data */ js.UndefOr[Any], 
     Unit
   ]
 }

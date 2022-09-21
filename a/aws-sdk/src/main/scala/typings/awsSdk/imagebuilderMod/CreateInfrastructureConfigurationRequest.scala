@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateInfrastructureConfigurationRequest extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent.
     */
   var clientToken: ClientToken
   
   /**
-    * The description of the infrastructure configuration. 
+    * The description of the infrastructure configuration.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The instance profile to associate with the instance used to customize your EC2 AMI. 
+    * The instance metadata options that you can set for the HTTP requests that pipeline builds use to launch EC2 build and test instances.
     */
-  var instanceProfileName: NonEmptyString
+  var instanceMetadataOptions: js.UndefOr[InstanceMetadataOptions] = js.undefined
   
   /**
-    * The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability. 
+    * The instance profile to associate with the instance used to customize your Amazon EC2 AMI.
+    */
+  var instanceProfileName: InstanceProfileNameType
+  
+  /**
+    * The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability.
     */
   var instanceTypes: js.UndefOr[InstanceTypeList] = js.undefined
   
   /**
-    * The key pair of the infrastructure configuration. This can be used to log on to and debug the instance used to create your image. 
+    * The key pair of the infrastructure configuration. You can use this to log on to and debug the instance used to create your image.
     */
   var keyPair: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The logging configuration of the infrastructure configuration. 
+    * The logging configuration of the infrastructure configuration.
     */
   var logging: js.UndefOr[Logging] = js.undefined
   
   /**
-    * The name of the infrastructure configuration. 
+    * The name of the infrastructure configuration.
     */
   var name: ResourceName
   
@@ -47,33 +52,33 @@ trait CreateInfrastructureConfigurationRequest extends StObject {
   var resourceTags: js.UndefOr[ResourceTagMap] = js.undefined
   
   /**
-    * The security group IDs to associate with the instance used to customize your EC2 AMI. 
+    * The security group IDs to associate with the instance used to customize your Amazon EC2 AMI.
     */
   var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
-    * The SNS topic on which to send image build events. 
+    * The Amazon Resource Name (ARN) for the SNS topic to which we send image build event notifications.  EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under. 
     */
   var snsTopicArn: js.UndefOr[SnsTopicArn] = js.undefined
   
   /**
-    * The subnet ID in which to place the instance used to customize your EC2 AMI. 
+    * The subnet ID in which to place the instance used to customize your Amazon EC2 AMI.
     */
   var subnetId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The tags of the infrastructure configuration. 
+    * The tags of the infrastructure configuration.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails. 
+    * The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails.
     */
   var terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
 }
 object CreateInfrastructureConfigurationRequest {
   
-  inline def apply(clientToken: ClientToken, instanceProfileName: NonEmptyString, name: ResourceName): CreateInfrastructureConfigurationRequest = {
+  inline def apply(clientToken: ClientToken, instanceProfileName: InstanceProfileNameType, name: ResourceName): CreateInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], instanceProfileName = instanceProfileName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInfrastructureConfigurationRequest]
   }
@@ -86,13 +91,17 @@ object CreateInfrastructureConfigurationRequest {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setInstanceProfileName(value: NonEmptyString): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceMetadataOptions(value: InstanceMetadataOptions): Self = StObject.set(x, "instanceMetadataOptions", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceMetadataOptionsUndefined: Self = StObject.set(x, "instanceMetadataOptions", js.undefined)
+    
+    inline def setInstanceProfileName(value: InstanceProfileNameType): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypes(value: InstanceTypeList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value*))
     
     inline def setKeyPair(value: NonEmptyString): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
@@ -112,7 +121,7 @@ object CreateInfrastructureConfigurationRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroupIds", js.Array(value*))
     
     inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     

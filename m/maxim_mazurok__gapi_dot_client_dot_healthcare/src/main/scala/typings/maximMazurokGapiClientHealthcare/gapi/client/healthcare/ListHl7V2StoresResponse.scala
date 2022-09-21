@@ -25,7 +25,7 @@ object ListHl7V2StoresResponse {
     
     inline def setHl7V2StoresUndefined: Self = StObject.set(x, "hl7V2Stores", js.undefined)
     
-    inline def setHl7V2StoresVarargs(value: Hl7V2Store*): Self = StObject.set(x, "hl7V2Stores", js.Array(value :_*))
+    inline def setHl7V2StoresVarargs(value: Hl7V2Store*): Self = StObject.set(x, "hl7V2Stores", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

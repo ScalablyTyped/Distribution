@@ -10,19 +10,19 @@ trait Colors extends StObject {
   
   var animateOption: Appear
   
-  var background: js.Any
+  var background: Any
   
   var capture: Boolean
   
-  var colors: js.Array[js.Any]
+  var colors: js.Array[Any]
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: Handler
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -38,9 +38,9 @@ trait Colors extends StObject {
   
   var max: Double
   
-  var maxHeight: js.Any
+  var maxHeight: Any
   
-  var maxWidth: js.Any
+  var maxWidth: Any
   
   var min: Double
   
@@ -52,17 +52,17 @@ trait Colors extends StObject {
   
   var slidable: Boolean
   
-  var step: js.Any
+  var step: Any
   
-  var tip: js.Any
+  var tip: Any
   
-  var title: js.Any
+  var title: Any
   
   var `type`: String
   
   var updateAutoRender: Boolean
   
-  var value: js.Any
+  var value: Any
   
   var visible: Boolean
   
@@ -75,13 +75,13 @@ object Colors {
   inline def apply(
     animate: Boolean,
     animateOption: Appear,
-    background: js.Any,
+    background: Any,
     capture: Boolean,
-    colors: js.Array[js.Any],
-    container: js.Any,
+    colors: js.Array[Any],
+    container: Any,
     defaultCfg: Handler,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -89,19 +89,19 @@ object Colors {
     layout: String,
     locationType: String,
     max: Double,
-    maxHeight: js.Any,
-    maxWidth: js.Any,
+    maxHeight: Any,
+    maxWidth: Any,
     min: Double,
     name: String,
     offsetX: Double,
     offsetY: Double,
     slidable: Boolean,
-    step: js.Any,
-    tip: js.Any,
-    title: js.Any,
+    step: Any,
+    tip: Any,
+    title: Any,
     `type`: String,
     updateAutoRender: Boolean,
-    value: js.Any,
+    value: Any,
     visible: Boolean,
     x: Double,
     y: Double
@@ -117,21 +117,21 @@ object Colors {
     
     inline def setAnimateOption(value: Appear): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Any*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: Handler): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -147,9 +147,9 @@ object Colors {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    inline def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    inline def setMaxWidth(value: js.Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
@@ -161,17 +161,17 @@ object Colors {
     
     inline def setSlidable(value: Boolean): Self = StObject.set(x, "slidable", value.asInstanceOf[js.Any])
     
-    inline def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    inline def setTip(value: js.Any): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+    inline def setTip(value: Any): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

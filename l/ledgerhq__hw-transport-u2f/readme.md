@@ -10,10 +10,10 @@ Ledger Hardware Wallet Web implementation of the communication layer, using U2F 
 | ------------------ | :-------------: |
 | Full name          | @ledgerhq/hw-transport-u2f |
 | Keywords           | Ledger, LedgerWallet, U2F, browser, web, NanoS, Blue, Hardware Wallet |
-| # releases         | 96 |
-| # dependents       | 133 |
-| # downloads        | 700284 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 211013.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/LedgerHQ/ledgerjs)

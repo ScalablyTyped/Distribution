@@ -1,6 +1,6 @@
 package typings.reactAliceCarousel.anon
 
-import typings.reactAliceCarousel.typesMod.TransformationSetItem
+import typings.reactAliceCarousel.typesMod.ItemCoords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,9 @@ trait ReadonlyState extends StObject {
   
   val autoWidth: Boolean
   
-  val clones: js.Array[js.Any]
+  val canUseDom: Boolean
+  
+  val clones: js.Array[Any]
   
   val fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
@@ -50,7 +52,7 @@ trait ReadonlyState extends StObject {
   
   val swipeShiftValue: Double
   
-  val transformationSet: js.Array[TransformationSetItem]
+  val transformationSet: js.Array[ItemCoords]
   
   val transition: String
   
@@ -61,7 +63,8 @@ object ReadonlyState {
   inline def apply(
     activeIndex: Double,
     autoWidth: Boolean,
-    clones: js.Array[js.Any],
+    canUseDom: Boolean,
+    clones: js.Array[Any],
     fadeoutAnimationProcessing: Boolean,
     initialStageHeight: Double,
     isAutoPlayCanceledOnAction: Boolean,
@@ -76,11 +79,11 @@ object ReadonlyState {
     swipeLimitMax: Double,
     swipeLimitMin: Double,
     swipeShiftValue: Double,
-    transformationSet: js.Array[TransformationSetItem],
+    transformationSet: js.Array[ItemCoords],
     transition: String,
     translate3d: Double
   ): ReadonlyState = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], clones = clones.asInstanceOf[js.Any], fadeoutAnimationProcessing = fadeoutAnimationProcessing.asInstanceOf[js.Any], initialStageHeight = initialStageHeight.asInstanceOf[js.Any], isAutoPlayCanceledOnAction = isAutoPlayCanceledOnAction.asInstanceOf[js.Any], isAutoPlaying = isAutoPlaying.asInstanceOf[js.Any], isStageContentPartial = isStageContentPartial.asInstanceOf[js.Any], itemsCount = itemsCount.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], itemsOffset = itemsOffset.asInstanceOf[js.Any], stageContentWidth = stageContentWidth.asInstanceOf[js.Any], stageWidth = stageWidth.asInstanceOf[js.Any], swipeAllowedPositionMax = swipeAllowedPositionMax.asInstanceOf[js.Any], swipeLimitMax = swipeLimitMax.asInstanceOf[js.Any], swipeLimitMin = swipeLimitMin.asInstanceOf[js.Any], swipeShiftValue = swipeShiftValue.asInstanceOf[js.Any], transformationSet = transformationSet.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], translate3d = translate3d.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], canUseDom = canUseDom.asInstanceOf[js.Any], clones = clones.asInstanceOf[js.Any], fadeoutAnimationProcessing = fadeoutAnimationProcessing.asInstanceOf[js.Any], initialStageHeight = initialStageHeight.asInstanceOf[js.Any], isAutoPlayCanceledOnAction = isAutoPlayCanceledOnAction.asInstanceOf[js.Any], isAutoPlaying = isAutoPlaying.asInstanceOf[js.Any], isStageContentPartial = isStageContentPartial.asInstanceOf[js.Any], itemsCount = itemsCount.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], itemsOffset = itemsOffset.asInstanceOf[js.Any], stageContentWidth = stageContentWidth.asInstanceOf[js.Any], stageWidth = stageWidth.asInstanceOf[js.Any], swipeAllowedPositionMax = swipeAllowedPositionMax.asInstanceOf[js.Any], swipeLimitMax = swipeLimitMax.asInstanceOf[js.Any], swipeLimitMin = swipeLimitMin.asInstanceOf[js.Any], swipeShiftValue = swipeShiftValue.asInstanceOf[js.Any], transformationSet = transformationSet.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], translate3d = translate3d.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyState]
   }
   
@@ -94,9 +97,11 @@ object ReadonlyState {
     
     inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
-    inline def setClones(value: js.Array[js.Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    inline def setCanUseDom(value: Boolean): Self = StObject.set(x, "canUseDom", value.asInstanceOf[js.Any])
     
-    inline def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))
+    inline def setClones(value: js.Array[Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    
+    inline def setClonesVarargs(value: Any*): Self = StObject.set(x, "clones", js.Array(value*))
     
     inline def setFadeoutAnimationIndex(value: Double): Self = StObject.set(x, "fadeoutAnimationIndex", value.asInstanceOf[js.Any])
     
@@ -142,9 +147,9 @@ object ReadonlyState {
     
     inline def setSwipeShiftValue(value: Double): Self = StObject.set(x, "swipeShiftValue", value.asInstanceOf[js.Any])
     
-    inline def setTransformationSet(value: js.Array[TransformationSetItem]): Self = StObject.set(x, "transformationSet", value.asInstanceOf[js.Any])
+    inline def setTransformationSet(value: js.Array[ItemCoords]): Self = StObject.set(x, "transformationSet", value.asInstanceOf[js.Any])
     
-    inline def setTransformationSetVarargs(value: TransformationSetItem*): Self = StObject.set(x, "transformationSet", js.Array(value :_*))
+    inline def setTransformationSetVarargs(value: ItemCoords*): Self = StObject.set(x, "transformationSet", js.Array(value*))
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

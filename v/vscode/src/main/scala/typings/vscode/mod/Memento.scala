@@ -26,10 +26,20 @@ trait Memento extends StObject {
   def get[T](key: String, defaultValue: T): T = js.native
   
   /**
+    * Returns the stored keys.
+    *
+    * @return The stored keys.
+    */
+  def keys(): js.Array[String] = js.native
+  
+  /**
     * Store a value. The value must be JSON-stringifyable.
+    *
+    * *Note* that using `undefined` as value removes the key from the underlying
+    * storage.
     *
     * @param key A string.
     * @param value A value. MUST not contain cyclic references.
     */
-  def update(key: String, value: js.Any): Thenable[Unit] = js.native
+  def update(key: String, value: Any): Thenable[Unit] = js.native
 }

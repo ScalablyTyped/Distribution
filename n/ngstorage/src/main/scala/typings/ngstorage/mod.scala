@@ -18,23 +18,23 @@ object mod {
       
       def set[T](key: String, value: T): T | Boolean
       
-      def setDeserializer(deserializer: js.Function1[/* value */ String, js.Any]): Unit
+      def setDeserializer(deserializer: js.Function1[/* value */ String, Any]): Unit
       
       def setKeyPrefix(prefix: String): Unit
       
-      def setSerializer(serializer: js.Function1[/* value */ js.Any, String]): Unit
+      def setSerializer(serializer: js.Function1[/* value */ Any, String]): Unit
       
       def supported(): Boolean
     }
     object StorageProvider {
       
       inline def apply(
-        get: String => js.Any | Boolean,
+        get: String => Any | Boolean,
         remove: String => Unit,
-        set: (String, js.Any) => js.Any | Boolean,
-        setDeserializer: js.Function1[/* value */ String, js.Any] => Unit,
+        set: (String, Any) => Any | Boolean,
+        setDeserializer: js.Function1[/* value */ String, Any] => Unit,
         setKeyPrefix: String => Unit,
-        setSerializer: js.Function1[/* value */ js.Any, String] => Unit,
+        setSerializer: js.Function1[/* value */ Any, String] => Unit,
         supported: () => Boolean
       ): StorageProvider = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
@@ -43,17 +43,17 @@ object mod {
       
       extension [Self <: StorageProvider](x: Self) {
         
-        inline def setGet(value: String => js.Any | Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => Any | Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
         inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
         
-        inline def setSet(value: (String, js.Any) => js.Any | Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+        inline def setSet(value: (String, Any) => Any | Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
         
-        inline def setSetDeserializer(value: js.Function1[/* value */ String, js.Any] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
+        inline def setSetDeserializer(value: js.Function1[/* value */ String, Any] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
         
         inline def setSetKeyPrefix(value: String => Unit): Self = StObject.set(x, "setKeyPrefix", js.Any.fromFunction1(value))
         
-        inline def setSetSerializer(value: js.Function1[/* value */ js.Any, String] => Unit): Self = StObject.set(x, "setSerializer", js.Any.fromFunction1(value))
+        inline def setSetSerializer(value: js.Function1[/* value */ Any, String] => Unit): Self = StObject.set(x, "setSerializer", js.Any.fromFunction1(value))
         
         inline def setSupported(value: () => Boolean): Self = StObject.set(x, "supported", js.Any.fromFunction0(value))
       }
@@ -65,7 +65,7 @@ object mod {
          with /**
       * Access to the properties of the store.
       */
-    /* key */ StringDictionary[js.Any] {
+    /* key */ StringDictionary[Any] {
       
       @JSName("$apply")
       def $apply(): Unit = js.native

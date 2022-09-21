@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CategoryFilterAppender
-  extends StObject
-     with Appender {
+trait CategoryFilterAppender extends StObject {
   
   // the name of the appender to filter. see https://log4js-node.github.io/log4js-node/layouts.html
   var appender: js.UndefOr[String] = js.undefined
@@ -35,7 +33,7 @@ object CategoryFilterAppender {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setType(value: categoryFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

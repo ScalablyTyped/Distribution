@@ -5,22 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A skin instance is responsible for generating the matrix palette that is used to
-  * skin vertices from object space to world space.
-  * @property bones - An array of nodes representing each bone in this skin instance.
-  * @param skin - The skin that will provide the inverse bind pose matrices to
-  * generate the final matrix palette.
+  * A skin instance is responsible for generating the matrix palette that is used to skin vertices
+  * from object space to world space.
   */
 @JSGlobal("pc.SkinInstance")
 @js.native
-class SkinInstance protected ()
-  extends StObject
-     with typings.playcanvas.pc.SkinInstance {
-  def this(skin: typings.playcanvas.pc.Skin) = this()
-  
+open class SkinInstance protected ()
+  extends typings.playcanvas.mod.SkinInstance {
   /**
-    * An array of nodes representing each bone in this skin instance.
+    * Create a new SkinInstance instance.
+    *
+    * @param {Skin} skin - The skin that will provide the inverse bind pose matrices to generate
+    * the final matrix palette.
     */
-  /* CompleteClass */
-  var bones: js.Array[typings.playcanvas.pc.GraphNode] = js.native
+  def this(skin: typings.playcanvas.mod.Skin) = this()
 }

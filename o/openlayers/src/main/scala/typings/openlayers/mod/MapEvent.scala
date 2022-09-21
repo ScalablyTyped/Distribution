@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "MapEvent")
 @js.native
-class MapEvent protected () extends Event {
+open class MapEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted as map events are instances of this type.

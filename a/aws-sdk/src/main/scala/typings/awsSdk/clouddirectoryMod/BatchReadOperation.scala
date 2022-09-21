@@ -51,6 +51,9 @@ trait BatchReadOperation extends StObject {
     */
   var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPaths] = js.undefined
   
+  /**
+    * Lists parent objects that are associated with a given object in pagination fashion.
+    */
   var ListObjectParents: js.UndefOr[BatchListObjectParents] = js.undefined
   
   /**

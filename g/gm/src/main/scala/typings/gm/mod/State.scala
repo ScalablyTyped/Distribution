@@ -9,9 +9,8 @@ import typings.gm.gmStrings.`private`
 import typings.gm.gmStrings.center_
 import typings.gm.gmStrings.shared
 import typings.gm.gmStrings.topleft
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.PassThrough
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,11 +71,8 @@ trait State extends StObject {
   def color(callback: GetterCallback[Double]): State = js.native
   def color(opts: GetterOptions, callback: GetterCallback[Double]): State = js.native
   
+  def colorMap(`type`: shared | `private`): State = js.native
   def colorMap(`type`: String): State = js.native
-  @JSName("colorMap")
-  def colorMap_private(`type`: `private`): State = js.native
-  @JSName("colorMap")
-  def colorMap_shared(`type`: shared): State = js.native
   
   def colorize(red: Double, green: Double, blue: Double): State = js.native
   
@@ -363,11 +359,8 @@ trait State extends StObject {
   def outputDirectory(directory: String): State = js.native
   
   def page(width: Double, height: Double): State = js.native
+  def page(width: Double, height: Double, arg: Percentsign | Exclamationmark | Lessthansign | Greaterthansign): State = js.native
   def page(width: Double, height: Double, arg: String): State = js.native
-  def page(width: Double, height: Double, arg: Exclamationmark): State = js.native
-  def page(width: Double, height: Double, arg: Greaterthansign): State = js.native
-  def page(width: Double, height: Double, arg: Lessthansign): State = js.native
-  def page(width: Double, height: Double, arg: Percentsign): State = js.native
   
   def paint(radius: Double): State = js.native
   
@@ -513,35 +506,25 @@ trait State extends StObject {
     height: Double,
     outName: String,
     quality: Double,
+    align: topleft | center_,
+    callback: WriteCallback
+  ): State = js.native
+  def thumb(
+    width: Double,
+    height: Double,
+    outName: String,
+    quality: Double,
     align: String,
     callback: WriteCallback
   ): State = js.native
   def thumb(width: Double, height: Double, outName: String, quality: Double, callback: WriteCallback): State = js.native
-  @JSName("thumb")
-  def thumb_center(
-    width: Double,
-    height: Double,
-    outName: String,
-    quality: Double,
-    align: center_,
-    callback: WriteCallback
-  ): State = js.native
-  @JSName("thumb")
-  def thumb_topleft(
-    width: Double,
-    height: Double,
-    outName: String,
-    quality: Double,
-    align: topleft,
-    callback: WriteCallback
-  ): State = js.native
   
   def tile(filename: String): State = js.native
   
   def title(title: String): State = js.native
   
-  def toBuffer(callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, js.Any]): PassThrough = js.native
-  def toBuffer(format: String, callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, js.Any]): PassThrough = js.native
+  def toBuffer(callback: js.Function2[/* err */ js.Error | Null, /* buffer */ Buffer, Any]): PassThrough = js.native
+  def toBuffer(format: String, callback: js.Function2[/* err */ js.Error | Null, /* buffer */ Buffer, Any]): PassThrough = js.native
   
   def transform(color: String): State = js.native
   

@@ -1,16 +1,10 @@
 package typings.googleapis
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
-import typings.googleAuthLibrary.jwtclientMod.JWTOptions
-import typings.googleAuthLibrary.mod.GoogleAuth
-import typings.googleapis.anon.ReadonlyEndpoint
-import typings.googleapis.anon.TypeofOAuth2Client
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleapis.apisMod.GeneratedAPIs
 import typings.googleapisCommon.apiMod.GlobalOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +13,9 @@ object googleapisMod {
   
   @JSImport("googleapis/build/src/googleapis", "AuthPlus")
   @js.native
-  class AuthPlus () extends GoogleAuth {
-    def this(opts: GoogleAuthOptions) = this()
-    
-    var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
-    
-    var JWT: Instantiable1[/* options */ JWTOptions, typings.googleAuthLibrary.mod.JWT] = js.native
-    
-    var OAuth2: TypeofOAuth2Client = js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -45,16 +34,17 @@ object googleapisMod {
     * GoogleApis constructor.
     *
     * @example
+    * ```js
     * const GoogleApis = require('googleapis').GoogleApis;
     * const google = new GoogleApis();
+    * ```
     *
-    * @class GoogleApis
-    * @param {Object} [options] Configuration options.
+    * @param options - Configuration options.
     */
-  class GoogleApis () extends GeneratedAPIs {
+  open class GoogleApis () extends GeneratedAPIs {
     def this(options: GlobalOptions) = this()
     
-    /* private */ var _discovery: js.Any = js.native
+    /* private */ var _discovery: Any = js.native
     
     var _options: GlobalOptions = js.native
     
@@ -62,48 +52,42 @@ object googleapisMod {
       * Add APIs endpoints to googleapis object
       * E.g. googleapis.drive and googleapis.datastore
       *
-      * @name GoogleApis#addAPIs
-      * @method
-      * @param {Object} apis Apis to be added to this GoogleApis instance.
-      * @private
+      * @param apisToAdd - Apis to be added to this GoogleApis instance.
       */
-    /* private */ var addAPIs: js.Any = js.native
+    /* private */ var addAPIs: Any = js.native
     
-    var auth: AuthPlus = js.native
+    var auth: typings.googleapisCommon.mod.AuthPlus = js.native
     
     /**
       * Dynamically generate an apis object that can provide Endpoint objects for
       * the discovered APIs.
       *
       * @example
+      * ```js
       * const {google} = require('googleapis');
-      * const discoveryUrl =
-      * 'https://myapp.appspot.com/_ah/api/discovery/v1/apis/';
+      * const discoveryUrl = 'https://myapp.appspot.com/_ah/api/discovery/v1/apis/';
       * google.discover(discoveryUrl, function (err) {
       *   const someapi = google.someapi('v1');
       * });
+      * ```
       *
-      * @name GoogleApis#discover
-      * @method
-      * @param url Url to the discovery service for a set of APIs. e.g.,
-      * https://www.googleapis.com/discovery/v1/apis
-      * @param {Function} callback Callback function.
+      * @param url - Url to the discovery service for a set of APIs. e.g. https://www.googleapis.com/discovery/v1/apis
+      * @param callback - Callback function.
       */
     def discover(url: String): js.Promise[Unit] = js.native
-    def discover(url: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def discover(url: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * Dynamically generate an Endpoint object from a discovery doc.
       *
-      * @param path Url or file path to discover doc for a single API.
-      * @param Options to configure the Endpoint object generated from the
-      * discovery doc.
+      * @param path - Url or file path to discover doc for a single API.
+      * @param options - Options to configure the Endpoint object generated from the discovery doc.
       * @returns A promise that resolves with the configured endpoint.
       */
-    def discoverAPI(apiPath: String): js.Promise[ReadonlyEndpoint] = js.native
-    def discoverAPI(apiPath: String, options: js.Object): js.Promise[ReadonlyEndpoint] = js.native
+    def discoverAPI[T](apiPath: String): js.Promise[T] = js.native
+    def discoverAPI[T](apiPath: String, options: js.Object): js.Promise[T] = js.native
     
-    /* private */ var discoverAsync: js.Any = js.native
+    /* private */ var discoverAsync: Any = js.native
     
     /**
       * Obtain a Map of supported APIs, along with included API versions.
@@ -113,7 +97,7 @@ object googleapisMod {
     /**
       * Set options.
       *
-      * @param  {Object} [options] Configuration options.
+      * @param options - Configuration options.
       */
     def options(): Unit = js.native
     def options(options: GlobalOptions): Unit = js.native

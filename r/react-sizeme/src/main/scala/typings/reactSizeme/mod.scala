@@ -4,7 +4,9 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.reactSizeme.anon.Height
+import typings.reactSizeme.reactSizemeStrings.`object`
 import typings.reactSizeme.reactSizemeStrings.debounce
+import typings.reactSizeme.reactSizemeStrings.scroll
 import typings.reactSizeme.reactSizemeStrings.size
 import typings.reactSizeme.reactSizemeStrings.throttle
 import typings.std.Exclude
@@ -36,14 +38,14 @@ object mod {
   
   @JSImport("react-sizeme", "SizeMe")
   @js.native
-  class SizeMe protected ()
-    extends Component[SizeMeRenderProps, js.Object, js.Any] {
+  open class SizeMe protected ()
+    extends Component[SizeMeRenderProps, js.Object, Any] {
     def this(props: SizeMeRenderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeMeRenderProps, context: js.Any) = this()
+    def this(props: SizeMeRenderProps, context: Any) = this()
   }
   
   @JSImport("react-sizeme", "noPlaceholders")
@@ -72,8 +74,6 @@ object mod {
     
     var monitorHeight: js.UndefOr[Boolean] = js.undefined
     
-    var monitorPosition: js.UndefOr[Boolean] = js.undefined
-    
     var monitorWidth: js.UndefOr[Boolean] = js.undefined
     
     var noPlaceholder: js.UndefOr[Boolean] = js.undefined
@@ -81,6 +81,8 @@ object mod {
     var refreshMode: js.UndefOr[throttle | debounce] = js.undefined
     
     var refreshRate: js.UndefOr[Double] = js.undefined
+    
+    var resizeDetectorStrategy: js.UndefOr[scroll | `object`] = js.undefined
   }
   object SizeMeOptions {
     
@@ -94,10 +96,6 @@ object mod {
       inline def setMonitorHeight(value: Boolean): Self = StObject.set(x, "monitorHeight", value.asInstanceOf[js.Any])
       
       inline def setMonitorHeightUndefined: Self = StObject.set(x, "monitorHeight", js.undefined)
-      
-      inline def setMonitorPosition(value: Boolean): Self = StObject.set(x, "monitorPosition", value.asInstanceOf[js.Any])
-      
-      inline def setMonitorPositionUndefined: Self = StObject.set(x, "monitorPosition", js.undefined)
       
       inline def setMonitorWidth(value: Boolean): Self = StObject.set(x, "monitorWidth", value.asInstanceOf[js.Any])
       
@@ -114,6 +112,10 @@ object mod {
       inline def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
       
       inline def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
+      
+      inline def setResizeDetectorStrategy(value: scroll | `object`): Self = StObject.set(x, "resizeDetectorStrategy", value.asInstanceOf[js.Any])
+      
+      inline def setResizeDetectorStrategyUndefined: Self = StObject.set(x, "resizeDetectorStrategy", js.undefined)
     }
   }
   

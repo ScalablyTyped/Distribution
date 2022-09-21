@@ -33,6 +33,6 @@ object DescribeTrailsRequest {
     
     inline def setTrailNameListUndefined: Self = StObject.set(x, "trailNameList", js.undefined)
     
-    inline def setTrailNameListVarargs(value: String*): Self = StObject.set(x, "trailNameList", js.Array(value :_*))
+    inline def setTrailNameListVarargs(value: String*): Self = StObject.set(x, "trailNameList", js.Array(value*))
   }
 }

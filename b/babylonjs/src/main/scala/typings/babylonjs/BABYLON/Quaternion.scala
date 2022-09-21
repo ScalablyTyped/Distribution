@@ -81,7 +81,7 @@ trait Quaternion extends StObject {
   /**
     * Check if two quaternions are equals
     * @param otherQuaternion defines the second operand
-    * @return true if the current quaternion and the given one coordinates are strictly equals
+    * @returns true if the current quaternion and the given one coordinates are strictly equals
     */
   def equals(otherQuaternion: DeepImmutable[Quaternion]): Boolean = js.native
   
@@ -114,10 +114,28 @@ trait Quaternion extends StObject {
   def getHashCode(): Double = js.native
   
   /**
+    * Returns the inverse of the current quaternion
+    * @returns a new quaternion
+    */
+  def invert(): Quaternion = js.native
+  
+  /**
+    * Invert in place the current quaternion
+    * @returns this quaternion
+    */
+  def invertInPlace(): Quaternion = js.native
+  
+  /**
     * Gets length of current quaternion
     * @returns the quaternion length (float)
     */
   def length(): Double = js.native
+  
+  /**
+    * Gets squared length of current quaternion
+    * @returns the quaternion length (float)
+    */
+  def lengthSquared(): Double = js.native
   
   /**
     * Multiplies two quaternions
@@ -146,6 +164,12 @@ trait Quaternion extends StObject {
     * @returns the current updated quaternion
     */
   def normalize(): Quaternion = js.native
+  
+  /**
+    * Normalize a copy of the current quaternion
+    * @returns the normalized quaternion
+    */
+  def normalizeToNew(): Quaternion = js.native
   
   /**
     * Multiplies the current quaternion by a scale factor
@@ -195,17 +219,33 @@ trait Quaternion extends StObject {
   def subtract(other: Quaternion): Quaternion = js.native
   
   /**
+    * Subtract a quaternion to the current one
+    * @param other defines the quaternion to subtract
+    * @returns the current quaternion
+    */
+  def subtractInPlace(other: DeepImmutable[Quaternion]): Quaternion = js.native
+  
+  /**
+    * Stores from the starting index in the given array the Quaternion successive values
+    * @param array defines the array where to store the x,y,z,w components
+    * @param index defines an optional index in the target array to define where to start storing values
+    * @returns the current Quaternion object
+    */
+  def toArray(array: FloatArray): Quaternion = js.native
+  def toArray(array: FloatArray, index: Double): Quaternion = js.native
+  
+  /**
     * Returns a new Vector3 set with the Euler angles translated from the current quaternion
-    * @param order is a reserved parameter and is ignored for now
     * @returns a new Vector3 containing the Euler angles
+    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
     */
   def toEulerAngles(): Vector3 = js.native
-  def toEulerAngles(order: String): Vector3 = js.native
   
   /**
     * Sets the given vector3 "result" with the Euler angles translated from the current quaternion
     * @param result defines the vector which will be filled with the Euler angles
     * @returns the current unchanged quaternion
+    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
     */
   def toEulerAnglesToRef(result: Vector3): Quaternion = js.native
   

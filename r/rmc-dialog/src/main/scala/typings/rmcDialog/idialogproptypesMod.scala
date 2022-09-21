@@ -11,11 +11,11 @@ object idialogproptypesMod {
     
     var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var animation: js.UndefOr[js.Any] = js.undefined
+    var animation: js.UndefOr[Any] = js.undefined
     
     var bodyStyle: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -25,11 +25,11 @@ object idialogproptypesMod {
     
     var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[js.Any] = js.undefined
+    var maskAnimation: js.UndefOr[Any] = js.undefined
     
     var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskProps: js.UndefOr[js.Any] = js.undefined
+    var maskProps: js.UndefOr[Any] = js.undefined
     
     var maskStyle: js.UndefOr[js.Object] = js.undefined
     
@@ -37,7 +37,7 @@ object idialogproptypesMod {
     
     var onAnimateLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onClose: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -51,7 +51,7 @@ object idialogproptypesMod {
     
     var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var wrapProps: js.UndefOr[js.Any] = js.undefined
+    var wrapProps: js.UndefOr[Any] = js.undefined
     
     var wrapStyle: js.UndefOr[js.Object] = js.undefined
     
@@ -70,7 +70,7 @@ object idialogproptypesMod {
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -78,7 +78,7 @@ object idialogproptypesMod {
       
       inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -96,7 +96,7 @@ object idialogproptypesMod {
       
       inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      inline def setMaskAnimation(value: js.Any): Self = StObject.set(x, "maskAnimation", value.asInstanceOf[js.Any])
+      inline def setMaskAnimation(value: Any): Self = StObject.set(x, "maskAnimation", value.asInstanceOf[js.Any])
       
       inline def setMaskAnimationUndefined: Self = StObject.set(x, "maskAnimation", js.undefined)
       
@@ -104,7 +104,7 @@ object idialogproptypesMod {
       
       inline def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
       
-      inline def setMaskProps(value: js.Any): Self = StObject.set(x, "maskProps", value.asInstanceOf[js.Any])
+      inline def setMaskProps(value: Any): Self = StObject.set(x, "maskProps", value.asInstanceOf[js.Any])
       
       inline def setMaskPropsUndefined: Self = StObject.set(x, "maskProps", js.undefined)
       
@@ -122,7 +122,7 @@ object idialogproptypesMod {
       
       inline def setOnAnimateLeaveUndefined: Self = StObject.set(x, "onAnimateLeave", js.undefined)
       
-      inline def setOnClose(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* e */ Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -150,7 +150,7 @@ object idialogproptypesMod {
       
       inline def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
       
-      inline def setWrapProps(value: js.Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
+      inline def setWrapProps(value: Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
       
       inline def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
       

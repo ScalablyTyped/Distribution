@@ -4,39 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A client user is created under a client buyer and has restricted access to
-  * the Marketplace and certain other sections of the Authorized Buyers UI
-  * based on the role granted to the associated client buyer.  The only way a
-  * new client user can be created is via accepting an email invitation (see
-  * the accounts.clients.invitations.create method).  All fields are required
-  * unless otherwise specified.
-  */
 trait SchemaClientUser extends StObject {
   
   /**
-    * Numerical account ID of the client buyer with which the user is
-    * associated; the buyer must be a client of the current sponsor buyer. The
-    * value of this field is ignored in an update operation.
+    * Numerical account ID of the client buyer with which the user is associated; the buyer must be a client of the current sponsor buyer. The value of this field is ignored in an update operation.
     */
-  var clientAccountId: js.UndefOr[String] = js.undefined
+  var clientAccountId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * User&#39;s email address. The value of this field is ignored in an update
-    * operation.
+    * User's email address. The value of this field is ignored in an update operation.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The status of the client user.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The unique numerical ID of the client user that has accepted an
-    * invitation. The value of this field is ignored in an update operation.
+    * The unique numerical ID of the client user that has accepted an invitation. The value of this field is ignored in an update operation.
     */
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaClientUser {
   
@@ -49,17 +37,25 @@ object SchemaClientUser {
     
     inline def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
+    inline def setClientAccountIdNull: Self = StObject.set(x, "clientAccountId", null)
+    
     inline def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    
+    inline def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }

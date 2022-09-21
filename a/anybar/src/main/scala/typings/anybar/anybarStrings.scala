@@ -32,10 +32,22 @@ object anybarStrings {
   inline def exclamation: exclamation = "exclamation".asInstanceOf[exclamation]
   
   @js.native
+  sealed trait filled
+    extends StObject
+       with AnybarStatus
+  inline def filled: filled = "filled".asInstanceOf[filled]
+  
+  @js.native
   sealed trait green
     extends StObject
        with AnybarStatus
   inline def green: green = "green".asInstanceOf[green]
+  
+  @js.native
+  sealed trait hollow
+    extends StObject
+       with AnybarStatus
+  inline def hollow: hollow = "hollow".asInstanceOf[hollow]
   
   @js.native
   sealed trait orange

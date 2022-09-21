@@ -29,10 +29,7 @@ trait AltCallback extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * The *part* parameter specifies a comma-separated list of commentThread resource properties that the API response will include. You must at least include the snippet part in the
-    * parameter value since that part contains all of the properties that the API request can update.
-    */
+  /** The *part* parameter identifies the properties that the API response will include. Set the parameter value to snippet. The snippet part has a quota cost of 2 units. */
   var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
@@ -89,7 +86,7 @@ object AltCallback {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

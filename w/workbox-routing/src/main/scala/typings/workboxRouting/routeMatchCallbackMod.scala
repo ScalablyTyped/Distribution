@@ -13,7 +13,7 @@ object routeMatchCallbackMod {
   trait RouteMatchCallbackOptions extends StObject {
     
     var event: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ] = js.undefined
     
     var request: js.UndefOr[Request] = js.undefined
@@ -30,7 +30,7 @@ object routeMatchCallbackMod {
     extension [Self <: RouteMatchCallbackOptions](x: Self) {
       
       inline def setEvent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)

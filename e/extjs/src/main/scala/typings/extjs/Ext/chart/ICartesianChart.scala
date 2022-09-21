@@ -12,7 +12,7 @@ trait ICartesianChart
      with ISeries {
   
   /** [Config Option] (String/String[]) */
-  var axis: js.UndefOr[js.Any] = js.undefined
+  var axis: js.UndefOr[Any] = js.undefined
   
   /** [Method] Iterates over a given record s values for each of this series s yFields executing a given function for each value
     * @param record Ext.data.Model
@@ -22,8 +22,8 @@ trait ICartesianChart
   var eachYValue: js.UndefOr[
     js.Function3[
       /* record */ js.UndefOr[IModel], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -52,7 +52,7 @@ trait ICartesianChart
   var xField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var yField: js.UndefOr[js.Any] = js.undefined
+  var yField: js.UndefOr[Any] = js.undefined
 }
 object ICartesianChart {
   
@@ -63,12 +63,12 @@ object ICartesianChart {
   
   extension [Self <: ICartesianChart](x: Self) {
     
-    inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     inline def setEachYValue(
-      value: (/* record */ js.UndefOr[IModel], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* record */ js.UndefOr[IModel], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "eachYValue", js.Any.fromFunction3(value))
     
     inline def setEachYValueUndefined: Self = StObject.set(x, "eachYValue", js.undefined)
@@ -93,7 +93,7 @@ object ICartesianChart {
     
     inline def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
     
-    inline def setYField(value: js.Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+    inline def setYField(value: Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
     
     inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
   }

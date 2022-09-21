@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This creates a Set that may check the types of the values.
   * @param {string=} type if supplied, this must be one of: 'number' or 'string' for the key type.
   */
-class Set[T] () extends Iterable[T] {
+open class Set[T] () extends Iterable[T] {
   def this(`type`: String) = this()
   /**
     * This creates a Set that checks the type of the values.

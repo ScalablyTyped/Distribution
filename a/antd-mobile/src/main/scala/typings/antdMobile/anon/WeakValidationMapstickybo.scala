@@ -1,0 +1,413 @@
+package typings.antdMobile.anon
+
+import typings.antdMobile.antdMobileStrings.`additions removals`
+import typings.antdMobile.antdMobileStrings.`additions text`
+import typings.antdMobile.antdMobileStrings.`inline`
+import typings.antdMobile.antdMobileStrings.`removals additions`
+import typings.antdMobile.antdMobileStrings.`removals text`
+import typings.antdMobile.antdMobileStrings.`text additions`
+import typings.antdMobile.antdMobileStrings.`text removals`
+import typings.antdMobile.antdMobileStrings.additions
+import typings.antdMobile.antdMobileStrings.all
+import typings.antdMobile.antdMobileStrings.ascending
+import typings.antdMobile.antdMobileStrings.assertive
+import typings.antdMobile.antdMobileStrings.both
+import typings.antdMobile.antdMobileStrings.copy
+import typings.antdMobile.antdMobileStrings.date
+import typings.antdMobile.antdMobileStrings.descending
+import typings.antdMobile.antdMobileStrings.dialog
+import typings.antdMobile.antdMobileStrings.execute
+import typings.antdMobile.antdMobileStrings.grammar
+import typings.antdMobile.antdMobileStrings.grid
+import typings.antdMobile.antdMobileStrings.horizontal
+import typings.antdMobile.antdMobileStrings.link
+import typings.antdMobile.antdMobileStrings.list
+import typings.antdMobile.antdMobileStrings.listbox
+import typings.antdMobile.antdMobileStrings.location
+import typings.antdMobile.antdMobileStrings.menu
+import typings.antdMobile.antdMobileStrings.mixed
+import typings.antdMobile.antdMobileStrings.move
+import typings.antdMobile.antdMobileStrings.none
+import typings.antdMobile.antdMobileStrings.off
+import typings.antdMobile.antdMobileStrings.other
+import typings.antdMobile.antdMobileStrings.page
+import typings.antdMobile.antdMobileStrings.polite
+import typings.antdMobile.antdMobileStrings.popup
+import typings.antdMobile.antdMobileStrings.removals
+import typings.antdMobile.antdMobileStrings.spelling
+import typings.antdMobile.antdMobileStrings.step
+import typings.antdMobile.antdMobileStrings.text
+import typings.antdMobile.antdMobileStrings.time
+import typings.antdMobile.antdMobileStrings.tree
+import typings.antdMobile.antdMobileStrings.vertical
+import typings.antdMobile.indexBarIndexBarMod.IndexBarRef
+import typings.react.mod.Booleanish
+import typings.react.mod.Key
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.react.mod.Validator
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined react.react.WeakValidationMap<{  sticky :boolean | undefined,   onIndexChange :(index : string): void | undefined,   children :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--sticky-offset-top', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/index-bar/index-bar.IndexBarRef>> */
+trait WeakValidationMapstickybo extends StObject {
+  
+  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
+  
+  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]] = js.undefined
+  
+  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.undefined
+  
+  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
+  
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
+  
+  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
+  
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
+  
+  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
+  
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-relevant`: js.UndefOr[
+    Validator[
+      js.UndefOr[
+        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`) | Null
+      ]
+    ]
+  ] = js.undefined
+  
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  
+  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
+  
+  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  
+  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
+  
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
+  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.undefined
+  
+  var onIndexChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* index */ String, Unit]) | Null]]] = js.undefined
+  
+  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[IndexBarRef]]]] = js.undefined
+  
+  var sticky: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  
+  var style: js.UndefOr[Validator[js.UndefOr[CSSPropertiesPartialRecorAspectRatio | Null]]] = js.undefined
+  
+  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+}
+object WeakValidationMapstickybo {
+  
+  inline def apply(): WeakValidationMapstickybo = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[WeakValidationMapstickybo]
+  }
+  
+  extension [Self <: WeakValidationMapstickybo](x: Self) {
+    
+    inline def `setAria-activedescendant`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+    
+    inline def `setAria-atomic`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+    
+    inline def `setAria-autocomplete`(value: Validator[js.UndefOr[none | `inline` | list | both | Null]]): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+    
+    inline def `setAria-busy`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+    
+    inline def `setAria-checked`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+    
+    inline def `setAria-colcount`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+    
+    inline def `setAria-colindex`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+    
+    inline def `setAria-colspan`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+    
+    inline def `setAria-controls`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+    
+    inline def `setAria-current`(value: Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+    
+    inline def `setAria-describedby`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-details`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+    
+    inline def `setAria-disabled`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+    
+    inline def `setAria-dropeffect`(value: Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+    
+    inline def `setAria-errormessage`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+    
+    inline def `setAria-expanded`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+    
+    inline def `setAria-flowto`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+    
+    inline def `setAria-grabbed`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+    
+    inline def `setAria-haspopup`(value: Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+    
+    inline def `setAria-hidden`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+    
+    inline def `setAria-invalid`(value: Validator[js.UndefOr[grammar | spelling | Boolean | Null]]): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+    
+    inline def `setAria-keyshortcuts`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+    
+    inline def `setAria-label`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+    
+    inline def `setAria-labelledby`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+    
+    inline def `setAria-level`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+    
+    inline def `setAria-live`(value: Validator[js.UndefOr[off | assertive | polite | Null]]): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+    
+    inline def `setAria-modal`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+    
+    inline def `setAria-multiline`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+    
+    inline def `setAria-multiselectable`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+    
+    inline def `setAria-orientation`(value: Validator[js.UndefOr[horizontal | vertical | Null]]): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+    
+    inline def `setAria-owns`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+    
+    inline def `setAria-placeholder`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+    
+    inline def `setAria-posinset`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+    
+    inline def `setAria-pressed`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+    
+    inline def `setAria-readonly`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+    
+    inline def `setAria-relevant`(
+      value: Validator[
+          js.UndefOr[
+            additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`) | Null
+          ]
+        ]
+    ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+    
+    inline def `setAria-required`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+    
+    inline def `setAria-roledescription`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+    
+    inline def `setAria-rowcount`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+    
+    inline def `setAria-rowindex`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+    
+    inline def `setAria-rowspan`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+    
+    inline def `setAria-selected`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+    
+    inline def `setAria-setsize`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+    
+    inline def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+    
+    inline def `setAria-valuemax`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+    
+    inline def `setAria-valuemin`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+    
+    inline def `setAria-valuenow`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+    
+    inline def `setAria-valuetext`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+    
+    inline def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setKey(value: Validator[js.UndefOr[Key | Null]]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setOnIndexChange(value: Validator[js.UndefOr[(js.Function1[/* index */ String, Unit]) | Null]]): Self = StObject.set(x, "onIndexChange", value.asInstanceOf[js.Any])
+    
+    inline def setOnIndexChangeUndefined: Self = StObject.set(x, "onIndexChange", js.undefined)
+    
+    inline def setRef(value: Validator[js.UndefOr[Null | Ref[IndexBarRef]]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setSticky(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    
+    inline def setStyle(value: Validator[js.UndefOr[CSSPropertiesPartialRecorAspectRatio | Null]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTabIndex(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+  }
+}

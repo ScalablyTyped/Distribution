@@ -13,8 +13,8 @@ object prioritySignalMod {
   - typings.signalsJs.isignalMod.ISignal because Already inherited
   - typings.signalsJs.iprioritysignalMod.IPrioritySignal because var conflicts: numListeners, valueClasses. Inlined addWithPriority, addOnceWithPriority */ @JSImport("signals.js/lib/org/osflash/signals/PrioritySignal", "PrioritySignal")
   @js.native
-  class PrioritySignal protected () extends Signal {
-    def this(valueClasses: js.Any*) = this()
+  open class PrioritySignal protected () extends Signal {
+    def this(valueClasses: Any*) = this()
     
     /**
       * @inheritDoc

@@ -16,7 +16,7 @@ trait TextRetrievalMode extends StObject {
   
   var IncludeHiddenText: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ViewType: WdViewType
   
@@ -31,7 +31,7 @@ object TextRetrievalMode {
     Duplicate: TextRetrievalMode,
     IncludeFieldCodes: Boolean,
     IncludeHiddenText: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     ViewType: WdViewType,
     WordDotTextRetrievalMode_typekey: TextRetrievalMode
   ): TextRetrievalMode = {
@@ -52,7 +52,7 @@ object TextRetrievalMode {
     
     inline def setIncludeHiddenText(value: Boolean): Self = StObject.set(x, "IncludeHiddenText", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setViewType(value: WdViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     

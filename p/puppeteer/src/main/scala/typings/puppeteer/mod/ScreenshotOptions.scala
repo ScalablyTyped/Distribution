@@ -4,6 +4,7 @@ import typings.puppeteer.puppeteerStrings.base64
 import typings.puppeteer.puppeteerStrings.binary
 import typings.puppeteer.puppeteerStrings.jpeg
 import typings.puppeteer.puppeteerStrings.png
+import typings.puppeteer.puppeteerStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,43 +12,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScreenshotOptions extends StObject {
   
   /**
-    * An object which specifies clipping region of the page.
+    * Capture the screenshot beyond the viewport.
+    * @defaultValue `true`
     */
-  var clip: js.UndefOr[BoundingBox] = js.undefined
+  var captureBeyondViewport: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The encoding of the image, can be either base64 or binary.
-    * @default binary
+    * An object which specifies the clipping region of the page.
+    */
+  var clip: js.UndefOr[ScreenshotClip] = js.undefined
+  
+  /**
+    * Encoding of the image.
+    * @defaultValue `binary`
     */
   var encoding: js.UndefOr[base64 | binary] = js.undefined
   
   /**
-    * When true, takes a screenshot of the full scrollable page.
-    * @default false
+    * Capture the screenshot from the surface, rather than the view.
+    * @defaultValue `true`
+    */
+  var fromSurface: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, takes a screenshot of the full page.
+    * @defaultValue `false`
     */
   var fullPage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Hides default white background and allows capturing screenshots with transparency.
-    * @default false
+    * @defaultValue `false`
     */
   var omitBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The file path to save the image to. The screenshot type will be inferred from file extension.
-    * If `path` is a relative path, then it is resolved relative to current working directory.
-    * If no path is provided, the image won't be saved to the disk.
+    * The file path to save the image to. The screenshot type will be inferred
+    * from file extension. If path is a relative path, then it is resolved
+    * relative to current working directory. If no path is provided, the image
+    * won't be saved to the disk.
     */
   var path: js.UndefOr[String] = js.undefined
   
-  /** The quality of the image, between 0-100. Not applicable to png images. */
+  /**
+    * Quality of the image, between 0-100. Not applicable to `png` images.
+    */
   var quality: js.UndefOr[Double] = js.undefined
   
   /**
-    * The screenshot type.
-    * @default png
+    * @defaultValue `png`
     */
-  var `type`: js.UndefOr[jpeg | png] = js.undefined
+  var `type`: js.UndefOr[png | jpeg | webp] = js.undefined
 }
 object ScreenshotOptions {
   
@@ -58,13 +73,21 @@ object ScreenshotOptions {
   
   extension [Self <: ScreenshotOptions](x: Self) {
     
-    inline def setClip(value: BoundingBox): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setCaptureBeyondViewport(value: Boolean): Self = StObject.set(x, "captureBeyondViewport", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureBeyondViewportUndefined: Self = StObject.set(x, "captureBeyondViewport", js.undefined)
+    
+    inline def setClip(value: ScreenshotClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     inline def setEncoding(value: base64 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFromSurface(value: Boolean): Self = StObject.set(x, "fromSurface", value.asInstanceOf[js.Any])
+    
+    inline def setFromSurfaceUndefined: Self = StObject.set(x, "fromSurface", js.undefined)
     
     inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
     
@@ -82,7 +105,7 @@ object ScreenshotOptions {
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    inline def setType(value: jpeg | png): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: png | jpeg | webp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -1,22 +1,17 @@
 package typings.mysql.mod
 
 import typings.mysql.mysqlStrings.authenticated
-import typings.mysql.mysqlStrings.connect
 import typings.mysql.mysqlStrings.connected
 import typings.mysql.mysqlStrings.disconnected
-import typings.mysql.mysqlStrings.drain
-import typings.mysql.mysqlStrings.end
-import typings.mysql.mysqlStrings.enqueue
-import typings.mysql.mysqlStrings.error
-import typings.mysql.mysqlStrings.fields
 import typings.mysql.mysqlStrings.protocol_error
+import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Connection
-  extends StObject
+  extends EventEmitter
      with EscapeFunctions {
   
   def beginTransaction(): Unit = js.native
@@ -38,18 +33,18 @@ trait Connection
   var config: ConnectionConfig = js.native
   
   def connect(): Unit = js.native
-  def connect(callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, Unit]): Unit = js.native
-  def connect(options: js.Any): Unit = js.native
-  def connect(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, Unit]): Unit = js.native
+  def connect(callback: js.Function2[/* err */ MysqlError, /* repeated */ Any, Unit]): Unit = js.native
+  def connect(options: Any): Unit = js.native
+  def connect(options: Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ Any, Unit]): Unit = js.native
   
   def createQuery(options: String): Query = js.native
   def createQuery(options: String, callback: queryCallback): Query = js.native
-  def createQuery(options: String, values: js.Any): Query = js.native
-  def createQuery(options: String, values: js.Any, callback: queryCallback): Query = js.native
+  def createQuery(options: String, values: Any): Query = js.native
+  def createQuery(options: String, values: Any, callback: queryCallback): Query = js.native
   def createQuery(options: QueryOptions): Query = js.native
   def createQuery(options: QueryOptions, callback: queryCallback): Query = js.native
-  def createQuery(options: QueryOptions, values: js.Any): Query = js.native
-  def createQuery(options: QueryOptions, values: js.Any, callback: queryCallback): Query = js.native
+  def createQuery(options: QueryOptions, values: Any): Query = js.native
+  def createQuery(options: QueryOptions, values: Any, callback: queryCallback): Query = js.native
   def createQuery(query: Query): Query = js.native
   @JSName("createQuery")
   var createQuery_Original: QueryFunction = js.native
@@ -67,35 +62,7 @@ trait Connection
     */
   def end(): Unit = js.native
   def end(callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Unit = js.native
-  def end(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Unit = js.native
-  
-  /**
-    * Set handler to be run on a certain event.
-    */
-  def on(ev: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Connection = js.native
-  @JSName("on")
-  def on_connect(ev: connect, callback: js.Function0[Unit]): Connection = js.native
-  @JSName("on")
-  def on_drain(ev: drain, callback: js.Function0[Unit]): Connection = js.native
-  /**
-    * Set handler to be run when the connection is closed.
-    */
-  @JSName("on")
-  def on_end(ev: end, callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Connection = js.native
-  /**
-    * Set handler to be run when a callback has been queued to wait for an
-    * available connection.
-    */
-  // tslint:disable-next-line:unified-signatures
-  @JSName("on")
-  def on_enqueue(ev: enqueue, callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Connection = js.native
-  /**
-    * Set handler to be run when a a fatal error occurs.
-    */
-  @JSName("on")
-  def on_error(ev: error, callback: js.Function1[/* err */ MysqlError, Unit]): Connection = js.native
-  @JSName("on")
-  def on_fields(ev: fields, callback: js.Function1[/* fields */ js.Array[js.Any], Unit]): Connection = js.native
+  def end(options: Any, callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Unit = js.native
   
   /**
     * Pause the connection. No more 'result' events will fire until resume() is
@@ -111,12 +78,12 @@ trait Connection
   
   def query(options: String): Query = js.native
   def query(options: String, callback: queryCallback): Query = js.native
-  def query(options: String, values: js.Any): Query = js.native
-  def query(options: String, values: js.Any, callback: queryCallback): Query = js.native
+  def query(options: String, values: Any): Query = js.native
+  def query(options: String, values: Any, callback: queryCallback): Query = js.native
   def query(options: QueryOptions): Query = js.native
   def query(options: QueryOptions, callback: queryCallback): Query = js.native
-  def query(options: QueryOptions, values: js.Any): Query = js.native
-  def query(options: QueryOptions, values: js.Any, callback: queryCallback): Query = js.native
+  def query(options: QueryOptions, values: Any): Query = js.native
+  def query(options: QueryOptions, values: Any, callback: queryCallback): Query = js.native
   def query(query: Query): Query = js.native
   @JSName("query")
   var query_Original: QueryFunction = js.native

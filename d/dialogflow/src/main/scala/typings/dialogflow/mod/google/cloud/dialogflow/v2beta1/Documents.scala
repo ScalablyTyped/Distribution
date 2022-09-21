@@ -9,7 +9,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Documents.UpdateDo
 import typings.dialogflow.mod.google.longrunning.Operation
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Documents */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Documents")
 @js.native
-class Documents protected () extends Service {
+open class Documents protected () extends Service {
   /**
     * Constructs a new Documents service.
     * @param rpcImpl RPC implementation
@@ -131,40 +130,40 @@ object Documents {
     * @param error Error, if any
     * @param [response] Operation
     */
-  type CreateDocumentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type CreateDocumentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#deleteDocument}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type DeleteDocumentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type DeleteDocumentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#getDocument}.
     * @param error Error, if any
     * @param [response] Document
     */
-  type GetDocumentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Document], Unit]
+  type GetDocumentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Document], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#listDocuments}.
     * @param error Error, if any
     * @param [response] ListDocumentsResponse
     */
-  type ListDocumentsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListDocumentsResponse], Unit]
+  type ListDocumentsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListDocumentsResponse], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#reloadDocument}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type ReloadDocumentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type ReloadDocumentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Documents#updateDocument}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type UpdateDocumentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type UpdateDocumentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
 }

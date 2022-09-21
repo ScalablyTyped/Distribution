@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.TetrahedronGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [detail=0]
-	 */
-class TetrahedronGeometry ()
+  * @param [radius=1]
+  * @param [detail=0]
+  */
+open class TetrahedronGeometry ()
   extends typings.three.mod.TetrahedronGeometry

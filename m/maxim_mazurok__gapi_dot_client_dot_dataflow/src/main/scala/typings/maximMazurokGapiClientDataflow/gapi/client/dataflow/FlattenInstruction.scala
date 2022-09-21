@@ -22,6 +22,6 @@ object FlattenInstruction {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: InstructionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: InstructionInput*): Self = StObject.set(x, "inputs", js.Array(value*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,22 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   
-  /* For localized accessibility: Should return a string indicating the number of results for screen readers.
-    Receives the current results. */
-  var a11yNumResults: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  /* For localized accessibility: Should return a string indicating the number of selections for screen readers.
-    Receives the current selections. */
-  var a11yNumSelected: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
   /* Specify menu alignment. The default value is justify, which makes the menu as wide as the input and truncates long values.
     Specifying left or right will align the menu to that side and the width will be determined by the length of menu item values. */
   var align: js.UndefOr[TypeaheadAlign] = js.undefined
   
-  /* Allows the creation of new selections on the fly. Any new items will be added to the list of selections,
-    but not the list of original options unless handled as such by Typeahead's parent.
-    The newly added item will always be returned as an object even if the other options are simply strings,
-    so be sure your onChange callback can handle this. */
+  /* Specifies whether or not arbitrary, user-defined options may be added to the result set. New entries will be included
+    when the trimmed input is truthy and there is no exact match in the result set.
+    If a function is specified, allows for a callback to decide whether the new entry menu item should be included in the results
+    list. The callback should return a boolean value: */
   var allowNew: js.UndefOr[
     Boolean | (js.Function2[/* results */ js.Array[T], /* props */ AllTypeaheadOwnAndInjectedProps[T], Boolean])
   ] = js.undefined
@@ -31,14 +24,13 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   /* Autofocus the input when the component initially mounts. */
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  /* Whether to render the menu inline or attach to document.body. */
-  var bodyContainer: js.UndefOr[Boolean] = js.undefined
-  
-  /* Specify the size of the input. */
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
-  
   /* Whether or not filtering should be case-sensitive. */
   var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode | (js.Function1[/* props */ Any, ReactNode])] = js.undefined
+  
+  /* ClassName to Apply */
+  var className: js.UndefOr[String] = js.undefined
   
   /* Displays a button to clear the input when there are selections. */
   var clearButton: js.UndefOr[Boolean] = js.undefined
@@ -60,7 +52,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   
   /* Message displayed in the menu when there are no valid results.
     Passing a falsy value will hide the menu if no matches are found. */
-  var emptyLabel: js.UndefOr[String] = js.undefined
+  var emptyLabel: js.UndefOr[ReactNode] = js.undefined
   
   /* Either an array of fields in option to search, or a custom filtering callback. */
   var filterBy: js.UndefOr[
@@ -96,15 +88,9 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
     By default, the selector will use the label key. */
   var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.undefined
   
-  /* Maximum height of the dropdown menu. */
-  var maxHeight: js.UndefOr[String] = js.undefined
-  
   /* Maximum number of results to display by default. Mostly done for performance reasons
     so as not to render too many DOM nodes in the case of large data sets. */
   var maxResults: js.UndefOr[Double] = js.undefined
-  
-  /** @deprecated: Id applied to the top-level menu element. Required for accessibility. */
-  var menuId: js.UndefOr[String] = js.undefined
   
   /* Number of input characters that must be entered before showing results. */
   var minLength: js.UndefOr[Double] = js.undefined
@@ -112,8 +98,8 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   /* Whether or not multiple selections are allowed. */
   var multiple: js.UndefOr[Boolean] = js.undefined
   
-  /* Provides the ability to specify a prefix before the user-entered text to indicate that the selection will be new. No-op unless allowNew={true}. */
-  var newSelectionPrefix: js.UndefOr[String] = js.undefined
+  /* Override default new selection text. */
+  var newSelectionPrefix: js.UndefOr[Element | String] = js.undefined
   
   /* Invoked when the input is blurred. Receives an event. */
   var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
@@ -130,12 +116,6 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   /* Invoked when a key is pressed. Receives an event. */
   var onKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
-  /** @deprecated: Invoked when the menu is hidden. */
-  var onMenuHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  /** @deprecated: Invoked when the menu is shown. */
-  var onMenuShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
   /*     Invoked when menu visibility changes. */
   var onMenuToggle: js.UndefOr[js.Function1[/* show */ Boolean, Unit]] = js.undefined
   
@@ -146,7 +126,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
     while true and false show and hide the menu, respectively. */
   var open: js.UndefOr[Boolean] = js.undefined
   
-  /* Full set of options, including any pre-selected options. */
+  /* Full set of options, including any pre-selected options. Must either be an array of objects (recommended) or strings. */
   var options: js.Array[T]
   
   /* Give user the ability to display additional results if the number of results exceeds maxResults. */
@@ -161,6 +141,14 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   /* Whether to use fixed positioning for the menu, which is useful when rendering inside a
     container with overflow: hidden;. Uses absolute positioning by default. */
   var positionFixed: js.UndefOr[Boolean] = js.undefined
+  
+  var renderInput: js.UndefOr[
+    js.Function2[
+      /* inputProps */ InputContainerPropsSingle[T], 
+      /* state */ TypeaheadState[T], 
+      ReactNode
+    ]
+  ] = js.undefined
   
   /* Callback for custom menu rendering. */
   var renderMenu: js.UndefOr[
@@ -184,7 +172,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   
   /* Provides a hook for customized rendering of tokens when multiple selections are enabled. */
   var renderToken: js.UndefOr[
-    js.Function3[/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double, ReactNode]
+    js.Function3[/* selectedItem */ T, /* props */ TokenProps, /* index */ Double, ReactNode]
   ] = js.undefined
   
   /** @deprecated: Allows selecting the hinted result by pressing enter. */
@@ -192,6 +180,9 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
   
   /* The selected option(s) displayed in the input. Use this prop if you want to control the component via its parent. */
   var selected: js.UndefOr[js.Array[T]] = js.undefined
+  
+  /* Specify the size of the input. */
+  var size: js.UndefOr[TypeaheadBsSizes] = js.undefined
 }
 object TypeaheadProps {
   
@@ -201,14 +192,6 @@ object TypeaheadProps {
   }
   
   extension [Self <: TypeaheadProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadProps[T]) {
-    
-    inline def setA11yNumResults(value: () => Unit): Self = StObject.set(x, "a11yNumResults", js.Any.fromFunction0(value))
-    
-    inline def setA11yNumResultsUndefined: Self = StObject.set(x, "a11yNumResults", js.undefined)
-    
-    inline def setA11yNumSelected(value: () => Unit): Self = StObject.set(x, "a11yNumSelected", js.Any.fromFunction0(value))
-    
-    inline def setA11yNumSelectedUndefined: Self = StObject.set(x, "a11yNumSelected", js.undefined)
     
     inline def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
@@ -226,17 +209,19 @@ object TypeaheadProps {
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    inline def setBodyContainer(value: Boolean): Self = StObject.set(x, "bodyContainer", value.asInstanceOf[js.Any])
-    
-    inline def setBodyContainerUndefined: Self = StObject.set(x, "bodyContainer", js.undefined)
-    
-    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
-    
-    inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
-    
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    
+    inline def setChildren(value: ReactNode | (js.Function1[/* props */ Any, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     inline def setClearButton(value: Boolean): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     
@@ -254,7 +239,7 @@ object TypeaheadProps {
     
     inline def setDefaultSelectedUndefined: Self = StObject.set(x, "defaultSelected", js.undefined)
     
-    inline def setDefaultSelectedVarargs(value: T*): Self = StObject.set(x, "defaultSelected", js.Array(value :_*))
+    inline def setDefaultSelectedVarargs(value: T*): Self = StObject.set(x, "defaultSelected", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -264,7 +249,7 @@ object TypeaheadProps {
     
     inline def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
     
-    inline def setEmptyLabel(value: String): Self = StObject.set(x, "emptyLabel", value.asInstanceOf[js.Any])
+    inline def setEmptyLabel(value: ReactNode): Self = StObject.set(x, "emptyLabel", value.asInstanceOf[js.Any])
     
     inline def setEmptyLabelUndefined: Self = StObject.set(x, "emptyLabel", js.undefined)
     
@@ -276,7 +261,7 @@ object TypeaheadProps {
     
     inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
-    inline def setFilterByVarargs(value: String*): Self = StObject.set(x, "filterBy", js.Array(value :_*))
+    inline def setFilterByVarargs(value: String*): Self = StObject.set(x, "filterBy", js.Array(value*))
     
     inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
@@ -316,17 +301,9 @@ object TypeaheadProps {
     
     inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
     
-    inline def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
-    
-    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
-    
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
-    
-    inline def setMenuId(value: String): Self = StObject.set(x, "menuId", value.asInstanceOf[js.Any])
-    
-    inline def setMenuIdUndefined: Self = StObject.set(x, "menuId", js.undefined)
     
     inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
@@ -336,7 +313,7 @@ object TypeaheadProps {
     
     inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    inline def setNewSelectionPrefix(value: String): Self = StObject.set(x, "newSelectionPrefix", value.asInstanceOf[js.Any])
+    inline def setNewSelectionPrefix(value: Element | String): Self = StObject.set(x, "newSelectionPrefix", value.asInstanceOf[js.Any])
     
     inline def setNewSelectionPrefixUndefined: Self = StObject.set(x, "newSelectionPrefix", js.undefined)
     
@@ -360,14 +337,6 @@ object TypeaheadProps {
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
-    inline def setOnMenuHide(value: () => Unit): Self = StObject.set(x, "onMenuHide", js.Any.fromFunction0(value))
-    
-    inline def setOnMenuHideUndefined: Self = StObject.set(x, "onMenuHide", js.undefined)
-    
-    inline def setOnMenuShow(value: () => Unit): Self = StObject.set(x, "onMenuShow", js.Any.fromFunction0(value))
-    
-    inline def setOnMenuShowUndefined: Self = StObject.set(x, "onMenuShow", js.undefined)
-    
     inline def setOnMenuToggle(value: /* show */ Boolean => Unit): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
     
     inline def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
@@ -382,7 +351,7 @@ object TypeaheadProps {
     
     inline def setOptions(value: js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
@@ -400,6 +369,10 @@ object TypeaheadProps {
     
     inline def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
     
+    inline def setRenderInput(value: (/* inputProps */ InputContainerPropsSingle[T], /* state */ TypeaheadState[T]) => ReactNode): Self = StObject.set(x, "renderInput", js.Any.fromFunction2(value))
+    
+    inline def setRenderInputUndefined: Self = StObject.set(x, "renderInput", js.undefined)
+    
     inline def setRenderMenu(
       value: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ TypeaheadMenuProps[T], /* state */ TypeaheadState[T]) => ReactNode
     ): Self = StObject.set(x, "renderMenu", js.Any.fromFunction3(value))
@@ -412,7 +385,7 @@ object TypeaheadProps {
     
     inline def setRenderMenuUndefined: Self = StObject.set(x, "renderMenu", js.undefined)
     
-    inline def setRenderToken(value: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double) => ReactNode): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
+    inline def setRenderToken(value: (/* selectedItem */ T, /* props */ TokenProps, /* index */ Double) => ReactNode): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
     
     inline def setRenderTokenUndefined: Self = StObject.set(x, "renderToken", js.undefined)
     
@@ -424,6 +397,10 @@ object TypeaheadProps {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value*))
+    
+    inline def setSize(value: TypeaheadBsSizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

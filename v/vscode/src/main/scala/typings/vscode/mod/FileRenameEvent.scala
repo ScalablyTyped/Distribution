@@ -23,6 +23,6 @@ object FileRenameEvent {
     
     inline def setFiles(value: js.Array[NewUri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: NewUri*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: NewUri*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

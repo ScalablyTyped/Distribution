@@ -1,7 +1,6 @@
 package typings.nodeValidator
 
 import typings.std.Number
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,7 @@ object ValidatorOptions {
     
     var message: js.UndefOr[String] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
   }
   object IsStringOptions {
     
@@ -83,7 +82,7 @@ object ValidatorOptions {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     }

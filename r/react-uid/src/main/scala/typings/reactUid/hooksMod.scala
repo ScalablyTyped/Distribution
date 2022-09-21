@@ -14,5 +14,5 @@ object hooksMod {
   
   inline def useUIDSeed(): SeedGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useUIDSeed")().asInstanceOf[SeedGenerator]
   
-  type SeedGenerator = js.Function1[/* id */ js.Any, String]
+  type SeedGenerator = js.Function1[/* id */ Any, String]
 }

@@ -9,7 +9,7 @@ object intervalSetMod {
   
   @JSImport("antlr4/IntervalSet", "Interval")
   @js.native
-  class Interval protected () extends StObject {
+  open class Interval protected () extends StObject {
     def this(start: Double, stop: Double) = this()
     
     def contains(item: Double): Boolean = js.native
@@ -23,7 +23,7 @@ object intervalSetMod {
   
   @JSImport("antlr4/IntervalSet", "IntervalSet")
   @js.native
-  class IntervalSet () extends StObject {
+  open class IntervalSet () extends StObject {
     
     def addInterval(interval: Interval): Unit = js.native
     

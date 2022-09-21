@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "RandomNormal")
 @js.native
-class RandomNormal protected () extends Initializer {
+open class RandomNormal protected () extends Initializer {
   def this(args: RandomNormalArgs) = this()
   
   val DEFAULT_MEAN: /* 0 */ Double = js.native
   
   val DEFAULT_STDDEV: /* 0.05 */ Double = js.native
   
-  /* private */ var mean: js.Any = js.native
+  /* private */ var mean: Any = js.native
   
-  /* private */ var seed: js.Any = js.native
+  /* private */ var seed: Any = js.native
   
-  /* private */ var stddev: js.Any = js.native
+  /* private */ var stddev: Any = js.native
 }
 /* static members */
 object RandomNormal {

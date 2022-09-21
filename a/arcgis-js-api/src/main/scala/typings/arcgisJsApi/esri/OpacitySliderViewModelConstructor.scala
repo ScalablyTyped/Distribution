@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OpacitySliderViewModelConstructor
   extends StObject
-     with Instantiable0[OpacitySliderViewModel]
+     with /**
+  * Provides the logic for the [OpacitySlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html)
+  */
+Instantiable0[OpacitySliderViewModel]
      with Instantiable1[/* properties */ OpacitySliderViewModelProperties, OpacitySliderViewModel]

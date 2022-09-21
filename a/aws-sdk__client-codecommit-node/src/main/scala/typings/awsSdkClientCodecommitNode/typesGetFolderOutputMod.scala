@@ -74,7 +74,7 @@ object typesGetFolderOutputMod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: UnmarshalledFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: UnmarshalledFile*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
       
@@ -82,19 +82,19 @@ object typesGetFolderOutputMod {
       
       inline def setSubFoldersUndefined: Self = StObject.set(x, "subFolders", js.undefined)
       
-      inline def setSubFoldersVarargs(value: UnmarshalledFolder*): Self = StObject.set(x, "subFolders", js.Array(value :_*))
+      inline def setSubFoldersVarargs(value: UnmarshalledFolder*): Self = StObject.set(x, "subFolders", js.Array(value*))
       
       inline def setSubModules(value: js.Array[UnmarshalledSubModule]): Self = StObject.set(x, "subModules", value.asInstanceOf[js.Any])
       
       inline def setSubModulesUndefined: Self = StObject.set(x, "subModules", js.undefined)
       
-      inline def setSubModulesVarargs(value: UnmarshalledSubModule*): Self = StObject.set(x, "subModules", js.Array(value :_*))
+      inline def setSubModulesVarargs(value: UnmarshalledSubModule*): Self = StObject.set(x, "subModules", js.Array(value*))
       
       inline def setSymbolicLinks(value: js.Array[UnmarshalledSymbolicLink]): Self = StObject.set(x, "symbolicLinks", value.asInstanceOf[js.Any])
       
       inline def setSymbolicLinksUndefined: Self = StObject.set(x, "symbolicLinks", js.undefined)
       
-      inline def setSymbolicLinksVarargs(value: UnmarshalledSymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value :_*))
+      inline def setSymbolicLinksVarargs(value: UnmarshalledSymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value*))
       
       inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sdp
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 SDP parsing and serialization utilities
@@ -10,10 +10,10 @@ SDP parsing and serialization utilities
 | ------------------ | :-------------: |
 | Full name          | sdp |
 | Keywords           | sdp, webrtc |
-| # releases         | 9 |
-| # dependents       | 20 |
-| # downloads        | 6389440 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1056425.6666666667 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/fippo/sdp#readme)

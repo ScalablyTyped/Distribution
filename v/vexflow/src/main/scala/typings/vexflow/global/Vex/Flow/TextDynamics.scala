@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.TextDynamics")
 @js.native
-class TextDynamics protected ()
+open class TextDynamics protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TextDynamics {
   def this(text_struct: LineText) = this()

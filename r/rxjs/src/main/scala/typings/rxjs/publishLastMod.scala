@@ -2,14 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.connectableObservableMod.ConnectableObservable
 import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.typesMod.UnaryFunction
+import typings.rxjs.internalTypesMod.UnaryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishLastMod {
   
-  @JSImport("rxjs/internal/operators/publishLast", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/publishLast", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

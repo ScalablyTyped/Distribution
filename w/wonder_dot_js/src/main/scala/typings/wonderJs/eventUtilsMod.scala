@@ -9,7 +9,7 @@ object eventUtilsMod {
   
   @JSImport("wonder.js/dist/es2015/event/utils/EventUtils", "EventUtils")
   @js.native
-  class EventUtils () extends StObject
+  open class EventUtils () extends StObject
   /* static members */
   object EventUtils {
     
@@ -19,6 +19,6 @@ object eventUtilsMod {
     
     inline def isEntityObject(arg: EntityObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntityObject")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isEvent(arg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEvent(arg: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

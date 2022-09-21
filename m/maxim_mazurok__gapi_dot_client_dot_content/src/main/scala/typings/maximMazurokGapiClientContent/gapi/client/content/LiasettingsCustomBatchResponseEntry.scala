@@ -12,7 +12,7 @@ trait LiasettingsCustomBatchResponseEntry extends StObject {
   /** A list of errors defined if, and only if, the request failed. */
   var errors: js.UndefOr[Errors] = js.undefined
   
-  /** The the list of accessible GMB accounts. */
+  /** The list of accessible Business Profiles. */
   var gmbAccounts: js.UndefOr[GmbAccounts] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsCustomBatchResponseEntry`" */
@@ -57,6 +57,6 @@ object LiasettingsCustomBatchResponseEntry {
     
     inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value*))
   }
 }

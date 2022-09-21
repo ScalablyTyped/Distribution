@@ -12,7 +12,7 @@ trait SharedWorkspaceFolders extends StObject {
   def Add(FolderName: String): SharedWorkspaceFolder = js.native
   def Add(FolderName: String, ParentFolder: SharedWorkspaceFolder): SharedWorkspaceFolder = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -22,5 +22,5 @@ trait SharedWorkspaceFolders extends StObject {
   
   val ItemCountExceeded: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

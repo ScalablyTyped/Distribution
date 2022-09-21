@@ -110,7 +110,7 @@ object angular {
       trait ILightbox extends StObject {
         
         def openModal(images: js.Array[ILightboxImageInfo], index: Double): Unit = js.native
-        def openModal(images: js.Array[ILightboxImageInfo], index: Double, modalParams: StringDictionary[js.Any]): Unit = js.native
+        def openModal(images: js.Array[ILightboxImageInfo], index: Double, modalParams: StringDictionary[Any]): Unit = js.native
       }
       
       trait ILightboxImageInfo extends StObject {

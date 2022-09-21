@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "CarouselCaption")
+@JSImport("reactstrap", "CarouselCaption")
 @js.native
-class CarouselCaption () extends default
+open class CarouselCaption () extends default

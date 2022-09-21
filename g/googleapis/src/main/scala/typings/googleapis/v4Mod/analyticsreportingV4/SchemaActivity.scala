@@ -4,27 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Activity represents data for an activity of a user. Note that an
-  * Activity is different from a hit. A hit might result in multiple
-  * Activity&#39;s. For example, if a hit includes a transaction and a goal
-  * completion, there will be two Activity protos for this hit, one for
-  * ECOMMERCE and one for GOAL. Conversely, multiple hits can also construct
-  * one Activity. In classic e-commerce, data for one transaction might be sent
-  * through multiple hits. These hits will be merged into one ECOMMERCE
-  * Activity.
-  */
 trait SchemaActivity extends StObject {
   
   /**
-    * Timestamp of the activity.
+    * Timestamp of the activity. If activities for a visit cross midnight and occur in two separate dates, then two sessions (one per date) share the session identifier. For example, say session ID 113472 has activity within 2019-08-20, and session ID 243742 has activity within 2019-08-25 and 2019-08-26. Session ID 113472 is one session, and session ID 243742 is two sessions.
     */
-  var activityTime: js.UndefOr[String] = js.undefined
+  var activityTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Type of this activity.
     */
-  var activityType: js.UndefOr[String] = js.undefined
+  var activityType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * This will be set if `activity_type` equals `SCREEN_VIEW`.
@@ -32,18 +22,14 @@ trait SchemaActivity extends StObject {
   var appview: js.UndefOr[SchemaScreenviewData] = js.undefined
   
   /**
-    * For manual campaign tracking, it is the value of the utm_campaign
-    * campaign tracking parameter. For AdWords autotagging, it is the name(s)
-    * of the online ad campaign(s) you use for the property. If you use
-    * neither, its value is (not set).
+    * For manual campaign tracking, it is the value of the utm_campaign campaign tracking parameter. For AdWords autotagging, it is the name(s) of the online ad campaign(s) you use for the property. If you use neither, its value is (not set).
     */
-  var campaign: js.UndefOr[String] = js.undefined
+  var campaign: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The Channel Group associated with an end user&#39;s session for this View
-    * (defined by the View&#39;s Channel Groupings).
+    * The Channel Group associated with an end user's session for this View (defined by the View's Channel Groupings).
     */
-  var channelGrouping: js.UndefOr[String] = js.undefined
+  var channelGrouping: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of all custom dimensions associated with this activity.
@@ -56,62 +42,44 @@ trait SchemaActivity extends StObject {
   var ecommerce: js.UndefOr[SchemaEcommerceData] = js.undefined
   
   /**
-    * This field contains all the details pertaining to an event and will be
-    * set if `activity_type` equals `EVENT`.
+    * This field contains all the details pertaining to an event and will be set if `activity_type` equals `EVENT`.
     */
   var event: js.UndefOr[SchemaEventData] = js.undefined
   
   /**
-    * This field contains a list of all the goals that were reached in this
-    * activity when `activity_type` equals `GOAL`.
+    * This field contains a list of all the goals that were reached in this activity when `activity_type` equals `GOAL`.
     */
   var goals: js.UndefOr[SchemaGoalSetData] = js.undefined
   
   /**
     * The hostname from which the tracking request was made.
     */
-  var hostname: js.UndefOr[String] = js.undefined
+  var hostname: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * For manual campaign tracking, it is the value of the utm_term campaign
-    * tracking parameter. For AdWords traffic, it contains the best matching
-    * targeting criteria. For the display network, where multiple targeting
-    * criteria could have caused the ad to show up, it returns the best
-    * matching targeting criteria as selected by Ads. This could be
-    * display_keyword, site placement, boomuserlist, user_interest, age, or
-    * gender. Otherwise its value is (not set).
+    * For manual campaign tracking, it is the value of the utm_term campaign tracking parameter. For AdWords traffic, it contains the best matching targeting criteria. For the display network, where multiple targeting criteria could have caused the ad to show up, it returns the best matching targeting criteria as selected by Ads. This could be display_keyword, site placement, boomuserlist, user_interest, age, or gender. Otherwise its value is (not set).
     */
-  var keyword: js.UndefOr[String] = js.undefined
+  var keyword: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The first page in users&#39; sessions, or the landing page.
+    * The first page in users' sessions, or the landing page.
     */
-  var landingPagePath: js.UndefOr[String] = js.undefined
+  var landingPagePath: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of referrals. For manual campaign tracking, it is the value of
-    * the utm_medium campaign tracking parameter. For AdWords autotagging, it
-    * is cpc. If users came from a search engine detected by Google Analytics,
-    * it is organic. If the referrer is not a search engine, it is referral. If
-    * users came directly to the property and document.referrer is empty, its
-    * value is (none).
+    * The type of referrals. For manual campaign tracking, it is the value of the utm_medium campaign tracking parameter. For AdWords autotagging, it is cpc. If users came from a search engine detected by Google Analytics, it is organic. If the referrer is not a search engine, it is referral. If users came directly to the property and document.referrer is empty, its value is (none).
     */
-  var medium: js.UndefOr[String] = js.undefined
+  var medium: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * This will be set if `activity_type` equals `PAGEVIEW`. This field
-    * contains all the details about the visitor and the page that was visited.
+    * This will be set if `activity_type` equals `PAGEVIEW`. This field contains all the details about the visitor and the page that was visited.
     */
   var pageview: js.UndefOr[SchemaPageviewData] = js.undefined
   
   /**
-    * The source of referrals. For manual campaign tracking, it is the value of
-    * the utm_source campaign tracking parameter. For AdWords autotagging, it
-    * is google. If you use neither, it is the domain of the source (e.g.,
-    * document.referrer) referring the users. It may also contain a port
-    * address. If users arrived without a referrer, its value is (direct).
+    * The source of referrals. For manual campaign tracking, it is the value of the utm_source campaign tracking parameter. For AdWords autotagging, it is google. If you use neither, it is the domain of the source (e.g., document.referrer) referring the users. It may also contain a port address. If users arrived without a referrer, its value is (direct).
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaActivity {
   
@@ -124,9 +92,13 @@ object SchemaActivity {
     
     inline def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
     
+    inline def setActivityTimeNull: Self = StObject.set(x, "activityTime", null)
+    
     inline def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
     
     inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    
+    inline def setActivityTypeNull: Self = StObject.set(x, "activityType", null)
     
     inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
@@ -136,9 +108,13 @@ object SchemaActivity {
     
     inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
     
+    inline def setCampaignNull: Self = StObject.set(x, "campaign", null)
+    
     inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
     
     inline def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setChannelGroupingNull: Self = StObject.set(x, "channelGrouping", null)
     
     inline def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
     
@@ -146,7 +122,7 @@ object SchemaActivity {
     
     inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
     
-    inline def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+    inline def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value*))
     
     inline def setEcommerce(value: SchemaEcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
     
@@ -162,17 +138,25 @@ object SchemaActivity {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
+    inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
+    
     inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordNull: Self = StObject.set(x, "keyword", null)
     
     inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
     inline def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
     
+    inline def setLandingPagePathNull: Self = StObject.set(x, "landingPagePath", null)
+    
     inline def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
     
     inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    
+    inline def setMediumNull: Self = StObject.set(x, "medium", null)
     
     inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
@@ -181,6 +165,8 @@ object SchemaActivity {
     inline def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

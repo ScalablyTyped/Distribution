@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_iam
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220728
 
 ## Library description:
 TypeScript typings for Identity and Access Management (IAM) API v1
@@ -10,10 +10,10 @@ TypeScript typings for Identity and Access Management (IAM) API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.iam |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 973 |
-| # stars            | 0 |
+| # releases         | 67 |
+| # dependents       | 0.0 |
+| # downloads        | 874.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

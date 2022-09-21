@@ -12,14 +12,14 @@ trait SSHPublicKeyMetadata extends StObject {
   var SSHPublicKeyId: publicKeyIdType
   
   /**
-    * The status of the SSH public key. Active means that the key can be used for authentication with an AWS CodeCommit repository. Inactive means that the key cannot be used.
+    * The status of the SSH public key. Active means that the key can be used for authentication with an CodeCommit repository. Inactive means that the key cannot be used.
     */
   var Status: statusType
   
   /**
     * The date and time, in ISO 8601 date-time format, when the SSH public key was uploaded.
     */
-  var UploadDate: dateType
+  var UploadDate: js.Date
   
   /**
     * The name of the IAM user associated with the SSH public key.
@@ -28,7 +28,7 @@ trait SSHPublicKeyMetadata extends StObject {
 }
 object SSHPublicKeyMetadata {
   
-  inline def apply(SSHPublicKeyId: publicKeyIdType, Status: statusType, UploadDate: dateType, UserName: userNameType): SSHPublicKeyMetadata = {
+  inline def apply(SSHPublicKeyId: publicKeyIdType, Status: statusType, UploadDate: js.Date, UserName: userNameType): SSHPublicKeyMetadata = {
     val __obj = js.Dynamic.literal(SSHPublicKeyId = SSHPublicKeyId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UploadDate = UploadDate.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSHPublicKeyMetadata]
   }
@@ -39,7 +39,7 @@ object SSHPublicKeyMetadata {
     
     inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: js.Date): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }

@@ -11,7 +11,7 @@ object positionalAudioMod {
   
   @JSImport("three/src/audio/PositionalAudio", "PositionalAudio")
   @js.native
-  class PositionalAudio protected () extends Audio[PannerNode] {
+  open class PositionalAudio protected () extends Audio[PannerNode] {
     def this(listener: AudioListener) = this()
     
     def getDistanceModel(): String = js.native

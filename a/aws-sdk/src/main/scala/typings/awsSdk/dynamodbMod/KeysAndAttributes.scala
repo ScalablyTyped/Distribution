@@ -44,7 +44,7 @@ object KeysAndAttributes {
     
     inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
-    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
     
     inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object KeysAndAttributes {
     
     inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value*))
     
     inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
     

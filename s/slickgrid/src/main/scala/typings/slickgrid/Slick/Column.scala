@@ -15,19 +15,13 @@ trait Column[T /* <: SlickData */] extends StObject {
     * @return
     **/
   var asyncPostRender: js.UndefOr[
-    js.Function4[
-      /* cellNode */ js.Any, 
-      /* row */ js.Any, 
-      /* dataContext */ js.Any, 
-      /* colDef */ js.Any, 
-      Unit
-    ]
+    js.Function4[/* cellNode */ Any, /* row */ Any, /* dataContext */ Any, /* colDef */ Any, Unit]
   ] = js.undefined
   
   /**
     * Used by the the slick.rowMoveManager.js plugin for moving rows. Has no effect without the plugin installed.
     **/
-  var behavior: js.UndefOr[js.Any] = js.undefined
+  var behavior: js.UndefOr[Any] = js.undefined
   
   /**
     * In the "Add New" row, determines whether clicking cells in this column can trigger row addition. If true, clicking on the cell in this column in the "Add New" row will not trigger row addition.
@@ -47,7 +41,7 @@ trait Column[T /* <: SlickData */] extends StObject {
   /**
     * The editor for cell edits {TextEditor, IntegerEditor, DateEditor...} See slick.editors.js
     **/
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
   // typeof Editors.Editor<T>;
   /**
@@ -137,13 +131,11 @@ object Column {
   
   extension [Self <: Column[?], T /* <: SlickData */](x: Self & Column[T]) {
     
-    inline def setAsyncPostRender(
-      value: (/* cellNode */ js.Any, /* row */ js.Any, /* dataContext */ js.Any, /* colDef */ js.Any) => Unit
-    ): Self = StObject.set(x, "asyncPostRender", js.Any.fromFunction4(value))
+    inline def setAsyncPostRender(value: (/* cellNode */ Any, /* row */ Any, /* dataContext */ Any, /* colDef */ Any) => Unit): Self = StObject.set(x, "asyncPostRender", js.Any.fromFunction4(value))
     
     inline def setAsyncPostRenderUndefined: Self = StObject.set(x, "asyncPostRender", js.undefined)
     
-    inline def setBehavior(value: js.Any): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: Any): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
@@ -159,7 +151,7 @@ object Column {
     
     inline def setDefaultSortAscUndefined: Self = StObject.set(x, "defaultSortAsc", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
@@ -172,7 +164,7 @@ object Column {
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     inline def setFormatter(
-      value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
+      value: (/* row */ Double, /* cell */ Double, /* value */ Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
     ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

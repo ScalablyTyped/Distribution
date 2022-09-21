@@ -22,6 +22,11 @@ trait Action extends StObject {
   var DnsRequestAction: js.UndefOr[typings.awsSdk.guarddutyMod.DnsRequestAction] = js.undefined
   
   /**
+    * Information about the Kubernetes API call action described in this finding.
+    */
+  var KubernetesApiCallAction: js.UndefOr[typings.awsSdk.guarddutyMod.KubernetesApiCallAction] = js.undefined
+  
+  /**
     * Information about the NETWORK_CONNECTION action described in this finding.
     */
   var NetworkConnectionAction: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkConnectionAction] = js.undefined
@@ -51,6 +56,10 @@ object Action {
     inline def setDnsRequestAction(value: DnsRequestAction): Self = StObject.set(x, "DnsRequestAction", value.asInstanceOf[js.Any])
     
     inline def setDnsRequestActionUndefined: Self = StObject.set(x, "DnsRequestAction", js.undefined)
+    
+    inline def setKubernetesApiCallAction(value: KubernetesApiCallAction): Self = StObject.set(x, "KubernetesApiCallAction", value.asInstanceOf[js.Any])
+    
+    inline def setKubernetesApiCallActionUndefined: Self = StObject.set(x, "KubernetesApiCallAction", js.undefined)
     
     inline def setNetworkConnectionAction(value: NetworkConnectionAction): Self = StObject.set(x, "NetworkConnectionAction", value.asInstanceOf[js.Any])
     

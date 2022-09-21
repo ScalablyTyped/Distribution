@@ -42,7 +42,7 @@ trait TimelineView extends StObject {
   /* private */ @JSName("Outlook.TimelineView_typekey")
   var OutlookDotTimelineView_typekey: TimelineView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -88,7 +88,7 @@ object TimelineView {
     MaxLabelWidth: Double,
     Name: String,
     OutlookDotTimelineView_typekey: TimelineView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -143,7 +143,7 @@ object TimelineView {
     
     inline def setOutlookDotTimelineView_typekey(value: TimelineView): Self = StObject.set(x, "Outlook.TimelineView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

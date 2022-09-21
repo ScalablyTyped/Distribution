@@ -26,6 +26,6 @@ object IKnowledgeAnswers {
     
     inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
-    inline def setAnswersVarargs(value: IAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
+    inline def setAnswersVarargs(value: IAnswer*): Self = StObject.set(x, "answers", js.Array(value*))
   }
 }

@@ -29,12 +29,12 @@ object CancelSpotFleetRequestsResponse {
     
     inline def setSuccessfulFleetRequestsUndefined: Self = StObject.set(x, "SuccessfulFleetRequests", js.undefined)
     
-    inline def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = StObject.set(x, "SuccessfulFleetRequests", js.Array(value :_*))
+    inline def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = StObject.set(x, "SuccessfulFleetRequests", js.Array(value*))
     
     inline def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = StObject.set(x, "UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulFleetRequestsUndefined: Self = StObject.set(x, "UnsuccessfulFleetRequests", js.undefined)
     
-    inline def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetRequests", js.Array(value :_*))
+    inline def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetRequests", js.Array(value*))
   }
 }

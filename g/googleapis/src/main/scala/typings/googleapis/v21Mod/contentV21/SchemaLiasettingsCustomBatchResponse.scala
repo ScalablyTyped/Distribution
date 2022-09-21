@@ -12,10 +12,9 @@ trait SchemaLiasettingsCustomBatchResponse extends StObject {
   var entries: js.UndefOr[js.Array[SchemaLiasettingsCustomBatchResponseEntry]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#liasettingsCustomBatchResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsCustomBatchResponse`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiasettingsCustomBatchResponse {
   
@@ -30,9 +29,11 @@ object SchemaLiasettingsCustomBatchResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: SchemaLiasettingsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaLiasettingsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

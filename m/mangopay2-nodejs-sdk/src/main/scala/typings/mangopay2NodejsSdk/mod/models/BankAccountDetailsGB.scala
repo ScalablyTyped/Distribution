@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.mod.models
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
+import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.GBDetails
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GB
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.bankAccount.GBDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankAccountDetailsGB")
 @js.native
-class BankAccountDetailsGB protected ()
+open class BankAccountDetailsGB protected ()
   extends BankAccountDetails
      with GBDetails {
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
   
   /**
     * The account number of the bank account. Must be numbers only. GB account numbers must be 8 digits long.

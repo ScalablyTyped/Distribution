@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MobileBroadbandDeviceServiceDataSession extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datareceived(
     `type`: datareceived,
@@ -38,7 +38,7 @@ trait MobileBroadbandDeviceServiceDataSession extends StObject {
     MobileBroadbandDeviceServiceDataReceivedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datareceived(
     `type`: datareceived,

@@ -13,7 +13,7 @@ object adaptersStrategyMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/adapters-strategy", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AdaptersStrategy {
     def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
@@ -27,23 +27,23 @@ object adaptersStrategyMod {
   @js.native
   trait AdaptersStrategy extends StObject {
     
-    /* private */ var _attachedAdapter: js.Any = js.native
+    /* private */ var _attachedAdapter: Any = js.native
     
-    /* private */ var _autoDetectSourceTypes: js.Any = js.native
+    /* private */ var _autoDetectSourceTypes: Any = js.native
     
-    /* private */ var _availableAdapters: js.Any = js.native
+    /* private */ var _availableAdapters: Any = js.native
     
-    /* private */ var _connectAdapterToVideo: js.Any = js.native
+    /* private */ var _connectAdapterToVideo: Any = js.native
     
-    /* private */ var _detachCurrentAdapter: js.Any = js.native
+    /* private */ var _detachCurrentAdapter: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _playableAdapters: js.Any = js.native
+    /* private */ var _playableAdapters: Any = js.native
     
-    /* private */ var _resolvePlayableAdapters: js.Any = js.native
+    /* private */ var _resolvePlayableAdapters: Any = js.native
     
-    /* private */ var _video: js.Any = js.native
+    /* private */ var _video: Any = js.native
     
     def attachedAdapter: IPlaybackAdapter = js.native
     

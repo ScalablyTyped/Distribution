@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListConfigurationSetsResponse extends StObject {
   
   /**
-    * An array that contains all of the configuration sets in your Amazon SES account in the current AWS Region.
+    * An array that contains all of the configuration sets in your Amazon SES account in the current Amazon Web Services Region.
     */
   var ConfigurationSets: js.UndefOr[ConfigurationSetNameList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListConfigurationSetsResponse {
     
     inline def setConfigurationSetsUndefined: Self = StObject.set(x, "ConfigurationSets", js.undefined)
     
-    inline def setConfigurationSetsVarargs(value: ConfigurationSetName*): Self = StObject.set(x, "ConfigurationSets", js.Array(value :_*))
+    inline def setConfigurationSetsVarargs(value: ConfigurationSetName*): Self = StObject.set(x, "ConfigurationSets", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,7 @@ object IAnimatedTileLayerOptions {
     
     inline def setMercator(value: js.Array[TileSource]): Self = StObject.set(x, "mercator", value.asInstanceOf[js.Any])
     
-    inline def setMercatorVarargs(value: TileSource*): Self = StObject.set(x, "mercator", js.Array(value :_*))
+    inline def setMercatorVarargs(value: TileSource*): Self = StObject.set(x, "mercator", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

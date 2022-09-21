@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientButtonEditClickEventArgs")
 @js.native
-class ASPxClientButtonEditClickEventArgs protected ()
+open class ASPxClientButtonEditClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientButtonEditClickEventArgs {
   /**

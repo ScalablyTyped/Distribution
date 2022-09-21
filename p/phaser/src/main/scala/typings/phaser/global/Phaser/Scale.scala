@@ -1,6 +1,5 @@
 package typings.phaser.global.Phaser
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.CENTER_BOTH")
   @js.native
-  val CENTER_BOTH: integer = js.native
+  val CENTER_BOTH: Double = js.native
   
   /**
     * The game canvas is centered horizontally within the parent.
@@ -27,7 +26,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.CENTER_HORIZONTALLY")
   @js.native
-  val CENTER_HORIZONTALLY: integer = js.native
+  val CENTER_HORIZONTALLY: Double = js.native
   
   /**
     * The game canvas is centered both vertically within the parent.
@@ -38,7 +37,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.CENTER_VERTICALLY")
   @js.native
-  val CENTER_VERTICALLY: integer = js.native
+  val CENTER_VERTICALLY: Double = js.native
   
   /**
     * Phaser Scale Manager constants for centering the game canvas.
@@ -65,7 +64,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.ENVELOP")
   @js.native
-  val ENVELOP: integer = js.native
+  val ENVELOP: Double = js.native
   
   object Events {
     
@@ -74,21 +73,21 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.ENTER_FULLSCREEN")
     @js.native
-    val ENTER_FULLSCREEN: js.Any = js.native
+    val ENTER_FULLSCREEN: Any = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode but failed.
       */
     @JSGlobal("Phaser.Scale.Events.FULLSCREEN_FAILED")
     @js.native
-    val FULLSCREEN_FAILED: js.Any = js.native
+    val FULLSCREEN_FAILED: Any = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode, but it is unsupported by the browser.
       */
     @JSGlobal("Phaser.Scale.Events.FULLSCREEN_UNSUPPORTED")
     @js.native
-    val FULLSCREEN_UNSUPPORTED: js.Any = js.native
+    val FULLSCREEN_UNSUPPORTED: Any = js.native
     
     /**
       * The Scale Manager was in fullscreen mode, but has since left, either directly via game code,
@@ -96,14 +95,16 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.LEAVE_FULLSCREEN")
     @js.native
-    val LEAVE_FULLSCREEN: js.Any = js.native
+    val LEAVE_FULLSCREEN: Any = js.native
     
     /**
       * The Scale Manager Orientation Change Event.
+      * 
+      * This event is dispatched whenever the Scale Manager detects an orientation change event from the browser.
       */
     @JSGlobal("Phaser.Scale.Events.ORIENTATION_CHANGE")
     @js.native
-    val ORIENTATION_CHANGE: js.Any = js.native
+    val ORIENTATION_CHANGE: Any = js.native
     
     /**
       * The Scale Manager Resize Event.
@@ -115,7 +116,7 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.RESIZE")
     @js.native
-    val RESIZE: js.Any = js.native
+    val RESIZE: Any = js.native
   }
   
   /**
@@ -125,14 +126,14 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.FIT")
   @js.native
-  val FIT: integer = js.native
+  val FIT: Double = js.native
   
   /**
     * The width is automatically adjusted based on the height.
     */
   @JSGlobal("Phaser.Scale.HEIGHT_CONTROLS_WIDTH")
   @js.native
-  val HEIGHT_CONTROLS_WIDTH: integer = js.native
+  val HEIGHT_CONTROLS_WIDTH: Double = js.native
   
   /**
     * A landscape orientation.
@@ -147,7 +148,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.MAX_ZOOM")
   @js.native
-  val MAX_ZOOM: integer = js.native
+  val MAX_ZOOM: Double = js.native
   
   /**
     * No scaling happens at all. The canvas is set to the size given in the game config and Phaser doesn't change it
@@ -156,7 +157,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.NONE")
   @js.native
-  val NONE: integer = js.native
+  val NONE: Double = js.native
   
   /**
     * The game canvas is not centered within the parent by Phaser.
@@ -164,14 +165,14 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.NO_CENTER")
   @js.native
-  val NO_CENTER: integer = js.native
+  val NO_CENTER: Double = js.native
   
   /**
     * The game canvas will not be zoomed by Phaser.
     */
   @JSGlobal("Phaser.Scale.NO_ZOOM")
   @js.native
-  val NO_ZOOM: integer = js.native
+  val NO_ZOOM: Double = js.native
   
   /**
     * Phaser Scale Manager constants for orientation.
@@ -200,7 +201,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.RESIZE")
   @js.native
-  val RESIZE: integer = js.native
+  val RESIZE: Double = js.native
   
   /**
     * The Scale Manager handles the scaling, resizing and alignment of the game canvas.
@@ -298,7 +299,7 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.ScaleManager")
   @js.native
-  class ScaleManager protected ()
+  open class ScaleManager protected ()
     extends StObject
        with typings.phaser.Phaser.Scale.ScaleManager {
     /**
@@ -336,21 +337,21 @@ object Scale {
     */
   @JSGlobal("Phaser.Scale.WIDTH_CONTROLS_HEIGHT")
   @js.native
-  val WIDTH_CONTROLS_HEIGHT: integer = js.native
+  val WIDTH_CONTROLS_HEIGHT: Double = js.native
   
   /**
     * The game canvas will be 2x zoomed by Phaser.
     */
   @JSGlobal("Phaser.Scale.ZOOM_2X")
   @js.native
-  val ZOOM_2X: integer = js.native
+  val ZOOM_2X: Double = js.native
   
   /**
     * The game canvas will be 4x zoomed by Phaser.
     */
   @JSGlobal("Phaser.Scale.ZOOM_4X")
   @js.native
-  val ZOOM_4X: integer = js.native
+  val ZOOM_4X: Double = js.native
   
   /**
     * Phaser Scale Manager constants for zoom modes.

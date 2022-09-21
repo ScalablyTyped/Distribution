@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.LanguageServiceShim")
 @js.native
-class LanguageServiceShim protected ()
+open class LanguageServiceShim protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.LanguageServiceShim {
   def this(factory: IShimFactory, host: ILanguageServiceShimHost, languageService: ILanguageService) = this()
   
   /* private */ /* CompleteClass */
-  override def _navigateToItemsToString(items: js.Any): js.Any = js.native
+  override def _navigateToItemsToString(items: Any): Any = js.native
   
   /* CompleteClass */
   override def cleanupSemanticCache(): Unit = js.native
   
   /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
+  override def dispose(dummy: Any): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var factory: js.Any = js.native
+  var factory: Any = js.native
   
   /* CompleteClass */
-  override def forwardJSONCall(actionDescription: String, action: js.Function0[js.Any]): String = js.native
+  override def forwardJSONCall(actionDescription: String, action: js.Function0[Any]): String = js.native
   
   /* CompleteClass */
   override def getBraceMatchingAtPosition(fileName: String, position: Double): String = js.native
@@ -99,16 +99,16 @@ class LanguageServiceShim protected ()
   override def getTypeAtPosition(fileName: String, position: Double): String = js.native
   
   /* private */ /* CompleteClass */
-  var host: js.Any = js.native
+  var host: Any = js.native
   
   /* CompleteClass */
   var languageService: ILanguageService = js.native
   
   /* private */ /* CompleteClass */
-  var logger: js.Any = js.native
+  var logger: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
+  override def realizeDiagnosticWithFileName(diagnostic: Any): Any = js.native
   
   /* CompleteClass */
   override def refresh(throwOnError: Boolean): Unit = js.native
@@ -120,8 +120,8 @@ object LanguageServiceShim {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def realizeDiagnostic(diagnostic: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def realizeDiagnostic(diagnostic: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
-  inline def realizeDiagnosticCategory(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnosticCategory")(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def realizeDiagnosticCategory(category: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnosticCategory")(category.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -23,7 +23,7 @@ object LaneSet {
     
     inline def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
-    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
+    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

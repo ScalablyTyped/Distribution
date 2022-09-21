@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Modifier[Name, Options] extends StObject {
+trait Modifier[Name, Options /* <: Obj */] extends StObject {
   
   var data: js.UndefOr[Obj] = js.undefined
   
@@ -28,7 +28,7 @@ trait Modifier[Name, Options] extends StObject {
 }
 object Modifier {
   
-  inline def apply[Name, Options](
+  inline def apply[Name, Options /* <: Obj */](
     enabled: Boolean,
     fn: ModifierArguments[Options] => State | Unit,
     name: Name,
@@ -38,7 +38,7 @@ object Modifier {
     __obj.asInstanceOf[Modifier[Name, Options]]
   }
   
-  extension [Self <: Modifier[?, ?], Name, Options](x: Self & (Modifier[Name, Options])) {
+  extension [Self <: Modifier[?, ?], Name, Options /* <: Obj */](x: Self & (Modifier[Name, Options])) {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -66,10 +66,10 @@ object Modifier {
     
     inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
     
-    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
+    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value*))
     
     inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
   }
 }

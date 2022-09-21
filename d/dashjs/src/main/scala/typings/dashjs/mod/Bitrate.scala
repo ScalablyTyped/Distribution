@@ -10,6 +10,8 @@ trait Bitrate extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
+  var id: js.UndefOr[String] = js.undefined
+  
   var scanType: js.UndefOr[String] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
@@ -30,6 +32,10 @@ object Bitrate {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setScanType(value: String): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     

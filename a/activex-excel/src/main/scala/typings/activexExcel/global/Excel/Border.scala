@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Border")
 @js.native
-/* private */ class Border ()
+/* private */ open class Border ()
   extends StObject
      with typings.activexExcel.Excel.Border {
   
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var LineStyle: typings.activexExcel.Excel.LineStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ThemeColor: XlThemeColor = js.native

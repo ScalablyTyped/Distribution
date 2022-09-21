@@ -9,9 +9,9 @@ trait DataSourceErrorEvent
   extends StObject
      with DataSourceEvent {
   
-  var errorThrown: js.Any
+  var errorThrown: Any
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
   var status: String
   
@@ -19,16 +19,16 @@ trait DataSourceErrorEvent
 }
 object DataSourceErrorEvent {
   
-  inline def apply(errorThrown: js.Any, status: String, xhr: JQueryXHR): DataSourceErrorEvent = {
+  inline def apply(errorThrown: Any, status: String, xhr: JQueryXHR): DataSourceErrorEvent = {
     val __obj = js.Dynamic.literal(errorThrown = errorThrown.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceErrorEvent]
   }
   
   extension [Self <: DataSourceErrorEvent](x: Self) {
     
-    inline def setErrorThrown(value: js.Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
+    inline def setErrorThrown(value: Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     

@@ -45,11 +45,11 @@ object ASPxClientUploadControlValidationSettings {
     
     inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
     
-    inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+    inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value*))
     
     inline def setInvalidFileNameCharacters(value: js.Array[String]): Self = StObject.set(x, "invalidFileNameCharacters", value.asInstanceOf[js.Any])
     
-    inline def setInvalidFileNameCharactersVarargs(value: String*): Self = StObject.set(x, "invalidFileNameCharacters", js.Array(value :_*))
+    inline def setInvalidFileNameCharactersVarargs(value: String*): Self = StObject.set(x, "invalidFileNameCharacters", js.Array(value*))
     
     inline def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
     

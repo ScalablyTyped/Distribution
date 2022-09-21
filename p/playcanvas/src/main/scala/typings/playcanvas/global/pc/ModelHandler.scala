@@ -4,18 +4,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
+/** @typedef {import('./handler.js').ResourceHandler} ResourceHandler */
 /**
-  * Resource handler used for loading {@link pc.Model} resources.
-  * @param device - The graphics device that will be rendering.
-  * @param defaultMaterial - The shared default material that is used in any place that a material is not specified.
+  * Callback used by {@link ModelHandler#addParser} to decide on which parser to use.
+  *
+  * @callback AddParserCallback
+  * @param {string} url - The resource url.
+  * @param {object} data - The raw model data.
+  * @returns {boolean} Return true if this parser should be used to parse the data into a
+  * {@link Model}.
+  */
+/**
+  * Resource handler used for loading {@link Model} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSGlobal("pc.ModelHandler")
 @js.native
-class ModelHandler protected ()
-  extends StObject
-     with typings.playcanvas.pc.ModelHandler {
-  def this(
-    device: typings.playcanvas.pc.GraphicsDevice,
-    defaultMaterial: typings.playcanvas.pc.StandardMaterial
-  ) = this()
+open class ModelHandler protected ()
+  extends typings.playcanvas.mod.ModelHandler {
+  /**
+    * Create a new ModelHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

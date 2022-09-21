@@ -14,61 +14,61 @@ object locationServicesMod {
   
   @JSImport("@uirouter/angularjs/lib/locationServices", "Ng1LocationServices")
   @js.native
-  class Ng1LocationServices protected ()
+  open class Ng1LocationServices protected ()
     extends StObject
        with LocationConfig
        with LocationServices {
     def this($locationProvider: ILocationProvider) = this()
     
     /* private */ @JSName("$browser")
-    var $browser: js.Any = js.native
+    var $browser: Any = js.native
     
     /* private */ @JSName("$location")
-    var $location: js.Any = js.native
+    var $location: Any = js.native
     
     /* private */ @JSName("$locationProvider")
-    var $locationProvider: js.Any = js.native
+    var $locationProvider: Any = js.native
     
     /* private */ @JSName("$sniffer")
-    var $sniffer: js.Any = js.native
+    var $sniffer: Any = js.native
     
     /* private */ @JSName("$window")
-    var $window: js.Any = js.native
+    var $window: Any = js.native
     
-    /* private */ var _baseHref: js.Any = js.native
+    /* private */ var _baseHref: Any = js.native
     
     def _runtimeServices(
-      $rootScope: js.Any,
+      $rootScope: Any,
       $location: ILocationService,
-      $sniffer: js.Any,
-      $browser: js.Any,
+      $sniffer: Any,
+      $browser: Any,
       $window: IWindowService
     ): Unit = js.native
     
-    /* private */ var _urlListeners: js.Any = js.native
+    /* private */ var _urlListeners: Any = js.native
     
     @JSName("hashPrefix")
-    var hashPrefix_FNg1LocationServices: js.Any = js.native
+    var hashPrefix_FNg1LocationServices: Any = js.native
     
     @JSName("hash")
-    var hash_FNg1LocationServices: js.Any = js.native
+    var hash_FNg1LocationServices: Any = js.native
     
     @JSName("host")
-    var host_FNg1LocationServices: js.Any = js.native
+    var host_FNg1LocationServices: Any = js.native
     
     def onChange(callback: js.Function): js.Function0[js.Array[js.Function]] = js.native
     
     @JSName("path")
-    var path_FNg1LocationServices: js.Any = js.native
+    var path_FNg1LocationServices: Any = js.native
     
     @JSName("port")
-    var port_FNg1LocationServices: js.Any = js.native
+    var port_FNg1LocationServices: Any = js.native
     
     @JSName("protocol")
-    var protocol_FNg1LocationServices: js.Any = js.native
+    var protocol_FNg1LocationServices: Any = js.native
     
     @JSName("search")
-    var search_FNg1LocationServices: js.Any = js.native
+    var search_FNg1LocationServices: Any = js.native
   }
   /* static members */
   object Ng1LocationServices {

@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("Timer")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.timerMachine.mod.^ {
       def this(started: Boolean) = this()
     }

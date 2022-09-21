@@ -15,7 +15,7 @@ trait RenderTarget
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#RenderTarget)
     */
-  var framebuffer: js.Any
+  var framebuffer: Any
   
   /**
     * A viewport that fully covers `framebuffer`.
@@ -28,7 +28,7 @@ object RenderTarget {
   
   inline def apply(
     constructor: js.Function,
-    framebuffer: js.Any,
+    framebuffer: Any,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     viewport: js.Array[Double]
@@ -39,10 +39,10 @@ object RenderTarget {
   
   extension [Self <: RenderTarget](x: Self) {
     
-    inline def setFramebuffer(value: js.Any): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
+    inline def setFramebuffer(value: Any): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
     
     inline def setViewport(value: js.Array[Double]): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    inline def setViewportVarargs(value: Double*): Self = StObject.set(x, "viewport", js.Array(value :_*))
+    inline def setViewportVarargs(value: Double*): Self = StObject.set(x, "viewport", js.Array(value*))
   }
 }

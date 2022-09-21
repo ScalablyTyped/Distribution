@@ -31,7 +31,7 @@ object ListBonusPaymentsResponse {
     
     inline def setBonusPaymentsUndefined: Self = StObject.set(x, "BonusPayments", js.undefined)
     
-    inline def setBonusPaymentsVarargs(value: BonusPayment*): Self = StObject.set(x, "BonusPayments", js.Array(value :_*))
+    inline def setBonusPaymentsVarargs(value: BonusPayment*): Self = StObject.set(x, "BonusPayments", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

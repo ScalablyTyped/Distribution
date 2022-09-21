@@ -4,7 +4,6 @@ import typings.d3Dsv.mod.DSVParsedArray
 import typings.d3Dsv.mod.DSVRowArray
 import typings.d3Dsv.mod.DSVRowString
 import typings.d3Fetch.anon.PartialHTMLImageElement
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Document
 import typings.std.HTMLImageElement
@@ -23,8 +22,8 @@ object mod {
   inline def blob(url: String): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
   inline def blob(url: String, init: RequestInit): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   
-  inline def buffer(url: String): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
-  inline def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def buffer(url: String): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def buffer(url: String, init: RequestInit): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   
   inline def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
   inline def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
@@ -78,8 +77,8 @@ object mod {
   inline def image(url: String): js.Promise[HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLImageElement]]
   inline def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLImageElement]]
   
-  inline def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
-  inline def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+  inline def json[ParsedJSONObject /* <: Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+  inline def json[ParsedJSONObject /* <: Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
   
   inline def svg(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
   inline def svg(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]

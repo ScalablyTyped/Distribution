@@ -10,10 +10,10 @@ object hourglassEmptyMod {
   
   @JSImport("material-ui/svg-icons/action/hourglass-empty", JSImport.Default)
   @js.native
-  class default () extends ActionHourglassEmpty
+  open class default () extends ActionHourglassEmpty
   
   @JSImport("material-ui/svg-icons/action/hourglass-empty", "ActionHourglassEmpty")
   @js.native
-  class ActionHourglassEmpty ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionHourglassEmpty ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,12 +8,12 @@ object mod {
   
   @JSImport("lazy-val", "Lazy")
   @js.native
-  class Lazy[T] protected () extends StObject {
+  open class Lazy[T] protected () extends StObject {
     def this(creator: js.Function0[js.Promise[T]]) = this()
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
-    /* private */ var creator: js.Any = js.native
+    /* private */ var creator: Any = js.native
     
     val hasValue: Boolean = js.native
     

@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.websceneSunLightingProper
+import typings.arcgisJsApi.anon.websceneVirtualLightingPr
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -15,7 +17,7 @@ trait SlideEnvironmentProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
     */
-  var lighting: js.UndefOr[LightingProperties] = js.undefined
+  var lighting: js.UndefOr[websceneSunLightingProper | websceneVirtualLightingPr] = js.undefined
 }
 object SlideEnvironmentProperties {
   
@@ -30,7 +32,7 @@ object SlideEnvironmentProperties {
   
   extension [Self <: SlideEnvironmentProperties](x: Self) {
     
-    inline def setLighting(value: LightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: websceneSunLightingProper | websceneVirtualLightingPr): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
     inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-reporting-protobuf
 
-Typings are for version 0.6.1
+Typings are for version 3.3.2
 
 ## Library description:
 Protobuf format for Apollo usage reporting
@@ -10,10 +10,10 @@ Protobuf format for Apollo usage reporting
 | ------------------ | :-------------: |
 | Full name          | apollo-reporting-protobuf |
 | Keywords           | GraphQL, Apollo, Server, Javascript |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 5976837 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 7800259.333333333 |
+| # stars            | 12738.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

@@ -13,7 +13,7 @@ trait CodedValueDomainProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var codedValues: js.UndefOr[js.Array[CodedValueDomainCodedValues]] = js.undefined
+  var codedValues: js.UndefOr[js.Array[CodedValue]] = js.undefined
 }
 object CodedValueDomainProperties {
   
@@ -24,10 +24,10 @@ object CodedValueDomainProperties {
   
   extension [Self <: CodedValueDomainProperties](x: Self) {
     
-    inline def setCodedValues(value: js.Array[CodedValueDomainCodedValues]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
+    inline def setCodedValues(value: js.Array[CodedValue]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
     
     inline def setCodedValuesUndefined: Self = StObject.set(x, "codedValues", js.undefined)
     
-    inline def setCodedValuesVarargs(value: CodedValueDomainCodedValues*): Self = StObject.set(x, "codedValues", js.Array(value :_*))
+    inline def setCodedValuesVarargs(value: CodedValue*): Self = StObject.set(x, "codedValues", js.Array(value*))
   }
 }

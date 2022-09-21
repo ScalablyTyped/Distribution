@@ -8,8 +8,11 @@ trait BooleanDeclarationOption
   extends StObject
      with DeclarationOptionBase
      with _DeclarationOption
-     with _KeyToDeclaration[js.Any] {
+     with _KeyToDeclaration[Any] {
   
+  /**
+    * If not specified defaults to false.
+    */
   var defaultValue: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")

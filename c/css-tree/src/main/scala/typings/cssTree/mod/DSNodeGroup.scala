@@ -38,7 +38,7 @@ object DSNodeGroup {
     
     inline def setTerms(value: js.Array[DSNode]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    inline def setTermsVarargs(value: DSNode*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: DSNode*): Self = StObject.set(x, "terms", js.Array(value*))
     
     inline def setType(value: Group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

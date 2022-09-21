@@ -108,7 +108,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs")
   @js.native
-  class CachedFileUpdaterActivatedEventArgs ()
+  open class CachedFileUpdaterActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs {
     
@@ -127,7 +127,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs")
   @js.native
-  class CameraSettingsActivatedEventArgs ()
+  open class CameraSettingsActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs {
     
@@ -141,15 +141,15 @@ object Activation {
     var splashScreen: typings.winrt.Windows.ApplicationModel.Activation.SplashScreen = js.native
     
     /* CompleteClass */
-    var videoDeviceController: js.Any = js.native
+    var videoDeviceController: Any = js.native
     
     /* CompleteClass */
-    var videoDeviceExtension: js.Any = js.native
+    var videoDeviceExtension: Any = js.native
   }
   
   @JSGlobal("Windows.ApplicationModel.Activation.ContactPickerActivatedEventArgs")
   @js.native
-  class ContactPickerActivatedEventArgs ()
+  open class ContactPickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.ContactPickerActivatedEventArgs {
     
@@ -168,7 +168,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.DeviceActivatedEventArgs")
   @js.native
-  class DeviceActivatedEventArgs ()
+  open class DeviceActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.DeviceActivatedEventArgs {
     
@@ -190,7 +190,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.FileActivatedEventArgs")
   @js.native
-  class FileActivatedEventArgs ()
+  open class FileActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.FileActivatedEventArgs {
     
@@ -212,7 +212,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs")
   @js.native
-  class FileOpenPickerActivatedEventArgs ()
+  open class FileOpenPickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs {
     
@@ -231,7 +231,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs")
   @js.native
-  class FileSavePickerActivatedEventArgs ()
+  open class FileSavePickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs {
     
@@ -250,7 +250,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.LaunchActivatedEventArgs")
   @js.native
-  class LaunchActivatedEventArgs ()
+  open class LaunchActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.LaunchActivatedEventArgs {
     
@@ -272,7 +272,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.PrintTaskSettingsActivatedEventArgs")
   @js.native
-  class PrintTaskSettingsActivatedEventArgs ()
+  open class PrintTaskSettingsActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.PrintTaskSettingsActivatedEventArgs {
     
@@ -291,7 +291,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.ProtocolActivatedEventArgs")
   @js.native
-  class ProtocolActivatedEventArgs ()
+  open class ProtocolActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.ProtocolActivatedEventArgs {
     
@@ -310,7 +310,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.SearchActivatedEventArgs")
   @js.native
-  class SearchActivatedEventArgs ()
+  open class SearchActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.SearchActivatedEventArgs {
     
@@ -332,7 +332,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs")
   @js.native
-  class ShareTargetActivatedEventArgs ()
+  open class ShareTargetActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs {
     
@@ -351,7 +351,7 @@ object Activation {
   
   @JSGlobal("Windows.ApplicationModel.Activation.SplashScreen")
   @js.native
-  class SplashScreen ()
+  open class SplashScreen ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Activation.SplashScreen {
     
@@ -359,6 +359,6 @@ object Activation {
     var imageLocation: Rect = js.native
     
     /* CompleteClass */
-    var ondismissed: js.Any = js.native
+    var ondismissed: Any = js.native
   }
 }

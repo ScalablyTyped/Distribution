@@ -68,7 +68,7 @@ object KiiACLEntry {
   inline def apply(
     getAction: () => KiiACLAction,
     getGrant: () => Boolean,
-    getSubject: () => js.Any,
+    getSubject: () => Any,
     setAction: KiiACLAction => Unit,
     setGrant: Boolean => Unit,
     setSubject: KiiACLSubject => Unit
@@ -83,7 +83,7 @@ object KiiACLEntry {
     
     inline def setGetGrant(value: () => Boolean): Self = StObject.set(x, "getGrant", js.Any.fromFunction0(value))
     
-    inline def setGetSubject(value: () => js.Any): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+    inline def setGetSubject(value: () => Any): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     inline def setSetAction(value: KiiACLAction => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
     

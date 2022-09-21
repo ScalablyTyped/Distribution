@@ -9,12 +9,12 @@ trait LinkAssociation extends StObject {
   /**
     * The device ID for the link association.
     */
-  var DeviceId: js.UndefOr[String] = js.undefined
+  var DeviceId: js.UndefOr[typings.awsSdk.networkmanagerMod.DeviceId] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The state of the association.
@@ -24,7 +24,7 @@ trait LinkAssociation extends StObject {
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.undefined
+  var LinkId: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkId] = js.undefined
 }
 object LinkAssociation {
   
@@ -35,11 +35,11 @@ object LinkAssociation {
   
   extension [Self <: LinkAssociation](x: Self) {
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
@@ -47,7 +47,7 @@ object LinkAssociation {
     
     inline def setLinkAssociationStateUndefined: Self = StObject.set(x, "LinkAssociationState", js.undefined)
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
   }

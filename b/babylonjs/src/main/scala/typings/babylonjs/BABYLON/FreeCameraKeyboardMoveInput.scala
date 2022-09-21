@@ -9,18 +9,20 @@ trait FreeCameraKeyboardMoveInput
   extends StObject
      with ICameraInput[FreeCamera] {
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _keys: js.Any = js.native
+  /* private */ var _getLocalRotation: Any = js.native
   
-  /* private */ var _onCanvasBlurObserver: js.Any = js.native
+  /* private */ var _keys: Any = js.native
   
-  /* private */ var _onKeyboardObserver: js.Any = js.native
+  /* private */ var _onCanvasBlurObserver: Any = js.native
+  
+  /* private */ var _onKeyboardObserver: Any = js.native
   
   /** @hidden */
   def _onLostFocus(): Unit = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * Defines the camera the input is attached to.
@@ -56,6 +58,16 @@ trait FreeCameraKeyboardMoveInput
   var keysRight: js.Array[Double] = js.native
   
   /**
+    * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
+    */
+  var keysRotateLeft: js.Array[Double] = js.native
+  
+  /**
+    * Gets or Set the list of keyboard keys used to control the right rotation move of the camera.
+    */
+  var keysRotateRight: js.Array[Double] = js.native
+  
+  /**
     * Gets or Set the list of keyboard keys used to control the forward move of the camera.
     */
   var keysUp: js.Array[Double] = js.native
@@ -64,4 +76,9 @@ trait FreeCameraKeyboardMoveInput
     * Gets or Set the list of keyboard keys used to control the upward move of the camera.
     */
   var keysUpward: js.Array[Double] = js.native
+  
+  /**
+    * Defines the pointer angular sensibility  along the X and Y axis or how fast is the camera rotating.
+    */
+  var rotationSpeed: Double = js.native
 }

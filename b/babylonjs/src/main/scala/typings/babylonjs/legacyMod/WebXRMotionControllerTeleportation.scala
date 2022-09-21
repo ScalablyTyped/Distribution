@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRMotionControllerTeleportation")
 @js.native
-class WebXRMotionControllerTeleportation protected ()
+open class WebXRMotionControllerTeleportation protected ()
   extends typings.babylonjs.indexMod.WebXRMotionControllerTeleportation {
   /**
-    * constructs a new anchor system
+    * constructs a new teleportation system
     * @param _xrSessionManager an instance of WebXRSessionManager
     * @param _options configuration object for this feature
     */

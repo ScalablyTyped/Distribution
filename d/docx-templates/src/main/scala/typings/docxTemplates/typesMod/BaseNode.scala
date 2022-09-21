@@ -23,7 +23,7 @@ object BaseNode {
     
     inline def set_children(value: js.Array[Node]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
     
-    inline def set_childrenVarargs(value: Node*): Self = StObject.set(x, "_children", js.Array(value :_*))
+    inline def set_childrenVarargs(value: Node*): Self = StObject.set(x, "_children", js.Array(value*))
     
     inline def set_ifName(value: String): Self = StObject.set(x, "_ifName", value.asInstanceOf[js.Any])
     

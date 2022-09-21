@@ -25,6 +25,6 @@ object ITableRow {
     
     inline def setVqValue(value: js.Array[IFieldValue]): Self = StObject.set(x, "vqValue", value.asInstanceOf[js.Any])
     
-    inline def setVqValueVarargs(value: IFieldValue*): Self = StObject.set(x, "vqValue", js.Array(value :_*))
+    inline def setVqValueVarargs(value: IFieldValue*): Self = StObject.set(x, "vqValue", js.Array(value*))
   }
 }

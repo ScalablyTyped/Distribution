@@ -21,6 +21,6 @@ object Partitions {
     
     inline def setPartitions(value: js.Array[WebViewPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
-    inline def setPartitionsVarargs(value: WebViewPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: WebViewPartition*): Self = StObject.set(x, "partitions", js.Array(value*))
   }
 }

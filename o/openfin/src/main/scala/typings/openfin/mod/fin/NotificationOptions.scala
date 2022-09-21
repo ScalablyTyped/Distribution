@@ -15,7 +15,7 @@ trait NotificationOptions extends StObject {
   /**
     * A message of any primitive or composite-primitive type to be passed to the notification upon creation.
     */
-  var message: js.UndefOr[js.Any] = js.undefined
+  var message: js.UndefOr[Any] = js.undefined
   
   /**
     * A function that is called when a notification is clicked.
@@ -48,7 +48,7 @@ trait NotificationOptions extends StObject {
     * The onMessage function will respond to messages sent from notification.sendMessageToApplication.
     * The function is passed the message, which can be of any primitive or composite-primitive type.
     */
-  var onMessage: js.UndefOr[js.Function1[/* callback */ js.Function1[/* message */ js.Any, Unit], Unit]] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* callback */ js.Function1[/* message */ Any, Unit], Unit]] = js.undefined
   
   /**
     * A function that is called when a notification is shown.
@@ -80,7 +80,7 @@ object NotificationOptions {
     
     inline def setIgnoreMouseOverUndefined: Self = StObject.set(x, "ignoreMouseOver", js.undefined)
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
@@ -102,7 +102,7 @@ object NotificationOptions {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnMessage(value: /* callback */ js.Function1[/* message */ js.Any, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: /* callback */ js.Function1[/* message */ Any, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     

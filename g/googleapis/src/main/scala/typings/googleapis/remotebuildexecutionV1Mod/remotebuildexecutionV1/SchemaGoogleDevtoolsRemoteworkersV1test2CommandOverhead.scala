@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * DEPRECATED - use CommandResult instead. Can be used as part of
-  * CompleteRequest.metadata, or are part of a more sophisticated message.
-  */
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead extends StObject {
   
   /**
-    * The elapsed time between calling Accept and Complete. The server will
-    * also have its own idea of what this should be, but this excludes the
-    * overhead of the RPCs and the bot response time.
+    * The elapsed time between calling Accept and Complete. The server will also have its own idea of what this should be, but this excludes the overhead of the RPCs and the bot response time.
     */
-  var duration: js.UndefOr[String] = js.undefined
+  var duration: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The amount of time *not* spent executing the command (ie
-    * uploading/downloading files).
+    * The amount of time *not* spent executing the command (ie uploading/downloading files).
     */
-  var overhead: js.UndefOr[String] = js.undefined
+  var overhead: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead {
   
@@ -34,9 +27,13 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
+    
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     inline def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
+    
+    inline def setOverheadNull: Self = StObject.set(x, "overhead", null)
     
     inline def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
   }

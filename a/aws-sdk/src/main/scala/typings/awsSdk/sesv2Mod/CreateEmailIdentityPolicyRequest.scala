@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateEmailIdentityPolicyRequest extends StObject {
   
   /**
-    * The email identity for which you want to create a policy.
+    * The email identity.
     */
   var EmailIdentity: Identity
   

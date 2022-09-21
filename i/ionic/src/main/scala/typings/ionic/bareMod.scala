@@ -12,7 +12,7 @@ object bareMod {
   
   @JSImport("ionic/lib/project/bare", "BareProject")
   @js.native
-  class BareProject protected () extends Project {
+  open class BareProject protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("type")

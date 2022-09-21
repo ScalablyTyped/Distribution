@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "ObservableObject")
 @js.native
-class ObservableObject () extends StObject {
-  def this(obj: js.Any) = this()
+open class ObservableObject () extends StObject {
+  def this(obj: Any) = this()
   
   /**Remove property changed listeners  */
   def _forget(): Unit = js.native
   
   /** Make the obj observable. Used in constructor or extend this class and use it. */
-  /* private */ def makeObservable(obj: js.Any): Unit = js.native
+  /* private */ def makeObservable(obj: Any): Unit = js.native
   
   /** If developer wants manualy notify for property changed */
-  def notifyPropertyChanged(propertyName: String, oldValue: js.Any): Unit = js.native
+  def notifyPropertyChanged(propertyName: String, oldValue: Any): Unit = js.native
   
   /**Add a listener/observer to watch for changes in this object's properties */
   def onPropertyChanged(listener: PropertyChangedCallback): Unit = js.native
   
   /* private */ var propertyChangedListeners: js.Array[PropertyChangedCallback] = js.native
   
-  def toJSON(excludeProperties: String*): js.Any = js.native
+  def toJSON(excludeProperties: String*): Any = js.native
 }
 object ObservableObject {
   

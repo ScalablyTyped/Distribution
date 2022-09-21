@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("@fluentui/react-focus", "FocusZone")
   @js.native
-  class FocusZone protected ()
+  open class FocusZone protected ()
     extends typings.fluentuiReactFocus.focusZoneMod.FocusZone {
     def this(props: IFocusZoneProps) = this()
   }
@@ -30,8 +30,8 @@ object mod {
       */
     @JSImport("@fluentui/react-focus", "FocusZone._onKeyDownCapture")
     @js.native
-    def _onKeyDownCapture: js.Any = js.native
-    inline def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
+    def _onKeyDownCapture: Any = js.native
+    inline def _onKeyDownCapture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
     
     @JSImport("@fluentui/react-focus", "FocusZone.defaultProps")
     @js.native

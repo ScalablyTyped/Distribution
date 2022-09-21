@@ -23,6 +23,6 @@ object MediaTrackConstraints {
     
     inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
     
-    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value :_*))
+    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value*))
   }
 }

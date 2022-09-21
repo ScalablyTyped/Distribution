@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for a batch update failure resource.
-  */
 trait SchemaEventBatchRecordFailure extends StObject {
   
   /**
-    * The cause for the update failure. Possible values are:   -
-    * &quot;TOO_LARGE&quot;: A batch request was issued with more events than
-    * are allowed in a single batch.  - &quot;TIME_PERIOD_EXPIRED&quot;: A
-    * batch was sent with data too far in the past to record.  -
-    * &quot;TIME_PERIOD_SHORT&quot;: A batch was sent with a time range that
-    * was too short.  - &quot;TIME_PERIOD_LONG&quot;: A batch was sent with a
-    * time range that was too long.  - &quot;ALREADY_UPDATED&quot;: An attempt
-    * was made to record a batch of data which was already seen.  -
-    * &quot;RECORD_RATE_HIGH&quot;: An attempt was made to record data faster
-    * than the server will apply updates.
+    * The cause for the update failure.
     */
-  var failureCause: js.UndefOr[String] = js.undefined
+  var failureCause: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#eventBatchRecordFailure.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#eventBatchRecordFailure`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The time range which was rejected; empty for a request-wide failure.
@@ -45,9 +32,13 @@ object SchemaEventBatchRecordFailure {
     
     inline def setFailureCause(value: String): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
     
+    inline def setFailureCauseNull: Self = StObject.set(x, "failureCause", null)
+    
     inline def setFailureCauseUndefined: Self = StObject.set(x, "failureCause", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

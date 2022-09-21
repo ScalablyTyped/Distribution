@@ -19,7 +19,7 @@ trait FeedId extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The Content API Supplemental Feed ID. */
+  /** The Content API Supplemental Feed ID. If present then product deletion applies to the data in a supplemental feed. If absent, entire product will be deleted. */
   var feedId: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */

@@ -12,7 +12,7 @@ trait AwsDynamoDbTableKeySchema extends StObject {
   var AttributeName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The type of key used for the key schema attribute.
+    * The type of key used for the key schema attribute. Valid values are HASH or RANGE.
     */
   var KeyType: js.UndefOr[NonEmptyString] = js.undefined
 }

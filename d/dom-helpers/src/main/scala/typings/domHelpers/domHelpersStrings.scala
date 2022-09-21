@@ -1,5 +1,6 @@
 package typings.domHelpers
 
+import typings.domHelpers.collectElementsMod.TraverseDirection
 import typings.domHelpers.isTransformMod.TransformValue
 import typings.domHelpers.typesMod.CamelProperty
 import typings.domHelpers.typesMod.HyphenProperty
@@ -323,12 +324,6 @@ object domHelpersStrings {
   inline def `-moz-column-fill`: `-moz-column-fill` = "-moz-column-fill".asInstanceOf[`-moz-column-fill`]
   
   @js.native
-  sealed trait `-moz-column-gap`
-    extends StObject
-       with HyphenProperty
-  inline def `-moz-column-gap`: `-moz-column-gap` = "-moz-column-gap".asInstanceOf[`-moz-column-gap`]
-  
-  @js.native
   sealed trait `-moz-column-rule`
     extends StObject
        with HyphenProperty
@@ -647,12 +642,6 @@ object domHelpersStrings {
   inline def `-ms-accelerator`: `-ms-accelerator` = "-ms-accelerator".asInstanceOf[`-ms-accelerator`]
   
   @js.native
-  sealed trait `-ms-align-self`
-    extends StObject
-       with HyphenProperty
-  inline def `-ms-align-self`: `-ms-align-self` = "-ms-align-self".asInstanceOf[`-ms-align-self`]
-  
-  @js.native
   sealed trait `-ms-block-progression`
     extends StObject
        with HyphenProperty
@@ -795,12 +784,6 @@ object domHelpersStrings {
     extends StObject
        with HyphenProperty
   inline def `-ms-ime-mode`: `-ms-ime-mode` = "-ms-ime-mode".asInstanceOf[`-ms-ime-mode`]
-  
-  @js.native
-  sealed trait `-ms-justify-self`
-    extends StObject
-       with HyphenProperty
-  inline def `-ms-justify-self`: `-ms-justify-self` = "-ms-justify-self".asInstanceOf[`-ms-justify-self`]
   
   @js.native
   sealed trait `-ms-line-break`
@@ -1463,12 +1446,6 @@ object domHelpersStrings {
   inline def `-webkit-column-fill`: `-webkit-column-fill` = "-webkit-column-fill".asInstanceOf[`-webkit-column-fill`]
   
   @js.native
-  sealed trait `-webkit-column-gap`
-    extends StObject
-       with HyphenProperty
-  inline def `-webkit-column-gap`: `-webkit-column-gap` = "-webkit-column-gap".asInstanceOf[`-webkit-column-gap`]
-  
-  @js.native
   sealed trait `-webkit-column-rule`
     extends StObject
        with HyphenProperty
@@ -1583,10 +1560,22 @@ object domHelpersStrings {
   inline def `-webkit-font-variant-ligatures`: `-webkit-font-variant-ligatures` = "-webkit-font-variant-ligatures".asInstanceOf[`-webkit-font-variant-ligatures`]
   
   @js.native
+  sealed trait `-webkit-hyphenate-character`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-hyphenate-character`: `-webkit-hyphenate-character` = "-webkit-hyphenate-character".asInstanceOf[`-webkit-hyphenate-character`]
+  
+  @js.native
   sealed trait `-webkit-hyphens`
     extends StObject
        with HyphenProperty
   inline def `-webkit-hyphens`: `-webkit-hyphens` = "-webkit-hyphens".asInstanceOf[`-webkit-hyphens`]
+  
+  @js.native
+  sealed trait `-webkit-initial-letter`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-initial-letter`: `-webkit-initial-letter` = "-webkit-initial-letter".asInstanceOf[`-webkit-initial-letter`]
   
   @js.native
   sealed trait `-webkit-justify-content`
@@ -1629,6 +1618,42 @@ object domHelpersStrings {
     extends StObject
        with HyphenProperty
   inline def `-webkit-mask-attachment`: `-webkit-mask-attachment` = "-webkit-mask-attachment".asInstanceOf[`-webkit-mask-attachment`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image`: `-webkit-mask-box-image` = "-webkit-mask-box-image".asInstanceOf[`-webkit-mask-box-image`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image-outset`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image-outset`: `-webkit-mask-box-image-outset` = "-webkit-mask-box-image-outset".asInstanceOf[`-webkit-mask-box-image-outset`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image-repeat`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image-repeat`: `-webkit-mask-box-image-repeat` = "-webkit-mask-box-image-repeat".asInstanceOf[`-webkit-mask-box-image-repeat`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image-slice`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image-slice`: `-webkit-mask-box-image-slice` = "-webkit-mask-box-image-slice".asInstanceOf[`-webkit-mask-box-image-slice`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image-source`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image-source`: `-webkit-mask-box-image-source` = "-webkit-mask-box-image-source".asInstanceOf[`-webkit-mask-box-image-source`]
+  
+  @js.native
+  sealed trait `-webkit-mask-box-image-width`
+    extends StObject
+       with HyphenProperty
+  inline def `-webkit-mask-box-image-width`: `-webkit-mask-box-image-width` = "-webkit-mask-box-image-width".asInstanceOf[`-webkit-mask-box-image-width`]
   
   @js.native
   sealed trait `-webkit-mask-clip`
@@ -2259,12 +2284,6 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def MozColumnFill: MozColumnFill = "MozColumnFill".asInstanceOf[MozColumnFill]
-  
-  @js.native
-  sealed trait MozColumnGap
-    extends StObject
-       with CamelProperty
-  inline def MozColumnGap: MozColumnGap = "MozColumnGap".asInstanceOf[MozColumnGap]
   
   @js.native
   sealed trait MozColumnRule
@@ -2975,12 +2994,6 @@ object domHelpersStrings {
   inline def WebkitColumnFill: WebkitColumnFill = "WebkitColumnFill".asInstanceOf[WebkitColumnFill]
   
   @js.native
-  sealed trait WebkitColumnGap
-    extends StObject
-       with CamelProperty
-  inline def WebkitColumnGap: WebkitColumnGap = "WebkitColumnGap".asInstanceOf[WebkitColumnGap]
-  
-  @js.native
   sealed trait WebkitColumnRule
     extends StObject
        with CamelProperty
@@ -3095,10 +3108,22 @@ object domHelpersStrings {
   inline def WebkitFontVariantLigatures: WebkitFontVariantLigatures = "WebkitFontVariantLigatures".asInstanceOf[WebkitFontVariantLigatures]
   
   @js.native
+  sealed trait WebkitHyphenateCharacter
+    extends StObject
+       with CamelProperty
+  inline def WebkitHyphenateCharacter: WebkitHyphenateCharacter = "WebkitHyphenateCharacter".asInstanceOf[WebkitHyphenateCharacter]
+  
+  @js.native
   sealed trait WebkitHyphens
     extends StObject
        with CamelProperty
   inline def WebkitHyphens: WebkitHyphens = "WebkitHyphens".asInstanceOf[WebkitHyphens]
+  
+  @js.native
+  sealed trait WebkitInitialLetter
+    extends StObject
+       with CamelProperty
+  inline def WebkitInitialLetter: WebkitInitialLetter = "WebkitInitialLetter".asInstanceOf[WebkitInitialLetter]
   
   @js.native
   sealed trait WebkitJustifyContent
@@ -3141,6 +3166,42 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def WebkitMaskAttachment: WebkitMaskAttachment = "WebkitMaskAttachment".asInstanceOf[WebkitMaskAttachment]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImage
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImage: WebkitMaskBoxImage = "WebkitMaskBoxImage".asInstanceOf[WebkitMaskBoxImage]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageOutset
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImageOutset: WebkitMaskBoxImageOutset = "WebkitMaskBoxImageOutset".asInstanceOf[WebkitMaskBoxImageOutset]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageRepeat
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImageRepeat: WebkitMaskBoxImageRepeat = "WebkitMaskBoxImageRepeat".asInstanceOf[WebkitMaskBoxImageRepeat]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageSlice
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImageSlice: WebkitMaskBoxImageSlice = "WebkitMaskBoxImageSlice".asInstanceOf[WebkitMaskBoxImageSlice]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageSource
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImageSource: WebkitMaskBoxImageSource = "WebkitMaskBoxImageSource".asInstanceOf[WebkitMaskBoxImageSource]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageWidth
+    extends StObject
+       with CamelProperty
+  inline def WebkitMaskBoxImageWidth: WebkitMaskBoxImageWidth = "WebkitMaskBoxImageWidth".asInstanceOf[WebkitMaskBoxImageWidth]
   
   @js.native
   sealed trait WebkitMaskClip
@@ -3465,6 +3526,19 @@ object domHelpersStrings {
   inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
+  sealed trait `accent-color`
+    extends StObject
+       with HyphenProperty
+  inline def `accent-color`: `accent-color` = "accent-color".asInstanceOf[`accent-color`]
+  
+  @js.native
+  sealed trait accentColor
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def accentColor: accentColor = "accentColor".asInstanceOf[accentColor]
+  
+  @js.native
   sealed trait `align-content`
     extends StObject
        with HyphenProperty
@@ -3545,6 +3619,12 @@ object domHelpersStrings {
   inline def animation: animation = "animation".asInstanceOf[animation]
   
   @js.native
+  sealed trait `animation-composition`
+    extends StObject
+       with HyphenProperty
+  inline def `animation-composition`: `animation-composition` = "animation-composition".asInstanceOf[`animation-composition`]
+  
+  @js.native
   sealed trait `animation-delay`
     extends StObject
        with HyphenProperty
@@ -3587,10 +3667,22 @@ object domHelpersStrings {
   inline def `animation-play-state`: `animation-play-state` = "animation-play-state".asInstanceOf[`animation-play-state`]
   
   @js.native
+  sealed trait `animation-timeline`
+    extends StObject
+       with HyphenProperty
+  inline def `animation-timeline`: `animation-timeline` = "animation-timeline".asInstanceOf[`animation-timeline`]
+  
+  @js.native
   sealed trait `animation-timing-function`
     extends StObject
        with HyphenProperty
   inline def `animation-timing-function`: `animation-timing-function` = "animation-timing-function".asInstanceOf[`animation-timing-function`]
+  
+  @js.native
+  sealed trait animationComposition
+    extends StObject
+       with CamelProperty
+  inline def animationComposition: animationComposition = "animationComposition".asInstanceOf[animationComposition]
   
   @js.native
   sealed trait animationDelay
@@ -3642,6 +3734,12 @@ object domHelpersStrings {
   inline def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
   
   @js.native
+  sealed trait animationTimeline
+    extends StObject
+       with CamelProperty
+  inline def animationTimeline: animationTimeline = "animationTimeline".asInstanceOf[animationTimeline]
+  
+  @js.native
   sealed trait animationTimingFunction
     extends StObject
        with CamelProperty
@@ -3669,6 +3767,7 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def appearance: appearance = "appearance".asInstanceOf[appearance]
   
   @js.native
@@ -3681,6 +3780,7 @@ object domHelpersStrings {
   sealed trait aspectRatio
     extends StObject
        with CamelProperty
+       with Styles
   inline def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
   
   @js.native
@@ -3804,6 +3904,7 @@ object domHelpersStrings {
   sealed trait backgroundBlendMode
     extends StObject
        with CamelProperty
+       with Styles
   inline def backgroundBlendMode: backgroundBlendMode = "backgroundBlendMode".asInstanceOf[backgroundBlendMode]
   
   @js.native
@@ -3881,6 +3982,10 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
+  
+  @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
   sealed trait `block-overflow`
@@ -4283,12 +4388,14 @@ object domHelpersStrings {
   sealed trait borderBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderBlock: borderBlock = "borderBlock".asInstanceOf[borderBlock]
   
   @js.native
   sealed trait borderBlockColor
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderBlockColor: borderBlockColor = "borderBlockColor".asInstanceOf[borderBlockColor]
   
   @js.native
@@ -4351,12 +4458,14 @@ object domHelpersStrings {
   sealed trait borderBlockStyle
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderBlockStyle: borderBlockStyle = "borderBlockStyle".asInstanceOf[borderBlockStyle]
   
   @js.native
   sealed trait borderBlockWidth
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderBlockWidth: borderBlockWidth = "borderBlockWidth".asInstanceOf[borderBlockWidth]
   
   @js.native
@@ -4419,12 +4528,14 @@ object domHelpersStrings {
   sealed trait borderEndEndRadius
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderEndEndRadius: borderEndEndRadius = "borderEndEndRadius".asInstanceOf[borderEndEndRadius]
   
   @js.native
   sealed trait borderEndStartRadius
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderEndStartRadius: borderEndStartRadius = "borderEndStartRadius".asInstanceOf[borderEndStartRadius]
   
   @js.native
@@ -4473,12 +4584,14 @@ object domHelpersStrings {
   sealed trait borderInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderInline: borderInline = "borderInline".asInstanceOf[borderInline]
   
   @js.native
   sealed trait borderInlineColor
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderInlineColor: borderInlineColor = "borderInlineColor".asInstanceOf[borderInlineColor]
   
   @js.native
@@ -4541,12 +4654,14 @@ object domHelpersStrings {
   sealed trait borderInlineStyle
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderInlineStyle: borderInlineStyle = "borderInlineStyle".asInstanceOf[borderInlineStyle]
   
   @js.native
   sealed trait borderInlineWidth
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderInlineWidth: borderInlineWidth = "borderInlineWidth".asInstanceOf[borderInlineWidth]
   
   @js.native
@@ -4623,12 +4738,14 @@ object domHelpersStrings {
   sealed trait borderStartEndRadius
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderStartEndRadius: borderStartEndRadius = "borderStartEndRadius".asInstanceOf[borderStartEndRadius]
   
   @js.native
   sealed trait borderStartStartRadius
     extends StObject
        with CamelProperty
+       with Styles
   inline def borderStartStartRadius: borderStartStartRadius = "borderStartStartRadius".asInstanceOf[borderStartStartRadius]
   
   @js.native
@@ -4869,10 +4986,6 @@ object domHelpersStrings {
   inline def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   
   @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
-  
-  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   
@@ -4987,6 +5100,12 @@ object domHelpersStrings {
   inline def `color-rendering`: `color-rendering` = "color-rendering".asInstanceOf[`color-rendering`]
   
   @js.native
+  sealed trait `color-scheme`
+    extends StObject
+       with HyphenProperty
+  inline def `color-scheme`: `color-scheme` = "color-scheme".asInstanceOf[`color-scheme`]
+  
+  @js.native
   sealed trait colorAdjust
     extends StObject
        with CamelProperty
@@ -5010,6 +5129,13 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def colorRendering: colorRendering = "colorRendering".asInstanceOf[colorRendering]
+  
+  @js.native
+  sealed trait colorScheme
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def colorScheme: colorScheme = "colorScheme".asInstanceOf[colorScheme]
   
   @js.native
   sealed trait `column-count`
@@ -5137,10 +5263,23 @@ object domHelpersStrings {
   inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
+  
+  @js.native
   sealed trait contain
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
@@ -5150,6 +5289,18 @@ object domHelpersStrings {
        with HyphenProperty
        with Styles
   inline def content: content = "content".asInstanceOf[content]
+  
+  @js.native
+  sealed trait `content-visibility`
+    extends StObject
+       with HyphenProperty
+  inline def `content-visibility`: `content-visibility` = "content-visibility".asInstanceOf[`content-visibility`]
+  
+  @js.native
+  sealed trait contentVisibility
+    extends StObject
+       with CamelProperty
+  inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
   
   @js.native
   sealed trait contextmenu extends StObject
@@ -5195,6 +5346,7 @@ object domHelpersStrings {
   sealed trait counterSet
     extends StObject
        with CamelProperty
+       with Styles
   inline def counterSet: counterSet = "counterSet".asInstanceOf[counterSet]
   
   @js.native
@@ -5269,10 +5421,6 @@ object domHelpersStrings {
   @js.native
   sealed trait dragenter extends StObject
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragleave extends StObject
@@ -5652,6 +5800,7 @@ object domHelpersStrings {
   sealed trait fontOpticalSizing
     extends StObject
        with CamelProperty
+       with Styles
   inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
   
   @js.native
@@ -5706,6 +5855,7 @@ object domHelpersStrings {
   sealed trait fontVariantAlternates
     extends StObject
        with CamelProperty
+       with Styles
   inline def fontVariantAlternates: fontVariantAlternates = "fontVariantAlternates".asInstanceOf[fontVariantAlternates]
   
   @js.native
@@ -5747,6 +5897,7 @@ object domHelpersStrings {
   sealed trait fontVariationSettings
     extends StObject
        with CamelProperty
+       with Styles
   inline def fontVariationSettings: fontVariationSettings = "fontVariationSettings".asInstanceOf[fontVariationSettings]
   
   @js.native
@@ -5755,6 +5906,22 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  
+  @js.native
+  sealed trait `forced-color-adjust`
+    extends StObject
+       with HyphenProperty
+  inline def `forced-color-adjust`: `forced-color-adjust` = "forced-color-adjust".asInstanceOf[`forced-color-adjust`]
+  
+  @js.native
+  sealed trait forcedColorAdjust
+    extends StObject
+       with CamelProperty
+  inline def forcedColorAdjust: forcedColorAdjust = "forcedColorAdjust".asInstanceOf[forcedColorAdjust]
+  
+  @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -5782,7 +5949,6 @@ object domHelpersStrings {
   sealed trait glyphOrientationVertical
     extends StObject
        with CamelProperty
-       with Styles
   inline def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   
   @js.native
@@ -6039,6 +6205,18 @@ object domHelpersStrings {
   inline def height: height = "height".asInstanceOf[height]
   
   @js.native
+  sealed trait `hyphenate-character`
+    extends StObject
+       with HyphenProperty
+  inline def `hyphenate-character`: `hyphenate-character` = "hyphenate-character".asInstanceOf[`hyphenate-character`]
+  
+  @js.native
+  sealed trait hyphenateCharacter
+    extends StObject
+       with CamelProperty
+  inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
+  
+  @js.native
   sealed trait hyphens
     extends StObject
        with CamelProperty
@@ -6126,10 +6304,23 @@ object domHelpersStrings {
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
+  sealed trait `input-security`
+    extends StObject
+       with HyphenProperty
+  inline def `input-security`: `input-security` = "input-security".asInstanceOf[`input-security`]
+  
+  @js.native
+  sealed trait inputSecurity
+    extends StObject
+       with CamelProperty
+  inline def inputSecurity: inputSecurity = "inputSecurity".asInstanceOf[inputSecurity]
+  
+  @js.native
   sealed trait inset
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def inset: inset = "inset".asInstanceOf[inset]
   
   @js.native
@@ -6172,36 +6363,42 @@ object domHelpersStrings {
   sealed trait insetBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetBlock: insetBlock = "insetBlock".asInstanceOf[insetBlock]
   
   @js.native
   sealed trait insetBlockEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetBlockEnd: insetBlockEnd = "insetBlockEnd".asInstanceOf[insetBlockEnd]
   
   @js.native
   sealed trait insetBlockStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetBlockStart: insetBlockStart = "insetBlockStart".asInstanceOf[insetBlockStart]
   
   @js.native
   sealed trait insetInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetInline: insetInline = "insetInline".asInstanceOf[insetInline]
   
   @js.native
   sealed trait insetInlineEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetInlineEnd: insetInlineEnd = "insetInlineEnd".asInstanceOf[insetInlineEnd]
   
   @js.native
   sealed trait insetInlineStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def insetInlineStart: insetInlineStart = "insetInlineStart".asInstanceOf[insetInlineStart]
   
   @js.native
@@ -6213,6 +6410,7 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def isolation: isolation = "isolation".asInstanceOf[isolation]
   
   @js.native
@@ -6512,6 +6710,7 @@ object domHelpersStrings {
   sealed trait marginBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def marginBlock: marginBlock = "marginBlock".asInstanceOf[marginBlock]
   
   @js.native
@@ -6539,6 +6738,7 @@ object domHelpersStrings {
   sealed trait marginInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def marginInline: marginInline = "marginInline".asInstanceOf[marginInline]
   
   @js.native
@@ -6773,6 +6973,7 @@ object domHelpersStrings {
   sealed trait maskClip
     extends StObject
        with CamelProperty
+       with Styles
   inline def maskClip: maskClip = "maskClip".asInstanceOf[maskClip]
   
   @js.native
@@ -6793,12 +6994,14 @@ object domHelpersStrings {
   sealed trait maskMode
     extends StObject
        with CamelProperty
+       with Styles
   inline def maskMode: maskMode = "maskMode".asInstanceOf[maskMode]
   
   @js.native
   sealed trait maskOrigin
     extends StObject
        with CamelProperty
+       with Styles
   inline def maskOrigin: maskOrigin = "maskOrigin".asInstanceOf[maskOrigin]
   
   @js.native
@@ -6830,22 +7033,34 @@ object domHelpersStrings {
   inline def maskType: maskType = "maskType".asInstanceOf[maskType]
   
   @js.native
-  sealed trait `masonry-auto-flow`
+  sealed trait `math-depth`
     extends StObject
        with HyphenProperty
-  inline def `masonry-auto-flow`: `masonry-auto-flow` = "masonry-auto-flow".asInstanceOf[`masonry-auto-flow`]
+  inline def `math-depth`: `math-depth` = "math-depth".asInstanceOf[`math-depth`]
   
   @js.native
-  sealed trait masonryAutoFlow
+  sealed trait `math-shift`
     extends StObject
-       with CamelProperty
-  inline def masonryAutoFlow: masonryAutoFlow = "masonryAutoFlow".asInstanceOf[masonryAutoFlow]
+       with HyphenProperty
+  inline def `math-shift`: `math-shift` = "math-shift".asInstanceOf[`math-shift`]
   
   @js.native
   sealed trait `math-style`
     extends StObject
        with HyphenProperty
   inline def `math-style`: `math-style` = "math-style".asInstanceOf[`math-style`]
+  
+  @js.native
+  sealed trait mathDepth
+    extends StObject
+       with CamelProperty
+  inline def mathDepth: mathDepth = "mathDepth".asInstanceOf[mathDepth]
+  
+  @js.native
+  sealed trait mathShift
+    extends StObject
+       with CamelProperty
+  inline def mathShift: mathShift = "mathShift".asInstanceOf[mathShift]
   
   @js.native
   sealed trait mathStyle
@@ -6991,6 +7206,7 @@ object domHelpersStrings {
   sealed trait mixBlendMode
     extends StObject
        with CamelProperty
+       with Styles
   inline def mixBlendMode: mixBlendMode = "mixBlendMode".asInstanceOf[mixBlendMode]
   
   @js.native
@@ -7069,12 +7285,6 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def msAccelerator: msAccelerator = "msAccelerator".asInstanceOf[msAccelerator]
-  
-  @js.native
-  sealed trait msAlignSelf
-    extends StObject
-       with CamelProperty
-  inline def msAlignSelf: msAlignSelf = "msAlignSelf".asInstanceOf[msAlignSelf]
   
   @js.native
   sealed trait msBlockProgression
@@ -7219,12 +7429,6 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def msImeMode: msImeMode = "msImeMode".asInstanceOf[msImeMode]
-  
-  @js.native
-  sealed trait msJustifySelf
-    extends StObject
-       with CamelProperty
-  inline def msJustifySelf: msJustifySelf = "msJustifySelf".asInstanceOf[msJustifySelf]
   
   @js.native
   sealed trait msLineBreak
@@ -7491,6 +7695,12 @@ object domHelpersStrings {
   inline def msWritingMode: msWritingMode = "msWritingMode".asInstanceOf[msWritingMode]
   
   @js.native
+  sealed trait nextElementSibling
+    extends StObject
+       with TraverseDirection
+  inline def nextElementSibling: nextElementSibling = "nextElementSibling".asInstanceOf[nextElementSibling]
+  
+  @js.native
   sealed trait `object-fit`
     extends StObject
        with HyphenProperty
@@ -7521,6 +7731,7 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
@@ -7617,6 +7828,7 @@ object domHelpersStrings {
   sealed trait offsetDistance
     extends StObject
        with CamelProperty
+       with Styles
   inline def offsetDistance: offsetDistance = "offsetDistance".asInstanceOf[offsetDistance]
   
   @js.native
@@ -7641,12 +7853,14 @@ object domHelpersStrings {
   sealed trait offsetPath
     extends StObject
        with CamelProperty
+       with Styles
   inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
   
   @js.native
   sealed trait offsetRotate
     extends StObject
        with CamelProperty
+       with Styles
   inline def offsetRotate: offsetRotate = "offsetRotate".asInstanceOf[offsetRotate]
   
   @js.native
@@ -7766,6 +7980,12 @@ object domHelpersStrings {
   inline def `overflow-clip-box`: `overflow-clip-box` = "overflow-clip-box".asInstanceOf[`overflow-clip-box`]
   
   @js.native
+  sealed trait `overflow-clip-margin`
+    extends StObject
+       with HyphenProperty
+  inline def `overflow-clip-margin`: `overflow-clip-margin` = "overflow-clip-margin".asInstanceOf[`overflow-clip-margin`]
+  
+  @js.native
   sealed trait `overflow-inline`
     extends StObject
        with HyphenProperty
@@ -7807,6 +8027,12 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def overflowClipBox: overflowClipBox = "overflowClipBox".asInstanceOf[overflowClipBox]
+  
+  @js.native
+  sealed trait overflowClipMargin
+    extends StObject
+       with CamelProperty
+  inline def overflowClipMargin: overflowClipMargin = "overflowClipMargin".asInstanceOf[overflowClipMargin]
   
   @js.native
   sealed trait overflowInline
@@ -7972,6 +8198,7 @@ object domHelpersStrings {
   sealed trait paddingBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def paddingBlock: paddingBlock = "paddingBlock".asInstanceOf[paddingBlock]
   
   @js.native
@@ -7999,6 +8226,7 @@ object domHelpersStrings {
   sealed trait paddingInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def paddingInline: paddingInline = "paddingInline".asInstanceOf[paddingInline]
   
   @js.native
@@ -8095,6 +8323,12 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
+  
+  @js.native
+  sealed trait parentElement
+    extends StObject
+       with TraverseDirection
+  inline def parentElement: parentElement = "parentElement".asInstanceOf[parentElement]
   
   @js.native
   sealed trait parentRule
@@ -8233,6 +8467,25 @@ object domHelpersStrings {
   inline def position: position = "position".asInstanceOf[position]
   
   @js.native
+  sealed trait previousElementSibling
+    extends StObject
+       with TraverseDirection
+  inline def previousElementSibling: previousElementSibling = "previousElementSibling".asInstanceOf[previousElementSibling]
+  
+  @js.native
+  sealed trait `print-color-adjust`
+    extends StObject
+       with HyphenProperty
+  inline def `print-color-adjust`: `print-color-adjust` = "print-color-adjust".asInstanceOf[`print-color-adjust`]
+  
+  @js.native
+  sealed trait printColorAdjust
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def printColorAdjust: printColorAdjust = "printColorAdjust".asInstanceOf[printColorAdjust]
+  
+  @js.native
   sealed trait progress extends StObject
   inline def progress: progress = "progress".asInstanceOf[progress]
   
@@ -8336,7 +8589,6 @@ object domHelpersStrings {
   sealed trait rubyAlign
     extends StObject
        with CamelProperty
-       with Styles
   inline def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
   
   @js.native
@@ -8622,138 +8874,161 @@ object domHelpersStrings {
   sealed trait scrollMargin
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMargin: scrollMargin = "scrollMargin".asInstanceOf[scrollMargin]
   
   @js.native
   sealed trait scrollMarginBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginBlock: scrollMarginBlock = "scrollMarginBlock".asInstanceOf[scrollMarginBlock]
   
   @js.native
   sealed trait scrollMarginBlockEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginBlockEnd: scrollMarginBlockEnd = "scrollMarginBlockEnd".asInstanceOf[scrollMarginBlockEnd]
   
   @js.native
   sealed trait scrollMarginBlockStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginBlockStart: scrollMarginBlockStart = "scrollMarginBlockStart".asInstanceOf[scrollMarginBlockStart]
   
   @js.native
   sealed trait scrollMarginBottom
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginBottom: scrollMarginBottom = "scrollMarginBottom".asInstanceOf[scrollMarginBottom]
   
   @js.native
   sealed trait scrollMarginInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginInline: scrollMarginInline = "scrollMarginInline".asInstanceOf[scrollMarginInline]
   
   @js.native
   sealed trait scrollMarginInlineEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginInlineEnd: scrollMarginInlineEnd = "scrollMarginInlineEnd".asInstanceOf[scrollMarginInlineEnd]
   
   @js.native
   sealed trait scrollMarginInlineStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginInlineStart: scrollMarginInlineStart = "scrollMarginInlineStart".asInstanceOf[scrollMarginInlineStart]
   
   @js.native
   sealed trait scrollMarginLeft
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginLeft: scrollMarginLeft = "scrollMarginLeft".asInstanceOf[scrollMarginLeft]
   
   @js.native
   sealed trait scrollMarginRight
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginRight: scrollMarginRight = "scrollMarginRight".asInstanceOf[scrollMarginRight]
   
   @js.native
   sealed trait scrollMarginTop
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollMarginTop: scrollMarginTop = "scrollMarginTop".asInstanceOf[scrollMarginTop]
   
   @js.native
   sealed trait scrollPadding
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
   
   @js.native
   sealed trait scrollPaddingBlock
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingBlock: scrollPaddingBlock = "scrollPaddingBlock".asInstanceOf[scrollPaddingBlock]
   
   @js.native
   sealed trait scrollPaddingBlockEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingBlockEnd: scrollPaddingBlockEnd = "scrollPaddingBlockEnd".asInstanceOf[scrollPaddingBlockEnd]
   
   @js.native
   sealed trait scrollPaddingBlockStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingBlockStart: scrollPaddingBlockStart = "scrollPaddingBlockStart".asInstanceOf[scrollPaddingBlockStart]
   
   @js.native
   sealed trait scrollPaddingBottom
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingBottom: scrollPaddingBottom = "scrollPaddingBottom".asInstanceOf[scrollPaddingBottom]
   
   @js.native
   sealed trait scrollPaddingInline
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingInline: scrollPaddingInline = "scrollPaddingInline".asInstanceOf[scrollPaddingInline]
   
   @js.native
   sealed trait scrollPaddingInlineEnd
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingInlineEnd: scrollPaddingInlineEnd = "scrollPaddingInlineEnd".asInstanceOf[scrollPaddingInlineEnd]
   
   @js.native
   sealed trait scrollPaddingInlineStart
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingInlineStart: scrollPaddingInlineStart = "scrollPaddingInlineStart".asInstanceOf[scrollPaddingInlineStart]
   
   @js.native
   sealed trait scrollPaddingLeft
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingLeft: scrollPaddingLeft = "scrollPaddingLeft".asInstanceOf[scrollPaddingLeft]
   
   @js.native
   sealed trait scrollPaddingRight
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingRight: scrollPaddingRight = "scrollPaddingRight".asInstanceOf[scrollPaddingRight]
   
   @js.native
   sealed trait scrollPaddingTop
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollPaddingTop: scrollPaddingTop = "scrollPaddingTop".asInstanceOf[scrollPaddingTop]
   
   @js.native
   sealed trait scrollSnapAlign
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollSnapAlign: scrollSnapAlign = "scrollSnapAlign".asInstanceOf[scrollSnapAlign]
   
   @js.native
@@ -8814,12 +9089,14 @@ object domHelpersStrings {
   sealed trait scrollSnapStop
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollSnapStop: scrollSnapStop = "scrollSnapStop".asInstanceOf[scrollSnapStop]
   
   @js.native
   sealed trait scrollSnapType
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollSnapType: scrollSnapType = "scrollSnapType".asInstanceOf[scrollSnapType]
   
   @js.native
@@ -8847,12 +9124,6 @@ object domHelpersStrings {
   inline def `scrollbar-gutter`: `scrollbar-gutter` = "scrollbar-gutter".asInstanceOf[`scrollbar-gutter`]
   
   @js.native
-  sealed trait `scrollbar-track-color`
-    extends StObject
-       with HyphenProperty
-  inline def `scrollbar-track-color`: `scrollbar-track-color` = "scrollbar-track-color".asInstanceOf[`scrollbar-track-color`]
-  
-  @js.native
   sealed trait `scrollbar-width`
     extends StObject
        with HyphenProperty
@@ -8868,13 +9139,8 @@ object domHelpersStrings {
   sealed trait scrollbarGutter
     extends StObject
        with CamelProperty
+       with Styles
   inline def scrollbarGutter: scrollbarGutter = "scrollbarGutter".asInstanceOf[scrollbarGutter]
-  
-  @js.native
-  sealed trait scrollbarTrackColor
-    extends StObject
-       with CamelProperty
-  inline def scrollbarTrackColor: scrollbarTrackColor = "scrollbarTrackColor".asInstanceOf[scrollbarTrackColor]
   
   @js.native
   sealed trait scrollbarWidth
@@ -8934,18 +9200,21 @@ object domHelpersStrings {
   sealed trait shapeImageThreshold
     extends StObject
        with CamelProperty
+       with Styles
   inline def shapeImageThreshold: shapeImageThreshold = "shapeImageThreshold".asInstanceOf[shapeImageThreshold]
   
   @js.native
   sealed trait shapeMargin
     extends StObject
        with CamelProperty
+       with Styles
   inline def shapeMargin: shapeMargin = "shapeMargin".asInstanceOf[shapeMargin]
   
   @js.native
   sealed trait shapeOutside
     extends StObject
        with CamelProperty
+       with Styles
   inline def shapeOutside: shapeOutside = "shapeOutside".asInstanceOf[shapeOutside]
   
   @js.native
@@ -8972,6 +9241,10 @@ object domHelpersStrings {
     extends StObject
        with TransformValue
   inline def skewY: skewY = "skewY".asInstanceOf[skewY]
+  
+  @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
   @js.native
   sealed trait stalled extends StObject
@@ -9155,12 +9428,6 @@ object domHelpersStrings {
   inline def `text-anchor`: `text-anchor` = "text-anchor".asInstanceOf[`text-anchor`]
   
   @js.native
-  sealed trait `text-combine-horizontal`
-    extends StObject
-       with HyphenProperty
-  inline def `text-combine-horizontal`: `text-combine-horizontal` = "text-combine-horizontal".asInstanceOf[`text-combine-horizontal`]
-  
-  @js.native
   sealed trait `text-combine-upright`
     extends StObject
        with HyphenProperty
@@ -9207,12 +9474,6 @@ object domHelpersStrings {
     extends StObject
        with HyphenProperty
   inline def `text-decoration-thickness`: `text-decoration-thickness` = "text-decoration-thickness".asInstanceOf[`text-decoration-thickness`]
-  
-  @js.native
-  sealed trait `text-decoration-width`
-    extends StObject
-       with HyphenProperty
-  inline def `text-decoration-width`: `text-decoration-width` = "text-decoration-width".asInstanceOf[`text-decoration-width`]
   
   @js.native
   sealed trait `text-emphasis`
@@ -9320,12 +9581,6 @@ object domHelpersStrings {
   inline def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
   
   @js.native
-  sealed trait textCombineHorizontal
-    extends StObject
-       with CamelProperty
-  inline def textCombineHorizontal: textCombineHorizontal = "textCombineHorizontal".asInstanceOf[textCombineHorizontal]
-  
-  @js.native
   sealed trait textCombineUpright
     extends StObject
        with CamelProperty
@@ -9363,6 +9618,7 @@ object domHelpersStrings {
   sealed trait textDecorationSkipInk
     extends StObject
        with CamelProperty
+       with Styles
   inline def textDecorationSkipInk: textDecorationSkipInk = "textDecorationSkipInk".asInstanceOf[textDecorationSkipInk]
   
   @js.native
@@ -9376,13 +9632,8 @@ object domHelpersStrings {
   sealed trait textDecorationThickness
     extends StObject
        with CamelProperty
+       with Styles
   inline def textDecorationThickness: textDecorationThickness = "textDecorationThickness".asInstanceOf[textDecorationThickness]
-  
-  @js.native
-  sealed trait textDecorationWidth
-    extends StObject
-       with CamelProperty
-  inline def textDecorationWidth: textDecorationWidth = "textDecorationWidth".asInstanceOf[textDecorationWidth]
   
   @js.native
   sealed trait textEmphasis
@@ -9423,7 +9674,6 @@ object domHelpersStrings {
   sealed trait textJustify
     extends StObject
        with CamelProperty
-       with Styles
   inline def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
   
   @js.native
@@ -9471,6 +9721,7 @@ object domHelpersStrings {
   sealed trait textUnderlineOffset
     extends StObject
        with CamelProperty
+       with Styles
   inline def textUnderlineOffset: textUnderlineOffset = "textUnderlineOffset".asInstanceOf[textUnderlineOffset]
   
   @js.native
@@ -9983,40 +10234,40 @@ object domHelpersStrings {
   inline def webkitLineClamp_ : webkitLineClamp_ = "webkitLineClamp".asInstanceOf[webkitLineClamp_]
   
   @js.native
-  sealed trait webkitMaskBoxImage
+  sealed trait webkitMaskBoxImageOutset_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
+  inline def webkitMaskBoxImageOutset_ : webkitMaskBoxImageOutset_ = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset_]
   
   @js.native
-  sealed trait webkitMaskBoxImageOutset
+  sealed trait webkitMaskBoxImageRepeat_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
+  inline def webkitMaskBoxImageRepeat_ : webkitMaskBoxImageRepeat_ = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat_]
   
   @js.native
-  sealed trait webkitMaskBoxImageRepeat
+  sealed trait webkitMaskBoxImageSlice_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
+  inline def webkitMaskBoxImageSlice_ : webkitMaskBoxImageSlice_ = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice_]
   
   @js.native
-  sealed trait webkitMaskBoxImageSlice
+  sealed trait webkitMaskBoxImageSource_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
+  inline def webkitMaskBoxImageSource_ : webkitMaskBoxImageSource_ = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource_]
   
   @js.native
-  sealed trait webkitMaskBoxImageSource
+  sealed trait webkitMaskBoxImageWidth_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
+  inline def webkitMaskBoxImageWidth_ : webkitMaskBoxImageWidth_ = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth_]
   
   @js.native
-  sealed trait webkitMaskBoxImageWidth
+  sealed trait webkitMaskBoxImage_
     extends StObject
        with Styles
-  inline def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
+  inline def webkitMaskBoxImage_ : webkitMaskBoxImage_ = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage_]
   
   @js.native
   sealed trait webkitMaskClip_
@@ -10083,12 +10334,6 @@ object domHelpersStrings {
     extends StObject
        with Styles
   inline def webkitPerspective_ : webkitPerspective_ = "webkitPerspective".asInstanceOf[webkitPerspective_]
-  
-  @js.native
-  sealed trait webkitTapHighlightColor_
-    extends StObject
-       with Styles
-  inline def webkitTapHighlightColor_ : webkitTapHighlightColor_ = "webkitTapHighlightColor".asInstanceOf[webkitTapHighlightColor_]
   
   @js.native
   sealed trait webkitTextFillColor_
@@ -10173,6 +10418,22 @@ object domHelpersStrings {
     extends StObject
        with Styles
   inline def webkitUserSelect_ : webkitUserSelect_ = "webkitUserSelect".asInstanceOf[webkitUserSelect_]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel extends StObject
@@ -10290,6 +10551,5 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
        with HyphenProperty
-       with Styles
   inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Location of the finding within an image.
-  */
 trait SchemaGooglePrivacyDlpV2ImageLocation extends StObject {
   
   /**
-    * Bounding boxes locating the pixels within the image containing the
-    * finding.
+    * Bounding boxes locating the pixels within the image containing the finding.
     */
   var boundingBoxes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2BoundingBox]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaGooglePrivacyDlpV2ImageLocation {
     
     inline def setBoundingBoxesUndefined: Self = StObject.set(x, "boundingBoxes", js.undefined)
     
-    inline def setBoundingBoxesVarargs(value: SchemaGooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
+    inline def setBoundingBoxesVarargs(value: SchemaGooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value*))
   }
 }

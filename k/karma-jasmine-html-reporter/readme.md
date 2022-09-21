@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-jasmine-html-reporter
 
-Typings are for version 1.5
+Typings are for version 1.7
 
 ## Library description:
 A Karma plugin. Dynamically displays tests results at debug.html page
@@ -10,10 +10,10 @@ A Karma plugin. Dynamically displays tests results at debug.html page
 | ------------------ | :-------------: |
 | Full name          | karma-jasmine-html-reporter |
 | Keywords           | karma-plugin, karma-reporter, html |
-| # releases         | 8 |
-| # dependents       | 80 |
-| # downloads        | 55514387 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6133855.333333333 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/dfederm/karma-jasmine-html-reporter#readme)

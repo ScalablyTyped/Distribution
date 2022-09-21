@@ -29,7 +29,7 @@ object DefaultHelpProvider {
   inline def apply(
     acquire: () => Unit,
     create: XObjectInspectorUI => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): DefaultHelpProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction1(create), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

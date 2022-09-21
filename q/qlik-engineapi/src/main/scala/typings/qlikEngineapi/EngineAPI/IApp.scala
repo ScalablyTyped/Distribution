@@ -514,7 +514,7 @@ trait IApp
     * @param qOptions - Information about the list of bookmarks.
     * @returns - return a Promise of INxContainerEntry.
     */
-  def getBookmarks(qOptions: INxGetBookmarkOptions): js.Promise[INxContainerEntry[js.Any]] = js.native
+  def getBookmarks(qOptions: INxGetBookmarkOptions): js.Promise[INxContainerEntry[Any]] = js.native
   
   /**
     * Retrieves a connection and returns:
@@ -800,7 +800,7 @@ trait IApp
     * @param qOptions - Information about the list of objects.
     * @returns - return a Promise array of NxContainerEntry.
     */
-  def getObjects(qOptions: INxGetObjectOptions): js.Promise[INxContainerEntry[js.Any]] = js.native
+  def getObjects(qOptions: INxGetObjectOptions): js.Promise[INxContainerEntry[Any]] = js.native
   
   /**
     * Shows the properties of an object.

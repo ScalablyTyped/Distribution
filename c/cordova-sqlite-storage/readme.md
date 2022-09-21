@@ -4,16 +4,16 @@
 Typings are for version 1.5
 
 ## Library description:
-Native interface to SQLite for PhoneGap/Cordova - cordova-sqlite-storage plugin version
+Native interface to SQLite for PhoneGap / Cordova - cordova-sqlite-storage plugin version
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-sqlite-storage |
 | Keywords           | sqlite, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-osx, cordova-windows |
-| # releases         | 10 |
-| # dependents       | 31 |
-| # downloads        | 1222098 |
-| # stars            | 20 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 98201.33333333333 |
+| # stars            | 2116.0 |
 
 ## Links
 - [Homepage](https://github.com/xpbrew/cordova-sqlite-storage)

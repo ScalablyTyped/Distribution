@@ -85,6 +85,20 @@ trait Pinpoint extends Service {
   ): Request[CreateImportJobResponse, AWSError] = js.native
   
   /**
+    * Creates a new message template for messages using the in-app message channel.
+    */
+  def createInAppTemplate(): Request[CreateInAppTemplateResponse, AWSError] = js.native
+  def createInAppTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateInAppTemplateResponse, Unit]): Request[CreateInAppTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a new message template for messages using the in-app message channel.
+    */
+  def createInAppTemplate(params: CreateInAppTemplateRequest): Request[CreateInAppTemplateResponse, AWSError] = js.native
+  def createInAppTemplate(
+    params: CreateInAppTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInAppTemplateResponse, Unit]
+  ): Request[CreateInAppTemplateResponse, AWSError] = js.native
+  
+  /**
     * Creates a journey for an application.
     */
   def createJourney(): Request[CreateJourneyResponse, AWSError] = js.native
@@ -351,6 +365,20 @@ trait Pinpoint extends Service {
     params: DeleteGcmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGcmChannelResponse, Unit]
   ): Request[DeleteGcmChannelResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a message template for messages sent using the in-app message channel.
+    */
+  def deleteInAppTemplate(): Request[DeleteInAppTemplateResponse, AWSError] = js.native
+  def deleteInAppTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInAppTemplateResponse, Unit]): Request[DeleteInAppTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a message template for messages sent using the in-app message channel.
+    */
+  def deleteInAppTemplate(params: DeleteInAppTemplateRequest): Request[DeleteInAppTemplateResponse, AWSError] = js.native
+  def deleteInAppTemplate(
+    params: DeleteInAppTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteInAppTemplateResponse, Unit]
+  ): Request[DeleteInAppTemplateResponse, AWSError] = js.native
   
   /**
     * Deletes a journey from an application.
@@ -842,6 +870,34 @@ trait Pinpoint extends Service {
   ): Request[GetImportJobsResponse, AWSError] = js.native
   
   /**
+    * Retrieves the in-app messages targeted for the provided endpoint ID.
+    */
+  def getInAppMessages(): Request[GetInAppMessagesResponse, AWSError] = js.native
+  def getInAppMessages(callback: js.Function2[/* err */ AWSError, /* data */ GetInAppMessagesResponse, Unit]): Request[GetInAppMessagesResponse, AWSError] = js.native
+  /**
+    * Retrieves the in-app messages targeted for the provided endpoint ID.
+    */
+  def getInAppMessages(params: GetInAppMessagesRequest): Request[GetInAppMessagesResponse, AWSError] = js.native
+  def getInAppMessages(
+    params: GetInAppMessagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInAppMessagesResponse, Unit]
+  ): Request[GetInAppMessagesResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the content and settings of a message template for messages sent through the in-app channel.
+    */
+  def getInAppTemplate(): Request[GetInAppTemplateResponse, AWSError] = js.native
+  def getInAppTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetInAppTemplateResponse, Unit]): Request[GetInAppTemplateResponse, AWSError] = js.native
+  /**
+    * Retrieves the content and settings of a message template for messages sent through the in-app channel.
+    */
+  def getInAppTemplate(params: GetInAppTemplateRequest): Request[GetInAppTemplateResponse, AWSError] = js.native
+  def getInAppTemplate(
+    params: GetInAppTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInAppTemplateResponse, Unit]
+  ): Request[GetInAppTemplateResponse, AWSError] = js.native
+  
+  /**
     * Retrieves information about the status, configuration, and other settings for a journey.
     */
   def getJourney(): Request[GetJourneyResponse, AWSError] = js.native
@@ -1222,6 +1278,20 @@ trait Pinpoint extends Service {
   ): Request[SendMessagesResponse, AWSError] = js.native
   
   /**
+    * Send an OTP message
+    */
+  def sendOTPMessage(): Request[SendOTPMessageResponse, AWSError] = js.native
+  def sendOTPMessage(callback: js.Function2[/* err */ AWSError, /* data */ SendOTPMessageResponse, Unit]): Request[SendOTPMessageResponse, AWSError] = js.native
+  /**
+    * Send an OTP message
+    */
+  def sendOTPMessage(params: SendOTPMessageRequest): Request[SendOTPMessageResponse, AWSError] = js.native
+  def sendOTPMessage(
+    params: SendOTPMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendOTPMessageResponse, Unit]
+  ): Request[SendOTPMessageResponse, AWSError] = js.native
+  
+  /**
     * Creates and sends a message to a list of users.
     */
   def sendUsersMessages(): Request[SendUsersMessagesResponse, AWSError] = js.native
@@ -1443,6 +1513,20 @@ trait Pinpoint extends Service {
   ): Request[UpdateGcmChannelResponse, AWSError] = js.native
   
   /**
+    * Updates an existing message template for messages sent through the in-app message channel.
+    */
+  def updateInAppTemplate(): Request[UpdateInAppTemplateResponse, AWSError] = js.native
+  def updateInAppTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateInAppTemplateResponse, Unit]): Request[UpdateInAppTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an existing message template for messages sent through the in-app message channel.
+    */
+  def updateInAppTemplate(params: UpdateInAppTemplateRequest): Request[UpdateInAppTemplateResponse, AWSError] = js.native
+  def updateInAppTemplate(
+    params: UpdateInAppTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateInAppTemplateResponse, Unit]
+  ): Request[UpdateInAppTemplateResponse, AWSError] = js.native
+  
+  /**
     * Updates the configuration and other settings for a journey.
     */
   def updateJourney(): Request[UpdateJourneyResponse, AWSError] = js.native
@@ -1583,4 +1667,18 @@ trait Pinpoint extends Service {
     params: UpdateVoiceTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceTemplateResponse, Unit]
   ): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Verify an OTP
+    */
+  def verifyOTPMessage(): Request[VerifyOTPMessageResponse, AWSError] = js.native
+  def verifyOTPMessage(callback: js.Function2[/* err */ AWSError, /* data */ VerifyOTPMessageResponse, Unit]): Request[VerifyOTPMessageResponse, AWSError] = js.native
+  /**
+    * Verify an OTP
+    */
+  def verifyOTPMessage(params: VerifyOTPMessageRequest): Request[VerifyOTPMessageResponse, AWSError] = js.native
+  def verifyOTPMessage(
+    params: VerifyOTPMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ VerifyOTPMessageResponse, Unit]
+  ): Request[VerifyOTPMessageResponse, AWSError] = js.native
 }

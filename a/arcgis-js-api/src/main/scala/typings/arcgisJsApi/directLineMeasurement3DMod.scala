@@ -22,7 +22,7 @@ object directLineMeasurement3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with DirectLineMeasurement3D {
     def this(properties: DirectLineMeasurement3DProperties) = this()

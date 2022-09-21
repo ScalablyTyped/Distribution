@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystem extends StObject {
   
   /**
-    * A list of administrative actions for the file system that are in process or waiting to be processed. Administrative actions describe changes to the Windows file system that you have initiated using the UpdateFileSystem action. 
+    * A list of administrative actions for the file system that are in process or waiting to be processed. Administrative actions describe changes to the Amazon FSx system that you have initiated using the UpdateFileSystem operation.
     */
   var AdministrativeActions: js.UndefOr[typings.awsSdk.fsxMod.AdministrativeActions] = js.undefined
   
   /**
     * The time that the file system was created, in seconds (since 1970-01-01T00:00:00Z), also known as Unix time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.fsxMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The DNS name for the file system.
+    * The Domain Name System (DNS) name for the file system.
     */
   var DNSName: js.UndefOr[typings.awsSdk.fsxMod.DNSName] = js.undefined
   
@@ -29,64 +29,79 @@ trait FileSystem extends StObject {
   var FileSystemId: js.UndefOr[typings.awsSdk.fsxMod.FileSystemId] = js.undefined
   
   /**
-    * The type of Amazon FSx file system, either LUSTRE or WINDOWS.
+    * The type of Amazon FSx file system, which can be LUSTRE, WINDOWS, ONTAP, or OPENZFS.
     */
   var FileSystemType: js.UndefOr[typings.awsSdk.fsxMod.FileSystemType] = js.undefined
   
   /**
-    * The ID of the AWS Key Management Service (AWS KMS) key used to encrypt the file system's data for Amazon FSx for Windows File Server file systems and persistent Amazon FSx for Lustre file systems at rest. In either case, if not specified, the Amazon FSx managed key is used. The scratch Amazon FSx for Lustre file systems are always encrypted at rest using Amazon FSx managed keys. For more information, see Encrypt in the AWS Key Management Service API Reference.
+    * The Lustre version of the Amazon FSx for Lustre file system, either 2.10 or 2.12.
+    */
+  var FileSystemTypeVersion: js.UndefOr[typings.awsSdk.fsxMod.FileSystemTypeVersion] = js.undefined
+  
+  /**
+    * The ID of the Key Management Service (KMS) key used to encrypt Amazon FSx file system data. Used as follows with Amazon FSx file system types:   Amazon FSx for Lustre PERSISTENT_1 and PERSISTENT_2 deployment types only.  SCRATCH_1 and SCRATCH_2 types are encrypted using the Amazon FSx service KMS key for your account.   Amazon FSx for NetApp ONTAP   Amazon FSx for OpenZFS   Amazon FSx for Windows File Server  
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.fsxMod.KmsKeyId] = js.undefined
   
   /**
-    * The lifecycle status of the file system, following are the possible values and what they mean:    AVAILABLE - The file system is in a healthy state, and is reachable and available for use.    CREATING - Amazon FSx is creating the new file system.    DELETING - Amazon FSx is deleting an existing file system.    FAILED - An existing file system has experienced an unrecoverable failure. When creating a new file system, Amazon FSx was unable to create the file system.    MISCONFIGURED indicates that the file system is in a failed but recoverable state.    UPDATING indicates that the file system is undergoing a customer initiated update.  
+    * The lifecycle status of the file system. The following are the possible values and what they mean:    AVAILABLE - The file system is in a healthy state, and is reachable and available for use.    CREATING - Amazon FSx is creating the new file system.    DELETING - Amazon FSx is deleting an existing file system.    FAILED - An existing file system has experienced an unrecoverable failure. When creating a new file system, Amazon FSx was unable to create the file system.    MISCONFIGURED - The file system is in a failed but recoverable state.    MISCONFIGURED_UNAVAILABLE - (Amazon FSx for Windows File Server only) The file system is currently unavailable due to a change in your Active Directory configuration.    UPDATING - The file system is undergoing a customer-initiated update.  
     */
   var Lifecycle: js.UndefOr[FileSystemLifecycle] = js.undefined
   
   var LustreConfiguration: js.UndefOr[LustreFileSystemConfiguration] = js.undefined
   
   /**
-    * The IDs of the elastic network interface from which a specific file system is accessible. The elastic network interface is automatically created in the same VPC that the Amazon FSx file system was created in. For more information, see Elastic Network Interfaces in the Amazon EC2 User Guide.  For an Amazon FSx for Windows File Server file system, you can have one network interface ID. For an Amazon FSx for Lustre file system, you can have more than one.
+    * The IDs of the elastic network interfaces from which a specific file system is accessible. The elastic network interface is automatically created in the same virtual private cloud (VPC) that the Amazon FSx file system was created in. For more information, see Elastic Network Interfaces in the Amazon EC2 User Guide.  For an Amazon FSx for Windows File Server file system, you can have one network interface ID. For an Amazon FSx for Lustre file system, you can have more than one.
     */
   var NetworkInterfaceIds: js.UndefOr[typings.awsSdk.fsxMod.NetworkInterfaceIds] = js.undefined
   
   /**
-    * The AWS account that created the file system. If the file system was created by an AWS Identity and Access Management (IAM) user, the AWS account to which the IAM user belongs is the owner.
+    * The configuration for this Amazon FSx for NetApp ONTAP file system.
+    */
+  var OntapConfiguration: js.UndefOr[OntapFileSystemConfiguration] = js.undefined
+  
+  /**
+    * The configuration for this Amazon FSx for OpenZFS file system.
+    */
+  var OpenZFSConfiguration: js.UndefOr[OpenZFSFileSystemConfiguration] = js.undefined
+  
+  /**
+    * The Amazon Web Services account that created the file system. If the file system was created by an Identity and Access Management (IAM) user, the Amazon Web Services account to which the IAM user belongs is the owner.
     */
   var OwnerId: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the file system resource.
+    * The Amazon Resource Name (ARN) of the file system resource.
     */
   var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.undefined
   
   /**
-    * The storage capacity of the file system in gigabytes (GB).
+    * The storage capacity of the file system in gibibytes (GiB).
     */
   var StorageCapacity: js.UndefOr[typings.awsSdk.fsxMod.StorageCapacity] = js.undefined
   
   /**
-    * The storage type of the file system. Valid values are SSD and HDD. If set to SSD, the file system uses solid state drive storage. If set to HDD, the file system uses hard disk drive storage. 
+    * The type of storage the file system is using. If set to SSD, the file system uses solid state drive storage. If set to HDD, the file system uses hard disk drive storage. 
     */
   var StorageType: js.UndefOr[typings.awsSdk.fsxMod.StorageType] = js.undefined
   
   /**
-    * Specifies the IDs of the subnets that the file system is accessible from. For Windows MULTI_AZ_1 file system deployment type, there are two subnet IDs, one for the preferred file server and one for the standby file server. The preferred file server subnet identified in the PreferredSubnetID property. All other file systems have only one subnet ID. For Lustre file systems, and Single-AZ Windows file systems, this is the ID of the subnet that contains the endpoint for the file system. For MULTI_AZ_1 Windows file systems, the endpoint for the file system is available in the PreferredSubnetID.
+    * Specifies the IDs of the subnets that the file system is accessible from. For the Amazon FSx Windows and ONTAP MULTI_AZ_1 file system deployment type, there are two subnet IDs, one for the preferred file server and one for the standby file server. The preferred file server subnet identified in the PreferredSubnetID property. All other file systems have only one subnet ID. For FSx for Lustre file systems, and Single-AZ Windows file systems, this is the ID of the subnet that contains the file system's endpoint. For MULTI_AZ_1 Windows and ONTAP file systems, the file system endpoint is available in the PreferredSubnetID.
     */
   var SubnetIds: js.UndefOr[typings.awsSdk.fsxMod.SubnetIds] = js.undefined
   
   /**
-    * The tags to associate with the file system. For more information, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
+    * The tags to associate with the file system. For more information, see Tagging your Amazon EC2 resources in the Amazon EC2 User Guide.
     */
   var Tags: js.UndefOr[typings.awsSdk.fsxMod.Tags] = js.undefined
   
   /**
-    * The ID of the primary VPC for the file system.
+    * The ID of the primary virtual private cloud (VPC) for the file system.
     */
   var VpcId: js.UndefOr[typings.awsSdk.fsxMod.VpcId] = js.undefined
   
   /**
-    * The configuration for this Microsoft Windows file system.
+    * The configuration for this Amazon FSx for Windows File Server file system.
     */
   var WindowsConfiguration: js.UndefOr[WindowsFileSystemConfiguration] = js.undefined
 }
@@ -103,9 +118,9 @@ object FileSystem {
     
     inline def setAdministrativeActionsUndefined: Self = StObject.set(x, "AdministrativeActions", js.undefined)
     
-    inline def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = StObject.set(x, "AdministrativeActions", js.Array(value :_*))
+    inline def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = StObject.set(x, "AdministrativeActions", js.Array(value*))
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -125,6 +140,10 @@ object FileSystem {
     
     inline def setFileSystemTypeUndefined: Self = StObject.set(x, "FileSystemType", js.undefined)
     
+    inline def setFileSystemTypeVersion(value: FileSystemTypeVersion): Self = StObject.set(x, "FileSystemTypeVersion", value.asInstanceOf[js.Any])
+    
+    inline def setFileSystemTypeVersionUndefined: Self = StObject.set(x, "FileSystemTypeVersion", js.undefined)
+    
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
@@ -141,7 +160,15 @@ object FileSystem {
     
     inline def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NetworkInterfaceIds", js.undefined)
     
-    inline def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value :_*))
+    inline def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value*))
+    
+    inline def setOntapConfiguration(value: OntapFileSystemConfiguration): Self = StObject.set(x, "OntapConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOntapConfigurationUndefined: Self = StObject.set(x, "OntapConfiguration", js.undefined)
+    
+    inline def setOpenZFSConfiguration(value: OpenZFSFileSystemConfiguration): Self = StObject.set(x, "OpenZFSConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOpenZFSConfigurationUndefined: Self = StObject.set(x, "OpenZFSConfiguration", js.undefined)
     
     inline def setOwnerId(value: AWSAccountId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
@@ -163,13 +190,13 @@ object FileSystem {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

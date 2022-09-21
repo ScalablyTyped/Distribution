@@ -1,7 +1,6 @@
 package typings.sharepoint.global.SP
 
 import typings.sharepoint.SP.SiteHealth.SiteHealthStatusType
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +9,12 @@ object SiteHealth {
   
   @JSGlobal("SP.SiteHealth.SiteHealthResult")
   @js.native
-  class SiteHealthResult ()
+  open class SiteHealthResult ()
     extends StObject
        with typings.sharepoint.SP.SiteHealth.SiteHealthResult {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -24,7 +23,7 @@ object SiteHealth {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_messageAsText(): String = js.native
@@ -45,7 +44,7 @@ object SiteHealth {
     override def get_status(): SiteHealthStatusType = js.native
     
     /* CompleteClass */
-    override def get_timeStamp(): Date = js.native
+    override def get_timeStamp(): js.Date = js.native
     
     /* CompleteClass */
     override def get_typeId(): String = js.native
@@ -54,7 +53,7 @@ object SiteHealth {
     override def set_status(value: SiteHealthStatusType): Unit = js.native
     
     /* CompleteClass */
-    override def set_timeStamp(value: Date): Unit = js.native
+    override def set_timeStamp(value: js.Date): Unit = js.native
     
     /* CompleteClass */
     override def writeToXml(
@@ -79,7 +78,7 @@ object SiteHealth {
   
   @JSGlobal("SP.SiteHealth.SiteHealthSummary")
   @js.native
-  class SiteHealthSummary ()
+  open class SiteHealthSummary ()
     extends StObject
        with typings.sharepoint.SP.SiteHealth.SiteHealthSummary
 }

@@ -8,7 +8,7 @@ object filterMod {
   
   trait Options extends StObject {
     
-    var callback: js.UndefOr[js.Function1[/* item */ js.Any, Boolean]] = js.undefined
+    var callback: js.UndefOr[js.Function1[/* item */ Any, Boolean]] = js.undefined
   }
   object Options {
     
@@ -19,7 +19,7 @@ object filterMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCallback(value: /* item */ js.Any => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* item */ Any => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     }

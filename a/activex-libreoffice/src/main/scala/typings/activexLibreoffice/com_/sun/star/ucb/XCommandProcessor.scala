@@ -56,7 +56,7 @@ trait XCommandProcessor
     * @throws DuplicateCommandIdentifierException to indicate that two threads tried to use the same command identifier
     * @throws Exception if an error occurred during the execution of the command.
     */
-  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): js.Any
+  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): Any
 }
 object XCommandProcessor {
   
@@ -64,8 +64,8 @@ object XCommandProcessor {
     abort: Double => Unit,
     acquire: () => Unit,
     createCommandIdentifier: () => Double,
-    execute: (Command, Double, XCommandEnvironment) => js.Any,
-    queryInterface: `type` => js.Any,
+    execute: (Command, Double, XCommandEnvironment) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCommandProcessor = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), acquire = js.Any.fromFunction0(acquire), createCommandIdentifier = js.Any.fromFunction0(createCommandIdentifier), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -78,6 +78,6 @@ object XCommandProcessor {
     
     inline def setCreateCommandIdentifier(value: () => Double): Self = StObject.set(x, "createCommandIdentifier", js.Any.fromFunction0(value))
     
-    inline def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (Command, Double, XCommandEnvironment) => Any): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

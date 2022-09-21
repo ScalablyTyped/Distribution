@@ -1,7 +1,7 @@
 package typings.easyXapiSupertest
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +27,10 @@ trait NodeBuffer
   
   def equals(otherBuffer: Buffer): Boolean = js.native
   
-  def fill(value: js.Any): Unit = js.native
-  def fill(value: js.Any, offset: Double): Unit = js.native
-  def fill(value: js.Any, offset: Double, end: Double): Unit = js.native
-  def fill(value: js.Any, offset: Unit, end: Double): Unit = js.native
+  def fill(value: Any): Unit = js.native
+  def fill(value: Any, offset: Double): Unit = js.native
+  def fill(value: Any, offset: Double, end: Double): Unit = js.native
+  def fill(value: Any, offset: Unit, end: Double): Unit = js.native
   
   var length: Double = js.native
   
@@ -93,7 +93,7 @@ trait NodeBuffer
   def slice(start: Double, end: Double): Buffer = js.native
   def slice(start: Unit, end: Double): Buffer = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   def toString(encoding: String): String = js.native
   def toString(encoding: String, start: Double): String = js.native

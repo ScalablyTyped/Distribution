@@ -79,7 +79,7 @@ trait Object extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -126,7 +126,11 @@ trait Object extends StObject {
   /** The time at which the object's storage class was last changed. When the object is initially created, it will be set to timeCreated. */
   var timeStorageClassUpdated: js.UndefOr[String] = js.undefined
   
-  /** The modification time of the object metadata in RFC 3339 format. */
+  /**
+    * The modification time of the object metadata in RFC 3339 format. Set initially to object creation time and then updated whenever any metadata of the object changes. This includes
+    * changes made by a requester, such as modifying custom metadata, as well as changes made by Cloud Storage on behalf of a requester, such as changing the storage class based on an
+    * Object Lifecycle Configuration.
+    */
   var updated: js.UndefOr[String] = js.undefined
 }
 object Object {
@@ -142,7 +146,7 @@ object Object {
     
     inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
-    inline def setAclVarargs(value: ObjectAccessControl*): Self = StObject.set(x, "acl", js.Array(value :_*))
+    inline def setAclVarargs(value: ObjectAccessControl*): Self = StObject.set(x, "acl", js.Array(value*))
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
@@ -219,7 +223,7 @@ object Object {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

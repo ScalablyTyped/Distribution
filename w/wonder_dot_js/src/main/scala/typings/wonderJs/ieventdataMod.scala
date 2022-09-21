@@ -381,7 +381,7 @@ object ieventdataMod {
       
       inline def setChangedTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      inline def setChangedTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+      inline def setChangedTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "changedTouches", js.Array(value*))
       
       inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -391,11 +391,11 @@ object ieventdataMod {
       
       inline def setTargetTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      inline def setTargetTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "targetTouches", js.Array(value :_*))
+      inline def setTargetTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "targetTouches", js.Array(value*))
       
       inline def setTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      inline def setTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "touches", js.Array(value :_*))
+      inline def setTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "touches", js.Array(value*))
     }
   }
 }

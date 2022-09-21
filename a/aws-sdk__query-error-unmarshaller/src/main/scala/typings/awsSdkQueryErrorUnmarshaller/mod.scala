@@ -8,5 +8,5 @@ object mod {
   
   @JSImport("@aws-sdk/query-error-unmarshaller", "queryErrorUnmarshaller")
   @js.native
-  val queryErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ js.Any = js.native
+  val queryErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ Any = js.native
 }

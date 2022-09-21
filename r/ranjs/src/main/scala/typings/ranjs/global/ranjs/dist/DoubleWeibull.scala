@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.DoubleWeibull")
 @js.native
-class DoubleWeibull ()
+open class DoubleWeibull ()
   extends typings.ranjs.mod.dist.DoubleWeibull {
   def this(lambda: Double) = this()
   def this(lambda: Double, k: Double) = this()

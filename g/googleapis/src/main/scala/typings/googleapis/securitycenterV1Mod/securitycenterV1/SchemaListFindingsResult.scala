@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result containing the Finding and its StateChange.
-  */
 trait SchemaListFindingsResult extends StObject {
   
   /**
@@ -15,9 +12,14 @@ trait SchemaListFindingsResult extends StObject {
   var finding: js.UndefOr[SchemaFinding] = js.undefined
   
   /**
+    * Output only. Resource that is associated with this finding.
+    */
+  var resource: js.UndefOr[SchemaResource] = js.undefined
+  
+  /**
     * State change of the finding between the points in time.
     */
-  var stateChange: js.UndefOr[String] = js.undefined
+  var stateChange: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListFindingsResult {
   
@@ -32,7 +34,13 @@ object SchemaListFindingsResult {
     
     inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
+    inline def setResource(value: SchemaResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
     inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    
+    inline def setStateChangeNull: Self = StObject.set(x, "stateChange", null)
     
     inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }

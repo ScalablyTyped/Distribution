@@ -54,7 +54,7 @@ trait GridOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ GridDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var detailCollapse: js.UndefOr[js.Function1[/* e */ GridDetailCollapseEvent, Unit]] = js.undefined
   
@@ -67,6 +67,8 @@ trait GridOptions extends StObject {
   var edit: js.UndefOr[js.Function1[/* e */ GridEditEvent, Unit]] = js.undefined
   
   var editable: js.UndefOr[Boolean | `inline` | incell | popup | GridEditable] = js.undefined
+  
+  var encodeTitles: js.UndefOr[Boolean] = js.undefined
   
   var excel: js.UndefOr[GridExcel] = js.undefined
   
@@ -89,6 +91,8 @@ trait GridOptions extends StObject {
   var groupable: js.UndefOr[Boolean | GridGroupable] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
+  
+  var loaderType: js.UndefOr[String] = js.undefined
   
   var messages: js.UndefOr[GridMessages] = js.undefined
   
@@ -225,7 +229,7 @@ object GridOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: GridColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: GridColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDataBinding(value: /* e */ GridDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
@@ -235,7 +239,7 @@ object GridOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -262,6 +266,10 @@ object GridOptions {
     inline def setEditable(value: Boolean | `inline` | incell | popup | GridEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEncodeTitles(value: Boolean): Self = StObject.set(x, "encodeTitles", value.asInstanceOf[js.Any])
+    
+    inline def setEncodeTitlesUndefined: Self = StObject.set(x, "encodeTitles", js.undefined)
     
     inline def setExcel(value: GridExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
@@ -306,6 +314,10 @@ object GridOptions {
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLoaderType(value: String): Self = StObject.set(x, "loaderType", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderTypeUndefined: Self = StObject.set(x, "loaderType", js.undefined)
     
     inline def setMessages(value: GridMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
@@ -399,6 +411,6 @@ object GridOptions {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: (String | GridToolbarItem)*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: (String | GridToolbarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
   }
 }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SliceViewModelConstructor
   extends StObject
-     with Instantiable0[SliceViewModel]
+     with /**
+  * Provides the logic for the [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html)
+  */
+Instantiable0[SliceViewModel]
      with Instantiable1[/* properties */ SliceViewModelProperties, SliceViewModel]

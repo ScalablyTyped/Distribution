@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-all
 
-Typings are for version 1.0.4
+Typings are for version 1.0.6
 
 ## Library description:
 Collects all values from an async iterator and returns them as an array
@@ -10,13 +10,13 @@ Collects all values from an async iterator and returns them as an array
 | ------------------ | :-------------: |
 | Full name          | it-all |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 35 |
-| # downloads        | 522367 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 375096.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-all#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-all)

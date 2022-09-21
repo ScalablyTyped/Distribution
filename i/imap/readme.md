@@ -10,10 +10,10 @@ An IMAP module for node.js that makes communicating with IMAP servers easy
 | ------------------ | :-------------: |
 | Full name          | imap |
 | Keywords           | imap, mail, email, reader, client |
-| # releases         | 0 |
-| # dependents       | 138 |
-| # downloads        | 3540616 |
-| # stars            | 34 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 469617.3333333333 |
+| # stars            | 1926.0 |
 
 ## Links
 - [Homepage](https://github.com/mscdex/node-imap#readme)

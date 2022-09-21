@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A button with text and onclick action.
-  */
 trait SchemaTextButton extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaTextButton extends StObject {
   /**
     * The text of the button.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTextButton {
   
@@ -33,6 +30,8 @@ object SchemaTextButton {
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

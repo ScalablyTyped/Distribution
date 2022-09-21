@@ -9,7 +9,7 @@ object portalDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/portal/demo/basic", JSImport.Default)
   @js.native
-  class default () extends PopoverExample
+  open class default () extends PopoverExample
   
   @JSImport("@ant-design/react-native/lib/portal/demo/basic", "description")
   @js.native
@@ -20,6 +20,5 @@ object portalDemoBasicMod {
   val title: /* "Portal" */ String = js.native
   
   @js.native
-  trait PopoverExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait PopoverExample extends Component[Any, Any, Any]
 }

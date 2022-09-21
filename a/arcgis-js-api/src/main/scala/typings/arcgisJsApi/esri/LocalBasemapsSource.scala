@@ -21,7 +21,7 @@ trait LocalBasemapsSource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-LocalBasemapsSource.html#refresh)
     */
-  def refresh(): Unit = js.native
+  def refresh(): scala.Unit = js.native
   
   /**
     * The source's state.

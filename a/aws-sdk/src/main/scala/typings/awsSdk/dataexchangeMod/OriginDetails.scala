@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OriginDetails extends StObject {
   
+  /**
+    * The product ID of the origin of the data set.
+    */
   var ProductId: string
 }
 object OriginDetails {

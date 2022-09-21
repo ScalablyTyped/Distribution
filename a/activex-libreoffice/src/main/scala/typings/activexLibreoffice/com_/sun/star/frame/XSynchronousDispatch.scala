@@ -26,14 +26,14 @@ trait XSynchronousDispatch
     * @param URL full parsed URL which describe the feature which should be dispatched (executed)
     * @param Arguments optional arguments for this request They depend on the real implementation of the dispatch object.
     */
-  def dispatchWithReturnValue(URL: URL, Arguments: SeqEquiv[PropertyValue]): js.Any
+  def dispatchWithReturnValue(URL: URL, Arguments: SeqEquiv[PropertyValue]): Any
 }
 object XSynchronousDispatch {
   
   inline def apply(
     acquire: () => Unit,
-    dispatchWithReturnValue: (URL, SeqEquiv[PropertyValue]) => js.Any,
-    queryInterface: `type` => js.Any,
+    dispatchWithReturnValue: (URL, SeqEquiv[PropertyValue]) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSynchronousDispatch = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispatchWithReturnValue = js.Any.fromFunction2(dispatchWithReturnValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -42,6 +42,6 @@ object XSynchronousDispatch {
   
   extension [Self <: XSynchronousDispatch](x: Self) {
     
-    inline def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "dispatchWithReturnValue", js.Any.fromFunction2(value))
+    inline def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => Any): Self = StObject.set(x, "dispatchWithReturnValue", js.Any.fromFunction2(value))
   }
 }

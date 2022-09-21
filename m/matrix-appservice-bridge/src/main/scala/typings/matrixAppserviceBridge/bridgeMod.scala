@@ -1,40 +1,46 @@
 package typings.matrixAppserviceBridge
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.matrixAppservice.mod.AppService
 import typings.matrixAppservice.mod.AppServiceRegistration
+import typings.matrixAppserviceBridge.activityTrackerMod.ActivityTracker
+import typings.matrixAppserviceBridge.activityTrackerMod.ActivityTrackerOpts
+import typings.matrixAppserviceBridge.anon.Authenticate
 import typings.matrixAppserviceBridge.anon.Bot
-import typings.matrixAppserviceBridge.anon.CheckToken
 import typings.matrixAppserviceBridge.anon.CreationOpts
 import typings.matrixAppserviceBridge.anon.GetLocation
 import typings.matrixAppserviceBridge.anon.HomeserverUrl
 import typings.matrixAppserviceBridge.anon.Name
 import typings.matrixAppserviceBridge.anon.PerRequest
-import typings.matrixAppserviceBridge.anon.RuleFile
 import typings.matrixAppserviceBridge.anon.Type
+import typings.matrixAppserviceBridge.anon.ValidateEditSender
 import typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot
 import typings.matrixAppserviceBridge.bridgeContextMod.BridgeContext
-import typings.matrixAppserviceBridge.clientFactoryMod.ClientFactory
+import typings.matrixAppserviceBridge.componentsRequestFactoryMod.RequestFactory
+import typings.matrixAppserviceBridge.encryptedIntentMod.EncryptedIntent
+import typings.matrixAppserviceBridge.encryptedIntentMod.EncryptedIntentOpts
 import typings.matrixAppserviceBridge.eventBridgeStoreMod.EventBridgeStore
 import typings.matrixAppserviceBridge.eventTypesMod.PresenceEvent
 import typings.matrixAppserviceBridge.eventTypesMod.ReadReceiptEvent
 import typings.matrixAppserviceBridge.eventTypesMod.TypingEvent
 import typings.matrixAppserviceBridge.eventTypesMod.WeakEvent
 import typings.matrixAppserviceBridge.intentMod.Intent
+import typings.matrixAppserviceBridge.intentMod.IntentOpts
 import typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
 import typings.matrixAppserviceBridge.prometheusmetricsMod.BridgeGaugesCounts
 import typings.matrixAppserviceBridge.prometheusmetricsMod.PrometheusMetrics
-import typings.matrixAppserviceBridge.requestFactoryMod.RequestFactory
 import typings.matrixAppserviceBridge.requestMod.Request
 import typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStore
 import typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidator
 import typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus
+import typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules
 import typings.matrixAppserviceBridge.roomUpgradeHandlerMod.RoomUpgradeHandlerOpts
+import typings.matrixAppserviceBridge.userActivityMod.UserActivityTracker
+import typings.matrixAppserviceBridge.userActivityStoreMod.UserActivityStore
 import typings.matrixAppserviceBridge.userBridgeStoreMod.UserBridgeStore
 import typings.matrixAppserviceBridge.usersMatrixMod.MatrixUser
 import typings.promClient.mod.Registry
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +57,7 @@ object bridgeMod {
   
   @JSImport("matrix-appservice-bridge/lib/bridge", "Bridge")
   @js.native
-  class Bridge protected () extends StObject {
+  open class Bridge protected () extends StObject {
     /**
       * @param opts Options to pass to the bridge
       * @param opts.roomUpgradeOpts Options to supply to
@@ -59,27 +65,29 @@ object bridgeMod {
       */
     def this(opts: BridgeOpts) = this()
     
+    def activityTracker: js.UndefOr[ActivityTracker] = js.native
+    
     /**
       * Install a custom handler for an incoming HTTP API request. This allows
       * callers to add extra functionality, implement new APIs, etc...
       * @param opts Named options
+      * @param opts.authenticate Should the token be automatically checked. Defaults to true.
+      * @param opts.handler Function to handle requests
       * @param opts.method The HTTP method name.
       * @param opts.path Path to the endpoint.
-      * @param opts.checkToken Should the token be automatically checked. Defaults to true.
-      * @param opts.handler Function to handle requests
       * to this endpoint.
       */
-    def addAppServicePath(opts: CheckToken): Unit = js.native
+    def addAppServicePath(opts: Authenticate): Unit = js.native
     
-    def appService: js.UndefOr[AppService] = js.native
+    def appService: AppService = js.native
     
-    /* private */ var appServiceBot: js.Any = js.native
+    /* private */ var appServiceBot: Any = js.native
     
-    /* private */ var appservice: js.Any = js.native
+    /* private */ var appservice: Any = js.native
     
-    /* private */ var botClient: js.Any = js.native
+    /* private */ var botIntent: Any = js.native
     
-    /* private */ var botIntent: js.Any = js.native
+    /* private */ var botSdkAS: Any = js.native
     
     def botUserId: String = js.native
     
@@ -88,7 +96,7 @@ object bridgeMod {
       * user provided rules and the room state. Will default to true
       * if no rules have been provided.
       * @param roomId The room to check.
-      * @param cache Should the validator check it's cache.
+      * @param cache Should the validator check its cache.
       * @returns resolves if can and rejects if it cannot.
       *          A status code is returned on both.
       */
@@ -97,36 +105,33 @@ object bridgeMod {
     
     def checkHomeserverSupport(): js.Promise[Unit] = js.native
     
-    /* private */ var clientFactory: js.Any = js.native
-    
     /**
       * Close the appservice HTTP listener, and clear all timeouts.
       * @returns Resolves when the appservice HTTP listener has stopped
       */
     def close(): js.Promise[Unit] = js.native
     
+    /* private */ var customiseAppserviceThirdPartyLookup: Any = js.native
+    
+    /* private */ var eeEventBroker: Any = js.native
+    
+    /* private */ var eventStore: Any = js.native
+    
     /**
-      * Apply any customisations required on the appService object.
+      * Find a member for a given room. This method will fetch the joined members
+      * from the homeserver if the cache doesn't have it stored.
+      * @param preferBot Should we prefer the bot user over a ghost user
+      * @returns The userID of the member.
       */
-    /* private */ var customiseAppservice: js.Any = js.native
-    
-    /* private */ var customiseAppserviceThirdPartyLookup: js.Any = js.native
-    
-    /* private */ var eeEventBroker: js.Any = js.native
-    
-    /* private */ var eventStore: js.Any = js.native
+    def getAnyASMemberInRoom(roomId: String): js.Promise[String | Null] = js.native
+    def getAnyASMemberInRoom(roomId: String, preferBot: Boolean): js.Promise[String | Null] = js.native
     
     /**
       * Get the AS bot instance.
       */
     def getBot(): AppServiceBot = js.native
     
-    /* private */ var getBridgeContext: js.Any = js.native
-    
-    /**
-      * Retrieve the matrix client factory used when sending matrix requests.
-      */
-    def getClientFactory(): ClientFactory = js.native
+    /* private */ var getBridgeContext: Any = js.native
     
     /**
       * Retrieve the connected event store instance, if one was configured.
@@ -141,10 +146,10 @@ object bridgeMod {
       * instance to. Useful for logging contextual request IDs.
       * @return The intent instance
       */
-    def getIntent(): Intent = js.native
-    def getIntent(userId: String): Intent = js.native
-    def getIntent(userId: String, request: Request[js.Any]): Intent = js.native
-    def getIntent(userId: Unit, request: Request[js.Any]): Intent = js.native
+    def getIntent(): Intent | EncryptedIntent = js.native
+    def getIntent(userId: String): Intent | EncryptedIntent = js.native
+    def getIntent(userId: String, request: Request[Any]): Intent | EncryptedIntent = js.native
+    def getIntent(userId: Unit, request: Request[Any]): Intent | EncryptedIntent = js.native
     
     /**
       * Retrieve an Intent instance for the specified user ID localpart. This <i>must
@@ -155,9 +160,9 @@ object bridgeMod {
       * @return The intent instance
       */
     def getIntentFromLocalpart(localpart: String): Intent = js.native
-    def getIntentFromLocalpart(localpart: String, request: Request[js.Any]): Intent = js.native
+    def getIntentFromLocalpart(localpart: String, request: Request[Any]): Intent = js.native
     
-    /* private */ var getPowerLevelEntry: js.Any = js.native
+    /* private */ var getPowerLevelEntry: Any = js.native
     
     /**
       * Returns a PrometheusMetrics instance stored on the bridge, creating it first
@@ -165,7 +170,12 @@ object bridgeMod {
       * serve the "/metrics" page in the usual way.
       * The instance will automatically register the Matrix SDK metrics by calling
       * {PrometheusMetrics~registerMatrixSdkMetrics}.
+      *
+      * Ensure that `PackageInfo.getBridgeVersion` is returns the correct version before calling this,
+      * as changes to the bridge version after metric instantiation will not be detected.
+      *
       * @param {boolean} registerEndpoint Register the /metrics endpoint on the appservice HTTP server. Defaults to true.
+      *                                   Note: `listen()` must have been called if this is true or this will throw.
       * @param {Registry?} registry Optionally provide an alternative registry for metrics.
       */
     def getPrometheusMetrics(): PrometheusMetrics = js.native
@@ -181,28 +191,42 @@ object bridgeMod {
     def getRoomLinkValidator(): js.UndefOr[RoomLinkValidator] = js.native
     
     /**
-      * Retrieve the connected room store instance.
+      * Retrieve the connected room store instance, if one was configured.
       */
     def getRoomStore(): js.UndefOr[RoomBridgeStore] = js.native
+    
+    /**
+      * Retrieve the connected user activity store instance.
+      */
+    def getUserActivityStore(): js.UndefOr[UserActivityStore] = js.native
     
     /**
       * Returns a regex matching all users of the bridge.
       * @return Super regex composed of all user regexes.
       */
-    /* private */ var getUserRegex: js.Any = js.native
+    /* private */ var getUserRegex: Any = js.native
     
     /**
-      * Retrieve the connected user store instance.
+      * Retrieve the connected user store instance, if one was configured.
       */
     def getUserStore(): js.UndefOr[UserBridgeStore] = js.native
     
-    /* private */ var handleEventError: js.Any = js.native
+    /* private */ var handleEventError: Any = js.native
     
-    /* private */ var intentBackingStore: js.Any = js.native
+    /**
+      * Load registration, databases and initalise bridge components.
+      *
+      * **This must be called before `listen()`**
+      */
+    def initalise(): js.Promise[Unit] = js.native
     
-    /* private */ var intentLastAccessedTimeout: js.Any = js.native
+    /* private */ var intentBackingStore: Any = js.native
     
-    /* private */ var intents: js.Any = js.native
+    /* private */ var intentLastAccessedTimeout: Any = js.native
+    
+    /* private */ var intents: Any = js.native
+    
+    /* private */ var internalActivityTracker: Any = js.native
     
     /**
       * Restricts the promise according to the bridges `perRequest` setting.
@@ -213,28 +237,49 @@ object bridgeMod {
       * `perRequest` disabled:
       *     Returns the promise unchanged.
       */
-    /* private */ var limited: js.Any = js.native
+    /* private */ var limited: Any = js.native
+    
+    /**
+      * Setup a HTTP listener to handle appservice traffic.
+      * ** This must be called after .initalise() **
+      * @param port The port to listen on.
+      * @param appServiceInstance The AppService instance to attach to.
+      * If not provided, one will be created.
+      * @param hostname Optional hostname to bind to.
+      */
+    def listen(port: Double): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: String): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: String, backlog: Double): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: String, backlog: Double, appServiceInstance: AppService): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, appServiceInstance: AppService): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, appServiceInstance: AppService): js.Promise[Unit] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, appServiceInstance: AppService): js.Promise[Unit] = js.native
     
     /**
       * Load the user and room databases. Access them via getUserStore() and getRoomStore().
       */
     def loadDatabases(): js.Promise[Unit] = js.native
     
-    /* private */ var membershipCache: js.Any = js.native
+    /* private */ var membershipCache: Any = js.native
     
-    /* private */ var metrics: js.Any = js.native
+    /* private */ var metrics: Any = js.native
     
-    /* private */ var onAliasQuery: js.Any = js.native
+    /* private */ var onAliasQuery: Any = js.native
     
-    /* private */ var onConsume: js.Any = js.native
+    /* private */ var onConsume: Any = js.native
     
-    /* private */ var onEphemeralEvent: js.Any = js.native
+    /* private */ var onEphemeralActivity: Any = js.native
     
-    /* private */ var onEvent: js.Any = js.native
+    /* private */ var onEphemeralEvent: Any = js.native
     
-    /* private */ val onLog: js.Any = js.native
+    /* private */ var onEvent: Any = js.native
     
-    /* private */ var onUserQuery: js.Any = js.native
+    /* private */ var onIntentCreate: Any = js.native
+    
+    /* private */ val onLog: Any = js.native
+    
+    /* private */ var onUserQuery: Any = js.native
     
     val opts: VettedBridgeOpts = js.native
     
@@ -249,9 +294,9 @@ object bridgeMod {
     def pingAppserviceRoute(roomId: String): js.Promise[Double] = js.native
     def pingAppserviceRoute(roomId: String, timeoutMs: Double): js.Promise[Double] = js.native
     
-    /* private */ var powerlevelMap: js.Any = js.native
+    /* private */ var powerlevelMap: Any = js.native
     
-    /* private */ var prevRequestPromise: js.Any = js.native
+    /* private */ var prevRequestPromise: Any = js.native
     
     /**
       * Provision a user on the homeserver.
@@ -262,7 +307,7 @@ object bridgeMod {
     def provisionUser(matrixUser: MatrixUser): js.Promise[Unit] = js.native
     def provisionUser(matrixUser: MatrixUser, provisionedUser: Name): js.Promise[Unit] = js.native
     
-    /* private */ var queue: js.Any = js.native
+    /* private */ var queue: Any = js.native
     
     /**
       * A convenient shortcut to calling registerBridgeGauges() on the
@@ -284,9 +329,9 @@ object bridgeMod {
       *     }
       * })
       */
-    def registerBridgeGauges(counterFunc: js.Function0[BridgeGaugesCounts]): Unit = js.native
+    def registerBridgeGauges(counterFunc: js.Function0[js.Promise[BridgeGaugesCounts] | BridgeGaugesCounts]): Unit = js.native
     
-    /* private */ var registration: js.Any = js.native
+    /* private */ var registration: Any = js.native
     
     /**
       * Check a express Request to see if it's correctly
@@ -294,43 +339,56 @@ object bridgeMod {
       * and the `Authorization` header are checked.
       * @returns {Boolean} True if authenticated, False if not.
       */
-    def requestCheckToken(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Boolean = js.native
+    def requestCheckToken(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Boolean = js.native
     
-    /* private */ var requestFactory: js.Any = js.native
+    /* private */ var requestFactory: Any = js.native
     
-    /* private */ var roomLinkValidator: js.Any = js.native
+    /* private */ var roomLinkValidator: Any = js.native
     
-    /* private */ var roomStore: js.Any = js.native
+    /* private */ var roomStore: Any = js.native
     
-    /* private */ var roomUpgradeHandler: js.Any = js.native
+    /* private */ var roomUpgradeHandler: Any = js.native
     
     /**
-      * Run the bridge (start listening)
+      * Run the bridge (start listening). This calls `initalise()` and `listen()`.
       * @param port The port to listen on.
-      * @param config Configuration options
       * @param appServiceInstance The AppService instance to attach to.
       * If not provided, one will be created.
-      * @param hostname Optional hostname to bind to. (e.g. 0.0.0.0)
-      * @return A promise resolving when the bridge is ready
+      * @param hostname Optional hostname to bind to.
+      * @return A promise resolving when the bridge is ready.
       */
-    def run[T](port: Double, config: T): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: Unit, hostname: String): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: Unit, hostname: String, backlog: Double): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: Unit, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: AppService): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: AppService, hostname: String): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: AppService, hostname: String, backlog: Double): js.Promise[Unit] = js.native
-    def run[T](port: Double, config: T, appServiceInstance: AppService, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
+    def run(port: Double): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: Unit, hostname: String): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: Unit, hostname: String, backlog: Double): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: Unit, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: AppService): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: AppService, hostname: String): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: AppService, hostname: String, backlog: Double): js.Promise[Unit] = js.native
+    def run(port: Double, appServiceInstance: AppService, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
     
-    /* private */ var selfPingDeferred: js.Any = js.native
+    /* private */ var selfPingDeferred: Any = js.native
     
-    /* private */ var setPowerLevelEntry: js.Any = js.native
+    /* private */ var setPowerLevelEntry: Any = js.native
     
-    /* private */ var setupIntentCulling: js.Any = js.native
+    /* private */ var setupIntentCulling: Any = js.native
     
-    /* private */ var updateIntents: js.Any = js.native
+    /* private */ var updateIntents: Any = js.native
     
-    /* private */ var userStore: js.Any = js.native
+    def updateRoomLinkValidatorRules(rules: Rules): Unit = js.native
+    
+    /* private */ var userActivityStore: Any = js.native
+    
+    /* private */ var userStore: Any = js.native
+    
+    /* private */ var validateEditEvent: Any = js.native
   }
   
   @js.native
@@ -386,18 +444,13 @@ object bridgeMod {
       * contained helper functions.
       */
     var thirdPartyLookup: js.UndefOr[GetLocation] = js.native
+    
+    var userActivityTracker: js.UndefOr[UserActivityTracker] = js.native
   }
   
   trait BridgeOpts extends StObject {
     
-    var authenticateThirdpartyEndpoints: js.UndefOr[Boolean] = js.undefined
-    
     var bridgeEncryption: js.UndefOr[HomeserverUrl] = js.undefined
-    
-    /**
-      * The client factory instance to use. If not supplied, one will be created.
-      */
-    var clientFactory: js.UndefOr[ClientFactory] = js.undefined
     
     /**
       * The controller logic for the bridge.
@@ -441,6 +494,8 @@ object bridgeMod {
       */
     var eventStore: js.UndefOr[EventBridgeStore | String] = js.undefined
     
+    var eventValidation: js.UndefOr[ValidateEditSender] = js.undefined
+    
     /**
       * The base HS url
       */
@@ -470,6 +525,11 @@ object bridgeMod {
     var networkName: js.UndefOr[String] = js.undefined
     
     /**
+      * The factory function used to create intents.
+      */
+    var onIntentCreate: js.UndefOr[js.Function1[/* userId */ String, Intent]] = js.undefined
+    
+    /**
       * Options for the `onEvent` queue. When the bridge
       * receives an incoming transaction, it needs to asyncly query the data store for
       * contextual info before calling onEvent. A queue is used to keep the onEvent
@@ -482,11 +542,11 @@ object bridgeMod {
       */
     var registration: AppServiceRegistration | String
     
-    var roomLinkValidation: js.UndefOr[RuleFile] = js.undefined
+    var roomLinkValidation: js.UndefOr[typings.matrixAppserviceBridge.anon.Rules] = js.undefined
     
     /**
       * The room store instance to use, or the path to the room .db file to load.
-      * A database will be ClientFactoryEncryptionStorecreated if this is not specified. If `disableStores` is set,
+      * A database will be created if this is not specified. If `disableStores` is set,
       * no database will be created or used.
       */
     var roomStore: js.UndefOr[RoomBridgeStore | String] = js.undefined
@@ -498,6 +558,15 @@ object bridgeMod {
       * for events which were sent by a bridge user. Default: true.
       */
     var suppressEcho: js.UndefOr[Boolean] = js.undefined
+    
+    var trackUserActivity: js.UndefOr[ActivityTrackerOpts] = js.undefined
+    
+    /**
+      * The user activity store instance to use, or the path to the user .db file to load.
+      * A database will be created if this is not specified. If `disableStores` is set,
+      * no database will be created or used.
+      */
+    var userActivityStore: js.UndefOr[UserActivityStore | String] = js.undefined
     
     /**
       * The user store instance to use, or the path to the user .db file to load.
@@ -520,17 +589,9 @@ object bridgeMod {
     
     extension [Self <: BridgeOpts](x: Self) {
       
-      inline def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
-      
-      inline def setAuthenticateThirdpartyEndpointsUndefined: Self = StObject.set(x, "authenticateThirdpartyEndpoints", js.undefined)
-      
       inline def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
       
       inline def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
-      
-      inline def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
-      
-      inline def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
       
       inline def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -552,6 +613,10 @@ object bridgeMod {
       
       inline def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
       
+      inline def setEventValidation(value: ValidateEditSender): Self = StObject.set(x, "eventValidation", value.asInstanceOf[js.Any])
+      
+      inline def setEventValidationUndefined: Self = StObject.set(x, "eventValidation", js.undefined)
+      
       inline def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
       
       inline def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
@@ -570,13 +635,17 @@ object bridgeMod {
       
       inline def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
       
+      inline def setOnIntentCreate(value: /* userId */ String => Intent): Self = StObject.set(x, "onIntentCreate", js.Any.fromFunction1(value))
+      
+      inline def setOnIntentCreateUndefined: Self = StObject.set(x, "onIntentCreate", js.undefined)
+      
       inline def setQueue(value: PerRequest): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
       inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
       
       inline def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
       
-      inline def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
+      inline def setRoomLinkValidation(value: typings.matrixAppserviceBridge.anon.Rules): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
       
       inline def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
       
@@ -592,6 +661,14 @@ object bridgeMod {
       
       inline def setSuppressEchoUndefined: Self = StObject.set(x, "suppressEcho", js.undefined)
       
+      inline def setTrackUserActivity(value: ActivityTrackerOpts): Self = StObject.set(x, "trackUserActivity", value.asInstanceOf[js.Any])
+      
+      inline def setTrackUserActivityUndefined: Self = StObject.set(x, "trackUserActivity", js.undefined)
+      
+      inline def setUserActivityStore(value: UserActivityStore | String): Self = StObject.set(x, "userActivityStore", value.asInstanceOf[js.Any])
+      
+      inline def setUserActivityStoreUndefined: Self = StObject.set(x, "userActivityStore", js.undefined)
+      
       inline def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
       
       inline def setUserStoreUndefined: Self = StObject.set(x, "userStore", js.undefined)
@@ -600,21 +677,15 @@ object bridgeMod {
   
   type PossiblePromise[T] = T | js.Promise[T]
   
+  @js.native
   trait VettedBridgeOpts extends StObject {
     
-    var authenticateThirdpartyEndpoints: Boolean
-    
-    var bridgeEncryption: js.UndefOr[HomeserverUrl] = js.undefined
-    
-    /**
-      * The client factory instance to use. If not supplied, one will be created.
-      */
-    var clientFactory: js.UndefOr[ClientFactory] = js.undefined
+    var bridgeEncryption: js.UndefOr[HomeserverUrl] = js.native
     
     /**
       * The controller logic for the bridge.
       */
-    var controller: BridgeController
+    var controller: BridgeController = js.native
     
     /**
       * `true` to disable {@link BridgeContext}
@@ -624,7 +695,7 @@ object bridgeMod {
       *
       * Default: `false`.
       */
-    var disableContext: Boolean
+    var disableContext: Boolean = js.native
     
     /**
       * True to disable enabling of stores.
@@ -632,47 +703,56 @@ object bridgeMod {
       * do not need any of the included store objects. This implies setting
       * disableContext to True. Default: false.
       */
-    var disableStores: Boolean
+    var disableStores: Boolean = js.native
     
     /**
       * The domain part for user_ids and room aliases e.g. "bar" in "@foo:bar".
       */
-    var domain: String
+    var domain: String = js.native
     
     /**
       * Escape userIds for non-bot intents with
       * {@link MatrixUser~escapeUserId}
       * Default: true
       */
-    var escapeUserIds: js.UndefOr[Boolean] = js.undefined
+    var escapeUserIds: js.UndefOr[Boolean] = js.native
     
     /**
       * The event store instance to use, or the path to the user .db file to load.
       * A database will NOT be created if this is not specified. If `disableStores` is set,
       * no database will be created or used.
       */
-    var eventStore: js.UndefOr[EventBridgeStore | String] = js.undefined
+    var eventStore: js.UndefOr[EventBridgeStore | String] = js.native
+    
+    var eventValidation: js.UndefOr[ValidateEditSender] = js.native
     
     /**
       * The base HS url
       */
-    var homeserverUrl: String
+    var homeserverUrl: String = js.native
     
     /**
       * Options to supply to created Intent instances.
       */
-    var intentOptions: Bot
+    var intentOptions: Bot = js.native
     
     /**
       * True to enable SUCCESS/FAILED log lines to be sent to onLog. Default: true.
       */
-    var logRequestOutcome: Boolean
+    var logRequestOutcome: Boolean = js.native
     
     /**
       * A human readable string that will be used when the bridge signals errors
       * to the client. Will not include in error events if ommited.
       */
-    var networkName: js.UndefOr[String] = js.undefined
+    var networkName: js.UndefOr[String] = js.native
+    
+    /**
+      * The factory function used to create intents. If encryptionOpts is specified, this should create an
+      * EncryptedIntent instead.
+      */
+    def onIntentCreate(userId: String, opts: IntentOpts): Intent | EncryptedIntent = js.native
+    def onIntentCreate(userId: String, opts: IntentOpts, encryptionOpts: EncryptedIntentOpts): Intent | EncryptedIntent = js.native
     
     /**
       * Options for the `onEvent` queue. When the bridge
@@ -680,113 +760,44 @@ object bridgeMod {
       * contextual info before calling onEvent. A queue is used to keep the onEvent
       * calls consistent with the arrival order from the incoming transactions.
       */
-    var queue: Type
+    var queue: Type = js.native
     
     /**
       * Application service registration object or path to the registration file.
       */
-    var registration: AppServiceRegistration | String
+    var registration: AppServiceRegistration | String = js.native
     
-    var roomLinkValidation: js.UndefOr[RuleFile] = js.undefined
+    var roomLinkValidation: js.UndefOr[typings.matrixAppserviceBridge.anon.Rules] = js.native
     
     /**
       * The room store instance to use, or the path to the room .db file to load.
       * A database will be created if this is not specified. If `disableStores` is set,
       * no database will be created or used.
       */
-    var roomStore: RoomBridgeStore | String
+    var roomStore: RoomBridgeStore | String = js.native
     
-    var roomUpgradeOpts: js.UndefOr[RoomUpgradeHandlerOpts] = js.undefined
+    var roomUpgradeOpts: js.UndefOr[RoomUpgradeHandlerOpts] = js.native
     
     /**
       * True to stop receiving onEvent callbacks
       * for events which were sent by a bridge user. Default: true.
       */
-    var suppressEcho: Boolean
+    var suppressEcho: Boolean = js.native
+    
+    /**
+      * The user activity store instance to use, or the path to the user .db file to load.
+      * A database will be created if this is not specified. If `disableStores` is set,
+      * no database will be created or used.
+      */
+    var userActivityStore: UserActivityStore | String = js.native
+    
+    var userActivityTracking: js.UndefOr[ActivityTrackerOpts] = js.native
     
     /**
       * The user store instance to use, or the path to the user .db file to load.
       * A database will be created if this is not specified. If `disableStores` is set,
       * no database will be created or used.
       */
-    var userStore: UserBridgeStore | String
-  }
-  object VettedBridgeOpts {
-    
-    inline def apply(
-      authenticateThirdpartyEndpoints: Boolean,
-      controller: BridgeController,
-      disableContext: Boolean,
-      disableStores: Boolean,
-      domain: String,
-      homeserverUrl: String,
-      intentOptions: Bot,
-      logRequestOutcome: Boolean,
-      queue: Type,
-      registration: AppServiceRegistration | String,
-      roomStore: RoomBridgeStore | String,
-      suppressEcho: Boolean,
-      userStore: UserBridgeStore | String
-    ): VettedBridgeOpts = {
-      val __obj = js.Dynamic.literal(authenticateThirdpartyEndpoints = authenticateThirdpartyEndpoints.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], disableContext = disableContext.asInstanceOf[js.Any], disableStores = disableStores.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], homeserverUrl = homeserverUrl.asInstanceOf[js.Any], intentOptions = intentOptions.asInstanceOf[js.Any], logRequestOutcome = logRequestOutcome.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], registration = registration.asInstanceOf[js.Any], roomStore = roomStore.asInstanceOf[js.Any], suppressEcho = suppressEcho.asInstanceOf[js.Any], userStore = userStore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VettedBridgeOpts]
-    }
-    
-    extension [Self <: VettedBridgeOpts](x: Self) {
-      
-      inline def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
-      
-      inline def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
-      
-      inline def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
-      
-      inline def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
-      
-      inline def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
-      
-      inline def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
-      
-      inline def setDisableContext(value: Boolean): Self = StObject.set(x, "disableContext", value.asInstanceOf[js.Any])
-      
-      inline def setDisableStores(value: Boolean): Self = StObject.set(x, "disableStores", value.asInstanceOf[js.Any])
-      
-      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
-      
-      inline def setEscapeUserIds(value: Boolean): Self = StObject.set(x, "escapeUserIds", value.asInstanceOf[js.Any])
-      
-      inline def setEscapeUserIdsUndefined: Self = StObject.set(x, "escapeUserIds", js.undefined)
-      
-      inline def setEventStore(value: EventBridgeStore | String): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
-      
-      inline def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
-      
-      inline def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
-      
-      inline def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
-      
-      inline def setLogRequestOutcome(value: Boolean): Self = StObject.set(x, "logRequestOutcome", value.asInstanceOf[js.Any])
-      
-      inline def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
-      
-      inline def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
-      
-      inline def setQueue(value: Type): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
-      
-      inline def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
-      
-      inline def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
-      
-      inline def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
-      
-      inline def setRoomStore(value: RoomBridgeStore | String): Self = StObject.set(x, "roomStore", value.asInstanceOf[js.Any])
-      
-      inline def setRoomUpgradeOpts(value: RoomUpgradeHandlerOpts): Self = StObject.set(x, "roomUpgradeOpts", value.asInstanceOf[js.Any])
-      
-      inline def setRoomUpgradeOptsUndefined: Self = StObject.set(x, "roomUpgradeOpts", js.undefined)
-      
-      inline def setSuppressEcho(value: Boolean): Self = StObject.set(x, "suppressEcho", value.asInstanceOf[js.Any])
-      
-      inline def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
-    }
+    var userStore: UserBridgeStore | String = js.native
   }
 }

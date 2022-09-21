@@ -9,7 +9,7 @@ object id3v1tagreaderMod {
   
   @JSImport("jsmediatags/build2/ID3v1TagReader", JSImport.Default)
   @js.native
-  class default () extends ID3v1TagReader
+  open class default () extends ID3v1TagReader
   /* static members */
   object default {
     

@@ -28,7 +28,7 @@ object ExtensionDefinition {
     
     inline def setExtensionAttributeDefinitions(value: js.Array[ExtensionAttributeDefinition]): Self = StObject.set(x, "extensionAttributeDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setExtensionAttributeDefinitionsVarargs(value: ExtensionAttributeDefinition*): Self = StObject.set(x, "extensionAttributeDefinitions", js.Array(value :_*))
+    inline def setExtensionAttributeDefinitionsVarargs(value: ExtensionAttributeDefinition*): Self = StObject.set(x, "extensionAttributeDefinitions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

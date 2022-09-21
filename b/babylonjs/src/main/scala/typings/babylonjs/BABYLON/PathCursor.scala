@@ -8,20 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PathCursor extends StObject {
   
   /**
+    * Ensures that the value is limited between zero and one
+    * @returns This path cursor
+    */
+  /* private */ var _ensureLimits: Any = js.native
+  
+  /**
     * Stores path cursor callbacks for when an onchange event is triggered
     */
-  /* private */ var _onchange: js.Any = js.native
+  /* private */ var _onchange: Any = js.native
+  
+  /* private */ var _path: Any = js.native
+  
+  /**
+    * Runs onchange callbacks on change (used by the animation engine)
+    * @returns This path cursor
+    */
+  /* private */ var _raiseOnChange: Any = js.native
   
   /**
     * The animation array of the path cursor
     */
   var animations: js.Array[Animation] = js.native
-  
-  /**
-    * Ensures that the value is limited between zero and one
-    * @returns This path cursor
-    */
-  /* private */ var ensureLimits: js.Any = js.native
   
   /**
     * Gets the cursor point on the path
@@ -59,14 +67,6 @@ trait PathCursor extends StObject {
     * @returns This path cursor
     */
   def onchange(f: js.Function1[/* cursor */ this.type, Unit]): PathCursor = js.native
-  
-  /* private */ var path: js.Any = js.native
-  
-  /**
-    * Runs onchange callbacks on change (used by the animation engine)
-    * @returns This path cursor
-    */
-  /* private */ var raiseOnChange: js.Any = js.native
   
   /**
     * The value of the path cursor

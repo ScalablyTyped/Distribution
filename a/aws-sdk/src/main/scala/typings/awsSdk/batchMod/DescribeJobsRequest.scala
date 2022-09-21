@@ -22,6 +22,6 @@ object DescribeJobsRequest {
     
     inline def setJobs(value: StringList): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value*))
   }
 }

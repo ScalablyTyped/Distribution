@@ -19,18 +19,12 @@ object DeleteIdentitiesResponse {
     __obj.asInstanceOf[DeleteIdentitiesResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "DeleteIdentitiesResponse")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: DeleteIdentitiesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: DeleteIdentitiesResponse](x: Self) {
     
     inline def setUnprocessedIdentityIds(value: js.Array[UnprocessedIdentityId]): Self = StObject.set(x, "UnprocessedIdentityIds", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedIdentityIdsUndefined: Self = StObject.set(x, "UnprocessedIdentityIds", js.undefined)
     
-    inline def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value :_*))
+    inline def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value*))
   }
 }

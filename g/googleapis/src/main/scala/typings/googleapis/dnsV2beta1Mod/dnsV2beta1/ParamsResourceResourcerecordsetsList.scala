@@ -1,9 +1,5 @@
 package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,37 +9,32 @@ trait ParamsResourceResourcerecordsetsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    *
+    * Identifies the managed zone addressed by this request. Can be the managed zone name or id.
     */
   var managedZone: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    *
+    * Restricts the list to return only records with this fully qualified domain name.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Identifies the project addressed by this request.
     */
   var project: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Restricts the list to return only records of this type. If present, the "name" parameter must also be present.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -55,10 +46,6 @@ object ParamsResourceResourcerecordsetsList {
   }
   
   extension [Self <: ParamsResourceResourcerecordsetsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setManagedZone(value: String): Self = StObject.set(x, "managedZone", value.asInstanceOf[js.Any])
     

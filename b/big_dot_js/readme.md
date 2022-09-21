@@ -1,7 +1,7 @@
 
 # Scala.js typings for big_dot_js
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic
@@ -10,10 +10,10 @@ A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic
 | ------------------ | :-------------: |
 | Full name          | big.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 5 |
-| # dependents       | 672 |
-| # downloads        | 624930751 |
-| # stars            | 15 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 8.135503566666667E7 |
+| # stars            | 4025.0 |
 
 ## Links
 - [Homepage](https://github.com/MikeMcl/big.js#readme)

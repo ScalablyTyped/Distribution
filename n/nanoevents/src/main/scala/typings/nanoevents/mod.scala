@@ -1,5 +1,9 @@
 package typings.nanoevents
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Parameters
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,66 +12,82 @@ object mod {
   
   @JSImport("nanoevents", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object */] ()
-    extends StObject
-       with NanoEvents[T] {
+  val ^ : js.Any = js.native
+  
+  @JSImport("nanoevents", "Emitter")
+  @js.native
+  open class Emitter[Events /* <: EventsMap */] () extends StObject {
     
-    /* CompleteClass */
-    override def emit[U /* <: /* keyof T */ String */](
-      name: U,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
+    /**
+      * Calls each of the listeners registered for a given event.
+      *
+      * ```js
+      * ee.emit('tick', tickType, tickDuration)
+      * ```
+      *
+      * @param event The event name.
+      * @param args The arguments for listeners.
+      */
+    def emit[K /* <: /* keyof Events */ String */](
+      event: K,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Events[K]> is not an array type */ args: Parameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: Events[K] */ js.Any
+        ]
     ): Unit = js.native
     
-    /* CompleteClass */
-    override def on[U /* <: /* keyof T */ String */](
-      name: U,
-      callBack: js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-          js.Any
-        ]
-    ): js.Function0[Unit] = js.native
+    /**
+      * Event names in keys and arrays with listeners in values.
+      *
+      * ```js
+      * emitter1.events = emitter2.events
+      * emitter2.events = { }
+      * ```
+      */
+    var events: Partial[
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ E in keyof Events ]: std.Array<Events[E]>}
+      */ typings.nanoevents.nanoeventsStrings.Emitter & TopLevel[Events]
+      ] = js.native
+    
+    /**
+      * Add a listener for a given event.
+      *
+      * ```js
+      * const unbind = ee.on('tick', (tickType, tickDuration) => {
+      *   count += 1
+      * })
+      *
+      * disable () {
+      *   unbind()
+      * }
+      * ```
+      *
+      * @param event The event name.
+      * @param cb The listener function.
+      * @returns Unbind listener from event.
+      */
+    def on[K /* <: /* keyof Events */ String */](
+      event: K,
+      cb: /* import warning: importer.ImportType#apply Failed type conversion: Events[K] */ js.Any
+    ): Unsubscribe = js.native
   }
   
-  trait NanoEvents[T /* <: js.Object */] extends StObject {
+  inline def createNanoEvents[Events /* <: EventsMap */](): Emitter[Events] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNanoEvents")().asInstanceOf[Emitter[Events]]
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - org.scalablytyped.runtime.StObject because Already inherited
+  - org.scalablytyped.runtime.StringDictionary because Already inherited */ trait DefaultEvents
+    extends StObject
+       with EventsMap
+  object DefaultEvents {
     
-    def emit[U /* <: /* keyof T */ String */](
-      name: U,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
-    ): Unit
-    
-    def on[U /* <: /* keyof T */ String */](
-      name: U,
-      callBack: js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-          js.Any
-        ]
-    ): js.Function0[Unit]
-  }
-  object NanoEvents {
-    
-    inline def apply[T /* <: js.Object */](
-      emit: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit,
-      on: (js.Any, js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-          js.Any
-        ]) => js.Function0[Unit]
-    ): NanoEvents[T] = {
-      val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on))
-      __obj.asInstanceOf[NanoEvents[T]]
-    }
-    
-    extension [Self <: NanoEvents[?], T /* <: js.Object */](x: Self & NanoEvents[T]) {
-      
-      inline def setEmit(
-        value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit
-      ): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
-      
-      inline def setOn(
-        value: (js.Any, js.Function1[
-              /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
-              js.Any
-            ]) => js.Function0[Unit]
-      ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def apply(): DefaultEvents = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DefaultEvents]
     }
   }
+  
+  type EventsMap = StringDictionary[Any]
+  
+  type Unsubscribe = js.Function0[Unit]
 }

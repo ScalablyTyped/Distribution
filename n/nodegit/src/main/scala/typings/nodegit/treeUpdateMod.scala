@@ -9,7 +9,7 @@ object treeUpdateMod {
   
   @JSImport("nodegit/tree-update", "TreeUpdate")
   @js.native
-  class TreeUpdate () extends StObject {
+  open class TreeUpdate () extends StObject {
     
     var action: Double = js.native
     

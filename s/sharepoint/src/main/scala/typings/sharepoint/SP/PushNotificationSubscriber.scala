@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,9 @@ trait PushNotificationSubscriber
   
   def get_deviceAppInstanceId(): Guid = js.native
   
-  def get_lastModifiedTimeStamp(): Date = js.native
+  def get_lastModifiedTimeStamp(): js.Date = js.native
   
-  def get_registrationTimeStamp(): Date = js.native
+  def get_registrationTimeStamp(): js.Date = js.native
   
   def get_serviceToken(): String = js.native
   

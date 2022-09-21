@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CustomArtifactDownloadInput = typings.vsoNodeApi.releaseInterfacesMod.ArtifactDownloadInputBase
+type CustomArtifactDownloadInput = ArtifactDownloadInputBase
 
-type GitArtifactDownloadInput = typings.vsoNodeApi.releaseInterfacesMod.ArtifactDownloadInputBase
+type GitArtifactDownloadInput = ArtifactDownloadInputBase
 
-type GitHubArtifactDownloadInput = typings.vsoNodeApi.releaseInterfacesMod.ArtifactDownloadInputBase
+type GitHubArtifactDownloadInput = ArtifactDownloadInputBase
 
-type MultiMachineInput = typings.vsoNodeApi.releaseInterfacesMod.ParallelExecutionInputBase
+type MultiMachineInput = ParallelExecutionInputBase
 
-type TfvcArtifactDownloadInput = typings.vsoNodeApi.releaseInterfacesMod.ArtifactDownloadInputBase
+type TfvcArtifactDownloadInput = ArtifactDownloadInputBase

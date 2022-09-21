@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UpdateAllFieldsCommand")
 @js.native
-class UpdateAllFieldsCommand ()
+open class UpdateAllFieldsCommand ()
   extends StObject
      with typings.devexpressWeb.UpdateAllFieldsCommand {
   

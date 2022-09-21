@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details about a channel bulletin post.
-  */
 trait SchemaActivityContentDetailsBulletin extends StObject {
   
   /**
-    * The resourceId object contains information that identifies the resource
-    * associated with a bulletin post.
+    * The resourceId object contains information that identifies the resource associated with a bulletin post. @mutable youtube.activities.insert
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }

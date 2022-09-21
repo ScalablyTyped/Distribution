@@ -33,6 +33,6 @@ object DescribeParametersResult {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "Parameters", js.Array(value*))
   }
 }

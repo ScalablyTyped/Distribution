@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TracesResource extends StObject {
   
   def batchWrite(request: Alt, body: BatchWriteSpansRequest): Request[js.Object] = js.native
-  /** Sends new spans to new or existing traces. You cannot update existing spans. */
+  /** Batch writes new spans to new or existing traces. You cannot update existing spans. */
   def batchWrite(request: Callback): Request[js.Object] = js.native
   
   var spans: SpansResource = js.native

@@ -10,7 +10,7 @@ trait ParameterRuleBase extends StObject {
     * The default value of property, once the property is allowed non-required and missed, parameter will
     * use this as the default value. **This may change the original input params.**
     */
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   /**
     * Make parameter convert the input param to the specific type, support int, number, string and boolean,
@@ -48,11 +48,11 @@ object ParameterRuleBase {
     
     inline def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
     
-    inline def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
+    inline def setConvertTypeFunction1(value: /* value */ Any => Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
     
     inline def setConvertTypeUndefined: Self = StObject.set(x, "convertType", js.undefined)
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     

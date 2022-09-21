@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IVectorView
@@ -22,7 +21,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.ApplicationLanguages")
   @js.native
-  class ApplicationLanguages ()
+  open class ApplicationLanguages ()
     extends StObject
        with typings.winrt.Windows.Globalization.ApplicationLanguages
   /* static members */
@@ -50,7 +49,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.Calendar")
   @js.native
-  class Calendar ()
+  open class Calendar ()
     extends StObject
        with typings.winrt.Windows.Globalization.Calendar {
     def this(languages: IIterable[String]) = this()
@@ -59,7 +58,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.CalendarIdentifiers")
   @js.native
-  class CalendarIdentifiers ()
+  open class CalendarIdentifiers ()
     extends StObject
        with typings.winrt.Windows.Globalization.CalendarIdentifiers
   /* static members */
@@ -117,7 +116,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.ClockIdentifiers")
   @js.native
-  class ClockIdentifiers ()
+  open class ClockIdentifiers ()
     extends StObject
        with typings.winrt.Windows.Globalization.ClockIdentifiers
   /* static members */
@@ -142,7 +141,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.Collation.CharacterGrouping")
     @js.native
-    class CharacterGrouping ()
+    open class CharacterGrouping ()
       extends StObject
          with typings.winrt.Windows.Globalization.Collation.CharacterGrouping {
       
@@ -155,7 +154,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.Collation.CharacterGroupings")
     @js.native
-    class CharacterGroupings ()
+    open class CharacterGroupings ()
       extends StObject
          with typings.winrt.Windows.Globalization.Collation.CharacterGroupings {
       
@@ -168,7 +167,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
     @js.native
-    class DateTimeFormatter protected ()
+    open class DateTimeFormatter protected ()
       extends StObject
          with typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
       def this(formatTemplate: String) = this()
@@ -218,7 +217,7 @@ object Globalization {
       var clock: String = js.native
       
       /* CompleteClass */
-      override def format(value: Date): String = js.native
+      override def format(value: js.Date): String = js.native
       
       /* CompleteClass */
       var geographicRegion: String = js.native
@@ -415,7 +414,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.Fonts.LanguageFont")
     @js.native
-    class LanguageFont ()
+    open class LanguageFont ()
       extends StObject
          with typings.winrt.Windows.Globalization.Fonts.LanguageFont {
       
@@ -437,7 +436,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.Fonts.LanguageFontGroup")
     @js.native
-    class LanguageFontGroup protected ()
+    open class LanguageFontGroup protected ()
       extends StObject
          with typings.winrt.Windows.Globalization.Fonts.LanguageFontGroup {
       def this(languageTag: String) = this()
@@ -479,7 +478,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.GeographicRegion")
   @js.native
-  class GeographicRegion ()
+  open class GeographicRegion ()
     extends StObject
        with typings.winrt.Windows.Globalization.GeographicRegion {
     def this(geographicRegionCode: String) = this()
@@ -517,7 +516,7 @@ object Globalization {
   
   @JSGlobal("Windows.Globalization.Language")
   @js.native
-  class Language protected ()
+  open class Language protected ()
     extends StObject
        with typings.winrt.Windows.Globalization.Language {
     def this(languageTag: String) = this()
@@ -553,7 +552,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.NumberFormatting.CurrencyFormatter")
     @js.native
-    class CurrencyFormatter protected ()
+    open class CurrencyFormatter protected ()
       extends StObject
          with typings.winrt.Windows.Globalization.NumberFormatting.CurrencyFormatter {
       def this(currencyCode: String) = this()
@@ -613,7 +612,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.NumberFormatting.DecimalFormatter")
     @js.native
-    class DecimalFormatter ()
+    open class DecimalFormatter ()
       extends StObject
          with typings.winrt.Windows.Globalization.NumberFormatting.DecimalFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()
@@ -669,7 +668,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.NumberFormatting.PercentFormatter")
     @js.native
-    class PercentFormatter ()
+    open class PercentFormatter ()
       extends StObject
          with typings.winrt.Windows.Globalization.NumberFormatting.PercentFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()
@@ -725,7 +724,7 @@ object Globalization {
     
     @JSGlobal("Windows.Globalization.NumberFormatting.PermilleFormatter")
     @js.native
-    class PermilleFormatter ()
+    open class PermilleFormatter ()
       extends StObject
          with typings.winrt.Windows.Globalization.NumberFormatting.PermilleFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhysicsAffectedImpostorWithData extends StObject {
   
   /**
-    * The data about the hit/horce from the explosion
+    * The data about the hit/force from the explosion
     */
   var hitData: PhysicsHitData
   

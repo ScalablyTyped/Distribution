@@ -9,74 +9,62 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(text: String): js.Any = js.native
-    def apply(
-      text: String,
-      reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): js.Any = js.native
+    def apply(text: String): Any = js.native
+    def apply(text: String, reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Any = js.native
   }
   
   @js.native
   trait FnCallValueReplacerSpace extends StObject {
     
-    def apply(value: js.Any): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
+    def apply(value: Any): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String]): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String], space: String): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String], space: Double): String = js.native
+    def apply(value: Any, replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): String = js.native
     def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): String = js.native
-    def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: String
     ): String = js.native
     def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: Double
     ): String = js.native
-    def apply(value: js.Any, replacer: Null, space: String): String = js.native
-    def apply(value: js.Any, replacer: Null, space: Double): String = js.native
-    def apply(value: js.Any, replacer: Unit, space: String): String = js.native
-    def apply(value: js.Any, replacer: Unit, space: Double): String = js.native
+    def apply(value: Any, replacer: Null, space: String): String = js.native
+    def apply(value: Any, replacer: Null, space: Double): String = js.native
+    def apply(value: Any, replacer: Unit, space: String): String = js.native
+    def apply(value: Any, replacer: Unit, space: Double): String = js.native
   }
   
   trait Parse extends StObject
   
   trait Stringify extends StObject {
     
-    def parse(text: String): js.Any
-    def parse(
-      text: String,
-      reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): js.Any
+    def parse(text: String): Any
+    def parse(text: String, reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Any
     @JSName("parse")
     var parse_Original: FnCall
     
-    def stringify(value: js.Any): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String]): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String
+    def stringify(value: Any): String
+    def stringify(value: Any, replacer: js.Array[Double | String]): String
+    def stringify(value: Any, replacer: js.Array[Double | String], space: String): String
+    def stringify(value: Any, replacer: js.Array[Double | String], space: Double): String
+    def stringify(value: Any, replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): String
     def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): String
-    def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: String
     ): String
     def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: Double
     ): String
-    def stringify(value: js.Any, replacer: Null, space: String): String
-    def stringify(value: js.Any, replacer: Null, space: Double): String
-    def stringify(value: js.Any, replacer: Unit, space: String): String
-    def stringify(value: js.Any, replacer: Unit, space: Double): String
+    def stringify(value: Any, replacer: Null, space: String): String
+    def stringify(value: Any, replacer: Null, space: Double): String
+    def stringify(value: Any, replacer: Unit, space: String): String
+    def stringify(value: Any, replacer: Unit, space: Double): String
     @JSName("stringify")
     var stringify_Original: FnCallValueReplacerSpace
   }

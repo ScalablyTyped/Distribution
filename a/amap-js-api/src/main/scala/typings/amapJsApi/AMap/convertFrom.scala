@@ -32,7 +32,7 @@ object convertFrom {
       
       inline def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value*))
     }
   }
   

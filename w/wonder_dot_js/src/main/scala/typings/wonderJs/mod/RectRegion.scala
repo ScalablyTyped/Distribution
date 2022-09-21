@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "RectRegion")
 @js.native
-class RectRegion ()
+open class RectRegion ()
   extends typings.wonderJs.rectRegionMod.RectRegion {
-  def this(x: js.Any, y: js.Any, z: js.Any, w: js.Any) = this()
+  def this(x: Any, y: Any, z: Any, w: Any) = this()
 }

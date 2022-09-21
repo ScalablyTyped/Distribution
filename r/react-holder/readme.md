@@ -11,9 +11,9 @@ React image Holder (with holder.js)
 | Full name          | react-holder |
 | Keywords           | react, image, placeholder, holder.js |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2900 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 250.66666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/moeriki/react-holder)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NegateBlock")
 @js.native
-class NegateBlock protected ()
+open class NegateBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NegateBlock {
   /**

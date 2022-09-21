@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
   
   @JSImport("globalthis", JSImport.Namespace)
   @js.native
@@ -31,7 +31,7 @@ object mod {
     */
   @JSImport("globalthis", "implementation")
   @js.native
-  val implementation: /* globalThis */ js.Any = js.native
+  val implementation: /* globalThis */ Any = js.native
   
   /**
     * Installs the `globalThis` property onto the global object.

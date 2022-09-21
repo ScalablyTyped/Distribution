@@ -23,7 +23,7 @@ trait SlicerItem extends StObject {
   
   var Selected: Boolean
   
-  val SourceName: js.Any
+  val SourceName: Any
   
   val SourceNameStandard: String
   
@@ -40,7 +40,7 @@ object SlicerItem {
     Name: String,
     Parent: SlicerCache,
     Selected: Boolean,
-    SourceName: js.Any,
+    SourceName: Any,
     SourceNameStandard: String,
     Value: String
   ): SlicerItem = {
@@ -67,7 +67,7 @@ object SlicerItem {
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
-    inline def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
     inline def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
     

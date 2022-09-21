@@ -14,23 +14,23 @@ object pluginsMod {
   
   @JSImport("sortablejs/plugins", "AutoScrollPlugin")
   @js.native
-  class AutoScrollPlugin () extends StObject
+  open class AutoScrollPlugin () extends StObject
   
   @JSImport("sortablejs/plugins", "MultiDragPlugin")
   @js.native
-  class MultiDragPlugin () extends StObject
+  open class MultiDragPlugin () extends StObject
   
   @JSImport("sortablejs/plugins", "OnSpillPlugin")
   @js.native
-  class OnSpillPlugin () extends StObject
+  open class OnSpillPlugin () extends StObject
   
   @JSImport("sortablejs/plugins", "SortablePlugin")
   @js.native
-  class SortablePlugin () extends StObject
+  open class SortablePlugin () extends StObject
   
   @JSImport("sortablejs/plugins", "SwapPlugin")
   @js.native
-  class SwapPlugin () extends StObject
+  open class SwapPlugin () extends StObject
   
   trait AutoScrollOptions extends StObject {
     

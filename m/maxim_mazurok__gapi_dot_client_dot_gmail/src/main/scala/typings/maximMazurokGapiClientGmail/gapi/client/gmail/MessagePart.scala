@@ -51,7 +51,7 @@ object MessagePart {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,6 @@ object MessagePart {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value*))
   }
 }

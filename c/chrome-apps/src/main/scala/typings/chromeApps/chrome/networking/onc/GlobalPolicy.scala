@@ -48,6 +48,6 @@ object GlobalPolicy {
     
     inline def setBlacklistedHexSSIDsUndefined: Self = StObject.set(x, "BlacklistedHexSSIDs", js.undefined)
     
-    inline def setBlacklistedHexSSIDsVarargs(value: String*): Self = StObject.set(x, "BlacklistedHexSSIDs", js.Array(value :_*))
+    inline def setBlacklistedHexSSIDsVarargs(value: String*): Self = StObject.set(x, "BlacklistedHexSSIDs", js.Array(value*))
   }
 }

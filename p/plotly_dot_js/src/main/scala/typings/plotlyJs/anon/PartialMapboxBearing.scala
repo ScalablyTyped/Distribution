@@ -58,7 +58,7 @@ object PartialMapboxBearing {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Partial[MapboxLayers]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Partial[MapboxLayers]*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

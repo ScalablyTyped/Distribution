@@ -34,7 +34,7 @@ object JQueryTools {
   
   object overlay {
     
-    type CssOptions = StringDictionary[js.Any]
+    type CssOptions = StringDictionary[Any]
     
     trait MaskOptions extends StObject {
       

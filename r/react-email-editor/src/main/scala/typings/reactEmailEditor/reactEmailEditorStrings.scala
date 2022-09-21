@@ -16,6 +16,10 @@ object reactEmailEditorStrings {
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
+  sealed trait displayCondition extends StObject
+  inline def displayCondition: displayCondition = "displayCondition".asInstanceOf[displayCondition]
+  
+  @js.native
   sealed trait email
     extends StObject
        with DisplayMode

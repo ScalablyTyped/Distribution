@@ -3,7 +3,9 @@ package typings.jupyterlabApputils
 import typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget.IOptions
 import typings.jupyterlabApputils.printingMod.Printing.IPrintable
 import typings.jupyterlabApputils.toolbarMod.Toolbar
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoMessaging.mod.Message
+import typings.luminoWidgets.mod.BoxPanel
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +15,7 @@ object mainareawidgetMod {
   
   @JSImport("@jupyterlab/apputils/lib/mainareawidget", "MainAreaWidget")
   @js.native
-  class MainAreaWidget[T /* <: Widget */] protected ()
+  open class MainAreaWidget[T /* <: Widget */] protected ()
     extends Widget
        with IPrintable {
     /**
@@ -23,37 +25,49 @@ object mainareawidgetMod {
       */
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _changeGuard: js.Any = js.native
+    /* private */ var _changeGuard: Any = js.native
     
-    /* private */ var _content: js.Any = js.native
+    /* private */ var _content: Any = js.native
+    
+    /* private */ var _contentHeader: Any = js.native
+    
+    /* private */ var _disposeSpinner: Any = js.native
+    
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Give focus to the content.
       */
-    /* private */ var _focusContent: js.Any = js.native
+    /* private */ var _focusContent: Any = js.native
     
-    /* private */ var _isRevealed: js.Any = js.native
+    /* private */ var _isRevealed: Any = js.native
     
-    /* private */ var _revealed: js.Any = js.native
+    /* private */ var _revealed: Any = js.native
     
-    /* private */ var _spinner: js.Any = js.native
+    /* private */ var _spinner: Any = js.native
     
-    /* private */ var _toolbar: js.Any = js.native
+    /* private */ var _toolbar: Any = js.native
     
     /**
       * Update the content title based on attributes of the main widget.
       */
-    /* private */ var _updateContentTitle: js.Any = js.native
+    /* private */ var _updateContentTitle: Any = js.native
     
     /**
       * Update the title based on the attributes of the child widget.
       */
-    /* private */ var _updateTitle: js.Any = js.native
+    /* private */ var _updateTitle: Any = js.native
     
     /**
       * The content hosted by the widget.
       */
     def content: T = js.native
+    
+    /**
+      * A panel for widgets that sit between the toolbar and the content.
+      * Imagine a formatting toolbar, notification headers, etc.
+      */
+    def contentHeader: BoxPanel = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -107,14 +121,25 @@ object mainareawidgetMod {
       var content: T
       
       /**
+        * The layout to sit underneath the toolbar and above the content,
+        * and that extensions can populate. Defaults to an empty BoxPanel.
+        */
+      var contentHeader: js.UndefOr[BoxPanel] = js.undefined
+      
+      /**
         * An optional promise for when the content is ready to be revealed.
         */
-      var reveal: js.UndefOr[js.Promise[js.Any]] = js.undefined
+      var reveal: js.UndefOr[js.Promise[Any]] = js.undefined
       
       /**
         * The toolbar to use for the widget.  Defaults to an empty toolbar.
         */
       var toolbar: js.UndefOr[Toolbar[Widget]] = js.undefined
+      
+      /**
+        * The application language translator.
+        */
+      var translator: js.UndefOr[ITranslator] = js.undefined
     }
     object IOptions {
       
@@ -127,13 +152,21 @@ object mainareawidgetMod {
         
         inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        inline def setReveal(value: js.Promise[js.Any]): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
+        inline def setContentHeader(value: BoxPanel): Self = StObject.set(x, "contentHeader", value.asInstanceOf[js.Any])
+        
+        inline def setContentHeaderUndefined: Self = StObject.set(x, "contentHeader", js.undefined)
+        
+        inline def setReveal(value: js.Promise[Any]): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
         
         inline def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
         
         inline def setToolbar(value: Toolbar[Widget]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
         
         inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+        
+        inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+        
+        inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
       }
     }
     
@@ -159,7 +192,7 @@ object mainareawidgetMod {
       /**
         * An optional promise for when the content is ready to be revealed.
         */
-      var reveal: js.UndefOr[js.Promise[js.Any]] = js.undefined
+      var reveal: js.UndefOr[js.Promise[Any]] = js.undefined
       
       /**
         * The toolbar to use for the widget.  Defaults to an empty toolbar.
@@ -179,7 +212,7 @@ object mainareawidgetMod {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setReveal(value: js.Promise[js.Any]): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
+        inline def setReveal(value: js.Promise[Any]): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
         
         inline def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
         

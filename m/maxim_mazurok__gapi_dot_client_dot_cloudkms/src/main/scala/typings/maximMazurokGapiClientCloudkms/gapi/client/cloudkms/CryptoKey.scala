@@ -10,14 +10,30 @@ trait CryptoKey extends StObject {
   /** Output only. The time at which this CryptoKey was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /**
+    * Immutable. The resource name of the backend environment where the key material for all CryptoKeyVersions associated with this CryptoKey reside and where all related cryptographic
+    * operations are performed. Only applicable if CryptoKeyVersions have a ProtectionLevel of EXTERNAL_VPC, with the resource name in the format
+    * `projects/ *‍/locations/ *‍/ekmConnections/ *`. Note, this list is non-exhaustive and may apply to additional ProtectionLevels in the future.
+    */
+  var cryptoKeyBackend: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Immutable. The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. If not specified at creation time, the default
+    * duration is 24 hours.
+    */
+  var destroyScheduledDuration: js.UndefOr[String] = js.undefined
+  
+  /** Immutable. Whether this key may contain imported versions only. */
+  var importOnly: js.UndefOr[Boolean] = js.undefined
+  
   /** Labels with user-defined metadata. For more information, see [Labeling Keys](https://cloud.google.com/kms/docs/labeling-keys). */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[Any]
   ] = js.undefined
   
-  /** Output only. The resource name for this CryptoKey in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/ *`. */
+  /** Output only. The resource name for this CryptoKey in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
@@ -61,10 +77,22 @@ object CryptoKey {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setCryptoKeyBackend(value: String): Self = StObject.set(x, "cryptoKeyBackend", value.asInstanceOf[js.Any])
+    
+    inline def setCryptoKeyBackendUndefined: Self = StObject.set(x, "cryptoKeyBackend", js.undefined)
+    
+    inline def setDestroyScheduledDuration(value: String): Self = StObject.set(x, "destroyScheduledDuration", value.asInstanceOf[js.Any])
+    
+    inline def setDestroyScheduledDurationUndefined: Self = StObject.set(x, "destroyScheduledDuration", js.undefined)
+    
+    inline def setImportOnly(value: Boolean): Self = StObject.set(x, "importOnly", value.asInstanceOf[js.Any])
+    
+    inline def setImportOnlyUndefined: Self = StObject.set(x, "importOnly", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

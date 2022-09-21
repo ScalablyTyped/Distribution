@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-range" : "2.0.1"
+      "get-range" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "get-range" : "2.0.1"
+      "get-range" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

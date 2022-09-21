@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LiasettingsListResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsListResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsListResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of LIA settings. */
@@ -35,6 +35,6 @@ object LiasettingsListResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: LiaSettings*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: LiaSettings*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

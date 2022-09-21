@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signalMod {
   
-  type Signal = js.Any
+  type Signal = Any
 }

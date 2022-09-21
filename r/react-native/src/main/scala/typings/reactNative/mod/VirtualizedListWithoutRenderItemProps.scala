@@ -14,31 +14,31 @@ trait VirtualizedListWithoutRenderItemProps[ItemT]
   extends StObject
      with ScrollViewProps {
   
-  var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+  var CellRendererComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
   /**
     * Rendered when the list is empty. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListEmptyComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
   /**
     * Rendered at the bottom of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListFooterComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
   /**
     * Rendered at the top of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListHeaderComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
   /**
     * The default accessor functions assume this is an Array<{key: string}> but you can override
     * getItem, getItemCount, and keyExtractor to handle any type of index-based data.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * `debug` will turn on extra logging and visual overlays to aid with debugging both usage and
@@ -58,19 +58,19 @@ trait VirtualizedListWithoutRenderItemProps[ItemT]
     * any of your `renderItem`, Header, Footer, etc. functions depend on anything outside of the
     * `data` prop, stick it here and treat it immutably.
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   /**
     * A generic accessor for extracting an item from any sort of data blob.
     */
-  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, ItemT]] = js.undefined
+  var getItem: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, ItemT]] = js.undefined
   
   /**
     * Determines how many items are in the data blob.
     */
-  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
+  var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
-  var getItemLayout: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, Index]] = js.undefined
+  var getItemLayout: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, Index]] = js.undefined
   
   /**
     * How many items to render in the initial batch. This should be enough to fill the screen but not
@@ -170,11 +170,11 @@ object VirtualizedListWithoutRenderItemProps {
   
   extension [Self <: VirtualizedListWithoutRenderItemProps[?], ItemT](x: Self & VirtualizedListWithoutRenderItemProps[ItemT]) {
     
-    inline def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    inline def setCellRendererComponent(value: ComponentType[Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     inline def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -186,17 +186,17 @@ object VirtualizedListWithoutRenderItemProps {
     
     inline def setDisableVirtualizationUndefined: Self = StObject.set(x, "disableVirtualization", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
-    inline def setGetItem(value: (/* data */ js.Any, /* index */ Double) => ItemT): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+    inline def setGetItem(value: (/* data */ Any, /* index */ Double) => ItemT): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
     
-    inline def setGetItemCount(value: /* data */ js.Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
+    inline def setGetItemCount(value: /* data */ Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
-    inline def setGetItemLayout(value: (/* data */ js.Any, /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ Any, /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
@@ -222,19 +222,19 @@ object VirtualizedListWithoutRenderItemProps {
     
     inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
-    inline def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    inline def setListEmptyComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     inline def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
     
     inline def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
-    inline def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    inline def setListFooterComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
     
     inline def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
-    inline def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
     
@@ -300,7 +300,7 @@ object VirtualizedListWithoutRenderItemProps {
     
     inline def setViewabilityConfigCallbackPairsUndefined: Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.undefined)
     
-    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value :_*))
+    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value*))
     
     inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
     

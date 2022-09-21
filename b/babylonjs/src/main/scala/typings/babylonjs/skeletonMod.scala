@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.animatableMod.Animatable
 import typings.babylonjs.animationMod.Animation
@@ -14,7 +15,6 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.rawTextureMod.RawTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object skeletonMod {
   
   @JSImport("babylonjs/Bones/skeleton", "Skeleton")
   @js.native
-  class Skeleton protected ()
+  open class Skeleton protected ()
     extends StObject
        with IAnimatable {
     /**
@@ -40,57 +40,63 @@ object skeletonMod {
       scene: Scene
     ) = this()
     
-    /* private */ var _animatables: js.Any = js.native
+    /* private */ var _absoluteTransformIsDirty: Any = js.native
     
-    /* private */ var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animatables: Any = js.native
     
-    /* private */ var _canUseTextureForBones: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: Any = js.native
     
-    /* private */ var _computeTransformMatrices: js.Any = js.native
+    /* private */ var _canUseTextureForBones: Any = js.native
     
-    /* private */ var _getHighestAnimationFrame: js.Any = js.native
+    /* private */ var _computeTransformMatrices: Any = js.native
+    
+    /* private */ var _getHighestAnimationFrame: Any = js.native
     
     /** @hidden */
     var _hasWaitingData: Nullable[Boolean] = js.native
     
-    /* private */ var _identity: js.Any = js.native
+    /* private */ var _identity: Any = js.native
     
-    /* private */ var _isDirty: js.Any = js.native
-    
-    /* private */ var _lastAbsoluteTransformsUpdateId: js.Any = js.native
+    /* private */ var _isDirty: Any = js.native
     
     /** @hidden */
     def _markAsDirty(): Unit = js.native
     
-    /* private */ var _meshesWithPoseMatrix: js.Any = js.native
+    /* private */ var _meshesWithPoseMatrix: Any = js.native
     
     /** @hidden */
     var _numBonesWithLinkedTransformNode: Double = js.native
     
-    /* private */ var _ranges: js.Any = js.native
-    
     /** @hidden */
+    var _parentContainer: Nullable[AbstractScene] = js.native
+    
+    /* private */ var _ranges: Any = js.native
+    
+    /**
+      * @param mesh
+      * @hidden
+      */
     def _registerMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _sortBones: js.Any = js.native
+    /* private */ var _sortBones: Any = js.native
     
-    /* private */ var _synchronizedWithMesh: js.Any = js.native
+    /* private */ var _synchronizedWithMesh: Any = js.native
     
-    /* private */ var _transformMatrices: js.Any = js.native
+    /* private */ var _transformMatrices: Any = js.native
     
-    /* private */ var _transformMatrixTexture: js.Any = js.native
+    /* private */ var _transformMatrixTexture: Any = js.native
     
-    /* private */ var _uniqueId: js.Any = js.native
+    /* private */ var _uniqueId: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param mesh
+      * @hidden
+      */
     def _unregisterMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     
-    /* private */ var _useTextureToStoreBoneMatrices: js.Any = js.native
-    
-    /** @hidden */
-    var _waitingOverrideMeshId: Nullable[String] = js.native
+    /* private */ var _useTextureToStoreBoneMatrices: Any = js.native
     
     /**
       * Gets or sets the animation properties override
@@ -159,7 +165,7 @@ object skeletonMod {
     def copyAnimationRange(source: Skeleton, name: String, rescaleAsRequired: Boolean): Boolean = js.native
     
     /**
-      * Creater a new animation range
+      * Create a new animation range
       * @param name defines the name of the range
       * @param from defines the start key
       * @param to defines the end key
@@ -219,7 +225,7 @@ object skeletonMod {
     /**
       * Get bone's index searching by name
       * @param name defines bone's name to search for
-      * @return the indice of the bone. Returns -1 if not found
+      * @returns the indice of the bone. Returns -1 if not found
       */
     def getBoneIndexByName(name: String): Double = js.native
     
@@ -231,7 +237,7 @@ object skeletonMod {
     
     /**
       * Gets the current object class name.
-      * @return the class name
+      * @returns the class name
       */
     def getClassName(): String = js.native
     
@@ -252,7 +258,7 @@ object skeletonMod {
       * @param mesh defines the mesh to use to get the root matrix (if needInitialSkinMatrix === true)
       * @returns a Float32Array containing matrices data
       */
-    def getTransformMatrices(mesh: AbstractMesh): Float32Array = js.native
+    def getTransformMatrices(mesh: AbstractMesh): js.typedarray.Float32Array = js.native
     
     /**
       * Gets the list of transform matrices to send to shaders inside a texture (one matrix per bone)
@@ -289,11 +295,6 @@ object skeletonMod {
     var onBeforeComputeObservable: Observable[Skeleton] = js.native
     
     /**
-      * Defines a mesh that override the matrix used to get the world matrix (null by default).
-      */
-    var overrideMesh: Nullable[AbstractMesh] = js.native
-    
-    /**
       * Build all resources required to render a skeleton
       */
     def prepare(): Unit = js.native
@@ -307,7 +308,7 @@ object skeletonMod {
       * Serialize the skeleton in a JSON object
       * @returns a JSON object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Set the current local matrix as the restPose for all bones in the skeleton.
@@ -356,6 +357,6 @@ object skeletonMod {
       * @param scene defines the hosting scene
       * @returns a new skeleton
       */
-    inline def Parse(parsedSkeleton: js.Any, scene: Scene): Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Skeleton]
+    inline def Parse(parsedSkeleton: Any, scene: Scene): Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Skeleton]
   }
 }

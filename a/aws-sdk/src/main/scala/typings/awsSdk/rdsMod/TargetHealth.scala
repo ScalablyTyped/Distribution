@@ -17,7 +17,7 @@ trait TargetHealth extends StObject {
   var Reason: js.UndefOr[TargetHealthReason] = js.undefined
   
   /**
-    * The current state of the connection health lifecycle for the RDS Proxy target. The following is a typical lifecycle example for the states of an RDS Proxy target:   registering &gt; unavailable &gt; available &gt; unavailable &gt; available 
+    * The current state of the connection health lifecycle for the RDS Proxy target. The following is a typical lifecycle example for the states of an RDS Proxy target:  registering &gt; unavailable &gt; available &gt; unavailable &gt; available 
     */
   var State: js.UndefOr[TargetState] = js.undefined
 }

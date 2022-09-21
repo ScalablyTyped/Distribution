@@ -8,5 +8,5 @@ object deletedObjectsMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_DeletedObjects", "_DeletedObjects")
   @js.native
-  val DeletedObjects: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val DeletedObjects: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

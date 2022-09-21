@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +47,7 @@ object CompliancePolicy {
     
     def get_title(): String = js.native
     
-    def get_version(): js.Any = js.native
+    def get_version(): Any = js.native
     
     def get_webId(): Guid = js.native
     
@@ -66,7 +65,7 @@ object CompliancePolicy {
     
     def set_title(value: String): String = js.native
     
-    def set_version(value: js.Any): js.Any = js.native
+    def set_version(value: Any): Any = js.native
     
     def set_webId(value: Guid): Guid = js.native
   }
@@ -80,7 +79,7 @@ object CompliancePolicy {
     
     def get_comment(): String = js.native
     
-    def get_defaultPolicyDefinitionConfigId(): js.Array[js.Any] = js.native
+    def get_defaultPolicyDefinitionConfigId(): js.Array[Any] = js.native
     
     def get_description(): String = js.native
     
@@ -88,27 +87,27 @@ object CompliancePolicy {
     
     def get_name(): String = js.native
     
-    def get_policyApplyStatus(): js.Any = js.native
+    def get_policyApplyStatus(): Any = js.native
     
-    def get_policyDefinitionConfigIds(): js.Array[js.Any] = js.native
+    def get_policyDefinitionConfigIds(): js.Array[Any] = js.native
     
-    def get_scope(): js.Any = js.native
+    def get_scope(): Any = js.native
     
-    def get_source(): js.Any = js.native
+    def get_source(): Any = js.native
     
-    def get_version(): js.Any = js.native
+    def get_version(): Any = js.native
     
-    def get_whenAppliedUTC(): Date = js.native
+    def get_whenAppliedUTC(): js.Date = js.native
     
-    def get_whenChangedUTC(): Date = js.native
+    def get_whenChangedUTC(): js.Date = js.native
     
-    def get_whenCreatedUTC(): Date = js.native
+    def get_whenCreatedUTC(): js.Date = js.native
     
     def set_allowOverride(value: Boolean): Boolean = js.native
     
     def set_comment(value: String): String = js.native
     
-    def set_defaultPolicyDefinitionConfigId(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def set_defaultPolicyDefinitionConfigId(value: js.Array[Any]): js.Array[Any] = js.native
     
     def set_description(value: String): String = js.native
     
@@ -116,21 +115,21 @@ object CompliancePolicy {
     
     def set_name(value: String): String = js.native
     
-    def set_policyApplyStatus(value: js.Any): js.Any = js.native
+    def set_policyApplyStatus(value: Any): Any = js.native
     
-    def set_policyDefinitionConfigIds(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def set_policyDefinitionConfigIds(value: js.Array[Any]): js.Array[Any] = js.native
     
-    def set_scope(value: js.Any): js.Any = js.native
+    def set_scope(value: Any): Any = js.native
     
-    def set_source(value: js.Any): js.Any = js.native
+    def set_source(value: Any): Any = js.native
     
-    def set_version(value: js.Any): js.Any = js.native
+    def set_version(value: Any): Any = js.native
     
-    def set_whenAppliedUTC(value: Date): Date = js.native
+    def set_whenAppliedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenChangedUTC(value: Date): Date = js.native
+    def set_whenChangedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenCreatedUTC(value: Date): Date = js.native
+    def set_whenCreatedUTC(value: js.Date): js.Date = js.native
   }
   
   @js.native
@@ -138,61 +137,61 @@ object CompliancePolicy {
     extends StObject
        with ClientObject {
     
-    def get_identity(): js.Any = js.native
+    def get_identity(): Any = js.native
     
     def get_isExempt(): Boolean = js.native
     
-    def get_mode(): js.Any = js.native
+    def get_mode(): Any = js.native
     
     def get_name(): String = js.native
     
-    def get_policyApplyStatus(): js.Any = js.native
+    def get_policyApplyStatus(): Any = js.native
     
-    def get_policyAssociationConfigId(): js.Any = js.native
+    def get_policyAssociationConfigId(): Any = js.native
     
-    def get_policyDefinitionConfigId(): js.Any = js.native
+    def get_policyDefinitionConfigId(): Any = js.native
     
-    def get_policyRuleConfigId(): js.Any = js.native
+    def get_policyRuleConfigId(): Any = js.native
     
-    def get_scope(): js.Any = js.native
+    def get_scope(): Any = js.native
     
-    def get_source(): js.Any = js.native
+    def get_source(): Any = js.native
     
-    def get_version(): js.Any = js.native
+    def get_version(): Any = js.native
     
-    def get_whenAppliedUTC(): Date = js.native
+    def get_whenAppliedUTC(): js.Date = js.native
     
-    def get_whenChangedUTC(): Date = js.native
+    def get_whenChangedUTC(): js.Date = js.native
     
-    def get_whenCreatedUTC(): Date = js.native
+    def get_whenCreatedUTC(): js.Date = js.native
     
-    def set_identity(value: js.Any): js.Any = js.native
+    def set_identity(value: Any): Any = js.native
     
     def set_isExempt(value: Boolean): Boolean = js.native
     
-    def set_mode(value: js.Any): js.Any = js.native
+    def set_mode(value: Any): Any = js.native
     
     def set_name(value: String): String = js.native
     
-    def set_policyApplyStatus(value: js.Any): js.Any = js.native
+    def set_policyApplyStatus(value: Any): Any = js.native
     
-    def set_policyAssociationConfigId(value: js.Any): js.Any = js.native
+    def set_policyAssociationConfigId(value: Any): Any = js.native
     
-    def set_policyDefinitionConfigId(value: js.Any): js.Any = js.native
+    def set_policyDefinitionConfigId(value: Any): Any = js.native
     
-    def set_policyRuleConfigId(value: js.Any): js.Any = js.native
+    def set_policyRuleConfigId(value: Any): Any = js.native
     
-    def set_scope(value: js.Any): js.Any = js.native
+    def set_scope(value: Any): Any = js.native
     
-    def set_source(value: js.Any): js.Any = js.native
+    def set_source(value: Any): Any = js.native
     
-    def set_version(value: js.Any): js.Any = js.native
+    def set_version(value: Any): Any = js.native
     
-    def set_whenAppliedUTC(value: Date): Date = js.native
+    def set_whenAppliedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenChangedUTC(value: Date): Date = js.native
+    def set_whenChangedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenCreatedUTC(value: Date): Date = js.native
+    def set_whenCreatedUTC(value: js.Date): js.Date = js.native
   }
   
   @js.native
@@ -202,59 +201,59 @@ object CompliancePolicy {
     
     def get_comment(): String = js.native
     
-    def get_createdBy(): js.Any = js.native
+    def get_createdBy(): Any = js.native
     
-    def get_defaultPolicyRuleConfigId(): js.Any = js.native
+    def get_defaultPolicyRuleConfigId(): Any = js.native
     
     def get_description(): String = js.native
     
     def get_enabled(): Boolean = js.native
     
-    def get_identity(): js.Any = js.native
+    def get_identity(): Any = js.native
     
-    def get_lastModifiedBy(): js.Any = js.native
+    def get_lastModifiedBy(): Any = js.native
     
-    def get_mode(): js.Any = js.native
+    def get_mode(): Any = js.native
     
     def get_name(): String = js.native
     
-    def get_scenario(): js.Any = js.native
+    def get_scenario(): Any = js.native
     
-    def get_source(): js.Any = js.native
+    def get_source(): Any = js.native
     
-    def get_version(): js.Any = js.native
+    def get_version(): Any = js.native
     
-    def get_whenChangedUTC(): Date = js.native
+    def get_whenChangedUTC(): js.Date = js.native
     
-    def get_whenCreatedUTC(): Date = js.native
+    def get_whenCreatedUTC(): js.Date = js.native
     
     def set_comment(value: String): String = js.native
     
-    def set_createdBy(value: js.Any): js.Any = js.native
+    def set_createdBy(value: Any): Any = js.native
     
-    def set_defaultPolicyRuleConfigId(value: js.Any): js.Any = js.native
+    def set_defaultPolicyRuleConfigId(value: Any): Any = js.native
     
     def set_description(value: String): String = js.native
     
     def set_enabled(value: Boolean): Boolean = js.native
     
-    def set_identity(value: js.Any): js.Any = js.native
+    def set_identity(value: Any): Any = js.native
     
-    def set_lastModifiedBy(value: js.Any): js.Any = js.native
+    def set_lastModifiedBy(value: Any): Any = js.native
     
-    def set_mode(value: js.Any): js.Any = js.native
+    def set_mode(value: Any): Any = js.native
     
     def set_name(value: String): String = js.native
     
-    def set_scenario(value: js.Any): js.Any = js.native
+    def set_scenario(value: Any): Any = js.native
     
-    def set_source(value: js.Any): js.Any = js.native
+    def set_source(value: Any): Any = js.native
     
-    def set_version(value: js.Any): js.Any = js.native
+    def set_version(value: Any): Any = js.native
     
-    def set_whenChangedUTC(value: Date): Date = js.native
+    def set_whenChangedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenCreatedUTC(value: Date): Date = js.native
+    def set_whenCreatedUTC(value: js.Date): js.Date = js.native
   }
   
   @js.native
@@ -264,55 +263,55 @@ object CompliancePolicy {
     
     def get_comment(): String = js.native
     
-    def get_createdBy(): js.Any = js.native
+    def get_createdBy(): Any = js.native
     
     def get_description(): String = js.native
     
     def get_enabled(): Boolean = js.native
     
-    def get_identity(): js.Any = js.native
+    def get_identity(): Any = js.native
     
-    def get_lastModifiedBy(): js.Any = js.native
+    def get_lastModifiedBy(): Any = js.native
     
-    def get_mode(): js.Any = js.native
+    def get_mode(): Any = js.native
     
     def get_name(): String = js.native
     
-    def get_policyDefinitionConfigId(): js.Any = js.native
+    def get_policyDefinitionConfigId(): Any = js.native
     
-    def get_priority(): js.Any = js.native
+    def get_priority(): Any = js.native
     
-    def get_ruleBlob(): js.Any = js.native
+    def get_ruleBlob(): Any = js.native
     
-    def get_whenChangedUTC(): Date = js.native
+    def get_whenChangedUTC(): js.Date = js.native
     
-    def get_whenCreatedUTC(): Date = js.native
+    def get_whenCreatedUTC(): js.Date = js.native
     
     def set_comment(value: String): String = js.native
     
-    def set_createdBy(value: js.Any): js.Any = js.native
+    def set_createdBy(value: Any): Any = js.native
     
     def set_description(value: String): String = js.native
     
     def set_enabled(value: Boolean): Boolean = js.native
     
-    def set_identity(value: js.Any): js.Any = js.native
+    def set_identity(value: Any): Any = js.native
     
-    def set_lastModifiedBy(value: js.Any): js.Any = js.native
+    def set_lastModifiedBy(value: Any): Any = js.native
     
-    def set_mode(value: js.Any): js.Any = js.native
+    def set_mode(value: Any): Any = js.native
     
     def set_name(value: String): String = js.native
     
-    def set_policyDefinitionConfigId(value: js.Any): js.Any = js.native
+    def set_policyDefinitionConfigId(value: Any): Any = js.native
     
-    def set_priority(value: js.Any): js.Any = js.native
+    def set_priority(value: Any): Any = js.native
     
-    def set_ruleBlob(value: js.Any): js.Any = js.native
+    def set_ruleBlob(value: Any): Any = js.native
     
-    def set_whenChangedUTC(value: Date): Date = js.native
+    def set_whenChangedUTC(value: js.Date): js.Date = js.native
     
-    def set_whenCreatedUTC(value: Date): Date = js.native
+    def set_whenCreatedUTC(value: js.Date): js.Date = js.native
   }
   
   @js.native
@@ -320,30 +319,30 @@ object CompliancePolicy {
     extends StObject
        with ClientObject {
     
-    def deletePolicyAssociation(policyAssociationId: js.Any): Unit = js.native
+    def deletePolicyAssociation(policyAssociationId: Any): Unit = js.native
     
-    def deletePolicyBinding(policyBindingId: js.Any): Unit = js.native
+    def deletePolicyBinding(policyBindingId: Any): Unit = js.native
     
-    def deletePolicyDefinition(policyDefinitionId: js.Any): Unit = js.native
+    def deletePolicyDefinition(policyDefinitionId: Any): Unit = js.native
     
-    def deletePolicyRule(policyRuleId: js.Any): Unit = js.native
+    def deletePolicyRule(policyRuleId: Any): Unit = js.native
     
-    def getPolicyAssociation(policyAssociationId: js.Any): SPPolicyAssociation = js.native
+    def getPolicyAssociation(policyAssociationId: Any): SPPolicyAssociation = js.native
     
     def getPolicyAssociationForContainer(containerId: SPContainerId): SPPolicyAssociation = js.native
     
-    def getPolicyBinding(policyBindingId: js.Any): SPPolicyBinding = js.native
+    def getPolicyBinding(policyBindingId: Any): SPPolicyBinding = js.native
     
-    def getPolicyDefinition(policyDefinitionId: js.Any): SPPolicyDefinition = js.native
+    def getPolicyDefinition(policyDefinitionId: Any): SPPolicyDefinition = js.native
     
-    def getPolicyDefinitions(scenario: js.Any): ClientObjectList[SPPolicyDefinition] = js.native
+    def getPolicyDefinitions(scenario: Any): ClientObjectList[SPPolicyDefinition] = js.native
     
-    def getPolicyRule(policyRuleId: js.Any, throwIfNull: Boolean): SPPolicyRule = js.native
+    def getPolicyRule(policyRuleId: Any, throwIfNull: Boolean): SPPolicyRule = js.native
     
     def notifyUnifiedPolicySync(
-      notificationId: js.Any,
+      notificationId: Any,
       syncSvcUrl: String,
-      changeInfos: js.Any,
+      changeInfos: Any,
       syncNow: Boolean,
       fullSyncForTenant: Boolean
     ): Unit = js.native

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "ModalFooter")
 @js.native
-class ModalFooter ()
+open class ModalFooter ()
   extends typings.reactBootstrap.libMod.ModalFooter

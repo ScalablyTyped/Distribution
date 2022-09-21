@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonCommandExecutedEventArgs")
 @js.native
-class ASPxClientRibbonCommandExecutedEventArgs protected ()
+open class ASPxClientRibbonCommandExecutedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonCommandExecutedEventArgs {
   /**

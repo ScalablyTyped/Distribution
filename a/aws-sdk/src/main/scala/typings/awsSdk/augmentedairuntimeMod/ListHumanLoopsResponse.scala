@@ -27,7 +27,7 @@ object ListHumanLoopsResponse {
     
     inline def setHumanLoopSummaries(value: HumanLoopSummaries): Self = StObject.set(x, "HumanLoopSummaries", value.asInstanceOf[js.Any])
     
-    inline def setHumanLoopSummariesVarargs(value: HumanLoopSummary*): Self = StObject.set(x, "HumanLoopSummaries", js.Array(value :_*))
+    inline def setHumanLoopSummariesVarargs(value: HumanLoopSummary*): Self = StObject.set(x, "HumanLoopSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

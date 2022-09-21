@@ -12,20 +12,20 @@ object mod {
   
   @JSImport("React", "Component")
   @js.native
-  class Component protected () extends StObject {
-    def this(props: js.Any, context: js.Any) = this()
+  open class Component protected () extends StObject {
+    def this(props: Any, context: Any) = this()
     
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callback: js.Any): Unit = js.native
+    def forceUpdate(callback: Any): Unit = js.native
     
-    var props: js.Any = js.native
+    var props: Any = js.native
     
-    def setState(partial: js.Any): Unit = js.native
-    def setState(partial: js.Any, callback: js.Any): Unit = js.native
+    def setState(partial: Any): Unit = js.native
+    def setState(partial: Any, callback: Any): Unit = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
   }
   /* static members */
   object Component {
@@ -42,15 +42,15 @@ object mod {
   
   @JSImport("React", "PropTypes")
   @js.native
-  def PropTypes: js.Any = js.native
-  inline def PropTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropTypes")(x.asInstanceOf[js.Any])
+  def PropTypes: Any = js.native
+  inline def PropTypes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropTypes")(x.asInstanceOf[js.Any])
   
-  inline def createElement(tag: js.Any, props: js.Any, children: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createElement(tag: js.Any, props: Unit, children: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createElement(tag: Any, props: Any, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def createElement(tag: Any, props: Unit, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
-  inline def findDOMNode(instance: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def findDOMNode(instance: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def render(element: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def render(element: Any, container: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def unmountComponentAtNode(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unmountComponentAtNode(container: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

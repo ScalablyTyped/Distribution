@@ -10,10 +10,10 @@ The lodash method `_.assignWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.assignwith |
 | Keywords           | lodash-modularized, assignwith |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 3629614 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 604258.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

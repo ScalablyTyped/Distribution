@@ -9,7 +9,7 @@ object incomingResponseMessageMod {
   
   @JSImport("sip.js/lib/core/messages/incoming-response-message", "IncomingResponseMessage")
   @js.native
-  class IncomingResponseMessage () extends IncomingMessage {
+  open class IncomingResponseMessage () extends IncomingMessage {
     
     var reasonPhrase: js.UndefOr[String] = js.native
     

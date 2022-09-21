@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.PdfViewer")
 @js.native
-class PdfViewer protected ()
+open class PdfViewer protected ()
   extends StObject
      with typings.ejWebAll.ej.PdfViewer {
   def this(element: JQuery) = this()
@@ -77,8 +77,8 @@ object PdfViewer {
   /* static member */
   @JSGlobal("ej.PdfViewer.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.PdfViewer.PdfService")
   @js.native

@@ -10,10 +10,10 @@ Read from and write to a JSON file, minimizing diffs and preserving formatting.
 | ------------------ | :-------------: |
 | Full name          | json-file-plus |
 | Keywords           | json, json file, formatting, read, write, promise, promiseback |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 2988313 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 513304.6666666667 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/json-file-plus#readme)

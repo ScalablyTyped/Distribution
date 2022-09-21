@@ -24,6 +24,6 @@ object PortForwardingConfig {
     
     inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
     
-    inline def setPortMappingsVarargs(value: PortMapping*): Self = StObject.set(x, "portMappings", js.Array(value :_*))
+    inline def setPortMappingsVarargs(value: PortMapping*): Self = StObject.set(x, "portMappings", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.openidClient
 
 import typings.openidClient.mod.ClientAuthMethod
-import typings.openidClient.mod.ResponseType
+import typings.openidClient.mod._ResponseType
 import typings.openidClient.mod._TokenTypeHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,6 +24,10 @@ object openidClientStrings {
   @js.native
   sealed trait OPTIONS extends StObject
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @js.native
+  sealed trait PATCH extends StObject
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait POST extends StObject
@@ -68,26 +72,14 @@ object openidClientStrings {
   @js.native
   sealed trait code
     extends StObject
-       with ResponseType
+       with _ResponseType
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait `code id_token`
     extends StObject
-       with ResponseType
+       with _ResponseType
   inline def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
-  
-  @js.native
-  sealed trait `code id_token token`
-    extends StObject
-       with ResponseType
-  inline def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
-  
-  @js.native
-  sealed trait `code token`
-    extends StObject
-       with ResponseType
-  inline def `code token`: `code token` = ("code token").asInstanceOf[`code token`]
   
   @js.native
   sealed trait header extends StObject
@@ -96,20 +88,14 @@ object openidClientStrings {
   @js.native
   sealed trait id_token
     extends StObject
-       with ResponseType
+       with _ResponseType
   inline def id_token: id_token = "id_token".asInstanceOf[id_token]
-  
-  @js.native
-  sealed trait `id_token token`
-    extends StObject
-       with ResponseType
-  inline def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
   sealed trait none
     extends StObject
        with ClientAuthMethod
-       with ResponseType
+       with _ResponseType
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -117,10 +103,6 @@ object openidClientStrings {
     extends StObject
        with ClientAuthMethod
   inline def private_key_jwt: private_key_jwt = "private_key_jwt".asInstanceOf[private_key_jwt]
-  
-  @js.native
-  sealed trait query extends StObject
-  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait refresh_token

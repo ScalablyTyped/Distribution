@@ -40,13 +40,13 @@ object Field {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setDirectives(value: js.Array[Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait To extends StObject {
   
-  var from: js.UndefOr[js.Any] = js.undefined
+  var from: js.UndefOr[Any] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.undefined
+  var to: js.UndefOr[Any] = js.undefined
 }
 object To {
   
@@ -19,11 +19,11 @@ object To {
   
   extension [Self <: To](x: Self) {
     
-    inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

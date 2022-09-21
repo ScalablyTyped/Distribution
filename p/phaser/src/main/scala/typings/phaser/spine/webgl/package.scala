@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AssetManager = typings.phaser.spine.AssetManager
 
-type Color2Attribute = typings.phaser.spine.webgl.VertexAttribute
+type Color2Attribute = VertexAttribute
 
-type ColorAttribute = typings.phaser.spine.webgl.VertexAttribute
+type ColorAttribute = VertexAttribute
 
-type Position2Attribute = typings.phaser.spine.webgl.VertexAttribute
+type Position2Attribute = VertexAttribute
 
-type Position3Attribute = typings.phaser.spine.webgl.VertexAttribute
+type Position3Attribute = VertexAttribute
 
-type TexCoordAttribute = typings.phaser.spine.webgl.VertexAttribute
+type TexCoordAttribute = VertexAttribute

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FailedS3Resource extends StObject {
   
   /**
-    * The status code of a failed item.
+    * (Discontinued) The status code of a failed item.
     */
   var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
-    * The error message of a failed item.
+    * (Discontinued) The error message of a failed item.
     */
   var errorMessage: js.UndefOr[ExceptionMessage] = js.undefined
   
   /**
-    * The failed S3 resources.
+    * (Discontinued) The failed S3 resources.
     */
   var failedItem: js.UndefOr[S3Resource] = js.undefined
 }

@@ -10,10 +10,10 @@ The Most Awesome jQuery Image Slider.
 | ------------------ | :-------------: |
 | Full name          | nivo-slider |
 | Keywords           | nivo, image, slider |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6260 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 429.3333333333333 |
+| # stars            | 1244.0 |
 
 ## Links
 - [Homepage](https://github.com/gilbitron/Nivo-Slider#readme)

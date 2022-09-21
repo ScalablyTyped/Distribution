@@ -69,13 +69,13 @@ object IExtension {
     
     inline def setDocumentWidgetFactoryOptionsUndefined: Self = StObject.set(x, "documentWidgetFactoryOptions", js.undefined)
     
-    inline def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = StObject.set(x, "documentWidgetFactoryOptions", js.Array(value :_*))
+    inline def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = StObject.set(x, "documentWidgetFactoryOptions", js.Array(value*))
     
     inline def setFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    inline def setFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "fileTypes", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

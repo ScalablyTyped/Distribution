@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Hotspot")
 @js.native
-class Hotspot protected ()
+open class Hotspot protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Hotspot {
   def this(position: typings.bmapgl.BMapGL.Point) = this()

@@ -12,7 +12,12 @@ trait UpdateChannelRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The metadata of the channel.
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
+    * The metadata for the update request.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
@@ -36,6 +41,10 @@ object UpdateChannelRequest {
   extension [Self <: UpdateChannelRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

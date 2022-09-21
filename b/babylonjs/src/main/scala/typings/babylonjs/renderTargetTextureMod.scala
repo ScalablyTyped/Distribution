@@ -2,21 +2,26 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Ratio
-import typings.babylonjs.anon.Width
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.internalTextureMod.InternalTexture
+import typings.babylonjs.materialMod.Material
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.postProcessMod.PostProcess
-import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.prePassRenderTargetMod.PrePassRenderTarget
+import typings.babylonjs.renderTargetWrapperMod.IRenderTargetTexture
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.renderingManagerMod.RenderingManager
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.subMeshMod.SubMesh
+import typings.babylonjs.textureCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.TextureSize
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Immutable
 import typings.babylonjs.typesMod.Nullable
@@ -28,9 +33,11 @@ object renderTargetTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture")
   @js.native
-  class RenderTargetTexture protected () extends Texture {
+  open class RenderTargetTexture protected ()
+    extends Texture
+       with IRenderTargetTexture {
     /**
-      * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post processse
+      * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post process
       * or used a shadow, depth texture...
       * @param name The friendly name of the texture
       * @param size The size of the RTT (number if square, or {width: number, height:number} or {ratio:} to define a ratio from the main scene)
@@ -45,11 +52,15 @@ object renderTargetTextureMod {
       * @param isMulti True if multiple textures need to be created (Draw Buffers)
       * @param format The internal format of the buffer in the RTT (RED, RG, RGB, RGBA, ALPHA...)
       * @param delayAllocation if the texture allocation should be delayed (default: false)
+      * @param samples sample count to use when creating the RTT
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+      * @param noColorTarget True to indicate that no color target should be created. Useful if you only want to write to the depth buffer, for eg
+      * @param useSRGBBuffer True to create a SRGB texture
       */
     def this(
       name: String,
-      size: Double | Height | Ratio,
-      scene: Nullable[Scene],
+      size: Double | Layers | Ratio,
+      scene: js.UndefOr[Nullable[Scene]],
       generateMipMaps: js.UndefOr[Boolean],
       doNotChangeAspectRatio: js.UndefOr[Boolean],
       `type`: js.UndefOr[Double],
@@ -59,10 +70,14 @@ object renderTargetTextureMod {
       generateStencilBuffer: js.UndefOr[Boolean],
       isMulti: js.UndefOr[Boolean],
       format: js.UndefOr[Double],
-      delayAllocation: js.UndefOr[Boolean]
+      delayAllocation: js.UndefOr[Boolean],
+      samples: js.UndefOr[Double],
+      creationFlags: js.UndefOr[Double],
+      noColorTarget: js.UndefOr[Boolean],
+      useSRGBBuffer: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var _bestReflectionRenderTargetDimension: js.Any = js.native
+    /* private */ var _bestReflectionRenderTargetDimension: Any = js.native
     
     /**
       * @hidden
@@ -74,59 +89,103 @@ object renderTargetTextureMod {
     def _bindFrameBuffer(faceIndex: Double, layer: Double): Unit = js.native
     def _bindFrameBuffer(faceIndex: Unit, layer: Double): Unit = js.native
     
-    /* private */ var _boundingBoxSize: js.Any = js.native
+    /* private */ var _boundingBoxSize: Any = js.native
+    
+    /* private */ var _canRescale: Any = js.native
+    
+    /** @hidden */
+    var _cleared: Boolean = js.native
+    
+    /* private */ var _createRenderPassId: Any = js.native
     
     /* protected */ var _currentRefreshId: Double = js.native
     
-    /* private */ var _defaultRenderListPrepared: js.Any = js.native
+    /* private */ var _defaultRenderListPrepared: Any = js.native
     
     /* protected */ var _doNotChangeAspectRatio: Boolean = js.native
     
     /** @hidden */
     var _generateMipMaps: Boolean = js.native
     
-    /* private */ var _hookArray: js.Any = js.native
+    /* protected */ var _initialSizeParameter: Double | Height | Ratio = js.native
     
-    /* protected */ var _initialSizeParameter: Double | Width | Ratio = js.native
+    /* private */ var _isCubeData: Any = js.native
     
-    /* private */ var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: Any = js.native
     
-    /* private */ var _onAfterUnbindObserver: js.Any = js.native
+    /* private */ var _onAfterUnbindObserver: Any = js.native
     
-    /* private */ var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: Any = js.native
     
-    /* private */ var _onClearObserver: js.Any = js.native
+    /* private */ var _onClearObserver: Any = js.native
     
     /* protected */ def _onRatioRescale(): Unit = js.native
     
-    /* private */ var _postProcessManager: js.Any = js.native
+    /* private */ var _postProcessManager: Any = js.native
     
-    /* private */ var _postProcesses: js.Any = js.native
+    /* private */ var _postProcesses: Any = js.native
     
-    /* private */ var _prepareRenderingManager: js.Any = js.native
+    /* private */ def _prePassEnabled: Any = js.native
     
-    /* private */ var _processSizeParameter: js.Any = js.native
+    /** @hidden */
+    var _prePassRenderTarget: Nullable[PrePassRenderTarget] = js.native
+    
+    /**
+      * @param scene
+      * @param faceIndex
+      * @param layer
+      * @param useCameraPostProcess
+      * @hidden
+      */
+    def _prepareFrame(scene: Scene): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Double): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Double, layer: Double): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Double, layer: Double, useCameraPostProcess: Boolean): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Double, layer: Unit, useCameraPostProcess: Boolean): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Unit, layer: Double): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Unit, layer: Double, useCameraPostProcess: Boolean): Unit = js.native
+    def _prepareFrame(scene: Scene, faceIndex: Unit, layer: Unit, useCameraPostProcess: Boolean): Unit = js.native
+    
+    /* private */ var _prepareRenderingManager: Any = js.native
+    
+    /* private */ var _processSizeParameter: Any = js.native
     
     /* protected */ var _refreshRate: Double = js.native
     
-    /* private */ var _renderList: js.Any = js.native
+    /* private */ var _releaseRenderPassId: Any = js.native
+    
+    /* private */ var _render: Any = js.native
+    
+    /* private */ var _renderList: Any = js.native
+    
+    /* private */ var _renderListHasChanged: Any = js.native
+    
+    /* private */ var _renderPassIds: Any = js.native
+    
+    /* protected */ var _renderTarget: Nullable[RenderTargetWrapper] = js.native
     
     /* protected */ var _renderTargetOptions: RenderTargetCreationOptions = js.native
     
+    /* private */ var _renderToTarget: Any = js.native
+    
     /* protected */ var _renderingManager: RenderingManager = js.native
     
-    /* private */ var _resizeObserver: js.Any = js.native
+    /* private */ var _resizeObserver: Any = js.native
     
     /* protected */ var _samples: Double = js.native
     
     /** @hidden */
     def _shouldRender(): Boolean = js.native
     
-    /* protected */ var _size: Double | Height = js.native
+    /* protected */ var _size: TextureSize = js.native
     
     /* protected */ var _sizeRatio: Nullable[Double] = js.native
     
     /* protected */ var _textureMatrix: Matrix = js.native
+    
+    /* private */ var _unObserveRenderList: Any = js.native
+    
+    /* protected */ def _unbindFrameBuffer(engine: Engine, faceIndex: Double): Unit = js.native
     
     /** @hidden */
     var _waitingRenderList: js.UndefOr[js.Array[String]] = js.native
@@ -164,7 +223,7 @@ object renderTargetTextureMod {
     
     /**
       * Clear all the post processes attached to the render target
-      * @param dispose define if the cleared post processesshould also be disposed (false by default)
+      * @param dispose define if the cleared post processes should also be disposed (false by default)
       */
     def clearPostProcesses(): Unit = js.native
     def clearPostProcesses(dispose: Boolean): Unit = js.native
@@ -172,18 +231,145 @@ object renderTargetTextureMod {
     /**
       * Creates a depth stencil texture.
       * This is only available in WebGL 2 or with the depth texture extension available.
-      * @param comparisonFunction Specifies the comparison function to set on the texture. If 0 or undefined, the texture is not in comparison mode
-      * @param bilinearFiltering Specifies whether or not bilinear filtering is enable on the texture
-      * @param generateStencil Specifies whether or not a stencil should be allocated in the texture
+      * @param comparisonFunction Specifies the comparison function to set on the texture. If 0 or undefined, the texture is not in comparison mode (default: 0)
+      * @param bilinearFiltering Specifies whether or not bilinear filtering is enable on the texture (default: true)
+      * @param generateStencil Specifies whether or not a stencil should be allocated in the texture (default: false)
+      * @param samples sample count of the depth/stencil texture (default: 1)
+      * @param format format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH32_FLOAT)
       */
     def createDepthStencilTexture(): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Boolean, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Boolean,
+      generateStencil: Boolean,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Boolean,
+      generateStencil: Boolean,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Unit, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Boolean,
+      generateStencil: Unit,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Boolean,
+      generateStencil: Unit,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Boolean, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Unit,
+      generateStencil: Boolean,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Unit,
+      generateStencil: Boolean,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Unit, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Unit,
+      generateStencil: Unit,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Double,
+      bilinearFiltering: Unit,
+      generateStencil: Unit,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Boolean, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Boolean,
+      generateStencil: Boolean,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Boolean,
+      generateStencil: Boolean,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Unit, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Boolean,
+      generateStencil: Unit,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Boolean,
+      generateStencil: Unit,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Boolean, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Unit,
+      generateStencil: Boolean,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Unit,
+      generateStencil: Boolean,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Unit, samples: Double): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Unit,
+      generateStencil: Unit,
+      samples: Double,
+      format: Double
+    ): Unit = js.native
+    def createDepthStencilTexture(
+      comparisonFunction: Unit,
+      bilinearFiltering: Unit,
+      generateStencil: Unit,
+      samples: Unit,
+      format: Double
+    ): Unit = js.native
+    
+    /**
+      * Gets the current value of the refreshId counter
+      */
+    def currentRefreshId: Double = js.native
     
     /**
       * Override the mesh isReady function with your own one.
@@ -215,6 +401,11 @@ object renderTargetTextureMod {
     def depthStencilTexture: Nullable[InternalTexture] = js.native
     
     /**
+      * Don't allow this render target texture to rescale. Mainly used to prevent rescaling by the scene optimizer.
+      */
+    def disableRescaling(): Unit = js.native
+    
+    /**
       *  This will remove the attached framebuffer objects. The texture will not be able to be used as render target anymore
       */
     def disposeFramebufferObjects(): Unit = js.native
@@ -226,7 +417,7 @@ object renderTargetTextureMod {
     
     /**
       * Use this function to overload the renderList array at rendering time.
-      * Return null to render with the curent renderList, else return the list of meshes to use for rendering.
+      * Return null to render with the current renderList, else return the list of meshes to use for rendering.
       * For 2DArray RTT, layerOrFace is the index of the layer that is going to be rendered, else it is the faceIndex of
       * the cube (if the RTT is a cube, else layerOrFace=0).
       * The renderList passed to the function is the current render list (the one that will be used if the function returns null).
@@ -273,6 +464,12 @@ object renderTargetTextureMod {
       * Define if the camera viewport should be respected while rendering the texture or if the render should be done to the entire texture.
       */
     var ignoreCameraViewport: Boolean = js.native
+    
+    /**
+      * This function will check if the render target texture can be rendered (textures are loaded, shaders are compiled)
+      * @returns true if all required resources are ready
+      */
+    def isReadyForRendering(): Boolean = js.native
     
     /**
       * An event triggered after rendering the texture
@@ -329,6 +526,11 @@ object renderTargetTextureMod {
     var onResizeObservable: Observable[RenderTargetTexture] = js.native
     
     /**
+      * Post-processes for this render target
+      */
+    def postProcesses: js.Array[PostProcess] = js.native
+    
+    /**
       * Define the refresh rate of the texture or the rendering frequency.
       * Use 0 to render just once, 1 to render on every frame, 2 to render every two frames and so on...
       */
@@ -370,16 +572,37 @@ object renderTargetTextureMod {
     var renderParticles: Boolean = js.native
     
     /**
+      * Current render pass id of the render target texture. Note it can change over the rendering as there's a separate id for each face of a cube / each layer of an array layer!
+      */
+    var renderPassId: Double = js.native
+    
+    /**
+      * Gets the render pass ids used by the render target texture. For a single render target the array length will be 1, for a cube texture it will be 6 and for
+      * a 2D texture array it will return an array of ids the size of the 2D texture array
+      */
+    def renderPassIds: js.Array[Double] = js.native
+    
+    /**
       * Define if sprites should be rendered in your texture.
       */
     var renderSprites: Boolean = js.native
+    
+    /**
+      * Entry point to access the wrapper on a texture.
+      */
+    /* CompleteClass */
+    var renderTarget: Nullable[RenderTargetWrapper] = js.native
     
     /**
       * Gets render target creation options that were used.
       */
     def renderTargetOptions: RenderTargetCreationOptions = js.native
     
-    /* private */ var renderToTarget: js.Any = js.native
+    /**
+      * Gets the render target wrapper associated with this render target
+      */
+    @JSName("renderTarget")
+    def renderTarget_MRenderTargetTexture: Nullable[RenderTargetWrapper] = js.native
     
     /**
       * Resets the refresh counter of the texture and start bak from scratch.
@@ -389,15 +612,15 @@ object renderTargetTextureMod {
     
     /**
       * Resize the texture to a new desired size.
-      * Be carrefull as it will recreate all the data in the new texture.
+      * Be careful as it will recreate all the data in the new texture.
       * @param size Define the new size. It can be:
       *   - a number for squared texture,
       *   - an object containing { width: number, height: number }
       *   - or an object containing a ratio { ratio: number }
       */
     def resize(size: Double): Unit = js.native
+    def resize(size: Height): Unit = js.native
     def resize(size: Ratio): Unit = js.native
-    def resize(size: Width): Unit = js.native
     
     /**
       * Define the number of samples to use in case of MSAA.
@@ -405,6 +628,18 @@ object renderTargetTextureMod {
       */
     def samples: Double = js.native
     def samples_=(value: Double): Unit = js.native
+    
+    def setMaterialForRendering(mesh: js.Array[AbstractMesh]): Unit = js.native
+    def setMaterialForRendering(mesh: js.Array[AbstractMesh], material: js.Array[Material]): Unit = js.native
+    def setMaterialForRendering(mesh: js.Array[AbstractMesh], material: Material): Unit = js.native
+    /**
+      * Sets a specific material to be used to render a mesh/a list of meshes in this render target texture
+      * @param mesh mesh or array of meshes
+      * @param material material or array of materials to use for this render pass. If undefined is passed, no specific material will be used but the regular material instead (mesh.material). It's possible to provide an array of materials to use a different material for each rendering in the case of a cube texture (6 rendering) and a 2D texture array (as many rendering as the length of the array)
+      */
+    def setMaterialForRendering(mesh: AbstractMesh): Unit = js.native
+    def setMaterialForRendering(mesh: AbstractMesh, material: js.Array[Material]): Unit = js.native
+    def setMaterialForRendering(mesh: AbstractMesh, material: Material): Unit = js.native
     
     /**
       * Specifies whether or not the stencil and depth buffer are cleared between two rendering groups.
@@ -415,8 +650,8 @@ object renderTargetTextureMod {
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean): Unit = js.native
     
     /**
-      * Overrides the default sort function applied in the renderging group to prepare the meshes.
-      * This allowed control for front to back rendering or reversly depending of the special needs.
+      * Overrides the default sort function applied in the rendering group to prepare the meshes.
+      * This allowed control for front to back rendering or reversely depending of the special needs.
       *
       * @param renderingGroupId The rendering group id corresponding to its index
       * @param opaqueSortCompareFn The opaque queue comparison function use to sort.
@@ -463,7 +698,10 @@ object renderTargetTextureMod {
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     
-    /* protected */ def unbindFrameBuffer(engine: Engine, faceIndex: Double): Unit = js.native
+    /**
+      * Skip the initial clear of the rtt at the beginning of the frame render loop
+      */
+    var skipInitialClear: Boolean = js.native
     
     /**
       * Define if camera post processes should be use while rendering the texture.
@@ -481,7 +719,7 @@ object renderTargetTextureMod {
     val REFRESHRATE_RENDER_ONCE: Double = js.native
     
     /**
-      * The texture will only be rendered rendered every frame and is recomended for dynamic contents.
+      * The texture will only be rendered rendered every frame and is recommended for dynamic contents.
       */
     @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYFRAME")
     @js.native

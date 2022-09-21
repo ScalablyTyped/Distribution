@@ -8,7 +8,7 @@ trait IPv6CidrRange
   extends StObject
      with IpRange {
   
-  // IPv6 address in CIDR notation
+  // IPv6 address in CIDR notation. Not nullable.
   var cidrAddress: js.UndefOr[String] = js.undefined
 }
 object IPv6CidrRange {

@@ -8,11 +8,11 @@ trait AST
   extends StObject
      with IASTSpan {
   
-  /* private */ var _astID: js.Any
+  /* private */ var _astID: Any
   
-  /* private */ var _postComments: js.Any
+  /* private */ var _postComments: Any
   
-  /* private */ var _preComments: js.Any
+  /* private */ var _preComments: Any
   
   var _trailingTriviaWidth: Double
   
@@ -43,10 +43,10 @@ trait AST
 object AST {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
@@ -94,11 +94,11 @@ object AST {
     
     inline def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
     
-    inline def set_astID(value: js.Any): Self = StObject.set(x, "_astID", value.asInstanceOf[js.Any])
+    inline def set_astID(value: Any): Self = StObject.set(x, "_astID", value.asInstanceOf[js.Any])
     
-    inline def set_postComments(value: js.Any): Self = StObject.set(x, "_postComments", value.asInstanceOf[js.Any])
+    inline def set_postComments(value: Any): Self = StObject.set(x, "_postComments", value.asInstanceOf[js.Any])
     
-    inline def set_preComments(value: js.Any): Self = StObject.set(x, "_preComments", value.asInstanceOf[js.Any])
+    inline def set_preComments(value: Any): Self = StObject.set(x, "_preComments", value.asInstanceOf[js.Any])
     
     inline def set_trailingTriviaWidth(value: Double): Self = StObject.set(x, "_trailingTriviaWidth", value.asInstanceOf[js.Any])
   }

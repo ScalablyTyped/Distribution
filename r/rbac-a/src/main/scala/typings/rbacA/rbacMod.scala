@@ -12,7 +12,7 @@ object rbacMod {
   
   @JSImport("rbac-a/lib/rbac", JSImport.Namespace)
   @js.native
-  class ^[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends RBAC[P, AM] {
+  open class ^[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends RBAC[P, AM] {
     def this(opts: Attributes[P, AM]) = this()
   }
 }

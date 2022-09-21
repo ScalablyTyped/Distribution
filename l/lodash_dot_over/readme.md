@@ -10,10 +10,10 @@ The lodash method `_.over` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.over |
 | Keywords           | lodash-modularized, over |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 100459 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15806.666666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

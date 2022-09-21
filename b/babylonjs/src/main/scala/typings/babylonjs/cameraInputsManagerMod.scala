@@ -12,14 +12,14 @@ object cameraInputsManagerMod {
   
   @JSImport("babylonjs/Cameras/cameraInputsManager", "CameraInputsManager")
   @js.native
-  class CameraInputsManager[TCamera /* <: Camera */] protected () extends StObject {
+  open class CameraInputsManager[TCamera /* <: Camera */] protected () extends StObject {
     /**
       * Instantiate a new Camera Input Manager.
-      * @param camera Defines the camera the input manager blongs to
+      * @param camera Defines the camera the input manager belongs to
       */
     def this(camera: TCamera) = this()
     
-    /* private */ var _addCheckInputs: js.Any = js.native
+    /* private */ var _addCheckInputs: Any = js.native
     
     /**
       * Add an input method to a camera
@@ -30,7 +30,6 @@ object cameraInputsManagerMod {
     
     /**
       * Attach the current manager inputs controls to a specific dom element to listen the events from.
-      * @param element Defines the dom element to collect the events from
       * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
       */
     def attachElement(): Unit = js.native
@@ -43,7 +42,7 @@ object cameraInputsManagerMod {
     def attachInput(input: ICameraInput[TCamera]): Unit = js.native
     
     /**
-      * Defines the list of inputs attahed to the camera.
+      * Defines the list of inputs attached to the camera.
       */
     var attached: CameraInputsMap[TCamera] = js.native
     
@@ -71,7 +70,6 @@ object cameraInputsManagerMod {
     
     /**
       * Detach the current manager inputs controls from a specific dom element.
-      * @param element Defines the dom element to collect the events from
       * @param disconnect Defines whether the input should be removed from the current list of attached inputs
       */
     def detachElement(): Unit = js.native
@@ -87,7 +85,7 @@ object cameraInputsManagerMod {
       * and states associated to a camera.
       * @param parsedCamera Defines the JSON to parse
       */
-    def parse(parsedCamera: js.Any): Unit = js.native
+    def parse(parsedCamera: Any): Unit = js.native
     
     /**
       * Rebuild the dynamic inputCheck function from the current list of
@@ -115,7 +113,7 @@ object cameraInputsManagerMod {
       * the input associated to the camera will be identical to the current ones
       * @param serializedCamera Defines the camera serialization JSON the input serialization should write to
       */
-    def serialize(serializedCamera: js.Any): Unit = js.native
+    def serialize(serializedCamera: Any): Unit = js.native
   }
   
   type CameraInputsMap[TCamera /* <: Camera */] = (/**
@@ -153,7 +151,7 @@ object cameraInputsManagerMod {
     def detachControl(): Unit = js.native
     
     /**
-      * Gets the class name of the current intput.
+      * Gets the class name of the current input.
       * @returns the class name
       */
     def getClassName(): String = js.native

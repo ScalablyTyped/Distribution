@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRoutingProfileConcurrencyRequest extends StObject {
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The channels agents can handle in the Contact Control Panel (CCP).
+    * The channels that agents can handle in the Contact Control Panel (CCP).
     */
   var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies
   
@@ -34,7 +34,7 @@ object UpdateRoutingProfileConcurrencyRequest {
     
     inline def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
     
-    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
+    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value*))
     
     inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }

@@ -46,14 +46,14 @@ trait BootstrapUIWidgetBase
   /**
     * Gets the client data source instance.
     */
-  def GetDataSource(): js.Any
+  def GetDataSource(): Any
   
   def GetEnabled(): Boolean
   
   /**
     * Gets an instance of the widget.
     */
-  def GetInstance(): js.Any
+  def GetInstance(): Any
   
   /**
     * Fires when an error or warning appears in the widget.
@@ -80,7 +80,7 @@ trait BootstrapUIWidgetBase
     * Sets the client data source instance.
     * @param dataSource A DevExtreme DataSource object.
     */
-  def SetDataSource(dataSource: js.Any): Unit
+  def SetDataSource(dataSource: Any): Unit
   
   def SetEnabled(enabled: Boolean): Unit
   
@@ -88,7 +88,7 @@ trait BootstrapUIWidgetBase
     * Sets the widget's options to values specified in the passed object.
     * @param options An object containing key-value pairs specifying new option values.
     */
-  def SetOptions(options: js.Any): Unit
+  def SetOptions(options: Any): Unit
 }
 object BootstrapUIWidgetBase {
   
@@ -101,12 +101,12 @@ object BootstrapUIWidgetBase {
     Exporting: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]],
     FileSaving: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]],
     GetClientVisible: () => Boolean,
-    GetDataSource: () => js.Any,
+    GetDataSource: () => Any,
     GetEnabled: () => Boolean,
     GetHeight: () => Double,
-    GetInstance: () => js.Any,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetInstance: () => Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -116,10 +116,10 @@ object BootstrapUIWidgetBase {
     Print: () => Unit,
     SendMessageToAssistiveTechnology: String => Unit,
     SetClientVisible: Boolean => Unit,
-    SetDataSource: js.Any => Unit,
+    SetDataSource: Any => Unit,
     SetEnabled: Boolean => Unit,
     SetHeight: Double => Unit,
-    SetOptions: js.Any => Unit,
+    SetOptions: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     name: String
@@ -142,11 +142,11 @@ object BootstrapUIWidgetBase {
     
     inline def setFileSaving(value: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "FileSaving", value.asInstanceOf[js.Any])
     
-    inline def setGetDataSource(value: () => js.Any): Self = StObject.set(x, "GetDataSource", js.Any.fromFunction0(value))
+    inline def setGetDataSource(value: () => Any): Self = StObject.set(x, "GetDataSource", js.Any.fromFunction0(value))
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    inline def setGetInstance(value: () => js.Any): Self = StObject.set(x, "GetInstance", js.Any.fromFunction0(value))
+    inline def setGetInstance(value: () => Any): Self = StObject.set(x, "GetInstance", js.Any.fromFunction0(value))
     
     inline def setIncidentOccurred(value: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "IncidentOccurred", value.asInstanceOf[js.Any])
     
@@ -156,10 +156,10 @@ object BootstrapUIWidgetBase {
     
     inline def setPrint(value: () => Unit): Self = StObject.set(x, "Print", js.Any.fromFunction0(value))
     
-    inline def setSetDataSource(value: js.Any => Unit): Self = StObject.set(x, "SetDataSource", js.Any.fromFunction1(value))
+    inline def setSetDataSource(value: Any => Unit): Self = StObject.set(x, "SetDataSource", js.Any.fromFunction1(value))
     
     inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    inline def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "SetOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: Any => Unit): Self = StObject.set(x, "SetOptions", js.Any.fromFunction1(value))
   }
 }

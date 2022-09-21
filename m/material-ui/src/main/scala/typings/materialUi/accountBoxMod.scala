@@ -10,10 +10,10 @@ object accountBoxMod {
   
   @JSImport("material-ui/svg-icons/action/account-box", JSImport.Default)
   @js.native
-  class default () extends ActionAccountBox
+  open class default () extends ActionAccountBox
   
   @JSImport("material-ui/svg-icons/action/account-box", "ActionAccountBox")
   @js.native
-  class ActionAccountBox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAccountBox ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

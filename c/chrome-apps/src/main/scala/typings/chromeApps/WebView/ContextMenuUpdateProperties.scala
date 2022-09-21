@@ -16,13 +16,13 @@ trait ContextMenuUpdateProperties extends StObject {
   /**
     * List of contexts this menu item will appear in.
     */
-  var contexts: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var contexts: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Lets you restrict the item to apply only to documents whose URL matches one of the given patterns.
     * (This applies to frames as well.)
     */
-  var documentUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var documentUrlPatterns: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Whether this context menu item is enabled or disabled.
@@ -33,7 +33,7 @@ trait ContextMenuUpdateProperties extends StObject {
     * A function that will be called back when the menu item is clicked.
     * @param callback
     */
-  var onclick: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* info */ Any, Unit]] = js.undefined
   
   /**
     * The ID of a parent menu item; this makes the item a child of a previously added item. <em>Note:</em> You cannot change an item to be a child of one of its own descendants.
@@ -43,7 +43,7 @@ trait ContextMenuUpdateProperties extends StObject {
   /**
     * Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.
     */
-  var targetUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var targetUrlPatterns: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** The text to be displayed in the item */
   var title: js.UndefOr[String] = js.undefined
@@ -64,23 +64,23 @@ object ContextMenuUpdateProperties {
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    inline def setContexts(value: js.Array[js.Any]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[Any]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: js.Any*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: Any*): Self = StObject.set(x, "contexts", js.Array(value*))
     
-    inline def setDocumentUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
+    inline def setDocumentUrlPatterns(value: js.Array[Any]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
     
     inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
     
-    inline def setDocumentUrlPatternsVarargs(value: js.Any*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+    inline def setDocumentUrlPatternsVarargs(value: Any*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setOnclick(value: /* info */ js.Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: /* info */ Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
@@ -88,11 +88,11 @@ object ContextMenuUpdateProperties {
     
     inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    inline def setTargetUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
+    inline def setTargetUrlPatterns(value: js.Array[Any]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
     
     inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
     
-    inline def setTargetUrlPatternsVarargs(value: js.Any*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+    inline def setTargetUrlPatternsVarargs(value: Any*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

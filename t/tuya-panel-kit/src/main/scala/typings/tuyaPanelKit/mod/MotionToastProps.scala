@@ -17,8 +17,28 @@ trait MotionToastProps extends StObject {
   
   var hideDuration: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 初始缩放倍数
+    * @defaultValue 0.5
+    */
+  /**
+    * @language en-US
+    * @description Initial zoom factor
+    * @defaultValue 0.5
+    */
   var initScale: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画结束回调
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Animation end callback
+    * @defaultValue undefined
+    */
   var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined

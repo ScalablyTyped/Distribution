@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.Credential")
 @js.native
-class CredentialCls ()
+open class CredentialCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Credential {
   def this(properties: CredentialProperties) = this()

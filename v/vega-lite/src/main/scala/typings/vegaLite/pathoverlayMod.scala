@@ -13,6 +13,8 @@ import typings.vegaLite.specUnitMod.NormalizedUnitSpec
 import typings.vegaLite.srcConfigMod.Config
 import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcMarkMod.MarkDef
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.vegaLiteStrings.area
 import typings.vegaLite.vegaLiteStrings.line
 import typings.vegaLite.vegaLiteStrings.rule
@@ -26,18 +28,18 @@ object pathoverlayMod {
   
   @JSImport("vega-lite/build/src/normalize/pathoverlay", "PathOverlayNormalizer")
   @js.native
-  class PathOverlayNormalizer ()
+  open class PathOverlayNormalizer ()
     extends StObject
        with ExtraNormalizer[
           UnitSpecWithPathOverlay, 
           NormalizedUnitSpec | NormalizedLayerSpec, 
-          (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any]
+          (GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]]) | GenericLayerSpec[Any]
         ] {
     
     /* CompleteClass */
-    override def hasMatchingType(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any], config: Config[ExprRef | SignalRef]): /* is S */ Boolean = js.native
+    override def hasMatchingType(spec: GenericSpec[Any, Any, Any, Any], config: Config[ExprRef | SignalRef]): /* is S */ Boolean = js.native
     def hasMatchingType(
-      spec: GenericUnitSpec[js.Any, Mark | (MarkDef[Mark, ExprRef | SignalRef])],
+      spec: GenericUnitSpec[Any, Mark | (MarkDef[Mark, ExprRef | SignalRef]), SelectionParameter[SelectionType]],
       config: Config[ExprRef | SignalRef]
     ): /* is vega-lite.vega-lite/build/src/normalize/pathoverlay.UnitSpecWithPathOverlay */ Boolean = js.native
     
@@ -49,7 +51,7 @@ object pathoverlayMod {
       spec: UnitSpecWithPathOverlay,
       params: NormalizerParams,
       normalize: Normalize[
-          (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any], 
+          (GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]]) | GenericLayerSpec[Any], 
           NormalizedUnitSpec | NormalizedLayerSpec
         ]
     ): NormalizedUnitSpec | NormalizedLayerSpec = js.native
@@ -57,6 +59,7 @@ object pathoverlayMod {
   
   type UnitSpecWithPathOverlay = GenericUnitSpec[
     Encoding[String], 
-    Mark | (MarkDef[line | area | rule | trail, ExprRef | SignalRef])
+    Mark | (MarkDef[line | area | rule | trail, ExprRef | SignalRef]), 
+    SelectionParameter[SelectionType]
   ]
 }

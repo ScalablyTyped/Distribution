@@ -70,6 +70,7 @@ import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.FilterSearchAn
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.FilterUppercaseDetails
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.Filters
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.GaData
+import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.GaDataQuery
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.Goal
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.GoalEventDetails
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.GoalEventDetailsEventConditions
@@ -114,6 +115,10 @@ import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.Webproperty
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.WebpropertyChildLink
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.WebpropertyParentLink
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.WebpropertyPermissions
+import typings.googleAppsScript.googleAppsScriptStrings.DEFAULT
+import typings.googleAppsScript.googleAppsScriptStrings.FASTER
+import typings.googleAppsScript.googleAppsScriptStrings.HIGHER_PRECISION
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -530,8 +535,7 @@ object Analytics {
         
         // Returns Analytics data for a view (profile).
         def get(ids: String, start_date: String, end_date: String, metrics: String): GaData = js.native
-        // Returns Analytics data for a view (profile).
-        def get(ids: String, start_date: String, end_date: String, metrics: String, optionalArgs: js.Object): GaData = js.native
+        def get(ids: String, start_date: String, end_date: String, metrics: String, optionalArgs: GaDataQuery): GaData = js.native
       }
       
       @js.native
@@ -539,8 +543,7 @@ object Analytics {
         
         // Returns Analytics Multi-Channel Funnels data for a view (profile).
         def get(ids: String, start_date: String, end_date: String, metrics: String): McfData = js.native
-        // Returns Analytics Multi-Channel Funnels data for a view (profile).
-        def get(ids: String, start_date: String, end_date: String, metrics: String, optionalArgs: js.Object): McfData = js.native
+        def get(ids: String, start_date: String, end_date: String, metrics: String, optionalArgs: GaDataQuery): McfData = js.native
       }
       
       @js.native
@@ -548,8 +551,7 @@ object Analytics {
         
         // Returns real time data for a view (profile).
         def get(ids: String, metrics: String): RealtimeData = js.native
-        // Returns real time data for a view (profile).
-        def get(ids: String, metrics: String, optionalArgs: js.Object): RealtimeData = js.native
+        def get(ids: String, metrics: String, optionalArgs: Any): RealtimeData = js.native
       }
     }
     
@@ -592,7 +594,7 @@ object Analytics {
         // Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.
         def list(): AccountSummaries = js.native
         // Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.
-        def list(optionalArgs: js.Object): AccountSummaries = js.native
+        def list(optionalArgs: Any): AccountSummaries = js.native
       }
       
       @js.native
@@ -604,7 +606,7 @@ object Analytics {
         // Lists account-user links for a given account.
         def list(accountId: String): EntityUserLinks = js.native
         // Lists account-user links for a given account.
-        def list(accountId: String, optionalArgs: js.Object): EntityUserLinks = js.native
+        def list(accountId: String, optionalArgs: Any): EntityUserLinks = js.native
         
         // Removes a user from the given account.
         def remove(accountId: String, linkId: String): Unit = js.native
@@ -619,7 +621,7 @@ object Analytics {
         // Lists all accounts to which the user has access.
         def list(): Accounts = js.native
         // Lists all accounts to which the user has access.
-        def list(optionalArgs: js.Object): Accounts = js.native
+        def list(optionalArgs: Any): Accounts = js.native
       }
       
       trait ClientIdCollection extends StObject {
@@ -646,7 +648,7 @@ object Analytics {
         // List custom data sources to which the user has access.
         def list(accountId: String, webPropertyId: String): CustomDataSources = js.native
         // List custom data sources to which the user has access.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): CustomDataSources = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): CustomDataSources = js.native
       }
       
       @js.native
@@ -661,7 +663,7 @@ object Analytics {
         // Lists custom dimensions to which the user has access.
         def list(accountId: String, webPropertyId: String): CustomDimensions = js.native
         // Lists custom dimensions to which the user has access.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): CustomDimensions = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): CustomDimensions = js.native
         
         // Updates an existing custom dimension. This method supports patch semantics.
         def patch(resource: CustomDimension, accountId: String, webPropertyId: String, customDimensionId: String): CustomDimension = js.native
@@ -671,7 +673,7 @@ object Analytics {
           accountId: String,
           webPropertyId: String,
           customDimensionId: String,
-          optionalArgs: js.Object
+          optionalArgs: Any
         ): CustomDimension = js.native
         
         // Updates an existing custom dimension.
@@ -682,7 +684,7 @@ object Analytics {
           accountId: String,
           webPropertyId: String,
           customDimensionId: String,
-          optionalArgs: js.Object
+          optionalArgs: Any
         ): CustomDimension = js.native
       }
       
@@ -698,7 +700,7 @@ object Analytics {
         // Lists custom metrics to which the user has access.
         def list(accountId: String, webPropertyId: String): CustomMetrics = js.native
         // Lists custom metrics to which the user has access.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): CustomMetrics = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): CustomMetrics = js.native
         
         // Updates an existing custom metric. This method supports patch semantics.
         def patch(resource: CustomMetric, accountId: String, webPropertyId: String, customMetricId: String): CustomMetric = js.native
@@ -708,7 +710,7 @@ object Analytics {
           accountId: String,
           webPropertyId: String,
           customMetricId: String,
-          optionalArgs: js.Object
+          optionalArgs: Any
         ): CustomMetric = js.native
         
         // Updates an existing custom metric.
@@ -719,7 +721,7 @@ object Analytics {
           accountId: String,
           webPropertyId: String,
           customMetricId: String,
-          optionalArgs: js.Object
+          optionalArgs: Any
         ): CustomMetric = js.native
       }
       
@@ -735,7 +737,7 @@ object Analytics {
         // Lists experiments to which the user has access.
         def list(accountId: String, webPropertyId: String, profileId: String): Experiments = js.native
         // Lists experiments to which the user has access.
-        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: js.Object): Experiments = js.native
+        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: Any): Experiments = js.native
         
         // Update an existing experiment. This method supports patch semantics.
         def patch(
@@ -771,7 +773,7 @@ object Analytics {
         // Lists all filters for an account
         def list(accountId: String): Filters = js.native
         // Lists all filters for an account
-        def list(accountId: String, optionalArgs: js.Object): Filters = js.native
+        def list(accountId: String, optionalArgs: Any): Filters = js.native
         
         // Updates an existing filter. This method supports patch semantics.
         def patch(resource: Filter, accountId: String, filterId: String): Filter = js.native
@@ -795,7 +797,7 @@ object Analytics {
         // Lists goals to which the user has access.
         def list(accountId: String, webPropertyId: String, profileId: String): Goals = js.native
         // Lists goals to which the user has access.
-        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: js.Object): Goals = js.native
+        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: Any): Goals = js.native
         
         // Updates an existing goal. This method supports patch semantics.
         def patch(resource: Goal, accountId: String, webPropertyId: String, profileId: String, goalId: String): Goal = js.native
@@ -816,7 +818,7 @@ object Analytics {
         // Lists all profile filter links for a profile.
         def list(accountId: String, webPropertyId: String, profileId: String): ProfileFilterLinks = js.native
         // Lists all profile filter links for a profile.
-        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: js.Object): ProfileFilterLinks = js.native
+        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: Any): ProfileFilterLinks = js.native
         
         // Update an existing profile filter link. This method supports patch semantics.
         def patch(
@@ -849,7 +851,7 @@ object Analytics {
         // Lists profile-user links for a given view (profile).
         def list(accountId: String, webPropertyId: String, profileId: String): EntityUserLinks = js.native
         // Lists profile-user links for a given view (profile).
-        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: js.Object): EntityUserLinks = js.native
+        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: Any): EntityUserLinks = js.native
         
         // Removes a user from the given view (profile).
         def remove(accountId: String, webPropertyId: String, profileId: String, linkId: String): Unit = js.native
@@ -876,7 +878,7 @@ object Analytics {
         // Lists views (profiles) to which the user has access.
         def list(accountId: String, webPropertyId: String): Profiles = js.native
         // Lists views (profiles) to which the user has access.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): Profiles = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): Profiles = js.native
         
         // Updates an existing view (profile). This method supports patch semantics.
         def patch(resource: Profile, accountId: String, webPropertyId: String, profileId: String): Profile = js.native
@@ -900,7 +902,7 @@ object Analytics {
         // Lists remarketing audiences to which the user has access.
         def list(accountId: String, webPropertyId: String): RemarketingAudiences = js.native
         // Lists remarketing audiences to which the user has access.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): RemarketingAudiences = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): RemarketingAudiences = js.native
         
         // Updates an existing remarketing audience. This method supports patch semantics.
         def patch(
@@ -928,7 +930,7 @@ object Analytics {
         // Lists segments to which the user has access.
         def list(): Segments = js.native
         // Lists segments to which the user has access.
-        def list(optionalArgs: js.Object): Segments = js.native
+        def list(optionalArgs: Any): Segments = js.native
       }
       
       @js.native
@@ -943,7 +945,7 @@ object Analytics {
         // Lists unsampled reports to which the user has access.
         def list(accountId: String, webPropertyId: String, profileId: String): UnsampledReports = js.native
         // Lists unsampled reports to which the user has access.
-        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: js.Object): UnsampledReports = js.native
+        def list(accountId: String, webPropertyId: String, profileId: String, optionalArgs: Any): UnsampledReports = js.native
         
         // Deletes an unsampled report.
         def remove(accountId: String, webPropertyId: String, profileId: String, unsampledReportId: String): Unit = js.native
@@ -966,12 +968,12 @@ object Analytics {
         // List uploads to which the user has access.
         def list(accountId: String, webPropertyId: String, customDataSourceId: String): Uploads = js.native
         // List uploads to which the user has access.
-        def list(accountId: String, webPropertyId: String, customDataSourceId: String, optionalArgs: js.Object): Uploads = js.native
+        def list(accountId: String, webPropertyId: String, customDataSourceId: String, optionalArgs: Any): Uploads = js.native
         
         // Upload data for a custom data source.
         def uploadData(accountId: String, webPropertyId: String, customDataSourceId: String): Upload = js.native
         // Upload data for a custom data source.
-        def uploadData(accountId: String, webPropertyId: String, customDataSourceId: String, mediaData: js.Any): Upload = js.native
+        def uploadData(accountId: String, webPropertyId: String, customDataSourceId: String, mediaData: Any): Upload = js.native
       }
       
       @js.native
@@ -986,7 +988,7 @@ object Analytics {
         // Lists webProperty-Google Ads links for a given web property.
         def list(accountId: String, webPropertyId: String): EntityAdWordsLinks = js.native
         // Lists webProperty-Google Ads links for a given web property.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): EntityAdWordsLinks = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): EntityAdWordsLinks = js.native
         
         // Updates an existing webProperty-Google Ads link. This method supports patch semantics.
         def patch(
@@ -1020,7 +1022,7 @@ object Analytics {
         // Lists web properties to which the user has access.
         def list(accountId: String): Webproperties = js.native
         // Lists web properties to which the user has access.
-        def list(accountId: String, optionalArgs: js.Object): Webproperties = js.native
+        def list(accountId: String, optionalArgs: Any): Webproperties = js.native
         
         // Updates an existing web property. This method supports patch semantics.
         def patch(resource: Webproperty, accountId: String, webPropertyId: String): Webproperty = js.native
@@ -1038,7 +1040,7 @@ object Analytics {
         // Lists webProperty-user links for a given web property.
         def list(accountId: String, webPropertyId: String): EntityUserLinks = js.native
         // Lists webProperty-user links for a given web property.
-        def list(accountId: String, webPropertyId: String, optionalArgs: js.Object): EntityUserLinks = js.native
+        def list(accountId: String, webPropertyId: String, optionalArgs: Any): EntityUserLinks = js.native
         
         // Removes a user from the given web property.
         def remove(accountId: String, webPropertyId: String, linkId: String): Unit = js.native
@@ -1399,7 +1401,7 @@ object Analytics {
         
         inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
         
-        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
       }
     }
     
@@ -1475,7 +1477,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AccountSummary*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AccountSummary*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1544,7 +1546,7 @@ object Analytics {
         
         inline def setWebPropertiesUndefined: Self = StObject.set(x, "webProperties", js.undefined)
         
-        inline def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value :_*))
+        inline def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value*))
       }
     }
     
@@ -1718,7 +1720,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Account*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Account*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1794,13 +1796,13 @@ object Analytics {
         
         inline def setCustomDataImportUidsUndefined: Self = StObject.set(x, "customDataImportUids", js.undefined)
         
-        inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value :_*))
+        inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value*))
       }
     }
     
     trait Column extends StObject {
       
-      var attributes: js.UndefOr[js.Object] = js.undefined
+      var attributes: js.UndefOr[Any] = js.undefined
       
       var id: js.UndefOr[String] = js.undefined
       
@@ -1815,7 +1817,7 @@ object Analytics {
       
       extension [Self <: Column](x: Self) {
         
-        inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+        inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
         inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
         
@@ -1854,7 +1856,7 @@ object Analytics {
         
         inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
         
-        inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
+        inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1864,7 +1866,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Column*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Column*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1959,13 +1961,13 @@ object Analytics {
         
         inline def setProfilesLinkedUndefined: Self = StObject.set(x, "profilesLinked", js.undefined)
         
-        inline def setProfilesLinkedVarargs(value: String*): Self = StObject.set(x, "profilesLinked", js.Array(value :_*))
+        inline def setProfilesLinkedVarargs(value: String*): Self = StObject.set(x, "profilesLinked", js.Array(value*))
         
         inline def setSchema(value: js.Array[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
         
         inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
         
-        inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
+        inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value*))
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
@@ -2074,7 +2076,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CustomDataSource*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CustomDataSource*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2247,7 +2249,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CustomDimension*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CustomDimension*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2438,7 +2440,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CustomMetric*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CustomMetric*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2495,7 +2497,7 @@ object Analytics {
         
         inline def setAdWordsAccountsUndefined: Self = StObject.set(x, "adWordsAccounts", js.undefined)
         
-        inline def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value :_*))
+        inline def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value*))
         
         inline def setEntity(value: EntityAdWordsLinkEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
         
@@ -2517,7 +2519,7 @@ object Analytics {
         
         inline def setProfileIdsUndefined: Self = StObject.set(x, "profileIds", js.undefined)
         
-        inline def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value :_*))
+        inline def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value*))
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
@@ -2577,7 +2579,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: EntityAdWordsLink*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: EntityAdWordsLink*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2700,13 +2702,13 @@ object Analytics {
         
         inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
         
-        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
         
         inline def setLocal(value: js.Array[String]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
         
         inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
         
-        inline def setLocalVarargs(value: String*): Self = StObject.set(x, "local", js.Array(value :_*))
+        inline def setLocalVarargs(value: String*): Self = StObject.set(x, "local", js.Array(value*))
       }
     }
     
@@ -2743,7 +2745,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: EntityUserLink*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: EntityUserLink*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2934,7 +2936,7 @@ object Analytics {
         
         inline def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
         
-        inline def setVariationsVarargs(value: ExperimentVariations*): Self = StObject.set(x, "variations", js.Array(value :_*))
+        inline def setVariationsVarargs(value: ExperimentVariations*): Self = StObject.set(x, "variations", js.Array(value*))
         
         inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
         
@@ -3053,7 +3055,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Experiment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Experiment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3520,7 +3522,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Filter*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Filter*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3582,7 +3584,7 @@ object Analytics {
       
       var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
+      var totalsForAllResults: js.UndefOr[Record[String, String]] = js.undefined
     }
     object GaData {
       
@@ -3597,7 +3599,7 @@ object Analytics {
         
         inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
         
-        inline def setColumnHeadersVarargs(value: GaDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+        inline def setColumnHeadersVarargs(value: GaDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
         
         inline def setContainsSampledData(value: Boolean): Self = StObject.set(x, "containsSampledData", value.asInstanceOf[js.Any])
         
@@ -3643,7 +3645,7 @@ object Analytics {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSampleSize(value: String): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
         
@@ -3661,7 +3663,7 @@ object Analytics {
         
         inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
         
-        inline def setTotalsForAllResults(value: js.Object): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
+        inline def setTotalsForAllResults(value: Record[String, String]): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
         
         inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
       }
@@ -3717,13 +3719,13 @@ object Analytics {
         
         inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
         
-        inline def setColsVarargs(value: GaDataDataTableCols*): Self = StObject.set(x, "cols", js.Array(value :_*))
+        inline def setColsVarargs(value: GaDataDataTableCols*): Self = StObject.set(x, "cols", js.Array(value*))
         
         inline def setRows(value: js.Array[GaDataDataTableRows]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: GaDataDataTableRows*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: GaDataDataTableRows*): Self = StObject.set(x, "rows", js.Array(value*))
       }
     }
     
@@ -3775,7 +3777,7 @@ object Analytics {
         
         inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
         
-        inline def setCVarargs(value: GaDataDataTableRowsC*): Self = StObject.set(x, "c", js.Array(value :_*))
+        inline def setCVarargs(value: GaDataDataTableRowsC*): Self = StObject.set(x, "c", js.Array(value*))
       }
     }
     
@@ -3849,27 +3851,43 @@ object Analytics {
     
     trait GaDataQuery extends StObject {
       
+      /** A list of comma-separated dimensions for your Analytics data, such as ga:browser,ga:city. */
       var dimensions: js.UndefOr[String] = js.undefined
       
-      var end_date: js.UndefOr[String] = js.undefined
+      /** End date for fetching Analytics data. Request can specify an end date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or NdaysAgo where N is a positive integer). */
+      var `end-date`: js.UndefOr[String] = js.undefined
       
+      /** Dimension or metric filters that restrict the data returned for your request. */
       var filters: js.UndefOr[String] = js.undefined
       
+      /** The unique table ID of the form ga:XXXX, where XXXX is the Analytics view (profile) ID for which the query will retrieve the data. */
       var ids: js.UndefOr[String] = js.undefined
       
-      var max_results: js.UndefOr[Double] = js.undefined
+      /** The maximum number of rows to include in the response. */
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[String]] = js.undefined
+      /** A list of comma-separated metrics, such as ga:sessions,ga:bounces. */
+      var metrics: js.UndefOr[String] = js.undefined
       
-      var samplingLevel: js.UndefOr[String] = js.undefined
+      /**
+        * The desired sampling level. Allowed Values:
+        * DEFAULT — Returns response with a sample size that balances speed and accuracy.
+        * FASTER — Returns a fast response with a smaller sample size.
+        * HIGHER_PRECISION — Returns a more accurate response using a large sample size, but this may result in the response being slower.
+        */
+      var samplingLevel: js.UndefOr[DEFAULT | FASTER | HIGHER_PRECISION] = js.undefined
       
+      /** Segments the data returned for your request. */
       var segment: js.UndefOr[String] = js.undefined
       
-      var sort: js.UndefOr[js.Array[String]] = js.undefined
+      /** A list of comma-separated dimensions and metrics indicating the sorting order and sorting direction for the returned data. */
+      var sort: js.UndefOr[String] = js.undefined
       
-      var start_date: js.UndefOr[String] = js.undefined
+      /** Start date for fetching Analytics data. Requests can specify a start date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or NdaysAgo where N is a positive integer). */
+      var `start-date`: js.UndefOr[String] = js.undefined
       
-      var start_index: js.UndefOr[Double] = js.undefined
+      /** The first row of data to retrieve, starting at 1. Use this parameter as a pagination mechanism along with the max-results parameter. */
+      var `start-index`: js.UndefOr[Double] = js.undefined
     }
     object GaDataQuery {
       
@@ -3884,9 +3902,9 @@ object Analytics {
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setEnd_date(value: String): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
+        inline def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
         
-        inline def setEnd_dateUndefined: Self = StObject.set(x, "end_date", js.undefined)
+        inline def `setEnd-dateUndefined`: Self = StObject.set(x, "end-date", js.undefined)
         
         inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
@@ -3896,17 +3914,15 @@ object Analytics {
         
         inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        inline def setMax_results(value: Double): Self = StObject.set(x, "max_results", value.asInstanceOf[js.Any])
+        inline def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
         
-        inline def setMax_resultsUndefined: Self = StObject.set(x, "max_results", js.undefined)
+        inline def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
         
-        inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+        inline def setMetrics(value: String): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
-        
-        inline def setSamplingLevel(value: String): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
+        inline def setSamplingLevel(value: DEFAULT | FASTER | HIGHER_PRECISION): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
         
         inline def setSamplingLevelUndefined: Self = StObject.set(x, "samplingLevel", js.undefined)
         
@@ -3914,19 +3930,17 @@ object Analytics {
         
         inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
         
-        inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+        inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
         
         inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+        inline def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
         
-        inline def setStart_date(value: String): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
+        inline def `setStart-dateUndefined`: Self = StObject.set(x, "start-date", js.undefined)
         
-        inline def setStart_dateUndefined: Self = StObject.set(x, "start_date", js.undefined)
+        inline def `setStart-index`(value: Double): Self = StObject.set(x, "start-index", value.asInstanceOf[js.Any])
         
-        inline def setStart_index(value: Double): Self = StObject.set(x, "start_index", value.asInstanceOf[js.Any])
-        
-        inline def setStart_indexUndefined: Self = StObject.set(x, "start_index", js.undefined)
+        inline def `setStart-indexUndefined`: Self = StObject.set(x, "start-index", js.undefined)
       }
     }
     
@@ -4070,7 +4084,7 @@ object Analytics {
         
         inline def setEventConditionsUndefined: Self = StObject.set(x, "eventConditions", js.undefined)
         
-        inline def setEventConditionsVarargs(value: GoalEventDetailsEventConditions*): Self = StObject.set(x, "eventConditions", js.Array(value :_*))
+        inline def setEventConditionsVarargs(value: GoalEventDetailsEventConditions*): Self = StObject.set(x, "eventConditions", js.Array(value*))
         
         inline def setUseEventValue(value: Boolean): Self = StObject.set(x, "useEventValue", value.asInstanceOf[js.Any])
         
@@ -4183,7 +4197,7 @@ object Analytics {
         
         inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
         
-        inline def setStepsVarargs(value: GoalUrlDestinationDetailsSteps*): Self = StObject.set(x, "steps", js.Array(value :_*))
+        inline def setStepsVarargs(value: GoalUrlDestinationDetailsSteps*): Self = StObject.set(x, "steps", js.Array(value*))
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
@@ -4307,7 +4321,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Goal*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Goal*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4549,7 +4563,7 @@ object Analytics {
       
       var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
+      var totalsForAllResults: js.UndefOr[Record[String, String]] = js.undefined
     }
     object McfData {
       
@@ -4564,7 +4578,7 @@ object Analytics {
         
         inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
         
-        inline def setColumnHeadersVarargs(value: McfDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+        inline def setColumnHeadersVarargs(value: McfDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
         
         inline def setContainsSampledData(value: Boolean): Self = StObject.set(x, "containsSampledData", value.asInstanceOf[js.Any])
         
@@ -4602,7 +4616,7 @@ object Analytics {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: js.Array[McfDataRows]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[McfDataRows]*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSampleSize(value: String): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
         
@@ -4620,7 +4634,7 @@ object Analytics {
         
         inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
         
-        inline def setTotalsForAllResults(value: js.Object): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
+        inline def setTotalsForAllResults(value: Record[String, String]): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
         
         inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
       }
@@ -4763,7 +4777,7 @@ object Analytics {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setSamplingLevel(value: String): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
         
@@ -4777,7 +4791,7 @@ object Analytics {
         
         inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+        inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
         
         inline def setStart_date(value: String): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
         
@@ -4808,7 +4822,7 @@ object Analytics {
         
         inline def setConversionPathValueUndefined: Self = StObject.set(x, "conversionPathValue", js.undefined)
         
-        inline def setConversionPathValueVarargs(value: McfDataRowsConversionPathValue*): Self = StObject.set(x, "conversionPathValue", js.Array(value :_*))
+        inline def setConversionPathValueVarargs(value: McfDataRowsConversionPathValue*): Self = StObject.set(x, "conversionPathValue", js.Array(value*))
         
         inline def setPrimitiveValue(value: String): Self = StObject.set(x, "primitiveValue", value.asInstanceOf[js.Any])
         
@@ -5119,7 +5133,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ProfileFilterLink*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ProfileFilterLink*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5189,7 +5203,7 @@ object Analytics {
         
         inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
         
-        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
       }
     }
     
@@ -5326,7 +5340,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Profile*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Profile*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5372,7 +5386,7 @@ object Analytics {
       
       var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
+      var totalsForAllResults: js.UndefOr[Record[String, String]] = js.undefined
     }
     object RealtimeData {
       
@@ -5387,7 +5401,7 @@ object Analytics {
         
         inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
         
-        inline def setColumnHeadersVarargs(value: RealtimeDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+        inline def setColumnHeadersVarargs(value: RealtimeDataColumnHeaders*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -5409,7 +5423,7 @@ object Analytics {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
@@ -5419,7 +5433,7 @@ object Analytics {
         
         inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
         
-        inline def setTotalsForAllResults(value: js.Object): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
+        inline def setTotalsForAllResults(value: Record[String, String]): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
         
         inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
       }
@@ -5548,13 +5562,13 @@ object Analytics {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
         
         inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+        inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
       }
     }
     
@@ -5633,13 +5647,13 @@ object Analytics {
         
         inline def setLinkedAdAccountsUndefined: Self = StObject.set(x, "linkedAdAccounts", js.undefined)
         
-        inline def setLinkedAdAccountsVarargs(value: LinkedForeignAccount*): Self = StObject.set(x, "linkedAdAccounts", js.Array(value :_*))
+        inline def setLinkedAdAccountsVarargs(value: LinkedForeignAccount*): Self = StObject.set(x, "linkedAdAccounts", js.Array(value*))
         
         inline def setLinkedViews(value: js.Array[String]): Self = StObject.set(x, "linkedViews", value.asInstanceOf[js.Any])
         
         inline def setLinkedViewsUndefined: Self = StObject.set(x, "linkedViews", js.undefined)
         
-        inline def setLinkedViewsVarargs(value: String*): Self = StObject.set(x, "linkedViews", js.Array(value :_*))
+        inline def setLinkedViewsVarargs(value: String*): Self = StObject.set(x, "linkedViews", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -5763,7 +5777,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: RemarketingAudience*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: RemarketingAudience*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5893,7 +5907,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Segment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Segment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6127,7 +6141,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: UnsampledReport*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: UnsampledReport*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6192,7 +6206,7 @@ object Analytics {
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -6245,7 +6259,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Upload*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Upload*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6468,7 +6482,7 @@ object Analytics {
         
         inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
         
-        inline def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+        inline def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value*))
         
         inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
         
@@ -6515,7 +6529,7 @@ object Analytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Webproperty*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Webproperty*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6737,7 +6751,7 @@ object Analytics {
         
         inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
         
-        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+        inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
       }
     }
   }

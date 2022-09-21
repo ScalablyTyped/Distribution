@@ -1,15 +1,20 @@
 package typings.rollup
 
+import typings.rollup.mod.AddonHooks
 import typings.rollup.mod.AsyncPluginHooks
 import typings.rollup.mod.ChangeEvent
 import typings.rollup.mod.FirstPluginHooks
+import typings.rollup.mod.GeneratedCodePreset
+import typings.rollup.mod.InputPluginHooks
 import typings.rollup.mod.InternalModuleFormat
 import typings.rollup.mod.ModuleFormat
+import typings.rollup.mod.OutputPluginHooks
 import typings.rollup.mod.ParallelPluginHooks
-import typings.rollup.mod.PluginValueHooks
 import typings.rollup.mod.PreserveEntrySignaturesOption
+import typings.rollup.mod.RollupWatchHooks
 import typings.rollup.mod.SequentialPluginHooks
 import typings.rollup.mod.SyncPluginHooks
+import typings.rollup.mod.TreeshakingPreset
 import typings.rollup.mod._InteropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,10 +57,18 @@ object rollupStrings {
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
+  sealed trait absolute extends StObject
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @js.native
   sealed trait `allow-extension`
     extends StObject
        with PreserveEntrySignaturesOption
   inline def `allow-extension`: `allow-extension` = "allow-extension".asInstanceOf[`allow-extension`]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait amd
@@ -71,6 +84,7 @@ object rollupStrings {
   @js.native
   sealed trait augmentChunkHash
     extends StObject
+       with OutputPluginHooks
        with SequentialPluginHooks
        with SyncPluginHooks
   inline def augmentChunkHash: augmentChunkHash = "augmentChunkHash".asInstanceOf[augmentChunkHash]
@@ -84,14 +98,15 @@ object rollupStrings {
   @js.native
   sealed trait banner
     extends StObject
+       with AddonHooks
        with ParallelPluginHooks
-       with PluginValueHooks
   inline def banner: banner = "banner".asInstanceOf[banner]
   
   @js.native
   sealed trait buildEnd
     extends StObject
        with AsyncPluginHooks
+       with InputPluginHooks
        with ParallelPluginHooks
   inline def buildEnd: buildEnd = "buildEnd".asInstanceOf[buildEnd]
   
@@ -99,6 +114,7 @@ object rollupStrings {
   sealed trait buildStart
     extends StObject
        with AsyncPluginHooks
+       with InputPluginHooks
        with ParallelPluginHooks
   inline def buildStart: buildStart = "buildStart".asInstanceOf[buildStart]
   
@@ -114,10 +130,19 @@ object rollupStrings {
   inline def cjs: cjs = "cjs".asInstanceOf[cjs]
   
   @js.native
+  sealed trait closeBundle
+    extends StObject
+       with AsyncPluginHooks
+       with InputPluginHooks
+       with ParallelPluginHooks
+  inline def closeBundle: closeBundle = "closeBundle".asInstanceOf[closeBundle]
+  
+  @js.native
   sealed trait closeWatcher
     extends StObject
-       with SequentialPluginHooks
-       with SyncPluginHooks
+       with AsyncPluginHooks
+       with InputPluginHooks
+       with ParallelPluginHooks
   inline def closeWatcher: closeWatcher = "closeWatcher".asInstanceOf[closeWatcher]
   
   @js.native
@@ -152,6 +177,18 @@ object rollupStrings {
   inline def es: es = "es".asInstanceOf[es]
   
   @js.native
+  sealed trait es2015
+    extends StObject
+       with GeneratedCodePreset
+  inline def es2015: es2015 = "es2015".asInstanceOf[es2015]
+  
+  @js.native
+  sealed trait es5
+    extends StObject
+       with GeneratedCodePreset
+  inline def es5: es5 = "es5".asInstanceOf[es5]
+  
+  @js.native
   sealed trait esModule
     extends StObject
        with _InteropType
@@ -172,20 +209,25 @@ object rollupStrings {
   @js.native
   sealed trait footer
     extends StObject
+       with AddonHooks
        with ParallelPluginHooks
-       with PluginValueHooks
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
   sealed trait generateBundle
     extends StObject
        with AsyncPluginHooks
+       with OutputPluginHooks
        with SequentialPluginHooks
   inline def generateBundle: generateBundle = "generateBundle".asInstanceOf[generateBundle]
   
   @js.native
   sealed trait hidden extends StObject
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
+  sealed trait ifRelativeSource extends StObject
+  inline def ifRelativeSource: ifRelativeSource = "ifRelativeSource".asInstanceOf[ifRelativeSource]
   
   @js.native
   sealed trait iife
@@ -201,8 +243,8 @@ object rollupStrings {
   @js.native
   sealed trait intro
     extends StObject
+       with AddonHooks
        with ParallelPluginHooks
-       with PluginValueHooks
   inline def intro: intro = "intro".asInstanceOf[intro]
   
   @js.native
@@ -210,6 +252,7 @@ object rollupStrings {
     extends StObject
        with AsyncPluginHooks
        with FirstPluginHooks
+       with InputPluginHooks
   inline def load: load = "load".asInstanceOf[load]
   
   @js.native
@@ -222,6 +265,7 @@ object rollupStrings {
   sealed trait moduleParsed
     extends StObject
        with AsyncPluginHooks
+       with InputPluginHooks
        with ParallelPluginHooks
   inline def moduleParsed: moduleParsed = "moduleParsed".asInstanceOf[moduleParsed]
   
@@ -242,15 +286,47 @@ object rollupStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait onBundleEnd
+    extends StObject
+       with RollupWatchHooks
+  inline def onBundleEnd: onBundleEnd = "onBundleEnd".asInstanceOf[onBundleEnd]
+  
+  @js.native
+  sealed trait onBundleStart
+    extends StObject
+       with RollupWatchHooks
+  inline def onBundleStart: onBundleStart = "onBundleStart".asInstanceOf[onBundleStart]
+  
+  @js.native
+  sealed trait onEnd
+    extends StObject
+       with RollupWatchHooks
+  inline def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
+  
+  @js.native
+  sealed trait onError
+    extends StObject
+       with RollupWatchHooks
+  inline def onError: onError = "onError".asInstanceOf[onError]
+  
+  @js.native
+  sealed trait onStart
+    extends StObject
+       with RollupWatchHooks
+  inline def onStart: onStart = "onStart".asInstanceOf[onStart]
+  
+  @js.native
   sealed trait options
     extends StObject
        with AsyncPluginHooks
+       with InputPluginHooks
        with SequentialPluginHooks
   inline def options: options = "options".asInstanceOf[options]
   
   @js.native
   sealed trait outputOptions
     extends StObject
+       with OutputPluginHooks
        with SequentialPluginHooks
        with SyncPluginHooks
   inline def outputOptions: outputOptions = "outputOptions".asInstanceOf[outputOptions]
@@ -258,8 +334,8 @@ object rollupStrings {
   @js.native
   sealed trait outro
     extends StObject
+       with AddonHooks
        with ParallelPluginHooks
-       with PluginValueHooks
   inline def outro: outro = "outro".asInstanceOf[outro]
   
   @js.native
@@ -267,9 +343,28 @@ object rollupStrings {
   inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
   @js.native
+  sealed trait post extends StObject
+  inline def post: post = "post".asInstanceOf[post]
+  
+  @js.native
+  sealed trait pre extends StObject
+  inline def pre: pre = "pre".asInstanceOf[pre]
+  
+  @js.native
+  sealed trait recommended
+    extends StObject
+       with TreeshakingPreset
+  inline def recommended: recommended = "recommended".asInstanceOf[recommended]
+  
+  @js.native
+  sealed trait relative extends StObject
+  inline def relative: relative = "relative".asInstanceOf[relative]
+  
+  @js.native
   sealed trait renderChunk
     extends StObject
        with AsyncPluginHooks
+       with OutputPluginHooks
        with SequentialPluginHooks
   inline def renderChunk: renderChunk = "renderChunk".asInstanceOf[renderChunk]
   
@@ -277,6 +372,7 @@ object rollupStrings {
   sealed trait renderDynamicImport
     extends StObject
        with FirstPluginHooks
+       with OutputPluginHooks
        with SyncPluginHooks
   inline def renderDynamicImport: renderDynamicImport = "renderDynamicImport".asInstanceOf[renderDynamicImport]
   
@@ -284,6 +380,7 @@ object rollupStrings {
   sealed trait renderError
     extends StObject
        with AsyncPluginHooks
+       with OutputPluginHooks
        with ParallelPluginHooks
   inline def renderError: renderError = "renderError".asInstanceOf[renderError]
   
@@ -291,6 +388,7 @@ object rollupStrings {
   sealed trait renderStart
     extends StObject
        with AsyncPluginHooks
+       with OutputPluginHooks
        with ParallelPluginHooks
   inline def renderStart: renderStart = "renderStart".asInstanceOf[renderStart]
   
@@ -298,6 +396,7 @@ object rollupStrings {
   sealed trait resolveAssetUrl
     extends StObject
        with FirstPluginHooks
+       with OutputPluginHooks
        with SyncPluginHooks
   inline def resolveAssetUrl: resolveAssetUrl = "resolveAssetUrl".asInstanceOf[resolveAssetUrl]
   
@@ -306,12 +405,14 @@ object rollupStrings {
     extends StObject
        with AsyncPluginHooks
        with FirstPluginHooks
+       with InputPluginHooks
   inline def resolveDynamicImport: resolveDynamicImport = "resolveDynamicImport".asInstanceOf[resolveDynamicImport]
   
   @js.native
   sealed trait resolveFileUrl
     extends StObject
        with FirstPluginHooks
+       with OutputPluginHooks
        with SyncPluginHooks
   inline def resolveFileUrl: resolveFileUrl = "resolveFileUrl".asInstanceOf[resolveFileUrl]
   
@@ -320,14 +421,36 @@ object rollupStrings {
     extends StObject
        with AsyncPluginHooks
        with FirstPluginHooks
+       with InputPluginHooks
   inline def resolveId: resolveId = "resolveId".asInstanceOf[resolveId]
   
   @js.native
   sealed trait resolveImportMeta
     extends StObject
        with FirstPluginHooks
+       with OutputPluginHooks
        with SyncPluginHooks
   inline def resolveImportMeta: resolveImportMeta = "resolveImportMeta".asInstanceOf[resolveImportMeta]
+  
+  @js.native
+  sealed trait safest
+    extends StObject
+       with TreeshakingPreset
+  inline def safest: safest = "safest".asInstanceOf[safest]
+  
+  @js.native
+  sealed trait shouldTransformCachedModule
+    extends StObject
+       with AsyncPluginHooks
+       with FirstPluginHooks
+       with InputPluginHooks
+  inline def shouldTransformCachedModule: shouldTransformCachedModule = "shouldTransformCachedModule".asInstanceOf[shouldTransformCachedModule]
+  
+  @js.native
+  sealed trait smallest
+    extends StObject
+       with TreeshakingPreset
+  inline def smallest: smallest = "smallest".asInstanceOf[smallest]
   
   @js.native
   sealed trait strict
@@ -352,6 +475,7 @@ object rollupStrings {
   sealed trait transform
     extends StObject
        with AsyncPluginHooks
+       with InputPluginHooks
        with SequentialPluginHooks
   inline def transform: transform = "transform".asInstanceOf[transform]
   
@@ -371,14 +495,16 @@ object rollupStrings {
   @js.native
   sealed trait watchChange
     extends StObject
-       with SequentialPluginHooks
-       with SyncPluginHooks
+       with AsyncPluginHooks
+       with InputPluginHooks
+       with ParallelPluginHooks
   inline def watchChange: watchChange = "watchChange".asInstanceOf[watchChange]
   
   @js.native
   sealed trait writeBundle
     extends StObject
        with AsyncPluginHooks
+       with OutputPluginHooks
        with ParallelPluginHooks
   inline def writeBundle: writeBundle = "writeBundle".asInstanceOf[writeBundle]
 }

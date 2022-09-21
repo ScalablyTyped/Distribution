@@ -214,6 +214,10 @@ object mod {
   @js.native
   val TEMPORARY_REDIRECT: Double = js.native
   
+  @JSImport("http-codes", "TOO_EARLY")
+  @js.native
+  val TOO_EARLY: Double = js.native
+  
   @JSImport("http-codes", "TOO_MANY_REQUESTS")
   @js.native
   val TOO_MANY_REQUESTS: Double = js.native
@@ -225,10 +229,6 @@ object mod {
   @JSImport("http-codes", "UNAVAILABLE_FOR_LEGAL_REASONS")
   @js.native
   val UNAVAILABLE_FOR_LEGAL_REASONS: Double = js.native
-  
-  @JSImport("http-codes", "UNORDERED_COLLECTION")
-  @js.native
-  val UNORDERED_COLLECTION: Double = js.native
   
   @JSImport("http-codes", "UNPROCESSABLE_ENTITY")
   @js.native

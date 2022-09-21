@@ -10,10 +10,10 @@ Launch node applications or executables at login (Mac, Windows, and Linux)
 | ------------------ | :-------------: |
 | Full name          | auto-launch |
 | Keywords           | login, launch, node-webkit, electron, boot, login-items |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 265618 |
-| # stars            | 29 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30058.0 |
+| # stars            | 842.0 |
 
 ## Links
 - [Homepage](https://github.com/4ver/node-auto-launch)

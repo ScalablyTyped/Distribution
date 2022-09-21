@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PolicyName extends StObject {
   
+  /** Identifies an instance of the type. ID format varies by type. The ID format is defined in the IAM .service file that defines the type, either in path_mapping or in a comment. */
   var id: js.UndefOr[String] = js.undefined
   
   /**
@@ -14,7 +15,7 @@ trait PolicyName extends StObject {
     */
   var region: js.UndefOr[String] = js.undefined
   
-  /** Valid values for type might be 'gce', 'gcs', 'project', 'account' etc. */
+  /** Resource type. Types are defined in IAM's .service files. Valid values for type might be 'gce', 'gcs', 'project', 'account' etc. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object PolicyName {

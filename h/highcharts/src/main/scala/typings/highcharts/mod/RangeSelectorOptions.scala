@@ -49,7 +49,22 @@ trait RangeSelectorOptions extends StObject {
   var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.undefined
   
   /**
-    * (Highstock, Gantt) Enable or disable the range selector.
+    * (Highstock, Gantt) Whether to collapse the range selector buttons into a
+    * dropdown when there is not enough room to show everything in a single
+    * row, instead of dividing the range selector into multiple rows. Can be
+    * one of the following:
+    *
+    * - `always`: Always collapse
+    *
+    * - `responsive`: Only collapse when there is not enough room
+    *
+    * - `never`: Never collapse
+    */
+  var dropdown: js.UndefOr[OptionsDropdownValue] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Enable or disable the range selector. Default to
+    * `true` for stock charts, using the `stockChart` factory.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -71,13 +86,18 @@ trait RangeSelectorOptions extends StObject {
   var inputBoxHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock, Gantt) The pixel width of the date input boxes.
+    * (Highstock, Gantt) The pixel width of the date input boxes. When
+    * `undefined`, the width is fitted to the rendered content.
     */
   var inputBoxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The date format in the input boxes when not selected
     * for editing. Defaults to `%b %e, %Y`.
+    *
+    * This is used to determine which type of input to show, `datetime-local`,
+    * `date` or `time` and falling back to `text` when the browser does not
+    * support the input type or the format contains milliseconds.
     */
   var inputDateFormat: js.UndefOr[String] = js.undefined
   
@@ -86,6 +106,10 @@ trait RangeSelectorOptions extends StObject {
     * the input boxes and return a valid JavaScript time as milliseconds since
     * 1970. The first argument passed is a value to parse, second is a boolean
     * indicating use of the UTC time.
+    *
+    * This will only get called for inputs of type `text`. Since v8.2.3, the
+    * input type is dynamically determined based on the granularity of the
+    * `inputDateFormat` and the browser support.
     */
   var inputDateParser: js.UndefOr[RangeSelectorParseCallbackFunction] = js.undefined
   
@@ -93,12 +117,15 @@ trait RangeSelectorOptions extends StObject {
     * (Highstock, Gantt) The date format in the input boxes when they are
     * selected for editing. This must be a format that is recognized by
     * JavaScript Date.parse.
+    *
+    * This will only be used for inputs of type `text`. Since v8.2.3, the input
+    * type is dynamically determined based on the granularity of the
+    * `inputDateFormat` and the browser support.
     */
   var inputEditDateFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highstock, Gantt) Enable or disable the date input boxes. Defaults to
-    * enabled when there is enough space, disabled if not (typically mobile).
+    * (Highstock, Gantt) Enable or disable the date input boxes.
     */
   var inputEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -107,6 +134,12 @@ trait RangeSelectorOptions extends StObject {
     * are `align`, `x` and `y`.
     */
   var inputPosition: js.UndefOr[RangeSelectorInputPositionOptions] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) The space in pixels between the labels and the date
+    * input boxes in the range selector.
+    */
+  var inputSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) CSS for the HTML inputs in the range selector.
@@ -178,7 +211,11 @@ object RangeSelectorOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setDropdown(value: OptionsDropdownValue): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
@@ -219,6 +256,10 @@ object RangeSelectorOptions {
     inline def setInputPosition(value: RangeSelectorInputPositionOptions): Self = StObject.set(x, "inputPosition", value.asInstanceOf[js.Any])
     
     inline def setInputPositionUndefined: Self = StObject.set(x, "inputPosition", js.undefined)
+    
+    inline def setInputSpacing(value: Double): Self = StObject.set(x, "inputSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setInputSpacingUndefined: Self = StObject.set(x, "inputSpacing", js.undefined)
     
     inline def setInputStyle(value: CSSObject): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     

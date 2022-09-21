@@ -10,10 +10,10 @@ Creates and returns a new debounced version of the passed function that will pos
 | ------------------ | :-------------: |
 | Full name          | debounce |
 | Keywords           | function, throttle, invoke |
-| # releases         | 0 |
-| # dependents       | 887 |
-| # downloads        | 57736327 |
-| # stars            | 16 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1292784E7 |
+| # stars            | 571.0 |
 
 ## Links
 - [Homepage](https://github.com/component/debounce#readme)

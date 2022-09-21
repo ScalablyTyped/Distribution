@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Map")
 @js.native
-class Map protected ()
+open class Map protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Map {
   def this(container: String) = this()

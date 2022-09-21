@@ -3,21 +3,27 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.grpcGrpcJs.makeClientMod.GrpcObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/node/grpc_connection", JSImport.Namespace)
-@js.native
-object grpcConnectionMod extends js.Object {
-  @js.native
-  class GrpcConnection protected () extends Connection {
-    def this(protos: GrpcObject, databaseInfo: DatabaseInfo) = this()
-    var cachedStub: js.Any = js.native
-    var databaseInfo: js.Any = js.native
-    var ensureActiveStub: js.Any = js.native
-    var firestore: js.Any = js.native
-  }
+object grpcConnectionMod {
   
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/node/grpc_connection", "GrpcConnection")
+  @js.native
+  open class GrpcConnection protected ()
+    extends StObject
+       with Connection {
+    def this(protos: GrpcObject, databaseInfo: DatabaseInfo) = this()
+    
+    /* private */ var cachedStub: Any = js.native
+    
+    /* private */ var databaseInfo: Any = js.native
+    
+    /* private */ val databasePath: Any = js.native
+    
+    /* private */ var ensureActiveStub: Any = js.native
+    
+    /* private */ val firestore: Any = js.native
+  }
 }
-

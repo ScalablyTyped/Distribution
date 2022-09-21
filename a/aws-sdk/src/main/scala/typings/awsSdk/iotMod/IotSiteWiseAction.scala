@@ -12,7 +12,7 @@ trait IotSiteWiseAction extends StObject {
   var putAssetPropertyValueEntries: PutAssetPropertyValueEntryList
   
   /**
-    * The ARN of the role that grants AWS IoT permission to send an asset property value to AWS IoTSiteWise. ("Action": "iotsitewise:BatchPutAssetPropertyValue"). The trust policy can restrict access to specific asset hierarchy paths.
+    * The ARN of the role that grants IoT permission to send an asset property value to IoT SiteWise. ("Action": "iotsitewise:BatchPutAssetPropertyValue"). The trust policy can restrict access to specific asset hierarchy paths.
     */
   var roleArn: AwsArn
 }
@@ -27,7 +27,7 @@ object IotSiteWiseAction {
     
     inline def setPutAssetPropertyValueEntries(value: PutAssetPropertyValueEntryList): Self = StObject.set(x, "putAssetPropertyValueEntries", value.asInstanceOf[js.Any])
     
-    inline def setPutAssetPropertyValueEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = StObject.set(x, "putAssetPropertyValueEntries", js.Array(value :_*))
+    inline def setPutAssetPropertyValueEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = StObject.set(x, "putAssetPropertyValueEntries", js.Array(value*))
     
     inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }

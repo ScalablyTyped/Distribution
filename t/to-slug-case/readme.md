@@ -11,14 +11,11 @@ Convert a string to slug case.
 | Full name          | to-slug-case |
 | Keywords           | slug, case, slugcase, string |
 | # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 663641 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 93933.33333333333 |
+| # stars            | 10.0 |
 
 ## Links
-- [Homepage](https://github.com/ianstormtaylor/to-slug-case)
-- [Bugs](https://github.com/ianstormtaylor/to-slug-case/issues)
-- [Repository](https://github.com/ianstormtaylor/to-slug-case)
 - [Npm](https://www.npmjs.com/package/to-slug-case)
     
 

@@ -11,9 +11,9 @@ Helper to require() directories.
 | Full name          | require-dir |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 882 |
-| # downloads        | 12676279 |
-| # stars            | 91 |
+| # dependents       | 0.0 |
+| # downloads        | 922151.0 |
+| # stars            | 480.0 |
 
 ## Links
 - [Homepage](https://github.com/aseemk/requireDir)

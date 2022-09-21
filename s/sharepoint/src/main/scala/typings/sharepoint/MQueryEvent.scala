@@ -35,5 +35,5 @@ trait MQueryEvent
   
   var shiftKey: Boolean = js.native
   
-  var view: js.Any = js.native
+  var view: Any = js.native
 }

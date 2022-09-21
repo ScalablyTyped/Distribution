@@ -1,20 +1,29 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.ColorProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Color
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MjmlAccordionTextProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var color: js.UndefOr[Color] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
   var fontSize: js.UndefOr[String | Double] = js.undefined
+  
+  var fontWeight: js.UndefOr[String | Double] = js.undefined
+  
+  var letterSpacing: js.UndefOr[String | Double] = js.undefined
+  
+  var lineHeight: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlAccordionTextProps {
   
@@ -25,11 +34,15 @@ object MjmlAccordionTextProps {
   
   extension [Self <: MjmlAccordionTextProps](x: Self) {
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -40,5 +53,17 @@ object MjmlAccordionTextProps {
     inline def setFontSize(value: String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setLetterSpacing(value: String | Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    
+    inline def setLineHeight(value: String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
   }
 }

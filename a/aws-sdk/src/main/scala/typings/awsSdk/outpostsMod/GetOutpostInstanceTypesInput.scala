@@ -10,6 +10,9 @@ trait GetOutpostInstanceTypesInput extends StObject {
   
   var NextToken: js.UndefOr[Token] = js.undefined
   
+  /**
+    *  The ID or the Amazon Resource Name (ARN) of the Outpost.   In requests, Amazon Web Services Outposts accepts the Amazon Resource Name (ARN) or an ID for Outposts and sites throughout the Outposts Query API. To address backwards compatibility, the parameter names OutpostID or SiteID remain in use. Despite the parameter name, you can make the request with an ARN. 
+    */
   var OutpostId: typings.awsSdk.outpostsMod.OutpostId
 }
 object GetOutpostInstanceTypesInput {

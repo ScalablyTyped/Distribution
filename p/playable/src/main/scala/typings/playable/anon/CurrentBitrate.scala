@@ -59,7 +59,7 @@ object CurrentBitrate {
     
     inline def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     
-    inline def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value :_*))
+    inline def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value*))
     
     inline def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
     

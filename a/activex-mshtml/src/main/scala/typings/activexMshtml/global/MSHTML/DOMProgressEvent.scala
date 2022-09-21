@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMProgressEvent")
 @js.native
-/* private */ class DOMProgressEvent ()
+/* private */ open class DOMProgressEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMProgressEvent {
   

@@ -1,6 +1,5 @@
 package typings.apolloProtobufjs.mod.common
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Properties of a google.protobuf.BytesValue message. */
 trait IBytesValue extends StObject {
   
-  var value: js.UndefOr[Uint8Array] = js.undefined
+  var value: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
 }
 object IBytesValue {
   
@@ -19,7 +18,7 @@ object IBytesValue {
   
   extension [Self <: IBytesValue](x: Self) {
     
-    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

@@ -9,7 +9,7 @@ object serviceclientMod {
   
   @JSImport("azure-sb/lib/serviceclient", JSImport.Namespace)
   @js.native
-  class ^ () extends ServiceClient
+  open class ^ () extends ServiceClient
   
   @js.native
   trait ServiceClient extends EventEmitter {

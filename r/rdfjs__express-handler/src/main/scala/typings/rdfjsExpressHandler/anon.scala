@@ -1,9 +1,9 @@
 package typings.rdfjsExpressHandler
 
 import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Stream
 import typings.rdfjsSinkMap.mod.SinkMap
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

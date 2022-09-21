@@ -33,6 +33,6 @@ object ListDeploymentTargetsOutput {
     
     inline def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
-    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "targetIds", js.Array(value*))
   }
 }

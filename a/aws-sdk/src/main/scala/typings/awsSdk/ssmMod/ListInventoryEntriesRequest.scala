@@ -12,7 +12,7 @@ trait ListInventoryEntriesRequest extends StObject {
   var Filters: js.UndefOr[InventoryFilterList] = js.undefined
   
   /**
-    * The instance ID for which you want inventory information.
+    * The managed node ID for which you want inventory information.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
@@ -44,7 +44,7 @@ object ListInventoryEntriesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

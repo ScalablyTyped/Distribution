@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Connection")
 @js.native
-class Connection () extends StObject {
+open class Connection () extends StObject {
   def this(options: IConnectionOptions) = this()
   
   def close(): Unit = js.native
@@ -22,9 +22,9 @@ class Connection () extends StObject {
   
   val isRetrying: Boolean = js.native
   
-  def onclose(reason: String, details: js.Any): Boolean = js.native
+  def onclose(reason: String, details: Any): Boolean = js.native
   
-  def onopen(session: Session, details: js.Any): Unit = js.native
+  def onopen(session: Session, details: Any): Unit = js.native
   
   def open(): Unit = js.native
   

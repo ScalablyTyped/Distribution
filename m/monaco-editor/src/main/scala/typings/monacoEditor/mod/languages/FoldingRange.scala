@@ -12,10 +12,10 @@ trait FoldingRange extends StObject {
   var end: Double
   
   /**
-    * Describes the [Kind](#FoldingRangeKind) of the folding range such as [Comment](#FoldingRangeKind.Comment) or
-    * [Region](#FoldingRangeKind.Region). The kind is used to categorize folding ranges and used by commands
+    * Describes the {@link FoldingRangeKind Kind} of the folding range such as {@link FoldingRangeKind.Comment Comment} or
+    * {@link FoldingRangeKind.Region Region}. The kind is used to categorize folding ranges and used by commands
     * like 'Fold all comments'. See
-    * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
+    * {@link FoldingRangeKind} for an enumeration of standardized kinds.
     */
   var kind: js.UndefOr[FoldingRangeKind] = js.undefined
   

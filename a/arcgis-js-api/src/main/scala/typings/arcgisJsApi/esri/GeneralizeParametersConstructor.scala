@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeneralizeParametersConstructor
   extends StObject
-     with Instantiable0[GeneralizeParameters]
+     with /**
+  * Sets the geometries, maximum deviation and units for the [generalize](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#generalize) operation.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GeneralizeParameters.html)
+  */
+Instantiable0[GeneralizeParameters]
      with Instantiable1[/* properties */ GeneralizeParametersProperties, GeneralizeParameters] {
   
-  def fromJSON(json: js.Any): GeneralizeParameters = js.native
+  def fromJSON(json: Any): GeneralizeParameters = js.native
 }

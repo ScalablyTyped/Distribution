@@ -1,10 +1,9 @@
 package typings.ngmap
 
 import typings.angular.mod.IPromise
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.Map
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.Map
 import typings.ngmap.anon.AnchorPoint
-import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.PositionOptions
 import org.scalablytyped.runtime.StObject
@@ -43,7 +42,7 @@ object angular {
     @js.native
     trait INgMap extends StObject {
       
-      def addMap(mapCtrl: js.Array[js.Any]): Unit = js.native
+      def addMap(mapCtrl: js.Array[Any]): Unit = js.native
       /**
         * Add map to pool
         * @param {Function | any[]} mapCtrl Map controller
@@ -56,7 +55,7 @@ object angular {
         * controller in pool
         */
       def deleteMap(): Unit = js.native
-      def deleteMap(mapCtrl: js.Array[js.Any]): Unit = js.native
+      def deleteMap(mapCtrl: js.Array[Any]): Unit = js.native
       def deleteMap(mapCtrl: js.Function): Unit = js.native
       
       /**
@@ -73,16 +72,16 @@ object angular {
         * @param  {IGetMapOptions}                    options optional
         * @return {angular.IPromise<google.maps.Map>}         promise
         */
-      def getMap(): IPromise[Map[Element]] = js.native
-      def getMap(options: IGetMapOptions): IPromise[Map[Element]] = js.native
+      def getMap(): IPromise[Map] = js.native
+      def getMap(options: IGetMapOptions): IPromise[Map] = js.native
       
       /**
         * Initialize map from mapId or the current first shown map
         * @param  {string}          mapId id of the map. default 0
         * @return {google.maps.Map}       map
         */
-      def initMap(): Map[Element] = js.native
-      def initMap(mapId: String): Map[Element] = js.native
+      def initMap(): Map = js.native
+      def initMap(mapId: String): Map = js.native
       
       /**
         * Observe attribute
@@ -144,6 +143,6 @@ object angular {
       }
     }
     
-    type IObserveAndSetFunc = js.Function1[/* val */ js.Any, Unit]
+    type IObserveAndSetFunc = js.Function1[/* val */ Any, Unit]
   }
 }

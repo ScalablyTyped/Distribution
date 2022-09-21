@@ -8,7 +8,7 @@ object utilsMod {
   
   @JSImport("serverless/classes/Utils", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Utils {
     def this(serverless: typings.serverless.mod.^) = this()

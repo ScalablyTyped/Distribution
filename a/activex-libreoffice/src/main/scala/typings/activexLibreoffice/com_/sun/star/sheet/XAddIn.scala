@@ -118,7 +118,7 @@ object XAddIn {
     getLocale: () => Locale,
     getProgrammaticCategoryName: String => String,
     getProgrammaticFuntionName: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLocale: Locale => Unit
   ): XAddIn = {

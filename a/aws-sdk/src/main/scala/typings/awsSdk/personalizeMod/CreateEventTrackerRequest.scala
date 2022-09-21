@@ -15,6 +15,11 @@ trait CreateEventTrackerRequest extends StObject {
     * The name for the event tracker.
     */
   var name: Name
+  
+  /**
+    * A list of tags to apply to the event tracker.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateEventTrackerRequest {
   
@@ -28,5 +33,11 @@ object CreateEventTrackerRequest {
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ object mathSizeMod {
   
   @JSImport("babylonjs/Maths/math.size", "Size")
   @js.native
-  class Size protected ()
+  open class Size protected ()
     extends StObject
        with ISize {
     /**
@@ -59,7 +59,7 @@ object mathSizeMod {
     def getHashCode(): Double = js.native
     
     /**
-      * Heighht
+      * Height
       */
     /* CompleteClass */
     var height: Double = js.native
@@ -124,7 +124,7 @@ object mathSizeMod {
   trait ISize extends StObject {
     
     /**
-      * Heighht
+      * Height
       */
     var height: Double
     

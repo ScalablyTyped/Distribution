@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NonCompliantSummary extends StObject {
   
   /**
-    * The total number of compliance items that are not compliant.
+    * The total number of compliance items that aren't compliant.
     */
   var NonCompliantCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   

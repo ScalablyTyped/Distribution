@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of linked data types.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -29,24 +29,27 @@ trait LinkedDataTypeCollection
   /**
     * Gets the number of linked data types in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a linked data type by service id.
+    * Gets a linked data type by service ID.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param key The id of the linked data type.
+    * @param key The ID of the linked data type.
     */
   def getItem(key: Double): LinkedDataType = js.native
   
   /**
     * Gets a linked data type by its index in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -56,12 +59,14 @@ trait LinkedDataTypeCollection
   def getItemAt(index: Double): LinkedDataType = js.native
   
   /**
-    * Gets a linked data type by ID. If the linked data type does not exist, an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    * Gets a linked data type by ID. If the linked data type doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param key The service id of the linked data type.
+    * @param key The service ID of the linked data type.
     */
   def getItemOrNullObject(key: Double): LinkedDataType = js.native
   
@@ -83,6 +88,7 @@ trait LinkedDataTypeCollection
     * Makes a request to refresh all the linked data types in the collection.
     If the service is busy or otherwise temporarily inaccessible, the request will not be fulfilled.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */

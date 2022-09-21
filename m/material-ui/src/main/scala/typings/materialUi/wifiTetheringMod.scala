@@ -10,10 +10,10 @@ object wifiTetheringMod {
   
   @JSImport("material-ui/svg-icons/device/wifi-tethering", JSImport.Default)
   @js.native
-  class default () extends DeviceWifiTethering
+  open class default () extends DeviceWifiTethering
   
   @JSImport("material-ui/svg-icons/device/wifi-tethering", "DeviceWifiTethering")
   @js.native
-  class DeviceWifiTethering ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceWifiTethering ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

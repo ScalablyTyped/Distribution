@@ -44,7 +44,7 @@ object anon {
     
     var track_name: String
     
-    var track_name_translation_list: js.Array[js.Any]
+    var track_name_translation_list: js.Array[Any]
     
     var track_rating: Double
     
@@ -71,7 +71,7 @@ object anon {
       track_edit_url: String,
       track_id: Double,
       track_name: String,
-      track_name_translation_list: js.Array[js.Any],
+      track_name_translation_list: js.Array[Any],
       track_rating: Double,
       track_share_url: String,
       updated_time: String
@@ -114,9 +114,9 @@ object anon {
       
       inline def setTrack_name(value: String): Self = StObject.set(x, "track_name", value.asInstanceOf[js.Any])
       
-      inline def setTrack_name_translation_list(value: js.Array[js.Any]): Self = StObject.set(x, "track_name_translation_list", value.asInstanceOf[js.Any])
+      inline def setTrack_name_translation_list(value: js.Array[Any]): Self = StObject.set(x, "track_name_translation_list", value.asInstanceOf[js.Any])
       
-      inline def setTrack_name_translation_listVarargs(value: js.Any*): Self = StObject.set(x, "track_name_translation_list", js.Array(value :_*))
+      inline def setTrack_name_translation_listVarargs(value: Any*): Self = StObject.set(x, "track_name_translation_list", js.Array(value*))
       
       inline def setTrack_rating(value: Double): Self = StObject.set(x, "track_rating", value.asInstanceOf[js.Any])
       
@@ -229,7 +229,7 @@ object anon {
       
       inline def setTrack_list(value: js.Array[TrackResult]): Self = StObject.set(x, "track_list", value.asInstanceOf[js.Any])
       
-      inline def setTrack_listVarargs(value: TrackResult*): Self = StObject.set(x, "track_list", js.Array(value :_*))
+      inline def setTrack_listVarargs(value: TrackResult*): Self = StObject.set(x, "track_list", js.Array(value*))
     }
   }
 }

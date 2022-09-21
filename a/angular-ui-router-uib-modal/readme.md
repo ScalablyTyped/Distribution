@@ -10,15 +10,12 @@ AngularJS module that adds support for ui-bootstrap modal states when using ui-r
 | ------------------ | :-------------: |
 | Full name          | angular-ui-router-uib-modal |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 7160 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1124.3333333333333 |
+| # stars            | 32.0 |
 
 ## Links
-- [Homepage](https://github.com/nonplus/angular-ui-router-uib-modal)
-- [Bugs](https://github.com/nonplus/angular-ui-router-uib-modal/issues)
-- [Repository](https://github.com/nonplus/angular-ui-router-uib-modal)
 - [Npm](https://www.npmjs.com/package/angular-ui-router-uib-modal)
     
 

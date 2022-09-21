@@ -21,7 +21,7 @@ trait MobileAppContentFile
   var isCommitted: js.UndefOr[Boolean] = js.undefined
   
   // The manifest information.
-  var manifest: js.UndefOr[NullableOption[Double]] = js.undefined
+  var manifest: js.UndefOr[NullableOption[String]] = js.undefined
   
   // the file name.
   var name: js.UndefOr[NullableOption[String]] = js.undefined
@@ -70,7 +70,7 @@ object MobileAppContentFile {
     
     inline def setIsCommittedUndefined: Self = StObject.set(x, "isCommitted", js.undefined)
     
-    inline def setManifest(value: NullableOption[Double]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: NullableOption[String]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     inline def setManifestNull: Self = StObject.set(x, "manifest", null)
     

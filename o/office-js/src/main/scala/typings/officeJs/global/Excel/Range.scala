@@ -6,16 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
+  To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
   *
-  * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-  To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
-  and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.Range")
 @js.native
-class Range ()
+open class Range ()
   extends StObject
      with typings.officeJs.Excel.Range {
   

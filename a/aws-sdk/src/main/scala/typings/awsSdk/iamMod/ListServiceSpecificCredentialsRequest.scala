@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListServiceSpecificCredentialsRequest extends StObject {
   
   /**
-    * Filters the returned results to only those for the specified AWS service. If not specified, then AWS returns service-specific credentials for all services.
+    * Filters the returned results to only those for the specified Amazon Web Services service. If not specified, then Amazon Web Services returns service-specific credentials for all services.
     */
   var ServiceName: js.UndefOr[serviceName] = js.undefined
   

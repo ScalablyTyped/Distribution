@@ -2,9 +2,14 @@ package typings.queryString
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.queryString.anon.parseBooleanstrueParseOpt
+import typings.queryString.anon.parseBooleanstrueParseOptArrayFormat
 import typings.queryString.anon.parseBooleanstrueparseNum
+import typings.queryString.anon.parseBooleanstrueparseNumArrayFormat
 import typings.queryString.anon.parseNumberstrueParseOpti
+import typings.queryString.anon.parseNumberstrueParseOptiArrayFormat
 import typings.queryString.queryStringBooleans.`false`
+import typings.queryString.queryStringStrings.`bracket-separator`
+import typings.queryString.queryStringStrings.`colon-list-separator`
 import typings.queryString.queryStringStrings.bracket
 import typings.queryString.queryStringStrings.comma
 import typings.queryString.queryStringStrings.index
@@ -21,6 +26,25 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def exclude(url: String, filter: js.Function2[/* key */ String, Boolean | Double | String, Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def exclude(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Boolean, Boolean],
+    options: parseBooleanstrueParseOptArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def exclude(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Boolean | Double, Boolean],
+    options: parseBooleanstrueparseNumArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def exclude(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Double, Boolean],
+    options: parseNumberstrueParseOptiArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def exclude(url: String, keys: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def exclude(url: String, keys: js.Array[String], options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def extract(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def parse(query: String): ParsedQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[ParsedQuery[String]]
@@ -32,8 +56,42 @@ object mod {
   inline def parseUrl(url: String): ParsedUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[ParsedUrl]
   inline def parseUrl(url: String, options: ParseOptions): ParsedUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedUrl]
   
-  inline def stringify(`object`: StringifiableRecord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(`object`: StringifiableRecord, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(url: String, filter: js.Function2[/* key */ String, Boolean | Double | String, Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Boolean, Boolean],
+    options: parseBooleanstrueParseOptArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Boolean | Double, Boolean],
+    options: parseBooleanstrueparseNumArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(
+    url: String,
+    filter: js.Function2[/* key */ String, /* value */ String | Double, Boolean],
+    options: parseNumberstrueParseOptiArrayFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(url: String, keys: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pick(url: String, keys: js.Array[String], options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def stringify(
+    // TODO: Use the below instead when the following TS issues are fixed:
+  // - https://github.com/microsoft/TypeScript/issues/15300
+  // - https://github.com/microsoft/TypeScript/issues/42021
+  // Context: https://github.com/sindresorhus/query-string/issues/298
+  // object: StringifiableRecord,
+  `object`: Record[String, Any]
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(
+    // TODO: Use the below instead when the following TS issues are fixed:
+  // - https://github.com/microsoft/TypeScript/issues/15300
+  // - https://github.com/microsoft/TypeScript/issues/42021
+  // Context: https://github.com/sindresorhus/query-string/issues/298
+  // object: StringifiableRecord,
+  `object`: Record[String, Any],
+    options: StringifyOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def stringifyUrl(`object`: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyUrl")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringifyUrl(`object`: UrlObject, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyUrl")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -66,6 +124,28 @@ object mod {
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
+    	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
+    		```
+    		import queryString = require('query-string');
+    		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> {foo: []}
+    		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> {foo: ['']}
+    		queryString.parse('foo[]=1', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    	 	//=> {foo: ['1']}
+    		queryString.parse('foo[]=1|2|3', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> {foo: ['1', '2', '3']}
+    		queryString.parse('foo[]=1||3|||6', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> {foo: ['1', '', 3, '', '', '6']}
+    		queryString.parse('foo[]=1|2|3&bar=fluffy&baz[]=4', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> {foo: ['1', '2', '3'], bar: 'fluffy', baz:['4']}
+    		```
+    	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
+    		```
+    		import queryString = require('query-string');
+    		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
+    		//=> {foo: ['one', 'two']}
+    		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
     		import queryString = require('query-string');
@@ -73,7 +153,9 @@ object mod {
     		//=> {foo: ['1', '2', '3']}
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
+    val arrayFormat: js.UndefOr[
+        bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none
+      ] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -154,7 +236,7 @@ object mod {
     
     extension [Self <: ParseOptions](x: Self) {
       
-      inline def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
       inline def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
       
@@ -186,7 +268,7 @@ object mod {
     }
   }
   
-  type ParsedQuery[T] = StringDictionary[T | js.Array[T] | Null]
+  type ParsedQuery[T] = StringDictionary[T | Null | (js.Array[T | Null])]
   
   trait ParsedUrl extends StObject {
     
@@ -244,12 +326,40 @@ object mod {
     		import queryString = require('query-string');
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
     		//=> 'foo=1,2,3'
+    		queryString.stringify({foo: [1, null, '']}, {arrayFormat: 'comma'});
+    		//=> 'foo=1,,'
+    		// Note that typing information for null values is lost
+    		// and `.parse('foo=1,,')` would return `{foo: [1, '', '']}`.
     		```
-      - `separator`: Serialize arrays by separating elements with character:
+    	- `separator`: Serialize arrays by separating elements with character:
     		```
     		import queryString = require('query-string');
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> 'foo=1|2|3'
+    		```
+    	- `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character:
+    		```
+    		import queryString = require('query-string');
+    		queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]'
+    		queryString.stringify({foo: ['']}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]='
+    		queryString.stringify({foo: [1]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]=1'
+    		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]=1|2|3'
+    		queryString.stringify({foo: [1, '', 3, null, null, 6]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]=1||3|||6'
+    		queryString.stringify({foo: [1, '', 3, null, null, 6]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|', skipNull: true});
+    		//=> 'foo[]=1||3|6'
+    		queryString.stringify({foo: [1, 2, 3], bar: 'fluffy', baz: [4]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
+    		//=> 'foo[]=1|2|3&bar=fluffy&baz[]=4'
+    		```
+    	- `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`:
+    		```js
+    		import queryString = require('query-string');
+    		queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'});
+    		//=> 'foo:list=one&foo:list=two'
     		```
     	- `none`: Serialize arrays by using duplicate keys:
     		```
@@ -258,7 +368,9 @@ object mod {
     		//=> 'foo=1&foo=2&foo=3'
     		```
     	*/
-    val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
+    val arrayFormat: js.UndefOr[
+        bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none
+      ] = js.undefined
     
     /**
     	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -350,7 +462,7 @@ object mod {
     
     extension [Self <: StringifyOptions](x: Self) {
       
-      inline def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
       inline def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
       
@@ -392,14 +504,14 @@ object mod {
     /**
     	Overrides queries in the `url` property.
     	*/
-    val query: StringifiableRecord
+    val query: js.UndefOr[StringifiableRecord] = js.undefined
     
     val url: String
   }
   object UrlObject {
     
-    inline def apply(query: StringifiableRecord, url: String): UrlObject = {
-      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(url: String): UrlObject = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlObject]
     }
     
@@ -410,6 +522,8 @@ object mod {
       inline def setFragmentIdentifierUndefined: Self = StObject.set(x, "fragmentIdentifier", js.undefined)
       
       inline def setQuery(value: StringifiableRecord): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

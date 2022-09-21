@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_openoperationcompleted(
     `type`: openoperationcompleted,
@@ -54,7 +54,7 @@ trait MediaSource extends StObject {
   @JSName("onstatechanged")
   var onstatechanged_Original: TypedEventHandler[MediaSource, MediaSourceStateChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_openoperationcompleted(
     `type`: openoperationcompleted,

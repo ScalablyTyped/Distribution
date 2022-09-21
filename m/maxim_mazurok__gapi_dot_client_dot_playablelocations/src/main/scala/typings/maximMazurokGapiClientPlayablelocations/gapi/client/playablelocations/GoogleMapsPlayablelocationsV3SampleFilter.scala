@@ -31,7 +31,7 @@ object GoogleMapsPlayablelocationsV3SampleFilter {
     
     inline def setIncludedTypesUndefined: Self = StObject.set(x, "includedTypes", js.undefined)
     
-    inline def setIncludedTypesVarargs(value: String*): Self = StObject.set(x, "includedTypes", js.Array(value :_*))
+    inline def setIncludedTypesVarargs(value: String*): Self = StObject.set(x, "includedTypes", js.Array(value*))
     
     inline def setMaxLocationCount(value: Double): Self = StObject.set(x, "maxLocationCount", value.asInstanceOf[js.Any])
     

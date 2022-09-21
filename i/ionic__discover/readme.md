@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__discover
 
-Typings are for version 2.0.8
+Typings are for version 3.1.5
 
 ## Library description:
 Simple UDP based protocol for service discovery implemented in pure JS.
@@ -10,10 +10,10 @@ Simple UDP based protocol for service discovery implemented in pure JS.
 | ------------------ | :-------------: |
 | Full name          | @ionic/discover |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 0 |
-| # downloads        | 1643220 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 75535.0 |
+| # stars            | 1982.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

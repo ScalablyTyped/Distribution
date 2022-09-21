@@ -3,7 +3,6 @@ package typings.inlineCritical
 import typings.inlineCritical.inlineCriticalBooleans.`false`
 import typings.inlineCritical.inlineCriticalStrings.body
 import typings.inlineCritical.inlineCriticalStrings.head
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +47,7 @@ object mod {
       * @default []
       * @example [/bootstrap/]
       */
-    var ignore: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var ignore: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
       * Whether to minify the styles before inlining.
@@ -97,11 +96,11 @@ object mod {
       
       inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
       
-      inline def setIgnore(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
@@ -119,7 +118,7 @@ object mod {
       
       inline def setReplaceStylesheetsUndefined: Self = StObject.set(x, "replaceStylesheets", js.undefined)
       
-      inline def setReplaceStylesheetsVarargs(value: String*): Self = StObject.set(x, "replaceStylesheets", js.Array(value :_*))
+      inline def setReplaceStylesheetsVarargs(value: String*): Self = StObject.set(x, "replaceStylesheets", js.Array(value*))
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       

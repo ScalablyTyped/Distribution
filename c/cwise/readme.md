@@ -10,15 +10,12 @@ Component-wise operations on ndarrays
 | ------------------ | :-------------: |
 | Full name          | cwise |
 | Keywords           | scijs, ndarray, component, scientific, computing, volume, image, array, typed, array, scalar, math, linear, algebra, signal, operation, scan, map, reduce, cache, arithmetic |
-| # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 3429552 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 155096.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/scijs/cwise#readme)
-- [Bugs](https://github.com/scijs/cwise/issues)
-- [Repository](https://github.com/scijs/cwise)
 - [Npm](https://www.npmjs.com/package/cwise)
     
 

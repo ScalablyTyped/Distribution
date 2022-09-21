@@ -10,10 +10,10 @@ Any dimensional alpha shape computation
 | ------------------ | :-------------: |
 | Full name          | alpha-shape |
 | Keywords           | alpha, shape, convex, hull, concave, hull, point, simplicial, complex |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 3368776 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 364607.6666666667 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/alpha-shape)

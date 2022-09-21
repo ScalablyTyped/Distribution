@@ -10,16 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait baseview extends StObject {
   
   @JSName("$getSize")
-  def $getSize(): js.Array[js.Any] = js.native
+  def $getSize(): js.Array[Any] = js.native
   
   @JSName("$height")
   var $height: Double = js.native
+  
+  @JSName("$setNode")
+  var $setNode: Any = js.native
   
   @JSName("$setSize")
   def $setSize(x: Double, y: Double): Boolean = js.native
   
   @JSName("$skin")
-  def $skin(args: js.Any*): js.Any = js.native
+  def $skin(args: Any*): Any = js.native
   @JSName("$skin")
   var $skin_Original: WebixCallback = js.native
   
@@ -31,14 +34,14 @@ trait baseview extends StObject {
   
   def adjust(): Unit = js.native
   
-  def bind(target: js.Any): Unit = js.native
-  def bind(target: js.Any, rule: Unit, format: String): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any): Unit = js.native
+  def bind(target: Any, rule: Unit, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   var config: baseviewConfig = js.native
   
-  def define(property: String, value: js.Any): Unit = js.native
+  def define(property: String, value: Any): Unit = js.native
   
   def destructor(): Unit = js.native
   
@@ -46,13 +49,13 @@ trait baseview extends StObject {
   
   def enable(): Unit = js.native
   
-  def getChildViews(): js.Array[js.Any] = js.native
+  def getChildViews(): js.Array[Any] = js.native
   
   def getFormView(): baseview = js.native
   
-  def getNode(): js.Any = js.native
+  def getNode(): Any = js.native
   
-  def getParentView(): js.Any = js.native
+  def getParentView(): Any = js.native
   
   def getTopParentView(): baseview = js.native
   
@@ -64,8 +67,8 @@ trait baseview extends StObject {
   
   var name: String = js.native
   
-  def queryView(config: js.Any): js.Any = js.native
-  def queryView(config: js.Any, mode: String): js.Any = js.native
+  def queryView(config: Any): Any = js.native
+  def queryView(config: Any, mode: String): Any = js.native
   
   def resize(): Unit = js.native
   

@@ -6,11 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChatMessageReaction extends StObject {
   
+  /**
+    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    */
   var createdDateTime: js.UndefOr[String] = js.undefined
   
+  // Supported values are like, angry, sad, laugh, heart, surprised.
   var reactionType: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[IdentitySet] = js.undefined
+  // The user who reacted to the message.
+  var user: js.UndefOr[ChatMessageReactionIdentitySet] = js.undefined
 }
 object ChatMessageReaction {
   
@@ -29,7 +35,7 @@ object ChatMessageReaction {
     
     inline def setReactionTypeUndefined: Self = StObject.set(x, "reactionType", js.undefined)
     
-    inline def setUser(value: IdentitySet): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ChatMessageReactionIdentitySet): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }

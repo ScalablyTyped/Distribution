@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HtmlReporter
   extends StObject
-     with Instantiable0[js.Any]
+     with Instantiable0[scala.Any]

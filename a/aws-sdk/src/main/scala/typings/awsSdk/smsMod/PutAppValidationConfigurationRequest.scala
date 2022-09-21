@@ -36,12 +36,12 @@ object PutAppValidationConfigurationRequest {
     
     inline def setAppValidationConfigurationsUndefined: Self = StObject.set(x, "appValidationConfigurations", js.undefined)
     
-    inline def setAppValidationConfigurationsVarargs(value: AppValidationConfiguration*): Self = StObject.set(x, "appValidationConfigurations", js.Array(value :_*))
+    inline def setAppValidationConfigurationsVarargs(value: AppValidationConfiguration*): Self = StObject.set(x, "appValidationConfigurations", js.Array(value*))
     
     inline def setServerGroupValidationConfigurations(value: ServerGroupValidationConfigurations): Self = StObject.set(x, "serverGroupValidationConfigurations", value.asInstanceOf[js.Any])
     
     inline def setServerGroupValidationConfigurationsUndefined: Self = StObject.set(x, "serverGroupValidationConfigurations", js.undefined)
     
-    inline def setServerGroupValidationConfigurationsVarargs(value: ServerGroupValidationConfiguration*): Self = StObject.set(x, "serverGroupValidationConfigurations", js.Array(value :_*))
+    inline def setServerGroupValidationConfigurationsVarargs(value: ServerGroupValidationConfiguration*): Self = StObject.set(x, "serverGroupValidationConfigurations", js.Array(value*))
   }
 }

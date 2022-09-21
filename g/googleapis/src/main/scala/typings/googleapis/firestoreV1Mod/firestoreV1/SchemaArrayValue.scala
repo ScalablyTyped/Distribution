@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An array value.
-  */
 trait SchemaArrayValue extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaArrayValue {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

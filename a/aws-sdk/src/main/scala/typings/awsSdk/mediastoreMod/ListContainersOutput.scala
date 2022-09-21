@@ -27,7 +27,7 @@ object ListContainersOutput {
     
     inline def setContainers(value: ContainerList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     
-    inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "Containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "Containers", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

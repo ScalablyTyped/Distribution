@@ -14,7 +14,7 @@ object chromecastOutputMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/chromecast-output", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ChromecastOutput {
     def this(eventEmitter: IEventEmitter) = this()
@@ -25,19 +25,19 @@ object chromecastOutputMod {
     extends StObject
        with IVideoOutput {
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _initRemote: js.Any = js.native
+    /* private */ var _initRemote: Any = js.native
     
-    /* private */ var _isAutoplay: js.Any = js.native
+    /* private */ var _isAutoplay: Any = js.native
     
-    /* private */ var _player: js.Any = js.native
+    /* private */ var _player: Any = js.native
     
-    /* private */ var _playerController: js.Any = js.native
+    /* private */ var _playerController: Any = js.native
     
-    /* private */ var _src: js.Any = js.native
+    /* private */ var _src: Any = js.native
     
-    /* private */ var _stateEngine: js.Any = js.native
+    /* private */ var _stateEngine: Any = js.native
     
     @JSName("autoplay")
     def autoplay_MChromecastOutput: Boolean = js.native

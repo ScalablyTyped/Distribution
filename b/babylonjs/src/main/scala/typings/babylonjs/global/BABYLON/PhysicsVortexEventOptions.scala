@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsVortexEventOptions")
 @js.native
-class PhysicsVortexEventOptions ()
+open class PhysicsVortexEventOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsVortexEventOptions {
   
   /**
-    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the treshold.
+    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the threshold.
     */
   /* CompleteClass */
   var centrifugalForceMultiplier: Double = js.native
   
   /**
-    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the treshold.
+    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the threshold.
     */
   /* CompleteClass */
   var centripetalForceMultiplier: Double = js.native
@@ -41,7 +41,7 @@ class PhysicsVortexEventOptions ()
   var radius: Double = js.native
   
   /**
-    * The strenth of the vortex.
+    * The strength of the vortex.
     */
   /* CompleteClass */
   var strength: Double = js.native

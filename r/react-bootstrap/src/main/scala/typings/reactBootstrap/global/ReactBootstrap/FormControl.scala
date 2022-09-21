@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.FormControl")
 @js.native
-class FormControl ()
+open class FormControl ()
   extends typings.reactBootstrap.mod.FormControl
 object FormControl {
   
@@ -18,7 +18,7 @@ object FormControl {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.FormControl.Feedback")
   @js.native
-  class Feedback ()
+  open class Feedback ()
     extends typings.reactBootstrap.formControlFeedbackMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.FormControl.Feedback")
@@ -29,7 +29,7 @@ object FormControl {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.FormControl.Static")
   @js.native
-  class Static ()
+  open class Static ()
     extends typings.reactBootstrap.formControlStaticMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.FormControl.Static")

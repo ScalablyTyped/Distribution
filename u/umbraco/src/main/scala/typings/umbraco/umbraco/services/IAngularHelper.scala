@@ -25,7 +25,7 @@ trait IAngularHelper extends StObject {
     * @description
     * Returns the current form object applied to the scope or null if one is not found
     */
-  def getCurrentForm(scope: IScope): js.Any
+  def getCurrentForm(scope: IScope): Any
   
   /**
     * @ngdoc function
@@ -82,7 +82,7 @@ trait IAngularHelper extends StObject {
 object IAngularHelper {
   
   inline def apply(
-    getCurrentForm: IScope => js.Any,
+    getCurrentForm: IScope => Any,
     getNullForm: String => IFormController,
     getRequiredCurrentForm: IScope => js.Object,
     rejectedPromise: js.Object => Unit,
@@ -94,7 +94,7 @@ object IAngularHelper {
   
   extension [Self <: IAngularHelper](x: Self) {
     
-    inline def setGetCurrentForm(value: IScope => js.Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
+    inline def setGetCurrentForm(value: IScope => Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
     
     inline def setGetNullForm(value: String => IFormController): Self = StObject.set(x, "getNullForm", js.Any.fromFunction1(value))
     

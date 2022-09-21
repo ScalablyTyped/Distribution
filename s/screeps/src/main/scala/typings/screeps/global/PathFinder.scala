@@ -20,7 +20,7 @@ object PathFinder extends Shortcut {
   /**
     * Creates a new CostMatrix containing 0's for all positions.
     */
-  class CostMatrix ()
+  open class CostMatrix ()
     extends StObject
        with typings.screeps.CostMatrix
   

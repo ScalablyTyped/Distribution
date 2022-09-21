@@ -25,12 +25,12 @@ object GoogleCloudVisionV1p2beta1BoundingPoly {
     
     inline def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
-    inline def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p2beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
+    inline def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p2beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value*))
     
     inline def setVertices(value: js.Array[GoogleCloudVisionV1p2beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: GoogleCloudVisionV1p2beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: GoogleCloudVisionV1p2beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

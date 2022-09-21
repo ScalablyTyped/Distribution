@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRestApiRequest extends StObject {
   
   /**
-    * The source of the API key for metering requests according to a usage plan. Valid values are: HEADER to read the API key from the X-API-Key header of a request. AUTHORIZER to read the API key from the UsageIdentifierKey from a custom authorizer.
+    * The source of the API key for metering requests according to a usage plan. Valid values are: &gt;HEADER to read the API key from the X-API-Key header of a request. AUTHORIZER to read the API key from the UsageIdentifierKey from a custom authorizer.
     */
   var apiKeySource: js.UndefOr[ApiKeySourceType] = js.undefined
   
@@ -27,12 +27,12 @@ trait CreateRestApiRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies whether clients can invoke your API by using the default execute-api endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke your API, disable the default endpoint.
+    * Specifies whether clients can invoke your API by using the default execute-api endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke your API, disable the default endpoint
     */
   var disableExecuteApiEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The endpoint configuration of this RestApi showing the endpoint types of the API.
+    * The endpoint configuration of this RestApi showing the endpoint types of the API. 
     */
   var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.undefined
   
@@ -42,7 +42,7 @@ trait CreateRestApiRequest extends StObject {
   var minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined
   
   /**
-    * [Required] The name of the RestApi.
+    * The name of the RestApi.
     */
   var name: String
   
@@ -78,7 +78,7 @@ object CreateRestApiRequest {
     
     inline def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
     
-    inline def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
+    inline def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value*))
     
     inline def setCloneFrom(value: String): Self = StObject.set(x, "cloneFrom", value.asInstanceOf[js.Any])
     

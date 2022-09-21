@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait RowColumnPivotHierarchyCollectionLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait RowColumnPivotHierarchyCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: ID of the RowColumnPivotHierarchy.
     *
-    * For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined

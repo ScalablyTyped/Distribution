@@ -26,13 +26,13 @@ object Actions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Type*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Type*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setConditions(value: js.Array[PageStateMatcherProperties]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: PageStateMatcherProperties*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: PageStateMatcherProperties*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

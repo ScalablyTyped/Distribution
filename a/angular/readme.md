@@ -10,10 +10,10 @@ HTML enhanced for web apps
 | ------------------ | :-------------: |
 | Full name          | angular |
 | Keywords           | angular, framework, browser, client-side |
-| # releases         | 8 |
-| # dependents       | 2628 |
-| # downloads        | 26421600 |
-| # stars            | 237 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2278429.6666666665 |
+| # stars            | 59417.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

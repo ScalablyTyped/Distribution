@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "List")
 @js.native
-class List protected ()
+open class List protected ()
   extends typings.actionsOnGoogle.conversationMod.List
      with _IncomingMessage {
   /**

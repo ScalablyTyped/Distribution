@@ -16,8 +16,8 @@ trait Arm64FpOperand
 }
 object Arm64FpOperand {
   
-  inline def apply(value: Double): Arm64FpOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Double): Arm64FpOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fp")
     __obj.asInstanceOf[Arm64FpOperand]
   }

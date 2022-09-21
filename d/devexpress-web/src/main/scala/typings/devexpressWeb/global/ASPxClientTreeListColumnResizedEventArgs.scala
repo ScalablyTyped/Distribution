@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListColumnResizedEventArgs")
 @js.native
-class ASPxClientTreeListColumnResizedEventArgs protected ()
+open class ASPxClientTreeListColumnResizedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListColumnResizedEventArgs {
   /**

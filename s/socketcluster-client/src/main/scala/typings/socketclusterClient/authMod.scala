@@ -9,7 +9,7 @@ object authMod {
   
   @JSImport("socketcluster-client/lib/auth", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with AuthEngine
   
@@ -21,9 +21,9 @@ object authMod {
     def removeToken(name: String): js.Promise[AuthToken | SignedAuthToken | Null] = js.native
     
     def saveToken(name: String, token: AuthToken): js.Promise[AuthToken | SignedAuthToken] = js.native
-    def saveToken(name: String, token: AuthToken, options: StringDictionary[js.Any]): js.Promise[AuthToken | SignedAuthToken] = js.native
+    def saveToken(name: String, token: AuthToken, options: StringDictionary[Any]): js.Promise[AuthToken | SignedAuthToken] = js.native
     def saveToken(name: String, token: SignedAuthToken): js.Promise[AuthToken | SignedAuthToken] = js.native
-    def saveToken(name: String, token: SignedAuthToken, options: StringDictionary[js.Any]): js.Promise[AuthToken | SignedAuthToken] = js.native
+    def saveToken(name: String, token: SignedAuthToken, options: StringDictionary[Any]): js.Promise[AuthToken | SignedAuthToken] = js.native
   }
   
   @js.native
@@ -31,7 +31,7 @@ object authMod {
     extends StObject
        with AGAuthEngine
   
-  type AuthToken = StringDictionary[js.Any]
+  type AuthToken = StringDictionary[Any]
   
   type SignedAuthToken = String
 }

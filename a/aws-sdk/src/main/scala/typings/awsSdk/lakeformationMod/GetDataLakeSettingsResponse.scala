@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDataLakeSettingsResponse extends StObject {
   
   /**
-    * A structure representing a list of AWS Lake Formation principals designated as data lake administrators.
+    * A structure representing a list of Lake Formation principals designated as data lake administrators.
     */
   var DataLakeSettings: js.UndefOr[typings.awsSdk.lakeformationMod.DataLakeSettings] = js.undefined
 }

@@ -16,7 +16,7 @@ trait Layout extends StObject {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      js.Any
+      Any
     ]
   ): Unit
   
@@ -41,7 +41,7 @@ object Layout {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      js.Any
+      Any
     ] => Unit,
     height: Double,
     left: Double,
@@ -65,7 +65,7 @@ object Layout {
           /* bottom */ Double, 
           /* width */ Double, 
           /* height */ Double, 
-          js.Any
+          Any
         ] => Unit
     ): Self = StObject.set(x, "fromJs", js.Any.fromFunction1(value))
     

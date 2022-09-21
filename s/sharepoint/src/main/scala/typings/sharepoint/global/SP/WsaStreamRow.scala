@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.WsaStreamRow")
 @js.native
-class WsaStreamRow ()
+open class WsaStreamRow ()
   extends StObject
      with typings.sharepoint.SP.WsaStreamRow

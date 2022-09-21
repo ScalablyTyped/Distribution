@@ -10,7 +10,7 @@ object eventTableMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/EventTable", "EventTable")
   @js.native
-  class EventTable () extends StObject
+  open class EventTable () extends StObject
   /* static members */
   object EventTable {
     

@@ -1,18 +1,22 @@
 package typings.restartHooks
 
+import typings.restartHooks.restartHooksStrings.DOMContentLoaded
 import typings.restartHooks.restartHooksStrings.abort
 import typings.restartHooks.restartHooksStrings.animationcancel
 import typings.restartHooks.restartHooksStrings.animationend
 import typings.restartHooks.restartHooksStrings.animationiteration
 import typings.restartHooks.restartHooksStrings.animationstart
 import typings.restartHooks.restartHooksStrings.auxclick
+import typings.restartHooks.restartHooksStrings.beforeinput
 import typings.restartHooks.restartHooksStrings.blur
-import typings.restartHooks.restartHooksStrings.cancel
 import typings.restartHooks.restartHooksStrings.canplay
 import typings.restartHooks.restartHooksStrings.canplaythrough
 import typings.restartHooks.restartHooksStrings.change
 import typings.restartHooks.restartHooksStrings.click
 import typings.restartHooks.restartHooksStrings.close
+import typings.restartHooks.restartHooksStrings.compositionend
+import typings.restartHooks.restartHooksStrings.compositionstart
+import typings.restartHooks.restartHooksStrings.compositionupdate
 import typings.restartHooks.restartHooksStrings.contextmenu
 import typings.restartHooks.restartHooksStrings.copy
 import typings.restartHooks.restartHooksStrings.cuechange
@@ -21,7 +25,6 @@ import typings.restartHooks.restartHooksStrings.dblclick
 import typings.restartHooks.restartHooksStrings.drag
 import typings.restartHooks.restartHooksStrings.dragend
 import typings.restartHooks.restartHooksStrings.dragenter
-import typings.restartHooks.restartHooksStrings.dragexit
 import typings.restartHooks.restartHooksStrings.dragleave
 import typings.restartHooks.restartHooksStrings.dragover
 import typings.restartHooks.restartHooksStrings.dragstart
@@ -33,6 +36,7 @@ import typings.restartHooks.restartHooksStrings.error
 import typings.restartHooks.restartHooksStrings.focus
 import typings.restartHooks.restartHooksStrings.focusin
 import typings.restartHooks.restartHooksStrings.focusout
+import typings.restartHooks.restartHooksStrings.formdata
 import typings.restartHooks.restartHooksStrings.fullscreenchange
 import typings.restartHooks.restartHooksStrings.fullscreenerror
 import typings.restartHooks.restartHooksStrings.gotpointercapture
@@ -79,6 +83,7 @@ import typings.restartHooks.restartHooksStrings.seeking
 import typings.restartHooks.restartHooksStrings.select
 import typings.restartHooks.restartHooksStrings.selectionchange
 import typings.restartHooks.restartHooksStrings.selectstart
+import typings.restartHooks.restartHooksStrings.slotchange
 import typings.restartHooks.restartHooksStrings.stalled
 import typings.restartHooks.restartHooksStrings.submit
 import typings.restartHooks.restartHooksStrings.suspend
@@ -95,6 +100,10 @@ import typings.restartHooks.restartHooksStrings.transitionstart
 import typings.restartHooks.restartHooksStrings.visibilitychange
 import typings.restartHooks.restartHooksStrings.volumechange
 import typings.restartHooks.restartHooksStrings.waiting
+import typings.restartHooks.restartHooksStrings.webkitanimationend
+import typings.restartHooks.restartHooksStrings.webkitanimationiteration
+import typings.restartHooks.restartHooksStrings.webkitanimationstart
+import typings.restartHooks.restartHooksStrings.webkittransitionend
 import typings.restartHooks.restartHooksStrings.wheel
 import typings.std.AddEventListenerOptions
 import typings.std.Document
@@ -107,6 +116,14 @@ object useGlobalListenerMod {
   @JSImport("@restart/hooks/cjs/useGlobalListener", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default_DOMContentLoaded(event: DOMContentLoaded, handler: DocumentEventHandler[DOMContentLoaded]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_DOMContentLoaded(event: DOMContentLoaded, handler: DocumentEventHandler[DOMContentLoaded], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_DOMContentLoaded(
+    event: DOMContentLoaded,
+    handler: DocumentEventHandler[DOMContentLoaded],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_abort(event: abort, handler: DocumentEventHandler[abort]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_abort(event: abort, handler: DocumentEventHandler[abort], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -144,13 +161,13 @@ object useGlobalListenerMod {
   inline def default_auxclick(event: auxclick, handler: DocumentEventHandler[auxclick], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_auxclick(event: auxclick, handler: DocumentEventHandler[auxclick], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def default_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_canplay(event: canplay, handler: DocumentEventHandler[canplay]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_canplay(event: canplay, handler: DocumentEventHandler[canplay], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -175,6 +192,30 @@ object useGlobalListenerMod {
   inline def default_close(event: close, handler: DocumentEventHandler[close]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_close(event: close, handler: DocumentEventHandler[close], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_close(event: close, handler: DocumentEventHandler[close], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_compositionend(event: compositionend, handler: DocumentEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionend(event: compositionend, handler: DocumentEventHandler[compositionend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionend(
+    event: compositionend,
+    handler: DocumentEventHandler[compositionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_compositionstart(event: compositionstart, handler: DocumentEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionstart(event: compositionstart, handler: DocumentEventHandler[compositionstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionstart(
+    event: compositionstart,
+    handler: DocumentEventHandler[compositionstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_compositionupdate(event: compositionupdate, handler: DocumentEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionupdate(event: compositionupdate, handler: DocumentEventHandler[compositionupdate], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_compositionupdate(
+    event: compositionupdate,
+    handler: DocumentEventHandler[compositionupdate],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_contextmenu(event: contextmenu, handler: DocumentEventHandler[contextmenu]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_contextmenu(event: contextmenu, handler: DocumentEventHandler[contextmenu], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -207,10 +248,6 @@ object useGlobalListenerMod {
   inline def default_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def default_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_dragleave(event: dragleave, handler: DocumentEventHandler[dragleave]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_dragleave(event: dragleave, handler: DocumentEventHandler[dragleave], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -259,6 +296,10 @@ object useGlobalListenerMod {
   inline def default_focusout(event: focusout, handler: DocumentEventHandler[focusout]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_focusout(event: focusout, handler: DocumentEventHandler[focusout], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_focusout(event: focusout, handler: DocumentEventHandler[focusout], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_formdata(event: formdata, handler: DocumentEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_formdata(event: formdata, handler: DocumentEventHandler[formdata], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_formdata(event: formdata, handler: DocumentEventHandler[formdata], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_fullscreenchange(event: fullscreenchange, handler: DocumentEventHandler[fullscreenchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_fullscreenchange(event: fullscreenchange, handler: DocumentEventHandler[fullscreenchange], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -492,6 +533,10 @@ object useGlobalListenerMod {
   inline def default_selectstart(event: selectstart, handler: DocumentEventHandler[selectstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_selectstart(event: selectstart, handler: DocumentEventHandler[selectstart], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def default_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def default_stalled(event: stalled, handler: DocumentEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_stalled(event: stalled, handler: DocumentEventHandler[stalled], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_stalled(event: stalled, handler: DocumentEventHandler[stalled], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -576,13 +621,49 @@ object useGlobalListenerMod {
   inline def default_waiting(event: waiting, handler: DocumentEventHandler[waiting], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_waiting(event: waiting, handler: DocumentEventHandler[waiting], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def default_webkitanimationend(event: webkitanimationend, handler: DocumentEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationend(event: webkitanimationend, handler: DocumentEventHandler[webkitanimationend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationend(
+    event: webkitanimationend,
+    handler: DocumentEventHandler[webkitanimationend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_webkitanimationiteration(event: webkitanimationiteration, handler: DocumentEventHandler[webkitanimationiteration]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationiteration(
+    event: webkitanimationiteration,
+    handler: DocumentEventHandler[webkitanimationiteration],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationiteration(
+    event: webkitanimationiteration,
+    handler: DocumentEventHandler[webkitanimationiteration],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_webkitanimationstart(event: webkitanimationstart, handler: DocumentEventHandler[webkitanimationstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationstart(event: webkitanimationstart, handler: DocumentEventHandler[webkitanimationstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkitanimationstart(
+    event: webkitanimationstart,
+    handler: DocumentEventHandler[webkitanimationstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_webkittransitionend(event: webkittransitionend, handler: DocumentEventHandler[webkittransitionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkittransitionend(event: webkittransitionend, handler: DocumentEventHandler[webkittransitionend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_webkittransitionend(
+    event: webkittransitionend,
+    handler: DocumentEventHandler[webkittransitionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def default_wheel(event: wheel, handler: DocumentEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_wheel(event: wheel, handler: DocumentEventHandler[wheel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_wheel(event: wheel, handler: DocumentEventHandler[wheel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type DocumentEventHandler[K /* <: fullscreenchange | fullscreenerror | pointerlockchange | pointerlockerror | readystatechange | visibilitychange */] = js.ThisFunction1[
+  type DocumentEventHandler[K /* <: DOMContentLoaded | fullscreenchange | fullscreenerror | pointerlockchange | pointerlockerror | readystatechange | visibilitychange */] = js.ThisFunction1[
     /* this */ Document, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentEventMap[K] */ /* ev */ js.Any, 
-    js.Any
+    Any
   ]
 }

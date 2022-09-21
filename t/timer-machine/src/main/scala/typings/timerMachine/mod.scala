@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("timer-machine", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Timer {
     def this(started: Boolean) = this()

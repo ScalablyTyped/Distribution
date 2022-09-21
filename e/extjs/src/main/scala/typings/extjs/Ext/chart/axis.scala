@@ -50,7 +50,7 @@ object axis {
     /** [Method] Renders the axis into the screen and updates its position
       * @param init Object
       */
-    var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Renders an horizontal and or vertical grid into the Surface  */
     var drawGrid: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -59,7 +59,7 @@ object axis {
     var drawLabel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var grid: js.UndefOr[js.Any] = js.undefined
+    var grid: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -104,7 +104,7 @@ object axis {
       
       inline def setDashSizeUndefined: Self = StObject.set(x, "dashSize", js.undefined)
       
-      inline def setDrawAxis(value: /* init */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "drawAxis", js.Any.fromFunction1(value))
+      inline def setDrawAxis(value: /* init */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "drawAxis", js.Any.fromFunction1(value))
       
       inline def setDrawAxisUndefined: Self = StObject.set(x, "drawAxis", js.undefined)
       
@@ -116,7 +116,7 @@ object axis {
       
       inline def setDrawLabelUndefined: Self = StObject.set(x, "drawLabel", js.undefined)
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
@@ -326,16 +326,16 @@ object axis {
        with INumeric {
     
     /** [Config Option] (String/Boolean) */
-    var dateFormat: js.UndefOr[js.Any] = js.undefined
+    var dateFormat: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Date) */
-    var fromDate: js.UndefOr[js.Any] = js.undefined
+    var fromDate: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Array) */
     var step: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Date) */
-    var toDate: js.UndefOr[js.Any] = js.undefined
+    var toDate: js.UndefOr[Any] = js.undefined
   }
   object ITime {
     
@@ -346,11 +346,11 @@ object axis {
     
     extension [Self <: ITime](x: Self) {
       
-      inline def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+      inline def setFromDate(value: Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
       
       inline def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
       
@@ -358,7 +358,7 @@ object axis {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
       inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
     }

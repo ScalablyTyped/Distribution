@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "BatchRecorder")
 @js.native
-class BatchRecorder protected ()
+open class BatchRecorder protected ()
   extends StObject
      with Recorder {
   /**

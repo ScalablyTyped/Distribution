@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("sc-channel", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends SCChannel[T] {
+  open class ^[T] protected () extends SCChannel[T] {
     def this(
       name: String,
       client: Client,
@@ -47,9 +47,9 @@ object mod {
     def isSubscribed(channelName: String): Boolean = js.native
     def isSubscribed(channelName: String, includePending: Boolean): Boolean = js.native
     
-    def publish(channelName: String, data: js.Any): js.Any = js.native
+    def publish(channelName: String, data: Any): Any = js.native
     
-    def subscribe(channelName: String): SCChannel[js.Any] = js.native
+    def subscribe(channelName: String): SCChannel[Any] = js.native
     
     def unsubscribe(channelName: String): Unit = js.native
   }
@@ -81,12 +81,12 @@ object mod {
     
     var options: js.Object = js.native
     
-    def publish(data: js.Any): js.Any = js.native
+    def publish(data: Any): Any = js.native
     
     var state: ChannelState = js.native
     
     def subscribe(): Unit = js.native
-    def subscribe(options: js.Any): Unit = js.native
+    def subscribe(options: Any): Unit = js.native
     
     def unsubscribe(): Unit = js.native
   }

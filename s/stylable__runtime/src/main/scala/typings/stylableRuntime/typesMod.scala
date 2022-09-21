@@ -11,7 +11,7 @@ object typesMod {
   
   trait AttributeMap
     extends StObject
-       with /* attributeName */ StringDictionary[js.UndefOr[StateValue]] {
+       with /* attributeName */ StringDictionary[StateValue] {
     
     var className: js.UndefOr[String] = js.undefined
   }
@@ -30,9 +30,81 @@ object typesMod {
     }
   }
   
+  trait ClassesMap
+    extends StObject
+       with /* className */ StringDictionary[String] {
+    
+    var root: String
+  }
+  object ClassesMap {
+    
+    inline def apply(root: String): ClassesMap = {
+      val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ClassesMap]
+    }
+    
+    extension [Self <: ClassesMap](x: Self) {
+      
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Host extends StObject {
+    
+    var stc: js.UndefOr[
+        js.Function2[/* namespace */ String, /* stateMapping */ js.UndefOr[StateMap | Null], String]
+      ] = js.undefined
+    
+    var sti: js.UndefOr[
+        js.Function4[
+          /* namespace */ String, 
+          /* css */ String, 
+          /* depth */ Double, 
+          /* runtimeId */ String, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var sts: js.UndefOr[
+        js.Function4[
+          /* namespace */ String, 
+          /* context */ js.UndefOr[String], 
+          /* stateOrClass */ js.UndefOr[String | StateMap], 
+          /* repeated */ js.UndefOr[String], 
+          String
+        ]
+      ] = js.undefined
+  }
+  object Host {
+    
+    inline def apply(): Host = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Host]
+    }
+    
+    extension [Self <: Host](x: Self) {
+      
+      inline def setStc(value: (/* namespace */ String, /* stateMapping */ js.UndefOr[StateMap | Null]) => String): Self = StObject.set(x, "stc", js.Any.fromFunction2(value))
+      
+      inline def setStcUndefined: Self = StObject.set(x, "stc", js.undefined)
+      
+      inline def setSti(
+        value: (/* namespace */ String, /* css */ String, /* depth */ Double, /* runtimeId */ String) => Unit
+      ): Self = StObject.set(x, "sti", js.Any.fromFunction4(value))
+      
+      inline def setStiUndefined: Self = StObject.set(x, "sti", js.undefined)
+      
+      inline def setSts(
+        value: (/* namespace */ String, /* context */ js.UndefOr[String], /* stateOrClass */ js.UndefOr[String | StateMap], /* repeated */ js.UndefOr[String]) => String
+      ): Self = StObject.set(x, "sts", js.Any.fromFunction4(value))
+      
+      inline def setStsUndefined: Self = StObject.set(x, "sts", js.undefined)
+    }
+  }
+  
   trait InheritedAttributes
     extends StObject
-       with /* props */ StringDictionary[js.Any] {
+       with /* props */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
   }
@@ -94,6 +166,8 @@ object typesMod {
     }
   }
   
+  type RuntimeStVar = String | StringDictionary[Any] | js.Array[Any]
+  
   trait RuntimeStylesheet
     extends StObject
        with StylableExports
@@ -106,12 +180,18 @@ object typesMod {
     def st(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String
     def st(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String
     def st(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
+    def st(context: Unit, stateOrClass: String, classes: js.UndefOr[String]*): String
+    def st(context: Unit, stateOrClass: Unit, classes: js.UndefOr[String]*): String
+    def st(context: Unit, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
     @JSName("st")
     var st_Original: STFunction
     
     def style(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String
     def style(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String
     def style(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
+    def style(context: Unit, stateOrClass: String, classes: js.UndefOr[String]*): String
+    def style(context: Unit, stateOrClass: Unit, classes: js.UndefOr[String]*): String
+    def style(context: Unit, stateOrClass: StateMap, classes: js.UndefOr[String]*): String
     @JSName("style")
     var style_Original: STFunction
   }
@@ -120,16 +200,17 @@ object typesMod {
     inline def apply(
       $depth: Double,
       $id: String | Double,
-      classes: Record[String, String],
+      classes: ClassesMap,
       cssStates: StateMap => String,
       keyframes: Record[String, String],
+      layers: Record[String, String],
       namespace: String,
       st: STFunction,
-      stVars: Record[String, String],
+      stVars: Record[String, RuntimeStVar],
       style: STFunction,
       vars: Record[String, String]
     ): RuntimeStylesheet = {
-      val __obj = js.Dynamic.literal($depth = $depth.asInstanceOf[js.Any], $id = $id.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], cssStates = js.Any.fromFunction1(cssStates), keyframes = keyframes.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], stVars = stVars.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal($depth = $depth.asInstanceOf[js.Any], $id = $id.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], cssStates = js.Any.fromFunction1(cssStates), keyframes = keyframes.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], stVars = stVars.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeStylesheet]
     }
     
@@ -151,41 +232,49 @@ object typesMod {
     def apply(context: String, stateOrClass: String, classes: js.UndefOr[String]*): String = js.native
     def apply(context: String, stateOrClass: Unit, classes: js.UndefOr[String]*): String = js.native
     def apply(context: String, stateOrClass: StateMap, classes: js.UndefOr[String]*): String = js.native
+    def apply(context: Unit, stateOrClass: String, classes: js.UndefOr[String]*): String = js.native
+    def apply(context: Unit, stateOrClass: Unit, classes: js.UndefOr[String]*): String = js.native
+    def apply(context: Unit, stateOrClass: StateMap, classes: js.UndefOr[String]*): String = js.native
   }
   
   type StateMap = StringDictionary[StateValue]
   
-  type StateValue = Boolean | Double | String
+  type StateValue = js.UndefOr[Boolean | Double | String]
   
   trait StylableExports extends StObject {
     
-    var classes: Record[String, String]
+    var classes: ClassesMap
     
     var keyframes: Record[String, String]
     
-    var stVars: Record[String, String]
+    var layers: Record[String, String]
+    
+    var stVars: Record[String, RuntimeStVar]
     
     var vars: Record[String, String]
   }
   object StylableExports {
     
     inline def apply(
-      classes: Record[String, String],
+      classes: ClassesMap,
       keyframes: Record[String, String],
-      stVars: Record[String, String],
+      layers: Record[String, String],
+      stVars: Record[String, RuntimeStVar],
       vars: Record[String, String]
     ): StylableExports = {
-      val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], stVars = stVars.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], stVars = stVars.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylableExports]
     }
     
     extension [Self <: StylableExports](x: Self) {
       
-      inline def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: ClassesMap): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      inline def setStVars(value: Record[String, String]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
+      inline def setLayers(value: Record[String, String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      
+      inline def setStVars(value: Record[String, RuntimeStVar]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
       
       inline def setVars(value: Record[String, String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }

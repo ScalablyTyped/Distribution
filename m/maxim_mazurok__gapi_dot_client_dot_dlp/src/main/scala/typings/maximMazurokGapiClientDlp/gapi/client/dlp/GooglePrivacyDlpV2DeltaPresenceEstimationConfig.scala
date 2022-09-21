@@ -28,13 +28,13 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationConfig {
     
     inline def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
     
-    inline def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2StatisticalTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
+    inline def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2StatisticalTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value*))
     
     inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiId*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

@@ -1,112 +1,142 @@
 package typings.vegaLite.srcMarkMod
 
+import typings.std.Set
+import typings.vegaLite.compositemarkMod.CompositeMark
+import typings.vegaLite.compositemarkMod.CompositeMarkDef
+import typings.vegaLite.exprMod.ExprRef
+import typings.vegaLite.srcMarkMod.^
+import typings.vegaLite.vegaLiteStrings.arc
+import typings.vegaLite.vegaLiteStrings.area
+import typings.vegaLite.vegaLiteStrings.bar
+import typings.vegaLite.vegaLiteStrings.circle
+import typings.vegaLite.vegaLiteStrings.color
+import typings.vegaLite.vegaLiteStrings.fill
+import typings.vegaLite.vegaLiteStrings.fillOpacity
+import typings.vegaLite.vegaLiteStrings.filled
+import typings.vegaLite.vegaLiteStrings.geoshape
+import typings.vegaLite.vegaLiteStrings.hide
+import typings.vegaLite.vegaLiteStrings.image
+import typings.vegaLite.vegaLiteStrings.invalid
+import typings.vegaLite.vegaLiteStrings.line
+import typings.vegaLite.vegaLiteStrings.mark
+import typings.vegaLite.vegaLiteStrings.order
+import typings.vegaLite.vegaLiteStrings.point
+import typings.vegaLite.vegaLiteStrings.radius2
+import typings.vegaLite.vegaLiteStrings.rect
+import typings.vegaLite.vegaLiteStrings.rule
+import typings.vegaLite.vegaLiteStrings.square
+import typings.vegaLite.vegaLiteStrings.stroke
+import typings.vegaLite.vegaLiteStrings.strokeDash
+import typings.vegaLite.vegaLiteStrings.strokeDashOffset
+import typings.vegaLite.vegaLiteStrings.strokeJoin
+import typings.vegaLite.vegaLiteStrings.strokeMiterLimit
+import typings.vegaLite.vegaLiteStrings.strokeOpacity
+import typings.vegaLite.vegaLiteStrings.strokeWidth
+import typings.vegaLite.vegaLiteStrings.text
+import typings.vegaLite.vegaLiteStrings.theta2
+import typings.vegaLite.vegaLiteStrings.tick
+import typings.vegaLite.vegaLiteStrings.timeUnitBandPosition
+import typings.vegaLite.vegaLiteStrings.timeUnitBandSize
+import typings.vegaLite.vegaLiteStrings.trail
+import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ARC: typings.vegaLite.vegaLiteStrings.arc = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("ARC").asInstanceOf[typings.vegaLite.vegaLiteStrings.arc]
+inline def ARC: arc = ^.asInstanceOf[js.Dynamic].selectDynamic("ARC").asInstanceOf[arc]
 
-inline def AREA: typings.vegaLite.vegaLiteStrings.area = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("AREA").asInstanceOf[typings.vegaLite.vegaLiteStrings.area]
+inline def AREA: area = ^.asInstanceOf[js.Dynamic].selectDynamic("AREA").asInstanceOf[area]
 
-inline def BAR: typings.vegaLite.vegaLiteStrings.bar = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("BAR").asInstanceOf[typings.vegaLite.vegaLiteStrings.bar]
+inline def BAR: bar = ^.asInstanceOf[js.Dynamic].selectDynamic("BAR").asInstanceOf[bar]
 
-inline def CIRCLE: typings.vegaLite.vegaLiteStrings.circle = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("CIRCLE").asInstanceOf[typings.vegaLite.vegaLiteStrings.circle]
+inline def CIRCLE: circle = ^.asInstanceOf[js.Dynamic].selectDynamic("CIRCLE").asInstanceOf[circle]
 
-inline def FILL_CONFIG: js.Tuple2[
-typings.vegaLite.vegaLiteStrings.fill, 
-typings.vegaLite.vegaLiteStrings.fillOpacity] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("FILL_CONFIG").asInstanceOf[js.Tuple2[
-typings.vegaLite.vegaLiteStrings.fill, 
-typings.vegaLite.vegaLiteStrings.fillOpacity]]
+inline def FILL_CONFIG: js.Tuple2[fill, fillOpacity] = ^.asInstanceOf[js.Dynamic].selectDynamic("FILL_CONFIG").asInstanceOf[js.Tuple2[fill, fillOpacity]]
 
 inline def FILL_STROKE_CONFIG: js.Array[
-typings.vegaLite.vegaLiteStrings.fill | typings.vegaLite.vegaLiteStrings.stroke | typings.vegaLite.vegaLiteStrings.fillOpacity | typings.vegaLite.vegaLiteStrings.strokeOpacity | typings.vegaLite.vegaLiteStrings.strokeWidth | typings.vegaLite.vegaLiteStrings.strokeDash | typings.vegaLite.vegaLiteStrings.strokeDashOffset | typings.vegaLite.vegaLiteStrings.strokeMiterLimit | typings.vegaLite.vegaLiteStrings.strokeJoin] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("FILL_STROKE_CONFIG").asInstanceOf[js.Array[
-typings.vegaLite.vegaLiteStrings.fill | typings.vegaLite.vegaLiteStrings.stroke | typings.vegaLite.vegaLiteStrings.fillOpacity | typings.vegaLite.vegaLiteStrings.strokeOpacity | typings.vegaLite.vegaLiteStrings.strokeWidth | typings.vegaLite.vegaLiteStrings.strokeDash | typings.vegaLite.vegaLiteStrings.strokeDashOffset | typings.vegaLite.vegaLiteStrings.strokeMiterLimit | typings.vegaLite.vegaLiteStrings.strokeJoin]]
+fill | fillOpacity | stroke | strokeOpacity | strokeWidth | strokeDash | strokeDashOffset | strokeJoin | strokeMiterLimit] = ^.asInstanceOf[js.Dynamic].selectDynamic("FILL_STROKE_CONFIG").asInstanceOf[js.Array[
+fill | fillOpacity | stroke | strokeOpacity | strokeWidth | strokeDash | strokeDashOffset | strokeJoin | strokeMiterLimit]]
 
-inline def GEOSHAPE: typings.vegaLite.vegaLiteStrings.geoshape = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("GEOSHAPE").asInstanceOf[typings.vegaLite.vegaLiteStrings.geoshape]
+inline def GEOSHAPE: geoshape = ^.asInstanceOf[js.Dynamic].selectDynamic("GEOSHAPE").asInstanceOf[geoshape]
 
-inline def IMAGE: typings.vegaLite.vegaLiteStrings.image = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("IMAGE").asInstanceOf[typings.vegaLite.vegaLiteStrings.image]
+inline def IMAGE: image = ^.asInstanceOf[js.Dynamic].selectDynamic("IMAGE").asInstanceOf[image]
 
-inline def LINE: typings.vegaLite.vegaLiteStrings.line = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("LINE").asInstanceOf[typings.vegaLite.vegaLiteStrings.line]
+inline def LINE: line = ^.asInstanceOf[js.Dynamic].selectDynamic("LINE").asInstanceOf[line]
 
 inline def MARK_CONFIGS: js.Array[
-typings.vegaLite.vegaLiteStrings.square | typings.vegaLite.vegaLiteStrings.area | typings.vegaLite.vegaLiteStrings.mark | typings.vegaLite.vegaLiteStrings.circle | typings.vegaLite.vegaLiteStrings.image | typings.vegaLite.vegaLiteStrings.line | typings.vegaLite.vegaLiteStrings.rect | typings.vegaLite.vegaLiteStrings.text | typings.vegaLite.vegaLiteStrings.point | typings.vegaLite.vegaLiteStrings.arc | typings.vegaLite.vegaLiteStrings.rule | typings.vegaLite.vegaLiteStrings.trail | typings.vegaLite.vegaLiteStrings.geoshape | typings.vegaLite.vegaLiteStrings.bar | typings.vegaLite.vegaLiteStrings.tick] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("MARK_CONFIGS").asInstanceOf[js.Array[
-typings.vegaLite.vegaLiteStrings.square | typings.vegaLite.vegaLiteStrings.area | typings.vegaLite.vegaLiteStrings.mark | typings.vegaLite.vegaLiteStrings.circle | typings.vegaLite.vegaLiteStrings.image | typings.vegaLite.vegaLiteStrings.line | typings.vegaLite.vegaLiteStrings.rect | typings.vegaLite.vegaLiteStrings.text | typings.vegaLite.vegaLiteStrings.point | typings.vegaLite.vegaLiteStrings.arc | typings.vegaLite.vegaLiteStrings.rule | typings.vegaLite.vegaLiteStrings.trail | typings.vegaLite.vegaLiteStrings.geoshape | typings.vegaLite.vegaLiteStrings.bar | typings.vegaLite.vegaLiteStrings.tick]]
+/* keyof vega-lite.vega-lite/build/src/mark.MarkConfigMixins<any> */ mark | arc | area | bar | circle | image | line | point | rect | rule | square | text | tick | trail | geoshape] = ^.asInstanceOf[js.Dynamic].selectDynamic("MARK_CONFIGS").asInstanceOf[js.Array[
+/* keyof vega-lite.vega-lite/build/src/mark.MarkConfigMixins<any> */ mark | arc | area | bar | circle | image | line | point | rect | rule | square | text | tick | trail | geoshape]]
 
-inline def POINT: typings.vegaLite.vegaLiteStrings.point = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("POINT").asInstanceOf[typings.vegaLite.vegaLiteStrings.point]
+inline def POINT: point = ^.asInstanceOf[js.Dynamic].selectDynamic("POINT").asInstanceOf[point]
 
-inline def PRIMITIVE_MARKS: js.Array[
-typings.vegaLite.vegaLiteStrings.square | typings.vegaLite.vegaLiteStrings.area | typings.vegaLite.vegaLiteStrings.circle | typings.vegaLite.vegaLiteStrings.image | typings.vegaLite.vegaLiteStrings.line | typings.vegaLite.vegaLiteStrings.rect | typings.vegaLite.vegaLiteStrings.text | typings.vegaLite.vegaLiteStrings.point | typings.vegaLite.vegaLiteStrings.arc | typings.vegaLite.vegaLiteStrings.rule | typings.vegaLite.vegaLiteStrings.trail | typings.vegaLite.vegaLiteStrings.geoshape | typings.vegaLite.vegaLiteStrings.bar | typings.vegaLite.vegaLiteStrings.tick] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("PRIMITIVE_MARKS").asInstanceOf[js.Array[
-typings.vegaLite.vegaLiteStrings.square | typings.vegaLite.vegaLiteStrings.area | typings.vegaLite.vegaLiteStrings.circle | typings.vegaLite.vegaLiteStrings.image | typings.vegaLite.vegaLiteStrings.line | typings.vegaLite.vegaLiteStrings.rect | typings.vegaLite.vegaLiteStrings.text | typings.vegaLite.vegaLiteStrings.point | typings.vegaLite.vegaLiteStrings.arc | typings.vegaLite.vegaLiteStrings.rule | typings.vegaLite.vegaLiteStrings.trail | typings.vegaLite.vegaLiteStrings.geoshape | typings.vegaLite.vegaLiteStrings.bar | typings.vegaLite.vegaLiteStrings.tick]]
+inline def PRIMITIVE_MARKS: Set[
+square | area | circle | image | line | rect | text | point | arc | rule | trail | geoshape | bar | tick] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIMITIVE_MARKS").asInstanceOf[Set[
+square | area | circle | image | line | rect | text | point | arc | rule | trail | geoshape | bar | tick]]
 
-inline def RECT: typings.vegaLite.vegaLiteStrings.rect = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("RECT").asInstanceOf[typings.vegaLite.vegaLiteStrings.rect]
+inline def RECT: rect = ^.asInstanceOf[js.Dynamic].selectDynamic("RECT").asInstanceOf[rect]
 
-inline def RULE: typings.vegaLite.vegaLiteStrings.rule = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("RULE").asInstanceOf[typings.vegaLite.vegaLiteStrings.rule]
+inline def RULE: rule = ^.asInstanceOf[js.Dynamic].selectDynamic("RULE").asInstanceOf[rule]
 
-inline def SQUARE: typings.vegaLite.vegaLiteStrings.square = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("SQUARE").asInstanceOf[typings.vegaLite.vegaLiteStrings.square]
+inline def SQUARE: square = ^.asInstanceOf[js.Dynamic].selectDynamic("SQUARE").asInstanceOf[square]
 
 inline def STROKE_CONFIG: js.Tuple7[
-typings.vegaLite.vegaLiteStrings.stroke, 
-typings.vegaLite.vegaLiteStrings.strokeWidth, 
-typings.vegaLite.vegaLiteStrings.strokeDash, 
-typings.vegaLite.vegaLiteStrings.strokeDashOffset, 
-typings.vegaLite.vegaLiteStrings.strokeOpacity, 
-typings.vegaLite.vegaLiteStrings.strokeJoin, 
-typings.vegaLite.vegaLiteStrings.strokeMiterLimit] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("STROKE_CONFIG").asInstanceOf[js.Tuple7[
-typings.vegaLite.vegaLiteStrings.stroke, 
-typings.vegaLite.vegaLiteStrings.strokeWidth, 
-typings.vegaLite.vegaLiteStrings.strokeDash, 
-typings.vegaLite.vegaLiteStrings.strokeDashOffset, 
-typings.vegaLite.vegaLiteStrings.strokeOpacity, 
-typings.vegaLite.vegaLiteStrings.strokeJoin, 
-typings.vegaLite.vegaLiteStrings.strokeMiterLimit]]
+stroke, 
+strokeWidth, 
+strokeDash, 
+strokeDashOffset, 
+strokeOpacity, 
+strokeJoin, 
+strokeMiterLimit] = ^.asInstanceOf[js.Dynamic].selectDynamic("STROKE_CONFIG").asInstanceOf[js.Tuple7[
+stroke, 
+strokeWidth, 
+strokeDash, 
+strokeDashOffset, 
+strokeOpacity, 
+strokeJoin, 
+strokeMiterLimit]]
 
-inline def TEXT: typings.vegaLite.vegaLiteStrings.text = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("TEXT").asInstanceOf[typings.vegaLite.vegaLiteStrings.text]
+inline def TEXT: text = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXT").asInstanceOf[text]
 
-inline def TICK: typings.vegaLite.vegaLiteStrings.tick = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("TICK").asInstanceOf[typings.vegaLite.vegaLiteStrings.tick]
+inline def TICK: tick = ^.asInstanceOf[js.Dynamic].selectDynamic("TICK").asInstanceOf[tick]
 
-inline def TRAIL: typings.vegaLite.vegaLiteStrings.trail = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("TRAIL").asInstanceOf[typings.vegaLite.vegaLiteStrings.trail]
+inline def TRAIL: trail = ^.asInstanceOf[js.Dynamic].selectDynamic("TRAIL").asInstanceOf[trail]
 
 inline def VL_ONLY_MARK_CONFIG_PROPERTIES: js.Array[
-typings.vegaLite.vegaLiteStrings.invalid | typings.vegaLite.vegaLiteStrings.color | typings.vegaLite.vegaLiteStrings.theta2 | typings.vegaLite.vegaLiteStrings.radius2 | typings.vegaLite.vegaLiteStrings.order | typings.vegaLite.vegaLiteStrings.filled | typings.vegaLite.vegaLiteStrings.timeUnitBandPosition | typings.vegaLite.vegaLiteStrings.timeUnitBand] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("VL_ONLY_MARK_CONFIG_PROPERTIES").asInstanceOf[js.Array[
-typings.vegaLite.vegaLiteStrings.invalid | typings.vegaLite.vegaLiteStrings.color | typings.vegaLite.vegaLiteStrings.theta2 | typings.vegaLite.vegaLiteStrings.radius2 | typings.vegaLite.vegaLiteStrings.order | typings.vegaLite.vegaLiteStrings.filled | typings.vegaLite.vegaLiteStrings.timeUnitBandPosition | typings.vegaLite.vegaLiteStrings.timeUnitBand]]
+/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | invalid | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color] = ^.asInstanceOf[js.Dynamic].selectDynamic("VL_ONLY_MARK_CONFIG_PROPERTIES").asInstanceOf[js.Array[
+/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | invalid | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color]]
 
-inline def defaultBarConfig: typings.vegaLite.srcMarkMod.RectConfig[typings.vegaTypings.signalMod.SignalRef] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultBarConfig").asInstanceOf[typings.vegaLite.srcMarkMod.RectConfig[typings.vegaTypings.signalMod.SignalRef]]
+inline def defaultBarConfig: RectConfig[SignalRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultBarConfig").asInstanceOf[RectConfig[SignalRef]]
 
-inline def defaultMarkConfig: typings.vegaLite.srcMarkMod.MarkConfig[typings.vegaTypings.signalMod.SignalRef] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultMarkConfig").asInstanceOf[typings.vegaLite.srcMarkMod.MarkConfig[typings.vegaTypings.signalMod.SignalRef]]
+inline def defaultMarkConfig: MarkConfig[SignalRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultMarkConfig").asInstanceOf[MarkConfig[SignalRef]]
 
-inline def defaultRectConfig: typings.vegaLite.srcMarkMod.RectConfig[typings.vegaTypings.signalMod.SignalRef] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultRectConfig").asInstanceOf[typings.vegaLite.srcMarkMod.RectConfig[typings.vegaTypings.signalMod.SignalRef]]
+inline def defaultRectConfig: RectConfig[SignalRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultRectConfig").asInstanceOf[RectConfig[SignalRef]]
 
-inline def defaultTickConfig: typings.vegaLite.srcMarkMod.TickConfig[typings.vegaTypings.signalMod.SignalRef] = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTickConfig").asInstanceOf[typings.vegaLite.srcMarkMod.TickConfig[typings.vegaTypings.signalMod.SignalRef]]
+inline def defaultTickConfig: TickConfig[SignalRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTickConfig").asInstanceOf[TickConfig[SignalRef]]
 
-inline def getMarkType(m: java.lang.String): js.Any = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("getMarkType")(m.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def getMarkType(m: typings.vegaLite.srcMarkMod.GenericMarkDef[js.Any]): js.Any = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("getMarkType")(m.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def getMarkType(m: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMarkType")(m.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def getMarkType(m: GenericMarkDef[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMarkType")(m.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def isMark(m: java.lang.String): /* is vega-lite.vega-lite/build/src/mark.Mark */ scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isMark")(m.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.Mark */ scala.Boolean]
+inline def isMark(m: String): /* is vega-lite.vega-lite/build/src/mark.Mark */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMark")(m.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.Mark */ Boolean]
 
-inline def isMarkDef(mark: java.lang.String): /* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isMarkDef")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ scala.Boolean]
-inline def isMarkDef(mark: typings.vegaLite.srcMarkMod.GenericMarkDef[js.Any]): /* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isMarkDef")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ scala.Boolean]
+inline def isMarkDef(mark: String): /* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkDef")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ Boolean]
+inline def isMarkDef(mark: GenericMarkDef[Any]): /* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkDef")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.GenericMarkDef<any> */ Boolean]
 
-inline def isPathMark(m: typings.vegaLite.compositemarkMod.CompositeMark): scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isPathMark")(m.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def isPathMark(m: typings.vegaLite.srcMarkMod.Mark): scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isPathMark")(m.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isPathMark(m: CompositeMark): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPathMark")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isPathMark(m: Mark): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPathMark")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isPrimitiveMark(mark: typings.vegaLite.srcMarkMod.AnyMark): /* is vega-lite.vega-lite/build/src/mark.Mark */ scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitiveMark")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.Mark */ scala.Boolean]
+inline def isPrimitiveMark(mark: AnyMark): /* is vega-lite.vega-lite/build/src/mark.Mark */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitiveMark")(mark.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.Mark */ Boolean]
 
-inline def isRectBasedMark(m: typings.vegaLite.compositemarkMod.CompositeMark): scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRectBasedMark")(m.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def isRectBasedMark(m: typings.vegaLite.srcMarkMod.Mark): scala.Boolean = typings.vegaLite.srcMarkMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRectBasedMark")(m.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isRectBasedMark(m: CompositeMark): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRectBasedMark")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isRectBasedMark(m: Mark): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRectBasedMark")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-type AnyMark = typings.vegaLite.compositemarkMod.CompositeMark | typings.vegaLite.compositemarkMod.CompositeMarkDef | typings.vegaLite.srcMarkMod.Mark | (typings.vegaLite.srcMarkMod.MarkDef[
-typings.vegaLite.srcMarkMod.Mark, 
-typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef])
+inline def isRelativeBandSize(o: Double): /* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeBandSize")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean]
+inline def isRelativeBandSize(o: ExprRef): /* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeBandSize")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean]
+inline def isRelativeBandSize(o: RelativeBandSize): /* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeBandSize")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean]
+inline def isRelativeBandSize(o: SignalRef): /* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeBandSize")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/mark.RelativeBandSize */ Boolean]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.vegaLite.srcMarkMod.MarkConfig[typings.vegaTypings.signalMod.SignalRef]
-  - typings.vegaLite.srcMarkMod.AreaConfig[ES]
-  - typings.vegaLite.srcMarkMod.BarConfig[ES]
-  - typings.vegaLite.srcMarkMod.RectConfig[ES]
-  - typings.vegaLite.srcMarkMod.LineConfig[ES]
-  - typings.vegaLite.srcMarkMod.TickConfig[ES]
-*/
-type AnyMarkConfig[ES /* <: typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef */] = typings.vegaLite.srcMarkMod._AnyMarkConfig[ES] | typings.vegaLite.srcMarkMod.MarkConfig[typings.vegaTypings.signalMod.SignalRef]
+type AnyMark = CompositeMark | CompositeMarkDef | Mark | (MarkDef[Mark, ExprRef | SignalRef])
 
-type Hide = typings.vegaLite.vegaLiteStrings.hide
+type BandSize = Double | RelativeBandSize | SignalRef
+
+type Hide = hide

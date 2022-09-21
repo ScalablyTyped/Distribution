@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import typings.ejWebAll.ej.DatePicker.Header
 import typings.ejWebAll.ej.DatePicker.Level
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,7 +61,7 @@ object DateTimePicker {
     
     /** returns the event parameters from DateTimePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DateTimePicker model.
       */
@@ -89,7 +88,7 @@ object DateTimePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -115,7 +114,7 @@ object DateTimePicker {
     
     /** returns the event parameters from DateTimePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DateTimePicker model.
       */
@@ -142,7 +141,7 @@ object DateTimePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -465,7 +464,7 @@ object DateTimePicker {
     /** Disable the list of specified date value.
       * @Default {{}}
       */
-    var blackoutDates: js.UndefOr[js.Any] = js.undefined
+    var blackoutDates: js.UndefOr[Any] = js.undefined
     
     /** Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
       * @Default {{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }}
@@ -510,7 +509,7 @@ object DateTimePicker {
     /** Specifies the list of time range to be disabled.
       * @Default {{}}
       */
-    var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
+    var disableTimeRanges: js.UndefOr[Any] = js.undefined
     
     /** Enable or disable the animation effect in DateTimePicker.
       * @Default {true}
@@ -558,7 +557,7 @@ object DateTimePicker {
     /** Specifies the HTML Attributes of the ejDateTimePicker
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the time popup.
       * @Default {30}
@@ -573,12 +572,12 @@ object DateTimePicker {
     /** Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element when we set true to enableStrictMode.
       * @Default {new Date(12/31/2099 11:59:59 PM)}
       */
-    var maxDateTime: js.UndefOr[String | Date] = js.undefined
+    var maxDateTime: js.UndefOr[String | js.Date] = js.undefined
     
     /** Sets the minimum value to the DateTimePicker. Behind the minimum value an error class is added to the wrapper element.
       * @Default {new Date(1/1/1900 12:00:00 AM)}
       */
-    var minDateTime: js.UndefOr[String | Date] = js.undefined
+    var minDateTime: js.UndefOr[String | js.Date] = js.undefined
     
     /** Fires when DateTimePicker popup opens.
       */
@@ -613,7 +612,7 @@ object DateTimePicker {
     /** Specifies the special dates in DateTimePicker.
       * @Default {null}
       */
-    var specialDates: js.UndefOr[js.Any] = js.undefined
+    var specialDates: js.UndefOr[Any] = js.undefined
     
     /** Specifies the start day of the week in datepicker inside the DateTimePicker popup.
       * @Default {1}
@@ -648,16 +647,16 @@ object DateTimePicker {
     /** Set the jQuery validation error message in DateTimePicker.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in DateTimePicker.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Sets the DateTime value to the control.
       */
-    var value: js.UndefOr[String | Date] = js.undefined
+    var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
       * @Default {Select date and time}
@@ -690,7 +689,7 @@ object DateTimePicker {
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      inline def setBlackoutDates(value: js.Any): Self = StObject.set(x, "blackoutDates", value.asInstanceOf[js.Any])
+      inline def setBlackoutDates(value: Any): Self = StObject.set(x, "blackoutDates", value.asInstanceOf[js.Any])
       
       inline def setBlackoutDatesUndefined: Self = StObject.set(x, "blackoutDates", js.undefined)
       
@@ -730,7 +729,7 @@ object DateTimePicker {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setDisableTimeRanges(value: js.Any): Self = StObject.set(x, "disableTimeRanges", value.asInstanceOf[js.Any])
+      inline def setDisableTimeRanges(value: Any): Self = StObject.set(x, "disableTimeRanges", value.asInstanceOf[js.Any])
       
       inline def setDisableTimeRangesUndefined: Self = StObject.set(x, "disableTimeRanges", js.undefined)
       
@@ -770,7 +769,7 @@ object DateTimePicker {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -782,11 +781,11 @@ object DateTimePicker {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDateTime(value: String | Date): Self = StObject.set(x, "maxDateTime", value.asInstanceOf[js.Any])
+      inline def setMaxDateTime(value: String | js.Date): Self = StObject.set(x, "maxDateTime", value.asInstanceOf[js.Any])
       
       inline def setMaxDateTimeUndefined: Self = StObject.set(x, "maxDateTime", js.undefined)
       
-      inline def setMinDateTime(value: String | Date): Self = StObject.set(x, "minDateTime", value.asInstanceOf[js.Any])
+      inline def setMinDateTime(value: String | js.Date): Self = StObject.set(x, "minDateTime", value.asInstanceOf[js.Any])
       
       inline def setMinDateTimeUndefined: Self = StObject.set(x, "minDateTime", js.undefined)
       
@@ -814,7 +813,7 @@ object DateTimePicker {
       
       inline def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
       
-      inline def setSpecialDates(value: js.Any): Self = StObject.set(x, "specialDates", value.asInstanceOf[js.Any])
+      inline def setSpecialDates(value: Any): Self = StObject.set(x, "specialDates", value.asInstanceOf[js.Any])
       
       inline def setSpecialDatesUndefined: Self = StObject.set(x, "specialDates", js.undefined)
       
@@ -842,15 +841,15 @@ object DateTimePicker {
       
       inline def setTimePopupWidthUndefined: Self = StObject.set(x, "timePopupWidth", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      inline def setValue(value: String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

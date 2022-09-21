@@ -5,26 +5,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.BABYLON.IDisposable because Already inherited
+- typings.babylonjs.BABYLON.IGizmo because Already inherited
+- typings.babylonjs.BABYLON.IPlaneDragGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, isEnabled */ @js.native
 trait PlaneDragGizmo
   extends StObject
      with Gizmo {
   
-  /* private */ var _coloredMaterial: js.Any = js.native
+  /* protected */ var _coloredMaterial: StandardMaterial = js.native
   
-  /* private */ var _disableMaterial: js.Any = js.native
+  /* protected */ var _disableMaterial: StandardMaterial = js.native
   
-  /* private */ var _dragging: js.Any = js.native
+  /* protected */ var _dragging: Boolean = js.native
   
-  /* private */ var _gizmoMesh: js.Any = js.native
+  /* protected */ var _gizmoMesh: TransformNode = js.native
   
-  /* private */ var _hoverMaterial: js.Any = js.native
+  /* protected */ var _hoverMaterial: StandardMaterial = js.native
   
-  /* private */ var _isEnabled: js.Any = js.native
+  /* protected */ var _isEnabled: Boolean = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* protected */ var _parent: Nullable[PositionGizmo] = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions
@@ -36,6 +39,9 @@ trait PlaneDragGizmo
     * If the gizmo is enabled
     */
   def isEnabled_=(value: Boolean): Unit = js.native
+  /** If the gizmo is enabled */
+  @JSName("isEnabled")
+  var isEnabled_FPlaneDragGizmo: Boolean = js.native
   
   /**
     * Event that fires each time the gizmo snaps to a new location.

@@ -43,7 +43,7 @@ object IStroke {
     
     inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait SetOpts extends StObject {
   /** Whether or not to merge the given value into the existing data or replace the existing data. Defaults to replacing the existing data (false). */
   var deep: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether or not to keep the template sturctures removed by this set around for future reinstatement. This can be used to avoid throwing away and recreating components when hiding them. Defaults to false. */
+  /** Whether or not to keep the template structures removed by this set around for future reinstatement. This can be used to avoid throwing away and recreating components when hiding them. Defaults to false. */
   var keep: js.UndefOr[Boolean] = js.undefined
   
   /** When applied to an array keypath, whether or not to move the existing elements and their associated template around or simply replace them. Defaults to replacement (false). */
@@ -37,7 +37,7 @@ object SetOpts {
     
     inline def setShuffle(value: Shuffler): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
     
-    inline def setShuffleFunction2(value: (/* left */ js.Any, /* right */ js.Any) => `1` | `0` | `-1`): Self = StObject.set(x, "shuffle", js.Any.fromFunction2(value))
+    inline def setShuffleFunction2(value: (/* left */ Any, /* right */ Any) => `1` | `0` | `-1`): Self = StObject.set(x, "shuffle", js.Any.fromFunction2(value))
     
     inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
   }

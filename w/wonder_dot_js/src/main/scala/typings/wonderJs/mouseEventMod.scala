@@ -13,8 +13,8 @@ object mouseEventMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/MouseEvent", "MouseEvent")
   @js.native
-  class MouseEvent protected () extends DomEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+  open class MouseEvent protected () extends DomEvent {
+    def this(event: Any, eventName: EEventName) = this()
     
     var button: Double = js.native
     

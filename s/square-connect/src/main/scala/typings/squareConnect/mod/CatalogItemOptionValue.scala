@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogItemOptionValue")
 @js.native
-class CatalogItemOptionValue () extends StObject {
+open class CatalogItemOptionValue () extends StObject {
   
   /**
     * The HTML-supported hex color for the item option (e.g., "#ff8d4e85").

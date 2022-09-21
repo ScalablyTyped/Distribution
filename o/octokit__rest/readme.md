@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__rest
 
-Typings are for version 18.0.9
+Typings are for version 19.0.4
 
 ## Library description:
 GitHub REST API client for Node.js
@@ -10,10 +10,10 @@ GitHub REST API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @octokit/rest |
 | Keywords           | octokit, github, rest, api-client |
-| # releases         | 127 |
-| # dependents       | 1113 |
-| # downloads        | 129440541 |
-| # stars            | 2 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8740863E7 |
+| # stars            | 267.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/rest.js#readme)

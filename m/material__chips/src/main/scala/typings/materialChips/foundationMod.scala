@@ -1,58 +1,56 @@
 package typings.materialChips
 
 import typings.materialBase.foundationMod.MDCFoundation
-import typings.materialChips.adapterMod.MDCChipSetAdapter
-import typings.materialChips.anon.PartialMDCChipSetAdapter
-import typings.materialChips.typesMod.MDCChipInteractionEventDetail
-import typings.materialChips.typesMod.MDCChipNavigationEventDetail
-import typings.materialChips.typesMod.MDCChipRemovalEventDetail
-import typings.materialChips.typesMod.MDCChipSelectionEventDetail
+import typings.materialChips.adapterMod.MDCChipActionAdapter
+import typings.materialChips.anon.PartialMDCChipActionAdapt
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
+import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foundationMod {
   
-  @JSImport("@material/chips/chip-set/foundation", JSImport.Default)
+  @JSImport("@material/chips/action/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCChipSetFoundation {
-    def this(adapter: PartialMDCChipSetAdapter) = this()
+  abstract class default () extends MDCChipActionFoundation {
+    def this(adapter: PartialMDCChipActionAdapt) = this()
   }
   
-  @JSImport("@material/chips/chip-set/foundation", "MDCChipSetFoundation")
+  @JSImport("@material/chips/action/foundation", "MDCChipActionFoundation")
   @js.native
-  class MDCChipSetFoundation () extends MDCFoundation[MDCChipSetAdapter] {
-    def this(adapter: PartialMDCChipSetAdapter) = this()
+  abstract class MDCChipActionFoundation () extends MDCFoundation[MDCChipActionAdapter] {
+    def this(adapter: PartialMDCChipActionAdapt) = this()
     
-    /**
-      * Returns an array of the IDs of all selected chips.
-      */
-    def getSelectedChipIds(): js.Array[String] = js.native
+    def actionType(): MDCChipActionType = js.native
     
-    /**
-      * Handles a chip interaction event
-      */
-    def handleChipInteraction(hasChipId: MDCChipInteractionEventDetail): Unit = js.native
+    /* private */ var emitInteraction: Any = js.native
     
-    /**
-      * Handles a chip navigation event.
-      */
-    def handleChipNavigation(hasChipIdKeySource: MDCChipNavigationEventDetail): Unit = js.native
+    /* private */ var emitNavigation: Any = js.native
     
-    /**
-      * Handles the event when a chip is removed.
-      */
-    def handleChipRemoval(hasChipIdRemovedAnnouncement: MDCChipRemovalEventDetail): Unit = js.native
+    /* private */ var getTriggerFromKey: Any = js.native
     
-    /**
-      * Handles a chip selection event, used to handle discrepancy when selection state is set directly on the Chip.
-      */
-    def handleChipSelection(hasChipIdSelectedShouldIgnore: MDCChipSelectionEventDetail): Unit = js.native
+    def handleClick(): Unit = js.native
     
-    /**
-      * Selects the chip with the given id. Deselects all other chips if the chip set is of the choice variant.
-      * Does not notify clients of the updated selection state.
-      */
-    def select(chipId: String): Unit = js.native
+    def handleKeydown(event: KeyboardEvent): Unit = js.native
+    
+    def isDisabled(): Boolean = js.native
+    
+    def isFocusable(): Boolean = js.native
+    
+    def isSelectable(): Boolean = js.native
+    
+    def isSelected(): Boolean = js.native
+    
+    def setDisabled(isDisabled: Boolean): Unit = js.native
+    
+    def setFocus(behavior: MDCChipActionFocusBehavior): Unit = js.native
+    
+    def setSelected(isSelected: Boolean): Unit = js.native
+    
+    /* protected */ def shouldEmitInteractionOnRemoveKey(): Boolean = js.native
+    
+    /* private */ var shouldNotifyInteractionFromKey: Any = js.native
   }
 }

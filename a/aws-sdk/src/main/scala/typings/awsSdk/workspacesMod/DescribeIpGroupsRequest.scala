@@ -34,7 +34,7 @@ object DescribeIpGroupsRequest {
     
     inline def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
-    inline def setGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
+    inline def setGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value*))
     
     inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

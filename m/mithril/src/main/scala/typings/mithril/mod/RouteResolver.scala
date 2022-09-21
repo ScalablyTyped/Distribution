@@ -13,7 +13,7 @@ trait RouteResolver[Attrs, State] extends StObject {
       /* args */ Attrs, 
       /* requestedPath */ String, 
       /* route */ String, 
-      (ComponentTypes[js.Any, js.Any]) | js.Promise[js.Any] | Unit
+      (ComponentTypes[Any, Any]) | js.Promise[Any] | Unit
     ]
   ] = js.undefined
   
@@ -37,7 +37,7 @@ object RouteResolver {
           /* args */ Attrs, 
           /* requestedPath */ String, 
           /* route */ String, 
-          (ComponentTypes[js.Any, js.Any]) | js.Promise[js.Any] | Unit
+          (ComponentTypes[Any, Any]) | js.Promise[Any] | Unit
         ]
     ): Self = StObject.set(x, "onmatch", value.asInstanceOf[js.Any])
     

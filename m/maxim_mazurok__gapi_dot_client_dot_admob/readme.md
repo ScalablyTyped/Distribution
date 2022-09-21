@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_admob
 
-Typings are for version 1.0.20201117
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for AdMob API v1
@@ -10,10 +10,10 @@ TypeScript typings for AdMob API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.admob |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 1 |
-| # downloads        | 2033 |
-| # stars            | 0 |
+| # releases         | 259 |
+| # dependents       | 0.0 |
+| # downloads        | 2091.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -95,7 +95,7 @@ object Transaction {
     
     inline def setRelated_resourcesUndefined: Self = StObject.set(x, "related_resources", js.undefined)
     
-    inline def setRelated_resourcesVarargs(value: RelatedResources*): Self = StObject.set(x, "related_resources", js.Array(value :_*))
+    inline def setRelated_resourcesVarargs(value: RelatedResources*): Self = StObject.set(x, "related_resources", js.Array(value*))
     
     inline def setSoft_descriptor(value: String): Self = StObject.set(x, "soft_descriptor", value.asInstanceOf[js.Any])
     

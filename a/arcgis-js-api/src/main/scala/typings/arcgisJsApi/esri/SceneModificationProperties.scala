@@ -19,6 +19,8 @@ trait SceneModificationProperties extends StObject {
   /**
     * The type of modification to perform.
     *
+    * @default clip
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#type)
     */
   var `type`: js.UndefOr[clip | mask | replace] = js.undefined

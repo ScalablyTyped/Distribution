@@ -77,7 +77,7 @@ object GaugeChartOptions {
     
     inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
     
-    inline def setMajorTicksVarargs(value: String*): Self = StObject.set(x, "majorTicks", js.Array(value :_*))
+    inline def setMajorTicksVarargs(value: String*): Self = StObject.set(x, "majorTicks", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

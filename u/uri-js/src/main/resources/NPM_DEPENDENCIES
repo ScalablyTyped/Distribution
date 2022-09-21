@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uri-js" : "4.4.0"
+      "uri-js" : "4.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "uri-js" : "4.4.0"
+      "uri-js" : "4.4.1"
     }
   ],
   "compile-devDependencies" : [

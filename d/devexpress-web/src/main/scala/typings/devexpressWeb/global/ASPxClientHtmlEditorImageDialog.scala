@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorImageDialog")
 @js.native
-class ASPxClientHtmlEditorImageDialog ()
+open class ASPxClientHtmlEditorImageDialog ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorImageDialog {
   

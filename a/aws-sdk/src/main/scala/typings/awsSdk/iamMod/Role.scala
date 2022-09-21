@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Role extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) specifying the role. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide guide. 
+    *  The Amazon Resource Name (ARN) specifying the role. For more information about ARNs and how to use them in policies, see IAM identifiers in the IAM User Guide guide. 
     */
   var Arn: arnType
   
@@ -19,7 +19,7 @@ trait Role extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the role was created.
     */
-  var CreateDate: dateType
+  var CreateDate: js.Date
   
   /**
     * A description of the role that you provide.
@@ -27,27 +27,27 @@ trait Role extends StObject {
   var Description: js.UndefOr[roleDescriptionType] = js.undefined
   
   /**
-    * The maximum session duration (in seconds) for the specified role. Anyone who uses the AWS CLI, or API to assume the role can specify the duration using the optional DurationSeconds API parameter or duration-seconds CLI parameter.
+    * The maximum session duration (in seconds) for the specified role. Anyone who uses the CLI, or API to assume the role can specify the duration using the optional DurationSeconds API parameter or duration-seconds CLI parameter.
     */
   var MaxSessionDuration: js.UndefOr[roleMaxSessionDurationType] = js.undefined
   
   /**
-    *  The path to the role. For more information about paths, see IAM Identifiers in the IAM User Guide. 
+    *  The path to the role. For more information about paths, see IAM identifiers in the IAM User Guide. 
     */
   var Path: pathType
   
   /**
-    * The ARN of the policy used to set the permissions boundary for the role. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
+    * The ARN of the policy used to set the permissions boundary for the role. For more information about permissions boundaries, see Permissions boundaries for IAM identities  in the IAM User Guide.
     */
   var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
   
   /**
-    *  The stable and unique string identifying the role. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
+    *  The stable and unique string identifying the role. For more information about IDs, see IAM identifiers in the IAM User Guide. 
     */
   var RoleId: idType
   
   /**
-    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions Where Data Is Tracked in the IAM User Guide.
+    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions where data is tracked in the IAM User Guide.
     */
   var RoleLastUsed: js.UndefOr[typings.awsSdk.iamMod.RoleLastUsed] = js.undefined
   
@@ -57,13 +57,13 @@ trait Role extends StObject {
   var RoleName: roleNameType
   
   /**
-    * A list of tags that are attached to the specified role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+    * A list of tags that are attached to the role. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
     */
   var Tags: js.UndefOr[tagListType] = js.undefined
 }
 object Role {
   
-  inline def apply(Arn: arnType, CreateDate: dateType, Path: pathType, RoleId: idType, RoleName: roleNameType): Role = {
+  inline def apply(Arn: arnType, CreateDate: js.Date, Path: pathType, RoleId: idType, RoleName: roleNameType): Role = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], RoleId = RoleId.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Role]
   }
@@ -76,7 +76,7 @@ object Role {
     
     inline def setAssumeRolePolicyDocumentUndefined: Self = StObject.set(x, "AssumeRolePolicyDocument", js.undefined)
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -104,6 +104,6 @@ object Role {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

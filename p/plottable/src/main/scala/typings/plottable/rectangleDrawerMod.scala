@@ -16,15 +16,15 @@ object rectangleDrawerMod {
   
   @JSImport("plottable/build/src/drawers/rectangleDrawer", "RectangleCanvasDrawer")
   @js.native
-  class RectangleCanvasDrawer protected () extends CanvasDrawer {
+  open class RectangleCanvasDrawer protected () extends CanvasDrawer {
     def this(ctx: CanvasRenderingContext2D) = this()
   }
   
   @JSImport("plottable/build/src/drawers/rectangleDrawer", "RectangleSVGDrawer")
   @js.native
-  class RectangleSVGDrawer () extends SVGDrawer {
+  open class RectangleSVGDrawer () extends SVGDrawer {
     def this(_rootClassName: String) = this()
     
-    /* private */ var _rootClassName: js.Any = js.native
+    /* private */ var _rootClassName: Any = js.native
   }
 }

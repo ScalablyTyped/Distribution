@@ -1,7 +1,7 @@
 
 # Scala.js typings for strong-error-handler
 
-Typings are for version 2.3
+Typings are for version 4.0.0
 
 ## Library description:
 Error handler for use in development and production environments.
@@ -10,10 +10,10 @@ Error handler for use in development and production environments.
 | ------------------ | :-------------: |
 | Full name          | strong-error-handler |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 59 |
-| # downloads        | 2954306 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 260378.33333333334 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/strongloop/strong-error-handler#readme)
@@ -24,7 +24,7 @@ Error handler for use in development and production environments.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

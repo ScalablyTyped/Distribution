@@ -5,59 +5,67 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type ClientAccessToken = java.lang.String
+type ClientAccessToken = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SOURCE
+  - typings.awsSdk.awsSdkStrings.DESTINATION
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type ClientMode = _ClientMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTED
   - typings.awsSdk.awsSdkStrings.DISCONNECTED
   - java.lang.String
 */
-type ConnectionStatus = typings.awsSdk.iotsecuretunnelingMod._ConnectionStatus | java.lang.String
+type ConnectionStatus = _ConnectionStatus | String
 
-type DateType = typings.std.Date
+type DateType = js.Date
 
-type DeleteFlag = scala.Boolean
+type DeleteFlag = Boolean
 
-type Description = java.lang.String
+type Description = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type Service = java.lang.String
+type Service = String
 
-type ServiceList = js.Array[typings.awsSdk.iotsecuretunnelingMod.Service]
+type ServiceList = js.Array[Service]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.iotsecuretunnelingMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.iotsecuretunnelingMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type ThingName = java.lang.String
+type ThingName = String
 
-type TimeoutInMin = scala.Double
+type TimeoutInMin = Double
 
-type TunnelArn = java.lang.String
+type TunnelArn = String
 
-type TunnelId = java.lang.String
+type TunnelId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OPEN
   - typings.awsSdk.awsSdkStrings.CLOSED
   - java.lang.String
 */
-type TunnelStatus = typings.awsSdk.iotsecuretunnelingMod._TunnelStatus | java.lang.String
+type TunnelStatus = _TunnelStatus | String
 
-type TunnelSummaryList = js.Array[typings.awsSdk.iotsecuretunnelingMod.TunnelSummary]
+type TunnelSummaryList = js.Array[TunnelSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-10-05`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iotsecuretunnelingMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

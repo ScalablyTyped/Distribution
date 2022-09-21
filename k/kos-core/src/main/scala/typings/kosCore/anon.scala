@@ -8,22 +8,22 @@ object anon {
   
   trait Dispatch extends StObject {
     
-    var dispatch: js.Any
+    var dispatch: Any
     
-    var getState: js.Any
+    var getState: Any
   }
   object Dispatch {
     
-    inline def apply(dispatch: js.Any, getState: js.Any): Dispatch = {
+    inline def apply(dispatch: Any, getState: Any): Dispatch = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getState = getState.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dispatch]
     }
     
     extension [Self <: Dispatch](x: Self) {
       
-      inline def setDispatch(value: js.Any): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Any): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      inline def setGetState(value: js.Any): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
+      inline def setGetState(value: Any): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,18 +53,18 @@ object anon {
   
   trait Param extends StObject {
     
-    var param: js.Any
+    var param: Any
   }
   object Param {
     
-    inline def apply(param: js.Any): Param = {
+    inline def apply(param: Any): Param = {
       val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
       __obj.asInstanceOf[Param]
     }
     
     extension [Self <: Param](x: Self) {
       
-      inline def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     }
   }
   

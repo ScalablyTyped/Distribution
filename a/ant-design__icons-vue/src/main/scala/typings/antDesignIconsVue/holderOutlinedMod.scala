@@ -1,0 +1,29 @@
+package typings.antDesignIconsVue
+
+import org.scalablytyped.runtime.Shortcut
+import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object holderOutlinedMod extends Shortcut {
+  
+  @JSImport("@ant-design/icons-vue/lib/icons/HolderOutlined", JSImport.Default)
+  @js.native
+  val default: HolderOutlinedIconType = js.native
+  
+  @js.native
+  trait HolderOutlinedIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
+    
+    @JSName("displayName")
+    var displayName_HolderOutlinedIconType: String = js.native
+  }
+  
+  type _To = HolderOutlinedIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `holderOutlinedMod.foo` */
+  override def _to: HolderOutlinedIconType = default
+}

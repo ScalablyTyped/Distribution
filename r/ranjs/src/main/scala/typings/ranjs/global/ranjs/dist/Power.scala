@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Power")
 @js.native
-class Power ()
+open class Power ()
   extends typings.ranjs.mod.dist.Power {
   def this(a: Double) = this()
 }

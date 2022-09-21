@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEffectFallbacks extends StObject {
   
   /**
-    * Checks to see if more fallbacks are still availible.
+    * Checks to see if more fallbacks are still available.
     */
   var hasMoreFallbacks: Boolean
   

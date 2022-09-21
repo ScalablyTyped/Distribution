@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Bucket is represented as a range, along with replacement values.
-  */
 trait SchemaGooglePrivacyDlpV2Bucket extends StObject {
   
   /**
@@ -15,14 +12,12 @@ trait SchemaGooglePrivacyDlpV2Bucket extends StObject {
   var max: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
-    * Lower bound of the range, inclusive. Type should be the same as max if
-    * used.
+    * Lower bound of the range, inclusive. Type should be the same as max if used.
     */
   var min: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
-    * Replacement value for this bucket. If not provided the default behavior
-    * will be to hyphenate the min-max range.
+    * Required. Replacement value for this bucket.
     */
   var replacementValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }

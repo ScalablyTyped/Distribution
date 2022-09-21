@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.SubscriptionDialog")
 @js.native
-class SubscriptionDialog protected ()
+open class SubscriptionDialog protected ()
   extends typings.sipJs.coreMod.SubscriptionDialog {
   def this(
     subscriptionEvent: String,

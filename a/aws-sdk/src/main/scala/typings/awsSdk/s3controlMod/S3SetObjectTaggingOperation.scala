@@ -24,6 +24,6 @@ object S3SetObjectTaggingOperation {
     
     inline def setTagSetUndefined: Self = StObject.set(x, "TagSet", js.undefined)
     
-    inline def setTagSetVarargs(value: S3Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+    inline def setTagSetVarargs(value: S3Tag*): Self = StObject.set(x, "TagSet", js.Array(value*))
   }
 }

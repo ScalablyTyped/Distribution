@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Pairs")
 @js.native
-class Pairs ()
+open class Pairs ()
   extends StObject
      with typings.phaser.MatterJS.Pairs
 object Pairs {
@@ -27,5 +27,5 @@ object Pairs {
     * @return {pairs} pairs
     */
   /* static member */
-  inline def clear(pairs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(pairs: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

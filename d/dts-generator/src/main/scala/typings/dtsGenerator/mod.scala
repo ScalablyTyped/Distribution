@@ -41,6 +41,8 @@ object mod {
     /** A list of files from the baseDir to bundle. */
     var files: js.UndefOr[js.Array[String]] = js.undefined
     
+    var includes: js.UndefOr[js.Array[String]] = js.undefined
+    
     /** The character(s) that should be used to indent the declarations in the output. Defaults to \t. */
     var indent: js.UndefOr[String] = js.undefined
     
@@ -55,6 +57,10 @@ object mod {
     
     /** The filename where the generated bundle will be created. */
     var out: String
+    
+    var outDir: js.UndefOr[String] = js.undefined
+    
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * The base directory for the project being bundled. It is assumed that this directory contains a
@@ -75,6 +81,10 @@ object mod {
       */
     var resolveModuleImport: js.UndefOr[js.Function1[/* params */ ResolveModuleImportParams, String]] = js.undefined
     
+    var rootDir: js.UndefOr[String] = js.undefined
+    
+    var sendMessage: js.UndefOr[js.Function2[/* message */ Any, /* repeated */ Any, Unit]] = js.undefined
+    
     /** The target environment for generated code. Defaults to ts.ScriptTarget.Latest. */
     var target: js.UndefOr[ScriptTarget] = js.undefined
     
@@ -83,6 +93,8 @@ object mod {
       * Use the --types flag one or more times on the command-line.
       */
     var types: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object DtsGeneratorOptions {
     
@@ -105,19 +117,25 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExterns(value: js.Array[String]): Self = StObject.set(x, "externs", value.asInstanceOf[js.Any])
       
       inline def setExternsUndefined: Self = StObject.set(x, "externs", js.undefined)
       
-      inline def setExternsVarargs(value: String*): Self = StObject.set(x, "externs", js.Array(value :_*))
+      inline def setExternsVarargs(value: String*): Self = StObject.set(x, "externs", js.Array(value*))
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
+      
+      inline def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+      
+      inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
+      
+      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -135,6 +153,14 @@ object mod {
       
       inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
+      inline def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
+      
+      inline def setOutDirUndefined: Self = StObject.set(x, "outDir", js.undefined)
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
       inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
@@ -147,6 +173,14 @@ object mod {
       
       inline def setResolveModuleImportUndefined: Self = StObject.set(x, "resolveModuleImport", js.undefined)
       
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      
+      inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
+      
+      inline def setSendMessage(value: (/* message */ Any, /* repeated */ Any) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      
+      inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
+      
       inline def setTarget(value: ScriptTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
@@ -155,7 +189,11 @@ object mod {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
+      
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

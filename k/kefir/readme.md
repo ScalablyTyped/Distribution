@@ -10,10 +10,10 @@ Reactive Programming library for JavaScript inspired by Bacon.js and RxJS with f
 | ------------------ | :-------------: |
 | Full name          | kefir |
 | Keywords           | frp, bacon, bacon.js, kefir, kefir.js, functional, reactive, stream, streams, EventStream, Rx, RxJs, Observable |
-| # releases         | 4 |
-| # dependents       | 148 |
-| # downloads        | 2378120 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 289018.6666666667 |
+| # stars            | 1791.0 |
 
 ## Links
 - [Homepage](https://github.com/kefirjs/kefir)

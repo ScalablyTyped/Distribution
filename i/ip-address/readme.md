@@ -1,7 +1,7 @@
 
 # Scala.js typings for ip-address
 
-Typings are for version 7.1.0
+Typings are for version 8.1.0
 
 ## Library description:
 A library for parsing IPv4 and IPv6 IP addresses in node and the browser.
@@ -10,10 +10,10 @@ A library for parsing IPv4 and IPv6 IP addresses in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | ip-address |
 | Keywords           | ipv6, ipv4, browser, validation |
-| # releases         | 10 |
-| # dependents       | 101 |
-| # downloads        | 8811716 |
-| # stars            | 7 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1454096.0 |
+| # stars            | 441.0 |
 
 ## Links
 - [Homepage](https://github.com/beaugunderson/ip-address#readme)

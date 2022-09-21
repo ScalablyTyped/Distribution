@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "PolygonSeries")
 @js.native
-class PolygonSeries protected () extends AbstractSeries[PolygonSeriesProps] {
+open class PolygonSeries protected () extends AbstractSeries[PolygonSeriesProps] {
   def this(props: PolygonSeriesProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PolygonSeriesProps, context: js.Any) = this()
+  def this(props: PolygonSeriesProps, context: Any) = this()
 }

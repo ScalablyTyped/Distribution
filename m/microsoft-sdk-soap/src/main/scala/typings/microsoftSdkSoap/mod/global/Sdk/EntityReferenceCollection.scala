@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of EntityReference instances.
   * @param entityReferences Initializes a new instance of the EntityReferenceCollection class setting the Sdk.Collection of Sdk.EntityReference objects.
   */
-class EntityReferenceCollection () extends StObject {
+open class EntityReferenceCollection () extends StObject {
   def this(entityReferences: Collection[EntityReference]) = this()
   
   /**

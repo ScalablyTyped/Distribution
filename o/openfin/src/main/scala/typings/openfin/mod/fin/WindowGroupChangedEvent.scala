@@ -93,7 +93,7 @@ object WindowGroupChangedEvent {
     
     inline def setSourceGroup(value: js.Array[WindowOfGroupInfo]): Self = StObject.set(x, "sourceGroup", value.asInstanceOf[js.Any])
     
-    inline def setSourceGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "sourceGroup", js.Array(value :_*))
+    inline def setSourceGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "sourceGroup", js.Array(value*))
     
     inline def setSourceWindowAppUuid(value: String): Self = StObject.set(x, "sourceWindowAppUuid", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object WindowGroupChangedEvent {
     
     inline def setTargetGroup(value: js.Array[WindowOfGroupInfo]): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
     
-    inline def setTargetGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "targetGroup", js.Array(value :_*))
+    inline def setTargetGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "targetGroup", js.Array(value*))
     
     inline def setTargetWindowAppUuid(value: String): Self = StObject.set(x, "targetWindowAppUuid", value.asInstanceOf[js.Any])
     

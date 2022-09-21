@@ -10,10 +10,10 @@ Typings are for version 3.30
 | ------------------ | :-------------: |
 | Full name          | swagger-ui-dist |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 175 |
-| # downloads        | 31581171 |
-| # stars            | 7 |
+| # releases         | 80 |
+| # dependents       | 0.0 |
+| # downloads        | 6132784.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/swagger-api/swagger-ui#readme)

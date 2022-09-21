@@ -27,6 +27,6 @@ object SignatureInfo {
     
     inline def setFormal(value: js.Array[FormalSignatureItemInfo]): Self = StObject.set(x, "formal", value.asInstanceOf[js.Any])
     
-    inline def setFormalVarargs(value: FormalSignatureItemInfo*): Self = StObject.set(x, "formal", js.Array(value :_*))
+    inline def setFormalVarargs(value: FormalSignatureItemInfo*): Self = StObject.set(x, "formal", js.Array(value*))
   }
 }

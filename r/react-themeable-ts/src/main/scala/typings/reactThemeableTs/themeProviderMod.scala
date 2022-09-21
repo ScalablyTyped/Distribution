@@ -11,16 +11,16 @@ object themeProviderMod {
   
   @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider")
   @js.native
-  class ThemeProvider protected ()
-    extends PureComponent[IThemeProviderProps, js.Object, js.Any] {
+  open class ThemeProvider protected ()
+    extends PureComponent[IThemeProviderProps, js.Object, Any] {
     def this(props: IThemeProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IThemeProviderProps, context: js.Any) = this()
+    def this(props: IThemeProviderProps, context: Any) = this()
     
-    def getChildContext(): StringDictionary[js.Any] = js.native
+    def getChildContext(): StringDictionary[Any] = js.native
   }
   /* static members */
   object ThemeProvider {
@@ -31,8 +31,8 @@ object themeProviderMod {
     
     @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider.childContextTypes")
     @js.native
-    def childContextTypes: StringDictionary[Validator[js.Any]] = js.native
-    inline def childContextTypes_=(x: StringDictionary[Validator[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    def childContextTypes: StringDictionary[Validator[Any]] = js.native
+    inline def childContextTypes_=(x: StringDictionary[Validator[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider.defaultProps")
     @js.native
@@ -42,41 +42,41 @@ object themeProviderMod {
   
   trait IThemeProviderContext extends StObject {
     
-    var reactThemeable: js.Any
+    var reactThemeable: Any
   }
   object IThemeProviderContext {
     
-    inline def apply(reactThemeable: js.Any): IThemeProviderContext = {
+    inline def apply(reactThemeable: Any): IThemeProviderContext = {
       val __obj = js.Dynamic.literal(reactThemeable = reactThemeable.asInstanceOf[js.Any])
       __obj.asInstanceOf[IThemeProviderContext]
     }
     
     extension [Self <: IThemeProviderContext](x: Self) {
       
-      inline def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
+      inline def setReactThemeable(value: Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
     }
   }
   
   trait IThemeProviderProps extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
-    var reactThemeable: js.Any
+    var reactThemeable: Any
   }
   object IThemeProviderProps {
     
-    inline def apply(reactThemeable: js.Any): IThemeProviderProps = {
+    inline def apply(reactThemeable: Any): IThemeProviderProps = {
       val __obj = js.Dynamic.literal(reactThemeable = reactThemeable.asInstanceOf[js.Any])
       __obj.asInstanceOf[IThemeProviderProps]
     }
     
     extension [Self <: IThemeProviderProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
+      inline def setReactThemeable(value: Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
     }
   }
 }

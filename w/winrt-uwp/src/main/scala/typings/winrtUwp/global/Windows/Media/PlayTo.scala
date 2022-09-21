@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError
@@ -155,7 +154,7 @@ object PlayTo {
   @JSGlobal("Windows.Media.PlayTo.PlayToReceiver")
   @js.native
   /** Creates a new instance of a Play To receiver. */
-  class PlayToReceiver ()
+  open class PlayToReceiver ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToReceiver
   
@@ -204,7 +203,7 @@ object PlayTo {
     
     /** Gets the time limit to supply the Play To source element. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Displays an error message in the Play To UI.
@@ -297,7 +296,7 @@ object PlayTo {
     
     /** Gets the date that the content in the media stream was published. */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /** Gets the description of the content in the media stream. */
     /* CompleteClass */
@@ -309,7 +308,7 @@ object PlayTo {
     
     /** Gets custom property names and values for the content in the media stream. */
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /** Gets the rating for the content in the media stream. */
     /* CompleteClass */

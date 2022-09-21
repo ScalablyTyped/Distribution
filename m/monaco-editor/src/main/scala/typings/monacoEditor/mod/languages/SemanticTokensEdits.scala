@@ -21,7 +21,7 @@ object SemanticTokensEdits {
     
     inline def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    inline def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value*))
     
     inline def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
     

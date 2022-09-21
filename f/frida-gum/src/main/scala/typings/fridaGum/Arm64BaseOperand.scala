@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Arm64BaseOperand extends StObject {
   
+  var access: OperandAccess
+  
   var ext: js.UndefOr[Arm64Extender] = js.undefined
   
   var shift: js.UndefOr[Value] = js.undefined
@@ -17,12 +19,14 @@ trait Arm64BaseOperand extends StObject {
 }
 object Arm64BaseOperand {
   
-  inline def apply(): Arm64BaseOperand = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(access: OperandAccess): Arm64BaseOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64BaseOperand]
   }
   
   extension [Self <: Arm64BaseOperand](x: Self) {
+    
+    inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setExt(value: Arm64Extender): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,7 @@ object SearchResult {
     
     inline def setClusteredResultsUndefined: Self = StObject.set(x, "clusteredResults", js.undefined)
     
-    inline def setClusteredResultsVarargs(value: SearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value :_*))
+    inline def setClusteredResultsVarargs(value: SearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value*))
     
     inline def setDebugInfo(value: ResultDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.strongClusterControl
 
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import typings.strongClusterControl.mod.StrongClusterControl.Control
 import typings.strongClusterControl.strongClusterControlStrings.CLUSTER_CONTROL_shutdown
 import typings.strongClusterControl.strongClusterControlStrings.error
@@ -89,7 +88,7 @@ object mod extends Shortcut {
         
         inline def setWorkers(value: js.Array[ClusterWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
         
-        inline def setWorkersVarargs(value: ClusterWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
+        inline def setWorkersVarargs(value: ClusterWorker*): Self = StObject.set(x, "workers", js.Array(value*))
       }
     }
     
@@ -121,26 +120,18 @@ object mod extends Shortcut {
       
       val cmd: CMD = js.native
       
+      def on(event: start | stop | restart, handler: js.Function0[Any]): this.type = js.native
+      def on(event: setSize | resize, handler: js.Function1[/* size */ Double, Any]): this.type = js.native
       @JSName("on")
-      def on_error(event: error, handler: js.Function1[/* error */ Error | js.Array[Error], js.Any]): this.type = js.native
+      def on_error(event: error, handler: js.Function1[/* error */ js.Error | js.Array[js.Error], Any]): this.type = js.native
       @JSName("on")
-      def on_resize(event: resize, handler: js.Function1[/* size */ Double, js.Any]): this.type = js.native
+      def on_startRestart(event: startRestart, handler: js.Function1[/* workers */ js.Array[pid], Any]): this.type = js.native
       @JSName("on")
-      def on_restart(event: restart, handler: js.Function0[js.Any]): this.type = js.native
-      @JSName("on")
-      def on_setSize(event: setSize, handler: js.Function1[/* size */ Double, js.Any]): this.type = js.native
-      @JSName("on")
-      def on_start(event: start, handler: js.Function0[js.Any]): this.type = js.native
-      @JSName("on")
-      def on_startRestart(event: startRestart, handler: js.Function1[/* workers */ js.Array[pid], js.Any]): this.type = js.native
-      @JSName("on")
-      def on_startWorker(event: startWorker, handler: js.Function1[/* worker */ ClusterWorker, js.Any]): this.type = js.native
-      @JSName("on")
-      def on_stop(event: stop, handler: js.Function0[js.Any]): this.type = js.native
+      def on_startWorker(event: startWorker, handler: js.Function1[/* worker */ ClusterWorker, Any]): this.type = js.native
       @JSName("on")
       def on_stopWorker(
         event: stopWorker,
-        handler: js.Function3[/* worker */ ClusterWorker, /* code */ Double, /* signal */ String, js.Any]
+        handler: js.Function3[/* worker */ ClusterWorker, /* code */ Double, /* signal */ String, Any]
       ): this.type = js.native
       
       val options: StartOptions = js.native
@@ -173,10 +164,10 @@ object mod extends Shortcut {
         * @param [options.throttoleDelay] - Number of milliseconds to delay restarting workers after they are exiting abnormally. Abnormal is defined as as not suicide.
         */
       def start(): this.type = js.native
-      def start(callback: js.Function0[js.Any]): this.type = js.native
-      def start(options: Unit, callback: js.Function0[js.Any]): this.type = js.native
+      def start(callback: js.Function0[Any]): this.type = js.native
+      def start(options: Unit, callback: js.Function0[Any]): this.type = js.native
       def start(options: StartOptions): this.type = js.native
-      def start(options: StartOptions, callback: js.Function0[js.Any]): this.type = js.native
+      def start(options: StartOptions, callback: js.Function0[Any]): this.type = js.native
       
       /**
         * @description Returns the current cluster status
@@ -187,7 +178,7 @@ object mod extends Shortcut {
         * @description Stop the controller, after stopping workers (if the size is being controlled, see setSize()).
         */
       def stop(): this.type = js.native
-      def stop(callback: js.Function0[js.Any]): this.type = js.native
+      def stop(callback: js.Function0[Any]): this.type = js.native
       
       /**
         * @description Disconnect worker id and take increasingly agressive action until it exits.

@@ -1,35 +1,25 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.vegaLiteStrings.`bottom-left`
-import typings.vegaLite.vegaLiteStrings.`bottom-right`
-import typings.vegaLite.vegaLiteStrings.`top-left`
-import typings.vegaLite.vegaLiteStrings.`top-right`
-import typings.vegaLite.vegaLiteStrings.all
-import typings.vegaLite.vegaLiteStrings.bottom
-import typings.vegaLite.vegaLiteStrings.each
-import typings.vegaLite.vegaLiteStrings.greedy
-import typings.vegaLite.vegaLiteStrings.left
-import typings.vegaLite.vegaLiteStrings.none
-import typings.vegaLite.vegaLiteStrings.number
-import typings.vegaLite.vegaLiteStrings.parity
-import typings.vegaLite.vegaLiteStrings.right
-import typings.vegaLite.vegaLiteStrings.time
-import typings.vegaLite.vegaLiteStrings.top
-import typings.vegaLite.vegaLiteStrings.utc
+import typings.vegaTypings.axisMod.LabelOverlap
 import typings.vegaTypings.axisMod.TickCount
 import typings.vegaTypings.axisMod.TimeFormatSpecifier
 import typings.vegaTypings.encodeMod.Orientation
+import typings.vegaTypings.encodeMod.Text
+import typings.vegaTypings.layoutMod.LayoutAlign
 import typings.vegaTypings.legendMod.LegendEncode
+import typings.vegaTypings.legendMod.LegendOrient
 import typings.vegaTypings.legendMod.LegendType
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.valuesMod.AlignValue
 import typings.vegaTypings.valuesMod.AnchorValue
 import typings.vegaTypings.valuesMod.ColorValue
 import typings.vegaTypings.valuesMod.DashArrayValue
+import typings.vegaTypings.valuesMod.FontStyleValue
 import typings.vegaTypings.valuesMod.FontWeightValue
 import typings.vegaTypings.valuesMod.NumberValue
 import typings.vegaTypings.valuesMod.OrientValue
 import typings.vegaTypings.valuesMod.StringValue
+import typings.vegaTypings.valuesMod.SymbolShapeValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +49,7 @@ trait ClipHeight extends StObject {
   
   var format: js.UndefOr[String | SignalRef | TimeFormatSpecifier] = js.undefined
   
-  var formatType: js.UndefOr[number | time | SignalRef | utc] = js.undefined
+  var formatType: js.UndefOr[SignalRef | typings.vegaTypings.axisMod.FormatType] = js.undefined
   
   var gradientLength: js.UndefOr[Double | SignalRef] = js.undefined
   
@@ -71,7 +61,7 @@ trait ClipHeight extends StObject {
   
   var gradientThickness: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var gridAlign: js.UndefOr[all | none | SignalRef | each] = js.undefined
+  var gridAlign: js.UndefOr[SignalRef | LayoutAlign] = js.undefined
   
   var labelAlign: js.UndefOr[AlignValue] = js.undefined
   
@@ -83,7 +73,7 @@ trait ClipHeight extends StObject {
   
   var labelFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var labelFontStyle: js.UndefOr[StringValue] = js.undefined
+  var labelFontStyle: js.UndefOr[FontStyleValue] = js.undefined
   
   var labelFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
@@ -93,7 +83,7 @@ trait ClipHeight extends StObject {
   
   var labelOpacity: js.UndefOr[NumberValue] = js.undefined
   
-  var labelOverlap: js.UndefOr[Boolean | SignalRef | parity | greedy] = js.undefined
+  var labelOverlap: js.UndefOr[SignalRef | LabelOverlap] = js.undefined
   
   var labelPadding: js.UndefOr[NumberValue] = js.undefined
   
@@ -107,9 +97,7 @@ trait ClipHeight extends StObject {
   
   var opacity: js.UndefOr[String] = js.undefined
   
-  var orient: js.UndefOr[
-    left | right | none | bottom | top | SignalRef | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-  ] = js.undefined
+  var orient: js.UndefOr[SignalRef | LegendOrient] = js.undefined
   
   var padding: js.UndefOr[NumberValue] = js.undefined
   
@@ -145,13 +133,13 @@ trait ClipHeight extends StObject {
   
   var symbolStrokeWidth: js.UndefOr[NumberValue] = js.undefined
   
-  var symbolType: js.UndefOr[StringValue] = js.undefined
+  var symbolType: js.UndefOr[SymbolShapeValue] = js.undefined
   
   var tickCount: js.UndefOr[TickCount] = js.undefined
   
   var tickMinStep: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
+  var title: js.UndefOr[SignalRef | Text] = js.undefined
   
   var titleAlign: js.UndefOr[AlignValue] = js.undefined
   
@@ -165,7 +153,7 @@ trait ClipHeight extends StObject {
   
   var titleFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var titleFontStyle: js.UndefOr[StringValue] = js.undefined
+  var titleFontStyle: js.UndefOr[FontStyleValue] = js.undefined
   
   var titleFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
@@ -181,7 +169,7 @@ trait ClipHeight extends StObject {
   
   var `type`: js.UndefOr[LegendType] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
+  var values: js.UndefOr[js.Array[Any] | SignalRef] = js.undefined
   
   var zindex: js.UndefOr[Double] = js.undefined
 }
@@ -238,7 +226,7 @@ object ClipHeight {
     
     inline def setFormat(value: String | SignalRef | TimeFormatSpecifier): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatType(value: number | time | SignalRef | utc): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: SignalRef | typings.vegaTypings.axisMod.FormatType): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
@@ -266,7 +254,7 @@ object ClipHeight {
     
     inline def setGradientThicknessUndefined: Self = StObject.set(x, "gradientThickness", js.undefined)
     
-    inline def setGridAlign(value: all | none | SignalRef | each): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
+    inline def setGridAlign(value: SignalRef | LayoutAlign): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
     
     inline def setGridAlignUndefined: Self = StObject.set(x, "gridAlign", js.undefined)
     
@@ -290,7 +278,7 @@ object ClipHeight {
     
     inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
     
-    inline def setLabelFontStyle(value: StringValue): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
+    inline def setLabelFontStyle(value: FontStyleValue): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
     
     inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
     
@@ -312,7 +300,7 @@ object ClipHeight {
     
     inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
     
-    inline def setLabelOverlap(value: Boolean | SignalRef | parity | greedy): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
+    inline def setLabelOverlap(value: SignalRef | LabelOverlap): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
     
     inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
     
@@ -340,9 +328,7 @@ object ClipHeight {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOrient(
-      value: left | right | none | bottom | top | SignalRef | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-    ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: SignalRef | LegendOrient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
     inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
@@ -388,7 +374,7 @@ object ClipHeight {
     
     inline def setSymbolDashUndefined: Self = StObject.set(x, "symbolDash", js.undefined)
     
-    inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value :_*))
+    inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value*))
     
     inline def setSymbolFillColor(value: ColorValue): Self = StObject.set(x, "symbolFillColor", value.asInstanceOf[js.Any])
     
@@ -422,7 +408,7 @@ object ClipHeight {
     
     inline def setSymbolStrokeWidthUndefined: Self = StObject.set(x, "symbolStrokeWidth", js.undefined)
     
-    inline def setSymbolType(value: StringValue): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: SymbolShapeValue): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
@@ -434,7 +420,7 @@ object ClipHeight {
     
     inline def setTickMinStepUndefined: Self = StObject.set(x, "tickMinStep", js.undefined)
     
-    inline def setTitle(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: SignalRef | Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleAlign(value: AlignValue): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
@@ -462,7 +448,7 @@ object ClipHeight {
     
     inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
     
-    inline def setTitleFontStyle(value: StringValue): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
+    inline def setTitleFontStyle(value: FontStyleValue): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
     
     inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
     
@@ -494,17 +480,17 @@ object ClipHeight {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setType(value: LegendType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValues(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     

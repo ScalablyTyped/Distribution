@@ -14,7 +14,7 @@ trait SchemaReviewReplyResult extends StObject {
   /**
     * The reply text that was applied.
     */
-  var replyText: js.UndefOr[String] = js.undefined
+  var replyText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReviewReplyResult {
   
@@ -30,6 +30,8 @@ object SchemaReviewReplyResult {
     inline def setLastEditedUndefined: Self = StObject.set(x, "lastEdited", js.undefined)
     
     inline def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
+    
+    inline def setReplyTextNull: Self = StObject.set(x, "replyText", null)
     
     inline def setReplyTextUndefined: Self = StObject.set(x, "replyText", js.undefined)
   }

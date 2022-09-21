@@ -43,6 +43,6 @@ object GetUsageAndQuotaResponse {
     
     inline def setUsageBreakdown(value: js.Array[UsageForType]): Self = StObject.set(x, "usageBreakdown", value.asInstanceOf[js.Any])
     
-    inline def setUsageBreakdownVarargs(value: UsageForType*): Self = StObject.set(x, "usageBreakdown", js.Array(value :_*))
+    inline def setUsageBreakdownVarargs(value: UsageForType*): Self = StObject.set(x, "usageBreakdown", js.Array(value*))
   }
 }

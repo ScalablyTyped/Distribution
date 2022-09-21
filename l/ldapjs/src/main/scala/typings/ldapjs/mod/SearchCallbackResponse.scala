@@ -20,7 +20,7 @@ trait SearchCallbackResponse extends EventEmitter {
   @JSName("on")
   def on_page(
     event: page,
-    listener: js.Function2[/* res */ LDAPResult, /* cb */ js.Function1[/* repeated */ js.Any, Unit], Unit]
+    listener: js.Function2[/* res */ LDAPResult, /* cb */ js.Function1[/* repeated */ Any, Unit], Unit]
   ): this.type = js.native
   @JSName("on")
   def on_searchEntry(event: searchEntry_, listener: js.Function1[/* entry */ SearchEntry, Unit]): this.type = js.native

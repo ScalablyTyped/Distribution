@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLInputElement")
 @js.native
-/* private */ class HTMLInputElement ()
+/* private */ open class HTMLInputElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLInputElement

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-run-path
 
-Typings are for version 4.0.1
+Typings are for version 5.1.0
 
 ## Library description:
 Get your PATH prepended with locally installed binaries
@@ -10,10 +10,10 @@ Get your PATH prepended with locally installed binaries
 | ------------------ | :-------------: |
 | Full name          | npm-run-path |
 | Keywords           | npm, run, path, package, bin, binary, binaries, script, cli, command-line, execute, executable |
-| # releases         | 5 |
-| # dependents       | 165 |
-| # downloads        | 817742669 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6310168233333334E8 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/npm-run-path#readme)

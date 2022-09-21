@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeadObjectResult extends StObject {
   
-  // response status, maybe 200 or 304
   var meta: UserMeta
   
   var res: NormalSuccessResponse
   
+  /** response status, maybe 200 or 304 */
   var status: Double
 }
 object HeadObjectResult {

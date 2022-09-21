@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "AnonymousStream")
 @js.native
-class AnonymousStream protected ()
+open class AnonymousStream protected ()
   extends typings.wonderFrp.anonymousStreamMod.AnonymousStream {
   def this(subscribeFunc: js.Function) = this()
 }

@@ -1,0 +1,34 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait RequestBodyContentApplicationjsonExcludeattachments extends StObject {
+  
+  var parameters: PathOrg
+  
+  var requestBody: ContentApplicationjsonExcludeattachments
+  
+  var responses: `201Content98`
+}
+object RequestBodyContentApplicationjsonExcludeattachments {
+  
+  inline def apply(
+    parameters: PathOrg,
+    requestBody: ContentApplicationjsonExcludeattachments,
+    responses: `201Content98`
+  ): RequestBodyContentApplicationjsonExcludeattachments = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestBodyContentApplicationjsonExcludeattachments]
+  }
+  
+  extension [Self <: RequestBodyContentApplicationjsonExcludeattachments](x: Self) {
+    
+    inline def setParameters(value: PathOrg): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBody(value: ContentApplicationjsonExcludeattachments): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `201Content98`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+  }
+}

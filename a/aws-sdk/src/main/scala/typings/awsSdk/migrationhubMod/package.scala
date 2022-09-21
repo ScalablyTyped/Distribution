@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApplicationId = java.lang.String
+type ApplicationId = String
 
-type ApplicationIds = js.Array[typings.awsSdk.migrationhubMod.ApplicationId]
+type ApplicationIds = js.Array[ApplicationId]
 
-type ApplicationStateList = js.Array[typings.awsSdk.migrationhubMod.ApplicationState]
+type ApplicationStateList = js.Array[ApplicationState]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_STARTED
@@ -17,43 +17,43 @@ type ApplicationStateList = js.Array[typings.awsSdk.migrationhubMod.ApplicationS
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type ApplicationStatus = typings.awsSdk.migrationhubMod._ApplicationStatus | java.lang.String
+type ApplicationStatus = _ApplicationStatus | String
 
-type ConfigurationId = java.lang.String
+type ConfigurationId = String
 
-type CreatedArtifactDescription = java.lang.String
+type CreatedArtifactDescription = String
 
-type CreatedArtifactList = js.Array[typings.awsSdk.migrationhubMod.CreatedArtifact]
+type CreatedArtifactList = js.Array[CreatedArtifact]
 
-type CreatedArtifactName = java.lang.String
+type CreatedArtifactName = String
 
-type DiscoveredResourceDescription = java.lang.String
+type DiscoveredResourceDescription = String
 
-type DiscoveredResourceList = js.Array[typings.awsSdk.migrationhubMod.DiscoveredResource]
+type DiscoveredResourceList = js.Array[DiscoveredResource]
 
-type DryRun = scala.Boolean
+type DryRun = Boolean
 
-type LatestResourceAttributeList = js.Array[typings.awsSdk.migrationhubMod.ResourceAttribute]
+type LatestResourceAttributeList = js.Array[ResourceAttribute]
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MaxResultsCreatedArtifacts = scala.Double
+type MaxResultsCreatedArtifacts = Double
 
-type MaxResultsResources = scala.Double
+type MaxResultsResources = Double
 
-type MigrationTaskName = java.lang.String
+type MigrationTaskName = String
 
-type MigrationTaskSummaryList = js.Array[typings.awsSdk.migrationhubMod.MigrationTaskSummary]
+type MigrationTaskSummaryList = js.Array[MigrationTaskSummary]
 
-type NextUpdateSeconds = scala.Double
+type NextUpdateSeconds = Double
 
-type ProgressPercent = scala.Double
+type ProgressPercent = Double
 
-type ProgressUpdateStream = java.lang.String
+type ProgressUpdateStream = String
 
-type ProgressUpdateStreamSummaryList = js.Array[typings.awsSdk.migrationhubMod.ProgressUpdateStreamSummary]
+type ProgressUpdateStreamSummaryList = js.Array[ProgressUpdateStreamSummary]
 
-type ResourceAttributeList = js.Array[typings.awsSdk.migrationhubMod.ResourceAttribute]
+type ResourceAttributeList = js.Array[ResourceAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IPV4_ADDRESS
@@ -68,11 +68,11 @@ type ResourceAttributeList = js.Array[typings.awsSdk.migrationhubMod.ResourceAtt
   - typings.awsSdk.awsSdkStrings.MOTHERBOARD_SERIAL_NUMBER
   - java.lang.String
 */
-type ResourceAttributeType = typings.awsSdk.migrationhubMod._ResourceAttributeType | java.lang.String
+type ResourceAttributeType = _ResourceAttributeType | String
 
-type ResourceAttributeValue = java.lang.String
+type ResourceAttributeValue = String
 
-type ResourceName = java.lang.String
+type ResourceName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_STARTED
@@ -81,17 +81,17 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type Status = typings.awsSdk.migrationhubMod._Status | java.lang.String
+type Status = _Status | String
 
-type StatusDetail = java.lang.String
+type StatusDetail = String
 
-type Token = java.lang.String
+type Token = String
 
-type UpdateDateTime = typings.std.Date
+type UpdateDateTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-05-31`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.migrationhubMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

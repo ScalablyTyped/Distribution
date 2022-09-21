@@ -23,16 +23,17 @@ trait SourceControl extends StObject {
   var commitTemplate: js.UndefOr[String] = js.undefined
   
   /**
-    * The UI-visible count of [resource states](#SourceControlResourceState) of
+    * The UI-visible count of {@link SourceControlResourceState resource states} of
     * this source control.
     *
-    * Equals to the total number of [resource state](#SourceControlResourceState)
-    * of this source control, if undefined.
+    * If undefined, this source control will
+    * - display its UI-visible count as zero, and
+    * - contribute the count of its {@link SourceControlResourceState resource states} to the UI-visible aggregated count for all source controls
     */
   var count: js.UndefOr[Double] = js.undefined
   
   /**
-    * Create a new [resource group](#SourceControlResourceGroup).
+    * Create a new {@link SourceControlResourceGroup resource group}.
     */
   def createResourceGroup(id: String, label: String): SourceControlResourceGroup
   
@@ -47,7 +48,7 @@ trait SourceControl extends StObject {
   val id: String
   
   /**
-    * The [input box](#SourceControlInputBox) for this source control.
+    * The {@link SourceControlInputBox input box} for this source control.
     */
   val inputBox: SourceControlInputBox
   
@@ -57,7 +58,7 @@ trait SourceControl extends StObject {
   val label: String
   
   /**
-    * An optional [quick diff provider](#QuickDiffProvider).
+    * An optional {@link QuickDiffProvider quick diff provider}.
     */
   var quickDiffProvider: js.UndefOr[QuickDiffProvider] = js.undefined
   
@@ -122,6 +123,6 @@ object SourceControl {
     
     inline def setStatusBarCommandsUndefined: Self = StObject.set(x, "statusBarCommands", js.undefined)
     
-    inline def setStatusBarCommandsVarargs(value: Command*): Self = StObject.set(x, "statusBarCommands", js.Array(value :_*))
+    inline def setStatusBarCommandsVarargs(value: Command*): Self = StObject.set(x, "statusBarCommands", js.Array(value*))
   }
 }

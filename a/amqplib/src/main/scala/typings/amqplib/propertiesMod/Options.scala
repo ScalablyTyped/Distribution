@@ -10,7 +10,7 @@ object Options {
     
     var alternateExchange: js.UndefOr[String] = js.undefined
     
-    var arguments: js.UndefOr[js.Any] = js.undefined
+    var arguments: js.UndefOr[Any] = js.undefined
     
     var autoDelete: js.UndefOr[Boolean] = js.undefined
     
@@ -31,7 +31,7 @@ object Options {
       
       inline def setAlternateExchangeUndefined: Self = StObject.set(x, "alternateExchange", js.undefined)
       
-      inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
@@ -51,7 +51,7 @@ object Options {
   
   trait AssertQueue extends StObject {
     
-    var arguments: js.UndefOr[js.Any] = js.undefined
+    var arguments: js.UndefOr[Any] = js.undefined
     
     var autoDelete: js.UndefOr[Boolean] = js.undefined
     
@@ -80,7 +80,7 @@ object Options {
     
     extension [Self <: AssertQueue](x: Self) {
       
-      inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
@@ -237,7 +237,7 @@ object Options {
   
   trait Consume extends StObject {
     
-    var arguments: js.UndefOr[js.Any] = js.undefined
+    var arguments: js.UndefOr[Any] = js.undefined
     
     var consumerTag: js.UndefOr[String] = js.undefined
     
@@ -258,7 +258,7 @@ object Options {
     
     extension [Self <: Consume](x: Self) {
       
-      inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
@@ -365,7 +365,7 @@ object Options {
     
     var expiration: js.UndefOr[String | Double] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var mandatory: js.UndefOr[Boolean] = js.undefined
     
@@ -400,13 +400,13 @@ object Options {
       
       inline def setBCCUndefined: Self = StObject.set(x, "BCC", js.undefined)
       
-      inline def setBCCVarargs(value: String*): Self = StObject.set(x, "BCC", js.Array(value :_*))
+      inline def setBCCVarargs(value: String*): Self = StObject.set(x, "BCC", js.Array(value*))
       
       inline def setCC(value: String | js.Array[String]): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
       
       inline def setCCUndefined: Self = StObject.set(x, "CC", js.undefined)
       
-      inline def setCCVarargs(value: String*): Self = StObject.set(x, "CC", js.Array(value :_*))
+      inline def setCCVarargs(value: String*): Self = StObject.set(x, "CC", js.Array(value*))
       
       inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
@@ -428,7 +428,7 @@ object Options {
       
       inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       

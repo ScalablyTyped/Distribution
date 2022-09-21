@@ -1,6 +1,5 @@
 package typings.fluent
 
-import typings.std.Error
 import typings.std.IterableIterator
 import typings.std.Map
 import typings.std.TemplateStringsArray
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("fluent", "FluentBundle")
   @js.native
-  class FluentBundle protected () extends StObject {
+  open class FluentBundle protected () extends StObject {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
     def this(locales: String, options: FluentBundleContructorOptions) = this()
@@ -28,8 +27,8 @@ object mod {
     
     def format(message: js.Array[FluentNode]): String = js.native
     def format(message: js.Array[FluentNode], args: js.Object): String = js.native
-    def format(message: js.Array[FluentNode], args: js.Object, errors: js.Array[String | Error]): String = js.native
-    def format(message: js.Array[FluentNode], args: Unit, errors: js.Array[String | Error]): String = js.native
+    def format(message: js.Array[FluentNode], args: js.Object, errors: js.Array[String | js.Error]): String = js.native
+    def format(message: js.Array[FluentNode], args: Unit, errors: js.Array[String | js.Error]): String = js.native
     
     def getMessage(id: String): js.UndefOr[js.Array[FluentNode]] = js.native
     
@@ -42,29 +41,29 @@ object mod {
   
   @JSImport("fluent", "FluentDateTime")
   @js.native
-  class FluentDateTime protected () extends FluentType {
-    def this(value: js.Any, opts: js.Object) = this()
+  open class FluentDateTime protected () extends FluentType {
+    def this(value: Any, opts: js.Object) = this()
   }
   
   @JSImport("fluent", "FluentNone")
   @js.native
-  class FluentNone protected () extends FluentType {
-    def this(value: js.Any, opts: js.Object) = this()
+  open class FluentNone protected () extends FluentType {
+    def this(value: Any, opts: js.Object) = this()
   }
   
   @JSImport("fluent", "FluentNumber")
   @js.native
-  class FluentNumber protected () extends FluentType {
-    def this(value: js.Any, opts: js.Object) = this()
+  open class FluentNumber protected () extends FluentType {
+    def this(value: Any, opts: js.Object) = this()
   }
   
   @JSImport("fluent", "FluentResource")
   @js.native
-  class FluentResource ()
+  open class FluentResource ()
     extends StObject
        with Map[
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
         ]
   /* static members */
   object FluentResource {
@@ -78,8 +77,8 @@ object mod {
   
   @JSImport("fluent", "FluentType")
   @js.native
-  class FluentType protected () extends StObject {
-    def this(value: js.Any, opts: js.Object) = this()
+  open class FluentType protected () extends StObject {
+    def this(value: Any, opts: js.Object) = this()
     
     def toString(bundle: FluentBundle): String = js.native
   }
@@ -90,7 +89,7 @@ object mod {
     
     var functions: js.UndefOr[js.Object] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var useIsolating: js.UndefOr[Boolean] = js.undefined
   }
@@ -107,7 +106,7 @@ object mod {
       
       inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      inline def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* repeated */ Any => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       

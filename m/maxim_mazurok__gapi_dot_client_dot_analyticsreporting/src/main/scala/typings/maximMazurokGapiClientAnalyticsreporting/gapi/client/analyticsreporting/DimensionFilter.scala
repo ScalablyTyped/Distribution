@@ -45,7 +45,7 @@ object DimensionFilter {
     
     inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     

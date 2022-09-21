@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDashboardPermissionsRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the dashboard that you're describing permissions for.
+    * The ID of the Amazon Web Services account that contains the dashboard that you're describing permissions for.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

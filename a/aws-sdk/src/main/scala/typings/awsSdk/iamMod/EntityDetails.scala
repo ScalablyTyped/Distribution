@@ -12,9 +12,9 @@ trait EntityDetails extends StObject {
   var EntityInfo: typings.awsSdk.iamMod.EntityInfo
   
   /**
-    * The date and time, in ISO 8601 date-time format, when the authenticated entity last attempted to access AWS. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The date and time, in ISO 8601 date-time format, when the authenticated entity last attempted to access Amazon Web Services. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
-  var LastAuthenticated: js.UndefOr[dateType] = js.undefined
+  var LastAuthenticated: js.UndefOr[js.Date] = js.undefined
 }
 object EntityDetails {
   
@@ -27,7 +27,7 @@ object EntityDetails {
     
     inline def setEntityInfo(value: EntityInfo): Self = StObject.set(x, "EntityInfo", value.asInstanceOf[js.Any])
     
-    inline def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticated(value: js.Date): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
     
     inline def setLastAuthenticatedUndefined: Self = StObject.set(x, "LastAuthenticated", js.undefined)
   }

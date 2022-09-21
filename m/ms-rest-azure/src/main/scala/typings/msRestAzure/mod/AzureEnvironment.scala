@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "AzureEnvironment")
 @js.native
-class AzureEnvironment protected () extends StObject {
+open class AzureEnvironment protected () extends StObject {
   /**
     * Initializes a new instance of the AzureEnvironment class.
     * @param {string} parameters.name - The Environment name

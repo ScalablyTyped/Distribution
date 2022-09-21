@@ -12,6 +12,8 @@ trait ScaleRangeSlider
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#disabled)
     */
   var disabled: Boolean = js.native
@@ -53,6 +55,8 @@ trait ScaleRangeSlider
   
   /**
     * The region that the scale thumbnails will focus on.
+    *
+    * @default "US"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#region)
     */

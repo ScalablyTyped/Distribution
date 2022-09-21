@@ -21,13 +21,16 @@ trait Message extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[Any]
   ] = js.undefined
   
   /** The message type for this message. MSH-9.1. */
   var messageType: js.UndefOr[String] = js.undefined
   
-  /** Resource name of the Message, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`. Assigned by the server. */
+  /**
+    * Resource name of the Message, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`. Assigned by the
+    * server.
+    */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The parsed version of the raw message data. */
@@ -35,6 +38,9 @@ trait Message extends StObject {
   
   /** All patient IDs listed in the PID-2, PID-3, and PID-4 segments of this message. */
   var patientIds: js.UndefOr[js.Array[PatientId]] = js.undefined
+  
+  /** The parsed version of the raw message data schematized according to this store's schemas and type definitions. */
+  var schematizedData: js.UndefOr[SchematizedData] = js.undefined
   
   /** The hospital that this message came from. MSH-4. */
   var sendFacility: js.UndefOr[String] = js.undefined
@@ -62,7 +68,7 @@ object Message {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -83,7 +89,11 @@ object Message {
     
     inline def setPatientIdsUndefined: Self = StObject.set(x, "patientIds", js.undefined)
     
-    inline def setPatientIdsVarargs(value: PatientId*): Self = StObject.set(x, "patientIds", js.Array(value :_*))
+    inline def setPatientIdsVarargs(value: PatientId*): Self = StObject.set(x, "patientIds", js.Array(value*))
+    
+    inline def setSchematizedData(value: SchematizedData): Self = StObject.set(x, "schematizedData", value.asInstanceOf[js.Any])
+    
+    inline def setSchematizedDataUndefined: Self = StObject.set(x, "schematizedData", js.undefined)
     
     inline def setSendFacility(value: String): Self = StObject.set(x, "sendFacility", value.asInstanceOf[js.Any])
     

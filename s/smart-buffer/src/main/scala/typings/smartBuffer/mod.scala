@@ -1,7 +1,7 @@
 package typings.smartBuffer
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,19 +15,19 @@ object mod {
     *
     * @param options { SmartBufferOptions } The SmartBufferOptions to apply to this instance.
     */
-  class SmartBuffer () extends StObject {
+  open class SmartBuffer () extends StObject {
     def this(options: SmartBufferOptions) = this()
     
-    /* private */ var _buff: js.Any = js.native
+    /* private */ var _buff: Any = js.native
     
-    /* private */ var _encoding: js.Any = js.native
+    /* private */ var _encoding: Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to write at least the given amount of data.
       *
       * @param minLength { Number } The minimum length of the data needs to be written.
       */
-    /* private */ var _ensureCapacity: js.Any = js.native
+    /* private */ var _ensureCapacity: Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to write data.
@@ -35,7 +35,7 @@ object mod {
       * @param dataLength { Number } The length of the data that needs to be written.
       * @param offset { Number } The offset of the data to be written (defaults to writeOffset).
       */
-    /* private */ var _ensureWriteable: js.Any = js.native
+    /* private */ var _ensureWriteable: Any = js.native
     
     /**
       * Handles writing or insert of a Buffer.
@@ -43,7 +43,7 @@ object mod {
       * @param value { Buffer } The Buffer to write.
       * @param offset { Number } The offset to write the Buffer to.
       */
-    /* private */ var _handleBuffer: js.Any = js.native
+    /* private */ var _handleBuffer: Any = js.native
     
     /**
       * Handles inserting and writing strings.
@@ -53,7 +53,7 @@ object mod {
       * @param arg2 { Number | String } The offset to insert the string at, or the BufferEncoding to use.
       * @param encoding { String } The BufferEncoding to use for writing strings (defaults to instance encoding).
       */
-    /* private */ var _handleString: js.Any = js.native
+    /* private */ var _handleString: Any = js.native
     
     /**
       * Inserts a numeric number value based on the given offset and value.
@@ -67,7 +67,7 @@ object mod {
       *
       * @returns SmartBuffer this buffer
       */
-    /* private */ var _insertNumberValue: js.Any = js.native
+    /* private */ var _insertNumberValue: Any = js.native
     
     /**
       * Reads a numeric number value using the provided function.
@@ -80,9 +80,9 @@ object mod {
       *
       * @returns { T } the number value
       */
-    /* private */ var _readNumberValue: js.Any = js.native
+    /* private */ var _readNumberValue: Any = js.native
     
-    /* private */ var _readOffset: js.Any = js.native
+    /* private */ var _readOffset: Any = js.native
     
     /**
       * Writes a numeric number value based on the given offset and value.
@@ -96,9 +96,9 @@ object mod {
       *
       * @returns SmartBuffer this buffer
       */
-    /* private */ var _writeNumberValue: js.Any = js.native
+    /* private */ var _writeNumberValue: Any = js.native
     
-    /* private */ var _writeOffset: js.Any = js.native
+    /* private */ var _writeOffset: Any = js.native
     
     /**
       * Clears the SmartBuffer instance to its original empty state.
@@ -128,7 +128,7 @@ object mod {
       * @param dataLength { Number } The length of the data that needs to be written.
       * @param offset { Number } The offset of the data to be written.
       */
-    /* private */ var ensureInsertable: js.Any = js.native
+    /* private */ var ensureInsertable: Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to read data.
@@ -136,7 +136,7 @@ object mod {
       * @param length { Number } The length of the data that needs to be read.
       * @param offset { Number } The offset of the data that needs to be read.
       */
-    /* private */ var ensureReadable: js.Any = js.native
+    /* private */ var ensureReadable: Any = js.native
     
     /**
       * Inserts a BigInt64BE value at the given offset value.

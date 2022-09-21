@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamespaceFilter extends StObject {
   
   /**
-    * The operator that you want to use to determine whether ListNamespaces returns a namespace. Valid values for condition include:    EQ: When you specify EQ for the condition, you can choose to list only public namespaces or private namespaces, but not both. EQ is the default condition and can be omitted.    IN: When you specify IN for the condition, you can choose to list public namespaces, private namespaces, or both.     BETWEEN: Not applicable  
+    * The operator that you want to use to determine whether ListNamespaces returns a namespace. Valid values for condition include:  EQ  When you specify EQ for the condition, you can choose to list only public namespaces or private namespaces, but not both. EQ is the default condition and can be omitted.  IN  When you specify IN for the condition, you can choose to list public namespaces, private namespaces, or both.   BETWEEN   Not applicable  
     */
   var Condition: js.UndefOr[FilterCondition] = js.undefined
   
@@ -38,6 +38,6 @@ object NamespaceFilter {
     
     inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

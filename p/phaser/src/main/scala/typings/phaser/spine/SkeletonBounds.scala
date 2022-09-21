@@ -38,7 +38,7 @@ trait SkeletonBounds extends StObject {
   
   var minY: Double
   
-  /* private */ var polygonPool: js.Any
+  /* private */ var polygonPool: Any
   
   var polygons: js.Array[ArrayLike[Double]]
   
@@ -63,7 +63,7 @@ object SkeletonBounds {
     maxY: Double,
     minX: Double,
     minY: Double,
-    polygonPool: js.Any,
+    polygonPool: Any,
     polygons: js.Array[ArrayLike[Double]],
     update: (Skeleton, Boolean) => Unit
   ): SkeletonBounds = {
@@ -83,7 +83,7 @@ object SkeletonBounds {
     
     inline def setBoundingBoxes(value: js.Array[BoundingBoxAttachment]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
     
-    inline def setBoundingBoxesVarargs(value: BoundingBoxAttachment*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
+    inline def setBoundingBoxesVarargs(value: BoundingBoxAttachment*): Self = StObject.set(x, "boundingBoxes", js.Array(value*))
     
     inline def setContainsPoint(value: (Double, Double) => BoundingBoxAttachment): Self = StObject.set(x, "containsPoint", js.Any.fromFunction2(value))
     
@@ -107,11 +107,11 @@ object SkeletonBounds {
     
     inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
-    inline def setPolygonPool(value: js.Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
+    inline def setPolygonPool(value: Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
     
     inline def setPolygons(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     
-    inline def setPolygonsVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "polygons", js.Array(value*))
     
     inline def setUpdate(value: (Skeleton, Boolean) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }

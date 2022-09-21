@@ -12,7 +12,7 @@ object pushOptionsMod {
   
   trait PushOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var callbacks: js.UndefOr[RemoteCallbacks] = js.undefined
     
@@ -41,7 +41,7 @@ object pushOptionsMod {
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      inline def setCustomHeadersVarargs(value: String*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+      inline def setCustomHeadersVarargs(value: String*): Self = StObject.set(x, "customHeaders", js.Array(value*))
       
       inline def setPbParallelism(value: Double): Self = StObject.set(x, "pbParallelism", value.asInstanceOf[js.Any])
       

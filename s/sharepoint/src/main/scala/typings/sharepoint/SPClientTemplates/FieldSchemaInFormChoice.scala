@@ -25,7 +25,7 @@ object FieldSchemaInFormChoice {
     FieldType: String,
     FormatType: ChoiceFormatType,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     Name: String,
     ReadOnlyField: Boolean,
@@ -43,7 +43,7 @@ object FieldSchemaInFormChoice {
     
     inline def setChoices(value: js.Array[String]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
-    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "Choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "Choices", js.Array(value*))
     
     inline def setFormatType(value: ChoiceFormatType): Self = StObject.set(x, "FormatType", value.asInstanceOf[js.Any])
   }

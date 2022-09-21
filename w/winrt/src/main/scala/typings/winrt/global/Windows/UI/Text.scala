@@ -82,7 +82,7 @@ object Text {
   
   @JSGlobal("Windows.UI.Text.FontWeights")
   @js.native
-  class FontWeights ()
+  open class FontWeights ()
     extends StObject
        with IFontWeights
   /* static members */
@@ -505,7 +505,7 @@ object Text {
   
   @JSGlobal("Windows.UI.Text.TextConstants")
   @js.native
-  class TextConstants ()
+  open class TextConstants ()
     extends StObject
        with typings.winrt.Windows.UI.Text.TextConstants
   /* static members */

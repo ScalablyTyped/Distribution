@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalCheckoutQueryFilter")
 @js.native
-class TerminalCheckoutQueryFilter () extends StObject {
+open class TerminalCheckoutQueryFilter () extends StObject {
   
   /**
     * Time range for the beginning of the reporting period. Inclusive. Default: The current time minus one day.

@@ -19,7 +19,7 @@ trait FunctionEventInvokeConfig extends StObject {
   /**
     * The date and time that the configuration was last updated.
     */
-  var LastModified: js.UndefOr[Date] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum age of a request that Lambda sends to a function for processing.
@@ -48,7 +48,7 @@ object FunctionEventInvokeConfig {
     
     inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
     
-    inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

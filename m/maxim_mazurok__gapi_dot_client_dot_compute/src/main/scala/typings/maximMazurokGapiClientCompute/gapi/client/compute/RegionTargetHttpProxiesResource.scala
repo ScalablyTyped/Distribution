@@ -1,8 +1,9 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.AltCallbackFieldsKeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.Filter
-import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
 import typings.maximMazurokGapiClientCompute.anon.RegionTargetHttpProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetHttpProxy
 import org.scalablytyped.runtime.StObject
@@ -21,8 +22,8 @@ trait RegionTargetHttpProxiesResource extends StObject {
   def get(request: RegionTargetHttpProxy): Request[TargetHttpProxy] = js.native
   
   /** Creates a TargetHttpProxy resource in the specified project and region using the data included in the request. */
-  def insert(request: KeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: TargetHttpProxy): Request[Operation] = js.native
+  def insert(request: AltCallbackFieldsKeyOauthtokenPrettyPrint): Request[Operation] = js.native
+  def insert(request: Oauthtoken, body: TargetHttpProxy): Request[Operation] = js.native
   
   /** Retrieves the list of TargetHttpProxy resources available to the specified project in the specified region. */
   def list(): Request[TargetHttpProxyList] = js.native

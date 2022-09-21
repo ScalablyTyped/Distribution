@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("@keystonejs/file-adapters", "CloudinaryFileAdapter")
   @js.native
-  class CloudinaryFileAdapter protected () extends StObject {
+  open class CloudinaryFileAdapter protected () extends StObject {
     def this(options: CloudinaryFileAdapterConfig) = this()
     
     def publicUrl(params: FilenameString): String = js.native
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("@keystonejs/file-adapters", "LocalFileAdapter")
   @js.native
-  class LocalFileAdapter protected () extends StObject {
+  open class LocalFileAdapter protected () extends StObject {
     def this(options: LocalFileAdapterConfig) = this()
     
     def publicUrl(params: FilenameString): String = js.native

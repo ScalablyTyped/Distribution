@@ -31,7 +31,7 @@ object XFilterGroupManager {
   inline def apply(
     acquire: () => Unit,
     appendFilterGroup: (String, SeqEquiv[StringPair]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFilterGroupManager = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendFilterGroup = js.Any.fromFunction2(appendFilterGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

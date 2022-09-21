@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OLEObject extends StObject {
   
-  def Activate(): js.Any = js.native
+  def Activate(): Any = js.native
   
   var AltHTML: String = js.native
   
@@ -27,26 +27,26 @@ trait OLEObject extends StObject {
   @JSName("BottomRightCell")
   val BottomRightCell_Original: Range = js.native
   
-  def BringToFront(): js.Any = js.native
+  def BringToFront(): Any = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   /**
     * @param Appearance [Appearance=2]
     * @param Format [Format=-4147]
     */
-  def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(): Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Any = js.native
   
   val Creator: XlCreator = js.native
   
-  def Cut(): js.Any = js.native
+  def Cut(): Any = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
-  def Duplicate(): js.Any = js.native
+  def Duplicate(): Any = js.native
   
   var Enabled: Boolean = js.native
   
@@ -71,20 +71,20 @@ trait OLEObject extends StObject {
   
   val OLEType: `0` | `1` = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
   var OnAction: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Placement: XlPlacement = js.native
   
   var PrintObject: Boolean = js.native
   
-  def Select(): js.Any = js.native
-  def Select(Replace: Boolean): js.Any = js.native
+  def Select(): Any = js.native
+  def Select(Replace: Boolean): Any = js.native
   
-  def SendToBack(): js.Any = js.native
+  def SendToBack(): Any = js.native
   
   var Shadow: Boolean = js.native
   
@@ -103,11 +103,11 @@ trait OLEObject extends StObject {
   @JSName("TopLeftCell")
   val TopLeftCell_Original: Range = js.native
   
-  def Update(): js.Any = js.native
+  def Update(): Any = js.native
   
   /** @param Verb [Verb=1] */
-  def Verb(): js.Any = js.native
-  def Verb(Verb: XlOLEVerb): js.Any = js.native
+  def Verb(): Any = js.native
+  def Verb(Verb: XlOLEVerb): Any = js.native
   
   var Visible: Boolean = js.native
   

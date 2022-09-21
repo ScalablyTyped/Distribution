@@ -12,7 +12,7 @@ trait CreateUserRequest extends StObject {
   var BrokerId: string
   
   /**
-    * Enables access to the the ActiveMQ Web Console for the ActiveMQ user.
+    * Enables access to the ActiveMQ Web Console for the ActiveMQ user.
     */
   var ConsoleAccess: js.UndefOr[boolean] = js.undefined
   
@@ -22,9 +22,9 @@ trait CreateUserRequest extends StObject {
   var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
-    * Required. The password of the user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas.
+    * Required. The password of the user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas, colons, or equal signs (,:=).
     */
-  var Password: js.UndefOr[string] = js.undefined
+  var Password: string
   
   /**
     * The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
@@ -33,8 +33,8 @@ trait CreateUserRequest extends StObject {
 }
 object CreateUserRequest {
   
-  inline def apply(BrokerId: string, Username: string): CreateUserRequest = {
-    val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
+  inline def apply(BrokerId: string, Password: string, Username: string): CreateUserRequest = {
+    val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
   
@@ -50,11 +50,9 @@ object CreateUserRequest {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setPassword(value: string): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
-    
-    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }

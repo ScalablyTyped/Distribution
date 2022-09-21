@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Cloud9 ()
+open class Cloud9 ()
   extends typings.awsSdk.allMod.Cloud9 {
   def this(options: ClientConfiguration) = this()
 }

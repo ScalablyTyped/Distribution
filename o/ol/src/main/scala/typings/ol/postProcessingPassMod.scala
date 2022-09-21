@@ -13,7 +13,7 @@ object postProcessingPassMod {
   
   @JSImport("ol/webgl/PostProcessingPass", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with WebGLPostProcessingPass {
     def this(options: Options) = this()

@@ -8,7 +8,7 @@ trait Inherit extends StObject {
   
   var inherit: js.UndefOr[Boolean] = js.undefined
   
-  var matchingKeys: js.UndefOr[js.Any] = js.undefined
+  var matchingKeys: js.UndefOr[Any] = js.undefined
 }
 object Inherit {
   
@@ -23,7 +23,7 @@ object Inherit {
     
     inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    inline def setMatchingKeys(value: js.Any): Self = StObject.set(x, "matchingKeys", value.asInstanceOf[js.Any])
+    inline def setMatchingKeys(value: Any): Self = StObject.set(x, "matchingKeys", value.asInstanceOf[js.Any])
     
     inline def setMatchingKeysUndefined: Self = StObject.set(x, "matchingKeys", js.undefined)
   }

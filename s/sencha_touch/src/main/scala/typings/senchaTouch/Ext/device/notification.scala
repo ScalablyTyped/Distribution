@@ -14,7 +14,7 @@ object notification {
     /** [Method] A simple way to show a notification
       * @param config Object An object which contains the following config options:
       */
-    var show: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var show: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Vibrates the device  */
     var vibrate: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -28,7 +28,7 @@ object notification {
     
     extension [Self <: IAbstract](x: Self) {
       
-      inline def setShow(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
@@ -46,7 +46,7 @@ object notification {
       * @param time Object
       */
     @JSName("vibrate")
-    var vibrate_ICordova: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var vibrate_ICordova: js.UndefOr[js.Function1[/* time */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -57,7 +57,7 @@ object notification {
     
     extension [Self <: ICordova](x: Self) {
       
-      inline def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
+      inline def setVibrate(value: /* time */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
       inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     }
@@ -71,7 +71,7 @@ object notification {
       * @param time Object
       */
     @JSName("vibrate")
-    var vibrate_IPhoneGap: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var vibrate_IPhoneGap: js.UndefOr[js.Function1[/* time */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -82,7 +82,7 @@ object notification {
     
     extension [Self <: IPhoneGap](x: Self) {
       
-      inline def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
+      inline def setVibrate(value: /* time */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
       inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     }

@@ -19,5 +19,5 @@ object screensMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Screens", "shouldUseActivityState")
   @js.native
-  val shouldUseActivityState: js.Any = js.native
+  val shouldUseActivityState: Any = js.native
 }

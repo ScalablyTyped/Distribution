@@ -20,36 +20,36 @@ trait XCommand
     * The application specific parameter for this command. See documentation of used application for supported parameters for different commands and target
     * combinations.
     */
-  var Parameter: js.Any
+  var Parameter: Any
   
   /** The application specific target. See documentation of used application for supported targets. */
-  var Target: js.Any
+  var Target: Any
 }
 object XCommand {
   
   inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
-    Begin: js.Any,
+    Begin: Any,
     Command: Double,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
-    Parameter: js.Any,
+    Parameter: Any,
     Parent: XInterface,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
-    Target: js.Any,
+    Target: Any,
     Type: Double,
     UserData: SafeArray[NamedValue],
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XCommand = {
@@ -61,8 +61,8 @@ object XCommand {
     
     inline def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    inline def setParameter(value: js.Any): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Any): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

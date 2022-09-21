@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
 import typings.three.lineMod.Line
 import typings.three.materialMod.Material
 import typings.three.threeBooleans.`true`
@@ -13,7 +12,7 @@ object lineLoopMod {
   
   @JSImport("three/src/objects/LineLoop", "LineLoop")
   @js.native
-  class LineLoop[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Line[TGeometry, TMaterial] {
+  open class LineLoop[TGeometry /* <: BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Line[TGeometry, TMaterial] {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
     def this(geometry: Unit, material: TMaterial) = this()

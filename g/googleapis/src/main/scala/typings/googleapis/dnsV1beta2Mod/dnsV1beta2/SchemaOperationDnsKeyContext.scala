@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaOperationDnsKeyContext extends StObject {
   
+  /**
+    * The post-operation DnsKey resource.
+    */
   var newValue: js.UndefOr[SchemaDnsKey] = js.undefined
   
+  /**
+    * The pre-operation DnsKey resource.
+    */
   var oldValue: js.UndefOr[SchemaDnsKey] = js.undefined
 }
 object SchemaOperationDnsKeyContext {

@@ -10,10 +10,10 @@ On error middleware for Mali
 | ------------------ | :-------------: |
 | Full name          | mali-onerror |
 | Keywords           | mali, grpc, service, server, microservice |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 2539 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29.333333333333332 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/malijs/onerror)

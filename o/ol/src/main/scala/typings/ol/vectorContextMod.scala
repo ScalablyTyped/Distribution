@@ -1,7 +1,6 @@
 package typings.ol
 
-import typings.ol.canvasMod.DeclutterGroup
-import typings.ol.canvasMod.DeclutterGroups
+import typings.ol.canvasMod.DeclutterImageWithText
 import typings.ol.olFeatureMod.FeatureLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object vectorContextMod {
   
   @JSImport("ol/render/VectorContext", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with VectorContext
   
@@ -66,7 +65,7 @@ object vectorContextMod {
     def setFillStrokeStyle(fillStyle: typings.ol.fillMod.default, strokeStyle: typings.ol.strokeMod.default): Unit = js.native
     
     def setImageStyle(imageStyle: typings.ol.styleImageMod.default): Unit = js.native
-    def setImageStyle(imageStyle: typings.ol.styleImageMod.default, opt_declutterGroup: DeclutterGroup): Unit = js.native
+    def setImageStyle(imageStyle: typings.ol.styleImageMod.default, opt_declutterImageWithText: DeclutterImageWithText): Unit = js.native
     
     /**
       * Set the rendering style.
@@ -74,6 +73,6 @@ object vectorContextMod {
     def setStyle(style: typings.ol.styleStyleMod.default): Unit = js.native
     
     def setTextStyle(textStyle: typings.ol.textMod.default): Unit = js.native
-    def setTextStyle(textStyle: typings.ol.textMod.default, opt_declutterGroups: DeclutterGroups): Unit = js.native
+    def setTextStyle(textStyle: typings.ol.textMod.default, opt_declutterImageWithText: DeclutterImageWithText): Unit = js.native
   }
 }

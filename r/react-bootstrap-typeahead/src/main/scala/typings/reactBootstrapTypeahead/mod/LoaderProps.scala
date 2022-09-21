@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LoaderProps extends StObject {
   
-  var bsSize: TypeaheadBsSizes
+  var label: js.UndefOr[String] = js.undefined
 }
 object LoaderProps {
   
-  inline def apply(bsSize: TypeaheadBsSizes): LoaderProps = {
-    val __obj = js.Dynamic.literal(bsSize = bsSize.asInstanceOf[js.Any])
+  inline def apply(): LoaderProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoaderProps]
   }
   
   extension [Self <: LoaderProps](x: Self) {
     
-    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

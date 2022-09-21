@@ -61,8 +61,8 @@ object replyMod {
     @JSName("cookie")
     var cookie_Original: cookieType
     
-    def download(path: String): js.Any
-    def download(path: String, filename: String): js.Any
+    def download(path: String): Any
+    def download(path: String, filename: String): Any
     @JSName("download")
     var download_Original: downloadType
     
@@ -71,13 +71,13 @@ object replyMod {
     @JSName("header")
     var header_Original: headerType
     
-    def json(): js.Any
-    def json(data: js.Any): js.Any
+    def json(): Any
+    def json(data: Any): Any
     @JSName("json")
     var json_Original: jsonpType
     
-    def jsonp(): js.Any
-    def jsonp(data: js.Any): js.Any
+    def jsonp(): Any
+    def jsonp(data: Any): Any
     @JSName("jsonp")
     var jsonp_Original: jsonpType
     
@@ -86,13 +86,13 @@ object replyMod {
     @JSName("redirect")
     var redirect_Original: Redirect_
     
-    def render(view: String): js.Any
-    def render(view: String, locals: js.Object): js.Any
+    def render(view: String): Any
+    def render(view: String, locals: js.Object): Any
     @JSName("render")
     var render_Original: renderType
     
-    def send(): js.Any
-    def send(body: js.Any): js.Any
+    def send(): Any
+    def send(body: Any): Any
     @JSName("send")
     var send_Original: sendType
     
@@ -108,13 +108,13 @@ object replyMod {
     
     inline def apply(
       cookie: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply,
-      download: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any,
+      download: (/* path */ String, /* filename */ js.UndefOr[String]) => Any,
       header: (/* field */ String, /* value */ js.UndefOr[String]) => Reply,
-      json: /* data */ js.UndefOr[js.Any] => js.Any,
-      jsonp: /* data */ js.UndefOr[js.Any] => js.Any,
+      json: /* data */ js.UndefOr[Any] => Any,
+      jsonp: /* data */ js.UndefOr[Any] => Any,
       redirect: Redirect_,
-      render: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any,
-      send: /* body */ js.UndefOr[js.Any] => js.Any,
+      render: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => Any,
+      send: /* body */ js.UndefOr[Any] => Any,
       status: /* code */ Double => Reply,
       `type`: /* type */ String => Reply
     ): Reply = {
@@ -127,19 +127,19 @@ object replyMod {
       
       inline def setCookie(value: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply): Self = StObject.set(x, "cookie", js.Any.fromFunction3(value))
       
-      inline def setDownload(value: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction2(value))
+      inline def setDownload(value: (/* path */ String, /* filename */ js.UndefOr[String]) => Any): Self = StObject.set(x, "download", js.Any.fromFunction2(value))
       
       inline def setHeader(value: (/* field */ String, /* value */ js.UndefOr[String]) => Reply): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
       
-      inline def setJson(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
+      inline def setJson(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
       
-      inline def setJsonp(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
+      inline def setJsonp(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
       
       inline def setRedirect(value: Redirect_): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      inline def setSend(value: /* body */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: /* body */ js.UndefOr[Any] => Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
       inline def setStatus(value: /* code */ Double => Reply): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
       
@@ -149,17 +149,17 @@ object replyMod {
   
   type cookieType = js.Function3[/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions], Reply]
   
-  type downloadType = js.Function2[/* path */ String, /* filename */ js.UndefOr[String], js.Any]
+  type downloadType = js.Function2[/* path */ String, /* filename */ js.UndefOr[String], Any]
   
   type headerType = js.Function2[/* field */ String, /* value */ js.UndefOr[String], Reply]
   
-  type jsonType = js.Function1[/* data */ js.UndefOr[js.Any], js.Any]
+  type jsonType = js.Function1[/* data */ js.UndefOr[Any], Any]
   
-  type jsonpType = js.Function1[/* data */ js.UndefOr[js.Any], js.Any]
+  type jsonpType = js.Function1[/* data */ js.UndefOr[Any], Any]
   
-  type renderType = js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]
+  type renderType = js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any]
   
-  type sendType = js.Function1[/* body */ js.UndefOr[js.Any], js.Any]
+  type sendType = js.Function1[/* body */ js.UndefOr[Any], Any]
   
   type statusType = js.Function1[/* code */ Double, Reply]
   

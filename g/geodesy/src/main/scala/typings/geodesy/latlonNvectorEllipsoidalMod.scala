@@ -13,16 +13,16 @@ object latlonNvectorEllipsoidalMod {
   
   @JSImport("geodesy/latlon-nvector-ellipsoidal", JSImport.Default)
   @js.native
-  class default () extends LatLonNvectorEllipsoidal
+  open class default () extends LatLonNvectorEllipsoidal
   
   @JSImport("geodesy/latlon-nvector-ellipsoidal", "Cartesian")
   @js.native
-  class Cartesian () extends CartesianNvector
+  open class Cartesian () extends CartesianNvector
   
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-nvector-ellipsoidal", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalMod.Dms
   object Dms {
     
@@ -77,7 +77,7 @@ object latlonNvectorEllipsoidalMod {
   
   @JSImport("geodesy/latlon-nvector-ellipsoidal", "Ned")
   @js.native
-  class Ned protected () extends StObject {
+  open class Ned protected () extends StObject {
     def this(north: Double, east: Double, down: Double) = this()
     
     def bearing: Double = js.native
@@ -100,7 +100,7 @@ object latlonNvectorEllipsoidalMod {
   
   @JSImport("geodesy/latlon-nvector-ellipsoidal", "Nvector")
   @js.native
-  class Nvector protected () extends NvectorEllipsoidal {
+  open class Nvector protected () extends NvectorEllipsoidal {
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, h: Double) = this()
     def this(x: Double, y: Double, z: Double, h: Double, datum: Datum) = this()

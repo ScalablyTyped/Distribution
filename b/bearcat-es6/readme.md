@@ -10,10 +10,10 @@ Magic, self-described javaScript objects build up elastic, maintainable front-ba
 | ------------------ | :-------------: |
 | Full name          | bearcat-es6 |
 | Keywords           | di, IoC, AOP, dependency, injection, consistent, configuration, hot reload, front-backend, sharable codes, dependency injection, asynchronous script loading, magic, self-described javaScript objects |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 836 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.666666666666664 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/ChrisPei/bearcat-es6#readme)

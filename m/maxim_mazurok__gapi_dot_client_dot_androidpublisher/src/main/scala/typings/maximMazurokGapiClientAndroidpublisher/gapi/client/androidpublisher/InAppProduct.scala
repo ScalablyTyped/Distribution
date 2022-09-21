@@ -23,8 +23,11 @@ trait InAppProduct extends StObject {
   var listings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing}
-    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
   ] = js.undefined
+  
+  /** Details about taxes and legal compliance. Only applicable to managed products. */
+  var managedProductTaxesAndComplianceSettings: js.UndefOr[ManagedProductTaxAndComplianceSettings] = js.undefined
   
   /** Package name of the parent app. */
   var packageName: js.UndefOr[String] = js.undefined
@@ -33,7 +36,7 @@ trait InAppProduct extends StObject {
   var prices: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price}
-    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
   ] = js.undefined
   
   /** The type of the product, e.g. a recurring subscription. */
@@ -47,6 +50,9 @@ trait InAppProduct extends StObject {
   
   /** Subscription period, specified in ISO 8601 format. Acceptable values are P1W (one week), P1M (one month), P3M (three months), P6M (six months), and P1Y (one year). */
   var subscriptionPeriod: js.UndefOr[String] = js.undefined
+  
+  /** Details about taxes and legal compliance. Only applicable to subscription products. */
+  var subscriptionTaxesAndComplianceSettings: js.UndefOr[SubscriptionTaxAndComplianceSettings] = js.undefined
   
   /** Trial period, specified in ISO 8601 format. Acceptable values are anything between P7D (seven days) and P999D (999 days). */
   var trialPeriod: js.UndefOr[String] = js.undefined
@@ -75,10 +81,14 @@ object InAppProduct {
     inline def setListings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing}
-      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
     ): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
     
     inline def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
+    
+    inline def setManagedProductTaxesAndComplianceSettings(value: ManagedProductTaxAndComplianceSettings): Self = StObject.set(x, "managedProductTaxesAndComplianceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setManagedProductTaxesAndComplianceSettingsUndefined: Self = StObject.set(x, "managedProductTaxesAndComplianceSettings", js.undefined)
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
@@ -87,7 +97,7 @@ object InAppProduct {
     inline def setPrices(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price}
-      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
     ): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
@@ -107,6 +117,10 @@ object InAppProduct {
     inline def setSubscriptionPeriod(value: String): Self = StObject.set(x, "subscriptionPeriod", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionPeriodUndefined: Self = StObject.set(x, "subscriptionPeriod", js.undefined)
+    
+    inline def setSubscriptionTaxesAndComplianceSettings(value: SubscriptionTaxAndComplianceSettings): Self = StObject.set(x, "subscriptionTaxesAndComplianceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptionTaxesAndComplianceSettingsUndefined: Self = StObject.set(x, "subscriptionTaxesAndComplianceSettings", js.undefined)
     
     inline def setTrialPeriod(value: String): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
     

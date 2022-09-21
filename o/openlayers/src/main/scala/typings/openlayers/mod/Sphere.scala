@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Sphere")
 @js.native
-class Sphere protected () extends StObject {
+open class Sphere protected () extends StObject {
   /**
     * @classdesc
     * Class to create objects that can be used with {@link

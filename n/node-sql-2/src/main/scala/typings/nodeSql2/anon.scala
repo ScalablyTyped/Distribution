@@ -8,6 +8,7 @@ import typings.nodeSql2.mod.ModifyingQuery
 import typings.nodeSql2.mod.Query
 import typings.nodeSql2.mod.SQL
 import typings.nodeSql2.mod.SubQuery
+import typings.nodeSql2.mod.Table
 import typings.nodeSql2.mod.TableNode
 import typings.nodeSql2.nodeSql2Strings.`no action`
 import typings.nodeSql2.nodeSql2Strings.`set default`
@@ -26,7 +27,7 @@ object anon {
     
     def alter(): AlterQuery[T] = js.native
     
-    def as[OtherName /* <: String */](name: OtherName): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-sql-2.sql.Table<OtherName, T> */ js.Object = js.native
+    def as[OtherName /* <: String */](name: OtherName): Table[OtherName, T] = js.native
     
     var columns: js.Array[typings.nodeSql2.mod.Column[Unit, Unit]] = js.native
     
@@ -46,10 +47,10 @@ object anon {
     def insert(row: T): ModifyingQuery = js.native
     def insert(rows: js.Array[T]): ModifyingQuery = js.native
     
-    def literal(statement: String): js.Any = js.native
+    def literal(statement: String): Any = js.native
     
     def select(): Query[T] = js.native
-    def select[U](nodes: js.Any*): Query[U] = js.native
+    def select[U](nodes: Any*): Query[U] = js.native
     
     var sql: SQL = js.native
     
@@ -116,7 +117,7 @@ object anon {
       
       inline def setColumns(value: js.Array[/* keyof Row */ String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: (/* keyof Row */ String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (/* keyof Row */ String)*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setOnDelete(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,7 @@ object anon {
       
       inline def setRefColumns(value: js.Array[String]): Self = StObject.set(x, "refColumns", value.asInstanceOf[js.Any])
       
-      inline def setRefColumnsVarargs(value: String*): Self = StObject.set(x, "refColumns", js.Array(value :_*))
+      inline def setRefColumnsVarargs(value: String*): Self = StObject.set(x, "refColumns", js.Array(value*))
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
@@ -140,14 +141,14 @@ object anon {
   }
   object LOWER {
     
-    inline def apply(LOWER: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): LOWER = {
+    inline def apply(LOWER: typings.nodeSql2.mod.Column[Any, String] => typings.nodeSql2.mod.Column[Any, String]): LOWER = {
       val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
       __obj.asInstanceOf[LOWER]
     }
     
     extension [Self <: LOWER](x: Self) {
       
-      inline def setLOWER(value: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
+      inline def setLOWER(value: typings.nodeSql2.mod.Column[Any, String] => typings.nodeSql2.mod.Column[Any, String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
     }
   }
 }

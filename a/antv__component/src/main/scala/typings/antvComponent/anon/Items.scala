@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Items extends StObject {
   
-  var alternateColor: js.Any
+  var alternateColor: Any
   
   var animate: Boolean
   
@@ -16,13 +16,13 @@ trait Items extends StObject {
   
   var closed: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: LineType
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -32,7 +32,7 @@ trait Items extends StObject {
   
   var isUpdating: Boolean
   
-  var items: js.Array[js.Any]
+  var items: js.Array[Any]
   
   var locationType: String
   
@@ -51,20 +51,20 @@ trait Items extends StObject {
 object Items {
   
   inline def apply(
-    alternateColor: js.Any,
+    alternateColor: Any,
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
     closed: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: LineType,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
     isUpdating: Boolean,
-    items: js.Array[js.Any],
+    items: js.Array[Any],
     locationType: String,
     name: String,
     offsetX: Double,
@@ -80,7 +80,7 @@ object Items {
   
   extension [Self <: Items](x: Self) {
     
-    inline def setAlternateColor(value: js.Any): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
+    inline def setAlternateColor(value: Any): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
@@ -90,13 +90,13 @@ object Items {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: LineType): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -106,9 +106,9 @@ object Items {
     
     inline def setIsUpdating(value: Boolean): Self = StObject.set(x, "isUpdating", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     

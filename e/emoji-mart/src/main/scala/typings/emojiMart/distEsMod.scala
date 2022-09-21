@@ -16,7 +16,7 @@ object distEsMod {
   
   @JSImport("emoji-mart/dist-es", "NimbleEmojiIndex")
   @js.native
-  class NimbleEmojiIndex protected () extends default {
+  open class NimbleEmojiIndex protected () extends default {
     def this(data: Data) = this()
   }
   

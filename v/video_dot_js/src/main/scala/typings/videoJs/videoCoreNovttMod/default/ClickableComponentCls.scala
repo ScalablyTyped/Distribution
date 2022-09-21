@@ -1,7 +1,7 @@
 package typings.videoJs.videoCoreNovttMod.default
 
 import typings.videoJs.mod.videojs.ClickableComponent
-import typings.videoJs.mod.videojs.ComponentOptions
+import typings.videoJs.mod.videojs.ClickableComponentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core.novtt", "default.ClickableComponent")
 @js.native
-class ClickableComponentCls protected ()
+open class ClickableComponentCls protected ()
   extends StObject
      with ClickableComponent {
   /**
@@ -22,5 +22,5 @@ class ClickableComponentCls protected ()
     *         The key/value store of player options.
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
-  def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
+  def this(player: typings.videoJs.mod.videojs.Player, options: ClickableComponentOptions) = this()
 }

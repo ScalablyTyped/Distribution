@@ -7,13 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PlaneDragGizmo")
 @js.native
-class PlaneDragGizmo protected ()
+open class PlaneDragGizmo protected ()
   extends typings.babylonjs.gizmosIndexMod.PlaneDragGizmo {
   /**
     * Creates a PlaneDragGizmo
-    * @param gizmoLayer The utility layer the gizmo will be added to
     * @param dragPlaneNormal The axis normal to which the gizmo will be able to drag on
     * @param color The color of the gizmo
+    * @param gizmoLayer The utility layer the gizmo will be added to
+    * @param parent
     */
   def this(dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3) = this()
   def this(
@@ -62,7 +63,11 @@ object PlaneDragGizmo {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param scene
+    * @param material
+    * @hidden
+    */
   inline def _CreatePlane(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial

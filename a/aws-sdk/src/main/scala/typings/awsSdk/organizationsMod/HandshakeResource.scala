@@ -12,7 +12,7 @@ trait HandshakeResource extends StObject {
   var Resources: js.UndefOr[HandshakeResources] = js.undefined
   
   /**
-    * The type of information being passed, specifying how the value is to be interpreted by the other party:    ACCOUNT - Specifies an AWS account ID number.    ORGANIZATION - Specifies an organization ID number.    EMAIL - Specifies the email address that is associated with the account that receives the handshake.     OWNER_EMAIL - Specifies the email address associated with the management account. Included as information about an organization.     OWNER_NAME - Specifies the name associated with the management account. Included as information about an organization.     NOTES - Additional text provided by the handshake initiator and intended for the recipient to read.  
+    * The type of information being passed, specifying how the value is to be interpreted by the other party:    ACCOUNT - Specifies an Amazon Web Services account ID number.    ORGANIZATION - Specifies an organization ID number.    EMAIL - Specifies the email address that is associated with the account that receives the handshake.     OWNER_EMAIL - Specifies the email address associated with the management account. Included as information about an organization.     OWNER_NAME - Specifies the name associated with the management account. Included as information about an organization.     NOTES - Additional text provided by the handshake initiator and intended for the recipient to read.  
     */
   var Type: js.UndefOr[HandshakeResourceType] = js.undefined
   
@@ -34,7 +34,7 @@ object HandshakeResource {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setType(value: HandshakeResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

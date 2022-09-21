@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-Convert a string to pascal-case.
+Convert a string to pascal case (upper camelcase).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pascalcase |
-| Keywords           | camelcase, case, casing, pascal, pascal-case, pascal case, pascalcase, string, UpperCamelCase |
+| Keywords           | change case, camel, camelcase, case, casing, pascal, pascal-case, pascal case, pascalcase, string, upper camel case, UpperCamelCase |
 | # releases         | 2 |
-| # dependents       | 219 |
-| # downloads        | 654860912 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.873267366666667E7 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/pascalcase)

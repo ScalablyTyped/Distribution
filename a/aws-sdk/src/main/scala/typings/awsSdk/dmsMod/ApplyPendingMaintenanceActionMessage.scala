@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplyPendingMaintenanceActionMessage extends StObject {
   
   /**
-    * The pending maintenance action to apply to this resource.
+    * The pending maintenance action to apply to this resource. Valid values: os-upgrade, system-update, db-upgrade 
     */
   var ApplyAction: String
   
@@ -17,7 +17,7 @@ trait ApplyPendingMaintenanceActionMessage extends StObject {
   var OptInType: String
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS DMS resource that the pending maintenance action applies to.
+    * The Amazon Resource Name (ARN) of the DMS resource that the pending maintenance action applies to.
     */
   var ReplicationInstanceArn: String
 }

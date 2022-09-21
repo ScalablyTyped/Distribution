@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object addChannelMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/AddChannel", JSImport.Default)
   @js.native
-  val default: SFC[AddChannelProps] = js.native
+  val default: FC[AddChannelProps] = js.native
   
   trait AddChannelProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object AddChannelProps {
     
@@ -29,14 +29,14 @@ object addChannelMod extends Shortcut {
     
     extension [Self <: AddChannelProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[AddChannelProps]
+  type _To = FC[AddChannelProps]
   
   /* This means you don't have to write `default`, but can instead just say `addChannelMod.foo` */
-  override def _to: SFC[AddChannelProps] = default
+  override def _to: FC[AddChannelProps] = default
 }

@@ -55,14 +55,14 @@ object window {
         js.Function4[
           /* title */ js.UndefOr[java.lang.String], 
           /* msg */ js.UndefOr[java.lang.String], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
     
     /** [Property] (Object) */
-    var buttonText: js.UndefOr[js.Any] = js.undefined
+    var buttonText: js.UndefOr[Any] = js.undefined
     
     /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
       * @param title String The title bar text
@@ -75,8 +75,8 @@ object window {
         js.Function4[
           /* title */ js.UndefOr[java.lang.String], 
           /* msg */ js.UndefOr[java.lang.String], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
@@ -124,9 +124,9 @@ object window {
         js.Function6[
           /* title */ js.UndefOr[java.lang.String], 
           /* msg */ js.UndefOr[java.lang.String], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* multiline */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* multiline */ js.UndefOr[Any], 
           /* value */ js.UndefOr[java.lang.String], 
           this.type
         ]
@@ -153,7 +153,7 @@ object window {
       * @returns Ext.window.MessageBox this
       */
     @JSName("show")
-    var show_IMessageBox: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var show_IMessageBox: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Updates a progress style message box s text and progress bar
       * @param value Number Any number between 0 and 1 (e.g., .5)
@@ -181,7 +181,7 @@ object window {
         js.Function3[
           /* msg */ js.UndefOr[java.lang.String], 
           /* title */ js.UndefOr[java.lang.String], 
-          /* config */ js.UndefOr[js.Any], 
+          /* config */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
@@ -196,12 +196,12 @@ object window {
     extension [Self <: typings.extjs.Ext.window.IMessageBox](x: Self) {
       
       inline def setAlert(
-        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox
+        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.window.IMessageBox
       ): Self = StObject.set(x, "alert", js.Any.fromFunction4(value))
       
       inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
       
-      inline def setButtonText(value: js.Any): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: Any): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
       inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
@@ -210,7 +210,7 @@ object window {
       inline def setCANCELUndefined: Self = StObject.set(x, "CANCEL", js.undefined)
       
       inline def setConfirm(
-        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox
+        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.window.IMessageBox
       ): Self = StObject.set(x, "confirm", js.Any.fromFunction4(value))
       
       inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
@@ -258,7 +258,7 @@ object window {
       inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
       inline def setPrompt(
-        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* multiline */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox
+        value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* multiline */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox
       ): Self = StObject.set(x, "prompt", js.Any.fromFunction6(value))
       
       inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
@@ -273,7 +273,7 @@ object window {
       
       inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
       
-      inline def setShow(value: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.window.IMessageBox): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: /* config */ js.UndefOr[Any] => typings.extjs.Ext.window.IMessageBox): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
@@ -288,7 +288,7 @@ object window {
       inline def setWARNINGUndefined: Self = StObject.set(x, "WARNING", js.undefined)
       
       inline def setWait_(
-        value: (/* msg */ js.UndefOr[java.lang.String], /* title */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox
+        value: (/* msg */ js.UndefOr[java.lang.String], /* title */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[Any]) => typings.extjs.Ext.window.IMessageBox
       ): Self = StObject.set(x, "wait", js.Any.fromFunction3(value))
       
       inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
@@ -320,13 +320,13 @@ object window {
     var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String/Ext.Element) */
-    var animateTarget: js.UndefOr[js.Any] = js.undefined
+    var animateTarget: js.UndefOr[Any] = js.undefined
     
     /** [Method] Applies the state to the object
       * @param state Object
       */
     @JSName("applyState")
-    var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("autoRender")
@@ -337,7 +337,7 @@ object window {
     var dd_IWindow: js.UndefOr[IComponentDragger] = js.undefined
     
     /** [Config Option] (String/Number/Ext.Component) */
-    var defaultFocus: js.UndefOr[js.Any] = js.undefined
+    var defaultFocus: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var expandOnShow: js.UndefOr[Boolean] = js.undefined
@@ -346,7 +346,7 @@ object window {
     var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Function) */
-    var ghost: js.UndefOr[js.Any] = js.undefined
+    var ghost: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.undefined
@@ -378,7 +378,7 @@ object window {
     var modal: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var onEsc: js.UndefOr[js.Any] = js.undefined
+    var onEsc: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var plain: js.UndefOr[Boolean] = js.undefined
@@ -387,7 +387,7 @@ object window {
       * @param animate Object
       * @returns Ext.window.Window this
       */
-    var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] A shortcut method for toggling between maximize and restore based on the current maximized state of the window
       * @returns Ext.window.Window this
@@ -417,11 +417,11 @@ object window {
       
       inline def setAfterExpandUndefined: Self = StObject.set(x, "afterExpand", js.undefined)
       
-      inline def setAnimateTarget(value: js.Any): Self = StObject.set(x, "animateTarget", value.asInstanceOf[js.Any])
+      inline def setAnimateTarget(value: Any): Self = StObject.set(x, "animateTarget", value.asInstanceOf[js.Any])
       
       inline def setAnimateTargetUndefined: Self = StObject.set(x, "animateTarget", js.undefined)
       
-      inline def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+      inline def setApplyState(value: /* state */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
       
       inline def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
       
@@ -433,7 +433,7 @@ object window {
       
       inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
       
-      inline def setDefaultFocus(value: js.Any): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: Any): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
       inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
       
@@ -445,7 +445,7 @@ object window {
       
       inline def setGetDefaultFocusUndefined: Self = StObject.set(x, "getDefaultFocus", js.undefined)
       
-      inline def setGhost(value: js.Any): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+      inline def setGhost(value: Any): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
       
       inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
       
@@ -481,7 +481,7 @@ object window {
       
       inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      inline def setOnEsc(value: js.Any): Self = StObject.set(x, "onEsc", value.asInstanceOf[js.Any])
+      inline def setOnEsc(value: Any): Self = StObject.set(x, "onEsc", value.asInstanceOf[js.Any])
       
       inline def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
       
@@ -489,7 +489,7 @@ object window {
       
       inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
       
-      inline def setRestore(value: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.window.IWindow): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+      inline def setRestore(value: /* animate */ js.UndefOr[Any] => typings.extjs.Ext.window.IWindow): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
       
       inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
       

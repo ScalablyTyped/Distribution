@@ -11,11 +11,11 @@ trait IUtilService extends StObject {
   // tslint:disable-next-line:ban-types debounce takes in a user provided function
   def debounce[T /* <: Function */](func: T): T = js.native
   def debounce[T /* <: Function */](func: T, wait: Double): T = js.native
-  def debounce[T /* <: Function */](func: T, wait: Double, scope: js.Any): T = js.native
-  def debounce[T /* <: Function */](func: T, wait: Double, scope: js.Any, invokeApply: Boolean): T = js.native
+  def debounce[T /* <: Function */](func: T, wait: Double, scope: Any): T = js.native
+  def debounce[T /* <: Function */](func: T, wait: Double, scope: Any, invokeApply: Boolean): T = js.native
   def debounce[T /* <: Function */](func: T, wait: Double, scope: Unit, invokeApply: Boolean): T = js.native
-  def debounce[T /* <: Function */](func: T, wait: Unit, scope: js.Any): T = js.native
-  def debounce[T /* <: Function */](func: T, wait: Unit, scope: js.Any, invokeApply: Boolean): T = js.native
+  def debounce[T /* <: Function */](func: T, wait: Unit, scope: Any): T = js.native
+  def debounce[T /* <: Function */](func: T, wait: Unit, scope: Any, invokeApply: Boolean): T = js.native
   def debounce[T /* <: Function */](func: T, wait: Unit, scope: Unit, invokeApply: Boolean): T = js.native
   
   def enableScrolling(): Unit = js.native

@@ -10,13 +10,13 @@ object validatorMod {
   
   @JSImport("class-validator/types/validation/Validator", "Validator")
   @js.native
-  class Validator () extends StObject {
+  open class Validator () extends StObject {
     
     /**
       * Performs validation of the given object based on decorators or validation schema.
       * Common method for `validateOrReject` and `validate` methods.
       */
-    /* private */ var coreValidate: js.Any = js.native
+    /* private */ var coreValidate: Any = js.native
     
     /**
       * Performs validation of the given object based on decorators used in given object class.

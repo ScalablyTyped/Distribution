@@ -15,14 +15,14 @@ object pickerMod {
   
   @JSImport("@react-native-community/picker/typings/Picker", "Picker")
   @js.native
-  class Picker protected ()
-    extends Component[PickerProps, js.Object, js.Any] {
+  open class Picker protected ()
+    extends Component[PickerProps, js.Object, Any] {
     def this(props: PickerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PickerProps, context: js.Any) = this()
+    def this(props: PickerProps, context: Any) = this()
   }
   object Picker {
     

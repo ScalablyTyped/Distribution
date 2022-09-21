@@ -17,11 +17,11 @@ trait InputValuesQuery extends StObject {
   /**
     * Subscription containing information about the publisher/consumer and the current input values
     */
-  var resource: js.Any
+  var resource: Any
 }
 object InputValuesQuery {
   
-  inline def apply(currentValues: StringDictionary[String], inputValues: js.Array[InputValues], resource: js.Any): InputValuesQuery = {
+  inline def apply(currentValues: StringDictionary[String], inputValues: js.Array[InputValues], resource: Any): InputValuesQuery = {
     val __obj = js.Dynamic.literal(currentValues = currentValues.asInstanceOf[js.Any], inputValues = inputValues.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValuesQuery]
   }
@@ -32,8 +32,8 @@ object InputValuesQuery {
     
     inline def setInputValues(value: js.Array[InputValues]): Self = StObject.set(x, "inputValues", value.asInstanceOf[js.Any])
     
-    inline def setInputValuesVarargs(value: InputValues*): Self = StObject.set(x, "inputValues", js.Array(value :_*))
+    inline def setInputValuesVarargs(value: InputValues*): Self = StObject.set(x, "inputValues", js.Array(value*))
     
-    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

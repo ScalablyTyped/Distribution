@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Box")
 @js.native
-class Box protected ()
+open class Box protected ()
   extends StObject
      with typings.cannon.CANNON.Box {
   def this(halfExtents: typings.cannon.CANNON.Vec3) = this()
@@ -19,6 +19,9 @@ class Box protected ()
   
   /* CompleteClass */
   var collisionResponse: Boolean = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var `type`: Double = js.native

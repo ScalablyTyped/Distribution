@@ -3,9 +3,9 @@ package typings.reactstrap
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
 import typings.reactstrap.reactstrapStrings.next
 import typings.reactstrap.reactstrapStrings.prev
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object carouselControlMod {
   
-  @JSImport("reactstrap/lib/CarouselControl", JSImport.Default)
+  @JSImport("reactstrap/types/lib/CarouselControl", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CarouselControlProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CarouselControlProps, js.Object, Any]
   
-  type CarouselControl = Component[CarouselControlProps, js.Object, js.Any]
+  type CarouselControl = Component[CarouselControlProps, js.Object, Any]
   
   trait CarouselControlProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     

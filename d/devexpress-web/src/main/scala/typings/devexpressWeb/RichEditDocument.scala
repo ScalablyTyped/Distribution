@@ -82,13 +82,13 @@ object RichEditDocument {
     
     inline def setAbstractNumberingListsInfo(value: js.Array[AbstractNumberingList]): Self = StObject.set(x, "abstractNumberingListsInfo", value.asInstanceOf[js.Any])
     
-    inline def setAbstractNumberingListsInfoVarargs(value: AbstractNumberingList*): Self = StObject.set(x, "abstractNumberingListsInfo", js.Array(value :_*))
+    inline def setAbstractNumberingListsInfoVarargs(value: AbstractNumberingList*): Self = StObject.set(x, "abstractNumberingListsInfo", js.Array(value*))
     
     inline def setActiveSubDocument(value: SubDocument): Self = StObject.set(x, "activeSubDocument", value.asInstanceOf[js.Any])
     
     inline def setCharacterStylesInfo(value: js.Array[CharacterStyle]): Self = StObject.set(x, "characterStylesInfo", value.asInstanceOf[js.Any])
     
-    inline def setCharacterStylesInfoVarargs(value: CharacterStyle*): Self = StObject.set(x, "characterStylesInfo", js.Array(value :_*))
+    inline def setCharacterStylesInfoVarargs(value: CharacterStyle*): Self = StObject.set(x, "characterStylesInfo", js.Array(value*))
     
     inline def setGetSubDocumentById(value: Double => SubDocument): Self = StObject.set(x, "getSubDocumentById", js.Any.fromFunction1(value))
     
@@ -96,20 +96,20 @@ object RichEditDocument {
     
     inline def setParagraphStylesInfo(value: js.Array[ParagraphStyle]): Self = StObject.set(x, "paragraphStylesInfo", value.asInstanceOf[js.Any])
     
-    inline def setParagraphStylesInfoVarargs(value: ParagraphStyle*): Self = StObject.set(x, "paragraphStylesInfo", js.Array(value :_*))
+    inline def setParagraphStylesInfoVarargs(value: ParagraphStyle*): Self = StObject.set(x, "paragraphStylesInfo", js.Array(value*))
     
     inline def setSectionsInfo(value: js.Array[Section]): Self = StObject.set(x, "sectionsInfo", value.asInstanceOf[js.Any])
     
-    inline def setSectionsInfoVarargs(value: Section*): Self = StObject.set(x, "sectionsInfo", js.Array(value :_*))
+    inline def setSectionsInfoVarargs(value: Section*): Self = StObject.set(x, "sectionsInfo", js.Array(value*))
     
     inline def setSpellingInfo(value: SpellingInfo): Self = StObject.set(x, "spellingInfo", value.asInstanceOf[js.Any])
     
     inline def setSubDocuments(value: js.Array[SubDocument]): Self = StObject.set(x, "subDocuments", value.asInstanceOf[js.Any])
     
-    inline def setSubDocumentsVarargs(value: SubDocument*): Self = StObject.set(x, "subDocuments", js.Array(value :_*))
+    inline def setSubDocumentsVarargs(value: SubDocument*): Self = StObject.set(x, "subDocuments", js.Array(value*))
     
     inline def setTableStylesInfo(value: js.Array[TableStyle]): Self = StObject.set(x, "tableStylesInfo", value.asInstanceOf[js.Any])
     
-    inline def setTableStylesInfoVarargs(value: TableStyle*): Self = StObject.set(x, "tableStylesInfo", js.Array(value :_*))
+    inline def setTableStylesInfoVarargs(value: TableStyle*): Self = StObject.set(x, "tableStylesInfo", js.Array(value*))
   }
 }

@@ -73,13 +73,16 @@ object gapi {
         /** Required. Budgeted amount. */
         var amount: js.UndefOr[GoogleCloudBillingBudgetsV1BudgetAmount] = js.undefined
         
-        /** Optional. Filters that define which resources are used to compute the actual spend against the budget. */
+        /**
+          * Optional. Filters that define which resources are used to compute the actual spend against the budget amount, such as projects, services, and the budget's time period, as well as
+          * other filters.
+          */
         var budgetFilter: js.UndefOr[GoogleCloudBillingBudgetsV1Filter] = js.undefined
         
         /** User data for display name in UI. The name must be less than or equal to 60 characters. */
         var displayName: js.UndefOr[String] = js.undefined
         
-        /** Optional. Etag to validate that the object is unchanged for a read-modify-write operation. An empty etag will cause an update to overwrite other changes. */
+        /** Optional. Etag to validate that the object is unchanged for a read-modify-write operation. An empty etag causes an update to overwrite other changes. */
         var etag: js.UndefOr[String] = js.undefined
         
         /** Output only. Resource name of the budget. The resource name implies the scope of a budget. Values are of the form `billingAccounts/{billingAccountId}/budgets/{budgetId}`. */
@@ -88,7 +91,10 @@ object gapi {
         /** Optional. Rules to apply to notifications sent based on budget spend and thresholds. */
         var notificationsRule: js.UndefOr[GoogleCloudBillingBudgetsV1NotificationsRule] = js.undefined
         
-        /** Optional. Rules that trigger alerts (notifications of thresholds being crossed) when spend exceeds the specified percentages of the budget. */
+        /**
+          * Optional. Rules that trigger alerts (notifications of thresholds being crossed) when spend exceeds the specified percentages of the budget. Optional for `pubsubTopic` notifications.
+          * Required if using email notifications.
+          */
         var thresholdRules: js.UndefOr[js.Array[GoogleCloudBillingBudgetsV1ThresholdRule]] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1Budget {
@@ -128,16 +134,22 @@ object gapi {
           
           inline def setThresholdRulesUndefined: Self = StObject.set(x, "thresholdRules", js.undefined)
           
-          inline def setThresholdRulesVarargs(value: GoogleCloudBillingBudgetsV1ThresholdRule*): Self = StObject.set(x, "thresholdRules", js.Array(value :_*))
+          inline def setThresholdRulesVarargs(value: GoogleCloudBillingBudgetsV1ThresholdRule*): Self = StObject.set(x, "thresholdRules", js.Array(value*))
         }
       }
       
       trait GoogleCloudBillingBudgetsV1BudgetAmount extends StObject {
         
-        /** Use the last period's actual spend as the budget for the present period. */
-        var lastPeriodAmount: js.UndefOr[js.Any] = js.undefined
+        /**
+          * Use the last period's actual spend as the budget for the present period. LastPeriodAmount can only be set when the budget's time period is a Filter.calendar_period. It cannot be set
+          * in combination with Filter.custom_period.
+          */
+        var lastPeriodAmount: js.UndefOr[Any] = js.undefined
         
-        /** A specified amount to use as the budget. `currency_code` is optional. If specified, it must match the currency of the billing account. The `currency_code` is provided on output. */
+        /**
+          * A specified amount to use as the budget. `currency_code` is optional. If specified when creating a budget, it must match the currency of the billing account. If specified when
+          * updating a budget, it must match the currency_code of the existing budget. The `currency_code` is provided on output.
+          */
         var specifiedAmount: js.UndefOr[GoogleTypeMoney] = js.undefined
       }
       object GoogleCloudBillingBudgetsV1BudgetAmount {
@@ -149,7 +161,7 @@ object gapi {
         
         extension [Self <: GoogleCloudBillingBudgetsV1BudgetAmount](x: Self) {
           
-          inline def setLastPeriodAmount(value: js.Any): Self = StObject.set(x, "lastPeriodAmount", value.asInstanceOf[js.Any])
+          inline def setLastPeriodAmount(value: Any): Self = StObject.set(x, "lastPeriodAmount", value.asInstanceOf[js.Any])
           
           inline def setLastPeriodAmountUndefined: Self = StObject.set(x, "lastPeriodAmount", js.undefined)
           
@@ -159,44 +171,80 @@ object gapi {
         }
       }
       
+      trait GoogleCloudBillingBudgetsV1CustomPeriod extends StObject {
+        
+        /** Optional. The end date of the time period. Budgets with elapsed end date won't be processed. If unset, specifies to track all usage incurred since the start_date. */
+        var endDate: js.UndefOr[GoogleTypeDate] = js.undefined
+        
+        /** Required. The start date must be after January 1, 2017. */
+        var startDate: js.UndefOr[GoogleTypeDate] = js.undefined
+      }
+      object GoogleCloudBillingBudgetsV1CustomPeriod {
+        
+        inline def apply(): GoogleCloudBillingBudgetsV1CustomPeriod = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[GoogleCloudBillingBudgetsV1CustomPeriod]
+        }
+        
+        extension [Self <: GoogleCloudBillingBudgetsV1CustomPeriod](x: Self) {
+          
+          inline def setEndDate(value: GoogleTypeDate): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+          
+          inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+          
+          inline def setStartDate(value: GoogleTypeDate): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+          
+          inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+        }
+      }
+      
       trait GoogleCloudBillingBudgetsV1Filter extends StObject {
         
         /**
+          * Optional. Specifies to track usage for recurring calendar period. For example, assume that CalendarPeriod.QUARTER is set. The budget tracks usage from April 1 to June 30, when the
+          * current calendar month is April, May, June. After that, it tracks usage from July 1 to September 30 when the current calendar month is July, August, September, so on.
+          */
+        var calendarPeriod: js.UndefOr[String] = js.undefined
+        
+        /**
           * Optional. If Filter.credit_types_treatment is INCLUDE_SPECIFIED_CREDITS, this is a list of credit types to be subtracted from gross cost to determine the spend for threshold
-          * calculations. If Filter.credit_types_treatment is **not** INCLUDE_SPECIFIED_CREDITS, this field must be empty. See [a list of acceptable credit type
-          * values](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables#credits-type).
+          * calculations. See [a list of acceptable credit type values](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables#credits-type). If Filter.credit_types_treatment
+          * is **not** INCLUDE_SPECIFIED_CREDITS, this field must be empty.
           */
         var creditTypes: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Optional. If not set, default behavior is `INCLUDE_ALL_CREDITS`. */
         var creditTypesTreatment: js.UndefOr[String] = js.undefined
         
+        /** Optional. Specifies to track usage from any start date (required) to any end date (optional). This time period is static, it does not recur. */
+        var customPeriod: js.UndefOr[GoogleCloudBillingBudgetsV1CustomPeriod] = js.undefined
+        
         /**
-          * Optional. A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget. Currently, multiple entries or multiple
-          * values per entry are not allowed. If omitted, the report will include all labeled and unlabeled usage.
+          * Optional. A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget. If omitted, the report includes all labeled
+          * and unlabeled usage. An object containing a single `"key": value` pair. Example: `{ "name": "wrench" }`. _Currently, multiple entries or multiple values per entry are not allowed._
           */
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: std.Array<any>}
-          */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[Any]
               ] = js.undefined
         
         /**
-          * Optional. A set of projects of the form `projects/{project}`, specifying that usage from only this set of projects should be included in the budget. If omitted, the report will
-          * include all usage for the billing account, regardless of which project the usage occurred on. Only zero or one project can be specified currently.
+          * Optional. A set of projects of the form `projects/{project}`, specifying that usage from only this set of projects should be included in the budget. If omitted, the report includes
+          * all usage for the billing account, regardless of which project the usage occurred on. Only zero or one project can be specified currently.
           */
         var projects: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
-          * Optional. A set of services of the form `services/{service_id}`, specifying that usage from only this set of services should be included in the budget. If omitted, the report will
-          * include usage for all the services. The service names are available through the Catalog API: https://cloud.google.com/billing/v1/how-tos/catalog-api.
+          * Optional. A set of services of the form `services/{service_id}`, specifying that usage from only this set of services should be included in the budget. If omitted, the report
+          * includes usage for all the services. The service names are available through the Catalog API: https://cloud.google.com/billing/v1/how-tos/catalog-api.
           */
         var services: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
           * Optional. A set of subaccounts of the form `billingAccounts/{account_id}`, specifying that usage from only this set of subaccounts should be included in the budget. If a subaccount
-          * is set to the name of the parent account, usage from the parent account will be included. If the field is omitted, the report will include usage from the parent account and all
-          * subaccounts, if they exist.
+          * is set to the name of the parent account, usage from the parent account is included. If the field is omitted, the report includes usage from the parent account and all subaccounts,
+          * if they exist.
           */
         var subaccounts: js.UndefOr[js.Array[String]] = js.undefined
       }
@@ -209,6 +257,10 @@ object gapi {
         
         extension [Self <: GoogleCloudBillingBudgetsV1Filter](x: Self) {
           
+          inline def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
+          
+          inline def setCalendarPeriodUndefined: Self = StObject.set(x, "calendarPeriod", js.undefined)
+          
           inline def setCreditTypes(value: js.Array[String]): Self = StObject.set(x, "creditTypes", value.asInstanceOf[js.Any])
           
           inline def setCreditTypesTreatment(value: String): Self = StObject.set(x, "creditTypesTreatment", value.asInstanceOf[js.Any])
@@ -217,12 +269,16 @@ object gapi {
           
           inline def setCreditTypesUndefined: Self = StObject.set(x, "creditTypes", js.undefined)
           
-          inline def setCreditTypesVarargs(value: String*): Self = StObject.set(x, "creditTypes", js.Array(value :_*))
+          inline def setCreditTypesVarargs(value: String*): Self = StObject.set(x, "creditTypes", js.Array(value*))
+          
+          inline def setCustomPeriod(value: GoogleCloudBillingBudgetsV1CustomPeriod): Self = StObject.set(x, "customPeriod", value.asInstanceOf[js.Any])
+          
+          inline def setCustomPeriodUndefined: Self = StObject.set(x, "customPeriod", js.undefined)
           
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: std.Array<any>}
-            */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -231,19 +287,19 @@ object gapi {
           
           inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
           
-          inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value :_*))
+          inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value*))
           
           inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
           
           inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
           
-          inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+          inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
           
           inline def setSubaccounts(value: js.Array[String]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
           
           inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
           
-          inline def setSubaccountsVarargs(value: String*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+          inline def setSubaccountsVarargs(value: String*): Self = StObject.set(x, "subaccounts", js.Array(value*))
         }
       }
       
@@ -271,7 +327,7 @@ object gapi {
           
           inline def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
           
-          inline def setBudgetsVarargs(value: GoogleCloudBillingBudgetsV1Budget*): Self = StObject.set(x, "budgets", js.Array(value :_*))
+          inline def setBudgetsVarargs(value: GoogleCloudBillingBudgetsV1Budget*): Self = StObject.set(x, "budgets", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -288,23 +344,32 @@ object gapi {
         var disableDefaultIamRecipients: js.UndefOr[Boolean] = js.undefined
         
         /**
-          * Optional. Targets to send notifications to when a threshold is exceeded. This is in addition to default recipients who have billing account IAM roles. The value is the full REST
-          * resource name of a monitoring notification channel with the form `projects/{project_id}/notificationChannels/{channel_id}`. A maximum of 5 channels are allowed. See
-          * https://cloud.google.com/billing/docs/how-to/budgets-notification-recipients for more details.
+          * Optional. Email targets to send notifications to when a threshold is exceeded. This is in addition to the `DefaultIamRecipients` who receive alert emails based on their billing
+          * account IAM role. The value is the full REST resource name of a Cloud Monitoring email notification channel with the form `projects/{project_id}/notificationChannels/{channel_id}`.
+          * A maximum of 5 email notifications are allowed. To customize budget alert email recipients with monitoring notification channels, you _must create the monitoring notification
+          * channels before you link them to a budget_. For guidance on setting up notification channels to use with budgets, see [Customize budget alert email
+          * recipients](https://cloud.google.com/billing/docs/how-to/budgets-notification-recipients). For Cloud Billing budget alerts, you _must use email notification channels_. The other
+          * types of notification channels are _not_ supported, such as Slack, SMS, or PagerDuty. If you want to [send budget notifications to
+          * Slack](https://cloud.google.com/billing/docs/how-to/notify#send_notifications_to_slack), use a pubsubTopic and configure [programmatic
+          * notifications](https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications).
           */
         var monitoringNotificationChannels: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
-          * Optional. The name of the Pub/Sub topic where budget related messages will be published, in the form `projects/{project_id}/topics/{topic_id}`. Updates are sent at regular intervals
-          * to the topic. The topic needs to be created before the budget is created; see https://cloud.google.com/billing/docs/how-to/budgets#manage-notifications for more details. Caller is
-          * expected to have `pubsub.topics.setIamPolicy` permission on the topic when it's set for a budget, otherwise, the API call will fail with PERMISSION_DENIED. See
-          * https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications for more details on Pub/Sub roles and permissions.
+          * Optional. The name of the Pub/Sub topic where budget-related messages are published, in the form `projects/{project_id}/topics/{topic_id}`. Updates are sent to the topic at regular
+          * intervals; the timing of the updates is not dependent on the [threshold rules](#thresholdrule) you've set. Note that if you want your [Pub/Sub JSON
+          * object](https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications#notification_format) to contain data for `alertThresholdExceeded`, you need at least one
+          * [alert threshold rule](#thresholdrule). When you set threshold rules, you must also enable at least one of the email notification options, either using the default IAM recipients or
+          * Cloud Monitoring email notification channels. To use Pub/Sub topics with budgets, you must do the following: 1. Create the Pub/Sub topic before connecting it to your budget. For
+          * guidance, see [Manage programmatic budget alert notifications](https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications). 2. Grant the API caller the
+          * `pubsub.topics.setIamPolicy` permission on the Pub/Sub topic. If not set, the API call fails with PERMISSION_DENIED. For additional details on Pub/Sub roles and permissions, see
+          * [Permissions required for this task](https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications#permissions_required_for_this_task).
           */
         var pubsubTopic: js.UndefOr[String] = js.undefined
         
         /**
-          * Optional. The schema version of the notification sent to `pubsub_topic`. Only "1.0" is accepted. It represents the JSON schema as defined in
-          * https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications#notification_format
+          * Optional. Required when NotificationsRule.pubsub_topic is set. The schema version of the notification sent to NotificationsRule.pubsub_topic. Only "1.0" is accepted. It represents
+          * the JSON schema as defined in https://cloud.google.com/billing/docs/how-to/budgets-programmatic-notifications#notification_format.
           */
         var schemaVersion: js.UndefOr[String] = js.undefined
       }
@@ -325,7 +390,7 @@ object gapi {
           
           inline def setMonitoringNotificationChannelsUndefined: Self = StObject.set(x, "monitoringNotificationChannels", js.undefined)
           
-          inline def setMonitoringNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "monitoringNotificationChannels", js.Array(value :_*))
+          inline def setMonitoringNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "monitoringNotificationChannels", js.Array(value*))
           
           inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
           
@@ -366,6 +431,40 @@ object gapi {
       
       // tslint:disable-next-line:no-empty-interface
       trait GoogleProtobufEmpty extends StObject
+      
+      trait GoogleTypeDate extends StObject {
+        
+        /** Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant. */
+        var day: js.UndefOr[Double] = js.undefined
+        
+        /** Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day. */
+        var month: js.UndefOr[Double] = js.undefined
+        
+        /** Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year. */
+        var year: js.UndefOr[Double] = js.undefined
+      }
+      object GoogleTypeDate {
+        
+        inline def apply(): GoogleTypeDate = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[GoogleTypeDate]
+        }
+        
+        extension [Self <: GoogleTypeDate](x: Self) {
+          
+          inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+          
+          inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+          
+          inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+          
+          inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+          
+          inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+          
+          inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+        }
+      }
       
       trait GoogleTypeMoney extends StObject {
         

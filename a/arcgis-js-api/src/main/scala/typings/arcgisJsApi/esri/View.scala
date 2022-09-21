@@ -66,7 +66,7 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#focus)
     */
-  def focus(): Unit = js.native
+  def focus(): scala.Unit = js.native
   
   /**
     * Allows for adding [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) directly to the default graphics in the View.
@@ -80,10 +80,12 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#input)
     */
-  val input: inputInput = js.native
+  val input: Input = js.native
   
   /**
     * Indication whether the view is being interacted with (for example when panning or by an interactive tool).
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#interacting)
     */
@@ -97,6 +99,13 @@ trait View
   var layerViews: Collection[LayerView] = js.native
   
   /**
+    * The magnifier allows for showing a portion of the view as a magnifier image on top of the view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#magnifier)
+    */
+  val magnifier: Magnifier = js.native
+  
+  /**
     * An instance of a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) object to display in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map)
@@ -105,6 +114,8 @@ trait View
   
   /**
     * Indication whether the view is being navigated (for example when panning).
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#navigating)
     */
@@ -117,23 +128,8 @@ trait View
     */
   var navigation: Navigation = js.native
   
-  /**
-    * Registers an event handler on the instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#on)
-    */
-  def on(`type`: String, modifiersOrHandler: js.Array[String]): js.Any = js.native
-  def on(`type`: String, modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
-  def on(`type`: String, modifiersOrHandler: js.Function): js.Any = js.native
-  def on(`type`: String, modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String]): js.Any = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Function): js.Any = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
   @JSName("on")
   def on_blur(name: blur, eventHandler: ViewBlurEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_blur(name: blur, modifiers: js.Array[String], eventHandler: ViewBlurEventHandler): IHandle = js.native
   @JSName("on")
   def on_click(name: click, eventHandler: ViewClickEventHandler): IHandle = js.native
   @JSName("on")
@@ -148,8 +144,6 @@ trait View
   def on_drag(name: drag, modifiers: js.Array[String], eventHandler: ViewDragEventHandler): IHandle = js.native
   @JSName("on")
   def on_focus(name: focus, eventHandler: ViewFocusEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_focus(name: focus, modifiers: js.Array[String], eventHandler: ViewFocusEventHandler): IHandle = js.native
   @JSName("on")
   def on_hold(name: hold, eventHandler: ViewHoldEventHandler): IHandle = js.native
   @JSName("on")
@@ -177,27 +171,9 @@ trait View
   @JSName("on")
   def on_layerviewcreate(name: `layerview-create`, eventHandler: ViewLayerviewCreateEventHandler): IHandle = js.native
   @JSName("on")
-  def on_layerviewcreate(
-    name: `layerview-create`,
-    modifiers: js.Array[String],
-    eventHandler: ViewLayerviewCreateEventHandler
-  ): IHandle = js.native
-  @JSName("on")
   def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: ViewLayerviewCreateErrorEventHandler): IHandle = js.native
   @JSName("on")
-  def on_layerviewcreateerror(
-    name: `layerview-create-error`,
-    modifiers: js.Array[String],
-    eventHandler: ViewLayerviewCreateErrorEventHandler
-  ): IHandle = js.native
-  @JSName("on")
   def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: ViewLayerviewDestroyEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(
-    name: `layerview-destroy`,
-    modifiers: js.Array[String],
-    eventHandler: ViewLayerviewDestroyEventHandler
-  ): IHandle = js.native
   @JSName("on")
   def on_mousewheel(name: `mouse-wheel`, eventHandler: ViewMouseWheelEventHandler): IHandle = js.native
   @JSName("on")
@@ -224,11 +200,11 @@ trait View
   def on_pointerup(name: `pointer-up`, modifiers: js.Array[String], eventHandler: ViewPointerUpEventHandler): IHandle = js.native
   @JSName("on")
   def on_resize(name: resize, eventHandler: ViewResizeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_resize(name: resize, modifiers: js.Array[String], eventHandler: ViewResizeEventHandler): IHandle = js.native
   
   /**
     * Use the padding property to make the [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center), and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent), etc.
+    *
+    * @default {left: 0, top: 0, right: 0, bottom: 0}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
@@ -236,6 +212,8 @@ trait View
   
   /**
     * When `true`, this property indicates whether the view successfully satisfied all dependencies, signaling that the following conditions are met.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#ready)
     */
@@ -251,6 +229,8 @@ trait View
   /**
     * The spatial reference of the view.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference)
     */
   var spatialReference: SpatialReference = js.native
@@ -265,6 +245,8 @@ trait View
   /**
     * The view's time extent.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent)
     */
   var timeExtent: TimeExtent = js.native
@@ -274,7 +256,7 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#tryFatalErrorRecovery)
     */
-  def tryFatalErrorRecovery(): Unit = js.native
+  def tryFatalErrorRecovery(): scala.Unit = js.native
   
   /**
     * The type of the view is either `2d` (indicating a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html)) or `3d` (indicating a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)).
@@ -285,6 +267,8 @@ trait View
   
   /**
     * Indicates whether the view is being updated by additional data requests to the network, or by processing received data.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#updating)
     */

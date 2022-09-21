@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetOpsSummaryRequest extends StObject {
   
   /**
-    * Optional aggregators that return counts of OpsItems based on one or more expressions.
+    * Optional aggregators that return counts of OpsData based on one or more expressions.
     */
   var Aggregators: js.UndefOr[OpsAggregatorList] = js.undefined
   
   /**
-    * Optional filters used to scope down the returned OpsItems. 
+    * Optional filters used to scope down the returned OpsData. 
     */
   var Filters: js.UndefOr[OpsFilterList] = js.undefined
   
@@ -27,7 +27,7 @@ trait GetOpsSummaryRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * The OpsItem data type to return.
+    * The OpsData data type to return.
     */
   var ResultAttributes: js.UndefOr[OpsResultAttributeList] = js.undefined
   
@@ -49,13 +49,13 @@ object GetOpsSummaryRequest {
     
     inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    inline def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value*))
     
     inline def setFilters(value: OpsFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object GetOpsSummaryRequest {
     
     inline def setResultAttributesUndefined: Self = StObject.set(x, "ResultAttributes", js.undefined)
     
-    inline def setResultAttributesVarargs(value: OpsResultAttribute*): Self = StObject.set(x, "ResultAttributes", js.Array(value :_*))
+    inline def setResultAttributesVarargs(value: OpsResultAttribute*): Self = StObject.set(x, "ResultAttributes", js.Array(value*))
     
     inline def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     

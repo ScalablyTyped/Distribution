@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Grid")
 @js.native
-class Grid () extends StObject {
+open class Grid () extends StObject {
   
   /**
     * The height of a single grid bucket.
-    *
+    * @deprecated replaced by Matter.Detector
     * @property type
-    * @type number
+    * @type {number}
     */
   var bucketHeight: Double = js.native
   
   /**
     * The width of a single grid bucket.
-    *
+    * @deprecated replaced by Matter.Detector
     * @property type
-    * @type number
+    * @type {number}
     */
   var bucketWidth: Double = js.native
 }
@@ -33,6 +33,7 @@ object Grid {
   
   /**
     * Clears the grid.
+    * @deprecated replaced by Matter.Detector
     * @method clear
     * @param {grid} grid
     */
@@ -40,9 +41,10 @@ object Grid {
   
   /**
     * Creates a new grid.
+    * @deprecated replaced by Matter.Detector
     * @method create
     * @param {} options
-    * @return {grid} A new grid
+    * @returns {grid} A new grid
     */
   inline def create(): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Grid]
   inline def create(options: IGridDefinition): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Grid]
@@ -50,8 +52,9 @@ object Grid {
   /**
     * Updates the grid.
     * @method update
+    * @deprecated replaced by Matter.Detector
     * @param {grid} grid
-    * @param {body[]} bodies
+    * @param {Body[]} bodies
     * @param {engine} engine
     * @param {boolean} forceUpdate
     */

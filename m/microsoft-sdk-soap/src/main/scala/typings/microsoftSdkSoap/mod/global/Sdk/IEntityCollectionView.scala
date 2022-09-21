@@ -39,7 +39,7 @@ object IEntityCollectionView {
     
     inline def setEntities(value: js.Array[IEntityView]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: IEntityView*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: IEntityView*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setEntityName(value: java.lang.String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     

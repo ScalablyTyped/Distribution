@@ -39,6 +39,11 @@ trait Cart
     * Example: two items have been added to the cart that cost $1.25 then the subtotal will be 2.50
     */
   var subtotalPrice: String
+  
+  /**
+    * Get checkout url
+    */
+  var webUrl: String
 }
 object Cart {
   
@@ -47,9 +52,10 @@ object Cart {
     id: String | Double,
     lineItemCount: Double,
     lineItems: js.Array[LineItem],
-    subtotalPrice: String
+    subtotalPrice: String,
+    webUrl: String
   ): Cart = {
-    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any], completedAt = null)
+    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any], webUrl = webUrl.asInstanceOf[js.Any], completedAt = null)
     __obj.asInstanceOf[Cart]
   }
   
@@ -67,8 +73,10 @@ object Cart {
     
     inline def setLineItems(value: js.Array[LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setSubtotalPrice(value: String): Self = StObject.set(x, "subtotalPrice", value.asInstanceOf[js.Any])
+    
+    inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
   }
 }

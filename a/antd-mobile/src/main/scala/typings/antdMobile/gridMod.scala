@@ -1,98 +1,51 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CarouselMaxRow
-import typings.antdMobile.anon.InitialSlideWidth
-import typings.antdMobile.gridPropsTypeMod.GridPropsType
-import typings.react.mod.CSSProperties
-import typings.react.mod.Component
-import typings.react.mod.global.JSX.Element
+import typings.antdMobile.anon.PartialGridProps
+import typings.antdMobile.anon.WeakValidationMapGridProp
+import typings.antdMobile.gridGridMod.GridItemProps
+import typings.antdMobile.gridGridMod.GridProps
+import typings.react.mod.FC
+import typings.react.mod.ReactElement
+import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
   
-  @JSImport("antd-mobile/lib/grid", JSImport.Default)
-  @js.native
-  class default () extends Grid
-  /* static members */
+  /* Inlined react.react.FC<antd-mobile.antd-mobile/es/components/grid/grid.GridProps> & {  Item :react.react.FC<antd-mobile.antd-mobile/es/components/grid/grid.GridItemProps>} */
   object default {
     
-    @JSImport("antd-mobile/lib/grid", JSImport.Default)
+    inline def apply(props: GridProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: GridProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/grid", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/grid", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/grid", "default.Item")
     @js.native
-    def defaultProps: CarouselMaxRow = js.native
-    inline def defaultProps_=(x: CarouselMaxRow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait Grid
-    extends Component[GridProps, js.Any, js.Any] {
+    def Item: FC[GridItemProps] = js.native
+    inline def Item_=(x: FC[GridItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    @JSName("componentDidMount")
-    def componentDidMount_MGrid(): Unit = js.native
+    @JSImport("antd-mobile/es/components/grid", "default.contextTypes")
+    @js.native
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
-    def getRows(rowCount: Double, dataLength: Double): js.Array[js.Any] = js.native
+    @JSImport("antd-mobile/es/components/grid", "default.defaultProps")
+    @js.native
+    def defaultProps: js.UndefOr[PartialGridProps] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialGridProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    def renderCarousel(rowsArr: js.Array[js.Any], pageCount: Double, rowCount: Double): js.Array[js.Any] = js.native
+    @JSImport("antd-mobile/es/components/grid", "default.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    def renderItem(dataItem: js.Any, index: Double, columnNum: Double, renderItem: js.Any): Element = js.native
-    
-    @JSName("state")
-    var state_Grid: InitialSlideWidth = js.native
-  }
-  
-  trait GridProps
-    extends StObject
-       with GridPropsType {
-    
-    var activeClassName: js.UndefOr[String] = js.undefined
-    
-    var activeStyle: js.UndefOr[Boolean | CSSProperties] = js.undefined
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var itemStyle: js.UndefOr[CSSProperties] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var square: js.UndefOr[Boolean] = js.undefined
-  }
-  object GridProps {
-    
-    inline def apply(): GridProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GridProps]
-    }
-    
-    extension [Self <: GridProps](x: Self) {
-      
-      inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
-      
-      inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
-      
-      inline def setActiveStyle(value: Boolean | CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
-      
-      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setItemStyle(value: CSSProperties): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-      
-      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
-      
-      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
-    }
+    @JSImport("antd-mobile/es/components/grid", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapGridProp] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapGridProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

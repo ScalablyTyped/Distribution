@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
 import org.scalablytyped.runtime.StObject
@@ -11,11 +12,13 @@ trait AttachmentsProperties
      with WidgetProperties {
   
   /**
-    * A string value indicating how to display the attachment.
+    * A string value indicating how to display an attachment.
+    *
+    * @default "auto"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html#displayType)
     */
-  var displayType: js.UndefOr[preview | list] = js.undefined
+  var displayType: js.UndefOr[auto | preview | list] = js.undefined
   
   /**
     * The graphic for the attachments.
@@ -40,7 +43,7 @@ object AttachmentsProperties {
   
   extension [Self <: AttachmentsProperties](x: Self) {
     
-    inline def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    inline def setDisplayType(value: auto | preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
     inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
     

@@ -9,6 +9,8 @@ object anon {
   trait AutoStart extends StObject {
     
     var autoStart: js.UndefOr[Boolean] = js.undefined
+    
+    var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object AutoStart {
     
@@ -22,6 +24,42 @@ object anon {
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
       inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+    }
+  }
+  
+  /* Inlined asynciterator.asynciterator.BufferedIteratorOptions & {  destroySources :boolean | undefined} */
+  trait BufferedIteratorOptionsde extends StObject {
+    
+    var autoStart: js.UndefOr[Boolean] = js.undefined
+    
+    var destroySources: js.UndefOr[Boolean] = js.undefined
+    
+    var maxBufferSize: js.UndefOr[Double] = js.undefined
+  }
+  object BufferedIteratorOptionsde {
+    
+    inline def apply(): BufferedIteratorOptionsde = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BufferedIteratorOptionsde]
+    }
+    
+    extension [Self <: BufferedIteratorOptionsde](x: Self) {
+      
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      
+      inline def setDestroySources(value: Boolean): Self = StObject.set(x, "destroySources", value.asInstanceOf[js.Any])
+      
+      inline def setDestroySourcesUndefined: Self = StObject.set(x, "destroySources", js.undefined)
+      
+      inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxBufferSizeUndefined: Self = StObject.set(x, "maxBufferSize", js.undefined)
     }
   }
   
@@ -56,28 +94,22 @@ object anon {
     }
   }
   
-  trait MaxBufferSize extends StObject {
+  trait Limit extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.undefined
-    
-    var maxBufferSize: js.UndefOr[Double] = js.undefined
+    var limit: js.UndefOr[Double] = js.undefined
   }
-  object MaxBufferSize {
+  object Limit {
     
-    inline def apply(): MaxBufferSize = {
+    inline def apply(): Limit = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MaxBufferSize]
+      __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: MaxBufferSize](x: Self) {
+    extension [Self <: Limit](x: Self) {
       
-      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
-      
-      inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
-      
-      inline def setMaxBufferSizeUndefined: Self = StObject.set(x, "maxBufferSize", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
 }

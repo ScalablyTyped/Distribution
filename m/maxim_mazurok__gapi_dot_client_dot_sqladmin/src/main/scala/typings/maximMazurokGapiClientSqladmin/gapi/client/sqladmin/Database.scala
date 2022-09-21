@@ -18,7 +18,7 @@ trait Database extends StObject {
   /** The name of the Cloud SQL instance. This does not include the project ID. */
   var instance: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#database*. */
+  /** This is always `sql#database`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the database in the Cloud SQL instance. This does not include the project ID or instance name. */

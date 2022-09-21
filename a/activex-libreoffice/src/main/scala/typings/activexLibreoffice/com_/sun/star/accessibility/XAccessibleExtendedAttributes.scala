@@ -10,17 +10,17 @@ trait XAccessibleExtendedAttributes
   extends StObject
      with XInterface {
   
-  val ExtendedAttributes: js.Any
+  val ExtendedAttributes: Any
   
-  def getExtendedAttributes(): js.Any
+  def getExtendedAttributes(): Any
 }
 object XAccessibleExtendedAttributes {
   
   inline def apply(
-    ExtendedAttributes: js.Any,
+    ExtendedAttributes: Any,
     acquire: () => Unit,
-    getExtendedAttributes: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getExtendedAttributes: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleExtendedAttributes = {
     val __obj = js.Dynamic.literal(ExtendedAttributes = ExtendedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getExtendedAttributes = js.Any.fromFunction0(getExtendedAttributes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -29,8 +29,8 @@ object XAccessibleExtendedAttributes {
   
   extension [Self <: XAccessibleExtendedAttributes](x: Self) {
     
-    inline def setExtendedAttributes(value: js.Any): Self = StObject.set(x, "ExtendedAttributes", value.asInstanceOf[js.Any])
+    inline def setExtendedAttributes(value: Any): Self = StObject.set(x, "ExtendedAttributes", value.asInstanceOf[js.Any])
     
-    inline def setGetExtendedAttributes(value: () => js.Any): Self = StObject.set(x, "getExtendedAttributes", js.Any.fromFunction0(value))
+    inline def setGetExtendedAttributes(value: () => Any): Self = StObject.set(x, "getExtendedAttributes", js.Any.fromFunction0(value))
   }
 }

@@ -1,8 +1,5 @@
 package typings.tensorflowTfjsCore
 
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.anon.Error
 import typings.tensorflowTfjsCore.backendMod.BackendTimer
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
@@ -26,7 +23,7 @@ object profilerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/profiler", "Logger")
   @js.native
-  class Logger () extends StObject {
+  open class Logger () extends StObject {
     
     def logKernelProfile(name: String, result: Tensor[Rank], vals: TypedArray, timeMs: Double, inputs: NamedTensorMap): Unit = js.native
     def logKernelProfile(
@@ -50,26 +47,26 @@ object profilerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/profiler", "Profiler")
   @js.native
-  class Profiler protected () extends StObject {
+  open class Profiler protected () extends StObject {
     def this(backendTimer: BackendTimer) = this()
     def this(backendTimer: BackendTimer, logger: Logger) = this()
     
-    /* private */ var backendTimer: js.Any = js.native
+    /* private */ var backendTimer: Any = js.native
     
     def logKernelProfile(kernelProfile: KernelProfile): Unit = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
     def profileKernel(kernelName: String, inputs: NamedTensorMap, f: js.Function0[js.Array[Tensor[Rank]]]): KernelProfile = js.native
   }
   
-  inline def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_bool(vals: js.typedarray.Uint8Array, dtype: bool, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_complex64(vals: js.typedarray.Float32Array, dtype: complex64, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_float32(vals: js.typedarray.Float32Array, dtype: float32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_int32(vals: js.typedarray.Int32Array, dtype: int32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def checkComputationForErrors_string(vals: js.Array[String], dtype: string, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -108,7 +105,7 @@ object profilerMod {
       
       inline def setOutputs(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setTimeMs(value: js.Promise[Double | Error]): Self = StObject.set(x, "timeMs", value.asInstanceOf[js.Any])
     }

@@ -2,20 +2,34 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.computeEffectMod.ComputeEffect
+import typings.babylonjs.computeEffectMod.IComputeEffectCreationOptions
 import typings.babylonjs.dataBufferMod.DataBuffer
-import typings.babylonjs.depthTextureCreationOptionsMod.DepthTextureCreationOptions
+import typings.babylonjs.engineComputeShaderMod.ComputeBindingList
+import typings.babylonjs.engineComputeShaderMod.ComputeBindingMapping
 import typings.babylonjs.engineMod.IDisplayChangedEventArgs
-import typings.babylonjs.engineRenderTargetMod.RenderTargetTextureSize
+import typings.babylonjs.engineQueryMod.OcclusionQuery
 import typings.babylonjs.engineWebVRMod.IVRPresentationAttributes
+import typings.babylonjs.externalTextureMod.ExternalTexture
+import typings.babylonjs.icanvasMod.ICanvas
+import typings.babylonjs.icomputecontextMod.IComputeContext
+import typings.babylonjs.icomputepipelinecontextMod.IComputePipelineContext
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.ipipelinecontextMod.IPipelineContext
 import typings.babylonjs.mathSizeMod.Size
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
 import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.observableMod.Observer
+import typings.babylonjs.perfCounterMod.PerfCounter
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.storageBufferMod.StorageBuffer
+import typings.babylonjs.textureCreationOptionsMod.DepthTextureCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.TextureSize
+import typings.babylonjs.textureSamplerMod.TextureSampler
 import typings.babylonjs.timeTokenMod.TimeToken
 import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.FloatArray
@@ -24,12 +38,10 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.int
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import typings.babylonjs.webVRCameraMod.WebVROptions
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import typings.std.ImageData
-import typings.std.OffscreenCanvas
 import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
@@ -42,15 +54,59 @@ object extensionsIndexMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("babylonjs/Engines/Extensions/index", "ComputeBindingType")
+  @js.native
+  object ComputeBindingType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.babylonjs.engineComputeShaderMod.ComputeBindingType & Double] = js.native
+    
+    /* 5 */ val Sampler: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.Sampler & Double = js.native
+    
+    /* 3 */ val StorageBuffer: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.StorageBuffer & Double = js.native
+    
+    /* 1 */ val StorageTexture: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.StorageTexture & Double = js.native
+    
+    /* 0 */ val Texture: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.Texture & Double = js.native
+    
+    /* 4 */ val TextureWithoutSampler: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.TextureWithoutSampler & Double = js.native
+    
+    /* 2 */ val UniformBuffer: typings.babylonjs.engineComputeShaderMod.ComputeBindingType.UniformBuffer & Double = js.native
+  }
+  
   @JSImport("babylonjs/Engines/Extensions/index", "EngineView")
   @js.native
-  class EngineView ()
+  open class EngineView ()
     extends typings.babylonjs.engineViewsMod.EngineView
   
   @JSImport("babylonjs/Engines/Extensions/index", "_OcclusionDataStorage")
   @js.native
-  class OcclusionDataStorage ()
-    extends typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
+  open class OcclusionDataStorage ()
+    extends typings.babylonjs.engineQueryMod.OcclusionDataStorage
+  
+  inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: js.typedarray.ArrayBuffer): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: js.typedarray.ArrayBuffer, sizeInBytes: Boolean): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(
+    `type`: Double,
+    sizeOrDstBuffer: js.typedarray.ArrayBuffer,
+    sizeInBytes: Boolean,
+    copyBuffer: js.typedarray.ArrayBuffer
+  ): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(
+    `type`: Double,
+    sizeOrDstBuffer: js.typedarray.ArrayBuffer,
+    sizeInBytes: Unit,
+    copyBuffer: js.typedarray.ArrayBuffer
+  ): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: Double): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: Double, sizeInBytes: Boolean): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(
+    `type`: Double,
+    sizeOrDstBuffer: Double,
+    sizeInBytes: Boolean,
+    copyBuffer: js.typedarray.ArrayBuffer
+  ): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: Double, sizeInBytes: Unit, copyBuffer: js.typedarray.ArrayBuffer): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
   
   @JSImport("babylonjs/Engines/Extensions/index", "_forceTransformFeedbackToBundle")
   @js.native
@@ -71,6 +127,12 @@ object extensionsIndexMod {
       
       /**
         * @hidden
+        * For WebXR cameras that are rendering to multiview texture arrays.
+        */
+      var _renderingMultiview: Boolean
+      
+      /**
+        * @hidden
         * ensures the multiview texture of the camera exists and has the specified width/height
         * @param width height to set on the multiview texture
         * @param height width to set on the multiview texture
@@ -85,8 +147,12 @@ object extensionsIndexMod {
     }
     object Camera {
       
-      inline def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
-        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
+      inline def apply(
+        _renderingMultiview: Boolean,
+        _resizeOrCreateMultiviewTexture: (Double, Double) => Unit,
+        _useMultiviewToSingleView: Boolean
+      ): Camera = {
+        val __obj = js.Dynamic.literal(_renderingMultiview = _renderingMultiview.asInstanceOf[js.Any], _resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
         __obj.asInstanceOf[Camera]
       }
       
@@ -95,6 +161,8 @@ object extensionsIndexMod {
         inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
         inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
+        
+        inline def set_renderingMultiview(value: Boolean): Self = StObject.set(x, "_renderingMultiview", value.asInstanceOf[js.Any])
         
         inline def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
         
@@ -108,6 +176,9 @@ object extensionsIndexMod {
     
     @js.native
     trait Engine extends StObject {
+      
+      /** @hidden */
+      var _captureGPUFrameTime: Boolean = js.native
       
       /** @hidden */
       def _createTimeQuery(): WebGLQuery = js.native
@@ -125,19 +196,44 @@ object extensionsIndexMod {
       def _getGlAlgorithmType(algorithmType: Double): Double = js.native
       
       /** @hidden */
-      def _getTimeQueryAvailability(query: WebGLQuery): js.Any = js.native
+      def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
       
       /** @hidden */
-      def _getTimeQueryResult(query: WebGLQuery): js.Any = js.native
+      def _getTimeQueryResult(query: WebGLQuery): Any = js.native
       
       /** @hidden */
       def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
+      
+      /** @hidden */
+      var _gpuFrameTime: PerfCounter = js.native
+      
+      /** @hidden */
+      var _gpuFrameTimeToken: Nullable[TimeToken] = js.native
+      
+      /** @hidden */
+      var _inputElement: Nullable[HTMLElement] = js.native
       
       /** @hidden */
       var _oldHardwareScaleFactor: Double = js.native
       
       /** @hidden */
       var _oldSize: Size = js.native
+      
+      /** @hidden */
+      var _onBeginFrameObserver: Nullable[
+            Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+          ] = js.native
+      
+      /** @hidden */
+      var _onEndFrameObserver: Nullable[
+            Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+          ] = js.native
+      
+      /**
+        * Observable to handle when a change to inputElement occurs
+        * @hidden
+        */
+      var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
       
       /** @hidden */
       def _onVRDisplayPointerRestricted(): Unit = js.native
@@ -149,7 +245,7 @@ object extensionsIndexMod {
       def _onVRFullScreenTriggered(): Unit = js.native
       
       /** @hidden */
-      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
+      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
       
       /** @hidden */
       var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -161,7 +257,7 @@ object extensionsIndexMod {
       var _textureFormatInUse: String = js.native
       
       /** @hidden */
-      var _vrDisplay: js.Any = js.native
+      var _vrDisplay: Any = js.native
       
       /** @hidden */
       var _vrExclusivePointerMode: Boolean = js.native
@@ -185,7 +281,7 @@ object extensionsIndexMod {
         * @returns the current engine
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      def beginOcclusionQuery(algorithmType: Double, query: WebGLQuery): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+      def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
       
       /**
         * Begins a transform feedback operation
@@ -194,10 +290,10 @@ object extensionsIndexMod {
       def beginTransformFeedback(usePoints: Boolean): Unit = js.native
       
       /**
-        * Binds a multiview framebuffer to be drawn to
-        * @param multiviewTexture texture to bind
+        * Binds a multiview render target wrapper to be drawn to
+        * @param multiviewTexture render target wrapper to bind
         */
-      def bindMultiviewFramebuffer(multiviewTexture: InternalTexture): Unit = js.native
+      def bindMultiviewFramebuffer(multiviewTexture: RenderTargetWrapper): Unit = js.native
       
       /**
         * Bind a webGL transform feedback object to the webgl context
@@ -212,18 +308,24 @@ object extensionsIndexMod {
       def bindTransformFeedbackBuffer(value: Nullable[DataBuffer]): Unit = js.native
       
       /**
+        * Enable or disable the GPU frame time capture
+        * @param value True to enable, false to disable
+        */
+      def captureGPUFrameTime(value: Boolean): Unit = js.native
+      
+      /**
         * Creates a new multiview render target
         * @param width defines the width of the texture
         * @param height defines the height of the texture
-        * @returns the created multiview texture
+        * @returns the created multiview render target wrapper
         */
-      def createMultiviewRenderTargetTexture(width: Double, height: Double): InternalTexture = js.native
+      def createMultiviewRenderTargetTexture(width: Double, height: Double): RenderTargetWrapper = js.native
       
       /**
         * Create a new webGL query (you must be sure that queries are supported by checking getCaps() function)
-        * @return the new query
+        * @returns the new query
         */
-      def createQuery(): WebGLQuery = js.native
+      def createQuery(): OcclusionQuery = js.native
       
       /**
         * Creates a webGL transform feedback object
@@ -235,9 +337,9 @@ object extensionsIndexMod {
       /**
         * Delete and release a webGL query
         * @param query defines the query to delete
-        * @return the current engine
+        * @returns the current engine
         */
-      def deleteQuery(query: WebGLQuery): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+      def deleteQuery(query: OcclusionQuery): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
       
       /**
         * Delete a webGL transform feedback object
@@ -259,7 +361,7 @@ object extensionsIndexMod {
         * @param algorithmType defines the algorithm to use
         * @returns the current engine
         */
-      def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+      def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
       
       /**
         * Ends a time query
@@ -274,17 +376,23 @@ object extensionsIndexMod {
       def endTransformFeedback(): Unit = js.native
       
       /**
+        * Get the performance counter associated with the frame time computation
+        * @returns the perf counter
+        */
+      def getGPUFrameTimeCounter(): PerfCounter = js.native
+      
+      /**
         * Gets the value of a given query
         * @param query defines the query to check
         * @returns the value of the query
         */
-      def getQueryResult(query: WebGLQuery): Double = js.native
+      def getQueryResult(query: OcclusionQuery): Double = js.native
       
       /**
         * Gets the current webVR device
         * @returns the current webVR device (or null)
         */
-      def getVRDevice(): js.Any = js.native
+      def getVRDevice(): Any = js.native
       
       /**
         * Initializes a webVR display and starts listening to display change events
@@ -309,13 +417,23 @@ object extensionsIndexMod {
         * @param query defines the query to check
         * @returns true if the query got its value
         */
-      def isQueryResultAvailable(query: WebGLQuery): Boolean = js.native
+      def isQueryResultAvailable(query: OcclusionQuery): Boolean = js.native
       
       /**
         * Gets a boolean indicating if a webVR device was detected
         * @returns true if a webVR device was detected
         */
       def isVRDevicePresent(): Boolean = js.native
+      
+      /**
+        * Will be triggered after the view rendered
+        */
+      val onAfterViewRenderObservable: Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+      
+      /**
+        * Will be triggered before the view renders
+        */
+      val onBeforeViewRenderObservable: Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
       
       /**
         * Observable signaled when VR display mode changes
@@ -336,10 +454,13 @@ object extensionsIndexMod {
         * Register a new child canvas
         * @param canvas defines the canvas to register
         * @param camera defines an optional camera to use with this canvas (it will overwrite the scene.camera for this view)
+        * @param clearBeforeCopy Indicates if the destination view canvas should be cleared before copying the parent canvas. Can help if the scene clear color has alpha < 1
         * @returns the associated view
         */
       def registerView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.EngineView = js.native
+      def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
       def registerView(canvas: HTMLCanvasElement, camera: Camera): typings.babylonjs.engineViewsMod.EngineView = js.native
+      def registerView(canvas: HTMLCanvasElement, camera: Camera, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
       
       /**
         * Set the compressed texture extensions or file names to skip.
@@ -421,28 +542,42 @@ object extensionsIndexMod {
       /** @hidden */
       def _cascadeLoadFiles(
         scene: Nullable[Scene],
-        onfinish: js.Function1[/* images */ js.Array[ArrayBuffer], Unit],
+        onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
       ): Unit = js.native
       
       /** @hidden */
       def _cascadeLoadImgs(
         scene: Nullable[Scene],
-        onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
+        texture: InternalTexture,
+        onfinish: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
+            ],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
       ): Unit = js.native
       def _cascadeLoadImgs(
         scene: Nullable[Scene],
-        onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
+        texture: InternalTexture,
+        onfinish: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
+            ],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         mimeType: String
       ): Unit = js.native
@@ -452,21 +587,46 @@ object extensionsIndexMod {
         * This is only available in WebGL 2.
         * @param size The size of face edge in the cube texture.
         * @param options The options defining the cube texture.
+        * @param rtWrapper The render target wrapper for which the depth/stencil texture must be created
         * @returns The cube texture
         */
-      def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
+      def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
       /** @hidden */
-      def _createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): InternalTexture = js.native
+      def _createDepthStencilTexture(size: TextureSize, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
+      
+      /** @hidden */
+      def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): RenderTargetWrapper = js.native
+      
+      /** @hidden */
+      def _debugFlushPendingCommands(): Unit = js.native
+      
+      /** @hidden */
+      def _debugInsertMarker(text: String): Unit = js.native
+      def _debugInsertMarker(text: String, targetObject: Double): Unit = js.native
+      
+      /** @hidden */
+      def _debugPopGroup(): Unit = js.native
+      def _debugPopGroup(targetObject: Double): Unit = js.native
+      
+      /** @hidden */
+      def _debugPushGroup(groupName: String): Unit = js.native
+      def _debugPushGroup(groupName: String, targetObject: Double): Unit = js.native
+      
+      /** @hidden */
+      def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
+      
+      /** @hidden */
+      def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
       
       /** @hidden */
       def _partialLoadFile(
         url: String,
         index: Double,
-        loadedFiles: js.Array[ArrayBuffer],
-        onfinish: js.Function1[/* files */ js.Array[ArrayBuffer], Unit],
+        loadedFiles: js.Array[js.typedarray.ArrayBuffer],
+        onfinish: js.Function1[/* files */ js.Array[js.typedarray.ArrayBuffer], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
       ): Unit = js.native
       
@@ -474,67 +634,89 @@ object extensionsIndexMod {
       def _partialLoadImg(
         url: String,
         index: Double,
-        loadedImages: js.Array[HTMLImageElement],
+        loadedImages: js.Array[HTMLImageElement | ImageBitmap],
         scene: Nullable[Scene],
-        onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
-        onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
-            ]
+        texture: InternalTexture,
+        onfinish: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
+            ],
+        onErrorCallBack: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[Any], Unit]]
       ): Unit = js.native
       def _partialLoadImg(
         url: String,
         index: Double,
-        loadedImages: js.Array[HTMLImageElement],
+        loadedImages: js.Array[HTMLImageElement | ImageBitmap],
         scene: Nullable[Scene],
-        onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
-        onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        texture: InternalTexture,
+        onfinish: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
             ],
+        onErrorCallBack: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[Any], Unit]],
         mimeType: String
       ): Unit = js.native
       
       /** @hidden */
-      def _readTexturePixels(texture: InternalTexture, width: Double, height: Double): ArrayBufferView = js.native
-      def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double): ArrayBufferView = js.native
-      def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double, level: Double): ArrayBufferView = js.native
+      def _prepareComputePipelineContext(
+        pipelineContext: IComputePipelineContext,
+        computeSourceCode: String,
+        rawComputeSourceCode: String,
+        defines: Nullable[String],
+        entryPoint: String
+      ): Unit = js.native
+      
+      /** @hidden */
       def _readTexturePixels(
         texture: InternalTexture,
         width: Double,
         height: Double,
-        faceIndex: Double,
-        level: Double,
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
-      def _readTexturePixels(
+        faceIndex: js.UndefOr[Double],
+        level: js.UndefOr[Double],
+        buffer: js.UndefOr[Nullable[js.typedarray.ArrayBufferView]],
+        flushRenderer: js.UndefOr[Boolean],
+        noDataConversion: js.UndefOr[Boolean],
+        x: js.UndefOr[Double],
+        y: js.UndefOr[Double]
+      ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      
+      /** @hidden */
+      def _readTexturePixelsSync(
         texture: InternalTexture,
         width: Double,
         height: Double,
-        faceIndex: Double,
-        level: Unit,
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
-      def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Unit, level: Double): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: Unit,
-        level: Double,
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: Unit,
-        level: Unit,
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
+        faceIndex: js.UndefOr[Double],
+        level: js.UndefOr[Double],
+        buffer: js.UndefOr[Nullable[js.typedarray.ArrayBufferView]],
+        flushRenderer: js.UndefOr[Boolean],
+        noDataConversion: js.UndefOr[Boolean],
+        x: js.UndefOr[Double],
+        y: js.UndefOr[Double]
+      ): js.typedarray.ArrayBufferView = js.native
+      
+      /** @hidden */
+      def _rebuildComputeEffects(): Unit = js.native
+      
+      /** @hidden */
+      def _releaseComputeEffect(effect: ComputeEffect): Unit = js.native
       
       /**
         * @hidden
         */
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
+      def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean, maxLevel: Double): Unit = js.native
+      
+      /**
+        * Gets a boolean indicating if all created compute effects are ready
+        * @returns true if all effects are ready
+        */
+      def areAllComputeEffectsReady(): Boolean = js.native
       
       /**
         * Select a subsets of attachments to draw to.
@@ -560,8 +742,9 @@ object extensionsIndexMod {
         * Bind a buffer to the current webGL context at a given location
         * @param buffer defines the buffer to bind
         * @param location defines the index where to bind the buffer
+        * @param name Name of the uniform variable to bind
         */
-      def bindUniformBufferBase(buffer: DataBuffer, location: Double): Unit = js.native
+      def bindUniformBufferBase(buffer: DataBuffer, location: Double, name: String): Unit = js.native
       
       /**
         * Creates a layout object to draw/clear on specific textures in a MRT
@@ -569,6 +752,97 @@ object extensionsIndexMod {
         * @returns A layout to be fed to the engine, calling `bindAttachments`.
         */
       def buildTextureLayout(textureStatus: js.Array[Boolean]): js.Array[Double] = js.native
+      
+      /**
+        * Dispatches a compute shader
+        * @param effect The compute effect
+        * @param context The compute context
+        * @param bindings The list of resources to bind to the shader
+        * @param x The number of workgroups to execute on the X dimension
+        * @param y The number of workgroups to execute on the Y dimension
+        * @param z The number of workgroups to execute on the Z dimension
+        * @param bindingsMapping list of bindings mapping (key is property name, value is binding location)
+        */
+      def computeDispatch(effect: ComputeEffect, context: IComputeContext, bindings: ComputeBindingList, x: Double): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Double
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Double,
+        z: Double
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Double,
+        z: Double,
+        bindingsMapping: ComputeBindingMapping
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Double,
+        z: Unit,
+        bindingsMapping: ComputeBindingMapping
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Unit,
+        z: Double
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Unit,
+        z: Double,
+        bindingsMapping: ComputeBindingMapping
+      ): Unit = js.native
+      def computeDispatch(
+        effect: ComputeEffect,
+        context: IComputeContext,
+        bindings: ComputeBindingList,
+        x: Double,
+        y: Unit,
+        z: Unit,
+        bindingsMapping: ComputeBindingMapping
+      ): Unit = js.native
+      
+      /**
+        * Creates a new compute context
+        * @returns the new context
+        */
+      def createComputeContext(): js.UndefOr[IComputeContext] = js.native
+      
+      /**
+        * Creates a new compute effect
+        * @param baseName Name of the effect
+        * @param options Options used to create the effect
+        * @returns The new compute effect
+        */
+      def createComputeEffect(baseName: Any, options: IComputeEffectCreationOptions): ComputeEffect = js.native
+      
+      /**
+        * Creates a new compute pipeline context
+        * @returns the new pipeline
+        */
+      def createComputePipelineContext(): IComputePipelineContext = js.native
       
       /**
         * Creates a cube texture
@@ -587,12 +861,12 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Double,
-        forcedExtension: js.Any
+        forcedExtension: Any
       ): InternalTexture = js.native
       /**
         * Creates a cube texture
@@ -614,12 +888,12 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Double,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double
@@ -639,6 +913,7 @@ object extensionsIndexMod {
         * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
         * @param fallback defines texture to use while falling back when (compressed) texture file not found.
         * @param loaderOptions options to be passed to the loader
+        * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
         * @returns the cube texture as an InternalTexture
         */
       def createCubeTexture(
@@ -646,41 +921,42 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Double,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double,
         fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
+        loaderOptions: Any,
+        useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       def createCubeTexture(
         rootUrl: String,
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Unit,
-        forcedExtension: js.Any
+        forcedExtension: Any
       ): InternalTexture = js.native
       def createCubeTexture(
         rootUrl: String,
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Unit,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double
@@ -690,51 +966,118 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Unit,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double,
         fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
+        loaderOptions: Any,
+        useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       def createCubeTexture(
         rootUrl: String,
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Unit,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Double,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double,
         fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
+        loaderOptions: Any,
+        useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       def createCubeTexture(
         rootUrl: String,
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Unit,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         format: Unit,
-        forcedExtension: js.Any,
+        forcedExtension: Any,
         createPolynomials: Boolean,
         lodScale: Double,
         lodOffset: Double,
         fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
+        loaderOptions: Any,
+        useSRGBBuffer: Boolean
+      ): InternalTexture = js.native
+      
+      /** @hidden */
+      def createCubeTextureBase(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        beforeLoadCubeDataCallback: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* data */ js.typedarray.ArrayBufferView | js.Array[js.typedarray.ArrayBufferView], 
+                Unit
+              ]
+            ],
+        imageHandler: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* imgs */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
+            ],
+        useSRGBBuffer: Boolean
+      ): InternalTexture = js.native
+      def createCubeTextureBase(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        beforeLoadCubeDataCallback: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* data */ js.typedarray.ArrayBufferView | js.Array[js.typedarray.ArrayBufferView], 
+                Unit
+              ]
+            ],
+        imageHandler: Nullable[
+              js.Function2[
+                /* texture */ InternalTexture, 
+                /* imgs */ js.Array[HTMLImageElement | ImageBitmap], 
+                Unit
+              ]
+            ],
+        useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       
       /**
@@ -742,9 +1085,10 @@ object extensionsIndexMod {
         * This is only available in WebGL 2 or with the depth texture extension available.
         * @param size The size of face edge in the texture.
         * @param options The options defining the texture.
+        * @param rtWrapper The render target wrapper for which the depth/stencil texture must be created
         * @returns The texture
         */
-      def createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): InternalTexture = js.native
+      def createDepthStencilTexture(size: TextureSize, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
       /**
         * Creates a dynamic texture
@@ -765,13 +1109,22 @@ object extensionsIndexMod {
       def createDynamicUniformBuffer(elements: FloatArray): DataBuffer = js.native
       
       /**
+        * Creates an external texture
+        * @param video video element
+        * @returns the external texture, or null if external textures are not supported by the engine
+        */
+      def createExternalTexture(video: HTMLVideoElement): Nullable[ExternalTexture] = js.native
+      
+      /**
         * Create a multi render target texture
         * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
         * @param size defines the size of the texture
         * @param options defines the creation options
-        * @returns the cube texture as an InternalTexture
+        * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
+        * @returns a new render target wrapper ready to render textures
         */
-      def createMultipleRenderTarget(size: js.Any, options: IMultiRenderTargetOptions): js.Array[InternalTexture] = js.native
+      def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions): RenderTargetWrapper = js.native
+      def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions, initializeBuffers: Boolean): RenderTargetWrapper = js.native
       
       /**
         * Creates a new raw cube texture
@@ -786,7 +1139,7 @@ object extensionsIndexMod {
         * @returns the cube texture as an InternalTexture
         */
       def createRawCubeTexture(
-        data: Nullable[js.Array[ArrayBufferView]],
+        data: Nullable[js.Array[js.typedarray.ArrayBufferView]],
         size: Double,
         format: Double,
         `type`: Double,
@@ -817,13 +1170,19 @@ object extensionsIndexMod {
         format: Double,
         `type`: Double,
         noMipmap: Boolean,
-        callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+        callback: js.Function1[
+              /* ArrayBuffer */ js.typedarray.ArrayBuffer, 
+              Nullable[js.Array[js.typedarray.ArrayBufferView]]
+            ],
         mipmapGenerator: Nullable[
-              js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+              js.Function1[
+                /* faces */ js.Array[js.typedarray.ArrayBufferView], 
+                js.Array[js.Array[js.typedarray.ArrayBufferView]]
+              ]
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
       ): InternalTexture = js.native
       /**
@@ -849,13 +1208,19 @@ object extensionsIndexMod {
         format: Double,
         `type`: Double,
         noMipmap: Boolean,
-        callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+        callback: js.Function1[
+              /* ArrayBuffer */ js.typedarray.ArrayBuffer, 
+              Nullable[js.Array[js.typedarray.ArrayBufferView]]
+            ],
         mipmapGenerator: Nullable[
-              js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+              js.Function1[
+                /* faces */ js.Array[js.typedarray.ArrayBufferView], 
+                js.Array[js.Array[js.typedarray.ArrayBufferView]]
+              ]
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ],
         samplingMode: Double,
         invertY: Boolean
@@ -872,10 +1237,12 @@ object extensionsIndexMod {
         * @param samplingMode defines the required sampling mode (Texture.NEAREST_SAMPLINGMODE by default)
         * @param compression defines the compression used (null by default)
         * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+        * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+        * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
         * @returns the raw texture inside an InternalTexture
         */
       def createRawTexture(
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         width: Double,
         height: Double,
         format: Double,
@@ -884,6 +1251,44 @@ object extensionsIndexMod {
         samplingMode: Double,
         compression: Nullable[String],
         `type`: Double
+      ): InternalTexture = js.native
+      def createRawTexture(
+        data: Nullable[js.typedarray.ArrayBufferView],
+        width: Double,
+        height: Double,
+        format: Double,
+        generateMipMaps: Boolean,
+        invertY: Boolean,
+        samplingMode: Double,
+        compression: Nullable[String],
+        `type`: Double,
+        creationFlags: Double
+      ): InternalTexture = js.native
+      def createRawTexture(
+        data: Nullable[js.typedarray.ArrayBufferView],
+        width: Double,
+        height: Double,
+        format: Double,
+        generateMipMaps: Boolean,
+        invertY: Boolean,
+        samplingMode: Double,
+        compression: Nullable[String],
+        `type`: Double,
+        creationFlags: Double,
+        useSRGBBuffer: Boolean
+      ): InternalTexture = js.native
+      def createRawTexture(
+        data: Nullable[js.typedarray.ArrayBufferView],
+        width: Double,
+        height: Double,
+        format: Double,
+        generateMipMaps: Boolean,
+        invertY: Boolean,
+        samplingMode: Double,
+        compression: Nullable[String],
+        `type`: Double,
+        creationFlags: Unit,
+        useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       
       /**
@@ -898,10 +1303,11 @@ object extensionsIndexMod {
         * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
         * @param compression defines the compressed used (can be null)
         * @param textureType defines the compressed used (can be null)
+        * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
         * @returns a new raw 2D array texture (stored in an InternalTexture)
         */
       def createRawTexture2DArray(
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         width: Double,
         height: Double,
         depth: Double,
@@ -911,6 +1317,19 @@ object extensionsIndexMod {
         samplingMode: Double,
         compression: Nullable[String],
         textureType: Double
+      ): InternalTexture = js.native
+      def createRawTexture2DArray(
+        data: Nullable[js.typedarray.ArrayBufferView],
+        width: Double,
+        height: Double,
+        depth: Double,
+        format: Double,
+        generateMipMaps: Boolean,
+        invertY: Boolean,
+        samplingMode: Double,
+        compression: Nullable[String],
+        textureType: Double,
+        creationFlags: Double
       ): InternalTexture = js.native
       
       /**
@@ -925,10 +1344,11 @@ object extensionsIndexMod {
         * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
         * @param compression defines the compressed used (can be null)
         * @param textureType defines the compressed used (can be null)
+        * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
         * @returns a new raw 3D texture (stored in an InternalTexture)
         */
       def createRawTexture3D(
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         width: Double,
         height: Double,
         depth: Double,
@@ -939,24 +1359,46 @@ object extensionsIndexMod {
         compression: Nullable[String],
         textureType: Double
       ): InternalTexture = js.native
+      def createRawTexture3D(
+        data: Nullable[js.typedarray.ArrayBufferView],
+        width: Double,
+        height: Double,
+        depth: Double,
+        format: Double,
+        generateMipMaps: Boolean,
+        invertY: Boolean,
+        samplingMode: Double,
+        compression: Nullable[String],
+        textureType: Double,
+        creationFlags: Double
+      ): InternalTexture = js.native
       
       /**
-        * Creates a new render target cube texture
+        * Creates a new render target cube wrapper
         * @param size defines the size of the texture
         * @param options defines the options used to create the texture
-        * @returns a new render target cube texture stored in an InternalTexture
+        * @returns a new render target cube wrapper
         */
-      def createRenderTargetCubeTexture(size: Double): InternalTexture = js.native
-      def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): InternalTexture = js.native
+      def createRenderTargetCubeTexture(size: Double): RenderTargetWrapper = js.native
+      def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): RenderTargetWrapper = js.native
       
       /**
         * Creates a new render target texture
         * @param size defines the size of the texture
         * @param options defines the options used to create the texture
-        * @returns a new render target texture stored in an InternalTexture
+        * @returns a new render target wrapper ready to render texture
         */
-      def createRenderTargetTexture(size: RenderTargetTextureSize, options: Boolean): InternalTexture = js.native
-      def createRenderTargetTexture(size: RenderTargetTextureSize, options: RenderTargetCreationOptions): InternalTexture = js.native
+      def createRenderTargetTexture(size: TextureSize, options: Boolean): RenderTargetWrapper = js.native
+      def createRenderTargetTexture(size: TextureSize, options: RenderTargetCreationOptions): RenderTargetWrapper = js.native
+      
+      def createStorageBuffer(data: Double, creationFlags: Double): DataBuffer = js.native
+      /**
+        * Creates a storage buffer
+        * @param data the data for the storage buffer or the size of the buffer
+        * @param creationFlags flags to use when creating the buffer (see Constants.BUFFER_CREATIONFLAG_XXX). The BUFFER_CREATIONFLAG_STORAGE flag will be automatically added
+        * @returns the new buffer
+        */
+      def createStorageBuffer(data: DataArray, creationFlags: Double): DataBuffer = js.native
       
       /**
         * Create an uniform buffer
@@ -980,9 +1422,38 @@ object extensionsIndexMod {
       def getAlphaMode(): Double = js.native
       
       /**
+        * Read data from a storage buffer
+        * @param storageBuffer The storage buffer to read from
+        * @param offset The offset in the storage buffer to start reading from (default: 0)
+        * @param size  The number of bytes to read from the storage buffer (default: capacity of the buffer)
+        * @param buffer The buffer to write the data we have read from the storage buffer to (optional)
+        * @returns If not undefined, returns the (promise) buffer (as provided by the 4th parameter) filled with the data, else it returns a (promise) Uint8Array with the data read from the storage buffer
+        */
+      def readFromStorageBuffer(storageBuffer: DataBuffer): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Double, size: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Double, size: Double, buffer: js.typedarray.ArrayBufferView): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Double, size: Unit, buffer: js.typedarray.ArrayBufferView): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Unit, size: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Unit, size: Double, buffer: js.typedarray.ArrayBufferView): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      def readFromStorageBuffer(storageBuffer: DataBuffer, offset: Unit, size: Unit, buffer: js.typedarray.ArrayBufferView): js.Promise[js.typedarray.ArrayBufferView] = js.native
+      
+      /**
+        * Forces the engine to release all cached compute effects. This means that next effect compilation will have to be done completely even if a similar effect was already compiled
+        */
+      def releaseComputeEffects(): Unit = js.native
+      
+      /**
         * Restores the webgl state to only draw on the main color attachment
+        * when the frame buffer associated is the canvas frame buffer
         */
       def restoreSingleAttachment(): Unit = js.native
+      
+      /**
+        * Restores the webgl state to only draw on the main color attachment
+        * when the frame buffer associated is not the canvas frame buffer
+        */
+      def restoreSingleAttachmentForRenderTarget(): Unit = js.native
       
       /**
         * Sets alpha constants used by some alpha blending modes
@@ -1009,15 +1480,36 @@ object extensionsIndexMod {
       def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
       
       /**
+        * Sets an internal texture to the according uniform.
+        * @param name The name of the uniform in the effect
+        * @param texture The texture to apply
+        */
+      def setExternalTexture(name: String, texture: Nullable[ExternalTexture]): Unit = js.native
+      
+      /**
+        * Sets a storage buffer in the shader
+        * @param name Defines the name of the storage buffer as defined in the shader
+        * @param buffer Defines the value to give to the uniform
+        */
+      def setStorageBuffer(name: String, buffer: Nullable[StorageBuffer]): Unit = js.native
+      
+      /**
+        * Sets a texture sampler to the according uniform.
+        * @param name The name of the uniform in the effect
+        * @param sampler The sampler to apply
+        */
+      def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
+      
+      /**
         * Unbind a list of render target textures from the webGL context
         * This is used only when drawBuffer extension or webGL2 are active
-        * @param textures defines the render target textures to unbind
+        * @param rtWrapper defines the render target wrapper to unbind
         * @param disableGenerateMipMaps defines a boolean indicating that mipmaps must not be generated
         * @param onBeforeUnbind defines a function which will be called before the effective unbind
         */
-      def unBindMultiColorAttachmentFramebuffer(textures: js.Array[InternalTexture], disableGenerateMipMaps: Boolean): Unit = js.native
+      def unBindMultiColorAttachmentFramebuffer(rtWrapper: RenderTargetWrapper, disableGenerateMipMaps: Boolean): Unit = js.native
       def unBindMultiColorAttachmentFramebuffer(
-        textures: js.Array[InternalTexture],
+        rtWrapper: RenderTargetWrapper,
         disableGenerateMipMaps: Boolean,
         onBeforeUnbind: js.Function0[Unit]
       ): Unit = js.native
@@ -1039,14 +1531,16 @@ object extensionsIndexMod {
         * @param premulAlpha defines if alpha is stored as premultiplied
         * @param format defines the format of the data
         * @param forceBindTexture if the texture should be forced to be bound eg. after a graphics context loss (Default: false)
+        * @param allowGPUOptimization true to allow some specific GPU optimizations (subject to engine feature "allowGPUOptimizationsForGUI" being true)
         */
       def updateDynamicTexture(
         texture: Nullable[InternalTexture],
-        source: ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas,
+        source: ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas | ICanvas,
         invertY: js.UndefOr[Boolean],
         premulAlpha: js.UndefOr[Boolean],
         format: js.UndefOr[Double],
-        forceBindTexture: js.UndefOr[Boolean]
+        forceBindTexture: js.UndefOr[Boolean],
+        allowGPUOptimization: js.UndefOr[Boolean]
       ): Unit = js.native
       
       /**
@@ -1064,15 +1558,17 @@ object extensionsIndexMod {
       /**
         * Update the sample count for a given multiple render target texture
         * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
-        * @param textures defines the textures to update
+        * @param rtWrapper defines the render target wrapper to update
         * @param samples defines the sample count to set
+        * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
         * @returns the effective sample count (could be 0 if multisample render targets are not supported)
         */
-      def updateMultipleRenderTargetTextureSampleCount(textures: Nullable[js.Array[InternalTexture]], samples: Double): Double = js.native
+      def updateMultipleRenderTargetTextureSampleCount(rtWrapper: Nullable[RenderTargetWrapper], samples: Double): Double = js.native
+      def updateMultipleRenderTargetTextureSampleCount(rtWrapper: Nullable[RenderTargetWrapper], samples: Double, initializeBuffers: Boolean): Double = js.native
       
       /**
         * Update a raw cube texture
-        * @param texture defines the texture to udpdate
+        * @param texture defines the texture to update
         * @param data defines the data to store
         * @param format defines the data format
         * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1080,14 +1576,14 @@ object extensionsIndexMod {
         */
       def updateRawCubeTexture(
         texture: InternalTexture,
-        data: js.Array[ArrayBufferView],
+        data: js.Array[js.typedarray.ArrayBufferView],
         format: Double,
         `type`: Double,
         invertY: Boolean
       ): Unit = js.native
       /**
         * Update a raw cube texture
-        * @param texture defines the texture to udpdate
+        * @param texture defines the texture to update
         * @param data defines the data to store
         * @param format defines the data format
         * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1096,7 +1592,7 @@ object extensionsIndexMod {
         */
       def updateRawCubeTexture(
         texture: InternalTexture,
-        data: js.Array[ArrayBufferView],
+        data: js.Array[js.typedarray.ArrayBufferView],
         format: Double,
         `type`: Double,
         invertY: Boolean,
@@ -1104,7 +1600,7 @@ object extensionsIndexMod {
       ): Unit = js.native
       /**
         * Update a raw cube texture
-        * @param texture defines the texture to udpdate
+        * @param texture defines the texture to update
         * @param data defines the data to store
         * @param format defines the data format
         * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1114,7 +1610,7 @@ object extensionsIndexMod {
         */
       def updateRawCubeTexture(
         texture: InternalTexture,
-        data: js.Array[ArrayBufferView],
+        data: js.Array[js.typedarray.ArrayBufferView],
         format: Double,
         `type`: Double,
         invertY: Boolean,
@@ -1131,7 +1627,7 @@ object extensionsIndexMod {
         */
       def updateRawTexture(
         texture: Nullable[InternalTexture],
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         format: Double,
         invertY: Boolean
       ): Unit = js.native
@@ -1143,14 +1639,16 @@ object extensionsIndexMod {
         * @param invertY defines if data must be stored with Y axis inverted
         * @param compression defines the compression used (null by default)
         * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+        * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
         */
       def updateRawTexture(
         texture: Nullable[InternalTexture],
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         format: Double,
         invertY: Boolean,
         compression: Nullable[String],
-        `type`: Double
+        `type`: Double,
+        useSRGBBuffer: Boolean
       ): Unit = js.native
       
       /**
@@ -1160,7 +1658,12 @@ object extensionsIndexMod {
         * @param format defines the data format
         * @param invertY defines if data must be stored with Y axis inverted
         */
-      def updateRawTexture2DArray(texture: InternalTexture, data: Nullable[ArrayBufferView], format: Double, invertY: Boolean): Unit = js.native
+      def updateRawTexture2DArray(
+        texture: InternalTexture,
+        data: Nullable[js.typedarray.ArrayBufferView],
+        format: Double,
+        invertY: Boolean
+      ): Unit = js.native
       /**
         * Update a raw 2D array texture
         * @param texture defines the texture to update
@@ -1172,7 +1675,7 @@ object extensionsIndexMod {
         */
       def updateRawTexture2DArray(
         texture: InternalTexture,
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         format: Double,
         invertY: Boolean,
         compression: Nullable[String],
@@ -1186,7 +1689,12 @@ object extensionsIndexMod {
         * @param format defines the data format
         * @param invertY defines if data must be stored with Y axis inverted
         */
-      def updateRawTexture3D(texture: InternalTexture, data: Nullable[ArrayBufferView], format: Double, invertY: Boolean): Unit = js.native
+      def updateRawTexture3D(
+        texture: InternalTexture,
+        data: Nullable[js.typedarray.ArrayBufferView],
+        format: Double,
+        invertY: Boolean
+      ): Unit = js.native
       /**
         * Update a raw 3D texture
         * @param texture defines the texture to update
@@ -1198,12 +1706,33 @@ object extensionsIndexMod {
         */
       def updateRawTexture3D(
         texture: InternalTexture,
-        data: Nullable[ArrayBufferView],
+        data: Nullable[js.typedarray.ArrayBufferView],
         format: Double,
         invertY: Boolean,
         compression: Nullable[String],
         textureType: Double
       ): Unit = js.native
+      
+      /**
+        * Updates the sample count of a render target texture
+        * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+        * @param rtWrapper defines the render target wrapper to update
+        * @param samples defines the sample count to set
+        * @returns the effective sample count (could be 0 if multisample render targets are not supported)
+        */
+      def updateRenderTargetTextureSampleCount(rtWrapper: Nullable[RenderTargetWrapper], samples: Double): Double = js.native
+      
+      /**
+        * Updates a storage buffer
+        * @param buffer the storage buffer to update
+        * @param data the data used to update the storage buffer
+        * @param byteOffset the byte offset of the data
+        * @param byteLength the byte length of the data
+        */
+      def updateStorageBuffer(buffer: DataBuffer, data: DataArray): Unit = js.native
+      def updateStorageBuffer(buffer: DataBuffer, data: DataArray, byteOffset: Double): Unit = js.native
+      def updateStorageBuffer(buffer: DataBuffer, data: DataArray, byteOffset: Double, byteLength: Double): Unit = js.native
+      def updateStorageBuffer(buffer: DataBuffer, data: DataArray, byteOffset: Unit, byteLength: Double): Unit = js.native
       
       /**
         * Update an existing uniform buffer
@@ -1237,16 +1766,22 @@ object extensionsIndexMod {
         * Backing filed
         * @hidden
         */
-      var __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
+      var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
       
       /**
         * Access property
         * @hidden
         */
-      var _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
+      var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
       
       /**
-        * Gets or sets whether the mesh is occluded or not, it is used also to set the intial state of the mesh to be occluded or not
+        * Flag to force rendering the mesh even if occluded
+        * @see https://doc.babylonjs.com/features/occlusionquery
+        */
+      var forceRenderingWhenOccluded: Boolean
+      
+      /**
+        * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
       var isOccluded: Boolean
@@ -1266,7 +1801,7 @@ object extensionsIndexMod {
       var occlusionQueryAlgorithmType: Double
       
       /**
-        * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decideds to show or hide the object.
+        * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
         * The default value is -1 which means don't break the query and wait till the result
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
@@ -1274,7 +1809,7 @@ object extensionsIndexMod {
       
       /**
         * This property is responsible for starting the occlusion query within the Mesh or not, this property is also used to determine what should happen when the occlusionRetryCount is reached. It has supports 3 values:
-        * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query whith the Mesh.
+        * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
         * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
         * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
         * @see https://doc.babylonjs.com/features/occlusionquery
@@ -1284,19 +1819,22 @@ object extensionsIndexMod {
     object AbstractMesh {
       
       inline def apply(
-        __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage,
-        _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage,
+        __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage,
+        _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage,
+        forceRenderingWhenOccluded: Boolean,
         isOccluded: Boolean,
         isOcclusionQueryInProgress: Boolean,
         occlusionQueryAlgorithmType: Double,
         occlusionRetryCount: Double,
         occlusionType: Double
       ): AbstractMesh = {
-        val __obj = js.Dynamic.literal(__occlusionDataStorage = __occlusionDataStorage.asInstanceOf[js.Any], _occlusionDataStorage = _occlusionDataStorage.asInstanceOf[js.Any], isOccluded = isOccluded.asInstanceOf[js.Any], isOcclusionQueryInProgress = isOcclusionQueryInProgress.asInstanceOf[js.Any], occlusionQueryAlgorithmType = occlusionQueryAlgorithmType.asInstanceOf[js.Any], occlusionRetryCount = occlusionRetryCount.asInstanceOf[js.Any], occlusionType = occlusionType.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(__occlusionDataStorage = __occlusionDataStorage.asInstanceOf[js.Any], _occlusionDataStorage = _occlusionDataStorage.asInstanceOf[js.Any], forceRenderingWhenOccluded = forceRenderingWhenOccluded.asInstanceOf[js.Any], isOccluded = isOccluded.asInstanceOf[js.Any], isOcclusionQueryInProgress = isOcclusionQueryInProgress.asInstanceOf[js.Any], occlusionQueryAlgorithmType = occlusionQueryAlgorithmType.asInstanceOf[js.Any], occlusionRetryCount = occlusionRetryCount.asInstanceOf[js.Any], occlusionType = occlusionType.asInstanceOf[js.Any])
         __obj.asInstanceOf[AbstractMesh]
       }
       
       extension [Self <: AbstractMesh](x: Self) {
+        
+        inline def setForceRenderingWhenOccluded(value: Boolean): Self = StObject.set(x, "forceRenderingWhenOccluded", value.asInstanceOf[js.Any])
         
         inline def setIsOccluded(value: Boolean): Self = StObject.set(x, "isOccluded", value.asInstanceOf[js.Any])
         
@@ -1308,9 +1846,9 @@ object extensionsIndexMod {
         
         inline def setOcclusionType(value: Double): Self = StObject.set(x, "occlusionType", value.asInstanceOf[js.Any])
         
-        inline def set__occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
+        inline def set__occlusionDataStorage(value: typings.babylonjs.engineQueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
         
-        inline def set_occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
+        inline def set_occlusionDataStorage(value: typings.babylonjs.engineQueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
       }
     }
   }

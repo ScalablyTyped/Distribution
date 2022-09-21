@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-ipc
 
-Typings are for version 9.1
+Typings are for version 9.2
 
 ## Library description:
 A nodejs module for local and remote Inter Process Communication (IPC), Neural Networking, and able to facilitate machine learning.
@@ -10,10 +10,10 @@ A nodejs module for local and remote Inter Process Communication (IPC), Neural N
 | ------------------ | :-------------: |
 | Full name          | node-ipc |
 | Keywords           | IPC, Neural Networking, Machine Learning, inter, process, communication, unix, windows, win, socket, TCP, UDP, domain, sockets, threaded, communication, multi, process, shared, memory |
-| # releases         | 3 |
-| # dependents       | 232 |
-| # downloads        | 31440494 |
-| # stars            | 33 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 2968657.0 |
+| # stars            | 1321.0 |
 
 ## Links
 - [Homepage](http://riaevangelist.github.io/node-ipc/)

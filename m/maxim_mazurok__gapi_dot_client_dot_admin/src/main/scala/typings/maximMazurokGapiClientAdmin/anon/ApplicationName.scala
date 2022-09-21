@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApplicationName extends StObject {
   
-  /** Application name to which the event belongs. For possible values see the list of applications above in applicationName. */
+  /** Application name to which the event belongs. For possible values see the list of applications above in `applicationName`. */
   var applicationName: js.UndefOr[String] = js.undefined
   
-  /** The unique identifier for a G suite account. */
+  /** The unique identifier for a Google Workspace account. */
   var customerId: js.UndefOr[String] = js.undefined
   
   /** Time of occurrence of the activity. This is in UNIX epoch time in seconds. */

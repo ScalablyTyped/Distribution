@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Sends a mail._
   * @see https://docs.scriptable.app/mail/#-new-mail
   */
-class Mail ()
+open class Mail ()
   extends StObject
      with typings.scriptableIos.Mail {
   

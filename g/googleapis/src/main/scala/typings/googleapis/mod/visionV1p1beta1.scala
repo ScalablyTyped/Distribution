@@ -11,38 +11,63 @@ object visionV1p1beta1 {
   
   @JSImport("googleapis", "vision_v1p1beta1.Resource$Files")
   @js.native
-  class ResourceFiles protected ()
+  open class ResourceFiles protected ()
     extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceFiles {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "vision_v1p1beta1.Resource$Images")
   @js.native
-  class ResourceImages protected ()
+  open class ResourceImages protected ()
     extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceImages {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Cloud Vision API
-    *
-    * Integrates Google Vision features, including image labeling, face, logo,
-    * and landmark detection, optical character recognition (OCR), and detection
-    * of explicit content, into applications.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const vision = google.vision('v1p1beta1');
-    *
-    * @namespace vision
-    * @type {Function}
-    * @version v1p1beta1
-    * @variation v1p1beta1
-    * @param {object=} options Options for Vision
-    */
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects")
+  @js.native
+  open class ResourceProjects protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjects {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects$Files")
+  @js.native
+  open class ResourceProjectsFiles protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjectsFiles {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects$Images")
+  @js.native
+  open class ResourceProjectsImages protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjectsImages {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects$Locations")
+  @js.native
+  open class ResourceProjectsLocations protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects$Locations$Files")
+  @js.native
+  open class ResourceProjectsLocationsFiles protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjectsLocationsFiles {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "vision_v1p1beta1.Resource$Projects$Locations$Images")
+  @js.native
+  open class ResourceProjectsLocationsImages protected ()
+    extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.ResourceProjectsLocationsImages {
+    def this(context: APIRequestContext) = this()
+  }
+  
   @JSImport("googleapis", "vision_v1p1beta1.Vision")
   @js.native
-  class Vision protected ()
+  open class Vision protected ()
     extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

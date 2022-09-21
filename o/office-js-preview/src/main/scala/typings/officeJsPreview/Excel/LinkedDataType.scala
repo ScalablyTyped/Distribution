@@ -8,16 +8,15 @@ import typings.officeJsPreview.officeJsPreviewStrings.Manual
 import typings.officeJsPreview.officeJsPreviewStrings.OnLoad
 import typings.officeJsPreview.officeJsPreviewStrings.Periodic
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a linked data type.
   A linked data type is a data type connected to an online data source.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -31,23 +30,23 @@ trait LinkedDataType
   var context_LinkedDataType: RequestContext = js.native
   
   /**
-    *
     * The name of the data provider for the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   val dataProvider: String = js.native
   
   /**
-    *
     * The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
     Returns `undefined` if the linked data type has not been refreshed.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val lastRefreshed: Date = js.native
+  val lastRefreshed: js.Date = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -61,27 +60,27 @@ trait LinkedDataType
   def load(propertyNames: js.Array[String]): LinkedDataType = js.native
   
   /**
-    *
     * The name of the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   val name: String = js.native
   
   /**
-    *
     * The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   val periodicRefreshInterval: Double = js.native
   
   /**
-    *
     * The mechanism by which the data for the linked data type is retrieved.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -90,6 +89,7 @@ trait LinkedDataType
   /**
     * Makes a request to refresh the linked data type. If the service is busy or otherwise temporarily inaccessible, the request will not be fulfilled.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -100,44 +100,39 @@ trait LinkedDataType
     If the given refresh mode is not supported by this linked data type the mode is left unchanged.
     If set to "Periodic", the refresh interval is set to a predetermined value based on the particular linked data type.
     *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param refreshMode The intended mode to which this linked data type is requested to change.
+    */
+  def requestSetRefreshMode(refreshMode: Unknown_ | Manual | OnLoad | Periodic): Unit = js.native
+  /**
+    * Makes a request to change the refresh mode for this linked data type.
+    If the given refresh mode is not supported by this linked data type the mode is left unchanged.
+    If set to "Periodic", the refresh interval is set to a predetermined value based on the particular linked data type.
+    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param refreshMode The intended mode to which this linked data type is requested to change.
     */
   def requestSetRefreshMode(refreshMode: LinkedDataTypeRefreshMode): Unit = js.native
-  @JSName("requestSetRefreshMode")
-  def requestSetRefreshMode_Manual(refreshMode: Manual): Unit = js.native
-  @JSName("requestSetRefreshMode")
-  def requestSetRefreshMode_OnLoad(refreshMode: OnLoad): Unit = js.native
-  @JSName("requestSetRefreshMode")
-  def requestSetRefreshMode_Periodic(refreshMode: Periodic): Unit = js.native
-  /**
-    * Makes a request to change the refresh mode for this linked data type.
-    If the given refresh mode is not supported by this linked data type the mode is left unchanged.
-    If set to "Periodic", the refresh interval is set to a predetermined value based on the particular linked data type.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    *
-    * @param refreshMode The intended mode to which this linked data type is requested to change.
-    */
-  @JSName("requestSetRefreshMode")
-  def requestSetRefreshMode_Unknown(refreshMode: Unknown_): Unit = js.native
   
   /**
+    * The unique ID of the linked data type.
     *
-    * The unique id of the linked data type.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   val serviceId: Double = js.native
   
   /**
-    *
     * Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */

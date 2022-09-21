@@ -9,7 +9,7 @@ object provideDoneSyntaxMod {
   
   @JSImport("inversify-binding-decorators/dts/syntax/provide_done_syntax", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ProvideDoneSyntax {
     def this(binding: BindConstraint) = this()
@@ -20,6 +20,6 @@ object provideDoneSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideDoneSyntax {
     
-    /* private */ var _binding: js.Any = js.native
+    /* private */ var _binding: Any = js.native
   }
 }

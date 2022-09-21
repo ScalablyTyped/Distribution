@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InputFieldConstructor
   extends StObject
-     with Instantiable0[InputField]
+     with /**
+  * This is a read-only support class that represents an input field.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html)
+  */
+Instantiable0[InputField]
      with Instantiable1[/* properties */ InputFieldProperties, InputField]

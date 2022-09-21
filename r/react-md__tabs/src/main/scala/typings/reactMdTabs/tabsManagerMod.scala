@@ -164,7 +164,7 @@ object tabsManagerMod {
       
       inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
@@ -191,11 +191,15 @@ object tabsManagerMod {
       * This is an id prefix to use for all the child Tab, TabList, and TabPanel
       * components.
       *
+      * @example
+      * id behavior
+      * ```
       * - `Tabs` -> id={id}
       * - `Tab` ->
       *    - id={`${id}-tab-${index + 1}`}
       *    - panelId={active && `${id}-panel-${index + 1}`}
       * - `TabPanel` -> id={`${id}-panel-${index + 1}`}
+      * ```
       */
     var tabsId: String
   }
@@ -221,7 +225,7 @@ object tabsManagerMod {
       
       inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
@@ -246,6 +250,8 @@ object tabsManagerMod {
     /**
       * The index of the tab that should be active by default. This is ignored if
       * the `activeIndex` prop is defined.
+      *
+      * @defaultValue `0`
       */
     var defaultActiveIndex: js.UndefOr[Double] = js.undefined
     
@@ -258,6 +264,8 @@ object tabsManagerMod {
       * it for each tab in the `tabs` list and if a `tab` in the `tabs` list has
       * the `stacked` attribute enabled defined, it will be used instead of this
       * value.
+      *
+      * @defaultValue `false`
       */
     var iconAfter: js.UndefOr[Boolean] = js.undefined
     
@@ -276,6 +284,8 @@ object tabsManagerMod {
       * it for each tab in the `tabs` list and if a `tab` in the `tabs` list has
       * the `stacked` attribute enabled defined, it will be used instead of this
       * value.
+      *
+      * @defaultValue `false`
       */
     var stacked: js.UndefOr[Boolean] = js.undefined
     
@@ -323,7 +333,7 @@ object tabsManagerMod {
       
       inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: (TabConfig | ReactElement | String)*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: (TabConfig | ReactElement | String)*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
 }

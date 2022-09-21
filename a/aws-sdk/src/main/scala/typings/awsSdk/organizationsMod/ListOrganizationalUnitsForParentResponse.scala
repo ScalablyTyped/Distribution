@@ -33,6 +33,6 @@ object ListOrganizationalUnitsForParentResponse {
     
     inline def setOrganizationalUnitsUndefined: Self = StObject.set(x, "OrganizationalUnits", js.undefined)
     
-    inline def setOrganizationalUnitsVarargs(value: OrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value :_*))
+    inline def setOrganizationalUnitsVarargs(value: OrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value*))
   }
 }

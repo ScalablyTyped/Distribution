@@ -10,10 +10,10 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | react-native-shared-group-preferences |
 | Keywords           | react-native |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 27839 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 10494.0 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/KjellConnelly/react-native-shared-group-preferences#readme)

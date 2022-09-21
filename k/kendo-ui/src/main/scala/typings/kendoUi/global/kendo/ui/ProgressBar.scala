@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.ProgressBar")
 @js.native
-class ProgressBar protected ()
+open class ProgressBar protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.ProgressBar {
   def this(element: Element) = this()

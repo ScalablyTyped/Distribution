@@ -10,7 +10,7 @@ object autofillMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Autofill", "Autofill")
   @js.native
-  class Autofill protected ()
+  open class Autofill protected ()
     extends typings.officeUiFabricReact.autofillAutofillMod.Autofill {
     def this(props: IAutofillProps) = this()
   }
@@ -29,7 +29,7 @@ object autofillMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Autofill", "BaseAutoFill")
   @js.native
-  class BaseAutoFill protected ()
+  open class BaseAutoFill protected ()
     extends typings.officeUiFabricReact.autofillAutofillMod.BaseAutoFill {
     def this(props: IAutofillProps) = this()
   }

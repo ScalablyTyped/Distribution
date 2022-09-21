@@ -44,7 +44,7 @@ trait S3ObjectMetadata extends StObject {
   /**
     * 
     */
-  var HttpExpiresDate: js.UndefOr[TimeStamp] = js.undefined
+  var HttpExpiresDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
@@ -98,7 +98,7 @@ object S3ObjectMetadata {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    inline def setHttpExpiresDate(value: TimeStamp): Self = StObject.set(x, "HttpExpiresDate", value.asInstanceOf[js.Any])
+    inline def setHttpExpiresDate(value: js.Date): Self = StObject.set(x, "HttpExpiresDate", value.asInstanceOf[js.Any])
     
     inline def setHttpExpiresDateUndefined: Self = StObject.set(x, "HttpExpiresDate", js.undefined)
     

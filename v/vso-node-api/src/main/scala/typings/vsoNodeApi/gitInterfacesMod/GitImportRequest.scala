@@ -9,7 +9,7 @@ trait GitImportRequest extends StObject {
   /**
     * Links to related resources.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Detailed status of the import, including the current step and an error message, if applicable.
@@ -44,7 +44,7 @@ trait GitImportRequest extends StObject {
 object GitImportRequest {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     detailedStatus: GitImportStatusDetail,
     importRequestId: Double,
     parameters: GitImportRequestParameters,
@@ -70,6 +70,6 @@ object GitImportRequest {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

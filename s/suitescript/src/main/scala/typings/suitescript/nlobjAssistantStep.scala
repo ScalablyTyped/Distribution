@@ -21,7 +21,7 @@ trait nlobjAssistantStep
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an array of the names of all fields entered by the user during this step.
@@ -97,7 +97,7 @@ Instantiable0[js.Any] {
     * @param group
     * @return
     */
-  def getLineItemCount(group: String): js.Any = js.native
+  def getLineItemCount(group: String): Any = js.native
   
   /**
     * return the value of a sublist field entered by the user during this step.
@@ -115,7 +115,7 @@ Instantiable0[js.Any] {
     * @param line
     * @return
     */
-  def getLineItemValue(group: String, name: String, line: js.Any): String = js.native
+  def getLineItemValue(group: String, name: String, line: Any): String = js.native
   
   /**
     * return the index of this step in the assistant page (1-based)
@@ -127,7 +127,7 @@ Instantiable0[js.Any] {
     * @since 2009.2
     * @return
     */
-  def getStepNumber(): js.Any = js.native
+  def getStepNumber(): Any = js.native
   
   /**
     * set helper text for this assistant step.
@@ -155,5 +155,5 @@ Instantiable0[js.Any] {
     * @param label
     * @return
     */
-  def setLabel(label: String): js.Any = js.native
+  def setLabel(label: String): Any = js.native
 }

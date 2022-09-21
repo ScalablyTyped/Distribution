@@ -1,19 +1,23 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Resource handler used for loading {@link pc.Sprite} resources.
-  * @param assets - The asset registry.
-  * @param device - The graphics device.
+  * Resource handler used for loading {@link Sprite} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSGlobal("pc.SpriteHandler")
 @js.native
-class SpriteHandler protected ()
-  extends StObject
-     with ResourceHandler {
-  def this(assets: typings.playcanvas.pc.AssetRegistry, device: typings.playcanvas.pc.GraphicsDevice) = this()
+open class SpriteHandler protected ()
+  extends typings.playcanvas.mod.SpriteHandler {
+  /**
+    * Create a new SpriteHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

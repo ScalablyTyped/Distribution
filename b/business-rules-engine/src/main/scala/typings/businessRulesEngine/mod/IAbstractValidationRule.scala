@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IAbstractValidationRule[T] extends StObject {
   
-  var Children: StringDictionary[IAbstractValidationRule[js.Any]]
+  var Children: StringDictionary[IAbstractValidationRule[Any]]
   
   var Rules: StringDictionary[IPropertyValidationRule[T]]
   
@@ -27,7 +27,7 @@ trait IAbstractValidationRule[T] extends StObject {
 object IAbstractValidationRule {
   
   inline def apply[T](
-    Children: StringDictionary[IAbstractValidationRule[js.Any]],
+    Children: StringDictionary[IAbstractValidationRule[Any]],
     Rules: StringDictionary[IPropertyValidationRule[T]],
     Validate: T => IValidationResult,
     ValidateAll: T => Promise[IValidationResult],
@@ -42,7 +42,7 @@ object IAbstractValidationRule {
   
   extension [Self <: IAbstractValidationRule[?], T](x: Self & IAbstractValidationRule[T]) {
     
-    inline def setChildren(value: StringDictionary[IAbstractValidationRule[js.Any]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: StringDictionary[IAbstractValidationRule[Any]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
     inline def setRules(value: StringDictionary[IPropertyValidationRule[T]]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     

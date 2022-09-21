@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeepLabels extends StObject {
   
+  /**
+    * Specifies the minimum container height at which the layout begins to adapt.
+    */
   var height: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether node labels should be kept when the UI component adapts the layout.
+    */
   var keepLabels: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the minimum container width at which the layout begins to adapt.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object KeepLabels {

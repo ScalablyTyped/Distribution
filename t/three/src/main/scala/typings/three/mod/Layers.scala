@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Layers")
 @js.native
-class Layers ()
-  extends typings.three.layersMod.Layers
+open class Layers ()
+  extends typings.three.threeMod.Layers

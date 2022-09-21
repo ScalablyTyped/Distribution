@@ -29,7 +29,7 @@ object GetDisksResult {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

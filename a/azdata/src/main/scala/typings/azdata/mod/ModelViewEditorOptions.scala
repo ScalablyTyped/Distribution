@@ -9,7 +9,7 @@ trait ModelViewEditorOptions extends StObject {
   /**
     * Resource name for this editor
     * File icons might depend on file extension, language id or resource name
-    * Resource name field needs to be set explitly if file icon for a particular Model View Editor depends on editor resource name
+    * Resource name field needs to be set explicitly if file icon for a particular Model View Editor depends on editor resource name
     */
   val resourceName: js.UndefOr[String] = js.undefined
   

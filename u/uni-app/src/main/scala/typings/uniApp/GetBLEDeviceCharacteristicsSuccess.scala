@@ -29,7 +29,7 @@ object GetBLEDeviceCharacteristicsSuccess {
     
     inline def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
     
-    inline def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+    inline def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = StObject.set(x, "characteristics", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

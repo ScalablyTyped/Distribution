@@ -18,7 +18,7 @@ trait env extends StObject {
   
   var jsPrefix: String
   
-  var mouse: js.Any
+  var mouse: Any
   
   var strict: Boolean
   
@@ -54,7 +54,7 @@ object env {
     
     inline def setJsPrefix(value: String): Self = StObject.set(x, "jsPrefix", value.asInstanceOf[js.Any])
     
-    inline def setMouse(value: js.Any): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Any): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     

@@ -183,7 +183,7 @@ trait Directive extends StObject {
     *
     * @Annotation
     */
-  var queries: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var queries: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * The CSS selector that identifies this directive in a template
@@ -213,6 +213,18 @@ trait Directive extends StObject {
     *
     */
   var selector: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Angular directives marked as `standalone` do not need to be declared in an NgModule. Such
+    * directives don't depend on any "intermediate context" of an NgModule (ex. configured
+    * providers).
+    *
+    * More information about standalone components, directives and pipes can be found in [this
+    * guide](guide/standalone-components).
+    *
+    * @developerPreview
+    */
+  var standalone: js.UndefOr[Boolean] = js.undefined
 }
 object Directive {
   
@@ -234,7 +246,7 @@ object Directive {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
     
@@ -244,20 +256,24 @@ object Directive {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value*))
     
     inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
     
-    inline def setQueries(value: StringDictionary[js.Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: StringDictionary[Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
   }
 }

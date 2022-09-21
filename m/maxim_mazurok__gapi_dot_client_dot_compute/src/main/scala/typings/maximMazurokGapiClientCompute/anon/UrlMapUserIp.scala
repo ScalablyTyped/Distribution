@@ -1,14 +1,23 @@
 package typings.maximMazurokGapiClientCompute.anon
 
-import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionUrlMapsValidateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UrlMapUserIp extends StObject {
   
-  /** Data format for the response. */
+  /** V1 error format. */
+  @JSName("$.xgafv")
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
+  
+  /** OAuth access token. */
+  var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
+  
+  /** JSONP */
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -25,33 +34,59 @@ trait UrlMapUserIp extends StObject {
   /** Project ID for this request. */
   var project: String
   
-  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
+  /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Name of the region scoping this request. */
   var region: String
   
-  /** Request body */
-  var resource: RegionUrlMapsValidateRequest
+  /** begin_interface: MixerMutationRequestBuilder Request ID to support idempotency. */
+  var requestId: js.UndefOr[String] = js.undefined
   
-  /** Name of the UrlMap resource to be validated as. */
+  /** Request body */
+  var resource: typings.maximMazurokGapiClientCompute.gapi.client.compute.UrlMap
+  
+  /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  
+  /** Upload protocol for media (e.g. "raw", "multipart"). */
+  var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Name of the UrlMap resource to update. */
   var urlMap: String
   
-  /** Deprecated. Please use quotaUser instead. */
+  /** Legacy name for parameter that has been superseded by `quotaUser`. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 object UrlMapUserIp {
   
-  inline def apply(project: String, region: String, resource: RegionUrlMapsValidateRequest, urlMap: String): UrlMapUserIp = {
+  inline def apply(
+    project: String,
+    region: String,
+    resource: typings.maximMazurokGapiClientCompute.gapi.client.compute.UrlMap,
+    urlMap: String
+  ): UrlMapUserIp = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], urlMap = urlMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapUserIp]
   }
   
   extension [Self <: UrlMapUserIp](x: Self) {
     
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -77,7 +112,19 @@ object UrlMapUserIp {
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    inline def setResource(value: RegionUrlMapsValidateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    
+    inline def setResource(value: typings.maximMazurokGapiClientCompute.gapi.client.compute.UrlMap): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     inline def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
     

@@ -52,6 +52,6 @@ object SignatureInformation {
     
     inline def setParameters(value: js.Array[ParameterInformation]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: ParameterInformation*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterInformation*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

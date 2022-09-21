@@ -11,7 +11,7 @@ object mpnserviceMod {
   
   @JSImport("azure-sb/lib/mpnservice", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with MpnsService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()

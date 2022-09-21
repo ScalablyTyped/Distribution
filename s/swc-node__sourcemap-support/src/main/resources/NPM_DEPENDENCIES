@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@swc-node/sourcemap-support" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@swc-node/sourcemap-support" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

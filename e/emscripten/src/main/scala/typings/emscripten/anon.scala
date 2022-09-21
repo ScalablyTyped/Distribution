@@ -27,6 +27,48 @@ object anon {
     }
   }
   
+  trait Array extends StObject {
+    
+    var array: (js.Array[Boolean | Double | String]) | js.typedarray.Uint8Array | js.typedarray.Int8Array
+    
+    var boolean: Boolean
+    
+    var `null`: Null
+    
+    var number: Double
+    
+    var string: String
+  }
+  object Array {
+    
+    inline def apply(
+      array: (js.Array[Boolean | Double | String]) | js.typedarray.Uint8Array | js.typedarray.Int8Array,
+      boolean: Boolean,
+      `null`: Null,
+      number: Double,
+      string: String
+    ): Array = {
+      val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+      __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Array]
+    }
+    
+    extension [Self <: Array](x: Self) {
+      
+      inline def setArray(value: (js.Array[Boolean | Double | String]) | js.typedarray.Uint8Array | js.typedarray.Int8Array): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      
+      inline def setArrayVarargs(value: (Boolean | Double | String)*): Self = StObject.set(x, "array", js.Array(value*))
+      
+      inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      
+      inline def setNull(value: Null): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Encoding extends StObject {
     
     var encoding: binary

@@ -19,7 +19,7 @@ trait BooleanCondition extends StObject {
   
   def getCriteriaType(): BooleanCriteria
   
-  def getCriteriaValues(): js.Array[js.Any]
+  def getCriteriaValues(): js.Array[Any]
   
   def getFontColor(): String | Null
   
@@ -35,7 +35,7 @@ object BooleanCondition {
     getBackground: () => String | Null,
     getBold: () => Boolean | Null,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[js.Any],
+    getCriteriaValues: () => js.Array[Any],
     getFontColor: () => String | Null,
     getItalic: () => Boolean | Null,
     getStrikethrough: () => Boolean | Null,
@@ -53,7 +53,7 @@ object BooleanCondition {
     
     inline def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     inline def setGetFontColor(value: () => String | Null): Self = StObject.set(x, "getFontColor", js.Any.fromFunction0(value))
     

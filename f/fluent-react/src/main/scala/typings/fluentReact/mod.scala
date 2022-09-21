@@ -9,6 +9,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactElement
 import typings.std.Exclude
 import typings.std.IterableIterator
 import typings.std.Pick
@@ -24,31 +25,31 @@ object mod {
   
   @JSImport("fluent-react", "LocalizationProvider")
   @js.native
-  class LocalizationProvider protected ()
-    extends Component[LocalizationProviderProps, js.Object, js.Any] {
+  open class LocalizationProvider protected ()
+    extends Component[LocalizationProviderProps, js.Object, Any] {
     def this(props: LocalizationProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LocalizationProviderProps, context: js.Any) = this()
+    def this(props: LocalizationProviderProps, context: Any) = this()
   }
   
   @JSImport("fluent-react", "Localized")
   @js.native
-  class Localized protected ()
-    extends Component[LocalizedProps, js.Object, js.Any] {
+  open class Localized protected ()
+    extends Component[LocalizedProps, js.Object, Any] {
     def this(props: LocalizedProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LocalizedProps, context: js.Any) = this()
+    def this(props: LocalizedProps, context: Any) = this()
   }
   
   @JSImport("fluent-react", "ReactLocalization")
   @js.native
-  class ReactLocalization protected () extends StObject {
+  open class ReactLocalization protected () extends StObject {
     def this(bundles: IterableIterator[FluentBundle]) = this()
     
     def getString(id: String): String = js.native
@@ -57,25 +58,25 @@ object mod {
     def getString(id: String, args: Unit, fallback: String): String = js.native
   }
   
-  inline def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]): ComponentType[
+  inline def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[Any]], ComponentState]): ComponentType[
     Omit[
-      GetProps[ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]], 
+      GetProps[ComponentClass[Matching[InjectedProps, GetProps[Any]], ComponentState]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocalization")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     Omit[
-      GetProps[ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]], 
+      GetProps[ComponentClass[Matching[InjectedProps, GetProps[Any]], ComponentState]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
     ]
   ]]
-  inline def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]): ComponentType[
+  inline def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[Any]]]): ComponentType[
     Omit[
-      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]], 
+      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[Any]]]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocalization")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     Omit[
-      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]], 
+      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[Any]]]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
     ]
   ]]
@@ -101,7 +102,7 @@ object mod {
     }
   }
   
-  type GetProps[C] = js.Any
+  type GetProps[C] = Any
   
   type GetString = js.Function2[/* id */ String, /* args */ js.UndefOr[js.Object], String]
   
@@ -126,18 +127,22 @@ object mod {
     
     var bundles: IterableIterator[FluentBundle]
     
+    var children: ReactElement
+    
     var parseMarkup: js.UndefOr[MarkupParser] = js.undefined
   }
   object LocalizationProviderProps {
     
-    inline def apply(bundles: IterableIterator[FluentBundle]): LocalizationProviderProps = {
-      val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any])
+    inline def apply(bundles: IterableIterator[FluentBundle], children: ReactElement): LocalizationProviderProps = {
+      val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizationProviderProps]
     }
     
     extension [Self <: LocalizationProviderProps](x: Self) {
       
       inline def setBundles(value: IterableIterator[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
       
@@ -147,7 +152,7 @@ object mod {
   
   trait LocalizedProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var attrs: js.UndefOr[js.Object] = js.undefined
     
@@ -174,7 +179,7 @@ object mod {
   
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.fluentReact.fluentReactStrings.Matching & TopLevel[js.Any]
+    */ typings.fluentReact.fluentReactStrings.Matching & TopLevel[Any]
   
   trait Node extends StObject {
     
@@ -211,5 +216,5 @@ object mod {
   
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.fluentReact.fluentReactStrings.Shared & TopLevel[js.Any]
+    */ typings.fluentReact.fluentReactStrings.Shared & TopLevel[Any]
 }

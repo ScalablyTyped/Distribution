@@ -11,22 +11,26 @@ trait SVGFESpotLightElement
      with SVGElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val limitingConeAngle: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val pointsAtX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val pointsAtY: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val pointsAtZ: SVGAnimatedNumber = js.native
   
   /* InferMemberOverrides */
@@ -40,11 +44,15 @@ trait SVGFESpotLightElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val specularExponent: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val x: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val y: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val z: SVGAnimatedNumber = js.native
 }

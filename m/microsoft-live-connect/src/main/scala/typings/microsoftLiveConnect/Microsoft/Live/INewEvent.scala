@@ -32,7 +32,7 @@ trait INewEvent extends StObject {
     * user's local time, in ISO 8601 format.
     * Can be a date string, or a Date object.
     */
-  var end_time: js.UndefOr[js.Any] = js.undefined
+  var end_time: js.UndefOr[Any] = js.undefined
   
   /**
     * A value that specifies whether the event is an all-day event. If the
@@ -63,7 +63,7 @@ trait INewEvent extends StObject {
     * will be the user's local time, in ISO 8601 format.
     * Can be a date string, or a Date object.
     */
-  var start_time: js.Any
+  var start_time: Any
   
   /**
     * A value that specifies whether the event is publicly visible. Valid
@@ -76,7 +76,7 @@ trait INewEvent extends StObject {
 }
 object INewEvent {
   
-  inline def apply(description: String, name: String, start_time: js.Any): INewEvent = {
+  inline def apply(description: String, name: String, start_time: Any): INewEvent = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewEvent]
   }
@@ -89,7 +89,7 @@ object INewEvent {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setEnd_time(value: js.Any): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+    inline def setEnd_time(value: Any): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     inline def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
@@ -107,7 +107,7 @@ object INewEvent {
     
     inline def setReminder_timeUndefined: Self = StObject.set(x, "reminder_time", js.undefined)
     
-    inline def setStart_time(value: js.Any): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: Any): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

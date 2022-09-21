@@ -49,13 +49,13 @@ object VectorOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setFeatures(value: js.Array[Feature] | Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFormat(value: typings.openlayers.mod.format.Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

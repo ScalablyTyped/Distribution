@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PrecisionDate")
 @js.native
-class PrecisionDate ()
+open class PrecisionDate ()
   extends StObject
      with typings.babylonjs.BABYLON.PrecisionDate

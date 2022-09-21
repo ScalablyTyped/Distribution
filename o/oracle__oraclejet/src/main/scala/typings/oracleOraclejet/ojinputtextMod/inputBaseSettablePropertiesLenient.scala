@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojinputtext.inputBaseSettableProperties<V, SV, RV>> */
 trait inputBaseSettablePropertiesLenient[V, SV, RV]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var asyncValidators: js.UndefOr[js.Array[AsyncValidator[V]]] = js.undefined
   
@@ -75,7 +75,7 @@ object inputBaseSettablePropertiesLenient {
     
     inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
-    inline def setAsyncValidatorsVarargs(value: AsyncValidator[V]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidator[V]*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
     inline def setAutocomplete(value: on | off | String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object inputBaseSettablePropertiesLenient {
     
     inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
-    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object inputBaseSettablePropertiesLenient {
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: (Validator[V] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: (Validator[V] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value*))
     
     inline def setValue(value: SV): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

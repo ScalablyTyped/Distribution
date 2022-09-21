@@ -128,7 +128,7 @@ object mod {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setItemIdVarargs(value: String*): Self = StObject.set(x, "itemId", js.Array(value :_*))
+      inline def setItemIdVarargs(value: String*): Self = StObject.set(x, "itemId", js.Array(value*))
       
       inline def setRequest(value: js.Function): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

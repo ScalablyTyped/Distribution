@@ -1,175 +1,158 @@
 package typings.reactSelect
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import typings.emotionReact.emotionReactMod.jsx.JSX.Element
 import typings.react.mod.ComponentType
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.reactSelect.anon.Children
 import typings.reactSelect.anon.ClassName
-import typings.reactSelect.anon.CropWithEllipsis
-import typings.reactSelect.anon.OnClick
-import typings.reactSelect.anon.OnTouchEnd
-import typings.reactSelect.typesMod.CommonProps
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.reactSelect.selectMod.Props
+import typings.reactSelect.typesMod.CSSObjectWithLabel
+import typings.reactSelect.typesMod.CommonPropsAndClassName
+import typings.reactSelect.typesMod.GroupBase
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMultiValueMod {
   
-  @JSImport("react-select/src/components/MultiValue", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/components/MultiValue", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/components/MultiValue", JSImport.Default)
-  @js.native
-  class default[OptionType /* <: OptionTypeBase */] protected () extends MultiValue[OptionType] {
-    def this(props: MultiValueProps[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: MultiValueProps[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("react-select/src/components/MultiValue", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/src/components/MultiValue", "default.defaultProps")
-    @js.native
-    def defaultProps: CropWithEllipsis = js.native
-    inline def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MultiValueProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-select/src/components/MultiValue", "MultiValue")
-  @js.native
-  class MultiValue[OptionType /* <: OptionTypeBase */] protected ()
-    extends Component[MultiValueProps[OptionType], js.Object, js.Any] {
-    def this(props: MultiValueProps[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: MultiValueProps[OptionType], context: js.Any) = this()
+  inline def MultiValueContainer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueContainer")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def MultiValueGeneric[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueGeneric")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def MultiValueLabel[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueLabel")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def MultiValueRemove[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueRemoveProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueRemove")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def multiValueCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacingBorderRadiusColors: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")(hasHasSpacingBorderRadiusColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def multiValueLabelCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasBorderRadiusColorsCropWithEllipsis: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(hasHasBorderRadiusColorsCropWithEllipsis.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  inline def multiValueRemoveCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacingBorderRadiusColorsIsFocused: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(hasHasSpacingBorderRadiusColorsIsFocused.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  
+  trait MultiValueComponents[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
+    
+    var Container: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]]
+    
+    var Label: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]]
+    
+    var Remove: ComponentType[MultiValueRemoveProps[Option, IsMulti, Group]]
   }
-  /* static members */
-  object MultiValue {
+  object MultiValueComponents {
     
-    @JSImport("react-select/src/components/MultiValue", "MultiValue")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+      Container: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]],
+      Label: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]],
+      Remove: ComponentType[MultiValueRemoveProps[Option, IsMulti, Group]]
+    ): MultiValueComponents[Option, IsMulti, Group] = {
+      val __obj = js.Dynamic.literal(Container = Container.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Remove = Remove.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultiValueComponents[Option, IsMulti, Group]]
+    }
     
-    @JSImport("react-select/src/components/MultiValue", "MultiValue.defaultProps")
-    @js.native
-    def defaultProps: CropWithEllipsis = js.native
-    inline def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    extension [Self <: MultiValueComponents[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueComponents[Option, IsMulti, Group])) {
+      
+      inline def setContainer(value: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]]): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+      
+      inline def setLabel(value: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]]): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+      
+      inline def setRemove(value: ComponentType[MultiValueRemoveProps[Option, IsMulti, Group]]): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
+    }
   }
   
-  @JSImport("react-select/src/components/MultiValue", "MultiValueContainer")
-  @js.native
-  val MultiValueContainer: ComponentType[MultiValueGenericProps[js.Any]] = js.native
-  
-  @JSImport("react-select/src/components/MultiValue", "MultiValueGeneric")
-  @js.native
-  val MultiValueGeneric: ComponentType[MultiValueGenericProps[js.Any]] = js.native
-  
-  @JSImport("react-select/src/components/MultiValue", "MultiValueLabel")
-  @js.native
-  val MultiValueLabel: ComponentType[MultiValueGenericProps[js.Any]] = js.native
-  
-  @JSImport("react-select/src/components/MultiValue", "MultiValueRemove")
-  @js.native
-  class MultiValueRemove[OptionType /* <: OptionTypeBase */] protected ()
-    extends Component[MultiValueRemoveProps[OptionType], js.Object, js.Any] {
-    def this(props: MultiValueRemoveProps[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: MultiValueRemoveProps[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object MultiValueRemove {
-    
-    @JSImport("react-select/src/components/MultiValue", "MultiValueRemove")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/src/components/MultiValue", "MultiValueRemove.defaultProps")
-    @js.native
-    def defaultProps: Children = js.native
-    inline def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  inline def multiValueCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")().asInstanceOf[CSSProperties]
-  
-  inline def multiValueLabelCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  inline def multiValueRemoveCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  trait MultiValueGenericProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait MultiValueGenericProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
     
     var children: ReactNode
     
-    var data: OptionType
+    var data: Any
     
     var innerProps: ClassName
     
-    var selectProps: js.Any
+    var selectProps: Props[Option, IsMulti, Group]
   }
   object MultiValueGenericProps {
     
-    inline def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: ClassName, selectProps: js.Any): MultiValueGenericProps[OptionType] = {
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](data: Any, innerProps: ClassName, selectProps: Props[Option, IsMulti, Group]): MultiValueGenericProps[Option, IsMulti, Group] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any], selectProps = selectProps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiValueGenericProps[OptionType]]
+      __obj.asInstanceOf[MultiValueGenericProps[Option, IsMulti, Group]]
     }
     
-    extension [Self <: MultiValueGenericProps[?], OptionType /* <: OptionTypeBase */](x: Self & MultiValueGenericProps[OptionType]) {
+    extension [Self <: MultiValueGenericProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueGenericProps[Option, IsMulti, Group])) {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setInnerProps(value: ClassName): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
       
-      inline def setSelectProps(value: js.Any): Self = StObject.set(x, "selectProps", value.asInstanceOf[js.Any])
+      inline def setSelectProps(value: Props[Option, IsMulti, Group]): Self = StObject.set(x, "selectProps", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait MultiValueProps[OptionType /* <: OptionTypeBase */]
+  trait MultiValueProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType] {
+       with CommonPropsAndClassName[Option, IsMulti, Group] {
     
     var children: ReactNode = js.native
     
-    var components: js.Any = js.native
+    var components: MultiValueComponents[Option, IsMulti, Group] = js.native
     
-    var cropWithEllipsis: Boolean = js.native
+    var cropWithEllipsis: js.UndefOr[Boolean] = js.native
     
-    var data: OptionType = js.native
+    var data: Option = js.native
     
-    var innerProps: js.Any = js.native
+    var index: Double = js.native
+    
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
     var isDisabled: Boolean = js.native
     
     var isFocused: Boolean = js.native
     
-    var removeProps: OnClick = js.native
+    var removeProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
   }
   
-  @js.native
-  trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */]
-    extends StObject
-       with CommonProps[OptionType] {
+  trait MultiValueRemoveProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var innerProps: OnTouchEnd = js.native
+    var data: Option
+    
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
+    
+    var selectProps: Props[Option, IsMulti, Group]
+  }
+  object MultiValueRemoveProps {
+    
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+      data: Option,
+      innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement],
+      selectProps: Props[Option, IsMulti, Group]
+    ): MultiValueRemoveProps[Option, IsMulti, Group] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any], selectProps = selectProps.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultiValueRemoveProps[Option, IsMulti, Group]]
+    }
+    
+    extension [Self <: MultiValueRemoveProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueRemoveProps[Option, IsMulti, Group])) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setData(value: Option): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setInnerProps(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
+      
+      inline def setSelectProps(value: Props[Option, IsMulti, Group]): Self = StObject.set(x, "selectProps", value.asInstanceOf[js.Any])
+    }
   }
 }

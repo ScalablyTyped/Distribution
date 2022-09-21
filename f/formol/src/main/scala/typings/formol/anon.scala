@@ -10,7 +10,7 @@ object anon {
   
   trait Dictk
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var no: ReactNode
     

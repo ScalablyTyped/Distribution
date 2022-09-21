@@ -29,7 +29,7 @@ object ListBulkDeploymentDetailedReportsResponse {
     
     inline def setDeploymentsUndefined: Self = StObject.set(x, "Deployments", js.undefined)
     
-    inline def setDeploymentsVarargs(value: BulkDeploymentResult*): Self = StObject.set(x, "Deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: BulkDeploymentResult*): Self = StObject.set(x, "Deployments", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

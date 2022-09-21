@@ -121,7 +121,7 @@ object schemaJsonMod extends Shortcut {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setUserUrlFormat(value: String): Self = StObject.set(x, "userUrlFormat", value.asInstanceOf[js.Any])
       

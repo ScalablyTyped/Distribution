@@ -35,7 +35,7 @@ object IExecuteReply {
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    inline def setPayloadVarargs(value: JSONObject*): Self = StObject.set(x, "payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: JSONObject*): Self = StObject.set(x, "payload", js.Array(value*))
     
     inline def setUser_expressions(value: JSONObject): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
   }

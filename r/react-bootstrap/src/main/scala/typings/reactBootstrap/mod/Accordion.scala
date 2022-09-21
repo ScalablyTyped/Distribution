@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Accordion")
 @js.native
-class Accordion ()
+open class Accordion ()
   extends typings.reactBootstrap.libMod.Accordion

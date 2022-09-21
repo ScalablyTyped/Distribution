@@ -29,7 +29,7 @@ object GetCrawlersResponse {
     
     inline def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
     
-    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
+    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RuntimeData extends StObject {
   
   /**
-    *
     * Toggle JavaScript events in the current task pane or content add-in.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableEvents: js.UndefOr[Boolean] = js.undefined

@@ -4,15 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a choice of the `ExpandPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
-trait ExpandChoiceOptions[T /* <: Answers */]
+trait ExpandChoiceOptions
   extends StObject
-     with ChoiceOptions[T] {
+     with ChoiceOptions {
   
   /**
     * The key to press for selecting the choice.
@@ -21,12 +15,12 @@ trait ExpandChoiceOptions[T /* <: Answers */]
 }
 object ExpandChoiceOptions {
   
-  inline def apply[T /* <: Answers */](): ExpandChoiceOptions[T] = {
+  inline def apply(): ExpandChoiceOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ExpandChoiceOptions[T]]
+    __obj.asInstanceOf[ExpandChoiceOptions]
   }
   
-  extension [Self <: ExpandChoiceOptions[?], T /* <: Answers */](x: Self & ExpandChoiceOptions[T]) {
+  extension [Self <: ExpandChoiceOptions](x: Self) {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersInitializeParams
+import typings.vscodeLanguageserverProtocol.protocolWorkspaceFolderMod.WorkspaceFoldersInitializeParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait InitializeParams
 object InitializeParams {
   
   inline def apply(capabilities: ClientCapabilities): InitializeParams = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = null, rootUri = null, workspaceFolders = null)
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = null, rootUri = null)
     __obj.asInstanceOf[InitializeParams]
   }
 }

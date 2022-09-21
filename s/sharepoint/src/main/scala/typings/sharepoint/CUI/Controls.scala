@@ -13,9 +13,9 @@ object Controls {
        with Control
        with ISelectableControl {
     
-    def createComponentForDisplayModeInternal(displayMode: String): js.Any
+    def createComponentForDisplayModeInternal(displayMode: String): Any
     
-    def createDOMElementForDisplayMode(displayMode: String): js.Any
+    def createDOMElementForDisplayMode(displayMode: String): Any
     
     def deselect(): scala.Unit
     
@@ -31,17 +31,17 @@ object Controls {
     
     def getTextValue(): String
     
-    def handleMouseBlur(e: FocusEvent): js.Any
+    def handleMouseBlur(e: FocusEvent): Any
     
-    def handleMouseFocus(e: FocusEvent): js.Any
+    def handleMouseFocus(e: FocusEvent): Any
     
-    def handleTabBlur(e: FocusEvent): js.Any
+    def handleTabBlur(e: FocusEvent): Any
     
-    def handleTabFocus(e: FocusEvent): js.Any
+    def handleTabFocus(e: FocusEvent): Any
     
     def onClick(e: Event): scala.Unit
     
-    def onEnabledChanged(enabled: Boolean): js.Any
+    def onEnabledChanged(enabled: Boolean): Any
     
     def onMenuClosed(): scala.Unit
     
@@ -50,9 +50,9 @@ object Controls {
   object Button {
     
     inline def apply(
-      createComponentForDisplayMode: String => js.Any,
-      createComponentForDisplayModeInternal: String => js.Any,
-      createDOMElementForDisplayMode: String => js.Any,
+      createComponentForDisplayMode: String => Any,
+      createComponentForDisplayModeInternal: String => Any,
+      createDOMElementForDisplayMode: String => Any,
       deselect: () => scala.Unit,
       dispose: () => scala.Unit,
       focusOnDisplayedComponent: () => scala.Unit,
@@ -64,12 +64,12 @@ object Controls {
       get_enabled: () => Boolean,
       get_id: () => String,
       get_root: () => Root,
-      handleMouseBlur: FocusEvent => js.Any,
-      handleMouseFocus: FocusEvent => js.Any,
-      handleTabBlur: FocusEvent => js.Any,
-      handleTabFocus: FocusEvent => js.Any,
+      handleMouseBlur: FocusEvent => Any,
+      handleMouseFocus: FocusEvent => Any,
+      handleTabBlur: FocusEvent => Any,
+      handleTabFocus: FocusEvent => Any,
       onClick: Event => scala.Unit,
-      onEnabledChanged: Boolean => js.Any,
+      onEnabledChanged: Boolean => Any,
       onMenuClosed: () => scala.Unit,
       receiveFocus: () => scala.Unit,
       set_enabled: Boolean => Boolean
@@ -80,9 +80,9 @@ object Controls {
     
     extension [Self <: Button](x: Self) {
       
-      inline def setCreateComponentForDisplayModeInternal(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayModeInternal", js.Any.fromFunction1(value))
+      inline def setCreateComponentForDisplayModeInternal(value: String => Any): Self = StObject.set(x, "createComponentForDisplayModeInternal", js.Any.fromFunction1(value))
       
-      inline def setCreateDOMElementForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createDOMElementForDisplayMode", js.Any.fromFunction1(value))
+      inline def setCreateDOMElementForDisplayMode(value: String => Any): Self = StObject.set(x, "createDOMElementForDisplayMode", js.Any.fromFunction1(value))
       
       inline def setDeselect(value: () => scala.Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -98,17 +98,17 @@ object Controls {
       
       inline def setGetTextValue(value: () => String): Self = StObject.set(x, "getTextValue", js.Any.fromFunction0(value))
       
-      inline def setHandleMouseBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseBlur", js.Any.fromFunction1(value))
+      inline def setHandleMouseBlur(value: FocusEvent => Any): Self = StObject.set(x, "handleMouseBlur", js.Any.fromFunction1(value))
       
-      inline def setHandleMouseFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseFocus", js.Any.fromFunction1(value))
+      inline def setHandleMouseFocus(value: FocusEvent => Any): Self = StObject.set(x, "handleMouseFocus", js.Any.fromFunction1(value))
       
-      inline def setHandleTabBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabBlur", js.Any.fromFunction1(value))
+      inline def setHandleTabBlur(value: FocusEvent => Any): Self = StObject.set(x, "handleTabBlur", js.Any.fromFunction1(value))
       
-      inline def setHandleTabFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabFocus", js.Any.fromFunction1(value))
+      inline def setHandleTabFocus(value: FocusEvent => Any): Self = StObject.set(x, "handleTabFocus", js.Any.fromFunction1(value))
       
       inline def setOnClick(value: Event => scala.Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setOnEnabledChanged(value: Boolean => js.Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
+      inline def setOnEnabledChanged(value: Boolean => Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
       
       inline def setOnMenuClosed(value: () => scala.Unit): Self = StObject.set(x, "onMenuClosed", js.Any.fromFunction0(value))
       
@@ -126,7 +126,7 @@ object Controls {
   object ColorPicker {
     
     inline def apply(
-      createComponentForDisplayMode: String => js.Any,
+      createComponentForDisplayMode: String => Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,
       get_id: () => String,
@@ -176,7 +176,7 @@ object Controls {
   object GalleryButton {
     
     inline def apply(
-      createComponentForDisplayMode: String => js.Any,
+      createComponentForDisplayMode: String => Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,
       get_id: () => String,
@@ -221,7 +221,7 @@ object Controls {
   object ToggleButton {
     
     inline def apply(
-      createComponentForDisplayMode: String => js.Any,
+      createComponentForDisplayMode: String => Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,
       get_id: () => String,

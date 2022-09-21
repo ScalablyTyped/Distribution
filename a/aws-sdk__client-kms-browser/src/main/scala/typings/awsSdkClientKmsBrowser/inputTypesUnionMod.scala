@@ -14,9 +14,6 @@ import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ReEncryptFro
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ReEncryptTo
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.RetireGrant
 import typings.awsSdkClientKmsBrowser.typesTagMod.Tag
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +75,7 @@ object inputTypesUnionMod {
       KeyId: String,
       Operations: (js.Array[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
         ])
     ): typings.awsSdkClientKmsBrowser.typesCreateGrantInputMod.CreateGrantInput = {
@@ -91,7 +88,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesCreateKeyInputMod.CreateKeyInput]
     }
     
-    inline def DecryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput = {
+    inline def DecryptInput(CiphertextBlob: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput = {
       val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput]
     }
@@ -131,7 +128,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesEnableKeyRotationInputMod.EnableKeyRotationInput]
     }
     
-    inline def EncryptInput(KeyId: String, Plaintext: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput = {
+    inline def EncryptInput(KeyId: String, Plaintext: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Plaintext = Plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput]
     }
@@ -171,8 +168,8 @@ object inputTypesUnionMod {
     }
     
     inline def ImportKeyMaterialInput(
-      EncryptedKeyMaterial: ArrayBuffer | ArrayBufferView | String,
-      ImportToken: ArrayBuffer | ArrayBufferView | String,
+      EncryptedKeyMaterial: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
+      ImportToken: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
       KeyId: String
     ): typings.awsSdkClientKmsBrowser.typesImportKeyMaterialInputMod.ImportKeyMaterialInput = {
       val __obj = js.Dynamic.literal(EncryptedKeyMaterial = EncryptedKeyMaterial.asInstanceOf[js.Any], ImportToken = ImportToken.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
@@ -214,7 +211,10 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesPutKeyPolicyInputMod.PutKeyPolicyInput]
     }
     
-    inline def ReEncryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String, DestinationKeyId: String): typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput = {
+    inline def ReEncryptInput(
+      CiphertextBlob: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
+      DestinationKeyId: String
+    ): typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput = {
       val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any], DestinationKeyId = DestinationKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput]
     }
@@ -234,12 +234,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionInputMod.ScheduleKeyDeletionInput]
     }
     
-    inline def TagResourceInput(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput = {
+    inline def TagResourceInput(KeyId: String, Tags: js.Array[Tag] | js.Iterable[Tag]): typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput]
     }
     
-    inline def UntagResourceInput(KeyId: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput = {
+    inline def UntagResourceInput(KeyId: String, TagKeys: js.Array[String] | js.Iterable[String]): typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput]
     }

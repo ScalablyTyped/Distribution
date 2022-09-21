@@ -1,6 +1,6 @@
 package typings.ssh2.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ssh2.ssh2Strings.publickey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait PublicKeyAuthContext
      with AuthContext {
   
   /** The data used to verify the key, or `undefined` if the client is only checking the validity of the key. */
-  var blob: Buffer = js.native
+  var blob: js.UndefOr[Buffer] = js.native
   
   /** The public key sent by the client. */
   var key: PublicKey = js.native
@@ -20,9 +20,6 @@ trait PublicKeyAuthContext
   /** The method of authentication. */
   @JSName("method")
   var method_PublicKeyAuthContext: publickey = js.native
-  
-  /** The signature algorithm, or `undefined` if the client is only checking the validity of the key. */
-  var sigAlgo: String = js.native
   
   /** The signature to verify, or `undefined` if the client is only checking the validity of the key. */
   var signature: js.UndefOr[Buffer] = js.native

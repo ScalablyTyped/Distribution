@@ -145,9 +145,9 @@ object mod {
   
   inline def demoteUserFromOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("demoteUserFromOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  inline def formBuilder(formId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formBuilder")(formId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def formBuilder(formId: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formBuilder")(formId.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def forwardMessage(conversationId: String, message: String, data: Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   inline def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
@@ -157,21 +157,21 @@ object mod {
   
   inline def getBotUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotUser")().asInstanceOf[Unit]
   
-  inline def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getCashtags(message: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionRequestStatus")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
   inline def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(status.asInstanceOf[js.Any], commaSeparatedUserIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  inline def getDatafeedEventsService(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatafeedEventsService")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDatafeedEventsService(options: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatafeedEventsService")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getFirehoseEventsService(subscriberCallback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirehoseEventsService")(subscriberCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getFirehoseEventsService(subscriberCallback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirehoseEventsService")(subscriberCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getHashtags(message: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInboundPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  inline def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getMentions(message: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
@@ -225,7 +225,7 @@ object mod {
   
   inline def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboGetUserIMStreamId")(userToken.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserId]]
   
-  inline def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def oboSendMessage(userToken: String, conversationId: String, message: String, data: Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   inline def promoteUserToOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("promoteUserToOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
@@ -269,15 +269,15 @@ object mod {
   
   inline def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  inline def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def sendMessage(conversationId: String, message: String, data: Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   inline def sendMessageWithAttachment(
     conversationId: String,
     message: String,
-    data: js.Any,
+    data: Any,
     fileName: String,
     fileType: String,
-    fileContent: js.Any,
+    fileContent: Any,
     format: String
   ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageWithAttachment")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileContent.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   

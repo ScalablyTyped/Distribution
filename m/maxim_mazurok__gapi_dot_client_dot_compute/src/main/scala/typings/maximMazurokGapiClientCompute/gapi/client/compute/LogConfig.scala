@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogConfig extends StObject {
   
-  /** Cloud audit options. */
+  /** This is deprecated and has no effect. Do not use. */
   var cloudAudit: js.UndefOr[LogConfigCloudAuditOptions] = js.undefined
   
-  /** Counter options. */
+  /** This is deprecated and has no effect. Do not use. */
   var counter: js.UndefOr[LogConfigCounterOptions] = js.undefined
   
-  /** Data access options. */
+  /** This is deprecated and has no effect. Do not use. */
   var dataAccess: js.UndefOr[LogConfigDataAccessOptions] = js.undefined
 }
 object LogConfig {

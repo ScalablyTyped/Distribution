@@ -63,7 +63,7 @@ object XTextCursor {
     gotoRange: (XTextRange, Boolean) => Unit,
     gotoStart: Boolean => Unit,
     isCollapsed: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XTextCursor = {

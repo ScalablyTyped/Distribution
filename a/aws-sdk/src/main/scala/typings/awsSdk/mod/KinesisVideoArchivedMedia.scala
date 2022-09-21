@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class KinesisVideoArchivedMedia ()
+open class KinesisVideoArchivedMedia ()
   extends typings.awsSdk.allMod.KinesisVideoArchivedMedia {
   def this(options: ClientConfiguration) = this()
 }

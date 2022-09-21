@@ -17,6 +17,9 @@ trait BaseParticleSystem extends StObject {
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   
+  /** @hidden */
+  var _billboardMode: Double = js.native
+  
   /* protected */ var _colorGradients: Nullable[js.Array[ColorGradient]] = js.native
   
   /* protected */ var _colorRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
@@ -43,9 +46,10 @@ trait BaseParticleSystem extends StObject {
   /* protected */ var _imageProcessingConfigurationDefines: ImageProcessingConfigurationDefines = js.native
   
   /** @hidden */
-  /* protected */ var _isAnimationSheetEnabled: Boolean = js.native
+  var _isAnimationSheetEnabled: Boolean = js.native
   
-  /* protected */ var _isBillboardBased: Boolean = js.native
+  /** @hidden */
+  var _isBillboardBased: Boolean = js.native
   
   /** @hidden */
   var _isSubEmitter: Boolean = js.native
@@ -54,15 +58,22 @@ trait BaseParticleSystem extends StObject {
   
   /* protected */ var _limitVelocityGradients: Nullable[js.Array[FactorGradient]] = js.native
   
-  /* private */ var _noiseTexture: js.Any = js.native
+  /* private */ var _noiseTexture: Any = js.native
   
   /* protected */ var _rampGradients: Nullable[js.Array[Color3Gradient]] = js.native
   
-  /** @hidden */
+  /**
+    * @param gradient
+    * @param gradients
+    * @param texture
+    * @hidden
+    */
   /* protected */ def _removeGradientAndTexture(gradient: Double, gradients: Nullable[js.Array[IValueGradient]], texture: Nullable[RawTexture]): BaseParticleSystem = js.native
   
   /** @hidden */
   /* protected */ def _reset(): Unit = js.native
+  
+  /* protected */ var _rootUrl: String = js.native
   
   /**
     * The scene the particle system belongs to.
@@ -104,7 +115,8 @@ trait BaseParticleSystem extends StObject {
     * Gets or sets the billboard mode to use when isBillboardBased = true.
     * Value can be: ParticleSystem.BILLBOARDMODE_ALL, ParticleSystem.BILLBOARDMODE_Y, ParticleSystem.BILLBOARDMODE_STRETCHED
     */
-  var billboardMode: Double = js.native
+  def billboardMode: Double = js.native
+  def billboardMode_=(value: Double): Unit = js.native
   
   /**
     * Blend mode use to render the particle, it can be either ParticleSystem.BLENDMODE_ONEONE or ParticleSystem.BLENDMODE_STANDARD.
@@ -264,7 +276,7 @@ trait BaseParticleSystem extends StObject {
     * This can help using your own shader to render the particle system.
     * The according effect will be created
     */
-  var customShader: js.Any = js.native
+  var customShader: Any = js.native
   
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
@@ -308,56 +320,56 @@ trait BaseParticleSystem extends StObject {
   
   /**
     * Gets the current list of alpha remap gradients.
-    * You must use addAlphaRemapGradient and removeAlphaRemapGradient to udpate this list
+    * You must use addAlphaRemapGradient and removeAlphaRemapGradient to update this list
     * @returns the list of alpha remap gradients
     */
   def getAlphaRemapGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of angular speed gradients.
-    * You must use addAngularSpeedGradient and removeAngularSpeedGradient to udpate this list
+    * You must use addAngularSpeedGradient and removeAngularSpeedGradient to update this list
     * @returns the list of angular speed gradients
     */
   def getAngularSpeedGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of color gradients.
-    * You must use addColorGradient and removeColorGradient to udpate this list
+    * You must use addColorGradient and removeColorGradient to update this list
     * @returns the list of color gradients
     */
   def getColorGradients(): Nullable[js.Array[ColorGradient]] = js.native
   
   /**
     * Gets the current list of color remap gradients.
-    * You must use addColorRemapGradient and removeColorRemapGradient to udpate this list
+    * You must use addColorRemapGradient and removeColorRemapGradient to update this list
     * @returns the list of color remap gradients
     */
   def getColorRemapGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of drag gradients.
-    * You must use addDragGradient and removeDragGradient to udpate this list
+    * You must use addDragGradient and removeDragGradient to update this list
     * @returns the list of drag gradients
     */
   def getDragGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of emit rate gradients.
-    * You must use addEmitRateGradient and removeEmitRateGradient to udpate this list
+    * You must use addEmitRateGradient and removeEmitRateGradient to update this list
     * @returns the list of emit rate gradients
     */
   def getEmitRateGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of life time gradients.
-    * You must use addLifeTimeGradient and removeLifeTimeGradient to udpate this list
+    * You must use addLifeTimeGradient and removeLifeTimeGradient to update this list
     * @returns the list of life time gradients
     */
   def getLifeTimeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of limit velocity gradients.
-    * You must use addLimitVelocityGradient and removeLimitVelocityGradient to udpate this list
+    * You must use addLimitVelocityGradient and removeLimitVelocityGradient to update this list
     * @returns the list of limit velocity gradients
     */
   def getLimitVelocityGradients(): Nullable[js.Array[FactorGradient]] = js.native
@@ -370,21 +382,21 @@ trait BaseParticleSystem extends StObject {
   
   /**
     * Gets the current list of size gradients.
-    * You must use addSizeGradient and removeSizeGradient to udpate this list
+    * You must use addSizeGradient and removeSizeGradient to update this list
     * @returns the list of size gradients
     */
   def getSizeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of start size gradients.
-    * You must use addStartSizeGradient and removeStartSizeGradient to udpate this list
+    * You must use addStartSizeGradient and removeStartSizeGradient to update this list
     * @returns the list of start size gradients
     */
   def getStartSizeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of velocity gradients.
-    * You must use addVelocityGradient and removeVelocityGradient to udpate this list
+    * You must use addVelocityGradient and removeVelocityGradient to update this list
     * @returns the list of velocity gradients
     */
   def getVelocityGradients(): Nullable[js.Array[FactorGradient]] = js.native
@@ -580,6 +592,11 @@ trait BaseParticleSystem extends StObject {
     * If using a spritesheet (isAnimationSheetEnabled), defines the sprite cell height to use
     */
   var spriteCellHeight: Double = js.native
+  
+  /**
+    * If using a spritesheet (isAnimationSheetEnabled), defines wether the sprite animation is looping
+    */
+  var spriteCellLoop: Boolean = js.native
   
   /**
     * If using a spritesheet (isAnimationSheetEnabled), defines the sprite cell width to use

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FieldScale
   extends StObject
-     with ScaledValueRef[js.Any] {
+     with ScaledValueRef[Any] {
   
   var field: typings.vegaTypings.encodeMod.Field
   

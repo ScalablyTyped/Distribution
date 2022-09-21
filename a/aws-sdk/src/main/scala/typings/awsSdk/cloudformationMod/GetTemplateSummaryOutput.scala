@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTemplateSummaryOutput extends StObject {
   
   /**
-    * The capabilities found within the template. If your template contains IAM resources, you must specify the CAPABILITY_IAM or CAPABILITY_NAMED_IAM value for this parameter when you use the CreateStack or UpdateStack actions with your template; otherwise, those actions return an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
+    * The capabilities found within the template. If your template contains IAM resources, you must specify the CAPABILITY_IAM or CAPABILITY_NAMED_IAM value for this parameter when you use the CreateStack or UpdateStack actions with your template; otherwise, those actions return an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in CloudFormation Templates.
     */
   var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
@@ -22,12 +22,12 @@ trait GetTemplateSummaryOutput extends StObject {
   var DeclaredTransforms: js.UndefOr[TransformsList] = js.undefined
   
   /**
-    * The value that is defined in the Description property of the template.
+    * The value that's defined in the Description property of the template.
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * The value that is defined for the Metadata property of the template.
+    * The value that's defined for the Metadata property of the template.
     */
   var Metadata: js.UndefOr[typings.awsSdk.cloudformationMod.Metadata] = js.undefined
   
@@ -37,7 +37,7 @@ trait GetTemplateSummaryOutput extends StObject {
   var Parameters: js.UndefOr[ParameterDeclarations] = js.undefined
   
   /**
-    * A list of resource identifier summaries that describe the target resources of an import operation and the properties you can provide during the import to identify the target resources. For example, BucketName is a possible identifier property for an AWS::S3::Bucket resource. 
+    * A list of resource identifier summaries that describe the target resources of an import operation and the properties you can provide during the import to identify the target resources. For example, BucketName is a possible identifier property for an AWS::S3::Bucket resource.
     */
   var ResourceIdentifierSummaries: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceIdentifierSummaries] = js.undefined
   
@@ -47,7 +47,7 @@ trait GetTemplateSummaryOutput extends StObject {
   var ResourceTypes: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceTypes] = js.undefined
   
   /**
-    * The AWS template format version, which identifies the capabilities of the template.
+    * The Amazon Web Services template format version, which identifies the capabilities of the template.
     */
   var Version: js.UndefOr[typings.awsSdk.cloudformationMod.Version] = js.undefined
 }
@@ -68,13 +68,13 @@ object GetTemplateSummaryOutput {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setDeclaredTransforms(value: TransformsList): Self = StObject.set(x, "DeclaredTransforms", value.asInstanceOf[js.Any])
     
     inline def setDeclaredTransformsUndefined: Self = StObject.set(x, "DeclaredTransforms", js.undefined)
     
-    inline def setDeclaredTransformsVarargs(value: TransformName*): Self = StObject.set(x, "DeclaredTransforms", js.Array(value :_*))
+    inline def setDeclaredTransformsVarargs(value: TransformName*): Self = StObject.set(x, "DeclaredTransforms", js.Array(value*))
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -88,19 +88,19 @@ object GetTemplateSummaryOutput {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ParameterDeclaration*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterDeclaration*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setResourceIdentifierSummaries(value: ResourceIdentifierSummaries): Self = StObject.set(x, "ResourceIdentifierSummaries", value.asInstanceOf[js.Any])
     
     inline def setResourceIdentifierSummariesUndefined: Self = StObject.set(x, "ResourceIdentifierSummaries", js.undefined)
     
-    inline def setResourceIdentifierSummariesVarargs(value: ResourceIdentifierSummary*): Self = StObject.set(x, "ResourceIdentifierSummaries", js.Array(value :_*))
+    inline def setResourceIdentifierSummariesVarargs(value: ResourceIdentifierSummary*): Self = StObject.set(x, "ResourceIdentifierSummaries", js.Array(value*))
     
     inline def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value*))
     
     inline def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

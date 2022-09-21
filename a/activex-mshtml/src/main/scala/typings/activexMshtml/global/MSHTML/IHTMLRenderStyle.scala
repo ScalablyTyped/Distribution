@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLRenderStyle")
 @js.native
-/* private */ class IHTMLRenderStyle ()
+/* private */ open class IHTMLRenderStyle ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLRenderStyle {
   
@@ -21,16 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var renderingPriority: Double = js.native
   
   /* CompleteClass */
-  var textBackgroundColor: js.Any = js.native
+  var textBackgroundColor: Any = js.native
   
   /* CompleteClass */
-  var textColor: js.Any = js.native
+  var textColor: Any = js.native
   
   /* CompleteClass */
   var textDecoration: String = js.native
   
   /* CompleteClass */
-  var textDecorationColor: js.Any = js.native
+  var textDecorationColor: Any = js.native
   
   /* CompleteClass */
   var textEffect: String = js.native

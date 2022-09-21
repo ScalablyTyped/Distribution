@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__types
 
-Typings are for version 1.1.0
+Typings are for version 1.2.1
 
 ## Library description:
 Shared types used by `redux-saga` packages.
@@ -10,15 +10,15 @@ Shared types used by `redux-saga` packages.
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/types |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 25046435 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3315501.0 |
+| # stars            | 22256.0 |
 
 ## Links
 - [Homepage](https://redux-saga.js.org/)
 - [Bugs](https://github.com/redux-saga/redux-saga/issues)
-- [Repository](https://github.com/redux-saga/redux-saga)
+- [Repository](https://github.com/redux-saga/redux-saga/tree/main)
 - [Npm](https://www.npmjs.com/package/%40redux-saga%2Ftypes)
     
 

@@ -16,7 +16,7 @@ object vmMod {
   
   @JSImport("app-builder-lib/out/vm/vm", "VmManager")
   @js.native
-  class VmManager () extends StObject {
+  open class VmManager () extends StObject {
     
     def exec(file: String, args: js.Array[String]): js.Promise[String] = js.native
     def exec(file: String, args: js.Array[String], options: Unit, isLogOutIfDebug: Boolean): js.Promise[String] = js.native
@@ -25,10 +25,10 @@ object vmMod {
     
     def pathSep: String = js.native
     
-    def spawn(file: String, args: js.Array[String]): js.Promise[js.Any] = js.native
-    def spawn(file: String, args: js.Array[String], options: Unit, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = js.native
-    def spawn(file: String, args: js.Array[String], options: SpawnOptions): js.Promise[js.Any] = js.native
-    def spawn(file: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[js.Any] = js.native
+    def spawn(file: String, args: js.Array[String]): js.Promise[Any] = js.native
+    def spawn(file: String, args: js.Array[String], options: Unit, extraOptions: ExtraSpawnOptions): js.Promise[Any] = js.native
+    def spawn(file: String, args: js.Array[String], options: SpawnOptions): js.Promise[Any] = js.native
+    def spawn(file: String, args: js.Array[String], options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[Any] = js.native
     
     def toVmFile(file: String): String = js.native
   }

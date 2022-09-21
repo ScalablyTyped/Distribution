@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/abstract-signer" : "5.0.8"
+      "@ethersproject/abstract-signer" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/abstract-signer" : "5.0.8"
+      "@ethersproject/abstract-signer" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

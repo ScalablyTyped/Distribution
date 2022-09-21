@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRelativeStrengthIndex")
 @js.native
-class ASPxClientRelativeStrengthIndex ()
+open class ASPxClientRelativeStrengthIndex ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRelativeStrengthIndex {
   

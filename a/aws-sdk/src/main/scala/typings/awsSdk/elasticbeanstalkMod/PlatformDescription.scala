@@ -14,12 +14,12 @@ trait PlatformDescription extends StObject {
   /**
     * The date when the platform version was created.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date when the platform version was last updated.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
+  var DateUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the platform version.
@@ -124,13 +124,13 @@ object PlatformDescription {
     
     inline def setCustomAmiListUndefined: Self = StObject.set(x, "CustomAmiList", js.undefined)
     
-    inline def setCustomAmiListVarargs(value: CustomAmi*): Self = StObject.set(x, "CustomAmiList", js.Array(value :_*))
+    inline def setCustomAmiListVarargs(value: CustomAmi*): Self = StObject.set(x, "CustomAmiList", js.Array(value*))
     
-    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: js.Date): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
@@ -142,7 +142,7 @@ object PlatformDescription {
     
     inline def setFrameworksUndefined: Self = StObject.set(x, "Frameworks", js.undefined)
     
-    inline def setFrameworksVarargs(value: PlatformFramework*): Self = StObject.set(x, "Frameworks", js.Array(value :_*))
+    inline def setFrameworksVarargs(value: PlatformFramework*): Self = StObject.set(x, "Frameworks", js.Array(value*))
     
     inline def setMaintainer(value: Maintainer): Self = StObject.set(x, "Maintainer", value.asInstanceOf[js.Any])
     
@@ -196,7 +196,7 @@ object PlatformDescription {
     
     inline def setProgrammingLanguagesUndefined: Self = StObject.set(x, "ProgrammingLanguages", js.undefined)
     
-    inline def setProgrammingLanguagesVarargs(value: PlatformProgrammingLanguage*): Self = StObject.set(x, "ProgrammingLanguages", js.Array(value :_*))
+    inline def setProgrammingLanguagesVarargs(value: PlatformProgrammingLanguage*): Self = StObject.set(x, "ProgrammingLanguages", js.Array(value*))
     
     inline def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
@@ -206,12 +206,12 @@ object PlatformDescription {
     
     inline def setSupportedAddonListUndefined: Self = StObject.set(x, "SupportedAddonList", js.undefined)
     
-    inline def setSupportedAddonListVarargs(value: SupportedAddon*): Self = StObject.set(x, "SupportedAddonList", js.Array(value :_*))
+    inline def setSupportedAddonListVarargs(value: SupportedAddon*): Self = StObject.set(x, "SupportedAddonList", js.Array(value*))
     
     inline def setSupportedTierList(value: SupportedTierList): Self = StObject.set(x, "SupportedTierList", value.asInstanceOf[js.Any])
     
     inline def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
     
-    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
+    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value*))
   }
 }

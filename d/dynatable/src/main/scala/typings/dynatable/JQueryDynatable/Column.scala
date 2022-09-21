@@ -19,7 +19,7 @@ trait Column extends StObject {
     *     return $(cell).html();
     * };
     */
-  def attributeReader(cell: Element, record: js.Any): String
+  def attributeReader(cell: Element, record: Any): String
   
   /**
     * Function that returns the cell data to be written inside the cell
@@ -32,7 +32,7 @@ trait Column extends StObject {
     *     return record[this.id];
     * };
     */
-  def attributeWriter(record: js.Any): js.Any
+  def attributeWriter(record: Any): Any
   
   var hidden: Boolean
   
@@ -63,8 +63,8 @@ trait Column extends StObject {
 object Column {
   
   inline def apply(
-    attributeReader: (Element, js.Any) => String,
-    attributeWriter: js.Any => js.Any,
+    attributeReader: (Element, Any) => String,
+    attributeWriter: Any => Any,
     hidden: Boolean,
     id: String,
     index: Double,
@@ -78,9 +78,9 @@ object Column {
   
   extension [Self <: Column](x: Self) {
     
-    inline def setAttributeReader(value: (Element, js.Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
+    inline def setAttributeReader(value: (Element, Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
     
-    inline def setAttributeWriter(value: js.Any => js.Any): Self = StObject.set(x, "attributeWriter", js.Any.fromFunction1(value))
+    inline def setAttributeWriter(value: Any => Any): Self = StObject.set(x, "attributeWriter", js.Any.fromFunction1(value))
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object Column {
     
     inline def setSorts(value: js.Array[String]): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
-    inline def setSortsVarargs(value: String*): Self = StObject.set(x, "sorts", js.Array(value :_*))
+    inline def setSortsVarargs(value: String*): Self = StObject.set(x, "sorts", js.Array(value*))
     
     inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }

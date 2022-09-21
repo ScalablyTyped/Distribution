@@ -10,10 +10,10 @@ object collectionsMod {
   
   @JSImport("material-ui/svg-icons/image/collections", JSImport.Default)
   @js.native
-  class default () extends ImageCollections
+  open class default () extends ImageCollections
   
   @JSImport("material-ui/svg-icons/image/collections", "ImageCollections")
   @js.native
-  class ImageCollections ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCollections ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

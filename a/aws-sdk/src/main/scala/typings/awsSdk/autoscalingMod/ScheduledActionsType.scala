@@ -33,6 +33,6 @@ object ScheduledActionsType {
     
     inline def setScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "ScheduledUpdateGroupActions", js.undefined)
     
-    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupAction*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupAction*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value*))
   }
 }

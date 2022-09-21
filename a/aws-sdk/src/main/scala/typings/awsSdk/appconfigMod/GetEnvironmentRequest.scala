@@ -12,7 +12,7 @@ trait GetEnvironmentRequest extends StObject {
   var ApplicationId: Id
   
   /**
-    * The ID of the environment you wnat to get.
+    * The ID of the environment that you want to get.
     */
   var EnvironmentId: Id
 }

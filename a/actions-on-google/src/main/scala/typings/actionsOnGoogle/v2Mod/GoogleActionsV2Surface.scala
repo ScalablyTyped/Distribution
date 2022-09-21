@@ -25,6 +25,6 @@ object GoogleActionsV2Surface {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: GoogleActionsV2Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: GoogleActionsV2Capability*): Self = StObject.set(x, "capabilities", js.Array(value*))
   }
 }

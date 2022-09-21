@@ -5,33 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the entity that is mentioned in comments.
   *
+  * @remarks
   * [Api set: ExcelApi 1.11]
   */
 trait CommentMention extends StObject {
   
   /**
+    * The email address of the entity that is mentioned in a comment.
     *
-    * The email address of the entity that is mentioned in comment.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var email: String
   
   /**
+    * The ID of the entity. The ID matches one of the IDs in `CommentRichContent.richContent`.
     *
-    * The id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var id: Double
   
   /**
+    * The name of the entity that is mentioned in a comment.
     *
-    * The name of the entity that is mentioned in comment.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var name: String

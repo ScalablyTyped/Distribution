@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("massive", "Entity")
 @js.native
-class Entity protected () extends StObject {
+open class Entity protected () extends StObject {
   def this(spec: EntitySpecification) = this()
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dargs" : "7.0.0"
+      "dargs" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dargs" : "7.0.0"
+      "dargs" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "VersionsApi")
 @js.native
-class VersionsApi () extends StObject {
+open class VersionsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns the version with the given `version_id`.

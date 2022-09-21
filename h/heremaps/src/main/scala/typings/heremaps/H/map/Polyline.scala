@@ -94,7 +94,7 @@ object Polyline {
     
     var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -121,7 +121,7 @@ object Polyline {
       
       inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

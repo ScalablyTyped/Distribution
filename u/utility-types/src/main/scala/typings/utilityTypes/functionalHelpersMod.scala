@@ -10,5 +10,5 @@ object functionalHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getReturnOfExpression[RT](expression: js.Function1[/* repeated */ js.Any, RT]): RT = ^.asInstanceOf[js.Dynamic].applyDynamic("getReturnOfExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[RT]
+  inline def getReturnOfExpression[RT](expression: js.Function1[/* repeated */ Any, RT]): RT = ^.asInstanceOf[js.Dynamic].applyDynamic("getReturnOfExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[RT]
 }

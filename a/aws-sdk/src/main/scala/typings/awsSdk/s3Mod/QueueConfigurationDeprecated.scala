@@ -9,7 +9,7 @@ trait QueueConfigurationDeprecated extends StObject {
   var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.undefined
   
   /**
-    * A collection of bucket events for which to send notifications
+    * A collection of bucket events for which to send notifications.
     */
   var Events: js.UndefOr[EventList] = js.undefined
   
@@ -37,7 +37,7 @@ object QueueConfigurationDeprecated {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

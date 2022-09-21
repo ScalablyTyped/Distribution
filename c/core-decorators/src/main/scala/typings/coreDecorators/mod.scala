@@ -18,7 +18,7 @@ object mod {
   @js.native
   val autobind: js.Function = js.native
   
-  inline def decorate(func: js.Function, args: js.Any*): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
+  inline def decorate(func: js.Function, args: Any*): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[MethodDecorator]
   
   @JSImport("core-decorators", "deprecate")
   @js.native
@@ -99,7 +99,7 @@ object mod {
     override def apply(
       arg1: /* target */ js.Object,
       arg2: /* propertyKey */ String | js.Symbol,
-      arg3: /* descriptor */ TypedPropertyDescriptor[js.Any]
-    ): TypedPropertyDescriptor[js.Any] | Unit = js.native
+      arg3: /* descriptor */ TypedPropertyDescriptor[Any]
+    ): TypedPropertyDescriptor[Any] | Unit = js.native
   }
 }

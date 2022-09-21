@@ -42,7 +42,7 @@ object anon {
       
       inline def setParameters(value: js.Array[DefaultValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      inline def setParametersVarargs(value: DefaultValue*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: DefaultValue*): Self = StObject.set(x, "parameters", js.Array(value*))
     }
   }
 }

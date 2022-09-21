@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @deprecated Use JasmineAjaxResponse instead
   */
-type JasmineAjaxRequestStubReturnOptions = typings.jasmineAjax.JasmineAjaxResponse
+type JasmineAjaxRequestStubReturnOptions = JasmineAjaxResponse

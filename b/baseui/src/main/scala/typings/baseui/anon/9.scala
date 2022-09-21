@@ -1,33 +1,22 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.BS
-import typings.baseui.baseuiStrings.Bahamas
-import typings.baseui.baseuiStrings.Plussign1242
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `9` extends StObject {
+trait `9`[T] extends StObject {
   
-  var dialCode: Plussign1242
-  
-  var id: BS
-  
-  var label: Bahamas
+  var date: T
 }
 object `9` {
   
-  inline def apply(): `9` = {
-    val __obj = js.Dynamic.literal(dialCode = "+1242", id = "BS", label = "Bahamas")
-    __obj.asInstanceOf[`9`]
+  inline def apply[T](date: T): `9`[T] = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`9`[T]]
   }
   
-  extension [Self <: `9`](x: Self) {
+  extension [Self <: `9`[?], T](x: Self & `9`[T]) {
     
-    inline def setDialCode(value: Plussign1242): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
-    
-    inline def setId(value: BS): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setLabel(value: Bahamas): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setDate(value: T): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

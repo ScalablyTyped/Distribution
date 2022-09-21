@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.anon.COMPLETIONSTATUSKHR
 import typings.std.EXTTextureFilterAnisotropic
 import typings.std.WEBGLCompressedTextureS3tc
+import typings.std.WEBGLCompressedTextureS3tcSrgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +13,19 @@ object engineCapabilitiesMod {
   trait EngineCapabilities extends StObject {
     
     /** Defines if astc texture compression is supported */
-    var astc: js.Any
+    var astc: Any
     
     /** Defines if the blend min max extension is supported */
     var blendMinMax: Boolean
     
     /** Defines if bptc texture compression is supported */
-    var bptc: js.Any
+    var bptc: Any
+    
+    /** In some iOS + WebGL1, gl_InstanceID (and gl_InstanceIDEXT) is undefined even if instancedArrays is true. So don't use gl_InstanceID in those cases */
+    var canUseGLInstanceID: Boolean
+    
+    /** Defines if gl_vertexID is available */
+    var canUseGLVertexID: Boolean
     
     /** Defines if timestamp can be used with timer query */
     var canUseTimestampForTimerQuery: Boolean
@@ -33,10 +40,10 @@ object engineCapabilitiesMod {
     var drawBuffersExtension: Boolean
     
     /** Defines if etc1 texture compression is supported */
-    var etc1: js.Any
+    var etc1: Any
     
     /** Defines if etc2 texture compression is supported */
-    var etc2: js.Any
+    var etc2: Any
     
     /** Defines if depth reading in the fragment shader is supported */
     var fragmentDepthSupported: Boolean
@@ -87,22 +94,40 @@ object engineCapabilitiesMod {
     var maxVertexUniformVectors: Double
     
     /** Defines if multiview is supported (https://www.khronos.org/registry/webgl/extensions/WEBGL_multiview/) */
-    var multiview: js.UndefOr[js.Any] = js.undefined
+    var multiview: js.UndefOr[Any] = js.undefined
     
     /** Defines if oculus multiview is supported (https://developer.oculus.com/documentation/oculus-browser/latest/concepts/browser-multiview/) */
-    var oculusMultiview: js.UndefOr[js.Any] = js.undefined
+    var oculusMultiview: js.UndefOr[Any] = js.undefined
     
     /** Function used to let the system compiles shaders in background */
     var parallelShaderCompile: js.UndefOr[COMPLETIONSTATUSKHR] = js.undefined
     
     /** Defines if pvrtc texture compression is supported */
-    var pvrtc: js.Any
+    var pvrtc: Any
     
     /** Defines if s3tc texture compression is supported */
     var s3tc: js.UndefOr[WEBGLCompressedTextureS3tc] = js.undefined
     
-    /** Defines if standard derivates (dx/dy) are supported */
+    /** Defines if s3tc sRGB texture compression is supported */
+    var s3tc_srgb: js.UndefOr[WEBGLCompressedTextureS3tcSrgb] = js.undefined
+    
+    /** Defines if standard derivatives (dx/dy) are supported */
     var standardDerivatives: Boolean
+    
+    /** Defines if compute shaders are supported by the engine */
+    var supportComputeShaders: Boolean
+    
+    /** Defines if occlusion queries are supported by the engine */
+    var supportOcclusionQuery: Boolean
+    
+    /** Defines if sRGB texture formats are supported */
+    var supportSRGBBuffers: Boolean
+    
+    /** Defines if transform feedbacks are supported */
+    var supportTransformFeedbacks: Boolean
+    
+    /** Defines the maximum layer count for a 2D Texture array. */
+    var texture2DArrayMaxLayerCount: Double
     
     /** Gets the webgl extension for anisotropic filtering (null if not supported) */
     var textureAnisotropicFilterExtension: js.UndefOr[EXTTextureFilterAnisotropic] = js.undefined
@@ -128,6 +153,9 @@ object engineCapabilitiesMod {
     /** Defines if textureLOD shader command is supported */
     var textureLOD: Boolean
     
+    /** Defines if texture max level are supported */
+    var textureMaxLevel: Boolean
+    
     /** Gets disjoint timer query extension (null if not supported) */
     var timerQuery: js.UndefOr[EXTDisjointTimerQuery] = js.undefined
     
@@ -140,15 +168,17 @@ object engineCapabilitiesMod {
   object EngineCapabilities {
     
     inline def apply(
-      astc: js.Any,
+      astc: Any,
       blendMinMax: Boolean,
-      bptc: js.Any,
+      bptc: Any,
+      canUseGLInstanceID: Boolean,
+      canUseGLVertexID: Boolean,
       canUseTimestampForTimerQuery: Boolean,
       colorBufferFloat: Boolean,
       depthTextureExtension: Boolean,
       drawBuffersExtension: Boolean,
-      etc1: js.Any,
-      etc2: js.Any,
+      etc1: Any,
+      etc2: Any,
       fragmentDepthSupported: Boolean,
       highPrecisionShaderSupported: Boolean,
       instancedArrays: Boolean,
@@ -164,8 +194,13 @@ object engineCapabilitiesMod {
       maxVertexAttribs: Double,
       maxVertexTextureImageUnits: Double,
       maxVertexUniformVectors: Double,
-      pvrtc: js.Any,
+      pvrtc: Any,
       standardDerivatives: Boolean,
+      supportComputeShaders: Boolean,
+      supportOcclusionQuery: Boolean,
+      supportSRGBBuffers: Boolean,
+      supportTransformFeedbacks: Boolean,
+      texture2DArrayMaxLayerCount: Double,
       textureFloat: Boolean,
       textureFloatLinearFiltering: Boolean,
       textureFloatRender: Boolean,
@@ -173,20 +208,25 @@ object engineCapabilitiesMod {
       textureHalfFloatLinearFiltering: Boolean,
       textureHalfFloatRender: Boolean,
       textureLOD: Boolean,
+      textureMaxLevel: Boolean,
       uintIndices: Boolean,
       vertexArrayObject: Boolean
     ): EngineCapabilities = {
-      val __obj = js.Dynamic.literal(astc = astc.asInstanceOf[js.Any], blendMinMax = blendMinMax.asInstanceOf[js.Any], bptc = bptc.asInstanceOf[js.Any], canUseTimestampForTimerQuery = canUseTimestampForTimerQuery.asInstanceOf[js.Any], colorBufferFloat = colorBufferFloat.asInstanceOf[js.Any], depthTextureExtension = depthTextureExtension.asInstanceOf[js.Any], drawBuffersExtension = drawBuffersExtension.asInstanceOf[js.Any], etc1 = etc1.asInstanceOf[js.Any], etc2 = etc2.asInstanceOf[js.Any], fragmentDepthSupported = fragmentDepthSupported.asInstanceOf[js.Any], highPrecisionShaderSupported = highPrecisionShaderSupported.asInstanceOf[js.Any], instancedArrays = instancedArrays.asInstanceOf[js.Any], maxAnisotropy = maxAnisotropy.asInstanceOf[js.Any], maxCombinedTexturesImageUnits = maxCombinedTexturesImageUnits.asInstanceOf[js.Any], maxCubemapTextureSize = maxCubemapTextureSize.asInstanceOf[js.Any], maxFragmentUniformVectors = maxFragmentUniformVectors.asInstanceOf[js.Any], maxMSAASamples = maxMSAASamples.asInstanceOf[js.Any], maxRenderTextureSize = maxRenderTextureSize.asInstanceOf[js.Any], maxTextureSize = maxTextureSize.asInstanceOf[js.Any], maxTexturesImageUnits = maxTexturesImageUnits.asInstanceOf[js.Any], maxVaryingVectors = maxVaryingVectors.asInstanceOf[js.Any], maxVertexAttribs = maxVertexAttribs.asInstanceOf[js.Any], maxVertexTextureImageUnits = maxVertexTextureImageUnits.asInstanceOf[js.Any], maxVertexUniformVectors = maxVertexUniformVectors.asInstanceOf[js.Any], pvrtc = pvrtc.asInstanceOf[js.Any], standardDerivatives = standardDerivatives.asInstanceOf[js.Any], textureFloat = textureFloat.asInstanceOf[js.Any], textureFloatLinearFiltering = textureFloatLinearFiltering.asInstanceOf[js.Any], textureFloatRender = textureFloatRender.asInstanceOf[js.Any], textureHalfFloat = textureHalfFloat.asInstanceOf[js.Any], textureHalfFloatLinearFiltering = textureHalfFloatLinearFiltering.asInstanceOf[js.Any], textureHalfFloatRender = textureHalfFloatRender.asInstanceOf[js.Any], textureLOD = textureLOD.asInstanceOf[js.Any], uintIndices = uintIndices.asInstanceOf[js.Any], vertexArrayObject = vertexArrayObject.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(astc = astc.asInstanceOf[js.Any], blendMinMax = blendMinMax.asInstanceOf[js.Any], bptc = bptc.asInstanceOf[js.Any], canUseGLInstanceID = canUseGLInstanceID.asInstanceOf[js.Any], canUseGLVertexID = canUseGLVertexID.asInstanceOf[js.Any], canUseTimestampForTimerQuery = canUseTimestampForTimerQuery.asInstanceOf[js.Any], colorBufferFloat = colorBufferFloat.asInstanceOf[js.Any], depthTextureExtension = depthTextureExtension.asInstanceOf[js.Any], drawBuffersExtension = drawBuffersExtension.asInstanceOf[js.Any], etc1 = etc1.asInstanceOf[js.Any], etc2 = etc2.asInstanceOf[js.Any], fragmentDepthSupported = fragmentDepthSupported.asInstanceOf[js.Any], highPrecisionShaderSupported = highPrecisionShaderSupported.asInstanceOf[js.Any], instancedArrays = instancedArrays.asInstanceOf[js.Any], maxAnisotropy = maxAnisotropy.asInstanceOf[js.Any], maxCombinedTexturesImageUnits = maxCombinedTexturesImageUnits.asInstanceOf[js.Any], maxCubemapTextureSize = maxCubemapTextureSize.asInstanceOf[js.Any], maxFragmentUniformVectors = maxFragmentUniformVectors.asInstanceOf[js.Any], maxMSAASamples = maxMSAASamples.asInstanceOf[js.Any], maxRenderTextureSize = maxRenderTextureSize.asInstanceOf[js.Any], maxTextureSize = maxTextureSize.asInstanceOf[js.Any], maxTexturesImageUnits = maxTexturesImageUnits.asInstanceOf[js.Any], maxVaryingVectors = maxVaryingVectors.asInstanceOf[js.Any], maxVertexAttribs = maxVertexAttribs.asInstanceOf[js.Any], maxVertexTextureImageUnits = maxVertexTextureImageUnits.asInstanceOf[js.Any], maxVertexUniformVectors = maxVertexUniformVectors.asInstanceOf[js.Any], pvrtc = pvrtc.asInstanceOf[js.Any], standardDerivatives = standardDerivatives.asInstanceOf[js.Any], supportComputeShaders = supportComputeShaders.asInstanceOf[js.Any], supportOcclusionQuery = supportOcclusionQuery.asInstanceOf[js.Any], supportSRGBBuffers = supportSRGBBuffers.asInstanceOf[js.Any], supportTransformFeedbacks = supportTransformFeedbacks.asInstanceOf[js.Any], texture2DArrayMaxLayerCount = texture2DArrayMaxLayerCount.asInstanceOf[js.Any], textureFloat = textureFloat.asInstanceOf[js.Any], textureFloatLinearFiltering = textureFloatLinearFiltering.asInstanceOf[js.Any], textureFloatRender = textureFloatRender.asInstanceOf[js.Any], textureHalfFloat = textureHalfFloat.asInstanceOf[js.Any], textureHalfFloatLinearFiltering = textureHalfFloatLinearFiltering.asInstanceOf[js.Any], textureHalfFloatRender = textureHalfFloatRender.asInstanceOf[js.Any], textureLOD = textureLOD.asInstanceOf[js.Any], textureMaxLevel = textureMaxLevel.asInstanceOf[js.Any], uintIndices = uintIndices.asInstanceOf[js.Any], vertexArrayObject = vertexArrayObject.asInstanceOf[js.Any])
       __obj.asInstanceOf[EngineCapabilities]
     }
     
     extension [Self <: EngineCapabilities](x: Self) {
       
-      inline def setAstc(value: js.Any): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
+      inline def setAstc(value: Any): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
       
       inline def setBlendMinMax(value: Boolean): Self = StObject.set(x, "blendMinMax", value.asInstanceOf[js.Any])
       
-      inline def setBptc(value: js.Any): Self = StObject.set(x, "bptc", value.asInstanceOf[js.Any])
+      inline def setBptc(value: Any): Self = StObject.set(x, "bptc", value.asInstanceOf[js.Any])
+      
+      inline def setCanUseGLInstanceID(value: Boolean): Self = StObject.set(x, "canUseGLInstanceID", value.asInstanceOf[js.Any])
+      
+      inline def setCanUseGLVertexID(value: Boolean): Self = StObject.set(x, "canUseGLVertexID", value.asInstanceOf[js.Any])
       
       inline def setCanUseTimestampForTimerQuery(value: Boolean): Self = StObject.set(x, "canUseTimestampForTimerQuery", value.asInstanceOf[js.Any])
       
@@ -196,9 +236,9 @@ object engineCapabilitiesMod {
       
       inline def setDrawBuffersExtension(value: Boolean): Self = StObject.set(x, "drawBuffersExtension", value.asInstanceOf[js.Any])
       
-      inline def setEtc1(value: js.Any): Self = StObject.set(x, "etc1", value.asInstanceOf[js.Any])
+      inline def setEtc1(value: Any): Self = StObject.set(x, "etc1", value.asInstanceOf[js.Any])
       
-      inline def setEtc2(value: js.Any): Self = StObject.set(x, "etc2", value.asInstanceOf[js.Any])
+      inline def setEtc2(value: Any): Self = StObject.set(x, "etc2", value.asInstanceOf[js.Any])
       
       inline def setFragmentDepthSupported(value: Boolean): Self = StObject.set(x, "fragmentDepthSupported", value.asInstanceOf[js.Any])
       
@@ -234,11 +274,11 @@ object engineCapabilitiesMod {
       
       inline def setMaxVertexUniformVectors(value: Double): Self = StObject.set(x, "maxVertexUniformVectors", value.asInstanceOf[js.Any])
       
-      inline def setMultiview(value: js.Any): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
+      inline def setMultiview(value: Any): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
       
       inline def setMultiviewUndefined: Self = StObject.set(x, "multiview", js.undefined)
       
-      inline def setOculusMultiview(value: js.Any): Self = StObject.set(x, "oculusMultiview", value.asInstanceOf[js.Any])
+      inline def setOculusMultiview(value: Any): Self = StObject.set(x, "oculusMultiview", value.asInstanceOf[js.Any])
       
       inline def setOculusMultiviewUndefined: Self = StObject.set(x, "oculusMultiview", js.undefined)
       
@@ -246,13 +286,27 @@ object engineCapabilitiesMod {
       
       inline def setParallelShaderCompileUndefined: Self = StObject.set(x, "parallelShaderCompile", js.undefined)
       
-      inline def setPvrtc(value: js.Any): Self = StObject.set(x, "pvrtc", value.asInstanceOf[js.Any])
+      inline def setPvrtc(value: Any): Self = StObject.set(x, "pvrtc", value.asInstanceOf[js.Any])
       
       inline def setS3tc(value: WEBGLCompressedTextureS3tc): Self = StObject.set(x, "s3tc", value.asInstanceOf[js.Any])
       
       inline def setS3tcUndefined: Self = StObject.set(x, "s3tc", js.undefined)
       
+      inline def setS3tc_srgb(value: WEBGLCompressedTextureS3tcSrgb): Self = StObject.set(x, "s3tc_srgb", value.asInstanceOf[js.Any])
+      
+      inline def setS3tc_srgbUndefined: Self = StObject.set(x, "s3tc_srgb", js.undefined)
+      
       inline def setStandardDerivatives(value: Boolean): Self = StObject.set(x, "standardDerivatives", value.asInstanceOf[js.Any])
+      
+      inline def setSupportComputeShaders(value: Boolean): Self = StObject.set(x, "supportComputeShaders", value.asInstanceOf[js.Any])
+      
+      inline def setSupportOcclusionQuery(value: Boolean): Self = StObject.set(x, "supportOcclusionQuery", value.asInstanceOf[js.Any])
+      
+      inline def setSupportSRGBBuffers(value: Boolean): Self = StObject.set(x, "supportSRGBBuffers", value.asInstanceOf[js.Any])
+      
+      inline def setSupportTransformFeedbacks(value: Boolean): Self = StObject.set(x, "supportTransformFeedbacks", value.asInstanceOf[js.Any])
+      
+      inline def setTexture2DArrayMaxLayerCount(value: Double): Self = StObject.set(x, "texture2DArrayMaxLayerCount", value.asInstanceOf[js.Any])
       
       inline def setTextureAnisotropicFilterExtension(value: EXTTextureFilterAnisotropic): Self = StObject.set(x, "textureAnisotropicFilterExtension", value.asInstanceOf[js.Any])
       
@@ -271,6 +325,8 @@ object engineCapabilitiesMod {
       inline def setTextureHalfFloatRender(value: Boolean): Self = StObject.set(x, "textureHalfFloatRender", value.asInstanceOf[js.Any])
       
       inline def setTextureLOD(value: Boolean): Self = StObject.set(x, "textureLOD", value.asInstanceOf[js.Any])
+      
+      inline def setTextureMaxLevel(value: Boolean): Self = StObject.set(x, "textureMaxLevel", value.asInstanceOf[js.Any])
       
       inline def setTimerQuery(value: EXTDisjointTimerQuery): Self = StObject.set(x, "timerQuery", value.asInstanceOf[js.Any])
       

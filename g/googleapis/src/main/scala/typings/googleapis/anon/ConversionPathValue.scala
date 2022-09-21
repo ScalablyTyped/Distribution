@@ -23,7 +23,7 @@ object ConversionPathValue {
     
     inline def setConversionPathValueUndefined: Self = StObject.set(x, "conversionPathValue", js.undefined)
     
-    inline def setConversionPathValueVarargs(value: InteractionType*): Self = StObject.set(x, "conversionPathValue", js.Array(value :_*))
+    inline def setConversionPathValueVarargs(value: InteractionType*): Self = StObject.set(x, "conversionPathValue", js.Array(value*))
     
     inline def setPrimitiveValue(value: String): Self = StObject.set(x, "primitiveValue", value.asInstanceOf[js.Any])
     

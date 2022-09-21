@@ -11,7 +11,7 @@ object Time {
     /**
       * Additional arguments to be passed to the `callback`.
       */
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The callback which will be called when the Timer Event fires.
@@ -21,7 +21,7 @@ object Time {
     /**
       * The scope (`this` object) with which to invoke the `callback`.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.undefined
+    var callbackScope: js.UndefOr[Any] = js.undefined
     
     /**
       * The delay after which the Timer Event should fire, in milliseconds.
@@ -62,15 +62,15 @@ object Time {
     
     extension [Self <: TimerEventConfig](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
       inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       

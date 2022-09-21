@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@assemblyscript/loader" : "0.9.4"
+      "@assemblyscript/loader" : "0.21.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@assemblyscript/loader" : "0.9.4"
+      "@assemblyscript/loader" : "0.21.3"
     }
   ],
   "compile-devDependencies" : [

@@ -41,16 +41,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Animation")
     @js.native
-    class Animation protected ()
+    open class Animation protected ()
       extends StObject
          with IAnimation {
-      def this(args: js.Any*) = this()
+      def this(args: Any*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Circle")
     @js.native
-    class Circle protected ()
+    open class Circle protected ()
       extends StObject
          with ICircle {
       def this(config: CircleConfig) = this()
@@ -59,31 +59,31 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Collection")
     @js.native
-    class Collection ()
+    open class Collection ()
       extends StObject
          with ICollection {
       
       /* CompleteClass */
       @JSName("apply")
-      override def apply(method: js.Function, `val`: js.Any): js.Any = js.native
+      override def apply(method: js.Function, `val`: Any): Any = js.native
       
       /* CompleteClass */
-      override def each(func: js.Function0[js.Any]): js.Any = js.native
+      override def each(func: js.Function0[Any]): Any = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Container")
     @js.native
-    class Container protected ()
+    open class Container protected ()
       extends StObject
          with IContainer {
-      def this(config: js.Any) = this()
+      def this(config: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Ellipse")
     @js.native
-    class Ellipse protected ()
+    open class Ellipse protected ()
       extends StObject
          with IEllipse {
       def this(config: CircleConfig) = this()
@@ -92,7 +92,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Group")
     @js.native
-    class Group ()
+    open class Group ()
       extends StObject
          with IContainer {
       def this(config: ObjectOptionsConfig) = this()
@@ -101,7 +101,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Image")
     @js.native
-    class Image ()
+    open class Image ()
       extends StObject
          with IImage {
       def this(config: ImageConfig) = this()
@@ -110,7 +110,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Layer")
     @js.native
-    class Layer ()
+    open class Layer ()
       extends StObject
          with ILayer {
       def this(config: LayerConfig) = this()
@@ -119,7 +119,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Line")
     @js.native
-    class Line protected ()
+    open class Line protected ()
       extends StObject
          with ILine {
       def this(config: LineConfig) = this()
@@ -128,7 +128,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Node")
     @js.native
-    class Node protected ()
+    open class Node protected ()
       extends StObject
          with INode {
       def this(config: ObjectOptionsConfig) = this()
@@ -137,7 +137,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Path")
     @js.native
-    class Path protected ()
+    open class Path protected ()
       extends StObject
          with IPath {
       def this(config: PathConfig) = this()
@@ -148,13 +148,13 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def parsePathData(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def parsePathData(data: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Rect")
     @js.native
-    class Rect protected ()
+    open class Rect protected ()
       extends StObject
          with IRect {
       def this(config: RectConfig) = this()
@@ -163,7 +163,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.RegularPolygon")
     @js.native
-    class RegularPolygon protected ()
+    open class RegularPolygon protected ()
       extends StObject
          with IRegularPolygon {
       def this(config: RegularPolygonConfig) = this()
@@ -172,16 +172,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Shape")
     @js.native
-    class Shape protected ()
+    open class Shape protected ()
       extends StObject
          with IShape {
-      def this(config: js.Any) = this()
+      def this(config: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Sprite")
     @js.native
-    class Sprite protected ()
+    open class Sprite protected ()
       extends StObject
          with ISprite {
       def this(config: SpriteConfig) = this()
@@ -190,7 +190,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Stage")
     @js.native
-    class Stage protected ()
+    open class Stage protected ()
       extends StObject
          with IStage {
       def this(config: StageConfig) = this()
@@ -199,7 +199,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Star")
     @js.native
-    class Star protected ()
+    open class Star protected ()
       extends StObject
          with IStar {
       def this(config: StarConfig) = this()
@@ -208,7 +208,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.Text")
     @js.native
-    class Text protected ()
+    open class Text protected ()
       extends StObject
          with IText {
       def this(config: TextConfig) = this()
@@ -217,10 +217,10 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Kinetic.TextPath")
     @js.native
-    class TextPath protected ()
+    open class TextPath protected ()
       extends StObject
          with ITextPath {
-      def this(config: js.Any) = this()
+      def this(config: Any) = this()
     }
   }
 }

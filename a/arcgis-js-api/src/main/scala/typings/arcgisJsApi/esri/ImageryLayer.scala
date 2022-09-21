@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.imagery
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +27,28 @@ trait ImageryLayer
   def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   
   /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#customParameters)
+    */
+  var customParameters: Any = js.native
+  
+  /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
   
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: ImageryLayerRefreshEventHandler): IHandle = js.native
+  
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupEnabled)
     */
@@ -50,7 +66,7 @@ trait ImageryLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#redraw)
     */
-  def redraw(): Unit = js.native
+  def redraw(): scala.Unit = js.native
   
   @JSName("type")
   val type_ImageryLayer: imagery = js.native

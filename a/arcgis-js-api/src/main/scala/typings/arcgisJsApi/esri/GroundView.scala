@@ -26,6 +26,8 @@ trait GroundView
   /**
     * Value is `true` when any of the ground layer views are updating.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-GroundView.html#updating)
     */
   val updating: Boolean = js.native

@@ -26,7 +26,7 @@ object Data {
     
     @JSGlobal("Windows.Data.Html.HtmlUtilities")
     @js.native
-    class HtmlUtilities ()
+    open class HtmlUtilities ()
       extends StObject
          with typings.winrt.Windows.Data.Html.HtmlUtilities
     /* static members */
@@ -44,7 +44,7 @@ object Data {
     
     @JSGlobal("Windows.Data.Json.JsonArray")
     @js.native
-    class JsonArray ()
+    open class JsonArray ()
       extends StObject
          with typings.winrt.Windows.Data.Json.JsonArray {
       
@@ -101,7 +101,7 @@ object Data {
     
     @JSGlobal("Windows.Data.Json.JsonError")
     @js.native
-    class JsonError ()
+    open class JsonError ()
       extends StObject
          with typings.winrt.Windows.Data.Json.JsonError
     /* static members */
@@ -134,7 +134,7 @@ object Data {
     
     @JSGlobal("Windows.Data.Json.JsonObject")
     @js.native
-    class JsonObject ()
+    open class JsonObject ()
       extends StObject
          with typings.winrt.Windows.Data.Json.JsonObject {
       
@@ -218,7 +218,7 @@ object Data {
     
     @JSGlobal("Windows.Data.Json.JsonValue")
     @js.native
-    class JsonValue ()
+    open class JsonValue ()
       extends StObject
          with typings.winrt.Windows.Data.Json.JsonValue {
       
@@ -288,7 +288,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.DtdEntity")
       @js.native
-      class DtdEntity ()
+      open class DtdEntity ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.DtdEntity {
         
@@ -323,10 +323,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -338,13 +338,13 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
         
         /* CompleteClass */
-        var notationName: js.Any = js.native
+        var notationName: Any = js.native
         
         /* CompleteClass */
         var ownerDocument: typings.winrt.Windows.Data.Xml.Dom.XmlDocument = js.native
@@ -353,13 +353,13 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
         
         /* CompleteClass */
-        var publicId: js.Any = js.native
+        var publicId: Any = js.native
         
         /* CompleteClass */
         override def removeChild(childNode: IXmlNode): IXmlNode = js.native
@@ -371,21 +371,21 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
-        var systemId: js.Any = js.native
+        var systemId: Any = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.DtdNotation")
       @js.native
-      class DtdNotation ()
+      open class DtdNotation ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.DtdNotation {
         
@@ -420,10 +420,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -435,7 +435,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -447,13 +447,13 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
         
         /* CompleteClass */
-        var publicId: js.Any = js.native
+        var publicId: Any = js.native
         
         /* CompleteClass */
         override def removeChild(childNode: IXmlNode): IXmlNode = js.native
@@ -465,16 +465,16 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
-        var systemId: js.Any = js.native
+        var systemId: Any = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.NodeType")
@@ -513,7 +513,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlAttribute")
       @js.native
-      class XmlAttribute ()
+      open class XmlAttribute ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlAttribute {
         
@@ -548,13 +548,13 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
         var name: String = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -566,7 +566,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -578,7 +578,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -593,13 +593,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         var specified: Boolean = js.native
@@ -610,7 +610,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlCDataSection")
       @js.native
-      class XmlCDataSection ()
+      open class XmlCDataSection ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlCDataSection {
         
@@ -660,10 +660,10 @@ object Data {
         var length: Double = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -675,7 +675,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -687,7 +687,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -705,13 +705,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         override def splitText(offset: Double): IXmlText = js.native
@@ -722,7 +722,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlComment")
       @js.native
-      class XmlComment ()
+      open class XmlComment ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlComment {
         
@@ -772,10 +772,10 @@ object Data {
         var length: Double = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -787,7 +787,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -799,7 +799,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -817,13 +817,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         override def substringData(offset: Double, count: Double): String = js.native
@@ -831,7 +831,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
       @js.native
-      class XmlDocument ()
+      open class XmlDocument ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlDocument {
         
@@ -851,7 +851,7 @@ object Data {
         override def createAttribute(name: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
         
         /* CompleteClass */
-        override def createAttributeNS(namespaceUri: js.Any, qualifiedName: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
+        override def createAttributeNS(namespaceUri: Any, qualifiedName: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
         
         /* CompleteClass */
         override def createCDataSection(data: String): typings.winrt.Windows.Data.Xml.Dom.XmlCDataSection = js.native
@@ -866,7 +866,7 @@ object Data {
         override def createElement(tagName: String): typings.winrt.Windows.Data.Xml.Dom.XmlElement = js.native
         
         /* CompleteClass */
-        override def createElementNS(namespaceUri: js.Any, qualifiedName: String): typings.winrt.Windows.Data.Xml.Dom.XmlElement = js.native
+        override def createElementNS(namespaceUri: Any, qualifiedName: String): typings.winrt.Windows.Data.Xml.Dom.XmlElement = js.native
         
         /* CompleteClass */
         override def createEntityReference(name: String): typings.winrt.Windows.Data.Xml.Dom.XmlEntityReference = js.native
@@ -917,10 +917,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -932,7 +932,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -944,7 +944,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -959,13 +959,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       }
       /* static members */
       object XmlDocument {
@@ -983,7 +983,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentFragment")
       @js.native
-      class XmlDocumentFragment ()
+      open class XmlDocumentFragment ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlDocumentFragment {
         
@@ -1018,10 +1018,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1033,7 +1033,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1045,7 +1045,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1060,18 +1060,18 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentType")
       @js.native
-      class XmlDocumentType ()
+      open class XmlDocumentType ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlDocumentType {
         
@@ -1109,13 +1109,13 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
         var name: String = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1127,7 +1127,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1142,7 +1142,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1157,28 +1157,28 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlDomImplementation")
       @js.native
-      class XmlDomImplementation ()
+      open class XmlDomImplementation ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlDomImplementation {
         
         /* CompleteClass */
-        override def hasFeature(feature: String, version: js.Any): Boolean = js.native
+        override def hasFeature(feature: String, version: Any): Boolean = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlElement")
       @js.native
-      class XmlElement ()
+      open class XmlElement ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlElement {
         
@@ -1201,13 +1201,13 @@ object Data {
         override def getAttribute(attributeName: String): String = js.native
         
         /* CompleteClass */
-        override def getAttributeNS(namespaceUri: js.Any, localName: String): String = js.native
+        override def getAttributeNS(namespaceUri: Any, localName: String): String = js.native
         
         /* CompleteClass */
         override def getAttributeNode(attributeName: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
         
         /* CompleteClass */
-        override def getAttributeNodeNS(namespaceUri: js.Any, localName: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
+        override def getAttributeNodeNS(namespaceUri: Any, localName: String): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
         
         /* CompleteClass */
         override def getElementsByTagName(tagName: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
@@ -1228,10 +1228,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1243,7 +1243,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1255,7 +1255,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1264,7 +1264,7 @@ object Data {
         override def removeAttribute(attributeName: String): Unit = js.native
         
         /* CompleteClass */
-        override def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit = js.native
+        override def removeAttributeNS(namespaceUri: Any, localName: String): Unit = js.native
         
         /* CompleteClass */
         override def removeAttributeNode(attributeNode: typings.winrt.Windows.Data.Xml.Dom.XmlAttribute): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
@@ -1279,19 +1279,19 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         override def setAttribute(attributeName: String, attributeValue: String): Unit = js.native
         
         /* CompleteClass */
-        override def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit = js.native
+        override def setAttributeNS(namespaceUri: Any, qualifiedName: String, value: String): Unit = js.native
         
         /* CompleteClass */
         override def setAttributeNode(newAttribute: typings.winrt.Windows.Data.Xml.Dom.XmlAttribute): typings.winrt.Windows.Data.Xml.Dom.XmlAttribute = js.native
@@ -1305,7 +1305,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlEntityReference")
       @js.native
-      class XmlEntityReference ()
+      open class XmlEntityReference ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlEntityReference {
         
@@ -1340,10 +1340,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1355,7 +1355,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1367,7 +1367,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1382,18 +1382,18 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlLoadSettings")
       @js.native
-      class XmlLoadSettings ()
+      open class XmlLoadSettings ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlLoadSettings {
         
@@ -1415,7 +1415,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlNamedNodeMap")
       @js.native
-      class XmlNamedNodeMap ()
+      open class XmlNamedNodeMap ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlNamedNodeMap {
         
@@ -1425,7 +1425,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlNodeList")
       @js.native
-      class XmlNodeList ()
+      open class XmlNodeList ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlNodeList {
         
@@ -1435,7 +1435,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlProcessingInstruction")
       @js.native
-      class XmlProcessingInstruction ()
+      open class XmlProcessingInstruction ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlProcessingInstruction {
         
@@ -1473,10 +1473,10 @@ object Data {
         var lastChild: IXmlNode = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1488,7 +1488,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1500,7 +1500,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1515,13 +1515,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         var target: String = js.native
@@ -1529,7 +1529,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlText")
       @js.native
-      class XmlText ()
+      open class XmlText ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Dom.XmlText {
         
@@ -1579,10 +1579,10 @@ object Data {
         var length: Double = js.native
         
         /* CompleteClass */
-        var localName: js.Any = js.native
+        var localName: Any = js.native
         
         /* CompleteClass */
-        var namespaceUri: js.Any = js.native
+        var namespaceUri: Any = js.native
         
         /* CompleteClass */
         var nextSibling: IXmlNode = js.native
@@ -1594,7 +1594,7 @@ object Data {
         var nodeType: NodeType = js.native
         
         /* CompleteClass */
-        var nodeValue: js.Any = js.native
+        var nodeValue: Any = js.native
         
         /* CompleteClass */
         override def normalize(): Unit = js.native
@@ -1606,7 +1606,7 @@ object Data {
         var parentNode: IXmlNode = js.native
         
         /* CompleteClass */
-        var prefix: js.Any = js.native
+        var prefix: Any = js.native
         
         /* CompleteClass */
         var previousSibling: IXmlNode = js.native
@@ -1624,13 +1624,13 @@ object Data {
         override def selectNodes(xpath: String): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
-        override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
+        override def selectNodesNS(xpath: String, namespaces: Any): typings.winrt.Windows.Data.Xml.Dom.XmlNodeList = js.native
         
         /* CompleteClass */
         override def selectSingleNode(xpath: String): IXmlNode = js.native
         
         /* CompleteClass */
-        override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+        override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
         
         /* CompleteClass */
         override def splitText(offset: Double): IXmlText = js.native
@@ -1644,7 +1644,7 @@ object Data {
       
       @JSGlobal("Windows.Data.Xml.Xsl.XsltProcessor")
       @js.native
-      class XsltProcessor protected ()
+      open class XsltProcessor protected ()
         extends StObject
            with typings.winrt.Windows.Data.Xml.Xsl.XsltProcessor {
         def this(document: XmlDocument) = this()

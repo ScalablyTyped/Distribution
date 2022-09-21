@@ -10,10 +10,10 @@ Express middleware to protect against HTTP Parameter Pollution attacks
 | ------------------ | :-------------: |
 | Full name          | hpp |
 | Keywords           | hpp, http, parameter, pollution, attack, security |
-| # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 1773885 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 187517.0 |
+| # stars            | 365.0 |
 
 ## Links
 - [Homepage](https://github.com/analog-nico/hpp)

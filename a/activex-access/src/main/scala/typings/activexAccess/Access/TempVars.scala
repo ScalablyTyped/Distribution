@@ -23,7 +23,7 @@ trait TempVars extends StObject {
   def Item(Index: String): TempVar = js.native
   def Item(Index: Double): TempVar = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Remove(Index: String): Unit = js.native
   def Remove(Index: Double): Unit = js.native

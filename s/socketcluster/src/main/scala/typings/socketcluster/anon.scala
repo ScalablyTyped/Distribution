@@ -8,7 +8,7 @@ object anon {
   
   trait ClientCount extends StObject {
     
-    var clientCount: js.Any
+    var clientCount: Any
     
     var httpRPM: Double
     
@@ -16,14 +16,14 @@ object anon {
   }
   object ClientCount {
     
-    inline def apply(clientCount: js.Any, httpRPM: Double, wsRPM: Double): ClientCount = {
+    inline def apply(clientCount: Any, httpRPM: Double, wsRPM: Double): ClientCount = {
       val __obj = js.Dynamic.literal(clientCount = clientCount.asInstanceOf[js.Any], httpRPM = httpRPM.asInstanceOf[js.Any], wsRPM = wsRPM.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCount]
     }
     
     extension [Self <: ClientCount](x: Self) {
       
-      inline def setClientCount(value: js.Any): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
+      inline def setClientCount(value: Any): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
       
       inline def setHttpRPM(value: Double): Self = StObject.set(x, "httpRPM", value.asInstanceOf[js.Any])
       

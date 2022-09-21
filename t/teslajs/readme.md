@@ -1,7 +1,7 @@
 
 # Scala.js typings for teslajs
 
-Typings are for version 4.7
+Typings are for version 4.9
 
 ## Library description:
 Full-featured Tesla REST API NodeJS package
@@ -10,13 +10,13 @@ Full-featured Tesla REST API NodeJS package
 | ------------------ | :-------------: |
 | Full name          | teslajs |
 | Keywords           | Tesla, Model S, Model X, Model 3, REST |
-| # releases         | 45 |
-| # dependents       | 10 |
-| # downloads        | 15821 |
-| # stars            | 2 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1093.6666666666667 |
+| # stars            | 345.0 |
 
 ## Links
-- [Homepage](https://github.com/mseminatore/TeslaJS#readme)
+- [Homepage](https://www.teslajs.org)
 - [Bugs](https://github.com/mseminatore/TeslaJS/issues)
 - [Repository](https://github.com/mseminatore/TeslaJS)
 - [Npm](https://www.npmjs.com/package/teslajs)

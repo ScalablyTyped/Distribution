@@ -39,7 +39,7 @@ object GetBackgroundColorsResponse {
     
     inline def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
     
-    inline def setBackgroundColorsVarargs(value: String*): Self = StObject.set(x, "backgroundColors", js.Array(value :_*))
+    inline def setBackgroundColorsVarargs(value: String*): Self = StObject.set(x, "backgroundColors", js.Array(value*))
     
     inline def setComputedFontSize(value: String): Self = StObject.set(x, "computedFontSize", value.asInstanceOf[js.Any])
     

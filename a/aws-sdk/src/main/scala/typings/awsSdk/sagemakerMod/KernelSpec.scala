@@ -12,7 +12,7 @@ trait KernelSpec extends StObject {
   var DisplayName: js.UndefOr[KernelDisplayName] = js.undefined
   
   /**
-    * The name of the kernel.
+    * The name of the Jupyter kernel in the image. This value is case sensitive.
     */
   var Name: KernelName
 }

@@ -17,7 +17,7 @@ object mod extends Shortcut {
     
     var browserDetails: IBrowserDetails
     
-    var browserShim: js.UndefOr[IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim] = js.undefined
+    var browserShim: js.UndefOr[IChromeShim | IFirefoxShim | ISafariShim] = js.undefined
     
     var commonShim: ICommonShim
     
@@ -44,7 +44,7 @@ object mod extends Shortcut {
       
       inline def setBrowserDetails(value: IBrowserDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
       
-      inline def setBrowserShim(value: IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim): Self = StObject.set(x, "browserShim", value.asInstanceOf[js.Any])
+      inline def setBrowserShim(value: IChromeShim | IFirefoxShim | ISafariShim): Self = StObject.set(x, "browserShim", value.asInstanceOf[js.Any])
       
       inline def setBrowserShimUndefined: Self = StObject.set(x, "browserShim", js.undefined)
       
@@ -182,27 +182,6 @@ object mod extends Shortcut {
       inline def setShimRTCIceCandidate(value: Window => Unit): Self = StObject.set(x, "shimRTCIceCandidate", js.Any.fromFunction1(value))
       
       inline def setShimSendThrowTypeError(value: Window => Unit): Self = StObject.set(x, "shimSendThrowTypeError", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait IEdgeShim extends StObject {
-    
-    def shimPeerConnection(window: Window): Unit
-    
-    def shimReplaceTrack(window: Window): Unit
-  }
-  object IEdgeShim {
-    
-    inline def apply(shimPeerConnection: Window => Unit, shimReplaceTrack: Window => Unit): IEdgeShim = {
-      val __obj = js.Dynamic.literal(shimPeerConnection = js.Any.fromFunction1(shimPeerConnection), shimReplaceTrack = js.Any.fromFunction1(shimReplaceTrack))
-      __obj.asInstanceOf[IEdgeShim]
-    }
-    
-    extension [Self <: IEdgeShim](x: Self) {
-      
-      inline def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
-      
-      inline def setShimReplaceTrack(value: Window => Unit): Self = StObject.set(x, "shimReplaceTrack", js.Any.fromFunction1(value))
     }
   }
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xterm-addon-fit" : "0.3.0"
+      "xterm-addon-fit" : "0.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "xterm-addon-fit" : "0.3.0"
+      "xterm-addon-fit" : "0.6.0"
     }
   ],
   "compile-devDependencies" : [

@@ -45,18 +45,18 @@ object TextBoxSnapshot {
     
     inline def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    inline def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setLayoutIndex(value: js.Array[integer]): Self = StObject.set(x, "layoutIndex", value.asInstanceOf[js.Any])
     
-    inline def setLayoutIndexVarargs(value: integer*): Self = StObject.set(x, "layoutIndex", js.Array(value :_*))
+    inline def setLayoutIndexVarargs(value: integer*): Self = StObject.set(x, "layoutIndex", js.Array(value*))
     
     inline def setLength(value: js.Array[integer]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    inline def setLengthVarargs(value: integer*): Self = StObject.set(x, "length", js.Array(value :_*))
+    inline def setLengthVarargs(value: integer*): Self = StObject.set(x, "length", js.Array(value*))
     
     inline def setStart(value: js.Array[integer]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setStartVarargs(value: integer*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: integer*): Self = StObject.set(x, "start", js.Array(value*))
   }
 }

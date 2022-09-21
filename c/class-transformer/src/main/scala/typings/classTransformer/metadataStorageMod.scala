@@ -3,30 +3,30 @@ package typings.classTransformer
 import typings.classTransformer.classTransformerStrings.excludeAll
 import typings.classTransformer.classTransformerStrings.exposeAll
 import typings.classTransformer.classTransformerStrings.none
-import typings.classTransformer.excludeMetadataMod.ExcludeMetadata
-import typings.classTransformer.exposeMetadataMod.ExposeMetadata
-import typings.classTransformer.transformMetadataMod.TransformMetadata
+import typings.classTransformer.excludeMetadataInterfaceMod.ExcludeMetadata
+import typings.classTransformer.exposeMetadataInterfaceMod.ExposeMetadata
+import typings.classTransformer.transformMetadataInterfaceMod.TransformMetadata
 import typings.classTransformer.transformationTypeEnumMod.TransformationType
-import typings.classTransformer.typeMetadataMod.TypeMetadata
+import typings.classTransformer.typeMetadataInterfaceMod.TypeMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataStorageMod {
   
-  @JSImport("class-transformer/metadata/MetadataStorage", "MetadataStorage")
+  @JSImport("class-transformer/types/MetadataStorage", "MetadataStorage")
   @js.native
-  class MetadataStorage () extends StObject {
+  open class MetadataStorage () extends StObject {
     
-    /* private */ var _ancestorsMap: js.Any = js.native
+    /* private */ var _ancestorsMap: Any = js.native
     
-    /* private */ var _excludeMetadatas: js.Any = js.native
+    /* private */ var _excludeMetadatas: Any = js.native
     
-    /* private */ var _exposeMetadatas: js.Any = js.native
+    /* private */ var _exposeMetadatas: Any = js.native
     
-    /* private */ var _transformMetadatas: js.Any = js.native
+    /* private */ var _transformMetadatas: Any = js.native
     
-    /* private */ var _typeMetadatas: js.Any = js.native
+    /* private */ var _typeMetadatas: Any = js.native
     
     def addExcludeMetadata(metadata: ExcludeMetadata): Unit = js.native
     
@@ -44,15 +44,15 @@ object metadataStorageMod {
     
     def findExposeMetadataByCustomName(target: js.Function, name: String): ExposeMetadata = js.native
     
-    /* private */ var findMetadata: js.Any = js.native
+    /* private */ var findMetadata: Any = js.native
     
-    /* private */ var findMetadatas: js.Any = js.native
+    /* private */ var findMetadatas: Any = js.native
     
     def findTransformMetadatas(target: js.Function, propertyName: String, transformationType: TransformationType): js.Array[TransformMetadata] = js.native
     
     def findTypeMetadata(target: js.Function, propertyName: String): TypeMetadata = js.native
     
-    /* private */ var getAncestors: js.Any = js.native
+    /* private */ var getAncestors: Any = js.native
     
     def getExcludedMetadatas(target: js.Function): js.Array[ExcludeMetadata] = js.native
     
@@ -62,7 +62,7 @@ object metadataStorageMod {
     
     def getExposedProperties(target: js.Function, transformationType: TransformationType): js.Array[String] = js.native
     
-    /* private */ var getMetadata: js.Any = js.native
+    /* private */ var getMetadata: Any = js.native
     
     def getStrategy(target: js.Function): excludeAll | exposeAll | none = js.native
   }

@@ -7,22 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ArrowheadLength extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ArrowheadLength")
 @js.native
 object ArrowheadLength extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait long
     extends StObject
        with ArrowheadLength
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait medium
     extends StObject
        with ArrowheadLength
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait short
     extends StObject

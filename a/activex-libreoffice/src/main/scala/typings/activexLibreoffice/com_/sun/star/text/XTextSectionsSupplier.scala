@@ -24,7 +24,7 @@ object XTextSectionsSupplier {
     TextSections: XNameAccess,
     acquire: () => Unit,
     getTextSections: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextSectionsSupplier = {
     val __obj = js.Dynamic.literal(TextSections = TextSections.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTextSections = js.Any.fromFunction0(getTextSections), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

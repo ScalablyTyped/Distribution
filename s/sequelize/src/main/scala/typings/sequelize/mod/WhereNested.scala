@@ -26,10 +26,10 @@ object WhereNested {
     
     inline def set$and(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
-    inline def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$and", js.Array(value :_*))
+    inline def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$and", js.Array(value*))
     
     inline def set$or(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
     
-    inline def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$or", js.Array(value :_*))
+    inline def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$or", js.Array(value*))
   }
 }

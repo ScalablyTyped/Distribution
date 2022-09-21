@@ -16,7 +16,7 @@ object listAliasesCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/ListAliasesCommand", "ListAliasesCommand")
   @js.native
-  class ListAliasesCommand protected ()
+  open class ListAliasesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listAliasesCommandMod {
     override val middlewareStack: MiddlewareStack[ListAliasesInput, ListAliasesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ListAliasesInput, ListAliasesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListAliasesInput, ListAliasesOutput] = js.native
   }
 }

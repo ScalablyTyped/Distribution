@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-waterfall
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Run promise-returning & async functions in series, each passing its result to the next
@@ -10,10 +10,10 @@ Run promise-returning & async functions in series, each passing its result to th
 | ------------------ | :-------------: |
 | Full name          | p-waterfall |
 | Keywords           | promise, waterfall, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 44 |
-| # downloads        | 40915614 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5232817.666666667 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-waterfall#readme)

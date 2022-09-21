@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait HasPropsIntersection
-  extends IntersectionType[js.Array[HasProps], js.Any, js.Any, js.Any]
+  extends IntersectionType[js.Array[HasProps], Any, Any, Any]
      with _HasProps

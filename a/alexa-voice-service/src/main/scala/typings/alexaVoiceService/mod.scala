@@ -1,7 +1,6 @@
 package typings.alexaVoiceService
 
 import typings.alexaVoiceService.anon.Response
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("alexa-voice-service", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AVS {
     def this(params: AVSParams) = this()
@@ -82,7 +81,7 @@ object mod {
   
   @JSImport("alexa-voice-service", "Player")
   @js.native
-  class Player () extends StObject {
+  open class Player () extends StObject {
     
     def on(eventType: typings.alexaVoiceService.mod.Player.EventTypes): Unit = js.native
     def on(eventType: typings.alexaVoiceService.mod.Player.EventTypes, callback: js.Function0[Unit]): Unit = js.native
@@ -158,13 +157,13 @@ object mod {
     
     def refreshToken(): js.Promise[TokenResponse] = js.native
     
-    def requestMic(): js.Promise[js.Any] = js.native
+    def requestMic(): js.Promise[Any] = js.native
     
-    def sendAudio(dataView: DataView): js.Promise[Response] = js.native
+    def sendAudio(dataView: js.typedarray.DataView): js.Promise[Response] = js.native
     
     def startRecording(): js.Promise[Unit] = js.native
     
-    def stopRecording(): js.Promise[js.UndefOr[DataView]] = js.native
+    def stopRecording(): js.Promise[js.UndefOr[js.typedarray.DataView]] = js.native
   }
   
   trait AVSParams extends StObject {

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event generated whenever a product&#39;s availability changes.
-  */
 trait SchemaProductAvailabilityChangeEvent extends StObject {
   
   /**
     * The new state of the product. This field will always be present.
     */
-  var availabilityStatus: js.UndefOr[String] = js.undefined
+  var availabilityStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) for
-    * which the product availability changed. This field will always be
-    * present.
+    * The id of the product (e.g. "app:com.google.android.gm") for which the product availability changed. This field will always be present.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductAvailabilityChangeEvent {
   
@@ -32,9 +27,13 @@ object SchemaProductAvailabilityChangeEvent {
     
     inline def setAvailabilityStatus(value: String): Self = StObject.set(x, "availabilityStatus", value.asInstanceOf[js.Any])
     
+    inline def setAvailabilityStatusNull: Self = StObject.set(x, "availabilityStatus", null)
+    
     inline def setAvailabilityStatusUndefined: Self = StObject.set(x, "availabilityStatus", js.undefined)
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }

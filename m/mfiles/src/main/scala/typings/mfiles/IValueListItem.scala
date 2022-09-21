@@ -87,7 +87,7 @@ object IValueListItem {
     
     inline def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
+    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value*))
     
     inline def setItemGUID(value: String): Self = StObject.set(x, "ItemGUID", value.asInstanceOf[js.Any])
     

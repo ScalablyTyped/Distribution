@@ -14,7 +14,7 @@ trait GetLocationSuccess extends StObject {
   /**
     * 地址信息
     */
-  var address: js.UndefOr[js.Any] = js.undefined
+  var address: js.UndefOr[Any] = js.undefined
   
   /**
     * 高度，单位 m
@@ -59,7 +59,7 @@ object GetLocationSuccess {
     
     inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    inline def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     

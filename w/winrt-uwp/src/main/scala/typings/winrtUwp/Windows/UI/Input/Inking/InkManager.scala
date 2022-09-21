@@ -102,21 +102,21 @@ trait InkManager extends StObject {
     * @param pointerPoint The input pointer for which updates are to be processed.
     * @return When the current InkManipulationMode is Inking or Selecting, this method returns the Point (screen position in ink space) associated with the last ProcessPointerUpdate of pointerPoint.
     */
-  def processPointerUpdate(pointerPoint: PointerPoint): js.Any = js.native
+  def processPointerUpdate(pointerPoint: PointerPoint): Any = js.native
   
   /**
     * Performs handwriting recognition on one or more InkStroke objects.
     * @param recognitionTarget One of the values from the InkRecognitionTarget enumeration.
     * @return The results of the recognition as a collection of InkRecognitionResult objects.
     */
-  def recognizeAsync(recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def recognizeAsync(recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Performs handwriting recognition on one or more InkStroke objects.
     * @param strokeCollection The set of strokes on which recognition is performed.
     * @param recognitionTarget One of the values from the InkRecognitionTarget enumeration.
     * @return The results of the recognition as a collection of InkRecognitionResult objects.
     */
-  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously saves all InkStroke objects in the InkStroke collection that is managed by the InkManager to the specified stream.

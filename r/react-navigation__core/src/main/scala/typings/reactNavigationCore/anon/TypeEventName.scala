@@ -1,11 +1,11 @@
 package typings.reactNavigationCore.anon
 
-import typings.std.Extract
+import typings.reactNavigationCore.typesMod.Keyof
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeEventName[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
+trait TypeEventName[EventName /* <: Keyof[js.Object] */] extends StObject {
   
   var target: js.UndefOr[String] = js.undefined
   
@@ -13,13 +13,13 @@ trait TypeEventName[EventName /* <: Extract[/* keyof {} */ String, String] */] e
 }
 object TypeEventName {
   
-  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](`type`: EventName): TypeEventName[EventName] = {
+  inline def apply[EventName /* <: Keyof[js.Object] */](`type`: EventName): TypeEventName[EventName] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeEventName[EventName]]
   }
   
-  extension [Self <: TypeEventName[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & TypeEventName[EventName]) {
+  extension [Self <: TypeEventName[?], EventName /* <: Keyof[js.Object] */](x: Self & TypeEventName[EventName]) {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

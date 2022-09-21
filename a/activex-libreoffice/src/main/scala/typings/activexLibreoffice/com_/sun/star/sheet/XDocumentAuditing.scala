@@ -20,12 +20,7 @@ trait XDocumentAuditing
 }
 object XDocumentAuditing {
   
-  inline def apply(
-    acquire: () => Unit,
-    queryInterface: `type` => js.Any,
-    refreshArrows: () => Unit,
-    release: () => Unit
-  ): XDocumentAuditing = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, refreshArrows: () => Unit, release: () => Unit): XDocumentAuditing = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), refreshArrows = js.Any.fromFunction0(refreshArrows), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDocumentAuditing]
   }

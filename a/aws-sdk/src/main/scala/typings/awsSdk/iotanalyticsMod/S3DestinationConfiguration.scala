@@ -12,7 +12,7 @@ trait S3DestinationConfiguration extends StObject {
   var bucket: BucketName
   
   /**
-    * Configuration information for coordination with AWS Glue, a fully managed extract, transform and load (ETL) service.
+    * Configuration information for coordination with Glue, a fully managed extract, transform and load (ETL) service.
     */
   var glueConfiguration: js.UndefOr[GlueConfiguration] = js.undefined
   
@@ -22,7 +22,7 @@ trait S3DestinationConfiguration extends StObject {
   var key: BucketKeyExpression
   
   /**
-    * The ARN of the role that grants AWS IoT Analytics permission to interact with your Amazon S3 and AWS Glue resources.
+    * The ARN of the role that grants IoT Analytics permission to interact with your Amazon S3 and Glue resources.
     */
   var roleArn: RoleArn
 }

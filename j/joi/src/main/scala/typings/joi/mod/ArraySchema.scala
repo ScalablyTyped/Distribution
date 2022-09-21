@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.joi.mod._Schema because Already inherited */ @js.native
+@js.native
 trait ArraySchema
   extends StObject
-     with AnySchema {
+     with AnySchema[Any]
+     with _ObjectPropertiesSchema[Any]
+     with _Schema[Any] {
   
   /**
     * Verifies that an assertion passes for at least one item in the array, where:
@@ -61,7 +62,7 @@ trait ArraySchema
     * enabled can be used with a falsy value to go back to the default behavior.
     */
   def single(): this.type = js.native
-  def single(enabled: js.Any): this.type = js.native
+  def single(enabled: Any): this.type = js.native
   
   /**
     * Sorts the array by given order.
@@ -74,7 +75,7 @@ trait ArraySchema
     * enabled can be used with a falsy value to go back to the default behavior.
     */
   def sparse(): this.type = js.native
-  def sparse(enabled: js.Any): this.type = js.native
+  def sparse(enabled: Any): this.type = js.native
   
   /**
     * Requires the array values to be unique.

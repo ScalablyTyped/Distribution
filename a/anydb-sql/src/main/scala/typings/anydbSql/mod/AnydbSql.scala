@@ -10,7 +10,7 @@ trait AnydbSql
   extends StObject
      with DatabaseConnection {
   
-  def allOf(tables: Table[js.Any]*): js.Any = js.native
+  def allOf(tables: Table[Any]*): Any = js.native
   
   def begin(): Transaction = js.native
   
@@ -26,7 +26,7 @@ trait AnydbSql
   
   def makeFunction(name: String): js.Function = js.native
   
-  var models: Dictionary[Table[js.Any]] = js.native
+  var models: Dictionary[Table[Any]] = js.native
   
   def open(): Unit = js.native
   

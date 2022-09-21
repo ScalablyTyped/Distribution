@@ -102,7 +102,7 @@ object Activity {
     
     inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
     
-    inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+    inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value*))
     
     inline def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
     

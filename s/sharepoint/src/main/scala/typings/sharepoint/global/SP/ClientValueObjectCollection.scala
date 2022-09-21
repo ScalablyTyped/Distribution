@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientValueObjectCollection")
 @js.native
-class ClientValueObjectCollection[T] ()
+open class ClientValueObjectCollection[T] ()
   extends StObject
      with typings.sharepoint.SP.ClientValueObjectCollection[T] {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -21,7 +21,7 @@ class ClientValueObjectCollection[T] ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def getEnumerator(): IEnumerator[T] = js.native

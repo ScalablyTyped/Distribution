@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getSignedUrlMod {
   
-  @JSImport("@aws-sdk/s3-request-presigner/dist/cjs/getSignedUrl", JSImport.Namespace)
+  @JSImport("@aws-sdk/s3-request-presigner/dist-types/getSignedUrl", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
-    client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
-    command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer]
+    client: Client[Any, InputTypesUnion, MetadataBearer, Any],
+    command: Command[InputType, OutputType, Any, InputTypesUnion, MetadataBearer]
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignedUrl")(client.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
-    client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
-    command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer],
+    client: Client[Any, InputTypesUnion, MetadataBearer, Any],
+    command: Command[InputType, OutputType, Any, InputTypesUnion, MetadataBearer],
     options: RequestPresigningArguments
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignedUrl")(client.asInstanceOf[js.Any], command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

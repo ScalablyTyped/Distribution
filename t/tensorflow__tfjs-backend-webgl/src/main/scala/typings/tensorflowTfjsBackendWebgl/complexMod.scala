@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.BackendInputs
+import typings.tensorflowTfjsBackendWebgl.anon.InputsComplexInputs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object complexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def complex(args: BackendInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("complex")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def complex(args: InputsComplexInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("complex")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Complex", "complexConfig")
   @js.native

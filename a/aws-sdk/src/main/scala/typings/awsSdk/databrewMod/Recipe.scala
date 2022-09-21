@@ -9,10 +9,10 @@ trait Recipe extends StObject {
   /**
     * The date and time that the recipe was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who created the recipe.
+    * The Amazon Resource Name (ARN) of the user who created the recipe.
     */
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
@@ -22,14 +22,14 @@ trait Recipe extends StObject {
   var Description: js.UndefOr[RecipeDescription] = js.undefined
   
   /**
-    * The identifier (user name) of the user who last modified the recipe.
+    * The Amazon Resource Name (ARN) of the user who last modified the recipe.
     */
   var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The last modification date and time of the recipe.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique name for the recipe.
@@ -42,17 +42,17 @@ trait Recipe extends StObject {
   var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who published the recipe.
+    * The Amazon Resource Name (ARN) of the user who published the recipe.
     */
   var PublishedBy: js.UndefOr[typings.awsSdk.databrewMod.PublishedBy] = js.undefined
   
   /**
     * The date and time when the recipe was published.
     */
-  var PublishedDate: js.UndefOr[Date] = js.undefined
+  var PublishedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier for the version for the recipe. 
+    * The identifier for the version for the recipe. Must be one of the following:   Numeric version (X.Y) - X and Y stand for major and minor version numbers. The maximum length of each is 6 digits, and neither can be negative values. Both X and Y are required, and "0.0" isn't a valid version.    LATEST_WORKING - the most recent valid version being developed in a DataBrew project.    LATEST_PUBLISHED - the most recent published version.  
     */
   var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.undefined
   
@@ -80,7 +80,7 @@ object Recipe {
   
   extension [Self <: Recipe](x: Self) {
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -96,7 +96,7 @@ object Recipe {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -110,7 +110,7 @@ object Recipe {
     
     inline def setPublishedByUndefined: Self = StObject.set(x, "PublishedBy", js.undefined)
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "PublishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "PublishedDate", value.asInstanceOf[js.Any])
     
     inline def setPublishedDateUndefined: Self = StObject.set(x, "PublishedDate", js.undefined)
     
@@ -126,7 +126,7 @@ object Recipe {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

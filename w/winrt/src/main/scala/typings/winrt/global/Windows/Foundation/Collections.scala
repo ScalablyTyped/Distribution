@@ -27,7 +27,7 @@ object Collections {
   
   @JSGlobal("Windows.Foundation.Collections.PropertySet")
   @js.native
-  class PropertySet ()
+  open class PropertySet ()
     extends StObject
        with typings.winrt.Windows.Foundation.Collections.PropertySet {
     
@@ -35,22 +35,22 @@ object Collections {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
-    var onmapchanged: js.Any = js.native
+    var onmapchanged: Any = js.native
     
     /* CompleteClass */
     override def remove(key: String): Unit = js.native
@@ -61,7 +61,7 @@ object Collections {
   
   @JSGlobal("Windows.Foundation.Collections.ValueSet")
   @js.native
-  class ValueSet ()
+  open class ValueSet ()
     extends StObject
        with typings.winrt.Windows.Foundation.Collections.ValueSet {
     
@@ -69,22 +69,22 @@ object Collections {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
-    var onmapchanged: js.Any = js.native
+    var onmapchanged: Any = js.native
     
     /* CompleteClass */
     override def remove(key: String): Unit = js.native

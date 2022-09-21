@@ -14,7 +14,7 @@ trait DataRepositoryTaskStatus extends StObject {
   /**
     * The time at which the task status was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.fsxMod.LastUpdatedTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A running total of the number of files that the task has successfully processed.
@@ -39,7 +39,7 @@ object DataRepositoryTaskStatus {
     
     inline def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
     
-    inline def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

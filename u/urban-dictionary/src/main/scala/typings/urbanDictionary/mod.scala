@@ -1,7 +1,5 @@
 package typings.urbanDictionary
 
-import typings.std.Error
-import typings.urbanDictionary.anon.Entries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,25 +10,52 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defid(id: Double): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
-  inline def defid(id: Double, callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WordDefinition]]
+  inline def autocomplete(term: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(term.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def autocomplete(term: String, callback: js.Function2[/* error */ js.Error, /* results */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(term.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def random(): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Promise[WordDefinition]]
-  inline def random(callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
+  inline def autocompleteExtra(term: String): js.Promise[js.Array[AutocompleteExtraObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteExtra")(term.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AutocompleteExtraObject]]]
+  inline def autocompleteExtra(
+    term: String,
+    callback: js.Function2[/* error */ js.Error, /* results */ js.Array[AutocompleteExtraObject], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteExtra")(term.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def term(word: String): js.Promise[Entries] = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries]]
-  inline def term(
-    word: String,
-    callback: js.Function4[
-      /* error */ Error, 
-      /* entries */ js.Array[WordDefinition], 
-      /* tags */ js.Array[String], 
-      /* sounds */ js.Array[String], 
-      js.Any
-    ]
-  ): js.Promise[Entries] = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries]]
+  inline def define(term: String): js.Promise[js.Array[DefinitionObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(term.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DefinitionObject]]]
+  inline def define(
+    term: String,
+    callback: js.Function2[/* error */ js.Error, /* results */ js.Array[DefinitionObject], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(term.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  trait WordDefinition extends StObject {
+  inline def getDefinitionByDefid(id: Double): js.Promise[DefinitionObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionByDefid")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DefinitionObject]]
+  inline def getDefinitionByDefid(id: Double, callback: js.Function2[/* error */ js.Error, /* results */ DefinitionObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionByDefid")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def random(): js.Promise[js.Array[DefinitionObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Promise[js.Array[DefinitionObject]]]
+  inline def random(callback: js.Function2[/* error */ js.Error, /* results */ js.Array[DefinitionObject], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def wordsOfTheDay(): js.Promise[js.Array[DefinitionObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordsOfTheDay")().asInstanceOf[js.Promise[js.Array[DefinitionObject]]]
+  inline def wordsOfTheDay(callback: js.Function2[/* error */ js.Error, /* results */ js.Array[DefinitionObject], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wordsOfTheDay")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait AutocompleteExtraObject extends StObject {
+    
+    var preview: String
+    
+    var term: String
+  }
+  object AutocompleteExtraObject {
+    
+    inline def apply(preview: String, term: String): AutocompleteExtraObject = {
+      val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutocompleteExtraObject]
+    }
+    
+    extension [Self <: AutocompleteExtraObject](x: Self) {
+      
+      inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DefinitionObject extends StObject {
     
     var author: String
     
@@ -54,7 +79,7 @@ object mod {
     
     var written_on: String
   }
-  object WordDefinition {
+  object DefinitionObject {
     
     inline def apply(
       author: String,
@@ -68,12 +93,12 @@ object mod {
       thumbs_up: Double,
       word: String,
       written_on: String
-    ): WordDefinition = {
+    ): DefinitionObject = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], current_vote = current_vote.asInstanceOf[js.Any], defid = defid.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], example = example.asInstanceOf[js.Any], permalink = permalink.asInstanceOf[js.Any], sound_urls = sound_urls.asInstanceOf[js.Any], thumbs_down = thumbs_down.asInstanceOf[js.Any], thumbs_up = thumbs_up.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any], written_on = written_on.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WordDefinition]
+      __obj.asInstanceOf[DefinitionObject]
     }
     
-    extension [Self <: WordDefinition](x: Self) {
+    extension [Self <: DefinitionObject](x: Self) {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -89,7 +114,7 @@ object mod {
       
       inline def setSound_urls(value: js.Array[String]): Self = StObject.set(x, "sound_urls", value.asInstanceOf[js.Any])
       
-      inline def setSound_urlsVarargs(value: String*): Self = StObject.set(x, "sound_urls", js.Array(value :_*))
+      inline def setSound_urlsVarargs(value: String*): Self = StObject.set(x, "sound_urls", js.Array(value*))
       
       inline def setThumbs_down(value: Double): Self = StObject.set(x, "thumbs_down", value.asInstanceOf[js.Any])
       

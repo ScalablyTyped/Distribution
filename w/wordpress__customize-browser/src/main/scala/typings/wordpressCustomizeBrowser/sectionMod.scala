@@ -12,7 +12,7 @@ object sectionMod {
   
   @JSImport("@wordpress/customize-browser/Section", "Section")
   @js.native
-  class Section protected () extends Container {
+  open class Section protected () extends Container {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

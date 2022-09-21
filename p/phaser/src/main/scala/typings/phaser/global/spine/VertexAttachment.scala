@@ -55,6 +55,6 @@ object VertexAttachment {
   /* static member */
   @JSGlobal("spine.VertexAttachment.nextID")
   @js.native
-  def nextID: js.Any = js.native
-  inline def nextID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextID")(x.asInstanceOf[js.Any])
+  def nextID: Any = js.native
+  inline def nextID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextID")(x.asInstanceOf[js.Any])
 }

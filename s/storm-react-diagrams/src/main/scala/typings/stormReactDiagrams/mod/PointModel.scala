@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "PointModel")
 @js.native
-class PointModel protected ()
+open class PointModel protected ()
   extends typings.stormReactDiagrams.pointModelMod.PointModel {
   def this(link: typings.stormReactDiagrams.linkModelMod.LinkModel[LinkModelListener], points: X) = this()
 }

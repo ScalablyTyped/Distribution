@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.textAreaBulletListMod.TextAreaBulletListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemTextAreaBulletListMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/TextAreaBulletList", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaBulletListProps] = js.native
+  val default: FC[TextAreaBulletListProps] = js.native
   
-  type _To = SFC[TextAreaBulletListProps]
+  type _To = FC[TextAreaBulletListProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemTextAreaBulletListMod.foo` */
-  override def _to: SFC[TextAreaBulletListProps] = default
+  override def _to: FC[TextAreaBulletListProps] = default
 }

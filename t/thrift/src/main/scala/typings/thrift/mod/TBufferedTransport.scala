@@ -1,13 +1,13 @@
 package typings.thrift.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("thrift", "TBufferedTransport")
 @js.native
-class TBufferedTransport ()
+open class TBufferedTransport ()
   extends StObject
      with TTransport {
   def this(buffer: Buffer) = this()

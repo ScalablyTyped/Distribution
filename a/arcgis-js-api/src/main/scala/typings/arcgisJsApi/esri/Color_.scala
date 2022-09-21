@@ -41,8 +41,8 @@ trait Color_ extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#setColor)
     */
   def setColor(color: String): Color_ = js.native
-  def setColor(color: js.Any): Color_ = js.native
   def setColor(color: js.Array[Double]): Color_ = js.native
+  def setColor(color: Any): Color_ = js.native
   
   /**
     * Returns a CSS color string in rgba form representing the Color instance.
@@ -64,7 +64,7 @@ trait Color_ extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#toJSON)
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /**
     * Returns a 3-component array of rgb values that represent the Color instance.

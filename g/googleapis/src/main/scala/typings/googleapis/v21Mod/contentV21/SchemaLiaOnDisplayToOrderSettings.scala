@@ -9,12 +9,12 @@ trait SchemaLiaOnDisplayToOrderSettings extends StObject {
   /**
     * Shipping cost and policy URL.
     */
-  var shippingCostPolicyUrl: js.UndefOr[String] = js.undefined
+  var shippingCostPolicyUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The status of the ?On display to order? feature.
+    * The status of the ?On display to order? feature. Acceptable values are: - "`active`" - "`inactive`" - "`pending`"
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiaOnDisplayToOrderSettings {
   
@@ -27,9 +27,13 @@ object SchemaLiaOnDisplayToOrderSettings {
     
     inline def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
     
+    inline def setShippingCostPolicyUrlNull: Self = StObject.set(x, "shippingCostPolicyUrl", null)
+    
     inline def setShippingCostPolicyUrlUndefined: Self = StObject.set(x, "shippingCostPolicyUrl", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

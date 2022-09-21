@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogModifier")
 @js.native
-class CatalogModifier () extends StObject {
+open class CatalogModifier () extends StObject {
   
   /**
     * The ID of the `CatalogModifierList` associated with this modifier.

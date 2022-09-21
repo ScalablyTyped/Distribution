@@ -24,7 +24,7 @@ object MatchingShares {
     
     inline def setMatchingSharesUndefined: Self = StObject.set(x, "matchingShares", js.undefined)
     
-    inline def setMatchingSharesVarargs(value: SharedNotebook*): Self = StObject.set(x, "matchingShares", js.Array(value :_*))
+    inline def setMatchingSharesVarargs(value: SharedNotebook*): Self = StObject.set(x, "matchingShares", js.Array(value*))
     
     inline def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     

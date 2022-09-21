@@ -1,7 +1,6 @@
 package typings.iobroker.mod.global.ioBroker
 
 import typings.iobroker.objectsMod.global.ioBroker.Object
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdapterOptions extends StObject {
   
   /** provide alternative global configuration for the adapter. Default: null */
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Any] = js.undefined
   
   /** path to adapter */
   var dirname: js.UndefOr[String] = js.undefined
@@ -28,9 +27,6 @@ trait AdapterOptions extends StObject {
   
   /** The name of the adapter */
   var name: String
-  
-  /** if true, stateChange will be called with an id that has no namespace, e.g. "state" instead of "adapter.0.state". Default: false */
-  var noNamespace: js.UndefOr[Boolean] = js.undefined
   
   /** Handler for changes of subscribed objects */
   var objectChange: js.UndefOr[ObjectChangeHandler] = js.undefined
@@ -68,7 +64,7 @@ object AdapterOptions {
   
   extension [Self <: AdapterOptions](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
@@ -76,7 +72,7 @@ object AdapterOptions {
     
     inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
     
-    inline def setError(value: /* err */ Error => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* err */ js.Error => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
@@ -93,10 +89,6 @@ object AdapterOptions {
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNoNamespace(value: Boolean): Self = StObject.set(x, "noNamespace", value.asInstanceOf[js.Any])
-    
-    inline def setNoNamespaceUndefined: Self = StObject.set(x, "noNamespace", js.undefined)
     
     inline def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "objectChange", js.Any.fromFunction2(value))
     
@@ -126,7 +118,11 @@ object AdapterOptions {
     
     inline def setSystemConfigUndefined: Self = StObject.set(x, "systemConfig", js.undefined)
     
-    inline def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
+    inline def setUnload(value: UnloadHandler): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
+    
+    inline def setUnloadFunction0(value: () => js.Promise[Unit]): Self = StObject.set(x, "unload", js.Any.fromFunction0(value))
+    
+    inline def setUnloadFunction1(value: /* callback */ EmptyCallback => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
     
     inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     

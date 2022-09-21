@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__icon-button
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web icon button component
@@ -10,10 +10,10 @@ The Material Components for the web icon button component
 | ------------------ | :-------------: |
 | Full name          | @material/icon-button |
 | Keywords           | material components, material design, button, icon button, icon toggle |
-| # releases         | 750 |
-| # dependents       | 59 |
-| # downloads        | 2295836 |
-| # stars            | 0 |
+| # releases         | 714 |
+| # dependents       | 0.0 |
+| # downloads        | 288613.6666666667 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

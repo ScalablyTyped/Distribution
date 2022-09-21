@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListContactFlowsResponse extends StObject {
   
   /**
-    * Information about the contact flows.
+    * Information about the flows.
     */
   var ContactFlowSummaryList: js.UndefOr[typings.awsSdk.connectMod.ContactFlowSummaryList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListContactFlowsResponse {
     
     inline def setContactFlowSummaryListUndefined: Self = StObject.set(x, "ContactFlowSummaryList", js.undefined)
     
-    inline def setContactFlowSummaryListVarargs(value: ContactFlowSummary*): Self = StObject.set(x, "ContactFlowSummaryList", js.Array(value :_*))
+    inline def setContactFlowSummaryListVarargs(value: ContactFlowSummary*): Self = StObject.set(x, "ContactFlowSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

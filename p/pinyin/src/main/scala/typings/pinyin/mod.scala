@@ -82,6 +82,11 @@ object mod {
   trait Options extends StObject {
     
     /**
+      * 按词组分组拼音
+      */
+    var group: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * 是否启用多音字模式，默认关闭。
       * 关闭多音字模式时，返回每个汉字第一个匹配的拼音。
       * 启用多音字模式时，返回多音字的所有拼音列表。
@@ -113,6 +118,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       inline def setHeteronym(value: Boolean): Self = StObject.set(x, "heteronym", value.asInstanceOf[js.Any])
       

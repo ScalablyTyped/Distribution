@@ -16,10 +16,10 @@ trait DriveActivity extends StObject {
   def newConsolidationStrategy(): ConsolidationStrategy
   
   // Create a new instance of Legacy
-  def newLegacy(): js.Any
+  def newLegacy(): Any
   
   // Create a new instance of NoConsolidation
-  def newNoConsolidation(): js.Any
+  def newNoConsolidation(): Any
   
   // Create a new instance of QueryDriveActivityRequest
   def newQueryDriveActivityRequest(): QueryDriveActivityRequest
@@ -28,8 +28,8 @@ object DriveActivity {
   
   inline def apply(
     newConsolidationStrategy: () => ConsolidationStrategy,
-    newLegacy: () => js.Any,
-    newNoConsolidation: () => js.Any,
+    newLegacy: () => Any,
+    newNoConsolidation: () => Any,
     newQueryDriveActivityRequest: () => QueryDriveActivityRequest
   ): DriveActivity = {
     val __obj = js.Dynamic.literal(newConsolidationStrategy = js.Any.fromFunction0(newConsolidationStrategy), newLegacy = js.Any.fromFunction0(newLegacy), newNoConsolidation = js.Any.fromFunction0(newNoConsolidation), newQueryDriveActivityRequest = js.Any.fromFunction0(newQueryDriveActivityRequest))
@@ -65,9 +65,9 @@ object DriveActivity {
     
     inline def setNewConsolidationStrategy(value: () => ConsolidationStrategy): Self = StObject.set(x, "newConsolidationStrategy", js.Any.fromFunction0(value))
     
-    inline def setNewLegacy(value: () => js.Any): Self = StObject.set(x, "newLegacy", js.Any.fromFunction0(value))
+    inline def setNewLegacy(value: () => Any): Self = StObject.set(x, "newLegacy", js.Any.fromFunction0(value))
     
-    inline def setNewNoConsolidation(value: () => js.Any): Self = StObject.set(x, "newNoConsolidation", js.Any.fromFunction0(value))
+    inline def setNewNoConsolidation(value: () => Any): Self = StObject.set(x, "newNoConsolidation", js.Any.fromFunction0(value))
     
     inline def setNewQueryDriveActivityRequest(value: () => QueryDriveActivityRequest): Self = StObject.set(x, "newQueryDriveActivityRequest", js.Any.fromFunction0(value))
   }
@@ -127,7 +127,7 @@ object DriveActivity {
       
       var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.undefined
       
-      var edit: js.UndefOr[js.Any] = js.undefined
+      var edit: js.UndefOr[Any] = js.undefined
       
       var move: js.UndefOr[Move] = js.undefined
       
@@ -166,7 +166,7 @@ object DriveActivity {
         
         inline def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
         
-        inline def setEdit(value: js.Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+        inline def setEdit(value: Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
         
         inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
         
@@ -304,7 +304,7 @@ object DriveActivity {
         
         inline def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
         
-        inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
+        inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value*))
         
         inline def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
         
@@ -318,9 +318,9 @@ object DriveActivity {
     
     trait ConsolidationStrategy extends StObject {
       
-      var legacy: js.UndefOr[js.Any] = js.undefined
+      var legacy: js.UndefOr[Any] = js.undefined
       
-      var none: js.UndefOr[js.Any] = js.undefined
+      var none: js.UndefOr[Any] = js.undefined
     }
     object ConsolidationStrategy {
       
@@ -331,11 +331,11 @@ object DriveActivity {
       
       extension [Self <: ConsolidationStrategy](x: Self) {
         
-        inline def setLegacy(value: js.Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+        inline def setLegacy(value: Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
         
         inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
         
-        inline def setNone(value: js.Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+        inline def setNone(value: Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
         
         inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
       }
@@ -364,9 +364,9 @@ object DriveActivity {
       
       var copy: js.UndefOr[Copy] = js.undefined
       
-      var `new`: js.UndefOr[js.Any] = js.undefined
+      var `new`: js.UndefOr[Any] = js.undefined
       
-      var upload: js.UndefOr[js.Any] = js.undefined
+      var upload: js.UndefOr[Any] = js.undefined
     }
     object Create {
       
@@ -381,11 +381,11 @@ object DriveActivity {
         
         inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
         
-        inline def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+        inline def setNew(value: Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
         
         inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
         
-        inline def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+        inline def setUpload(value: Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
         
         inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       }
@@ -481,13 +481,13 @@ object DriveActivity {
         
         inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
         
         inline def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
         
         inline def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
         
-        inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+        inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value*))
         
         inline def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
         
@@ -497,7 +497,7 @@ object DriveActivity {
         
         inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
         
-        inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+        inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
         
         inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
         
@@ -511,7 +511,7 @@ object DriveActivity {
     
     trait DriveItem extends StObject {
       
-      var file: js.UndefOr[js.Any] = js.undefined
+      var file: js.UndefOr[Any] = js.undefined
       
       var folder: js.UndefOr[Folder] = js.undefined
       
@@ -532,7 +532,7 @@ object DriveActivity {
       
       extension [Self <: DriveItem](x: Self) {
         
-        inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
         inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
@@ -560,7 +560,7 @@ object DriveActivity {
     
     trait DriveItemReference extends StObject {
       
-      var file: js.UndefOr[js.Any] = js.undefined
+      var file: js.UndefOr[Any] = js.undefined
       
       var folder: js.UndefOr[Folder] = js.undefined
       
@@ -577,7 +577,7 @@ object DriveActivity {
       
       extension [Self <: DriveItemReference](x: Self) {
         
-        inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
         inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
@@ -739,13 +739,13 @@ object DriveActivity {
         
         inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
         
-        inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+        inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value*))
         
         inline def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
         
         inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
         
-        inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+        inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value*))
       }
     }
     
@@ -784,7 +784,7 @@ object DriveActivity {
       
       var allowDiscovery: js.UndefOr[Boolean] = js.undefined
       
-      var anyone: js.UndefOr[js.Any] = js.undefined
+      var anyone: js.UndefOr[Any] = js.undefined
       
       var domain: js.UndefOr[Domain] = js.undefined
       
@@ -807,7 +807,7 @@ object DriveActivity {
         
         inline def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
         
-        inline def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
+        inline def setAnyone(value: Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
         
         inline def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
         
@@ -848,13 +848,13 @@ object DriveActivity {
         
         inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
         
-        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value*))
         
         inline def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
         
         inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
         
-        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value*))
       }
     }
     
@@ -947,7 +947,7 @@ object DriveActivity {
         
         inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        inline def setActivitiesVarargs(value: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity*): Self = StObject.set(x, "activities", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1041,7 +1041,7 @@ object DriveActivity {
         
         inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
         
-        inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+        inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value*))
       }
     }
     
@@ -1087,7 +1087,7 @@ object DriveActivity {
       
       var driveItem: js.UndefOr[DriveItem] = js.undefined
       
-      var fileComment: js.UndefOr[js.Any] = js.undefined
+      var fileComment: js.UndefOr[Any] = js.undefined
       
       var teamDrive: js.UndefOr[TeamDrive] = js.undefined
     }
@@ -1104,7 +1104,7 @@ object DriveActivity {
         
         inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
         
-        inline def setFileComment(value: js.Any): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
+        inline def setFileComment(value: Any): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
         
         inline def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
         
@@ -1222,11 +1222,11 @@ object DriveActivity {
     
     trait User extends StObject {
       
-      var deletedUser: js.UndefOr[js.Any] = js.undefined
+      var deletedUser: js.UndefOr[Any] = js.undefined
       
       var knownUser: js.UndefOr[KnownUser] = js.undefined
       
-      var unknownUser: js.UndefOr[js.Any] = js.undefined
+      var unknownUser: js.UndefOr[Any] = js.undefined
     }
     object User {
       
@@ -1237,7 +1237,7 @@ object DriveActivity {
       
       extension [Self <: User](x: Self) {
         
-        inline def setDeletedUser(value: js.Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
+        inline def setDeletedUser(value: Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
         
         inline def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
         
@@ -1245,7 +1245,7 @@ object DriveActivity {
         
         inline def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
         
-        inline def setUnknownUser(value: js.Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
+        inline def setUnknownUser(value: Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
         
         inline def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
       }

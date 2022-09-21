@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Menu")
 @js.native
-class Menu protected () extends _MDLComponent[MenuProps] {
+open class Menu protected () extends _MDLComponent[MenuProps] {
   def this(props: MenuProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MenuProps, context: js.Any) = this()
+  def this(props: MenuProps, context: Any) = this()
 }

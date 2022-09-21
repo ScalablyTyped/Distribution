@@ -41,6 +41,6 @@ object SourceProviderAttributes {
     
     inline def setSupportedTriggers(value: js.Array[SupportedTrigger]): Self = StObject.set(x, "supportedTriggers", value.asInstanceOf[js.Any])
     
-    inline def setSupportedTriggersVarargs(value: SupportedTrigger*): Self = StObject.set(x, "supportedTriggers", js.Array(value :_*))
+    inline def setSupportedTriggersVarargs(value: SupportedTrigger*): Self = StObject.set(x, "supportedTriggers", js.Array(value*))
   }
 }

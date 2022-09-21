@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "BloomMergePostProcess")
 @js.native
-class BloomMergePostProcess protected ()
+open class BloomMergePostProcess protected ()
   extends typings.babylonjs.legacyMod.BloomMergePostProcess {
   /**
     * Creates a new instance of @see BloomMergePostProcess

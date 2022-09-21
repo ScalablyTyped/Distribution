@@ -18,7 +18,7 @@ object symbolDrawerMod {
   
   @JSImport("plottable/build/src/drawers/symbolDrawer", "SymbolSVGDrawer")
   @js.native
-  class SymbolSVGDrawer () extends SVGDrawer
+  open class SymbolSVGDrawer () extends SVGDrawer
   
   inline def makeSymbolCanvasDrawStep(
     dataset: Dataset,

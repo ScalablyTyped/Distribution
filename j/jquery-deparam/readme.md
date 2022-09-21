@@ -10,10 +10,10 @@ Inverse of jQuery's $.param method to convert a querystring into a javascript ob
 | ------------------ | :-------------: |
 | Full name          | jquery-deparam |
 | Keywords           | jquery, deparam, param, querystring |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 417889 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 210938.66666666666 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/AceMetrix/jquery-deparam#readme)

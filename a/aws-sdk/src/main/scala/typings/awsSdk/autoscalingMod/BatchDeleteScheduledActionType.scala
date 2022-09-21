@@ -9,7 +9,7 @@ trait BatchDeleteScheduledActionType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The names of the scheduled actions to delete. The maximum number allowed is 50. 
@@ -18,17 +18,17 @@ trait BatchDeleteScheduledActionType extends StObject {
 }
 object BatchDeleteScheduledActionType {
   
-  inline def apply(AutoScalingGroupName: ResourceName, ScheduledActionNames: ScheduledActionNames): BatchDeleteScheduledActionType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255, ScheduledActionNames: ScheduledActionNames): BatchDeleteScheduledActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionNames = ScheduledActionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteScheduledActionType]
   }
   
   extension [Self <: BatchDeleteScheduledActionType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setScheduledActionNames(value: ScheduledActionNames): Self = StObject.set(x, "ScheduledActionNames", value.asInstanceOf[js.Any])
     
-    inline def setScheduledActionNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value :_*))
+    inline def setScheduledActionNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value*))
   }
 }

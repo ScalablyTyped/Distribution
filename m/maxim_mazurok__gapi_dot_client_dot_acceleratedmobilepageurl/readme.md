@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_acceleratedmobilepageurl
 
-Typings are for version 1.0.20201104
+Typings are for version 1.0.20220809
 
 ## Library description:
 TypeScript typings for Accelerated Mobile Pages (AMP) URL API v1
@@ -10,10 +10,10 @@ TypeScript typings for Accelerated Mobile Pages (AMP) URL API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.acceleratedmobilepageurl |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 1 |
-| # downloads        | 2882 |
-| # stars            | 0 |
+| # releases         | 307 |
+| # dependents       | 0.0 |
+| # downloads        | 2627.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

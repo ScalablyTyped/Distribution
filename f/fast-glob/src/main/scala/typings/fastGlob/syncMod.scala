@@ -12,7 +12,7 @@ object syncMod {
   
   @JSImport("fast-glob/out/providers/sync", JSImport.Default)
   @js.native
-  class default () extends ProviderSync
+  open class default () extends ProviderSync
   
   @js.native
   trait ProviderSync

@@ -20,14 +20,17 @@ trait LocationOptions extends StObject {
   var distanceInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Android only) Specifies whether to ask the user to turn on improved accuracy location mode
-    * which uses Wi-Fi, cell networks and GPS sensor. Defaults to `true`.
+    * Specifies whether to ask the user to turn on improved accuracy location mode
+    * which uses Wi-Fi, cell networks and GPS sensor.
+    * @default true
+    * @platform android
     */
   var mayShowUserSettingsDialog: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Android only) Minimum time to wait between each update in milliseconds.
+    * Minimum time to wait between each update in milliseconds.
     * Default value may depend on `accuracy` option.
+    * @platform android
     */
   var timeInterval: js.UndefOr[Double] = js.undefined
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a RichText object in a Paragraph.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.RichText")
 @js.native
-class RichText ()
+open class RichText ()
   extends StObject
      with typings.officeJs.OneNote.RichText {
   

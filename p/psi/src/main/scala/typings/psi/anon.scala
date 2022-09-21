@@ -27,7 +27,7 @@ object anon {
       
       inline def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
       
-      inline def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+      inline def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value*))
       
       inline def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     }

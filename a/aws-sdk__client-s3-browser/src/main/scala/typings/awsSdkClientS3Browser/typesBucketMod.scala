@@ -1,6 +1,5 @@
 package typings.awsSdkClientS3Browser
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object typesBucketMod {
     /**
       * <p>Date the bucket was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var CreationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The name of the bucket.</p>
@@ -28,7 +27,7 @@ object typesBucketMod {
     
     extension [Self <: Bucket](x: Self) {
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
@@ -46,7 +45,7 @@ object typesBucketMod {
       * <p>Date the bucket was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledBucket: js.UndefOr[Date] = js.undefined
+    var CreationDate_UnmarshalledBucket: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledBucket {
     
@@ -57,7 +56,7 @@ object typesBucketMod {
     
     extension [Self <: UnmarshalledBucket](x: Self) {
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     }

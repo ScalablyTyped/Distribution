@@ -189,7 +189,7 @@ object typeahead {
   
   type ITypeaheadService = js.Function3[
     /* element */ IAugmentedJQuery, 
-    /* controller */ js.Any, 
+    /* controller */ Any, 
     /* config */ js.UndefOr[ITypeaheadOptions], 
     ITypeahead
   ]

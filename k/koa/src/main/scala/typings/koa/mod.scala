@@ -1,23 +1,27 @@
 package typings.koa
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
 import typings.keygrip.mod.Keygrip
+import typings.koa.anon.BodyUnknown
+import typings.koa.anon.Env
 import typings.koa.anon.FnCall
-import typings.koa.anon.State
+import typings.koa.koaBooleans.`false`
 import typings.node.eventsMod.EventEmitter
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.http2Mod.Http2ServerResponse
+import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.ListenOptions
-import typings.node.netMod.Socket
+import typings.node.nodeNetMod.Socket
 import typings.node.urlMod.URL_
-import typings.std.Date
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,19 +30,32 @@ object mod {
   
   @JSImport("koa", JSImport.Namespace)
   @js.native
-  class ^[StateT, CustomT] () extends Application[StateT, CustomT]
+  /**
+    *
+    * @param {object} [options] Application options
+    * @param {string} [options.env='development'] Environment
+    * @param {string[]} [options.keys] Signed cookie keys
+    * @param {boolean} [options.proxy] Trust proxy headers
+    * @param {number} [options.subdomainOffset] Subdomain offset
+    * @param {string} [options.proxyIpHeader] Proxy IP header, defaults to X-Forwarded-For
+    * @param {number} [options.maxIpsCount] Max IPs read from proxy IP header, default to 0 (means infinity)
+    *
+    */
+  open class ^[StateT, ContextT] () extends Application[StateT, ContextT] {
+    def this(options: Env) = this()
+  }
   
   /**
-    * A re-export of `HttpError` from the `http-assert` package.
+    * A re-export of `HttpError` from the `http-error` package.
     *
     * This is the error type that is thrown by `ctx.assert()` and `ctx.throw()`.
     */
   @JSImport("koa", "HttpError")
   @js.native
-  val HttpError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HttpErrors.HttpError */ js.Any = js.native
+  val HttpError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HttpErrors.HttpError */ Any = js.native
   
   @js.native
-  trait Application[StateT, CustomT] extends EventEmitter {
+  trait Application[StateT, ContextT] extends EventEmitter {
     
     /**
       * Return a request handler callback
@@ -46,18 +63,18 @@ object mod {
       */
     def callback(): js.Function2[
         /* req */ IncomingMessage | Http2ServerRequest, 
-        /* res */ ServerResponse | Http2ServerResponse, 
+        /* res */ ServerResponse[IncomingMessage] | Http2ServerResponse, 
         Unit
       ] = js.native
     
-    var context: BaseContext & CustomT = js.native
+    var context: BaseContext & ContextT = js.native
     
     /**
       * Initialize a new context.
       *
       * @api private
       */
-    def createContext[StateT](req: IncomingMessage, res: ServerResponse): ParameterizedContext[StateT, DefaultContext] = js.native
+    def createContext[StateT](req: IncomingMessage, res: ServerResponse[IncomingMessage]): ParameterizedContext[StateT, DefaultContext, Any] = js.native
     
     var env: String = js.native
     
@@ -65,7 +82,7 @@ object mod {
       * Return JSON representation.
       * We only bother showing settings.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     var keys: Keygrip | js.Array[String] = js.native
     
@@ -74,50 +91,248 @@ object mod {
       *
       *    http.createServer(app.callback()).listen(...)
       */
-    def listen(): Server = js.native
-    def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, backlog: Double): Server = js.native
-    def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(handle: js.Any, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(options: ListenOptions): Server = js.native
-    def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(path: String): Server = js.native
-    def listen(path: String, backlog: Double): Server = js.native
-    def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(path: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(path: String, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double): Server = js.native
-    def listen(port: Double, backlog: Double): Server = js.native
-    def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: String): Server = js.native
-    def listen(port: Double, hostname: String, backlog: Double): Server = js.native
-    def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: Unit, backlog: Double): Server = js.native
-    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Unit, hostname: String): Server = js.native
-    def listen(port: Unit, hostname: String, backlog: Double): Server = js.native
-    def listen(port: Unit, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Unit, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Unit, hostname: Unit, backlog: Double): Server = js.native
-    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(handle: Any): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(handle: Any, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(handle: Any, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(handle: Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(handle: Any, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(options: ListenOptions): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(path: String): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(path: String, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(path: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(path: String, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: String): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: String, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: String): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: String, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
     var maxIpsCount: Double = js.native
     
-    var middleware: js.Array[Middleware[StateT, CustomT]] = js.native
+    var middleware: js.Array[Middleware[StateT, ContextT, Any]] = js.native
     
     /**
       * Default error handler.
       *
       * @api private
       */
-    def onerror(err: Error): Unit = js.native
+    def onerror(err: js.Error): Unit = js.native
     
     var proxy: Boolean = js.native
     
@@ -135,14 +350,14 @@ object mod {
       * Return JSON representation.
       * We only bother showing settings.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     /**
       * Use the given middleware `fn`.
       *
       * Old-style middleware will be converted.
       */
-    def use[NewStateT, NewCustomT](middleware: Middleware[StateT & NewStateT, CustomT & NewCustomT]): Application[StateT & NewStateT, CustomT & NewCustomT] = js.native
+    def use[NewStateT, NewContextT](middleware: Middleware[StateT & NewStateT, ContextT & NewContextT, Any]): Application[StateT & NewStateT, ContextT & NewContextT] = js.native
   }
   
   @js.native
@@ -158,7 +373,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any): Unit = js.native
+    def assert(value: Any): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -166,7 +381,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double): Unit = js.native
+    def assert(value: Any, status: Double): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -174,7 +389,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String): Unit = js.native
+    def assert(value: Any, status: Double, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -182,7 +397,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -190,7 +405,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -198,7 +413,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -206,7 +421,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -214,7 +429,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -222,7 +437,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -230,7 +445,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -245,12 +460,12 @@ object mod {
       * util.inspect() implementation, which
       * just returns the JSON output.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     /**
       * Default error handling.
       */
-    def onerror(err: Error): Unit = js.native
+    def onerror(err: js.Error): Unit = js.native
     
     /**
       * Throw an error with `msg` and optional `status`
@@ -281,7 +496,7 @@ object mod {
       * to the getters and cause utilities such as
       * clone() to fail.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
   @js.native
@@ -297,7 +512,7 @@ object mod {
     /**
       * Inspect implementation.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     /**
       * Return parsed Content-Length when present.
@@ -307,7 +522,7 @@ object mod {
     /**
       * Return JSON representation.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     /**
       * Return the request mime type void of
@@ -344,17 +559,17 @@ object mod {
     /**
       * Return response header.
       */
-    var header: js.Any = js.native
+    var header: OutgoingHttpHeaders = js.native
     
     /**
       * Return response header, alias as response.header
       */
-    var headers: js.Any = js.native
+    var headers: OutgoingHttpHeaders = js.native
     
     /**
       * Inspect implementation.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     /**
       * Check whether the response is one of the listed types.
@@ -365,8 +580,8 @@ object mod {
       * @api public
       */
     // is(): string;
-    def is(types: String*): String = js.native
-    def is(types: js.Array[String]): String = js.native
+    def is(types: String*): String | `false` | Null = js.native
+    def is(types: js.Array[String]): String | `false` | Null = js.native
     
     /**
       * Return the request socket.
@@ -374,22 +589,22 @@ object mod {
       * @return {Connection}
       * @api public
       */
-    var socket: Socket = js.native
+    var socket: typings.node.netMod.Socket = js.native
     
     /**
       * Return JSON representation.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
-  /* Inlined parent koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext> */
+  /* Inlined parent koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext, unknown> */
   @js.native
   trait Context
     extends StObject
        with /**
     * Custom properties.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Get WHATWG parsed URL object.
@@ -400,7 +615,7 @@ object mod {
     
     /**
       * Check if the given `type(s)` is acceptable, returning
-      * the best match when true, otherwise `undefined`, in which
+      * the best match when true, otherwise `false`, in which
       * case you should respond with 406 "Not Acceptable".
       *
       * The `type` value may be a single mime type string
@@ -434,9 +649,9 @@ object mod {
       *     this.accepts('html', 'json');
       *     // => "json"
       */
-    def accepts(): js.Array[String] | Boolean = js.native
-    def accepts(types: String*): String | Boolean = js.native
-    def accepts(types: js.Array[String]): String | Boolean = js.native
+    def accepts(): js.Array[String] = js.native
+    def accepts(types: String*): String | `false` = js.native
+    def accepts(types: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted charsets or best fit based on `charsets`.
@@ -446,9 +661,9 @@ object mod {
       *
       *     ['utf-8', 'utf-7', 'iso-8859-1']
       */
-    def acceptsCharsets(): js.Array[String] | Boolean = js.native
-    def acceptsCharsets(charsets: String*): String | Boolean = js.native
-    def acceptsCharsets(charsets: js.Array[String]): String | Boolean = js.native
+    def acceptsCharsets(): js.Array[String] = js.native
+    def acceptsCharsets(charsets: String*): String | `false` = js.native
+    def acceptsCharsets(charsets: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted encodings or best fit based on `encodings`.
@@ -458,9 +673,9 @@ object mod {
       *
       *     ['gzip', 'deflate']
       */
-    def acceptsEncodings(): js.Array[String] | Boolean = js.native
-    def acceptsEncodings(encodings: String*): String | Boolean = js.native
-    def acceptsEncodings(encodings: js.Array[String]): String | Boolean = js.native
+    def acceptsEncodings(): js.Array[String] = js.native
+    def acceptsEncodings(encodings: String*): String | `false` = js.native
+    def acceptsEncodings(encodings: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted languages or best fit based on `langs`.
@@ -470,9 +685,9 @@ object mod {
       *
       *     ['es', 'pt', 'en']
       */
-    def acceptsLanguages(): js.Array[String] | Boolean = js.native
-    def acceptsLanguages(langs: String*): String | Boolean = js.native
-    def acceptsLanguages(langs: js.Array[String]): String | Boolean = js.native
+    def acceptsLanguages(): js.Array[String] = js.native
+    def acceptsLanguages(langs: String*): String | `false` = js.native
+    def acceptsLanguages(langs: js.Array[String]): String | `false` = js.native
     
     var app: Application[DefaultState, DefaultContext] = js.native
     
@@ -497,7 +712,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any): Unit = js.native
+    def assert(value: Any): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -505,7 +720,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double): Unit = js.native
+    def assert(value: Any, status: Double): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -513,7 +728,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String): Unit = js.native
+    def assert(value: Any, status: Double, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -521,7 +736,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -529,7 +744,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -537,7 +752,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -545,7 +760,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -553,7 +768,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -561,7 +776,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -569,7 +784,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -592,7 +807,7 @@ object mod {
     /**
       * Get/Set response body.
       */
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var cookies: Cookies = js.native
     
@@ -644,7 +859,7 @@ object mod {
     /**
       * Return request header.
       */
-    var header: js.Any = js.native
+    var header: IncomingHttpHeaders = js.native
     
     /**
       * Check if a header has been written to the socket.
@@ -654,7 +869,7 @@ object mod {
     /**
       * Return request header, alias as request.header
       */
-    var headers: js.Any = js.native
+    var headers: IncomingHttpHeaders = js.native
     
     /**
       * Parse the "Host" header field host
@@ -684,7 +899,7 @@ object mod {
       * util.inspect() implementation, which
       * just returns the JSON output.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     /**
       * Request remote address. Supports X-Forwarded-For when app.proxy is true.
@@ -723,8 +938,8 @@ object mod {
       *     this.is('html'); // => false
       */
     // is(): string | boolean;
-    def is(types: String*): String | Boolean = js.native
-    def is(types: js.Array[String]): String | Boolean = js.native
+    def is(types: String*): String | `false` | Null = js.native
+    def is(types: js.Array[String]): String | `false` | Null = js.native
     
     /**
       * Get the Last-Modified date in Date form, if it exists.
@@ -733,7 +948,7 @@ object mod {
       *     this.response.lastModified = new Date();
       *     this.response.lastModified = '2013-09-13';
       */
-    var lastModified: Date = js.native
+    var lastModified: js.Date = js.native
     
     /**
       * Return parsed response Content-Length when present.
@@ -754,7 +969,7 @@ object mod {
     /**
       * Default error handling.
       */
-    def onerror(err: Error): Unit = js.native
+    def onerror(err: js.Error): Unit = js.native
     
     /**
       * Get origin of URL.
@@ -783,7 +998,7 @@ object mod {
       * Get parsed query-string.
       * Set query-string as an object.
       */
-    var query: js.Any = js.native
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any = js.native
     
     /**
       * Get/Set query string.
@@ -816,14 +1031,14 @@ object mod {
     
     var request: Request = js.native
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse[IncomingMessage] = js.native
     
     /**
       * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
       */
     var respond: js.UndefOr[Boolean] = js.native
     
-    var response: Response = js.native
+    var response: BodyUnknown & Response = js.native
     
     /**
       * Get the search string. Same as the querystring
@@ -858,7 +1073,7 @@ object mod {
     /**
       * Return the request socket.
       */
-    var socket: Socket = js.native
+    var socket: typings.node.netMod.Socket = js.native
     
     /**
       * Check if the request is stale, aka
@@ -917,7 +1132,7 @@ object mod {
       * to the getters and cause utilities such as
       * clone() to fail.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     /**
       * Return the response mime type void of
@@ -964,7 +1179,7 @@ object mod {
     
     /**
       * Check if the given `type(s)` is acceptable, returning
-      * the best match when true, otherwise `undefined`, in which
+      * the best match when true, otherwise `false`, in which
       * case you should respond with 406 "Not Acceptable".
       *
       * The `type` value may be a single mime type string
@@ -998,9 +1213,9 @@ object mod {
       *     this.accepts('html', 'json');
       *     // => "json"
       */
-    def accepts(): js.Array[String] | Boolean = js.native
-    def accepts(types: String*): String | Boolean = js.native
-    def accepts(types: js.Array[String]): String | Boolean = js.native
+    def accepts(): js.Array[String] = js.native
+    def accepts(types: String*): String | `false` = js.native
+    def accepts(types: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted charsets or best fit based on `charsets`.
@@ -1010,9 +1225,9 @@ object mod {
       *
       *     ['utf-8', 'utf-7', 'iso-8859-1']
       */
-    def acceptsCharsets(): js.Array[String] | Boolean = js.native
-    def acceptsCharsets(charsets: String*): String | Boolean = js.native
-    def acceptsCharsets(charsets: js.Array[String]): String | Boolean = js.native
+    def acceptsCharsets(): js.Array[String] = js.native
+    def acceptsCharsets(charsets: String*): String | `false` = js.native
+    def acceptsCharsets(charsets: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted encodings or best fit based on `encodings`.
@@ -1022,9 +1237,9 @@ object mod {
       *
       *     ['gzip', 'deflate']
       */
-    def acceptsEncodings(): js.Array[String] | Boolean = js.native
-    def acceptsEncodings(encodings: String*): String | Boolean = js.native
-    def acceptsEncodings(encodings: js.Array[String]): String | Boolean = js.native
+    def acceptsEncodings(): js.Array[String] = js.native
+    def acceptsEncodings(encodings: String*): String | `false` = js.native
+    def acceptsEncodings(encodings: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted languages or best fit based on `langs`.
@@ -1034,9 +1249,9 @@ object mod {
       *
       *     ['es', 'pt', 'en']
       */
-    def acceptsLanguages(): js.Array[String] | Boolean = js.native
-    def acceptsLanguages(langs: String*): String | Boolean = js.native
-    def acceptsLanguages(langs: js.Array[String]): String | Boolean = js.native
+    def acceptsLanguages(): js.Array[String] = js.native
+    def acceptsLanguages(langs: String*): String | `false` = js.native
+    def acceptsLanguages(langs: js.Array[String]): String | `false` = js.native
     
     /**
       * Check if the request is fresh, aka
@@ -1068,12 +1283,12 @@ object mod {
     /**
       * Return request header.
       */
-    var header: js.Any = js.native
+    var header: IncomingHttpHeaders = js.native
     
     /**
       * Return request header, alias as request.header
       */
-    var headers: js.Any = js.native
+    var headers: IncomingHttpHeaders = js.native
     
     /**
       * Parse the "Host" header field host
@@ -1136,8 +1351,8 @@ object mod {
       *     this.is('html'); // => false
       */
     // is(): string | boolean;
-    def is(types: String*): String | Boolean = js.native
-    def is(types: js.Array[String]): String | Boolean = js.native
+    def is(types: String*): String | `false` | Null = js.native
+    def is(types: js.Array[String]): String | `false` | Null = js.native
     
     /**
       * Get/Set request method.
@@ -1169,7 +1384,7 @@ object mod {
       * Get parsed query-string.
       * Set query-string as an object.
       */
-    var query: js.Any = js.native
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any = js.native
     
     /**
       * Get/Set query string.
@@ -1195,7 +1410,7 @@ object mod {
     /**
       * Return the request socket.
       */
-    var socket: Socket = js.native
+    var socket: typings.node.netMod.Socket = js.native
     
     /**
       * Check if the request is stale, aka
@@ -1253,7 +1468,7 @@ object mod {
     /**
       * Get/Set response body.
       */
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     /**
       * Get/Set the ETag of a response.
@@ -1285,7 +1500,7 @@ object mod {
       *     this.response.lastModified = new Date();
       *     this.response.lastModified = '2013-09-13';
       */
-    var lastModified: Date = js.native
+    var lastModified: js.Date = js.native
     
     /**
       * Return parsed response Content-Length when present.
@@ -1378,7 +1593,7 @@ object mod {
        with /**
     * Custom properties.
     */
-  /* key */ StringDictionary[js.Any]
+  /* key */ StringDictionary[Any]
   object DefaultContext {
     
     inline def apply(): DefaultContext = {
@@ -1394,7 +1609,7 @@ object mod {
     */
   type DefaultState = DefaultStateExtends
   
-  type DefaultStateExtends = js.Any
+  type DefaultStateExtends = Any
   
   @js.native
   trait ExtendableContext
@@ -1413,7 +1628,7 @@ object mod {
     
     var request: Request = js.native
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse[IncomingMessage] = js.native
     
     /**
       * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
@@ -1423,11 +1638,11 @@ object mod {
     var response: Response = js.native
   }
   
-  type Middleware[StateT, CustomT] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> */ js.Any
+  type Middleware[StateT, ContextT, ResponseBodyT] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, ContextT, ResponseBodyT>> */ Any
   
-  type Next = js.Function0[js.Promise[js.Any]]
+  type Next = js.Function0[js.Promise[Any]]
   
-  type ParameterizedContext[StateT, CustomT] = ExtendableContext & State[StateT] & CustomT
+  type ParameterizedContext[StateT, ContextT, ResponseBodyT] = (typings.koa.anon.Response[StateT, ResponseBodyT]) & ExtendableContext & ContextT
   
   @js.native
   trait Request
@@ -1444,7 +1659,7 @@ object mod {
     
     var req: IncomingMessage = js.native
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse[IncomingMessage] = js.native
     
     var response: Response = js.native
   }
@@ -1462,6 +1677,6 @@ object mod {
     
     var request: Request = js.native
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse[IncomingMessage] = js.native
   }
 }

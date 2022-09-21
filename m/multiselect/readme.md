@@ -10,10 +10,10 @@ A user-friendlier drop-in replacement for the standard select with multiple attr
 | ------------------ | :-------------: |
 | Full name          | multiselect |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 272519 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20424.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/multiselect)

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.IChild because var conflicts: events. Inlined getParent, setParent, setParent
 - typings.yandexMaps.mod.ISelectableControl because var conflicts: events. Inlined deselect, disable, enable, isEnabled, isSelected, select */ @JSImport("yandex-maps", "control.Button")
 @js.native
-class Button ()
+open class Button ()
   extends StObject
      with ICustomizable {
   def this(parameters: String) = this()

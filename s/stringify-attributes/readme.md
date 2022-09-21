@@ -1,7 +1,7 @@
 
 # Scala.js typings for stringify-attributes
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Turn an object into a string of HTML attributes
@@ -10,10 +10,10 @@ Turn an object into a string of HTML attributes
 | ------------------ | :-------------: |
 | Full name          | stringify-attributes |
 | Keywords           | html, attributes, stringify, element, tag, props, object, convert, transform |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 185884 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 76579.66666666667 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/stringify-attributes#readme)

@@ -1,6 +1,7 @@
 package typings.reactNativePopupDialog
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -15,59 +16,55 @@ object mod {
   
   @JSImport("react-native-popup-dialog", JSImport.Default)
   @js.native
-  class default () extends Dialog
+  open class default () extends Dialog
   
   @JSImport("react-native-popup-dialog", "DialogButton")
   @js.native
-  class DialogButton protected ()
-    extends Component[DialogButtonProps, js.Any, js.Any] {
+  open class DialogButton protected () extends Component[DialogButtonProps, Any, Any] {
     def this(props: DialogButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DialogButtonProps, context: js.Any) = this()
+    def this(props: DialogButtonProps, context: Any) = this()
   }
   
   @JSImport("react-native-popup-dialog", "DialogContent")
   @js.native
-  class DialogContent protected ()
-    extends Component[DialogContentProps, js.Any, js.Any] {
+  open class DialogContent protected () extends Component[DialogContentProps, Any, Any] {
     def this(props: DialogContentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DialogContentProps, context: js.Any) = this()
+    def this(props: DialogContentProps, context: Any) = this()
   }
   
   @JSImport("react-native-popup-dialog", "DialogFooter")
   @js.native
-  class DialogFooter protected ()
-    extends Component[DialogFooterProps, js.Any, js.Any] {
+  open class DialogFooter protected () extends Component[DialogFooterProps, Any, Any] {
     def this(props: DialogFooterProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DialogFooterProps, context: js.Any) = this()
+    def this(props: DialogFooterProps, context: Any) = this()
   }
   
   @JSImport("react-native-popup-dialog", "DialogTitle")
   @js.native
-  class DialogTitle protected ()
-    extends Component[DialogTitleProps, js.Any, js.Any] {
+  open class DialogTitle protected () extends Component[DialogTitleProps, Any, Any] {
     def this(props: DialogTitleProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DialogTitleProps, context: js.Any) = this()
+    def this(props: DialogTitleProps, context: Any) = this()
   }
   
   @JSImport("react-native-popup-dialog", "FadeAnimation")
   @js.native
-  class FadeAnimation () extends StObject {
+  open class FadeAnimation () extends StObject {
     def this(params: AnimationDuration) = this()
     def this(toValue: Double) = this()
     
@@ -78,19 +75,18 @@ object mod {
   
   @JSImport("react-native-popup-dialog", "Overlay")
   @js.native
-  class Overlay protected ()
-    extends Component[OverlayProps, js.Any, js.Any] {
+  open class Overlay protected () extends Component[OverlayProps, Any, Any] {
     def this(props: OverlayProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OverlayProps, context: js.Any) = this()
+    def this(props: OverlayProps, context: Any) = this()
   }
   
   @JSImport("react-native-popup-dialog", "ScaleAnimation")
   @js.native
-  class ScaleAnimation () extends StObject {
+  open class ScaleAnimation () extends StObject {
     def this(toValue: Double) = this()
     
     def createAnimations(): js.Object = js.native
@@ -100,7 +96,7 @@ object mod {
   
   @JSImport("react-native-popup-dialog", "SlideAnimation")
   @js.native
-  class SlideAnimation () extends StObject {
+  open class SlideAnimation () extends StObject {
     def this(params: SlideFrom) = this()
     def this(toValue: Double) = this()
     
@@ -125,8 +121,7 @@ object mod {
   }
   
   @js.native
-  trait Dialog
-    extends Component[DialogProps, js.Any, js.Any] {
+  trait Dialog extends Component[DialogProps, Any, Any] {
     
     def dismiss(): Unit = js.native
     def dismiss(onDismissed: js.Function0[Unit]): Unit = js.native
@@ -200,6 +195,8 @@ object mod {
   
   trait DialogContentProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object DialogContentProps {
@@ -210,6 +207,10 @@ object mod {
     }
     
     extension [Self <: DialogContentProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -222,6 +223,8 @@ object mod {
   trait DialogFooterProps extends StObject {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
@@ -238,6 +241,10 @@ object mod {
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleNull: Self = StObject.set(x, "style", null)
@@ -250,15 +257,17 @@ object mod {
     
     var animationDuration: js.UndefOr[Double] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var dialogAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.undefined
     
     var dialogStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dialogTitle: js.UndefOr[js.Any] = js.undefined
+    var dialogTitle: js.UndefOr[Any] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.undefined
+    var footer: js.UndefOr[Any] = js.undefined
     
     var hasOverlay: js.UndefOr[Boolean] = js.undefined
     
@@ -299,6 +308,10 @@ object mod {
       
       inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
       inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
@@ -315,11 +328,11 @@ object mod {
       
       inline def setDialogStyleUndefined: Self = StObject.set(x, "dialogStyle", js.undefined)
       
-      inline def setDialogTitle(value: js.Any): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
+      inline def setDialogTitle(value: Any): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
       
       inline def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
       
-      inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       

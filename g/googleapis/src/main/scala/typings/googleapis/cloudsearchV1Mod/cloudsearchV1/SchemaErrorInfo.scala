@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Error information about the response.
-  */
 trait SchemaErrorInfo extends StObject {
   
   var errorMessages: js.UndefOr[js.Array[SchemaErrorMessage]] = js.undefined
@@ -24,6 +21,6 @@ object SchemaErrorInfo {
     
     inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
     
-    inline def setErrorMessagesVarargs(value: SchemaErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
+    inline def setErrorMessagesVarargs(value: SchemaErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value*))
   }
 }

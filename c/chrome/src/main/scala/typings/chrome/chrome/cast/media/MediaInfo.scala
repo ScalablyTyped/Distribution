@@ -14,7 +14,7 @@ trait MediaInfo extends StObject {
   
   var duration: Double
   
-  var metadata: js.Any
+  var metadata: Any
   
   var streamType: StreamType
   
@@ -29,7 +29,7 @@ object MediaInfo {
     contentType: String,
     customData: js.Object,
     duration: Double,
-    metadata: js.Any,
+    metadata: Any,
     streamType: StreamType,
     textTrackStyle: TextTrackStyle,
     tracks: js.Array[Track]
@@ -48,7 +48,7 @@ object MediaInfo {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object MediaInfo {
     
     inline def setTracks(value: js.Array[Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: Track*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

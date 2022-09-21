@@ -98,7 +98,7 @@ object mod extends Shortcut {
       
       inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
       
-      inline def setContainersVarargs(value: Element*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Element*): Self = StObject.set(x, "containers", js.Array(value*))
       
       inline def setCopy(value: (js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
@@ -167,13 +167,12 @@ object mod extends Shortcut {
     def end(): Unit = js.native
     
     def on(
+      event: cancel | remove | shadow | over | out,
+      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
+    ): Drake = js.native
+    def on(
       event: cloned,
       listener: js.Function3[/* clone */ Element, /* original */ Element, /* type */ mirror | copy, Unit]
-    ): Drake = js.native
-    @JSName("on")
-    def on_cancel(
-      event: cancel,
-      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
     ): Drake = js.native
     @JSName("on")
     def on_drag(event: drag, listener: js.Function2[/* el */ Element, /* source */ Element, Unit]): Drake = js.native
@@ -189,26 +188,6 @@ object mod extends Shortcut {
           /* sibling */ Element, 
           Unit
         ]
-    ): Drake = js.native
-    @JSName("on")
-    def on_out(
-      event: out,
-      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
-    ): Drake = js.native
-    @JSName("on")
-    def on_over(
-      event: over,
-      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
-    ): Drake = js.native
-    @JSName("on")
-    def on_remove(
-      event: remove,
-      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
-    ): Drake = js.native
-    @JSName("on")
-    def on_shadow(
-      event: shadow,
-      listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
     ): Drake = js.native
     
     def remove(): Unit = js.native

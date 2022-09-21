@@ -20,7 +20,7 @@ object lineByLineRendererMod {
   
   @JSImport("diff2html/lib/line-by-line-renderer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LineByLineRenderer {
     def this(hoganUtils: typings.diff2html.hoganjsUtilsMod.default) = this()
@@ -144,7 +144,7 @@ object lineByLineRendererMod {
     
     def applyRematchMatching(oldLines: js.Array[DiffLine], newLines: js.Array[DiffLine], matcher: MatcherFn[DiffLine]): js.Array[js.Array[js.Array[DiffLine]]] = js.native
     
-    /* private */ val config: js.Any = js.native
+    /* private */ val config: Any = js.native
     
     def generateEmptyDiff(): String = js.native
     
@@ -158,7 +158,7 @@ object lineByLineRendererMod {
     def generateSingleLineHtml(): String = js.native
     def generateSingleLineHtml(line: DiffPreparedLine): String = js.native
     
-    /* private */ val hoganUtils: js.Any = js.native
+    /* private */ val hoganUtils: Any = js.native
     
     def makeFileDiffHtml(file: DiffFile, diffs: String): String = js.native
     

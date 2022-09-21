@@ -1,13 +1,12 @@
 package typings.blueprintjsTimezone
 
-import typings.blueprintjsTimezone.anon.PartialITimezonePickerPro
+import typings.blueprintjsTimezone.anon.PartialTimezonePickerProp
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.name
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
 import typings.blueprintjsTimezone.timezoneMetadataMod.ITimezoneMetadata
-import typings.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
-import typings.std.Date
+import typings.blueprintjsTimezone.timezonePickerMod.TimezonePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,10 +61,10 @@ object mod {
   
   @JSImport("@blueprintjs/timezone", "TimezonePicker")
   @js.native
-  class TimezonePicker protected ()
+  open class TimezonePicker protected ()
     extends typings.blueprintjsTimezone.componentsMod.TimezonePicker {
-    def this(props: ITimezonePickerProps) = this()
-    def this(props: ITimezonePickerProps, context: js.Any) = this()
+    def this(props: TimezonePickerProps) = this()
+    def this(props: TimezonePickerProps, context: Any) = this()
   }
   /* static members */
   object TimezonePicker {
@@ -76,8 +75,8 @@ object mod {
     
     @JSImport("@blueprintjs/timezone", "TimezonePicker.defaultProps")
     @js.native
-    def defaultProps: PartialITimezonePickerPro = js.native
-    inline def defaultProps_=(x: PartialITimezonePickerPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTimezonePickerProp = js.native
+    inline def defaultProps_=(x: PartialTimezonePickerProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/timezone", "TimezonePicker.displayName")
     @js.native
@@ -86,5 +85,5 @@ object mod {
   }
   
   inline def getTimezoneMetadata(timezone: String): ITimezoneMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any]).asInstanceOf[ITimezoneMetadata]
-  inline def getTimezoneMetadata(timezone: String, date: Date): ITimezoneMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[ITimezoneMetadata]
+  inline def getTimezoneMetadata(timezone: String, date: js.Date): ITimezoneMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[ITimezoneMetadata]
 }

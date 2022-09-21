@@ -21,11 +21,18 @@ trait PlaylistSnippet extends StObject {
   /** Localized title and description, read-only. */
   var localized: js.UndefOr[PlaylistLocalization] = js.undefined
   
-  /** The date and time that the playlist was created. The value is specified in ISO 8601 format. */
+  /** The date and time that the playlist was created. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** Keyword tags associated with the playlist. */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Note: if the playlist has a custom thumbnail, this field will not be populated. The video id selected by the user that will be used as the thumbnail of this playlist. This field
+    * defaults to the first publicly viewable video in the playlist, if: 1. The user has never selected a video to be the thumbnail of the playlist. 2. The user selects a video to be the
+    * thumbnail, and then removes that video from the playlist. 3. The user selects a non-owned video to be the thumbnail, but that video becomes private, or gets deleted.
+    */
+  var thumbnailVideoId: js.UndefOr[String] = js.undefined
   
   /**
     * A map of thumbnail images associated with the playlist. For each object in the map, the key is the name of the thumbnail image, and the value is an object that contains other
@@ -73,7 +80,11 @@ object PlaylistSnippet {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setThumbnailVideoId(value: String): Self = StObject.set(x, "thumbnailVideoId", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailVideoIdUndefined: Self = StObject.set(x, "thumbnailVideoId", js.undefined)
     
     inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     

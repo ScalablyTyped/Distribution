@@ -10,10 +10,10 @@ The lodash method `_.countBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.countby |
 | Keywords           | lodash-modularized, countby |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 286159 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37687.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

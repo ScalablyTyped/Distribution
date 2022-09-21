@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a table in a Word document.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.Table")
 @js.native
-class Table ()
+open class Table ()
   extends StObject
      with typings.officeJs.Word.Table {
   

@@ -44,7 +44,7 @@ object AccountBrands {
     
     inline def setBrandsVarargs(
       value: (/* Information about a brand that is associated with an account. A brand applies custom styles and text to an envelope. */ Brand)*
-    ): Self = StObject.set(x, "brands", js.Array(value :_*))
+    ): Self = StObject.set(x, "brands", js.Array(value*))
     
     inline def setRecipientBrandIdDefault(value: String): Self = StObject.set(x, "recipientBrandIdDefault", value.asInstanceOf[js.Any])
     

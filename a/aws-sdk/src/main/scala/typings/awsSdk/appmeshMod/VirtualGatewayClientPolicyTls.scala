@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VirtualGatewayClientPolicyTls extends StObject {
   
   /**
+    * A reference to an object that represents a virtual gateway's client's Transport Layer Security (TLS) certificate.
+    */
+  var certificate: js.UndefOr[VirtualGatewayClientTlsCertificate] = js.undefined
+  
+  /**
     * Whether the policy is enforced. The default is True, if a value isn't specified.
     */
   var enforce: js.UndefOr[Boolean] = js.undefined
@@ -17,7 +22,7 @@ trait VirtualGatewayClientPolicyTls extends StObject {
   var ports: js.UndefOr[PortSet] = js.undefined
   
   /**
-    * A reference to an object that represents a TLS validation context.
+    * A reference to an object that represents a Transport Layer Security (TLS) validation context.
     */
   var validation: VirtualGatewayTlsValidationContext
 }
@@ -30,6 +35,10 @@ object VirtualGatewayClientPolicyTls {
   
   extension [Self <: VirtualGatewayClientPolicyTls](x: Self) {
     
+    inline def setCertificate(value: VirtualGatewayClientTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    
     inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     
     inline def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
@@ -38,7 +47,7 @@ object VirtualGatewayClientPolicyTls {
     
     inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    inline def setPortsVarargs(value: PortNumber*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: PortNumber*): Self = StObject.set(x, "ports", js.Array(value*))
     
     inline def setValidation(value: VirtualGatewayTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }

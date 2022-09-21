@@ -3,6 +3,7 @@ package typings.bunyanFormat
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import typings.bunyanFormat.bunyanFormatStrings.bunyan
+import typings.bunyanFormat.bunyanFormatStrings.inspect
 import typings.bunyanFormat.bunyanFormatStrings.json
 import typings.bunyanFormat.bunyanFormatStrings.long
 import typings.bunyanFormat.bunyanFormatStrings.short
@@ -18,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("bunyan-format", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BunyanFormatWritable {
+  open class ^ protected () extends BunyanFormatWritable {
     // tslint:disable-next-line no-misused-new
     def this(options: Options) = this()
     def this(options: Options, output: Writable) = this()
@@ -59,7 +60,7 @@ object mod extends Shortcut {
       
       var levelInString: js.UndefOr[Boolean] = js.undefined
       
-      var outputMode: js.UndefOr[short | long | simple | json | bunyan] = js.undefined
+      var outputMode: js.UndefOr[short | long | simple | json | bunyan | inspect] = js.undefined
     }
     object Options {
       
@@ -86,7 +87,7 @@ object mod extends Shortcut {
         
         inline def setLevelInStringUndefined: Self = StObject.set(x, "levelInString", js.undefined)
         
-        inline def setOutputMode(value: short | long | simple | json | bunyan): Self = StObject.set(x, "outputMode", value.asInstanceOf[js.Any])
+        inline def setOutputMode(value: short | long | simple | json | bunyan | inspect): Self = StObject.set(x, "outputMode", value.asInstanceOf[js.Any])
         
         inline def setOutputModeUndefined: Self = StObject.set(x, "outputMode", js.undefined)
       }

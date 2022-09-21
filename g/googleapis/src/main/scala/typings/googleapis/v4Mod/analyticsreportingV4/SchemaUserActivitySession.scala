@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This represents a user session performed on a specific device at a certain
-  * time over a period of time.
-  */
 trait SchemaUserActivitySession extends StObject {
   
   /**
@@ -16,33 +12,29 @@ trait SchemaUserActivitySession extends StObject {
   var activities: js.UndefOr[js.Array[SchemaActivity]] = js.undefined
   
   /**
-    * The data source of a hit. By default, hits sent from analytics.js are
-    * reported as &quot;web&quot; and hits sent from the mobile SDKs are
-    * reported as &quot;app&quot;. These values can be overridden in the
-    * Measurement Protocol.
+    * The data source of a hit. By default, hits sent from analytics.js are reported as "web" and hits sent from the mobile SDKs are reported as "app". These values can be overridden in the Measurement Protocol.
     */
-  var dataSource: js.UndefOr[String] = js.undefined
+  var dataSource: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of device used: &quot;mobile&quot;, &quot;tablet&quot; etc.
+    * The type of device used: "mobile", "tablet" etc.
     */
-  var deviceCategory: js.UndefOr[String] = js.undefined
+  var deviceCategory: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Platform on which the activity happened: &quot;android&quot;,
-    * &quot;ios&quot; etc.
+    * Platform on which the activity happened: "android", "ios" etc.
     */
-  var platform: js.UndefOr[String] = js.undefined
+  var platform: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Date of this session in ISO-8601 format.
     */
-  var sessionDate: js.UndefOr[String] = js.undefined
+  var sessionDate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Unique ID of the session.
     */
-  var sessionId: js.UndefOr[String] = js.undefined
+  var sessionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUserActivitySession {
   
@@ -57,25 +49,35 @@ object SchemaUserActivitySession {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: SchemaActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: SchemaActivity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     inline def setDeviceCategory(value: String): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
     
+    inline def setDeviceCategoryNull: Self = StObject.set(x, "deviceCategory", null)
+    
     inline def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformNull: Self = StObject.set(x, "platform", null)
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     inline def setSessionDate(value: String): Self = StObject.set(x, "sessionDate", value.asInstanceOf[js.Any])
     
+    inline def setSessionDateNull: Self = StObject.set(x, "sessionDate", null)
+    
     inline def setSessionDateUndefined: Self = StObject.set(x, "sessionDate", js.undefined)
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    
+    inline def setSessionIdNull: Self = StObject.set(x, "sessionId", null)
     
     inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }

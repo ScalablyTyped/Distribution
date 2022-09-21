@@ -10,10 +10,10 @@ The lodash method `_.includes` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.includes |
 | Keywords           | lodash-modularized, includes |
-| # releases         | 0 |
-| # dependents       | 261 |
-| # downloads        | 195989842 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6681480333333336E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

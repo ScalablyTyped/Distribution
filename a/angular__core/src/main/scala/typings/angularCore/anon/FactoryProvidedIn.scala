@@ -12,7 +12,7 @@ trait FactoryProvidedIn[T] extends StObject {
   
   def factory(): T
   
-  var providedIn: js.UndefOr[Type[js.Any] | root | platform | any | Null] = js.undefined
+  var providedIn: js.UndefOr[Type[Any] | root | platform | any | Null] = js.undefined
 }
 object FactoryProvidedIn {
   
@@ -25,7 +25,7 @@ object FactoryProvidedIn {
     
     inline def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
-    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     

@@ -8,5 +8,5 @@ object serverSideEncryptionConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_ServerSideEncryptionConfiguration", "_ServerSideEncryptionConfiguration")
   @js.native
-  val ServerSideEncryptionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ServerSideEncryptionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

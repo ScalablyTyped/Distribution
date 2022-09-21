@@ -18,7 +18,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.AudioDeviceController")
   @js.native
-  class AudioDeviceController ()
+  open class AudioDeviceController ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.AudioDeviceController {
     
@@ -52,7 +52,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.CallControl")
   @js.native
-  class CallControl ()
+  open class CallControl ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.CallControl {
     
@@ -72,22 +72,22 @@ object Devices {
     override def indicateNewOutgoingCall(): Double = js.native
     
     /* CompleteClass */
-    var onanswerrequested: js.Any = js.native
+    var onanswerrequested: Any = js.native
     
     /* CompleteClass */
-    var onaudiotransferrequested: js.Any = js.native
+    var onaudiotransferrequested: Any = js.native
     
     /* CompleteClass */
-    var ondialrequested: js.Any = js.native
+    var ondialrequested: Any = js.native
     
     /* CompleteClass */
-    var onhanguprequested: js.Any = js.native
+    var onhanguprequested: Any = js.native
     
     /* CompleteClass */
-    var onkeypadpressed: js.Any = js.native
+    var onkeypadpressed: Any = js.native
     
     /* CompleteClass */
-    var onredialrequested: js.Any = js.native
+    var onredialrequested: Any = js.native
   }
   /* static members */
   object CallControl {
@@ -103,7 +103,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs")
   @js.native
-  class DefaultAudioCaptureDeviceChangedEventArgs ()
+  open class DefaultAudioCaptureDeviceChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs {
     
@@ -116,7 +116,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs")
   @js.native
-  class DefaultAudioRenderDeviceChangedEventArgs ()
+  open class DefaultAudioRenderDeviceChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs {
     
@@ -129,12 +129,12 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.DialRequestedEventArgs")
   @js.native
-  class DialRequestedEventArgs ()
+  open class DialRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.DialRequestedEventArgs {
     
     /* CompleteClass */
-    var contact: js.Any = js.native
+    var contact: Any = js.native
     
     /* CompleteClass */
     override def handled(): Unit = js.native
@@ -142,7 +142,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
   @js.native
-  class KeypadPressedEventArgs ()
+  open class KeypadPressedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.KeypadPressedEventArgs {
     
@@ -152,7 +152,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.MediaDevice")
   @js.native
-  class MediaDevice ()
+  open class MediaDevice ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.MediaDevice
   /* static members */
@@ -174,18 +174,18 @@ object Devices {
     
     @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiocapturedevicechanged")
     @js.native
-    def ondefaultaudiocapturedevicechanged: js.Any = js.native
-    inline def ondefaultaudiocapturedevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiocapturedevicechanged")(x.asInstanceOf[js.Any])
+    def ondefaultaudiocapturedevicechanged: Any = js.native
+    inline def ondefaultaudiocapturedevicechanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiocapturedevicechanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiorenderdevicechanged")
     @js.native
-    def ondefaultaudiorenderdevicechanged: js.Any = js.native
-    inline def ondefaultaudiorenderdevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
+    def ondefaultaudiorenderdevicechanged: Any = js.native
+    inline def ondefaultaudiorenderdevicechanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Media.Devices.MediaDeviceControl")
   @js.native
-  class MediaDeviceControl ()
+  open class MediaDeviceControl ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.MediaDeviceControl {
     
@@ -207,7 +207,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.MediaDeviceControlCapabilities")
   @js.native
-  class MediaDeviceControlCapabilities ()
+  open class MediaDeviceControlCapabilities ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.MediaDeviceControlCapabilities {
     
@@ -232,7 +232,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.RedialRequestedEventArgs")
   @js.native
-  class RedialRequestedEventArgs ()
+  open class RedialRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.RedialRequestedEventArgs {
     
@@ -282,7 +282,7 @@ object Devices {
   
   @JSGlobal("Windows.Media.Devices.VideoDeviceController")
   @js.native
-  class VideoDeviceController ()
+  open class VideoDeviceController ()
     extends StObject
        with typings.winrt.Windows.Media.Devices.VideoDeviceController {
     
@@ -305,7 +305,7 @@ object Devices {
     override def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
     
     /* CompleteClass */
-    override def getDeviceProperty(propertyId: String): js.Any = js.native
+    override def getDeviceProperty(propertyId: String): Any = js.native
     
     /* CompleteClass */
     override def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
@@ -320,7 +320,7 @@ object Devices {
     var roll: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
     
     /* CompleteClass */
-    override def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit = js.native
+    override def setDeviceProperty(propertyId: String, propertyValue: Any): Unit = js.native
     
     /* CompleteClass */
     override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native

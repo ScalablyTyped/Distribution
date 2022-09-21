@@ -1,11 +1,10 @@
 package typings.reactRouterTabs
 
-import typings.history.mod.Location
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
+import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactRouterDom.mod.NavLinkProps
+import typings.remixRunRouter.historyMod.To
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +45,7 @@ object mod {
   
   trait NavTabProps
     extends StObject
-       with NavLinkProps[LocationState] {
+       with NavLinkProps {
     
     var allowClickOnActive: js.UndefOr[Boolean] = js.undefined
     
@@ -54,12 +53,13 @@ object mod {
     var `aria-current_NavTabProps`: js.UndefOr[AriaCurrent] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    @JSName("style")
+    var style_NavTabProps: js.UndefOr[CSSProperties] = js.undefined
   }
   object NavTabProps {
     
-    inline def apply(
-      to: LocationDescriptor[LocationState] | (js.Function1[/* location */ Location[LocationState], LocationDescriptor[LocationState]])
-    ): NavTabProps = {
+    inline def apply(to: To): NavTabProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavTabProps]
     }
@@ -77,6 +77,10 @@ object mod {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

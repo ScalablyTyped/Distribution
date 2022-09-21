@@ -11,7 +11,7 @@ trait Auth extends StObject {
     */
   var method: String
   
-  var oauth_meta: js.UndefOr[js.Any] = js.undefined
+  var oauth_meta: js.UndefOr[Any] = js.undefined
   
   /**
     * Permissions for this user e.g. "wallet:user:read"
@@ -29,12 +29,12 @@ object Auth {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setOauth_meta(value: js.Any): Self = StObject.set(x, "oauth_meta", value.asInstanceOf[js.Any])
+    inline def setOauth_meta(value: Any): Self = StObject.set(x, "oauth_meta", value.asInstanceOf[js.Any])
     
     inline def setOauth_metaUndefined: Self = StObject.set(x, "oauth_meta", js.undefined)
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
   }
 }

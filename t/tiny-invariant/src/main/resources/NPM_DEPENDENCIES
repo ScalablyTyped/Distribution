@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tiny-invariant" : "1.1.0"
+      "tiny-invariant" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tiny-invariant" : "1.1.0"
+      "tiny-invariant" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

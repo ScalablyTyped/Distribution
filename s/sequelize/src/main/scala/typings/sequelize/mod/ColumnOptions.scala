@@ -27,7 +27,7 @@ trait ColumnOptions extends StObject {
   /**
     * A literal default value, a JavaScript function, or an SQL function (see `sequelize.fn`)
     */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /**
     *  If set, sequelize will map the attribute name to a different name in the database
@@ -47,7 +47,7 @@ object ColumnOptions {
     
     inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

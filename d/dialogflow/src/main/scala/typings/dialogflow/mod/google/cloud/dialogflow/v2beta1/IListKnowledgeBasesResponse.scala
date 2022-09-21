@@ -28,7 +28,7 @@ object IListKnowledgeBasesResponse {
     
     inline def setKnowledgeBasesUndefined: Self = StObject.set(x, "knowledgeBases", js.undefined)
     
-    inline def setKnowledgeBasesVarargs(value: IKnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value :_*))
+    inline def setKnowledgeBasesVarargs(value: IKnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -4,21 +4,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done. */
+/**
+  * The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done.
+  * @deprecated This interface is deprecated in the Navigation Timing Level 2 specification. Please use the PerformanceNavigationTiming interface instead.
+  */
 trait PerformanceNavigation extends StObject {
   
+  /* standard dom */
   val TYPE_BACK_FORWARD: Double
   
+  /* standard dom */
   val TYPE_NAVIGATE: Double
   
+  /* standard dom */
   val TYPE_RELOAD: Double
   
+  /* standard dom */
   val TYPE_RESERVED: Double
   
+  /** @deprecated */
+  /* standard dom */
   val redirectCount: Double
   
-  def toJSON(): js.Any
+  /** @deprecated */
+  /* standard dom */
+  def toJSON(): Any
   
+  /** @deprecated */
+  /* standard dom */
   val `type`: Double
 }
 object PerformanceNavigation {
@@ -29,7 +42,7 @@ object PerformanceNavigation {
     TYPE_RELOAD: Double,
     TYPE_RESERVED: Double,
     redirectCount: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     `type`: Double
   ): PerformanceNavigation = {
     val __obj = js.Dynamic.literal(TYPE_BACK_FORWARD = TYPE_BACK_FORWARD.asInstanceOf[js.Any], TYPE_NAVIGATE = TYPE_NAVIGATE.asInstanceOf[js.Any], TYPE_RELOAD = TYPE_RELOAD.asInstanceOf[js.Any], TYPE_RESERVED = TYPE_RESERVED.asInstanceOf[js.Any], redirectCount = redirectCount.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
@@ -49,7 +62,7 @@ object PerformanceNavigation {
     
     inline def setTYPE_RESERVED(value: Double): Self = StObject.set(x, "TYPE_RESERVED", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

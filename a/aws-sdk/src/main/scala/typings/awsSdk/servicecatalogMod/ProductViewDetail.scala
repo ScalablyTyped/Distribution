@@ -9,7 +9,7 @@ trait ProductViewDetail extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the product.
@@ -35,7 +35,7 @@ object ProductViewDetail {
   
   extension [Self <: ProductViewDetail](x: Self) {
     
-    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

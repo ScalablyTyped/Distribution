@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "os-name" : "4.0.0"
+      "os-name" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "os-name" : "4.0.0"
+      "os-name" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "FacebookInstantGamesPlugin")
 @js.native
-class FacebookInstantGamesPlugin protected ()
+open class FacebookInstantGamesPlugin protected ()
   extends StObject
      with typings.phaser.Phaser.FacebookInstantGamesPlugin {
   /**

@@ -76,7 +76,7 @@ object HistogramConfig {
     
     inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    inline def setBarCreatedFunction(value: (/* index */ Double, /* element */ js.Any) => Unit): Self = StObject.set(x, "barCreatedFunction", js.Any.fromFunction2(value))
+    inline def setBarCreatedFunction(value: (/* index */ Double, /* element */ Any) => scala.Unit): Self = StObject.set(x, "barCreatedFunction", js.Any.fromFunction2(value))
     
     inline def setBarCreatedFunctionUndefined: Self = StObject.set(x, "barCreatedFunction", js.undefined)
     
@@ -84,10 +84,10 @@ object HistogramConfig {
     
     inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setDataLineCreatedFunction(
-      value: (/* lineElement */ js.Any, /* labelElement */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit
+      value: (/* lineElement */ Any, /* labelElement */ js.UndefOr[Any], /* index */ js.UndefOr[Double]) => scala.Unit
     ): Self = StObject.set(x, "dataLineCreatedFunction", js.Any.fromFunction3(value))
     
     inline def setDataLineCreatedFunctionUndefined: Self = StObject.set(x, "dataLineCreatedFunction", js.undefined)
@@ -96,7 +96,7 @@ object HistogramConfig {
     
     inline def setDataLinesUndefined: Self = StObject.set(x, "dataLines", js.undefined)
     
-    inline def setDataLinesVarargs(value: HistogramConfigDataLines*): Self = StObject.set(x, "dataLines", js.Array(value :_*))
+    inline def setDataLinesVarargs(value: HistogramConfigDataLines*): Self = StObject.set(x, "dataLines", js.Array(value*))
     
     inline def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     

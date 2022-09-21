@@ -22,6 +22,6 @@ object Explicit {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
   }
 }

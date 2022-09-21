@@ -19,7 +19,7 @@ trait Snapshot extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[Any]
   ] = js.undefined
   
   /** The name of the snapshot. */
@@ -44,7 +44,7 @@ object Snapshot {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

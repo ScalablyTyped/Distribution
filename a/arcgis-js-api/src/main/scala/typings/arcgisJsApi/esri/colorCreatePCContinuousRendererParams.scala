@@ -14,6 +14,8 @@ trait colorCreatePCContinuousRendererParams
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
+    * @default gray
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
@@ -27,6 +29,8 @@ trait colorCreatePCContinuousRendererParams
   
   /**
     * The number of points per inch in the view.
+    *
+    * @default 25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
@@ -55,6 +59,8 @@ trait colorCreatePCContinuousRendererParams
   
   /**
     * The size of each point expressed as a percentage.
+    *
+    * @default 100%
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.RootPullDecl")
 @js.native
-class RootPullDecl protected ()
+open class RootPullDecl protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.RootPullDecl {
   def this(
@@ -20,13 +20,13 @@ class RootPullDecl protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* CompleteClass */
   override def _getEnclosingDeclFromParentDecl(): typings.typescriptServices.TypeScript.PullDecl = js.native
   
   /* private */ /* CompleteClass */
-  var _isExternalModule: js.Any = js.native
+  var _isExternalModule: Any = js.native
   
   /* CompleteClass */
   override def addChildDecl(childDecl: typings.typescriptServices.TypeScript.PullDecl): Unit = js.native
@@ -50,16 +50,16 @@ class RootPullDecl protected ()
   var childDeclValueCache: IIndexable[js.Array[typings.typescriptServices.TypeScript.PullDecl]] = js.native
   
   /* private */ /* CompleteClass */
-  var childDecls: js.Any = js.native
+  var childDecls: Any = js.native
   
   /* private */ /* CompleteClass */
-  var containerDecl: js.Any = js.native
+  var containerDecl: Any = js.native
   
   /* private */ /* CompleteClass */
-  var declDisplayName: js.Any = js.native
+  var declDisplayName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var declGroups: js.Any = js.native
+  var declGroups: Any = js.native
   
   /* CompleteClass */
   var declID: Double = js.native
@@ -74,7 +74,7 @@ class RootPullDecl protected ()
   var flags: typings.typescriptServices.TypeScript.PullElementFlags = js.native
   
   /* private */ /* CompleteClass */
-  override def getChildDeclCache(declKind: js.Any): js.Any = js.native
+  override def getChildDeclCache(declKind: Any): Any = js.native
   
   /* CompleteClass */
   override def getChildDecls(): js.Array[typings.typescriptServices.TypeScript.PullDecl] = js.native
@@ -155,8 +155,8 @@ class RootPullDecl protected ()
   override def setValueDecl(valDecl: typings.typescriptServices.TypeScript.PullDecl): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var synthesizedValDecl: js.Any = js.native
+  var synthesizedValDecl: Any = js.native
   
   /* private */ /* CompleteClass */
-  var typeParameters: js.Any = js.native
+  var typeParameters: Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("azdata", "SqlThemeIcon")
 @js.native
-class SqlThemeIcon protected () extends StObject {
+open class SqlThemeIcon protected () extends StObject {
   /* private */ def this(id: String) = this()
   
   /**

@@ -30,7 +30,7 @@ object Diagnostic {
     
     inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
+    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value*))
     
     inline def setReportsDeprecated(value: js.Object): Self = StObject.set(x, "reportsDeprecated", value.asInstanceOf[js.Any])
     

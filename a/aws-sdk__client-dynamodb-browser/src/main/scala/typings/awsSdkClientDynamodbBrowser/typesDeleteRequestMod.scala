@@ -3,7 +3,6 @@ package typings.awsSdkClientDynamodbBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientDynamodbBrowser.typesAttributeValueMod.AttributeValue
 import typings.awsSdkClientDynamodbBrowser.typesAttributeValueMod.UnmarshalledAttributeValue
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,18 +14,18 @@ object typesDeleteRequestMod {
     /**
       * <p>A map of attribute name to attribute values, representing the primary key of the item to delete. All of the table's primary key attributes must be specified, and their data types must match those of the table's key schema.</p>
       */
-    var Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])
+    var Key: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])
   }
   object DeleteRequest {
     
-    inline def apply(Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): DeleteRequest = {
+    inline def apply(Key: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): DeleteRequest = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteRequest]
     }
     
     extension [Self <: DeleteRequest](x: Self) {
       
-      inline def setKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
   }
   

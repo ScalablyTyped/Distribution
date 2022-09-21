@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PolylineConstructor
   extends StObject
-     with Instantiable0[Polyline]
+     with /**
+  * A polyline contains an array of [paths](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#paths) and [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#spatialReference).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html)
+  */
+Instantiable0[Polyline]
      with Instantiable1[/* properties */ PolylineProperties, Polyline] {
   
-  def fromJSON(json: js.Any): Polyline = js.native
+  def fromJSON(json: Any): Polyline = js.native
 }

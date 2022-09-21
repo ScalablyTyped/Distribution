@@ -2,7 +2,18 @@ package typings.sentryHub
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryHub.hubMod.Hub
-import typings.sentryTypes.sessionMod.SessionStatus
+import typings.sentryHub.scopeMod.Scope
+import typings.sentryTypes.breadcrumbMod.Breadcrumb
+import typings.sentryTypes.breadcrumbMod.BreadcrumbHint
+import typings.sentryTypes.eventMod.Event
+import typings.sentryTypes.eventMod.EventHint
+import typings.sentryTypes.integrationMod.Integration
+import typings.sentryTypes.sessionMod.SerializedSession
+import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
+import typings.sentryTypes.transactionMod.CustomSamplingContext
+import typings.sentryTypes.transactionMod.Transaction
+import typings.sentryTypes.transactionMod.TransactionContext
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,74 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Attrs extends StObject {
-    
-    var attrs: js.UndefOr[Environment] = js.undefined
-    
-    var did: js.UndefOr[String] = js.undefined
-    
-    var duration: Double
-    
-    var errors: Double
-    
-    var init: Boolean
-    
-    var sid: String
-    
-    var started: String
-    
-    var status: SessionStatus
-    
-    var timestamp: String
-  }
-  object Attrs {
-    
-    inline def apply(
-      duration: Double,
-      errors: Double,
-      init: Boolean,
-      sid: String,
-      started: String,
-      status: SessionStatus,
-      timestamp: String
-    ): Attrs = {
-      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Attrs]
-    }
-    
-    extension [Self <: Attrs](x: Self) {
-      
-      inline def setAttrs(value: Environment): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
-      
-      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
-      
-      inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
-      
-      inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
-      
-      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-      
-      inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
-      
-      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
-      
-      inline def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
-      
-      inline def setStatus(value: SessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-      
-      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Dictkey
     extends StObject
        with /** Extension methods for the hub, which are bound to the current Hub instance */
   /* key */ StringDictionary[js.Function] {
     
     /** Hack to prevent bundlers from breaking our usage of the domain package in the cross-platform Hub package */
-    var domain: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var domain: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object Dictkey {
     
@@ -88,57 +38,22 @@ object anon {
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setDomain(value: StringDictionary[js.Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: StringDictionary[Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     }
   }
   
-  trait Environment extends StObject {
-    
-    var environment: js.UndefOr[String] = js.undefined
-    
-    var ip_address: js.UndefOr[String] = js.undefined
-    
-    var release: js.UndefOr[String] = js.undefined
-    
-    var user_agent: js.UndefOr[String] = js.undefined
-  }
-  object Environment {
-    
-    inline def apply(): Environment = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Environment]
-    }
-    
-    extension [Self <: Environment](x: Self) {
-      
-      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
-      
-      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
-      
-      inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
-      
-      inline def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
-      
-      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
-      
-      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
-      
-      inline def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
-      
-      inline def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
-    }
-  }
-  
   trait Extensions extends StObject {
+    
+    var extensions: js.UndefOr[Dictkey] = js.undefined
+    
+    var hub: js.UndefOr[Hub] = js.undefined
     
     /**
       * Extra Hub properties injected by various SDKs
       */
-    var extensions: js.UndefOr[Dictkey] = js.undefined
-    
-    var hub: js.UndefOr[Hub] = js.undefined
+    var integrations: js.UndefOr[js.Array[Integration]] = js.undefined
   }
   object Extensions {
     
@@ -156,7 +71,74 @@ object anon {
       inline def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
       inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+      
+      inline def setIntegrations(value: js.Array[Integration]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value*))
     }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(exception: Any): String = js.native
+    def apply(exception: Any, hint: EventHint): String = js.native
+  }
+  
+  @js.native
+  trait FnCallBreadcrumbHint extends StObject {
+    
+    def apply(breadcrumb: Breadcrumb): Unit = js.native
+    def apply(breadcrumb: Breadcrumb, hint: BreadcrumbHint): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallCallback extends StObject {
+    
+    def apply(
+      callback: js.Function1[(/* scope */ Scope) | (/* scope */ typings.sentryTypes.scopeMod.Scope), Unit]
+    ): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallContextCustomSamplingContext extends StObject {
+    
+    def apply(context: TransactionContext): Transaction = js.native
+    def apply(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = js.native
+  }
+  
+  @js.native
+  trait FnCallEventHint extends StObject {
+    
+    def apply(event: Event): String = js.native
+    def apply(event: Event, hint: EventHint): String = js.native
+  }
+  
+  @js.native
+  trait FnCallMessageLevelHint extends StObject {
+    
+    def apply(message: String): String = js.native
+    def apply(message: String, level: Unit, hint: EventHint): String = js.native
+    def apply(message: String, level: Severity): String = js.native
+    def apply(message: String, level: SeverityLevel): String = js.native
+    def apply(message: String, level: SeverityLevel, hint: EventHint): String = js.native
+    def apply(message: String, level: Severity, hint: EventHint): String = js.native
+  }
+  
+  @js.native
+  trait FnCallNameContext extends StObject {
+    
+    def apply(name: String): Unit = js.native
+    def apply(name: String, context: StringDictionary[Any]): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallUser extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply(user: User): Unit = js.native
   }
   
   /* Inlined std.Omit<@sentry/types.@sentry/types.SessionContext, 'started' | 'status'> */
@@ -170,6 +152,10 @@ object anon {
     
     var errors: js.UndefOr[Double] = js.undefined
     
+    var ignoreDuration: js.UndefOr[Boolean] = js.undefined
+    
+    var init: js.UndefOr[Boolean] = js.undefined
+    
     var ipAddress: js.UndefOr[String] = js.undefined
     
     var release: js.UndefOr[String] = js.undefined
@@ -177,6 +163,8 @@ object anon {
     var sid: js.UndefOr[String] = js.undefined
     
     var timestamp: js.UndefOr[Double] = js.undefined
+    
+    var toJSON: js.UndefOr[js.Function0[SerializedSession]] = js.undefined
     
     var user: js.UndefOr[User | Null] = js.undefined
     
@@ -207,6 +195,14 @@ object anon {
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
+      inline def setIgnoreDuration(value: Boolean): Self = StObject.set(x, "ignoreDuration", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDurationUndefined: Self = StObject.set(x, "ignoreDuration", js.undefined)
+      
+      inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      
       inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
       inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
@@ -222,6 +218,10 @@ object anon {
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      
+      inline def setToJSON(value: () => SerializedSession): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      
+      inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
       
       inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       

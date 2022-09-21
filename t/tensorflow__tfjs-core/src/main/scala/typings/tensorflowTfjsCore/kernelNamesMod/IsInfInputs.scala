@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_names.UnaryInputs */
 trait IsInfInputs extends StObject {
   
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[scala.Any] = js.undefined
 }
 object IsInfInputs {
   
@@ -18,7 +18,7 @@ object IsInfInputs {
   
   extension [Self <: IsInfInputs](x: Self) {
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }

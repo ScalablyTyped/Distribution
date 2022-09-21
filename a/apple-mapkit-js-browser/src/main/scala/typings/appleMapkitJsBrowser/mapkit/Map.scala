@@ -10,6 +10,8 @@ import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`long-press`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`map-type-change`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`region-change-end`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`region-change-start`
+import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`rotation-end`
+import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`rotation-start`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`scroll-end`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`scroll-start`
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`single-tap`
@@ -164,6 +166,28 @@ trait Map extends StObject {
   @JSName("addEventListener")
   def addEventListener_regionchangestart[T](
     `type`: `region-change-start`,
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type], Unit],
+    thisObject: T
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rotationend[T](
+    `type`: `rotation-end`,
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type], Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rotationend[T](
+    `type`: `rotation-end`,
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type], Unit],
+    thisObject: T
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rotationstart[T](
+    `type`: `rotation-start`,
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type], Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rotationstart[T](
+    `type`: `rotation-start`,
     listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type], Unit],
     thisObject: T
   ): Unit = js.native
@@ -536,6 +560,28 @@ trait Map extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_regionchangestart[T](
     `type`: `region-change-start`,
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type], Unit],
+    thisObject: T
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rotationend[T](
+    `type`: `rotation-end`,
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type], Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rotationend[T](
+    `type`: `rotation-end`,
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type], Unit],
+    thisObject: T
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rotationstart[T](
+    `type`: `rotation-start`,
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type], Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rotationstart[T](
+    `type`: `rotation-start`,
     listener: js.Function2[/* type */ T, /* event */ EventBase[this.type], Unit],
     thisObject: T
   ): Unit = js.native

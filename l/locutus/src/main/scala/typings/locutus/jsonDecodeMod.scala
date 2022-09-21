@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jsonDecodeMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(strJson: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(strJson.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(strJson: Any): Any = ^.asInstanceOf[js.Dynamic].apply(strJson.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/json/json_decode", JSImport.Namespace)
   @js.native

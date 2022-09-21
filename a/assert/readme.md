@@ -10,10 +10,10 @@ The assert module from Node.js, for the browser.
 | ------------------ | :-------------: |
 | Full name          | assert |
 | Keywords           | assert, browser |
-| # releases         | 3 |
-| # dependents       | 1467 |
-| # downloads        | 568450264 |
-| # stars            | 75 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6258845666666664E7 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/commonjs-assert)

@@ -27,7 +27,7 @@ object XInputStreamProvider {
   inline def apply(
     acquire: () => Unit,
     createInputStream: () => XInputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInputStreamProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInputStream = js.Any.fromFunction0(createInputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

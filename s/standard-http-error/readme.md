@@ -11,9 +11,9 @@ Standard HTTP error class. Proper serialization, no bloat. Extensible.
 | Full name          | standard-http-error |
 | Keywords           | error, errors, http, exception |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 1028158 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 155144.33333333334 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/moll/js-standard-http-error)

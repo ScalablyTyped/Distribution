@@ -26,7 +26,8 @@ trait PlanInformation extends StObject {
     */
   var planFeatureSets: js.UndefOr[
     js.Array[
-      /* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */ FeatureSet
+      /* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */
+  FeatureSet
     ]
   ] = js.undefined
   
@@ -50,7 +51,7 @@ object PlanInformation {
     
     inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    inline def setAddOnsVarargs(value: (/* Contains information about add ons. */ AddOn)*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: (/* Contains information about add ons. */ AddOn)*): Self = StObject.set(x, "addOns", js.Array(value*))
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
@@ -62,15 +63,17 @@ object PlanInformation {
     
     inline def setPlanFeatureSets(
       value: js.Array[
-          /* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */ FeatureSet
+          /* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */
+    FeatureSet
         ]
     ): Self = StObject.set(x, "planFeatureSets", value.asInstanceOf[js.Any])
     
     inline def setPlanFeatureSetsUndefined: Self = StObject.set(x, "planFeatureSets", js.undefined)
     
     inline def setPlanFeatureSetsVarargs(
-      value: (/* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */ FeatureSet)*
-    ): Self = StObject.set(x, "planFeatureSets", js.Array(value :_*))
+      value: (/* This object provides details about a feature set, or add-on product that is associated with an account. It is reserved for DocuSign internal use only. */
+    FeatureSet)*
+    ): Self = StObject.set(x, "planFeatureSets", js.Array(value*))
     
     inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
@@ -80,6 +83,6 @@ object PlanInformation {
     
     inline def setRecipientDomainsUndefined: Self = StObject.set(x, "recipientDomains", js.undefined)
     
-    inline def setRecipientDomainsVarargs(value: RecipientDomain*): Self = StObject.set(x, "recipientDomains", js.Array(value :_*))
+    inline def setRecipientDomainsVarargs(value: RecipientDomain*): Self = StObject.set(x, "recipientDomains", js.Array(value*))
   }
 }

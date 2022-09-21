@@ -11,7 +11,7 @@ trait IgGridTooltips
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)

@@ -11,6 +11,12 @@ object ElementFlags extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescript.mod.ElementFlags & Double] = js.native
   
+  /* 3 */ val Fixed: typings.typescript.mod.ElementFlags.Fixed & Double = js.native
+  
+  /* 14 */ val NonRequired: typings.typescript.mod.ElementFlags.NonRequired & Double = js.native
+  
+  /* 11 */ val NonRest: typings.typescript.mod.ElementFlags.NonRest & Double = js.native
+  
   /* 2 */ val Optional: typings.typescript.mod.ElementFlags.Optional & Double = js.native
   
   /* 1 */ val Required: typings.typescript.mod.ElementFlags.Required & Double = js.native

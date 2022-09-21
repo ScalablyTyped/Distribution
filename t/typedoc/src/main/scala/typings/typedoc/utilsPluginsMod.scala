@@ -1,25 +1,17 @@
 package typings.typedoc
 
 import typings.typedoc.applicationMod.Application
-import typings.typedoc.componentMod.AbstractComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsPluginsMod {
   
-  @JSImport("typedoc/dist/lib/utils/plugins", "PluginHost")
+  @JSImport("typedoc/dist/lib/utils/plugins", JSImport.Namespace)
   @js.native
-  class PluginHost protected () extends AbstractComponent[Application] {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Application) = this()
-    
-    /* private */ var discoverNpmPlugins: js.Any = js.native
-    
-    def load(): Boolean = js.native
-    
-    var plugins: js.Array[String] = js.native
-    
-    /* private */ var resolvePluginPaths: js.Any = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def discoverPlugins(app: Application): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("discoverPlugins")(app.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def loadPlugins(app: Application, plugins: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadPlugins")(app.asInstanceOf[js.Any], plugins.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

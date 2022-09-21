@@ -10,10 +10,10 @@ A basic but performant promise implementation
 | ------------------ | :-------------: |
 | Full name          | lie |
 | Keywords           | lie, promise, async, aplus |
-| # releases         | 0 |
-| # dependents       | 163 |
-| # downloads        | 162598451 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7587312333333332E7 |
+| # stars            | 744.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/lie#readme)

@@ -96,7 +96,7 @@ trait ConstraintType extends StObject {
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any
+  var plugin: Any
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
@@ -155,7 +155,7 @@ object ConstraintType {
     id: Double,
     label: String,
     length: Double,
-    plugin: js.Any,
+    plugin: Any,
     pointA: Vector,
     pointB: Vector,
     render: IConstraintRenderDefinition,
@@ -191,7 +191,7 @@ object ConstraintType {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPointA(value: Vector): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     

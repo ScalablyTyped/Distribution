@@ -1,7 +1,7 @@
 package typings.nodemailer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodemailer.nodemailerStrings.B
 import typings.nodemailer.nodemailerStrings.Q
 import org.scalablytyped.runtime.StObject
@@ -28,28 +28,18 @@ object mimeFuncsMod {
   inline def encodeURICharComponent(chr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURICharComponent")(chr.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def encodeWord(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeWord(data: String, mimeWordEncoding: Q | B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeWord(data: String, mimeWordEncoding: Q | B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def encodeWord(data: String, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def encodeWord(data: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeWord(data: Buffer, mimeWordEncoding: Q | B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeWord(data: Buffer, mimeWordEncoding: Q | B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def encodeWord(data: Buffer, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def encodeWord_B(data: String, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_B(data: String, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_B(data: Buffer, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_B(data: Buffer, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def encodeWord_Q(data: String, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_Q(data: String, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_Q(data: Buffer, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWord_Q(data: Buffer, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   inline def encodeWords(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeWords(value: String, mimeWordEncoding: Q | B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeWords(value: String, mimeWordEncoding: Q | B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def encodeWords(value: String, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def encodeWords_B(value: String, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWords_B(value: String, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def encodeWords_Q(value: String, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encodeWords_Q(value: String, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def foldLines(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def foldLines(str: String, lineLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[String]

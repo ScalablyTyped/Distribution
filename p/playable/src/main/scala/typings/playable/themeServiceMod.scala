@@ -13,21 +13,21 @@ object themeServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ThemeService {
     def this(hasThemeConfig: ThemeConfig) = this()
     
     /* private */ /* CompleteClass */
-    var _styleSheet: js.Any = js.native
+    var _styleSheet: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
     
     /* CompleteClass */
-    override def get(module: js.Any): IStyles = js.native
-    /* CompleteClass */
     override def get(module: js.Object): IStyles = js.native
+    /* CompleteClass */
+    override def get(module: Any): IStyles = js.native
     
     /* CompleteClass */
     override def registerModuleTheme(module: js.Object, rules: ICSSRules): Unit = js.native
@@ -80,16 +80,16 @@ object themeServiceMod {
     extends StObject
        with IThemeService {
     
-    /* private */ var _styleSheet: js.Any
+    /* private */ var _styleSheet: Any
     
-    def get(module: js.Any): IStyles
+    def get(module: Any): IStyles
   }
   object ThemeService {
     
     inline def apply(
-      _styleSheet: js.Any,
+      _styleSheet: Any,
       destroy: () => Unit,
-      get: js.Any => IStyles,
+      get: Any => IStyles,
       registerModuleTheme: (js.Object, ICSSRules) => Unit,
       updateTheme: IThemeConfig => Unit
     ): ThemeService = {
@@ -99,9 +99,9 @@ object themeServiceMod {
     
     extension [Self <: ThemeService](x: Self) {
       
-      inline def setGet(value: js.Any => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Any => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def set_styleSheet(value: js.Any): Self = StObject.set(x, "_styleSheet", value.asInstanceOf[js.Any])
+      inline def set_styleSheet(value: Any): Self = StObject.set(x, "_styleSheet", value.asInstanceOf[js.Any])
     }
   }
 }

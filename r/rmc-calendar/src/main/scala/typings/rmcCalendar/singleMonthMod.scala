@@ -8,7 +8,6 @@ import typings.rmcCalendar.dataTypesMod.Models.Locale
 import typings.rmcCalendar.dataTypesMod.Models.MonthData
 import typings.rmcCalendar.rmcCalendarStrings.normal
 import typings.rmcCalendar.rmcCalendarStrings.xl
-import typings.std.Date
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ object singleMonthMod {
   
   @JSImport("rmc-calendar/lib/date/SingleMonth", JSImport.Default)
   @js.native
-  class default protected () extends SingleMonth {
+  open class default protected () extends SingleMonth {
     def this(props: PropsType) = this()
   }
   /* static members */
@@ -36,7 +35,7 @@ object singleMonthMod {
   
   trait PropsType extends StObject {
     
-    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
+    var getDateExtra: js.UndefOr[js.Function1[/* date */ js.Date, ExtraData]] = js.undefined
     
     var locale: Locale
     
@@ -55,7 +54,7 @@ object singleMonthMod {
     
     extension [Self <: PropsType](x: Self) {
       
-      inline def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
+      inline def setGetDateExtra(value: /* date */ js.Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       
       inline def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
       
@@ -74,8 +73,7 @@ object singleMonthMod {
   }
   
   @js.native
-  trait SingleMonth
-    extends PureComponent[PropsType, WeekComponents, js.Any] {
+  trait SingleMonth extends PureComponent[PropsType, WeekComponents, Any] {
     
     @JSName("componentWillMount")
     def componentWillMount_MSingleMonth(): Unit = js.native

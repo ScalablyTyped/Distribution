@@ -50,8 +50,5 @@ trait CameraRollStatic extends StObject {
     * Returns a Promise which will resolve with the new URI.
     */
   def saveToCameraRoll(tag: String): js.Promise[String] = js.native
-  @JSName("saveToCameraRoll")
-  def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = js.native
-  @JSName("saveToCameraRoll")
-  def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = js.native
+  def saveToCameraRoll(tag: String, `type`: photo | video): js.Promise[String] = js.native
 }

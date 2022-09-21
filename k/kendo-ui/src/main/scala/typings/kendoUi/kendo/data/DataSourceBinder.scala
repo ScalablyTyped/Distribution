@@ -9,9 +9,9 @@ trait DataSourceBinder
   extends StObject
      with Binder {
   
-  def dataBinding(e: js.Any): js.Any = js.native
+  def dataBinding(e: Any): Any = js.native
   
-  def dataBound(e: js.Any): js.Any = js.native
+  def dataBound(e: Any): Any = js.native
   
-  def itemChange(e: js.Any): String = js.native
+  def itemChange(e: Any): String = js.native
 }

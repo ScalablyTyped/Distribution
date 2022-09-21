@@ -10,10 +10,10 @@ Determine if an object is a Stream
 | ------------------ | :-------------: |
 | Full name          | isstream |
 | Keywords           | stream, type, streams, readable-stream, hippo |
-| # releases         | 0 |
-| # dependents       | 233 |
-| # downloads        | 817891857 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.263591533333333E7 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/isstream)

@@ -50,13 +50,13 @@ object VisionResponses {
       
       inline def setCategories(value: js.Array[Name]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: Name*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Name*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setColor(value: AccentColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setFaces(value: js.Array[Age]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      inline def setFacesVarargs(value: Age*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Age*): Self = StObject.set(x, "faces", js.Array(value*))
       
       inline def setImageType(value: ClipArtType): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
@@ -91,7 +91,7 @@ object VisionResponses {
       
       inline def setRegions(value: js.Array[Lines]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      inline def setRegionsVarargs(value: Lines*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: Lines*): Self = StObject.set(x, "regions", js.Array(value*))
       
       inline def setTextAngle(value: Double): Self = StObject.set(x, "textAngle", value.asInstanceOf[js.Any])
     }

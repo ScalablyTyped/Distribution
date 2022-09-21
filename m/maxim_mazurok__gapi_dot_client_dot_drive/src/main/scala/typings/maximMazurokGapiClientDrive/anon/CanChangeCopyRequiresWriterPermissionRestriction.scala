@@ -57,6 +57,9 @@ trait CanChangeCopyRequiresWriterPermissionRestriction extends StObject {
   /** Whether the current user can rename this Team Drive. */
   var canRenameTeamDrive: js.UndefOr[Boolean] = js.undefined
   
+  /** Whether the current user can reset the Team Drive restrictions to defaults. */
+  var canResetTeamDriveRestrictions: js.UndefOr[Boolean] = js.undefined
+  
   /** Whether the current user can share files or folders in this Team Drive. */
   var canShare: js.UndefOr[Boolean] = js.undefined
   
@@ -139,6 +142,10 @@ object CanChangeCopyRequiresWriterPermissionRestriction {
     inline def setCanRenameTeamDriveUndefined: Self = StObject.set(x, "canRenameTeamDrive", js.undefined)
     
     inline def setCanRenameUndefined: Self = StObject.set(x, "canRename", js.undefined)
+    
+    inline def setCanResetTeamDriveRestrictions(value: Boolean): Self = StObject.set(x, "canResetTeamDriveRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setCanResetTeamDriveRestrictionsUndefined: Self = StObject.set(x, "canResetTeamDriveRestrictions", js.undefined)
     
     inline def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
     

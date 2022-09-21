@@ -2,6 +2,7 @@ package typings.gulpNodemon
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.gulp.mod.TaskFunctionCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +53,7 @@ object mod extends Shortcut {
       
       inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
       
-      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value*))
     }
   }
   
@@ -66,6 +67,8 @@ object mod extends Shortcut {
       * Debounce restart in seconds.
       */
     var delay: js.UndefOr[Double] = js.undefined
+    
+    var done: js.UndefOr[TaskFunctionCallback] = js.undefined
     
     var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
     
@@ -146,11 +149,15 @@ object mod extends Shortcut {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      inline def setDone(value: /* error */ js.UndefOr[js.Error | Null] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
       inline def setEnv(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -180,7 +187,7 @@ object mod extends Shortcut {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setLegacyWatch(value: Boolean): Self = StObject.set(x, "legacyWatch", value.asInstanceOf[js.Any])
       
@@ -190,7 +197,7 @@ object mod extends Shortcut {
       
       inline def setNodeArgsUndefined: Self = StObject.set(x, "nodeArgs", js.undefined)
       
-      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value :_*))
+      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value*))
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
@@ -228,7 +235,7 @@ object mod extends Shortcut {
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
       
-      inline def setWatchVarargs(value: String*): Self = StObject.set(x, "watch", js.Array(value :_*))
+      inline def setWatchVarargs(value: String*): Self = StObject.set(x, "watch", js.Array(value*))
     }
   }
   

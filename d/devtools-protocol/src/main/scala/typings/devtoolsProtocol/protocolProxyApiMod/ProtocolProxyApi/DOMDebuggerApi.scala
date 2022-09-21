@@ -6,6 +6,7 @@ import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveDOMBreakpointRequ
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveEventListenerBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveInstrumentationBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveXHRBreakpointRequest
+import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetBreakOnCSPViolationRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetDOMBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetEventListenerBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetInstrumentationBreakpointRequest
@@ -42,6 +43,11 @@ trait DOMDebuggerApi extends StObject {
   def removeXHRBreakpoint(params: RemoveXHRBreakpointRequest): js.Promise[Unit]
   
   /**
+    * Sets breakpoint on particular CSP violations.
+    */
+  def setBreakOnCSPViolation(params: SetBreakOnCSPViolationRequest): js.Promise[Unit]
+  
+  /**
     * Sets breakpoint on particular operation with DOM.
     */
   def setDOMBreakpoint(params: SetDOMBreakpointRequest): js.Promise[Unit]
@@ -69,12 +75,13 @@ object DOMDebuggerApi {
     removeEventListenerBreakpoint: RemoveEventListenerBreakpointRequest => js.Promise[Unit],
     removeInstrumentationBreakpoint: RemoveInstrumentationBreakpointRequest => js.Promise[Unit],
     removeXHRBreakpoint: RemoveXHRBreakpointRequest => js.Promise[Unit],
+    setBreakOnCSPViolation: SetBreakOnCSPViolationRequest => js.Promise[Unit],
     setDOMBreakpoint: SetDOMBreakpointRequest => js.Promise[Unit],
     setEventListenerBreakpoint: SetEventListenerBreakpointRequest => js.Promise[Unit],
     setInstrumentationBreakpoint: SetInstrumentationBreakpointRequest => js.Promise[Unit],
     setXHRBreakpoint: SetXHRBreakpointRequest => js.Promise[Unit]
   ): DOMDebuggerApi = {
-    val __obj = js.Dynamic.literal(getEventListeners = js.Any.fromFunction1(getEventListeners), removeDOMBreakpoint = js.Any.fromFunction1(removeDOMBreakpoint), removeEventListenerBreakpoint = js.Any.fromFunction1(removeEventListenerBreakpoint), removeInstrumentationBreakpoint = js.Any.fromFunction1(removeInstrumentationBreakpoint), removeXHRBreakpoint = js.Any.fromFunction1(removeXHRBreakpoint), setDOMBreakpoint = js.Any.fromFunction1(setDOMBreakpoint), setEventListenerBreakpoint = js.Any.fromFunction1(setEventListenerBreakpoint), setInstrumentationBreakpoint = js.Any.fromFunction1(setInstrumentationBreakpoint), setXHRBreakpoint = js.Any.fromFunction1(setXHRBreakpoint))
+    val __obj = js.Dynamic.literal(getEventListeners = js.Any.fromFunction1(getEventListeners), removeDOMBreakpoint = js.Any.fromFunction1(removeDOMBreakpoint), removeEventListenerBreakpoint = js.Any.fromFunction1(removeEventListenerBreakpoint), removeInstrumentationBreakpoint = js.Any.fromFunction1(removeInstrumentationBreakpoint), removeXHRBreakpoint = js.Any.fromFunction1(removeXHRBreakpoint), setBreakOnCSPViolation = js.Any.fromFunction1(setBreakOnCSPViolation), setDOMBreakpoint = js.Any.fromFunction1(setDOMBreakpoint), setEventListenerBreakpoint = js.Any.fromFunction1(setEventListenerBreakpoint), setInstrumentationBreakpoint = js.Any.fromFunction1(setInstrumentationBreakpoint), setXHRBreakpoint = js.Any.fromFunction1(setXHRBreakpoint))
     __obj.asInstanceOf[DOMDebuggerApi]
   }
   
@@ -89,6 +96,8 @@ object DOMDebuggerApi {
     inline def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
     
     inline def setRemoveXHRBreakpoint(value: RemoveXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeXHRBreakpoint", js.Any.fromFunction1(value))
+    
+    inline def setSetBreakOnCSPViolation(value: SetBreakOnCSPViolationRequest => js.Promise[Unit]): Self = StObject.set(x, "setBreakOnCSPViolation", js.Any.fromFunction1(value))
     
     inline def setSetDOMBreakpoint(value: SetDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setDOMBreakpoint", js.Any.fromFunction1(value))
     

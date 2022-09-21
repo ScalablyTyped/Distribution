@@ -10,10 +10,10 @@ object keyboardMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboard
+  open class default () extends HardwareKeyboard
   
   @JSImport("material-ui/svg-icons/hardware/keyboard", "HardwareKeyboard")
   @js.native
-  class HardwareKeyboard ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboard ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

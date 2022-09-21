@@ -51,7 +51,7 @@ object anon {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setRequestOptions(value: js.Object): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
@@ -60,6 +60,8 @@ object anon {
       inline def setRetry(value: OperationOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      
+      inline def setRetryVarargs(value: Double*): Self = StObject.set(x, "retry", js.Array(value*))
     }
   }
   
@@ -67,7 +69,7 @@ object anon {
     extends StObject
        with ProtooResponse {
     
-    var data: js.Any
+    var data: Any
     
     var id: Double
     
@@ -77,14 +79,14 @@ object anon {
   }
   object Data {
     
-    inline def apply(data: js.Any, id: Double): Data = {
+    inline def apply(data: Any, id: Double): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = true, response = true)
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

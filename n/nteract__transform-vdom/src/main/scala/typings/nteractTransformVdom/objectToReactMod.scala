@@ -16,10 +16,10 @@ object objectToReactMod {
   
   inline def objectToReactElement(
     obj: VDOMEl,
-    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]
+    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[Any], Unit]
   ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToReactElement")(obj.asInstanceOf[js.Any], onVDOMEvent.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  type Attributes = StringDictionary[js.Any]
+  type Attributes = StringDictionary[Any]
   
   type EventHandlers = StringDictionary[String]
   
@@ -50,7 +50,7 @@ object objectToReactMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: (ReactNode | VDOMEl)*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (ReactNode | VDOMEl)*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setEventHandlers(value: EventHandlers): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
       

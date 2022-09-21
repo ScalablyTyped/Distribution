@@ -9,28 +9,30 @@ object anon {
   
   trait Actual extends StObject {
     
-    var actual: js.Any
+    var actual: Any
     
-    var expected: js.Any
+    var expected: Any
     
-    var message: String
+    var message: js.UndefOr[String] = js.undefined
     
     var result: Boolean
   }
   object Actual {
     
-    inline def apply(actual: js.Any, expected: js.Any, message: String, result: Boolean): Actual = {
-      val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    inline def apply(actual: Any, expected: Any, result: Boolean): Actual = {
+      val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Actual]
     }
     
     extension [Self <: Actual](x: Self) {
       
-      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
       inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -108,7 +110,7 @@ object anon {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -116,11 +118,11 @@ object anon {
     
     var maxDepth: Double
     
-    def parse(data: js.Any): String
+    def parse(data: Any): String
   }
   object MaxDepth {
     
-    inline def apply(maxDepth: Double, parse: js.Any => String): MaxDepth = {
+    inline def apply(maxDepth: Double, parse: Any => String): MaxDepth = {
       val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[MaxDepth]
     }
@@ -129,7 +131,28 @@ object anon {
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      inline def setParse(value: js.Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait ModuleId extends StObject {
+    
+    var moduleId: String
+    
+    var name: String
+  }
+  object ModuleId {
+    
+    inline def apply(moduleId: String, name: String): ModuleId = {
+      val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ModuleId]
+    }
+    
+    extension [Self <: ModuleId](x: Self) {
+      
+      inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

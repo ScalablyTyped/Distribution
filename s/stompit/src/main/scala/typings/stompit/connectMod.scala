@@ -4,7 +4,6 @@ import typings.node.netMod.IpcNetConnectOpts
 import typings.node.netMod.Socket
 import typings.node.netMod.TcpNetConnectOpts
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.Error
 import typings.stompit.socketMod.SocketOptions
 import typings.stompit.stompitBooleans.`false`
 import typings.stompit.stompitBooleans.`true`
@@ -137,7 +136,7 @@ object connectMod {
     }
   }
   
-  type ConnectionListener = js.Function2[/* err */ Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
+  type ConnectionListener = js.Function2[/* err */ js.Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
   
   trait NetIpcConnectOptions
     extends StObject

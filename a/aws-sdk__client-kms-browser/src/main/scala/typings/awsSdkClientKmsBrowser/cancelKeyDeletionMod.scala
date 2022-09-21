@@ -8,5 +8,5 @@ object cancelKeyDeletionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/CancelKeyDeletion", "CancelKeyDeletion")
   @js.native
-  val CancelKeyDeletion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val CancelKeyDeletion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -19,6 +19,6 @@ object CategoriesResult {
     
     inline def setCategories(value: js.Array[ExtensionCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: ExtensionCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ExtensionCategory*): Self = StObject.set(x, "categories", js.Array(value*))
   }
 }

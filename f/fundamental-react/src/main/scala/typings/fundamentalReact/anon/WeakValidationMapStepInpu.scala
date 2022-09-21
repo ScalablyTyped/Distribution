@@ -14,7 +14,9 @@ trait WeakValidationMapStepInpu extends StObject {
   
   var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var localizedText: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var localizedText: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
+  
+  var onChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* stepValue */ Double, Unit]) | Null]]] = js.undefined
   
   var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -45,9 +47,13 @@ object WeakValidationMapStepInpu {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setLocalizedText(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+    inline def setLocalizedText(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+    
+    inline def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* stepValue */ Double, Unit]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     inline def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

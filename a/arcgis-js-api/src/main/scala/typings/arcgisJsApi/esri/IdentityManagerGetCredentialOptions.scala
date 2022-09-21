@@ -20,6 +20,8 @@ trait IdentityManagerGetCredentialOptions
   /**
     * If set to *false*, the user will not be shown a dialog before the OAuth popup window is opened.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
     */
   var oAuthPopupConfirmation: js.UndefOr[Boolean] = js.undefined

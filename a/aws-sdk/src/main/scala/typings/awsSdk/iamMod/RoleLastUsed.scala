@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoleLastUsed extends StObject {
   
   /**
-    * The date and time, in ISO 8601 date-time format that the role was last used. This field is null if the role has not been used within the IAM tracking period. For more information about the tracking period, see Regions Where Data Is Tracked in the IAM User Guide. 
+    * The date and time, in ISO 8601 date-time format that the role was last used. This field is null if the role has not been used within the IAM tracking period. For more information about the tracking period, see Regions where data is tracked in the IAM User Guide. 
     */
-  var LastUsedDate: js.UndefOr[dateType] = js.undefined
+  var LastUsedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the AWS Region in which the role was last used.
+    * The name of the Amazon Web Services Region in which the role was last used.
     */
   var Region: js.UndefOr[stringType] = js.undefined
 }
@@ -25,7 +25,7 @@ object RoleLastUsed {
   
   extension [Self <: RoleLastUsed](x: Self) {
     
-    inline def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
+    inline def setLastUsedDate(value: js.Date): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUsedDateUndefined: Self = StObject.set(x, "LastUsedDate", js.undefined)
     

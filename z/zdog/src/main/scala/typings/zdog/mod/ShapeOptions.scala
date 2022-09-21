@@ -101,7 +101,7 @@ object ShapeOptions {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: PathCommand*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: PathCommand*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setStroke(value: Double | `false`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

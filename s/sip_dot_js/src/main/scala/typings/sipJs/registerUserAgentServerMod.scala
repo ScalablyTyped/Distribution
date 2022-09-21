@@ -12,7 +12,7 @@ object registerUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/register-user-agent-server", "RegisterUserAgentServer")
   @js.native
-  class RegisterUserAgentServer protected () extends UserAgentServer {
+  open class RegisterUserAgentServer protected () extends UserAgentServer {
     def this(core: UserAgentCore, message: IncomingRequestMessage) = this()
     def this(core: UserAgentCore, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
   }

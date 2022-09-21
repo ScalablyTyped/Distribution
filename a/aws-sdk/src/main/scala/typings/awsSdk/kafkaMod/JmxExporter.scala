@@ -8,7 +8,7 @@ trait JmxExporter extends StObject {
   
   /**
     * 
-    Indicates whether you want to enable or disable the JMX Exporter.
+    Indicates whether you want to turn on or turn off the JMX Exporter.
     
     */
   var EnabledInBroker: boolean

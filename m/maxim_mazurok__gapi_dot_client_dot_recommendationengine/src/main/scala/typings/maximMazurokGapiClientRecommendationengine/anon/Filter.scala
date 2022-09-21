@@ -46,7 +46,7 @@ trait Filter extends StObject {
   /** Optional. The previous ListUserEventsResponse.next_page_token. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent eventStore resource name, such as "projects/∗/locations/∗/catalogs/default_catalog/eventStores/default_event_store". */
+  /** Required. The parent eventStore resource name, such as `projects/ *‍/locations/ *‍/catalogs/default_catalog/eventStores/default_event_store`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

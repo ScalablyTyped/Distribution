@@ -55,6 +55,9 @@ object mod {
     
     /** do not print information about skipped tests */
     var suppressSkipped: js.UndefOr[Boolean] = js.undefined
+    
+    /** do not print summary  */
+    var suppressSummary: js.UndefOr[Boolean] = js.undefined
   }
   object SpecReporterOptions {
     
@@ -96,6 +99,10 @@ object mod {
       inline def setSuppressSkipped(value: Boolean): Self = StObject.set(x, "suppressSkipped", value.asInstanceOf[js.Any])
       
       inline def setSuppressSkippedUndefined: Self = StObject.set(x, "suppressSkipped", js.undefined)
+      
+      inline def setSuppressSummary(value: Boolean): Self = StObject.set(x, "suppressSummary", value.asInstanceOf[js.Any])
+      
+      inline def setSuppressSummaryUndefined: Self = StObject.set(x, "suppressSummary", js.undefined)
     }
   }
 }

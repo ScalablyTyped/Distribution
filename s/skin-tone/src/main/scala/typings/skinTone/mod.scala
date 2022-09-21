@@ -6,36 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿.
-  @param emoji - Emoji to modify.
-  @param tone - Skin tone to use for `emoji`.
-  - `'none'`       :      *(Removes skin tone)*
-  - `'white'`      : 🏻   *(Fitzpatrick Type-1–2)*
-  - `'creamWhite'` : 🏼   *(Fitzpatrick Type-3)*
-  - `'lightBrown'` : 🏽   *(Fitzpatrick Type-4)*
-  - `'brown'`      : 🏾   *(Fitzpatrick Type-5)*
-  - `'darkBrown'`  : 🏿   *(Fitzpatrick Type-6)*
-  @example
-  ```
-  import skinTone = require('skin-tone');
-  skinTone('👍', 'brown');
-  //=> '👍🏾'
-  skinTone('👍', 'white');
-  //=> '👍🏻'
-  // can also remove skin tone
-  skinTone('👍🏾', 'none');
-  //=> '👍'
-  // just passes it through when not supported
-  skinTone('🦄', 'darkBrown');
-  //=> '🦄'
-  ```
-  */
-  inline def apply(emoji: String, tone: Tone): String = (^.asInstanceOf[js.Dynamic].apply(emoji.asInstanceOf[js.Any], tone.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("skin-tone", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(emoji: String, `type`: SkinToneType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emoji.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.skinTone.skinToneStrings.none
@@ -45,8 +20,8 @@ object mod {
     - typings.skinTone.skinToneStrings.brown
     - typings.skinTone.skinToneStrings.darkBrown
   */
-  trait Tone extends StObject
-  object Tone {
+  trait SkinToneType extends StObject
+  object SkinToneType {
     
     inline def brown: typings.skinTone.skinToneStrings.brown = "brown".asInstanceOf[typings.skinTone.skinToneStrings.brown]
     

@@ -9,7 +9,6 @@ import typings.fundamentalReact.fundamentalReactNumbers.`4`
 import typings.fundamentalReact.fundamentalReactNumbers.`5`
 import typings.fundamentalReact.fundamentalReactNumbers.`6`
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import typings.react.mod.ValidationMap
@@ -24,8 +23,8 @@ object layoutGridMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LayoutGrid/LayoutGrid.LayoutGridProps> & {  displayName :'LayoutGridProps'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[LayoutGridProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[LayoutGridProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: LayoutGridProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: LayoutGridProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", JSImport.Default)
     @js.native
@@ -33,8 +32,8 @@ object layoutGridMod {
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.defaultProps")
     @js.native
@@ -56,7 +55,7 @@ object layoutGridMod {
     extends StObject
        with HTMLAttributes[HTMLAnchorElement] {
     
-    var colSpan: js.UndefOr[js.Any] = js.undefined
+    var colSpan: js.UndefOr[Any] = js.undefined
     
     var cols: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
@@ -75,7 +74,7 @@ object layoutGridMod {
     
     extension [Self <: LayoutGridProps](x: Self) {
       
-      inline def setColSpan(value: js.Any): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Any): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
       inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       

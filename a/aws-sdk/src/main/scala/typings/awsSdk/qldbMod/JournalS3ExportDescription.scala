@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JournalS3ExportDescription extends StObject {
   
   /**
-    * The exclusive end date and time for the range of journal contents that are specified in the original export request.
+    * The exclusive end date and time for the range of journal contents that was specified in the original export request.
     */
-  var ExclusiveEndTime: Timestamp
+  var ExclusiveEndTime: js.Date
   
   /**
     * The date and time, in epoch time format, when the export job was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var ExportCreationTime: Timestamp
+  var ExportCreationTime: js.Date
   
   /**
-    * The unique ID of the journal export job.
+    * The UUID (represented in Base62-encoded text) of the journal export job.
     */
   var ExportId: UniqueId
   
   /**
-    * The inclusive start date and time for the range of journal contents that are specified in the original export request.
+    * The inclusive start date and time for the range of journal contents that was specified in the original export request.
     */
-  var InclusiveStartTime: Timestamp
+  var InclusiveStartTime: js.Date
   
   /**
     * The name of the ledger.
@@ -32,7 +32,12 @@ trait JournalS3ExportDescription extends StObject {
   var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal export job to do the following:   Write objects into your Amazon Simple Storage Service (Amazon S3) bucket.   (Optional) Use your customer master key (CMK) in AWS Key Management Service (AWS KMS) for server-side encryption of your exported data.  
+    * The output format of the exported journal data.
+    */
+  var OutputFormat: js.UndefOr[typings.awsSdk.qldbMod.OutputFormat] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal export job to do the following:   Write objects into your Amazon Simple Storage Service (Amazon S3) bucket.   (Optional) Use your customer managed key in Key Management Service (KMS) for server-side encryption of your exported data.  
     */
   var RoleArn: Arn
   
@@ -46,10 +51,10 @@ trait JournalS3ExportDescription extends StObject {
 object JournalS3ExportDescription {
   
   inline def apply(
-    ExclusiveEndTime: Timestamp,
-    ExportCreationTime: Timestamp,
+    ExclusiveEndTime: js.Date,
+    ExportCreationTime: js.Date,
     ExportId: UniqueId,
-    InclusiveStartTime: Timestamp,
+    InclusiveStartTime: js.Date,
     LedgerName: LedgerName,
     RoleArn: Arn,
     S3ExportConfiguration: S3ExportConfiguration,
@@ -61,15 +66,19 @@ object JournalS3ExportDescription {
   
   extension [Self <: JournalS3ExportDescription](x: Self) {
     
-    inline def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
+    inline def setExclusiveEndTime(value: js.Date): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
-    inline def setExportCreationTime(value: Timestamp): Self = StObject.set(x, "ExportCreationTime", value.asInstanceOf[js.Any])
+    inline def setExportCreationTime(value: js.Date): Self = StObject.set(x, "ExportCreationTime", value.asInstanceOf[js.Any])
     
     inline def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
     
-    inline def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
+    inline def setInclusiveStartTime(value: js.Date): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
     inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
+    
+    inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
+    
+    inline def setOutputFormatUndefined: Self = StObject.set(x, "OutputFormat", js.undefined)
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

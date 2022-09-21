@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAccessKeyInfoResponse extends StObject {
   
   /**
-    * The number used to identify the AWS account.
+    * The number used to identify the Amazon Web Services account.
     */
   var Account: js.UndefOr[accountType] = js.undefined
 }

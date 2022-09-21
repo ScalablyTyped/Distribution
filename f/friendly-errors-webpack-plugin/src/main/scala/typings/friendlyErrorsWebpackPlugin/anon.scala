@@ -23,11 +23,11 @@ object anon {
       
       inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
+      inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value*))
     }
   }
 }

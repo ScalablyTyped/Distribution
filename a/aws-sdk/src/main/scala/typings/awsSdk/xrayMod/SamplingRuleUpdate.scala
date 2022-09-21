@@ -37,7 +37,7 @@ trait SamplingRuleUpdate extends StObject {
   var ReservoirSize: js.UndefOr[NullableInteger] = js.undefined
   
   /**
-    * Matches the ARN of the AWS resource on which the service runs.
+    * Matches the ARN of the Amazon Web Services resource on which the service runs.
     */
   var ResourceARN: js.UndefOr[typings.awsSdk.xrayMod.ResourceARN] = js.undefined
   

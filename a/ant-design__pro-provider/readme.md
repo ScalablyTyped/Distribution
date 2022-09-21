@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-provider
 
-Typings are for version 1.2.1
+Typings are for version 2.0.3
 
 ## Library description:
 @ant-design/pro-provider
@@ -10,10 +10,10 @@ Typings are for version 1.2.1
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-provider |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 29 |
-| # dependents       | 15 |
-| # downloads        | 241637 |
-| # stars            | 0 |
+| # releases         | 83 |
+| # dependents       | 0.0 |
+| # downloads        | 162116.33333333334 |
+| # stars            | 2863.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components#readme)

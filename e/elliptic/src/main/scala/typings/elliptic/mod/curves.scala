@@ -9,17 +9,17 @@ object curves {
   
   @JSImport("elliptic", "curves.PresetCurve")
   @js.native
-  class PresetCurve protected () extends StObject {
+  open class PresetCurve protected () extends StObject {
     // ?
     def this(options: Options) = this()
     
-    var g: js.Any = js.native
+    var g: Any = js.native
     
-    var hash: js.Any = js.native
+    var hash: Any = js.native
     
     // ?
     var n: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any) | Null
       ] = js.native
     
     var `type`: String = js.native
@@ -32,16 +32,16 @@ object curves {
       
       var b: String
       
-      var basis: js.UndefOr[js.Any] = js.undefined
+      var basis: js.UndefOr[Any] = js.undefined
       
       // ?
       var beta: js.UndefOr[String] = js.undefined
       
-      var g: js.Any
+      var g: Any
       
       var gRed: Boolean
       
-      var hash: js.Any
+      var hash: Any
       
       var lambda: js.UndefOr[String] = js.undefined
       
@@ -55,7 +55,7 @@ object curves {
     }
     object Options {
       
-      inline def apply(a: String, b: String, g: js.Any, gRed: Boolean, hash: js.Any, n: String, p: String, `type`: String): Options = {
+      inline def apply(a: String, b: String, g: Any, gRed: Boolean, hash: Any, n: String, p: String, `type`: String): Options = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gRed = gRed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], prime = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
@@ -67,7 +67,7 @@ object curves {
         
         inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        inline def setBasis(value: js.Any): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
+        inline def setBasis(value: Any): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
         
         inline def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
         
@@ -75,11 +75,11 @@ object curves {
         
         inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
         
-        inline def setG(value: js.Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
         inline def setGRed(value: Boolean): Self = StObject.set(x, "gRed", value.asInstanceOf[js.Any])
         
-        inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
         inline def setLambda(value: String): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
         

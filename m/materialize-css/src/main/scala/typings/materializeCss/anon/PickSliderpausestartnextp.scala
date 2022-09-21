@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Slider, 'pause' | 'start' | 'next' | 'prev' | 'destroy'> */
 trait PickSliderpausestartnextp extends StObject {
   
-  var destroy: js.UndefOr[js.Any] = js.undefined
+  var destroy: js.UndefOr[Any] = js.undefined
   
-  var next: js.UndefOr[js.Any] = js.undefined
+  var next: js.UndefOr[Any] = js.undefined
   
-  var pause: js.UndefOr[js.Any] = js.undefined
+  var pause: js.UndefOr[Any] = js.undefined
   
-  var prev: js.UndefOr[js.Any] = js.undefined
+  var prev: js.UndefOr[Any] = js.undefined
   
-  var start: js.UndefOr[js.Any] = js.undefined
+  var start: js.UndefOr[Any] = js.undefined
 }
 object PickSliderpausestartnextp {
   
@@ -26,23 +26,23 @@ object PickSliderpausestartnextp {
   
   extension [Self <: PickSliderpausestartnextp](x: Self) {
     
-    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setPause(value: js.Any): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: Any): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
-    inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }

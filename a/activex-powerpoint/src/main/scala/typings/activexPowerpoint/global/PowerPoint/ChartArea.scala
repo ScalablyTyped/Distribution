@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartArea")
 @js.native
-/* private */ class ChartArea ()
+/* private */ open class ChartArea ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartArea {
   
@@ -14,22 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexPowerpoint.PowerPoint.ChartBorder = js.native
   
   /* CompleteClass */
-  override def Clear(): js.Any = js.native
+  override def Clear(): Any = js.native
   
   /* CompleteClass */
-  override def ClearContents(): js.Any = js.native
+  override def ClearContents(): Any = js.native
   
   /* CompleteClass */
-  override def ClearFormats(): js.Any = js.native
+  override def ClearFormats(): Any = js.native
   
   /* CompleteClass */
-  override def Copy(): js.Any = js.native
+  override def Copy(): Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -56,14 +56,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartArea_typekey")
   var PowerPointDotChartArea_typekey: typings.activexPowerpoint.PowerPoint.ChartArea = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Shadow: Boolean = js.native

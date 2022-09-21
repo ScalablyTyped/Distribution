@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * http://js.cytoscape.org/#collection/layout
+  * https://js.cytoscape.org/#collection/selection
   */
 trait CollectionSelection extends StObject {
   

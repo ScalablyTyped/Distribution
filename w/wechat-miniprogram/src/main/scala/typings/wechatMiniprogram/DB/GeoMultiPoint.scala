@@ -23,7 +23,7 @@ object GeoMultiPoint {
     
     inline def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: GeoPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: GeoPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setToJSON(value: () => IGeoJSONMultiPoint): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

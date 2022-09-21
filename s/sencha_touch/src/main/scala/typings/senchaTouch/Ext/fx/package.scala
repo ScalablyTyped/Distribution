@@ -1,12 +1,13 @@
 package typings.senchaTouch.Ext.fx
 
+import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IEasing = typings.senchaTouch.Ext.IBase
+type IEasing = IBase
 
-type IRunner = typings.senchaTouch.Ext.IBase
+type IRunner = IBase
 
-type IState = typings.senchaTouch.Ext.IBase
+type IState = IBase

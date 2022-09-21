@@ -11,7 +11,7 @@ object convBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu", "Conv2DDerFilterProgram")
   @js.native
-  class Conv2DDerFilterProgram protected ()
+  open class Conv2DDerFilterProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -28,7 +28,7 @@ object convBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu", "Conv2DDerInputProgram")
   @js.native
-  class Conv2DDerInputProgram protected ()
+  open class Conv2DDerInputProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -45,7 +45,7 @@ object convBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu", "Conv3DDerFilterProgram")
   @js.native
-  class Conv3DDerFilterProgram protected ()
+  open class Conv3DDerFilterProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()
@@ -62,7 +62,7 @@ object convBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu", "Conv3DDerInputProgram")
   @js.native
-  class Conv3DDerInputProgram protected ()
+  open class Conv3DDerInputProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()

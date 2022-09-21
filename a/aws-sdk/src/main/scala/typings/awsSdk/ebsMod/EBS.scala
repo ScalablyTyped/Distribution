@@ -71,12 +71,12 @@ trait EBS extends Service {
   ): Request[ListSnapshotBlocksResponse, AWSError] = js.native
   
   /**
-    * Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-byte sectors.
+    * Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-KiB sectors.
     */
   def putSnapshotBlock(): Request[PutSnapshotBlockResponse, AWSError] = js.native
   def putSnapshotBlock(callback: js.Function2[/* err */ AWSError, /* data */ PutSnapshotBlockResponse, Unit]): Request[PutSnapshotBlockResponse, AWSError] = js.native
   /**
-    * Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-byte sectors.
+    * Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-KiB sectors.
     */
   def putSnapshotBlock(params: PutSnapshotBlockRequest): Request[PutSnapshotBlockResponse, AWSError] = js.native
   def putSnapshotBlock(

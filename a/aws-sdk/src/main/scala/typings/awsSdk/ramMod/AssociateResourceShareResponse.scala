@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateResourceShareResponse extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * The idempotency identifier associated with this request. If you want to repeat the same operation in an idempotent manner then you must include this value in the clientToken request parameter of that later call. All other parameters must also have the same values that you used in the first call.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the associations.
+    * An array of objects that contain information about the associations.
     */
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
 }
@@ -33,6 +33,6 @@ object AssociateResourceShareResponse {
     
     inline def setResourceShareAssociationsUndefined: Self = StObject.set(x, "resourceShareAssociations", js.undefined)
     
-    inline def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value :_*))
+    inline def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value*))
   }
 }

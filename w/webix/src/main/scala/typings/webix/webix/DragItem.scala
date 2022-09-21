@@ -12,7 +12,7 @@ trait DragItem extends StObject {
   def $drag(source: HTMLElement, ev: Event): String
   
   @JSName("$dragHTML")
-  def $dragHTML(args: js.Any*): js.Any
+  def $dragHTML(args: Any*): Any
   @JSName("$dragHTML")
   var $dragHTML_Original: WebixCallback
   
@@ -20,7 +20,7 @@ trait DragItem extends StObject {
   def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement
   
   @JSName("$dragMark")
-  def $dragMark(context: js.Any, ev: Event): Boolean
+  def $dragMark(context: Any, ev: Event): Boolean
   
   @JSName("$dragOut")
   def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit
@@ -29,12 +29,12 @@ trait DragItem extends StObject {
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit
   
   @JSName("$dropAllow")
-  def $dropAllow(args: js.Any*): js.Any
+  def $dropAllow(args: Any*): Any
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback
   
   @JSName("$dropHTML")
-  def $dropHTML(args: js.Any*): js.Any
+  def $dropHTML(args: Any*): Any
   @JSName("$dropHTML")
   var $dropHTML_Original: WebixCallback
 }
@@ -44,7 +44,7 @@ object DragItem {
     $drag: (HTMLElement, Event) => String,
     $dragHTML: WebixCallback,
     $dragIn: (HTMLElement, HTMLElement, Event) => HTMLElement,
-    $dragMark: (js.Any, Event) => Boolean,
+    $dragMark: (Any, Event) => Boolean,
     $dragOut: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit,
     $drop: (HTMLElement, HTMLElement, Event) => Unit,
     $dropAllow: WebixCallback,
@@ -62,7 +62,7 @@ object DragItem {
     
     inline def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
     
-    inline def set$dragMark(value: (js.Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
+    inline def set$dragMark(value: (Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
     
     inline def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction4(value))
     

@@ -10,10 +10,10 @@ react-coinhive React component
 | ------------------ | :-------------: |
 | Full name          | react-coinhive |
 | Keywords           | react, mining, crypto, miner, coinhive, coin-hive |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 515 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/dragma/react-coinhive#readme)

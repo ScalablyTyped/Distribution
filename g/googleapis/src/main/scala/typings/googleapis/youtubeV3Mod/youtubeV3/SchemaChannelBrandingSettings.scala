@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Branding properties of a YouTube channel.
-  */
 trait SchemaChannelBrandingSettings extends StObject {
   
   /**
@@ -46,7 +43,7 @@ object SchemaChannelBrandingSettings {
     
     inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    inline def setHintsVarargs(value: SchemaPropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: SchemaPropertyValue*): Self = StObject.set(x, "hints", js.Array(value*))
     
     inline def setImage(value: SchemaImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

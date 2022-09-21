@@ -29,7 +29,7 @@ object LoadBalancerTlsCertificateRenewalSummary {
     
     inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
     
-    inline def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = StObject.set(x, "domainValidationOptions", js.Array(value*))
     
     inline def setRenewalStatus(value: LoadBalancerTlsCertificateRenewalStatus): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     

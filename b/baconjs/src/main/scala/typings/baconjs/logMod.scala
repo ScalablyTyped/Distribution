@@ -10,5 +10,5 @@ object logMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: js.Array[js.Any], src: typings.baconjs.observableMod.default[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(args: js.Array[Any], src: typings.baconjs.observableMod.default[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

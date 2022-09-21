@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "DirectorTimeController")
 @js.native
-class DirectorTimeController ()
+open class DirectorTimeController ()
   extends typings.wonderJs.directorTimeControllerMod.DirectorTimeController
 /* static members */
 object DirectorTimeController {

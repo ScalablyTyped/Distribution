@@ -1,7 +1,6 @@
 package typings.aqb.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait SimpleReference
   
   var _value: String = js.native
   
-  var re: RegExp = js.native
+  var re: js.RegExp = js.native
   
   def toAQL(): String = js.native
 }

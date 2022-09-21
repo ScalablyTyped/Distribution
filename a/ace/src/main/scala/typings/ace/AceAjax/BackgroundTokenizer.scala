@@ -43,7 +43,7 @@ trait BackgroundTokenizer extends StObject {
     **/
   def start(startRow: Double): Unit
   
-  var states: js.Array[js.Any]
+  var states: js.Array[Any]
   
   /**
     * Stops tokenizing.
@@ -59,7 +59,7 @@ object BackgroundTokenizer {
     setDocument: Document => Unit,
     setTokenizer: Tokenizer => Unit,
     start: Double => Unit,
-    states: js.Array[js.Any],
+    states: js.Array[Any],
     stop: () => Unit
   ): BackgroundTokenizer = {
     val __obj = js.Dynamic.literal(fireUpdateEvent = js.Any.fromFunction2(fireUpdateEvent), getState = js.Any.fromFunction1(getState), getTokens = js.Any.fromFunction1(getTokens), setDocument = js.Any.fromFunction1(setDocument), setTokenizer = js.Any.fromFunction1(setTokenizer), start = js.Any.fromFunction1(start), states = states.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
@@ -80,9 +80,9 @@ object BackgroundTokenizer {
     
     inline def setStart(value: Double => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    inline def setStates(value: js.Array[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: js.Array[Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    inline def setStatesVarargs(value: js.Any*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: Any*): Self = StObject.set(x, "states", js.Array(value*))
     
     inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }

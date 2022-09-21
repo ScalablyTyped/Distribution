@@ -11,12 +11,19 @@ trait UpdateCostCategoryDefinitionRequest extends StObject {
     */
   var CostCategoryArn: Arn
   
+  var DefaultValue: js.UndefOr[CostCategoryValue] = js.undefined
+  
   var RuleVersion: CostCategoryRuleVersion
   
   /**
     * The Expression object used to categorize costs. For more information, see CostCategoryRule . 
     */
   var Rules: CostCategoryRulesList
+  
+  /**
+    *  The split charge rules used to allocate your charges between your Cost Category values. 
+    */
+  var SplitChargeRules: js.UndefOr[CostCategorySplitChargeRulesList] = js.undefined
 }
 object UpdateCostCategoryDefinitionRequest {
   
@@ -29,10 +36,20 @@ object UpdateCostCategoryDefinitionRequest {
     
     inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
+    inline def setDefaultValue(value: CostCategoryValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    
     inline def setRuleVersion(value: CostCategoryRuleVersion): Self = StObject.set(x, "RuleVersion", value.asInstanceOf[js.Any])
     
     inline def setRules(value: CostCategoryRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: CostCategoryRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: CostCategoryRule*): Self = StObject.set(x, "Rules", js.Array(value*))
+    
+    inline def setSplitChargeRules(value: CostCategorySplitChargeRulesList): Self = StObject.set(x, "SplitChargeRules", value.asInstanceOf[js.Any])
+    
+    inline def setSplitChargeRulesUndefined: Self = StObject.set(x, "SplitChargeRules", js.undefined)
+    
+    inline def setSplitChargeRulesVarargs(value: CostCategorySplitChargeRule*): Self = StObject.set(x, "SplitChargeRules", js.Array(value*))
   }
 }

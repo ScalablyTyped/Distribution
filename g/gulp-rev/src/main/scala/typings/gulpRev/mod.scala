@@ -1,7 +1,6 @@
 package typings.gulpRev
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,13 +45,13 @@ object mod extends Shortcut {
   @js.native
   trait IRev extends StObject {
     
-    def apply(): ReadWriteStream = js.native
+    def apply(): Any = js.native
     
-    def manifest(): ReadWriteStream = js.native
-    def manifest(options: IOptions): ReadWriteStream = js.native
-    def manifest(path: String): ReadWriteStream = js.native
-    def manifest(path: String, options: IOptions): ReadWriteStream = js.native
-    def manifest(path: Unit, options: IOptions): ReadWriteStream = js.native
+    def manifest(): Any = js.native
+    def manifest(options: IOptions): Any = js.native
+    def manifest(path: String): Any = js.native
+    def manifest(path: String, options: IOptions): Any = js.native
+    def manifest(path: Unit, options: IOptions): Any = js.native
   }
   
   type _To = IRev

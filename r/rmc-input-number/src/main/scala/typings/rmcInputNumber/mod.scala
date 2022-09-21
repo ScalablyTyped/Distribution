@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("rmc-input-number", JSImport.Default)
   @js.native
-  class default () extends InputNumber
+  open class default () extends InputNumber
   /* static members */
   object default {
     
@@ -37,32 +37,32 @@ object mod {
     @JSName("componentWillUpdate")
     def componentWillUpdate_MInputNumber(): Unit = js.native
     
-    var end: js.Any = js.native
+    var end: Any = js.native
     
     def focus(): Unit = js.native
     
-    def formatWrapper(num: js.Any): js.Any = js.native
+    def formatWrapper(num: Any): Any = js.native
     
-    def getRatio(e: js.Any): Double = js.native
+    def getRatio(e: Any): Double = js.native
     
-    var input: js.Any = js.native
+    var input: Any = js.native
     
-    def setInput(input: js.Any): Unit = js.native
+    def setInput(input: Any): Unit = js.native
     
-    var start: js.Any = js.native
+    var start: Any = js.native
   }
   
   trait PropsType
     extends StObject
        with typings.rmcInputNumber.baseMod.PropsType {
     
-    var className: js.UndefOr[js.Any] = js.undefined
+    var className: js.UndefOr[Any] = js.undefined
     
     var downHandler: js.UndefOr[ReactNode] = js.undefined
     
     var focusOnUpDown: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.undefined
+    var formatter: js.UndefOr[js.Function1[/* v */ Any, Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -79,7 +79,7 @@ object mod {
     
     extension [Self <: PropsType](x: Self) {
       
-      inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
@@ -91,7 +91,7 @@ object mod {
       
       inline def setFocusOnUpDownUndefined: Self = StObject.set(x, "focusOnUpDown", js.undefined)
       
-      inline def setFormatter(value: /* v */ js.Any => Unit): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* v */ Any => Unit): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       

@@ -37,6 +37,6 @@ object sessionRestapiMod {
   inline def updateSession(model: PickIModelidDeepPartialOm, settings: ISettings): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSession")(model.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @jupyterlab/services.@jupyterlab/services/lib/session/restapi.DeepPartial<T[P]> * / object}
-    */ typings.jupyterlabServices.jupyterlabServicesStrings.DeepPartial & TopLevel[js.Any]
+  {[ P in keyof T ]:? @jupyterlab/services.@jupyterlab/services/lib/session/restapi.DeepPartial<T[P]>}
+    */ typings.jupyterlabServices.jupyterlabServicesStrings.DeepPartial & TopLevel[T]
 }

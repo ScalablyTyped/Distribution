@@ -14,35 +14,34 @@ object suggestionsMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions", "Suggestions")
   @js.native
-  class Suggestions[T] protected ()
-    extends Component[ISuggestionsProps[T], ISuggestionsState, js.Any] {
+  open class Suggestions[T] protected () extends Component[ISuggestionsProps[T], ISuggestionsState, Any] {
     def this(suggestionsProps: ISuggestionsProps[T]) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _forceResolve: js.Any = js.native
+    /* private */ var _forceResolve: Any = js.native
     
     /* protected */ var _forceResolveButton: RefObject[IButton] = js.native
     
-    /* private */ var _getAlertText: js.Any = js.native
+    /* private */ var _getAlertText: Any = js.native
     
-    /* private */ var _getMoreResults: js.Any = js.native
+    /* private */ var _getMoreResults: Any = js.native
     
-    /* private */ var _onClickTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onClickTypedSuggestionsItem: Any = js.native
     
-    /* private */ var _onRemoveTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onRemoveTypedSuggestionsItem: Any = js.native
     
-    /* private */ var _refocusOnSuggestions: js.Any = js.native
+    /* private */ var _refocusOnSuggestions: Any = js.native
     
-    /* private */ var _renderSuggestions: js.Any = js.native
+    /* private */ var _renderSuggestions: Any = js.native
     
     /* protected */ var _searchForMoreButton: RefObject[IButton] = js.native
     
     /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     
-    /* private */ var _shouldShowForceResolve: js.Any = js.native
+    /* private */ var _shouldShowForceResolve: Any = js.native
     
-    /* private */ var activeSelectedElement: js.Any = js.native
+    /* private */ var activeSelectedElement: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MSuggestions(): Unit = js.native

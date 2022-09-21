@@ -14,7 +14,7 @@ trait TapeRecoveryPointInfo extends StObject {
   /**
     * The time when the point-in-time view of the virtual tape was replicated for later recovery. The default timestamp format of the tape recovery point time is in the ISO8601 extended YYYY-MM-DD'T'HH:MM:SS'Z' format.
     */
-  var TapeRecoveryPointTime: js.UndefOr[Time] = js.undefined
+  var TapeRecoveryPointTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size, in bytes, of the virtual tapes to recover.
@@ -39,7 +39,7 @@ object TapeRecoveryPointInfo {
     
     inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
     
-    inline def setTapeRecoveryPointTime(value: Time): Self = StObject.set(x, "TapeRecoveryPointTime", value.asInstanceOf[js.Any])
+    inline def setTapeRecoveryPointTime(value: js.Date): Self = StObject.set(x, "TapeRecoveryPointTime", value.asInstanceOf[js.Any])
     
     inline def setTapeRecoveryPointTimeUndefined: Self = StObject.set(x, "TapeRecoveryPointTime", js.undefined)
     

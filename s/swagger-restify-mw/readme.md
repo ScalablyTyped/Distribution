@@ -11,9 +11,9 @@ Swagger loader and middleware for Restify
 | Full name          | swagger-restify-mw |
 | Keywords           | swagger, api, apis, restify |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 19859 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1407.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/apigee-127/swagger-restify#readme)

@@ -19,7 +19,7 @@ trait GetConsoleOutputResult extends StObject {
   /**
     * The time at which the output was last updated.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetConsoleOutputResult {
   
@@ -38,7 +38,7 @@ object GetConsoleOutputResult {
     
     inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
-    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for broadcast-channel
 
-Typings are for version 3.3.0
+Typings are for version 4.17.0
 
 ## Library description:
 A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and NodeJs
@@ -10,10 +10,10 @@ A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and Node
 | ------------------ | :-------------: |
 | Full name          | broadcast-channel |
 | Keywords           | broadcast-channel, broadcastchannel, broadcast, polyfill, localstorage, indexeddb, postMessage, crosstab, ipc, leader-election |
-| # releases         | 21 |
-| # dependents       | 33 |
-| # downloads        | 1789890 |
-| # stars            | 0 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 6530689.333333333 |
+| # stars            | 1348.0 |
 
 ## Links
 - [Homepage](https://github.com/pubkey/broadcast-channel#readme)

@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.clickCreatingTool, which you can modify.
   */
-class ClickCreatingTool ()
+open class ClickCreatingTool ()
   extends typings.go.mod.ClickCreatingTool

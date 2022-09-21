@@ -15,7 +15,7 @@ object Managers {
   
   @JSGlobal("SFS2X.Managers.BuddyManager")
   @js.native
-  class BuddyManager protected ()
+  open class BuddyManager protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Managers.BuddyManager {
     /**
@@ -130,7 +130,7 @@ object Managers {
   
   @JSGlobal("SFS2X.Managers.RoomManager")
   @js.native
-  class RoomManager protected ()
+  open class RoomManager protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Managers.RoomManager {
     /**
@@ -153,7 +153,7 @@ object Managers {
       * @return {boolean}          Returns: true if the passed Room exists in the Rooms list.
       */
     /* CompleteClass */
-    override def containsRoom(idOrName: js.Any): Boolean = js.native
+    override def containsRoom(idOrName: Any): Boolean = js.native
     
     /**
       * Indicates whether the Rooms list contains a Room belonging to the specified Group or not.
@@ -162,7 +162,7 @@ object Managers {
       * @return {boolean}          Returns: true if the Rooms list contains the passed Room and it belongs to the specified Group.
       */
     /* CompleteClass */
-    override def containsRoomInGroup(idOrName: js.Any, groupId: String): Boolean = js.native
+    override def containsRoomInGroup(idOrName: Any, groupId: String): Boolean = js.native
     
     /**
       * Returns a list of Rooms currently joined by the client.
@@ -227,7 +227,7 @@ object Managers {
   
   @JSGlobal("SFS2X.Managers.UserManager")
   @js.native
-  class UserManager protected ()
+  open class UserManager protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Managers.UserManager {
     /**

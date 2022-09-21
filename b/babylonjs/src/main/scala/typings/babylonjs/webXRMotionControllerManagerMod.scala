@@ -11,7 +11,7 @@ object webXRMotionControllerManagerMod {
   
   @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager")
   @js.native
-  class WebXRMotionControllerManager () extends StObject
+  open class WebXRMotionControllerManager () extends StObject
   /* static members */
   object WebXRMotionControllerManager {
     
@@ -28,6 +28,11 @@ object webXRMotionControllerManagerMod {
     inline def BaseRepositoryUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseRepositoryUrl")(x.asInstanceOf[js.Any])
     
     /**
+      * Clear the controller's cache (usually happens at the end of a session)
+      */
+    inline def ClearControllerCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearControllerCache")().asInstanceOf[Unit]
+    
+    /**
       * Clear the cache used for profile loading and reload when requested again
       */
     inline def ClearProfilesCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearProfilesCache")().asInstanceOf[Unit]
@@ -39,9 +44,18 @@ object webXRMotionControllerManagerMod {
     inline def DefaultFallbacks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultFallbacks")().asInstanceOf[Unit]
     
     /**
+      * Disable the controller cache and load the models each time a new WebXRProfileMotionController is loaded.
+      * Defaults to true.
+      */
+    @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager.DisableControllerCache")
+    @js.native
+    def DisableControllerCache: Boolean = js.native
+    inline def DisableControllerCache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableControllerCache")(x.asInstanceOf[js.Any])
+    
+    /**
       * Find a fallback profile if the profile was not found. There are a few predefined generic profiles.
       * @param profileId the profile to which a fallback needs to be found
-      * @return an array with corresponding fallback profiles
+      * @returns an array with corresponding fallback profiles
       */
     inline def FindFallbackWithProfileId(profileId: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("FindFallbackWithProfileId")(profileId.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
@@ -57,7 +71,7 @@ object webXRMotionControllerManagerMod {
       * @param xrInput the xrInput to which a new controller is initialized
       * @param scene the scene to which the model will be added
       * @param forceProfile force a certain profile for this controller
-      * @return A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
+      * @returns A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
       */
     inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene): js.Promise[WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebXRAbstractMotionController]]
     inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene, forceProfile: String): js.Promise[WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forceProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebXRAbstractMotionController]]
@@ -89,7 +103,7 @@ object webXRMotionControllerManagerMod {
     
     /**
       * Will update the list of profiles available in the repository
-      * @return a promise that resolves to a map of profiles available online
+      * @returns a promise that resolves to a map of profiles available online
       */
     inline def UpdateProfilesList(): js.Promise[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateProfilesList")().asInstanceOf[js.Promise[StringDictionary[String]]]
     
@@ -103,33 +117,33 @@ object webXRMotionControllerManagerMod {
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._AvailableControllers")
     @js.native
-    def _AvailableControllers: js.Any = js.native
-    inline def _AvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AvailableControllers")(x.asInstanceOf[js.Any])
+    def _AvailableControllers: Any = js.native
+    inline def _AvailableControllers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AvailableControllers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._Fallbacks")
     @js.native
-    def _Fallbacks: js.Any = js.native
-    inline def _Fallbacks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fallbacks")(x.asInstanceOf[js.Any])
+    def _Fallbacks: Any = js.native
+    inline def _Fallbacks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fallbacks")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._LoadProfileFromRepository")
     @js.native
-    def _LoadProfileFromRepository: js.Any = js.native
-    inline def _LoadProfileFromRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfileFromRepository")(x.asInstanceOf[js.Any])
+    def _LoadProfileFromRepository: Any = js.native
+    inline def _LoadProfileFromRepository_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfileFromRepository")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._LoadProfilesFromAvailableControllers")
     @js.native
-    def _LoadProfilesFromAvailableControllers: js.Any = js.native
-    inline def _LoadProfilesFromAvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfilesFromAvailableControllers")(x.asInstanceOf[js.Any])
+    def _LoadProfilesFromAvailableControllers: Any = js.native
+    inline def _LoadProfilesFromAvailableControllers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfilesFromAvailableControllers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._ProfileLoadingPromises")
     @js.native
-    def _ProfileLoadingPromises: js.Any = js.native
-    inline def _ProfileLoadingPromises_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfileLoadingPromises")(x.asInstanceOf[js.Any])
+    def _ProfileLoadingPromises: Any = js.native
+    inline def _ProfileLoadingPromises_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfileLoadingPromises")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/webXRMotionControllerManager", "WebXRMotionControllerManager._ProfilesList")
     @js.native
-    def _ProfilesList: js.Any = js.native
-    inline def _ProfilesList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfilesList")(x.asInstanceOf[js.Any])
+    def _ProfilesList: Any = js.native
+    inline def _ProfilesList_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfilesList")(x.asInstanceOf[js.Any])
   }
   
   type MotionControllerConstructor = js.Function2[/* xrInput */ XRInputSource, /* scene */ Scene, WebXRAbstractMotionController]

@@ -2,7 +2,6 @@ package typings.couchbase.mod
 
 import typings.couchbase.mod.SearchQuery.Consistency
 import typings.couchbase.mod.SearchQuery.HighlightStyle
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,8 +189,8 @@ object SearchQuery {
       * @param end The upper bound of the query.
       * @param inclusive True to set an inclusive bound. Defaults to false.
       */
-    def end(end: Date): this.type = js.native
-    def end(end: Date, inclusive: Boolean): this.type = js.native
+    def end(end: js.Date): this.type = js.native
+    def end(end: js.Date, inclusive: Boolean): this.type = js.native
     
     /**
       * Specifies the field to query.
@@ -206,8 +205,8 @@ object SearchQuery {
       * @param start The lower bound of the query.
       * @param inclusive True to set an inclusive bound. Defaults to true.
       */
-    def start(start: Date): this.type = js.native
-    def start(start: Date, inclusive: Boolean): this.type = js.native
+    def start(start: js.Date): this.type = js.native
+    def start(start: js.Date, inclusive: Boolean): this.type = js.native
   }
   
   @JSImport("couchbase", "SearchQuery.DisjunctionQuery")
@@ -583,7 +582,7 @@ object SearchQuery {
     * Creates a query for matches all of a list of subqueries in an index.
     */
   /* static member */
-  inline def conjuncts(queries: Query*): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
+  inline def conjuncts(queries: Query*): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ConjunctionQuery]
   /**
     * Creates a query for matches all of a list of subqueries in an index.
     */
@@ -600,7 +599,7 @@ object SearchQuery {
     * Creates a query for matches any of a list of subqueries in an index.
     */
   /* static member */
-  inline def disjuncts(queries: Query*): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
+  inline def disjuncts(queries: Query*): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[Seq[js.Any]]*).asInstanceOf[DisjunctionQuery]
   /**
     * Creates a query for matches any of a list of subqueries in an index.
     */
@@ -611,7 +610,7 @@ object SearchQuery {
     * Creates a query which allows you to match a list of document IDs in an index.
     */
   /* static member */
-  inline def docIds(ids: String*): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
+  inline def docIds(ids: String*): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[Seq[js.Any]]*).asInstanceOf[DocIdQuery]
   /**
     * Creates a query which allows you to match a list of document IDs in an index.
     */

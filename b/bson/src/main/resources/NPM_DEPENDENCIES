@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bson" : "4.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bson" : "4.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

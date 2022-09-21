@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Maths/index", "SphericalHarmonics")
 @js.native
-class SphericalHarmonics ()
+open class SphericalHarmonics ()
   extends typings.babylonjs.sphericalPolynomialMod.SphericalHarmonics
 /* static members */
 object SphericalHarmonics {

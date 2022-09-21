@@ -9,11 +9,11 @@ trait ISplashScreen extends StObject {
   
   var imageLocation: Rect
   
-  var ondismissed: js.Any
+  var ondismissed: Any
 }
 object ISplashScreen {
   
-  inline def apply(imageLocation: Rect, ondismissed: js.Any): ISplashScreen = {
+  inline def apply(imageLocation: Rect, ondismissed: Any): ISplashScreen = {
     val __obj = js.Dynamic.literal(imageLocation = imageLocation.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplashScreen]
   }
@@ -22,6 +22,6 @@ object ISplashScreen {
     
     inline def setImageLocation(value: Rect): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
     
-    inline def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
+    inline def setOndismissed(value: Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
   }
 }

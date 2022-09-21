@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gl-react", "VisitorLogger")
 @js.native
-class VisitorLogger () extends Visitor {
+open class VisitorLogger () extends Visitor {
   
   var groupNestedLvl: Double = js.native
 }

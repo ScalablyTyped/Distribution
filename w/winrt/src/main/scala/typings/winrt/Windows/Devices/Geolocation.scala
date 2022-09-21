@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,7 +66,7 @@ object Geolocation {
        with ICivicAddress
   object CivicAddress {
     
-    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): CivicAddress = {
+    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: js.Date): CivicAddress = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CivicAddress]
     }
@@ -86,7 +85,7 @@ object Geolocation {
       latitude: Double,
       longitude: Double,
       speed: Double,
-      timestamp: Date
+      timestamp: js.Date
     ): Geocoordinate = {
       val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Geocoordinate]
@@ -119,11 +118,11 @@ object Geolocation {
     
     var state: String
     
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object ICivicAddress {
     
-    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): ICivicAddress = {
+    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: js.Date): ICivicAddress = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICivicAddress]
     }
@@ -138,7 +137,7 @@ object Geolocation {
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,7 +157,7 @@ object Geolocation {
     
     var speed: Double
     
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object IGeocoordinate {
     
@@ -170,7 +169,7 @@ object Geolocation {
       latitude: Double,
       longitude: Double,
       speed: Double,
-      timestamp: Date
+      timestamp: js.Date
     ): IGeocoordinate = {
       val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeocoordinate]
@@ -192,7 +191,7 @@ object Geolocation {
       
       inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,9 +207,9 @@ object Geolocation {
     
     var movementThreshold: Double = js.native
     
-    var onpositionchanged: js.Any = js.native
+    var onpositionchanged: Any = js.native
     
-    var onstatuschanged: js.Any = js.native
+    var onstatuschanged: Any = js.native
     
     var reportInterval: Double = js.native
   }

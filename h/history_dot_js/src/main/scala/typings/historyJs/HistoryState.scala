@@ -8,7 +8,7 @@ trait HistoryState extends StObject {
   
   var cleanUrl: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var hashedUrl: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object HistoryState {
     
     inline def setCleanUrlUndefined: Self = StObject.set(x, "cleanUrl", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

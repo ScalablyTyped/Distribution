@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@noble/ed25519" : "1.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@noble/ed25519" : "1.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

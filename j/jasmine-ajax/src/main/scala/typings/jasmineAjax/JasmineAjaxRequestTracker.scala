@@ -1,6 +1,5 @@
 package typings.jasmineAjax
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait JasmineAjaxRequestTracker extends StObject {
   
   def filter(urlToMatch: String): js.Array[JasmineAjaxRequest] = js.native
   def filter(urlToMatch: js.Function1[/* request */ JasmineAjaxRequest, Boolean]): js.Array[JasmineAjaxRequest] = js.native
-  def filter(urlToMatch: RegExp): js.Array[JasmineAjaxRequest] = js.native
+  def filter(urlToMatch: js.RegExp): js.Array[JasmineAjaxRequest] = js.native
   
   def first(): JasmineAjaxRequest = js.native
   

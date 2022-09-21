@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RangeMinPoint extends StObject {
   
+  /**
+    * Specifies the URL of the image to be used as a maximum point marker.
+    */
   var rangeMaxPoint: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the URL of the image to be used as a maximum point marker.
+    */
   var rangeMinPoint: js.UndefOr[String] = js.undefined
 }
 object RangeMinPoint {

@@ -18,13 +18,13 @@ object mod {
     
     var promise: js.Promise[R]
     
-    def reject(error: js.Any): Unit
+    def reject(error: Any): Unit
     
     def resolve(result: R): Unit
   }
   object Deferred {
     
-    inline def apply[R](promise: js.Promise[R], reject: js.Any => Unit, resolve: R => Unit): Deferred[R] = {
+    inline def apply[R](promise: js.Promise[R], reject: Any => Unit, resolve: R => Unit): Deferred[R] = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[Deferred[R]]
     }
@@ -33,7 +33,7 @@ object mod {
       
       inline def setPromise(value: js.Promise[R]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      inline def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
       inline def setResolve(value: R => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }

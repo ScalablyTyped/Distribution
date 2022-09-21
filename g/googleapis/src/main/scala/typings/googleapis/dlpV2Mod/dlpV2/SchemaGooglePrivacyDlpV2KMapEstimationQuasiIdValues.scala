@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A tuple of values for the quasi-identifier columns.
-  */
 trait SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues extends StObject {
   
   /**
     * The estimated anonymity for these quasi-identifier values.
     */
-  var estimatedAnonymity: js.UndefOr[String] = js.undefined
+  var estimatedAnonymity: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The quasi-identifier values.
@@ -30,12 +27,14 @@ object SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues {
     
     inline def setEstimatedAnonymity(value: String): Self = StObject.set(x, "estimatedAnonymity", value.asInstanceOf[js.Any])
     
+    inline def setEstimatedAnonymityNull: Self = StObject.set(x, "estimatedAnonymity", null)
+    
     inline def setEstimatedAnonymityUndefined: Self = StObject.set(x, "estimatedAnonymity", js.undefined)
     
     inline def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
     inline def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
-    inline def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
+    inline def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value*))
   }
 }

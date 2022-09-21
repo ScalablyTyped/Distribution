@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendCpu
 
-import typings.tensorflowTfjsBackendCpu.anon.AttrsBackend
+import typings.tensorflowTfjsBackendCpu.anon.AttrsBatchMatMulAttrs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object batchMatMulMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def batchMatMul(args: AttrsBackend): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchMatMul")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def batchMatMul(args: AttrsBatchMatMulAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchMatMul")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/BatchMatMul", "batchMatMulConfig")
   @js.native

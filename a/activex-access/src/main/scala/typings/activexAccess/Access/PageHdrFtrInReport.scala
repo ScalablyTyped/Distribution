@@ -95,7 +95,7 @@ trait PageHdrFtrInReport extends StObject {
   
   var OnRetreatMacro: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Index: String): AccessProperty
   def Properties(Index: Double): AccessProperty
@@ -161,7 +161,7 @@ object PageHdrFtrInReport {
     OnPrintMacro: String,
     OnRetreat: String,
     OnRetreatMacro: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: Properties,
     RepeatSection: Boolean,
     SetTabOrder: () => Unit,
@@ -262,7 +262,7 @@ object PageHdrFtrInReport {
     
     inline def setOnRetreatMacro(value: String): Self = StObject.set(x, "OnRetreatMacro", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

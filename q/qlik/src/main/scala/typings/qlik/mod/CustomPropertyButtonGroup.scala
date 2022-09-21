@@ -42,7 +42,7 @@ object CustomPropertyButtonGroup {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: ButtonGroupOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: ButtonGroupOption*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

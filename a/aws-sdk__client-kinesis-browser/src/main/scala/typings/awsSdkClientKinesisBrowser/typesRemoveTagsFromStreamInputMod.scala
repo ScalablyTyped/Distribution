@@ -2,7 +2,6 @@ package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesRemoveTagsFromStreamInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -43,11 +42,11 @@ object typesRemoveTagsFromStreamInputMod {
     /**
       * <p>A list of tag keys. Each corresponding tag is removed from the stream.</p>
       */
-    var TagKeys: js.Array[String] | Iterable[String]
+    var TagKeys: js.Array[String] | js.Iterable[String]
   }
   object RemoveTagsFromStreamInput {
     
-    inline def apply(StreamName: String, TagKeys: js.Array[String] | Iterable[String]): RemoveTagsFromStreamInput = {
+    inline def apply(StreamName: String, TagKeys: js.Array[String] | js.Iterable[String]): RemoveTagsFromStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveTagsFromStreamInput]
     }
@@ -59,7 +58,7 @@ object typesRemoveTagsFromStreamInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -70,9 +69,9 @@ object typesRemoveTagsFromStreamInputMod {
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      inline def setTagKeys(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+      inline def setTagKeys(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
       
-      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     }
   }
 }

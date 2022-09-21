@@ -10,11 +10,11 @@ trait JSONRPCResponsePayload extends StObject {
   
   var jsonrpc: String
   
-  var result: js.Any
+  var result: Any
 }
 object JSONRPCResponsePayload {
   
-  inline def apply(id: Double, jsonrpc: String, result: js.Any): JSONRPCResponsePayload = {
+  inline def apply(id: Double, jsonrpc: String, result: Any): JSONRPCResponsePayload = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONRPCResponsePayload]
   }
@@ -25,6 +25,6 @@ object JSONRPCResponsePayload {
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

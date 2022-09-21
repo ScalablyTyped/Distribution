@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExpressionWithTypeArguments
   extends StObject
+     with MemberExpression
      with NodeWithTypeArguments
      with TypeReferenceType {
   
@@ -14,7 +15,4 @@ trait ExpressionWithTypeArguments
   
   @JSName("kind")
   val kind_ExpressionWithTypeArguments: typings.typescript.mod.SyntaxKind.ExpressionWithTypeArguments = js.native
-  
-  @JSName("parent")
-  val parent_ExpressionWithTypeArguments: HeritageClause | JSDocAugmentsTag | JSDocImplementsTag = js.native
 }

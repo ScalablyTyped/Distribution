@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +15,11 @@ trait CmsTimestampInfo extends StObject {
   var signingCertificate: Certificate
   
   /** Gets the date and time of the timestamp. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object CmsTimestampInfo {
   
-  inline def apply(certificates: IVectorView[Certificate], signingCertificate: Certificate, timestamp: Date): CmsTimestampInfo = {
+  inline def apply(certificates: IVectorView[Certificate], signingCertificate: Certificate, timestamp: js.Date): CmsTimestampInfo = {
     val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], signingCertificate = signingCertificate.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmsTimestampInfo]
   }
@@ -31,6 +30,6 @@ object CmsTimestampInfo {
     
     inline def setSigningCertificate(value: Certificate): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

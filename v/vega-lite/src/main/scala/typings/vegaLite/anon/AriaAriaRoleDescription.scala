@@ -10,13 +10,13 @@ trait AriaAriaRoleDescription extends StObject {
   
   var aria: js.UndefOr[`true` | SignalRef] = js.undefined
   
-  var ariaRoleDescription: ValueScaleField
+  var ariaRoleDescription: `3`
   
   var description: SignalRef | ValueString
 }
 object AriaAriaRoleDescription {
   
-  inline def apply(ariaRoleDescription: ValueScaleField, description: SignalRef | ValueString): AriaAriaRoleDescription = {
+  inline def apply(ariaRoleDescription: `3`, description: SignalRef | ValueString): AriaAriaRoleDescription = {
     val __obj = js.Dynamic.literal(ariaRoleDescription = ariaRoleDescription.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[AriaAriaRoleDescription]
   }
@@ -25,7 +25,7 @@ object AriaAriaRoleDescription {
     
     inline def setAria(value: `true` | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
-    inline def setAriaRoleDescription(value: ValueScaleField): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+    inline def setAriaRoleDescription(value: `3`): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
     
     inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     

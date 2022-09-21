@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientYoutube.anon
 
-import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.Playlist
+import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.LiveChatModerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,18 +30,8 @@ trait PrettyPrintQuotaUser extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials
-    * identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and
-    * manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide
-    * authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will
-    * include. Note that this method will override the existing values for mutable properties that are contained in any parts that the request body specifies. For example, a
-    * playlist's description is contained in the snippet part, which must be included in the request body. If the request does not specify a value for the snippet.description
-    * property, the playlist's existing description will be deleted.
+    * The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response
+    * returns. Set the parameter value to snippet.
     */
   var part: String | js.Array[String]
   
@@ -52,7 +42,7 @@ trait PrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Playlist
+  var resource: LiveChatModerator
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -62,7 +52,7 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(part: String | js.Array[String], resource: Playlist): PrettyPrintQuotaUser = {
+  inline def apply(part: String | js.Array[String], resource: LiveChatModerator): PrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
@@ -97,13 +87,9 @@ object PrettyPrintQuotaUser {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
-    
-    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
-    
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -113,7 +99,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Playlist): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: LiveChatModerator): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

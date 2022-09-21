@@ -22,7 +22,7 @@ object FindPlaceFromTextResponse {
     
     inline def setCandidates(value: js.Array[PartialPlaceSearchResult]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    inline def setCandidatesVarargs(value: PartialPlaceSearchResult*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: PartialPlaceSearchResult*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

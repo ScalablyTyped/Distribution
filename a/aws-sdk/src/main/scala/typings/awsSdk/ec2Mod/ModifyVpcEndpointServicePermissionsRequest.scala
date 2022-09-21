@@ -39,7 +39,7 @@ object ModifyVpcEndpointServicePermissionsRequest {
     
     inline def setAddAllowedPrincipalsUndefined: Self = StObject.set(x, "AddAllowedPrincipals", js.undefined)
     
-    inline def setAddAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "AddAllowedPrincipals", js.Array(value :_*))
+    inline def setAddAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "AddAllowedPrincipals", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object ModifyVpcEndpointServicePermissionsRequest {
     
     inline def setRemoveAllowedPrincipalsUndefined: Self = StObject.set(x, "RemoveAllowedPrincipals", js.undefined)
     
-    inline def setRemoveAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "RemoveAllowedPrincipals", js.Array(value :_*))
+    inline def setRemoveAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "RemoveAllowedPrincipals", js.Array(value*))
     
     inline def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }

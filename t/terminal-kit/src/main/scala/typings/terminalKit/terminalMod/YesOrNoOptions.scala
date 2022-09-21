@@ -33,10 +33,10 @@ object YesOrNoOptions {
     
     inline def setNo(value: String | js.Array[String]): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
     
-    inline def setNoVarargs(value: String*): Self = StObject.set(x, "no", js.Array(value :_*))
+    inline def setNoVarargs(value: String*): Self = StObject.set(x, "no", js.Array(value*))
     
     inline def setYes(value: String | js.Array[String]): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
     
-    inline def setYesVarargs(value: String*): Self = StObject.set(x, "yes", js.Array(value :_*))
+    inline def setYesVarargs(value: String*): Self = StObject.set(x, "yes", js.Array(value*))
   }
 }

@@ -54,7 +54,7 @@ object ProfileNode {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: integer*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: integer*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDeoptReason(value: String): Self = StObject.set(x, "deoptReason", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object ProfileNode {
     
     inline def setPositionTicksUndefined: Self = StObject.set(x, "positionTicks", js.undefined)
     
-    inline def setPositionTicksVarargs(value: PositionTickInfo*): Self = StObject.set(x, "positionTicks", js.Array(value :_*))
+    inline def setPositionTicksVarargs(value: PositionTickInfo*): Self = StObject.set(x, "positionTicks", js.Array(value*))
   }
 }

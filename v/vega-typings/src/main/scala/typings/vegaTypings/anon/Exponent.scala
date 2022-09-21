@@ -1,24 +1,19 @@
 package typings.vegaTypings.anon
 
+import typings.vegaTypings.encodeMod.NumericValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Exponent extends StObject {
   
-  var exponent: js.UndefOr[
-    Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.undefined
+  var exponent: js.UndefOr[Double | NumericValueRef] = js.undefined
   
   var extra: js.UndefOr[Boolean] = js.undefined
   
-  var mult: js.UndefOr[
-    Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.undefined
+  var mult: js.UndefOr[Double | NumericValueRef] = js.undefined
   
-  var offset: js.UndefOr[
-    Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.undefined
+  var offset: js.UndefOr[Double | NumericValueRef] = js.undefined
   
   var round: js.UndefOr[Boolean] = js.undefined
 }
@@ -31,9 +26,7 @@ object Exponent {
   
   extension [Self <: Exponent](x: Self) {
     
-    inline def setExponent(
-      value: Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-    ): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+    inline def setExponent(value: Double | NumericValueRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
     inline def setExponentUndefined: Self = StObject.set(x, "exponent", js.undefined)
     
@@ -41,15 +34,11 @@ object Exponent {
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    inline def setMult(
-      value: Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-    ): Self = StObject.set(x, "mult", value.asInstanceOf[js.Any])
+    inline def setMult(value: Double | NumericValueRef): Self = StObject.set(x, "mult", value.asInstanceOf[js.Any])
     
     inline def setMultUndefined: Self = StObject.set(x, "mult", js.undefined)
     
-    inline def setOffset(
-      value: Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-    ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | NumericValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     

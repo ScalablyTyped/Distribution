@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StopBluetoothDevicesDiscoveryOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
   def success_MStopBluetoothDevicesDiscoveryOptions(res: ErrMsgResponse): Unit

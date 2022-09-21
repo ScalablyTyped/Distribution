@@ -29,6 +29,6 @@ object BatchPutAttributesRequest {
     
     inline def setItems(value: ReplaceableItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ReplaceableItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ReplaceableItem*): Self = StObject.set(x, "Items", js.Array(value*))
   }
 }

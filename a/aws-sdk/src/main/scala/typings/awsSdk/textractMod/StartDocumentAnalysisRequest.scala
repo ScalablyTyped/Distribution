@@ -40,6 +40,8 @@ trait StartDocumentAnalysisRequest extends StObject {
     * Sets if the output will go to a customer defined bucket. By default, Amazon Textract will save the results internally to be accessed by the GetDocumentAnalysis operation.
     */
   var OutputConfig: js.UndefOr[typings.awsSdk.textractMod.OutputConfig] = js.undefined
+  
+  var QueriesConfig: js.UndefOr[typings.awsSdk.textractMod.QueriesConfig] = js.undefined
 }
 object StartDocumentAnalysisRequest {
   
@@ -58,7 +60,7 @@ object StartDocumentAnalysisRequest {
     
     inline def setFeatureTypes(value: FeatureTypes): Self = StObject.set(x, "FeatureTypes", value.asInstanceOf[js.Any])
     
-    inline def setFeatureTypesVarargs(value: FeatureType*): Self = StObject.set(x, "FeatureTypes", js.Array(value :_*))
+    inline def setFeatureTypesVarargs(value: FeatureType*): Self = StObject.set(x, "FeatureTypes", js.Array(value*))
     
     inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
@@ -75,5 +77,9 @@ object StartDocumentAnalysisRequest {
     inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
     inline def setOutputConfigUndefined: Self = StObject.set(x, "OutputConfig", js.undefined)
+    
+    inline def setQueriesConfig(value: QueriesConfig): Self = StObject.set(x, "QueriesConfig", value.asInstanceOf[js.Any])
+    
+    inline def setQueriesConfigUndefined: Self = StObject.set(x, "QueriesConfig", js.undefined)
   }
 }

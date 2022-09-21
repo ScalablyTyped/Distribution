@@ -1,7 +1,7 @@
 
 # Scala.js typings for tuya-panel-kit
 
-Typings are for version 2.0
+Typings are for version 4.7
 
 ## Library description:
 a functional component library for developing tuya device panels!
@@ -10,13 +10,13 @@ a functional component library for developing tuya device panels!
 | ------------------ | :-------------: |
 | Full name          | tuya-panel-kit |
 | Keywords           | tuya, react-native, panel |
-| # releases         | 22 |
-| # dependents       | 0 |
-| # downloads        | 2023 |
-| # stars            | 0 |
+| # releases         | 69 |
+| # dependents       | 0.0 |
+| # downloads        | 501.6666666666667 |
+| # stars            | 66.0 |
 
 ## Links
-- [Homepage](https://github.com/tuya/tuya-panel-kit#readme)
+- [Homepage](https://github.com/tuya/tuya-panel-kit)
 - [Bugs](https://github.com/tuya/tuya-panel-kit/issues)
 - [Repository](https://github.com/tuya/tuya-panel-kit)
 - [Npm](https://www.npmjs.com/package/tuya-panel-kit)

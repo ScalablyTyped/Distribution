@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateBrokerRequest extends StObject {
   
   /**
-    * The authentication strategy used to secure the broker.
+    * Optional. The authentication strategy used to secure the broker. The default is SIMPLE.
     */
   var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
-    * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions. The automatic upgrades occur during the maintenance window of the broker or after a manual broker reboot.
+    * Enables automatic upgrades to new minor versions for brokers, as new versions are released and supported by Amazon MQ. Automatic upgrades occur during the scheduled maintenance window of the broker or after a manual broker reboot.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined
   
@@ -27,17 +27,17 @@ trait UpdateBrokerRequest extends StObject {
   var Configuration: js.UndefOr[ConfigurationId] = js.undefined
   
   /**
-    * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
+    * The broker engine version. For a list of supported engine versions, see Supported engines.
     */
   var EngineVersion: js.UndefOr[string] = js.undefined
   
   /**
-    * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
+    * The broker's host instance type to upgrade to. For a list of supported instance types, see Broker instance types.
     */
   var HostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
-    * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
+    * Optional. The metadata of the LDAP server used to authenticate and authorize connections to the broker. Does not apply to RabbitMQ brokers.
     */
   var LdapServerMetadata: js.UndefOr[LdapServerMetadataInput] = js.undefined
   
@@ -45,6 +45,11 @@ trait UpdateBrokerRequest extends StObject {
     * Enables Amazon CloudWatch logging for brokers.
     */
   var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.undefined
+  
+  /**
+    * The parameters that determine the WeeklyStartTime.
+    */
+  var MaintenanceWindowStartTime: js.UndefOr[WeeklyStartTime] = js.undefined
   
   /**
     * The list of security groups (1 minimum, 5 maximum) that authorizes connections to brokers.
@@ -90,10 +95,14 @@ object UpdateBrokerRequest {
     
     inline def setLogsUndefined: Self = StObject.set(x, "Logs", js.undefined)
     
+    inline def setMaintenanceWindowStartTime(value: WeeklyStartTime): Self = StObject.set(x, "MaintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "MaintenanceWindowStartTime", js.undefined)
+    
     inline def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
   }
 }

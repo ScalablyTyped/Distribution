@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object moduleMod {
   
-  /* Inlined std.Partial<{  pre :snabbdom.snabbdom/build/package/hooks.PreHook,   create :snabbdom.snabbdom/build/package/hooks.CreateHook,   update :snabbdom.snabbdom/build/package/hooks.UpdateHook,   destroy :snabbdom.snabbdom/build/package/hooks.DestroyHook,   remove :snabbdom.snabbdom/build/package/hooks.RemoveHook,   post :snabbdom.snabbdom/build/package/hooks.PostHook}> */
+  /* Inlined std.Partial<{  pre :snabbdom.snabbdom/build/hooks.PreHook,   create :snabbdom.snabbdom/build/hooks.CreateHook,   update :snabbdom.snabbdom/build/hooks.UpdateHook,   destroy :snabbdom.snabbdom/build/hooks.DestroyHook,   remove :snabbdom.snabbdom/build/hooks.RemoveHook,   post :snabbdom.snabbdom/build/hooks.PostHook}> */
   trait Module extends StObject {
     
     var create: js.UndefOr[CreateHook] = js.undefined
@@ -37,27 +37,27 @@ object moduleMod {
     
     extension [Self <: Module](x: Self) {
       
-      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      inline def setDestroy(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* vNode */ VNode_ => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setPost(value: () => js.Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPre(value: () => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPre(value: () => Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }

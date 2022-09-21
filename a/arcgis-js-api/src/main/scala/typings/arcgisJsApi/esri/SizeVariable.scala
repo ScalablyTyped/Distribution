@@ -33,23 +33,18 @@ trait SizeVariable
   /**
     * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default all
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#axis)
     */
   var axis: width | depth | height | `width-and-depth` | all = js.native
-  
-  /**
-    * The only supported expression is `view.scale`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#expression)
-    */
-  var expression: String = js.native
   
   /**
     * Modifies the SizeVariable in place by flipping the sizes in the [stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#stops).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#flipSizes)
     */
-  def flipSizes(): Unit = js.native
+  def flipSizes(): scala.Unit = js.native
   
   /**
     * The maximum data value used in the size ramp.

@@ -1,6 +1,8 @@
 package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.backForwardCacheNotUsed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.compilationCacheProduced
+import typings.devtoolsProtocol.devtoolsProtocolStrings.documentOpened
 import typings.devtoolsProtocol.devtoolsProtocolStrings.domContentEventFired
 import typings.devtoolsProtocol.devtoolsProtocolStrings.downloadProgress
 import typings.devtoolsProtocol.devtoolsProtocolStrings.downloadWillBegin
@@ -21,6 +23,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.javascriptDialogOpening
 import typings.devtoolsProtocol.devtoolsProtocolStrings.lifecycleEvent
 import typings.devtoolsProtocol.devtoolsProtocolStrings.loadEventFired
 import typings.devtoolsProtocol.devtoolsProtocolStrings.navigatedWithinDocument
+import typings.devtoolsProtocol.devtoolsProtocolStrings.prerenderAttemptCompleted
 import typings.devtoolsProtocol.devtoolsProtocolStrings.screencastFrame
 import typings.devtoolsProtocol.devtoolsProtocolStrings.screencastVisibilityChanged
 import typings.devtoolsProtocol.devtoolsProtocolStrings.windowOpen
@@ -29,6 +32,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnLoadReque
 import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnLoadResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnNewDocumentRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.AddScriptToEvaluateOnNewDocumentResponse
+import typings.devtoolsProtocol.mod.Protocol.Page.BackForwardCacheNotUsedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.CaptureScreenshotRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.CaptureScreenshotResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.CaptureSnapshotRequest
@@ -37,6 +41,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.CompilationCacheProducedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.CreateIsolatedWorldRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.CreateIsolatedWorldResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.DeleteCookieRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.DocumentOpenedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.DomContentEventFiredEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent
@@ -50,6 +55,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.FrameScheduledNavigationEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameStartedLoadingEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameStoppedLoadingEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.GenerateTestReportRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.GetAppIdResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetAppManifestResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetCookiesResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetFrameTreeResponse
@@ -57,6 +63,10 @@ import typings.devtoolsProtocol.mod.Protocol.Page.GetInstallabilityErrorsRespons
 import typings.devtoolsProtocol.mod.Protocol.Page.GetLayoutMetricsResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetManifestIconsResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetNavigationHistoryResponse
+import typings.devtoolsProtocol.mod.Protocol.Page.GetOriginTrialsRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.GetOriginTrialsResponse
+import typings.devtoolsProtocol.mod.Protocol.Page.GetPermissionsPolicyStateRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.GetPermissionsPolicyStateResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetResourceContentRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.GetResourceContentResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.GetResourceTreeResponse
@@ -69,8 +79,10 @@ import typings.devtoolsProtocol.mod.Protocol.Page.NavigateRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigateResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigateToHistoryEntryRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigatedWithinDocumentEvent
+import typings.devtoolsProtocol.mod.Protocol.Page.PrerenderAttemptCompletedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFResponse
+import typings.devtoolsProtocol.mod.Protocol.Page.ProduceCompilationCacheRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.ReloadRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.RemoveScriptToEvaluateOnLoadRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.RemoveScriptToEvaluateOnNewDocumentRequest
@@ -90,7 +102,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.SetFontSizesRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetGeolocationOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetInterceptFileChooserDialogRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetLifecycleEventsEnabledRequest
-import typings.devtoolsProtocol.mod.Protocol.Page.SetProduceCompilationCacheRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.SetSPCTransactionModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetTouchEmulationEnabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetWebLifecycleStateRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.StartScreencastRequest
@@ -140,7 +152,7 @@ trait PageApi extends StObject {
   def clearCompilationCache(): js.Promise[Unit] = js.native
   
   /**
-    * Clears the overriden device metrics.
+    * Clears the overridden device metrics.
     */
   def clearDeviceMetricsOverride(): js.Promise[Unit] = js.native
   
@@ -150,7 +162,7 @@ trait PageApi extends StObject {
   def clearDeviceOrientationOverride(): js.Promise[Unit] = js.native
   
   /**
-    * Clears the overriden Geolocation Position and Error.
+    * Clears the overridden Geolocation Position and Error.
     */
   def clearGeolocationOverride(): js.Promise[Unit] = js.native
   
@@ -189,6 +201,12 @@ trait PageApi extends StObject {
     */
   def generateTestReport(params: GenerateTestReportRequest): js.Promise[Unit] = js.native
   
+  /**
+    * Returns the unique (PWA) app id.
+    * Only returns values if the feature flag 'WebAppEnableManifestId' is enabled
+    */
+  def getAppId(): js.Promise[GetAppIdResponse] = js.native
+  
   def getAppManifest(): js.Promise[GetAppManifestResponse] = js.native
   
   /**
@@ -217,6 +235,16 @@ trait PageApi extends StObject {
   def getNavigationHistory(): js.Promise[GetNavigationHistoryResponse] = js.native
   
   /**
+    * Get Origin Trials on given frame.
+    */
+  def getOriginTrials(params: GetOriginTrialsRequest): js.Promise[GetOriginTrialsResponse] = js.native
+  
+  /**
+    * Get Permissions Policy state on given frame.
+    */
+  def getPermissionsPolicyState(params: GetPermissionsPolicyStateRequest): js.Promise[GetPermissionsPolicyStateResponse] = js.native
+  
+  /**
     * Returns content of the given resource.
     */
   def getResourceContent(params: GetResourceContentRequest): js.Promise[GetResourceContentResponse] = js.native
@@ -242,6 +270,17 @@ trait PageApi extends StObject {
   def navigateToHistoryEntry(params: NavigateToHistoryEntryRequest): js.Promise[Unit] = js.native
   
   /**
+    * Fired for failed bfcache history navigations if BackForwardCache feature is enabled. Do
+    * not assume any ordering with the Page.frameNavigated event. This event is fired only for
+    * main-frame history navigation where the document changes (non-same-document navigations),
+    * when bfcache navigation fails.
+    */
+  @JSName("on")
+  def on_backForwardCacheNotUsed(
+    event: backForwardCacheNotUsed,
+    listener: js.Function1[/* params */ BackForwardCacheNotUsedEvent, Unit]
+  ): Unit = js.native
+  /**
     * Issued for every compilation cache generated. Is only available
     * if Page.setGenerateCompilationCache is enabled.
     */
@@ -250,15 +289,22 @@ trait PageApi extends StObject {
     event: compilationCacheProduced,
     listener: js.Function1[/* params */ CompilationCacheProducedEvent, Unit]
   ): Unit = js.native
+  /**
+    * Fired when opening document to write to.
+    */
+  @JSName("on")
+  def on_documentOpened(event: documentOpened, listener: js.Function1[/* params */ DocumentOpenedEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_domContentEventFired(event: domContentEventFired, listener: js.Function1[/* params */ DomContentEventFiredEvent, Unit]): Unit = js.native
   /**
     * Fired when download makes progress. Last call has |done| == true.
+    * Deprecated. Use Browser.downloadProgress instead.
     */
   @JSName("on")
   def on_downloadProgress(event: downloadProgress, listener: js.Function1[/* params */ DownloadProgressEvent, Unit]): Unit = js.native
   /**
     * Fired when page is about to start a download.
+    * Deprecated. Use Browser.downloadWillBegin instead.
     */
   @JSName("on")
   def on_downloadWillBegin(event: downloadWillBegin, listener: js.Function1[/* params */ DownloadWillBeginEvent, Unit]): Unit = js.native
@@ -363,6 +409,14 @@ trait PageApi extends StObject {
     listener: js.Function1[/* params */ NavigatedWithinDocumentEvent, Unit]
   ): Unit = js.native
   /**
+    * Fired when a prerender attempt is completed.
+    */
+  @JSName("on")
+  def on_prerenderAttemptCompleted(
+    event: prerenderAttemptCompleted,
+    listener: js.Function1[/* params */ PrerenderAttemptCompletedEvent, Unit]
+  ): Unit = js.native
+  /**
     * Compressed image data requested by the `startScreencast`.
     */
   @JSName("on")
@@ -386,6 +440,16 @@ trait PageApi extends StObject {
     * Print page as PDF.
     */
   def printToPDF(params: PrintToPDFRequest): js.Promise[PrintToPDFResponse] = js.native
+  
+  /**
+    * Requests backend to produce compilation cache for the specified scripts.
+    * `scripts` are appeneded to the list of scripts for which the cache
+    * would be produced. The list may be reset during page navigation.
+    * When script with a matching URL is encountered, the cache is optionally
+    * produced upon backend discretion, based on internal heuristics.
+    * See also: `Page.compilationCacheProduced`.
+    */
+  def produceCompilationCache(params: ProduceCompilationCacheRequest): js.Promise[Unit] = js.native
   
   /**
     * Reloads given page optionally ignoring the cache.
@@ -478,9 +542,10 @@ trait PageApi extends StObject {
   def setLifecycleEventsEnabled(params: SetLifecycleEventsEnabledRequest): js.Promise[Unit] = js.native
   
   /**
-    * Forces compilation cache to be generated for every subresource script.
+    * Sets the Secure Payment Confirmation transaction mode.
+    * https://w3c.github.io/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode
     */
-  def setProduceCompilationCache(params: SetProduceCompilationCacheRequest): js.Promise[Unit] = js.native
+  def setSPCTransactionMode(params: SetSPCTransactionModeRequest): js.Promise[Unit] = js.native
   
   /**
     * Toggles mouse event-based touch event emulation.

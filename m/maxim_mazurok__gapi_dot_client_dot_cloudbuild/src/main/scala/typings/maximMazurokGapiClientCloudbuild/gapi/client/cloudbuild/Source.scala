@@ -11,6 +11,12 @@ trait Source extends StObject {
   
   /** If provided, get the source from this location in Google Cloud Storage. */
   var storageSource: js.UndefOr[StorageSource] = js.undefined
+  
+  /**
+    * If provided, get the source from this manifest in Google Cloud Storage. This feature is in Preview; see description
+    * [here](https://github.com/GoogleCloudPlatform/cloud-builders/tree/master/gcs-fetcher).
+    */
+  var storageSourceManifest: js.UndefOr[StorageSourceManifest] = js.undefined
 }
 object Source {
   
@@ -26,6 +32,10 @@ object Source {
     inline def setRepoSourceUndefined: Self = StObject.set(x, "repoSource", js.undefined)
     
     inline def setStorageSource(value: StorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
+    
+    inline def setStorageSourceManifest(value: StorageSourceManifest): Self = StObject.set(x, "storageSourceManifest", value.asInstanceOf[js.Any])
+    
+    inline def setStorageSourceManifestUndefined: Self = StObject.set(x, "storageSourceManifest", js.undefined)
     
     inline def setStorageSourceUndefined: Self = StObject.set(x, "storageSource", js.undefined)
   }

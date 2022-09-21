@@ -21,6 +21,6 @@ object RouteOptionsAccessScopeObject {
     
     inline def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
   }
 }

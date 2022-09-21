@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PlaySettings")
 @js.native
-/* private */ class PlaySettings ()
+/* private */ open class PlaySettings ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PlaySettings {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var LoopUntilStopped: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PauseAnimation: MsoTriState = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRemediationExceptionsRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule.
+    * The name of the Config rule.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
-    * The maximum number of RemediationExceptionResourceKey returned on each page. The default is 25. If you specify 0, AWS Config uses the default.
+    * The maximum number of RemediationExceptionResourceKey returned on each page. The default is 25. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeRemediationExceptionsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * An exception list of resource exception keys to be processed with the current request. AWS Config adds exception for each resource key. For example, AWS Config adds 3 exceptions for 3 resource keys. 
+    * An exception list of resource exception keys to be processed with the current request. Config adds exception for each resource key. For example, Config adds 3 exceptions for 3 resource keys. 
     */
   var ResourceKeys: js.UndefOr[RemediationExceptionResourceKeys] = js.undefined
 }
@@ -49,6 +49,6 @@ object DescribeRemediationExceptionsRequest {
     
     inline def setResourceKeysUndefined: Self = StObject.set(x, "ResourceKeys", js.undefined)
     
-    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value*))
   }
 }

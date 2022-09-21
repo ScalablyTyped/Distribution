@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDevEndpointResponse extends StObject {
   
   /**
-    * The map of arguments used to configure this DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
+    * The map of arguments used to configure this DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var Arguments: js.UndefOr[MapValue] = js.undefined
   
@@ -19,7 +19,7 @@ trait CreateDevEndpointResponse extends StObject {
   /**
     * The point in time at which this DevEndpoint was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampValue] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name assigned to the new DevEndpoint.
@@ -42,12 +42,12 @@ trait CreateDevEndpointResponse extends StObject {
   var FailureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints. 
+    * Glue version determines the versions of Apache Spark and Python that Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints.  For more information about the available Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide.
     */
   var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   
   /**
-    * The number of AWS Glue Data Processing Units (DPUs) allocated to this DevEndpoint.
+    * The number of Glue Data Processing Units (DPUs) allocated to this DevEndpoint.
     */
   var NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined
   
@@ -118,7 +118,7 @@ object CreateDevEndpointResponse {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setCreatedTimestamp(value: TimestampValue): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -162,7 +162,7 @@ object CreateDevEndpointResponse {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: GenericString*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: GenericString*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setStatus(value: GenericString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

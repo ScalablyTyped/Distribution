@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.SVGContext")
 @js.native
-class SVGContext protected ()
+open class SVGContext protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.SVGContext {
   def this(element: HTMLElement) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ContextualGroup")
 @js.native
-class ContextualGroup protected ()
+open class ContextualGroup protected ()
   extends StObject
      with typings.sharepoint.CUI.ContextualGroup {
   def this(id: String, title: String, color: Double, command: String) = this()

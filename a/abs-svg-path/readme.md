@@ -10,10 +10,10 @@ redefine an svg path with absolute coordinates
 | ------------------ | :-------------: |
 | Full name          | abs-svg-path |
 | Keywords           | absolute, svg, path |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 6146272 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1732999.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/jkroso/abs-svg-path#readme)

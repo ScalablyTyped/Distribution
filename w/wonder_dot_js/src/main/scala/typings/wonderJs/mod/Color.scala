@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Color")
 @js.native
-class Color ()
+open class Color ()
   extends typings.wonderJs.colorMod.Color
 /* static members */
 object Color {

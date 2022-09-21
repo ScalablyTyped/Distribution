@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.slideSlideMod.SlideProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object slideMod extends Shortcut {
+object slideMod {
   
-  @JSImport("@material-ui/core/Slide", JSImport.Default)
+  @JSImport("@material-ui/core/Slide", JSImport.Namespace)
   @js.native
-  val default: ComponentType[SlideProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[SlideProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `slideMod.foo` */
-  override def _to: ComponentType[SlideProps] = default
+  inline def default(props: SlideProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

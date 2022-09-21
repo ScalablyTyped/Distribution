@@ -26,7 +26,7 @@ object mod {
         
         inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
         
-        inline def setModalVarargs(value: String*): Self = StObject.set(x, "modal", js.Array(value :_*))
+        inline def setModalVarargs(value: String*): Self = StObject.set(x, "modal", js.Array(value*))
       }
     }
   }

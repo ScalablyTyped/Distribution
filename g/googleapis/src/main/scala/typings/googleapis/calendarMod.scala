@@ -2,14 +2,19 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.calendarV3Mod.calendarV3.Calendar
 import typings.googleapis.calendarV3Mod.calendarV3.Options
 import typings.googleapis.googleapisStrings.v3
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +25,13 @@ object calendarMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/calendar", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/calendar", "VERSIONS")
@@ -29,7 +41,7 @@ object calendarMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/calendar", "VERSIONS.v3")
     @js.native
-    class v3 protected () extends Calendar {
+    open class v3 protected () extends Calendar {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
@@ -45,7 +57,25 @@ object calendarMod {
     
     @JSImport("googleapis/build/src/apis/calendar", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/calendar", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/calendar", "auth.Compute")
@@ -56,7 +86,7 @@ object calendarMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -65,7 +95,7 @@ object calendarMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/calendar", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -74,13 +104,45 @@ object calendarMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/calendar", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/calendar", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/calendar", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/calendar", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -110,15 +172,82 @@ object calendarMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def calendar(options: Options): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any]).asInstanceOf[Calendar]
+  
+  object calendarV3 {
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Calendar")
+    @js.native
+    open class Calendar protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.Calendar {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Acl")
+    @js.native
+    open class ResourceAcl protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceAcl {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Calendarlist")
+    @js.native
+    open class ResourceCalendarlist protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceCalendarlist {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Calendars")
+    @js.native
+    open class ResourceCalendars protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceCalendars {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Channels")
+    @js.native
+    open class ResourceChannels protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceChannels {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Colors")
+    @js.native
+    open class ResourceColors protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceColors {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Events")
+    @js.native
+    open class ResourceEvents protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceEvents {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Freebusy")
+    @js.native
+    open class ResourceFreebusy protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceFreebusy {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/calendar", "calendar_v3.Resource$Settings")
+    @js.native
+    open class ResourceSettings protected ()
+      extends typings.googleapis.calendarV3Mod.calendarV3.ResourceSettings {
+      def this(context: APIRequestContext) = this()
+    }
+  }
   
   inline def calendar_v3(version: v3): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(version.asInstanceOf[js.Any]).asInstanceOf[Calendar]
 }

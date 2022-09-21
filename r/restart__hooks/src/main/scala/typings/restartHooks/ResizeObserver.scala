@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ResizeObserver
   extends StObject
-     with Instantiable1[/* callback */ ResizeObserverCallback, js.Any] {
+     with Instantiable1[/* callback */ ResizeObserverCallback, Any] {
   
   /**
     * Clears both the observationTargets and activeTargets lists.

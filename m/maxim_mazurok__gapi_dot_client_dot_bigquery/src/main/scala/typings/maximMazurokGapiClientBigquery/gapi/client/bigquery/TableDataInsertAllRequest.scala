@@ -47,7 +47,7 @@ object TableDataInsertAllRequest {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: InsertId*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: InsertId*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSkipInvalidRows(value: Boolean): Self = StObject.set(x, "skipInvalidRows", value.asInstanceOf[js.Any])
     

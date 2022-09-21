@@ -33,6 +33,6 @@ object Conflict {
     
     inline def setMergeHunksUndefined: Self = StObject.set(x, "mergeHunks", js.undefined)
     
-    inline def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value :_*))
+    inline def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("plottable", "Axis")
 @js.native
-class Axis[D] protected ()
+open class Axis[D] protected ()
   extends typings.plottable.axisMod.Axis[D] {
   /**
     * Constructs an Axis.
@@ -86,6 +86,6 @@ object Axis {
   
   @JSImport("plottable", "Axis._ANNOTATION_LABEL_PADDING")
   @js.native
-  def _ANNOTATION_LABEL_PADDING: js.Any = js.native
-  inline def _ANNOTATION_LABEL_PADDING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
+  def _ANNOTATION_LABEL_PADDING: Any = js.native
+  inline def _ANNOTATION_LABEL_PADDING_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetLocationOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度 */
   var altitude: js.UndefOr[Boolean] = js.undefined

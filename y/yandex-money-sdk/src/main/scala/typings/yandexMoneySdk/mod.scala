@@ -68,7 +68,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("yandex-money-sdk", "ExternalPayment")
   @js.native
-  class ExternalPaymentCls protected ()
+  open class ExternalPaymentCls protected ()
     extends StObject
        with ExternalPayment {
     def this(instanceId: String) = this()
@@ -100,7 +100,7 @@ object mod {
     
     def requestPayment(options: RequestPaymentOptions, callback: ResponseCallback[RequestPaymentResult]): Unit
     
-    def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[js.Any]): Unit
+    def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[Any]): Unit
   }
   object Wallet {
     
@@ -124,14 +124,14 @@ object mod {
       
       inline def setRequestPayment(value: (RequestPaymentOptions, ResponseCallback[RequestPaymentResult]) => Unit): Self = StObject.set(x, "requestPayment", js.Any.fromFunction2(value))
       
-      inline def setSendAuthenticatedRequest(value: (SendAuthenticatedRequestParams, ResponseCallback[js.Any]) => Unit): Self = StObject.set(x, "sendAuthenticatedRequest", js.Any.fromFunction2(value))
+      inline def setSendAuthenticatedRequest(value: (SendAuthenticatedRequestParams, ResponseCallback[Any]) => Unit): Self = StObject.set(x, "sendAuthenticatedRequest", js.Any.fromFunction2(value))
     }
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("yandex-money-sdk", "Wallet")
   @js.native
-  class WalletCls protected ()
+  open class WalletCls protected ()
     extends StObject
        with Wallet {
     def this(accessToken: String) = this()
@@ -162,7 +162,7 @@ object mod {
     override def requestPayment(options: RequestPaymentOptions, callback: ResponseCallback[RequestPaymentResult]): Unit = js.native
     
     /* CompleteClass */
-    override def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[js.Any]): Unit = js.native
+    override def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[Any]): Unit = js.native
   }
   
   @js.native
@@ -173,7 +173,7 @@ object mod {
     def getInstanceId(clientId: String, callback: ResponseCallback[GetInstanceIdResult]): Unit = js.native
   }
   
-  type ResponseCallback[TBody] = js.Function3[/* err */ js.Any, /* body */ TBody, /* response */ IncomingMessage, js.Any]
+  type ResponseCallback[TBody] = js.Function3[/* err */ Any, /* body */ TBody, /* response */ IncomingMessage, Any]
   
   @js.native
   trait WalletStatic
@@ -190,6 +190,6 @@ object mod {
       callback: ResponseCallback[GetAccessTokenResult]
     ): Unit = js.native
     
-    def revokeToken(token: String, revoke_all: js.Any, callback: ResponseCallback[js.Any]): Unit = js.native
+    def revokeToken(token: String, revoke_all: Any, callback: ResponseCallback[Any]): Unit = js.native
   }
 }

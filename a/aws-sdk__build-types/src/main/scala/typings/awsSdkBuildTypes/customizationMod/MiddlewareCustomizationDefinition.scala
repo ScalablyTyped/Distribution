@@ -77,7 +77,7 @@ object MiddlewareCustomizationDefinition {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

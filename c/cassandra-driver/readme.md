@@ -1,7 +1,7 @@
 
 # Scala.js typings for cassandra-driver
 
-Typings are for version 4.6.0
+Typings are for version 4.6.4
 
 ## Library description:
 DataStax Node.js Driver for Apache Cassandra
@@ -10,10 +10,10 @@ DataStax Node.js Driver for Apache Cassandra
 | ------------------ | :-------------: |
 | Full name          | cassandra-driver |
 | Keywords           | cassandra, cql, cql3, connection, gremlin, datastax, nosql, driver, database, dse, graph, graphdb |
-| # releases         | 11 |
-| # dependents       | 154 |
-| # downloads        | 1940828 |
-| # stars            | 23 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 212234.33333333334 |
+| # stars            | 1138.0 |
 
 ## Links
 - [Homepage](https://github.com/datastax/nodejs-driver#readme)

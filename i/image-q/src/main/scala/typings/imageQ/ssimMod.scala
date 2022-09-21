@@ -7,16 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ssimMod {
   
-  @JSImport("image-q/dist/quality/ssim", "SSIM")
+  @JSImport("image-q/dist/types/src/quality/ssim", JSImport.Namespace)
   @js.native
-  class SSIM () extends StObject {
-    
-    /* private */ def _calculateAverageLuma(lumaValues: js.Any): js.Any = js.native
-    
-    /* private */ def _calculateLumaValuesForWindow(image: js.Any, x: js.Any, y: js.Any, width: js.Any, height: js.Any): js.Any = js.native
-    
-    /* private */ def _iterate(image1: js.Any, image2: js.Any, callback: js.Any): js.Any = js.native
-    
-    def compare(image1: PointContainer, image2: PointContainer): Double = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def ssim(image1: PointContainer, image2: PointContainer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ssim")(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

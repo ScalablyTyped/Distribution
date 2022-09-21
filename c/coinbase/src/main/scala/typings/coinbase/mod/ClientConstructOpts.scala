@@ -22,6 +22,16 @@ trait ClientConstructOpts extends StObject {
   var apiSecret: js.UndefOr[String] = js.undefined
   
   /**
+    * Override security certificates
+    */
+  var caFile: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Allows disabling strict SSL
+    */
+  var strictSSL: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * API version in 'yyyy-mm-dd' format, see https://developers.coinbase.com/api/v2#changelog
     */
   var version: js.UndefOr[String] = js.undefined
@@ -46,6 +56,16 @@ object ClientConstructOpts {
     inline def setApiSecret(value: String): Self = StObject.set(x, "apiSecret", value.asInstanceOf[js.Any])
     
     inline def setApiSecretUndefined: Self = StObject.set(x, "apiSecret", js.undefined)
+    
+    inline def setCaFile(value: js.Array[String]): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
+    
+    inline def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
+    
+    inline def setCaFileVarargs(value: String*): Self = StObject.set(x, "caFile", js.Array(value*))
+    
+    inline def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
+    
+    inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

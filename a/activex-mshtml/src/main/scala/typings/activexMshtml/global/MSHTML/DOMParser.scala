@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMParser")
 @js.native
-/* private */ class DOMParser ()
+/* private */ open class DOMParser ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMParser {
   

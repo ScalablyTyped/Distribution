@@ -10,10 +10,10 @@ A set of tools to manage inline styles on React elements
 | ------------------ | :-------------: |
 | Full name          | radium |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 359 |
-| # downloads        | 5168919 |
-| # stars            | 19 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 347861.0 |
+| # stars            | 7444.0 |
 
 ## Links
 - [Homepage](https://github.com/formidablelabs/radium)

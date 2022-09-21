@@ -10,7 +10,7 @@ trait RelatedResources extends StObject {
   
   var capture: js.UndefOr[CaptureResource] = js.undefined
   
-  var order: js.UndefOr[js.Any] = js.undefined
+  var order: js.UndefOr[Any] = js.undefined
   
   var refund: js.UndefOr[RefundResource] = js.undefined
   
@@ -33,7 +33,7 @@ object RelatedResources {
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    inline def setOrder(value: js.Any): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Any): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     

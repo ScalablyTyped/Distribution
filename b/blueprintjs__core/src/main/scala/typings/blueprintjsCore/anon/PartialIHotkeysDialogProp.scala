@@ -1,10 +1,11 @@
 package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLDivElement
@@ -16,6 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog.IHotkeysDialogProps> */
 trait PartialIHotkeysDialogProp extends StObject {
   
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
+  
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
+  
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var backdropClassName: js.UndefOr[String] = js.undefined
@@ -26,7 +31,11 @@ trait PartialIHotkeysDialogProp extends StObject {
   
   var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
+  var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
   var enforceFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +43,7 @@ trait PartialIHotkeysDialogProp extends StObject {
   
   var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+  var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
   
   var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
   
@@ -56,6 +65,8 @@ trait PartialIHotkeysDialogProp extends StObject {
   
   var portalContainer: js.UndefOr[HTMLElement] = js.undefined
   
+  var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var title: js.UndefOr[ReactNode] = js.undefined
@@ -74,6 +85,14 @@ object PartialIHotkeysDialogProp {
   }
   
   extension [Self <: PartialIHotkeysDialogProp](x: Self) {
+    
+    inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
@@ -95,9 +114,21 @@ object PartialIHotkeysDialogProp {
     
     inline def setCanOutsideClickCloseUndefined: Self = StObject.set(x, "canOutsideClickClose", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContainerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
+    
+    inline def setContainerRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "containerRef", js.Any.fromFunction1(value))
+    
+    inline def setContainerRefNull: Self = StObject.set(x, "containerRef", null)
+    
+    inline def setContainerRefUndefined: Self = StObject.set(x, "containerRef", js.undefined)
     
     inline def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
     
@@ -111,7 +142,7 @@ object PartialIHotkeysDialogProp {
     
     inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
     
-    inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconNull: Self = StObject.set(x, "icon", null)
     
@@ -156,6 +187,10 @@ object PartialIHotkeysDialogProp {
     inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
     
     inline def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
+    
+    inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
+    
+    inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
     
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

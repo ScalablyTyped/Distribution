@@ -54,12 +54,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminConfirmSignUpResponse, AWSError] = js.native
   
   /**
-    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS). This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
+    * Creates a new user in the specified user pool. If MessageAction isn't set, the default is to send a welcome message via email or phone (SMS).  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with SUPPRESS for the MessageAction parameter, and Amazon Cognito won't send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
     */
   def adminCreateUser(): Request[AdminCreateUserResponse, AWSError] = js.native
   def adminCreateUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminCreateUserResponse, Unit]): Request[AdminCreateUserResponse, AWSError] = js.native
   /**
-    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS). This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
+    * Creates a new user in the specified user pool. If MessageAction isn't set, the default is to send a welcome message via email or phone (SMS).  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with SUPPRESS for the MessageAction parameter, and Amazon Cognito won't send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
     */
   def adminCreateUser(params: AdminCreateUserRequest): Request[AdminCreateUserResponse, AWSError] = js.native
   def adminCreateUser(
@@ -96,12 +96,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminDeleteUserAttributesResponse, AWSError] = js.native
   
   /**
-    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
+    * Prevents the user from signing in with the specified external (SAML or social) identity provider (IdP). If the user that you want to deactivate is a Amazon Cognito user pools native username + password user, they can't use their password to sign in. If the user to deactivate is a linked external IdP user, any link between that user and an existing user is removed. When the external user signs in again, and the user is no longer attached to the previously linked DestinationUser, the user must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To deactivate a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject. The ProviderAttributeValue must be the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social IdPs. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
     */
   def adminDisableProviderForUser(): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   def adminDisableProviderForUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableProviderForUserResponse, Unit]): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   /**
-    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
+    * Prevents the user from signing in with the specified external (SAML or social) identity provider (IdP). If the user that you want to deactivate is a Amazon Cognito user pools native username + password user, they can't use their password to sign in. If the user to deactivate is a linked external IdP user, any link between that user and an existing user is removed. When the external user signs in again, and the user is no longer attached to the previously linked DestinationUser, the user must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To deactivate a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject. The ProviderAttributeValue must be the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social IdPs. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
     */
   def adminDisableProviderForUser(params: AdminDisableProviderForUserRequest): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   def adminDisableProviderForUser(
@@ -180,12 +180,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminGetUserResponse, AWSError] = js.native
   
   /**
-    * Initiates the authentication flow, as an administrator. Calling this action requires developer credentials.
+    * Initiates the authentication flow, as an administrator.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminInitiateAuth(): Request[AdminInitiateAuthResponse, AWSError] = js.native
   def adminInitiateAuth(callback: js.Function2[/* err */ AWSError, /* data */ AdminInitiateAuthResponse, Unit]): Request[AdminInitiateAuthResponse, AWSError] = js.native
   /**
-    * Initiates the authentication flow, as an administrator. Calling this action requires developer credentials.
+    * Initiates the authentication flow, as an administrator.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminInitiateAuth(params: AdminInitiateAuthRequest): Request[AdminInitiateAuthResponse, AWSError] = js.native
   def adminInitiateAuth(
@@ -194,12 +194,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminInitiateAuthResponse, AWSError] = js.native
   
   /**
-    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   The maximum number of federated identities linked to a user is 5.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  This action is enabled only for admin access and requires developer credentials.
+    * Links an existing user account in a user pool (DestinationUser) to an identity from an external IdP (SourceUser) based on a specified attribute name and value from the external IdP. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in. You can then use the federated user identity to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity. When the user signs in with a federated user identity, they sign in as the existing user account.  The maximum number of federated identities linked to a user is five.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external IdPs and provider attributes that have been trusted by the application owner.  This action is administrative and requires developer credentials.
     */
   def adminLinkProviderForUser(): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   def adminLinkProviderForUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminLinkProviderForUserResponse, Unit]): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   /**
-    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   The maximum number of federated identities linked to a user is 5.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  This action is enabled only for admin access and requires developer credentials.
+    * Links an existing user account in a user pool (DestinationUser) to an identity from an external IdP (SourceUser) based on a specified attribute name and value from the external IdP. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in. You can then use the federated user identity to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity. When the user signs in with a federated user identity, they sign in as the existing user account.  The maximum number of federated identities linked to a user is five.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external IdPs and provider attributes that have been trusted by the application owner.  This action is administrative and requires developer credentials.
     */
   def adminLinkProviderForUser(params: AdminLinkProviderForUserRequest): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   def adminLinkProviderForUser(
@@ -236,12 +236,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminListGroupsForUserResponse, AWSError] = js.native
   
   /**
-    * Lists a history of user activity and any risks detected as part of Amazon Cognito advanced security.
+    * A history of user activity and any risks detected as part of Amazon Cognito advanced security.
     */
   def adminListUserAuthEvents(): Request[AdminListUserAuthEventsResponse, AWSError] = js.native
   def adminListUserAuthEvents(callback: js.Function2[/* err */ AWSError, /* data */ AdminListUserAuthEventsResponse, Unit]): Request[AdminListUserAuthEventsResponse, AWSError] = js.native
   /**
-    * Lists a history of user activity and any risks detected as part of Amazon Cognito advanced security.
+    * A history of user activity and any risks detected as part of Amazon Cognito advanced security.
     */
   def adminListUserAuthEvents(params: AdminListUserAuthEventsRequest): Request[AdminListUserAuthEventsResponse, AWSError] = js.native
   def adminListUserAuthEvents(
@@ -264,12 +264,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Calling this action requires developer credentials.
+    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminResetUserPassword(): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   def adminResetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ AdminResetUserPasswordResponse, Unit]): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   /**
-    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Calling this action requires developer credentials.
+    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminResetUserPassword(params: AdminResetUserPasswordRequest): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   def adminResetUserPassword(
@@ -278,12 +278,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   
   /**
-    * Responds to an authentication challenge, as an administrator. Calling this action requires developer credentials.
+    * Responds to an authentication challenge, as an administrator.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminRespondToAuthChallenge(): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   def adminRespondToAuthChallenge(callback: js.Function2[/* err */ AWSError, /* data */ AdminRespondToAuthChallengeResponse, Unit]): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   /**
-    * Responds to an authentication challenge, as an administrator. Calling this action requires developer credentials.
+    * Responds to an authentication challenge, as an administrator.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminRespondToAuthChallenge(params: AdminRespondToAuthChallengeRequest): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   def adminRespondToAuthChallenge(
@@ -292,12 +292,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   
   /**
-    * Sets the user's multi-factor authentication (MFA) preference, including which MFA options are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
+    * The user's multi-factor authentication (MFA) preference, including which MFA options are activated, and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in.
     */
   def adminSetUserMFAPreference(): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   def adminSetUserMFAPreference(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserMFAPreferenceResponse, Unit]): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * Sets the user's multi-factor authentication (MFA) preference, including which MFA options are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
+    * The user's multi-factor authentication (MFA) preference, including which MFA options are activated, and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in.
     */
   def adminSetUserMFAPreference(params: AdminSetUserMFAPreferenceRequest): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   def adminSetUserMFAPreference(
@@ -306,12 +306,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   
   /**
-    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status will be placed into the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user does not sign in before it expires, the user will not be able to sign in and their password will need to be reset by an administrator.  Once the user has set a new password, or the password is permanent, the user status will be set to Confirmed.
+    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status enters the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user doesn't sign in before it expires, the user won't be able to sign in, and an administrator must reset their password.  Once the user has set a new password, or the password is permanent, the user status is set to Confirmed.
     */
   def adminSetUserPassword(): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   def adminSetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserPasswordResponse, Unit]): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   /**
-    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status will be placed into the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user does not sign in before it expires, the user will not be able to sign in and their password will need to be reset by an administrator.  Once the user has set a new password, or the password is permanent, the user status will be set to Confirmed.
+    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status enters the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user doesn't sign in before it expires, the user won't be able to sign in, and an administrator must reset their password.  Once the user has set a new password, or the password is permanent, the user status is set to Confirmed.
     */
   def adminSetUserPassword(params: AdminSetUserPasswordRequest): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   def adminSetUserPassword(
@@ -320,12 +320,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
     */
   def adminSetUserSettings(): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserSettingsResponse, Unit]): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
     */
   def adminSetUserSettings(params: AdminSetUserSettingsRequest): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(
@@ -334,12 +334,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   
   /**
-    * Provides feedback for an authentication event as to whether it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
+    * Provides feedback for an authentication event indicating if it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
   def adminUpdateAuthEventFeedback(): Request[AdminUpdateAuthEventFeedbackResponse, AWSError] = js.native
   def adminUpdateAuthEventFeedback(callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateAuthEventFeedbackResponse, Unit]): Request[AdminUpdateAuthEventFeedbackResponse, AWSError] = js.native
   /**
-    * Provides feedback for an authentication event as to whether it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
+    * Provides feedback for an authentication event indicating if it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
   def adminUpdateAuthEventFeedback(params: AdminUpdateAuthEventFeedbackRequest): Request[AdminUpdateAuthEventFeedbackResponse, AWSError] = js.native
   def adminUpdateAuthEventFeedback(
@@ -362,12 +362,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
   
   /**
-    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Calling this action requires developer credentials.
+    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminUpdateUserAttributes(): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   def adminUpdateUserAttributes(callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateUserAttributesResponse, Unit]): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Calling this action requires developer credentials.
+    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide.  Calling this action requires developer credentials.
     */
   def adminUpdateUserAttributes(params: AdminUpdateUserAttributesRequest): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   def adminUpdateUserAttributes(
@@ -376,12 +376,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   
   /**
-    * Signs out users from all devices, as an administrator. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued. Calling this action requires developer credentials.
+    * Signs out a user from all devices. You must sign AdminUserGlobalSignOut requests with Amazon Web Services credentials. It also invalidates all refresh tokens that Amazon Cognito has issued to a user. The user's current access and ID tokens remain valid until they expire. By default, access and ID tokens expire one hour after they're issued. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the cookie validity period of 1 hour. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(callback: js.Function2[/* err */ AWSError, /* data */ AdminUserGlobalSignOutResponse, Unit]): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices, as an administrator. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued. Calling this action requires developer credentials.
+    * Signs out a user from all devices. You must sign AdminUserGlobalSignOut requests with Amazon Web Services credentials. It also invalidates all refresh tokens that Amazon Cognito has issued to a user. The user's current access and ID tokens remain valid until they expire. By default, access and ID tokens expire one hour after they're issued. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the cookie validity period of 1 hour. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(params: AdminUserGlobalSignOutRequest): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(
@@ -390,12 +390,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   
   /**
-    * Returns a unique generated shared secret key code for the user account. The request takes an access token or a session string, but not both.
+    * Begins setup of time-based one-time password (TOTP) multi-factor authentication (MFA) for a user, with a unique private key that Amazon Cognito generates and returns in the API response. You can authorize an AssociateSoftwareToken request with either the user's access token, or a session string from a challenge response that you received from Amazon Cognito.  Amazon Cognito disassociates an existing software token when you verify the new token in a  VerifySoftwareToken API request. If you don't verify the software token and your user pool doesn't require MFA, the user can then authenticate with user name and password credentials alone. If your user pool requires TOTP MFA, Amazon Cognito generates an MFA_SETUP or SOFTWARE_TOKEN_SETUP challenge each time your user signs. Complete setup with AssociateSoftwareToken and VerifySoftwareToken. After you set up software token MFA for your user, Amazon Cognito generates a SOFTWARE_TOKEN_MFA challenge when they authenticate. Respond to this challenge with your user's TOTP. 
     */
   def associateSoftwareToken(): Request[AssociateSoftwareTokenResponse, AWSError] = js.native
   def associateSoftwareToken(callback: js.Function2[/* err */ AWSError, /* data */ AssociateSoftwareTokenResponse, Unit]): Request[AssociateSoftwareTokenResponse, AWSError] = js.native
   /**
-    * Returns a unique generated shared secret key code for the user account. The request takes an access token or a session string, but not both.
+    * Begins setup of time-based one-time password (TOTP) multi-factor authentication (MFA) for a user, with a unique private key that Amazon Cognito generates and returns in the API response. You can authorize an AssociateSoftwareToken request with either the user's access token, or a session string from a challenge response that you received from Amazon Cognito.  Amazon Cognito disassociates an existing software token when you verify the new token in a  VerifySoftwareToken API request. If you don't verify the software token and your user pool doesn't require MFA, the user can then authenticate with user name and password credentials alone. If your user pool requires TOTP MFA, Amazon Cognito generates an MFA_SETUP or SOFTWARE_TOKEN_SETUP challenge each time your user signs. Complete setup with AssociateSoftwareToken and VerifySoftwareToken. After you set up software token MFA for your user, Amazon Cognito generates a SOFTWARE_TOKEN_MFA challenge when they authenticate. Respond to this challenge with your user's TOTP. 
     */
   def associateSoftwareToken(params: AssociateSoftwareTokenRequest): Request[AssociateSoftwareTokenResponse, AWSError] = js.native
   def associateSoftwareToken(
@@ -449,12 +449,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ConfirmForgotPasswordResponse, AWSError] = js.native
   
   /**
-    * Confirms registration of a user and handles the existing alias from a previous user.
+    * Confirms registration of a new user.
     */
   def confirmSignUp(): Request[ConfirmSignUpResponse, AWSError] = js.native
   def confirmSignUp(callback: js.Function2[/* err */ AWSError, /* data */ ConfirmSignUpResponse, Unit]): Request[ConfirmSignUpResponse, AWSError] = js.native
   /**
-    * Confirms registration of a user and handles the existing alias from a previous user.
+    * Confirms registration of a new user.
     */
   def confirmSignUp(params: ConfirmSignUpRequest): Request[ConfirmSignUpResponse, AWSError] = js.native
   def confirmSignUp(
@@ -477,12 +477,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[CreateGroupResponse, AWSError] = js.native
   
   /**
-    * Creates an identity provider for a user pool.
+    * Creates an IdP for a user pool.
     */
   def createIdentityProvider(): Request[CreateIdentityProviderResponse, AWSError] = js.native
   def createIdentityProvider(callback: js.Function2[/* err */ AWSError, /* data */ CreateIdentityProviderResponse, Unit]): Request[CreateIdentityProviderResponse, AWSError] = js.native
   /**
-    * Creates an identity provider for a user pool.
+    * Creates an IdP for a user pool.
     */
   def createIdentityProvider(params: CreateIdentityProviderRequest): Request[CreateIdentityProviderResponse, AWSError] = js.native
   def createIdentityProvider(
@@ -491,12 +491,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[CreateIdentityProviderResponse, AWSError] = js.native
   
   /**
-    * Creates a new OAuth2.0 resource server and defines custom scopes in it.
+    * Creates a new OAuth2.0 resource server and defines custom scopes within it.
     */
   def createResourceServer(): Request[CreateResourceServerResponse, AWSError] = js.native
   def createResourceServer(callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceServerResponse, Unit]): Request[CreateResourceServerResponse, AWSError] = js.native
   /**
-    * Creates a new OAuth2.0 resource server and defines custom scopes in it.
+    * Creates a new OAuth2.0 resource server and defines custom scopes within it.
     */
   def createResourceServer(params: CreateResourceServerRequest): Request[CreateResourceServerResponse, AWSError] = js.native
   def createResourceServer(
@@ -519,12 +519,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[CreateUserImportJobResponse, AWSError] = js.native
   
   /**
-    * Creates a new Amazon Cognito user pool and sets the password policy for the pool.
+    * Creates a new Amazon Cognito user pool and sets the password policy for the pool.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def createUserPool(): Request[CreateUserPoolResponse, AWSError] = js.native
   def createUserPool(callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolResponse, Unit]): Request[CreateUserPoolResponse, AWSError] = js.native
   /**
-    * Creates a new Amazon Cognito user pool and sets the password policy for the pool.
+    * Creates a new Amazon Cognito user pool and sets the password policy for the pool.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def createUserPool(params: CreateUserPoolRequest): Request[CreateUserPoolResponse, AWSError] = js.native
   def createUserPool(
@@ -533,12 +533,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[CreateUserPoolResponse, AWSError] = js.native
   
   /**
-    * Creates the user pool client.
+    * Creates the user pool client. When you create a new user pool client, token revocation is automatically activated. For more information about revoking tokens, see RevokeToken.
     */
   def createUserPoolClient(): Request[CreateUserPoolClientResponse, AWSError] = js.native
   def createUserPoolClient(callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolClientResponse, Unit]): Request[CreateUserPoolClientResponse, AWSError] = js.native
   /**
-    * Creates the user pool client.
+    * Creates the user pool client. When you create a new user pool client, token revocation is automatically activated. For more information about revoking tokens, see RevokeToken.
     */
   def createUserPoolClient(params: CreateUserPoolClientRequest): Request[CreateUserPoolClientResponse, AWSError] = js.native
   def createUserPoolClient(
@@ -561,23 +561,23 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[CreateUserPoolDomainResponse, AWSError] = js.native
   
   /**
-    * Deletes a group. Currently only groups with no members can be deleted. Calling this action requires developer credentials.
+    * Deletes a group. Calling this action requires developer credentials.
     */
   def deleteGroup(): Request[js.Object, AWSError] = js.native
   def deleteGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a group. Currently only groups with no members can be deleted. Calling this action requires developer credentials.
+    * Deletes a group. Calling this action requires developer credentials.
     */
   def deleteGroup(params: DeleteGroupRequest): Request[js.Object, AWSError] = js.native
   def deleteGroup(params: DeleteGroupRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes an identity provider for a user pool.
+    * Deletes an IdP for a user pool.
     */
   def deleteIdentityProvider(): Request[js.Object, AWSError] = js.native
   def deleteIdentityProvider(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes an identity provider for a user pool.
+    * Deletes an IdP for a user pool.
     */
   def deleteIdentityProvider(params: DeleteIdentityProviderRequest): Request[js.Object, AWSError] = js.native
   def deleteIdentityProvider(
@@ -667,12 +667,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[DeleteUserPoolDomainResponse, AWSError] = js.native
   
   /**
-    * Gets information about a specific identity provider.
+    * Gets information about a specific IdP.
     */
   def describeIdentityProvider(): Request[DescribeIdentityProviderResponse, AWSError] = js.native
   def describeIdentityProvider(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityProviderResponse, Unit]): Request[DescribeIdentityProviderResponse, AWSError] = js.native
   /**
-    * Gets information about a specific identity provider.
+    * Gets information about a specific IdP.
     */
   def describeIdentityProvider(params: DescribeIdentityProviderRequest): Request[DescribeIdentityProviderResponse, AWSError] = js.native
   def describeIdentityProvider(
@@ -779,12 +779,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.
+    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.   This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def forgotPassword(): Request[ForgotPasswordResponse, AWSError] = js.native
   def forgotPassword(callback: js.Function2[/* err */ AWSError, /* data */ ForgotPasswordResponse, Unit]): Request[ForgotPasswordResponse, AWSError] = js.native
   /**
-    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.
+    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.   This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def forgotPassword(params: ForgotPasswordRequest): Request[ForgotPasswordResponse, AWSError] = js.native
   def forgotPassword(
@@ -793,12 +793,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ForgotPasswordResponse, AWSError] = js.native
   
   /**
-    * Gets the header information for the .csv file to be used as input for the user import job.
+    * Gets the header information for the comma-separated value (CSV) file to be used as input for the user import job.
     */
   def getCSVHeader(): Request[GetCSVHeaderResponse, AWSError] = js.native
   def getCSVHeader(callback: js.Function2[/* err */ AWSError, /* data */ GetCSVHeaderResponse, Unit]): Request[GetCSVHeaderResponse, AWSError] = js.native
   /**
-    * Gets the header information for the .csv file to be used as input for the user import job.
+    * Gets the header information for the comma-separated value (CSV) file to be used as input for the user import job.
     */
   def getCSVHeader(params: GetCSVHeaderRequest): Request[GetCSVHeaderResponse, AWSError] = js.native
   def getCSVHeader(
@@ -835,14 +835,14 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[GetGroupResponse, AWSError] = js.native
   
   /**
-    * Gets the specified identity provider.
+    * Gets the specified IdP.
     */
   def getIdentityProviderByIdentifier(): Request[GetIdentityProviderByIdentifierResponse, AWSError] = js.native
   def getIdentityProviderByIdentifier(
     callback: js.Function2[/* err */ AWSError, /* data */ GetIdentityProviderByIdentifierResponse, Unit]
   ): Request[GetIdentityProviderByIdentifierResponse, AWSError] = js.native
   /**
-    * Gets the specified identity provider.
+    * Gets the specified IdP.
     */
   def getIdentityProviderByIdentifier(params: GetIdentityProviderByIdentifierRequest): Request[GetIdentityProviderByIdentifierResponse, AWSError] = js.native
   def getIdentityProviderByIdentifier(
@@ -865,12 +865,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[GetSigningCertificateResponse, AWSError] = js.native
   
   /**
-    * Gets the UI Customization information for a particular app client's app UI, if there is something set. If nothing is set for the particular client, but there is an existing pool level customization (app clientId will be ALL), then that is returned. If nothing is present, then an empty shape is returned.
+    * Gets the user interface (UI) Customization information for a particular app client's app UI, if any such information exists for the client. If nothing is set for the particular client, but there is an existing pool level customization (the app clientId is ALL), then that information is returned. If nothing is present, then an empty shape is returned.
     */
   def getUICustomization(): Request[GetUICustomizationResponse, AWSError] = js.native
   def getUICustomization(callback: js.Function2[/* err */ AWSError, /* data */ GetUICustomizationResponse, Unit]): Request[GetUICustomizationResponse, AWSError] = js.native
   /**
-    * Gets the UI Customization information for a particular app client's app UI, if there is something set. If nothing is set for the particular client, but there is an existing pool level customization (app clientId will be ALL), then that is returned. If nothing is present, then an empty shape is returned.
+    * Gets the user interface (UI) Customization information for a particular app client's app UI, if any such information exists for the client. If nothing is set for the particular client, but there is an existing pool level customization (the app clientId is ALL), then that information is returned. If nothing is present, then an empty shape is returned.
     */
   def getUICustomization(params: GetUICustomizationRequest): Request[GetUICustomizationResponse, AWSError] = js.native
   def getUICustomization(
@@ -893,14 +893,14 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[GetUserResponse, AWSError] = js.native
   
   /**
-    * Gets the user attribute verification code for the specified attribute name.
+    * Generates a user attribute verification code for the specified attribute name. Sends a message to a user with a code that they must return in a VerifyUserAttribute request.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def getUserAttributeVerificationCode(): Request[GetUserAttributeVerificationCodeResponse, AWSError] = js.native
   def getUserAttributeVerificationCode(
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserAttributeVerificationCodeResponse, Unit]
   ): Request[GetUserAttributeVerificationCodeResponse, AWSError] = js.native
   /**
-    * Gets the user attribute verification code for the specified attribute name.
+    * Generates a user attribute verification code for the specified attribute name. Sends a message to a user with a code that they must return in a VerifyUserAttribute request.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def getUserAttributeVerificationCode(params: GetUserAttributeVerificationCodeRequest): Request[GetUserAttributeVerificationCodeResponse, AWSError] = js.native
   def getUserAttributeVerificationCode(
@@ -923,12 +923,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[GetUserPoolMfaConfigResponse, AWSError] = js.native
   
   /**
-    * Signs out users from all devices. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued.
+    * Signs out users from all devices. It also invalidates all refresh tokens that Amazon Cognito has issued to a user. The user's current access and ID tokens remain valid until their expiry. By default, access and ID tokens expire one hour after Amazon Cognito issues them. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the cookie validity period of 1 hour.
     */
   def globalSignOut(): Request[GlobalSignOutResponse, AWSError] = js.native
   def globalSignOut(callback: js.Function2[/* err */ AWSError, /* data */ GlobalSignOutResponse, Unit]): Request[GlobalSignOutResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued.
+    * Signs out users from all devices. It also invalidates all refresh tokens that Amazon Cognito has issued to a user. The user's current access and ID tokens remain valid until their expiry. By default, access and ID tokens expire one hour after Amazon Cognito issues them. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the cookie validity period of 1 hour.
     */
   def globalSignOut(params: GlobalSignOutRequest): Request[GlobalSignOutResponse, AWSError] = js.native
   def globalSignOut(
@@ -937,12 +937,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[GlobalSignOutResponse, AWSError] = js.native
   
   /**
-    * Initiates the authentication flow.
+    * Initiates sign-in for a user in the Amazon Cognito user directory. You can't sign in a user with a federated IdP with InitiateAuth. For more information, see  Adding user pool sign-in through a third party.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def initiateAuth(): Request[InitiateAuthResponse, AWSError] = js.native
   def initiateAuth(callback: js.Function2[/* err */ AWSError, /* data */ InitiateAuthResponse, Unit]): Request[InitiateAuthResponse, AWSError] = js.native
   /**
-    * Initiates the authentication flow.
+    * Initiates sign-in for a user in the Amazon Cognito user directory. You can't sign in a user with a federated IdP with InitiateAuth. For more information, see  Adding user pool sign-in through a third party.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def initiateAuth(params: InitiateAuthRequest): Request[InitiateAuthResponse, AWSError] = js.native
   def initiateAuth(
@@ -951,12 +951,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[InitiateAuthResponse, AWSError] = js.native
   
   /**
-    * Lists the devices.
+    * Lists the sign-in devices that Amazon Cognito has registered to the current user.
     */
   def listDevices(): Request[ListDevicesResponse, AWSError] = js.native
   def listDevices(callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResponse, Unit]): Request[ListDevicesResponse, AWSError] = js.native
   /**
-    * Lists the devices.
+    * Lists the sign-in devices that Amazon Cognito has registered to the current user.
     */
   def listDevices(params: ListDevicesRequest): Request[ListDevicesResponse, AWSError] = js.native
   def listDevices(
@@ -979,12 +979,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ListGroupsResponse, AWSError] = js.native
   
   /**
-    * Lists information about all identity providers for a user pool.
+    * Lists information about all IdPs for a user pool.
     */
   def listIdentityProviders(): Request[ListIdentityProvidersResponse, AWSError] = js.native
   def listIdentityProviders(callback: js.Function2[/* err */ AWSError, /* data */ ListIdentityProvidersResponse, Unit]): Request[ListIdentityProvidersResponse, AWSError] = js.native
   /**
-    * Lists information about all identity providers for a user pool.
+    * Lists information about all IdPs for a user pool.
     */
   def listIdentityProviders(params: ListIdentityProvidersRequest): Request[ListIdentityProvidersResponse, AWSError] = js.native
   def listIdentityProviders(
@@ -1049,12 +1049,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ListUserPoolClientsResponse, AWSError] = js.native
   
   /**
-    * Lists the user pools associated with an AWS account.
+    * Lists the user pools associated with an Amazon Web Services account.
     */
   def listUserPools(): Request[ListUserPoolsResponse, AWSError] = js.native
   def listUserPools(callback: js.Function2[/* err */ AWSError, /* data */ ListUserPoolsResponse, Unit]): Request[ListUserPoolsResponse, AWSError] = js.native
   /**
-    * Lists the user pools associated with an AWS account.
+    * Lists the user pools associated with an Amazon Web Services account.
     */
   def listUserPools(params: ListUserPoolsRequest): Request[ListUserPoolsResponse, AWSError] = js.native
   def listUserPools(
@@ -1091,12 +1091,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ListUsersInGroupResponse, AWSError] = js.native
   
   /**
-    * Resends the confirmation (for confirmation of registration) to a specific user in the user pool.
+    * Resends the confirmation (for confirmation of registration) to a specific user in the user pool.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def resendConfirmationCode(): Request[ResendConfirmationCodeResponse, AWSError] = js.native
   def resendConfirmationCode(callback: js.Function2[/* err */ AWSError, /* data */ ResendConfirmationCodeResponse, Unit]): Request[ResendConfirmationCodeResponse, AWSError] = js.native
   /**
-    * Resends the confirmation (for confirmation of registration) to a specific user in the user pool.
+    * Resends the confirmation (for confirmation of registration) to a specific user in the user pool.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def resendConfirmationCode(params: ResendConfirmationCodeRequest): Request[ResendConfirmationCodeResponse, AWSError] = js.native
   def resendConfirmationCode(
@@ -1105,12 +1105,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ResendConfirmationCodeResponse, AWSError] = js.native
   
   /**
-    * Responds to the authentication challenge.
+    * Responds to the authentication challenge.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def respondToAuthChallenge(): Request[RespondToAuthChallengeResponse, AWSError] = js.native
   def respondToAuthChallenge(callback: js.Function2[/* err */ AWSError, /* data */ RespondToAuthChallengeResponse, Unit]): Request[RespondToAuthChallengeResponse, AWSError] = js.native
   /**
-    * Responds to the authentication challenge.
+    * Responds to the authentication challenge.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def respondToAuthChallenge(params: RespondToAuthChallengeRequest): Request[RespondToAuthChallengeResponse, AWSError] = js.native
   def respondToAuthChallenge(
@@ -1119,12 +1119,26 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[RespondToAuthChallengeResponse, AWSError] = js.native
   
   /**
-    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
+    * Revokes all of the access tokens generated by the specified refresh token. After the token is revoked, you can't use the revoked token to access Amazon Cognito authenticated APIs.
+    */
+  def revokeToken(): Request[RevokeTokenResponse, AWSError] = js.native
+  def revokeToken(callback: js.Function2[/* err */ AWSError, /* data */ RevokeTokenResponse, Unit]): Request[RevokeTokenResponse, AWSError] = js.native
+  /**
+    * Revokes all of the access tokens generated by the specified refresh token. After the token is revoked, you can't use the revoked token to access Amazon Cognito authenticated APIs.
+    */
+  def revokeToken(params: RevokeTokenRequest): Request[RevokeTokenResponse, AWSError] = js.native
+  def revokeToken(
+    params: RevokeTokenRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeTokenResponse, Unit]
+  ): Request[RevokeTokenResponse, AWSError] = js.native
+  
+  /**
+    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To activate Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
     */
   def setRiskConfiguration(): Request[SetRiskConfigurationResponse, AWSError] = js.native
   def setRiskConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ SetRiskConfigurationResponse, Unit]): Request[SetRiskConfigurationResponse, AWSError] = js.native
   /**
-    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
+    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To activate Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
     */
   def setRiskConfiguration(params: SetRiskConfigurationRequest): Request[SetRiskConfigurationResponse, AWSError] = js.native
   def setRiskConfiguration(
@@ -1133,12 +1147,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[SetRiskConfigurationResponse, AWSError] = js.native
   
   /**
-    * Sets the UI customization information for a user pool's built-in app UI. You can specify app UI customization settings for a single client (with a specific clientId) or for all clients (by setting the clientId to ALL). If you specify ALL, the default configuration will be used for every client that has no UI customization set previously. If you specify UI customization settings for a particular client, it will no longer fall back to the ALL configuration.   To use this API, your user pool must have a domain associated with it. Otherwise, there is no place to host the app's pages, and the service will throw an error. 
+    * Sets the user interface (UI) customization information for a user pool's built-in app UI. You can specify app UI customization settings for a single client (with a specific clientId) or for all clients (by setting the clientId to ALL). If you specify ALL, the default configuration is used for every client that has no previously set UI customization. If you specify UI customization settings for a particular client, it will no longer return to the ALL configuration.  To use this API, your user pool must have a domain associated with it. Otherwise, there is no place to host the app's pages, and the service will throw an error. 
     */
   def setUICustomization(): Request[SetUICustomizationResponse, AWSError] = js.native
   def setUICustomization(callback: js.Function2[/* err */ AWSError, /* data */ SetUICustomizationResponse, Unit]): Request[SetUICustomizationResponse, AWSError] = js.native
   /**
-    * Sets the UI customization information for a user pool's built-in app UI. You can specify app UI customization settings for a single client (with a specific clientId) or for all clients (by setting the clientId to ALL). If you specify ALL, the default configuration will be used for every client that has no UI customization set previously. If you specify UI customization settings for a particular client, it will no longer fall back to the ALL configuration.   To use this API, your user pool must have a domain associated with it. Otherwise, there is no place to host the app's pages, and the service will throw an error. 
+    * Sets the user interface (UI) customization information for a user pool's built-in app UI. You can specify app UI customization settings for a single client (with a specific clientId) or for all clients (by setting the clientId to ALL). If you specify ALL, the default configuration is used for every client that has no previously set UI customization. If you specify UI customization settings for a particular client, it will no longer return to the ALL configuration.  To use this API, your user pool must have a domain associated with it. Otherwise, there is no place to host the app's pages, and the service will throw an error. 
     */
   def setUICustomization(params: SetUICustomizationRequest): Request[SetUICustomizationResponse, AWSError] = js.native
   def setUICustomization(
@@ -1147,12 +1161,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[SetUICustomizationResponse, AWSError] = js.native
   
   /**
-    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
+    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are activated and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in attempts unless device tracking is turned on and the device has been trusted. If you want MFA to be applied selectively based on the assessed risk level of sign-in attempts, deactivate MFA for users and turn on Adaptive Authentication for the user pool.
     */
   def setUserMFAPreference(): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   def setUserMFAPreference(callback: js.Function2[/* err */ AWSError, /* data */ SetUserMFAPreferenceResponse, Unit]): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
+    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are activated and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in attempts unless device tracking is turned on and the device has been trusted. If you want MFA to be applied selectively based on the assessed risk level of sign-in attempts, deactivate MFA for users and turn on Adaptive Authentication for the user pool.
     */
   def setUserMFAPreference(params: SetUserMFAPreferenceRequest): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   def setUserMFAPreference(
@@ -1161,12 +1175,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   
   /**
-    * Set the user pool multi-factor authentication (MFA) configuration.
+    * Sets the user pool multi-factor authentication (MFA) configuration.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def setUserPoolMfaConfig(): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   def setUserPoolMfaConfig(callback: js.Function2[/* err */ AWSError, /* data */ SetUserPoolMfaConfigResponse, Unit]): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   /**
-    * Set the user pool multi-factor authentication (MFA) configuration.
+    * Sets the user pool multi-factor authentication (MFA) configuration.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def setUserPoolMfaConfig(params: SetUserPoolMfaConfigRequest): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   def setUserPoolMfaConfig(
@@ -1175,12 +1189,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
     */
   def setUserSettings(): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ SetUserSettingsResponse, Unit]): Request[SetUserSettingsResponse, AWSError] = js.native
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
     */
   def setUserSettings(params: SetUserSettingsRequest): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(
@@ -1189,12 +1203,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[SetUserSettingsResponse, AWSError] = js.native
   
   /**
-    * Registers the user in the specified user pool and creates a user name, password, and user attributes.
+    * Registers the user in the specified user pool and creates a user name, password, and user attributes.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def signUp(): Request[SignUpResponse, AWSError] = js.native
   def signUp(callback: js.Function2[/* err */ AWSError, /* data */ SignUpResponse, Unit]): Request[SignUpResponse, AWSError] = js.native
   /**
-    * Registers the user in the specified user pool and creates a user name, password, and user attributes.
+    * Registers the user in the specified user pool and creates a user name, password, and user attributes.  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def signUp(params: SignUpRequest): Request[SignUpResponse, AWSError] = js.native
   def signUp(params: SignUpRequest, callback: js.Function2[/* err */ AWSError, /* data */ SignUpResponse, Unit]): Request[SignUpResponse, AWSError] = js.native
@@ -1228,12 +1242,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[StopUserImportJobResponse, AWSError] = js.native
   
   /**
-    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool, and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an Identity and Access Management policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool, and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an Identity and Access Management policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -1242,12 +1256,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(
@@ -1256,12 +1270,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Provides the feedback for an authentication event whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
+    * Provides the feedback for an authentication event, whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
   def updateAuthEventFeedback(): Request[UpdateAuthEventFeedbackResponse, AWSError] = js.native
   def updateAuthEventFeedback(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuthEventFeedbackResponse, Unit]): Request[UpdateAuthEventFeedbackResponse, AWSError] = js.native
   /**
-    * Provides the feedback for an authentication event whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
+    * Provides the feedback for an authentication event, whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
   def updateAuthEventFeedback(params: UpdateAuthEventFeedbackRequest): Request[UpdateAuthEventFeedbackResponse, AWSError] = js.native
   def updateAuthEventFeedback(
@@ -1284,12 +1298,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateDeviceStatusResponse, AWSError] = js.native
   
   /**
-    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
     */
   def updateGroup(): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupResponse, Unit]): Request[UpdateGroupResponse, AWSError] = js.native
   /**
-    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
     */
   def updateGroup(params: UpdateGroupRequest): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(
@@ -1298,12 +1312,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateGroupResponse, AWSError] = js.native
   
   /**
-    * Updates identity provider information for a user pool.
+    * Updates IdP information for a user pool.
     */
   def updateIdentityProvider(): Request[UpdateIdentityProviderResponse, AWSError] = js.native
   def updateIdentityProvider(callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderResponse, Unit]): Request[UpdateIdentityProviderResponse, AWSError] = js.native
   /**
-    * Updates identity provider information for a user pool.
+    * Updates IdP information for a user pool.
     */
   def updateIdentityProvider(params: UpdateIdentityProviderRequest): Request[UpdateIdentityProviderResponse, AWSError] = js.native
   def updateIdentityProvider(
@@ -1312,12 +1326,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateIdentityProviderResponse, AWSError] = js.native
   
   /**
-    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it is set to the default value. 
     */
   def updateResourceServer(): Request[UpdateResourceServerResponse, AWSError] = js.native
   def updateResourceServer(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceServerResponse, Unit]): Request[UpdateResourceServerResponse, AWSError] = js.native
   /**
-    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it is set to the default value. 
     */
   def updateResourceServer(params: UpdateResourceServerRequest): Request[UpdateResourceServerResponse, AWSError] = js.native
   def updateResourceServer(
@@ -1326,12 +1340,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateResourceServerResponse, AWSError] = js.native
   
   /**
-    * Allows a user to update a specific attribute (one at a time).
+    * Allows a user to update a specific attribute (one at a time).  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def updateUserAttributes(): Request[UpdateUserAttributesResponse, AWSError] = js.native
   def updateUserAttributes(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserAttributesResponse, Unit]): Request[UpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Allows a user to update a specific attribute (one at a time).
+    * Allows a user to update a specific attribute (one at a time).  This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def updateUserAttributes(params: UpdateUserAttributesRequest): Request[UpdateUserAttributesResponse, AWSError] = js.native
   def updateUserAttributes(
@@ -1340,12 +1354,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateUserAttributesResponse, AWSError] = js.native
   
   /**
-    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool. If you don't provide a value for an attribute, it will be set to the default value.   This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def updateUserPool(): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolResponse, Unit]): Request[UpdateUserPoolResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool. If you don't provide a value for an attribute, it will be set to the default value.   This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with Amazon Pinpoint. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not be able to sign up, activate their accounts, or sign in. If you have never used SMS text messages with Amazon Cognito or any other Amazon Web Service, Amazon Simple Notification Service might place your account in the SMS sandbox. In  sandbox mode , you can send messages only to verified phone numbers. After you test your app while in the sandbox environment, you can move out of the sandbox and into production. For more information, see  SMS message settings for Amazon Cognito user pools in the Amazon Cognito Developer Guide. 
     */
   def updateUserPool(params: UpdateUserPoolRequest): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(
@@ -1354,12 +1368,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateUserPoolResponse, AWSError] = js.native
   
   /**
-    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value.  You can also use this operation to enable token revocation for user pool clients. For more information about revoking tokens, see RevokeToken.
     */
   def updateUserPoolClient(): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolClientResponse, Unit]): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value.  You can also use this operation to enable token revocation for user pool clients. For more information about revoking tokens, see RevokeToken.
     */
   def updateUserPoolClient(params: UpdateUserPoolClientRequest): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(
@@ -1368,12 +1382,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   
   /**
-    * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+    * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You can't use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the Amazon Web Services Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
     */
   def updateUserPoolDomain(): Request[UpdateUserPoolDomainResponse, AWSError] = js.native
   def updateUserPoolDomain(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolDomainResponse, Unit]): Request[UpdateUserPoolDomainResponse, AWSError] = js.native
   /**
-    * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+    * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You can't use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the Amazon Web Services Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
     */
   def updateUserPoolDomain(params: UpdateUserPoolDomainRequest): Request[UpdateUserPoolDomainResponse, AWSError] = js.native
   def updateUserPoolDomain(
@@ -1382,12 +1396,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[UpdateUserPoolDomainResponse, AWSError] = js.native
   
   /**
-    * Use this API to register a user's entered TOTP code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
+    * Use this API to register a user's entered time-based one-time password (TOTP) code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
     */
   def verifySoftwareToken(): Request[VerifySoftwareTokenResponse, AWSError] = js.native
   def verifySoftwareToken(callback: js.Function2[/* err */ AWSError, /* data */ VerifySoftwareTokenResponse, Unit]): Request[VerifySoftwareTokenResponse, AWSError] = js.native
   /**
-    * Use this API to register a user's entered TOTP code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
+    * Use this API to register a user's entered time-based one-time password (TOTP) code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
     */
   def verifySoftwareToken(params: VerifySoftwareTokenRequest): Request[VerifySoftwareTokenResponse, AWSError] = js.native
   def verifySoftwareToken(
@@ -1396,12 +1410,12 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[VerifySoftwareTokenResponse, AWSError] = js.native
   
   /**
-    * Verifies the specified user attributes in the user pool.
+    * Verifies the specified user attributes in the user pool.  If your user pool requires verification before Amazon Cognito updates the attribute value, VerifyUserAttribute updates the affected attribute to its pending value. For more information, see  UserAttributeUpdateSettingsType. 
     */
   def verifyUserAttribute(): Request[VerifyUserAttributeResponse, AWSError] = js.native
   def verifyUserAttribute(callback: js.Function2[/* err */ AWSError, /* data */ VerifyUserAttributeResponse, Unit]): Request[VerifyUserAttributeResponse, AWSError] = js.native
   /**
-    * Verifies the specified user attributes in the user pool.
+    * Verifies the specified user attributes in the user pool.  If your user pool requires verification before Amazon Cognito updates the attribute value, VerifyUserAttribute updates the affected attribute to its pending value. For more information, see  UserAttributeUpdateSettingsType. 
     */
   def verifyUserAttribute(params: VerifyUserAttributeRequest): Request[VerifyUserAttributeResponse, AWSError] = js.native
   def verifyUserAttribute(

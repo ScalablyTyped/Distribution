@@ -1,11 +1,13 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.Vec2
+import typings.playcanvas.mod.Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait HalfExtents extends StObject {
+  
+  var calculateTangents: js.UndefOr[Boolean] = js.undefined
   
   var halfExtents: js.UndefOr[Vec2] = js.undefined
   
@@ -21,6 +23,10 @@ object HalfExtents {
   }
   
   extension [Self <: HalfExtents](x: Self) {
+    
+    inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
+    
+    inline def setCalculateTangentsUndefined: Self = StObject.set(x, "calculateTangents", js.undefined)
     
     inline def setHalfExtents(value: Vec2): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Build table for react native.
 | ------------------ | :-------------: |
 | Full name          | react-native-table-component |
 | Keywords           | react-native, table, react-native-cell, react-native-table, react-native-table-component |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 327207 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43982.666666666664 |
+| # stars            | 637.0 |
 
 ## Links
 - [Homepage](https://github.com/Gil2015/react-native-table-component#readme)

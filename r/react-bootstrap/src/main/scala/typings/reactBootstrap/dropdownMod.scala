@@ -15,6 +15,7 @@ import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -29,7 +30,6 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -41,6 +41,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.inherit
 import typings.react.reactStrings.no
 import typings.react.reactStrings.none
@@ -51,6 +52,7 @@ import typings.react.reactStrings.search
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.url
+import typings.react.reactStrings.user
 import typings.react.reactStrings.yes
 import typings.reactBootstrap.anon.Source
 import typings.reactBootstrap.mod.SelectCallback
@@ -64,8 +66,8 @@ object dropdownMod {
   
   @JSImport("react-bootstrap/lib/Dropdown", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[DropdownProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[DropdownProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Dropdown", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -73,7 +75,7 @@ object dropdownMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Dropdown", "Menu")
   @js.native
-  class Menu ()
+  open class Menu ()
     extends typings.reactBootstrap.dropdownMenuMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Dropdown", "Menu")
@@ -84,7 +86,7 @@ object dropdownMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Dropdown", "Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.dropdownToggleMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Dropdown", "Toggle")
@@ -92,15 +94,13 @@ object dropdownMod {
   def Toggle: Instantiable0[typings.reactBootstrap.dropdownToggleMod.^] = js.native
   inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.dropdownToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Dropdown
-    extends Component[DropdownProps, js.Object, js.Any]
+  type Dropdown = Component[DropdownProps, js.Object, Any]
   
   trait DropdownBaseProps extends StObject {
     
     var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -140,7 +140,7 @@ object dropdownMod {
       
       inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
@@ -230,7 +230,7 @@ object dropdownMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var cellPadding: js.UndefOr[Double | String] = js.undefined
     
@@ -285,7 +285,7 @@ object dropdownMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.undefined
+    var download: js.UndefOr[Any] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -321,7 +321,7 @@ object dropdownMod {
     
     var httpEquiv: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -473,6 +473,7 @@ object dropdownMod {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[Dropdown]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[Dropdown]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[Dropdown]] = js.undefined
@@ -745,7 +746,7 @@ object dropdownMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -849,7 +850,7 @@ object dropdownMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
@@ -859,7 +860,7 @@ object dropdownMod {
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -931,7 +932,7 @@ object dropdownMod {
       
       inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1083,7 +1084,7 @@ object dropdownMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[Dropdown] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[Dropdown, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1183,7 +1184,7 @@ object dropdownMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[Dropdown] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[Dropdown, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1567,7 +1568,7 @@ object dropdownMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       

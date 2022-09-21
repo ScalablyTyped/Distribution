@@ -27,7 +27,7 @@ object SpellVarsDto {
     
     inline def setCoeff(value: js.Array[Double]): Self = StObject.set(x, "coeff", value.asInstanceOf[js.Any])
     
-    inline def setCoeffVarargs(value: Double*): Self = StObject.set(x, "coeff", js.Array(value :_*))
+    inline def setCoeffVarargs(value: Double*): Self = StObject.set(x, "coeff", js.Array(value*))
     
     inline def setDyn(value: String): Self = StObject.set(x, "dyn", value.asInstanceOf[js.Any])
     

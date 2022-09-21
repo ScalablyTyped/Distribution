@@ -54,7 +54,7 @@ object BulkEnvelopesResponse {
     
     inline def setBulkEnvelopeStatusesUndefined: Self = StObject.set(x, "bulkEnvelopeStatuses", js.undefined)
     
-    inline def setBulkEnvelopeStatusesVarargs(value: BulkEnvelopeStatus*): Self = StObject.set(x, "bulkEnvelopeStatuses", js.Array(value :_*))
+    inline def setBulkEnvelopeStatusesVarargs(value: BulkEnvelopeStatus*): Self = StObject.set(x, "bulkEnvelopeStatuses", js.Array(value*))
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

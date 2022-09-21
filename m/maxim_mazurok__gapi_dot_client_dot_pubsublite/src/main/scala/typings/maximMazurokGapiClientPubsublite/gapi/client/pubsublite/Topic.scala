@@ -12,6 +12,9 @@ trait Topic extends StObject {
   /** The settings for this topic's partitions. */
   var partitionConfig: js.UndefOr[PartitionConfig] = js.undefined
   
+  /** The settings for this topic's Reservation usage. */
+  var reservationConfig: js.UndefOr[ReservationConfig] = js.undefined
+  
   /** The settings for this topic's message retention. */
   var retentionConfig: js.UndefOr[RetentionConfig] = js.undefined
 }
@@ -31,6 +34,10 @@ object Topic {
     inline def setPartitionConfig(value: PartitionConfig): Self = StObject.set(x, "partitionConfig", value.asInstanceOf[js.Any])
     
     inline def setPartitionConfigUndefined: Self = StObject.set(x, "partitionConfig", js.undefined)
+    
+    inline def setReservationConfig(value: ReservationConfig): Self = StObject.set(x, "reservationConfig", value.asInstanceOf[js.Any])
+    
+    inline def setReservationConfigUndefined: Self = StObject.set(x, "reservationConfig", js.undefined)
     
     inline def setRetentionConfig(value: RetentionConfig): Self = StObject.set(x, "retentionConfig", value.asInstanceOf[js.Any])
     

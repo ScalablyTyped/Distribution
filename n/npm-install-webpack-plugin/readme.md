@@ -10,10 +10,10 @@ Webpack loader to automatically npm install & save dependencies.
 | ------------------ | :-------------: |
 | Full name          | npm-install-webpack-plugin |
 | Keywords           | webpack, webpack-plugin, npm, install |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 218157 |
-| # stars            | 26 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29084.0 |
+| # stars            | 1443.0 |
 
 ## Links
 - [Homepage](https://github.com/ericclemmons/npm-install-webpack-plugin#readme)

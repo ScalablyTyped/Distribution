@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.fieldset")
 @js.native
-class fieldset ()
+open class fieldset ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$skin")
   var $skin_Original_fieldset: WebixCallback = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   @JSName("config")
   var config_fieldset: fieldsetConfig = js.native
   
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   def resizeChildren(): Unit = js.native
 }

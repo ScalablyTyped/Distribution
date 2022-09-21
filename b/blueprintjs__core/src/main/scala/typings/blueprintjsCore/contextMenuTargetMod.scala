@@ -21,7 +21,7 @@ object contextMenuTargetMod {
   
   @js.native
   trait IContextMenuTargetComponent
-    extends Component[js.Object, js.Object, js.Any] {
+    extends Component[js.Object, js.Object, Any] {
     
     var onContextMenuClose: js.UndefOr[js.Function0[Unit]] = js.native
     

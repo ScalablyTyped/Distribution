@@ -17,4 +17,8 @@ object bnJsNumbers {
   @js.native
   sealed trait `1` extends StObject
   inline def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @js.native
+  sealed trait `26` extends StObject
+  inline def `26`: `26` = 26.asInstanceOf[`26`]
 }

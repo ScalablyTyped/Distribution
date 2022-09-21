@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LineEdgesRenderer")
 @js.native
-class LineEdgesRenderer protected ()
+open class LineEdgesRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.LineEdgesRenderer {
   /**
@@ -47,8 +47,8 @@ class LineEdgesRenderer protected ()
   var isEnabled: Boolean = js.native
   
   /**
-    * Checks wether or not the edges renderer is ready to render.
-    * @return true if ready, otherwise false.
+    * Checks whether or not the edges renderer is ready to render.
+    * @returns true if ready, otherwise false.
     */
   /* CompleteClass */
   override def isReady(): Boolean = js.native

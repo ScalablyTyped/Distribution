@@ -10,10 +10,10 @@ object circularProgressMod {
   
   @JSImport("material-ui/CircularProgress", JSImport.Default)
   @js.native
-  class default () extends CircularProgress
+  open class default () extends CircularProgress
   
   @JSImport("material-ui/CircularProgress", "CircularProgress")
   @js.native
-  class CircularProgress ()
-    extends Component[CircularProgressProps, js.Object, js.Any]
+  open class CircularProgress ()
+    extends Component[CircularProgressProps, js.Object, Any]
 }

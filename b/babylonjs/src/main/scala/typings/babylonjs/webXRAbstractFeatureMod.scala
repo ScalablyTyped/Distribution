@@ -31,7 +31,7 @@ object webXRAbstractFeatureMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]
     ): Unit = js.native
     
-    /* private */ var _attached: js.Any = js.native
+    /* private */ var _attached: Any = js.native
     
     /**
       * Code in this function will be executed on each xrFrame received from the browser.
@@ -40,7 +40,7 @@ object webXRAbstractFeatureMod {
       */
     /* protected */ def _onXRFrame(_xrFrame: XRFrame): Unit = js.native
     
-    /* private */ var _removeOnDetach: js.Any = js.native
+    /* private */ var _removeOnDetach: Any = js.native
     
     /* protected */ var _xrSessionManager: WebXRSessionManager = js.native
     

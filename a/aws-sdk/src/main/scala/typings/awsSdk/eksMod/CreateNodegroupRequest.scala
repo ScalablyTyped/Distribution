@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNodegroupRequest extends StObject {
   
   /**
-    * The AMI type for your node group. GPU instance types should use the AL2_x86_64_GPU AMI type. Non-GPU instances should use the AL2_x86_64 AMI type. Arm instances should use the AL2_ARM_64 AMI type. All types use the Amazon EKS-optimized Amazon Linux 2 AMI. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify amiType, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
+    * The AMI type for your node group. GPU instance types should use the AL2_x86_64_GPU AMI type. Non-GPU instances should use the AL2_x86_64 AMI type. Arm instances should use the AL2_ARM_64 AMI type. All types use the Amazon EKS optimized Amazon Linux 2 AMI. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify amiType, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
   var amiType: js.UndefOr[AMITypes] = js.undefined
+  
+  /**
+    * The capacity type for your node group.
+    */
+  var capacityType: js.UndefOr[CapacityTypes] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -27,7 +32,7 @@ trait CreateNodegroupRequest extends StObject {
   var diskSize: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
-    * The instance type to use for your node group. You can specify a single instance type for a node group. The default value for instanceTypes is t3.medium. If you choose a GPU instance type, be sure to specify AL2_x86_64_GPU with the amiType parameter. If you specify launchTemplate, then don't specify instanceTypes, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
+    * Specify the instance types for a node group. If you specify a GPU instance type, be sure to specify AL2_x86_64_GPU with the amiType parameter. If you specify launchTemplate, then you can specify zero or one instance type in your launch template or you can specify 0-20 instance types for instanceTypes. If however, you specify an instance type in your launch template and specify any instanceTypes, the node group deployment will fail. If you don't specify an instance type in a launch template or for instanceTypes, then t3.medium is used, by default. If you specify Spot for capacityType, then we recommend specifying multiple values for instanceTypes. For more information, see Managed node group capacity types and Launch template support in the Amazon EKS User Guide.
     */
   var instanceTypes: js.UndefOr[StringList] = js.undefined
   
@@ -42,7 +47,7 @@ trait CreateNodegroupRequest extends StObject {
   var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to associate with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies. Before you can launch worker nodes and register them into a cluster, you must create an IAM role for those worker nodes to use when they are launched. For more information, see Amazon EKS Worker Node IAM Role in the  Amazon EKS User Guide . If you specify launchTemplate, then don't specify  IamInstanceProfile  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
+    * The Amazon Resource Name (ARN) of the IAM role to associate with your node group. The Amazon EKS worker node kubelet daemon makes calls to Amazon Web Services APIs on your behalf. Nodes receive permissions for these API calls through an IAM instance profile and associated policies. Before you can launch nodes and register them into a cluster, you must create an IAM role for those nodes to use when they are launched. For more information, see Amazon EKS node IAM role in the  Amazon EKS User Guide . If you specify launchTemplate, then don't specify  IamInstanceProfile  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
   var nodeRole: String
   
@@ -52,7 +57,7 @@ trait CreateNodegroupRequest extends StObject {
   var nodegroupName: String
   
   /**
-    * The AMI version of the Amazon EKS-optimized AMI to use with your node group. By default, the latest available AMI version for the node group's current Kubernetes version is used. For more information, see Amazon EKS-Optimized Linux AMI Versions in the Amazon EKS User Guide. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify releaseVersion, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
+    * The AMI version of the Amazon EKS optimized AMI to use with your node group. By default, the latest available AMI version for the node group's current Kubernetes version is used. For more information, see Amazon EKS optimized Amazon Linux 2 AMI versions in the Amazon EKS User Guide. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify releaseVersion, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
   var releaseVersion: js.UndefOr[String] = js.undefined
   
@@ -67,14 +72,24 @@ trait CreateNodegroupRequest extends StObject {
   var scalingConfig: js.UndefOr[NodegroupScalingConfig] = js.undefined
   
   /**
-    * The subnets to use for the Auto Scaling group that is created for your node group. These subnets must have the tag key kubernetes.io/cluster/CLUSTER_NAME with a value of shared, where CLUSTER_NAME is replaced with the name of your cluster. If you specify launchTemplate, then don't specify  SubnetId  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
+    * The subnets to use for the Auto Scaling group that is created for your node group. If you specify launchTemplate, then don't specify  SubnetId  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
   var subnets: StringList
   
   /**
-    * The metadata to apply to the node group to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Node group tags do not propagate to any other resources associated with the node group, such as the Amazon EC2 instances or subnets.
+    * The metadata to apply to the node group to assist with categorization and organization. Each tag consists of a key and an optional value. You define both. Node group tags do not propagate to any other resources associated with the node group, such as the Amazon EC2 instances or subnets.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * The Kubernetes taints to be applied to the nodes in the node group. For more information, see Node taints on managed node groups.
+    */
+  var taints: js.UndefOr[taintsList] = js.undefined
+  
+  /**
+    * The node group update configuration.
+    */
+  var updateConfig: js.UndefOr[NodegroupUpdateConfig] = js.undefined
   
   /**
     * The Kubernetes version to use for your managed nodes. By default, the Kubernetes version of the cluster is used, and this is the only accepted specified value. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify version, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
@@ -94,6 +109,10 @@ object CreateNodegroupRequest {
     
     inline def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
     
+    inline def setCapacityType(value: CapacityTypes): Self = StObject.set(x, "capacityType", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityTypeUndefined: Self = StObject.set(x, "capacityType", js.undefined)
+    
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
@@ -108,7 +127,7 @@ object CreateNodegroupRequest {
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value*))
     
     inline def setLabels(value: labelsMap): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
@@ -136,11 +155,21 @@ object CreateNodegroupRequest {
     
     inline def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
-    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTaints(value: taintsList): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
+    
+    inline def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
+    
+    inline def setTaintsVarargs(value: Taint*): Self = StObject.set(x, "taints", js.Array(value*))
+    
+    inline def setUpdateConfig(value: NodegroupUpdateConfig): Self = StObject.set(x, "updateConfig", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateConfigUndefined: Self = StObject.set(x, "updateConfig", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

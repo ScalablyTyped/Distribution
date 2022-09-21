@@ -1,6 +1,5 @@
 package typings.jalaaliJs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object mod {
   
   inline def toGregorian(jy: Double, jm: Double, jd: Double): GregorianDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[GregorianDateObject]
   
-  inline def toJalaali(date: Date): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(date.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
+  inline def toJalaali(date: js.Date): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(date.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
   inline def toJalaali(gy: Double, gm: Double, gd: Double): JalaaliDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[JalaaliDateObject]
   
   trait GregorianDateObject extends StObject {

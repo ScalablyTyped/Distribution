@@ -6,10 +6,7 @@ import typings.expressRequestsLogger.expressRequestsLoggerStrings.info
 import typings.expressRequestsLogger.expressRequestsLoggerStrings.trace
 import typings.expressRequestsLogger.expressRequestsLoggerStrings.warn
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Request
-import typings.qs.mod.ParsedQs
-import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -88,31 +85,31 @@ object mod {
       
       inline def setExcludeBodyUndefined: Self = StObject.set(x, "excludeBody", js.undefined)
       
-      inline def setExcludeBodyVarargs(value: String*): Self = StObject.set(x, "excludeBody", js.Array(value :_*))
+      inline def setExcludeBodyVarargs(value: String*): Self = StObject.set(x, "excludeBody", js.Array(value*))
       
       inline def setExcludeHeaders(value: js.Array[String]): Self = StObject.set(x, "excludeHeaders", value.asInstanceOf[js.Any])
       
       inline def setExcludeHeadersUndefined: Self = StObject.set(x, "excludeHeaders", js.undefined)
       
-      inline def setExcludeHeadersVarargs(value: String*): Self = StObject.set(x, "excludeHeaders", js.Array(value :_*))
+      inline def setExcludeHeadersVarargs(value: String*): Self = StObject.set(x, "excludeHeaders", js.Array(value*))
       
       inline def setMaskBody(value: js.Array[String]): Self = StObject.set(x, "maskBody", value.asInstanceOf[js.Any])
       
       inline def setMaskBodyUndefined: Self = StObject.set(x, "maskBody", js.undefined)
       
-      inline def setMaskBodyVarargs(value: String*): Self = StObject.set(x, "maskBody", js.Array(value :_*))
+      inline def setMaskBodyVarargs(value: String*): Self = StObject.set(x, "maskBody", js.Array(value*))
       
       inline def setMaskHeaders(value: js.Array[String]): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
       
       inline def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
       
-      inline def setMaskHeadersVarargs(value: String*): Self = StObject.set(x, "maskHeaders", js.Array(value :_*))
+      inline def setMaskHeadersVarargs(value: String*): Self = StObject.set(x, "maskHeaders", js.Array(value*))
       
       inline def setMaskQuery(value: js.Array[String]): Self = StObject.set(x, "maskQuery", value.asInstanceOf[js.Any])
       
       inline def setMaskQueryUndefined: Self = StObject.set(x, "maskQuery", js.undefined)
       
-      inline def setMaskQueryVarargs(value: String*): Self = StObject.set(x, "maskQuery", js.Array(value :_*))
+      inline def setMaskQueryVarargs(value: String*): Self = StObject.set(x, "maskQuery", js.Array(value*))
       
       inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
       
@@ -122,18 +119,18 @@ object mod {
   
   trait Logger extends StObject {
     
-    def info(obj: js.Object, params: js.Any*): Unit
+    def info(obj: js.Object, params: Any*): Unit
   }
   object Logger {
     
-    inline def apply(info: (js.Object, /* repeated */ js.Any) => Unit): Logger = {
+    inline def apply(info: (js.Object, /* repeated */ Any) => Unit): Logger = {
       val __obj = js.Dynamic.literal(info = js.Any.fromFunction2(info))
       __obj.asInstanceOf[Logger]
     }
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setInfo(value: (js.Object, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (js.Object, /* repeated */ Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     }
   }
   
@@ -150,9 +147,7 @@ object mod {
       * The custom function gets the full express request and should return the masked body.
       * {@link https://github.com/PayU/express-request-logger#custommaskbodyfunc}
       */
-    var customMaskBodyFunc: js.UndefOr[
-        js.Function1[/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], String]
-      ] = js.undefined
+    var customMaskBodyFunc: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
     
     /**
       * `true` - log once the request arrives (request details), and log after response is sent (both request and response).
@@ -179,7 +174,7 @@ object mod {
       * Specific configuration for requests
       * {@link https://github.com/PayU/express-request-logger#request}
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /**
       * Specific configuration for responses
@@ -196,7 +191,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCustomMaskBodyFunc(value: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs] => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
+      inline def setCustomMaskBodyFunc(value: /* req */ Request => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
       
       inline def setCustomMaskBodyFuncUndefined: Self = StObject.set(x, "customMaskBodyFunc", js.undefined)
       
@@ -208,13 +203,13 @@ object mod {
       
       inline def setExcludeURLsUndefined: Self = StObject.set(x, "excludeURLs", js.undefined)
       
-      inline def setExcludeURLsVarargs(value: String*): Self = StObject.set(x, "excludeURLs", js.Array(value :_*))
+      inline def setExcludeURLsVarargs(value: String*): Self = StObject.set(x, "excludeURLs", js.Array(value*))
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
@@ -277,11 +272,11 @@ object mod {
         
         val maxBodyLength: Double
         
-        val timestamp: Date
+        val timestamp: js.Date
       }
       object Response {
         
-        inline def apply(maxBodyLength: Double, timestamp: Date): Response = {
+        inline def apply(maxBodyLength: Double, timestamp: js.Date): Response = {
           val __obj = js.Dynamic.literal(maxBodyLength = maxBodyLength.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
           __obj.asInstanceOf[Response]
         }
@@ -290,7 +285,7 @@ object mod {
           
           inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
           
-          inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+          inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         }
       }
     }

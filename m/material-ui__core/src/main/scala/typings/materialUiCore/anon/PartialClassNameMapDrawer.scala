@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Drawer/Drawer.DrawerClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Drawer/Drawer.DrawerClassKey>> */
 trait PartialClassNameMapDrawer extends StObject {
   
   var docked: js.UndefOr[String] = js.undefined
@@ -28,6 +28,8 @@ trait PartialClassNameMapDrawer extends StObject {
   var paperAnchorRight: js.UndefOr[String] = js.undefined
   
   var paperAnchorTop: js.UndefOr[String] = js.undefined
+  
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapDrawer {
   
@@ -81,5 +83,9 @@ object PartialClassNameMapDrawer {
     inline def setPaperAnchorTopUndefined: Self = StObject.set(x, "paperAnchorTop", js.undefined)
     
     inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

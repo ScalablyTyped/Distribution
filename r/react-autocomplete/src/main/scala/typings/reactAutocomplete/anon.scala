@@ -20,9 +20,13 @@ object anon {
   @js.native
   trait FnCallStartEndDirection extends StObject {
     
+    def apply(): Unit = js.native
+    def apply(start: Double): Unit = js.native
     def apply(start: Double, end: Double): Unit = js.native
-    def apply(start: Double, end: Double, direction: backward): Unit = js.native
-    def apply(start: Double, end: Double, direction: forward): Unit = js.native
-    def apply(start: Double, end: Double, direction: none): Unit = js.native
+    def apply(start: Double, end: Double, direction: forward | backward | none): Unit = js.native
+    def apply(start: Double, end: Null, direction: forward | backward | none): Unit = js.native
+    def apply(start: Null, end: Double): Unit = js.native
+    def apply(start: Null, end: Double, direction: forward | backward | none): Unit = js.native
+    def apply(start: Null, end: Null, direction: forward | backward | none): Unit = js.native
   }
 }

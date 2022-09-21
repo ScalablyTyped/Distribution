@@ -10,9 +10,9 @@
 | Full name          | scalike |
 | Keywords           | immutable, data, datastructure, functional, collection, stateless, scala, monad, option, maybe, either, future |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3993 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 85.33333333333333 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/ryoppy/scalike-typescript#readme)

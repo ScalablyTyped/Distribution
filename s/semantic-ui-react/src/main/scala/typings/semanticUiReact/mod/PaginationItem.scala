@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "PaginationItem")
 @js.native
-class PaginationItem () extends default
+open class PaginationItem () extends default

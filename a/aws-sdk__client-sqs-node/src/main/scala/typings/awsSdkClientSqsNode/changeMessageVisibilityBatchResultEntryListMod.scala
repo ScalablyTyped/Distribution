@@ -8,5 +8,5 @@ object changeMessageVisibilityBatchResultEntryListMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_ChangeMessageVisibilityBatchResultEntryList", "_ChangeMessageVisibilityBatchResultEntryList")
   @js.native
-  val ChangeMessageVisibilityBatchResultEntryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ChangeMessageVisibilityBatchResultEntryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

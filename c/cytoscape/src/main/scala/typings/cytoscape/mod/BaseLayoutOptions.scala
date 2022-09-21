@@ -15,6 +15,14 @@ trait BaseLayoutOptions
   
   // on layoutstop event
   var stop: js.UndefOr[LayoutHandler] = js.undefined
+  
+  /**
+    * transform a given node position. Useful for changing flow direction in discrete layouts
+    *
+    * @param node The node.
+    * @param position The node position.
+    */
+  var transform: js.UndefOr[js.Function2[/* node */ NodeSingular, /* position */ Position, Position]] = js.undefined
 }
 object BaseLayoutOptions {
   
@@ -34,5 +42,9 @@ object BaseLayoutOptions {
     inline def setStop(value: /* e */ LayoutEventObject => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
     inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    
+    inline def setTransform(value: (/* node */ NodeSingular, /* position */ Position) => Position): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

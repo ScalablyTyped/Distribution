@@ -6,41 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Move a file.
-  	@param source - File you want to move.
-  	@param destination - Where you want the file moved.
-  	@returns A `Promise` that resolves when the file has been moved.
-  	@example
-  	```
-  	import moveFile = require('move-file');
-  	(async () => {
-  		await moveFile('source/unicorn.png', 'destination/unicorn.png');
-  		console.log('The file has been moved');
-  	})();
-  	```
-  	*/
-  inline def apply(source: String, destination: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(source: String, destination: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("move-file", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Move a file synchronously.
-  	@param source - File you want to move.
-  	@param destination - Where you want the file moved.
-  	*/
-  inline def sync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def moveFile(sourcePath: String, destinationPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFile")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def moveFile(sourcePath: String, destinationPath: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFile")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def moveFileSync(sourcePath: String, destinationPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFileSync")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def moveFileSync(sourcePath: String, destinationPath: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFileSync")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
     /**
-    		Overwrite existing destination file.
-    		@default true
-    		*/
+    	[Permissions](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation) for created directories.
+    	It has no effect on Windows.
+    	@default 0o777
+    	*/
+    val directoryMode: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	Overwrite existing destination file.
+    	@default true
+    	*/
     val overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -51,6 +39,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setDirectoryMode(value: Double): Self = StObject.set(x, "directoryMode", value.asInstanceOf[js.Any])
+      
+      inline def setDirectoryModeUndefined: Self = StObject.set(x, "directoryMode", js.undefined)
       
       inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       

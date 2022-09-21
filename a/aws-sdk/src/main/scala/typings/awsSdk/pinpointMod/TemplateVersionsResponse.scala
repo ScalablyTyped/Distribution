@@ -37,7 +37,7 @@ object TemplateVersionsResponse {
     
     inline def setItem(value: ListOfTemplateVersionResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: TemplateVersionResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: TemplateVersionResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     
     inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

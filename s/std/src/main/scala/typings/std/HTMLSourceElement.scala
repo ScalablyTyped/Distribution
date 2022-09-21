@@ -11,19 +11,21 @@ trait HTMLSourceElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Gets or sets the intended media type of the media source.
-    */
+  /* standard dom */
+  var height: Double = js.native
+  
+  /** Gets or sets the intended media type of the media source. */
+  /* standard dom */
   var media: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -37,17 +39,20 @@ trait HTMLSourceElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var sizes: java.lang.String = js.native
   
-  /**
-    * The address or URL of the a media resource that is to be considered.
-    */
+  /** The address or URL of the a media resource that is to be considered. */
+  /* standard dom */
   var src: java.lang.String = js.native
   
+  /* standard dom */
   var srcset: java.lang.String = js.native
   
-  /**
-    * Gets or sets the MIME type of a media resource.
-    */
+  /** Gets or sets the MIME type of a media resource. */
+  /* standard dom */
   var `type`: java.lang.String = js.native
+  
+  /* standard dom */
+  var width: Double = js.native
 }

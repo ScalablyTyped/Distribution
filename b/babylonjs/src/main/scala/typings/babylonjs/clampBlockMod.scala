@@ -10,7 +10,7 @@ object clampBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/clampBlock", "ClampBlock")
   @js.native
-  class ClampBlock protected () extends NodeMaterialBlock {
+  open class ClampBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ClampBlock
       * @param name defines the block name

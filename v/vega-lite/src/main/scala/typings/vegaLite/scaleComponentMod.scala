@@ -7,7 +7,7 @@ import typings.vegaLite.scaleMod.Scale
 import typings.vegaLite.scaleMod.ScaleType
 import typings.vegaLite.splitMod.Explicit
 import typings.vegaLite.splitMod.Split
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.srcSelectionMod.ParameterExtent
 import typings.vegaLite.vegaSchemaMod.VgNonUnionDomain
 import typings.vegaTypings.scaleMod.RangeBand
 import typings.vegaTypings.scaleMod.RangeRawArray
@@ -26,7 +26,7 @@ object scaleComponentMod {
   
   @JSImport("vega-lite/build/src/compile/scale/component", "ScaleComponent")
   @js.native
-  class ScaleComponent protected () extends Split[ScaleComponentProps] {
+  open class ScaleComponent protected () extends Split[ScaleComponentProps] {
     def this(name: String, typeWithExplicit: Explicit[ScaleType]) = this()
     
     /**
@@ -41,7 +41,7 @@ object scaleComponentMod {
   
   type ScaleComponentIndex = Partial[Record[ScaleChannel, ScaleComponent]]
   
-  /* Inlined std.Omit<vega-lite.vega-lite/build/src/vega.schema.VgScale, 'domain' | 'domainRaw' | 'reverse'> & {  domains :std.Array<vega-lite.vega-lite/build/src/vega.schema.VgNonUnionDomain>,   selectionExtent :vega-lite.vega-lite/build/src/selection.SelectionExtent | undefined,   reverse :boolean | vega.vega.SignalRef | undefined} */
+  /* Inlined std.Omit<vega-lite.vega-lite/build/src/vega.schema.VgScale, 'domain' | 'domainRaw' | 'reverse'> & {  domains :std.Array<vega-lite.vega-lite/build/src/vega.schema.VgNonUnionDomain>,   selectionExtent :vega-lite.vega-lite/build/src/selection.ParameterExtent | undefined,   reverse :boolean | vega.vega.SignalRef | undefined} */
   trait ScaleComponentProps extends StObject {
     
     var align: js.UndefOr[Double | SignalRef] = js.undefined
@@ -84,7 +84,7 @@ object scaleComponentMod {
     
     var round: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var selectionExtent: js.UndefOr[SelectionExtent] = js.undefined
+    var selectionExtent: js.UndefOr[ParameterExtent] = js.undefined
     
     var `type`: js.UndefOr[typings.vegaTypings.scaleMod.ScaleType] = js.undefined
     
@@ -111,7 +111,7 @@ object scaleComponentMod {
       
       inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value*))
       
       inline def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object scaleComponentMod {
       
       inline def setDomains(value: js.Array[VgNonUnionDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      inline def setDomainsVarargs(value: VgNonUnionDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: VgNonUnionDomain*): Self = StObject.set(x, "domains", js.Array(value*))
       
       inline def setExponent(value: Double | SignalRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
@@ -171,7 +171,7 @@ object scaleComponentMod {
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: (Boolean | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Boolean | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setReverse(value: Boolean | SignalRef): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -181,7 +181,7 @@ object scaleComponentMod {
       
       inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      inline def setSelectionExtent(value: SelectionExtent): Self = StObject.set(x, "selectionExtent", value.asInstanceOf[js.Any])
+      inline def setSelectionExtent(value: ParameterExtent): Self = StObject.set(x, "selectionExtent", value.asInstanceOf[js.Any])
       
       inline def setSelectionExtentUndefined: Self = StObject.set(x, "selectionExtent", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "PlainAuthentication")
 @js.native
-class PlainAuthentication () extends Authentication {
+open class PlainAuthentication () extends Authentication {
   
   var password: String = js.native
 }

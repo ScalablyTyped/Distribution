@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ReviewsReplyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +15,12 @@ trait CallbackFields extends StObject {
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the target currency based on
+    * the default price. Defaults to false.
+    */
+  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
@@ -38,11 +43,8 @@ trait CallbackFields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: ReviewsReplyRequest
-  
-  /** Unique identifier for a review. */
-  var reviewId: String
+  /** Unique identifier for the in-app product. */
+  var sku: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +54,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(packageName: String, resource: ReviewsReplyRequest, reviewId: String): CallbackFields = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any])
+  inline def apply(packageName: String, sku: String): CallbackFields = {
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -70,6 +72,10 @@ object CallbackFields {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setAutoConvertMissingPrices(value: Boolean): Self = StObject.set(x, "autoConvertMissingPrices", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConvertMissingPricesUndefined: Self = StObject.set(x, "autoConvertMissingPrices", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
@@ -97,9 +103,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ReviewsReplyRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

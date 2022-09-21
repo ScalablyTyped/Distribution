@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Omniture Integration Settings.
-  */
 trait SchemaOmnitureSettings extends StObject {
   
   /**
-    * Whether placement cost data will be sent to Omniture. This property can
-    * be enabled only if omnitureIntegrationEnabled is true.
+    * Whether placement cost data will be sent to Omniture. This property can be enabled only if omnitureIntegrationEnabled is true.
     */
-  var omnitureCostDataEnabled: js.UndefOr[Boolean] = js.undefined
+  var omnitureCostDataEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Whether Omniture integration is enabled. This property can be enabled
-    * only when the &quot;Advanced Ad Serving&quot; account setting is enabled.
+    * Whether Omniture integration is enabled. This property can be enabled only when the "Advanced Ad Serving" account setting is enabled.
     */
-  var omnitureIntegrationEnabled: js.UndefOr[Boolean] = js.undefined
+  var omnitureIntegrationEnabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaOmnitureSettings {
   
@@ -32,9 +27,13 @@ object SchemaOmnitureSettings {
     
     inline def setOmnitureCostDataEnabled(value: Boolean): Self = StObject.set(x, "omnitureCostDataEnabled", value.asInstanceOf[js.Any])
     
+    inline def setOmnitureCostDataEnabledNull: Self = StObject.set(x, "omnitureCostDataEnabled", null)
+    
     inline def setOmnitureCostDataEnabledUndefined: Self = StObject.set(x, "omnitureCostDataEnabled", js.undefined)
     
     inline def setOmnitureIntegrationEnabled(value: Boolean): Self = StObject.set(x, "omnitureIntegrationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setOmnitureIntegrationEnabledNull: Self = StObject.set(x, "omnitureIntegrationEnabled", null)
     
     inline def setOmnitureIntegrationEnabledUndefined: Self = StObject.set(x, "omnitureIntegrationEnabled", js.undefined)
   }

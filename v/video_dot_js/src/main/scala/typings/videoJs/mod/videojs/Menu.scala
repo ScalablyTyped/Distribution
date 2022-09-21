@@ -24,7 +24,7 @@ trait Menu
   def addItem(component: String): Unit = js.native
   def addItem(component: MenuItem): Unit = js.native
   
-  def focus(item: js.Any): Unit = js.native
+  def focus(item: Any): Unit = js.native
   
   /**
     * Handle a `keydown` event on this menu. This listener is added in the constructor.

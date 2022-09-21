@@ -10,10 +10,10 @@ object adjustMod {
   
   @JSImport("material-ui/svg-icons/image/adjust", JSImport.Default)
   @js.native
-  class default () extends ImageAdjust
+  open class default () extends ImageAdjust
   
   @JSImport("material-ui/svg-icons/image/adjust", "ImageAdjust")
   @js.native
-  class ImageAdjust ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageAdjust ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options
   *     Optional configuration object.
   */
-class GMLBase ()
+open class GMLBase ()
   extends typings.openlayers.mod.format.GMLBase {
   def this(opt_options: GMLOptions) = this()
 }

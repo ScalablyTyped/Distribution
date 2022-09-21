@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.PreloadJS")
 @js.native
-class PreloadJS ()
+open class PreloadJS ()
   extends StObject
      with typings.preloadjs.createjs.PreloadJS
 /* static members */

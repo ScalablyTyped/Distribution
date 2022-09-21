@@ -1,7 +1,7 @@
 
 # Scala.js typings for rn-swipeable-panel
 
-Typings are for version 1.2
+Typings are for version 1.2.7
 
 ## Library description:
 Swipeable bottom panel for react native
@@ -10,10 +10,10 @@ Swipeable bottom panel for react native
 | ------------------ | :-------------: |
 | Full name          | rn-swipeable-panel |
 | Keywords           | react, react native, react-native-component, mobile, ios, android, swipeable, panel, swipeable-panel, swipe-up, swipe-down, bottom, bottom-panel, bottom-up, bottom-up-panel |
-| # releases         | 51 |
-| # dependents       | 1 |
-| # downloads        | 29847 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 6256.333333333333 |
+| # stars            | 845.0 |
 
 ## Links
 - [Homepage](https://github.com/enesozturk/rn-swipeable-panel)
@@ -24,7 +24,7 @@ Swipeable bottom panel for react native
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

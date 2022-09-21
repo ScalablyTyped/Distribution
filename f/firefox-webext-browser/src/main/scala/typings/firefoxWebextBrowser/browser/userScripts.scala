@@ -27,17 +27,17 @@ object userScripts {
       * Convert a given value to make it accessible to the userScript code
       * @param value A value to convert into an object accessible to the userScript
       */
-    def `export`(value: js.Any): js.Any
+    def `export`(value: Any): Any
     
     /** The userScript global */
-    var global: js.Any
+    var global: Any
     
     /** The userScript metadata (as set in userScripts.register) */
-    var metadata: js.Any
+    var metadata: Any
   }
   object OnBeforeScriptUserScript {
     
-    inline def apply(defineGlobals: js.Object => Unit, `export`: js.Any => js.Any, global: js.Any, metadata: js.Any): OnBeforeScriptUserScript = {
+    inline def apply(defineGlobals: js.Object => Unit, `export`: Any => Any, global: Any, metadata: Any): OnBeforeScriptUserScript = {
       val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.updateDynamic("export")(js.Any.fromFunction1(`export`))
       __obj.asInstanceOf[OnBeforeScriptUserScript]
@@ -47,11 +47,11 @@ object userScripts {
       
       inline def setDefineGlobals(value: js.Object => Unit): Self = StObject.set(x, "defineGlobals", js.Any.fromFunction1(value))
       
-      inline def setExport(value: js.Any => js.Any): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
+      inline def setExport(value: Any => Any): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
       
-      inline def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,18 +59,18 @@ object userScripts {
   trait RegisteredUserScript extends StObject {
     
     /** Unregister a user script registered programmatically */
-    def unregister(): js.Promise[js.Any]
+    def unregister(): js.Promise[Any]
   }
   object RegisteredUserScript {
     
-    inline def apply(unregister: () => js.Promise[js.Any]): RegisteredUserScript = {
+    inline def apply(unregister: () => js.Promise[Any]): RegisteredUserScript = {
       val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[RegisteredUserScript]
     }
     
     extension [Self <: RegisteredUserScript](x: Self) {
       
-      inline def setUnregister(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      inline def setUnregister(value: () => js.Promise[Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
   
@@ -124,23 +124,23 @@ object userScripts {
       
       inline def setExcludeGlobsUndefined: Self = StObject.set(x, "excludeGlobs", js.undefined)
       
-      inline def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value :_*))
+      inline def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value*))
       
       inline def setExcludeMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "excludeMatches", value.asInstanceOf[js.Any])
       
       inline def setExcludeMatchesUndefined: Self = StObject.set(x, "excludeMatches", js.undefined)
       
-      inline def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value :_*))
+      inline def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value*))
       
       inline def setIncludeGlobs(value: js.Array[String]): Self = StObject.set(x, "includeGlobs", value.asInstanceOf[js.Any])
       
       inline def setIncludeGlobsUndefined: Self = StObject.set(x, "includeGlobs", js.undefined)
       
-      inline def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value :_*))
+      inline def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value*))
       
       inline def setJs_(value: js.Array[ExtensionFileOrCode]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      inline def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
       
@@ -148,7 +148,7 @@ object userScripts {
       
       inline def setMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value*))
       
       inline def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       

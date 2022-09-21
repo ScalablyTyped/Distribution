@@ -43,6 +43,6 @@ object Learnset {
     
     inline def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
     
-    inline def setVariationsVarargs(value: String*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: String*): Self = StObject.set(x, "variations", js.Array(value*))
   }
 }

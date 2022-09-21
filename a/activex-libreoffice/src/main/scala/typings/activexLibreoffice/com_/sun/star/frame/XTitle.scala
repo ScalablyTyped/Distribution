@@ -35,7 +35,7 @@ object XTitle {
     Title: String,
     acquire: () => Unit,
     getTitle: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): XTitle = {

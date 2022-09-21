@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def apply(ctx: ParameterizedContext[DefaultState, DefaultContext], path: String, opts: SendOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(ctx: ParameterizedContext[DefaultState, DefaultContext, Any], path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(ctx: ParameterizedContext[DefaultState, DefaultContext, Any], path: String, opts: SendOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("koa-send", JSImport.Namespace)
   @js.native
@@ -69,7 +69,7 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -100,7 +100,7 @@ object mod {
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
       inline def setSetHeaders(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext>['res'] */ /* res */ js.Any, /* path */ String, /* stats */ Stats) => js.Any
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext, unknown>['res'] */ /* res */ js.Any, /* path */ String, /* stats */ Stats) => Any
       ): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
       
       inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
@@ -108,9 +108,9 @@ object mod {
   }
   
   type SetHeaders = js.Function3[
-    /* import warning: importer.ImportType#apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext>['res'] */ /* res */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext, unknown>['res'] */ /* res */ js.Any, 
     /* path */ String, 
     /* stats */ Stats, 
-    js.Any
+    Any
   ]
 }

@@ -31,6 +31,6 @@ object ListStreamsResponse {
     
     inline def setStreams(value: StreamList): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
-    inline def setStreamsVarargs(value: StreamSummary*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: StreamSummary*): Self = StObject.set(x, "streams", js.Array(value*))
   }
 }

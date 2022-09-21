@@ -27,7 +27,7 @@ trait VpcIpv6CidrBlockAssociation extends StObject {
   var Ipv6Pool: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the unique set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses, for example, us-east-1-wl1-bos-wlz-1.
+    * The name of the unique set of Availability Zones, Local Zones, or Wavelength Zones from which Amazon Web Services advertises IP addresses, for example, us-east-1-wl1-bos-wlz-1.
     */
   var NetworkBorderGroup: js.UndefOr[String] = js.undefined
 }

@@ -15,7 +15,7 @@ object targetStateMod {
   
   @JSImport("@uirouter/core/lib/state/targetState", "TargetState")
   @js.native
-  class TargetState protected ()
+  open class TargetState protected ()
     extends StObject
        with _RedirectToResult {
     /**
@@ -51,15 +51,15 @@ object targetStateMod {
     @JSName("$state")
     def $state(): StateObject = js.native
     
-    /* private */ var _definition: js.Any = js.native
+    /* private */ var _definition: Any = js.native
     
-    /* private */ var _identifier: js.Any = js.native
+    /* private */ var _identifier: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _params: js.Any = js.native
+    /* private */ var _params: Any = js.native
     
-    /* private */ var _stateRegistry: js.Any = js.native
+    /* private */ var _stateRegistry: Any = js.native
     
     /** If the object is invalid, returns the reason why */
     def error(): String = js.native
@@ -121,6 +121,6 @@ object targetStateMod {
     val ^ : js.Any = js.native
     
     /** Returns true if the object has a state property that might be a state or state name */
-    inline def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
+    inline def isDef(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
   }
 }

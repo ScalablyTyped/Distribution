@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next-browser-languagedetector
 
-Typings are for version 6.0.1
+Typings are for version 6.1.5
 
 ## Library description:
 language detector used in browser environment for i18next
@@ -10,10 +10,10 @@ language detector used in browser environment for i18next
 | ------------------ | :-------------: |
 | Full name          | i18next-browser-languagedetector |
 | Keywords           | i18next, i18next-languageDetector |
-| # releases         | 20 |
-| # dependents       | 264 |
-| # downloads        | 11825141 |
-| # stars            | 2 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2904944.0 |
+| # stars            | 597.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/i18next-browser-languageDetector)

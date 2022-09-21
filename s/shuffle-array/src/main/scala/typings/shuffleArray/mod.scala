@@ -63,6 +63,10 @@ object mod extends Shortcut {
     def pick[T](arr: js.Array[T], options: PickOptions): T | js.Array[T] = js.native
   }
   
+  /**
+    * copy - Sets if should return a shuffled copy of the given array. By default it's a falsy value.
+    * rng - Specifies a custom random number generator.
+    */
   trait ShuffleOptions extends StObject {
     
     var copy: js.UndefOr[Boolean] = js.undefined

@@ -1,10 +1,7 @@
 package typings.dashjs.mod
 
-import typings.dashjs.dashjsStrings.audio
-import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.metricAdded
 import typings.dashjs.dashjsStrings.metricUpdated
-import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,7 @@ trait MetricEvent
   extends StObject
      with Event {
   
-  var mediaType: video | audio | fragmentedText
+  var mediaType: MediaType
   
   var metric: MetricType
   
@@ -24,12 +21,7 @@ trait MetricEvent
 }
 object MetricEvent {
   
-  inline def apply(
-    mediaType: video | audio | fragmentedText,
-    metric: MetricType,
-    `type`: metricAdded | metricUpdated,
-    value: js.Object
-  ): MetricEvent = {
+  inline def apply(mediaType: MediaType, metric: MetricType, `type`: metricAdded | metricUpdated, value: js.Object): MetricEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricEvent]
@@ -37,7 +29,7 @@ object MetricEvent {
   
   extension [Self <: MetricEvent](x: Self) {
     
-    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setMetric(value: MetricType): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

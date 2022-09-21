@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @OutputOnly Shows any corrections that were applied to this creative.
-  */
 trait SchemaCorrection extends StObject {
   
   /**
@@ -17,12 +14,12 @@ trait SchemaCorrection extends StObject {
   /**
     * Additional details about what was corrected.
     */
-  var details: js.UndefOr[js.Array[String]] = js.undefined
+  var details: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The type of correction that was applied to the creative.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCorrection {
   
@@ -37,15 +34,19 @@ object SchemaCorrection {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: SchemaServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: SchemaServingContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
+    
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

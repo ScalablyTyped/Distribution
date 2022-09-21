@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
-class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
+open class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
   def this(definition: Disabled[TDefinition]) = this()
   
@@ -24,10 +24,10 @@ class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefiniti
   
   var name: js.UndefOr[String] = js.native
   
-  def toObjectResolved(scope: Null, overrides: js.Array[js.Any]): TDefinition = js.native
-  def toObjectResolved(scope: Null, overrides: js.Array[js.Any], options: IgnoreOwnVariables): TDefinition = js.native
-  def toObjectResolved(scope: Variables, overrides: js.Array[js.Any]): TDefinition = js.native
-  def toObjectResolved(scope: Variables, overrides: js.Array[js.Any], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[Any]): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[Any], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[Any]): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[Any], options: IgnoreOwnVariables): TDefinition = js.native
 }
 /* static members */
 object Property {

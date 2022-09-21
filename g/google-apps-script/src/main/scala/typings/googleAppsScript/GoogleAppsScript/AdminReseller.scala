@@ -410,7 +410,7 @@ object AdminReseller {
         
         inline def setServiceAccountEmailAddressesUndefined: Self = StObject.set(x, "serviceAccountEmailAddresses", js.undefined)
         
-        inline def setServiceAccountEmailAddressesVarargs(value: String*): Self = StObject.set(x, "serviceAccountEmailAddresses", js.Array(value :_*))
+        inline def setServiceAccountEmailAddressesVarargs(value: String*): Self = StObject.set(x, "serviceAccountEmailAddresses", js.Array(value*))
         
         inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
         
@@ -585,7 +585,7 @@ object AdminReseller {
         
         inline def setSuspensionReasonsUndefined: Self = StObject.set(x, "suspensionReasons", js.undefined)
         
-        inline def setSuspensionReasonsVarargs(value: String*): Self = StObject.set(x, "suspensionReasons", js.Array(value :_*))
+        inline def setSuspensionReasonsVarargs(value: String*): Self = StObject.set(x, "suspensionReasons", js.Array(value*))
         
         inline def setTransferInfo(value: SubscriptionTransferInfo): Self = StObject.set(x, "transferInfo", value.asInstanceOf[js.Any])
         
@@ -732,7 +732,7 @@ object AdminReseller {
         
         inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
         
-        inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+        inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
       }
     }
   }

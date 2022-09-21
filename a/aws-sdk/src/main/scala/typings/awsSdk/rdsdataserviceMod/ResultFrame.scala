@@ -29,7 +29,7 @@ object ResultFrame {
     
     inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value*))
     
     inline def setResultSetMetadata(value: ResultSetMetadata): Self = StObject.set(x, "resultSetMetadata", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,7 @@ object Mapbox {
     
     inline def setLayers(value: js.Array[PartialMapboxLayersCircle]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    inline def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

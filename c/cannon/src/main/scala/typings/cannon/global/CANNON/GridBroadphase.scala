@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.GridBroadphase")
 @js.native
-class GridBroadphase ()
+open class GridBroadphase ()
   extends StObject
      with typings.cannon.CANNON.GridBroadphase {
   def this(aabbMin: typings.cannon.CANNON.Vec3) = this()
@@ -79,7 +79,7 @@ class GridBroadphase ()
   ): js.Array[typings.cannon.CANNON.Body] = js.native
   
   /* CompleteClass */
-  var bins: js.Array[js.Any] = js.native
+  var bins: js.Array[Any] = js.native
   
   /* CompleteClass */
   override def boundingSphereCheck(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body): Boolean = js.native

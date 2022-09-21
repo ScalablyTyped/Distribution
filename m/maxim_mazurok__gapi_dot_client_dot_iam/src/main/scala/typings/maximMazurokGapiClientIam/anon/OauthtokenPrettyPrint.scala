@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientIam.anon
 
-import typings.maximMazurokGapiClientIam.gapi.client.iam.SignJwtRequest
+import typings.maximMazurokGapiClientIam.gapi.client.iam.CreateServiceAccountRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +26,7 @@ trait OauthtokenPrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The resource name of the service account in the
-    * following format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`. Using `-` as a wildcard for the `PROJECT_ID` will infer the project from the account. The `ACCOUNT` value
-    * can be the `email` address or the `unique_id` of the service account.
-    */
+  /** Required. The resource name of the project associated with the service accounts, such as `projects/my-project-123`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -43,7 +39,7 @@ trait OauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SignJwtRequest
+  var resource: CreateServiceAccountRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -53,7 +49,7 @@ trait OauthtokenPrettyPrint extends StObject {
 }
 object OauthtokenPrettyPrint {
   
-  inline def apply(name: String, resource: SignJwtRequest): OauthtokenPrettyPrint = {
+  inline def apply(name: String, resource: CreateServiceAccountRequest): OauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrint]
   }
@@ -98,7 +94,7 @@ object OauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SignJwtRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreateServiceAccountRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

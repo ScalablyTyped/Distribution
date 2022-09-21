@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashFlowRight extends StObject {
   
-  def apply(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def apply(func: (Many[js.Function1[/* repeated */ Any, Any]])*): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply[A /* <: js.Array[Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2] = js.native
+  def apply[A /* <: js.Array[Any] */, R1, R2, R3](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R3] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def apply[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R4] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def apply[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R5] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6](
+  def apply[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6](
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
@@ -36,7 +36,7 @@ trait LodashFlowRight extends StObject {
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R6] = js.native
-  def apply[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def apply[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f7: js.Function1[/* a */ R6, R7],
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],

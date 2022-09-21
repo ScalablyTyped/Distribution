@@ -10,10 +10,10 @@ Makes Windows-style paths more unix and URI friendly.
 | ------------------ | :-------------: |
 | Full name          | urix |
 | Keywords           | path, url, uri, unix, windows, backslash, slash |
-| # releases         | 1 |
-| # dependents       | 128 |
-| # downloads        | 649713087 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7.381625833333333E7 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/lydell/urix)

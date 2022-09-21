@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilsMod extends Shortcut {
   
-  @JSImport("esri/widgets/smartMapping/support/utils", JSImport.Namespace)
+  @JSImport("esri/smartMapping/raster/support/utils", JSImport.Namespace)
   @js.native
   val ^ : utils = js.native
   

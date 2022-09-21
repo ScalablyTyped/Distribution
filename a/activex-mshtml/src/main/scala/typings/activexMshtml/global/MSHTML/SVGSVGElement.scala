@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGSVGElement")
 @js.native
-/* private */ class SVGSVGElement ()
+/* private */ open class SVGSVGElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGSVGElement {
   
@@ -96,13 +96,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def getEnclosureList(
     rect: typings.activexMshtml.MSHTML.SVGRect,
     referenceElement: typings.activexMshtml.MSHTML.ISVGElement
-  ): js.Any = js.native
+  ): Any = js.native
   
   /* CompleteClass */
   override def getIntersectionList(
     rect: typings.activexMshtml.MSHTML.SVGRect,
     referenceElement: typings.activexMshtml.MSHTML.ISVGElement
-  ): js.Any = js.native
+  ): Any = js.native
   
   /* CompleteClass */
   override def getScreenCTM(): typings.activexMshtml.MSHTML.SVGMatrix = js.native

@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serverValuesMod {
   
-  @JSImport("@firebase/database/dist/src/core/util/ServerValues", JSImport.Namespace)
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/ServerValues", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateWithValues(values: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWithValues")(values.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def generateWithValues(values: StringDictionary[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWithValues")(values.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
-  inline def resolveDeferredLeafValue(value: String, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  inline def resolveDeferredLeafValue(
-    value: StringDictionary[js.Any],
-    existingVal: ValueProvider,
-    serverValues: StringDictionary[js.Any]
-  ): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  inline def resolveDeferredLeafValue(value: Boolean, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  inline def resolveDeferredLeafValue(value: Double, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: String, existingVal: ValueProvider, serverValues: StringDictionary[Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: StringDictionary[Any], existingVal: ValueProvider, serverValues: StringDictionary[Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: Boolean, existingVal: ValueProvider, serverValues: StringDictionary[Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: Double, existingVal: ValueProvider, serverValues: StringDictionary[Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
   
   inline def resolveDeferredValueSnapshot(node: Node, existing: Node, serverValues: Indexable): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredValueSnapshot")(node.asInstanceOf[js.Any], existing.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[Node]
   

@@ -22,7 +22,7 @@ trait StratumCreationException
 object StratumCreationException {
   
   inline def apply(
-    BackendException: js.Any,
+    BackendException: Any,
     Context: XInterface,
     Message: String,
     StratumData: String,

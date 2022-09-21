@@ -27,13 +27,13 @@ trait RadialMenu
     * @param {any[]} items of the Radialmenu item to disable.
     * @returns {void}
     */
-  def disableItems(items: js.Array[js.Any]): Unit = js.native
+  def disableItems(items: js.Array[Any]): Unit = js.native
   
   /** To disable menu items using indices
     * @param {any[]} items of the Radialmenu to disable.
     * @returns {void}
     */
-  def disableItemsByIndices(itemIndices: js.Array[js.Any]): Unit = js.native
+  def disableItemsByIndices(itemIndices: js.Array[Any]): Unit = js.native
   
   /** To enable menu item using item text
     * @param {string} item of the Radialmenu item to enable.
@@ -51,13 +51,13 @@ trait RadialMenu
     * @param {any[]} items of the Radialmenu item to enable.
     * @returns {void}
     */
-  def enableItems(items: js.Array[js.Any]): Unit = js.native
+  def enableItems(items: js.Array[Any]): Unit = js.native
   
   /** To enable menu items using indices
     * @param {any[]} Index of the Radialmenu to be enabled.
     * @returns {void}
     */
-  def enableItemsByIndices(itemIndices: js.Array[js.Any]): Unit = js.native
+  def enableItemsByIndices(itemIndices: js.Array[Any]): Unit = js.native
   
   /** To hide the radialmenu
     * @returns {void}
@@ -111,7 +111,7 @@ object RadialMenu {
     
     /** returns the item of element
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** returns the name of item
       */
@@ -119,7 +119,7 @@ object RadialMenu {
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -138,7 +138,7 @@ object RadialMenu {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
       
@@ -146,7 +146,7 @@ object RadialMenu {
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -164,7 +164,7 @@ object RadialMenu {
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -183,7 +183,7 @@ object RadialMenu {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -213,7 +213,7 @@ object RadialMenu {
     
     /** Specifies to add sub level items .
       */
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the template property of RadialMenu for SVG icon.
       */
@@ -256,11 +256,11 @@ object RadialMenu {
       
       inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setPrependTo(value: String): Self = StObject.set(x, "prependTo", value.asInstanceOf[js.Any])
       
@@ -321,7 +321,7 @@ object RadialMenu {
     
     /** Specifies the sliderSettings ticks values of nested radial menu items.
       */
-    var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var ticks: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ItemsSliderSettings {
     
@@ -340,11 +340,11 @@ object RadialMenu {
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      inline def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
-      inline def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+      inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
     }
   }
   
@@ -389,7 +389,7 @@ object RadialMenu {
     
     /** To set radial render position.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** Specifies the radius of radial menu
       */
@@ -440,13 +440,13 @@ object RadialMenu {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOpen(value: /* e */ OpenEventArgs => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -468,7 +468,7 @@ object RadialMenu {
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -487,7 +487,7 @@ object RadialMenu {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

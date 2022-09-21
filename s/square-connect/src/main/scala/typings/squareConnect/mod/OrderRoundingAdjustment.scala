@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderRoundingAdjustment")
 @js.native
-class OrderRoundingAdjustment () extends StObject {
+open class OrderRoundingAdjustment () extends StObject {
   
   /**
     * Actual rounding adjustment amount.

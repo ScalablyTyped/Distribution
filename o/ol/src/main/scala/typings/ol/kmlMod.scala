@@ -17,7 +17,7 @@ object kmlMod {
   
   @JSImport("ol/format/KML", JSImport.Default)
   @js.native
-  class default () extends KML {
+  open class default () extends KML {
     def this(opt_options: Options) = this()
   }
   
@@ -52,13 +52,15 @@ object kmlMod {
       
       inline def setFlatCoordinates(value: js.Array[Double]): Self = StObject.set(x, "flatCoordinates", value.asInstanceOf[js.Any])
       
-      inline def setFlatCoordinatesVarargs(value: Double*): Self = StObject.set(x, "flatCoordinates", js.Array(value :_*))
+      inline def setFlatCoordinatesVarargs(value: Double*): Self = StObject.set(x, "flatCoordinates", js.Array(value*))
       
       inline def setWhens(value: js.Array[Double]): Self = StObject.set(x, "whens", value.asInstanceOf[js.Any])
       
-      inline def setWhensVarargs(value: Double*): Self = StObject.set(x, "whens", js.Array(value :_*))
+      inline def setWhensVarargs(value: Double*): Self = StObject.set(x, "whens", js.Array(value*))
     }
   }
+  
+  type IconUrlFunction = js.Function1[/* p0 */ String, String]
   
   @js.native
   trait KML
@@ -100,11 +102,13 @@ object kmlMod {
   
   trait Options extends StObject {
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var defaultStyle: js.UndefOr[js.Array[typings.ol.styleStyleMod.default]] = js.undefined
     
     var extractStyles: js.UndefOr[Boolean] = js.undefined
+    
+    var iconUrlFunction: js.UndefOr[IconUrlFunction] = js.undefined
     
     var showPointNames: js.UndefOr[Boolean] = js.undefined
     
@@ -121,17 +125,23 @@ object kmlMod {
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
+      
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       inline def setDefaultStyle(value: js.Array[typings.ol.styleStyleMod.default]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
-      inline def setDefaultStyleVarargs(value: typings.ol.styleStyleMod.default*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
+      inline def setDefaultStyleVarargs(value: typings.ol.styleStyleMod.default*): Self = StObject.set(x, "defaultStyle", js.Array(value*))
       
       inline def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
       
       inline def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
+      
+      inline def setIconUrlFunction(value: /* p0 */ String => String): Self = StObject.set(x, "iconUrlFunction", js.Any.fromFunction1(value))
+      
+      inline def setIconUrlFunctionUndefined: Self = StObject.set(x, "iconUrlFunction", js.undefined)
       
       inline def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
       

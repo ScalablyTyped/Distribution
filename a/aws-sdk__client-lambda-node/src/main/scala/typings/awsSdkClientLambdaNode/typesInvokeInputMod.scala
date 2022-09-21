@@ -7,8 +7,6 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestRespo
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.Tail
 import typings.awsSdkClientLambdaNode.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +30,7 @@ object typesInvokeInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -64,7 +62,7 @@ object typesInvokeInputMod {
     /**
       * <p>JSON that you want to provide to your Lambda function as input.</p>
       */
-    var Payload: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
+    var Payload: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String] = js.undefined
     
     /**
       * <p>Specify a version or alias to invoke a published version of the function.</p>
@@ -85,7 +83,7 @@ object typesInvokeInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -108,7 +106,7 @@ object typesInvokeInputMod {
       
       inline def setLogTypeUndefined: Self = StObject.set(x, "LogType", js.undefined)
       
-      inline def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
       

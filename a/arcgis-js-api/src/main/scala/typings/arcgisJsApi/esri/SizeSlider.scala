@@ -10,6 +10,33 @@ trait SizeSlider
      with SmartMappingSliderBase {
   
   /**
+    * Only applicable when three thumbs (i.e.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#handlesSyncedToPrimary)
+    */
+  var handlesSyncedToPrimary: Boolean = js.native
+  
+  /**
+    * Only applicable when three thumbs (i.e.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#persistSizeRangeEnabled)
+    */
+  var persistSizeRangeEnabled: Boolean = js.native
+  
+  /**
+    * When `true`, the slider will render a third handle between the two handles already provided by default.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#primaryHandleEnabled)
+    */
+  var primaryHandleEnabled: Boolean = js.native
+  
+  /**
     * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#stops)
@@ -28,8 +55,8 @@ trait SizeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#updateFromRendererResult)
     */
-  def updateFromRendererResult(rendererResult: sizeContinuousRendererResult): Unit = js.native
-  def updateFromRendererResult(rendererResult: sizeContinuousRendererResult, histogramResult: HistogramResult): Unit = js.native
+  def updateFromRendererResult(rendererResult: sizeContinuousRendererResult): scala.Unit = js.native
+  def updateFromRendererResult(rendererResult: sizeContinuousRendererResult, histogramResult: HistogramResult): scala.Unit = js.native
   
   /**
     * A convenience function used to update the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to match the values of the [stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#stops) on the slider.

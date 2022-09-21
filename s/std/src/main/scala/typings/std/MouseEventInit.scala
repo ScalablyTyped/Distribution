@@ -8,22 +8,31 @@ trait MouseEventInit
   extends StObject
      with EventModifierInit {
   
+  /* standard dom */
   var button: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var buttons: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var clientX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var clientY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var movementX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var movementY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
   
+  /* standard dom */
   var screenX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var screenY: js.UndefOr[Double] = js.undefined
 }
 object MouseEventInit {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 小程序跳转 https://docs.alipay.com/mini/api/open-miniprogram
 trait NavigateToMiniProgramOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 要跳转的目标小程序appId
@@ -26,7 +26,7 @@ trait NavigateToMiniProgramOptions
   /**
     * 需要传递给目标小程序的数据，目标小程序可在 App.onLaunch() ，App.onShow() 中获取到这份数据
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   /**
     * 打开的页面路径，如果为空则打开首页
@@ -48,7 +48,7 @@ object NavigateToMiniProgramOptions {
     
     inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

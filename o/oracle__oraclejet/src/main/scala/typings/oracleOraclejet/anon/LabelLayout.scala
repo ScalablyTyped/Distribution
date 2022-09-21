@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LabelLayout extends StObject {
   
-  var id: js.Any
+  var id: Any
   
   var labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
   
@@ -16,19 +16,14 @@ trait LabelLayout extends StObject {
 }
 object LabelLayout {
   
-  inline def apply(
-    id: js.Any,
-    labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout,
-    x: Double,
-    y: Double
-  ): LabelLayout = {
+  inline def apply(id: Any, labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout, x: Double, y: Double): LabelLayout = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], labelLayout = labelLayout.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelLayout]
   }
   
   extension [Self <: LabelLayout](x: Self) {
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLabelLayout(value: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
     

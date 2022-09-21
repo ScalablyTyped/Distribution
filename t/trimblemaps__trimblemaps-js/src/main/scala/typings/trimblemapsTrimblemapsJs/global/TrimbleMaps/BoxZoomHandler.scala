@@ -1,0 +1,12 @@
+package typings.trimblemapsTrimblemapsJs.global.TrimbleMaps
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("TrimbleMaps.BoxZoomHandler")
+@js.native
+open class BoxZoomHandler protected ()
+  extends typings.trimblemapsTrimblemapsJs.mod.BoxZoomHandler {
+  def this(map: typings.trimblemapsTrimblemapsJs.mod.Map) = this()
+}

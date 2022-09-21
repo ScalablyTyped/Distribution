@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an inline picture.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.InlinePicture")
 @js.native
-class InlinePicture ()
+open class InlinePicture ()
   extends StObject
      with typings.officeJsPreview.Word.InlinePicture {
   

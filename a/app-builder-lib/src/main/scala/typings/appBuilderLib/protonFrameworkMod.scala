@@ -11,7 +11,7 @@ object protonFrameworkMod {
   
   @JSImport("app-builder-lib/out/ProtonFramework", "ProtonFramework")
   @js.native
-  class ProtonFramework protected () extends LibUiFramework {
+  open class ProtonFramework protected () extends LibUiFramework {
     def this(version: String, distMacOsAppName: String, isUseLaunchUi: Boolean) = this()
     
     @JSName("createTransformer")

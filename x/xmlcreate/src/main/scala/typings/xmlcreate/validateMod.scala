@@ -14,7 +14,7 @@ object validateMod {
   
   inline def fixName(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixName")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def isUndefined(`val`: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+  inline def isUndefined(`val`: Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
   
   inline def validateChar(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateChar")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

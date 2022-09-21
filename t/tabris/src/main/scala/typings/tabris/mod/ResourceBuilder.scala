@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ResourceBuilder")
 @js.native
-class ResourceBuilder[ResourceType, RawType] protected () extends StObject {
+open class ResourceBuilder[ResourceType, RawType] protected () extends StObject {
+  /**
+    * A factory for generic resource dictionaries. Instances can be obtained from `Resource.build()` or by
+    * invoking the constructor.
+    * Do not use for resource dictionaries of the types `Color`, `Font` and `string`. Instead use the
+    * respective factories `ColorResources.from()`, `FontResources.from()` and `TextResources.from()`.
+    */
   def this(options: ResourceBuilderConstructorOptions[ResourceType, RawType]) = this()
   
   def from[Data /* <: ResourceDataWithConfig[RawType] */](data: Data): NamedResources[ResourceType, /* keyof Data */ String] = js.native

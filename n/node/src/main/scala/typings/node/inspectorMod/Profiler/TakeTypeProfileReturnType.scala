@@ -22,6 +22,6 @@ object TakeTypeProfileReturnType {
     
     inline def setResult(value: js.Array[ScriptTypeProfile]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: ScriptTypeProfile*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ScriptTypeProfile*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

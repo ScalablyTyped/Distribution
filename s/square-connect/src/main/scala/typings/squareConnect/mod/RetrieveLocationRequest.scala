@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RetrieveLocationRequest")
 @js.native
-class RetrieveLocationRequest () extends StObject
+open class RetrieveLocationRequest () extends StObject

@@ -1,6 +1,5 @@
 package typings.zui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object anon {
       
       inline def setChecks(value: js.Array[Double]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      inline def setChecksVarargs(value: Double*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      inline def setChecksVarargs(value: Double*): Self = StObject.set(x, "checks", js.Array(value*))
     }
   }
   
@@ -177,7 +176,7 @@ object anon {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var lastModifiedDate: js.UndefOr[Date] = js.undefined
+    var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -200,7 +199,7 @@ object anon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
       
@@ -266,7 +265,7 @@ object anon {
       
       inline def setMime_type(value: js.Array[Extensions]): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
       
-      inline def setMime_typeVarargs(value: Extensions*): Self = StObject.set(x, "mime_type", js.Array(value :_*))
+      inline def setMime_typeVarargs(value: Extensions*): Self = StObject.set(x, "mime_type", js.Array(value*))
       
       inline def setPrevent_duplicates(value: String): Self = StObject.set(x, "prevent_duplicates", value.asInstanceOf[js.Any])
       

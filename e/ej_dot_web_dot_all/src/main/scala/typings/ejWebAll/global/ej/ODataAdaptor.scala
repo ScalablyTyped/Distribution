@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ODataAdaptor")
 @js.native
-class ODataAdaptor ()
+open class ODataAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.ODataAdaptor

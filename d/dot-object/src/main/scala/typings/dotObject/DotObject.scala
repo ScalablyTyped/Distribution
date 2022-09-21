@@ -27,29 +27,23 @@ object DotObject {
       * @param {Function|Array} mods
       * @param {Boolean} merge
       */
-    def copy(source: String, target: String, obj1: js.Any, obj2: js.Any): Unit = js.native
+    def copy(source: String, target: String, obj1: Any, obj2: Any): Unit = js.native
+    def copy(source: String, target: String, obj1: Any, obj2: Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
     def copy(
       source: String,
       target: String,
-      obj1: js.Any,
-      obj2: js.Any,
-      mods: js.Array[ModifierFunctionWrapper]
-    ): Unit = js.native
-    def copy(
-      source: String,
-      target: String,
-      obj1: js.Any,
-      obj2: js.Any,
+      obj1: Any,
+      obj2: Any,
       mods: js.Array[ModifierFunctionWrapper],
       merge: Boolean
     ): Unit = js.native
-    def copy(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: Unit, merge: Boolean): Unit = js.native
-    def copy(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
+    def copy(source: String, target: String, obj1: Any, obj2: Any, mods: Unit, merge: Boolean): Unit = js.native
+    def copy(source: String, target: String, obj1: Any, obj2: Any, mods: ModifierFunctionWrapper): Unit = js.native
     def copy(
       source: String,
       target: String,
-      obj1: js.Any,
-      obj2: js.Any,
+      obj1: Any,
+      obj2: Any,
       mods: ModifierFunctionWrapper,
       merge: Boolean
     ): Unit = js.native
@@ -62,8 +56,8 @@ object DotObject {
       * @param {Object} obj
       * @return {Mixed} The removed value
       */
-    def del(path: String, obj: js.Any): js.Any = js.native
-    def del(path: js.Array[String], obj: js.Any): js.Any = js.native
+    def del(path: String, obj: Any): Any = js.native
+    def del(path: js.Array[String], obj: Any): Any = js.native
     
     /**
       *
@@ -73,8 +67,8 @@ object DotObject {
       * @param {Object} obj
       * @return {any} The removed value
       */
-    def delete(path: String, obj: js.Any): js.Any = js.native
-    def delete(path: js.Array[String], obj: js.Any): js.Any = js.native
+    def delete(path: String, obj: Any): Any = js.native
+    def delete(path: js.Array[String], obj: Any): Any = js.native
     
     /**
       *
@@ -86,7 +80,7 @@ object DotObject {
       * @param {Object} obj source object
       * @return {Object} result
       */
-    def dot(obj: js.Any): js.Any = js.native
+    def dot(obj: Any): Any = js.native
     /**
       *
       * Convert object to dotted-key/value pair
@@ -98,7 +92,7 @@ object DotObject {
       * @param {Object} obj source object
       * @param {Object} tgt target object
       */
-    def dot(obj: js.Any, tgt: js.Any): Unit = js.native
+    def dot(obj: Any, tgt: Any): Unit = js.native
     
     /**
       *
@@ -137,18 +131,12 @@ object DotObject {
       * @param {Function|Array} mods
       * @param {Boolean} merge
       */
-    def move(source: String, target: String, obj: js.Any): Unit = js.native
-    def move(source: String, target: String, obj: js.Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
-    def move(
-      source: String,
-      target: String,
-      obj: js.Any,
-      mods: js.Array[ModifierFunctionWrapper],
-      merge: Boolean
-    ): Unit = js.native
-    def move(source: String, target: String, obj: js.Any, mods: Unit, merge: Boolean): Unit = js.native
-    def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
-    def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper, merge: Boolean): Unit = js.native
+    def move(source: String, target: String, obj: Any): Unit = js.native
+    def move(source: String, target: String, obj: Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
+    def move(source: String, target: String, obj: Any, mods: js.Array[ModifierFunctionWrapper], merge: Boolean): Unit = js.native
+    def move(source: String, target: String, obj: Any, mods: Unit, merge: Boolean): Unit = js.native
+    def move(source: String, target: String, obj: Any, mods: ModifierFunctionWrapper): Unit = js.native
+    def move(source: String, target: String, obj: Any, mods: ModifierFunctionWrapper, merge: Boolean): Unit = js.native
     
     /**
       *
@@ -186,8 +174,8 @@ object DotObject {
       * @param {Object} obj
       * @param {Boolean} remove
       */
-    def pick(path: String, obj: js.Any): js.Any = js.native
-    def pick(path: String, obj: js.Any, remove: Boolean): js.Any = js.native
+    def pick(path: String, obj: Any): Any = js.native
+    def pick(path: String, obj: Any, remove: Boolean): Any = js.native
     
     /**
       *
@@ -197,8 +185,8 @@ object DotObject {
       * @param {Object} obj
       * @return {Mixed} The removed value
       */
-    def remove(path: String, obj: js.Any): js.Any = js.native
-    def remove(path: js.Array[String], obj: js.Any): js.Any = js.native
+    def remove(path: String, obj: Any): Any = js.native
+    def remove(path: js.Array[String], obj: Any): Any = js.native
     
     /**
       *
@@ -209,8 +197,8 @@ object DotObject {
       * @param {Object} obj object to be modified
       * @param {Boolean} merge optional merge
       */
-    def set(path: String, v: js.Any, obj: js.Object): Unit = js.native
-    def set(path: String, v: js.Any, obj: js.Object, merge: Boolean): Unit = js.native
+    def set(path: String, v: Any, obj: js.Object): Unit = js.native
+    def set(path: String, v: Any, obj: js.Object, merge: Boolean): Unit = js.native
     
     /**
       *
@@ -221,9 +209,9 @@ object DotObject {
       * @param {Object} obj object to be modified
       * @param {Function|Array} mods optional modifier
       */
-    def str(path: String, v: js.Any, obj: js.Object): Unit = js.native
-    def str(path: String, v: js.Any, obj: js.Object, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
-    def str(path: String, v: js.Any, obj: js.Object, mods: ModifierFunctionWrapper): Unit = js.native
+    def str(path: String, v: Any, obj: js.Object): Unit = js.native
+    def str(path: String, v: Any, obj: js.Object, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
+    def str(path: String, v: Any, obj: js.Object, mods: ModifierFunctionWrapper): Unit = js.native
     
     /**
       *
@@ -239,29 +227,23 @@ object DotObject {
       * @param {Function|Array} mods
       * @param {Boolean} merge
       */
-    def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any): Unit = js.native
+    def transfer(source: String, target: String, obj1: Any, obj2: Any): Unit = js.native
+    def transfer(source: String, target: String, obj1: Any, obj2: Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
     def transfer(
       source: String,
       target: String,
-      obj1: js.Any,
-      obj2: js.Any,
-      mods: js.Array[ModifierFunctionWrapper]
-    ): Unit = js.native
-    def transfer(
-      source: String,
-      target: String,
-      obj1: js.Any,
-      obj2: js.Any,
+      obj1: Any,
+      obj2: Any,
       mods: js.Array[ModifierFunctionWrapper],
       merge: Boolean
     ): Unit = js.native
-    def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: Unit, merge: Boolean): Unit = js.native
-    def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
+    def transfer(source: String, target: String, obj1: Any, obj2: Any, mods: Unit, merge: Boolean): Unit = js.native
+    def transfer(source: String, target: String, obj1: Any, obj2: Any, mods: ModifierFunctionWrapper): Unit = js.native
     def transfer(
       source: String,
       target: String,
-      obj1: js.Any,
-      obj2: js.Any,
+      obj1: Any,
+      obj2: Any,
       mods: ModifierFunctionWrapper,
       merge: Boolean
     ): Unit = js.native
@@ -290,9 +272,9 @@ object DotObject {
       * @param {Object} obj Object to be transformed
       * @param {Array} mods modifiers for the target
       */
-    def transform(recipe: js.Any, obj: js.Any): Unit = js.native
-    def transform(recipe: js.Any, obj: js.Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
-    def transform(recipe: js.Any, obj: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
+    def transform(recipe: Any, obj: Any): Unit = js.native
+    def transform(recipe: Any, obj: Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
+    def transform(recipe: Any, obj: Any, mods: ModifierFunctionWrapper): Unit = js.native
   }
   
   @js.native
@@ -315,5 +297,5 @@ object DotObject {
           Dot
         ]
   
-  type ModifierFunctionWrapper = js.Function1[/* arg */ js.Any, js.Any]
+  type ModifierFunctionWrapper = js.Function1[/* arg */ Any, Any]
 }

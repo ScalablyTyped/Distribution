@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AdapterScopedObject
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_DeviceObject: DeviceCommon
@@ -19,7 +21,7 @@ trait DeviceObject
 }
 object DeviceObject {
   
-  inline def apply(_id: String, common: DeviceCommon, native: Record[String, js.Any]): DeviceObject = {
+  inline def apply(_id: String, common: DeviceCommon, native: Record[String, Any]): DeviceObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("device")
     __obj.asInstanceOf[DeviceObject]

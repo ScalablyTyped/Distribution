@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-native-read-more-text", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReadMoreProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReadMoreProps, js.Object, Any]
   
-  type ReadMore = Component[ReadMoreProps, js.Object, js.Any]
+  type ReadMore = Component[ReadMoreProps, js.Object, Any]
   
   trait ReadMoreProps extends StObject {
     

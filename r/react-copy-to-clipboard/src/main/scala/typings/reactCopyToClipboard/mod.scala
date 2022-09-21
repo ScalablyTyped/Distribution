@@ -1,9 +1,7 @@
 package typings.reactCopyToClipboard
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
-import typings.reactCopyToClipboard.reactCopyToClipboardStrings.textSlashhtml
-import typings.reactCopyToClipboard.reactCopyToClipboardStrings.textSlashplain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +10,32 @@ object mod {
   
   @JSImport("react-copy-to-clipboard", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[Props, js.Object, js.Any]
+  open class ^ protected () extends CopyToClipboard {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
+  }
   
-  type CopyToClipboard = Component[Props, js.Object, js.Any]
+  @JSImport("react-copy-to-clipboard", "CopyToClipboard")
+  @js.native
+  open class CopyToClipboard protected ()
+    extends PureComponent[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
+  }
   
   trait Options extends StObject {
     
     var debug: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[textSlashhtml | textSlashplain] = js.undefined
+    var format: js.UndefOr[String] = js.undefined
     
     var message: js.UndefOr[String] = js.undefined
   }
@@ -38,7 +52,7 @@ object mod {
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setFormat(value: textSlashhtml | textSlashplain): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -50,7 +64,7 @@ object mod {
   
   trait Props extends StObject {
     
-    var children: ReactNode
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var onCopy: js.UndefOr[js.Function2[/* text */ String, /* result */ Boolean, Unit]] = js.undefined
     

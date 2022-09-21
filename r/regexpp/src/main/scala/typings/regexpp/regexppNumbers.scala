@@ -44,6 +44,18 @@ object regexppNumbers {
   inline def `2020`: `2020` = 2020.asInstanceOf[`2020`]
   
   @js.native
+  sealed trait `2021`
+    extends StObject
+       with EcmaVersion
+  inline def `2021`: `2021` = 2021.asInstanceOf[`2021`]
+  
+  @js.native
+  sealed trait `2022`
+    extends StObject
+       with EcmaVersion
+  inline def `2022`: `2022` = 2022.asInstanceOf[`2022`]
+  
+  @js.native
   sealed trait `5`
     extends StObject
        with EcmaVersion

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "ErrorHandler")
 @js.native
-class ErrorHandler () extends StObject {
+open class ErrorHandler () extends StObject {
   
-  def handleError(error: js.Any): Unit = js.native
+  def handleError(error: Any): Unit = js.native
 }

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RingRadius extends StObject {
   
+  var calculateTangents: js.UndefOr[Boolean] = js.undefined
+  
   var ringRadius: js.UndefOr[Double] = js.undefined
   
   var segments: js.UndefOr[Double] = js.undefined
@@ -22,6 +24,10 @@ object RingRadius {
   }
   
   extension [Self <: RingRadius](x: Self) {
+    
+    inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
+    
+    inline def setCalculateTangentsUndefined: Self = StObject.set(x, "calculateTangents", js.undefined)
     
     inline def setRingRadius(value: Double): Self = StObject.set(x, "ringRadius", value.asInstanceOf[js.Any])
     

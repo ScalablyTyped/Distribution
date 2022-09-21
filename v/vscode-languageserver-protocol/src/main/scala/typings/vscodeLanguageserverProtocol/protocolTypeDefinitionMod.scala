@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions
@@ -24,20 +24,19 @@ object protocolTypeDefinitionMod {
   
   object TypeDefinitionRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.typeDefinition", "TypeDefinitionRequest.method")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.typeDefinition", "TypeDefinitionRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.typeDefinition", "TypeDefinitionRequest.method")
     @js.native
     val method: textDocumentSlashtypeDefinition = js.native
     
-    /** @deprecated Use TypeDefinitionRequest.type */
-    @JSImport("vscode-languageserver-protocol/lib/protocol.typeDefinition", "TypeDefinitionRequest.resultType")
-    @js.native
-    val resultType: ProgressType[js.Array[Location | LocationLink]] = js.native
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.typeDefinition", "TypeDefinitionRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.typeDefinition", "TypeDefinitionRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         TypeDefinitionParams, 
-        Location | (js.Array[Location | LocationLink]) | Null, 
+        Definition | js.Array[LocationLink] | Null, 
         js.Array[Location | LocationLink], 
         Unit, 
         TypeDefinitionRegistrationOptions

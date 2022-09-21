@@ -41,7 +41,7 @@ object XPrimitive2D {
     acquire: () => Unit,
     getDecomposition: SeqEquiv[PropertyValue] => SafeArray[XPrimitive2D],
     getRange: SeqEquiv[PropertyValue] => RealRectangle2D,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPrimitive2D = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDecomposition = js.Any.fromFunction1(getDecomposition), getRange = js.Any.fromFunction1(getRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

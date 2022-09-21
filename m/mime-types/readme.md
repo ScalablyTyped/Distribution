@@ -10,10 +10,10 @@ The ultimate javascript content-type utility.
 | ------------------ | :-------------: |
 | Full name          | mime-types |
 | Keywords           | mime, types |
-| # releases         | 6 |
-| # dependents       | 2358 |
-| # downloads        | 1297085212 |
-| # stars            | 64 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7888082866666666E8 |
+| # stars            | 1060.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/mime-types#readme)

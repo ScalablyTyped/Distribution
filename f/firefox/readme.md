@@ -9,10 +9,10 @@ CLI for Firefox
 | ------------------ | :-------------: |
 | Full name          | firefox |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29959 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3642.6666666666665 |
+| # stars            | 304.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/node-firefox)

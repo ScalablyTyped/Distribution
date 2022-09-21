@@ -10,11 +10,11 @@ trait ResponsiveModeSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
-  var maxHeight: js.UndefOr[js.Any] = js.undefined
+  var maxHeight: js.UndefOr[Any] = js.undefined
   
-  var maxWidth: js.UndefOr[js.Any] = js.undefined
+  var maxWidth: js.UndefOr[Any] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
   
@@ -29,11 +29,11 @@ object ResponsiveModeSettings {
   
   extension [Self <: ResponsiveModeSettings](x: Self) {
     
-    inline def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    inline def setMaxWidth(value: js.Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     

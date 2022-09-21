@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("stronghold-pay-js", "StrongholdPayError")
 @js.native
-class StrongholdPayError protected ()
+open class StrongholdPayError protected ()
   extends typings.strongholdPayJs.mod.global.Stronghold.StrongholdPayError {
   def this(
     `type`: typings.strongholdPayJs.mod.global.Stronghold.ERROR_TYPE,

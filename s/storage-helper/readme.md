@@ -10,10 +10,10 @@ A very simple way to manage browser storage
 | ------------------ | :-------------: |
 | Full name          | storage-helper |
 | Keywords           | localStorage, local, storage, localstorage, cookie, cookies |
-| # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 17225 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1444.3333333333333 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/MatteoGabriele/storage-helper#readme)

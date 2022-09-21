@@ -9,7 +9,7 @@ object watcherMod {
   
   @JSImport("watchpack/Watcher", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Watcher {
+  open class ^ protected () extends Watcher {
     def this(directoryWatcher: typings.watchpack.directoryWatcherMod.^, filePath: String, startTime: Double) = this()
   }
   

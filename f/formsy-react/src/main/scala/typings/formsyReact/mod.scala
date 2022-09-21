@@ -39,7 +39,7 @@ object mod {
   
   @JSImport("formsy-react", JSImport.Default)
   @js.native
-  class default protected () extends Formsy {
+  open class default protected () extends Formsy {
     def this(props: FormsyProps) = this()
   }
   /* static members */
@@ -75,8 +75,8 @@ object mod {
     
     @JSImport("formsy-react", "propTypes.innerRef")
     @js.native
-    def innerRef: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-    inline def innerRef_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
+    def innerRef: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+    inline def innerRef_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react", "propTypes.name")
     @js.native
@@ -95,13 +95,13 @@ object mod {
     
     @JSImport("formsy-react", "propTypes.value")
     @js.native
-    def value: Requireable[js.Any] = js.native
-    inline def value_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    def value: Requireable[Any] = js.native
+    inline def value_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("formsy-react", "validationRules")
   @js.native
-  val validationRules: Validations[js.Any] = js.native
+  val validationRules: Validations[Any] = js.native
   
   inline def withFormsy[T, V](WrappedComponent: ComponentType[T & PassDownProps[V]]): ComponentType[
     Omit[

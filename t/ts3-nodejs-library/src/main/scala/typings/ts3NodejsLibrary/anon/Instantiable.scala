@@ -112,8 +112,8 @@ trait Instantiable
     * @param k the key which should get looked up
     * @param v the value which should get parsed
     */
-  def parseValue(k: String): js.Any = js.native
-  def parseValue(k: String, v: String): js.Any = js.native
+  def parseValue(k: String): Any = js.native
+  def parseValue(k: String, v: String): Any = js.native
   
   /** converts a string to camel case */
   def toCamelCase(str: String): String = js.native

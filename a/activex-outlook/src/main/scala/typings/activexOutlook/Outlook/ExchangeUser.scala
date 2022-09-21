@@ -34,7 +34,7 @@ trait ExchangeUser extends StObject {
   var Department: String = js.native
   
   def Details(): Unit = js.native
-  def Details(HWnd: js.Any): Unit = js.native
+  def Details(HWnd: Any): Unit = js.native
   
   val DisplayType: OlDisplayType = js.native
   
@@ -51,7 +51,7 @@ trait ExchangeUser extends StObject {
   def GetExchangeUserManager(): ExchangeUser = js.native
   
   def GetFreeBusy(Start: VarDate, MinPerChar: Double): String = js.native
-  def GetFreeBusy(Start: VarDate, MinPerChar: Double, CompleteFormat: js.Any): String = js.native
+  def GetFreeBusy(Start: VarDate, MinPerChar: Double, CompleteFormat: Any): String = js.native
   
   def GetMemberOfList(): AddressEntries = js.native
   
@@ -63,7 +63,7 @@ trait ExchangeUser extends StObject {
   
   var LastName: String = js.native
   
-  var MAPIOBJECT: js.Any = js.native
+  var MAPIOBJECT: Any = js.native
   
   val Manager: AddressEntry = js.native
   
@@ -78,7 +78,7 @@ trait ExchangeUser extends StObject {
   /* private */ @JSName("Outlook.ExchangeUser_typekey")
   var OutlookDotExchangeUser_typekey: ExchangeUser = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PostalCode: String = js.native
   
@@ -95,9 +95,9 @@ trait ExchangeUser extends StObject {
   var Type: String = js.native
   
   def Update(): Unit = js.native
-  def Update(MakePermanent: js.Any): Unit = js.native
-  def Update(MakePermanent: js.Any, Refresh: js.Any): Unit = js.native
-  def Update(MakePermanent: Unit, Refresh: js.Any): Unit = js.native
+  def Update(MakePermanent: Any): Unit = js.native
+  def Update(MakePermanent: Any, Refresh: Any): Unit = js.native
+  def Update(MakePermanent: Unit, Refresh: Any): Unit = js.native
   
   def UpdateFreeBusy(): Unit = js.native
   

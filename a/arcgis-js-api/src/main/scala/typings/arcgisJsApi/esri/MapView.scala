@@ -1,16 +1,15 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`2d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.center
-import typings.arcgisJsApi.arcgisJsApiStrings.left
-import typings.arcgisJsApi.arcgisJsApiStrings.right
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
+import typings.arcgisJsApi.arcgisJsApiStrings.left_
+import typings.arcgisJsApi.arcgisJsApiStrings.right_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapView
   extends StObject
      with View
-     with MapViewBase
      with BreakpointsOwner {
   
   /**
     * The background color of the MapView.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#background)
     */
@@ -47,9 +47,26 @@ trait MapView
   /**
     * The extent represents the visible portion of a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) within the view as an instance of [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent)
     */
   var extent: Extent = js.native
+  
+  /**
+    * Applies a display filter on the view for a specific set of floor levels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#floors)
+    */
+  var floors: Collection[String] = js.native
+  
+  /**
+    * Sets the view to a given target.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo)
+    */
+  def goTo(target: GoToTarget2D): js.Promise[Any] = js.native
+  def goTo(target: GoToTarget2D, options: GoToOptions2D): js.Promise[Any] = js.native
   
   /**
     * Options for configuring the highlight.
@@ -59,29 +76,28 @@ trait MapView
   var highlightOptions: MapViewHighlightOptions = js.native
   
   /**
-    * Returns the topmost feature from each layer that intersects the specified screen coordinates.
+    * Returns [hit test results](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult) from each layer that intersects the specified screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest)
     */
-  def hitTest(screenPoint: ScreenPoint): js.Promise[HitTestResult] = js.native
-  def hitTest(screenPoint: ScreenPoint, options: MapViewHitTestOptions): js.Promise[HitTestResult] = js.native
+  def hitTest(screenPoint: MapViewScreenPoint): js.Promise[HitTestResult] = js.native
+  def hitTest(screenPoint: MapViewScreenPoint, options: MapViewHitTestOptions): js.Promise[HitTestResult] = js.native
   def hitTest(screenPoint: MouseEvent): js.Promise[HitTestResult] = js.native
   def hitTest(screenPoint: MouseEvent, options: MapViewHitTestOptions): js.Promise[HitTestResult] = js.native
-  
-  def on(`type`: String, modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
-  def on(`type`: String, modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
   
   /**
     * Defines which anchor stays still while resizing the browser window.
     *
+    * @default center
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#resizeAlign)
     */
-  var resizeAlign: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` = js.native
+  var resizeAlign: center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` = js.native
   
   /**
     * The clockwise rotation of due north in relation to the top of the view in degrees.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#rotation)
     */
@@ -93,6 +109,15 @@ trait MapView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale)
     */
   var scale: Double = js.native
+  
+  /**
+    * Indicates if the MapView's [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#spatialReference) can be changed after it is initialized.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#spatialReferenceLocked)
+    */
+  var spatialReferenceLocked: Boolean = js.native
   
   /**
     * Create a screenshot of the current view.
@@ -107,7 +132,7 @@ trait MapView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#toMap)
     */
-  def toMap(screenPoint: ScreenPoint): Point = js.native
+  def toMap(screenPoint: MapViewScreenPoint): Point = js.native
   def toMap(screenPoint: MouseEvent): Point = js.native
   
   /**
@@ -115,7 +140,7 @@ trait MapView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#toScreen)
     */
-  def toScreen(point: Point): ScreenPoint = js.native
+  def toScreen(point: Point): MapViewScreenPoint = js.native
   
   /**
     * The dimension of the view.

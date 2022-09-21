@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "MeasurementUnitCustom")
 @js.native
-class MeasurementUnitCustom () extends StObject {
+open class MeasurementUnitCustom () extends StObject {
   
   /**
     * The abbreviation of the custom unit, such as "bsh" (bushel).

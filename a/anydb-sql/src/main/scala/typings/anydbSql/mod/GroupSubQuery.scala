@@ -9,5 +9,5 @@ trait GroupSubQuery[T]
   extends StObject
      with SubQuery[T] {
   
-  def having(nodes: js.Any*): SubQuery[T] = js.native
+  def having(nodes: Any*): SubQuery[T] = js.native
 }

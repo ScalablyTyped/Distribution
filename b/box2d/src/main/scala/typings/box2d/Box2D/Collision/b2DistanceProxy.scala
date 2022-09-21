@@ -88,7 +88,7 @@ object b2DistanceProxy {
     
     inline def setM_vertices(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_vertices", value.asInstanceOf[js.Any])
     
-    inline def setM_verticesVarargs(value: b2Vec2*): Self = StObject.set(x, "m_vertices", js.Array(value :_*))
+    inline def setM_verticesVarargs(value: b2Vec2*): Self = StObject.set(x, "m_vertices", js.Array(value*))
     
     inline def setSet(value: b2Shape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }

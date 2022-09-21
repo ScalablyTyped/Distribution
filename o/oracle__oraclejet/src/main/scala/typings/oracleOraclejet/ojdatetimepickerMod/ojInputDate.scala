@@ -54,7 +54,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -62,26 +62,26 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: keyboardEditChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: keyboardEditChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: renderModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: renderModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -90,7 +90,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[Converter[String] | RegisteredConverter], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -99,19 +99,19 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[Converter[String] | RegisteredConverter], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -120,7 +120,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -129,41 +129,41 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -200,35 +200,35 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
   
   var min: String | Null = js.native
   
-  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[String] | RegisteredConverter], js.Any]) | Null = js.native
+  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[String] | RegisteredConverter], Any]) | Null = js.native
   
-  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[ChangeMonth], js.Any]) | Null = js.native
+  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[ChangeMonth], Any]) | Null = js.native
   
   var onDayFormatterChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
   var onDayMetaDataChanged: (js.Function1[
     /* event */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onKeyboardEditChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], js.Any]) | Null = js.native
+  var onKeyboardEditChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], Any]) | Null = js.native
   
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], Any]) | Null = js.native
   
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], Any]) | Null = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputDate: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojInputDate: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputDate: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojInputDate: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
-  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], js.Any]) | Null = js.native
+  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], Any]) | Null = js.native
   
-  var onRenderModeChanged: (js.Function1[/* event */ JetElementCustomEvent[jet | native], js.Any]) | Null = js.native
+  var onRenderModeChanged: (js.Function1[/* event */ JetElementCustomEvent[jet | native], Any]) | Null = js.native
   
   var pickerAttributes: Class = js.native
   
@@ -236,10 +236,8 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
   
   def setProperties(properties: ojInputDateSettablePropertiesLenient): Unit = js.native
   
-  def setProperty(property: keyboardEdit, value: disabled): Unit = js.native
-  def setProperty(property: keyboardEdit, value: enabled): Unit = js.native
-  def setProperty(property: renderMode, value: jet): Unit = js.native
-  def setProperty(property: renderMode, value: native): Unit = js.native
+  def setProperty(property: keyboardEdit, value: enabled | disabled): Unit = js.native
+  def setProperty(property: renderMode, value: jet | native): Unit = js.native
   @JSName("setProperty")
   def setProperty_converter(property: converter, value: Converter[String]): Unit = js.native
   @JSName("setProperty")

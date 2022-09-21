@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("obsolete-web", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Obsolete {
     def this(options: Options) = this()

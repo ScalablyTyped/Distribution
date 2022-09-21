@@ -10,14 +10,12 @@ capitalize the first letter of a string, or all words in a string
 | ------------------ | :-------------: |
 | Full name          | capitalize |
 | Keywords           | capitalize |
-| # releases         | 5 |
-| # dependents       | 201 |
-| # downloads        | 3345105 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 283607.6666666667 |
+| # stars            | 36.0 |
 
 ## Links
-- [Homepage](https://github.com/grncdr/js-capitalize)
-- [Repository](https://github.com/grncdr/js-capitalize)
 - [Npm](https://www.npmjs.com/package/capitalize)
     
 

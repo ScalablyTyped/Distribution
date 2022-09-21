@@ -1,6 +1,5 @@
 package typings.jqueryui.JQueryUI
 
-import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait DatepickerOptions extends StObject {
   /**
     * An input element that is to be updated with the selected date from the datepicker. Use the altFormat option to change the format of the date within this field. Leave as blank for no alternate field.
     */
-  var altField: js.UndefOr[js.Any] = js.undefined
+  var altField: js.UndefOr[Any] = js.undefined
   
   // Selector, jQuery or Element
   /**
@@ -38,7 +37,7 @@ trait DatepickerOptions extends StObject {
   /**
     * A function that takes an input field and current datepicker instance and returns an options object to update the datepicker with. It is called just before the datepicker is displayed.
     */
-  var beforeShow: js.UndefOr[js.Function2[/* input */ Element, /* inst */ js.Any, this.type]] = js.undefined
+  var beforeShow: js.UndefOr[js.Function2[/* input */ Element, /* inst */ Any, this.type]] = js.undefined
   
   /**
     * A function that takes a date as a parameter and must return an array with:
@@ -47,7 +46,7 @@ trait DatepickerOptions extends StObject {
     * [2]: an optional popup tooltip for this date
     * The function is called for each day in the datepicker before it is displayed.
     */
-  var beforeShowDay: js.UndefOr[js.Function1[/* date */ Date, js.Array[js.Any]]] = js.undefined
+  var beforeShowDay: js.UndefOr[js.Function1[/* date */ js.Date, js.Array[Any]]] = js.undefined
   
   /**
     * A URL of an image to use to display the datepicker when the showOn option is set to "button" or "both". If set, the buttonText option becomes the alt value and is not directly displayed.
@@ -67,7 +66,7 @@ trait DatepickerOptions extends StObject {
   /**
     * A function to calculate the week of the year for a given date. The default implementation uses the ISO 8601 definition: weeks start on a Monday; the first week of the year contains the first Thursday of the year.
     */
-  var calculateWeek: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+  var calculateWeek: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
   
   /**
     * Whether the month should be rendered as a dropdown instead of text.
@@ -121,7 +120,7 @@ trait DatepickerOptions extends StObject {
     * Number: A number of days from today. For example 2 represents two days from today and -1 represents yesterday.
     * String: A string in the format defined by the dateFormat option, or a relative date. Relative dates must contain value and period pairs; valid periods are "y" for years, "m" for months, "w" for weeks, and "d" for days. For example, "+1m +7d" represents one month and seven days from today.
     */
-  var defaultDate: js.UndefOr[js.Any] = js.undefined
+  var defaultDate: js.UndefOr[Any] = js.undefined
   
   // Date, number or string
   /**
@@ -132,7 +131,7 @@ trait DatepickerOptions extends StObject {
   /**
     * Set to date to automatically enddate the datepicker.
     */
-  var endDate: js.UndefOr[Date] = js.undefined
+  var endDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Set the first day of the week: Sunday is 0, Monday is 1, etc.
@@ -161,7 +160,7 @@ trait DatepickerOptions extends StObject {
     * Number: A number of days from today. For example 2 represents two days from today and -1 represents yesterday.
     * String: A string in the format defined by the dateFormat option, or a relative date. Relative dates must contain value and period pairs; valid periods are "y" for years, "m" for months, "w" for weeks, and "d" for days. For example, "+1m +7d" represents one month and seven days from today.
     */
-  var maxDate: js.UndefOr[js.Any] = js.undefined
+  var maxDate: js.UndefOr[Any] = js.undefined
   
   // Date, number or string
   /**
@@ -171,7 +170,7 @@ trait DatepickerOptions extends StObject {
     * Number: A number of days from today. For example 2 represents two days from today and -1 represents yesterday.
     * String: A string in the format defined by the dateFormat option, or a relative date. Relative dates must contain value and period pairs; valid periods are "y" for years, "m" for months, "w" for weeks, and "d" for days. For example, "+1m +7d" represents one month and seven days from today.
     */
-  var minDate: js.UndefOr[js.Any] = js.undefined
+  var minDate: js.UndefOr[Any] = js.undefined
   
   // Date, number or string
   /**
@@ -200,23 +199,23 @@ trait DatepickerOptions extends StObject {
     * Number: The number of months to display in a single row.
     * Array: An array defining the number of rows and columns to display.
     */
-  var numberOfMonths: js.UndefOr[js.Any] = js.undefined
+  var numberOfMonths: js.UndefOr[Any] = js.undefined
   
   // number or number[]
   /**
     * Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. this refers to the associated input field.
     */
-  var onChangeMonthYear: js.UndefOr[js.Function3[/* year */ Double, /* month */ Double, /* inst */ js.Any, Unit]] = js.undefined
+  var onChangeMonthYear: js.UndefOr[js.Function3[/* year */ Double, /* month */ Double, /* inst */ Any, Unit]] = js.undefined
   
   /**
     * Called when the datepicker is closed, whether or not a date is selected. The function receives the selected date as text ("" if none) and the datepicker instance as parameters. this refers to the associated input field.
     */
-  var onClose: js.UndefOr[js.Function2[/* dateText */ String, /* inst */ js.Any, Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function2[/* dateText */ String, /* inst */ Any, Unit]] = js.undefined
   
   /**
     * Called when the datepicker is selected. The function receives the selected date as text and the datepicker instance as parameters. this refers to the associated input field.
     */
-  var onSelect: js.UndefOr[js.Function2[/* dateText */ String, /* inst */ js.Any, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* dateText */ String, /* inst */ Any, Unit]] = js.undefined
   
   /**
     * The text to display for the previous month link. With the standard ThemeRoller styling, this value is replaced by an icon.
@@ -234,7 +233,7 @@ trait DatepickerOptions extends StObject {
     * Number: A value between 0 and 99 indicating the cutoff year.
     * String: A relative number of years from the current year, e.g., "+3" or "-5".
     */
-  var shortYearCutoff: js.UndefOr[js.Any] = js.undefined
+  var shortYearCutoff: js.UndefOr[Any] = js.undefined
   
   // number or string
   /**
@@ -265,7 +264,7 @@ trait DatepickerOptions extends StObject {
   /**
     * If using one of the jQuery UI effects for the showAnim option, you can provide additional settings for that animation via this option.
     */
-  var showOptions: js.UndefOr[js.Any] = js.undefined
+  var showOptions: js.UndefOr[Any] = js.undefined
   
   // TODO
   /**
@@ -307,7 +306,7 @@ object DatepickerOptions {
   
   extension [Self <: DatepickerOptions](x: Self) {
     
-    inline def setAltField(value: js.Any): Self = StObject.set(x, "altField", value.asInstanceOf[js.Any])
+    inline def setAltField(value: Any): Self = StObject.set(x, "altField", value.asInstanceOf[js.Any])
     
     inline def setAltFieldUndefined: Self = StObject.set(x, "altField", js.undefined)
     
@@ -327,9 +326,9 @@ object DatepickerOptions {
     
     inline def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
-    inline def setBeforeShow(value: (/* input */ Element, /* inst */ js.Any) => DatepickerOptions): Self = StObject.set(x, "beforeShow", js.Any.fromFunction2(value))
+    inline def setBeforeShow(value: (/* input */ Element, /* inst */ Any) => DatepickerOptions): Self = StObject.set(x, "beforeShow", js.Any.fromFunction2(value))
     
-    inline def setBeforeShowDay(value: /* date */ Date => js.Array[js.Any]): Self = StObject.set(x, "beforeShowDay", js.Any.fromFunction1(value))
+    inline def setBeforeShowDay(value: /* date */ js.Date => js.Array[Any]): Self = StObject.set(x, "beforeShowDay", js.Any.fromFunction1(value))
     
     inline def setBeforeShowDayUndefined: Self = StObject.set(x, "beforeShowDay", js.undefined)
     
@@ -347,7 +346,7 @@ object DatepickerOptions {
     
     inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
-    inline def setCalculateWeek(value: /* date */ Date => String): Self = StObject.set(x, "calculateWeek", js.Any.fromFunction1(value))
+    inline def setCalculateWeek(value: /* date */ js.Date => String): Self = StObject.set(x, "calculateWeek", js.Any.fromFunction1(value))
     
     inline def setCalculateWeekUndefined: Self = StObject.set(x, "calculateWeek", js.undefined)
     
@@ -381,19 +380,19 @@ object DatepickerOptions {
     
     inline def setDayNamesMinUndefined: Self = StObject.set(x, "dayNamesMin", js.undefined)
     
-    inline def setDayNamesMinVarargs(value: String*): Self = StObject.set(x, "dayNamesMin", js.Array(value :_*))
+    inline def setDayNamesMinVarargs(value: String*): Self = StObject.set(x, "dayNamesMin", js.Array(value*))
     
     inline def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
     
     inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
     
-    inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+    inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value*))
     
     inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
     
-    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
     
-    inline def setDefaultDate(value: js.Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    inline def setDefaultDate(value: Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
     
@@ -401,7 +400,7 @@ object DatepickerOptions {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
@@ -421,11 +420,11 @@ object DatepickerOptions {
     
     inline def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
-    inline def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -435,11 +434,11 @@ object DatepickerOptions {
     
     inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
     
-    inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+    inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value*))
     
     inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
-    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
     
     inline def setNavigationAsDateFormat(value: Boolean): Self = StObject.set(x, "navigationAsDateFormat", value.asInstanceOf[js.Any])
     
@@ -449,19 +448,19 @@ object DatepickerOptions {
     
     inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
-    inline def setNumberOfMonths(value: js.Any): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
+    inline def setNumberOfMonths(value: Any): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
     inline def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
     
-    inline def setOnChangeMonthYear(value: (/* year */ Double, /* month */ Double, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onChangeMonthYear", js.Any.fromFunction3(value))
+    inline def setOnChangeMonthYear(value: (/* year */ Double, /* month */ Double, /* inst */ Any) => Unit): Self = StObject.set(x, "onChangeMonthYear", js.Any.fromFunction3(value))
     
     inline def setOnChangeMonthYearUndefined: Self = StObject.set(x, "onChangeMonthYear", js.undefined)
     
-    inline def setOnClose(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    inline def setOnClose(value: (/* dateText */ String, /* inst */ Any) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnSelect(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnSelect(value: (/* dateText */ String, /* inst */ Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
@@ -473,7 +472,7 @@ object DatepickerOptions {
     
     inline def setSelectOtherMonthsUndefined: Self = StObject.set(x, "selectOtherMonths", js.undefined)
     
-    inline def setShortYearCutoff(value: js.Any): Self = StObject.set(x, "shortYearCutoff", value.asInstanceOf[js.Any])
+    inline def setShortYearCutoff(value: Any): Self = StObject.set(x, "shortYearCutoff", value.asInstanceOf[js.Any])
     
     inline def setShortYearCutoffUndefined: Self = StObject.set(x, "shortYearCutoff", js.undefined)
     
@@ -497,7 +496,7 @@ object DatepickerOptions {
     
     inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
-    inline def setShowOptions(value: js.Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
+    inline def setShowOptions(value: Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
     
     inline def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
     

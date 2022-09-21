@@ -47,8 +47,8 @@ trait NodeAPINodes extends StObject {
     * @param constructor - the constructor function for this node type
     * @param opts - optional additional options for the node
     */
-  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds](`type`: String, constructor: NodeConstructor[TNode, TNodeDef, TCreds]): Unit = js.native
-  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds](
+  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds /* <: js.Object */](`type`: String, constructor: NodeConstructor[TNode, TNodeDef, TCreds]): Unit = js.native
+  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds /* <: js.Object */](
     `type`: String,
     constructor: NodeConstructor[TNode, TNodeDef, TCreds],
     // tslint:disable-line:no-unnecessary-generics

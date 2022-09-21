@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2KAnonymityResult {
     
     inline def setEquivalenceClassHistogramBucketsUndefined: Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.undefined)
     
-    inline def setEquivalenceClassHistogramBucketsVarargs(value: GooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value :_*))
+    inline def setEquivalenceClassHistogramBucketsVarargs(value: GooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value*))
   }
 }

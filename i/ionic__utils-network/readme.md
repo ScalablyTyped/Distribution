@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-network
 
-Typings are for version 1.0.6
+Typings are for version 2.1.5
 
 ## Library description:
 Network utils for Node
@@ -10,10 +10,10 @@ Network utils for Node
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-network |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 1 |
-| # downloads        | 3030237 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 267948.0 |
+| # stars            | 1982.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

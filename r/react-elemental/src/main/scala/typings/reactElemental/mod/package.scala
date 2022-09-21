@@ -1,21 +1,23 @@
 package typings.reactElemental.mod
 
+import typings.react.mod.FunctionComponent
+import typings.reactElemental.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Label: typings.react.mod.FunctionComponent[typings.reactElemental.mod.LabelProps] = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[typings.react.mod.FunctionComponent[typings.reactElemental.mod.LabelProps]]
+inline def Label: FunctionComponent[LabelProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[FunctionComponent[LabelProps]]
 
-inline def Spacing_ : typings.react.mod.FunctionComponent[typings.reactElemental.mod.SpacingProps] = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Spacing").asInstanceOf[typings.react.mod.FunctionComponent[typings.reactElemental.mod.SpacingProps]]
+inline def Spacing_ : FunctionComponent[SpacingProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Spacing").asInstanceOf[FunctionComponent[SpacingProps]]
 
-inline def Tag: typings.react.mod.FunctionComponent[typings.reactElemental.mod.TagProps] = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tag").asInstanceOf[typings.react.mod.FunctionComponent[typings.reactElemental.mod.TagProps]]
+inline def Tag: FunctionComponent[TagProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Tag").asInstanceOf[FunctionComponent[TagProps]]
 
-inline def TextArea: typings.react.mod.FunctionComponent[typings.reactElemental.mod.TextAreaProps] = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextArea").asInstanceOf[typings.react.mod.FunctionComponent[typings.reactElemental.mod.TextAreaProps]]
+inline def TextArea: FunctionComponent[TextAreaProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextArea").asInstanceOf[FunctionComponent[TextAreaProps]]
 
-inline def Toast: typings.react.mod.FunctionComponent[typings.reactElemental.mod.ToastProps] = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Toast").asInstanceOf[typings.react.mod.FunctionComponent[typings.reactElemental.mod.ToastProps]]
+inline def Toast: FunctionComponent[ToastProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Toast").asInstanceOf[FunctionComponent[ToastProps]]
 
-inline def bootstrap(): scala.Unit = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")().asInstanceOf[scala.Unit]
-inline def bootstrap(fontOpts: scala.Unit, colorOpts: typings.reactElemental.mod.ColorOpts): scala.Unit = (typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any], colorOpts.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def bootstrap(fontOpts: typings.reactElemental.mod.FontOpts): scala.Unit = typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def bootstrap(fontOpts: typings.reactElemental.mod.FontOpts, colorOpts: typings.reactElemental.mod.ColorOpts): scala.Unit = (typings.reactElemental.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any], colorOpts.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def bootstrap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")().asInstanceOf[Unit]
+inline def bootstrap(fontOpts: Unit, colorOpts: ColorOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any], colorOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def bootstrap(fontOpts: FontOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def bootstrap(fontOpts: FontOpts, colorOpts: ColorOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(fontOpts.asInstanceOf[js.Any], colorOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]

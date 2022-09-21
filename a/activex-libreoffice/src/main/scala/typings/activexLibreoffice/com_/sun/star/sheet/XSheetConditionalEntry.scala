@@ -29,7 +29,7 @@ object XSheetConditionalEntry {
     StyleName: String,
     acquire: () => Unit,
     getStyleName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStyleName: String => Unit
   ): XSheetConditionalEntry = {

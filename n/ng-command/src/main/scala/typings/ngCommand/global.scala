@@ -14,19 +14,19 @@ object global {
     
     @JSGlobal("ngCommand.Command")
     @js.native
-    class Command protected ()
+    open class Command protected ()
       extends StObject
          with typings.ngCommand.ngCommand.Command {
       def this(
-        $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
+        $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ Any,
         execute: js.Function0[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ Any
               ]
       ) = this()
       def this(
-        $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
+        $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ Any,
         execute: js.Function0[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ Any
               ],
         canExecute: js.Function0[Boolean]
       ) = this()
@@ -41,7 +41,7 @@ object global {
         * Executes the command function.
         */
       /* CompleteClass */
-      override def execute(): js.Any = js.native
+      override def execute(): Any = js.native
       
       /**
         * Determines whether the command is currently executing.

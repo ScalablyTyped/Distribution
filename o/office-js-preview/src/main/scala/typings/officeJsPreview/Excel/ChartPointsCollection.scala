@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of all the chart points within a series inside a chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -26,9 +26,9 @@ trait ChartPointsCollection
   var context_ChartPointsCollection: RequestContext = js.native
   
   /**
-    *
     * Returns the number of chart points in the series.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -36,6 +36,7 @@ trait ChartPointsCollection
   /**
     * Returns the number of chart points in the series.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -43,6 +44,7 @@ trait ChartPointsCollection
   /**
     * Retrieve a point based on its position within the series.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.

@@ -10,10 +10,10 @@ Convert time strings to milliseconds
 | ------------------ | :-------------: |
 | Full name          | millisecond |
 | Keywords           | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 2219274 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 146886.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/millisecond)

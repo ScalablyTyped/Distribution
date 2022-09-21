@@ -23,7 +23,7 @@ trait XAccessibleValue
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  var CurrentValue: js.Any
+  var CurrentValue: Any
   
   /**
     * Returns the maximal value that can be represented by this object.
@@ -31,7 +31,7 @@ trait XAccessibleValue
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MaximumValue: js.Any
+  val MaximumValue: Any
   
   /**
     * Returns the minimal value that can be represented by this object.
@@ -39,7 +39,7 @@ trait XAccessibleValue
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MinimumValue: js.Any
+  val MinimumValue: Any
   
   /**
     * Returns the value of this object as a number.
@@ -47,7 +47,7 @@ trait XAccessibleValue
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  def getCurrentValue(): js.Any
+  def getCurrentValue(): Any
   
   /**
     * Returns the maximal value that can be represented by this object.
@@ -55,7 +55,7 @@ trait XAccessibleValue
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMaximumValue(): js.Any
+  def getMaximumValue(): Any
   
   /**
     * Returns the minimal value that can be represented by this object.
@@ -63,7 +63,7 @@ trait XAccessibleValue
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMinimumValue(): js.Any
+  def getMinimumValue(): Any
   
   /**
     * Sets the value of this object to the given number.
@@ -74,21 +74,21 @@ trait XAccessibleValue
     * @param aNumber The new value represented by this object. The set of admissible types for this argument is implementation dependent.
     * @returns Returns `TRUE` if the new value could successfully be set and `FALSE` otherwise.
     */
-  def setCurrentValue(aNumber: js.Any): Boolean
+  def setCurrentValue(aNumber: Any): Boolean
 }
 object XAccessibleValue {
   
   inline def apply(
-    CurrentValue: js.Any,
-    MaximumValue: js.Any,
-    MinimumValue: js.Any,
+    CurrentValue: Any,
+    MaximumValue: Any,
+    MinimumValue: Any,
     acquire: () => Unit,
-    getCurrentValue: () => js.Any,
-    getMaximumValue: () => js.Any,
-    getMinimumValue: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getCurrentValue: () => Any,
+    getMaximumValue: () => Any,
+    getMinimumValue: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setCurrentValue: js.Any => Boolean
+    setCurrentValue: Any => Boolean
   ): XAccessibleValue = {
     val __obj = js.Dynamic.literal(CurrentValue = CurrentValue.asInstanceOf[js.Any], MaximumValue = MaximumValue.asInstanceOf[js.Any], MinimumValue = MinimumValue.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCurrentValue = js.Any.fromFunction0(getCurrentValue), getMaximumValue = js.Any.fromFunction0(getMaximumValue), getMinimumValue = js.Any.fromFunction0(getMinimumValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentValue = js.Any.fromFunction1(setCurrentValue))
     __obj.asInstanceOf[XAccessibleValue]
@@ -96,18 +96,18 @@ object XAccessibleValue {
   
   extension [Self <: XAccessibleValue](x: Self) {
     
-    inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
     
-    inline def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+    inline def setGetCurrentValue(value: () => Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
     
-    inline def setGetMaximumValue(value: () => js.Any): Self = StObject.set(x, "getMaximumValue", js.Any.fromFunction0(value))
+    inline def setGetMaximumValue(value: () => Any): Self = StObject.set(x, "getMaximumValue", js.Any.fromFunction0(value))
     
-    inline def setGetMinimumValue(value: () => js.Any): Self = StObject.set(x, "getMinimumValue", js.Any.fromFunction0(value))
+    inline def setGetMinimumValue(value: () => Any): Self = StObject.set(x, "getMinimumValue", js.Any.fromFunction0(value))
     
-    inline def setMaximumValue(value: js.Any): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: Any): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
-    inline def setMinimumValue(value: js.Any): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Any): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
-    inline def setSetCurrentValue(value: js.Any => Boolean): Self = StObject.set(x, "setCurrentValue", js.Any.fromFunction1(value))
+    inline def setSetCurrentValue(value: Any => Boolean): Self = StObject.set(x, "setCurrentValue", js.Any.fromFunction1(value))
   }
 }

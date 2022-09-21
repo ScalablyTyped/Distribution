@@ -19,6 +19,6 @@ object Group {
     
     inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value*))
   }
 }

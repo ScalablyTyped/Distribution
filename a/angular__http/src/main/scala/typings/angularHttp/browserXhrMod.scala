@@ -8,8 +8,8 @@ object browserXhrMod {
   
   @JSImport("@angular/http/src/backends/browser_xhr", "BrowserXhr")
   @js.native
-  class BrowserXhr () extends StObject {
+  open class BrowserXhr () extends StObject {
     
-    def build(): js.Any = js.native
+    def build(): Any = js.native
   }
 }

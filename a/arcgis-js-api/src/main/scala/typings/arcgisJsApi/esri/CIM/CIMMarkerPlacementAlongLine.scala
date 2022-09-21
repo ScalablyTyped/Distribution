@@ -71,6 +71,6 @@ object CIMMarkerPlacementAlongLine {
     
     inline def setPlacementTemplateUndefined: Self = StObject.set(x, "placementTemplate", js.undefined)
     
-    inline def setPlacementTemplateVarargs(value: Double*): Self = StObject.set(x, "placementTemplate", js.Array(value :_*))
+    inline def setPlacementTemplateVarargs(value: Double*): Self = StObject.set(x, "placementTemplate", js.Array(value*))
   }
 }

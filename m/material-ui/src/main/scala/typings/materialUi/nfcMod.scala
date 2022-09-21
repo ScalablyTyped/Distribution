@@ -10,10 +10,10 @@ object nfcMod {
   
   @JSImport("material-ui/svg-icons/device/nfc", JSImport.Default)
   @js.native
-  class default () extends DeviceNfc
+  open class default () extends DeviceNfc
   
   @JSImport("material-ui/svg-icons/device/nfc", "DeviceNfc")
   @js.native
-  class DeviceNfc ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceNfc ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

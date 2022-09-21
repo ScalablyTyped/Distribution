@@ -42,7 +42,7 @@ object GooglePrivacyDlpV2KMapEstimationHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2KMapEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2KMapEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setMaxAnonymity(value: String): Self = StObject.set(x, "maxAnonymity", value.asInstanceOf[js.Any])
     

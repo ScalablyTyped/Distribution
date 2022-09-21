@@ -1,7 +1,7 @@
 
 # Scala.js typings for text-clipper
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Fast and correct clip functions for HTML and plain text.
@@ -10,10 +10,10 @@ Fast and correct clip functions for HTML and plain text.
 | ------------------ | :-------------: |
 | Full name          | text-clipper |
 | Keywords           | clip, html, string, text, trim, truncate |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 262751 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62440.666666666664 |
+| # stars            | 109.0 |
 
 ## Links
 - [Homepage](https://github.com/arendjr/text-clipper#readme)

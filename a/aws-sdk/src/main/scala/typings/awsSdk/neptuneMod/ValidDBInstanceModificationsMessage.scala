@@ -24,6 +24,6 @@ object ValidDBInstanceModificationsMessage {
     
     inline def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
-    inline def setStorageVarargs(value: ValidStorageOptions*): Self = StObject.set(x, "Storage", js.Array(value :_*))
+    inline def setStorageVarargs(value: ValidStorageOptions*): Self = StObject.set(x, "Storage", js.Array(value*))
   }
 }

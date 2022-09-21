@@ -1,8 +1,7 @@
 package typings.fluentuiReactComponentRef
 
-import typings.fluentuiReactComponentRef.utilsMod.RefProps
-import typings.react.mod.FunctionComponent
-import typings.react.mod.RefObject
+import typings.fluentuiReactComponentRef.refMod.RefProps
+import typings.fluentuiReactComponentRef.refMod.RefState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,36 +14,27 @@ object mod {
   
   @JSImport("@fluentui/react-component-ref", "Ref")
   @js.native
-  val Ref: FunctionComponent[RefProps] = js.native
-  
-  @JSImport("@fluentui/react-component-ref", "RefFindNode")
-  @js.native
-  class RefFindNode protected ()
-    extends typings.fluentuiReactComponentRef.refFindNodeMod.RefFindNode {
+  open class Ref protected ()
+    extends typings.fluentuiReactComponentRef.refMod.Ref {
     def this(props: RefProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RefProps, context: js.Any) = this()
+    def this(props: RefProps, context: Any) = this()
+  }
+  /* static members */
+  object Ref {
+    
+    @JSImport("@fluentui/react-component-ref", "Ref")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getDerivedStateFromProps(props: RefProps): RefState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[RefState]
   }
   
-  @JSImport("@fluentui/react-component-ref", "RefForward")
-  @js.native
-  class RefForward protected ()
-    extends typings.fluentuiReactComponentRef.refForwardMod.RefForward {
-    def this(props: RefProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: RefProps, context: js.Any) = this()
-  }
-  
-  inline def handleRef[N](ref: js.Function1[/* instance */ N | Null, Unit], node: N): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def handleRef[N](ref: Null, node: N): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def handleRef[N](ref: Unit, node: N): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def handleRef[N](ref: RefObject[N], node: N): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def handleRef[N](ref: typings.react.mod.Ref[N], node: N): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def isRefObject(ref: js.Any): /* is react.react.RefObject<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<any> */ Boolean]
+  inline def isRefObject(ref: Any): /* is react.react.RefObject<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<any> */ Boolean]
 }

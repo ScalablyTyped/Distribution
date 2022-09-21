@@ -17,7 +17,7 @@ trait DataSetQueueOptions extends StObject {
     * max: number - When the queue exceeds the given maximum number of entries, the queue is flushed automatically. Default value is Infinity.
     * Default value is Infinity.
     */
-  var queue: js.UndefOr[js.Any | Boolean] = js.undefined
+  var queue: js.UndefOr[Any | Boolean] = js.undefined
 }
 object DataSetQueueOptions {
   
@@ -28,7 +28,7 @@ object DataSetQueueOptions {
   
   extension [Self <: DataSetQueueOptions](x: Self) {
     
-    inline def setQueue(value: js.Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEWindow")
 @js.native
-class GEWindow ()
+open class GEWindow ()
   extends StObject
      with typings.googleEarth.google.earth.GEWindow {
   

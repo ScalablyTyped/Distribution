@@ -15,7 +15,7 @@ trait Handle
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Handles.html#Handle)
     */
-  def remove(): Unit
+  def remove(): scala.Unit
 }
 object Handle {
   
@@ -23,7 +23,7 @@ object Handle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    remove: () => Unit
+    remove: () => scala.Unit
   ): Handle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[Handle]
@@ -31,6 +31,6 @@ object Handle {
   
   extension [Self <: Handle](x: Self) {
     
-    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => scala.Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

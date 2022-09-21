@@ -1,12 +1,15 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.anon.Delay
 import typings.antd.antdStrings.click
 import typings.antd.antdStrings.contextMenu
 import typings.antd.antdStrings.hover
+import typings.antd.antdStrings.text_
 import typings.antd.buttonButtonMod.ButtonHTMLType
 import typings.antd.buttonGroupMod.ButtonGroupProps
 import typings.antd.dropdownDropdownMod.Align
+import typings.antd.dropdownDropdownMod.DropdownArrowOptions
 import typings.antd.dropdownDropdownMod.OverlayFunc
 import typings.antd.dropdownDropdownMod.Placement
 import typings.react.mod.CSSProperties
@@ -37,17 +40,21 @@ object dropdownButtonMod extends Shortcut {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.antd.dropdownDropdownMod.DropDownProps because var conflicts: className, prefixCls. Inlined arrow, trigger, overlay, onVisibleChange, visible, disabled, align, getPopupContainer, transitionName, placement, overlayClassName, overlayStyle, forceRender, mouseEnterDelay, mouseLeaveDelay, openClassName */ trait DropdownButtonProps
+  - typings.antd.dropdownDropdownMod.DropdownProps because var conflicts: children, className, prefixCls. Inlined autoFocus, arrow, trigger, overlay, onVisibleChange, onOpenChange, visible, open, disabled, destroyPopupOnHide, align, getPopupContainer, transitionName, placement, overlayClassName, overlayStyle, forceRender, mouseEnterDelay, mouseLeaveDelay, openClassName */ trait DropdownButtonProps
     extends StObject
        with ButtonGroupProps {
     
     var align: js.UndefOr[Align] = js.undefined
     
-    var arrow: js.UndefOr[Boolean] = js.undefined
+    var arrow: js.UndefOr[Boolean | DropdownArrowOptions] = js.undefined
+    
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     var buttonsRender: js.UndefOr[js.Function1[/* buttons */ js.Array[ReactNode], js.Array[ReactNode]]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    var danger: js.UndefOr[Boolean] = js.undefined
+    
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -61,13 +68,23 @@ object dropdownButtonMod extends Shortcut {
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
+    var loading: js.UndefOr[Boolean | Delay] = js.undefined
+    
     var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
     var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
+    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+    
+    /**
+      * @deprecated `onVisibleChange` is deprecated which will be removed in next major version. Please
+      *   use `onOpenChange` instead.
+      */
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var open: js.UndefOr[Boolean] = js.undefined
     
     var openClassName: js.UndefOr[String] = js.undefined
     
@@ -87,6 +104,10 @@ object dropdownButtonMod extends Shortcut {
     
     var `type`: js.UndefOr[DropdownButtonType] = js.undefined
     
+    /**
+      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
+      *   `open` instead.
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownButtonProps {
@@ -102,17 +123,25 @@ object dropdownButtonMod extends Shortcut {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: Boolean | DropdownArrowOptions): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
       inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+      
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setButtonsRender(value: /* buttons */ js.Array[ReactNode] => js.Array[ReactNode]): Self = StObject.set(x, "buttonsRender", js.Any.fromFunction1(value))
       
       inline def setButtonsRenderUndefined: Self = StObject.set(x, "buttonsRender", js.undefined)
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setDanger(value: Boolean): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
+      
+      inline def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
+      
+      inline def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -138,6 +167,10 @@ object dropdownButtonMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
+      inline def setLoading(value: Boolean | Delay): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      
       inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
       inline def setMouseEnterDelayUndefined: Self = StObject.set(x, "mouseEnterDelay", js.undefined)
@@ -150,13 +183,21 @@ object dropdownButtonMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
+      inline def setOnOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
+      
       inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
       inline def setOpenClassName(value: String): Self = StObject.set(x, "openClassName", value.asInstanceOf[js.Any])
       
       inline def setOpenClassNameUndefined: Self = StObject.set(x, "openClassName", js.undefined)
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
       inline def setOverlay(value: ReactElement | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
@@ -186,7 +227,7 @@ object dropdownButtonMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setType(value: DropdownButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -199,18 +240,27 @@ object dropdownButtonMod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.antd.antdStrings.default
     - typings.antd.antdStrings.primary
     - typings.antd.antdStrings.ghost
     - typings.antd.antdStrings.dashed
+    - typings.antd.antdStrings.link
+    - typings.antd.antdStrings.text_
   */
   trait DropdownButtonType extends StObject
   object DropdownButtonType {
+    
+    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
     
     inline def dashed: typings.antd.antdStrings.dashed = "dashed".asInstanceOf[typings.antd.antdStrings.dashed]
     
     inline def ghost: typings.antd.antdStrings.ghost = "ghost".asInstanceOf[typings.antd.antdStrings.ghost]
     
+    inline def link: typings.antd.antdStrings.link = "link".asInstanceOf[typings.antd.antdStrings.link]
+    
     inline def primary: typings.antd.antdStrings.primary = "primary".asInstanceOf[typings.antd.antdStrings.primary]
+    
+    inline def text: text_ = "text".asInstanceOf[text_]
   }
   
   type _To = DropdownButtonInterface

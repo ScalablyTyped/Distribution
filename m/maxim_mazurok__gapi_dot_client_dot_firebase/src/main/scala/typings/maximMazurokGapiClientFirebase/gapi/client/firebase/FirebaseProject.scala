@@ -1,13 +1,30 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FirebaseProject extends StObject {
   
+  /**
+    * Set of user-defined annotations for the FirebaseProject as per [AIP-128](https://google.aip.dev/128#annotations). These annotations are intended solely for developers and
+    * client-side tools Firebase services will not mutate this annotation set.
+    */
+  var annotations: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientFirebase.maximMazurokGapiClientFirebaseStrings.FirebaseProject & TopLevel[Any]
+  ] = js.undefined
+  
   /** The user-assigned display name of the Project. */
   var displayName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This checksum is computed by the server based on the value of other fields, and may be sent on update requests to ensure the client has an up-to-date value before proceeding.
+    * [AIP-154](https://google.aip.dev/154#declarative-friendly-resources). This etag is strongly validated.
+    */
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the Project, in the format: projects/PROJECT_IDENTIFIER PROJECT_IDENTIFIER: the Project's [`ProjectNumber`](../projects#FirebaseProject.FIELDS.project_number)
@@ -17,18 +34,18 @@ trait FirebaseProject extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Immutable. A user-assigned unique identifier for the Project. This identifier may appear in URLs or names for some Firebase resources associated with the Project, but it should
+    * Output only. A user-assigned unique identifier for the Project. This identifier may appear in URLs or names for some Firebase resources associated with the Project, but it should
     * generally be treated as a convenience alias to reference the Project.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * Immutable. The globally unique, Google-assigned canonical identifier for the Project. Use this identifier when configuring integrations and/or making API calls to Firebase or
+    * Output only. The globally unique, Google-assigned canonical identifier for the Project. Use this identifier when configuring integrations and/or making API calls to Firebase or
     * third-party services.
     */
   var projectNumber: js.UndefOr[String] = js.undefined
   
-  /** The default Firebase resources associated with the Project. */
+  /** Output only. The default Firebase resources associated with the Project. */
   var resources: js.UndefOr[DefaultResources] = js.undefined
   
   /**
@@ -46,9 +63,21 @@ object FirebaseProject {
   
   extension [Self <: FirebaseProject](x: Self) {
     
+    inline def setAnnotations(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientFirebase.maximMazurokGapiClientFirebaseStrings.FirebaseProject & TopLevel[Any]
+    ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

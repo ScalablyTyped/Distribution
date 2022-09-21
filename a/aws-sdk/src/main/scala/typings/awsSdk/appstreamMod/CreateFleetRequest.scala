@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFleetRequest extends StObject {
   
   /**
-    * The desired capacity for the fleet.
+    * The desired capacity for the fleet. This is not allowed for Elastic fleets. For Elastic fleets, specify MaxConcurrentSessions instead.
     */
-  var ComputeCapacity: typings.awsSdk.appstreamMod.ComputeCapacity
+  var ComputeCapacity: js.UndefOr[typings.awsSdk.appstreamMod.ComputeCapacity] = js.undefined
   
   /**
     * The description to display.
@@ -27,7 +27,7 @@ trait CreateFleetRequest extends StObject {
   var DisplayName: js.UndefOr[typings.awsSdk.appstreamMod.DisplayName] = js.undefined
   
   /**
-    * The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. 
+    * The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. This is not allowed for Elastic fleets. 
     */
   var DomainJoinInfo: js.UndefOr[typings.awsSdk.appstreamMod.DomainJoinInfo] = js.undefined
   
@@ -62,9 +62,14 @@ trait CreateFleetRequest extends StObject {
   var ImageName: js.UndefOr[String] = js.undefined
   
   /**
-    * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.memory.z1d.large   stream.memory.z1d.xlarge   stream.memory.z1d.2xlarge   stream.memory.z1d.3xlarge   stream.memory.z1d.6xlarge   stream.memory.z1d.12xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics.g4dn.xlarge   stream.graphics.g4dn.2xlarge   stream.graphics.g4dn.4xlarge   stream.graphics.g4dn.8xlarge   stream.graphics.g4dn.12xlarge   stream.graphics.g4dn.16xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge  
+    * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.small   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.memory.z1d.large   stream.memory.z1d.xlarge   stream.memory.z1d.2xlarge   stream.memory.z1d.3xlarge   stream.memory.z1d.6xlarge   stream.memory.z1d.12xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics.g4dn.xlarge   stream.graphics.g4dn.2xlarge   stream.graphics.g4dn.4xlarge   stream.graphics.g4dn.8xlarge   stream.graphics.g4dn.12xlarge   stream.graphics.g4dn.16xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge   The following instance types are available for Elastic fleets:   stream.standard.small   stream.standard.medium  
     */
   var InstanceType: String
+  
+  /**
+    * The maximum concurrent sessions of the Elastic fleet. This is required for Elastic fleets, and not allowed for other fleet types.
+    */
+  var MaxConcurrentSessions: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum amount of time that a streaming session can remain active, in seconds. If users are still connected to a streaming instance five minutes before this limit is reached, they are prompted to save any open documents before being disconnected. After this time elapses, the instance is terminated and replaced by a new instance. Specify a value between 600 and 360000.
@@ -77,6 +82,16 @@ trait CreateFleetRequest extends StObject {
   var Name: typings.awsSdk.appstreamMod.Name
   
   /**
+    * The fleet platform. WINDOWS_SERVER_2019 and AMAZON_LINUX2 are supported for Elastic fleets. 
+    */
+  var Platform: js.UndefOr[PlatformType] = js.undefined
+  
+  /**
+    * The S3 location of the session scripts configuration zip file. This only applies to Elastic fleets.
+    */
+  var SessionScriptS3Location: js.UndefOr[S3Location] = js.undefined
+  
+  /**
     * The AppStream 2.0 view that is displayed to your users when they stream from the fleet. When APP is specified, only the windows of applications opened by users display. When DESKTOP is specified, the standard desktop that is provided by the operating system displays. The default value is APP.
     */
   var StreamView: js.UndefOr[typings.awsSdk.appstreamMod.StreamView] = js.undefined
@@ -87,20 +102,27 @@ trait CreateFleetRequest extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.appstreamMod.Tags] = js.undefined
   
   /**
-    * The VPC configuration for the fleet.
+    * The USB device filter strings that specify which USB devices a user can redirect to the fleet streaming session, when using the Windows native client. This is allowed but not required for Elastic fleets.
+    */
+  var UsbDeviceFilterStrings: js.UndefOr[typings.awsSdk.appstreamMod.UsbDeviceFilterStrings] = js.undefined
+  
+  /**
+    * The VPC configuration for the fleet. This is required for Elastic fleets, but not required for other fleet types. Elastic fleets require that you specify at least two subnets in different availability zones.
     */
   var VpcConfig: js.UndefOr[typings.awsSdk.appstreamMod.VpcConfig] = js.undefined
 }
 object CreateFleetRequest {
   
-  inline def apply(ComputeCapacity: ComputeCapacity, InstanceType: String, Name: Name): CreateFleetRequest = {
-    val __obj = js.Dynamic.literal(ComputeCapacity = ComputeCapacity.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+  inline def apply(InstanceType: String, Name: Name): CreateFleetRequest = {
+    val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetRequest]
   }
   
   extension [Self <: CreateFleetRequest](x: Self) {
     
     inline def setComputeCapacity(value: ComputeCapacity): Self = StObject.set(x, "ComputeCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setComputeCapacityUndefined: Self = StObject.set(x, "ComputeCapacity", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -144,11 +166,23 @@ object CreateFleetRequest {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
+    inline def setMaxConcurrentSessions(value: Integer): Self = StObject.set(x, "MaxConcurrentSessions", value.asInstanceOf[js.Any])
+    
+    inline def setMaxConcurrentSessionsUndefined: Self = StObject.set(x, "MaxConcurrentSessions", js.undefined)
+    
     inline def setMaxUserDurationInSeconds(value: Integer): Self = StObject.set(x, "MaxUserDurationInSeconds", value.asInstanceOf[js.Any])
     
     inline def setMaxUserDurationInSecondsUndefined: Self = StObject.set(x, "MaxUserDurationInSeconds", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    
+    inline def setSessionScriptS3Location(value: S3Location): Self = StObject.set(x, "SessionScriptS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setSessionScriptS3LocationUndefined: Self = StObject.set(x, "SessionScriptS3Location", js.undefined)
     
     inline def setStreamView(value: StreamView): Self = StObject.set(x, "StreamView", value.asInstanceOf[js.Any])
     
@@ -157,6 +191,12 @@ object CreateFleetRequest {
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setUsbDeviceFilterStrings(value: UsbDeviceFilterStrings): Self = StObject.set(x, "UsbDeviceFilterStrings", value.asInstanceOf[js.Any])
+    
+    inline def setUsbDeviceFilterStringsUndefined: Self = StObject.set(x, "UsbDeviceFilterStrings", js.undefined)
+    
+    inline def setUsbDeviceFilterStringsVarargs(value: UsbDeviceFilterString*): Self = StObject.set(x, "UsbDeviceFilterStrings", js.Array(value*))
     
     inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     

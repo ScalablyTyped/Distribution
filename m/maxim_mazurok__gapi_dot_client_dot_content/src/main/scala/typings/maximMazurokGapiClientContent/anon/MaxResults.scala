@@ -28,7 +28,10 @@ trait MaxResults extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of links to return in the response, used for pagination. */
+  /**
+    * The maximum number of links to return in the response, used for pagination. The minimum allowed value is 5 results per page. If provided value is lower than 5, it will be
+    * automatically increased to 5.
+    */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**

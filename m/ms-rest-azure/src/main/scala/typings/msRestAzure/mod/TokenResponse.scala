@@ -1,6 +1,5 @@
 package typings.msRestAzure.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object TokenResponse {
   inline def apply(
     accessToken: String,
     expiresIn: Double,
-    expiresOn: Date | String,
+    expiresOn: js.Date | String,
     resource: String,
     tokenType: String
   ): TokenResponse = {

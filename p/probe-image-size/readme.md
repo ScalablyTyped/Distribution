@@ -1,7 +1,7 @@
 
 # Scala.js typings for probe-image-size
 
-Typings are for version 5.0
+Typings are for version 7.2
 
 ## Library description:
 Get image size without full download (JPG, GIF, PNG, WebP, BMP, TIFF, PSD)
@@ -10,10 +10,10 @@ Get image size without full download (JPG, GIF, PNG, WebP, BMP, TIFF, PSD)
 | ------------------ | :-------------: |
 | Full name          | probe-image-size |
 | Keywords           | image, size, jpg, jpeg, ico, gif, png, webp, tiff, bmp, svg, psd |
-| # releases         | 6 |
-| # dependents       | 95 |
-| # downloads        | 20893376 |
-| # stars            | 3 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 2308511.3333333335 |
+| # stars            | 767.0 |
 
 ## Links
 - [Homepage](https://github.com/nodeca/probe-image-size#readme)

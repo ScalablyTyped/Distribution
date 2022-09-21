@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("hexo-bunyan", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.bunyan.mod.^ {
     def this(options: LoggerOptions) = this()
   }
@@ -40,14 +40,14 @@ object mod {
   
   @JSImport("hexo-bunyan", "RingBuffer")
   @js.native
-  class RingBuffer protected ()
+  open class RingBuffer protected ()
     extends typings.bunyan.mod.RingBuffer {
     def this(options: RingBufferOptions) = this()
   }
   
   @JSImport("hexo-bunyan", "RotatingFileStream")
   @js.native
-  class RotatingFileStream protected ()
+  open class RotatingFileStream protected ()
     extends typings.bunyan.mod.RotatingFileStream {
     def this(options: RotatingFileStreamOptions) = this()
   }
@@ -102,7 +102,7 @@ object mod {
   
   inline def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
+  inline def safeCycles(): js.Function2[/* key */ String, /* value */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ Any, Any]]
   
   @JSImport("hexo-bunyan", "stdSerializers")
   @js.native

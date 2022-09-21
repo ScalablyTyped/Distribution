@@ -28,8 +28,8 @@ object filterStaticMod {
     
     def buildSelect(table: TElement, column: Double, options: String, replace: Boolean): Unit = js.native
     def buildSelect(table: TElement, column: Double, options: String, replace: Boolean, visibleOnly: Boolean): Unit = js.native
-    def buildSelect(table: TElement, column: Double, options: js.Array[js.Any], replace: Boolean): Unit = js.native
-    def buildSelect(table: TElement, column: Double, options: js.Array[js.Any], replace: Boolean, visibleOnly: Boolean): Unit = js.native
+    def buildSelect(table: TElement, column: Double, options: js.Array[Any], replace: Boolean): Unit = js.native
+    def buildSelect(table: TElement, column: Double, options: js.Array[Any], replace: Boolean, visibleOnly: Boolean): Unit = js.native
     def buildSelect(table: TElement, column: Double, options: JQuery[HTMLElement], replace: Boolean): Unit = js.native
     def buildSelect(
       table: TElement,
@@ -58,11 +58,11 @@ object filterStaticMod {
       * @param visibleOnly
       * A value indicating whether the new options should only include visible row-values if no `options` are defined.
       */
-    def buildSelect(table: JQuery[TElement], column: Double, options: js.Array[js.Any], replace: Boolean): Unit = js.native
+    def buildSelect(table: JQuery[TElement], column: Double, options: js.Array[Any], replace: Boolean): Unit = js.native
     def buildSelect(
       table: JQuery[TElement],
       column: Double,
-      options: js.Array[js.Any],
+      options: js.Array[Any],
       replace: Boolean,
       visibleOnly: Boolean
     ): Unit = js.native
@@ -115,9 +115,9 @@ object filterStaticMod {
     def getOptions(table: JQuery[TElement], column: Double): js.Array[String] = js.native
     def getOptions(table: JQuery[TElement], column: Double, visibleOnly: Boolean): js.Array[String] = js.native
     
-    def processOptions(table: TElement, column: Double, options: js.Array[js.Any]): js.Array[String] = js.native
-    def processOptions(table: TElement, column: Null, options: js.Array[js.Any]): js.Array[String] = js.native
-    def processOptions(table: TElement, column: Unit, options: js.Array[js.Any]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: Double, options: js.Array[Any]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: Null, options: js.Array[Any]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: Unit, options: js.Array[Any]): js.Array[String] = js.native
     /**
       * Processes and sorts the options according to the options of the specified `column`.
       *
@@ -130,8 +130,8 @@ object filterStaticMod {
       * @param options
       * The options to add.
       */
-    def processOptions(table: JQuery[TElement], column: Double, options: js.Array[js.Any]): js.Array[String] = js.native
-    def processOptions(table: JQuery[TElement], column: Null, options: js.Array[js.Any]): js.Array[String] = js.native
-    def processOptions(table: JQuery[TElement], column: Unit, options: js.Array[js.Any]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: Double, options: js.Array[Any]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: Null, options: js.Array[Any]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: Unit, options: js.Array[Any]): js.Array[String] = js.native
   }
 }

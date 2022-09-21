@@ -9,10 +9,10 @@ object mod {
   /**
     * Pass views `dir` and `opts` to return a render function.
     */
-  inline def apply(): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
-  inline def apply(dir: String): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
-  inline def apply(dir: String, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
-  inline def apply(dir: Unit, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], js.Any]]
+  inline def apply(): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any]]
+  inline def apply(dir: String): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any]]
+  inline def apply(dir: String, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any]]
+  inline def apply(dir: Unit, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], Any]]
   
   @JSImport("co-views", JSImport.Namespace)
   @js.native

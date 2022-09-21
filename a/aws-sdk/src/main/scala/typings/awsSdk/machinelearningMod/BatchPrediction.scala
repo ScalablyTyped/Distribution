@@ -21,14 +21,14 @@ trait BatchPrediction extends StObject {
   /**
     * The time that the BatchPrediction was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The AWS user account that invoked the BatchPrediction. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
     */
   var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.undefined
   
-  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
+  var FinishedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location of the data file or directory in Amazon Simple Storage Service (Amazon S3).
@@ -40,7 +40,7 @@ trait BatchPrediction extends StObject {
   /**
     * The time of the most recent edit to the BatchPrediction. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the MLModel that generated predictions for the BatchPrediction request.
@@ -62,10 +62,10 @@ trait BatchPrediction extends StObject {
     */
   var OutputUri: js.UndefOr[S3Url] = js.undefined
   
-  var StartedAt: js.UndefOr[EpochTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the BatchPrediction. This element can have one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to generate predictions for a batch of observations.  INPROGRESS - The process is underway.  FAILED - The request to perform a batch prediction did not run to completion. It is not usable.  COMPLETED - The batch prediction process completed successfully.  DELETED - The BatchPrediction is marked as deleted. It is not usable. 
+    * The status of the BatchPrediction. This element can have one of the following values:    PENDING - Amazon Machine Learning (Amazon ML) submitted a request to generate predictions for a batch of observations.    INPROGRESS - The process is underway.    FAILED - The request to perform a batch prediction did not run to completion. It is not usable.    COMPLETED - The batch prediction process completed successfully.    DELETED - The BatchPrediction is marked as deleted. It is not usable.  
     */
   var Status: js.UndefOr[EntityStatus] = js.undefined
   
@@ -92,7 +92,7 @@ object BatchPrediction {
     
     inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -100,7 +100,7 @@ object BatchPrediction {
     
     inline def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
     
-    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
@@ -112,7 +112,7 @@ object BatchPrediction {
     
     inline def setInvalidRecordCountUndefined: Self = StObject.set(x, "InvalidRecordCount", js.undefined)
     
-    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
@@ -132,7 +132,7 @@ object BatchPrediction {
     
     inline def setOutputUriUndefined: Self = StObject.set(x, "OutputUri", js.undefined)
     
-    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

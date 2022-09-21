@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RegisterDomainResponseStatus")
 @js.native
-class RegisterDomainResponseStatus () extends StObject
+open class RegisterDomainResponseStatus () extends StObject

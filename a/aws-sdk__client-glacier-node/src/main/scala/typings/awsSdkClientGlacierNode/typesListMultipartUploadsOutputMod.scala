@@ -48,7 +48,7 @@ object typesListMultipartUploadsOutputMod {
       
       inline def setUploadsListUndefined: Self = StObject.set(x, "UploadsList", js.undefined)
       
-      inline def setUploadsListVarargs(value: UnmarshalledUploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value :_*))
+      inline def setUploadsListVarargs(value: UnmarshalledUploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value*))
     }
   }
 }

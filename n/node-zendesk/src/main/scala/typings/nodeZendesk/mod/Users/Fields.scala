@@ -3,7 +3,6 @@ package typings.nodeZendesk.mod.Users
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodeZendesk.mod.ZendeskCallback
 import typings.nodeZendesk.mod.ZendeskID
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,25 +29,25 @@ object Fields {
     }
   }
   
-  type CustomFieldOptions = StringDictionary[js.Any]
+  type CustomFieldOptions = StringDictionary[Any]
   
   @js.native
   trait Methods extends StObject {
     
-    def create(field: CreateUserField): js.Promise[js.Any] = js.native
-    def create(field: CreateUserField, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def create(field: CreateUserField): js.Promise[Any] = js.native
+    def create(field: CreateUserField, cb: ZendeskCallback[Any, Any]): Any = js.native
     
-    def delete(fieldId: ZendeskID): js.Promise[js.Any] = js.native
-    def delete(fieldId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def delete(fieldId: ZendeskID): js.Promise[Any] = js.native
+    def delete(fieldId: ZendeskID, cb: ZendeskCallback[Any, Any]): Any = js.native
     
-    def list(): js.Promise[js.Any] = js.native
-    def list(cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def list(): js.Promise[Any] = js.native
+    def list(cb: ZendeskCallback[Any, Any]): Any = js.native
     
-    def show(fieldId: ZendeskID): js.Promise[js.Any] = js.native
-    def show(fieldId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def show(fieldId: ZendeskID): js.Promise[Any] = js.native
+    def show(fieldId: ZendeskID, cb: ZendeskCallback[Any, Any]): Any = js.native
     
-    def update(fieldId: ZendeskID, field: js.Any): js.Promise[js.Any] = js.native
-    def update(fieldId: ZendeskID, field: js.Any, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def update(fieldId: ZendeskID, field: Any): js.Promise[Any] = js.native
+    def update(fieldId: ZendeskID, field: Any, cb: ZendeskCallback[Any, Any]): Any = js.native
   }
   
   /**
@@ -58,7 +57,7 @@ object Fields {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var created_at: js.UndefOr[Date] = js.undefined
+    var created_at: js.UndefOr[js.Date] = js.undefined
     
     var custom_field_options: js.UndefOr[js.Array[CustomFieldOptions]] = js.undefined
     
@@ -84,7 +83,7 @@ object Fields {
     
     val `type`: js.UndefOr[UserFieldType] = js.undefined
     
-    var updated_at: js.UndefOr[Date] = js.undefined
+    var updated_at: js.UndefOr[js.Date] = js.undefined
     
     val url: js.UndefOr[String] = js.undefined
   }
@@ -101,7 +100,7 @@ object Fields {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
       
@@ -109,7 +108,7 @@ object Fields {
       
       inline def setCustom_field_optionsUndefined: Self = StObject.set(x, "custom_field_options", js.undefined)
       
-      inline def setCustom_field_optionsVarargs(value: CustomFieldOptions*): Self = StObject.set(x, "custom_field_options", js.Array(value :_*))
+      inline def setCustom_field_optionsVarargs(value: CustomFieldOptions*): Self = StObject.set(x, "custom_field_options", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -153,7 +152,7 @@ object Fields {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
       

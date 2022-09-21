@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.ViewModel")
 @js.native
-class ViewModel ()
+open class ViewModel ()
   extends StObject
      with typings.heremaps.H.map.ViewModel
 object ViewModel {
@@ -25,17 +25,17 @@ object ViewModel {
     */
   @JSGlobal("H.map.ViewModel.UpdateEvent")
   @js.native
-  class UpdateEvent protected ()
+  open class UpdateEvent protected ()
     extends StObject
        with typings.heremaps.H.map.ViewModel.UpdateEvent {
     /**
       * Constructor
       * @param requested {any}
       */
-    def this(requested: js.Any) = this()
+    def this(requested: Any) = this()
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -53,7 +53,7 @@ object ViewModel {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

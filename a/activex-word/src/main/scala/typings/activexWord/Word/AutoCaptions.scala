@@ -14,9 +14,9 @@ trait AutoCaptions extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): AutoCaption
+  def Item(Index: Any): AutoCaption
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.AutoCaptions_typekey")
   var WordDotAutoCaptions_typekey: AutoCaptions
@@ -28,8 +28,8 @@ object AutoCaptions {
     CancelAutoInsert: () => Unit,
     Count: Double,
     Creator: Double,
-    Item: js.Any => AutoCaption,
-    Parent: js.Any,
+    Item: Any => AutoCaption,
+    Parent: Any,
     WordDotAutoCaptions_typekey: AutoCaptions
   ): AutoCaptions = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], CancelAutoInsert = js.Any.fromFunction0(CancelAutoInsert), Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object AutoCaptions {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => AutoCaption): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => AutoCaption): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotAutoCaptions_typekey(value: AutoCaptions): Self = StObject.set(x, "Word.AutoCaptions_typekey", value.asInstanceOf[js.Any])
   }

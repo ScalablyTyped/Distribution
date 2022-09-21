@@ -28,7 +28,7 @@ object ReportRequest {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: AttributeContext*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: AttributeContext*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     

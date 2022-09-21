@@ -1,6 +1,5 @@
 package typings.html5plus
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var popover: js.UndefOr[js.Any] = js.undefined
+  var popover: js.UndefOr[Any] = js.undefined
   
   /**
     * 时间选择对话框默认显示的时间
@@ -35,7 +34,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var time: js.UndefOr[Date] = js.undefined
+  var time: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 时间选择对话框显示的标题
@@ -58,11 +57,11 @@ object PlusNativeUIPickTimeOption {
     
     inline def setIs24HourUndefined: Self = StObject.set(x, "is24Hour", js.undefined)
     
-    inline def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     

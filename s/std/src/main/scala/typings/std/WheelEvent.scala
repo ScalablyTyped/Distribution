@@ -10,17 +10,24 @@ trait WheelEvent
   extends StObject
      with MouseEvent {
   
+  /* standard dom */
   val DOM_DELTA_LINE: Double = js.native
   
+  /* standard dom */
   val DOM_DELTA_PAGE: Double = js.native
   
+  /* standard dom */
   val DOM_DELTA_PIXEL: Double = js.native
   
+  /* standard dom */
   val deltaMode: Double = js.native
   
+  /* standard dom */
   val deltaX: Double = js.native
   
+  /* standard dom */
   val deltaY: Double = js.native
   
+  /* standard dom */
   val deltaZ: Double = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TableHeaderProps extends StObject {
   
-  var columnData: js.UndefOr[js.Any] = js.undefined
+  var columnData: js.UndefOr[Any] = js.undefined
   
   var dataKey: String
   
@@ -28,7 +28,7 @@ object TableHeaderProps {
   
   extension [Self <: TableHeaderProps](x: Self) {
     
-    inline def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+    inline def setColumnData(value: Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     inline def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     

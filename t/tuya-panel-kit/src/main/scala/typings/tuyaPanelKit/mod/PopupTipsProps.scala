@@ -6,6 +6,7 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.ModalPropsAndroid
 import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.PointerEvents
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.Touchable
 import typings.reactNative.mod.ViewPropsAndroid
@@ -54,10 +55,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with ViewPropsIOS
      with GestureResponderHandlers
      with Touchable
+     with PointerEvents
      with AccessibilityProps {
   
+  /**
+    * @language zh-CN
+    * @description 当前的 idx
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description current idx
+    * @defaultValue undefined
+    */
   var activeIdx: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description modal默认出现的位置
+    * @defaultValue 'bottom'
+    */
+  /**
+    * @language en-US
+    * @description The default position of the mask
+    * @defaultValue 'bottom'
+    */
   var alignContainer: js.UndefOr[top | center | bottom] = js.undefined
   
   /**
@@ -65,6 +87,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var animated: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description modal出现的动画效果
+    * @defaultValue 'fade
+    */
+  /**
+    * @language en-US
+    * @description The animation effect of the mask
+    * @defaultValue 'fade'
+    */
   var animationType: js.UndefOr[fade_ | none_] = js.undefined
   
   /**
@@ -79,10 +111,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否有遮罩层
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether there is a mask layer
+    * @defaultValue true
+    */
   var mask: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 遮罩层样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Style of the mask layer
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Modal 弹出内容的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The style of modal pop-up content
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var modalChildStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
@@ -90,6 +156,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var nativeID: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Modal 组件销毁回调事件，一般用于在弹窗销毁后跳转新的 native 页面。platform: iOS
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Modal component destruction callback event is generally used to jump to a new native page after the pop-up window is destroyed. platform: iOS
+    * @defaultValue undefined
+    */
   var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
@@ -99,25 +175,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 点击遮罩回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of clicking mask
+    * @defaultValue () => {}
+    */
   var onMaskPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The `onOrientationChange` callback is called when the orientation changes while the modal is being displayed.
     * The orientation provided is only 'portrait' or 'landscape'. This callback is also called on initial render, regardless of the current orientation.
     */
-  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
+  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   /**
-    * The `onRequestClose` prop allows passing a function that will be called once the modal has been dismissed.
-    * _On the Android platform, this is a required function._
+    * The `onRequestClose` callback is called when the user taps the hardware back button on Android or the menu button on Apple TV.
+    *
+    * This is required on Apple TV and Android.
     */
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRequestClose: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   /**
     * The `onShow` prop allows passing a function that will be called once the modal has been shown.
     */
-  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否只显示最后一个弹出的 modal
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether to show only the last pop-up modal
+    * @defaultValue true
+    */
   var onlyLastModalVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -181,8 +278,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否弹出键盘自适应
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to pop up the keyboard adaptive
+    * @defaultValue false
+    */
   var useKeyboardView: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否显示
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether it is visible or not
+    * @defaultValue true
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PopupTipsProps {
@@ -246,15 +363,15 @@ object PopupTipsProps {
     
     inline def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
     
-    inline def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
+    inline def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
     
     inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
     
-    inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+    inline def setOnRequestClose(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
     
     inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
-    inline def setOnShow(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
@@ -288,7 +405,7 @@ object PopupTipsProps {
     
     inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
     
-    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
     
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait FileUploadedEventUIParam extends StObject {
   /**
     * Gets reference to the fileInfo object - containing information for  fileName, fileSize, serverMessage(if returned from server side), etc.
     */
-  var fileInfo: js.UndefOr[js.Any] = js.undefined
+  var fileInfo: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the name of the uploaded file.
@@ -24,7 +24,7 @@ trait FileUploadedEventUIParam extends StObject {
   /**
     * Gets the igUpload widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the file size of the uploaded file.
@@ -44,7 +44,7 @@ object FileUploadedEventUIParam {
     
     inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    inline def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+    inline def setFileInfo(value: Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
     
     inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
     
@@ -52,7 +52,7 @@ object FileUploadedEventUIParam {
     
     inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

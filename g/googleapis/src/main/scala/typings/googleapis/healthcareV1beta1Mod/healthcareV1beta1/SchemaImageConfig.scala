@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies how de-identification of image pixel should be handled.
-  */
 trait SchemaImageConfig extends StObject {
   
   /**
     * Determines how to redact text from image.
     */
-  var textRedactionMode: js.UndefOr[String] = js.undefined
+  var textRedactionMode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaImageConfig {
   
@@ -24,6 +21,8 @@ object SchemaImageConfig {
   extension [Self <: SchemaImageConfig](x: Self) {
     
     inline def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTextRedactionModeNull: Self = StObject.set(x, "textRedactionMode", null)
     
     inline def setTextRedactionModeUndefined: Self = StObject.set(x, "textRedactionMode", js.undefined)
   }

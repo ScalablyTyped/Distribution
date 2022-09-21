@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Queue")
 @js.native
-class Queue protected () extends StObject {
-  def this(concurrency: js.Any) = this()
+open class Queue protected () extends StObject {
+  def this(concurrency: Any) = this()
   
-  def add(fn: js.Any): Unit = js.native
+  def add(fn: Any): Unit = js.native
   
-  def go(): js.Any = js.native
+  def go(): Any = js.native
 }

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnockoutStatic extends StObject {
   
   def evaluateAsynchronously(evaluator: js.Function): Double = js.native
-  def evaluateAsynchronously(evaluator: js.Function, timeout: js.Any): Double = js.native
+  def evaluateAsynchronously(evaluator: js.Function, timeout: Any): Double = js.native
   
-  def ignoreDependencies(callback: js.Function, callbackTarget: js.Any): js.Any = js.native
-  def ignoreDependencies(callback: js.Function, callbackTarget: js.Any, callbackArgs: js.Array[js.Any]): js.Any = js.native
+  def ignoreDependencies(callback: js.Function, callbackTarget: Any): Any = js.native
+  def ignoreDependencies(callback: js.Function, callbackTarget: Any, callbackArgs: js.Array[Any]): Any = js.native
   
   def processAllDeferredBindingUpdates(): Unit = js.native
   

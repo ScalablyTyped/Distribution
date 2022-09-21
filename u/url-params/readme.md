@@ -11,9 +11,9 @@ Alter the query string parameters of url.
 | Full name          | url-params |
 | Keywords           | url, query, queryString |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 10875 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 712.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/AtenDesignGroup/url-params#readme)

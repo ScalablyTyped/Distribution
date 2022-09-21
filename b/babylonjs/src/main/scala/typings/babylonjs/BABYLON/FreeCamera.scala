@@ -9,25 +9,28 @@ trait FreeCamera
   extends StObject
      with TargetCamera {
   
-  /** @hidden */
+  /**
+    * @param displacement
+    * @hidden
+    */
   def _collideWithWorld(displacement: Vector3): Unit = js.native
   
-  /* private */ var _collider: js.Any = js.native
+  /* private */ var _collider: Any = js.native
   
-  /* private */ var _collisionMask: js.Any = js.native
+  /* private */ var _collisionMask: Any = js.native
   
-  /* private */ var _diffPosition: js.Any = js.native
+  /* private */ var _diffPosition: Any = js.native
   
   /** @hidden */
   var _localDirection: Vector3 = js.native
   
-  /* private */ var _needMoveForGravity: js.Any = js.native
+  /* private */ var _needMoveForGravity: Any = js.native
   
-  /* private */ var _newPosition: js.Any = js.native
+  /* private */ var _newPosition: Any = js.native
   
-  /* private */ var _oldPosition: js.Any = js.native
+  /* private */ var _oldPosition: Any = js.native
   
-  /* private */ var _onCollisionPositionChange: js.Any = js.native
+  /* private */ var _onCollisionPositionChange: Any = js.native
   
   /** @hidden */
   var _transformedDirection: Vector3 = js.native
@@ -102,6 +105,18 @@ trait FreeCamera
     */
   def keysRight: js.Array[Double] = js.native
   def keysRight_=(value: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
+    */
+  def keysRotateLeft: js.Array[Double] = js.native
+  def keysRotateLeft_=(value: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Gets or Set the list of keyboard keys used to control the right rotation move of the camera.
+    */
+  def keysRotateRight: js.Array[Double] = js.native
+  def keysRotateRight_=(value: js.Array[Double]): Unit = js.native
   
   /**
     * Gets or Set the list of keyboard keys used to control the forward move of the camera.

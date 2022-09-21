@@ -10,10 +10,10 @@ object phonelinkOffMod {
   
   @JSImport("material-ui/svg-icons/hardware/phonelink-off", JSImport.Default)
   @js.native
-  class default () extends HardwarePhonelinkOff
+  open class default () extends HardwarePhonelinkOff
   
   @JSImport("material-ui/svg-icons/hardware/phonelink-off", "HardwarePhonelinkOff")
   @js.native
-  class HardwarePhonelinkOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwarePhonelinkOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

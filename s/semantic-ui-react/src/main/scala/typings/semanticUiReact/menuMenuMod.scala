@@ -5,10 +5,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -37,10 +37,9 @@ object menuMenuMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/Menu", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[MenuProps, ComponentState, js.Any] {
+  open class default protected () extends Component[MenuProps, ComponentState, Any] {
     def this(props: MenuProps) = this()
-    def this(props: MenuProps, context: js.Any) = this()
+    def this(props: MenuProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -51,19 +50,17 @@ object menuMenuMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/Menu", "default.Header")
     @js.native
-    class Header protected ()
-      extends Component[MenuHeaderProps, ComponentState, js.Any] {
+    open class Header protected () extends Component[MenuHeaderProps, ComponentState, Any] {
       def this(props: MenuHeaderProps) = this()
-      def this(props: MenuHeaderProps, context: js.Any) = this()
+      def this(props: MenuHeaderProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/Menu", "default.Item")
     @js.native
-    class Item protected ()
-      extends Component[MenuItemProps, ComponentState, js.Any] {
+    open class Item protected () extends Component[MenuItemProps, ComponentState, Any] {
       def this(props: MenuItemProps) = this()
-      def this(props: MenuItemProps, context: js.Any) = this()
+      def this(props: MenuItemProps, context: Any) = this()
     }
     
     type _To = MenuComponent
@@ -81,13 +78,13 @@ object menuMenuMod {
     
     var Item: ComponentClass[MenuItemProps, ComponentState] = js.native
     
-    var Menu: StatelessComponent[MenuMenuProps] = js.native
+    var Menu: FC[MenuMenuProps] = js.native
   }
   
   trait MenuProps
     extends StObject
        with StrictMenuProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MenuProps {
     
     inline def apply(): MenuProps = {
@@ -102,7 +99,7 @@ object menuMenuMod {
     var activeIndex: js.UndefOr[Double | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A menu may be attached to other content segments. */
     var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
@@ -197,7 +194,7 @@ object menuMenuMod {
       
       inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -253,7 +250,7 @@ object menuMenuMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[MenuItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[MenuItemProps]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnItemClick(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ MenuItemProps) => Unit

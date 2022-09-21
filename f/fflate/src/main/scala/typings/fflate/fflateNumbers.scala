@@ -27,6 +27,14 @@ object fflateNumbers {
   inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
+  sealed trait `13` extends StObject
+  inline def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @js.native
+  sealed trait `14` extends StObject
+  inline def `14`: `14` = 14.asInstanceOf[`14`]
+  
+  @js.native
   sealed trait `2` extends StObject
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   

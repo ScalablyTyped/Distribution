@@ -1,7 +1,7 @@
 package typings.reactVirtualized
 
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import typings.reactVirtualized.anon.CellDataGetter
 import typings.reactVirtualized.anon.CellRenderer
 import typings.reactVirtualized.anon.ClassName
@@ -26,16 +26,45 @@ object tableMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("react-virtualized/dist/commonjs/Table", JSImport.Default)
+  @js.native
+  open class default protected ()
+    extends typings.reactVirtualized.esTableMod.Table {
+    def this(props: TableProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/commonjs/Table", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/Table", "default.defaultProps")
+    @js.native
+    def defaultProps: DisableHeader = js.native
+    inline def defaultProps_=(x: DisableHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-virtualized/dist/commonjs/Table", "default.propTypes")
+    @js.native
+    def propTypes: ClassName = js.native
+    inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("react-virtualized/dist/commonjs/Table", "Column")
   @js.native
-  class Column protected ()
+  open class Column protected ()
     extends typings.reactVirtualized.esTableMod.Column {
     def this(props: ColumnProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnProps, context: js.Any) = this()
+    def this(props: ColumnProps, context: Any) = this()
   }
   /* static members */
   object Column {
@@ -61,18 +90,18 @@ object tableMod {
   
   @JSImport("react-virtualized/dist/commonjs/Table", "SortIndicator")
   @js.native
-  val SortIndicator: StatelessComponent[typings.reactVirtualized.anon.SortDirection] = js.native
+  val SortIndicator: FunctionComponent[typings.reactVirtualized.anon.SortDirection] = js.native
   
   @JSImport("react-virtualized/dist/commonjs/Table", "Table")
   @js.native
-  class Table protected ()
+  open class Table protected ()
     extends typings.reactVirtualized.esTableMod.Table {
     def this(props: TableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableProps, context: js.Any) = this()
+    def this(props: TableProps, context: Any) = this()
   }
   /* static members */
   object Table {

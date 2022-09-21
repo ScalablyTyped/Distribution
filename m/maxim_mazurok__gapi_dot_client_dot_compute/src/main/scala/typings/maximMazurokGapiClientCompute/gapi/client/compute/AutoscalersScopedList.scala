@@ -26,7 +26,7 @@ object AutoscalersScopedList {
     
     inline def setAutoscalersUndefined: Self = StObject.set(x, "autoscalers", js.undefined)
     
-    inline def setAutoscalersVarargs(value: Autoscaler*): Self = StObject.set(x, "autoscalers", js.Array(value :_*))
+    inline def setAutoscalersVarargs(value: Autoscaler*): Self = StObject.set(x, "autoscalers", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

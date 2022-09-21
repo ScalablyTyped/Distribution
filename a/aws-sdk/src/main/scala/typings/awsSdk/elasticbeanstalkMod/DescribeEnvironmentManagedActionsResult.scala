@@ -24,6 +24,6 @@ object DescribeEnvironmentManagedActionsResult {
     
     inline def setManagedActionsUndefined: Self = StObject.set(x, "ManagedActions", js.undefined)
     
-    inline def setManagedActionsVarargs(value: ManagedAction*): Self = StObject.set(x, "ManagedActions", js.Array(value :_*))
+    inline def setManagedActionsVarargs(value: ManagedAction*): Self = StObject.set(x, "ManagedActions", js.Array(value*))
   }
 }

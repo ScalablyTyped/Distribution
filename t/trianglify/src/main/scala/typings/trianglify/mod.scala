@@ -86,7 +86,7 @@ object mod {
         
         inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
         
-        inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+        inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
         
         inline def setSeed(value: Double | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
         
@@ -110,13 +110,13 @@ object mod {
         
         inline def setX_colorsUndefined: Self = StObject.set(x, "x_colors", js.undefined)
         
-        inline def setX_colorsVarargs(value: String*): Self = StObject.set(x, "x_colors", js.Array(value :_*))
+        inline def setX_colorsVarargs(value: String*): Self = StObject.set(x, "x_colors", js.Array(value*))
         
         inline def setY_colors(value: `false` | String | js.Array[String]): Self = StObject.set(x, "y_colors", value.asInstanceOf[js.Any])
         
         inline def setY_colorsUndefined: Self = StObject.set(x, "y_colors", js.undefined)
         
-        inline def setY_colorsVarargs(value: String*): Self = StObject.set(x, "y_colors", js.Array(value :_*))
+        inline def setY_colorsVarargs(value: String*): Self = StObject.set(x, "y_colors", js.Array(value*))
       }
     }
     
@@ -130,7 +130,7 @@ object mod {
       
       def png(): String = js.native
       
-      var polys: js.Any = js.native
+      var polys: Any = js.native
       
       def svg(): SVGElement = js.native
       def svg(opts: SVGOptions): SVGElement = js.native

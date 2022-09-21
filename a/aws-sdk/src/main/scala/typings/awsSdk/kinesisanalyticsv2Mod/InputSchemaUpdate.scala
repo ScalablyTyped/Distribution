@@ -34,7 +34,7 @@ object InputSchemaUpdate {
     
     inline def setRecordColumnUpdatesUndefined: Self = StObject.set(x, "RecordColumnUpdates", js.undefined)
     
-    inline def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumnUpdates", js.Array(value :_*))
+    inline def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumnUpdates", js.Array(value*))
     
     inline def setRecordEncodingUpdate(value: RecordEncoding): Self = StObject.set(x, "RecordEncodingUpdate", value.asInstanceOf[js.Any])
     

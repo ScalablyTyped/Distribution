@@ -8,7 +8,7 @@ trait SparklineOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var axisDefaults: js.UndefOr[js.Any] = js.undefined
+  var axisDefaults: js.UndefOr[Any] = js.undefined
   
   var axisLabelClick: js.UndefOr[js.Function1[/* e */ SparklineAxisLabelClickEvent, Unit]] = js.undefined
   
@@ -16,11 +16,11 @@ trait SparklineOptions extends StObject {
   
   var chartArea: js.UndefOr[SparklineChartArea] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataBound: js.UndefOr[js.Function1[/* e */ SparklineEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   var drag: js.UndefOr[js.Function1[/* e */ SparklineDragEvent, Unit]] = js.undefined
   
@@ -48,7 +48,7 @@ trait SparklineOptions extends StObject {
   
   var seriesClick: js.UndefOr[js.Function1[/* e */ SparklineSeriesClickEvent, Unit]] = js.undefined
   
-  var seriesColors: js.UndefOr[js.Any] = js.undefined
+  var seriesColors: js.UndefOr[Any] = js.undefined
   
   var seriesDefaults: js.UndefOr[SparklineSeriesDefaults] = js.undefined
   
@@ -87,7 +87,7 @@ object SparklineOptions {
     
     inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
-    inline def setAxisDefaults(value: js.Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
+    inline def setAxisDefaults(value: Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
     
     inline def setAxisDefaultsUndefined: Self = StObject.set(x, "axisDefaults", js.undefined)
     
@@ -99,19 +99,19 @@ object SparklineOptions {
     
     inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
-    inline def setCategoryAxisVarargs(value: SparklineCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value :_*))
+    inline def setCategoryAxisVarargs(value: SparklineCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value*))
     
     inline def setChartArea(value: SparklineChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
     
     inline def setChartAreaUndefined: Self = StObject.set(x, "chartArea", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataBound(value: /* e */ SparklineEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -167,7 +167,7 @@ object SparklineOptions {
     
     inline def setSeriesClickUndefined: Self = StObject.set(x, "seriesClick", js.undefined)
     
-    inline def setSeriesColors(value: js.Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
+    inline def setSeriesColors(value: Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
     
     inline def setSeriesColorsUndefined: Self = StObject.set(x, "seriesColors", js.undefined)
     
@@ -189,7 +189,7 @@ object SparklineOptions {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: SparklineSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: SparklineSeriesItem*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
@@ -211,7 +211,7 @@ object SparklineOptions {
     
     inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
     
-    inline def setValueAxisVarargs(value: SparklineValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value :_*))
+    inline def setValueAxisVarargs(value: SparklineValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value*))
     
     inline def setZoom(value: /* e */ SparklineZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     

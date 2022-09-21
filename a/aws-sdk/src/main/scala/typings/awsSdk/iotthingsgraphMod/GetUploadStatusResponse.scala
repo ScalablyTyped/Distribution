@@ -9,7 +9,7 @@ trait GetUploadStatusResponse extends StObject {
   /**
     * The date at which the upload was created.
     */
-  var createdDate: Timestamp
+  var createdDate: js.Date
   
   /**
     * The reason for an upload failure.
@@ -43,20 +43,20 @@ trait GetUploadStatusResponse extends StObject {
 }
 object GetUploadStatusResponse {
   
-  inline def apply(createdDate: Timestamp, uploadId: UploadId, uploadStatus: UploadStatus): GetUploadStatusResponse = {
+  inline def apply(createdDate: js.Date, uploadId: UploadId, uploadStatus: UploadStatus): GetUploadStatusResponse = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], uploadStatus = uploadStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUploadStatusResponse]
   }
   
   extension [Self <: GetUploadStatusResponse](x: Self) {
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: StringList): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    inline def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value :_*))
+    inline def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value*))
     
     inline def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
     

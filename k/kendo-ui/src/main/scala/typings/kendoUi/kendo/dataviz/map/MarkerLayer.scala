@@ -13,14 +13,14 @@ trait MarkerLayer
   
   def clear(): Unit
   
-  var items: js.Any
+  var items: Any
   
   @JSName("options")
   var options_MarkerLayer: MarkerLayerOptions
   
   def remove(marker: Marker): Unit
   
-  def setDataSource(dataSource: js.Any): Unit
+  def setDataSource(dataSource: Any): Unit
 }
 object MarkerLayer {
   
@@ -28,11 +28,11 @@ object MarkerLayer {
     add: Marker => Unit,
     clear: () => Unit,
     hide: () => Unit,
-    items: js.Any,
+    items: Any,
     map: Map,
     options: MarkerLayerOptions,
     remove: Marker => Unit,
-    setDataSource: js.Any => Unit,
+    setDataSource: Any => Unit,
     show: () => Unit
   ): MarkerLayer = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), hide = js.Any.fromFunction0(hide), items = items.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), setDataSource = js.Any.fromFunction1(setDataSource), show = js.Any.fromFunction0(show))
@@ -45,12 +45,12 @@ object MarkerLayer {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: MarkerLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: Marker => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    inline def setSetDataSource(value: js.Any => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction1(value))
+    inline def setSetDataSource(value: Any => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction1(value))
   }
 }

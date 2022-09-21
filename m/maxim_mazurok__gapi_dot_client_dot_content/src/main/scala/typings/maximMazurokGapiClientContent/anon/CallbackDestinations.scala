@@ -78,7 +78,7 @@ object CallbackDestinations {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Get public Google Spreadsheets as plain JavaScript/JSON
 | ------------------ | :-------------: |
 | Full name          | gsheets |
 | Keywords           | google, spreadsheets, worksheets, sheets, json, cli |
-| # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 8365 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 919.3333333333334 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/interactivethings/gsheets)

@@ -16,6 +16,15 @@ trait WorkflowMetadata extends StObject {
   /** Output only. The create cluster operation metadata. */
   var createCluster: js.UndefOr[ClusterOperation] = js.undefined
   
+  /** Output only. DAG end time, only set for workflows with dag_timeout when DAG ends. */
+  var dagEndTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. DAG start time, only set for workflows with dag_timeout when DAG begins. */
+  var dagStartTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The timeout duration for the DAG of jobs, expressed in seconds (see JSON representation of duration (https://developers.google.com/protocol-buffers/docs/proto3#json)). */
+  var dagTimeout: js.UndefOr[String] = js.undefined
+  
   /** Output only. The delete cluster operation metadata. */
   var deleteCluster: js.UndefOr[ClusterOperation] = js.undefined
   
@@ -29,7 +38,7 @@ trait WorkflowMetadata extends StObject {
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. Workflow start time. */
@@ -69,6 +78,18 @@ object WorkflowMetadata {
     
     inline def setCreateClusterUndefined: Self = StObject.set(x, "createCluster", js.undefined)
     
+    inline def setDagEndTime(value: String): Self = StObject.set(x, "dagEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setDagEndTimeUndefined: Self = StObject.set(x, "dagEndTime", js.undefined)
+    
+    inline def setDagStartTime(value: String): Self = StObject.set(x, "dagStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setDagStartTimeUndefined: Self = StObject.set(x, "dagStartTime", js.undefined)
+    
+    inline def setDagTimeout(value: String): Self = StObject.set(x, "dagTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setDagTimeoutUndefined: Self = StObject.set(x, "dagTimeout", js.undefined)
+    
     inline def setDeleteCluster(value: ClusterOperation): Self = StObject.set(x, "deleteCluster", value.asInstanceOf[js.Any])
     
     inline def setDeleteClusterUndefined: Self = StObject.set(x, "deleteCluster", js.undefined)
@@ -84,7 +105,7 @@ object WorkflowMetadata {
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

@@ -2,10 +2,6 @@ package typings.walkSync
 
 import typings.minimatch.mod.IMinimatch
 import typings.minimatch.mod.IOptions
-import typings.std.Omit
-import typings.std.Partial
-import typings.std.Pick
-import typings.walkSync.anon.OptionalizeOptionsfs
 import typings.walkSync.anon.TypeoffsNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +11,7 @@ object mod {
   
   inline def apply(baseDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def apply(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(baseDir: String, inputOptions: OptionalizeOptionsfs): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(baseDir: String, inputOptions: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("walk-sync", JSImport.Namespace)
   @js.native
@@ -23,7 +19,7 @@ object mod {
   
   @JSImport("walk-sync", "Entry")
   @js.native
-  class Entry protected () extends StObject {
+  open class Entry protected () extends StObject {
     def this(relativePath: String, basePath: String, mode: Double, size: Double, mtime: Double) = this()
     
     var basePath: String = js.native
@@ -45,13 +41,11 @@ object mod {
   inline def entries(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   inline def entries(baseDir: String, inputOptions: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
-  type Optionalize[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Partial[Pick[T, K]])
-  
   trait Options extends StObject {
     
     var directories: js.UndefOr[Boolean] = js.undefined
     
-    var fs: TypeoffsNode
+    var fs: js.UndefOr[TypeoffsNode] = js.undefined
     
     var globOptions: js.UndefOr[IOptions] = js.undefined
     
@@ -63,8 +57,8 @@ object mod {
   }
   object Options {
     
-    inline def apply(fs: TypeoffsNode): Options = {
-      val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -76,6 +70,8 @@ object mod {
       
       inline def setFs(value: TypeoffsNode): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      
       inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
       inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
@@ -84,13 +80,13 @@ object mod {
       
       inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
       
-      inline def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value :_*))
+      inline def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value*))
       
       inline def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setIncludeBasePath(value: Boolean): Self = StObject.set(x, "includeBasePath", value.asInstanceOf[js.Any])
       

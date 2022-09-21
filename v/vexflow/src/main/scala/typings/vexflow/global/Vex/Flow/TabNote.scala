@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.TabNote")
 @js.native
-class TabNote protected ()
+open class TabNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TabNote {
   def this(tab_struct: Positions) = this()

@@ -42,7 +42,7 @@ object TypedLinkSpecifier {
     
     inline def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = StObject.set(x, "IdentityAttributeValues", value.asInstanceOf[js.Any])
     
-    inline def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "IdentityAttributeValues", js.Array(value :_*))
+    inline def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "IdentityAttributeValues", js.Array(value*))
     
     inline def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
     

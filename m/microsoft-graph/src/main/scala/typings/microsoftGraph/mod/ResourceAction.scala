@@ -9,7 +9,7 @@ trait ResourceAction extends StObject {
   // Allowed Actions
   var allowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  // Not Allowed Actions
+  // Not Allowed Actions.
   var notAllowedResourceActions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object ResourceAction {
@@ -27,7 +27,7 @@ object ResourceAction {
     
     inline def setAllowedResourceActionsUndefined: Self = StObject.set(x, "allowedResourceActions", js.undefined)
     
-    inline def setAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "allowedResourceActions", js.Array(value :_*))
+    inline def setAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "allowedResourceActions", js.Array(value*))
     
     inline def setNotAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notAllowedResourceActions", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object ResourceAction {
     
     inline def setNotAllowedResourceActionsUndefined: Self = StObject.set(x, "notAllowedResourceActions", js.undefined)
     
-    inline def setNotAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "notAllowedResourceActions", js.Array(value :_*))
+    inline def setNotAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "notAllowedResourceActions", js.Array(value*))
   }
 }

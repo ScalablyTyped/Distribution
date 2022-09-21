@@ -10,7 +10,7 @@ object physicsJointMod {
   
   @JSImport("babylonjs/Physics/physicsJoint", "DistanceJoint")
   @js.native
-  class DistanceJoint protected () extends PhysicsJoint {
+  open class DistanceJoint protected () extends PhysicsJoint {
     /**
       *
       * @param jointData The data for the Distance-Joint
@@ -28,7 +28,7 @@ object physicsJointMod {
   
   @JSImport("babylonjs/Physics/physicsJoint", "Hinge2Joint")
   @js.native
-  class Hinge2Joint protected () extends MotorEnabledJoint {
+  open class Hinge2Joint protected () extends MotorEnabledJoint {
     /**
       * Initializes the Hinge2-Joint
       * @param jointData The joint data for the Hinge2-Joint
@@ -38,7 +38,7 @@ object physicsJointMod {
   
   @JSImport("babylonjs/Physics/physicsJoint", "HingeJoint")
   @js.native
-  class HingeJoint protected () extends MotorEnabledJoint {
+  open class HingeJoint protected () extends MotorEnabledJoint {
     /**
       * Initializes the Hinge-Joint
       * @param jointData The joint data for the Hinge-Joint
@@ -49,11 +49,11 @@ object physicsJointMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.physicsJointMod.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit, setLimit */ @JSImport("babylonjs/Physics/physicsJoint", "MotorEnabledJoint")
   @js.native
-  class MotorEnabledJoint protected () extends PhysicsJoint {
+  open class MotorEnabledJoint protected () extends PhysicsJoint {
     /**
       * Initializes the Motor-Enabled Joint
       * @param type The type of the joint
-      * @param jointData The physica joint data for the joint
+      * @param jointData The physical joint data for the joint
       */
     def this(`type`: Double, jointData: PhysicsJointData) = this()
     
@@ -98,7 +98,7 @@ object physicsJointMod {
   
   @JSImport("babylonjs/Physics/physicsJoint", "PhysicsJoint")
   @js.native
-  class PhysicsJoint protected () extends StObject {
+  open class PhysicsJoint protected () extends StObject {
     /**
       * Initializes the physics joint
       * @param type The type of the physics joint
@@ -115,7 +115,7 @@ object physicsJointMod {
     jointData: PhysicsJointData
     ) = this()
     
-    /* private */ var _physicsJoint: js.Any = js.native
+    /* private */ var _physicsJoint: Any = js.native
     
     /* protected */ var _physicsPlugin: IPhysicsEnginePlugin = js.native
     
@@ -124,7 +124,7 @@ object physicsJointMod {
       * @param {Function} func the function that will be executed.
       *                        It accepts two parameters: the physics world and the physics joint
       */
-    def executeNativeFunction(func: js.Function2[/* world */ js.Any, /* physicsJoint */ js.Any, Unit]): Unit = js.native
+    def executeNativeFunction(func: js.Function2[/* world */ Any, /* physicsJoint */ Any, Unit]): Unit = js.native
     
     /**
       * The data for the physics joint
@@ -134,11 +134,11 @@ object physicsJointMod {
     /**
       * Gets the physics joint
       */
-    def physicsJoint: js.Any = js.native
+    def physicsJoint: Any = js.native
     /**
       * Sets the physics joint
       */
-    def physicsJoint_=(newJoint: js.Any): Unit = js.native
+    def physicsJoint_=(newJoint: Any): Unit = js.native
     
     /**
       * Sets the physics plugin
@@ -275,7 +275,7 @@ object physicsJointMod {
     /**
       * Physics joint
       */
-    var physicsJoint: js.Any = js.native
+    var physicsJoint: Any = js.native
     
     /**
       * Sets the limit of the motor
@@ -334,7 +334,7 @@ object physicsJointMod {
     /**
       * Native Oimo/Cannon/Energy data
       */
-    var nativeParams: js.UndefOr[js.Any] = js.undefined
+    var nativeParams: js.UndefOr[Any] = js.undefined
   }
   object PhysicsJointData {
     
@@ -365,7 +365,7 @@ object physicsJointMod {
       
       inline def setMainPivotUndefined: Self = StObject.set(x, "mainPivot", js.undefined)
       
-      inline def setNativeParams(value: js.Any): Self = StObject.set(x, "nativeParams", value.asInstanceOf[js.Any])
+      inline def setNativeParams(value: Any): Self = StObject.set(x, "nativeParams", value.asInstanceOf[js.Any])
       
       inline def setNativeParamsUndefined: Self = StObject.set(x, "nativeParams", js.undefined)
     }

@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A person&#39;s phone number.
-  */
 trait SchemaPhoneNumber extends StObject {
   
   /**
-    * The read-only canonicalized [ITU-T
-    * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
-    * form of the phone number.
+    * Output only. The canonicalized [ITU-T E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf) form of the phone number.
     */
-  var canonicalForm: js.UndefOr[String] = js.undefined
+  var canonicalForm: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The read-only type of the phone number translated and formatted in the
-    * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
+    * Output only. The type of the phone number translated and formatted in the viewer's account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.undefined
+  var formattedType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Metadata about the phone number.
@@ -28,17 +22,14 @@ trait SchemaPhoneNumber extends StObject {
   var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
-    * The type of the phone number. The type can be custom or one of these
-    * predefined values:  * `home` * `work` * `mobile` * `homeFax` * `workFax`
-    * * `otherFax` * `pager` * `workMobile` * `workPager` * `main` *
-    * `googleVoice` * `other`
+    * The type of the phone number. The type can be custom or one of these predefined values: * `home` * `work` * `mobile` * `homeFax` * `workFax` * `otherFax` * `pager` * `workMobile` * `workPager` * `main` * `googleVoice` * `other`
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The phone number.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPhoneNumber {
   
@@ -51,9 +42,13 @@ object SchemaPhoneNumber {
     
     inline def setCanonicalForm(value: String): Self = StObject.set(x, "canonicalForm", value.asInstanceOf[js.Any])
     
+    inline def setCanonicalFormNull: Self = StObject.set(x, "canonicalForm", null)
+    
     inline def setCanonicalFormUndefined: Self = StObject.set(x, "canonicalForm", js.undefined)
     
     inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedTypeNull: Self = StObject.set(x, "formattedType", null)
     
     inline def setFormattedTypeUndefined: Self = StObject.set(x, "formattedType", js.undefined)
     
@@ -63,9 +58,13 @@ object SchemaPhoneNumber {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

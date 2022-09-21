@@ -1,14 +1,16 @@
 package typings.rdflib
 
 import typings.rdflib.tfTypesMod.Term
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdflib/lib/utils/termValue", JSImport.Namespace)
-@js.native
-object termValueMod extends js.Object {
-  def termValue(node: String): String = js.native
-  def termValue(node: Term): String = js.native
+object termValueMod {
+  
+  @JSImport("rdflib/lib/utils/termValue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def termValue(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("termValue")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def termValue(node: Term): String = ^.asInstanceOf[js.Dynamic].applyDynamic("termValue")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

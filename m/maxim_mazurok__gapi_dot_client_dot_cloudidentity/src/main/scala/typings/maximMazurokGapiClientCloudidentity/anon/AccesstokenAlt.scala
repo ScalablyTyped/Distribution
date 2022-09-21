@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
-import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.ModifyMembershipRolesRequest
+import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1WipeDeviceRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ trait AccesstokenAlt extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Membership` whose roles are to be modified. Must be of the form
-    * `groups/{group_id}/memberships/{membership_id}`.
+    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device}/deviceUsers/{device_user}`, where device is the unique
+    * ID assigned to the Device, and device_user is the unique ID assigned to the User.
     */
   var name: String
   
@@ -42,7 +42,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ModifyMembershipRolesRequest
+  var resource: GoogleAppsCloudidentityDevicesV1WipeDeviceRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(name: String, resource: ModifyMembershipRolesRequest): AccesstokenAlt = {
+  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1WipeDeviceRequest): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -97,7 +97,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ModifyMembershipRolesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleAppsCloudidentityDevicesV1WipeDeviceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

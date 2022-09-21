@@ -10,7 +10,7 @@ trait NotificationMessageTemplate
   
   /**
     * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none,
-    * includeCompanyLogo, includeCompanyName, includeContactInformation.
+    * includeCompanyLogo, includeCompanyName, includeContactInformation, includeDeviceDetails.
     */
   var brandingOptions: js.UndefOr[NotificationTemplateBrandingOptions] = js.undefined
   
@@ -59,6 +59,6 @@ object NotificationMessageTemplate {
     
     inline def setLocalizedNotificationMessagesUndefined: Self = StObject.set(x, "localizedNotificationMessages", js.undefined)
     
-    inline def setLocalizedNotificationMessagesVarargs(value: LocalizedNotificationMessage*): Self = StObject.set(x, "localizedNotificationMessages", js.Array(value :_*))
+    inline def setLocalizedNotificationMessagesVarargs(value: LocalizedNotificationMessage*): Self = StObject.set(x, "localizedNotificationMessages", js.Array(value*))
   }
 }

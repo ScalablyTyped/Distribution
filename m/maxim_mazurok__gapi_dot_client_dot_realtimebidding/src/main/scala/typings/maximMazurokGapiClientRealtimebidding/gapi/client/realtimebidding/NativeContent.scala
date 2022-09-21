@@ -41,6 +41,9 @@ trait NativeContent extends StObject {
   
   /** The URL to fetch a native video ad. */
   var videoUrl: js.UndefOr[String] = js.undefined
+  
+  /** The contents of a VAST document for a native video ad. */
+  var videoVastXml: js.UndefOr[String] = js.undefined
 }
 object NativeContent {
   
@@ -98,5 +101,9 @@ object NativeContent {
     inline def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
     inline def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
+    
+    inline def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
+    
+    inline def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
   }
 }

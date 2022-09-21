@@ -10,10 +10,10 @@ asynchronous flow-control micro library
 | ------------------ | :-------------: |
 | Full name          | flowjs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1083 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 258.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/flowjs)

@@ -10,10 +10,10 @@ The lodash method `_.kebabCase` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.kebabcase |
 | Keywords           | lodash-modularized, kebabcase |
-| # releases         | 0 |
-| # dependents       | 407 |
-| # downloads        | 81730724 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5042251666666666E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-valid-domain" : "0.1.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-valid-domain" : "0.1.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

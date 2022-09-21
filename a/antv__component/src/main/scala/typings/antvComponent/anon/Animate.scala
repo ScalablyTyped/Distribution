@@ -12,7 +12,7 @@ trait Animate extends StObject {
   
   var capture: Boolean
   
-  var events: js.Any
+  var events: Any
   
   var id: String
   
@@ -36,7 +36,7 @@ object Animate {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    events: js.Any,
+    events: Any,
     id: String,
     locationType: String,
     name: String,
@@ -59,7 +59,7 @@ object Animate {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

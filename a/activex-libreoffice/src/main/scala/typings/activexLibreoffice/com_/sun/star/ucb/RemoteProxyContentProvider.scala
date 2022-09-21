@@ -28,7 +28,7 @@ object RemoteProxyContentProvider {
     createContentIdentifier: String => XContentIdentifier,
     deregisterInstance: (String, String) => XContentProvider,
     queryContent: XContentIdentifier => XContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerInstance: (String, String, Boolean) => XContentProvider,
     release: () => Unit
   ): RemoteProxyContentProvider = {

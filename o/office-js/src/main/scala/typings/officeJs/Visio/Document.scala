@@ -7,6 +7,9 @@ import typings.officeJs.Visio.Interfaces.DocumentData
 import typings.officeJs.Visio.Interfaces.DocumentLoadOptions
 import typings.officeJs.Visio.Interfaces.DocumentUpdateData
 import typings.officeJs.anon.Expand
+import typings.officeJs.officeJsStrings.DataVisualizerOrgChartMappings
+import typings.officeJs.officeJsStrings.DataVisualizerProcessMappings
+import typings.officeJs.officeJsStrings.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,25 +46,15 @@ trait Document
   def getActivePage(): Page = js.native
   
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Document = js.native
-  def load(option: String): Document = js.native
-  def load(option: js.Array[String]): Document = js.native
-  def load(option: DocumentLoadOptions): Document = js.native
-  def load(option: Expand): Document = js.native
+  def load(options: DocumentLoadOptions): Document = js.native
+  def load(propertyNamesAndPaths: Expand): Document = js.native
+  def load(propertyNames: String): Document = js.native
+  def load(propertyNames: js.Array[String]): Document = js.native
   
   /**
     *
@@ -72,6 +65,16 @@ trait Document
     * @eventproperty
     */
   val onDataRefreshComplete: EventHandlers[DataRefreshCompleteEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when there is an expected or unexpected error occured in the session.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onDocumentError: EventHandlers[DocumentErrorEventArgs] = js.native
   
   /**
     *
@@ -125,6 +128,16 @@ trait Document
   
   /**
     *
+    * Occurs whenever a task pane state is changed
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onTaskPaneStateChanged: EventHandlers[TaskPaneStateChangedEventArgs] = js.native
+  
+  /**
+    *
     * Represents a collection of pages associated with the document. Read-only.
     *
     * [Api set:  1.1]
@@ -156,6 +169,53 @@ trait Document
     * @param PageName Name of the page
     */
   def setActivePage(PageName: String): Unit = js.native
+  
+  /**
+    * Set mock data
+    */
+  def setMockData(data: DocumentData): Unit = js.native
+  
+  /**
+    *
+    * Show or Hide a TaskPane.
+    This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio drawing to show/hide the task pane.
+    *
+    * [Api set:  1.1]
+    *
+    * @param taskPaneType Type of the 1st Party TaskPane. It can take values from enum TaskPaneType
+    * @param initialProps Optional Parameter. This is a generic data structure which would be filled with initial data required to initialize the content of the Taskpane
+    * @param show Optional Parameter. If it is set to false, it will hide the specified taskpane
+    */
+  def showTaskPane(taskPaneType: None | DataVisualizerProcessMappings | DataVisualizerOrgChartMappings): Unit = js.native
+  def showTaskPane(
+    taskPaneType: None | DataVisualizerProcessMappings | DataVisualizerOrgChartMappings,
+    initialProps: Any
+  ): Unit = js.native
+  def showTaskPane(
+    taskPaneType: None | DataVisualizerProcessMappings | DataVisualizerOrgChartMappings,
+    initialProps: Any,
+    show: Boolean
+  ): Unit = js.native
+  def showTaskPane(
+    taskPaneType: None | DataVisualizerProcessMappings | DataVisualizerOrgChartMappings,
+    initialProps: Unit,
+    show: Boolean
+  ): Unit = js.native
+  /**
+    *
+    * Show or Hide a TaskPane.
+    This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio drawing to show/hide the task pane.
+    *
+    * [Api set:  1.1]
+    *
+    * @param taskPaneType Type of the 1st Party TaskPane. It can take values from enum TaskPaneType
+    * @param initialProps Optional Parameter. This is a generic data structure which would be filled with initial data required to initialize the content of the Taskpane
+    * @param show Optional Parameter. If it is set to false, it will hide the specified taskpane
+    */
+  def showTaskPane(taskPaneType: TaskPaneType): Unit = js.native
+  def showTaskPane(taskPaneType: TaskPaneType, initialProps: Any): Unit = js.native
+  def showTaskPane(taskPaneType: TaskPaneType, initialProps: Any, show: Boolean): Unit = js.native
+  def showTaskPane(taskPaneType: TaskPaneType, initialProps: Unit, show: Boolean): Unit = js.native
   
   /**
     *

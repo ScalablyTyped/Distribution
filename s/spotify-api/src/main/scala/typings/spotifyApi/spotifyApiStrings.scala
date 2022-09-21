@@ -15,6 +15,10 @@ object spotifyApiStrings {
   inline def P: P = "P".asInstanceOf[P]
   
   @js.native
+  sealed trait ad extends StObject
+  inline def ad: ad = "ad".asInstanceOf[ad]
+  
+  @js.native
   sealed trait album extends StObject
   inline def album: album = "album".asInstanceOf[album]
   
@@ -43,6 +47,10 @@ object spotifyApiStrings {
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
+  sealed trait episode extends StObject
+  inline def episode: episode = "episode".asInstanceOf[episode]
+  
+  @js.native
   sealed trait genre extends StObject
   inline def genre: genre = "genre".asInstanceOf[genre]
   
@@ -59,12 +67,20 @@ object spotifyApiStrings {
   inline def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
+  
+  @js.native
   sealed trait single extends StObject
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait track extends StObject
   inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait unknown extends StObject
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait user extends StObject

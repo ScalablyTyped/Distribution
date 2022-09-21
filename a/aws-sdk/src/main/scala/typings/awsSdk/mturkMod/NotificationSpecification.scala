@@ -39,7 +39,7 @@ object NotificationSpecification {
     
     inline def setEventTypes(value: EventTypeList): Self = StObject.set(x, "EventTypes", value.asInstanceOf[js.Any])
     
-    inline def setEventTypesVarargs(value: EventType*): Self = StObject.set(x, "EventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: EventType*): Self = StObject.set(x, "EventTypes", js.Array(value*))
     
     inline def setTransport(value: NotificationTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
     

@@ -12,5 +12,5 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(Component: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def default(Component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(Component: ComponentType[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
 }

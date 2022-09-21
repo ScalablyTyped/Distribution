@@ -10,10 +10,10 @@ Raygun.com plugin for JavaScript
 | ------------------ | :-------------: |
 | Full name          | raygun4js |
 | Keywords           | error, tracking, raygun, clientside |
-| # releases         | 22 |
-| # dependents       | 9 |
-| # downloads        | 745524 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 103468.0 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/MindscapeHQ/raygun4js)

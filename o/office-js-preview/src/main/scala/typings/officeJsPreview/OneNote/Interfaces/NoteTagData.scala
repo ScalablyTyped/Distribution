@@ -24,21 +24,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "noteTag.toJSON()". */
+/** An interface describing the data returned by calling `noteTag.toJSON()`. */
 trait NoteTagData extends StObject {
   
   /**
-    *
     * Gets the Id of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the status of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var status: js.UndefOr[
@@ -46,9 +46,9 @@ trait NoteTagData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Gets the type of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[

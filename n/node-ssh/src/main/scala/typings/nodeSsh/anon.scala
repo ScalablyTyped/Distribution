@@ -1,6 +1,6 @@
 package typings.nodeSsh
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeSsh.nodeSshStrings.both
 import typings.nodeSsh.nodeSshStrings.stderr
 import typings.nodeSsh.nodeSshStrings.stdout

@@ -1,32 +1,96 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.nightwatch.anon.Name
+import typings.nightwatch.mod.^
+import typings.nightwatch.nightwatchStrings.`then`
+import typings.seleniumWebdriver.mod.By
+import typings.seleniumWebdriver.mod.RelativeBy
+import typings.seleniumWebdriver.mod.WebElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EnhancedPageObject[Commands, Elements, Sections /* <: typings.nightwatch.mod.EnhancedPageObjectSections */] = typings.nightwatch.mod.Nightwatch & typings.nightwatch.mod.SharedCommands & typings.nightwatch.mod.NightwatchCustomCommands & Commands & typings.nightwatch.anon.Elements[Sections]
+inline def ELEMENT_KEY: /* "element-6066-11e4-a52e-4f735466cecf" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ELEMENT_KEY").asInstanceOf[/* "element-6066-11e4-a52e-4f735466cecf" */ String]
 
-type EnhancedSectionInstance[Commands, Elements, Sections] = typings.nightwatch.mod.EnhancedPageObject[Commands, Elements, Sections]
+inline def globalElement(locator: Definition): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def globalElement(locator: Definition, options: Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
+inline def globalElement(locator: By): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def globalElement(locator: By, options: Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
+inline def globalElement(locator: WebElement): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def globalElement(locator: WebElement, options: Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
 
-type GlobalNightwatchTestHook = js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], scala.Unit]
+type AsyncFunc = js.ThisFunction1[/* this */ DescribeInstance, /* browser */ NightwatchBrowser, js.Thenable[Any]]
+
+type Awaitable[T, V] = (Omit[T, `then`]) & js.Thenable[V]
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - typings.nightwatch.mod.ElementProperties
+  - typings.nightwatch.mod.Element
+  - typings.seleniumWebdriver.mod.RelativeBy
+*/
+type Definition = _Definition | String | RelativeBy
+
+type EnhancedPageObject[Commands, Elements, Sections /* <: EnhancedPageObjectSections */] = Nightwatch & SharedCommands & NightwatchCustomCommands & Commands & (Name[Commands, Elements, Sections])
+
+type EnhancedPageObjectSections = StringDictionary[EnhancedSectionInstance[Any, Any, Any]]
+
+type EnhancedSectionInstance[Commands, Elements, Sections /* <: EnhancedPageObjectSections */] = EnhancedPageObject[Commands, Elements, Sections]
+
+type ExclusiveSuiteFunction = js.Function2[
+/* title */ String, 
+/* fn */ js.UndefOr[js.ThisFunction0[/* this */ DescribeInstance, Unit]], 
+this.type]
+
+type ExtendDescribeThis[T] = DescribeInstance & typings.nightwatch.nightwatchStrings.ExtendDescribeThis & TopLevel[T]
+
+type GlobalNightwatchTestHook = js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
 
 type GlobalNightwatchTestHookEach = js.Function2[
-/* browser */ typings.nightwatch.mod.NightwatchBrowser, 
-/* done */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
-scala.Unit]
+/* browser */ NightwatchBrowser, 
+/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+Unit]
 
 type NightwatchAssert = js.Function6[
-/* passed */ scala.Boolean, 
-/* receivedValue */ js.UndefOr[js.Any], 
-/* expectedValue */ js.UndefOr[js.Any], 
-/* message */ js.UndefOr[java.lang.String], 
-/* abortOnFailure */ js.UndefOr[scala.Boolean], 
-/* originalStackTrace */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* passed */ Boolean, 
+/* receivedValue */ js.UndefOr[Any], 
+/* expectedValue */ js.UndefOr[Any], 
+/* message */ js.UndefOr[String], 
+/* abortOnFailure */ js.UndefOr[Boolean], 
+/* originalStackTrace */ js.UndefOr[String], 
+Unit]
 
-type NightwatchTest = js.Function1[/* browser */ typings.nightwatch.mod.NightwatchBrowser, scala.Unit]
+type NightwatchBddTestHook = js.Function1[/* callback */ NightwatchBddTestHookCallback, Unit]
 
-type NightwatchTestHook = typings.nightwatch.mod.GlobalNightwatchTestHookEach | typings.nightwatch.mod.GlobalNightwatchTestHook
+type NightwatchBddTestHookCallback = js.ThisFunction2[
+/* this */ DescribeInstance, 
+/* browser */ NightwatchBrowser, 
+/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+Unit]
 
-type NightwatchTestSettings = org.scalablytyped.runtime.StringDictionary[typings.nightwatch.mod.NightwatchTestSettingScreenshots]
+type NightwatchElement = WebElement
+
+type NightwatchPosition = WindowPosition
+
+type NightwatchSize = WindowSize
+
+type NightwatchSizeAndPosition = WindowSizeAndPosition
+
+type NightwatchTest = js.Function1[/* browser */ js.UndefOr[NightwatchBrowser], Unit]
+
+type NightwatchTestHook = GlobalNightwatchTestHookEach | GlobalNightwatchTestHook
+
+type NightwatchTestSettings = StringDictionary[NightwatchTestSettingScreenshots]
+
+type NormalFunc = js.ThisFunction1[/* this */ DescribeInstance, /* browser */ NightwatchBrowser, Unit]
+
+type PageElements = StringDictionary[Definition]
+
+type PendingSuiteFunction = js.Function2[
+/* title */ String, 
+/* fn */ js.UndefOr[js.ThisFunction0[/* this */ DescribeInstance, Unit]], 
+this.type | Unit]

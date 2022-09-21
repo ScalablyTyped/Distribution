@@ -14,7 +14,7 @@ object checkboxPropsTypeMod {
     
     var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
   }
@@ -31,7 +31,7 @@ object checkboxPropsTypeMod {
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      inline def setOnClick(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

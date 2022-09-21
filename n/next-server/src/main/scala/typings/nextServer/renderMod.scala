@@ -9,9 +9,7 @@ import typings.nextServer.libUtilsMod.NextPageContext
 import typings.nextServer.typesMod.PageConfig
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.react.mod.ComponentType
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +22,9 @@ object renderMod {
   
   inline def renderToHTML(
     req: IncomingMessage,
-    res: ServerResponse,
+    res: ServerResponse[IncomingMessage],
     pathname: String,
-    query: ParsedUrlQuery,
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
     renderOpts: RenderOpts
   ): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
@@ -75,7 +73,7 @@ object renderMod {
     
     var ampBindInitData: Boolean
     
-    var ampMode: js.UndefOr[js.Any] = js.undefined
+    var ampMode: js.UndefOr[Any] = js.undefined
     
     var ampPath: js.UndefOr[String] = js.undefined
     
@@ -97,7 +95,7 @@ object renderMod {
     
     var documentMiddlewareEnabled: Boolean
     
-    var err: js.UndefOr[Error | Null] = js.undefined
+    var err: js.UndefOr[js.Error | Null] = js.undefined
     
     var hybridAmp: js.UndefOr[Boolean] = js.undefined
     
@@ -109,7 +107,7 @@ object renderMod {
     
     var reactLoadableManifest: ReactLoadableManifest
     
-    var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var runtimeConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var skeleton: js.UndefOr[Boolean] = js.undefined
     
@@ -140,7 +138,7 @@ object renderMod {
       
       inline def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
       
-      inline def setAmpMode(value: js.Any): Self = StObject.set(x, "ampMode", value.asInstanceOf[js.Any])
+      inline def setAmpMode(value: Any): Self = StObject.set(x, "ampMode", value.asInstanceOf[js.Any])
       
       inline def setAmpModeUndefined: Self = StObject.set(x, "ampMode", js.undefined)
       
@@ -182,7 +180,7 @@ object renderMod {
       
       inline def setDocumentMiddlewareEnabled(value: Boolean): Self = StObject.set(x, "documentMiddlewareEnabled", value.asInstanceOf[js.Any])
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setErrNull: Self = StObject.set(x, "err", null)
       
@@ -208,7 +206,7 @@ object renderMod {
       
       inline def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
       
-      inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
       
       inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
       

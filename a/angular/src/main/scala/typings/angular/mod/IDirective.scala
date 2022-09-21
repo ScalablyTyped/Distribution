@@ -80,11 +80,11 @@ object IDirective {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setLink(
       value: (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
@@ -112,7 +112,7 @@ object IDirective {
     
     inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
+    inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value*))
     
     inline def setRestrict(value: String): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
     

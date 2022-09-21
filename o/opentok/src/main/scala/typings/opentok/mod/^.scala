@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("opentok", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with OpenTok {
   def this(apiKey: String, apiSecret: String) = this()

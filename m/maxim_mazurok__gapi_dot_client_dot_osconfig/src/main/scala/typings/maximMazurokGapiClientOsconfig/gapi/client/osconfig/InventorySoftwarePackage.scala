@@ -21,6 +21,9 @@ trait InventorySoftwarePackage extends StObject {
     */
   var qfePackage: js.UndefOr[InventoryWindowsQuickFixEngineeringPackage] = js.undefined
   
+  /** Details of Windows Application. */
+  var windowsApplication: js.UndefOr[InventoryWindowsApplication] = js.undefined
+  
   /** Details of a Windows Update package. See https://docs.microsoft.com/en-us/windows/win32/api/_wua/ for information about Windows Update. */
   var wuaPackage: js.UndefOr[InventoryWindowsUpdatePackage] = js.undefined
   
@@ -57,6 +60,10 @@ object InventorySoftwarePackage {
     inline def setQfePackage(value: InventoryWindowsQuickFixEngineeringPackage): Self = StObject.set(x, "qfePackage", value.asInstanceOf[js.Any])
     
     inline def setQfePackageUndefined: Self = StObject.set(x, "qfePackage", js.undefined)
+    
+    inline def setWindowsApplication(value: InventoryWindowsApplication): Self = StObject.set(x, "windowsApplication", value.asInstanceOf[js.Any])
+    
+    inline def setWindowsApplicationUndefined: Self = StObject.set(x, "windowsApplication", js.undefined)
     
     inline def setWuaPackage(value: InventoryWindowsUpdatePackage): Self = StObject.set(x, "wuaPackage", value.asInstanceOf[js.Any])
     

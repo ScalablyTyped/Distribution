@@ -33,6 +33,6 @@ object ReplicationGroupMessage {
     
     inline def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
-    inline def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
+    inline def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = StObject.set(x, "ReplicationGroups", js.Array(value*))
   }
 }

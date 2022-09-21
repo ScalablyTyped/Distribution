@@ -10,13 +10,13 @@ object webCryptoSha256Mod {
   
   @JSImport("@aws-crypto/sha256-browser/build/webCryptoSha256", "Sha256")
   @js.native
-  class Sha256 ()
+  open class Sha256 ()
     extends StObject
        with Hash {
     def this(secret: SourceData) = this()
     
-    /* private */ val key: js.Any = js.native
+    /* private */ val key: Any = js.native
     
-    /* private */ var toHash: js.Any = js.native
+    /* private */ var toHash: Any = js.native
   }
 }

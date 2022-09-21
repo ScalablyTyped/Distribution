@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "eth-json-rpc-middleware" : "9.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "eth-json-rpc-middleware" : "9.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ISyntaxList2")
 @js.native
-class ISyntaxList2 protected ()
+open class ISyntaxList2 protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ISyntaxList2 {
   def this(_fileName: String, members: js.Array[typings.typescriptServices.TypeScript.AST]) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native
@@ -60,7 +60,7 @@ class ISyntaxList2 protected ()
   override def lastOrDefault(func: js.Function2[/* v */ typings.typescriptServices.TypeScript.AST, /* index */ Double, Boolean]): typings.typescriptServices.TypeScript.AST = js.native
   
   /* private */ /* CompleteClass */
-  var members: js.Any = js.native
+  var members: Any = js.native
   
   /* CompleteClass */
   var parent: typings.typescriptServices.TypeScript.AST = js.native

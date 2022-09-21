@@ -1,7 +1,6 @@
 package typings.reapop
 
 import typings.reapop.typesMod.NewNotification
-import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.NotificationButton
 import typings.reapop.typesMod.Position
 import typings.reapop.typesMod.Status
@@ -13,38 +12,81 @@ object anon {
   
   trait DismissNotification extends StObject {
     
-    def dismissNotification(id: String): Unit
+    var dismissNotification: typings.reapop.notificationsSystemMod.DismissNotification
     
-    def dismissNotifications(): Unit
-    
-    var notifications: js.Array[Notification]
-    
-    def notify(notification: PartialNotification): Unit
+    var notification: typings.reapop.typesMod.Notification
   }
   object DismissNotification {
     
-    inline def apply(
-      dismissNotification: String => Unit,
-      dismissNotifications: () => Unit,
-      notifications: js.Array[Notification],
-      notify_ : PartialNotification => Unit
-    ): DismissNotification = {
-      val __obj = js.Dynamic.literal(dismissNotification = js.Any.fromFunction1(dismissNotification), dismissNotifications = js.Any.fromFunction0(dismissNotifications), notifications = notifications.asInstanceOf[js.Any])
-      __obj.updateDynamic("notify")(js.Any.fromFunction1(notify_))
+    inline def apply(dismissNotification: /* id */ String => Unit, notification: typings.reapop.typesMod.Notification): DismissNotification = {
+      val __obj = js.Dynamic.literal(dismissNotification = js.Any.fromFunction1(dismissNotification), notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[DismissNotification]
     }
     
     extension [Self <: DismissNotification](x: Self) {
       
-      inline def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
+      inline def setDismissNotification(value: /* id */ String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
-      inline def setDismissNotifications(value: () => Unit): Self = StObject.set(x, "dismissNotifications", js.Any.fromFunction0(value))
+      inline def setNotification(value: typings.reapop.typesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Duration extends StObject {
+    
+    var duration: js.UndefOr[Double] = js.undefined
+  }
+  object Duration {
+    
+    inline def apply(): Duration = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Duration]
+    }
+    
+    extension [Self <: Duration](x: Self) {
       
-      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [Partial<Notification> | string, Partial<Notification> | Status | undefined, Partial<Notification> | undefined] is not an array type */ args: js.Tuple3[
+          PartialNotification | String, 
+          js.UndefOr[PartialNotification | Status], 
+          js.UndefOr[PartialNotification]
+        ]
+    ): typings.reapop.typesMod.Notification = js.native
+    def apply(message: String): typings.reapop.typesMod.Notification = js.native
+    def apply(message: String, options: PartialNotification): typings.reapop.typesMod.Notification = js.native
+    def apply(message: String, status: Status): typings.reapop.typesMod.Notification = js.native
+    def apply(message: String, status: Status, options: PartialNotification): typings.reapop.typesMod.Notification = js.native
+    def apply(notification: PartialNotification): typings.reapop.typesMod.Notification = js.native
+  }
+  
+  trait Notification extends StObject {
+    
+    var duration: js.UndefOr[Double] = js.undefined
+    
+    var notification: typings.reapop.typesMod.Notification
+  }
+  object Notification {
+    
+    inline def apply(notification: typings.reapop.typesMod.Notification): Notification = {
+      val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Notification]
+    }
+    
+    extension [Self <: Notification](x: Self) {
       
-      inline def setNotify_(value: PartialNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      
+      inline def setNotification(value: typings.reapop.typesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,9 +107,9 @@ object anon {
     
     var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var position: js.UndefOr[Position] = js.undefined
     
@@ -94,7 +136,7 @@ object anon {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
@@ -116,11 +158,11 @@ object anon {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      inline def setOnDismiss(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       

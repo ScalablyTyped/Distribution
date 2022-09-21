@@ -133,6 +133,6 @@ object CirclePaint {
     
     inline def `setCircle-translateUndefined`: Self = StObject.set(x, "circle-translate", js.undefined)
     
-    inline def `setCircle-translateVarargs`(value: Double*): Self = StObject.set(x, "circle-translate", js.Array(value :_*))
+    inline def `setCircle-translateVarargs`(value: Double*): Self = StObject.set(x, "circle-translate", js.Array(value*))
   }
 }

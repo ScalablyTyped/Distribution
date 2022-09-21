@@ -12,7 +12,7 @@ trait Account extends StObject {
   
   var id: Double
   
-  var pro_expiration: js.Any
+  var pro_expiration: Any
   
   var reputation: Double
   
@@ -20,7 +20,7 @@ trait Account extends StObject {
 }
 object Account {
   
-  inline def apply(bio: String, created: Double, id: Double, pro_expiration: js.Any, reputation: Double, url: String): Account = {
+  inline def apply(bio: String, created: Double, id: Double, pro_expiration: Any, reputation: Double, url: String): Account = {
     val __obj = js.Dynamic.literal(bio = bio.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pro_expiration = pro_expiration.asInstanceOf[js.Any], reputation = reputation.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
@@ -33,7 +33,7 @@ object Account {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setPro_expiration(value: js.Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
+    inline def setPro_expiration(value: Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
     
     inline def setReputation(value: Double): Self = StObject.set(x, "reputation", value.asInstanceOf[js.Any])
     

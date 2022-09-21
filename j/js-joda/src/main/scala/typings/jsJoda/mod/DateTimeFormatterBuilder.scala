@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "DateTimeFormatterBuilder")
 @js.native
-class DateTimeFormatterBuilder () extends StObject {
+open class DateTimeFormatterBuilder () extends StObject {
   
   def append(formatter: DateTimeFormatter): DateTimeFormatterBuilder = js.native
   
@@ -14,7 +14,7 @@ class DateTimeFormatterBuilder () extends StObject {
   
   def appendInstant(fractionalDigits: Double): DateTimeFormatterBuilder = js.native
   
-  def appendLiteral(literal: js.Any): DateTimeFormatterBuilder = js.native
+  def appendLiteral(literal: Any): DateTimeFormatterBuilder = js.native
   
   def appendOffset(pattern: String, noOffsetText: String): DateTimeFormatterBuilder = js.native
   

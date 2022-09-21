@@ -6,6 +6,7 @@ import typings.onfleetNodeOnfleet.recipientsMod.CreateRecipientProps
 import typings.onfleetNodeOnfleet.tasksMod.Barcode
 import typings.onfleetNodeOnfleet.tasksMod.TaskAutoAssign
 import typings.onfleetNodeOnfleet.tasksMod.TaskCompletionRequirements
+import typings.onfleetNodeOnfleet.tasksMod.TaskContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,8 @@ trait PartialCreateTaskProps extends StObject {
   var completeAfter: js.UndefOr[Double] = js.undefined
   
   var completeBefore: js.UndefOr[Double] = js.undefined
+  
+  var container: js.UndefOr[TaskContainer] = js.undefined
   
   var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -66,7 +69,7 @@ object PartialCreateTaskProps {
     
     inline def setBarcodesUndefined: Self = StObject.set(x, "barcodes", js.undefined)
     
-    inline def setBarcodesVarargs(value: Barcode*): Self = StObject.set(x, "barcodes", js.Array(value :_*))
+    inline def setBarcodesVarargs(value: Barcode*): Self = StObject.set(x, "barcodes", js.Array(value*))
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
@@ -80,11 +83,15 @@ object PartialCreateTaskProps {
     
     inline def setCompleteBeforeUndefined: Self = StObject.set(x, "completeBefore", js.undefined)
     
+    inline def setContainer(value: TaskContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
     inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setDestination(value: String | CreateDestinationProps): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
@@ -102,7 +109,7 @@ object PartialCreateTaskProps {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
     
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
@@ -132,7 +139,7 @@ object PartialCreateTaskProps {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: (CreateRecipientProps | String)*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: (CreateRecipientProps | String)*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setRequirements(value: TaskCompletionRequirements): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     

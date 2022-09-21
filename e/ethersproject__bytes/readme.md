@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__bytes
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 Bytes utility functions for ethers.
@@ -10,10 +10,10 @@ Bytes utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/bytes |
 | Keywords           | Ethereum, ethers |
-| # releases         | 33 |
-| # dependents       | 74 |
-| # downloads        | 3031135 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3798326.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

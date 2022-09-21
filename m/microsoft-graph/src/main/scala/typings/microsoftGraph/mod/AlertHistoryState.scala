@@ -47,7 +47,7 @@ object AlertHistoryState {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setFeedback(value: NullableOption[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

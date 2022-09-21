@@ -15,7 +15,7 @@ trait DataSelectionOptions[T] extends StObject {
     * When fields is defined, only the properties whose name is specified
     * in fields will be included in the returned items.
     */
-  var fields: js.UndefOr[js.Array[String] | js.Any] = js.undefined
+  var fields: js.UndefOr[js.Array[String] | Any] = js.undefined
   
   /**
     * Items can be filtered on specific properties by providing a filter function.
@@ -47,7 +47,7 @@ trait DataSelectionOptions[T] extends StObject {
     * This can be used for example to convert ISO strings containing a date to a JavaScript Date object,
     * or convert strings to numbers or vice versa. The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
 object DataSelectionOptions {
   
@@ -58,11 +58,11 @@ object DataSelectionOptions {
   
   extension [Self <: DataSelectionOptions[?], T](x: Self & DataSelectionOptions[T]) {
     
-    inline def setFields(value: js.Array[String] | js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String] | Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFilter(value: /* item */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
@@ -78,7 +78,7 @@ object DataSelectionOptions {
     
     inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

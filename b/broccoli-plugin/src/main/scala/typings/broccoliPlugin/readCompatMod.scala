@@ -13,13 +13,13 @@ object readCompatMod {
   
   @JSImport("broccoli-plugin/dist/read_compat", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ReadCompat {
     def this(plugin: PluginWithDescription) = this()
     
     /* private */ /* CompleteClass */
-    var _priorBuildInputNodeOutputPaths: js.Any = js.native
+    var _priorBuildInputNodeOutputPaths: Any = js.native
     
     /* CompleteClass */
     var callbackObject: CallbackObject = js.native
@@ -51,7 +51,7 @@ object readCompatMod {
   
   trait ReadCompat extends StObject {
     
-    /* private */ var _priorBuildInputNodeOutputPaths: js.Any
+    /* private */ var _priorBuildInputNodeOutputPaths: Any
     
     var cachePath: js.UndefOr[String] = js.undefined
     
@@ -72,7 +72,7 @@ object readCompatMod {
   object ReadCompat {
     
     inline def apply(
-      _priorBuildInputNodeOutputPaths: js.Any,
+      _priorBuildInputNodeOutputPaths: Any,
       callbackObject: CallbackObject,
       cleanup: () => Unit,
       inputBasePath: String,
@@ -99,7 +99,7 @@ object readCompatMod {
       
       inline def setInputPaths(value: js.Array[String]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
       
-      inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
+      inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value*))
       
       inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
@@ -107,7 +107,7 @@ object readCompatMod {
       
       inline def setRead(value: MapSeriesIterator[InputNode] => js.Promise[String]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      inline def set_priorBuildInputNodeOutputPaths(value: js.Any): Self = StObject.set(x, "_priorBuildInputNodeOutputPaths", value.asInstanceOf[js.Any])
+      inline def set_priorBuildInputNodeOutputPaths(value: Any): Self = StObject.set(x, "_priorBuildInputNodeOutputPaths", value.asInstanceOf[js.Any])
     }
   }
 }

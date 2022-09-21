@@ -25,18 +25,18 @@ trait MattersResource extends StObject {
   def addPermissions(request: Uploadprotocol): Request[MatterPermission] = js.native
   
   def close(request: Alt, body: CloseMatterRequest): Request[CloseMatterResponse] = js.native
-  /** Closes the specified matter. Returns matter with updated state. */
+  /** Closes the specified matter. Returns the matter with updated state. */
   def close(request: Xgafv): Request[CloseMatterResponse] = js.native
   
-  /** Counts the artifacts within the context of a matter and returns a detailed breakdown of metrics. */
+  /** Counts the accounts processed by the specified query. */
   def count(request: AccesstokenAlt): Request[Operation] = js.native
   def count(request: Alt, body: CountArtifactsRequest): Request[Operation] = js.native
   
-  /** Creates a new matter with the given name and description. The initial state is open, and the owner is the method caller. Returns the created matter with default view. */
+  /** Creates a matter with the given name and description. The initial state is open, and the owner is the method caller. Returns the created matter with default view. */
   def create(request: AltCallback): Request[Matter] = js.native
   def create(request: CallbackFields, body: Matter): Request[Matter] = js.native
   
-  /** Deletes the specified matter. Returns matter with updated state. */
+  /** Deletes the specified matter. Returns the matter with updated state. */
   def delete(): Request[Matter] = js.native
   def delete(request: Alt): Request[Matter] = js.native
   
@@ -48,7 +48,7 @@ trait MattersResource extends StObject {
   
   var holds: HoldsResource = js.native
   
-  /** Lists matters the user has access to. */
+  /** Lists matters the requestor has access to. */
   def list(): Request[ListMattersResponse] = js.native
   def list(request: PageToken): Request[ListMattersResponse] = js.native
   
@@ -57,13 +57,13 @@ trait MattersResource extends StObject {
   def removePermissions(request: FieldsKey): Request[js.Object] = js.native
   
   def reopen(request: Alt, body: ReopenMatterRequest): Request[ReopenMatterResponse] = js.native
-  /** Reopens the specified matter. Returns matter with updated state. */
+  /** Reopens the specified matter. Returns the matter with updated state. */
   def reopen(request: KeyMatterId): Request[ReopenMatterResponse] = js.native
   
   var savedQueries: SavedQueriesResource = js.native
   
   def undelete(request: Alt, body: UndeleteMatterRequest): Request[Matter] = js.native
-  /** Undeletes the specified matter. Returns matter with updated state. */
+  /** Undeletes the specified matter. Returns the matter with updated state. */
   def undelete(request: MatterIdOauthtoken): Request[Matter] = js.native
   
   def update(request: Alt, body: Matter): Request[Matter] = js.native

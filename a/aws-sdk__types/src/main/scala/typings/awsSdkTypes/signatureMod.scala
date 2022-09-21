@@ -1,16 +1,14 @@
 package typings.awsSdkTypes
 
 import typings.awsSdkTypes.httpMod.HttpRequest
-import typings.std.Date
 import typings.std.Set
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
   
-  type DateInput = Double | String | Date
+  type DateInput = Double | String | js.Date
   
   trait EventSigner extends StObject {
     
@@ -53,22 +51,22 @@ object signatureMod {
   
   trait FormattedEvent extends StObject {
     
-    var headers: Uint8Array
+    var headers: js.typedarray.Uint8Array
     
-    var payload: Uint8Array
+    var payload: js.typedarray.Uint8Array
   }
   object FormattedEvent {
     
-    inline def apply(headers: Uint8Array, payload: Uint8Array): FormattedEvent = {
+    inline def apply(headers: js.typedarray.Uint8Array, payload: js.typedarray.Uint8Array): FormattedEvent = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormattedEvent]
     }
     
     extension [Self <: FormattedEvent](x: Self) {
       
-      inline def setHeaders(value: Uint8Array): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.typedarray.Uint8Array): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,6 +94,17 @@ object signatureMod {
       * The number of seconds before the presigned URL expires
       */
     var expiresIn: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A set of strings whose representing headers that should not be hoisted
+      * to presigned request's query string. If not supplied, the presigner
+      * moves all the AWS-specific headers (starting with `x-amz-`) to the request
+      * query string. If supplied, these headers remain in the presigned request's
+      * header.
+      * All headers in the provided request will have their names converted to
+      * lower case and then checked for existence in the unhoistableHeaders set.
+      */
+    var unhoistableHeaders: js.UndefOr[Set[String]] = js.undefined
   }
   object RequestPresigningArguments {
     
@@ -109,6 +118,10 @@ object signatureMod {
       inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
       inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      
+      inline def setUnhoistableHeaders(value: Set[String]): Self = StObject.set(x, "unhoistableHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUnhoistableHeadersUndefined: Self = StObject.set(x, "unhoistableHeaders", js.undefined)
     }
   }
   

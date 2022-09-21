@@ -9,7 +9,7 @@ trait GetInstanceMetricDataRequest extends StObject {
   /**
     * The end time of the time period.
     */
-  var endTime: timestamp
+  var endTime: js.Date
   
   /**
     * The name of the instance for which you want to get metrics data.
@@ -29,7 +29,7 @@ trait GetInstanceMetricDataRequest extends StObject {
   /**
     * The start time of the time period.
     */
-  var startTime: timestamp
+  var startTime: js.Date
   
   /**
     * The statistic for the metric. The following statistics are available:    Minimum - The lowest value observed during the specified period. Use this value to determine low volumes of activity for your application.    Maximum - The highest value observed during the specified period. Use this value to determine high volumes of activity for your application.    Sum - All values submitted for the matching metric added together. You can use this statistic to determine the total volume of a metric.    Average - The value of Sum / SampleCount during the specified period. By comparing this statistic with the Minimum and Maximum values, you can determine the full scope of a metric and how close the average use is to the Minimum and Maximum values. This comparison helps you to know when to increase or decrease your resources.    SampleCount - The count, or number, of data points used for the statistical calculation.  
@@ -44,11 +44,11 @@ trait GetInstanceMetricDataRequest extends StObject {
 object GetInstanceMetricDataRequest {
   
   inline def apply(
-    endTime: timestamp,
+    endTime: js.Date,
     instanceName: ResourceName,
     metricName: InstanceMetricName,
     period: MetricPeriod,
-    startTime: timestamp,
+    startTime: js.Date,
     statistics: MetricStatisticList,
     unit: MetricUnit
   ): GetInstanceMetricDataRequest = {
@@ -58,7 +58,7 @@ object GetInstanceMetricDataRequest {
   
   extension [Self <: GetInstanceMetricDataRequest](x: Self) {
     
-    inline def setEndTime(value: timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
@@ -66,11 +66,11 @@ object GetInstanceMetricDataRequest {
     
     inline def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    inline def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value*))
     
     inline def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }

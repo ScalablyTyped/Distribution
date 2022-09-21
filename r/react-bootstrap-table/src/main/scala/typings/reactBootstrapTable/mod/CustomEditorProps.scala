@@ -11,7 +11,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String
      with /**
   * Contents of the customEditorParameters object.
   */
-/* parameterName */ StringDictionary[js.Any] {
+/* parameterName */ StringDictionary[Any] {
   
   /**
     * Default value for the editor cell.

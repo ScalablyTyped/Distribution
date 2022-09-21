@@ -29,6 +29,8 @@ trait TemplateOptions
   /**
     * When `false`, the attribution is not displayed on the printout.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#attributionEnabled)
     */
   var attributionEnabled: Boolean = js.native
@@ -48,7 +50,16 @@ trait TemplateOptions
   var copyright: String = js.native
   
   /**
+    * Use this prop to display text fields for custom text elements from the print service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#customTextElements)
+    */
+  var customTextElements: js.Array[Any] = js.native
+  
+  /**
     * Resolution in dots per inch.
+    *
+    * @default 96
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#dpi)
     */
@@ -64,12 +75,16 @@ trait TemplateOptions
   /**
     * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
     */
   var forceFeatureAttributes: Boolean = js.native
   
   /**
     * The output format for the printed map.
+    *
+    * @default pdf
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
     */
@@ -85,6 +100,8 @@ trait TemplateOptions
   /**
     * The layout used for the print output.
     *
+    * @default letter-ansi-a-landscape
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout)
     */
   var layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
@@ -92,9 +109,20 @@ trait TemplateOptions
   /**
     * When `false`, the legend is not displayed on the printout.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
+  
+  /**
+    * When `true`, the north arrow will be included on the printout.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#northArrowEnabled)
+    */
+  var northArrowEnabled: Boolean = js.native
   
   /**
     * The map scale of the printed map.
@@ -104,7 +132,9 @@ trait TemplateOptions
   var scale: Double = js.native
   
   /**
-    * When `true`, [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scale) is used in the printed map.
+    * Define whether the printed map should preserve map scale or map extent.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scaleEnabled)
     */

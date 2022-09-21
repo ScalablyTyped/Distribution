@@ -1,8 +1,8 @@
 package typings.reactFoundation
 
 import typings.react.mod.Component
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.StatelessComponent
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
@@ -13,8 +13,7 @@ object sliderMod {
   
   @JSImport("react-foundation/components/slider", "Slider")
   @js.native
-  class Slider ()
-    extends Component[SliderProps, SliderState, js.Any] {
+  open class Slider () extends Component[SliderProps, SliderState, Any] {
     
     @JSName("componentWillMount")
     def componentWillMount_MSlider(): Unit = js.native
@@ -22,16 +21,15 @@ object sliderMod {
   
   @JSImport("react-foundation/components/slider", "SliderFill")
   @js.native
-  val SliderFill: StatelessComponent[SliderFillProps] = js.native
+  val SliderFill: FunctionComponent[SliderFillProps] = js.native
   
   @JSImport("react-foundation/components/slider", "SliderHandle")
   @js.native
-  val SliderHandle: StatelessComponent[SliderHandleProps] = js.native
+  val SliderHandle: FunctionComponent[SliderHandleProps] = js.native
   
   @JSImport("react-foundation/components/slider", "TwoHandleSlider")
   @js.native
-  class TwoHandleSlider ()
-    extends Component[TwoHandleSliderProps, TwoHandleSliderState, js.Any] {
+  open class TwoHandleSlider () extends Component[TwoHandleSliderProps, TwoHandleSliderState, Any] {
     
     @JSName("componentWillMount")
     def componentWillMount_MTwoHandleSlider(): Unit = js.native

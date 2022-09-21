@@ -10,5 +10,5 @@ object isNotStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isntString(str: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isntString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isntString(str: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isntString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

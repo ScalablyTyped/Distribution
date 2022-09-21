@@ -5,9 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.keepNetworkTbtcJs.anon.OmitFoundTransactionvalue
 import typings.keepNetworkTbtcJs.bitcoinHelpersMod.BitcoinNetworkType
 import typings.keepNetworkTbtcJs.electrumClientMod.Config
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +15,11 @@ object commonTypesMod {
   
   @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Contract")
   @js.native
-  class Contract protected () extends StObject {
-    def this(provider: js.Any, abi: js.Array[AbiItem]) = this()
-    def this(provider: js.Any, abi: js.Array[AbiItem], address: String) = this()
-    def this(provider: js.Any, abi: js.Array[AbiItem], address: String, options: js.Any) = this()
-    def this(provider: js.Any, abi: js.Array[AbiItem], address: Unit, options: js.Any) = this()
+  open class Contract protected () extends StObject {
+    def this(provider: Any, abi: js.Array[AbiItem]) = this()
+    def this(provider: Any, abi: js.Array[AbiItem], address: String) = this()
+    def this(provider: Any, abi: js.Array[AbiItem], address: String, options: Any) = this()
+    def this(provider: Any, abi: js.Array[AbiItem], address: Unit, options: Any) = this()
     
     /* private */ var _address: String = js.native
     
@@ -30,26 +29,22 @@ object commonTypesMod {
     
     var defaultBlock: String | Double = js.native
     
-    var defaultChain: js.Any = js.native
+    var defaultChain: Any = js.native
     
-    var defaultCommon: js.Any = js.native
+    var defaultCommon: Any = js.native
     
-    var defaultHardfork: js.Any = js.native
+    var defaultHardfork: Any = js.native
     
-    var events: js.Any = js.native
+    var events: Any = js.native
     
-    def getPastEvents(event: String): js.Promise[js.Array[js.Any]] = js.native
+    def getPastEvents(event: String): js.Promise[js.Array[Any]] = js.native
     
-    var methods: js.Any = js.native
+    var methods: Any = js.native
     
-    def once(event: String, callback: js.Function2[/* error */ Error, /* event */ js.Any, Unit]): Unit = js.native
-    def once(
-      event: String,
-      options: js.Any,
-      callback: js.Function2[/* error */ Error, /* event */ js.Any, Unit]
-    ): Unit = js.native
+    def once(event: String, callback: js.Function2[/* error */ js.Error, /* event */ Any, Unit]): Unit = js.native
+    def once(event: String, options: Any, callback: js.Function2[/* error */ js.Error, /* event */ Any, Unit]): Unit = js.native
     
-    var options: js.Any = js.native
+    var options: Any = js.native
     
     var transactionBlockTimeout: Double = js.native
     
@@ -60,31 +55,31 @@ object commonTypesMod {
   
   @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3")
   @js.native
-  class Web3 protected () extends StObject {
-    def this(provider: js.Any) = this()
-    def this(provider: js.Any, net: Socket) = this()
+  open class Web3 protected () extends StObject {
+    def this(provider: Any) = this()
+    def this(provider: Any, net: Socket) = this()
     
-    var BatchRequest: Instantiable0[js.Any] = js.native
+    var BatchRequest: Instantiable0[Any] = js.native
     
-    var bzz: js.Any = js.native
+    var bzz: Any = js.native
     
-    val currentProvider: js.Any = js.native
+    val currentProvider: Any = js.native
     
     var defaultAccount: String | Null = js.native
     
     var defaultBlock: String | Double = js.native
     
-    var eth: js.Any = js.native
+    var eth: Any = js.native
     
-    def extend(`extension`: js.Any): js.Any = js.native
+    def extend(`extension`: Any): Any = js.native
     
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
-    def setProvider(provider: js.Any): Boolean = js.native
+    def setProvider(provider: Any): Boolean = js.native
     
-    var shh: js.Any = js.native
+    var shh: Any = js.native
     
-    var utils: js.Any = js.native
+    var utils: Any = js.native
     
     var version: String = js.native
   }
@@ -97,16 +92,16 @@ object commonTypesMod {
     
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.modules")
     @js.native
-    def modules: js.Any = js.native
-    inline def modules_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
+    def modules: Any = js.native
+    inline def modules_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.providers")
     @js.native
-    val providers: js.Any = js.native
+    val providers: Any = js.native
     
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.utils")
     @js.native
-    val utils: js.Any = js.native
+    val utils: Any = js.native
     
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.version")
     @js.native
@@ -139,7 +134,7 @@ object commonTypesMod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
@@ -201,7 +196,7 @@ object commonTypesMod {
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -211,7 +206,7 @@ object commonTypesMod {
       
       inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
       
@@ -249,7 +244,7 @@ object commonTypesMod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
@@ -287,7 +282,7 @@ object commonTypesMod {
     
     var contract: Contract
     
-    var factory: js.Any
+    var factory: Any
     
     def getCurrentState(): js.Promise[Double]
     
@@ -303,7 +298,7 @@ object commonTypesMod {
       address: String,
       constructFundingProof: (OmitFoundTransactionvalue, Double) => js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]],
       contract: Contract,
-      factory: js.Any,
+      factory: Any,
       getCurrentState: () => js.Promise[Double],
       getLatestRedemptionDetails: () => js.Promise[Null | RedemptionDetails],
       keepContract: Contract,
@@ -323,7 +318,7 @@ object commonTypesMod {
       
       inline def setContract(value: Contract): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
       
-      inline def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
       inline def setGetCurrentState(value: () => js.Promise[Double]): Self = StObject.set(x, "getCurrentState", js.Any.fromFunction0(value))
       
@@ -364,9 +359,9 @@ object commonTypesMod {
     
     var redeemerOutputScript: String
     
-    var requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    var requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
     
-    var utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    var utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
   }
   object RedemptionDetails {
     
@@ -374,8 +369,8 @@ object commonTypesMod {
       digest: String,
       outpoint: String,
       redeemerOutputScript: String,
-      requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-      utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+      requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+      utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
     ): RedemptionDetails = {
       val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], outpoint = outpoint.asInstanceOf[js.Any], redeemerOutputScript = redeemerOutputScript.asInstanceOf[js.Any], requestedFee = requestedFee.asInstanceOf[js.Any], utxoValue = utxoValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedemptionDetails]
@@ -390,11 +385,11 @@ object commonTypesMod {
       inline def setRedeemerOutputScript(value: String): Self = StObject.set(x, "redeemerOutputScript", value.asInstanceOf[js.Any])
       
       inline def setRequestedFee(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): Self = StObject.set(x, "requestedFee", value.asInstanceOf[js.Any])
       
       inline def setUtxoValue(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): Self = StObject.set(x, "utxoValue", value.asInstanceOf[js.Any])
     }
   }

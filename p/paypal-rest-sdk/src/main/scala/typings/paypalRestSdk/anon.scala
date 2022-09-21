@@ -262,7 +262,7 @@ object anon {
       
       inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setShipping_address(value: typings.paypalRestSdk.mod.Address): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
       

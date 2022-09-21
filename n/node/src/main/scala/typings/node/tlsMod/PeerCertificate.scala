@@ -1,7 +1,6 @@
 package typings.node.tlsMod
 
-import typings.node.Buffer
-import typings.node.NodeJS.Dict
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait PeerCertificate extends StObject {
   
   var fingerprint256: String
   
-  var infoAccess: Dict[js.Array[String]]
+  var infoAccess: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any
   
   var issuer: Certificate
   
@@ -41,7 +40,7 @@ object PeerCertificate {
     ext_key_usage: js.Array[String],
     fingerprint: String,
     fingerprint256: String,
-    infoAccess: Dict[js.Array[String]],
+    infoAccess: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any,
     issuer: Certificate,
     modulus: String,
     raw: Buffer,
@@ -61,13 +60,15 @@ object PeerCertificate {
     
     inline def setExt_key_usage(value: js.Array[String]): Self = StObject.set(x, "ext_key_usage", value.asInstanceOf[js.Any])
     
-    inline def setExt_key_usageVarargs(value: String*): Self = StObject.set(x, "ext_key_usage", js.Array(value :_*))
+    inline def setExt_key_usageVarargs(value: String*): Self = StObject.set(x, "ext_key_usage", js.Array(value*))
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     inline def setFingerprint256(value: String): Self = StObject.set(x, "fingerprint256", value.asInstanceOf[js.Any])
     
-    inline def setInfoAccess(value: Dict[js.Array[String]]): Self = StObject.set(x, "infoAccess", value.asInstanceOf[js.Any])
+    inline def setInfoAccess(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any
+    ): Self = StObject.set(x, "infoAccess", value.asInstanceOf[js.Any])
     
     inline def setIssuer(value: Certificate): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

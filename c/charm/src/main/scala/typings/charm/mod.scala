@@ -14,10 +14,10 @@ import typings.charm.charmStrings.screen
 import typings.charm.charmStrings.start
 import typings.charm.charmStrings.underscore
 import typings.charm.charmStrings.up
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.processMod.global.NodeJS.Process
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type CharmAnyStream = WritableStream | ReadableStream | Process
+  type CharmAnyStream = WritableStream[Any] | ReadableStream[Any] | Process
   
   type CharmColor = CharmColorName | CharmColorHex
   
@@ -78,7 +78,7 @@ object mod {
   @js.native
   trait CharmInstance
     extends StObject
-       with WritableStream {
+       with WritableStream[Any] {
     
     /**
       * Set the background color with the string `color`, which can be:
@@ -96,12 +96,8 @@ object mod {
     def background(color: CharmColor): this.type = js.native
     
     /** Set the cursor visibility with a boolean `visible`. */
-    def cursor(visible: Boolean): js.Any = js.native
+    def cursor(visible: Boolean): Any = js.native
     
-    @JSName("delete")
-    def delete_char(mode: char): this.type = js.native
-    @JSName("delete")
-    def delete_char(mode: char, n: Double): this.type = js.native
     /**
       * Delete `'line'` or `'char'`s. delete differs from erase because it does not write over
       * the deleted characters with whitesapce, but instead removes the deleted space.
@@ -111,22 +107,12 @@ object mod {
       *
       * The cursor position is not updated.
       */
-    @JSName("delete")
-    def delete_line(mode: line): this.type = js.native
-    @JSName("delete")
-    def delete_line(mode: line, n: Double): this.type = js.native
+    def delete(mode: line | char): this.type = js.native
+    def delete(mode: line | char, n: Double): this.type = js.native
     
     /** Emit an "end" event downstream. */
-    def destroy(): Unit = js.native
+    def destroy(): Any = js.native
     
-    @JSName("display")
-    def display_blink(attr: blink): this.type = js.native
-    @JSName("display")
-    def display_bright(attr: bright): this.type = js.native
-    @JSName("display")
-    def display_dim(attr: dim): this.type = js.native
-    @JSName("display")
-    def display_hidden(attr: hidden): this.type = js.native
     /**
       * Set the display mode with the string `attr.`
       *
@@ -140,18 +126,14 @@ object mod {
       *  - reverse
       *  - hidden
       */
-    @JSName("display")
-    def display_reset(attr: reset): this.type = js.native
-    @JSName("display")
-    def display_reverse(attr: reverse): this.type = js.native
-    @JSName("display")
-    def display_underscore(attr: underscore): this.type = js.native
+    def display(attr: reset | bright | dim | underscore | blink | reverse | hidden): this.type = js.native
     
     /** Move the cursor down by `y` rows. */
     def down(y: Double): this.type = js.native
     
-    @JSName("erase")
-    def erase_down(s: down): this.type = js.native
+    /** Emit an "end" event downstream. */
+    def end(): Any = js.native
+    
     /**
       * Erase a region defined by the string `s`.
       *
@@ -164,16 +146,7 @@ object mod {
       *  - up - erase everything above the current line
       *  - screen - erase the entire screen
       */
-    @JSName("erase")
-    def erase_end(s: end): this.type = js.native
-    @JSName("erase")
-    def erase_line(s: line): this.type = js.native
-    @JSName("erase")
-    def erase_screen(s: screen): this.type = js.native
-    @JSName("erase")
-    def erase_start(s: start): this.type = js.native
-    @JSName("erase")
-    def erase_up(s: up): this.type = js.native
+    def erase(s: end | start | line | down | up | screen): this.type = js.native
     
     /**
       * Set the foreground color with the string `color`, which can be:
@@ -190,16 +163,13 @@ object mod {
       */
     def foreground(color: CharmColor): this.type = js.native
     
-    @JSName("insert")
-    def insert_char(mode: char, n: Double): this.type = js.native
     /**
       * Insert space into the terminal. `insert` is the opposite of `delete`,
       *
       * mode can be `'line'` or `'char'`. `n` is the number of items to be deleted.
       * `n` must be a positive integer.
       */
-    @JSName("insert")
-    def insert_line(mode: line, n: Double): this.type = js.native
+    def insert(mode: line | char, n: Double): this.type = js.native
     
     /** Move the cursor left by `x` columns. */
     def left(x: Double): this.type = js.native
@@ -208,7 +178,7 @@ object mod {
     def move(x: Double, y: Double): this.type = js.native
     
     /** Pipes the output of Charm to a writeable stream `stream` */
-    def pipe(stream: WritableStream): Unit = js.native
+    def pipe(stream: WritableStream[Any]): Unit = js.native
     
     /** Pop the cursor state and optionally the attribute state. */
     def pop(): this.type = js.native
@@ -235,6 +205,11 @@ object mod {
     /** Move the cursor up by `y` rows. */
     def up(y: Double): this.type = js.native
     
+    /**
+      * Pass along `msg` to the output stream.
+      * @param cb Unused by charm, only there to comply to the WritableStream interface
+      */
+    def write(msg: String): Boolean = js.native
     def write(msg: String, cb: js.Function): Boolean = js.native
     def write(msgs: String, encoding: String): Boolean = js.native
     def write(msgs: String, encoding: String, cb: js.Function): Boolean = js.native

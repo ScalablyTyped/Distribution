@@ -18,7 +18,7 @@ trait Options extends StObject {
   
   var response_timeout: js.UndefOr[Double] = js.undefined
   
-  var socket: js.UndefOr[js.Any] = js.undefined
+  var socket: js.UndefOr[Any] = js.undefined
   
   var strict: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ object Options {
     
     inline def setResponse_timeoutUndefined: Self = StObject.set(x, "response_timeout", js.undefined)
     
-    inline def setSocket(value: js.Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     

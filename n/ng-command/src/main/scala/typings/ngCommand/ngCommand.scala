@@ -11,7 +11,7 @@ object ngCommand {
        with ICommand
   object Command {
     
-    inline def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): Command = {
+    inline def apply(canExecute: Boolean, execute: () => Any, isExecuting: Boolean): Command = {
       val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
@@ -30,7 +30,7 @@ object ngCommand {
     /**
       * Executes the command function.
       */
-    def execute(): js.Any
+    def execute(): Any
     
     /**
       * Determines whether the command is currently executing.
@@ -39,7 +39,7 @@ object ngCommand {
   }
   object ICommand {
     
-    inline def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): ICommand = {
+    inline def apply(canExecute: Boolean, execute: () => Any, isExecuting: Boolean): ICommand = {
       val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommand]
     }
@@ -48,7 +48,7 @@ object ngCommand {
       
       inline def setCanExecute(value: Boolean): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       
-      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
       inline def setIsExecuting(value: Boolean): Self = StObject.set(x, "isExecuting", value.asInstanceOf[js.Any])
     }
@@ -58,9 +58,9 @@ object ngCommand {
     * Command factory which creates instances of @see ICommand.
     */
   type ICommandFactory = js.Function3[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ Any, 
     /* execute */ js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ Any
     ], 
     /* canExecute */ js.UndefOr[js.Function0[Boolean]], 
     ICommand

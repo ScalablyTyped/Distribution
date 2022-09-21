@@ -17,7 +17,7 @@ trait WindowObject extends StObject {
   def Close(): Unit = js.native
   def Close(fForce: Boolean): Unit = js.native
   
-  val CommandBars: js.Any = js.native
+  val CommandBars: Any = js.native
   
   var Height: Double = js.native
   

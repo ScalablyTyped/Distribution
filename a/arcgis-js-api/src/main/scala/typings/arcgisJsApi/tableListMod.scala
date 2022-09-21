@@ -22,7 +22,7 @@ object tableListMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with TableList {
     def this(properties: TableListProperties) = this()

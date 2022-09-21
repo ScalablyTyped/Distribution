@@ -6,32 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Check if an array is sorted.
-  @example
-  ```
-  import isArraySorted = require('is-array-sorted');
-  isArraySorted([1, 2, 3]);
-  //=> true
-  isArraySorted([1, 3, 2]);
-  //=> false
-  isArraySorted(['a', 'b', 'c']);
-  //=> true
-  ```
-  */
-  inline def apply[T](array: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def apply[T](array: js.Array[T], options: Options[T]): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   @JSImport("is-array-sorted", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T](array: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default[T](array: js.Array[T], options: Options[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait Options[T] extends StObject {
     
     /**
-    		Same as [`Array#sort(comparator)`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description).
-    		@default (a, b) => a - b
-    		*/
+    	Same as [`Array#sort(comparator)`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description).
+    	@default (a, b) => a - b
+    	*/
     def comparator(left: T, right: T): Double
   }
   object Options {

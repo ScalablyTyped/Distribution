@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationOptions extends StObject {
   
   /**
-    * @desc 自定义面板背景
-    * number: 渲染本地图片
-    * string: 渲染颜色
-    * { uri: string }: 渲染网络图片
-    * RadialGradientBackground: 渲染径向渐变
-    * LinearGradientBackground: 渲染线性渐变
+    * 自定义面板背景
+    * @label `number` 渲染本地图片
+    * @label `string` 渲染颜色
+    * @label `{ uri: string }` 渲染网络图片
+    * @label `RadialGradientBackground` 渲染径向渐变
+    * @label `LinearGradientBackground` 渲染线性渐变
     *
     */
   var background: js.UndefOr[
@@ -27,54 +27,64 @@ trait NavigationOptions extends StObject {
   ] = js.undefined
   
   /**
-    * @desc 自定义面板背景样式
+    * 自定义面板背景样式
     */
   var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
-    * @desc 是否启用首页手势返回 app 列表页面
-    * @default true
+    * 是否启用首页手势返回 app 列表页面
+    * @defaultValueValue true
     */
   var enablePopGesture: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * 是否允许手势
+    */
   var gesture: js.UndefOr[Boolean] = js.undefined
   
   var hideTopbar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @desc 蓝牙离线提示是否覆盖整个面板(除头部栏外)
-    * @default true
+    * @defaultValueValue true
     */
   var isBleOfflineOverlay: js.UndefOr[Boolean] = js.undefined
   
+  var params: js.UndefOr[js.Object] = js.undefined
+  
   /**
-    * @desc 自定义渲染状态栏
+    * 自定义渲染状态栏
     */
   var renderStatusBar: js.UndefOr[js.Function0[Element]] = js.undefined
   
   /**
-    * @desc 自定义渲染头部栏
+    * 自定义渲染头部栏
     */
   var renderTopBar: js.UndefOr[js.Function0[Element]] = js.undefined
   
   /**
-    * @desc 控制是否显示离线遮罩
-    * @default true
+    * 控制是否显示离线遮罩
+    * @defaultValueValue true
     */
   var showOfflineView: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @desc 自定义头部栏标题
+    * 容器样式
+    */
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  /**
+    * 自定义头部栏标题
     */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * @desc 自定义头部栏样式
+    * 自定义头部栏样式
     */
   var topbarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
-    * @desc 自定义头部栏文字样式
+    * 自定义头部栏文字样式
     */
   var topbarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
@@ -115,6 +125,10 @@ object NavigationOptions {
     
     inline def setIsBleOfflineOverlayUndefined: Self = StObject.set(x, "isBleOfflineOverlay", js.undefined)
     
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
     inline def setRenderStatusBar(value: () => Element): Self = StObject.set(x, "renderStatusBar", js.Any.fromFunction0(value))
     
     inline def setRenderStatusBarUndefined: Self = StObject.set(x, "renderStatusBar", js.undefined)
@@ -126,6 +140,12 @@ object NavigationOptions {
     inline def setShowOfflineView(value: Boolean): Self = StObject.set(x, "showOfflineView", value.asInstanceOf[js.Any])
     
     inline def setShowOfflineViewUndefined: Self = StObject.set(x, "showOfflineView", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

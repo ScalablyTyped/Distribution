@@ -29,7 +29,7 @@ object WebsocketAuthorizer {
     
     inline def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
     
-    inline def setIdentitySourceVarargs(value: String*): Self = StObject.set(x, "identitySource", js.Array(value :_*))
+    inline def setIdentitySourceVarargs(value: String*): Self = StObject.set(x, "identitySource", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

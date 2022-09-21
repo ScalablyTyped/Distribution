@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Color4
-import typings.babylonjs.BABYLON.Vector4
+import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.mathVectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,8 @@ trait DiameterBottom extends StObject {
   var arc: js.UndefOr[Double] = js.undefined
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
+  
+  var cap: js.UndefOr[Double] = js.undefined
   
   var diameter: js.UndefOr[Double] = js.undefined
   
@@ -53,6 +55,10 @@ object DiameterBottom {
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
+    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    
+    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+    
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
     inline def setDiameterBottom(value: Double): Self = StObject.set(x, "diameterBottom", value.asInstanceOf[js.Any])
@@ -73,13 +79,13 @@ object DiameterBottom {
     
     inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
+    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
     
     inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
+    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
     
     inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     

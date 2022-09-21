@@ -8,5 +8,5 @@ object campaignResponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_CampaignResponse", "_CampaignResponse")
   @js.native
-  val CampaignResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CampaignResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

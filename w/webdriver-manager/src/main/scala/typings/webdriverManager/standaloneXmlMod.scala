@@ -9,10 +9,10 @@ object standaloneXmlMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/standalone_xml", "StandaloneXml")
   @js.native
-  class StandaloneXml () extends XmlConfigSource {
+  open class StandaloneXml () extends XmlConfigSource {
     
-    /* private */ def getLatestStandaloneVersion(): js.Any = js.native
+    /* private */ def getLatestStandaloneVersion(): Any = js.native
     
-    /* private */ def getSpecificStandaloneVersion(inputVersion: js.Any): js.Any = js.native
+    /* private */ def getSpecificStandaloneVersion(inputVersion: Any): Any = js.native
   }
 }

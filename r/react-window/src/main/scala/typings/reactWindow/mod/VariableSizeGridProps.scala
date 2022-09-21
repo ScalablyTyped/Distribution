@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariableSizeGridProps
+trait VariableSizeGridProps[T]
   extends StObject
-     with GridProps {
+     with GridProps[T] {
   
   /**
     * Returns the width of the specified column.
@@ -37,20 +37,20 @@ trait VariableSizeGridProps
 }
 object VariableSizeGridProps {
   
-  inline def apply(
-    children: ComponentType[GridChildComponentProps],
+  inline def apply[T](
+    children: ComponentType[GridChildComponentProps[T]],
     columnCount: Double,
     columnWidth: Double => Double,
     height: Double,
     rowCount: Double,
     rowHeight: Double => Double,
     width: Double
-  ): VariableSizeGridProps = {
+  ): VariableSizeGridProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnWidth = js.Any.fromFunction1(columnWidth), height = height.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowHeight = js.Any.fromFunction1(rowHeight), width = width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[VariableSizeGridProps]
+    __obj.asInstanceOf[VariableSizeGridProps[T]]
   }
   
-  extension [Self <: VariableSizeGridProps](x: Self) {
+  extension [Self <: VariableSizeGridProps[?], T](x: Self & VariableSizeGridProps[T]) {
     
     inline def setColumnWidth(value: Double => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     

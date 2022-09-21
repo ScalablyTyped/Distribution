@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemClickEventArgs")
 @js.native
-class ASPxClientDashboardItemClickEventArgs ()
+open class ASPxClientDashboardItemClickEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemClickEventArgs {
   

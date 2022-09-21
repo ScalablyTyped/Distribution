@@ -23,7 +23,7 @@ object XDocumentLanguages {
   inline def apply(
     acquire: () => Unit,
     getDocumentLanguages: (Double, Double) => SafeArray[Locale],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDocumentLanguages = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDocumentLanguages = js.Any.fromFunction2(getDocumentLanguages), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -28,6 +28,10 @@ object reactNativeSafeAreaContextStrings {
   inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
+  sealed trait paperInsetsChange extends StObject
+  inline def paperInsetsChange: paperInsetsChange = "paperInsetsChange".asInstanceOf[paperInsetsChange]
+  
+  @js.native
   sealed trait right
     extends StObject
        with Edge

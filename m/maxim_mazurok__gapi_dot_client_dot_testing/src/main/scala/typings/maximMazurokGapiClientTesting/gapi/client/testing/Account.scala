@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Account extends StObject {
   
   /** An automatic google login account. */
-  var googleAuto: js.UndefOr[js.Any] = js.undefined
+  var googleAuto: js.UndefOr[Any] = js.undefined
 }
 object Account {
   
@@ -18,7 +18,7 @@ object Account {
   
   extension [Self <: Account](x: Self) {
     
-    inline def setGoogleAuto(value: js.Any): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
+    inline def setGoogleAuto(value: Any): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
     
     inline def setGoogleAutoUndefined: Self = StObject.set(x, "googleAuto", js.undefined)
   }

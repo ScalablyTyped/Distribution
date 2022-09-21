@@ -36,22 +36,22 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngAggregate")
   @js.native
-  class ngAggregate protected ()
+  open class ngAggregate protected ()
     extends StObject
        with IAggregate {
-    def this(aggEntity: js.Any, rowFactory: IRowFactory, rowHeight: Double, groupInitState: Boolean) = this()
+    def this(aggEntity: Any, rowFactory: IRowFactory, rowHeight: Double, groupInitState: Boolean) = this()
     
     /* CompleteClass */
-    var aggChildren: js.Array[js.Any] = js.native
+    var aggChildren: js.Array[Any] = js.native
     
     /* CompleteClass */
     var aggIndex: Double = js.native
     
     /* CompleteClass */
-    var aggLabelFilter: js.Any = js.native
+    var aggLabelFilter: Any = js.native
     
     /* CompleteClass */
-    var children: js.Array[js.Any] = js.native
+    var children: js.Array[Any] = js.native
     
     /* CompleteClass */
     var collapsed: Boolean = js.native
@@ -60,7 +60,7 @@ object global {
     var depth: Double = js.native
     
     /* CompleteClass */
-    var entity: js.Any = js.native
+    var entity: Any = js.native
     
     /* CompleteClass */
     var field: String = js.native
@@ -81,7 +81,7 @@ object global {
     var offsetTop: Double = js.native
     
     /* CompleteClass */
-    var parent: js.Any = js.native
+    var parent: Any = js.native
     
     /* CompleteClass */
     var rowFactory: IRowFactory = js.native
@@ -100,7 +100,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngColumn")
   @js.native
-  class ngColumn protected ()
+  open class ngColumn protected ()
     extends StObject
        with IColumn {
     def this(
@@ -108,21 +108,21 @@ object global {
       $scope: IGridScope,
       grid: IGridInstance,
       domUtilityService: IDomUtilityService,
-      $templateCache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ js.Any,
-      $utils: js.Any
+      $templateCache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ Any,
+      $utils: Any
     ) = this()
     
     /* CompleteClass */
-    var aggLabelFilter: js.Any = js.native
+    var aggLabelFilter: Any = js.native
     
     /* CompleteClass */
     var cellClass: String = js.native
     
     /* CompleteClass */
-    var cellEditableCondition: js.Any = js.native
+    var cellEditableCondition: Any = js.native
     
     /* CompleteClass */
-    var cellFilter: js.Any = js.native
+    var cellFilter: Any = js.native
     
     /* CompleteClass */
     var cellTemplate: String = js.native
@@ -146,13 +146,13 @@ object global {
     var field: String = js.native
     
     /* CompleteClass */
-    override def gripClick(): js.Any = js.native
+    override def gripClick(): Any = js.native
     
     /* CompleteClass */
-    override def gripOnMouseDown(event: js.Any): js.Any = js.native
+    override def gripOnMouseDown(event: Any): Any = js.native
     
     /* CompleteClass */
-    override def gripOnMouseUp(event: js.Any): Unit = js.native
+    override def gripOnMouseUp(event: Any): Unit = js.native
     
     /* CompleteClass */
     var groupIndex: Double = js.native
@@ -191,7 +191,7 @@ object global {
     override def noSortVisible(): Boolean = js.native
     
     /* CompleteClass */
-    override def onMouseMove(event: js.Any): Unit = js.native
+    override def onMouseMove(event: Any): Unit = js.native
     
     /* CompleteClass */
     var originalIndex: Double = js.native
@@ -215,7 +215,7 @@ object global {
     override def showSortButtonUp(): Boolean = js.native
     
     /* CompleteClass */
-    override def sort(event: js.Any): Boolean = js.native
+    override def sort(event: Any): Boolean = js.native
     
     /* CompleteClass */
     var sortDirection: String = js.native
@@ -246,10 +246,10 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngDimension")
   @js.native
-  class ngDimension protected ()
+  open class ngDimension protected ()
     extends StObject
        with IDimension {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   @JSGlobal("ngDimension")
   @js.native
@@ -259,14 +259,14 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngEventProvider")
   @js.native
-  class ngEventProvider protected ()
+  open class ngEventProvider protected ()
     extends StObject
        with IEventProvider {
     def this(
       grid: IGridInstance,
       $scope: IGridScope,
       domUtilityService: IDomUtilityService,
-      $timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ js.Any
+      $timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ Any
     ) = this()
     
     /* CompleteClass */
@@ -279,25 +279,25 @@ object global {
     var colToMove: IColumn = js.native
     
     /* CompleteClass */
-    override def dragOver(event: js.Any): Unit = js.native
+    override def dragOver(event: Any): Unit = js.native
     
     /* CompleteClass */
-    override def dragStart(event: js.Any): Unit = js.native
+    override def dragStart(event: Any): Unit = js.native
     
     /* CompleteClass */
-    var groupToMove: js.Any = js.native
+    var groupToMove: Any = js.native
     
     /* CompleteClass */
-    override def onGroupDrop(event: js.Any): Unit = js.native
+    override def onGroupDrop(event: Any): Unit = js.native
     
     /* CompleteClass */
-    override def onGroupMouseDown(event: js.Any): Unit = js.native
+    override def onGroupMouseDown(event: Any): Unit = js.native
     
     /* CompleteClass */
-    override def onHeaderDrop(event: js.Any): Unit = js.native
+    override def onHeaderDrop(event: Any): Unit = js.native
     
     /* CompleteClass */
-    override def onHeaderMouseDown(event: js.Any): Unit = js.native
+    override def onHeaderMouseDown(event: Any): Unit = js.native
     
     /* CompleteClass */
     override def setDraggables(): Unit = js.native
@@ -310,7 +310,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngFooter")
   @js.native
-  class ngFooter protected ()
+  open class ngFooter protected ()
     extends StObject
        with IFooter {
     def this($scope: IGridScope, grid: IGridInstance) = this()
@@ -322,14 +322,14 @@ object global {
   
   @JSGlobal("ngGridReorderable")
   @js.native
-  class ngGridReorderable ()
+  open class ngGridReorderable ()
     extends StObject
        with typings.ngGrid.ngGridReorderable
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngRenderedRange")
   @js.native
-  class ngRenderedRange protected ()
+  open class ngRenderedRange protected ()
     extends StObject
        with IRenderedRange {
     def this(top: Double, bottom: Double) = this()
@@ -348,15 +348,15 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngRow")
   @js.native
-  class ngRow protected ()
+  open class ngRow protected ()
     extends StObject
        with IRow {
     def this(
-      entity: js.Any,
+      entity: Any,
       config: IRowConfig,
       selectionProvider: ISelectionProvider,
       rowIndex: Double,
-      $utils: js.Any
+      $utils: Any
     ) = this()
     
     /* CompleteClass */
@@ -372,7 +372,7 @@ object global {
     var config: IRowConfig = js.native
     
     /* CompleteClass */
-    override def continueSelection(event: js.Any): Unit = js.native
+    override def continueSelection(event: Any): Unit = js.native
     
     /* CompleteClass */
     override def copy(): IRow = js.native
@@ -381,13 +381,13 @@ object global {
     var cursor: String = js.native
     
     /* CompleteClass */
-    override def ensureEntity(expected: js.Any): Unit = js.native
+    override def ensureEntity(expected: Any): Unit = js.native
     
     /* CompleteClass */
-    var entity: js.Any = js.native
+    var entity: Any = js.native
     
     /* CompleteClass */
-    override def getProperty(path: String): js.Any = js.native
+    override def getProperty(path: String): Any = js.native
     
     /* CompleteClass */
     var offsetTop: Double = js.native
@@ -411,10 +411,10 @@ object global {
     override def setVars(fromRow: IRow): Unit = js.native
     
     /* CompleteClass */
-    override def toggleSelected(event: js.Any): Boolean = js.native
+    override def toggleSelected(event: Any): Boolean = js.native
     
     /* CompleteClass */
-    var utils: js.Any = js.native
+    var utils: Any = js.native
   }
   @JSGlobal("ngRow")
   @js.native
@@ -424,13 +424,13 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngSearchProvider")
   @js.native
-  class ngSearchProvider protected ()
+  open class ngSearchProvider protected ()
     extends StObject
        with ISearchProvider {
     def this(
       $scope: IGridScope,
       grid: IGridInstance,
-      $filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ js.Any
+      $filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ Any
     ) = this()
     
     /* CompleteClass */
@@ -440,7 +440,7 @@ object global {
     var extFilter: Boolean = js.native
     
     /* CompleteClass */
-    var fieldMap: js.Any = js.native
+    var fieldMap: Any = js.native
   }
   @JSGlobal("ngSearchProvider")
   @js.native
@@ -450,41 +450,41 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngSelectionProvider")
   @js.native
-  class ngSelectionProvider protected ()
+  open class ngSelectionProvider protected ()
     extends StObject
        with ISelectionProvider {
     def this(
       grid: IGridInstance,
       $scope: IGridScope,
-      $parse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IParseService */ js.Any
+      $parse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IParseService */ Any
     ) = this()
     
     /* CompleteClass */
-    override def ChangeSelection(rowItem: js.Any, event: js.Any): Unit = js.native
+    override def ChangeSelection(rowItem: Any, event: Any): Unit = js.native
     
     /* CompleteClass */
-    override def getSelection(entity: js.Any): Double = js.native
+    override def getSelection(entity: Any): Double = js.native
     
     /* CompleteClass */
-    override def getSelectionIndex(entity: js.Any): Double = js.native
+    override def getSelectionIndex(entity: Any): Double = js.native
     
     /* CompleteClass */
     var ignoreSelectedItemChanges: Boolean = js.native
     
     /* CompleteClass */
-    var lastClickedRow: js.Any = js.native
+    var lastClickedRow: Any = js.native
     
     /* CompleteClass */
     var multi: Boolean = js.native
     
     /* CompleteClass */
-    var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any = js.native
+    var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ Any = js.native
     
     /* CompleteClass */
     var selectedIndex: Double = js.native
     
     /* CompleteClass */
-    var selectedItems: js.Array[js.Any] = js.native
+    var selectedItems: js.Array[Any] = js.native
     
     /* CompleteClass */
     override def setSelection(rowItem: IRow, isSelected: Boolean): Unit = js.native
@@ -500,7 +500,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngStyleProvider")
   @js.native
-  class ngStyleProvider protected ()
+  open class ngStyleProvider protected ()
     extends StObject
        with IStyleProvider {
     def this($scope: IGridScope, grid: IGridInstance) = this()

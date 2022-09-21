@@ -10,10 +10,10 @@ The lodash method `_.defer` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.defer |
 | Keywords           | lodash-modularized, defer |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 307013 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 41545.333333333336 |
+| # stars            | 53605.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

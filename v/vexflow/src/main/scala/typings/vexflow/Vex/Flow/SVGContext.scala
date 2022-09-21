@@ -13,7 +13,7 @@ trait SVGContext
   extends StObject
      with IRenderContext {
   
-  var attributes: js.Any = js.native
+  var attributes: Any = js.native
   
   def ieMeasureTextFix(bbox: SVGRect, text: String): Y = js.native
   
@@ -27,7 +27,7 @@ trait SVGContext
   
   def setViewBox(xMin: Double, yMin: Double, width: Double, height: Double): Unit = js.native
   
-  var state: js.Any = js.native
+  var state: Any = js.native
   
   var svg: SVGElement = js.native
 }

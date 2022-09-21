@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A border around a paragraph.
-  */
 trait SchemaParagraphBorder extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaParagraphBorder extends StObject {
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.undefined
+  var dashStyle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The padding of the border.
@@ -43,6 +40,8 @@ object SchemaParagraphBorder {
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleNull: Self = StObject.set(x, "dashStyle", null)
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     

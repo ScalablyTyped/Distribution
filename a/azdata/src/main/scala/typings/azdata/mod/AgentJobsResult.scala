@@ -21,6 +21,6 @@ object AgentJobsResult {
     
     inline def setJobs(value: js.Array[AgentJobInfo]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    inline def setJobsVarargs(value: AgentJobInfo*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: AgentJobInfo*): Self = StObject.set(x, "jobs", js.Array(value*))
   }
 }

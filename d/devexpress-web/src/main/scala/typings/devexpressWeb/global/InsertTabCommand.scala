@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTabCommand")
 @js.native
-class InsertTabCommand ()
+open class InsertTabCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTabCommand {
   

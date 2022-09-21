@@ -9,12 +9,12 @@ trait UpdateComponentRequest extends StObject {
   /**
     * The name of the component.
     */
-  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName
+  var ComponentName: CustomComponentName
   
   /**
     * The new name of the component.
     */
-  var NewComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.NewComponentName] = js.undefined
+  var NewComponentName: js.UndefOr[CustomComponentName] = js.undefined
   
   /**
     * The name of the resource group.
@@ -28,16 +28,16 @@ trait UpdateComponentRequest extends StObject {
 }
 object UpdateComponentRequest {
   
-  inline def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): UpdateComponentRequest = {
+  inline def apply(ComponentName: CustomComponentName, ResourceGroupName: ResourceGroupName): UpdateComponentRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComponentRequest]
   }
   
   extension [Self <: UpdateComponentRequest](x: Self) {
     
-    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: CustomComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
-    inline def setNewComponentName(value: NewComponentName): Self = StObject.set(x, "NewComponentName", value.asInstanceOf[js.Any])
+    inline def setNewComponentName(value: CustomComponentName): Self = StObject.set(x, "NewComponentName", value.asInstanceOf[js.Any])
     
     inline def setNewComponentNameUndefined: Self = StObject.set(x, "NewComponentName", js.undefined)
     
@@ -47,6 +47,6 @@ object UpdateComponentRequest {
     
     inline def setResourceListUndefined: Self = StObject.set(x, "ResourceList", js.undefined)
     
-    inline def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value :_*))
+    inline def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value*))
   }
 }

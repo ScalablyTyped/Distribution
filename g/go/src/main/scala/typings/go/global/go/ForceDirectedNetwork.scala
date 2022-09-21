@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class ForceDirectedNetwork ()
+open class ForceDirectedNetwork ()
   extends typings.go.mod.ForceDirectedNetwork

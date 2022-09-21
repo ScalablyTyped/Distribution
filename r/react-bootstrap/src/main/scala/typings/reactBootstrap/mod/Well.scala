@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Well")
 @js.native
-class Well ()
+open class Well ()
   extends typings.reactBootstrap.libMod.Well

@@ -1,7 +1,7 @@
 
 # Scala.js typings for macos-version
 
-Typings are for version 5.2.0
+Typings are for version 6.0.0
 
 ## Library description:
 Get or check the current macOS version
@@ -10,10 +10,10 @@ Get or check the current macOS version
 | ------------------ | :-------------: |
 | Full name          | macos-version |
 | Keywords           | macos, os, darwin, operating, system, platform, version, release, semver, check, assert, condition |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 119623 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 32562.0 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/macos-version#readme)

@@ -1,6 +1,6 @@
 package typings.phpSerialize
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.phpSerialize.phpSerializeStrings.binary
 import typings.phpSerialize.phpSerializeStrings.utf8
 import org.scalablytyped.runtime.StObject
@@ -13,22 +13,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isSerialized(givenItem: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isSerialized(givenItem: js.Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSerialized(givenItem: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSerialized(givenItem: Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def serialize(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def serialize(item: js.Any, scope: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def serialize(item: js.Any, scope: js.Any, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def serialize(item: js.Any, scope: Unit, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(item: Any, scope: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(item: Any, scope: Any, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(item: Any, scope: Unit, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def unserialize(item: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def unserialize(item: String, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unserialize(item: String, scope: js.Any, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unserialize(item: String, scope: Unit, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unserialize(item: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def unserialize(item: Buffer, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unserialize(item: Buffer, scope: js.Any, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def unserialize(item: Buffer, scope: Unit, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def unserialize(item: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def unserialize(item: String, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unserialize(item: String, scope: Any, givenOptions: UnserializeOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unserialize(item: String, scope: Unit, givenOptions: UnserializeOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unserialize(item: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def unserialize(item: Buffer, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unserialize(item: Buffer, scope: Any, givenOptions: UnserializeOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unserialize(item: Buffer, scope: Unit, givenOptions: UnserializeOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait SerializeOptions extends StObject {
     

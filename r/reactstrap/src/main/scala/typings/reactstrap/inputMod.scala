@@ -5,9 +5,9 @@ import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.Ref
-import typings.reactstrap.mod.CSSModule
 import typings.reactstrap.reactstrapStrings.lg
 import typings.reactstrap.reactstrapStrings.sm
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
@@ -16,17 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inputMod {
   
-  @JSImport("reactstrap/lib/Input", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Input", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[InputProps, js.Object, js.Any]
+  open class default ()
+    extends Component[InputProps, js.Object, Any]
   
-  type Input = Component[InputProps, js.Object, js.Any]
+  type Input = Component[InputProps, js.Object, Any]
   
   trait InputProps
     extends StObject
        with InputHTMLAttributes[HTMLInputElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var addon: js.UndefOr[Boolean] = js.undefined
     
@@ -40,7 +40,7 @@ object inputMod {
     
     var plaintext: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     @JSName("type")
     var type_InputProps: js.UndefOr[InputType] = js.undefined
@@ -84,7 +84,7 @@ object inputMod {
       
       inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
@@ -105,6 +105,7 @@ object inputMod {
     - typings.reactstrap.reactstrapStrings.file
     - typings.reactstrap.reactstrapStrings.radio
     - typings.reactstrap.reactstrapStrings.checkbox
+    - typings.reactstrap.reactstrapStrings.switch
     - typings.reactstrap.reactstrapStrings.textarea
     - typings.reactstrap.reactstrapStrings.button
     - typings.reactstrap.reactstrapStrings.reset
@@ -165,6 +166,8 @@ object inputMod {
     inline def select: typings.reactstrap.reactstrapStrings.select = "select".asInstanceOf[typings.reactstrap.reactstrapStrings.select]
     
     inline def submit: typings.reactstrap.reactstrapStrings.submit = "submit".asInstanceOf[typings.reactstrap.reactstrapStrings.submit]
+    
+    inline def switch: typings.reactstrap.reactstrapStrings.switch = "switch".asInstanceOf[typings.reactstrap.reactstrapStrings.switch]
     
     inline def tel: typings.reactstrap.reactstrapStrings.tel = "tel".asInstanceOf[typings.reactstrap.reactstrapStrings.tel]
     

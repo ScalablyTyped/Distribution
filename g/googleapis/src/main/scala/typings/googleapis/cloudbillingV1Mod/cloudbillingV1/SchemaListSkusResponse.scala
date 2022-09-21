@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for `ListSkus`.
-  */
 trait SchemaListSkusResponse extends StObject {
   
   /**
-    * A token to retrieve the next page of results. To retrieve the next page,
-    * call `ListSkus` again with the `page_token` field set to this value. This
-    * field is empty if there are no more results to retrieve.
+    * A token to retrieve the next page of results. To retrieve the next page, call `ListSkus` again with the `page_token` field set to this value. This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of public SKUs of the given service.
@@ -32,12 +27,14 @@ object SchemaListSkusResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setSkus(value: js.Array[SchemaSku]): Self = StObject.set(x, "skus", value.asInstanceOf[js.Any])
     
     inline def setSkusUndefined: Self = StObject.set(x, "skus", js.undefined)
     
-    inline def setSkusVarargs(value: SchemaSku*): Self = StObject.set(x, "skus", js.Array(value :_*))
+    inline def setSkusVarargs(value: SchemaSku*): Self = StObject.set(x, "skus", js.Array(value*))
   }
 }

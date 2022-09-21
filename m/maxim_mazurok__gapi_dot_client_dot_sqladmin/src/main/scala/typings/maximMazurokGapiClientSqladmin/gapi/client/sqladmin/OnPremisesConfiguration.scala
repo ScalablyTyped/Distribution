@@ -21,11 +21,14 @@ trait OnPremisesConfiguration extends StObject {
   /** The host and port of the on-premises instance in host:port format */
   var hostPort: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#onPremisesConfiguration*. */
+  /** This is always `sql#onPremisesConfiguration`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The password for connecting to on-premises instance. */
   var password: js.UndefOr[String] = js.undefined
+  
+  /** The reference to Cloud SQL instance if the source is Cloud SQL. */
+  var sourceInstance: js.UndefOr[InstanceReference] = js.undefined
   
   /** The username for connecting to on-premises instance. */
   var username: js.UndefOr[String] = js.undefined
@@ -66,6 +69,10 @@ object OnPremisesConfiguration {
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setSourceInstance(value: InstanceReference): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
+    
+    inline def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

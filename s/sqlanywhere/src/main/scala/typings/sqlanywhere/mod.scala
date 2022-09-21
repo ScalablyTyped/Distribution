@@ -1,6 +1,5 @@
 package typings.sqlanywhere
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,40 +58,40 @@ object mod {
   @js.native
   trait Statement extends StObject {
     
-    def drop(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def drop(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def exec(args: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def exec(args: js.Array[Any]): js.Array[Any] = js.native
     def exec(
-      args: js.Array[js.Any],
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* rows */ js.Array[js.Any], Unit]
+      args: js.Array[Any],
+      cb: js.Function2[/* err */ js.UndefOr[js.Error], /* rows */ js.Array[Any], Unit]
     ): Unit = js.native
     
-    def getMoreResults(): js.Array[js.Any] = js.native
+    def getMoreResults(): js.Array[Any] = js.native
   }
   
   @js.native
   trait SybaseConnection extends StObject {
     
-    def close(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def close(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def commit(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def commit(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def connect(params: ConnectionParameters, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def connect(params: ConnectionParameters, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def connected(): Boolean = js.native
     
-    def disconnect(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def disconnect(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def exec(query: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.Any, Unit]): Unit = js.native
+    def exec(query: String, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ Any, Unit]): Unit = js.native
     def exec(
       query: String,
-      placeholders: js.Array[js.Any],
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.Any, Unit]
+      placeholders: js.Array[Any],
+      cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ Any, Unit]
     ): Unit = js.native
     
     def prepare(query: String): Statement = js.native
-    def prepare(query: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* stmt */ Statement, Unit]): Unit = js.native
+    def prepare(query: String, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* stmt */ Statement, Unit]): Unit = js.native
     
-    def rollback(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def rollback(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   }
 }

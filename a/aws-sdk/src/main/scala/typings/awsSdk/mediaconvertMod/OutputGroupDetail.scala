@@ -24,6 +24,6 @@ object OutputGroupDetail {
     
     inline def setOutputDetailsUndefined: Self = StObject.set(x, "OutputDetails", js.undefined)
     
-    inline def setOutputDetailsVarargs(value: OutputDetail*): Self = StObject.set(x, "OutputDetails", js.Array(value :_*))
+    inline def setOutputDetailsVarargs(value: OutputDetail*): Self = StObject.set(x, "OutputDetails", js.Array(value*))
   }
 }

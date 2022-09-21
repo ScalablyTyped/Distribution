@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "Scheduler")
 @js.native
-class Scheduler ()
+open class Scheduler ()
   extends typings.wonderFrp.schedulerMod.Scheduler
 /* static members */
 object Scheduler {
@@ -15,5 +15,5 @@ object Scheduler {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(args: js.Any*): typings.wonderFrp.schedulerMod.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.schedulerMod.Scheduler]
+  inline def create(args: Any*): typings.wonderFrp.schedulerMod.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.wonderFrp.schedulerMod.Scheduler]
 }

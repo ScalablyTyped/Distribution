@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientLineStyle")
 @js.native
-class ASPxClientLineStyle ()
+open class ASPxClientLineStyle ()
   extends StObject
      with typings.devexpressWeb.ASPxClientLineStyle {
   

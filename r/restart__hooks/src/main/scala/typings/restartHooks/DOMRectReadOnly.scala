@@ -19,7 +19,7 @@ trait DOMRectReadOnly extends StObject {
   
   val right: Double = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   val top: Double = js.native
   

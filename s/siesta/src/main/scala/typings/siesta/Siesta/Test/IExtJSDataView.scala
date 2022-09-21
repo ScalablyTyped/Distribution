@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IExtJSDataView extends StObject {
   
-  def getFirstItem(view: js.Any): js.Any = js.native
+  def getFirstItem(view: Any): Any = js.native
   
-  def waitForViewRendered(view: js.Any, callback: js.Function): Unit = js.native
-  def waitForViewRendered(view: js.Any, callback: js.Function, scope: js.Any): Unit = js.native
-  def waitForViewRendered(view: js.Any, callback: js.Function, scope: js.Any, timeout: Double): Unit = js.native
-  def waitForViewRendered(view: js.Any, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
+  def waitForViewRendered(view: Any, callback: js.Function): Unit = js.native
+  def waitForViewRendered(view: Any, callback: js.Function, scope: Any): Unit = js.native
+  def waitForViewRendered(view: Any, callback: js.Function, scope: Any, timeout: Double): Unit = js.native
+  def waitForViewRendered(view: Any, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
 }

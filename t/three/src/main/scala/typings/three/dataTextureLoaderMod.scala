@@ -14,26 +14,26 @@ object dataTextureLoaderMod {
   
   @JSImport("three/src/loaders/DataTextureLoader", "DataTextureLoader")
   @js.native
-  class DataTextureLoader () extends Loader {
+  open class DataTextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
-    def load(url: String, onLoad: js.Function1[/* dataTexture */ DataTexture, Unit]): Unit = js.native
+    def load(url: String, onLoad: js.Function2[/* dataTexture */ DataTexture, /* texData */ js.Object, Unit]): DataTexture = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* dataTexture */ DataTexture, Unit],
+      onLoad: js.Function2[/* dataTexture */ DataTexture, /* texData */ js.Object, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): Unit = js.native
+    ): DataTexture = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* dataTexture */ DataTexture, Unit],
+      onLoad: js.Function2[/* dataTexture */ DataTexture, /* texData */ js.Object, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): Unit = js.native
+    ): DataTexture = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* dataTexture */ DataTexture, Unit],
+      onLoad: js.Function2[/* dataTexture */ DataTexture, /* texData */ js.Object, Unit],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): Unit = js.native
+    ): DataTexture = js.native
   }
 }

@@ -1,7 +1,6 @@
 package typings.srp
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("srp", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(params: Params_, salt: Buffer, identity: Buffer, password: Buffer, secret1: Buffer) = this()
     
     def checkM2(M2: Buffer): Unit = js.native
@@ -30,7 +29,7 @@ object mod {
   
   @JSImport("srp", "Server")
   @js.native
-  class Server protected () extends StObject {
+  open class Server protected () extends StObject {
     def this(params: Params_, verifier: Buffer, secret2: Buffer) = this()
     
     def checkM1(M1: Buffer): Buffer = js.native
@@ -44,8 +43,8 @@ object mod {
   
   inline def computeVerifier(params: Params_, salt: Buffer, I: Buffer, P: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("computeVerifier")(params.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], I.asInstanceOf[js.Any], P.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def genKey(bytes: Double, callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(bytes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def genKey(callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def genKey(bytes: Double, callback: js.Function2[/* error */ js.Error, /* key */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(bytes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def genKey(callback: js.Function2[/* error */ js.Error, /* key */ Buffer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Params_ extends StObject {
     

@@ -3,7 +3,6 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.enumsMod.Boundary
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.typesMod.Padding
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object PartialOptionsAllowedAutoPlacements {
     
     inline def setAllowedAutoPlacementsUndefined: Self = StObject.set(x, "allowedAutoPlacements", js.undefined)
     
-    inline def setAllowedAutoPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value :_*))
+    inline def setAllowedAutoPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
     
     inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
     
@@ -56,13 +55,13 @@ object PartialOptionsAllowedAutoPlacements {
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
     
     inline def setFallbackPlacements(value: js.Array[typings.popperjsCore.enumsMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     
     inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
     
-    inline def setFallbackPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value :_*))
+    inline def setFallbackPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
     
     inline def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
     

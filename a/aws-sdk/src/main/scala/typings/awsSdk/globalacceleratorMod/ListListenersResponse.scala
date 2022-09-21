@@ -29,7 +29,7 @@ object ListListenersResponse {
     
     inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

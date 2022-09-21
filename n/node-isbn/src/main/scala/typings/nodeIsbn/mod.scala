@@ -6,7 +6,6 @@ import typings.nodeIsbn.anon.GOOGLE
 import typings.nodeIsbn.anon.SmallThumbnail
 import typings.nodeIsbn.mod.isbn.Isbn
 import typings.nodeIsbn.nodeIsbnStrings.BOOK
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,11 +72,11 @@ object mod extends Shortcut {
         
         inline def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
         
-        inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+        inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value*))
         
         inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
-        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -89,7 +88,7 @@ object mod extends Shortcut {
         
         inline def setIndustryIdentifiers(value: js.Array[String]): Self = StObject.set(x, "industryIdentifiers", value.asInstanceOf[js.Any])
         
-        inline def setIndustryIdentifiersVarargs(value: String*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
+        inline def setIndustryIdentifiersVarargs(value: String*): Self = StObject.set(x, "industryIdentifiers", js.Array(value*))
         
         inline def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
         
@@ -148,20 +147,41 @@ object mod extends Shortcut {
         *  .resolve(...)
         * ```
         */
-      def provider(providers: js.Array[String]): this.type = js.native
+      def provider(providers: Providers): this.type = js.native
       
+      def resolve(isbn: String): js.Promise[Book] = js.native
       def resolve(isbn: String, callback: ResolveCallback): Unit = js.native
       /**
         * Resolves book info, given an isbn
         * @param isbn
         */
-      def resolve(isbn: String, options: AxiosRequestConfig): Unit = js.native
-      def resolve(isbn: String, options: AxiosRequestConfig, callback: ResolveCallback): Unit = js.native
-      def resolve(isnb: String): js.Promise[Book] = js.native
+      def resolve(isbn: String, options: AxiosRequestConfig[Any]): Unit = js.native
+      def resolve(isbn: String, options: AxiosRequestConfig[Any], callback: ResolveCallback): Unit = js.native
       @JSName("resolve")
-      def resolve_Promise(isnb: String, options: AxiosRequestConfig): js.Promise[Book] = js.native
+      def resolve_Promise(isbn: String, options: AxiosRequestConfig[Any]): js.Promise[Book] = js.native
     }
     
-    type ResolveCallback = js.Function2[/* error */ Error | Null, /* book */ Book, Unit]
+    /* Inlined {  GOOGLE :'google',   OPENLIBRARY :'openlibrary',   WORLDCAT :'worldcat',   ISBNDB :'isbndb'}[keyof {  GOOGLE :'google',   OPENLIBRARY :'openlibrary',   WORLDCAT :'worldcat',   ISBNDB :'isbndb'}] */
+    /* Rewritten from type alias, can be one of: 
+      - typings.nodeIsbn.nodeIsbnStrings.google
+      - typings.nodeIsbn.nodeIsbnStrings.openlibrary
+      - typings.nodeIsbn.nodeIsbnStrings.worldcat
+      - typings.nodeIsbn.nodeIsbnStrings.isbndb
+    */
+    trait Provider extends StObject
+    object Provider {
+      
+      inline def google: typings.nodeIsbn.nodeIsbnStrings.google = "google".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.google]
+      
+      inline def isbndb: typings.nodeIsbn.nodeIsbnStrings.isbndb = "isbndb".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.isbndb]
+      
+      inline def openlibrary: typings.nodeIsbn.nodeIsbnStrings.openlibrary = "openlibrary".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.openlibrary]
+      
+      inline def worldcat: typings.nodeIsbn.nodeIsbnStrings.worldcat = "worldcat".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.worldcat]
+    }
+    
+    type Providers = js.Array[Provider]
+    
+    type ResolveCallback = js.Function2[/* error */ js.Error | Null, /* book */ Book, Unit]
   }
 }

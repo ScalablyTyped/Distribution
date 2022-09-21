@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.HingeConstraint")
 @js.native
-class HingeConstraint protected ()
+open class HingeConstraint protected ()
   extends StObject
      with typings.cannon.CANNON.HingeConstraint {
   def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()
@@ -16,6 +16,12 @@ class HingeConstraint protected ()
     bodyB: typings.cannon.CANNON.Body,
     options: IHingeConstraintOptions
   ) = this()
+  
+  /* CompleteClass */
+  var axisA: typings.cannon.CANNON.Vec3 = js.native
+  
+  /* CompleteClass */
+  var axisB: typings.cannon.CANNON.Vec3 = js.native
   
   /* CompleteClass */
   var bodyA: typings.cannon.CANNON.Body = js.native
@@ -39,7 +45,7 @@ class HingeConstraint protected ()
   override def enableMotor(): Unit = js.native
   
   /* CompleteClass */
-  var equations: js.Array[js.Any] = js.native
+  var equations: js.Array[Any] = js.native
   
   /* CompleteClass */
   var id: Double = js.native
@@ -58,6 +64,9 @@ class HingeConstraint protected ()
   
   /* CompleteClass */
   var motorTargetVelocity: Double = js.native
+  
+  /* CompleteClass */
+  override def setMotorSpeed(speed: Double): Unit = js.native
   
   /* CompleteClass */
   override def update(): Unit = js.native

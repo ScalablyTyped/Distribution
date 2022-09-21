@@ -632,8 +632,8 @@ object FlexSlider {
     /**
       * returns boolean if slider can advance
       */
-    def canAdvance(target: js.Any): Boolean = js.native
-    def canAdvance(target: js.Any, fromNav: Boolean): Boolean = js.native
+    def canAdvance(target: Any): Boolean = js.native
+    def canAdvance(target: Any, fromNav: Boolean): Boolean = js.native
     
     /**
       * The ul.slides within the slider
@@ -668,30 +668,27 @@ object FlexSlider {
     /**
       * Move slider
       */
-    def flexAnimate(target: js.Any): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Boolean, withSync: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Boolean, withSync: Boolean, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Boolean, withSync: Unit, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Unit, withSync: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Unit, withSync: Boolean, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Boolean, `override`: Unit, withSync: Unit, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Boolean, withSync: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Boolean, withSync: Boolean, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Boolean, withSync: Unit, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Unit, withSync: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Unit, withSync: Boolean, fromNav: Boolean): js.Any = js.native
-    def flexAnimate(target: js.Any, pause: Unit, `override`: Unit, withSync: Unit, fromNav: Boolean): js.Any = js.native
+    def flexAnimate(target: Any): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Boolean, withSync: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Boolean, withSync: Boolean, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Boolean, withSync: Unit, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Unit, withSync: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Unit, withSync: Boolean, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Boolean, `override`: Unit, withSync: Unit, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Boolean, withSync: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Boolean, withSync: Boolean, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Boolean, withSync: Unit, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Unit, withSync: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Unit, withSync: Boolean, fromNav: Boolean): Any = js.native
+    def flexAnimate(target: Any, pause: Unit, `override`: Unit, withSync: Unit, fromNav: Boolean): Any = js.native
     
     /**
       * get target given a direction
       */
-    @JSName("getTarget")
-    def getTarget_next(dir: next): js.Any = js.native
-    @JSName("getTarget")
-    def getTarget_prev(dir: prev): js.Any = js.native
+    def getTarget(dir: next | prev): Any = js.native
     
     var length: Double = js.native
     
@@ -708,7 +705,7 @@ object FlexSlider {
     /**
       * Pause slider slideshow interval
       */
-    def pause(): js.Any = js.native
+    def pause(): Any = js.native
     
     /**
       * Play slider slideshow interval
@@ -718,7 +715,7 @@ object FlexSlider {
     /**
       * Resume slider slideshow interval
       */
-    def resume(): js.Any = js.native
+    def resume(): Any = js.native
     
     /**
       * The slides of the slider

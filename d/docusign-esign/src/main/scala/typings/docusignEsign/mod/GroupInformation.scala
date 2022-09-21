@@ -58,7 +58,7 @@ object GroupInformation {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     

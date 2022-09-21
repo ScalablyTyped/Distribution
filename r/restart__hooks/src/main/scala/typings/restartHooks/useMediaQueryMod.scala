@@ -12,4 +12,6 @@ object useMediaQueryMod {
   
   inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
   inline def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(query: String, targetWindow: Window): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(query: Null, targetWindow: Window): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -13,7 +13,7 @@ object gherkinExeMod {
   
   @JSImport("gherkin/dist/src/external/GherkinExe", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with GherkinExe {
     def this(
@@ -27,44 +27,44 @@ object gherkinExeMod {
     override def dialects(): StringDictionary[Dialect] = js.native
     
     /* private */ /* CompleteClass */
-    override val envelopes: js.Any = js.native
+    override val envelopes: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val gherkinExe: js.Any = js.native
+    override val gherkinExe: Any = js.native
     
     /* CompleteClass */
     override def messageStream(): Readable = js.native
     
     /* private */ /* CompleteClass */
-    override val options: js.Any = js.native
+    override val options: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val paths: js.Any = js.native
+    override val paths: Any = js.native
   }
   
   trait GherkinExe extends StObject {
     
     def dialects(): StringDictionary[Dialect]
     
-    /* private */ val envelopes: js.Any
+    /* private */ val envelopes: Any
     
-    /* private */ val gherkinExe: js.Any
+    /* private */ val gherkinExe: Any
     
     def messageStream(): Readable
     
-    /* private */ val options: js.Any
+    /* private */ val options: Any
     
-    /* private */ val paths: js.Any
+    /* private */ val paths: Any
   }
   object GherkinExe {
     
     inline def apply(
       dialects: () => StringDictionary[Dialect],
-      envelopes: js.Any,
-      gherkinExe: js.Any,
+      envelopes: Any,
+      gherkinExe: Any,
       messageStream: () => Readable,
-      options: js.Any,
-      paths: js.Any
+      options: Any,
+      paths: Any
     ): GherkinExe = {
       val __obj = js.Dynamic.literal(dialects = js.Any.fromFunction0(dialects), envelopes = envelopes.asInstanceOf[js.Any], gherkinExe = gherkinExe.asInstanceOf[js.Any], messageStream = js.Any.fromFunction0(messageStream), options = options.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[GherkinExe]
@@ -74,15 +74,15 @@ object gherkinExeMod {
       
       inline def setDialects(value: () => StringDictionary[Dialect]): Self = StObject.set(x, "dialects", js.Any.fromFunction0(value))
       
-      inline def setEnvelopes(value: js.Any): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
+      inline def setEnvelopes(value: Any): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
       
-      inline def setGherkinExe(value: js.Any): Self = StObject.set(x, "gherkinExe", value.asInstanceOf[js.Any])
+      inline def setGherkinExe(value: Any): Self = StObject.set(x, "gherkinExe", value.asInstanceOf[js.Any])
       
       inline def setMessageStream(value: () => Readable): Self = StObject.set(x, "messageStream", js.Any.fromFunction0(value))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }
   }
 }

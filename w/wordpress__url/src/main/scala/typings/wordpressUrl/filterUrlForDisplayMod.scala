@@ -11,4 +11,5 @@ object filterUrlForDisplayMod {
   val ^ : js.Any = js.native
   
   inline def filterURLForDisplay(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filterURLForDisplay")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def filterURLForDisplay(url: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("filterURLForDisplay")(url.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
 }

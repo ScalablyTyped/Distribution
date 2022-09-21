@@ -22,13 +22,12 @@ trait SearchShardsParams
   
   var routing: js.UndefOr[String] = js.undefined
   
-  var `type`: NameList
+  var `type`: js.UndefOr[NameList] = js.undefined
 }
 object SearchShardsParams {
   
-  inline def apply(index: NameList, `type`: NameList): SearchShardsParams = {
+  inline def apply(index: NameList): SearchShardsParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchShardsParams]
   }
   
@@ -48,7 +47,7 @@ object SearchShardsParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
@@ -64,6 +63,8 @@ object SearchShardsParams {
     
     inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

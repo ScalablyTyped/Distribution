@@ -10,14 +10,14 @@ trait Conflict extends StObject {
   
   val Class: OlObjectClass
   
-  val Item: js.Any
+  val Item: Any
   
   val Name: String
   
   /* private */ @JSName("Outlook.Conflict_typekey")
   var OutlookDotConflict_typekey: Conflict
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -28,10 +28,10 @@ object Conflict {
   inline def apply(
     Application: Application,
     Class: OlObjectClass,
-    Item: js.Any,
+    Item: Any,
     Name: String,
     OutlookDotConflict_typekey: Conflict,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Type: OlObjectClass
   ): Conflict = {
@@ -46,13 +46,13 @@ object Conflict {
     
     inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotConflict_typekey(value: Conflict): Self = StObject.set(x, "Outlook.Conflict_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -321,19 +321,19 @@ object localeMod {
       
       inline def setLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "longMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
+      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value*))
       
       inline def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
       
-      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
+      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value*))
       
       inline def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
       
-      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
+      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value*))
       
       inline def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
       
-      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
+      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value*))
       
       inline def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
       
@@ -341,23 +341,23 @@ object localeMod {
       
       inline def setShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "shortMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
+      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value*))
       
       inline def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
       
-      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
+      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value*))
       
       inline def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
+      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value*))
       
       inline def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
       
-      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
+      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value*))
       
       inline def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
       
-      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
+      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value*))
       
       inline def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
       
@@ -365,15 +365,15 @@ object localeMod {
       
       inline def setStandAloneShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneShortMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
+      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value*))
       
       inline def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
       
-      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
+      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value*))
       
       inline def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
       
-      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
+      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value*))
     }
   }
   
@@ -493,25 +493,25 @@ object localeMod {
       
       inline def setLongMonthNamesUndefined: Self = StObject.set(x, "longMonthNames", js.undefined)
       
-      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
+      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value*))
       
       inline def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
       
       inline def setLongWeekdayNamesUndefined: Self = StObject.set(x, "longWeekdayNames", js.undefined)
       
-      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
+      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value*))
       
       inline def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
       
       inline def setMonthLettersUndefined: Self = StObject.set(x, "monthLetters", js.undefined)
       
-      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
+      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value*))
       
       inline def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
       
       inline def setQuarterAbbreviationsUndefined: Self = StObject.set(x, "quarterAbbreviations", js.undefined)
       
-      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
+      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value*))
       
       inline def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
       
@@ -525,31 +525,31 @@ object localeMod {
       
       inline def setShortMonthNamesUndefined: Self = StObject.set(x, "shortMonthNames", js.undefined)
       
-      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
+      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value*))
       
       inline def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
       
       inline def setShortWeekdayNamesUndefined: Self = StObject.set(x, "shortWeekdayNames", js.undefined)
       
-      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
+      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value*))
       
       inline def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
       
       inline def setStandAloneLongMonthNamesUndefined: Self = StObject.set(x, "standAloneLongMonthNames", js.undefined)
       
-      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
+      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value*))
       
       inline def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
       
       inline def setStandAloneMonthLettersUndefined: Self = StObject.set(x, "standAloneMonthLetters", js.undefined)
       
-      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
+      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value*))
       
       inline def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
       
       inline def setStandAloneQuarterAbbreviationsUndefined: Self = StObject.set(x, "standAloneQuarterAbbreviations", js.undefined)
       
-      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
+      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value*))
       
       inline def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
       
@@ -563,19 +563,19 @@ object localeMod {
       
       inline def setStandAloneShortMonthNamesUndefined: Self = StObject.set(x, "standAloneShortMonthNames", js.undefined)
       
-      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
+      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value*))
       
       inline def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
       
       inline def setWeekdayLettersUndefined: Self = StObject.set(x, "weekdayLetters", js.undefined)
       
-      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
+      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value*))
       
       inline def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
       
       inline def setWeekdayTwoLettersUndefined: Self = StObject.set(x, "weekdayTwoLetters", js.undefined)
       
-      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
+      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value*))
     }
   }
 }

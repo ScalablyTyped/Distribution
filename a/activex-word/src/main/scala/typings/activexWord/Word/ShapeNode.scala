@@ -14,9 +14,9 @@ trait ShapeNode extends StObject {
   
   val EditingType: MsoEditingType
   
-  val Parent: js.Any
+  val Parent: Any
   
-  val Points: js.Any
+  val Points: Any
   
   val SegmentType: MsoSegmentType
   
@@ -29,8 +29,8 @@ object ShapeNode {
     Application: Application,
     Creator: Double,
     EditingType: MsoEditingType,
-    Parent: js.Any,
-    Points: js.Any,
+    Parent: Any,
+    Points: Any,
     SegmentType: MsoSegmentType,
     WordDotShapeNode_typekey: ShapeNode
   ): ShapeNode = {
@@ -47,9 +47,9 @@ object ShapeNode {
     
     inline def setEditingType(value: MsoEditingType): Self = StObject.set(x, "EditingType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setPoints(value: js.Any): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Any): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
     inline def setSegmentType(value: MsoSegmentType): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.WebApiAdaptor")
 @js.native
-class WebApiAdaptor ()
+open class WebApiAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.WebApiAdaptor

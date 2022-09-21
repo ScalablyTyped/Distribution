@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An image, with a link to the main image and a thumbnail.
-  */
 trait SchemaImage extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaImage extends StObject {
   var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
-    * A reference to the full-size, original image.  This is the same as the
-    * tool_outputs entry for the image under its Step.  Always set.
+    * A reference to the full-size, original image. This is the same as the tool_outputs entry for the image under its Step. Always set.
     */
   var sourceImage: js.UndefOr[SchemaToolOutputReference] = js.undefined
   
   /**
-    * The step to which the image is attached.  Always set.
+    * The step to which the image is attached. Always set.
     */
-  var stepId: js.UndefOr[String] = js.undefined
+  var stepId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The thumbnail.
@@ -48,6 +44,8 @@ object SchemaImage {
     inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
     inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    
+    inline def setStepIdNull: Self = StObject.set(x, "stepId", null)
     
     inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
     

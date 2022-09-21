@@ -10,10 +10,10 @@ Test whether all promises passes a testing function
 | ------------------ | :-------------: |
 | Full name          | p-every |
 | Keywords           | async, await, bluebird, collection, concurrency, concurrently, every, filter, fulfilled, iterable, iterator, parallel, promise, promises |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 183742 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 301874.3333333333 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/p-every#readme)

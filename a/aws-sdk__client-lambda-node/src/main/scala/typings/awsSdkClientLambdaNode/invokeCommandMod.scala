@@ -16,7 +16,7 @@ object invokeCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/InvokeCommand", "InvokeCommand")
   @js.native
-  class InvokeCommand protected ()
+  open class InvokeCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object invokeCommandMod {
     override val middlewareStack: MiddlewareStack[InvokeInput, InvokeOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[InvokeInput, InvokeOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[InvokeInput, InvokeOutput] = js.native
   }
 }

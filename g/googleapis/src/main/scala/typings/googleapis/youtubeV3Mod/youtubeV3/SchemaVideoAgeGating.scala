@@ -7,24 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaVideoAgeGating extends StObject {
   
   /**
-    * Indicates whether or not the video has alcoholic beverage content. Only
-    * users of legal purchasing age in a particular country, as identified by
-    * ICAP, can view the content.
+    * Indicates whether or not the video has alcoholic beverage content. Only users of legal purchasing age in a particular country, as identified by ICAP, can view the content.
     */
-  var alcoholContent: js.UndefOr[Boolean] = js.undefined
+  var alcoholContent: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Age-restricted trailers. For redband trailers and adult-rated
-    * video-games. Only users aged 18+ can view the content. The the field is
-    * true the content is restricted to viewers aged 18+. Otherwise The field
-    * won&#39;t be present.
+    * Age-restricted trailers. For redband trailers and adult-rated video-games. Only users aged 18+ can view the content. The the field is true the content is restricted to viewers aged 18+. Otherwise The field won't be present.
     */
-  var restricted: js.UndefOr[Boolean] = js.undefined
+  var restricted: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Video game rating, if any.
     */
-  var videoGameRating: js.UndefOr[String] = js.undefined
+  var videoGameRating: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaVideoAgeGating {
   
@@ -37,13 +32,19 @@ object SchemaVideoAgeGating {
     
     inline def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
     
+    inline def setAlcoholContentNull: Self = StObject.set(x, "alcoholContent", null)
+    
     inline def setAlcoholContentUndefined: Self = StObject.set(x, "alcoholContent", js.undefined)
     
     inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
+    inline def setRestrictedNull: Self = StObject.set(x, "restricted", null)
+    
     inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
     inline def setVideoGameRating(value: String): Self = StObject.set(x, "videoGameRating", value.asInstanceOf[js.Any])
+    
+    inline def setVideoGameRatingNull: Self = StObject.set(x, "videoGameRating", null)
     
     inline def setVideoGameRatingUndefined: Self = StObject.set(x, "videoGameRating", js.undefined)
   }

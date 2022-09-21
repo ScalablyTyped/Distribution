@@ -103,20 +103,20 @@ object uniformsLibMod {
     inline def specularmap_=(x: SpecularMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specularmap")(x.asInstanceOf[js.Any])
   }
   
-  trait IUniform extends StObject {
+  trait IUniform[TValue] extends StObject {
     
-    var value: js.Any
+    var value: TValue
   }
   object IUniform {
     
-    inline def apply(value: js.Any): IUniform = {
+    inline def apply[TValue](value: TValue): IUniform[TValue] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IUniform]
+      __obj.asInstanceOf[IUniform[TValue]]
     }
     
-    extension [Self <: IUniform](x: Self) {
+    extension [Self <: IUniform[?], TValue](x: Self & IUniform[TValue]) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("@angular/core", "Inject")
 @js.native
-class InjectCls protected ()
+open class InjectCls protected ()
   extends StObject
      with Inject_ {
-  def this(token: js.Any) = this()
+  def this(token: Any) = this()
   
   /**
     * A [DI token](guide/glossary#di-token) that maps to the dependency to be injected.
     */
   /* CompleteClass */
-  var token: js.Any = js.native
+  var token: Any = js.native
 }

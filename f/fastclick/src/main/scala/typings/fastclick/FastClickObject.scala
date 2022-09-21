@@ -10,25 +10,25 @@ trait FastClickObject extends StObject {
   
   def destroy(): Unit
   
-  def determineEventType(targetElement: js.Any): String
+  def determineEventType(targetElement: Any): String
   
-  def findControl(labelElement: js.Any): js.Any
+  def findControl(labelElement: Any): Any
   
-  def focus(targetElement: js.Any): Unit
+  def focus(targetElement: Any): Unit
   
-  def getTargetElementFromEventTarget(eventTarget: EventTarget): js.Any
+  def getTargetElementFromEventTarget(eventTarget: EventTarget): Any
   
   var lastTouchIdentifier: Double
   
   var layer: Element
   
-  def needsClick(target: js.Any): Boolean
+  def needsClick(target: Any): Boolean
   
-  def needsFocus(target: js.Any): Boolean
+  def needsFocus(target: Any): Boolean
   
   var tapDelay: Double
   
-  var targetElement: js.Any
+  var targetElement: Any
   
   var touchBoundary: Double
   
@@ -44,16 +44,16 @@ object FastClickObject {
   
   inline def apply(
     destroy: () => Unit,
-    determineEventType: js.Any => String,
-    findControl: js.Any => js.Any,
-    focus: js.Any => Unit,
-    getTargetElementFromEventTarget: EventTarget => js.Any,
+    determineEventType: Any => String,
+    findControl: Any => Any,
+    focus: Any => Unit,
+    getTargetElementFromEventTarget: EventTarget => Any,
     lastTouchIdentifier: Double,
     layer: Element,
-    needsClick: js.Any => Boolean,
-    needsFocus: js.Any => Boolean,
+    needsClick: Any => Boolean,
+    needsFocus: Any => Boolean,
     tapDelay: Double,
-    targetElement: js.Any,
+    targetElement: Any,
     touchBoundary: Double,
     touchStartX: Double,
     touchStartY: Double,
@@ -68,25 +68,25 @@ object FastClickObject {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    inline def setDetermineEventType(value: js.Any => String): Self = StObject.set(x, "determineEventType", js.Any.fromFunction1(value))
+    inline def setDetermineEventType(value: Any => String): Self = StObject.set(x, "determineEventType", js.Any.fromFunction1(value))
     
-    inline def setFindControl(value: js.Any => js.Any): Self = StObject.set(x, "findControl", js.Any.fromFunction1(value))
+    inline def setFindControl(value: Any => Any): Self = StObject.set(x, "findControl", js.Any.fromFunction1(value))
     
-    inline def setFocus(value: js.Any => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+    inline def setFocus(value: Any => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     
-    inline def setGetTargetElementFromEventTarget(value: EventTarget => js.Any): Self = StObject.set(x, "getTargetElementFromEventTarget", js.Any.fromFunction1(value))
+    inline def setGetTargetElementFromEventTarget(value: EventTarget => Any): Self = StObject.set(x, "getTargetElementFromEventTarget", js.Any.fromFunction1(value))
     
     inline def setLastTouchIdentifier(value: Double): Self = StObject.set(x, "lastTouchIdentifier", value.asInstanceOf[js.Any])
     
     inline def setLayer(value: Element): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    inline def setNeedsClick(value: js.Any => Boolean): Self = StObject.set(x, "needsClick", js.Any.fromFunction1(value))
+    inline def setNeedsClick(value: Any => Boolean): Self = StObject.set(x, "needsClick", js.Any.fromFunction1(value))
     
-    inline def setNeedsFocus(value: js.Any => Boolean): Self = StObject.set(x, "needsFocus", js.Any.fromFunction1(value))
+    inline def setNeedsFocus(value: Any => Boolean): Self = StObject.set(x, "needsFocus", js.Any.fromFunction1(value))
     
     inline def setTapDelay(value: Double): Self = StObject.set(x, "tapDelay", value.asInstanceOf[js.Any])
     
-    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
     inline def setTouchBoundary(value: Double): Self = StObject.set(x, "touchBoundary", value.asInstanceOf[js.Any])
     

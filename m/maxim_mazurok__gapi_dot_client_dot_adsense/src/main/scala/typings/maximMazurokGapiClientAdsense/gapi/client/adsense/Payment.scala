@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Payment extends StObject {
   
-  /** Unique identifier of this Payment. */
-  var id: js.UndefOr[String] = js.undefined
+  /** Output only. The amount of unpaid or paid earnings, as a formatted string, including the currency. E.g. "¥1,235 JPY", "$1,234.57", "£87.65". */
+  var amount: js.UndefOr[String] = js.undefined
   
-  /** Kind of resource this is, in this case adsense#payment. */
-  var kind: js.UndefOr[String] = js.undefined
+  /**
+    * Output only. For paid earnings, the date that the payment was credited. For unpaid earnings, this field is empty. Payment dates are always returned in the billing timezone
+    * (America/Los_Angeles).
+    */
+  var date: js.UndefOr[Date] = js.undefined
   
-  /** The amount to be paid. */
-  var paymentAmount: js.UndefOr[String] = js.undefined
-  
-  /** The currency code for the amount to be paid. */
-  var paymentAmountCurrencyCode: js.UndefOr[String] = js.undefined
-  
-  /** The date this payment was/will be credited to the user, or none if the payment threshold has not been met. */
-  var paymentDate: js.UndefOr[String] = js.undefined
+  /**
+    * Output only. Resource name of the payment. Format: - accounts/{account}/payments/unpaid for unpaid (current) AdSense earnings. - accounts/{account}/payments/youtube-unpaid for
+    * unpaid (current) YouTube earnings. - accounts/{account}/payments/yyyy-MM-dd for paid AdSense earnings. - accounts/{account}/payments/youtube-yyyy-MM-dd for paid YouTube earnings.
+    */
+  var name: js.UndefOr[String] = js.undefined
 }
 object Payment {
   
@@ -30,24 +30,16 @@ object Payment {
   
   extension [Self <: Payment](x: Self) {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setPaymentAmount(value: String): Self = StObject.set(x, "paymentAmount", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPaymentAmountCurrencyCode(value: String): Self = StObject.set(x, "paymentAmountCurrencyCode", value.asInstanceOf[js.Any])
-    
-    inline def setPaymentAmountCurrencyCodeUndefined: Self = StObject.set(x, "paymentAmountCurrencyCode", js.undefined)
-    
-    inline def setPaymentAmountUndefined: Self = StObject.set(x, "paymentAmount", js.undefined)
-    
-    inline def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
-    
-    inline def setPaymentDateUndefined: Self = StObject.set(x, "paymentDate", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

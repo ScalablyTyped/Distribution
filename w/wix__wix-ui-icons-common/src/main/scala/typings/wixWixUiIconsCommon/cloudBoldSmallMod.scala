@@ -1,0 +1,42 @@
+package typings.wixWixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
+import typings.react.mod.SVGAttributes
+import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object cloudBoldSmallMod extends Shortcut {
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist/components/CloudBoldSmall", JSImport.Default)
+  @js.native
+  val default: FC[CloudBoldSmallProps] = js.native
+  
+  trait CloudBoldSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
+    
+    var size: js.UndefOr[String | Double] = js.undefined
+  }
+  object CloudBoldSmallProps {
+    
+    inline def apply(): CloudBoldSmallProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CloudBoldSmallProps]
+    }
+    
+    extension [Self <: CloudBoldSmallProps](x: Self) {
+      
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    }
+  }
+  
+  type _To = FC[CloudBoldSmallProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `cloudBoldSmallMod.foo` */
+  override def _to: FC[CloudBoldSmallProps] = default
+}

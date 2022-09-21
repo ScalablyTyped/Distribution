@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stackframe" : "1.2.0"
+      "stackframe" : "1.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "stackframe" : "1.2.0"
+      "stackframe" : "1.3.4"
     }
   ],
   "compile-devDependencies" : [

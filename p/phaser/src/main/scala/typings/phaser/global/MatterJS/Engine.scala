@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Engine")
 @js.native
-class Engine ()
+open class Engine ()
   extends StObject
      with typings.phaser.MatterJS.Engine {
   
@@ -65,7 +65,7 @@ class Engine ()
     * Collision pair set for this `Engine`.
     */
   /* CompleteClass */
-  var pairs: js.Any = js.native
+  var pairs: Any = js.native
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.

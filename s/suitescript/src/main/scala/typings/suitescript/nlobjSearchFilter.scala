@@ -35,9 +35,9 @@ Instantiable5[
       /* name */ String, 
       /* join */ String, 
       /* operator */ String, 
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* value2 */ String, 
-      js.Any
+      Any
     ] {
   
   /**

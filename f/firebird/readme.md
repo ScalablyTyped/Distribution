@@ -10,10 +10,10 @@ Firebird binding to node, uses libfbclient.
 | ------------------ | :-------------: |
 | Full name          | firebird |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 4441 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 403.0 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/xdenser/node-firebird-libfbclient#readme)

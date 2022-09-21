@@ -10,10 +10,10 @@ object filter7Mod {
   
   @JSImport("material-ui/svg-icons/image/filter-7", JSImport.Default)
   @js.native
-  class default () extends ImageFilter7
+  open class default () extends ImageFilter7
   
   @JSImport("material-ui/svg-icons/image/filter-7", "ImageFilter7")
   @js.native
-  class ImageFilter7 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFilter7 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

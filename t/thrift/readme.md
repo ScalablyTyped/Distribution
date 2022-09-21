@@ -10,10 +10,10 @@ node.js bindings for the Apache Thrift RPC system
 | ------------------ | :-------------: |
 | Full name          | thrift |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 181 |
-| # downloads        | 3469251 |
-| # stars            | 24 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 550930.0 |
+| # stars            | 9349.0 |
 
 ## Links
 - [Homepage](http://thrift.apache.org/)

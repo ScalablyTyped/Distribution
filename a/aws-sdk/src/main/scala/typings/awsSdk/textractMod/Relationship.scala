@@ -29,7 +29,7 @@ object Relationship {
     
     inline def setIdsUndefined: Self = StObject.set(x, "Ids", js.undefined)
     
-    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Ids", js.Array(value*))
     
     inline def setType(value: RelationshipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

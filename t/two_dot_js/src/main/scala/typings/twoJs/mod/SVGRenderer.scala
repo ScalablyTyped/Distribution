@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "SVGRenderer")
 @js.native
-class SVGRenderer ()
+open class SVGRenderer ()
   extends StObject
      with Renderer

@@ -8,17 +8,17 @@ object dropdownMenuMod {
   
   @JSImport("@nulogy/components/src/DropdownMenu", "DropdownButton")
   @js.native
-  val DropdownButton: js.Any = js.native
+  val DropdownButton: Any = js.native
   
   @JSImport("@nulogy/components/src/DropdownMenu", "DropdownItem")
   @js.native
-  val DropdownItem: js.Any = js.native
+  val DropdownItem: Any = js.native
   
   @JSImport("@nulogy/components/src/DropdownMenu", "DropdownLink")
   @js.native
-  val DropdownLink: js.Any = js.native
+  val DropdownLink: Any = js.native
   
   @JSImport("@nulogy/components/src/DropdownMenu", "DropdownMenu")
   @js.native
-  val DropdownMenu: js.Any = js.native
+  val DropdownMenu: Any = js.native
 }

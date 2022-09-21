@@ -10,10 +10,10 @@ object shortTextMod {
   
   @JSImport("material-ui/svg-icons/editor/short-text", JSImport.Default)
   @js.native
-  class default () extends EditorShortText
+  open class default () extends EditorShortText
   
   @JSImport("material-ui/svg-icons/editor/short-text", "EditorShortText")
   @js.native
-  class EditorShortText ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorShortText ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

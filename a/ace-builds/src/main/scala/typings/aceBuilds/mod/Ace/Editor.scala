@@ -12,6 +12,7 @@ import typings.aceBuilds.aceBuildsStrings.blur
 import typings.aceBuilds.aceBuildsStrings.change
 import typings.aceBuilds.aceBuildsStrings.changeSelectionStyle
 import typings.aceBuilds.aceBuildsStrings.changeSession
+import typings.aceBuilds.aceBuildsStrings.click
 import typings.aceBuilds.aceBuildsStrings.code
 import typings.aceBuilds.aceBuildsStrings.copy
 import typings.aceBuilds.aceBuildsStrings.copyWithEmptySelection
@@ -46,6 +47,9 @@ import typings.aceBuilds.aceBuildsStrings.maxPixelHeight
 import typings.aceBuilds.aceBuildsStrings.mergeUndoDeltas
 import typings.aceBuilds.aceBuildsStrings.minLines
 import typings.aceBuilds.aceBuildsStrings.mode
+import typings.aceBuilds.aceBuildsStrings.mousemove
+import typings.aceBuilds.aceBuildsStrings.mouseup
+import typings.aceBuilds.aceBuildsStrings.mousewheel
 import typings.aceBuilds.aceBuildsStrings.navigateWithinSoftTabs
 import typings.aceBuilds.aceBuildsStrings.newLineMode
 import typings.aceBuilds.aceBuildsStrings.off
@@ -121,14 +125,27 @@ trait Editor
   def duplicateSelection(): Unit = js.native
   
   def execCommand(command: String): Boolean = js.native
-  def execCommand(command: String, args: js.Any): Boolean = js.native
+  def execCommand(command: String, args: Any): Boolean = js.native
   def execCommand(command: js.Array[String]): Boolean = js.native
-  def execCommand(command: js.Array[String], args: js.Any): Boolean = js.native
+  def execCommand(command: js.Array[String], args: Any): Boolean = js.native
   
-  def find(needle: String): Unit = js.native
-  def find(needle: String, options: Unit, animate: Boolean): Unit = js.native
-  def find(needle: String, options: PartialSearchOptions): Unit = js.native
-  def find(needle: String, options: PartialSearchOptions, animate: Boolean): Unit = js.native
+  def find(needle: String): js.UndefOr[Range] = js.native
+  def find(needle: String, options: Unit, animate: Boolean): js.UndefOr[Range] = js.native
+  def find(needle: String, options: PartialSearchOptions): js.UndefOr[Range] = js.native
+  def find(needle: String, options: PartialSearchOptions, animate: Boolean): js.UndefOr[Range] = js.native
+  def find(needle: js.RegExp): js.UndefOr[Range] = js.native
+  def find(needle: js.RegExp, options: Unit, animate: Boolean): js.UndefOr[Range] = js.native
+  def find(needle: js.RegExp, options: PartialSearchOptions): js.UndefOr[Range] = js.native
+  def find(needle: js.RegExp, options: PartialSearchOptions, animate: Boolean): js.UndefOr[Range] = js.native
+  
+  def findAll(needle: String): Double = js.native
+  def findAll(needle: String, options: Unit, additive: Boolean): Double = js.native
+  def findAll(needle: String, options: PartialSearchOptions): Double = js.native
+  def findAll(needle: String, options: PartialSearchOptions, additive: Boolean): Double = js.native
+  def findAll(needle: js.RegExp): Double = js.native
+  def findAll(needle: js.RegExp, options: Unit, additive: Boolean): Double = js.native
+  def findAll(needle: js.RegExp, options: PartialSearchOptions): Double = js.native
+  def findAll(needle: js.RegExp, options: PartialSearchOptions, additive: Boolean): Double = js.native
   
   def findNext(): Unit = js.native
   def findNext(options: Unit, animate: Boolean): Unit = js.native
@@ -219,7 +236,7 @@ trait Editor
   @JSName("getOption")
   def getOption_indentedSoftWrap(name: indentedSoftWrap): Boolean = js.native
   @JSName("getOption")
-  def getOption_keyboardHandler(name: keyboardHandler): String = js.native
+  def getOption_keyboardHandler(name: keyboardHandler): String | Null = js.native
   @JSName("getOption")
   def getOption_maxLines(name: maxLines): Double = js.native
   @JSName("getOption")
@@ -371,26 +388,37 @@ trait Editor
   
   def navigateWordRight(): Unit = js.native
   
+  def onPaste(text: String, event: Any): Unit = js.native
+  
   @JSName("on")
-  def on_blur(name: blur, callback: js.Function1[/* e */ Event, Unit]): js.Function = js.native
+  def on_blur(name: blur, callback: js.Function1[/* e */ Event, Unit]): Unit = js.native
   @JSName("on")
-  def on_change(name: change, callback: js.Function1[/* delta */ Delta, Unit]): js.Function = js.native
+  def on_change(name: change, callback: js.Function1[/* delta */ Delta, Unit]): Unit = js.native
   @JSName("on")
-  def on_changeSelectionStyle(name: changeSelectionStyle, callback: js.Function1[/* obj */ DataString, Unit]): js.Function = js.native
+  def on_changeSelectionStyle(name: changeSelectionStyle, callback: js.Function1[/* obj */ DataString, Unit]): Unit = js.native
   @JSName("on")
-  def on_changeSession(name: changeSession, callback: js.Function1[/* obj */ OldSession, Unit]): js.Function = js.native
+  def on_changeSession(name: changeSession, callback: js.Function1[/* obj */ OldSession, Unit]): Unit = js.native
   @JSName("on")
-  def on_copy(name: copy, callback: js.Function1[/* obj */ Text, Unit]): js.Function = js.native
+  def on_click(name: click, callback: js.Function1[/* e */ Any, Unit]): Unit = js.native
   @JSName("on")
-  def on_focus(name: focus, callback: js.Function1[/* e */ Event, Unit]): js.Function = js.native
+  def on_copy(name: copy, callback: js.Function1[/* obj */ Text, Unit]): Unit = js.native
   @JSName("on")
-  def on_input(name: input, callback: js.Function0[Unit]): js.Function = js.native
+  def on_focus(name: focus, callback: js.Function1[/* e */ Event, Unit]): Unit = js.native
   @JSName("on")
-  def on_paste(name: paste, callback: js.Function1[/* obj */ Text, Unit]): js.Function = js.native
+  def on_input(name: input, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("on")
+  def on_mousemove(name: mousemove, callback: js.Function1[/* e */ Any, Unit]): Unit = js.native
+  @JSName("on")
+  def on_mouseup(name: mouseup, callback: js.Function1[/* e */ Any, Unit]): Unit = js.native
+  @JSName("on")
+  def on_mousewheel(name: mousewheel, callback: js.Function1[/* e */ Any, Unit]): Unit = js.native
+  @JSName("on")
+  def on_paste(name: paste, callback: js.Function1[/* obj */ Text, Unit]): Unit = js.native
   
   def redo(): Unit = js.native
   
   def remove(): Unit = js.native
+  def remove(dir: left | right): Unit = js.native
   
   def removeLineToEnd(): Unit = js.native
   
@@ -399,11 +427,6 @@ trait Editor
   def removeWordLeft(): Unit = js.native
   
   def removeWordRight(): Unit = js.native
-  
-  @JSName("remove")
-  def remove_left(dir: left): Unit = js.native
-  @JSName("remove")
-  def remove_right(dir: right): Unit = js.native
   
   var renderer: VirtualRenderer = js.native
   
@@ -446,7 +469,7 @@ trait Editor
   
   def setFadeFoldWidgets(fade: Boolean): Unit = js.native
   
-  def setFontSize(size: String): Unit = js.native
+  def setFontSize(size: Double): Unit = js.native
   
   def setHighlightActiveLine(shouldHighlight: Boolean): Unit = js.native
   
@@ -454,25 +477,16 @@ trait Editor
   
   def setHighlightSelectedWord(shouldHighlight: Boolean): Unit = js.native
   
+  def setKeyboardHandler(): Unit = js.native
   def setKeyboardHandler(keyboardHandler: String): Unit = js.native
   def setKeyboardHandler(keyboardHandler: String, callback: js.Function0[Unit]): Unit = js.native
+  def setKeyboardHandler(keyboardHandler: KeyboardHandler): Unit = js.native
   
-  def setOption(name: cursorStyle, value: ace): Unit = js.native
-  def setOption(name: cursorStyle, value: slim): Unit = js.native
-  def setOption(name: cursorStyle, value: smooth): Unit = js.native
-  def setOption(name: cursorStyle, value: wide): Unit = js.native
-  def setOption(name: foldStyle, value: manual): Unit = js.native
-  def setOption(name: foldStyle, value: markbegin): Unit = js.native
-  def setOption(name: foldStyle, value: markbeginend): Unit = js.native
-  def setOption(name: mergeUndoDeltas, value: `false`): Unit = js.native
-  def setOption(name: mergeUndoDeltas, value: `true`): Unit = js.native
-  def setOption(name: mergeUndoDeltas, value: always): Unit = js.native
-  def setOption(name: wrapMethod, value: auto): Unit = js.native
-  def setOption(name: wrapMethod, value: code): Unit = js.native
-  def setOption(name: wrapMethod, value: text): Unit = js.native
-  def setOption(name: wrap, value: free): Unit = js.native
-  def setOption(name: wrap, value: off): Unit = js.native
-  def setOption(name: wrap, value: printmargin_): Unit = js.native
+  def setOption(name: cursorStyle, value: ace | slim | smooth | wide): Unit = js.native
+  def setOption(name: foldStyle, value: markbegin | markbeginend | manual): Unit = js.native
+  def setOption(name: mergeUndoDeltas, value: `true` | `false` | always): Unit = js.native
+  def setOption(name: wrapMethod, value: code | text | auto): Unit = js.native
+  def setOption(name: wrap, value: off | free | printmargin_): Unit = js.native
   @JSName("setOption")
   def setOption_animatedScroll(name: animatedScroll, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -513,6 +527,8 @@ trait Editor
   def setOption_highlightSelectedWord(name: highlightSelectedWord, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_indentedSoftWrap(name: indentedSoftWrap, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_keyboardHandler(name: keyboardHandler): Unit = js.native
   @JSName("setOption")
   def setOption_keyboardHandler(name: keyboardHandler, value: String): Unit = js.native
   @JSName("setOption")
@@ -609,6 +625,8 @@ trait Editor
   def sortLines(): Unit = js.native
   
   def splitLine(): Unit = js.native
+  
+  var textInput: TextInput = js.native
   
   def toLowerCase(): Unit = js.native
   

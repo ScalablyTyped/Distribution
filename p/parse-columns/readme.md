@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-columns
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Parse text columns, like the output of Unix commands
@@ -11,9 +11,9 @@ Parse text columns, like the output of Unix commands
 | Full name          | parse-columns |
 | Keywords           | parse, parser, columns, column, row, text, string, unix, command, output, csv, shell, sh, term, table |
 | # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 1490 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 139.66666666666666 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/parse-columns#readme)

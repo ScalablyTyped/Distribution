@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariableDeclarator_
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babelTypes.mod._Node because Already inherited */ trait VariableDeclarator_
   extends StObject
      with BaseNode
-     with _Node {
+     with Standardized {
   
   var definite: Boolean | Null
   

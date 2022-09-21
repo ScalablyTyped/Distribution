@@ -27,7 +27,7 @@ object KeyframesRule {
     
     inline def setKeyframes(value: js.Array[KeyframeStyle]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     
-    inline def setKeyframesVarargs(value: KeyframeStyle*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+    inline def setKeyframesVarargs(value: KeyframeStyle*): Self = StObject.set(x, "keyframes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -168,7 +168,7 @@ object DOMNode {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: NameValue*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: NameValue*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
@@ -180,7 +180,7 @@ object DOMNode {
     
     inline def setChildNodeIndexesUndefined: Self = StObject.set(x, "childNodeIndexes", js.undefined)
     
-    inline def setChildNodeIndexesVarargs(value: integer*): Self = StObject.set(x, "childNodeIndexes", js.Array(value :_*))
+    inline def setChildNodeIndexesVarargs(value: integer*): Self = StObject.set(x, "childNodeIndexes", js.Array(value*))
     
     inline def setContentDocumentIndex(value: integer): Self = StObject.set(x, "contentDocumentIndex", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object DOMNode {
     
     inline def setEventListenersUndefined: Self = StObject.set(x, "eventListeners", js.undefined)
     
-    inline def setEventListenersVarargs(value: EventListener*): Self = StObject.set(x, "eventListeners", js.Array(value :_*))
+    inline def setEventListenersVarargs(value: EventListener*): Self = StObject.set(x, "eventListeners", js.Array(value*))
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
@@ -246,7 +246,7 @@ object DOMNode {
     
     inline def setPseudoElementIndexesUndefined: Self = StObject.set(x, "pseudoElementIndexes", js.undefined)
     
-    inline def setPseudoElementIndexesVarargs(value: integer*): Self = StObject.set(x, "pseudoElementIndexes", js.Array(value :_*))
+    inline def setPseudoElementIndexesVarargs(value: integer*): Self = StObject.set(x, "pseudoElementIndexes", js.Array(value*))
     
     inline def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     

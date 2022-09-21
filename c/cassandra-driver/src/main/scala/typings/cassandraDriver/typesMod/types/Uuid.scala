@@ -1,14 +1,14 @@
 package typings.cassandraDriver.typesMod.types
 
 import typings.cassandraDriver.mod.ValueCallback
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Uuid")
 @js.native
-class Uuid protected () extends StObject {
+open class Uuid protected () extends StObject {
   def this(buffer: Buffer) = this()
   
   def equals(other: Uuid): Boolean = js.native

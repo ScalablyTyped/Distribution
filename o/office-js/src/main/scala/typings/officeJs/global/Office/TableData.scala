@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.TableData")
 @js.native
-class TableData ()
+open class TableData ()
   extends StObject
      with typings.officeJs.Office.TableData {
-  def this(rows: js.Array[js.Array[js.Any]], headers: js.Array[js.Any]) = this()
+  def this(rows: js.Array[js.Array[Any]], headers: js.Array[Any]) = this()
   
   /**
     * Gets or sets the headers of the table.
@@ -30,7 +30,7 @@ class TableData ()
     * - If you overwrite or update an existing table, the existing headers are not altered.
     */
   /* CompleteClass */
-  var headers: js.Array[js.Any] = js.native
+  var headers: js.Array[Any] = js.native
   
   /**
     * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. 
@@ -49,5 +49,5 @@ class TableData ()
     * - If you overwrite or update an existing table, the existing rows are not altered.
     */
   /* CompleteClass */
-  var rows: js.Array[js.Array[js.Any]] = js.native
+  var rows: js.Array[js.Array[Any]] = js.native
 }

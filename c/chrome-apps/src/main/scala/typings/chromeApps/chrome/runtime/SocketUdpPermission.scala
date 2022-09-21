@@ -37,18 +37,18 @@ object SocketUdpPermission {
     
     inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    inline def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value :_*))
+    inline def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value*))
     
     inline def setMulticastMembership(value: String | js.Array[String]): Self = StObject.set(x, "multicastMembership", value.asInstanceOf[js.Any])
     
     inline def setMulticastMembershipUndefined: Self = StObject.set(x, "multicastMembership", js.undefined)
     
-    inline def setMulticastMembershipVarargs(value: String*): Self = StObject.set(x, "multicastMembership", js.Array(value :_*))
+    inline def setMulticastMembershipVarargs(value: String*): Self = StObject.set(x, "multicastMembership", js.Array(value*))
     
     inline def setSend(value: String | js.Array[String]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    inline def setSendVarargs(value: String*): Self = StObject.set(x, "send", js.Array(value :_*))
+    inline def setSendVarargs(value: String*): Self = StObject.set(x, "send", js.Array(value*))
   }
 }

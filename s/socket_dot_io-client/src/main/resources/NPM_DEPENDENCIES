@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "socket.io-client" : "4.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "socket.io-client" : "4.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,55 +11,75 @@ trait SVGFEBlendElement
      with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_COLOR: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_COLOR_BURN: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_COLOR_DODGE: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_DARKEN: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_DIFFERENCE: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_EXCLUSION: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_HARD_LIGHT: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_HUE: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_LIGHTEN: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_LUMINOSITY: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_MULTIPLY: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_NORMAL: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_OVERLAY: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_SATURATION: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_SCREEN: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_SOFT_LIGHT: Double = js.native
   
+  /* standard dom */
   val SVG_FEBLEND_MODE_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
+  /* standard dom */
   val in2: SVGAnimatedString = js.native
   
+  /* standard dom */
   val mode: SVGAnimatedEnumeration = js.native
   
   /* InferMemberOverrides */

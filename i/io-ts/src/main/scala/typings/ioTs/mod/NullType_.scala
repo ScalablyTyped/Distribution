@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "NullType")
 @js.native
-class NullType_ ()
-  extends Type_[Null, Null, js.Any] {
+open class NullType_ () extends Type_[Null, Null, Any] {
   
   /**
     * @since 1.0.0

@@ -17,11 +17,11 @@ trait VibratoBracket
   
   var render_options: Harsh = js.native
   
-  def setHarsh(harsh: js.Any): VibratoBracket = js.native
+  def setHarsh(harsh: Any): VibratoBracket = js.native
   
-  def setLine(line: js.Any): VibratoBracket = js.native
+  def setLine(line: Any): VibratoBracket = js.native
   
-  var start: js.Any = js.native
+  var start: Any = js.native
   
-  var stop: js.Any = js.native
+  var stop: Any = js.native
 }

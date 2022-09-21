@@ -8,5 +8,5 @@ object overLimitMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/OverLimit", "OverLimit")
   @js.native
-  val OverLimit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val OverLimit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

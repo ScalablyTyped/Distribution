@@ -12,7 +12,7 @@ trait DescribeRegionsResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
-    * List of regional information related to the directory per replicated Region.
+    * List of Region information related to the directory for each replicated Region.
     */
   var RegionsDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsDescription] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeRegionsResult {
     
     inline def setRegionsDescriptionUndefined: Self = StObject.set(x, "RegionsDescription", js.undefined)
     
-    inline def setRegionsDescriptionVarargs(value: RegionDescription*): Self = StObject.set(x, "RegionsDescription", js.Array(value :_*))
+    inline def setRegionsDescriptionVarargs(value: RegionDescription*): Self = StObject.set(x, "RegionsDescription", js.Array(value*))
   }
 }

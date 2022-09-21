@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.angularCore.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +17,20 @@ abstract class ViewContainerRef () extends StObject {
   /**
     * Instantiates a single component and inserts its host view into this container.
     *
-    * @param componentFactory The factory to use.
+    * @param componentFactory Component factory to use.
     * @param index The index at which to insert the new component's host view into this container.
     * If not specified, appends the new view as the last entry.
     * @param injector The injector to use as the parent for the new component.
-    * @param projectableNodes
-    * @param ngModule
+    * @param projectableNodes List of DOM nodes that should be projected through
+    *     [`<ng-content>`](api/core/ng-content) of the new component instance.
+    * @param ngModuleRef An instance of the NgModuleRef that represent an NgModule.
+    * This information is used to retrieve corresponding NgModule injector.
     *
-    * @returns The new component instance, containing the host view.
+    * @returns The new `ComponentRef` which contains the component instance and the host view.
     *
+    * @deprecated Angular no longer requires component factories to dynamically create components.
+    *     Use different signature of the `createComponent` method, which allows passing
+    *     Component class directly.
     */
   def createComponent[C](componentFactory: ComponentFactory[C]): ComponentRef[C] = js.native
   def createComponent[C](componentFactory: ComponentFactory[C], index: Double): ComponentRef[C] = js.native
@@ -32,98 +38,182 @@ abstract class ViewContainerRef () extends StObject {
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Unit,
-    projectableNodes: js.Array[js.Array[js.Any]]
+    projectableNodes: js.Array[js.Array[Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Unit,
-    projectableNodes: js.Array[js.Array[js.Any]],
-    ngModule: NgModuleRef[js.Any]
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Double,
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Unit,
     projectableNodes: Unit,
-    ngModule: NgModuleRef[js.Any]
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Double,
+    injector: Unit,
+    projectableNodes: Unit,
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](componentFactory: ComponentFactory[C], index: Double, injector: Injector): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[js.Any]]
+    projectableNodes: js.Array[js.Array[Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[js.Any]],
-    ngModule: NgModuleRef[js.Any]
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Double,
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
     projectableNodes: Unit,
-    ngModule: NgModuleRef[js.Any]
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Double,
+    injector: Injector,
+    projectableNodes: Unit,
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Unit,
-    projectableNodes: js.Array[js.Array[js.Any]]
+    projectableNodes: js.Array[js.Array[Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Unit,
-    projectableNodes: js.Array[js.Array[js.Any]],
-    ngModule: NgModuleRef[js.Any]
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Unit,
     projectableNodes: Unit,
-    ngModule: NgModuleRef[js.Any]
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Unit,
+    projectableNodes: Unit,
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](componentFactory: ComponentFactory[C], index: Unit, injector: Injector): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[js.Any]]
+    projectableNodes: js.Array[js.Array[Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[js.Any]],
-    ngModule: NgModuleRef[js.Any]
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Unit,
     injector: Injector,
     projectableNodes: Unit,
-    ngModule: NgModuleRef[js.Any]
+    environmentInjector: EnvironmentInjector
   ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Injector,
+    projectableNodes: Unit,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  /**
+    * Instantiates a single component and inserts its host view into this container.
+    *
+    * @param componentType Component Type to use.
+    * @param options An object that contains extra parameters:
+    *  * index: the index at which to insert the new component's host view into this container.
+    *           If not specified, appends the new view as the last entry.
+    *  * injector: the injector to use as the parent for the new component.
+    *  * ngModuleRef: an NgModuleRef of the component's NgModule, you should almost always provide
+    *                 this to ensure that all expected providers are available for the component
+    *                 instantiation.
+    *  * environmentInjector: an EnvironmentInjector which will provide the component's environment.
+    *                 you should almost always provide this to ensure that all expected providers
+    *                 are available for the component instantiation. This option is intended to
+    *                 replace the `ngModuleRef` parameter.
+    *  * projectableNodes: list of DOM nodes that should be projected through
+    *                      [`<ng-content>`](api/core/ng-content) of the new component instance.
+    *
+    * @returns The new `ComponentRef` which contains the component instance and the host view.
+    */
+  def createComponent[C](componentType: Type[C]): ComponentRef[C] = js.native
+  def createComponent[C](componentType: Type[C], options: typings.angularCore.anon.EnvironmentInjector): ComponentRef[C] = js.native
   
   /**
     * Instantiates an embedded view and inserts it
     * into this container.
     * @param templateRef The HTML template that defines the view.
-    * @param index The 0-based index at which to insert the new view into this container.
-    * If not specified, appends the new view as the last entry.
+    * @param context The data-binding context of the embedded view, as declared
+    * in the `<ng-template>` usage.
+    * @param options Extra configuration for the created view. Includes:
+    *  * index: The 0-based index at which to insert the new view into this container.
+    *           If not specified, appends the new view as the last entry.
+    *  * injector: Injector to be used within the embedded view.
     *
     * @returns The `ViewRef` instance for the newly created view.
     */
   def createEmbeddedView[C](templateRef: TemplateRef[C]): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C, index: Double): EmbeddedViewRef[C] = js.native
+  def createEmbeddedView[C](templateRef: TemplateRef[C], context: C, options: Index): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: Unit, index: Double): EmbeddedViewRef[C] = js.native
+  def createEmbeddedView[C](templateRef: TemplateRef[C], context: Unit, options: Index): EmbeddedViewRef[C] = js.native
   
   /**
     * Detaches a view from this container without destroying it.
@@ -147,7 +237,7 @@ abstract class ViewContainerRef () extends StObject {
     *
     * <!-- TODO: rename to anchorElement -->
     */
-  def element: ElementRef[js.Any] = js.native
+  def element: ElementRef[Any] = js.native
   
   /**
     * Retrieves a view from this container.

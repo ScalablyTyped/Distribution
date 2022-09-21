@@ -1,19 +1,19 @@
 
 # Scala.js typings for metismenu
 
-Typings are for version 3.0.6
+Typings are for version 3.0.7
 
 ## Library description:
-A jQuery menu plugin
+A collapsible jQuery menu plugin
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metismenu |
-| Keywords           | accordion, bootstrap, jquery, menu, metis, metisMenu, toggle, twbs, twitter |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 1251667 |
-| # stars            | 2 |
+| Keywords           | accordion, jquery, menu, metis, metisMenu, toggle |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 250553.0 |
+| # stars            | 1915.0 |
 
 ## Links
 - [Homepage](https://github.com/onokumus/metismenu#readme)

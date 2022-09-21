@@ -14,7 +14,7 @@ trait PartialGroupByKeyInstruction extends StObject {
   var inputElementCodec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
   ] = js.undefined
   
   /** If this instruction includes a combining function this is the name of the intermediate store between the GBK and the CombineValues. */
@@ -30,7 +30,7 @@ trait PartialGroupByKeyInstruction extends StObject {
   var valueCombiningFn: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
   ] = js.undefined
 }
 object PartialGroupByKeyInstruction {
@@ -47,7 +47,7 @@ object PartialGroupByKeyInstruction {
     inline def setInputElementCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
     ): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
     
     inline def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
@@ -66,12 +66,12 @@ object PartialGroupByKeyInstruction {
     
     inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value*))
     
     inline def setValueCombiningFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
     ): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
     
     inline def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)

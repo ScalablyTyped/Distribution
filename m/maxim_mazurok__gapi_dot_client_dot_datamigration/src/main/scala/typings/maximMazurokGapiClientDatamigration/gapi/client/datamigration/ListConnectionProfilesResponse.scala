@@ -28,7 +28,7 @@ object ListConnectionProfilesResponse {
     
     inline def setConnectionProfilesUndefined: Self = StObject.set(x, "connectionProfiles", js.undefined)
     
-    inline def setConnectionProfilesVarargs(value: ConnectionProfile*): Self = StObject.set(x, "connectionProfiles", js.Array(value :_*))
+    inline def setConnectionProfilesVarargs(value: ConnectionProfile*): Self = StObject.set(x, "connectionProfiles", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ListConnectionProfilesResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

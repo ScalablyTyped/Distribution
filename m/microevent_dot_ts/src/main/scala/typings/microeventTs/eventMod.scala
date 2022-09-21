@@ -10,7 +10,7 @@ object eventMod {
   
   @JSImport("microevent/lib/Event", JSImport.Default)
   @js.native
-  class default[EventPayload] ()
+  open class default[EventPayload] ()
     extends StObject
        with Event[EventPayload]
   
@@ -19,15 +19,15 @@ object eventMod {
     extends StObject
        with EventInterface[EventPayload] {
     
-    /* private */ var _contexts: js.Any = js.native
+    /* private */ var _contexts: Any = js.native
     
-    /* private */ var _createDispatcher: js.Any = js.native
+    /* private */ var _createDispatcher: Any = js.native
     
-    /* private */ var _getHandlerIndex: js.Any = js.native
+    /* private */ var _getHandlerIndex: Any = js.native
     
-    /* private */ var _handlers: js.Any = js.native
+    /* private */ var _handlers: Any = js.native
     
-    /* private */ var _updateHasHandlers: js.Any = js.native
+    /* private */ var _updateHasHandlers: Any = js.native
     
     def dispatch(payload: EventPayload): Unit = js.native
     

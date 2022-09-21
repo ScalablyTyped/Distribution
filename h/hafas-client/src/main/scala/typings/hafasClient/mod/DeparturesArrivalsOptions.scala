@@ -1,6 +1,5 @@
 package typings.hafasClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +37,22 @@ trait DeparturesArrivalsOptions extends StObject {
   var language: js.UndefOr[String] = js.undefined
   
   /**
+    * filter by line ID
+    * @default undefined
+    */
+  var line: js.UndefOr[String] = js.undefined
+  
+  /**
     * parse & expose lines at the stop/station?
     * @default false
     */
   var linesOfStops: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * products
+    * @default undefined
+    */
+  var products: js.UndefOr[Products] = js.undefined
   
   /**
     * parse & expose hints & warnings?
@@ -71,7 +82,7 @@ trait DeparturesArrivalsOptions extends StObject {
     * departure date, undefined corresponds to Date.Now
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.undefined
+  var when: js.UndefOr[js.Date] = js.undefined
 }
 object DeparturesArrivalsOptions {
   
@@ -102,9 +113,17 @@ object DeparturesArrivalsOptions {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
     inline def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
     
     inline def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
+    
+    inline def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     inline def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
@@ -122,7 +141,7 @@ object DeparturesArrivalsOptions {
     
     inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
-    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }

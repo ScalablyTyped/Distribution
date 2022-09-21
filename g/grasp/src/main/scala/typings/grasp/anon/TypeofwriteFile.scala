@@ -1,8 +1,7 @@
 package typings.grasp.anon
 
-import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.NoParamCallback
-import typings.node.fsMod.PathLike
+import typings.node.fsMod.PathOrFileDescriptor
 import typings.node.fsMod.WriteFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,12 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofwriteFile extends StObject {
   
-  def apply(path: Double, data: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: Double, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-  def apply(path: Double, data: ArrayBufferView, callback: NoParamCallback): Unit = js.native
-  def apply(path: Double, data: ArrayBufferView, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, data: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, data: ArrayBufferView, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, data: ArrayBufferView, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+  def apply(file: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+  def apply(
+    file: PathOrFileDescriptor,
+    data: js.typedarray.ArrayBufferView,
+    options: WriteFileOptions,
+    callback: NoParamCallback
+  ): Unit = js.native
+  def apply(path: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = js.native
+  def apply(path: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, callback: NoParamCallback): Unit = js.native
 }

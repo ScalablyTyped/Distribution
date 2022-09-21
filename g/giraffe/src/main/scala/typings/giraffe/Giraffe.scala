@@ -15,17 +15,13 @@ object Giraffe {
   trait App extends View[Model] {
     
     def addInitializer(
-      initializer: js.Function2[
-          /* options */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Function0[Unit]], 
-          Unit
-        ]
+      initializer: js.Function2[/* options */ js.UndefOr[Any], /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
     ): App = js.native
     
     var routes: StringMap = js.native
     
     def start(): App = js.native
-    def start(options: js.Any): App = js.native
+    def start(options: Any): App = js.native
   }
   
   type AppMap = StringDictionary[App]
@@ -66,23 +62,23 @@ object Giraffe {
   trait Collection[TModel /* <: Model */]
     extends typings.backbone.mod.Collection[TModel] {
     
-    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
     var app: App = js.native
     
     var appEvents: js.UndefOr[StringMap] = js.native
     
-    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
     var dataEvents: js.UndefOr[StringMap] = js.native
     
     var defaultOptions: js.UndefOr[DefaultOptions] = js.native
     
-    var dispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var dispose: js.UndefOr[js.Function0[Any]] = js.native
   }
   
   object Contrib {
@@ -99,9 +95,9 @@ object Giraffe {
       
       var modelView: View[TModel] = js.native
       
-      var modelViewArgs: js.Array[js.Any] = js.native
+      var modelViewArgs: js.Array[Any] = js.native
       
-      var modelViewEl: js.Any = js.native
+      var modelViewEl: Any = js.native
       
       def removeOne(model: Model): View[TModel] = js.native
       
@@ -117,10 +113,10 @@ object Giraffe {
         * Faulty overgeneralization of Backbone.Events.on, for historical
         * reasons.
         */
-      def on(eventName: js.Any): this.type = js.native
-      def on(eventName: js.Any, callback: js.Any): this.type = js.native
-      def on(eventName: js.Any, callback: js.Any, context: js.Any): this.type = js.native
-      def on(eventName: js.Any, callback: Unit, context: js.Any): this.type = js.native
+      def on(eventName: Any): this.type = js.native
+      def on(eventName: Any, callback: Any): this.type = js.native
+      def on(eventName: Any, callback: Any, context: Any): this.type = js.native
+      def on(eventName: Any, callback: Unit, context: Any): this.type = js.native
     }
     
     @js.native
@@ -137,13 +133,13 @@ object Giraffe {
       
       def findElByModel(model: Model): JQuery[HTMLElement] = js.native
       
-      def findModelByEl(el: js.Any): Model = js.native
+      def findModelByEl(el: Any): Model = js.native
       
-      var modelEl: js.Any = js.native
+      var modelEl: Any = js.native
       
-      def modelSerialize(): js.Any = js.native
+      def modelSerialize(): Any = js.native
       
-      var modelTemplate: js.Any = js.native
+      var modelTemplate: Any = js.native
       
       var modelTemplateStrategy: String = js.native
       
@@ -194,25 +190,25 @@ object Giraffe {
   
   trait GiraffeObject extends StObject {
     
-    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var afterDispose: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var afterInitialize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var app: App
     
     var appEvents: js.UndefOr[StringMap] = js.undefined
     
-    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeDispose: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeInitialize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var dataEvents: js.UndefOr[StringMap] = js.undefined
     
     var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
     
-    var dispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var dispose: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var initialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var initialize: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object GiraffeObject {
     
@@ -223,11 +219,11 @@ object Giraffe {
     
     extension [Self <: GiraffeObject](x: Self) {
       
-      inline def setAfterDispose(value: () => js.Any): Self = StObject.set(x, "afterDispose", js.Any.fromFunction0(value))
+      inline def setAfterDispose(value: () => Any): Self = StObject.set(x, "afterDispose", js.Any.fromFunction0(value))
       
       inline def setAfterDisposeUndefined: Self = StObject.set(x, "afterDispose", js.undefined)
       
-      inline def setAfterInitialize(value: () => js.Any): Self = StObject.set(x, "afterInitialize", js.Any.fromFunction0(value))
+      inline def setAfterInitialize(value: () => Any): Self = StObject.set(x, "afterInitialize", js.Any.fromFunction0(value))
       
       inline def setAfterInitializeUndefined: Self = StObject.set(x, "afterInitialize", js.undefined)
       
@@ -237,11 +233,11 @@ object Giraffe {
       
       inline def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
       
-      inline def setBeforeDispose(value: () => js.Any): Self = StObject.set(x, "beforeDispose", js.Any.fromFunction0(value))
+      inline def setBeforeDispose(value: () => Any): Self = StObject.set(x, "beforeDispose", js.Any.fromFunction0(value))
       
       inline def setBeforeDisposeUndefined: Self = StObject.set(x, "beforeDispose", js.undefined)
       
-      inline def setBeforeInitialize(value: () => js.Any): Self = StObject.set(x, "beforeInitialize", js.Any.fromFunction0(value))
+      inline def setBeforeInitialize(value: () => Any): Self = StObject.set(x, "beforeInitialize", js.Any.fromFunction0(value))
       
       inline def setBeforeInitializeUndefined: Self = StObject.set(x, "beforeInitialize", js.undefined)
       
@@ -253,11 +249,11 @@ object Giraffe {
       
       inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
       
-      inline def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
       inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      inline def setInitialize(value: () => js.Any): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Any): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
       inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     }
@@ -266,25 +262,25 @@ object Giraffe {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.giraffe.Giraffe.GiraffeObject because var conflicts: initialize. Inlined app, appEvents, dataEvents, defaultOptions, beforeInitialize, afterInitialize, dispose, beforeDispose, afterDispose */ @js.native
   trait Model
-    extends typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] {
+    extends typings.backbone.mod.Model[Any, ModelSetOptions, Any] {
     
-    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
     var app: App = js.native
     
     var appEvents: js.UndefOr[StringMap] = js.native
     
-    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
     var dataEvents: js.UndefOr[StringMap] = js.native
     
     var defaultOptions: js.UndefOr[DefaultOptions] = js.native
     
-    var dispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var dispose: js.UndefOr[js.Function0[Any]] = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -292,33 +288,33 @@ object Giraffe {
   trait Router
     extends typings.backbone.mod.Router {
     
-    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
     var app: App = js.native
     
     var appEvents: js.UndefOr[StringMap] = js.native
     
-    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeDispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
-    def cause(appEvent: String, args: js.Any*): js.Any = js.native
+    def cause(appEvent: String, args: Any*): Any = js.native
     
     var dataEvents: js.UndefOr[StringMap] = js.native
     
     var defaultOptions: js.UndefOr[DefaultOptions] = js.native
     
-    var dispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var dispose: js.UndefOr[js.Function0[Any]] = js.native
     
-    def getRoute(appEvent: String, args: js.Any*): String = js.native
+    def getRoute(appEvent: String, args: Any*): String = js.native
     
-    def isCaused(appEvent: String, args: js.Any*): Boolean = js.native
+    def isCaused(appEvent: String, args: Any*): Boolean = js.native
     
     var namespace: String = js.native
     
-    def reload(url: String): js.Any = js.native
+    def reload(url: String): Any = js.native
     
     var triggers: StringMap = js.native
   }
@@ -328,7 +324,7 @@ object Giraffe {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.giraffe.Giraffe.GiraffeObject because var conflicts: initialize. Inlined app, appEvents, dataEvents, defaultOptions, beforeInitialize, afterInitialize, dispose, beforeDispose, afterDispose */ @js.native
   trait View[TModel /* <: Model */]
-    extends typings.backbone.mod.View[TModel] {
+    extends typings.backbone.mod.View[TModel, HTMLElement] {
     
     def addChild(child: View[TModel]): View[TModel] = js.native
     
@@ -336,9 +332,9 @@ object Giraffe {
     
     def afterDispose(): View[TModel] = js.native
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
-    def afterRender(): js.Any = js.native
+    def afterRender(): Any = js.native
     
     var app: App = js.native
     
@@ -347,14 +343,14 @@ object Giraffe {
     def attach(view: View[TModel]): View[TModel] = js.native
     def attach(view: View[TModel], options: AttachmentOptions): View[TModel] = js.native
     
-    def attachTo(el: js.Any): View[TModel] = js.native
-    def attachTo(el: js.Any, options: AttachmentOptions): View[TModel] = js.native
+    def attachTo(el: Any): View[TModel] = js.native
+    def attachTo(el: Any, options: AttachmentOptions): View[TModel] = js.native
     
     def beforeDispose(): View[TModel] = js.native
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeInitialize: js.UndefOr[js.Function0[Any]] = js.native
     
-    def beforeRender(): js.Any = js.native
+    def beforeRender(): Any = js.native
     
     var children: js.Array[View[TModel]] = js.native
     
@@ -372,9 +368,9 @@ object Giraffe {
     
     var documentTitle: String = js.native
     
-    def invoke(method: String, args: js.Any*): js.Any = js.native
+    def invoke(method: String, args: Any*): Any = js.native
     
-    def isAttached(el: js.Any): Boolean = js.native
+    def isAttached(el: Any): Boolean = js.native
     
     var parent: View[TModel] = js.native
     
@@ -384,13 +380,13 @@ object Giraffe {
     def removeChildren(): View[TModel] = js.native
     def removeChildren(preserve: Boolean): View[TModel] = js.native
     
-    def render(options: js.Any): View[TModel] = js.native
+    def render(options: Any): this.type = js.native
     
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     def setParent(parent: View[TModel]): View[TModel] = js.native
     
-    var template: js.Any = js.native
+    var template: Any = js.native
     
     def templateStrategy(): String = js.native
     

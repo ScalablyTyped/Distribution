@@ -23,12 +23,12 @@ object TestResultsQuery {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setResults(value: js.Array[TestCaseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsFilter(value: ResultsFilter): Self = StObject.set(x, "resultsFilter", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

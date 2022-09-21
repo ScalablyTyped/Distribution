@@ -11,12 +11,10 @@ object toggleButtonMod {
   
   @JSImport("react-bootstrap/lib/ToggleButton", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ToggleButtonProps & ButtonProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ToggleButtonProps & ButtonProps, js.Object, Any]
   
-  @js.native
-  trait ToggleButton
-    extends Component[ToggleButtonProps & ButtonProps, js.Object, js.Any]
+  type ToggleButton = Component[ToggleButtonProps & ButtonProps, js.Object, Any]
   
   trait ToggleButtonProps
     extends StObject

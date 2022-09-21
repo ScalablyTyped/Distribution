@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.Observer")
 @js.native
-class Observer ()
+open class Observer ()
   extends StObject
      with typings.microsoftAjax.Sys.Observer
 object Observer {
@@ -31,7 +31,7 @@ object Observer {
     *           The item to add.
     */
   /* static member */
-  inline def add(target: js.Array[js.Any], item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(target: js.Array[Any], item: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds an event handler to the target.
@@ -39,7 +39,7 @@ object Observer {
     * @param handler The event handler.
     */
   /* static member */
-  inline def addCollectionChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCollectionChanged(target: Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds an observable event handler to the target.
@@ -47,7 +47,7 @@ object Observer {
     * @param handler The added function.
     */
   /* static member */
-  inline def addEventHandler(target: js.Any, eventName: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventHandler(target: Any, eventName: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds a propertyChanged event handler to the target.
@@ -55,7 +55,7 @@ object Observer {
     * @param handler The function handler to add.
     */
   /* static member */
-  inline def addPropertyChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPropertyChanged(target: Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds items to the collection in an observable manner.
@@ -63,28 +63,28 @@ object Observer {
     * @param items The array of items to add.
     */
   /* static member */
-  inline def addRange(target: js.Array[js.Any], items: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRange")(target.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRange(target: js.Array[Any], items: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRange")(target.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Begins the process of updating the target object.
     * @param target The object to update.
     */
   /* static member */
-  inline def beginUpdate(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beginUpdate(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Clears the array of its elements in an observable manner.
     * @param target The array to clear.
     */
   /* static member */
-  inline def clear(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Ends the process of updating the target object.
     * @param target The object being updated.
     */
   /* static member */
-  inline def endUpdate(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def endUpdate(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Inserts an item at the specified index in an observable manner.
@@ -93,7 +93,7 @@ object Observer {
     * @param item The item to insert.
     */
   /* static member */
-  inline def insert(target: js.Any, index: Double, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(target: Any, index: Double, item: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //#endregion
   //#region Properties
@@ -103,7 +103,7 @@ object Observer {
     * @return true if given target argument is currently updating; otherwise false.
     */
   /* static member */
-  inline def isUpdating(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUpdating")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUpdating(target: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUpdating")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Makes an object directly observable by adding observable methods to it.
@@ -112,7 +112,7 @@ object Observer {
     * @see {@link http://msdn.microsoft.com/en-us/library/dd393633(v=vs.100).aspx}
     */
   /* static member */
-  inline def makeObservable(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def makeObservable(target: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(target.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Raises the collectionChanged event.
@@ -120,7 +120,7 @@ object Observer {
     * @param changes A Sys.CollectionChange object that contains the list of changes that were performed on the collection since the last event.
     */
   /* static member */
-  inline def raiseCollectionChanged(target: js.Array[js.Any], changes: typings.microsoftAjax.Sys.CollectionChange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseCollectionChanged")(target.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raiseCollectionChanged(target: js.Array[Any], changes: typings.microsoftAjax.Sys.CollectionChange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseCollectionChanged")(target.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raises an observable event on the target.
@@ -129,7 +129,7 @@ object Observer {
     * @param eventArgs A Sys.EventArgs object used to pass event argument information.
     */
   /* static member */
-  inline def raiseEvent(target: js.Any, eventName: String, eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raiseEvent(target: Any, eventName: String, eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raises a propertyChanged notification event.
@@ -137,7 +137,7 @@ object Observer {
     * @param propertyName The name of the property that changed.
     */
   /* static member */
-  inline def raisePropertyChanged(target: js.Any, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raisePropertyChanged")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raisePropertyChanged(target: Any, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raisePropertyChanged")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes the first occurrence of an item from the array in an observable manner.
@@ -146,7 +146,7 @@ object Observer {
     * @return true if the item is found in the array. Otherwise false.
     */
   /* static member */
-  inline def remove(target: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def remove(target: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Removes the item at the specified index from the array in an observable manner.
@@ -154,7 +154,7 @@ object Observer {
     * @param index A number that represents the index of the item to remove.
     */
   /* static member */
-  inline def removeAt(target: js.Array[js.Any], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAt(target: js.Array[Any], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes the collectionChanged event handler from the target.
@@ -162,7 +162,7 @@ object Observer {
     * @param handler The function to remove.
     */
   /* static member */
-  inline def removeCollectionChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCollectionChanged(target: Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes a propertyChanged event handler from the target.
@@ -170,7 +170,7 @@ object Observer {
     * @param handler The event handler to remove.
     */
   /* static member */
-  inline def removeEventHandler(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventHandler")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventHandler(target: Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventHandler")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets a property or field on the target in an observable manner.
@@ -180,5 +180,5 @@ object Observer {
     * @param value The value to set.
     */
   /* static member */
-  inline def setValue(target: js.Any, propertyName: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setValue(target: Any, propertyName: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

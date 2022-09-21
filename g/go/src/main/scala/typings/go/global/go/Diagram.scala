@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If no DIV identifier is supplied one will be created in memory. The Diagram's Diagram.div property
   * can then be set later on.
   */
-class Diagram ()
+open class Diagram ()
   extends typings.go.mod.Diagram {
   def this(div: String) = this()
   /**

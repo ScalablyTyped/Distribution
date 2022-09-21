@@ -1,34 +1,24 @@
 package typings.tabris.anon
 
-import typings.tabris.mod.ListenersKeysOf
-import typings.tabris.tabrisStrings.default
-import typings.tabris.tabrisStrings.strict
-import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `7`[Target] extends StObject {
+trait `7` extends StObject {
   
-  var mode: js.UndefOr[default | strict] = js.undefined
-  
-  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | js.Symbol] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.undefined
 }
 object `7` {
   
-  inline def apply[Target](): `7`[Target] = {
+  inline def apply(): `7` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`7`[Target]]
+    __obj.asInstanceOf[`7`]
   }
   
-  extension [Self <: `7`[?], Target](x: Self & `7`[Target]) {
+  extension [Self <: `7`](x: Self) {
     
-    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-    
-    inline def setTrigger(value: ListenersKeysOf[Target] | update | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
-    
-    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
   }
 }

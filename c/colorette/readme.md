@@ -1,22 +1,22 @@
 
 # Scala.js typings for colorette
 
-Typings are for version 1.2.1
+Typings are for version 2.0.19
 
 ## Library description:
-Color your terminal using pure idiomatic JavaScript.
+🌈Easily set your terminal text color & styles.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | colorette |
-| Keywords           | colorette, terminal, styles, color, ansi |
-| # releases         | 8 |
-| # dependents       | 216 |
-| # downloads        | 73248373 |
-| # stars            | 1 |
+| Keywords           | terminal, styles, color, ansi |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 9.382978933333333E7 |
+| # stars            | 1412.0 |
 
 ## Links
-- [Homepage](https://github.com/jorgebucaran/colorette)
+- [Homepage](https://github.com/jorgebucaran/colorette#readme)
 - [Bugs](https://github.com/jorgebucaran/colorette/issues)
 - [Repository](https://github.com/jorgebucaran/colorette)
 - [Npm](https://www.npmjs.com/package/colorette)

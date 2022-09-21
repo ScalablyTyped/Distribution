@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "MonthDay")
 @js.native
-/* private */ class MonthDay () extends Temporal {
+/* private */ open class MonthDay () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -15,8 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def compareTo(other: MonthDay): Double = js.native
   
   def dayOfMonth(): Double = js.native
-  
-  def equals(obj: js.Any): Boolean = js.native
   
   def format(formatter: DateTimeFormatter): String = js.native
   

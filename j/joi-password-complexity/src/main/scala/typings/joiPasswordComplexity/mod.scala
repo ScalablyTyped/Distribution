@@ -1,5 +1,6 @@
 package typings.joiPasswordComplexity
 
+import typings.joi.mod.StringSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,40 +9,33 @@ object mod {
   
   @JSImport("joi-password-complexity", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with PasswordComplexity {
-    def this(options: ComplexityOptions) = this()
-  }
+  val ^ : js.Any = js.native
+  
+  inline def default(): JoiPasswordComplexity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[JoiPasswordComplexity]
+  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: Unit, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
+  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: ComplexityOptions): JoiPasswordComplexity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any]).asInstanceOf[JoiPasswordComplexity]
+  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: ComplexityOptions, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
   
   trait ComplexityOptions extends StObject {
     
-    var lowerCase: Double
+    var lowerCase: js.UndefOr[Double] = js.undefined
     
-    var max: Double
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: Double
+    var min: js.UndefOr[Double] = js.undefined
     
-    var numeric: Double
+    var numeric: js.UndefOr[Double] = js.undefined
     
-    var requirementCount: Double
+    var requirementCount: js.UndefOr[Double] = js.undefined
     
-    var symbol: Double
+    var symbol: js.UndefOr[Double] = js.undefined
     
-    var upperCase: Double
+    var upperCase: js.UndefOr[Double] = js.undefined
   }
   object ComplexityOptions {
     
-    inline def apply(
-      lowerCase: Double,
-      max: Double,
-      min: Double,
-      numeric: Double,
-      requirementCount: Double,
-      symbol: Double,
-      upperCase: Double
-    ): ComplexityOptions = {
-      val __obj = js.Dynamic.literal(lowerCase = lowerCase.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], requirementCount = requirementCount.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], upperCase = upperCase.asInstanceOf[js.Any])
+    inline def apply(): ComplexityOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComplexityOptions]
     }
     
@@ -49,19 +43,39 @@ object mod {
       
       inline def setLowerCase(value: Double): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
       
+      inline def setLowerCaseUndefined: Self = StObject.set(x, "lowerCase", js.undefined)
+      
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
       inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      
       inline def setNumeric(value: Double): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      
+      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
       inline def setRequirementCount(value: Double): Self = StObject.set(x, "requirementCount", value.asInstanceOf[js.Any])
       
+      inline def setRequirementCountUndefined: Self = StObject.set(x, "requirementCount", js.undefined)
+      
       inline def setSymbol(value: Double): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      
       inline def setUpperCase(value: Double): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
+      
+      inline def setUpperCaseUndefined: Self = StObject.set(x, "upperCase", js.undefined)
     }
   }
   
-  trait PasswordComplexity extends StObject
+  @js.native
+  trait JoiPasswordComplexity
+    extends StObject
+       with StringSchema {
+    
+    def passwordComplexity(): this.type = js.native
+  }
 }

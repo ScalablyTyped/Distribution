@@ -12,7 +12,7 @@ trait PartialTransferLocale extends StObject {
   
   var itemsUnit: js.UndefOr[String] = js.undefined
   
-  var notFoundContent: js.UndefOr[ReactNode] = js.undefined
+  var notFoundContent: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.undefined
   
   var remove: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait PartialTransferLocale extends StObject {
   
   var selectInvert: js.UndefOr[String] = js.undefined
   
-  var titles: js.UndefOr[js.Array[String]] = js.undefined
+  var titles: js.UndefOr[js.Array[ReactNode]] = js.undefined
 }
 object PartialTransferLocale {
   
@@ -47,9 +47,11 @@ object PartialTransferLocale {
     
     inline def setItemsUnitUndefined: Self = StObject.set(x, "itemsUnit", js.undefined)
     
-    inline def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
+    inline def setNotFoundContent(value: ReactNode | js.Array[ReactNode]): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
     
     inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
+    
+    inline def setNotFoundContentVarargs(value: ReactNode*): Self = StObject.set(x, "notFoundContent", js.Array(value*))
     
     inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
@@ -79,10 +81,10 @@ object PartialTransferLocale {
     
     inline def setSelectInvertUndefined: Self = StObject.set(x, "selectInvert", js.undefined)
     
-    inline def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
+    inline def setTitles(value: js.Array[ReactNode]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
     inline def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
     
-    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: ReactNode*): Self = StObject.set(x, "titles", js.Array(value*))
   }
 }

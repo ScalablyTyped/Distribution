@@ -1,26 +1,29 @@
 package typings.awsSdk.smsMod
 
+import typings.awsSdk.awsSdkStrings.SSM
+import typings.awsSdk.awsSdkStrings.USERDATA
+import typings.awsSdk.awsSdkStrings.VIRTUAL_MACHINE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AmiId = java.lang.String
+type AmiId = String
 
-type AppDescription = java.lang.String
+type AppDescription = String
 
-type AppId = java.lang.String
+type AppId = String
 
-type AppIdWithValidation = java.lang.String
+type AppIdWithValidation = String
 
-type AppIds = js.Array[typings.awsSdk.smsMod.AppId]
+type AppIds = js.Array[AppId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_CONFIGURED
   - typings.awsSdk.awsSdkStrings.CONFIGURED
   - java.lang.String
 */
-type AppLaunchConfigurationStatus = typings.awsSdk.smsMod._AppLaunchConfigurationStatus | java.lang.String
+type AppLaunchConfigurationStatus = _AppLaunchConfigurationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY_FOR_CONFIGURATION
@@ -40,18 +43,18 @@ type AppLaunchConfigurationStatus = typings.awsSdk.smsMod._AppLaunchConfiguratio
   - typings.awsSdk.awsSdkStrings.TERMINATED
   - java.lang.String
 */
-type AppLaunchStatus = typings.awsSdk.smsMod._AppLaunchStatus | java.lang.String
+type AppLaunchStatus = _AppLaunchStatus | String
 
-type AppLaunchStatusMessage = java.lang.String
+type AppLaunchStatusMessage = String
 
-type AppName = java.lang.String
+type AppName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_CONFIGURED
   - typings.awsSdk.awsSdkStrings.CONFIGURED
   - java.lang.String
 */
-type AppReplicationConfigurationStatus = typings.awsSdk.smsMod._AppReplicationConfigurationStatus | java.lang.String
+type AppReplicationConfigurationStatus = _AppReplicationConfigurationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY_FOR_CONFIGURATION
@@ -72,9 +75,9 @@ type AppReplicationConfigurationStatus = typings.awsSdk.smsMod._AppReplicationCo
   - typings.awsSdk.awsSdkStrings.REPLICATION_STOPPED
   - java.lang.String
 */
-type AppReplicationStatus = typings.awsSdk.smsMod._AppReplicationStatus | java.lang.String
+type AppReplicationStatus = _AppReplicationStatus | String
 
-type AppReplicationStatusMessage = java.lang.String
+type AppReplicationStatusMessage = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -85,25 +88,25 @@ type AppReplicationStatusMessage = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED
   - java.lang.String
 */
-type AppStatus = typings.awsSdk.smsMod._AppStatus | java.lang.String
+type AppStatus = _AppStatus | String
 
-type AppStatusMessage = java.lang.String
+type AppStatusMessage = String
 
-type AppValidationConfigurations = js.Array[typings.awsSdk.smsMod.AppValidationConfiguration]
+type AppValidationConfigurations = js.Array[AppValidationConfiguration]
 
-type AppValidationStrategy = typings.awsSdk.awsSdkStrings.SSM | java.lang.String
+type AppValidationStrategy = SSM | String
 
-type Apps = js.Array[typings.awsSdk.smsMod.AppSummary]
+type Apps = js.Array[AppSummary]
 
-type AssociatePublicIpAddress = scala.Boolean
+type AssociatePublicIpAddress = Boolean
 
-type AutoLaunch = scala.Boolean
+type AutoLaunch = Boolean
 
-type BucketName = java.lang.String
+type BucketName = String
 
-type ClientToken = java.lang.String
+type ClientToken = String
 
-type Command = java.lang.String
+type Command = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VSPHERE
@@ -113,78 +116,78 @@ type Command = java.lang.String
   - typings.awsSdk.awsSdkStrings.SMS_OPTIMIZED
   - java.lang.String
 */
-type ConnectorCapability = typings.awsSdk.smsMod._ConnectorCapability | java.lang.String
+type ConnectorCapability = _ConnectorCapability | String
 
-type ConnectorCapabilityList = js.Array[typings.awsSdk.smsMod.ConnectorCapability]
+type ConnectorCapabilityList = js.Array[ConnectorCapability]
 
-type ConnectorId = java.lang.String
+type ConnectorId = String
 
-type ConnectorList = js.Array[typings.awsSdk.smsMod.Connector]
+type ConnectorList = js.Array[Connector]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
   - typings.awsSdk.awsSdkStrings.UNHEALTHY
   - java.lang.String
 */
-type ConnectorStatus = typings.awsSdk.smsMod._ConnectorStatus | java.lang.String
+type ConnectorStatus = _ConnectorStatus | String
 
-type ConnectorVersion = java.lang.String
+type ConnectorVersion = String
 
-type Description = java.lang.String
+type Description = String
 
-type EC2KeyName = java.lang.String
+type EC2KeyName = String
 
-type Encrypted = scala.Boolean
+type Encrypted = Boolean
 
-type ExecutionTimeoutSeconds = scala.Double
+type ExecutionTimeoutSeconds = Double
 
-type ForceStopAppReplication = scala.Boolean
+type ForceStopAppReplication = Boolean
 
-type ForceTerminateApp = scala.Boolean
+type ForceTerminateApp = Boolean
 
-type Frequency = scala.Double
+type Frequency = Double
 
-type ImportedAppId = java.lang.String
+type ImportedAppId = String
 
-type InstanceId = java.lang.String
+type InstanceId = String
 
-type InstanceType = java.lang.String
+type InstanceType = String
 
-type IpAddress = java.lang.String
+type IpAddress = String
 
-type KmsKeyId = java.lang.String
+type KmsKeyId = String
 
-type LaunchOrder = scala.Double
+type LaunchOrder = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS
   - typings.awsSdk.awsSdkStrings.BYOL
   - java.lang.String
 */
-type LicenseType = typings.awsSdk.smsMod._LicenseType | java.lang.String
+type LicenseType = _LicenseType | String
 
-type LogicalId = java.lang.String
+type LogicalId = String
 
-type MacAddress = java.lang.String
+type MacAddress = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NonEmptyStringWithMaxLen255 = java.lang.String
+type NonEmptyStringWithMaxLen255 = String
 
-type NumberOfRecentAmisToKeep = scala.Double
+type NumberOfRecentAmisToKeep = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.JSON
   - typings.awsSdk.awsSdkStrings.YAML
   - java.lang.String
 */
-type OutputFormat = typings.awsSdk.smsMod._OutputFormat | java.lang.String
+type OutputFormat = _OutputFormat | String
 
-type ReplicationJobId = java.lang.String
+type ReplicationJobId = String
 
-type ReplicationJobList = js.Array[typings.awsSdk.smsMod.ReplicationJob]
+type ReplicationJobList = js.Array[ReplicationJob]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -197,19 +200,19 @@ type ReplicationJobList = js.Array[typings.awsSdk.smsMod.ReplicationJob]
   - typings.awsSdk.awsSdkStrings.FAILING
   - java.lang.String
 */
-type ReplicationJobState = typings.awsSdk.smsMod._ReplicationJobState | java.lang.String
+type ReplicationJobState = _ReplicationJobState | String
 
-type ReplicationJobStatusMessage = java.lang.String
+type ReplicationJobStatusMessage = String
 
-type ReplicationJobTerminated = scala.Boolean
+type ReplicationJobTerminated = Boolean
 
-type ReplicationRunId = java.lang.String
+type ReplicationRunId = String
 
-type ReplicationRunList = js.Array[typings.awsSdk.smsMod.ReplicationRun]
+type ReplicationRunList = js.Array[ReplicationRun]
 
-type ReplicationRunStage = java.lang.String
+type ReplicationRunStage = String
 
-type ReplicationRunStageProgress = java.lang.String
+type ReplicationRunStageProgress = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -221,33 +224,33 @@ type ReplicationRunStageProgress = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type ReplicationRunState = typings.awsSdk.smsMod._ReplicationRunState | java.lang.String
+type ReplicationRunState = _ReplicationRunState | String
 
-type ReplicationRunStatusMessage = java.lang.String
+type ReplicationRunStatusMessage = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ON_DEMAND
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
   - java.lang.String
 */
-type ReplicationRunType = typings.awsSdk.smsMod._ReplicationRunType | java.lang.String
+type ReplicationRunType = _ReplicationRunType | String
 
-type RoleName = java.lang.String
+type RoleName = String
 
-type RunOnce = scala.Boolean
+type RunOnce = Boolean
 
-type S3BucketName = java.lang.String
+type S3BucketName = String
 
-type S3KeyName = java.lang.String
+type S3KeyName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SHELL_SCRIPT
   - typings.awsSdk.awsSdkStrings.POWERSHELL_SCRIPT
   - java.lang.String
 */
-type ScriptType = typings.awsSdk.smsMod._ScriptType | java.lang.String
+type ScriptType = _ScriptType | String
 
-type SecurityGroup = java.lang.String
+type SecurityGroup = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_IMPORTED
@@ -257,57 +260,57 @@ type SecurityGroup = java.lang.String
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type ServerCatalogStatus = typings.awsSdk.smsMod._ServerCatalogStatus | java.lang.String
+type ServerCatalogStatus = _ServerCatalogStatus | String
 
-type ServerGroupId = java.lang.String
+type ServerGroupId = String
 
-type ServerGroupLaunchConfigurations = js.Array[typings.awsSdk.smsMod.ServerGroupLaunchConfiguration]
+type ServerGroupLaunchConfigurations = js.Array[ServerGroupLaunchConfiguration]
 
-type ServerGroupName = java.lang.String
+type ServerGroupName = String
 
-type ServerGroupReplicationConfigurations = js.Array[typings.awsSdk.smsMod.ServerGroupReplicationConfiguration]
+type ServerGroupReplicationConfigurations = js.Array[ServerGroupReplicationConfiguration]
 
-type ServerGroupValidationConfigurations = js.Array[typings.awsSdk.smsMod.ServerGroupValidationConfiguration]
+type ServerGroupValidationConfigurations = js.Array[ServerGroupValidationConfiguration]
 
-type ServerGroups = js.Array[typings.awsSdk.smsMod.ServerGroup]
+type ServerGroups = js.Array[ServerGroup]
 
-type ServerId = java.lang.String
+type ServerId = String
 
-type ServerLaunchConfigurations = js.Array[typings.awsSdk.smsMod.ServerLaunchConfiguration]
+type ServerLaunchConfigurations = js.Array[ServerLaunchConfiguration]
 
-type ServerList = js.Array[typings.awsSdk.smsMod.Server]
+type ServerList = js.Array[Server]
 
-type ServerReplicationConfigurations = js.Array[typings.awsSdk.smsMod.ServerReplicationConfiguration]
+type ServerReplicationConfigurations = js.Array[ServerReplicationConfiguration]
 
-type ServerType = typings.awsSdk.awsSdkStrings.VIRTUAL_MACHINE | java.lang.String
+type ServerType = VIRTUAL_MACHINE | String
 
-type ServerValidationConfigurations = js.Array[typings.awsSdk.smsMod.ServerValidationConfiguration]
+type ServerValidationConfigurations = js.Array[ServerValidationConfiguration]
 
-type ServerValidationStrategy = typings.awsSdk.awsSdkStrings.USERDATA | java.lang.String
+type ServerValidationStrategy = USERDATA | String
 
-type StackId = java.lang.String
+type StackId = String
 
-type StackName = java.lang.String
+type StackName = String
 
-type Subnet = java.lang.String
+type Subnet = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = js.Array[typings.awsSdk.smsMod.Tag]
+type Tags = js.Array[Tag]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type TotalServerGroups = scala.Double
+type TotalServerGroups = Double
 
-type TotalServers = scala.Double
+type TotalServers = Double
 
-type VPC = java.lang.String
+type VPC = String
 
-type ValidationId = java.lang.String
+type ValidationId = String
 
-type ValidationOutputList = js.Array[typings.awsSdk.smsMod.ValidationOutput]
+type ValidationOutputList = js.Array[ValidationOutput]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY_FOR_VALIDATION
@@ -317,15 +320,15 @@ type ValidationOutputList = js.Array[typings.awsSdk.smsMod.ValidationOutput]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ValidationStatus = typings.awsSdk.smsMod._ValidationStatus | java.lang.String
+type ValidationStatus = _ValidationStatus | String
 
-type ValidationStatusMessage = java.lang.String
+type ValidationStatusMessage = String
 
-type VmId = java.lang.String
+type VmId = String
 
-type VmManagerId = java.lang.String
+type VmManagerId = String
 
-type VmManagerName = java.lang.String
+type VmManagerName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VSPHERE
@@ -333,17 +336,17 @@ type VmManagerName = java.lang.String
   - typings.awsSdk.awsSdkStrings.`HYPERV-MANAGER`
   - java.lang.String
 */
-type VmManagerType = typings.awsSdk.smsMod._VmManagerType | java.lang.String
+type VmManagerType = _VmManagerType | String
 
-type VmName = java.lang.String
+type VmName = String
 
-type VmPath = java.lang.String
+type VmPath = String
 
-type VmServerAddressList = js.Array[typings.awsSdk.smsMod.VmServerAddress]
+type VmServerAddressList = js.Array[VmServerAddress]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-10-24`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.smsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

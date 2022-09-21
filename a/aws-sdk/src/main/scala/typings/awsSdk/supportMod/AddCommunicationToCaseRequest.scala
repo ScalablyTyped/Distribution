@@ -12,7 +12,7 @@ trait AddCommunicationToCaseRequest extends StObject {
   var attachmentSetId: js.UndefOr[AttachmentSetId] = js.undefined
   
   /**
-    * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
+    * The support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
     */
   var caseId: js.UndefOr[CaseId] = js.undefined
   
@@ -47,7 +47,7 @@ object AddCommunicationToCaseRequest {
     
     inline def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
-    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value*))
     
     inline def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
   }

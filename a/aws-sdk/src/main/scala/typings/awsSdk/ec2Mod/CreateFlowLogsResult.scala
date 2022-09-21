@@ -38,12 +38,12 @@ object CreateFlowLogsResult {
     
     inline def setFlowLogIdsUndefined: Self = StObject.set(x, "FlowLogIds", js.undefined)
     
-    inline def setFlowLogIdsVarargs(value: String*): Self = StObject.set(x, "FlowLogIds", js.Array(value :_*))
+    inline def setFlowLogIdsVarargs(value: String*): Self = StObject.set(x, "FlowLogIds", js.Array(value*))
     
     inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value*))
   }
 }

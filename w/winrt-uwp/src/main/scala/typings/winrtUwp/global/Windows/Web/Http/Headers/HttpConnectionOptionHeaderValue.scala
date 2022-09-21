@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents connection information used in the Connection HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue")
 @js.native
-class HttpConnectionOptionHeaderValue protected ()
+open class HttpConnectionOptionHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue {
   /**

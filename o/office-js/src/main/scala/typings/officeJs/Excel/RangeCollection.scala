@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -23,15 +24,17 @@ trait RangeCollection
   var context_RangeCollection: RequestContext = js.native
   
   /**
-    * Returns the number of ranges in the RangeCollection.
+    * Returns the number of ranges in the `RangeCollection`.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Returns the range object based on its position in the RangeCollection.
+    * Returns the range object based on its position in the `RangeCollection`.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param index Index value of the range object to be retrieved. Zero-indexed.

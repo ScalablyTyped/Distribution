@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "InputGroup")
 @js.native
-class InputGroup ()
+open class InputGroup ()
   extends typings.reactBootstrap.libMod.InputGroup
 object InputGroup {
   
@@ -18,7 +18,7 @@ object InputGroup {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "InputGroup.Addon")
   @js.native
-  class Addon ()
+  open class Addon ()
     extends typings.reactBootstrap.inputGroupAddonMod.^
   /* static member */
   @JSImport("react-bootstrap", "InputGroup.Addon")
@@ -29,7 +29,7 @@ object InputGroup {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "InputGroup.Button")
   @js.native
-  class Button ()
+  open class Button ()
     extends typings.reactBootstrap.inputGroupButtonMod.^
   /* static member */
   @JSImport("react-bootstrap", "InputGroup.Button")

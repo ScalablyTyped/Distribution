@@ -10,10 +10,10 @@ Write concise React components without JSX
 | ------------------ | :-------------: |
 | Full name          | jsnox |
 | Keywords           | react, reactjs, jsx |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 921 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90.0 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/af/jsnox)

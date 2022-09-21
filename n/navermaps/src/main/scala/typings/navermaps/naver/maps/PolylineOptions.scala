@@ -63,7 +63,7 @@ object PolylineOptions {
     
     inline def setPath(value: ArrayOfCoords | KVOArrayOfCoords | ArrayOfCoordsLiteral): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: (LatLng | LatLngLiteral | Point | PointLiteral)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (LatLng | LatLngLiteral | Point | PointLiteral)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setStartIcon(value: PointingIcon): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
     

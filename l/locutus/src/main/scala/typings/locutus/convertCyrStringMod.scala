@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object convertCyrStringMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, from: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, from: Any, to: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, from: Unit, to: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, from: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, from: Any, to: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, from: Unit, to: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/convert_cyr_string", JSImport.Namespace)
   @js.native

@@ -23,7 +23,7 @@ object XTextInputStream2 {
     closeInput: () => Unit,
     getInputStream: () => XInputStream,
     isEOF: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     readLine: () => String,
     readSomeBytes: (js.Array[SeqEquiv[Double]], Double) => Double,

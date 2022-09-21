@@ -1,8 +1,7 @@
 package typings.pump
 
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.std.Error
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // callback have to be passed as last argument
-  inline def apply(streams: (Stream | Callback)*): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
+  inline def apply(streams: (Stream | Callback)*): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream]
   inline def apply(streams: js.Array[Stream]): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
   inline def apply(streams: js.Array[Stream], callback: Callback): Stream = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stream]
   
@@ -18,7 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function1[/* err */ Error, js.Any]
+  type Callback = js.Function1[/* err */ js.UndefOr[js.Error], Any]
   
-  type Stream = ReadableStream | WritableStream
+  type Stream = ReadableStream[Any] | WritableStream[Any]
 }

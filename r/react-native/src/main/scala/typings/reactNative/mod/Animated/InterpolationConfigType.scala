@@ -45,10 +45,10 @@ object InterpolationConfigType {
     
     inline def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
     
-    inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
+    inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value*))
     
     inline def setOutputRange(value: js.Array[Double | String]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
     
-    inline def setOutputRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
+    inline def setOutputRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "outputRange", js.Array(value*))
   }
 }

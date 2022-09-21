@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.CacheAdaptor")
 @js.native
-class CacheAdaptor ()
+open class CacheAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.CacheAdaptor

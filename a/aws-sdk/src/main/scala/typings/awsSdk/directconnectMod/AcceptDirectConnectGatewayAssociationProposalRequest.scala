@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcceptDirectConnectGatewayAssociationProposalRequest extends StObject {
   
   /**
-    * The ID of the AWS account that owns the virtual private gateway or transit gateway.
+    * The ID of the Amazon Web Services account that owns the virtual private gateway or transit gateway.
     */
   var associatedGatewayOwnerAccount: OwnerAccount
   
@@ -17,7 +17,7 @@ trait AcceptDirectConnectGatewayAssociationProposalRequest extends StObject {
   var directConnectGatewayId: DirectConnectGatewayId
   
   /**
-    * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway. For information about how to set the prefixes, see Allowed Prefixes in the AWS Direct Connect User Guide.
+    * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway. For information about how to set the prefixes, see Allowed Prefixes in the Direct Connect User Guide.
     */
   var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
@@ -47,7 +47,7 @@ object AcceptDirectConnectGatewayAssociationProposalRequest {
     
     inline def setOverrideAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.undefined)
     
-    inline def setOverrideAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    inline def setOverrideAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.Array(value*))
     
     inline def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
   }

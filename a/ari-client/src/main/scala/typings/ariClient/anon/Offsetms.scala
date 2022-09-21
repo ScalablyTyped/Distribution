@@ -31,7 +31,7 @@ object Offsetms {
     
     inline def setMedia(value: String | js.Array[String]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    inline def setMediaVarargs(value: String*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: String*): Self = StObject.set(x, "media", js.Array(value*))
     
     inline def setOffsetms(value: Double): Self = StObject.set(x, "offsetms", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,6 @@ import typings.kiiCloudSdk.anon.`19`
 import typings.kiiCloudSdk.anon.`32`
 import typings.kiiCloudSdk.anon.`37`
 import typings.kiiCloudSdk.anon.`38`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiUser")
 @js.native
-class KiiUser ()
+open class KiiUser ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiUser
 object KiiUser {
@@ -138,9 +137,9 @@ object KiiUser {
     */
   /* static member */
   inline def authenticateWithToken(accessToken: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  inline def authenticateWithToken(accessToken: String, callbacks: Unit, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String, callbacks: Unit, expiresAt: js.Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   inline def authenticateWithToken(accessToken: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  inline def authenticateWithToken(accessToken: String, callbacks: `32`, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String, callbacks: `32`, expiresAt: js.Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Reset password with the PIN code in receipt SMS
@@ -419,9 +418,9 @@ object KiiUser {
     */
   /* static member */
   inline def registerAsPseudoUser(): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")().asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  inline def registerAsPseudoUser(callbacks: Unit, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(callbacks: Unit, userFields: Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   inline def registerAsPseudoUser(callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  inline def registerAsPseudoUser(callbacks: `32`, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(callbacks: `32`, userFields: Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Reset a user's password on the server

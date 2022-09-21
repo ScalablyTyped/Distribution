@@ -1,7 +1,7 @@
 
 # Scala.js typings for lock-system
 
-Typings are for version 2.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Lock your system
@@ -10,10 +10,10 @@ Lock your system
 | ------------------ | :-------------: |
 | Full name          | lock-system |
 | Keywords           | lock, system, macos, mac, linux, windows, screen, os, login, password |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 2055 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 573.6666666666666 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/lock-system#readme)

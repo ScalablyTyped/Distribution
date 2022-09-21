@@ -54,7 +54,7 @@ object cardContentMod {
   
   @JSImport("rbx/components/card/card-content", "CardContent")
   @js.native
-  val CardContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val CardContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait CardContentProps extends StObject {

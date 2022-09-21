@@ -1,11 +1,13 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
-import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
+import typings.grpcGrpcJs.resolverMod.ConfigSelector
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +17,7 @@ object resolvingLoadBalancerMod {
   
   @JSImport("@grpc/grpc-js/build/src/resolving-load-balancer", "ResolvingLoadBalancer")
   @js.native
-  class ResolvingLoadBalancer protected ()
+  open class ResolvingLoadBalancer protected ()
     extends StObject
        with LoadBalancer {
     /**
@@ -30,31 +32,37 @@ object resolvingLoadBalancerMod {
       *     In practice, that means using the "pick first" load balancer
       *     implmentation
       */
-    def this(target: GrpcUri, channelControlHelper: ChannelControlHelper, channelOptions: ChannelOptions) = this()
+    def this(
+      target: GrpcUri,
+      channelControlHelper: ChannelControlHelper,
+      channelOptions: ChannelOptions,
+      onSuccessfulResolution: ResolutionCallback,
+      onFailedResolution: ResolutionFailureCallback
+    ) = this()
     
     /**
       * The backoff timer for handling name resolution failures.
       */
-    /* private */ val backoffTimeout: js.Any = js.native
+    /* private */ val backoffTimeout: Any = js.native
     
-    /* private */ val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: Any = js.native
     
-    /* private */ val channelOptions: js.Any = js.native
+    /* private */ val channelOptions: Any = js.native
     
-    /* private */ var childLoadBalancer: js.Any = js.native
+    /* private */ var childLoadBalancer: Any = js.native
     
     /**
       * Indicates whether we should attempt to resolve again after the backoff
       * timer runs out.
       */
-    /* private */ var continueResolving: js.Any = js.native
+    /* private */ var continueResolving: Any = js.native
     
     /**
       * This resolving load balancer's current connectivity state.
       */
-    /* private */ var currentState: js.Any = js.native
+    /* private */ var currentState: Any = js.native
     
-    /* private */ val defaultServiceConfig: js.Any = js.native
+    /* private */ val defaultServiceConfig: Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -77,23 +85,27 @@ object resolvingLoadBalancerMod {
     /* CompleteClass */
     override def getTypeName(): String = js.native
     
-    /* private */ var handleResolutionFailure: js.Any = js.native
+    /* private */ var handleResolutionFailure: Any = js.native
     
     /**
       * The resolver class constructed for the target address.
       */
-    /* private */ var innerResolver: js.Any = js.native
+    /* private */ var innerResolver: Any = js.native
     
-    /* private */ var latestChildPicker: js.Any = js.native
+    /* private */ var latestChildPicker: Any = js.native
     
-    /* private */ var latestChildState: js.Any = js.native
+    /* private */ var latestChildState: Any = js.native
+    
+    /* private */ val onFailedResolution: Any = js.native
+    
+    /* private */ val onSuccessfulResolution: Any = js.native
     
     /**
       * The service config object from the last successful resolution, if
       * available. A value of null indicates that we have not yet received a valid
       * service config from the resolver.
       */
-    /* private */ var previousServiceConfig: js.Any = js.native
+    /* private */ var previousServiceConfig: Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -103,10 +115,10 @@ object resolvingLoadBalancerMod {
     /* CompleteClass */
     override def resetBackoff(): Unit = js.native
     
-    /* private */ val target: js.Any = js.native
+    /* private */ val target: Any = js.native
     
-    def updateAddressList(addressList: js.Array[SubchannelAddress]): Unit = js.native
-    def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
+    def updateAddressList(addressList: js.Array[SubchannelAddress]): scala.Nothing = js.native
+    def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): scala.Nothing = js.native
     /**
       * Gives the load balancer a new list of addresses to start connecting to.
       * The load balancer will start establishing connections with the new list,
@@ -120,11 +132,15 @@ object resolvingLoadBalancerMod {
     override def updateAddressList(
       addressList: js.Array[SubchannelAddress],
       lbConfig: LoadBalancingConfig,
-      attributes: StringDictionary[js.Any]
+      attributes: StringDictionary[Any]
     ): Unit = js.native
     
-    /* private */ var updateResolution: js.Any = js.native
+    /* private */ var updateResolution: Any = js.native
     
-    /* private */ var updateState: js.Any = js.native
+    /* private */ var updateState: Any = js.native
   }
+  
+  type ResolutionCallback = js.Function1[/* configSelector */ ConfigSelector, Unit]
+  
+  type ResolutionFailureCallback = js.Function1[/* status */ StatusObject, Unit]
 }

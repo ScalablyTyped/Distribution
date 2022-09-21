@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +49,7 @@ trait GetIdInput extends StObject {
     *             </li>
     *          </ul>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Logins: js.UndefOr[Record[String, String]] = js.undefined
 }
 object GetIdInput {
   
@@ -57,12 +57,6 @@ object GetIdInput {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIdInput]
   }
-  
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetIdInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   extension [Self <: GetIdInput](x: Self) {
     
@@ -74,7 +68,7 @@ object GetIdInput {
     
     inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: Record[String, String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
     inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }

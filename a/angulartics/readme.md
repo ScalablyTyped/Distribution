@@ -11,9 +11,9 @@ Vendor-agnostic web analytics for AngularJS applications
 | Full name          | angulartics |
 | Keywords           | angular, analytics, tracking, google analytics, google tag manager, woopra, splunk, piwik, page tracking, event tracking, scroll tracking, inspectlet |
 | # releases         | 1 |
-| # dependents       | 31 |
-| # downloads        | 1380450 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 127652.0 |
+| # stars            | 1960.0 |
 
 ## Links
 - [Homepage](http://angulartics.github.io/)

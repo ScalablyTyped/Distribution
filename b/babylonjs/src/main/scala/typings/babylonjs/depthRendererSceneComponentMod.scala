@@ -14,7 +14,7 @@ object depthRendererSceneComponentMod {
   
   @JSImport("babylonjs/Rendering/depthRendererSceneComponent", "DepthRendererSceneComponent")
   @js.native
-  class DepthRendererSceneComponent protected ()
+  open class DepthRendererSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -23,9 +23,9 @@ object depthRendererSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _gatherActiveCameraRenderTargets: js.Any = js.native
+    /* private */ var _gatherActiveCameraRenderTargets: Any = js.native
     
-    /* private */ var _gatherRenderTargets: js.Any = js.native
+    /* private */ var _gatherRenderTargets: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

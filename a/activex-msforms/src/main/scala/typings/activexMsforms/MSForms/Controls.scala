@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Controls extends StObject {
   
-  def apply(varg: js.Any): js.Any = js.native
+  def apply(varg: Any): Any = js.native
   
   def Add(bstrProgID: String): Control = js.native
-  def Add(bstrProgID: String, Name: js.Any): Control = js.native
-  def Add(bstrProgID: String, Name: js.Any, Visible: js.Any): Control = js.native
-  def Add(bstrProgID: String, Name: Unit, Visible: js.Any): Control = js.native
+  def Add(bstrProgID: String, Name: Any): Control = js.native
+  def Add(bstrProgID: String, Name: Any, Visible: Any): Control = js.native
+  def Add(bstrProgID: String, Name: Unit, Visible: Any): Control = js.native
   
   def AlignToGrid(): Unit = js.native
   
@@ -28,13 +28,13 @@ trait Controls extends StObject {
   
   def Cut(): Unit = js.native
   
-  def Enum(): js.Any = js.native
+  def Enum(): Any = js.native
   
-  def Item(varg: js.Any): js.Any = js.native
+  def Item(varg: Any): Any = js.native
   
   def Move(cx: Double, cy: Double): Unit = js.native
   
-  def Remove(varg: js.Any): Unit = js.native
+  def Remove(varg: Any): Unit = js.native
   
   def SelectAll(): Unit = js.native
   

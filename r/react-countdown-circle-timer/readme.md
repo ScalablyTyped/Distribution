@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-countdown-circle-timer
 
-Typings are for version 1.0
+Typings are for version 3.0.9
 
 ## Library description:
 Lightweight React countdown timer component with color and progress animation based on SVG
@@ -10,10 +10,10 @@ Lightweight React countdown timer component with color and progress animation ba
 | ------------------ | :-------------: |
 | Full name          | react-countdown-circle-timer |
 | Keywords           | react, countdown, timer, circle, clock, SVG |
-| # releases         | 32 |
-| # dependents       | 4 |
-| # downloads        | 103143 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 61113.333333333336 |
+| # stars            | 432.0 |
 
 ## Links
 - [Homepage](https://github.com/vydimitrov/react-countdown-circle-timer/tree/master/packages/web#readme)
@@ -24,7 +24,7 @@ Lightweight React countdown timer component with color and progress animation ba
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

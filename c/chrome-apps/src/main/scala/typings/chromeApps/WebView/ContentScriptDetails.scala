@@ -93,19 +93,19 @@ object ContentScriptDetails {
     
     inline def setExclude_globsUndefined: Self = StObject.set(x, "exclude_globs", js.undefined)
     
-    inline def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value :_*))
+    inline def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value*))
     
     inline def setExclude_matches(value: js.Array[String]): Self = StObject.set(x, "exclude_matches", value.asInstanceOf[js.Any])
     
     inline def setExclude_matchesUndefined: Self = StObject.set(x, "exclude_matches", js.undefined)
     
-    inline def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value :_*))
+    inline def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value*))
     
     inline def setInclude_globs(value: js.Array[String]): Self = StObject.set(x, "include_globs", value.asInstanceOf[js.Any])
     
     inline def setInclude_globsUndefined: Self = StObject.set(x, "include_globs", js.undefined)
     
-    inline def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value :_*))
+    inline def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value*))
     
     inline def setJs_(value: InjectionItems): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
     
@@ -117,7 +117,7 @@ object ContentScriptDetails {
     
     inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

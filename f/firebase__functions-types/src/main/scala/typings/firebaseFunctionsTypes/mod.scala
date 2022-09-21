@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@firebase/functions-types", "FirebaseFunctions")
   @js.native
-  /* private */ class FirebaseFunctions () extends StObject {
+  /* private */ open class FirebaseFunctions () extends StObject {
     
     /**
       * Gets an `HttpsCallable` instance that refers to the function with the given
@@ -122,18 +122,18 @@ object mod {
   
   trait HttpsCallableResult extends StObject {
     
-    val data: js.Any
+    val data: Any
   }
   object HttpsCallableResult {
     
-    inline def apply(data: js.Any): HttpsCallableResult = {
+    inline def apply(data: Any): HttpsCallableResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsCallableResult]
     }
     
     extension [Self <: HttpsCallableResult](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,7 +150,7 @@ object mod {
     /**
       * Extra data to be converted to JSON and included in the error response.
       */
-    val details: js.UndefOr[js.Any] = js.undefined
+    val details: js.UndefOr[Any] = js.undefined
   }
   object HttpsError {
     
@@ -163,7 +163,7 @@ object mod {
       
       inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     }
@@ -173,18 +173,19 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var functions: FirebaseFunctions
+      var `functions-compat`: FirebaseFunctions
     }
     object NameServiceMapping {
       
-      inline def apply(functions: FirebaseFunctions): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
+      inline def apply(`functions-compat`: FirebaseFunctions): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("functions-compat")(`functions-compat`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setFunctions(value: FirebaseFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+        inline def `setFunctions-compat`(value: FirebaseFunctions): Self = StObject.set(x, "functions-compat", value.asInstanceOf[js.Any])
       }
     }
   }

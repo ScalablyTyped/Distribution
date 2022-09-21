@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSAsExpression_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with LVal
+     with PatternLike
+     with TypeScript {
   
   var expression: Expression
   

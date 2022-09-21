@@ -37,7 +37,7 @@ object SignerCert {
     
     inline def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value*))
     
     inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     

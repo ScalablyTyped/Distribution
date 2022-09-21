@@ -12,7 +12,7 @@ object playerFacadeMod {
   
   @JSImport("playable/dist/src/core/player-facade", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Player {
     def this(params: IPlayerConfig, scope: Container) = this()
@@ -59,34 +59,34 @@ object playerFacadeMod {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _addPlayerAPIFromModule: js.Any = js.native
+    var _addPlayerAPIFromModule: Any = js.native
     
     /* protected */ /* CompleteClass */
-    var _additionalModules: StringDictionary[js.Any] = js.native
+    var _additionalModules: StringDictionary[Any] = js.native
     
     /* private */ /* CompleteClass */
-    var _clearPlayerAPIForModule: js.Any = js.native
+    var _clearPlayerAPIForModule: Any = js.native
     
     /* protected */ /* CompleteClass */
     var _config: IPlayerConfig = js.native
     
     /* protected */ /* CompleteClass */
-    var _defaultModules: StringDictionary[js.Any] = js.native
+    var _defaultModules: StringDictionary[Any] = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyed: js.Any = js.native
+    var _destroyed: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getPlayerAPIMethodDescriptor: js.Any = js.native
+    var _getPlayerAPIMethodDescriptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getWrappedCallToModuleFunction: js.Any = js.native
+    var _getWrappedCallToModuleFunction: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _resolveAdditionalModules: js.Any = js.native
+    var _resolveAdditionalModules: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _resolveDefaultModules: js.Any = js.native
+    var _resolveDefaultModules: Any = js.native
     
     /* protected */ /* CompleteClass */
     var _scope: Container = js.native
@@ -97,25 +97,25 @@ object playerFacadeMod {
   
   trait Player extends StObject {
     
-    /* private */ var _addPlayerAPIFromModule: js.Any
+    /* private */ var _addPlayerAPIFromModule: Any
     
-    /* protected */ var _additionalModules: StringDictionary[js.Any]
+    /* protected */ var _additionalModules: StringDictionary[Any]
     
-    /* private */ var _clearPlayerAPIForModule: js.Any
+    /* private */ var _clearPlayerAPIForModule: Any
     
     /* protected */ var _config: IPlayerConfig
     
-    /* protected */ var _defaultModules: StringDictionary[js.Any]
+    /* protected */ var _defaultModules: StringDictionary[Any]
     
-    /* private */ var _destroyed: js.Any
+    /* private */ var _destroyed: Any
     
-    /* private */ var _getPlayerAPIMethodDescriptor: js.Any
+    /* private */ var _getPlayerAPIMethodDescriptor: Any
     
-    /* private */ var _getWrappedCallToModuleFunction: js.Any
+    /* private */ var _getWrappedCallToModuleFunction: Any
     
-    /* private */ var _resolveAdditionalModules: js.Any
+    /* private */ var _resolveAdditionalModules: Any
     
-    /* private */ var _resolveDefaultModules: js.Any
+    /* private */ var _resolveDefaultModules: Any
     
     /* protected */ var _scope: Container
     
@@ -124,16 +124,16 @@ object playerFacadeMod {
   object Player {
     
     inline def apply(
-      _addPlayerAPIFromModule: js.Any,
-      _additionalModules: StringDictionary[js.Any],
-      _clearPlayerAPIForModule: js.Any,
+      _addPlayerAPIFromModule: Any,
+      _additionalModules: StringDictionary[Any],
+      _clearPlayerAPIForModule: Any,
       _config: IPlayerConfig,
-      _defaultModules: StringDictionary[js.Any],
-      _destroyed: js.Any,
-      _getPlayerAPIMethodDescriptor: js.Any,
-      _getWrappedCallToModuleFunction: js.Any,
-      _resolveAdditionalModules: js.Any,
-      _resolveDefaultModules: js.Any,
+      _defaultModules: StringDictionary[Any],
+      _destroyed: Any,
+      _getPlayerAPIMethodDescriptor: Any,
+      _getWrappedCallToModuleFunction: Any,
+      _resolveAdditionalModules: Any,
+      _resolveDefaultModules: Any,
       _scope: Container,
       destroy: () => Unit
     ): Player = {
@@ -145,25 +145,25 @@ object playerFacadeMod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def set_addPlayerAPIFromModule(value: js.Any): Self = StObject.set(x, "_addPlayerAPIFromModule", value.asInstanceOf[js.Any])
+      inline def set_addPlayerAPIFromModule(value: Any): Self = StObject.set(x, "_addPlayerAPIFromModule", value.asInstanceOf[js.Any])
       
-      inline def set_additionalModules(value: StringDictionary[js.Any]): Self = StObject.set(x, "_additionalModules", value.asInstanceOf[js.Any])
+      inline def set_additionalModules(value: StringDictionary[Any]): Self = StObject.set(x, "_additionalModules", value.asInstanceOf[js.Any])
       
-      inline def set_clearPlayerAPIForModule(value: js.Any): Self = StObject.set(x, "_clearPlayerAPIForModule", value.asInstanceOf[js.Any])
+      inline def set_clearPlayerAPIForModule(value: Any): Self = StObject.set(x, "_clearPlayerAPIForModule", value.asInstanceOf[js.Any])
       
       inline def set_config(value: IPlayerConfig): Self = StObject.set(x, "_config", value.asInstanceOf[js.Any])
       
-      inline def set_defaultModules(value: StringDictionary[js.Any]): Self = StObject.set(x, "_defaultModules", value.asInstanceOf[js.Any])
+      inline def set_defaultModules(value: StringDictionary[Any]): Self = StObject.set(x, "_defaultModules", value.asInstanceOf[js.Any])
       
-      inline def set_destroyed(value: js.Any): Self = StObject.set(x, "_destroyed", value.asInstanceOf[js.Any])
+      inline def set_destroyed(value: Any): Self = StObject.set(x, "_destroyed", value.asInstanceOf[js.Any])
       
-      inline def set_getPlayerAPIMethodDescriptor(value: js.Any): Self = StObject.set(x, "_getPlayerAPIMethodDescriptor", value.asInstanceOf[js.Any])
+      inline def set_getPlayerAPIMethodDescriptor(value: Any): Self = StObject.set(x, "_getPlayerAPIMethodDescriptor", value.asInstanceOf[js.Any])
       
-      inline def set_getWrappedCallToModuleFunction(value: js.Any): Self = StObject.set(x, "_getWrappedCallToModuleFunction", value.asInstanceOf[js.Any])
+      inline def set_getWrappedCallToModuleFunction(value: Any): Self = StObject.set(x, "_getWrappedCallToModuleFunction", value.asInstanceOf[js.Any])
       
-      inline def set_resolveAdditionalModules(value: js.Any): Self = StObject.set(x, "_resolveAdditionalModules", value.asInstanceOf[js.Any])
+      inline def set_resolveAdditionalModules(value: Any): Self = StObject.set(x, "_resolveAdditionalModules", value.asInstanceOf[js.Any])
       
-      inline def set_resolveDefaultModules(value: js.Any): Self = StObject.set(x, "_resolveDefaultModules", value.asInstanceOf[js.Any])
+      inline def set_resolveDefaultModules(value: Any): Self = StObject.set(x, "_resolveDefaultModules", value.asInstanceOf[js.Any])
       
       inline def set_scope(value: Container): Self = StObject.set(x, "_scope", value.asInstanceOf[js.Any])
     }

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an event period update resource.
-  */
 trait SchemaEventPeriodUpdate extends StObject {
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#eventPeriodUpdate.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#eventPeriodUpdate`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The time period being covered by this update.
@@ -36,6 +32,8 @@ object SchemaEventPeriodUpdate {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setTimePeriod(value: SchemaEventPeriodRange): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
@@ -46,6 +44,6 @@ object SchemaEventPeriodUpdate {
     
     inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    inline def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value*))
   }
 }

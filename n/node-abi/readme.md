@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-abi
 
-Typings are for version 2.10
+Typings are for version 3.0
 
 ## Library description:
 Get the Node ABI for a given target and runtime, and vice versa.
@@ -10,10 +10,10 @@ Get the Node ABI for a given target and runtime, and vice versa.
 | ------------------ | :-------------: |
 | Full name          | node-abi |
 | Keywords           | node, electron, node_module_version, abi, v8 |
-| # releases         | 17 |
-| # dependents       | 42 |
-| # downloads        | 70022828 |
-| # stars            | 1 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5192004666666666E7 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](https://github.com/lgeiger/node-abi#readme)

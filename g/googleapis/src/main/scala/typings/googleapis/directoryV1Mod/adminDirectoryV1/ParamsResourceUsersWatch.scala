@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,35 +9,27 @@ trait ParamsResourceUsersWatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Comma-separated list of schema names. All fields from these schemas are
-    * fetched. This should only be set when projection=custom.
+    * Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.
     */
   var customFieldMask: js.UndefOr[String] = js.undefined
   
   /**
-    * Immutable ID of the G Suite account. In case of multi-domain, to fetch
-    * all users for a customer, fill this field instead of domain.
+    * Immutable ID of the Google Workspace account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.
     */
   var customer: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the domain. Fill this field to get users from only this domain.
-    * To return all users in a multi-domain fill customer field instead.
+    * Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead."
     */
   var domain: js.UndefOr[String] = js.undefined
   
   /**
-    * Event on which subscription is intended (if subscribing)
+    * Events to watch for.
     */
   var event: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of results to return. Default is 100. Max allowed is 500
+    * Maximum number of results to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -61,9 +49,7 @@ trait ParamsResourceUsersWatch
   var projection: js.UndefOr[String] = js.undefined
   
   /**
-    * Query string search. Should be of the form "". Complete documentation is
-    * at
-    * https://developers.google.com/admin-sdk/directory/v1/guides/search-users
+    * Query string search. Should be of the form "". Complete documentation is at https: //developers.google.com/admin-sdk/directory/v1/guides/search-users
     */
   var query: js.UndefOr[String] = js.undefined
   
@@ -73,7 +59,7 @@ trait ParamsResourceUsersWatch
   var requestBody: js.UndefOr[SchemaChannel] = js.undefined
   
   /**
-    * If set to true retrieves the list of deleted users. Default is false
+    * If set to true, retrieves the list of deleted users. (Default: false)
     */
   var showDeleted: js.UndefOr[String] = js.undefined
   
@@ -83,7 +69,7 @@ trait ParamsResourceUsersWatch
   var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.
+    * Whether to fetch the administrator-only or domain-wide public view of the user. For more information, see [Retrieve a user as a non-administrator](/admin-sdk/directory/v1/guides/manage-users#retrieve_users_non_admin).
     */
   var viewType: js.UndefOr[String] = js.undefined
 }
@@ -95,10 +81,6 @@ object ParamsResourceUsersWatch {
   }
   
   extension [Self <: ParamsResourceUsersWatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomFieldMask(value: String): Self = StObject.set(x, "customFieldMask", value.asInstanceOf[js.Any])
     

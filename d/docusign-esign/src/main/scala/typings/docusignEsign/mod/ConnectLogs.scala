@@ -36,13 +36,13 @@ object ConnectLogs {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setLogs(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
-    inline def setLogsVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     

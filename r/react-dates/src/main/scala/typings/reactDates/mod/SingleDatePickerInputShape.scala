@@ -8,6 +8,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -142,7 +143,7 @@ object SingleDatePickerInputShape {
     
     inline def setOnClearDateUndefined: Self = StObject.set(x, "onClearDate", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     

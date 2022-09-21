@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiskEncryptionConfiguration extends StObject {
   
-  /** This is always *sql#diskEncryptionConfiguration*. */
+  /** This is always `sql#diskEncryptionConfiguration`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Resource name of KMS key for disk encryption */

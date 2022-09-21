@@ -14,6 +14,13 @@ object enc {
   val Base64: Encoder = js.native
   
   /**
+    * Base64url encoding strategy.
+    */
+  @JSImport("crypto-js", "enc.Base64url")
+  @js.native
+  val Base64url: Encoder = js.native
+  
+  /**
     * Hex encoding strategy.
     */
   @JSImport("crypto-js", "enc.Hex")

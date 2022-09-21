@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.HeaderFooter")
 @js.native
-/* private */ class HeaderFooter ()
+/* private */ open class HeaderFooter ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.HeaderFooter {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Format: PpDateTimeFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.HeaderFooter_typekey")

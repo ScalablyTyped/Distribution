@@ -78,6 +78,8 @@ object mod extends Shortcut {
     var storage: js.UndefOr[Storage] = js.undefined
     
     var storageKey: js.UndefOr[String] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object FeathersAuthClientConfig {
     
@@ -119,12 +121,16 @@ object mod extends Shortcut {
       inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
       
       inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
   trait FeathersAuthCredentials
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var strategy: String
   }
@@ -144,32 +150,32 @@ object mod extends Shortcut {
   @js.native
   trait Passport extends StObject {
     
-    def authenticate(): js.Any = js.native
-    def authenticate(credentials: FeathersAuthCredentials): js.Any = js.native
+    def authenticate(): Any = js.native
+    def authenticate(credentials: FeathersAuthCredentials): Any = js.native
     
-    def authenticateSocket(credentials: FeathersAuthCredentials, socket: js.Any, emit: js.Any): js.Any = js.native
+    def authenticateSocket(credentials: FeathersAuthCredentials, socket: Any, emit: Any): Any = js.native
     
     def clearCookie(name: String): Null = js.native
     
-    def connected(): js.Promise[js.Any] = js.native
+    def connected(): js.Promise[Any] = js.native
     
     def getCookie(name: String): String = js.native
     
-    def getJWT(): js.Promise[js.Any] = js.native
+    def getJWT(): js.Promise[Any] = js.native
     
-    def getStorage(storage: js.Any): js.Any = js.native
+    def getStorage(storage: Any): Any = js.native
     
-    def logout(): js.Promise[js.Any] = js.native
+    def logout(): js.Promise[Any] = js.native
     
-    def logoutSocket(socket: js.Any, emit: js.Any): js.Promise[js.Any] = js.native
+    def logoutSocket(socket: Any, emit: Any): js.Promise[Any] = js.native
     
     def payloadIsValid(payload: String): Boolean = js.native
     
-    def setJWT(data: js.Any): js.Promise[js.Any] = js.native
+    def setJWT(data: Any): js.Promise[Any] = js.native
     
     def setupSocketListeners(): Unit = js.native
     
-    def verifyJWT(token: String): js.Promise[js.Any] = js.native
+    def verifyJWT(token: String): js.Promise[Any] = js.native
   }
   
   type _To = (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) & Typeofself
@@ -182,8 +188,8 @@ object mod extends Shortcut {
     @js.native
     trait Application[ServiceTypes] extends StObject {
       
-      def authenticate(): js.Promise[js.Any] = js.native
-      def authenticate(options: FeathersAuthCredentials): js.Promise[js.Any] = js.native
+      def authenticate(): js.Promise[Any] = js.native
+      def authenticate(options: FeathersAuthCredentials): js.Promise[Any] = js.native
       
       def logout(): js.Promise[Unit] = js.native
       

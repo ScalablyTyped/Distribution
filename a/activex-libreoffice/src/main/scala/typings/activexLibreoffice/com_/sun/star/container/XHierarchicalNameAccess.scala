@@ -23,7 +23,7 @@ trait XHierarchicalNameAccess
     * @returns the object with the specified name.
     * @throws NoSuchElementException if an element under Name does not exist.
     */
-  def getByHierarchicalName(aName: String): js.Any
+  def getByHierarchicalName(aName: String): Any
   
   /**
     * @param aName the name of the object.
@@ -35,9 +35,9 @@ object XHierarchicalNameAccess {
   
   inline def apply(
     acquire: () => Unit,
-    getByHierarchicalName: String => js.Any,
+    getByHierarchicalName: String => Any,
     hasByHierarchicalName: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHierarchicalNameAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -46,7 +46,7 @@ object XHierarchicalNameAccess {
   
   extension [Self <: XHierarchicalNameAccess](x: Self) {
     
-    inline def setGetByHierarchicalName(value: String => js.Any): Self = StObject.set(x, "getByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setGetByHierarchicalName(value: String => Any): Self = StObject.set(x, "getByHierarchicalName", js.Any.fromFunction1(value))
     
     inline def setHasByHierarchicalName(value: String => Boolean): Self = StObject.set(x, "hasByHierarchicalName", js.Any.fromFunction1(value))
   }

@@ -36,6 +36,6 @@ object ChoreographyTask {
     
     inline def setMessageFlowRef(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRef", value.asInstanceOf[js.Any])
     
-    inline def setMessageFlowRefVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRef", js.Array(value :_*))
+    inline def setMessageFlowRefVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRef", js.Array(value*))
   }
 }

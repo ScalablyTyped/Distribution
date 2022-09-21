@@ -12,6 +12,8 @@ trait ActionBaseProperties extends StObject {
   /**
     * Set this property to `true` to display a spinner icon.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#active)
     */
   var active: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +27,8 @@ trait ActionBaseProperties extends StObject {
   
   /**
     * Indicates whether this action is disabled.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#disabled)
     */
@@ -47,12 +51,16 @@ trait ActionBaseProperties extends StObject {
   /**
     * Specifies the type of action.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
     */
   var `type`: js.UndefOr[button | slider | toggle] = js.undefined
   
   /**
     * Indicates if the action is visible.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#visible)
     */

@@ -10,7 +10,7 @@ object snapMod {
   
   @JSImport("ol/interaction/Snap", JSImport.Default)
   @js.native
-  class default () extends Snap {
+  open class default () extends Snap {
     def this(opt_options: Options) = this()
   }
   
@@ -65,14 +65,14 @@ object snapMod {
     
     var snapped: Boolean
     
-    var vertex: Coordinate
+    var vertex: Coordinate | Null
     
-    var vertexPixel: Pixel
+    var vertexPixel: Pixel | Null
   }
   object Result {
     
-    inline def apply(snapped: Boolean, vertex: Coordinate, vertexPixel: Pixel): Result = {
-      val __obj = js.Dynamic.literal(snapped = snapped.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any], vertexPixel = vertexPixel.asInstanceOf[js.Any])
+    inline def apply(snapped: Boolean): Result = {
+      val __obj = js.Dynamic.literal(snapped = snapped.asInstanceOf[js.Any], vertex = null, vertexPixel = null)
       __obj.asInstanceOf[Result]
     }
     
@@ -82,11 +82,15 @@ object snapMod {
       
       inline def setVertex(value: Coordinate): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
       
+      inline def setVertexNull: Self = StObject.set(x, "vertex", null)
+      
       inline def setVertexPixel(value: Pixel): Self = StObject.set(x, "vertexPixel", value.asInstanceOf[js.Any])
       
-      inline def setVertexPixelVarargs(value: Double*): Self = StObject.set(x, "vertexPixel", js.Array(value :_*))
+      inline def setVertexPixelNull: Self = StObject.set(x, "vertexPixel", null)
       
-      inline def setVertexVarargs(value: Double*): Self = StObject.set(x, "vertex", js.Array(value :_*))
+      inline def setVertexPixelVarargs(value: Double*): Self = StObject.set(x, "vertexPixel", js.Array(value*))
+      
+      inline def setVertexVarargs(value: Double*): Self = StObject.set(x, "vertex", js.Array(value*))
     }
   }
   
@@ -112,7 +116,7 @@ object snapMod {
       
       inline def setSegment(value: js.Array[Coordinate]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      inline def setSegmentVarargs(value: Coordinate*): Self = StObject.set(x, "segment", js.Array(value :_*))
+      inline def setSegmentVarargs(value: Coordinate*): Self = StObject.set(x, "segment", js.Array(value*))
     }
   }
   

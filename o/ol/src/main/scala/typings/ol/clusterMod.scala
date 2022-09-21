@@ -10,7 +10,7 @@ object clusterMod {
   
   @JSImport("ol/source/Cluster", JSImport.Default)
   @js.native
-  class default protected () extends Cluster {
+  open class default protected () extends Cluster {
     def this(options: Options) = this()
   }
   
@@ -83,7 +83,7 @@ object clusterMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

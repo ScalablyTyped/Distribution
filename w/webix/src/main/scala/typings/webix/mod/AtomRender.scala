@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AtomRender extends StObject {
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
 }
 object AtomRender {
   

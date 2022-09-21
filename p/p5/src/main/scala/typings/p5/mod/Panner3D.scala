@@ -19,7 +19,7 @@ trait Panner3D extends StObject {
     *   Set the X,Y,Z position of the Panner
     *   @return Updated x, y, z values as an array
     */
-  def orient(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[js.Any] = js.native
+  def orient(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[Any] = js.native
   
   /**
     *   Getter and setter methods for orient coordinates
@@ -42,12 +42,9 @@ trait Panner3D extends StObject {
   /**
     *   Web Audio Spatial Panner Node Properties include
     *
-    *   - <a title="w3 spec for Panning Model"
-    *   href="https://www.w3.org/TR/webaudio/#idl-def-PanningModelType"
-    *   panningModel: "equal power" or "HRTF"
-    *   - <a title="w3 spec for Distance Model"
-    *   href="https://www.w3.org/TR/webaudio/#idl-def-DistanceModelType"
-    *   distanceModel: "linear", "inverse", or
+    *   Panning Model : "equal power" or "HRTF"
+    *
+    *   DistanceModel : "linear", "inverse", or
     *   "exponential"
     */
   var panner: AudioNode = js.native
@@ -87,7 +84,7 @@ trait Panner3D extends StObject {
     *   Set the X,Y,Z position of the Panner
     *   @return Updated x, y, z values as an array
     */
-  def set(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[js.Any] = js.native
+  def set(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[Any] = js.native
   
   /**
     *   Set the rolloff factor and max distance

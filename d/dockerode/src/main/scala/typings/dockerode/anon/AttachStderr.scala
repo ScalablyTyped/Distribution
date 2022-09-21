@@ -29,7 +29,7 @@ trait AttachStderr extends StObject {
   
   var Labels: StringDictionary[String]
   
-  var OnBuild: js.UndefOr[js.Any] = js.undefined
+  var OnBuild: js.UndefOr[Any] = js.undefined
   
   var OpenStdin: Boolean
   
@@ -77,7 +77,7 @@ object AttachStderr {
     
     inline def setCmd(value: js.Array[String]): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
     
-    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
+    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value*))
     
     inline def setDomainname(value: String): Self = StObject.set(x, "Domainname", value.asInstanceOf[js.Any])
     
@@ -85,11 +85,11 @@ object AttachStderr {
     
     inline def setEntrypointUndefined: Self = StObject.set(x, "Entrypoint", js.undefined)
     
-    inline def setEntrypointVarargs(value: String*): Self = StObject.set(x, "Entrypoint", js.Array(value :_*))
+    inline def setEntrypointVarargs(value: String*): Self = StObject.set(x, "Entrypoint", js.Array(value*))
     
     inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setExposedPorts(value: StringDictionary[js.Object]): Self = StObject.set(x, "ExposedPorts", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object AttachStderr {
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    inline def setOnBuild(value: js.Any): Self = StObject.set(x, "OnBuild", value.asInstanceOf[js.Any])
+    inline def setOnBuild(value: Any): Self = StObject.set(x, "OnBuild", value.asInstanceOf[js.Any])
     
     inline def setOnBuildUndefined: Self = StObject.set(x, "OnBuild", js.undefined)
     

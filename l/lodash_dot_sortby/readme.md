@@ -10,10 +10,10 @@ The lodash method `_.sortBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sortby |
 | Keywords           | lodash-modularized, sortby |
-| # releases         | 0 |
-| # dependents       | 384 |
-| # downloads        | 435983495 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.912896E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

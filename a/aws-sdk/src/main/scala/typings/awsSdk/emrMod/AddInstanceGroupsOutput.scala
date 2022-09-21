@@ -38,7 +38,7 @@ object AddInstanceGroupsOutput {
     
     inline def setInstanceGroupIdsUndefined: Self = StObject.set(x, "InstanceGroupIds", js.undefined)
     
-    inline def setInstanceGroupIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "InstanceGroupIds", js.Array(value :_*))
+    inline def setInstanceGroupIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "InstanceGroupIds", js.Array(value*))
     
     inline def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     

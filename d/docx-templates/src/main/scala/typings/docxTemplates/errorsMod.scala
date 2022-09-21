@@ -9,98 +9,129 @@ object errorsMod {
   
   @JSImport("docx-templates/lib/errors", "CommandExecutionError")
   @js.native
-  class CommandExecutionError protected ()
+  open class CommandExecutionError protected ()
     extends StObject
        with Error {
-    def this(err: Error, command: String) = this()
+    def this(err: js.Error, command: String) = this()
     
     var command: String = js.native
     
-    var err: Error = js.native
+    var err: js.Error = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("docx-templates/lib/errors", "CommandSyntaxError")
   @js.native
-  class CommandSyntaxError protected ()
+  open class CommandSyntaxError protected ()
     extends StObject
        with Error {
     def this(command: String) = this()
     
     var command: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("docx-templates/lib/errors", "ImageError")
   @js.native
-  class ImageError protected () extends CommandExecutionError {
-    def this(err: Error, command: String) = this()
+  open class ImageError protected () extends CommandExecutionError {
+    def this(err: js.Error, command: String) = this()
   }
   
   @JSImport("docx-templates/lib/errors", "InternalError")
   @js.native
-  class InternalError ()
+  open class InternalError protected ()
     extends StObject
        with Error {
+    def this(msg: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("docx-templates/lib/errors", "InvalidCommandError")
   @js.native
-  class InvalidCommandError protected ()
+  open class InvalidCommandError protected ()
     extends StObject
        with Error {
     def this(msg: String, command: String) = this()
     
     var command: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("docx-templates/lib/errors", "NullishCommandResultError")
   @js.native
-  class NullishCommandResultError protected ()
+  open class NullishCommandResultError protected ()
     extends StObject
        with Error {
     def this(command: String) = this()
     
     var command: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  @JSImport("docx-templates/lib/errors", "ObjectCommandResultError")
+  @js.native
+  open class ObjectCommandResultError protected ()
+    extends StObject
+       with Error {
+    def this(command: String) = this()
+    
+    var command: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("docx-templates/lib/errors", "TemplateParseError")
   @js.native
-  class TemplateParseError ()
+  open class TemplateParseError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

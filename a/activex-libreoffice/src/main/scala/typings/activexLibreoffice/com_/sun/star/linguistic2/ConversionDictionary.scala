@@ -44,7 +44,7 @@ object ConversionDictionary {
     getName: () => String,
     getPropertyType: (String, String) => Double,
     isActive: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEntry: (String, String) => Unit,
     removeFlushListener: XFlushListener => Unit,

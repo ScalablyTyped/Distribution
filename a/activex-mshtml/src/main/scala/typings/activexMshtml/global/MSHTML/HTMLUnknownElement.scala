@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLUnknownElement")
 @js.native
-/* private */ class HTMLUnknownElement ()
+/* private */ open class HTMLUnknownElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLUnknownElement

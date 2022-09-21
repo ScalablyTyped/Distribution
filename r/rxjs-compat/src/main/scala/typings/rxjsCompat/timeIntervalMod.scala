@@ -10,8 +10,8 @@ object timeIntervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def timeInterval[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")().asInstanceOf[js.Any]
+  inline def timeInterval[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")().asInstanceOf[Any]
   inline def timeInterval[T](
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(scheduler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

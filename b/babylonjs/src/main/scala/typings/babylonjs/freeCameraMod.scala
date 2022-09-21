@@ -13,7 +13,7 @@ object freeCameraMod {
   
   @JSImport("babylonjs/Cameras/freeCamera", "FreeCamera")
   @js.native
-  class FreeCamera protected () extends TargetCamera {
+  open class FreeCamera protected () extends TargetCamera {
     /**
       * Instantiates a Free Camera.
       * This represents a free type of camera. It can be useful in First Person Shooter game for instance.
@@ -22,30 +22,35 @@ object freeCameraMod {
       * @param name Define the name of the camera in the scene
       * @param position Define the start position of the camera in the scene
       * @param scene Define the scene the camera belongs to
-      * @param setActiveOnSceneIfNoneActive Defines wheter the camera should be marked as active if not other active cameras have been defined
+      * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active if not other active cameras have been defined
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, setActiveOnSceneIfNoneActive: Boolean) = this()
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
-    /** @hidden */
+    /**
+      * @param displacement
+      * @hidden
+      */
     def _collideWithWorld(displacement: Vector3): Unit = js.native
     
-    /* private */ var _collider: js.Any = js.native
+    /* private */ var _collider: Any = js.native
     
-    /* private */ var _collisionMask: js.Any = js.native
+    /* private */ var _collisionMask: Any = js.native
     
-    /* private */ var _diffPosition: js.Any = js.native
+    /* private */ var _diffPosition: Any = js.native
     
     /** @hidden */
     var _localDirection: Vector3 = js.native
     
-    /* private */ var _needMoveForGravity: js.Any = js.native
+    /* private */ var _needMoveForGravity: Any = js.native
     
-    /* private */ var _newPosition: js.Any = js.native
+    /* private */ var _newPosition: Any = js.native
     
-    /* private */ var _oldPosition: js.Any = js.native
+    /* private */ var _oldPosition: Any = js.native
     
-    /* private */ var _onCollisionPositionChange: js.Any = js.native
+    /* private */ var _onCollisionPositionChange: Any = js.native
     
     /** @hidden */
     var _transformedDirection: Vector3 = js.native
@@ -120,6 +125,18 @@ object freeCameraMod {
       */
     def keysRight: js.Array[Double] = js.native
     def keysRight_=(value: js.Array[Double]): Unit = js.native
+    
+    /**
+      * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
+      */
+    def keysRotateLeft: js.Array[Double] = js.native
+    def keysRotateLeft_=(value: js.Array[Double]): Unit = js.native
+    
+    /**
+      * Gets or Set the list of keyboard keys used to control the right rotation move of the camera.
+      */
+    def keysRotateRight: js.Array[Double] = js.native
+    def keysRotateRight_=(value: js.Array[Double]): Unit = js.native
     
     /**
       * Gets or Set the list of keyboard keys used to control the forward move of the camera.

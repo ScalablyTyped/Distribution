@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of legend entries.
   *
-  * Represents a collection of legendEntries.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartLegendEntryCollection")
 @js.native
-class ChartLegendEntryCollection ()
+open class ChartLegendEntryCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartLegendEntryCollection {
   

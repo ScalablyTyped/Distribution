@@ -2,8 +2,6 @@ package typings.diagnosticChannelPublishers
 
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import typings.diagnosticChannelPublishers.anon.Connection
-import typings.std.Date
-import typings.std.Error
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,15 +25,15 @@ object mysqlPubMod {
     
     var duration: Double
     
-    var err: Error
+    var err: js.Error
     
     var query: Connection
     
-    var time: Date
+    var time: js.Date
   }
   object IMysqlData {
     
-    inline def apply(callbackArgs: IArguments, duration: Double, err: Error, query: Connection, time: Date): IMysqlData = {
+    inline def apply(callbackArgs: IArguments, duration: Double, err: js.Error, query: Connection, time: js.Date): IMysqlData = {
       val __obj = js.Dynamic.literal(callbackArgs = callbackArgs.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMysqlData]
     }
@@ -46,11 +44,11 @@ object mysqlPubMod {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: Connection): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

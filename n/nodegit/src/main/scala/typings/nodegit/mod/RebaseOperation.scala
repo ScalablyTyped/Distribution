@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "RebaseOperation")
 @js.native
-class RebaseOperation ()
+open class RebaseOperation ()
   extends typings.nodegit.rebaseOperationMod.RebaseOperation

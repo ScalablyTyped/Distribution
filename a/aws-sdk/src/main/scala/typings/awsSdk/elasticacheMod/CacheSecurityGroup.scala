@@ -27,7 +27,7 @@ trait CacheSecurityGroup extends StObject {
   var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.undefined
   
   /**
-    * The AWS account ID of the cache security group owner.
+    * The Amazon account ID of the cache security group owner.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
 }
@@ -56,7 +56,7 @@ object CacheSecurityGroup {
     
     inline def setEC2SecurityGroupsUndefined: Self = StObject.set(x, "EC2SecurityGroups", js.undefined)
     
-    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value :_*))
+    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

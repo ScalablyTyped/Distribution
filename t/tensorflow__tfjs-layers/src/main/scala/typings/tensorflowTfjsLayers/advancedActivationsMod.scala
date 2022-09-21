@@ -16,7 +16,7 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ELU")
   @js.native
-  class ELU () extends Layer {
+  open class ELU () extends Layer {
     def this(args: ELULayerArgs) = this()
     
     val DEFAULT_ALPHA: /* 1 */ Double = js.native
@@ -39,7 +39,7 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "LeakyReLU")
   @js.native
-  class LeakyReLU () extends Layer {
+  open class LeakyReLU () extends Layer {
     def this(args: LeakyReLULayerArgs) = this()
     
     val DEFAULT_ALPHA: /* 0.3 */ Double = js.native
@@ -62,20 +62,20 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "PReLU")
   @js.native
-  class PReLU () extends Layer {
+  open class PReLU () extends Layer {
     def this(args: PReLULayerArgs) = this()
     
     val DEFAULT_ALPHA_INITIALIZER: InitializerIdentifier = js.native
     
-    /* private */ var alpha: js.Any = js.native
+    /* private */ var alpha: Any = js.native
     
-    /* private */ val alphaConstraint: js.Any = js.native
+    /* private */ val alphaConstraint: Any = js.native
     
-    /* private */ val alphaInitializer: js.Any = js.native
+    /* private */ val alphaInitializer: Any = js.native
     
-    /* private */ val alphaRegularizer: js.Any = js.native
+    /* private */ val alphaRegularizer: Any = js.native
     
-    /* private */ val sharedAxes: js.Any = js.native
+    /* private */ val sharedAxes: Any = js.native
   }
   /* static members */
   object PReLU {
@@ -93,7 +93,7 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ReLU")
   @js.native
-  class ReLU () extends Layer {
+  open class ReLU () extends Layer {
     def this(args: ReLULayerArgs) = this()
     
     var maxValue: Double = js.native
@@ -114,7 +114,7 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "Softmax")
   @js.native
-  class Softmax () extends Layer {
+  open class Softmax () extends Layer {
     def this(args: SoftmaxLayerArgs) = this()
     
     val DEFAULT_AXIS: /* 1 */ Double = js.native
@@ -140,7 +140,7 @@ object advancedActivationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ThresholdedReLU")
   @js.native
-  class ThresholdedReLU () extends Layer {
+  open class ThresholdedReLU () extends Layer {
     def this(args: ThresholdedReLULayerArgs) = this()
     
     val DEFAULT_THETA: /* 1 */ Double = js.native
@@ -263,7 +263,7 @@ object advancedActivationsMod {
       
       inline def setSharedAxesUndefined: Self = StObject.set(x, "sharedAxes", js.undefined)
       
-      inline def setSharedAxesVarargs(value: Double*): Self = StObject.set(x, "sharedAxes", js.Array(value :_*))
+      inline def setSharedAxesVarargs(value: Double*): Self = StObject.set(x, "sharedAxes", js.Array(value*))
     }
   }
   

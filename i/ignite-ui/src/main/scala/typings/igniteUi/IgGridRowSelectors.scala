@@ -11,7 +11,7 @@ trait IgGridRowSelectors
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired after a row selector checkbox had changed state.

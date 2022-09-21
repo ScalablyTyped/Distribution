@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "MathUtils")
 @js.native
-class MathUtils ()
+open class MathUtils ()
   extends typings.wonderJs.mathUtilsMod.MathUtils
 /* static members */
 object MathUtils {

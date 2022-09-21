@@ -32,8 +32,8 @@ object InteractionHandler {
   inline def apply(
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): InteractionHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handle = js.Any.fromFunction1(handle), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,5 +1,6 @@
 package typings.node.childProcessMod
 
+import typings.node.eventsMod.Abortable
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExecFileOptions
   extends StObject
-     with CommonOptions {
+     with CommonOptions
+     with Abortable {
   
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   

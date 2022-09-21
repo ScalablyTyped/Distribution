@@ -1,51 +1,55 @@
 package typings.puppeteerCore
 
-import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetAddedEvent
-import typings.devtoolsProtocol.mod.Protocol.Debugger.ScriptParsedEvent
+import typings.devtoolsProtocol.mod.Protocol.Profiler.ScriptCoverage
 import typings.puppeteerCore.anon.End
-import typings.puppeteerCore.anon.ReportAnonymousScripts
+import typings.puppeteerCore.anon.IncludeRawScriptCoverage
 import typings.puppeteerCore.anon.ResetOnNavigation
-import typings.puppeteerCore.commonConnectionMod.CDPSession
-import typings.puppeteerCore.commonHelperMod.PuppeteerEventListener
-import typings.std.Map
+import typings.puppeteerCore.puppeteerCommonConnectionMod.CDPSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonCoverageMod {
   
-  @JSImport("puppeteer-core/lib/esm/puppeteer/common/Coverage", "Coverage")
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/Coverage", "CSSCoverage")
   @js.native
-  class Coverage protected () extends StObject {
+  open class CSSCoverage protected () extends StObject {
     def this(client: CDPSession) = this()
     
-    /**
-      * @internal
-      */
-    var _cssCoverage: CSSCoverage = js.native
+    /* private */ var `private`: Any = js.native
+    
+    def start(): js.Promise[Unit] = js.native
+    def start(options: ResetOnNavigation): js.Promise[Unit] = js.native
+    
+    def stop(): js.Promise[js.Array[CoverageEntry]] = js.native
+  }
+  
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/Coverage", "Coverage")
+  @js.native
+  open class Coverage protected () extends StObject {
+    def this(client: CDPSession) = this()
+    
+    /* private */ var `private`: Any = js.native
     
     /**
-      * @internal
-      */
-    var _jsCoverage: JSCoverage = js.native
-    
-    /**
-      * @param options - defaults to `{ resetOnNavigation : true }`
+      * @param options - Set of configurable options for coverage, defaults to
+      * `resetOnNavigation : true`
       * @returns Promise that resolves when coverage is started.
       */
     def startCSSCoverage(): js.Promise[Unit] = js.native
     def startCSSCoverage(options: CSSCoverageOptions): js.Promise[Unit] = js.native
     
     /**
-      * @param options - defaults to
-      * `{ resetOnNavigation : true, reportAnonymousScripts : false }`
+      * @param options - Set of configurable options for coverage defaults to
+      * `resetOnNavigation : true, reportAnonymousScripts : false`
       * @returns Promise that resolves when coverage is started.
       *
       * @remarks
       * Anonymous scripts are ones that don't have an associated url. These are
       * scripts that are dynamically created on the page using `eval` or
       * `new Function`. If `reportAnonymousScripts` is set to `true`, anonymous
-      * scripts will have `__puppeteer_evaluation_script__` as their URL.
+      * scripts URL will start with `debugger://VM` (unless a magic //# sourceURL
+      * comment is present, in which case that will the be URL).
       */
     def startJSCoverage(): js.Promise[Unit] = js.native
     def startJSCoverage(options: JSCoverageOptions): js.Promise[Unit] = js.native
@@ -67,34 +71,20 @@ object commonCoverageMod {
       * JavaScript Coverage doesn't include anonymous scripts by default.
       * However, scripts with sourceURLs are reported.
       */
-    def stopJSCoverage(): js.Promise[js.Array[CoverageEntry]] = js.native
+    def stopJSCoverage(): js.Promise[js.Array[JSCoverageEntry]] = js.native
   }
   
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/Coverage", "JSCoverage")
   @js.native
-  trait CSSCoverage extends StObject {
+  open class JSCoverage protected () extends StObject {
+    def this(client: CDPSession) = this()
     
-    var _client: CDPSession = js.native
-    
-    var _enabled: Boolean = js.native
-    
-    var _eventListeners: js.Array[PuppeteerEventListener] = js.native
-    
-    def _onExecutionContextsCleared(): Unit = js.native
-    
-    def _onStyleSheet(event: StyleSheetAddedEvent): js.Promise[Unit] = js.native
-    
-    var _reportAnonymousScripts: Boolean = js.native
-    
-    var _resetOnNavigation: Boolean = js.native
-    
-    var _stylesheetSources: Map[String, String] = js.native
-    
-    var _stylesheetURLs: Map[String, String] = js.native
+    /* private */ var `private`: Any = js.native
     
     def start(): js.Promise[Unit] = js.native
-    def start(options: ResetOnNavigation): js.Promise[Unit] = js.native
+    def start(options: IncludeRawScriptCoverage): js.Promise[Unit] = js.native
     
-    def stop(): js.Promise[js.Array[CoverageEntry]] = js.native
+    def stop(): js.Promise[js.Array[JSCoverageEntry]] = js.native
   }
   
   trait CSSCoverageOptions extends StObject {
@@ -147,7 +137,7 @@ object commonCoverageMod {
       
       inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -155,34 +145,36 @@ object commonCoverageMod {
     }
   }
   
-  @js.native
-  trait JSCoverage extends StObject {
+  trait JSCoverageEntry
+    extends StObject
+       with CoverageEntry {
     
-    var _client: CDPSession = js.native
+    /**
+      * Raw V8 script coverage entry.
+      */
+    var rawScriptCoverage: js.UndefOr[ScriptCoverage] = js.undefined
+  }
+  object JSCoverageEntry {
     
-    var _enabled: Boolean = js.native
+    inline def apply(ranges: js.Array[End], text: String, url: String): JSCoverageEntry = {
+      val __obj = js.Dynamic.literal(ranges = ranges.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JSCoverageEntry]
+    }
     
-    var _eventListeners: js.Array[PuppeteerEventListener] = js.native
-    
-    def _onExecutionContextsCleared(): Unit = js.native
-    
-    def _onScriptParsed(event: ScriptParsedEvent): js.Promise[Unit] = js.native
-    
-    var _reportAnonymousScripts: Boolean = js.native
-    
-    var _resetOnNavigation: Boolean = js.native
-    
-    var _scriptSources: Map[String, String] = js.native
-    
-    var _scriptURLs: Map[String, String] = js.native
-    
-    def start(): js.Promise[Unit] = js.native
-    def start(options: ReportAnonymousScripts): js.Promise[Unit] = js.native
-    
-    def stop(): js.Promise[js.Array[CoverageEntry]] = js.native
+    extension [Self <: JSCoverageEntry](x: Self) {
+      
+      inline def setRawScriptCoverage(value: ScriptCoverage): Self = StObject.set(x, "rawScriptCoverage", value.asInstanceOf[js.Any])
+      
+      inline def setRawScriptCoverageUndefined: Self = StObject.set(x, "rawScriptCoverage", js.undefined)
+    }
   }
   
   trait JSCoverageOptions extends StObject {
+    
+    /**
+      * Whether the result includes raw V8 script coverage entries.
+      */
+    var includeRawScriptCoverage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether anonymous scripts generated by the page should be reported.
@@ -202,6 +194,10 @@ object commonCoverageMod {
     }
     
     extension [Self <: JSCoverageOptions](x: Self) {
+      
+      inline def setIncludeRawScriptCoverage(value: Boolean): Self = StObject.set(x, "includeRawScriptCoverage", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeRawScriptCoverageUndefined: Self = StObject.set(x, "includeRawScriptCoverage", js.undefined)
       
       inline def setReportAnonymousScripts(value: Boolean): Self = StObject.set(x, "reportAnonymousScripts", value.asInstanceOf[js.Any])
       

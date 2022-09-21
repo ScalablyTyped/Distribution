@@ -1,5 +1,6 @@
 package typings.antvComponent.anon
 
+import typings.antvComponent.sliderSliderMod.HandlerStyle
 import typings.antvComponent.sliderSliderMod.TrendCfg
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
@@ -15,7 +16,7 @@ trait PartialSliderCfg extends StObject {
   
   var animateOption: js.UndefOr[typings.antvComponent.typesMod.AnimateOption] = js.undefined
   
-  var backgroundStyle: js.UndefOr[js.Any] = js.undefined
+  var backgroundStyle: js.UndefOr[Any] = js.undefined
   
   var capture: js.UndefOr[Boolean] = js.undefined
   
@@ -27,11 +28,11 @@ trait PartialSliderCfg extends StObject {
   
   var events: js.UndefOr[js.Object] = js.undefined
   
-  var foregroundStyle: js.UndefOr[js.Any] = js.undefined
+  var foregroundStyle: js.UndefOr[Any] = js.undefined
   
   var group: js.UndefOr[IGroup] = js.undefined
   
-  var handlerStyle: js.UndefOr[js.Any] = js.undefined
+  var handlerStyle: js.UndefOr[HandlerStyle] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -53,7 +54,7 @@ trait PartialSliderCfg extends StObject {
   
   var start: js.UndefOr[Double] = js.undefined
   
-  var textStyle: js.UndefOr[js.Any] = js.undefined
+  var textStyle: js.UndefOr[Any] = js.undefined
   
   var trendCfg: js.UndefOr[TrendCfg] = js.undefined
   
@@ -84,7 +85,7 @@ object PartialSliderCfg {
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setBackgroundStyle(value: js.Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+    inline def setBackgroundStyle(value: Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     
     inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
     
@@ -108,7 +109,7 @@ object PartialSliderCfg {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setForegroundStyle(value: js.Any): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
+    inline def setForegroundStyle(value: Any): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
     
     inline def setForegroundStyleUndefined: Self = StObject.set(x, "foregroundStyle", js.undefined)
     
@@ -116,7 +117,7 @@ object PartialSliderCfg {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setHandlerStyle(value: js.Any): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
+    inline def setHandlerStyle(value: HandlerStyle): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
     
     inline def setHandlerStyleUndefined: Self = StObject.set(x, "handlerStyle", js.undefined)
     
@@ -164,7 +165,7 @@ object PartialSliderCfg {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setTextStyle(value: js.Any): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: Any): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     

@@ -9,7 +9,7 @@ trait FieldStringValues
   extends StObject
      with ClientObject {
   
-  def get_fieldValues(): js.Any = js.native
+  def get_fieldValues(): Any = js.native
   
   def get_item(fieldName: String): String = js.native
 }

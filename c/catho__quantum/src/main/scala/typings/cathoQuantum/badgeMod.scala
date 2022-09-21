@@ -16,14 +16,16 @@ object badgeMod {
   
   @JSImport("@catho/quantum/Badge", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[BadgeProps, js.Object, js.Any]
+  open class default ()
+    extends Component[BadgeProps, js.Object, Any]
   
-  type Badge = Component[BadgeProps, js.Object, js.Any]
+  type Badge = Component[BadgeProps, js.Object, Any]
   
   trait BadgeProps extends StObject {
     
     var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
+    
+    var dot: js.UndefOr[Boolean] = js.undefined
     
     var inverted: js.UndefOr[Boolean] = js.undefined
     
@@ -46,7 +48,11 @@ object badgeMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
       inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       

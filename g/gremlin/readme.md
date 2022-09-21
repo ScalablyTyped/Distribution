@@ -1,7 +1,7 @@
 
 # Scala.js typings for gremlin
 
-Typings are for version 3.4
+Typings are for version 3.6
 
 ## Library description:
 JavaScript Gremlin Language Variant
@@ -10,10 +10,10 @@ JavaScript Gremlin Language Variant
 | ------------------ | :-------------: |
 | Full name          | gremlin |
 | Keywords           | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
-| # releases         | 15 |
-| # dependents       | 28 |
-| # downloads        | 360961 |
-| # stars            | 3 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 67470.66666666667 |
+| # stars            | 1573.0 |
 
 ## Links
 - [Homepage](https://tinkerpop.apache.org/)

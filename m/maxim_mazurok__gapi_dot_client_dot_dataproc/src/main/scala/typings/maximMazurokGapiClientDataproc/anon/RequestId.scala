@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
+import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.WorkflowTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,6 +49,9 @@ trait RequestId extends StObject {
     */
   var requestId: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: WorkflowTemplate
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -56,8 +60,8 @@ trait RequestId extends StObject {
 }
 object RequestId {
   
-  inline def apply(parent: String): RequestId = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: WorkflowTemplate): RequestId = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestId]
   }
   
@@ -104,6 +108,8 @@ object RequestId {
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    
+    inline def setResource(value: WorkflowTemplate): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

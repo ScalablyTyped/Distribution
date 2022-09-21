@@ -21,6 +21,9 @@ trait OrdersUpdateShipmentRequest extends StObject {
   /** Date on which the shipment has been ready for pickup, in ISO 8601 format. Optional and can be provided only if `status` is `ready for pickup`. */
   var readyPickupDate: js.UndefOr[String] = js.undefined
   
+  /** Delivery details of the shipment if scheduling is needed. */
+  var scheduledDeliveryDetails: js.UndefOr[OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails] = js.undefined
+  
   /** The ID of the shipment. */
   var shipmentId: js.UndefOr[String] = js.undefined
   
@@ -61,6 +64,10 @@ object OrdersUpdateShipmentRequest {
     inline def setReadyPickupDate(value: String): Self = StObject.set(x, "readyPickupDate", value.asInstanceOf[js.Any])
     
     inline def setReadyPickupDateUndefined: Self = StObject.set(x, "readyPickupDate", js.undefined)
+    
+    inline def setScheduledDeliveryDetails(value: OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails): Self = StObject.set(x, "scheduledDeliveryDetails", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledDeliveryDetailsUndefined: Self = StObject.set(x, "scheduledDeliveryDetails", js.undefined)
     
     inline def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait WebsiteAuthorizationProviderSummary extends StObject {
   /**
     * The time of creation.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The domain name of the authorization provider. This applies only to SAML-based authorization providers.
@@ -41,7 +41,7 @@ object WebsiteAuthorizationProviderSummary {
     
     inline def setAuthorizationProviderType(value: AuthorizationProviderType): Self = StObject.set(x, "AuthorizationProviderType", value.asInstanceOf[js.Any])
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

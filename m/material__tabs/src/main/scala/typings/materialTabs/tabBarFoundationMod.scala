@@ -13,7 +13,7 @@ object tabBarFoundationMod {
   
   @JSImport("@material/tabs/tab-bar/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTabBarFoundation {
+  open class default () extends MDCTabBarFoundation {
     def this(adapter: PartialMDCTabBarAdapter) = this()
   }
   /* static members */
@@ -34,7 +34,7 @@ object tabBarFoundationMod {
   
   @JSImport("@material/tabs/tab-bar/foundation", "MDCTabBarFoundation")
   @js.native
-  class MDCTabBarFoundation () extends MDCFoundation[MDCTabBarAdapter] {
+  open class MDCTabBarFoundation () extends MDCFoundation[MDCTabBarAdapter] {
     def this(adapter: PartialMDCTabBarAdapter) = this()
     
     def getActiveTabIndex(): Double = js.native

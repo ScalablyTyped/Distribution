@@ -11,7 +11,7 @@ object validationOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isValidationOptions(`val`: js.Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidationOptions")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean]
+  inline def isValidationOptions(`val`: Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidationOptions")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean]
   
   trait ValidationOptions extends StObject {
     
@@ -20,7 +20,7 @@ object validationOptionsMod {
       */
     var always: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Specifies if validated value is an array and each of its items must be validated.
@@ -51,7 +51,7 @@ object validationOptionsMod {
       
       inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -63,7 +63,7 @@ object validationOptionsMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setMessage(value: String | (js.Function1[/* validationArguments */ ValidationArguments, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

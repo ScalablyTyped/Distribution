@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.JewelBuilder")
 @js.native
-class JewelBuilder ()
+open class JewelBuilder ()
   extends StObject
      with typings.sharepoint.CUI.Builder {
   

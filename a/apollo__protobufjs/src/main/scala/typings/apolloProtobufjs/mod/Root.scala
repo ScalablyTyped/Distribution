@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new root namespace instance.
   * @param [options] Top level options
   */
-class Root () extends NamespaceBase {
-  def this(options: StringDictionary[js.UndefOr[js.Any]]) = this()
+open class Root () extends NamespaceBase {
+  def this(options: StringDictionary[Any]) = this()
   
   /** Deferred extension fields. */
   var deferred: js.Array[Field] = js.native

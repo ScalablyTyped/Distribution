@@ -17,7 +17,7 @@ trait UpdateRepositoryRequest extends StObject {
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
@@ -27,7 +27,7 @@ trait UpdateRepositoryRequest extends StObject {
   var repository: RepositoryName
   
   /**
-    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
+    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
     */
   var upstreams: js.UndefOr[UpstreamRepositoryList] = js.undefined
 }
@@ -56,6 +56,6 @@ object UpdateRepositoryRequest {
     
     inline def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
     
-    inline def setUpstreamsVarargs(value: UpstreamRepository*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
+    inline def setUpstreamsVarargs(value: UpstreamRepository*): Self = StObject.set(x, "upstreams", js.Array(value*))
   }
 }

@@ -33,7 +33,7 @@ object XOOXMLDocumentPropertiesImporter {
   inline def apply(
     acquire: () => Unit,
     importProperties: (XStorage, XDocumentProperties) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XOOXMLDocumentPropertiesImporter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), importProperties = js.Any.fromFunction2(importProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

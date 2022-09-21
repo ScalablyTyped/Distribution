@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkDateControl")
 @js.native
-/* private */ class OlkDateControl ()
+/* private */ open class OlkDateControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkDateControl {
   
@@ -74,5 +74,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var TextAlign: OlTextAlign = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

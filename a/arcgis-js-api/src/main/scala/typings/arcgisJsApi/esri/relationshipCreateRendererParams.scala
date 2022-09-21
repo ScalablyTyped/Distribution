@@ -19,14 +19,9 @@ trait relationshipCreateRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * The method for classifying each field's data values.
+    *
+    * @default quantile
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
@@ -35,6 +30,8 @@ trait relationshipCreateRendererParams
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
     *
+    * @default replace
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
   var colorMixMode: js.UndefOr[String] = js.undefined
@@ -42,16 +39,11 @@ trait relationshipCreateRendererParams
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value or that fall outside of the prescribed class breaks.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether to add edges to the output renderer.
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var edgesType: js.UndefOr[String] = js.undefined
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A numeric field that will be used to explore its relationship with `field2`.
@@ -79,7 +71,7 @@ trait relationshipCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
@@ -90,6 +82,8 @@ trait relationshipCreateRendererParams
   
   /**
     * Indicates the number of classes by which to break up the values of each field.
+    *
+    * @default 3
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
@@ -126,6 +120,8 @@ trait relationshipCreateRendererParams
   /**
     * The type of symbol to generate.
     *
+    * @default 2d
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
@@ -144,7 +140,7 @@ object relationshipCreateRendererParams {
     field1: relationshipCreateRendererParamsField1,
     field2: relationshipCreateRendererParamsField2,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: View
   ): relationshipCreateRendererParams = {
@@ -153,10 +149,6 @@ object relationshipCreateRendererParams {
   }
   
   extension [Self <: relationshipCreateRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
@@ -170,10 +162,6 @@ object relationshipCreateRendererParams {
     
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    inline def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
-    
-    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
-    
     inline def setField1(value: relationshipCreateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
     inline def setField2(value: relationshipCreateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
@@ -182,7 +170,7 @@ object relationshipCreateRendererParams {
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: relationshipCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

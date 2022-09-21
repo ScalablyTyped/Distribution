@@ -24,12 +24,12 @@ trait ApplicationVersionDescription extends StObject {
   /**
     * The creation date of the application version.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last modified date of the application version.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
+  var DateUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the application version.
@@ -77,11 +77,11 @@ object ApplicationVersionDescription {
     
     inline def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
     
-    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: js.Date): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     

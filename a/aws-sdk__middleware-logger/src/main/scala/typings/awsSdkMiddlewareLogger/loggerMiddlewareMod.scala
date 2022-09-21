@@ -12,23 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object loggerMiddlewareMod {
   
-  @JSImport("@aws-sdk/middleware-logger/dist/cjs/loggerMiddleware", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-logger/dist-types/loggerMiddleware", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getLoggerPlugin(options: js.Any): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getLoggerPlugin(options: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def loggerMiddleware(): js.Function2[
-    /* next */ InitializeHandler[js.Any, MetadataBearer], 
+    /* next */ InitializeHandler[Any, MetadataBearer], 
     /* context */ HandlerExecutionContext, 
-    InitializeHandler[js.Any, MetadataBearer]
+    InitializeHandler[Any, MetadataBearer]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("loggerMiddleware")().asInstanceOf[js.Function2[
-    /* next */ InitializeHandler[js.Any, MetadataBearer], 
+    /* next */ InitializeHandler[Any, MetadataBearer], 
     /* context */ HandlerExecutionContext, 
-    InitializeHandler[js.Any, MetadataBearer]
+    InitializeHandler[Any, MetadataBearer]
   ]]
   
-  @JSImport("@aws-sdk/middleware-logger/dist/cjs/loggerMiddleware", "loggerMiddlewareOptions")
+  @JSImport("@aws-sdk/middleware-logger/dist-types/loggerMiddleware", "loggerMiddlewareOptions")
   @js.native
   val loggerMiddlewareOptions: InitializeHandlerOptions & AbsoluteLocation = js.native
 }

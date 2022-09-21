@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MountTargetDescription extends StObject {
   
   /**
-    * The unique and consistent identifier of the Availability Zone (AZ) that the mount target resides in. For example, use1-az1 is an AZ ID for the us-east-1 Region and it has the same location in every AWS account.
+    * The unique and consistent identifier of the Availability Zone that the mount target resides in. For example, use1-az1 is an AZ ID for the us-east-1 Region and it has the same location in every Amazon Web Services account.
     */
   var AvailabilityZoneId: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneId] = js.undefined
   
   /**
-    * The name of the Availability Zone (AZ) that the mount target resides in. AZs are independently mapped to names for each AWS account. For example, the Availability Zone us-east-1a for your AWS account might not be the same location as us-east-1a for another AWS account.
+    * The name of the Availability Zone in which the mount target is located. Availability Zones are independently mapped to names for each Amazon Web Services account. For example, the Availability Zone us-east-1a for your Amazon Web Services account might not be the same location as us-east-1a for another Amazon Web Services account.
     */
   var AvailabilityZoneName: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneName] = js.undefined
   
@@ -42,7 +42,7 @@ trait MountTargetDescription extends StObject {
   var NetworkInterfaceId: js.UndefOr[typings.awsSdk.efsMod.NetworkInterfaceId] = js.undefined
   
   /**
-    * AWS account ID that owns the resource.
+    * Amazon Web Services account ID that owns the resource.
     */
   var OwnerId: js.UndefOr[AwsAccountId] = js.undefined
   
@@ -52,7 +52,7 @@ trait MountTargetDescription extends StObject {
   var SubnetId: typings.awsSdk.efsMod.SubnetId
   
   /**
-    * The Virtual Private Cloud (VPC) ID that the mount target is configured in.
+    * The virtual private cloud (VPC) ID that the mount target is configured in.
     */
   var VpcId: js.UndefOr[typings.awsSdk.efsMod.VpcId] = js.undefined
 }

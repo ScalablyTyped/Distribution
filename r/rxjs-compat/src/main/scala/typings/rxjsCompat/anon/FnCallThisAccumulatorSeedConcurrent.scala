@@ -11,17 +11,17 @@ trait FnCallThisAccumulatorSeedConcurrent extends StObject {
     accumulator: js.Function2[
       /* acc */ R, 
       /* value */ T, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
     ],
     seed: R
-  ): js.Any = js.native
+  ): Any = js.native
   def apply[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
       /* value */ T, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
     ],
     seed: R,
     concurrent: Double
-  ): js.Any = js.native
+  ): Any = js.native
 }

@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("@nodelib/fs.walk", "Settings")
   @js.native
-  class Settings () extends default {
+  open class Settings () extends default {
     def this(_options: Options) = this()
   }
   

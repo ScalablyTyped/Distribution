@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isCodeVueSfcMod {
   
-  @JSImport("vue-inbrowser-compiler-utils/lib/isCodeVueSfc", JSImport.Namespace)
+  @JSImport("vue-inbrowser-compiler-utils/lib/types/isCodeVueSfc", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

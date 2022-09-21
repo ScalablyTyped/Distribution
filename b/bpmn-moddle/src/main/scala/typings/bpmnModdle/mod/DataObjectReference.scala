@@ -44,7 +44,7 @@ object DataObjectReference {
     
     inline def setCategoryValueRef(value: js.Array[CategoryValue]): Self = StObject.set(x, "categoryValueRef", value.asInstanceOf[js.Any])
     
-    inline def setCategoryValueRefVarargs(value: CategoryValue*): Self = StObject.set(x, "categoryValueRef", js.Array(value :_*))
+    inline def setCategoryValueRefVarargs(value: CategoryValue*): Self = StObject.set(x, "categoryValueRef", js.Array(value*))
     
     inline def setDataObjectRef(value: DataObject): Self = StObject.set(x, "dataObjectRef", value.asInstanceOf[js.Any])
     

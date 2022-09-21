@@ -3,7 +3,6 @@ package typings.reduxOrm
 import org.scalablytyped.runtime.TopLevel
 import typings.reduxOrm.databaseMod.Database
 import typings.reduxOrm.databaseMod.DatabaseCreator
-import typings.reduxOrm.databaseMod.SchemaSpec
 import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
@@ -17,14 +16,14 @@ object ormMod {
   /**
     * Creates a new ORM instance.
     */
-  class default[I /* <: IndexedModelClasses[
-    js.Any, 
+  open class default[I /* <: IndexedModelClasses[
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
   ] */, ModelNames /* <: /* keyof I */ String */] () extends ORM[I, ModelNames] {
-    def this(opts: ORMOpts) = this()
+    def this(opts: ORMOpts[I]) = this()
   }
   
   @JSImport("redux-orm/ORM", "ORM")
@@ -32,14 +31,14 @@ object ormMod {
   /**
     * Creates a new ORM instance.
     */
-  class ORM[I /* <: IndexedModelClasses[
-    js.Any, 
+  open class ORM[I /* <: IndexedModelClasses[
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
   ] */, ModelNames /* <: /* keyof I */ String */] () extends StObject {
-    def this(opts: ORMOpts) = this()
+    def this(opts: ORMOpts[I]) = this()
     
     /**
       * Gets a {@link Model} class by its name from the registry.
@@ -116,42 +115,37 @@ object ormMod {
   
   type IndexedModelClasses[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: new (): redux-orm.redux-orm/Model.AnyModel}
-    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses & TopLevel[js.Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses & TopLevel[Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]: T[K]}
     */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses & TopLevel[T]
   
-  trait ORMOpts extends StObject {
+  trait ORMOpts[MClassMap] extends StObject {
     
-    def createDatabase[I /* <: IndexedModelClasses[
-        js.Any, 
-        Extract[
-          /* keyof any */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-        ]
-      ] */](schemaSpec: SchemaSpec[I]): Database[
-        I, 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.ORMOpts & TopLevel[I]
-      ]
-    @JSName("createDatabase")
-    var createDatabase_Original: DatabaseCreator
+    var createDatabase: js.UndefOr[DatabaseCreator] = js.undefined
+    
+    var stateSelector: js.UndefOr[js.Function1[/* state */ Any, OrmState[MClassMap]]] = js.undefined
   }
   object ORMOpts {
     
-    inline def apply(createDatabase: DatabaseCreator): ORMOpts = {
-      val __obj = js.Dynamic.literal(createDatabase = createDatabase.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ORMOpts]
+    inline def apply[MClassMap](): ORMOpts[MClassMap] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ORMOpts[MClassMap]]
     }
     
-    extension [Self <: ORMOpts](x: Self) {
+    extension [Self <: ORMOpts[?], MClassMap](x: Self & ORMOpts[MClassMap]) {
       
       inline def setCreateDatabase(value: DatabaseCreator): Self = StObject.set(x, "createDatabase", value.asInstanceOf[js.Any])
+      
+      inline def setCreateDatabaseUndefined: Self = StObject.set(x, "createDatabase", js.undefined)
+      
+      inline def setStateSelector(value: /* state */ Any => OrmState[MClassMap]): Self = StObject.set(x, "stateSelector", js.Any.fromFunction1(value))
+      
+      inline def setStateSelectorUndefined: Self = StObject.set(x, "stateSelector", js.undefined)
     }
   }
   
   type OrmState[MClassMap /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any

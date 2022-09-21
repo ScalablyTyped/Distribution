@@ -10,5 +10,5 @@ object pdf {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defineFont(map: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineFont")(map.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def defineFont(map: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineFont")(map.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

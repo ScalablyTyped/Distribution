@@ -10,15 +10,12 @@ Forces webpack-dev-server to write bundle files to the file system.
 | ------------------ | :-------------: |
 | Full name          | write-file-webpack-plugin |
 | Keywords           | webpack, plugin, webpack-dev-server, write, file |
-| # releases         | 2 |
-| # dependents       | 220 |
-| # downloads        | 9174110 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 656139.0 |
+| # stars            | 526.0 |
 
 ## Links
-- [Homepage](https://github.com/gajus/write-file-webpack-plugin#readme)
-- [Bugs](https://github.com/gajus/write-file-webpack-plugin/issues)
-- [Repository](https://github.com/gajus/write-file-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/write-file-webpack-plugin)
     
 

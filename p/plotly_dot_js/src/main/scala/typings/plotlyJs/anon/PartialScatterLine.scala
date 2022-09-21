@@ -1,6 +1,5 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.mod.Dash
 import typings.plotlyJs.plotlyJsStrings.hv
 import typings.plotlyJs.plotlyJsStrings.hvh
 import typings.plotlyJs.plotlyJsStrings.linear
@@ -16,7 +15,7 @@ trait PartialScatterLine extends StObject {
   
   var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var dash: js.UndefOr[Dash] = js.undefined
+  var dash: js.UndefOr[typings.plotlyJs.mod.Dash] = js.undefined
   
   var shape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.undefined
   
@@ -39,9 +38,9 @@ object PartialScatterLine {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: typings.plotlyJs.mod.Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     

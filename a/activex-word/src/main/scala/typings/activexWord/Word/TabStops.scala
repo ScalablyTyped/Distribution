@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TabStops extends StObject {
   
   def Add(Position: Double): TabStop = js.native
-  def Add(Position: Double, Alignment: js.Any): TabStop = js.native
-  def Add(Position: Double, Alignment: js.Any, Leader: js.Any): TabStop = js.native
-  def Add(Position: Double, Alignment: Unit, Leader: js.Any): TabStop = js.native
+  def Add(Position: Double, Alignment: Any): TabStop = js.native
+  def Add(Position: Double, Alignment: Any, Leader: Any): TabStop = js.native
+  def Add(Position: Double, Alignment: Unit, Leader: Any): TabStop = js.native
   
   def After(Position: Double): TabStop = js.native
   
@@ -24,9 +24,9 @@ trait TabStops extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): TabStop = js.native
+  def Item(Index: Any): TabStop = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.TabStops_typekey")
   var WordDotTabStops_typekey: TabStops = js.native

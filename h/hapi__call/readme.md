@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__call
 
-Typings are for version 8.0
+Typings are for version 9.0
 
 ## Library description:
 HTTP Router
@@ -10,10 +10,10 @@ HTTP Router
 | ------------------ | :-------------: |
 | Full name          | @hapi/call |
 | Keywords           | HTTP, router |
-| # releases         | 11 |
-| # dependents       | 9 |
-| # downloads        | 14486908 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2334915.0 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/call#readme)

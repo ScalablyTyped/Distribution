@@ -1,10 +1,10 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialSelect.anon.PartialMDCSelectAdapter
 import typings.materialSelect.anon.PartialMDCSelectFoundatio
 import typings.materialSelect.anon.PartialMDCSelectHelperTex
 import typings.materialSelect.anon.PartialMDCSelectIconAdapt
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ object select {
   
   @JSImport("material-components-web", "select.MDCSelect")
   @js.native
-  class MDCSelect protected ()
+  open class MDCSelect protected ()
     extends typings.materialSelect.mod.MDCSelect {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialSelect.foundationMod.MDCSelectFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialSelect.foundationMod.MDCSelectFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCSelect {
@@ -25,7 +25,7 @@ object select {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.componentMod.MDCSelect]
+    inline def attachTo(root: typings.std.Element): typings.materialSelect.componentMod.MDCSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.componentMod.MDCSelect]
   }
   
   @JSImport("material-components-web", "select.MDCSelectFoundation")
@@ -34,7 +34,7 @@ object select {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class MDCSelectFoundation ()
+  open class MDCSelectFoundation ()
     extends typings.materialSelect.mod.MDCSelectFoundation {
     def this(adapter: PartialMDCSelectAdapter) = this()
     def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
@@ -43,13 +43,13 @@ object select {
   
   @JSImport("material-components-web", "select.MDCSelectHelperText")
   @js.native
-  class MDCSelectHelperText protected ()
+  open class MDCSelectHelperText protected ()
     extends typings.materialSelect.mod.MDCSelectHelperText {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -59,25 +59,25 @@ object select {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.helperTextComponentMod.MDCSelectHelperText]
+    inline def attachTo(root: typings.std.Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.helperTextComponentMod.MDCSelectHelperText]
   }
   
   @JSImport("material-components-web", "select.MDCSelectHelperTextFoundation")
   @js.native
-  class MDCSelectHelperTextFoundation ()
+  open class MDCSelectHelperTextFoundation ()
     extends typings.materialSelect.mod.MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
   
   @JSImport("material-components-web", "select.MDCSelectIcon")
   @js.native
-  class MDCSelectIcon protected ()
+  open class MDCSelectIcon protected ()
     extends typings.materialSelect.mod.MDCSelectIcon {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -87,38 +87,16 @@ object select {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.iconComponentMod.MDCSelectIcon]
+    inline def attachTo(root: typings.std.Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSelect.iconComponentMod.MDCSelectIcon]
   }
   
   @JSImport("material-components-web", "select.MDCSelectIconFoundation")
   @js.native
-  class MDCSelectIconFoundation ()
+  open class MDCSelectIconFoundation ()
     extends typings.materialSelect.mod.MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("material-components-web", "select.cssClasses")
@@ -188,28 +166,6 @@ object select {
     inline def HELPER_TEXT_VALIDATION_MSG_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG_PERSISTENT")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object helperTextStrings {
     
     @JSImport("material-components-web", "select.helperTextStrings")
@@ -227,28 +183,6 @@ object select {
     inline def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object iconStrings {
     
     @JSImport("material-components-web", "select.iconStrings")
@@ -271,6 +205,11 @@ object select {
     @JSImport("material-components-web", "select.numbers")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "select.numbers.CLICK_DEBOUNCE_TIMEOUT_MS")
+    @js.native
+    def CLICK_DEBOUNCE_TIMEOUT_MS: Double = js.native
+    inline def CLICK_DEBOUNCE_TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK_DEBOUNCE_TIMEOUT_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "select.numbers.LABEL_SCALE")
     @js.native

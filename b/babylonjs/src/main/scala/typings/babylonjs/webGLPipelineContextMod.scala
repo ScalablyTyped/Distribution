@@ -1,8 +1,10 @@
 package typings.babylonjs
 
 import typings.babylonjs.ipipelinecontextMod.IPipelineContext
+import typings.babylonjs.mathLikeMod.IMatrixLike
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
@@ -13,21 +15,64 @@ object webGLPipelineContextMod {
   
   @JSImport("babylonjs/Engines/WebGL/webGLPipelineContext", "WebGLPipelineContext")
   @js.native
-  class WebGLPipelineContext ()
+  open class WebGLPipelineContext ()
     extends StObject
        with IPipelineContext {
     
-    /** @hidden */
-    /* CompleteClass */
-    override def _getFragmentShaderCode(): String | Null = js.native
+    /**
+      * @param uniformName
+      * @param x
+      * @param y
+      * @hidden
+      */
+    def _cacheFloat2(uniformName: String, x: Double, y: Double): Boolean = js.native
     
-    /** @hidden */
-    /* CompleteClass */
-    override def _getVertexShaderCode(): String | Null = js.native
+    /**
+      * @param uniformName
+      * @param x
+      * @param y
+      * @param z
+      * @hidden
+      */
+    def _cacheFloat3(uniformName: String, x: Double, y: Double, z: Double): Boolean = js.native
     
-    /** @hidden */
-    /* CompleteClass */
-    override def _handlesSpectorRebuildCallback(onCompiled: js.Function1[/* compiledObject */ js.Any, Unit]): Unit = js.native
+    /**
+      * @param uniformName
+      * @param x
+      * @param y
+      * @param z
+      * @param w
+      * @hidden
+      */
+    def _cacheFloat4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+    
+    /**
+      * @param _uniformName
+      * @param _x
+      * @param _y
+      * @param _z
+      * @param _w
+      * @hidden
+      */
+    def _cacheFloatN(_uniformName: String, _x: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double, _w: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Unit, _w: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double, _w: Double): Boolean = js.native
+    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Unit, _w: Double): Boolean = js.native
+    
+    /**
+      * @param uniformName
+      * @param matrix
+      * @hidden
+      */
+    def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
+    
+    /* private */ var _uniforms: Any = js.native
+    
+    /* private */ var _valueCache: Any = js.native
     
     var context: js.UndefOr[WebGLRenderingContext] = js.native
     
@@ -37,21 +82,11 @@ object webGLPipelineContextMod {
     
     var fragmentShader: js.UndefOr[WebGLShader] = js.native
     
-    /**
-      * Gets a boolean indicating that this pipeline context is supporting asynchronous creating
-      */
-    /* CompleteClass */
-    var isAsync: Boolean = js.native
     @JSName("isAsync")
     def isAsync_MWebGLPipelineContext: Boolean = js.native
     
     var isParallelCompiled: Boolean = js.native
     
-    /**
-      * Gets a boolean indicating that the context is ready to be used (like shaders / pipelines are compiled and ready for instance)
-      */
-    /* CompleteClass */
-    var isReady: Boolean = js.native
     @JSName("isReady")
     def isReady_MWebGLPipelineContext: Boolean = js.native
     

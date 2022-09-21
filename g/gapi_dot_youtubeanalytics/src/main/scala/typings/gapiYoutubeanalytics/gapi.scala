@@ -17,18 +17,18 @@ object gapi {
         /**
           * Retrieve your YouTube Analytics reports.
           */
-        def query(`object`: Dimensions): HttpRequest[js.Any]
+        def query(`object`: Dimensions): HttpRequest[Any]
       }
       object reports {
         
-        inline def apply(query: Dimensions => HttpRequest[js.Any]): reports = {
+        inline def apply(query: Dimensions => HttpRequest[Any]): reports = {
           val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
           __obj.asInstanceOf[reports]
         }
         
         extension [Self <: reports](x: Self) {
           
-          inline def setQuery(value: Dimensions => HttpRequest[js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+          inline def setQuery(value: Dimensions => HttpRequest[Any]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
         }
       }
     }

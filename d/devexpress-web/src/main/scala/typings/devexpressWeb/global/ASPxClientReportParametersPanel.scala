@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportParametersPanel")
 @js.native
-class ASPxClientReportParametersPanel ()
+open class ASPxClientReportParametersPanel ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportParametersPanel {
   
@@ -26,7 +26,7 @@ class ASPxClientReportParametersPanel ()
     * @param value An object specifying the parameter value.
     */
   /* CompleteClass */
-  override def AssignParameter(path: String, value: js.Any): Unit = js.native
+  override def AssignParameter(path: String, value: Any): Unit = js.native
   
   /**
     * Assigns a value to a parameter of the report displayed in the document viewer.
@@ -59,7 +59,7 @@ class ASPxClientReportParametersPanel ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns an array storing the names of parameters available in a report.
@@ -71,7 +71,7 @@ class ASPxClientReportParametersPanel ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.

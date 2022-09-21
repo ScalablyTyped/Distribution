@@ -8,5 +8,5 @@ object titleRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/TitleRequiredException", "TitleRequiredException")
   @js.native
-  val TitleRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TitleRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

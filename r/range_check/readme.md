@@ -10,10 +10,10 @@ This is a simple module to validate IP address, check ip address version, check 
 | ------------------ | :-------------: |
 | Full name          | range_check |
 | Keywords           | IP Address, CIDR, V4, V6, valid, range, addr, ip, ipv4, ipv6 |
-| # releases         | 6 |
-| # dependents       | 87 |
-| # downloads        | 2126625 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 254930.0 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/keverw/range_check#readme)

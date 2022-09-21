@@ -10,10 +10,10 @@ A complete Promise utils collection
 | ------------------ | :-------------: |
 | Full name          | promise-the-world |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 22921 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5212.333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/bergos/promise-the-world)

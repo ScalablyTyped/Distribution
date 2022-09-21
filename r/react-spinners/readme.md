@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spinners
 
-Typings are for version 0.9.0
+Typings are for version 0.13.4
 
 ## Library description:
 A collection of react loading spinners
@@ -10,13 +10,13 @@ A collection of react loading spinners
 | ------------------ | :-------------: |
 | Full name          | react-spinners |
 | Keywords           | react-spinners, react-spinner, react, reactjs, loader, loaders, loading, spinner, spinners, halogen, progress, activity |
-| # releases         | 56 |
-| # dependents       | 197 |
-| # downloads        | 5784462 |
-| # stars            | 4 |
+| # releases         | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 906802.3333333334 |
+| # stars            | 2284.0 |
 
 ## Links
-- [Homepage](https://github.com/davidhu2000/react-spinners)
+- [Homepage](https://www.davidhu.io/react-spinners/)
 - [Bugs](https://github.com/davidhu2000/react-spinners/issues)
 - [Repository](https://github.com/davidhu2000/react-spinners)
 - [Npm](https://www.npmjs.com/package/react-spinners)

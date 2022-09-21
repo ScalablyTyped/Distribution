@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("js-priority-queue", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with AbstractPriorityQueue[T] {
     
@@ -46,7 +46,7 @@ object mod {
   
   @JSImport("js-priority-queue", "ArrayStrategy")
   @js.native
-  class ArrayStrategy[T] ()
+  open class ArrayStrategy[T] ()
     extends StObject
        with AbstractPriorityQueue[T] {
     
@@ -83,7 +83,7 @@ object mod {
   
   @JSImport("js-priority-queue", "BHeapStrategy")
   @js.native
-  class BHeapStrategy[T] ()
+  open class BHeapStrategy[T] ()
     extends StObject
        with AbstractPriorityQueue[T] {
     
@@ -120,7 +120,7 @@ object mod {
   
   @JSImport("js-priority-queue", "BinaryHeapStrategy")
   @js.native
-  class BinaryHeapStrategy[T] ()
+  open class BinaryHeapStrategy[T] ()
     extends StObject
        with AbstractPriorityQueue[T] {
     
@@ -226,7 +226,7 @@ object mod {
     var strategy: js.UndefOr[
         Instantiable1[
           /* options */ js.UndefOr[
-            PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
+            PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]
           ], 
           AbstractPriorityQueue[js.Object]
         ]
@@ -249,12 +249,12 @@ object mod {
       
       inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      inline def setInitialValuesVarargs(value: T*): Self = StObject.set(x, "initialValues", js.Array(value :_*))
+      inline def setInitialValuesVarargs(value: T*): Self = StObject.set(x, "initialValues", js.Array(value*))
       
       inline def setStrategy(
         value: Instantiable1[
               /* options */ js.UndefOr[
-                PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
+                PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]
               ], 
               AbstractPriorityQueue[js.Object]
             ]

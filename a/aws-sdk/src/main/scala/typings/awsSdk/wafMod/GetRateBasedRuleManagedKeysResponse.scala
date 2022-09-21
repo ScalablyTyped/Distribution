@@ -29,7 +29,7 @@ object GetRateBasedRuleManagedKeysResponse {
     
     inline def setManagedKeysUndefined: Self = StObject.set(x, "ManagedKeys", js.undefined)
     
-    inline def setManagedKeysVarargs(value: ManagedKey*): Self = StObject.set(x, "ManagedKeys", js.Array(value :_*))
+    inline def setManagedKeysVarargs(value: ManagedKey*): Self = StObject.set(x, "ManagedKeys", js.Array(value*))
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

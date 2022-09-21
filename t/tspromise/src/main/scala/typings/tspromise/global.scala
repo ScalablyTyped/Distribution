@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Thenable")
   @js.native
-  class Thenable[T] ()
+  open class Thenable[T] ()
     extends StObject
        with typings.tspromise.Thenable[T]
   

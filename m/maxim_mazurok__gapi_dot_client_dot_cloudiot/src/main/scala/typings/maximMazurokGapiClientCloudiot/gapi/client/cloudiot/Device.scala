@@ -70,7 +70,7 @@ trait Device extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -106,7 +106,7 @@ object Device {
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    inline def setCredentialsVarargs(value: DeviceCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: DeviceCredential*): Self = StObject.set(x, "credentials", js.Array(value*))
     
     inline def setGatewayConfig(value: GatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
     
@@ -151,7 +151,7 @@ object Device {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

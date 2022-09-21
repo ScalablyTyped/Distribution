@@ -1,6 +1,5 @@
 package typings.decomment
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object mod {
       * Takes either a single or an array of regular expressions to match against.
       * All matching blocks are then skipped, as well as any comment-like content inside them
       */
-    var ignore: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
+    var ignore: js.UndefOr[js.RegExp | js.Array[js.RegExp]] = js.undefined
     
     /**
       * keep special multi-line comments that begin with:
@@ -61,6 +60,12 @@ object mod {
     var space: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * pass `tolerant` flag to [esprima] parser (the parser _may_ choose to continue parsing and produce a syntax tree).
+      * @default false - performs strict parsing.
+      */
+    var tolerant: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * remove empty lines that follow removed full-line comments
       * @defualt false - do not trim comments
       */
@@ -75,11 +80,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: js.RegExp*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
@@ -88,6 +93,10 @@ object mod {
       inline def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      
+      inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+      
+      inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
       
       inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "TextareaItem")
 @js.native
-class TextareaItem protected () extends default {
+open class TextareaItem protected () extends default {
   def this(props: TextareaItemProps) = this()
 }
 /* static members */

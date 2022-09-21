@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.SigningInfo")
 @js.native
-class SigningInfo ()
+open class SigningInfo ()
   extends typings.ndnJs.mod.SigningInfo {
   def this(arg: String) = this()
   def this(arg: typings.ndnJs.keyChainMod.PibIdentity) = this()

@@ -16,7 +16,7 @@ trait OnChange extends StObject {
   
   var selectedIndex: Double
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var tintColor: String
   
@@ -29,7 +29,7 @@ object OnChange {
     onChange: () => Unit,
     onValueChange: () => Unit,
     selectedIndex: Double,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     tintColor: String,
     values: js.Array[scala.Nothing]
   ): OnChange = {
@@ -47,12 +47,12 @@ object OnChange {
     
     inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     inline def setValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

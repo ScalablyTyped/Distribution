@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientMonitoring.anon
 
-import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.GetNotificationChannelVerificationCodeRequest
+import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.NotificationChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,9 @@ trait Uploadprotocol extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The notification channel for which a verification code is to be generated and retrieved. This must name a channel that is already verified; if the specified channel is
-    * not verified, the request will fail.
+    * Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the
+    * container into which the channel will be written, this does not name the newly created channel. The resulting channel's name will have a normalized version of this field as a
+    * prefix, but will add /notificationChannels/[CHANNEL_ID] to identify the channel.
     */
   var name: String
   
@@ -42,7 +43,7 @@ trait Uploadprotocol extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GetNotificationChannelVerificationCodeRequest
+  var resource: NotificationChannel
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +53,7 @@ trait Uploadprotocol extends StObject {
 }
 object Uploadprotocol {
   
-  inline def apply(name: String, resource: GetNotificationChannelVerificationCodeRequest): Uploadprotocol = {
+  inline def apply(name: String, resource: NotificationChannel): Uploadprotocol = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
@@ -97,7 +98,7 @@ object Uploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GetNotificationChannelVerificationCodeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: NotificationChannel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

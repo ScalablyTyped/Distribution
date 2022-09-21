@@ -51,15 +51,15 @@ trait IDragDrop
     */
   var constrainTo: js.UndefOr[
     js.Function3[
-      /* constrainTo */ js.UndefOr[js.Any], 
-      /* pad */ js.UndefOr[js.Any], 
+      /* constrainTo */ js.UndefOr[Any], 
+      /* pad */ js.UndefOr[Any], 
       /* inContent */ js.UndefOr[Boolean], 
       Unit
     ]
   ] = js.undefined
   
   /** [Property] (Object) */
-  var defaultPadding: js.UndefOr[js.Any] = js.undefined
+  var defaultPadding: js.UndefOr[Any] = js.undefined
   
   /** [Method] Destroy this DragDrop instance */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -80,7 +80,7 @@ trait IDragDrop
   var getEl: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
   /** [Property] (Object) */
-  var groups: js.UndefOr[js.Any] = js.undefined
+  var groups: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Boolean) */
   var hasOuterHandles: js.UndefOr[Boolean] = js.undefined
@@ -100,7 +100,7 @@ trait IDragDrop
     js.Function3[
       /* id */ js.UndefOr[String], 
       /* sGroup */ js.UndefOr[String], 
-      /* config */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -114,7 +114,7 @@ trait IDragDrop
     js.Function3[
       /* id */ js.UndefOr[String], 
       /* sGroup */ js.UndefOr[String], 
-      /* config */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -123,10 +123,10 @@ trait IDragDrop
   var invalidHandleClasses: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Object) */
-  var invalidHandleIds: js.UndefOr[js.Any] = js.undefined
+  var invalidHandleIds: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var invalidHandleTypes: js.UndefOr[js.Any] = js.undefined
+  var invalidHandleTypes: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns true if this instance is locked or the drag drop mgr is locked meaning that all drag drop is disabled on th
     * @returns Boolean true if this obj or all drag/drop is locked, else false
@@ -163,25 +163,25 @@ trait IDragDrop
     * @param e Event the mouseup event
     * @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this was dropped on. In INTERSECT mode, an array of dd items this was dropped on.
     */
-  var onDragDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Abstract method called when this element fist begins hovering over another DragDrop obj
     * @param e Event the mousemove event
     * @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this is hovering over. In INTERSECT mode, an array of one or more dragdrop items being hovered over.
     */
-  var onDragEnter: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragEnter: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Abstract method called when we are no longer hovering over an element
     * @param e Event the mousemove event
     * @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this was hovering over. In INTERSECT mode, an array of dd items that the mouse is no longer over.
     */
-  var onDragOut: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragOut: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Abstract method called when this element is hovering over another DragDrop obj
     * @param e Event the mousemove event
     * @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this is hovering over. In INTERSECT mode, an array of dd items being hovered over.
     */
-  var onDragOver: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragOver: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Abstract method called when this item is dropped on an area with no drop target
     * @param e Event the mouseup event
@@ -362,12 +362,12 @@ object IDragDrop {
     inline def setClearTicksUndefined: Self = StObject.set(x, "clearTicks", js.undefined)
     
     inline def setConstrainTo(
-      value: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit
+      value: (/* constrainTo */ js.UndefOr[Any], /* pad */ js.UndefOr[Any], /* inContent */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "constrainTo", js.Any.fromFunction3(value))
     
     inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
-    inline def setDefaultPadding(value: js.Any): Self = StObject.set(x, "defaultPadding", value.asInstanceOf[js.Any])
+    inline def setDefaultPadding(value: Any): Self = StObject.set(x, "defaultPadding", value.asInstanceOf[js.Any])
     
     inline def setDefaultPaddingUndefined: Self = StObject.set(x, "defaultPadding", js.undefined)
     
@@ -387,7 +387,7 @@ object IDragDrop {
     
     inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    inline def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
@@ -404,11 +404,11 @@ object IDragDrop {
     inline def setIgnoreSelfUndefined: Self = StObject.set(x, "ignoreSelf", js.undefined)
     
     inline def setInit(
-      value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit
+      value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     inline def setInitTarget(
-      value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit
+      value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "initTarget", js.Any.fromFunction3(value))
     
     inline def setInitTargetUndefined: Self = StObject.set(x, "initTarget", js.undefined)
@@ -419,11 +419,11 @@ object IDragDrop {
     
     inline def setInvalidHandleClassesUndefined: Self = StObject.set(x, "invalidHandleClasses", js.undefined)
     
-    inline def setInvalidHandleIds(value: js.Any): Self = StObject.set(x, "invalidHandleIds", value.asInstanceOf[js.Any])
+    inline def setInvalidHandleIds(value: Any): Self = StObject.set(x, "invalidHandleIds", value.asInstanceOf[js.Any])
     
     inline def setInvalidHandleIdsUndefined: Self = StObject.set(x, "invalidHandleIds", js.undefined)
     
-    inline def setInvalidHandleTypes(value: js.Any): Self = StObject.set(x, "invalidHandleTypes", value.asInstanceOf[js.Any])
+    inline def setInvalidHandleTypes(value: Any): Self = StObject.set(x, "invalidHandleTypes", value.asInstanceOf[js.Any])
     
     inline def setInvalidHandleTypesUndefined: Self = StObject.set(x, "invalidHandleTypes", js.undefined)
     
@@ -457,19 +457,19 @@ object IDragDrop {
     
     inline def setOnDrag(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragDrop", js.Any.fromFunction2(value))
+    inline def setOnDragDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onDragDrop", js.Any.fromFunction2(value))
     
     inline def setOnDragDropUndefined: Self = StObject.set(x, "onDragDrop", js.undefined)
     
-    inline def setOnDragEnter(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
+    inline def setOnDragEnter(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
     
     inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
-    inline def setOnDragOut(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragOut", js.Any.fromFunction2(value))
+    inline def setOnDragOut(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onDragOut", js.Any.fromFunction2(value))
     
     inline def setOnDragOutUndefined: Self = StObject.set(x, "onDragOut", js.undefined)
     
-    inline def setOnDragOver(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
+    inline def setOnDragOver(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
     
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     

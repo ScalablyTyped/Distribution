@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAxisRange")
 @js.native
-class ASPxClientAxisRange ()
+open class ASPxClientAxisRange ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAxisRange {
   
@@ -29,7 +29,7 @@ class ASPxClientAxisRange ()
     * Gets the maximum value to display on an axis.
     */
   /* CompleteClass */
-  var maxValue: js.Any = js.native
+  var maxValue: Any = js.native
   
   /**
     * Gets the internal float representation of the range maximum value.
@@ -41,7 +41,7 @@ class ASPxClientAxisRange ()
     * Gets the minimum value to display on an axis.
     */
   /* CompleteClass */
-  var minValue: js.Any = js.native
+  var minValue: Any = js.native
   
   /**
     * Gets the internal float representation of the range minimum value.

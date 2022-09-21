@@ -26,7 +26,7 @@ trait IMediaCapture extends StObject {
   
   def clearEffectsAsync(mediaStreamType: MediaStreamType): IAsyncAction = js.native
   
-  def getEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String): js.Any = js.native
+  def getEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String): Any = js.native
   
   def getPreviewMirroring(): Boolean = js.native
   
@@ -39,11 +39,11 @@ trait IMediaCapture extends StObject {
   
   var mediaCaptureSettings: MediaCaptureSettings = js.native
   
-  var onfailed: js.Any = js.native
+  var onfailed: Any = js.native
   
-  var onrecordlimitationexceeded: js.Any = js.native
+  var onrecordlimitationexceeded: Any = js.native
   
-  def setEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String, propertyValue: js.Any): Unit = js.native
+  def setEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String, propertyValue: Any): Unit = js.native
   
   def setPreviewMirroring(value: Boolean): Unit = js.native
   

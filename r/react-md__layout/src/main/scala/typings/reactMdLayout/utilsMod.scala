@@ -19,6 +19,8 @@ object utilsMod {
   
   inline def isFullHeightLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullHeightLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isMiniLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMiniLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isPersistentLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPersistentLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isTemporaryLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemporaryLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]

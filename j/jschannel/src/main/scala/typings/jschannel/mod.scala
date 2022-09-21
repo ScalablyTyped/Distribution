@@ -74,7 +74,7 @@ object mod {
       
       inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       
-      inline def setRemoteVarargs(value: String*): Self = StObject.set(x, "remote", js.Array(value :_*))
+      inline def setRemoteVarargs(value: String*): Self = StObject.set(x, "remote", js.Array(value*))
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -84,13 +84,13 @@ object mod {
   
   trait Message extends StObject {
     
-    var error: js.UndefOr[js.Function2[/* error */ js.Any, /* message */ String, Unit]] = js.undefined
+    var error: js.UndefOr[js.Function2[/* error */ Any, /* message */ String, Unit]] = js.undefined
     
     var method: String
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+    var success: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -103,17 +103,17 @@ object mod {
     
     extension [Self <: Message](x: Self) {
       
-      inline def setError(value: (/* error */ js.Any, /* message */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* error */ Any, /* message */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setSuccess(value: /* result */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* result */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
@@ -125,24 +125,24 @@ object mod {
   
   trait MessageTransaction extends StObject {
     
-    def complete(result: js.Any): Unit
+    def complete(result: Any): Unit
     
     def completed(): Boolean
     
     def delayReturn(delay: Boolean): Boolean
     
-    def error(error: js.Any, message: String): Unit
+    def error(error: Any, message: String): Unit
     
-    def invoke(callbackName: String, params: js.Any): Unit
+    def invoke(callbackName: String, params: Any): Unit
   }
   object MessageTransaction {
     
     inline def apply(
-      complete: js.Any => Unit,
+      complete: Any => Unit,
       completed: () => Boolean,
       delayReturn: Boolean => Boolean,
-      error: (js.Any, String) => Unit,
-      invoke: (String, js.Any) => Unit
+      error: (Any, String) => Unit,
+      invoke: (String, Any) => Unit
     ): MessageTransaction = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), completed = js.Any.fromFunction0(completed), delayReturn = js.Any.fromFunction1(delayReturn), error = js.Any.fromFunction2(error), invoke = js.Any.fromFunction2(invoke))
       __obj.asInstanceOf[MessageTransaction]
@@ -150,15 +150,15 @@ object mod {
     
     extension [Self <: MessageTransaction](x: Self) {
       
-      inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       inline def setCompleted(value: () => Boolean): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
       
       inline def setDelayReturn(value: Boolean => Boolean): Self = StObject.set(x, "delayReturn", js.Any.fromFunction1(value))
       
-      inline def setError(value: (js.Any, String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (Any, String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      inline def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+      inline def setInvoke(value: (String, Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     }
   }
   
@@ -168,11 +168,11 @@ object mod {
     def bind(method: String): MessagingChannel = js.native
     def bind(
       method: String,
-      callback: js.Function2[/* transaction */ MessageTransaction, /* params */ js.Any, Unit]
+      callback: js.Function2[/* transaction */ MessageTransaction, /* params */ Any, Unit]
     ): MessagingChannel = js.native
     def bind(
       method: String,
-      callback: js.Function2[/* transaction */ MessageTransaction, /* params */ js.Any, Unit],
+      callback: js.Function2[/* transaction */ MessageTransaction, /* params */ Any, Unit],
       doNotPublish: Boolean
     ): MessagingChannel = js.native
     def bind(method: String, callback: Unit, doNotPublish: Boolean): MessagingChannel = js.native

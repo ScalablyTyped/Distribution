@@ -33,6 +33,6 @@ object ListScriptsOutput {
     
     inline def setScriptsUndefined: Self = StObject.set(x, "Scripts", js.undefined)
     
-    inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "Scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "Scripts", js.Array(value*))
   }
 }

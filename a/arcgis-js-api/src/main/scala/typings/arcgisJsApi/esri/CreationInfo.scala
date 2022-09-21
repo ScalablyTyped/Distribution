@@ -11,14 +11,14 @@ trait CreationInfo
      with Object {
   
   /**
-    * The associated feature layer where the new feature is created.
+    * The associated feature layer for newly-created feature(s).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo)
     */
   var layer: FeatureLayer
   
   /**
-    * The associated feature template used to create the new feature.
+    * The associated feature template used to create new feature(s).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo)
     */

@@ -36,7 +36,7 @@ trait CurveProps extends StObject {
   
   var angle: js.UndefOr[Double] = js.undefined
   
-  var baseLine: js.UndefOr[Double | js.Array[js.Any]] = js.undefined
+  var baseLine: js.UndefOr[Double | js.Array[Any]] = js.undefined
   
   var baselineShift: js.UndefOr[String] = js.undefined
   
@@ -102,8 +102,6 @@ trait CurveProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
@@ -154,7 +152,7 @@ trait CurveProps extends StObject {
   
   var path: js.UndefOr[String] = js.undefined
   
-  var pathRef: js.UndefOr[Ref[js.Any]] = js.undefined
+  var pathRef: js.UndefOr[Ref[Any]] = js.undefined
   
   var pointerEvents: js.UndefOr[String] = js.undefined
   
@@ -227,11 +225,11 @@ object CurveProps {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    inline def setBaseLine(value: Double | js.Array[js.Any]): Self = StObject.set(x, "baseLine", value.asInstanceOf[js.Any])
+    inline def setBaseLine(value: Double | js.Array[Any]): Self = StObject.set(x, "baseLine", value.asInstanceOf[js.Any])
     
     inline def setBaseLineUndefined: Self = StObject.set(x, "baseLine", js.undefined)
     
-    inline def setBaseLineVarargs(value: js.Any*): Self = StObject.set(x, "baseLine", js.Array(value :_*))
+    inline def setBaseLineVarargs(value: Any*): Self = StObject.set(x, "baseLine", js.Array(value*))
     
     inline def setBaselineShift(value: String): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
@@ -359,10 +357,6 @@ object CurveProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -461,9 +455,9 @@ object CurveProps {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathRef(value: Ref[js.Any]): Self = StObject.set(x, "pathRef", value.asInstanceOf[js.Any])
+    inline def setPathRef(value: Ref[Any]): Self = StObject.set(x, "pathRef", value.asInstanceOf[js.Any])
     
-    inline def setPathRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "pathRef", js.Any.fromFunction1(value))
+    inline def setPathRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "pathRef", js.Any.fromFunction1(value))
     
     inline def setPathRefNull: Self = StObject.set(x, "pathRef", null)
     
@@ -479,7 +473,7 @@ object CurveProps {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: js.Object*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: js.Object*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

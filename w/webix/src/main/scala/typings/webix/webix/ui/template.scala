@@ -13,7 +13,7 @@ trait template
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
@@ -29,43 +29,43 @@ trait template
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_template: templateConfig = js.native
   
   def detachEvent(id: String): Unit = js.native
   
-  def getScrollState(): js.Any = js.native
+  def getScrollState(): Any = js.native
   
   def getValues(): Unit = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
-  def setContent(node: js.Any): Unit = js.native
+  def setContent(node: Any): Unit = js.native
   
   def setHTML(html: String): Unit = js.native
   
-  def setValues(obj: js.Any): Unit = js.native
-  def setValues(obj: js.Any, update: Boolean): Unit = js.native
+  def setValues(obj: Any): Unit = js.native
+  def setValues(obj: Any, update: Boolean): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

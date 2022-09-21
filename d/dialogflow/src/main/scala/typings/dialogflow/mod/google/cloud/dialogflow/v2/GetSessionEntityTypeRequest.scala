@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetSessionEntityTypeRequest.
   * @param [properties] Properties to set
   */
-class GetSessionEntityTypeRequest ()
+open class GetSessionEntityTypeRequest ()
   extends StObject
      with IGetSessionEntityTypeRequest {
   def this(properties: IGetSessionEntityTypeRequest) = this()
@@ -29,7 +28,7 @@ class GetSessionEntityTypeRequest ()
     * Converts this GetSessionEntityTypeRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object GetSessionEntityTypeRequest {
   
@@ -46,6 +45,8 @@ object GetSessionEntityTypeRequest {
   inline def create(): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetSessionEntityTypeRequest]
   inline def create(properties: IGetSessionEntityTypeRequest): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GetSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSessionEntityTypeRequest]
   /**
     * Decodes a GetSessionEntityTypeRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object GetSessionEntityTypeRequest {
   /* static member */
   inline def decode(reader: Reader): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   inline def decode(reader: Reader, length: Double): GetSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSessionEntityTypeRequest]
-  inline def decode(reader: Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
-  inline def decode(reader: Uint8Array, length: Double): GetSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSessionEntityTypeRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   /**
     * Decodes a GetSessionEntityTypeRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object GetSessionEntityTypeRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
-  inline def decodeDelimited(reader: Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Encodes the specified GetSessionEntityTypeRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.verify|verify} messages.
@@ -97,7 +96,7 @@ object GetSessionEntityTypeRequest {
     * @returns GetSessionEntityTypeRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Creates a plain object from a GetSessionEntityTypeRequest message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object GetSessionEntityTypeRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: GetSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GetSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GetSessionEntityTypeRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GetSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GetSessionEntityTypeRequest message.
@@ -115,5 +114,5 @@ object GetSessionEntityTypeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

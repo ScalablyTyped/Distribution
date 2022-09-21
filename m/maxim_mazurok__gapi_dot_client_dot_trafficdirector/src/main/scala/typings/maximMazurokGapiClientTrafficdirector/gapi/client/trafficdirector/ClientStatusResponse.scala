@@ -22,6 +22,6 @@ object ClientStatusResponse {
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setConfigVarargs(value: ClientConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: ClientConfig*): Self = StObject.set(x, "config", js.Array(value*))
   }
 }

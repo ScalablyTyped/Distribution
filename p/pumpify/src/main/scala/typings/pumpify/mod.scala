@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("pumpify", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Pumpify {
+  open class ^ protected () extends Pumpify {
     def this(streams: Stream*) = this()
     def this(streams: js.Array[Stream]) = this()
   }
@@ -24,7 +24,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pumpify", "obj")
   @js.native
-  class obj protected () extends Pumpify {
+  open class obj protected () extends Pumpify {
     def this(streams: Stream*) = this()
   }
   @JSImport("pumpify", "obj")

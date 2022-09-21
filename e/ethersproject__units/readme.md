@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__units
 
-Typings are for version 5.0.7
+Typings are for version 5.7.0
 
 ## Library description:
 Unit conversion functions for Ethereum.
@@ -10,10 +10,10 @@ Unit conversion functions for Ethereum.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/units |
 | Keywords           | Ethereum, ethers, units, conversion |
-| # releases         | 28 |
-| # dependents       | 21 |
-| # downloads        | 1072472 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 2480091.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

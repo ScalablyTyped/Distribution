@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyFleetResult extends StObject {
   
   /**
-    * Is true if the request succeeds, and an error otherwise.
+    * If the request succeeds, the response returns true. If the request fails, no response is returned, and instead an error message is returned.
     */
   var Return: js.UndefOr[Boolean] = js.undefined
 }

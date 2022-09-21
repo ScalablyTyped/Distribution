@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Mdq.LabelQueryExpression")
 @js.native
-class LabelQueryExpression protected () extends StObject {
+open class LabelQueryExpression protected () extends StObject {
   def this(languages: js.Array[Double]) = this()
 }

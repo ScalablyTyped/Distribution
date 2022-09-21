@@ -9,7 +9,7 @@ object anon {
   
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer
+    var buffer: typings.node.bufferMod.global.Buffer
     
     var dimensions: RotateDimensions
     
@@ -19,14 +19,19 @@ object anon {
   }
   object Buffer {
     
-    inline def apply(buffer: typings.node.Buffer, dimensions: RotateDimensions, orientation: Double, quality: Double): Buffer = {
+    inline def apply(
+      buffer: typings.node.bufferMod.global.Buffer,
+      dimensions: RotateDimensions,
+      orientation: Double,
+      quality: Double
+    ): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
     extension [Self <: Buffer](x: Self) {
       
-      inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setDimensions(value: RotateDimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       

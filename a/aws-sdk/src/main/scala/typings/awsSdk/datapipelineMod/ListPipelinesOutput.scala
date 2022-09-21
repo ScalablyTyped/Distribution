@@ -40,6 +40,6 @@ object ListPipelinesOutput {
     
     inline def setPipelineIdList(value: pipelineList): Self = StObject.set(x, "pipelineIdList", value.asInstanceOf[js.Any])
     
-    inline def setPipelineIdListVarargs(value: PipelineIdName*): Self = StObject.set(x, "pipelineIdList", js.Array(value :_*))
+    inline def setPipelineIdListVarargs(value: PipelineIdName*): Self = StObject.set(x, "pipelineIdList", js.Array(value*))
   }
 }

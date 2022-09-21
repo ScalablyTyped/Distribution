@@ -1,14 +1,12 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ImageErrorEventData
 import typings.reactNative.mod.ImageLoadEventData
@@ -22,37 +20,44 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
-import typings.reactNativeElements.reactNativeElementsStrings.button
 import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
 import typings.reactNativeElements.reactNativeElementsStrings.polite
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
 import typings.reactNativeElements.reactNativeElementsStrings.resize
 import typings.reactNativeElements.reactNativeElementsStrings.scale
 import typings.reactNativeElements.reactNativeElementsStrings.yes
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ImageProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/image/Image.ImageProps>> */
 trait RecursivePartialPartialIm extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var Component: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[
+            typings.reactNativeElements.reactNativeElementsStrings.Component, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
-  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[js.Any]]]] = js.undefined
+  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[Any]]]] = js.undefined
   
   var PlaceholderContent: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   
   var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[
-    RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -62,13 +67,15 @@ trait RecursivePartialPartialIm extends StObject {
   
   var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[RecursivePartial[js.UndefOr[String | js.Array[String]]]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
   
   var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
   
   var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
   
   var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   
@@ -90,17 +97,19 @@ trait RecursivePartialPartialIm extends StObject {
   
   var capInsets: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   
+  var childrenContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
+  
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
   var defaultSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource | Double]]] = js.undefined
   
   var fadeDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
-  
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
   
   var loadingIndicatorSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource]]] = js.undefined
+  
+  var nativeID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]
@@ -159,8 +168,6 @@ trait RecursivePartialPartialIm extends StObject {
   var transition: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var transitionDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
-  
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
 }
 object RecursivePartialPartialIm {
   
@@ -174,10 +181,6 @@ object RecursivePartialPartialIm {
     inline def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
-    
-    inline def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
     
     inline def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -195,6 +198,14 @@ object RecursivePartialPartialIm {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: RecursivePartial[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLanguage(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -206,10 +217,6 @@ object RecursivePartialPartialIm {
     inline def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
     inline def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -251,7 +258,20 @@ object RecursivePartialPartialIm {
     
     inline def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
     
-    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setChildrenContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "childrenContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenContainerStyleUndefined: Self = StObject.set(x, "childrenContainerStyle", js.undefined)
+    
+    inline def setComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              typings.react.mod.Component[Component, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -267,11 +287,7 @@ object RecursivePartialPartialIm {
     
     inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
-    inline def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
-    inline def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    inline def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[Any]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
@@ -282,6 +298,10 @@ object RecursivePartialPartialIm {
     inline def setLoadingIndicatorSource(value: RecursivePartial[js.UndefOr[ImageURISource]]): Self = StObject.set(x, "loadingIndicatorSource", value.asInstanceOf[js.Any])
     
     inline def setLoadingIndicatorSourceUndefined: Self = StObject.set(x, "loadingIndicatorSource", js.undefined)
+    
+    inline def setNativeID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
     
     inline def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
     
@@ -386,9 +406,5 @@ object RecursivePartialPartialIm {
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
-    
-    inline def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

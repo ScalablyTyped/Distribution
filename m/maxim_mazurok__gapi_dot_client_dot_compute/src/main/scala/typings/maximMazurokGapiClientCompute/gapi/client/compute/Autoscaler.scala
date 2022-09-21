@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Autoscaler extends StObject {
   
   /**
-    * The configuration parameters for the autoscaling algorithm. You can define one or more of the policies for an autoscaler: cpuUtilization, customMetricUtilizations, and
-    * loadBalancingUtilization.
-    *
-    * If none of these are specified, the default will be to autoscale based on cpuUtilization to 0.6 or 60%.
+    * The configuration parameters for the autoscaling algorithm. You can define one or more signals for an autoscaler: cpuUtilization, customMetricUtilizations, and
+    * loadBalancingUtilization. If none of these are specified, the default will be to autoscale based on cpuUtilization to 0.6 or 60%.
     */
   var autoscalingPolicy: js.UndefOr[AutoscalingPolicy] = js.undefined
   
@@ -34,23 +33,28 @@ trait Autoscaler extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] Target recommended MIG size (number of instances) computed by autoscaler. Autoscaler calculates recommended MIG size even when autoscaling policy mode is different
-    * from ON. This field is empty when autoscaler is not connected to the existing managed instance group or autoscaler did not generate its prediction.
+    * [Output Only] Target recommended MIG size (number of instances) computed by autoscaler. Autoscaler calculates the recommended MIG size even when the autoscaling policy mode is
+    * different from ON. This field is empty when autoscaler is not connected to an existing managed instance group or autoscaler did not generate its prediction.
     */
   var recommendedSize: js.UndefOr[Double] = js.undefined
   
   /** [Output Only] URL of the region where the instance group resides (for autoscalers living in regional scope). */
   var region: js.UndefOr[String] = js.undefined
   
+  /** [Output Only] Status information of existing scaling schedules. */
+  var scalingScheduleStatus: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus}
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Autoscaler & TopLevel[Any]
+  ] = js.undefined
+  
   /** [Output Only] Server-defined URL for the resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The status of the autoscaler configuration. Current set of possible values:
-    * - PENDING: Autoscaler backend hasn't read new/updated configuration.
-    * - DELETING: Configuration is being deleted.
-    * - ACTIVE: Configuration is acknowledged to be effective. Some warnings might be present in the statusDetails field.
-    * - ERROR: Configuration has errors. Actionable for users. Details are present in the statusDetails field.  New values might be added in the future.
+    * [Output Only] The status of the autoscaler configuration. Current set of possible values: - PENDING: Autoscaler backend hasn't read new/updated configuration. - DELETING:
+    * Configuration is being deleted. - ACTIVE: Configuration is acknowledged to be effective. Some warnings might be present in the statusDetails field. - ERROR: Configuration has
+    * errors. Actionable for users. Details are present in the statusDetails field. New values might be added in the future.
     */
   var status: js.UndefOr[String] = js.undefined
   
@@ -60,7 +64,7 @@ trait Autoscaler extends StObject {
     */
   var statusDetails: js.UndefOr[js.Array[AutoscalerStatusDetails]] = js.undefined
   
-  /** URL of the managed instance group that this autoscaler will scale. */
+  /** URL of the managed instance group that this autoscaler will scale. This field is required when creating an autoscaler. */
   var target: js.UndefOr[String] = js.undefined
   
   /** [Output Only] URL of the zone where the instance group resides (for autoscalers living in zonal scope). */
@@ -107,6 +111,14 @@ object Autoscaler {
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
+    inline def setScalingScheduleStatus(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus}
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Autoscaler & TopLevel[Any]
+    ): Self = StObject.set(x, "scalingScheduleStatus", value.asInstanceOf[js.Any])
+    
+    inline def setScalingScheduleStatusUndefined: Self = StObject.set(x, "scalingScheduleStatus", js.undefined)
+    
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
@@ -117,7 +129,7 @@ object Autoscaler {
     
     inline def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
-    inline def setStatusDetailsVarargs(value: AutoscalerStatusDetails*): Self = StObject.set(x, "statusDetails", js.Array(value :_*))
+    inline def setStatusDetailsVarargs(value: AutoscalerStatusDetails*): Self = StObject.set(x, "statusDetails", js.Array(value*))
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     

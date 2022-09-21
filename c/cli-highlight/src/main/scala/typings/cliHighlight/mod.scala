@@ -39,14 +39,6 @@ object mod {
   trait HighlightOptions extends StObject {
     
     /**
-      * The continuation is an optional mode stack representing unfinished parsing. When present,
-      * the function will restart parsing from this state instead of initializing a new one.
-      *
-      * See http://highlightjs.readthedocs.io/en/latest/api.html
-      */
-    var continuation: js.UndefOr[js.Any] = js.undefined
-    
-    /**
       * When present and evaluates to a true value, forces highlighting to finish even in case of
       * detecting illegal syntax for the language instead of throwing an exception.
       */
@@ -77,10 +69,6 @@ object mod {
     
     extension [Self <: HighlightOptions](x: Self) {
       
-      inline def setContinuation(value: js.Any): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
-      
-      inline def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
-      
       inline def setIgnoreIllegals(value: Boolean): Self = StObject.set(x, "ignoreIllegals", value.asInstanceOf[js.Any])
       
       inline def setIgnoreIllegalsUndefined: Self = StObject.set(x, "ignoreIllegals", js.undefined)
@@ -91,7 +79,7 @@ object mod {
       
       inline def setLanguageSubsetUndefined: Self = StObject.set(x, "languageSubset", js.undefined)
       
-      inline def setLanguageSubsetVarargs(value: String*): Self = StObject.set(x, "languageSubset", js.Array(value :_*))
+      inline def setLanguageSubsetVarargs(value: String*): Self = StObject.set(x, "languageSubset", js.Array(value*))
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddressRuleCondition extends StObject {
   
-  var Address: js.Any
+  var Address: Any
   
   val Application: typings.activexOutlook.Outlook.Application
   
@@ -19,20 +19,20 @@ trait AddressRuleCondition extends StObject {
   /* private */ @JSName("Outlook.AddressRuleCondition_typekey")
   var OutlookDotAddressRuleCondition_typekey: AddressRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
 object AddressRuleCondition {
   
   inline def apply(
-    Address: js.Any,
+    Address: Any,
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
     OutlookDotAddressRuleCondition_typekey: AddressRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): AddressRuleCondition = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object AddressRuleCondition {
   
   extension [Self <: AddressRuleCondition](x: Self) {
     
-    inline def setAddress(value: js.Any): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Any): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object AddressRuleCondition {
     
     inline def setOutlookDotAddressRuleCondition_typekey(value: AddressRuleCondition): Self = StObject.set(x, "Outlook.AddressRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

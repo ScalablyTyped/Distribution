@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotFieldUpdateData extends StObject {
   
   /**
-    *
     * Name of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Determines whether to show all items of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAllItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Subtotals of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var subtotals: js.UndefOr[Subtotals] = js.undefined

@@ -1,7 +1,7 @@
 
 # Scala.js typings for amqp-connection-manager
 
-Typings are for version 2.0
+Typings are for version 4.1.6
 
 ## Library description:
 Auto-reconnect and round robin support for amqplib.
@@ -10,10 +10,10 @@ Auto-reconnect and round robin support for amqplib.
 | ------------------ | :-------------: |
 | Full name          | amqp-connection-manager |
 | Keywords           | amqp, rabbitmq, cluster, amqplib |
-| # releases         | 8 |
-| # dependents       | 102 |
-| # downloads        | 2721815 |
-| # stars            | 2 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 740080.0 |
+| # stars            | 429.0 |
 
 ## Links
 - [Homepage](https://github.com/jwalton/node-amqp-connection-manager)
@@ -24,7 +24,7 @@ Auto-reconnect and round robin support for amqplib.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

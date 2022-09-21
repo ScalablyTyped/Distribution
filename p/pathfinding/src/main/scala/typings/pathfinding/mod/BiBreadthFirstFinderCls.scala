@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("pathfinding", "BiBreadthFirstFinder")
 @js.native
-class BiBreadthFirstFinderCls ()
+open class BiBreadthFirstFinderCls ()
   extends StObject
      with BiBreadthFirstFinder {
   def this(opt: BiBreadthFirstFinderOptions) = this()

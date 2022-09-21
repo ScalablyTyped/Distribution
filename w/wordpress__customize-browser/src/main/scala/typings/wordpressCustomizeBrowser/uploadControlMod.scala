@@ -9,7 +9,7 @@ object uploadControlMod {
   
   @JSImport("@wordpress/customize-browser/UploadControl", "UploadControl")
   @js.native
-  class UploadControl protected () extends MediaControl {
+  open class UploadControl protected () extends MediaControl {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

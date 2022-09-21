@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "GuestAuthentication")
 @js.native
-class GuestAuthentication () extends Authentication
+open class GuestAuthentication () extends Authentication

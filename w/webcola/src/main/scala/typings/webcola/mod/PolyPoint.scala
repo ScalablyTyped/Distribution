@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "PolyPoint")
 @js.native
-class PolyPoint ()
+open class PolyPoint ()
   extends typings.webcola.geomMod.PolyPoint

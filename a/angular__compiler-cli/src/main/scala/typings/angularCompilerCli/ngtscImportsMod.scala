@@ -1,0 +1,148 @@
+package typings.angularCompilerCli
+
+import typings.angularCompilerCli.anon.ModuleResolutionHostPickC
+import typings.angularCompilerCli.emitterMod.ReferenceEmitResult
+import typings.angularCompilerCli.emitterMod.ReferenceEmitStrategy
+import typings.angularCompilerCli.fileSystemMod.LogicalFileSystem
+import typings.angularCompilerCli.interfacesMod.UnifiedModulesHost
+import typings.angularCompilerCli.referencesMod.OwningModule
+import typings.angularCompilerCli.srcHostMod.ReflectionHost
+import typings.typescript.mod.CompilerOptions
+import typings.typescript.mod.ModuleResolutionCache
+import typings.typescript.mod.Node
+import typings.typescript.mod.Program
+import typings.typescript.mod.TypeChecker
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object ngtscImportsMod {
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "AbsoluteModuleStrategy")
+  @js.native
+  open class AbsoluteModuleStrategy protected ()
+    extends typings.angularCompilerCli.emitterMod.AbsoluteModuleStrategy {
+    def this(
+      program: Program,
+      checker: TypeChecker,
+      moduleResolver: typings.angularCompilerCli.resolverMod.ModuleResolver,
+      reflectionHost: ReflectionHost
+    ) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "AliasStrategy")
+  @js.native
+  open class AliasStrategy ()
+    extends typings.angularCompilerCli.aliasMod.AliasStrategy
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "DefaultImportTracker")
+  @js.native
+  open class DefaultImportTracker ()
+    extends typings.angularCompilerCli.defaultMod.DefaultImportTracker
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "ImportFlags")
+  @js.native
+  object ImportFlags extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.emitterMod.ImportFlags & Double] = js.native
+    
+    /* 8 */ val AllowRelativeDtsImports: typings.angularCompilerCli.emitterMod.ImportFlags.AllowRelativeDtsImports & Double = js.native
+    
+    /* 4 */ val AllowTypeImports: typings.angularCompilerCli.emitterMod.ImportFlags.AllowTypeImports & Double = js.native
+    
+    /* 1 */ val ForceNewImport: typings.angularCompilerCli.emitterMod.ImportFlags.ForceNewImport & Double = js.native
+    
+    /* 2 */ val NoAliasing: typings.angularCompilerCli.emitterMod.ImportFlags.NoAliasing & Double = js.native
+    
+    /* 0 */ val None: typings.angularCompilerCli.emitterMod.ImportFlags.None & Double = js.native
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "LocalIdentifierStrategy")
+  @js.native
+  open class LocalIdentifierStrategy ()
+    extends typings.angularCompilerCli.emitterMod.LocalIdentifierStrategy
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "LogicalProjectStrategy")
+  @js.native
+  open class LogicalProjectStrategy protected ()
+    extends typings.angularCompilerCli.emitterMod.LogicalProjectStrategy {
+    def this(reflector: ReflectionHost, logicalFs: LogicalFileSystem) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "ModuleResolver")
+  @js.native
+  open class ModuleResolver protected ()
+    extends typings.angularCompilerCli.resolverMod.ModuleResolver {
+    def this(program: Program, compilerOptions: CompilerOptions, host: ModuleResolutionHostPickC) = this()
+    def this(
+      program: Program,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHostPickC,
+      moduleResolutionCache: ModuleResolutionCache
+    ) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "NoopImportRewriter")
+  @js.native
+  open class NoopImportRewriter ()
+    extends typings.angularCompilerCli.srcCoreMod.NoopImportRewriter
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "PrivateExportAliasingHost")
+  @js.native
+  open class PrivateExportAliasingHost protected ()
+    extends typings.angularCompilerCli.aliasMod.PrivateExportAliasingHost {
+    def this(host: ReflectionHost) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "R3SymbolsImportRewriter")
+  @js.native
+  open class R3SymbolsImportRewriter protected ()
+    extends typings.angularCompilerCli.srcCoreMod.R3SymbolsImportRewriter {
+    def this(r3SymbolsPath: String) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "Reference")
+  @js.native
+  open class Reference[T /* <: Node */] protected ()
+    extends typings.angularCompilerCli.referencesMod.Reference[T] {
+    def this(node: T) = this()
+    def this(node: T, bestGuessOwningModule: OwningModule) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "ReferenceEmitter")
+  @js.native
+  open class ReferenceEmitter protected ()
+    extends typings.angularCompilerCli.emitterMod.ReferenceEmitter {
+    def this(strategies: js.Array[ReferenceEmitStrategy]) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "RelativePathStrategy")
+  @js.native
+  open class RelativePathStrategy protected ()
+    extends typings.angularCompilerCli.emitterMod.RelativePathStrategy {
+    def this(reflector: ReflectionHost) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "UnifiedModulesAliasingHost")
+  @js.native
+  open class UnifiedModulesAliasingHost protected ()
+    extends typings.angularCompilerCli.aliasMod.UnifiedModulesAliasingHost {
+    def this(unifiedModulesHost: UnifiedModulesHost) = this()
+  }
+  
+  @JSImport("@angular/compiler-cli/src/ngtsc/imports", "UnifiedModulesStrategy")
+  @js.native
+  open class UnifiedModulesStrategy protected ()
+    extends typings.angularCompilerCli.emitterMod.UnifiedModulesStrategy {
+    def this(reflector: ReflectionHost, unifiedModulesHost: UnifiedModulesHost) = this()
+  }
+  
+  inline def assertSuccessfulReferenceEmit(result: ReferenceEmitResult, origin: Node, typeKind: String): /* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSuccessfulReferenceEmit")(result.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], typeKind.asInstanceOf[js.Any])).asInstanceOf[/* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean]
+  
+  inline def validateAndRewriteCoreSymbol(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAndRewriteCoreSymbol")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+}

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * SslCertDetail.
-  */
 trait SchemaSslCertDetail extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaSslCertDetail extends StObject {
   var certInfo: js.UndefOr[SchemaSslCert] = js.undefined
   
   /**
-    * The private key for the client cert, in pem format. Keep private in order
-    * to protect your security.
+    * The private key for the client cert, in pem format. Keep private in order to protect your security.
     */
-  var certPrivateKey: js.UndefOr[String] = js.undefined
+  var certPrivateKey: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSslCertDetail {
   
@@ -34,6 +30,8 @@ object SchemaSslCertDetail {
     inline def setCertInfoUndefined: Self = StObject.set(x, "certInfo", js.undefined)
     
     inline def setCertPrivateKey(value: String): Self = StObject.set(x, "certPrivateKey", value.asInstanceOf[js.Any])
+    
+    inline def setCertPrivateKeyNull: Self = StObject.set(x, "certPrivateKey", null)
     
     inline def setCertPrivateKeyUndefined: Self = StObject.set(x, "certPrivateKey", js.undefined)
   }

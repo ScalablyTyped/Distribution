@@ -10,10 +10,10 @@ Generate UUIDs of versions 1, 3, 4, and 5.
 | ------------------ | :-------------: |
 | Full name          | uuid-1345 |
 | Keywords           | uuid, guid, rfc4122, uuid-v1, uuid-v3, uuid-v4, uuid-v5 |
-| # releases         | 3 |
-| # dependents       | 29 |
-| # downloads        | 464623 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 64251.666666666664 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/scravy/uuid-1345)

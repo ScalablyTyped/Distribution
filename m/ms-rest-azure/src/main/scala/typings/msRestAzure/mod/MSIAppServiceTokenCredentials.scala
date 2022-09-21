@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * @param {MSIAppServiceOptions} [options] - Optional parameters.
   */
-class MSIAppServiceTokenCredentials () extends MSITokenCredentials {
+open class MSIAppServiceTokenCredentials () extends MSITokenCredentials {
   def this(options: MSIAppServiceOptions) = this()
   
   /**

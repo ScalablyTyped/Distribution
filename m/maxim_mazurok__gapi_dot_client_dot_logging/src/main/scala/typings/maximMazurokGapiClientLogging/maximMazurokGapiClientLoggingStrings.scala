@@ -27,6 +27,14 @@ object maximMazurokGapiClientLoggingStrings {
   inline def MonitoredResourceMetadata: MonitoredResourceMetadata = "MonitoredResourceMetadata".asInstanceOf[MonitoredResourceMetadata]
   
   @js.native
+  sealed trait Operation extends StObject
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
+  
+  @js.native
+  sealed trait Status extends StObject
+  inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
   sealed trait WriteLogEntriesRequest extends StObject
   inline def WriteLogEntriesRequest: WriteLogEntriesRequest = "WriteLogEntriesRequest".asInstanceOf[WriteLogEntriesRequest]
   

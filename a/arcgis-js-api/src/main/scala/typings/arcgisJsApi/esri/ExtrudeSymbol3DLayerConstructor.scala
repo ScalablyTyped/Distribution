@@ -17,5 +17,5 @@ trait ExtrudeSymbol3DLayerConstructor
 Instantiable0[ExtrudeSymbol3DLayer]
      with Instantiable1[/* properties */ ExtrudeSymbol3DLayerProperties, ExtrudeSymbol3DLayer] {
   
-  def fromJSON(json: js.Any): ExtrudeSymbol3DLayer = js.native
+  def fromJSON(json: Any): ExtrudeSymbol3DLayer = js.native
 }

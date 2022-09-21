@@ -10,10 +10,10 @@ object pictureInPictureAltMod {
   
   @JSImport("material-ui/svg-icons/action/picture-in-picture-alt", JSImport.Default)
   @js.native
-  class default () extends ActionPictureInPictureAlt
+  open class default () extends ActionPictureInPictureAlt
   
   @JSImport("material-ui/svg-icons/action/picture-in-picture-alt", "ActionPictureInPictureAlt")
   @js.native
-  class ActionPictureInPictureAlt ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPictureInPictureAlt ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

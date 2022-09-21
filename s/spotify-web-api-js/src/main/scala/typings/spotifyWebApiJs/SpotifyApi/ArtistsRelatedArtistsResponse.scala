@@ -25,6 +25,6 @@ object ArtistsRelatedArtistsResponse {
     
     inline def setArtists(value: js.Array[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    inline def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value :_*))
+    inline def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value*))
   }
 }

@@ -1,14 +1,11 @@
 package typings.babylonjs.deviceEnumsMod
 
-import typings.babylonjs.deviceTypesMod._DeviceInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointerInput
-  extends StObject
-     with _DeviceInput[js.Any]
+sealed trait PointerInput extends StObject
 @JSImport("babylonjs/DeviceInput/InputDevices/deviceEnums", "PointerInput")
 @js.native
 object PointerInput extends StObject {
@@ -30,7 +27,7 @@ object PointerInput extends StObject {
        with PointerInput
   /* 6 */ val BrowserForward: typings.babylonjs.deviceEnumsMod.PointerInput.BrowserForward & Double = js.native
   
-  /** Horizontal Axis */
+  /** Horizontal Axis (Not used in events/observables; only in polling) */
   @js.native
   sealed trait Horizontal
     extends StObject
@@ -51,6 +48,34 @@ object PointerInput extends StObject {
        with PointerInput
   /* 3 */ val MiddleClick: typings.babylonjs.deviceEnumsMod.PointerInput.MiddleClick & Double = js.native
   
+  /** Mouse Wheel X */
+  @js.native
+  sealed trait MouseWheelX
+    extends StObject
+       with PointerInput
+  /* 7 */ val MouseWheelX: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelX & Double = js.native
+  
+  /** Mouse Wheel Y */
+  @js.native
+  sealed trait MouseWheelY
+    extends StObject
+       with PointerInput
+  /* 8 */ val MouseWheelY: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelY & Double = js.native
+  
+  /** Mouse Wheel Z */
+  @js.native
+  sealed trait MouseWheelZ
+    extends StObject
+       with PointerInput
+  /* 9 */ val MouseWheelZ: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelZ & Double = js.native
+  
+  /** Used in events/observables to identify if x/y changes occurred */
+  @js.native
+  sealed trait Move
+    extends StObject
+       with PointerInput
+  /* 12 */ val Move: typings.babylonjs.deviceEnumsMod.PointerInput.Move & Double = js.native
+  
   /** Right Click */
   @js.native
   sealed trait RightClick
@@ -58,7 +83,7 @@ object PointerInput extends StObject {
        with PointerInput
   /* 4 */ val RightClick: typings.babylonjs.deviceEnumsMod.PointerInput.RightClick & Double = js.native
   
-  /** Vertical Axis */
+  /** Vertical Axis (Not used in events/observables; only in polling) */
   @js.native
   sealed trait Vertical
     extends StObject

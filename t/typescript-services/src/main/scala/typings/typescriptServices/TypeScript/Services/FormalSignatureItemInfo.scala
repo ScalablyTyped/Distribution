@@ -32,12 +32,12 @@ object FormalSignatureItemInfo {
     
     inline def setParameters(value: js.Array[FormalParameterInfo]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: FormalParameterInfo*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: FormalParameterInfo*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setSignatureInfo(value: String): Self = StObject.set(x, "signatureInfo", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: js.Array[FormalTypeParameterInfo]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    inline def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = StObject.set(x, "typeParameters", js.Array(value :_*))
+    inline def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = StObject.set(x, "typeParameters", js.Array(value*))
   }
 }

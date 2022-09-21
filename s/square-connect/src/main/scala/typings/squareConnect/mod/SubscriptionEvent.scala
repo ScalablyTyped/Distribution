@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SubscriptionEvent")
 @js.native
-class SubscriptionEvent () extends StObject {
+open class SubscriptionEvent () extends StObject {
   
   /**
     * The date, in YYYY-MM-DD format (for example, 2013-01-15), when the subscription event went into effect.

@@ -49,21 +49,21 @@ trait PlusPaymentPaymentChannel extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def requestOrder(): Unit = js.native
-  def requestOrder(ids: js.Array[js.Any]): Unit = js.native
-  def requestOrder(ids: js.Array[js.Any], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
+  def requestOrder(ids: js.Array[Any]): Unit = js.native
+  def requestOrder(ids: js.Array[Any], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def requestOrder(
-    ids: js.Array[js.Any],
+    ids: js.Array[Any],
     successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def requestOrder(ids: js.Array[js.Any], successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestOrder(ids: js.Array[Any], successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def requestOrder(ids: Unit, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def requestOrder(
     ids: Unit,
     successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def requestOrder(ids: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestOrder(ids: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 向IAP服务器请求已经购买的非消耗性商品和订阅商品
@@ -72,8 +72,8 @@ trait PlusPaymentPaymentChannel extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def restoreComplateRequest(): Unit = js.native
-  def restoreComplateRequest(options: js.Any): Unit = js.native
-  def restoreComplateRequest(options: js.Any, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
+  def restoreComplateRequest(options: Any): Unit = js.native
+  def restoreComplateRequest(options: Any, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def restoreComplateRequest(options: Unit, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   
   /**

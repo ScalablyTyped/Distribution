@@ -11,14 +11,12 @@ Semantic empowers designers and developers by creating a shared vocabulary for U
 | Full name          | semantic-ui |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 508515 |
-| # stars            | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 31105.0 |
+| # stars            | 50069.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
-- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
-- [Repository](https://github.com/Semantic-Org/Semantic-UI)
 - [Npm](https://www.npmjs.com/package/semantic-ui)
     
 

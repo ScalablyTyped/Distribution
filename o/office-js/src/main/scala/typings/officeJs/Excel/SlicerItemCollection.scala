@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of all the slicer item objects in the slicer.
   *
-  * Represents a collection of all the slicer item objects on the slicer.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -28,6 +28,7 @@ trait SlicerItemCollection
   /**
     * Returns the number of slicer items in the slicer.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -35,6 +36,7 @@ trait SlicerItemCollection
   /**
     * Gets a slicer item object using its key or name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
     * @param key The key or name of the slicer item.
@@ -44,6 +46,7 @@ trait SlicerItemCollection
   /**
     * Gets a slicer item based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
@@ -51,8 +54,10 @@ trait SlicerItemCollection
   def getItemAt(index: Double): SlicerItem = js.native
   
   /**
-    * Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.
+    * Gets a slicer item using its key or name. If the slicer item doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
     * @param key Key or name of the slicer to be retrieved.

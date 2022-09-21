@@ -8,16 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceGroupManagersScopedList extends StObject {
   
   /**
-    * [Output Only] The list of managed instance groups that are contained in
-    * the specified project and zone.
+    * [Output Only] The list of managed instance groups that are contained in the specified project and zone.
     */
   var instanceGroupManagers: js.UndefOr[js.Array[SchemaInstanceGroupManager]] = js.undefined
   
   /**
-    * [Output Only] The warning that replaces the list of managed instance
-    * groups when the list is empty.
+    * [Output Only] The warning that replaces the list of managed instance groups when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaInstanceGroupManagersScopedList {
   
@@ -32,9 +30,11 @@ object SchemaInstanceGroupManagersScopedList {
     
     inline def setInstanceGroupManagersUndefined: Self = StObject.set(x, "instanceGroupManagers", js.undefined)
     
-    inline def setInstanceGroupManagersVarargs(value: SchemaInstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value :_*))
+    inline def setInstanceGroupManagersVarargs(value: SchemaInstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

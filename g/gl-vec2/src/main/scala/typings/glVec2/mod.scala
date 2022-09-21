@@ -12,6 +12,8 @@ object mod {
   
   inline def add(out: js.Array[Double], a: js.Array[Double], b: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
+  inline def ceil(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
   inline def clone_(a: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   inline def copy(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
@@ -67,6 +69,10 @@ object mod {
   inline def normalize(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def random(out: js.Array[Double], scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(out.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  inline def rotate(out: js.Array[Double], a: js.Array[Double], angle: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  inline def round(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("round")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def scale(out: js.Array[Double], a: js.Array[Double], b: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   

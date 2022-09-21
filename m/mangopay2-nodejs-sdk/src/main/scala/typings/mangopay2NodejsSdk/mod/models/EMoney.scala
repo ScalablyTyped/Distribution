@@ -1,14 +1,14 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.mod.MoneyData
-import typings.mangopay2NodejsSdk.mod.eMoney.EMoneyData
+import typings.mangopay2NodejsSdk.moneyMod.money.EMoneyData
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.EMoney")
 @js.native
-class EMoney protected ()
+open class EMoney protected ()
   extends StObject
      with EMoneyData {
   def this(data: EMoneyData) = this()

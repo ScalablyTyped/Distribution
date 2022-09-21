@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PostProcess extends StObject {
   
-  /* private */ var _camera: js.Any = js.native
+  /* private */ var _camera: Any = js.native
+  
+  /* private */ var _createRenderTargetTexture: Any = js.native
   
   /**
     * The index in _textures that corresponds to the output texture.
@@ -15,37 +17,47 @@ trait PostProcess extends StObject {
     */
   var _currentRenderTextureInd: Double = js.native
   
-  /* private */ var _disposeTextures: js.Any = js.native
+  /* private */ var _disposeTextureCache: Any = js.native
   
-  /* private */ var _effect: js.Any = js.native
+  /* private */ var _disposeTextures: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _drawWrapper: Any = js.native
   
-  /* private */ var _forcedOutputTexture: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _fragmentUrl: js.Any = js.native
+  /* private */ var _flushTextureCache: Any = js.native
   
-  /* protected */ var _indexParameters: js.Any = js.native
+  /** @hidden */
+  var _forcedOutputTexture: Nullable[RenderTargetWrapper] = js.native
   
-  /* private */ var _onActivateObserver: js.Any = js.native
+  /* private */ var _fragmentUrl: Any = js.native
   
-  /* private */ var _onAfterRenderObserver: js.Any = js.native
+  /* protected */ var _indexParameters: Any = js.native
   
-  /* private */ var _onApplyObserver: js.Any = js.native
+  /* private */ var _onActivateObserver: Any = js.native
   
-  /* private */ var _onBeforeRenderObserver: js.Any = js.native
+  /* private */ var _onAfterRenderObserver: Any = js.native
   
-  /* private */ var _onSizeChangedObserver: js.Any = js.native
+  /* private */ var _onApplyObserver: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _onBeforeRenderObserver: Any = js.native
+  
+  /* private */ var _onSizeChangedObserver: Any = js.native
+  
+  /* private */ var _options: Any = js.native
   
   /**
     * Internal, reference to the location where this postprocess was output to. (Typically the texture on the next postprocess in the chain)
     * @hidden
     */
-  var _outputTexture: Nullable[InternalTexture] = js.native
+  var _outputTexture: Nullable[RenderTargetWrapper] = js.native
   
-  /* private */ var _parameters: js.Any = js.native
+  /* private */ var _parameters: Any = js.native
+  
+  /** @hidden */
+  var _parentContainer: Nullable[AbstractScene] = js.native
+  
+  /* protected */ var _postProcessDefines: Nullable[String] = js.native
   
   /**
     * Prepass configuration in case this post process needs a texture from prepass
@@ -53,31 +65,41 @@ trait PostProcess extends StObject {
     */
   var _prePassEffectConfiguration: PrePassEffectConfiguration = js.native
   
-  /* private */ var _reusable: js.Any = js.native
+  /* private */ var _renderId: Any = js.native
   
-  /* private */ var _samplers: js.Any = js.native
+  /* private */ var _resize: Any = js.native
   
-  /* private */ var _samples: js.Any = js.native
+  /* private */ var _reusable: Any = js.native
   
-  /* private */ var _scaleRatio: js.Any = js.native
+  /* private */ var _samplers: Any = js.native
+  
+  /* private */ var _samples: Any = js.native
+  
+  /* private */ var _scaleRatio: Any = js.native
   
   /* protected */ var _scene: Scene = js.native
   
-  /* private */ var _shareOutputWithPostProcess: js.Any = js.native
+  /* private */ var _shareOutputWithPostProcess: Any = js.native
   
-  /* private */ var _texelSize: js.Any = js.native
-  
-  /* private */ var _textureFormat: js.Any = js.native
-  
-  /* private */ var _textureType: js.Any = js.native
+  /* private */ var _texelSize: Any = js.native
   
   /**
     * Smart array of input and output textures for the post process.
     * @hidden
     */
-  var _textures: SmartArray[InternalTexture] = js.native
+  /* private */ var _textureCache: Any = js.native
   
-  /* private */ var _vertexUrl: js.Any = js.native
+  /* private */ var _textureFormat: Any = js.native
+  
+  /* private */ var _textureType: Any = js.native
+  
+  /**
+    * Smart array of input and output textures for the post process.
+    * @hidden
+    */
+  var _textures: SmartArray[RenderTargetWrapper] = js.native
+  
+  /* private */ var _vertexUrl: Any = js.native
   
   /**
     * Activates the post process by intializing the textures to be used when executed. Notifies onActivateObservable.
@@ -85,12 +107,12 @@ trait PostProcess extends StObject {
     * @param camera The camera that will be used in the post process. This camera will be used when calling onActivateObservable.
     * @param sourceTexture The source texture to be inspected to get the width and height if not specified in the post process constructor. (default: null)
     * @param forceDepthStencil If true, a depth and stencil buffer will be generated. (default: false)
-    * @returns The target texture that was bound to be written to.
+    * @returns The render target wrapper that was bound to be written to.
     */
-  def activate(camera: Nullable[Camera]): InternalTexture = js.native
-  def activate(camera: Nullable[Camera], sourceTexture: Unit, forceDepthStencil: Boolean): InternalTexture = js.native
-  def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture]): InternalTexture = js.native
-  def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture], forceDepthStencil: Boolean): InternalTexture = js.native
+  def activate(camera: Nullable[Camera]): RenderTargetWrapper = js.native
+  def activate(camera: Nullable[Camera], sourceTexture: Unit, forceDepthStencil: Boolean): RenderTargetWrapper = js.native
+  def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture]): RenderTargetWrapper = js.native
+  def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture], forceDepthStencil: Boolean): RenderTargetWrapper = js.native
   
   /**
     * Modify the scale of the post process to be the same as the viewport (default: false)
@@ -154,6 +176,13 @@ trait PostProcess extends StObject {
   var enablePixelPerfectMode: Boolean = js.native
   
   /**
+    * if externalTextureSamplerBinding is true, the "apply" method won't bind the textureSampler texture, it is expected to be done by the "outside" (by the onApplyObservable observer most probably).
+    * counter-productive in some cases because if the texture bound by "apply" is different from the currently texture bound, (the one set by the onApplyObservable observer, for eg) some
+    * internal structures (materialContext) will be dirtified, which may impact performances
+    */
+  var externalTextureSamplerBinding: Boolean = js.native
+  
+  /**
     * Force the postprocess to be applied without taking in account viewport
     */
   var forceFullscreenViewport: Boolean = js.native
@@ -197,8 +226,8 @@ trait PostProcess extends StObject {
     * The input texture for this post process and the output texture of the previous post process. When added to a pipeline the previous post process will
     * render it's output into this texture and this texture will be used as textureSampler in the fragment shader of this post process.
     */
-  def inputTexture: InternalTexture = js.native
-  def inputTexture_=(value: InternalTexture): Unit = js.native
+  def inputTexture: RenderTargetWrapper = js.native
+  def inputTexture_=(value: RenderTargetWrapper): Unit = js.native
   
   /**
     * List of inspectable custom properties (used by the Inspector)
@@ -315,10 +344,10 @@ trait PostProcess extends StObject {
   var scaleMode: Double = js.native
   
   /**
-    * Serializes the particle system to a JSON object
+    * Serializes the post process to a JSON object
     * @returns the JSON object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Sets the required values to the prepass renderer.
@@ -360,7 +389,7 @@ trait PostProcess extends StObject {
     defines: js.UndefOr[Nullable[String]],
     uniforms: js.UndefOr[Nullable[js.Array[String]]],
     samplers: js.UndefOr[Nullable[js.Array[String]]],
-    indexParameters: js.UndefOr[js.Any],
+    indexParameters: js.UndefOr[Any],
     onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
     onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]],
     vertexUrl: js.UndefOr[String],

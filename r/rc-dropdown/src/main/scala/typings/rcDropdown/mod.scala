@@ -12,10 +12,10 @@ object mod extends Shortcut {
   
   @JSImport("rc-dropdown", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]] = js.native
   
-  type _To = ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]] = default
 }

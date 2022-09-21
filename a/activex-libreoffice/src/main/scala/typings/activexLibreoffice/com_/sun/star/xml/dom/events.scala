@@ -141,7 +141,7 @@ object events {
     inline def apply(
       acquire: () => Unit,
       createEvent: String => XEvent,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XDocumentEvent = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createEvent = js.Any.fromFunction1(createEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -212,7 +212,7 @@ object events {
       getType: () => String,
       initEvent: (String, Boolean, Boolean) => Unit,
       preventDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopPropagation: () => Unit
     ): XEvent = {
@@ -269,7 +269,7 @@ object events {
     inline def apply(
       acquire: () => Unit,
       handleEvent: XEvent => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XEventListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handleEvent = js.Any.fromFunction1(handleEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -298,7 +298,7 @@ object events {
       acquire: () => Unit,
       addEventListener: (String, XEventListener, Boolean) => Unit,
       dispatchEvent: XEvent => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: (String, XEventListener, Boolean) => Unit
     ): XEventTarget = {
@@ -424,7 +424,7 @@ object events {
       initMouseEvent: (String, Boolean, Boolean, XAbstractView, Double, Double, Double, Double, Double, Boolean, Boolean, Boolean, Boolean, Double, XEventTarget) => Unit,
       initUIEvent: (String, Boolean, Boolean, XAbstractView, Double) => Unit,
       preventDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopPropagation: () => Unit
     ): XMouseEvent = {
@@ -546,7 +546,7 @@ object events {
       initEvent: (String, Boolean, Boolean) => Unit,
       initMutationEvent: (String, Boolean, Boolean, XNode, String, String, String, AttrChangeType) => Unit,
       preventDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopPropagation: () => Unit
     ): XMutationEvent = {
@@ -625,7 +625,7 @@ object events {
       initEvent: (String, Boolean, Boolean) => Unit,
       initUIEvent: (String, Boolean, Boolean, XAbstractView, Double) => Unit,
       preventDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopPropagation: () => Unit
     ): XUIEvent = {

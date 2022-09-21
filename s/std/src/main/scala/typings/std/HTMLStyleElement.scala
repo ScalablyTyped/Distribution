@@ -12,19 +12,22 @@ trait HTMLStyleElement
      with LinkStyle {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Sets or retrieves the media type.
-    */
+  /** Enables or disables the style sheet. */
+  /* standard dom */
+  var disabled: scala.Boolean = js.native
+  
+  /** Sets or retrieves the media type. */
+  /* standard dom */
   var media: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -40,7 +43,8 @@ trait HTMLStyleElement
   
   /**
     * Retrieves the CSS language in which the style sheet is written.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var `type`: java.lang.String = js.native
 }

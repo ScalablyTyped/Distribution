@@ -9,7 +9,7 @@ object intersectionInfoMod {
   
   @JSImport("babylonjs/Collisions/intersectionInfo", "IntersectionInfo")
   @js.native
-  class IntersectionInfo protected () extends StObject {
+  open class IntersectionInfo protected () extends StObject {
     def this(bu: Nullable[Double], bv: Nullable[Double], distance: Double) = this()
     
     var bu: Nullable[Double] = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "InertialMouse")
 @js.native
-class InertialMouse () extends StObject {
+open class InertialMouse () extends StObject {
   
   def damp(): this.type = js.native
   

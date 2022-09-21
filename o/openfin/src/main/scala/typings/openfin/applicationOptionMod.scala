@@ -63,7 +63,7 @@ object applicationOptionMod {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ShortcutOverride*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ShortcutOverride*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setDefaultViewOptions(value: ViewCreationOptions): Self = StObject.set(x, "defaultViewOptions", value.asInstanceOf[js.Any])
       
@@ -142,7 +142,7 @@ object applicationOptionMod {
     
     var cornerRounding: js.UndefOr[CornerRounding] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
     
@@ -241,7 +241,7 @@ object applicationOptionMod {
       
       inline def setCornerRoundingUndefined: Self = StObject.set(x, "cornerRounding", js.undefined)
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -249,7 +249,7 @@ object applicationOptionMod {
       
       inline def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
       
-      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
+      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value*))
       
       inline def setDefaultCentered(value: Boolean): Self = StObject.set(x, "defaultCentered", value.asInstanceOf[js.Any])
       
@@ -315,7 +315,7 @@ object applicationOptionMod {
       
       inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      inline def setPreloadScriptsVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
       
       inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       

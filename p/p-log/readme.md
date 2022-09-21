@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-log
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Log the value/error of a promise
@@ -10,10 +10,10 @@ Log the value/error of a promise
 | ------------------ | :-------------: |
 | Full name          | p-log |
 | Keywords           | promise, log, logging, logger, debug, debugging, console, print, tap, catch, error, rejection, chain, pipeline, thunk, function, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 2484 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1100.6666666666667 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-log#readme)

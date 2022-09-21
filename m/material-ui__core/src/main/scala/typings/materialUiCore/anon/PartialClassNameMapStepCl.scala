@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Step/Step.StepClasskey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Step/Step.StepClasskey>> */
 trait PartialClassNameMapStepCl extends StObject {
   
   var alternativeLabel: js.UndefOr[String] = js.undefined
+  
+  var completed: js.UndefOr[String] = js.undefined
   
   var horizontal: js.UndefOr[String] = js.undefined
   
@@ -27,6 +29,10 @@ object PartialClassNameMapStepCl {
     inline def setAlternativeLabel(value: String): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
     
     inline def setAlternativeLabelUndefined: Self = StObject.set(x, "alternativeLabel", js.undefined)
+    
+    inline def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    
+    inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

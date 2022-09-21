@@ -2,7 +2,6 @@ package typings.dockerode.mod
 
 import typings.dockerode.anon.Details
 import typings.dockerode.anon.NameString
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait DockerVersion extends StObject {
   
   var Arch: String
   
-  var BuildTime: Date
+  var BuildTime: js.Date
   
   var Components: js.Array[Details]
   
@@ -36,7 +35,7 @@ object DockerVersion {
   inline def apply(
     ApiVersion: String,
     Arch: String,
-    BuildTime: Date,
+    BuildTime: js.Date,
     Components: js.Array[Details],
     GitCommit: String,
     GoVersion: String,
@@ -56,11 +55,11 @@ object DockerVersion {
     
     inline def setArch(value: String): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
-    inline def setBuildTime(value: Date): Self = StObject.set(x, "BuildTime", value.asInstanceOf[js.Any])
+    inline def setBuildTime(value: js.Date): Self = StObject.set(x, "BuildTime", value.asInstanceOf[js.Any])
     
     inline def setComponents(value: js.Array[Details]): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsVarargs(value: Details*): Self = StObject.set(x, "Components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Details*): Self = StObject.set(x, "Components", js.Array(value*))
     
     inline def setGitCommit(value: String): Self = StObject.set(x, "GitCommit", value.asInstanceOf[js.Any])
     

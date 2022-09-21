@@ -1,17 +1,16 @@
 package typings.serviceworkerWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("serviceworker-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("serviceworker-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
-    extends StObject
-       with Plugin {
+  open class ^[T] protected () extends StObject {
     def this(options: ServiceWorkerWebpackPluginOptions[T]) = this()
   }
   
@@ -30,7 +29,7 @@ object mod {
       
       inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value*))
     }
   }
   
@@ -39,7 +38,7 @@ object mod {
     var assets: js.Array[String]
     
     var jsonStats: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats.ToJsonOutput */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats.ToJsonOutput */ Any
       ] = js.undefined
   }
   object ServiceWorkerOption {
@@ -53,10 +52,10 @@ object mod {
       
       inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value*))
       
       inline def setJsonStats(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats.ToJsonOutput */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats.ToJsonOutput */ Any
       ): Self = StObject.set(x, "jsonStats", value.asInstanceOf[js.Any])
       
       inline def setJsonStatsUndefined: Self = StObject.set(x, "jsonStats", js.undefined)
@@ -132,7 +131,7 @@ object mod {
       
       inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -142,7 +141,7 @@ object mod {
       
       inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
       
-      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
+      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
       
       inline def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
       

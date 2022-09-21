@@ -18,18 +18,9 @@ object geo {
     */
   @JSGlobal("H.geo.AbstractGeometry")
   @js.native
-  class AbstractGeometry ()
+  open class AbstractGeometry ()
     extends StObject
        with typings.heremaps.H.geo.AbstractGeometry {
-    
-    /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
     
     /**
       * Returns the bounding rectangle of the geometry.
@@ -37,6 +28,13 @@ object geo {
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   /**
@@ -72,7 +70,7 @@ object geo {
     * @param opt_ctx {H.geo.AltitudeContext=} - An optional altitude context for all altitudes contained in this LineString.
     * @throws {H.lang.InvalidArgumentError} - in case of invalid lat, lng, alt values
     */
-  class LineString ()
+  open class LineString ()
     extends StObject
        with typings.heremaps.H.geo.LineString {
     def this(opt_latLngAlts: js.Array[Double]) = this()
@@ -80,20 +78,18 @@ object geo {
     def this(opt_latLngAlts: Unit, opt_ctx: AltitudeContext) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   object LineString {
     
@@ -122,7 +118,7 @@ object geo {
   
   @JSGlobal("H.geo.MultiGeometry")
   @js.native
-  class MultiGeometry[T] protected ()
+  open class MultiGeometry[T] protected ()
     extends StObject
        with typings.heremaps.H.geo.MultiGeometry[T] {
     /**
@@ -133,25 +129,23 @@ object geo {
     def this(geometries: js.Array[T]) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   @JSGlobal("H.geo.MultiLineString")
   @js.native
-  class MultiLineString protected ()
+  open class MultiLineString protected ()
     extends StObject
        with typings.heremaps.H.geo.MultiLineString {
     /**
@@ -162,59 +156,46 @@ object geo {
     def this(lineStrings: js.Array[typings.heremaps.H.geo.LineString]) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   @JSGlobal("H.geo.MultiPoint")
   @js.native
-  class MultiPoint ()
+  open class MultiPoint ()
     extends StObject
        with typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Point] {
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   @JSGlobal("H.geo.MultiPolygon")
   @js.native
-  class MultiPolygon ()
+  open class MultiPolygon ()
     extends StObject
        with typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Polygon] {
-    
-    /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
     
     /**
       * Returns the bounding rectangle of the geometry.
@@ -222,6 +203,13 @@ object geo {
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   /**
@@ -240,7 +228,7 @@ object geo {
     * @param opt_projection {H.geo.IProjection=} - An object representing the projection to use, the default is spherical Mercator H.geo.mercator
     * @param opt_sizeAtLevelZero {number=} A value indicating the size of a tile representation of the world in pixels at zoom level 0, the default is 256
     */
-  class PixelProjection ()
+  open class PixelProjection ()
     extends StObject
        with typings.heremaps.H.geo.PixelProjection {
     def this(opt_projection: IProjection) = this()
@@ -257,7 +245,7 @@ object geo {
     */
   @JSGlobal("H.geo.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.heremaps.H.geo.Point {
     /**
@@ -273,15 +261,6 @@ object geo {
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude, opt_ctx: AltitudeContext) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
@@ -293,6 +272,13 @@ object geo {
     
     /* CompleteClass */
     var lng: Longitude = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   object Point {
     
@@ -328,7 +314,7 @@ object geo {
     */
   @JSGlobal("H.geo.Polygon")
   @js.native
-  class Polygon protected ()
+  open class Polygon protected ()
     extends StObject
        with typings.heremaps.H.geo.Polygon {
     def this(exterior: typings.heremaps.H.geo.LineString) = this()
@@ -338,20 +324,18 @@ object geo {
     ) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   
   /**
@@ -359,7 +343,7 @@ object geo {
     */
   @JSGlobal("H.geo.Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends StObject
        with typings.heremaps.H.geo.Rect {
     /**
@@ -372,20 +356,18 @@ object geo {
     def this(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude) = this()
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    /* CompleteClass */
-    override def equals(other: js.Any): Boolean = js.native
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     /* CompleteClass */
     override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    /* CompleteClass */
+    override def toGeoJSON(): js.Object = js.native
   }
   object Rect {
     

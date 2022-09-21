@@ -53,6 +53,7 @@ import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -75,8 +76,6 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -86,6 +85,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -99,17 +99,17 @@ trait PartialBackdropProps extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var addEndListener: js.UndefOr[js.Any] = js.undefined
+  var addEndListener: js.UndefOr[Any] = js.undefined
   
   var appear: js.UndefOr[Boolean] = js.undefined
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
@@ -127,21 +127,21 @@ trait PartialBackdropProps extends StObject {
   
   var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
@@ -155,11 +155,11 @@ trait PartialBackdropProps extends StObject {
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
@@ -171,13 +171,13 @@ trait PartialBackdropProps extends StObject {
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-required`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
@@ -187,7 +187,7 @@ trait PartialBackdropProps extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
@@ -229,6 +229,8 @@ trait PartialBackdropProps extends StObject {
   
   var dir: js.UndefOr[String] = js.undefined
   
+  var disableStrictModeCompat: js.UndefOr[Boolean] = js.undefined
+  
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
   var enter: js.UndefOr[Boolean] = js.undefined
@@ -239,11 +241,11 @@ trait PartialBackdropProps extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var in: js.UndefOr[js.Any] = js.undefined
+  var in: js.UndefOr[Boolean] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
-  var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+  var innerRef: js.UndefOr[typings.react.mod.Ref[Any]] = js.undefined
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
@@ -263,7 +265,7 @@ trait PartialBackdropProps extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
-  var mountOnEnter: js.UndefOr[js.Any] = js.undefined
+  var mountOnEnter: js.UndefOr[Any] = js.undefined
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
@@ -285,7 +287,7 @@ trait PartialBackdropProps extends StObject {
   
   var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onClick: js.UndefOr[ReactEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
@@ -325,19 +327,19 @@ trait PartialBackdropProps extends StObject {
   
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onEnter: js.UndefOr[js.Any] = js.undefined
+  var onEnter: js.UndefOr[Any] = js.undefined
   
-  var onEntered: js.UndefOr[js.Any] = js.undefined
+  var onEntered: js.UndefOr[Any] = js.undefined
   
-  var onEntering: js.UndefOr[js.Any] = js.undefined
+  var onEntering: js.UndefOr[Any] = js.undefined
   
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onExit: js.UndefOr[js.Any] = js.undefined
+  var onExit: js.UndefOr[Any] = js.undefined
   
-  var onExited: js.UndefOr[js.Any] = js.undefined
+  var onExited: js.UndefOr[Any] = js.undefined
   
-  var onExiting: js.UndefOr[js.Any] = js.undefined
+  var onExiting: js.UndefOr[Any] = js.undefined
   
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
@@ -445,11 +447,13 @@ trait PartialBackdropProps extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  var ref: js.UndefOr[typings.react.mod.Ref[Any]] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
@@ -465,19 +469,17 @@ trait PartialBackdropProps extends StObject {
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[typings.materialUiCore.createMuiThemeMod.Theme] = js.undefined
-  
-  var timeout: js.UndefOr[js.Any] = js.undefined
+  var timeout: js.UndefOr[Any] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
-  var transitionDuration: js.UndefOr[js.Any] = js.undefined
+  var transitionDuration: js.UndefOr[Any] = js.undefined
   
   var translate: js.UndefOr[yes | no] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
-  var unmountOnExit: js.UndefOr[js.Any] = js.undefined
+  var unmountOnExit: js.UndefOr[Any] = js.undefined
   
   var unselectable: js.UndefOr[on | off] = js.undefined
   
@@ -500,7 +502,7 @@ object PartialBackdropProps {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAddEndListener(value: js.Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
+    inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
     
     inline def setAddEndListenerUndefined: Self = StObject.set(x, "addEndListener", js.undefined)
     
@@ -512,7 +514,7 @@ object PartialBackdropProps {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -520,7 +522,7 @@ object PartialBackdropProps {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -556,7 +558,7 @@ object PartialBackdropProps {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -568,7 +570,7 @@ object PartialBackdropProps {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -576,7 +578,7 @@ object PartialBackdropProps {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -584,7 +586,7 @@ object PartialBackdropProps {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -612,15 +614,15 @@ object PartialBackdropProps {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -644,7 +646,7 @@ object PartialBackdropProps {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -654,7 +656,7 @@ object PartialBackdropProps {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -674,7 +676,7 @@ object PartialBackdropProps {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -754,11 +756,15 @@ object PartialBackdropProps {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setDisableStrictModeCompat(value: Boolean): Self = StObject.set(x, "disableStrictModeCompat", value.asInstanceOf[js.Any])
+    
+    inline def setDisableStrictModeCompatUndefined: Self = StObject.set(x, "disableStrictModeCompat", js.undefined)
     
     inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
@@ -780,17 +786,17 @@ object PartialBackdropProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setIn(value: js.Any): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: typings.react.mod.Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
     inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
@@ -832,7 +838,7 @@ object PartialBackdropProps {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    inline def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
+    inline def setMountOnEnter(value: Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
     
     inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
     
@@ -860,7 +866,7 @@ object PartialBackdropProps {
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
@@ -876,7 +882,7 @@ object PartialBackdropProps {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -956,15 +962,15 @@ object PartialBackdropProps {
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+    inline def setOnEntered(value: Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
     
     inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
-    inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+    inline def setOnEntering(value: Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
     
     inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
@@ -972,19 +978,19 @@ object PartialBackdropProps {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+    inline def setOnExit(value: Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+    inline def setOnExited(value: Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
     
     inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
-    inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+    inline def setOnExiting(value: Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
     
     inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
@@ -1196,6 +1202,14 @@ object PartialBackdropProps {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
+    inline def setRef(value: typings.react.mod.Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1204,7 +1218,7 @@ object PartialBackdropProps {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -1236,11 +1250,7 @@ object PartialBackdropProps {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTheme(value: typings.materialUiCore.createMuiThemeMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    
-    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    
-    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
@@ -1248,7 +1258,7 @@ object PartialBackdropProps {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTransitionDuration(value: js.Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
@@ -1260,7 +1270,7 @@ object PartialBackdropProps {
     
     inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
     
-    inline def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+    inline def setUnmountOnExit(value: Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
     
     inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     

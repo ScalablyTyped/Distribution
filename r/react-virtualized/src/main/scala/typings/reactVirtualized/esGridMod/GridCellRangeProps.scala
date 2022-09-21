@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridCellRangeProps extends StObject {
   
-  var cellCache: Map[js.Any]
+  var cellCache: Map[Any]
   
   var cellRenderer: GridCellRenderer
   
@@ -30,7 +30,7 @@ trait GridCellRangeProps extends StObject {
   
   var isScrollingOptOut: Boolean
   
-  var parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent
+  var parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent
   
   var rowSizeAndPositionManager: CellSizeAndPositionManager
   
@@ -53,7 +53,7 @@ trait GridCellRangeProps extends StObject {
 object GridCellRangeProps {
   
   inline def apply(
-    cellCache: Map[js.Any],
+    cellCache: Map[Any],
     cellRenderer: /* props */ GridCellProps => ReactNode,
     columnSizeAndPositionManager: CellSizeAndPositionManager,
     columnStartIndex: Double,
@@ -62,7 +62,7 @@ object GridCellRangeProps {
     horizontalOffsetAdjustment: Double,
     isScrolling: Boolean,
     isScrollingOptOut: Boolean,
-    parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent,
+    parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent,
     rowSizeAndPositionManager: CellSizeAndPositionManager,
     rowStartIndex: Double,
     rowStopIndex: Double,
@@ -79,7 +79,7 @@ object GridCellRangeProps {
   
   extension [Self <: GridCellRangeProps](x: Self) {
     
-    inline def setCellCache(value: Map[js.Any]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
+    inline def setCellCache(value: Map[Any]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
     
     inline def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
@@ -97,7 +97,7 @@ object GridCellRangeProps {
     
     inline def setIsScrollingOptOut(value: Boolean): Self = StObject.set(x, "isScrollingOptOut", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setRowSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "rowSizeAndPositionManager", value.asInstanceOf[js.Any])
     

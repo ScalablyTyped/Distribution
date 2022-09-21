@@ -9,7 +9,7 @@ trait DescribeLabelingJobResponse extends StObject {
   /**
     * The date and time that the labeling job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * If the job failed, the reason that it failed. 
@@ -74,15 +74,15 @@ trait DescribeLabelingJobResponse extends StObject {
   /**
     * The date and time that the labeling job was last updated.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
   
   /**
-    * The location of the job's output data and the AWS Key Management Service key ID for the key used to encrypt the output data, if any.
+    * The location of the job's output data and the Amazon Web Services Key Management Service key ID for the key used to encrypt the output data, if any.
     */
   var OutputConfig: LabelingJobOutputConfig
   
   /**
-    * The Amazon Resource Name (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during data labeling.
+    * The Amazon Resource Name (ARN) that SageMaker assumes to perform tasks on your behalf during data labeling.
     */
   var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
@@ -92,14 +92,14 @@ trait DescribeLabelingJobResponse extends StObject {
   var StoppingConditions: js.UndefOr[LabelingJobStoppingConditions] = js.undefined
   
   /**
-    * An array of key/value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web Services Resources.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 object DescribeLabelingJobResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     HumanTaskConfig: HumanTaskConfig,
     InputConfig: LabelingJobInputConfig,
     JobReferenceCode: JobReferenceCode,
@@ -107,7 +107,7 @@ object DescribeLabelingJobResponse {
     LabelingJobArn: LabelingJobArn,
     LabelingJobName: LabelingJobName,
     LabelingJobStatus: LabelingJobStatus,
-    LastModifiedTime: Timestamp,
+    LastModifiedTime: js.Date,
     OutputConfig: LabelingJobOutputConfig,
     RoleArn: RoleArn
   ): DescribeLabelingJobResponse = {
@@ -117,7 +117,7 @@ object DescribeLabelingJobResponse {
   
   extension [Self <: DescribeLabelingJobResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object DescribeLabelingJobResponse {
     
     inline def setLabelingJobStatus(value: LabelingJobStatus): Self = StObject.set(x, "LabelingJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setOutputConfig(value: LabelingJobOutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
@@ -167,6 +167,6 @@ object DescribeLabelingJobResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

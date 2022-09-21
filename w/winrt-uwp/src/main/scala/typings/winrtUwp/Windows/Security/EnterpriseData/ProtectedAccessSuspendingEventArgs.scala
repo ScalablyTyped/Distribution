@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Deferral
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProtectedAccessSuspendingEventArgs extends StObject {
   
   /** DateTime at which content protection will be suspended. The app can subtract DateTime.Now from this value to determine how much time there is to perform any processing before the suspension occurs. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Gets the Deferral object that manages the protection suspension. The app must call Deferral.Complete before it returns from the event handler.
@@ -24,14 +23,14 @@ trait ProtectedAccessSuspendingEventArgs extends StObject {
 }
 object ProtectedAccessSuspendingEventArgs {
   
-  inline def apply(deadline: Date, getDeferral: () => Deferral, identities: IVectorView[String]): ProtectedAccessSuspendingEventArgs = {
+  inline def apply(deadline: js.Date, getDeferral: () => Deferral, identities: IVectorView[String]): ProtectedAccessSuspendingEventArgs = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), identities = identities.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedAccessSuspendingEventArgs]
   }
   
   extension [Self <: ProtectedAccessSuspendingEventArgs](x: Self) {
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

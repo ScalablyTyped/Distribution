@@ -30,37 +30,29 @@ trait ojButtonsetOne
   
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[full | half | outlined], 
-      js.Any
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[full | half | outlined], 
-      js.Any
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: focusManagementChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: focusManagementChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -70,7 +62,7 @@ trait ojButtonsetOne
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -80,19 +72,19 @@ trait ojButtonsetOne
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -115,34 +107,30 @@ trait ojButtonsetOne
   @JSName("getProperty")
   def getProperty_value(property: value): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any = js.native
   
-  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], js.Any]) | Null = js.native
+  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], Any]) | Null = js.native
   
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], js.Any]) | Null = js.native
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], Any]) | Null = js.native
   
-  var onFocusManagementChanged: (js.Function1[/* event */ JetElementCustomEvent[oneTabstop | none], js.Any]) | Null = js.native
+  var onFocusManagementChanged: (js.Function1[/* event */ JetElementCustomEvent[oneTabstop | none], Any]) | Null = js.native
   
   var onValueChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
   def setProperties(properties: ojButtonsetOneSettablePropertiesLenient): Unit = js.native
   
-  def setProperty(property: chroming, value: full): Unit = js.native
-  def setProperty(property: chroming, value: half): Unit = js.native
-  def setProperty(property: chroming, value: outlined): Unit = js.native
-  def setProperty(property: display, value: all): Unit = js.native
-  def setProperty(property: display, value: icons): Unit = js.native
-  def setProperty(property: focusManagement, value: none): Unit = js.native
-  def setProperty(property: focusManagement, value: oneTabstop): Unit = js.native
+  def setProperty(property: chroming, value: full | half | outlined): Unit = js.native
+  def setProperty(property: display, value: all | icons): Unit = js.native
+  def setProperty(property: focusManagement, value: oneTabstop | none): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_value(property: value, value: js.Any): Unit = js.native
+  def setProperty_value(property: value, value: Any): Unit = js.native
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

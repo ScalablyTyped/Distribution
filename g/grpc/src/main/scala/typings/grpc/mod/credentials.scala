@@ -1,6 +1,6 @@
 package typings.grpc.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object credentials {
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
-  inline def combineCallCredentials(credentials: CallCredentials*): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(credentials.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
+  inline def combineCallCredentials(credentials: CallCredentials*): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(credentials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CallCredentials]
   
   /**
     * Combine a ChannelCredentials with any number of CallCredentials into a single
@@ -25,7 +25,7 @@ object credentials {
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
-  inline def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(channelCredential.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(List(channelCredential.asInstanceOf[js.Any]).`++`(credentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ChannelCredentials]
   
   /**
     * Create a gRPC credential from a Google credential object.

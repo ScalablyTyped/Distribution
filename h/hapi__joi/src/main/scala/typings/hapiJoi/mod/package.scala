@@ -1,28 +1,27 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BasicType = scala.Boolean | scala.Double | java.lang.String | js.Array[js.Any] | js.Object | scala.Null
+type BasicType = Boolean | Double | String | js.Array[Any] | js.Object | Null
 
-type CoerceFunction = js.Function2[
-/* value */ js.Any, 
-/* helpers */ typings.hapiJoi.mod.CustomHelpers[js.Any], 
-typings.hapiJoi.mod.CoerceResult]
+type CoerceFunction = js.Function2[/* value */ Any, /* helpers */ CustomHelpers[Any], CoerceResult]
 
-type ComparatorFunction = js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Boolean]
+type ComparatorFunction = js.Function2[/* a */ Any, /* b */ Any, Boolean]
 
-type CustomValidator[V] = js.Function2[/* value */ V, /* helpers */ typings.hapiJoi.mod.CustomHelpers[js.Any], V]
+type CustomValidator[V] = js.Function2[/* value */ V, /* helpers */ CustomHelpers[Any], V]
 
-type ExtensionBoundSchema = typings.hapiJoi.mod.Schema & typings.hapiJoi.mod.SchemaInternals
+type ExtensionBoundSchema = Schema & SchemaInternals
 
-type ExtensionFactory = js.Function1[/* joi */ typings.hapiJoi.mod.Root, typings.hapiJoi.mod.Extension]
+type ExtensionFactory = js.Function1[/* joi */ Root, Extension]
 
-type ExternalValidationFunction = js.Function1[/* value */ js.Any, js.Any]
+type ExternalValidationFunction = js.Function1[/* value */ Any, Any]
 
-type LanguageMessages = typings.std.Record[java.lang.String, java.lang.String]
+type LanguageMessages = Record[String, String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.hapiJoi.mod.AnySchema
@@ -33,21 +32,19 @@ type LanguageMessages = typings.std.Record[java.lang.String, java.lang.String]
   - typings.hapiJoi.mod.DateSchema
   - typings.hapiJoi.mod.FunctionSchema
   - typings.hapiJoi.mod.NumberSchema
-  - typings.hapiJoi.mod.ObjectSchema[js.Any]
+  - typings.hapiJoi.mod.ObjectSchema[scala.Any]
   - typings.hapiJoi.mod.StringSchema
   - typings.hapiJoi.mod.LinkSchema
   - typings.hapiJoi.mod.SymbolSchema
 */
-type Schema = typings.hapiJoi.mod._Schema | typings.hapiJoi.mod.ObjectSchema[js.Any]
+type Schema = _Schema | ObjectSchema[Any]
 
-type SchemaFunction = js.Function1[/* schema */ typings.hapiJoi.mod.Schema, typings.hapiJoi.mod.Schema]
+type SchemaFunction = js.Function1[/* schema */ Schema, Schema]
 
-type SchemaLike = java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null | typings.hapiJoi.mod.Schema | typings.hapiJoi.mod.SchemaMap[js.Any]
+type SchemaLike = String | Double | Boolean | js.Object | Null | Schema | SchemaMap[Any]
 
 type SchemaMap[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof TSchema ]:? @hapi/joi.@hapi/joi.SchemaLike | std.Array<@hapi/joi.@hapi/joi.SchemaLike>}
-  */ typings.hapiJoi.hapiJoiStrings.SchemaMap & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.hapiJoi.hapiJoiStrings.SchemaMap & TopLevel[Any]
 
-type ValidationErrorFunction = js.Function1[
-/* errors */ js.Array[typings.hapiJoi.mod.ErrorReport], 
-java.lang.String | typings.hapiJoi.mod.ValidationErrorItem | typings.std.Error]
+type ValidationErrorFunction = js.Function1[/* errors */ js.Array[ErrorReport], String | ValidationErrorItem | js.Error]

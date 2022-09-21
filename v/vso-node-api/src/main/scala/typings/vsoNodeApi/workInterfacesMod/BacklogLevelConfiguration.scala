@@ -74,13 +74,13 @@ object BacklogLevelConfiguration {
     
     inline def setAddPanelFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "addPanelFields", value.asInstanceOf[js.Any])
     
-    inline def setAddPanelFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "addPanelFields", js.Array(value :_*))
+    inline def setAddPanelFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "addPanelFields", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColumnFields(value: js.Array[BacklogColumn]): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     
-    inline def setColumnFieldsVarargs(value: BacklogColumn*): Self = StObject.set(x, "columnFields", js.Array(value :_*))
+    inline def setColumnFieldsVarargs(value: BacklogColumn*): Self = StObject.set(x, "columnFields", js.Array(value*))
     
     inline def setDefaultWorkItemType(value: WorkItemTypeReference): Self = StObject.set(x, "defaultWorkItemType", value.asInstanceOf[js.Any])
     
@@ -94,6 +94,6 @@ object BacklogLevelConfiguration {
     
     inline def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
+    inline def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value*))
   }
 }

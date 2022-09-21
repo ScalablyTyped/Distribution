@@ -27,6 +27,9 @@ trait Zone extends StObject {
   /** User notes on how to apply this zone in the container. */
   var notes: js.UndefOr[String] = js.undefined
   
+  /** Additional parameters. */
+  var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
+  
   /** GTM Zone's API relative path. */
   var path: js.UndefOr[String] = js.undefined
   
@@ -63,7 +66,7 @@ object Zone {
     
     inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
     
-    inline def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
+    inline def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value*))
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
@@ -80,6 +83,12 @@ object Zone {
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    
+    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

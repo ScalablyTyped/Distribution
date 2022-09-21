@@ -29,7 +29,7 @@ object DescribeLocalGatewayRouteTablesResult {
     
     inline def setLocalGatewayRouteTablesUndefined: Self = StObject.set(x, "LocalGatewayRouteTables", js.undefined)
     
-    inline def setLocalGatewayRouteTablesVarargs(value: LocalGatewayRouteTable*): Self = StObject.set(x, "LocalGatewayRouteTables", js.Array(value :_*))
+    inline def setLocalGatewayRouteTablesVarargs(value: LocalGatewayRouteTable*): Self = StObject.set(x, "LocalGatewayRouteTables", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

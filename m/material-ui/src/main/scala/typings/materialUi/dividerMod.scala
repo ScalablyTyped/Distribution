@@ -10,10 +10,10 @@ object dividerMod {
   
   @JSImport("material-ui/Divider", JSImport.Default)
   @js.native
-  class default () extends Divider
+  open class default () extends Divider
   
   @JSImport("material-ui/Divider", "Divider")
   @js.native
-  class Divider ()
-    extends Component[DividerProps, js.Object, js.Any]
+  open class Divider ()
+    extends Component[DividerProps, js.Object, Any]
 }

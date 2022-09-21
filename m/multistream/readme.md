@@ -1,7 +1,7 @@
 
 # Scala.js typings for multistream
 
-Typings are for version 2.1
+Typings are for version 4.1
 
 ## Library description:
 A stream that emits multiple other streams one after another (streams3)
@@ -10,10 +10,10 @@ A stream that emits multiple other streams one after another (streams3)
 | ------------------ | :-------------: |
 | Full name          | multistream |
 | Keywords           | combine streams, join streams, concat streams, multiple streams, combine, join, concat, multiple, file stream, append, append streams, combiner, joiner |
-| # releases         | 4 |
-| # dependents       | 120 |
-| # downloads        | 14617310 |
-| # stars            | 7 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4611090.666666667 |
+| # stars            | 271.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/multistream)

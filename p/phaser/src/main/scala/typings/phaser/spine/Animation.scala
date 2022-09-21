@@ -56,10 +56,10 @@ object Animation {
     
     inline def setTimelineIds(value: js.Array[Boolean]): Self = StObject.set(x, "timelineIds", value.asInstanceOf[js.Any])
     
-    inline def setTimelineIdsVarargs(value: Boolean*): Self = StObject.set(x, "timelineIds", js.Array(value :_*))
+    inline def setTimelineIdsVarargs(value: Boolean*): Self = StObject.set(x, "timelineIds", js.Array(value*))
     
     inline def setTimelines(value: js.Array[Timeline]): Self = StObject.set(x, "timelines", value.asInstanceOf[js.Any])
     
-    inline def setTimelinesVarargs(value: Timeline*): Self = StObject.set(x, "timelines", js.Array(value :_*))
+    inline def setTimelinesVarargs(value: Timeline*): Self = StObject.set(x, "timelines", js.Array(value*))
   }
 }

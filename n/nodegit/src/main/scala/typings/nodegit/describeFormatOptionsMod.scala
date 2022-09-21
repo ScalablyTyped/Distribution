@@ -9,9 +9,9 @@ object describeFormatOptionsMod {
   
   @JSImport("nodegit/describe-format-options", "DescribeFormatOptions")
   @js.native
-  class DescribeFormatOptions ()
+  open class DescribeFormatOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var abbreviatedSize: js.UndefOr[Double] = js.native
     

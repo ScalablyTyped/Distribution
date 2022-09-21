@@ -8,7 +8,7 @@ trait GroupObjectsRequest extends StObject {
   
   /**
     * The object IDs of the objects to group. Only page elements can be grouped. There should be at least two page elements on the same page that are not already in another group. Some
-    * page elements, such as videos, tables and placeholder shapes cannot be grouped.
+    * page elements, such as videos, tables and placeholders cannot be grouped.
     */
   var childrenObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -32,7 +32,7 @@ object GroupObjectsRequest {
     
     inline def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
     
-    inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
+    inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value*))
     
     inline def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
     

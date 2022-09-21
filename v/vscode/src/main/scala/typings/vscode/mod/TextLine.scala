@@ -14,7 +14,7 @@ trait TextLine extends StObject {
   
   /**
     * Whether this line is whitespace only, shorthand
-    * for [TextLine.firstNonWhitespaceCharacterIndex](#TextLine.firstNonWhitespaceCharacterIndex) === [TextLine.text.length](#TextLine.text).
+    * for {@link TextLine.firstNonWhitespaceCharacterIndex} === {@link TextLine.text TextLine.text.length}.
     */
   val isEmptyOrWhitespace: Boolean
   

@@ -49,8 +49,8 @@ object mod {
   
   @JSImport("react-pointable", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PointableProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PointableProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -64,12 +64,12 @@ object mod {
     inline def defaultProps_=(x: TagName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type Pointable = Component[PointableProps, js.Object, js.Any]
+  type Pointable = Component[PointableProps, js.Object, Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because Already inherited
   - typings.react.mod.AriaAttributes because Already inherited
-  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, dangerouslySetInnerHTML, id, lang, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, max, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, height, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, method, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, target, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, min, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, media, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, name, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, width, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, href, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, crossOrigin, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, `type`, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ trait PointableProps
+  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, dangerouslySetInnerHTML, id, lang, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, max, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, height, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, method, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, target, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, min, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, media, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, fr, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, name, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, width, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, href, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, crossOrigin, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, `type`, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ trait PointableProps
     extends StObject
        with HTMLAttributes[Element] {
     
@@ -217,6 +217,8 @@ object mod {
     var fontWeight: js.UndefOr[Double | String] = js.undefined
     
     var format: js.UndefOr[Double | String] = js.undefined
+    
+    var fr: js.UndefOr[Double | String] = js.undefined
     
     var from: js.UndefOr[Double | String] = js.undefined
     
@@ -465,7 +467,7 @@ object mod {
     var tableValues: js.UndefOr[Double | String] = js.undefined
     
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any
       ] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
@@ -881,6 +883,10 @@ object mod {
       inline def setFormat(value: Double | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setFr(value: Double | String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+      
+      inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
       
       inline def setFrom(value: Double | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -1374,7 +1380,7 @@ object mod {
       
       inline def setTableValuesUndefined: Self = StObject.set(x, "tableValues", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       

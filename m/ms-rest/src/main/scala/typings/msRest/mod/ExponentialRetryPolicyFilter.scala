@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest", "ExponentialRetryPolicyFilter")
 @js.native
-class ExponentialRetryPolicyFilter protected () extends StObject {
+open class ExponentialRetryPolicyFilter protected () extends StObject {
   def this(retryCount: Double, retryInterval: Double, minRetryInterval: Double, maxRetryInterval: Double) = this()
 }

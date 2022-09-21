@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Overlay")
 @js.native
-class Overlay protected ()
+open class Overlay protected ()
   extends StObject
      with typings.heremaps.H.map.Overlay {
   /**

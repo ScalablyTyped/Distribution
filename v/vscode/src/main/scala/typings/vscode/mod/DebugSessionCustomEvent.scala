@@ -9,7 +9,7 @@ trait DebugSessionCustomEvent extends StObject {
   /**
     * Event specific information.
     */
-  val body: js.UndefOr[js.Any] = js.undefined
+  val body: Any
   
   /**
     * Type of event.
@@ -17,22 +17,20 @@ trait DebugSessionCustomEvent extends StObject {
   val event: String
   
   /**
-    * The [debug session](#DebugSession) for which the custom event was received.
+    * The {@link DebugSession debug session} for which the custom event was received.
     */
   val session: DebugSession
 }
 object DebugSessionCustomEvent {
   
-  inline def apply(event: String, session: DebugSession): DebugSessionCustomEvent = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+  inline def apply(body: Any, event: String, session: DebugSession): DebugSessionCustomEvent = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSessionCustomEvent]
   }
   
   extension [Self <: DebugSessionCustomEvent](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

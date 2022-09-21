@@ -861,7 +861,7 @@ object List {
     
     inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
     
-    inline def setListItemsVarargs(value: ListItem*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+    inline def setListItemsVarargs(value: ListItem*): Self = StObject.set(x, "listItems", js.Array(value*))
     
     inline def setListSelectedValue(value: String): Self = StObject.set(x, "listSelectedValue", value.asInstanceOf[js.Any])
     
@@ -977,7 +977,7 @@ object List {
     
     inline def setTabGroupLabelsUndefined: Self = StObject.set(x, "tabGroupLabels", js.undefined)
     
-    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value :_*))
+    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value*))
     
     inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

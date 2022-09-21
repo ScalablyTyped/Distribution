@@ -21,16 +21,12 @@ trait PlusVideoLivePusher extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoLivePusherEvents): Unit = js.native
-  def addEventListener(event: PlusVideoLivePusherEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: PlusVideoLivePusherEvents,
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: PlusVideoLivePusherEvents, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: PlusVideoLivePusherEvents, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoLivePusherEvents, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
@@ -114,7 +110,7 @@ trait PlusVideoLivePusher extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def stop(): Unit = js.native
-  def stop(options: js.Any): Unit = js.native
+  def stop(options: Any): Unit = js.native
   
   /**
     * 切换前后摄像头

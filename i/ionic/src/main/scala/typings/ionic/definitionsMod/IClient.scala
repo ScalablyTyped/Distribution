@@ -21,7 +21,7 @@ object IClient {
     config: IConfig,
     `do`: SuperAgentRequest => js.Promise[APIResponseSuccess],
     make: (HttpMethod, String) => js.Promise[Req],
-    paginate: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]
+    paginate: PaginateArgs[Any] => IPaginator[Any, PaginatorState]
   ): IClient = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))
     __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
@@ -36,6 +36,6 @@ object IClient {
     
     inline def setMake(value: (HttpMethod, String) => js.Promise[Req]): Self = StObject.set(x, "make", js.Any.fromFunction2(value))
     
-    inline def setPaginate(value: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]): Self = StObject.set(x, "paginate", js.Any.fromFunction1(value))
+    inline def setPaginate(value: PaginateArgs[Any] => IPaginator[Any, PaginatorState]): Self = StObject.set(x, "paginate", js.Any.fromFunction1(value))
   }
 }

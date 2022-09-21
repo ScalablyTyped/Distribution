@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelRotateSecretResponse extends StObject {
   
   /**
-    * The ARN of the secret for which rotation was canceled.
+    * The ARN of the secret.
     */
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret for which rotation was canceled.
+    * The name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
-    * The unique identifier of the version of the secret created during the rotation. This version might not be complete, and should be evaluated for possible deletion. At the very least, you should remove the VersionStage value AWSPENDING to enable this version to be deleted. Failing to clean up a cancelled rotation can block you from successfully starting future rotations.
+    * The unique identifier of the version of the secret created during the rotation. This version might not be complete, and should be evaluated for possible deletion. We recommend that you remove the VersionStage value AWSPENDING from this version so that Secrets Manager can delete it. Failing to clean up a cancelled rotation can block you from starting future rotations.
     */
   var VersionId: js.UndefOr[SecretVersionIdType] = js.undefined
 }

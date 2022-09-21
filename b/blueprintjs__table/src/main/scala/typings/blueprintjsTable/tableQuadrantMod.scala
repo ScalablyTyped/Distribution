@@ -7,11 +7,11 @@ import typings.blueprintjsTable.gridMod.Grid
 import typings.react.mod.CSSProperties
 import typings.react.mod.EventHandler
 import typings.react.mod.NativeUIEvent
+import typings.react.mod.Ref
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,12 +67,12 @@ object tableQuadrantMod {
   
   @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant")
   @js.native
-  class TableQuadrant protected ()
+  open class TableQuadrant protected ()
     extends AbstractComponent2[ITableQuadrantProps, js.Object, js.Object] {
     def this(props: ITableQuadrantProps) = this()
-    def this(props: ITableQuadrantProps, context: js.Any) = this()
+    def this(props: ITableQuadrantProps, context: Any) = this()
     
-    /* private */ var getQuadrantCssClass: js.Any = js.native
+    /* private */ var getQuadrantCssClass: Any = js.native
   }
   /* static members */
   object TableQuadrant {
@@ -96,27 +96,31 @@ object tableQuadrantMod {
       * A callback that receives a `ref` to the quadrant's body-wrapping element. Will need to be
       * provided only for the MAIN quadrant, because that quadrant contains the main table body.
       */
-    var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
+    var bodyRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
     
     /**
       * A callback that renders either all of or just frozen sections of the table body.
       */
-    def bodyRenderer(): Element = js.native
-    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Boolean): Element = js.native
-    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
-    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): Element = js.native
-    def bodyRenderer(quadrantType: QuadrantType): Element = js.native
-    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean): Element = js.native
-    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
-    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): Element = js.native
+    def bodyRenderer(quadrantType: QuadrantType): js.UndefOr[Element] = js.native
+    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean): js.UndefOr[Element] = js.native
+    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): js.UndefOr[Element] = js.native
+    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): js.UndefOr[Element] = js.native
     
     /**
       * A callback that renders either all of or just the frozen section of the column header.
       */
-    var columnHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenColumnsOnly */ js.UndefOr[Boolean], Element]] = js.native
+    var columnHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenColumnsOnly */ Boolean, js.UndefOr[Element]]] = js.native
+    
+    /**
+      * If `false`, hides the column headers.
+      *
+      * @default true
+      */
+    var enableColumnHeader: js.UndefOr[Boolean] = js.native
     
     /**
       * If `false`, hides the row headers and settings menu.
+      *
       * @default true
       */
     var enableRowHeader: js.UndefOr[Boolean] = js.native
@@ -130,7 +134,7 @@ object tableQuadrantMod {
     /**
       * A callback that renders the table menu (the rectangle in the top-left corner).
       */
-    var menuRenderer: js.UndefOr[js.Function0[Element]] = js.native
+    var menuRenderer: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.native
     
     /**
       * An optional callback invoked when the quadrant is scrolled via the scrollbar OR the trackpad/mouse wheel.
@@ -149,23 +153,23 @@ object tableQuadrantMod {
     /**
       * A callback that receives a `ref` to the quadrant's outermost element.
       */
-    var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
+    var quadrantRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
     
     /**
       * The quadrant type. Informs the values of the parameters that will be passed to the
       * `render...` callbacks, assuming an expected stacking order of the four quadrants.
       */
-    var quadrantType: js.UndefOr[QuadrantType] = js.native
+    var quadrantType: QuadrantType = js.native
     
     /**
       * A callback that renders either all of or just the frozen section of the row header.
       */
-    var rowHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenRowsOnly */ js.UndefOr[Boolean], Element]] = js.native
+    var rowHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenRowsOnly */ Boolean, js.UndefOr[Element]]] = js.native
     
     /**
       * A callback that receives a `ref` to the quadrant's scroll-container element.
       */
-    var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
+    var scrollContainerRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
     
     /**
       * CSS styles to apply to the quadrant's outermost element.

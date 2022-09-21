@@ -10,14 +10,13 @@ object spinnerBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Spinner/Spinner.base", "SpinnerBase")
   @js.native
-  class SpinnerBase protected ()
-    extends Component[ISpinnerProps, js.Any, js.Any] {
+  open class SpinnerBase protected () extends Component[ISpinnerProps, Any, Any] {
     def this(props: ISpinnerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ISpinnerProps, context: js.Any) = this()
+    def this(props: ISpinnerProps, context: Any) = this()
   }
   /* static members */
   object SpinnerBase {

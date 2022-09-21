@@ -10,6 +10,8 @@ trait Aud extends StObject {
   
   var aud: js.UndefOr[js.Array[String]] = js.undefined
   
+  var gracePeriod: js.UndefOr[Double] = js.undefined
+  
   var iss: js.UndefOr[js.Array[String]] = js.undefined
   
   var jti: js.UndefOr[String] = js.undefined
@@ -31,19 +33,23 @@ object Aud {
     
     inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
     
-    inline def setAlgVarargs(value: String*): Self = StObject.set(x, "alg", js.Array(value :_*))
+    inline def setAlgVarargs(value: String*): Self = StObject.set(x, "alg", js.Array(value*))
     
     inline def setAud(value: js.Array[String]): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
     inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
     
-    inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
+    inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value*))
+    
+    inline def setGracePeriod(value: Double): Self = StObject.set(x, "gracePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setGracePeriodUndefined: Self = StObject.set(x, "gracePeriod", js.undefined)
     
     inline def setIss(value: js.Array[String]): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
     
     inline def setIssUndefined: Self = StObject.set(x, "iss", js.undefined)
     
-    inline def setIssVarargs(value: String*): Self = StObject.set(x, "iss", js.Array(value :_*))
+    inline def setIssVarargs(value: String*): Self = StObject.set(x, "iss", js.Array(value*))
     
     inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
     
@@ -53,7 +59,7 @@ object Aud {
     
     inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
-    inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value :_*))
+    inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value*))
     
     inline def setVerifyAt(value: String | Double): Self = StObject.set(x, "verifyAt", value.asInstanceOf[js.Any])
     

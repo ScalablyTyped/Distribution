@@ -9,7 +9,7 @@ object trieMod {
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/tokenizer/trie", "Trie")
   @js.native
-  class Trie () extends StObject {
+  open class Trie () extends StObject {
     
     /**
       * Returns an array of all tokens starting with ss.

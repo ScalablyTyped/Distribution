@@ -18,7 +18,7 @@ object flattenConcurrentlyAtMostMod {
   
   @JSImport("xstream/extra/flattenConcurrentlyAtMost", "FlattenConcAMOperator")
   @js.native
-  class FlattenConcAMOperator[T] protected ()
+  open class FlattenConcAMOperator[T] protected ()
     extends StObject
        with Operator[Stream[T], T] {
     def this(n: Double, ins: Stream[Stream[T]]) = this()
@@ -26,17 +26,17 @@ object flattenConcurrentlyAtMostMod {
     /* CompleteClass */
     override def _c(): Unit = js.native
     
-    /* private */ var _d: js.Any = js.native
+    /* private */ var _d: Any = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
-    /* private */ var _l: js.Any = js.native
+    /* private */ var _l: Any = js.native
     
     /* CompleteClass */
     override def _n(v: Stream[T]): Unit = js.native
     
-    /* private */ var _seq: js.Any = js.native
+    /* private */ var _seq: Any = js.native
     
     /* CompleteClass */
     override def _start(listener: InternalListener[T]): Unit = js.native

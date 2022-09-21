@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AutomaticStopTimeMinutes = scala.Double
+type AutomaticStopTimeMinutes = Double
 
-type BoundedEnvironmentIdList = js.Array[typings.awsSdk.cloud9Mod.EnvironmentId]
+type BoundedEnvironmentIdList = js.Array[EnvironmentId]
 
 type ClientRequestToken = java.lang.String
 
@@ -16,7 +16,7 @@ type ClientRequestToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.CONNECT_SSM
   - java.lang.String
 */
-type ConnectionType = typings.awsSdk.cloud9Mod._ConnectionType | java.lang.String
+type ConnectionType = _ConnectionType | java.lang.String
 
 type EnvironmentArn = java.lang.String
 
@@ -24,7 +24,7 @@ type EnvironmentDescription = java.lang.String
 
 type EnvironmentId = java.lang.String
 
-type EnvironmentIdList = js.Array[typings.awsSdk.cloud9Mod.EnvironmentId]
+type EnvironmentIdList = js.Array[EnvironmentId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -34,11 +34,11 @@ type EnvironmentIdList = js.Array[typings.awsSdk.cloud9Mod.EnvironmentId]
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED
   - java.lang.String
 */
-type EnvironmentLifecycleStatus = typings.awsSdk.cloud9Mod._EnvironmentLifecycleStatus | java.lang.String
+type EnvironmentLifecycleStatus = _EnvironmentLifecycleStatus | java.lang.String
 
-type EnvironmentList = js.Array[typings.awsSdk.cloud9Mod.Environment]
+type EnvironmentList = js.Array[Environment]
 
-type EnvironmentMembersList = js.Array[typings.awsSdk.cloud9Mod.EnvironmentMember]
+type EnvironmentMembersList = js.Array[EnvironmentMember]
 
 type EnvironmentName = java.lang.String
 
@@ -52,25 +52,52 @@ type EnvironmentName = java.lang.String
   - typings.awsSdk.awsSdkStrings.deleting__
   - java.lang.String
 */
-type EnvironmentStatus = typings.awsSdk.cloud9Mod._EnvironmentStatus | java.lang.String
+type EnvironmentStatus = _EnvironmentStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ssh_
   - typings.awsSdk.awsSdkStrings.ec2_
   - java.lang.String
 */
-type EnvironmentType = typings.awsSdk.cloud9Mod._EnvironmentType | java.lang.String
+type EnvironmentType = _EnvironmentType | java.lang.String
+
+type ImageId = java.lang.String
 
 type InstanceType = java.lang.String
 
-type MaxResults = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLE
+  - typings.awsSdk.awsSdkStrings.DISABLE
+  - java.lang.String
+*/
+type ManagedCredentialsAction = _ManagedCredentialsAction | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED_ON_CREATE
+  - typings.awsSdk.awsSdkStrings.ENABLED_BY_OWNER
+  - typings.awsSdk.awsSdkStrings.DISABLED_BY_DEFAULT
+  - typings.awsSdk.awsSdkStrings.DISABLED_BY_OWNER
+  - typings.awsSdk.awsSdkStrings.DISABLED_BY_COLLABORATOR
+  - typings.awsSdk.awsSdkStrings.PENDING_REMOVAL_BY_COLLABORATOR
+  - typings.awsSdk.awsSdkStrings.PENDING_START_REMOVAL_BY_COLLABORATOR
+  - typings.awsSdk.awsSdkStrings.PENDING_REMOVAL_BY_OWNER
+  - typings.awsSdk.awsSdkStrings.PENDING_START_REMOVAL_BY_OWNER
+  - typings.awsSdk.awsSdkStrings.FAILED_REMOVAL_BY_COLLABORATOR
+  - typings.awsSdk.awsSdkStrings.FAILED_REMOVAL_BY_OWNER
+  - java.lang.String
+*/
+type ManagedCredentialsStatus = _ManagedCredentialsStatus | java.lang.String
+
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`read-write`
   - typings.awsSdk.awsSdkStrings.`read-only`
   - java.lang.String
 */
-type MemberPermissions = typings.awsSdk.cloud9Mod._MemberPermissions | java.lang.String
+type MemberPermissions = _MemberPermissions | java.lang.String
+
+type NullableBoolean = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.owner__
@@ -78,9 +105,9 @@ type MemberPermissions = typings.awsSdk.cloud9Mod._MemberPermissions | java.lang
   - typings.awsSdk.awsSdkStrings.`read-only`
   - java.lang.String
 */
-type Permissions = typings.awsSdk.cloud9Mod._Permissions | java.lang.String
+type Permissions = _Permissions | java.lang.String
 
-type PermissionsList = js.Array[typings.awsSdk.cloud9Mod.Permissions]
+type PermissionsList = js.Array[Permissions]
 
 type String = java.lang.String
 
@@ -88,13 +115,13 @@ type SubnetId = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.cloud9Mod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.cloud9Mod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type UserArn = java.lang.String
 
@@ -103,4 +130,4 @@ type UserArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloud9Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

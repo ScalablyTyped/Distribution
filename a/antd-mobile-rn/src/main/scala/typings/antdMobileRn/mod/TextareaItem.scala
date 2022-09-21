@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "TextareaItem")
 @js.native
-class TextareaItem protected () extends default {
+open class TextareaItem protected () extends default {
   def this(props: TextareaItemNativeProps) = this()
 }
 /* static members */

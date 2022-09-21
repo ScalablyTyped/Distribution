@@ -6,7 +6,6 @@ import typings.react.mod.ErrorInfo
 import typings.react.mod.ReactElement
 import typings.reactHotLoader.anon.Errors
 import typings.reactHotLoader.anon.PartialConfig
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,28 +18,28 @@ object mod {
   
   @JSImport("react-hot-loader", "AppContainer")
   @js.native
-  class AppContainer protected ()
-    extends Component[AppContainerProps & AppChildren, js.Object, js.Any] {
+  open class AppContainer protected ()
+    extends Component[AppContainerProps & AppChildren, js.Object, Any] {
     def this(props: AppContainerProps & AppChildren) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AppContainerProps & AppChildren, context: js.Any) = this()
+    def this(props: AppContainerProps & AppChildren, context: Any) = this()
   }
   
   inline def areComponentsEqual[T](typeA: ComponentType[T], typeB: ComponentType[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areComponentsEqual")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def cold[T](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cold")(component.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def hot(module: js.Any): js.Function2[
-    /* Component */ ComponentType[js.Any], 
+  inline def hot(module: Any): js.Function2[
+    /* Component */ ComponentType[Any], 
     /* props */ js.UndefOr[AppContainerProps], 
-    ComponentType[js.Any]
+    ComponentType[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hot")(module.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* Component */ ComponentType[js.Any], 
+    /* Component */ ComponentType[Any], 
     /* props */ js.UndefOr[AppContainerProps], 
-    ComponentType[js.Any]
+    ComponentType[Any]
   ]]
   
   inline def setConfig(config: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -137,7 +136,7 @@ object mod {
       * @param type {any} type being rendered. The first argument of React.createElement
       * @param displayName {string} type display name (if exists)
       */
-    def onComponentCreate(`type`: js.Any, displayName: String): js.Any
+    def onComponentCreate(`type`: Any, displayName: String): Any
     
     /**
       *
@@ -146,7 +145,7 @@ object mod {
       * @param {string} fileName - origin file
       * @return {any}
       */
-    def onComponentRegister(`type`: js.Any, uniqueLocalName: String, fileName: String): js.Any
+    def onComponentRegister(`type`: Any, uniqueLocalName: String, fileName: String): Any
     
     /**
       * keep render method unpatched, moving sideEffect to componentDidUpdate
@@ -184,8 +183,8 @@ object mod {
       ignoreComponents: Boolean,
       ignoreSFC: Boolean,
       logLevel: String,
-      onComponentCreate: (js.Any, String) => js.Any,
-      onComponentRegister: (js.Any, String, String) => js.Any,
+      onComponentCreate: (Any, String) => Any,
+      onComponentRegister: (Any, String, String) => Any,
       pureRender: Boolean,
       pureSFC: Boolean,
       reloadHooks: Boolean,
@@ -214,9 +213,9 @@ object mod {
       
       inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      inline def setOnComponentCreate(value: (js.Any, String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
+      inline def setOnComponentCreate(value: (Any, String) => Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
       
-      inline def setOnComponentRegister(value: (js.Any, String, String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
+      inline def setOnComponentRegister(value: (Any, String, String) => Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
       
       inline def setPureRender(value: Boolean): Self = StObject.set(x, "pureRender", value.asInstanceOf[js.Any])
       
@@ -232,37 +231,37 @@ object mod {
   
   trait ErrorReporterProps extends StObject {
     
-    var error: js.Any
+    var error: Any
   }
   object ErrorReporterProps {
     
-    inline def apply(error: js.Any): ErrorReporterProps = {
+    inline def apply(error: Any): ErrorReporterProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorReporterProps]
     }
     
     extension [Self <: ErrorReporterProps](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
   trait HotError extends StObject {
     
-    var error: Error
+    var error: js.Error
     
     var errorInfo: js.UndefOr[ErrorInfo] = js.undefined
   }
   object HotError {
     
-    inline def apply(error: Error): HotError = {
+    inline def apply(error: js.Error): HotError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[HotError]
     }
     
     extension [Self <: HotError](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
       

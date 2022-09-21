@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.ComponentQuery")
 @js.native
-class ComponentQuery ()
+open class ComponentQuery ()
   extends StObject
      with typings.senchaTouch.Ext.ComponentQuery
 /* static members */

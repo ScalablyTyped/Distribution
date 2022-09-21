@@ -13,20 +13,20 @@ trait TooltipOptions
   
   var classes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
   
   // () or string
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var hide: js.UndefOr[js.Any] = js.undefined
+  var hide: js.UndefOr[Any] = js.undefined
   
   // boolean, number, string or object
   var items: js.UndefOr[String | JQuery] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   // TODO
-  var show: js.UndefOr[js.Any] = js.undefined
+  var show: js.UndefOr[Any] = js.undefined
   
   // boolean, number, string or object
   var tooltipClass: js.UndefOr[String] = js.undefined
@@ -47,7 +47,7 @@ object TooltipOptions {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
@@ -55,7 +55,7 @@ object TooltipOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
@@ -63,11 +63,11 @@ object TooltipOptions {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setShow(value: js.Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     

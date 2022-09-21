@@ -35,7 +35,7 @@ trait CustomXMLSchemaCollection extends StObject {
   
   def AddCollection(SchemaCollection: CustomXMLSchemaCollection): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -46,7 +46,7 @@ trait CustomXMLSchemaCollection extends StObject {
   
   def NamespaceURI(Index: Double): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Validate(): Boolean = js.native
 }

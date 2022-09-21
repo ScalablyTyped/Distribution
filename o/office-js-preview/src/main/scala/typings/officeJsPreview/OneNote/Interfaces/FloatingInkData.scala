@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "floatingInk.toJSON()". */
+/** An interface describing the data returned by calling `floatingInk.toJSON()`. */
 trait FloatingInkData extends StObject {
   
   /**
-    *
     * Gets the ID of the FloatingInk object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the strokes of the FloatingInk object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var inkStrokes: js.UndefOr[js.Array[InkStrokeData]] = js.undefined
@@ -40,6 +40,6 @@ object FloatingInkData {
     
     inline def setInkStrokesUndefined: Self = StObject.set(x, "inkStrokes", js.undefined)
     
-    inline def setInkStrokesVarargs(value: InkStrokeData*): Self = StObject.set(x, "inkStrokes", js.Array(value :_*))
+    inline def setInkStrokesVarargs(value: InkStrokeData*): Self = StObject.set(x, "inkStrokes", js.Array(value*))
   }
 }

@@ -21,14 +21,14 @@ trait XSystemTransferable
     * @param aProcessId The argument aProcessId is a process identifier of the caller's process. The interface implementation must ensure that the system data
     * @returns The system dependent data object.; ;   **Notes:** Under Windows the returned any contains an unsigned long which represents a pointer to an IData
     */
-  def getData(aProcessId: SeqEquiv[Double]): js.Any
+  def getData(aProcessId: SeqEquiv[Double]): Any
 }
 object XSystemTransferable {
   
   inline def apply(
     acquire: () => Unit,
-    getData: SeqEquiv[Double] => js.Any,
-    queryInterface: `type` => js.Any,
+    getData: SeqEquiv[Double] => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSystemTransferable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction1(getData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -37,6 +37,6 @@ object XSystemTransferable {
   
   extension [Self <: XSystemTransferable](x: Self) {
     
-    inline def setGetData(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: SeqEquiv[Double] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
   }
 }

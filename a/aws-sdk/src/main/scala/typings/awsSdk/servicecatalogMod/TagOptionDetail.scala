@@ -22,6 +22,11 @@ trait TagOptionDetail extends StObject {
   var Key: js.UndefOr[TagOptionKey] = js.undefined
   
   /**
+    * The Amazon Web Services account Id of the owner account that created the TagOption.
+    */
+  var Owner: js.UndefOr[typings.awsSdk.servicecatalogMod.Owner] = js.undefined
+  
+  /**
     * The TagOption value.
     */
   var Value: js.UndefOr[TagOptionValue] = js.undefined
@@ -46,6 +51,10 @@ object TagOptionDetail {
     inline def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    
+    inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     inline def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

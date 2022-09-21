@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.jobs" : "3.0.20201111"
+      "@maxim_mazurok/gapi.client.jobs" : "4.0.20220802"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.jobs" : "3.0.20201111"
+      "@maxim_mazurok/gapi.client.jobs" : "4.0.20220802"
     }
   ],
   "compile-devDependencies" : [

@@ -8,5 +8,5 @@ object getBucketLoggingInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketLoggingInput", "GetBucketLoggingInput")
   @js.native
-  val GetBucketLoggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketLoggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

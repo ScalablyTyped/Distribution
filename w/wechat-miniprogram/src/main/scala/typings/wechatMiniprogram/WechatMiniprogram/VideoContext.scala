@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VideoContext extends StObject {
   
+  /** [VideoContext.exitBackgroundPlayback()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/VideoContext.exitBackgroundPlayback.html)
+    *
+    * 退出后台音频播放模式。
+    *
+    * 最低基础库： `2.14.3` */
+  def exitBackgroundPlayback(): Unit = js.native
+  
   /** [VideoContext.exitFullScreen()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/VideoContext.exitFullScreen.html)
     *
     * 退出全屏
@@ -44,6 +51,13 @@ trait VideoContext extends StObject {
     * 最低基础库： `1.4.0` */
   def playbackRate(/** 倍率，支持 0.5/0.8/1.0/1.25/1.5，2.6.3 起支持 2.0 倍速 */
   rate: Double): Unit = js.native
+  
+  /** [VideoContext.requestBackgroundPlayback()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/VideoContext.requestBackgroundPlayback.html)
+    *
+    * 进入后台音频播放模式。
+    *
+    * 最低基础库： `2.14.3` */
+  def requestBackgroundPlayback(): Unit = js.native
   
   /** [VideoContext.requestFullScreen(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/VideoContext.requestFullScreen.html)
     *

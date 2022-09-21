@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ForceTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var alpha: js.UndefOr[Double | SignalRef] = js.undefined
   
@@ -56,7 +56,7 @@ object ForceTransform {
     
     inline def setForcesUndefined: Self = StObject.set(x, "forces", js.undefined)
     
-    inline def setForcesVarargs(value: (Force | SignalRef)*): Self = StObject.set(x, "forces", js.Array(value :_*))
+    inline def setForcesVarargs(value: (Force | SignalRef)*): Self = StObject.set(x, "forces", js.Array(value*))
     
     inline def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,6 @@ package typings.nodeRedRegistry.mod
 import typings.node.eventsMod.EventEmitter
 import typings.nodeRedRegistry.nodeRedRegistryStrings.close
 import typings.nodeRedRegistry.nodeRedRegistryStrings.input
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,20 +28,20 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
   /**
     * Log an DEBUG level message
     */
-  def debug(msg: js.Any): Unit = js.native
+  def debug(msg: Any): Unit = js.native
   
   /**
     * Log an ERROR level message
     */
-  def error(logMessage: js.Any): Unit = js.native
-  def error(logMessage: js.Any, msg: NodeMessage): Unit = js.native
+  def error(logMessage: Any): Unit = js.native
+  def error(logMessage: Any, msg: NodeMessage): Unit = js.native
   
   var id: String = js.native
   
   /**
     * Log an INFO level message
     */
-  def log(msg: js.Any): Unit = js.native
+  def log(msg: Any): Unit = js.native
   
   /**
     * Log a metric event.
@@ -88,8 +87,11 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
     event: input,
     listener: js.Function3[
       /* msg */ NodeMessageInFlow, 
-      /* send */ js.Function1[/* msg */ NodeMessage | (js.Array[NodeMessage | Null]), Unit], 
-      /* done */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+      /* send */ js.Function1[
+        /* msg */ NodeMessage | (js.Array[NodeMessage | js.Array[NodeMessage] | Null]), 
+        Unit
+      ], 
+      /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
       Unit
     ]
   ): this.type = js.native
@@ -108,7 +110,7 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
     * @param msg A message or array of messages to send
     */
   def send(): Unit = js.native
-  def send(msg: js.Array[NodeMessage]): Unit = js.native
+  def send(msg: js.Array[NodeMessage | js.Array[NodeMessage] | Null]): Unit = js.native
   def send(msg: NodeMessage): Unit = js.native
   
   /**
@@ -124,7 +126,7 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
   /**
     * Log an TRACE level message
     */
-  def trace(msg: js.Any): Unit = js.native
+  def trace(msg: Any): Unit = js.native
   
   var `type`: String = js.native
   
@@ -132,12 +134,12 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
     * Update the wiring configuration for this node.
     * @param wires -the new wiring configuration
     */
-  def updateWires(wires: js.Array[js.Array[js.Any]]): Unit = js.native
+  def updateWires(wires: js.Array[js.Array[Any]]): Unit = js.native
   
   /**
     * Log a WARN level message
     */
-  def warn(msg: js.Any): Unit = js.native
+  def warn(msg: Any): Unit = js.native
   
   var z: String = js.native
 }

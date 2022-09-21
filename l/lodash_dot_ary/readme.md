@@ -10,10 +10,10 @@ The lodash method `_.ary` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.ary |
 | Keywords           | lodash-modularized, ary |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 1412091 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109340.33333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

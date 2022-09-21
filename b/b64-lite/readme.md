@@ -1,7 +1,7 @@
 
 # Scala.js typings for b64-lite
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 isomorphic base64 library in 152 bytes
@@ -10,15 +10,12 @@ isomorphic base64 library in 152 bytes
 | ------------------ | :-------------: |
 | Full name          | b64-lite |
 | Keywords           | b64, isomorphic, small, atob, btoa |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 848654 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 301061.6666666667 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/kevlened/b64-lite#readme)
-- [Bugs](https://github.com/kevlened/b64-lite/issues)
-- [Repository](https://github.com/kevlened/b64-lite)
 - [Npm](https://www.npmjs.com/package/b64-lite)
     
 

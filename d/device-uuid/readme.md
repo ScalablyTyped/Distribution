@@ -10,10 +10,10 @@ Fast browser device uuid generation library.
 | ------------------ | :-------------: |
 | Full name          | device-uuid |
 | Keywords           | useragent, browser, device, uuid |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 122006 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27373.333333333332 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/biggora/device-uuid/)

@@ -157,7 +157,7 @@ object XInplaceClient {
     getInplaceDispatchProvider: () => XDispatchProvider,
     getLayoutManager: () => XLayoutManager,
     getPlacement: () => Rectangle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     scrollObject: Size => Unit,
     translateAccelerators: SeqEquiv[KeyEvent] => Unit

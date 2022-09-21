@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@cucumber/ci-environment" : "9.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@cucumber/ci-environment" : "9.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

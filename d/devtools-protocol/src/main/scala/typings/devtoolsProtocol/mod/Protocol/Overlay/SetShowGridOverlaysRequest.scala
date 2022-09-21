@@ -22,6 +22,6 @@ object SetShowGridOverlaysRequest {
     
     inline def setGridNodeHighlightConfigs(value: js.Array[GridNodeHighlightConfig]): Self = StObject.set(x, "gridNodeHighlightConfigs", value.asInstanceOf[js.Any])
     
-    inline def setGridNodeHighlightConfigsVarargs(value: GridNodeHighlightConfig*): Self = StObject.set(x, "gridNodeHighlightConfigs", js.Array(value :_*))
+    inline def setGridNodeHighlightConfigsVarargs(value: GridNodeHighlightConfig*): Self = StObject.set(x, "gridNodeHighlightConfigs", js.Array(value*))
   }
 }

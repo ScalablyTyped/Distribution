@@ -10,7 +10,6 @@ import typings.devexpressWeb.ASPxClientEndCallbackEventHandler
 import typings.devexpressWeb.ASPxClientEventHandler
 import typings.devexpressWeb.ASPxClientProcessingModeEventHandler
 import typings.devexpressWeb.MVCxClientBeginCallbackEventHandler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientCalendar")
 @js.native
-class MVCxClientCalendar ()
+open class MVCxClientCalendar ()
   extends StObject
      with typings.devexpressWeb.MVCxClientCalendar {
   
@@ -75,7 +74,7 @@ class MVCxClientCalendar ()
     * @param date A date-time value that specifies the date to deselect.
     */
   /* CompleteClass */
-  override def DeselectDate(date: Date): Unit = js.native
+  override def DeselectDate(date: js.Date): Unit = js.native
   
   /**
     * Deselects the specified range of dates within the calendar.
@@ -83,7 +82,7 @@ class MVCxClientCalendar ()
     * @param end A date-time value that specifies the range's last date.
     */
   /* CompleteClass */
-  override def DeselectRange(start: Date, end: Date): Unit = js.native
+  override def DeselectRange(start: js.Date, end: js.Date): Unit = js.native
   
   /**
     * Occurs on the client side after the callback server-side processing has been completed.
@@ -129,10 +128,10 @@ class MVCxClientCalendar ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -144,25 +143,25 @@ class MVCxClientCalendar ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets the maximum date on the calendar.
     */
   /* CompleteClass */
-  override def GetMaxDate(): Date = js.native
+  override def GetMaxDate(): js.Date = js.native
   
   /**
     * Gets the minimum date on the calendar.
     */
   /* CompleteClass */
-  override def GetMinDate(): Date = js.native
+  override def GetMinDate(): js.Date = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
@@ -174,19 +173,19 @@ class MVCxClientCalendar ()
     * Returns the calendar's selected date.
     */
   /* CompleteClass */
-  override def GetSelectedDate(): Date = js.native
+  override def GetSelectedDate(): js.Date = js.native
   
   /**
     * Returns a list of dates which are selected within the calendar.
     */
   /* CompleteClass */
-  override def GetSelectedDates(): js.Array[Date] = js.native
+  override def GetSelectedDates(): js.Array[js.Date] = js.native
   
   /**
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -198,7 +197,7 @@ class MVCxClientCalendar ()
     * Gets the date that determines the month and year that are currently displayed in the calendar.
     */
   /* CompleteClass */
-  override def GetVisibleDate(): Date = js.native
+  override def GetVisibleDate(): js.Date = js.native
   
   /**
     * Returns the control's width.
@@ -229,7 +228,7 @@ class MVCxClientCalendar ()
     * @param date A date-time value that specifies the date to test.
     */
   /* CompleteClass */
-  override def IsDateSelected(date: Date): Boolean = js.native
+  override def IsDateSelected(date: js.Date): Boolean = js.native
   
   /**
     * Occurs on the client-side when an end-user presses a key while the editor has focus.
@@ -260,7 +259,7 @@ class MVCxClientCalendar ()
     * @param date A date-time value that specifies the selected date.
     */
   /* CompleteClass */
-  override def SelectDate(date: Date): Unit = js.native
+  override def SelectDate(date: js.Date): Unit = js.native
   
   /**
     * Selects the specified range of dates within the calendar.
@@ -268,10 +267,10 @@ class MVCxClientCalendar ()
     * @param end A date-time value that specifies the range's last date.
     */
   /* CompleteClass */
-  override def SelectRange(start: Date, end: Date): Unit = js.native
+  override def SelectRange(start: js.Date, end: js.Date): Unit = js.native
   
   /**
-    * Fires on the client side after the selected date has been changed within the calendar.
+    * Occurs on the client after a user changes the selected date in the calendar.
     */
   /* CompleteClass */
   var SelectionChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientCalendar]] = js.native
@@ -330,14 +329,14 @@ class MVCxClientCalendar ()
     * @param date A DateTime object representing the maximum date.
     */
   /* CompleteClass */
-  override def SetMaxDate(date: Date): Unit = js.native
+  override def SetMaxDate(date: js.Date): Unit = js.native
   
   /**
     * Sets the minimum date of the calendar.
     * @param date A DateTime object representing the minimum date.
     */
   /* CompleteClass */
-  override def SetMinDate(date: Date): Unit = js.native
+  override def SetMinDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies whether the control's state is read-only on the client side.
@@ -351,14 +350,14 @@ class MVCxClientCalendar ()
     * @param date A date object that specifies the calendar's selected date.
     */
   /* CompleteClass */
-  override def SetSelectedDate(date: Date): Unit = js.native
+  override def SetSelectedDate(date: js.Date): Unit = js.native
   
   /**
     * Changes the editor's value.
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -372,7 +371,7 @@ class MVCxClientCalendar ()
     * @param date The date that specifies calendar's visible month and year.
     */
   /* CompleteClass */
-  override def SetVisibleDate(date: Date): Unit = js.native
+  override def SetVisibleDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies the control's width in pixels.
@@ -400,7 +399,7 @@ class MVCxClientCalendar ()
   var ValueChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientEdit]] = js.native
   
   /**
-    * Occurs on the client side when the month displayed within the calendar is changed.
+    * Occurs on the client when a user changes the month in the calendar.
     */
   /* CompleteClass */
   var VisibleMonthChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientCalendar]] = js.native
@@ -422,5 +421,5 @@ object MVCxClientCalendar {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientCalendar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientCalendar]
+  inline def Cast(obj: Any): typings.devexpressWeb.MVCxClientCalendar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientCalendar]
 }

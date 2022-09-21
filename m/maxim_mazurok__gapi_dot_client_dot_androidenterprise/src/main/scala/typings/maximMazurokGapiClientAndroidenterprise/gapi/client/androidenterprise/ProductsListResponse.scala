@@ -32,7 +32,7 @@ object ProductsListResponse {
     
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    inline def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value :_*))
+    inline def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value*))
     
     inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     

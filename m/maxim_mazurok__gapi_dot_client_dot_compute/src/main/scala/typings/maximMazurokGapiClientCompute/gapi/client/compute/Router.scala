@@ -21,6 +21,9 @@ trait Router extends StObject {
   /** An optional description of this resource. Provide this property when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
   
+  /** Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). Not currently available publicly. */
+  var encryptedInterconnectRouter: js.UndefOr[Boolean] = js.undefined
+  
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
   var id: js.UndefOr[String] = js.undefined
   
@@ -64,7 +67,7 @@ object Router {
     
     inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    inline def setBgpPeersVarargs(value: RouterBgpPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: RouterBgpPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value*))
     
     inline def setBgpUndefined: Self = StObject.set(x, "bgp", js.undefined)
     
@@ -76,6 +79,10 @@ object Router {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setEncryptedInterconnectRouter(value: Boolean): Self = StObject.set(x, "encryptedInterconnectRouter", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptedInterconnectRouterUndefined: Self = StObject.set(x, "encryptedInterconnectRouter", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -84,7 +91,7 @@ object Router {
     
     inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
     
-    inline def setInterfacesVarargs(value: RouterInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: RouterInterface*): Self = StObject.set(x, "interfaces", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -98,7 +105,7 @@ object Router {
     
     inline def setNatsUndefined: Self = StObject.set(x, "nats", js.undefined)
     
-    inline def setNatsVarargs(value: RouterNat*): Self = StObject.set(x, "nats", js.Array(value :_*))
+    inline def setNatsVarargs(value: RouterNat*): Self = StObject.set(x, "nats", js.Array(value*))
     
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     

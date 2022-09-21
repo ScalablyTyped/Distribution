@@ -1,6 +1,7 @@
 package typings.reactPortalTooltip
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactPortalTooltip.anon.ArrowStyle
 import typings.reactPortalTooltip.cardMod.Card.CardProps
 import org.scalablytyped.runtime.StObject
@@ -11,8 +12,8 @@ object cardMod {
   
   @JSImport("react-portal-tooltip/lib/Card", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CardProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CardProps, js.Object, Any]
   
   object Card {
     
@@ -40,6 +41,8 @@ object cardMod {
       
       var arrow: js.UndefOr[Arrow] = js.undefined
       
+      var children: js.UndefOr[ReactNode] = js.undefined
+      
       var position: js.UndefOr[Position] = js.undefined
       
       var style: js.UndefOr[ArrowStyle] = js.undefined
@@ -66,6 +69,10 @@ object cardMod {
         inline def setArrowNull: Self = StObject.set(x, "arrow", null)
         
         inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+        
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
@@ -103,5 +110,5 @@ object cardMod {
     
     trait _Arrow extends StObject
   }
-  type Card = Component[CardProps, js.Object, js.Any]
+  type Card = Component[CardProps, js.Object, Any]
 }

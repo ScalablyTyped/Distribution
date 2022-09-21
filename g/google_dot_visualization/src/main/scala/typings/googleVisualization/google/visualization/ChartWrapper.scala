@@ -23,8 +23,8 @@ trait ChartWrapper extends StObject {
   
   def getDataTable(): DataTable = js.native
   
-  def getOption(key: String): js.Any = js.native
-  def getOption(key: String, default_val: String): js.Any = js.native
+  def getOption(key: String): Any = js.native
+  def getOption(key: String, default_val: String): Any = js.native
   
   def getOptions(): js.Object = js.native
   
@@ -32,7 +32,7 @@ trait ChartWrapper extends StObject {
   
   def getRefreshInterval(): Double = js.native
   
-  def getView(): js.Any = js.native
+  def getView(): Any = js.native
   
   def setChartName(name: String): Unit = js.native
   
@@ -44,7 +44,7 @@ trait ChartWrapper extends StObject {
   
   def setDataTable(table: DataTable): Unit = js.native
   
-  def setOption(key: String, value: js.Any): Unit = js.native
+  def setOption(key: String, value: Any): Unit = js.native
   
   def setOptions(options: js.Object): Unit = js.native
   

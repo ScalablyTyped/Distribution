@@ -11,9 +11,6 @@ object mod extends Shortcut {
   @js.native
   val default: js.Symbol = js.native
   
-  @js.native
-  trait Symbol extends StObject
-  
   type _To = js.Symbol
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */

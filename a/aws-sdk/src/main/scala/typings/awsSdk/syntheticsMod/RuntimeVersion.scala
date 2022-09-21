@@ -9,7 +9,7 @@ trait RuntimeVersion extends StObject {
   /**
     * If this runtime version is deprecated, this value is the date of deprecation.
     */
-  var DeprecationDate: js.UndefOr[Timestamp] = js.undefined
+  var DeprecationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the runtime version, created by Amazon.
@@ -19,7 +19,7 @@ trait RuntimeVersion extends StObject {
   /**
     * The date that the runtime version was released.
     */
-  var ReleaseDate: js.UndefOr[Timestamp] = js.undefined
+  var ReleaseDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the runtime version. For a list of valid runtime versions, see  Canary Runtime Versions.
@@ -35,7 +35,7 @@ object RuntimeVersion {
   
   extension [Self <: RuntimeVersion](x: Self) {
     
-    inline def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: js.Date): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
     
     inline def setDeprecationDateUndefined: Self = StObject.set(x, "DeprecationDate", js.undefined)
     
@@ -43,7 +43,7 @@ object RuntimeVersion {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setReleaseDate(value: Timestamp): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: js.Date): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
     
     inline def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
     

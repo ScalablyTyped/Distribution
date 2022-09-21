@@ -8,5 +8,5 @@ object replicationRuleAndOperatorMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_ReplicationRuleAndOperator", "_ReplicationRuleAndOperator")
   @js.native
-  val ReplicationRuleAndOperator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicationRuleAndOperator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Tags Response.
-  */
 trait SchemaListTagsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListTagsResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: SchemaTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: SchemaTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

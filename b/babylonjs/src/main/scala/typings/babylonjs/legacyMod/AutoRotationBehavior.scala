@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "AutoRotationBehavior")
 @js.native
-class AutoRotationBehavior ()
+open class AutoRotationBehavior ()
   extends typings.babylonjs.indexMod.AutoRotationBehavior

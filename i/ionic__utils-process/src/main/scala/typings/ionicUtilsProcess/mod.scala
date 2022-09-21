@@ -3,7 +3,6 @@ package typings.ionicUtilsProcess
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicUtilsProcess.anon.Interval
 import typings.node.processMod.global.NodeJS.ProcessEnv
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,9 @@ object mod {
   
   @JSImport("@ionic/utils-process", "ERROR_TIMEOUT_REACHED")
   @js.native
-  val ERROR_TIMEOUT_REACHED: Error = js.native
+  val ERROR_TIMEOUT_REACHED: js.Error = js.native
   
-  inline def createProcessEnv(sources: StringDictionary[js.UndefOr[String]]*): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("createProcessEnv")(sources.asInstanceOf[js.Any]).asInstanceOf[ProcessEnv]
+  inline def createProcessEnv(sources: StringDictionary[js.UndefOr[String]]*): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("createProcessEnv")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ProcessEnv]
   
   inline def getPathParts(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathParts")().asInstanceOf[js.Array[String]]
   inline def getPathParts(envpath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathParts")(envpath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]

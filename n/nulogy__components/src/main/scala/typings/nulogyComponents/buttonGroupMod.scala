@@ -8,5 +8,5 @@ object buttonGroupMod {
   
   @JSImport("@nulogy/components/src/ButtonGroup", "ButtonGroup")
   @js.native
-  val ButtonGroup: js.Any = js.native
+  val ButtonGroup: Any = js.native
 }

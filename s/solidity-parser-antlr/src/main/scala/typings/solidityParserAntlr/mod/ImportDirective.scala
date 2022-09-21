@@ -32,7 +32,7 @@ object ImportDirective {
     
     inline def setSymbolAliases(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "symbolAliases", value.asInstanceOf[js.Any])
     
-    inline def setSymbolAliasesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "symbolAliases", js.Array(value :_*))
+    inline def setSymbolAliasesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "symbolAliases", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEventTrigger extends StObject {
   
   def fire(`type`: String): this.type = js.native
-  def fire(`type`: String, eventobject: js.Object): this.type = js.native
-  def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+  def fire(`type`: String, eventObject: js.Object): this.type = js.native
+  def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
 }

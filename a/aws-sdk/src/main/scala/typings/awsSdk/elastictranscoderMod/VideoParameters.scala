@@ -150,6 +150,6 @@ object VideoParameters {
     
     inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
-    inline def setWatermarksVarargs(value: PresetWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
+    inline def setWatermarksVarargs(value: PresetWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object ListDeviceEventsResponse {
     
     inline def setDeviceEventsUndefined: Self = StObject.set(x, "DeviceEvents", js.undefined)
     
-    inline def setDeviceEventsVarargs(value: DeviceEvent*): Self = StObject.set(x, "DeviceEvents", js.Array(value :_*))
+    inline def setDeviceEventsVarargs(value: DeviceEvent*): Self = StObject.set(x, "DeviceEvents", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

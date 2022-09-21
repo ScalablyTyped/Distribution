@@ -1,6 +1,6 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

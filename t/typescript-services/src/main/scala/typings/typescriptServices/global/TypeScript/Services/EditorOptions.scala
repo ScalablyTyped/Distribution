@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.EditorOptions")
 @js.native
-class EditorOptions ()
+open class EditorOptions ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.EditorOptions {
   

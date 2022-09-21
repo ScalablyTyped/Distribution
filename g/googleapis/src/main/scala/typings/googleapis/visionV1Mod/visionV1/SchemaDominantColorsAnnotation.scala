@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Set of dominant colors and their corresponding scores.
-  */
 trait SchemaDominantColorsAnnotation extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaDominantColorsAnnotation {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: SchemaColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: SchemaColorInfo*): Self = StObject.set(x, "colors", js.Array(value*))
   }
 }

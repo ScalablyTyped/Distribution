@@ -26,7 +26,7 @@ object ReservationsScopedList {
     
     inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

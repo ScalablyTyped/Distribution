@@ -29,6 +29,6 @@ object ListSnapshotsResponse {
     
     inline def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
-    inline def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+    inline def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value*))
   }
 }

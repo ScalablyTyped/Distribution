@@ -53,7 +53,7 @@ object GoogleDatastoreAdminV1Index {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: GoogleDatastoreAdminV1IndexedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: GoogleDatastoreAdminV1IndexedProperty*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

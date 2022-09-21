@@ -7,16 +7,13 @@ import typings.officeUiFabricReact.libAutofillMod.Autofill
 import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
-import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.InputHTMLAttributes
-import typings.react.mod.Props
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,10 +73,17 @@ object basePickerTypesMod {
     var items: js.UndefOr[js.Array[T]] = js.native
   }
   
-  @js.native
-  trait IBasePickerProps[T]
-    extends StObject
-       with Props[js.Any] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<any> * / any */ @js.native
+  trait IBasePickerProps[T] extends StObject {
+    
+    /**
+      * Aria label for the picker component. Will be applied to the element with role="combobox"
+      * If it's supplied, the input element with also have aria-labelledby added and point to the
+      * element with role=combobox
+      * @defaultvalue undefined
+      */
+    var `aria-label`: js.UndefOr[String] = js.native
     
     /**
       * ClassName for the picker.
@@ -151,7 +155,7 @@ object basePickerTypesMod {
       *
       */
     var onDismiss: js.UndefOr[
-        js.Function2[/* ev */ js.UndefOr[js.Any], /* selectedItem */ js.UndefOr[T], Boolean | Unit]
+        js.Function2[/* ev */ js.UndefOr[Any], /* selectedItem */ js.UndefOr[T], Boolean | Unit]
       ] = js.native
     
     /**
@@ -243,7 +247,7 @@ object basePickerTypesMod {
     /**
       * The properties that will get passed to the Suggestions component.
       */
-    var pickerSuggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[js.Any]] = js.native
+    var pickerSuggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[Any]] = js.native
     
     /**
       * Aria label for the "X" button in the selected item component.
@@ -283,9 +287,9 @@ object basePickerTypesMod {
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/BasePicker.types.IBasePickerProps<any>, 'theme' | 'className' | 'disabled'> & {  isFocused :boolean | undefined,   inputClassName :string | undefined} */
   trait IBasePickerStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.undefined
+    var className: js.UndefOr[Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.undefined
+    var disabled: js.UndefOr[Any] = js.undefined
     
     /** Optional pickerInput className */
     var inputClassName: js.UndefOr[String] = js.undefined
@@ -293,7 +297,7 @@ object basePickerTypesMod {
     /** Whether text style area is focused */
     var isFocused: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.undefined
+    var theme: js.UndefOr[Any] = js.undefined
   }
   object IBasePickerStyleProps {
     
@@ -304,11 +308,11 @@ object basePickerTypesMod {
     
     extension [Self <: IBasePickerStyleProps](x: Self) {
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
@@ -320,7 +324,7 @@ object basePickerTypesMod {
       
       inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
       
-      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
@@ -387,44 +391,46 @@ object basePickerTypesMod {
     }
   }
   
-  /* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<T>, 'onRenderNoResultFound' | 'suggestionsHeaderText' | 'mostRecentlyUsedHeaderText' | 'noResultsFoundText' | 'className' | 'suggestionsClassName' | 'suggestionsItemClassName' | 'searchForMoreText' | 'forceResolveText' | 'loadingText' | 'searchingText' | 'resultsFooterFull' | 'resultsFooter' | 'resultsMaximumNumber' | 'showRemoveButtons' | 'suggestionsAvailableAlertText' | 'suggestionsContainerAriaLabel' | 'showForceResolve'> */
+  /* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<T>, 'onRenderNoResultFound' | 'suggestionsHeaderText' | 'mostRecentlyUsedHeaderText' | 'noResultsFoundText' | 'className' | 'suggestionsClassName' | 'suggestionsItemClassName' | 'searchForMoreIcon' | 'searchForMoreText' | 'forceResolveText' | 'loadingText' | 'searchingText' | 'resultsFooterFull' | 'resultsFooter' | 'resultsMaximumNumber' | 'showRemoveButtons' | 'suggestionsAvailableAlertText' | 'suggestionsContainerAriaLabel' | 'showForceResolve'> */
   trait IBasePickerSuggestionsProps[T] extends StObject {
     
-    var className: js.UndefOr[String] = js.undefined
+    var className: js.UndefOr[Any] = js.undefined
     
-    var forceResolveText: js.UndefOr[String] = js.undefined
+    var forceResolveText: js.UndefOr[Any] = js.undefined
     
-    var loadingText: js.UndefOr[String] = js.undefined
+    var loadingText: js.UndefOr[Any] = js.undefined
     
-    var mostRecentlyUsedHeaderText: js.UndefOr[String] = js.undefined
+    var mostRecentlyUsedHeaderText: js.UndefOr[Any] = js.undefined
     
-    var noResultsFoundText: js.UndefOr[String] = js.undefined
+    var noResultsFoundText: js.UndefOr[Any] = js.undefined
     
-    var onRenderNoResultFound: js.UndefOr[IRenderFunction[Unit]] = js.undefined
+    var onRenderNoResultFound: js.UndefOr[Any] = js.undefined
     
-    var resultsFooter: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
+    var resultsFooter: js.UndefOr[Any] = js.undefined
     
-    var resultsFooterFull: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
+    var resultsFooterFull: js.UndefOr[Any] = js.undefined
     
-    var resultsMaximumNumber: js.UndefOr[Double] = js.undefined
+    var resultsMaximumNumber: js.UndefOr[Any] = js.undefined
     
-    var searchForMoreText: js.UndefOr[String] = js.undefined
+    var searchForMoreIcon: js.UndefOr[Any] = js.undefined
     
-    var searchingText: js.UndefOr[String] = js.undefined
+    var searchForMoreText: js.UndefOr[Any] = js.undefined
     
-    var showForceResolve: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    var searchingText: js.UndefOr[Any] = js.undefined
     
-    var showRemoveButtons: js.UndefOr[Boolean] = js.undefined
+    var showForceResolve: js.UndefOr[Any] = js.undefined
     
-    var suggestionsAvailableAlertText: js.UndefOr[String] = js.undefined
+    var showRemoveButtons: js.UndefOr[Any] = js.undefined
     
-    var suggestionsClassName: js.UndefOr[String] = js.undefined
+    var suggestionsAvailableAlertText: js.UndefOr[Any] = js.undefined
     
-    var suggestionsContainerAriaLabel: js.UndefOr[String] = js.undefined
+    var suggestionsClassName: js.UndefOr[Any] = js.undefined
     
-    var suggestionsHeaderText: js.UndefOr[String] = js.undefined
+    var suggestionsContainerAriaLabel: js.UndefOr[Any] = js.undefined
     
-    var suggestionsItemClassName: js.UndefOr[String] = js.undefined
+    var suggestionsHeaderText: js.UndefOr[Any] = js.undefined
+    
+    var suggestionsItemClassName: js.UndefOr[Any] = js.undefined
   }
   object IBasePickerSuggestionsProps {
     
@@ -435,77 +441,79 @@ object basePickerTypesMod {
     
     extension [Self <: IBasePickerSuggestionsProps[?], T](x: Self & IBasePickerSuggestionsProps[T]) {
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setForceResolveText(value: String): Self = StObject.set(x, "forceResolveText", value.asInstanceOf[js.Any])
+      inline def setForceResolveText(value: Any): Self = StObject.set(x, "forceResolveText", value.asInstanceOf[js.Any])
       
       inline def setForceResolveTextUndefined: Self = StObject.set(x, "forceResolveText", js.undefined)
       
-      inline def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+      inline def setLoadingText(value: Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
       
       inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
       
-      inline def setMostRecentlyUsedHeaderText(value: String): Self = StObject.set(x, "mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
+      inline def setMostRecentlyUsedHeaderText(value: Any): Self = StObject.set(x, "mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
       
       inline def setMostRecentlyUsedHeaderTextUndefined: Self = StObject.set(x, "mostRecentlyUsedHeaderText", js.undefined)
       
-      inline def setNoResultsFoundText(value: String): Self = StObject.set(x, "noResultsFoundText", value.asInstanceOf[js.Any])
+      inline def setNoResultsFoundText(value: Any): Self = StObject.set(x, "noResultsFoundText", value.asInstanceOf[js.Any])
       
       inline def setNoResultsFoundTextUndefined: Self = StObject.set(x, "noResultsFoundText", js.undefined)
       
-      inline def setOnRenderNoResultFound(
-        value: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null
-      ): Self = StObject.set(x, "onRenderNoResultFound", js.Any.fromFunction2(value))
+      inline def setOnRenderNoResultFound(value: Any): Self = StObject.set(x, "onRenderNoResultFound", value.asInstanceOf[js.Any])
       
       inline def setOnRenderNoResultFoundUndefined: Self = StObject.set(x, "onRenderNoResultFound", js.undefined)
       
-      inline def setResultsFooter(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooter", js.Any.fromFunction1(value))
+      inline def setResultsFooter(value: Any): Self = StObject.set(x, "resultsFooter", value.asInstanceOf[js.Any])
       
-      inline def setResultsFooterFull(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooterFull", js.Any.fromFunction1(value))
+      inline def setResultsFooterFull(value: Any): Self = StObject.set(x, "resultsFooterFull", value.asInstanceOf[js.Any])
       
       inline def setResultsFooterFullUndefined: Self = StObject.set(x, "resultsFooterFull", js.undefined)
       
       inline def setResultsFooterUndefined: Self = StObject.set(x, "resultsFooter", js.undefined)
       
-      inline def setResultsMaximumNumber(value: Double): Self = StObject.set(x, "resultsMaximumNumber", value.asInstanceOf[js.Any])
+      inline def setResultsMaximumNumber(value: Any): Self = StObject.set(x, "resultsMaximumNumber", value.asInstanceOf[js.Any])
       
       inline def setResultsMaximumNumberUndefined: Self = StObject.set(x, "resultsMaximumNumber", js.undefined)
       
-      inline def setSearchForMoreText(value: String): Self = StObject.set(x, "searchForMoreText", value.asInstanceOf[js.Any])
+      inline def setSearchForMoreIcon(value: Any): Self = StObject.set(x, "searchForMoreIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSearchForMoreIconUndefined: Self = StObject.set(x, "searchForMoreIcon", js.undefined)
+      
+      inline def setSearchForMoreText(value: Any): Self = StObject.set(x, "searchForMoreText", value.asInstanceOf[js.Any])
       
       inline def setSearchForMoreTextUndefined: Self = StObject.set(x, "searchForMoreText", js.undefined)
       
-      inline def setSearchingText(value: String): Self = StObject.set(x, "searchingText", value.asInstanceOf[js.Any])
+      inline def setSearchingText(value: Any): Self = StObject.set(x, "searchingText", value.asInstanceOf[js.Any])
       
       inline def setSearchingTextUndefined: Self = StObject.set(x, "searchingText", js.undefined)
       
-      inline def setShowForceResolve(value: () => Boolean): Self = StObject.set(x, "showForceResolve", js.Any.fromFunction0(value))
+      inline def setShowForceResolve(value: Any): Self = StObject.set(x, "showForceResolve", value.asInstanceOf[js.Any])
       
       inline def setShowForceResolveUndefined: Self = StObject.set(x, "showForceResolve", js.undefined)
       
-      inline def setShowRemoveButtons(value: Boolean): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
+      inline def setShowRemoveButtons(value: Any): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
       
       inline def setShowRemoveButtonsUndefined: Self = StObject.set(x, "showRemoveButtons", js.undefined)
       
-      inline def setSuggestionsAvailableAlertText(value: String): Self = StObject.set(x, "suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
+      inline def setSuggestionsAvailableAlertText(value: Any): Self = StObject.set(x, "suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsAvailableAlertTextUndefined: Self = StObject.set(x, "suggestionsAvailableAlertText", js.undefined)
       
-      inline def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsClassName(value: Any): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
       
-      inline def setSuggestionsContainerAriaLabel(value: String): Self = StObject.set(x, "suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
+      inline def setSuggestionsContainerAriaLabel(value: Any): Self = StObject.set(x, "suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsContainerAriaLabelUndefined: Self = StObject.set(x, "suggestionsContainerAriaLabel", js.undefined)
       
-      inline def setSuggestionsHeaderText(value: String): Self = StObject.set(x, "suggestionsHeaderText", value.asInstanceOf[js.Any])
+      inline def setSuggestionsHeaderText(value: Any): Self = StObject.set(x, "suggestionsHeaderText", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsHeaderTextUndefined: Self = StObject.set(x, "suggestionsHeaderText", js.undefined)
       
-      inline def setSuggestionsItemClassName(value: String): Self = StObject.set(x, "suggestionsItemClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsItemClassName(value: Any): Self = StObject.set(x, "suggestionsItemClassName", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsItemClassNameUndefined: Self = StObject.set(x, "suggestionsItemClassName", js.undefined)
     }

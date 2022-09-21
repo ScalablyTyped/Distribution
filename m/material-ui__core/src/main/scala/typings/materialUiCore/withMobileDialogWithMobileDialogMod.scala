@@ -1,8 +1,9 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.PartialWithWidth
+import typings.materialUiCore.anon.PartialWithMobileDialog
 import typings.materialUiCore.createBreakpointsMod.Breakpoint
-import typings.react.mod.ComponentType
+import typings.materialUiCore.withWidthWithWidthMod.WithWidth
+import typings.materialUiTypes.mod.PropInjector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,37 +14,27 @@ object withMobileDialogWithMobileDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P](): js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ]]
-  inline def default[P](options: WithMobileDialogOptions): js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ]]
+  inline def default[P](): PropInjector[WithMobileDialog, PartialWithMobileDialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithMobileDialog, PartialWithMobileDialog]]
+  inline def default[P](options: WithMobileDialogOptions): PropInjector[WithMobileDialog, PartialWithMobileDialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithMobileDialog, PartialWithMobileDialog]]
   
-  trait InjectedProps extends StObject {
+  type InjectedProps = WithMobileDialog
+  
+  trait WithMobileDialog
+    extends StObject
+       with WithWidth {
     
-    var fullScreen: js.UndefOr[Boolean] = js.undefined
+    var fullScreen: Boolean
   }
-  object InjectedProps {
+  object WithMobileDialog {
     
-    inline def apply(): InjectedProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[InjectedProps]
+    inline def apply(fullScreen: Boolean, width: Breakpoint): WithMobileDialog = {
+      val __obj = js.Dynamic.literal(fullScreen = fullScreen.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WithMobileDialog]
     }
     
-    extension [Self <: InjectedProps](x: Self) {
+    extension [Self <: WithMobileDialog](x: Self) {
       
       inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
-      
-      inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     }
   }
   

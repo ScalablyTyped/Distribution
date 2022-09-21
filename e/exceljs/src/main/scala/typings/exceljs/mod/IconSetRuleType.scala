@@ -36,7 +36,7 @@ object IconSetRuleType {
     
     inline def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
-    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
+    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value*))
     
     inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

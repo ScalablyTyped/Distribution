@@ -1,15 +1,18 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.NotificationHandler
-import typings.vscodeJsonrpc.mod.ProgressToken
+import typings.vscodeJsonrpc.connectionMod.NotificationHandler
+import typings.vscodeJsonrpc.connectionMod.ProgressToken
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
 import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
-import typings.vscodeLanguageserverProtocol.anon.`3`
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.begin
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.end
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.report
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.windowSlashworkDoneProgressSlashcancel
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.windowSlashworkDoneProgressSlashcreate
+import typings.vscodeLanguageserverTypes.mod.uinteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +21,28 @@ object protocolProgressMod {
   
   object WorkDoneProgress {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.progress", "WorkDoneProgress.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgress")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def is(value: ProgressType[Any]): /* is vscode-jsonrpc.vscode-jsonrpc.ProgressType<vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressBegin | vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressReport | vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressEnd> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc.ProgressType<vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressBegin | vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressReport | vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.progress.WorkDoneProgressEnd> */ Boolean]
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgress.type")
     @js.native
     val `type`: ProgressType[WorkDoneProgressBegin | WorkDoneProgressReport | WorkDoneProgressEnd] = js.native
   }
   
   object WorkDoneProgressCancelNotification {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.progress", "WorkDoneProgressCancelNotification.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCancelNotification.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCancelNotification.method")
+    @js.native
+    val method: windowSlashworkDoneProgressSlashcancel = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCancelNotification.type")
     @js.native
     val `type`: ProtocolNotificationType[WorkDoneProgressCancelParams, Unit] = js.native
     
@@ -34,7 +51,15 @@ object protocolProgressMod {
   
   object WorkDoneProgressCreateRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.progress", "WorkDoneProgressCreateRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCreateRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCreateRequest.method")
+    @js.native
+    val method: windowSlashworkDoneProgressSlashcreate = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.progress", "WorkDoneProgressCreateRequest.type")
     @js.native
     val `type`: ProtocolRequestType[WorkDoneProgressCreateParams, Unit, scala.Nothing, Unit, Unit] = js.native
     
@@ -67,9 +92,9 @@ object protocolProgressMod {
       * to ignore the `percentage` value in subsequent in report notifications.
       *
       * The value should be steadily rising. Clients are free to ignore values
-      * that are not following this rule.
+      * that are not following this rule. The value range is [0, 100].
       */
-    var percentage: js.UndefOr[Double] = js.undefined
+    var percentage: js.UndefOr[uinteger] = js.undefined
     
     /**
       * Mandatory title of the progress operation. Used to briefly inform about
@@ -98,7 +123,7 @@ object protocolProgressMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: uinteger): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
@@ -123,28 +148,6 @@ object protocolProgressMod {
     extension [Self <: WorkDoneProgressCancelParams](x: Self) {
       
       inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait WorkDoneProgressClientCapabilities extends StObject {
-    
-    /**
-      * Window specific client capabilities.
-      */
-    var window: js.UndefOr[`3`] = js.undefined
-  }
-  object WorkDoneProgressClientCapabilities {
-    
-    inline def apply(): WorkDoneProgressClientCapabilities = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[WorkDoneProgressClientCapabilities]
-    }
-    
-    extension [Self <: WorkDoneProgressClientCapabilities](x: Self) {
-      
-      inline def setWindow(value: `3`): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-      
-      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -198,11 +201,10 @@ object protocolProgressMod {
   trait WorkDoneProgressReport extends StObject {
     
     /**
-      * Controls enablement state of a cancel button. This property is only valid if a cancel
-      * button got requested in the `WorkDoneProgressStart` payload.
+      * Controls enablement state of a cancel button.
       *
-      * Clients that don't support cancellation or don't support control the button's
-      * enablement state are allowed to ignore the setting.
+      * Clients that don't support cancellation or don't support controlling the button's
+      * enablement state are allowed to ignore the property.
       */
     var cancellable: js.UndefOr[Boolean] = js.undefined
     
@@ -223,9 +225,9 @@ object protocolProgressMod {
       * to ignore the `percentage` value in subsequent in report notifications.
       *
       * The value should be steadily rising. Clients are free to ignore values
-      * that are not following this rule.
+      * that are not following this rule. The value range is [0, 100]
       */
-    var percentage: js.UndefOr[Double] = js.undefined
+    var percentage: js.UndefOr[uinteger] = js.undefined
   }
   object WorkDoneProgressReport {
     
@@ -246,7 +248,7 @@ object protocolProgressMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: uinteger): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     }

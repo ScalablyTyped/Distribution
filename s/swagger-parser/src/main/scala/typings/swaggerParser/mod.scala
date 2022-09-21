@@ -17,7 +17,7 @@ object mod {
     */
   @JSImport("swagger-parser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.apidevtoolsSwaggerParser.mod.^
   @JSImport("swagger-parser", JSImport.Namespace)
   @js.native
@@ -25,11 +25,11 @@ object mod {
   
   @JSImport("swagger-parser", "$Refs")
   @js.native
-  class Refs ()
+  open class Refs ()
     extends typings.apidevtoolsSwaggerParser.mod.Refs
   
   /* static member */
-  inline def bundle(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  inline def bundle(api: String): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
   /**
     * Bundles all referenced files/URLs into a single API definition that only has internal `$ref` pointers. This lets you split-up your API definition however you want while you're building it, but easily combine all those files together when it's time to package or distribute the API definition to other people. The resulting API definition size will be small, since it will still contain internal JSON references rather than being fully-dereferenced.
     *
@@ -44,22 +44,22 @@ object mod {
   /* static member */
   inline def bundle(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def bundle(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def bundle(api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def bundle(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def bundle(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
-  inline def bundle(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def bundle(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def bundle(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(api: Document[js.Object]): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def bundle(api: Document[js.Object], callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def bundle(api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def bundle(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def bundle(baseUrl: String, api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def bundle(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def bundle(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def bundle(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(baseUrl: String, api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def bundle(baseUrl: String, api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def dereference(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  inline def dereference(api: String): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
   /**
     * Dereferences all `$ref` pointers in the OpenAPI definition, replacing each reference with its resolved value. This results in an API definition that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
     *
@@ -74,22 +74,22 @@ object mod {
   /* static member */
   inline def dereference(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def dereference(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def dereference(api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def dereference(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dereference(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
-  inline def dereference(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dereference(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def dereference(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(api: Document[js.Object]): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def dereference(api: Document[js.Object], callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def dereference(api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def dereference(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def dereference(baseUrl: String, api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def dereference(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dereference(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def dereference(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(baseUrl: String, api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def dereference(baseUrl: String, api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def parse(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  inline def parse(api: String): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -104,19 +104,19 @@ object mod {
   /* static member */
   inline def parse(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def parse(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def parse(api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def parse(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parse(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
-  inline def parse(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parse(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def parse(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(api: Document[js.Object]): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def parse(api: Document[js.Object], callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def parse(api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def parse(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def parse(baseUrl: String, api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def parse(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parse(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def parse(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(baseUrl: String, api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def parse(baseUrl: String, api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def resolve(api: String): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
@@ -137,19 +137,19 @@ object mod {
   inline def resolve(api: String, options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
   /* static member */
   inline def resolve(api: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def resolve(api: Document): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
-  inline def resolve(api: Document, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def resolve(api: Document, options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
-  inline def resolve(api: Document, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(api: Document[js.Object]): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
+  inline def resolve(api: Document[js.Object], callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(api: Document[js.Object], options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
+  inline def resolve(api: Document[js.Object], options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
   inline def resolve(baseUrl: String, api: String, options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
   /* static member */
   inline def resolve(baseUrl: String, api: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def resolve(baseUrl: String, api: Document, options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
-  inline def resolve(baseUrl: String, api: Document, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(baseUrl: String, api: Document[js.Object], options: Options): js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apidevtoolsSwaggerParser.mod.Refs]]
+  inline def resolve(baseUrl: String, api: Document[js.Object], options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def validate(api: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  inline def validate(api: String): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
   /**
     * Parses, dereferences, and validates the given Swagger API.
     * Depending on the options, validation can include JSON Schema validation and/or Swagger Spec validation.
@@ -163,17 +163,17 @@ object mod {
   /* static member */
   inline def validate(api: String, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def validate(api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def validate(api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def validate(api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validate(api: Document): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
-  inline def validate(api: Document, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validate(api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def validate(api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(api: Document[js.Object]): js.Promise[Document[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def validate(api: Document[js.Object], callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def validate(api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  inline def validate(baseUrl: String, api: String, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
+  inline def validate(baseUrl: String, api: String, options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
   /* static member */
   inline def validate(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validate(baseUrl: String, api: Document, options: Options): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
-  inline def validate(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(baseUrl: String, api: Document[js.Object], options: Options): js.Promise[Document[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document[js.Object]]]
+  inline def validate(baseUrl: String, api: Document[js.Object], options: Options, callback: ApiCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(baseUrl.asInstanceOf[js.Any], api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

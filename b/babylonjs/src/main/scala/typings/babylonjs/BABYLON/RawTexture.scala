@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +18,5 @@ trait RawTexture
     * Updates the texture underlying data.
     * @param data Define the new data of the texture
     */
-  def update(data: ArrayBufferView): Unit = js.native
+  def update(data: js.typedarray.ArrayBufferView): Unit = js.native
 }

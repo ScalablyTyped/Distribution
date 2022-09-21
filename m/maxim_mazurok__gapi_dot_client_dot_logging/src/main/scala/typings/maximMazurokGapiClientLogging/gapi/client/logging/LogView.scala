@@ -13,12 +13,12 @@ trait LogView extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Filter that restricts which log entries in a bucket are visible in this view. Filters are restricted to be a logical AND of ==/!= of any of the following: originating
-    * project/folder/organization/billing account. resource type log id Example: SOURCE("projects/myproject") AND resource.type = "gce_instance" AND LOG_ID("stdout")
+    * Filter that restricts which log entries in a bucket are visible in this view.Filters are restricted to be a logical AND of ==/!= of any of the following: originating
+    * project/folder/organization/billing account. resource type log idFor example:SOURCE("projects/myproject") AND resource.type = "gce_instance" AND LOG_ID("stdout")
     */
   var filter: js.UndefOr[String] = js.undefined
   
-  /** The resource name of the view. For example "projects/my-project-id/locations/my-location/buckets/my-bucket-id/views/my-view */
+  /** The resource name of the view.For example:projects/my-project/locations/global/buckets/my-bucket/views/my-view */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The last update timestamp of the view. */

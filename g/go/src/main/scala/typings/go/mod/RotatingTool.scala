@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.rotatingTool, which you can modify.
   */
-class RotatingTool () extends Tool {
+open class RotatingTool () extends Tool {
   
   /**This read-only property returns the GraphObject that is being rotated.*/
   var adornedObject: GraphObject = js.native

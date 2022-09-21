@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def fancytree(): typings.jqueryFancytree.Fancytree.Fancytree = js.native
-  def fancytree(option: String, rest: js.Any*): js.Any = js.native
-  def fancytree(option: Unit, rest: js.Any*): js.Any = js.native
+  def fancytree(option: String, rest: Any*): Any = js.native
+  def fancytree(option: Unit, rest: Any*): Any = js.native
   def fancytree(options: FancytreeOptions): typings.jqueryFancytree.Fancytree.Fancytree = js.native
 }

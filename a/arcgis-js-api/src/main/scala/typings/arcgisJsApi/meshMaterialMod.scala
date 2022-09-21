@@ -22,7 +22,7 @@ object meshMaterialMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MeshMaterial {
     def this(properties: MeshMaterialProperties) = this()

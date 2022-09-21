@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Target extends StObject {
   
   /**
-    * User-defined criteria for sending commands that target instances that meet the criteria.
+    * User-defined criteria for sending commands that target managed nodes that meet the criteria.
     */
   var Key: js.UndefOr[TargetKey] = js.undefined
   
   /**
-    * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include EC2 tags of ServerRole,WebServer. 
+    * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include EC2 tags of ServerRole,WebServer.  Depending on the type of target, the maximum number of values for a key might be lower than the global maximum of 50.
     */
   var Values: js.UndefOr[TargetValues] = js.undefined
 }
@@ -33,6 +33,6 @@ object Target {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: TargetValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TargetValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

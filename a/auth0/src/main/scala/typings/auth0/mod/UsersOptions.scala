@@ -8,7 +8,7 @@ trait UsersOptions
   extends StObject
      with BaseClientOptions {
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
 }
 object UsersOptions {
   
@@ -19,7 +19,7 @@ object UsersOptions {
   
   extension [Self <: UsersOptions](x: Self) {
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }

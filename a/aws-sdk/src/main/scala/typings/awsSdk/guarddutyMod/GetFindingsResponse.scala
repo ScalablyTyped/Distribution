@@ -22,6 +22,6 @@ object GetFindingsResponse {
     
     inline def setFindings(value: Findings): Self = StObject.set(x, "Findings", value.asInstanceOf[js.Any])
     
-    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "Findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "Findings", js.Array(value*))
   }
 }

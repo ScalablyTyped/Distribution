@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("tingle.js", "modal")
   @js.native
-  class modal () extends StObject {
+  open class modal () extends StObject {
     def this(options: Options) = this()
     
     def addFooterBtn(label: String): HTMLButtonElement = js.native
@@ -20,12 +20,12 @@ object mod {
     def addFooterBtn(
       label: String,
       cssClass: String,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]
     ): HTMLButtonElement = js.native
     def addFooterBtn(
       label: String,
       cssClass: Unit,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]
     ): HTMLButtonElement = js.native
     
     def checkOverflow(): Unit = js.native
@@ -97,13 +97,13 @@ object mod {
       
       inline def setCloseMethodsUndefined: Self = StObject.set(x, "closeMethods", js.undefined)
       
-      inline def setCloseMethodsVarargs(value: String*): Self = StObject.set(x, "closeMethods", js.Array(value :_*))
+      inline def setCloseMethodsVarargs(value: String*): Self = StObject.set(x, "closeMethods", js.Array(value*))
       
       inline def setCssClass(value: js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
+      inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value*))
       
       inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       

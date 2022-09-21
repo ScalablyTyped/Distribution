@@ -29,7 +29,7 @@ trait Static
   var jsonp_Original: Fn0 = js.native
   
   def mount(element: Element, component: Null): Unit = js.native
-  def mount(element: Element, component: ComponentTypes[js.Any, js.Any]): Unit = js.native
+  def mount(element: Element, component: ComponentTypes[Any, Any]): Unit = js.native
   @JSName("mount")
   var mount_Original: FnCallElementComponent = js.native
   

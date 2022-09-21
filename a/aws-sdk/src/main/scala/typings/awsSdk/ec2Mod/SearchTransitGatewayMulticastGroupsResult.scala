@@ -29,7 +29,7 @@ object SearchTransitGatewayMulticastGroupsResult {
     
     inline def setMulticastGroupsUndefined: Self = StObject.set(x, "MulticastGroups", js.undefined)
     
-    inline def setMulticastGroupsVarargs(value: TransitGatewayMulticastGroup*): Self = StObject.set(x, "MulticastGroups", js.Array(value :_*))
+    inline def setMulticastGroupsVarargs(value: TransitGatewayMulticastGroup*): Self = StObject.set(x, "MulticastGroups", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

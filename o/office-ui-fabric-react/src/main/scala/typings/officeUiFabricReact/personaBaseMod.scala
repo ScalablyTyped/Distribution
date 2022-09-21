@@ -10,23 +10,23 @@ object personaBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase")
   @js.native
-  class PersonaBase protected ()
-    extends Component[IPersonaProps, js.Object, js.Any] {
+  open class PersonaBase protected ()
+    extends Component[IPersonaProps, js.Object, Any] {
     def this(props: IPersonaProps) = this()
     
     /**
       * Deprecation helper for getting text.
       */
-    /* private */ var _getText: js.Any = js.native
+    /* private */ var _getText: Any = js.native
     
-    /* private */ var _onRenderPersonaCoin: js.Any = js.native
+    /* private */ var _onRenderPersonaCoin: Any = js.native
     
     /**
       * using closure to wrap the default render behavior
       * to make it independent of the type of text passed
       * @param text - text to render
       */
-    /* private */ var _onRenderText: js.Any = js.native
+    /* private */ var _onRenderText: Any = js.native
     
     /**
       * Renders various types of Text (primaryText, secondaryText, etc)
@@ -35,7 +35,7 @@ object personaBaseMod {
       * @param renderFunction - render function
       * @param defaultRenderFunction - default render function
       */
-    /* private */ var _renderElement: js.Any = js.native
+    /* private */ var _renderElement: Any = js.native
   }
   /* static members */
   object PersonaBase {

@@ -15,7 +15,7 @@ trait EQ
     *   p5.Filter API, especially gain and freq. Bands are
     *   stored in an array, with indices 0 - 3, or 0 - 7
     */
-  var bands: js.Array[js.Any] = js.native
+  var bands: js.Array[Any] = js.native
   
   /**
     *   Process an input by connecting it to the EQ

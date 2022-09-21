@@ -8,21 +8,20 @@ import typings.konva.containerMod.Container
 import typings.konva.containerMod.ContainerConfig
 import typings.konva.contextMod.Context
 import typings.konva.groupMod.Group
-import typings.konva.nodeMod.Node
-import typings.konva.nodeMod.NodeConfig
 import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.Vector2d
+import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
   
-  @JSImport("konva/types/Layer", "Layer")
+  @JSImport("konva/lib/Layer", "Layer")
   @js.native
-  class Layer () extends Container[Group | Shape[ShapeConfig]] {
+  open class Layer () extends Container[Group | Shape[ShapeConfig]] {
     def this(config: LayerConfig) = this()
     
     def _checkVisibility(): Unit = js.native
@@ -31,7 +30,7 @@ object layerMod {
     
     def _setSmoothEnabled(): Unit = js.native
     
-    def _validateAdd(child: js.Any): Unit = js.native
+    def _validateAdd(child: Any): Unit = js.native
     
     var _waitingForDraw: Boolean = js.native
     
@@ -40,20 +39,16 @@ object layerMod {
     var canvas: SceneCanvas = js.native
     
     def clear(): this.type = js.native
-    def clear(bounds: js.Any): this.type = js.native
+    def clear(bounds: Any): this.type = js.native
     
     def clearBeforeDraw(): Boolean = js.native
     def clearBeforeDraw(v: Boolean): this.type = js.native
     @JSName("clearBeforeDraw")
     var clearBeforeDraw_Original: GetSet[Boolean, this.type] = js.native
     
-    def createPNGStream(): js.Any = js.native
+    def createPNGStream(): Any = js.native
     
     def disableHitGraph(): this.type = js.native
-    
-    def drawHit(can: js.Any, top: js.Any): this.type = js.native
-    
-    def drawScene(can: js.Any, top: js.Any): this.type = js.native
     
     def enableHitGraph(): this.type = js.native
     
@@ -65,10 +60,11 @@ object layerMod {
     
     def getHitCanvas(): HitCanvas = js.native
     
-    def getHitGraphEnabled(`val`: js.Any): Boolean = js.native
+    def getHitGraphEnabled(`val`: Any): Boolean = js.native
     
-    def getIntersection(pos: Vector2d): Node[NodeConfig] | Null = js.native
-    def getIntersection(pos: Vector2d, selector: String): Node[NodeConfig] | Null = js.native
+    def getIntersection(pos: Vector2d): Shape[ShapeConfig] = js.native
+    
+    def getNativeCanvasElement(): HTMLCanvasElement = js.native
     
     def getWidth(): Double = js.native
     
@@ -86,7 +82,7 @@ object layerMod {
     
     def setHeight(): Unit = js.native
     
-    def setHitGraphEnabled(`val`: js.Any): Unit = js.native
+    def setHitGraphEnabled(`val`: Any): Unit = js.native
     
     def setSize(hasWidthHeight: Height): this.type = js.native
     

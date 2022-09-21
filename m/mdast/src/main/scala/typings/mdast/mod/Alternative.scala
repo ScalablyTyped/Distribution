@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Alternative extends StObject {
   
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String | Null] = js.undefined
 }
 object Alternative {
   
@@ -18,6 +18,8 @@ object Alternative {
   extension [Self <: Alternative](x: Self) {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltNull: Self = StObject.set(x, "alt", null)
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
   }

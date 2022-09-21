@@ -1,7 +1,6 @@
 package typings.relayRuntime.anon
 
 import typings.relayRuntime.relayRuntimeStrings.queryresourceDotfetch
-import typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
@@ -10,18 +9,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<{  name :'queryresource.fetch',   resourceID :number,   operation :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationDescriptor,   profilerContext :any,   fetchPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.FetchPolicy,   renderPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.RenderPolicy,   queryAvailability :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationAvailability,   shouldFetch :boolean}> */
+/* Inlined std.Readonly<{  name :'queryresource.fetch',   resourceID :number,   operation :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationDescriptor,   profilerContext :unknown,   fetchPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.FetchPolicy,   renderPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.RenderPolicy,   queryAvailability :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationAvailability,   shouldFetch :boolean}> */
 trait Readonlynamequeryresource
   extends StObject
      with LogEvent {
   
-  val fetchPolicy: FetchPolicy
+  val fetchPolicy: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
   
   val name: queryresourceDotfetch
   
   val operation: OperationDescriptor
   
-  val profilerContext: js.Any
+  val profilerContext: Any
   
   val queryAvailability: OperationAvailability
   
@@ -34,9 +33,9 @@ trait Readonlynamequeryresource
 object Readonlynamequeryresource {
   
   inline def apply(
-    fetchPolicy: FetchPolicy,
+    fetchPolicy: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy,
     operation: OperationDescriptor,
-    profilerContext: js.Any,
+    profilerContext: Any,
     queryAvailability: OperationAvailability,
     renderPolicy: RenderPolicy,
     resourceID: Double,
@@ -48,13 +47,13 @@ object Readonlynamequeryresource {
   
   extension [Self <: Readonlynamequeryresource](x: Self) {
     
-    inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     inline def setName(value: queryresourceDotfetch): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    inline def setProfilerContext(value: js.Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
+    inline def setProfilerContext(value: Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
     
     inline def setQueryAvailability(value: OperationAvailability): Self = StObject.set(x, "queryAvailability", value.asInstanceOf[js.Any])
     

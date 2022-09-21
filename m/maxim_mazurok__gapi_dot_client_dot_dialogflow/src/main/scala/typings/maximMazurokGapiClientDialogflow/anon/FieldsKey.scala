@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
-import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowV2BatchUpdateIntentsRequest
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait FieldsKey extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the agent to update or create intents in. Format: `projects//agent`. */
+  /** Required. The Agent to create an Environment for. Format: `projects//locations//agents/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDialogflowV2BatchUpdateIntentsRequest
+  var resource: GoogleCloudDialogflowCxV3Environment
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(parent: String, resource: GoogleCloudDialogflowV2BatchUpdateIntentsRequest): FieldsKey = {
+  inline def apply(parent: String, resource: GoogleCloudDialogflowCxV3Environment): FieldsKey = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -94,7 +94,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDialogflowV2BatchUpdateIntentsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDialogflowCxV3Environment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

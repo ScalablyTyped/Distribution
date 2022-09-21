@@ -29,30 +29,30 @@ object Algorithms {
     
     inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
     
-    inline def setCipherVarargs(value: String*): Self = StObject.set(x, "cipher", js.Array(value :_*))
+    inline def setCipherVarargs(value: String*): Self = StObject.set(x, "cipher", js.Array(value*))
     
     inline def setCompress(value: js.Array[String]): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    inline def setCompressVarargs(value: String*): Self = StObject.set(x, "compress", js.Array(value :_*))
+    inline def setCompressVarargs(value: String*): Self = StObject.set(x, "compress", js.Array(value*))
     
     inline def setHmac(value: js.Array[String]): Self = StObject.set(x, "hmac", value.asInstanceOf[js.Any])
     
     inline def setHmacUndefined: Self = StObject.set(x, "hmac", js.undefined)
     
-    inline def setHmacVarargs(value: String*): Self = StObject.set(x, "hmac", js.Array(value :_*))
+    inline def setHmacVarargs(value: String*): Self = StObject.set(x, "hmac", js.Array(value*))
     
     inline def setKex(value: js.Array[String]): Self = StObject.set(x, "kex", value.asInstanceOf[js.Any])
     
     inline def setKexUndefined: Self = StObject.set(x, "kex", js.undefined)
     
-    inline def setKexVarargs(value: String*): Self = StObject.set(x, "kex", js.Array(value :_*))
+    inline def setKexVarargs(value: String*): Self = StObject.set(x, "kex", js.Array(value*))
     
     inline def setServerHostKey(value: js.Array[String]): Self = StObject.set(x, "serverHostKey", value.asInstanceOf[js.Any])
     
     inline def setServerHostKeyUndefined: Self = StObject.set(x, "serverHostKey", js.undefined)
     
-    inline def setServerHostKeyVarargs(value: String*): Self = StObject.set(x, "serverHostKey", js.Array(value :_*))
+    inline def setServerHostKeyVarargs(value: String*): Self = StObject.set(x, "serverHostKey", js.Array(value*))
   }
 }

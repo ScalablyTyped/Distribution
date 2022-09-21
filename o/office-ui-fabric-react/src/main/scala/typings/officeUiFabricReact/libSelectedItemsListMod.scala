@@ -11,28 +11,28 @@ object libSelectedItemsListMod {
   
   @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "BasePeopleSelectedItemsList")
   @js.native
-  class BasePeopleSelectedItemsList protected ()
+  open class BasePeopleSelectedItemsList protected ()
     extends typings.officeUiFabricReact.selectedItemsListMod.BasePeopleSelectedItemsList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "BaseSelectedItemsList")
   @js.native
-  class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
+  open class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
     extends typings.officeUiFabricReact.selectedItemsListMod.BaseSelectedItemsList[T, P] {
     def this(basePickerProps: P) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "ExtendedSelectedItem")
   @js.native
-  class ExtendedSelectedItem protected ()
+  open class ExtendedSelectedItem protected ()
     extends typings.officeUiFabricReact.selectedItemsListMod.ExtendedSelectedItem {
     def this(props: ISelectedPeopleItemProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList")
   @js.native
-  class SelectedPeopleList protected ()
+  open class SelectedPeopleList protected ()
     extends typings.officeUiFabricReact.selectedItemsListMod.SelectedPeopleList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
   }
@@ -45,7 +45,7 @@ object libSelectedItemsListMod {
     
     @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

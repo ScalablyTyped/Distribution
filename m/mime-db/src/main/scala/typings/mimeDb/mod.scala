@@ -58,7 +58,7 @@ object mod extends Shortcut {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setSource(value: MimeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

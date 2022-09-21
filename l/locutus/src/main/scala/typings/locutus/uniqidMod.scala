@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uniqidMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(prefix: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(prefix: js.Any, moreEntropy: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(prefix: Unit, moreEntropy: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(prefix: Any): Any = ^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(prefix: Any, moreEntropy: Any): Any = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(prefix: Unit, moreEntropy: Any): Any = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/misc/uniqid", JSImport.Namespace)
   @js.native

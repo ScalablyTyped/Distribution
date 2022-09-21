@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +26,13 @@ object TestActionResultModel {
   inline def apply(
     actionPath: String,
     comment: String,
-    completedDate: Date,
+    completedDate: js.Date,
     durationInMs: Double,
     errorMessage: String,
     iterationId: Double,
     outcome: String,
     sharedStepModel: SharedStepModel,
-    startedDate: Date,
+    startedDate: js.Date,
     stepIdentifier: String,
     url: String
   ): TestActionResultModel = {

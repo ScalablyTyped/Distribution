@@ -11,11 +11,11 @@ object Tabs {
   
   @JSGlobal("__MaterialUI.Tabs.Tab")
   @js.native
-  class Tab ()
-    extends Component[TabProps, js.Object, js.Any]
+  open class Tab ()
+    extends Component[TabProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Tabs.Tabs")
   @js.native
-  class Tabs ()
-    extends Component[TabsProps, js.Object, js.Any]
+  open class Tabs ()
+    extends Component[TabsProps, js.Object, Any]
 }

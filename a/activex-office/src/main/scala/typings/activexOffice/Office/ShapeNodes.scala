@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ShapeNodes extends StObject {
   
-  def apply(Index: js.Any): ShapeNode = js.native
+  def apply(Index: Any): ShapeNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -179,9 +179,9 @@ trait ShapeNodes extends StObject {
     Y3: Double
   ): Unit = js.native
   
-  def Item(Index: js.Any): ShapeNode = js.native
+  def Item(Index: Any): ShapeNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SetEditingType(Index: Double, EditingType: MsoEditingType): Unit = js.native
   

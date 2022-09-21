@@ -17,7 +17,7 @@ object urlMatcherFactoryMod {
   
   @JSImport("@uirouter/core/lib/url/urlMatcherFactory", "ParamFactory")
   @js.native
-  class ParamFactory protected () extends StObject {
+  open class ParamFactory protected () extends StObject {
     def this(router: UIRouter) = this()
     
     def fromConfig(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
@@ -26,12 +26,12 @@ object urlMatcherFactoryMod {
     
     def fromSearch(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
   }
   
   @JSImport("@uirouter/core/lib/url/urlMatcherFactory", "UrlMatcherFactory")
   @js.native
-  class UrlMatcherFactory protected () extends StObject {
+  open class UrlMatcherFactory protected () extends StObject {
     def this(/** @internal */ router: UIRouter) = this()
     
     /** @internal */
@@ -68,21 +68,21 @@ object urlMatcherFactoryMod {
       * @returns `true` if the object matches the `UrlMatcher` interface, by
       *          implementing all the same methods.
       */
-    def isMatcher(`object`: js.Any): Boolean = js.native
+    def isMatcher(`object`: Any): Boolean = js.native
     
     /** Creates a new [[Param]] for a given location (DefType) */
     var paramFactory: ParamFactory = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /** @deprecated use [[UrlConfig.strictMode]] */
     def strictMode(): Boolean = js.native
     def strictMode(value: Boolean): Boolean = js.native
     
     /** @deprecated use [[UrlConfig.type]] */
-    def `type`(name: String): js.Any = js.native
-    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
+    def `type`(name: String): Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
   }
 }

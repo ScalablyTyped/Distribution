@@ -23,7 +23,7 @@ trait AttachmentEditAttachment
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var data: js.UndefOr[Blob | js.Any | String] = js.undefined
+  var data: js.UndefOr[Blob | Any | String] = js.undefined
   
   /**
     * The globalId of the attachment to be added or updated.
@@ -64,7 +64,7 @@ object AttachmentEditAttachment {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setData(value: Blob | js.Any | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Blob | Any | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

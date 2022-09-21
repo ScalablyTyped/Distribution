@@ -56,7 +56,7 @@ object InlineTemplate {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     

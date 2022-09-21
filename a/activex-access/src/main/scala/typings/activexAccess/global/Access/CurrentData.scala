@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.CurrentData")
 @js.native
-/* private */ class CurrentData ()
+/* private */ open class CurrentData ()
   extends StObject
      with typings.activexAccess.Access.CurrentData {
   

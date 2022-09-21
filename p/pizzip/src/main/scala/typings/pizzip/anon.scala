@@ -1,6 +1,6 @@
 package typings.pizzip
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.processMod.global.NodeJS.Platform
 import typings.pizzip.mod.Compression
 import typings.pizzip.pizzipNumbers.`1`
@@ -20,7 +20,6 @@ import typings.pizzip.pizzipStrings.blob
 import typings.pizzip.pizzipStrings.nodebuffer
 import typings.pizzip.pizzipStrings.string
 import typings.pizzip.pizzipStrings.uint8array
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object anon {
     /**
       * @deprecated use File.date
       */
-    var date: Date
+    var date: js.Date
     
     /**
       * @deprecated use File.dir
@@ -53,7 +52,7 @@ object anon {
   }
   object Base64 {
     
-    inline def apply(base64: Boolean, binary: Boolean, compression: Compression, date: Date, dir: Boolean): Base64 = {
+    inline def apply(base64: Boolean, binary: Boolean, compression: Compression, date: js.Date, dir: Boolean): Base64 = {
       val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], compression = compression.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base64]
     }
@@ -66,7 +65,7 @@ object anon {
       
       inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }

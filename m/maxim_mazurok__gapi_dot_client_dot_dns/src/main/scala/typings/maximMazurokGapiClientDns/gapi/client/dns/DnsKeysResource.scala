@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DnsKeysResource extends StObject {
   
-  /** Fetch the representation of an existing DnsKey. */
+  /** Fetches the representation of an existing DnsKey. */
   def get(): Request[DnsKey] = js.native
   def get(request: ClientOperationId): Request[DnsKey] = js.native
   
-  /** Enumerate DnsKeys to a ResourceRecordSet collection. */
+  /** Enumerates DnsKeys to a ResourceRecordSet collection. */
   def list(): Request[DnsKeysListResponse] = js.native
   def list(request: DigestType): Request[DnsKeysListResponse] = js.native
 }

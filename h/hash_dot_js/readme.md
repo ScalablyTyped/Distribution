@@ -10,15 +10,12 @@ Various hash functions that could be run by both browser and node
 | ------------------ | :-------------: |
 | Full name          | hash.js |
 | Keywords           | hash, sha256, sha224, hmac |
-| # releases         | 0 |
-| # dependents       | 465 |
-| # downloads        | 485655701 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2863237666666664E7 |
+| # stars            | 296.0 |
 
 ## Links
-- [Homepage](https://github.com/indutny/hash.js)
-- [Bugs](https://github.com/indutny/hash.js/issues)
-- [Repository](https://github.com/indutny/hash.js)
 - [Npm](https://www.npmjs.com/package/hash.js)
     
 

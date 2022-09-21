@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__i18n
 
-Typings are for version 3.16.0
+Typings are for version 4.17.0
 
 ## Library description:
 WordPress internationalization (i18n) library.
@@ -10,10 +10,10 @@ WordPress internationalization (i18n) library.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/i18n |
 | Keywords           | wordpress, gutenberg, i18n |
-| # releases         | 20 |
-| # dependents       | 47 |
-| # downloads        | 1483969 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 252489.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/i18n/README.md)

@@ -21,5 +21,5 @@ Instantiable0[ISaturationFilter]
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): ISaturationFilter = js.native
+  def fromObject(`object`: Any): ISaturationFilter = js.native
 }

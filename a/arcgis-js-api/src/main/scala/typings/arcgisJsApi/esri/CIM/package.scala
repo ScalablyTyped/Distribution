@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CIMCalloutType = typings.arcgisJsApi.esri.CIM.CIMLineCallout
+type CIMCalloutType = CIMLineCallout
 
-type CIMFill = typings.arcgisJsApi.esri.CIM.CIMSymbolLayerBase
+type CIMFill = CIMSymbolLayerBase
 
-type CIMMarkerFillPlacement = typings.arcgisJsApi.esri.CIM.CIMMarkerPlacementBase
+type CIMMarkerFillPlacement = CIMMarkerPlacementBase

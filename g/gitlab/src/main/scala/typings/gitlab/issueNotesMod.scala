@@ -10,7 +10,7 @@ object issueNotesMod {
   
   @JSImport("gitlab/dist/types/core/services/IssueNotes", "IssueNotes")
   @js.native
-  class IssueNotes protected () extends ResourceNotes {
+  open class IssueNotes protected () extends ResourceNotes {
     def this(options: BaseServiceOptions) = this()
   }
 }

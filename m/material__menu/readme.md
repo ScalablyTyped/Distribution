@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__menu
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web menu component
@@ -10,10 +10,10 @@ The Material Components for the web menu component
 | ------------------ | :-------------: |
 | Full name          | @material/menu |
 | Keywords           | material components, material design, menu |
-| # releases         | 620 |
-| # dependents       | 57 |
-| # downloads        | 2319353 |
-| # stars            | 0 |
+| # releases         | 711 |
+| # dependents       | 0.0 |
+| # downloads        | 314813.0 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DescribeFormatOptions")
 @js.native
-class DescribeFormatOptions ()
+open class DescribeFormatOptions ()
   extends typings.nodegit.describeFormatOptionsMod.DescribeFormatOptions

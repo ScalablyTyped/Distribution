@@ -1,6 +1,5 @@
 package typings.workboxBuild
 
-import typings.std.RegExp
 import typings.std.Response
 import typings.workboxBuild.anon.ChannelName
 import typings.workboxBuild.anon.Headers
@@ -79,11 +78,11 @@ object typesMod {
       
       inline def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      inline def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value :_*))
+      inline def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value*))
       
       inline def setWarnings(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      inline def setWarningsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "warnings", js.Array(value*))
     }
   }
   
@@ -109,11 +108,11 @@ object typesMod {
       * The value that will be passed to [`registerRoute()`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-routing#.registerRoute),
       * used to determine whether the generated route will match a given request.
       */
-    var urlPattern: String | RegExp | RouteMatchCallback[js.Any]
+    var urlPattern: String | js.RegExp | RouteMatchCallback[Any]
   }
   object RuntimeCachingEntry {
     
-    inline def apply(handler: String | RouteHandlerCallback, urlPattern: String | RegExp | RouteMatchCallback[js.Any]): RuntimeCachingEntry = {
+    inline def apply(handler: String | RouteHandlerCallback, urlPattern: String | js.RegExp | RouteMatchCallback[Any]): RuntimeCachingEntry = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeCachingEntry]
     }
@@ -132,9 +131,9 @@ object typesMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setUrlPattern(value: String | RegExp | RouteMatchCallback[js.Any]): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+      inline def setUrlPattern(value: String | js.RegExp | RouteMatchCallback[Any]): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
       
-      inline def setUrlPatternFunction1(value: /* options */ RouteMatchCallbackOptions => js.Any): Self = StObject.set(x, "urlPattern", js.Any.fromFunction1(value))
+      inline def setUrlPatternFunction1(value: /* options */ RouteMatchCallbackOptions => Any): Self = StObject.set(x, "urlPattern", js.Any.fromFunction1(value))
     }
   }
   
@@ -223,7 +222,7 @@ object typesMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

@@ -14,7 +14,7 @@ trait Ingestion extends StObject {
   /**
     * The time that this ingestion started.
     */
-  var CreatedTime: timestamp
+  var CreatedTime: js.Date
   
   /**
     * Error information for this ingestion.
@@ -29,7 +29,7 @@ trait Ingestion extends StObject {
   /**
     * The size of the data ingested, in bytes.
     */
-  var IngestionSizeInBytes: js.UndefOr[long] = js.undefined
+  var IngestionSizeInBytes: js.UndefOr[Long] = js.undefined
   
   /**
     * Ingestion status.
@@ -39,7 +39,7 @@ trait Ingestion extends StObject {
   /**
     * The time that this ingestion took, measured in seconds.
     */
-  var IngestionTimeInSeconds: js.UndefOr[long] = js.undefined
+  var IngestionTimeInSeconds: js.UndefOr[Long] = js.undefined
   
   var QueueInfo: js.UndefOr[typings.awsSdk.quicksightMod.QueueInfo] = js.undefined
   
@@ -57,7 +57,7 @@ trait Ingestion extends StObject {
 }
 object Ingestion {
   
-  inline def apply(Arn: Arn, CreatedTime: timestamp, IngestionStatus: IngestionStatus): Ingestion = {
+  inline def apply(Arn: Arn, CreatedTime: js.Date, IngestionStatus: IngestionStatus): Ingestion = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreatedTime = CreatedTime.asInstanceOf[js.Any], IngestionStatus = IngestionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ingestion]
   }
@@ -66,7 +66,7 @@ object Ingestion {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedTime(value: timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "ErrorInfo", value.asInstanceOf[js.Any])
     
@@ -76,13 +76,13 @@ object Ingestion {
     
     inline def setIngestionIdUndefined: Self = StObject.set(x, "IngestionId", js.undefined)
     
-    inline def setIngestionSizeInBytes(value: long): Self = StObject.set(x, "IngestionSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setIngestionSizeInBytes(value: Long): Self = StObject.set(x, "IngestionSizeInBytes", value.asInstanceOf[js.Any])
     
     inline def setIngestionSizeInBytesUndefined: Self = StObject.set(x, "IngestionSizeInBytes", js.undefined)
     
     inline def setIngestionStatus(value: IngestionStatus): Self = StObject.set(x, "IngestionStatus", value.asInstanceOf[js.Any])
     
-    inline def setIngestionTimeInSeconds(value: long): Self = StObject.set(x, "IngestionTimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setIngestionTimeInSeconds(value: Long): Self = StObject.set(x, "IngestionTimeInSeconds", value.asInstanceOf[js.Any])
     
     inline def setIngestionTimeInSecondsUndefined: Self = StObject.set(x, "IngestionTimeInSeconds", js.undefined)
     

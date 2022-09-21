@@ -61,7 +61,7 @@ object XDiagramPositioning {
     calculateDiagramPositionIncludingAxesAndAxisTitles: () => Rectangle,
     isAutomaticDiagramPositioning: () => Boolean,
     isExcludingDiagramPositioning: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAutomaticDiagramPositioning: () => Unit,
     setDiagramPositionExcludingAxes: Rectangle => Unit,

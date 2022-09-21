@@ -1,13 +1,12 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.baseline
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.center
-import typings.arcgisJsApi.arcgisJsApiStrings.justify
-import typings.arcgisJsApi.arcgisJsApiStrings.left
+import typings.arcgisJsApi.arcgisJsApiStrings.baseline_
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
+import typings.arcgisJsApi.arcgisJsApiStrings.left_
 import typings.arcgisJsApi.arcgisJsApiStrings.middle
-import typings.arcgisJsApi.arcgisJsApiStrings.right
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.right_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +17,8 @@ trait TextSymbolProperties
   
   /**
     * The angle of the text.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#angle)
     */
@@ -68,12 +69,16 @@ trait TextSymbolProperties
   /**
     * Adjusts the horizontal alignment of the text in multi-lines.
     *
+    * @default "center"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     */
-  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
+  var horizontalAlignment: js.UndefOr[left_ | right_ | center_] = js.undefined
   
   /**
     * Determines whether to adjust the spacing between characters in the text string.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#kerning)
     */
@@ -82,6 +87,8 @@ trait TextSymbolProperties
   /**
     * The height of the space between each line of text.
     *
+    * @default 1.0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineHeight)
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
@@ -89,12 +96,16 @@ trait TextSymbolProperties
   /**
     * The maximum length in points for each line of text.
     *
+    * @default 192
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth)
     */
   var lineWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Determines whether every character in the text string is rotated.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#rotated)
     */
@@ -110,12 +121,16 @@ trait TextSymbolProperties
   /**
     * Adjusts the vertical alignment of the text.
     *
+    * @default "baseline"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#verticalAlignment)
     */
-  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
+  var verticalAlignment: js.UndefOr[baseline_ | top_ | middle | bottom_] = js.undefined
   
   /**
     * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#xoffset)
     */
@@ -123,6 +138,8 @@ trait TextSymbolProperties
   
   /**
     * The offset on the y-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#yoffset)
     */
@@ -145,13 +162,13 @@ object TextSymbolProperties {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setBorderLineColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "borderLineColor", value.asInstanceOf[js.Any])
     
     inline def setBorderLineColorUndefined: Self = StObject.set(x, "borderLineColor", js.undefined)
     
-    inline def setBorderLineColorVarargs(value: Double*): Self = StObject.set(x, "borderLineColor", js.Array(value :_*))
+    inline def setBorderLineColorVarargs(value: Double*): Self = StObject.set(x, "borderLineColor", js.Array(value*))
     
     inline def setBorderLineSize(value: Double): Self = StObject.set(x, "borderLineSize", value.asInstanceOf[js.Any])
     
@@ -165,13 +182,13 @@ object TextSymbolProperties {
     
     inline def setHaloColorUndefined: Self = StObject.set(x, "haloColor", js.undefined)
     
-    inline def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value :_*))
+    inline def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value*))
     
     inline def setHaloSize(value: Double | String): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
     
     inline def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
     
-    inline def setHorizontalAlignment(value: left | right | center | justify): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: left_ | right_ | center_): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
@@ -195,7 +212,7 @@ object TextSymbolProperties {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setVerticalAlignment(value: baseline | top | middle | bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: baseline_ | top_ | middle | bottom_): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     

@@ -9,9 +9,12 @@ trait MultiMaterial
   extends StObject
      with Material {
   
-  /* private */ var _hookArray: js.Any = js.native
+  /* private */ var _hookArray: Any = js.native
   
-  /* private */ var _subMaterials: js.Any = js.native
+  /* private */ var _subMaterials: Any = js.native
+  
+  /** @hidden */
+  var _waitingSubMaterialsUniqueIds: js.Array[String] = js.native
   
   def clone(name: String, cloneChildren: Boolean): MultiMaterial = js.native
   

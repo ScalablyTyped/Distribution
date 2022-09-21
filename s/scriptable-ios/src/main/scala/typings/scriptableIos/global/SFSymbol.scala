@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SFSymbol")
 @js.native
-/* private */ class SFSymbol ()
+/* private */ open class SFSymbol ()
   extends StObject
      with typings.scriptableIos.SFSymbol {
   
@@ -102,7 +102,7 @@ object SFSymbol {
     *
     * SF symbols are Apple's configurable icons that are designed to look great with the San Francisco font.
     *
-    * Symbols are referenced by their name. You can find the symbol names in [Apples SF Symbols app for macOS](https://developer.apple.com/sf-symbols/). You can also browse symbol names
+    * Symbols are referenced by their name. You can find the symbol names in [Apple's SF Symbols app for macOS](https://developer.apple.com/sf-symbols/). You can also browse symbol names
     * in the [SF Symbols Browser](https://apps.apple.com/us/app/sf-symbols-browser/id1491161336) and [San Fransymbols](https://apps.apple.com/us/app/san-fransymbols/id1504761986) apps
     * for iOS.
     * @param symbolName - Name of the symbol.

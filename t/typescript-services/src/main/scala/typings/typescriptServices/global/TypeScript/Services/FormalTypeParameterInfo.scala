@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.FormalTypeParameterInfo")
 @js.native
-class FormalTypeParameterInfo ()
+open class FormalTypeParameterInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.FormalTypeParameterInfo {
   

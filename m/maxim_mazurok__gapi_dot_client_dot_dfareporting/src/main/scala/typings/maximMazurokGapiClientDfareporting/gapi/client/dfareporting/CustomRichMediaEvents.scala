@@ -25,7 +25,7 @@ object CustomRichMediaEvents {
     
     inline def setFilteredEventIdsUndefined: Self = StObject.set(x, "filteredEventIds", js.undefined)
     
-    inline def setFilteredEventIdsVarargs(value: DimensionValue*): Self = StObject.set(x, "filteredEventIds", js.Array(value :_*))
+    inline def setFilteredEventIdsVarargs(value: DimensionValue*): Self = StObject.set(x, "filteredEventIds", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

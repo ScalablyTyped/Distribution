@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-notarize" : "1.0.0"
+      "electron-notarize" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-notarize" : "1.0.0"
+      "electron-notarize" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

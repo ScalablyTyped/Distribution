@@ -16,15 +16,15 @@ trait SavedQueriesResource extends StObject {
   /** Creates a saved query. */
   def create(request: UploadType): Request[SavedQuery] = js.native
   
-  /** Deletes a saved query by Id. */
+  /** Deletes the specified saved query. */
   def delete(): Request[js.Object] = js.native
   def delete(request: SavedQueryId): Request[js.Object] = js.native
   
-  /** Retrieves a saved query by Id. */
+  /** Retrieves the specified saved query. */
   def get(): Request[SavedQuery] = js.native
   def get(request: SavedQueryId): Request[SavedQuery] = js.native
   
-  /** Lists saved queries within a matter. An empty page token in ListSavedQueriesResponse denotes no more saved queries to list. */
+  /** Lists the saved queries in a matter. */
   def list(): Request[ListSavedQueriesResponse] = js.native
   def list(request: Fields): Request[ListSavedQueriesResponse] = js.native
 }

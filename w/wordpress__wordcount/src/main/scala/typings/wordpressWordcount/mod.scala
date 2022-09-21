@@ -1,6 +1,5 @@
 package typings.wordpressWordcount
 
-import typings.std.RegExp
 import typings.wordpressWordcount.anon.PartialSettings
 import typings.wordpressWordcount.anon.Shortcodes
 import org.scalablytyped.runtime.StObject
@@ -33,43 +32,43 @@ object mod {
   
   trait Settings extends StObject {
     
-    var HTMLEntityRegExp: RegExp
+    var HTMLEntityRegExp: js.RegExp
     
-    var HTMLRegExp: RegExp
+    var HTMLRegExp: js.RegExp
     
-    var HTMLcommentRegExp: RegExp
+    var HTMLcommentRegExp: js.RegExp
     
-    var astralRegExp: RegExp
+    var astralRegExp: js.RegExp
     
-    var characters_excluding_spacesRegExp: RegExp
+    var characters_excluding_spacesRegExp: js.RegExp
     
-    var characters_including_spacesRegExp: RegExp
+    var characters_including_spacesRegExp: js.RegExp
     
-    var connectorRegExp: RegExp
+    var connectorRegExp: js.RegExp
     
     var l10n: Shortcodes
     
     /** Characters to be removed from input text. */
-    var removeRegExp: RegExp
+    var removeRegExp: js.RegExp
     
-    var spaceRegExp: RegExp
+    var spaceRegExp: js.RegExp
     
-    var wordsRegExp: RegExp
+    var wordsRegExp: js.RegExp
   }
   object Settings {
     
     inline def apply(
-      HTMLEntityRegExp: RegExp,
-      HTMLRegExp: RegExp,
-      HTMLcommentRegExp: RegExp,
-      astralRegExp: RegExp,
-      characters_excluding_spacesRegExp: RegExp,
-      characters_including_spacesRegExp: RegExp,
-      connectorRegExp: RegExp,
+      HTMLEntityRegExp: js.RegExp,
+      HTMLRegExp: js.RegExp,
+      HTMLcommentRegExp: js.RegExp,
+      astralRegExp: js.RegExp,
+      characters_excluding_spacesRegExp: js.RegExp,
+      characters_including_spacesRegExp: js.RegExp,
+      connectorRegExp: js.RegExp,
       l10n: Shortcodes,
-      removeRegExp: RegExp,
-      spaceRegExp: RegExp,
-      wordsRegExp: RegExp
+      removeRegExp: js.RegExp,
+      spaceRegExp: js.RegExp,
+      wordsRegExp: js.RegExp
     ): Settings = {
       val __obj = js.Dynamic.literal(HTMLEntityRegExp = HTMLEntityRegExp.asInstanceOf[js.Any], HTMLRegExp = HTMLRegExp.asInstanceOf[js.Any], HTMLcommentRegExp = HTMLcommentRegExp.asInstanceOf[js.Any], astralRegExp = astralRegExp.asInstanceOf[js.Any], characters_excluding_spacesRegExp = characters_excluding_spacesRegExp.asInstanceOf[js.Any], characters_including_spacesRegExp = characters_including_spacesRegExp.asInstanceOf[js.Any], connectorRegExp = connectorRegExp.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], removeRegExp = removeRegExp.asInstanceOf[js.Any], spaceRegExp = spaceRegExp.asInstanceOf[js.Any], wordsRegExp = wordsRegExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
@@ -77,27 +76,27 @@ object mod {
     
     extension [Self <: Settings](x: Self) {
       
-      inline def setAstralRegExp(value: RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
+      inline def setAstralRegExp(value: js.RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
       
-      inline def setCharacters_excluding_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_excluding_spacesRegExp", value.asInstanceOf[js.Any])
+      inline def setCharacters_excluding_spacesRegExp(value: js.RegExp): Self = StObject.set(x, "characters_excluding_spacesRegExp", value.asInstanceOf[js.Any])
       
-      inline def setCharacters_including_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_including_spacesRegExp", value.asInstanceOf[js.Any])
+      inline def setCharacters_including_spacesRegExp(value: js.RegExp): Self = StObject.set(x, "characters_including_spacesRegExp", value.asInstanceOf[js.Any])
       
-      inline def setConnectorRegExp(value: RegExp): Self = StObject.set(x, "connectorRegExp", value.asInstanceOf[js.Any])
+      inline def setConnectorRegExp(value: js.RegExp): Self = StObject.set(x, "connectorRegExp", value.asInstanceOf[js.Any])
       
-      inline def setHTMLEntityRegExp(value: RegExp): Self = StObject.set(x, "HTMLEntityRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLEntityRegExp(value: js.RegExp): Self = StObject.set(x, "HTMLEntityRegExp", value.asInstanceOf[js.Any])
       
-      inline def setHTMLRegExp(value: RegExp): Self = StObject.set(x, "HTMLRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLRegExp(value: js.RegExp): Self = StObject.set(x, "HTMLRegExp", value.asInstanceOf[js.Any])
       
-      inline def setHTMLcommentRegExp(value: RegExp): Self = StObject.set(x, "HTMLcommentRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLcommentRegExp(value: js.RegExp): Self = StObject.set(x, "HTMLcommentRegExp", value.asInstanceOf[js.Any])
       
       inline def setL10n(value: Shortcodes): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      inline def setRemoveRegExp(value: RegExp): Self = StObject.set(x, "removeRegExp", value.asInstanceOf[js.Any])
+      inline def setRemoveRegExp(value: js.RegExp): Self = StObject.set(x, "removeRegExp", value.asInstanceOf[js.Any])
       
-      inline def setSpaceRegExp(value: RegExp): Self = StObject.set(x, "spaceRegExp", value.asInstanceOf[js.Any])
+      inline def setSpaceRegExp(value: js.RegExp): Self = StObject.set(x, "spaceRegExp", value.asInstanceOf[js.Any])
       
-      inline def setWordsRegExp(value: RegExp): Self = StObject.set(x, "wordsRegExp", value.asInstanceOf[js.Any])
+      inline def setWordsRegExp(value: js.RegExp): Self = StObject.set(x, "wordsRegExp", value.asInstanceOf[js.Any])
     }
   }
 }

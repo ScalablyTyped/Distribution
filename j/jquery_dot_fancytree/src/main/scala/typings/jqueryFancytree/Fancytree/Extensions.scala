@@ -11,43 +11,43 @@ object Extensions {
   
   trait DragAndDrop5
     extends StObject
-       with /* extension */ StringDictionary[js.Any] {
+       with /* extension */ StringDictionary[Any] {
     
     /**
       * Expand nodes after n milliseconds of hovering.
       */
     var autoExpandMS: js.UndefOr[Double] = js.undefined
     
-    var dragDrag: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragDrag: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Events (drag drop)
       */
-    var dragDrop: js.UndefOr[js.Function2[/* node */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragDrop: js.UndefOr[js.Function2[/* node */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
-    var dragEnd: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragEnd: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Callback(targetNode, data), return true, to enable dnd drop
       */
-    var dragEnter: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragEnter: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Callback(targetNode, data), return false to prevent autoExpand
       */
-    var dragExpand: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragExpand: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
-    var dragLeave: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragLeave: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Events (drag over)
       */
-    var dragOver: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragOver: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Callback(sourceNode, data), return true, to enable dnd drag
       */
-    var dragStart: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
+    var dragStart: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ Any, Unit]] = js.undefined
     
     /**
       * Additional offset for drop-marker with hitMode = "before"/"after"
@@ -117,35 +117,35 @@ object Extensions {
       
       inline def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
       
-      inline def setDragDrag(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrag", js.Any.fromFunction2(value))
+      inline def setDragDrag(value: (/* sourceNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragDrag", js.Any.fromFunction2(value))
       
       inline def setDragDragUndefined: Self = StObject.set(x, "dragDrag", js.undefined)
       
-      inline def setDragDrop(value: (/* node */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrop", js.Any.fromFunction2(value))
+      inline def setDragDrop(value: (/* node */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragDrop", js.Any.fromFunction2(value))
       
       inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
       
-      inline def setDragEnd(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
+      inline def setDragEnd(value: (/* sourceNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
       
       inline def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
       
-      inline def setDragEnter(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
+      inline def setDragEnter(value: (/* targetNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
       
       inline def setDragEnterUndefined: Self = StObject.set(x, "dragEnter", js.undefined)
       
-      inline def setDragExpand(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragExpand", js.Any.fromFunction2(value))
+      inline def setDragExpand(value: (/* targetNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragExpand", js.Any.fromFunction2(value))
       
       inline def setDragExpandUndefined: Self = StObject.set(x, "dragExpand", js.undefined)
       
-      inline def setDragLeave(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
+      inline def setDragLeave(value: (/* targetNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
       
       inline def setDragLeaveUndefined: Self = StObject.set(x, "dragLeave", js.undefined)
       
-      inline def setDragOver(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
+      inline def setDragOver(value: (/* targetNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
       
       inline def setDragOverUndefined: Self = StObject.set(x, "dragOver", js.undefined)
       
-      inline def setDragStart(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
+      inline def setDragStart(value: (/* sourceNode */ FancytreeNode, /* data */ Any) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
       
       inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
       
@@ -200,7 +200,7 @@ object Extensions {
     */
   trait Filter
     extends StObject
-       with /* extension */ StringDictionary[js.Any] {
+       with /* extension */ StringDictionary[Any] {
     
     /**
       * Re-apply last filter if lazy data is loaded
@@ -305,7 +305,7 @@ object Extensions {
   
   trait List
     extends StObject
-       with /* extension */ StringDictionary[js.Any] {
+       with /* extension */ StringDictionary[Any] {
     
     var dnd5: js.UndefOr[DragAndDrop5] = js.undefined
     
@@ -341,12 +341,12 @@ object Extensions {
     */
   trait Table
     extends StObject
-       with /* extension */ StringDictionary[js.Any] {
+       with /* extension */ StringDictionary[Any] {
     
     /**
       * Render the checkboxes into the this column index (default: nodeColumnIdx)
       */
-    var checkboxColumnIdx: js.Any
+    var checkboxColumnIdx: Any
     
     /**
       * Indent every node level by 16px; default: 16
@@ -360,14 +360,14 @@ object Extensions {
   }
   object Table {
     
-    inline def apply(checkboxColumnIdx: js.Any, indentation: Double, nodeColumnIdx: Double): Table = {
+    inline def apply(checkboxColumnIdx: Any, indentation: Double, nodeColumnIdx: Double): Table = {
       val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx.asInstanceOf[js.Any], indentation = indentation.asInstanceOf[js.Any], nodeColumnIdx = nodeColumnIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
     
     extension [Self <: Table](x: Self) {
       
-      inline def setCheckboxColumnIdx(value: js.Any): Self = StObject.set(x, "checkboxColumnIdx", value.asInstanceOf[js.Any])
+      inline def setCheckboxColumnIdx(value: Any): Self = StObject.set(x, "checkboxColumnIdx", value.asInstanceOf[js.Any])
       
       inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
       

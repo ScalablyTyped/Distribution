@@ -10,10 +10,10 @@ A full-featured user interface for managing tags with Bulma supporting autocompl
 | ------------------ | :-------------: |
 | Full name          | @creativebulma/bulma-tagsinput |
 | Keywords           | tags, input, tagsinput, autocomplete, autocompletion, typehead, ui, component, extension, html, html5, css3, sass, bulma, bulmaio, bulma.io |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 12859 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4083.6666666666665 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/CreativeBulma/bulma-tagsinput)

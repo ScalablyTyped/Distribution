@@ -1,7 +1,7 @@
 package typings.nodeRedEditorClient.mod
 
-import typings.nodeRedEditorClient.anon.GroupsLinks
-import typings.nodeRedEditorClient.anon.LinksNodes
+import typings.nodeRedEditorClient.anon.Groups
+import typings.nodeRedEditorClient.anon.Links
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -246,7 +246,7 @@ trait Nodes extends StObject {
   
   var registry: NodesRegistry = js.native
   
-  def remove(id: String): LinksNodes = js.native
+  def remove(id: String): Links = js.native
   
   def removeGroup(group: js.Object): Unit = js.native
   
@@ -258,7 +258,7 @@ trait Nodes extends StObject {
   
   def removeSubflow(sf: js.Object): Unit = js.native
   
-  def removeWorkspace(id: String): GroupsLinks = js.native
+  def removeWorkspace(id: String): Groups = js.native
   
   def setIconSets(sets: Record[String, js.Array[String]]): Unit = js.native
   @JSName("setIconSets")

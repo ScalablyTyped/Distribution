@@ -10,10 +10,10 @@ DOM like data structure to be mutated by D3 et al, then rendered to React elemen
 | ------------------ | :-------------: |
 | Full name          | react-faux-dom |
 | Keywords           | d3, react, dom, virtual |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 904745 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 94504.0 |
+| # stars            | 1214.0 |
 
 ## Links
 - [Homepage](https://github.com/Olical/react-faux-dom#readme)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "ComposedChart")
 @js.native
-class ComposedChart protected ()
-  extends Component[ComposedChartProps, js.Object, js.Any] {
+open class ComposedChart protected ()
+  extends Component[ComposedChartProps, js.Object, Any] {
   def this(props: ComposedChartProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ComposedChartProps, context: js.Any) = this()
+  def this(props: ComposedChartProps, context: Any) = this()
 }

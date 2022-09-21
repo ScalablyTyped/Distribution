@@ -10,7 +10,7 @@ object pickerPickerMod {
   
   @JSImport("@ant-design/react-native/lib/picker/Picker", JSImport.Default)
   @js.native
-  class default () extends Picker
+  open class default () extends Picker
   object default {
     
     @JSImport("@ant-design/react-native/lib/picker/Picker", JSImport.Default)
@@ -20,8 +20,8 @@ object pickerPickerMod {
     /* static member */
     @JSImport("@ant-design/react-native/lib/picker/Picker", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -39,11 +39,11 @@ object pickerPickerMod {
   
   @js.native
   trait Picker
-    extends Component[PickerProps, js.Object, js.Any] {
+    extends Component[PickerProps, js.Object, Any] {
     
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MPicker(nextProps: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MPicker(nextProps: Any): Boolean = js.native
   }
 }

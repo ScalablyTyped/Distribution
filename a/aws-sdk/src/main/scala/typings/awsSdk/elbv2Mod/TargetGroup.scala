@@ -42,6 +42,11 @@ trait TargetGroup extends StObject {
   var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   
   /**
+    * The type of IP address used for this target group. The possible values are ipv4 and ipv6. This is an optional parameter. If not specified, the IP address type defaults to ipv4.
+    */
+  var IpAddressType: js.UndefOr[TargetGroupIpAddressTypeEnum] = js.undefined
+  
+  /**
     * The Amazon Resource Names (ARN) of the load balancers that route traffic to this target group.
     */
   var LoadBalancerArns: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArns] = js.undefined
@@ -77,7 +82,7 @@ trait TargetGroup extends StObject {
   var TargetGroupName: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupName] = js.undefined
   
   /**
-    * The type of target that you must specify when registering targets with this target group. The possible values are instance (register targets by instance ID), ip (register targets by IP address), or lambda (register a single Lambda function as a target).
+    * The type of target that you must specify when registering targets with this target group. The possible values are instance (register targets by instance ID), ip (register targets by IP address), lambda (register a single Lambda function as a target), or alb (register a single Application Load Balancer as a target).
     */
   var TargetType: js.UndefOr[TargetTypeEnum] = js.undefined
   
@@ -128,11 +133,15 @@ object TargetGroup {
     
     inline def setHealthyThresholdCountUndefined: Self = StObject.set(x, "HealthyThresholdCount", js.undefined)
     
+    inline def setIpAddressType(value: TargetGroupIpAddressTypeEnum): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    
     inline def setLoadBalancerArns(value: LoadBalancerArns): Self = StObject.set(x, "LoadBalancerArns", value.asInstanceOf[js.Any])
     
     inline def setLoadBalancerArnsUndefined: Self = StObject.set(x, "LoadBalancerArns", js.undefined)
     
-    inline def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value :_*))
+    inline def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value*))
     
     inline def setMatcher(value: Matcher): Self = StObject.set(x, "Matcher", value.asInstanceOf[js.Any])
     

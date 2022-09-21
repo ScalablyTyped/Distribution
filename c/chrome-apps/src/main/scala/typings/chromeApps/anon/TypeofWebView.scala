@@ -10,5 +10,5 @@ trait TypeofWebView extends StObject {
   /**
     * WebView Events are different from Chrome Events, they extend the normal DOM Events.
     */
-  val Events: js.Any = js.native
+  val Events: Any = js.native
 }

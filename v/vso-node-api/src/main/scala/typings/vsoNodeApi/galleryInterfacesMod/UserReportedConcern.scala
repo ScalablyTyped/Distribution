@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait UserReportedConcern extends StObject {
   /**
     * Date the report was submitted
     */
-  var submittedDate: Date
+  var submittedDate: js.Date
   
   /**
     * Id of the user who reported a review
@@ -38,7 +37,7 @@ object UserReportedConcern {
     category: ConcernCategory,
     concernText: String,
     reviewId: Double,
-    submittedDate: Date,
+    submittedDate: js.Date,
     userId: String
   ): UserReportedConcern = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], concernText = concernText.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any], submittedDate = submittedDate.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
@@ -53,7 +52,7 @@ object UserReportedConcern {
     
     inline def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
-    inline def setSubmittedDate(value: Date): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
+    inline def setSubmittedDate(value: js.Date): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }

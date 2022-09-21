@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetSummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the SNS topic.
+    * The Amazon Resource Name (ARN) of the Chatbot topic or Chatbot client.
     */
   var TargetAddress: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetAddress] = js.undefined
   
@@ -17,7 +17,7 @@ trait TargetSummary extends StObject {
   var TargetStatus: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetStatus] = js.undefined
   
   /**
-    * The type of the target (for example, SNS).
+    * The type of the target (for example, SNS).   Chatbot topics are specified as SNS.   Chatbot clients are specified as AWSChatbotSlack.  
     */
   var TargetType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.TargetType] = js.undefined
 }

@@ -16,24 +16,26 @@ object mod {
   
   @JSImport("bluebird-retry", "StopError")
   @js.native
-  class StopError ()
+  open class StopError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   trait Options extends StObject {
     
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
     
     var backoff: js.UndefOr[Double] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var interval: js.UndefOr[Double] = js.undefined
     
@@ -41,7 +43,7 @@ object mod {
     
     var max_tries: js.UndefOr[Double] = js.undefined
     
-    var predicate: js.UndefOr[js.Any] = js.undefined
+    var predicate: js.UndefOr[Any] = js.undefined
     
     var throw_original: js.UndefOr[Boolean] = js.undefined
     
@@ -56,7 +58,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
@@ -64,7 +66,7 @@ object mod {
       
       inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -80,7 +82,7 @@ object mod {
       
       inline def setMax_triesUndefined: Self = StObject.set(x, "max_tries", js.undefined)
       
-      inline def setPredicate(value: js.Any): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: Any): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
       inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       

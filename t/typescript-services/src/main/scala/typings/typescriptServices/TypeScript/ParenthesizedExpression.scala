@@ -17,10 +17,10 @@ trait ParenthesizedExpression
 object ParenthesizedExpression {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
@@ -50,7 +50,7 @@ object ParenthesizedExpression {
     
     inline def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     
-    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
+    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value*))
     
     inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }

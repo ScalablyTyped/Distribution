@@ -310,6 +310,6 @@ object IMapOptions {
     
     inline def setSupportedMapTypesUndefined: Self = StObject.set(x, "supportedMapTypes", js.undefined)
     
-    inline def setSupportedMapTypesVarargs(value: MapTypeId*): Self = StObject.set(x, "supportedMapTypes", js.Array(value :_*))
+    inline def setSupportedMapTypesVarargs(value: MapTypeId*): Self = StObject.set(x, "supportedMapTypes", js.Array(value*))
   }
 }

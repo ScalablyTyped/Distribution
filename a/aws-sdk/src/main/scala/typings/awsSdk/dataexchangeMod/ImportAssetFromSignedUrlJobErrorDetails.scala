@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImportAssetFromSignedUrlJobErrorDetails extends StObject {
   
+  /**
+    * Information about the job error.
+    */
   var AssetName: typings.awsSdk.dataexchangeMod.AssetName
 }
 object ImportAssetFromSignedUrlJobErrorDetails {

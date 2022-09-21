@@ -1,7 +1,7 @@
 
 # Scala.js typings for dashjs
 
-Typings are for version 2.9.3
+Typings are for version 4.4.1
 
 ## Library description:
 A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.
@@ -10,10 +10,10 @@ A reference client implementation for the playback of MPEG DASH via Javascript a
 | ------------------ | :-------------: |
 | Full name          | dashjs |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 40 |
-| # downloads        | 865381 |
-| # stars            | 2 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 148720.33333333334 |
+| # stars            | 4382.0 |
 
 ## Links
 - [Homepage](https://github.com/Dash-Industry-Forum/dash.js#readme)

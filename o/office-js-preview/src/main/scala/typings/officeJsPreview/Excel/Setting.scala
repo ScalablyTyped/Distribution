@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Setting represents a key-value pair of a setting persisted to the document (per file, per add-in). These custom key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note that settings are persisted in the document and hence it is not a place to store any sensitive or protected information such as user information and password.
   *
-  * Setting represents a key-value pair of a setting persisted to the document (per file per add-in). These custom key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note that settings are persisted in the document and hence it is not a place to store any sensitive or protected information such as user information and password.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 @js.native
@@ -28,14 +28,15 @@ trait Setting
   /**
     * Deletes the setting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def delete(): Unit = js.native
   
   /**
+    * The key that represents the ID of the setting.
     *
-    * The key that represents the id of the Setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   val key: String = js.native
@@ -51,14 +52,8 @@ trait Setting
   def load(propertyNames: String): Setting = js.native
   def load(propertyNames: js.Array[String]): Setting = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.Setting): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -74,10 +69,10 @@ trait Setting
   def toJSON(): SettingData = js.native
   
   /**
-    *
     * Represents the value stored for this setting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

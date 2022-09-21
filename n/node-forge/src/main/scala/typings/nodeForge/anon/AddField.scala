@@ -11,10 +11,10 @@ trait AddField extends StObject {
   
   def addField(attr: CertificateField): Unit = js.native
   
-  var attributes: js.Array[js.Any] = js.native
+  var attributes: js.Array[CertificateField] = js.native
   
-  def getField(sn: String): js.Any = js.native
-  def getField(sn: CertificateFieldOptions): js.Any = js.native
+  def getField(sn: String): Any = js.native
+  def getField(sn: CertificateFieldOptions): Any = js.native
   
-  var hash: js.Any = js.native
+  var hash: Any = js.native
 }

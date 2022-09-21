@@ -1,6 +1,7 @@
 package typings.reactMdLayout
 
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.reactMdAppBar.appBarMod.AppBarProps
@@ -16,7 +17,11 @@ import typings.reactMdLayout.reactMdLayoutStrings.role
 import typings.reactMdLayout.reactMdLayoutStrings.visible
 import typings.reactMdLayout.typesMod.LayoutNavigationItem
 import typings.reactMdSheet.sheetMod.SheetProps
+import typings.reactMdTree.anon.VisibleIndex
 import typings.reactMdTree.typesMod.BaseTreeItem
+import typings.reactMdTree.typesMod.ProvidedTreeItemProps
+import typings.reactMdTree.typesMod.ProvidedTreeProps
+import typings.reactMdTree.typesMod.TreeItemRenderer
 import typings.reactMdUtils.typesTypesMod.PropsWithRef
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -77,6 +82,26 @@ object layoutNavigationMod {
     var id: js.UndefOr[String] = js.undefined
     
     /**
+      * Boolean if being rendered as the `mini` variant. This will override some
+      * other behavior and styling within this component.
+      *
+      * @remarks \@since 2.7.0
+      */
+    var mini: js.UndefOr[Boolean] = js.undefined
+    
+    /** @remarks \@since 2.8.3 */
+    var miniNavItemRenderer: js.UndefOr[TreeItemRenderer[T]] = js.undefined
+    
+    /**
+      * Boolean if the mini navigation should be treated as a "sticky" element.
+      * This should really only be `true` if disabling the fixed `AppBar` behavior
+      * in the `Layout`.
+      *
+      * @remarks \@since 2.8.3
+      */
+    var sticky: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * When this is omitted, the default navigation tree will not be rendered and
       * the only content that will be displayed will be the optional `header`
       * element and any provided `children`.
@@ -119,6 +144,20 @@ object layoutNavigationMod {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+      
+      inline def setMiniNavItemRenderer(
+        value: (/* providedProps */ ProvidedTreeItemProps, /* item */ T & VisibleIndex, /* treeProps */ ProvidedTreeProps) => ReactElement | Null
+      ): Self = StObject.set(x, "miniNavItemRenderer", js.Any.fromFunction3(value))
+      
+      inline def setMiniNavItemRendererUndefined: Self = StObject.set(x, "miniNavItemRenderer", js.undefined)
+      
+      inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+      
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
       inline def setTreeProps(value: LayoutTreeProps[T]): Self = StObject.set(x, "treeProps", value.asInstanceOf[js.Any])
       

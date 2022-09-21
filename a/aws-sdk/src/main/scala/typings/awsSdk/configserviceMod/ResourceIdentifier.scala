@@ -9,7 +9,7 @@ trait ResourceIdentifier extends StObject {
   /**
     * The time that the resource was deleted.
     */
-  var resourceDeletionTime: js.UndefOr[ResourceDeletionTime] = js.undefined
+  var resourceDeletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the resource (for example, sg-xxxxxx).
@@ -35,7 +35,7 @@ object ResourceIdentifier {
   
   extension [Self <: ResourceIdentifier](x: Self) {
     
-    inline def setResourceDeletionTime(value: ResourceDeletionTime): Self = StObject.set(x, "resourceDeletionTime", value.asInstanceOf[js.Any])
+    inline def setResourceDeletionTime(value: js.Date): Self = StObject.set(x, "resourceDeletionTime", value.asInstanceOf[js.Any])
     
     inline def setResourceDeletionTimeUndefined: Self = StObject.set(x, "resourceDeletionTime", js.undefined)
     

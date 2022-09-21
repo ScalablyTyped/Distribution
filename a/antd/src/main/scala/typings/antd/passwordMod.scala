@@ -2,6 +2,7 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.inputInputMod.InputProps
+import typings.rcInput.interfaceMod.InputRef
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
@@ -13,7 +14,7 @@ object passwordMod extends Shortcut {
   
   @JSImport("antd/lib/input/Password", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[PasswordProps & RefAttributes[InputRef]] = js.native
   
   trait PasswordProps
     extends StObject
@@ -54,8 +55,8 @@ object passwordMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[PasswordProps & RefAttributes[InputRef]]
   
   /* This means you don't have to write `default`, but can instead just say `passwordMod.foo` */
-  override def _to: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[PasswordProps & RefAttributes[InputRef]] = default
 }

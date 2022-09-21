@@ -9,7 +9,7 @@ trait SchemaBatchDeleteMessagesRequest extends StObject {
   /**
     * The IDs of the messages to delete.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.undefined
+  var ids: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaBatchDeleteMessagesRequest {
   
@@ -22,8 +22,10 @@ object SchemaBatchDeleteMessagesRequest {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
+    inline def setIdsNull: Self = StObject.set(x, "ids", null)
+    
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
   }
 }

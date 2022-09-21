@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Graphics.Imaging
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.IAsyncAction
@@ -37,6 +36,6 @@ trait IBitmapEncoder extends StObject {
     height: Double,
     dpiX: Double,
     dpiY: Double,
-    pixels: Uint8Array
+    pixels: js.typedarray.Uint8Array
   ): Unit = js.native
 }

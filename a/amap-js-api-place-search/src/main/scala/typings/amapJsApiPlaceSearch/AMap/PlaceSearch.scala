@@ -110,7 +110,7 @@ trait PlaceSearch
   ): Unit = js.native
   def searchInBounds(
     keyword: String,
-    bounds: Polygon[js.Any],
+    bounds: Polygon[Any],
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
   
@@ -238,7 +238,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     }
@@ -439,7 +439,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
@@ -519,7 +519,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -557,7 +557,7 @@ object PlaceSearch {
     
     var markerClick: SelectChangeEvent[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.markerClick, 
-        MapsEvent[click, Marker[js.Any]]
+        MapsEvent[click, Marker[Any]]
       ]
     
     var markerDestoryed: Event_[
@@ -586,7 +586,7 @@ object PlaceSearch {
       infoWindowClick: Event_[infoWindowClick, SelectChangeEventDataeven],
       listElementClick: SelectChangeEvent[listElementClick, MouseEvent],
       listElementDetroyed: Event_[listElementDetroyed, SelectChangeEventData],
-      markerClick: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]],
+      markerClick: SelectChangeEvent[markerClick, MapsEvent[click, Marker[Any]]],
       markerDestoryed: Event_[markerDestoryed, SelectChangeEventData],
       renderComplete: Event_[renderComplete, ListElements],
       selectChanged: Event_[selectChanged, LastSelected],
@@ -608,7 +608,7 @@ object PlaceSearch {
       
       inline def setListElementDetroyed(value: Event_[listElementDetroyed, SelectChangeEventData]): Self = StObject.set(x, "listElementDetroyed", value.asInstanceOf[js.Any])
       
-      inline def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
+      inline def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[Any]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
       
       inline def setMarkerDestoryed(value: Event_[markerDestoryed, SelectChangeEventData]): Self = StObject.set(x, "markerDestoryed", value.asInstanceOf[js.Any])
       
@@ -743,7 +743,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -865,7 +865,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
@@ -1031,7 +1031,7 @@ object PlaceSearch {
       */
     var address: String
     
-    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * 离中心点距离
@@ -1085,11 +1085,11 @@ object PlaceSearch {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -1151,7 +1151,7 @@ object PlaceSearch {
       
       inline def setPois(value: js.Array[Poi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
       
-      inline def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value :_*))
+      inline def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value*))
     }
   }
   
@@ -1288,7 +1288,7 @@ object PlaceSearch {
       
       inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
@@ -1337,7 +1337,7 @@ object PlaceSearch {
       
       inline def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
       
-      inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+      inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value*))
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -1345,7 +1345,7 @@ object PlaceSearch {
       
       inline def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
       
-      inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+      inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value*))
       
       inline def setPoiList(value: PoiList): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
     }
@@ -1393,11 +1393,11 @@ object PlaceSearch {
     /**
       * 当前选中的POI对应的在地图中的Marker对象
       */
-    var marker: Marker[js.Any]
+    var marker: Marker[Any]
   }
   object SelectChangeEventData {
     
-    inline def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[js.Any]): SelectChangeEventData = {
+    inline def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[Any]): SelectChangeEventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectChangeEventData]
     }
@@ -1406,7 +1406,7 @@ object PlaceSearch {
       
       inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1414,7 +1414,7 @@ object PlaceSearch {
       
       inline def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
       
-      inline def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Marker[Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
   }
 }

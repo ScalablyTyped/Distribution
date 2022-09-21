@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@date-io/date-fns", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.dateIoDateFns.dateFnsUtilsMod.default {
     def this(hasLocaleFormats: Formats) = this()
   }

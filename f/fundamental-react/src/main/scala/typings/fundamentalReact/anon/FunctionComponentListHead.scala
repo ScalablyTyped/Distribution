@@ -2,7 +2,6 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.ListDotHeader
 import typings.fundamentalReact.listMod.ListHeaderProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentListHead extends StObject {
   
-  def apply(props: PropsWithChildren[ListHeaderProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[ListHeaderProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: ListHeaderProps): ReactElement | Null = js.native
+  def apply(props: ListHeaderProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialListHeaderProps] = js.native
   

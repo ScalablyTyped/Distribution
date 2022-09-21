@@ -8,7 +8,7 @@ object amRadarChartMod {
   
   @JSImport("amcharts/AmRadarChart", JSImport.Default)
   @js.native
-  class default () extends AmRadarChart
+  open class default () extends AmRadarChart
   
   @js.native
   trait AmRadarChart
@@ -37,6 +37,6 @@ object amRadarChartMod {
     /**
       * Radius of a radar. 0.35
       */
-    var radius: js.Any = js.native
+    var radius: Any = js.native
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaBinder extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_binding(`type`: binding, listener: TypedEventHandler[MediaBinder, MediaBindingEventArgs]): Unit = js.native
   
@@ -21,7 +21,7 @@ trait MediaBinder extends StObject {
   @JSName("onbinding")
   var onbinding_Original: TypedEventHandler[MediaBinder, MediaBindingEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_binding(`type`: binding, listener: TypedEventHandler[MediaBinder, MediaBindingEventArgs]): Unit = js.native
   

@@ -10,5 +10,5 @@ object operatorSkipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def skip[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def skip[T](count: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(count.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

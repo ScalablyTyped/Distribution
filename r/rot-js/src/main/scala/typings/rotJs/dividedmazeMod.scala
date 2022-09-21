@@ -8,7 +8,7 @@ object dividedmazeMod {
   
   @JSImport("rot-js/lib/map/dividedmaze", JSImport.Default)
   @js.native
-  class default () extends DividedMaze
+  open class default () extends DividedMaze
   
   @js.native
   trait DividedMaze

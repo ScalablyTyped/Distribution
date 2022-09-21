@@ -4,24 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Anchor extends StObject {
+  
+  def attach(doc: Document): Unit = js.native
   
   /**
     * When called, the `'change'` event listener is removed.
     **/
-  def detach(): Unit
+  def detach(): Unit = js.native
   
   /**
     * Returns the current document.
     **/
-  def getDocument(): Document
+  def getDocument(): Document = js.native
   
   /**
     * Returns an object identifying the `row` and `column` position of the current anchor.
     **/
-  def getPosition(): Position
+  def getPosition(): Position = js.native
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit
+  def on(event: String, fn: js.Function1[/* e */ Any, Any]): Unit = js.native
   
   /**
     * Fires whenever the anchor position changes.
@@ -31,7 +34,7 @@ trait Anchor extends StObject {
     * - `old`: An object describing the old Anchor position
     * - `value`: An object describing the new Anchor position
     **/
-  def onChange(e: js.Any): Unit
+  def onChange(e: Any): Unit = js.native
   
   /**
     * Sets the anchor position to the specified row and column. If `noClip` is `true`, the position is not clipped.
@@ -39,34 +42,6 @@ trait Anchor extends StObject {
     * @param column The column index to move the anchor to
     * @param noClip Identifies if you want the position to be clipped
     **/
-  def setPosition(row: Double, column: Double, noClip: Boolean): Unit
-}
-object Anchor {
-  
-  inline def apply(
-    detach: () => Unit,
-    getDocument: () => Document,
-    getPosition: () => Position,
-    on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
-    onChange: js.Any => Unit,
-    setPosition: (Double, Double, Boolean) => Unit
-  ): Anchor = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getDocument = js.Any.fromFunction0(getDocument), getPosition = js.Any.fromFunction0(getPosition), on = js.Any.fromFunction2(on), onChange = js.Any.fromFunction1(onChange), setPosition = js.Any.fromFunction3(setPosition))
-    __obj.asInstanceOf[Anchor]
-  }
-  
-  extension [Self <: Anchor](x: Self) {
-    
-    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
-    
-    inline def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
-    
-    inline def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
-    
-    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
-    
-    inline def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-    
-    inline def setSetPosition(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
-  }
+  def setPosition(row: Double, column: Double): Unit = js.native
+  def setPosition(row: Double, column: Double, noClip: Boolean): Unit = js.native
 }

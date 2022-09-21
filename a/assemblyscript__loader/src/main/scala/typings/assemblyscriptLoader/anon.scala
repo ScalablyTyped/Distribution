@@ -1,5 +1,7 @@
 package typings.assemblyscriptLoader
 
+import typings.assemblyscriptLoader.mod.ASUtil
+import typings.std.Record
 import typings.std.WebAssembly.Memory
 import typings.std.WebAssembly.Table
 import org.scalablytyped.runtime.StObject
@@ -14,7 +16,11 @@ object anon {
         js.Function4[/* msg */ Double, /* file */ Double, /* line */ Double, /* column */ Double, Unit]
       ] = js.undefined
     
+    var mark: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var memory: js.UndefOr[Memory] = js.undefined
+    
+    var seed: js.UndefOr[js.Function0[Double]] = js.undefined
     
     var table: js.UndefOr[Table] = js.undefined
     
@@ -35,9 +41,17 @@ object anon {
       
       inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
       
+      inline def setMark(value: () => Unit): Self = StObject.set(x, "mark", js.Any.fromFunction0(value))
+      
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      
       inline def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
       inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      
+      inline def setSeed(value: () => Double): Self = StObject.set(x, "seed", js.Any.fromFunction0(value))
+      
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
       
       inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
@@ -46,6 +60,23 @@ object anon {
       inline def setTrace(value: (/* msg */ Double, /* numArgs */ js.UndefOr[Double], /* repeated */ Double) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction3(value))
       
       inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    }
+  }
+  
+  trait Exports[T /* <: Record[String, Any] */] extends StObject {
+    
+    var exports: ASUtil & T
+  }
+  object Exports {
+    
+    inline def apply[T /* <: Record[String, Any] */](exports: ASUtil & T): Exports[T] = {
+      val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Exports[T]]
+    }
+    
+    extension [Self <: Exports[?], T /* <: Record[String, Any] */](x: Self & Exports[T]) {
+      
+      inline def setExports(value: ASUtil & T): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     }
   }
 }

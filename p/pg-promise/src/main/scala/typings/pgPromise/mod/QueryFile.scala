@@ -1,6 +1,5 @@
 package typings.pgPromise.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/QueryFile.html
 @JSImport("pg-promise", "QueryFile")
 @js.native
-class QueryFile protected ()
+open class QueryFile protected ()
   extends StObject
      with _QueryParam {
   def this(file: String) = this()
   def this(file: String, options: IQueryFileOptions) = this()
   
-  val error: Error = js.native
+  val error: js.Error = js.native
   
   val file: String = js.native
   
-  val options: js.Any = js.native
+  val options: Any = js.native
   
   def prepare(): Unit = js.native
   

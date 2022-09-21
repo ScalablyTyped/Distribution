@@ -9,7 +9,7 @@ trait IAsyncPropertyValidator extends StObject {
   
   var customMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
   
-  def isAcceptable(s: js.Any): Promise[Boolean]
+  def isAcceptable(s: Any): Promise[Boolean]
   
   var isAsync: Boolean
   
@@ -17,18 +17,18 @@ trait IAsyncPropertyValidator extends StObject {
 }
 object IAsyncPropertyValidator {
   
-  inline def apply(isAcceptable: js.Any => Promise[Boolean], isAsync: Boolean): IAsyncPropertyValidator = {
+  inline def apply(isAcceptable: Any => Promise[Boolean], isAsync: Boolean): IAsyncPropertyValidator = {
     val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable), isAsync = isAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAsyncPropertyValidator]
   }
   
   extension [Self <: IAsyncPropertyValidator](x: Self) {
     
-    inline def setCustomMessage(value: (/* config */ js.Any, /* args */ js.Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
+    inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
     
     inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
-    inline def setIsAcceptable(value: js.Any => Promise[Boolean]): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
+    inline def setIsAcceptable(value: Any => Promise[Boolean]): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
     
     inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
     

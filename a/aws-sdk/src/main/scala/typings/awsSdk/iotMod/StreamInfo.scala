@@ -9,7 +9,7 @@ trait StreamInfo extends StObject {
   /**
     * The date when the stream was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the stream.
@@ -24,10 +24,10 @@ trait StreamInfo extends StObject {
   /**
     * The date when the stream was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An IAM role AWS IoT assumes to access your S3 files.
+    * An IAM role IoT assumes to access your S3 files.
     */
   var roleArn: js.UndefOr[RoleArn] = js.undefined
   
@@ -55,7 +55,7 @@ object StreamInfo {
   
   extension [Self <: StreamInfo](x: Self) {
     
-    inline def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -67,9 +67,9 @@ object StreamInfo {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value*))
     
-    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     

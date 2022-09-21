@@ -11,11 +11,11 @@ trait ExtensionMenuItemComplex extends StObject {
   var text: String
   
   /** The value of the block argument when this menu item is selected. */
-  var value: js.Any
+  var value: Any
 }
 object ExtensionMenuItemComplex {
   
-  inline def apply(text: String, value: js.Any): ExtensionMenuItemComplex = {
+  inline def apply(text: String, value: Any): ExtensionMenuItemComplex = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionMenuItemComplex]
   }
@@ -24,6 +24,6 @@ object ExtensionMenuItemComplex {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,6 @@ object mod {
   inline def SVGInjector(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def SVGInjector(
     elements: Elements,
-    hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements: OptionalArgs
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements: OptionalArgs
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

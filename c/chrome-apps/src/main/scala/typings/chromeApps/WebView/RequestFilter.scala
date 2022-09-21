@@ -40,11 +40,11 @@ object RequestFilter {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: ResourceType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: ResourceType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setWindowId(value: integer): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     

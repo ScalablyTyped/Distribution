@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisCallback extends StObject {
   
-  def apply[T](callback: js.Function0[Unit]): js.Any = js.native
+  def apply[T](callback: js.Function0[Unit]): Any = js.native
 }

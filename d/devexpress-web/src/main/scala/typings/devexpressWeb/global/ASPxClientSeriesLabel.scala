@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSeriesLabel")
 @js.native
-class ASPxClientSeriesLabel ()
+open class ASPxClientSeriesLabel ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSeriesLabel {
   

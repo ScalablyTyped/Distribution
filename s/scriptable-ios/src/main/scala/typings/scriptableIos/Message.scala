@@ -88,7 +88,7 @@ object Message {
     
     inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setSend(value: () => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
   }

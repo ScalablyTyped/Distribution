@@ -1,97 +1,161 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.Bright
-import typings.devextreme.devextremeStrings.Carmine
-import typings.devextreme.devextremeStrings.Material
-import typings.devextreme.devextremeStrings.Ocean
-import typings.devextreme.devextremeStrings.Office
-import typings.devextreme.devextremeStrings.Pastel
-import typings.devextreme.devextremeStrings.Soft
-import typings.devextreme.devextremeStrings.Vintage
-import typings.devextreme.devextremeStrings.Violet
-import typings.devextreme.devextremeStrings.`Dark Moon`
-import typings.devextreme.devextremeStrings.`Dark Violet`
-import typings.devextreme.devextremeStrings.`Green Mist`
-import typings.devextreme.devextremeStrings.`Harmony Light`
-import typings.devextreme.devextremeStrings.`Soft Blue`
-import typings.devextreme.devextremeStrings.`Soft Pastel`
-import typings.devextreme.devextremeStrings.area
-import typings.devextreme.devextremeStrings.bubble
-import typings.devextreme.devextremeStrings.dot
-import typings.devextreme.devextremeStrings.image
-import typings.devextreme.devextremeStrings.line
-import typings.devextreme.devextremeStrings.marker
-import typings.devextreme.devextremeStrings.multiple
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.pie
-import typings.devextreme.devextremeStrings.single_
-import typings.devextreme.mod.DevExpress.data.DataSourceOptions
+import typings.devextreme.mod.DevExpress.common.SingleMultipleOrNone
+import typings.devextreme.mod.DevExpress.common.charts.Palette
+import typings.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
 import typings.devextreme.mod.DevExpress.viz.MapLayerElement
+import typings.devextreme.mod.DevExpress.viz.dxVectorMap.VectorMapLayerType
+import typings.devextreme.mod.DevExpress.viz.dxVectorMap.VectorMapMarkerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BorderWidth extends StObject {
   
+  /**
+    * Specifies a color for the border of the layer elements.
+    */
   var borderColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the line width (for layers of a line type) or width of the layer elements border in pixels.
+    */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a color for layer elements.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the field that provides data to be used for coloring of layer elements.
+    */
   var colorGroupingField: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows you to paint layer elements with similar attributes in the same color.
+    */
   var colorGroups: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var customize: js.UndefOr[js.Function1[/* elements */ js.Array[MapLayerElement], js.Any]] = js.undefined
+  /**
+    * A function that customizes each layer element individually.
+    */
+  var customize: js.UndefOr[js.Function1[/* elements */ js.Array[MapLayerElement], Unit]] = js.undefined
   
+  /**
+    * Specifies the name of the attribute containing marker data. Setting this property makes sense only if the layer type is &apos;marker&apos; and the elementType is &apos;bubble&apos;, &apos;pie&apos; or &apos;image&apos;.
+    */
   var dataField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[
-    js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[js.Any]
-  ] = js.undefined
+  /**
+    * Specifies a data source for the layer.
+    */
+  var dataSource: js.UndefOr[js.Object | (DataSourceLike[Any, Any]) | Null] = js.undefined
   
-  var elementType: js.UndefOr[bubble | dot | image | pie] = js.undefined
+  /**
+    * Specifies the type of a marker element. Setting this property makes sense only if the layer type is &apos;marker&apos;.
+    */
+  var elementType: js.UndefOr[VectorMapMarkerType] = js.undefined
   
+  /**
+    * Specifies whether or not to change the appearance of a layer element when it is hovered over.
+    */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies a color for the border of the layer element when it is hovered over.
+    */
   var hoveredBorderColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the pixel-measured line width (for layers of a line type) or width for the border of the layer element when it is hovered over.
+    */
   var hoveredBorderWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a color for a layer element when it is hovered over.
+    */
   var hoveredColor: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[DataFieldEnabled] = js.undefined
+  /**
+    * Specifies marker label properties.
+    */
+  var label: js.UndefOr[DataField] = js.undefined
   
+  /**
+    * Specifies the pixel-measured diameter of the marker that represents the biggest value. Setting this property makes sense only if the layer type is &apos;marker&apos;.
+    */
   var maxSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the pixel-measured diameter of the marker that represents the smallest value. Setting this property makes sense only if the layer type is &apos;marker&apos;.
+    */
   var minSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the layer name.
+    */
   var name: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the layer opacity (from 0 to 1).
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var palette: js.UndefOr[
-    js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
+  /**
+    * The name of a predefined palette or a custom range of colors to be used as a palette.
+    */
+  var palette: js.UndefOr[js.Array[String] | Palette] = js.undefined
   
+  /**
+    * The position of a color in the palette[] array. Should not exceed the value of the paletteSize property.
+    */
+  var paletteIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Specifies the number of colors in a palette.
+    */
   var paletteSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a color for the border of the layer element when it is selected.
+    */
   var selectedBorderColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies a pixel-measured line width (for layers of a line type) or width for the border of the layer element when it is selected.
+    */
   var selectedBorderWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a color for the layer element when it is selected.
+    */
   var selectedColor: js.UndefOr[String] = js.undefined
   
-  var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
+  /**
+    * Specifies whether single or multiple map elements can be selected on a vector map.
+    */
+  var selectionMode: js.UndefOr[SingleMultipleOrNone] = js.undefined
   
+  /**
+    * Specifies the size of markers. Setting this property makes sense only if the layer type is &apos;marker&apos; and the elementType is &apos;dot&apos;, &apos;pie&apos; or &apos;image&apos;.
+    */
   var size: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the field that provides data to be used for sizing bubble markers. Setting this property makes sense only if the layer type is &apos;marker&apos; and the elementType is &apos;bubble&apos;.
+    */
   var sizeGroupingField: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows you to display bubbles with similar attributes in the same size. Setting this property makes sense only if the layer type is &apos;marker&apos; and the elementType is &apos;bubble&apos;.
+    */
   var sizeGroups: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: js.UndefOr[area | line | marker] = js.undefined
+  /**
+    * Specifies layer type.
+    */
+  var `type`: js.UndefOr[VectorMapLayerType] = js.undefined
 }
 object BorderWidth {
   
@@ -120,11 +184,11 @@ object BorderWidth {
     
     inline def setColorGroupsUndefined: Self = StObject.set(x, "colorGroups", js.undefined)
     
-    inline def setColorGroupsVarargs(value: Double*): Self = StObject.set(x, "colorGroups", js.Array(value :_*))
+    inline def setColorGroupsVarargs(value: Double*): Self = StObject.set(x, "colorGroups", js.Array(value*))
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCustomize(value: /* elements */ js.Array[MapLayerElement] => js.Any): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
+    inline def setCustomize(value: /* elements */ js.Array[MapLayerElement] => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
     
     inline def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
     
@@ -132,15 +196,15 @@ object BorderWidth {
     
     inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
-    inline def setDataSource(
-      value: js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[js.Any]
-    ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Object | (DataSourceLike[Any, Any])): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
-    inline def setElementType(value: bubble | dot | image | pie): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: VectorMapMarkerType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
@@ -160,7 +224,7 @@ object BorderWidth {
     
     inline def setHoveredColorUndefined: Self = StObject.set(x, "hoveredColor", js.undefined)
     
-    inline def setLabel(value: DataFieldEnabled): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: DataField): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -180,9 +244,11 @@ object BorderWidth {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setPalette(
-      value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[String] | Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteIndex(value: Double): Self = StObject.set(x, "paletteIndex", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteIndexUndefined: Self = StObject.set(x, "paletteIndex", js.undefined)
     
     inline def setPaletteSize(value: Double): Self = StObject.set(x, "paletteSize", value.asInstanceOf[js.Any])
     
@@ -190,7 +256,7 @@ object BorderWidth {
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setSelectedBorderColor(value: String): Self = StObject.set(x, "selectedBorderColor", value.asInstanceOf[js.Any])
     
@@ -204,7 +270,7 @@ object BorderWidth {
     
     inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
-    inline def setSelectionMode(value: multiple | none | single_): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: SingleMultipleOrNone): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
@@ -218,11 +284,11 @@ object BorderWidth {
     
     inline def setSizeGroupsUndefined: Self = StObject.set(x, "sizeGroups", js.undefined)
     
-    inline def setSizeGroupsVarargs(value: Double*): Self = StObject.set(x, "sizeGroups", js.Array(value :_*))
+    inline def setSizeGroupsVarargs(value: Double*): Self = StObject.set(x, "sizeGroups", js.Array(value*))
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setType(value: area | line | marker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VectorMapLayerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

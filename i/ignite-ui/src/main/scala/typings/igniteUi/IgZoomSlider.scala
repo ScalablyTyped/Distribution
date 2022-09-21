@@ -11,17 +11,17 @@ trait IgZoomSlider
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var actualPixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   var areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var barBrush: js.UndefOr[js.Any] = js.undefined
+  var barBrush: js.UndefOr[Any] = js.undefined
   
   var barExtent: js.UndefOr[Double] = js.undefined
   
-  var barOutline: js.UndefOr[js.Any] = js.undefined
+  var barOutline: js.UndefOr[Any] = js.undefined
   
   var barStrokeThickness: js.UndefOr[Double] = js.undefined
   
@@ -32,53 +32,53 @@ trait IgZoomSlider
     */
   var height: js.UndefOr[String | Double] = js.undefined
   
-  var higherCalloutBrush: js.UndefOr[js.Any] = js.undefined
+  var higherCalloutBrush: js.UndefOr[Any] = js.undefined
   
-  var higherCalloutOutline: js.UndefOr[js.Any] = js.undefined
+  var higherCalloutOutline: js.UndefOr[Any] = js.undefined
   
   var higherCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var higherCalloutTextColor: js.UndefOr[js.Any] = js.undefined
+  var higherCalloutTextColor: js.UndefOr[Any] = js.undefined
   
-  var higherShadeBrush: js.UndefOr[js.Any] = js.undefined
+  var higherShadeBrush: js.UndefOr[Any] = js.undefined
   
-  var higherShadeOutline: js.UndefOr[js.Any] = js.undefined
+  var higherShadeOutline: js.UndefOr[Any] = js.undefined
   
   var higherShadeStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var higherThumbBrush: js.UndefOr[js.Any] = js.undefined
+  var higherThumbBrush: js.UndefOr[Any] = js.undefined
   
   var higherThumbHeight: js.UndefOr[Double] = js.undefined
   
-  var higherThumbOutline: js.UndefOr[js.Any] = js.undefined
+  var higherThumbOutline: js.UndefOr[Any] = js.undefined
   
-  var higherThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
+  var higherThumbRidgesBrush: js.UndefOr[Any] = js.undefined
   
   var higherThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
   var higherThumbWidth: js.UndefOr[Double] = js.undefined
   
-  var lowerCalloutBrush: js.UndefOr[js.Any] = js.undefined
+  var lowerCalloutBrush: js.UndefOr[Any] = js.undefined
   
-  var lowerCalloutOutline: js.UndefOr[js.Any] = js.undefined
+  var lowerCalloutOutline: js.UndefOr[Any] = js.undefined
   
   var lowerCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var lowerCalloutTextColor: js.UndefOr[js.Any] = js.undefined
+  var lowerCalloutTextColor: js.UndefOr[Any] = js.undefined
   
-  var lowerShadeBrush: js.UndefOr[js.Any] = js.undefined
+  var lowerShadeBrush: js.UndefOr[Any] = js.undefined
   
-  var lowerShadeOutline: js.UndefOr[js.Any] = js.undefined
+  var lowerShadeOutline: js.UndefOr[Any] = js.undefined
   
   var lowerShadeStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var lowerThumbBrush: js.UndefOr[js.Any] = js.undefined
+  var lowerThumbBrush: js.UndefOr[Any] = js.undefined
   
   var lowerThumbHeight: js.UndefOr[Double] = js.undefined
   
-  var lowerThumbOutline: js.UndefOr[js.Any] = js.undefined
+  var lowerThumbOutline: js.UndefOr[Any] = js.undefined
   
-  var lowerThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
+  var lowerThumbRidgesBrush: js.UndefOr[Any] = js.undefined
   
   var lowerThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
@@ -101,11 +101,11 @@ trait IgZoomSlider
   
   var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.undefined
   
-  var rangeThumbBrush: js.UndefOr[js.Any] = js.undefined
+  var rangeThumbBrush: js.UndefOr[Any] = js.undefined
   
-  var rangeThumbOutline: js.UndefOr[js.Any] = js.undefined
+  var rangeThumbOutline: js.UndefOr[Any] = js.undefined
   
-  var rangeThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
+  var rangeThumbRidgesBrush: js.UndefOr[Any] = js.undefined
   
   var rangeThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
@@ -113,7 +113,7 @@ trait IgZoomSlider
   
   var startInset: js.UndefOr[Double] = js.undefined
   
-  var thumbCalloutTextStyle: js.UndefOr[js.Any] = js.undefined
+  var thumbCalloutTextStyle: js.UndefOr[Any] = js.undefined
   
   var trackEndInset: js.UndefOr[Double] = js.undefined
   
@@ -124,7 +124,7 @@ trait IgZoomSlider
     */
   var width: js.UndefOr[String | Double] = js.undefined
   
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Occurs just after the current ZoomSlider's window rectangle is changed.
@@ -148,7 +148,7 @@ object IgZoomSlider {
     
     inline def setAreThumbCalloutsEnabledUndefined: Self = StObject.set(x, "areThumbCalloutsEnabled", js.undefined)
     
-    inline def setBarBrush(value: js.Any): Self = StObject.set(x, "barBrush", value.asInstanceOf[js.Any])
+    inline def setBarBrush(value: Any): Self = StObject.set(x, "barBrush", value.asInstanceOf[js.Any])
     
     inline def setBarBrushUndefined: Self = StObject.set(x, "barBrush", js.undefined)
     
@@ -156,7 +156,7 @@ object IgZoomSlider {
     
     inline def setBarExtentUndefined: Self = StObject.set(x, "barExtent", js.undefined)
     
-    inline def setBarOutline(value: js.Any): Self = StObject.set(x, "barOutline", value.asInstanceOf[js.Any])
+    inline def setBarOutline(value: Any): Self = StObject.set(x, "barOutline", value.asInstanceOf[js.Any])
     
     inline def setBarOutlineUndefined: Self = StObject.set(x, "barOutline", js.undefined)
     
@@ -172,11 +172,11 @@ object IgZoomSlider {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHigherCalloutBrush(value: js.Any): Self = StObject.set(x, "higherCalloutBrush", value.asInstanceOf[js.Any])
+    inline def setHigherCalloutBrush(value: Any): Self = StObject.set(x, "higherCalloutBrush", value.asInstanceOf[js.Any])
     
     inline def setHigherCalloutBrushUndefined: Self = StObject.set(x, "higherCalloutBrush", js.undefined)
     
-    inline def setHigherCalloutOutline(value: js.Any): Self = StObject.set(x, "higherCalloutOutline", value.asInstanceOf[js.Any])
+    inline def setHigherCalloutOutline(value: Any): Self = StObject.set(x, "higherCalloutOutline", value.asInstanceOf[js.Any])
     
     inline def setHigherCalloutOutlineUndefined: Self = StObject.set(x, "higherCalloutOutline", js.undefined)
     
@@ -184,15 +184,15 @@ object IgZoomSlider {
     
     inline def setHigherCalloutStrokeThicknessUndefined: Self = StObject.set(x, "higherCalloutStrokeThickness", js.undefined)
     
-    inline def setHigherCalloutTextColor(value: js.Any): Self = StObject.set(x, "higherCalloutTextColor", value.asInstanceOf[js.Any])
+    inline def setHigherCalloutTextColor(value: Any): Self = StObject.set(x, "higherCalloutTextColor", value.asInstanceOf[js.Any])
     
     inline def setHigherCalloutTextColorUndefined: Self = StObject.set(x, "higherCalloutTextColor", js.undefined)
     
-    inline def setHigherShadeBrush(value: js.Any): Self = StObject.set(x, "higherShadeBrush", value.asInstanceOf[js.Any])
+    inline def setHigherShadeBrush(value: Any): Self = StObject.set(x, "higherShadeBrush", value.asInstanceOf[js.Any])
     
     inline def setHigherShadeBrushUndefined: Self = StObject.set(x, "higherShadeBrush", js.undefined)
     
-    inline def setHigherShadeOutline(value: js.Any): Self = StObject.set(x, "higherShadeOutline", value.asInstanceOf[js.Any])
+    inline def setHigherShadeOutline(value: Any): Self = StObject.set(x, "higherShadeOutline", value.asInstanceOf[js.Any])
     
     inline def setHigherShadeOutlineUndefined: Self = StObject.set(x, "higherShadeOutline", js.undefined)
     
@@ -200,7 +200,7 @@ object IgZoomSlider {
     
     inline def setHigherShadeStrokeThicknessUndefined: Self = StObject.set(x, "higherShadeStrokeThickness", js.undefined)
     
-    inline def setHigherThumbBrush(value: js.Any): Self = StObject.set(x, "higherThumbBrush", value.asInstanceOf[js.Any])
+    inline def setHigherThumbBrush(value: Any): Self = StObject.set(x, "higherThumbBrush", value.asInstanceOf[js.Any])
     
     inline def setHigherThumbBrushUndefined: Self = StObject.set(x, "higherThumbBrush", js.undefined)
     
@@ -208,11 +208,11 @@ object IgZoomSlider {
     
     inline def setHigherThumbHeightUndefined: Self = StObject.set(x, "higherThumbHeight", js.undefined)
     
-    inline def setHigherThumbOutline(value: js.Any): Self = StObject.set(x, "higherThumbOutline", value.asInstanceOf[js.Any])
+    inline def setHigherThumbOutline(value: Any): Self = StObject.set(x, "higherThumbOutline", value.asInstanceOf[js.Any])
     
     inline def setHigherThumbOutlineUndefined: Self = StObject.set(x, "higherThumbOutline", js.undefined)
     
-    inline def setHigherThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "higherThumbRidgesBrush", value.asInstanceOf[js.Any])
+    inline def setHigherThumbRidgesBrush(value: Any): Self = StObject.set(x, "higherThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     inline def setHigherThumbRidgesBrushUndefined: Self = StObject.set(x, "higherThumbRidgesBrush", js.undefined)
     
@@ -224,11 +224,11 @@ object IgZoomSlider {
     
     inline def setHigherThumbWidthUndefined: Self = StObject.set(x, "higherThumbWidth", js.undefined)
     
-    inline def setLowerCalloutBrush(value: js.Any): Self = StObject.set(x, "lowerCalloutBrush", value.asInstanceOf[js.Any])
+    inline def setLowerCalloutBrush(value: Any): Self = StObject.set(x, "lowerCalloutBrush", value.asInstanceOf[js.Any])
     
     inline def setLowerCalloutBrushUndefined: Self = StObject.set(x, "lowerCalloutBrush", js.undefined)
     
-    inline def setLowerCalloutOutline(value: js.Any): Self = StObject.set(x, "lowerCalloutOutline", value.asInstanceOf[js.Any])
+    inline def setLowerCalloutOutline(value: Any): Self = StObject.set(x, "lowerCalloutOutline", value.asInstanceOf[js.Any])
     
     inline def setLowerCalloutOutlineUndefined: Self = StObject.set(x, "lowerCalloutOutline", js.undefined)
     
@@ -236,15 +236,15 @@ object IgZoomSlider {
     
     inline def setLowerCalloutStrokeThicknessUndefined: Self = StObject.set(x, "lowerCalloutStrokeThickness", js.undefined)
     
-    inline def setLowerCalloutTextColor(value: js.Any): Self = StObject.set(x, "lowerCalloutTextColor", value.asInstanceOf[js.Any])
+    inline def setLowerCalloutTextColor(value: Any): Self = StObject.set(x, "lowerCalloutTextColor", value.asInstanceOf[js.Any])
     
     inline def setLowerCalloutTextColorUndefined: Self = StObject.set(x, "lowerCalloutTextColor", js.undefined)
     
-    inline def setLowerShadeBrush(value: js.Any): Self = StObject.set(x, "lowerShadeBrush", value.asInstanceOf[js.Any])
+    inline def setLowerShadeBrush(value: Any): Self = StObject.set(x, "lowerShadeBrush", value.asInstanceOf[js.Any])
     
     inline def setLowerShadeBrushUndefined: Self = StObject.set(x, "lowerShadeBrush", js.undefined)
     
-    inline def setLowerShadeOutline(value: js.Any): Self = StObject.set(x, "lowerShadeOutline", value.asInstanceOf[js.Any])
+    inline def setLowerShadeOutline(value: Any): Self = StObject.set(x, "lowerShadeOutline", value.asInstanceOf[js.Any])
     
     inline def setLowerShadeOutlineUndefined: Self = StObject.set(x, "lowerShadeOutline", js.undefined)
     
@@ -252,7 +252,7 @@ object IgZoomSlider {
     
     inline def setLowerShadeStrokeThicknessUndefined: Self = StObject.set(x, "lowerShadeStrokeThickness", js.undefined)
     
-    inline def setLowerThumbBrush(value: js.Any): Self = StObject.set(x, "lowerThumbBrush", value.asInstanceOf[js.Any])
+    inline def setLowerThumbBrush(value: Any): Self = StObject.set(x, "lowerThumbBrush", value.asInstanceOf[js.Any])
     
     inline def setLowerThumbBrushUndefined: Self = StObject.set(x, "lowerThumbBrush", js.undefined)
     
@@ -260,11 +260,11 @@ object IgZoomSlider {
     
     inline def setLowerThumbHeightUndefined: Self = StObject.set(x, "lowerThumbHeight", js.undefined)
     
-    inline def setLowerThumbOutline(value: js.Any): Self = StObject.set(x, "lowerThumbOutline", value.asInstanceOf[js.Any])
+    inline def setLowerThumbOutline(value: Any): Self = StObject.set(x, "lowerThumbOutline", value.asInstanceOf[js.Any])
     
     inline def setLowerThumbOutlineUndefined: Self = StObject.set(x, "lowerThumbOutline", js.undefined)
     
-    inline def setLowerThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "lowerThumbRidgesBrush", value.asInstanceOf[js.Any])
+    inline def setLowerThumbRidgesBrush(value: Any): Self = StObject.set(x, "lowerThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     inline def setLowerThumbRidgesBrushUndefined: Self = StObject.set(x, "lowerThumbRidgesBrush", js.undefined)
     
@@ -300,15 +300,15 @@ object IgZoomSlider {
     
     inline def setPropertyChangedUndefined: Self = StObject.set(x, "propertyChanged", js.undefined)
     
-    inline def setRangeThumbBrush(value: js.Any): Self = StObject.set(x, "rangeThumbBrush", value.asInstanceOf[js.Any])
+    inline def setRangeThumbBrush(value: Any): Self = StObject.set(x, "rangeThumbBrush", value.asInstanceOf[js.Any])
     
     inline def setRangeThumbBrushUndefined: Self = StObject.set(x, "rangeThumbBrush", js.undefined)
     
-    inline def setRangeThumbOutline(value: js.Any): Self = StObject.set(x, "rangeThumbOutline", value.asInstanceOf[js.Any])
+    inline def setRangeThumbOutline(value: Any): Self = StObject.set(x, "rangeThumbOutline", value.asInstanceOf[js.Any])
     
     inline def setRangeThumbOutlineUndefined: Self = StObject.set(x, "rangeThumbOutline", js.undefined)
     
-    inline def setRangeThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "rangeThumbRidgesBrush", value.asInstanceOf[js.Any])
+    inline def setRangeThumbRidgesBrush(value: Any): Self = StObject.set(x, "rangeThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     inline def setRangeThumbRidgesBrushUndefined: Self = StObject.set(x, "rangeThumbRidgesBrush", js.undefined)
     
@@ -324,7 +324,7 @@ object IgZoomSlider {
     
     inline def setStartInsetUndefined: Self = StObject.set(x, "startInset", js.undefined)
     
-    inline def setThumbCalloutTextStyle(value: js.Any): Self = StObject.set(x, "thumbCalloutTextStyle", value.asInstanceOf[js.Any])
+    inline def setThumbCalloutTextStyle(value: Any): Self = StObject.set(x, "thumbCalloutTextStyle", value.asInstanceOf[js.Any])
     
     inline def setThumbCalloutTextStyleUndefined: Self = StObject.set(x, "thumbCalloutTextStyle", js.undefined)
     
@@ -340,7 +340,7 @@ object IgZoomSlider {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
+    inline def setWindowRect(value: Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     inline def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = StObject.set(x, "windowRectChanged", js.Any.fromFunction2(value))
     

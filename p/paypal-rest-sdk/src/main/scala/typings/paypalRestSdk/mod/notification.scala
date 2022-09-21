@@ -103,7 +103,7 @@ object notification {
         
         inline def setEvent_types(value: js.Array[NotificationEventType]): Self = StObject.set(x, "event_types", value.asInstanceOf[js.Any])
         
-        inline def setEvent_typesVarargs(value: NotificationEventType*): Self = StObject.set(x, "event_types", js.Array(value :_*))
+        inline def setEvent_typesVarargs(value: NotificationEventType*): Self = StObject.set(x, "event_types", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -113,7 +113,7 @@ object notification {
         
         inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
         
-        inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
@@ -136,7 +136,7 @@ object notification {
         
         inline def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
         
-        inline def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+        inline def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "webhooks", js.Array(value*))
       }
     }
   }
@@ -201,7 +201,7 @@ object notification {
     inline def resend(id: String, config: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def resend(id: String, config: CallbackFunction[WebhookEvent], cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def verify(headers: js.Any, body: WebhookEvent, id: String, cb: CallbackFunction[WebhookVerifyResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def verify(headers: Any, body: WebhookEvent, id: String, cb: CallbackFunction[WebhookVerifyResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     trait WebhookEvent extends StObject {
       
@@ -213,7 +213,7 @@ object notification {
       
       val id: js.UndefOr[String] = js.undefined
       
-      val resource: js.UndefOr[js.Any] = js.undefined
+      val resource: js.UndefOr[Any] = js.undefined
       
       val resource_type: js.UndefOr[String] = js.undefined
       
@@ -244,7 +244,7 @@ object notification {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+        inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
         
         inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
         
@@ -275,7 +275,7 @@ object notification {
         
         inline def setEvents(value: js.Array[WebhookEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
-        inline def setEventsVarargs(value: WebhookEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+        inline def setEventsVarargs(value: WebhookEvent*): Self = StObject.set(x, "events", js.Array(value*))
       }
     }
     
@@ -356,7 +356,7 @@ object notification {
       
       inline def setEvent_types(value: js.Array[NotificationEventType]): Self = StObject.set(x, "event_types", value.asInstanceOf[js.Any])
       
-      inline def setEvent_typesVarargs(value: NotificationEventType*): Self = StObject.set(x, "event_types", js.Array(value :_*))
+      inline def setEvent_typesVarargs(value: NotificationEventType*): Self = StObject.set(x, "event_types", js.Array(value*))
     }
   }
   

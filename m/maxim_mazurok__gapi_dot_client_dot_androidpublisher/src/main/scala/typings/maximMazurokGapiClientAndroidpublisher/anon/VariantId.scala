@@ -28,7 +28,7 @@ trait VariantId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier of the Android app. */
+  /** Package name of the app. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */

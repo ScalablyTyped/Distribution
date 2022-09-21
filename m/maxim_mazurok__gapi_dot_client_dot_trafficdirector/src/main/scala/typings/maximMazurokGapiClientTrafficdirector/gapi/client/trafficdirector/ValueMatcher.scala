@@ -16,7 +16,7 @@ trait ValueMatcher extends StObject {
   var listMatch: js.UndefOr[ListMatcher] = js.undefined
   
   /** If specified, a match occurs if and only if the target value is a NullValue. */
-  var nullMatch: js.UndefOr[js.Any] = js.undefined
+  var nullMatch: js.UndefOr[Any] = js.undefined
   
   /**
     * If specified, value match will be performed based on whether the path is referring to a valid primitive value in the metadata. If the path is referring to a non-primitive value, the
@@ -48,7 +48,7 @@ object ValueMatcher {
     
     inline def setListMatchUndefined: Self = StObject.set(x, "listMatch", js.undefined)
     
-    inline def setNullMatch(value: js.Any): Self = StObject.set(x, "nullMatch", value.asInstanceOf[js.Any])
+    inline def setNullMatch(value: Any): Self = StObject.set(x, "nullMatch", value.asInstanceOf[js.Any])
     
     inline def setNullMatchUndefined: Self = StObject.set(x, "nullMatch", js.undefined)
     

@@ -57,7 +57,7 @@ object timeUnitColumnMod {
       
       inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      inline def setUnitsVarargs(value: Unit*): Self = StObject.set(x, "units", js.Array(value :_*))
+      inline def setUnitsVarargs(value: Unit*): Self = StObject.set(x, "units", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

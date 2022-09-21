@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Services.Store
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait StorePrice extends StObject {
   var isOnSale: Boolean
   
   /** Gets the end date for the sale period for the product, if the product is on sale. */
-  var saleEndDate: Date
+  var saleEndDate: js.Date
 }
 object StorePrice {
   
@@ -34,7 +33,7 @@ object StorePrice {
     formattedPrice: String,
     formattedRecurrencePrice: String,
     isOnSale: Boolean,
-    saleEndDate: Date
+    saleEndDate: js.Date
   ): StorePrice = {
     val __obj = js.Dynamic.literal(currencyCode = currencyCode.asInstanceOf[js.Any], formattedBasePrice = formattedBasePrice.asInstanceOf[js.Any], formattedPrice = formattedPrice.asInstanceOf[js.Any], formattedRecurrencePrice = formattedRecurrencePrice.asInstanceOf[js.Any], isOnSale = isOnSale.asInstanceOf[js.Any], saleEndDate = saleEndDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorePrice]
@@ -52,6 +51,6 @@ object StorePrice {
     
     inline def setIsOnSale(value: Boolean): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
     
-    inline def setSaleEndDate(value: Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
+    inline def setSaleEndDate(value: js.Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
   }
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLCandidateStep extends StObject {
   
   /**
-    * The ARN for the Candidate's step.
+    * The ARN for the candidate's step.
     */
   var CandidateStepArn: typings.awsSdk.sagemakerMod.CandidateStepArn
   
   /**
-    * The name for the Candidate's step.
+    * The name for the candidate's step.
     */
   var CandidateStepName: typings.awsSdk.sagemakerMod.CandidateStepName
   
   /**
-    * Whether the Candidate is at the transform, training, or processing step.
+    * Whether the candidate is at the transform, training, or processing step.
     */
   var CandidateStepType: typings.awsSdk.sagemakerMod.CandidateStepType
 }

@@ -10,7 +10,7 @@ object multiplyBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/multiplyBlock", "MultiplyBlock")
   @js.native
-  class MultiplyBlock protected () extends NodeMaterialBlock {
+  open class MultiplyBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new MultiplyBlock
       * @param name defines the block name

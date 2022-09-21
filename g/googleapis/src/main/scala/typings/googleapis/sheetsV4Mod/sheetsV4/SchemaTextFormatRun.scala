@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A run of a text format. The format of this run continues until the start
-  * index of the next run. When updating, all fields must be set.
-  */
 trait SchemaTextFormatRun extends StObject {
   
   /**
-    * The format of this run.  Absent values inherit the cell&#39;s format.
+    * The format of this run. Absent values inherit the cell's format.
     */
   var format: js.UndefOr[SchemaTextFormat] = js.undefined
   
   /**
     * The character index where this run starts.
     */
-  var startIndex: js.UndefOr[Double] = js.undefined
+  var startIndex: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaTextFormatRun {
   
@@ -34,6 +30,8 @@ object SchemaTextFormatRun {
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndexNull: Self = StObject.set(x, "startIndex", null)
     
     inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }

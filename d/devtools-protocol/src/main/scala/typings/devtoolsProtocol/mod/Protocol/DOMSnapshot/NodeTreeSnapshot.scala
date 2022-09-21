@@ -76,9 +76,20 @@ trait NodeTreeSnapshot extends StObject {
   var parentIndex: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
+    * Pseudo element identifier for this node. Only present if there is a
+    * valid pseudoType.
+    */
+  var pseudoIdentifier: js.UndefOr[RareStringData] = js.undefined
+  
+  /**
     * Type of a pseudo element node.
     */
   var pseudoType: js.UndefOr[RareStringData] = js.undefined
+  
+  /**
+    * Type of the shadow root the `Node` is in. String values are equal to the `ShadowRootType` enum.
+    */
+  var shadowRootType: js.UndefOr[RareStringData] = js.undefined
   
   /**
     * Only set for textarea elements, contains the text value.
@@ -98,13 +109,13 @@ object NodeTreeSnapshot {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: ArrayOfStrings*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ArrayOfStrings*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setBackendNodeId(value: js.Array[BackendNodeId]): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    inline def setBackendNodeIdVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeId", js.Array(value :_*))
+    inline def setBackendNodeIdVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeId", js.Array(value*))
     
     inline def setContentDocumentIndex(value: RareIntegerData): Self = StObject.set(x, "contentDocumentIndex", value.asInstanceOf[js.Any])
     
@@ -130,19 +141,19 @@ object NodeTreeSnapshot {
     
     inline def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
-    inline def setNodeNameVarargs(value: StringIndex*): Self = StObject.set(x, "nodeName", js.Array(value :_*))
+    inline def setNodeNameVarargs(value: StringIndex*): Self = StObject.set(x, "nodeName", js.Array(value*))
     
     inline def setNodeType(value: js.Array[integer]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
-    inline def setNodeTypeVarargs(value: integer*): Self = StObject.set(x, "nodeType", js.Array(value :_*))
+    inline def setNodeTypeVarargs(value: integer*): Self = StObject.set(x, "nodeType", js.Array(value*))
     
     inline def setNodeValue(value: js.Array[StringIndex]): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNodeValueUndefined: Self = StObject.set(x, "nodeValue", js.undefined)
     
-    inline def setNodeValueVarargs(value: StringIndex*): Self = StObject.set(x, "nodeValue", js.Array(value :_*))
+    inline def setNodeValueVarargs(value: StringIndex*): Self = StObject.set(x, "nodeValue", js.Array(value*))
     
     inline def setOptionSelected(value: RareBooleanData): Self = StObject.set(x, "optionSelected", value.asInstanceOf[js.Any])
     
@@ -156,11 +167,19 @@ object NodeTreeSnapshot {
     
     inline def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
     
-    inline def setParentIndexVarargs(value: integer*): Self = StObject.set(x, "parentIndex", js.Array(value :_*))
+    inline def setParentIndexVarargs(value: integer*): Self = StObject.set(x, "parentIndex", js.Array(value*))
+    
+    inline def setPseudoIdentifier(value: RareStringData): Self = StObject.set(x, "pseudoIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoIdentifierUndefined: Self = StObject.set(x, "pseudoIdentifier", js.undefined)
     
     inline def setPseudoType(value: RareStringData): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     
     inline def setPseudoTypeUndefined: Self = StObject.set(x, "pseudoType", js.undefined)
+    
+    inline def setShadowRootType(value: RareStringData): Self = StObject.set(x, "shadowRootType", value.asInstanceOf[js.Any])
+    
+    inline def setShadowRootTypeUndefined: Self = StObject.set(x, "shadowRootType", js.undefined)
     
     inline def setTextValue(value: RareStringData): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
     

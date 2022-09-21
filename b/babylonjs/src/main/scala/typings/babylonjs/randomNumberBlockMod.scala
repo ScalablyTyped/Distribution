@@ -10,7 +10,7 @@ object randomNumberBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/randomNumberBlock", "RandomNumberBlock")
   @js.native
-  class RandomNumberBlock protected () extends NodeMaterialBlock {
+  open class RandomNumberBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new RandomNumberBlock
       * @param name defines the block name

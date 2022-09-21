@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The button object that appears at the bottom of a card.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton extends StO
   /**
     * Required. The title of the button.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton {
   
@@ -33,6 +30,8 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton {
     inline def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

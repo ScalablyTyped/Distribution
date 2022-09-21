@@ -240,25 +240,25 @@ object UserDataAccounts {
       * Returns a collection of AppointmentCalendar instances associated with the UserDataAccount .
       * @return A collection of AppointmentCalendar instances associated with the UserDataAccount .
       */
-    def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
     
     /**
       * Returns a collection of ContactAnnotationList instances associated with the UserDataAccount .
       * @return A collection of ContactAnnotationList instances associated with the UserDataAccount .
       */
-    def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
     
     /**
       * Returns a collection of ContactList instances associated with the UserDataAccount .
       * @return A collection of ContactList instances associated with the UserDataAccount .
       */
-    def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
     
     /**
       * Returns a collection of EmailMailbox instances associated with the UserDataAccount .
       * @return A collection of EmailMailbox instances associated with the UserDataAccount .
       */
-    def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
     
     /** Gets the icon associated with the UserDataAccount . */
     var icon: IRandomAccessStreamReference
@@ -290,10 +290,10 @@ object UserDataAccounts {
       deleteAsync: () => IPromiseWithIAsyncAction,
       deviceAccountTypeId: String,
       enterpriseId: String,
-      findAppointmentCalendarsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
-      findContactAnnotationListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
-      findContactListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
-      findEmailMailboxesAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+      findAppointmentCalendarsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
+      findContactAnnotationListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
+      findContactListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
+      findEmailMailboxesAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
       icon: IRandomAccessStreamReference,
       id: String,
       isProtectedUnderLock: Boolean,
@@ -314,13 +314,13 @@ object UserDataAccounts {
       
       inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
       
-      inline def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
+      inline def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
       
-      inline def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
+      inline def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
       
-      inline def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
+      inline def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
       
-      inline def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
+      inline def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
       
       inline def setIcon(value: IRandomAccessStreamReference): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -355,7 +355,7 @@ object UserDataAccounts {
       * Returns a collection of UserDataAccount objects from the store based on the UserDataAccountStoreAccessType value passed into RequestStoreAsync .
       * @return Returns the collection of user data accounts, scoped by access request.
       */
-    def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
     
     /**
       * Asynchronously gets the specified account.
@@ -368,7 +368,7 @@ object UserDataAccounts {
     
     inline def apply(
       createAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount],
-      findAccountsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+      findAccountsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
       getAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount]
     ): UserDataAccountStore = {
       val __obj = js.Dynamic.literal(createAccountAsync = js.Any.fromFunction1(createAccountAsync), findAccountsAsync = js.Any.fromFunction0(findAccountsAsync), getAccountAsync = js.Any.fromFunction1(getAccountAsync))
@@ -379,7 +379,7 @@ object UserDataAccounts {
       
       inline def setCreateAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "createAccountAsync", js.Any.fromFunction1(value))
       
-      inline def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
+      inline def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
       
       inline def setGetAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "getAccountAsync", js.Any.fromFunction1(value))
     }

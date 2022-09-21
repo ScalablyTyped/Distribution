@@ -3,12 +3,12 @@ package typings.easyXHeaders
 import typings.easyXHeaders.anon.Ares
 import typings.easyXHeaders.anon.End
 import typings.easyXHeaders.anon.FnCall
-import typings.easyXHeaders.anon.FnCallSRadix
+import typings.easyXHeaders.anon.FnCallStringRadix
 import typings.easyXHeaders.anon.HeapTotal
 import typings.easyXHeaders.anon.Instantiable
 import typings.easyXHeaders.anon.Targetdefaults
 import typings.easyXHeaders.anon.Typeofconsole
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
@@ -16,7 +16,7 @@ import typings.std.DataViewConstructor
 import typings.std.DateConstructor
 import typings.std.Error
 import typings.std.ErrorConstructor
-import typings.std.EvalError
+import typings.std.ErrorOptions
 import typings.std.EvalErrorConstructor
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor
@@ -30,15 +30,12 @@ import typings.std.Math
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
 import typings.std.RangeErrorConstructor
-import typings.std.ReferenceError
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
 import typings.std.SetConstructor
 import typings.std.StringConstructor
 import typings.std.SyntaxErrorConstructor
-import typings.std.TypeError
 import typings.std.TypeErrorConstructor
-import typings.std.URIError
 import typings.std.URIErrorConstructor
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
@@ -99,7 +96,7 @@ object NodeJS {
     
     def addListener(event: String, listener: js.Function): EventEmitter = js.native
     
-    def emit(event: String, args: js.Any*): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
     
     def listeners(event: String): js.Array[js.Function] = js.native
     
@@ -117,17 +114,21 @@ object NodeJS {
   
   trait Global extends StObject {
     
-    def Array(): js.Array[js.Any]
-    def Array(arrayLength: Double): js.Array[js.Any]
+    /* standard es5 */
+    def Array(): js.Array[Any]
+    def Array(arrayLength: Double): js.Array[Any]
+    /* standard es5 */
     def Array[T](items: T*): js.Array[T]
     
     var ArrayBuffer: ArrayBufferConstructor
     
     @JSName("Array")
     var Array_Original: ArrayConstructor
+    /* standard es5 */
     @JSName("Array")
     def Array_T[T](arrayLength: Double): js.Array[T]
     
+    /* standard es5 */
     def Boolean[T](): scala.Boolean
     def Boolean[T](value: T): scala.Boolean
     @JSName("Boolean")
@@ -137,21 +138,33 @@ object NodeJS {
     
     var DataView: DataViewConstructor
     
+    /* standard es5 */
     def Date(): String
     @JSName("Date")
     var Date_Original: DateConstructor
     
-    def Error(): typings.std.Error
-    def Error(message: String): typings.std.Error
+    /* standard es2022.error */
+    def Error(): js.Error
+    def Error(message: String): js.Error
+    def Error(message: String, options: ErrorOptions): js.Error
+    def Error(message: Unit, options: ErrorOptions): js.Error
     @JSName("Error")
     var Error_Original: ErrorConstructor
     
-    def EvalError(): Error
-    def EvalError(message: String): Error
+    /* standard es2022.error */
+    def EvalError(): js.Error
+    def EvalError(message: String): js.Error
+    def EvalError(message: String, options: ErrorOptions): js.Error
+    def EvalError(message: Unit, options: ErrorOptions): js.Error
+    /* standard es2022.error */
     @JSName("EvalError")
-    def EvalError_EvalError(): EvalError
+    def EvalError_EvalError(): js.EvalError
     @JSName("EvalError")
-    def EvalError_EvalError(message: String): EvalError
+    def EvalError_EvalError(message: String): js.EvalError
+    @JSName("EvalError")
+    def EvalError_EvalError(message: String, options: ErrorOptions): js.EvalError
+    @JSName("EvalError")
+    def EvalError_EvalError(message: Unit, options: ErrorOptions): js.EvalError
     @JSName("EvalError")
     var EvalError_Original: EvalErrorConstructor
     
@@ -159,6 +172,7 @@ object NodeJS {
     
     var Float64Array: Float64ArrayConstructor
     
+    /* standard es5 */
     def Function(args: String*): js.Function
     @JSName("Function")
     var Function_Original: FunctionConstructor
@@ -173,7 +187,7 @@ object NodeJS {
     
     var Int8Array: Int8ArrayConstructor
     
-    var Intl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any
+    var Intl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ Any
     
     var JSON: typings.std.JSON
     
@@ -183,78 +197,123 @@ object NodeJS {
     
     var NaN: Double
     
+    /* standard es5 */
     def Number(): Double
-    def Number(value: js.Any): Double
+    def Number(value: Any): Double
     @JSName("Number")
     var Number_Original: NumberConstructor
     
-    def Object(): js.Any
-    def Object(value: js.Any): js.Any
+    /* standard es5 */
+    def Object(): Any
+    /* standard es5 */
+    def Object(value: Any): Any
     @JSName("Object")
     var Object_Original: ObjectConstructor
     
     var Promise: js.Function
     
-    def RangeError(): typings.std.RangeError
-    def RangeError(message: String): typings.std.RangeError
+    /* standard es2022.error */
+    def RangeError(): js.RangeError
+    def RangeError(message: String): js.RangeError
+    def RangeError(message: String, options: ErrorOptions): js.RangeError
+    def RangeError(message: Unit, options: ErrorOptions): js.RangeError
+    /* standard es2022.error */
     @JSName("RangeError")
-    def RangeError_Error(): Error
+    def RangeError_Error(): js.Error
     @JSName("RangeError")
-    def RangeError_Error(message: String): Error
+    def RangeError_Error(message: String): js.Error
+    @JSName("RangeError")
+    def RangeError_Error(message: String, options: ErrorOptions): js.Error
+    @JSName("RangeError")
+    def RangeError_Error(message: Unit, options: ErrorOptions): js.Error
     @JSName("RangeError")
     var RangeError_Original: RangeErrorConstructor
     
-    def ReferenceError(): Error
-    def ReferenceError(message: String): Error
+    /* standard es2022.error */
+    def ReferenceError(): js.Error
+    def ReferenceError(message: String): js.Error
+    def ReferenceError(message: String, options: ErrorOptions): js.Error
+    def ReferenceError(message: Unit, options: ErrorOptions): js.Error
     @JSName("ReferenceError")
     var ReferenceError_Original: ReferenceErrorConstructor
+    /* standard es2022.error */
     @JSName("ReferenceError")
-    def ReferenceError_ReferenceError(): ReferenceError
+    def ReferenceError_ReferenceError(): js.ReferenceError
     @JSName("ReferenceError")
-    def ReferenceError_ReferenceError(message: String): ReferenceError
+    def ReferenceError_ReferenceError(message: String): js.ReferenceError
+    @JSName("ReferenceError")
+    def ReferenceError_ReferenceError(message: String, options: ErrorOptions): js.ReferenceError
+    @JSName("ReferenceError")
+    def ReferenceError_ReferenceError(message: Unit, options: ErrorOptions): js.ReferenceError
     
-    def RegExp(pattern: String): typings.std.RegExp
-    def RegExp(pattern: String, flags: String): typings.std.RegExp
-    def RegExp(pattern: typings.std.RegExp): typings.std.RegExp
-    def RegExp(pattern: typings.std.RegExp, flags: String): typings.std.RegExp
+    def RegExp(pattern: String): js.RegExp
+    def RegExp(pattern: String, flags: String): js.RegExp
+    /* standard es2015.core */
+    def RegExp(pattern: js.RegExp): js.RegExp
+    def RegExp(pattern: js.RegExp, flags: String): js.RegExp
     @JSName("RegExp")
     var RegExp_Original: RegExpConstructor
     
     var Set: SetConstructor
     
+    /* standard es5 */
     def String(): java.lang.String
-    def String(value: js.Any): java.lang.String
+    def String(value: Any): java.lang.String
     @JSName("String")
     var String_Original: StringConstructor
     
     var Symbol: js.Function
     
-    def SyntaxError(): typings.std.SyntaxError
-    def SyntaxError(message: String): typings.std.SyntaxError
+    /* standard es2022.error */
+    def SyntaxError(): js.SyntaxError
+    def SyntaxError(message: String): js.SyntaxError
+    def SyntaxError(message: String, options: ErrorOptions): js.SyntaxError
+    def SyntaxError(message: Unit, options: ErrorOptions): js.SyntaxError
+    /* standard es2022.error */
     @JSName("SyntaxError")
-    def SyntaxError_Error(): Error
+    def SyntaxError_Error(): js.Error
     @JSName("SyntaxError")
-    def SyntaxError_Error(message: String): Error
+    def SyntaxError_Error(message: String): js.Error
+    @JSName("SyntaxError")
+    def SyntaxError_Error(message: String, options: ErrorOptions): js.Error
+    @JSName("SyntaxError")
+    def SyntaxError_Error(message: Unit, options: ErrorOptions): js.Error
     @JSName("SyntaxError")
     var SyntaxError_Original: SyntaxErrorConstructor
     
-    def TypeError(): Error
-    def TypeError(message: String): Error
+    /* standard es2022.error */
+    def TypeError(): js.Error
+    def TypeError(message: String): js.Error
+    def TypeError(message: String, options: ErrorOptions): js.Error
+    def TypeError(message: Unit, options: ErrorOptions): js.Error
     @JSName("TypeError")
     var TypeError_Original: TypeErrorConstructor
+    /* standard es2022.error */
     @JSName("TypeError")
-    def TypeError_TypeError(): TypeError
+    def TypeError_TypeError(): js.TypeError
     @JSName("TypeError")
-    def TypeError_TypeError(message: String): TypeError
+    def TypeError_TypeError(message: String): js.TypeError
+    @JSName("TypeError")
+    def TypeError_TypeError(message: String, options: ErrorOptions): js.TypeError
+    @JSName("TypeError")
+    def TypeError_TypeError(message: Unit, options: ErrorOptions): js.TypeError
     
-    def URIError(): Error
-    def URIError(message: String): Error
+    /* standard es2022.error */
+    def URIError(): js.URIError
+    def URIError(message: String): js.URIError
+    def URIError(message: String, options: ErrorOptions): js.URIError
+    def URIError(message: Unit, options: ErrorOptions): js.URIError
+    /* standard es2022.error */
+    @JSName("URIError")
+    def URIError_Error(): js.Error
+    @JSName("URIError")
+    def URIError_Error(message: String): js.Error
+    @JSName("URIError")
+    def URIError_Error(message: String, options: ErrorOptions): js.Error
+    @JSName("URIError")
+    def URIError_Error(message: Unit, options: ErrorOptions): js.Error
     @JSName("URIError")
     var URIError_Original: URIErrorConstructor
-    @JSName("URIError")
-    def URIError_URIError(): URIError
-    @JSName("URIError")
-    def URIError_URIError(message: String): URIError
     
     var Uint16Array: Uint16ArrayConstructor
     
@@ -268,7 +327,7 @@ object NodeJS {
     
     var WeakSet: js.Function
     
-    def clearImmediate(immediateId: js.Any): Unit
+    def clearImmediate(immediateId: Any): Unit
     
     def clearInterval(intervalId: Timer): Unit
     
@@ -298,9 +357,9 @@ object NodeJS {
     
     def escape(str: String): String
     
-    def eval(x: String): js.Any
+    def eval(x: String): Any
     @JSName("eval")
-    var eval_Original: js.Function1[/* x */ String, js.Any]
+    var eval_Original: js.Function1[/* x */ String, Any]
     
     def gc(): Unit
     
@@ -318,20 +377,20 @@ object NodeJS {
     @JSName("parseFloat")
     var parseFloat_Original: js.Function1[/* string */ String, Double]
     
-    def parseInt(s: String): Double
-    def parseInt(s: String, radix: Double): Double
+    def parseInt(string: String): Double
+    def parseInt(string: String, radix: Double): Double
     @JSName("parseInt")
-    var parseInt_Original: FnCallSRadix
+    var parseInt_Original: FnCallStringRadix
     
     var process: Process
     
     var root: Global
     
-    def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): js.Any
+    def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Any
     
-    def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer
+    def setInterval(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer
     
-    def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer
+    def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer
     
     var undefined: Unit
     
@@ -356,7 +415,7 @@ object NodeJS {
       Int16Array: Int16ArrayConstructor,
       Int32Array: Int32ArrayConstructor,
       Int8Array: Int8ArrayConstructor,
-      Intl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any,
+      Intl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ Any,
       JSON: JSON,
       Map: MapConstructor,
       Math: Math,
@@ -379,7 +438,7 @@ object NodeJS {
       Uint8ClampedArray: js.Function,
       WeakMap: WeakMapConstructor,
       WeakSet: js.Function,
-      clearImmediate: js.Any => Unit,
+      clearImmediate: Any => Unit,
       clearInterval: Timer => Unit,
       clearTimeout: Timer => Unit,
       console: Typeofconsole,
@@ -388,18 +447,18 @@ object NodeJS {
       encodeURI: /* uri */ String => String,
       encodeURIComponent: FnCall,
       escape: String => String,
-      eval: /* x */ String => js.Any,
+      eval: /* x */ String => Any,
       gc: () => Unit,
       global: Global,
       isFinite: /* number */ Double => Boolean,
       isNaN: /* number */ Double => Boolean,
       parseFloat: /* string */ String => Double,
-      parseInt: FnCallSRadix,
+      parseInt: FnCallStringRadix,
       process: Process,
       root: Global,
-      setImmediate: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => js.Any,
-      setInterval: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => Timer,
-      setTimeout: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => Timer,
+      setImmediate: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => Any,
+      setInterval: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => Timer,
+      setTimeout: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => Timer,
       undefined: Unit,
       unescape: String => String
     ): Global = {
@@ -417,7 +476,7 @@ object NodeJS {
       
       inline def setBuffer(value: Instantiable): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
       
-      inline def setClearImmediate(value: js.Any => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
+      inline def setClearImmediate(value: Any => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
       inline def setClearInterval(value: Timer => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
@@ -441,7 +500,7 @@ object NodeJS {
       
       inline def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      inline def setEval(value: /* x */ String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
+      inline def setEval(value: /* x */ String => Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
       
       inline def setEvalError(value: EvalErrorConstructor): Self = StObject.set(x, "EvalError", value.asInstanceOf[js.Any])
       
@@ -463,7 +522,7 @@ object NodeJS {
       
       inline def setInt8Array(value: Int8ArrayConstructor): Self = StObject.set(x, "Int8Array", value.asInstanceOf[js.Any])
       
-      inline def setIntl(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any): Self = StObject.set(x, "Intl", value.asInstanceOf[js.Any])
+      inline def setIntl(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ Any): Self = StObject.set(x, "Intl", value.asInstanceOf[js.Any])
       
       inline def setIsFinite(value: /* number */ Double => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
       
@@ -483,7 +542,7 @@ object NodeJS {
       
       inline def setParseFloat(value: /* string */ String => Double): Self = StObject.set(x, "parseFloat", js.Any.fromFunction1(value))
       
-      inline def setParseInt(value: FnCallSRadix): Self = StObject.set(x, "parseInt", value.asInstanceOf[js.Any])
+      inline def setParseInt(value: FnCallStringRadix): Self = StObject.set(x, "parseInt", value.asInstanceOf[js.Any])
       
       inline def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
@@ -499,11 +558,11 @@ object NodeJS {
       
       inline def setSet(value: SetConstructor): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
       
-      inline def setSetImmediate(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
+      inline def setSetImmediate(value: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => Any): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       
-      inline def setSetInterval(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => Timer): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
+      inline def setSetInterval(value: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => Timer): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      inline def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => Timer): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
+      inline def setSetTimeout(value: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => Timer): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
       
       inline def setString(value: StringConstructor): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
       
@@ -550,7 +609,7 @@ object NodeJS {
     
     def cwd(): String = js.native
     
-    var env: js.Any = js.native
+    var env: Any = js.native
     
     var execPath: String = js.native
     
@@ -576,7 +635,7 @@ object NodeJS {
     var platform: String = js.native
     
     // Worker
-    var send: js.UndefOr[js.Function2[/* message */ js.Any, /* sendHandle */ js.UndefOr[js.Any], Unit]] = js.native
+    var send: js.UndefOr[js.Function2[/* message */ Any, /* sendHandle */ js.UndefOr[Any], Unit]] = js.native
     
     def setgid(id: String): Unit = js.native
     def setgid(id: Double): Unit = js.native

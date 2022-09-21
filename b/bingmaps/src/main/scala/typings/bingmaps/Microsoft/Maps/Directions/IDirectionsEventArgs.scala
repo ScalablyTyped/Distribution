@@ -25,8 +25,8 @@ object IDirectionsEventArgs {
     
     inline def setRouteSummary(value: js.Array[IRouteSummary]): Self = StObject.set(x, "routeSummary", value.asInstanceOf[js.Any])
     
-    inline def setRouteSummaryVarargs(value: IRouteSummary*): Self = StObject.set(x, "routeSummary", js.Array(value :_*))
+    inline def setRouteSummaryVarargs(value: IRouteSummary*): Self = StObject.set(x, "routeSummary", js.Array(value*))
     
-    inline def setRouteVarargs(value: IRoute*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: IRoute*): Self = StObject.set(x, "route", js.Array(value*))
   }
 }

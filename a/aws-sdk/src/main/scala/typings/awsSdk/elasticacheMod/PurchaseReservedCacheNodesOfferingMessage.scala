@@ -20,6 +20,11 @@ trait PurchaseReservedCacheNodesOfferingMessage extends StObject {
     * The ID of the reserved cache node offering to purchase. Example: 438012d3-4052-4cc7-b2e3-8d3372e0e706 
     */
   var ReservedCacheNodesOfferingId: String
+  
+  /**
+    * A list of tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value, although null is accepted.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object PurchaseReservedCacheNodesOfferingMessage {
   
@@ -39,5 +44,11 @@ object PurchaseReservedCacheNodesOfferingMessage {
     inline def setReservedCacheNodeIdUndefined: Self = StObject.set(x, "ReservedCacheNodeId", js.undefined)
     
     inline def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

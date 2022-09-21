@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "CertificateList")
 @js.native
-class CertificateList protected () extends PropertyList[Certificate] {
-  def this(parent: js.Any, list: js.Array[CertificateDefinition]) = this()
+open class CertificateList protected () extends PropertyList[Certificate] {
+  def this(parent: Any, list: js.Array[CertificateDefinition]) = this()
   
   def resolveOne(url: String): CertificateDefinition = js.native
 }
@@ -18,5 +18,5 @@ object CertificateList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isCertificateList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificateList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCertificateList(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificateList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

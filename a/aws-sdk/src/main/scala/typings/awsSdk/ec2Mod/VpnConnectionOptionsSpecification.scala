@@ -22,12 +22,17 @@ trait VpnConnectionOptionsSpecification extends StObject {
   var LocalIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
-    * The IPv4 CIDR on the AWS side of the VPN connection. Default: 0.0.0.0/0 
+    * The type of IPv4 address assigned to the outside interface of the customer gateway device. Valid values: PrivateIpv4 | PublicIpv4  Default: PublicIpv4 
+    */
+  var OutsideIpAddressType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The IPv4 CIDR on the Amazon Web Services side of the VPN connection. Default: 0.0.0.0/0 
     */
   var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
-    * The IPv6 CIDR on the AWS side of the VPN connection. Default: ::/0 
+    * The IPv6 CIDR on the Amazon Web Services side of the VPN connection. Default: ::/0 
     */
   var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
@@ -35,6 +40,11 @@ trait VpnConnectionOptionsSpecification extends StObject {
     * Indicate whether the VPN connection uses static routes only. If you are creating a VPN connection for a device that does not support BGP, you must specify true. Use CreateVpnConnectionRoute to create a static route. Default: false 
     */
   var StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The transit gateway attachment ID to use for the VPN tunnel. Required if OutsideIpAddressType is set to PrivateIpv4.
+    */
+  var TransportTransitGatewayAttachmentId: js.UndefOr[TransitGatewayAttachmentId] = js.undefined
   
   /**
     * Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Default: ipv4 
@@ -67,6 +77,10 @@ object VpnConnectionOptionsSpecification {
     
     inline def setLocalIpv6NetworkCidrUndefined: Self = StObject.set(x, "LocalIpv6NetworkCidr", js.undefined)
     
+    inline def setOutsideIpAddressType(value: String): Self = StObject.set(x, "OutsideIpAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setOutsideIpAddressTypeUndefined: Self = StObject.set(x, "OutsideIpAddressType", js.undefined)
+    
     inline def setRemoteIpv4NetworkCidr(value: String): Self = StObject.set(x, "RemoteIpv4NetworkCidr", value.asInstanceOf[js.Any])
     
     inline def setRemoteIpv4NetworkCidrUndefined: Self = StObject.set(x, "RemoteIpv4NetworkCidr", js.undefined)
@@ -79,6 +93,10 @@ object VpnConnectionOptionsSpecification {
     
     inline def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "StaticRoutesOnly", js.undefined)
     
+    inline def setTransportTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransportTransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    
+    inline def setTransportTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransportTransitGatewayAttachmentId", js.undefined)
+    
     inline def setTunnelInsideIpVersion(value: TunnelInsideIpVersion): Self = StObject.set(x, "TunnelInsideIpVersion", value.asInstanceOf[js.Any])
     
     inline def setTunnelInsideIpVersionUndefined: Self = StObject.set(x, "TunnelInsideIpVersion", js.undefined)
@@ -87,6 +105,6 @@ object VpnConnectionOptionsSpecification {
     
     inline def setTunnelOptionsUndefined: Self = StObject.set(x, "TunnelOptions", js.undefined)
     
-    inline def setTunnelOptionsVarargs(value: VpnTunnelOptionsSpecification*): Self = StObject.set(x, "TunnelOptions", js.Array(value :_*))
+    inline def setTunnelOptionsVarargs(value: VpnTunnelOptionsSpecification*): Self = StObject.set(x, "TunnelOptions", js.Array(value*))
   }
 }

@@ -36,6 +36,6 @@ object IUnicodeHandling {
     
     inline def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

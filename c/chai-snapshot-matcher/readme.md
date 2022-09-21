@@ -10,15 +10,12 @@ A Snapshot testing library designed for Mocha and Chai users
 | ------------------ | :-------------: |
 | Full name          | chai-snapshot-matcher |
 | Keywords           | chai, mocha, snapshot, test, regression, matcher |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 17949 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1663.0 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/tlameiras/chai-snapshot#readme)
-- [Bugs](https://github.com/tlameiras/chai-snapshot/issues)
-- [Repository](https://github.com/tlameiras/chai-snapshot)
 - [Npm](https://www.npmjs.com/package/chai-snapshot-matcher)
     
 

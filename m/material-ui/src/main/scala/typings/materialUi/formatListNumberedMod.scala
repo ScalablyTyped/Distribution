@@ -10,10 +10,10 @@ object formatListNumberedMod {
   
   @JSImport("material-ui/svg-icons/editor/format-list-numbered", JSImport.Default)
   @js.native
-  class default () extends EditorFormatListNumbered
+  open class default () extends EditorFormatListNumbered
   
   @JSImport("material-ui/svg-icons/editor/format-list-numbered", "EditorFormatListNumbered")
   @js.native
-  class EditorFormatListNumbered ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatListNumbered ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

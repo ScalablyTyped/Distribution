@@ -18,47 +18,47 @@ object shapesFixturesMod {
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "floatShape")
   @js.native
-  val floatShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Float */ js.Any = js.native
+  val floatShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Float */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "integerShape")
   @js.native
-  val integerShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Integer */ js.Any = js.native
+  val integerShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Integer */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "listOfStringsFlattenedShape")
   @js.native
-  val listOfStringsFlattenedShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ js.Any = js.native
+  val listOfStringsFlattenedShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "listOfStringsShape")
   @js.native
-  val listOfStringsShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ js.Any = js.native
+  val listOfStringsShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "listOfStringsWithLocationNameFlattenedShape")
   @js.native
-  val listOfStringsWithLocationNameFlattenedShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ js.Any = js.native
+  val listOfStringsWithLocationNameFlattenedShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "listOfStringsWithLocationNameShape")
   @js.native
-  val listOfStringsWithLocationNameShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ js.Any = js.native
+  val listOfStringsWithLocationNameShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List */ Any = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "mapOfStringsToIntegersFlattenedShape")
   @js.native
   val mapOfStringsToIntegersFlattenedShape: Map[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "mapOfStringsToIntegersShape")
   @js.native
   val mapOfStringsToIntegersShape: Map[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "mapOfStringsToIntegersWithLocationNameShape")
   @js.native
   val mapOfStringsToIntegersWithLocationNameShape: Map[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "stringShape")
@@ -67,5 +67,5 @@ object shapesFixturesMod {
   
   @JSImport("@aws-sdk/query-builder/build/shapes.fixtures", "timestampShape")
   @js.native
-  val timestampShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+  val timestampShape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ Any = js.native
 }

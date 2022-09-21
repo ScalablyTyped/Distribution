@@ -11,7 +11,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jotform-css.js", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CssJs_
   @JSImport("jotform-css.js", JSImport.Default)
@@ -21,7 +21,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jotform-css.js", "cssjs")
   @js.native
-  class cssjs ()
+  open class cssjs ()
     extends StObject
        with CssJs_
   @JSImport("jotform-css.js", "cssjs")
@@ -33,7 +33,7 @@ object mod extends Shortcut {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("cssjs")
     @js.native
-    class cssjs ()
+    open class cssjs ()
       extends StObject
          with CssJs_
     @JSGlobal("cssjs")
@@ -134,7 +134,7 @@ object mod extends Shortcut {
       * @param rules, css directive string eg color:white; font-size:18px;
       * @returns an array of objects containing ruleName:ruleValue pairs
       */
-    def parseRules(rules: String): js.Array[js.Any] = js.native
+    def parseRules(rules: String): js.Array[Any] = js.native
     
     /**
       * @param css the original css string to be stripped out of comments

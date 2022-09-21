@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifies a creative which has been associated with a given campaign.
-  */
 trait SchemaCampaignCreativeAssociation extends StObject {
   
   /**
-    * ID of the creative associated with the campaign. This is a required
-    * field.
+    * ID of the creative associated with the campaign. This is a required field.
     */
-  var creativeId: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#campaignCreativeAssociation&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#campaignCreativeAssociation".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCampaignCreativeAssociation {
   
@@ -32,9 +27,13 @@ object SchemaCampaignCreativeAssociation {
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
+    inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
+    
     inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

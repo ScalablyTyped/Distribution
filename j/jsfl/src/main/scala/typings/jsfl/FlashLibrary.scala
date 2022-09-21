@@ -38,8 +38,8 @@ trait FlashLibrary extends StObject {
   /** An array of values for all currently selected items in the library. */
   def getSelectedItems(): js.Array[FlashItem] = js.native
   
-  def importEmbeddedSWF(linkageName: String, swfData: js.Array[js.Any]): Unit = js.native
-  def importEmbeddedSWF(linkageName: String, swfData: js.Array[js.Any], libName: String): Unit = js.native
+  def importEmbeddedSWF(linkageName: String, swfData: js.Array[Any]): Unit = js.native
+  def importEmbeddedSWF(linkageName: String, swfData: js.Array[Any], libName: String): Unit = js.native
   
   def itemExists(namePath: String): Boolean = js.native
   
@@ -72,7 +72,7 @@ trait FlashLibrary extends StObject {
   def selectNone(): Unit = js.native
   
   /** Method; sets the property for all selected library items (ignoring folders). */
-  def setItemProperty(property: String, value: js.Any): Unit = js.native
+  def setItemProperty(property: String, value: Any): Unit = js.native
   
   /** Method; updates the specified item. */
   def updateItem(namePath: String): Boolean = js.native

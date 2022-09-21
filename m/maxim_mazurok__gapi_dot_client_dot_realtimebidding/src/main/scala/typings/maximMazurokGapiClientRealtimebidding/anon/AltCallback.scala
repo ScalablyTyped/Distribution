@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.RemoveTargetedSitesRequest
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.RemoveTargetedPublishersRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait AltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RemoveTargetedSitesRequest
+  var resource: RemoveTargetedPublishersRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(pretargetingConfig: String, resource: RemoveTargetedSitesRequest): AltCallback = {
+  inline def apply(pretargetingConfig: String, resource: RemoveTargetedPublishersRequest): AltCallback = {
     val __obj = js.Dynamic.literal(pretargetingConfig = pretargetingConfig.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
@@ -94,7 +94,7 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RemoveTargetedSitesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RemoveTargetedPublishersRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

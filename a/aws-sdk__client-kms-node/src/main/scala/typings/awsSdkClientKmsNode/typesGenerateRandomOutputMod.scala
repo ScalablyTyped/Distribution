@@ -2,7 +2,6 @@ package typings.awsSdkClientKmsNode
 
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesGenerateRandomOutputMod {
     /**
       * <p>The random byte string. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.</p>
       */
-    var Plaintext: js.UndefOr[Uint8Array] = js.undefined
+    var Plaintext: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
   object GenerateRandomOutput {
     
@@ -35,7 +34,7 @@ object typesGenerateRandomOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
       
       inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
     }

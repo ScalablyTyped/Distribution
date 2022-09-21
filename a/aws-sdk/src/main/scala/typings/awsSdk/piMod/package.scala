@@ -1,19 +1,57 @@
 package typings.awsSdk.piMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DataPointsList = js.Array[typings.awsSdk.piMod.DataPoint]
+type AdditionalMetricsList = js.Array[RequestString]
 
-type DimensionKeyDescriptionList = js.Array[typings.awsSdk.piMod.DimensionKeyDescription]
+type AdditionalMetricsMap = StringDictionary[Double]
 
-type DimensionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.piMod.String]
+type DataPointsList = js.Array[DataPoint]
+
+type Description = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.PROCESSING
+  - typings.awsSdk.awsSdkStrings.UNAVAILABLE
+  - java.lang.String
+*/
+type DetailStatus = _DetailStatus | java.lang.String
+
+type DimensionDetailList = js.Array[DimensionDetail]
+
+type DimensionGroupDetailList = js.Array[DimensionGroupDetail]
+
+type DimensionKeyDescriptionList = js.Array[DimensionKeyDescription]
+
+type DimensionKeyDetailList = js.Array[DimensionKeyDetail]
+
+type DimensionMap = StringDictionary[RequestString]
+
+type DimensionsMetricList = js.Array[RequestString]
 
 type Double = scala.Double
 
-type ISOTimestamp = typings.std.Date
+type FeatureMetadataMap = StringDictionary[FeatureMetadata]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED
+  - typings.awsSdk.awsSdkStrings.ENABLED_PENDING_REBOOT
+  - typings.awsSdk.awsSdkStrings.DISABLED_PENDING_REBOOT
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type FeatureStatus = _FeatureStatus | java.lang.String
+
+type ISOTimestamp = js.Date
+
+type IdentifierString = java.lang.String
 
 type Integer = scala.Double
 
@@ -21,25 +59,42 @@ type Limit = scala.Double
 
 type MaxResults = scala.Double
 
-type MetricKeyDataPointsList = js.Array[typings.awsSdk.piMod.MetricKeyDataPoints]
+type MetricDimensionsList = js.Array[MetricDimensionGroups]
 
-type MetricQueryFilterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.piMod.String]
+type MetricKeyDataPointsList = js.Array[MetricKeyDataPoints]
 
-type MetricQueryList = js.Array[typings.awsSdk.piMod.MetricQuery]
+type MetricQueryFilterMap = StringDictionary[RequestString]
 
-type MetricValuesList = js.Array[typings.awsSdk.piMod.Double]
+type MetricQueryList = js.Array[MetricQuery]
 
-type ResponsePartitionKeyList = js.Array[typings.awsSdk.piMod.ResponsePartitionKey]
+type MetricTypeList = js.Array[RequestString]
 
-type ServiceType = typings.awsSdk.awsSdkStrings.RDS | java.lang.String
+type MetricValuesList = js.Array[Double]
+
+type NextToken = java.lang.String
+
+type RequestString = java.lang.String
+
+type RequestStringList = js.Array[RequestString]
+
+type RequestedDimensionList = js.Array[RequestString]
+
+type ResponsePartitionKeyList = js.Array[ResponsePartitionKey]
+
+type ResponseResourceMetricList = js.Array[ResponseResourceMetric]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RDS
+  - typings.awsSdk.awsSdkStrings.DOCDB
+  - java.lang.String
+*/
+type ServiceType = _ServiceType | java.lang.String
 
 type String = java.lang.String
-
-type StringList = js.Array[typings.awsSdk.piMod.String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-02-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.piMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

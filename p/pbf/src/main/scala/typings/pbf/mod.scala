@@ -4,8 +4,6 @@ import typings.pbf.pbfNumbers.`0`
 import typings.pbf.pbfNumbers.`1`
 import typings.pbf.pbfNumbers.`2`
 import typings.pbf.pbfNumbers.`5`
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +12,11 @@ object mod {
   
   @JSImport("pbf", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Pbf {
-    def this(buffer: ArrayBuffer) = this()
-    def this(buffer: Uint8Array) = this()
+    def this(buffer: js.typedarray.ArrayBuffer) = this()
+    def this(buffer: js.typedarray.Uint8Array) = this()
   }
   
   /* static member */
@@ -44,11 +42,11 @@ object mod {
   @js.native
   trait Pbf extends StObject {
     
-    var buf: Uint8Array = js.native
+    var buf: js.typedarray.Uint8Array = js.native
     
     def destroy(): Unit = js.native
     
-    def finish(): Uint8Array = js.native
+    def finish(): js.typedarray.Uint8Array = js.native
     
     var length: Double = js.native
     
@@ -56,7 +54,7 @@ object mod {
     
     def readBoolean(): Boolean = js.native
     
-    def readBytes(): Uint8Array = js.native
+    def readBytes(): js.typedarray.Uint8Array = js.native
     
     def readDouble(): Double = js.native
     
@@ -144,9 +142,9 @@ object mod {
     
     def writeBooleanField(tag: Double, `val`: Boolean): Unit = js.native
     
-    def writeBytes(buffer: Uint8Array): Unit = js.native
+    def writeBytes(buffer: js.typedarray.Uint8Array): Unit = js.native
     
-    def writeBytesField(tag: Double, buffer: Uint8Array): Unit = js.native
+    def writeBytesField(tag: Double, buffer: js.typedarray.Uint8Array): Unit = js.native
     
     def writeDouble(`val`: Double): Unit = js.native
     

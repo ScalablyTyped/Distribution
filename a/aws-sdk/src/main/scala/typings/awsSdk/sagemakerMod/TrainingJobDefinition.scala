@@ -17,7 +17,7 @@ trait TrainingJobDefinition extends StObject {
   var InputDataConfig: typings.awsSdk.sagemakerMod.InputDataConfig
   
   /**
-    * the path to the S3 bucket where you want to store model artifacts. Amazon SageMaker creates subfolders for the artifacts.
+    * the path to the S3 bucket where you want to store model artifacts. SageMaker creates subfolders for the artifacts.
     */
   var OutputDataConfig: typings.awsSdk.sagemakerMod.OutputDataConfig
   
@@ -27,13 +27,10 @@ trait TrainingJobDefinition extends StObject {
   var ResourceConfig: typings.awsSdk.sagemakerMod.ResourceConfig
   
   /**
-    * Specifies a limit to how long a model training job can run. When the job reaches the time limit, Amazon SageMaker ends the training job. Use this API to cap model training costs. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms can use this 120-second window to save the model artifacts.
+    * Specifies a limit to how long a model training job can run. It also specifies how long a managed Spot training job has to complete. When the job reaches the time limit, SageMaker ends the training job. Use this API to cap model training costs. To stop a job, SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms can use this 120-second window to save the model artifacts.
     */
   var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition
   
-  /**
-    * The input mode used by the algorithm for the training job. For the input modes that Amazon SageMaker algorithms support, see Algorithms. If an algorithm supports the File input mode, Amazon SageMaker downloads the training data from S3 to the provisioned ML storage Volume, and mounts the directory to docker volume for training container. If an algorithm supports the Pipe input mode, Amazon SageMaker streams data directly from S3 to the container.
-    */
   var TrainingInputMode: typings.awsSdk.sagemakerMod.TrainingInputMode
 }
 object TrainingJobDefinition {
@@ -57,7 +54,7 @@ object TrainingJobDefinition {
     
     inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value*))
     
     inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ trait NetworkConnection extends StObject {
   
   /**
     * Date when the destination domain was registered. The Timestamp type represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var domainRegisteredDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   

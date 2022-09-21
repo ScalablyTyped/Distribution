@@ -25,7 +25,7 @@ object EventsResetMultipleForAllRequest {
     
     inline def setEvent_idsUndefined: Self = StObject.set(x, "event_ids", js.undefined)
     
-    inline def setEvent_idsVarargs(value: String*): Self = StObject.set(x, "event_ids", js.Array(value :_*))
+    inline def setEvent_idsVarargs(value: String*): Self = StObject.set(x, "event_ids", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

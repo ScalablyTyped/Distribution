@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetServiceSettingsResponse extends StObject {
   
   /**
-    * Indicates whether cross-account discovery has been enabled.
+    * Indicates whether cross-account discovery is enabled.
     */
   var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) of the AWS resource share. The License Manager master account will provide member accounts with access to this share.
+    * Amazon Resource Name (ARN) of the resource share. The License Manager management account provides member accounts with access to this share.
     */
   var LicenseManagerResourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether AWS Organizations has been integrated with License Manager for cross-account discovery.
+    * Indicates whether Organizations is integrated with License Manager for cross-account discovery.
     */
   var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.undefined
   

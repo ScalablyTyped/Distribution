@@ -27,7 +27,10 @@ trait Documentation extends StObject {
     */
   var serviceRootUrl: js.UndefOr[String] = js.undefined
   
-  /** A short summary of what the service does. Can only be provided by plain text. */
+  /**
+    * A short description of what the service does. The summary must be plain text. It becomes the overview of the service displayed in Google Cloud Console. NOTE: This field is
+    * equivalent to the standard field `description`.
+    */
   var summary: js.UndefOr[String] = js.undefined
 }
 object Documentation {
@@ -51,13 +54,13 @@ object Documentation {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setRules(value: js.Array[DocumentationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: DocumentationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: DocumentationRule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setServiceRootUrl(value: String): Self = StObject.set(x, "serviceRootUrl", value.asInstanceOf[js.Any])
     

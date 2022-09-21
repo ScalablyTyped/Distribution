@@ -59,11 +59,11 @@ object PivotSchemaDesigner {
     
     /** returns the custom object bound with PivotSchemaDesigner control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -78,11 +78,11 @@ object PivotSchemaDesigner {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -96,11 +96,11 @@ object PivotSchemaDesigner {
     
     /** returns the custom object bound with PivotSchemaDesigner control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -115,11 +115,11 @@ object PivotSchemaDesigner {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -133,15 +133,15 @@ object PivotSchemaDesigner {
     
     /** returns the HTML element of the dragged field from PivotSchemaDesigner.
       */
-    var dragTarget: js.UndefOr[js.Any] = js.undefined
+    var dragTarget: js.UndefOr[Any] = js.undefined
     
     /** return the JSON details of the dragged field.
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.undefined
+    var draggedElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the PivotSchemaDesigner model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
   }
   object DragMoveEventArgs {
     
@@ -156,15 +156,15 @@ object PivotSchemaDesigner {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDragTarget(value: js.Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+      inline def setDragTarget(value: Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
       
       inline def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
       
-      inline def setDraggedElementData(value: js.Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
+      inline def setDraggedElementData(value: Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementDataUndefined: Self = StObject.set(x, "draggedElementData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     }
@@ -174,7 +174,7 @@ object PivotSchemaDesigner {
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -185,7 +185,7 @@ object PivotSchemaDesigner {
     
     extension [Self <: LoadEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -209,7 +209,7 @@ object PivotSchemaDesigner {
     /** Object utilized to pass additional information between client-end and service-end.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** Triggers when we start dragging any field from PivotSchemaDesigner.
       */
@@ -258,12 +258,12 @@ object PivotSchemaDesigner {
     /** Sets the Pivot control bound with this PivotSchemaDesigner.
       * @Default {null}
       */
-    var pivotControl: js.UndefOr[js.Any] = js.undefined
+    var pivotControl: js.UndefOr[Any] = js.undefined
     
     /** Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
       * @Default {{}}
       */
-    var serviceMethods: js.UndefOr[js.Any] = js.undefined
+    var serviceMethods: js.UndefOr[Any] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
       * @Default {â€œâ€}
@@ -296,7 +296,7 @@ object PivotSchemaDesigner {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
@@ -336,11 +336,11 @@ object PivotSchemaDesigner {
       
       inline def setOlapUndefined: Self = StObject.set(x, "olap", js.undefined)
       
-      inline def setPivotControl(value: js.Any): Self = StObject.set(x, "pivotControl", value.asInstanceOf[js.Any])
+      inline def setPivotControl(value: Any): Self = StObject.set(x, "pivotControl", value.asInstanceOf[js.Any])
       
       inline def setPivotControlUndefined: Self = StObject.set(x, "pivotControl", js.undefined)
       
-      inline def setServiceMethods(value: js.Any): Self = StObject.set(x, "serviceMethods", value.asInstanceOf[js.Any])
+      inline def setServiceMethods(value: Any): Self = StObject.set(x, "serviceMethods", value.asInstanceOf[js.Any])
       
       inline def setServiceMethodsUndefined: Self = StObject.set(x, "serviceMethods", js.undefined)
       

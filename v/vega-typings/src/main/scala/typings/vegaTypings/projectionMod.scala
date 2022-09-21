@@ -29,9 +29,23 @@ object projectionMod {
     var clipExtent: js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef] = js.undefined
     
     // TODO: use a union tagged by the projection type to determine which of the following is applicable
-    /* The following properties are all supported for specific types of projections. Consult the d3-geo-projection library for more information: https://github.com/d3/d3-geo-projection */
+    // The following properties are all supported for specific types of projections. Consult the d3-geo-projection library for more information: https://github.com/d3/d3-geo-projection.
+    /**
+      * The coefficient parameter for the `hammer` projection.
+      *
+      * __Default value:__ `2`
+      */
     var coefficient: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * For the `satellite` projection, the distance from the center of the
+      * sphere to the point of view, as a proportion of the sphere’s radius.
+      * The recommended maximum clip angle for a given `distance` is
+      * acos(1 / distance) converted to degrees. If tilt is also
+      * applied, then more conservative clipping may be necessary.
+      *
+      * __Default value:__ `2.0`
+      */
     var distance: js.UndefOr[Double | SignalRef] = js.undefined
     
     /*
@@ -44,10 +58,27 @@ object projectionMod {
       */
     var fit: js.UndefOr[Fit | js.Array[Fit] | SignalRef] = js.undefined
     
+    /**
+      * The fraction parameter for the `bottomley` projection.
+      *
+      * __Default value:__ `0.5`, corresponding to a sin(ψ) where ψ = π/6.
+      */
     var fraction: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * The number of lobes in projections that support multi-lobe views:
+      * `berghaus`, `gingery`, or `healpix`.
+      * The default value varies based on the projection type.
+      */
     var lobes: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * The parallel parameter for projections that support it:
+      * `armadillo`, `bonne`, `craig`, `cylindricalEqualArea`,
+      * `cylindricalStereographic`, `hammerRetroazimuthal`, `loximuthal`,
+      * or `rectangularPolyconic`.
+      * The default value varies based on the projection type.
+      */
     var parallel: js.UndefOr[Double | SignalRef] = js.undefined
     
     /**
@@ -67,16 +98,24 @@ object projectionMod {
       */
     var precision: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * The radius parameter for the `airy` or `gingery` projection.
+      * The default value varies based on the projection type.
+      */
     var radius: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * The ratio parameter for the `hill`, `hufnagel`, or `wagner` projections.
+      * The default value varies based on the projection type.
+      */
     var ratio: js.UndefOr[Double | SignalRef] = js.undefined
     
-    /*
+    /**
       * Sets whether or not the x-dimension is reflected (negated) in the output.
       */
     var reflectX: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    /*
+    /**
       * Sets whether or not the y-dimension is reflected (negated) in the output.
       */
     var reflectY: js.UndefOr[Boolean | SignalRef] = js.undefined
@@ -93,13 +132,23 @@ object projectionMod {
       */
     var scale: js.UndefOr[Double | SignalRef] = js.undefined
     
-    /*
+    /**
       * Used in conjunction with fit, provides the width and height in pixels of the area to which the projection should be automatically fit.
       */
     var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
     
+    /**
+      * The spacing parameter for the `lagrange` projection.
+      *
+      * __Default value:__ `0.5`
+      */
     var spacing: js.UndefOr[Double | SignalRef] = js.undefined
     
+    /**
+      * The tilt angle (in degrees) for the `satellite` projection.
+      *
+      * __Default value:__ `0`.
+      */
     var tilt: js.UndefOr[Double | SignalRef] = js.undefined
     
     /*
@@ -151,7 +200,7 @@ object projectionMod {
       
       inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
+      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value*))
       
       inline def setFraction(value: Double | SignalRef): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
@@ -169,7 +218,7 @@ object projectionMod {
       
       inline def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
       
-      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
+      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value*))
       
       inline def setPointRadius(value: Double | SignalRef): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
       
@@ -227,9 +276,9 @@ object projectionMod {
   
   type Fit = GeoJsonFeature | GeoJsonFeatureCollection | js.Array[GeoJsonFeature]
   
-  type GeoJsonFeature = js.Any
+  type GeoJsonFeature = Any
   
-  type GeoJsonFeatureCollection = js.Any
+  type GeoJsonFeatureCollection = Any
   
   trait Projection
     extends StObject

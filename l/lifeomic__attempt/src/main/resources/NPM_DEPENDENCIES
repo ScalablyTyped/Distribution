@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lifeomic/attempt" : "3.0.0"
+      "@lifeomic/attempt" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@lifeomic/attempt" : "3.0.0"
+      "@lifeomic/attempt" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

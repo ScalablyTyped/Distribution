@@ -11,8 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decToHex(decStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decToHex")(decStr.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def decToHex(decStr: String, opts: Prefix): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToHex")(decStr.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decToHex(decStr: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decToHex")(decStr.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def decToHex(decStr: String, opts: Prefix): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("decToHex")(decStr.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  inline def hexToDec(hexStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToDec")(hexStr.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hexToDec(hexStr: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToDec")(hexStr.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

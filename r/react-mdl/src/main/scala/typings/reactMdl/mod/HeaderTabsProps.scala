@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeaderTabsProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with RippleComponent {
   
   var activeTab: js.UndefOr[Double] = js.undefined

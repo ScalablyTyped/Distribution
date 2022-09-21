@@ -9,7 +9,7 @@ trait OTAUpdateSummary extends StObject {
   /**
     * The date when the OTA update was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The OTA update ARN.
@@ -30,7 +30,7 @@ object OTAUpdateSummary {
   
   extension [Self <: OTAUpdateSummary](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     

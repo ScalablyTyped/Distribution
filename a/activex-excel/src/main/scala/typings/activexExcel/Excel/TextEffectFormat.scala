@@ -12,7 +12,7 @@ trait TextEffectFormat extends StObject {
   
   var Alignment: MsoTextEffectAlignment
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -31,7 +31,7 @@ trait TextEffectFormat extends StObject {
   
   var NormalizedHeight: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PresetShape: MsoPresetTextEffectShape
   
@@ -49,7 +49,7 @@ object TextEffectFormat {
   
   inline def apply(
     Alignment: MsoTextEffectAlignment,
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     ExcelDotTextEffectFormat_typekey: TextEffectFormat,
     FontBold: MsoTriState,
@@ -58,7 +58,7 @@ object TextEffectFormat {
     FontSize: Double,
     KernedPairs: MsoTriState,
     NormalizedHeight: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     PresetShape: MsoPresetTextEffectShape,
     PresetTextEffect: MsoPresetTextEffect,
     RotatedChars: MsoTriState,
@@ -75,7 +75,7 @@ object TextEffectFormat {
     
     inline def setAlignment(value: MsoTextEffectAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object TextEffectFormat {
     
     inline def setNormalizedHeight(value: MsoTriState): Self = StObject.set(x, "NormalizedHeight", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPresetShape(value: MsoPresetTextEffectShape): Self = StObject.set(x, "PresetShape", value.asInstanceOf[js.Any])
     

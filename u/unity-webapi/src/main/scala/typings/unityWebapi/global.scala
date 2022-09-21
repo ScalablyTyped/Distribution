@@ -1,6 +1,5 @@
 package typings.unityWebapi
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object global {
   
   @JSGlobal("UnityIndicatorProperties")
   @js.native
-  class UnityIndicatorProperties ()
+  open class UnityIndicatorProperties ()
     extends StObject
        with typings.unityWebapi.UnityIndicatorProperties {
     
@@ -23,7 +22,7 @@ object global {
     var onIndicatorActivated: js.Function = js.native
     
     /* CompleteClass */
-    var time: Date = js.native
+    var time: js.Date = js.native
   }
   
   @JSGlobal("UnityPlaybackState")
@@ -40,7 +39,7 @@ object global {
   
   @JSGlobal("UnitySettings")
   @js.native
-  class UnitySettings ()
+  open class UnitySettings ()
     extends StObject
        with typings.unityWebapi.UnitySettings {
     
@@ -56,7 +55,7 @@ object global {
   
   @JSGlobal("UnityTrackMetadata")
   @js.native
-  class UnityTrackMetadata ()
+  open class UnityTrackMetadata ()
     extends StObject
        with typings.unityWebapi.UnityTrackMetadata {
     

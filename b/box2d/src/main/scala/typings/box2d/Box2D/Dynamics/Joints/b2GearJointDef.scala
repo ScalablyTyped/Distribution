@@ -34,7 +34,7 @@ object b2GearJointDef {
     joint2: b2Joint,
     ratio: Double,
     `type`: Double,
-    userData: js.Any
+    userData: Any
   ): b2GearJointDef = {
     val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], collideConnected = collideConnected.asInstanceOf[js.Any], joint1 = joint1.asInstanceOf[js.Any], joint2 = joint2.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -44,7 +44,7 @@ object CreateFacetRequest {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: FacetAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: FacetAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setFacetStyle(value: FacetStyle): Self = StObject.set(x, "FacetStyle", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object ListContainerInstancesResponse {
     
     inline def setContainerInstanceArnsUndefined: Self = StObject.set(x, "containerInstanceArns", js.undefined)
     
-    inline def setContainerInstanceArnsVarargs(value: String*): Self = StObject.set(x, "containerInstanceArns", js.Array(value :_*))
+    inline def setContainerInstanceArnsVarargs(value: String*): Self = StObject.set(x, "containerInstanceArns", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

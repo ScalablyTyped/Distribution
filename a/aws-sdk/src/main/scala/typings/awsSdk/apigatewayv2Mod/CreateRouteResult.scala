@@ -92,7 +92,7 @@ object CreateRouteResult {
     
     inline def setAuthorizationScopesUndefined: Self = StObject.set(x, "AuthorizationScopes", js.undefined)
     
-    inline def setAuthorizationScopesVarargs(value: StringWithLengthBetween1And64*): Self = StObject.set(x, "AuthorizationScopes", js.Array(value :_*))
+    inline def setAuthorizationScopesVarargs(value: StringWithLengthBetween1And64*): Self = StObject.set(x, "AuthorizationScopes", js.Array(value*))
     
     inline def setAuthorizationType(value: AuthorizationType): Self = StObject.set(x, "AuthorizationType", value.asInstanceOf[js.Any])
     

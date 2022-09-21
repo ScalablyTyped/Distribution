@@ -1,0 +1,34 @@
+package typings.typescriptNn5FuAjk
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * An individual button of a gamepad or other controller, allowing access to the current state of different types of buttons available on the control device.
+  * Available only in secure contexts.
+  */
+trait GamepadButton extends StObject {
+  
+  val pressed: scala.Boolean
+  
+  val touched: scala.Boolean
+  
+  val value: Double
+}
+object GamepadButton {
+  
+  inline def apply(pressed: scala.Boolean, touched: scala.Boolean, value: Double): GamepadButton = {
+    val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamepadButton]
+  }
+  
+  extension [Self <: GamepadButton](x: Self) {
+    
+    inline def setPressed(value: scala.Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    
+    inline def setTouched(value: scala.Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

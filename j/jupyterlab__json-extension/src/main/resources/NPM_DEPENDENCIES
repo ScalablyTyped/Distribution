@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/json-extension" : "2.2.6"
+      "@jupyterlab/json-extension" : "3.4.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/json-extension" : "2.2.6"
+      "@jupyterlab/json-extension" : "3.4.7"
     }
   ],
   "compile-devDependencies" : [

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Attachments")
 @js.native
-/* private */ class Attachments ()
+/* private */ open class Attachments ()
   extends StObject
      with typings.activexOutlook.Outlook.Attachments

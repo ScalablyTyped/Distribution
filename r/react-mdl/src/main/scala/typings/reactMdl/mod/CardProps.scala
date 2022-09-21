@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CardProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with ShadowedComponent
 object CardProps {
   

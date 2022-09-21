@@ -14,20 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NormalizationSelectableNode extends StObject
 object NormalizationSelectableNode {
   
-  inline def NormalizationDefer(label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
-    val __obj = js.Dynamic.literal(kind = "Defer", label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  inline def NormalizationDefer(kind: String, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationDefer]
   }
   
-  inline def NormalizationLinkedField(
-    args: js.Array[NormalizationArgument],
-    kind: String,
-    name: String,
-    plural: Boolean,
-    selections: js.Array[NormalizationSelection]
-  ): typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  inline def NormalizationLinkedField(kind: String, name: String, plural: Boolean, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField]
   }
   

@@ -13,11 +13,11 @@ trait PrivatePKCS8HexResult extends StObject {
   var algparam: String | Null
   
   /** string starting index of key in `pkcs8PrvHex` */
-  var keyidx: String
+  var keyidx: Double
 }
 object PrivatePKCS8HexResult {
   
-  inline def apply(algoid: String, keyidx: String): PrivatePKCS8HexResult = {
+  inline def apply(algoid: String, keyidx: Double): PrivatePKCS8HexResult = {
     val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], keyidx = keyidx.asInstanceOf[js.Any], algparam = null)
     __obj.asInstanceOf[PrivatePKCS8HexResult]
   }
@@ -30,6 +30,6 @@ object PrivatePKCS8HexResult {
     
     inline def setAlgparamNull: Self = StObject.set(x, "algparam", null)
     
-    inline def setKeyidx(value: String): Self = StObject.set(x, "keyidx", value.asInstanceOf[js.Any])
+    inline def setKeyidx(value: Double): Self = StObject.set(x, "keyidx", value.asInstanceOf[js.Any])
   }
 }

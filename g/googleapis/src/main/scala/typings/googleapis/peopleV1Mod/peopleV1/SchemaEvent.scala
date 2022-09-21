@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event related to the person.
-  */
 trait SchemaEvent extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaEvent extends StObject {
   var date: js.UndefOr[SchemaDate] = js.undefined
   
   /**
-    * The read-only type of the event translated and formatted in the
-    * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
+    * Output only. The type of the event translated and formatted in the viewer's account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.undefined
+  var formattedType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Metadata about the event.
@@ -26,10 +22,9 @@ trait SchemaEvent extends StObject {
   var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
-    * The type of the event. The type can be custom or one of these predefined
-    * values:  * `anniversary` * `other`
+    * The type of the event. The type can be custom or one of these predefined values: * `anniversary` * `other`
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEvent {
   
@@ -46,6 +41,8 @@ object SchemaEvent {
     
     inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
     
+    inline def setFormattedTypeNull: Self = StObject.set(x, "formattedType", null)
+    
     inline def setFormattedTypeUndefined: Self = StObject.set(x, "formattedType", js.undefined)
     
     inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
@@ -53,6 +50,8 @@ object SchemaEvent {
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

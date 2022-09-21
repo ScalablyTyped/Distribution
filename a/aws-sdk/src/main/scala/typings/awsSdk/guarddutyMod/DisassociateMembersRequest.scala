@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateMembersRequest extends StObject {
   
   /**
-    * A list of account IDs of the GuardDuty member accounts that you want to disassociate from the master account.
+    * A list of account IDs of the GuardDuty member accounts that you want to disassociate from the administrator account.
     */
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
-    * The unique ID of the detector of the GuardDuty account whose members you want to disassociate from the master account.
+    * The unique ID of the detector of the GuardDuty account whose members you want to disassociate from the administrator account.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
@@ -27,7 +27,7 @@ object DisassociateMembersRequest {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }

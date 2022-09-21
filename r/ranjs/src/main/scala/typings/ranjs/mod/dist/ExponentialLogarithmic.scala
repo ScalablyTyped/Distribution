@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.ExponentialLogarithmic")
 @js.native
-class ExponentialLogarithmic ()
+open class ExponentialLogarithmic ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.ExponentialLogarithmic] {
   def this(p: Double) = this()

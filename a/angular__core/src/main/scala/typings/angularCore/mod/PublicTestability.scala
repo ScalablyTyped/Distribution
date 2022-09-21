@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PublicTestability extends StObject {
   
-  def findProviders(`using`: js.Any, provider: String, exactMatch: Boolean): js.Array[js.Any] = js.native
+  def findProviders(`using`: Any, provider: String, exactMatch: Boolean): js.Array[Any] = js.native
   
   def isStable(): Boolean = js.native
   

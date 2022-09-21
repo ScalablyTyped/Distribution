@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Svg")
 @js.native
-class Svg ()
+open class Svg ()
   extends typings.matterJs.mod.Svg
 /* static members */
 object Svg {
@@ -24,7 +24,7 @@ object Svg {
     * @method pathToVertices
     * @param {SVGPathElement} path
     * @param {Number} [sampleLength=15]
-    * @return {Vector[]} points
+    * @returns {Vector[]} points
     */
   inline def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[typings.matterJs.mod.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.matterJs.mod.Vector]]
 }

@@ -1,6 +1,5 @@
 package typings.dateFns.anon
 
-import typings.dateFns.dateFnsNumbers.`1`
 import typings.dateFns.dateFnsNumbers.`2`
 import typings.dateFns.dateFnsNumbers.`3`
 import typings.dateFns.dateFnsNumbers.`4`
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens extends StObject {
   
-  var firstWeekContainsDate: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
+  var firstWeekContainsDate: js.UndefOr[typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
   
   var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.undefined
   
@@ -21,7 +20,9 @@ trait UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens extends StObject {
   
   var useAdditionalWeekYearTokens: js.UndefOr[Boolean] = js.undefined
   
-  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
+  var weekStartsOn: js.UndefOr[
+    typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6`
+  ] = js.undefined
 }
 object UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens {
   
@@ -32,7 +33,7 @@ object UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens {
   
   extension [Self <: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens](x: Self) {
     
-    inline def setFirstWeekContainsDate(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "firstWeekContainsDate", value.asInstanceOf[js.Any])
+    inline def setFirstWeekContainsDate(value: typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "firstWeekContainsDate", value.asInstanceOf[js.Any])
     
     inline def setFirstWeekContainsDateUndefined: Self = StObject.set(x, "firstWeekContainsDate", js.undefined)
     
@@ -48,7 +49,9 @@ object UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens {
     
     inline def setUseAdditionalWeekYearTokensUndefined: Self = StObject.set(x, "useAdditionalWeekYearTokens", js.undefined)
     
-    inline def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
+    inline def setWeekStartsOn(
+      value: typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6`
+    ): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
     
     inline def setWeekStartsOnUndefined: Self = StObject.set(x, "weekStartsOn", js.undefined)
   }

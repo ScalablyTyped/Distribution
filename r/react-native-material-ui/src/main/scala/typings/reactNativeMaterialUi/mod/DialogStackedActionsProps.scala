@@ -24,7 +24,7 @@ object DialogStackedActionsProps {
     
     inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setOnActionPress(value: String => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction1(value))
     

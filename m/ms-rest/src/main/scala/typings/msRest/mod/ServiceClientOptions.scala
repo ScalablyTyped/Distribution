@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServiceClientOptions extends StObject {
   
-  var filters: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var filters: js.UndefOr[js.Array[Any]] = js.undefined
   
   var noRetryPolicy: js.UndefOr[Boolean] = js.undefined
   
@@ -21,11 +21,11 @@ object ServiceClientOptions {
   
   extension [Self <: ServiceClientOptions](x: Self) {
     
-    inline def setFilters(value: js.Array[js.Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: js.Any*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Any*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setNoRetryPolicy(value: Boolean): Self = StObject.set(x, "noRetryPolicy", value.asInstanceOf[js.Any])
     

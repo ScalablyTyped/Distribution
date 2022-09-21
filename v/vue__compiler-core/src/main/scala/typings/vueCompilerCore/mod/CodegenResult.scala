@@ -12,11 +12,13 @@ trait CodegenResult extends StObject {
   var code: String
   
   var map: js.UndefOr[RawSourceMap] = js.undefined
+  
+  var preamble: String
 }
 object CodegenResult {
   
-  inline def apply(ast: RootNode, code: String): CodegenResult = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
+  inline def apply(ast: RootNode, code: String, preamble: String): CodegenResult = {
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], preamble = preamble.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodegenResult]
   }
   
@@ -29,5 +31,7 @@ object CodegenResult {
     inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setPreamble(value: String): Self = StObject.set(x, "preamble", value.asInstanceOf[js.Any])
   }
 }

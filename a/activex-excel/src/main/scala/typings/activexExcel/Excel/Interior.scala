@@ -17,11 +17,11 @@ trait Interior extends StObject {
   /* private */ @JSName("Excel.Interior_typekey")
   var ExcelDotInterior_typekey: Interior
   
-  val Gradient: js.Any
+  val Gradient: Any
   
   var InvertIfNegative: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Pattern: XlPattern
   
@@ -45,9 +45,9 @@ object Interior {
     ColorIndex: Double | XlColorIndex,
     Creator: XlCreator,
     ExcelDotInterior_typekey: Interior,
-    Gradient: js.Any,
+    Gradient: Any,
     InvertIfNegative: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: XlPattern,
     PatternColor: XlRgbColor | Double,
     PatternColorIndex: Double | XlColorIndex,
@@ -73,11 +73,11 @@ object Interior {
     
     inline def setExcelDotInterior_typekey(value: Interior): Self = StObject.set(x, "Excel.Interior_typekey", value.asInstanceOf[js.Any])
     
-    inline def setGradient(value: js.Any): Self = StObject.set(x, "Gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: Any): Self = StObject.set(x, "Gradient", value.asInstanceOf[js.Any])
     
     inline def setInvertIfNegative(value: Boolean): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: XlPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

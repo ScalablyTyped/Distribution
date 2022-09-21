@@ -11,13 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ajaxDataProcessorMod {
   
   type AjaxDataProcessor[TElement] = js.Function3[
-    /* data */ js.Any, 
+    /* data */ Any, 
     /* table */ TElement, 
-    /* request */ jqXHR[js.Any], 
-    PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-      Double, 
-      JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-      js.UndefOr[js.Array[String]]
-    ])
+    /* request */ jqXHR[Any], 
+    PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]])
   ]
 }

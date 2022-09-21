@@ -2,6 +2,7 @@ package typings.reactLeafletSidebarv2
 
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,26 +11,24 @@ object mod {
   
   @JSImport("react-leaflet-sidebarv2", "Sidebar")
   @js.native
-  class Sidebar protected ()
-    extends Component[SidebarProps, js.Any, js.Any] {
+  open class Sidebar protected () extends Component[SidebarProps, Any, Any] {
     def this(props: SidebarProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SidebarProps, context: js.Any) = this()
+    def this(props: SidebarProps, context: Any) = this()
   }
   
   @JSImport("react-leaflet-sidebarv2", "Tab")
   @js.native
-  class Tab protected ()
-    extends Component[TabProps, js.Any, js.Any] {
+  open class Tab protected () extends Component[TabProps, Any, Any] {
     def this(props: TabProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabProps, context: js.Any) = this()
+    def this(props: TabProps, context: Any) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -87,7 +86,7 @@ object mod {
       
       inline def setChildren(value: TabType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
@@ -116,6 +115,8 @@ object mod {
     var active: js.UndefOr[Boolean] = js.undefined
     
     var anchor: js.UndefOr[Anchor] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var closeIcon: js.UndefOr[Icon] = js.undefined
     
@@ -147,6 +148,10 @@ object mod {
       inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       

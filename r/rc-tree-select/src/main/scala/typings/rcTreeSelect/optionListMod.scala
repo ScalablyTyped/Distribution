@@ -1,17 +1,13 @@
 package typings.rcTreeSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.optionListMod.RefOptionListProps
-import typings.rcTreeSelect.anon.Selected
-import typings.rcTreeSelect.interfaceMod.DataNode
-import typings.rcTreeSelect.interfaceMod.FlattenDataNode
-import typings.rcTreeSelect.interfaceMod.RawValueType
+import typings.rcVirtualList.listMod.ScrollConfig
+import typings.rcVirtualList.listMod.ScrollTo
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.ReactNode
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.RefAttributes
-import typings.react.mod.UIEventHandler
-import typings.std.HTMLDivElement
-import typings.std.Set
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,56 +16,40 @@ object optionListMod extends Shortcut {
   
   @JSImport("rc-tree-select/es/OptionList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]] = js.native
+  val default: ForwardRefExoticComponent[RefAttributes[ReviseRefOptionListProps]] = js.native
   
-  @js.native
-  trait OptionListProps[OptionsType /* <: js.Array[js.Object] */] extends StObject {
+  /* Inlined std.Omit<rc-select.rc-select/lib/OptionList.RefOptionListProps, 'scrollTo'> & {  scrollTo :rc-tree.rc-tree/es/interface.ScrollTo} */
+  trait ReviseRefOptionListProps extends StObject {
     
-    var childrenAsData: Boolean = js.native
+    var onKeyDown: KeyboardEventHandler[Element]
     
-    var defaultActiveFirstOption: js.UndefOr[Boolean] = js.native
+    var onKeyUp: KeyboardEventHandler[Element]
     
-    var flattenOptions: js.Array[FlattenDataNode] = js.native
+    var scrollTo: ScrollTo
+  }
+  object ReviseRefOptionListProps {
     
-    var height: Double = js.native
+    inline def apply(
+      onKeyDown: KeyboardEvent[Element] => Unit,
+      onKeyUp: KeyboardEvent[Element] => Unit,
+      scrollTo: /* arg */ Double | ScrollConfig => Unit
+    ): ReviseRefOptionListProps = {
+      val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), scrollTo = js.Any.fromFunction1(scrollTo))
+      __obj.asInstanceOf[ReviseRefOptionListProps]
+    }
     
-    var id: String = js.native
-    
-    var itemHeight: Double = js.native
-    
-    var menuItemSelectedIcon: js.UndefOr[js.Any] = js.native
-    
-    var multiple: Boolean = js.native
-    
-    var notFoundContent: js.UndefOr[ReactNode] = js.native
-    
-    /** Tell Select that some value is now active to make accessibility work */
-    def onActiveValue(value: RawValueType, index: Double): Unit = js.native
-    
-    def onMouseEnter(): Unit = js.native
-    
-    var onScroll: UIEventHandler[HTMLDivElement] = js.native
-    
-    def onSelect(value: RawValueType, option: Selected): Unit = js.native
-    
-    def onToggleOpen(): Unit = js.native
-    def onToggleOpen(open: Boolean): Unit = js.native
-    
-    var open: Boolean = js.native
-    
-    var options: OptionsType = js.native
-    
-    var prefixCls: String = js.native
-    
-    var searchValue: String = js.native
-    
-    var values: Set[RawValueType] = js.native
-    
-    var virtual: js.UndefOr[Boolean] = js.native
+    extension [Self <: ReviseRefOptionListProps](x: Self) {
+      
+      inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      
+      inline def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      
+      inline def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+    }
   }
   
-  type _To = ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]]
+  type _To = ForwardRefExoticComponent[RefAttributes[ReviseRefOptionListProps]]
   
   /* This means you don't have to write `default`, but can instead just say `optionListMod.foo` */
-  override def _to: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]] = default
+  override def _to: ForwardRefExoticComponent[RefAttributes[ReviseRefOptionListProps]] = default
 }

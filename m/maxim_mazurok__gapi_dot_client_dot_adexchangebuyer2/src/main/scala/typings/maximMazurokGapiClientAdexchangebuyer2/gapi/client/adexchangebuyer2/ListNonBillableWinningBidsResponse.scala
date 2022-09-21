@@ -32,6 +32,6 @@ object ListNonBillableWinningBidsResponse {
     
     inline def setNonBillableWinningBidStatusRowsUndefined: Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.undefined)
     
-    inline def setNonBillableWinningBidStatusRowsVarargs(value: NonBillableWinningBidStatusRow*): Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.Array(value :_*))
+    inline def setNonBillableWinningBidStatusRowsVarargs(value: NonBillableWinningBidStatusRow*): Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.Array(value*))
   }
 }

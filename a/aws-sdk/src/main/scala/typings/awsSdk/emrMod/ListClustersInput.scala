@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListClustersInput extends StObject {
   
   /**
-    * The cluster state filters to apply when listing clusters.
+    * The cluster state filters to apply when listing clusters. Clusters that change state while this action runs may be not be returned as expected in the list of clusters.
     */
   var ClusterStates: js.UndefOr[ClusterStateList] = js.undefined
   
   /**
     * The creation date and time beginning value filter for listing clusters.
     */
-  var CreatedAfter: js.UndefOr[Date] = js.undefined
+  var CreatedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The creation date and time end value filter for listing clusters.
     */
-  var CreatedBefore: js.UndefOr[Date] = js.undefined
+  var CreatedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
@@ -39,13 +39,13 @@ object ListClustersInput {
     
     inline def setClusterStatesUndefined: Self = StObject.set(x, "ClusterStates", js.undefined)
     
-    inline def setClusterStatesVarargs(value: ClusterState*): Self = StObject.set(x, "ClusterStates", js.Array(value :_*))
+    inline def setClusterStatesVarargs(value: ClusterState*): Self = StObject.set(x, "ClusterStates", js.Array(value*))
     
-    inline def setCreatedAfter(value: Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
     inline def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
-    inline def setCreatedBefore(value: Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: js.Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
     inline def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     

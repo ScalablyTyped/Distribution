@@ -17,7 +17,7 @@ trait ContainerDefinition extends StObject {
   var Environment: js.UndefOr[EnvironmentMap] = js.undefined
   
   /**
-    * The path where inference code is stored. This can be either in Amazon EC2 Container Registry or in a Docker registry that is accessible from the same VPC that you configure for your endpoint. If you are using your own custom algorithm instead of an algorithm provided by Amazon SageMaker, the inference code must meet Amazon SageMaker requirements. Amazon SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker 
+    * The path where inference code is stored. This can be either in Amazon EC2 Container Registry or in a Docker registry that is accessible from the same VPC that you configure for your endpoint. If you are using your own custom algorithm instead of an algorithm provided by SageMaker, the inference code must meet SageMaker requirements. SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker 
     */
   var Image: js.UndefOr[ContainerImage] = js.undefined
   
@@ -27,12 +27,17 @@ trait ContainerDefinition extends StObject {
   var ImageConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ImageConfig] = js.undefined
   
   /**
+    * The inference specification name in the model package version.
+    */
+  var InferenceSpecificationName: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceSpecificationName] = js.undefined
+  
+  /**
     * Whether the container hosts a single model or multiple models.
     */
   var Mode: js.UndefOr[ContainerMode] = js.undefined
   
   /**
-    * The S3 path where the model artifacts, which result from model training, are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix). The S3 path is required for Amazon SageMaker built-in algorithms, but not if you use your own algorithms. For more information on built-in algorithms, see Common Parameters.   The model artifacts must be in an S3 bucket that is in the same region as the model or endpoint you are creating.  If you provide a value for this parameter, Amazon SageMaker uses AWS Security Token Service to download model artifacts from the S3 path you provide. AWS STS is activated in your IAM user account by default. If you previously deactivated AWS STS for a region, you need to reactivate AWS STS for that region. For more information, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  If you use a built-in algorithm to create a model, Amazon SageMaker requires that you provide a S3 path to the model artifacts in ModelDataUrl. 
+    * The S3 path where the model artifacts, which result from model training, are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix). The S3 path is required for SageMaker built-in algorithms, but not if you use your own algorithms. For more information on built-in algorithms, see Common Parameters.   The model artifacts must be in an S3 bucket that is in the same region as the model or endpoint you are creating.  If you provide a value for this parameter, SageMaker uses Amazon Web Services Security Token Service to download model artifacts from the S3 path you provide. Amazon Web Services STS is activated in your IAM user account by default. If you previously deactivated Amazon Web Services STS for a region, you need to reactivate Amazon Web Services STS for that region. For more information, see Activating and Deactivating Amazon Web Services STS in an Amazon Web Services Region in the Amazon Web Services Identity and Access Management User Guide.  If you use a built-in algorithm to create a model, SageMaker requires that you provide a S3 path to the model artifacts in ModelDataUrl. 
     */
   var ModelDataUrl: js.UndefOr[Url] = js.undefined
   
@@ -40,6 +45,11 @@ trait ContainerDefinition extends StObject {
     * The name or Amazon Resource Name (ARN) of the model package to use to create the model.
     */
   var ModelPackageName: js.UndefOr[VersionedArnOrName] = js.undefined
+  
+  /**
+    * Specifies additional configuration for multi-model endpoints.
+    */
+  var MultiModelConfig: js.UndefOr[typings.awsSdk.sagemakerMod.MultiModelConfig] = js.undefined
 }
 object ContainerDefinition {
   
@@ -66,6 +76,10 @@ object ContainerDefinition {
     
     inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
+    inline def setInferenceSpecificationName(value: InferenceSpecificationName): Self = StObject.set(x, "InferenceSpecificationName", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceSpecificationNameUndefined: Self = StObject.set(x, "InferenceSpecificationName", js.undefined)
+    
     inline def setMode(value: ContainerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
@@ -77,5 +91,9 @@ object ContainerDefinition {
     inline def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
     inline def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
+    
+    inline def setMultiModelConfig(value: MultiModelConfig): Self = StObject.set(x, "MultiModelConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMultiModelConfigUndefined: Self = StObject.set(x, "MultiModelConfig", js.undefined)
   }
 }

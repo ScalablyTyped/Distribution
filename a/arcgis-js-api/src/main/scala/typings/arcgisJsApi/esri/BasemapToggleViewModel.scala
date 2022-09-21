@@ -29,6 +29,8 @@ trait BasemapToggleViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html#state)
     */
   val state: ready | disabled = js.native
@@ -38,7 +40,7 @@ trait BasemapToggleViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * The view from which the widget will operate.

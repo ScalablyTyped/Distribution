@@ -10,7 +10,7 @@ object mod {
     
     @JSImport("sxml", "default.XML")
     @js.native
-    class XML ()
+    open class XML ()
       extends typings.sxml.moduleMod.XML {
       def this(str: String) = this()
       def this(xml: typings.sxml.xmlMod.XML) = this()
@@ -27,16 +27,16 @@ object mod {
         */
       @JSImport("sxml", "default.XML._Compute_min_index")
       @js.native
-      def _Compute_min_index: js.Any = js.native
-      inline def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+      def _Compute_min_index: Any = js.native
+      inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
       
       /**
         * @hidden
         */
       @JSImport("sxml", "default.XML._Repeat")
       @js.native
-      def _Repeat: js.Any = js.native
-      inline def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+      def _Repeat: Any = js.native
+      inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
       
       inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
@@ -52,13 +52,13 @@ object mod {
     
     @JSImport("sxml", "default.XMLList")
     @js.native
-    class XMLList ()
+    open class XMLList ()
       extends typings.sxml.moduleMod.XMLList
   }
   
   @JSImport("sxml", "XML")
   @js.native
-  class XML ()
+  open class XML ()
     extends typings.sxml.moduleMod.XML {
     def this(str: String) = this()
     def this(xml: typings.sxml.xmlMod.XML) = this()
@@ -75,16 +75,16 @@ object mod {
       */
     @JSImport("sxml", "XML._Compute_min_index")
     @js.native
-    def _Compute_min_index: js.Any = js.native
-    inline def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+    def _Compute_min_index: Any = js.native
+    inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("sxml", "XML._Repeat")
     @js.native
-    def _Repeat: js.Any = js.native
-    inline def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+    def _Repeat: Any = js.native
+    inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
     inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -100,6 +100,6 @@ object mod {
   
   @JSImport("sxml", "XMLList")
   @js.native
-  class XMLList ()
+  open class XMLList ()
     extends typings.sxml.moduleMod.XMLList
 }

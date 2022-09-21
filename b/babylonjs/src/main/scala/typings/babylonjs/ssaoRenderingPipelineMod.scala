@@ -11,7 +11,7 @@ object ssaoRenderingPipelineMod {
   
   @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/ssaoRenderingPipeline", "SSAORenderingPipeline")
   @js.native
-  class SSAORenderingPipeline protected () extends PostProcessRenderPipeline {
+  open class SSAORenderingPipeline protected () extends PostProcessRenderPipeline {
     /**
       * @constructor
       * @param name - The rendering pipeline name
@@ -19,8 +19,8 @@ object ssaoRenderingPipelineMod {
       * @param ratio - The size of the postprocesses. Can be a number shared between passes or an object for more precision: { ssaoRatio: 0.5, combineRatio: 1.0 }
       * @param cameras - The array of cameras that the rendering pipeline will be attached to
       */
-    def this(name: String, scene: Scene, ratio: js.Any) = this()
-    def this(name: String, scene: Scene, ratio: js.Any, cameras: js.Array[Camera]) = this()
+    def this(name: String, scene: Scene, ratio: Any) = this()
+    def this(name: String, scene: Scene, ratio: Any, cameras: js.Array[Camera]) = this()
     
     /**
       * @ignore
@@ -52,31 +52,36 @@ object ssaoRenderingPipelineMod {
       */
     var SSAORenderEffect: String = js.native
     
-    /* private */ var _blurHPostProcess: js.Any = js.native
+    /**
+      * @param cameras
+      * @param unique
+      * @hidden
+      */
+    def _attachCameras(cameras: Any, unique: Boolean): Unit = js.native
     
-    /* private */ var _blurVPostProcess: js.Any = js.native
+    /* private */ var _blurHPostProcess: Any = js.native
     
-    /* private */ var _createBlurPostProcess: js.Any = js.native
+    /* private */ var _blurVPostProcess: Any = js.native
     
-    /* private */ var _createRandomTexture: js.Any = js.native
+    /* private */ var _createBlurPostProcess: Any = js.native
     
-    /* private */ var _createSSAOCombinePostProcess: js.Any = js.native
+    /* private */ var _createRandomTexture: Any = js.native
     
-    /* private */ var _createSSAOPostProcess: js.Any = js.native
+    /* private */ var _createSSAOCombinePostProcess: Any = js.native
     
-    /* private */ var _depthTexture: js.Any = js.native
+    /* private */ var _createSSAOPostProcess: Any = js.native
     
-    /* private */ var _firstUpdate: js.Any = js.native
+    /* private */ var _firstUpdate: Any = js.native
     
-    /* private */ var _originalColorPostProcess: js.Any = js.native
+    /* private */ var _originalColorPostProcess: Any = js.native
     
-    /* private */ var _randomTexture: js.Any = js.native
+    /* private */ var _randomTexture: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _ssaoCombinePostProcess: js.Any = js.native
+    /* private */ var _ssaoCombinePostProcess: Any = js.native
     
-    /* private */ var _ssaoPostProcess: js.Any = js.native
+    /* private */ var _ssaoPostProcess: Any = js.native
     
     /**
       * Related to fallOff, used to interpolate SSAO samples (first interpolate function input) based on the occlusion difference of each pixel

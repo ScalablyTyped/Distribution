@@ -11,10 +11,10 @@ object toggleSmallSkeletonMod {
   
   @JSImport("carbon-components-react/lib/components/ToggleSmall/ToggleSmall.Skeleton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ToggleSmallSkeletonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ToggleSmallSkeletonProps, js.Object, Any]
   
-  type ToggleSmallSkeleton = Component[ToggleSmallSkeletonProps, js.Object, js.Any]
+  type ToggleSmallSkeleton = Component[ToggleSmallSkeletonProps, js.Object, Any]
   
   trait ToggleSmallSkeletonProps
     extends StObject

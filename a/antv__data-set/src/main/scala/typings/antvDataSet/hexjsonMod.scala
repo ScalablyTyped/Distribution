@@ -11,7 +11,7 @@ object hexjsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(data: js.Array[js.Any], options: Options, dataView: View): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(data: js.Array[Any], options: Options, dataView: View): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Options extends StObject {
     

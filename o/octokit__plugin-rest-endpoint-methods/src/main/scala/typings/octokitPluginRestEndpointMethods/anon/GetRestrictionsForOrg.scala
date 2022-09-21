@@ -1,162 +1,79 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
-import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
-import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
-import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
-import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetRestrictionsForOrg extends StObject {
   
-  /**
-    * Shows which group of GitHub users can interact with this organization and when the restriction expires. If there are no restrictions, you will see an empty response.
-    */
-  def getRestrictionsForOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  def getRestrictionsForOrg(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Shows which group of GitHub users can interact with this organization and when the restriction expires. If there are no restrictions, you will see an empty response.
-    */
-  @JSName("getRestrictionsForOrg")
-  var getRestrictionsForOrg_Original: `159`
+  var getRestrictionsForAuthenticatedUser: `1061`
   
-  /**
-    * Shows which group of GitHub users can interact with this repository and when the restriction expires. If there are no restrictions, you will see an empty response.
-    */
-  def getRestrictionsForRepo(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  def getRestrictionsForRepo(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Shows which group of GitHub users can interact with this repository and when the restriction expires. If there are no restrictions, you will see an empty response.
-    */
-  @JSName("getRestrictionsForRepo")
-  var getRestrictionsForRepo_Original: `160`
+  var getRestrictionsForOrg: `1062`
   
-  /**
-    * Removes all interaction restrictions from public repositories in the given organization. You must be an organization owner to remove restrictions.
-    */
-  def removeRestrictionsForOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  def removeRestrictionsForOrg(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Removes all interaction restrictions from public repositories in the given organization. You must be an organization owner to remove restrictions.
-    */
-  @JSName("removeRestrictionsForOrg")
-  var removeRestrictionsForOrg_Original: `161`
+  var getRestrictionsForRepo: `1063`
   
-  /**
-    * Removes all interaction restrictions from the given repository. You must have owner or admin access to remove restrictions.
-    */
-  def removeRestrictionsForRepo(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  def removeRestrictionsForRepo(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Removes all interaction restrictions from the given repository. You must have owner or admin access to remove restrictions.
-    */
-  @JSName("removeRestrictionsForRepo")
-  var removeRestrictionsForRepo_Original: `162`
+  var getRestrictionsForYourPublicRepos: `1061`
   
-  /**
-    * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
-    */
-  def setRestrictionsForOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  def setRestrictionsForOrg(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
-    */
-  @JSName("setRestrictionsForOrg")
-  var setRestrictionsForOrg_Original: `163`
+  var removeRestrictionsForAuthenticatedUser: `1064`
   
-  /**
-    * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
-    */
-  def setRestrictionsForRepo(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  def setRestrictionsForRepo(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
-  ]
-  /**
-    * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
-    */
-  @JSName("setRestrictionsForRepo")
-  var setRestrictionsForRepo_Original: `164`
+  var removeRestrictionsForOrg: `1065`
+  
+  var removeRestrictionsForRepo: `1066`
+  
+  var removeRestrictionsForYourPublicRepos: `1064`
+  
+  var setRestrictionsForAuthenticatedUser: `1067`
+  
+  var setRestrictionsForOrg: `1068`
+  
+  var setRestrictionsForRepo: `1069`
+  
+  var setRestrictionsForYourPublicRepos: `1067`
 }
 object GetRestrictionsForOrg {
   
   inline def apply(
-    getRestrictionsForOrg: `159`,
-    getRestrictionsForRepo: `160`,
-    removeRestrictionsForOrg: `161`,
-    removeRestrictionsForRepo: `162`,
-    setRestrictionsForOrg: `163`,
-    setRestrictionsForRepo: `164`
+    getRestrictionsForAuthenticatedUser: `1061`,
+    getRestrictionsForOrg: `1062`,
+    getRestrictionsForRepo: `1063`,
+    getRestrictionsForYourPublicRepos: `1061`,
+    removeRestrictionsForAuthenticatedUser: `1064`,
+    removeRestrictionsForOrg: `1065`,
+    removeRestrictionsForRepo: `1066`,
+    removeRestrictionsForYourPublicRepos: `1064`,
+    setRestrictionsForAuthenticatedUser: `1067`,
+    setRestrictionsForOrg: `1068`,
+    setRestrictionsForRepo: `1069`,
+    setRestrictionsForYourPublicRepos: `1067`
   ): GetRestrictionsForOrg = {
-    val __obj = js.Dynamic.literal(getRestrictionsForOrg = getRestrictionsForOrg.asInstanceOf[js.Any], getRestrictionsForRepo = getRestrictionsForRepo.asInstanceOf[js.Any], removeRestrictionsForOrg = removeRestrictionsForOrg.asInstanceOf[js.Any], removeRestrictionsForRepo = removeRestrictionsForRepo.asInstanceOf[js.Any], setRestrictionsForOrg = setRestrictionsForOrg.asInstanceOf[js.Any], setRestrictionsForRepo = setRestrictionsForRepo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getRestrictionsForAuthenticatedUser = getRestrictionsForAuthenticatedUser.asInstanceOf[js.Any], getRestrictionsForOrg = getRestrictionsForOrg.asInstanceOf[js.Any], getRestrictionsForRepo = getRestrictionsForRepo.asInstanceOf[js.Any], getRestrictionsForYourPublicRepos = getRestrictionsForYourPublicRepos.asInstanceOf[js.Any], removeRestrictionsForAuthenticatedUser = removeRestrictionsForAuthenticatedUser.asInstanceOf[js.Any], removeRestrictionsForOrg = removeRestrictionsForOrg.asInstanceOf[js.Any], removeRestrictionsForRepo = removeRestrictionsForRepo.asInstanceOf[js.Any], removeRestrictionsForYourPublicRepos = removeRestrictionsForYourPublicRepos.asInstanceOf[js.Any], setRestrictionsForAuthenticatedUser = setRestrictionsForAuthenticatedUser.asInstanceOf[js.Any], setRestrictionsForOrg = setRestrictionsForOrg.asInstanceOf[js.Any], setRestrictionsForRepo = setRestrictionsForRepo.asInstanceOf[js.Any], setRestrictionsForYourPublicRepos = setRestrictionsForYourPublicRepos.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRestrictionsForOrg]
   }
   
   extension [Self <: GetRestrictionsForOrg](x: Self) {
     
-    inline def setGetRestrictionsForOrg(value: `159`): Self = StObject.set(x, "getRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForAuthenticatedUser(value: `1061`): Self = StObject.set(x, "getRestrictionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetRestrictionsForRepo(value: `160`): Self = StObject.set(x, "getRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForOrg(value: `1062`): Self = StObject.set(x, "getRestrictionsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRestrictionsForOrg(value: `161`): Self = StObject.set(x, "removeRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForRepo(value: `1063`): Self = StObject.set(x, "getRestrictionsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRestrictionsForRepo(value: `162`): Self = StObject.set(x, "removeRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForYourPublicRepos(value: `1061`): Self = StObject.set(x, "getRestrictionsForYourPublicRepos", value.asInstanceOf[js.Any])
     
-    inline def setSetRestrictionsForOrg(value: `163`): Self = StObject.set(x, "setRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveRestrictionsForAuthenticatedUser(value: `1064`): Self = StObject.set(x, "removeRestrictionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setSetRestrictionsForRepo(value: `164`): Self = StObject.set(x, "setRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setRemoveRestrictionsForOrg(value: `1065`): Self = StObject.set(x, "removeRestrictionsForOrg", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveRestrictionsForRepo(value: `1066`): Self = StObject.set(x, "removeRestrictionsForRepo", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveRestrictionsForYourPublicRepos(value: `1064`): Self = StObject.set(x, "removeRestrictionsForYourPublicRepos", value.asInstanceOf[js.Any])
+    
+    inline def setSetRestrictionsForAuthenticatedUser(value: `1067`): Self = StObject.set(x, "setRestrictionsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    inline def setSetRestrictionsForOrg(value: `1068`): Self = StObject.set(x, "setRestrictionsForOrg", value.asInstanceOf[js.Any])
+    
+    inline def setSetRestrictionsForRepo(value: `1069`): Self = StObject.set(x, "setRestrictionsForRepo", value.asInstanceOf[js.Any])
+    
+    inline def setSetRestrictionsForYourPublicRepos(value: `1067`): Self = StObject.set(x, "setRestrictionsForYourPublicRepos", value.asInstanceOf[js.Any])
   }
 }

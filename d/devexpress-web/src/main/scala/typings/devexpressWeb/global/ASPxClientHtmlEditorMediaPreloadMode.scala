@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorMediaPreloadMode")
 @js.native
-class ASPxClientHtmlEditorMediaPreloadMode ()
+open class ASPxClientHtmlEditorMediaPreloadMode ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorMediaPreloadMode
 object ASPxClientHtmlEditorMediaPreloadMode {

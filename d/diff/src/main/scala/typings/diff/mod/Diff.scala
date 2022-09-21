@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("diff", "Diff")
 @js.native
-class Diff () extends StObject {
+open class Diff () extends StObject {
   
-  def castInput(value: js.Any): js.Any = js.native
+  def castInput(value: Any): Any = js.native
   
   def diff(oldString: String, newString: String): js.Array[Change] = js.native
   def diff(oldString: String, newString: String, options: ArrayOptionsanyanyPartial): js.Array[Change] = js.native
   def diff(oldString: String, newString: String, options: Callback): js.Array[Change] = js.native
   
-  def equals(left: js.Any, right: js.Any): Boolean = js.native
+  def equals(left: Any, right: Any): Boolean = js.native
   
   def extractCommon(basePath: BestPath, newString: String, oldString: String, diagonalPath: Double): Double = js.native
   
@@ -23,7 +23,7 @@ class Diff () extends StObject {
   
   def pushComponent(components: js.Array[Change], added: Boolean, removed: Boolean): Unit = js.native
   
-  def removeEmpty(array: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def removeEmpty(array: js.Array[Any]): js.Array[Any] = js.native
   
-  def tokenize(value: String): js.Any = js.native
+  def tokenize(value: String): Any = js.native
 }

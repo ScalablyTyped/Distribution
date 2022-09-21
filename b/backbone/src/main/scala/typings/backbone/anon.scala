@@ -8,6 +8,7 @@ import typings.backbone.mod.CombinedModelConstructorOptions
 import typings.backbone.mod.History_
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
+import typings.backbone.mod.ObjectHash
 import typings.backbone.mod.RouterOptions
 import typings.backbone.mod.ViewOptions
 import typings.jquery.JQuery
@@ -22,6 +23,7 @@ import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
+import typings.std.Record
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,10 +36,10 @@ object anon {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
-      **/
+      */
     /* static member */
-    def extend(properties: js.Any): js.Any = js.native
-    def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    def extend(properties: Any): Any = js.native
+    def extend(properties: Any, classProperties: Any): Any = js.native
   }
   
   trait TypeofHistory extends StObject {
@@ -63,10 +65,10 @@ object anon {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
-      **/
+      */
     /* static member */
-    def extend(properties: js.Any): js.Any = js.native
-    def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    def extend(properties: Any): Any = js.native
+    def extend(properties: Any, classProperties: Any): Any = js.native
   }
   
   @js.native
@@ -74,10 +76,10 @@ object anon {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
-      **/
+      */
     /* static member */
-    def extend(properties: js.Any): js.Any = js.native
-    def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    def extend(properties: Any): Any = js.native
+    def extend(properties: Any, classProperties: Any): Any = js.native
   }
   
   @js.native
@@ -85,10 +87,10 @@ object anon {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
-      **/
+      */
     /* static member */
-    def extend(properties: js.Any): js.Any = js.native
-    def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    def extend(properties: Any): Any = js.native
+    def extend(properties: Any, classProperties: Any): Any = js.native
   }
   
   @js.native
@@ -140,25 +142,6 @@ object anon {
     // tslint:disable-next-line:no-unnecessary-generics unified-signatures
     @JSName("$")
     def $[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
-    /**
-      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param element_elementArray _&#x40;param_ `element_elementArray`
-      * <br>
-      * * `element` — A DOM element to wrap in a jQuery object. <br>
-      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
-      * @see \`{@link https://api.jquery.com/jQuery/ }\`
-      * @since 1.0
-      * @example ​ ````Set the background color of the page to black.
-    ```javascript
-    $( document.body ).css( "background", "black" );
-    ```
-      * @example ​ ````Hide all the input elements within a form.
-    ```javascript
-    $( myForm.elements ).hide();
-    ```
-      */
-    @JSName("$")
-    def $[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
     @JSName("$")
     def $[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery[T] = js.native
     /**
@@ -194,9 +177,17 @@ object anon {
     @JSName("$")
     def $[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
     @JSName("$")
-    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[js.Any]): JQuery[TElement] = js.native
+    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[Any]): JQuery[TElement] = js.native
     @JSName("$")
     def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
+    /**
+      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+      * @param object A plain object to wrap in a jQuery object.
+      * @see \`{@link https://api.jquery.com/jQuery/ }\`
+      * @since 1.0
+      */
+    @JSName("$")
+    def $[T /* <: PlainObject[Any] */](`object`: T): JQuery[T] = js.native
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
       * @param selection An existing jQuery object to clone.
@@ -257,21 +248,32 @@ object anon {
     def $_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document): JQuery[TElement] = js.native
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param object A plain object to wrap in a jQuery object.
+      * @param element_elementArray _&#x40;param_ `element_elementArray`
+      * <br>
+      * * `element` — A DOM element to wrap in a jQuery object. <br>
+      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
       * @see \`{@link https://api.jquery.com/jQuery/ }\`
       * @since 1.0
+      * @example ​ ````Set the background color of the page to black.
+    ```javascript
+    $( document.body ).css( "background", "black" );
+    ```
+      * @example ​ ````Hide all the input elements within a form.
+    ```javascript
+    $( myForm.elements ).hide();
+    ```
       */
     @JSName("$")
-    def $_T_PlainObjectAny[T /* <: PlainObject[js.Any] */](`object`: T): JQuery[T] = js.native
+    def $_T_Element[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
     
     var Collection: (Instantiable2[
         /* models */ js.UndefOr[
           js.Array[
-            (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
+            (/* import warning: RewrittenClass.unapply cls was tparam TModel */ Any) | (Record[String, Any])
           ]
         ], 
-        /* options */ js.UndefOr[js.Any], 
-        typings.backbone.mod.Collection[Model[js.Any, ModelSetOptions, js.Object]]
+        /* options */ js.UndefOr[Any], 
+        typings.backbone.mod.Collection[Model[Any, ModelSetOptions, Any]]
       ]) & TypeofCollection = js.native
     
     val Events: typings.backbone.mod.Events = js.native
@@ -295,14 +297,14 @@ object anon {
       * by listing them in the E parameter.
       */
     var Model: (Instantiable2[
-        /* attributes */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* attributes */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         /* options */ js.UndefOr[
           CombinedModelConstructorOptions[
-            /* import warning: RewrittenClass.unapply cls was tparam E */ js.Any, 
-            typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]
+            /* import warning: RewrittenClass.unapply cls was tparam E */ Any, 
+            typings.backbone.mod.Model[Any, ModelSetOptions, Any]
           ]
         ], 
-        typings.backbone.mod.Model[js.Object, js.Object, js.Object]
+        typings.backbone.mod.Model[ObjectHash, js.Object, js.Object]
       ]) & TypeofModel = js.native
     
     var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
@@ -311,9 +313,12 @@ object anon {
     
     var View: (Instantiable1[
         /* options */ js.UndefOr[
-          ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]
+          ViewOptions[
+            /* import warning: RewrittenClass.unapply cls was tparam TModel */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam TElement */ Any
+          ]
         ], 
-        typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]
+        typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]
       ]) & TypeofView = js.native
     
     def ajax(): JQueryXHR = js.native
@@ -323,19 +328,15 @@ object anon {
     
     var emulateJSON: Boolean = js.native
     
-    var history: History_ = js.native
+    val history: History_ = js.native
     
     // Utility
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Backbone */ js.Any = js.native
     
-    def sync(method: String, model: Collection[Model[js.Any, ModelSetOptions, js.Object]]): js.Any = js.native
-    def sync(
-      method: String,
-      model: Collection[Model[js.Any, ModelSetOptions, js.Object]],
-      options: JQueryAjaxSettings
-    ): js.Any = js.native
+    def sync(method: String, model: Collection[Model[Any, ModelSetOptions, Any]]): Any = js.native
+    def sync(method: String, model: Collection[Model[Any, ModelSetOptions, Any]], options: JQueryAjaxSettings): Any = js.native
     // SYNC
-    def sync(method: String, model: Model[js.Any, ModelSetOptions, js.Object]): js.Any = js.native
-    def sync(method: String, model: Model[js.Any, ModelSetOptions, js.Object], options: JQueryAjaxSettings): js.Any = js.native
+    def sync(method: String, model: Model[Any, ModelSetOptions, Any]): Any = js.native
+    def sync(method: String, model: Model[Any, ModelSetOptions, Any], options: JQueryAjaxSettings): Any = js.native
   }
 }

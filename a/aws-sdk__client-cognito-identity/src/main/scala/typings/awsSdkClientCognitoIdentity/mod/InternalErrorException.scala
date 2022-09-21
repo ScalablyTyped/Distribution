@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeIntern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object InternalErrorException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "InternalErrorException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.InternalErrorException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "InternalErrorException")
+@js.native
+open class InternalErrorException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.InternalErrorException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeIntern) = this()
 }

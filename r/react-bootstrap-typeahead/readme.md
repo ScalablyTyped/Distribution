@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-bootstrap-typeahead
 
-Typings are for version 3.4
+Typings are for version 5.1
 
 ## Library description:
 React typeahead with Bootstrap styling
@@ -10,10 +10,10 @@ React typeahead with Bootstrap styling
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-typeahead |
 | Keywords           | auto complete, auto suggest, auto-complete, auto-suggest, autocomplete, autosuggest, bootstrap, bootstrap tokenizer, bootstrap typeahead, bootstrap-tokenizer, bootstrap-typeahead, react, react autocomplete, react autosuggest, react tokenizer, react typeahead, react-autocomplete, react-autosuggest, react-bootstrap, react-bootstrap-tokenizer, react-bootstrap-typeahead, react-tokenizer, react-typeahead, tokenizer, typeahead |
-| # releases         | 44 |
-| # dependents       | 81 |
-| # downloads        | 3803452 |
-| # stars            | 4 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 2125793.3333333335 |
+| # stars            | 911.0 |
 
 ## Links
 - [Homepage](http://ericgio.github.io/react-bootstrap-typeahead/)

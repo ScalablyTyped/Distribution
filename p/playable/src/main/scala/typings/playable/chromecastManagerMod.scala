@@ -14,34 +14,34 @@ object chromecastManagerMod {
   
   @JSImport("playable/dist/src/modules/chromecast-manager/chromecast-manager", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ChromecastManager {
     def this(hasEngineEventEmitter: Engine) = this()
     
     /* private */ /* CompleteClass */
-    var _bindToContextEvents: js.Any = js.native
+    var _bindToContextEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _context: js.Any = js.native
+    var _context: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initCastContext: js.Any = js.native
+    var _initCastContext: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _insertCastCallback: js.Any = js.native
+    var _insertCastCallback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _onCastStateChange: js.Any = js.native
+    var _onCastStateChange: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _onSessionStateChange: js.Any = js.native
+    var _onSessionStateChange: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -137,33 +137,33 @@ object chromecastManagerMod {
     extends StObject
        with IChromecastManager {
     
-    /* private */ var _bindToContextEvents: js.Any
+    /* private */ var _bindToContextEvents: Any
     
-    /* private */ var _context: js.Any
+    /* private */ var _context: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initCastContext: js.Any
+    /* private */ var _initCastContext: Any
     
-    /* private */ var _insertCastCallback: js.Any
+    /* private */ var _insertCastCallback: Any
     
-    /* private */ var _onCastStateChange: js.Any
+    /* private */ var _onCastStateChange: Any
     
-    /* private */ var _onSessionStateChange: js.Any
+    /* private */ var _onSessionStateChange: Any
   }
   object ChromecastManager {
     
     inline def apply(
-      _bindToContextEvents: js.Any,
-      _context: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initCastContext: js.Any,
-      _insertCastCallback: js.Any,
-      _onCastStateChange: js.Any,
-      _onSessionStateChange: js.Any,
+      _bindToContextEvents: Any,
+      _context: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initCastContext: Any,
+      _insertCastCallback: Any,
+      _onCastStateChange: Any,
+      _onSessionStateChange: Any,
       destroy: () => Unit,
       isCasting: Boolean,
       isEnabled: Boolean
@@ -174,21 +174,21 @@ object chromecastManagerMod {
     
     extension [Self <: ChromecastManager](x: Self) {
       
-      inline def set_bindToContextEvents(value: js.Any): Self = StObject.set(x, "_bindToContextEvents", value.asInstanceOf[js.Any])
+      inline def set_bindToContextEvents(value: Any): Self = StObject.set(x, "_bindToContextEvents", value.asInstanceOf[js.Any])
       
-      inline def set_context(value: js.Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initCastContext(value: js.Any): Self = StObject.set(x, "_initCastContext", value.asInstanceOf[js.Any])
+      inline def set_initCastContext(value: Any): Self = StObject.set(x, "_initCastContext", value.asInstanceOf[js.Any])
       
-      inline def set_insertCastCallback(value: js.Any): Self = StObject.set(x, "_insertCastCallback", value.asInstanceOf[js.Any])
+      inline def set_insertCastCallback(value: Any): Self = StObject.set(x, "_insertCastCallback", value.asInstanceOf[js.Any])
       
-      inline def set_onCastStateChange(value: js.Any): Self = StObject.set(x, "_onCastStateChange", value.asInstanceOf[js.Any])
+      inline def set_onCastStateChange(value: Any): Self = StObject.set(x, "_onCastStateChange", value.asInstanceOf[js.Any])
       
-      inline def set_onSessionStateChange(value: js.Any): Self = StObject.set(x, "_onSessionStateChange", value.asInstanceOf[js.Any])
+      inline def set_onSessionStateChange(value: Any): Self = StObject.set(x, "_onSessionStateChange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,13 +201,13 @@ object chromecastManagerMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */

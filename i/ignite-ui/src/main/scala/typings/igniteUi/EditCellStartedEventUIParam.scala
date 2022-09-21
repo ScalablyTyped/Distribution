@@ -19,12 +19,12 @@ trait EditCellStartedEventUIParam extends StObject {
   /**
     * Gets a reference to the editor used for editing the column.
     */
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Checks if the edit mode is for adding a new row.
@@ -34,12 +34,12 @@ trait EditCellStartedEventUIParam extends StObject {
   /**
     * Gets the row's PK value.
     */
-  var rowID: js.UndefOr[js.Any] = js.undefined
+  var rowID: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or set the value of the editor.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object EditCellStartedEventUIParam {
   
@@ -58,11 +58,11 @@ object EditCellStartedEventUIParam {
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -70,11 +70,11 @@ object EditCellStartedEventUIParam {
     
     inline def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
-    inline def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
+    inline def setRowID(value: Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
     inline def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

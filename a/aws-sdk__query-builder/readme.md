@@ -10,10 +10,10 @@ A marshaller for the body portion of AWS's Query(EC2) protocols
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/query-builder |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 65941 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 664.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fquery-builder)

@@ -12,7 +12,7 @@ trait HttpAction extends StObject {
   var auth: js.UndefOr[HttpAuthorization] = js.undefined
   
   /**
-    * The URL to which AWS IoT sends a confirmation message. The value of the confirmation URL must be a prefix of the endpoint URL. If you do not specify a confirmation URL AWS IoT uses the endpoint URL as the confirmation URL. If you use substitution templates in the confirmationUrl, you must create and enable topic rule destinations that match each possible value of the substitution template before traffic is allowed to your endpoint URL.
+    * The URL to which IoT sends a confirmation message. The value of the confirmation URL must be a prefix of the endpoint URL. If you do not specify a confirmation URL IoT uses the endpoint URL as the confirmation URL. If you use substitution templates in the confirmationUrl, you must create and enable topic rule destinations that match each possible value of the substitution template before traffic is allowed to your endpoint URL.
     */
   var confirmationUrl: js.UndefOr[Url] = js.undefined
   
@@ -47,7 +47,7 @@ object HttpAction {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: HttpActionHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HttpActionHeader*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

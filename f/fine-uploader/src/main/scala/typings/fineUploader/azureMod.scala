@@ -20,7 +20,7 @@ object azureMod {
     /**
       * The FineUploader Azure Core + UI constructor
       */
-    class FineUploader ()
+    open class FineUploader ()
       extends typings.fineUploader.mod.FineUploader {
       def this(fineuploaderOptions: AzureUIOptions) = this()
       
@@ -49,8 +49,8 @@ object azureMod {
         * @param object newParams : The additional parameters set for the upload request
         * @param number id : A file id to apply these upload success parameters to
         */
-      def setUploadSuccessParams(newParams: js.Any): Unit = js.native
-      def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
+      def setUploadSuccessParams(newParams: Any): Unit = js.native
+      def setUploadSuccessParams(newParams: Any, id: Double): Unit = js.native
     }
     
     @JSImport("fine-uploader/lib/azure", "azure.FineUploaderBasic")
@@ -58,7 +58,7 @@ object azureMod {
     /**
       * The FineUploader Azure Core only constructor
       */
-    class FineUploaderBasic ()
+    open class FineUploaderBasic ()
       extends typings.fineUploader.coreMod.FineUploaderBasic {
       def this(fineuploaderOptions: AzureCoreOptions) = this()
       
@@ -87,8 +87,8 @@ object azureMod {
         * @param object newParams : The additional parameters set for the upload request
         * @param number id : A file id to apply these upload success parameters to
         */
-      def setUploadSuccessParams(newParams: js.Any): Unit = js.native
-      def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
+      def setUploadSuccessParams(newParams: Any): Unit = js.native
+      def setUploadSuccessParams(newParams: Any, id: Double): Unit = js.native
     }
     
     type AzureBlobPropertyNameFunction = js.Function1[/* id */ Double, PromiseOptions | String]
@@ -333,7 +333,7 @@ object azureMod {
         *
         * @default `{}`
         */
-      var customHeaders: js.UndefOr[js.Any | AzureCustomHeaderFunction] = js.undefined
+      var customHeaders: js.UndefOr[Any | AzureCustomHeaderFunction] = js.undefined
       
       /**
         * The endpoint that Fine Uploader can use to send GET for a SAS before sending requests off to Azure.
@@ -353,7 +353,7 @@ object azureMod {
       
       extension [Self <: AzureSignatureOptions](x: Self) {
         
-        inline def setCustomHeaders(value: js.Any | AzureCustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+        inline def setCustomHeaders(value: Any | AzureCustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         
         inline def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
         
@@ -456,7 +456,7 @@ object azureMod {
         *
         * @default `{}`
         */
-      var customHeaders: js.UndefOr[js.Any] = js.undefined
+      var customHeaders: js.UndefOr[Any] = js.undefined
       
       /**
         * An endpoint that Fine Uploader should POST to when a file has been successfully uploaded to Azure Blob Storage.
@@ -480,7 +480,7 @@ object azureMod {
         *
         * @default `{}`
         */
-      var params: js.UndefOr[js.Any] = js.undefined
+      var params: js.UndefOr[Any] = js.undefined
     }
     object AzureUploadSuccessOptions {
       
@@ -491,7 +491,7 @@ object azureMod {
       
       extension [Self <: AzureUploadSuccessOptions](x: Self) {
         
-        inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+        inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         
         inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
         
@@ -503,7 +503,7 @@ object azureMod {
         
         inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       }

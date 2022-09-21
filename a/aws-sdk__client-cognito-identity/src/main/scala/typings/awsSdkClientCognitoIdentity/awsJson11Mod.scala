@@ -20,6 +20,8 @@ import typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTok
 import typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandOutput
 import typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandInput
 import typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput
+import typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandInput
+import typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandOutput
 import typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandInput
 import typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput
 import typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandInput
@@ -32,6 +34,8 @@ import typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.Me
 import typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput
 import typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommandInput
 import typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommandOutput
+import typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandInput
+import typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandOutput
 import typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandInput
 import typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput
 import typings.awsSdkClientCognitoIdentity.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommandInput
@@ -51,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object awsJson11Mod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", JSImport.Namespace)
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/protocols/Aws_json1_1", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -75,6 +79,8 @@ object awsJson11Mod {
   
   inline def deserializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetOpenIdTokenForDeveloperIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOpenIdTokenForDeveloperIdentityCommandOutput]]
   
+  inline def deserializeAwsJson11GetPrincipalTagAttributeMapCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetPrincipalTagAttributeMapCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetPrincipalTagAttributeMapCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrincipalTagAttributeMapCommandOutput]]
+  
   inline def deserializeAwsJson11ListIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentitiesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1ListIdentitiesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListIdentitiesCommandOutput]]
   
   inline def deserializeAwsJson11ListIdentityPoolsCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentityPoolsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1ListIdentityPoolsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListIdentityPoolsCommandOutput]]
@@ -86,6 +92,8 @@ object awsJson11Mod {
   inline def deserializeAwsJson11MergeDeveloperIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[MergeDeveloperIdentitiesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1MergeDeveloperIdentitiesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MergeDeveloperIdentitiesCommandOutput]]
   
   inline def deserializeAwsJson11SetIdentityPoolRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[SetIdentityPoolRolesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1SetIdentityPoolRolesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SetIdentityPoolRolesCommandOutput]]
+  
+  inline def deserializeAwsJson11SetPrincipalTagAttributeMapCommand(output: HttpResponse, context: SerdeContext): js.Promise[SetPrincipalTagAttributeMapCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1SetPrincipalTagAttributeMapCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SetPrincipalTagAttributeMapCommandOutput]]
   
   inline def deserializeAwsJson11TagResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[TagResourceCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1TagResourceCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TagResourceCommandOutput]]
   
@@ -117,6 +125,8 @@ object awsJson11Mod {
   
   inline def serializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(input: GetOpenIdTokenForDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
+  inline def serializeAwsJson11GetPrincipalTagAttributeMapCommand(input: GetPrincipalTagAttributeMapCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetPrincipalTagAttributeMapCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  
   inline def serializeAwsJson11ListIdentitiesCommand(input: ListIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1ListIdentitiesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
   inline def serializeAwsJson11ListIdentityPoolsCommand(input: ListIdentityPoolsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1ListIdentityPoolsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
@@ -128,6 +138,8 @@ object awsJson11Mod {
   inline def serializeAwsJson11MergeDeveloperIdentitiesCommand(input: MergeDeveloperIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1MergeDeveloperIdentitiesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
   inline def serializeAwsJson11SetIdentityPoolRolesCommand(input: SetIdentityPoolRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1SetIdentityPoolRolesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  
+  inline def serializeAwsJson11SetPrincipalTagAttributeMapCommand(input: SetPrincipalTagAttributeMapCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1SetPrincipalTagAttributeMapCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
   inline def serializeAwsJson11TagResourceCommand(input: TagResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1TagResourceCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   

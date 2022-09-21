@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A page in a presentation.
-  */
 trait SchemaPage extends StObject {
   
   /**
@@ -25,10 +22,9 @@ trait SchemaPage extends StObject {
   var notesProperties: js.UndefOr[SchemaNotesProperties] = js.undefined
   
   /**
-    * The object ID for this page. Object IDs used by Page and PageElement
-    * share the same namespace.
+    * The object ID for this page. Object IDs used by Page and PageElement share the same namespace.
     */
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The page elements rendered on the page.
@@ -43,22 +39,12 @@ trait SchemaPage extends StObject {
   /**
     * The type of the page.
     */
-  var pageType: js.UndefOr[String] = js.undefined
+  var pageType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The revision ID of the presentation containing this page. Can be used in
-    * update requests to assert that the presentation revision hasn&#39;t
-    * changed since the last read operation. Only populated if the user has
-    * edit access to the presentation.  The format of the revision ID may
-    * change over time, so it should be treated opaquely. A returned revision
-    * ID is only guaranteed to be valid for 24 hours after it has been returned
-    * and cannot be shared across users. If the revision ID is unchanged
-    * between calls, then the presentation has not changed. Conversely, a
-    * changed ID (for the same presentation and user) usually means the
-    * presentation has been updated; however, a changed ID can also be due to
-    * internal factors such as ID format changes.
+    * Output only. The revision ID of the presentation. Can be used in update requests to assert the presentation revision hasn't changed since the last read operation. Only populated if the user has edit access to the presentation. The revision ID is not a sequential number but an opaque string. The format of the revision ID might change over time. A returned revision ID is only guaranteed to be valid for 24 hours after it has been returned and cannot be shared across users. If the revision ID is unchanged between calls, then the presentation has not changed. Conversely, a changed ID (for the same presentation and user) usually means the presentation has been updated. However, a changed ID can also be due to internal factors such as ID format changes.
     */
-  var revisionId: js.UndefOr[String] = js.undefined
+  var revisionId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Slide specific properties. Only set if page_type = SLIDE.
@@ -88,13 +74,15 @@ object SchemaPage {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
+    
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     inline def setPageElements(value: js.Array[SchemaPageElement]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
     
     inline def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
     
-    inline def setPageElementsVarargs(value: SchemaPageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+    inline def setPageElementsVarargs(value: SchemaPageElement*): Self = StObject.set(x, "pageElements", js.Array(value*))
     
     inline def setPageProperties(value: SchemaPageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
     
@@ -102,9 +90,13 @@ object SchemaPage {
     
     inline def setPageType(value: String): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
     
+    inline def setPageTypeNull: Self = StObject.set(x, "pageType", null)
+    
     inline def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionIdNull: Self = StObject.set(x, "revisionId", null)
     
     inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     

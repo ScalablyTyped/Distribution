@@ -10,10 +10,10 @@ object clearMod {
   
   @JSImport("material-ui/svg-icons/content/clear", JSImport.Default)
   @js.native
-  class default () extends ContentClear
+  open class default () extends ContentClear
   
   @JSImport("material-ui/svg-icons/content/clear", "ContentClear")
   @js.native
-  class ContentClear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentClear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

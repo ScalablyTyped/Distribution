@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreviewImageArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   var current: js.UndefOr[Double] = js.undefined
   
@@ -27,6 +27,6 @@ object PreviewImageArgs {
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

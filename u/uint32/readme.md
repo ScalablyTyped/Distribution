@@ -11,9 +11,9 @@ a javascript library for dealing with (bitwise) uint32 operations
 | Full name          | uint32 |
 | Keywords           | uint32, bitwise, binary, shift, rotate |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 73671 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1744.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://www.github.com/fxa/uint32.js)

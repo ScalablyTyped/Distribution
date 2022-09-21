@@ -32,7 +32,7 @@ object XXMLSignature {
   inline def apply(
     acquire: () => Unit,
     generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     validate: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate
   ): XXMLSignature = {

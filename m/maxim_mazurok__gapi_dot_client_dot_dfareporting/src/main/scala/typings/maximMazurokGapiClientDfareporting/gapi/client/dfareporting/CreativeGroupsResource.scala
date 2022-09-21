@@ -4,8 +4,8 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.GroupNumber
-import typings.maximMazurokGapiClientDfareporting.anon.ResourceUploadType
 import typings.maximMazurokGapiClientDfareporting.anon.UploadTypeUploadprotocol
+import typings.maximMazurokGapiClientDfareporting.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait CreativeGroupsResource extends StObject {
   
   def insert(request: Callback, body: CreativeGroup): Request[CreativeGroup] = js.native
   /** Inserts a new creative group. */
-  def insert(request: ResourceUploadType): Request[CreativeGroup] = js.native
+  def insert(request: UploadTypeUploadprotocol): Request[CreativeGroup] = js.native
   
   /** Retrieves a list of creative groups, possibly filtered. This method supports paging. */
   def list(): Request[CreativeGroupsListResponse] = js.native
@@ -27,9 +27,9 @@ trait CreativeGroupsResource extends StObject {
   
   def patch(request: Alt, body: CreativeGroup): Request[CreativeGroup] = js.native
   /** Updates an existing creative group. This method supports patch semantics. */
-  def patch(request: UploadTypeUploadprotocol): Request[CreativeGroup] = js.native
+  def patch(request: UploadprotocolXgafv): Request[CreativeGroup] = js.native
   
   def update(request: Callback, body: CreativeGroup): Request[CreativeGroup] = js.native
   /** Updates an existing creative group. */
-  def update(request: ResourceUploadType): Request[CreativeGroup] = js.native
+  def update(request: UploadTypeUploadprotocol): Request[CreativeGroup] = js.native
 }

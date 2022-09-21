@@ -9,7 +9,7 @@ object fromPixelsPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/FromPixels_utils/from_pixels_packed_gpu", "FromPixelsPackedProgram")
   @js.native
-  class FromPixelsPackedProgram protected ()
+  open class FromPixelsPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Array[Double]) = this()

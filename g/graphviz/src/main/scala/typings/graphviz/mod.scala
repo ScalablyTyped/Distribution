@@ -1,6 +1,7 @@
 package typings.graphviz
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ object mod {
     def addEdge(nodeOne: Node, nodeTwo: Node, attrs: Options): Edge = js.native
     
     def addNode(id: String): Node = js.native
-    def addNode(id: String, attrs: js.Any): Node = js.native
+    def addNode(id: String, attrs: Any): Node = js.native
     
     def clusterCount(): Double = js.native
     
@@ -48,9 +49,11 @@ object mod {
     
     def getCluster(id: String): Graph_ = js.native
     
-    def getEdgeAttribut(name: String): js.Any = js.native
+    def getEdgeAttribut(name: String): Any = js.native
     
-    def getNodeAttribut(name: String): js.Any = js.native
+    def getNode(id: String): Node = js.native
+    
+    def getNodeAttribut(name: String): Any = js.native
     
     def nodeCount(): Double = js.native
     
@@ -72,12 +75,12 @@ object mod {
     def render(type_options: RenderOptions, filename_callback: OutputCallback): Unit = js.native
     def render(type_options: RenderOptions, filename_callback: OutputCallback, errback: ErrorCallback): Unit = js.native
     
-    def setEdgeAttribut(name: String, value: js.Any): Unit = js.native
+    def setEdgeAttribut(name: String, value: Any): Unit = js.native
     
     // Path containing Graphviz binaries.
     def setGraphVizPath(directoryPath: String): Unit = js.native
     
-    def setNodeAttribut(name: String, value: js.Any): Unit = js.native
+    def setNodeAttribut(name: String, value: Any): Unit = js.native
     
     def to_dot(): String = js.native
     
@@ -126,7 +129,7 @@ object mod {
   
   type Options = StringDictionary[PossibleValue]
   
-  type OutputCallback = js.Function1[/* data */ String, Unit]
+  type OutputCallback = js.Function1[/* data */ Buffer, Unit]
   
   type ParseCallback = js.Function1[/* graph */ Graph_, Unit]
   

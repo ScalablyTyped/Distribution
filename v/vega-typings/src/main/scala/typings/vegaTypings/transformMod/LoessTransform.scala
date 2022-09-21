@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LoessTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -45,7 +45,7 @@ object LoessTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setType(value: loess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

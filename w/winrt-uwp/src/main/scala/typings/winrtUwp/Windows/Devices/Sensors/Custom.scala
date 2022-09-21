@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -17,7 +16,7 @@ object Custom {
   @js.native
   trait CustomSensor extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readingchanged(
       `type`: readingchanged,
@@ -42,7 +41,7 @@ object Custom {
     @JSName("onreadingchanged")
     var onreadingchanged_Original: TypedEventHandler[CustomSensor, CustomSensorReadingChangedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readingchanged(
       `type`: readingchanged,
@@ -57,23 +56,23 @@ object Custom {
   trait CustomSensorReading extends StObject {
     
     /** Gets the property set for the sensor. */
-    var properties: IMapView[String, js.Any]
+    var properties: IMapView[String, Any]
     
     /** Gets the time at which the sensor reported the reading. */
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object CustomSensorReading {
     
-    inline def apply(properties: IMapView[String, js.Any], timestamp: Date): CustomSensorReading = {
+    inline def apply(properties: IMapView[String, Any], timestamp: js.Date): CustomSensorReading = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomSensorReading]
     }
     
     extension [Self <: CustomSensorReading](x: Self) {
       
-      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

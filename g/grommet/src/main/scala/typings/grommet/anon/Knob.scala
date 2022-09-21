@@ -16,9 +16,9 @@ trait Knob extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var knob: js.UndefOr[`14`] = js.undefined
+  var knob: js.UndefOr[`15`] = js.undefined
   
   var radius: js.UndefOr[String] = js.undefined
   
@@ -41,13 +41,13 @@ object Knob {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setKnob(value: `14`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: `15`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait plotStatic extends StObject {
   
-  def apply(placeholder: JQuery[HTMLElement], data: js.Array[js.Any | dataSeries]): plot = js.native
-  def apply(placeholder: JQuery[HTMLElement], data: js.Array[js.Any | dataSeries], options: plotOptions): plot = js.native
+  def apply(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries]): plot = js.native
+  def apply(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries], options: plotOptions): plot = js.native
   
   var plugins: js.Array[plugin] = js.native
 }

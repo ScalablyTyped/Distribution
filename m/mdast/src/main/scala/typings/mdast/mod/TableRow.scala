@@ -27,7 +27,7 @@ object TableRow {
     
     inline def setChildren(value: js.Array[RowContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: RowContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: RowContent*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setType(value: tableRow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

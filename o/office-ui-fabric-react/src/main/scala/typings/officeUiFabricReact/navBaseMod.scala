@@ -16,42 +16,42 @@ object navBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", "NavBase")
   @js.native
-  class NavBase protected ()
-    extends Component[INavProps, INavState, js.Any]
+  open class NavBase protected ()
+    extends Component[INavProps, INavState, Any]
        with INav {
     def this(props: INavProps) = this()
     
-    /* private */ var _focusZone: js.Any = js.native
+    /* private */ var _focusZone: Any = js.native
     
-    /* private */ var _isGroupExpanded: js.Any = js.native
+    /* private */ var _isGroupExpanded: Any = js.native
     
-    /* private */ var _isLinkSelected: js.Any = js.native
+    /* private */ var _isLinkSelected: Any = js.native
     
-    /* private */ var _onGroupHeaderClicked: js.Any = js.native
+    /* private */ var _onGroupHeaderClicked: Any = js.native
     
-    /* private */ var _onLinkExpandClicked: js.Any = js.native
+    /* private */ var _onLinkExpandClicked: Any = js.native
     
-    /* private */ var _onNavAnchorLinkClicked: js.Any = js.native
+    /* private */ var _onNavAnchorLinkClicked: Any = js.native
     
-    /* private */ var _onNavButtonLinkClicked: js.Any = js.native
+    /* private */ var _onNavButtonLinkClicked: Any = js.native
     
-    /* private */ var _onRenderLink: js.Any = js.native
+    /* private */ var _onRenderLink: Any = js.native
     
-    /* private */ var _preventBounce: js.Any = js.native
+    /* private */ var _preventBounce: Any = js.native
     
-    /* private */ var _renderCompositeLink: js.Any = js.native
+    /* private */ var _renderCompositeLink: Any = js.native
     
-    /* private */ var _renderGroup: js.Any = js.native
+    /* private */ var _renderGroup: Any = js.native
     
-    /* private */ var _renderGroupHeader: js.Any = js.native
+    /* private */ var _renderGroupHeader: Any = js.native
     
-    /* private */ var _renderLink: js.Any = js.native
+    /* private */ var _renderLink: Any = js.native
     
-    /* private */ var _renderLinks: js.Any = js.native
+    /* private */ var _renderLinks: Any = js.native
     
-    /* private */ var _renderNavLink: js.Any = js.native
+    /* private */ var _renderNavLink: Any = js.native
     
-    /* private */ var _toggleCollapsed: js.Any = js.native
+    /* private */ var _toggleCollapsed: Any = js.native
   }
   /* static members */
   object NavBase {

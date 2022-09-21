@@ -1,6 +1,5 @@
 package typings.vueCompilerSfc.mod
 
-import typings.std.SyntaxError
 import typings.vueCompilerCore.mod.CompilerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +9,11 @@ trait SFCParseResult extends StObject {
   
   var descriptor: SFCDescriptor
   
-  var errors: js.Array[CompilerError | SyntaxError]
+  var errors: js.Array[CompilerError | js.SyntaxError]
 }
 object SFCParseResult {
   
-  inline def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError | SyntaxError]): SFCParseResult = {
+  inline def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError | js.SyntaxError]): SFCParseResult = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCParseResult]
   }
@@ -23,8 +22,8 @@ object SFCParseResult {
     
     inline def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    inline def setErrors(value: js.Array[CompilerError | SyntaxError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[CompilerError | js.SyntaxError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: (CompilerError | SyntaxError)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: (CompilerError | js.SyntaxError)*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

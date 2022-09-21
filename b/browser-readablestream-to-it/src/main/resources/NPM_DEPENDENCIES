@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "browser-readablestream-to-it" : "1.0.1"
+      "browser-readablestream-to-it" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "browser-readablestream-to-it" : "1.0.1"
+      "browser-readablestream-to-it" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

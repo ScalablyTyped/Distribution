@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSRule")
 @js.native
-/* private */ class HTMLCSSRule ()
+/* private */ open class HTMLCSSRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSRule {
   

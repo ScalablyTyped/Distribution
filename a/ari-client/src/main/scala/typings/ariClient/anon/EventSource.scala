@@ -23,6 +23,6 @@ object EventSource {
     
     inline def setEventSource(value: String | js.Array[String]): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    inline def setEventSourceVarargs(value: String*): Self = StObject.set(x, "eventSource", js.Array(value :_*))
+    inline def setEventSourceVarargs(value: String*): Self = StObject.set(x, "eventSource", js.Array(value*))
   }
 }

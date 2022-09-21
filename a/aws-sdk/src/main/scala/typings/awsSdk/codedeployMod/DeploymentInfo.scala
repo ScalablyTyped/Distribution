@@ -29,7 +29,7 @@ trait DeploymentInfo extends StObject {
   /**
     * A timestamp that indicates when the deployment was complete.
     */
-  var completeTime: js.UndefOr[Timestamp] = js.undefined
+  var completeTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The destination platform type for the deployment (Lambda, Server, or ECS).
@@ -39,10 +39,10 @@ trait DeploymentInfo extends StObject {
   /**
     * A timestamp that indicates when the deployment was created.
     */
-  var createTime: js.UndefOr[Timestamp] = js.undefined
+  var createTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The means by which the deployment was created:    user: A user created the deployment.    autoscaling: Amazon EC2 Auto Scaling created the deployment.    codeDeployRollback: A rollback process created the deployment.  
+    * The means by which the deployment was created:    user: A user created the deployment.    autoscaling: Amazon EC2 Auto Scaling created the deployment.    codeDeployRollback: A rollback process created the deployment.    CodeDeployAutoUpdate: An auto-update process created the deployment when it detected outdated EC2 instances.  
     */
   var creator: js.UndefOr[DeploymentCreator] = js.undefined
   
@@ -116,6 +116,8 @@ trait DeploymentInfo extends StObject {
     */
   var previousRevision: js.UndefOr[RevisionLocation] = js.undefined
   
+  var relatedDeployments: js.UndefOr[RelatedDeployments] = js.undefined
+  
   /**
     * Information about the location of stored application artifacts and the service from which to retrieve them.
     */
@@ -129,7 +131,7 @@ trait DeploymentInfo extends StObject {
   /**
     * A timestamp that indicates when the deployment was deployed to the deployment group. In some cases, the reported value of the start time might be later than the complete time. This is due to differences in the clock settings of backend servers that participate in the deployment process.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the deployment as a whole.
@@ -171,7 +173,7 @@ object DeploymentInfo {
     
     inline def setBlueGreenDeploymentConfigurationUndefined: Self = StObject.set(x, "blueGreenDeploymentConfiguration", js.undefined)
     
-    inline def setCompleteTime(value: Timestamp): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
+    inline def setCompleteTime(value: js.Date): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     
     inline def setCompleteTimeUndefined: Self = StObject.set(x, "completeTime", js.undefined)
     
@@ -179,7 +181,7 @@ object DeploymentInfo {
     
     inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
@@ -207,7 +209,7 @@ object DeploymentInfo {
     
     inline def setDeploymentStatusMessagesUndefined: Self = StObject.set(x, "deploymentStatusMessages", js.undefined)
     
-    inline def setDeploymentStatusMessagesVarargs(value: ErrorMessage*): Self = StObject.set(x, "deploymentStatusMessages", js.Array(value :_*))
+    inline def setDeploymentStatusMessagesVarargs(value: ErrorMessage*): Self = StObject.set(x, "deploymentStatusMessages", js.Array(value*))
     
     inline def setDeploymentStyle(value: DeploymentStyle): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
     
@@ -245,6 +247,10 @@ object DeploymentInfo {
     
     inline def setPreviousRevisionUndefined: Self = StObject.set(x, "previousRevision", js.undefined)
     
+    inline def setRelatedDeployments(value: RelatedDeployments): Self = StObject.set(x, "relatedDeployments", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedDeploymentsUndefined: Self = StObject.set(x, "relatedDeployments", js.undefined)
+    
     inline def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
@@ -253,7 +259,7 @@ object DeploymentInfo {
     
     inline def setRollbackInfoUndefined: Self = StObject.set(x, "rollbackInfo", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NoneTAsComponentextendsEl extends StObject {
   
-  def apply[TAsComponent /* <: ElementType[js.Any] */](
+  def apply[TAsComponent /* <: ElementType[Any] */](
     props: `6`[TAsComponent] & HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
@@ -65,10 +65,10 @@ trait NoneTAsComponentextendsEl extends StObject {
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   
-  var Item: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[js.Any]] = js.native
+  var Item: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[Any]] = js.native
   
   var defaultProps: AsElementType & (Partial[
-    HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[js.Any, String | Double | js.Symbol])
+    HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[Any, String | Double | js.Symbol])
   ]) = js.native
   
   var displayName: String & js.UndefOr[String] = js.native

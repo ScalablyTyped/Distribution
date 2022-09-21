@@ -10,10 +10,10 @@ Logging middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-logger |
 | Keywords           | koa, middleware, logger, log |
-| # releases         | 2 |
-| # dependents       | 513 |
-| # downloads        | 3067113 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 487500.6666666667 |
+| # stars            | 552.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/logger#readme)

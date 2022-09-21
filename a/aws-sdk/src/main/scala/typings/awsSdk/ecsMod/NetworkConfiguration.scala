@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkConfiguration extends StObject {
   
   /**
-    * The VPC subnets and security groups associated with a task.  All specified subnets and security groups must be from the same VPC. 
+    * The VPC subnets and security groups that are associated with a task.  All specified subnets and security groups must be from the same VPC. 
     */
   var awsvpcConfiguration: js.UndefOr[AwsVpcConfiguration] = js.undefined
 }

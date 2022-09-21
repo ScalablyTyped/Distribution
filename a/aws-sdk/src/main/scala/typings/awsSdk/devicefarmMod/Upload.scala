@@ -24,7 +24,7 @@ trait Upload extends StObject {
   /**
     * When the upload was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A message about the upload's result.
@@ -54,7 +54,7 @@ trait Upload extends StObject {
   /**
     * The presigned Amazon S3 URL that was used to store a file using a PUT request.
     */
-  var url: js.UndefOr[URL] = js.undefined
+  var url: js.UndefOr[SensitiveURL] = js.undefined
 }
 object Upload {
   
@@ -77,7 +77,7 @@ object Upload {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -101,7 +101,7 @@ object Upload {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SensitiveURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

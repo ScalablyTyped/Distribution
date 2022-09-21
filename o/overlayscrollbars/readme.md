@@ -4,16 +4,16 @@
 Typings are for version 1.12
 
 ## Library description:
-A javascript scrollbar plugin which hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling.
+A scrollbar plugin that hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | overlayscrollbars |
-| Keywords           | overlayscrollbars, custom, scrollbar, scrollbars, scroll, frontend |
-| # releases         | 18 |
-| # dependents       | 22 |
-| # downloads        | 15058366 |
-| # stars            | 0 |
+| Keywords           | overlayscrollbars, custom, styleable, scrollbar, scrollbars, scroll, frontend, browser |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 8487930.0 |
+| # stars            | 2311.0 |
 
 ## Links
 - [Homepage](https://kingsora.github.io/OverlayScrollbars)

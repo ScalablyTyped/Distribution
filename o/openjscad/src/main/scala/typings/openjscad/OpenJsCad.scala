@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OpenJsCad {
   
-  type EventHandler = js.Function1[/* ev */ js.UndefOr[Event], js.Any]
+  type EventHandler = js.Function1[/* ev */ js.UndefOr[Event], Any]
   
   @js.native
   trait ILog extends StObject {
@@ -47,7 +47,7 @@ object OpenJsCad {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setDrawFaces(value: Boolean): Self = StObject.set(x, "drawFaces", value.asInstanceOf[js.Any])
       
@@ -68,57 +68,57 @@ object OpenJsCad {
     
     def abort(): Unit = js.native
     
-    /* private */ var abortbutton: js.Any = js.native
+    /* private */ var abortbutton: Any = js.native
     
-    def addLibrary(lib: js.Any): Unit = js.native
+    def addLibrary(lib: Any): Unit = js.native
     
-    def cleanOption(option: js.Any, deflt: js.Any): js.Any = js.native
+    def cleanOption(option: Any, deflt: Any): Any = js.native
     
     def clearOutputFile(): Unit = js.native
     
     def clearViewer(): Unit = js.native
     
-    /* private */ var containerdiv: js.Any = js.native
+    /* private */ var containerdiv: Any = js.native
     
-    /* private */ var controldiv: js.Any = js.native
+    /* private */ var controldiv: Any = js.native
     
     def createElements(): Unit = js.native
     
     def createParamControls(): Unit = js.native
     
-    /* private */ var currentFormat: js.Any = js.native
+    /* private */ var currentFormat: Any = js.native
     
-    /* private */ var currentObject: js.Any = js.native
+    /* private */ var currentObject: Any = js.native
     
-    /* private */ var currentObjectIndex: js.Any = js.native
+    /* private */ var currentObjectIndex: Any = js.native
     
-    def currentObjectToBlob(): js.Any = js.native
+    def currentObjectToBlob(): Any = js.native
     
-    /* private */ var currentObjects: js.Any = js.native
+    /* private */ var currentObjects: Any = js.native
     
-    /* private */ var debugging: js.Any = js.native
+    /* private */ var debugging: Any = js.native
     
     def downloadLinkTextForCurrentObject(): String = js.native
     
-    /* private */ var downloadOutputFileLink: js.Any = js.native
+    /* private */ var downloadOutputFileLink: Any = js.native
     
     def enableItems(): Unit = js.native
     
-    /* private */ var errordiv: js.Any = js.native
+    /* private */ var errordiv: Any = js.native
     
-    /* private */ var errorpre: js.Any = js.native
+    /* private */ var errorpre: Any = js.native
     
-    /* private */ var filename: js.Any = js.native
+    /* private */ var filename: Any = js.native
     
-    /* private */ var formatDropdown: js.Any = js.native
+    /* private */ var formatDropdown: Any = js.native
     
-    def formatInfo(format: js.Any): js.Any = js.native
+    def formatInfo(format: Any): Any = js.native
     
     def generateOutputFile(): Unit = js.native
     
     def generateOutputFileBlobUrl(): Unit = js.native
     
-    /* private */ var generateOutputFileButton: js.Any = js.native
+    /* private */ var generateOutputFileButton: Any = js.native
     
     def generateOutputFileFileSystem(): Unit = js.native
     
@@ -128,49 +128,49 @@ object OpenJsCad {
     
     def handleResize(): Unit = js.native
     
-    /* private */ var hasError: js.Any = js.native
+    /* private */ var hasError: Any = js.native
     
-    /* private */ var hasOutputFile: js.Any = js.native
+    /* private */ var hasOutputFile: Any = js.native
     
     def hasSolid(): Boolean = js.native
     
-    /* private */ var hasValidCurrentObject: js.Any = js.native
+    /* private */ var hasValidCurrentObject: Any = js.native
     
-    /* private */ var isFirstRender_ : js.Any = js.native
+    /* private */ var isFirstRender_ : Any = js.native
     
     def isProcessing(): Boolean = js.native
     
-    /* private */ var onchange: js.Any = js.native
+    /* private */ var onchange: Any = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
-    /* private */ var outputFileBlobUrl: js.Any = js.native
+    /* private */ var outputFileBlobUrl: Any = js.native
     
-    /* private */ var outputFileDirEntry: js.Any = js.native
+    /* private */ var outputFileDirEntry: Any = js.native
     
-    /* private */ var paramControls: js.Any = js.native
+    /* private */ var paramControls: Any = js.native
     
-    /* private */ var paramDefinitions: js.Any = js.native
+    /* private */ var paramDefinitions: Any = js.native
     
-    /* private */ var parametersdiv: js.Any = js.native
+    /* private */ var parametersdiv: Any = js.native
     
-    /* private */ var parameterstable: js.Any = js.native
+    /* private */ var parameterstable: Any = js.native
     
-    /* private */ var processing: js.Any = js.native
+    /* private */ var processing: Any = js.native
     
     def rebuildSolid(): Unit = js.native
     
-    /* private */ var renderedElementDropdown: js.Any = js.native
+    /* private */ var renderedElementDropdown: Any = js.native
     
-    /* private */ var script: js.Any = js.native
+    /* private */ var script: Any = js.native
     
-    def selectedFormat(): js.Any = js.native
+    def selectedFormat(): Any = js.native
     
-    def selectedFormatInfo(): js.Any = js.native
+    def selectedFormatInfo(): Any = js.native
     
     def setDebugging(debugging: Boolean): Unit = js.native
     
-    def setDrawOption(str: js.Any, bool: js.Any): Unit = js.native
+    def setDrawOption(str: Any, bool: Any): Unit = js.native
     
     def setError(txt: String): Unit = js.native
     
@@ -179,29 +179,29 @@ object OpenJsCad {
     
     def setOpenJsCadPath(path: String): Unit = js.native
     
-    def setRenderedObjects(obj: js.Any): Unit = js.native
+    def setRenderedObjects(obj: Any): Unit = js.native
     
     def setSelectedObjectIndex(index: Double): Unit = js.native
     
-    /* private */ var statusbuttons: js.Any = js.native
+    /* private */ var statusbuttons: Any = js.native
     
-    /* private */ var statusdiv: js.Any = js.native
+    /* private */ var statusdiv: Any = js.native
     
-    /* private */ var statusspan: js.Any = js.native
+    /* private */ var statusspan: Any = js.native
     
     def supportedFormatsForCurrentObject(): js.Array[String] = js.native
     
-    def toggleDrawOption(str: js.Any): Boolean = js.native
+    def toggleDrawOption(str: Any): Boolean = js.native
     
     def updateDownloadLink(): Unit = js.native
     
-    /* private */ var viewer: js.Any = js.native
+    /* private */ var viewer: Any = js.native
     
-    /* private */ var viewerSize: js.Any = js.native
+    /* private */ var viewerSize: Any = js.native
     
-    /* private */ var viewerdiv: js.Any = js.native
+    /* private */ var viewerdiv: Any = js.native
     
-    /* private */ var worker: js.Any = js.native
+    /* private */ var worker: Any = js.native
   }
   
   trait ProcessorOptions
@@ -250,60 +250,60 @@ object OpenJsCad {
     
     def applyDrawOptions(): Unit = js.native
     
-    /* private */ var bgColor_ : js.Any = js.native
+    /* private */ var bgColor_ : Any = js.native
     
-    /* private */ var camera_ : js.Any = js.native
+    /* private */ var camera_ : Any = js.native
     
     def cancelAnimate(): Unit = js.native
     
-    /* private */ var canvas: js.Any = js.native
+    /* private */ var canvas: Any = js.native
     
     def clear(): Unit = js.native
     
-    /* private */ var containerElm_ : js.Any = js.native
+    /* private */ var containerElm_ : Any = js.native
     
-    /* private */ var controls_ : js.Any = js.native
+    /* private */ var controls_ : Any = js.native
     
     def createCamera(): Unit = js.native
     
-    def createControls(canvas: js.Any): Unit = js.native
+    def createControls(canvas: Any): Unit = js.native
     
-    def createRenderer(bool_noWebGL: js.Any): Unit = js.native
+    def createRenderer(bool_noWebGL: Any): Unit = js.native
     
-    def createScene(drawAxes: js.Any, axLen: js.Any): Unit = js.native
+    def createScene(drawAxes: Any, axLen: Any): Unit = js.native
     
-    /* private */ var defaultColor_ : js.Any = js.native
+    /* private */ var defaultColor_ : Any = js.native
     
-    def drawAxes(axLen: js.Any): Unit = js.native
+    def drawAxes(axLen: Any): Unit = js.native
     
-    /* private */ var drawOptions: js.Any = js.native
+    /* private */ var drawOptions: Any = js.native
     
-    def getUserMeshes(): js.Array[Object3D] = js.native
-    def getUserMeshes(str: js.Any): js.Array[Object3D] = js.native
+    def getUserMeshes(): js.Array[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
+    def getUserMeshes(str: Any): js.Array[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
     
     def handleResize(): Unit = js.native
     
     def parseSizeParams(): Unit = js.native
     
-    /* private */ var pauseRender_ : js.Any = js.native
+    /* private */ var pauseRender_ : Any = js.native
     
-    /* private */ var perspective: js.Any = js.native
+    /* private */ var perspective: Any = js.native
     
-    def refreshRenderer(bool_noWebGL: js.Any): Unit = js.native
+    def refreshRenderer(bool_noWebGL: Any): Unit = js.native
     
     def render(): Unit = js.native
     
-    /* private */ var renderer_ : js.Any = js.native
+    /* private */ var renderer_ : Any = js.native
     
-    /* private */ var requestID_ : js.Any = js.native
+    /* private */ var requestID_ : Any = js.native
     
-    def resetZoom(r: js.Any): Unit = js.native
+    def resetZoom(r: Any): Unit = js.native
     
-    /* private */ var scene_ : js.Any = js.native
+    /* private */ var scene_ : Any = js.native
     
-    def setCsg(csg: js.Any, resetZoom: js.Any): Unit = js.native
+    def setCsg(csg: Any, resetZoom: Any): Unit = js.native
     
-    /* private */ var size: js.Any = js.native
+    /* private */ var size: Any = js.native
     
     def webGLAvailable(): Boolean = js.native
   }

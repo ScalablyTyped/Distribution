@@ -8,6 +8,8 @@ trait SendBasicOptions extends StObject {
   
   var disable_notification: js.UndefOr[Boolean] = js.undefined
   
+  var protect_content: js.UndefOr[Boolean] = js.undefined
+  
   var reply_markup: js.UndefOr[InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply] = js.undefined
   
   var reply_to_message_id: js.UndefOr[Double] = js.undefined
@@ -24,6 +26,10 @@ object SendBasicOptions {
     inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     
     inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    
+    inline def setProtect_content(value: Boolean): Self = StObject.set(x, "protect_content", value.asInstanceOf[js.Any])
+    
+    inline def setProtect_contentUndefined: Self = StObject.set(x, "protect_content", js.undefined)
     
     inline def setReply_markup(value: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     

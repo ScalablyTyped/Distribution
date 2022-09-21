@@ -15,8 +15,12 @@ object reactNativeTabViewStrings {
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait enter extends StObject
-  inline def enter: enter = "enter".asInstanceOf[enter]
+  sealed trait locale extends StObject
+  inline def locale: locale = "locale".asInstanceOf[locale]
+  
+  @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait none extends StObject
@@ -25,6 +29,10 @@ object reactNativeTabViewStrings {
   @js.native
   sealed trait `on-drag` extends StObject
   inline def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
+  
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait top extends StObject

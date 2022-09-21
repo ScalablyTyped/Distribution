@@ -14,7 +14,7 @@ trait GetAuthorizationTokenResult extends StObject {
   /**
     *  A timestamp that specifies the date and time the authorization token expires. 
     */
-  var expiration: js.UndefOr[Timestamp] = js.undefined
+  var expiration: js.UndefOr[js.Date] = js.undefined
 }
 object GetAuthorizationTokenResult {
   
@@ -29,7 +29,7 @@ object GetAuthorizationTokenResult {
     
     inline def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
     
-    inline def setExpiration(value: Timestamp): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
   }

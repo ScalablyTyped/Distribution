@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ImageAssetTask")
 @js.native
-class ImageAssetTask protected ()
+open class ImageAssetTask protected ()
   extends typings.babylonjs.miscIndexMod.ImageAssetTask {
   /**
     * Creates a new ImageAssetTask

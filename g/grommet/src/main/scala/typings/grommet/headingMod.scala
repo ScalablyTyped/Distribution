@@ -6,9 +6,13 @@ import typings.grommet.grommetStrings.`3`
 import typings.grommet.grommetStrings.`4`
 import typings.grommet.grommetStrings.`5`
 import typings.grommet.grommetStrings.`6`
+import typings.grommet.grommetStrings.bold
+import typings.grommet.grommetStrings.bolder
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.large
+import typings.grommet.grommetStrings.lighter
 import typings.grommet.grommetStrings.medium
+import typings.grommet.grommetStrings.normal
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.utilsMod.A11yTitleType
@@ -31,9 +35,19 @@ object headingMod {
   
   @JSImport("grommet/components/Heading", "Heading")
   @js.native
-  val Heading: FC[
-    HeadingProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
-  ] = js.native
+  val Heading: FC[HeadingExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> | grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> | grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> | grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> | grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> | grommet.grommet/utils.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLHeadingElement>, std.HTMLHeadingElement>, 'color'> */ trait HeadingExtendedProps
+    extends StObject
+       with HeadingProps
+  object HeadingExtendedProps {
+    
+    inline def apply(): HeadingExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HeadingExtendedProps]
+    }
+  }
   
   trait HeadingProps extends StObject {
     
@@ -44,6 +58,8 @@ object headingMod {
     var as: js.UndefOr[PolymorphicType] = js.undefined
     
     var color: js.UndefOr[ColorType] = js.undefined
+    
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
@@ -60,6 +76,8 @@ object headingMod {
     var textAlign: js.UndefOr[TextAlignType] = js.undefined
     
     var truncate: js.UndefOr[Boolean] = js.undefined
+    
+    var weight: js.UndefOr[normal | bold | lighter | bolder | Double | String] = js.undefined
   }
   object HeadingProps {
     
@@ -85,6 +103,10 @@ object headingMod {
       inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
@@ -115,6 +137,12 @@ object headingMod {
       inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
       inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      
+      inline def setWeight(value: normal | bold | lighter | bolder | Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
+  
+  type hProps = Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color]
 }

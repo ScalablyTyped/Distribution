@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_XmlAttr")
 @js.native
-class ClassXmlAttr ()
+open class ClassXmlAttr ()
   extends StObject
      with typings.fibjs.ClassXmlAttr

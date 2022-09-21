@@ -9,7 +9,7 @@ trait GetInsightRuleReportInput extends StObject {
   /**
     * The end time of the data to use in the report. When used in a raw HTTP Query API, it is formatted as yyyy-MM-dd'T'HH:mm:ss. For example, 2019-07-01T23:59:59.
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * The maximum number of contributors to include in the report. The range is 1 to 100. If you omit this, the default of 10 is used.
@@ -39,18 +39,18 @@ trait GetInsightRuleReportInput extends StObject {
   /**
     * The start time of the data to use in the report. When used in a raw HTTP Query API, it is formatted as yyyy-MM-dd'T'HH:mm:ss. For example, 2019-07-01T23:59:59.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
 }
 object GetInsightRuleReportInput {
   
-  inline def apply(EndTime: Timestamp, Period: Period, RuleName: InsightRuleName, StartTime: Timestamp): GetInsightRuleReportInput = {
+  inline def apply(EndTime: js.Date, Period: Period, RuleName: InsightRuleName, StartTime: js.Date): GetInsightRuleReportInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightRuleReportInput]
   }
   
   extension [Self <: GetInsightRuleReportInput](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setMaxContributorCount(value: InsightRuleUnboundInteger): Self = StObject.set(x, "MaxContributorCount", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object GetInsightRuleReportInput {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: InsightRuleMetricName*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: InsightRuleMetricName*): Self = StObject.set(x, "Metrics", js.Array(value*))
     
     inline def setOrderBy(value: InsightRuleOrderBy): Self = StObject.set(x, "OrderBy", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object GetInsightRuleReportInput {
     
     inline def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

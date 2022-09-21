@@ -2,6 +2,7 @@ package typings.rdfLoaderCode
 
 import org.scalablytyped.runtime.Shortcut
 import typings.rdfLoadersRegistry.mod.Loader
+import typings.rdfLoadersRegistry.mod.LoaderRegistry
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,14 +17,14 @@ object ecmaScriptLiteralMod extends Shortcut {
   @js.native
   trait EcmaScriptLiteralLoader extends Loader[String, Options] {
     
-    def register(registry: typings.rdfLoadersRegistry.mod.^): Unit = js.native
+    def register(registry: LoaderRegistry): Unit = js.native
   }
   
   trait Options extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
-    var variables: js.UndefOr[Map[String, js.Any]] = js.undefined
+    var variables: js.UndefOr[Map[String, Any]] = js.undefined
   }
   object Options {
     
@@ -34,11 +35,11 @@ object ecmaScriptLiteralMod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setVariables(value: Map[String, js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Map[String, Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebouncedFunc[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
+trait DebouncedFunc[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject {
   
   /**
     * Call the original function, but applying the debounce rules.
@@ -15,7 +15,7 @@ trait DebouncedFunc[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] exte
     * If the debounced function can be run immediately, this calls it and returns its return
     * value.
     *
-    * Otherwise, it returns the return value of the last invokation, or undefined if the debounced
+    * Otherwise, it returns the return value of the last invocation, or undefined if the debounced
     * function was not invoked yet.
     */
   def apply(
@@ -23,15 +23,15 @@ trait DebouncedFunc[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] exte
   ): js.UndefOr[ReturnType[T]] = js.native
   
   /**
-    * Throw away any pending invokation of the debounced function.
+    * Throw away any pending invocation of the debounced function.
     */
   def cancel(): Unit = js.native
   
   /**
-    * If there is a pending invokation of the debounced function, invoke it immediately and return
+    * If there is a pending invocation of the debounced function, invoke it immediately and return
     * its return value.
     *
-    * Otherwise, return the value from the last invokation, or undefined if the debounced function
+    * Otherwise, return the value from the last invocation, or undefined if the debounced function
     * was never invoked.
     */
   def flush(): js.UndefOr[ReturnType[T]] = js.native

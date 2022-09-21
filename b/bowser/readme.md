@@ -10,15 +10,12 @@ Lightweight browser detector
 | ------------------ | :-------------: |
 | Full name          | bowser |
 | Keywords           | browser, useragent, user-agent, parser, ua, detection, ender, sniff |
-| # releases         | 20 |
-| # dependents       | 338 |
-| # downloads        | 106981445 |
-| # stars            | 21 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6347394333333334E7 |
+| # stars            | 5120.0 |
 
 ## Links
-- [Homepage](https://github.com/lancedikson/bowser)
-- [Bugs](https://github.com/lancedikson/bowser/issues)
-- [Repository](https://github.com/lancedikson/bowser)
 - [Npm](https://www.npmjs.com/package/bowser)
     
 

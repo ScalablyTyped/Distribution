@@ -39,12 +39,12 @@ object GoogleCloudMlV1StudyConfig {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setParameters(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait ColorSchemes extends StObject {
   
   def Item(Index: Double): ColorScheme = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.ColorSchemes_typekey")
   var PowerPointDotColorSchemes_typekey: ColorSchemes = js.native

@@ -37,6 +37,6 @@ object PartitionQueryResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: Cursor*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Cursor*): Self = StObject.set(x, "partitions", js.Array(value*))
   }
 }

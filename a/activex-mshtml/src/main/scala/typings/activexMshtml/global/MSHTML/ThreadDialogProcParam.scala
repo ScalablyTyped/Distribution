@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ThreadDialogProcParam")
 @js.native
-/* private */ class ThreadDialogProcParam ()
+/* private */ open class ThreadDialogProcParam ()
   extends StObject
      with typings.activexMshtml.MSHTML.ThreadDialogProcParam {
   
@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotThreadDialogProcParam_typekey: typings.activexMshtml.MSHTML.ThreadDialogProcParam = js.native
   
   /* CompleteClass */
-  override val document: js.Any = js.native
+  override val document: Any = js.native
   
   /* CompleteClass */
-  override val moniker: js.Any = js.native
+  override val moniker: Any = js.native
   
   /* CompleteClass */
-  override val optionString: js.Any = js.native
+  override val optionString: Any = js.native
   
   /* CompleteClass */
-  override val parameters: js.Any = js.native
+  override val parameters: Any = js.native
 }

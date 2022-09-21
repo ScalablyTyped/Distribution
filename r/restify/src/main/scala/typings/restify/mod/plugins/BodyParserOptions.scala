@@ -71,7 +71,7 @@ trait BodyParserOptions extends StObject {
   
   var requestBodyOnGet: js.UndefOr[Boolean] = js.undefined
   
-  var reviver: js.UndefOr[js.Any] = js.undefined
+  var reviver: js.UndefOr[Any] = js.undefined
   
   /**
     * Where uploaded files are intermediately stored during transfer before the contents is mapped into req.params. Does nothing if multipartFileHandler is defined.
@@ -139,7 +139,7 @@ object BodyParserOptions {
     
     inline def setRequestBodyOnGetUndefined: Self = StObject.set(x, "requestBodyOnGet", js.undefined)
     
-    inline def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+    inline def setReviver(value: Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
     
     inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     

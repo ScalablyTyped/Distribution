@@ -328,7 +328,7 @@ trait Point extends StObject {
     * that is supported by the various {@link Point} constructors also work
     * for calls of `set()`.
     */
-  def set(values: js.Any*): Point = js.native
+  def set(values: Any*): Point = js.native
   
   /** 
     * Returns the subtraction of the supplied value to both coordinates of

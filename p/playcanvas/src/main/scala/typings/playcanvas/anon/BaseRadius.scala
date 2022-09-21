@@ -8,6 +8,8 @@ trait BaseRadius extends StObject {
   
   var baseRadius: js.UndefOr[Double] = js.undefined
   
+  var calculateTangents: js.UndefOr[Boolean] = js.undefined
+  
   var capSegments: js.UndefOr[Double] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
@@ -28,6 +30,10 @@ object BaseRadius {
     inline def setBaseRadius(value: Double): Self = StObject.set(x, "baseRadius", value.asInstanceOf[js.Any])
     
     inline def setBaseRadiusUndefined: Self = StObject.set(x, "baseRadius", js.undefined)
+    
+    inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
+    
+    inline def setCalculateTangentsUndefined: Self = StObject.set(x, "calculateTangents", js.undefined)
     
     inline def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
     

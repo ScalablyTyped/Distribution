@@ -10,10 +10,10 @@ object personPinCircleMod {
   
   @JSImport("material-ui/svg-icons/maps/person-pin-circle", JSImport.Default)
   @js.native
-  class default () extends MapsPersonPinCircle
+  open class default () extends MapsPersonPinCircle
   
   @JSImport("material-ui/svg-icons/maps/person-pin-circle", "MapsPersonPinCircle")
   @js.native
-  class MapsPersonPinCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsPersonPinCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

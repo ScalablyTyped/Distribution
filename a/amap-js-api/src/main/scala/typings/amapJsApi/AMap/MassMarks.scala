@@ -174,7 +174,7 @@ object MassMarks {
       
       inline def setStyle(value: Style | js.Array[Style]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       

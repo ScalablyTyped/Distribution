@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeRange extends StObject {
   
   /**
-    * DateTime with UTC offset for Serialization/Deserialization in unix timespam.
+    * DateTime with UTC offset for Serialization/Deserialization in unix timespan.
     */
   val from: Double
   
   /**
-    * DateTime with UTC offset for Serialization/Deserialization in unix timespam.
+    * DateTime with UTC offset for Serialization/Deserialization in unix timespan.
     */
   val until: Double
 }

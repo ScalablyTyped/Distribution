@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "MenuItem")
 @js.native
-class MenuItem () extends ^
+open class MenuItem () extends ^

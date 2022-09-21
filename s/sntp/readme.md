@@ -10,10 +10,10 @@ SNTP Client
 | ------------------ | :-------------: |
 | Full name          | sntp |
 | Keywords           | sntp, ntp, time |
-| # releases         | 2 |
-| # dependents       | 51 |
-| # downloads        | 113457205 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6439665.333333333 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/hueniverse/sntp#readme)

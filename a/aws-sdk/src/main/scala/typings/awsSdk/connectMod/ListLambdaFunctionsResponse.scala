@@ -29,7 +29,7 @@ object ListLambdaFunctionsResponse {
     
     inline def setLambdaFunctionsUndefined: Self = StObject.set(x, "LambdaFunctions", js.undefined)
     
-    inline def setLambdaFunctionsVarargs(value: FunctionArn*): Self = StObject.set(x, "LambdaFunctions", js.Array(value :_*))
+    inline def setLambdaFunctionsVarargs(value: FunctionArn*): Self = StObject.set(x, "LambdaFunctions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -9,12 +9,12 @@ trait SchemaAdCode extends StObject {
   /**
     * The ad code snippet.
     */
-  var adCode: js.UndefOr[String] = js.undefined
+  var adCode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Kind this is, in this case adsensehost#adCode.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAdCode {
   
@@ -27,9 +27,13 @@ object SchemaAdCode {
     
     inline def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
     
+    inline def setAdCodeNull: Self = StObject.set(x, "adCode", null)
+    
     inline def setAdCodeUndefined: Self = StObject.set(x, "adCode", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

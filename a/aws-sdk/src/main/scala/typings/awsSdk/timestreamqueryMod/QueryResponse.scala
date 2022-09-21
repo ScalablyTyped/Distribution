@@ -14,12 +14,17 @@ trait QueryResponse extends StObject {
   /**
     *  A pagination token that can be used again on a Query call to get the next set of results. 
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  A unique ID for the given query. 
     */
   var QueryId: typings.awsSdk.timestreamqueryMod.QueryId
+  
+  /**
+    * Information about the status of the query, including progress and bytes scanned.
+    */
+  var QueryStatus: js.UndefOr[typings.awsSdk.timestreamqueryMod.QueryStatus] = js.undefined
   
   /**
     *  The result set rows returned by the query. 
@@ -37,16 +42,20 @@ object QueryResponse {
     
     inline def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
     
-    inline def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
+    inline def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
+    inline def setQueryStatus(value: QueryStatus): Self = StObject.set(x, "QueryStatus", value.asInstanceOf[js.Any])
+    
+    inline def setQueryStatusUndefined: Self = StObject.set(x, "QueryStatus", js.undefined)
+    
     inline def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value*))
   }
 }

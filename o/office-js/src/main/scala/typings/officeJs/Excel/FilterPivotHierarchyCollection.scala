@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -25,6 +25,7 @@ trait FilterPivotHierarchyCollection
     * Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,
     or filter axis, it will be removed from that location.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def add(pivotHierarchy: PivotHierarchy): FilterPivotHierarchy = js.native
@@ -36,13 +37,15 @@ trait FilterPivotHierarchyCollection
   /**
     * Gets the number of pivot hierarchies in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a FilterPivotHierarchy by its name or id.
+    * Gets a FilterPivotHierarchy by its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the FilterPivotHierarchy to be retrieved.
@@ -50,8 +53,10 @@ trait FilterPivotHierarchyCollection
   def getItem(name: String): FilterPivotHierarchy = js.native
   
   /**
-    * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.
+    * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the FilterPivotHierarchy to be retrieved.
@@ -75,6 +80,7 @@ trait FilterPivotHierarchyCollection
   /**
     * Removes the PivotHierarchy from the current axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def remove(filterPivotHierarchy: FilterPivotHierarchy): Unit = js.native

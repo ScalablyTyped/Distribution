@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SemanticInfoChain extends StObject {
   
-  /* private */ var _binder: js.Any = js.native
+  /* private */ var _binder: Any = js.native
   
-  /* private */ var _fileNames: js.Any = js.native
+  /* private */ var _fileNames: Any = js.native
   
-  /* private */ var _resolver: js.Any = js.native
+  /* private */ var _resolver: Any = js.native
   
-  /* private */ var _topLevelDecls: js.Any = js.native
+  /* private */ var _topLevelDecls: Any = js.native
   
   def addDiagnostic(diagnostic: Diagnostic): Unit = js.native
   
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String): Unit = js.native
-  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[js.Any]): Unit = js.native
+  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[Any]): Unit = js.native
   def addDiagnosticFromAST(
     ast: AST,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any],
+    _arguments: js.Array[Any],
     additionalLocations: js.Array[Location]
   ): Unit = js.native
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: Unit, additionalLocations: js.Array[Location]): Unit = js.native
@@ -31,9 +31,9 @@ trait SemanticInfoChain extends StObject {
   
   def addDuplicateIdentifierDiagnosticFromAST(ast: AST, identifier: String, additionalLocationAST: AST): Unit = js.native
   
-  /* private */ def addPrimitiveTypeSymbol(decl: js.Any): js.Any = js.native
+  /* private */ def addPrimitiveTypeSymbol(decl: Any): Any = js.native
   
-  /* private */ def addPrimitiveValueSymbol(decl: js.Any, `type`: js.Any): js.Any = js.native
+  /* private */ def addPrimitiveValueSymbol(decl: Any, `type`: Any): Any = js.native
   
   def addSyntheticIndexSignature(
     containingDecl: PullDecl,
@@ -48,13 +48,13 @@ trait SemanticInfoChain extends StObject {
   
   var anyTypeSymbol: PullPrimitiveTypeSymbol = js.native
   
-  /* private */ var astAliasSymbolMap: js.Any = js.native
+  /* private */ var astAliasSymbolMap: Any = js.native
   
-  /* private */ var astCallResolutionDataMap: js.Any = js.native
+  /* private */ var astCallResolutionDataMap: Any = js.native
   
-  /* private */ var astSymbolMap: js.Any = js.native
+  /* private */ var astSymbolMap: Any = js.native
   
-  /* private */ def bindPrimitiveSymbol[TSymbol /* <: PullSymbol */](decl: js.Any, newSymbol: js.Any): js.Any = js.native
+  /* private */ def bindPrimitiveSymbol[TSymbol /* <: PullSymbol */](decl: Any, newSymbol: Any): Any = js.native
   
   var booleanTypeDecl: PullDecl = js.native
   
@@ -62,33 +62,33 @@ trait SemanticInfoChain extends StObject {
   
   def cacheGlobalSymbol(symbol: PullSymbol, kind: PullElementKind): Unit = js.native
   
-  /* private */ var compiler: js.Any = js.native
+  /* private */ var compiler: Any = js.native
   
-  /* private */ var declCache: js.Any = js.native
+  /* private */ var declCache: Any = js.native
   
-  /* private */ var declSignatureSymbolMap: js.Any = js.native
+  /* private */ var declSignatureSymbolMap: Any = js.native
   
-  /* private */ var declSymbolMap: js.Any = js.native
+  /* private */ var declSymbolMap: Any = js.native
   
   def diagnosticFromAST(ast: AST, diagnosticKey: String): Diagnostic = js.native
-  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[js.Any]): Diagnostic = js.native
+  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[Any]): Diagnostic = js.native
   def diagnosticFromAST(
     ast: AST,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any],
+    _arguments: js.Array[Any],
     additionalLocations: js.Array[Location]
   ): Diagnostic = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: Unit, additionalLocations: js.Array[Location]): Diagnostic = js.native
   
-  /* private */ var documents: js.Any = js.native
+  /* private */ var documents: Any = js.native
   
   def duplicateIdentifierDiagnosticFromAST(ast: AST, identifier: String, additionalLocationAST: AST): Diagnostic = js.native
   
   var emptyTypeSymbol: PullTypeSymbol = js.native
   
-  /* private */ var fileNameToDiagnostics: js.Any = js.native
+  /* private */ var fileNameToDiagnostics: Any = js.native
   
-  /* private */ var fileNameToDocument: js.Any = js.native
+  /* private */ var fileNameToDocument: Any = js.native
   
   def fileNames(): js.Array[String] = js.native
   
@@ -104,7 +104,7 @@ trait SemanticInfoChain extends StObject {
   
   def findTopLevelSymbol(name: String, kind: PullElementKind, doNotGoPastThisDecl: PullDecl): PullSymbol = js.native
   
-  /* private */ def findTopLevelSymbolInDecl(topLevelDecl: js.Any, name: js.Any, kind: js.Any, doNotGoPastThisDecl: js.Any): js.Any = js.native
+  /* private */ def findTopLevelSymbolInDecl(topLevelDecl: Any, name: Any, kind: Any, doNotGoPastThisDecl: Any): Any = js.native
   
   def getASTForDecl(decl: PullDecl): AST = js.native
   
@@ -116,7 +116,7 @@ trait SemanticInfoChain extends StObject {
   
   def getDeclForAST(ast: AST): PullDecl = js.native
   
-  /* private */ def getDeclPathCacheID(declPath: js.Any, declKind: js.Any): js.Any = js.native
+  /* private */ def getDeclPathCacheID(declPath: Any, declKind: Any): Any = js.native
   
   def getDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
   
@@ -141,7 +141,7 @@ trait SemanticInfoChain extends StObject {
   
   def locationFromAST(ast: AST): Location = js.native
   
-  /* private */ var logger: js.Any = js.native
+  /* private */ var logger: Any = js.native
   
   var nullTypeDecl: PullDecl = js.native
   
@@ -153,7 +153,7 @@ trait SemanticInfoChain extends StObject {
   
   def removeDocument(fileName: String): Unit = js.native
   
-  /* private */ def resetGlobalSymbols(): js.Any = js.native
+  /* private */ def resetGlobalSymbols(): Any = js.native
   
   def setASTForDecl(decl: PullDecl, ast: AST): Unit = js.native
   
@@ -169,13 +169,13 @@ trait SemanticInfoChain extends StObject {
   
   def setSymbolForDecl(decl: PullDecl, symbol: PullSymbol): Unit = js.native
   
-  /* private */ def settingsChangeAffectsSyntax(before: js.Any, after: js.Any): js.Any = js.native
+  /* private */ def settingsChangeAffectsSyntax(before: Any, after: Any): Any = js.native
   
   var stringTypeDecl: PullDecl = js.native
   
   var stringTypeSymbol: PullPrimitiveTypeSymbol = js.native
   
-  /* private */ var symbolCache: js.Any = js.native
+  /* private */ var symbolCache: Any = js.native
   
   def topLevelDecl(fileName: String): PullDecl = js.native
   

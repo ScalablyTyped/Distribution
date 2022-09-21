@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
   */
-class BaseElevationLayerCls ()
+open class BaseElevationLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BaseElevationLayer {
   def this(properties: BaseElevationLayerProperties) = this()

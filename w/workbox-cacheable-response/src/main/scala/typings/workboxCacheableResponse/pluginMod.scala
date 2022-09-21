@@ -13,7 +13,7 @@ object pluginMod {
   
   @JSImport("workbox-cacheable-response/Plugin", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends StObject
        with WorkboxPlugin {
     def this(config: CacheableResponseConfig) = this()

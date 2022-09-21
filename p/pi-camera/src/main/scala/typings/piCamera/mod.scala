@@ -8,26 +8,10 @@ object mod {
   
   @JSImport("pi-camera", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PiCamera {
     def this(config: CameraConfig) = this()
-    
-    /* CompleteClass */
-    override def get(prop: ConfigKey): ConfigValue = js.native
-    
-    /* CompleteClass */
-    override def record(): js.Promise[String] = js.native
-    
-    /* CompleteClass */
-    override def set(prop: ConfigKey, value: ConfigValue): ConfigValue = js.native
-    
-    /* CompleteClass */
-    override def snap(): js.Promise[String] = js.native
-    
-    /** @async */
-    /* CompleteClass */
-    override def snapDataUrl(): js.Promise[String] = js.native
   }
   
   trait CameraConfig extends StObject {
@@ -269,43 +253,21 @@ object mod {
     inline def video: typings.piCamera.piCameraStrings.video = "video".asInstanceOf[typings.piCamera.piCameraStrings.video]
   }
   
+  @js.native
   trait PiCamera extends StObject {
     
-    def get(prop: ConfigKey): ConfigValue
+    /* private */ def configToArray(): js.Array[String | ConfigValue] = js.native
     
-    def record(): js.Promise[String]
+    def get(prop: ConfigKey): ConfigValue = js.native
     
-    def set(prop: ConfigKey, value: ConfigValue): ConfigValue
+    def record(): js.Promise[String] = js.native
     
-    def snap(): js.Promise[String]
+    def set(prop: ConfigKey, value: ConfigValue): ConfigValue = js.native
+    
+    def snap(): js.Promise[String] = js.native
     
     /** @async */
-    def snapDataUrl(): js.Promise[String]
-  }
-  object PiCamera {
-    
-    inline def apply(
-      get: ConfigKey => ConfigValue,
-      record: () => js.Promise[String],
-      set: (ConfigKey, ConfigValue) => ConfigValue,
-      snap: () => js.Promise[String],
-      snapDataUrl: () => js.Promise[String]
-    ): PiCamera = {
-      val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), record = js.Any.fromFunction0(record), set = js.Any.fromFunction2(set), snap = js.Any.fromFunction0(snap), snapDataUrl = js.Any.fromFunction0(snapDataUrl))
-      __obj.asInstanceOf[PiCamera]
-    }
-    
-    extension [Self <: PiCamera](x: Self) {
-      
-      inline def setGet(value: ConfigKey => ConfigValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-      
-      inline def setRecord(value: () => js.Promise[String]): Self = StObject.set(x, "record", js.Any.fromFunction0(value))
-      
-      inline def setSet(value: (ConfigKey, ConfigValue) => ConfigValue): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
-      
-      inline def setSnap(value: () => js.Promise[String]): Self = StObject.set(x, "snap", js.Any.fromFunction0(value))
-      
-      inline def setSnapDataUrl(value: () => js.Promise[String]): Self = StObject.set(x, "snapDataUrl", js.Any.fromFunction0(value))
-    }
+    def snapDataUrl(): js.Promise[String] = js.native
+    def snapDataUrl(maxBuffer: Double): js.Promise[String] = js.native
   }
 }

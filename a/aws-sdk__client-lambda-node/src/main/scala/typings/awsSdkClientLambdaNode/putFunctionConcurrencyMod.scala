@@ -8,5 +8,5 @@ object putFunctionConcurrencyMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/PutFunctionConcurrency", "PutFunctionConcurrency")
   @js.native
-  val PutFunctionConcurrency: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutFunctionConcurrency: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

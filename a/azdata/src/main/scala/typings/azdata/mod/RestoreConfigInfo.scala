@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RestoreConfigInfo extends StObject {
   
-  var configInfo: StringDictionary[js.Any]
+  var configInfo: StringDictionary[Any]
 }
 object RestoreConfigInfo {
   
-  inline def apply(configInfo: StringDictionary[js.Any]): RestoreConfigInfo = {
+  inline def apply(configInfo: StringDictionary[Any]): RestoreConfigInfo = {
     val __obj = js.Dynamic.literal(configInfo = configInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreConfigInfo]
   }
   
   extension [Self <: RestoreConfigInfo](x: Self) {
     
-    inline def setConfigInfo(value: StringDictionary[js.Any]): Self = StObject.set(x, "configInfo", value.asInstanceOf[js.Any])
+    inline def setConfigInfo(value: StringDictionary[Any]): Self = StObject.set(x, "configInfo", value.asInstanceOf[js.Any])
   }
 }

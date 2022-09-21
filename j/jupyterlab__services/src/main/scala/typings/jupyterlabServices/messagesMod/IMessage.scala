@@ -20,8 +20,6 @@ import typings.jupyterlabServices.anon.Transient
 import typings.jupyterlabServices.anon.TransientDisplayidString
 import typings.jupyterlabServices.anon.Wait
 import typings.luminoCoreutils.jsonMod.JSONObject
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +29,7 @@ trait IMessage[MSGTYPE /* <: MessageType */] extends StObject {
   /**
     * An optional list of binary buffers.
     */
-  var buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
+  var buffers: js.UndefOr[js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]] = js.undefined
   
   /**
     * The channel on which the message is transmitted.
@@ -77,11 +75,11 @@ object IMessage {
   
   extension [Self <: IMessage[?], MSGTYPE /* <: MessageType */](x: Self & IMessage[MSGTYPE]) {
     
-    inline def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     inline def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
-    inline def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
+    inline def setBuffersVarargs(value: (js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value*))
     
     inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object ListNetworksOutput {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
-    inline def setNetworksVarargs(value: NetworkSummary*): Self = StObject.set(x, "Networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: NetworkSummary*): Self = StObject.set(x, "Networks", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

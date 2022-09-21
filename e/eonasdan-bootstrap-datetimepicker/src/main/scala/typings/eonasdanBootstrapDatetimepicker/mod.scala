@@ -22,7 +22,6 @@ import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerSt
 import typings.eonasdanBootstrapDatetimepicker.mod.global.JQuery
 import typings.jquery.JQueryEventObject
 import typings.moment.mod.Moment
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ object mod {
     var oldDate: Moment | Boolean = js.native
   }
   
-  type DateComparable = String | Date | Moment
+  type DateComparable = String | js.Date | Moment
   
   @js.native
   trait Datetimepicker extends StObject {
@@ -767,31 +766,31 @@ object mod {
   
   trait KeyBinds extends StObject {
     
-    var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, js.Any]] = js.undefined
+    var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, Any]] = js.undefined
     
-    var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var delete: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var delete: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var enter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var enter: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var escape: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var escape: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
     
-    var t: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var t: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, js.Any]] = js.undefined
+    var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, Any]] = js.undefined
   }
   object KeyBinds {
     
@@ -802,55 +801,55 @@ object mod {
     
     extension [Self <: KeyBinds](x: Self) {
       
-      inline def `setControl down`(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "control down", js.Any.fromFunction1(value))
+      inline def `setControl down`(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "control down", js.Any.fromFunction1(value))
       
       inline def `setControl downUndefined`: Self = StObject.set(x, "control down", js.undefined)
       
-      inline def `setControl space`(value: /* widget */ JQuery => js.Any): Self = StObject.set(x, "control space", js.Any.fromFunction1(value))
+      inline def `setControl space`(value: /* widget */ JQuery => Any): Self = StObject.set(x, "control space", js.Any.fromFunction1(value))
       
       inline def `setControl spaceUndefined`: Self = StObject.set(x, "control space", js.undefined)
       
-      inline def `setControl up`(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "control up", js.Any.fromFunction1(value))
+      inline def `setControl up`(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "control up", js.Any.fromFunction1(value))
       
       inline def `setControl upUndefined`: Self = StObject.set(x, "control up", js.undefined)
       
-      inline def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      inline def setDown(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      inline def setEnter(value: () => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+      inline def setEnter(value: () => Any): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
       
       inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      inline def setEscape(value: () => js.Any): Self = StObject.set(x, "escape", js.Any.fromFunction0(value))
+      inline def setEscape(value: () => Any): Self = StObject.set(x, "escape", js.Any.fromFunction0(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      inline def setLeft(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setPageDown(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "pageDown", js.Any.fromFunction1(value))
+      inline def setPageDown(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "pageDown", js.Any.fromFunction1(value))
       
       inline def setPageDownUndefined: Self = StObject.set(x, "pageDown", js.undefined)
       
-      inline def setPageUp(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "pageUp", js.Any.fromFunction1(value))
+      inline def setPageUp(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "pageUp", js.Any.fromFunction1(value))
       
       inline def setPageUpUndefined: Self = StObject.set(x, "pageUp", js.undefined)
       
-      inline def setRight(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setT(value: () => js.Any): Self = StObject.set(x, "t", js.Any.fromFunction0(value))
+      inline def setT(value: () => Any): Self = StObject.set(x, "t", js.Any.fromFunction0(value))
       
       inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
       
-      inline def setUp(value: /* widget */ JQuery | Boolean => js.Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
       
       inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     }
@@ -1222,7 +1221,7 @@ object mod {
       
       inline def setDaysOfWeekDisabledUndefined: Self = StObject.set(x, "daysOfWeekDisabled", js.undefined)
       
-      inline def setDaysOfWeekDisabledVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value :_*))
+      inline def setDaysOfWeekDisabledVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -1236,13 +1235,13 @@ object mod {
       
       inline def setDisabledTimeIntervalsUndefined: Self = StObject.set(x, "disabledTimeIntervals", js.undefined)
       
-      inline def setDisabledTimeIntervalsVarargs(value: FromTo*): Self = StObject.set(x, "disabledTimeIntervals", js.Array(value :_*))
+      inline def setDisabledTimeIntervalsVarargs(value: FromTo*): Self = StObject.set(x, "disabledTimeIntervals", js.Array(value*))
       
       inline def setExtraFormats(value: js.Array[String] | Boolean): Self = StObject.set(x, "extraFormats", value.asInstanceOf[js.Any])
       
       inline def setExtraFormatsUndefined: Self = StObject.set(x, "extraFormats", js.undefined)
       
-      inline def setExtraFormatsVarargs(value: String*): Self = StObject.set(x, "extraFormats", js.Array(value :_*))
+      inline def setExtraFormatsVarargs(value: String*): Self = StObject.set(x, "extraFormats", js.Array(value*))
       
       inline def setFocusOnShow(value: Boolean): Self = StObject.set(x, "focusOnShow", value.asInstanceOf[js.Any])
       
@@ -1405,25 +1404,25 @@ object mod {
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: DateComparable*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: DateComparable*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
       inline def setDisabledHours(value: js.Array[Double] | Boolean): Self = StObject.set(x, "disabledHours", value.asInstanceOf[js.Any])
       
       inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
       
-      inline def setDisabledHoursVarargs(value: Double*): Self = StObject.set(x, "disabledHours", js.Array(value :_*))
+      inline def setDisabledHoursVarargs(value: Double*): Self = StObject.set(x, "disabledHours", js.Array(value*))
       
       inline def setEnabledDates(value: js.Array[DateComparable] | Boolean): Self = StObject.set(x, "enabledDates", value.asInstanceOf[js.Any])
       
       inline def setEnabledDatesUndefined: Self = StObject.set(x, "enabledDates", js.undefined)
       
-      inline def setEnabledDatesVarargs(value: DateComparable*): Self = StObject.set(x, "enabledDates", js.Array(value :_*))
+      inline def setEnabledDatesVarargs(value: DateComparable*): Self = StObject.set(x, "enabledDates", js.Array(value*))
       
       inline def setEnabledHours(value: js.Array[Double] | Boolean): Self = StObject.set(x, "enabledHours", value.asInstanceOf[js.Any])
       
       inline def setEnabledHoursUndefined: Self = StObject.set(x, "enabledHours", js.undefined)
       
-      inline def setEnabledHoursVarargs(value: Double*): Self = StObject.set(x, "enabledHours", js.Array(value :_*))
+      inline def setEnabledHoursVarargs(value: Double*): Self = StObject.set(x, "enabledHours", js.Array(value*))
     }
   }
   
@@ -1774,178 +1773,158 @@ object mod {
       @JSName("off")
       def off_dpchange(events: dpDotchange): JQuery = js.native
       @JSName("off")
-      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]): JQuery = js.native
+      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
       @JSName("off")
       def off_dpchange(
         events: dpDotchange,
         selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ ChangeEventObject, Any]
       ): JQuery = js.native
       @JSName("off")
       def off_dpchange(
         events: dpDotchange,
         selector: Unit,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ ChangeEventObject, Any]
       ): JQuery = js.native
       @JSName("off")
       def off_dperror(events: dpDoterror): JQuery = js.native
       @JSName("off")
-      def off_dperror(events: dpDoterror, handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]): JQuery = js.native
+      def off_dperror(events: dpDoterror, handler: js.Function1[/* eventobject */ ErrorEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dperror(events: dpDoterror, selector: String): JQuery = js.native
       @JSName("off")
       def off_dperror(
         events: dpDoterror,
         selector: String,
-        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ ErrorEventObject, Any]
       ): JQuery = js.native
       @JSName("off")
-      def off_dperror(
-        events: dpDoterror,
-        selector: Unit,
-        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
-      ): JQuery = js.native
+      def off_dperror(events: dpDoterror, selector: Unit, handler: js.Function1[/* eventobject */ ErrorEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dphide(events: dpDothide): JQuery = js.native
       @JSName("off")
-      def off_dphide(events: dpDothide, handler: js.Function1[/* eventobject */ HideEventObject, js.Any]): JQuery = js.native
+      def off_dphide(events: dpDothide, handler: js.Function1[/* eventobject */ HideEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dphide(events: dpDothide, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dphide(
-        events: dpDothide,
-        selector: String,
-        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
-      ): JQuery = js.native
+      def off_dphide(events: dpDothide, selector: String, handler: js.Function1[/* eventobject */ HideEventObject, Any]): JQuery = js.native
       @JSName("off")
-      def off_dphide(
-        events: dpDothide,
-        selector: Unit,
-        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
-      ): JQuery = js.native
+      def off_dphide(events: dpDothide, selector: Unit, handler: js.Function1[/* eventobject */ HideEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dpshow(events: dpDotshow): JQuery = js.native
       @JSName("off")
-      def off_dpshow(events: dpDotshow, handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]): JQuery = js.native
+      def off_dpshow(events: dpDotshow, handler: js.Function1[/* eventobject */ JQueryEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dpshow(events: dpDotshow, selector: String): JQuery = js.native
       @JSName("off")
       def off_dpshow(
         events: dpDotshow,
         selector: String,
-        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ JQueryEventObject, Any]
       ): JQuery = js.native
       @JSName("off")
-      def off_dpshow(
-        events: dpDotshow,
-        selector: Unit,
-        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
-      ): JQuery = js.native
+      def off_dpshow(events: dpDotshow, selector: Unit, handler: js.Function1[/* eventobject */ JQueryEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate): JQuery = js.native
       @JSName("off")
-      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]): JQuery = js.native
+      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEventObject, Any]): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
       @JSName("off")
       def off_dpupdate(
         events: dpDotupdate,
         selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, Any]
       ): JQuery = js.native
       @JSName("off")
       def off_dpupdate(
         events: dpDotupdate,
         selector: Unit,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, Any]
       ): JQuery = js.native
       
       @JSName("on")
-      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEventObject, js.Any]): JQuery = js.native
+      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEventObject, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpchange(events: dpDotchange, selector: String, data: js.Any): JQuery = js.native
-      @JSName("on")
-      def on_dpchange(
-        events: dpDotchange,
-        selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
-      ): JQuery = js.native
+      def on_dpchange(events: dpDotchange, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dpchange(
         events: dpDotchange,
         selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEventObject, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ ChangeEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dperror(events: dpDoterror, handler: js.Function1[/* eventObject */ ErrorEventObject, js.Any]): JQuery = js.native
+      def on_dpchange(
+        events: dpDotchange,
+        selector: String,
+        handler: js.Function1[/* eventobject */ ChangeEventObject, Any]
+      ): JQuery = js.native
       @JSName("on")
-      def on_dperror(events: dpDoterror, selector: String, data: js.Any): JQuery = js.native
+      def on_dperror(events: dpDoterror, handler: js.Function1[/* eventObject */ ErrorEventObject, Any]): JQuery = js.native
+      @JSName("on")
+      def on_dperror(events: dpDoterror, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dperror(
         events: dpDoterror,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ ErrorEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
       def on_dperror(
         events: dpDoterror,
         selector: String,
-        handler: js.Function1[/* eventobject */ ErrorEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ ErrorEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dphide(events: dpDothide, handler: js.Function1[/* eventObject */ HideEventObject, js.Any]): JQuery = js.native
+      def on_dphide(events: dpDothide, handler: js.Function1[/* eventObject */ HideEventObject, Any]): JQuery = js.native
       @JSName("on")
-      def on_dphide(events: dpDothide, selector: String, data: js.Any): JQuery = js.native
+      def on_dphide(events: dpDothide, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dphide(
         events: dpDothide,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ HideEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dphide(
-        events: dpDothide,
-        selector: String,
-        handler: js.Function1[/* eventobject */ HideEventObject, js.Any]
-      ): JQuery = js.native
+      def on_dphide(events: dpDothide, selector: String, handler: js.Function1[/* eventobject */ HideEventObject, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpshow(events: dpDotshow, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+      def on_dpshow(events: dpDotshow, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpshow(events: dpDotshow, selector: String, data: js.Any): JQuery = js.native
+      def on_dpshow(events: dpDotshow, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dpshow(
         events: dpDotshow,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ JQueryEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
       def on_dpshow(
         events: dpDotshow,
         selector: String,
-        handler: js.Function1[/* eventobject */ JQueryEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ JQueryEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEventObject, js.Any]): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEventObject, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(events: dpDotupdate, selector: String, data: js.Any): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dpupdate(
         events: dpDotupdate,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ UpdateEventObject, Any]
       ): JQuery = js.native
       @JSName("on")
       def on_dpupdate(
         events: dpDotupdate,
         selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEventObject, js.Any]
+        handler: js.Function1[/* eventobject */ UpdateEventObject, Any]
       ): JQuery = js.native
     }
   }

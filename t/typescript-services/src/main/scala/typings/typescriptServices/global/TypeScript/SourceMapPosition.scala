@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.SourceMapPosition")
 @js.native
-class SourceMapPosition ()
+open class SourceMapPosition ()
   extends StObject
      with typings.typescriptServices.TypeScript.SourceMapPosition {
   

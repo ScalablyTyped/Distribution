@@ -12,7 +12,7 @@ trait ReplicaDescription extends StObject {
   var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexDescriptionList] = js.undefined
   
   /**
-    * The AWS KMS customer master key (CMK) of the replica that will be used for AWS KMS encryption.
+    * The KMS key of the replica that will be used for KMS encryption.
     */
   var KMSMasterKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.KMSMasterKeyId] = js.undefined
   
@@ -29,10 +29,10 @@ trait ReplicaDescription extends StObject {
   /**
     * The time at which the replica was first detected as inaccessible. To determine cause of inaccessibility check the ReplicaStatus property.
     */
-  var ReplicaInaccessibleDateTime: js.UndefOr[Date] = js.undefined
+  var ReplicaInaccessibleDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current state of the replica:    CREATING - The replica is being created.    UPDATING - The replica is being updated.    DELETING - The replica is being deleted.    ACTIVE - The replica is ready for use.    REGION_DISABLED - The replica is inaccessible because the AWS Region has been disabled.  If the AWS Region remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.     INACCESSIBLE_ENCRYPTION_CREDENTIALS  - The AWS KMS key used to encrypt the table is inaccessible.  If the AWS KMS key remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.   
+    * The current state of the replica:    CREATING - The replica is being created.    UPDATING - The replica is being updated.    DELETING - The replica is being deleted.    ACTIVE - The replica is ready for use.    REGION_DISABLED - The replica is inaccessible because the Amazon Web Services Region has been disabled.  If the Amazon Web Services Region remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.     INACCESSIBLE_ENCRYPTION_CREDENTIALS  - The KMS key used to encrypt the table is inaccessible.  If the KMS key remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.   
     */
   var ReplicaStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ReplicaStatus] = js.undefined
   
@@ -45,6 +45,8 @@ trait ReplicaDescription extends StObject {
     * Specifies the progress of a Create, Update, or Delete action on the replica as a percentage.
     */
   var ReplicaStatusPercentProgress: js.UndefOr[typings.awsSdk.dynamodbMod.ReplicaStatusPercentProgress] = js.undefined
+  
+  var ReplicaTableClassSummary: js.UndefOr[TableClassSummary] = js.undefined
 }
 object ReplicaDescription {
   
@@ -59,7 +61,7 @@ object ReplicaDescription {
     
     inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
-    inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
     
     inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
     
@@ -73,7 +75,7 @@ object ReplicaDescription {
     
     inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     
-    inline def setReplicaInaccessibleDateTime(value: Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
+    inline def setReplicaInaccessibleDateTime(value: js.Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
     
     inline def setReplicaInaccessibleDateTimeUndefined: Self = StObject.set(x, "ReplicaInaccessibleDateTime", js.undefined)
     
@@ -88,5 +90,9 @@ object ReplicaDescription {
     inline def setReplicaStatusPercentProgressUndefined: Self = StObject.set(x, "ReplicaStatusPercentProgress", js.undefined)
     
     inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+    
+    inline def setReplicaTableClassSummary(value: TableClassSummary): Self = StObject.set(x, "ReplicaTableClassSummary", value.asInstanceOf[js.Any])
+    
+    inline def setReplicaTableClassSummaryUndefined: Self = StObject.set(x, "ReplicaTableClassSummary", js.undefined)
   }
 }

@@ -10,10 +10,10 @@ object noteMod {
   
   @JSImport("material-ui/svg-icons/av/note", JSImport.Default)
   @js.native
-  class default () extends AvNote
+  open class default () extends AvNote
   
   @JSImport("material-ui/svg-icons/av/note", "AvNote")
   @js.native
-  class AvNote ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvNote ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -9,7 +9,7 @@ object linuxMod {
   
   @JSImport("devcert/dist/platforms/linux", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with LinuxPlatform
   
@@ -18,18 +18,18 @@ object linuxMod {
     extends StObject
        with Platform {
     
-    /* private */ var CHROME_BIN_PATH: js.Any = js.native
+    /* private */ var CHROME_BIN_PATH: Any = js.native
     
-    /* private */ var CHROME_NSS_DIR: js.Any = js.native
+    /* private */ var CHROME_NSS_DIR: Any = js.native
     
-    /* private */ var FIREFOX_BIN_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BIN_PATH: Any = js.native
     
-    /* private */ var FIREFOX_NSS_DIR: js.Any = js.native
+    /* private */ var FIREFOX_NSS_DIR: Any = js.native
     
-    /* private */ var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: Any = js.native
     
-    /* private */ var isChromeInstalled: js.Any = js.native
+    /* private */ var isChromeInstalled: Any = js.native
     
-    /* private */ var isFirefoxInstalled: js.Any = js.native
+    /* private */ var isFirefoxInstalled: Any = js.native
   }
 }

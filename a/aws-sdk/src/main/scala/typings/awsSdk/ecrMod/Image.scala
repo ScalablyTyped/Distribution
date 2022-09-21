@@ -22,7 +22,7 @@ trait Image extends StObject {
   var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
-    * The AWS account ID associated with the registry containing the image.
+    * The Amazon Web Services account ID associated with the registry containing the image.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

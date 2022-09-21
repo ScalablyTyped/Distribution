@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "CommunicationChatBubble")
 @js.native
-class CommunicationChatBubble ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class CommunicationChatBubble ()
+  extends Component[SvgIconProps, js.Object, Any]

@@ -10,13 +10,13 @@ Implementation of the session storage in Apache Cassandra as express middleware.
 | ------------------ | :-------------: |
 | Full name          | cassandra-store |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 16544 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1165.6666666666667 |
+| # stars            | 14.0 |
 
 ## Links
-- [Homepage](https://imergo.com/solutions/opensource.html)
+- [Homepage](https://github.com/webcc/cassandra-store#readme)
 - [Bugs](https://github.com/webcc/cassandra-store/issues)
 - [Repository](https://github.com/webcc/cassandra-store)
 - [Npm](https://www.npmjs.com/package/cassandra-store)

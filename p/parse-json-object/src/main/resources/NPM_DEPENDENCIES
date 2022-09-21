@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "parse-json-object" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "parse-json-object" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

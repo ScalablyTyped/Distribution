@@ -8,5 +8,5 @@ object grantOperationListMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/_GrantOperationList", "_GrantOperationList")
   @js.native
-  val GrantOperationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val GrantOperationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

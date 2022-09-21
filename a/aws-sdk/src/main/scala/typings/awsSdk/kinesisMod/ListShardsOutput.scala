@@ -33,6 +33,6 @@ object ListShardsOutput {
     
     inline def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
     
-    inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value*))
   }
 }

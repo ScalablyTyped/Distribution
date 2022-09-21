@@ -185,7 +185,7 @@ object LiveTranscoding {
     
     inline def setImages(value: js.Array[TranscodingWatermark]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: TranscodingWatermark*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: TranscodingWatermark*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setLowLatency(value: Boolean): Self = StObject.set(x, "lowLatency", value.asInstanceOf[js.Any])
     
@@ -193,7 +193,7 @@ object LiveTranscoding {
     
     inline def setTranscodingUsers(value: js.Array[TranscodingUser]): Self = StObject.set(x, "transcodingUsers", value.asInstanceOf[js.Any])
     
-    inline def setTranscodingUsersVarargs(value: TranscodingUser*): Self = StObject.set(x, "transcodingUsers", js.Array(value :_*))
+    inline def setTranscodingUsersVarargs(value: TranscodingUser*): Self = StObject.set(x, "transcodingUsers", js.Array(value*))
     
     inline def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ object signalMod {
   - typings.signalsJs.ioncesignalMod.IOnceSignal because Already inherited
   - typings.signalsJs.isignalMod.ISignal because var conflicts: numListeners, valueClasses. Inlined add */ @JSImport("signals.js/lib/org/osflash/signals/Signal", "Signal")
   @js.native
-  class Signal protected () extends OnceSignal {
+  open class Signal protected () extends OnceSignal {
     /**
       * Creates a Signal instance to dispatch value objects.
       * @param    valueClasses Any number of class references that enable type checks in dispatch().
@@ -24,7 +24,7 @@ object signalMod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
     
     /**
       * @inheritDoc

@@ -76,7 +76,7 @@ object MaterialDesignLite {
       * upgrade. This function should expect 1 parameter - the HTMLElement which
       * got upgraded.
       */
-    def registerUpgradedCallback(jsClass: String, callback: js.Function1[/* element */ HTMLElement, js.Any]): Unit = js.native
+    def registerUpgradedCallback(jsClass: String, callback: js.Function1[/* element */ HTMLElement, Any]): Unit = js.native
     
     /**
       * Upgrades all registered components found in the current DOM. This is

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Query extends StObject {
   
-  var query: js.Any
+  var query: Any
   
   var scene: String
   
@@ -14,14 +14,14 @@ trait Query extends StObject {
 }
 object Query {
   
-  inline def apply(query: js.Any, scene: String, shareTicket: String): Query = {
+  inline def apply(query: Any, scene: String, shareTicket: String): Query = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
   extension [Self <: Query](x: Self) {
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     

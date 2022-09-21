@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The syntax analysis request message.
-  */
 trait SchemaAnalyzeSyntaxRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaAnalyzeSyntaxRequest extends StObject {
   /**
     * The encoding type used by the API to calculate offsets.
     */
-  var encodingType: js.UndefOr[String] = js.undefined
+  var encodingType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAnalyzeSyntaxRequest {
   
@@ -33,6 +30,8 @@ object SchemaAnalyzeSyntaxRequest {
     inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingTypeNull: Self = StObject.set(x, "encodingType", null)
     
     inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
   }

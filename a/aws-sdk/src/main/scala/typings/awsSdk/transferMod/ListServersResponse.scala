@@ -31,6 +31,6 @@ object ListServersResponse {
     
     inline def setServers(value: ListedServers): Self = StObject.set(x, "Servers", value.asInstanceOf[js.Any])
     
-    inline def setServersVarargs(value: ListedServer*): Self = StObject.set(x, "Servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ListedServer*): Self = StObject.set(x, "Servers", js.Array(value*))
   }
 }

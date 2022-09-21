@@ -24,7 +24,7 @@ trait QualificationRequest extends StObject {
   /**
     * The date and time the Qualification request had a status of Submitted. This is either the time the Worker submitted answers for a Qualification test, or the time the Worker requested the Qualification if the Qualification type does not have a test. 
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The contents of the Qualification test that was presented to the Worker, if the type has a test and the Worker has submitted answers. This value is identical to the QuestionForm associated with the Qualification type at the time the Worker requests the Qualification.
@@ -57,7 +57,7 @@ object QualificationRequest {
     
     inline def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
     
-    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     

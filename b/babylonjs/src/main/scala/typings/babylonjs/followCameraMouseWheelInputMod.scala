@@ -10,13 +10,13 @@ object followCameraMouseWheelInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/followCameraMouseWheelInput", "FollowCameraMouseWheelInput")
   @js.native
-  class FollowCameraMouseWheelInput ()
+  open class FollowCameraMouseWheelInput ()
     extends StObject
        with ICameraInput[FollowCamera] {
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _wheel: js.Any = js.native
+    /* private */ var _wheel: Any = js.native
     
     /**
       * Moue wheel controls height. (Mouse wheel modifies camera.heightOffset value.)

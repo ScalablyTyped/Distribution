@@ -1,7 +1,7 @@
 
 # Scala.js typings for contentstack
 
-Typings are for version 3.8
+Typings are for version 3.15.3
 
 ## Library description:
 Contentstack Javascript SDK
@@ -10,10 +10,10 @@ Contentstack Javascript SDK
 | ------------------ | :-------------: |
 | Full name          | contentstack |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 430796 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 169404.33333333334 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://www.contentstack.com/)
@@ -24,7 +24,7 @@ Contentstack Javascript SDK
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

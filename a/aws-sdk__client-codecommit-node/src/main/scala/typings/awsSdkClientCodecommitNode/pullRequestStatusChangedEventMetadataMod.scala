@@ -8,5 +8,5 @@ object pullRequestStatusChangedEventMetadataMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestStatusChangedEventMetadata", "_PullRequestStatusChangedEventMetadata")
   @js.native
-  val PullRequestStatusChangedEventMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PullRequestStatusChangedEventMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

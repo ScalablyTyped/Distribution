@@ -9,22 +9,49 @@ trait Days
   extends StObject
      with _VizTimeInterval {
   
+  /**
+    * Specifies the time interval measured in days. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var days: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in hours. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var hours: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in milliseconds. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var milliseconds: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in minutes. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var minutes: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in months. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var months: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in quarters. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var quarters: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in seconds. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var seconds: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in weeks. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var weeks: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the time interval measured in years. Accepts integer values. Available only for an axis/scale that displays date-time values.
+    */
   var years: js.UndefOr[Double] = js.undefined
 }
 object Days {

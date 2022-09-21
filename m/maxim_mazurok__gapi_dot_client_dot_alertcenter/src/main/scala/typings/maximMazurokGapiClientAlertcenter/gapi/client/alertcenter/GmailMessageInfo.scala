@@ -9,7 +9,7 @@ trait GmailMessageInfo extends StObject {
   /** The `SHA256` hash of email's attachment and all MIME parts. */
   var attachmentsSha256Hash: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The date the malicious email was sent. */
+  /** The date of the event related to this email. */
   var date: js.UndefOr[String] = js.undefined
   
   /** The hash of the message body text. */
@@ -43,7 +43,7 @@ object GmailMessageInfo {
     
     inline def setAttachmentsSha256HashUndefined: Self = StObject.set(x, "attachmentsSha256Hash", js.undefined)
     
-    inline def setAttachmentsSha256HashVarargs(value: String*): Self = StObject.set(x, "attachmentsSha256Hash", js.Array(value :_*))
+    inline def setAttachmentsSha256HashVarargs(value: String*): Self = StObject.set(x, "attachmentsSha256Hash", js.Array(value*))
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

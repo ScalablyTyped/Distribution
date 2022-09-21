@@ -12,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add or remove categories.
   *
+  * @remarks
   * [Api set: Mailbox 1.8]
   *
-  * @remarks
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
 trait MasterCategories extends StObject {
@@ -26,13 +25,12 @@ trait MasterCategories extends StObject {
   /**
     * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * **Errors**:
     *
@@ -41,17 +39,36 @@ trait MasterCategories extends StObject {
     * - `PermissionDenied`: The user does not have permission to perform this action.
     *
     * @param categories - The categories to be added to the master list on the mailbox.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     */
   def addAsync(categories: js.Array[CategoryDetails]): Unit = js.native
   def addAsync(
     categories: js.Array[CategoryDetails],
-    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  /**
+    * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.8]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * **Errors**:
+    *
+    * - `DuplicateCategory`: One of the categories provided is already in the master category list.
+    *
+    * - `PermissionDenied`: The user does not have permission to perform this action.
+    *
+    * @param categories - The categories to be added to the master list on the mailbox.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+    *                 type `Office.AsyncResult`.
+    */
   def addAsync(categories: js.Array[CategoryDetails], options: AsyncContextOptions): Unit = js.native
   def addAsync(
     categories: js.Array[CategoryDetails],
@@ -62,13 +79,12 @@ trait MasterCategories extends StObject {
   /**
     * Gets the master list of categories on a mailbox.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -77,16 +93,15 @@ trait MasterCategories extends StObject {
   /**
     * Gets the master list of categories on a mailbox.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param options - An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
     */
@@ -98,30 +113,43 @@ trait MasterCategories extends StObject {
   /**
     * Removes categories from the master list on a mailbox.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * **Errors**:
     *
     * - `PermissionDenied`: The user does not have permission to perform this action.
     *
     * @param categories - The categories to be removed from the master list on the mailbox.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
     */
   def removeAsync(categories: js.Array[String]): Unit = js.native
-  def removeAsync(
-    categories: js.Array[String],
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Removes categories from the master list on a mailbox.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.8]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * **Errors**:
+    *
+    * - `PermissionDenied`: The user does not have permission to perform this action.
+    *
+    * @param categories - The categories to be removed from the master list on the mailbox.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+    *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
+    */
   def removeAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     categories: js.Array[String],

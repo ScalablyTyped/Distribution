@@ -24,6 +24,6 @@ object GetComplianceSummaryByResourceTypeResponse {
     
     inline def setComplianceSummariesByResourceTypeUndefined: Self = StObject.set(x, "ComplianceSummariesByResourceType", js.undefined)
     
-    inline def setComplianceSummariesByResourceTypeVarargs(value: ComplianceSummaryByResourceType*): Self = StObject.set(x, "ComplianceSummariesByResourceType", js.Array(value :_*))
+    inline def setComplianceSummariesByResourceTypeVarargs(value: ComplianceSummaryByResourceType*): Self = StObject.set(x, "ComplianceSummariesByResourceType", js.Array(value*))
   }
 }

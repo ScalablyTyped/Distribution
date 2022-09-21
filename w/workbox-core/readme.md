@@ -10,10 +10,10 @@ This module is used by a number of the other Workbox modules to share common cod
 | ------------------ | :-------------: |
 | Full name          | workbox-core |
 | Keywords           | workbox, workboxjs, service worker, sw |
-| # releases         | 29 |
-| # dependents       | 29 |
-| # downloads        | 119201347 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8189965E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrollmagic", "Controller")
 @js.native
-class Controller () extends StObject {
+open class Controller () extends StObject {
   def this(options: ControllerConstructorOptions) = this()
   
   /* Control Methods */
@@ -31,7 +31,7 @@ class Controller () extends StObject {
   def scrollPos(calcFn: js.Function0[Double]): Controller = js.native
   
   def scrollTo(scrollTarget: ScrollTarget): Controller = js.native
-  def scrollTo(scrollTarget: ScrollTarget, additionalParameter: js.Array[js.Any]): Controller = js.native
+  def scrollTo(scrollTarget: ScrollTarget, additionalParameter: js.Array[Any]): Controller = js.native
   
   def update(): Controller = js.native
   def update(immediately: Boolean): Controller = js.native

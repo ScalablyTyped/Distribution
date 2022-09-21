@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Func extends StObject {
   
-  var func: FNotationPrecedence
+  var func: PrecedenceRightToLeft
   
   var regSymbol: minBackslashb
   
@@ -16,14 +16,14 @@ trait Func extends StObject {
 }
 object Func {
   
-  inline def apply(func: FNotationPrecedence): Func = {
+  inline def apply(func: PrecedenceRightToLeft): Func = {
     val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "min\\b", symbol = "min")
     __obj.asInstanceOf[Func]
   }
   
   extension [Self <: Func](x: Self) {
     
-    inline def setFunc(value: FNotationPrecedence): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: PrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     inline def setRegSymbol(value: minBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3ResourceClassification extends StObject {
   
   /**
-    * The name of the S3 bucket that you want to associate with Amazon Macie Classic.
+    * (Discontinued) The name of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
   var bucketName: BucketName
   
   /**
-    * The classification type that you want to specify for the resource associated with Amazon Macie Classic. 
+    * (Discontinued) The classification type that you want to specify for the resource associated with Amazon Macie Classic. 
     */
   var classificationType: ClassificationType
   
   /**
-    * The prefix of the S3 bucket that you want to associate with Amazon Macie Classic.
+    * (Discontinued) The prefix of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
   var prefix: js.UndefOr[Prefix] = js.undefined
 }

@@ -24,6 +24,6 @@ object SchemaVpnGatewayStatus {
     
     inline def setVpnConnectionsUndefined: Self = StObject.set(x, "vpnConnections", js.undefined)
     
-    inline def setVpnConnectionsVarargs(value: SchemaVpnGatewayStatusVpnConnection*): Self = StObject.set(x, "vpnConnections", js.Array(value :_*))
+    inline def setVpnConnectionsVarargs(value: SchemaVpnGatewayStatusVpnConnection*): Self = StObject.set(x, "vpnConnections", js.Array(value*))
   }
 }

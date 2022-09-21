@@ -19,7 +19,7 @@ trait WorkerOptions extends StObject {
   /**
     * alternative to path parameter: web workers initialized with 'openpgp.worker.js'
     */
-  var workers: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var workers: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object WorkerOptions {
   
@@ -36,10 +36,10 @@ object WorkerOptions {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setWorkers(value: js.Array[js.Any]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    inline def setWorkers(value: js.Array[Any]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     
-    inline def setWorkersVarargs(value: js.Any*): Self = StObject.set(x, "workers", js.Array(value :_*))
+    inline def setWorkersVarargs(value: Any*): Self = StObject.set(x, "workers", js.Array(value*))
   }
 }

@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebSocketEventMap extends StObject {
   
+  /* standard dom */
   var close: CloseEvent
   
+  /* standard dom */
   var error: Event
   
-  var message: MessageEvent[js.Any]
+  /* standard dom */
+  var message: MessageEvent[Any]
   
+  /* standard dom */
   var open: Event
 }
 object WebSocketEventMap {
   
-  inline def apply(close: CloseEvent, error: Event, message: MessageEvent[js.Any], open: Event): WebSocketEventMap = {
+  inline def apply(close: CloseEvent, error: Event, message: MessageEvent[Any], open: Event): WebSocketEventMap = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketEventMap]
   }
@@ -27,7 +31,7 @@ object WebSocketEventMap {
     
     inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }

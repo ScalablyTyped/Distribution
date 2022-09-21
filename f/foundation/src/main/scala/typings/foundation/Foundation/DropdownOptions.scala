@@ -11,7 +11,7 @@ trait DropdownOptions extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var closed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var closed: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var disabled_class: js.UndefOr[String] = js.undefined
   
@@ -21,7 +21,7 @@ trait DropdownOptions extends StObject {
   
   var mega_class: js.UndefOr[String] = js.undefined
   
-  var opened: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var opened: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object DropdownOptions {
   
@@ -40,7 +40,7 @@ object DropdownOptions {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    inline def setClosed(value: () => Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
@@ -60,7 +60,7 @@ object DropdownOptions {
     
     inline def setMega_classUndefined: Self = StObject.set(x, "mega_class", js.undefined)
     
-    inline def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
+    inline def setOpened(value: () => Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
   }

@@ -1,9 +1,5 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,12 @@ trait ParamsResourceMyconfigRequestaccess
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * The device/version ID from which to request the restrictions.
     */
   var cpksver: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of access license to request. If not specified, the default is
-    * BOTH.
+    * The type of access license to request. If not specified, the default is BOTH.
     */
   var licenseTypes: js.UndefOr[String] = js.undefined
   
@@ -56,10 +46,6 @@ object ParamsResourceMyconfigRequestaccess {
   }
   
   extension [Self <: ParamsResourceMyconfigRequestaccess](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCpksver(value: String): Self = StObject.set(x, "cpksver", value.asInstanceOf[js.Any])
     

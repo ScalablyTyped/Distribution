@@ -27,7 +27,7 @@ object DialogflowV1MessageQuickReplies {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: String*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: String*): Self = StObject.set(x, "replies", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

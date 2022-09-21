@@ -9,16 +9,14 @@ trait SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata extends StObject {
   var annotations: js.UndefOr[js.Array[SchemaOrderMerchantProvidedAnnotation]] = js.undefined
   
   /**
-    * The ID of the line item to set metadata. Either lineItemId or productId
-    * is required.
+    * The ID of the line item to set metadata. Either lineItemId or productId is required.
     */
-  var lineItemId: js.UndefOr[String] = js.undefined
+  var lineItemId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The ID of the product to set metadata. This is the REST ID used in the
-    * products service. Either lineItemId or productId is required.
+    * The ID of the product to set metadata. This is the REST ID used in the products service. Either lineItemId or productId is required.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata {
   
@@ -33,13 +31,17 @@ object SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: SchemaOrderMerchantProvidedAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: SchemaOrderMerchantProvidedAnnotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    
+    inline def setLineItemIdNull: Self = StObject.set(x, "lineItemId", null)
     
     inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }

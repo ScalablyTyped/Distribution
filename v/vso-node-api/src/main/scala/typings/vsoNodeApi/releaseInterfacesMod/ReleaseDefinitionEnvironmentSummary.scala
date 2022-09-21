@@ -25,7 +25,7 @@ object ReleaseDefinitionEnvironmentSummary {
     
     inline def setLastReleases(value: js.Array[ReleaseShallowReference]): Self = StObject.set(x, "lastReleases", value.asInstanceOf[js.Any])
     
-    inline def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = StObject.set(x, "lastReleases", js.Array(value :_*))
+    inline def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = StObject.set(x, "lastReleases", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

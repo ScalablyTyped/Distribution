@@ -19,7 +19,7 @@ trait AssociationExecution extends StObject {
   /**
     * The time the execution started.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Detailed status information about the execution.
@@ -34,7 +34,7 @@ trait AssociationExecution extends StObject {
   /**
     * The date of the last execution.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var LastExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An aggregate status of the resources in the execution based on the status type.
@@ -63,7 +63,7 @@ object AssociationExecution {
     
     inline def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -75,7 +75,7 @@ object AssociationExecution {
     
     inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    inline def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: js.Date): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     

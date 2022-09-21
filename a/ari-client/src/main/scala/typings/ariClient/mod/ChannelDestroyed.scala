@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object ChannelDestroyed {
     cause: Double,
     cause_txt: String,
     channel: Channel,
-    timestamp: Date,
+    timestamp: js.Date,
     `type`: String
   ): ChannelDestroyed = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], cause = cause.asInstanceOf[js.Any], cause_txt = cause_txt.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])

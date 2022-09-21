@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBucketOwnershipControlsOutput extends StObject {
   
   /**
-    * The OwnershipControls (BucketOwnerPreferred or ObjectWriter) currently in effect for this Amazon S3 bucket.
+    * The OwnershipControls (BucketOwnerEnforced, BucketOwnerPreferred, or ObjectWriter) currently in effect for this Amazon S3 bucket.
     */
   var OwnershipControls: js.UndefOr[typings.awsSdk.s3Mod.OwnershipControls] = js.undefined
 }

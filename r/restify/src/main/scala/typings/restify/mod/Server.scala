@@ -1,24 +1,44 @@
 package typings.restify.mod
 
-import typings.node.Buffer
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.spdy.mod.Server_
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Server
-  extends typings.node.httpMod.Server {
+  extends typings.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ] {
   
   /** List of content-types this server can respond with. */
   var acceptable: js.Array[String] = js.native
+  
+  /**
+    * Returns the server address. Wraps node's address().
+    */
+  def address(): AddressInterface = js.native
   
   var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   
   var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   
-  def close(callback: js.Function0[js.Any]): js.Any = js.native
+  /**
+    * Shuts down this server, and invokes callback (optionally) when done.
+    * Wraps node's close().
+    * @param     callback optional callback to invoke when done.
+    */
+  def close(): Any = js.native
+  def close(callback: js.Function0[Any]): Any = js.native
   
   /**
     * Mounts a chain on the given path against this HTTP verb
@@ -28,8 +48,8 @@ trait Server
     * @returns                the newly created route.
     */
   def del(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def del(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def del(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def del(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /** enable DTrace support */
   var dtrace: Boolean = js.native
@@ -45,13 +65,13 @@ trait Server
     * @returns                the newly created route.
     */
   def get(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def get(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def get(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def get(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /**
     * Return debug information about the server.
     */
-  def getDebugInfo(): js.Any = js.native
+  def getDebugInfo(): Any = js.native
   
   /** Handle uncaught exceptions */
   var handleUncaughtExceptions: Boolean = js.native
@@ -64,8 +84,8 @@ trait Server
     * @returns                the newly created route.
     */
   def head(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def head(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def head(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def head(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   var http2: js.UndefOr[Boolean] = js.native
   
@@ -87,7 +107,7 @@ trait Server
     * @throws   {TypeError}
     * @param     callback optionally get notified when listening.
     */
-  def listen(args: js.Any*): js.Any = js.native
+  def listen(args: Any*): Any = js.native
   
   /** bunyan instance. */
   var log: typings.bunyan.mod.^ = js.native
@@ -106,8 +126,8 @@ trait Server
     * @returns                the newly created route.
     */
   def opts(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def opts(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def opts(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def opts(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /**
     * Minimal port of the functionality offered by Express.js Route Param
@@ -139,8 +159,8 @@ trait Server
     * @returns                the newly created route.
     */
   def patch(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def patch(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def patch(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def patch(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /**
     * Mounts a chain on the given path against this HTTP verb
@@ -150,8 +170,8 @@ trait Server
     * @returns                the newly created route.
     */
   def post(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def post(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def post(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def post(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /**
     * Gives you hooks to run _before_ any routes are located.  This gives you
@@ -172,8 +192,8 @@ trait Server
     * @returns                the newly created route.
     */
   def put(opts: String, handlers: RequestHandlerType*): Route | Boolean = js.native
+  def put(opts: js.RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   def put(opts: RouteOptions, handlers: RequestHandlerType*): Route | Boolean = js.native
-  def put(opts: RegExp, handlers: RequestHandlerType*): Route | Boolean = js.native
   
   /**
     * Removes a route from the server.
@@ -190,7 +210,19 @@ trait Server
   var secure: js.UndefOr[Boolean] = js.native
   
   /** Node server instance */
-  var server: typings.node.httpMod.Server | typings.node.httpsMod.Server | Server_ = js.native
+  var server: (typings.node.httpMod.Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]) | (typings.node.httpsMod.Server[
+    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+    ]
+  ]) | Server_ = js.native
   
   var spdy: js.UndefOr[Boolean] = js.native
   

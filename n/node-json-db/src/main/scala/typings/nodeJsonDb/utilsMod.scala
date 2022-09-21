@@ -11,9 +11,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def merge(arrays: KeyValue*): KeyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(arrays.asInstanceOf[js.Any]).asInstanceOf[KeyValue]
+  inline def merge(arrays: KeyValue*): KeyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(arrays.asInstanceOf[Seq[js.Any]]*).asInstanceOf[KeyValue]
   
   inline def removeTrailingChar(dataPath: String, trailing: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTrailingChar")(dataPath.asInstanceOf[js.Any], trailing.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type KeyValue = StringDictionary[js.Any]
+  type KeyValue = StringDictionary[Any]
 }

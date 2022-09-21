@@ -9,13 +9,13 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     var `type`: Buffer
   }
   object Data {
     
-    inline def apply(data: js.Array[js.Any]): Data = {
+    inline def apply(data: js.Array[Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Buffer")
       __obj.asInstanceOf[Data]
@@ -23,9 +23,9 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setType(value: Buffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

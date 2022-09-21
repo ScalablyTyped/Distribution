@@ -10,6 +10,6 @@ object execMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def escapeshellarg(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeshellarg")().asInstanceOf[js.Any]
-  inline def escapeshellarg(arg: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeshellarg")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def escapeshellarg(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeshellarg")().asInstanceOf[Any]
+  inline def escapeshellarg(arg: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeshellarg")(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

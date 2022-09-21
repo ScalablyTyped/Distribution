@@ -11,14 +11,12 @@ Twilio Common JavaScript library
 | Full name          | twilio-common |
 | Keywords           | twilio, library, javascript |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 99751 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6576.666666666667 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://twilio.com)
-- [Bugs](https://github.com/twilio/twilio-common/issues)
-- [Repository](https://github.com/twilio/twilio-common)
 - [Npm](https://www.npmjs.com/package/twilio-common)
     
 

@@ -10,14 +10,14 @@ trait forminput
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("config")
   var config_forminput: forminputConfig = js.native
   
   def focus(): Unit = js.native
   
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   def getValue(): String = js.native
   
@@ -25,5 +25,5 @@ trait forminput
   
   def setBottomText(text: String): Unit = js.native
   
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
 }

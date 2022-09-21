@@ -31,7 +31,7 @@ trait ListBox
   def enable(element: Element): Unit = js.native
   def enable(element: Element, enable: Boolean): Unit = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   @JSName("options")
   var options_ListBox: ListBoxOptions = js.native
@@ -39,7 +39,7 @@ trait ListBox
   def refresh(): Unit = js.native
   
   def remove(element: String): Unit = js.native
-  def remove(element: js.Any): Unit = js.native
+  def remove(element: Any): Unit = js.native
   def remove(element: JQuery): Unit = js.native
   def remove(element: Element): Unit = js.native
   
@@ -48,7 +48,7 @@ trait ListBox
   def reorder(element: Element, index: Double): Unit = js.native
   
   def select(): JQuery = js.native
-  def select(items: js.Any): Unit = js.native
+  def select(items: Any): Unit = js.native
   def select(items: JQuery): Unit = js.native
   
   def setDataSource(dataSource: DataSource): Unit = js.native

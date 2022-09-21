@@ -7,14 +7,13 @@ import typings.openpgp.mod.packet.PublicSubkey
 import typings.openpgp.mod.packet.SecretKey
 import typings.openpgp.mod.packet.SecretSubkey
 import typings.openpgp.mod.packet.Signature
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "SubKey")
 @js.native
-class SubKey () extends StObject {
+open class SubKey () extends StObject {
   
   /**
     * Returns algorithm information
@@ -26,9 +25,9 @@ class SubKey () extends StObject {
     * Returns the creation time of the key
     * @returns
     */
-  def getCreationTime(): Date = js.native
+  def getCreationTime(): js.Date = js.native
   
-  def getExpirationTime(primaryKey: PublicKey, date: Date): js.Promise[Date | Infinity | Null] = js.native
+  def getExpirationTime(primaryKey: PublicKey, date: js.Date): js.Promise[js.Date | Infinity | Null] = js.native
   /**
     * Returns the expiration time of the subkey or Infinity if key does not expire
     * Returns null if the subkey is invalid.
@@ -36,7 +35,7 @@ class SubKey () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns
     */
-  def getExpirationTime(primaryKey: SecretKey, date: Date): js.Promise[Date | Infinity | Null] = js.native
+  def getExpirationTime(primaryKey: SecretKey, date: js.Date): js.Promise[js.Date | Infinity | Null] = js.native
   
   /**
     * Calculates the fingerprint of the key
@@ -62,11 +61,11 @@ class SubKey () extends StObject {
     */
   def isDecrypted(): Boolean | Null = js.native
   
-  def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, signature: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, signature: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, signature: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, signature: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, signature: Signature, key: SecretSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, signature: Signature, key: PublicKey, date: js.Date): js.Promise[Boolean] = js.native
   /**
     * Checks if a binding signature of a subkey is revoked
     * @param primaryKey The primary key packet
@@ -75,9 +74,9 @@ class SubKey () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns True if the binding signature is revoked
     */
-  def isRevoked(primaryKey: SecretKey, signature: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, signature: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretSubkey, date: js.Date): js.Promise[Boolean] = js.native
   
   /**
     * Revokes the subkey
@@ -88,7 +87,7 @@ class SubKey () extends StObject {
     * @param date optional, override the creationtime of the revocation signature
     * @returns new subkey with revocation signature
     */
-  def revoke(primaryKey: SecretKey, reasonForRevocation: revokeReasonForRevocation, date: Date): js.Promise[typings.openpgp.mod.key.SubKey] = js.native
+  def revoke(primaryKey: SecretKey, reasonForRevocation: revokeReasonForRevocation, date: js.Date): js.Promise[typings.openpgp.mod.key.SubKey] = js.native
   
   /**
     * Transforms structured subkey data to packetlist
@@ -105,7 +104,7 @@ class SubKey () extends StObject {
   def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[Unit] = js.native
   def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
   
-  def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
+  def verify(primaryKey: PublicKey, date: js.Date): js.Promise[keyStatus] = js.native
   /**
     * Verify subkey. Checks for revocation signatures, expiration time
     * and valid binding signature
@@ -113,5 +112,5 @@ class SubKey () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns The status of the subkey
     */
-  def verify(primaryKey: SecretKey, date: Date): js.Promise[keyStatus] = js.native
+  def verify(primaryKey: SecretKey, date: js.Date): js.Promise[keyStatus] = js.native
 }

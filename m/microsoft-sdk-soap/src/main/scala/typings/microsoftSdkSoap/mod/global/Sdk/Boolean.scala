@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Boolean")
 @js.native
-class Boolean protected () extends AttributeBase {
+open class Boolean protected () extends AttributeBase {
   /**
     * A Boolean Attribute.
     * @param name The logical name of the attribute .

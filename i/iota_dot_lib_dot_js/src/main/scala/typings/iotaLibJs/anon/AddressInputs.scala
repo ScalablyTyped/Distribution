@@ -23,6 +23,6 @@ object AddressInputs {
     
     inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
   }
 }

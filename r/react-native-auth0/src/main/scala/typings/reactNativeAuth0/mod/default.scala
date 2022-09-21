@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-auth0", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with Auth0 {
   def this(options: Options) = this()

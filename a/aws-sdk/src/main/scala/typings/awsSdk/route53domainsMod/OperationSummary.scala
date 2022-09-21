@@ -19,7 +19,7 @@ trait OperationSummary extends StObject {
   /**
     * The date when the request was submitted.
     */
-  var SubmittedDate: Timestamp
+  var SubmittedDate: js.Date
   
   /**
     * Type of the action requested.
@@ -28,7 +28,7 @@ trait OperationSummary extends StObject {
 }
 object OperationSummary {
   
-  inline def apply(OperationId: OperationId, Status: OperationStatus, SubmittedDate: Timestamp, Type: OperationType): OperationSummary = {
+  inline def apply(OperationId: OperationId, Status: OperationStatus, SubmittedDate: js.Date, Type: OperationType): OperationSummary = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], SubmittedDate = SubmittedDate.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationSummary]
   }
@@ -39,7 +39,7 @@ object OperationSummary {
     
     inline def setStatus(value: OperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setSubmittedDate(value: Timestamp): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
+    inline def setSubmittedDate(value: js.Date): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
     
     inline def setType(value: OperationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("web3-provider-engine", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Web3ProviderEngine {
     def this(options: Web3ProviderEngineOptions) = this()
@@ -25,7 +25,7 @@ object mod {
     extends StObject
        with Provider {
     
-    def addProvider(provider: js.Any): Unit = js.native
+    def addProvider(provider: Any): Unit = js.native
     
     def on(event: String, handler: js.Function0[Unit]): Unit = js.native
     
@@ -41,9 +41,9 @@ object mod {
   
   trait Web3ProviderEngineOptions extends StObject {
     
-    var blockTracker: js.UndefOr[js.Any] = js.undefined
+    var blockTracker: js.UndefOr[Any] = js.undefined
     
-    var blockTrackerProvider: js.UndefOr[js.Any] = js.undefined
+    var blockTrackerProvider: js.UndefOr[Any] = js.undefined
     
     var pollingInterval: js.UndefOr[Double] = js.undefined
   }
@@ -56,9 +56,9 @@ object mod {
     
     extension [Self <: Web3ProviderEngineOptions](x: Self) {
       
-      inline def setBlockTracker(value: js.Any): Self = StObject.set(x, "blockTracker", value.asInstanceOf[js.Any])
+      inline def setBlockTracker(value: Any): Self = StObject.set(x, "blockTracker", value.asInstanceOf[js.Any])
       
-      inline def setBlockTrackerProvider(value: js.Any): Self = StObject.set(x, "blockTrackerProvider", value.asInstanceOf[js.Any])
+      inline def setBlockTrackerProvider(value: Any): Self = StObject.set(x, "blockTrackerProvider", value.asInstanceOf[js.Any])
       
       inline def setBlockTrackerProviderUndefined: Self = StObject.set(x, "blockTrackerProvider", js.undefined)
       

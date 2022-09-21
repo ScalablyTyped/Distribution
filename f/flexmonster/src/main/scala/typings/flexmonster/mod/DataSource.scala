@@ -100,7 +100,7 @@ object DataSource {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEffectiveUserName(value: String): Self = StObject.set(x, "effectiveUserName", value.asInstanceOf[js.Any])
     
@@ -122,7 +122,7 @@ object DataSource {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value :_*))
+    inline def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value*))
     
     inline def setIgnoreQuotedLineBreaks(value: Boolean): Self = StObject.set(x, "ignoreQuotedLineBreaks", value.asInstanceOf[js.Any])
     

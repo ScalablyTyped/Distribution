@@ -29,7 +29,7 @@ trait LastCrawlInfo extends StObject {
   /**
     * The time at which the crawl started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Status of the last crawl.
@@ -61,7 +61,7 @@ object LastCrawlInfo {
     
     inline def setMessagePrefixUndefined: Self = StObject.set(x, "MessagePrefix", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

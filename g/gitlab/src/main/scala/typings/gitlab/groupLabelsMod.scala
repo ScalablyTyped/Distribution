@@ -10,7 +10,7 @@ object groupLabelsMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupLabels", "GroupLabels")
   @js.native
-  class GroupLabels protected () extends ResourceLabels {
+  open class GroupLabels protected () extends ResourceLabels {
     def this(options: BaseServiceOptions) = this()
   }
 }

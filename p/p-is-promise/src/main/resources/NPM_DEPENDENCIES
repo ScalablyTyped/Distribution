@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-is-promise" : "3.0.0"
+      "p-is-promise" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-is-promise" : "3.0.0"
+      "p-is-promise" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

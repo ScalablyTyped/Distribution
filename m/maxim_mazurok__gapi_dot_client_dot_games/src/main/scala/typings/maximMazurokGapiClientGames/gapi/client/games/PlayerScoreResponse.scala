@@ -40,7 +40,7 @@ object PlayerScoreResponse {
     
     inline def setBeatenScoreTimeSpansUndefined: Self = StObject.set(x, "beatenScoreTimeSpans", js.undefined)
     
-    inline def setBeatenScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "beatenScoreTimeSpans", js.Array(value :_*))
+    inline def setBeatenScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "beatenScoreTimeSpans", js.Array(value*))
     
     inline def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object PlayerScoreResponse {
     
     inline def setUnbeatenScoresUndefined: Self = StObject.set(x, "unbeatenScores", js.undefined)
     
-    inline def setUnbeatenScoresVarargs(value: PlayerScore*): Self = StObject.set(x, "unbeatenScores", js.Array(value :_*))
+    inline def setUnbeatenScoresVarargs(value: PlayerScore*): Self = StObject.set(x, "unbeatenScores", js.Array(value*))
   }
 }

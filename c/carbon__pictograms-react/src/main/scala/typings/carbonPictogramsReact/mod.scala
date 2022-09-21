@@ -76,6 +76,7 @@ import typings.carbonPictogramsReact.carbonPictogramsReactStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -111,6 +112,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
@@ -118,6 +120,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@carbon/pictograms-react", "AcceleratedComputing")
+  @js.native
+  val AcceleratedComputing: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AcceleratingTransformation")
+  @js.native
+  val AcceleratingTransformation: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AccessManagement")
+  @js.native
+  val AccessManagement: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ActiveServer")
   @js.native
@@ -131,13 +145,61 @@ object mod {
   @js.native
   val AddDocument: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "AdvancedFraudProtection")
+  @js.native
+  val AdvancedFraudProtection: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AdvancedThreats")
+  @js.native
+  val AdvancedThreats: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Advocate")
   @js.native
   val Advocate: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Agility")
+  @js.native
+  val Agility: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AgilityWithHybridMulticloud")
+  @js.native
+  val AgilityWithHybridMulticloud: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Agriculture")
   @js.native
   val Agriculture: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Ai")
+  @js.native
+  val Ai: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiEthics")
+  @js.native
+  val AiEthics: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiExplainability")
+  @js.native
+  val AiExplainability: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiPrivacy")
+  @js.native
+  val AiPrivacy: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiReady")
+  @js.native
+  val AiReady: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiRobustness")
+  @js.native
+  val AiRobustness: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiTransparency")
+  @js.native
+  val AiTransparency: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AiTrust")
+  @js.native
+  val AiTrust: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "AirConditioner")
   @js.native
@@ -158,10 +220,6 @@ object mod {
   @JSImport("@carbon/pictograms-react", "AlchemyLanguage")
   @js.native
   val AlchemyLanguage: CarbonPictogramType = js.native
-  
-  @JSImport("@carbon/pictograms-react", "AlchemyLanguageAlphabetAExpanded")
-  @js.native
-  val AlchemyLanguageAlphabetAExpanded: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "AlchemyVision")
   @js.native
@@ -191,6 +249,14 @@ object mod {
   @js.native
   val AnalyzesData: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "AnalyzingContainers")
+  @js.native
+  val AnalyzingContainers: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AnonymousUsers")
+  @js.native
+  val AnonymousUsers: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Apartment")
   @js.native
   val Apartment: CarbonPictogramType = js.native
@@ -211,13 +277,49 @@ object mod {
   @js.native
   val Application: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ApplicationSecurity")
+  @js.native
+  val ApplicationSecurity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Apps")
+  @js.native
+  val Apps: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Archive")
   @js.native
   val Archive: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ArgentinaObelisk")
+  @js.native
+  val ArgentinaObelisk: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ArtTools_01")
+  @js.native
+  val ArtTools01: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "AsiaAustralia")
   @js.native
   val AsiaAustralia: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AssessmentUsed")
+  @js.native
+  val AssessmentUsed: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Assets")
+  @js.native
+  val Assets: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Atlanta")
+  @js.native
+  val Atlanta: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AudioData")
+  @js.native
+  val AudioData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "AuditTrail")
+  @js.native
+  val AuditTrail: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "AugmentedReality")
   @js.native
@@ -231,6 +333,10 @@ object mod {
   @js.native
   val AutomateModularManagement: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Automated")
+  @js.native
+  val Automated: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "AutomationDecision")
   @js.native
   val AutomationDecision: CarbonPictogramType = js.native
@@ -239,9 +345,21 @@ object mod {
   @js.native
   val Automobile: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Availability")
+  @js.native
+  val Availability: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BabyBottle")
+  @js.native
+  val BabyBottle: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Backpack")
   @js.native
   val Backpack: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Badge")
+  @js.native
+  val Badge: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Bag")
   @js.native
@@ -250,6 +368,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Bangalore")
   @js.native
   val Bangalore: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Barcelona")
+  @js.native
+  val Barcelona: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Bee")
   @js.native
@@ -262,10 +384,6 @@ object mod {
   @JSImport("@carbon/pictograms-react", "BeijingTower")
   @js.native
   val BeijingTower: CarbonPictogramType = js.native
-  
-  @JSImport("@carbon/pictograms-react", "BerlinBrandenburg")
-  @js.native
-  val BerlinBrandenburg: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "BerlinBrandenburgGate")
   @js.native
@@ -283,6 +401,14 @@ object mod {
   @js.native
   val Bicycle: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "BigData")
+  @js.native
+  val BigData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BirthdayCake")
+  @js.native
+  val BirthdayCake: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Blender")
   @js.native
   val Blender: CarbonPictogramType = js.native
@@ -291,13 +417,53 @@ object mod {
   @js.native
   val Blockchain: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Bluepages")
+  @js.native
+  val Bluepages: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BostonZakimBridge")
+  @js.native
+  val BostonZakimBridge: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "BoxPlot")
   @js.native
   val BoxPlot: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Broom")
+  @js.native
+  val Broom: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Budapest")
+  @js.native
+  val Budapest: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BudapestCitadella")
+  @js.native
+  val BudapestCitadella: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BudapestLabSkyline")
+  @js.native
+  val BudapestLabSkyline: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BugVirusMalware")
+  @js.native
+  val BugVirusMalware: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Build")
   @js.native
   val Build: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BuildAndDeployPipeline")
+  @js.native
+  val BuildAndDeployPipeline: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BuildApplicationsAnywhere")
+  @js.native
+  val BuildApplicationsAnywhere: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BuildLeadershipAndCulture")
+  @js.native
+  val BuildLeadershipAndCulture: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Building")
   @js.native
@@ -311,9 +477,29 @@ object mod {
   @js.native
   val Bus: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "BusinessContinuity")
+  @js.native
+  val BusinessContinuity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "BusinessContinuity_02")
+  @js.native
+  val BusinessContinuity02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CLanguage")
+  @js.native
+  val CLanguage: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CPlusPlusLanguage")
+  @js.native
+  val CPlusPlusLanguage: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Cafe")
   @js.native
   val Cafe: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CairoGizaPlateau")
+  @js.native
+  val CairoGizaPlateau: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Calendar")
   @js.native
@@ -330,6 +516,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Camera")
   @js.native
   val Camera: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CanadaMapleLeaf")
+  @js.native
+  val CanadaMapleLeaf: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Capitol")
   @js.native
@@ -415,6 +605,10 @@ object mod {
   @js.native
   val ChartPie: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ChartQuadrantPlot")
+  @js.native
+  val ChartQuadrantPlot: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "ChartRadar")
   @js.native
   val ChartRadar: CarbonPictogramType = js.native
@@ -426,6 +620,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "ChartScatterplot")
   @js.native
   val ChartScatterplot: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ChartScreePlot")
+  @js.native
+  val ChartScreePlot: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ChartStepper")
   @js.native
@@ -439,6 +637,10 @@ object mod {
   @js.native
   val ChartTSne: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ChartTwoYAxis")
+  @js.native
+  val ChartTwoYAxis: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Cheese")
   @js.native
   val Cheese: CarbonPictogramType = js.native
@@ -446,6 +648,18 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Cherries")
   @js.native
   val Cherries: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Chicago")
+  @js.native
+  val Chicago: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ChileEasterIsland")
+  @js.native
+  val ChileEasterIsland: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ChileHandOfTheDesert")
+  @js.native
+  val ChileHandOfTheDesert: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ChipCircuit")
   @js.native
@@ -458,6 +672,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "ChipDebit")
   @js.native
   val ChipDebit: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ChooseHowToGetStarted")
+  @js.native
+  val ChooseHowToGetStarted: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CirclePacking")
   @js.native
@@ -511,13 +729,61 @@ object mod {
   @js.native
   val CloudGuidelines: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "CloudInfrastructureManagement")
+  @js.native
+  val CloudInfrastructureManagement: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "CloudManagedServices")
   @js.native
   val CloudManagedServices: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "CloudNative_01")
+  @js.native
+  val CloudNative01: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudNative_02")
+  @js.native
+  val CloudNative02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudNative_03")
+  @js.native
+  val CloudNative03: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "CloudOracle")
   @js.native
   val CloudOracle: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakFamily")
+  @js.native
+  val CloudPakFamily: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForApplications")
+  @js.native
+  val CloudPakForApplications: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForData")
+  @js.native
+  val CloudPakForData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForIntegration")
+  @js.native
+  val CloudPakForIntegration: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForMulticloudManagement")
+  @js.native
+  val CloudPakForMulticloudManagement: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForNetworkAutomation")
+  @js.native
+  val CloudPakForNetworkAutomation: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakForSecurity")
+  @js.native
+  val CloudPakForSecurity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPakSystem")
+  @js.native
+  val CloudPakSystem: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CloudPartners")
   @js.native
@@ -526,6 +792,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "CloudPlanning")
   @js.native
   val CloudPlanning: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CloudPlatform")
+  @js.native
+  val CloudPlatform: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CloudSap")
   @js.native
@@ -583,9 +853,21 @@ object mod {
   @js.native
   val CloudyWindy: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Cluster")
+  @js.native
+  val Cluster: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "CoatHanger")
   @js.native
   val CoatHanger: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CobolLanguage")
+  @js.native
+  val CobolLanguage: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Code")
+  @js.native
+  val Code: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CodeSyntax")
   @js.native
@@ -595,9 +877,25 @@ object mod {
   @js.native
   val CognosAnalytics: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "CollaborateWithTeams")
+  @js.native
+  val CollaborateWithTeams: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Collaboration")
+  @js.native
+  val Collaboration: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "College")
   @js.native
   val College: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ColombiaCathedralOfLasLajas")
+  @js.native
+  val ColombiaCathedralOfLasLajas: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ColorContrast")
+  @js.native
+  val ColorContrast: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CommercialFinancing_01")
   @js.native
@@ -607,6 +905,14 @@ object mod {
   @js.native
   val CommercialFinancing02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Compliant")
+  @js.native
+  val Compliant: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CompostBin")
+  @js.native
+  val CompostBin: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "ConceptExpansion")
   @js.native
   val ConceptExpansion: CarbonPictogramType = js.native
@@ -615,9 +921,29 @@ object mod {
   @js.native
   val ConceptInsights: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ConditionBuilder")
+  @js.native
+  val ConditionBuilder: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ConfidentialComputing")
+  @js.native
+  val ConfidentialComputing: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Connect")
   @js.native
   val Connect: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ConnectApplications")
+  @js.native
+  val ConnectApplications: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ConnectToCloud")
+  @js.native
+  val ConnectToCloud: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ConnectedDevices")
+  @js.native
+  val ConnectedDevices: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ConnectedEcosystem")
   @js.native
@@ -626,6 +952,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "ConnectedNodesToTheCloud")
   @js.native
   val ConnectedNodesToTheCloud: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Connectivity")
+  @js.native
+  val Connectivity: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Console")
   @js.native
@@ -643,13 +973,61 @@ object mod {
   @js.native
   val ConsumerEngagementFoodJourney: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Container")
+  @js.native
+  val Container: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ContainerMicroservices")
+  @js.native
+  val ContainerMicroservices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ContainerizedApplications")
+  @js.native
+  val ContainerizedApplications: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Containers")
+  @js.native
+  val Containers: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ContainersAndCloudNative")
+  @js.native
+  val ContainersAndCloudNative: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ContentDesign")
+  @js.native
+  val ContentDesign: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Continuous")
+  @js.native
+  val Continuous: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ContinuousSecurity")
+  @js.native
+  val ContinuousSecurity: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Contract")
   @js.native
   val Contract: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Control")
+  @js.native
+  val Control: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ControlPanel")
+  @js.native
+  val ControlPanel: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ControlsFramework")
+  @js.native
+  val ControlsFramework: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Conversation")
   @js.native
   val Conversation: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Cookie")
+  @js.native
+  val Cookie: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "CopenhagenPlanetarium")
   @js.native
@@ -671,21 +1049,69 @@ object mod {
   @js.native
   val Crop: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Cupcake")
+  @js.native
+  val Cupcake: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CustomReports")
+  @js.native
+  val CustomReports: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CustomWorkloads")
+  @js.native
+  val CustomWorkloads: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "CustomerService")
   @js.native
   val CustomerService: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Customizable")
+  @js.native
+  val Customizable: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Dashboard")
+  @js.native
+  val Dashboard: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataApis")
+  @js.native
+  val DataApis: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DataBackup")
   @js.native
   val DataBackup: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DataCenters")
+  @js.native
+  val DataCenters: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "DataInsights")
   @js.native
   val DataInsights: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DataPrivacy")
+  @js.native
+  val DataPrivacy: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataPrivacy_02")
+  @js.native
+  val DataPrivacy02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataPrivacyKey")
+  @js.native
+  val DataPrivacyKey: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "DataProcessing")
   @js.native
   val DataProcessing: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataProtectionDataSecurity")
+  @js.native
+  val DataProtectionDataSecurity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataSecurity")
+  @js.native
+  val DataSecurity: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DataSet")
   @js.native
@@ -694,6 +1120,18 @@ object mod {
   @JSImport("@carbon/pictograms-react", "DataStorage")
   @js.native
   val DataStorage: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DataTransfer")
+  @js.native
+  val DataTransfer: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DecisionVelocity")
+  @js.native
+  val DecisionVelocity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DeepLearning")
+  @js.native
+  val DeepLearning: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Delete")
   @js.native
@@ -707,6 +1145,14 @@ object mod {
   @js.native
   val DeliveryTruck: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DeployingContainers")
+  @js.native
+  val DeployingContainers: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Deployment")
+  @js.native
+  val Deployment: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "DesignAndDevelopment_01")
   @js.native
   val DesignAndDevelopment01: CarbonPictogramType = js.native
@@ -714,6 +1160,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "DesignAndDevelopment_02")
   @js.native
   val DesignAndDevelopment02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DesignLeadership")
+  @js.native
+  val DesignLeadership: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DesignResearch")
+  @js.native
+  val DesignResearch: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DesignThinkingTeam")
   @js.native
@@ -723,13 +1177,33 @@ object mod {
   @js.native
   val Desktop: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DetectAndStopAdvancingThreats")
+  @js.native
+  val DetectAndStopAdvancingThreats: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DeveloperTools")
+  @js.native
+  val DeveloperTools: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "DeveloperZOs")
   @js.native
   val DeveloperZOs: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DevicePairing")
+  @js.native
+  val DevicePairing: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DevicesAtIbm")
+  @js.native
+  val DevicesAtIbm: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Devops")
   @js.native
   val Devops: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DevopsToolchain")
+  @js.native
+  val DevopsToolchain: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Dialogue")
   @js.native
@@ -738,6 +1212,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Digital")
   @js.native
   val Digital: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DigitalId")
+  @js.native
+  val DigitalId: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DigitalTrust")
+  @js.native
+  val DigitalTrust: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Dining")
   @js.native
@@ -755,6 +1237,10 @@ object mod {
   @js.native
   val DoNot: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DoNot_02")
+  @js.native
+  val DoNot02: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Docker")
   @js.native
   val Docker: CarbonPictogramType = js.native
@@ -762,6 +1248,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Doctor")
   @js.native
   val Doctor: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "DoctorPatient")
+  @js.native
+  val DoctorPatient: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DocumentConversion")
   @js.native
@@ -771,13 +1261,13 @@ object mod {
   @js.native
   val DocumentSecurity: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Documentation")
+  @js.native
+  val Documentation: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "DoorHandle")
   @js.native
   val DoorHandle: CarbonPictogramType = js.native
-  
-  @JSImport("@carbon/pictograms-react", "Download")
-  @js.native
-  val Download: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Download_01")
   @js.native
@@ -787,9 +1277,13 @@ object mod {
   @js.native
   val Download02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "DownloadAlt")
+  @JSImport("@carbon/pictograms-react", "DragAndDropInterface")
   @js.native
-  val DownloadAlt: CarbonPictogramType = js.native
+  val DragAndDropInterface: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Dropper")
+  @js.native
+  val Dropper: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DubaiPalmIslands")
   @js.native
@@ -811,9 +1305,37 @@ object mod {
   @js.native
   val DuplicateFile: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "DynamicWorkloads")
+  @js.native
+  val DynamicWorkloads: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Earth")
+  @js.native
+  val Earth: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "EaseOfUse")
+  @js.native
+  val EaseOfUse: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Ecosystem")
+  @js.native
+  val Ecosystem: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "EcuadorQuito")
+  @js.native
+  val EcuadorQuito: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Edge")
+  @js.native
+  val Edge: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Education")
   @js.native
   val Education: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Efficient")
+  @js.native
+  val Efficient: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Electric")
   @js.native
@@ -827,6 +1349,10 @@ object mod {
   @js.native
   val ElectricCharge: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ElementsOfTheCloud")
+  @js.native
+  val ElementsOfTheCloud: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Elevator")
   @js.native
   val Elevator: CarbonPictogramType = js.native
@@ -835,21 +1361,33 @@ object mod {
   @js.native
   val Embed: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "EmergencyExit")
+  @js.native
+  val EmergencyExit: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "EmployeeInsights")
   @js.native
   val EmployeeInsights: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Encryption")
+  @js.native
+  val Encryption: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "EndpointProtection")
+  @js.native
+  val EndpointProtection: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Engine")
   @js.native
   val Engine: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "EnterpriseDesignThinking")
+  @JSImport("@carbon/pictograms-react", "EnterpriseDesignThinking_01")
   @js.native
-  val EnterpriseDesignThinking: CarbonPictogramType = js.native
+  val EnterpriseDesignThinking01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "EnterpriseDesignThinkingAlt")
+  @JSImport("@carbon/pictograms-react", "EnterpriseDesignThinking_02")
   @js.native
-  val EnterpriseDesignThinkingAlt: CarbonPictogramType = js.native
+  val EnterpriseDesignThinking02: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Envelope")
   @js.native
@@ -871,6 +1409,10 @@ object mod {
   @js.native
   val EuropeAfrica: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "EventDriven")
+  @js.native
+  val EventDriven: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "ExpandHorz")
   @js.native
   val ExpandHorz: CarbonPictogramType = js.native
@@ -883,9 +1425,9 @@ object mod {
   @js.native
   val ExpandVert: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Export")
+  @JSImport("@carbon/pictograms-react", "Expansion")
   @js.native
-  val Export: CarbonPictogramType = js.native
+  val Expansion: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Export_01")
   @js.native
@@ -895,13 +1437,25 @@ object mod {
   @js.native
   val Export02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "ExportAlt")
+  @JSImport("@carbon/pictograms-react", "ExtendTheDataCenter")
   @js.native
-  val ExportAlt: CarbonPictogramType = js.native
+  val ExtendTheDataCenter: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Extensible")
+  @js.native
+  val Extensible: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ExtractText")
+  @js.native
+  val ExtractText: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Eye")
   @js.native
   val Eye: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "EyewashStation")
+  @js.native
+  val EyewashStation: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "FaceDissatisfied")
   @js.native
@@ -927,9 +1481,9 @@ object mod {
   @js.native
   val Factory: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Farm")
+  @JSImport("@carbon/pictograms-react", "Fairness")
   @js.native
-  val Farm: CarbonPictogramType = js.native
+  val Fairness: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Farm_01")
   @js.native
@@ -947,13 +1501,25 @@ object mod {
   @js.native
   val Farmer02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Fast")
+  @js.native
+  val Fast: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FasterInnovationWithPartners")
+  @js.native
+  val FasterInnovationWithPartners: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Faucet")
   @js.native
   val Faucet: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Feedback")
+  @JSImport("@carbon/pictograms-react", "FaultTolerant")
   @js.native
-  val Feedback: CarbonPictogramType = js.native
+  val FaultTolerant: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Feedback_01")
+  @js.native
+  val Feedback01: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Feedback_02")
   @js.native
@@ -966,6 +1532,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "FileTransfer")
   @js.native
   val FileTransfer: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FilterAndGroupData")
+  @js.native
+  val FilterAndGroupData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FilterVariable")
+  @js.native
+  val FilterVariable: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "FinanceStrategy")
   @js.native
@@ -995,6 +1569,10 @@ object mod {
   @js.native
   val FireExtinguisher: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Firefighter")
+  @js.native
+  val Firefighter: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Firewall")
   @js.native
   val Firewall: CarbonPictogramType = js.native
@@ -1002,6 +1580,30 @@ object mod {
   @JSImport("@carbon/pictograms-react", "FirstAid")
   @js.native
   val FirstAid: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FlashStorage")
+  @js.native
+  val FlashStorage: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FlashingContent")
+  @js.native
+  val FlashingContent: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Flexibility")
+  @js.native
+  val Flexibility: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Flexibility_02")
+  @js.native
+  val Flexibility02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FlexibleCompute")
+  @js.native
+  val FlexibleCompute: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "FlexibleInfrastructure")
+  @js.native
+  val FlexibleInfrastructure: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "FlowChart")
   @js.native
@@ -1019,6 +1621,10 @@ object mod {
   @js.native
   val Flower02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "FocusOnCode")
+  @js.native
+  val FocusOnCode: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Fog")
   @js.native
   val Fog: CarbonPictogramType = js.native
@@ -1027,9 +1633,17 @@ object mod {
   @js.native
   val Folder: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Forecasting")
+  @js.native
+  val Forecasting: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Forklift")
   @js.native
   val Forklift: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Fragile")
+  @js.native
+  val Fragile: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "FreeTrial")
   @js.native
@@ -1039,9 +1653,21 @@ object mod {
   @js.native
   val Fuel: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "FullyManaged")
+  @js.native
+  val FullyManaged: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Gear")
   @js.native
   val Gear: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "GeographicFlexibility")
+  @js.native
+  val GeographicFlexibility: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "GetAheadOfRiskAndCompliance")
+  @js.native
+  val GetAheadOfRiskAndCompliance: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Gift")
   @js.native
@@ -1083,6 +1709,10 @@ object mod {
   @js.native
   val GlobalFinanceSterling: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "GlobalFootprint")
+  @js.native
+  val GlobalFootprint: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "GlobalMarkets")
   @js.native
   val GlobalMarkets: CarbonPictogramType = js.native
@@ -1119,9 +1749,25 @@ object mod {
   @js.native
   val GlobeLocations: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "GoLanguage")
+  @js.native
+  val GoLanguage: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Goals")
   @js.native
   val Goals: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "GovernUsersAndIdentities")
+  @js.native
+  val GovernUsersAndIdentities: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "GraphicIntensiveWorkloads")
+  @js.native
+  val GraphicIntensiveWorkloads: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "GreenEnergy")
+  @js.native
+  val GreenEnergy: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Group")
   @js.native
@@ -1130,6 +1776,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Growth")
   @js.native
   val Growth: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Guitar")
+  @js.native
+  val Guitar: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Hail")
   @js.native
@@ -1142,6 +1792,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "HailMixed")
   @js.native
   val HailMixed: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HamburgPhilharmone")
+  @js.native
+  val HamburgPhilharmone: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Handicap")
   @js.native
@@ -1179,17 +1833,37 @@ object mod {
   @js.native
   val HeartHealth: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "HeatMap")
+  @JSImport("@carbon/pictograms-react", "HeatMap_01")
   @js.native
-  val HeatMap: CarbonPictogramType = js.native
+  val HeatMap01: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "HeatMap_02")
   @js.native
   val HeatMap02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "HelpDesk")
+  @js.native
+  val HelpDesk: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "HighFive")
   @js.native
   val HighFive: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HighPerformance")
+  @js.native
+  val HighPerformance: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HighRiskUsers")
+  @js.native
+  val HighRiskUsers: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HighVolumeData")
+  @js.native
+  val HighVolumeData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HighlyAvailable")
+  @js.native
+  val HighlyAvailable: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Hills")
   @js.native
@@ -1207,9 +1881,21 @@ object mod {
   @js.native
   val HomeProfile: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "HongKong")
+  @js.native
+  val HongKong: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HongKongCityscape")
+  @js.native
+  val HongKongCityscape: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Hospital")
   @js.native
   val Hospital: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Hpi")
+  @js.native
+  val Hpi: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Humid")
   @js.native
@@ -1223,9 +1909,21 @@ object mod {
   @js.native
   val HybridCloud: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "HybridCloud_02")
+  @js.native
+  val HybridCloud02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "HybridCloudInfrastructure")
+  @js.native
+  val HybridCloudInfrastructure: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "HybridCloudServices")
   @js.native
   val HybridCloudServices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmAutomationPlatform")
+  @js.native
+  val IbmAutomationPlatform: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "IbmCloud")
   @js.native
@@ -1235,13 +1933,41 @@ object mod {
   @js.native
   val IbmIx: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "IbmWatson")
+  @JSImport("@carbon/pictograms-react", "IbmRpa")
   @js.native
-  val IbmWatson: CarbonPictogramType = js.native
+  val IbmRpa: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "IbmZ")
   @js.native
   val IbmZ: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZ16")
+  @js.native
+  val IbmZ16: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZ16MultiFrame")
+  @js.native
+  val IbmZ16MultiFrame: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZ16PlusCloud")
+  @js.native
+  val IbmZ16PlusCloud: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZ16SingleFrame")
+  @js.native
+  val IbmZ16SingleFrame: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZAndLinuxoneMultiFrame")
+  @js.native
+  val IbmZAndLinuxoneMultiFrame: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZAndLinuxoneSingleFrame")
+  @js.native
+  val IbmZAndLinuxoneSingleFrame: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IbmZPartition")
+  @js.native
+  val IbmZPartition: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "IdBadge")
   @js.native
@@ -1255,6 +1981,30 @@ object mod {
   @js.native
   val Ideate: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "IdentifyAndAccess")
+  @js.native
+  val IdentifyAndAccess: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IdentifyAndResolveIssues")
+  @js.native
+  val IdentifyAndResolveIssues: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IdentityTrustAssessment")
+  @js.native
+  val IdentityTrustAssessment: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "IndiaSouthAsia")
+  @js.native
+  val IndiaSouthAsia: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "InfrastructureSecurity")
+  @js.native
+  val InfrastructureSecurity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "InnerSource")
+  @js.native
+  val InnerSource: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Innovate")
   @js.native
   val Innovate: CarbonPictogramType = js.native
@@ -1267,9 +2017,17 @@ object mod {
   @js.native
   val InspectData: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Insurance")
+  @js.native
+  val Insurance: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Integration")
   @js.native
   val Integration: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Integration_02")
+  @js.native
+  val Integration02: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Intelligence")
   @js.native
@@ -1279,9 +2037,17 @@ object mod {
   @js.native
   val Intercom: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Invoice")
+  @js.native
+  val Invoice: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "IotMunich")
   @js.native
   val IotMunich: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ItInfrastructureSoftware")
+  @js.native
+  val ItInfrastructureSoftware: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Java")
   @js.native
@@ -1291,21 +2057,45 @@ object mod {
   @js.native
   val Javascript: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Juice")
+  @js.native
+  val Juice: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Justice")
   @js.native
   val Justice: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "KeepDry")
+  @js.native
+  val KeepDry: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "KeepYourOwnKey")
+  @js.native
+  val KeepYourOwnKey: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "KeyUsers")
   @js.native
   val KeyUsers: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Keyboard")
+  @js.native
+  val Keyboard: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "KnowsDarkData")
   @js.native
   val KnowsDarkData: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Language")
+  @JSImport("@carbon/pictograms-react", "KualaLumpur")
   @js.native
-  val Language: CarbonPictogramType = js.native
+  val KualaLumpur: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Kubernetes")
+  @js.native
+  val Kubernetes: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "KubernetesPod")
+  @js.native
+  val KubernetesPod: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Language_01")
   @js.native
@@ -1323,17 +2113,25 @@ object mod {
   @js.native
   val Language04: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Language_05")
+  @js.native
+  val Language05: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "LanguageTranslation")
   @js.native
   val LanguageTranslation: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "LanguageTranslationAlphabetAExpanded")
-  @js.native
-  val LanguageTranslationAlphabetAExpanded: CarbonPictogramType = js.native
-  
   @JSImport("@carbon/pictograms-react", "Launch")
   @js.native
   val Launch: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Leader")
+  @js.native
+  val Leader: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "LiftAndShift")
+  @js.native
+  val LiftAndShift: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Lightning")
   @js.native
@@ -1351,21 +2149,21 @@ object mod {
   @js.native
   val Location: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Lock")
+  @JSImport("@carbon/pictograms-react", "Lock_01")
   @js.native
-  val Lock: CarbonPictogramType = js.native
+  val Lock01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "LockAlt")
+  @JSImport("@carbon/pictograms-react", "Lock_02")
   @js.native
-  val LockAlt: CarbonPictogramType = js.native
+  val Lock02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "LockedNetwork")
+  @JSImport("@carbon/pictograms-react", "LockedNetwork_01")
   @js.native
-  val LockedNetwork: CarbonPictogramType = js.native
+  val LockedNetwork01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "LockedNetworkAlt")
+  @JSImport("@carbon/pictograms-react", "LockedNetwork_02")
   @js.native
-  val LockedNetworkAlt: CarbonPictogramType = js.native
+  val LockedNetwork02: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "London")
   @js.native
@@ -1375,13 +2173,17 @@ object mod {
   @js.native
   val LondonBigBen: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "LondonExpandedBase")
-  @js.native
-  val LondonExpandedBase: CarbonPictogramType = js.native
-  
   @JSImport("@carbon/pictograms-react", "Love")
   @js.native
   val Love: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "LoweringRisk")
+  @js.native
+  val LoweringRisk: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Luggage")
+  @js.native
+  val Luggage: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Lungs")
   @js.native
@@ -1411,6 +2213,10 @@ object mod {
   @js.native
   val MachineLearning06: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "MachineLearning_07")
+  @js.native
+  val MachineLearning07: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "MadridCathedral")
   @js.native
   val MadridCathedral: CarbonPictogramType = js.native
@@ -1427,6 +2233,18 @@ object mod {
   @js.native
   val Magnify: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "MailVerse")
+  @js.native
+  val MailVerse: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ManageApplicationsAnywhere")
+  @js.native
+  val ManageApplicationsAnywhere: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ManagingContainers")
+  @js.native
+  val ManagingContainers: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "ManagingContractualFlow")
   @js.native
   val ManagingContractualFlow: CarbonPictogramType = js.native
@@ -1442,6 +2260,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Mas")
   @js.native
   val Mas: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "MasterThreatHunting")
+  @js.native
+  val MasterThreatHunting: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "MathCurve")
   @js.native
@@ -1483,6 +2305,10 @@ object mod {
   @js.native
   val Microorganisms: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Microphone")
+  @js.native
+  val Microphone: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Microscope")
   @js.native
   val Microscope: CarbonPictogramType = js.native
@@ -1514,6 +2340,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "MobilePhone")
   @js.native
   val MobilePhone: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Modernize")
+  @js.native
+  val Modernize: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Monitor")
+  @js.native
+  val Monitor: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "MonitoredItemOnConveyor")
   @js.native
@@ -1579,9 +2413,21 @@ object mod {
   @js.native
   val Network: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "NetworkOfDevices")
+  @js.native
+  val NetworkOfDevices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NetworkProtection")
+  @js.native
+  val NetworkProtection: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "NetworkServices")
   @js.native
   val NetworkServices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NetworkTraffic")
+  @js.native
+  val NetworkTraffic: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Networking_01")
   @js.native
@@ -1607,6 +2453,14 @@ object mod {
   @js.native
   val Networking06: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "NewFinancialCustomerExperiences")
+  @js.native
+  val NewFinancialCustomerExperiences: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NewRevenueStreams")
+  @js.native
+  val NewRevenueStreams: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Nice")
   @js.native
   val Nice: CarbonPictogramType = js.native
@@ -1615,17 +2469,37 @@ object mod {
   @js.native
   val NightClear: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "NoSmoking")
+  @js.native
+  val NoSmoking: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Notifications")
+  @js.native
+  val Notifications: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "NycBrooklyn")
   @js.native
   val NycBrooklyn: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "NycManhattan")
+  @JSImport("@carbon/pictograms-react", "NycChryslerBuilding")
   @js.native
-  val NycManhattan: CarbonPictogramType = js.native
+  val NycChryslerBuilding: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "NycManhattanAlt")
+  @JSImport("@carbon/pictograms-react", "NycManhattan_01")
   @js.native
-  val NycManhattanAlt: CarbonPictogramType = js.native
+  val NycManhattan01: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NycManhattan_02")
+  @js.native
+  val NycManhattan02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NycStatueOfLiberty")
+  @js.native
+  val NycStatueOfLiberty: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "NycWorldTradeCenter")
+  @js.native
+  val NycWorldTradeCenter: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Office")
   @js.native
@@ -1639,6 +2513,42 @@ object mod {
   @js.native
   val OilRig: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Okinawa")
+  @js.native
+  val Okinawa: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OnPremise")
+  @js.native
+  val OnPremise: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OnPremiseToCloud")
+  @js.native
+  val OnPremiseToCloud: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OpenSource")
+  @js.native
+  val OpenSource: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OperateOffline")
+  @js.native
+  val OperateOffline: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OperatingSystem")
+  @js.native
+  val OperatingSystem: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OperationalEfficiency")
+  @js.native
+  val OperationalEfficiency: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "OperationalMetrics")
+  @js.native
+  val OperationalMetrics: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Optimize")
+  @js.native
+  val Optimize: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "OptimizeCashFlow_01")
   @js.native
   val OptimizeCashFlow01: CarbonPictogramType = js.native
@@ -1647,13 +2557,37 @@ object mod {
   @js.native
   val OptimizeCashFlow02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Organization")
+  @js.native
+  val Organization: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Overcast")
   @js.native
   val Overcast: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Overview")
+  @js.native
+  val Overview: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "PaperClip")
   @js.native
   val PaperClip: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ParisArcDeTriomphe")
+  @js.native
+  val ParisArcDeTriomphe: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ParisLouvre")
+  @js.native
+  val ParisLouvre: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ParisNotreDame")
+  @js.native
+  val ParisNotreDame: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ParisPompidouCenter")
+  @js.native
+  val ParisPompidouCenter: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Parliament")
   @js.native
@@ -1663,6 +2597,10 @@ object mod {
   @js.native
   val PartnerRelationship: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Partnership")
+  @js.native
+  val Partnership: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Path")
   @js.native
   val Path: CarbonPictogramType = js.native
@@ -1670,6 +2608,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Pattern")
   @js.native
   val Pattern: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PayForWhatYouUse")
+  @js.native
+  val PayForWhatYouUse: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Perfume")
   @js.native
@@ -1715,9 +2657,17 @@ object mod {
   @js.native
   val PersonalityInsights: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "PeruMachuPicchu")
+  @js.native
+  val PeruMachuPicchu: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "PetriCulture")
   @js.native
   val PetriCulture: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PhpLanguage")
+  @js.native
+  val PhpLanguage: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "PillBottle_01")
   @js.native
@@ -1735,6 +2685,10 @@ object mod {
   @js.native
   val PlayerFlow: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "PliLanguage")
+  @js.native
+  val PliLanguage: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Podcast")
   @js.native
   val Podcast: CarbonPictogramType = js.native
@@ -1747,13 +2701,41 @@ object mod {
   @js.native
   val PopulationDiagram: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "PortlandBuilding")
+  @js.native
+  val PortlandBuilding: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Power")
   @js.native
   val Power: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "PragueCharlesBridgeTower")
+  @js.native
+  val PragueCharlesBridgeTower: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PragueDancingHouse_01")
+  @js.native
+  val PragueDancingHouse01: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PragueDancingHouse_02")
+  @js.native
+  val PragueDancingHouse02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Predictability")
+  @js.native
+  val Predictability: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PredictiveAnalytics")
+  @js.native
+  val PredictiveAnalytics: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Pregnant")
   @js.native
   val Pregnant: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Prescription")
+  @js.native
+  val Prescription: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Presentation")
   @js.native
@@ -1771,29 +2753,49 @@ object mod {
   @js.native
   val Printer: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "PrivateNetwork")
-  @js.native
-  val PrivateNetwork: CarbonPictogramType = js.native
-  
   @JSImport("@carbon/pictograms-react", "PrivateNetwork_01")
   @js.native
   val PrivateNetwork01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "PrivateNetworkAlt")
+  @JSImport("@carbon/pictograms-react", "PrivateNetwork_02")
   @js.native
-  val PrivateNetworkAlt: CarbonPictogramType = js.native
+  val PrivateNetwork02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "PrivateNetworkAlt_01")
+  @JSImport("@carbon/pictograms-react", "PrivateNetwork_03")
   @js.native
-  val PrivateNetworkAlt01: CarbonPictogramType = js.native
+  val PrivateNetwork03: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PrivateNetwork_04")
+  @js.native
+  val PrivateNetwork04: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Process")
   @js.native
   val Process: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Productivity")
+  @js.native
+  val Productivity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ProfessionalMarketplace")
+  @js.native
+  val ProfessionalMarketplace: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Progress")
   @js.native
   val Progress: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ProtectCriticalAssets")
+  @js.native
+  val ProtectCriticalAssets: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ProvenTechnology")
+  @js.native
+  val ProvenTechnology: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "PublicCloudToPrivateCloud")
+  @js.native
+  val PublicCloudToPrivateCloud: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Puzzle")
   @js.native
@@ -1807,6 +2809,14 @@ object mod {
   @js.native
   val QrCode: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "QuantumComputing")
+  @js.native
+  val QuantumComputing: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "QuantumSafe")
+  @js.native
+  val QuantumSafe: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Question")
   @js.native
   val Question: CarbonPictogramType = js.native
@@ -1814,6 +2824,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "QuestionAndAnswer")
   @js.native
   val QuestionAndAnswer: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RLanguage")
+  @js.native
+  val RLanguage: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Racetrack")
   @js.native
@@ -1827,9 +2841,29 @@ object mod {
   @js.native
   val RainyHeavy: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "RaleighNc")
+  @js.native
+  val RaleighNc: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RandomSamples")
+  @js.native
+  val RandomSamples: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Rank")
   @js.native
   val Rank: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ReactToData")
+  @js.native
+  val ReactToData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ReadOnly")
+  @js.native
+  val ReadOnly: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RealTime")
+  @js.native
+  val RealTime: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Receipt")
   @js.native
@@ -1838,6 +2872,22 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Recycle")
   @js.native
   val Recycle: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RecycleBin")
+  @js.native
+  val RecycleBin: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RedHatApplications")
+  @js.native
+  val RedHatApplications: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RedefiningFinancialServices")
+  @js.native
+  val RedefiningFinancialServices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ReducingCost")
+  @js.native
+  val ReducingCost: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Refinery")
   @js.native
@@ -1854,6 +2904,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "RelationshipExtraction")
   @js.native
   val RelationshipExtraction: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Reliability")
+  @js.native
+  val Reliability: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Reliability_02")
+  @js.native
+  val Reliability02: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Renew")
   @js.native
@@ -1887,6 +2945,18 @@ object mod {
   @js.native
   val ResetSettings: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Resilience")
+  @js.native
+  val Resilience: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ResourceHealth")
+  @js.native
+  val ResourceHealth: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Resources")
+  @js.native
+  val Resources: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "RetrieveAndRank")
   @js.native
   val RetrieveAndRank: CarbonPictogramType = js.native
@@ -1894,6 +2964,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "RichTextFormat")
   @js.native
   val RichTextFormat: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "RioDeJaneiro")
+  @js.native
+  val RioDeJaneiro: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Robot")
   @js.native
@@ -1903,13 +2977,29 @@ object mod {
   @js.native
   val Robotics: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "RockOn")
+  @js.native
+  val RockOn: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Rocket")
+  @js.native
+  val Rocket: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Rome")
   @js.native
   val Rome: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "RotateDevice")
+  @js.native
+  val RotateDevice: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "SaasEnablement")
   @js.native
   val SaasEnablement: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SalesConnect")
+  @js.native
+  val SalesConnect: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "SampleFile")
   @js.native
@@ -1927,9 +3017,9 @@ object mod {
   @js.native
   val SaoPaulo: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "SaoPauloExpandedBase")
+  @JSImport("@carbon/pictograms-react", "SapHana")
   @js.native
-  val SaoPauloExpandedBase: CarbonPictogramType = js.native
+  val SapHana: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Satellite")
   @js.native
@@ -1939,9 +3029,21 @@ object mod {
   @js.native
   val SatelliteDish: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "SaveTime")
+  @js.native
+  val SaveTime: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Scale")
   @js.native
   val Scale: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Scale_02")
+  @js.native
+  val Scale02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ScalingContainers")
+  @js.native
+  val ScalingContainers: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ScatterMatrix")
   @js.native
@@ -1955,25 +3057,73 @@ object mod {
   @js.native
   val SecureData: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "SecureHybridCloud")
+  @js.native
+  val SecureHybridCloud: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "SecureProfile")
   @js.native
   val SecureProfile: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SecureSearch")
+  @js.native
+  val SecureSearch: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Security")
   @js.native
   val Security: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Security_02")
+  @js.native
+  val Security02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SecurityAsAService")
+  @js.native
+  val SecurityAsAService: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SecurityHygiene")
+  @js.native
+  val SecurityHygiene: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SecurityIntelligence")
+  @js.native
+  val SecurityIntelligence: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "SecurityShield")
   @js.native
   val SecurityShield: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SelectProduct")
+  @js.native
+  val SelectProduct: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SelectRange")
+  @js.native
+  val SelectRange: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SeoulGyeongbokgungPalace")
+  @js.native
+  val SeoulGyeongbokgungPalace: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ServerOperatingSystems")
+  @js.native
+  val ServerOperatingSystems: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "ServerRack")
   @js.native
   val ServerRack: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Serverless")
+  @js.native
+  val Serverless: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Servers")
   @js.native
   val Servers: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SharingData")
+  @js.native
+  val SharingData: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Shirt")
   @js.native
@@ -1999,9 +3149,17 @@ object mod {
   @js.native
   val SingleSignOn: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Slack")
+  @js.native
+  val Slack: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Slider")
   @js.native
   val Slider: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SmallComponentsMakingALargerWhole")
+  @js.native
+  val SmallComponentsMakingALargerWhole: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Sneaker")
   @js.native
@@ -2010,6 +3168,18 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Snow")
   @js.native
   val Snow: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SocialWork_01")
+  @js.native
+  val SocialWork01: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SocialWork_02")
+  @js.native
+  val SocialWork02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "SocialWorker")
+  @js.native
+  val SocialWorker: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Socks")
   @js.native
@@ -2043,10 +3213,6 @@ object mod {
   @js.native
   val Speech: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "SpeechAlphabetAExpanded")
-  @js.native
-  val SpeechAlphabetAExpanded: CarbonPictogramType = js.native
-  
   @JSImport("@carbon/pictograms-react", "SpeechToText")
   @js.native
   val SpeechToText: CarbonPictogramType = js.native
@@ -2059,9 +3225,33 @@ object mod {
   @js.native
   val Sports: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Sprout")
+  @js.native
+  val Sprout: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StackLimitation")
+  @js.native
+  val StackLimitation: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Stairs")
+  @js.native
+  val Stairs: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StairsDown")
+  @js.native
+  val StairsDown: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "StairsPlanView")
   @js.native
   val StairsPlanView: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StairsUp")
+  @js.native
+  val StairsUp: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StartForFree")
+  @js.native
+  val StartForFree: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "StationaryBicycle")
   @js.native
@@ -2083,9 +3273,25 @@ object mod {
   @js.native
   val Stethoscope: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Stockholm")
+  @js.native
+  val Stockholm: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StorageAreaNetworks")
+  @js.native
+  val StorageAreaNetworks: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StorageProduct")
+  @js.native
+  val StorageProduct: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Strategy")
   @js.native
   val Strategy: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StrategyAndRisk")
+  @js.native
+  val StrategyAndRisk: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "StrategyDirect")
   @js.native
@@ -2099,9 +3305,21 @@ object mod {
   @js.native
   val StrategyPlay: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "StreamingData")
+  @js.native
+  val StreamingData: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Streamline")
   @js.native
   val Streamline: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "StreamlineOperations")
+  @js.native
+  val StreamlineOperations: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Subsecond")
+  @js.native
+  val Subsecond: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Summit")
   @js.native
@@ -2123,9 +3341,17 @@ object mod {
   @js.native
   val SupplyChainOptimization02: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Support")
+  @js.native
+  val Support: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "SupportServices")
   @js.native
   val SupportServices: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Sustainability")
+  @js.native
+  val Sustainability: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "SwipeLeft")
   @js.native
@@ -2134,6 +3360,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "SwipeRight")
   @js.native
   val SwipeRight: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Synergy")
+  @js.native
+  val Synergy: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "SystemsDevopsAnalyze")
   @js.native
@@ -2179,9 +3409,25 @@ object mod {
   @js.native
   val TShirt: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "TabletDevice")
+  @js.native
+  val TabletDevice: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TabletDeviceCheck")
+  @js.native
+  val TabletDeviceCheck: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Tags")
   @js.native
   val Tags: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TaipeiBubbleTea")
+  @js.native
+  val TaipeiBubbleTea: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TapeStorage")
+  @js.native
+  val TapeStorage: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Target")
   @js.native
@@ -2191,6 +3437,10 @@ object mod {
   @js.native
   val TargetArea: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Teacher")
+  @js.native
+  val Teacher: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "TeamAlignment")
   @js.native
   val TeamAlignment: CarbonPictogramType = js.native
@@ -2199,6 +3449,10 @@ object mod {
   @js.native
   val Teammates: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "TechnicalOwner")
+  @js.native
+  val TechnicalOwner: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "TelAviv")
   @js.native
   val TelAviv: CarbonPictogramType = js.native
@@ -2206,6 +3460,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Telecom")
   @js.native
   val Telecom: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Telemedicine")
+  @js.native
+  val Telemedicine: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TelemedicineMobile")
+  @js.native
+  val TelemedicineMobile: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Telephone")
   @js.native
@@ -2223,6 +3485,10 @@ object mod {
   @js.native
   val TemperatureLow: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "TemporaryBadge")
+  @js.native
+  val TemporaryBadge: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Tennis")
   @js.native
   val Tennis: CarbonPictogramType = js.native
@@ -2231,9 +3497,33 @@ object mod {
   @js.native
   val TestTubes: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "TextData")
+  @js.native
+  val TextData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TextEquivalent")
+  @js.native
+  val TextEquivalent: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TextInput")
+  @js.native
+  val TextInput: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TextLayout")
+  @js.native
+  val TextLayout: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "TextToSpeech")
   @js.native
   val TextToSpeech: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ThisSideUp")
+  @js.native
+  val ThisSideUp: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ThreatManagement")
+  @js.native
+  val ThreatManagement: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Time")
   @js.native
@@ -2270,6 +3560,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "ToneAnalyzer")
   @js.native
   val ToneAnalyzer: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "ToolOverload")
+  @js.native
+  val ToolOverload: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Tools")
   @js.native
@@ -2315,6 +3609,10 @@ object mod {
   @js.native
   val Train: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Training")
+  @js.native
+  val Training: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "TransactionalBlockchain")
   @js.native
   val TransactionalBlockchain: CarbonPictogramType = js.native
@@ -2323,9 +3621,17 @@ object mod {
   @js.native
   val TransactionalTrust: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Transform")
+  @JSImport("@carbon/pictograms-react", "Transform_01")
   @js.native
-  val Transform: CarbonPictogramType = js.native
+  val Transform01: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Transform_02")
+  @js.native
+  val Transform02: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TransformData")
+  @js.native
+  val TransformData: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Transparency_01")
   @js.native
@@ -2339,6 +3645,10 @@ object mod {
   @js.native
   val Trash: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Tree")
+  @js.native
+  val Tree: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "TreeDiagram")
   @js.native
   val TreeDiagram: CarbonPictogramType = js.native
@@ -2346,6 +3656,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "TreeMap")
   @js.native
   val TreeMap: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Troubleshooting")
+  @js.native
+  val Troubleshooting: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Trousers")
   @js.native
@@ -2355,21 +3669,49 @@ object mod {
   @js.native
   val Trust: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Trusted")
+  @js.native
+  val Trusted: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TrustedUser")
+  @js.native
+  val TrustedUser: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "TwoPersonLift")
+  @js.native
+  val TwoPersonLift: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UnauthorizedUserAccess")
+  @js.native
+  val UnauthorizedUserAccess: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UnderUtilizedSecurity")
+  @js.native
+  val UnderUtilizedSecurity: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UnifyEndpointManagement")
+  @js.native
+  val UnifyEndpointManagement: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UniversalExperiences")
+  @js.native
+  val UniversalExperiences: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "University")
   @js.native
   val University: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Unlock")
+  @JSImport("@carbon/pictograms-react", "Unlock_01")
   @js.native
-  val Unlock: CarbonPictogramType = js.native
+  val Unlock01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "UnlockAlt")
+  @JSImport("@carbon/pictograms-react", "Unlock_02")
   @js.native
-  val UnlockAlt: CarbonPictogramType = js.native
+  val Unlock02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Upload")
+  @JSImport("@carbon/pictograms-react", "UnstructuredData")
   @js.native
-  val Upload: CarbonPictogramType = js.native
+  val UnstructuredData: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Upload_01")
   @js.native
@@ -2379,9 +3721,17 @@ object mod {
   @js.native
   val Upload02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "UploadAlt")
+  @JSImport("@carbon/pictograms-react", "UruguayPalacioSalvo")
   @js.native
-  val UploadAlt: CarbonPictogramType = js.native
+  val UruguayPalacioSalvo: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UruguaySolDeMayo")
+  @js.native
+  val UruguaySolDeMayo: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UseTheLanguageOfYourChoice")
+  @js.native
+  val UseTheLanguageOfYourChoice: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "User")
   @js.native
@@ -2390,6 +3740,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "UserAnalytics")
   @js.native
   val UserAnalytics: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "UserExperienceDesign")
+  @js.native
+  val UserExperienceDesign: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "UserInsights")
   @js.native
@@ -2411,9 +3765,9 @@ object mod {
   @js.native
   val Vancouver: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Video")
+  @JSImport("@carbon/pictograms-react", "VenezuelaNationalPantheonOfVenezuela")
   @js.native
-  val Video: CarbonPictogramType = js.native
+  val VenezuelaNationalPantheonOfVenezuela: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Video_01")
   @js.native
@@ -2423,10 +3777,6 @@ object mod {
   @js.native
   val Video02: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "VideoAlt")
-  @js.native
-  val VideoAlt: CarbonPictogramType = js.native
-  
   @JSImport("@carbon/pictograms-react", "VideoChat")
   @js.native
   val VideoChat: CarbonPictogramType = js.native
@@ -2435,13 +3785,49 @@ object mod {
   @js.native
   val VideoPlay: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ViewGraphsAndDashboard")
+  @js.native
+  val ViewGraphsAndDashboard: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "VirtualServer")
+  @js.native
+  val VirtualServer: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "VirtualStorage")
+  @js.native
+  val VirtualStorage: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Virtualization")
+  @js.native
+  val Virtualization: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Virtualization_02")
+  @js.native
+  val Virtualization02: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Virus")
   @js.native
   val Virus: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Visibility")
+  @js.native
+  val Visibility: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Vision")
   @js.native
   val Vision: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Visionary")
+  @js.native
+  val Visionary: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "VisualData")
+  @js.native
+  val VisualData: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "VisualDesign")
+  @js.native
+  val VisualDesign: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "VisualInsights")
   @js.native
@@ -2451,13 +3837,13 @@ object mod {
   @js.native
   val VisualRecognition: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "Warning")
+  @JSImport("@carbon/pictograms-react", "Warning_01")
   @js.native
-  val Warning: CarbonPictogramType = js.native
+  val Warning01: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "WarningAlt")
+  @JSImport("@carbon/pictograms-react", "Warning_02")
   @js.native
-  val WarningAlt: CarbonPictogramType = js.native
+  val Warning02: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Washer")
   @js.native
@@ -2475,9 +3861,9 @@ object mod {
   @js.native
   val WashingtonDcMonument: CarbonPictogramType = js.native
   
-  @JSImport("@carbon/pictograms-react", "WatsonAvatar")
+  @JSImport("@carbon/pictograms-react", "WatsonLogo")
   @js.native
-  val WatsonAvatar: CarbonPictogramType = js.native
+  val WatsonLogo: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Weather")
   @js.native
@@ -2490,6 +3876,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Webcast")
   @js.native
   val Webcast: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Websites")
+  @js.native
+  val Websites: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "WeddingCake")
+  @js.native
+  val WeddingCake: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Wheat")
   @js.native
@@ -2527,6 +3921,18 @@ object mod {
   @js.native
   val WordCloud: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "Workday")
+  @js.native
+  val Workday: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Workflows")
+  @js.native
+  val Workflows: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "WorldCommunityGrid")
+  @js.native
+  val WorldCommunityGrid: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "WreckingBall")
   @js.native
   val WreckingBall: CarbonPictogramType = js.native
@@ -2555,6 +3961,10 @@ object mod {
   @js.native
   val Yoga04: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "ZeroTrust")
+  @js.native
+  val ZeroTrust: CarbonPictogramType = js.native
+  
   /* Inlined parent std.Omit<react.react.SVGProps<react.react.ReactSVGElement>, 'ref' | 'tabIndex' | 'aria-hidden'> */
   trait CarbonPictogramProps extends StObject {
     
@@ -2578,11 +3988,11 @@ object mod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -2600,17 +4010,17 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
@@ -2628,11 +4038,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -2644,13 +4054,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -2660,7 +4070,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -2805,6 +4215,8 @@ object mod {
     var fontWeight: js.UndefOr[Double | String] = js.undefined
     
     var format: js.UndefOr[Double | String] = js.undefined
+    
+    var fr: js.UndefOr[Double | String] = js.undefined
     
     var from: js.UndefOr[Double | String] = js.undefined
     
@@ -3150,7 +4562,7 @@ object mod {
     
     var result: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rotate: js.UndefOr[Double | String] = js.undefined
     
@@ -3387,7 +4799,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -3395,7 +4807,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -3431,7 +4843,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -3443,7 +4855,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -3451,7 +4863,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -3487,15 +4899,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -3519,7 +4931,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -3529,7 +4941,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -3549,7 +4961,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -3841,6 +5253,10 @@ object mod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
+      inline def setFr(value: Double | String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+      
+      inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
+      
       inline def setFrom(value: Double | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
@@ -4099,7 +5515,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[ReactSVGElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[ReactSVGElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -4199,7 +5615,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[ReactSVGElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[ReactSVGElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -4531,7 +5947,7 @@ object mod {
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

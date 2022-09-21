@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.SenderInAddressListRuleCondition")
 @js.native
-/* private */ class SenderInAddressListRuleCondition ()
+/* private */ open class SenderInAddressListRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.SenderInAddressListRuleCondition {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotSenderInAddressListRuleCondition_typekey: typings.activexOutlook.Outlook.SenderInAddressListRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

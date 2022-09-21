@@ -38,7 +38,10 @@ trait ReservationId extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The reservation ID. This field must only contain lower case alphanumeric characters or dash. Max length is 64 characters. */
+  /**
+    * The reservation ID. It must only contain lower case alphanumeric characters or dashes. It must start with a letter and must not end with a dash. Its maximum length is 64
+    * characters.
+    */
   var reservationId: js.UndefOr[String] = js.undefined
   
   /** Request body */

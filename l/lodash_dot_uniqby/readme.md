@@ -10,10 +10,10 @@ The lodash method `_.uniqBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.uniqby |
 | Keywords           | lodash-modularized, uniqby |
-| # releases         | 0 |
-| # dependents       | 204 |
-| # downloads        | 26282161 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6310185.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

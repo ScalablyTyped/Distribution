@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "DecayScoreFunction")
 @js.native
-class DecayScoreFunction protected ()
+open class DecayScoreFunction protected ()
   extends StObject
      with ScoreFunction {
   /*
@@ -73,5 +73,5 @@ class DecayScoreFunction protected ()
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

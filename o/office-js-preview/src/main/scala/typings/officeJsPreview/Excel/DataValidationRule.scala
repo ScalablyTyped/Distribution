@@ -5,65 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A data validation rule contains different types of data validation. You can only use one of them at a time according the `Excel.DataValidationType`.
   *
-  * Data validation rule contains different types of data validation. You can only use one of them at a time according the Excel.DataValidationType.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait DataValidationRule extends StObject {
   
   /**
-    *
     * Custom data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var custom: js.UndefOr[CustomDataValidation] = js.undefined
   
   /**
-    *
     * Date data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var date: js.UndefOr[DateTimeDataValidation] = js.undefined
   
   /**
-    *
     * Decimal data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var decimal: js.UndefOr[BasicDataValidation] = js.undefined
   
   /**
-    *
     * List data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var list: js.UndefOr[ListDataValidation] = js.undefined
   
   /**
+    * Text length data validation criteria.
     *
-    * TextLength data validation criteria.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textLength: js.UndefOr[BasicDataValidation] = js.undefined
   
   /**
-    *
     * Time data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var time: js.UndefOr[DateTimeDataValidation] = js.undefined
   
   /**
+    * Whole number data validation criteria.
     *
-    * WholeNumber data validation criteria.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var wholeNumber: js.UndefOr[BasicDataValidation] = js.undefined

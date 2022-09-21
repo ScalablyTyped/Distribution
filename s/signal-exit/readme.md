@@ -10,10 +10,10 @@ when you want to fire an event no matter how a process exits.
 | ------------------ | :-------------: |
 | Full name          | signal-exit |
 | Keywords           | signal, exit |
-| # releases         | 2 |
-| # dependents       | 362 |
-| # downloads        | 935349178 |
-| # stars            | 8 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.46955621E8 |
+| # stars            | 163.0 |
 
 ## Links
 - [Homepage](https://github.com/tapjs/signal-exit)

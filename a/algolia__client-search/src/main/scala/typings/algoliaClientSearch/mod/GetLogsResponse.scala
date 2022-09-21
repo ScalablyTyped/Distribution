@@ -22,6 +22,6 @@ object GetLogsResponse {
     
     inline def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value*))
   }
 }

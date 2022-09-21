@@ -1,36 +1,48 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.FillRule
+import typings.reactSketchapp.anon.Points
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polygonMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Polygon", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Polygon", "Polygon")
   @js.native
-  class default ()
-    extends Component[PolygonProps, js.Object, js.Any]
-  
-  type Polygon = Component[PolygonProps, js.Object, js.Any]
-  
-  trait PolygonProps
-    extends StObject
-       with PathProps {
-    
-    var points: String
+  open class Polygon protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object PolygonProps {
+  /* static members */
+  object Polygon {
     
-    inline def apply(points: String): PolygonProps = {
-      val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PolygonProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Polygon", "Polygon")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: PolygonProps](x: Self) {
-      
-      inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Polygon", "Polygon.defaultProps")
+    @js.native
+    def defaultProps: Points = js.native
+    inline def defaultProps_=(x: Points): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Polygon", "Polygon.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Polygon", "Polygon.propTypes")
+    @js.native
+    def propTypes: FillRule = js.native
+    inline def propTypes_=(x: FillRule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[FillRule]
 }

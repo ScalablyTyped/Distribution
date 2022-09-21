@@ -16,7 +16,7 @@ trait TimeOptions
     * collection. Enable times that fall within a range of disabled times by
     * adding an `inverted` parameter to the item within the collection.
     */
-  var disable: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var disable: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The formatLabel option is unique. It can contain HTML and it can
@@ -56,11 +56,11 @@ object TimeOptions {
   
   extension [Self <: TimeOptions](x: Self) {
     
-    inline def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Array[Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    inline def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
+    inline def setDisableVarargs(value: Any*): Self = StObject.set(x, "disable", js.Array(value*))
     
     inline def setFormatLabel(value: String | (js.Function1[/* time */ TimeItem, String])): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     

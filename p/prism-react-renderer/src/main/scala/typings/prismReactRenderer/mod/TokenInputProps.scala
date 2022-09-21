@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TokenInputProps
   extends StObject
-     with /* otherProps */ StringDictionary[js.Any] {
+     with /* otherProps */ StringDictionary[Any] {
   
   var className: js.UndefOr[String] = js.undefined
   

@@ -10,10 +10,10 @@ A stand-alone, Redux compatible implementation of combine reducers
 | ------------------ | :-------------: |
 | Full name          | combine-reducers |
 | Keywords           | Redux, flux, combineReducers |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 75290 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3190.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/wesleytodd/combine-reducers#readme)

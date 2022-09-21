@@ -12,6 +12,9 @@ trait PseudoTtyOptions extends StObject {
   /** The height in pixels (default: `480`). */
   var height: js.UndefOr[Double] = js.undefined
   
+  /** An object containing Terminal Modes as keys, with each value set to each mode argument. Default: null */
+  var modes: js.UndefOr[TerminalModes] = js.undefined
+  
   /** The number of rows (default: `24`). */
   var rows: js.UndefOr[Double] = js.undefined
   
@@ -37,6 +40,10 @@ object PseudoTtyOptions {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setModes(value: TerminalModes): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    
+    inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

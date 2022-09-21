@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.TextWriter")
 @js.native
-class TextWriter protected ()
+open class TextWriter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.TextWriter {
   def this(
@@ -25,20 +25,20 @@ class TextWriter protected ()
   override def WriteLine(s: String): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var contents: js.Any = js.native
+  var contents: Any = js.native
   
   /* CompleteClass */
   override def getOutputFile(): typings.typescriptServices.TypeScript.OutputFile = js.native
   
   /* private */ /* CompleteClass */
-  var name: js.Any = js.native
+  var name: Any = js.native
   
   /* CompleteClass */
   var onNewLine: Boolean = js.native
   
   /* private */ /* CompleteClass */
-  var outputFileType: js.Any = js.native
+  var outputFileType: Any = js.native
   
   /* private */ /* CompleteClass */
-  var writeByteOrderMark: js.Any = js.native
+  var writeByteOrderMark: Any = js.native
 }

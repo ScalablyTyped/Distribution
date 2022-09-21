@@ -13,7 +13,7 @@ object mod {
     * Invokes the constructor to create an instance of Discovery to receive discovery events. The config options object is optional, but if included, the following options are available:
     * @param options constructor options
     */
-  class Discovery () extends EventEmitter {
+  open class Discovery () extends EventEmitter {
     def this(options: DiscoveryConstructorOptions) = this()
     
     /**
@@ -23,17 +23,17 @@ object mod {
       * @param interval Any data that can be serialized into JSON.
       * @param available Optional parameter to set availability of the service. If not specified, the default is 'true', meaning available.
       */
-    def announce(name: String, userData: js.Any): Unit = js.native
-    def announce(name: String, userData: js.Any, interval: Double): Unit = js.native
-    def announce(name: String, userData: js.Any, interval: Double, available: Boolean): Unit = js.native
-    def announce(name: String, userData: js.Any, interval: Unit, available: Boolean): Unit = js.native
+    def announce(name: String, userData: Any): Unit = js.native
+    def announce(name: String, userData: Any, interval: Double): Unit = js.native
+    def announce(name: String, userData: Any, interval: Double, available: Boolean): Unit = js.native
+    def announce(name: String, userData: Any, interval: Unit, available: Boolean): Unit = js.native
     
     /**
       * Returns the service object, which can be modified. For example, if you need to alter the userData, you can. You cannot, however, alter the name (it's a constant property).
       * @param name name of the service.
       * @returns Returns Object serviceObject from announce.
       */
-    def getData(name: String): js.Any = js.native
+    def getData(name: String): Any = js.native
     
     /**
       * Halts announcements.
@@ -57,7 +57,7 @@ object mod {
       * @param eventName The name of the event.
       * @param data The payload for the event.
       */
-    def sendEvent(eventName: String, data: js.Any): Unit = js.native
+    def sendEvent(eventName: String, data: Any): Unit = js.native
     
     /**
       * Updates the existing service.
@@ -66,10 +66,10 @@ object mod {
       * @param interval Any data that can be serialized into JSON.
       * @param available Optional parameter to set availability of the service. If not specified, the default is 'true', meaning available.
       */
-    def update(name: String, userData: js.Any): Unit = js.native
-    def update(name: String, userData: js.Any, interval: Double): Unit = js.native
-    def update(name: String, userData: js.Any, interval: Double, available: Boolean): Unit = js.native
-    def update(name: String, userData: js.Any, interval: Unit, available: Boolean): Unit = js.native
+    def update(name: String, userData: Any): Unit = js.native
+    def update(name: String, userData: Any, interval: Double): Unit = js.native
+    def update(name: String, userData: Any, interval: Double, available: Boolean): Unit = js.native
+    def update(name: String, userData: Any, interval: Unit, available: Boolean): Unit = js.native
   }
   
   trait DiscoveryConstructorOptions extends StObject {
@@ -120,7 +120,7 @@ object mod {
       * @param eventName The name of the event.
       * @param data The payload for the event.
       */
-    var MessageBus: js.UndefOr[js.Function2[/* eventName */ String, /* data */ js.Any, Unit]] = js.undefined
+    var MessageBus: js.UndefOr[js.Function2[/* eventName */ String, /* data */ Any, Unit]] = js.undefined
     
     /**
       * This event can happen when:
@@ -130,7 +130,7 @@ object mod {
       * @param data user-defined object describing the service.
       * @param reason why this event was sent: 'new', 'availabilityChange', 'timedOut'.
       */
-    def available(name: String, data: js.Any, reason: ReasonType): Unit
+    def available(name: String, data: Any, reason: ReasonType): Unit
     
     /**
       * This event can happen when:
@@ -141,24 +141,24 @@ object mod {
       * @param data user-defined object describing the service.
       * @param reason why this event was sent: 'new', 'availabilityChange', 'timedOut'.
       */
-    def unavailable(name: String, data: js.Any, reason: ReasonType): Unit
+    def unavailable(name: String, data: Any, reason: ReasonType): Unit
   }
   object DiscoveryEvents {
     
-    inline def apply(available: (String, js.Any, ReasonType) => Unit, unavailable: (String, js.Any, ReasonType) => Unit): DiscoveryEvents = {
+    inline def apply(available: (String, Any, ReasonType) => Unit, unavailable: (String, Any, ReasonType) => Unit): DiscoveryEvents = {
       val __obj = js.Dynamic.literal(available = js.Any.fromFunction3(available), unavailable = js.Any.fromFunction3(unavailable))
       __obj.asInstanceOf[DiscoveryEvents]
     }
     
     extension [Self <: DiscoveryEvents](x: Self) {
       
-      inline def setAvailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "available", js.Any.fromFunction3(value))
+      inline def setAvailable(value: (String, Any, ReasonType) => Unit): Self = StObject.set(x, "available", js.Any.fromFunction3(value))
       
-      inline def setMessageBus(value: (/* eventName */ String, /* data */ js.Any) => Unit): Self = StObject.set(x, "MessageBus", js.Any.fromFunction2(value))
+      inline def setMessageBus(value: (/* eventName */ String, /* data */ Any) => Unit): Self = StObject.set(x, "MessageBus", js.Any.fromFunction2(value))
       
       inline def setMessageBusUndefined: Self = StObject.set(x, "MessageBus", js.undefined)
       
-      inline def setUnavailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "unavailable", js.Any.fromFunction3(value))
+      inline def setUnavailable(value: (String, Any, ReasonType) => Unit): Self = StObject.set(x, "unavailable", js.Any.fromFunction3(value))
     }
   }
   

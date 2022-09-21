@@ -32,7 +32,7 @@ object InputEventObject {
     renderedPosition: Position,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): InputEventObject = {

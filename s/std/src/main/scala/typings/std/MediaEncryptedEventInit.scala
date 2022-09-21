@@ -8,8 +8,10 @@ trait MediaEncryptedEventInit
   extends StObject
      with EventInit {
   
-  var initData: js.UndefOr[ArrayBuffer | Null] = js.undefined
+  /* standard dom */
+  var initData: js.UndefOr[js.typedarray.ArrayBuffer | Null] = js.undefined
   
+  /* standard dom */
   var initDataType: js.UndefOr[java.lang.String] = js.undefined
 }
 object MediaEncryptedEventInit {
@@ -21,7 +23,7 @@ object MediaEncryptedEventInit {
   
   extension [Self <: MediaEncryptedEventInit](x: Self) {
     
-    inline def setInitData(value: ArrayBuffer): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
+    inline def setInitData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
     
     inline def setInitDataNull: Self = StObject.set(x, "initData", null)
     

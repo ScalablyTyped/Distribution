@@ -17,23 +17,23 @@ object global {
     
     @JSGlobal("Fluxxor.Dispatcher")
     @js.native
-    class Dispatcher protected ()
+    open class Dispatcher protected ()
       extends typings.fluxxor.mod.Dispatcher {
-      def this(stores: js.Any) = this()
+      def this(stores: Any) = this()
     }
     
     @JSGlobal("Fluxxor.Flux")
     @js.native
-    class Flux protected ()
+    open class Flux protected ()
       extends typings.fluxxor.mod.Flux {
-      def this(stores: js.Any, actions: js.Any) = this()
+      def this(stores: Any, actions: Any) = this()
     }
     
     inline def FluxChildMixin(react: TypeofReact): typings.fluxxor.mod.FluxChildMixin = ^.asInstanceOf[js.Dynamic].applyDynamic("FluxChildMixin")(react.asInstanceOf[js.Any]).asInstanceOf[typings.fluxxor.mod.FluxChildMixin]
     
     inline def FluxMixin(react: TypeofReact): typings.fluxxor.mod.FluxMixin = ^.asInstanceOf[js.Dynamic].applyDynamic("FluxMixin")(react.asInstanceOf[js.Any]).asInstanceOf[typings.fluxxor.mod.FluxMixin]
     
-    inline def StoreWatchMixin[StoreState](storeNames: String*): typings.fluxxor.mod.StoreWatchMixin[StoreState] = ^.asInstanceOf[js.Dynamic].applyDynamic("StoreWatchMixin")(storeNames.asInstanceOf[js.Any]).asInstanceOf[typings.fluxxor.mod.StoreWatchMixin[StoreState]]
+    inline def StoreWatchMixin[StoreState](storeNames: String*): typings.fluxxor.mod.StoreWatchMixin[StoreState] = ^.asInstanceOf[js.Dynamic].applyDynamic("StoreWatchMixin")(storeNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.fluxxor.mod.StoreWatchMixin[StoreState]]
     
     inline def createStore(spec: StoreSpec): StoreClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(spec.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
     

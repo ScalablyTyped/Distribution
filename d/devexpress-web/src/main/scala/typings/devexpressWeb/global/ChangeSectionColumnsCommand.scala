@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeSectionColumnsCommand")
 @js.native
-class ChangeSectionColumnsCommand ()
+open class ChangeSectionColumnsCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeSectionColumnsCommand {
   

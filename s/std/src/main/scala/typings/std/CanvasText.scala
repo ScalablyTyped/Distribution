@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CanvasText extends StObject {
   
+  /* standard dom */
   def fillText(text: java.lang.String, x: Double, y: Double): Unit = js.native
   def fillText(text: java.lang.String, x: Double, y: Double, maxWidth: Double): Unit = js.native
   
+  /* standard dom */
   def measureText(text: java.lang.String): TextMetrics = js.native
   
+  /* standard dom */
   def strokeText(text: java.lang.String, x: Double, y: Double): Unit = js.native
   def strokeText(text: java.lang.String, x: Double, y: Double, maxWidth: Double): Unit = js.native
 }

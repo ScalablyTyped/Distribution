@@ -13,12 +13,12 @@ object formGroupMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/formGroup", "FormGroup")
   @js.native
-  class FormGroup protected ()
-    extends AbstractPureComponent2[IFormGroupProps, js.Object, js.Object] {
-    def this(props: IFormGroupProps) = this()
-    def this(props: IFormGroupProps, context: js.Any) = this()
+  open class FormGroup protected ()
+    extends AbstractPureComponent2[FormGroupProps, js.Object, js.Object] {
+    def this(props: FormGroupProps) = this()
+    def this(props: FormGroupProps, context: Any) = this()
     
-    /* private */ var getClassName: js.Any = js.native
+    /* private */ var getClassName: Any = js.native
   }
   /* static members */
   object FormGroup {
@@ -33,10 +33,15 @@ object formGroupMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type FormGroupProps = IFormGroupProps
+  
   trait IFormGroupProps
     extends StObject
        with IIntentProps
        with IProps {
+    
+    /** Group contents. */
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * A space-delimited list of class names to pass along to the
@@ -76,6 +81,13 @@ object formGroupMod {
     
     /** CSS properties to apply to the root element. */
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Optional text for `label`. The given content will be wrapped in
+      * `Classes.FORM_GROUP_SUB_LABEL` and displayed beneath `label`. The text color
+      * is determined by the `intent`.
+      */
+    var subLabel: js.UndefOr[ReactNode] = js.undefined
   }
   object IFormGroupProps {
     
@@ -85,6 +97,10 @@ object formGroupMod {
     }
     
     extension [Self <: IFormGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
@@ -117,6 +133,10 @@ object formGroupMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSubLabel(value: ReactNode): Self = StObject.set(x, "subLabel", value.asInstanceOf[js.Any])
+      
+      inline def setSubLabelUndefined: Self = StObject.set(x, "subLabel", js.undefined)
     }
   }
 }

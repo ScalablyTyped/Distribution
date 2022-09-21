@@ -4,6 +4,10 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`2d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-flat`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric-uniform`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
+import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
@@ -14,13 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateContinuousRendererParams
   extends StObject
      with Object {
-  
-  /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * Options for configuring the color portion of the visualization.
@@ -48,7 +45,14 @@ trait univariateColorSizeCreateContinuousRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
+  /**
+    * Provides options for configuring the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) representing the renderer generated from this method.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsLegendOptions] = js.undefined
   
   /**
     * A custom maximum value set by the user.
@@ -114,14 +118,32 @@ trait univariateColorSizeCreateContinuousRendererParams
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
+    * Options for setting symbols for the `above-and-below` theme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var symbolOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsSymbolOptions] = js.undefined
+  
+  /**
     * The type of symbol to generate.
+    *
+    * @default 2d
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
+    * Sets the size stops and colors based on meaningful data values.
+    *
+    * @default high-to-low
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below`] = js.undefined
+  
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
@@ -146,7 +168,7 @@ object univariateColorSizeCreateContinuousRendererParams {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): univariateColorSizeCreateContinuousRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -154,10 +176,6 @@ object univariateColorSizeCreateContinuousRendererParams {
   }
   
   extension [Self <: univariateColorSizeCreateContinuousRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setColorOptions(value: univariateColorSizeCreateContinuousRendererParamsColorOptions): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
     
@@ -171,7 +189,11 @@ object univariateColorSizeCreateContinuousRendererParams {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
@@ -209,9 +231,17 @@ object univariateColorSizeCreateContinuousRendererParams {
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
+    inline def setSymbolOptions(value: univariateColorSizeCreateContinuousRendererParamsSymbolOptions): Self = StObject.set(x, "symbolOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolOptionsUndefined: Self = StObject.set(x, "symbolOptions", js.undefined)
+    
     inline def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    
+    inline def setTheme(value: `high-to-low` | above | below | `above-and-below`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     

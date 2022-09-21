@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommitResponse extends StObject {
   
+  /** The transaction commit timestamp. Not set for non-transactional commits. */
+  var commitTime: js.UndefOr[String] = js.undefined
+  
   /** The number of index entries updated during the commit, or zero if none were updated. */
   var indexUpdates: js.UndefOr[Double] = js.undefined
   
@@ -21,6 +24,10 @@ object CommitResponse {
   
   extension [Self <: CommitResponse](x: Self) {
     
+    inline def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    
+    inline def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
+    
     inline def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
     
     inline def setIndexUpdatesUndefined: Self = StObject.set(x, "indexUpdates", js.undefined)
@@ -29,6 +36,6 @@ object CommitResponse {
     
     inline def setMutationResultsUndefined: Self = StObject.set(x, "mutationResults", js.undefined)
     
-    inline def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value :_*))
+    inline def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value*))
   }
 }

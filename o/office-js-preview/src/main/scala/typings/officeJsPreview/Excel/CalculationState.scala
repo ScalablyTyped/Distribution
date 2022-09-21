@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait CalculationState extends StObject
 /**
-  *
   * Represents the state of calculation across the entire Excel application.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.CalculationState")
@@ -18,7 +18,8 @@ object CalculationState extends StObject {
   
   /**
     * Calculations in progress.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait calculating
@@ -27,7 +28,8 @@ object CalculationState extends StObject {
   
   /**
     * Calculations complete.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait done
@@ -36,7 +38,8 @@ object CalculationState extends StObject {
   
   /**
     * Changes that trigger calculation have been made, but a recalculation has not yet been performed.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait pending

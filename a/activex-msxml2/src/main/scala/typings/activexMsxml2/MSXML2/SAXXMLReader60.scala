@@ -30,11 +30,11 @@ trait SAXXMLReader60 extends StObject {
   def getFeature(strName: String): Boolean = js.native
   
   /** Look up the value of a property. */
-  def getProperty(strName: String): js.Any = js.native
+  def getProperty(strName: String): Any = js.native
   
   /** Parse an XML document. */
   def parse(): Unit = js.native
-  def parse(varInput: js.Any): Unit = js.native
+  def parse(varInput: Any): Unit = js.native
   
   /** Parse an XML document from a system identifier (URI). */
   def parseURL(strURL: String): Unit = js.native
@@ -43,7 +43,7 @@ trait SAXXMLReader60 extends StObject {
   def putFeature(strName: String, fValue: Boolean): Unit = js.native
   
   /** Set the value of a property. */
-  def putProperty(strName: String, varValue: js.Any): Unit = js.native
+  def putProperty(strName: String, varValue: Any): Unit = js.native
   
   /** Set or get the secure base URL for the document. */
   var secureBaseURL: String = js.native

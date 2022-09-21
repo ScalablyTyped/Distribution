@@ -99,7 +99,7 @@ object AgentJobInfo {
     
     inline def setAlerts(value: js.Array[AgentAlertInfo]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
-    inline def setAlertsVarargs(value: AgentAlertInfo*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: AgentAlertInfo*): Self = StObject.set(x, "alerts", js.Array(value*))
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -131,11 +131,11 @@ object AgentJobInfo {
     
     inline def setJobSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "jobSchedules", value.asInstanceOf[js.Any])
     
-    inline def setJobSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "jobSchedules", js.Array(value :_*))
+    inline def setJobSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "jobSchedules", js.Array(value*))
     
     inline def setJobSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "jobSteps", value.asInstanceOf[js.Any])
     
-    inline def setJobStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "jobSteps", js.Array(value :_*))
+    inline def setJobStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "jobSteps", js.Array(value*))
     
     inline def setLastRun(value: String): Self = StObject.set(x, "lastRun", value.asInstanceOf[js.Any])
     

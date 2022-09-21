@@ -1,19 +1,173 @@
 package typings.screenfull
 
-import org.scalablytyped.runtime.Shortcut
-import typings.screenfull.anon.IsEnabled
-import typings.screenfull.screenfullBooleans.`true`
 import typings.std.Element
 import typings.std.Event
+import typings.std.FullscreenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("screenfull", JSImport.Namespace)
-  @js.native
-  val ^ : Screenfull | IsEnabled = js.native
+  /**
+  Simple wrapper for cross-browser usage of the JavaScript [Fullscreen API](https://developer.mozilla.org/en/DOM/Using_full-screen_mode), which lets you bring the page or any element into fullscreen. Smoothens out the browser implementation differences, so you don't have to.
+  */
+  object default {
+    
+    @JSImport("screenfull", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	The element currently in fullscreen, otherwise `undefined`.
+    	*/
+    @JSImport("screenfull", "default.element")
+    @js.native
+    val element: js.UndefOr[Element] = js.native
+    
+    /**
+    	Brings you out of fullscreen.
+    	@returns A promise that resolves after the element exits fullscreen.
+    	*/
+    inline def exit(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")().asInstanceOf[js.Promise[Unit]]
+    
+    /**
+    	Whether you are allowed to enter fullscreen. If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
+    	@example
+    	```
+    	import screenfull from 'screenfull';
+    	if (screenfull.isEnabled) {
+    		screenfull.request();
+    	}
+    	```
+    	*/
+    @JSImport("screenfull", "default.isEnabled")
+    @js.native
+    val isEnabled: Boolean = js.native
+    
+    /**
+    	Whether fullscreen is active.
+    	*/
+    @JSImport("screenfull", "default.isFullscreen")
+    @js.native
+    val isFullscreen: Boolean = js.native
+    
+    /**
+    	Remove a previously registered event listener.
+    	@example
+    	```
+    	import screenfull from 'screenfull';
+    	screenfull.off('change', callback);
+    	```
+    	*/
+    inline def off(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+    	Add a listener for when the browser switches in and out of fullscreen or when there is an error.
+    	@example
+    	```
+    	import screenfull from 'screenfull';
+    	// Detect fullscreen change
+    	if (screenfull.isEnabled) {
+    		screenfull.on('change', () => {
+    			console.log('Am I fullscreen?', screenfull.isFullscreen ? 'Yes' : 'No');
+    		});
+    	}
+    	// Detect fullscreen error
+    	if (screenfull.isEnabled) {
+    		screenfull.on('error', event => {
+    			console.error('Failed to enable fullscreen', event);
+    		});
+    	}
+    	```
+    	*/
+    inline def on(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+    	Alias for `.on('change', function)`.
+    	*/
+    inline def onchange(handler: js.Function1[/* event */ Event, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onchange")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+    	Alias for `.on('error', function)`.
+    	*/
+    inline def onerror(handler: js.Function1[/* event */ Event, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+    	Exposes the raw properties (prefixed if needed) used internally.
+    	*/
+    @JSImport("screenfull", "default.raw")
+    @js.native
+    def raw: RawEventNames = js.native
+    inline def raw_=(x: RawEventNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raw")(x.asInstanceOf[js.Any])
+    
+    /**
+    	Make an element fullscreen.
+    	If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
+    	Keep in mind that the browser will only enter fullscreen when initiated by user events like click, touch, key.
+    	@param element - Default is `<html>`. If called with another element than the currently active, it will switch to that if it's a descendant.
+    	@param options - [`FullscreenOptions`](https://developer.mozilla.org/en-US/docs/Web/API/FullscreenOptions).
+    	@returns A promise that resolves after the element enters fullscreen.
+    	@example
+    	```
+    	import screenfull from 'screenfull';
+    	// Fullscreen the page
+    	document.getElementById('button').addEventListener('click', () => {
+    		if (screenfull.isEnabled) {
+    			screenfull.request();
+    		} else {
+    			// Ignore or do something else
+    		}
+    	});
+    	// Fullscreen an element
+    	const element = document.getElementById('target');
+    	document.getElementById('button').addEventListener('click', () => {
+    		if (screenfull.isEnabled) {
+    			screenfull.request(element);
+    		}
+    	});
+    	// Fullscreen an element with options
+    	const element = document.getElementById('target');
+    	document.getElementById('button').addEventListener('click', () => {
+    		if (screenfull.isEnabled) {
+    			screenfull.request(element, {navigationUI: 'hide'});
+    		}
+    	});
+    	// Fullscreen an element with jQuery
+    	const element = $('#target')[0]; // Get DOM element from jQuery collection
+    	$('#button').on('click', () => {
+    		if (screenfull.isEnabled) {
+    			screenfull.request(element);
+    		}
+    	});
+    	```
+    	*/
+    inline def request(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[js.Promise[Unit]]
+    inline def request(element: Unit, options: FullscreenOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def request(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def request(element: Element, options: FullscreenOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+    	Requests fullscreen if not active, otherwise exits.
+    	@param element - The default is `<html>`. If called with another element than the currently active, it will switch to that if it's a descendant.
+    	@param options - [`FullscreenOptions`](https://developer.mozilla.org/en-US/docs/Web/API/FullscreenOptions).
+    	@returns A promise that resolves after the element enters/exits fullscreen.
+    	@example
+    	```
+    	import screenfull from 'screenfull';
+    	// Toggle fullscreen on a image with jQuery
+    	$('img').on('click', event => {
+    		if (screenfull.isEnabled) {
+    			screenfull.toggle(event.target);
+    		}
+    	});
+    	```
+    	*/
+    inline def toggle(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[js.Promise[Unit]]
+    inline def toggle(element: Unit, options: FullscreenOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def toggle(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def toggle(element: Element, options: FullscreenOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.screenfull.screenfullStrings.change
@@ -70,135 +224,4 @@ object mod extends Shortcut {
       inline def setRequestFullscreen(value: String): Self = StObject.set(x, "requestFullscreen", value.asInstanceOf[js.Any])
     }
   }
-  
-  @js.native
-  trait Screenfull extends StObject {
-    
-    /**
-    		The element currently in fullscreen, otherwise `null`.
-    		*/
-    val element: Element | Null = js.native
-    
-    /**
-    		Brings you out of fullscreen.
-    		@returns A promise that resolves after the element exits fullscreen.
-    		*/
-    def exit(): js.Promise[Unit] = js.native
-    
-    /**
-    		Whether you are allowed to enter fullscreen. If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
-    		@example
-    		```
-    		if (screenfull.isEnabled) {
-    			screenfull.request();
-    		}
-    		```
-    		*/
-    val isEnabled: `true` = js.native
-    
-    /**
-    		Whether fullscreen is active.
-    		*/
-    val isFullscreen: Boolean = js.native
-    
-    /**
-    		Remove a previously registered event listener.
-    		@example
-    		```
-    		screenfull.off('change', callback);
-    		```
-    		*/
-    def off(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
-    
-    /**
-    		Add a listener for when the browser switches in and out of fullscreen or when there is an error.
-    		@example
-    		```
-    		// Detect fullscreen change
-    		if (screenfull.isEnabled) {
-    			screenfull.on('change', () => {
-    				console.log('Am I fullscreen?', screenfull.isFullscreen ? 'Yes' : 'No');
-    			});
-    		}
-    		// Detect fullscreen error
-    		if (screenfull.isEnabled) {
-    			screenfull.on('error', event => {
-    				console.error('Failed to enable fullscreen', event);
-    			});
-    		}
-    		```
-    		*/
-    def on(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
-    
-    /**
-    		Alias for `.on('change', function)`.
-    		*/
-    def onchange(handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
-    
-    /**
-    		Alias for `.on('error', function)`.
-    		*/
-    def onerror(handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
-    
-    /**
-    		Exposes the raw properties (prefixed if needed) used internally.
-    		*/
-    var raw: RawEventNames = js.native
-    
-    /**
-    		Make an element fullscreen.
-    		If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
-    		Keep in mind that the browser will only enter fullscreen when initiated by user events like click, touch, key.
-    		@param element - Default is `<html>`. If called with another element than the currently active, it will switch to that if it's a decendant.
-    		@returns A promise that resolves after the element enters fullscreen.
-    		@example
-    		```
-    		// Fullscreen the page
-    		document.getElementById('button').addEventListener('click', () => {
-    			if (screenfull.isEnabled) {
-    				screenfull.request();
-    			} else {
-    				// Ignore or do something else
-    			}
-    		});
-    		// Fullscreen an element
-    		const element = document.getElementById('target');
-    		document.getElementById('button').addEventListener('click', () => {
-    			if (screenfull.isEnabled) {
-    				screenfull.request(element);
-    			}
-    		});
-    		// Fullscreen an element with jQuery
-    		const element = $('#target')[0]; // Get DOM element from jQuery collection
-    		$('#button').on('click', () => {
-    			if (screenfull.isEnabled) {
-    				screenfull.request(element);
-    			}
-    		});
-    		```
-    		*/
-    def request(): js.Promise[Unit] = js.native
-    def request(element: Element): js.Promise[Unit] = js.native
-    
-    /**
-    		Requests fullscreen if not active, otherwise exits.
-    		@returns A promise that resolves after the element enters/exits fullscreen.
-    		@example
-    		```
-    		// Toggle fullscreen on a image with jQuery
-    		$('img').on('click', event => {
-    			if (screenfull.isEnabled) {
-    				screenfull.toggle(event.target);
-    			}
-    		});
-    		```
-    		*/
-    def toggle(): js.Promise[Unit] = js.native
-    def toggle(element: Element): js.Promise[Unit] = js.native
-  }
-  
-  type _To = Screenfull | IsEnabled
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Screenfull | IsEnabled = ^
 }

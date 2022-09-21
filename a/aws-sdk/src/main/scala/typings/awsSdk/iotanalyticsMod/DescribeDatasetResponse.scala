@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDatasetResponse extends StObject {
   
   /**
-    * An object that contains information about the data set.
+    * An object that contains information about the dataset.
     */
   var dataset: js.UndefOr[Dataset] = js.undefined
 }

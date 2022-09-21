@@ -16,6 +16,8 @@ object mod {
   /* Inlined std.Partial<std.Record<keyof std.CSSStyleDeclaration, stylenames.stylenames.StyleValue>> */
   trait StyleObject extends StObject {
     
+    var accentColor: js.UndefOr[StyleValue] = js.undefined
+    
     var alignContent: js.UndefOr[StyleValue] = js.undefined
     
     var alignItems: js.UndefOr[StyleValue] = js.undefined
@@ -44,11 +46,17 @@ object mod {
     
     var animationTimingFunction: js.UndefOr[StyleValue] = js.undefined
     
+    var appearance: js.UndefOr[StyleValue] = js.undefined
+    
+    var aspectRatio: js.UndefOr[StyleValue] = js.undefined
+    
     var backfaceVisibility: js.UndefOr[StyleValue] = js.undefined
     
     var background: js.UndefOr[StyleValue] = js.undefined
     
     var backgroundAttachment: js.UndefOr[StyleValue] = js.undefined
+    
+    var backgroundBlendMode: js.UndefOr[StyleValue] = js.undefined
     
     var backgroundClip: js.UndefOr[StyleValue] = js.undefined
     
@@ -74,6 +82,10 @@ object mod {
     
     var border: js.UndefOr[StyleValue] = js.undefined
     
+    var borderBlock: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderBlockColor: js.UndefOr[StyleValue] = js.undefined
+    
     var borderBlockEnd: js.UndefOr[StyleValue] = js.undefined
     
     var borderBlockEndColor: js.UndefOr[StyleValue] = js.undefined
@@ -89,6 +101,10 @@ object mod {
     var borderBlockStartStyle: js.UndefOr[StyleValue] = js.undefined
     
     var borderBlockStartWidth: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderBlockStyle: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderBlockWidth: js.UndefOr[StyleValue] = js.undefined
     
     var borderBottom: js.UndefOr[StyleValue] = js.undefined
     
@@ -106,6 +122,10 @@ object mod {
     
     var borderColor: js.UndefOr[StyleValue] = js.undefined
     
+    var borderEndEndRadius: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderEndStartRadius: js.UndefOr[StyleValue] = js.undefined
+    
     var borderImage: js.UndefOr[StyleValue] = js.undefined
     
     var borderImageOutset: js.UndefOr[StyleValue] = js.undefined
@@ -117,6 +137,10 @@ object mod {
     var borderImageSource: js.UndefOr[StyleValue] = js.undefined
     
     var borderImageWidth: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderInline: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderInlineColor: js.UndefOr[StyleValue] = js.undefined
     
     var borderInlineEnd: js.UndefOr[StyleValue] = js.undefined
     
@@ -133,6 +157,10 @@ object mod {
     var borderInlineStartStyle: js.UndefOr[StyleValue] = js.undefined
     
     var borderInlineStartWidth: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderInlineStyle: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderInlineWidth: js.UndefOr[StyleValue] = js.undefined
     
     var borderLeft: js.UndefOr[StyleValue] = js.undefined
     
@@ -153,6 +181,10 @@ object mod {
     var borderRightWidth: js.UndefOr[StyleValue] = js.undefined
     
     var borderSpacing: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderStartEndRadius: js.UndefOr[StyleValue] = js.undefined
+    
+    var borderStartStartRadius: js.UndefOr[StyleValue] = js.undefined
     
     var borderStyle: js.UndefOr[StyleValue] = js.undefined
     
@@ -200,6 +232,8 @@ object mod {
     
     var colorInterpolationFilters: js.UndefOr[StyleValue] = js.undefined
     
+    var colorScheme: js.UndefOr[StyleValue] = js.undefined
+    
     var columnCount: js.UndefOr[StyleValue] = js.undefined
     
     var columnFill: js.UndefOr[StyleValue] = js.undefined
@@ -220,11 +254,15 @@ object mod {
     
     var columns: js.UndefOr[StyleValue] = js.undefined
     
+    var contain: js.UndefOr[StyleValue] = js.undefined
+    
     var content: js.UndefOr[StyleValue] = js.undefined
     
     var counterIncrement: js.UndefOr[StyleValue] = js.undefined
     
     var counterReset: js.UndefOr[StyleValue] = js.undefined
+    
+    var counterSet: js.UndefOr[StyleValue] = js.undefined
     
     var cssFloat: js.UndefOr[StyleValue] = js.undefined
     
@@ -276,6 +314,8 @@ object mod {
     
     var fontKerning: js.UndefOr[StyleValue] = js.undefined
     
+    var fontOpticalSizing: js.UndefOr[StyleValue] = js.undefined
+    
     var fontSize: js.UndefOr[StyleValue] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[StyleValue] = js.undefined
@@ -288,6 +328,8 @@ object mod {
     
     var fontVariant: js.UndefOr[StyleValue] = js.undefined
     
+    var fontVariantAlternates: js.UndefOr[StyleValue] = js.undefined
+    
     var fontVariantCaps: js.UndefOr[StyleValue] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[StyleValue] = js.undefined
@@ -298,6 +340,8 @@ object mod {
     
     var fontVariantPosition: js.UndefOr[StyleValue] = js.undefined
     
+    var fontVariationSettings: js.UndefOr[StyleValue] = js.undefined
+    
     var fontWeight: js.UndefOr[StyleValue] = js.undefined
     
     var gap: js.UndefOr[StyleValue] = js.undefined
@@ -305,8 +349,6 @@ object mod {
     var getPropertyPriority: js.UndefOr[StyleValue] = js.undefined
     
     var getPropertyValue: js.UndefOr[StyleValue] = js.undefined
-    
-    var glyphOrientationVertical: js.UndefOr[StyleValue] = js.undefined
     
     var grid: js.UndefOr[StyleValue] = js.undefined
     
@@ -354,6 +396,22 @@ object mod {
     
     var inlineSize: js.UndefOr[StyleValue] = js.undefined
     
+    var inset: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetBlock: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetBlockEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetBlockStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetInline: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetInlineEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var insetInlineStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var isolation: js.UndefOr[StyleValue] = js.undefined
+    
     var item: js.UndefOr[StyleValue] = js.undefined
     
     var justifyContent: js.UndefOr[StyleValue] = js.undefined
@@ -384,11 +442,15 @@ object mod {
     
     var margin: js.UndefOr[StyleValue] = js.undefined
     
+    var marginBlock: js.UndefOr[StyleValue] = js.undefined
+    
     var marginBlockEnd: js.UndefOr[StyleValue] = js.undefined
     
     var marginBlockStart: js.UndefOr[StyleValue] = js.undefined
     
     var marginBottom: js.UndefOr[StyleValue] = js.undefined
+    
+    var marginInline: js.UndefOr[StyleValue] = js.undefined
     
     var marginInlineEnd: js.UndefOr[StyleValue] = js.undefined
     
@@ -410,9 +472,15 @@ object mod {
     
     var mask: js.UndefOr[StyleValue] = js.undefined
     
+    var maskClip: js.UndefOr[StyleValue] = js.undefined
+    
     var maskComposite: js.UndefOr[StyleValue] = js.undefined
     
     var maskImage: js.UndefOr[StyleValue] = js.undefined
+    
+    var maskMode: js.UndefOr[StyleValue] = js.undefined
+    
+    var maskOrigin: js.UndefOr[StyleValue] = js.undefined
     
     var maskPosition: js.UndefOr[StyleValue] = js.undefined
     
@@ -438,9 +506,19 @@ object mod {
     
     var minWidth: js.UndefOr[StyleValue] = js.undefined
     
+    var mixBlendMode: js.UndefOr[StyleValue] = js.undefined
+    
     var objectFit: js.UndefOr[StyleValue] = js.undefined
     
     var objectPosition: js.UndefOr[StyleValue] = js.undefined
+    
+    var offset: js.UndefOr[StyleValue] = js.undefined
+    
+    var offsetDistance: js.UndefOr[StyleValue] = js.undefined
+    
+    var offsetPath: js.UndefOr[StyleValue] = js.undefined
+    
+    var offsetRotate: js.UndefOr[StyleValue] = js.undefined
     
     var opacity: js.UndefOr[StyleValue] = js.undefined
     
@@ -480,11 +558,15 @@ object mod {
     
     var padding: js.UndefOr[StyleValue] = js.undefined
     
+    var paddingBlock: js.UndefOr[StyleValue] = js.undefined
+    
     var paddingBlockEnd: js.UndefOr[StyleValue] = js.undefined
     
     var paddingBlockStart: js.UndefOr[StyleValue] = js.undefined
     
     var paddingBottom: js.UndefOr[StyleValue] = js.undefined
+    
+    var paddingInline: js.UndefOr[StyleValue] = js.undefined
     
     var paddingInlineEnd: js.UndefOr[StyleValue] = js.undefined
     
@@ -520,6 +602,8 @@ object mod {
     
     var position: js.UndefOr[StyleValue] = js.undefined
     
+    var printColorAdjust: js.UndefOr[StyleValue] = js.undefined
+    
     var quotes: js.UndefOr[StyleValue] = js.undefined
     
     var removeProperty: js.UndefOr[StyleValue] = js.undefined
@@ -532,15 +616,71 @@ object mod {
     
     var rowGap: js.UndefOr[StyleValue] = js.undefined
     
-    var rubyAlign: js.UndefOr[StyleValue] = js.undefined
-    
     var rubyPosition: js.UndefOr[StyleValue] = js.undefined
     
     var scale: js.UndefOr[StyleValue] = js.undefined
     
     var scrollBehavior: js.UndefOr[StyleValue] = js.undefined
     
+    var scrollMargin: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginBlock: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginBlockEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginBlockStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginBottom: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginInline: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginInlineEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginInlineStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginLeft: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginRight: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollMarginTop: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPadding: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingBlock: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingBlockEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingBlockStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingBottom: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingInline: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingInlineEnd: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingInlineStart: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingLeft: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingRight: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollPaddingTop: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollSnapAlign: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollSnapStop: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollSnapType: js.UndefOr[StyleValue] = js.undefined
+    
+    var scrollbarGutter: js.UndefOr[StyleValue] = js.undefined
+    
     var setProperty: js.UndefOr[StyleValue] = js.undefined
+    
+    var shapeImageThreshold: js.UndefOr[StyleValue] = js.undefined
+    
+    var shapeMargin: js.UndefOr[StyleValue] = js.undefined
+    
+    var shapeOutside: js.UndefOr[StyleValue] = js.undefined
     
     var shapeRendering: js.UndefOr[StyleValue] = js.undefined
     
@@ -582,7 +722,11 @@ object mod {
     
     var textDecorationLine: js.UndefOr[StyleValue] = js.undefined
     
+    var textDecorationSkipInk: js.UndefOr[StyleValue] = js.undefined
+    
     var textDecorationStyle: js.UndefOr[StyleValue] = js.undefined
+    
+    var textDecorationThickness: js.UndefOr[StyleValue] = js.undefined
     
     var textEmphasis: js.UndefOr[StyleValue] = js.undefined
     
@@ -594,8 +738,6 @@ object mod {
     
     var textIndent: js.UndefOr[StyleValue] = js.undefined
     
-    var textJustify: js.UndefOr[StyleValue] = js.undefined
-    
     var textOrientation: js.UndefOr[StyleValue] = js.undefined
     
     var textOverflow: js.UndefOr[StyleValue] = js.undefined
@@ -605,6 +747,8 @@ object mod {
     var textShadow: js.UndefOr[StyleValue] = js.undefined
     
     var textTransform: js.UndefOr[StyleValue] = js.undefined
+    
+    var textUnderlineOffset: js.UndefOr[StyleValue] = js.undefined
     
     var textUnderlinePosition: js.UndefOr[StyleValue] = js.undefined
     
@@ -752,8 +896,6 @@ object mod {
     
     var webkitPerspectiveOrigin: js.UndefOr[StyleValue] = js.undefined
     
-    var webkitTapHighlightColor: js.UndefOr[StyleValue] = js.undefined
-    
     var webkitTextFillColor: js.UndefOr[StyleValue] = js.undefined
     
     var webkitTextSizeAdjust: js.UndefOr[StyleValue] = js.undefined
@@ -799,8 +941,6 @@ object mod {
     var writingMode: js.UndefOr[StyleValue] = js.undefined
     
     var zIndex: js.UndefOr[StyleValue] = js.undefined
-    
-    var zoom: js.UndefOr[StyleValue] = js.undefined
   }
   object StyleObject {
     
@@ -810,6 +950,12 @@ object mod {
     }
     
     extension [Self <: StyleObject](x: Self) {
+      
+      inline def setAccentColor(value: StyleValue): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      
+      inline def setAccentColorNull: Self = StObject.set(x, "accentColor", null)
+      
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
       
       inline def setAlignContent(value: StyleValue): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -895,6 +1041,18 @@ object mod {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
+      inline def setAppearance(value: StyleValue): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      
+      inline def setAppearanceNull: Self = StObject.set(x, "appearance", null)
+      
+      inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      
+      inline def setAspectRatio(value: StyleValue): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      
+      inline def setAspectRatioNull: Self = StObject.set(x, "aspectRatio", null)
+      
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      
       inline def setBackfaceVisibility(value: StyleValue): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
       
       inline def setBackfaceVisibilityNull: Self = StObject.set(x, "backfaceVisibility", null)
@@ -908,6 +1066,12 @@ object mod {
       inline def setBackgroundAttachmentNull: Self = StObject.set(x, "backgroundAttachment", null)
       
       inline def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
+      
+      inline def setBackgroundBlendMode(value: StyleValue): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundBlendModeNull: Self = StObject.set(x, "backgroundBlendMode", null)
+      
+      inline def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
       
       inline def setBackgroundClip(value: StyleValue): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
       
@@ -981,6 +1145,14 @@ object mod {
       
       inline def setBorder(value: StyleValue): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
+      inline def setBorderBlock(value: StyleValue): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBlockColor(value: StyleValue): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBlockColorNull: Self = StObject.set(x, "borderBlockColor", null)
+      
+      inline def setBorderBlockColorUndefined: Self = StObject.set(x, "borderBlockColor", js.undefined)
+      
       inline def setBorderBlockEnd(value: StyleValue): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockEndColor(value: StyleValue): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
@@ -1005,6 +1177,8 @@ object mod {
       
       inline def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
       
+      inline def setBorderBlockNull: Self = StObject.set(x, "borderBlock", null)
+      
       inline def setBorderBlockStart(value: StyleValue): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStartColor(value: StyleValue): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
@@ -1028,6 +1202,20 @@ object mod {
       inline def setBorderBlockStartWidthNull: Self = StObject.set(x, "borderBlockStartWidth", null)
       
       inline def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
+      
+      inline def setBorderBlockStyle(value: StyleValue): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBlockStyleNull: Self = StObject.set(x, "borderBlockStyle", null)
+      
+      inline def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
+      
+      inline def setBorderBlockUndefined: Self = StObject.set(x, "borderBlock", js.undefined)
+      
+      inline def setBorderBlockWidth(value: StyleValue): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBlockWidthNull: Self = StObject.set(x, "borderBlockWidth", null)
+      
+      inline def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
       
       inline def setBorderBottom(value: StyleValue): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
       
@@ -1077,6 +1265,18 @@ object mod {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
+      inline def setBorderEndEndRadius(value: StyleValue): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
+      
+      inline def setBorderEndEndRadiusNull: Self = StObject.set(x, "borderEndEndRadius", null)
+      
+      inline def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
+      
+      inline def setBorderEndStartRadius(value: StyleValue): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
+      
+      inline def setBorderEndStartRadiusNull: Self = StObject.set(x, "borderEndStartRadius", null)
+      
+      inline def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
+      
       inline def setBorderImage(value: StyleValue): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
       
       inline def setBorderImageNull: Self = StObject.set(x, "borderImage", null)
@@ -1113,6 +1313,14 @@ object mod {
       
       inline def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
       
+      inline def setBorderInline(value: StyleValue): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
+      
+      inline def setBorderInlineColor(value: StyleValue): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderInlineColorNull: Self = StObject.set(x, "borderInlineColor", null)
+      
+      inline def setBorderInlineColorUndefined: Self = StObject.set(x, "borderInlineColor", js.undefined)
+      
       inline def setBorderInlineEnd(value: StyleValue): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineEndColor(value: StyleValue): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
@@ -1137,6 +1345,8 @@ object mod {
       
       inline def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
       
+      inline def setBorderInlineNull: Self = StObject.set(x, "borderInline", null)
+      
       inline def setBorderInlineStart(value: StyleValue): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStartColor(value: StyleValue): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
@@ -1160,6 +1370,20 @@ object mod {
       inline def setBorderInlineStartWidthNull: Self = StObject.set(x, "borderInlineStartWidth", null)
       
       inline def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
+      
+      inline def setBorderInlineStyle(value: StyleValue): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBorderInlineStyleNull: Self = StObject.set(x, "borderInlineStyle", null)
+      
+      inline def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
+      
+      inline def setBorderInlineUndefined: Self = StObject.set(x, "borderInline", js.undefined)
+      
+      inline def setBorderInlineWidth(value: StyleValue): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
+      
+      inline def setBorderInlineWidthNull: Self = StObject.set(x, "borderInlineWidth", null)
+      
+      inline def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
       
       inline def setBorderLeft(value: StyleValue): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
       
@@ -1222,6 +1446,18 @@ object mod {
       inline def setBorderSpacingNull: Self = StObject.set(x, "borderSpacing", null)
       
       inline def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
+      
+      inline def setBorderStartEndRadius(value: StyleValue): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
+      
+      inline def setBorderStartEndRadiusNull: Self = StObject.set(x, "borderStartEndRadius", null)
+      
+      inline def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
+      
+      inline def setBorderStartStartRadius(value: StyleValue): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
+      
+      inline def setBorderStartStartRadiusNull: Self = StObject.set(x, "borderStartStartRadius", null)
+      
+      inline def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
       
       inline def setBorderStyle(value: StyleValue): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -1361,6 +1597,12 @@ object mod {
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
+      inline def setColorScheme(value: StyleValue): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+      
+      inline def setColorSchemeNull: Self = StObject.set(x, "colorScheme", null)
+      
+      inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+      
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       inline def setColumnCount(value: StyleValue): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
@@ -1423,6 +1665,12 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
+      inline def setContain(value: StyleValue): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+      
+      inline def setContainNull: Self = StObject.set(x, "contain", null)
+      
+      inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      
       inline def setContent(value: StyleValue): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentNull: Self = StObject.set(x, "content", null)
@@ -1440,6 +1688,12 @@ object mod {
       inline def setCounterResetNull: Self = StObject.set(x, "counterReset", null)
       
       inline def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
+      
+      inline def setCounterSet(value: StyleValue): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
+      
+      inline def setCounterSetNull: Self = StObject.set(x, "counterSet", null)
+      
+      inline def setCounterSetUndefined: Self = StObject.set(x, "counterSet", js.undefined)
       
       inline def setCssFloat(value: StyleValue): Self = StObject.set(x, "cssFloat", value.asInstanceOf[js.Any])
       
@@ -1589,6 +1843,12 @@ object mod {
       
       inline def setFontNull: Self = StObject.set(x, "font", null)
       
+      inline def setFontOpticalSizing(value: StyleValue): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
+      
+      inline def setFontOpticalSizingNull: Self = StObject.set(x, "fontOpticalSizing", null)
+      
+      inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
+      
       inline def setFontSize(value: StyleValue): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeAdjust(value: StyleValue): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -1622,6 +1882,12 @@ object mod {
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
       inline def setFontVariant(value: StyleValue): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantAlternates(value: StyleValue): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantAlternatesNull: Self = StObject.set(x, "fontVariantAlternates", null)
+      
+      inline def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
       
       inline def setFontVariantCaps(value: StyleValue): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
       
@@ -1657,6 +1923,12 @@ object mod {
       
       inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
       
+      inline def setFontVariationSettings(value: StyleValue): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariationSettingsNull: Self = StObject.set(x, "fontVariationSettings", null)
+      
+      inline def setFontVariationSettingsUndefined: Self = StObject.set(x, "fontVariationSettings", js.undefined)
+      
       inline def setFontWeight(value: StyleValue): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
@@ -1680,12 +1952,6 @@ object mod {
       inline def setGetPropertyValueNull: Self = StObject.set(x, "getPropertyValue", null)
       
       inline def setGetPropertyValueUndefined: Self = StObject.set(x, "getPropertyValue", js.undefined)
-      
-      inline def setGlyphOrientationVertical(value: StyleValue): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-      
-      inline def setGlyphOrientationVerticalNull: Self = StObject.set(x, "glyphOrientationVertical", null)
-      
-      inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
       
       inline def setGrid(value: StyleValue): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -1825,6 +2091,54 @@ object mod {
       
       inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
       
+      inline def setInset(value: StyleValue): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+      
+      inline def setInsetBlock(value: StyleValue): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+      
+      inline def setInsetBlockEnd(value: StyleValue): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
+      
+      inline def setInsetBlockEndNull: Self = StObject.set(x, "insetBlockEnd", null)
+      
+      inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
+      
+      inline def setInsetBlockNull: Self = StObject.set(x, "insetBlock", null)
+      
+      inline def setInsetBlockStart(value: StyleValue): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
+      
+      inline def setInsetBlockStartNull: Self = StObject.set(x, "insetBlockStart", null)
+      
+      inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
+      
+      inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
+      
+      inline def setInsetInline(value: StyleValue): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
+      
+      inline def setInsetInlineEnd(value: StyleValue): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
+      
+      inline def setInsetInlineEndNull: Self = StObject.set(x, "insetInlineEnd", null)
+      
+      inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
+      
+      inline def setInsetInlineNull: Self = StObject.set(x, "insetInline", null)
+      
+      inline def setInsetInlineStart(value: StyleValue): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
+      
+      inline def setInsetInlineStartNull: Self = StObject.set(x, "insetInlineStart", null)
+      
+      inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
+      
+      inline def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
+      
+      inline def setInsetNull: Self = StObject.set(x, "inset", null)
+      
+      inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+      
+      inline def setIsolation(value: StyleValue): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
+      
+      inline def setIsolationNull: Self = StObject.set(x, "isolation", null)
+      
+      inline def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
+      
       inline def setItem(value: StyleValue): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemNull: Self = StObject.set(x, "item", null)
@@ -1911,11 +2225,15 @@ object mod {
       
       inline def setMargin(value: StyleValue): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBlock(value: StyleValue): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
+      
       inline def setMarginBlockEnd(value: StyleValue): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setMarginBlockEndNull: Self = StObject.set(x, "marginBlockEnd", null)
       
       inline def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
+      
+      inline def setMarginBlockNull: Self = StObject.set(x, "marginBlock", null)
       
       inline def setMarginBlockStart(value: StyleValue): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
       
@@ -1923,11 +2241,15 @@ object mod {
       
       inline def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
       
+      inline def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
+      
       inline def setMarginBottom(value: StyleValue): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginInline(value: StyleValue): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
       
       inline def setMarginInlineEnd(value: StyleValue): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
       
@@ -1935,11 +2257,15 @@ object mod {
       
       inline def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
       
+      inline def setMarginInlineNull: Self = StObject.set(x, "marginInline", null)
+      
       inline def setMarginInlineStart(value: StyleValue): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
       
       inline def setMarginInlineStartNull: Self = StObject.set(x, "marginInlineStart", null)
       
       inline def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
+      
+      inline def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
       
       inline def setMarginLeft(value: StyleValue): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
@@ -1989,6 +2315,12 @@ object mod {
       
       inline def setMask(value: StyleValue): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
+      inline def setMaskClip(value: StyleValue): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
+      
+      inline def setMaskClipNull: Self = StObject.set(x, "maskClip", null)
+      
+      inline def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
+      
       inline def setMaskComposite(value: StyleValue): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
       
       inline def setMaskCompositeNull: Self = StObject.set(x, "maskComposite", null)
@@ -2001,7 +2333,19 @@ object mod {
       
       inline def setMaskImageUndefined: Self = StObject.set(x, "maskImage", js.undefined)
       
+      inline def setMaskMode(value: StyleValue): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
+      
+      inline def setMaskModeNull: Self = StObject.set(x, "maskMode", null)
+      
+      inline def setMaskModeUndefined: Self = StObject.set(x, "maskMode", js.undefined)
+      
       inline def setMaskNull: Self = StObject.set(x, "mask", null)
+      
+      inline def setMaskOrigin(value: StyleValue): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setMaskOriginNull: Self = StObject.set(x, "maskOrigin", null)
+      
+      inline def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
       
       inline def setMaskPosition(value: StyleValue): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
       
@@ -2077,6 +2421,12 @@ object mod {
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
+      inline def setMixBlendMode(value: StyleValue): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
+      
+      inline def setMixBlendModeNull: Self = StObject.set(x, "mixBlendMode", null)
+      
+      inline def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
+      
       inline def setObjectFit(value: StyleValue): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
       inline def setObjectFitNull: Self = StObject.set(x, "objectFit", null)
@@ -2088,6 +2438,30 @@ object mod {
       inline def setObjectPositionNull: Self = StObject.set(x, "objectPosition", null)
       
       inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
+      
+      inline def setOffset(value: StyleValue): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetDistance(value: StyleValue): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetDistanceNull: Self = StObject.set(x, "offsetDistance", null)
+      
+      inline def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
+      
+      inline def setOffsetNull: Self = StObject.set(x, "offset", null)
+      
+      inline def setOffsetPath(value: StyleValue): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPathNull: Self = StObject.set(x, "offsetPath", null)
+      
+      inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
+      
+      inline def setOffsetRotate(value: StyleValue): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetRotateNull: Self = StObject.set(x, "offsetRotate", null)
+      
+      inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
       inline def setOpacity(value: StyleValue): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -2199,11 +2573,15 @@ object mod {
       
       inline def setPadding(value: StyleValue): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
+      inline def setPaddingBlock(value: StyleValue): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+      
       inline def setPaddingBlockEnd(value: StyleValue): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockEndNull: Self = StObject.set(x, "paddingBlockEnd", null)
       
       inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
+      
+      inline def setPaddingBlockNull: Self = StObject.set(x, "paddingBlock", null)
       
       inline def setPaddingBlockStart(value: StyleValue): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
       
@@ -2211,11 +2589,15 @@ object mod {
       
       inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
       
+      inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
+      
       inline def setPaddingBottom(value: StyleValue): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+      
+      inline def setPaddingInline(value: StyleValue): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineEnd(value: StyleValue): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
       
@@ -2223,11 +2605,15 @@ object mod {
       
       inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
       
+      inline def setPaddingInlineNull: Self = StObject.set(x, "paddingInline", null)
+      
       inline def setPaddingInlineStart(value: StyleValue): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineStartNull: Self = StObject.set(x, "paddingInlineStart", null)
       
       inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
+      
+      inline def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
       
       inline def setPaddingLeft(value: StyleValue): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
@@ -2323,6 +2709,12 @@ object mod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
+      inline def setPrintColorAdjust(value: StyleValue): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setPrintColorAdjustNull: Self = StObject.set(x, "printColorAdjust", null)
+      
+      inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
+      
       inline def setQuotes(value: StyleValue): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
       inline def setQuotesNull: Self = StObject.set(x, "quotes", null)
@@ -2359,12 +2751,6 @@ object mod {
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
       
-      inline def setRubyAlign(value: StyleValue): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
-      
-      inline def setRubyAlignNull: Self = StObject.set(x, "rubyAlign", null)
-      
-      inline def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
-      
       inline def setRubyPosition(value: StyleValue): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
       
       inline def setRubyPositionNull: Self = StObject.set(x, "rubyPosition", null)
@@ -2383,11 +2769,185 @@ object mod {
       
       inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
       
+      inline def setScrollMargin(value: StyleValue): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginBlock(value: StyleValue): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginBlockEnd(value: StyleValue): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginBlockEndNull: Self = StObject.set(x, "scrollMarginBlockEnd", null)
+      
+      inline def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
+      
+      inline def setScrollMarginBlockNull: Self = StObject.set(x, "scrollMarginBlock", null)
+      
+      inline def setScrollMarginBlockStart(value: StyleValue): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginBlockStartNull: Self = StObject.set(x, "scrollMarginBlockStart", null)
+      
+      inline def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
+      
+      inline def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
+      
+      inline def setScrollMarginBottom(value: StyleValue): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginBottomNull: Self = StObject.set(x, "scrollMarginBottom", null)
+      
+      inline def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
+      
+      inline def setScrollMarginInline(value: StyleValue): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginInlineEnd(value: StyleValue): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginInlineEndNull: Self = StObject.set(x, "scrollMarginInlineEnd", null)
+      
+      inline def setScrollMarginInlineEndUndefined: Self = StObject.set(x, "scrollMarginInlineEnd", js.undefined)
+      
+      inline def setScrollMarginInlineNull: Self = StObject.set(x, "scrollMarginInline", null)
+      
+      inline def setScrollMarginInlineStart(value: StyleValue): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginInlineStartNull: Self = StObject.set(x, "scrollMarginInlineStart", null)
+      
+      inline def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
+      
+      inline def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
+      
+      inline def setScrollMarginLeft(value: StyleValue): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginLeftNull: Self = StObject.set(x, "scrollMarginLeft", null)
+      
+      inline def setScrollMarginLeftUndefined: Self = StObject.set(x, "scrollMarginLeft", js.undefined)
+      
+      inline def setScrollMarginNull: Self = StObject.set(x, "scrollMargin", null)
+      
+      inline def setScrollMarginRight(value: StyleValue): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginRightNull: Self = StObject.set(x, "scrollMarginRight", null)
+      
+      inline def setScrollMarginRightUndefined: Self = StObject.set(x, "scrollMarginRight", js.undefined)
+      
+      inline def setScrollMarginTop(value: StyleValue): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
+      
+      inline def setScrollMarginTopNull: Self = StObject.set(x, "scrollMarginTop", null)
+      
+      inline def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
+      
+      inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
+      
+      inline def setScrollPadding(value: StyleValue): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingBlock(value: StyleValue): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingBlockEnd(value: StyleValue): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingBlockEndNull: Self = StObject.set(x, "scrollPaddingBlockEnd", null)
+      
+      inline def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
+      
+      inline def setScrollPaddingBlockNull: Self = StObject.set(x, "scrollPaddingBlock", null)
+      
+      inline def setScrollPaddingBlockStart(value: StyleValue): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingBlockStartNull: Self = StObject.set(x, "scrollPaddingBlockStart", null)
+      
+      inline def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
+      
+      inline def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
+      
+      inline def setScrollPaddingBottom(value: StyleValue): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingBottomNull: Self = StObject.set(x, "scrollPaddingBottom", null)
+      
+      inline def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
+      
+      inline def setScrollPaddingInline(value: StyleValue): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingInlineEnd(value: StyleValue): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingInlineEndNull: Self = StObject.set(x, "scrollPaddingInlineEnd", null)
+      
+      inline def setScrollPaddingInlineEndUndefined: Self = StObject.set(x, "scrollPaddingInlineEnd", js.undefined)
+      
+      inline def setScrollPaddingInlineNull: Self = StObject.set(x, "scrollPaddingInline", null)
+      
+      inline def setScrollPaddingInlineStart(value: StyleValue): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingInlineStartNull: Self = StObject.set(x, "scrollPaddingInlineStart", null)
+      
+      inline def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
+      
+      inline def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
+      
+      inline def setScrollPaddingLeft(value: StyleValue): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingLeftNull: Self = StObject.set(x, "scrollPaddingLeft", null)
+      
+      inline def setScrollPaddingLeftUndefined: Self = StObject.set(x, "scrollPaddingLeft", js.undefined)
+      
+      inline def setScrollPaddingNull: Self = StObject.set(x, "scrollPadding", null)
+      
+      inline def setScrollPaddingRight(value: StyleValue): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingRightNull: Self = StObject.set(x, "scrollPaddingRight", null)
+      
+      inline def setScrollPaddingRightUndefined: Self = StObject.set(x, "scrollPaddingRight", js.undefined)
+      
+      inline def setScrollPaddingTop(value: StyleValue): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
+      
+      inline def setScrollPaddingTopNull: Self = StObject.set(x, "scrollPaddingTop", null)
+      
+      inline def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
+      
+      inline def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
+      
+      inline def setScrollSnapAlign(value: StyleValue): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
+      
+      inline def setScrollSnapAlignNull: Self = StObject.set(x, "scrollSnapAlign", null)
+      
+      inline def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
+      
+      inline def setScrollSnapStop(value: StyleValue): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
+      
+      inline def setScrollSnapStopNull: Self = StObject.set(x, "scrollSnapStop", null)
+      
+      inline def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
+      
+      inline def setScrollSnapType(value: StyleValue): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
+      
+      inline def setScrollSnapTypeNull: Self = StObject.set(x, "scrollSnapType", null)
+      
+      inline def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
+      
+      inline def setScrollbarGutter(value: StyleValue): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarGutterNull: Self = StObject.set(x, "scrollbarGutter", null)
+      
+      inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
+      
       inline def setSetProperty(value: StyleValue): Self = StObject.set(x, "setProperty", value.asInstanceOf[js.Any])
       
       inline def setSetPropertyNull: Self = StObject.set(x, "setProperty", null)
       
       inline def setSetPropertyUndefined: Self = StObject.set(x, "setProperty", js.undefined)
+      
+      inline def setShapeImageThreshold(value: StyleValue): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setShapeImageThresholdNull: Self = StObject.set(x, "shapeImageThreshold", null)
+      
+      inline def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
+      
+      inline def setShapeMargin(value: StyleValue): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
+      
+      inline def setShapeMarginNull: Self = StObject.set(x, "shapeMargin", null)
+      
+      inline def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
+      
+      inline def setShapeOutside(value: StyleValue): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
+      
+      inline def setShapeOutsideNull: Self = StObject.set(x, "shapeOutside", null)
+      
+      inline def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
       
       inline def setShapeRendering(value: StyleValue): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
       
@@ -2507,11 +3067,23 @@ object mod {
       
       inline def setTextDecorationNull: Self = StObject.set(x, "textDecoration", null)
       
+      inline def setTextDecorationSkipInk(value: StyleValue): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
+      
+      inline def setTextDecorationSkipInkNull: Self = StObject.set(x, "textDecorationSkipInk", null)
+      
+      inline def setTextDecorationSkipInkUndefined: Self = StObject.set(x, "textDecorationSkipInk", js.undefined)
+      
       inline def setTextDecorationStyle(value: StyleValue): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationStyleNull: Self = StObject.set(x, "textDecorationStyle", null)
       
       inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
+      
+      inline def setTextDecorationThickness(value: StyleValue): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
+      
+      inline def setTextDecorationThicknessNull: Self = StObject.set(x, "textDecorationThickness", null)
+      
+      inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
       
       inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
       
@@ -2545,12 +3117,6 @@ object mod {
       
       inline def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
       
-      inline def setTextJustify(value: StyleValue): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
-      
-      inline def setTextJustifyNull: Self = StObject.set(x, "textJustify", null)
-      
-      inline def setTextJustifyUndefined: Self = StObject.set(x, "textJustify", js.undefined)
-      
       inline def setTextOrientation(value: StyleValue): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
       
       inline def setTextOrientationNull: Self = StObject.set(x, "textOrientation", null)
@@ -2580,6 +3146,12 @@ object mod {
       inline def setTextTransformNull: Self = StObject.set(x, "textTransform", null)
       
       inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      
+      inline def setTextUnderlineOffset(value: StyleValue): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
+      
+      inline def setTextUnderlineOffsetNull: Self = StObject.set(x, "textUnderlineOffset", null)
+      
+      inline def setTextUnderlineOffsetUndefined: Self = StObject.set(x, "textUnderlineOffset", js.undefined)
       
       inline def setTextUnderlinePosition(value: StyleValue): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
       
@@ -3019,12 +3591,6 @@ object mod {
       
       inline def setWebkitPerspectiveUndefined: Self = StObject.set(x, "webkitPerspective", js.undefined)
       
-      inline def setWebkitTapHighlightColor(value: StyleValue): Self = StObject.set(x, "webkitTapHighlightColor", value.asInstanceOf[js.Any])
-      
-      inline def setWebkitTapHighlightColorNull: Self = StObject.set(x, "webkitTapHighlightColor", null)
-      
-      inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "webkitTapHighlightColor", js.undefined)
-      
       inline def setWebkitTextFillColor(value: StyleValue): Self = StObject.set(x, "webkitTextFillColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextFillColorNull: Self = StObject.set(x, "webkitTextFillColor", null)
@@ -3162,12 +3728,6 @@ object mod {
       inline def setZIndexNull: Self = StObject.set(x, "zIndex", null)
       
       inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
-      
-      inline def setZoom(value: StyleValue): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
-      
-      inline def setZoomNull: Self = StObject.set(x, "zoom", null)
-      
-      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   

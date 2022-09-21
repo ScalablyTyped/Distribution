@@ -60,16 +60,16 @@ trait PlusNativeObjBitmap extends StObject {
   def load(
     path: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def load(path: String, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def load(path: String, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def load(path: Unit, successCallback: js.Function0[Unit]): Unit = js.native
   def load(
     path: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def load(path: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def load(path: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 加载Base64编码格式图片到Bitmap对象
@@ -84,16 +84,16 @@ trait PlusNativeObjBitmap extends StObject {
   def loadBase64Data(
     data: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def loadBase64Data(data: String, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def loadBase64Data(data: String, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def loadBase64Data(data: Unit, successCallback: js.Function0[Unit]): Unit = js.native
   def loadBase64Data(
     data: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def loadBase64Data(data: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def loadBase64Data(data: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 回收Bitmap图片内存
@@ -112,67 +112,67 @@ trait PlusNativeObjBitmap extends StObject {
     */
   def save(): Unit = js.native
   def save(path: String): Unit = js.native
-  def save(path: String, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(path: String, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def save(
     path: String,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(path: String, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def save(path: Unit, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(path: Unit, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def save(
     path: Unit,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: Unit,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(path: Unit, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
   def save(
     path: Unit,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: Unit,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: Unit,
     options: PlusNativeObjBitmapSaveOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**

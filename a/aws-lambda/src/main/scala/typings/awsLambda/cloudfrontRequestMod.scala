@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.anon.Cf
+import typings.awsLambda.anon.CloudFrontEventrequestClo
 import typings.awsLambda.cloudfrontMod.CloudFrontHeaders
 import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
@@ -14,20 +14,37 @@ object cloudfrontRequestMod {
   
   trait CloudFrontRequestEvent extends StObject {
     
-    var Records: js.Array[Cf]
+    var Records: js.Array[CloudFrontRequestEventRecord]
   }
   object CloudFrontRequestEvent {
     
-    inline def apply(Records: js.Array[Cf]): CloudFrontRequestEvent = {
+    inline def apply(Records: js.Array[CloudFrontRequestEventRecord]): CloudFrontRequestEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFrontRequestEvent]
     }
     
     extension [Self <: CloudFrontRequestEvent](x: Self) {
       
-      inline def setRecords(value: js.Array[Cf]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[CloudFrontRequestEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: Cf*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: CloudFrontRequestEventRecord*): Self = StObject.set(x, "Records", js.Array(value*))
+    }
+  }
+  
+  trait CloudFrontRequestEventRecord extends StObject {
+    
+    var cf: CloudFrontEventrequestClo
+  }
+  object CloudFrontRequestEventRecord {
+    
+    inline def apply(cf: CloudFrontEventrequestClo): CloudFrontRequestEventRecord = {
+      val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CloudFrontRequestEventRecord]
+    }
+    
+    extension [Self <: CloudFrontRequestEventRecord](x: Self) {
+      
+      inline def setCf(value: CloudFrontEventrequestClo): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
     }
   }
   

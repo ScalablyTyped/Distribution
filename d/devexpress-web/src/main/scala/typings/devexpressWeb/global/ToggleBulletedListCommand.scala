@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleBulletedListCommand")
 @js.native
-class ToggleBulletedListCommand ()
+open class ToggleBulletedListCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleBulletedListCommand {
   

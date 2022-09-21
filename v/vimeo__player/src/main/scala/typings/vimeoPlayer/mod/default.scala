@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@vimeo/player", JSImport.Default)
 @js.native
-class default protected () extends Player {
+open class default protected () extends Player {
   def this(element: String) = this()
   def this(element: HTMLElement) = this()
   def this(element: HTMLIFrameElement) = this()

@@ -1,9 +1,5 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceEventsDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Calendar identifier. To retrieve calendar IDs call the calendarList.list
-    * method. If you want to access the primary calendar of the currently
-    * logged in user, use the "primary" keyword.
+    * Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the "primary" keyword.
     */
   var calendarId: js.UndefOr[String] = js.undefined
   
@@ -30,10 +19,9 @@ trait ParamsResourceEventsDelete
   var eventId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. Please use sendUpdates instead.  Whether to send
-    * notifications about the deletion of the event. Note that some emails
-    * might still be sent even if you set the value to false. The default is
-    * false.
+    * Deprecated. Please use sendUpdates instead.
+    *
+    * Whether to send notifications about the deletion of the event. Note that some emails might still be sent even if you set the value to false. The default is false.
     */
   var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
@@ -50,10 +38,6 @@ object ParamsResourceEventsDelete {
   }
   
   extension [Self <: ParamsResourceEventsDelete](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     

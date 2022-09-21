@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "SceneDispatcher")
 @js.native
-class SceneDispatcher ()
+open class SceneDispatcher ()
   extends typings.wonderJs.sceneDispatcherMod.SceneDispatcher
 /* static members */
 object SceneDispatcher {

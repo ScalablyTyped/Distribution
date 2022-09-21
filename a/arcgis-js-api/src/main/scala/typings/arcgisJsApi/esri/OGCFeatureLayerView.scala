@@ -21,17 +21,26 @@ trait OGCFeatureLayerView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#createQuery)
     */
-  def createQuery(): Query = js.native
+  def createQuery(): Query_ = js.native
   
   /**
-    * The effect applied to the layer view.
+    * The effect applied to the layerView.
+    *
+    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#effect)
     */
   var effect: FeatureEffect = js.native
   
   /**
-    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) filter.
+    * The featureEffect can be used to draw attention features of interest.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#featureEffect)
+    */
+  var featureEffect: FeatureEffect = js.native
+  
+  /**
+    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#timeExtent) filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#filter)
     */
@@ -48,50 +57,50 @@ trait OGCFeatureLayerView
   def highlight(target: Graphic): Handle = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryExtent)
     */
-  def queryExtent(): js.Promise[js.Any] = js.native
-  def queryExtent(query: Unit, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
-  def queryExtent(query: Query): js.Promise[js.Any] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
-  def queryExtent(query: QueryProperties, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
-  def queryExtent(query: Query, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(): js.Promise[Any] = js.native
+  def queryExtent(query: scala.Unit, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[Any] = js.native
+  def queryExtent(query: QueryProperties, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[Any] = js.native
+  def queryExtent(query: Query_): js.Promise[Any] = js.native
+  def queryExtent(query: Query_, options: OGCFeatureLayerViewQueryExtentOptions): js.Promise[Any] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns the number of features that satisfy the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Unit, options: OGCFeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: scala.Unit, options: OGCFeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: OGCFeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Query, options: OGCFeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query_): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query_, options: OGCFeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html).
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Unit, options: OGCFeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: scala.Unit, options: OGCFeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: OGCFeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: OGCFeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_, options: OGCFeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns array of the ObjectIDs of features that satisfy the input query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns array of the ObjectIDs of features that satisfy the input query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Unit, options: OGCFeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: scala.Unit, options: OGCFeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: OGCFeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: OGCFeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_, options: OGCFeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }

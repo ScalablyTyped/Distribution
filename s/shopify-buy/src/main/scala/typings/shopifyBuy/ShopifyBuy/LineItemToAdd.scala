@@ -25,7 +25,7 @@ object LineItemToAdd {
     
     inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value*))
     
     inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     

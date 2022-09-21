@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaintenanceWindowIdentity extends StObject {
   
   /**
-    * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
+    * The number of hours before the end of the maintenance window that Amazon Web Services Systems Manager stops scheduling new tasks for execution.
     */
   var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   
@@ -47,7 +47,7 @@ trait MaintenanceWindowIdentity extends StObject {
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   
   /**
-    * The number of days to wait to run a maintenance window after the scheduled CRON expression date and time.
+    * The number of days to wait to run a maintenance window after the scheduled cron expression date and time.
     */
   var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined
   

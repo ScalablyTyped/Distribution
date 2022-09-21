@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.accessibility
 
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessible
   * @since OOo 1.1.2
   */
-type Accessible = typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
+type Accessible = XAccessible
 
 /**
   * Indicates invalid or unavailable state information.
@@ -25,6 +26,6 @@ type Accessible = typings.activexLibreoffice.com_.sun.star.accessibility.XAccess
   * @see XAccessibleContext.getLocale()
   * @since OOo 1.1.2
   */
-type IllegalAccessibleComponentStateException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type IllegalAccessibleComponentStateException = Exception
 
-type MSAAService = typings.activexLibreoffice.com_.sun.star.accessibility.XMSAAService
+type MSAAService = XMSAAService

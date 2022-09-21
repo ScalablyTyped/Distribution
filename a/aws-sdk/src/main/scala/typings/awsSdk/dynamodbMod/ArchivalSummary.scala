@@ -14,10 +14,10 @@ trait ArchivalSummary extends StObject {
   /**
     * The date and time when table archival was initiated by DynamoDB, in UNIX epoch time format.
     */
-  var ArchivalDateTime: js.UndefOr[Date] = js.undefined
+  var ArchivalDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The reason DynamoDB archived the table. Currently, the only possible value is:    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The table was archived due to the table's AWS KMS key being inaccessible for more than seven days. An On-Demand backup was created at the archival time.  
+    * The reason DynamoDB archived the table. Currently, the only possible value is:    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The table was archived due to the table's KMS key being inaccessible for more than seven days. An On-Demand backup was created at the archival time.  
     */
   var ArchivalReason: js.UndefOr[typings.awsSdk.dynamodbMod.ArchivalReason] = js.undefined
 }
@@ -34,7 +34,7 @@ object ArchivalSummary {
     
     inline def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
     
-    inline def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
+    inline def setArchivalDateTime(value: js.Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
     
     inline def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
     

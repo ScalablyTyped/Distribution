@@ -10,10 +10,10 @@ object accessTimeMod {
   
   @JSImport("material-ui/svg-icons/device/access-time", JSImport.Default)
   @js.native
-  class default () extends DeviceAccessTime
+  open class default () extends DeviceAccessTime
   
   @JSImport("material-ui/svg-icons/device/access-time", "DeviceAccessTime")
   @js.native
-  class DeviceAccessTime ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceAccessTime ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

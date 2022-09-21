@@ -29,7 +29,7 @@ object TargetedManagedAppProtection {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setIsAssigned(value: Boolean): Self = StObject.set(x, "isAssigned", value.asInstanceOf[js.Any])
     

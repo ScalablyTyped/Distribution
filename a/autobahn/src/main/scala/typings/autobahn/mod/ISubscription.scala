@@ -5,24 +5,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISubscription extends StObject {
+trait ISubscription[TArgs, TKWArgs, TName] extends StObject {
   
   var active: Boolean
   
   def handler(): Unit
-  def handler(args: js.Any): Unit
-  def handler(args: js.Any, kwargs: js.Any): Unit
-  def handler(args: js.Any, kwargs: js.Any, details: IEvent): Unit
-  def handler(args: js.Any, kwargs: Unit, details: IEvent): Unit
-  def handler(args: js.Array[js.Any]): Unit
-  def handler(args: js.Array[js.Any], kwargs: js.Any): Unit
-  def handler(args: js.Array[js.Any], kwargs: js.Any, details: IEvent): Unit
-  def handler(args: js.Array[js.Any], kwargs: Unit, details: IEvent): Unit
-  def handler(args: Unit, kwargs: js.Any): Unit
-  def handler(args: Unit, kwargs: js.Any, details: IEvent): Unit
-  def handler(args: Unit, kwargs: Unit, details: IEvent): Unit
+  def handler(args: TArgs): Unit
+  def handler(args: TArgs, kwargs: TKWArgs): Unit
+  def handler(args: TArgs, kwargs: TKWArgs, details: IEvent[String]): Unit
+  def handler(args: TArgs, kwargs: Unit, details: IEvent[String]): Unit
+  def handler(args: Unit, kwargs: TKWArgs): Unit
+  def handler(args: Unit, kwargs: TKWArgs, details: IEvent[String]): Unit
+  def handler(args: Unit, kwargs: Unit, details: IEvent[String]): Unit
   @JSName("handler")
-  var handler_Original: SubscribeHandler
+  var handler_Original: SubscribeHandler[TArgs, TKWArgs, String]
   
   var id: Double
   
@@ -30,31 +26,31 @@ trait ISubscription extends StObject {
   
   var session: Session
   
-  var topic: String
+  var topic: TName
   
-  def unsubscribe(): Promise[js.Any]
+  def unsubscribe(): Promise[Any]
 }
 object ISubscription {
   
-  inline def apply(
+  inline def apply[TArgs, TKWArgs, TName](
     active: Boolean,
-    handler: (/* args */ js.UndefOr[js.Array[js.Any] | js.Any], /* kwargs */ js.UndefOr[js.Any], /* details */ js.UndefOr[IEvent]) => Unit,
+    handler: (/* args */ js.UndefOr[TArgs], /* kwargs */ js.UndefOr[TKWArgs], /* details */ js.UndefOr[IEvent[String]]) => Unit,
     id: Double,
     options: ISubscribeOptions,
     session: Session,
-    topic: String,
-    unsubscribe: () => Promise[js.Any]
-  ): ISubscription = {
+    topic: TName,
+    unsubscribe: () => Promise[Any]
+  ): ISubscription[TArgs, TKWArgs, TName] = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
-    __obj.asInstanceOf[ISubscription]
+    __obj.asInstanceOf[ISubscription[TArgs, TKWArgs, TName]]
   }
   
-  extension [Self <: ISubscription](x: Self) {
+  extension [Self <: ISubscription[?, ?, ?], TArgs, TKWArgs, TName](x: Self & (ISubscription[TArgs, TKWArgs, TName])) {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setHandler(
-      value: (/* args */ js.UndefOr[js.Array[js.Any] | js.Any], /* kwargs */ js.UndefOr[js.Any], /* details */ js.UndefOr[IEvent]) => Unit
+      value: (/* args */ js.UndefOr[TArgs], /* kwargs */ js.UndefOr[TKWArgs], /* details */ js.UndefOr[IEvent[String]]) => Unit
     ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -63,8 +59,8 @@ object ISubscription {
     
     inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: TName): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    inline def setUnsubscribe(value: () => Promise[js.Any]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    inline def setUnsubscribe(value: () => Promise[Any]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }
 }

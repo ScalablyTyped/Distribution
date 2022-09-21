@@ -14,7 +14,7 @@ object select2OptionsMod {
   
   trait Select2Options
     extends StObject
-       with Options[DataFormat | GroupedDataFormat, js.Any]
+       with Options[DataFormat | GroupedDataFormat, Any]
        with ControlOptions
        with StrictOptions
        with DefaultValueOptions[String]

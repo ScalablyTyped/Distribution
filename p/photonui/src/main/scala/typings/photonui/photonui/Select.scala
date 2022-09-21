@@ -12,7 +12,7 @@ trait Select
   
   // string (maybe)
   def addChild(widget: Widget): Unit = js.native
-  def addChild(widget: Widget, layoutOptions: js.Any): Unit = js.native
+  def addChild(widget: Widget, layoutOptions: Any): Unit = js.native
   
   var children: js.Array[Widget] = js.native
   
@@ -42,5 +42,5 @@ trait Select
   
   var popupWidth: Double = js.native
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

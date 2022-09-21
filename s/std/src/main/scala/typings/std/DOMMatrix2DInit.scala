@@ -6,28 +6,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMMatrix2DInit extends StObject {
   
+  /* standard dom */
   var a: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var b: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var c: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var d: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var e: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var f: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m11: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m12: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m21: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m22: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m41: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var m42: js.UndefOr[Double] = js.undefined
 }
 object DOMMatrix2DInit {

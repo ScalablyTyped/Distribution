@@ -8,7 +8,7 @@ object mathViewportMod {
   
   @JSImport("babylonjs/Maths/math.viewport", "Viewport")
   @js.native
-  class Viewport protected () extends StObject {
+  open class Viewport protected () extends StObject {
     /**
       * Creates a Viewport object located at (x, y) and sized (width, height)
       * @param x defines viewport left coordinate

@@ -18,7 +18,7 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags,
     * as your math delimiters.
     */
-  var delimiters: js.UndefOr[js.Any] = js.undefined
+  var delimiters: js.UndefOr[Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should not be processed by asciimath2jax (other
     * than to look for the processClass pattern below). Note that this is a regular expression, and so you need to
@@ -42,7 +42,7 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.undefined
+  var preview: js.UndefOr[Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should be processed by asciimath2jax. This is used
     * to restart processing within tags that have been marked as ignored via the ignoreClass or to cause a tag that
@@ -70,7 +70,7 @@ object Asciimath2jaxPreprocessor {
   
   extension [Self <: Asciimath2jaxPreprocessor](x: Self) {
     
-    inline def setDelimiters(value: js.Any): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+    inline def setDelimiters(value: Any): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     
     inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
     
@@ -78,7 +78,7 @@ object Asciimath2jaxPreprocessor {
     
     inline def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
     
-    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
@@ -90,6 +90,6 @@ object Asciimath2jaxPreprocessor {
     
     inline def setSkipTagsUndefined: Self = StObject.set(x, "skipTags", js.undefined)
     
-    inline def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value :_*))
+    inline def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value*))
   }
 }

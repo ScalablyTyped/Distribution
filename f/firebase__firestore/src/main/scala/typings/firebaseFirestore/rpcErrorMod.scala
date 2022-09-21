@@ -1,21 +1,30 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.errorMod.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/rpc_error", JSImport.Namespace)
-@js.native
-object rpcErrorMod extends js.Object {
-  def isPermanentError(code: Code): Boolean = js.native
-  def isPermanentWriteError(code: Code): Boolean = js.native
-  def mapCodeFromHttpResponseErrorStatus(status: String): Code = js.native
-  def mapCodeFromHttpStatus(status: Double): Code = js.native
-  def mapCodeFromRpcCode(): Code = js.native
-  def mapCodeFromRpcCode(code: Double): Code = js.native
-  def mapCodeFromRpcStatus(status: String): js.UndefOr[Code] = js.native
-  def mapRpcCodeFromCode(): Double = js.native
-  def mapRpcCodeFromCode(code: Code): Double = js.native
+object rpcErrorMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/remote/rpc_error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isPermanentError(code: Code): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPermanentError")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isPermanentWriteError(code: Code): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPermanentWriteError")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def mapCodeFromHttpResponseErrorStatus(status: String): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromHttpResponseErrorStatus")(status.asInstanceOf[js.Any]).asInstanceOf[Code]
+  
+  inline def mapCodeFromHttpStatus(): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromHttpStatus")().asInstanceOf[Code]
+  inline def mapCodeFromHttpStatus(status: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromHttpStatus")(status.asInstanceOf[js.Any]).asInstanceOf[Code]
+  
+  inline def mapCodeFromRpcCode(): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromRpcCode")().asInstanceOf[Code]
+  inline def mapCodeFromRpcCode(code: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromRpcCode")(code.asInstanceOf[js.Any]).asInstanceOf[Code]
+  
+  inline def mapCodeFromRpcStatus(status: String): js.UndefOr[Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCodeFromRpcStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Code]]
+  
+  inline def mapRpcCodeFromCode(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapRpcCodeFromCode")().asInstanceOf[Double]
+  inline def mapRpcCodeFromCode(code: Code): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapRpcCodeFromCode")(code.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

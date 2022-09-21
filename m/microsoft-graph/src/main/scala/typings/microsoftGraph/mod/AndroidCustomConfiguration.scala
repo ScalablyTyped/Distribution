@@ -26,6 +26,6 @@ object AndroidCustomConfiguration {
     
     inline def setOmaSettingsUndefined: Self = StObject.set(x, "omaSettings", js.undefined)
     
-    inline def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value :_*))
+    inline def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value*))
   }
 }

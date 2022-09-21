@@ -1,5 +1,6 @@
 package typings.luminoWidgets
 
+import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.panelMod.Panel
 import typings.luminoWidgets.splitlayoutMod.SplitLayout
 import typings.luminoWidgets.splitpanelMod.SplitPanel.Alignment
@@ -22,35 +23,37 @@ object splitpanelMod {
     *
     * @param options - The options for initializing the split panel.
     */
-  class SplitPanel () extends Panel {
+  open class SplitPanel () extends Panel {
     def this(options: IOptions) = this()
     
     /**
       * Handle the `'keydown'` event for the split panel.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the split panel.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the split panel.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the split panel.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
-    /* private */ var _pressData: js.Any = js.native
+    /* private */ var _handleMoved: Any = js.native
+    
+    /* private */ var _pressData: Any = js.native
     
     /**
       * Release the mouse grab for the split panel.
       */
-    /* private */ var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: Any = js.native
     
     /**
       * Get the content alignment for the split panel.
@@ -83,6 +86,11 @@ object splitpanelMod {
       * not be called directly by user code.
       */
     def handleEvent(event: Event): Unit = js.native
+    
+    /**
+      * A signal emitted when a split handle has moved.
+      */
+    val handleMoved: ISignal[this.type, Unit] = js.native
     
     /**
       * A read-only array of the split handles in the panel.
@@ -119,6 +127,8 @@ object splitpanelMod {
       * Set the relative sizes for the widgets in the panel.
       *
       * @param sizes - The relative sizes for the widgets in the panel.
+      * @param update - Update the layout after setting relative sizes.
+      * Default is True.
       *
       * #### Notes
       * Extra values are ignored, too few will yield an undefined layout.
@@ -126,6 +136,7 @@ object splitpanelMod {
       * The actual geometry of the DOM nodes is updated asynchronously.
       */
     def setRelativeSizes(sizes: js.Array[Double]): Unit = js.native
+    def setRelativeSizes(sizes: js.Array[Double], update: Boolean): Unit = js.native
     
     /**
       * Get the inter-element spacing for the split panel.
@@ -146,7 +157,7 @@ object splitpanelMod {
       */
     @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends StObject
          with typings.luminoWidgets.splitlayoutMod.SplitLayout.IRenderer {
       

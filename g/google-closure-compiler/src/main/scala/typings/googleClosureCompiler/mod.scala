@@ -11,7 +11,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("google-closure-compiler", "compiler")
   @js.native
-  class compiler protected ()
+  open class compiler protected ()
     extends StObject
        with Compiler_ {
     def this(opts: js.Array[String]) = this()
@@ -52,7 +52,7 @@ object mod {
     
     var javaPath: String = js.native
     
-    def logger(args: js.Any*): Unit = js.native
+    def logger(args: Any*): Unit = js.native
     
     def run(): ChildProcess = js.native
     def run(callback: js.Function3[/* exitCode */ Double, /* stdout */ String, /* stderr */ String, Unit]): ChildProcess = js.native

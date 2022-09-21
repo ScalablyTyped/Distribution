@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-htmlview
 
-Typings are for version 0.12
+Typings are for version 0.16
 
 ## Library description:
 A component which renders HTML content as native views
@@ -10,10 +10,10 @@ A component which renders HTML content as native views
 | ------------------ | :-------------: |
 | Full name          | react-native-htmlview |
 | Keywords           | react, html, react-native, react-component, react-native-component, mobile, ui |
-| # releases         | 4 |
-| # dependents       | 20 |
-| # downloads        | 1262134 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 130943.66666666667 |
+| # stars            | 2580.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdf/react-native-htmlview)

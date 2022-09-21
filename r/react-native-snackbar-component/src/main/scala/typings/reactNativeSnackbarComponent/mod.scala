@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-native-snackbar-component", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SnackbarComponentProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SnackbarComponentProps, js.Object, Any]
   
-  type SnackbarComponent = Component[SnackbarComponentProps, js.Object, js.Any]
+  type SnackbarComponent = Component[SnackbarComponentProps, js.Object, Any]
   
   trait SnackbarComponentProps extends StObject {
     

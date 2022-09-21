@@ -11,7 +11,7 @@ object ellipseMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/ellipse", JSImport.Default)
+    @JSImport("@antv/g-math/dist/ellipse", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

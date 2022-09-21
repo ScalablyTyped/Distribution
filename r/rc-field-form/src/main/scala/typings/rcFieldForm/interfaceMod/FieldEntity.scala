@@ -14,6 +14,8 @@ trait FieldEntity extends StObject {
   
   def getNamePath(): InternalNamePath = js.native
   
+  def getWarnings(): js.Array[String] = js.native
+  
   def isFieldDirty(): Boolean = js.native
   
   def isFieldTouched(): Boolean = js.native
@@ -24,11 +26,13 @@ trait FieldEntity extends StObject {
   
   def isListField(): Boolean = js.native
   
+  def isPreserve(): Boolean = js.native
+  
   def onStoreChange(store: Store, namePathList: js.Array[InternalNamePath], info: ValuedNotifyInfo): Unit = js.native
   def onStoreChange(store: Store, namePathList: Null, info: ValuedNotifyInfo): Unit = js.native
   
   var props: Dependencies = js.native
   
-  def validateRules(): js.Promise[js.Array[String]] = js.native
-  def validateRules(options: ValidateOptions): js.Promise[js.Array[String]] = js.native
+  def validateRules(): js.Promise[js.Array[RuleError]] = js.native
+  def validateRules(options: ValidateOptions): js.Promise[js.Array[RuleError]] = js.native
 }

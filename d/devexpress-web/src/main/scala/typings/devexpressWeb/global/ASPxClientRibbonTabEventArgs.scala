@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonTabEventArgs")
 @js.native
-class ASPxClientRibbonTabEventArgs protected ()
+open class ASPxClientRibbonTabEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonTabEventArgs {
   /**

@@ -30,7 +30,7 @@ trait ITreeStore
     * @param id Object
     * @returns Ext.data.NodeInterface
     */
-  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
+  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], INodeInterface]] = js.undefined
   
   /** [Method] Returns the root node for this tree
     * @returns Ext.data.NodeInterface
@@ -41,13 +41,13 @@ trait ITreeStore
   var nodeParam: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-  var root: js.UndefOr[js.Any] = js.undefined
+  var root: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the root node for this store
     * @param root Ext.data.Model/Ext.data.NodeInterface/Object
     * @returns Ext.data.NodeInterface The new root
     */
-  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
+  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[Any], INodeInterface]] = js.undefined
 }
 object ITreeStore {
   
@@ -82,7 +82,7 @@ object ITreeStore {
     
     inline def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
     
-    inline def setGetNodeById(value: /* id */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
+    inline def setGetNodeById(value: /* id */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
     inline def setGetNodeByIdUndefined: Self = StObject.set(x, "getNodeById", js.undefined)
     
@@ -94,11 +94,11 @@ object ITreeStore {
     
     inline def setNodeParamUndefined: Self = StObject.set(x, "nodeParam", js.undefined)
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
+    inline def setSetRootNode(value: /* root */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
     
     inline def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
   }

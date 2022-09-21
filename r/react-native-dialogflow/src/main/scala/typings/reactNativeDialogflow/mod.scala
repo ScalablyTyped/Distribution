@@ -16,7 +16,6 @@ import typings.reactNativeDialogflow.reactNativeDialogflowStrings.nl
 import typings.reactNativeDialogflow.reactNativeDialogflowStrings.pt
 import typings.reactNativeDialogflow.reactNativeDialogflowStrings.ru
 import typings.reactNativeDialogflow.reactNativeDialogflowStrings.uk
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,31 +108,31 @@ object mod {
       eventName: String,
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
+    ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def requestQuery(
       query: String,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
+    ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetContexts")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setConfiguration(accessToken: String, languageTag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(accessToken.asInstanceOf[js.Any], languageTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setContexts(contexts: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def setEntities(entities: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setEntities(entities: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def setPermanentContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setPermanentContexts(contexts: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def startListening(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListening")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
@@ -223,29 +222,29 @@ object mod {
       eventName: String,
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
+    ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def requestQuery(
       query: String,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
+    ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetContexts")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setConfiguration(serviceAccount: String, privateKey: String, language: String, projectId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(serviceAccount.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setContexts(contexts: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def setPermanentContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setPermanentContexts(contexts: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def startListening(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
-      errorCallback: js.Function1[/* error */ Error, Unit]
+      errorCallback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListening")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

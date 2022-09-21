@@ -111,11 +111,11 @@ object IInteractComponent {
     
     inline def setPlay_sounds(value: js.Array[String]): Self = StObject.set(x, "play_sounds", value.asInstanceOf[js.Any])
     
-    inline def setPlay_soundsVarargs(value: String*): Self = StObject.set(x, "play_sounds", js.Array(value :_*))
+    inline def setPlay_soundsVarargs(value: String*): Self = StObject.set(x, "play_sounds", js.Array(value*))
     
     inline def setSpawn_entities(value: js.Array[String]): Self = StObject.set(x, "spawn_entities", value.asInstanceOf[js.Any])
     
-    inline def setSpawn_entitiesVarargs(value: String*): Self = StObject.set(x, "spawn_entities", js.Array(value :_*))
+    inline def setSpawn_entitiesVarargs(value: String*): Self = StObject.set(x, "spawn_entities", js.Array(value*))
     
     inline def setSpawn_items(value: Table): Self = StObject.set(x, "spawn_items", value.asInstanceOf[js.Any])
     

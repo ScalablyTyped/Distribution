@@ -1,6 +1,7 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,8 @@ trait ContainerCreateOptions extends StObject {
   var Env: js.UndefOr[js.Array[String]] = js.undefined
   
   var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.undefined
+  
+  var Healthcheck: js.UndefOr[HealthConfig] = js.undefined
   
   var HostConfig: js.UndefOr[typings.dockerode.mod.HostConfig] = js.undefined
   
@@ -53,6 +56,8 @@ trait ContainerCreateOptions extends StObject {
   
   var WorkingDir: js.UndefOr[String] = js.undefined
   
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
 object ContainerCreateOptions {
@@ -63,6 +68,10 @@ object ContainerCreateOptions {
   }
   
   extension [Self <: ContainerCreateOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
     inline def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
     
@@ -80,7 +89,7 @@ object ContainerCreateOptions {
     
     inline def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
     
-    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
+    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value*))
     
     inline def setDomainname(value: String): Self = StObject.set(x, "Domainname", value.asInstanceOf[js.Any])
     
@@ -90,17 +99,21 @@ object ContainerCreateOptions {
     
     inline def setEntrypointUndefined: Self = StObject.set(x, "Entrypoint", js.undefined)
     
-    inline def setEntrypointVarargs(value: String*): Self = StObject.set(x, "Entrypoint", js.Array(value :_*))
+    inline def setEntrypointVarargs(value: String*): Self = StObject.set(x, "Entrypoint", js.Array(value*))
     
     inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setExposedPorts(value: StringDictionary[js.Object]): Self = StObject.set(x, "ExposedPorts", value.asInstanceOf[js.Any])
     
     inline def setExposedPortsUndefined: Self = StObject.set(x, "ExposedPorts", js.undefined)
+    
+    inline def setHealthcheck(value: HealthConfig): Self = StObject.set(x, "Healthcheck", value.asInstanceOf[js.Any])
+    
+    inline def setHealthcheckUndefined: Self = StObject.set(x, "Healthcheck", js.undefined)
     
     inline def setHostConfig(value: HostConfig): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
     

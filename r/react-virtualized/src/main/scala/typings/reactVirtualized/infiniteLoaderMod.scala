@@ -9,16 +9,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object infiniteLoaderMod {
   
-  @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader")
+  @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", JSImport.Default)
   @js.native
-  class InfiniteLoader protected ()
+  open class default protected ()
     extends typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoader {
     def this(props: InfiniteLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: InfiniteLoaderProps, context: js.Any) = this()
+    def this(props: InfiniteLoaderProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: MinimumBatchSize = js.native
+    inline def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "default.propTypes")
+    @js.native
+    def propTypes: IsRowLoaded = js.native
+    inline def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader")
+  @js.native
+  open class InfiniteLoader protected ()
+    extends typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoader {
+    def this(props: InfiniteLoaderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InfiniteLoaderProps, context: Any) = this()
   }
   /* static members */
   object InfiniteLoader {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("paper.PaperScript")
 @js.native
-class PaperScript ()
+open class PaperScript ()
   extends StObject
      with typings.paper.paper.PaperScript
 object PaperScript {

@@ -110,6 +110,6 @@ object Options {
     
     inline def setUpdateOnLoadUndefined: Self = StObject.set(x, "updateOnLoad", js.undefined)
     
-    inline def setUpdateOnLoadVarargs(value: String*): Self = StObject.set(x, "updateOnLoad", js.Array(value :_*))
+    inline def setUpdateOnLoadVarargs(value: String*): Self = StObject.set(x, "updateOnLoad", js.Array(value*))
   }
 }

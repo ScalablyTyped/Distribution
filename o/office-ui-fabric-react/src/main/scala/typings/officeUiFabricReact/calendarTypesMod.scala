@@ -4,7 +4,6 @@ import typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType
 import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
 import typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
 import typings.react.mod.HTMLAttributes
-import typings.std.Date
 import typings.std.HTMLElement
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
@@ -89,24 +88,24 @@ object calendarTypesMod {
     /**
       * Callback to apply formatting to the days in the Day Picker calendar
       */
-    def formatDay(date: Date): String = js.native
+    def formatDay(date: js.Date): String = js.native
     
     /**
       * Callback to apply formatting to mmmm d, yyyy formated dates
       */
-    def formatMonthDayYear(date: Date): String = js.native
-    def formatMonthDayYear(date: Date, strings: ICalendarStrings): String = js.native
+    def formatMonthDayYear(date: js.Date): String = js.native
+    def formatMonthDayYear(date: js.Date, strings: ICalendarStrings): String = js.native
     
     /**
       * Callback to apply formatting to the month and year in the Day Picker header
       */
-    def formatMonthYear(date: Date): String = js.native
-    def formatMonthYear(date: Date, strings: ICalendarStrings): String = js.native
+    def formatMonthYear(date: js.Date): String = js.native
+    def formatMonthYear(date: js.Date, strings: ICalendarStrings): String = js.native
     
     /**
       * Callback to apply formatting to the year in the Month Picker header
       */
-    def formatYear(date: Date): String = js.native
+    def formatYear(date: js.Date): String = js.native
   }
   
   trait ICalendarIconStrings extends StObject {
@@ -224,12 +223,12 @@ object calendarTypesMod {
     /**
       * If set the Calendar will not allow navigation to or selection of a date later than this value.
       */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * If set the Calendar will not allow navigation to or selection of a date earlier than this value.
       */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Customize navigation icons using ICalendarIconStrings
@@ -248,13 +247,13 @@ object calendarTypesMod {
       * for the component.
       */
     var onSelectDate: js.UndefOr[
-        js.Function2[/* date */ Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[Date]], Unit]
+        js.Function2[/* date */ js.Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[js.Date]], Unit]
       ] = js.undefined
     
     /**
       * If set the Calendar will not allow selection of dates in this array.
       */
-    var restrictedDates: js.UndefOr[js.Array[Date]] = js.undefined
+    var restrictedDates: js.UndefOr[js.Array[js.Date]] = js.undefined
     
     /**
       * When clicking on "Today", select the date and close the calendar.
@@ -305,12 +304,12 @@ object calendarTypesMod {
     /**
       * Value of today. If null, current time in client machine will be used.
       */
-    var today: js.UndefOr[Date] = js.undefined
+    var today: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Default value of the Calendar, if any
       */
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The days that are selectable when dateRangeType is WorkWeek.
@@ -374,11 +373,11 @@ object calendarTypesMod {
       
       inline def setIsMonthPickerVisibleUndefined: Self = StObject.set(x, "isMonthPickerVisible", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -390,15 +389,15 @@ object calendarTypesMod {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnSelectDate(value: (/* date */ Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[Date]]) => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction2(value))
+      inline def setOnSelectDate(value: (/* date */ js.Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[js.Date]]) => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction2(value))
       
       inline def setOnSelectDateUndefined: Self = StObject.set(x, "onSelectDate", js.undefined)
       
-      inline def setRestrictedDates(value: js.Array[Date]): Self = StObject.set(x, "restrictedDates", value.asInstanceOf[js.Any])
+      inline def setRestrictedDates(value: js.Array[js.Date]): Self = StObject.set(x, "restrictedDates", value.asInstanceOf[js.Any])
       
       inline def setRestrictedDatesUndefined: Self = StObject.set(x, "restrictedDates", js.undefined)
       
-      inline def setRestrictedDatesVarargs(value: Date*): Self = StObject.set(x, "restrictedDates", js.Array(value :_*))
+      inline def setRestrictedDatesVarargs(value: js.Date*): Self = StObject.set(x, "restrictedDates", js.Array(value*))
       
       inline def setSelectDateOnClick(value: Boolean): Self = StObject.set(x, "selectDateOnClick", value.asInstanceOf[js.Any])
       
@@ -432,11 +431,11 @@ object calendarTypesMod {
       
       inline def setStringsNull: Self = StObject.set(x, "strings", null)
       
-      inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: js.Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
       inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -444,7 +443,7 @@ object calendarTypesMod {
       
       inline def setWorkWeekDaysUndefined: Self = StObject.set(x, "workWeekDays", js.undefined)
       
-      inline def setWorkWeekDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workWeekDays", js.Array(value :_*))
+      inline def setWorkWeekDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workWeekDays", js.Array(value*))
       
       inline def setYearPickerHidden(value: Boolean): Self = StObject.set(x, "yearPickerHidden", value.asInstanceOf[js.Any])
       
@@ -557,7 +556,7 @@ object calendarTypesMod {
       
       inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setGoToToday(value: String): Self = StObject.set(x, "goToToday", value.asInstanceOf[js.Any])
       
@@ -567,7 +566,7 @@ object calendarTypesMod {
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setNextMonthAriaLabel(value: String): Self = StObject.set(x, "nextMonthAriaLabel", value.asInstanceOf[js.Any])
       
@@ -595,11 +594,11 @@ object calendarTypesMod {
       
       inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value*))
       
       inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
       
       inline def setWeekNumberFormatString(value: String): Self = StObject.set(x, "weekNumberFormatString", value.asInstanceOf[js.Any])
       

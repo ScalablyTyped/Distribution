@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientDropDownEdit")
 @js.native
-class BootstrapClientDropDownEdit ()
+open class BootstrapClientDropDownEdit ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDropDownEdit {
   
@@ -71,7 +71,7 @@ class BootstrapClientDropDownEdit ()
     * @param number A button index.
     */
   /* CompleteClass */
-  override def GetButton(number: Double): js.Any = js.native
+  override def GetButton(number: Double): Any = js.native
   
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
@@ -118,10 +118,10 @@ class BootstrapClientDropDownEdit ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -139,13 +139,13 @@ class BootstrapClientDropDownEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
@@ -163,7 +163,7 @@ class BootstrapClientDropDownEdit ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -336,7 +336,7 @@ class BootstrapClientDropDownEdit ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -359,13 +359,13 @@ class BootstrapClientDropDownEdit ()
   override def ShowDropDown(): Unit = js.native
   
   /**
-    * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
+    * Occurs on the client when a user changes the editor's text and the editor loses focus.
     */
   /* CompleteClass */
   var TextChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native
   
   /**
-    * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
+    * Fires on the client each time a user changes an editor's input value.
     */
   /* CompleteClass */
   var UserInput: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native

@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openid-client", "DeviceFlowHandle")
 @js.native
-class DeviceFlowHandle[TClient /* <: Client */] () extends StObject {
+open class DeviceFlowHandle[TClient /* <: BaseClient */] () extends StObject {
+  
+  def abort(): Unit = js.native
   
   var client: TClient = js.native
   
@@ -18,8 +20,8 @@ class DeviceFlowHandle[TClient /* <: Client */] () extends StObject {
   
   var expires_in: Double = js.native
   
-  // tslint:disable-line:no-unnecessary-generics
   def poll(): js.Promise[TokenSet] = js.native
+  def poll(options: DeviceFlowPollOptions): js.Promise[TokenSet] = js.native
   
   var user_code: String = js.native
   

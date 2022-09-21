@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "LongestCommonSubsequence")
 @js.native
-class LongestCommonSubsequence[T] protected ()
+open class LongestCommonSubsequence[T] protected ()
   extends typings.webcola.gridrouterMod.LongestCommonSubsequence[T] {
   def this(s: js.Array[T], t: js.Array[T]) = this()
 }
@@ -19,6 +19,6 @@ object LongestCommonSubsequence {
   
   @JSImport("webcola", "LongestCommonSubsequence.findMatch")
   @js.native
-  def findMatch: js.Any = js.native
-  inline def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
+  def findMatch: Any = js.native
+  inline def findMatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
 }

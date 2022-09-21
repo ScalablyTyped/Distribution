@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardParameter")
 @js.native
-class ASPxClientDashboardParameter ()
+open class ASPxClientDashboardParameter ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardParameter {
   
@@ -17,7 +17,7 @@ class ASPxClientDashboardParameter ()
     * Returns a default parameter value.
     */
   /* CompleteClass */
-  override def GetDefaultValue(): js.Any = js.native
+  override def GetDefaultValue(): Any = js.native
   
   /**
     * Returns the parameter's description displayed to an end-user.
@@ -41,7 +41,7 @@ class ASPxClientDashboardParameter ()
     * Returns a current parameter value(s).
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns possible parameter values.
@@ -61,12 +61,12 @@ class ASPxClientDashboardParameter ()
     * @param value The current parameter value(s).
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /** @deprecated Use the GetValue method instead. */
   /**
     * Gets the dashboard parameter value on the client side.
     */
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

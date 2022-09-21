@@ -177,6 +177,9 @@ trait Request extends StObject {
   /** Updates dimensions' properties. */
   var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.undefined
   
+  /** Updates an embedded object's border. */
+  var updateEmbeddedObjectBorder: js.UndefOr[UpdateEmbeddedObjectBorderRequest] = js.undefined
+  
   /** Updates an embedded object's (e.g. chart, image) position. */
   var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.undefined
   
@@ -434,6 +437,10 @@ object Request {
     inline def setUpdateDimensionProperties(value: UpdateDimensionPropertiesRequest): Self = StObject.set(x, "updateDimensionProperties", value.asInstanceOf[js.Any])
     
     inline def setUpdateDimensionPropertiesUndefined: Self = StObject.set(x, "updateDimensionProperties", js.undefined)
+    
+    inline def setUpdateEmbeddedObjectBorder(value: UpdateEmbeddedObjectBorderRequest): Self = StObject.set(x, "updateEmbeddedObjectBorder", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateEmbeddedObjectBorderUndefined: Self = StObject.set(x, "updateEmbeddedObjectBorder", js.undefined)
     
     inline def setUpdateEmbeddedObjectPosition(value: UpdateEmbeddedObjectPositionRequest): Self = StObject.set(x, "updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
     

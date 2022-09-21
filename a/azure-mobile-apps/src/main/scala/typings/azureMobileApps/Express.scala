@@ -27,7 +27,7 @@ object Express {
   
   trait Response extends StObject {
     
-    var results: js.UndefOr[js.Any] = js.undefined
+    var results: js.UndefOr[Any] = js.undefined
   }
   object Response {
     
@@ -38,7 +38,7 @@ object Express {
     
     extension [Self <: Response](x: Self) {
       
-      inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     }

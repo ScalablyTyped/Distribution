@@ -139,7 +139,7 @@ object tooltipTypesMod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: Element*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: Element*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setDelay(value: TooltipDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

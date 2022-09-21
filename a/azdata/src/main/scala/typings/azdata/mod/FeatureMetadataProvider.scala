@@ -27,6 +27,6 @@ object FeatureMetadataProvider {
     
     inline def setOptionsMetadata(value: js.Array[ServiceOption]): Self = StObject.set(x, "optionsMetadata", value.asInstanceOf[js.Any])
     
-    inline def setOptionsMetadataVarargs(value: ServiceOption*): Self = StObject.set(x, "optionsMetadata", js.Array(value :_*))
+    inline def setOptionsMetadataVarargs(value: ServiceOption*): Self = StObject.set(x, "optionsMetadata", js.Array(value*))
   }
 }

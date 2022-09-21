@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePlayerSessionsOutput extends StObject {
   
   /**
-    * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
+    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -33,6 +33,6 @@ object DescribePlayerSessionsOutput {
     
     inline def setPlayerSessionsUndefined: Self = StObject.set(x, "PlayerSessions", js.undefined)
     
-    inline def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value :_*))
+    inline def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value*))
   }
 }

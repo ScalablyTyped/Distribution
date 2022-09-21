@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "raml-1-parser" : "1.1.67"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "raml-1-parser" : "1.1.67"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

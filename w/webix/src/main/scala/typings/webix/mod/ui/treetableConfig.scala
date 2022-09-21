@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait treetableConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var areaselect: js.UndefOr[Boolean] = js.undefined
   
@@ -30,13 +30,13 @@ trait treetableConfig extends StObject {
   
   var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var columns: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var columns: js.UndefOr[js.Array[Any]] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var datafetch: js.UndefOr[Double] = js.undefined
   
@@ -44,7 +44,7 @@ trait treetableConfig extends StObject {
   
   var datatype: js.UndefOr[String] = js.undefined
   
-  var delimiter: js.UndefOr[js.Any] = js.undefined
+  var delimiter: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -64,7 +64,7 @@ trait treetableConfig extends StObject {
   
   var externalData: js.UndefOr[WebixCallback] = js.undefined
   
-  var filterMode: js.UndefOr[js.Any] = js.undefined
+  var filterMode: js.UndefOr[Any] = js.undefined
   
   var fixedRowHeight: js.UndefOr[Boolean] = js.undefined
   
@@ -78,7 +78,7 @@ trait treetableConfig extends StObject {
   
   var headerRowHeight: js.UndefOr[Double] = js.undefined
   
-  var headermenu: js.UndefOr[js.Any] = js.undefined
+  var headermenu: js.UndefOr[Any] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -96,7 +96,7 @@ trait treetableConfig extends StObject {
   
   var loadahead: js.UndefOr[Double] = js.undefined
   
-  var map: js.UndefOr[js.Any] = js.undefined
+  var map: js.UndefOr[Any] = js.undefined
   
   var math: js.UndefOr[Boolean] = js.undefined
   
@@ -124,15 +124,15 @@ trait treetableConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
   var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
-  var pager: js.UndefOr[js.Any] = js.undefined
+  var pager: js.UndefOr[Any] = js.undefined
   
   var prerender: js.UndefOr[Boolean] = js.undefined
   
@@ -140,9 +140,9 @@ trait treetableConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var resizeColumn: js.UndefOr[js.Any] = js.undefined
+  var resizeColumn: js.UndefOr[Any] = js.undefined
   
-  var resizeRow: js.UndefOr[js.Any] = js.undefined
+  var resizeRow: js.UndefOr[Any] = js.undefined
   
   var rightSplit: js.UndefOr[Double] = js.undefined
   
@@ -150,11 +150,11 @@ trait treetableConfig extends StObject {
   
   var rowLineHeight: js.UndefOr[Double] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.undefined
+  var rules: js.UndefOr[Any] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.undefined
+  var save: js.UndefOr[Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  var scheme: js.UndefOr[Any] = js.undefined
   
   var scroll: js.UndefOr[Boolean | String] = js.undefined
   
@@ -166,7 +166,9 @@ trait treetableConfig extends StObject {
   
   var select: js.UndefOr[Boolean | String] = js.undefined
   
-  var spans: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var sort: js.UndefOr[Boolean | String] = js.undefined
+  
+  var spans: js.UndefOr[js.Array[Any]] = js.undefined
   
   var subRowHeight: js.UndefOr[String | Double] = js.undefined
   
@@ -178,13 +180,13 @@ trait treetableConfig extends StObject {
   
   var threeState: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  var tooltip: js.UndefOr[Any] = js.undefined
   
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
   
   var undo: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -201,7 +203,7 @@ object treetableConfig {
   
   extension [Self <: treetableConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -241,25 +243,25 @@ object treetableConfig {
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatafetch(value: Double): Self = StObject.set(x, "datafetch", value.asInstanceOf[js.Any])
     
@@ -273,7 +275,7 @@ object treetableConfig {
     
     inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    inline def setDelimiter(value: js.Any): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Any): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
@@ -313,7 +315,7 @@ object treetableConfig {
     
     inline def setExternalDataUndefined: Self = StObject.set(x, "externalData", js.undefined)
     
-    inline def setFilterMode(value: js.Any): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+    inline def setFilterMode(value: Any): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
     inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
     
@@ -341,7 +343,7 @@ object treetableConfig {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeadermenu(value: js.Any): Self = StObject.set(x, "headermenu", value.asInstanceOf[js.Any])
+    inline def setHeadermenu(value: Any): Self = StObject.set(x, "headermenu", value.asInstanceOf[js.Any])
     
     inline def setHeadermenuUndefined: Self = StObject.set(x, "headermenu", js.undefined)
     
@@ -377,7 +379,7 @@ object treetableConfig {
     
     inline def setLoadaheadUndefined: Self = StObject.set(x, "loadahead", js.undefined)
     
-    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
@@ -431,11 +433,11 @@ object treetableConfig {
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[js.Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
@@ -449,7 +451,7 @@ object treetableConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
     inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
@@ -465,11 +467,11 @@ object treetableConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setResizeColumn(value: js.Any): Self = StObject.set(x, "resizeColumn", value.asInstanceOf[js.Any])
+    inline def setResizeColumn(value: Any): Self = StObject.set(x, "resizeColumn", value.asInstanceOf[js.Any])
     
     inline def setResizeColumnUndefined: Self = StObject.set(x, "resizeColumn", js.undefined)
     
-    inline def setResizeRow(value: js.Any): Self = StObject.set(x, "resizeRow", value.asInstanceOf[js.Any])
+    inline def setResizeRow(value: Any): Self = StObject.set(x, "resizeRow", value.asInstanceOf[js.Any])
     
     inline def setResizeRowUndefined: Self = StObject.set(x, "resizeRow", js.undefined)
     
@@ -485,15 +487,15 @@ object treetableConfig {
     
     inline def setRowLineHeightUndefined: Self = StObject.set(x, "rowLineHeight", js.undefined)
     
-    inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setSave(value: js.Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -517,11 +519,15 @@ object treetableConfig {
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setSpans(value: js.Array[js.Any]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSpans(value: js.Array[Any]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
     inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
     
-    inline def setSpansVarargs(value: js.Any*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: Any*): Self = StObject.set(x, "spans", js.Array(value*))
     
     inline def setSubRowHeight(value: String | Double): Self = StObject.set(x, "subRowHeight", value.asInstanceOf[js.Any])
     
@@ -543,11 +549,11 @@ object treetableConfig {
     
     inline def setThreeStateUndefined: Self = StObject.set(x, "threeState", js.undefined)
     
-    inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -555,7 +561,7 @@ object treetableConfig {
     
     inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

@@ -10,10 +10,10 @@ DOM utilities module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dom |
 | Keywords           | wordpress, gutenberg, dom, utils |
-| # releases         | 28 |
-| # dependents       | 13 |
-| # downloads        | 918420 |
-| # stars            | 0 |
+| # releases         | 64 |
+| # dependents       | 0.0 |
+| # downloads        | 178389.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/dom/README.md)

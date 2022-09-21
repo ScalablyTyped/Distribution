@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +12,15 @@ trait UpgradeInfo
   
   def get_errors(): Double
   
-  def get_lastUpdated(): Date
+  def get_lastUpdated(): js.Date
   
   def get_logFile(): String
   
-  def get_requestDate(): Date
+  def get_requestDate(): js.Date
   
   def get_retryCount(): Double
   
-  def get_startTime(): Date
+  def get_startTime(): js.Date
   
   def get_status(): UpgradeStatus
   
@@ -32,16 +31,16 @@ trait UpgradeInfo
 object UpgradeInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_errorFile: () => String,
     get_errors: () => Double,
-    get_lastUpdated: () => Date,
+    get_lastUpdated: () => js.Date,
     get_logFile: () => String,
-    get_requestDate: () => Date,
+    get_requestDate: () => js.Date,
     get_retryCount: () => Double,
-    get_startTime: () => Date,
+    get_startTime: () => js.Date,
     get_status: () => UpgradeStatus,
     get_typeId: () => String,
     get_upgradeType: () => UpgradeType,
@@ -58,15 +57,15 @@ object UpgradeInfo {
     
     inline def setGet_errors(value: () => Double): Self = StObject.set(x, "get_errors", js.Any.fromFunction0(value))
     
-    inline def setGet_lastUpdated(value: () => Date): Self = StObject.set(x, "get_lastUpdated", js.Any.fromFunction0(value))
+    inline def setGet_lastUpdated(value: () => js.Date): Self = StObject.set(x, "get_lastUpdated", js.Any.fromFunction0(value))
     
     inline def setGet_logFile(value: () => String): Self = StObject.set(x, "get_logFile", js.Any.fromFunction0(value))
     
-    inline def setGet_requestDate(value: () => Date): Self = StObject.set(x, "get_requestDate", js.Any.fromFunction0(value))
+    inline def setGet_requestDate(value: () => js.Date): Self = StObject.set(x, "get_requestDate", js.Any.fromFunction0(value))
     
     inline def setGet_retryCount(value: () => Double): Self = StObject.set(x, "get_retryCount", js.Any.fromFunction0(value))
     
-    inline def setGet_startTime(value: () => Date): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
+    inline def setGet_startTime(value: () => js.Date): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
     
     inline def setGet_status(value: () => UpgradeStatus): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     

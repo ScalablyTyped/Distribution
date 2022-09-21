@@ -8,5 +8,5 @@ object setIdentityPoolRolesOutputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/SetIdentityPoolRolesOutput", "SetIdentityPoolRolesOutput")
   @js.native
-  val SetIdentityPoolRolesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SetIdentityPoolRolesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

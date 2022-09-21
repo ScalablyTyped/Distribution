@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SampleTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var size: Double | SignalRef
   

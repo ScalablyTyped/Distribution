@@ -10,9 +10,9 @@ prototype RESTful services quickly
 | Full name          | siesta |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 513 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 49.333333333333336 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/goatslacker/siesta#readme)

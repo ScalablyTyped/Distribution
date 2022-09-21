@@ -51,25 +51,4 @@ object anon {
       inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
-  
-  trait Free extends StObject {
-    
-    var free: Double
-    
-    var total: Double
-  }
-  object Free {
-    
-    inline def apply(free: Double, total: Double): Free = {
-      val __obj = js.Dynamic.literal(free = free.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Free]
-    }
-    
-    extension [Self <: Free](x: Self) {
-      
-      inline def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
-      
-      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
-    }
-  }
 }

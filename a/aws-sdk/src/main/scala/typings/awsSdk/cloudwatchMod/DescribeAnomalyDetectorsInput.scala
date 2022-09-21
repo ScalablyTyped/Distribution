@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAnomalyDetectorsInput extends StObject {
   
   /**
+    * The anomaly detector types to request when using DescribeAnomalyDetectorsInput. If empty, defaults to SINGLE_METRIC.
+    */
+  var AnomalyDetectorTypes: js.UndefOr[typings.awsSdk.cloudwatchMod.AnomalyDetectorTypes] = js.undefined
+  
+  /**
     * Limits the results to only the anomaly detection models that are associated with the specified metric dimensions. If there are multiple metrics that have these dimensions and have anomaly detection models associated, they're all returned.
     */
   var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
@@ -40,11 +45,17 @@ object DescribeAnomalyDetectorsInput {
   
   extension [Self <: DescribeAnomalyDetectorsInput](x: Self) {
     
+    inline def setAnomalyDetectorTypes(value: AnomalyDetectorTypes): Self = StObject.set(x, "AnomalyDetectorTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAnomalyDetectorTypesUndefined: Self = StObject.set(x, "AnomalyDetectorTypes", js.undefined)
+    
+    inline def setAnomalyDetectorTypesVarargs(value: AnomalyDetectorType*): Self = StObject.set(x, "AnomalyDetectorTypes", js.Array(value*))
+    
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setMaxResults(value: MaxReturnedResultsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

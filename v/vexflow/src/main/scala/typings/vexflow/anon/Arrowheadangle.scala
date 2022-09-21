@@ -66,7 +66,7 @@ object Arrowheadangle {
     
     inline def setLine_dash(value: js.Array[Double]): Self = StObject.set(x, "line_dash", value.asInstanceOf[js.Any])
     
-    inline def setLine_dashVarargs(value: Double*): Self = StObject.set(x, "line_dash", js.Array(value :_*))
+    inline def setLine_dashVarargs(value: Double*): Self = StObject.set(x, "line_dash", js.Array(value*))
     
     inline def setLine_width(value: Double): Self = StObject.set(x, "line_width", value.asInstanceOf[js.Any])
     

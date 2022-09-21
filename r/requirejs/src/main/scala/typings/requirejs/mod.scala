@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def config(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Any]
+  inline def config(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Any]
   
   @JSImport("module", "id")
   @js.native

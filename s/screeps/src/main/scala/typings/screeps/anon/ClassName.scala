@@ -38,23 +38,23 @@ object ClassName {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value*))
     
     inline def setEffect(value: js.Array[Double]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    inline def setEffectVarargs(value: Double*): Self = StObject.set(x, "effect", js.Array(value :_*))
+    inline def setEffectVarargs(value: Double*): Self = StObject.set(x, "effect", js.Array(value*))
     
     inline def setLevel(value: js.Array[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value :_*))
+    inline def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value*))
     
     inline def setOps(value: Double | js.Array[Double]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
-    inline def setOpsVarargs(value: Double*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: Double*): Self = StObject.set(x, "ops", js.Array(value*))
     
     inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

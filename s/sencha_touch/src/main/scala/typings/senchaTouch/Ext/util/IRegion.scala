@@ -55,9 +55,7 @@ trait IRegion
     * @param p Ext.util.Point The point.
     * @returns Ext.util.Region
     */
-  var getOutOfBoundOffset: js.UndefOr[
-    js.Function2[/* axis */ js.UndefOr[js.Any], /* p */ js.UndefOr[IPoint], this.type]
-  ] = js.undefined
+  var getOutOfBoundOffset: js.UndefOr[js.Function2[/* axis */ js.UndefOr[Any], /* p */ js.UndefOr[IPoint], this.type]] = js.undefined
   
   /** [Method] Get the offset amount on the x axis
     * @param p Number The offset.
@@ -75,14 +73,14 @@ trait IRegion
     * @param region Ext.util.Region
     * @returns Ext.util.Region/Boolean Returns the intersected region or false if there is no intersection.
     */
-  var intersect: js.UndefOr[js.Function1[/* region */ js.UndefOr[this.type], js.Any]] = js.undefined
+  var intersect: js.UndefOr[js.Function1[/* region */ js.UndefOr[this.type], Any]] = js.undefined
   
   /** [Method] Check whether the point  offset is out of bounds
     * @param axis String optional
     * @param p Ext.util.Point/Number The point / offset.
     * @returns Boolean
     */
-  var isOutOfBound: js.UndefOr[js.Function2[/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isOutOfBound: js.UndefOr[js.Function2[/* axis */ js.UndefOr[String], /* p */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Check whether the offset is out of bound in the x axis
     * @param p Number The offset.
@@ -111,7 +109,7 @@ trait IRegion
     * @param offset Object
     * @returns Ext.util.Region This Region.
     */
-  var translateBy: js.UndefOr[js.Function1[/* offset */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var translateBy: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Returns the smallest region that contains the current AND targetRegion
     * @param region Ext.util.Region
@@ -150,7 +148,7 @@ object IRegion {
     
     inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    inline def setGetOutOfBoundOffset(value: (/* axis */ js.UndefOr[js.Any], /* p */ js.UndefOr[IPoint]) => IRegion): Self = StObject.set(x, "getOutOfBoundOffset", js.Any.fromFunction2(value))
+    inline def setGetOutOfBoundOffset(value: (/* axis */ js.UndefOr[Any], /* p */ js.UndefOr[IPoint]) => IRegion): Self = StObject.set(x, "getOutOfBoundOffset", js.Any.fromFunction2(value))
     
     inline def setGetOutOfBoundOffsetUndefined: Self = StObject.set(x, "getOutOfBoundOffset", js.undefined)
     
@@ -162,11 +160,11 @@ object IRegion {
     
     inline def setGetOutOfBoundOffsetYUndefined: Self = StObject.set(x, "getOutOfBoundOffsetY", js.undefined)
     
-    inline def setIntersect(value: /* region */ js.UndefOr[IRegion] => js.Any): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
+    inline def setIntersect(value: /* region */ js.UndefOr[IRegion] => Any): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
     
     inline def setIntersectUndefined: Self = StObject.set(x, "intersect", js.undefined)
     
-    inline def setIsOutOfBound(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isOutOfBound", js.Any.fromFunction2(value))
+    inline def setIsOutOfBound(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "isOutOfBound", js.Any.fromFunction2(value))
     
     inline def setIsOutOfBoundUndefined: Self = StObject.set(x, "isOutOfBound", js.undefined)
     
@@ -186,7 +184,7 @@ object IRegion {
     
     inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
-    inline def setTranslateBy(value: /* offset */ js.UndefOr[js.Any] => IRegion): Self = StObject.set(x, "translateBy", js.Any.fromFunction1(value))
+    inline def setTranslateBy(value: /* offset */ js.UndefOr[Any] => IRegion): Self = StObject.set(x, "translateBy", js.Any.fromFunction1(value))
     
     inline def setTranslateByUndefined: Self = StObject.set(x, "translateBy", js.undefined)
     

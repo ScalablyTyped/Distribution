@@ -10,7 +10,7 @@ object componentMod {
   
   @JSImport("sauronjs/src/core/component", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Component {
     def this(params: ComponentParameters) = this()
@@ -33,9 +33,9 @@ object componentMod {
     def attr(key: String, value: String): Unit = js.native
     
     def broadcast(event: String): Unit = js.native
-    def broadcast(event: String, data: js.Any): Unit = js.native
+    def broadcast(event: String, data: Any): Unit = js.native
     
-    var broadcastSubject: js.Any = js.native
+    var broadcastSubject: Any = js.native
     
     def destroy(): Unit = js.native
     
@@ -47,15 +47,15 @@ object componentMod {
     
     def registerSubscription(
       subscriptions: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ Any
         ]
     ): Unit = js.native
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[Any] = js.native
     
     def subscribe(
       observables: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
     ): Unit = js.native
   }
@@ -64,7 +64,7 @@ object componentMod {
     
     var element: HTMLElement
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
   }
   object ComponentParameters {
     
@@ -77,7 +77,7 @@ object componentMod {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }

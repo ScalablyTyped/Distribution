@@ -4,6 +4,7 @@ import typings.antDesignReactNative.cascaderTypesMod.CascaderValue
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +33,7 @@ object pickerPropsTypeMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: PickerData*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: PickerData*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,7 @@ object pickerPropsTypeMod {
   /* Inlined parent utility-types.utility-types.Omit<@ant-design/react-native.@ant-design/react-native/lib/picker/PopupPickerTypes.PopupPickerProps, 'styles'> */
   trait PickerPropsType extends StObject {
     
-    var WrapComponent: js.UndefOr[js.Any] = js.undefined
+    var WrapComponent: js.UndefOr[Any] = js.undefined
     
     var actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
     
@@ -67,7 +68,7 @@ object pickerPropsTypeMod {
     
     var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var maskTransitionName: js.UndefOr[String] = js.undefined
     
@@ -77,13 +78,13 @@ object pickerPropsTypeMod {
     
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onPickerChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var picker: js.UndefOr[js.Any] = js.undefined
+    var picker: js.UndefOr[Any] = js.undefined
     
     var pickerValueChangeProp: js.UndefOr[String] = js.undefined
     
@@ -91,7 +92,7 @@ object pickerPropsTypeMod {
     
     var popupTransitionName: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String | ReactElement] = js.undefined
     
@@ -136,7 +137,7 @@ object pickerPropsTypeMod {
       
       inline def setData(value: js.Array[js.Array[PickerData] | PickerData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,7 @@ object pickerPropsTypeMod {
       
       inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
       
-      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
       inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
@@ -182,7 +183,7 @@ object pickerPropsTypeMod {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnOk(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      inline def setOnOk(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
       inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
       
@@ -194,7 +195,7 @@ object pickerPropsTypeMod {
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      inline def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
       
@@ -210,7 +211,7 @@ object pickerPropsTypeMod {
       
       inline def setPopupTransitionNameUndefined: Self = StObject.set(x, "popupTransitionName", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -230,13 +231,13 @@ object pickerPropsTypeMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      inline def setWrapComponent(value: js.Any): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
+      inline def setWrapComponent(value: Any): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
       
       inline def setWrapComponentUndefined: Self = StObject.set(x, "WrapComponent", js.undefined)
       

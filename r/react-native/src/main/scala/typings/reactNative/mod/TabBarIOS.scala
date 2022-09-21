@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "TabBarIOS")
 @js.native
-class TabBarIOS protected ()
-  extends Component[TabBarIOSProps, js.Object, js.Any] {
+open class TabBarIOS protected ()
+  extends Component[TabBarIOSProps, js.Object, Any] {
   def this(props: TabBarIOSProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TabBarIOSProps, context: js.Any) = this()
+  def this(props: TabBarIOSProps, context: Any) = this()
 }
 /* static members */
 object TabBarIOS {

@@ -45,19 +45,19 @@ object trainingConfigMod {
       
       inline def setLoss(value: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
       
-      inline def setLossVarargs(value: LossIdentifier*): Self = StObject.set(x, "loss", js.Array(value :_*))
+      inline def setLossVarargs(value: LossIdentifier*): Self = StObject.set(x, "loss", js.Array(value*))
       
       inline def setLoss_weights(value: LossWeights): Self = StObject.set(x, "loss_weights", value.asInstanceOf[js.Any])
       
       inline def setLoss_weightsUndefined: Self = StObject.set(x, "loss_weights", js.undefined)
       
-      inline def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value :_*))
+      inline def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value*))
       
       inline def setMetrics(value: js.Array[MetricsIdentifier] | StringDictionary[MetricsIdentifier]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
       inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      inline def setMetricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "metrics", js.Array(value*))
       
       inline def setOptimizer_config(value: OptimizerSerialization): Self = StObject.set(x, "optimizer_config", value.asInstanceOf[js.Any])
       
@@ -69,7 +69,7 @@ object trainingConfigMod {
       
       inline def setWeighted_metricsUndefined: Self = StObject.set(x, "weighted_metrics", js.undefined)
       
-      inline def setWeighted_metricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "weighted_metrics", js.Array(value :_*))
+      inline def setWeighted_metricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "weighted_metrics", js.Array(value*))
     }
   }
 }

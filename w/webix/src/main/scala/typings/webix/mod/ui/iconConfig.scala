@@ -11,7 +11,7 @@ trait iconConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var autowidth: js.UndefOr[Boolean] = js.undefined
   
@@ -21,7 +21,7 @@ trait iconConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ trait iconConfig extends StObject {
   
   var popup: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  var tooltip: js.UndefOr[Any] = js.undefined
   
   var value: js.UndefOr[String | Double] = js.undefined
   
@@ -78,7 +78,7 @@ object iconConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -98,7 +98,7 @@ object iconConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -170,7 +170,7 @@ object iconConfig {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     

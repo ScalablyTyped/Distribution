@@ -4,8 +4,9 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -31,12 +32,12 @@ object calloutMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/callout/callout", "Callout")
   @js.native
-  class Callout protected ()
-    extends AbstractPureComponent2[ICalloutProps, js.Object, js.Object] {
-    def this(props: ICalloutProps) = this()
-    def this(props: ICalloutProps, context: js.Any) = this()
+  open class Callout protected ()
+    extends AbstractPureComponent2[CalloutProps, js.Object, js.Object] {
+    def this(props: CalloutProps) = this()
+    def this(props: CalloutProps, context: Any) = this()
     
-    /* private */ var getIconName: js.Any = js.native
+    /* private */ var getIconName: Any = js.native
   }
   /* static members */
   object Callout {
@@ -50,6 +51,8 @@ object calloutMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type CalloutProps = ICalloutProps
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait ICalloutProps
@@ -97,11 +100,11 @@ object calloutMod {
       * If this prop is omitted or `undefined`, the `intent` prop will determine a default icon.
       * If this prop is explicitly `null`, no icon will be displayed (regardless of `intent`).
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -143,7 +146,7 @@ object calloutMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -230,7 +233,7 @@ object calloutMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,7 @@ object calloutMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -254,7 +257,7 @@ object calloutMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -314,7 +317,7 @@ object calloutMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

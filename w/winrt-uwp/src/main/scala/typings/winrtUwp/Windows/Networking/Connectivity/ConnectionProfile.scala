@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
@@ -18,7 +17,7 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of AttributedNetworkUsage objects, which indicate the sent and received values, in bytes, and the total amount of time the app was connected during the corresponding time interval.
     */
-  def getAttributedNetworkUsageAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getAttributedNetworkUsageAsync(startTime: js.Date, endTime: js.Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the cost information for the connection.
@@ -33,7 +32,7 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of ConnectivityInterval objects, which indicate the start time and duration for the current or prior connections.
     */
-  def getConnectivityIntervalsAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getConnectivityIntervalsAsync(startTime: js.Date, endTime: js.Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the current status of the data plan associated with the connection.
@@ -53,7 +52,7 @@ trait ConnectionProfile extends StObject {
     * @param EndTime The end date/time for the usage data request.
     * @return The requested local data usage information.
     */
-  def getLocalUsage(StartTime: Date, EndTime: Date): DataUsage = js.native
+  def getLocalUsage(StartTime: js.Date, EndTime: js.Date): DataUsage = js.native
   /**
     * Gets the estimated data usage for a connection over a specific period of time and roaming state.
     * @param StartTime The start date/time for the usage data request.
@@ -61,7 +60,7 @@ trait ConnectionProfile extends StObject {
     * @param States The roaming state to scope the request to.
     * @return The requested local data usage information.
     */
-  def getLocalUsage(StartTime: Date, EndTime: Date, States: RoamingStates): DataUsage = js.native
+  def getLocalUsage(StartTime: js.Date, EndTime: js.Date, States: RoamingStates): DataUsage = js.native
   
   /**
     * Gets the network connectivity level for this connection. This value indicates what network resources, if any, are currently available.
@@ -83,7 +82,12 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of NetworkUsage objects, which indicate the sent and received values, in bytes, and the total amount of time the profile was connected during the corresponding time interval.
     */
-  def getNetworkUsageAsync(startTime: Date, endTime: Date, granularity: DataUsageGranularity, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getNetworkUsageAsync(
+    startTime: js.Date,
+    endTime: js.Date,
+    granularity: DataUsageGranularity,
+    states: NetworkUsageStates
+  ): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets a value that indicates the current number of signal bars displayed by the Windows UI for the connection.

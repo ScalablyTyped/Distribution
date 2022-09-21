@@ -15,55 +15,55 @@ trait ArcGISImageServiceCapabilitiesQuery
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var maxRecordCount: Unit
+  var maxRecordCount: Boolean
   
   /**
     * Indicates if the layer supports queries for distinct values based on fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsDistinct: Unit
+  var supportsDistinct: Boolean
   
   /**
     * Indicates if the layer returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsOrderBy: Unit
+  var supportsOrderBy: Boolean
   
   /**
     * Indicates if the layer supports paged queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsPagination: Unit
+  var supportsPagination: Boolean
   
   /**
     * Indicates if the layer supports use of standardized queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsStandardizedQueriesOnly: Unit
+  var supportsStandardizedQueriesOnly: Boolean
   
   /**
     * Indicates if the layer supports field-based statistical functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsStatistics: Unit
+  var supportsStatistics: Boolean
 }
 object ArcGISImageServiceCapabilitiesQuery {
   
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    maxRecordCount: Unit,
+    maxRecordCount: Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    supportsDistinct: Unit,
-    supportsOrderBy: Unit,
-    supportsPagination: Unit,
-    supportsStandardizedQueriesOnly: Unit,
-    supportsStatistics: Unit
+    supportsDistinct: Boolean,
+    supportsOrderBy: Boolean,
+    supportsPagination: Boolean,
+    supportsStandardizedQueriesOnly: Boolean,
+    supportsStatistics: Boolean
   ): ArcGISImageServiceCapabilitiesQuery = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxRecordCount = maxRecordCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesQuery]
@@ -71,16 +71,16 @@ object ArcGISImageServiceCapabilitiesQuery {
   
   extension [Self <: ArcGISImageServiceCapabilitiesQuery](x: Self) {
     
-    inline def setMaxRecordCount(value: Unit): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
+    inline def setMaxRecordCount(value: Boolean): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     
-    inline def setSupportsDistinct(value: Unit): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
+    inline def setSupportsDistinct(value: Boolean): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
     
-    inline def setSupportsOrderBy(value: Unit): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
+    inline def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
     
-    inline def setSupportsPagination(value: Unit): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
+    inline def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
     
-    inline def setSupportsStandardizedQueriesOnly(value: Unit): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
+    inline def setSupportsStandardizedQueriesOnly(value: Boolean): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
     
-    inline def setSupportsStatistics(value: Unit): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
+    inline def setSupportsStatistics(value: Boolean): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
   }
 }

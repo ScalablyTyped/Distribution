@@ -13,7 +13,7 @@ object constructorMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@jsdevtools/ono/esm/constructor", "Ono")
   @js.native
-  class Ono[T /* <: ErrorLike */] protected ()
+  open class Ono[T /* <: ErrorLike */] protected ()
     extends StObject
        with typings.jsdevtoolsOno.typesMod.Ono[T] {
     def this(constructor: ErrorLikeConstructor[T]) = this()

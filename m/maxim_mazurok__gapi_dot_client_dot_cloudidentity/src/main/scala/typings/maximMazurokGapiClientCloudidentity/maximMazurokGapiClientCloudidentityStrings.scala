@@ -15,6 +15,10 @@ object maximMazurokGapiClientCloudidentityStrings {
   inline def Group: Group = "Group".asInstanceOf[Group]
   
   @js.native
+  sealed trait GroupRelation extends StObject
+  inline def GroupRelation: GroupRelation = "GroupRelation".asInstanceOf[GroupRelation]
+  
+  @js.native
   sealed trait Operation extends StObject
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   

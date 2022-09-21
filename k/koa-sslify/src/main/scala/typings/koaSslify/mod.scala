@@ -14,8 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def default(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def default(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def default(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   inline def azureResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("azureResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -98,7 +98,7 @@ object mod {
       
       inline def setRedirectMethodsUndefined: Self = StObject.set(x, "redirectMethods", js.undefined)
       
-      inline def setRedirectMethodsVarargs(value: String*): Self = StObject.set(x, "redirectMethods", js.Array(value :_*))
+      inline def setRedirectMethodsVarargs(value: String*): Self = StObject.set(x, "redirectMethods", js.Array(value*))
       
       inline def setResolver(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
       

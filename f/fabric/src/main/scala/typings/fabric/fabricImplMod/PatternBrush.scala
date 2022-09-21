@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "PatternBrush")
 @js.native
-class PatternBrush () extends PencilBrush {
+open class PatternBrush protected () extends PencilBrush {
+  /**
+    * Constructor
+    * @param {Canvas} canvas
+    */
+  def this(canvas: Canvas) = this()
   
   /**
     * Creates "pattern" instance property
     */
-  def getPattern(): js.Any = js.native
+  def getPattern(): Any = js.native
   
   def getPatternSrc(): HTMLCanvasElement = js.native
   

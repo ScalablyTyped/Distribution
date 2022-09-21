@@ -4,7 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`absolute-value`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +23,11 @@ trait PointCloudStretchRendererProperties
   /**
     * A transform that is applied to the field value before evaluating the renderer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
     */
-  var fieldTransformType: js.UndefOr[none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
+  var fieldTransformType: js.UndefOr[none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
   
   /**
     * An object providing options for displaying the renderer in the Legend.
@@ -39,7 +41,7 @@ trait PointCloudStretchRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
     */
-  var stops: js.UndefOr[js.Array[PointCloudStretchRendererStops]] = js.undefined
+  var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 object PointCloudStretchRendererProperties {
   
@@ -52,7 +54,7 @@ object PointCloudStretchRendererProperties {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setFieldTransformType(value: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
+    inline def setFieldTransformType(value: none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
     
     inline def setFieldTransformTypeUndefined: Self = StObject.set(x, "fieldTransformType", js.undefined)
     
@@ -62,10 +64,10 @@ object PointCloudStretchRendererProperties {
     
     inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    inline def setStops(value: js.Array[PointCloudStretchRendererStops]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[ColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: PointCloudStretchRendererStops*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

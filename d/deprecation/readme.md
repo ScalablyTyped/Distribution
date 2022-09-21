@@ -10,15 +10,12 @@ Log a deprecation message with stack
 | ------------------ | :-------------: |
 | Full name          | deprecation |
 | Keywords           | deprecate, deprecated, deprecation |
-| # releases         | 9 |
-| # dependents       | 31 |
-| # downloads        | 114163315 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9185294E7 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/gr2m/deprecation#readme)
-- [Bugs](https://github.com/gr2m/deprecation/issues)
-- [Repository](https://github.com/gr2m/deprecation)
 - [Npm](https://www.npmjs.com/package/deprecation)
     
 

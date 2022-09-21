@@ -15,7 +15,7 @@ object cliMod {
   
   @JSImport("webdriver-manager/built/lib/cli", "Cli")
   @js.native
-  class Cli ()
+  open class Cli ()
     extends typings.webdriverManager.cliCliMod.Cli
   
   @JSImport("webdriver-manager/built/lib/cli", "LogLevel")
@@ -36,7 +36,7 @@ object cliMod {
   
   @JSImport("webdriver-manager/built/lib/cli", "Logger")
   @js.native
-  class Logger protected ()
+  open class Logger protected ()
     extends typings.webdriverManager.loggerMod.Logger {
     /**
       * Creates a logger instance with an ID for the logger.
@@ -53,8 +53,8 @@ object cliMod {
     
     @JSImport("webdriver-manager/built/lib/cli", "Logger.fd")
     @js.native
-    def fd: js.Any = js.native
-    inline def fd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
+    def fd: Any = js.native
+    inline def fd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/cli", "Logger.firstWrite")
     @js.native
@@ -87,7 +87,7 @@ object cliMod {
       * @param msgs The list of messages.
       * @return The string of the formatted messages
       */
-    inline def msgToFile_(msgs: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("msgToFile_")(msgs.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def msgToFile_(msgs: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("msgToFile_")(msgs.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set up the write location. If writing to a file, get the file descriptor.
@@ -122,7 +122,7 @@ object cliMod {
   
   @JSImport("webdriver-manager/built/lib/cli", "Option")
   @js.native
-  class Option protected ()
+  open class Option protected ()
     extends typings.webdriverManager.optionsMod.Option {
     def this(opt: String, description: String, `type`: String) = this()
     def this(opt: String, description: String, `type`: String, defaultValue: String) = this()
@@ -132,7 +132,7 @@ object cliMod {
   
   @JSImport("webdriver-manager/built/lib/cli", "Program")
   @js.native
-  class Program ()
+  open class Program ()
     extends typings.webdriverManager.programsMod.Program
   /* static members */
   object Program {

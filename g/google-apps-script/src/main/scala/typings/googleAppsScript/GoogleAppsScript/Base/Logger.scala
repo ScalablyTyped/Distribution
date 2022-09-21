@@ -14,6 +14,6 @@ trait Logger extends StObject {
   
   def getLog(): String = js.native
   
-  def log(data: js.Any): Logger = js.native
-  def log(format: String, values: js.Any*): Logger = js.native
+  def log(data: Any): Logger = js.native
+  def log(format: String, values: Any*): Logger = js.native
 }

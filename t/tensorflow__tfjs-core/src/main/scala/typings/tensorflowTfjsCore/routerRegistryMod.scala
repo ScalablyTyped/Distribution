@@ -14,11 +14,11 @@ object routerRegistryMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry")
   @js.native
-  /* private */ class IORouterRegistry () extends StObject {
+  /* private */ open class IORouterRegistry () extends StObject {
     
-    /* private */ var loadRouters: js.Any = js.native
+    /* private */ var loadRouters: Any = js.native
     
-    /* private */ var saveRouters: js.Any = js.native
+    /* private */ var saveRouters: Any = js.native
   }
   /* static members */
   object IORouterRegistry {
@@ -29,13 +29,13 @@ object routerRegistryMod {
     
     @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getHandlers")
     @js.native
-    def getHandlers: js.Any = js.native
-    inline def getHandlers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getHandlers")(x.asInstanceOf[js.Any])
+    def getHandlers: Any = js.native
+    inline def getHandlers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getHandlers")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getInstance")
     @js.native
-    def getInstance: js.Any = js.native
-    inline def getInstance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: Any = js.native
+    inline def getInstance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Look up IOHandler for loading, given a URL-like string.
@@ -63,8 +63,8 @@ object routerRegistryMod {
     
     @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.instance")
     @js.native
-    def instance: js.Any = js.native
-    inline def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    def instance: Any = js.native
+    inline def instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
     
     /**
       * Register a load-handler router.

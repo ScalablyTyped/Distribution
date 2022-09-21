@@ -10,7 +10,7 @@ object basicGeometryDataMod {
   
   @JSImport("wonder.js/dist/es2015/component/geometry/data/BasicGeometryData", "BasicGeometryData")
   @js.native
-  class BasicGeometryData protected () extends GeometryData {
+  open class BasicGeometryData protected () extends GeometryData {
     def this(geometry: Geometry) = this()
   }
   /* static members */

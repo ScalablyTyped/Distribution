@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait ClassX509Cert
     * 
     * 
     */
-  def dump(): js.Array[js.Any] = js.native
+  def dump(): js.Array[Any] = js.native
   
   /**
     * class prop 
@@ -117,7 +116,7 @@ trait ClassX509Cert
     * @readonly
     * @type Date
     */
-  var notAfter: Date = js.native
+  var notAfter: js.Date = js.native
   
   /**
     * class prop 
@@ -128,7 +127,7 @@ trait ClassX509Cert
     * @readonly
     * @type Date
     */
-  var notBefore: Date = js.native
+  var notBefore: js.Date = js.native
   
   /**
     * class prop 

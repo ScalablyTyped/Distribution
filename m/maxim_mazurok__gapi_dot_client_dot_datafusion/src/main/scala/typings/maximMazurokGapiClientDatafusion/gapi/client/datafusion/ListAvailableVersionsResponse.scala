@@ -25,7 +25,7 @@ object ListAvailableVersionsResponse {
     
     inline def setAvailableVersionsUndefined: Self = StObject.set(x, "availableVersions", js.undefined)
     
-    inline def setAvailableVersionsVarargs(value: Version*): Self = StObject.set(x, "availableVersions", js.Array(value :_*))
+    inline def setAvailableVersionsVarargs(value: Version*): Self = StObject.set(x, "availableVersions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

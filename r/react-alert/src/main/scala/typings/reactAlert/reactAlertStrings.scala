@@ -1,6 +1,7 @@
 package typings.reactAlert
 
 import typings.reactAlert.mod.AlertPosition
+import typings.reactAlert.mod.AlertPositionV4
 import typings.reactAlert.mod.AlertTransition
 import typings.reactAlert.mod.AlertType
 import org.scalablytyped.runtime.StObject
@@ -17,18 +18,21 @@ object reactAlertStrings {
   sealed trait `bottom center`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `bottom center`: `bottom center` = ("bottom center").asInstanceOf[`bottom center`]
   
   @js.native
   sealed trait `bottom left`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   
   @js.native
   sealed trait `bottom right`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   
   @js.native
@@ -83,17 +87,20 @@ object reactAlertStrings {
   sealed trait `top center`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `top center`: `top center` = ("top center").asInstanceOf[`top center`]
   
   @js.native
   sealed trait `top left`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   
   @js.native
   sealed trait `top right`
     extends StObject
        with AlertPosition
+       with AlertPositionV4
   inline def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
 }

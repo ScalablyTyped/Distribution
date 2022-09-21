@@ -1,9 +1,16 @@
 package typings.bootstrap
 
 import typings.bootstrap.anon.PartialOptionsParent
-import typings.jquery.JQuery
-import typings.std.Element
-import typings.std.HTMLElement
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.hide
+import typings.bootstrap.bootstrapStrings.show
+import typings.bootstrap.bootstrapStrings.toggle
+import typings.bootstrap.collapseMod.Collapse.Options
+import typings.bootstrap.collapseMod.Collapse.jQueryInterface
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,47 +19,28 @@ object collapseMod {
   
   @JSImport("bootstrap/js/dist/collapse", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Collapse {
+  open class default protected () extends Collapse {
+    def this(element: String) = this()
     def this(element: Element) = this()
+    def this(element: String, options: PartialOptionsParent) = this()
     def this(element: Element, options: PartialOptionsParent) = this()
-    
-    /**
-      * Destroys an element's collapse.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Hides a collapsible element. Returns to the caller before the collapsible
-      * element has actually been hidden (e.g., before the hidden.bs.collapse
-      * event occurs).
-      */
-    /* CompleteClass */
-    override def hide(): Unit = js.native
-    
-    /**
-      * Shows a collapsible element. Returns to the caller before the collapsible
-      * element has actually been shown (e.g., before the shown.bs.collapse event
-      * occurs).
-      */
-    /* CompleteClass */
-    override def show(): Unit = js.native
-    
-    /**
-      * Toggles a collapsible element to shown or hidden. Returns to the caller
-      * before the collapsible element has actually been shown or hidden (i.e.
-      * before the shown.bs.collapse or hidden.bs.collapse event occurs).
-      */
-    /* CompleteClass */
-    override def toggle(): Unit = js.native
   }
   object default {
     
     @JSImport("bootstrap/js/dist/collapse", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/collapse", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap/js/dist/collapse", "default.Events")
     @js.native
@@ -75,44 +63,55 @@ object collapseMod {
       * with a DOM element.
       */
     /* static member */
-    inline def getInstance(element: Element): Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Collapse]
-    inline def getInstance(element: Element, options: PartialOptionsParent): Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Collapse]
-  }
-  
-  trait Collapse extends StObject {
+    @JSImport("bootstrap/js/dist/collapse", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Collapse] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Collapse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
-      * Destroys an element's collapse.
+      * Static method which returns a collapse instance associated to a DOM element
+      *  or create a new one in case it wasn't initialised.
+      * You can use it like this: bootstrap.Collapse.getOrCreateInstance(element)
       */
-    def dispose(): Unit
+    /* static member */
+    @JSImport("bootstrap/js/dist/collapse", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Collapse, PartialOptionsParent] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Collapse, PartialOptionsParent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/collapse", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.collapseMod.Collapse.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait Collapse
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Hides a collapsible element. Returns to the caller before the collapsible
       * element has actually been hidden (e.g., before the hidden.bs.collapse
       * event occurs).
       */
-    def hide(): Unit
+    def hide(): Unit = js.native
     
     /**
       * Shows a collapsible element. Returns to the caller before the collapsible
       * element has actually been shown (e.g., before the shown.bs.collapse event
       * occurs).
       */
-    def show(): Unit
+    def show(): Unit = js.native
     
     /**
       * Toggles a collapsible element to shown or hidden. Returns to the caller
       * before the collapsible element has actually been shown or hidden (i.e.
       * before the shown.bs.collapse or hidden.bs.collapse event occurs).
       */
-    def toggle(): Unit
+    def toggle(): Unit = js.native
   }
   object Collapse {
-    
-    inline def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Collapse = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
-      __obj.asInstanceOf[Collapse]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -154,17 +153,6 @@ object collapseMod {
            with Events
     }
     
-    extension [Self <: Collapse](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
-      
-      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
-    }
-    
     trait Options extends StObject {
       
       /**
@@ -175,7 +163,7 @@ object collapseMod {
         *
         * @default false
         */
-      var parent: String | Element | JQuery[HTMLElement]
+      var parent: String | Element | JQuery
       
       /**
         * Toggles the collapsible element on invocation
@@ -186,17 +174,22 @@ object collapseMod {
     }
     object Options {
       
-      inline def apply(parent: String | Element | JQuery[HTMLElement], toggle: Boolean): Options = {
+      inline def apply(parent: String | Element | JQuery, toggle: Boolean): Options = {
         val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
       extension [Self <: Options](x: Self) {
         
-        inline def setParent(value: String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: String | Element | JQuery): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
         inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       }
     }
+    
+    type jQueryInterface = js.Function1[
+        /* config */ js.UndefOr[PartialOptionsParent | show | hide | toggle | dispose], 
+        JQuery
+      ]
   }
 }

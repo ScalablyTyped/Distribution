@@ -44,6 +44,6 @@ object ShippingOptionParameters {
     
     inline def setShippingOptions(value: js.Array[SelectionOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
-    inline def setShippingOptionsVarargs(value: SelectionOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+    inline def setShippingOptionsVarargs(value: SelectionOption*): Self = StObject.set(x, "shippingOptions", js.Array(value*))
   }
 }

@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Sidebar")
 @js.native
-class Sidebar protected ()
-  extends Component[SidebarProps, ComponentState, js.Any] {
+open class Sidebar protected () extends Component[SidebarProps, ComponentState, Any] {
   def this(props: SidebarProps) = this()
-  def this(props: SidebarProps, context: js.Any) = this()
+  def this(props: SidebarProps, context: Any) = this()
 }
 object Sidebar {
   

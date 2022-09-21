@@ -22,6 +22,6 @@ object IListValue {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

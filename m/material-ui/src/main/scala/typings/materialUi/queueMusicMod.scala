@@ -10,10 +10,10 @@ object queueMusicMod {
   
   @JSImport("material-ui/svg-icons/av/queue-music", JSImport.Default)
   @js.native
-  class default () extends AvQueueMusic
+  open class default () extends AvQueueMusic
   
   @JSImport("material-ui/svg-icons/av/queue-music", "AvQueueMusic")
   @js.native
-  class AvQueueMusic ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvQueueMusic ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

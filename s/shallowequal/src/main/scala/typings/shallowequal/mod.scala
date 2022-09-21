@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[TCtx](objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def apply[TCtx](objA: js.Any, objB: js.Any, customizer: Unit, compareContext: TCtx): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def apply[TCtx](objA: js.Any, objB: js.Any, customizer: Customizer[TCtx]): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def apply[TCtx](objA: js.Any, objB: js.Any, customizer: Customizer[TCtx], compareContext: TCtx): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[TCtx](objA: Any, objB: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[TCtx](objA: Any, objB: Any, customizer: Unit, compareContext: TCtx): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[TCtx](objA: Any, objB: Any, customizer: Customizer[TCtx]): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[TCtx](objA: Any, objB: Any, customizer: Customizer[TCtx], compareContext: TCtx): Boolean = (^.asInstanceOf[js.Dynamic].apply(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("shallowequal", JSImport.Namespace)
   @js.native
@@ -17,8 +17,8 @@ object mod {
   
   type Customizer[T] = js.ThisFunction3[
     /* this */ T, 
-    /* objA */ js.Any, 
-    /* objB */ js.Any, 
+    /* objA */ Any, 
+    /* objB */ Any, 
     /* indexOrKey */ js.UndefOr[Double | String], 
     Boolean | Unit
   ]

@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.VectorTile")
 @js.native
-class VectorTile protected () extends UrlTile {
+open class VectorTile protected () extends UrlTile {
   /**
     * @classdesc
     * Class for layer sources providing vector data divided into a tile grid, to be

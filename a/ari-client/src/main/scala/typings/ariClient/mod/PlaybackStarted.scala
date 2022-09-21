@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait PlaybackStarted
 }
 object PlaybackStarted {
   
-  inline def apply(application: String, playback: Playback, timestamp: Date, `type`: String): PlaybackStarted = {
+  inline def apply(application: String, playback: Playback, timestamp: js.Date, `type`: String): PlaybackStarted = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], playback = playback.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackStarted]

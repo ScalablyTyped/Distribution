@@ -8,23 +8,23 @@ trait SuperExpression
   extends StObject
      with IASTToken {
   
-  /* private */ var _text: js.Any
+  /* private */ var _text: Any
   
-  /* private */ var _valueText: js.Any
+  /* private */ var _valueText: Any
   
   def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean
 }
 object SuperExpression {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
-    _text: js.Any,
+    _text: Any,
     _trailingTriviaWidth: Double,
-    _valueText: js.Any,
+    _valueText: Any,
     end: () => Double,
     fileName: () => String,
     isExpression: () => Boolean,
@@ -50,8 +50,8 @@ object SuperExpression {
     
     inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

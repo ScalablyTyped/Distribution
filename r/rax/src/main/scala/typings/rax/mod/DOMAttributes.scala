@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DOMAttributes[T]
   extends StObject
      with // weex
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   var children: js.UndefOr[RaxNode] = js.undefined
   

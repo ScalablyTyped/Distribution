@@ -22,14 +22,19 @@ trait DescribeAssetPropertyResponse extends StObject {
   var assetName: Name
   
   /**
-    * The asset property's definition, alias, and notification state.
+    * The asset property's definition, alias, and notification state. This response includes this object for normal asset properties. If you describe an asset property in a composite model, this response includes the asset property information in compositeModel.
     */
-  var assetProperty: Property
+  var assetProperty: js.UndefOr[Property] = js.undefined
+  
+  /**
+    * The composite asset model that declares this asset property, if this asset property exists in a composite model.
+    */
+  var compositeModel: js.UndefOr[CompositeModelProperty] = js.undefined
 }
 object DescribeAssetPropertyResponse {
   
-  inline def apply(assetId: ID, assetModelId: ID, assetName: Name, assetProperty: Property): DescribeAssetPropertyResponse = {
-    val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], assetModelId = assetModelId.asInstanceOf[js.Any], assetName = assetName.asInstanceOf[js.Any], assetProperty = assetProperty.asInstanceOf[js.Any])
+  inline def apply(assetId: ID, assetModelId: ID, assetName: Name): DescribeAssetPropertyResponse = {
+    val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], assetModelId = assetModelId.asInstanceOf[js.Any], assetName = assetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetPropertyResponse]
   }
   
@@ -42,5 +47,11 @@ object DescribeAssetPropertyResponse {
     inline def setAssetName(value: Name): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
     inline def setAssetProperty(value: Property): Self = StObject.set(x, "assetProperty", value.asInstanceOf[js.Any])
+    
+    inline def setAssetPropertyUndefined: Self = StObject.set(x, "assetProperty", js.undefined)
+    
+    inline def setCompositeModel(value: CompositeModelProperty): Self = StObject.set(x, "compositeModel", value.asInstanceOf[js.Any])
+    
+    inline def setCompositeModelUndefined: Self = StObject.set(x, "compositeModel", js.undefined)
   }
 }

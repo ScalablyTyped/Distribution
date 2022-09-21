@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.emailClickMod.EmailClickProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonEmailClickMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/EmailClick", JSImport.Default)
   @js.native
-  val default: SFC[EmailClickProps] = js.native
+  val default: FC[EmailClickProps] = js.native
   
-  type _To = SFC[EmailClickProps]
+  type _To = FC[EmailClickProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonEmailClickMod.foo` */
-  override def _to: SFC[EmailClickProps] = default
+  override def _to: FC[EmailClickProps] = default
 }

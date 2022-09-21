@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RNFetchBlobStatic extends StObject {
   
   // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
-  var JSONStream: js.Any = js.native
+  var JSONStream: Any = js.native
   
   var android: AndroidApi = js.native
   
@@ -20,8 +20,8 @@ trait RNFetchBlobStatic extends StObject {
   
   def fetch(method: Methods, url: String): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(method: Methods, url: String, headers: StringDictionary[String]): StatefulPromise[FetchBlobResponse] = js.native
-  def fetch(method: Methods, url: String, headers: StringDictionary[String], body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
-  def fetch(method: Methods, url: String, headers: Unit, body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
+  def fetch(method: Methods, url: String, headers: StringDictionary[String], body: Any): StatefulPromise[FetchBlobResponse] = js.native
+  def fetch(method: Methods, url: String, headers: Unit, body: Any): StatefulPromise[FetchBlobResponse] = js.native
   
   var fs: FS = js.native
   

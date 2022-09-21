@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.SystemMediaTransportControlsTimelineProperties")
 @js.native
 /** Initializes a new instance of the SystemMediaTransportControlsTimelineProperties class. */
-class SystemMediaTransportControlsTimelineProperties ()
+open class SystemMediaTransportControlsTimelineProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Media.SystemMediaTransportControlsTimelineProperties {
   

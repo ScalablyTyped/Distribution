@@ -30,6 +30,6 @@ object ILineTokens {
     
     inline def setTokens(value: js.Array[IToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: IToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: IToken*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

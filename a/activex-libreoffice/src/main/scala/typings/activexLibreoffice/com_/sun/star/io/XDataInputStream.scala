@@ -47,7 +47,7 @@ object XDataInputStream {
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBoolean: () => Double,
     readByte: () => Double,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,

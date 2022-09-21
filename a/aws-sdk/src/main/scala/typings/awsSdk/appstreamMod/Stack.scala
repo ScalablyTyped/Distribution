@@ -24,7 +24,7 @@ trait Stack extends StObject {
   /**
     * The time the stack was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description to display.
@@ -67,6 +67,11 @@ trait Stack extends StObject {
   var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
+    * The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
+    */
+  var StreamingExperienceSettings: js.UndefOr[typings.awsSdk.appstreamMod.StreamingExperienceSettings] = js.undefined
+  
+  /**
     * The actions that are enabled or disabled for users during their streaming sessions. By default these actions are enabled.
     */
   var UserSettings: js.UndefOr[UserSettingList] = js.undefined
@@ -84,7 +89,7 @@ object Stack {
     
     inline def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
-    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
+    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value*))
     
     inline def setApplicationSettings(value: ApplicationSettingsResponse): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     
@@ -94,7 +99,7 @@ object Stack {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -110,7 +115,7 @@ object Stack {
     
     inline def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
     
-    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
+    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value*))
     
     inline def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
     
@@ -126,18 +131,22 @@ object Stack {
     
     inline def setStackErrorsUndefined: Self = StObject.set(x, "StackErrors", js.undefined)
     
-    inline def setStackErrorsVarargs(value: StackError*): Self = StObject.set(x, "StackErrors", js.Array(value :_*))
+    inline def setStackErrorsVarargs(value: StackError*): Self = StObject.set(x, "StackErrors", js.Array(value*))
     
     inline def setStorageConnectors(value: StorageConnectorList): Self = StObject.set(x, "StorageConnectors", value.asInstanceOf[js.Any])
     
     inline def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
     
-    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
+    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value*))
+    
+    inline def setStreamingExperienceSettings(value: StreamingExperienceSettings): Self = StObject.set(x, "StreamingExperienceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setStreamingExperienceSettingsUndefined: Self = StObject.set(x, "StreamingExperienceSettings", js.undefined)
     
     inline def setUserSettings(value: UserSettingList): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
     inline def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
     
-    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
+    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value*))
   }
 }

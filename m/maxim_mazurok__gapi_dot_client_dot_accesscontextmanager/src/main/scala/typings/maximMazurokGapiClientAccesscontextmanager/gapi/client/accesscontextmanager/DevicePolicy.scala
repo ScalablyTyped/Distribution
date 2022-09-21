@@ -37,19 +37,19 @@ object DevicePolicy {
     
     inline def setAllowedDeviceManagementLevelsUndefined: Self = StObject.set(x, "allowedDeviceManagementLevels", js.undefined)
     
-    inline def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = StObject.set(x, "allowedDeviceManagementLevels", js.Array(value :_*))
+    inline def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = StObject.set(x, "allowedDeviceManagementLevels", js.Array(value*))
     
     inline def setAllowedEncryptionStatuses(value: js.Array[String]): Self = StObject.set(x, "allowedEncryptionStatuses", value.asInstanceOf[js.Any])
     
     inline def setAllowedEncryptionStatusesUndefined: Self = StObject.set(x, "allowedEncryptionStatuses", js.undefined)
     
-    inline def setAllowedEncryptionStatusesVarargs(value: String*): Self = StObject.set(x, "allowedEncryptionStatuses", js.Array(value :_*))
+    inline def setAllowedEncryptionStatusesVarargs(value: String*): Self = StObject.set(x, "allowedEncryptionStatuses", js.Array(value*))
     
     inline def setOsConstraints(value: js.Array[OsConstraint]): Self = StObject.set(x, "osConstraints", value.asInstanceOf[js.Any])
     
     inline def setOsConstraintsUndefined: Self = StObject.set(x, "osConstraints", js.undefined)
     
-    inline def setOsConstraintsVarargs(value: OsConstraint*): Self = StObject.set(x, "osConstraints", js.Array(value :_*))
+    inline def setOsConstraintsVarargs(value: OsConstraint*): Self = StObject.set(x, "osConstraints", js.Array(value*))
     
     inline def setRequireAdminApproval(value: Boolean): Self = StObject.set(x, "requireAdminApproval", value.asInstanceOf[js.Any])
     

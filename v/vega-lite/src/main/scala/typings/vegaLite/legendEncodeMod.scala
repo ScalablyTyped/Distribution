@@ -28,14 +28,14 @@ object legendEncodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def entries(entriesSpec: js.Any, hasLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def entries(entriesSpec: Any, hasLegendCmpt: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")().asInstanceOf[V]
   inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")(channelDef.asInstanceOf[js.Any]).asInstanceOf[V]
   
-  inline def gradient(gradientSpec: js.Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def gradient(gradientSpec: Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
-  inline def labels(specifiedlabelsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def labels(specifiedlabelsSpec: Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* Inlined {[ part in keyof vega.vega.LegendEncode ]:? (spec : vega.vega.EncodeEntry, params : vega-lite.vega-lite/build/src/compile/legend/encode.LegendEncodeParams): vega.vega.EncodeEntry} */
   object legendEncodeRules {
@@ -111,13 +111,13 @@ object legendEncodeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  inline def symbols(symbolsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def symbols(symbolsSpec: Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
   trait LegendEncodeParams extends StObject {
     
     var channel: NonPositionScaleChannel
     
-    var fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+    var fieldOrDatumDef: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     
     var legendCmpt: LegendComponent
     
@@ -129,7 +129,7 @@ object legendEncodeMod {
     
     inline def apply(
       channel: NonPositionScaleChannel,
-      fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+      fieldOrDatumDef: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
       legendCmpt: LegendComponent,
       legendType: LegendType,
       model: UnitModel
@@ -143,7 +143,7 @@ object legendEncodeMod {
       inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
       inline def setFieldOrDatumDef(
-        value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+        value: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
       ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
       
       inline def setLegendCmpt(value: LegendComponent): Self = StObject.set(x, "legendCmpt", value.asInstanceOf[js.Any])

@@ -19,6 +19,6 @@ object Data {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

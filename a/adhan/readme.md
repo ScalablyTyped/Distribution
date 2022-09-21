@@ -1,7 +1,7 @@
 
 # Scala.js typings for adhan
 
-Typings are for version 3.0
+Typings are for version 4.4.3
 
 ## Library description:
 High precision Islamic prayer time library
@@ -10,10 +10,10 @@ High precision Islamic prayer time library
 | ------------------ | :-------------: |
 | Full name          | adhan |
 | Keywords           | adhan, islam, muslim, prayer, islamic, prayer times, salah, salat, salaat, namaz |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 4016 |
-| # stars            | 1 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 4671.0 |
+| # stars            | 222.0 |
 
 ## Links
 - [Homepage](https://github.com/batoulapps/adhan-js)
@@ -24,7 +24,7 @@ High precision Islamic prayer time library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -10,10 +10,10 @@ Sentry transport + formatter for the Bristol logger
 | ------------------ | :-------------: |
 | Full name          | bristol-sentry |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11934 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2054.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/jeffijoe/bristol-sentry#readme)

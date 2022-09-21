@@ -30,11 +30,11 @@ object anon {
     
     var channel: String
     
-    var data: js.Any
+    var data: Any
   }
   object Channel {
     
-    inline def apply(channel: String, data: js.Any): Channel = {
+    inline def apply(channel: String, data: Any): Channel = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Channel]
     }
@@ -43,24 +43,24 @@ object anon {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
   trait Error extends StObject {
     
-    var error: typings.std.Error
+    var error: js.Error
   }
   object Error {
     
-    inline def apply(error: typings.std.Error): Error = {
+    inline def apply(error: js.Error): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   

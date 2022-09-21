@@ -10,10 +10,10 @@ object cardMediaMod {
   
   @JSImport("material-ui/Card/CardMedia", JSImport.Default)
   @js.native
-  class default () extends CardMedia
+  open class default () extends CardMedia
   
   @JSImport("material-ui/Card/CardMedia", "CardMedia")
   @js.native
-  class CardMedia ()
-    extends Component[CardMediaProps, js.Object, js.Any]
+  open class CardMedia ()
+    extends Component[CardMediaProps, js.Object, Any]
 }

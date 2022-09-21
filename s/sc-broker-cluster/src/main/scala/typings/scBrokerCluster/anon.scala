@@ -25,7 +25,7 @@ object anon {
       
       inline def setTargets(value: js.Array[Client]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      inline def setTargetsVarargs(value: Client*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Client*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -10,10 +10,10 @@ Native JS murmur hash implementation
 | ------------------ | :-------------: |
 | Full name          | murmurhash-js |
 | Keywords           | murmur, hash, string, murmur2, murmur3, fast |
-| # releases         | 0 |
-| # dependents       | 88 |
-| # downloads        | 17650396 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2804742.6666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/murmurhash-js)

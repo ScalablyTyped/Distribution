@@ -29,7 +29,7 @@ object SuiteCreateModel {
     
     inline def setRequirementIds(value: js.Array[Double]): Self = StObject.set(x, "requirementIds", value.asInstanceOf[js.Any])
     
-    inline def setRequirementIdsVarargs(value: Double*): Self = StObject.set(x, "requirementIds", js.Array(value :_*))
+    inline def setRequirementIdsVarargs(value: Double*): Self = StObject.set(x, "requirementIds", js.Array(value*))
     
     inline def setSuiteType(value: String): Self = StObject.set(x, "suiteType", value.asInstanceOf[js.Any])
   }

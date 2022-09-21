@@ -20,15 +20,15 @@ object mod extends Shortcut {
     
     def getSessionId(): Unit = js.native
     
-    def identify(idObj: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def identify(idObj: Any, cb: js.Function0[Unit]): Unit = js.native
     
     def init(apiKey: String): Unit = js.native
     def init(apiKey: String, userId: String): Unit = js.native
-    def init(apiKey: String, userId: String, config: js.Any): Unit = js.native
-    def init(apiKey: String, userId: String, config: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def init(apiKey: String, userId: String, config: Any): Unit = js.native
+    def init(apiKey: String, userId: String, config: Any, cb: js.Function0[Unit]): Unit = js.native
     def init(apiKey: String, userId: String, config: Unit, cb: js.Function0[Unit]): Unit = js.native
-    def init(apiKey: String, userId: Unit, config: js.Any): Unit = js.native
-    def init(apiKey: String, userId: Unit, config: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def init(apiKey: String, userId: Unit, config: Any): Unit = js.native
+    def init(apiKey: String, userId: Unit, config: Any, cb: js.Function0[Unit]): Unit = js.native
     def init(apiKey: String, userId: Unit, config: Unit, cb: js.Function0[Unit]): Unit = js.native
     
     def isNewSession(): Unit = js.native
@@ -41,7 +41,7 @@ object mod extends Shortcut {
     
     def setUserId(userId: String): Unit = js.native
     
-    def setUserProperties(userProps: js.Any): Unit = js.native
+    def setUserProperties(userProps: Any): Unit = js.native
   }
   
   type _To = AmplitudeInstance

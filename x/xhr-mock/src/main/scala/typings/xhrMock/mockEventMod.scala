@@ -12,7 +12,7 @@ object mockEventMod {
   
   @JSImport("xhr-mock/lib/MockEvent", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MockEvent {
     def this(`type`: String) = this()
@@ -36,5 +36,8 @@ object mockEventMod {
     
     @JSName("target")
     val target_MockEvent: EventTarget = js.native
+    
+    @JSName("timeStamp")
+    val timeStamp_MockEvent: Double = js.native
   }
 }

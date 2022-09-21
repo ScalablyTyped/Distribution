@@ -13,42 +13,42 @@ object retryMiddlewareMod {
   val ^ : js.Any = js.native
   
   inline def retryMiddleware(maxRetries: Double): js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ]]
   inline def retryMiddleware(
     maxRetries: Double,
-    retryDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryDecider */ js.Any
+    retryDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryDecider */ Any
   ): js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(maxRetries.asInstanceOf[js.Any], retryDecider.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ]]
   inline def retryMiddleware(
     maxRetries: Double,
-    retryDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryDecider */ js.Any,
-    delayDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DelayDecider */ js.Any
+    retryDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryDecider */ Any,
+    delayDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DelayDecider */ Any
   ): js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(maxRetries.asInstanceOf[js.Any], retryDecider.asInstanceOf[js.Any], delayDecider.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ]]
   inline def retryMiddleware(
     maxRetries: Double,
     retryDecider: Unit,
-    delayDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DelayDecider */ js.Any
+    delayDecider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DelayDecider */ Any
   ): js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(maxRetries.asInstanceOf[js.Any], retryDecider.asInstanceOf[js.Any], delayDecider.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
-    FinalizeHandler[js.Any, MetadataBearer]
+    /* next */ FinalizeHandler[Any, MetadataBearer], 
+    FinalizeHandler[Any, MetadataBearer]
   ]]
 }

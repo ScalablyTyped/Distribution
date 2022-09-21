@@ -15,7 +15,7 @@ trait ASPxClientPopupMenu
   /**
     * Returns an object that invoked the popup menu.
     */
-  def GetCurrentPopupElement(): js.Any = js.native
+  def GetCurrentPopupElement(): Any = js.native
   
   /**
     * Returns an index of the object that invoked the popup menu within the ASPxPopupMenu.PopupElementID list.
@@ -49,7 +49,7 @@ trait ASPxClientPopupMenu
     * Invokes the popup menu and displays it over the specified HTML element.
     * @param htmlElement An object specifying the HTML element relative to which position the popup menu is invoked.
     */
-  def ShowAtElement(htmlElement: js.Any): Unit = js.native
+  def ShowAtElement(htmlElement: Any): Unit = js.native
   
   /**
     * Invokes the popup menu and displays it over an HTML element specified by its unique identifier.

@@ -9,7 +9,7 @@ trait DownloadFileArgs
   extends StObject
      with AsyncCallback[ApFilePath] {
   
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   var url: String
 }
@@ -22,7 +22,7 @@ object DownloadFileArgs {
   
   extension [Self <: DownloadFileArgs](x: Self) {
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     

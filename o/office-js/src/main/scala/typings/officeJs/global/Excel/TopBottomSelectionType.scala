@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A simple enum for top/bottom filters to select whether to filter by the top N or bottom N percent, number, or sum of values.
   *
-  * A simple enum for Top/Bottom filters to select whether to filter by the top N or bottom N percent, number, or sum of values.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.TopBottomSelectionType")

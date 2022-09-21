@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientAccordionItemEventArgs")
 @js.native
-class BootstrapClientAccordionItemEventArgs protected ()
+open class BootstrapClientAccordionItemEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientAccordionItemEventArgs {
   /**
@@ -22,21 +22,21 @@ class BootstrapClientAccordionItemEventArgs protected ()
   def this(
     processOnServer: Boolean,
     item: typings.devexpressWeb.BootstrapClientAccordionItem,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
+    htmlElement: Any,
+    htmlEvent: Any
   ) = this()
   
   /**
     * Gets an HTML object that contains the processed Accordion item.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the item object related to the event.

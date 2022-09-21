@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Slot")
 @js.native
-class Slot protected ()
+open class Slot protected ()
   extends StObject
      with typings.phaser.spine.Slot {
   def this(data: typings.phaser.spine.SlotData, bone: typings.phaser.spine.Bone) = this()
   
   /* private */ /* CompleteClass */
-  var attachment: js.Any = js.native
+  var attachment: Any = js.native
   
   /* private */ /* CompleteClass */
-  var attachmentTime: js.Any = js.native
+  var attachmentTime: Any = js.native
   
   /* CompleteClass */
   var bone: typings.phaser.spine.Bone = js.native

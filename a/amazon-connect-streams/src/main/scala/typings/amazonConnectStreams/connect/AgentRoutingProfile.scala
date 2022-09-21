@@ -48,7 +48,7 @@ object AgentRoutingProfile {
     
     inline def setQueues(value: js.Array[Queue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value*))
     
     inline def setRoutingProfileARN(value: String): Self = StObject.set(x, "routingProfileARN", value.asInstanceOf[js.Any])
     

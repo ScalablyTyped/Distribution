@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Creates a media session and binds license acquisition to that media session. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseSession")
 @js.native
-class PlayReadyLicenseSession protected ()
+open class PlayReadyLicenseSession protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseSession {
   /**

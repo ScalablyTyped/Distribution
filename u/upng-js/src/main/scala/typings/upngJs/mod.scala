@@ -1,8 +1,6 @@
 package typings.upngJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,31 +11,44 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decode(buffer: ArrayBuffer): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Image]
+  inline def decode(buffer: js.typedarray.ArrayBuffer): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Image]
   
-  inline def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-  inline def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double, dels: js.Array[Double]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def encode(imgs: js.Array[js.typedarray.ArrayBuffer], w: Double, h: Double, cnum: Double): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
+  inline def encode(
+    imgs: js.Array[js.typedarray.ArrayBuffer],
+    w: Double,
+    h: Double,
+    cnum: Double,
+    dels: js.Array[Double]
+  ): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   
-  inline def encodeLL(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cc: Double, ac: Double, depth: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   inline def encodeLL(
-    imgs: js.Array[ArrayBuffer],
+    imgs: js.Array[js.typedarray.ArrayBuffer],
+    w: Double,
+    h: Double,
+    cc: Double,
+    ac: Double,
+    depth: Double
+  ): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
+  inline def encodeLL(
+    imgs: js.Array[js.typedarray.ArrayBuffer],
     w: Double,
     h: Double,
     cc: Double,
     ac: Double,
     depth: Double,
     dels: js.Array[Double]
-  ): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  ): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   
-  inline def quantize(data: ArrayBuffer, psize: Double): QuantizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(data.asInstanceOf[js.Any], psize.asInstanceOf[js.Any])).asInstanceOf[QuantizeResult]
+  inline def quantize(data: js.typedarray.ArrayBuffer, psize: Double): QuantizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(data.asInstanceOf[js.Any], psize.asInstanceOf[js.Any])).asInstanceOf[QuantizeResult]
   
-  inline def toRGBA8(out: Image): js.Array[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(out.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArrayBuffer]]
+  inline def toRGBA8(out: Image): js.Array[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(out.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.typedarray.ArrayBuffer]]
   
   trait Image extends StObject {
     
     var ctype: Double
     
-    var data: ArrayBuffer
+    var data: js.typedarray.ArrayBuffer
     
     var depth: Double
     
@@ -53,7 +64,7 @@ object mod {
     
     inline def apply(
       ctype: Double,
-      data: ArrayBuffer,
+      data: js.typedarray.ArrayBuffer,
       depth: Double,
       frames: js.Array[ImageFrame],
       height: Double,
@@ -68,13 +79,13 @@ object mod {
       
       inline def setCtype(value: Double): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
       inline def setFrames(value: js.Array[ImageFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      inline def setFramesVarargs(value: ImageFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: ImageFrame*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -207,13 +218,13 @@ object mod {
       
       inline def setBKGDUndefined: Self = StObject.set(x, "bKGD", js.undefined)
       
-      inline def setBKGDVarargs(value: Double*): Self = StObject.set(x, "bKGD", js.Array(value :_*))
+      inline def setBKGDVarargs(value: Double*): Self = StObject.set(x, "bKGD", js.Array(value*))
       
       inline def setCHRM(value: js.Array[Double]): Self = StObject.set(x, "cHRM", value.asInstanceOf[js.Any])
       
       inline def setCHRMUndefined: Self = StObject.set(x, "cHRM", js.undefined)
       
-      inline def setCHRMVarargs(value: Double*): Self = StObject.set(x, "cHRM", js.Array(value :_*))
+      inline def setCHRMVarargs(value: Double*): Self = StObject.set(x, "cHRM", js.Array(value*))
       
       inline def setGAMA(value: Double): Self = StObject.set(x, "gAMA", value.asInstanceOf[js.Any])
       
@@ -223,7 +234,7 @@ object mod {
       
       inline def setHISTUndefined: Self = StObject.set(x, "hIST", js.undefined)
       
-      inline def setHISTVarargs(value: Double*): Self = StObject.set(x, "hIST", js.Array(value :_*))
+      inline def setHISTVarargs(value: Double*): Self = StObject.set(x, "hIST", js.Array(value*))
       
       inline def setITXt(value: ImageTabText): Self = StObject.set(x, "iTXt", value.asInstanceOf[js.Any])
       
@@ -233,13 +244,13 @@ object mod {
       
       inline def setPHYsUndefined: Self = StObject.set(x, "pHYs", js.undefined)
       
-      inline def setPHYsVarargs(value: Double*): Self = StObject.set(x, "pHYs", js.Array(value :_*))
+      inline def setPHYsVarargs(value: Double*): Self = StObject.set(x, "pHYs", js.Array(value*))
       
       inline def setPLTE(value: js.Array[Double]): Self = StObject.set(x, "PLTE", value.asInstanceOf[js.Any])
       
       inline def setPLTEUndefined: Self = StObject.set(x, "PLTE", js.undefined)
       
-      inline def setPLTEVarargs(value: Double*): Self = StObject.set(x, "PLTE", js.Array(value :_*))
+      inline def setPLTEVarargs(value: Double*): Self = StObject.set(x, "PLTE", js.Array(value*))
       
       inline def setSRGB(value: Double): Self = StObject.set(x, "sRGB", value.asInstanceOf[js.Any])
       
@@ -253,35 +264,35 @@ object mod {
       
       inline def setTRNSUndefined: Self = StObject.set(x, "tRNS", js.undefined)
       
-      inline def setTRNSVarargs(value: Double*): Self = StObject.set(x, "tRNS", js.Array(value :_*))
+      inline def setTRNSVarargs(value: Double*): Self = StObject.set(x, "tRNS", js.Array(value*))
     }
   }
   
   trait QuantizeResult extends StObject {
     
-    var abuf: ArrayBuffer
+    var abuf: js.typedarray.ArrayBuffer
     
-    var inds: Uint8Array
+    var inds: js.typedarray.Uint8Array
     
     // Type is complicated and I am too lazy to work it out right now, sorry!
-    var plte: js.Array[js.Any]
+    var plte: js.Array[Any]
   }
   object QuantizeResult {
     
-    inline def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[js.Any]): QuantizeResult = {
+    inline def apply(abuf: js.typedarray.ArrayBuffer, inds: js.typedarray.Uint8Array, plte: js.Array[Any]): QuantizeResult = {
       val __obj = js.Dynamic.literal(abuf = abuf.asInstanceOf[js.Any], inds = inds.asInstanceOf[js.Any], plte = plte.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuantizeResult]
     }
     
     extension [Self <: QuantizeResult](x: Self) {
       
-      inline def setAbuf(value: ArrayBuffer): Self = StObject.set(x, "abuf", value.asInstanceOf[js.Any])
+      inline def setAbuf(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "abuf", value.asInstanceOf[js.Any])
       
-      inline def setInds(value: Uint8Array): Self = StObject.set(x, "inds", value.asInstanceOf[js.Any])
+      inline def setInds(value: js.typedarray.Uint8Array): Self = StObject.set(x, "inds", value.asInstanceOf[js.Any])
       
-      inline def setPlte(value: js.Array[js.Any]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
+      inline def setPlte(value: js.Array[Any]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
       
-      inline def setPlteVarargs(value: js.Any*): Self = StObject.set(x, "plte", js.Array(value :_*))
+      inline def setPlteVarargs(value: Any*): Self = StObject.set(x, "plte", js.Array(value*))
     }
   }
 }

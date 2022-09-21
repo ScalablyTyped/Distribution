@@ -3,12 +3,11 @@ package typings.ol
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.mapMod.HitMatch
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
+import typings.ol.rendererVectorMod.FeatureCallback
 import typings.std.HTMLElement
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object rendererLayerMod {
   
   @JSImport("ol/renderer/Layer", JSImport.Default)
   @js.native
-  class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends LayerRenderer[LayerType] {
+  open class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends LayerRenderer[LayerType] {
     def this(layer: LayerType) = this()
   }
   
@@ -38,15 +37,11 @@ object rendererLayerMod {
       coordinate: Coordinate,
       frameState: FrameState,
       hitTolerance: Double,
-      callback: js.Function2[
-          /* p0 */ FeatureLike, 
-          /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          T
-        ],
-      declutteredFeatures: js.Array[FeatureLike]
-    ): T = js.native
+      callback: FeatureCallback[T],
+      matches: js.Array[HitMatch[T]]
+    ): js.UndefOr[T] = js.native
     
-    def getDataAtPixel(pixel: Pixel, frameState: FrameState, hitTolerance: Double): Uint8ClampedArray | Uint8Array = js.native
+    def getDataAtPixel(pixel: Pixel, frameState: FrameState, hitTolerance: Double): js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array = js.native
     
     /**
       * Asynchronous layer level hit detection.

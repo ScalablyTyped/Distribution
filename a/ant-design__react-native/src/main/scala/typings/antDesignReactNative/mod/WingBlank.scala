@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "WingBlank")
 @js.native
-class WingBlank () extends default
+open class WingBlank () extends default
 object WingBlank {
   
   /* static member */

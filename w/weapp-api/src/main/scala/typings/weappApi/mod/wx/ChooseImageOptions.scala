@@ -33,7 +33,7 @@ object ChooseImageOptions {
   
   extension [Self <: ChooseImageOptions](x: Self) {
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
@@ -41,7 +41,7 @@ object ChooseImageOptions {
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
@@ -49,13 +49,13 @@ object ChooseImageOptions {
     
     inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
-    inline def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value*))
     
     inline def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: TempFilesData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

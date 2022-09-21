@@ -15,7 +15,7 @@ trait BaseScale extends StObject {
   
   var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var domainRaw: js.UndefOr[Null | js.Array[js.Any] | SignalRef] = js.undefined
+  var domainRaw: js.UndefOr[Null | js.Array[Any] | SignalRef] = js.undefined
   
   var name: String
   
@@ -48,17 +48,17 @@ object BaseScale {
     
     inline def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
     
-    inline def setDomainRaw(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
+    inline def setDomainRaw(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
     
     inline def setDomainRawNull: Self = StObject.set(x, "domainRaw", null)
     
     inline def setDomainRawUndefined: Self = StObject.set(x, "domainRaw", js.undefined)
     
-    inline def setDomainRawVarargs(value: js.Any*): Self = StObject.set(x, "domainRaw", js.Array(value :_*))
+    inline def setDomainRawVarargs(value: Any*): Self = StObject.set(x, "domainRaw", js.Array(value*))
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    inline def setDomainVarargs(value: (Null | String | Double | Boolean | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value :_*))
+    inline def setDomainVarargs(value: (Null | String | Double | Boolean | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

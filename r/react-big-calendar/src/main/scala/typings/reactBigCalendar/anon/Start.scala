@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Start[TEvent /* <: js.Object */] extends StObject {
   
-  var end: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.undefined
+  var end: js.UndefOr[js.Function1[/* event */ TEvent, js.Date]] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.undefined
+  var start: js.UndefOr[js.Function1[/* event */ TEvent, js.Date]] = js.undefined
   
   var title: js.UndefOr[js.Function1[/* event */ TEvent, String]] = js.undefined
   
@@ -23,11 +23,11 @@ object Start {
   
   extension [Self <: Start[?], TEvent /* <: js.Object */](x: Self & Start[TEvent]) {
     
-    inline def setEnd(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: /* event */ TEvent => js.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setStart(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* event */ TEvent => js.Date): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

@@ -14,7 +14,7 @@ object global {
     
     @JSGlobal("SwaggerUIDist.SwaggerUIStandalonePreset")
     @js.native
-    val SwaggerUIStandalonePreset: js.Any = js.native
+    val SwaggerUIStandalonePreset: Any = js.native
     
     @JSGlobal("SwaggerUIDist.absolutePath")
     @js.native

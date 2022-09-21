@@ -27,7 +27,7 @@ object ListDeliverabilityTestReportsResponse {
     
     inline def setDeliverabilityTestReports(value: DeliverabilityTestReports): Self = StObject.set(x, "DeliverabilityTestReports", value.asInstanceOf[js.Any])
     
-    inline def setDeliverabilityTestReportsVarargs(value: DeliverabilityTestReport*): Self = StObject.set(x, "DeliverabilityTestReports", js.Array(value :_*))
+    inline def setDeliverabilityTestReportsVarargs(value: DeliverabilityTestReport*): Self = StObject.set(x, "DeliverabilityTestReports", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

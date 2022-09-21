@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("openapi-default-setter", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with OpenAPIDefaultSetter {
     def this(args: OpenAPIDefaultSetterArgs) = this()
@@ -19,10 +19,10 @@ object mod {
     override def handle(request: Request): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var headersDefaults: js.Any = js.native
+    var headersDefaults: Any = js.native
     
     /* private */ /* CompleteClass */
-    var queryDefaults: js.Any = js.native
+    var queryDefaults: Any = js.native
   }
   
   trait IOpenAPIDefaultSetter extends StObject {
@@ -46,22 +46,22 @@ object mod {
     extends StObject
        with IOpenAPIDefaultSetter {
     
-    /* private */ var headersDefaults: js.Any
+    /* private */ var headersDefaults: Any
     
-    /* private */ var queryDefaults: js.Any
+    /* private */ var queryDefaults: Any
   }
   object OpenAPIDefaultSetter {
     
-    inline def apply(handle: Request => Unit, headersDefaults: js.Any, queryDefaults: js.Any): OpenAPIDefaultSetter = {
+    inline def apply(handle: Request => Unit, headersDefaults: Any, queryDefaults: Any): OpenAPIDefaultSetter = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), headersDefaults = headersDefaults.asInstanceOf[js.Any], queryDefaults = queryDefaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIDefaultSetter]
     }
     
     extension [Self <: OpenAPIDefaultSetter](x: Self) {
       
-      inline def setHeadersDefaults(value: js.Any): Self = StObject.set(x, "headersDefaults", value.asInstanceOf[js.Any])
+      inline def setHeadersDefaults(value: Any): Self = StObject.set(x, "headersDefaults", value.asInstanceOf[js.Any])
       
-      inline def setQueryDefaults(value: js.Any): Self = StObject.set(x, "queryDefaults", value.asInstanceOf[js.Any])
+      inline def setQueryDefaults(value: Any): Self = StObject.set(x, "queryDefaults", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,7 +86,7 @@ object mod {
       
       inline def setParameters(value: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      inline def setParametersVarargs(value: (ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: (ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject)*): Self = StObject.set(x, "parameters", js.Array(value*))
     }
   }
 }

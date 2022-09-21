@@ -12,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstantiableT[T /* <: UIRouterPlugin */]
   extends StObject
      with Instantiable1[/* router */ UIRouter, T]
-     with Instantiable2[/* router */ UIRouter, /* options */ js.Any, T]
+     with Instantiable2[/* router */ UIRouter, /* options */ Any, T]

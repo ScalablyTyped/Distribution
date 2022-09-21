@@ -21,7 +21,7 @@ object NarrowPhase {
     
     inline def setContactPointPool(value: js.Array[Pool]): Self = StObject.set(x, "contactPointPool", value.asInstanceOf[js.Any])
     
-    inline def setContactPointPoolVarargs(value: Pool*): Self = StObject.set(x, "contactPointPool", js.Array(value :_*))
+    inline def setContactPointPoolVarargs(value: Pool*): Self = StObject.set(x, "contactPointPool", js.Array(value*))
     
     inline def setV3pool(value: Vec3Pool): Self = StObject.set(x, "v3pool", value.asInstanceOf[js.Any])
   }

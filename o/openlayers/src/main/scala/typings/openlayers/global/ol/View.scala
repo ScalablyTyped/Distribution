@@ -62,7 +62,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options View options.
   * @api stable
   */
-class View ()
+open class View ()
   extends typings.openlayers.mod.View {
   def this(opt_options: ViewOptions) = this()
 }

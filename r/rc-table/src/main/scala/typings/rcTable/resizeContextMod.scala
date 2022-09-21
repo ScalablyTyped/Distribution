@@ -1,7 +1,7 @@
 package typings.rcTable
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.Context
+import typings.rcTable.contextSelectorMod.ReturnCreateContext
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object resizeContextMod extends Shortcut {
   
   @JSImport("rc-table/lib/context/ResizeContext", JSImport.Default)
   @js.native
-  val default: Context[ResizeContextProps] = js.native
+  val default: ReturnCreateContext[ResizeContextProps] = js.native
   
   trait ResizeContextProps extends StObject {
     
@@ -30,8 +30,8 @@ object resizeContextMod extends Shortcut {
     }
   }
   
-  type _To = Context[ResizeContextProps]
+  type _To = ReturnCreateContext[ResizeContextProps]
   
   /* This means you don't have to write `default`, but can instead just say `resizeContextMod.foo` */
-  override def _to: Context[ResizeContextProps] = default
+  override def _to: ReturnCreateContext[ResizeContextProps] = default
 }

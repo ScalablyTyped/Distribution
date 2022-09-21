@@ -1,7 +1,7 @@
 
 # Scala.js typings for ky-universal
 
-Typings are for version 0.3.0
+Typings are for version 0.10.1
 
 ## Library description:
 Use Ky in both Node.js and browsers
@@ -10,10 +10,10 @@ Use Ky in both Node.js and browsers
 | ------------------ | :-------------: |
 | Full name          | ky-universal |
 | Keywords           | ky, universal, isomorphic, browser, browsers, node, react, vue, ssr, fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
-| # releases         | 16 |
-| # dependents       | 77 |
-| # downloads        | 7872852 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2186886.3333333335 |
+| # stars            | 532.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ky-universal#readme)

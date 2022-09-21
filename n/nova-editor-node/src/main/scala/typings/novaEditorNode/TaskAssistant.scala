@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskAssistant extends StObject {
   
   def provideTasks(): AssistantArray[Task]
+  
+  var resolveTaskAction: js.UndefOr[
+    js.Function1[
+      /* context */ TaskActionResolveContext[Transferrable], 
+      ResolvedTaskAction | js.Promise[ResolvedTaskAction]
+    ]
+  ] = js.undefined
 }
 object TaskAssistant {
   
@@ -18,5 +25,11 @@ object TaskAssistant {
   extension [Self <: TaskAssistant](x: Self) {
     
     inline def setProvideTasks(value: () => AssistantArray[Task]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction0(value))
+    
+    inline def setResolveTaskAction(
+      value: /* context */ TaskActionResolveContext[Transferrable] => ResolvedTaskAction | js.Promise[ResolvedTaskAction]
+    ): Self = StObject.set(x, "resolveTaskAction", js.Any.fromFunction1(value))
+    
+    inline def setResolveTaskActionUndefined: Self = StObject.set(x, "resolveTaskAction", js.undefined)
   }
 }

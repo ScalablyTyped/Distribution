@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about a contest that appears on a voter&#39;s ballot.
-  */
 trait SchemaContest extends StObject {
   
   /**
-    * A number specifying the position of this contest on the voter&#39;s
-    * ballot.
+    * A number specifying the position of this contest on the voter's ballot.
     */
-  var ballotPlacement: js.UndefOr[String] = js.undefined
+  var ballotPlacement: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The official title on the ballot for this contest, only where available.
     */
-  var ballotTitle: js.UndefOr[String] = js.undefined
+  var ballotTitle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The candidate choices for this contest.
@@ -31,138 +27,109 @@ trait SchemaContest extends StObject {
   var district: js.UndefOr[SchemaElectoralDistrict] = js.undefined
   
   /**
-    * A description of any additional eligibility requirements for voting in
-    * this contest.
+    * A description of any additional eligibility requirements for voting in this contest.
     */
-  var electorateSpecifications: js.UndefOr[String] = js.undefined
+  var electorateSpecifications: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An ID for this object. IDs may change in future requests and should not
-    * be cached. Access to this field requires special access that can be
-    * requested from the Request more link on the Quotas page.
+    * The levels of government of the office for this contest. There may be more than one in cases where a jurisdiction effectively acts at two different levels of government; for example, the mayor of the District of Columbia acts at "locality" level, but also effectively at both "administrative-area-2" and "administrative-area-1".
     */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The levels of government of the office for this contest. There may be
-    * more than one in cases where a jurisdiction effectively acts at two
-    * different levels of government; for example, the mayor of the District of
-    * Columbia acts at &quot;locality&quot; level, but also effectively at both
-    * &quot;administrative-area-2&quot; and &quot;administrative-area-1&quot;.
-    */
-  var level: js.UndefOr[js.Array[String]] = js.undefined
+  var level: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The number of candidates that will be elected to office in this contest.
     */
-  var numberElected: js.UndefOr[String] = js.undefined
+  var numberElected: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The number of candidates that a voter may vote for in this contest.
     */
-  var numberVotingFor: js.UndefOr[String] = js.undefined
+  var numberVotingFor: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the office for this contest.
     */
-  var office: js.UndefOr[String] = js.undefined
+  var office: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If this is a partisan election, the name of the party it is for.
+    * If this is a partisan election, the name of the party/parties it is for.
     */
-  var primaryParty: js.UndefOr[String] = js.undefined
+  var primaryParties: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The set of ballot responses for the referendum. A ballot response
-    * represents a line on the ballot. Common examples might include
-    * &quot;yes&quot; or &quot;no&quot; for referenda. This field is only
-    * populated for contests of type &#39;Referendum&#39;.
+    * [DEPRECATED] If this is a partisan election, the name of the party it is for. This field as deprecated in favor of the array "primaryParties", as contests may contain more than one party.
     */
-  var referendumBallotResponses: js.UndefOr[js.Array[String]] = js.undefined
+  var primaryParty: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies a short summary of the referendum that is typically on the
-    * ballot below the title but above the text. This field is only populated
-    * for contests of type &#39;Referendum&#39;.
+    * The set of ballot responses for the referendum. A ballot response represents a line on the ballot. Common examples might include "yes" or "no" for referenda. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumBrief: js.UndefOr[String] = js.undefined
+  var referendumBallotResponses: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * A statement in opposition to the referendum. It does not necessarily
-    * appear on the ballot. This field is only populated for contests of type
-    * &#39;Referendum&#39;.
+    * Specifies a short summary of the referendum that is typically on the ballot below the title but above the text. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumConStatement: js.UndefOr[String] = js.undefined
+  var referendumBrief: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies what effect abstaining (not voting) on the proposition will
-    * have (i.e. whether abstaining is considered a vote against it). This
-    * field is only populated for contests of type &#39;Referendum&#39;.
+    * A statement in opposition to the referendum. It does not necessarily appear on the ballot. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumEffectOfAbstain: js.UndefOr[String] = js.undefined
+  var referendumConStatement: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The threshold of votes that the referendum needs in order to pass, e.g.
-    * &quot;two-thirds&quot;. This field is only populated for contests of type
-    * &#39;Referendum&#39;.
+    * Specifies what effect abstaining (not voting) on the proposition will have (i.e. whether abstaining is considered a vote against it). This field is only populated for contests of type 'Referendum'.
     */
-  var referendumPassageThreshold: js.UndefOr[String] = js.undefined
+  var referendumEffectOfAbstain: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A statement in favor of the referendum. It does not necessarily appear on
-    * the ballot. This field is only populated for contests of type
-    * &#39;Referendum&#39;.
+    * The threshold of votes that the referendum needs in order to pass, e.g. "two-thirds". This field is only populated for contests of type 'Referendum'.
     */
-  var referendumProStatement: js.UndefOr[String] = js.undefined
+  var referendumPassageThreshold: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A brief description of the referendum. This field is only populated for
-    * contests of type &#39;Referendum&#39;.
+    * A statement in favor of the referendum. It does not necessarily appear on the ballot. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumSubtitle: js.UndefOr[String] = js.undefined
+  var referendumProStatement: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The full text of the referendum. This field is only populated for
-    * contests of type &#39;Referendum&#39;.
+    * A brief description of the referendum. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumText: js.UndefOr[String] = js.undefined
+  var referendumSubtitle: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The title of the referendum (e.g. &#39;Proposition 42&#39;). This field
-    * is only populated for contests of type &#39;Referendum&#39;.
+    * The full text of the referendum. This field is only populated for contests of type 'Referendum'.
     */
-  var referendumTitle: js.UndefOr[String] = js.undefined
+  var referendumText: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A link to the referendum. This field is only populated for contests of
-    * type &#39;Referendum&#39;.
+    * The title of the referendum (e.g. 'Proposition 42'). This field is only populated for contests of type 'Referendum'.
     */
-  var referendumUrl: js.UndefOr[String] = js.undefined
+  var referendumTitle: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * A link to the referendum. This field is only populated for contests of type 'Referendum'.
+    */
+  var referendumUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The roles which this office fulfills.
     */
-  var roles: js.UndefOr[js.Array[String]] = js.undefined
+  var roles: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * A list of sources for this contest. If multiple sources are listed, the
-    * data has been aggregated from those sources.
+    * A list of sources for this contest. If multiple sources are listed, the data has been aggregated from those sources.
     */
   var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
   
   /**
-    * &quot;Yes&quot; or &quot;No&quot; depending on whether this a contest
-    * being held outside the normal election cycle.
+    * "Yes" or "No" depending on whether this a contest being held outside the normal election cycle.
     */
-  var special: js.UndefOr[String] = js.undefined
+  var special: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of contest. Usually this will be &#39;General&#39;,
-    * &#39;Primary&#39;, or &#39;Run-off&#39; for contests with candidates. For
-    * referenda this will be &#39;Referendum&#39;. For Retention contests this
-    * will typically be &#39;Retention&#39;.
+    * The type of contest. Usually this will be 'General', 'Primary', or 'Run-off' for contests with candidates. For referenda this will be 'Referendum'. For Retention contests this will typically be 'Retention'.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaContest {
   
@@ -175,9 +142,13 @@ object SchemaContest {
     
     inline def setBallotPlacement(value: String): Self = StObject.set(x, "ballotPlacement", value.asInstanceOf[js.Any])
     
+    inline def setBallotPlacementNull: Self = StObject.set(x, "ballotPlacement", null)
+    
     inline def setBallotPlacementUndefined: Self = StObject.set(x, "ballotPlacement", js.undefined)
     
     inline def setBallotTitle(value: String): Self = StObject.set(x, "ballotTitle", value.asInstanceOf[js.Any])
+    
+    inline def setBallotTitleNull: Self = StObject.set(x, "ballotTitle", null)
     
     inline def setBallotTitleUndefined: Self = StObject.set(x, "ballotTitle", js.undefined)
     
@@ -185,7 +156,7 @@ object SchemaContest {
     
     inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
-    inline def setCandidatesVarargs(value: SchemaCandidate*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: SchemaCandidate*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setDistrict(value: SchemaElectoralDistrict): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
@@ -193,93 +164,135 @@ object SchemaContest {
     
     inline def setElectorateSpecifications(value: String): Self = StObject.set(x, "electorateSpecifications", value.asInstanceOf[js.Any])
     
+    inline def setElectorateSpecificationsNull: Self = StObject.set(x, "electorateSpecifications", null)
+    
     inline def setElectorateSpecificationsUndefined: Self = StObject.set(x, "electorateSpecifications", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setLevel(value: js.Array[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
+    
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value :_*))
+    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value*))
     
     inline def setNumberElected(value: String): Self = StObject.set(x, "numberElected", value.asInstanceOf[js.Any])
+    
+    inline def setNumberElectedNull: Self = StObject.set(x, "numberElected", null)
     
     inline def setNumberElectedUndefined: Self = StObject.set(x, "numberElected", js.undefined)
     
     inline def setNumberVotingFor(value: String): Self = StObject.set(x, "numberVotingFor", value.asInstanceOf[js.Any])
     
+    inline def setNumberVotingForNull: Self = StObject.set(x, "numberVotingFor", null)
+    
     inline def setNumberVotingForUndefined: Self = StObject.set(x, "numberVotingFor", js.undefined)
     
     inline def setOffice(value: String): Self = StObject.set(x, "office", value.asInstanceOf[js.Any])
     
+    inline def setOfficeNull: Self = StObject.set(x, "office", null)
+    
     inline def setOfficeUndefined: Self = StObject.set(x, "office", js.undefined)
     
+    inline def setPrimaryParties(value: js.Array[String]): Self = StObject.set(x, "primaryParties", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryPartiesNull: Self = StObject.set(x, "primaryParties", null)
+    
+    inline def setPrimaryPartiesUndefined: Self = StObject.set(x, "primaryParties", js.undefined)
+    
+    inline def setPrimaryPartiesVarargs(value: String*): Self = StObject.set(x, "primaryParties", js.Array(value*))
+    
     inline def setPrimaryParty(value: String): Self = StObject.set(x, "primaryParty", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryPartyNull: Self = StObject.set(x, "primaryParty", null)
     
     inline def setPrimaryPartyUndefined: Self = StObject.set(x, "primaryParty", js.undefined)
     
     inline def setReferendumBallotResponses(value: js.Array[String]): Self = StObject.set(x, "referendumBallotResponses", value.asInstanceOf[js.Any])
     
+    inline def setReferendumBallotResponsesNull: Self = StObject.set(x, "referendumBallotResponses", null)
+    
     inline def setReferendumBallotResponsesUndefined: Self = StObject.set(x, "referendumBallotResponses", js.undefined)
     
-    inline def setReferendumBallotResponsesVarargs(value: String*): Self = StObject.set(x, "referendumBallotResponses", js.Array(value :_*))
+    inline def setReferendumBallotResponsesVarargs(value: String*): Self = StObject.set(x, "referendumBallotResponses", js.Array(value*))
     
     inline def setReferendumBrief(value: String): Self = StObject.set(x, "referendumBrief", value.asInstanceOf[js.Any])
+    
+    inline def setReferendumBriefNull: Self = StObject.set(x, "referendumBrief", null)
     
     inline def setReferendumBriefUndefined: Self = StObject.set(x, "referendumBrief", js.undefined)
     
     inline def setReferendumConStatement(value: String): Self = StObject.set(x, "referendumConStatement", value.asInstanceOf[js.Any])
     
+    inline def setReferendumConStatementNull: Self = StObject.set(x, "referendumConStatement", null)
+    
     inline def setReferendumConStatementUndefined: Self = StObject.set(x, "referendumConStatement", js.undefined)
     
     inline def setReferendumEffectOfAbstain(value: String): Self = StObject.set(x, "referendumEffectOfAbstain", value.asInstanceOf[js.Any])
+    
+    inline def setReferendumEffectOfAbstainNull: Self = StObject.set(x, "referendumEffectOfAbstain", null)
     
     inline def setReferendumEffectOfAbstainUndefined: Self = StObject.set(x, "referendumEffectOfAbstain", js.undefined)
     
     inline def setReferendumPassageThreshold(value: String): Self = StObject.set(x, "referendumPassageThreshold", value.asInstanceOf[js.Any])
     
+    inline def setReferendumPassageThresholdNull: Self = StObject.set(x, "referendumPassageThreshold", null)
+    
     inline def setReferendumPassageThresholdUndefined: Self = StObject.set(x, "referendumPassageThreshold", js.undefined)
     
     inline def setReferendumProStatement(value: String): Self = StObject.set(x, "referendumProStatement", value.asInstanceOf[js.Any])
+    
+    inline def setReferendumProStatementNull: Self = StObject.set(x, "referendumProStatement", null)
     
     inline def setReferendumProStatementUndefined: Self = StObject.set(x, "referendumProStatement", js.undefined)
     
     inline def setReferendumSubtitle(value: String): Self = StObject.set(x, "referendumSubtitle", value.asInstanceOf[js.Any])
     
+    inline def setReferendumSubtitleNull: Self = StObject.set(x, "referendumSubtitle", null)
+    
     inline def setReferendumSubtitleUndefined: Self = StObject.set(x, "referendumSubtitle", js.undefined)
     
     inline def setReferendumText(value: String): Self = StObject.set(x, "referendumText", value.asInstanceOf[js.Any])
+    
+    inline def setReferendumTextNull: Self = StObject.set(x, "referendumText", null)
     
     inline def setReferendumTextUndefined: Self = StObject.set(x, "referendumText", js.undefined)
     
     inline def setReferendumTitle(value: String): Self = StObject.set(x, "referendumTitle", value.asInstanceOf[js.Any])
     
+    inline def setReferendumTitleNull: Self = StObject.set(x, "referendumTitle", null)
+    
     inline def setReferendumTitleUndefined: Self = StObject.set(x, "referendumTitle", js.undefined)
     
     inline def setReferendumUrl(value: String): Self = StObject.set(x, "referendumUrl", value.asInstanceOf[js.Any])
+    
+    inline def setReferendumUrlNull: Self = StObject.set(x, "referendumUrl", null)
     
     inline def setReferendumUrlUndefined: Self = StObject.set(x, "referendumUrl", js.undefined)
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
+    inline def setRolesNull: Self = StObject.set(x, "roles", null)
+    
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSpecial(value: String): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialNull: Self = StObject.set(x, "special", null)
     
     inline def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

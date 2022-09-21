@@ -1,7 +1,7 @@
 
 # Scala.js typings for code-excerpt
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Extract code excerpts
@@ -11,9 +11,9 @@ Extract code excerpts
 | Full name          | code-excerpt |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 9124170 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1964360.6666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/code-excerpt#readme)

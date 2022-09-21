@@ -10,10 +10,10 @@ The lodash method `_.toUpper` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.toupper |
 | Keywords           | lodash-modularized, toupper |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 82702 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 524278.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

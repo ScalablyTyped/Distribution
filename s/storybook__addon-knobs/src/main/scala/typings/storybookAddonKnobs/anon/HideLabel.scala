@@ -17,14 +17,14 @@ trait HideLabel extends StObject {
 }
 object HideLabel {
   
-  inline def apply(callback: /* knob */ ButtonTypeKnob => js.Any): HideLabel = {
+  inline def apply(callback: /* knob */ ButtonTypeKnob => Any): HideLabel = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = true)
     __obj.asInstanceOf[HideLabel]
   }
   
   extension [Self <: HideLabel](x: Self) {
     
-    inline def setCallback(value: /* knob */ ButtonTypeKnob => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* knob */ ButtonTypeKnob => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setHideLabel(value: `true`): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,7 @@ object environmentHelperMod {
   
   @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper")
   @js.native
-  class EnvironmentHelper protected () extends StObject {
+  open class EnvironmentHelper protected () extends StObject {
     /**
       * constructor
       * @param options Defines the options we want to customize the helper
@@ -28,90 +28,93 @@ object environmentHelperMod {
       */
     def this(options: PartialIEnvironmentHelper, scene: Scene) = this()
     
-    /* private */ var _errorHandler: js.Any = js.native
+    /* private */ var _errorHandler: Any = js.native
     
     /**
       * Get the scene sizes according to the setup.
       */
-    /* private */ var _getSceneSize: js.Any = js.native
+    /* private */ var _getSceneSize: Any = js.native
     
-    /* private */ var _ground: js.Any = js.native
+    /* private */ var _ground: Any = js.native
     
-    /* private */ var _groundMaterial: js.Any = js.native
+    /* private */ var _groundMaterial: Any = js.native
     
-    /* private */ var _groundMirror: js.Any = js.native
+    /* private */ var _groundMirror: Any = js.native
     
-    /* private */ var _groundTexture: js.Any = js.native
+    /* private */ var _groundTexture: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _rootMesh: js.Any = js.native
+    /* private */ var _rootMesh: Any = js.native
     
     /**
       * Stores the creation options.
       */
-    /* private */ val _scene: js.Any = js.native
+    /* private */ val _scene: Any = js.native
     
     /**
       * Setup the background according to the specified options.
       */
-    /* private */ var _setupBackground: js.Any = js.native
+    /* private */ var _setupBackground: Any = js.native
     
     /**
       * Setup the environment texture according to the specified options.
       */
-    /* private */ var _setupEnvironmentTexture: js.Any = js.native
+    /* private */ var _setupEnvironmentTexture: Any = js.native
     
     /**
       * Setup the ground according to the specified options.
+      * @param sceneSize
       */
-    /* private */ var _setupGround: js.Any = js.native
+    /* private */ var _setupGround: Any = js.native
     
     /**
       * Setup the ground diffuse texture according to the specified options.
       */
-    /* private */ var _setupGroundDiffuseTexture: js.Any = js.native
+    /* private */ var _setupGroundDiffuseTexture: Any = js.native
     
     /**
       * Setup the ground material according to the specified options.
       */
-    /* private */ var _setupGroundMaterial: js.Any = js.native
+    /* private */ var _setupGroundMaterial: Any = js.native
     
     /**
       * Setup the ground mirror texture according to the specified options.
+      * @param sceneSize
       */
-    /* private */ var _setupGroundMirrorTexture: js.Any = js.native
+    /* private */ var _setupGroundMirrorTexture: Any = js.native
     
     /**
       * Setup the image processing according to the specified options.
       */
-    /* private */ var _setupImageProcessing: js.Any = js.native
+    /* private */ var _setupImageProcessing: Any = js.native
     
     /**
       * Setup the ground to receive the mirror texture.
       */
-    /* private */ var _setupMirrorInGroundMaterial: js.Any = js.native
+    /* private */ var _setupMirrorInGroundMaterial: Any = js.native
     
     /**
       * Setup the skybox according to the specified options.
+      * @param sceneSize
       */
-    /* private */ var _setupSkybox: js.Any = js.native
+    /* private */ var _setupSkybox: Any = js.native
     
     /**
       * Setup the skybox material according to the specified options.
       */
-    /* private */ var _setupSkyboxMaterial: js.Any = js.native
+    /* private */ var _setupSkyboxMaterial: Any = js.native
     
     /**
       * Setup the skybox reflection texture according to the specified options.
       */
-    /* private */ var _setupSkyboxReflectionTexture: js.Any = js.native
+    /* private */ var _setupSkyboxReflectionTexture: Any = js.native
     
-    /* private */ var _skybox: js.Any = js.native
+    /* private */ var _skybox: Any = js.native
     
-    /* private */ var _skyboxMaterial: js.Any = js.native
+    /* private */ var _skyboxMaterial: Any = js.native
     
-    /* private */ var _skyboxTexture: js.Any = js.native
+    /* private */ var _skyboxTexture: Any = js.native
     
     /**
       * Dispose all the elements created by the Helper.
@@ -192,34 +195,34 @@ object environmentHelperMod {
     /**
       * Default environment texture URL.
       */
-    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._environmentTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._EnvironmentTextureCDNUrl")
     @js.native
-    def _environmentTextureCDNUrl: js.Any = js.native
-    inline def _environmentTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_environmentTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _EnvironmentTextureCDNUrl: Any = js.native
+    inline def _EnvironmentTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EnvironmentTextureCDNUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Creates the default options for the helper.
       */
-    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._getDefaultOptions")
+    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._GetDefaultOptions")
     @js.native
-    def _getDefaultOptions: js.Any = js.native
-    inline def _getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getDefaultOptions")(x.asInstanceOf[js.Any])
+    def _GetDefaultOptions: Any = js.native
+    inline def _GetDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Default ground texture URL.
       */
-    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._groundTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._GroundTextureCDNUrl")
     @js.native
-    def _groundTextureCDNUrl: js.Any = js.native
-    inline def _groundTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_groundTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _GroundTextureCDNUrl: Any = js.native
+    inline def _GroundTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GroundTextureCDNUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Default skybox texture URL.
       */
-    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._skyboxTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._SkyboxTextureCDNUrl")
     @js.native
-    def _skyboxTextureCDNUrl: js.Any = js.native
-    inline def _skyboxTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_skyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _SkyboxTextureCDNUrl: Any = js.native
+    inline def _SkyboxTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SkyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
   }
   
   trait IEnvironmentHelperOptions extends StObject {

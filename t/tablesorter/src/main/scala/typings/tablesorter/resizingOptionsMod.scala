@@ -71,7 +71,7 @@ object resizingOptionsMod {
       
       inline def setResizable_widthsUndefined: Self = StObject.set(x, "resizable_widths", js.undefined)
       
-      inline def setResizable_widthsVarargs(value: String*): Self = StObject.set(x, "resizable_widths", js.Array(value :_*))
+      inline def setResizable_widthsVarargs(value: String*): Self = StObject.set(x, "resizable_widths", js.Array(value*))
     }
   }
 }

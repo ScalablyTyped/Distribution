@@ -12,8 +12,7 @@ trait BuildBazelRemoteExecutionV2Directory extends StObject {
   /** The files in the directory. */
   var files: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2FileNode]] = js.undefined
   
-  /** The node properties of the Directory. */
-  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.undefined
+  var nodeProperties: js.UndefOr[BuildBazelRemoteExecutionV2NodeProperties] = js.undefined
   
   /** The symlinks in the directory. */
   var symlinks: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2SymlinkNode]] = js.undefined
@@ -31,24 +30,22 @@ object BuildBazelRemoteExecutionV2Directory {
     
     inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    inline def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2DirectoryNode*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2DirectoryNode*): Self = StObject.set(x, "directories", js.Array(value*))
     
     inline def setFiles(value: js.Array[BuildBazelRemoteExecutionV2FileNode]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: BuildBazelRemoteExecutionV2FileNode*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: BuildBazelRemoteExecutionV2FileNode*): Self = StObject.set(x, "files", js.Array(value*))
     
-    inline def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: BuildBazelRemoteExecutionV2NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
     inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
-    
-    inline def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
     
     inline def setSymlinks(value: js.Array[BuildBazelRemoteExecutionV2SymlinkNode]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     
     inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
     
-    inline def setSymlinksVarargs(value: BuildBazelRemoteExecutionV2SymlinkNode*): Self = StObject.set(x, "symlinks", js.Array(value :_*))
+    inline def setSymlinksVarargs(value: BuildBazelRemoteExecutionV2SymlinkNode*): Self = StObject.set(x, "symlinks", js.Array(value*))
   }
 }

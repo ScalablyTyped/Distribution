@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.ApplicationModel.DesignMode")
 @js.native
-class DesignMode ()
+open class DesignMode ()
   extends StObject
      with typings.winrt.Windows.ApplicationModel.DesignMode
 /* static members */

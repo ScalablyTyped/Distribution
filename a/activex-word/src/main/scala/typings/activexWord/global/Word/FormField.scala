@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FormField")
 @js.native
-/* private */ class FormField ()
+/* private */ open class FormField ()
   extends StObject
      with typings.activexWord.Word.FormField {
   
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OwnStatus: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Previous: typings.activexWord.Word.FormField = js.native

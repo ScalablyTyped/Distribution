@@ -22,13 +22,10 @@ trait LocationOauthtoken extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job ID. */
-  var jobId: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
+  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,7 +34,7 @@ trait LocationOauthtoken extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The ID of the Cloud Platform project that the job belongs to. */
+  /** The project to send the WorkerMessages to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
@@ -48,14 +45,11 @@ trait LocationOauthtoken extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The level of information requested in response. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object LocationOauthtoken {
   
-  inline def apply(jobId: String, location: String, projectId: String): LocationOauthtoken = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(location: String, projectId: String): LocationOauthtoken = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOauthtoken]
   }
   
@@ -80,8 +74,6 @@ object LocationOauthtoken {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -110,9 +102,5 @@ object LocationOauthtoken {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

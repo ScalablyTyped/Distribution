@@ -15,49 +15,49 @@ trait BufferParametersProperties extends StObject {
   /**
     * The spatial reference in which the geometries are buffered.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#bufferSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#bufferSpatialReference)
     */
   var bufferSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The distances the input features are buffered.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#distances)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#distances)
     */
   var distances: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * If the input geometries are in a geographic coordinate system, set geodesic to `true` to generate a buffer polygon using a geodesic distance.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#geodesic)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geodesic)
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The input geometries to buffer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#geometries)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geometries)
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
     * The spatial reference for the returned geometries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * If `true`, all geometries buffered at a given distance are unioned into a single (possibly multipart) polygon, and the unioned geometry is placed in the output array.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#unionResults)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unionResults)
     */
   var unionResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The units for calculating each buffer distance.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#unit)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unit)
     */
   var unit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
@@ -78,7 +78,7 @@ object BufferParametersProperties {
     
     inline def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
     
-    inline def setDistancesVarargs(value: Double*): Self = StObject.set(x, "distances", js.Array(value :_*))
+    inline def setDistancesVarargs(value: Double*): Self = StObject.set(x, "distances", js.Array(value*))
     
     inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object BufferParametersProperties {
     
     inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value*))
     
     inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     

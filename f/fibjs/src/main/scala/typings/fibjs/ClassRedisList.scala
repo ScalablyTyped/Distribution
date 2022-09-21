@@ -72,7 +72,7 @@ trait ClassRedisList
     * 
     * 
     */
-  def push(values: js.Any*): Double = js.native
+  def push(values: Any*): Double = js.native
   /**
     * 
     * @brief 将一个或多个值 value 插入到列表的表头
@@ -81,7 +81,7 @@ trait ClassRedisList
     * 
     * 
     */
-  def push(values: js.Array[js.Any]): Double = js.native
+  def push(values: js.Array[Any]): Double = js.native
   
   /**
     * 
@@ -92,7 +92,7 @@ trait ClassRedisList
     * 
     * 
     */
-  def range(start: Double, stop: Double): js.Array[js.Any] = js.native
+  def range(start: Double, stop: Double): js.Array[Any] = js.native
   
   /**
     * 
@@ -122,7 +122,7 @@ trait ClassRedisList
     * 
     * 
     */
-  def rpush(values: js.Any*): Double = js.native
+  def rpush(values: Any*): Double = js.native
   /**
     * 
     * @brief 将一个或多个值 value 插入到列表的表尾(最右边)
@@ -131,7 +131,7 @@ trait ClassRedisList
     * 
     * 
     */
-  def rpush(values: js.Array[js.Any]): Double = js.native
+  def rpush(values: js.Array[Any]): Double = js.native
   
   /**
     * 

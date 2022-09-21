@@ -10,10 +10,10 @@ Transform stream that gunzips its input if it is gzipped and just echoes it if n
 | ------------------ | :-------------: |
 | Full name          | gunzip-maybe |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 180 |
-| # downloads        | 5934222 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1171889.0 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/gunzip-maybe)

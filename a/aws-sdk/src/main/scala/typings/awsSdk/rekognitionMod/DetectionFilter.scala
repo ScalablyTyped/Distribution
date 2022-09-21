@@ -17,7 +17,7 @@ trait DetectionFilter extends StObject {
   var MinBoundingBoxWidth: js.UndefOr[BoundingBoxWidth] = js.undefined
   
   /**
-    * Sets confidence of word detection. Words with detection confidence below this will be excluded from the result. Values should be between 0.5 and 1 as Text in Video will not return any result below 0.5.
+    * Sets the confidence of word detection. Words with detection confidence below this will be excluded from the result. Values should be between 0 and 100. The default MinConfidence is 80.
     */
   var MinConfidence: js.UndefOr[Percent] = js.undefined
 }

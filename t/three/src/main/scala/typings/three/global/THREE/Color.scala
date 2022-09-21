@@ -1,17 +1,16 @@
 package typings.three.global.THREE
 
 import typings.std.Record
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("THREE.Color")
 @js.native
-class Color ()
+open class Color ()
   extends typings.three.mod.Color {
-  def this(color: String) = this()
-  def this(color: Double) = this()
-  def this(color: typings.three.colorMod.Color) = this()
+  def this(color: ColorRepresentation) = this()
   def this(r: Double, g: Double, b: Double) = this()
 }
 /* static members */
@@ -22,8 +21,8 @@ object Color {
   val ^ : js.Any = js.native
   
   /**
-  	 * List of X11 color names.
-  	 */
+    * List of X11 color names.
+    */
   @JSGlobal("THREE.Color.NAMES")
   @js.native
   def NAMES: Record[String, Double] = js.native

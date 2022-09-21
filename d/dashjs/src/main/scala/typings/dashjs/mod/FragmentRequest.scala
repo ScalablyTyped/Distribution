@@ -2,12 +2,6 @@ package typings.dashjs.mod
 
 import typings.dashjs.dashjsStrings.InitializationSegment
 import typings.dashjs.dashjsStrings.MediaSegment
-import typings.dashjs.dashjsStrings.audio
-import typings.dashjs.dashjsStrings.embeddedText
-import typings.dashjs.dashjsStrings.fragmentedText
-import typings.dashjs.dashjsStrings.text
-import typings.dashjs.dashjsStrings.video
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +12,7 @@ trait FragmentRequest extends StObject {
   
   var availabilityEndTime: Double
   
-  var availabilityStartTime: Date
+  var availabilityStartTime: js.Date
   
   var bytesLoaded: Double
   
@@ -28,21 +22,23 @@ trait FragmentRequest extends StObject {
   
   var duration: Double
   
-  var firstByteDate: Date
+  var firstByteDate: js.Date
   
   var index: Double
   
   var mediaInfo: MediaInfo
   
-  var mediaType: video | audio | text | fragmentedText | embeddedText
+  var mediaStartTime: Double
+  
+  var mediaType: MediaType
   
   var quality: Double
   
   var representationId: String
   
-  var requestEndDate: Date | Null
+  var requestEndDate: js.Date | Null
   
-  var requestStartDate: Date
+  var requestStartDate: js.Date
   
   var responseType: String
   
@@ -55,24 +51,27 @@ trait FragmentRequest extends StObject {
   var `type`: InitializationSegment | MediaSegment
   
   var url: String
+  
+  var wallStartTime: js.Date | Null
 }
 object FragmentRequest {
   
   inline def apply(
     action: String,
     availabilityEndTime: Double,
-    availabilityStartTime: Date,
+    availabilityStartTime: js.Date,
     bytesLoaded: Double,
     bytesTotal: Double,
     delayLoadingTime: Double,
     duration: Double,
-    firstByteDate: Date,
+    firstByteDate: js.Date,
     index: Double,
     mediaInfo: MediaInfo,
-    mediaType: video | audio | text | fragmentedText | embeddedText,
+    mediaStartTime: Double,
+    mediaType: MediaType,
     quality: Double,
     representationId: String,
-    requestStartDate: Date,
+    requestStartDate: js.Date,
     responseType: String,
     serviceLocation: String,
     startTime: Double,
@@ -80,7 +79,7 @@ object FragmentRequest {
     `type`: InitializationSegment | MediaSegment,
     url: String
   ): FragmentRequest = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], availabilityEndTime = availabilityEndTime.asInstanceOf[js.Any], availabilityStartTime = availabilityStartTime.asInstanceOf[js.Any], bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], delayLoadingTime = delayLoadingTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], firstByteDate = firstByteDate.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mediaInfo = mediaInfo.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], representationId = representationId.asInstanceOf[js.Any], requestStartDate = requestStartDate.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], serviceLocation = serviceLocation.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], requestEndDate = null)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], availabilityEndTime = availabilityEndTime.asInstanceOf[js.Any], availabilityStartTime = availabilityStartTime.asInstanceOf[js.Any], bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], delayLoadingTime = delayLoadingTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], firstByteDate = firstByteDate.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mediaInfo = mediaInfo.asInstanceOf[js.Any], mediaStartTime = mediaStartTime.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], representationId = representationId.asInstanceOf[js.Any], requestStartDate = requestStartDate.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], serviceLocation = serviceLocation.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], requestEndDate = null, wallStartTime = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentRequest]
   }
@@ -91,7 +90,7 @@ object FragmentRequest {
     
     inline def setAvailabilityEndTime(value: Double): Self = StObject.set(x, "availabilityEndTime", value.asInstanceOf[js.Any])
     
-    inline def setAvailabilityStartTime(value: Date): Self = StObject.set(x, "availabilityStartTime", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStartTime(value: js.Date): Self = StObject.set(x, "availabilityStartTime", value.asInstanceOf[js.Any])
     
     inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
@@ -101,23 +100,25 @@ object FragmentRequest {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setFirstByteDate(value: Date): Self = StObject.set(x, "firstByteDate", value.asInstanceOf[js.Any])
+    inline def setFirstByteDate(value: js.Date): Self = StObject.set(x, "firstByteDate", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
-    inline def setMediaType(value: video | audio | text | fragmentedText | embeddedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaStartTime(value: Double): Self = StObject.set(x, "mediaStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     inline def setRepresentationId(value: String): Self = StObject.set(x, "representationId", value.asInstanceOf[js.Any])
     
-    inline def setRequestEndDate(value: Date): Self = StObject.set(x, "requestEndDate", value.asInstanceOf[js.Any])
+    inline def setRequestEndDate(value: js.Date): Self = StObject.set(x, "requestEndDate", value.asInstanceOf[js.Any])
     
     inline def setRequestEndDateNull: Self = StObject.set(x, "requestEndDate", null)
     
-    inline def setRequestStartDate(value: Date): Self = StObject.set(x, "requestStartDate", value.asInstanceOf[js.Any])
+    inline def setRequestStartDate(value: js.Date): Self = StObject.set(x, "requestStartDate", value.asInstanceOf[js.Any])
     
     inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
@@ -130,5 +131,9 @@ object FragmentRequest {
     inline def setType(value: InitializationSegment | MediaSegment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setWallStartTime(value: js.Date): Self = StObject.set(x, "wallStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setWallStartTimeNull: Self = StObject.set(x, "wallStartTime", null)
   }
 }

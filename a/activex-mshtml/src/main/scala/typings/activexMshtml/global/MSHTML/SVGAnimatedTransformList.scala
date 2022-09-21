@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedTransformList")
 @js.native
-/* private */ class SVGAnimatedTransformList ()
+/* private */ open class SVGAnimatedTransformList ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedTransformList {
   

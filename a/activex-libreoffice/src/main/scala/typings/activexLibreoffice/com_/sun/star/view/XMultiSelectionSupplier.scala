@@ -27,7 +27,7 @@ trait XMultiSelectionSupplier
     * @returns `TRUE` /, if **Selection** was added to the current selection. `FALSE` , if **Selection** or parts of **Selection** could not be added to the cur
     * @throws com::sun::star::lang::IllegalArgumentException If **Selection** is not a selectable object for this {@link XMultiSelectionSupplier} . Adding an o
     */
-  def addSelection(Selection: js.Any): Boolean
+  def addSelection(Selection: Any): Boolean
   
   /** clears the selection of this {@link XMultiSelectionSupplier} . */
   def clearSelection(): Unit
@@ -47,26 +47,26 @@ trait XMultiSelectionSupplier
     * @returns `TRUE` /, if **Selection** was added to the current selection. `FALSE` , if **Selection** or parts of **Selection** could not be added to the cur
     * @throws com::sun::star::lang::IllegalArgumentException If **Selection** is not a selectable object for this {@link XMultiSelectionSupplier} . Removing an
     */
-  def removeSelection(Selection: js.Any): Unit
+  def removeSelection(Selection: Any): Unit
 }
 object XMultiSelectionSupplier {
   
   inline def apply(
-    Selection: js.Any,
+    Selection: Any,
     SelectionCount: Double,
     acquire: () => Unit,
-    addSelection: js.Any => Boolean,
+    addSelection: Any => Boolean,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
     clearSelection: () => Unit,
     createReverseSelectionEnumeration: () => XEnumeration,
     createSelectionEnumeration: () => XEnumeration,
-    getSelection: () => js.Any,
+    getSelection: () => Any,
     getSelectionCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    removeSelection: js.Any => Unit,
+    removeSelection: Any => Unit,
     removeSelectionChangeListener: XSelectionChangeListener => Unit,
-    select: js.Any => Boolean
+    select: Any => Boolean
   ): XMultiSelectionSupplier = {
     val __obj = js.Dynamic.literal(Selection = Selection.asInstanceOf[js.Any], SelectionCount = SelectionCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addSelection = js.Any.fromFunction1(addSelection), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), clearSelection = js.Any.fromFunction0(clearSelection), createReverseSelectionEnumeration = js.Any.fromFunction0(createReverseSelectionEnumeration), createSelectionEnumeration = js.Any.fromFunction0(createSelectionEnumeration), getSelection = js.Any.fromFunction0(getSelection), getSelectionCount = js.Any.fromFunction0(getSelectionCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelection = js.Any.fromFunction1(removeSelection), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select))
     __obj.asInstanceOf[XMultiSelectionSupplier]
@@ -74,7 +74,7 @@ object XMultiSelectionSupplier {
   
   extension [Self <: XMultiSelectionSupplier](x: Self) {
     
-    inline def setAddSelection(value: js.Any => Boolean): Self = StObject.set(x, "addSelection", js.Any.fromFunction1(value))
+    inline def setAddSelection(value: Any => Boolean): Self = StObject.set(x, "addSelection", js.Any.fromFunction1(value))
     
     inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     
@@ -84,7 +84,7 @@ object XMultiSelectionSupplier {
     
     inline def setGetSelectionCount(value: () => Double): Self = StObject.set(x, "getSelectionCount", js.Any.fromFunction0(value))
     
-    inline def setRemoveSelection(value: js.Any => Unit): Self = StObject.set(x, "removeSelection", js.Any.fromFunction1(value))
+    inline def setRemoveSelection(value: Any => Unit): Self = StObject.set(x, "removeSelection", js.Any.fromFunction1(value))
     
     inline def setSelectionCount(value: Double): Self = StObject.set(x, "SelectionCount", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("@material/animation", "AnimationFrame")
   @js.native
-  class AnimationFrame ()
+  open class AnimationFrame ()
     extends typings.materialAnimation.animationframeMod.AnimationFrame
   
   inline def getCorrectEventName(windowObj: Window, eventType: StandardJsEventType): StandardJsEventType | PrefixedJsEventType = (^.asInstanceOf[js.Dynamic].applyDynamic("getCorrectEventName")(windowObj.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[StandardJsEventType | PrefixedJsEventType]

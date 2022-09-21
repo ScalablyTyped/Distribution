@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Accesstoken
-import typings.maximMazurokGapiClientArtifactregistry.anon.Alt
+import typings.maximMazurokGapiClientArtifactregistry.anon.PageToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait LocationsResource extends StObject {
   
   /** Lists information about the supported locations for this service. */
   def list(): Request[ListLocationsResponse] = js.native
-  def list(request: Alt): Request[ListLocationsResponse] = js.native
+  def list(request: PageToken): Request[ListLocationsResponse] = js.native
   
   var operations: OperationsResource = js.native
   

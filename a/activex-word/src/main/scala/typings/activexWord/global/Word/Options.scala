@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Options")
 @js.native
-/* private */ class Options ()
+/* private */ open class Options ()
   extends StObject
      with typings.activexWord.Word.Options {
   
@@ -520,7 +520,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Pagination: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PasteAdjustParagraphSpacing: Boolean = js.native
@@ -653,12 +653,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /* CompleteClass */
   override def SetWPHelpOptions(
-    CommandKeyHelp: js.UndefOr[js.Any],
-    DocNavigationKeys: js.UndefOr[js.Any],
-    MouseSimulation: js.UndefOr[js.Any],
-    DemoGuidance: js.UndefOr[js.Any],
-    DemoSpeed: js.UndefOr[js.Any],
-    HelpType: js.UndefOr[js.Any]
+    CommandKeyHelp: js.UndefOr[Any],
+    DocNavigationKeys: js.UndefOr[Any],
+    MouseSimulation: js.UndefOr[Any],
+    DemoGuidance: js.UndefOr[Any],
+    DemoSpeed: js.UndefOr[Any],
+    HelpType: js.UndefOr[Any]
   ): Unit = js.native
   
   /* CompleteClass */

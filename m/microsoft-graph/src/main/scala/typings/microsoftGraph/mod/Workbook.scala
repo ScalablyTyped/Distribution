@@ -14,7 +14,7 @@ trait Workbook
   
   var functions: js.UndefOr[NullableOption[WorkbookFunctions]] = js.undefined
   
-  // Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+  // Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.
   var names: js.UndefOr[NullableOption[js.Array[WorkbookNamedItem]]] = js.undefined
   
   /**
@@ -50,7 +50,7 @@ object Workbook {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: WorkbookComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: WorkbookComment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setFunctions(value: NullableOption[WorkbookFunctions]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object Workbook {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setOperations(value: NullableOption[js.Array[WorkbookOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object Workbook {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: WorkbookOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: WorkbookOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setTables(value: NullableOption[js.Array[WorkbookTable]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object Workbook {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setWorksheets(value: NullableOption[js.Array[WorkbookWorksheet]]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
@@ -88,6 +88,6 @@ object Workbook {
     
     inline def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
     
-    inline def setWorksheetsVarargs(value: WorkbookWorksheet*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
+    inline def setWorksheetsVarargs(value: WorkbookWorksheet*): Self = StObject.set(x, "worksheets", js.Array(value*))
   }
 }

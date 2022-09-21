@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedEnumeration")
 @js.native
-/* private */ class SVGAnimatedEnumeration ()
+/* private */ open class SVGAnimatedEnumeration ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedEnumeration {
   

@@ -185,4 +185,20 @@ object ariClientStrings {
   @js.native
   sealed trait TextMessageReceived extends StObject
   inline def TextMessageReceived: TextMessageReceived = "TextMessageReceived".asInstanceOf[TextMessageReceived]
+  
+  @js.native
+  sealed trait WebSocketConnected extends StObject
+  inline def WebSocketConnected: WebSocketConnected = "WebSocketConnected".asInstanceOf[WebSocketConnected]
+  
+  @js.native
+  sealed trait WebSocketMaxRetries extends StObject
+  inline def WebSocketMaxRetries: WebSocketMaxRetries = "WebSocketMaxRetries".asInstanceOf[WebSocketMaxRetries]
+  
+  @js.native
+  sealed trait WebSocketReconnecting extends StObject
+  inline def WebSocketReconnecting: WebSocketReconnecting = "WebSocketReconnecting".asInstanceOf[WebSocketReconnecting]
+  
+  @js.native
+  sealed trait pong extends StObject
+  inline def pong: pong = "pong".asInstanceOf[pong]
 }

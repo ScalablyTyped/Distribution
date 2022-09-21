@@ -11,9 +11,9 @@ Polyline encoding and decoding
 | Full name          | polyline |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 366292 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 220489.66666666666 |
+| # stars            | 576.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/polyline)

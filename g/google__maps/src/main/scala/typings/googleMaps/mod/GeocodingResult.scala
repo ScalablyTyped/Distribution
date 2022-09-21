@@ -106,7 +106,7 @@ object GeocodingResult {
     
     inline def setAddress_components(value: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | GeocodingAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | GeocodingAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value*))
     
     inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
@@ -120,10 +120,10 @@ object GeocodingResult {
     
     inline def setPostcode_localities(value: js.Array[String]): Self = StObject.set(x, "postcode_localities", value.asInstanceOf[js.Any])
     
-    inline def setPostcode_localitiesVarargs(value: String*): Self = StObject.set(x, "postcode_localities", js.Array(value :_*))
+    inline def setPostcode_localitiesVarargs(value: String*): Self = StObject.set(x, "postcode_localities", js.Array(value*))
     
     inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object GetTransitGatewayRouteTableAssociationsResult {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: TransitGatewayRouteTableAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: TransitGatewayRouteTableAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

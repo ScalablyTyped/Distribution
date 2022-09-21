@@ -1,19 +1,24 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetOptions extends js.Object {
+trait SetOptions extends StObject {
+  
   var unset: js.UndefOr[Boolean] = js.undefined
 }
-
 object SetOptions {
-  @scala.inline
-  def apply(unset: js.UndefOr[Boolean] = js.undefined): SetOptions = {
+  
+  inline def apply(): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unset)) __obj.updateDynamic("unset")(unset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
+  
+  extension [Self <: SetOptions](x: Self) {
+    
+    inline def setUnset(value: Boolean): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
+    
+    inline def setUnsetUndefined: Self = StObject.set(x, "unset", js.undefined)
+  }
 }
-

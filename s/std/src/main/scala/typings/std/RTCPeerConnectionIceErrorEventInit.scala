@@ -8,12 +8,19 @@ trait RTCPeerConnectionIceErrorEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
+  var address: js.UndefOr[java.lang.String | Null] = js.undefined
+  
+  /* standard dom */
   var errorCode: Double
   
-  var hostCandidate: js.UndefOr[java.lang.String] = js.undefined
+  /* standard dom */
+  var errorText: js.UndefOr[java.lang.String] = js.undefined
   
-  var statusText: js.UndefOr[java.lang.String] = js.undefined
+  /* standard dom */
+  var port: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCPeerConnectionIceErrorEventInit {
@@ -25,15 +32,23 @@ object RTCPeerConnectionIceErrorEventInit {
   
   extension [Self <: RTCPeerConnectionIceErrorEventInit](x: Self) {
     
+    inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    inline def setHostCandidate(value: java.lang.String): Self = StObject.set(x, "hostCandidate", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: java.lang.String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    inline def setHostCandidateUndefined: Self = StObject.set(x, "hostCandidate", js.undefined)
+    inline def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
     
-    inline def setStatusText(value: java.lang.String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    inline def setPortNull: Self = StObject.set(x, "port", null)
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

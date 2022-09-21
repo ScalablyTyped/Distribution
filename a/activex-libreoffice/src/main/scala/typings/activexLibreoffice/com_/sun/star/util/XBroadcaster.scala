@@ -38,7 +38,7 @@ object XBroadcaster {
   inline def apply(
     acquire: () => Unit,
     lockBroadcasts: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unlockBroadcasts: () => Unit
   ): XBroadcaster = {

@@ -9,7 +9,7 @@ object stepParserMod {
   
   @JSImport("yadda/lib/parsers/StepParser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with StepParser
   

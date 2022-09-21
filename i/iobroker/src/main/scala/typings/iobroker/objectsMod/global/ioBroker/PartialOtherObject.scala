@@ -1,10 +1,8 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.anon.PartialOtherCommon
-import typings.iobroker.iobrokerStrings.adapter
 import typings.iobroker.iobrokerStrings.chart
 import typings.iobroker.iobrokerStrings.config
-import typings.iobroker.iobrokerStrings.info
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.OtherObject, 'common'>> */
 trait PartialOtherObject
   extends StObject
-     with PartialObject {
+     with AnyPartialObject {
   
   var _id: js.UndefOr[String] = js.undefined
   
@@ -25,11 +23,11 @@ trait PartialOtherObject
   
   var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var native: js.UndefOr[Record[String, Any]] = js.undefined
   
   var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[adapter | config | info | chart] = js.undefined
+  var `type`: js.UndefOr[config | chart] = js.undefined
   
   var user: js.UndefOr[String] = js.undefined
 }
@@ -58,7 +56,7 @@ object PartialOtherObject {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Record[String, Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
     
@@ -66,7 +64,7 @@ object PartialOtherObject {
     
     inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
-    inline def setType(value: adapter | config | info | chart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: config | chart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

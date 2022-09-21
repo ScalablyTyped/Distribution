@@ -10,7 +10,7 @@ object textMod {
   
   @JSImport("ol/style/Text", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Text {
     def this(opt_options: Options) = this()
@@ -97,7 +97,7 @@ object textMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPlacement(value: TextPlacement | String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

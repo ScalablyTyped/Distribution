@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center
@@ -26,7 +27,7 @@ trait PartialLegendBgcolor extends StObject {
   
   var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var orientation: js.UndefOr[v | h] = js.undefined
   
@@ -63,7 +64,7 @@ object PartialLegendBgcolor {
     
     inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
-    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

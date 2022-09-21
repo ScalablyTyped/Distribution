@@ -1,7 +1,7 @@
 
 # Scala.js typings for cp-file
 
-Typings are for version 9.0.0
+Typings are for version 10.0.0
 
 ## Library description:
 Copy a file
@@ -10,10 +10,10 @@ Copy a file
 | ------------------ | :-------------: |
 | Full name          | cp-file |
 | Keywords           | copy, cp, file, clone, fs, stream, file-system, ncp, fast, quick, data, content, contents |
-| # releases         | 7 |
-| # dependents       | 180 |
-| # downloads        | 47665787 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5939396666666666E7 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/cp-file#readme)

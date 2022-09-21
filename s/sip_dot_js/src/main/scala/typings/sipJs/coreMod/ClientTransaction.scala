@@ -27,6 +27,6 @@ object ClientTransaction {
   
   @JSImport("sip.js/lib/core", "ClientTransaction.makeId")
   @js.native
-  def makeId: js.Any = js.native
-  inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+  def makeId: Any = js.native
+  inline def makeId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
 }

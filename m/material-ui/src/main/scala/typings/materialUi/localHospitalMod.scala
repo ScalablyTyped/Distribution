@@ -10,10 +10,10 @@ object localHospitalMod {
   
   @JSImport("material-ui/svg-icons/maps/local-hospital", JSImport.Default)
   @js.native
-  class default () extends MapsLocalHospital
+  open class default () extends MapsLocalHospital
   
   @JSImport("material-ui/svg-icons/maps/local-hospital", "MapsLocalHospital")
   @js.native
-  class MapsLocalHospital ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalHospital ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

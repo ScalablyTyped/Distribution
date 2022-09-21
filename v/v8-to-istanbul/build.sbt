@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "v8-to-istanbul"
-version := "7.0.0-95204a"
-scalaVersion := "3.0.1"
+version := "9.0.1-5afab9"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-707c57",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-b8f375",
+  "org.scalablytyped" %%% "jridgewell__trace-mapping" % "0.3.15-7a644b",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

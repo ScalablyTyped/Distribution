@@ -16,7 +16,7 @@ trait Api extends StObject {
     *
     * @param input : An override to the base config object or just an empty object {}
     */
-  def conformance(input: js.Any): js.Promise[Response]
+  def conformance(input: Any): js.Promise[Response]
   
   /**
     * POST BASEURL/{resourceType} BODY: {entry without id}
@@ -48,9 +48,9 @@ trait Api extends StObject {
     */
   def drain(
     params: SearchParams,
-    process: js.Function1[/* entries */ js.Array[Entry], js.Any],
-    done: js.Function0[js.Any],
-    fail: js.Function1[/* error */ js.Any, js.Any]
+    process: js.Function1[/* entries */ js.Array[Entry], Any],
+    done: js.Function0[Any],
+    fail: js.Function1[/* error */ Any, Any]
   ): Unit
   
   /**
@@ -73,7 +73,7 @@ trait Api extends StObject {
     * Resolve: (entries:Entry[],resolvedReferences:[index: string]: Resource) => { console.log(entries); console.log(resolvedReferences);}
     * Reject: (error:any) => { console.log(error); }
     */
-  def fetchAllWithReferences(params: SearchParams, resolveParams: js.Array[String]): js.Any
+  def fetchAllWithReferences(params: SearchParams, resolveParams: js.Array[String]): Any
   
   /**
     * GET BASEURL/_history?historyParams
@@ -163,13 +163,13 @@ trait Api extends StObject {
 object Api {
   
   inline def apply(
-    conformance: js.Any => js.Promise[Response],
+    conformance: Any => js.Promise[Response],
     create: Entry => js.Promise[Response],
     delete: Entry => js.Promise[Response],
     document: Entry => js.Promise[Response],
-    drain: (SearchParams, js.Function1[/* entries */ js.Array[Entry], js.Any], js.Function0[js.Any], js.Function1[/* error */ js.Any, js.Any]) => Unit,
+    drain: (SearchParams, js.Function1[/* entries */ js.Array[Entry], Any], js.Function0[Any], js.Function1[/* error */ Any, Any]) => Unit,
     fetchAll: SearchParams => js.Promise[js.Array[Entry]],
-    fetchAllWithReferences: (SearchParams, js.Array[String]) => js.Any,
+    fetchAllWithReferences: (SearchParams, js.Array[String]) => Any,
     history: HistoryParams => js.Promise[Response],
     nextPage: Bundle => js.Promise[Response],
     prevPage: Bundle => js.Promise[Response],
@@ -190,7 +190,7 @@ object Api {
   
   extension [Self <: Api](x: Self) {
     
-    inline def setConformance(value: js.Any => js.Promise[Response]): Self = StObject.set(x, "conformance", js.Any.fromFunction1(value))
+    inline def setConformance(value: Any => js.Promise[Response]): Self = StObject.set(x, "conformance", js.Any.fromFunction1(value))
     
     inline def setCreate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
@@ -199,12 +199,12 @@ object Api {
     inline def setDocument(value: Entry => js.Promise[Response]): Self = StObject.set(x, "document", js.Any.fromFunction1(value))
     
     inline def setDrain(
-      value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], js.Any], js.Function0[js.Any], js.Function1[/* error */ js.Any, js.Any]) => Unit
+      value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], Any], js.Function0[Any], js.Function1[/* error */ Any, Any]) => Unit
     ): Self = StObject.set(x, "drain", js.Any.fromFunction4(value))
     
     inline def setFetchAll(value: SearchParams => js.Promise[js.Array[Entry]]): Self = StObject.set(x, "fetchAll", js.Any.fromFunction1(value))
     
-    inline def setFetchAllWithReferences(value: (SearchParams, js.Array[String]) => js.Any): Self = StObject.set(x, "fetchAllWithReferences", js.Any.fromFunction2(value))
+    inline def setFetchAllWithReferences(value: (SearchParams, js.Array[String]) => Any): Self = StObject.set(x, "fetchAllWithReferences", js.Any.fromFunction2(value))
     
     inline def setHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "history", js.Any.fromFunction1(value))
     

@@ -8,7 +8,7 @@ object stringMethodsMod {
   
   @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods")
   @js.native
-  class StringMethods () extends StObject
+  open class StringMethods () extends StObject
   /* static members */
   object StringMethods {
     

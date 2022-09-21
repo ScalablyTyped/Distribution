@@ -7,11 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphicProperties extends StObject {
   
   /**
+    * The aggregateGeometries contains spatial aggregation geometries when [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType) query is executed with `envelope-aggregate`, `centroid-aggregate` and/or `convex-hull-aggregate` statistics type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#aggregateGeometries)
+    */
+  var aggregateGeometries: js.UndefOr[Any] = js.undefined
+  
+  /**
     * Name-value pairs of fields and field values associated with the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes)
     */
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
   /**
     * The geometry that defines the graphic's location.
@@ -44,6 +51,8 @@ trait GraphicProperties extends StObject {
   /**
     * Indicates the visibility of the graphic.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +66,11 @@ object GraphicProperties {
   
   extension [Self <: GraphicProperties](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAggregateGeometries(value: Any): Self = StObject.set(x, "aggregateGeometries", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateGeometriesUndefined: Self = StObject.set(x, "aggregateGeometries", js.undefined)
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     

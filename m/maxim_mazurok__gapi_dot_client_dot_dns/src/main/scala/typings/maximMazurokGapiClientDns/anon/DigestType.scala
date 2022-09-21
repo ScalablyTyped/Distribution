@@ -19,7 +19,7 @@ trait DigestType extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type will be computed and displayed. */
+  /** An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type is computed and displayed. */
   var digestType: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
@@ -31,7 +31,7 @@ trait DigestType extends StObject {
   /** Identifies the managed zone addressed by this request. Can be the managed zone name or ID. */
   var managedZone: String
   
-  /** Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return. */
+  /** Optional. Maximum number of results to be returned. If unspecified, the server decides how many results to return. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */

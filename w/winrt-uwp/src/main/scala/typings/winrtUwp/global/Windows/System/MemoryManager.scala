@@ -22,16 +22,16 @@ object MemoryManager {
   
   /* unmapped type */
   /* static member */
-  inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets the app's current memory usage. */
   /* static member */
@@ -73,38 +73,38 @@ object MemoryManager {
   /* static member */
   @JSGlobal("Windows.System.MemoryManager.onappmemoryusagedecreased")
   @js.native
-  def onappmemoryusagedecreased: EventHandler[js.Any] = js.native
-  inline def onappmemoryusagedecreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusagedecreased")(x.asInstanceOf[js.Any])
+  def onappmemoryusagedecreased: EventHandler[Any] = js.native
+  inline def onappmemoryusagedecreased_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusagedecreased")(x.asInstanceOf[js.Any])
   
   /** Raised when the app's memory consumption has increased to a higher value in the AppMemoryUsageLevel enumeration. */
   /* static member */
   @JSGlobal("Windows.System.MemoryManager.onappmemoryusageincreased")
   @js.native
-  def onappmemoryusageincreased: EventHandler[js.Any] = js.native
-  inline def onappmemoryusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusageincreased")(x.asInstanceOf[js.Any])
+  def onappmemoryusageincreased: EventHandler[Any] = js.native
+  inline def onappmemoryusageincreased_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusageincreased")(x.asInstanceOf[js.Any])
   
   /** Raised just before the limit of how much total memory the app can use is changed. */
   /* static member */
   @JSGlobal("Windows.System.MemoryManager.onappmemoryusagelimitchanging")
   @js.native
-  def onappmemoryusagelimitchanging: EventHandler[js.Any] = js.native
-  inline def onappmemoryusagelimitchanging_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusagelimitchanging")(x.asInstanceOf[js.Any])
+  def onappmemoryusagelimitchanging: EventHandler[Any] = js.native
+  inline def onappmemoryusagelimitchanging_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusagelimitchanging")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSGlobal("Windows.System.MemoryManager.trySetAppMemoryUsageLimit")
   @js.native
-  def trySetAppMemoryUsageLimit: js.Any = js.native
-  inline def trySetAppMemoryUsageLimit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trySetAppMemoryUsageLimit")(x.asInstanceOf[js.Any])
+  def trySetAppMemoryUsageLimit: Any = js.native
+  inline def trySetAppMemoryUsageLimit_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trySetAppMemoryUsageLimit")(x.asInstanceOf[js.Any])
 }

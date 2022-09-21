@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "patch-console" : "1.0.0"
+      "patch-console" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "patch-console" : "1.0.0"
+      "patch-console" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

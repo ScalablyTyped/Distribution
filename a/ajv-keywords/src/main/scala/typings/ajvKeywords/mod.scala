@@ -1,17 +1,19 @@
 package typings.ajvKeywords
 
-import typings.ajv.mod.Ajv
+import org.scalablytyped.runtime.Shortcut
+import typings.ajv.coreMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
-  inline def apply(ajv: Ajv): Ajv = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[Ajv]
-  inline def apply(ajv: Ajv, include: String): Ajv = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[Ajv]
-  inline def apply(ajv: Ajv, include: js.Array[String]): Ajv = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[Ajv]
-  
-  @JSImport("ajv-keywords", JSImport.Namespace)
+  @JSImport("ajv-keywords", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  val default: Plugin[String | js.Array[String]] = js.native
+  
+  type _To = Plugin[String | js.Array[String]]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Plugin[String | js.Array[String]] = default
 }

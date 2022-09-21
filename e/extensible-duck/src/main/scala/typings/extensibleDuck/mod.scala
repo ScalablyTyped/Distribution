@@ -7,9 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("extensible-duck", JSImport.Default)
+  @js.native
+  open class default[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] protected () extends Duck[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts] {
+    def this(options: DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]) = this()
+  }
+  
   @JSImport("extensible-duck", "Duck")
   @js.native
-  class Duck[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] protected () extends StObject {
+  open class Duck[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] protected () extends StObject {
     def this(options: DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]) = this()
     
     var creators: TActionCreators = js.native
@@ -39,20 +45,20 @@ object mod {
     var types: DuckActionTypes[TActionTypes] = js.native
   }
   
-  type AnyObject = Record[js.Any, js.Any]
+  type AnyObject = Record[Any, Any]
   
   type DuckActionTypes[TActionTypes] = Record[/* keyof TActionTypes */ String, String]
   
   type DuckConsts[TConsts] = Record[/* keyof TConsts */ String, Record[String, String]]
   
-  type DuckCreators[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
+  type DuckCreators[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
     /* D */ DuckInstance[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts], 
     TActionCreators
   ]
   
-  type DuckInstance[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] = (Duck[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]) & DuckConsts[TConsts]
+  type DuckInstance[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] = (Duck[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]) & DuckConsts[TConsts]
   
-  trait DuckOptions[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] extends StObject {
+  trait DuckOptions[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] extends StObject {
     
     var consts: js.UndefOr[TConsts] = js.undefined
     
@@ -92,7 +98,7 @@ object mod {
   }
   object DuckOptions {
     
-    inline def apply[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */](
+    inline def apply[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */](
       creators: /* D */ DuckInstance[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts] => TActionCreators,
       initialState: TState,
       namespace: String,
@@ -105,7 +111,7 @@ object mod {
       __obj.asInstanceOf[DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]]
     }
     
-    extension [Self <: DuckOptions[?, ?, ?, ?, ?, ?, ?, ?], TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */](x: Self & (DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts])) {
+    extension [Self <: DuckOptions[?, ?, ?, ?, ?, ?, ?, ?], TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */](x: Self & (DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts])) {
       
       inline def setConsts(value: TConsts): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
       
@@ -145,23 +151,23 @@ object mod {
       
       inline def setTypes(value: js.Array[/* keyof TActionTypes */ String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: (/* keyof TActionTypes */ String)*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: (/* keyof TActionTypes */ String)*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
-  type DuckReducer[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function3[
+  type DuckReducer[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function3[
     /* S */ TState, 
     /* A */ TAction, 
     /* D */ DuckInstance[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts], 
     TState
   ]
   
-  type DuckSagas[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
+  type DuckSagas[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
     /* D */ DuckInstance[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts], 
     TSagas
   ]
   
-  type DuckTakes[TState, TAction, TActionTypes /* <: Record[String, js.Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ js.Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, js.Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] */, TTakes /* <: js.Array[js.Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
+  type DuckTakes[TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] = js.Function1[
     /* D */ DuckInstance[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts], 
     TTakes
   ]

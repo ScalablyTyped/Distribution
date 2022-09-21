@@ -6,42 +6,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocumentOrShadowRoot extends StObject {
   
+  /**
+    * Returns the deepest element in the document through which or to which key events are being routed. This is, roughly speaking, the focused element in the document.
+    *
+    * For the purposes of this API, when a child browsing context is focused, its container is focused in the parent browsing context. For example, if the user moves the focus to a text control in an iframe, the iframe is the element returned by the activeElement API in the iframe's node document.
+    *
+    * Similarly, when the focused element is in a different node tree than documentOrShadowRoot, the element returned will be the host that's located in the same node tree as documentOrShadowRoot if documentOrShadowRoot is a shadow-including inclusive ancestor of the focused element, and null if not.
+    */
+  /* standard dom */
   val activeElement: Element | Null
   
-  def caretPositionFromPoint(x: Double, y: Double): CaretPosition | Null
+  /* standard dom */
+  var adoptedStyleSheets: js.Array[CSSStyleSheet]
   
-  /** @deprecated */
-  def caretRangeFromPoint(x: Double, y: Double): Range
-  
+  /**
+    * Returns the element for the specified x coordinate and the specified y coordinate.
+    * @param x The x-offset
+    * @param y The y-offset
+    */
+  /* standard dom */
   def elementFromPoint(x: Double, y: Double): Element | Null
   
+  /* standard dom */
   def elementsFromPoint(x: Double, y: Double): js.Array[Element]
   
-  /**
-    * Returns document's fullscreen element.
-    */
+  /** Returns document's fullscreen element. */
+  /* standard dom */
   val fullscreenElement: Element | Null
   
-  def getSelection(): Selection | Null
+  /* standard dom */
+  def getAnimations(): js.Array[Animation]
   
+  /* standard dom */
+  val pictureInPictureElement: Element | Null
+  
+  /* standard dom */
   val pointerLockElement: Element | Null
   
-  /**
-    * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
-    */
+  /** Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document. */
+  /* standard dom */
   val styleSheets: StyleSheetList
 }
 object DocumentOrShadowRoot {
   
   inline def apply(
-    caretPositionFromPoint: (Double, Double) => CaretPosition | Null,
-    caretRangeFromPoint: (Double, Double) => Range,
+    adoptedStyleSheets: js.Array[CSSStyleSheet],
     elementFromPoint: (Double, Double) => Element | Null,
     elementsFromPoint: (Double, Double) => js.Array[Element],
-    getSelection: () => Selection | Null,
+    getAnimations: () => js.Array[Animation],
     styleSheets: StyleSheetList
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any], activeElement = null, fullscreenElement = null, pointerLockElement = null)
+    val __obj = js.Dynamic.literal(adoptedStyleSheets = adoptedStyleSheets.asInstanceOf[js.Any], elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getAnimations = js.Any.fromFunction0(getAnimations), styleSheets = styleSheets.asInstanceOf[js.Any], activeElement = null, fullscreenElement = null, pictureInPictureElement = null, pointerLockElement = null)
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   
@@ -51,9 +66,9 @@ object DocumentOrShadowRoot {
     
     inline def setActiveElementNull: Self = StObject.set(x, "activeElement", null)
     
-    inline def setCaretPositionFromPoint(value: (Double, Double) => CaretPosition | Null): Self = StObject.set(x, "caretPositionFromPoint", js.Any.fromFunction2(value))
+    inline def setAdoptedStyleSheets(value: js.Array[CSSStyleSheet]): Self = StObject.set(x, "adoptedStyleSheets", value.asInstanceOf[js.Any])
     
-    inline def setCaretRangeFromPoint(value: (Double, Double) => Range): Self = StObject.set(x, "caretRangeFromPoint", js.Any.fromFunction2(value))
+    inline def setAdoptedStyleSheetsVarargs(value: CSSStyleSheet*): Self = StObject.set(x, "adoptedStyleSheets", js.Array(value*))
     
     inline def setElementFromPoint(value: (Double, Double) => Element | Null): Self = StObject.set(x, "elementFromPoint", js.Any.fromFunction2(value))
     
@@ -63,7 +78,11 @@ object DocumentOrShadowRoot {
     
     inline def setFullscreenElementNull: Self = StObject.set(x, "fullscreenElement", null)
     
-    inline def setGetSelection(value: () => Selection | Null): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetAnimations(value: () => js.Array[Animation]): Self = StObject.set(x, "getAnimations", js.Any.fromFunction0(value))
+    
+    inline def setPictureInPictureElement(value: Element): Self = StObject.set(x, "pictureInPictureElement", value.asInstanceOf[js.Any])
+    
+    inline def setPictureInPictureElementNull: Self = StObject.set(x, "pictureInPictureElement", null)
     
     inline def setPointerLockElement(value: Element): Self = StObject.set(x, "pointerLockElement", value.asInstanceOf[js.Any])
     

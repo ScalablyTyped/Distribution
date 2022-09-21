@@ -2,6 +2,16 @@ package typings.ngxInfiniteScroll
 
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.NgZone
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectableDeclaration
+import typings.angularCore.mod.ɵɵInjectorDeclaration
+import typings.angularCore.mod.ɵɵNgModuleDeclaration
+import typings.ngxInfiniteScroll.anon.AlwaysCallback
+import typings.ngxInfiniteScroll.anon.Scrolled
+import typings.ngxInfiniteScroll.anon.TypeofInfiniteScrollDirec
+import typings.ngxInfiniteScroll.ngxInfiniteScrollBooleans.`false`
+import typings.ngxInfiniteScroll.ngxInfiniteScrollStrings.`[infiniteScroll]Comma [infinite-scroll]Comma [data-infinite-scroll]`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +20,134 @@ object publicApiMod {
   
   @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollDirective")
   @js.native
-  class InfiniteScrollDirective protected ()
-    extends typings.ngxInfiniteScroll.ngxInfiniteScrollMod.InfiniteScrollDirective {
-    def this(element: ElementRef[js.Any], zone: NgZone) = this()
+  open class InfiniteScrollDirective protected ()
+    extends typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective {
+    def this(element: ElementRef[Any], zone: NgZone) = this()
+  }
+  /* static members */
+  object InfiniteScrollDirective {
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollDirective")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollDirective.\u0275dir")
+    @js.native
+    def ɵdir: ɵɵDirectiveDeclaration[
+        typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective, 
+        `[infiniteScroll]Comma [infinite-scroll]Comma [data-infinite-scroll]`, 
+        scala.Nothing, 
+        AlwaysCallback, 
+        Scrolled, 
+        scala.Nothing, 
+        scala.Nothing, 
+        `false`
+      ] = js.native
+    inline def ɵdir_=(
+      x: ɵɵDirectiveDeclaration[
+          typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective, 
+          `[infiniteScroll]Comma [infinite-scroll]Comma [data-infinite-scroll]`, 
+          scala.Nothing, 
+          AlwaysCallback, 
+          Scrolled, 
+          scala.Nothing, 
+          scala.Nothing, 
+          `false`
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollDirective.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective, 
+        scala.Nothing
+      ] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[
+          typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective, 
+          scala.Nothing
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollModule")
   @js.native
-  class InfiniteScrollModule ()
-    extends typings.ngxInfiniteScroll.ngxInfiniteScrollMod.InfiniteScrollModule
+  open class InfiniteScrollModule ()
+    extends typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule
+  /* static members */
+  object InfiniteScrollModule {
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollModule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollModule.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule, 
+        scala.Nothing
+      ] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[
+          typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule, 
+          scala.Nothing
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollModule.\u0275inj")
+    @js.native
+    def ɵinj: ɵɵInjectorDeclaration[typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule] = js.native
+    inline def ɵinj_=(
+      x: ɵɵInjectorDeclaration[typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ngx-infinite-scroll/public-api", "InfiniteScrollModule.\u0275mod")
+    @js.native
+    def ɵmod: ɵɵNgModuleDeclaration[
+        typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule, 
+        js.Array[TypeofInfiniteScrollDirec], 
+        scala.Nothing, 
+        js.Array[TypeofInfiniteScrollDirec]
+      ] = js.native
+    inline def ɵmod_=(
+      x: ɵɵNgModuleDeclaration[
+          typings.ngxInfiniteScroll.ngxInfiniteScrollModuleMod.InfiniteScrollModule, 
+          js.Array[TypeofInfiniteScrollDirec], 
+          scala.Nothing, 
+          js.Array[TypeofInfiniteScrollDirec]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("ngx-infinite-scroll/public-api", "NgxInfiniteScrollService")
+  @js.native
+  open class NgxInfiniteScrollService ()
+    extends typings.ngxInfiniteScroll.ngxInfiniteScrollServiceMod.NgxInfiniteScrollService
+  /* static members */
+  object NgxInfiniteScrollService {
+    
+    @JSImport("ngx-infinite-scroll/public-api", "NgxInfiniteScrollService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ngx-infinite-scroll/public-api", "NgxInfiniteScrollService.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.ngxInfiniteScroll.ngxInfiniteScrollServiceMod.NgxInfiniteScrollService, 
+        scala.Nothing
+      ] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[
+          typings.ngxInfiniteScroll.ngxInfiniteScrollServiceMod.NgxInfiniteScrollService, 
+          scala.Nothing
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ngx-infinite-scroll/public-api", "NgxInfiniteScrollService.\u0275prov")
+    @js.native
+    def ɵprov: ɵɵInjectableDeclaration[typings.ngxInfiniteScroll.ngxInfiniteScrollServiceMod.NgxInfiniteScrollService] = js.native
+    inline def ɵprov_=(
+      x: ɵɵInjectableDeclaration[typings.ngxInfiniteScroll.ngxInfiniteScrollServiceMod.NgxInfiniteScrollService]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+  }
 }

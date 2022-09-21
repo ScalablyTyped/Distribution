@@ -9,7 +9,7 @@ object binaryCarrierMod {
   
   @JSImport("opentracing/lib/binary_carrier", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BinaryCarrier {
     def this(buffer: ArrayLike[Double]) = this()

@@ -10,12 +10,12 @@ trait SchemaFamilyInfo extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Family membership info of the user that made the request.
     */
-  var membership: js.UndefOr[AcquirePermission] = js.undefined
+  var membership: js.UndefOr[AcquirePermission | Null] = js.undefined
 }
 object SchemaFamilyInfo {
   
@@ -28,9 +28,13 @@ object SchemaFamilyInfo {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMembership(value: AcquirePermission): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    
+    inline def setMembershipNull: Self = StObject.set(x, "membership", null)
     
     inline def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
   }

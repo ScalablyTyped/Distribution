@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("terminal-kit", "Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends typings.terminalKit.rectMod.^ {
     def this(options: AbsoluteOptions) = this()
     def this(options: typings.terminalKit.rectMod.Rect) = this()
@@ -45,7 +45,7 @@ object mod {
   
   @JSImport("terminal-kit", "ScreenBuffer")
   @js.native
-  class ScreenBuffer protected ()
+  open class ScreenBuffer protected ()
     extends typings.terminalKit.screenBufferMod.^ {
     def this(options: Options) = this()
   }
@@ -68,7 +68,7 @@ object mod {
     inline def loadImage(
       url: String,
       calback: js.Function2[
-          /* error */ js.UndefOr[js.Any], 
+          /* error */ js.UndefOr[Any], 
           /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.^], 
           Unit
         ]
@@ -77,7 +77,7 @@ object mod {
     inline def loadImage(
       url: String,
       options: Shrink,
-      calback: js.Function2[/* error */ js.Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
+      calback: js.Function2[/* error */ Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
@@ -89,7 +89,7 @@ object mod {
   
   @JSImport("terminal-kit", "ScreenBufferHD")
   @js.native
-  class ScreenBufferHD protected ()
+  open class ScreenBufferHD protected ()
     extends typings.terminalKit.screenBufferHDMod.^ {
     def this(options: Blending) = this()
     def this(options: Options) = this()
@@ -104,7 +104,7 @@ object mod {
     inline def loadImage(
       url: String,
       calback: js.Function2[
-          /* error */ js.UndefOr[js.Any], 
+          /* error */ js.UndefOr[Any], 
           /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.ScreenBufferHD], 
           Unit
         ]
@@ -114,7 +114,7 @@ object mod {
       url: String,
       options: `0`,
       callback: js.Function2[
-          /* error */ js.Any, 
+          /* error */ Any, 
           /* image */ typings.terminalKit.screenBufferHDMod.ScreenBufferHD, 
           Unit
         ]
@@ -125,13 +125,13 @@ object mod {
     
     @JSImport("terminal-kit", "Terminal.AutocompletionArray")
     @js.native
-    class AutocompletionArray[T] ()
+    open class AutocompletionArray[T] ()
       extends typings.terminalKit.terminalMod.AutocompletionArray[T]
   }
   
   @JSImport("terminal-kit", "TextBuffer")
   @js.native
-  class TextBuffer protected ()
+  open class TextBuffer protected ()
     extends typings.terminalKit.textBufferMod.^ {
     def this(options: typings.terminalKit.textBufferMod.Options) = this()
   }
@@ -172,11 +172,11 @@ object mod {
   inline def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
   inline def createTerminal(createOptions: CreateOptions): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(createOptions.asInstanceOf[js.Any]).asInstanceOf[Terminal]
   
-  inline def getDetectedTerminal(calback: js.Function2[/* error */ js.Any, /* term */ Terminal, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetectedTerminal")(calback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getDetectedTerminal(calback: js.Function2[/* error */ Any, /* term */ Terminal, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetectedTerminal")(calback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def getParentTerminalInfo(
     callback: js.Function4[
-      /* error */ js.Any, 
+      /* error */ Any, 
       /* codename */ js.UndefOr[String], 
       /* name */ js.UndefOr[String], 
       /* pid */ js.UndefOr[Double], 

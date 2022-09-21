@@ -10,10 +10,10 @@ Execute a listener when a response is about to write headers
 | ------------------ | :-------------: |
 | Full name          | on-headers |
 | Keywords           | event, headers, http, onheaders |
-| # releases         | 2 |
-| # dependents       | 424 |
-| # downloads        | 477081614 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.7439001E7 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/on-headers#readme)

@@ -10,10 +10,10 @@ Load SVG icon sprites safely and asynchronously
 | ------------------ | :-------------: |
 | Full name          | loadicons |
 | Keywords           | svg, sprite |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 6059 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 737.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/loadicons)

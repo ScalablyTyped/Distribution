@@ -10,10 +10,10 @@ Create and parse Content-Disposition header
 | ------------------ | :-------------: |
 | Full name          | content-disposition |
 | Keywords           | content-disposition, http, rfc6266, res |
-| # releases         | 0 |
-| # dependents       | 383 |
-| # downloads        | 728020157 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0878751366666667E8 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/content-disposition#readme)

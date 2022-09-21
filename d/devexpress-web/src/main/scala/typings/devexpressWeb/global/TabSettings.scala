@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TabSettings")
 @js.native
-class TabSettings ()
+open class TabSettings ()
   extends StObject
      with typings.devexpressWeb.TabSettings {
   

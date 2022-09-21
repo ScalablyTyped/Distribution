@@ -13,6 +13,8 @@ trait TextSymbol3DLayerHalo
   /**
     * The color of the halo.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
   var color: js.UndefOr[Color_] = js.undefined
@@ -30,9 +32,7 @@ object TextSymbol3DLayerHalo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, TextSymbol3DLayerHalo]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], TextSymbol3DLayerHalo]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, TextSymbol3DLayerHalo]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], TextSymbol3DLayerHalo]])
   ): TextSymbol3DLayerHalo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbol3DLayerHalo]

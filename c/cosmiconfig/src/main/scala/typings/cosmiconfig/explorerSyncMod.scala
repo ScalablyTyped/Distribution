@@ -11,20 +11,20 @@ object explorerSyncMod {
   
   @JSImport("cosmiconfig/dist/ExplorerSync", "ExplorerSync")
   @js.native
-  class ExplorerSync protected () extends ExplorerBase[ExplorerOptionsSync] {
+  open class ExplorerSync protected () extends ExplorerBase[ExplorerOptionsSync] {
     def this(options: ExplorerOptionsSync) = this()
     
-    /* private */ var createCosmiconfigResultSync: js.Any = js.native
+    /* private */ var createCosmiconfigResultSync: Any = js.native
     
-    /* private */ var loadFileContentSync: js.Any = js.native
+    /* private */ var loadFileContentSync: Any = js.native
     
-    /* private */ var loadSearchPlaceSync: js.Any = js.native
+    /* private */ var loadSearchPlaceSync: Any = js.native
     
     def loadSync(filepath: String): CosmiconfigResult = js.native
     
-    /* private */ var searchDirectorySync: js.Any = js.native
+    /* private */ var searchDirectorySync: Any = js.native
     
-    /* private */ var searchFromDirectorySync: js.Any = js.native
+    /* private */ var searchFromDirectorySync: Any = js.native
     
     def searchSync(): CosmiconfigResult = js.native
     def searchSync(searchFrom: String): CosmiconfigResult = js.native

@@ -19,6 +19,6 @@ object GetResponseData {
     
     inline def setData(value: js.Array[GetResponseDataData]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: GetResponseDataData*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: GetResponseDataData*): Self = StObject.set(x, "Data", js.Array(value*))
   }
 }

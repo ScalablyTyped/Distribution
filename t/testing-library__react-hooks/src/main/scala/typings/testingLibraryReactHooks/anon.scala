@@ -1,54 +1,121 @@
 package typings.testingLibraryReactHooks
 
+import typings.reactDom.testUtilsMod.VoidOrUndefinedOnly
+import typings.reactTestRenderer.mod.DebugPromiseLike
+import typings.testingLibraryReactHooks.typesMod.RenderResult
+import typings.testingLibraryReactHooks.typesMod.WaitFor
+import typings.testingLibraryReactHooks.typesMod.WaitForNextUpdate
+import typings.testingLibraryReactHooks.typesMod.WaitForValueToChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Pick<@testing-library/react-hooks.@testing-library/react-hooks.WaitOptions, 'timeout'> */
-  trait PickWaitOptionstimeout extends StObject {
+  @js.native
+  trait Act[TProps] extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.undefined
+    var act: FnCall = js.native
+    
+    def render(): Unit = js.native
+    def render(props: TProps): Unit = js.native
+    
+    def rerender(): Unit = js.native
+    def rerender(props: TProps): Unit = js.native
+    
+    def unmount(): Unit = js.native
   }
-  object PickWaitOptionstimeout {
+  
+  trait Cancel extends StObject {
     
-    inline def apply(): PickWaitOptionstimeout = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PickWaitOptionstimeout]
+    def cancel(): Unit
+    
+    def onTimeout(callback: js.Function0[Unit]): Unit
+    
+    var timedOut: Boolean
+    
+    def wrap(promise: js.Promise[Unit]): js.Promise[Unit]
+  }
+  object Cancel {
+    
+    inline def apply(
+      cancel: () => Unit,
+      onTimeout: js.Function0[Unit] => Unit,
+      timedOut: Boolean,
+      wrap: js.Promise[Unit] => js.Promise[Unit]
+    ): Cancel = {
+      val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), onTimeout = js.Any.fromFunction1(onTimeout), timedOut = timedOut.asInstanceOf[js.Any], wrap = js.Any.fromFunction1(wrap))
+      __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: PickWaitOptionstimeout](x: Self) {
+    extension [Self <: Cancel](x: Self) {
       
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setOnTimeout(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onTimeout", js.Any.fromFunction1(value))
+      
+      inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+      
+      inline def setWrap(value: js.Promise[Unit] => js.Promise[Unit]): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
     }
   }
   
-  /* Inlined std.Pick<@testing-library/react-hooks.@testing-library/react-hooks.WaitOptions, 'timeout' | 'suppressErrors'> */
-  trait PickWaitOptionstimeoutsup extends StObject {
+  @js.native
+  trait FnCall extends StObject {
     
-    var suppressErrors: js.UndefOr[Boolean] = js.undefined
-    
-    var timeout: js.UndefOr[Double] = js.undefined
+    def apply(callback: js.Function0[VoidOrUndefinedOnly]): Unit = js.native
   }
-  object PickWaitOptionstimeoutsup {
+  
+  @js.native
+  trait FnCallCallback extends StObject {
     
-    inline def apply(): PickWaitOptionstimeoutsup = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PickWaitOptionstimeoutsup]
-    }
+    def apply(callback: js.Function0[typings.reactTestRenderer.mod.VoidOrUndefinedOnly]): DebugPromiseLike = js.native
+  }
+  
+  @js.native
+  trait Hydrate[TProps] extends StObject {
     
-    extension [Self <: PickWaitOptionstimeoutsup](x: Self) {
-      
-      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
-      
-      inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-    }
+    var act: FnCall = js.native
+    
+    def hydrate(): Unit = js.native
+    
+    def render(): Unit = js.native
+    def render(props: TProps): Unit = js.native
+    
+    def rerender(): Unit = js.native
+    def rerender(props: TProps): Unit = js.native
+    
+    def unmount(): Unit = js.native
+  }
+  
+  @js.native
+  trait Render[TProps] extends StObject {
+    
+    var act: FnCallCallback = js.native
+    
+    def render(): Unit = js.native
+    def render(props: TProps): Unit = js.native
+    
+    def rerender(): Unit = js.native
+    def rerender(props: TProps): Unit = js.native
+    
+    def unmount(): Unit = js.native
+  }
+  
+  @js.native
+  trait Rerender[TResult, TProps] extends StObject {
+    
+    def rerender(): Unit = js.native
+    def rerender(newProps: TProps): Unit = js.native
+    
+    var result: RenderResult[TResult] = js.native
+    
+    def unmount(): Unit = js.native
+    
+    var waitFor: WaitFor = js.native
+    
+    var waitForNextUpdate: WaitForNextUpdate = js.native
+    
+    var waitForValueToChange: WaitForValueToChange = js.native
   }
 }

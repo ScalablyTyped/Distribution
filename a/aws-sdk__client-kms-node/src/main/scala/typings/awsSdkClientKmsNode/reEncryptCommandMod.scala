@@ -16,7 +16,7 @@ object reEncryptCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/ReEncryptCommand", "ReEncryptCommand")
   @js.native
-  class ReEncryptCommand protected ()
+  open class ReEncryptCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object reEncryptCommandMod {
     override val middlewareStack: MiddlewareStack[ReEncryptInput, ReEncryptOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ReEncryptInput, ReEncryptOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ReEncryptInput, ReEncryptOutput] = js.native
   }
 }

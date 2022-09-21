@@ -4,46 +4,44 @@ import typings.react.mod.CElement
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.Text
 import typings.reactNative.mod.TextProps
+import typings.reactNavigationCore.anon.Data
 import typings.reactNavigationCore.anon.Descriptors
 import typings.reactNavigationCore.anon.Options
 import typings.reactNavigationCore.anon.PartialStateNavigationSta
+import typings.reactNavigationCore.anon.PreventedRoutes
 import typings.reactNavigationCore.anon.State
 import typings.reactNavigationCore.getActionFromStateMod.NavigateAction
 import typings.reactNavigationCore.getStateFromPathMod.ResultState
 import typings.reactNavigationCore.typesMod.DefaultNavigatorOptions
 import typings.reactNavigationCore.typesMod.EventMapBase
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.NavigationContainerProps
 import typings.reactNavigationCore.typesMod.NavigationContainerRef
+import typings.reactNavigationCore.typesMod.NavigationContainerRefWithCurrent
 import typings.reactNavigationCore.typesMod.NavigationHelpers
 import typings.reactNavigationCore.typesMod.NavigationProp
 import typings.reactNavigationCore.typesMod.RouteProp
 import typings.reactNavigationCore.typesMod.TypedNavigator
+import typings.reactNavigationCore.typesMod.global.ReactNavigation.RootParamList
 import typings.reactNavigationCore.useFocusEffectMod.EffectCallback
 import typings.reactNavigationCore.useNavigationStateMod.Selector
 import typings.reactNavigationNative.anon.AccessibilityRole
-import typings.reactNavigationNative.anon.GetInitialState
-import typings.reactNavigationNative.anon.NavigationContainerPropst
+import typings.reactNavigationNative.anon.DocumentTitle
 import typings.reactNavigationNative.anon.ServerContextTypechildren
 import typings.reactNavigationNative.linkMod.Props
-import typings.reactNavigationNative.typesMod.LinkingOptions
+import typings.reactNavigationNative.reactNavigationNativeStrings.key
 import typings.reactNavigationNative.typesMod.Theme
+import typings.reactNavigationNative.useLinkToMod.To
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableWrapper
-import typings.reactNavigationRouters.anon.KeyParams
-import typings.reactNavigationRouters.anon.Name
-import typings.reactNavigationRouters.anon.Payload
-import typings.reactNavigationRouters.anon.PayloadSource
-import typings.reactNavigationRouters.anon.PayloadSourceTarget
-import typings.reactNavigationRouters.anon.PayloadSourceTargetType
+import typings.reactNavigationRouters.anon.Merge
+import typings.reactNavigationRouters.anon.Path
 import typings.reactNavigationRouters.anon.Readonlykeystringindexnum
-import typings.reactNavigationRouters.anon.Source
-import typings.reactNavigationRouters.anon.SourceTargetType
-import typings.reactNavigationRouters.anon.TargetType
-import typings.reactNavigationRouters.anon.Type
 import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.commonActionsMod.ResetState
 import typings.reactNavigationRouters.drawerRouterMod.DrawerActionType
@@ -57,12 +55,14 @@ import typings.reactNavigationRouters.tabRouterMod.TabNavigationState
 import typings.reactNavigationRouters.tabRouterMod.TabRouterOptions
 import typings.reactNavigationRouters.typesMod.CommonNavigationAction
 import typings.reactNavigationRouters.typesMod.DefaultRouterOptions
+import typings.reactNavigationRouters.typesMod.InitialState
 import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.PartialState
 import typings.reactNavigationRouters.typesMod.Route
 import typings.reactNavigationRouters.typesMod.Router
 import typings.reactNavigationRouters.typesMod.RouterFactory
+import typings.std.Omit
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -86,7 +86,7 @@ object mod {
     */
   @JSImport("@react-navigation/native", "BaseNavigationContainer")
   @js.native
-  val BaseNavigationContainer: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = js.native
+  val BaseNavigationContainer: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef[ParamListBase]]] = js.native
   
   /**
     * Base router object that can be used when writing custom routers.
@@ -113,8 +113,8 @@ object mod {
     
     inline def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
     inline def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
-    inline def navigate(route: KeyParams): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
-    inline def navigate(route: Name): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+    inline def navigate(options: Merge): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(options.asInstanceOf[js.Any]).asInstanceOf[Action]
+    inline def navigate(options: Path): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(options.asInstanceOf[js.Any]).asInstanceOf[Action]
     
     inline def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
     inline def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
@@ -154,27 +154,22 @@ object mod {
     inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  inline def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def DrawerRouter(hasDefaultStatusRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasDefaultStatusRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
-  inline def Link(hasToActionRest: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def Link[ParamList /* <: RootParamList */](hasToActionRest: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  
+  @JSImport("@react-navigation/native", "LinkingContext")
+  @js.native
+  val LinkingContext: Context[typings.reactNavigationNative.anon.Options] = js.native
+  
+  inline def NavigationContainer[RootParamList /* <: js.Object */](props: DocumentTitle[RootParamList] & NavigationContainerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NavigationContainer")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /**
-    * Container component which holds the navigation state designed for React Native apps.
-    * This should be rendered at the root wrapping the whole app.
-    *
-    * @param props.initialState Initial state object for the navigation tree. When deep link handling is enabled, this will override deep links when specified. Make sure that you don't specify an `initialState` when there's a deep link (`Linking.getInitialURL()`).
-    * @param props.onReady Callback which is called after the navigation tree mounts.
-    * @param props.onStateChange Callback which is called with the latest navigation state when it changes.
-    * @param props.theme Theme object for the navigators.
-    * @param props.linking Options for deep linking. Deep link handling is enabled when this prop is provided, unless `linking.enabled` is `false`.
-    * @param props.fallback Fallback component to render until we have finished getting initial state when linking is enabled. Defaults to `null`.
-    * @param props.documentTitle Options to configure the document title on Web. Updating document title is handled by default unless `documentTitle.enabled` is `false`.
-    * @param props.children Child elements to render the content.
-    * @param props.ref Ref object which refers to the navigation object containing helper methods.
+    * Context which holds the route prop for a screen.
     */
-  @JSImport("@react-navigation/native", "NavigationContainer")
+  @JSImport("@react-navigation/native", "NavigationContainerRefContext")
   @js.native
-  val NavigationContainer: ForwardRefExoticComponent[NavigationContainerPropst] = js.native
+  val NavigationContainerRefContext: Context[js.UndefOr[NavigationContainerRef[ParamListBase]]] = js.native
   
   /**
     * Context which holds the navigation prop for a screen.
@@ -183,7 +178,14 @@ object mod {
   @js.native
   val NavigationContext: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[
+        ParamListBase, 
+        String, 
+        Unit, 
+        typings.reactNavigationCore.anon.Readonlykeystringindexnum, 
+        js.Object, 
+        js.Object
+      ]
     ]
   ] = js.native
   
@@ -193,7 +195,7 @@ object mod {
     */
   @JSImport("@react-navigation/native", "NavigationHelpersContext")
   @js.native
-  val NavigationHelpersContext: Context[js.UndefOr[NavigationHelpers[Record[String, js.UndefOr[js.Object]], js.Object]]] = js.native
+  val NavigationHelpersContext: Context[js.UndefOr[NavigationHelpers[ParamListBase, js.Object]]] = js.native
   
   /**
     * Context which holds the route prop for a screen.
@@ -202,11 +204,24 @@ object mod {
   @js.native
   val NavigationRouteContext: Context[js.UndefOr[Route[String, js.UndefOr[js.Object]]]] = js.native
   
+  @JSImport("@react-navigation/native", "PreventRemoveContext")
+  @js.native
+  val PreventRemoveContext: Context[js.UndefOr[PreventedRoutes]] = js.native
+  
+  inline def PreventRemoveProvider(hasChildren: typings.reactNavigationCore.preventRemoveProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventRemoveProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("@react-navigation/native", "PrivateValueStore")
   @js.native
-  class PrivateValueStore[A, B, C] ()
-    extends typings.reactNavigationCore.mod.PrivateValueStore[A, B, C]
+  open class PrivateValueStore[T /* <: js.Tuple3[Any, Any, Any] */] ()
+    extends typings.reactNavigationCore.mod.PrivateValueStore[T]
   
+  /**
+    * Container component for server rendering.
+    *
+    * @param props.location Location object to base the initial URL for SSR.
+    * @param props.children Child elements to render the content.
+    * @param props.ref Ref object which contains helper methods.
+    */
   @JSImport("@react-navigation/native", "ServerContainer")
   @js.native
   val ServerContainer: ForwardRefExoticComponent[ServerContextTypechildren] = js.native
@@ -229,13 +244,7 @@ object mod {
     inline def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
-  inline def StackRouter(options: StackRouterOptions): Router[
-    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("StackRouter")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
-    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ]]
+  inline def StackRouter(options: StackRouterOptions): Router[StackNavigationState[ParamListBase], Action | StackActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("StackRouter")(options.asInstanceOf[js.Any]).asInstanceOf[Router[StackNavigationState[ParamListBase], Action | StackActionType]]
   
   object TabActions {
     
@@ -247,33 +256,21 @@ object mod {
     inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
-    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | TabActionType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
-    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | TabActionType
-  ]]
+  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
   
   inline def ThemeProvider(hasValueChildren: typings.reactNavigationNative.themeProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
-    TypedNavigator[
-      Record[String, js.UndefOr[js.Object]], 
-      State, 
-      ScreenOptions, 
-      EventMap, 
-      NavigatorComponent
-    ]
+  inline def UNSTABLEUsePreventRemove(preventRemove: Boolean, callback: js.Function1[/* options */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSTABLE_usePreventRemove")(preventRemove.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def createNavigationContainerRef[ParamList /* <: js.Object */](): NavigationContainerRefWithCurrent[ParamList] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNavigationContainerRef")().asInstanceOf[NavigationContainerRefWithCurrent[ParamList]]
+  
+  inline def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[Any] */](Navigator: NavigatorComponent): js.Function0[
+    TypedNavigator[ParamListBase, State, ScreenOptions, EventMap, NavigatorComponent]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNavigatorFactory")(Navigator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-    TypedNavigator[
-      Record[String, js.UndefOr[js.Object]], 
-      State, 
-      ScreenOptions, 
-      EventMap, 
-      NavigatorComponent
-    ]
+    TypedNavigator[ParamListBase, State, ScreenOptions, EventMap, NavigatorComponent]
   ]]
+  
+  inline def findFocusedRoute(state: InitialState): js.UndefOr[(Omit[Route[String, js.UndefOr[js.Object]], key]) & State] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFocusedRoute")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[(Omit[Route[String, js.UndefOr[js.Object]], key]) & State]]
   
   inline def getActionFromState(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
   inline def getActionFromState(
@@ -281,18 +278,16 @@ object mod {
     options: typings.reactNavigationCore.getActionFromStateMod.Options
   ): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
   
-  inline def getFocusedRouteNameFromRoute(route: (Partial[Route[String, js.UndefOr[js.Object]]]) & State): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedRouteNameFromRoute")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getFocusedRouteNameFromRoute(route: Partial[Route[String, js.UndefOr[js.Object]]]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedRouteNameFromRoute")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  inline def getPathFromState(state: typings.reactNavigationCore.getPathFromStateMod.State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getPathFromState(
+  inline def getPathFromState[ParamList /* <: js.Object */](state: typings.reactNavigationCore.getPathFromStateMod.State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPathFromState[ParamList /* <: js.Object */](
     state: typings.reactNavigationCore.getPathFromStateMod.State,
-    options: typings.reactNavigationCore.getPathFromStateMod.Options
+    options: typings.reactNavigationCore.getPathFromStateMod.Options[ParamList]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getStateFromPath(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
-  inline def getStateFromPath(path: String, options: typings.reactNavigationCore.getStateFromPathMod.Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
-  
-  inline def useBackButton(ref: RefObject[NavigationContainerRef]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBackButton")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getStateFromPath[ParamList /* <: js.Object */](path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
+  inline def getStateFromPath[ParamList /* <: js.Object */](path: String, options: typings.reactNavigationCore.getStateFromPathMod.Options[ParamList]): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
   
   inline def useFocusEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -300,27 +295,29 @@ object mod {
   
   inline def useLinkBuilder(): js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkBuilder")().asInstanceOf[js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]]]
   
-  inline def useLinkProps(hasToAction: typings.reactNavigationNative.useLinkPropsMod.Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def useLinkProps[ParamList /* <: RootParamList */](hasToAction: typings.reactNavigationNative.useLinkPropsMod.Props[ParamList]): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
-  inline def useLinkTo(): js.Function1[/* path */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkTo")().asInstanceOf[js.Function1[/* path */ String, Unit]]
+  inline def useLinkTo[ParamList /* <: RootParamList */](): js.Function1[/* to */ To[ParamList, /* keyof ParamList */ String], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkTo")().asInstanceOf[js.Function1[/* to */ To[ParamList, /* keyof ParamList */ String], Unit]]
   
-  inline def useLinking(
-    ref: RefObject[NavigationContainerRef],
-    hasEnabledConfigGetStateFromPathGetPathFromState: LinkingOptions
-  ): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinking")(ref.asInstanceOf[js.Any], hasEnabledConfigGetStateFromPathGetPathFromState.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
+  inline def useNavigation[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[T]
   
-  inline def useNavigation[T /* <: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[T]
-  
-  inline def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, js.Any] */](
-    createRouter: RouterFactory[State, js.Any, RouterOptions],
-    options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) & RouterOptions
+  inline def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](
+    createRouter: RouterFactory[State, Any, RouterOptions],
+    options: (DefaultNavigatorOptions[ParamListBase, State, ScreenOptions, EventMap]) & RouterOptions
   ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationBuilder")(createRouter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   
-  inline def useNavigationState[T](selector: Selector[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationState")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useNavigationContainerRef[ParamList /* <: js.Object */](): NavigationContainerRefWithCurrent[ParamList] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationContainerRef")().asInstanceOf[NavigationContainerRefWithCurrent[ParamList]]
   
-  inline def useRoute[T /* <: RouteProp[ParamListBase, String] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")().asInstanceOf[T]
+  inline def useNavigationState[ParamList /* <: ParamListBase */, T](selector: Selector[ParamList, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationState")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def usePreventRemoveContext(): PreventedRoutes = ^.asInstanceOf[js.Dynamic].applyDynamic("usePreventRemoveContext")().asInstanceOf[PreventedRoutes]
+  
+  inline def useRoute[T /* <: RouteProp[ParamListBase, Keyof[ParamListBase]] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")().asInstanceOf[T]
   
   inline def useScrollToTop(ref: RefObject[ScrollableWrapper]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollToTop")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Theme]
+  
+  inline def validatePathConfig(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePathConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validatePathConfig(config: Any, root: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePathConfig")(config.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -67,7 +67,7 @@ object DriveStep {
     
     inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    inline def setCitiesVarargs(value: ViaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: ViaCity*): Self = StObject.set(x, "cities", js.Array(value*))
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object DriveStep {
     
     inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object DriveStep {
     
     inline def setTmcsUndefined: Self = StObject.set(x, "tmcs", js.undefined)
     
-    inline def setTmcsVarargs(value: TMC*): Self = StObject.set(x, "tmcs", js.Array(value :_*))
+    inline def setTmcsVarargs(value: TMC*): Self = StObject.set(x, "tmcs", js.Array(value*))
     
     inline def setToll_road(value: String): Self = StObject.set(x, "toll_road", value.asInstanceOf[js.Any])
     

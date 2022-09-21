@@ -25,7 +25,7 @@ object ListServiceAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: ServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: ServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

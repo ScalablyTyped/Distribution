@@ -1,5 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "Material")
 @js.native
-class Material protected ()
+open class Material protected ()
   extends typings.babylonjs.materialMod.Material {
   /**
     * Creates a material instance
@@ -16,8 +17,10 @@ class Material protected ()
     * @param scene defines the scene to reference
     * @param doNotAdd specifies if the material should be added to the scene
     */
-  def this(name: String, scene: Scene) = this()
-  def this(name: String, scene: Scene, doNotAdd: Boolean) = this()
+  def this(name: String) = this()
+  def this(name: String, scene: Nullable[Scene]) = this()
+  def this(name: String, scene: Unit, doNotAdd: Boolean) = this()
+  def this(name: String, scene: Nullable[Scene], doNotAdd: Boolean) = this()
 }
 /* static members */
 object Material {
@@ -142,13 +145,21 @@ object Material {
   val MiscDirtyFlag: Double = js.native
   
   /**
+    * Event observable which raises global events common to all materials (like MaterialPluginEvent.Created)
+    */
+  @JSImport("babylonjs/Materials/index", "Material.OnEventObservable")
+  @js.native
+  def OnEventObservable: Observable[typings.babylonjs.materialMod.Material] = js.native
+  inline def OnEventObservable_=(x: Observable[typings.babylonjs.materialMod.Material]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEventObservable")(x.asInstanceOf[js.Any])
+  
+  /**
     * Creates a material from parsed material data
     * @param parsedMaterial defines parsed material data
     * @param scene defines the hosting scene
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new material
     */
-  inline def Parse(parsedMaterial: js.Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.materialMod.Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialMod.Material]]
+  inline def Parse(parsedMaterial: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.materialMod.Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialMod.Material]]
   
   /**
     * Returns the point fill mode
@@ -208,51 +219,51 @@ object Material {
   
   @JSImport("babylonjs/Materials/index", "Material._AllDirtyCallBack")
   @js.native
-  val _AllDirtyCallBack: js.Any = js.native
+  val _AllDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._AttributeDirtyCallBack")
   @js.native
-  val _AttributeDirtyCallBack: js.Any = js.native
+  val _AttributeDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._DirtyCallbackArray")
   @js.native
-  val _DirtyCallbackArray: js.Any = js.native
+  val _DirtyCallbackArray: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._FresnelAndMiscDirtyCallBack")
   @js.native
-  def _FresnelAndMiscDirtyCallBack: js.Any = js.native
-  inline def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+  def _FresnelAndMiscDirtyCallBack: Any = js.native
+  inline def _FresnelAndMiscDirtyCallBack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Materials/index", "Material._FresnelDirtyCallBack")
   @js.native
-  val _FresnelDirtyCallBack: js.Any = js.native
+  val _FresnelDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._ImageProcessingDirtyCallBack")
   @js.native
-  val _ImageProcessingDirtyCallBack: js.Any = js.native
+  val _ImageProcessingDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._LightsDirtyCallBack")
   @js.native
-  val _LightsDirtyCallBack: js.Any = js.native
+  val _LightsDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._MiscDirtyCallBack")
   @js.native
-  val _MiscDirtyCallBack: js.Any = js.native
+  val _MiscDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._PrePassDirtyCallBack")
   @js.native
-  val _PrePassDirtyCallBack: js.Any = js.native
+  val _PrePassDirtyCallBack: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._RunDirtyCallBacks")
   @js.native
-  val _RunDirtyCallBacks: js.Any = js.native
+  val _RunDirtyCallBacks: Any = js.native
   
   @JSImport("babylonjs/Materials/index", "Material._TextureAndMiscDirtyCallBack")
   @js.native
-  def _TextureAndMiscDirtyCallBack: js.Any = js.native
-  inline def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+  def _TextureAndMiscDirtyCallBack: Any = js.native
+  inline def _TextureAndMiscDirtyCallBack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Materials/index", "Material._TextureDirtyCallBack")
   @js.native
-  val _TextureDirtyCallBack: js.Any = js.native
+  val _TextureDirtyCallBack: Any = js.native
 }

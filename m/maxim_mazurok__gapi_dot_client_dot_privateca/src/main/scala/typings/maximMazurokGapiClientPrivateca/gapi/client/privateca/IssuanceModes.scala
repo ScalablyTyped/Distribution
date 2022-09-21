@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IssuanceModes extends StObject {
   
-  /** Required. When true, allows callers to create Certificates by specifying a CertificateConfig. */
+  /** Optional. When true, allows callers to create Certificates by specifying a CertificateConfig. */
   var allowConfigBasedIssuance: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. When true, allows callers to create Certificates by specifying a CSR. */
+  /** Optional. When true, allows callers to create Certificates by specifying a CSR. */
   var allowCsrBasedIssuance: js.UndefOr[Boolean] = js.undefined
 }
 object IssuanceModes {

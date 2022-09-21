@@ -47,7 +47,7 @@ object anon {
       
       inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value*))
       
       inline def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
       
@@ -55,18 +55,18 @@ object anon {
     }
   }
   
-  trait Methods[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient] extends StObject {
+  trait Methods[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]] */, TClient] extends StObject {
     
     val methods: js.UndefOr[TMethods] = js.undefined
   }
   object Methods {
     
-    inline def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient](): Methods[TMethods, TClient] = {
+    inline def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]] */, TClient](): Methods[TMethods, TClient] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Methods[TMethods, TClient]]
     }
     
-    extension [Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient](x: Self & (Methods[TMethods, TClient])) {
+    extension [Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]] */, TClient](x: Self & (Methods[TMethods, TClient])) {
       
       inline def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -77,18 +77,18 @@ object anon {
   /* Inlined std.Readonly<std.Promise<any>> */
   trait ReadonlyPromiseany extends StObject {
     
-    def `catch`[TResult](): js.Promise[js.Any | TResult]
+    def `catch`[TResult](): js.Promise[Any | TResult]
     
-    def `finally`(): js.Promise[js.Any]
+    def `finally`(): js.Promise[Any]
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseany {
     
     inline def apply(
-      `catch`: () => js.Promise[js.Any | js.Any],
-      `finally`: () => js.Promise[js.Any],
-      `then`: () => js.Promise[js.Any | js.Any]
+      `catch`: () => js.Promise[Any | Any],
+      `finally`: () => js.Promise[Any],
+      `then`: () => js.Promise[Any | Any]
     ): ReadonlyPromiseany = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -99,11 +99,11 @@ object anon {
     
     extension [Self <: ReadonlyPromiseany](x: Self) {
       
-      inline def setCatch(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      inline def setFinally(value: () => js.Promise[js.Any]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[Any]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -119,9 +119,9 @@ object anon {
   object ReadonlyPromisevoid {
     
     inline def apply(
-      `catch`: () => js.Promise[Unit | js.Any],
+      `catch`: () => js.Promise[Unit | Any],
       `finally`: () => js.Promise[Unit],
-      `then`: () => js.Promise[js.Any | js.Any]
+      `then`: () => js.Promise[Any | Any]
     ): ReadonlyPromisevoid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -132,11 +132,11 @@ object anon {
     
     extension [Self <: ReadonlyPromisevoid](x: Self) {
       
-      inline def setCatch(value: () => js.Promise[Unit | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[Unit | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
       inline def setFinally(value: () => js.Promise[Unit]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   

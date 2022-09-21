@@ -6,40 +6,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Team")
 @js.native
-class Team protected () extends StObject {
-  def this(cluster: js.Any, teamable: js.Any, `object`: js.Any) = this()
+open class Team protected () extends StObject {
+  def this(cluster: Any, teamable: Any, `object`: Any) = this()
   
-  def addMember(principal: js.Any): js.Any = js.native
+  def addMember(principal: Any): Any = js.native
   
   def base(): Unit = js.native
   
-  def del(): js.Any = js.native
+  def del(): Any = js.native
   
-  def getGroupId(): js.Any = js.native
+  def getGroupId(): Any = js.native
   
-  def getKey(): js.Any = js.native
+  def getKey(): Any = js.native
   
-  def getRoleKeys(): js.Any = js.native
+  def getRoleKeys(): Any = js.native
   
-  def getType(): js.Any = js.native
+  def getType(): Any = js.native
   
-  def getUri(): js.Any = js.native
+  def getUri(): Any = js.native
   
-  def grant(authorityId: js.Any): js.Any = js.native
+  def grant(authorityId: Any): Any = js.native
   
-  def hasMember(principal: js.Any, callback: js.Any): js.Any = js.native
+  def hasMember(principal: Any, callback: Any): Any = js.native
   
-  def listMembers(pagination: js.Any): js.Any = js.native
+  def listMembers(pagination: Any): Any = js.native
   
-  def loadAuthorities(callback: js.Any): js.Any = js.native
+  def loadAuthorities(callback: Any): Any = js.native
   
-  def reload(): js.Any = js.native
+  def reload(): Any = js.native
   
-  def removeMember(principal: js.Any): js.Any = js.native
+  def removeMember(principal: Any): Any = js.native
   
-  def revoke(authorityId: js.Any): js.Any = js.native
+  def revoke(authorityId: Any): Any = js.native
   
-  def update(): js.Any = js.native
+  def update(): Any = js.native
 }
 object Team {
   
@@ -48,17 +48,17 @@ object Team {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

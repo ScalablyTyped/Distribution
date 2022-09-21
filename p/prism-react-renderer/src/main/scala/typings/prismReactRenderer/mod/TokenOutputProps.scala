@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TokenOutputProps
   extends StObject
-     with /* otherProps */ StringDictionary[js.Any] {
+     with /* otherProps */ StringDictionary[Any] {
   
   var children: String
   

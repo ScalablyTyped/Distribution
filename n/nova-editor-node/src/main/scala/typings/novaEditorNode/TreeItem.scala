@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/tree-item/
+/// https://docs.nova.app/api-reference/tree-item/
 trait TreeItem extends StObject {
   
   var collapsibleState: TreeItemCollapsibleState
@@ -12,7 +12,7 @@ trait TreeItem extends StObject {
   // https://dev.panic.com/panic/nova-issues/-/issues/909
   var color: js.UndefOr[Color] = js.undefined
   
-  var command: js.UndefOr[js.Any] = js.undefined
+  var command: js.UndefOr[Any] = js.undefined
   
   var contextValue: js.UndefOr[String] = js.undefined
   
@@ -43,7 +43,7 @@ object TreeItem {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCommand(value: js.Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     

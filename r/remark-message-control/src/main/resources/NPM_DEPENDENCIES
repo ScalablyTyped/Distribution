@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remark-message-control" : "7.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remark-message-control" : "7.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

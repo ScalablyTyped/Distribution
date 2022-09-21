@@ -36,7 +36,7 @@ object ChoiceColumn {
     
     inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
-    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value*))
     
     inline def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     

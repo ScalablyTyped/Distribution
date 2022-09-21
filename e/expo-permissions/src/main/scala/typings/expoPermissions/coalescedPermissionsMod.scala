@@ -1,8 +1,8 @@
 package typings.expoPermissions
 
+import typings.expoModulesCore.permissionsInterfaceMod.PermissionExpiration
+import typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus
 import typings.expoPermissions.permissionsTypesMod.PermissionMap
-import typings.unimodulesPermissionsInterface.mod.PermissionExpiration
-import typings.unimodulesPermissionsInterface.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

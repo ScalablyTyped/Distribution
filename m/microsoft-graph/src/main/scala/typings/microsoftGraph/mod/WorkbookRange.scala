@@ -33,22 +33,22 @@ trait WorkbookRange
   var format: js.UndefOr[NullableOption[WorkbookRangeFormat]] = js.undefined
   
   // Represents the formula in A1-style notation.
-  var formulas: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var formulas: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
     * English '=SUM(A1, 1.5)' formula would become '=SUMME(A1; 1,5)' in German.
     */
-  var formulasLocal: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var formulasLocal: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Represents the formula in R1C1-style notation.
-  var formulasR1C1: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var formulasR1C1: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Represents if all cells of the current range are hidden. Read-only.
   var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Represents Excel's number format code for the given cell.
-  var numberFormat: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var numberFormat: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Returns the total number of rows in the range. Read-only.
   var rowCount: js.UndefOr[Double] = js.undefined
@@ -66,19 +66,19 @@ trait WorkbookRange
     * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that
     * happens in Excel UI will not affect the text value returned by the API. Read-only.
     */
-  var text: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var text: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean,
     * Error. Read-only.
     */
-  var valueTypes: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var valueTypes: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
     * that contain an error will return the error string.
     */
-  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var values: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // The worksheet containing the current range. Read-only.
   var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
@@ -128,9 +128,9 @@ object WorkbookRange {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setFormulas(value: NullableOption[js.Any]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    inline def setFormulas(value: NullableOption[Any]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
-    inline def setFormulasLocal(value: NullableOption[js.Any]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    inline def setFormulasLocal(value: NullableOption[Any]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     inline def setFormulasLocalNull: Self = StObject.set(x, "formulasLocal", null)
     
@@ -138,7 +138,7 @@ object WorkbookRange {
     
     inline def setFormulasNull: Self = StObject.set(x, "formulas", null)
     
-    inline def setFormulasR1C1(value: NullableOption[js.Any]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulasR1C1(value: NullableOption[Any]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     inline def setFormulasR1C1Null: Self = StObject.set(x, "formulasR1C1", null)
     
@@ -152,7 +152,7 @@ object WorkbookRange {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setNumberFormat(value: NullableOption[js.Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: NullableOption[Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatNull: Self = StObject.set(x, "numberFormat", null)
     
@@ -178,19 +178,19 @@ object WorkbookRange {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setText(value: NullableOption[js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: NullableOption[Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setValueTypes(value: NullableOption[js.Any]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
+    inline def setValueTypes(value: NullableOption[Any]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
     inline def setValueTypesNull: Self = StObject.set(x, "valueTypes", null)
     
     inline def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
-    inline def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: NullableOption[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesNull: Self = StObject.set(x, "values", null)
     

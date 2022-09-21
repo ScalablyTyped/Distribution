@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "HtmlElementTexture")
 @js.native
-class HtmlElementTexture protected ()
+open class HtmlElementTexture protected ()
   extends typings.babylonjs.materialsIndexMod.HtmlElementTexture {
   def this(name: String, element: HTMLCanvasElement, options: IHtmlElementTextureOptions) = this()
   /**
@@ -24,7 +24,7 @@ class HtmlElementTexture protected ()
 /* static members */
 object HtmlElementTexture {
   
-  @JSImport("babylonjs/index", "HtmlElementTexture.DefaultOptions")
+  @JSImport("babylonjs/index", "HtmlElementTexture._DefaultOptions")
   @js.native
-  val DefaultOptions: js.Any = js.native
+  val _DefaultOptions: Any = js.native
 }

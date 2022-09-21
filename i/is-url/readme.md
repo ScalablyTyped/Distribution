@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-url
 
-Typings are for version v1.2.1
+Typings are for version 1.2
 
 ## Library description:
 Check whether a string is a URL.
@@ -10,10 +10,10 @@ Check whether a string is a URL.
 | ------------------ | :-------------: |
 | Full name          | is-url |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 639 |
-| # downloads        | 100826619 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1925444666666666E7 |
+| # stars            | 152.0 |
 
 ## Links
 - [Homepage](https://github.com/segmentio/is-url#readme)

@@ -21,6 +21,7 @@ import typings.intercomClient.companyMod.List
 import typings.intercomClient.eventMod.ListParam
 import typings.intercomClient.intercomErrorMod.IntercomError
 import typings.intercomClient.leadMod.Lead
+import typings.intercomClient.leadMod.LeadIdIdentifier
 import typings.intercomClient.leadMod.LeadIdentifier
 import typings.intercomClient.messageMod.Message
 import typings.intercomClient.scrollMod.Scroll
@@ -34,7 +35,7 @@ import typings.intercomClient.userMod.UserIdentifier
 import typings.intercomClient.visitorMod.Visitor
 import typings.intercomClient.visitorMod.VisitorIdentifier
 import typings.node.httpMod.IncomingMessage
-import typings.node.netMod.Socket
+import typings.node.nodeNetMod.Socket
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +45,7 @@ object mod {
   
   @JSImport("intercom-client", "ApiResponse")
   @js.native
-  class ApiResponse[T] protected () extends IncomingMessage {
+  open class ApiResponse[T] protected () extends IncomingMessage {
     def this(socket: Socket) = this()
     
     var body: T = js.native
@@ -52,7 +53,7 @@ object mod {
   
   @JSImport("intercom-client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(auth: AppApiKey) = this()
     def this(auth: Token) = this()
     def this(username: String, password: String) = this()
@@ -69,6 +70,8 @@ object mod {
     
     var tags: Tags = js.native
     
+    def usePromises(): this.type = js.native
+    
     /**
       * client library also supports passing in `request` options
       * Note that certain request options (such as `json`, and certain `headers` names cannot be overridden).
@@ -83,7 +86,7 @@ object mod {
   
   @JSImport("intercom-client", "Companies")
   @js.native
-  class Companies () extends StObject {
+  open class Companies () extends StObject {
     
     def archive(): js.Promise[Company] = js.native
     
@@ -107,7 +110,10 @@ object mod {
   
   @JSImport("intercom-client", "Events")
   @js.native
-  class Events () extends StObject {
+  open class Events () extends StObject {
+    
+    def bulk(operations: js.Array[BulkOperation]): js.Promise[ApiResponse[Any]] = js.native
+    def bulk(operations: js.Array[BulkOperation], cb: callback[ApiResponse[Any]]): Unit = js.native
     
     def create(event: PartialEvent): js.Promise[IncomingMessage] = js.native
     def create(event: PartialEvent, cb: callback[IncomingMessage]): Unit = js.native
@@ -127,7 +133,7 @@ object mod {
   
   @JSImport("intercom-client", "Leads")
   @js.native
-  class Leads () extends StObject {
+  open class Leads () extends StObject {
     
     def convert(params: Contact): js.Promise[ApiResponse[Lead]] = js.native
     def convert(params: Contact, cb: callback[ApiResponse[Lead]]): Unit = js.native
@@ -135,8 +141,8 @@ object mod {
     def create(lead: PartialLead): js.Promise[ApiResponse[Lead]] = js.native
     def create(lead: PartialLead, cb: callback[ApiResponse[Lead]]): Unit = js.native
     
-    def delete(id: String): js.Promise[ApiResponse[Lead]] = js.native
-    def delete(id: String, cb: callback[ApiResponse[Lead]]): Unit = js.native
+    def delete(identifier: LeadIdIdentifier): js.Promise[ApiResponse[Lead]] = js.native
+    def delete(identifier: LeadIdIdentifier, cb: callback[ApiResponse[Lead]]): Unit = js.native
     
     def find(identifier: LeadIdentifier): js.Promise[ApiResponse[Lead]] = js.native
     def find(identifier: LeadIdentifier, cb: callback[ApiResponse[Lead]]): Unit = js.native
@@ -153,7 +159,7 @@ object mod {
   
   @JSImport("intercom-client", "Messages")
   @js.native
-  class Messages () extends StObject {
+  open class Messages () extends StObject {
     
     def create(message: PartialCreateMessage): js.Promise[ApiResponse[Message]] = js.native
     def create(message: PartialCreateMessage, cb: callback[ApiResponse[Message]]): Unit = js.native
@@ -161,7 +167,7 @@ object mod {
   
   @JSImport("intercom-client", "Tags")
   @js.native
-  class Tags () extends StObject {
+  open class Tags () extends StObject {
     
     def create(tag: PartialTag): js.Promise[ApiResponse[Tag]] = js.native
     def create(tag: PartialTag, cb: callback[ApiResponse[Tag]]): Unit = js.native
@@ -181,10 +187,13 @@ object mod {
   
   @JSImport("intercom-client", "Users")
   @js.native
-  class Users () extends StObject {
+  open class Users () extends StObject {
     
     def archive(identifier: UserIdentifier): js.Promise[ApiResponse[User]] = js.native
     def archive(identifier: UserIdentifier, cb: callback[ApiResponse[User]]): Unit = js.native
+    
+    def bulk(operations: js.Array[BulkOperation]): js.Promise[ApiResponse[Any]] = js.native
+    def bulk(operations: js.Array[BulkOperation], cb: callback[ApiResponse[Any]]): Unit = js.native
     
     def create(user: PartialCreateUpdateUser): js.Promise[ApiResponse[User]] = js.native
     def create(user: PartialCreateUpdateUser, cb: callback[ApiResponse[User]]): Unit = js.native
@@ -216,7 +225,7 @@ object mod {
   
   @JSImport("intercom-client", "Visitors")
   @js.native
-  class Visitors () extends StObject {
+  open class Visitors () extends StObject {
     
     def convert(params: Identifier): js.Promise[ApiResponse[Lead]] = js.native
     def convert(params: Identifier, cb: callback[ApiResponse[Lead]]): Unit = js.native
@@ -231,6 +240,31 @@ object mod {
     
     def update(visitor: VisitorIdentifier & PartialVisitor): js.Promise[ApiResponse[Visitor]] = js.native
     def update(visitor: VisitorIdentifier & PartialVisitor, cb: callback[ApiResponse[Visitor]]): Unit = js.native
+  }
+  
+  trait BulkOperation extends StObject {
+    
+    var create: js.UndefOr[Any] = js.undefined
+    
+    var delete: js.UndefOr[Any] = js.undefined
+  }
+  object BulkOperation {
+    
+    inline def apply(): BulkOperation = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BulkOperation]
+    }
+    
+    extension [Self <: BulkOperation](x: Self) {
+      
+      inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      
+      inline def setDelete(value: Any): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    }
   }
   
   trait IdentityVerificationOptions extends StObject {

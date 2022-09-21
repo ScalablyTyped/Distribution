@@ -14,7 +14,7 @@ object chainMod {
   
   @JSImport("@lumino/algorithm/types/chain", "ChainIterator")
   @js.native
-  class ChainIterator[T] protected ()
+  open class ChainIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -24,11 +24,11 @@ object chainMod {
       */
     def this(source: IIterator[IIterator[T]]) = this()
     
-    /* private */ var _active: js.Any = js.native
+    /* private */ var _active: Any = js.native
     
-    /* private */ var _cloned: js.Any = js.native
+    /* private */ var _cloned: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -63,5 +63,5 @@ object chainMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  inline def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[T]]
 }

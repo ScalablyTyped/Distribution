@@ -10,10 +10,10 @@ A simple express middleware for resizing images using sharp and pipes
 | ------------------ | :-------------: |
 | Full name          | sharpie |
 | Keywords           | resize, convert, image, express, sharp, ico, favicon |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 1302 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 176.66666666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/kapouer/sharpie#readme)

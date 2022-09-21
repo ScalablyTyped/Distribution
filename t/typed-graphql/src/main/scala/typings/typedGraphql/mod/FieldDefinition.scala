@@ -30,7 +30,7 @@ object FieldDefinition {
     
     inline def setArguments(value: js.Array[InputValueDefinition]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: InputValueDefinition*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: InputValueDefinition*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,5 @@
 package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceServicesBatchenable
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Parent to enable services on.  An example name would be: `projects/123`
-    * where `123` is the project number (not project ID).  The
-    * `BatchEnableServices` method currently only supports projects.
+    * Parent to enable services on. An example name would be: `projects/123` where `123` is the project number. The `BatchEnableServices` method currently only supports projects.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -37,10 +26,6 @@ object ParamsResourceServicesBatchenable {
   }
   
   extension [Self <: ParamsResourceServicesBatchenable](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

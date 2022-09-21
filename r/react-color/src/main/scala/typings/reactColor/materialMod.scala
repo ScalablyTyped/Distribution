@@ -12,12 +12,10 @@ object materialMod {
   
   @JSImport("react-color/lib/components/material/Material", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MaterialPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MaterialPickerProps, js.Object, Any]
   
-  @js.native
-  trait MaterialPicker
-    extends Component[MaterialPickerProps, js.Object, js.Any]
+  type MaterialPicker = Component[MaterialPickerProps, js.Object, Any]
   
   trait MaterialPickerProps
     extends StObject

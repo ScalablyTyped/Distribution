@@ -21,8 +21,8 @@ trait IElement
   var addClsOnClick: js.UndefOr[
     js.Function3[
       /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* testFn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -36,8 +36,8 @@ trait IElement
   var addClsOnFocus: js.UndefOr[
     js.Function3[
       /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* testFn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -51,8 +51,8 @@ trait IElement
   var addClsOnOver: js.UndefOr[
     js.Function3[
       /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* testFn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -65,9 +65,9 @@ trait IElement
     */
   var addKeyListener: js.UndefOr[
     js.Function3[
-      /* key */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* key */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       typings.extjs.Ext.util.IKeyMap
     ]
   ] = js.undefined
@@ -76,7 +76,7 @@ trait IElement
     * @param config Object The KeyMap config. See Ext.util.KeyMap for more details
     * @returns Ext.util.KeyMap The KeyMap created
     */
-  var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], typings.extjs.Ext.util.IKeyMap]] = js.undefined
+  var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], typings.extjs.Ext.util.IKeyMap]] = js.undefined
   
   /** [Method] Shorthand for on
     * @param eventName String The name of event to handle.
@@ -88,9 +88,9 @@ trait IElement
   var addListener: js.UndefOr[
     js.Function4[
       /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -99,7 +99,7 @@ trait IElement
     * @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
     * @returns Ext.dom.Element this
     */
-  var animate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var animate: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Property] (Boolean) */
   var autoBoxAdjust: js.UndefOr[Boolean] = js.undefined
@@ -118,12 +118,12 @@ trait IElement
   /** [Method] When an element is moved around in the DOM or is hidden using display none it loses layout and therefore all scrol
     * @returns Function A function which will restore all descentant elements of this Element to their scroll positions recorded when this function was executed. Be aware that the returned function is a closure which has captured the scope of cacheScrollValues, so take care to derefence it as soon as not needed - if is it is a var it will drop out of scope, and the reference will be freed.
     */
-  var cacheScrollValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var cacheScrollValues: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Centers the Element in either the viewport or another Element
     * @param centerIn String/HTMLElement/Ext.dom.Element element in which to center the element.
     */
-  var center: js.UndefOr[js.Function1[/* centerIn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var center: js.UndefOr[js.Function1[/* centerIn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Removes Empty or whitespace filled text nodes
     * @param forceReclean Boolean By default the element keeps track if it has been cleaned already so you can call this over and over. However, if you update the element and need to force a reclean, you can pass true.
@@ -159,8 +159,8 @@ trait IElement
     */
   var createProxy: js.UndefOr[
     js.Function3[
-      /* config */ js.UndefOr[js.Any], 
-      /* renderTo */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
+      /* renderTo */ js.UndefOr[Any], 
       /* matchBox */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -181,13 +181,13 @@ trait IElement
     * @param options Object Object literal with any of the Ext.fx.Anim config options
     * @returns Ext.Element The Element
     */
-  var fadeIn: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var fadeIn: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Fade an element out from opaque to transparent
     * @param options Object Object literal with any of the Ext.fx.Anim config options
     * @returns Ext.Element The Element
     */
-  var fadeOut: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var fadeOut: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Tries to focus the element
     * @param defer Number Milliseconds to defer the focus
@@ -210,7 +210,7 @@ trait IElement
     js.Function3[
       /* color */ js.UndefOr[java.lang.String], 
       /* count */ js.UndefOr[Double], 
-      /* options */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -299,13 +299,13 @@ trait IElement
     * @param asRegion Boolean If true an Ext.util.Region will be returned
     * @returns Object/Ext.util.Region box An object in the following format: {  left: &lt;Element's X position&gt;,  top: &lt;Element's Y position&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. So the result may also be used for setXY
     */
-  var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Gets an object with all CSS positioning properties
     * @param autoPx Boolean true to return pixel values for "auto" styles.
     * @returns Object
     */
-  var getPositioning: js.UndefOr[js.Function1[/* autoPx */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var getPositioning: js.UndefOr[js.Function1[/* autoPx */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Gets the right X coordinate of the element element X position  element width  Defined in override Ext dom Element_
     * @param local Boolean True to get the local css position instead of page coordinates
@@ -316,7 +316,7 @@ trait IElement
   /** [Method] Returns the current scroll position of the element
     * @returns Object An object containing the scroll position in the format {left: (scrollLeft), top: (scrollTop)}
     */
-  var getScroll: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getScroll: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets the left scroll position Defined in override Ext dom Element_scroll
     * @returns Number The left scroll position
@@ -331,7 +331,7 @@ trait IElement
   /** [Method] Returns the dimensions of the element available to lay content out in
     * @returns Object Object describing width and height.
     */
-  var getStyleSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStyleSize: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the width in pixels of the passed text or the width of the text in this Element
     * @param text String The text to measure. Defaults to the innerHTML of the element.
@@ -375,11 +375,7 @@ trait IElement
     * @returns Ext.dom.Element The Element
     */
   var ghost: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Hide this element  Uses display mode to determine whether to use display or visibility
@@ -387,7 +383,7 @@ trait IElement
     * @returns Ext.dom.Element this
     */
   @JSName("hide")
-  var hide_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var hide_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Highlights the Element by setting a color applies to the background color by default but can be changed using the
     * @param color String The highlight color. Should be a 6 char hex color without the leading # (defaults to yellow: 'ffff9c')
@@ -395,11 +391,7 @@ trait IElement
     * @returns Ext.dom.Element The Element
     */
   var highlight: js.UndefOr[
-    js.Function2[
-      /* color */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Sets up event handlers to call the passed functions when the mouse is moved into and out of the Element
@@ -411,10 +403,10 @@ trait IElement
     */
   var hover: js.UndefOr[
     js.Function4[
-      /* overFn */ js.UndefOr[js.Any], 
-      /* outFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* overFn */ js.UndefOr[Any], 
+      /* outFn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -428,8 +420,8 @@ trait IElement
   var initDD: js.UndefOr[
     js.Function3[
       /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
+      /* overrides */ js.UndefOr[Any], 
       IDD
     ]
   ] = js.undefined
@@ -443,8 +435,8 @@ trait IElement
   var initDDProxy: js.UndefOr[
     js.Function3[
       /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
+      /* overrides */ js.UndefOr[Any], 
       IDDProxy
     ]
   ] = js.undefined
@@ -458,8 +450,8 @@ trait IElement
   var initDDTarget: js.UndefOr[
     js.Function3[
       /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
+      /* overrides */ js.UndefOr[Any], 
       IDDTarget
     ]
   ] = js.undefined
@@ -478,7 +470,7 @@ trait IElement
     * @param asFocusEl Object
     * @returns Boolean True if the element is focusable
     */
-  var isFocusable: js.UndefOr[js.Function1[/* asFocusEl */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isFocusable: js.UndefOr[js.Function1[/* asFocusEl */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns true if this element is masked
     * @returns Boolean
@@ -500,7 +492,7 @@ trait IElement
     * @param options Object
     * @returns Ext.dom.Element this
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Puts a mask over this element to disable user interaction
     * @param msg String A message to display in the mask
@@ -525,9 +517,9 @@ trait IElement
   var monitorMouseLeave: js.UndefOr[
     js.Function3[
       /* delay */ js.UndefOr[Double], 
-      /* handler */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      js.Any
+      /* handler */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -541,7 +533,7 @@ trait IElement
     js.Function3[
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -559,9 +551,9 @@ trait IElement
   var on: js.UndefOr[
     js.Function4[
       /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -595,7 +587,7 @@ trait IElement
     * @param options Object Object literal with any of the Ext.fx.Anim config options
     * @returns Ext.dom.Element The Element
     */
-  var puff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var puff: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Recursively removes all previous added listeners from this element and its children
     * @returns Ext.dom.Element this
@@ -607,11 +599,7 @@ trait IElement
     * @param observable Object Any object that extends Ext.util.Observable that will provide the context for firing the relayed event
     */
   var relayEvent: js.UndefOr[
-    js.Function2[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* observable */ js.UndefOr[js.Any], 
-      Unit
-    ]
+    js.Function2[/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Removes all previous added listeners from this element
@@ -628,8 +616,8 @@ trait IElement
   var removeListener: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -644,7 +632,7 @@ trait IElement
     js.Function3[
       /* width */ js.UndefOr[Double], 
       /* height */ js.UndefOr[Double], 
-      /* options */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -659,7 +647,7 @@ trait IElement
     js.Function3[
       /* direction */ js.UndefOr[java.lang.String], 
       /* distance */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       Boolean
     ]
   ] = js.undefined
@@ -672,9 +660,9 @@ trait IElement
     */
   var scrollBy: js.UndefOr[
     js.Function3[
-      /* deltaX */ js.UndefOr[js.Any], 
-      /* deltaY */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* deltaX */ js.UndefOr[Any], 
+      /* deltaY */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -688,9 +676,9 @@ trait IElement
     */
   var scrollIntoView: js.UndefOr[
     js.Function4[
-      /* container */ js.UndefOr[js.Any], 
+      /* container */ js.UndefOr[Any], 
       /* hscroll */ js.UndefOr[Boolean], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       /* highlight */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -706,7 +694,7 @@ trait IElement
     js.Function3[
       /* side */ js.UndefOr[java.lang.String], 
       /* value */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -720,7 +708,7 @@ trait IElement
     * @param bottom Number/String Number of pixels or CSS string value to set as the bottom CSS property value
     * @returns Ext.dom.Element this
     */
-  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the element s position and size in one shot
     * @param x Number X value for new position (coordinates are page-based)
@@ -734,9 +722,9 @@ trait IElement
     js.Function5[
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* width */ js.UndefOr[Any], 
+      /* height */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -745,22 +733,20 @@ trait IElement
     * @param value Boolean/String Boolean value to display the element using its default display, or a string to set the display directly.
     * @returns Ext.dom.Element this
     */
-  var setDisplayed: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setDisplayed: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the element s left position directly using CSS style instead of setX
     * @param left Number/String Number of pixels or CSS string value to set as the left CSS property value
     * @returns Ext.dom.Element this
     */
-  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
     * @param left Number/String Number of pixels or CSS string value to set as the left CSS property value
     * @param top Number/String Number of pixels or CSS string value to set as the top CSS property value
     * @returns Ext.dom.Element this
     */
-  var setLeftTop: js.UndefOr[
-    js.Function2[/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  var setLeftTop: js.UndefOr[js.Function2[/* left */ js.UndefOr[Any], /* top */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the position of the element in page coordinates
     * @param x Number X value for new position
@@ -772,7 +758,7 @@ trait IElement
     js.Function3[
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -783,20 +769,20 @@ trait IElement
     * @returns Ext.dom.Element this
     */
   var setOpacity: js.UndefOr[
-    js.Function2[/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Set positioning with an object returned by getPositioning
     * @param posCfg Object
     * @returns Ext.dom.Element this
     */
-  var setPositioning: js.UndefOr[js.Function1[/* posCfg */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setPositioning: js.UndefOr[js.Function1[/* posCfg */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the element s CSS right style
     * @param right Number/String Number of pixels or CSS string value to set as the right CSS property value
     * @returns Ext.dom.Element this
     */
-  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the left scroll position Defined in override Ext dom Element_scroll
     * @param left Number The left scroll position
@@ -814,7 +800,7 @@ trait IElement
     * @param top Number/String Number of pixels or CSS string value to set as the top CSS property value
     * @returns Ext.dom.Element this
     */
-  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the visibility of the element see details
     * @param visible Boolean Whether the element is visible
@@ -823,21 +809,21 @@ trait IElement
     */
   @JSName("setVisible")
   var setVisible_IElement: js.UndefOr[
-    js.Function2[/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Animates the transition of any combination of an element s dimensions xy position and or opacity
     * @param options Object Object literal with any of the Ext.fx.Anim config options
     * @returns Ext.Element The Element
     */
-  var shift: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var shift: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Show this element  Uses display mode to determine whether to use display or visibility
     * @param animate Boolean/Object true for the default animation or a standard Element animation config object
     * @returns Ext.dom.Element this
     */
   @JSName("show")
-  var show_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var show_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Slides the element into view
     * @param anchor String One of the valid Ext.fx.Anim anchor positions (defaults to top: 't')
@@ -845,11 +831,7 @@ trait IElement
     * @returns Ext.dom.Element The Element
     */
   var slideIn: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Slides the element out of view
@@ -858,11 +840,7 @@ trait IElement
     * @returns Ext.dom.Element The Element
     */
   var slideOut: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Stops the specified event s from bubbling and optionally prevents the default action
@@ -871,24 +849,20 @@ trait IElement
     * @returns Ext.dom.Element this
     */
   var swallowEvent: js.UndefOr[
-    js.Function2[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* preventDefault */ js.UndefOr[Boolean], 
-      this.type
-    ]
+    js.Function2[/* eventName */ js.UndefOr[Any], /* preventDefault */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   
   /** [Method] Blinks the element as if it was clicked and then collapses on its center similar to switching off a television
     * @param options Object Object literal with any of the Ext.fx.Anim config options
     * @returns Ext.dom.Element The Element
     */
-  var switchOff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var switchOff: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Toggles the element s visibility or display depending on visibility mode
     * @param animate Boolean/Object True for the default animation, or a standard Element animation config object
     * @returns Ext.dom.Element this
     */
-  var toggle: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var toggle: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Removes an event handler from this element
     * @param eventName String The name of the event from which to remove the handler.
@@ -899,8 +873,8 @@ trait IElement
   var un: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -926,7 +900,7 @@ trait IElement
     js.Function3[
       /* html */ js.UndefOr[java.lang.String], 
       /* loadScripts */ js.UndefOr[Boolean], 
-      /* callback */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -941,40 +915,40 @@ object IElement {
   extension [Self <: IElement](x: Self) {
     
     inline def setAddClsOnClick(
-      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement
+      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "addClsOnClick", js.Any.fromFunction3(value))
     
     inline def setAddClsOnClickUndefined: Self = StObject.set(x, "addClsOnClick", js.undefined)
     
     inline def setAddClsOnFocus(
-      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement
+      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "addClsOnFocus", js.Any.fromFunction3(value))
     
     inline def setAddClsOnFocusUndefined: Self = StObject.set(x, "addClsOnFocus", js.undefined)
     
     inline def setAddClsOnOver(
-      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement
+      value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "addClsOnOver", js.Any.fromFunction3(value))
     
     inline def setAddClsOnOverUndefined: Self = StObject.set(x, "addClsOnOver", js.undefined)
     
     inline def setAddKeyListener(
-      value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.util.IKeyMap
+      value: (/* key */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.util.IKeyMap
     ): Self = StObject.set(x, "addKeyListener", js.Any.fromFunction3(value))
     
     inline def setAddKeyListenerUndefined: Self = StObject.set(x, "addKeyListener", js.undefined)
     
-    inline def setAddKeyMap(value: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.util.IKeyMap): Self = StObject.set(x, "addKeyMap", js.Any.fromFunction1(value))
+    inline def setAddKeyMap(value: /* config */ js.UndefOr[Any] => typings.extjs.Ext.util.IKeyMap): Self = StObject.set(x, "addKeyMap", js.Any.fromFunction1(value))
     
     inline def setAddKeyMapUndefined: Self = StObject.set(x, "addKeyMap", js.undefined)
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement
+      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
-    inline def setAnimate(value: /* config */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
+    inline def setAnimate(value: /* config */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -990,11 +964,11 @@ object IElement {
     
     inline def setBoxWrapUndefined: Self = StObject.set(x, "boxWrap", js.undefined)
     
-    inline def setCacheScrollValues(value: () => js.Any): Self = StObject.set(x, "cacheScrollValues", js.Any.fromFunction0(value))
+    inline def setCacheScrollValues(value: () => Any): Self = StObject.set(x, "cacheScrollValues", js.Any.fromFunction0(value))
     
     inline def setCacheScrollValuesUndefined: Self = StObject.set(x, "cacheScrollValues", js.undefined)
     
-    inline def setCenter(value: /* centerIn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
+    inline def setCenter(value: /* centerIn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
@@ -1019,7 +993,7 @@ object IElement {
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     inline def setCreateProxy(
-      value: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[Boolean]) => IElement
+      value: (/* config */ js.UndefOr[Any], /* renderTo */ js.UndefOr[Any], /* matchBox */ js.UndefOr[Boolean]) => IElement
     ): Self = StObject.set(x, "createProxy", js.Any.fromFunction3(value))
     
     inline def setCreateProxyUndefined: Self = StObject.set(x, "createProxy", js.undefined)
@@ -1032,11 +1006,11 @@ object IElement {
     
     inline def setEnableDisplayModeUndefined: Self = StObject.set(x, "enableDisplayMode", js.undefined)
     
-    inline def setFadeIn(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "fadeIn", js.Any.fromFunction1(value))
+    inline def setFadeIn(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "fadeIn", js.Any.fromFunction1(value))
     
     inline def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
     
-    inline def setFadeOut(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "fadeOut", js.Any.fromFunction1(value))
+    inline def setFadeOut(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "fadeOut", js.Any.fromFunction1(value))
     
     inline def setFadeOutUndefined: Self = StObject.set(x, "fadeOut", js.undefined)
     
@@ -1049,7 +1023,7 @@ object IElement {
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     inline def setFrame(
-      value: (/* color */ js.UndefOr[java.lang.String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => IElement
+      value: (/* color */ js.UndefOr[java.lang.String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "frame", js.Any.fromFunction3(value))
     
     inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
@@ -1106,11 +1080,11 @@ object IElement {
     
     inline def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
     
-    inline def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
+    inline def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
     
     inline def setGetPageBoxUndefined: Self = StObject.set(x, "getPageBox", js.undefined)
     
-    inline def setGetPositioning(value: /* autoPx */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getPositioning", js.Any.fromFunction1(value))
+    inline def setGetPositioning(value: /* autoPx */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getPositioning", js.Any.fromFunction1(value))
     
     inline def setGetPositioningUndefined: Self = StObject.set(x, "getPositioning", js.undefined)
     
@@ -1118,7 +1092,7 @@ object IElement {
     
     inline def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
     
-    inline def setGetScroll(value: () => js.Any): Self = StObject.set(x, "getScroll", js.Any.fromFunction0(value))
+    inline def setGetScroll(value: () => Any): Self = StObject.set(x, "getScroll", js.Any.fromFunction0(value))
     
     inline def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
     
@@ -1130,7 +1104,7 @@ object IElement {
     
     inline def setGetScrollUndefined: Self = StObject.set(x, "getScroll", js.undefined)
     
-    inline def setGetStyleSize(value: () => js.Any): Self = StObject.set(x, "getStyleSize", js.Any.fromFunction0(value))
+    inline def setGetStyleSize(value: () => Any): Self = StObject.set(x, "getStyleSize", js.Any.fromFunction0(value))
     
     inline def setGetStyleSizeUndefined: Self = StObject.set(x, "getStyleSize", js.undefined)
     
@@ -1156,36 +1130,36 @@ object IElement {
     
     inline def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
     
-    inline def setGhost(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "ghost", js.Any.fromFunction2(value))
+    inline def setGhost(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "ghost", js.Any.fromFunction2(value))
     
     inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
-    inline def setHide(value: /* animate */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* animate */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setHighlight(value: (/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
+    inline def setHighlight(value: (/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     inline def setHover(
-      value: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement
+      value: (/* overFn */ js.UndefOr[Any], /* outFn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "hover", js.Any.fromFunction4(value))
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     inline def setInitDD(
-      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDD
+      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[Any], /* overrides */ js.UndefOr[Any]) => IDD
     ): Self = StObject.set(x, "initDD", js.Any.fromFunction3(value))
     
     inline def setInitDDProxy(
-      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDProxy
+      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[Any], /* overrides */ js.UndefOr[Any]) => IDDProxy
     ): Self = StObject.set(x, "initDDProxy", js.Any.fromFunction3(value))
     
     inline def setInitDDProxyUndefined: Self = StObject.set(x, "initDDProxy", js.undefined)
     
     inline def setInitDDTarget(
-      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDTarget
+      value: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[Any], /* overrides */ js.UndefOr[Any]) => IDDTarget
     ): Self = StObject.set(x, "initDDTarget", js.Any.fromFunction3(value))
     
     inline def setInitDDTargetUndefined: Self = StObject.set(x, "initDDTarget", js.undefined)
@@ -1200,7 +1174,7 @@ object IElement {
     
     inline def setIsDisplayedUndefined: Self = StObject.set(x, "isDisplayed", js.undefined)
     
-    inline def setIsFocusable(value: /* asFocusEl */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction1(value))
+    inline def setIsFocusable(value: /* asFocusEl */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction1(value))
     
     inline def setIsFocusableUndefined: Self = StObject.set(x, "isFocusable", js.undefined)
     
@@ -1216,7 +1190,7 @@ object IElement {
     
     inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
@@ -1227,13 +1201,13 @@ object IElement {
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     inline def setMonitorMouseLeave(
-      value: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+      value: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "monitorMouseLeave", js.Any.fromFunction3(value))
     
     inline def setMonitorMouseLeaveUndefined: Self = StObject.set(x, "monitorMouseLeave", js.undefined)
     
     inline def setMoveTo(
-      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement
+      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "moveTo", js.Any.fromFunction3(value))
     
     inline def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
@@ -1243,7 +1217,7 @@ object IElement {
     inline def setNeedsTabIndexUndefined: Self = StObject.set(x, "needsTabIndex", js.undefined)
     
     inline def setOn(
-      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement
+      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
@@ -1262,7 +1236,7 @@ object IElement {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPuff(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "puff", js.Any.fromFunction1(value))
+    inline def setPuff(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "puff", js.Any.fromFunction1(value))
     
     inline def setPuffUndefined: Self = StObject.set(x, "puff", js.undefined)
     
@@ -1270,7 +1244,7 @@ object IElement {
     
     inline def setPurgeAllListenersUndefined: Self = StObject.set(x, "purgeAllListeners", js.undefined)
     
-    inline def setRelayEvent(value: (/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "relayEvent", js.Any.fromFunction2(value))
+    inline def setRelayEvent(value: (/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "relayEvent", js.Any.fromFunction2(value))
     
     inline def setRelayEventUndefined: Self = StObject.set(x, "relayEvent", js.undefined)
     
@@ -1279,35 +1253,35 @@ object IElement {
     inline def setRemoveAllListenersUndefined: Self = StObject.set(x, "removeAllListeners", js.undefined)
     
     inline def setRemoveListener(
-      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement
+      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
     
     inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
     
     inline def setScale(
-      value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => IElement
+      value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "scale", js.Any.fromFunction3(value))
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     inline def setScroll(
-      value: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Boolean
+      value: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => Boolean
     ): Self = StObject.set(x, "scroll", js.Any.fromFunction3(value))
     
     inline def setScrollBy(
-      value: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement
+      value: (/* deltaX */ js.UndefOr[Any], /* deltaY */ js.UndefOr[Any], /* animate */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "scrollBy", js.Any.fromFunction3(value))
     
     inline def setScrollByUndefined: Self = StObject.set(x, "scrollBy", js.undefined)
     
     inline def setScrollIntoView(
-      value: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[Boolean]) => IElement
+      value: (/* container */ js.UndefOr[Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[Any], /* highlight */ js.UndefOr[Boolean]) => IElement
     ): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction4(value))
     
     inline def setScrollIntoViewUndefined: Self = StObject.set(x, "scrollIntoView", js.undefined)
     
     inline def setScrollTo(
-      value: (/* side */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement
+      value: (/* side */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "scrollTo", js.Any.fromFunction3(value))
     
     inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
@@ -1318,43 +1292,43 @@ object IElement {
     
     inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
-    inline def setSetBottom(value: /* bottom */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
+    inline def setSetBottom(value: /* bottom */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
     inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
     inline def setSetBounds(
-      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement
+      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], /* animate */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "setBounds", js.Any.fromFunction5(value))
     
     inline def setSetBoundsUndefined: Self = StObject.set(x, "setBounds", js.undefined)
     
-    inline def setSetDisplayed(value: /* value */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setDisplayed", js.Any.fromFunction1(value))
+    inline def setSetDisplayed(value: /* value */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setDisplayed", js.Any.fromFunction1(value))
     
     inline def setSetDisplayedUndefined: Self = StObject.set(x, "setDisplayed", js.undefined)
     
-    inline def setSetLeft(value: /* left */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
+    inline def setSetLeft(value: /* left */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
-    inline def setSetLeftTop(value: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "setLeftTop", js.Any.fromFunction2(value))
+    inline def setSetLeftTop(value: (/* left */ js.UndefOr[Any], /* top */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "setLeftTop", js.Any.fromFunction2(value))
     
     inline def setSetLeftTopUndefined: Self = StObject.set(x, "setLeftTop", js.undefined)
     
     inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
     inline def setSetLocation(
-      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement
+      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "setLocation", js.Any.fromFunction3(value))
     
     inline def setSetLocationUndefined: Self = StObject.set(x, "setLocation", js.undefined)
     
-    inline def setSetOpacity(value: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "setOpacity", js.Any.fromFunction2(value))
+    inline def setSetOpacity(value: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "setOpacity", js.Any.fromFunction2(value))
     
     inline def setSetOpacityUndefined: Self = StObject.set(x, "setOpacity", js.undefined)
     
-    inline def setSetPositioning(value: /* posCfg */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setPositioning", js.Any.fromFunction1(value))
+    inline def setSetPositioning(value: /* posCfg */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setPositioning", js.Any.fromFunction1(value))
     
     inline def setSetPositioningUndefined: Self = StObject.set(x, "setPositioning", js.undefined)
     
-    inline def setSetRight(value: /* right */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
+    inline def setSetRight(value: /* right */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
     inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
     
@@ -1366,44 +1340,44 @@ object IElement {
     
     inline def setSetScrollTopUndefined: Self = StObject.set(x, "setScrollTop", js.undefined)
     
-    inline def setSetTop(value: /* top */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
+    inline def setSetTop(value: /* top */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
     
     inline def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
     
-    inline def setSetVisible(value: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "setVisible", js.Any.fromFunction2(value))
+    inline def setSetVisible(value: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "setVisible", js.Any.fromFunction2(value))
     
     inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
     
-    inline def setShift(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
+    inline def setShift(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
     
     inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     
-    inline def setShow(value: /* animate */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* animate */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setSlideIn(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "slideIn", js.Any.fromFunction2(value))
+    inline def setSlideIn(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "slideIn", js.Any.fromFunction2(value))
     
     inline def setSlideInUndefined: Self = StObject.set(x, "slideIn", js.undefined)
     
-    inline def setSlideOut(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "slideOut", js.Any.fromFunction2(value))
+    inline def setSlideOut(value: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[Any]) => IElement): Self = StObject.set(x, "slideOut", js.Any.fromFunction2(value))
     
     inline def setSlideOutUndefined: Self = StObject.set(x, "slideOut", js.undefined)
     
-    inline def setSwallowEvent(value: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[Boolean]) => IElement): Self = StObject.set(x, "swallowEvent", js.Any.fromFunction2(value))
+    inline def setSwallowEvent(value: (/* eventName */ js.UndefOr[Any], /* preventDefault */ js.UndefOr[Boolean]) => IElement): Self = StObject.set(x, "swallowEvent", js.Any.fromFunction2(value))
     
     inline def setSwallowEventUndefined: Self = StObject.set(x, "swallowEvent", js.undefined)
     
-    inline def setSwitchOff(value: /* options */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "switchOff", js.Any.fromFunction1(value))
+    inline def setSwitchOff(value: /* options */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "switchOff", js.Any.fromFunction1(value))
     
     inline def setSwitchOffUndefined: Self = StObject.set(x, "switchOff", js.undefined)
     
-    inline def setToggle(value: /* animate */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: /* animate */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
     inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     inline def setUn(
-      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement
+      value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
     
     inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
@@ -1417,7 +1391,7 @@ object IElement {
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
     inline def setUpdate(
-      value: (/* html */ js.UndefOr[java.lang.String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => IElement
+      value: (/* html */ js.UndefOr[java.lang.String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[Any]) => IElement
     ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

@@ -1,5 +1,6 @@
 package typings.web3Core.mod
 
+import typings.bnJs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +20,10 @@ trait Transaction extends StObject {
   var hash: String
   
   var input: String
+  
+  var maxFeePerGas: js.UndefOr[Double | String | ^] = js.undefined
+  
+  var maxPriorityFeePerGas: js.UndefOr[Double | String | ^] = js.undefined
   
   var nonce: Double
   
@@ -62,6 +67,14 @@ object Transaction {
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFeePerGas(value: Double | String | ^): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFeePerGasUndefined: Self = StObject.set(x, "maxFeePerGas", js.undefined)
+    
+    inline def setMaxPriorityFeePerGas(value: Double | String | ^): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPriorityFeePerGasUndefined: Self = StObject.set(x, "maxPriorityFeePerGas", js.undefined)
     
     inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     

@@ -52,6 +52,11 @@ trait CreateStackRequest extends StObject {
   var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
+    * The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
+    */
+  var StreamingExperienceSettings: js.UndefOr[typings.awsSdk.appstreamMod.StreamingExperienceSettings] = js.undefined
+  
+  /**
     * The tags to associate with the stack. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following special characters:  _ . : / = + \ - @ For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
   var Tags: js.UndefOr[typings.awsSdk.appstreamMod.Tags] = js.undefined
@@ -74,7 +79,7 @@ object CreateStackRequest {
     
     inline def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
-    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
+    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value*))
     
     inline def setApplicationSettings(value: ApplicationSettings): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     
@@ -92,7 +97,7 @@ object CreateStackRequest {
     
     inline def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
     
-    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
+    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value*))
     
     inline def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
     
@@ -108,7 +113,11 @@ object CreateStackRequest {
     
     inline def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
     
-    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
+    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value*))
+    
+    inline def setStreamingExperienceSettings(value: StreamingExperienceSettings): Self = StObject.set(x, "StreamingExperienceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setStreamingExperienceSettingsUndefined: Self = StObject.set(x, "StreamingExperienceSettings", js.undefined)
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
@@ -118,6 +127,6 @@ object CreateStackRequest {
     
     inline def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
     
-    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
+    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value*))
   }
 }

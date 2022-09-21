@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRControllerComponent")
 @js.native
-class WebXRControllerComponent protected ()
+open class WebXRControllerComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRControllerComponent {
   /**

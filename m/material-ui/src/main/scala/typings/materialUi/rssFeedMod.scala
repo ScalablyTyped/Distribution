@@ -10,10 +10,10 @@ object rssFeedMod {
   
   @JSImport("material-ui/svg-icons/communication/rss-feed", JSImport.Default)
   @js.native
-  class default () extends CommunicationRssFeed
+  open class default () extends CommunicationRssFeed
   
   @JSImport("material-ui/svg-icons/communication/rss-feed", "CommunicationRssFeed")
   @js.native
-  class CommunicationRssFeed ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationRssFeed ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-package-json
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Find package.json files in parent directories, keep finding until you find the right one using iterators.
@@ -10,10 +10,10 @@ Find package.json files in parent directories, keep finding until you find the r
 | ------------------ | :-------------: |
 | Full name          | find-package-json |
 | Keywords           | package, package.json, json, find-package-json, directory, parent, package-json, read-package-json |
-| # releases         | 2 |
-| # dependents       | 136 |
-| # downloads        | 9529470 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1108306.3333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/3rd-Eden/find-package-json#readme)

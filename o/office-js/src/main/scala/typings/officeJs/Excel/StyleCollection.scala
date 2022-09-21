@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the styles.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -24,6 +24,7 @@ trait StyleCollection
   /**
     * Adds a new style to the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param name Name of the style to be added.
@@ -37,13 +38,15 @@ trait StyleCollection
   /**
     * Gets the number of styles in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a style by name.
+    * Gets a `Style` by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param name Name of the style to be retrieved.
@@ -53,11 +56,24 @@ trait StyleCollection
   /**
     * Gets a style based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param index Index value of the style object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: Double): Style = js.native
+  
+  /**
+    * Gets a style by name.
+    If the style object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    *
+    * @param name Name of the style to be retrieved.
+    */
+  def getItemOrNullObject(name: String): Style = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Style] = js.native

@@ -36,7 +36,7 @@ object XStyle {
     getParentStyle: () => String,
     isInUse: () => Boolean,
     isUserDefined: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit,
     setParentStyle: String => Unit

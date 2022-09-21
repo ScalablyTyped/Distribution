@@ -24,7 +24,7 @@ object Pnp {
     
     /** A property store containing well-known values as well as additional specified properties. */
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /** The type of the PnpObject . */
     /* CompleteClass */
@@ -135,7 +135,7 @@ object Pnp {
     
     /** The changed properties in an update to a PnpObject . */
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /** The type of the PnpObject . One of the values of the PnpObjectType enumeration. */
     /* CompleteClass */

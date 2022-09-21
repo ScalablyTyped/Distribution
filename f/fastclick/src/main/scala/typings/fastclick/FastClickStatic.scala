@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FastClickStatic
   extends StObject
-     with Instantiable1[/* layer */ js.Any, FastClickObject]
-     with Instantiable2[/* layer */ js.Any, /* options */ FastClickOptions, FastClickObject] {
+     with Instantiable1[/* layer */ Any, FastClickObject]
+     with Instantiable2[/* layer */ Any, /* options */ FastClickOptions, FastClickObject] {
   
-  def attach(layer: js.Any): FastClickObject = js.native
-  def attach(layer: js.Any, options: FastClickOptions): FastClickObject = js.native
+  def attach(layer: Any): FastClickObject = js.native
+  def attach(layer: Any, options: FastClickOptions): FastClickObject = js.native
 }

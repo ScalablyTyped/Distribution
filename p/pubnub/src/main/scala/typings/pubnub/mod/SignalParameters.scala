@@ -9,11 +9,11 @@ trait SignalParameters extends StObject {
   
   var channel: String
   
-  var message: js.Any
+  var message: Any
 }
 object SignalParameters {
   
-  inline def apply(channel: String, message: js.Any): SignalParameters = {
+  inline def apply(channel: String, message: Any): SignalParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalParameters]
   }
@@ -22,6 +22,6 @@ object SignalParameters {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

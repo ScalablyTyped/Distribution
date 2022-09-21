@@ -6,6 +6,8 @@ import typings.grommet.grommetStrings.jiggle
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.pulse
+import typings.grommet.grommetStrings.rotateLeft
+import typings.grommet.grommetStrings.rotateRight
 import typings.grommet.grommetStrings.slideDown
 import typings.grommet.grommetStrings.slideLeft
 import typings.grommet.grommetStrings.slideRight
@@ -28,7 +30,7 @@ trait Delay extends StObject {
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   
   var `type`: js.UndefOr[
-    fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut
+    fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut
   ] = js.undefined
 }
 object Delay {
@@ -53,7 +55,7 @@ object Delay {
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setType(
-      value: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut
+      value: fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

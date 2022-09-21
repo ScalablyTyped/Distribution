@@ -1,42 +1,68 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.EXPIRE
+import typings.awsSdk.awsSdkStrings.PREFIX_MATCH
+import typings.awsSdk.awsSdkStrings.REPOSITORY_NOT_FOUND
+import typings.awsSdk.awsSdkStrings.WILDCARD
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Arn = java.lang.String
+type Arch = String
 
-type AttributeKey = java.lang.String
+type Arn = String
 
-type AttributeList = js.Array[typings.awsSdk.ecrMod.Attribute]
+type AttributeKey = String
 
-type AttributeValue = java.lang.String
+type AttributeList = js.Array[Attribute]
 
-type AuthorizationDataList = js.Array[typings.awsSdk.ecrMod.AuthorizationData]
+type AttributeValue = String
 
-type Base64 = java.lang.String
+type Author = String
 
-type BatchedOperationLayerDigest = java.lang.String
+type AuthorizationDataList = js.Array[AuthorizationData]
 
-type BatchedOperationLayerDigestList = js.Array[typings.awsSdk.ecrMod.BatchedOperationLayerDigest]
+type Base64 = String
 
-type CreationTimestamp = typings.std.Date
+type BaseScore = Double
+
+type BatchedOperationLayerDigest = String
+
+type BatchedOperationLayerDigestList = js.Array[BatchedOperationLayerDigest]
+
+type CreationTimestamp = js.Date
+
+type CvssScoreAdjustmentList = js.Array[CvssScoreAdjustment]
+
+type CvssScoreList = js.Array[CvssScore]
+
+type Date = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES256
   - typings.awsSdk.awsSdkStrings.KMS
   - java.lang.String
 */
-type EncryptionType = typings.awsSdk.ecrMod._EncryptionType | java.lang.String
+type EncryptionType = _EncryptionType | String
 
-type EvaluationTimestamp = typings.std.Date
+type EnhancedImageScanFindingList = js.Array[EnhancedImageScanFinding]
 
-type ExpirationTimestamp = typings.std.Date
+type Epoch = Double
 
-type FindingDescription = java.lang.String
+type EvaluationTimestamp = js.Date
 
-type FindingName = java.lang.String
+type ExpirationTimestamp = js.Date
+
+type FilePath = String
+
+type FindingArn = String
+
+type FindingDescription = String
+
+type FindingName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INFORMATIONAL
@@ -47,21 +73,21 @@ type FindingName = java.lang.String
   - typings.awsSdk.awsSdkStrings.UNDEFINED
   - java.lang.String
 */
-type FindingSeverity = typings.awsSdk.ecrMod._FindingSeverity | java.lang.String
+type FindingSeverity = _FindingSeverity | String
 
-type FindingSeverityCounts = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecrMod.SeverityCount]
+type FindingSeverityCounts = StringDictionary[SeverityCount]
 
-type ForceFlag = scala.Boolean
+type ForceFlag = Boolean
 
-type GetAuthorizationTokenRegistryIdList = js.Array[typings.awsSdk.ecrMod.RegistryId]
+type GetAuthorizationTokenRegistryIdList = js.Array[RegistryId]
 
-type ImageActionType = typings.awsSdk.awsSdkStrings.EXPIRE | java.lang.String
+type ImageActionType = EXPIRE | String
 
-type ImageCount = scala.Double
+type ImageCount = Double
 
-type ImageDetailList = js.Array[typings.awsSdk.ecrMod.ImageDetail]
+type ImageDetailList = js.Array[ImageDetail]
 
-type ImageDigest = java.lang.String
+type ImageDigest = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InvalidImageDigest
@@ -73,64 +99,68 @@ type ImageDigest = java.lang.String
   - typings.awsSdk.awsSdkStrings.KmsError
   - java.lang.String
 */
-type ImageFailureCode = typings.awsSdk.ecrMod._ImageFailureCode | java.lang.String
+type ImageFailureCode = _ImageFailureCode | String
 
-type ImageFailureList = js.Array[typings.awsSdk.ecrMod.ImageFailure]
+type ImageFailureList = js.Array[ImageFailure]
 
-type ImageFailureReason = java.lang.String
+type ImageFailureReason = String
 
-type ImageIdentifierList = js.Array[typings.awsSdk.ecrMod.ImageIdentifier]
+type ImageIdentifierList = js.Array[ImageIdentifier]
 
-type ImageList = js.Array[typings.awsSdk.ecrMod.Image]
+type ImageList = js.Array[Image]
 
-type ImageManifest = java.lang.String
+type ImageManifest = String
 
-type ImageScanFindingList = js.Array[typings.awsSdk.ecrMod.ImageScanFinding]
+type ImageReplicationStatusList = js.Array[ImageReplicationStatus]
 
-type ImageSizeInBytes = scala.Double
+type ImageScanFindingList = js.Array[ImageScanFinding]
 
-type ImageTag = java.lang.String
+type ImageSizeInBytes = Double
 
-type ImageTagList = js.Array[typings.awsSdk.ecrMod.ImageTag]
+type ImageTag = String
+
+type ImageTagList = js.Array[ImageTag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MUTABLE
   - typings.awsSdk.awsSdkStrings.IMMUTABLE
   - java.lang.String
 */
-type ImageTagMutability = typings.awsSdk.ecrMod._ImageTagMutability | java.lang.String
+type ImageTagMutability = _ImageTagMutability | String
 
-type KmsKey = java.lang.String
+type ImageTagsList = js.Array[ImageTag]
+
+type KmsKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
   - typings.awsSdk.awsSdkStrings.UNAVAILABLE
   - java.lang.String
 */
-type LayerAvailability = typings.awsSdk.ecrMod._LayerAvailability | java.lang.String
+type LayerAvailability = _LayerAvailability | String
 
-type LayerDigest = java.lang.String
+type LayerDigest = String
 
-type LayerDigestList = js.Array[typings.awsSdk.ecrMod.LayerDigest]
+type LayerDigestList = js.Array[LayerDigest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InvalidLayerDigest
   - typings.awsSdk.awsSdkStrings.MissingLayerDigest
   - java.lang.String
 */
-type LayerFailureCode = typings.awsSdk.ecrMod._LayerFailureCode | java.lang.String
+type LayerFailureCode = _LayerFailureCode | String
 
-type LayerFailureList = js.Array[typings.awsSdk.ecrMod.LayerFailure]
+type LayerFailureList = js.Array[LayerFailure]
 
-type LayerFailureReason = java.lang.String
+type LayerFailureReason = String
 
-type LayerList = js.Array[typings.awsSdk.ecrMod.Layer]
+type LayerList = js.Array[Layer]
 
-type LayerPartBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.ecrMod.Blob | java.lang.String
+type LayerPartBlob = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type LayerSizeInBytes = scala.Double
+type LayerSizeInBytes = Double
 
-type LifecyclePolicyPreviewResultList = js.Array[typings.awsSdk.ecrMod.LifecyclePolicyPreviewResult]
+type LifecyclePolicyPreviewResultList = js.Array[LifecyclePolicyPreviewResult]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -139,39 +169,67 @@ type LifecyclePolicyPreviewResultList = js.Array[typings.awsSdk.ecrMod.Lifecycle
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type LifecyclePolicyPreviewStatus = typings.awsSdk.ecrMod._LifecyclePolicyPreviewStatus | java.lang.String
+type LifecyclePolicyPreviewStatus = _LifecyclePolicyPreviewStatus | String
 
-type LifecyclePolicyRulePriority = scala.Double
+type LifecyclePolicyRulePriority = Double
 
-type LifecyclePolicyText = java.lang.String
+type LifecyclePolicyText = String
 
-type LifecyclePreviewMaxResults = scala.Double
+type LifecyclePreviewMaxResults = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MediaType = java.lang.String
+type MediaType = String
 
-type MediaTypeList = js.Array[typings.awsSdk.ecrMod.MediaType]
+type MediaTypeList = js.Array[MediaType]
 
-type NextToken = java.lang.String
+type Metric = String
 
-type PartSize = scala.Double
+type NextToken = String
 
-type ProxyEndpoint = java.lang.String
+type PackageManager = String
 
-type PushTimestamp = typings.std.Date
+type PartSize = Double
 
-type RegistryId = java.lang.String
+type Platform = String
 
-type RepositoryList = js.Array[typings.awsSdk.ecrMod.Repository]
+type ProxyEndpoint = String
 
-type RepositoryName = java.lang.String
+type PullThroughCacheRuleList = js.Array[PullThroughCacheRule]
 
-type RepositoryNameList = js.Array[typings.awsSdk.ecrMod.RepositoryName]
+type PullThroughCacheRuleRepositoryPrefix = String
 
-type RepositoryPolicyText = java.lang.String
+type PullThroughCacheRuleRepositoryPrefixList = js.Array[PullThroughCacheRuleRepositoryPrefix]
 
-type ScanOnPushFlag = scala.Boolean
+type PushTimestamp = js.Date
+
+type Reason = String
+
+type RecommendationText = String
+
+type RecordedPullTimestamp = js.Date
+
+type ReferenceUrlsList = js.Array[Url]
+
+type Region = String
+
+type RegistryId = String
+
+type RegistryPolicyText = String
+
+type RegistryScanningRuleList = js.Array[RegistryScanningRule]
+
+type RelatedVulnerabilitiesList = js.Array[RelatedVulnerability]
+
+type RelatedVulnerability = String
+
+type Release = String
+
+type ReplicationDestinationList = js.Array[ReplicationDestination]
+
+type ReplicationError = String
+
+type ReplicationRuleList = js.Array[ReplicationRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -179,19 +237,95 @@ type ScanOnPushFlag = scala.Boolean
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ScanStatus = typings.awsSdk.ecrMod._ScanStatus | java.lang.String
+type ReplicationStatus = _ReplicationStatus | String
 
-type ScanStatusDescription = java.lang.String
+type RepositoryFilterList = js.Array[RepositoryFilter]
 
-type ScanTimestamp = typings.std.Date
+type RepositoryFilterType = PREFIX_MATCH | String
 
-type SeverityCount = scala.Double
+type RepositoryFilterValue = String
 
-type TagKey = java.lang.String
+type RepositoryList = js.Array[Repository]
 
-type TagKeyList = js.Array[typings.awsSdk.ecrMod.TagKey]
+type RepositoryName = String
 
-type TagList = js.Array[typings.awsSdk.ecrMod.Tag]
+type RepositoryNameList = js.Array[RepositoryName]
+
+type RepositoryPolicyText = String
+
+type RepositoryScanningConfigurationFailureList = js.Array[RepositoryScanningConfigurationFailure]
+
+type RepositoryScanningConfigurationList = js.Array[RepositoryScanningConfiguration]
+
+type ResourceId = String
+
+type ResourceList = js.Array[Resource]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SCAN_ON_PUSH
+  - typings.awsSdk.awsSdkStrings.CONTINUOUS_SCAN
+  - typings.awsSdk.awsSdkStrings.MANUAL
+  - java.lang.String
+*/
+type ScanFrequency = _ScanFrequency | String
+
+type ScanOnPushFlag = Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_IMAGE
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SCAN_ELIGIBILITY_EXPIRED
+  - typings.awsSdk.awsSdkStrings.FINDINGS_UNAVAILABLE
+  - java.lang.String
+*/
+type ScanStatus = _ScanStatus | String
+
+type ScanStatusDescription = String
+
+type ScanTimestamp = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BASIC
+  - typings.awsSdk.awsSdkStrings.ENHANCED
+  - java.lang.String
+*/
+type ScanType = _ScanType | String
+
+type ScanningConfigurationFailureCode = REPOSITORY_NOT_FOUND | String
+
+type ScanningConfigurationFailureReason = String
+
+type ScanningConfigurationRepositoryNameList = js.Array[RepositoryName]
+
+type ScanningRepositoryFilterList = js.Array[ScanningRepositoryFilter]
+
+type ScanningRepositoryFilterType = WILDCARD | String
+
+type ScanningRepositoryFilterValue = String
+
+type Score = Double
+
+type ScoringVector = String
+
+type Severity = String
+
+type SeverityCount = Double
+
+type Source = String
+
+type SourceLayerHash = String
+
+type Status = String
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TAGGED
@@ -199,19 +333,33 @@ type TagList = js.Array[typings.awsSdk.ecrMod.Tag]
   - typings.awsSdk.awsSdkStrings.ANY
   - java.lang.String
 */
-type TagStatus = typings.awsSdk.ecrMod._TagStatus | java.lang.String
+type TagStatus = _TagStatus | String
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type UploadId = java.lang.String
+type Tags = StringDictionary[TagValue]
 
-type Url = java.lang.String
+type Title = String
 
-type VulnerabilitySourceUpdateTimestamp = typings.std.Date
+type Type = String
+
+type UploadId = String
+
+type Url = String
+
+type Version = String
+
+type VulnerabilityId = String
+
+type VulnerabilitySourceUpdateTimestamp = js.Date
+
+type VulnerablePackageName = String
+
+type VulnerablePackagesList = js.Array[VulnerablePackage]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-09-21`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ecrMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

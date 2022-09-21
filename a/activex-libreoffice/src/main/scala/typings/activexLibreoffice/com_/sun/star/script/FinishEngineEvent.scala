@@ -29,11 +29,11 @@ trait FinishEngineEvent
     *
     * This field is only valid if {@link FinishEngineEvent.Finish} is FinishReason::OK.
     */
-  var Return: js.Any
+  var Return: Any
 }
 object FinishEngineEvent {
   
-  inline def apply(ErrorMessage: String, Finish: FinishReason, Return: js.Any, Source: XInterface): FinishEngineEvent = {
+  inline def apply(ErrorMessage: String, Finish: FinishReason, Return: Any, Source: XInterface): FinishEngineEvent = {
     val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage.asInstanceOf[js.Any], Finish = Finish.asInstanceOf[js.Any], Return = Return.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinishEngineEvent]
   }
@@ -44,6 +44,6 @@ object FinishEngineEvent {
     
     inline def setFinish(value: FinishReason): Self = StObject.set(x, "Finish", value.asInstanceOf[js.Any])
     
-    inline def setReturn(value: js.Any): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Any): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
   }
 }

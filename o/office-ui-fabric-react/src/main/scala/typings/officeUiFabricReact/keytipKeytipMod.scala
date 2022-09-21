@@ -10,13 +10,13 @@ object keytipKeytipMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Keytip/Keytip", "Keytip")
   @js.native
-  class Keytip protected ()
-    extends Component[IKeytipProps, js.Object, js.Any] {
+  open class Keytip protected ()
+    extends Component[IKeytipProps, js.Object, Any] {
     def this(props: IKeytipProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IKeytipProps, context: js.Any) = this()
+    def this(props: IKeytipProps, context: Any) = this()
   }
 }

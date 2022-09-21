@@ -50,7 +50,7 @@ trait PartialStatement extends StObject {
     * _.options('opts'): OPTIONS opts
     *
     */
-  def collect(varname: js.Any, expr: js.Any): CollectExpression = js.native
+  def collect(varname: Any, expr: Any): CollectExpression = js.native
   
   /**
     * COLLECT
@@ -84,7 +84,7 @@ trait PartialStatement extends StObject {
     * _.options('opts'): OPTIONS opts
     *
     */
-  def collectWithCountInto(varname: js.Any): CollectWithCountIntoExpression = js.native
+  def collectWithCountInto(varname: Any): CollectWithCountIntoExpression = js.native
   
   /**
     * FILTER expression
@@ -96,7 +96,7 @@ trait PartialStatement extends StObject {
     * _.filter(qb.eq('a', 'b')): FILTER a == b
     *
     */
-  def filter(varname: js.Any): FilterExpression = js.native
+  def filter(varname: Any): FilterExpression = js.native
   
   /**
     * FOR expression IN collection
@@ -108,7 +108,7 @@ trait PartialStatement extends StObject {
     * _.for('doc').in('my_collection'): FOR doc IN my_collection
     *
     */
-  def `for`(varname: js.Any): ForRet = js.native
+  def `for`(varname: Any): ForRet = js.native
   
   /**
     * INSERT
@@ -129,7 +129,7 @@ trait PartialStatement extends StObject {
     * _.returnNew('z'): LET z = NEW RETURN z
     *
     */
-  def insert(expr: js.Any): InsertRet = js.native
+  def insert(expr: Any): InsertRet = js.native
   
   /**
     * LET varname = expression
@@ -145,7 +145,7 @@ trait PartialStatement extends StObject {
     * PartialStatement::let(definitions): PartialStatement
     *
     */
-  def let(varname: js.Object, expr: js.Any): LetExpression = js.native
+  def let(varname: js.Object, expr: Any): LetExpression = js.native
   
   /**
     * LIMIT offset, count
@@ -159,8 +159,8 @@ trait PartialStatement extends StObject {
     * _.limit(20, 20): LIMIT 20, 20
     *
     */
-  def limit(offset: js.Any): LimitExpression = js.native
-  def limit(offset: js.Any, count: js.Any): LimitExpression = js.native
+  def limit(offset: Any): LimitExpression = js.native
+  def limit(offset: Any, count: Any): LimitExpression = js.native
   
   /**
     * REMOVE
@@ -181,7 +181,7 @@ trait PartialStatement extends StObject {
     * _.options('opts'): OPTIONS opts
     *
     */
-  def remove(expr: js.Any): RemoveRet = js.native
+  def remove(expr: Any): RemoveRet = js.native
   
   /**
     * REPLACE
@@ -210,7 +210,7 @@ trait PartialStatement extends StObject {
     * _.returnOld('z'): LET z = OLD RETURN z
     *
     */
-  def replace(expr: js.Any): ReplaceRetWithRet = js.native
+  def replace(expr: Any): ReplaceRetWithRet = js.native
   
   /**
     * RETURN expression
@@ -223,7 +223,7 @@ trait PartialStatement extends StObject {
     * _.return({x: 'x'}): RETURN {x: x}
     *
     */
-  def `return`(x: js.Any): ReturnExpression = js.native
+  def `return`(x: Any): ReturnExpression = js.native
   
   /**
     * RETURN DISTINCT expression
@@ -235,7 +235,7 @@ trait PartialStatement extends StObject {
     * _.returnDistinct('x'): RETURN DISTINCT x
     *
     */
-  def returnDistinct(x: js.Any): ReturnExpression = js.native
+  def returnDistinct(x: Any): ReturnExpression = js.native
   
   /**
     * SORT ...args
@@ -247,7 +247,7 @@ trait PartialStatement extends StObject {
     * _.sort('x', 'DESC', 'y', 'ASC'): SORT x DESC, y ASC
     *
     */
-  def sort(args: js.Any*): SortExpression = js.native
+  def sort(args: Any*): SortExpression = js.native
   
   /**
     * UPDATE
@@ -278,7 +278,7 @@ trait PartialStatement extends StObject {
     * _.returnOld('z'): LET z = OLD RETURN z
     *
     */
-  def update(expr: js.Any): UpdateRetWithRet = js.native
+  def update(expr: Any): UpdateRetWithRet = js.native
   
   /**
     * UPSERT
@@ -303,5 +303,5 @@ trait PartialStatement extends StObject {
     * _.options('opts'): OPTIONS opts
     *
     */
-  def upsert(expr: js.Any): UpsertRet = js.native
+  def upsert(expr: Any): UpsertRet = js.native
 }

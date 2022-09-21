@@ -101,7 +101,7 @@ object mod {
       
       inline def setCustomTestsUndefined: Self = StObject.set(x, "customTests", js.undefined)
       
-      inline def setCustomTestsVarargs(value: String*): Self = StObject.set(x, "customTests", js.Array(value :_*))
+      inline def setCustomTestsVarargs(value: String*): Self = StObject.set(x, "customTests", js.Array(value*))
       
       inline def setDest(value: String | `false`): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -115,7 +115,7 @@ object mod {
       
       inline def setExcludeTestsUndefined: Self = StObject.set(x, "excludeTests", js.undefined)
       
-      inline def setExcludeTestsVarargs(value: String*): Self = StObject.set(x, "excludeTests", js.Array(value :_*))
+      inline def setExcludeTestsVarargs(value: String*): Self = StObject.set(x, "excludeTests", js.Array(value*))
       
       inline def setFiles(value: Src): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -129,7 +129,7 @@ object mod {
       
       inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value*))
       
       inline def setUglify(value: Boolean): Self = StObject.set(x, "uglify", value.asInstanceOf[js.Any])
       

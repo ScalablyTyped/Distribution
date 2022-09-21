@@ -33,6 +33,6 @@ object DescribeOrganizationConfigRulesResponse {
     
     inline def setOrganizationConfigRulesUndefined: Self = StObject.set(x, "OrganizationConfigRules", js.undefined)
     
-    inline def setOrganizationConfigRulesVarargs(value: OrganizationConfigRule*): Self = StObject.set(x, "OrganizationConfigRules", js.Array(value :_*))
+    inline def setOrganizationConfigRulesVarargs(value: OrganizationConfigRule*): Self = StObject.set(x, "OrganizationConfigRules", js.Array(value*))
   }
 }

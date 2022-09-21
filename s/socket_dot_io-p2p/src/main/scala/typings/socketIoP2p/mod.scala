@@ -18,22 +18,22 @@ object mod {
     */
   @JSImport("socket.io-p2p", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SocketioP2PStatic {
-    def this(socket: js.Any) = this()
-    def this(socket: js.Any, opts: P2POptions) = this()
-    def this(socket: js.Any, opts: Unit, cb: js.Function0[Unit]) = this()
-    def this(socket: js.Any, opts: P2POptions, cb: js.Function0[Unit]) = this()
+    def this(socket: Any) = this()
+    def this(socket: Any, opts: P2POptions) = this()
+    def this(socket: Any, opts: Unit, cb: js.Function0[Unit]) = this()
+    def this(socket: Any, opts: P2POptions, cb: js.Function0[Unit]) = this()
     
     /* CompleteClass */
-    override def binarySlice(arr: js.Array[js.Any], interval: Double, cb: js.Function0[Unit]): Unit = js.native
+    override def binarySlice(arr: js.Array[Any], interval: Double, cb: js.Function0[Unit]): Unit = js.native
     
     /* CompleteClass */
     override def cb(): Unit = js.native
     
     /* CompleteClass */
-    var decoder: js.Any = js.native
+    var decoder: Any = js.native
     
     /* CompleteClass */
     var defaultOps: DefaultOps = js.native
@@ -42,13 +42,13 @@ object mod {
     override def disconnect(): Unit = js.native
     
     /* CompleteClass */
-    override def emit(eventName: js.Any, data: js.Any): Unit = js.native
+    override def emit(eventName: Any, data: Any): Unit = js.native
     
     /* CompleteClass */
     var numConnectedClients: Double = js.native
     
     /* CompleteClass */
-    override def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    override def on(event: String, callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
     var opts: P2POptions = js.native
@@ -57,10 +57,10 @@ object mod {
     var peerOpts: PeerOpts = js.native
     
     /* CompleteClass */
-    override def setupPeerEvents(peer: js.Any): Unit = js.native
+    override def setupPeerEvents(peer: Any): Unit = js.native
     
     /* CompleteClass */
-    var socket: js.Any = js.native
+    var socket: Any = js.native
     
     /**
       * Upgrade the connection to p2p
@@ -192,7 +192,7 @@ object mod {
       * Function to transform generated SDP signaling data (for advanced users)
       * @default (sdp)=>sdp
       */
-    var sdpTransfrom: js.UndefOr[js.Function1[/* sdp */ js.Any, js.Any]] = js.undefined
+    var sdpTransfrom: js.UndefOr[js.Function1[/* sdp */ Any, Any]] = js.undefined
     
     /**
       * If video/voice is desired, pass stream from getUserMedia
@@ -259,7 +259,7 @@ object mod {
       
       inline def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
       
-      inline def setSdpTransfrom(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
+      inline def setSdpTransfrom(value: /* sdp */ Any => Any): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
       
       inline def setSdpTransfromUndefined: Self = StObject.set(x, "sdpTransfrom", js.undefined)
       
@@ -271,7 +271,7 @@ object mod {
       
       inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
       
       inline def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
       
@@ -291,29 +291,29 @@ object mod {
     */
   trait SocketioP2PStatic extends StObject {
     
-    def binarySlice(arr: js.Array[js.Any], interval: Double, cb: js.Function0[Unit]): Unit
+    def binarySlice(arr: js.Array[Any], interval: Double, cb: js.Function0[Unit]): Unit
     
     def cb(): Unit
     
-    var decoder: js.Any
+    var decoder: Any
     
     var defaultOps: DefaultOps
     
     def disconnect(): Unit
     
-    def emit(eventName: js.Any, data: js.Any): Unit
+    def emit(eventName: Any, data: Any): Unit
     
     var numConnectedClients: Double
     
-    def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit
+    def on(event: String, callback: js.Function1[/* data */ Any, Unit]): Unit
     
     var opts: P2POptions
     
     var peerOpts: PeerOpts
     
-    def setupPeerEvents(peer: js.Any): Unit
+    def setupPeerEvents(peer: Any): Unit
     
-    var socket: js.Any
+    var socket: Any
     
     /**
       * Upgrade the connection to p2p
@@ -327,18 +327,18 @@ object mod {
   object SocketioP2PStatic {
     
     inline def apply(
-      binarySlice: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit,
+      binarySlice: (js.Array[Any], Double, js.Function0[Unit]) => Unit,
       cb: () => Unit,
-      decoder: js.Any,
+      decoder: Any,
       defaultOps: DefaultOps,
       disconnect: () => Unit,
-      emit: (js.Any, js.Any) => Unit,
+      emit: (Any, Any) => Unit,
       numConnectedClients: Double,
-      on: (String, js.Function1[/* data */ js.Any, Unit]) => Unit,
+      on: (String, js.Function1[/* data */ Any, Unit]) => Unit,
       opts: P2POptions,
       peerOpts: PeerOpts,
-      setupPeerEvents: js.Any => Unit,
-      socket: js.Any,
+      setupPeerEvents: Any => Unit,
+      socket: Any,
       upgrade: () => Unit,
       usePeerConnection: Boolean,
       useSockets: Boolean
@@ -349,29 +349,29 @@ object mod {
     
     extension [Self <: SocketioP2PStatic](x: Self) {
       
-      inline def setBinarySlice(value: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
+      inline def setBinarySlice(value: (js.Array[Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
       
       inline def setCb(value: () => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction0(value))
       
-      inline def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
       inline def setDefaultOps(value: DefaultOps): Self = StObject.set(x, "defaultOps", value.asInstanceOf[js.Any])
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      inline def setEmit(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (Any, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setNumConnectedClients(value: Double): Self = StObject.set(x, "numConnectedClients", value.asInstanceOf[js.Any])
       
-      inline def setOn(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* data */ Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setOpts(value: P2POptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setPeerOpts(value: PeerOpts): Self = StObject.set(x, "peerOpts", value.asInstanceOf[js.Any])
       
-      inline def setSetupPeerEvents(value: js.Any => Unit): Self = StObject.set(x, "setupPeerEvents", js.Any.fromFunction1(value))
+      inline def setSetupPeerEvents(value: Any => Unit): Self = StObject.set(x, "setupPeerEvents", js.Any.fromFunction1(value))
       
-      inline def setSocket(value: js.Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
       inline def setUpgrade(value: () => Unit): Self = StObject.set(x, "upgrade", js.Any.fromFunction0(value))
       

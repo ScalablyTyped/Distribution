@@ -21,6 +21,6 @@ object QueryResult {
     
     inline def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

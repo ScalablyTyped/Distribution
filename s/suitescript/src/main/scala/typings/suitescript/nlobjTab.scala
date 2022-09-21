@@ -19,7 +19,7 @@ trait nlobjTab
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * set helper text for this tab or subtab.

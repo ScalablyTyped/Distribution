@@ -10,10 +10,10 @@ Synchronise your GitHub labels with as few destructive operations as possible
 | ------------------ | :-------------: |
 | Full name          | github-label-sync |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 16845 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 20738.666666666668 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/Financial-Times/github-label-sync)

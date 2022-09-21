@@ -12,7 +12,7 @@ trait UpBars extends StObject {
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   /* private */ @JSName("Excel.UpBars_typekey")
   var ExcelDotUpBars_typekey: UpBars
@@ -25,9 +25,9 @@ trait UpBars extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Select(): js.Any
+  def Select(): Any
 }
 object UpBars {
   
@@ -35,14 +35,14 @@ object UpBars {
     Application: Application,
     Border: Border,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     ExcelDotUpBars_typekey: UpBars,
     Fill: ChartFillFormat,
     Format: ChartFormat,
     Interior: Interior,
     Name: String,
-    Parent: js.Any,
-    Select: () => js.Any
+    Parent: Any,
+    Select: () => Any
   ): UpBars = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Fill = Fill.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
     __obj.updateDynamic("Excel.UpBars_typekey")(ExcelDotUpBars_typekey.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object UpBars {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setExcelDotUpBars_typekey(value: UpBars): Self = StObject.set(x, "Excel.UpBars_typekey", value.asInstanceOf[js.Any])
     
@@ -69,8 +69,8 @@ object UpBars {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

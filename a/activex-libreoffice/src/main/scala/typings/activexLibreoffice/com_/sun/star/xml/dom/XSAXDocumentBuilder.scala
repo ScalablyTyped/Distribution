@@ -40,7 +40,7 @@ object XSAXDocumentBuilder {
     getDocument: () => XDocument,
     getDocumentFragment: () => XDocumentFragment,
     getState: () => SAXDocumentBuilderState,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reset: () => Unit,
     startDocumentFragment: XDocument => Unit

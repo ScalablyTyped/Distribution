@@ -27,6 +27,12 @@ trait GoogleCloudMlV1Scheduling extends StObject {
     * ```yaml trainingInput: scheduling: maxWaitTime: 3600s ```
     */
   var maxWaitTime: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. Job scheduling will be based on this priority, which in the range [0, 1000]. The bigger the number, the higher the priority. Default to 0 if not set. If there are multiple
+    * jobs requesting same type of accelerators, the high priority job will be scheduled prior to ones with low priority.
+    */
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1Scheduling {
   
@@ -44,5 +50,9 @@ object GoogleCloudMlV1Scheduling {
     inline def setMaxWaitTime(value: String): Self = StObject.set(x, "maxWaitTime", value.asInstanceOf[js.Any])
     
     inline def setMaxWaitTimeUndefined: Self = StObject.set(x, "maxWaitTime", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

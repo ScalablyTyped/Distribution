@@ -47,6 +47,6 @@ object ContextMenuItem {
     
     inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
-    inline def setSubmenuVarargs(value: ContextMenuItem*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+    inline def setSubmenuVarargs(value: ContextMenuItem*): Self = StObject.set(x, "submenu", js.Array(value*))
   }
 }

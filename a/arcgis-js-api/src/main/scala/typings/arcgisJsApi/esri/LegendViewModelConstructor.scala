@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LegendViewModelConstructor
   extends StObject
-     with Instantiable0[LegendViewModel]
+     with /**
+  * Provides the logic for the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget, which displays a label and symbol for interpreting the [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) of each layer in a map.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html)
+  */
+Instantiable0[LegendViewModel]
      with Instantiable1[/* properties */ LegendViewModelProperties, LegendViewModel]

@@ -6,7 +6,6 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object migrationhubconfigMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends MigrationHubConfig {
+  open class ^ () extends MigrationHubConfig {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -196,7 +195,7 @@ object migrationhubconfigMod {
       
       inline def setHomeRegionControlsUndefined: Self = StObject.set(x, "HomeRegionControls", js.undefined)
       
-      inline def setHomeRegionControlsVarargs(value: HomeRegionControl*): Self = StObject.set(x, "HomeRegionControls", js.Array(value :_*))
+      inline def setHomeRegionControlsVarargs(value: HomeRegionControl*): Self = StObject.set(x, "HomeRegionControls", js.Array(value*))
       
       inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -247,7 +246,7 @@ object migrationhubconfigMod {
     /**
       * A timestamp representing the time when the customer called CreateHomeregionControl and set the home region for the account.
       */
-    var RequestedTime: js.UndefOr[typings.awsSdk.migrationhubconfigMod.RequestedTime] = js.undefined
+    var RequestedTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The target parameter specifies the identifier to which the home region is applied, which is always an ACCOUNT. It applies the home region to the current ACCOUNT.
@@ -271,7 +270,7 @@ object migrationhubconfigMod {
       
       inline def setHomeRegionUndefined: Self = StObject.set(x, "HomeRegion", js.undefined)
       
-      inline def setRequestedTime(value: RequestedTime): Self = StObject.set(x, "RequestedTime", value.asInstanceOf[js.Any])
+      inline def setRequestedTime(value: js.Date): Self = StObject.set(x, "RequestedTime", value.asInstanceOf[js.Any])
       
       inline def setRequestedTimeUndefined: Self = StObject.set(x, "RequestedTime", js.undefined)
       
@@ -332,7 +331,7 @@ object migrationhubconfigMod {
     ): Request[GetHomeRegionResult, AWSError] = js.native
   }
   
-  type RequestedTime = Date
+  type RequestedTime = js.Date
   
   trait Target extends StObject {
     

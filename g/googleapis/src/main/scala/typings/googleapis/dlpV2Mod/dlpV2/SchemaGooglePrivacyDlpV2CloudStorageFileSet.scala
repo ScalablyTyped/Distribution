@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message representing a set of files in Cloud Storage.
-  */
 trait SchemaGooglePrivacyDlpV2CloudStorageFileSet extends StObject {
   
   /**
-    * The url, in the format `gs://&lt;bucket&gt;/&lt;path&gt;`. Trailing
-    * wildcard in the path is allowed.
+    * The url, in the format `gs:///`. Trailing wildcard in the path is allowed.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CloudStorageFileSet {
   
@@ -25,6 +21,8 @@ object SchemaGooglePrivacyDlpV2CloudStorageFileSet {
   extension [Self <: SchemaGooglePrivacyDlpV2CloudStorageFileSet](x: Self) {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

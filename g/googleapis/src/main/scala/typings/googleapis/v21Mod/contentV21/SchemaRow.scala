@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaRow extends StObject {
   
   /**
-    * The list of cells that constitute the row. Must have the same length as
-    * columnHeaders for two-dimensional tables, a length of 1 for
-    * one-dimensional tables. Required.
+    * The list of cells that constitute the row. Must have the same length as `columnHeaders` for two-dimensional tables, a length of 1 for one-dimensional tables. Required.
     */
   var cells: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
@@ -26,6 +24,6 @@ object SchemaRow {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: SchemaValue*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: SchemaValue*): Self = StObject.set(x, "cells", js.Array(value*))
   }
 }

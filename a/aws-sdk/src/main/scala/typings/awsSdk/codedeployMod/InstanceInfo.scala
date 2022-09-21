@@ -9,7 +9,7 @@ trait InstanceInfo extends StObject {
   /**
     * If the on-premises instance was deregistered, the time at which the on-premises instance was deregistered.
     */
-  var deregisterTime: js.UndefOr[Timestamp] = js.undefined
+  var deregisterTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the IAM session associated with the on-premises instance.
@@ -34,7 +34,7 @@ trait InstanceInfo extends StObject {
   /**
     * The time at which the on-premises instance was registered.
     */
-  var registerTime: js.UndefOr[Timestamp] = js.undefined
+  var registerTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The tags currently associated with the on-premises instance.
@@ -50,7 +50,7 @@ object InstanceInfo {
   
   extension [Self <: InstanceInfo](x: Self) {
     
-    inline def setDeregisterTime(value: Timestamp): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
+    inline def setDeregisterTime(value: js.Date): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
     
     inline def setDeregisterTimeUndefined: Self = StObject.set(x, "deregisterTime", js.undefined)
     
@@ -70,7 +70,7 @@ object InstanceInfo {
     
     inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    inline def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
+    inline def setRegisterTime(value: js.Date): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
     
     inline def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
     
@@ -78,6 +78,6 @@ object InstanceInfo {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

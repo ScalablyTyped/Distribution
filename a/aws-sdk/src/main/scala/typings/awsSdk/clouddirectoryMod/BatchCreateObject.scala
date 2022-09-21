@@ -50,7 +50,7 @@ object BatchCreateObject {
     
     inline def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     
-    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
+    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value*))
     
     inline def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object BatchCreateObject {
     
     inline def setSchemaFacet(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
     
-    inline def setSchemaFacetVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacet", js.Array(value :_*))
+    inline def setSchemaFacetVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacet", js.Array(value*))
   }
 }

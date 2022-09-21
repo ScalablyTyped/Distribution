@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.ReciprocalInverseGaussian")
 @js.native
-class ReciprocalInverseGaussian ()
+open class ReciprocalInverseGaussian ()
   extends typings.ranjs.mod.dist.ReciprocalInverseGaussian {
   def this(mu: Double) = this()
   def this(mu: Double, lambda: Double) = this()

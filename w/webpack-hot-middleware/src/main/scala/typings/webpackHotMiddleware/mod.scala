@@ -2,6 +2,8 @@ package typings.webpackHotMiddleware
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.connect.mod.NextHandleFunction
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.MultiCompiler
 import typings.webpackHotMiddleware.webpackHotMiddlewareBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(
-    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any
-  ): NextHandleFunction & EventStream = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction & EventStream]
-  inline def apply(
-    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any,
-    options: MiddlewareOptions
-  ): NextHandleFunction & EventStream = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NextHandleFunction & EventStream]
+  inline def apply(compiler: Compiler): NextHandleFunction & EventStream = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction & EventStream]
+  inline def apply(compiler: Compiler, options: MiddlewareOptions): NextHandleFunction & EventStream = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NextHandleFunction & EventStream]
+  inline def apply(compiler: MultiCompiler): NextHandleFunction & EventStream = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction & EventStream]
+  inline def apply(compiler: MultiCompiler, options: MiddlewareOptions): NextHandleFunction & EventStream = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NextHandleFunction & EventStream]
   
   @JSImport("webpack-hot-middleware", JSImport.Namespace)
   @js.native
@@ -23,7 +22,7 @@ object mod {
   
   trait ClientOptions extends StObject {
     
-    var ansiColors: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var ansiColors: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var autoConnect: js.UndefOr[Boolean] = js.undefined
     
@@ -35,7 +34,7 @@ object mod {
     
     var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var overlayStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var overlayStyles: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var overlayWarnings: js.UndefOr[Boolean] = js.undefined
     
@@ -56,7 +55,7 @@ object mod {
     
     extension [Self <: ClientOptions](x: Self) {
       
-      inline def setAnsiColors(value: StringDictionary[js.Any]): Self = StObject.set(x, "ansiColors", value.asInstanceOf[js.Any])
+      inline def setAnsiColors(value: StringDictionary[Any]): Self = StObject.set(x, "ansiColors", value.asInstanceOf[js.Any])
       
       inline def setAnsiColorsUndefined: Self = StObject.set(x, "ansiColors", js.undefined)
       
@@ -78,7 +77,7 @@ object mod {
       
       inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      inline def setOverlayStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "overlayStyles", value.asInstanceOf[js.Any])
+      inline def setOverlayStyles(value: StringDictionary[Any]): Self = StObject.set(x, "overlayStyles", value.asInstanceOf[js.Any])
       
       inline def setOverlayStylesUndefined: Self = StObject.set(x, "overlayStyles", js.undefined)
       
@@ -110,11 +109,11 @@ object mod {
     
     def close(): Unit
     
-    def publish(payload: js.Any): Unit
+    def publish(payload: Any): Unit
   }
   object EventStream {
     
-    inline def apply(close: () => Unit, publish: js.Any => Unit): EventStream = {
+    inline def apply(close: () => Unit, publish: Any => Unit): EventStream = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), publish = js.Any.fromFunction1(publish))
       __obj.asInstanceOf[EventStream]
     }
@@ -123,15 +122,15 @@ object mod {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      inline def setPublish(value: js.Any => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+      inline def setPublish(value: Any => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait Logger extends StObject {
     
-    def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def apply(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def apply(message: Any, optionalParams: Any*): Unit = js.native
+    def apply(message: Unit, optionalParams: Any*): Unit = js.native
   }
   
   trait MiddlewareOptions extends StObject {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CognitoIdentityServiceProvider ()
+open class CognitoIdentityServiceProvider ()
   extends typings.awsSdk.mod.CognitoIdentityServiceProvider {
   def this(options: ClientConfiguration) = this()
 }

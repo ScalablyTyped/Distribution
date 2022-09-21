@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Sleeping")
 @js.native
-class Sleeping ()
+open class Sleeping ()
   extends typings.matterJs.mod.Sleeping
 /* static members */
 object Sleeping {

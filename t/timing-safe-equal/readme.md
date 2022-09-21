@@ -11,14 +11,11 @@ timing safe equals, but for the browser
 | Full name          | timing-safe-equal |
 | Keywords           | timing |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 2112 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1305.6666666666667 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/crypto-browserify/timing-safe-equal#readme)
-- [Bugs](https://github.com/crypto-browserify/timing-safe-equal/issues)
-- [Repository](https://github.com/crypto-browserify/timing-safe-equal)
 - [Npm](https://www.npmjs.com/package/timing-safe-equal)
     
 

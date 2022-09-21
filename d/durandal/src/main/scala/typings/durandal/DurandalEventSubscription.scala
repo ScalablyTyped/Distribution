@@ -20,7 +20,7 @@ trait DurandalEventSubscription extends StObject {
     * @chainable
     */
   def on(thenCallback: js.Function): DurandalEventSubscription = js.native
-  def on(thenCallback: js.Function, context: js.Any): DurandalEventSubscription = js.native
+  def on(thenCallback: js.Function, context: Any): DurandalEventSubscription = js.native
   
   /**
     * Attaches a callback to the event subscription.
@@ -29,5 +29,5 @@ trait DurandalEventSubscription extends StObject {
     * @chainable
     */
   def `then`(thenCallback: js.Function): DurandalEventSubscription = js.native
-  def `then`(thenCallback: js.Function, context: js.Any): DurandalEventSubscription = js.native
+  def `then`(thenCallback: js.Function, context: Any): DurandalEventSubscription = js.native
 }

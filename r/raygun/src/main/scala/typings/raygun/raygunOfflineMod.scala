@@ -1,7 +1,7 @@
 package typings.raygun
 
 import typings.raygun.typesMod.IOfflineStorage
-import typings.raygun.typesMod.Transport
+import typings.raygun.typesMod.MessageTransport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +10,17 @@ object raygunOfflineMod {
   
   @JSImport("raygun/build/raygun.offline", "OfflineStorage")
   @js.native
-  class OfflineStorage protected ()
+  open class OfflineStorage protected ()
     extends StObject
        with IOfflineStorage {
-    def this(transport: Transport) = this()
+    def this(transport: MessageTransport) = this()
     
-    /* private */ var _sendAndDelete: js.Any = js.native
+    /* private */ var _sendAndDelete: Any = js.native
     
     var cacheLimit: Double = js.native
     
     var cachePath: String = js.native
     
-    var transport: Transport = js.native
+    var transport: MessageTransport = js.native
   }
 }

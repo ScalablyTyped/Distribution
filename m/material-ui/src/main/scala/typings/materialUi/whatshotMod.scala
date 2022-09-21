@@ -10,10 +10,10 @@ object whatshotMod {
   
   @JSImport("material-ui/svg-icons/social/whatshot", JSImport.Default)
   @js.native
-  class default () extends SocialWhatshot
+  open class default () extends SocialWhatshot
   
   @JSImport("material-ui/svg-icons/social/whatshot", "SocialWhatshot")
   @js.native
-  class SocialWhatshot ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialWhatshot ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

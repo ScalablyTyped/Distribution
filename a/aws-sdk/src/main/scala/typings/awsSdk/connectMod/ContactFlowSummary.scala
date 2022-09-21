@@ -7,22 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContactFlowSummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the contact flow.
+    * The Amazon Resource Name (ARN) of the flow.
     */
   var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The type of contact flow.
+    * The type of flow.
+    */
+  var ContactFlowState: js.UndefOr[typings.awsSdk.connectMod.ContactFlowState] = js.undefined
+  
+  /**
+    * The type of flow.
     */
   var ContactFlowType: js.UndefOr[typings.awsSdk.connectMod.ContactFlowType] = js.undefined
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var Id: js.UndefOr[ContactFlowId] = js.undefined
   
   /**
-    * The name of the contact flow.
+    * The name of the flow.
     */
   var Name: js.UndefOr[ContactFlowName] = js.undefined
 }
@@ -38,6 +43,10 @@ object ContactFlowSummary {
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    
+    inline def setContactFlowState(value: ContactFlowState): Self = StObject.set(x, "ContactFlowState", value.asInstanceOf[js.Any])
+    
+    inline def setContactFlowStateUndefined: Self = StObject.set(x, "ContactFlowState", js.undefined)
     
     inline def setContactFlowType(value: ContactFlowType): Self = StObject.set(x, "ContactFlowType", value.asInstanceOf[js.Any])
     

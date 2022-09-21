@@ -9,11 +9,11 @@ trait JQueryKeyEventObject
   extends StObject
      with JQueryInputEventObject {
   
-  var char: js.Any = js.native
+  var char: Any = js.native
   
   var charCode: Double = js.native
   
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   var keyCode: Double = js.native
 }

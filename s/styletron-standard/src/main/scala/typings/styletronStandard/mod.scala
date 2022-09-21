@@ -1,7 +1,9 @@
 package typings.styletronStandard
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.styletronStandard.styleTypesMod.FontFace
+import typings.styletronStandard.styleTypesMod.KeyframesObject
+import typings.styletronStandard.styleTypesMod.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,40 +18,7 @@ object mod {
   
   inline def getInitialStyle(): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialStyle")().asInstanceOf[StyleObject]
   
-  inline def renderDeclarativeRules(style: StyleObject, styletrong: StandardEngine): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclarativeRules")(style.asInstanceOf[js.Any], styletrong.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
-  
-  type FontFace = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.AtRule.FontFace */ js.Any
-  
-  trait KeyframesObject
-    extends StObject
-       with KeyframesPercentageObject {
-    
-    var from: js.UndefOr[Properties] = js.undefined
-    
-    var to: js.UndefOr[Properties] = js.undefined
-  }
-  object KeyframesObject {
-    
-    inline def apply(): KeyframesObject = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[KeyframesObject]
-    }
-    
-    extension [Self <: KeyframesObject](x: Self) {
-      
-      inline def setFrom(value: Properties): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-      
-      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
-      
-      inline def setTo(value: Properties): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-      
-      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
-    }
-  }
-  
-  type KeyframesPercentageObject = StringDictionary[Properties]
-  
-  type Properties = typings.csstype.mod.Properties[String | Double]
+  inline def renderDeclarativeRules(style: StyleObject, styletron: StandardEngine): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclarativeRules")(style.asInstanceOf[js.Any], styletron.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
   
   trait StandardEngine extends StObject {
     
@@ -80,5 +49,5 @@ object mod {
     }
   }
   
-  type StyleObject = Properties & typings.styletronStandard.styletronStandardStrings.StyleObject & TopLevel[js.Any]
+  type StyleObject = Properties & typings.styletronStandard.styletronStandardStrings.StyleObject & TopLevel[Any]
 }

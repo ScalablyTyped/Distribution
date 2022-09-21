@@ -55,7 +55,7 @@ object mod {
   
   @JSImport("redux-orm", JSImport.Default)
   @js.native
-  class default[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected ()
+  open class default[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected ()
     extends typings.reduxOrm.modelMod.default[MClass, Fields] {
     /**
       * Creates a Model instance from it's properties.
@@ -74,12 +74,12 @@ object mod {
     /**
       * @see {@link QuerySet.all}
       */
-    inline def all(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def all(): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link QuerySet.at}
       */
-    inline def at(index: Double): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(index.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def at(index: Double): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(index.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * @see {@link QuerySet.count}
@@ -111,7 +111,7 @@ object mod {
     /**
       * @see {@link QuerySet.exclude}
       */
-    inline def exclude(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def exclude(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * Returns a boolean indicating if an entity
@@ -120,7 +120,7 @@ object mod {
       * @param  props - a key-value that {@link Model} instances should have to be considered as existing.
       * @return a boolean indicating if entity with `props` exists in the state
       */
-    inline def exists(props: Partial[Ref[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def exists(props: Partial[Ref[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Model field descriptors.
@@ -137,12 +137,12 @@ object mod {
     /**
       * @see {@link QuerySet.filter}
       */
-    inline def filter(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def filter(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link QuerySet.first}
       */
-    inline def first(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def first(): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * Gets the {@link Model} instance that matches properties in `lookupObj`.
@@ -161,7 +161,7 @@ object mod {
       *
       * @return An instance of the model's `querySetClass`.
       */
-    inline def getQuerySet(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuerySet")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def getQuerySet(): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuerySet")().asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * The key of Model's identifier property
@@ -185,7 +185,7 @@ object mod {
     /**
       * @see {@link QuerySet.last}
       */
-    inline def last(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def last(): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * Manually mark individual instances as accessed.
@@ -230,20 +230,18 @@ object mod {
     /**
       * @see {@link QuerySet.orderBy}
       */
+    inline def orderBy(iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     inline def orderBy(
-      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]]
-    ): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
-    inline def orderBy(
-      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]],
+      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]],
       orders: js.Array[SortOrder]
-    ): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    ): typings.reduxOrm.querySetMod.default[Any, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link Model.getQuerySet}
       */
     @JSImport("redux-orm", "default.query")
     @js.native
-    val query: typings.reduxOrm.querySetMod.default[js.Any, js.Object] = js.native
+    val query: typings.reduxOrm.querySetMod.default[Any, js.Object] = js.native
     
     /**
       * {@link QuerySet} class associated with this Model class.
@@ -253,14 +251,14 @@ object mod {
     @JSImport("redux-orm", "default.querySetClass")
     @js.native
     def querySetClass: (Instantiable3[
-        /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
+        /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ Any], 
         /* clauses */ js.Array[QueryClause[js.Object]], 
         /* opts */ js.UndefOr[js.Object], 
         typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
       ]) & TypeofQuerySet = js.native
     inline def querySetClass_=(
       x: (Instantiable3[
-          /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
+          /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ Any], 
           /* clauses */ js.Array[QueryClause[js.Object]], 
           /* opts */ js.UndefOr[js.Object], 
           typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
@@ -279,12 +277,12 @@ object mod {
       *                      {@link Model} type that the reducer is being attached to.
       * @param session - an optional parameter, can be used for querying other Models (mutations are not supported)
       */
-    inline def reducer(action: js.Any, modelType: ModelType[js.Any], session: OrmSession[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(action.asInstanceOf[js.Any], modelType.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def reducer(action: Any, modelType: ModelType[Any], session: OrmSession[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(action.asInstanceOf[js.Any], modelType.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @see {@link QuerySet.update}
       */
-    inline def update(props: UpdateProps[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def update(props: UpdateProps[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a new or update existing record in the database, instantiates a {@link Model} and returns it.
@@ -311,14 +309,14 @@ object mod {
   
   @JSImport("redux-orm", "Attribute")
   @js.native
-  class Attribute ()
+  open class Attribute ()
     extends typings.reduxOrm.fieldsMod.Attribute {
     def this(opts: AttributeOpts) = this()
   }
   
   @JSImport("redux-orm", "ForeignKey")
   @js.native
-  class ForeignKey protected ()
+  open class ForeignKey protected ()
     extends typings.reduxOrm.fieldsMod.ForeignKey {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
@@ -327,7 +325,7 @@ object mod {
   
   @JSImport("redux-orm", "ManyToMany")
   @js.native
-  class ManyToMany protected ()
+  open class ManyToMany protected ()
     extends typings.reduxOrm.fieldsMod.ManyToMany {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
@@ -336,7 +334,7 @@ object mod {
   
   @JSImport("redux-orm", "Model")
   @js.native
-  class Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected ()
+  open class Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected ()
     extends typings.reduxOrm.modelMod.default[MClass, Fields] {
     /**
       * Creates a Model instance from it's properties.
@@ -355,12 +353,12 @@ object mod {
     /**
       * @see {@link QuerySet.all}
       */
-    inline def all(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def all(): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link QuerySet.at}
       */
-    inline def at(index: Double): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(index.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def at(index: Double): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(index.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * @see {@link QuerySet.count}
@@ -392,7 +390,7 @@ object mod {
     /**
       * @see {@link QuerySet.exclude}
       */
-    inline def exclude(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def exclude(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * Returns a boolean indicating if an entity
@@ -401,7 +399,7 @@ object mod {
       * @param  props - a key-value that {@link Model} instances should have to be considered as existing.
       * @return a boolean indicating if entity with `props` exists in the state
       */
-    inline def exists(props: Partial[Ref[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def exists(props: Partial[Ref[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Model field descriptors.
@@ -418,12 +416,12 @@ object mod {
     /**
       * @see {@link QuerySet.filter}
       */
-    inline def filter(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def filter(props: LookupSpec[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link QuerySet.first}
       */
-    inline def first(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def first(): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * Gets the {@link Model} instance that matches properties in `lookupObj`.
@@ -442,7 +440,7 @@ object mod {
       *
       * @return An instance of the model's `querySetClass`.
       */
-    inline def getQuerySet(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuerySet")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    inline def getQuerySet(): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuerySet")().asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * The key of Model's identifier property
@@ -466,7 +464,7 @@ object mod {
     /**
       * @see {@link QuerySet.last}
       */
-    inline def last(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
+    inline def last(): js.UndefOr[SessionBoundModel[Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[SessionBoundModel[Any, js.Object]]]
     
     /**
       * Manually mark individual instances as accessed.
@@ -511,20 +509,18 @@ object mod {
     /**
       * @see {@link QuerySet.orderBy}
       */
+    inline def orderBy(iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]]): typings.reduxOrm.querySetMod.default[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     inline def orderBy(
-      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]]
-    ): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
-    inline def orderBy(
-      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]],
+      iteratees: js.Array[SortIteratee[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]],
       orders: js.Array[SortOrder]
-    ): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    ): typings.reduxOrm.querySetMod.default[Any, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[typings.reduxOrm.querySetMod.default[Any, js.Object]]
     
     /**
       * @see {@link Model.getQuerySet}
       */
     @JSImport("redux-orm", "Model.query")
     @js.native
-    val query: typings.reduxOrm.querySetMod.default[js.Any, js.Object] = js.native
+    val query: typings.reduxOrm.querySetMod.default[Any, js.Object] = js.native
     
     /**
       * {@link QuerySet} class associated with this Model class.
@@ -534,14 +530,14 @@ object mod {
     @JSImport("redux-orm", "Model.querySetClass")
     @js.native
     def querySetClass: (Instantiable3[
-        /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
+        /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ Any], 
         /* clauses */ js.Array[QueryClause[js.Object]], 
         /* opts */ js.UndefOr[js.Object], 
         typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
       ]) & TypeofQuerySet = js.native
     inline def querySetClass_=(
       x: (Instantiable3[
-          /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
+          /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ Any], 
           /* clauses */ js.Array[QueryClause[js.Object]], 
           /* opts */ js.UndefOr[js.Object], 
           typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
@@ -560,12 +556,12 @@ object mod {
       *                      {@link Model} type that the reducer is being attached to.
       * @param session - an optional parameter, can be used for querying other Models (mutations are not supported)
       */
-    inline def reducer(action: js.Any, modelType: ModelType[js.Any], session: OrmSession[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(action.asInstanceOf[js.Any], modelType.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def reducer(action: Any, modelType: ModelType[Any], session: OrmSession[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(action.asInstanceOf[js.Any], modelType.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @see {@link QuerySet.update}
       */
-    inline def update(props: UpdateProps[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def update(props: UpdateProps[typings.reduxOrm.modelMod.Model[Instantiable0[AnyModel], Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a new or update existing record in the database, instantiates a {@link Model} and returns it.
@@ -595,20 +591,20 @@ object mod {
   /**
     * Creates a new ORM instance.
     */
-  class ORM[I /* <: IndexedModelClasses[
-    js.Any, 
+  open class ORM[I /* <: IndexedModelClasses[
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
   ] */, ModelNames /* <: /* keyof I */ String */] ()
     extends typings.reduxOrm.ormMod.ORM[I, ModelNames] {
-    def this(opts: ORMOpts) = this()
+    def this(opts: ORMOpts[I]) = this()
   }
   
   @JSImport("redux-orm", "OneToOne")
   @js.native
-  class OneToOne_ protected ()
+  open class OneToOne_ protected ()
     extends typings.reduxOrm.fieldsMod.OneToOne_ {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
@@ -617,7 +613,7 @@ object mod {
   
   @JSImport("redux-orm", "QuerySet")
   @js.native
-  class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected ()
+  open class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected ()
     extends typings.reduxOrm.querySetMod.default[M, InstanceProps] {
     /**
       * Creates a `QuerySet`. The constructor is mainly for internal use;
@@ -668,7 +664,7 @@ object mod {
   val attr: AttrCreator = js.native
   
   inline def createDatabase[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -691,23 +687,23 @@ object mod {
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */](orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String]): ORMReducer[I, TAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any]).asInstanceOf[ORMReducer[I, TAction]]
+  ] */, TAction /* <: Any */](orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String]): ORMReducer[I, TAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any]).asInstanceOf[ORMReducer[I, TAction]]
   inline def createReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */](orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[ORMReducer[I, TAction]]
+  ] */, TAction /* <: Any */](orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[ORMReducer[I, TAction]]
   
   inline def createSelector[I, R](
     orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String],
-    ormSelector: ORMSelector[I, js.Array[js.Any], R]
+    ormSelector: ORMSelector[I, js.Array[Any], R]
   ): Selector[OrmState[I], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelector")(orm.asInstanceOf[js.Any], ormSelector.asInstanceOf[js.Any])).asInstanceOf[Selector[OrmState[I], R]]
   inline def createSelector[S, I, R](
     orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
-    ormSelector: ORMSelector[I, js.Array[js.Any], R]
+    ormSelector: ORMSelector[I, js.Array[Any], R]
   ): Selector[S, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelector")(orm.asInstanceOf[js.Any], ormStateSelector.asInstanceOf[js.Any], ormSelector.asInstanceOf[js.Any])).asInstanceOf[Selector[S, R]]
   inline def createSelector[S, I, R1, R](
     orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String],

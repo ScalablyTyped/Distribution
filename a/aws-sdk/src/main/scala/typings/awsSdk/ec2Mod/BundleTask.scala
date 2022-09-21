@@ -29,7 +29,7 @@ trait BundleTask extends StObject {
   /**
     * The time this task started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the task.
@@ -44,7 +44,7 @@ trait BundleTask extends StObject {
   /**
     * The time of the most recent update for the task.
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.undefined
+  var UpdateTime: js.UndefOr[js.Date] = js.undefined
 }
 object BundleTask {
   
@@ -71,7 +71,7 @@ object BundleTask {
     
     inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -83,7 +83,7 @@ object BundleTask {
     
     inline def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
-    inline def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }

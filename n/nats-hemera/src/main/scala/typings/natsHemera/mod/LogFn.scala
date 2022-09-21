@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LogFn extends StObject {
   
-  def apply(msg: String, args: js.Any*): Unit = js.native
-  def apply(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
-  def apply(obj: js.Object, msg: Unit, args: js.Any*): Unit = js.native
+  def apply(msg: String, args: Any*): Unit = js.native
+  def apply(obj: js.Object, msg: String, args: Any*): Unit = js.native
+  def apply(obj: js.Object, msg: Unit, args: Any*): Unit = js.native
 }

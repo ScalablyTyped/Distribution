@@ -19,6 +19,12 @@ object reactNativeModalPopoverStrings {
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
+  sealed trait end
+    extends StObject
+       with Placement
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
   sealed trait landscape
     extends StObject
        with Orientation
@@ -37,12 +43,6 @@ object reactNativeModalPopoverStrings {
   inline def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
   
   @js.native
-  sealed trait left
-    extends StObject
-       with Placement
-  inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
   sealed trait portrait
     extends StObject
        with Orientation
@@ -55,10 +55,10 @@ object reactNativeModalPopoverStrings {
   inline def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
   
   @js.native
-  sealed trait right
+  sealed trait start
     extends StObject
        with Placement
-  inline def right: right = "right".asInstanceOf[right]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait top

@@ -14,7 +14,7 @@ trait ListFindingsReportsRequest extends StObject {
   /**
     *  The end time of the profile to get analysis data about. You must specify startTime and endTime. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * The maximum number of report results returned by ListFindingsReports in paginated output. When this parameter is used, ListFindingsReports only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListFindingsReports request with the returned nextToken value.
@@ -34,11 +34,11 @@ trait ListFindingsReportsRequest extends StObject {
   /**
     *  The start time of the profile to get analysis data about. You must specify startTime and endTime. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var startTime: Timestamp
+  var startTime: js.Date
 }
 object ListFindingsReportsRequest {
   
-  inline def apply(endTime: Timestamp, profilingGroupName: ProfilingGroupName, startTime: Timestamp): ListFindingsReportsRequest = {
+  inline def apply(endTime: js.Date, profilingGroupName: ProfilingGroupName, startTime: js.Date): ListFindingsReportsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsReportsRequest]
   }
@@ -49,7 +49,7 @@ object ListFindingsReportsRequest {
     
     inline def setDailyReportsOnlyUndefined: Self = StObject.set(x, "dailyReportsOnly", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object ListFindingsReportsRequest {
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

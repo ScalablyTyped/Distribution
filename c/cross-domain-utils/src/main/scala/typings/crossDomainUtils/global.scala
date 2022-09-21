@@ -176,7 +176,7 @@ object global {
     
     inline def isTop(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTop")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isWindow(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isWindow(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isWindowClosed(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindowClosed")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def isWindowClosed(win: CrossDomainWindowType, allowMock: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWindowClosed")(win.asInstanceOf[js.Any], allowMock.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -187,17 +187,17 @@ object global {
     
     inline def normalizeMockUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeMockUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, js.Any]): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-    inline def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, js.Any], delay: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+    inline def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ Any, Any]): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+    inline def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ Any, Any], delay: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Cancel]
     inline def onCloseWindow(
       win: CrossDomainWindowType,
-      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      callback: js.Function1[/* repeated */ Any, Any],
       delay: Double,
       maxtime: Double
     ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], maxtime.asInstanceOf[js.Any])).asInstanceOf[Cancel]
     inline def onCloseWindow(
       win: CrossDomainWindowType,
-      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      callback: js.Function1[/* repeated */ Any, Any],
       delay: Unit,
       maxtime: Double
     ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], maxtime.asInstanceOf[js.Any])).asInstanceOf[Cancel]

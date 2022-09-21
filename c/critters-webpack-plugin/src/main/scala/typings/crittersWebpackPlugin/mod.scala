@@ -6,18 +6,17 @@ import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap
 import typings.crittersWebpackPlugin.mod.Critters.CrittersOptions
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("critters-webpack-plugin", JSImport.Default)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("critters-webpack-plugin", JSImport.Default)
   @js.native
-  class default ()
-    extends StObject
-       with Plugin {
+  open class default () extends StObject {
     def this(options: CrittersOptions) = this()
   }
   
@@ -122,7 +121,7 @@ object mod {
         
         inline def setAdditionalStylesheetsUndefined: Self = StObject.set(x, "additionalStylesheets", js.undefined)
         
-        inline def setAdditionalStylesheetsVarargs(value: String*): Self = StObject.set(x, "additionalStylesheets", js.Array(value :_*))
+        inline def setAdditionalStylesheetsVarargs(value: String*): Self = StObject.set(x, "additionalStylesheets", js.Array(value*))
         
         inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
         

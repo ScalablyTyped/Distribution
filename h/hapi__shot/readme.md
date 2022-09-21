@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__shot
 
-Typings are for version 4.1
+Typings are for version 6.0.0
 
 ## Library description:
 Injects a fake HTTP request/response into a node HTTP server
@@ -10,10 +10,10 @@ Injects a fake HTTP request/response into a node HTTP server
 | ------------------ | :-------------: |
 | Full name          | @hapi/shot |
 | Keywords           | utilities, http, debug, test |
-| # releases         | 9 |
-| # dependents       | 6 |
-| # downloads        | 14297698 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2400789.6666666665 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/shot#readme)
@@ -24,7 +24,7 @@ Injects a fake HTTP request/response into a node HTTP server
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

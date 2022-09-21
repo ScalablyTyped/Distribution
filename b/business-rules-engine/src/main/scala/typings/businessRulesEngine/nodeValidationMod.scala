@@ -10,7 +10,7 @@ object nodeValidationMod {
   
   @JSImport("node-validation", "AbstractValidator")
   @js.native
-  class AbstractValidator[T] ()
+  open class AbstractValidator[T] ()
     extends typings.businessRulesEngine.mod.AbstractValidator[T]
   
   @JSImport("node-validation", "CompareOperator")
@@ -35,19 +35,19 @@ object nodeValidationMod {
   
   @JSImport("node-validation", "CompositeValidationResult")
   @js.native
-  class CompositeValidationResult protected ()
+  open class CompositeValidationResult protected ()
     extends typings.businessRulesEngine.mod.CompositeValidationResult {
     def this(Name: String) = this()
   }
   
   @JSImport("node-validation", "Error")
   @js.native
-  class Error ()
+  open class Error ()
     extends typings.businessRulesEngine.mod.Error
   
   @JSImport("node-validation", "MessageLocalization")
   @js.native
-  class MessageLocalization ()
+  open class MessageLocalization ()
     extends typings.businessRulesEngine.mod.MessageLocalization
   /* static members */
   object MessageLocalization {
@@ -56,7 +56,7 @@ object nodeValidationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def GetValidationMessage(validator: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("node-validation", "MessageLocalization.ValidationMessages")
     @js.native
@@ -76,14 +76,14 @@ object nodeValidationMod {
   
   @JSImport("node-validation", "ValidationFailure")
   @js.native
-  class ValidationFailure protected ()
+  open class ValidationFailure protected ()
     extends typings.businessRulesEngine.mod.ValidationFailure {
     def this(Error: IError, IsAsync: Boolean) = this()
   }
   
   @JSImport("node-validation", "ValidationResult")
   @js.native
-  class ValidationResult protected ()
+  open class ValidationResult protected ()
     extends typings.businessRulesEngine.mod.ValidationResult {
     def this(Name: String) = this()
   }

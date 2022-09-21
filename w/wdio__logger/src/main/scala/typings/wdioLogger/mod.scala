@@ -43,8 +43,8 @@ object mod {
     
     @JSImport("@wdio/logger", "default.waitForBuffer")
     @js.native
-    def waitForBuffer: js.Function0[js.Promise[js.Any]] = js.native
-    inline def waitForBuffer_=(x: js.Function0[js.Promise[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForBuffer")(x.asInstanceOf[js.Any])
+    def waitForBuffer: js.Function0[js.Promise[Unit]] = js.native
+    inline def waitForBuffer_=(x: js.Function0[js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForBuffer")(x.asInstanceOf[js.Any])
   }
   
   type Logger = typings.loglevel.mod.Logger

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTableRow extends StObject {
   
   /**
-    * Represents a single row in the result set, consisting of one or more
-    * fields.
+    * Represents a single row in the result set, consisting of one or more fields.
     */
   var f: js.UndefOr[js.Array[SchemaTableCell]] = js.undefined
 }
@@ -25,6 +24,6 @@ object SchemaTableRow {
     
     inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
-    inline def setFVarargs(value: SchemaTableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
+    inline def setFVarargs(value: SchemaTableCell*): Self = StObject.set(x, "f", js.Array(value*))
   }
 }

@@ -1,7 +1,9 @@
 package typings.rcUpload
 
-import typings.std.ArrayBuffer
+import typings.rcUpload.interfaceMod.BeforeUploadFileType
+import typings.rcUpload.interfaceMod.RcFile
 import typings.std.Blob
+import typings.std.Exclude
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,18 +28,44 @@ object anon {
     }
   }
   
+  trait File extends StObject {
+    
+    var file: RcFile
+    
+    var parsedFile: Exclude[BeforeUploadFileType, Boolean]
+  }
+  object File {
+    
+    inline def apply(file: RcFile, parsedFile: Exclude[BeforeUploadFileType, Boolean]): File = {
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], parsedFile = parsedFile.asInstanceOf[js.Any])
+      __obj.asInstanceOf[File]
+    }
+    
+    extension [Self <: File](x: Self) {
+      
+      inline def setFile(value: RcFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setParsedFile(value: Exclude[BeforeUploadFileType, Boolean]): Self = StObject.set(x, "parsedFile", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined rc-upload.rc-upload/es/interface.RcFile & {  webkitRelativePath :string | undefined} */
   @js.native
   trait RcFilewebkitRelativePaths extends StObject {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    /* standard dom */
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
+    /* standard dom */
     val lastModified: Double = js.native
     
+    /* standard dom */
     val name: String = js.native
     
+    /* standard dom */
     val size: Double = js.native
     
+    /* standard dom */
     def slice(): Blob = js.native
     def slice(start: Double): Blob = js.native
     def slice(start: Double, end: Double): Blob = js.native
@@ -47,15 +75,19 @@ object anon {
     def slice(start: Unit, end: Double, contentType: String): Blob = js.native
     def slice(start: Unit, end: Unit, contentType: String): Blob = js.native
     
-    def stream(): ReadableStream[js.Any] = js.native
+    /* standard dom */
+    def stream(): ReadableStream[js.typedarray.Uint8Array] = js.native
     
+    /* standard dom */
     def text(): js.Promise[String] = js.native
     
+    /* standard dom */
     val `type`: String = js.native
     
     var uid: String = js.native
     
-    var webkitRelativePath: js.UndefOr[String] = js.native
+    /* standard dom */
+    val webkitRelativePath: String & js.UndefOr[String] = js.native
   }
   
   trait Uid extends StObject {

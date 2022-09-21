@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.DomMarker")
 @js.native
-class DomMarker protected ()
+open class DomMarker protected ()
   extends StObject
      with typings.heremaps.H.map.AbstractMarker {
   /**

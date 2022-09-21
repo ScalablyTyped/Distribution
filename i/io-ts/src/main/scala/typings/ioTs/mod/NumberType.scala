@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "NumberType")
 @js.native
-class NumberType ()
-  extends Type_[Double, Double, js.Any] {
+open class NumberType () extends Type_[Double, Double, Any] {
   
   /**
     * @since 1.0.0

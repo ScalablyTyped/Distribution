@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single series of data for a waterfall chart.
-  */
 trait SchemaWaterfallChartSeries extends StObject {
   
   /**
-    * Custom subtotal columns appearing in this series. The order in which
-    * subtotals are defined is not significant. Only one subtotal may be
-    * defined for each data point.
+    * Custom subtotal columns appearing in this series. The order in which subtotals are defined is not significant. Only one subtotal may be defined for each data point.
     */
   var customSubtotals: js.UndefOr[js.Array[SchemaWaterfallChartCustomSubtotal]] = js.undefined
   
@@ -22,11 +17,14 @@ trait SchemaWaterfallChartSeries extends StObject {
   var data: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
-    * True to hide the subtotal column from the end of the series. By default,
-    * a subtotal column will appear at the end of each series. Setting this
-    * field to true will hide that subtotal column for this series.
+    * Information about the data labels for this series.
     */
-  var hideTrailingSubtotal: js.UndefOr[Boolean] = js.undefined
+  var dataLabel: js.UndefOr[SchemaDataLabel] = js.undefined
+  
+  /**
+    * True to hide the subtotal column from the end of the series. By default, a subtotal column will appear at the end of each series. Setting this field to true will hide that subtotal column for this series.
+    */
+  var hideTrailingSubtotal: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Styles for all columns in this series with negative values.
@@ -56,13 +54,19 @@ object SchemaWaterfallChartSeries {
     
     inline def setCustomSubtotalsUndefined: Self = StObject.set(x, "customSubtotals", js.undefined)
     
-    inline def setCustomSubtotalsVarargs(value: SchemaWaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value :_*))
+    inline def setCustomSubtotalsVarargs(value: SchemaWaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value*))
     
     inline def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabel(value: SchemaDataLabel): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setHideTrailingSubtotal(value: Boolean): Self = StObject.set(x, "hideTrailingSubtotal", value.asInstanceOf[js.Any])
+    
+    inline def setHideTrailingSubtotalNull: Self = StObject.set(x, "hideTrailingSubtotal", null)
     
     inline def setHideTrailingSubtotalUndefined: Self = StObject.set(x, "hideTrailingSubtotal", js.undefined)
     

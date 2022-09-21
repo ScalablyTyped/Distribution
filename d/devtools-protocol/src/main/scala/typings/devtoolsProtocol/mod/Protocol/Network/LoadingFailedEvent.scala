@@ -17,6 +17,11 @@ trait LoadingFailedEvent extends StObject {
   var canceled: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The reason why loading was blocked by CORS, if any.
+    */
+  var corsErrorStatus: js.UndefOr[CorsErrorStatus] = js.undefined
+  
+  /**
     * User friendly error message.
     */
   var errorText: String
@@ -53,6 +58,10 @@ object LoadingFailedEvent {
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     inline def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
+    
+    inline def setCorsErrorStatus(value: CorsErrorStatus): Self = StObject.set(x, "corsErrorStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCorsErrorStatusUndefined: Self = StObject.set(x, "corsErrorStatus", js.undefined)
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a specific text conditional format.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait TextConditionalFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait TextConditionalFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.undefined
   
   /**
-    *
     * The rule of the conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[Boolean] = js.undefined

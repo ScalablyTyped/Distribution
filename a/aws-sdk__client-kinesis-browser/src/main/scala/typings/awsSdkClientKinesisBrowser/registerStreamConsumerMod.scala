@@ -8,5 +8,5 @@ object registerStreamConsumerMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/RegisterStreamConsumer", "RegisterStreamConsumer")
   @js.native
-  val RegisterStreamConsumer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RegisterStreamConsumer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object infoMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/Report/Info", "Info")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/Info", "Info")
   @js.native
   val Info: FunctionComponent[InfoProps] = js.native
   

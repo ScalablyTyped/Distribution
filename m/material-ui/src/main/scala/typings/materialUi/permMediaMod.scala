@@ -10,10 +10,10 @@ object permMediaMod {
   
   @JSImport("material-ui/svg-icons/action/perm-media", JSImport.Default)
   @js.native
-  class default () extends ActionPermMedia
+  open class default () extends ActionPermMedia
   
   @JSImport("material-ui/svg-icons/action/perm-media", "ActionPermMedia")
   @js.native
-  class ActionPermMedia ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermMedia ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

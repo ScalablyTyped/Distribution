@@ -54,5 +54,5 @@ object preSignupMod {
   
   type PreSignUpTriggerEvent = PreSignUpEmailTriggerEvent | PreSignUpExternalProviderTriggerEvent | PreSignUpAdminCreateUserTriggerEvent
   
-  type PreSignUpTriggerHandler = Handler[PreSignUpTriggerEvent, js.Any]
+  type PreSignUpTriggerHandler = Handler[PreSignUpTriggerEvent, Any]
 }

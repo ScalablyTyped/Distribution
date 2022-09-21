@@ -11,7 +11,7 @@ object anaglyphFreeCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphFreeCamera", "AnaglyphFreeCamera")
   @js.native
-  class AnaglyphFreeCamera protected () extends FreeCamera {
+  open class AnaglyphFreeCamera protected () extends FreeCamera {
     /**
       * Creates a new AnaglyphFreeCamera
       * @param name defines camera name
@@ -19,6 +19,9 @@ object anaglyphFreeCameraMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

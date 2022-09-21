@@ -31,6 +31,13 @@ trait Flow extends StObject {
     */
   var FlowArn: string
   
+  var Maintenance: js.UndefOr[typings.awsSdk.mediaconnectMod.Maintenance] = js.undefined
+  
+  /**
+    * The media streams that are associated with the flow. After you associate a media stream with a source, you can also associate it with outputs on the flow.
+    */
+  var MediaStreams: js.UndefOr[listOfMediaStream] = js.undefined
+  
   /**
     * The name of the flow.
     */
@@ -86,15 +93,25 @@ object Flow {
     
     inline def setEntitlements(value: listOfEntitlement): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     
-    inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value*))
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenance(value: Maintenance): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
+    
+    inline def setMediaStreams(value: listOfMediaStream): Self = StObject.set(x, "MediaStreams", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamsUndefined: Self = StObject.set(x, "MediaStreams", js.undefined)
+    
+    inline def setMediaStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "MediaStreams", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: listOfOutput): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
@@ -106,7 +123,7 @@ object Flow {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "Sources", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -114,6 +131,6 @@ object Flow {
     
     inline def setVpcInterfacesUndefined: Self = StObject.set(x, "VpcInterfaces", js.undefined)
     
-    inline def setVpcInterfacesVarargs(value: VpcInterface*): Self = StObject.set(x, "VpcInterfaces", js.Array(value :_*))
+    inline def setVpcInterfacesVarargs(value: VpcInterface*): Self = StObject.set(x, "VpcInterfaces", js.Array(value*))
   }
 }

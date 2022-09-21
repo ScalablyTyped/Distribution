@@ -8,18 +8,18 @@ object anon {
   
   trait TypeofScenarioLevelPlugin extends StObject {
     
-    def init(options: js.Any): Unit
+    def init(options: Any): Unit
   }
   object TypeofScenarioLevelPlugin {
     
-    inline def apply(init: js.Any => Unit): TypeofScenarioLevelPlugin = {
+    inline def apply(init: Any => Unit): TypeofScenarioLevelPlugin = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[TypeofScenarioLevelPlugin]
     }
     
     extension [Self <: TypeofScenarioLevelPlugin](x: Self) {
       
-      inline def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
   
@@ -27,6 +27,6 @@ object anon {
   trait TypeofStepLevelPlugin extends StObject {
     
     def init(): Unit = js.native
-    def init(options: js.Any): Unit = js.native
+    def init(options: Any): Unit = js.native
   }
 }

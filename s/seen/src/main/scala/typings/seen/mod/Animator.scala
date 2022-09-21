@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Animator")
 @js.native
-class Animator () extends StObject {
+open class Animator () extends StObject {
   
   def animateFrame(): this.type = js.native
   

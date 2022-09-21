@@ -2,7 +2,6 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +55,7 @@ object serializationMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/serialization", "SerializationMap")
   @js.native
-  /* private */ class SerializationMap () extends StObject {
+  /* private */ open class SerializationMap () extends StObject {
     
     var classNameMap: StringDictionary[js.Tuple2[SerializableConstructor[Serializable], FromConfigMethod[Serializable]]] = js.native
   }
@@ -74,8 +73,8 @@ object serializationMod {
     
     @JSImport("@tensorflow/tfjs-core/dist/serialization", "SerializationMap.instance")
     @js.native
-    def instance: js.Any = js.native
-    inline def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    def instance: Any = js.native
+    inline def instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
     
     /**
       * Registers the class as serializable.
@@ -88,7 +87,6 @@ object serializationMod {
   trait ConfigDict
     extends StObject
        with /* key */ StringDictionary[ConfigDictValue]
-       with _ConfigDictValue
   object ConfigDict {
     
     inline def apply(): ConfigDict = {
@@ -97,28 +95,16 @@ object serializationMod {
     }
   }
   
-  @js.native
-  trait ConfigDictArray
-    extends StObject
-       with Array[ConfigDictValue]
-       with _ConfigDictValue
+  type ConfigDictArray = js.Array[ConfigDictValue]
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Boolean
-    - scala.Double
-    - java.lang.String
-    - scala.Null
-    - typings.tensorflowTfjsCore.serializationMod.ConfigDictArray
-    - typings.tensorflowTfjsCore.serializationMod.ConfigDict
-  */
-  type ConfigDictValue = _ConfigDictValue | Boolean | Double | String | Null
+  type ConfigDictValue = Boolean | Double | String | Null | Any | ConfigDict
   
   type FromConfigMethod[T /* <: Serializable */] = js.Function2[/* cls */ SerializableConstructor[T], /* config */ ConfigDict, T]
   
   @js.native
   trait SerializableConstructor[T /* <: Serializable */]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T] {
+       with Instantiable1[/* args (repeated) */ Any, T] {
     
     var className: String = js.native
     
@@ -126,6 +112,4 @@ object serializationMod {
     @JSName("fromConfig")
     var fromConfig_Original: FromConfigMethod[T] = js.native
   }
-  
-  trait _ConfigDictValue extends StObject
 }

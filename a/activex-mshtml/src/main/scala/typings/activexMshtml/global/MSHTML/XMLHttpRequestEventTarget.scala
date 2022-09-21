@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.XMLHttpRequestEventTarget")
 @js.native
-/* private */ class XMLHttpRequestEventTarget ()
+/* private */ open class XMLHttpRequestEventTarget ()
   extends StObject
      with typings.activexMshtml.MSHTML.XMLHttpRequestEventTarget {
   
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotXMLHttpRequestEventTarget_typekey: typings.activexMshtml.MSHTML.XMLHttpRequestEventTarget = js.native
   
   /* CompleteClass */
-  override def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
   
   /* CompleteClass */
   override def dispatchEvent(evt: typings.activexMshtml.MSHTML.IDOMEvent): Boolean = js.native
   
   /* CompleteClass */
-  override def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def removeEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
 }

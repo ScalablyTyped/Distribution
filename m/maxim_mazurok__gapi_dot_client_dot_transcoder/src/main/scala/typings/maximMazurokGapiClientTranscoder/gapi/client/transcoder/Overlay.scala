@@ -25,7 +25,7 @@ object Overlay {
     
     inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value*))
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

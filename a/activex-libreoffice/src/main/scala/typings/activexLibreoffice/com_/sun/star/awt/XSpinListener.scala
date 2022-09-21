@@ -32,7 +32,7 @@ object XSpinListener {
     down: SpinEvent => Unit,
     first: SpinEvent => Unit,
     last: SpinEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     up: SpinEvent => Unit
   ): XSpinListener = {

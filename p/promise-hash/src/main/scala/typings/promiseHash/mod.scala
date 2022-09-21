@@ -15,8 +15,8 @@ object mod extends Shortcut {
   type PromiseHash = js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]}
-    */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[js.Any], 
-    js.Promise[js.Any]
+    */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[Any], 
+    js.Promise[Any]
   ]
   
   type _To = PromiseHash
@@ -31,7 +31,7 @@ object mod extends Shortcut {
       def hash[T](
         promiseHash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof T ]: std.PromiseLike<T[P]> | T[P]}
-        */ typings.promiseHash.promiseHashStrings.PromiseConstructor & TopLevel[js.Any]
+        */ typings.promiseHash.promiseHashStrings.PromiseConstructor & TopLevel[Any]
       ): js.Promise[T]
       @JSName("hash")
       var hash_Original: PromiseHash
@@ -41,7 +41,7 @@ object mod extends Shortcut {
       inline def apply(
         hash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]}
-        */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[js.Any] => js.Promise[js.Any]
+        */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[Any] => js.Promise[Any]
       ): PromiseConstructor = {
         val __obj = js.Dynamic.literal(hash = js.Any.fromFunction1(hash))
         __obj.asInstanceOf[PromiseConstructor]
@@ -52,7 +52,7 @@ object mod extends Shortcut {
         inline def setHash(
           value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]}
-          */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[js.Any] => js.Promise[js.Any]
+          */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[Any] => js.Promise[Any]
         ): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       }
     }

@@ -17,10 +17,10 @@ trait Versions extends StObject {
   
   def Item(Index: Double): Version = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Save(): Unit = js.native
-  def Save(Comment: js.Any): Unit = js.native
+  def Save(Comment: Any): Unit = js.native
   
   /* private */ @JSName("Word.Versions_typekey")
   var WordDotVersions_typekey: Versions = js.native

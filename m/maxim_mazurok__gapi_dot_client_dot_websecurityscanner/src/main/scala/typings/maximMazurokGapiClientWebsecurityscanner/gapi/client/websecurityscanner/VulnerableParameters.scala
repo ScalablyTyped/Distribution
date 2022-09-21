@@ -22,6 +22,6 @@ object VulnerableParameters {
     
     inline def setParameterNamesUndefined: Self = StObject.set(x, "parameterNames", js.undefined)
     
-    inline def setParameterNamesVarargs(value: String*): Self = StObject.set(x, "parameterNames", js.Array(value :_*))
+    inline def setParameterNamesVarargs(value: String*): Self = StObject.set(x, "parameterNames", js.Array(value*))
   }
 }

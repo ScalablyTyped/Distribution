@@ -8,5 +8,5 @@ object getImportJobsOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetImportJobsOutput", "GetImportJobsOutput")
   @js.native
-  val GetImportJobsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetImportJobsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

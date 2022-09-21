@@ -17,5 +17,5 @@ trait Callout3DConstructor
 Instantiable0[Callout3D]
      with Instantiable1[/* properties */ Callout3DProperties, Callout3D] {
   
-  def fromJSON(json: js.Any): Callout3D = js.native
+  def fromJSON(json: Any): Callout3D = js.native
 }

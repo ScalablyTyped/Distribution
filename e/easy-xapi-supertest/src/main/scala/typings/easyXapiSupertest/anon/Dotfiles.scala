@@ -58,7 +58,7 @@ trait Dotfiles extends StObject {
     * path the file path that is being sent
     * stat the stat object of the file that is being sent
     */
-  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, js.Any]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ Any, Any]] = js.undefined
 }
 object Dotfiles {
   
@@ -81,7 +81,7 @@ object Dotfiles {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object Dotfiles {
     
     inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ Any) => Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
     
     inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
   }

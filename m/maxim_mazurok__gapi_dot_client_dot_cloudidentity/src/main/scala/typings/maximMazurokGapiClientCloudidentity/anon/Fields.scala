@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
-import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest
+import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.SendUserInvitationRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,10 +26,7 @@ trait Fields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device_id}/deviceUsers/{device_user_id}`, where device_id is
-    * the unique ID assigned to the Device, and device_user_id is the unique ID assigned to the User.
-    */
+  /** Required. `UserInvitation` name in the format `customers/{customer}/userinvitations/{user_email_address}` */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -42,7 +39,7 @@ trait Fields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest
+  var resource: SendUserInvitationRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest): Fields = {
+  inline def apply(name: String, resource: SendUserInvitationRequest): Fields = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
@@ -97,7 +94,7 @@ object Fields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SendUserInvitationRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -16,32 +16,32 @@ object freeCameraDeviceOrientationInputMod {
     * Instantiates a new input
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FreeCameraDeviceOrientationInput ()
+  open class FreeCameraDeviceOrientationInput ()
     extends StObject
        with ICameraInput[FreeCamera] {
     
-    /* private */ var _alpha: js.Any = js.native
+    /* private */ var _alpha: Any = js.native
     
-    /* private */ var _beta: js.Any = js.native
+    /* private */ var _beta: Any = js.native
     
-    /* private */ var _camera: js.Any = js.native
+    /* private */ var _camera: Any = js.native
     
-    /* private */ var _constantTranform: js.Any = js.native
+    /* private */ var _constantTranform: Any = js.native
     
-    /* private */ var _deviceOrientation: js.Any = js.native
+    /* private */ var _deviceOrientation: Any = js.native
     
-    /* private */ var _gamma: js.Any = js.native
+    /* private */ var _gamma: Any = js.native
     
     /**
       * @hidden
       */
     var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
     
-    /* private */ var _orientationChanged: js.Any = js.native
+    /* private */ var _orientationChanged: Any = js.native
     
-    /* private */ var _screenOrientationAngle: js.Any = js.native
+    /* private */ var _screenOrientationAngle: Any = js.native
     
-    /* private */ var _screenQuaternion: js.Any = js.native
+    /* private */ var _screenQuaternion: Any = js.native
     
     /**
       * Define the camera controlled by the input.
@@ -68,8 +68,8 @@ object freeCameraDeviceOrientationInputMod {
       * @param timeout amount of time in milliseconds to wait for a response from the sensor (default: infinite)
       * @returns a promise that will resolve on orientation change
       */
-    inline def WaitForOrientationChangeAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")().asInstanceOf[js.Promise[js.Any]]
-    inline def WaitForOrientationChangeAsync(timeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def WaitForOrientationChangeAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")().asInstanceOf[js.Promise[Unit]]
+    inline def WaitForOrientationChangeAsync(timeout: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   /* augmented module */

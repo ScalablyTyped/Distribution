@@ -9,23 +9,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object targetMod {
   
-  @JSImport("inversify/dts/planning/target", "Target")
+  @JSImport("inversify/lib/planning/target", "Target")
   @js.native
-  class Target protected ()
+  open class Target protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Target {
-    def this(`type`: TargetType, name: String, serviceIdentifier: ServiceIdentifier[js.Any]) = this()
+    def this(`type`: TargetType, identifier: String, serviceIdentifier: ServiceIdentifier[Any]) = this()
+    def this(`type`: TargetType, identifier: js.Symbol, serviceIdentifier: ServiceIdentifier[Any]) = this()
     def this(
       `type`: TargetType,
-      name: String,
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      identifier: String,
+      serviceIdentifier: ServiceIdentifier[Any],
       namedOrTagged: String
     ) = this()
     def this(
       `type`: TargetType,
-      name: String,
-      serviceIdentifier: ServiceIdentifier[js.Any],
+      identifier: String,
+      serviceIdentifier: ServiceIdentifier[Any],
       namedOrTagged: Metadata
     ) = this()
+    def this(
+      `type`: TargetType,
+      identifier: js.Symbol,
+      serviceIdentifier: ServiceIdentifier[Any],
+      namedOrTagged: String
+    ) = this()
+    def this(
+      `type`: TargetType,
+      identifier: js.Symbol,
+      serviceIdentifier: ServiceIdentifier[Any],
+      namedOrTagged: Metadata
+    ) = this()
+    
+    var key: String | js.Symbol = js.native
   }
 }

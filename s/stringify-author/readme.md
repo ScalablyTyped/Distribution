@@ -11,9 +11,9 @@ Stringify an authors object to `name <email> (url)`.
 | Full name          | stringify-author |
 | Keywords           | author, authors, name, package, parse, person, pkg, stringify, toString, url |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 1228966 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 108385.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/stringify-author)

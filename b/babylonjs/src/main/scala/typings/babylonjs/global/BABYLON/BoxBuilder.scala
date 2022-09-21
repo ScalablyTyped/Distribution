@@ -1,38 +1,35 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.babylonjs.anon.TopBaseAt
+import typings.babylonjs.anon.BackUVsBottomBaseAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.BoxBuilder")
-@js.native
-class BoxBuilder ()
-  extends StObject
-     with typings.babylonjs.BABYLON.BoxBuilder
-/* static members */
 object BoxBuilder {
   
   @JSGlobal("BABYLON.BoxBuilder")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Creates a box mesh
-    * * The parameter `size` sets the size (float) of each box side (default 1)
-    * * You can set some different box dimensions by using the parameters `width`, `height` and `depth` (all by default have the same value of `size`)
-    * * You can set different colors and different images to each box side by using the parameters `faceColors` (an array of 6 Color3 elements) and `faceUV` (an array of 6 Vector4 elements)
-    * * Please read this tutorial : https://doc.babylonjs.com/how_to/createbox_per_face_textures_and_colors
-    * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-    * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-    * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created
-    * @see https://doc.babylonjs.com/how_to/set_shapes#box
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the box mesh
-    */
-  inline def CreateBox(name: String, options: TopBaseAt): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
-  inline def CreateBox(name: String, options: TopBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  @JSGlobal("BABYLON.BoxBuilder.CreateBox")
+  @js.native
+  def CreateBox: js.Function3[
+    /* name */ String, 
+    /* options */ js.UndefOr[BackUVsBottomBaseAt], 
+    /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
+    typings.babylonjs.BABYLON.Mesh
+  ] = js.native
+  inline def CreateBox(name: String): typings.babylonjs.BABYLON.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox(name: String, options: Unit, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox(name: String, options: BackUVsBottomBaseAt): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox(name: String, options: BackUVsBottomBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ js.UndefOr[BackUVsBottomBaseAt], 
+      /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
+      typings.babylonjs.BABYLON.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateBox")(x.asInstanceOf[js.Any])
 }

@@ -25,13 +25,13 @@ object SearchResult {
     
     inline def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
     
-    inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+    inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value*))
     
     inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     inline def setKeywordList(value: js.Array[String]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
     
-    inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+    inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value*))
     
     inline def setPoiList(value: PoiList): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
   }

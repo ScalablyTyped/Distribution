@@ -25,7 +25,7 @@ object EditRow {
     
     inline def setCells(value: js.Array[DbCellValue]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: DbCellValue*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: DbCellValue*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,7 @@ object ZookeeperNodeInfo {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setZookeeperId(value: double): Self = StObject.set(x, "ZookeeperId", value.asInstanceOf[js.Any])
     

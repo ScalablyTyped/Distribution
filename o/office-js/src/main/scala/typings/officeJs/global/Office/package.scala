@@ -1,16 +1,36 @@
 package typings.officeJs.global.Office
 
+import typings.officeJs.Office.Actions
+import typings.officeJs.Office.Addin
+import typings.officeJs.Office.AsyncResult
+import typings.officeJs.Office.Auth
+import typings.officeJs.Office.Binding
+import typings.officeJs.Office.Context
+import typings.officeJs.Office.IPromiseConstructor
+import typings.officeJs.Office.Ribbon
+import typings.officeJs.anon.Host
+import typings.officeJs.global.Office.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Promise_=(x: typings.officeJs.Office.IPromiseConstructor): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+inline def Promise_=(x: IPromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+
+/**
+  * Provides a method for associating action names with functions that carry out an action.
+  */
+inline def actions: Actions = ^.asInstanceOf[js.Dynamic].selectDynamic("actions").asInstanceOf[Actions]
 
 /**
   * Represents the add-in.
   */
-inline def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("addin").asInstanceOf[typings.officeJs.Office.Addin]
+inline def addin: Addin = ^.asInstanceOf[js.Dynamic].selectDynamic("addin").asInstanceOf[Addin]
+
+/**
+  * Represents the Auth interface.
+  */
+inline def auth: Auth = ^.asInstanceOf[js.Dynamic].selectDynamic("auth").asInstanceOf[Auth]
 
 /**
   * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
@@ -23,7 +43,7 @@ inline def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office
   * An empty cell indicates that the Office host application doesn't support this enumeration.
   * 
   * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   * 
   * *Supported hosts, by platform*
   *  <table>
@@ -35,8 +55,8 @@ inline def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office
   *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
   *  </table>
   */
-inline def context: typings.officeJs.Office.Context = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("context").asInstanceOf[typings.officeJs.Office.Context]
-inline def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+inline def context: Context = ^.asInstanceOf[js.Dynamic].selectDynamic("context").asInstanceOf[Context]
+inline def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
@@ -56,11 +76,11 @@ inline def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.o
   * 
   * **Support details**
   * 
-  * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this method.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this function.
   * 
   * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   * 
   * *Supported hosts, by platform*
   *  <table>
@@ -74,7 +94,15 @@ inline def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.o
   * 
   * @param reason Indicates how the app was initialized.
   */
-inline def initialize(reason: typings.officeJs.Office.InitializationReason): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(reason.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def initialize(reason: typings.officeJs.Office.InitializationReason): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+/**
+  * Checks if the specified requirement set is supported by the host Office application.
+  * @param name - Set name; e.g., "MatrixBindings".
+  * @param minVersion - The minimum required version; e.g., "1.4".
+  */
+inline def isSetSupported(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSetSupported")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isSetSupported(name: String, minVersion: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSetSupported")(name.asInstanceOf[js.Any], minVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 /**
   * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
@@ -82,15 +110,20 @@ inline def initialize(reason: typings.officeJs.Office.InitializationReason): sca
   * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call 
   * the callback and resolve the promise with "null" for both the host and platform.
   * 
-  * @param callback - An optional callback method, that will receive the host and platform info. 
+  * @param callback - An optional callback function, that will receive the host and platform info. 
   *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
   * @returns A Promise that contains the host and platform info, once initialization is completed.
   */
-inline def onReady(): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
-inline def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host, js.Any]): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
+inline def onReady(): js.Promise[Host] = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[js.Promise[Host]]
+inline def onReady(callback: js.Function1[/* info */ Host, Any]): js.Promise[Host] = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Host]]
 
 /**
-  * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
+  * Represents the ribbon associated with the Office application.
+  */
+inline def ribbon: Ribbon = ^.asInstanceOf[js.Dynamic].selectDynamic("ribbon").asInstanceOf[Ribbon]
+
+/**
+  * Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
   * 
   * @param expression The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
   * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -99,11 +132,11 @@ inline def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host,
   * 
   * **Support details**
   * 
-  * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this method.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this function.
   * 
   * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   * 
   * *Supported hosts, by platform*
   *  <table>
@@ -112,11 +145,8 @@ inline def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host,
   *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
   *  </table>
   */
-inline def select(expression: java.lang.String): typings.officeJs.Office.Binding = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.officeJs.Office.Binding]
-inline def select(
-  expression: java.lang.String,
-  callback: js.Function1[/* result */ typings.officeJs.Office.AsyncResult[js.Any], scala.Unit]
-): typings.officeJs.Office.Binding = (typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.officeJs.Office.Binding]
+inline def select(expression: String): Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any]).asInstanceOf[Binding]
+inline def select(expression: String, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Binding = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Binding]
 
 /**
   * Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
@@ -125,11 +155,11 @@ inline def select(
   * 
   * **Support details**
   * 
-  * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this method.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this function.
   * 
   * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   * 
   * *Supported hosts, by platform*
   *  <table>
@@ -143,4 +173,4 @@ inline def select(
   * 
   * @param useShortNamespace True to use the shortcut alias; otherwise false to disable it. The default is true.
   */
-inline def useShortNamespace(useShortNamespace: scala.Boolean): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("useShortNamespace")(useShortNamespace.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def useShortNamespace(useShortNamespace: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useShortNamespace")(useShortNamespace.asInstanceOf[js.Any]).asInstanceOf[Unit]

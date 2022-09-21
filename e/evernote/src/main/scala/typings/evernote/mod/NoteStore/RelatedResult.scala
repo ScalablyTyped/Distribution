@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.RelatedResult")
 @js.native
-class RelatedResult () extends StObject {
+open class RelatedResult () extends StObject {
   def this(args: CacheExpires) = this()
   
   var cacheExpires: js.UndefOr[Double] = js.native

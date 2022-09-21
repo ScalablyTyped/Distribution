@@ -32,7 +32,7 @@ object ChatMessageManager {
     * @return An asynchronous operation that returns a list of transports on successful completion.
     */
   /* static member */
-  inline def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   
   /**
     * Asynchronously registers the app as a ChatMessageTransport in order to post messages to the ChatMessageStore .

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object kaleidoscopeMod {
   
-  @JSImport("konva/types/filters/Kaleidoscope", "Kaleidoscope")
+  @JSImport("konva/lib/filters/Kaleidoscope", "Kaleidoscope")
   @js.native
   val Kaleidoscope: Filter = js.native
 }

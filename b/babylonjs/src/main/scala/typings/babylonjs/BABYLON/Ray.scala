@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Ray extends StObject {
   
-  /* private */ var _comparePickingInfo: js.Any = js.native
+  /* private */ var _comparePickingInfo: Any = js.native
   
-  /* private */ var _tmpRay: js.Any = js.native
+  /* private */ var _tmpRay: Any = js.native
   
   /** direction */
   var direction: Vector3 = js.native
   
   /**
-    * Intersection test between the ray and a given segment whithin a given tolerance (threshold)
+    * Intersection test between the ray and a given segment within a given tolerance (threshold)
     * @param sega the first point of the segment to test the intersection against
     * @param segb the second point of the segment to test the intersection against
     * @param threshold the tolerance margin, if the ray doesn't intersect the segment but is close to the given threshold, the intersection is successful
-    * @return the distance from the ray origin to the intersection point if there's intersection, or -1 if there's no intersection
+    * @returns the distance from the ray origin to the intersection point if there's intersection, or -1 if there's no intersection
     */
   def intersectionSegment(sega: DeepImmutable[Vector3], segb: DeepImmutable[Vector3], threshold: Double): Double = js.native
   
@@ -44,7 +44,7 @@ trait Ray extends StObject {
   
   /**
     * Checks if the ray intersects a box
-    * This does not account for the ray lenght by design to improve perfs.
+    * This does not account for the ray length by design to improve perfs.
     * @param minimum bound of the box
     * @param maximum bound of the box
     * @param intersectionTreshold extra extend to be added to the box in all direction
@@ -57,7 +57,7 @@ trait Ray extends StObject {
     * Checks if ray intersects a mesh
     * @param mesh the mesh to check
     * @param fastCheck defines if the first intersection will be used (and not the closest)
-    * @returns picking info of the intersecton
+    * @returns picking info of the intersection
     */
   def intersectsMesh(mesh: DeepImmutable[AbstractMesh]): PickingInfo = js.native
   def intersectsMesh(mesh: DeepImmutable[AbstractMesh], fastCheck: Boolean): PickingInfo = js.native
@@ -134,6 +134,7 @@ trait Ray extends StObject {
     * @param world world matrix
     * @param view view matrix
     * @param projection projection matrix
+    * @param enableDistantPicking defines if picking should handle large values for mesh position/scaling (false by default)
     * @returns this ray updated
     */
   def update(
@@ -144,5 +145,15 @@ trait Ray extends StObject {
     world: DeepImmutable[Matrix],
     view: DeepImmutable[Matrix],
     projection: DeepImmutable[Matrix]
+  ): Ray = js.native
+  def update(
+    x: Double,
+    y: Double,
+    viewportWidth: Double,
+    viewportHeight: Double,
+    world: DeepImmutable[Matrix],
+    view: DeepImmutable[Matrix],
+    projection: DeepImmutable[Matrix],
+    enableDistantPicking: Boolean
   ): Ray = js.native
 }

@@ -16,7 +16,7 @@ object dedicatedWorkerClientDriverMod {
   /**
     * Default Constructor.
     */
-  class DedicatedWorkerClientDriver () extends DedicatedWorkerCommunicator {
+  open class DedicatedWorkerClientDriver () extends DedicatedWorkerCommunicator {
     
     /**
       * @inheritdoc

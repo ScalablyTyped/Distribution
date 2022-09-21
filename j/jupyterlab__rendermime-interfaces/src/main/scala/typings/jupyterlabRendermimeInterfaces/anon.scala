@@ -18,9 +18,7 @@ object anon {
       */
     val name: String
     
-    var render: js.UndefOr[
-        js.Function2[/* container */ HTMLElement, /* options */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var render: js.UndefOr[js.Function2[/* container */ HTMLElement, /* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * A string containing the raw contents of an svg file.
@@ -40,7 +38,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setRender(value: (/* container */ HTMLElement, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* container */ HTMLElement, /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       

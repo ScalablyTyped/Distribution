@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSeriesPoint")
 @js.native
-class ASPxClientSeriesPoint ()
+open class ASPxClientSeriesPoint ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSeriesPoint {
   
@@ -17,7 +17,7 @@ class ASPxClientSeriesPoint ()
     * Gets the data point's argument.
     */
   /* CompleteClass */
-  var argument: js.Any = js.native
+  var argument: Any = js.native
   
   /**
     * Gets the chart that owns the current chart element.
@@ -59,5 +59,5 @@ class ASPxClientSeriesPoint ()
     * Gets the point's data value(s).
     */
   /* CompleteClass */
-  var values: js.Array[js.Any] = js.native
+  var values: js.Array[Any] = js.native
 }

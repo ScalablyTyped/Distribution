@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("spotify-web-api-node", JSImport.Namespace)
 @js.native
-class ^ ()
+open class ^ ()
   extends StObject
      with SpotifyWebApi {
   def this(credentials: Credentials) = this()

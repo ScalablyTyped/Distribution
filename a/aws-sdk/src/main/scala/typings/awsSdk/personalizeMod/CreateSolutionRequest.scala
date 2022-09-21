@@ -12,7 +12,7 @@ trait CreateSolutionRequest extends StObject {
   var datasetGroupArn: Arn
   
   /**
-    * When your have multiple event types (using an EVENT_TYPE schema field), this parameter specifies which event type (for example, 'click' or 'like') is used for training the model.
+    * When your have multiple event types (using an EVENT_TYPE schema field), this parameter specifies which event type (for example, 'click' or 'like') is used for training the model. If you do not provide an eventType, Amazon Personalize will use all interactions for training with equal weight regardless of type.
     */
   var eventType: js.UndefOr[EventType] = js.undefined
   
@@ -37,9 +37,14 @@ trait CreateSolutionRequest extends StObject {
   var recipeArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The configuration to use with the solution. When performAutoML is set to true, Amazon Personalize only evaluates the autoMLConfig section of the solution configuration.
+    * The configuration to use with the solution. When performAutoML is set to true, Amazon Personalize only evaluates the autoMLConfig section of the solution configuration.  Amazon Personalize doesn't support configuring the hpoObjective at this time. 
     */
   var solutionConfig: js.UndefOr[SolutionConfig] = js.undefined
+  
+  /**
+    * A list of tags to apply to the solution.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateSolutionRequest {
   
@@ -73,5 +78,11 @@ object CreateSolutionRequest {
     inline def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
     
     inline def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DatafeedstatusesListResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#datafeedstatusesListResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#datafeedstatusesListResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of datafeed statuses. */
@@ -35,6 +35,6 @@ object DatafeedstatusesListResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: DatafeedStatus*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: DatafeedStatus*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

@@ -25,7 +25,7 @@ object mod {
     * @param [patch='0'] Patch version of the browser
     * @param [source] The actual user agent string
     */
-  class Agent () extends StObject {
+  open class Agent () extends StObject {
     def this(family: String) = this()
     def this(family: String, major: String) = this()
     def this(family: Unit, major: String) = this()
@@ -97,7 +97,7 @@ object mod {
     * @param [minor='0'] Minor version of the device
     * @param [patch='0'] Patch version of the device
     */
-  class Device () extends StObject {
+  open class Device () extends StObject {
     def this(family: String) = this()
     def this(family: String, major: String) = this()
     def this(family: Unit, major: String) = this()
@@ -142,7 +142,7 @@ object mod {
     * @param [minor='0'] Minor version of the os
     * @param [patch='0'] Patch version of the os
     */
-  class OperatingSystem () extends StObject {
+  open class OperatingSystem () extends StObject {
     def this(family: String) = this()
     def this(family: String, major: String) = this()
     def this(family: Unit, major: String) = this()

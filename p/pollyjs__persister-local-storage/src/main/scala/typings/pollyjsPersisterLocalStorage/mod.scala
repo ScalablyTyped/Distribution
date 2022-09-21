@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@pollyjs/persister-local-storage", JSImport.Namespace)
   @js.native
-  class ^ () extends default
+  open class ^ () extends default
   
   type LocalStoragePersister = default
 }

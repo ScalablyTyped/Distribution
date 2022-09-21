@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateDeliveryStreamInput extends StObject {
   
+  var AmazonopensearchserviceDestinationConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.AmazonopensearchserviceDestinationConfiguration] = js.undefined
+  
   /**
     * Used to specify the type and Amazon Resource Name (ARN) of the KMS key needed for Server-Side Encryption (SSE).
     */
@@ -70,6 +72,10 @@ object CreateDeliveryStreamInput {
   
   extension [Self <: CreateDeliveryStreamInput](x: Self) {
     
+    inline def setAmazonopensearchserviceDestinationConfiguration(value: AmazonopensearchserviceDestinationConfiguration): Self = StObject.set(x, "AmazonopensearchserviceDestinationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonopensearchserviceDestinationConfigurationUndefined: Self = StObject.set(x, "AmazonopensearchserviceDestinationConfiguration", js.undefined)
+    
     inline def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
     
     inline def setDeliveryStreamEncryptionConfigurationInputUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", js.undefined)
@@ -112,6 +118,6 @@ object CreateDeliveryStreamInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

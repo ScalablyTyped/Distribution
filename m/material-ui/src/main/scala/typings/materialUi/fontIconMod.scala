@@ -10,10 +10,10 @@ object fontIconMod {
   
   @JSImport("material-ui/FontIcon", JSImport.Default)
   @js.native
-  class default () extends FontIcon
+  open class default () extends FontIcon
   
   @JSImport("material-ui/FontIcon", "FontIcon")
   @js.native
-  class FontIcon ()
-    extends Component[FontIconProps, js.Object, js.Any]
+  open class FontIcon ()
+    extends Component[FontIconProps, js.Object, Any]
 }

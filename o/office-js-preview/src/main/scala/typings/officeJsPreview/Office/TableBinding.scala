@@ -21,19 +21,16 @@ trait TableBinding
   extends StObject
      with Binding {
   
-  def addColumnsAsync(tableData: js.Array[js.Array[js.Any]]): Unit = js.native
+  def addColumnsAsync(tableData: js.Array[js.Array[Any]]): Unit = js.native
+  def addColumnsAsync(tableData: js.Array[js.Array[Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addColumnsAsync(
-    tableData: js.Array[js.Array[js.Any]],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addColumnsAsync(
-    tableData: js.Array[js.Array[js.Any]],
+    tableData: js.Array[js.Array[Any]],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addColumnsAsync(tableData: js.Array[js.Array[js.Any]], options: AsyncContextOptions): Unit = js.native
+  def addColumnsAsync(tableData: js.Array[js.Array[Any]], options: AsyncContextOptions): Unit = js.native
   def addColumnsAsync(
-    tableData: js.Array[js.Array[js.Any]],
+    tableData: js.Array[js.Array[Any]],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -73,16 +70,16 @@ trait TableBinding
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   
-  def addRowsAsync(rows: js.Array[js.Array[js.Any]]): Unit = js.native
-  def addRowsAsync(rows: js.Array[js.Array[js.Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[Any]]): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addRowsAsync(
-    rows: js.Array[js.Array[js.Any]],
+    rows: js.Array[js.Array[Any]],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addRowsAsync(rows: js.Array[js.Array[js.Any]], options: AsyncContextOptions): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[Any]], options: AsyncContextOptions): Unit = js.native
   def addRowsAsync(
-    rows: js.Array[js.Array[js.Any]],
+    rows: js.Array[js.Array[Any]],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -124,7 +121,7 @@ trait TableBinding
     *
     * @remarks
     *
-    * See {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
+    * See {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -210,60 +207,60 @@ trait TableBinding
     *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
     */
   def getFormatsAsync(): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: js.Array[js.Any]): Unit = js.native
+  def getFormatsAsync(cellReference: Any): Unit = js.native
+  def getFormatsAsync(cellReference: Any, formats: js.Array[Any]): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
-    formats: js.Array[js.Any],
+    cellReference: Any,
+    formats: js.Array[Any],
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
-    formats: js.Array[js.Any],
+    cellReference: Any,
+    formats: js.Array[Any],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(cellReference: Any, formats: js.Array[Any], options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
-    formats: js.Array[js.Any],
+    cellReference: Any,
+    formats: js.Array[Any],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
+    cellReference: Any,
     formats: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
+    cellReference: Any,
     formats: Unit,
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: Unit, options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(cellReference: Any, formats: Unit, options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
-    cellReference: js.Any,
+    cellReference: Any,
     formats: Unit,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: Unit, formats: js.Array[js.Any]): Unit = js.native
+  def getFormatsAsync(cellReference: Unit, formats: js.Array[Any]): Unit = js.native
   def getFormatsAsync(
     cellReference: Unit,
-    formats: js.Array[js.Any],
+    formats: js.Array[Any],
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
     cellReference: Unit,
-    formats: js.Array[js.Any],
+    formats: js.Array[Any],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: Unit, formats: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(cellReference: Unit, formats: js.Array[Any], options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
     cellReference: Unit,
-    formats: js.Array[js.Any],
+    formats: js.Array[Any],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
@@ -386,7 +383,7 @@ trait TableBinding
     *
     * `format: {numberFormat:"0.00%"}`
     *
-    * For more detail, see how to {@link https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
+    * For more detail, see how to {@link https://support.microsoft.com/office/78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
     *
     * To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
     * `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
@@ -402,22 +399,22 @@ trait TableBinding
     *  - To clear formatting, use the `TableBinding.clearFormats` method.
     *
     * For more details and examples, see
-    * {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | How to format tables in add-ins for Excel}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | How to format tables in add-ins for Excel}.
     *
     * @param cellFormat An array that contains one or more JavaScript objects that specify which cells to target and the formatting to apply to them.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
-  def setFormatsAsync(cellFormat: js.Array[js.Any]): Unit = js.native
-  def setFormatsAsync(cellFormat: js.Array[js.Any], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[Any]): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[Any], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setFormatsAsync(
-    cellFormat: js.Array[js.Any],
+    cellFormat: js.Array[Any],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setFormatsAsync(cellFormat: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[Any], options: AsyncContextOptions): Unit = js.native
   def setFormatsAsync(
-    cellFormat: js.Array[js.Any],
+    cellFormat: js.Array[Any],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -427,7 +424,7 @@ trait TableBinding
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
     *
@@ -459,12 +456,12 @@ trait TableBinding
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *
     */
-  def setTableOptionsAsync(tableOptions: js.Any): Unit = js.native
-  def setTableOptionsAsync(tableOptions: js.Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setTableOptionsAsync(tableOptions: js.Any, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setTableOptionsAsync(tableOptions: js.Any, options: AsyncContextOptions): Unit = js.native
+  def setTableOptionsAsync(tableOptions: Any): Unit = js.native
+  def setTableOptionsAsync(tableOptions: Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setTableOptionsAsync(tableOptions: Any, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setTableOptionsAsync(tableOptions: Any, options: AsyncContextOptions): Unit = js.native
   def setTableOptionsAsync(
-    tableOptions: js.Any,
+    tableOptions: Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native

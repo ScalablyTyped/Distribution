@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dynogels", "AWS.FileSystemCredentials")
 @js.native
-class FileSystemCredentials protected ()
+open class FileSystemCredentials protected ()
   extends typings.awsSdk.mod.FileSystemCredentials {
   /**
     * Creates a new FileSystemCredentials object from a filename.

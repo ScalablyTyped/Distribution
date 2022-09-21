@@ -16,7 +16,7 @@ object fovMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/fov", "default.DiscreteShadowcasting")
     @js.native
-    class DiscreteShadowcasting ()
+    open class DiscreteShadowcasting ()
       extends typings.rotJs.discreteShadowcastingMod.default
     @JSImport("rot-js/lib/fov", "default.DiscreteShadowcasting")
     @js.native
@@ -26,7 +26,7 @@ object fovMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/fov", "default.PreciseShadowcasting")
     @js.native
-    class PreciseShadowcasting ()
+    open class PreciseShadowcasting ()
       extends typings.rotJs.preciseShadowcastingMod.default
     @JSImport("rot-js/lib/fov", "default.PreciseShadowcasting")
     @js.native
@@ -36,7 +36,7 @@ object fovMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/fov", "default.RecursiveShadowcasting")
     @js.native
-    class RecursiveShadowcasting ()
+    open class RecursiveShadowcasting ()
       extends typings.rotJs.recursiveShadowcastingMod.default
     @JSImport("rot-js/lib/fov", "default.RecursiveShadowcasting")
     @js.native

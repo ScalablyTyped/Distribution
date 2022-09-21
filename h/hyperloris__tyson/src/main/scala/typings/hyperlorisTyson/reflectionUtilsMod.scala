@@ -9,7 +9,7 @@ object reflectionUtilsMod {
   
   @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils")
   @js.native
-  class ReflectionUtils () extends StObject
+  open class ReflectionUtils () extends StObject
   /* static members */
   object ReflectionUtils {
     
@@ -26,7 +26,7 @@ object reflectionUtilsMod {
       * @returns the metadata value for the metadata key if found; otherwise, undefined.
       * @memberof ReflectionUtils
       */
-    inline def getJsonPropertyMetadata(target: js.Any, propertyKey: String): js.UndefOr[JsonPropertyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsonPropertyMetadata")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[JsonPropertyMetadata]]
+    inline def getJsonPropertyMetadata(target: Any, propertyKey: String): js.UndefOr[JsonPropertyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsonPropertyMetadata")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[JsonPropertyMetadata]]
     
     /**
       * This method returns the type of the specified object as injected by the compiler at design-time.
@@ -37,7 +37,7 @@ object reflectionUtilsMod {
       * @returns the injected type
       * @memberof ReflectionUtils
       */
-    inline def getType(target: js.Any, propertyKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getType")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getType(target: Any, propertyKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getType")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * This method generate a "readable hash" of the specified object.
@@ -55,7 +55,7 @@ object reflectionUtilsMod {
       * @returns the generated hash of the target
       * @memberof ReflectionUtils
       */
-    inline def getTypeHash(target: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeHash")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTypeHash(target: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeHash")(target.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * This method returns the type name of the specified object.
@@ -66,6 +66,6 @@ object reflectionUtilsMod {
       * @returns the type name
       * @memberof ReflectionUtils
       */
-    inline def getTypeName(target: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeName")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTypeName(target: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeName")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

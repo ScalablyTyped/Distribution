@@ -9,12 +9,17 @@ trait ExpandableConfig[RecordType] extends StObject {
   
   var childrenColumnName: js.UndefOr[String] = js.undefined
   
+  var columnTitle: js.UndefOr[ReactNode] = js.undefined
+  
+  var columnWidth: js.UndefOr[Double | String] = js.undefined
+  
   var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
   
   var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
   
   var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
   
+  /** @deprecated Please use `EXPAND_COLUMN` in `columns` directly */
   var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   
   var expandRowByClick: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +30,8 @@ trait ExpandableConfig[RecordType] extends StObject {
   
   var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.undefined
   
+  var fixed: js.UndefOr[FixedType] = js.undefined
+  
   var indentSize: js.UndefOr[Double] = js.undefined
   
   var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.undefined
@@ -32,6 +39,8 @@ trait ExpandableConfig[RecordType] extends StObject {
   var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
   
   var rowExpandable: js.UndefOr[js.Function1[/* record */ RecordType, Boolean]] = js.undefined
+  
+  var showExpandColumn: js.UndefOr[Boolean] = js.undefined
 }
 object ExpandableConfig {
   
@@ -46,6 +55,14 @@ object ExpandableConfig {
     
     inline def setChildrenColumnNameUndefined: Self = StObject.set(x, "childrenColumnName", js.undefined)
     
+    inline def setColumnTitle(value: ReactNode): Self = StObject.set(x, "columnTitle", value.asInstanceOf[js.Any])
+    
+    inline def setColumnTitleUndefined: Self = StObject.set(x, "columnTitle", js.undefined)
+    
+    inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
     inline def setDefaultExpandAllRows(value: Boolean): Self = StObject.set(x, "defaultExpandAllRows", value.asInstanceOf[js.Any])
     
     inline def setDefaultExpandAllRowsUndefined: Self = StObject.set(x, "defaultExpandAllRows", js.undefined)
@@ -54,7 +71,7 @@ object ExpandableConfig {
     
     inline def setDefaultExpandedRowKeysUndefined: Self = StObject.set(x, "defaultExpandedRowKeys", js.undefined)
     
-    inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value :_*))
+    inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value*))
     
     inline def setExpandIcon(value: /* props */ RenderExpandIconProps[RecordType] => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
     
@@ -76,11 +93,15 @@ object ExpandableConfig {
     
     inline def setExpandedRowKeysUndefined: Self = StObject.set(x, "expandedRowKeys", js.undefined)
     
-    inline def setExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "expandedRowKeys", js.Array(value :_*))
+    inline def setExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "expandedRowKeys", js.Array(value*))
     
     inline def setExpandedRowRender(value: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode): Self = StObject.set(x, "expandedRowRender", js.Any.fromFunction4(value))
     
     inline def setExpandedRowRenderUndefined: Self = StObject.set(x, "expandedRowRender", js.undefined)
+    
+    inline def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
@@ -97,5 +118,9 @@ object ExpandableConfig {
     inline def setRowExpandable(value: /* record */ RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
     
     inline def setRowExpandableUndefined: Self = StObject.set(x, "rowExpandable", js.undefined)
+    
+    inline def setShowExpandColumn(value: Boolean): Self = StObject.set(x, "showExpandColumn", value.asInstanceOf[js.Any])
+    
+    inline def setShowExpandColumnUndefined: Self = StObject.set(x, "showExpandColumn", js.undefined)
   }
 }

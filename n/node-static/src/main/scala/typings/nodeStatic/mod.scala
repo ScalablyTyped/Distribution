@@ -1,13 +1,12 @@
 package typings.nodeStatic
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mime.mod.TypeMap
-import typings.node.Buffer
+import typings.mime.mimeMod.^
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.Stats
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("node-static", "Server")
   @js.native
-  class Server protected () extends StObject {
+  open class Server protected () extends StObject {
     def this(root: String) = this()
     def this(root: String, options: Options) = this()
     
@@ -28,7 +27,7 @@ object mod {
       status: Double,
       headers: Headers,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       promise: EventEmitter,
       callback: Callback
     ): Unit = js.native
@@ -48,7 +47,7 @@ object mod {
       files: js.Array[String],
       stat: Stats,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       finish: Finish
     ): Unit = js.native
     
@@ -60,7 +59,7 @@ object mod {
       files: js.Array[String],
       stat: Stats,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       finish: Finish
     ): Unit = js.native
     
@@ -73,25 +72,31 @@ object mod {
       files: js.Array[String],
       stat: Stats,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       finish: Finish
     ): Unit = js.native
     
     var root: String = js.native
     
-    def serve(req: IncomingMessage, res: ServerResponse): EventEmitter = js.native
-    def serve(req: IncomingMessage, res: ServerResponse, callback: Callback): EventEmitter = js.native
+    def serve(req: IncomingMessage, res: ServerResponse[IncomingMessage]): EventEmitter = js.native
+    def serve(req: IncomingMessage, res: ServerResponse[IncomingMessage], callback: Callback): EventEmitter = js.native
     
-    def serveDir(pathname: String, req: IncomingMessage, res: ServerResponse, finish: Finish): Unit = js.native
+    def serveDir(pathname: String, req: IncomingMessage, res: ServerResponse[IncomingMessage], finish: Finish): Unit = js.native
     
-    def serveFile(pathname: String, status: Double, headers: Headers, req: IncomingMessage, res: ServerResponse): EventEmitter = js.native
+    def serveFile(
+      pathname: String,
+      status: Double,
+      headers: Headers,
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage]
+    ): EventEmitter = js.native
     
     def servePath(
       pathname: String,
       status: Double,
       headers: Headers,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       finish: Finish
     ): EventEmitter = js.native
     
@@ -102,24 +107,14 @@ object mod {
       files: js.Array[String],
       length: Double,
       startByte: Double,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       callback: Callback
     ): Unit = js.native
   }
   
-  object mime {
-    
-    @JSImport("node-static", "mime")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-    
-    inline def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  }
+  @JSImport("node-static", "mime")
+  @js.native
+  val mime: ^ = js.native
   
   @JSImport("node-static", "version")
   @js.native
@@ -150,11 +145,11 @@ object mod {
     }
   }
   
-  type Callback = js.Function1[/* e */ Error, Unit]
+  type Callback = js.Function1[/* e */ js.Error, Unit]
   
   type Finish = js.Function2[/* status */ Double, /* headers */ js.UndefOr[Headers], Unit]
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   trait Options extends StObject {
     

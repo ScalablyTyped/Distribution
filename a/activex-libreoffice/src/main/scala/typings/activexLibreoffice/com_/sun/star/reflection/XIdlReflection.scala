@@ -21,8 +21,8 @@ trait XIdlReflection
     * @param aTypeName the type's name
     * @returns reflection interface for the demanded type (or null)
     */
-  def forName(aTypeName: String): XIdlClass[js.Any] = js.native
-  def forName[K /* <: /* keyof activex-libreoffice.LibreOffice.InstantiableNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1752 */ js.Any */](aTypeName: K): XIdlClass[
+  def forName(aTypeName: String): XIdlClass[Any] = js.native
+  def forName[K /* <: /* keyof activex-libreoffice.LibreOffice.InstantiableNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1752 */ Any */](aTypeName: K): XIdlClass[
     /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.InstantiableNameMap[K] */ js.Any
   ] = js.native
   
@@ -32,5 +32,5 @@ trait XIdlReflection
     * @param aObj an object
     * @returns reflection interface of the type of the demanded object (or null)
     */
-  def getType(aObj: js.Any): XIdlClass[js.Any] = js.native
+  def getType(aObj: Any): XIdlClass[Any] = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMeetingResponse extends StObject {
   
   /**
-    * The meeting information, including the meeting ID and MediaPlacement.
+    *  The meeting information, including the meeting ID and MediaPlacement . 
     */
   var Meeting: js.UndefOr[typings.awsSdk.chimeMod.Meeting] = js.undefined
 }

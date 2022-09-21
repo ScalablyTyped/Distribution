@@ -30,6 +30,6 @@ object ɵNgModuleTransitiveScopes {
     
     inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
-    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
   }
 }

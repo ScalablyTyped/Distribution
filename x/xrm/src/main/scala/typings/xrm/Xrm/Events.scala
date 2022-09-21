@@ -42,7 +42,7 @@ object Events {
       * Gets a reference to the object for which event occurred.
       * @returns The event source.
       */
-    def getEventSource(): Attribute | Control | Entity
+    def getEventSource(): Attribute[Any] | Control | Entity
     
     /**
       * Gets a reference to the currnet form context
@@ -75,10 +75,10 @@ object Events {
     inline def apply(
       getContext: () => GlobalContext,
       getDepth: () => Double,
-      getEventSource: () => Attribute | Control | Entity,
+      getEventSource: () => Attribute[Any] | Control | Entity,
       getFormContext: () => FormContext,
-      getSharedVariable: String => js.Any,
-      setSharedVariable: (String, js.Any) => Unit
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
     ): EventContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
       __obj.asInstanceOf[EventContext]
@@ -90,21 +90,156 @@ object Events {
       
       inline def setGetDepth(value: () => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
       
-      inline def setGetEventSource(value: () => Attribute | Control | Entity): Self = StObject.set(x, "getEventSource", js.Any.fromFunction0(value))
+      inline def setGetEventSource(value: () => Attribute[Any] | Control | Entity): Self = StObject.set(x, "getEventSource", js.Any.fromFunction0(value))
       
       inline def setGetFormContext(value: () => FormContext): Self = StObject.set(x, "getFormContext", js.Any.fromFunction0(value))
       
-      inline def setGetSharedVariable(value: String => js.Any): Self = StObject.set(x, "getSharedVariable", js.Any.fromFunction1(value))
+      inline def setGetSharedVariable(value: String => Any): Self = StObject.set(x, "getSharedVariable", js.Any.fromFunction1(value))
       
-      inline def setSetSharedVariable(value: (String, js.Any) => Unit): Self = StObject.set(x, "setSharedVariable", js.Any.fromFunction2(value))
+      inline def setSetSharedVariable(value: (String, Any) => Unit): Self = StObject.set(x, "setSharedVariable", js.Any.fromFunction2(value))
     }
   }
   
+  trait LookupTagClickEventArguments extends StObject {
+    
+    /**
+      * Gets the selected tag value
+      * @returns The lookups TagValue object
+      */
+    def getTagValue(): TagValue
+    
+    /**
+      * Returns a boolean value to indicate if the lookups onClick has been prevented.
+      * @returns true if saving is prevented, otherwise false.
+      */
+    def isDefaultPrevented(): Boolean
+    
+    /**
+      * Prevents the default onClick behaviour from executing.
+      * All remaining "onLookupTagClick" handlers will continue execution.
+      */
+    def preventDefault(): Unit
+  }
+  object LookupTagClickEventArguments {
+    
+    inline def apply(getTagValue: () => TagValue, isDefaultPrevented: () => Boolean, preventDefault: () => Unit): LookupTagClickEventArguments = {
+      val __obj = js.Dynamic.literal(getTagValue = js.Any.fromFunction0(getTagValue), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault))
+      __obj.asInstanceOf[LookupTagClickEventArguments]
+    }
+    
+    extension [Self <: LookupTagClickEventArguments](x: Self) {
+      
+      inline def setGetTagValue(value: () => TagValue): Self = StObject.set(x, "getTagValue", js.Any.fromFunction0(value))
+      
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait LookupTagClickEventContext
+    extends StObject
+       with EventContext {
+    
+    /**
+      * Gets an object that contains details about the lookup tag clicked
+      */
+    def getEventArgs(): LookupTagClickEventArguments
+  }
+  object LookupTagClickEventContext {
+    
+    inline def apply(
+      getContext: () => GlobalContext,
+      getDepth: () => Double,
+      getEventArgs: () => LookupTagClickEventArguments,
+      getEventSource: () => Attribute[Any] | Control | Entity,
+      getFormContext: () => FormContext,
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
+    ): LookupTagClickEventContext = {
+      val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventArgs = js.Any.fromFunction0(getEventArgs), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
+      __obj.asInstanceOf[LookupTagClickEventContext]
+    }
+    
+    extension [Self <: LookupTagClickEventContext](x: Self) {
+      
+      inline def setGetEventArgs(value: () => LookupTagClickEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
+    }
+  }
+  
+  type LookupTagClickHandler = js.Function1[/* context */ LookupTagClickEventContext, Unit]
+  
+  type ProcessStatusChangeHandler = js.Function1[/* context */ ProcessStatusChangedEventContext, Unit]
+  
   /**
-    * Type for a process status change handler.
-    * @param status The process status.
+    * Interface for process status changed event arguments.
     */
-  type ProcessStatusChangeHandler = js.Function1[/* status */ ProcessStatus, Unit]
+  trait ProcessStatusChangedEventArguments extends StObject {
+    
+    /**
+      * Gets the selected stage object
+      * @returns The stage object
+      */
+    def getStage(): Stage
+    
+    /**
+      * Gets the destination process status
+      * @returns The process status
+      */
+    def getStatus(): ProcessStatus
+    
+    /**
+      * Prevents the stage or status change operation from being submitted to the server.
+      */
+    def preventDefault(): Unit
+  }
+  object ProcessStatusChangedEventArguments {
+    
+    inline def apply(getStage: () => Stage, getStatus: () => ProcessStatus, preventDefault: () => Unit): ProcessStatusChangedEventArguments = {
+      val __obj = js.Dynamic.literal(getStage = js.Any.fromFunction0(getStage), getStatus = js.Any.fromFunction0(getStatus), preventDefault = js.Any.fromFunction0(preventDefault))
+      __obj.asInstanceOf[ProcessStatusChangedEventArguments]
+    }
+    
+    extension [Self <: ProcessStatusChangedEventArguments](x: Self) {
+      
+      inline def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
+      
+      inline def setGetStatus(value: () => ProcessStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+      
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait ProcessStatusChangedEventContext
+    extends StObject
+       with EventContext {
+    
+    /**
+      * Gets process status changed event arguments.
+      * @returns The event arguments.
+      */
+    def getEventArgs(): ProcessStatusChangedEventArguments
+  }
+  object ProcessStatusChangedEventContext {
+    
+    inline def apply(
+      getContext: () => GlobalContext,
+      getDepth: () => Double,
+      getEventArgs: () => ProcessStatusChangedEventArguments,
+      getEventSource: () => Attribute[Any] | Control | Entity,
+      getFormContext: () => FormContext,
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
+    ): ProcessStatusChangedEventContext = {
+      val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventArgs = js.Any.fromFunction0(getEventArgs), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
+      __obj.asInstanceOf[ProcessStatusChangedEventContext]
+    }
+    
+    extension [Self <: ProcessStatusChangedEventContext](x: Self) {
+      
+      inline def setGetEventArgs(value: () => ProcessStatusChangedEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
+    }
+  }
   
   /**
     * Interface for save event arguments.
@@ -141,11 +276,22 @@ object Events {
       * All remaining "on save" handlers will continue execution.
       */
     def preventDefault(): Unit
+    
+    /**
+      * Cancels the save operation if the event handler has a script error,
+      * returns a rejected promise for an async event handler or the operation times out.
+      */
+    def preventDefaultOnError(): Unit
   }
   object SaveEventArguments {
     
-    inline def apply(getSaveMode: () => SaveMode, isDefaultPrevented: () => Boolean, preventDefault: () => Unit): SaveEventArguments = {
-      val __obj = js.Dynamic.literal(getSaveMode = js.Any.fromFunction0(getSaveMode), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault))
+    inline def apply(
+      getSaveMode: () => SaveMode,
+      isDefaultPrevented: () => Boolean,
+      preventDefault: () => Unit,
+      preventDefaultOnError: () => Unit
+    ): SaveEventArguments = {
+      val __obj = js.Dynamic.literal(getSaveMode = js.Any.fromFunction0(getSaveMode), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault), preventDefaultOnError = js.Any.fromFunction0(preventDefaultOnError))
       __obj.asInstanceOf[SaveEventArguments]
     }
     
@@ -156,6 +302,8 @@ object Events {
       inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      
+      inline def setPreventDefaultOnError(value: () => Unit): Self = StObject.set(x, "preventDefaultOnError", js.Any.fromFunction0(value))
     }
   }
   
@@ -178,10 +326,10 @@ object Events {
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => SaveEventArguments,
-      getEventSource: () => Attribute | Control | Entity,
+      getEventSource: () => Attribute[Any] | Control | Entity,
       getFormContext: () => FormContext,
-      getSharedVariable: String => js.Any,
-      setSharedVariable: (String, js.Any) => Unit
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
     ): SaveEventContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventArgs = js.Any.fromFunction0(getEventArgs), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
       __obj.asInstanceOf[SaveEventContext]
@@ -251,10 +399,10 @@ object Events {
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => StageChangeEventArguments,
-      getEventSource: () => Attribute | Control | Entity,
+      getEventSource: () => Attribute[Any] | Control | Entity,
       getFormContext: () => FormContext,
-      getSharedVariable: String => js.Any,
-      setSharedVariable: (String, js.Any) => Unit
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
     ): StageChangeEventContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventArgs = js.Any.fromFunction0(getEventArgs), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
       __obj.asInstanceOf[StageChangeEventContext]
@@ -306,10 +454,10 @@ object Events {
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => StageSelectedEventArguments,
-      getEventSource: () => Attribute | Control | Entity,
+      getEventSource: () => Attribute[Any] | Control | Entity,
       getFormContext: () => FormContext,
-      getSharedVariable: String => js.Any,
-      setSharedVariable: (String, js.Any) => Unit
+      getSharedVariable: String => Any,
+      setSharedVariable: (String, Any) => Unit
     ): StageSelectedEventContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventArgs = js.Any.fromFunction0(getEventArgs), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
       __obj.asInstanceOf[StageSelectedEventContext]

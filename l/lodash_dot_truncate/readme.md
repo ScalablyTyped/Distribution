@@ -10,10 +10,10 @@ The lodash method `_.truncate` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.truncate |
 | Keywords           | lodash-modularized, truncate |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 6466774 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0744451333333336E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

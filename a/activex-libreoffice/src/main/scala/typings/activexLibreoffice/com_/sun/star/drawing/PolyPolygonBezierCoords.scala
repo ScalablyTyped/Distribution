@@ -22,10 +22,10 @@ object PolyPolygonBezierCoords {
     
     inline def setCoordinates(value: PointSequenceSequence): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesVarargs(value: PointSequence*): Self = StObject.set(x, "Coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: PointSequence*): Self = StObject.set(x, "Coordinates", js.Array(value*))
     
     inline def setFlags(value: FlagSequenceSequence): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    inline def setFlagsVarargs(value: FlagSequence*): Self = StObject.set(x, "Flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: FlagSequence*): Self = StObject.set(x, "Flags", js.Array(value*))
   }
 }

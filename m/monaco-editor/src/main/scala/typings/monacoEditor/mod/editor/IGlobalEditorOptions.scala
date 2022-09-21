@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGlobalEditorOptions extends StObject {
   
   /**
+    * If enabled, will automatically change to high contrast theme if the OS is using a high contrast theme.
+    * Defaults to true.
+    */
+  var autoDetectHighContrast: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Controls whether `tabSize` and `insertSpaces` will be automatically detected when a file is opened based on the file contents.
     * Defaults to true.
     */
@@ -59,9 +65,10 @@ trait IGlobalEditorOptions extends StObject {
   
   /**
     * Theme to be used for rendering.
-    * The current out-of-the-box available themes are: 'vs' (default), 'vs-dark', 'hc-black'.
+    * The current out-of-the-box available themes are: 'vs' (default), 'vs-dark', 'hc-black', 'hc-light'.
     * You can create custom themes via `monaco.editor.defineTheme`.
-    * To switch a theme, use `monaco.editor.setTheme`
+    * To switch a theme, use `monaco.editor.setTheme`.
+    * **NOTE**: The theme might be overwritten if the OS is in high contrast mode, unless `autoDetectHighContrast` is set to false.
     */
   var theme: js.UndefOr[String] = js.undefined
   
@@ -76,6 +83,11 @@ trait IGlobalEditorOptions extends StObject {
     * Defaults to true.
     */
   var wordBasedSuggestions: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether word based completions should be included from opened documents of the same language or any language.
+    */
+  var wordBasedSuggestionsOnlySameLanguage: js.UndefOr[Boolean] = js.undefined
 }
 object IGlobalEditorOptions {
   
@@ -85,6 +97,10 @@ object IGlobalEditorOptions {
   }
   
   extension [Self <: IGlobalEditorOptions](x: Self) {
+    
+    inline def setAutoDetectHighContrast(value: Boolean): Self = StObject.set(x, "autoDetectHighContrast", value.asInstanceOf[js.Any])
+    
+    inline def setAutoDetectHighContrastUndefined: Self = StObject.set(x, "autoDetectHighContrast", js.undefined)
     
     inline def setDetectIndentation(value: Boolean): Self = StObject.set(x, "detectIndentation", value.asInstanceOf[js.Any])
     
@@ -123,6 +139,10 @@ object IGlobalEditorOptions {
     inline def setTrimAutoWhitespaceUndefined: Self = StObject.set(x, "trimAutoWhitespace", js.undefined)
     
     inline def setWordBasedSuggestions(value: Boolean): Self = StObject.set(x, "wordBasedSuggestions", value.asInstanceOf[js.Any])
+    
+    inline def setWordBasedSuggestionsOnlySameLanguage(value: Boolean): Self = StObject.set(x, "wordBasedSuggestionsOnlySameLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setWordBasedSuggestionsOnlySameLanguageUndefined: Self = StObject.set(x, "wordBasedSuggestionsOnlySameLanguage", js.undefined)
     
     inline def setWordBasedSuggestionsUndefined: Self = StObject.set(x, "wordBasedSuggestions", js.undefined)
   }

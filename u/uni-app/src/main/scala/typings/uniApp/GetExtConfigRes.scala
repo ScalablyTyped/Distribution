@@ -14,7 +14,7 @@ trait GetExtConfigRes extends StObject {
   /**
     * 第三方平台自定义的数据
     */
-  var extConfig: js.UndefOr[js.Any] = js.undefined
+  var extConfig: js.UndefOr[Any] = js.undefined
 }
 object GetExtConfigRes {
   
@@ -29,7 +29,7 @@ object GetExtConfigRes {
     
     inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    inline def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     
     inline def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
   }

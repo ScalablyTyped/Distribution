@@ -27,7 +27,7 @@ object Statement {
     
     inline def setMessages(value: MessageList): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setResponseCard(value: ResponseCard): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     

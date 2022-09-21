@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GestureRecognizer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_crosssliding(`type`: crosssliding, listener: TypedEventHandler[GestureRecognizer, CrossSlidingEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -198,7 +198,7 @@ trait GestureRecognizer extends StObject {
     */
   def processUpEvent(value: PointerPoint): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_crosssliding(`type`: crosssliding, listener: TypedEventHandler[GestureRecognizer, CrossSlidingEventArgs]): Unit = js.native
   @JSName("removeEventListener")

@@ -5,6 +5,7 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object webXRManagedOutputCanvasMod {
   
   @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvas")
   @js.native
-  class WebXRManagedOutputCanvas protected ()
+  open class WebXRManagedOutputCanvas protected ()
     extends StObject
        with WebXRRenderTarget {
     /**
@@ -24,21 +25,23 @@ object webXRManagedOutputCanvasMod {
     def this(_xrSessionManager: WebXRSessionManager) = this()
     def this(_xrSessionManager: WebXRSessionManager, _options: WebXRManagedOutputCanvasOptions) = this()
     
-    /* private */ var _addCanvas: js.Any = js.native
+    /* private */ var _addCanvas: Any = js.native
     
-    /* private */ var _canvas: js.Any = js.native
+    /* private */ var _canvas: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _originalCanvasSize: js.Any = js.native
+    /* private */ var _originalCanvasSize: Any = js.native
     
-    /* private */ var _removeCanvas: js.Any = js.native
+    /* private */ var _removeCanvas: Any = js.native
     
-    /* private */ var _setCanvasSize: js.Any = js.native
+    /* private */ var _setCanvasSize: Any = js.native
     
-    /* private */ var _setManagedOutputCanvas: js.Any = js.native
+    /* private */ var _setManagedOutputCanvas: Any = js.native
+    
+    /* private */ var _xrLayerWrapper: Any = js.native
     
     /**
       * xrpresent context of the canvas which can be used to display/mirror xr content
@@ -53,7 +56,7 @@ object webXRManagedOutputCanvasMod {
     override def dispose(): Unit = js.native
     
     /**
-      * Initializes the xr layer for the session
+      * Initializes a XRWebGLLayer to be used as the session's baseLayer.
       * @param xrSession xr session
       * @returns a promise that will resolve once the XR Layer has been created
       */
@@ -61,7 +64,7 @@ object webXRManagedOutputCanvasMod {
     override def initializeXRLayerAsync(xrSession: XRSession): js.Promise[XRWebGLLayer] = js.native
     
     /**
-      * Obseervers registered here will be triggered when the xr layer was initialized
+      * Observers registered here will be triggered when the xr layer was initialized
       */
     var onXRLayerInitObservable: Observable[XRWebGLLayer] = js.native
     
@@ -74,7 +77,7 @@ object webXRManagedOutputCanvasMod {
   
   @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvasOptions")
   @js.native
-  class WebXRManagedOutputCanvasOptions () extends StObject {
+  open class WebXRManagedOutputCanvasOptions () extends StObject {
     
     /**
       * An optional canvas in case you wish to create it yourself and provide it here.

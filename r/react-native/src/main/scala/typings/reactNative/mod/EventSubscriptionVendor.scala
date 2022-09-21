@@ -41,5 +41,5 @@ trait EventSubscriptionVendor extends StObject {
     * `subscription.remove()` directly.
     *
     */
-  def removeSubscription(subscription: js.Any): Unit = js.native
+  def removeSubscription(subscription: Any): Unit = js.native
 }

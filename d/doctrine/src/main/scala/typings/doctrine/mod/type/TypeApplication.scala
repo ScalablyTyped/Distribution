@@ -27,7 +27,7 @@ object TypeApplication {
     
     inline def setApplications(value: js.Array[Type_]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    inline def setApplicationsVarargs(value: Type_ *): Self = StObject.set(x, "applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Type_ *): Self = StObject.set(x, "applications", js.Array(value*))
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -17,5 +17,5 @@ trait FieldInfoFormatConstructor
 Instantiable0[FieldInfoFormat]
      with Instantiable1[/* properties */ FieldInfoFormatProperties, FieldInfoFormat] {
   
-  def fromJSON(json: js.Any): FieldInfoFormat = js.native
+  def fromJSON(json: Any): FieldInfoFormat = js.native
 }

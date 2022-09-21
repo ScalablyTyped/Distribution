@@ -40,7 +40,7 @@ trait HistogramViewModel
   def labelFormatFunction(value: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *

@@ -70,7 +70,7 @@ object CallFunctionOnParameterType {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: CallArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: CallArgument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     

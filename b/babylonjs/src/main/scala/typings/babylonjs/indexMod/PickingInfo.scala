@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PickingInfo")
 @js.native
-class PickingInfo ()
+open class PickingInfo ()
   extends typings.babylonjs.collisionsIndexMod.PickingInfo

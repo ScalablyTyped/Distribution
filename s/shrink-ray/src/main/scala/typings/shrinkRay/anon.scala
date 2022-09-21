@@ -58,7 +58,7 @@ object anon {
     
     var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var dictionary: js.UndefOr[js.Any] = js.undefined
+    var dictionary: js.UndefOr[Any] = js.undefined
     
     var finishFlush: js.UndefOr[Double] = js.undefined
     
@@ -85,7 +85,7 @@ object anon {
       
       inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
       inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
       

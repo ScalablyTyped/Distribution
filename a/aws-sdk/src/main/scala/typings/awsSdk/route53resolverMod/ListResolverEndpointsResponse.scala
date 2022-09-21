@@ -17,7 +17,7 @@ trait ListResolverEndpointsResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
-    * The Resolver endpoints that were created by using the current AWS account, and that match the specified filters, if any.
+    * The Resolver endpoints that were created by using the current Amazon Web Services account, and that match the specified filters, if any.
     */
   var ResolverEndpoints: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverEndpoints] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListResolverEndpointsResponse {
     
     inline def setResolverEndpointsUndefined: Self = StObject.set(x, "ResolverEndpoints", js.undefined)
     
-    inline def setResolverEndpointsVarargs(value: ResolverEndpoint*): Self = StObject.set(x, "ResolverEndpoints", js.Array(value :_*))
+    inline def setResolverEndpointsVarargs(value: ResolverEndpoint*): Self = StObject.set(x, "ResolverEndpoints", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for navigation-react
 
-Typings are for version 4.1.1
+Typings are for version 4.5.1
 
 ## Library description:
 React plugin for the Navigation router
@@ -10,15 +10,13 @@ React plugin for the Navigation router
 | ------------------ | :-------------: |
 | Full name          | navigation-react |
 | Keywords           | router, navigation, react |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 3124 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2324.0 |
+| # stars            | 440.0 |
 
 ## Links
 - [Homepage](http://grahammendick.github.io/navigation/)
-- [Bugs](https://github.com/grahammendick/navigation/issues)
-- [Repository](https://github.com/grahammendick/navigation)
 - [Npm](https://www.npmjs.com/package/navigation-react)
     
 

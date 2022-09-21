@@ -6,59 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Repository")
 @js.native
-class Repository protected () extends AbstractRepositoryObject {
-  def this(platform: js.Any, `object`: js.Any) = this()
+open class Repository protected () extends AbstractRepositoryObject {
+  def this(platform: Any, `object`: Any) = this()
   
-  def checkBranchAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkBranchAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkBranchPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkBranchPermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkConflictAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkConflictAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkConflictPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkConflictPermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkReleaseAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkReleaseAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkReleasePermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkReleasePermissions(checks: Any, callback: Any): Any = js.native
   
-  def copyFrom(sourceBranchId: js.Any, targetBranchId: js.Any, config: js.Any): js.Any = js.native
+  def copyFrom(sourceBranchId: Any, targetBranchId: Any, config: Any): Any = js.native
   
-  def createBranch(branchId: js.Any, changesetId: js.Any, `object`: js.Any): js.Any = js.native
+  def createBranch(branchId: Any, changesetId: Any, `object`: Any): Any = js.native
   
-  def createRelease(`object`: js.Any, sourceId: js.Any): js.Any = js.native
+  def createRelease(`object`: Any, sourceId: Any): Any = js.native
   
-  def createSnapshot(changesetId: js.Any, `object`: js.Any): js.Any = js.native
+  def createSnapshot(changesetId: Any, `object`: Any): Any = js.native
   
-  def getMaxSize(): js.Any = js.native
+  def getMaxSize(): Any = js.native
   
-  def getObjectCount(): js.Any = js.native
+  def getObjectCount(): Any = js.native
   
-  def getSize(): js.Any = js.native
+  def getSize(): Any = js.native
   
-  def listBranches(pagination: js.Any): BranchMap = js.native
+  def listBranches(pagination: Any): BranchMap = js.native
   
-  def listChangesetChildren(changesetId: js.Any): js.Any = js.native
+  def listChangesetChildren(changesetId: Any): Any = js.native
   
-  def listChangesetParents(changesetId: js.Any): js.Any = js.native
+  def listChangesetParents(changesetId: Any): Any = js.native
   
   def listChangesets(): ChangesetMap = js.native
   
-  def listConflicts(pagination: js.Any): MergeConflictMap = js.native
+  def listConflicts(pagination: Any): MergeConflictMap = js.native
   
-  def listMerges(sourceBranchId: js.Any, mergeType: js.Any): js.Any = js.native
+  def listMerges(sourceBranchId: Any, mergeType: Any): Any = js.native
   
-  def listPullSources(branchId: js.Any, pagination: js.Any): js.Any = js.native
+  def listPullSources(branchId: Any, pagination: Any): Any = js.native
   
-  def listReleases(pagination: js.Any): ReleaseMap = js.native
+  def listReleases(pagination: Any): ReleaseMap = js.native
   
-  def queryBranches(query: js.Any): BranchMap = js.native
-  def queryBranches(query: js.Any, pagination: js.Any): BranchMap = js.native
+  def queryBranches(query: Any): BranchMap = js.native
+  def queryBranches(query: Any, pagination: Any): BranchMap = js.native
   
-  def queryChangesets(query: js.Any, pagination: js.Any): ChangesetMap = js.native
+  def queryChangesets(query: Any, pagination: Any): ChangesetMap = js.native
   
-  def queryConflicts(query: js.Any, pagination: js.Any): MergeConflictMap = js.native
+  def queryConflicts(query: Any, pagination: Any): MergeConflictMap = js.native
   
-  def queryReleases(query: js.Any, pagination: js.Any): ReleaseMap = js.native
+  def queryReleases(query: Any, pagination: Any): ReleaseMap = js.native
   
   def readBranch(branchId: String): Branch = js.native
   
@@ -68,20 +68,20 @@ class Repository protected () extends AbstractRepositoryObject {
   
   def readRelease(releaseId: String): Release = js.native
   
-  def startChanges(sourceBranchId: String, targetBranchId: String): js.Any = js.native
-  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any): js.Any = js.native
-  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
-  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: Unit, callback: js.Any): js.Any = js.native
+  def startChanges(sourceBranchId: String, targetBranchId: String): Any = js.native
+  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: Any): Any = js.native
+  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: Any, callback: Any): Any = js.native
+  def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: Unit, callback: Any): Any = js.native
   
-  def startCopyFrom(sourceBranchId: String, targetBranchId: String, config: js.Any, callback: js.Any): js.Any = js.native
+  def startCopyFrom(sourceBranchId: String, targetBranchId: String, config: Any, callback: Any): Any = js.native
   
-  def startCreateBranch(branchId: String, changesetId: String, `object`: js.Any, callback: js.Any): js.Any = js.native
+  def startCreateBranch(branchId: String, changesetId: String, `object`: Any, callback: Any): Any = js.native
   
-  def startCreateRelease(`object`: String, sourceId: String, callback: js.Any): js.Any = js.native
+  def startCreateRelease(`object`: String, sourceId: String, callback: Any): Any = js.native
   
-  def startDiff(sourceBranchId: String, targetBranchId: String, callback: js.Any): js.Any = js.native
+  def startDiff(sourceBranchId: String, targetBranchId: String, callback: Any): Any = js.native
   
-  def startMerge(sourceBranchId: String, targetBranchId: String, callback: js.Any): js.Any = js.native
+  def startMerge(sourceBranchId: String, targetBranchId: String, callback: Any): Any = js.native
 }
 object Repository {
   
@@ -90,17 +90,17 @@ object Repository {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

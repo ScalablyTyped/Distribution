@@ -11,14 +11,11 @@ A minuscule library to parse URLs
 | Full name          | purl |
 | Keywords           | url, parse, browser, javascript, isomorphic |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 49727 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8488.666666666666 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/intuitivcloud/purl#readme)
-- [Bugs](https://github.com/intuitivcloud/purl/issues)
-- [Repository](https://github.com/intuitivcloud/purl)
 - [Npm](https://www.npmjs.com/package/purl)
     
 

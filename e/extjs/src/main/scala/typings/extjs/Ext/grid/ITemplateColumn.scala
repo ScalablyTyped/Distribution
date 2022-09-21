@@ -16,9 +16,9 @@ trait ITemplateColumn
   @JSName("defaultRenderer")
   var defaultRenderer_ITemplateColumn: js.UndefOr[
     js.Function3[
-      /* value */ js.UndefOr[js.Any], 
-      /* meta */ js.UndefOr[js.Any], 
-      /* record */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
+      /* meta */ js.UndefOr[Any], 
+      /* record */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -33,7 +33,7 @@ object ITemplateColumn {
   extension [Self <: ITemplateColumn](x: Self) {
     
     inline def setDefaultRenderer(
-      value: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit
+      value: (/* value */ js.UndefOr[Any], /* meta */ js.UndefOr[Any], /* record */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction3(value))
     
     inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)

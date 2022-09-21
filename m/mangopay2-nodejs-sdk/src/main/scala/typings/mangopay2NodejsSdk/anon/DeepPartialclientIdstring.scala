@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<{  clientId :string,   apiVersion :string,  readonly id :string}> */
+/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/types.DeepPartial<{  clientId :string,   apiVersion :string,  readonly id :string}> */
 trait DeepPartialclientIdstring extends StObject {
   
   var apiVersion: js.UndefOr[DeepPartial[String]] = js.undefined

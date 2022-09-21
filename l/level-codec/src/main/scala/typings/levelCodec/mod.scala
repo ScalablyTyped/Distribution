@@ -11,34 +11,34 @@ object mod {
   @js.native
   trait Codec extends StObject {
     
-    def createStreamDecoder(opts: CodecOptions): js.Any = js.native
+    def createStreamDecoder(opts: CodecOptions): Any = js.native
     
-    def decodeKey(key: js.Any): js.Any = js.native
-    def decodeKey(key: js.Any, opts: CodecOptions): js.Any = js.native
+    def decodeKey(key: Any): Any = js.native
+    def decodeKey(key: Any, opts: CodecOptions): Any = js.native
     
-    def decodeValue(value: js.Any): js.Any = js.native
-    def decodeValue(value: js.Any, opts: CodecOptions): js.Any = js.native
+    def decodeValue(value: Any): Any = js.native
+    def decodeValue(value: Any, opts: CodecOptions): Any = js.native
     
-    def encodeBatch(ops: js.Any): js.Any = js.native
-    def encodeBatch(ops: js.Any, opts: CodecOptions): js.Any = js.native
+    def encodeBatch(ops: Any): Any = js.native
+    def encodeBatch(ops: Any, opts: CodecOptions): Any = js.native
     
-    def encodeKey(key: js.Any): js.Any = js.native
-    def encodeKey(key: js.Any, opts: Unit, batchOpts: CodecOptions): js.Any = js.native
-    def encodeKey(key: js.Any, opts: CodecOptions): js.Any = js.native
-    def encodeKey(key: js.Any, opts: CodecOptions, batchOpts: CodecOptions): js.Any = js.native
+    def encodeKey(key: Any): Any = js.native
+    def encodeKey(key: Any, opts: Unit, batchOpts: CodecOptions): Any = js.native
+    def encodeKey(key: Any, opts: CodecOptions): Any = js.native
+    def encodeKey(key: Any, opts: CodecOptions, batchOpts: CodecOptions): Any = js.native
     
-    def encodeLtgt(ltgt: js.Any): js.Any = js.native
+    def encodeLtgt(ltgt: Any): Any = js.native
     
-    def encodeValue(value: js.Any): js.Any = js.native
-    def encodeValue(value: js.Any, opts: Unit, batchOpts: CodecOptions): js.Any = js.native
-    def encodeValue(value: js.Any, opts: CodecOptions): js.Any = js.native
-    def encodeValue(value: js.Any, opts: CodecOptions, batchOpts: CodecOptions): js.Any = js.native
+    def encodeValue(value: Any): Any = js.native
+    def encodeValue(value: Any, opts: Unit, batchOpts: CodecOptions): Any = js.native
+    def encodeValue(value: Any, opts: CodecOptions): Any = js.native
+    def encodeValue(value: Any, opts: CodecOptions, batchOpts: CodecOptions): Any = js.native
     
-    def keyAsBuffer(): js.Any = js.native
-    def keyAsBuffer(opts: CodecOptions): js.Any = js.native
+    def keyAsBuffer(): Any = js.native
+    def keyAsBuffer(opts: CodecOptions): Any = js.native
     
-    def valueAsBuffer(): js.Any = js.native
-    def valueAsBuffer(opts: CodecOptions): js.Any = js.native
+    def valueAsBuffer(): Any = js.native
+    def valueAsBuffer(opts: CodecOptions): Any = js.native
   }
   @JSImport("level-codec", "Codec")
   @js.native
@@ -47,7 +47,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("level-codec", "Codec")
   @js.native
-  class CodecCls ()
+  open class CodecCls ()
     extends StObject
        with typings.levelCodec.mod.Codec {
     def this(options: CodecOptions) = this()
@@ -67,15 +67,15 @@ object mod {
     
     var buffer: Boolean
     
-    def decode(`val`: js.Any): js.Any
+    def decode(`val`: Any): Any
     
-    def encode(`val`: js.Any): js.Any
+    def encode(`val`: Any): Any
     
     var `type`: String
   }
   object CodecEncoder {
     
-    inline def apply(buffer: Boolean, decode: js.Any => js.Any, encode: js.Any => js.Any, `type`: String): CodecEncoder = {
+    inline def apply(buffer: Boolean, decode: Any => Any, encode: Any => Any, `type`: String): CodecEncoder = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodecEncoder]
@@ -85,9 +85,9 @@ object mod {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      inline def setDecode(value: js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: Any => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      inline def setEncode(value: js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: Any => Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

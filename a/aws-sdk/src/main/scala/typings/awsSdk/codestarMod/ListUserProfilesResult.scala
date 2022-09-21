@@ -31,6 +31,6 @@ object ListUserProfilesResult {
     
     inline def setUserProfiles(value: UserProfilesList): Self = StObject.set(x, "userProfiles", value.asInstanceOf[js.Any])
     
-    inline def setUserProfilesVarargs(value: UserProfileSummary*): Self = StObject.set(x, "userProfiles", js.Array(value :_*))
+    inline def setUserProfilesVarargs(value: UserProfileSummary*): Self = StObject.set(x, "userProfiles", js.Array(value*))
   }
 }

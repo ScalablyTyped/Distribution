@@ -10,10 +10,10 @@ object arrowDropDownMod {
   
   @JSImport("material-ui/svg-icons/navigation/arrow-drop-down", JSImport.Default)
   @js.native
-  class default () extends NavigationArrowDropDown
+  open class default () extends NavigationArrowDropDown
   
   @JSImport("material-ui/svg-icons/navigation/arrow-drop-down", "NavigationArrowDropDown")
   @js.native
-  class NavigationArrowDropDown ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationArrowDropDown ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

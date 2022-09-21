@@ -12,7 +12,7 @@ trait ListStreamKeysRequest extends StObject {
   var channelArn: ChannelArn
   
   /**
-    * Maximum number of streamKeys to return.
+    * Maximum number of streamKeys to return. Default: 1.
     */
   var maxResults: js.UndefOr[MaxStreamKeyResults] = js.undefined
   

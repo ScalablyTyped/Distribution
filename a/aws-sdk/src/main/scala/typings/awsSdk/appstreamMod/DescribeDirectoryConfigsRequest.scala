@@ -34,7 +34,7 @@ object DescribeDirectoryConfigsRequest {
     
     inline def setDirectoryNamesUndefined: Self = StObject.set(x, "DirectoryNames", js.undefined)
     
-    inline def setDirectoryNamesVarargs(value: DirectoryName*): Self = StObject.set(x, "DirectoryNames", js.Array(value :_*))
+    inline def setDirectoryNamesVarargs(value: DirectoryName*): Self = StObject.set(x, "DirectoryNames", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

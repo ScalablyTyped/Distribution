@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of custom XML parts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 trait CustomXmlPartCollectionLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait CustomXmlPartCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The custom XML part's ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The custom XML part's namespace URI.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var namespaceUri: js.UndefOr[Boolean] = js.undefined

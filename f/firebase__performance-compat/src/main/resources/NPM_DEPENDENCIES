@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/performance-compat" : "0.1.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/performance-compat" : "0.1.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

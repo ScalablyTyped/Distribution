@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TpEventAddRequest.
   * @param [properties] Properties to set
   */
-class TpEventAddRequest ()
+open class TpEventAddRequest ()
   extends StObject
      with ITpEventAddRequest {
   def this(properties: ITpEventAddRequest) = this()
@@ -28,7 +27,7 @@ class TpEventAddRequest ()
     * Converts this TpEventAddRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object TpEventAddRequest {
@@ -45,6 +44,8 @@ object TpEventAddRequest {
   inline def create(): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TpEventAddRequest]
   inline def create(properties: ITpEventAddRequest): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TpEventAddRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpEventAddRequest]
   /**
     * Decodes a TpEventAddRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -55,9 +56,8 @@ object TpEventAddRequest {
     */
   inline def decode(reader: Reader): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
   inline def decode(reader: Reader, length: Double): TpEventAddRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpEventAddRequest]
-  inline def decode(reader: Uint8Array): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
-  inline def decode(reader: Uint8Array, length: Double): TpEventAddRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpEventAddRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
   /**
     * Decodes a TpEventAddRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -66,7 +66,6 @@ object TpEventAddRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
-  inline def decodeDelimited(reader: Uint8Array): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
   
   /**
     * Encodes the specified TpEventAddRequest message. Does not implicitly {@link TpEventAddRequest.verify|verify} messages.
@@ -91,7 +90,7 @@ object TpEventAddRequest {
     * @param object Plain object
     * @returns TpEventAddRequest
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): TpEventAddRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TpEventAddRequest]
   
   /**
     * Creates a plain object from a TpEventAddRequest message. Also converts values to other types if specified.
@@ -99,13 +98,13 @@ object TpEventAddRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: TpEventAddRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TpEventAddRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TpEventAddRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TpEventAddRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TpEventAddRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

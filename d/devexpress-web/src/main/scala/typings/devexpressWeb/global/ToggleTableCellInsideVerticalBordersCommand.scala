@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellInsideVerticalBordersCommand")
 @js.native
-class ToggleTableCellInsideVerticalBordersCommand ()
+open class ToggleTableCellInsideVerticalBordersCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellInsideVerticalBordersCommand {
   

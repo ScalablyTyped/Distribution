@@ -53,7 +53,7 @@ object Route {
     
     inline def setStops(value: js.Array[String]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: String*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: String*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setType(value: route): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

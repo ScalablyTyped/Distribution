@@ -2,6 +2,7 @@ package typings.mixpanel
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mixpanel.Mixpanel.Config
+import typings.mixpanel.Mixpanel.EventBaseType
 import typings.mixpanel.Mixpanel.People
 import typings.mixpanel.Mixpanel.Query
 import typings.mixpanel.mixpanelStrings.cookie
@@ -93,7 +94,7 @@ trait Mixpanel extends StObject {
     *
     * @param propertyName The name of the super property you want to retrieve
     */
-  def get_property(propertyName: String): js.Any = js.native
+  def get_property(propertyName: String): Any = js.native
   
   /**
     * Identify a user with a unique ID. All subsequent
@@ -156,7 +157,7 @@ trait Mixpanel extends StObject {
     *
     * @param item A [function_name, args...] array to be executed
     */
-  def push(item: js.Array[js.Any]): Unit = js.native
+  def push(item: js.Array[Any]): Unit = js.native
   
   /**
     * Register a set of super properties, which are included with all
@@ -176,8 +177,8 @@ trait Mixpanel extends StObject {
     * @param properties An associative array of properties to store about the user
     * @param days How many days since the user's last visit to store the super properties
     */
-  def register(properties: StringDictionary[js.Any]): Unit = js.native
-  def register(properties: StringDictionary[js.Any], days: Double): Unit = js.native
+  def register(properties: StringDictionary[Any]): Unit = js.native
+  def register(properties: StringDictionary[Any], days: Double): Unit = js.native
   
   /**
     * Register a set of super properties only once. This will not
@@ -199,10 +200,10 @@ trait Mixpanel extends StObject {
     * @param defaultValue Value to override if already set in super properties (ex: 'False') Default: 'None'
     * @param days How many days since the users last visit to store the super properties
     */
-  def register_once(properties: StringDictionary[js.Any]): Unit = js.native
-  def register_once(properties: StringDictionary[js.Any], defaultValue: String): Unit = js.native
-  def register_once(properties: StringDictionary[js.Any], defaultValue: String, days: Double): Unit = js.native
-  def register_once(properties: StringDictionary[js.Any], defaultValue: Unit, days: Double): Unit = js.native
+  def register_once(properties: StringDictionary[Any]): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: String): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: String, days: Double): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: Unit, days: Double): Unit = js.native
   
   /**
     * Clears super properties and generates a new random `distinct_id` for this instance.
@@ -252,9 +253,40 @@ trait Mixpanel extends StObject {
     * @param callback If provided, the callback function will be called after tracking the event.
     */
   def track(eventName: String): Unit = js.native
-  def track(eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
-  def track(eventName: String, properties: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+  def track(eventName: String, properties: StringDictionary[Any]): Unit = js.native
+  def track(eventName: String, properties: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
   def track(eventName: String, properties: Unit, callback: js.Function0[Unit]): Unit = js.native
+  /**
+    * Track an event. With a predefined EventType
+    *
+    * ### Usage:
+    *
+    *     // Create the event type, extending the EventBaseType
+    *     interface ErrorEvent {
+    *          eventName: 'ERROR' | 'VERY_BAD_ERROR';
+    *          properties: {
+    *              message: string;
+    *              id: number;
+    *          }
+    *     }
+    *
+    *     // Track the error event with the generic
+    *     mixpanel.track<ErrorEvent>('ERROR', { message: 'on no!', id: 1 });
+    *
+    * @param eventName The name of the event. This can be anything the user does - 'Button Click', 'Sign Up', 'Item Purchased', etc.
+    * @param properties A set of properties to include with the event you're sending. These describe the user who did the event or details about the event itself.
+    * @param callback If provided, the callback function will be called after tracking the event.
+    * @template EventType The Event type. Use this to set specific properties for an event name
+    */
+  def track[EventType /* <: EventBaseType */](
+    eventName: /* import warning: importer.ImportType#apply Failed type conversion: EventType['eventName'] */ js.Any,
+    properties: /* import warning: importer.ImportType#apply Failed type conversion: EventType['properties'] */ js.Any
+  ): Unit = js.native
+  def track[EventType /* <: EventBaseType */](
+    eventName: /* import warning: importer.ImportType#apply Failed type conversion: EventType['eventName'] */ js.Any,
+    properties: /* import warning: importer.ImportType#apply Failed type conversion: EventType['properties'] */ js.Any,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   
   /**
     * Track form submissions. Selector must be a valid query.
@@ -283,7 +315,7 @@ trait Mixpanel extends StObject {
     * @param properties This can be a set of properties, or a function that returns a set of properties after being passed a DOMElement
     */
   def track_forms(querySelector: Query, eventName: String): Unit = js.native
-  def track_forms(querySelector: Query, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
+  def track_forms(querySelector: Query, eventName: String, properties: StringDictionary[Any]): Unit = js.native
   
   /**
     * Track clicks on a set of document elements. Selector must be a
@@ -313,7 +345,7 @@ trait Mixpanel extends StObject {
     * @param properties A properties object or function that returns a dictionary of properties when passed a DOMElement
     */
   def track_links(querySelector: Query, eventName: String): Unit = js.native
-  def track_links(querySelector: Query, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
+  def track_links(querySelector: Query, eventName: String, properties: StringDictionary[Any]): Unit = js.native
   
   /**
     * Delete a super property stored with the current user.
@@ -558,7 +590,7 @@ object Mixpanel {
       
       inline def setProperty_blacklistUndefined: Self = StObject.set(x, "property_blacklist", js.undefined)
       
-      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
+      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value*))
       
       inline def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
       
@@ -594,11 +626,32 @@ object Mixpanel {
     }
   }
   
+  trait EventBaseType extends StObject {
+    
+    var eventName: String
+    
+    var properties: StringDictionary[Any]
+  }
+  object EventBaseType {
+    
+    inline def apply(eventName: String, properties: StringDictionary[Any]): EventBaseType = {
+      val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EventBaseType]
+    }
+    
+    extension [Self <: EventBaseType](x: Self) {
+      
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait People extends StObject {
     
-    def append(keys: StringDictionary[js.Any]): Unit = js.native
-    def append(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+    def append(keys: StringDictionary[Any]): Unit = js.native
+    def append(keys: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     /**
       * Append a value to a list-valued people analytics property.
       *
@@ -618,8 +671,8 @@ object Mixpanel {
       * @param value An item to append to the list
       * @param callback If provided, the callback will be called after the tracking event
       */
-    def append(prop: String, value: js.Any): Unit = js.native
-    def append(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def append(prop: String, value: Any): Unit = js.native
+    def append(prop: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Permanently clear all revenue report transactions from the
@@ -678,8 +731,8 @@ object Mixpanel {
     def increment(prop: String, value: Double, callback: js.Function0[Unit]): Unit = js.native
     def increment(prop: String, value: Unit, callback: js.Function0[Unit]): Unit = js.native
     
-    def set(keys: StringDictionary[js.Any]): Unit = js.native
-    def set(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+    def set(keys: StringDictionary[Any]): Unit = js.native
+    def set(keys: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     /**
       * Set properties on a user record.
       *
@@ -699,11 +752,11 @@ object Mixpanel {
       * @param value A value to set on the given property name
       * @param callback If provided, the callback will be called after the tracking event
       */
-    def set(prop: String, value: js.Any): Unit = js.native
-    def set(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def set(prop: String, value: Any): Unit = js.native
+    def set(prop: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
     
-    def set_once(keys: StringDictionary[js.Any]): Unit = js.native
-    def set_once(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+    def set_once(keys: StringDictionary[Any]): Unit = js.native
+    def set_once(keys: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     /**
       * Set properties on a user record, only if they do not yet exist.
       * This will not overwrite previous people property values, unlike
@@ -725,8 +778,8 @@ object Mixpanel {
       * @param value A value to set on the given property name
       * @param callback If provided, the callback will be called after the tracking event
       */
-    def set_once(prop: String, value: js.Any): Unit = js.native
-    def set_once(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def set_once(prop: String, value: Any): Unit = js.native
+    def set_once(prop: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Record that you have charged the current user a certain amount
@@ -748,12 +801,12 @@ object Mixpanel {
       * @param callback If provided, the callback will be called when the server responds
       */
     def track_charge(amount: Double): Unit = js.native
-    def track_charge(amount: Double, properties: StringDictionary[js.Any]): Unit = js.native
-    def track_charge(amount: Double, properties: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+    def track_charge(amount: Double, properties: StringDictionary[Any]): Unit = js.native
+    def track_charge(amount: Double, properties: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     def track_charge(amount: Double, properties: Unit, callback: js.Function0[Unit]): Unit = js.native
     
-    def union(keys: StringDictionary[js.Any]): Unit = js.native
-    def union(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+    def union(keys: StringDictionary[Any]): Unit = js.native
+    def union(keys: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     /**
       * Merge a given list with a list-valued people analytics property,
       * excluding duplicate values.
@@ -780,8 +833,8 @@ object Mixpanel {
       * @param value Value / values to merge with the given property
       * @param callback If provided, the callback will be called after the tracking event
       */
-    def union(prop: String, values: js.Any): Unit = js.native
-    def union(prop: String, values: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def union(prop: String, values: Any): Unit = js.native
+    def union(prop: String, values: Any, callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Unset properties on a user record (permanently removes the properties and their values from a profile).

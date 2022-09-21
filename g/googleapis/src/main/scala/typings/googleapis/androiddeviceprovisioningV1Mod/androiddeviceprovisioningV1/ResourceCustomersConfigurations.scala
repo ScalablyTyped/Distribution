@@ -4,31 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers$Configurations")
 @js.native
-class ResourceCustomersConfigurations protected () extends StObject {
+open class ResourceCustomersConfigurations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * androiddeviceprovisioning.customers.configurations.create
-    * @desc Creates a new configuration. Once created, a customer can apply the
-    * configuration to devices.
-    * @alias androiddeviceprovisioning.customers.configurations.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The customer that manages the configuration. An API resource name in the format `customers/[CUSTOMER_ID]`.
-    * @param {().Configuration} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaConfiguration] = js.native
   def create(callback: BodyResponseCallback[SchemaConfiguration]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
@@ -39,8 +27,8 @@ class ResourceCustomersConfigurations protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceCustomersConfigurationsCreate,
-    options: BodyResponseCallback[SchemaConfiguration],
-    callback: BodyResponseCallback[SchemaConfiguration]
+    options: BodyResponseCallback[Readable | SchemaConfiguration],
+    callback: BodyResponseCallback[Readable | SchemaConfiguration]
   ): Unit = js.native
   def create(params: ParamsResourceCustomersConfigurationsCreate, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
   def create(
@@ -48,20 +36,89 @@ class ResourceCustomersConfigurations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
-  
   /**
-    * androiddeviceprovisioning.customers.configurations.delete
-    * @desc Deletes an unused configuration. The API call fails if the customer
-    * has devices with the configuration applied.
-    * @alias androiddeviceprovisioning.customers.configurations.delete
-    * @memberOf! ()
+    * Creates a new configuration. Once created, a customer can apply the configuration to devices.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androiddeviceprovisioning.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The configuration to delete. An API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. If the configuration is applied to any devices, the API call fails.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androiddeviceprovisioning = google.androiddeviceprovisioning('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androiddeviceprovisioning.customers.configurations.create({
+    *     // Required. The customer that manages the configuration. An API resource name in the format `customers/[CUSTOMER_ID]`. This field has custom validation in CreateConfigurationRequestValidator
+    *     parent: 'customers/my-customer',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "companyName": "my_companyName",
+    *       //   "configurationId": "my_configurationId",
+    *       //   "configurationName": "my_configurationName",
+    *       //   "contactEmail": "my_contactEmail",
+    *       //   "contactPhone": "my_contactPhone",
+    *       //   "customMessage": "my_customMessage",
+    *       //   "dpcExtras": "my_dpcExtras",
+    *       //   "dpcResourcePath": "my_dpcResourcePath",
+    *       //   "isDefault": false,
+    *       //   "name": "my_name"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "companyName": "my_companyName",
+    *   //   "configurationId": "my_configurationId",
+    *   //   "configurationName": "my_configurationName",
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "customMessage": "my_customMessage",
+    *   //   "dpcExtras": "my_dpcExtras",
+    *   //   "dpcResourcePath": "my_dpcResourcePath",
+    *   //   "isDefault": false,
+    *   //   "name": "my_name"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceCustomersConfigurationsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceCustomersConfigurationsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -69,8 +126,8 @@ class ResourceCustomersConfigurations protected () extends StObject {
   def delete(params: ParamsResourceCustomersConfigurationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceCustomersConfigurationsDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceCustomersConfigurationsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -78,19 +135,61 @@ class ResourceCustomersConfigurations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * androiddeviceprovisioning.customers.configurations.get
-    * @desc Gets the details of a configuration.
-    * @alias androiddeviceprovisioning.customers.configurations.get
-    * @memberOf! ()
+    * Deletes an unused configuration. The API call fails if the customer has devices with the configuration applied.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androiddeviceprovisioning.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The configuration to get. An API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androiddeviceprovisioning = google.androiddeviceprovisioning('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androiddeviceprovisioning.customers.configurations.delete({
+    *     // Required. The configuration to delete. An API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. If the configuration is applied to any devices, the API call fails.
+    *     name: 'customers/my-customer/configurations/my-configuration',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceCustomersConfigurationsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceCustomersConfigurationsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaConfiguration]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
@@ -101,8 +200,8 @@ class ResourceCustomersConfigurations protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceCustomersConfigurationsGet,
-    options: BodyResponseCallback[SchemaConfiguration],
-    callback: BodyResponseCallback[SchemaConfiguration]
+    options: BodyResponseCallback[Readable | SchemaConfiguration],
+    callback: BodyResponseCallback[Readable | SchemaConfiguration]
   ): Unit = js.native
   def get(params: ParamsResourceCustomersConfigurationsGet, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
   def get(
@@ -110,19 +209,72 @@ class ResourceCustomersConfigurations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
-  
   /**
-    * androiddeviceprovisioning.customers.configurations.list
-    * @desc Lists a customer's configurations.
-    * @alias androiddeviceprovisioning.customers.configurations.list
-    * @memberOf! ()
+    * Gets the details of a configuration.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androiddeviceprovisioning.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The customer that manages the listed configurations. An API resource name in the format `customers/[CUSTOMER_ID]`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androiddeviceprovisioning = google.androiddeviceprovisioning('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androiddeviceprovisioning.customers.configurations.get({
+    *     // Required. The configuration to get. An API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
+    *     name: 'customers/my-customer/configurations/my-configuration',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "companyName": "my_companyName",
+    *   //   "configurationId": "my_configurationId",
+    *   //   "configurationName": "my_configurationName",
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "customMessage": "my_customMessage",
+    *   //   "dpcExtras": "my_dpcExtras",
+    *   //   "dpcResourcePath": "my_dpcResourcePath",
+    *   //   "isDefault": false,
+    *   //   "name": "my_name"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceCustomersConfigurationsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceCustomersConfigurationsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaCustomerListConfigurationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomerListConfigurationsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomerListConfigurationsResponse] = js.native
@@ -133,8 +285,8 @@ class ResourceCustomersConfigurations protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceCustomersConfigurationsList,
-    options: BodyResponseCallback[SchemaCustomerListConfigurationsResponse],
-    callback: BodyResponseCallback[SchemaCustomerListConfigurationsResponse]
+    options: BodyResponseCallback[Readable | SchemaCustomerListConfigurationsResponse],
+    callback: BodyResponseCallback[Readable | SchemaCustomerListConfigurationsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceCustomersConfigurationsList, options: MethodOptions): GaxiosPromise[SchemaCustomerListConfigurationsResponse] = js.native
   def list(
@@ -142,21 +294,63 @@ class ResourceCustomersConfigurations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomerListConfigurationsResponse]
   ): Unit = js.native
-  
   /**
-    * androiddeviceprovisioning.customers.configurations.patch
-    * @desc Updates a configuration's field values.
-    * @alias androiddeviceprovisioning.customers.configurations.patch
-    * @memberOf! ()
+    * Lists a customer's configurations.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androiddeviceprovisioning.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Output only. The API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by the server.
-    * @param {string=} params.updateMask Required. The field mask applied to the target `Configuration` before updating the fields. To learn more about using field masks, read [FieldMask](/protocol-buffers/docs/reference/google.protobuf#fieldmask) in the Protocol Buffers documentation.
-    * @param {().Configuration} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androiddeviceprovisioning = google.androiddeviceprovisioning('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androiddeviceprovisioning.customers.configurations.list({
+    *     // Required. The customer that manages the listed configurations. An API resource name in the format `customers/[CUSTOMER_ID]`.
+    *     parent: 'customers/my-customer',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "configurations": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceCustomersConfigurationsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceCustomersConfigurationsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaConfiguration]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
@@ -167,13 +361,97 @@ class ResourceCustomersConfigurations protected () extends StObject {
   ): Unit = js.native
   def patch(
     params: ParamsResourceCustomersConfigurationsPatch,
-    options: BodyResponseCallback[SchemaConfiguration],
-    callback: BodyResponseCallback[SchemaConfiguration]
+    options: BodyResponseCallback[Readable | SchemaConfiguration],
+    callback: BodyResponseCallback[Readable | SchemaConfiguration]
   ): Unit = js.native
   def patch(params: ParamsResourceCustomersConfigurationsPatch, options: MethodOptions): GaxiosPromise[SchemaConfiguration] = js.native
   def patch(
     params: ParamsResourceCustomersConfigurationsPatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
+  ): Unit = js.native
+  /**
+    * Updates a configuration's field values.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androiddeviceprovisioning.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const androiddeviceprovisioning = google.androiddeviceprovisioning('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androiddeviceprovisioning.customers.configurations.patch({
+    *     // Output only. The API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by the server.
+    *     name: 'customers/my-customer/configurations/my-configuration',
+    *     // Required. The field mask applied to the target `Configuration` before updating the fields. To learn more about using field masks, read [FieldMask](/protocol-buffers/docs/reference/google.protobuf#fieldmask) in the Protocol Buffers documentation.
+    *     updateMask: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "companyName": "my_companyName",
+    *       //   "configurationId": "my_configurationId",
+    *       //   "configurationName": "my_configurationName",
+    *       //   "contactEmail": "my_contactEmail",
+    *       //   "contactPhone": "my_contactPhone",
+    *       //   "customMessage": "my_customMessage",
+    *       //   "dpcExtras": "my_dpcExtras",
+    *       //   "dpcResourcePath": "my_dpcResourcePath",
+    *       //   "isDefault": false,
+    *       //   "name": "my_name"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "companyName": "my_companyName",
+    *   //   "configurationId": "my_configurationId",
+    *   //   "configurationName": "my_configurationName",
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "customMessage": "my_customMessage",
+    *   //   "dpcExtras": "my_dpcExtras",
+    *   //   "dpcResourcePath": "my_dpcResourcePath",
+    *   //   "isDefault": false,
+    *   //   "name": "my_name"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def patch(params: ParamsResourceCustomersConfigurationsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceCustomersConfigurationsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

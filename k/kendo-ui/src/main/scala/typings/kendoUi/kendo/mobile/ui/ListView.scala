@@ -12,7 +12,7 @@ trait ListView
   extends StObject
      with typings.kendoUi.kendo.ui.Widget {
   
-  def append(dataItems: js.Any): Unit = js.native
+  def append(dataItems: Any): Unit = js.native
   
   var dataSource: DataSource = js.native
   
@@ -21,13 +21,13 @@ trait ListView
   @JSName("options")
   var options_ListView: ListViewOptions = js.native
   
-  def prepend(dataItems: js.Any): Unit = js.native
+  def prepend(dataItems: Any): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def remove(dataItems: js.Any): Unit = js.native
+  def remove(dataItems: Any): Unit = js.native
   
-  def replace(dataItems: js.Any): Unit = js.native
+  def replace(dataItems: Any): Unit = js.native
   
   def setDataItem(item: JQuery, dataItem: Model): Unit = js.native
   

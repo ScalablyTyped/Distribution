@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   @JSImport("isobject", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

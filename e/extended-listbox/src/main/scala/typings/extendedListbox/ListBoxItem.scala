@@ -43,7 +43,7 @@ object ListBoxItem {
     
     inline def setChildItemsUndefined: Self = StObject.set(x, "childItems", js.undefined)
     
-    inline def setChildItemsVarargs(value: (String | ListBoxItem)*): Self = StObject.set(x, "childItems", js.Array(value :_*))
+    inline def setChildItemsVarargs(value: (String | ListBoxItem)*): Self = StObject.set(x, "childItems", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

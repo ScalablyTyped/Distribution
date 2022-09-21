@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.VariableDeclaration
   - typings.typescript.mod.ParameterDeclaration
   - typings.typescript.mod.BindingElement
-  - typings.typescript.mod.PropertySignature
   - typings.typescript.mod.PropertyDeclaration
   - typings.typescript.mod.PropertyAssignment
   - typings.typescript.mod.EnumMember

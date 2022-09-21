@@ -17,5 +17,5 @@ trait SizeVariableConstructor
 Instantiable0[SizeVariable]
      with Instantiable1[/* properties */ SizeVariableProperties, SizeVariable] {
   
-  def fromJSON(json: js.Any): SizeVariable = js.native
+  def fromJSON(json: Any): SizeVariable = js.native
 }

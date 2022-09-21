@@ -12,7 +12,7 @@ object Gyrometer {
   inline def apply(
     getCurrentReading: () => GyrometerReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
+    onreadingchanged: Any,
     reportInterval: Double
   ): Gyrometer = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])

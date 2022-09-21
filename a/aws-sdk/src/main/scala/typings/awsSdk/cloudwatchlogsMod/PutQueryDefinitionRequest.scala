@@ -39,7 +39,7 @@ object PutQueryDefinitionRequest {
     
     inline def setLogGroupNamesUndefined: Self = StObject.set(x, "logGroupNames", js.undefined)
     
-    inline def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value :_*))
+    inline def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value*))
     
     inline def setName(value: QueryDefinitionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

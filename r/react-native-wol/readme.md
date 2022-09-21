@@ -10,10 +10,10 @@ Wake on lan utility for react native projects
 | ------------------ | :-------------: |
 | Full name          | react-native-wol |
 | Keywords           | react-native, wake-on-lan, wol |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 141 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/zombie6888/react-native-wol#readme)

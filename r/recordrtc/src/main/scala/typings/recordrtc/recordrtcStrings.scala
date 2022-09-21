@@ -1,5 +1,6 @@
 package typings.recordrtc
 
+import typings.recordrtc.mod.DiskStorageType
 import typings.recordrtc.mod.MediaStreamKind
 import typings.recordrtc.mod.State
 import org.scalablytyped.runtime.StObject
@@ -15,6 +16,12 @@ object recordrtcStrings {
   @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
+  
+  @js.native
+  sealed trait audioBlob
+    extends StObject
+       with DiskStorageType
+  inline def audioBlob: audioBlob = "audioBlob".asInstanceOf[audioBlob]
   
   @js.native
   sealed trait audioSlashogg extends StObject
@@ -59,6 +66,12 @@ object recordrtcStrings {
   inline def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
+  sealed trait gifBlob
+    extends StObject
+       with DiskStorageType
+  inline def gifBlob: gifBlob = "gifBlob".asInstanceOf[gifBlob]
+  
+  @js.native
   sealed trait inactive
     extends StObject
        with State
@@ -85,6 +98,12 @@ object recordrtcStrings {
   @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
+  sealed trait videoBlob
+    extends StObject
+       with DiskStorageType
+  inline def videoBlob: videoBlob = "videoBlob".asInstanceOf[videoBlob]
   
   @js.native
   sealed trait videoSlashmp4 extends StObject

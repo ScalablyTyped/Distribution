@@ -1,13 +1,12 @@
 package typings.ionic.definitionsMod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImageResourceTransformResult extends StObject {
   
-  var error: js.UndefOr[Error] = js.undefined
+  var error: js.UndefOr[js.Error] = js.undefined
   
   var resource: ImageResource
   
@@ -22,7 +21,7 @@ object ImageResourceTransformResult {
   
   extension [Self <: ImageResourceTransformResult](x: Self) {
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

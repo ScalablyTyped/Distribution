@@ -22,6 +22,8 @@ object MathUtils {
   
   inline def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def damp(x: Double, y: Double, lambda: Double, dt: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("damp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], lambda.asInstanceOf[js.Any], dt.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def degToRad(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degToRad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def euclideanModulo(n: Double, m: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclideanModulo")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -29,6 +31,8 @@ object MathUtils {
   inline def floorPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("floorPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def generateUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[String]
+  
+  inline def inverseLerp(x: Double, y: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inverseLerp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def isPowerOfTwo(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -39,6 +43,9 @@ object MathUtils {
   inline def nearestPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def nextPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def pingpong(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pingpong")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def pingpong(x: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pingpong")(x.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def radToDeg(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radToDeg")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
   

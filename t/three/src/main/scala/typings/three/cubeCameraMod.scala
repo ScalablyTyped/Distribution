@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.eventDispatcherMod.Event
 import typings.three.object3DMod.Object3D
 import typings.three.sceneMod.Scene
 import typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
@@ -12,7 +13,7 @@ object cubeCameraMod {
   
   @JSImport("three/src/cameras/CubeCamera", "CubeCamera")
   @js.native
-  class CubeCamera protected () extends Object3D {
+  open class CubeCamera protected () extends Object3D[Event] {
     def this(near: Double, far: Double, renderTarget: WebGLCubeRenderTarget) = this()
     
     var renderTarget: WebGLCubeRenderTarget = js.native

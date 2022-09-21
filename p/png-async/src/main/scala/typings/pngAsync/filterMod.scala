@@ -1,6 +1,6 @@
 package typings.pngAsync
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pngAsync.mod.IImageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object filterMod {
   
   @JSImport("png-async/lib/filter", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Filter {
+  open class ^ protected () extends Filter {
     def this(width: Double, height: Double, bpp: Double, data: Buffer, option: IImageOptions) = this()
   }
   
@@ -18,33 +18,33 @@ object filterMod {
   trait Filter
     extends typings.pngAsync.chunkStreamMod.^ {
     
-    /* private */ var _bpp: js.Any = js.native
+    /* private */ var _bpp: Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ var _filterAvg: js.Any = js.native
+    /* private */ var _filterAvg: Any = js.native
     
-    /* private */ var _filterNone: js.Any = js.native
+    /* private */ var _filterNone: Any = js.native
     
-    /* private */ var _filterPaeth: js.Any = js.native
+    /* private */ var _filterPaeth: Any = js.native
     
-    /* private */ var _filterSub: js.Any = js.native
+    /* private */ var _filterSub: Any = js.native
     
-    /* private */ var _filterTypes: js.Any = js.native
+    /* private */ var _filterTypes: Any = js.native
     
-    /* private */ var _filterUp: js.Any = js.native
+    /* private */ var _filterUp: Any = js.native
     
-    /* private */ var _filters: js.Any = js.native
+    /* private */ var _filters: Any = js.native
     
-    /* private */ var _height: js.Any = js.native
+    /* private */ var _height: Any = js.native
     
-    /* private */ var _line: js.Any = js.native
+    /* private */ var _line: Any = js.native
     
-    /* private */ var _option: js.Any = js.native
+    /* private */ var _option: Any = js.native
     
-    /* private */ var _reverseFilterLine: js.Any = js.native
+    /* private */ var _reverseFilterLine: Any = js.native
     
-    /* private */ var _width: js.Any = js.native
+    /* private */ var _width: Any = js.native
     
     def filter(): Buffer = js.native
   }

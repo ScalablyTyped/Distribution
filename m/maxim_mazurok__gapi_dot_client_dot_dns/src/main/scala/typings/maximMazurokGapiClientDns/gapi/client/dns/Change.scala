@@ -23,7 +23,7 @@ trait Change extends StObject {
   /** The time that this operation was started by the server (output only). This is in RFC3339 text format. */
   var startTime: js.UndefOr[String] = js.undefined
   
-  /** Status of the operation (output only). A status of "done" means that the request to update the authoritative servers has been sent but the servers might not be updated yet. */
+  /** Status of the operation (output only). A status of "done" means that the request to update the authoritative servers has been sent, but the servers might not be updated yet. */
   var status: js.UndefOr[String] = js.undefined
 }
 object Change {
@@ -39,13 +39,13 @@ object Change {
     
     inline def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
     
-    inline def setAdditionsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "additions", js.Array(value :_*))
+    inline def setAdditionsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "additions", js.Array(value*))
     
     inline def setDeletions(value: js.Array[ResourceRecordSet]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
     
     inline def setDeletionsUndefined: Self = StObject.set(x, "deletions", js.undefined)
     
-    inline def setDeletionsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "deletions", js.Array(value :_*))
+    inline def setDeletionsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "deletions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

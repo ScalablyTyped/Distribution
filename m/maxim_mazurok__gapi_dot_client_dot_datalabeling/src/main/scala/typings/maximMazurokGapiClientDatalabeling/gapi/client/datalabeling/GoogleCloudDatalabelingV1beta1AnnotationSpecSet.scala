@@ -34,13 +34,13 @@ object GoogleCloudDatalabelingV1beta1AnnotationSpecSet {
     
     inline def setAnnotationSpecsUndefined: Self = StObject.set(x, "annotationSpecs", js.undefined)
     
-    inline def setAnnotationSpecsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpec*): Self = StObject.set(x, "annotationSpecs", js.Array(value :_*))
+    inline def setAnnotationSpecsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpec*): Self = StObject.set(x, "annotationSpecs", js.Array(value*))
     
     inline def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     
     inline def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
-    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
+    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

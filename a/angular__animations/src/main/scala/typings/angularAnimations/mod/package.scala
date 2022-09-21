@@ -1,149 +1,111 @@
 package typings.angularAnimations.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.angularAnimations.angularAnimationsStrings.Asterisk
+import typings.angularAnimations.anon.Params
+import typings.angularAnimations.mod.^
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AUTO_STYLE: /* "*" */ java.lang.String = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AUTO_STYLE").asInstanceOf[/* "*" */ java.lang.String]
+inline def AUTO_STYLE: /* "*" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AUTO_STYLE").asInstanceOf[/* "*" */ String]
 
-inline def animate(timings: java.lang.String): typings.angularAnimations.mod.AnimationAnimateMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
-inline def animate(
-  timings: java.lang.String,
-  styles: typings.angularAnimations.mod.AnimationKeyframesSequenceMetadata
-): typings.angularAnimations.mod.AnimationAnimateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
-inline def animate(timings: java.lang.String, styles: typings.angularAnimations.mod.AnimationStyleMetadata): typings.angularAnimations.mod.AnimationAnimateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
-inline def animate(timings: scala.Double): typings.angularAnimations.mod.AnimationAnimateMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
-inline def animate(timings: scala.Double, styles: typings.angularAnimations.mod.AnimationKeyframesSequenceMetadata): typings.angularAnimations.mod.AnimationAnimateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
-inline def animate(timings: scala.Double, styles: typings.angularAnimations.mod.AnimationStyleMetadata): typings.angularAnimations.mod.AnimationAnimateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateMetadata]
+inline def animate(timings: String): AnimationAnimateMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any]).asInstanceOf[AnimationAnimateMetadata]
+inline def animate(timings: String, styles: AnimationKeyframesSequenceMetadata): AnimationAnimateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateMetadata]
+inline def animate(timings: String, styles: AnimationStyleMetadata): AnimationAnimateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateMetadata]
+inline def animate(timings: Double): AnimationAnimateMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any]).asInstanceOf[AnimationAnimateMetadata]
+inline def animate(timings: Double, styles: AnimationKeyframesSequenceMetadata): AnimationAnimateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateMetadata]
+inline def animate(timings: Double, styles: AnimationStyleMetadata): AnimationAnimateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(timings.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateMetadata]
 
-inline def animateChild(): typings.angularAnimations.mod.AnimationAnimateChildMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animateChild")().asInstanceOf[typings.angularAnimations.mod.AnimationAnimateChildMetadata]
-inline def animateChild(options: typings.angularAnimations.mod.AnimateChildOptions): typings.angularAnimations.mod.AnimationAnimateChildMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animateChild")(options.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateChildMetadata]
+inline def animateChild(): AnimationAnimateChildMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animateChild")().asInstanceOf[AnimationAnimateChildMetadata]
+inline def animateChild(options: AnimateChildOptions): AnimationAnimateChildMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animateChild")(options.asInstanceOf[js.Any]).asInstanceOf[AnimationAnimateChildMetadata]
 
-inline def animation(steps: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationReferenceMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationReferenceMetadata]
-inline def animation(
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationReferenceMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationReferenceMetadata]
-inline def animation(steps: typings.angularAnimations.mod.AnimationMetadata): typings.angularAnimations.mod.AnimationReferenceMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationReferenceMetadata]
-inline def animation(
-  steps: typings.angularAnimations.mod.AnimationMetadata,
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationReferenceMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationReferenceMetadata]
+inline def animation(steps: js.Array[AnimationMetadata]): AnimationReferenceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any]).asInstanceOf[AnimationReferenceMetadata]
+inline def animation(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationReferenceMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationReferenceMetadata]
+inline def animation(steps: AnimationMetadata): AnimationReferenceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any]).asInstanceOf[AnimationReferenceMetadata]
+inline def animation(steps: AnimationMetadata, options: AnimationOptions): AnimationReferenceMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("animation")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationReferenceMetadata]
 
-inline def group(steps: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationGroupMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("group")(steps.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationGroupMetadata]
-inline def group(
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationGroupMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("group")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationGroupMetadata]
+inline def group(steps: js.Array[AnimationMetadata]): AnimationGroupMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(steps.asInstanceOf[js.Any]).asInstanceOf[AnimationGroupMetadata]
+inline def group(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationGroupMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationGroupMetadata]
 
-inline def keyframes(steps: js.Array[typings.angularAnimations.mod.AnimationStyleMetadata]): typings.angularAnimations.mod.AnimationKeyframesSequenceMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(steps.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationKeyframesSequenceMetadata]
+inline def keyframes(steps: js.Array[AnimationStyleMetadata]): AnimationKeyframesSequenceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(steps.asInstanceOf[js.Any]).asInstanceOf[AnimationKeyframesSequenceMetadata]
 
-inline def query(selector: java.lang.String, animation: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationQueryMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationQueryMetadata]
-inline def query(
-  selector: java.lang.String,
-  animation: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationQueryOptions
-): typings.angularAnimations.mod.AnimationQueryMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationQueryMetadata]
-inline def query(selector: java.lang.String, animation: typings.angularAnimations.mod.AnimationMetadata): typings.angularAnimations.mod.AnimationQueryMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationQueryMetadata]
-inline def query(
-  selector: java.lang.String,
-  animation: typings.angularAnimations.mod.AnimationMetadata,
-  options: typings.angularAnimations.mod.AnimationQueryOptions
-): typings.angularAnimations.mod.AnimationQueryMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationQueryMetadata]
+inline def query(selector: String, animation: js.Array[AnimationMetadata]): AnimationQueryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationQueryMetadata]
+inline def query(selector: String, animation: js.Array[AnimationMetadata], options: AnimationQueryOptions): AnimationQueryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationQueryMetadata]
+inline def query(selector: String, animation: AnimationMetadata): AnimationQueryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationQueryMetadata]
+inline def query(selector: String, animation: AnimationMetadata, options: AnimationQueryOptions): AnimationQueryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationQueryMetadata]
 
-inline def sequence(steps: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationSequenceMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(steps.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationSequenceMetadata]
-inline def sequence(
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationSequenceMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationSequenceMetadata]
+inline def sequence(steps: js.Array[AnimationMetadata]): AnimationSequenceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(steps.asInstanceOf[js.Any]).asInstanceOf[AnimationSequenceMetadata]
+inline def sequence(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationSequenceMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationSequenceMetadata]
 
-inline def stagger(timings: java.lang.String, animation: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationStaggerMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStaggerMetadata]
-inline def stagger(timings: java.lang.String, animation: typings.angularAnimations.mod.AnimationMetadata): typings.angularAnimations.mod.AnimationStaggerMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStaggerMetadata]
-inline def stagger(timings: scala.Double, animation: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationStaggerMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStaggerMetadata]
-inline def stagger(timings: scala.Double, animation: typings.angularAnimations.mod.AnimationMetadata): typings.angularAnimations.mod.AnimationStaggerMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStaggerMetadata]
+inline def stagger(timings: String, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationStaggerMetadata]
+inline def stagger(timings: String, animation: AnimationMetadata): AnimationStaggerMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationStaggerMetadata]
+inline def stagger(timings: Double, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationStaggerMetadata]
+inline def stagger(timings: Double, animation: AnimationMetadata): AnimationStaggerMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(timings.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[AnimationStaggerMetadata]
 
-inline def state(name: java.lang.String, styles: typings.angularAnimations.mod.AnimationStyleMetadata): typings.angularAnimations.mod.AnimationStateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStateMetadata]
-inline def state(
-  name: java.lang.String,
-  styles: typings.angularAnimations.mod.AnimationStyleMetadata,
-  options: typings.angularAnimations.anon.Params
-): typings.angularAnimations.mod.AnimationStateMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationStateMetadata]
+inline def state(name: String, styles: AnimationStyleMetadata): AnimationStateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationStateMetadata]
+inline def state(name: String, styles: AnimationStyleMetadata, options: Params): AnimationStateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationStateMetadata]
 
-inline def style(
-  tokens: js.Array[
-  typings.angularAnimations.angularAnimationsStrings.Asterisk | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
-]
-): typings.angularAnimations.mod.AnimationStyleMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationStyleMetadata]
-inline def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): typings.angularAnimations.mod.AnimationStyleMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationStyleMetadata]
-inline def style(tokens: typings.angularAnimations.angularAnimationsStrings.Asterisk): typings.angularAnimations.mod.AnimationStyleMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationStyleMetadata]
+inline def style(tokens: js.Array[Asterisk | (StringDictionary[String | Double])]): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
+inline def style(tokens: StringDictionary[String | Double]): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
+inline def style(tokens: Asterisk): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
 
-inline def transition(
-  stateChangeExpr: java.lang.String,
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata]
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
-inline def transition(
-  stateChangeExpr: java.lang.String,
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
-inline def transition(stateChangeExpr: java.lang.String, steps: typings.angularAnimations.mod.AnimationMetadata): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
-inline def transition(
-  stateChangeExpr: java.lang.String,
-  steps: typings.angularAnimations.mod.AnimationMetadata,
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
+inline def transition(stateChangeExpr: String, steps: js.Array[AnimationMetadata]): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
+inline def transition(stateChangeExpr: String, steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
+inline def transition(stateChangeExpr: String, steps: AnimationMetadata): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
+inline def transition(stateChangeExpr: String, steps: AnimationMetadata, options: AnimationOptions): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 inline def transition(
   stateChangeExpr: js.Function4[
-  /* fromState */ java.lang.String, 
-  /* toState */ java.lang.String, 
-  js.UndefOr[js.Any], 
-  js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
-  scala.Boolean
+  /* fromState */ String, 
+  /* toState */ String, 
+  js.UndefOr[Any], 
+  js.UndefOr[StringDictionary[Any]], 
+  Boolean
 ],
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata]
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
+  steps: js.Array[AnimationMetadata]
+): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 inline def transition(
   stateChangeExpr: js.Function4[
-  /* fromState */ java.lang.String, 
-  /* toState */ java.lang.String, 
-  /* element */ js.UndefOr[js.Any], 
-  /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
-  scala.Boolean
+  /* fromState */ String, 
+  /* toState */ String, 
+  /* element */ js.UndefOr[Any], 
+  /* params */ js.UndefOr[StringDictionary[Any]], 
+  Boolean
 ],
-  steps: js.Array[typings.angularAnimations.mod.AnimationMetadata],
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
+  steps: js.Array[AnimationMetadata],
+  options: AnimationOptions
+): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 inline def transition(
   stateChangeExpr: js.Function4[
-  /* fromState */ java.lang.String, 
-  /* toState */ java.lang.String, 
-  js.UndefOr[js.Any], 
-  js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
-  scala.Boolean
+  /* fromState */ String, 
+  /* toState */ String, 
+  js.UndefOr[Any], 
+  js.UndefOr[StringDictionary[Any]], 
+  Boolean
 ],
-  steps: typings.angularAnimations.mod.AnimationMetadata
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
+  steps: AnimationMetadata
+): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 inline def transition(
   stateChangeExpr: js.Function4[
-  /* fromState */ java.lang.String, 
-  /* toState */ java.lang.String, 
-  /* element */ js.UndefOr[js.Any], 
-  /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
-  scala.Boolean
+  /* fromState */ String, 
+  /* toState */ String, 
+  /* element */ js.UndefOr[Any], 
+  /* params */ js.UndefOr[StringDictionary[Any]], 
+  Boolean
 ],
-  steps: typings.angularAnimations.mod.AnimationMetadata,
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationTransitionMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTransitionMetadata]
+  steps: AnimationMetadata,
+  options: AnimationOptions
+): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 
-inline def trigger(name: java.lang.String, definitions: js.Array[typings.angularAnimations.mod.AnimationMetadata]): typings.angularAnimations.mod.AnimationTriggerMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationTriggerMetadata]
+inline def trigger(name: String, definitions: js.Array[AnimationMetadata]): AnimationTriggerMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[AnimationTriggerMetadata]
 
-inline def useAnimation(animation: typings.angularAnimations.mod.AnimationReferenceMetadata): typings.angularAnimations.mod.AnimationAnimateRefMetadata = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateRefMetadata]
-inline def useAnimation(
-  animation: typings.angularAnimations.mod.AnimationReferenceMetadata,
-  options: typings.angularAnimations.mod.AnimationOptions
-): typings.angularAnimations.mod.AnimationAnimateRefMetadata = (typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAnimation")(animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularAnimations.mod.AnimationAnimateRefMetadata]
+inline def useAnimation(animation: AnimationReferenceMetadata): AnimationAnimateRefMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[AnimationAnimateRefMetadata]
+inline def useAnimation(animation: AnimationReferenceMetadata, options: AnimationOptions): AnimationAnimateRefMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimation")(animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateRefMetadata]
 
-inline def ɵPRESTYLE: /* "!" */ java.lang.String = typings.angularAnimations.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PRE_STYLE").asInstanceOf[/* "!" */ java.lang.String]
+inline def ɵPRESTYLE: /* "!" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PRE_STYLE").asInstanceOf[/* "!" */ String]
 
-type ɵStyleData = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
+type ɵStyleData = StringDictionary[String | Double]
+
+type ɵStyleDataMap = Map[String, String | Double]

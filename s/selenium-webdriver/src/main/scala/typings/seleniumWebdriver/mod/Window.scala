@@ -7,13 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Window")
 @js.native
-class Window protected () extends StObject {
+open class Window protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
+  /**
+    * Invokes the "full screen" operation on the current window. The exact
+    * behavior of this command is specific to individual window managers, but
+    * this will typically increase the window size to the size of the physical
+    * display and hide the browser chrome.
+    *
+    * @return {!Promise<void>} A promise that will be resolved when the command
+    *     has completed.
+    * @see <https://fullscreen.spec.whatwg.org/#fullscreen-an-element>
+    */
+  def fullscreen(): js.Promise[Unit] = js.native
   
   // endregion
   // region Methods
@@ -39,11 +51,22 @@ class Window protected () extends StObject {
   def getSize(): js.Promise[ISize] = js.native
   
   /**
-    * Maximizes the current window.
+    * Maximizes the current window. The exact behavior of this command is
+    * specific to individual window managers, but typically involves increasing
+    * the window to the maximum available size without going full-screen.
     * @return {!Promise} A promise that will be resolved when the
     *     command has completed.
     */
   def maximize(): js.Promise[Unit] = js.native
+  
+  /**
+    * Minimizes the current window. The exact behavior of this command is
+    * specific to individual window managers, but typically involves hiding
+    * the window in the system tray.
+    * @return {!Promise} A promise that will be resolved when the
+    *     command has completed.
+    */
+  def minimize(): js.Promise[Unit] = js.native
   
   /**
     * Repositions the current window.

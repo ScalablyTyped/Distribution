@@ -27,6 +27,11 @@ trait ConfigTypeData extends StObject {
   var dataflowEndpointConfig: js.UndefOr[DataflowEndpointConfig] = js.undefined
   
   /**
+    * Information about an S3 recording Config.
+    */
+  var s3RecordingConfig: js.UndefOr[S3RecordingConfig] = js.undefined
+  
+  /**
     * Object that determines whether tracking should be used during a contact executed with this Config in the mission profile. 
     */
   var trackingConfig: js.UndefOr[TrackingConfig] = js.undefined
@@ -60,6 +65,10 @@ object ConfigTypeData {
     inline def setDataflowEndpointConfig(value: DataflowEndpointConfig): Self = StObject.set(x, "dataflowEndpointConfig", value.asInstanceOf[js.Any])
     
     inline def setDataflowEndpointConfigUndefined: Self = StObject.set(x, "dataflowEndpointConfig", js.undefined)
+    
+    inline def setS3RecordingConfig(value: S3RecordingConfig): Self = StObject.set(x, "s3RecordingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setS3RecordingConfigUndefined: Self = StObject.set(x, "s3RecordingConfig", js.undefined)
     
     inline def setTrackingConfig(value: TrackingConfig): Self = StObject.set(x, "trackingConfig", value.asInstanceOf[js.Any])
     

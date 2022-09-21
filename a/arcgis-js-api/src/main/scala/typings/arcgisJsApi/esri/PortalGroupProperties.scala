@@ -40,6 +40,8 @@ trait PortalGroupProperties extends StObject {
   /**
     * If set to `true`, then users will not be able to apply to join the group.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#isInvitationOnly)
     */
   var isInvitationOnly: js.UndefOr[Boolean] = js.undefined
@@ -135,7 +137,7 @@ object PortalGroupProperties {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

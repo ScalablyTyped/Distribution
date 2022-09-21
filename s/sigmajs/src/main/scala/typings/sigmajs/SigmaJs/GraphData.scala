@@ -21,10 +21,10 @@ object GraphData {
     
     inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

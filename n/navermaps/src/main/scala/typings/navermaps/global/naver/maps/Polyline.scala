@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Polyline")
 @js.native
-class Polyline ()
+open class Polyline ()
   extends StObject
      with typings.navermaps.naver.maps.Polyline {
   def this(options: PolylineOptions) = this()

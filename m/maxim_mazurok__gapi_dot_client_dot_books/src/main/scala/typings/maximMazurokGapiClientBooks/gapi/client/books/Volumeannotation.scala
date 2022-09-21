@@ -98,7 +98,7 @@ object Volumeannotation {
     
     inline def setPageIdsUndefined: Self = StObject.set(x, "pageIds", js.undefined)
     
-    inline def setPageIdsVarargs(value: String*): Self = StObject.set(x, "pageIds", js.Array(value :_*))
+    inline def setPageIdsVarargs(value: String*): Self = StObject.set(x, "pageIds", js.Array(value*))
     
     inline def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
     

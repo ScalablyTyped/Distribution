@@ -8,7 +8,7 @@ object mergeFileResultMod {
   
   @JSImport("nodegit/merge-file-result", "MergeFileResult")
   @js.native
-  class MergeFileResult () extends StObject {
+  open class MergeFileResult () extends StObject {
     
     var automergeable: Double = js.native
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for selenium-standalone
 
-Typings are for version 6.15
+Typings are for version 7.0
 
 ## Library description:
 installs a `selenium-standalone` command line to install and start a standalone selenium server
@@ -10,15 +10,15 @@ installs a `selenium-standalone` command line to install and start a standalone 
 | ------------------ | :-------------: |
 | Full name          | selenium-standalone |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 121 |
-| # downloads        | 20196605 |
-| # stars            | 43 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 1214392.0 |
+| # stars            | 877.0 |
 
 ## Links
-- [Homepage](https://github.com/vvo/selenium-standalone)
-- [Bugs](https://github.com/vvo/selenium-standalone/issues)
-- [Repository](https://github.com/vvo/selenium-standalone)
+- [Homepage](https://github.com/webdriverio/selenium-standalone)
+- [Bugs](https://github.com/webdriverio/selenium-standalone/issues)
+- [Repository](https://github.com/webdriverio/selenium-standalone)
 - [Npm](https://www.npmjs.com/package/selenium-standalone)
     
 

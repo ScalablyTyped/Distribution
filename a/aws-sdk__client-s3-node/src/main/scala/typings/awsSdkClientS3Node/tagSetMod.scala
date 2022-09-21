@@ -8,5 +8,5 @@ object tagSetMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_TagSet", "_TagSet")
   @js.native
-  val TagSet: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TagSet: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

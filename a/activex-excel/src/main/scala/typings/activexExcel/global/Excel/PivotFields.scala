@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotFields")
 @js.native
-/* private */ class PivotFields ()
+/* private */ open class PivotFields ()
   extends StObject
      with typings.activexExcel.Excel.PivotFields

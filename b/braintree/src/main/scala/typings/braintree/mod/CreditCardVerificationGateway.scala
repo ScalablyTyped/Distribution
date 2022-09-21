@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreditCardVerificationGateway extends StObject {
   
-  def search(searchFn: js.Any): Readable
+  def search(searchFn: Any): Readable
 }
 object CreditCardVerificationGateway {
   
-  inline def apply(search: js.Any => Readable): CreditCardVerificationGateway = {
+  inline def apply(search: Any => Readable): CreditCardVerificationGateway = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
     __obj.asInstanceOf[CreditCardVerificationGateway]
   }
   
   extension [Self <: CreditCardVerificationGateway](x: Self) {
     
-    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateTableRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog in which to create the Table. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which to create the Table. If none is supplied, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -25,6 +25,11 @@ trait CreateTableRequest extends StObject {
     * The TableInput object that defines the metadata table to create in the catalog.
     */
   var TableInput: typings.awsSdk.glueMod.TableInput
+  
+  /**
+    * The ID of the transaction.
+    */
+  var TransactionId: js.UndefOr[TransactionIdString] = js.undefined
 }
 object CreateTableRequest {
   
@@ -45,8 +50,12 @@ object CreateTableRequest {
     
     inline def setPartitionIndexesUndefined: Self = StObject.set(x, "PartitionIndexes", js.undefined)
     
-    inline def setPartitionIndexesVarargs(value: PartitionIndex*): Self = StObject.set(x, "PartitionIndexes", js.Array(value :_*))
+    inline def setPartitionIndexesVarargs(value: PartitionIndex*): Self = StObject.set(x, "PartitionIndexes", js.Array(value*))
     
     inline def setTableInput(value: TableInput): Self = StObject.set(x, "TableInput", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

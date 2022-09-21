@@ -28,7 +28,7 @@ object XCustomPresentationSupplier {
     CustomPresentations: XNameContainer,
     acquire: () => Unit,
     getCustomPresentations: () => XNameContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCustomPresentationSupplier = {
     val __obj = js.Dynamic.literal(CustomPresentations = CustomPresentations.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCustomPresentations = js.Any.fromFunction0(getCustomPresentations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

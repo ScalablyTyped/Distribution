@@ -13,17 +13,17 @@ trait QueriesFunctions extends StObject {
     * @param queryValue The researched value
     * @return A boolean indicating if a match was found
     */
-  def search(record: js.Any, queryValue: String): Boolean
+  def search(record: Any, queryValue: String): Boolean
 }
 object QueriesFunctions {
   
-  inline def apply(search: (js.Any, String) => Boolean): QueriesFunctions = {
+  inline def apply(search: (Any, String) => Boolean): QueriesFunctions = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction2(search))
     __obj.asInstanceOf[QueriesFunctions]
   }
   
   extension [Self <: QueriesFunctions](x: Self) {
     
-    inline def setSearch(value: (js.Any, String) => Boolean): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (Any, String) => Boolean): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
   }
 }

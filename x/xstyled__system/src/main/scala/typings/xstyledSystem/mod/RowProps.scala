@@ -21,6 +21,6 @@ object RowProps {
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    inline def setRowVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "row", js.Array(value :_*))
+    inline def setRowVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "row", js.Array(value*))
   }
 }

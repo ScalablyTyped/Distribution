@@ -14,28 +14,32 @@ object audioSceneComponentMod {
   
   @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent")
   @js.native
-  class AudioSceneComponent protected ()
+  /**
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
+  open class AudioSceneComponent ()
     extends StObject
        with ISceneSerializableComponent {
-    /**
-      * Creates a new instance of the component for the given scene
-      * @param scene Defines the scene to register the component in
-      */
-    def this(scene: Scene) = this()
+    def this(scene: Nullable[Scene]) = this()
     
-    /* private */ var _afterRender: js.Any = js.native
+    /* private */ var _afterRender: Any = js.native
     
-    /* private */ var _audioEnabled: js.Any = js.native
+    /* private */ var _audioEnabled: Any = js.native
     
-    /* private */ var _audioListenerPositionProvider: js.Any = js.native
+    /* private */ var _audioListenerPositionProvider: Any = js.native
     
-    /* private */ var _cachedCameraDirection: js.Any = js.native
+    /* private */ var _cachedCameraDirection: Any = js.native
     
-    /* private */ var _cachedCameraPosition: js.Any = js.native
+    /* private */ var _cachedCameraPosition: Any = js.native
     
-    /* private */ var _headphone: js.Any = js.native
+    /* private */ var _cameraDirectionTemp: Any = js.native
     
-    /* private */ var _lastCheck: js.Any = js.native
+    /* private */ var _headphone: Any = js.native
+    
+    /* private */ var _invertMatrixTemp: Any = js.native
+    
+    /* private */ var _lastCheck: Any = js.native
     
     /**
       * Gets whether audio is enabled or not.
@@ -75,7 +79,7 @@ object audioSceneComponentMod {
     def enableAudio(): Unit = js.native
     
     /**
-      * Gets whether audio is outputing to headphone or not.
+      * Gets whether audio is outputting to headphone or not.
       * Please use the according Switch methods to change output.
       */
     def headphone: Boolean = js.native
@@ -122,15 +126,10 @@ object audioSceneComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent._CameraDirectionLH")
+    @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent._CameraDirection")
     @js.native
-    def _CameraDirectionLH: js.Any = js.native
-    inline def _CameraDirectionLH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionLH")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent._CameraDirectionRH")
-    @js.native
-    def _CameraDirectionRH: js.Any = js.native
-    inline def _CameraDirectionRH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionRH")(x.asInstanceOf[js.Any])
+    def _CameraDirection: Any = js.native
+    inline def _CameraDirection_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirection")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */
@@ -156,7 +155,7 @@ object audioSceneComponentMod {
         
         inline def setSoundsNull: Self = StObject.set(x, "sounds", null)
         
-        inline def setSoundsVarargs(value: Sound*): Self = StObject.set(x, "sounds", js.Array(value :_*))
+        inline def setSoundsVarargs(value: Sound*): Self = StObject.set(x, "sounds", js.Array(value*))
       }
     }
   }
@@ -192,7 +191,7 @@ object audioSceneComponentMod {
       /**
         * Gets a sound using a given name
         * @param name defines the name to search for
-        * @return the found sound or null if not found at all.
+        * @returns the found sound or null if not found at all.
         */
       def getSoundByName(name: String): Nullable[Sound]
       
@@ -204,7 +203,7 @@ object audioSceneComponentMod {
       
       /**
         * The main sound track played by the scene.
-        * It cotains your primary collection of sounds.
+        * It contains your primary collection of sounds.
         */
       var mainSoundTrack: SoundTrack
       
@@ -248,7 +247,7 @@ object audioSceneComponentMod {
         
         inline def setSoundTracksNull: Self = StObject.set(x, "soundTracks", null)
         
-        inline def setSoundTracksVarargs(value: SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value :_*))
+        inline def setSoundTracksVarargs(value: SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value*))
         
         inline def set_mainSoundTrack(value: SoundTrack): Self = StObject.set(x, "_mainSoundTrack", value.asInstanceOf[js.Any])
       }

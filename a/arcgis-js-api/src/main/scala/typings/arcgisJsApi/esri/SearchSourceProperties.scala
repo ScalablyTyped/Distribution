@@ -9,6 +9,8 @@ trait SearchSourceProperties extends StObject {
   /**
     * Indicates whether to automatically navigate to the selected result once selected.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#autoNavigate)
     */
   var autoNavigate: js.UndefOr[Boolean] = js.undefined
@@ -23,12 +25,16 @@ trait SearchSourceProperties extends StObject {
   /**
     * Function used to get search results.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
     */
   var getResults: js.UndefOr[GetResultsHandler] = js.undefined
   
   /**
     * Function used to get search suggestions.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
     */
@@ -37,6 +43,8 @@ trait SearchSourceProperties extends StObject {
   /**
     * Indicates the maximum number of search results to return.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxResults)
     */
   var maxResults: js.UndefOr[Double] = js.undefined
@@ -44,12 +52,16 @@ trait SearchSourceProperties extends StObject {
   /**
     * Indicates the maximum number of suggestions to return for the widget's input.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxSuggestions)
     */
   var maxSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the minimum number of characters required before querying for a suggestion.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#minSuggestCharacters)
     */
@@ -114,6 +126,8 @@ trait SearchSourceProperties extends StObject {
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#suggestionsEnabled)
     */
   var suggestionsEnabled: js.UndefOr[Boolean] = js.undefined
@@ -121,12 +135,16 @@ trait SearchSourceProperties extends StObject {
   /**
     * Indicates whether to constrain the search results to the view's extent.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#withinViewEnabled)
     */
   var withinViewEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set zoom scale for the resulting search result.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
     */
@@ -149,11 +167,11 @@ object SearchSourceProperties {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setGetResults(value: /* params */ js.Any => js.Promise[js.Array[SearchResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction1(value))
+    inline def setGetResults(value: /* params */ Any => js.Promise[js.Array[SearchResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction1(value))
     
     inline def setGetResultsUndefined: Self = StObject.set(x, "getResults", js.undefined)
     
-    inline def setGetSuggestions(value: /* params */ js.Any => js.Promise[js.Array[SuggestResult]]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
+    inline def setGetSuggestions(value: /* params */ Any => js.Promise[js.Array[SuggestResult]]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
     
     inline def setGetSuggestionsUndefined: Self = StObject.set(x, "getSuggestions", js.undefined)
     
@@ -173,7 +191,7 @@ object SearchSourceProperties {
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

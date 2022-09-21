@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZoneOffsetTransition")
 @js.native
-/* private */ class ZoneOffsetTransition () extends StObject {
+/* private */ open class ZoneOffsetTransition () extends StObject {
   
   def compareTo(transition: ZoneOffsetTransition): Double = js.native
   
@@ -17,8 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def duration(): Duration = js.native
   
   def durationSeconds(): Double = js.native
-  
-  def equals(other: js.Any): Boolean = js.native
   
   def instant(): Instant = js.native
   

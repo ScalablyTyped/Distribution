@@ -14,7 +14,7 @@ trait ColorScheme extends StObject {
   
   def Delete(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ColorScheme_typekey")
   var PowerPointDotColorScheme_typekey: ColorScheme
@@ -26,7 +26,7 @@ object ColorScheme {
     Colors: PpColorSchemeIndex => RGBColor,
     Count: Double,
     Delete: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotColorScheme_typekey: ColorScheme
   ): ColorScheme = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Colors = js.Any.fromFunction1(Colors), Count = Count.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object ColorScheme {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotColorScheme_typekey(value: ColorScheme): Self = StObject.set(x, "PowerPoint.ColorScheme_typekey", value.asInstanceOf[js.Any])
   }

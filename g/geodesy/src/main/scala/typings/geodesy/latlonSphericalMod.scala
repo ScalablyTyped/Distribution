@@ -14,7 +14,7 @@ object latlonSphericalMod {
   
   @JSImport("geodesy/latlon-spherical", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LatLonSpherical {
     def this(lat: Double, lon: Double) = this()
@@ -47,7 +47,7 @@ object latlonSphericalMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-spherical", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.dmsMod.default
   object Dms {
     

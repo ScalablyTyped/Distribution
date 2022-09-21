@@ -45,7 +45,7 @@ trait Breakpoint extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Breakpoint & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Breakpoint & TopLevel[Any]
   ] = js.undefined
   
   /** Breakpoint source location. */
@@ -114,13 +114,13 @@ object Breakpoint {
     
     inline def setEvaluatedExpressionsUndefined: Self = StObject.set(x, "evaluatedExpressions", js.undefined)
     
-    inline def setEvaluatedExpressionsVarargs(value: Variable*): Self = StObject.set(x, "evaluatedExpressions", js.Array(value :_*))
+    inline def setEvaluatedExpressionsVarargs(value: Variable*): Self = StObject.set(x, "evaluatedExpressions", js.Array(value*))
     
     inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setFinalTime(value: String): Self = StObject.set(x, "finalTime", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object Breakpoint {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Breakpoint & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Breakpoint & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -158,7 +158,7 @@ object Breakpoint {
     
     inline def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
-    inline def setStackFramesVarargs(value: StackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
+    inline def setStackFramesVarargs(value: StackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -176,6 +176,6 @@ object Breakpoint {
     
     inline def setVariableTableUndefined: Self = StObject.set(x, "variableTable", js.undefined)
     
-    inline def setVariableTableVarargs(value: Variable*): Self = StObject.set(x, "variableTable", js.Array(value :_*))
+    inline def setVariableTableVarargs(value: Variable*): Self = StObject.set(x, "variableTable", js.Array(value*))
   }
 }

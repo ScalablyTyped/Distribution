@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for Datastore.Lookup.
-  */
 trait SchemaLookupRequest extends StObject {
   
   /**
-    * Keys of entities to look up.
+    * Required. Keys of entities to look up.
     */
   var keys: js.UndefOr[js.Array[SchemaKey]] = js.undefined
   
@@ -32,7 +29,7 @@ object SchemaLookupRequest {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     

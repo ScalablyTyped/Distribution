@@ -65,6 +65,6 @@ object UpdateFlowEntitlementRequest {
     
     inline def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
-    inline def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

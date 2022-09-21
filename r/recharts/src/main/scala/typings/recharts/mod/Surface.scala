@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Surface")
 @js.native
-class Surface protected ()
-  extends Component[SurfaceProps, js.Object, js.Any] {
+open class Surface protected ()
+  extends Component[SurfaceProps, js.Object, Any] {
   def this(props: SurfaceProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SurfaceProps, context: js.Any) = this()
+  def this(props: SurfaceProps, context: Any) = this()
 }

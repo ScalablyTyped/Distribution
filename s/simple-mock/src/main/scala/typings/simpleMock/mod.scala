@@ -2,7 +2,6 @@ package typings.simpleMock
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.ArrayLike
-import typings.std.Error
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,26 +18,26 @@ object mod extends Shortcut {
     /**
       * arguments to call back with
       */
-    var cbArgs: ArrayLike[js.Any]
+    var cbArgs: ArrayLike[Any]
     
     var returnValue: T
     
-    var throwError: Error
+    var throwError: js.Error
   }
   object Action {
     
-    inline def apply[T](cbArgs: ArrayLike[js.Any], returnValue: T, throwError: Error): Action[T] = {
+    inline def apply[T](cbArgs: ArrayLike[Any], returnValue: T, throwError: js.Error): Action[T] = {
       val __obj = js.Dynamic.literal(cbArgs = cbArgs.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], throwError = throwError.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
     extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      inline def setCbArgs(value: ArrayLike[js.Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
+      inline def setCbArgs(value: ArrayLike[Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
       
       inline def setReturnValue(value: T): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       
-      inline def setThrowError(value: Error): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
+      inline def setThrowError(value: js.Error): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,17 +46,17 @@ object mod extends Shortcut {
     /**
       * first argument
       */
-    var arg: js.Any
+    var arg: Any
     
     /**
       * an array of arguments received on the call
       */
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     /**
       * the context (this) of the call
       */
-    var context: js.Any
+    var context: Any
     
     /**
       * autoincrementing number, can be compared to evaluate call order
@@ -72,43 +71,43 @@ object mod extends Shortcut {
     /**
       * the error thrown by the wrapped function
       */
-    var threw: Error
+    var threw: js.Error
   }
   object Calls {
     
-    inline def apply[T](arg: js.Any, args: js.Array[js.Any], context: js.Any, k: Double, returned: T, threw: Error): Calls[T] = {
+    inline def apply[T](arg: Any, args: js.Array[Any], context: Any, k: Double, returned: T, threw: js.Error): Calls[T] = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], returned = returned.asInstanceOf[js.Any], threw = threw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Calls[T]]
     }
     
     extension [Self <: Calls[?], T](x: Self & Calls[T]) {
       
-      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
       inline def setReturned(value: T): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
       
-      inline def setThrew(value: Error): Self = StObject.set(x, "threw", value.asInstanceOf[js.Any])
+      inline def setThrew(value: js.Error): Self = StObject.set(x, "threw", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait Fn[T] extends StObject {
     
-    def apply(args: js.Any*): T = js.native
+    def apply(args: Any*): T = js.native
   }
   
   @js.native
   trait Spy[T] extends StObject {
     
-    def apply(args: js.Any*): T = js.native
+    def apply(args: Any*): T = js.native
     
     /**
       * Number of times the function was called.
@@ -140,11 +139,11 @@ object mod extends Shortcut {
     /**
       * Returns a stub function that is also a spy.
       */
-    def mock(): Stub[js.Any] = js.native
+    def mock(): Stub[Any] = js.native
     /**
       * If obj has already has this function, it is wrapped in a spy. The resulting spy can be turned into a stub by further configuration. Restores with all mocks.
       */
-    def mock(obj: js.Any, key: String): Stub[js.Any] = js.native
+    def mock(obj: Any, key: String): Stub[Any] = js.native
     /**
       * Wraps fn in a spy.
       */
@@ -152,15 +151,15 @@ object mod extends Shortcut {
     /**
       * Wraps fn in a spy and sets this on the obj, restorable with all mocks.
       */
-    def mock[T](obj: js.Any, key: String, fn: Fn[T]): Stub[T] = js.native
+    def mock[T](obj: Any, key: String, fn: Fn[T]): Stub[T] = js.native
     /**
       * Sets the value on this object. E.g. mock(config, 'title', 'test') is the same as config.title = 'test', but restorable with all mocks.
       */
-    def mock[T](obj: js.Any, key: String, mockValue: T): T = js.native
+    def mock[T](obj: Any, key: String, mockValue: T): T = js.native
     @JSName("mock")
     def mock_T[T](): Stub[T] = js.native
     @JSName("mock")
-    def mock_T[T](obj: js.Any, key: String): Stub[T] = js.native
+    def mock_T[T](obj: Any, key: String): Stub[T] = js.native
     
     /**
       * Restores all current mocks.
@@ -169,7 +168,7 @@ object mod extends Shortcut {
     /**
       * Use this if you need to restore only a single mock value or function on an object.
       */
-    def restore(obj: js.Any, key: String): Unit = js.native
+    def restore(obj: Any, key: String): Unit = js.native
     
     /**
       * Wraps fn in a spy.
@@ -179,7 +178,7 @@ object mod extends Shortcut {
     /**
       * Returns a stub function that is also a spy.
       */
-    def stub(): Stub[js.Any] = js.native
+    def stub(): Stub[Any] = js.native
     @JSName("stub")
     def stub_T[T](): Stub[T] = js.native
   }
@@ -211,30 +210,30 @@ object mod extends Shortcut {
       * Configures this stub to call back with the arguments passed. It will use either the last argument as callback, or the argument at cbArgumentIndex.
       * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.
       */
-    def callback(args: js.Any*): Stub[T] = js.native
+    def callback(args: Any*): Stub[T] = js.native
     
     /**
       * Configures this stub to call back with the arguments passed. It will use either the last argument as callback, or the argument at cbArgumentIndex.
       * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.
       */
-    def callbackArgWith(cbArgumentIndex: Double, args: js.Any*): Stub[T] = js.native
+    def callbackArgWith(cbArgumentIndex: Double, args: Any*): Stub[T] = js.native
     
     /**
       * Configures this stub to call back with the arguments passed. It will use either the last argument as callback, or the argument at cbArgumentIndex.
       * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.
       */
-    def callbackAtIndex(cbArgumentIndex: Double, args: js.Any*): Stub[T] = js.native
+    def callbackAtIndex(cbArgumentIndex: Double, args: Any*): Stub[T] = js.native
     
     /**
       * Configures this stub to call back with the arguments passed. It will use either the last argument as callback, or the argument at cbArgumentIndex.
       * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.
       */
-    def callbackWith(args: js.Any*): Stub[T] = js.native
+    def callbackWith(args: Any*): Stub[T] = js.native
     
     /**
       * Configures the last configured function or callback to be called in this context, i.e. this will be obj.
       */
-    def inThisContext(obj: js.Any): Stub[T] = js.native
+    def inThisContext(obj: Any): Stub[T] = js.native
     
     /**
       * setting whether the queue of actions for this stub should repeat.
@@ -269,7 +268,7 @@ object mod extends Shortcut {
       * Configures this stub to throw this error.
       * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.
       */
-    def throwWith(err: Error): Stub[T] = js.native
+    def throwWith(err: js.Error): Stub[T] = js.native
     
     /**
       * Configures this stub to use the specified array of actions.

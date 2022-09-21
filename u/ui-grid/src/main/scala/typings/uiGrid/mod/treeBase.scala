@@ -21,7 +21,7 @@ object treeBase {
       *
       * This function will be called after the the default finalizerFn.  Defaults to undefined
       * @default undefined
-      * @param {IGridTreeBaseAggregationObject} aggregation Aggregation object
+      * @param aggregation Aggregation object
       */
     var customTreeAggregationFinalizerFn: js.UndefOr[js.Function1[/* aggregation */ IGridTreeBaseAggregationObject, Unit]] = js.undefined
     
@@ -32,15 +32,15 @@ object treeBase {
       * The function will be provided the aggregation item (in which you can store running totals),
       * the row value that is to be aggregated,
       * and that same row value converted to a number (most aggregations work on numbers)
-      * @param {IGridTreeBaseAggregationObject} aggregation
-      * @param {any} fieldValue Value of the field
-      * @param {number} numValue Numeric value of the field
-      * @param {IGridRow} row Row objet
+      * @param aggregation
+      * @param fieldValue Value of the field
+      * @param numValue Numeric value of the field
+      * @param row Row objet
       */
     var customTreeAggregationFn: js.UndefOr[
         js.Function4[
           /* aggregation */ IGridTreeBaseAggregationObject, 
-          /* fieldValue */ js.Any, 
+          /* fieldValue */ Any, 
           /* numValue */ Double, 
           /* row */ IGridRowOf[TEntity], 
           Unit
@@ -104,7 +104,7 @@ object treeBase {
       inline def setCustomTreeAggregationFinalizerFnUndefined: Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.undefined)
       
       inline def setCustomTreeAggregationFn(
-        value: (/* aggregation */ IGridTreeBaseAggregationObject, /* fieldValue */ js.Any, /* numValue */ Double, /* row */ IGridRowOf[TEntity]) => Unit
+        value: (/* aggregation */ IGridTreeBaseAggregationObject, /* fieldValue */ Any, /* numValue */ Double, /* row */ IGridRowOf[TEntity]) => Unit
       ): Self = StObject.set(x, "customTreeAggregationFn", js.Any.fromFunction4(value))
       
       inline def setCustomTreeAggregationFnUndefined: Self = StObject.set(x, "customTreeAggregationFn", js.undefined)
@@ -256,14 +256,14 @@ object treeBase {
     
     /**
       * collapse the specified row. When you expand the row again, all grandchildren will retain their state
-      * @param {IGridRow} row The row to collapse
+      * @param row The row to collapse
       */
     def collapseRow(row: IGridRowOf[TEntity]): Unit
     
     /**
       * collapse all children of the specified row. When you expand the row again, all grandchildren will be
       * collapsed
-      * @param {IGridRow} row The row to collapse children of
+      * @param row The row to collapse children of
       */
     def collapseRowChildren(row: IGridRowOf[TEntity]): Unit
     
@@ -274,13 +274,14 @@ object treeBase {
     
     /**
       * Expand the immediate children of the specified row
-      * @param {IGridRow} row The row to expand
+      * @param row The row to expand
+      * @param recursive true if you wish to expand the row's ancients
       */
-    def expandRow(row: IGridRowOf[TEntity]): Unit
+    def expandRow(row: IGridRowOf[TEntity], recursive: Boolean): Unit
     
     /**
       * Get the children of the specified row
-      * @param {IGridRow} row The row you want the children of
+      * @param row The row you want the children of
       * @returns Array<IGridRow> Array of children rows
       */
     def getRowChildren(row: IGridRowOf[TEntity]): js.Array[IGridRowOf[TEntity]]
@@ -289,7 +290,7 @@ object treeBase {
       * Get the tree state for this grid, used by the saveState feature Returned treeState as an object
       * ```{ expandedState: { uid: 'expanded', uid: 'collapsed' } }```
       * where expandedState is a hash of row uid and the current expanded state
-      * @returns {ITreeState} tree state
+      * @returns tree state
       * NOTE this is an incomplete feature in uiGrid
       */
     def getTreeState(): ITreeState
@@ -299,13 +300,13 @@ object treeBase {
     
     /**
       * Set the expanded states of the tree
-      * @param {ITreeState} config The config you want to apply, in the format provided by getTreeState
+      * @param config The config you want to apply, in the format provided by getTreeState
       */
     def setTreeState(config: ITreeState): Unit
     
     /**
       * call expand if row is collapsed, and collapse if it is expanded
-      * @param {IGridRow} row The row to toggle
+      * @param row The row to toggle
       */
     def toggleRowTreeState(row: IGridRowOf[TEntity]): Unit
   }
@@ -316,14 +317,14 @@ object treeBase {
       collapseRow: IGridRowOf[TEntity] => Unit,
       collapseRowChildren: IGridRowOf[TEntity] => Unit,
       expandAllRows: () => Unit,
-      expandRow: IGridRowOf[TEntity] => Unit,
+      expandRow: (IGridRowOf[TEntity], Boolean) => Unit,
       getRowChildren: IGridRowOf[TEntity] => js.Array[IGridRowOf[TEntity]],
       getTreeState: () => ITreeState,
       on: RowCollapsed[TEntity],
       setTreeState: ITreeState => Unit,
       toggleRowTreeState: IGridRowOf[TEntity] => Unit
     ): IGridTreeBaseApi[TEntity] = {
-      val __obj = js.Dynamic.literal(collapseAllRows = js.Any.fromFunction0(collapseAllRows), collapseRow = js.Any.fromFunction1(collapseRow), collapseRowChildren = js.Any.fromFunction1(collapseRowChildren), expandAllRows = js.Any.fromFunction0(expandAllRows), expandRow = js.Any.fromFunction1(expandRow), getRowChildren = js.Any.fromFunction1(getRowChildren), getTreeState = js.Any.fromFunction0(getTreeState), on = on.asInstanceOf[js.Any], setTreeState = js.Any.fromFunction1(setTreeState), toggleRowTreeState = js.Any.fromFunction1(toggleRowTreeState))
+      val __obj = js.Dynamic.literal(collapseAllRows = js.Any.fromFunction0(collapseAllRows), collapseRow = js.Any.fromFunction1(collapseRow), collapseRowChildren = js.Any.fromFunction1(collapseRowChildren), expandAllRows = js.Any.fromFunction0(expandAllRows), expandRow = js.Any.fromFunction2(expandRow), getRowChildren = js.Any.fromFunction1(getRowChildren), getTreeState = js.Any.fromFunction0(getTreeState), on = on.asInstanceOf[js.Any], setTreeState = js.Any.fromFunction1(setTreeState), toggleRowTreeState = js.Any.fromFunction1(toggleRowTreeState))
       __obj.asInstanceOf[IGridTreeBaseApi[TEntity]]
     }
     
@@ -337,7 +338,7 @@ object treeBase {
       
       inline def setExpandAllRows(value: () => Unit): Self = StObject.set(x, "expandAllRows", js.Any.fromFunction0(value))
       
-      inline def setExpandRow(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "expandRow", js.Any.fromFunction1(value))
+      inline def setExpandRow(value: (IGridRowOf[TEntity], Boolean) => Unit): Self = StObject.set(x, "expandRow", js.Any.fromFunction2(value))
       
       inline def setGetRowChildren(value: IGridRowOf[TEntity] => js.Array[IGridRowOf[TEntity]]): Self = StObject.set(x, "getRowChildren", js.Any.fromFunction1(value))
       
@@ -354,10 +355,10 @@ object treeBase {
   @js.native
   trait IGridTreeBaseCustomAggregation[TEntity] extends StObject {
     
-    def aggregationFn(aggregation: IGridTreeBaseAggregationObject, fieldValue: js.Any, numValue: Double): Unit = js.native
+    def aggregationFn(aggregation: IGridTreeBaseAggregationObject, fieldValue: Any, numValue: Double): Unit = js.native
     def aggregationFn(
       aggregation: IGridTreeBaseAggregationObject,
-      fieldValue: js.Any,
+      fieldValue: Any,
       numValue: Double,
       row: IGridRowOf[TEntity]
     ): Unit = js.native

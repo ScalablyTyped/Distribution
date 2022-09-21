@@ -9,10 +9,10 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/modeled-endpoint-middleware |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 298 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 45.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmodeled-endpoint-middleware)

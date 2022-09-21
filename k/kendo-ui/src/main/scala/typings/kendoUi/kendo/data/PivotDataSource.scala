@@ -21,7 +21,7 @@ trait PivotDataSource
   def cube(): String = js.native
   def cube(`val`: String): Unit = js.native
   
-  def discover(options: PivotDiscoverRequestOptions): JQueryPromise[js.Any] = js.native
+  def discover(options: PivotDiscoverRequestOptions): JQueryPromise[Any] = js.native
   
   def init(options: PivotDataSourceOptions): Unit = js.native
   
@@ -33,15 +33,15 @@ trait PivotDataSource
   def rows(): js.Array[String] = js.native
   def rows(`val`: js.Array[String]): Unit = js.native
   
-  def schemaCatalogs(): JQueryPromise[js.Any] = js.native
+  def schemaCatalogs(): JQueryPromise[Any] = js.native
   
-  def schemaCubes(): JQueryPromise[js.Any] = js.native
+  def schemaCubes(): JQueryPromise[Any] = js.native
   
-  def schemaDimensions(): JQueryPromise[js.Any] = js.native
+  def schemaDimensions(): JQueryPromise[Any] = js.native
   
-  def schemaHierarchies(): JQueryPromise[js.Any] = js.native
+  def schemaHierarchies(): JQueryPromise[Any] = js.native
   
-  def schemaLevels(): JQueryPromise[js.Any] = js.native
+  def schemaLevels(): JQueryPromise[Any] = js.native
   
-  def schemaMeasures(): JQueryPromise[js.Any] = js.native
+  def schemaMeasures(): JQueryPromise[Any] = js.native
 }

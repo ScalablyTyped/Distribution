@@ -11,7 +11,7 @@ object rawAudioRecorderMod {
   
   @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder")
   @js.native
-  class RawAudioRecorder protected () extends AudioRecorder {
+  open class RawAudioRecorder protected () extends AudioRecorder {
     /**
       * @param stream The Guacamole.OutputStream to write audio data to.
       *

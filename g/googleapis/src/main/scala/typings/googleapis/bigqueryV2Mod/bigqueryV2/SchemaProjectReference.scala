@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaProjectReference extends StObject {
   
   /**
-    * [Required] ID of the project. Can be either the numeric ID or the
-    * assigned ID of the project.
+    * [Required] ID of the project. Can be either the numeric ID or the assigned ID of the project.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProjectReference {
   
@@ -22,6 +21,8 @@ object SchemaProjectReference {
   extension [Self <: SchemaProjectReference](x: Self) {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }

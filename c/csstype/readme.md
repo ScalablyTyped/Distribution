@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstype
 
-Typings are for version 2.6.14
+Typings are for version 3.1.1
 
 ## Library description:
 Strict TypeScript and Flow types for style based on MDN data
@@ -10,10 +10,10 @@ Strict TypeScript and Flow types for style based on MDN data
 | ------------------ | :-------------: |
 | Full name          | csstype |
 | Keywords           | css, style, typescript, flow, typings, types, definitions |
-| # releases         | 28 |
-| # dependents       | 415 |
-| # downloads        | 422306791 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 9.265619033333333E7 |
+| # stars            | 1330.0 |
 
 ## Links
 - [Homepage](https://github.com/frenic/csstype#readme)

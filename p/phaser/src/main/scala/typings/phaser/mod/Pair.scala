@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "Pair")
 @js.native
-class Pair ()
+open class Pair ()
   extends StObject
      with typings.phaser.MatterJS.Pair
 object Pair {

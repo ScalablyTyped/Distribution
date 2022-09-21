@@ -8,5 +8,5 @@ object invalidArgumentExceptionMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/InvalidArgumentException", "InvalidArgumentException")
   @js.native
-  val InvalidArgumentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidArgumentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

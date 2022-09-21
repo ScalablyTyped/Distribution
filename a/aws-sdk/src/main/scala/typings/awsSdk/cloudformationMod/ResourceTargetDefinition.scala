@@ -17,7 +17,7 @@ trait ResourceTargetDefinition extends StObject {
   var Name: js.UndefOr[PropertyName] = js.undefined
   
   /**
-    * If the Attribute value is Properties, indicates whether a change to this property causes the resource to be recreated. The value can be Never, Always, or Conditionally. To determine the conditions for a Conditionally recreation, see the update behavior for that property in the AWS CloudFormation User Guide.
+    * If the Attribute value is Properties, indicates whether a change to this property causes the resource to be recreated. The value can be Never, Always, or Conditionally. To determine the conditions for a Conditionally recreation, see the update behavior for that property in the CloudFormation User Guide.
     */
   var RequiresRecreation: js.UndefOr[typings.awsSdk.cloudformationMod.RequiresRecreation] = js.undefined
 }

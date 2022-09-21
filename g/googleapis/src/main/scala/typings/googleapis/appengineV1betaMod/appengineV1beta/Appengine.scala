@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * App Engine Admin API
-  *
-  * Provisions and manages developers&#39; App Engine applications.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const appengine = google.appengine('v1beta');
-  *
-  * @namespace appengine
-  * @type {Function}
-  * @version v1beta
-  * @variation v1beta
-  * @param {object=} options Options for Appengine
-  */
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Appengine")
 @js.native
-class Appengine protected () extends StObject {
+open class Appengine protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

@@ -7,12 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CanvasImageData extends StObject {
   
+  /* standard dom */
   def createImageData(imagedata: ImageData): ImageData = js.native
+  /* standard dom */
   def createImageData(sw: Double, sh: Double): ImageData = js.native
+  def createImageData(sw: Double, sh: Double, settings: ImageDataSettings): ImageData = js.native
   
+  /* standard dom */
   def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
+  def getImageData(sx: Double, sy: Double, sw: Double, sh: Double, settings: ImageDataSettings): ImageData = js.native
   
+  /* standard dom */
   def putImageData(imagedata: ImageData, dx: Double, dy: Double): Unit = js.native
+  /* standard dom */
   def putImageData(
     imagedata: ImageData,
     dx: Double,

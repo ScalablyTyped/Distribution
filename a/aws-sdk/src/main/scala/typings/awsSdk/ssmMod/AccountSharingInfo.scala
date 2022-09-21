@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountSharingInfo extends StObject {
   
   /**
-    * The AWS account ID where the current document is shared.
+    * The Amazon Web Services account ID where the current document is shared.
     */
   var AccountId: js.UndefOr[typings.awsSdk.ssmMod.AccountId] = js.undefined
   

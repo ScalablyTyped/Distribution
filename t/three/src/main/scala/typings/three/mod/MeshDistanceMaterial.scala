@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "MeshDistanceMaterial")
 @js.native
-class MeshDistanceMaterial ()
-  extends typings.three.materialsMod.MeshDistanceMaterial {
+open class MeshDistanceMaterial ()
+  extends typings.three.threeMod.MeshDistanceMaterial {
   def this(parameters: MeshDistanceMaterialParameters) = this()
 }

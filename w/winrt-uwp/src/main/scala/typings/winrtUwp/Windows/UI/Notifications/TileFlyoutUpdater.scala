@@ -6,43 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TileFlyoutUpdater extends StObject {
   
-  var clear: js.Any
+  var clear: Any
   
   /* unmapped type */
-  var setting: js.Any
+  var setting: Any
   
   /* unmapped type */
-  var startPeriodicUpdate: js.Any
+  var startPeriodicUpdate: Any
   
   /* unmapped type */
-  var stopPeriodicUpdate: js.Any
+  var stopPeriodicUpdate: Any
   
   /* unmapped type */
-  var update: js.Any
+  var update: Any
 }
 object TileFlyoutUpdater {
   
-  inline def apply(
-    clear: js.Any,
-    setting: js.Any,
-    startPeriodicUpdate: js.Any,
-    stopPeriodicUpdate: js.Any,
-    update: js.Any
-  ): TileFlyoutUpdater = {
+  inline def apply(clear: Any, setting: Any, startPeriodicUpdate: Any, stopPeriodicUpdate: Any, update: Any): TileFlyoutUpdater = {
     val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any], startPeriodicUpdate = startPeriodicUpdate.asInstanceOf[js.Any], stopPeriodicUpdate = stopPeriodicUpdate.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileFlyoutUpdater]
   }
   
   extension [Self <: TileFlyoutUpdater](x: Self) {
     
-    inline def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
-    inline def setStartPeriodicUpdate(value: js.Any): Self = StObject.set(x, "startPeriodicUpdate", value.asInstanceOf[js.Any])
+    inline def setStartPeriodicUpdate(value: Any): Self = StObject.set(x, "startPeriodicUpdate", value.asInstanceOf[js.Any])
     
-    inline def setStopPeriodicUpdate(value: js.Any): Self = StObject.set(x, "stopPeriodicUpdate", value.asInstanceOf[js.Any])
+    inline def setStopPeriodicUpdate(value: Any): Self = StObject.set(x, "stopPeriodicUpdate", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

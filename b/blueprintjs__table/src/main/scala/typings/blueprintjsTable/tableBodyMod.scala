@@ -3,12 +3,12 @@ package typings.blueprintjsTable
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.anon.Loading
-import typings.blueprintjsTable.cellMod.ICellRenderer
-import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typings.blueprintjsTable.esmRegionsMod.IRegion
+import typings.blueprintjsTable.cellMod.CellRenderer
+import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
+import typings.blueprintjsTable.esmRegionsMod.Region
+import typings.blueprintjsTable.gridMod.ColumnIndices
 import typings.blueprintjsTable.gridMod.Grid
-import typings.blueprintjsTable.gridMod.IColumnIndices
-import typings.blueprintjsTable.gridMod.IRowIndices
+import typings.blueprintjsTable.gridMod.RowIndices
 import typings.blueprintjsTable.locatorMod.ILocator
 import typings.blueprintjsTable.menuContextMod.IContextMenuRenderer
 import typings.blueprintjsTable.menuContextMod.IMenuContext
@@ -29,20 +29,20 @@ object tableBodyMod {
   
   @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody")
   @js.native
-  class TableBody protected ()
-    extends AbstractComponent2[ITableBodyProps, js.Object, js.Object] {
-    def this(props: ITableBodyProps) = this()
-    def this(props: ITableBodyProps, context: js.Any) = this()
+  open class TableBody protected ()
+    extends AbstractComponent2[TableBodyProps, js.Object, js.Object] {
+    def this(props: TableBodyProps) = this()
+    def this(props: TableBodyProps, context: Any) = this()
     
-    /* private */ var activationCell: js.Any = js.native
+    /* private */ var activationCell: Any = js.native
     
-    /* private */ var handleSelectionEnd: js.Any = js.native
+    /* private */ var handleSelectionEnd: Any = js.native
     
-    /* private */ var locateClick: js.Any = js.native
+    /* private */ var locateClick: Any = js.native
     
-    /* private */ var locateDrag: js.Any = js.native
+    /* private */ var locateDrag: Any = js.native
     
-    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
+    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element] = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTableBody(nextProps: ITableBodyProps): Boolean = js.native
@@ -54,6 +54,9 @@ object tableBodyMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /**
+      * @deprecated, will be removed from public API in the next major version
+      */
     inline def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody.defaultProps")
@@ -66,21 +69,21 @@ object tableBodyMod {
   - typings.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps because var conflicts: focusedCell. Inlined cellRenderer, grid, loading, onCompleteRender, renderMode, viewportRect */ trait ITableBodyProps
     extends StObject
        with ISelectableProps
-       with IRowIndices
-       with IColumnIndices
+       with RowIndices
+       with ColumnIndices
        with IProps {
     
     /**
       * An optional callback for displaying a context menu when right-clicking
       * on the table body. The callback is supplied with an `IMenuContext`
-      * containing the `IRegion`s of interest.
+      * containing the `Region`s of interest.
       */
     var bodyContextMenuRenderer: js.UndefOr[IContextMenuRenderer] = js.undefined
     
     /**
       * A cell renderer for the cells in the body.
       */
-    var cellRenderer: ICellRenderer
+    var cellRenderer: CellRenderer
     
     /**
       * The grid computes sizes of cells, rows, or columns from the
@@ -119,6 +122,7 @@ object tableBodyMod {
       * `RenderMode.BATCH_ON_UPDATE`, because there are actually multiple updates
       * that need to happen at higher levels before the table is considered fully
       * "mounted"; thus, we let higher components tell us when to switch modes.
+      *
       * @default RenderMode.BATCH
       */
     var renderMode: js.UndefOr[BATCH | NONE] = js.undefined
@@ -133,14 +137,14 @@ object tableBodyMod {
   object ITableBodyProps {
     
     inline def apply(
-      cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement,
+      cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement],
       columnIndexEnd: Double,
       columnIndexStart: Double,
       grid: Grid,
       loading: Boolean,
       locator: ILocator,
-      onFocusedCell: IFocusedCellCoordinates => Unit,
-      onSelection: js.Array[IRegion] => Unit,
+      onFocusedCell: FocusedCellCoordinates => Unit,
+      onSelection: js.Array[Region] => Unit,
       rowIndexEnd: Double,
       rowIndexStart: Double,
       viewportRect: Rect
@@ -155,7 +159,7 @@ object tableBodyMod {
       
       inline def setBodyContextMenuRendererUndefined: Self = StObject.set(x, "bodyContextMenuRenderer", js.undefined)
       
-      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement]): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
       inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -182,4 +186,6 @@ object tableBodyMod {
       inline def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
     }
   }
+  
+  type TableBodyProps = ITableBodyProps
 }

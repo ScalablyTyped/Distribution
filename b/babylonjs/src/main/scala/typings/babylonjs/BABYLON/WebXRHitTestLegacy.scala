@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IWebXRFeature because Already inherited
-- typings.babylonjs.BABYLON.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @js.native
+- typings.babylonjs.BABYLON.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, getXRSessionInitExtension, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @js.native
 trait WebXRHitTestLegacy
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _direction: js.Any = js.native
+  /* private */ var _direction: Any = js.native
   
-  /* private */ var _mat: js.Any = js.native
+  /* private */ var _mat: Any = js.native
   
-  /* private */ var _onHitTestResults: js.Any = js.native
+  /* private */ var _onHitTestResults: Any = js.native
   
-  /* private */ var _onSelect: js.Any = js.native
+  /* private */ var _onSelect: Any = js.native
   
-  /* private */ var _onSelectEnabled: js.Any = js.native
+  /* private */ var _onSelectEnabled: Any = js.native
   
-  /* private */ var _origin: js.Any = js.native
+  /* private */ var _origin: Any = js.native
   
   /**
     * Populated with the last native XR Hit Results

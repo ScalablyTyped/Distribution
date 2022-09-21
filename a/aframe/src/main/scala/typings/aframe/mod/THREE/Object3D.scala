@@ -1,5 +1,6 @@
 package typings.aframe.mod.THREE
 
+import typings.three.eventDispatcherMod.BaseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.Object3D")
 @js.native
-class Object3D ()
-  extends typings.three.mod.Object3D
+open class Object3D[E /* <: BaseEvent */] ()
+  extends typings.three.mod.Object3D[E]

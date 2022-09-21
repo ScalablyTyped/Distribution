@@ -29,7 +29,7 @@ object ModifierFlags extends StObject {
   sealed trait All
     extends StObject
        with ModifierFlags
-  /* 11263 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
+  /* 257023 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
   
   @js.native
   sealed trait Ambient
@@ -48,6 +48,12 @@ object ModifierFlags extends StObject {
     extends StObject
        with ModifierFlags
   /* 2048 */ val Const: typings.typescript.mod.ModifierFlags.Const & Double = js.native
+  
+  @js.native
+  sealed trait Decorator
+    extends StObject
+       with ModifierFlags
+  /* 131072 */ val Decorator: typings.typescript.mod.ModifierFlags.Decorator & Double = js.native
   
   @js.native
   sealed trait Default
@@ -86,6 +92,18 @@ object ModifierFlags extends StObject {
   /* 4096 */ val HasComputedJSDocModifiers: typings.typescript.mod.ModifierFlags.HasComputedJSDocModifiers & Double = js.native
   
   @js.native
+  sealed trait In
+    extends StObject
+       with ModifierFlags
+  /* 32768 */ val In: typings.typescript.mod.ModifierFlags.In & Double = js.native
+  
+  @js.native
+  sealed trait Modifier
+    extends StObject
+       with ModifierFlags
+  /* 125951 */ val Modifier: typings.typescript.mod.ModifierFlags.Modifier & Double = js.native
+  
+  @js.native
   sealed trait NonPublicAccessibilityModifier
     extends StObject
        with ModifierFlags
@@ -98,10 +116,22 @@ object ModifierFlags extends StObject {
   /* 0 */ val None: typings.typescript.mod.ModifierFlags.None & Double = js.native
   
   @js.native
+  sealed trait Out
+    extends StObject
+       with ModifierFlags
+  /* 65536 */ val Out: typings.typescript.mod.ModifierFlags.Out & Double = js.native
+  
+  @js.native
+  sealed trait Override
+    extends StObject
+       with ModifierFlags
+  /* 16384 */ val Override: typings.typescript.mod.ModifierFlags.Override & Double = js.native
+  
+  @js.native
   sealed trait ParameterPropertyModifier
     extends StObject
        with ModifierFlags
-  /* 92 */ val ParameterPropertyModifier: typings.typescript.mod.ModifierFlags.ParameterPropertyModifier & Double = js.native
+  /* 16476 */ val ParameterPropertyModifier: typings.typescript.mod.ModifierFlags.ParameterPropertyModifier & Double = js.native
   
   @js.native
   sealed trait Private
@@ -137,5 +167,5 @@ object ModifierFlags extends StObject {
   sealed trait TypeScriptModifier
     extends StObject
        with ModifierFlags
-  /* 2270 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
+  /* 116958 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
 }

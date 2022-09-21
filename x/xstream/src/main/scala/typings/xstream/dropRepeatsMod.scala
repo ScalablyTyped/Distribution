@@ -18,7 +18,7 @@ object dropRepeatsMod {
   
   @JSImport("xstream/extra/dropRepeats", "DropRepeatsOperator")
   @js.native
-  class DropRepeatsOperator[T] protected ()
+  open class DropRepeatsOperator[T] protected ()
     extends StObject
        with Operator[T, T] {
     def this(ins: Stream[T]) = this()
@@ -28,7 +28,7 @@ object dropRepeatsMod {
     override def _c(): Unit = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
     /* CompleteClass */
     override def _n(v: T): Unit = js.native
@@ -52,6 +52,6 @@ object dropRepeatsMod {
     /* CompleteClass */
     var `type`: String = js.native
     
-    /* private */ var v: js.Any = js.native
+    /* private */ var v: Any = js.native
   }
 }

@@ -10,9 +10,9 @@ object gameObjectMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/gameObject/GameObject", "GameObject")
   @js.native
-  class GameObject () extends EntityObject {
+  open class GameObject () extends EntityObject {
     
-    /* protected */ var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<GameObject> */ js.Any = js.native
+    /* protected */ var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<GameObject> */ Any = js.native
     
     var isVisible: Boolean = js.native
     

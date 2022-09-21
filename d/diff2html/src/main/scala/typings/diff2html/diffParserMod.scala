@@ -16,6 +16,12 @@ object diffParserMod {
   
   trait DiffParserConfig extends StObject {
     
+    var diffMaxChanges: js.UndefOr[Double] = js.undefined
+    
+    var diffMaxLineLength: js.UndefOr[Double] = js.undefined
+    
+    var diffTooBigMessage: js.UndefOr[js.Function1[/* fileIndex */ Double, String]] = js.undefined
+    
     var dstPrefix: js.UndefOr[String] = js.undefined
     
     var srcPrefix: js.UndefOr[String] = js.undefined
@@ -28,6 +34,18 @@ object diffParserMod {
     }
     
     extension [Self <: DiffParserConfig](x: Self) {
+      
+      inline def setDiffMaxChanges(value: Double): Self = StObject.set(x, "diffMaxChanges", value.asInstanceOf[js.Any])
+      
+      inline def setDiffMaxChangesUndefined: Self = StObject.set(x, "diffMaxChanges", js.undefined)
+      
+      inline def setDiffMaxLineLength(value: Double): Self = StObject.set(x, "diffMaxLineLength", value.asInstanceOf[js.Any])
+      
+      inline def setDiffMaxLineLengthUndefined: Self = StObject.set(x, "diffMaxLineLength", js.undefined)
+      
+      inline def setDiffTooBigMessage(value: /* fileIndex */ Double => String): Self = StObject.set(x, "diffTooBigMessage", js.Any.fromFunction1(value))
+      
+      inline def setDiffTooBigMessageUndefined: Self = StObject.set(x, "diffTooBigMessage", js.undefined)
       
       inline def setDstPrefix(value: String): Self = StObject.set(x, "dstPrefix", value.asInstanceOf[js.Any])
       

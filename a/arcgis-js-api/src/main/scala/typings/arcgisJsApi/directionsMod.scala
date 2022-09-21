@@ -21,11 +21,11 @@ object directionsMod extends Shortcut {
   @JSImport("esri/widgets/Directions", JSImport.Namespace)
   @js.native
   /**
-    * The Directions Widget provides a way to build driving and walking directions using ArcGIS Online and custom Network Analysis Route services.
+    * The Directions widget provides a way to calculate directions, between two or more input locations with a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html), using ArcGIS Online and custom Network Analysis Route services.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Directions {
     def this(properties: DirectionsProperties) = this()
@@ -36,9 +36,9 @@ object directionsMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
       */
     /* CompleteClass */
-    override def goToOverride(view: MapView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: MapView, goToParameters: Any): Unit = js.native
     /* CompleteClass */
-    override def goToOverride(view: SceneView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: SceneView, goToParameters: Any): Unit = js.native
     /**
       * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
       *

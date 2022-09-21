@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines an audio media stream. */
 @JSGlobal("Windows.Media.Core.AudioStreamDescriptor")
 @js.native
-class AudioStreamDescriptor protected ()
+open class AudioStreamDescriptor protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.AudioStreamDescriptor {
   /**

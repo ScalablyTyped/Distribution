@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jsonMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/json", JSImport.Namespace)
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/json", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def jsonObjectOrNull(s: String): StringDictionary[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonObjectOrNull")(s.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any] | Null]
+  inline def jsonObjectOrNull(s: String): StringDictionary[Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonObjectOrNull")(s.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any] | Null]
 }

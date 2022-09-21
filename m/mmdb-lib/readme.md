@@ -1,7 +1,7 @@
 
 # Scala.js typings for mmdb-lib
 
-Typings are for version 1.2.0
+Typings are for version 2.0.2
 
 ## Library description:
 Maxmind DB (MMDB) Library
@@ -10,10 +10,10 @@ Maxmind DB (MMDB) Library
 | ------------------ | :-------------: |
 | Full name          | mmdb-lib |
 | Keywords           | maxmind, mmdb, geo, geoip, geoip2 |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 391264 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 452607.3333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/runk/mmdb-lib)

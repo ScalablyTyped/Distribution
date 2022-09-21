@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-safe-area-context
 
-Typings are for version 3.1.4
+Typings are for version 4.3.4
 
 ## Library description:
 A flexible way to handle safe area, also works on Android and web.
@@ -10,10 +10,10 @@ A flexible way to handle safe area, also works on Android and web.
 | ------------------ | :-------------: |
 | Full name          | react-native-safe-area-context |
 | Keywords           | react-native, react native, react-native-web, expo-web, safe area, view |
-| # releases         | 58 |
-| # dependents       | 207 |
-| # downloads        | 11886703 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 2254468.6666666665 |
+| # stars            | 1534.0 |
 
 ## Links
 - [Homepage](https://github.com/th3rdwave/react-native-safe-area-context#readme)

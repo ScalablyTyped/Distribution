@@ -1,7 +1,7 @@
 
 # Scala.js typings for hastscript
 
-Typings are for version 6.0.0
+Typings are for version 7.0.2
 
 ## Library description:
 hast utility to create trees
@@ -10,10 +10,10 @@ hast utility to create trees
 | ------------------ | :-------------: |
 | Full name          | hastscript |
 | Keywords           | unist, hast, hast-util, util, utility, html, rehype, vdom, virtual, dom, hyperscript, dsl |
-| # releases         | 6 |
-| # dependents       | 47 |
-| # downloads        | 117576905 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2044723E7 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hastscript#readme)

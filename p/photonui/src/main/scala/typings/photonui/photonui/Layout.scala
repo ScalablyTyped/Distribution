@@ -11,7 +11,7 @@ trait Layout
      with Container {
   
   def addChild(widget: Widget): Unit = js.native
-  def addChild(widget: Widget, layoutOptions: StringDictionary[js.Any]): Unit = js.native
+  def addChild(widget: Widget, layoutOptions: StringDictionary[Any]): Unit = js.native
   
   var children: js.Array[Widget] = js.native
   

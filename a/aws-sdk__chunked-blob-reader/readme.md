@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__chunked-blob-reader
 
-Typings are for version 1.0.0-rc.3
+Typings are for version 3.170.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/chunked-blob-reader/latest.svg)](https://www.npmjs.com/package/@aws-sdk/chunked-blob-reader) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/chunked-blob-reader.svg)](https://www.npmjs.com/pac
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.3
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-blob-reader |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 2 |
-| # downloads        | 4562333 |
-| # stars            | 0 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 5612127.0 |
+| # stars            | 1851.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/chunked-blob-reader)

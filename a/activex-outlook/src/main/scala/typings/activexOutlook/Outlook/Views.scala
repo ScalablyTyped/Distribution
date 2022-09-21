@@ -14,14 +14,14 @@ trait Views extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): View
+  def Item(Index: Any): View
   
   /* private */ @JSName("Outlook.Views_typekey")
   var OutlookDotViews_typekey: Views
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Remove(Index: js.Any): Unit
+  def Remove(Index: Any): Unit
   
   val Session: NameSpace
 }
@@ -32,10 +32,10 @@ object Views {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => View,
+    Item: Any => View,
     OutlookDotViews_typekey: Views,
-    Parent: js.Any,
-    Remove: js.Any => Unit,
+    Parent: Any,
+    Remove: Any => Unit,
     Session: NameSpace
   ): Views = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction3(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Remove = js.Any.fromFunction1(Remove), Session = Session.asInstanceOf[js.Any])
@@ -53,13 +53,13 @@ object Views {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => View): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => View): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotViews_typekey(value: Views): Self = StObject.set(x, "Outlook.Views_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

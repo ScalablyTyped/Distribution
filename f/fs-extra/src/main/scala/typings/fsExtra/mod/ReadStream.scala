@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fs-extra", "ReadStream")
 @js.native
-class ReadStream ()
+open class ReadStream ()
   extends typings.node.fsMod.ReadStream {
   def this(opts: ReadableOptions) = this()
 }

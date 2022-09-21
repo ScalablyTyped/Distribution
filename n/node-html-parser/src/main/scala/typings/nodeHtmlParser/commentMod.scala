@@ -8,8 +8,13 @@ object commentMod {
   
   @JSImport("node-html-parser/dist/nodes/comment", JSImport.Default)
   @js.native
-  class default protected () extends CommentNode {
-    def this(rawText: String) = this()
+  open class default protected () extends CommentNode {
+    def this(rawText: String, parentNode: typings.nodeHtmlParser.htmlMod.default) = this()
+    def this(
+      rawText: String,
+      parentNode: typings.nodeHtmlParser.htmlMod.default,
+      range: js.Tuple2[Double, Double]
+    ) = this()
   }
   
   @js.native

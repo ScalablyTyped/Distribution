@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.page.anon.PartialOptions
-import typings.std.RegExp
+import typings.std.MouseEvent
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PageJS {
   
-  type Callback = js.Function2[/* ctx */ Context, /* next */ js.Function0[js.Any], js.Any]
+  type Callback = js.Function2[/* ctx */ Context, /* next */ js.Function0[Any], Any]
   
   /**
     * Routes are passed Context objects, these may be used to share state, for example ctx.user =, as well as the history "state" ctx.state that the pushState API provides.
@@ -19,17 +20,17 @@ object PageJS {
   @js.native
   trait Context
     extends StObject
-       with /* idx */ StringDictionary[js.Any]
+       with /* idx */ StringDictionary[Any]
        with /**
     * Initialize a new "request" `Context` with the given `path` and optional initial `state`.
     * @param {string} path  path
     * @param {any}    state state
     */
   Instantiable1[/* path */ String, Context]
-       with Instantiable2[/* path */ String, /* state */ js.Any, Context] {
+       with Instantiable2[/* path */ String, /* state */ Any, Context] {
     
     /**
-      *  Pathname including the "base" (if any) and query string "/admin/login?foo=bar".
+      *  Pathname including the "base" (if any) and query string "/admin/login?foo=bar#zee".
       */
     var canonicalPath: String = js.native
     
@@ -39,12 +40,17 @@ object PageJS {
     var handled: Boolean = js.native
     
     /**
-      * The parameters from the url, e.g. /user/:id => Context.params.id
+      *  Hash void of leading # such as "zee", defaults to "".
       */
-    var params: js.Any = js.native
+    var hash: String = js.native
     
     /**
-      *  Pathname and query string "/login?foo=bar".
+      * The parameters from the url, e.g. /user/:id => Context.params.id
+      */
+    var params: Any = js.native
+    
+    /**
+      *  Pathname and query string "/login?foo=bar#zee".
       */
     var path: String = js.native
     
@@ -71,7 +77,7 @@ object PageJS {
     /**
       *  The pushState state object.
       */
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     /**
       * The pushState title.
@@ -87,7 +93,7 @@ object PageJS {
     var click: Boolean
     
     /**
-      * remove URL encoding frfrom path components
+      * remove URL encoding from path components
       */
     var decodeURLComponents: Boolean
     
@@ -105,6 +111,11 @@ object PageJS {
       * bind to popstate (default = true)
       */
     var popstate: Boolean
+    
+    /**
+      * provide a window to control (by default it will control the main window)
+      */
+    var window: Window
   }
   object Options {
     
@@ -113,9 +124,10 @@ object PageJS {
       decodeURLComponents: Boolean,
       dispatch: Boolean,
       hashbang: Boolean,
-      popstate: Boolean
+      popstate: Boolean,
+      window: Window
     ): Options = {
-      val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], decodeURLComponents = decodeURLComponents.asInstanceOf[js.Any], dispatch = dispatch.asInstanceOf[js.Any], hashbang = hashbang.asInstanceOf[js.Any], popstate = popstate.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], decodeURLComponents = decodeURLComponents.asInstanceOf[js.Any], dispatch = dispatch.asInstanceOf[js.Any], hashbang = hashbang.asInstanceOf[js.Any], popstate = popstate.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -130,6 +142,8 @@ object PageJS {
       inline def setHashbang(value: Boolean): Self = StObject.set(x, "hashbang", value.asInstanceOf[js.Any])
       
       inline def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,7 +270,7 @@ object PageJS {
       *
       *  Links that are not of the same origin are disregarded and will not be dispatched.
       */
-    def apply(path: RegExp, callbacks: Callback*): Unit = js.native
+    def apply(path: js.RegExp, callbacks: Callback*): Unit = js.native
     
     /**
       * Export Context
@@ -275,6 +289,19 @@ object PageJS {
       */
     def base(): Unit = js.native
     def base(path: String): Unit = js.native
+    
+    /**
+      * This is the click handler used by page to handle routing when a user clicks an anchor like `<a href="/user/profile">`
+      */
+    def clickHandler(e: MouseEvent): Unit = js.native
+    
+    def create(): Static = js.native
+    def create(options: PartialOptions): Static = js.native
+    
+    /**
+      * Current path
+      */
+    var current: String = js.native
     
     /**
       * Equivalent to page.exit('*', callback).
@@ -299,11 +326,17 @@ object PageJS {
     def exit(path: String, callback: Callback, moreCallbacks: js.Array[Callback]): Unit = js.native
     
     /**
+      * Length of the history stack
+      */
+    var len: Double = js.native
+    
+    /**
       * Identical to page(fromPath, toPath)
       */
     def redirect(fromPath: String, toPath: String): Unit = js.native
     /**
-      *  Calling page.redirect with only a string as the first parameter redirects to another route. Waits for the current route to push state and after replaces it with the new one leaving the browser history clean.
+      * Calling page.redirect with only a string as the first parameter redirects to another route.
+      * Waits for the current route to push state and after replaces it with the new one leaving the browser history clean.
       *
       *      page('/default', function(){
       *        // some logic to decide which route to redirect to
@@ -324,10 +357,10 @@ object PageJS {
       *
       */
     def replace(path: String): Context = js.native
-    def replace(path: String, state: js.Any): Context = js.native
-    def replace(path: String, state: js.Any, init: Boolean): Context = js.native
-    def replace(path: String, state: js.Any, init: Boolean, dispatch: Boolean): Context = js.native
-    def replace(path: String, state: js.Any, init: Unit, dispatch: Boolean): Context = js.native
+    def replace(path: String, state: Any): Context = js.native
+    def replace(path: String, state: Any, init: Boolean): Context = js.native
+    def replace(path: String, state: Any, init: Boolean, dispatch: Boolean): Context = js.native
+    def replace(path: String, state: Any, init: Unit, dispatch: Boolean): Context = js.native
     def replace(path: String, state: Unit, init: Boolean): Context = js.native
     def replace(path: String, state: Unit, init: Boolean, dispatch: Boolean): Context = js.native
     def replace(path: String, state: Unit, init: Unit, dispatch: Boolean): Context = js.native
@@ -373,5 +406,12 @@ object PageJS {
       * Unbind both the popstate and click handlers.
       */
     def stop(): Unit = js.native
+    
+    def strict(): Boolean = js.native
+    /**
+      * Get or set the strict path matching mode to enable.
+      * If enabled /blog will not match "/blog/" and /blog/ will not match "/blog".
+      */
+    def strict(enable: Boolean): Unit = js.native
   }
 }

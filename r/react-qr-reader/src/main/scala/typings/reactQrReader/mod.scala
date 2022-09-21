@@ -15,11 +15,11 @@ object mod {
   
   @JSImport("react-qr-reader", JSImport.Namespace)
   @js.native
-  class ^ () extends QrReader
+  open class ^ () extends QrReader
   
   @js.native
   trait QrReader
-    extends Component[typings.reactQrReader.mod.props, js.Object, js.Any] {
+    extends Component[typings.reactQrReader.mod.props, js.Object, Any] {
     
     def openImageDialog(): Unit = js.native
   }
@@ -35,7 +35,7 @@ object mod {
     
     var legacyMode: js.UndefOr[Boolean] = js.native
     
-    def onError(err: js.Any): Unit = js.native
+    def onError(err: Any): Unit = js.native
     
     var onImageLoad: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.native
     
@@ -48,6 +48,6 @@ object mod {
     
     var showViewFinder: js.UndefOr[Boolean] = js.native
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[Any] = js.native
   }
 }

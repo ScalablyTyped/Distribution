@@ -3,10 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.TeamsAddOrUpdateMembershipForUserInOrgEndpoint
-import typings.octokitTypes.endpointsMod.TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
-import typings.octokitTypes.endpointsMod.TeamsAddOrUpdateMembershipForUserInOrgResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -15,18 +14,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1038` extends StObject {
   
-  var parameters: RequestParameters & (Omit[TeamsAddOrUpdateMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
+  var parameters: RequestParameters & (Omit[
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
+    ]) & RequiredPreview[Any], 
+    baseUrl | headers | mediaType
+  ])
   
-  var response: OctokitResponse[
-    TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
   ]
 }
 object `1038` {
   
   inline def apply(
-    parameters: RequestParameters & (Omit[TeamsAddOrUpdateMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[
-      TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
+    parameters: RequestParameters & (Omit[
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
+      ]) & RequiredPreview[Any], 
+      baseUrl | headers | mediaType
+    ]),
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
     ]
   ): `1038` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,12 +45,17 @@ object `1038` {
   extension [Self <: `1038`](x: Self) {
     
     inline def setParameters(
-      value: RequestParameters & (Omit[TeamsAddOrUpdateMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
+          ]) & RequiredPreview[Any], 
+          baseUrl | headers | mediaType
+        ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
-      value: OctokitResponse[
-          TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/gists']['get'] */ js.Any
         ]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

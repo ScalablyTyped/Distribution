@@ -12,7 +12,7 @@ object pluginMod {
   
   @JSImport("workbox-broadcast-update/Plugin", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends StObject
        with WorkboxPlugin {
     def this(options: BroadcastCacheUpdateOptions) = this()

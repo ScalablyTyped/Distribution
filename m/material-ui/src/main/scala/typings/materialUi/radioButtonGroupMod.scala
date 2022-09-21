@@ -8,10 +8,10 @@ object radioButtonGroupMod {
   
   @JSImport("material-ui/RadioButton/RadioButtonGroup", JSImport.Default)
   @js.native
-  class default () extends RadioButtonGroup
+  open class default () extends RadioButtonGroup
   
   @JSImport("material-ui/RadioButton/RadioButtonGroup", "RadioButtonGroup")
   @js.native
-  class RadioButtonGroup ()
+  open class RadioButtonGroup ()
     extends typings.materialUi.MaterialUI.Switches.RadioButtonGroup
 }

@@ -12,7 +12,6 @@ import typings.awsSdkClientCodecommitNode.typesPullRequestSourceReferenceUpdated
 import typings.awsSdkClientCodecommitNode.typesPullRequestSourceReferenceUpdatedEventMetadataMod.UnmarshalledPullRequestSourceReferenceUpdatedEventMetadata
 import typings.awsSdkClientCodecommitNode.typesPullRequestStatusChangedEventMetadataMod.PullRequestStatusChangedEventMetadata
 import typings.awsSdkClientCodecommitNode.typesPullRequestStatusChangedEventMetadataMod.UnmarshalledPullRequestStatusChangedEventMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object typesPullRequestEventMod {
     /**
       * <p>The day and time of the pull request event, in timestamp format.</p>
       */
-    var eventDate: js.UndefOr[Date | String | Double] = js.undefined
+    var eventDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Information about the source and destination branches for the pull request.</p>
@@ -76,7 +75,7 @@ object typesPullRequestEventMod {
       
       inline def setActorArnUndefined: Self = StObject.set(x, "actorArn", js.undefined)
       
-      inline def setEventDate(value: Date | String | Double): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+      inline def setEventDate(value: js.Date | String | Double): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
       
       inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
       
@@ -116,7 +115,7 @@ object typesPullRequestEventMod {
       * <p>The day and time of the pull request event, in timestamp format.</p>
       */
     @JSName("eventDate")
-    var eventDate_UnmarshalledPullRequestEvent: js.UndefOr[Date] = js.undefined
+    var eventDate_UnmarshalledPullRequestEvent: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Information about the source and destination branches for the pull request.</p>
@@ -151,7 +150,7 @@ object typesPullRequestEventMod {
     
     extension [Self <: UnmarshalledPullRequestEvent](x: Self) {
       
-      inline def setEventDate(value: Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+      inline def setEventDate(value: js.Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
       
       inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
       

@@ -26,6 +26,6 @@ object SubscriberAdvertisement {
     
     inline def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
-    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
+    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value*))
   }
 }

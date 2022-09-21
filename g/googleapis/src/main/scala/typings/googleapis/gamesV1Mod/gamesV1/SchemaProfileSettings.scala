@@ -4,22 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for profile settings
-  */
 trait SchemaProfileSettings extends StObject {
   
-  /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#profileSettings.
-    */
-  var kind: js.UndefOr[String] = js.undefined
+  var friendsListVisibility: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The player&#39;s current profile visibility. This field is visible to
-    * both 1P and 3P APIs.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#profileSettings`.
     */
-  var profileVisible: js.UndefOr[Boolean] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Whether the player's profile is visible to the currently signed in player.
+    */
+  var profileVisible: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaProfileSettings {
   
@@ -30,11 +27,21 @@ object SchemaProfileSettings {
   
   extension [Self <: SchemaProfileSettings](x: Self) {
     
+    inline def setFriendsListVisibility(value: String): Self = StObject.set(x, "friendsListVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setFriendsListVisibilityNull: Self = StObject.set(x, "friendsListVisibility", null)
+    
+    inline def setFriendsListVisibilityUndefined: Self = StObject.set(x, "friendsListVisibility", js.undefined)
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
+    
+    inline def setProfileVisibleNull: Self = StObject.set(x, "profileVisible", null)
     
     inline def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
   }

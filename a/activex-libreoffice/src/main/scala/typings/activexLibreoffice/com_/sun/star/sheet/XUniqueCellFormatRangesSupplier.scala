@@ -48,7 +48,7 @@ object XUniqueCellFormatRangesSupplier {
     UniqueCellFormatRanges: XIndexAccess,
     acquire: () => Unit,
     getUniqueCellFormatRanges: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUniqueCellFormatRangesSupplier = {
     val __obj = js.Dynamic.literal(UniqueCellFormatRanges = UniqueCellFormatRanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getUniqueCellFormatRanges = js.Any.fromFunction0(getUniqueCellFormatRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

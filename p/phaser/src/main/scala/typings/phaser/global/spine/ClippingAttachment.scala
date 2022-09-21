@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.ClippingAttachment")
 @js.native
-class ClippingAttachment protected ()
+open class ClippingAttachment protected ()
   extends StObject
      with typings.phaser.spine.ClippingAttachment {
   def this(name: String) = this()

@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver-truncate
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Truncate a semver version: `1.2.3` → `1.2.0`
@@ -10,10 +10,10 @@ Truncate a semver version: `1.2.3` → `1.2.0`
 | ------------------ | :-------------: |
 | Full name          | semver-truncate |
 | Keywords           | semver, version, semantic, truncate, shorten, simplify |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 49652007 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5282212.333333333 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/semver-truncate#readme)

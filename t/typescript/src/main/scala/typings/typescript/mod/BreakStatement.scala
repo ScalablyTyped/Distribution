@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BreakStatement
   extends StObject
      with Statement
-     with BreakOrContinueStatement {
+     with BreakOrContinueStatement
+     with HasJSDoc {
   
   @JSName("kind")
   val kind_BreakStatement: typings.typescript.mod.SyntaxKind.BreakStatement = js.native

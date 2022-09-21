@@ -8,7 +8,7 @@ trait SubtypeOp
   extends StObject
      with Op {
   
-  var o: js.Any
+  var o: Any
   
   var p: Path
   
@@ -16,18 +16,18 @@ trait SubtypeOp
 }
 object SubtypeOp {
   
-  inline def apply(o: js.Any, p: Path, t: String): SubtypeOp = {
+  inline def apply(o: Any, p: Path, t: String): SubtypeOp = {
     val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeOp]
   }
   
   extension [Self <: SubtypeOp](x: Self) {
     
-    inline def setO(value: js.Any): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+    inline def setO(value: Any): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
     inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value*))
     
     inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }

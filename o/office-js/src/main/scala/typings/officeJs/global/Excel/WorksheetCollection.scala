@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of worksheet objects that are part of the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.WorksheetCollection")
 @js.native
-class WorksheetCollection ()
+open class WorksheetCollection ()
   extends StObject
      with typings.officeJs.Excel.WorksheetCollection {
   

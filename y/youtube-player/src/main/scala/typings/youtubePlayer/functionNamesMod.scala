@@ -9,10 +9,10 @@ object functionNamesMod extends Shortcut {
   
   @JSImport("youtube-player/dist/functionNames", JSImport.Default)
   @js.native
-  val default: js.Array[js.Any] = js.native
+  val default: js.Array[Any] = js.native
   
-  type _To = js.Array[js.Any]
+  type _To = js.Array[Any]
   
   /* This means you don't have to write `default`, but can instead just say `functionNamesMod.foo` */
-  override def _to: js.Array[js.Any] = default
+  override def _to: js.Array[Any] = default
 }

@@ -19,9 +19,20 @@ trait BasemapGallery
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
     */
   var disabled: Boolean = js.native
+  
+  /**
+    * Indicates the heading level to use for the message "No basemaps available" when no basemaps are available in the BasemapGallery.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
   
   /**
     * The widget's default CSS icon class.

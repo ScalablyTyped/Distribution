@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.firebaseml" : "1.0.20201119"
+      "@maxim_mazurok/gapi.client.firebaseml" : "1.0.20220810"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.firebaseml" : "1.0.20201119"
+      "@maxim_mazurok/gapi.client.firebaseml" : "1.0.20220810"
     }
   ],
   "compile-devDependencies" : [

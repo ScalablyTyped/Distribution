@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.textAreaRightToLeftMod.TextAreaRightToLeftProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemTextAreaRightToLeftMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/TextAreaRightToLeft", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaRightToLeftProps] = js.native
+  val default: FC[TextAreaRightToLeftProps] = js.native
   
-  type _To = SFC[TextAreaRightToLeftProps]
+  type _To = FC[TextAreaRightToLeftProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemTextAreaRightToLeftMod.foo` */
-  override def _to: SFC[TextAreaRightToLeftProps] = default
+  override def _to: FC[TextAreaRightToLeftProps] = default
 }

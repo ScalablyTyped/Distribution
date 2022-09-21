@@ -16,14 +16,14 @@ trait XEntityResolver
   extends StObject
      with XInterface {
   
-  /** @returns {@link InputSource} for the external entity.  If **aInputStream** is a valid reference to an input stream, the parser uses this {@link InputSourc */
+  /** @returns for the external entity.  If **aInputStream** is a valid reference to an input stream, the parser uses this {@link InputSourc */
   def resolveEntity(sPublicId: String, sSystemId: String): InputSource
 }
 object XEntityResolver {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resolveEntity: (String, String) => InputSource
   ): XEntityResolver = {

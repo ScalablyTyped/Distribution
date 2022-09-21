@@ -2,6 +2,7 @@ package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsLinkOutSuggestion
+import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsOpenUrlAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object linkoutMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/linkout", "LinkOutSuggestion")
   @js.native
-  class LinkOutSuggestion protected ()
+  open class LinkOutSuggestion protected ()
     extends StObject
        with GoogleActionsV2UiElementsLinkOutSuggestion
        with _RichResponseItem {
@@ -30,15 +31,15 @@ object linkoutMod {
     var name: String
     
     /**
-      * String URL to open.
+      * URL action when clicked.
       * @public
       */
-    var url: String
+    var openUrlAction: GoogleActionsV2UiElementsOpenUrlAction
   }
   object LinkOutSuggestionOptions {
     
-    inline def apply(name: String, url: String): LinkOutSuggestionOptions = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(name: String, openUrlAction: GoogleActionsV2UiElementsOpenUrlAction): LinkOutSuggestionOptions = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], openUrlAction = openUrlAction.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkOutSuggestionOptions]
     }
     
@@ -46,7 +47,7 @@ object linkoutMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     }
   }
 }

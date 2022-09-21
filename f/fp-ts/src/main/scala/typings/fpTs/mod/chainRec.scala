@@ -11,5 +11,5 @@ object chainRec {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def tailRec[A, B](a: A, f: js.Function1[/* a */ A, Either_[A, B]]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("tailRec")(a.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[B]
+  inline def tailRec[A, B](startWith: A, f: js.Function1[/* a */ A, Either_[A, B]]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("tailRec")(startWith.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[B]
 }

@@ -17,7 +17,7 @@ trait LifecyclePolicySummary extends StObject {
   var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.undefined
   
   /**
-    * The type of policy. EBS_SNAPSHOT_MANAGEMENT indicates that the policy manages the lifecycle of Amazon EBS snapshots. IMAGE_MANAGEMENT indicates that the policy manages the lifecycle of EBS-backed AMIs.
+    * The type of policy. EBS_SNAPSHOT_MANAGEMENT indicates that the policy manages the lifecycle of Amazon EBS snapshots. IMAGE_MANAGEMENT indicates that the policy manages the lifecycle of EBS-backed AMIs. EVENT_BASED_POLICY indicates that the policy automates cross-account snapshot copies for snapshots that are shared with your account.
     */
   var PolicyType: js.UndefOr[PolicyTypeValues] = js.undefined
   

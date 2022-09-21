@@ -76,7 +76,7 @@ object GoogleCloudMlV1PredictionInput {
     
     inline def setInputPathsUndefined: Self = StObject.set(x, "inputPaths", js.undefined)
     
-    inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
+    inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value*))
     
     inline def setMaxWorkerCount(value: String): Self = StObject.set(x, "maxWorkerCount", value.asInstanceOf[js.Any])
     

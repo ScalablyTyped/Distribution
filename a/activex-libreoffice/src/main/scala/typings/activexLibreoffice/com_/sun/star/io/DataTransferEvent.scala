@@ -15,17 +15,17 @@ trait DataTransferEvent
      with EventObject {
   
   /** specifies an occurred exception. */
-  var aException: js.Any
+  var aException: Any
 }
 object DataTransferEvent {
   
-  inline def apply(Source: XInterface, aException: js.Any): DataTransferEvent = {
+  inline def apply(Source: XInterface, aException: Any): DataTransferEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], aException = aException.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransferEvent]
   }
   
   extension [Self <: DataTransferEvent](x: Self) {
     
-    inline def setAException(value: js.Any): Self = StObject.set(x, "aException", value.asInstanceOf[js.Any])
+    inline def setAException(value: Any): Self = StObject.set(x, "aException", value.asInstanceOf[js.Any])
   }
 }

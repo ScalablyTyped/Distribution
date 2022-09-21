@@ -12,7 +12,7 @@ object MapVGL {
   
   @JSGlobal("MapVGL.Effects")
   @js.native
-  class Effects ()
+  open class Effects ()
     extends StObject
        with typings.bmapgl.MapVGL.Effects {
     def this(opts: js.Object) = this()
@@ -20,7 +20,7 @@ object MapVGL {
   
   @JSGlobal("MapVGL.Layer")
   @js.native
-  class Layer protected ()
+  open class Layer protected ()
     extends StObject
        with typings.bmapgl.MapVGL.Layer {
     def this(map: Map) = this()
@@ -47,7 +47,7 @@ object MapVGL {
   
   @JSGlobal("MapVGL.View")
   @js.native
-  class View protected ()
+  open class View protected ()
     extends StObject
        with typings.bmapgl.MapVGL.View {
     def this(opts: ViewOptions) = this()

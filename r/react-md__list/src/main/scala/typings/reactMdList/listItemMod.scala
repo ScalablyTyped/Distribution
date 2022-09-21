@@ -4,8 +4,8 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdList.getListItemHeightMod.SimpleListItemProps
 import typings.reactMdStates.typesMod.MergableRippleHandlers
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,19 +33,19 @@ object listItemMod {
       * Boolean if the component should fallback to using the custom pressed class
       * names when ripples are disabled.
       *
-      * @default false
+      * @defaultValue `false`
       */
     var disablePressedFallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the ripple effect should not occur after a programmatic trigger
-      * of a click event. This would normally happen if using `aria-activedescendat`
+      * of a click event. This would normally happen if using `aria-activedescendant`
       * movement and the user "presses" the current active element.
       */
     var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Boolean if the ripple effeect should be disabled. This will make the `useRipples`
+      * Boolean if the ripple effect should be disabled. This will make the `useRipples`
       * hook not provide any additional logic for the provided handlers.
       */
     var disableRipple: js.UndefOr[Boolean] = js.undefined
@@ -59,7 +59,7 @@ object listItemMod {
       * When this is disabled, it will also make sure that the ripple and pressed
       * effects are not triggered from a spacebar click.
       *
-      * @default false
+      * @defaultValue `false`
       */
     var disableSpacebarClick: js.UndefOr[Boolean] = js.undefined
     

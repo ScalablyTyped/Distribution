@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ImageRotate90DegreesCcw")
 @js.native
-class ImageRotate90DegreesCcw ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ImageRotate90DegreesCcw ()
+  extends Component[SvgIconProps, js.Object, Any]

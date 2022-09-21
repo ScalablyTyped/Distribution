@@ -27,7 +27,7 @@ object EmailListResponse {
     
     inline def setLists(value: js.Array[Address]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    inline def setListsVarargs(value: Address*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: Address*): Self = StObject.set(x, "lists", js.Array(value*))
     
     inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

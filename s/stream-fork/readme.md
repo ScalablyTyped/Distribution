@@ -10,15 +10,12 @@ Fork a writable stream into several parallel writable streams.
 | ------------------ | :-------------: |
 | Full name          | stream-fork |
 | Keywords           | stream, chain |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 12356 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2095.3333333333335 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/uhop/stream-fork#readme)
-- [Bugs](https://github.com/uhop/stream-fork/issues)
-- [Repository](https://github.com/uhop/stream-fork)
 - [Npm](https://www.npmjs.com/package/stream-fork)
     
 

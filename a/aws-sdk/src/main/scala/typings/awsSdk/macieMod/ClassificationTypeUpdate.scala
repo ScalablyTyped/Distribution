@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassificationTypeUpdate extends StObject {
   
   /**
-    * A continuous classification of the objects that are added to a specified S3 bucket. Amazon Macie Classic begins performing continuous classification after a bucket is successfully associated with Amazon Macie Classic. 
+    * (Discontinued) A continuous classification of the objects that are added to a specified S3 bucket. Amazon Macie Classic begins performing continuous classification after a bucket is successfully associated with Macie Classic. 
     */
   var continuous: js.UndefOr[S3ContinuousClassificationType] = js.undefined
   
   /**
-    * A one-time classification of all of the existing objects in a specified S3 bucket. 
+    * (Discontinued) A one-time classification of all of the existing objects in a specified S3 bucket. 
     */
   var oneTime: js.UndefOr[S3OneTimeClassificationType] = js.undefined
 }

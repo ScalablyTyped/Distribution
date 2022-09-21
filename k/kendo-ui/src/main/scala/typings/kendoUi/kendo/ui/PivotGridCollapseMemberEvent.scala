@@ -29,6 +29,6 @@ object PivotGridCollapseMemberEvent {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
   }
 }

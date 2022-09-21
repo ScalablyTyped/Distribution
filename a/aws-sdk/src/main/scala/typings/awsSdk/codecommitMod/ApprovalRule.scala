@@ -24,12 +24,12 @@ trait ApprovalRule extends StObject {
   /**
     * The date the approval rule was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the approval rule was most recently changed, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user who made the most recent changes to the approval rule.
@@ -67,11 +67,11 @@ object ApprovalRule {
     
     inline def setApprovalRuleNameUndefined: Self = StObject.set(x, "approvalRuleName", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

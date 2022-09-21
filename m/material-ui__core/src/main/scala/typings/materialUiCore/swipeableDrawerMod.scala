@@ -9,6 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object swipeableDrawerMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Drawers](https://mui.com/components/drawers/)
+    *
+    * API:
+    *
+    * - [SwipeableDrawer API](https://mui.com/api/swipeable-drawer/)
+    * - inherits [Drawer API](https://mui.com/api/drawer/)
+    */
   @JSImport("@material-ui/core/SwipeableDrawer", JSImport.Default)
   @js.native
   val default: ComponentType[SwipeableDrawerProps] = js.native

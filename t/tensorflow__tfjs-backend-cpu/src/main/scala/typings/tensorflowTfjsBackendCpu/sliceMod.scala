@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendCpu
 
 import typings.tensorflowTfjsBackendCpu.anon.AttrsSliceAttrs
+import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -22,10 +22,10 @@ object sliceMod {
   val sliceConfig: KernelConfig = js.native
   
   inline def sliceImpl(
-    vals: TypedArray,
+    vals: BackendValues,
     begin: js.Array[Double],
     size: js.Array[Double],
     shape: js.Array[Double],
     dtype: DataType
-  ): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceImpl")(vals.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
+  ): BackendValues = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceImpl")(vals.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[BackendValues]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.MultiColumnComboBox")
 @js.native
-class MultiColumnComboBox protected ()
+open class MultiColumnComboBox protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.MultiColumnComboBox {
   def this(element: Element) = this()

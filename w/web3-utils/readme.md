@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-utils
 
-Typings are for version 1.3.0
+Typings are for version 1.8.0
 
 ## Library description:
 Collection of utility functions used in web3.js.
@@ -10,12 +10,15 @@ Collection of utility functions used in web3.js.
 | ------------------ | :-------------: |
 | Full name          | web3-utils |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 600 |
-| # downloads        | 8881454 |
-| # stars            | 0 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 4094059.0 |
+| # stars            | 16013.0 |
 
 ## Links
+- [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)
+- [Bugs](https://github.com/ethereum/web3.js/issues)
+- [Repository](https://github.com/ethereum/web3.js/tree/1.x)
 - [Npm](https://www.npmjs.com/package/web3-utils)
     
 

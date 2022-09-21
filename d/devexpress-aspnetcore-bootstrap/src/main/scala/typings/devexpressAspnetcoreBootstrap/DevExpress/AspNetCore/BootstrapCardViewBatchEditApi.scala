@@ -10,7 +10,7 @@ trait BootstrapCardViewBatchEditApi extends StObject {
   
   def deleteCard(visibleIndex: Double): Unit
   
-  def deleteCardByKey(key: js.Any): Unit
+  def deleteCardByKey(key: Any): Unit
   
   def getCardVisibleIndices(includeDeleted: Boolean): js.Array[Double]
   
@@ -18,7 +18,7 @@ trait BootstrapCardViewBatchEditApi extends StObject {
   
   def getInsertedCardIndices(): js.Array[Double]
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   def isDeletedCard(visibleIndex: Double): Boolean
   
@@ -26,7 +26,7 @@ trait BootstrapCardViewBatchEditApi extends StObject {
   
   def recoverCard(visibleIndex: Double): Unit
   
-  def recoverCardByKey(key: js.Any): Unit
+  def recoverCardByKey(key: Any): Unit
   
   def validateCard(visibleIndex: Double): Boolean
   
@@ -37,15 +37,15 @@ object BootstrapCardViewBatchEditApi {
   inline def apply(
     addNewCard: () => Unit,
     deleteCard: Double => Unit,
-    deleteCardByKey: js.Any => Unit,
+    deleteCardByKey: Any => Unit,
     getCardVisibleIndices: Boolean => js.Array[Double],
     getDeletedCardIndices: () => js.Array[Double],
     getInsertedCardIndices: () => js.Array[Double],
-    instance: js.Any,
+    instance: Any,
     isDeletedCard: Double => Boolean,
     isNewCard: Double => Boolean,
     recoverCard: Double => Unit,
-    recoverCardByKey: js.Any => Unit,
+    recoverCardByKey: Any => Unit,
     validateCard: Double => Boolean,
     validateCards: Boolean => Boolean
   ): BootstrapCardViewBatchEditApi = {
@@ -59,7 +59,7 @@ object BootstrapCardViewBatchEditApi {
     
     inline def setDeleteCard(value: Double => Unit): Self = StObject.set(x, "deleteCard", js.Any.fromFunction1(value))
     
-    inline def setDeleteCardByKey(value: js.Any => Unit): Self = StObject.set(x, "deleteCardByKey", js.Any.fromFunction1(value))
+    inline def setDeleteCardByKey(value: Any => Unit): Self = StObject.set(x, "deleteCardByKey", js.Any.fromFunction1(value))
     
     inline def setGetCardVisibleIndices(value: Boolean => js.Array[Double]): Self = StObject.set(x, "getCardVisibleIndices", js.Any.fromFunction1(value))
     
@@ -67,7 +67,7 @@ object BootstrapCardViewBatchEditApi {
     
     inline def setGetInsertedCardIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getInsertedCardIndices", js.Any.fromFunction0(value))
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setIsDeletedCard(value: Double => Boolean): Self = StObject.set(x, "isDeletedCard", js.Any.fromFunction1(value))
     
@@ -75,7 +75,7 @@ object BootstrapCardViewBatchEditApi {
     
     inline def setRecoverCard(value: Double => Unit): Self = StObject.set(x, "recoverCard", js.Any.fromFunction1(value))
     
-    inline def setRecoverCardByKey(value: js.Any => Unit): Self = StObject.set(x, "recoverCardByKey", js.Any.fromFunction1(value))
+    inline def setRecoverCardByKey(value: Any => Unit): Self = StObject.set(x, "recoverCardByKey", js.Any.fromFunction1(value))
     
     inline def setValidateCard(value: Double => Boolean): Self = StObject.set(x, "validateCard", js.Any.fromFunction1(value))
     

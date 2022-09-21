@@ -1,6 +1,7 @@
 package typings.popperjsCore
 
 import typings.popperjsCore.anon.Height
+import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +13,5 @@ object getViewportRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(element: Element): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def default(element: Element, strategy: PositioningStrategy): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Height]
 }

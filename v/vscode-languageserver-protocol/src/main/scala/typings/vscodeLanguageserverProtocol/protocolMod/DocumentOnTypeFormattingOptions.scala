@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentOnTypeFormattingOptions extends StObject {
   
   /**
-    * A character on which formatting should be triggered, like `}`.
+    * A character on which formatting should be triggered, like `{`.
     */
   var firstTriggerCharacter: String
   
@@ -31,6 +31,6 @@ object DocumentOnTypeFormattingOptions {
     
     inline def setMoreTriggerCharacterUndefined: Self = StObject.set(x, "moreTriggerCharacter", js.undefined)
     
-    inline def setMoreTriggerCharacterVarargs(value: String*): Self = StObject.set(x, "moreTriggerCharacter", js.Array(value :_*))
+    inline def setMoreTriggerCharacterVarargs(value: String*): Self = StObject.set(x, "moreTriggerCharacter", js.Array(value*))
   }
 }

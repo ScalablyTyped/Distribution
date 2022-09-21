@@ -17,7 +17,7 @@ trait ResultSetStats extends StObject {
   var queryStats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[Any]
   ] = js.undefined
   
   /** Standard DML returns an exact count of rows that were modified. */
@@ -42,7 +42,7 @@ object ResultSetStats {
     inline def setQueryStats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ResultSetStats & TopLevel[Any]
     ): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
     
     inline def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)

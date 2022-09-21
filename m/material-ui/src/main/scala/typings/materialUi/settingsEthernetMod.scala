@@ -10,10 +10,10 @@ object settingsEthernetMod {
   
   @JSImport("material-ui/svg-icons/action/settings-ethernet", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsEthernet
+  open class default () extends ActionSettingsEthernet
   
   @JSImport("material-ui/svg-icons/action/settings-ethernet", "ActionSettingsEthernet")
   @js.native
-  class ActionSettingsEthernet ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsEthernet ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

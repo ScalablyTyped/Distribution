@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isDateMod {
   
-  @JSImport("rxjs/internal/util/isDate", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/isDate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+  inline def isValidDate(value: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
 }

@@ -1,12 +1,15 @@
 package typings.reactOnsenui.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ContentStyle extends StObject {
   
-  var contentStyle: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var contentStyle: js.UndefOr[Any] = js.undefined
   
   var modifier: js.UndefOr[String] = js.undefined
   
@@ -35,7 +38,11 @@ object ContentStyle {
   
   extension [Self <: ContentStyle](x: Self) {
     
-    inline def setContentStyle(value: js.Any): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setContentStyle(value: Any): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     

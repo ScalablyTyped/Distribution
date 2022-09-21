@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceInappproductsInsert
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * If true the prices for all regions targeted by the parent app that don't
-    * have a price specified for this in-app product will be auto converted to
-    * the target currency based on the default price. Defaults to false.
+    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the target currency based on the default price. Defaults to false.
     */
   var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Unique identifier for the Android app; for example, "com.spiffygame".
+    * Package name of the app.
     */
   var packageName: js.UndefOr[String] = js.undefined
   
@@ -42,10 +31,6 @@ object ParamsResourceInappproductsInsert {
   }
   
   extension [Self <: ParamsResourceInappproductsInsert](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setAutoConvertMissingPrices(value: Boolean): Self = StObject.set(x, "autoConvertMissingPrices", value.asInstanceOf[js.Any])
     

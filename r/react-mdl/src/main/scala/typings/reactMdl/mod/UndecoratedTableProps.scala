@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
 - typings.reactMdl.mod.MDLHTMLAttributes because Inheritance from two classes. Inlined defaultChecked, defaultValue, accept, acceptCharset, accessKey, action, allowFullScreen, allowTransparency, alt, async, autoComplete, autoFocus, autoPlay, capture, cellPadding, cellSpacing, charSet, challenge, checked, classID, className, cols, colSpan, content, contentEditable, contextMenu, controls, coords, crossOrigin, dateTime, default, defer, dir, disabled, download, draggable, encType, form, formAction, formEncType, formMethod, formNoValidate, formTarget, frameBorder, headers, height, hidden, high, href, hrefLang, htmlFor, httpEquiv, id, inputMode, integrity, is, keyParams, keyType, kind, lang, list, loop, low, manifest, marginHeight, marginWidth, max, maxLength, media, mediaGroup, method, min, minLength, multiple, muted, nonce, noValidate, open, optimum, pattern, placeholder, poster, preload, radioGroup, readOnly, rel, required, reversed, role, rowSpan, sandbox, scope, scoped, scrolling, seamless, selected, shape, sizes, span, spellCheck, src, srcDoc, srcLang, srcSet, start, step, style, summary, tabIndex, target, `type`, useMap, width, wmode, wrap, about, datatype, inlist, prefix, property, resource, typeof, vocab, autoCapitalize, autoCorrect, autoSave, color, itemProp, itemScope, itemType, itemID, itemRef, results, security, unselectable */ trait UndecoratedTableProps
   extends StObject
-     with ClassAttributes[js.Any]
+     with ClassAttributes[Any]
      with DOMAttributes[UndecoratedTable]
      with ShadowedComponent {
   
@@ -108,7 +108,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
@@ -146,7 +146,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr[String] = js.undefined
   
@@ -244,7 +244,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var rows: js.Array[js.Any]
+  var rows: js.Array[Any]
   
   var sandbox: js.UndefOr[String] = js.undefined
   
@@ -308,7 +308,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object UndecoratedTableProps {
   
-  inline def apply(rows: js.Array[js.Any]): UndecoratedTableProps = {
+  inline def apply(rows: js.Array[Any]): UndecoratedTableProps = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndecoratedTableProps]
   }
@@ -463,7 +463,7 @@ object UndecoratedTableProps {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
@@ -477,7 +477,7 @@ object UndecoratedTableProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -553,7 +553,7 @@ object UndecoratedTableProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -749,9 +749,9 @@ object UndecoratedTableProps {
     
     inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSandbox(value: String): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     

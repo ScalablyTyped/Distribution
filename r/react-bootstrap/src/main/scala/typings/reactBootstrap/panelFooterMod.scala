@@ -10,12 +10,10 @@ object panelFooterMod {
   
   @JSImport("react-bootstrap/lib/PanelFooter", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelFooterProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelFooterProps, js.Object, Any]
   
-  @js.native
-  trait PanelFooter
-    extends Component[PanelFooterProps, js.Object, js.Any]
+  type PanelFooter = Component[PanelFooterProps, js.Object, Any]
   
   trait PanelFooterProps
     extends StObject

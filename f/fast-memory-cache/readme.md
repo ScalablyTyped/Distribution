@@ -10,10 +10,10 @@ Simple in-memory cache implementation
 | ------------------ | :-------------: |
 | Full name          | fast-memory-cache |
 | Keywords           | memory, cache |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 13570 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1489.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mdevils/fast-memory-cache#readme)

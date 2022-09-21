@@ -17,5 +17,5 @@ trait WebStyleSymbolConstructor
 Instantiable0[WebStyleSymbol]
      with Instantiable1[/* properties */ WebStyleSymbolProperties, WebStyleSymbol] {
   
-  def fromJSON(json: js.Any): WebStyleSymbol = js.native
+  def fromJSON(json: Any): WebStyleSymbol = js.native
 }

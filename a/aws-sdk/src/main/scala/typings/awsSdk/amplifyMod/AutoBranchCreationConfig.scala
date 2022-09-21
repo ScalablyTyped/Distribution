@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoBranchCreationConfig extends StObject {
   
   /**
-    *  The basic authorization credentials for the autocreated branch. 
+    *  The basic authorization credentials for the autocreated branch. You must base64-encode the authorization credentials and provide them in the format user:password.
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   

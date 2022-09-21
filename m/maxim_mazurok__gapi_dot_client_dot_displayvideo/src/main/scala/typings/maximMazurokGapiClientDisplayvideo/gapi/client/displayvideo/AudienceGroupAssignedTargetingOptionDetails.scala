@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudienceGroupAssignedTargetingOptionDetails extends StObject {
   
   /**
-    * The first and third party audience ids and recencies of the excluded first and third party audience group. Used for negative targeting. Its COMPLEMENT is used to UNION other
-    * audience groups.
+    * The first and third party audience ids and recencies of the excluded first and third party audience group. Used for negative targeting. The COMPLEMENT of the UNION of this group and
+    * other excluded audience groups is used as an INTERSECTION to any positive audience targeting. All items are logically ‘OR’ of each other.
     */
   var excludedFirstAndThirdPartyAudienceGroup: js.UndefOr[FirstAndThirdPartyAudienceGroup] = js.undefined
   
   /**
-    * The Google audience ids of the excluded Google audience group. Used for negative targeting. It's COMPLEMENT is used to UNION other audience groups. Only contains Affinity, In-market
-    * and Installed-apps type Google audiences. All items are logically ‘OR’ of each other.
+    * The Google audience ids of the excluded Google audience group. Used for negative targeting. The COMPLEMENT of the UNION of this group and other excluded audience groups is used as
+    * an INTERSECTION to any positive audience targeting. Only contains Affinity, In-market and Installed-apps type Google audiences. All items are logically ‘OR’ of each other.
     */
   var excludedGoogleAudienceGroup: js.UndefOr[GoogleAudienceGroup] = js.undefined
   
@@ -63,7 +63,7 @@ object AudienceGroupAssignedTargetingOptionDetails {
     
     inline def setIncludedFirstAndThirdPartyAudienceGroupsUndefined: Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.undefined)
     
-    inline def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.Array(value :_*))
+    inline def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.Array(value*))
     
     inline def setIncludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "includedGoogleAudienceGroup", value.asInstanceOf[js.Any])
     

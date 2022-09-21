@@ -14,7 +14,7 @@ trait OMathScrSubSup extends StObject {
   
   val E: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   def RemoveSub(): OMathFunction
   
@@ -36,7 +36,7 @@ object OMathScrSubSup {
     Application: Application,
     Creator: Double,
     E: OMath,
-    Parent: js.Any,
+    Parent: Any,
     RemoveSub: () => OMathFunction,
     RemoveSup: () => OMathFunction,
     Sub: OMath,
@@ -59,7 +59,7 @@ object OMathScrSubSup {
     
     inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRemoveSub(value: () => OMathFunction): Self = StObject.set(x, "RemoveSub", js.Any.fromFunction0(value))
     

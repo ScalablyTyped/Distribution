@@ -1,7 +1,9 @@
 package typings.videoJs
 
 import typings.videoJs.mod.videojs.AudioTrack.Kind
+import typings.videoJs.mod.videojs.Preload
 import typings.videoJs.mod.videojs.TextTrack.Mode
+import typings.videoJs.mod.videojs._Autoplay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,8 +89,24 @@ object videoJsStrings {
   inline def alternative: alternative = "alternative".asInstanceOf[alternative]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait any
+    extends StObject
+       with _Autoplay
+  inline def any: any = "any".asInstanceOf[any]
+  
+  @js.native
   sealed trait arraybuffer extends StObject
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  
+  @js.native
+  sealed trait auto
+    extends StObject
+       with Preload
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait beforesetup extends StObject
@@ -164,6 +182,10 @@ object videoJsStrings {
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
+  
+  @js.native
   sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
   
@@ -176,6 +198,10 @@ object videoJsStrings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
+  sealed trait liveDisplay extends StObject
+  inline def liveDisplay: liveDisplay = "liveDisplay".asInstanceOf[liveDisplay]
+  
+  @js.native
   sealed trait main
     extends StObject
        with Kind
@@ -186,10 +212,6 @@ object videoJsStrings {
     extends StObject
        with Kind
   inline def `main-desc`: `main-desc` = "main-desc".asInstanceOf[`main-desc`]
-  
-  @js.native
-  sealed trait maybe extends StObject
-  inline def maybe: maybe = "maybe".asInstanceOf[maybe]
   
   @js.native
   sealed trait menu_ extends StObject
@@ -207,6 +229,7 @@ object videoJsStrings {
   sealed trait metadata
     extends StObject
        with typings.videoJs.mod.videojs.TextTrack.Kind
+       with Preload
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
@@ -218,20 +241,42 @@ object videoJsStrings {
   inline def mouseTimeDisplay_ : mouseTimeDisplay_ = "mouseTimeDisplay".asInstanceOf[mouseTimeDisplay_]
   
   @js.native
+  sealed trait muted
+    extends StObject
+       with _Autoplay
+  inline def muted: muted = "muted".asInstanceOf[muted]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with Preload
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait option extends StObject
   inline def option: option = "option".asInstanceOf[option]
+  
+  @js.native
+  sealed trait play
+    extends StObject
+       with _Autoplay
+  inline def play: play = "play".asInstanceOf[play]
+  
+  @js.native
+  sealed trait playbackRateMenuButton extends StObject
+  inline def playbackRateMenuButton: playbackRateMenuButton = "playbackRateMenuButton".asInstanceOf[playbackRateMenuButton]
   
   @js.native
   sealed trait player_ extends StObject
   inline def player_ : player_ = "player".asInstanceOf[player_]
   
   @js.native
-  sealed trait probably extends StObject
-  inline def probably: probably = "probably".asInstanceOf[probably]
+  sealed trait progressControl extends StObject
+  inline def progressControl: progressControl = "progressControl".asInstanceOf[progressControl]
   
   @js.native
-  sealed trait problably extends StObject
-  inline def problably: problably = "problably".asInstanceOf[problably]
+  sealed trait remainingTimeDisplay extends StObject
+  inline def remainingTimeDisplay: remainingTimeDisplay = "remainingTimeDisplay".asInstanceOf[remainingTimeDisplay]
   
   @js.native
   sealed trait select extends StObject
@@ -274,6 +319,10 @@ object videoJsStrings {
     extends StObject
        with Kind
   inline def translation: translation = "translation".asInstanceOf[translation]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait width extends StObject

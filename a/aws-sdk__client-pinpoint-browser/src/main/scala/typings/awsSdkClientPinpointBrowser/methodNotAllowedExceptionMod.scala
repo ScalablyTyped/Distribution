@@ -8,5 +8,5 @@ object methodNotAllowedExceptionMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/MethodNotAllowedException", "MethodNotAllowedException")
   @js.native
-  val MethodNotAllowedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MethodNotAllowedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

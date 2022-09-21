@@ -10,10 +10,10 @@ Typings are for version 0.1
 | ------------------ | :-------------: |
 | Full name          | react-native-canvas |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 5 |
-| # downloads        | 51471 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17149.0 |
+| # stars            | 863.0 |
 
 ## Links
 - [Homepage](https://github.com/iddan/react-native-canvas#readme)

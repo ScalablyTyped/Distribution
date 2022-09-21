@@ -220,7 +220,7 @@ trait Annotations
     * Toggle this annotation when clicking a data point whose `x` value
     * is `xclick` rather than the annotation's `x` value.
     */
-  var xclick: js.Any
+  var xclick: Any
   
   /**
     * Sets the annotation's x coordinate axis.
@@ -262,7 +262,7 @@ trait Annotations
     * Toggle this annotation when clicking a data point whose `y` value
     * is `yclick` rather than the annotation's `y` value.
     */
-  var yclick: js.Any
+  var yclick: Any
   
   /**
     * Sets the annotation's y coordinate axis.
@@ -315,12 +315,12 @@ object Annotations {
     width: Double,
     x: Double | String,
     xanchor: auto | left | center | right,
-    xclick: js.Any,
+    xclick: Any,
     xref: paper | XAxisName,
     xshift: Double,
     y: Double | String,
     yanchor: auto | top | middle | bottom,
-    yclick: js.Any,
+    yclick: Any,
     yref: paper | YAxisName,
     yshift: Double
   ): Annotations = {
@@ -390,7 +390,7 @@ object Annotations {
     
     inline def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
-    inline def setXclick(value: js.Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
+    inline def setXclick(value: Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
     
     inline def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
@@ -400,7 +400,7 @@ object Annotations {
     
     inline def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
-    inline def setYclick(value: js.Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
+    inline def setYclick(value: Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
     
     inline def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
     

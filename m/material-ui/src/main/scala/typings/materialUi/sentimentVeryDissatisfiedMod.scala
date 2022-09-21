@@ -10,10 +10,10 @@ object sentimentVeryDissatisfiedMod {
   
   @JSImport("material-ui/svg-icons/social/sentiment-very-dissatisfied", JSImport.Default)
   @js.native
-  class default () extends SocialSentimentVeryDissatisfied
+  open class default () extends SocialSentimentVeryDissatisfied
   
   @JSImport("material-ui/svg-icons/social/sentiment-very-dissatisfied", "SocialSentimentVeryDissatisfied")
   @js.native
-  class SocialSentimentVeryDissatisfied ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialSentimentVeryDissatisfied ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

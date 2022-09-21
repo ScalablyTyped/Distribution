@@ -23,7 +23,7 @@ object TypeofSkeletonRenderer {
     
     inline def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
     
-    inline def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value :_*))
+    inline def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value*))
     
     inline def setVERTEX_SIZE(value: Double): Self = StObject.set(x, "VERTEX_SIZE", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Center-align the text in a string.
 | ------------------ | :-------------: |
 | Full name          | center-align |
 | Keywords           | align, align-center, center, center-align, right, right-align, text, typography |
-| # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 131649546 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8234974.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/center-align)

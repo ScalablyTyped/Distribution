@@ -15,14 +15,14 @@ object raygunMessageBuilderMod {
   
   @JSImport("raygun/build/raygun.messageBuilder", "RaygunMessageBuilder")
   @js.native
-  class RaygunMessageBuilder () extends StObject {
+  open class RaygunMessageBuilder () extends StObject {
     def this(options: MessageBuilderOptions) = this()
     
     var _filters: js.Array[String] = js.native
     
     def build(): Message = js.native
     
-    /* private */ var extractUserProperties: js.Any = js.native
+    /* private */ var extractUserProperties: Any = js.native
     
     var message: MessageBuilding = js.native
     
@@ -30,7 +30,7 @@ object raygunMessageBuilderMod {
     
     def setEnvironmentDetails(): this.type = js.native
     
-    def setErrorDetails(error: js.Any): this.type = js.native
+    def setErrorDetails(error: Any): this.type = js.native
     
     def setMachineName(): this.type = js.native
     def setMachineName(machineName: String): this.type = js.native

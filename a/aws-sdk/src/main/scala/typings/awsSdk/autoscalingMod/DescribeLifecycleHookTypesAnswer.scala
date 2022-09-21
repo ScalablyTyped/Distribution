@@ -24,6 +24,6 @@ object DescribeLifecycleHookTypesAnswer {
     
     inline def setLifecycleHookTypesUndefined: Self = StObject.set(x, "LifecycleHookTypes", js.undefined)
     
-    inline def setLifecycleHookTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LifecycleHookTypes", js.Array(value :_*))
+    inline def setLifecycleHookTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LifecycleHookTypes", js.Array(value*))
   }
 }

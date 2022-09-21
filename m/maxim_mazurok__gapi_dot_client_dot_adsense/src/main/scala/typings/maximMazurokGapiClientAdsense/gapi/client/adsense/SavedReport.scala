@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SavedReport extends StObject {
   
-  /** Unique identifier of this saved report. */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /** Kind of resource this is, in this case adsense#savedReport. */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** This saved report's name. */
+  /** Output only. Resource name of the report. Format: accounts/{account}/reports/{report} */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** Report title as specified by publisher. */
+  var title: js.UndefOr[String] = js.undefined
 }
 object SavedReport {
   
@@ -24,16 +21,12 @@ object SavedReport {
   
   extension [Self <: SavedReport](x: Self) {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

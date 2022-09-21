@@ -22,7 +22,7 @@ trait CreateWebhookInput extends StObject {
   var filterGroups: js.UndefOr[FilterGroups] = js.undefined
   
   /**
-    * The name of the AWS CodeBuild project.
+    * The name of the CodeBuild project.
     */
   var projectName: ProjectName
 }
@@ -47,7 +47,7 @@ object CreateWebhookInput {
     
     inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
-    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value*))
     
     inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }

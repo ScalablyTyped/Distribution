@@ -42,7 +42,7 @@ object avatarMod {
       * Note: The values in this object will override the `src`, `alt`, and
       * `referrerPolicy` root level avatar props if they exist on this object.
       *
-      * @since 2.2.0
+      * @remarks \@since 2.2.0
       */
     var imgProps: js.UndefOr[PropsWithRef[ImgAttributes, HTMLImageElement]] = js.undefined
     
@@ -50,9 +50,9 @@ object avatarMod {
       * An optional `referrerPolicy` to provide to the `<img>` element if the `src`
       * or `imgProps` props are provided.
       *
-      * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-referrerpolicy
+      * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-referrerpolicy|Referrer Policy}
       *
-      * @since 2.2.0
+      * @remarks \@since 2.2.0
       */
     var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
     

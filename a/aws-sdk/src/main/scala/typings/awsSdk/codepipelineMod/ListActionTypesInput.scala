@@ -15,6 +15,11 @@ trait ListActionTypesInput extends StObject {
     * An identifier that was returned from the previous list action types call, which can be used to return the next set of action types in the list.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
+  
+  /**
+    * The Region to filter on for the list of action types.
+    */
+  var regionFilter: js.UndefOr[AWSRegionName] = js.undefined
 }
 object ListActionTypesInput {
   
@@ -32,5 +37,9 @@ object ListActionTypesInput {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setRegionFilter(value: AWSRegionName): Self = StObject.set(x, "regionFilter", value.asInstanceOf[js.Any])
+    
+    inline def setRegionFilterUndefined: Self = StObject.set(x, "regionFilter", js.undefined)
   }
 }

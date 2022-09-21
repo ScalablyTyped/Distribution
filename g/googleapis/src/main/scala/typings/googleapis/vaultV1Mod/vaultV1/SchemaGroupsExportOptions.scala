@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The options for groups export.
-  */
 trait SchemaGroupsExportOptions extends StObject {
   
   /**
-    * The export format for groups export.
+    * The file format for exported messages.
     */
-  var exportFormat: js.UndefOr[String] = js.undefined
+  var exportFormat: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGroupsExportOptions {
   
@@ -24,6 +21,8 @@ object SchemaGroupsExportOptions {
   extension [Self <: SchemaGroupsExportOptions](x: Self) {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    
+    inline def setExportFormatNull: Self = StObject.set(x, "exportFormat", null)
     
     inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }

@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_genomics
 
-Typings are for version 1.0.20201116
+Typings are for version 2.0.20220801
 
 ## Library description:
-TypeScript typings for Genomics API v1
+TypeScript typings for Genomics API v2alpha1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.genomics |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 1069 |
-| # stars            | 0 |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 865.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

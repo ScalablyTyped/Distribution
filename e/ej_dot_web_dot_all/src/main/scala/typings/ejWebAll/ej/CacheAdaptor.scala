@@ -11,5 +11,5 @@ trait CacheAdaptor
   
   def generateKey(url: String, query: Query): String = js.native
   
-  def init(adaptor: js.Any, timeStamp: Double, pageSize: Double): Unit = js.native
+  def init(adaptor: Any, timeStamp: Double, pageSize: Double): Unit = js.native
 }

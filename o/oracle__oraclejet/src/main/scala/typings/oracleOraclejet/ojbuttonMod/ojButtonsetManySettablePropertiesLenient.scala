@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetManySettableProperties> */
 trait ojButtonsetManySettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var chroming: js.UndefOr[full | half | outlined] = js.undefined
   
@@ -27,7 +27,7 @@ trait ojButtonsetManySettablePropertiesLenient
   
   var translations: js.UndefOr[js.Object | Null] = js.undefined
   
-  var value: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
+  var value: js.UndefOr[js.Array[Any] | Null] = js.undefined
 }
 object ojButtonsetManySettablePropertiesLenient {
   
@@ -60,12 +60,12 @@ object ojButtonsetManySettablePropertiesLenient {
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

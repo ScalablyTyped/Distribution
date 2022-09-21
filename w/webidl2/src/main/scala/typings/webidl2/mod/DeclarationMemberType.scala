@@ -27,7 +27,7 @@ object DeclarationMemberType {
   }
   
   inline def MaplikeDeclarationMemberType(
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,
@@ -39,7 +39,7 @@ object DeclarationMemberType {
   }
   
   inline def SetlikeDeclarationMemberType(
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,

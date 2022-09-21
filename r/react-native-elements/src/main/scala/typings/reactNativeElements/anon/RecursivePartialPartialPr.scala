@@ -3,16 +3,17 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.ButtonInformation
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.buttonMod.ButtonProps
+import typings.reactNativeElements.pricingCardMod.ButtonInformation
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.PricingCardProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/pricing/PricingCard.PricingCardProps>> */
 trait RecursivePartialPartialPr extends StObject {
   
-  var button: js.UndefOr[RecursivePartial[js.UndefOr[ButtonInformation]]] = js.undefined
+  var button: js.UndefOr[RecursivePartial[js.UndefOr[ButtonProps | ButtonInformation]]] = js.undefined
   
   var color: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
@@ -24,7 +25,7 @@ trait RecursivePartialPartialPr extends StObject {
   
   var onButtonPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var price: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var price: js.UndefOr[RecursivePartial[js.UndefOr[String | Double]]] = js.undefined
   
   var pricingStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
@@ -43,7 +44,7 @@ object RecursivePartialPartialPr {
   
   extension [Self <: RecursivePartialPartialPr](x: Self) {
     
-    inline def setButton(value: RecursivePartial[js.UndefOr[ButtonInformation]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: RecursivePartial[js.UndefOr[ButtonProps | ButtonInformation]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
@@ -67,7 +68,7 @@ object RecursivePartialPartialPr {
     
     inline def setOnButtonPressUndefined: Self = StObject.set(x, "onButtonPress", js.undefined)
     
-    inline def setPrice(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: RecursivePartial[js.UndefOr[String | Double]]): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     

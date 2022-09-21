@@ -8,7 +8,7 @@ object jsonMod {
   
   @JSImport("@devexpress/utils/lib/utils/json", "JsonUtils")
   @js.native
-  class JsonUtils () extends StObject
+  open class JsonUtils () extends StObject
   /* static members */
   object JsonUtils {
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "Index")
 @js.native
-class Index[T] () extends StObject {
+open class Index[T /* <: js.Object */] () extends StObject {
   
   def addDoc(doc: T): Unit = js.native
   def addDoc(doc: T, emitEvent: Boolean): Unit = js.native
@@ -31,17 +31,11 @@ class Index[T] () extends StObject {
   def idf(term: String, field: /* keyof T */ String): Double = js.native
   
   var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.Index & TopLevel[js.Any] = js.native
+  {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndex}
+    */ typings.elasticlunr.elasticlunrStrings.Index & TopLevel[Any] = js.native
   
-  @JSName("mergeScores")
-  def mergeScores_AND(accumScores: Null, scores: SearchScores, op: AND): SearchScores = js.native
-  @JSName("mergeScores")
-  def mergeScores_AND(accumScores: SearchScores, scores: SearchScores, op: AND): SearchScores = js.native
-  @JSName("mergeScores")
-  def mergeScores_OR(accumScores: Null, scores: SearchScores, op: OR): SearchScores = js.native
-  @JSName("mergeScores")
-  def mergeScores_OR(accumScores: SearchScores, scores: SearchScores, op: OR): SearchScores = js.native
+  def mergeScores(accumScores: Null, scores: SearchScores, op: AND | OR): SearchScores = js.native
+  def mergeScores(accumScores: SearchScores, scores: SearchScores, op: AND | OR): SearchScores = js.native
   
   def off(name: EventType, fn: EventHandler): Unit = js.native
   
@@ -69,7 +63,7 @@ class Index[T] () extends StObject {
   def updateDoc(doc: T): Unit = js.native
   def updateDoc(doc: T, emitEvent: Boolean): Unit = js.native
   
-  def use(plugin: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Unit = js.native
+  def use(plugin: js.Function1[/* repeated */ Any, Any], args: Any*): Unit = js.native
 }
 object Index {
   
@@ -78,5 +72,5 @@ object Index {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[Index[T]]
+  inline def load[T /* <: js.Object */](serialisedData: SerialisedIndexData[T]): Index[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[Index[T]]
 }

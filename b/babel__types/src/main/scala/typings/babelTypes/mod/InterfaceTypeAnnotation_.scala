@@ -36,7 +36,7 @@ object InterfaceTypeAnnotation_ {
     
     inline def setExtendsNull: Self = StObject.set(x, "extends", null)
     
-    inline def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value :_*))
+    inline def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value*))
     
     inline def setType(value: InterfaceTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

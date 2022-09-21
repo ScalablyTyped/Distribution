@@ -20,7 +20,7 @@ trait FullScreen extends StObject {
   
   var scrubber: js.UndefOr[String] = js.undefined
   
-  var volueDown: js.UndefOr[String] = js.undefined
+  var volumeDown: js.UndefOr[String] = js.undefined
   
   var volumeUp: js.UndefOr[String] = js.undefined
 }
@@ -61,9 +61,9 @@ object FullScreen {
     
     inline def setScrubberUndefined: Self = StObject.set(x, "scrubber", js.undefined)
     
-    inline def setVolueDown(value: String): Self = StObject.set(x, "volueDown", value.asInstanceOf[js.Any])
+    inline def setVolumeDown(value: String): Self = StObject.set(x, "volumeDown", value.asInstanceOf[js.Any])
     
-    inline def setVolueDownUndefined: Self = StObject.set(x, "volueDown", js.undefined)
+    inline def setVolumeDownUndefined: Self = StObject.set(x, "volumeDown", js.undefined)
     
     inline def setVolumeUp(value: String): Self = StObject.set(x, "volumeUp", value.asInstanceOf[js.Any])
     

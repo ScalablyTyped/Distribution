@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.commonCommonMod.IInjectable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,15 +13,15 @@ object stringsMod {
   
   inline def beforeAfterSubstr(char: String): js.Function1[/* str */ String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeAfterSubstr")(char.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* str */ String, js.Array[String]]]
   
-  inline def fnToString(fn: IInjectable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fnToString")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def fnToString(fn: IInjectable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fnToString")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def functionToString(fn: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("functionToString")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def functionToString(fn: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("functionToString")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@uirouter/core/lib/common/strings", "hostRegex")
   @js.native
-  val hostRegex: RegExp = js.native
+  val hostRegex: js.RegExp = js.native
   
-  inline def joinNeighborsR(acc: js.Array[js.Any], x: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinNeighborsR")(acc.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def joinNeighborsR(acc: js.Array[Any], x: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinNeighborsR")(acc.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def kebobString(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebobString")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -38,7 +37,7 @@ object stringsMod {
   
   inline def splitQuery(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitQuery")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def stringify(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(o.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(o: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stripLastPathElement(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripLastPathElement")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   

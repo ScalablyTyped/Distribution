@@ -17,5 +17,5 @@ trait PictureMarkerSymbolConstructor
 Instantiable0[PictureMarkerSymbol]
      with Instantiable1[/* properties */ PictureMarkerSymbolProperties, PictureMarkerSymbol] {
   
-  def fromJSON(json: js.Any): PictureMarkerSymbol = js.native
+  def fromJSON(json: Any): PictureMarkerSymbol = js.native
 }

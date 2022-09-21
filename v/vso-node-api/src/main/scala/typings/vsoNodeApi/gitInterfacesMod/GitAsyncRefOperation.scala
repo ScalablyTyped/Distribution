@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitAsyncRefOperation extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var detailedStatus: GitAsyncRefOperationDetail
   
@@ -22,7 +22,7 @@ trait GitAsyncRefOperation extends StObject {
 object GitAsyncRefOperation {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     detailedStatus: GitAsyncRefOperationDetail,
     parameters: GitAsyncRefOperationParameters,
     status: GitAsyncOperationStatus,
@@ -42,6 +42,6 @@ object GitAsyncRefOperation {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -43,7 +43,7 @@ object gapi {
           
           inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
           
-          inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+          inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -76,7 +76,7 @@ object gapi {
           
           inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
           
-          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value*))
         }
       }
       
@@ -108,13 +108,13 @@ object gapi {
           
           inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
           
-          inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+          inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
           
           inline def setWorkflows(value: js.Array[Workflow]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
           
           inline def setWorkflowsUndefined: Self = StObject.set(x, "workflows", js.undefined)
           
-          inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value :_*))
+          inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value*))
         }
       }
       
@@ -127,7 +127,7 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
               ] = js.undefined
         
         /** The canonical id for this location. For example: `"us-east1"`. */
@@ -137,7 +137,7 @@ object gapi {
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
               ] = js.undefined
         
         /** Resource name for the location, which may vary between implementations. For example: `"projects/example-project/locations/us-east1"` */
@@ -159,7 +159,7 @@ object gapi {
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -171,7 +171,7 @@ object gapi {
           inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -213,7 +213,7 @@ object gapi {
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
               ] = js.undefined
         
         /**
@@ -230,7 +230,7 @@ object gapi {
         var response: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
               ] = js.undefined
       }
       object Operation {
@@ -253,7 +253,7 @@ object gapi {
           inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -265,7 +265,7 @@ object gapi {
           inline def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
@@ -336,7 +336,7 @@ object gapi {
         
         /**
           * Lists operations that match the specified filter in the request. If the server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the `name` binding allows API services
-          * to override the binding to use different resource name schemes, such as `users/∗/operations`. To override the binding, API services can add a binding such as
+          * to override the binding to use different resource name schemes, such as `users/ *‍/operations`. To override the binding, API services can add a binding such as
           * `"/v1/{name=users/ *}/operations"` to their service configuration. For backwards compatibility, the default name includes the operations collection id, however overriding users must
           * ensure the name binding is the parent resource, without the operations collection id.
           */
@@ -371,7 +371,7 @@ object gapi {
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any]
                 ]
               ] = js.undefined
         
@@ -398,7 +398,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any]
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
@@ -407,8 +407,8 @@ object gapi {
           inline def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any])*
-          ): Self = StObject.set(x, "details", js.Array(value :_*))
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any])*
+          ): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
@@ -431,7 +431,7 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[Any]
               ] = js.undefined
         
         /** The resource name of the workflow. Format: projects/{project}/locations/{location}/workflows/{workflow} */
@@ -441,20 +441,21 @@ object gapi {
         var revisionCreateTime: js.UndefOr[String] = js.undefined
         
         /**
-          * Output only. The revision of the workflow. A new revision of a workflow is created as a result of updating the following fields of a workflow: - `source_code` - `service_account`
-          * The format is "000001-a4d", where the first 6 characters define the zero-padded revision ordinal number. They are followed by a hyphen and 3 hexadecimal random characters.
+          * Output only. The revision of the workflow. A new revision of a workflow is created as a result of updating the following properties of a workflow: - Service account - Workflow code
+          * to be executed The format is "000001-a4d", where the first 6 characters define the zero-padded revision ordinal number. They are followed by a hyphen and 3 hexadecimal random
+          * characters.
           */
         var revisionId: js.UndefOr[String] = js.undefined
         
         /**
-          * Name of the service account associated with the latest workflow version. This service account represents the identity of the workflow and determines what permissions the workflow
-          * has. Format: projects/{project}/serviceAccounts/{account} Using `-` as a wildcard for the `{project}` will infer the project from the account. The `{account}` value can be the
-          * `email` address or the `unique_id` of the service account. If not provided, workflow will use the project's default service account. Modifying this field for an existing workflow
-          * results in a new workflow revision.
+          * The service account associated with the latest workflow version. This service account represents the identity of the workflow and determines what permissions the workflow has.
+          * Format: projects/{project}/serviceAccounts/{account} or {account} Using `-` as a wildcard for the `{project}` or not providing one at all will infer the project from the account.
+          * The `{account}` value can be the `email` address or the `unique_id` of the service account. If not provided, workflow will use the project's default service account. Modifying this
+          * field for an existing workflow results in a new workflow revision.
           */
         var serviceAccount: js.UndefOr[String] = js.undefined
         
-        /** Workflow code to be executed. The size limit is 32KB. */
+        /** Workflow code to be executed. The size limit is 128KB. */
         var sourceContents: js.UndefOr[String] = js.undefined
         
         /** Output only. State of the workflow deployment. */
@@ -483,7 +484,7 @@ object gapi {
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

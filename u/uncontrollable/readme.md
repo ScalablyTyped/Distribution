@@ -1,7 +1,7 @@
 
 # Scala.js typings for uncontrollable
 
-Typings are for version 7.1.1
+Typings are for version 7.2.1
 
 ## Library description:
 Wrap a controlled react component, to allow specific prop/handler pairs to be uncontrolled
@@ -10,10 +10,10 @@ Wrap a controlled react component, to allow specific prop/handler pairs to be un
 | ------------------ | :-------------: |
 | Full name          | uncontrollable |
 | Keywords           | uncontrolled-component, react-component, input, controlled, uncontrolled, form |
-| # releases         | 11 |
-| # dependents       | 270 |
-| # downloads        | 40276527 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7219705.0 |
+| # stars            | 187.0 |
 
 ## Links
 - [Homepage](https://github.com/jquense/uncontrollable#readme)

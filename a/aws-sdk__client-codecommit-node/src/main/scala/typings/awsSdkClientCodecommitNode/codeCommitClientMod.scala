@@ -13,14 +13,14 @@ object codeCommitClientMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", "CodeCommitClient")
   @js.native
-  class CodeCommitClient protected () extends StObject {
+  open class CodeCommitClient protected () extends StObject {
     def this(configuration: CodeCommitConfiguration) = this()
     
     /* protected */ val config: CodeCommitResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     
-    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any = js.native
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
     
     /**
       * This will need to be revised when the command interface lands.
@@ -42,7 +42,7 @@ object codeCommitClientMod {
           OutputType, 
           CodeCommitResolvedConfiguration
         ],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
 }

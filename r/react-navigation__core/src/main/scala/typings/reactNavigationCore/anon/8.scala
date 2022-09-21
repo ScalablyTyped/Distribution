@@ -1,29 +1,27 @@
 package typings.reactNavigationCore.anon
 
-import typings.std.Extract
+import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `8`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
+trait `8`[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-  ] = js.undefined
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
 }
 object `8` {
   
-  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](): `8`[EventName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`8`[EventName]]
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](
+    params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+  ): `8`[ParamList, RouteName] = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`8`[ParamList, RouteName]]
   }
   
-  extension [Self <: `8`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `8`[EventName]) {
+  extension [Self <: `8`[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (`8`[ParamList, RouteName])) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setParams(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

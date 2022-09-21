@@ -18,7 +18,7 @@ object Accessor {
   
   extension [Self <: Accessor[?], D /* <: js.Object */](x: Self & Accessor[D]) {
     
-    inline def setAccessor(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+    inline def setAccessor(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
     
     inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
   }

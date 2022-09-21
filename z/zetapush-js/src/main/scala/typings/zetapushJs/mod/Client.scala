@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zetapush-js", "Client")
 @js.native
-class Client protected () extends StObject {
+open class Client protected () extends StObject {
   def this(options: ClientOptions) = this()
   
   def addConnectionStatusListener(listener: ConnectionStatusListener): ConnectionStatusHandler = js.native
@@ -37,19 +37,19 @@ class Client protected () extends StObject {
   
   def onConnectionEstablished(handler: js.Function0[Unit]): ConnectionStatusHandler = js.native
   
-  def onConnectionToServerFail(handler: js.Function1[/* failure */ js.Any, Unit]): ConnectionStatusHandler = js.native
+  def onConnectionToServerFail(handler: js.Function1[/* failure */ Any, Unit]): ConnectionStatusHandler = js.native
   
   def onConnectionWillClose(handler: js.Function0[Unit]): ConnectionStatusHandler = js.native
   
-  def onFailedHandshake(handler: js.Function1[/* failure */ js.Any, Unit]): ConnectionStatusHandler = js.native
+  def onFailedHandshake(handler: js.Function1[/* failure */ Any, Unit]): ConnectionStatusHandler = js.native
   
   def onMessageLost(handler: js.Function0[Unit]): ConnectionStatusHandler = js.native
   
-  def onNegotiationFailed(handler: js.Function1[/* failure */ js.Any, Unit]): ConnectionStatusHandler = js.native
+  def onNegotiationFailed(handler: js.Function1[/* failure */ Any, Unit]): ConnectionStatusHandler = js.native
   
   def onNoServerUrlAvailable(handler: js.Function0[Unit]): ConnectionStatusHandler = js.native
   
-  def onSuccessfulHandshake(handler: js.Function1[/* authentication */ js.Any, Unit]): ConnectionStatusHandler = js.native
+  def onSuccessfulHandshake(handler: js.Function1[/* authentication */ Any, Unit]): ConnectionStatusHandler = js.native
   
   def removeConnectionStatusListener(listener: ConnectionStatusHandler): Unit = js.native
   

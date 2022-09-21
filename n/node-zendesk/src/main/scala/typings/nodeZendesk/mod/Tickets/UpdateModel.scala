@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait UpdateModel extends StObject {
   
-  var additional_collaborators: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
+  var additional_collaborators: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   var assignee_email: js.UndefOr[String | Null] = js.undefined
   
@@ -67,13 +67,13 @@ object UpdateModel {
   
   extension [Self <: UpdateModel](x: Self) {
     
-    inline def setAdditional_collaborators(value: js.Array[js.Any]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
+    inline def setAdditional_collaborators(value: js.Array[Any]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
     
     inline def setAdditional_collaboratorsNull: Self = StObject.set(x, "additional_collaborators", null)
     
     inline def setAdditional_collaboratorsUndefined: Self = StObject.set(x, "additional_collaborators", js.undefined)
     
-    inline def setAdditional_collaboratorsVarargs(value: js.Any*): Self = StObject.set(x, "additional_collaborators", js.Array(value :_*))
+    inline def setAdditional_collaboratorsVarargs(value: Any*): Self = StObject.set(x, "additional_collaborators", js.Array(value*))
     
     inline def setAssignee_email(value: String): Self = StObject.set(x, "assignee_email", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object UpdateModel {
     
     inline def setAttribute_value_idsUndefined: Self = StObject.set(x, "attribute_value_ids", js.undefined)
     
-    inline def setAttribute_value_idsVarargs(value: Double*): Self = StObject.set(x, "attribute_value_ids", js.Array(value :_*))
+    inline def setAttribute_value_idsVarargs(value: Double*): Self = StObject.set(x, "attribute_value_ids", js.Array(value*))
     
     inline def setCollaborator_ids(value: js.Array[Double]): Self = StObject.set(x, "collaborator_ids", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object UpdateModel {
     
     inline def setCollaborator_idsUndefined: Self = StObject.set(x, "collaborator_ids", js.undefined)
     
-    inline def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value :_*))
+    inline def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value*))
     
     inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
@@ -113,7 +113,7 @@ object UpdateModel {
     
     inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
     
-    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value*))
     
     inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
     
@@ -127,7 +127,7 @@ object UpdateModel {
     
     inline def setEmail_ccsUndefined: Self = StObject.set(x, "email_ccs", js.undefined)
     
-    inline def setEmail_ccsVarargs(value: EmailCC*): Self = StObject.set(x, "email_ccs", js.Array(value :_*))
+    inline def setEmail_ccsVarargs(value: EmailCC*): Self = StObject.set(x, "email_ccs", js.Array(value*))
     
     inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object UpdateModel {
     
     inline def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
     
-    inline def setFollowersVarargs(value: Follower*): Self = StObject.set(x, "followers", js.Array(value :_*))
+    inline def setFollowersVarargs(value: Follower*): Self = StObject.set(x, "followers", js.Array(value*))
     
     inline def setGroup_id(value: Double): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
     
@@ -155,7 +155,7 @@ object UpdateModel {
     
     inline def setMacro_idsUndefined: Self = StObject.set(x, "macro_ids", js.undefined)
     
-    inline def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value :_*))
+    inline def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value*))
     
     inline def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
     
@@ -189,7 +189,7 @@ object UpdateModel {
     
     inline def setSharing_agreement_idsUndefined: Self = StObject.set(x, "sharing_agreement_ids", js.undefined)
     
-    inline def setSharing_agreement_idsVarargs(value: Double*): Self = StObject.set(x, "sharing_agreement_ids", js.Array(value :_*))
+    inline def setSharing_agreement_idsVarargs(value: Double*): Self = StObject.set(x, "sharing_agreement_ids", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -209,7 +209,7 @@ object UpdateModel {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: TicketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

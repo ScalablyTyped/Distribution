@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the styles.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait StyleCollectionLoadOptions extends StObject {
@@ -19,185 +19,185 @@ trait StyleCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: A collection of four border objects that represent the style of the four borders.
     *
-    * For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four borders.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the style is a built-in style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var builtIn: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The fill of the style.
     *
-    * For EACH ITEM in the collection: The Fill of the style.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var fill: js.UndefOr[RangeFillLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: A `Font` object that represents the font of the style.
     *
-    * For EACH ITEM in the collection: A Font object that represents the font of the style.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var font: js.UndefOr[RangeFontLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the formula will be hidden when the worksheet is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the horizontal alignment for the style. See `Excel.HorizontalAlignment` for details.
     *
-    * For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the auto indent, horizontal alignment, vertical alignment, wrap text, indent level, and text orientation properties.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the color, color index, line style, and weight border properties.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeBorder: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the background, bold, color, color index, font style, italic, name, size, strikethrough, subscript, superscript, and underline font properties.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeFont: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the number format property.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the NumberFormat property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the color, color index, invert if negative, pattern, pattern color, and pattern color index interior properties.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includePatterns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the style includes the formula hidden and locked protection properties.
     *
-    * For EACH ITEM in the collection: Specifies if the style includes the FormulaHidden and Locked protection properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var indentLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the object is locked when the worksheet is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The name of the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The format code of the number format for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The localized format code of the number format for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var numberFormatLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The reading order for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if text automatically shrinks to fit in the available column width.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The text orientation for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the vertical alignment for the style. See `Excel.VerticalAlignment` for details.
     *
-    * For EACH ITEM in the collection: Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if Excel wraps the text in the object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var wrapText: js.UndefOr[Boolean] = js.undefined

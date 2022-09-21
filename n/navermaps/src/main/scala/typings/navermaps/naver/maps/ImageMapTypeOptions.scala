@@ -8,7 +8,7 @@ trait ImageMapTypeOptions extends StObject {
   
   var darktheme: js.UndefOr[Boolean] = js.undefined
   
-  var getTileUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTileUrl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var maxZoom: Double
   
@@ -43,7 +43,7 @@ object ImageMapTypeOptions {
     
     inline def setDarkthemeUndefined: Self = StObject.set(x, "darktheme", js.undefined)
     
-    inline def setGetTileUrl(value: () => js.Any): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction0(value))
+    inline def setGetTileUrl(value: () => Any): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction0(value))
     
     inline def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)
     
@@ -59,7 +59,7 @@ object ImageMapTypeOptions {
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setProviderVarargs(value: MapDataProvider*): Self = StObject.set(x, "provider", js.Array(value :_*))
+    inline def setProviderVarargs(value: MapDataProvider*): Self = StObject.set(x, "provider", js.Array(value*))
     
     inline def setRepeatX(value: Boolean): Self = StObject.set(x, "repeatX", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object ImageMapTypeOptions {
     
     inline def setTileSetUndefined: Self = StObject.set(x, "tileSet", js.undefined)
     
-    inline def setTileSetVarargs(value: String*): Self = StObject.set(x, "tileSet", js.Array(value :_*))
+    inline def setTileSetVarargs(value: String*): Self = StObject.set(x, "tileSet", js.Array(value*))
     
     inline def setTileSize(value: Size | SizeLiteral): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     

@@ -31,6 +31,11 @@ object mod {
     var normalize: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Whether to support the noscript option of sax.js
+      */
+    var noscript: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Default to false, if true makes sax parser to accept valid XML only.
       */
     var strict: js.UndefOr[Boolean] = js.undefined
@@ -82,6 +87,10 @@ object mod {
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
+      inline def setNoscript(value: Boolean): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      
+      inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
+      
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictEntities(value: Boolean): Self = StObject.set(x, "strictEntities", value.asInstanceOf[js.Any])
@@ -92,7 +101,7 @@ object mod {
       
       inline def setTag(value: String | js.Array[String]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      inline def setTagVarargs(value: String*): Self = StObject.set(x, "tag", js.Array(value :_*))
+      inline def setTagVarargs(value: String*): Self = StObject.set(x, "tag", js.Array(value*))
       
       inline def setTrackPosition(value: Boolean): Self = StObject.set(x, "trackPosition", value.asInstanceOf[js.Any])
       

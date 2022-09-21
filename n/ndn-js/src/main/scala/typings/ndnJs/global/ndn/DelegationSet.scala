@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.DelegationSet")
 @js.native
-class DelegationSet ()
+open class DelegationSet ()
   extends typings.ndnJs.mod.DelegationSet
 object DelegationSet {
   
   @JSGlobal("ndn.DelegationSet.Delegation")
   @js.native
-  class Delegation ()
+  open class Delegation ()
     extends typings.ndnJs.mod.DelegationSet.Delegation
 }

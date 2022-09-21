@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERInteger")
 @js.native
-class DERInteger ()
+open class DERInteger ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERInteger {
   def this(params: Double) = this()
   def this(params: BigIntegerParam) = this()

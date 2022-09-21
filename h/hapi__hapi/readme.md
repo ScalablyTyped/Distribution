@@ -10,10 +10,10 @@ HTTP Server framework
 | ------------------ | :-------------: |
 | Full name          | @hapi/hapi |
 | Keywords           | framework, http, api, web |
-| # releases         | 21 |
-| # dependents       | 273 |
-| # downloads        | 13837610 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2399189.6666666665 |
+| # stars            | 13953.0 |
 
 ## Links
 - [Homepage](https://hapi.dev)

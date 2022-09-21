@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Slider")
 @js.native
-class Slider () extends default
+open class Slider () extends default
 /* static members */
 object Slider {
   

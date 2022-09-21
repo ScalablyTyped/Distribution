@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo")
 @js.native
 /** Initializes a new instance of the ChatRecipientDeliveryInfo class. */
-class ChatRecipientDeliveryInfo ()
+open class ChatRecipientDeliveryInfo ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo {
   
   /** Gets or sets the time the message was sent to the recipient. */
   /* CompleteClass */
-  var deliveryTime: Date = js.native
+  var deliveryTime: js.Date = js.native
   
   /** Gets a Boolean value indicating whether the error for the message that was sent to the recipient is permanent. */
   /* CompleteClass */
@@ -23,7 +22,7 @@ class ChatRecipientDeliveryInfo ()
   
   /** Gets or sets the time the recipient read the message. */
   /* CompleteClass */
-  var readTime: Date = js.native
+  var readTime: js.Date = js.native
   
   /** Gets the status of the message. */
   /* CompleteClass */

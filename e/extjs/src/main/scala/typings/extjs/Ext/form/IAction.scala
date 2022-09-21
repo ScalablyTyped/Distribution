@@ -22,7 +22,7 @@ trait IAction
   var SERVER_INVALID: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function) */
-  var failure: js.UndefOr[js.Any] = js.undefined
+  var failure: js.UndefOr[Any] = js.undefined
   
   /** [Property] (String) */
   var failureType: js.UndefOr[String] = js.undefined
@@ -31,34 +31,34 @@ trait IAction
   var form: js.UndefOr[IBasic] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var reset: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Object) */
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
   
   /** [Method] Invokes this action using the current configuration  */
   var run: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var submitEmptyText: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var success: js.UndefOr[js.Any] = js.undefined
+  var success: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -92,7 +92,7 @@ object IAction {
     
     inline def setCONNECT_FAILUREUndefined: Self = StObject.set(x, "CONNECT_FAILURE", js.undefined)
     
-    inline def setFailure(value: js.Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     inline def setFailureType(value: String): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
     
@@ -104,7 +104,7 @@ object IAction {
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -116,7 +116,7 @@ object IAction {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -124,11 +124,11 @@ object IAction {
     
     inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
@@ -140,7 +140,7 @@ object IAction {
     
     inline def setSERVER_INVALIDUndefined: Self = StObject.set(x, "SERVER_INVALID", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -148,7 +148,7 @@ object IAction {
     
     inline def setSubmitEmptyTextUndefined: Self = StObject.set(x, "submitEmptyText", js.undefined)
     
-    inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     

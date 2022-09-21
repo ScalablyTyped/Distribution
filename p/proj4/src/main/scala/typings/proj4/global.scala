@@ -32,12 +32,12 @@ object global {
     inline def Point(x: Double, y: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
     inline def Point(x: Double, y: Double, z: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
     
-    inline def Proj(srsCode: js.Any): InterfaceProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any]).asInstanceOf[InterfaceProjection]
-    inline def Proj(srsCode: js.Any, callback: js.Any): InterfaceProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[InterfaceProjection]
+    inline def Proj(srsCode: Any): InterfaceProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any]).asInstanceOf[InterfaceProjection]
+    inline def Proj(srsCode: Any, callback: Any): InterfaceProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[InterfaceProjection]
     
     @JSGlobal("proj4.WGS84")
     @js.native
-    val WGS84: js.Any = js.native
+    val WGS84: Any = js.native
     
     @JSGlobal("proj4.defaultDatum")
     @js.native
@@ -50,9 +50,11 @@ object global {
     
     inline def mgrs(coordinates: js.Array[Double], accuracy: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mgrs")(coordinates.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[String]
     
+    inline def nadgrid(key: String, grid: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nadgrid")(key.asInstanceOf[js.Any], grid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def toPoint(array: js.Array[Double]): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("toPoint")(array.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
     
-    inline def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSGlobal("proj4.version")
     @js.native

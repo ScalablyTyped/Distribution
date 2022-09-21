@@ -116,7 +116,7 @@ object anon {
   
   trait Dictkey[T /* <: ListenableName */]
     extends StObject
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
        with ListenerData[T] {
     
     var eventName: `before-change` | changed
@@ -185,11 +185,11 @@ object anon {
   /* Inlined std.Required<{  class :any}> */
   trait Requiredclassany extends StObject {
     
-    var `class`: js.Any
+    var `class`: Any
   }
   object Requiredclassany {
     
-    inline def apply(`class`: js.Any): Requiredclassany = {
+    inline def apply(`class`: Any): Requiredclassany = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Requiredclassany]
@@ -197,25 +197,25 @@ object anon {
     
     extension [Self <: Requiredclassany](x: Self) {
       
-      inline def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Required<{  constants :any}> */
   trait Requiredconstantsany extends StObject {
     
-    var constants: js.Any
+    var constants: Any
   }
   object Requiredconstantsany {
     
-    inline def apply(constants: js.Any): Requiredconstantsany = {
+    inline def apply(constants: Any): Requiredconstantsany = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any])
       __obj.asInstanceOf[Requiredconstantsany]
     }
     
     extension [Self <: Requiredconstantsany](x: Self) {
       
-      inline def setConstants(value: js.Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     }
   }
   

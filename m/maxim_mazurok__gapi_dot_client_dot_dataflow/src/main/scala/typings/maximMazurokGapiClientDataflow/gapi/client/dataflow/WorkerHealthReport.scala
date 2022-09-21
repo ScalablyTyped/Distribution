@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkerHealthReport extends StObject {
   
-  /** A message describing any unusual health reports. */
+  /** Message describing any unusual health reports. */
   var msg: js.UndefOr[String] = js.undefined
   
   /**
@@ -18,12 +18,15 @@ trait WorkerHealthReport extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[Any]
     ]
   ] = js.undefined
   
   /** The interval at which the worker is sending health reports. The default value of 0 should be interpreted as the field is not being explicitly set by the worker. */
   var reportInterval: js.UndefOr[String] = js.undefined
+  
+  /** Code to describe a specific reason, if known, that a VM has reported broken state. */
+  var vmBrokenCode: js.UndefOr[String] = js.undefined
   
   /** Whether the VM is in a permanently broken state. Broken VMs should be abandoned or deleted ASAP to avoid assigning or completing any work. */
   var vmIsBroken: js.UndefOr[Boolean] = js.undefined
@@ -51,7 +54,7 @@ object WorkerHealthReport {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
@@ -60,12 +63,16 @@ object WorkerHealthReport {
     inline def setPodsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "pods", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[Any])*
+    ): Self = StObject.set(x, "pods", js.Array(value*))
     
     inline def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
     inline def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
+    
+    inline def setVmBrokenCode(value: String): Self = StObject.set(x, "vmBrokenCode", value.asInstanceOf[js.Any])
+    
+    inline def setVmBrokenCodeUndefined: Self = StObject.set(x, "vmBrokenCode", js.undefined)
     
     inline def setVmIsBroken(value: Boolean): Self = StObject.set(x, "vmIsBroken", value.asInstanceOf[js.Any])
     

@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaLookupMembershipNameResponse extends StObject {
   
   /**
-    * [Resource name](https://cloud.google.com/apis/design/resource_names) of
-    * the Membership being looked up.  Format:
-    * `groups/{group_id}/memberships/{member_id}`, where `group_id` is the
-    * unique ID assigned to the Group to which Membership belongs to, and
-    * `member_id` is the unique ID assigned to the member.
+    * The [resource name](https://cloud.google.com/apis/design/resource_names) of the looked-up `Membership`. Must be of the form `groups/{group\}/memberships/{membership\}`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLookupMembershipNameResponse {
   
@@ -25,6 +21,8 @@ object SchemaLookupMembershipNameResponse {
   extension [Self <: SchemaLookupMembershipNameResponse](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

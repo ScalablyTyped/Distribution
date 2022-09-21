@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enabled extends StObject {
   
-  /** If set, access is controlled only by bucket-level or above IAM policies. */
+  /** Whether or not Autoclass is enabled on this bucket */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * The deadline for changing iamConfiguration.uniformBucketLevelAccess.enabled from true to false in RFC 3339  format. iamConfiguration.uniformBucketLevelAccess.enabled may be
-    * changed from true to false until the locked time, after which the field is immutable.
-    */
-  var lockedTime: js.UndefOr[String] = js.undefined
+  /** A date and time in RFC 3339 format representing the instant at which "enabled" was last toggled. */
+  var toggleTime: js.UndefOr[String] = js.undefined
 }
 object Enabled {
   
@@ -28,8 +25,8 @@ object Enabled {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setLockedTime(value: String): Self = StObject.set(x, "lockedTime", value.asInstanceOf[js.Any])
+    inline def setToggleTime(value: String): Self = StObject.set(x, "toggleTime", value.asInstanceOf[js.Any])
     
-    inline def setLockedTimeUndefined: Self = StObject.set(x, "lockedTime", js.undefined)
+    inline def setToggleTimeUndefined: Self = StObject.set(x, "toggleTime", js.undefined)
   }
 }

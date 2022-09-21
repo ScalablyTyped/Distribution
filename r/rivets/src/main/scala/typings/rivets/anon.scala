@@ -10,7 +10,7 @@ object anon {
   trait Handler extends StObject {
     
     // Augment the event handler of the on-* binder
-    var handler: js.UndefOr[js.Function3[/* context */ js.Any, /* ev */ Event, /* biding */ js.Any, Unit]] = js.undefined
+    var handler: js.UndefOr[js.Function3[/* context */ Any, /* ev */ Event, /* biding */ Any, Unit]] = js.undefined
     
     // Attribute prefix in templates
     var prefix: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ object anon {
     
     extension [Self <: Handler](x: Self) {
       
-      inline def setHandler(value: (/* context */ js.Any, /* ev */ Event, /* biding */ js.Any) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+      inline def setHandler(value: (/* context */ Any, /* ev */ Event, /* biding */ Any) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
@@ -53,7 +53,7 @@ object anon {
       
       inline def setTemplateDelimitersUndefined: Self = StObject.set(x, "templateDelimiters", js.undefined)
       
-      inline def setTemplateDelimitersVarargs(value: String*): Self = StObject.set(x, "templateDelimiters", js.Array(value :_*))
+      inline def setTemplateDelimitersVarargs(value: String*): Self = StObject.set(x, "templateDelimiters", js.Array(value*))
     }
   }
 }

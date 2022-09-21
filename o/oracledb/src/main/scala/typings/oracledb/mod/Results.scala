@@ -56,19 +56,19 @@ object Results {
     
     inline def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
     
-    inline def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value :_*))
+    inline def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value*))
     
     inline def setDmlRowCounts(value: js.Array[Double]): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     
     inline def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
     
-    inline def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value :_*))
+    inline def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value*))
     
     inline def setOutBinds(value: js.Array[T]): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
     inline def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
     
-    inline def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value :_*))
+    inline def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value*))
     
     inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     

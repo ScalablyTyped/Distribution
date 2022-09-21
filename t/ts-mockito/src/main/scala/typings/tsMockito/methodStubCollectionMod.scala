@@ -9,24 +9,24 @@ object methodStubCollectionMod {
   
   @JSImport("ts-mockito/lib/MethodStubCollection", "MethodStubCollection")
   @js.native
-  class MethodStubCollection () extends StObject {
+  open class MethodStubCollection () extends StObject {
     
     def add(item: MethodStub): Unit = js.native
     
-    /* private */ var getFirstMatchingFromGroup: js.Any = js.native
+    /* private */ var getFirstMatchingFromGroup: Any = js.native
     
-    def getFirstMatchingFromGroupAndRemoveIfNotLast(groupIndex: Double, args: js.Array[js.Any]): MethodStub = js.native
+    def getFirstMatchingFromGroupAndRemoveIfNotLast(groupIndex: Double, args: js.Array[Any]): MethodStub = js.native
     
-    /* private */ var getFirstMatchingIndexFromGroup: js.Any = js.native
+    /* private */ var getFirstMatchingIndexFromGroup: Any = js.native
     
-    /* private */ var getItemsCountInGroup: js.Any = js.native
+    /* private */ var getItemsCountInGroup: Any = js.native
     
-    def getLastMatchingGroupIndex(args: js.Any): Double = js.native
+    def getLastMatchingGroupIndex(args: Any): Double = js.native
     
-    def hasMatchingInAnyGroup(args: js.Array[js.Any]): Boolean = js.native
+    def hasMatchingInAnyGroup(args: js.Array[Any]): Boolean = js.native
     
-    /* private */ var items: js.Any = js.native
+    /* private */ var items: Any = js.native
     
-    /* private */ var removeIfNotLast: js.Any = js.native
+    /* private */ var removeIfNotLast: Any = js.native
   }
 }

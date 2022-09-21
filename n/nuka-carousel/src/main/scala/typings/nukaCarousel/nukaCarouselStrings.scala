@@ -1,11 +1,7 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.mod.CarouselCellAlignProp
-import typings.nukaCarousel.mod.CarouselControlContainerProp
-import typings.nukaCarousel.mod.CarouselHeightModeProp
-import typings.nukaCarousel.mod.CarouselScrollModeProp
-import typings.nukaCarousel.mod.CarouselSlideActions
-import typings.nukaCarousel.mod.CarouselTransitionModeProp
+import typings.nukaCarousel.typesMod.RenderControlFunctionNames
+import typings.nukaCarousel.typesMod._KeyCodeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,158 +9,112 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nukaCarouselStrings {
   
   @js.native
-  sealed trait BottomCenter
-    extends StObject
-       with CarouselControlContainerProp
-  inline def BottomCenter: BottomCenter = "BottomCenter".asInstanceOf[BottomCenter]
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait BottomLeft
-    extends StObject
-       with CarouselControlContainerProp
-  inline def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
-  
-  @js.native
-  sealed trait BottomRight
-    extends StObject
-       with CarouselControlContainerProp
-  inline def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
-  
-  @js.native
-  sealed trait CenterCenter
-    extends StObject
-       with CarouselControlContainerProp
-  inline def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
-  
-  @js.native
-  sealed trait CenterLeft
-    extends StObject
-       with CarouselControlContainerProp
-  inline def CenterLeft: CenterLeft = "CenterLeft".asInstanceOf[CenterLeft]
-  
-  @js.native
-  sealed trait CenterRight
-    extends StObject
-       with CarouselControlContainerProp
-  inline def CenterRight: CenterRight = "CenterRight".asInstanceOf[CenterRight]
-  
-  @js.native
-  sealed trait TopCenter
-    extends StObject
-       with CarouselControlContainerProp
-  inline def TopCenter: TopCenter = "TopCenter".asInstanceOf[TopCenter]
-  
-  @js.native
-  sealed trait TopLeft
-    extends StObject
-       with CarouselControlContainerProp
-  inline def TopLeft: TopLeft = "TopLeft".asInstanceOf[TopLeft]
-  
-  @js.native
-  sealed trait TopRight
-    extends StObject
-       with CarouselControlContainerProp
-  inline def TopRight: TopRight = "TopRight".asInstanceOf[TopRight]
-  
-  @js.native
-  sealed trait auto extends StObject
-  inline def auto: auto = "auto".asInstanceOf[auto]
-  
-  @js.native
-  sealed trait center
-    extends StObject
-       with CarouselCellAlignProp
-  inline def center: center = "center".asInstanceOf[center]
-  
-  @js.native
-  sealed trait current
-    extends StObject
-       with CarouselHeightModeProp
-  inline def current: current = "current".asInstanceOf[current]
-  
-  @js.native
-  sealed trait fade
-    extends StObject
-       with CarouselTransitionModeProp
+  sealed trait fade extends StObject
   inline def fade: fade = "fade".asInstanceOf[fade]
-  
-  @js.native
-  sealed trait first
-    extends StObject
-       with CarouselHeightModeProp
-  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait firstSlide
     extends StObject
-       with CarouselSlideActions
+       with _KeyCodeFunction
   inline def firstSlide: firstSlide = "firstSlide".asInstanceOf[firstSlide]
   
   @js.native
   sealed trait lastSlide
     extends StObject
-       with CarouselSlideActions
+       with _KeyCodeFunction
   inline def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
   
   @js.native
-  sealed trait left
-    extends StObject
-       with CarouselCellAlignProp
-  inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
-  sealed trait max
-    extends StObject
-       with CarouselHeightModeProp
-  inline def max: max = "max".asInstanceOf[max]
+  sealed trait `next-cloned` extends StObject
+  inline def `next-cloned`: `next-cloned` = "next-cloned".asInstanceOf[`next-cloned`]
   
   @js.native
   sealed trait nextSlide
     extends StObject
-       with CarouselSlideActions
+       with _KeyCodeFunction
   inline def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
   
   @js.native
-  sealed trait page
-    extends StObject
-       with CarouselScrollModeProp
-  inline def page: page = "page".asInstanceOf[page]
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait pause
     extends StObject
-       with CarouselSlideActions
+       with _KeyCodeFunction
   inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
+  
+  @js.native
+  sealed trait `prev-cloned` extends StObject
+  inline def `prev-cloned`: `prev-cloned` = "prev-cloned".asInstanceOf[`prev-cloned`]
   
   @js.native
   sealed trait previousSlide
     extends StObject
-       with CarouselSlideActions
+       with _KeyCodeFunction
   inline def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
   
   @js.native
-  sealed trait remainder
+  sealed trait renderBottomCenterControls
     extends StObject
-       with CarouselScrollModeProp
-  inline def remainder: remainder = "remainder".asInstanceOf[remainder]
+       with RenderControlFunctionNames
+  inline def renderBottomCenterControls: renderBottomCenterControls = "renderBottomCenterControls".asInstanceOf[renderBottomCenterControls]
   
   @js.native
-  sealed trait right
+  sealed trait renderBottomLeftControls
     extends StObject
-       with CarouselCellAlignProp
-  inline def right: right = "right".asInstanceOf[right]
+       with RenderControlFunctionNames
+  inline def renderBottomLeftControls: renderBottomLeftControls = "renderBottomLeftControls".asInstanceOf[renderBottomLeftControls]
   
   @js.native
-  sealed trait scroll
+  sealed trait renderBottomRightControls
     extends StObject
-       with CarouselTransitionModeProp
-  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
+       with RenderControlFunctionNames
+  inline def renderBottomRightControls: renderBottomRightControls = "renderBottomRightControls".asInstanceOf[renderBottomRightControls]
   
   @js.native
-  sealed trait scroll3d
+  sealed trait renderCenterCenterControls
     extends StObject
-       with CarouselTransitionModeProp
-  inline def scroll3d: scroll3d = "scroll3d".asInstanceOf[scroll3d]
+       with RenderControlFunctionNames
+  inline def renderCenterCenterControls: renderCenterCenterControls = "renderCenterCenterControls".asInstanceOf[renderCenterCenterControls]
+  
+  @js.native
+  sealed trait renderCenterLeftControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderCenterLeftControls: renderCenterLeftControls = "renderCenterLeftControls".asInstanceOf[renderCenterLeftControls]
+  
+  @js.native
+  sealed trait renderCenterRightControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderCenterRightControls: renderCenterRightControls = "renderCenterRightControls".asInstanceOf[renderCenterRightControls]
+  
+  @js.native
+  sealed trait renderTopCenterControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopCenterControls: renderTopCenterControls = "renderTopCenterControls".asInstanceOf[renderTopCenterControls]
+  
+  @js.native
+  sealed trait renderTopLeftControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopLeftControls: renderTopLeftControls = "renderTopLeftControls".asInstanceOf[renderTopLeftControls]
+  
+  @js.native
+  sealed trait renderTopRightControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopRightControls: renderTopRightControls = "renderTopRightControls".asInstanceOf[renderTopRightControls]
   
   @js.native
   sealed trait zoom extends StObject

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "LiteralPrimitive")
 @js.native
-class LiteralPrimitive protected () extends Expression {
-  def this(value: js.Any) = this()
+open class LiteralPrimitive protected () extends Expression {
+  def this(value: Any) = this()
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

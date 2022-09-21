@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.ArrayDataSource")
 @js.native
-class ArrayDataSource protected ()
+open class ArrayDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.ArrayDataSource {
   def this(settings: DataSourceSettings) = this()

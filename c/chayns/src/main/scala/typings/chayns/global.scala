@@ -14,22 +14,22 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def addErrorListener(logFn: js.Function1[/* error */ js.Any, js.Promise[js.Object]], appName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addErrorListener")(logFn.asInstanceOf[js.Any], appName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addErrorListener(logFn: js.Function1[/* error */ Any, js.Promise[js.Object]], appName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addErrorListener")(logFn.asInstanceOf[js.Any], appName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // TODO check passbock parameter
-    inline def addScrollListener(callback: js.Function1[/* data */ js.Any, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def addScrollListener(callback: js.Function1[/* data */ js.Any, js.Any], throttle: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def addScrollListener(callback: js.Function1[/* data */ Any, Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def addScrollListener(callback: js.Function1[/* data */ Any, Any], throttle: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def addToWallet(passbook: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addToWallet")(passbook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def addToWallet(passbook: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addToWallet")(passbook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def allowRefreshScroll(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("allowRefreshScroll")().asInstanceOf[js.Promise[js.Any]]
+    inline def allowRefreshScroll(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("allowRefreshScroll")().asInstanceOf[js.Promise[Any]]
     
     inline def closeUrl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeUrl")().asInstanceOf[Unit]
     
     // TODO interface for promise result
     inline def createQRCode(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQRCode")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
-    inline def createTappShortcut(name: String, imageUrl: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTappShortcut")(name.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def createTappShortcut(name: String, imageUrl: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTappShortcut")(name.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /**
       * UI Functions
@@ -40,6 +40,23 @@ object global {
       @JSGlobal("chayns.dialog")
       @js.native
       val ^ : js.Any = js.native
+      
+      /**
+        * This dialog allows the user to select a date, a time or both.
+        * This call accepts only the config parameter, which is an object.
+        * You can call this dialog using chayns.dialog.advancedDate.
+        *
+        * This date dialog will return on each platform the same values.
+        * This is a big advantage of this call and there are some more features like:
+        *  - multiselect
+        *  - multiple preselects
+        *  - disabled days
+        *  - disabled intervals
+        *  - disabled intervals for weekdays
+        *  - selection of year and month to make it easier to select a date which is far away.
+        * @param config
+        */
+      inline def advancedDate(config: AdvancedDateDialogConfig): js.Promise[AdvancedDateDialogResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("advancedDate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdvancedDateDialogResult]]
       
       inline def alert(title: String): js.Promise[buttonType] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[buttonType]]
       inline def alert(title: String, message: String): js.Promise[buttonType] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[buttonType]]
@@ -114,11 +131,11 @@ object global {
       inline def select(config: DialogSelectConfig): js.Promise[DialogSelectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DialogSelectResult]]
     }
     
-    inline def disableDisplayTimeout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDisplayTimeout")().asInstanceOf[js.Promise[js.Any]]
+    inline def disableDisplayTimeout(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDisplayTimeout")().asInstanceOf[js.Promise[Any]]
     
-    inline def disallowRefreshScroll(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowRefreshScroll")().asInstanceOf[js.Promise[js.Any]]
+    inline def disallowRefreshScroll(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowRefreshScroll")().asInstanceOf[js.Promise[Any]]
     
-    inline def enableDisplayTimeout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDisplayTimeout")().asInstanceOf[js.Promise[js.Any]]
+    inline def enableDisplayTimeout(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDisplayTimeout")().asInstanceOf[js.Promise[Any]]
     
     /**
       * Environmental Variables
@@ -132,8 +149,8 @@ object global {
       
       @JSGlobal("chayns.env._parameters")
       @js.native
-      def _parameters: js.Any = js.native
-      inline def _parameters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_parameters")(x.asInstanceOf[js.Any])
+      def _parameters: Any = js.native
+      inline def _parameters_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_parameters")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chayns.env.apiVersion")
       @js.native
@@ -224,8 +241,8 @@ object global {
         
         @JSGlobal("chayns.env.device.fontScale")
         @js.native
-        def fontScale: js.Any = js.native
-        inline def fontScale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontScale")(x.asInstanceOf[js.Any])
+        def fontScale: Any = js.native
+        inline def fontScale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontScale")(x.asInstanceOf[js.Any])
         
         @JSGlobal("chayns.env.device.imei")
         @js.native
@@ -351,8 +368,8 @@ object global {
       
       @JSGlobal("chayns.env.parameters")
       @js.native
-      def parameters: js.Any = js.native
-      inline def parameters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+      def parameters: Any = js.native
+      inline def parameters_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
       
       /**
         * Environmental Variables
@@ -512,6 +529,11 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
+        @JSGlobal("chayns.env.user.adminMode")
+        @js.native
+        def adminMode: Boolean = js.native
+        inline def adminMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adminMode")(x.asInstanceOf[js.Any])
+        
         @JSGlobal("chayns.env.user.facebookAccessToken")
         @js.native
         def facebookAccessToken: String = js.native
@@ -588,9 +610,9 @@ object global {
     
     inline def hideFloatingButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideFloatingButton")().asInstanceOf[Unit]
     
-    inline def hideTitleImage(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTitleImage")().asInstanceOf[js.Promise[js.Any]]
+    inline def hideTitleImage(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTitleImage")().asInstanceOf[js.Promise[Any]]
     
-    inline def hideWaitCursor(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideWaitCursor")().asInstanceOf[js.Promise[js.Any]]
+    inline def hideWaitCursor(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideWaitCursor")().asInstanceOf[js.Promise[Any]]
     
     /**
       * Basic Functions
@@ -603,30 +625,30 @@ object global {
       val ^ : js.Any = js.native
       
       // TODO set interface for promise result
-      inline def sendMessageToGroup(groupId: Double, config: IntercomConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToGroup")(groupId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      inline def sendMessageToGroup(groupId: Double, config: IntercomConfig): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToGroup")(groupId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
       
       // TODO set interface for promise result
-      inline def sendMessageToPage(config: IntercomConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToPage")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      inline def sendMessageToPage(config: IntercomConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToPage")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
       
-      inline def sendMessageToUser(userId: Double, config: IntercomConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToUser")(userId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      inline def sendMessageToUser(userId: Double, config: IntercomConfig): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToUser")(userId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     }
     
     /**
       * Basic Functions
       * chayns
       */
-    inline def login(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")().asInstanceOf[js.Promise[js.Any]]
-    inline def login(parameters: js.Array[String]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def login(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")().asInstanceOf[js.Promise[Any]]
+    inline def login(parameters: js.Array[String]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def navigateBack(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[js.Promise[js.Any]]
+    inline def navigateBack(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[js.Promise[Any]]
     
     /**
       * Media Functions
       * Image
       * chayns
       */
-    inline def openImage(urls: js.Array[String]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def openImage(urls: js.Array[String], start: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def openImage(urls: js.Array[String]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def openImage(urls: js.Array[String], start: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def openUrl(config: OpenUrlConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -637,7 +659,7 @@ object global {
       * Miscellaneous
       * chayns
       */
-    inline def openVideo(url: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openVideo")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def openVideo(url: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openVideo")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     /**
       * Basic Functions
@@ -649,14 +671,14 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def getInstalled(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstalled")().asInstanceOf[js.Promise[js.Any]]
+      inline def getInstalled(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstalled")().asInstanceOf[js.Promise[Any]]
       
       // TODO interface for promise result
-      inline def isInstalled(identifier: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      inline def isInstalled(identifier: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     }
     
-    inline def playSound(url: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def playSound(url: String, playOnMute: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any], playOnMute.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def playSound(url: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def playSound(url: String, playOnMute: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any], playOnMute.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /**
       * Getting Started
@@ -665,85 +687,81 @@ object global {
       */
     @JSGlobal("chayns.ready")
     @js.native
-    def ready: js.Promise[js.Any] = js.native
-    inline def ready_=(x: js.Promise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ready")(x.asInstanceOf[js.Any])
+    def ready: js.Promise[Any] = js.native
+    inline def ready_=(x: js.Promise[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ready")(x.asInstanceOf[js.Any])
     
     inline def register(config: RegisterConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def removeNfcCallback(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNfcCallback")().asInstanceOf[js.Promise[js.Any]]
+    inline def removeNfcCallback(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNfcCallback")().asInstanceOf[js.Promise[Any]]
     
     inline def removeSubTapp(config: RemoveSubTappConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSubTapp")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def saveAppointment(config: SaveAppointmentConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAppointment")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def saveAppointment(config: SaveAppointmentConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAppointment")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def scanQRCode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")().asInstanceOf[js.Promise[js.Any]]
-    inline def scanQRCode(cameryType: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def scanQRCode(cameryType: Double, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def scanQRCode(cameryType: Unit, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def scanQRCode(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")().asInstanceOf[js.Promise[Any]]
+    inline def scanQRCode(cameryType: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def scanQRCode(cameryType: Double, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def scanQRCode(cameryType: Unit, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def scrollToY(position: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToY")(position.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def scrollToY(position: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToY")(position.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def selectTapp(tapp: SelectTappConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def selectTapp(tapp: SelectTappConfig, parameter: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any], parameter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def selectTapp(tapp: SelectTappConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def selectTapp(tapp: SelectTappConfig, parameter: js.Array[String]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any], parameter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def setHeight(config: SetHeightConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeight")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def setHeight(config: SetHeightConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeight")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def setNetworkChangeCallback(callback: js.Function1[/* result */ NetworkChangeResult, js.Any], ongoing: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkChangeCallback")(callback.asInstanceOf[js.Any], ongoing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def setNetworkChangeCallback(callback: js.Function1[/* result */ NetworkChangeResult, Any], ongoing: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkChangeCallback")(callback.asInstanceOf[js.Any], ongoing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def setNfcCallback(callback: js.Function1[/* rfid */ String, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setNfcCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def setNfcCallback(callback: js.Function1[/* rfid */ String, Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setNfcCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def setOnActivateCallback(callback: js.Function1[/* tappEvent */ Double, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnActivateCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def setOnActivateCallback(callback: js.Function1[/* tappEvent */ Double, Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnActivateCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     // TODO interface for callback data
-    inline def setScreenOrientation(orientation: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setScreenOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def setScreenOrientation(orientation: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setScreenOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, js.Any], title: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, Any], title: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def setSubTapp(config: SubTappConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSubTapp")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def share(config: ShareConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("share")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def share(config: ShareConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("share")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def showFinetradingQRCode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showFinetradingQRCode")().asInstanceOf[js.Promise[js.Any]]
+    inline def showFinetradingQRCode(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showFinetradingQRCode")().asInstanceOf[js.Promise[Any]]
     
     /**
       * UI Functions
       * Floating Button
       * chayns
       */
-    inline def showFloatingButton(config: FloatingConfig, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showFloatingButton")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def showFloatingButton(config: FloatingConfig, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showFloatingButton")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def showTitleImage(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showTitleImage")().asInstanceOf[js.Promise[js.Any]]
+    inline def showTitleImage(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showTitleImage")().asInstanceOf[js.Promise[Any]]
     
     /**
       * UI Functions
       * Waitcursor
       * chayns
       */
-    inline def showWaitCursor(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")().asInstanceOf[js.Promise[js.Any]]
-    inline def showWaitCursor(text: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def showWaitCursor(text: String, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def showWaitCursor(text: Unit, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def showWaitCursor(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")().asInstanceOf[js.Promise[Any]]
+    inline def showWaitCursor(text: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def showWaitCursor(text: String, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def showWaitCursor(text: Unit, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /**
       * chayns.smartShop
       */
     @JSGlobal("chayns.smartShop")
     @js.native
-    def smartShop: js.Any = js.native
-    inline def smartShop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartShop")(x.asInstanceOf[js.Any])
+    def smartShop: Any = js.native
+    inline def smartShop_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartShop")(x.asInstanceOf[js.Any])
     
-    inline def startInteractionIdentification(config: InteractionIdentificationConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("startInteractionIdentification")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def startInteractionIdentification(config: InteractionIdentificationConfig): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("startInteractionIdentification")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
-    inline def startNfcDetection(
-      callback: js.Function1[/* result */ NfcDetectionResult, js.Any],
-      interval: Double,
-      vibrate: Boolean
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNfcDetection")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], vibrate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def startNfcDetection(callback: js.Function1[/* result */ NfcDetectionResult, Any], interval: Double, vibrate: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNfcDetection")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], vibrate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def stopInteractionIdentification(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopInteractionIdentification")().asInstanceOf[js.Promise[js.Any]]
+    inline def stopInteractionIdentification(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopInteractionIdentification")().asInstanceOf[js.Promise[Any]]
     
-    inline def stopNfcDetection(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopNfcDetection")().asInstanceOf[js.Promise[js.Any]]
+    inline def stopNfcDetection(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopNfcDetection")().asInstanceOf[js.Promise[Any]]
     
     /**
       * chayns.storage
@@ -768,16 +786,16 @@ object global {
         /* 0 */ val PUBLIC: typings.chayns.chayns.storage.accessMode.PUBLIC & Double = js.native
       }
       
-      inline def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def get(key: String, accessMode: accessMode): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def get(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def get(key: String, accessMode: accessMode): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      inline def remove(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-      inline def remove(key: String, accessMode: accessMode): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      inline def remove(key: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+      inline def remove(key: String, accessMode: accessMode): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
       
-      inline def set(key: String, value: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-      inline def set(key: String, value: js.Any, accessMode: Unit, tappIds: js.Array[Double]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-      inline def set(key: String, value: js.Any, accessMode: accessMode): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-      inline def set(key: String, value: js.Any, accessMode: accessMode, tappIds: js.Array[Double]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      inline def set(key: String, value: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+      inline def set(key: String, value: Any, accessMode: Unit, tappIds: js.Array[Double]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+      inline def set(key: String, value: Any, accessMode: accessMode): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+      inline def set(key: String, value: Any, accessMode: accessMode, tappIds: js.Array[Double]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     }
     
     /**
@@ -850,14 +868,16 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def init(config: UiTooltipInitConfig, rootElement: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any], rootElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+        inline def init(config: UiTooltipInitConfig, rootElement: Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any], rootElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
       }
     }
     
-    inline def updateNavigation(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")().asInstanceOf[js.Promise[js.Any]]
-    inline def updateNavigation(tappId: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def updateNavigation(tappId: Double, config: UpdateNavigationConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def updateNavigation(tappId: Unit, config: UpdateNavigationConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def updateNavigation(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")().asInstanceOf[js.Promise[Any]]
+    inline def updateNavigation(tappId: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def updateNavigation(tappId: Double, config: UpdateNavigationConfig): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def updateNavigation(tappId: Unit, config: UpdateNavigationConfig): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    
+    inline def uploadCloudImage(): js.Promise[UploadCloudImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadCloudImage")().asInstanceOf[js.Promise[UploadCloudImageResult]]
     
     inline def uploadImage(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadImage")().asInstanceOf[js.Promise[String]]
     
@@ -878,50 +898,50 @@ object global {
         */
       inline def getJwtPayload(token: String): JwtPaylod = ^.asInstanceOf[js.Dynamic].applyDynamic("getJwtPayload")(token.asInstanceOf[js.Any]).asInstanceOf[JwtPaylod]
       
-      inline def isArray(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isArray(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isBLEAdress(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBLEAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isBLEAdress(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBLEAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isBlank(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlank")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isBlank(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlank")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isDate(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isDate(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isDeferred(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isDeferred(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isDefined(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isDefined(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isFormData(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormData")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isFormData(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormData")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isFunction(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isFunction(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isGUID(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isGUID(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Utility Functions
         * Check Types
         * chayns.utils
         */
-      inline def isHex(parameter: js.Any, shorthand: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(parameter.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def isHex(parameter: Any, shorthand: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(parameter.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      inline def isJwt(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJwt")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isJwt(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJwt")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isMacAdress(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isMacAdress(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isNumber(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isNumber(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isObject(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isObject(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isPresent(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresent")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isPresent(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresent")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isPromise(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isPromise(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isString(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isString(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isUUID(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isUUID(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isUndefined(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isUndefined(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isUrl(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isUrl(parameter: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       object lang {
         
@@ -931,7 +951,7 @@ object global {
         
         inline def get(textString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(textString.asInstanceOf[js.Any]).asInstanceOf[String]
         
-        inline def init(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def init(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         inline def renderTextStrings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextStrings")().asInstanceOf[Unit]
         
@@ -963,13 +983,13 @@ object global {
       
       inline def mod(number: Double, modulo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(number.asInstanceOf[js.Any], modulo.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      inline def replacePlaceholder(text: String, parameters: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replacePlaceholder")(text.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def replacePlaceholder(text: String, parameters: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replacePlaceholder")(text.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
       
       inline def setLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def trim(test: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(test.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
-    inline def vibrate(ms: js.Array[Double]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def vibrate(ms: js.Array[Double]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   }
 }

@@ -8,5 +8,5 @@ object dataRetrievalRulesListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_DataRetrievalRulesList", "_DataRetrievalRulesList")
   @js.native
-  val DataRetrievalRulesList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val DataRetrievalRulesList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

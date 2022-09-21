@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.ContactEquationPool")
 @js.native
-class ContactEquationPool ()
+open class ContactEquationPool ()
   extends typings.p2.mod.ContactEquationPool {
   def this(options: PoolOptions) = this()
 }

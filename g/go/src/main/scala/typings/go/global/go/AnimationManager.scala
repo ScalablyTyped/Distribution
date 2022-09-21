@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("go.AnimationManager")
 @js.native
 /**You do not normally need to create an instance of this class because one already exists as the Diagram.animationManager, which you can modify.*/
-class AnimationManager ()
+open class AnimationManager ()
   extends typings.go.mod.AnimationManager

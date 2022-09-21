@@ -105,7 +105,7 @@ object GmePanel {
       
       inline def set_panels(value: js.Array[PanelBase]): Self = StObject.set(x, "_panels", value.asInstanceOf[js.Any])
       
-      inline def set_panelsVarargs(value: PanelBase*): Self = StObject.set(x, "_panels", js.Array(value :_*))
+      inline def set_panelsVarargs(value: PanelBase*): Self = StObject.set(x, "_panels", js.Array(value*))
     }
   }
   
@@ -185,7 +185,7 @@ object GmePanel {
     
     def clear(): Unit
     
-    var control: js.Any
+    var control: Any
     
     def destroy(): Unit
     
@@ -209,7 +209,7 @@ object GmePanel {
       OPTIONS: Options,
       afterAppend: () => Unit,
       clear: () => Unit,
-      control: js.Any,
+      control: Any,
       destroy: () => Unit,
       isReadOnly: () => Boolean,
       logger: GmeLogger,
@@ -229,7 +229,7 @@ object GmePanel {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setControl(value: js.Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -272,7 +272,7 @@ object GmePanel {
       OPTIONS: OptionsWithHeader,
       afterAppend: () => Unit,
       clear: () => Unit,
-      control: js.Any,
+      control: Any,
       destroy: () => Unit,
       getNodeID: () => String,
       initUI: OptionsWithHeader => Unit,
@@ -327,18 +327,18 @@ object GmePanel {
   
   trait Params extends StObject {
     
-    var client: js.Any
+    var client: Any
   }
   object Params {
     
-    inline def apply(client: js.Any): Params = {
+    inline def apply(client: Any): Params = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
     extension [Self <: Params](x: Self) {
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
 }

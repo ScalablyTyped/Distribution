@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInstanceAccessInput extends StObject {
   
   /**
-    * A unique identifier for a fleet that contains the instance you want access to. You can use either the fleet ID or ARN value. The fleet can be in any of the following statuses: ACTIVATING, ACTIVE, or ERROR. Fleets with an ERROR status may be accessible for a short time before they are deleted.
+    * A unique identifier for the fleet that contains the instance you want access to. You can use either the fleet ID or ARN value. The fleet can be in any of the following statuses: ACTIVATING, ACTIVE, or ERROR. Fleets with an ERROR status may be accessible for a short time before they are deleted.
     */
   var FleetId: FleetIdOrArn
   
   /**
-    * A unique identifier for an instance you want to get access to. You can access an instance in any status.
+    * A unique identifier for the instance you want to get access to. You can access an instance in any status.
     */
   var InstanceId: typings.awsSdk.gameliftMod.InstanceId
 }

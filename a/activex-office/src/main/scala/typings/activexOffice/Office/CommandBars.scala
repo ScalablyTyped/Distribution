@@ -35,39 +35,39 @@ trait CommandBars extends StObject {
   def Add(Name: Unit, Position: MsoBarPosition, MenuBar: Unit, Temporary: Boolean): CommandBar = js.native
   
   def AddEx(): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: Unit, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: Unit, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: Unit, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: js.Any, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: js.Any, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: Unit, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: Unit, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: js.Any, Position: Unit, MenuBar: Unit, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: js.Any, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: js.Any, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: Unit, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: Unit, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: js.Any, MenuBar: Unit, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: js.Any, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: js.Any, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
-  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: Unit, TbtrProtection: js.Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Any, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Any, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Any, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Unit, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Unit, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Any, MenuBar: Unit, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Any, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Any, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Any, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Unit, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Unit, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Any, Position: Unit, MenuBar: Unit, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Any, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Any, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Any, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Unit, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Unit, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Any, MenuBar: Unit, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Any, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Any, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Any, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: Any, TbtrProtection: Any): CommandBar = js.native
+  def AddEx(TbidOrName: Unit, Position: Unit, MenuBar: Unit, Temporary: Unit, TbtrProtection: Any): CommandBar = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def CommitRenderingTransaction(hwnd: Double): Unit = js.native
   
@@ -88,37 +88,37 @@ trait CommandBars extends StObject {
   def ExecuteMso(idMso: String): Unit = js.native
   
   def FindControl(): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: js.Any, Tag: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: js.Any, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: Unit, Tag: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: Unit, Id: Unit, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Any, Tag: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Any, Tag: Any, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Any, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Unit, Tag: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: Unit, Id: Unit, Tag: Any, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: Unit, Id: Unit, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: js.Any, Tag: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: js.Any, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: Unit, Tag: js.Any): CommandBarControl | Null = js.native
-  def FindControl(Type: MsoControlType, Id: Unit, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Any, Tag: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Any, Tag: Any, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Any, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Unit, Tag: Any): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: Unit, Tag: Any, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType, Id: Unit, Tag: Unit, Visible: Boolean): CommandBarControl | Null = js.native
   
   def FindControls(): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: js.Any, Tag: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: js.Any, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: Unit, Tag: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: Unit, Id: Unit, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Any, Tag: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Any, Tag: Any, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Any, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Unit, Tag: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: Unit, Id: Unit, Tag: Any, Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: Unit, Id: Unit, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: js.Any, Tag: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: js.Any, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: Unit, Tag: js.Any): CommandBarControls | Null = js.native
-  def FindControls(Type: MsoControlType, Id: Unit, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Any, Tag: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Any, Tag: Any, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Any, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Unit, Tag: Any): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: Unit, Tag: Any, Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType, Id: Unit, Tag: Unit, Visible: Boolean): CommandBarControls | Null = js.native
   
   def GetEnabledMso(idMso: String): Boolean = js.native
@@ -144,7 +144,7 @@ trait CommandBars extends StObject {
   
   var MenuAnimationStyle: MsoMenuAnimation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def ReleaseFocus(): Unit = js.native
   

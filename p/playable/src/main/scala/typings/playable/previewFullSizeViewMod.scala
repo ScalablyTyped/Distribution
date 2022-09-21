@@ -11,21 +11,21 @@ object previewFullSizeViewMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size.view", JSImport.Default)
   @js.native
-  class default () extends PreviewFullSizeView
+  open class default () extends PreviewFullSizeView
   
   @js.native
   trait PreviewFullSizeView
     extends typings.playable.viewMod.default[IPreviewFullSizeViewStyles] {
     
     /* private */ @JSName("_$frame")
-    var _$frame: js.Any = js.native
+    var _$frame: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _applyFrame: js.Any = js.native
+    /* private */ var _applyFrame: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
     def clear(): Unit = js.native
     

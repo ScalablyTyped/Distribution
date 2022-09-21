@@ -15,25 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShapeFillData extends StObject {
   
   /**
+    * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
     *
-    * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var foregroundColor: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
     *
-    * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var transparency: js.UndefOr[Double] = js.undefined
   
   /**
+    * Returns the fill type of the shape. See `Excel.ShapeFillType` for details.
     *
-    * Returns the fill type of the shape. See Excel.ShapeFillType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed] = js.undefined

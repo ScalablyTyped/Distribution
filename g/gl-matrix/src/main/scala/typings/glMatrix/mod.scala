@@ -2,7 +2,6 @@ package typings.glMatrix
 
 import typings.glMatrix.glMatrixNumbers.`0.000001`
 import typings.std.ArrayConstructor
-import typings.std.Float32Array
 import typings.std.Float32ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,7 +92,7 @@ object mod {
     
     inline def transpose(out: mat2, a: ReadonlyMat2): mat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[mat2]
   }
-  type mat2 = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type mat2 = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   object mat2d {
     
@@ -151,7 +150,7 @@ object mod {
     
     inline def translate(out: mat2d, a: ReadonlyMat2d, v: ReadonlyVec2): mat2d = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat2d]
   }
-  type mat2d = (js.Tuple6[Double, Double, Double, Double, Double, Double]) | Float32Array
+  type mat2d = (js.Tuple6[Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   object mat3 {
     
@@ -244,7 +243,7 @@ object mod {
     
     inline def transpose(out: mat3, a: ReadonlyMat3): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[mat3]
   }
-  type mat3 = (js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]) | Float32Array
+  type mat3 = (js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   object mat4 {
     
@@ -276,11 +275,11 @@ object mod {
     
     inline def fromRotation(out: mat4, rad: Double, axis: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotation")(out.asInstanceOf[js.Any], rad.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
-    inline def fromRotationTranslation(out: mat4, q: js.Any, v: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    inline def fromRotationTranslation(out: mat4, q: Any, v: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
-    inline def fromRotationTranslationScale(out: mat4, q: js.Any, v: ReadonlyVec3, s: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslationScale")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    inline def fromRotationTranslationScale(out: mat4, q: Any, v: ReadonlyVec3, s: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslationScale")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
-    inline def fromRotationTranslationScaleOrigin(out: mat4, q: js.Any, v: ReadonlyVec3, s: ReadonlyVec3, o: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslationScaleOrigin")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    inline def fromRotationTranslationScaleOrigin(out: mat4, q: Any, v: ReadonlyVec3, s: ReadonlyVec3, o: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslationScaleOrigin")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
     inline def fromScaling(out: mat4, v: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromScaling")(out.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
@@ -335,9 +334,17 @@ object mod {
     
     inline def ortho(out: mat4, left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("ortho")(out.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
+    inline def orthoNO(out: mat4, left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("orthoNO")(out.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    
+    inline def orthoZO(out: mat4, left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("orthoZO")(out.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    
     inline def perspective(out: mat4, fovy: Double, aspect: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("perspective")(out.asInstanceOf[js.Any], fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
-    inline def perspectiveFromFieldOfView(out: mat4, fov: js.Any, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFromFieldOfView")(out.asInstanceOf[js.Any], fov.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    inline def perspectiveFromFieldOfView(out: mat4, fov: Any, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFromFieldOfView")(out.asInstanceOf[js.Any], fov.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    
+    inline def perspectiveNO(out: mat4, fovy: Double, aspect: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveNO")(out.asInstanceOf[js.Any], fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    
+    inline def perspectiveZO(out: mat4, fovy: Double, aspect: Double, near: Double, far: Double): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveZO")(out.asInstanceOf[js.Any], fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
     inline def rotate(out: mat4, a: ReadonlyMat4, rad: Double, axis: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], rad.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
@@ -375,7 +382,7 @@ object mod {
     
     inline def subtract(out: mat4, a: ReadonlyMat4, b: ReadonlyMat4): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
-    inline def targetTo(out: mat4, eye: ReadonlyVec3, target: js.Any, up: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("targetTo")(out.asInstanceOf[js.Any], eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[mat4]
+    inline def targetTo(out: mat4, eye: ReadonlyVec3, target: Any, up: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("targetTo")(out.asInstanceOf[js.Any], eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
     inline def translate(out: mat4, a: ReadonlyMat4, v: ReadonlyVec3): mat4 = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat4]
     
@@ -398,7 +405,7 @@ object mod {
     Double, 
     Double, 
     Double
-  ]) | Float32Array
+  ]) | js.typedarray.Float32Array
   
   object quat {
     
@@ -438,7 +445,7 @@ object mod {
     
     inline def exp(out: quat, a: ReadonlyQuat): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("exp")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[quat]
     
-    inline def fromEuler(out: quat, x: js.Any, y: js.Any, z: js.Any): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEuler")(out.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[quat]
+    inline def fromEuler(out: quat, x: Any, y: Any, z: Any): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEuler")(out.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[quat]
     
     inline def fromMat3(out: quat, m: ReadonlyMat3): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMat3")(out.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[quat]
     
@@ -486,7 +493,7 @@ object mod {
     
     inline def rotateZ(out: quat, a: ReadonlyQuat, rad: Double): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateZ")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[quat]
     
-    inline def rotationTo(out: js.Any, a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationTo")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def rotationTo(out: Any, a: Any, b: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationTo")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("gl-matrix", "quat.scale")
     @js.native
@@ -496,13 +503,13 @@ object mod {
     @js.native
     val set: js.Function5[/* out */ vec4, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double, vec4] = js.native
     
-    inline def setAxes(out: js.Any, view: js.Any, right: js.Any, up: js.Any): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("setAxes")(out.asInstanceOf[js.Any], view.asInstanceOf[js.Any], right.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[vec4]
+    inline def setAxes(out: Any, view: Any, right: Any, up: Any): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("setAxes")(out.asInstanceOf[js.Any], view.asInstanceOf[js.Any], right.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[vec4]
     
     inline def setAxisAngle(out: quat, axis: ReadonlyVec3, rad: Double): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("setAxisAngle")(out.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[quat]
     
     inline def slerp(out: quat, a: ReadonlyQuat, b: ReadonlyQuat, t: Double): quat = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[quat]
     
-    inline def sqlerp(out: js.Any, a: js.Any, b: js.Any, c: js.Any, d: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sqlerp")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def sqlerp(out: Any, a: Any, b: Any, c: Any, d: Any, t: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sqlerp")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("gl-matrix", "quat.sqrLen")
     @js.native
@@ -514,7 +521,7 @@ object mod {
     
     inline def str(a: ReadonlyQuat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(a.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  type quat = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type quat = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   object quat2 {
     
@@ -542,13 +549,13 @@ object mod {
     
     inline def fromMat4(out: quat2, a: ReadonlyMat4): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMat4")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
-    inline def fromRotation(out: js.Any, q: ReadonlyQuat): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[quat2]
+    inline def fromRotation(out: Any, q: ReadonlyQuat): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
-    inline def fromRotationTranslation(out: js.Any, q: ReadonlyQuat, t: ReadonlyVec3): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[quat2]
+    inline def fromRotationTranslation(out: Any, q: ReadonlyQuat, t: ReadonlyVec3): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslation")(out.asInstanceOf[js.Any], q.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
     inline def fromRotationTranslationValues(x1: Double, y1: Double, z1: Double, w1: Double, x2: Double, y2: Double, z2: Double): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotationTranslationValues")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], w1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
-    inline def fromTranslation(out: js.Any, t: ReadonlyVec3): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTranslation")(out.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[quat2]
+    inline def fromTranslation(out: Any, t: ReadonlyVec3): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTranslation")(out.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
     inline def fromValues(x1: Double, y1: Double, z1: Double, w1: Double, x2: Double, y2: Double, z2: Double, w2: Double): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], w1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any], w2.asInstanceOf[js.Any])).asInstanceOf[quat2]
     
@@ -624,7 +631,7 @@ object mod {
     
     inline def translate(out: quat2, a: ReadonlyQuat2, v: ReadonlyVec3): quat2 = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[quat2]
   }
-  type quat2 = (js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]) | Float32Array
+  type quat2 = (js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   object vec2 {
     
@@ -662,7 +669,7 @@ object mod {
     
     inline def floor(out: vec2, a: ReadonlyVec2): vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[vec2]
     
-    inline def forEach(a: js.Any, stride: js.Any, offset: js.Any, count: js.Any, fn: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def forEach(a: Any, stride: Any, offset: Any, count: Any, fn: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromValues(x: Double, y: Double): vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[vec2]
     
@@ -723,7 +730,7 @@ object mod {
     
     inline def zero(out: vec2): vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(out.asInstanceOf[js.Any]).asInstanceOf[vec2]
   }
-  type vec2 = (js.Tuple2[Double, Double]) | Float32Array
+  type vec2 = (js.Tuple2[Double, Double]) | js.typedarray.Float32Array
   
   object vec3 {
     
@@ -763,7 +770,7 @@ object mod {
     
     inline def floor(out: vec3, a: ReadonlyVec3): vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[vec3]
     
-    inline def forEach(a: js.Any, stride: js.Any, offset: js.Any, count: js.Any, fn: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def forEach(a: Any, stride: Any, offset: Any, count: Any, fn: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromValues(x: Double, y: Double, z: Double): vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[vec3]
     
@@ -828,7 +835,7 @@ object mod {
     
     inline def zero(out: vec3): vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(out.asInstanceOf[js.Any]).asInstanceOf[vec3]
   }
-  type vec3 = (js.Tuple3[Double, Double, Double]) | Float32Array
+  type vec3 = (js.Tuple3[Double, Double, Double]) | js.typedarray.Float32Array
   
   object vec4 {
     
@@ -846,7 +853,7 @@ object mod {
     
     inline def create(): vec4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[vec4]
     
-    inline def cross(out: js.Any, u: js.Any, v: js.Any, w: js.Any): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(out.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[vec4]
+    inline def cross(out: Any, u: Any, v: Any, w: Any): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(out.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[vec4]
     
     inline def dist(a: ReadonlyVec4, b: ReadonlyVec4): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dist")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -864,7 +871,7 @@ object mod {
     
     inline def floor(out: vec4, a: ReadonlyVec4): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[vec4]
     
-    inline def forEach(a: js.Any, stride: js.Any, offset: js.Any, count: js.Any, fn: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def forEach(a: Any, stride: Any, offset: Any, count: Any, fn: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromValues(x: Double, y: Double, z: Double, w: Double): vec4 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[vec4]
     
@@ -919,13 +926,13 @@ object mod {
     
     inline def zero(out: vec4): vec4 = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(out.asInstanceOf[js.Any]).asInstanceOf[vec4]
   }
-  type vec4 = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type vec4 = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyMat2 = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type ReadonlyMat2 = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyMat2d = (js.Tuple6[Double, Double, Double, Double, Double, Double]) | Float32Array
+  type ReadonlyMat2d = (js.Tuple6[Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyMat3 = (js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]) | Float32Array
+  type ReadonlyMat3 = (js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
   type ReadonlyMat4 = (js.Tuple16[
     Double, 
@@ -944,15 +951,15 @@ object mod {
     Double, 
     Double, 
     Double
-  ]) | Float32Array
+  ]) | js.typedarray.Float32Array
   
-  type ReadonlyQuat = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type ReadonlyQuat = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyQuat2 = (js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]) | Float32Array
+  type ReadonlyQuat2 = (js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyVec2 = (js.Tuple2[Double, Double]) | Float32Array
+  type ReadonlyVec2 = (js.Tuple2[Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyVec3 = (js.Tuple3[Double, Double, Double]) | Float32Array
+  type ReadonlyVec3 = (js.Tuple3[Double, Double, Double]) | js.typedarray.Float32Array
   
-  type ReadonlyVec4 = (js.Tuple4[Double, Double, Double, Double]) | Float32Array
+  type ReadonlyVec4 = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Float32Array
 }

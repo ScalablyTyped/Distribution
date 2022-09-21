@@ -71,7 +71,7 @@ object mod {
       
       inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

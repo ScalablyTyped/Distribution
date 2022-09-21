@@ -12,7 +12,7 @@ trait Hyperlinks extends StObject {
   
   def Item(Index: Double): Hyperlink
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Hyperlinks_typekey")
   var PowerPointDotHyperlinks_typekey: Hyperlinks
@@ -23,7 +23,7 @@ object Hyperlinks {
     Application: Application,
     Count: Double,
     Item: Double => Hyperlink,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotHyperlinks_typekey: Hyperlinks
   ): Hyperlinks = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Hyperlinks {
     
     inline def setItem(value: Double => Hyperlink): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotHyperlinks_typekey(value: Hyperlinks): Self = StObject.set(x, "PowerPoint.Hyperlinks_typekey", value.asInstanceOf[js.Any])
   }

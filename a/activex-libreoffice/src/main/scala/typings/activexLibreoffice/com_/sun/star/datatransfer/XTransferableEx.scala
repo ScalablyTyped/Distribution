@@ -27,7 +27,7 @@ object XTransferableEx {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryTransferDataFlavors: SeqEquiv[DataFlavor] => SafeArray[DataFlavor],
     release: () => Unit
   ): XTransferableEx = {

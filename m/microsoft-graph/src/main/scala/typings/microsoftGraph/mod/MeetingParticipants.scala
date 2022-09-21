@@ -25,7 +25,7 @@ object MeetingParticipants {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: MeetingParticipantInfo*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: MeetingParticipantInfo*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setOrganizer(value: NullableOption[MeetingParticipantInfo]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     

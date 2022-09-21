@@ -18,7 +18,7 @@ object AbstractActionManager {
   /**
     * Does exist one action manager that handles actions of a given trigger
     * @param trigger defines the trigger to be tested
-    * @return a boolean indicating whether the trigger is handeled by at least one action manager
+    * @returns a boolean indicating whether the trigger is handled by at least one action manager
     **/
   inline def HasSpecificTrigger(trigger: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasSpecificTrigger")(trigger.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

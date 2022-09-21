@@ -55,12 +55,12 @@ object BlockingResponse {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    inline def setRequestHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
     
     inline def setResponseHeaders(value: js.Array[typings.chrome.chrome.webRequest.HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
   }
 }

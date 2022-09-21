@@ -1,13 +1,13 @@
 package typings.antd.anon
 
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BodyContent extends StObject {
   
-  var bodyContent: js.UndefOr[js.Object | ReactElement | Null] = js.undefined
+  var bodyContent: ReactNode
   
   var customize: Boolean
 }
@@ -20,9 +20,7 @@ object BodyContent {
   
   extension [Self <: BodyContent](x: Self) {
     
-    inline def setBodyContent(value: js.Object | ReactElement): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
-    
-    inline def setBodyContentNull: Self = StObject.set(x, "bodyContent", null)
+    inline def setBodyContent(value: ReactNode): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     
     inline def setBodyContentUndefined: Self = StObject.set(x, "bodyContent", js.undefined)
     

@@ -11,7 +11,7 @@ object cartoDBMod {
   
   @JSImport("ol/source/CartoDB", JSImport.Default)
   @js.native
-  class default protected () extends CartoDB {
+  open class default protected () extends CartoDB {
     def this(options: Options) = this()
   }
   
@@ -22,35 +22,35 @@ object cartoDBMod {
     /**
       * Returns the current config.
       */
-    def getConfig(): js.Any = js.native
+    def getConfig(): Any = js.native
     
     /**
       * Sets the CartoDB config
       */
-    def setConfig(config: js.Any): Unit = js.native
+    def setConfig(config: Any): Unit = js.native
     
     /**
       * Updates the carto db config.
       */
-    def updateConfig(config: js.Any): Unit = js.native
+    def updateConfig(config: Any): Unit = js.native
   }
   
   trait CartoDBLayerInfo extends StObject {
     
-    var cdn_url: js.Any
+    var cdn_url: Any
     
     var layergroupid: String
   }
   object CartoDBLayerInfo {
     
-    inline def apply(cdn_url: js.Any, layergroupid: String): CartoDBLayerInfo = {
+    inline def apply(cdn_url: Any, layergroupid: String): CartoDBLayerInfo = {
       val __obj = js.Dynamic.literal(cdn_url = cdn_url.asInstanceOf[js.Any], layergroupid = layergroupid.asInstanceOf[js.Any])
       __obj.asInstanceOf[CartoDBLayerInfo]
     }
     
     extension [Self <: CartoDBLayerInfo](x: Self) {
       
-      inline def setCdn_url(value: js.Any): Self = StObject.set(x, "cdn_url", value.asInstanceOf[js.Any])
+      inline def setCdn_url(value: Any): Self = StObject.set(x, "cdn_url", value.asInstanceOf[js.Any])
       
       inline def setLayergroupid(value: String): Self = StObject.set(x, "layergroupid", value.asInstanceOf[js.Any])
     }
@@ -64,9 +64,9 @@ object cartoDBMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.undefined
+    var config: js.UndefOr[Any] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var map: js.UndefOr[String] = js.undefined
     
@@ -75,6 +75,8 @@ object cartoDBMod {
     var minZoom: js.UndefOr[Double] = js.undefined
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
+    
+    var transition: js.UndefOr[Double] = js.undefined
     
     var wrapX: js.UndefOr[Boolean] = js.undefined
   }
@@ -95,17 +97,19 @@ object cartoDBMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -124,6 +128,10 @@ object cartoDBMod {
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      
+      inline def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       

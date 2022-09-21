@@ -10,7 +10,6 @@ import typings.chromeApps.chrome.sockets.SendInfo
 import typings.chromeApps.chrome.sockets.SocketInfo
 import typings.chromeApps.chrome.sockets.SocketProperties
 import typings.chromeApps.chrome.sockets.tcp.SecureOptions
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,7 +148,11 @@ object sockets {
       * @param data The data to send.
       * @param callback Called when the send operation completes.
       */
-    inline def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ SendInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def send(
+      socketId: integer,
+      data: js.typedarray.ArrayBuffer,
+      callback: js.Function1[/* sendInfo */ SendInfo, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Enables or disables the keep-alive functionality for a TCP connection.
@@ -526,7 +529,7 @@ object sockets {
       */
     inline def send(
       socketId: integer,
-      data: ArrayBuffer,
+      data: js.typedarray.ArrayBuffer,
       address: String,
       port: integer,
       callback: js.Function1[/* sendInfo */ SendInfo, Unit]

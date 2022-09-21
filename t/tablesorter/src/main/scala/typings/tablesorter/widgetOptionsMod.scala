@@ -23,7 +23,7 @@ object widgetOptionsMod {
        with StickyHeaderOptions
        with PagerOptions[TElement]
        with ZebraOptions
-       with /* option */ StringDictionary[js.Any]
+       with /* option */ StringDictionary[Any]
   object WidgetOptions {
     
     inline def apply[TElement](): WidgetOptions[TElement] = {

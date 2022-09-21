@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("scrambo", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Scrambo
   

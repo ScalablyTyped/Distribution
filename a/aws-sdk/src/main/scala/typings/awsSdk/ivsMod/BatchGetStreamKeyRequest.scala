@@ -22,6 +22,6 @@ object BatchGetStreamKeyRequest {
     
     inline def setArns(value: StreamKeyArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
-    inline def setArnsVarargs(value: StreamKeyArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
+    inline def setArnsVarargs(value: StreamKeyArn*): Self = StObject.set(x, "arns", js.Array(value*))
   }
 }

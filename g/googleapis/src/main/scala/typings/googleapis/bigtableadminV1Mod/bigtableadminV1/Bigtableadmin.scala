@@ -13,22 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Administer your Cloud Bigtable tables and instances.
   *
   * @example
+  * ```js
   * const {google} = require('googleapis');
   * const bigtableadmin = google.bigtableadmin('v1');
-  *
-  * @namespace bigtableadmin
-  * @type {Function}
-  * @version v1
-  * @variation v1
-  * @param {object=} options Options for Bigtableadmin
+  * ```
   */
 @JSImport("googleapis/build/src/apis/bigtableadmin/v1", "bigtableadmin_v1.Bigtableadmin")
 @js.native
-class Bigtableadmin protected () extends StObject {
+open class Bigtableadmin protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
   var context: APIRequestContext = js.native
-  
-  var projects: ResourceProjects = js.native
 }

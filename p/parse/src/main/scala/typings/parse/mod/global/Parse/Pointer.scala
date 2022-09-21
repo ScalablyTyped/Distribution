@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pointer
   extends StObject
-     with _Encode[js.Any]
+     with _Encode[Any]
      with _FieldType {
   
   var __type: String

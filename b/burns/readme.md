@@ -1,7 +1,7 @@
 
 # Scala.js typings for burns
 
-Typings are for version 2.0
+Typings are for version 2.3.0
 
 ## Library description:
 Manage application events without writing spaghetti code
@@ -10,10 +10,10 @@ Manage application events without writing spaghetti code
 | ------------------ | :-------------: |
 | Full name          | burns |
 | Keywords           | events, listeners, handlers, broadcasting, event-driven |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 743 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 52.0 |
+| # stars            | 86.0 |
 
 ## Links
 - [Homepage](https://github.com/shalvah/burns#readme)
@@ -24,7 +24,7 @@ Manage application events without writing spaghetti code
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

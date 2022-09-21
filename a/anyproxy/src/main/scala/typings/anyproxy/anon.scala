@@ -10,7 +10,7 @@ object anon {
   /* Inlined std.Partial<anyproxy.anyproxy.Response> */
   trait PartialResponse extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var header: js.UndefOr[Record[String, String]] = js.undefined
     
@@ -25,7 +25,7 @@ object anon {
     
     extension [Self <: PartialResponse](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

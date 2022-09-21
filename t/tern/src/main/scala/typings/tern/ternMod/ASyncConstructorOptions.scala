@@ -1,6 +1,5 @@
 package typings.tern.ternMod
 
-import typings.std.Error
 import typings.tern.ternBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +19,7 @@ trait ASyncConstructorOptions extends StObject {
   var getFile: js.UndefOr[
     js.Function2[
       /* filename */ String, 
-      /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit], 
+      /* callback */ js.Function2[/* error */ js.UndefOr[js.Error], /* content */ js.UndefOr[String], Unit], 
       Unit
     ]
   ] = js.undefined
@@ -37,7 +36,7 @@ object ASyncConstructorOptions {
     inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     inline def setGetFile(
-      value: (/* filename */ String, /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit]) => Unit
+      value: (/* filename */ String, /* callback */ js.Function2[/* error */ js.UndefOr[js.Error], /* content */ js.UndefOr[String], Unit]) => Unit
     ): Self = StObject.set(x, "getFile", js.Any.fromFunction2(value))
     
     inline def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)

@@ -10,10 +10,10 @@ Observer pattern implementation
 | ------------------ | :-------------: |
 | Full name          | node-observer |
 | Keywords           | observer pattern, reactive, publish, subscribe |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 4168 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 550.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/hormander/node-observer)

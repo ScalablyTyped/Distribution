@@ -34,7 +34,7 @@ object ShareError {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: AccountId*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: AccountId*): Self = StObject.set(x, "Accounts", js.Array(value*))
     
     inline def setError(value: Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

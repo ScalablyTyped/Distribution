@@ -11,9 +11,9 @@ WebRTC abstraction for making it simple to manage multiple peer connections of v
 | Full name          | webrtc |
 | Keywords           | webrtc, browser |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 16070 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1120.6666666666667 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/henrikjoreteg/webrtc.js)

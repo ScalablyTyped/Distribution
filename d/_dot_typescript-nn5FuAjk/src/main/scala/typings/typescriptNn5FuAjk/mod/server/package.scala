@@ -1,0 +1,27 @@
+package typings.typescriptNn5FuAjk.mod.server
+
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.actionColonColoninvalidate
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.actionColonColonpackageInstalled
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.actionColonColonset
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.eventColonColonbeginInstallTypes
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.eventColonColonendInstallTypes
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.eventColonColoninitializationFailed
+import typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.eventColonColontypesRegistry
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type ActionInvalidate = actionColonColoninvalidate
+
+type ActionPackageInstalled = actionColonColonpackageInstalled
+
+type ActionSet = actionColonColonset
+
+type EventBeginInstallTypes = eventColonColonbeginInstallTypes
+
+type EventEndInstallTypes = eventColonColonendInstallTypes
+
+type EventInitializationFailed = eventColonColoninitializationFailed
+
+type EventTypesRegistry = eventColonColontypesRegistry

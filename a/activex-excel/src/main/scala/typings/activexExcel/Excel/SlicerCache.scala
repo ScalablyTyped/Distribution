@@ -25,7 +25,7 @@ trait SlicerCache extends StObject {
   
   val OLAP: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PivotTables(Index: String): PivotTable
   def PivotTables(Index: Double): PivotTable
@@ -61,7 +61,7 @@ trait SlicerCache extends StObject {
   def VisibleSlicerItems(Index: String): SlicerItem
   def VisibleSlicerItems(Index: Double): SlicerItem
   
-  var VisibleSlicerItemsList: js.Any
+  var VisibleSlicerItemsList: Any
   
   @JSName("VisibleSlicerItems")
   val VisibleSlicerItems_Original: SlicerItems
@@ -80,7 +80,7 @@ object SlicerCache {
     Index: Double,
     Name: String,
     OLAP: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PivotTables: SlicerPivotTables,
     ShowAllItems: Boolean,
     SlicerCacheLevels: SlicerCacheLevels,
@@ -91,7 +91,7 @@ object SlicerCache {
     SourceName: String,
     SourceType: XlPivotTableSourceType,
     VisibleSlicerItems: SlicerItems,
-    VisibleSlicerItemsList: js.Any,
+    VisibleSlicerItemsList: Any,
     WorkbookConnection: WorkbookConnection
   ): SlicerCache = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ClearManualFilter = js.Any.fromFunction0(ClearManualFilter), Creator = Creator.asInstanceOf[js.Any], CrossFilterType = CrossFilterType.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OLAP = OLAP.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PivotTables = PivotTables.asInstanceOf[js.Any], ShowAllItems = ShowAllItems.asInstanceOf[js.Any], SlicerCacheLevels = SlicerCacheLevels.asInstanceOf[js.Any], SlicerItems = SlicerItems.asInstanceOf[js.Any], Slicers = Slicers.asInstanceOf[js.Any], SortItems = SortItems.asInstanceOf[js.Any], SortUsingCustomLists = SortUsingCustomLists.asInstanceOf[js.Any], SourceName = SourceName.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any], VisibleSlicerItems = VisibleSlicerItems.asInstanceOf[js.Any], VisibleSlicerItemsList = VisibleSlicerItemsList.asInstanceOf[js.Any], WorkbookConnection = WorkbookConnection.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object SlicerCache {
     
     inline def setOLAP(value: Boolean): Self = StObject.set(x, "OLAP", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotTables(value: SlicerPivotTables): Self = StObject.set(x, "PivotTables", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object SlicerCache {
     
     inline def setVisibleSlicerItems(value: SlicerItems): Self = StObject.set(x, "VisibleSlicerItems", value.asInstanceOf[js.Any])
     
-    inline def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
+    inline def setVisibleSlicerItemsList(value: Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
     
     inline def setWorkbookConnection(value: WorkbookConnection): Self = StObject.set(x, "WorkbookConnection", value.asInstanceOf[js.Any])
   }

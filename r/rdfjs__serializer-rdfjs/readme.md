@@ -4,16 +4,16 @@
 Typings are for version 0.0
 
 ## Library description:
-RDFJS JavaScript code serializer that implements the RDFJS Sink interface
+RDF/JS JavaScript code serializer that implements the RDF/JS Sink interface
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/serializer-rdfjs |
 | Keywords           | rdf, rdfjs, serializer |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 454 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 255.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/serializer-rdfjs)

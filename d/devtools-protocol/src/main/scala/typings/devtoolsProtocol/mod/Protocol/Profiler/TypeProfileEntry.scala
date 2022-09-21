@@ -30,6 +30,6 @@ object TypeProfileEntry {
     
     inline def setTypes(value: js.Array[TypeObject]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: TypeObject*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeObject*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

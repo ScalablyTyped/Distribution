@@ -9,7 +9,7 @@ trait CheckBoxStateChangedEventUIParam extends StObject {
   /**
     * Gets reference to the grid the RowSelectors are initialized for.
     */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
   /**
     * Checks if the header check box is the one being clicked. In this case no row related args are passed.
@@ -19,7 +19,7 @@ trait CheckBoxStateChangedEventUIParam extends StObject {
   /**
     * Gets reference to the igGridRowSelectors.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the row the clicked row selector resides in.
@@ -55,7 +55,7 @@ object CheckBoxStateChangedEventUIParam {
   
   extension [Self <: CheckBoxStateChangedEventUIParam](x: Self) {
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
@@ -63,7 +63,7 @@ object CheckBoxStateChangedEventUIParam {
     
     inline def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

@@ -4,28 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayStoreOptions[T]
+trait ArrayStoreOptions[TItem, TKey]
   extends StObject
-     with StoreOptions[T] {
+     with StoreOptions[TItem, TKey] {
   
   /**
-    * [descr:ArrayStore.Options.data]
+    * Specifies the store&apos;s associated array.
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[TItem]] = js.undefined
 }
 object ArrayStoreOptions {
   
-  inline def apply[T](): ArrayStoreOptions[T] = {
+  inline def apply[TItem, TKey](): ArrayStoreOptions[TItem, TKey] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ArrayStoreOptions[T]]
+    __obj.asInstanceOf[ArrayStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: ArrayStoreOptions[?], T](x: Self & ArrayStoreOptions[T]) {
+  extension [Self <: ArrayStoreOptions[?, ?], TItem, TKey](x: Self & (ArrayStoreOptions[TItem, TKey])) {
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[TItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: TItem*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

@@ -33,7 +33,7 @@ object PageGroup {
     
     inline def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }

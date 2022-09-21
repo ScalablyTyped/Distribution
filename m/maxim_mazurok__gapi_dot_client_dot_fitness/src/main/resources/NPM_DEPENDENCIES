@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.fitness" : "1.0.20201117"
+      "@maxim_mazurok/gapi.client.fitness" : "1.0.20220808"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.fitness" : "1.0.20201117"
+      "@maxim_mazurok/gapi.client.fitness" : "1.0.20220808"
     }
   ],
   "compile-devDependencies" : [

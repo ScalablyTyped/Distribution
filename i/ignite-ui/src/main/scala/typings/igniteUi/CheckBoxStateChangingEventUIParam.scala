@@ -14,7 +14,7 @@ trait CheckBoxStateChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the grid the RowSelectors are initialized for.
     */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
   /**
     * Checks if the header check box is the one being clicked. In this case no row related args are passed.
@@ -29,7 +29,7 @@ trait CheckBoxStateChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the igGridRowSelectors.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the row the clicked row selector resides in.
@@ -44,7 +44,7 @@ trait CheckBoxStateChangingEventUIParam extends StObject {
   /**
     * Gets the key of the row the clicked row selector resides in.
     */
-  var rowKey: js.UndefOr[js.Any] = js.undefined
+  var rowKey: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the row selector cell.
@@ -64,7 +64,7 @@ object CheckBoxStateChangingEventUIParam {
     
     inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
@@ -76,7 +76,7 @@ object CheckBoxStateChangingEventUIParam {
     
     inline def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -86,7 +86,7 @@ object CheckBoxStateChangingEventUIParam {
     
     inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    inline def setRowKey(value: js.Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    inline def setRowKey(value: Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     

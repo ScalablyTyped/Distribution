@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-owl-carousel
 
-Typings are for version 2.3.1
+Typings are for version 2.3.3
 
 ## Library description:
 React.js + Owl Carousel
@@ -10,10 +10,10 @@ React.js + Owl Carousel
 | ------------------ | :-------------: |
 | Full name          | react-owl-carousel |
 | Keywords           | react, OwlCarousel, gallery |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 241037 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 44534.333333333336 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/seal789ie/react-owl-carousel#readme)

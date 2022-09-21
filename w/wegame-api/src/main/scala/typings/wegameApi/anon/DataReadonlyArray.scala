@@ -20,6 +20,6 @@ object DataReadonlyArray {
     
     inline def setData(value: js.Array[UserInfo]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: UserInfo*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: UserInfo*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

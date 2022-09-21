@@ -16,10 +16,10 @@ object popoverMod {
   
   @JSImport("fundamental-react/lib/Popover/Popover", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PopoverProps, js.Object, Any]
   
-  type Popover = Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
   trait PopoverProps
     extends StObject
@@ -47,7 +47,7 @@ object popoverMod {
     
     var popperClassName: js.UndefOr[String] = js.undefined
     
-    var popperProps: js.UndefOr[js.Any] = js.undefined
+    var popperProps: js.UndefOr[Any] = js.undefined
     
     var `type`: js.UndefOr[PopoverTypes] = js.undefined
     
@@ -108,7 +108,7 @@ object popoverMod {
       
       inline def setPopperClassNameUndefined: Self = StObject.set(x, "popperClassName", js.undefined)
       
-      inline def setPopperProps(value: js.Any): Self = StObject.set(x, "popperProps", value.asInstanceOf[js.Any])
+      inline def setPopperProps(value: Any): Self = StObject.set(x, "popperProps", value.asInstanceOf[js.Any])
       
       inline def setPopperPropsUndefined: Self = StObject.set(x, "popperProps", js.undefined)
       

@@ -65,7 +65,7 @@ object AccountsCustomBatchRequestEntry {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
     
     inline def setLinkRequest(value: AccountsCustomBatchRequestEntryLinkRequest): Self = StObject.set(x, "linkRequest", value.asInstanceOf[js.Any])
     

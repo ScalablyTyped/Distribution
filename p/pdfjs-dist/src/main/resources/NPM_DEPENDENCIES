@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pdfjs-dist" : "2.16.105"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pdfjs-dist" : "2.16.105"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

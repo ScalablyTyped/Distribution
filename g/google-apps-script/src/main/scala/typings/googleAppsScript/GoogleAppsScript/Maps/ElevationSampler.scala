@@ -49,11 +49,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ElevationSampler extends StObject {
   
-  def sampleLocation(latitude: Double, longitude: Double): js.Any = js.native
+  def sampleLocation(latitude: Double, longitude: Double): Any = js.native
   
-  def sampleLocations(encodedPolyline: String): js.Any = js.native
-  def sampleLocations(points: js.Array[Double]): js.Any = js.native
+  def sampleLocations(encodedPolyline: String): Any = js.native
+  def sampleLocations(points: js.Array[Double]): Any = js.native
   
-  def samplePath(encodedPolyline: String, numSamples: Integer): js.Any = js.native
-  def samplePath(points: js.Array[Double], numSamples: Integer): js.Any = js.native
+  def samplePath(encodedPolyline: String, numSamples: Integer): Any = js.native
+  def samplePath(points: js.Array[Double], numSamples: Integer): Any = js.native
 }

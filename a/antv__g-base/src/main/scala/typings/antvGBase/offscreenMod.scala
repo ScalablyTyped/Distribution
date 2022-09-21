@@ -10,5 +10,5 @@ object offscreenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getOffScreenContext(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffScreenContext")().asInstanceOf[js.Any]
+  inline def getOffScreenContext(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffScreenContext")().asInstanceOf[Any]
 }

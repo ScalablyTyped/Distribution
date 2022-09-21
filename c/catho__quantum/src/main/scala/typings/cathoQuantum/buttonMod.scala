@@ -16,10 +16,9 @@ import typings.cathoQuantum.cathoQuantumStrings.warning
 import typings.cathoQuantum.cathoQuantumStrings.xlarge
 import typings.cathoQuantum.cathoQuantumStrings.xsmall
 import typings.cathoQuantum.iconButtonMod.IconButton
+import typings.cathoQuantum.iconMod.IconNames
+import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.Component
-import typings.react.mod.MouseEvent
-import typings.react.mod.MouseEventHandler
-import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
@@ -31,8 +30,8 @@ object buttonMod {
   
   @JSImport("@catho/quantum/Button", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ButtonProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -46,26 +45,23 @@ object buttonMod {
     inline def Icon_=(x: IconButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
   }
   
-  type Button = Component[ButtonProps, js.Object, js.Any]
+  type Button = Component[ButtonProps, js.Object, Any]
   
-  trait ButtonProps extends StObject {
+  trait ButtonProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
     @JSName("$as")
     var $as: js.UndefOr[Element | String] = js.undefined
     
     var center: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-    
-    var disabled: js.UndefOr[Boolean] = js.undefined
+    @JSName("children")
+    var children_ButtonProps: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
     var full: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.undefined
-    
-    var id: js.UndefOr[String] = js.undefined
-    
-    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+    var icon: js.UndefOr[IconNames | String] = js.undefined
     
     var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
@@ -75,7 +71,8 @@ object buttonMod {
     
     var theme: js.UndefOr[Breakpoints] = js.undefined
     
-    var `type`: js.UndefOr[button | reset | submit] = js.undefined
+    @JSName("type")
+    var type_ButtonProps: js.UndefOr[button | reset | submit] = js.undefined
   }
   object ButtonProps {
     
@@ -98,27 +95,15 @@ object buttonMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
       inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconNames | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
-      
-      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setSize(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

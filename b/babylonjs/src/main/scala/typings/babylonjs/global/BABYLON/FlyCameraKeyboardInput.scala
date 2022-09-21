@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FlyCameraKeyboardInput")
 @js.native
-class FlyCameraKeyboardInput ()
+open class FlyCameraKeyboardInput ()
   extends StObject
      with typings.babylonjs.BABYLON.FlyCameraKeyboardInput

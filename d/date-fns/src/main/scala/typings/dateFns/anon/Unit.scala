@@ -17,7 +17,7 @@ trait Unit extends StObject {
   
   var addSuffix: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[typings.dateFns.Locale] = js.undefined
+  var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.undefined
   
   var roundingMethod: js.UndefOr[floor | ceil | round] = js.undefined
   
@@ -36,7 +36,7 @@ object Unit {
     
     inline def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
     
-    inline def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: typings.dateFns.mod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

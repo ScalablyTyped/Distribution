@@ -116,7 +116,7 @@ object QueryObj {
     
     inline def setOR(value: js.Array[Query]): Self = StObject.set(x, "OR", value.asInstanceOf[js.Any])
     
-    inline def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value :_*))
+    inline def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

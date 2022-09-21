@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashRestFrom extends StObject {
   
   def apply(start: Double): LodashRestFrom1x1 = js.native
-  def apply(start: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply(start: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashRestFrom1x2 = js.native
+  def apply(start: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(start: __, func: js.Function1[/* repeated */ Any, Any]): LodashRestFrom1x2 = js.native
 }

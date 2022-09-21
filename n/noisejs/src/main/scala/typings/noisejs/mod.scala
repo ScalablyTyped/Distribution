@@ -13,7 +13,7 @@ object mod {
     * @param  {number} seed
     * @return {Noise}       Noise instance
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Noise {
     def this(seed: Double) = this()

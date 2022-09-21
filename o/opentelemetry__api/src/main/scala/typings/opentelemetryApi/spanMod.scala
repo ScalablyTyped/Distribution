@@ -1,10 +1,11 @@
 package typings.opentelemetryApi
 
-import typings.opentelemetryApi.attributesMod.Attributes
 import typings.opentelemetryApi.exceptionMod.Exception
 import typings.opentelemetryApi.spanContextMod.SpanContext
-import typings.opentelemetryApi.statusMod.Status
+import typings.opentelemetryApi.statusMod.SpanStatus
 import typings.opentelemetryApi.timeMod.TimeInput
+import typings.opentelemetryApi.traceAttributesMod.SpanAttributeValue
+import typings.opentelemetryApi.traceAttributesMod.SpanAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,21 +26,10 @@ object spanMod {
       */
     def addEvent(name: String): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: Unit, startTime: TimeInput): this.type = js.native
-    def addEvent(name: String, attributesOrStartTime: Attributes): this.type = js.native
-    def addEvent(name: String, attributesOrStartTime: Attributes, startTime: TimeInput): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: TimeInput): this.type = js.native
     def addEvent(name: String, attributesOrStartTime: TimeInput, startTime: TimeInput): this.type = js.native
-    
-    /**
-      * Returns the {@link SpanContext} object associated with this Span.
-      *
-      * Get an immutable, serializable identifier for this span that can be used
-      * to create new child spans. Returned SpanContext is usable even after the
-      * span ends.
-      *
-      * @returns the SpanContext object associated with this Span.
-      */
-    def context(): SpanContext = js.native
+    def addEvent(name: String, attributesOrStartTime: SpanAttributes): this.type = js.native
+    def addEvent(name: String, attributesOrStartTime: SpanAttributes, startTime: TimeInput): this.type = js.native
     
     /**
       * Marks the end of Span execution.
@@ -79,25 +69,39 @@ object spanMod {
       * Sets a single Attribute with the key and value passed as arguments.
       *
       * @param key the key for this attribute.
-      * @param value the value for this attribute.
+      * @param value the value for this attribute. Setting a value null or
+      *              undefined is invalid and will result in undefined behavior.
       */
-    def setAttribute(key: String, value: js.Any): this.type = js.native
+    def setAttribute(key: String, value: SpanAttributeValue): this.type = js.native
     
     /**
       * Sets attributes to the span.
       *
       * @param attributes the attributes that will be added.
+      *                   null or undefined attribute values
+      *                   are invalid and will result in undefined behavior.
       */
-    def setAttributes(attributes: Attributes): this.type = js.native
+    def setAttributes(attributes: SpanAttributes): this.type = js.native
     
     /**
       * Sets a status to the span. If used, this will override the default Span
-      * status. Default is {@link CanonicalCode.OK}. SetStatus overrides the value
+      * status. Default is {@link SpanStatusCode.UNSET}. SetStatus overrides the value
       * of previous calls to SetStatus on the Span.
       *
-      * @param status the Status to set.
+      * @param status the SpanStatus to set.
       */
-    def setStatus(status: Status): this.type = js.native
+    def setStatus(status: SpanStatus): this.type = js.native
+    
+    /**
+      * Returns the {@link SpanContext} object associated with this Span.
+      *
+      * Get an immutable, serializable identifier for this span that can be used
+      * to create new child spans. Returned SpanContext is usable even after the
+      * span ends.
+      *
+      * @returns the SpanContext object associated with this Span.
+      */
+    def spanContext(): SpanContext = js.native
     
     /**
       * Updates the Span name.

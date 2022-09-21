@@ -131,7 +131,7 @@ object scanner {
       getAvailableScanners: () => SafeArray[ScannerContext],
       getBitmap: ScannerContext => XBitmap,
       getError: ScannerContext => ScanError,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       startScan: (ScannerContext, XEventListener) => Unit
     ): XScannerManager = {
@@ -179,7 +179,7 @@ object scanner {
       getAvailableScanners: () => SafeArray[ScannerContext],
       getBitmap: ScannerContext => XBitmap,
       getError: ScannerContext => ScanError,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       startScan: (ScannerContext, XEventListener) => Unit
     ): XScannerManager2 = {

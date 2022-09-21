@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.ES
   - typings.validator.validatorStrings.`he-IL`
   - typings.validator.validatorStrings.`zh-TW`
+  - typings.validator.validatorStrings.`zh-CN`
 */
 trait IdentityCardLocale extends StObject
 object IdentityCardLocale {
@@ -15,6 +16,8 @@ object IdentityCardLocale {
   inline def ES: typings.validator.validatorStrings.ES = "ES".asInstanceOf[typings.validator.validatorStrings.ES]
   
   inline def `he-IL`: typings.validator.validatorStrings.`he-IL` = "he-IL".asInstanceOf[typings.validator.validatorStrings.`he-IL`]
+  
+  inline def `zh-CN`: typings.validator.validatorStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.validator.validatorStrings.`zh-CN`]
   
   inline def `zh-TW`: typings.validator.validatorStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.validator.validatorStrings.`zh-TW`]
 }

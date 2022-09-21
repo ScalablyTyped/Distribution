@@ -29,24 +29,26 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.start
 import typings.blueprintjsCore.blueprintjsCoreStrings.success
 import typings.blueprintjsCore.blueprintjsCoreStrings.top
 import typings.blueprintjsCore.blueprintjsCoreStrings.warning
-import typings.blueprintjsCore.compareUtilsMod.IKeyAllowlist
-import typings.blueprintjsCore.compareUtilsMod.IKeyDenylist
+import typings.blueprintjsCore.compareUtilsMod.KeyAllowlist
+import typings.blueprintjsCore.compareUtilsMod.KeyDenylist
 import typings.blueprintjsCore.domUtilsMod.IThrottledReactEventOptions
 import typings.blueprintjsCore.elevationMod.Elevation
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.positionMod.Position
 import typings.blueprintjsCore.reactUtilsMod.INamed
-import typings.blueprintjsCore.refsMod.IRef
-import typings.blueprintjsCore.refsMod.IRefObject
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.react.mod.RefCallback
 import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
 import typings.std.EventTarget
+import typings.std.GetRootNodeOptions
 import typings.std.HTMLElement
+import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +64,7 @@ object commonMod {
   abstract class AbstractComponent[P, S] protected ()
     extends typings.blueprintjsCore.abstractComponentMod.AbstractComponent[P, S] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
   }
   
   @JSImport("@blueprintjs/core/lib/esm/common", "AbstractComponent2")
@@ -70,7 +72,7 @@ object commonMod {
   abstract class AbstractComponent2[P, S, SS] protected ()
     extends typings.blueprintjsCore.abstractComponent2Mod.AbstractComponent2[P, S, SS] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
   }
   
   @JSImport("@blueprintjs/core/lib/esm/common", "AbstractPureComponent")
@@ -78,7 +80,7 @@ object commonMod {
   abstract class AbstractPureComponent[P, S] protected ()
     extends typings.blueprintjsCore.abstractPureComponentMod.AbstractPureComponent[P, S] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
   }
   
   @JSImport("@blueprintjs/core/lib/esm/common", "AbstractPureComponent2")
@@ -86,7 +88,7 @@ object commonMod {
   abstract class AbstractPureComponent2[P, S, SS] protected ()
     extends typings.blueprintjsCore.abstractPureComponent2Mod.AbstractPureComponent2[P, S, SS] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
   }
   
   object Alignment {
@@ -290,6 +292,26 @@ object commonMod {
     @js.native
     val DIALOG_HEADER: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_STEP")
+    @js.native
+    val DIALOG_STEP: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_STEP_CONTAINER")
+    @js.native
+    val DIALOG_STEP_CONTAINER: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_STEP_ICON")
+    @js.native
+    val DIALOG_STEP_ICON: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_STEP_TITLE")
+    @js.native
+    val DIALOG_STEP_TITLE: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_STEP_VIEWED")
+    @js.native
+    val DIALOG_STEP_VIEWED: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DISABLED")
     @js.native
     val DISABLED: String = js.native
@@ -394,6 +416,10 @@ object commonMod {
     @js.native
     val FOCUS_DISABLED: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.FOCUS_STYLE_MANAGER_IGNORE")
+    @js.native
+    val FOCUS_STYLE_MANAGER_IGNORE: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.FORM_CONTENT")
     @js.native
     val FORM_CONTENT: String = js.native
@@ -401,6 +427,10 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.FORM_GROUP")
     @js.native
     val FORM_GROUP: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.FORM_GROUP_SUB_LABEL")
+    @js.native
+    val FORM_GROUP_SUB_LABEL: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.FORM_HELPER_TEXT")
     @js.native
@@ -546,6 +576,10 @@ object commonMod {
     @js.native
     val MENU_ITEM: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MENU_ITEM_ICON")
+    @js.native
+    val MENU_ITEM_ICON: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MENU_ITEM_LABEL")
     @js.native
     val MENU_ITEM_LABEL: String = js.native
@@ -553,6 +587,10 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MENU_SUBMENU")
     @js.native
     val MENU_SUBMENU: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MENU_SUBMENU_ICON")
+    @js.native
+    val MENU_SUBMENU_ICON: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MINIMAL")
     @js.native
@@ -569,6 +607,34 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTILINE")
     @js.native
     val MULTILINE: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG")
+    @js.native
+    val MULTISTEP_DIALOG: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_FOOTER")
+    @js.native
+    val MULTISTEP_DIALOG_FOOTER: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_LEFT_PANEL")
+    @js.native
+    val MULTISTEP_DIALOG_LEFT_PANEL: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_NAV_RIGHT")
+    @js.native
+    val MULTISTEP_DIALOG_NAV_RIGHT: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_NAV_TOP")
+    @js.native
+    val MULTISTEP_DIALOG_NAV_TOP: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_PANELS")
+    @js.native
+    val MULTISTEP_DIALOG_PANELS: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.MULTISTEP_DIALOG_RIGHT_PANEL")
+    @js.native
+    val MULTISTEP_DIALOG_RIGHT_PANEL: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.NAVBAR")
     @js.native
@@ -589,6 +655,10 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.NON_IDEAL_STATE")
     @js.native
     val NON_IDEAL_STATE: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.NON_IDEAL_STATE_TEXT")
+    @js.native
+    val NON_IDEAL_STATE_TEXT: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.NON_IDEAL_STATE_VISUAL")
     @js.native
@@ -626,6 +696,10 @@ object commonMod {
     @js.native
     val OVERLAY_CONTENT: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.OVERLAY_END_FOCUS_TRAP")
+    @js.native
+    val OVERLAY_END_FOCUS_TRAP: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.OVERLAY_INLINE")
     @js.native
     val OVERLAY_INLINE: String = js.native
@@ -638,9 +712,29 @@ object commonMod {
     @js.native
     val OVERLAY_SCROLL_CONTAINER: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.OVERLAY_START_FOCUS_TRAP")
+    @js.native
+    val OVERLAY_START_FOCUS_TRAP: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK")
     @js.native
     val PANEL_STACK: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK2")
+    @js.native
+    val PANEL_STACK2: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK2_HEADER")
+    @js.native
+    val PANEL_STACK2_HEADER: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK2_HEADER_BACK")
+    @js.native
+    val PANEL_STACK2_HEADER_BACK: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK2_VIEW")
+    @js.native
+    val PANEL_STACK2_VIEW: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.PANEL_STACK_HEADER")
     @js.native
@@ -689,6 +783,10 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.POPOVER_OPEN")
     @js.native
     val POPOVER_OPEN: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.POPOVER_OUT_OF_BOUNDARIES")
+    @js.native
+    val POPOVER_OUT_OF_BOUNDARIES: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.POPOVER_TARGET")
     @js.native
@@ -753,6 +851,10 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.SELECT")
     @js.native
     val SELECT: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.SELECTED")
+    @js.native
+    val SELECTED: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.SKELETON")
     @js.native
@@ -1003,451 +1105,9 @@ object commonMod {
     inline def positionClass_Union(position: Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   }
   
-  object Colors {
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLACK")
-    @js.native
-    def BLACK: String = js.native
-    inline def BLACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE1")
-    @js.native
-    def BLUE1: String = js.native
-    inline def BLUE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE2")
-    @js.native
-    def BLUE2: String = js.native
-    inline def BLUE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE3")
-    @js.native
-    def BLUE3: String = js.native
-    inline def BLUE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE4")
-    @js.native
-    def BLUE4: String = js.native
-    inline def BLUE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE5")
-    @js.native
-    def BLUE5: String = js.native
-    inline def BLUE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT1")
-    @js.native
-    def COBALT1: String = js.native
-    inline def COBALT1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT2")
-    @js.native
-    def COBALT2: String = js.native
-    inline def COBALT2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT3")
-    @js.native
-    def COBALT3: String = js.native
-    inline def COBALT3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT4")
-    @js.native
-    def COBALT4: String = js.native
-    inline def COBALT4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT5")
-    @js.native
-    def COBALT5: String = js.native
-    inline def COBALT5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY1")
-    @js.native
-    def DARK_GRAY1: String = js.native
-    inline def DARK_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY2")
-    @js.native
-    def DARK_GRAY2: String = js.native
-    inline def DARK_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY3")
-    @js.native
-    def DARK_GRAY3: String = js.native
-    inline def DARK_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY4")
-    @js.native
-    def DARK_GRAY4: String = js.native
-    inline def DARK_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY5")
-    @js.native
-    def DARK_GRAY5: String = js.native
-    inline def DARK_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST1")
-    @js.native
-    def FOREST1: String = js.native
-    inline def FOREST1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST2")
-    @js.native
-    def FOREST2: String = js.native
-    inline def FOREST2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST3")
-    @js.native
-    def FOREST3: String = js.native
-    inline def FOREST3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST4")
-    @js.native
-    def FOREST4: String = js.native
-    inline def FOREST4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST5")
-    @js.native
-    def FOREST5: String = js.native
-    inline def FOREST5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD1")
-    @js.native
-    def GOLD1: String = js.native
-    inline def GOLD1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD2")
-    @js.native
-    def GOLD2: String = js.native
-    inline def GOLD2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD3")
-    @js.native
-    def GOLD3: String = js.native
-    inline def GOLD3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD4")
-    @js.native
-    def GOLD4: String = js.native
-    inline def GOLD4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD5")
-    @js.native
-    def GOLD5: String = js.native
-    inline def GOLD5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY1")
-    @js.native
-    def GRAY1: String = js.native
-    inline def GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY2")
-    @js.native
-    def GRAY2: String = js.native
-    inline def GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY3")
-    @js.native
-    def GRAY3: String = js.native
-    inline def GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY4")
-    @js.native
-    def GRAY4: String = js.native
-    inline def GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY5")
-    @js.native
-    def GRAY5: String = js.native
-    inline def GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN1")
-    @js.native
-    def GREEN1: String = js.native
-    inline def GREEN1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN2")
-    @js.native
-    def GREEN2: String = js.native
-    inline def GREEN2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN3")
-    @js.native
-    def GREEN3: String = js.native
-    inline def GREEN3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN4")
-    @js.native
-    def GREEN4: String = js.native
-    inline def GREEN4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN5")
-    @js.native
-    def GREEN5: String = js.native
-    inline def GREEN5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO1")
-    @js.native
-    def INDIGO1: String = js.native
-    inline def INDIGO1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO2")
-    @js.native
-    def INDIGO2: String = js.native
-    inline def INDIGO2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO3")
-    @js.native
-    def INDIGO3: String = js.native
-    inline def INDIGO3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO4")
-    @js.native
-    def INDIGO4: String = js.native
-    inline def INDIGO4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO5")
-    @js.native
-    def INDIGO5: String = js.native
-    inline def INDIGO5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY1")
-    @js.native
-    def LIGHT_GRAY1: String = js.native
-    inline def LIGHT_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY2")
-    @js.native
-    def LIGHT_GRAY2: String = js.native
-    inline def LIGHT_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY3")
-    @js.native
-    def LIGHT_GRAY3: String = js.native
-    inline def LIGHT_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY4")
-    @js.native
-    def LIGHT_GRAY4: String = js.native
-    inline def LIGHT_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY5")
-    @js.native
-    def LIGHT_GRAY5: String = js.native
-    inline def LIGHT_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME1")
-    @js.native
-    def LIME1: String = js.native
-    inline def LIME1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME2")
-    @js.native
-    def LIME2: String = js.native
-    inline def LIME2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME3")
-    @js.native
-    def LIME3: String = js.native
-    inline def LIME3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME4")
-    @js.native
-    def LIME4: String = js.native
-    inline def LIME4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME5")
-    @js.native
-    def LIME5: String = js.native
-    inline def LIME5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE1")
-    @js.native
-    def ORANGE1: String = js.native
-    inline def ORANGE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE2")
-    @js.native
-    def ORANGE2: String = js.native
-    inline def ORANGE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE3")
-    @js.native
-    def ORANGE3: String = js.native
-    inline def ORANGE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE4")
-    @js.native
-    def ORANGE4: String = js.native
-    inline def ORANGE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE5")
-    @js.native
-    def ORANGE5: String = js.native
-    inline def ORANGE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED1")
-    @js.native
-    def RED1: String = js.native
-    inline def RED1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED2")
-    @js.native
-    def RED2: String = js.native
-    inline def RED2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED3")
-    @js.native
-    def RED3: String = js.native
-    inline def RED3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED4")
-    @js.native
-    def RED4: String = js.native
-    inline def RED4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED5")
-    @js.native
-    def RED5: String = js.native
-    inline def RED5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE1")
-    @js.native
-    def ROSE1: String = js.native
-    inline def ROSE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE2")
-    @js.native
-    def ROSE2: String = js.native
-    inline def ROSE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE3")
-    @js.native
-    def ROSE3: String = js.native
-    inline def ROSE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE4")
-    @js.native
-    def ROSE4: String = js.native
-    inline def ROSE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE5")
-    @js.native
-    def ROSE5: String = js.native
-    inline def ROSE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA1")
-    @js.native
-    def SEPIA1: String = js.native
-    inline def SEPIA1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA2")
-    @js.native
-    def SEPIA2: String = js.native
-    inline def SEPIA2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA3")
-    @js.native
-    def SEPIA3: String = js.native
-    inline def SEPIA3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA4")
-    @js.native
-    def SEPIA4: String = js.native
-    inline def SEPIA4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA5")
-    @js.native
-    def SEPIA5: String = js.native
-    inline def SEPIA5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE1")
-    @js.native
-    def TURQUOISE1: String = js.native
-    inline def TURQUOISE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE2")
-    @js.native
-    def TURQUOISE2: String = js.native
-    inline def TURQUOISE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE3")
-    @js.native
-    def TURQUOISE3: String = js.native
-    inline def TURQUOISE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE4")
-    @js.native
-    def TURQUOISE4: String = js.native
-    inline def TURQUOISE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE5")
-    @js.native
-    def TURQUOISE5: String = js.native
-    inline def TURQUOISE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION1")
-    @js.native
-    def VERMILION1: String = js.native
-    inline def VERMILION1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION2")
-    @js.native
-    def VERMILION2: String = js.native
-    inline def VERMILION2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION3")
-    @js.native
-    def VERMILION3: String = js.native
-    inline def VERMILION3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION4")
-    @js.native
-    def VERMILION4: String = js.native
-    inline def VERMILION4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION5")
-    @js.native
-    def VERMILION5: String = js.native
-    inline def VERMILION5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET1")
-    @js.native
-    def VIOLET1: String = js.native
-    inline def VIOLET1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET2")
-    @js.native
-    def VIOLET2: String = js.native
-    inline def VIOLET2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET3")
-    @js.native
-    def VIOLET3: String = js.native
-    inline def VIOLET3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET4")
-    @js.native
-    def VIOLET4: String = js.native
-    inline def VIOLET4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET5")
-    @js.native
-    def VIOLET5: String = js.native
-    inline def VIOLET5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@blueprintjs/core/lib/esm/common", "Colors.WHITE")
-    @js.native
-    def WHITE: String = js.native
-    inline def WHITE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
-  }
-  
   @JSImport("@blueprintjs/core/lib/esm/common", "DISPLAYNAME_PREFIX")
   @js.native
-  val DISPLAYNAME_PREFIX: /* "Blueprint3" */ String = js.native
+  val DISPLAYNAME_PREFIX: /* "Blueprint4" */ String = js.native
   
   object Elevation {
     
@@ -1643,38 +1303,38 @@ object commonMod {
     inline def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def arrayLengthCompare(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")().asInstanceOf[Double]
-    inline def arrayLengthCompare(a: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def arrayLengthCompare(a: js.Array[js.Any], b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def arrayLengthCompare(a: Unit, b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def arrayLengthCompare(a: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def arrayLengthCompare(a: js.Array[Any], b: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def arrayLengthCompare(a: Unit, b: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def arraysEqual(arrA: js.Array[js.Any], arrB: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def arraysEqual(
-      arrA: js.Array[js.Any],
-      arrB: js.Array[js.Any],
-      compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def arraysEqual(arrA: js.Array[Any], arrB: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def arraysEqual(arrA: js.Array[Any], arrB: js.Array[Any], compare: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def createReactRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactRef")().asInstanceOf[RefObject[T]]
-    
-    inline def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deepCompareKeys(objA: Any, objB: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deepCompareKeys(objA: Any, objB: Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(
       child: Unit,
-      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(
       child: ReactNode,
-      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
+    
+    inline def getActiveElement(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[Element | Null]
+    inline def getActiveElement(element: Null, options: GetRootNodeOptions): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def getActiveElement(element: Unit, options: GetRootNodeOptions): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def getActiveElement(element: HTMLElement): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(element.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def getActiveElement(element: HTMLElement, options: GetRootNodeOptions): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
     inline def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")().asInstanceOf[js.Array[Key[T]]]
     inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
@@ -1690,118 +1350,106 @@ object commonMod {
     
     inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
     inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
-    inline def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    inline def getRef[T](ref: RefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
     
-    inline def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+    inline def isDarkTheme(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDarkTheme")().asInstanceOf[Boolean]
+    inline def isDarkTheme(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDarkTheme")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDarkTheme(element: Text): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDarkTheme")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    inline def isElementOfType[P](element: Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
     
-    inline def isNodeEnv(env: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(value: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    inline def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactElement")(child.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+    inline def isNodeEnv(env: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def isReactNodeEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")().asInstanceOf[Boolean]
     inline def isReactNodeEmpty(node: Unit, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def isReactNodeEmpty(node: ReactNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def safeInvoke[R](): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")().asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, R](func: Unit, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, R](func: Unit, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, C, R](func: Unit, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, C, D, R](
-      func: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
-      arg1: A,
-      arg2: B,
-      arg3: C,
-      arg4: D
-    ): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvoke[A, B, C, D, R](func: Unit, arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def setRef[T](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")().asInstanceOf[Unit]
+    inline def setRef[T](refTarget: Unit, ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setRef[T](refTarget: Ref[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setRef[T](refTarget: Ref[T], ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: T, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: Unit, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: Unit, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: Unit, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B, c : C): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B, c : C): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: Unit, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    
-    inline def safeInvokeOrValue[R](): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")().asInstanceOf[R]
-    inline def safeInvokeOrValue[R](funcOrValue: R): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
-    inline def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, R](funcOrValue: Unit, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, R](funcOrValue: Unit, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, D, R](
-      funcOrValue: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
-      arg1: A,
-      arg2: B,
-      arg3: C,
-      arg4: D
-    ): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
-    inline def safeInvokeOrValue[A, B, C, D, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
-    
+    inline def shallowCompareKeys[T /* <: js.Object */](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")().asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: Null, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: Null, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: Unit, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: Unit, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: T, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: T, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: Null, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: Null, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: Unit, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Null, objB: Unit, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: T, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: T, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: Null, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: Null, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: Unit, keys: KeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: Unit, objB: Unit, keys: KeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
     
-    inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+    inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ Any, Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
     inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
-      callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any],
+      callback: js.Function2[/* event */ E, /* repeated */ Any, Any],
       options: IThrottledReactEventOptions
     ): js.Function1[/* event2 */ E, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+    
+    inline def uniqueId(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  inline def getPositionIgnoreAngles(position: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
+  inline def combineRefs[T](ref1: RefCallback[T], ref2: RefCallback[T]): js.Function1[/* instance */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineRefs")(ref1.asInstanceOf[js.Any], ref2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
+  
+  inline def getPositionIgnoreAngles(position: Position): left | top | bottom | right = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | top | bottom | right]
   
   inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
   inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
-  inline def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  inline def getRef[T](ref: RefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
   inline def isPositionHorizontal(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isPositionVertical(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
-  inline def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
+  inline def isRefCallback[T](): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
+  inline def isRefCallback[T](value: Ref[T]): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
   
-  inline def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
-  inline def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
+  inline def isRefObject[T](): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
+  inline def isRefObject[T](value: Ref[T]): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
   
-  inline def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def mergeRefs[T](refs: Ref[T]*): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RefCallback[T]]
+  
+  inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
+    refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in K ]: T | null}
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+    refTargetKey: K
+  ): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]
+  inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
+    refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in K ]: T | null}
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+    refTargetKey: K,
+    refProp: Ref[T]
+  ): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any], refProp.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]
+  
+  inline def removeNonHTMLProps(props: StringDictionary[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  
+  inline def setRef[T](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")().asInstanceOf[Unit]
+  inline def setRef[T](refTarget: Unit, ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setRef[T](refTarget: Ref[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRef[T](refTarget: Ref[T], ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

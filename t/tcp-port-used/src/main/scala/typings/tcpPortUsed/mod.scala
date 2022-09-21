@@ -102,20 +102,20 @@ object mod {
   
   trait TcpPortUsedOptions extends StObject {
     
-    var host: String
+    var host: js.UndefOr[String] = js.undefined
     
     var port: Double
     
-    var retryTimeMs: Double
+    var retryTimeMs: js.UndefOr[Double] = js.undefined
     
-    var status: Boolean
+    var status: js.UndefOr[Boolean] = js.undefined
     
-    var timeOutMs: Double
+    var timeOutMs: js.UndefOr[Double] = js.undefined
   }
   object TcpPortUsedOptions {
     
-    inline def apply(host: String, port: Double, retryTimeMs: Double, status: Boolean, timeOutMs: Double): TcpPortUsedOptions = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], retryTimeMs = retryTimeMs.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timeOutMs = timeOutMs.asInstanceOf[js.Any])
+    inline def apply(port: Double): TcpPortUsedOptions = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[TcpPortUsedOptions]
     }
     
@@ -123,13 +123,21 @@ object mod {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setRetryTimeMs(value: Double): Self = StObject.set(x, "retryTimeMs", value.asInstanceOf[js.Any])
       
+      inline def setRetryTimeMsUndefined: Self = StObject.set(x, "retryTimeMs", js.undefined)
+      
       inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
       inline def setTimeOutMs(value: Double): Self = StObject.set(x, "timeOutMs", value.asInstanceOf[js.Any])
+      
+      inline def setTimeOutMsUndefined: Self = StObject.set(x, "timeOutMs", js.undefined)
     }
   }
 }

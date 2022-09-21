@@ -14,7 +14,7 @@ object databaseMod {
   
   @JSImport("sqlite/build/Database", "Database")
   @js.native
-  class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: Statement */] protected () extends StObject {
+  open class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: Statement */] protected () extends StObject {
     def this(config: Config) = this()
     
     /**
@@ -40,7 +40,7 @@ object databaseMod {
       *
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaseallsql-param--callback
       */
-    def all[T](sql: SqlType, params: js.Any*): js.Promise[T] = js.native
+    def all[T](sql: SqlType, params: Any*): js.Promise[T] = js.native
     
     /**
       * Closes the database.
@@ -52,7 +52,7 @@ object databaseMod {
     /**
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaseconfigureoption-value
       */
-    def configure(option: ConfigureOption, value: js.Any): js.Any = js.native
+    def configure(option: ConfigureOption, value: Any): Any = js.native
     
     var db: Driver = js.native
     
@@ -76,22 +76,17 @@ object databaseMod {
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaseeachsql-param--callback-complete
       * @returns Promise<number> Number of rows returned
       */
-    def each[T](sql: SqlType, callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]): js.Promise[Double] = js.native
-    def each[T](sql: SqlType, param1: js.Any, callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](sql: SqlType, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](sql: SqlType, param1: Any, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](sql: SqlType, param1: Any, param2: Any, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
     def each[T](
       sql: SqlType,
-      param1: js.Any,
-      param2: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]
+      param1: Any,
+      param2: Any,
+      param3: Any,
+      callback: js.Function2[/* err */ Any, /* row */ T, Unit]
     ): js.Promise[Double] = js.native
-    def each[T](
-      sql: SqlType,
-      param1: js.Any,
-      param2: js.Any,
-      param3: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]
-    ): js.Promise[Double] = js.native
-    def each[T](sql: SqlType, params: js.Any*): js.Promise[Double] = js.native
+    def each[T](sql: SqlType, params: Any*): js.Promise[Double] = js.native
     
     /**
       * Runs all SQL queries in the supplied string. No result rows are retrieved. If a query fails,
@@ -102,9 +97,10 @@ object databaseMod {
       * Comments are not allowed and will lead to runtime errors.
       *
       * @param {string} sql The SQL query to run.
+      * @param {any} [params, ...] Same as the `params` parameter of `all`
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaseexecsql-callback
       */
-    def exec(sql: SqlType): js.Promise[Unit] = js.native
+    def exec(sql: SqlType, params: Any*): js.Promise[Unit] = js.native
     
     /**
       * Runs the SQL query with the specified parameters and resolves with
@@ -123,7 +119,7 @@ object databaseMod {
       *
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databasegetsql-param--callback
       */
-    def get[T](sql: SqlType, params: js.Any*): js.Promise[js.UndefOr[T]] = js.native
+    def get[T](sql: SqlType, params: Any*): js.Promise[js.UndefOr[T]] = js.native
     
     /**
       * Returns the underlying sqlite3 Database instance
@@ -135,7 +131,7 @@ object databaseMod {
       *
       * @param {string} path Filename of the extension to load
       */
-    def loadExtension(path: String): js.Promise[js.Any] = js.native
+    def loadExtension(path: String): js.Promise[Unit] = js.native
     
     /**
       * Performs a database migration.
@@ -147,7 +143,7 @@ object databaseMod {
       * Event handler when verbose mode is enabled.
       * @see https://github.com/mapbox/node-sqlite3/wiki/Debugging
       */
-    def on(event: String, listener: js.Any): Unit = js.native
+    def on(event: String, listener: Any): Unit = js.native
     
     /**
       * Opens the database
@@ -168,7 +164,7 @@ object databaseMod {
       * parameters. This automatically sanitizes inputs.
       * @returns Promise<Statement> Statement object
       */
-    def prepare(sql: SqlType, params: js.Any*): js.Promise[typings.sqlite.statementMod.Statement[Stmt]] = js.native
+    def prepare(sql: SqlType, params: Any*): js.Promise[typings.sqlite.statementMod.Statement[Stmt]] = js.native
     
     /**
       * Runs the SQL query with the specified parameters. It does not retrieve any result data.
@@ -184,7 +180,7 @@ object databaseMod {
       *
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaserunsql-param--callback
       */
-    def run(sql: SqlType, params: js.Any*): js.Promise[RunResult[Stmt]] = js.native
+    def run(sql: SqlType, params: Any*): js.Promise[RunResult[Stmt]] = js.native
     
     /**
       * The methods underneath requires creative work to implement. PRs / proposals accepted!

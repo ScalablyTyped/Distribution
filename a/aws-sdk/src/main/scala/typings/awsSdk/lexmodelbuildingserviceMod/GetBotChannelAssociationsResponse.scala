@@ -29,7 +29,7 @@ object GetBotChannelAssociationsResponse {
     
     inline def setBotChannelAssociationsUndefined: Self = StObject.set(x, "botChannelAssociations", js.undefined)
     
-    inline def setBotChannelAssociationsVarargs(value: BotChannelAssociation*): Self = StObject.set(x, "botChannelAssociations", js.Array(value :_*))
+    inline def setBotChannelAssociationsVarargs(value: BotChannelAssociation*): Self = StObject.set(x, "botChannelAssociations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

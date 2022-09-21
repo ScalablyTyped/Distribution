@@ -14,13 +14,13 @@ object fastFieldMod {
   
   @JSImport("formik/dist/FastField", "FastField")
   @js.native
-  val FastField: ComponentType[js.Any] = js.native
+  val FastField: ComponentType[Any] = js.native
   
   type FastFieldAttributes[T] = GenericFieldHTMLAttributes & FastFieldConfig[T] & T
   
   trait FastFieldConfig[T]
     extends StObject
-       with FieldConfig[js.Any] {
+       with FieldConfig[Any] {
     
     /** Override FastField's default shouldComponentUpdate */
     var shouldUpdate: js.UndefOr[

@@ -14,7 +14,7 @@ object deployKeysMod {
   
   @JSImport("gitlab/dist/types/core/services/DeployKeys", "DeployKeys")
   @js.native
-  class DeployKeys () extends BaseService {
+  open class DeployKeys () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(projectId: String): js.Promise[js.Object] = js.native

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AlertPolicy extends StObject {
   
+  /** Control over how this alert policy's notification channels are notified. */
+  var alertStrategy: js.UndefOr[AlertStrategy] = js.undefined
+  
   /** How to combine the results of multiple conditions to determine if an incident should be opened. If condition_time_series_query_language is present, this must be COMBINE_UNSPECIFIED. */
   var combiner: js.UndefOr[String] = js.undefined
   
@@ -42,7 +45,7 @@ trait AlertPolicy extends StObject {
   
   /**
     * Required if the policy exists. The resource name for this policy. The format is: projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID] [ALERT_POLICY_ID] is assigned by
-    * Stackdriver Monitoring when the policy is created. When calling the alertPolicies.create method, do not include the name field in the alerting policy passed as part of the request.
+    * Cloud Monitoring when the policy is created. When calling the alertPolicies.create method, do not include the name field in the alerting policy passed as part of the request.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -60,7 +63,7 @@ trait AlertPolicy extends StObject {
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[Any]
   ] = js.undefined
   
   /** Read-only description of how the alert policy is invalid. OK if the alert policy is valid. If not OK, the alert policy will not generate incidents. */
@@ -75,6 +78,10 @@ object AlertPolicy {
   
   extension [Self <: AlertPolicy](x: Self) {
     
+    inline def setAlertStrategy(value: AlertStrategy): Self = StObject.set(x, "alertStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setAlertStrategyUndefined: Self = StObject.set(x, "alertStrategy", js.undefined)
+    
     inline def setCombiner(value: String): Self = StObject.set(x, "combiner", value.asInstanceOf[js.Any])
     
     inline def setCombinerUndefined: Self = StObject.set(x, "combiner", js.undefined)
@@ -83,7 +90,7 @@ object AlertPolicy {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setCreationRecord(value: MutationRecord): Self = StObject.set(x, "creationRecord", value.asInstanceOf[js.Any])
     
@@ -113,12 +120,12 @@ object AlertPolicy {
     
     inline def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
-    inline def setNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
+    inline def setNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "notificationChannels", js.Array(value*))
     
     inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

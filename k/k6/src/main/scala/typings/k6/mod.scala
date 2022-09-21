@@ -1,7 +1,6 @@
 package typings.k6
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,16 +25,11 @@ object mod {
   
   type Checkers[VT] = StringDictionary[Checker[VT]]
   
-  @js.native
-  trait JSONArray
-    extends StObject
-       with Array[JSONValue]
-       with _JSONValue
+  type JSONArray = js.Array[JSONValue]
   
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[JSONValue]
-       with _JSONValue
   object JSONObject {
     
     inline def apply(): JSONObject = {
@@ -44,19 +38,7 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Null
-    - scala.Boolean
-    - scala.Double
-    - java.lang.String
-    - typings.k6.mod.JSONArray
-    - typings.k6.mod.JSONObject
-  */
-  type JSONValue = _JSONValue | Null | Boolean | Double | String
+  type JSONValue = Null | Boolean | Double | String | Any | JSONObject
   
-  trait _JSONValue extends StObject
-  
-  type byte = Double
-  
-  type bytes = js.Array[byte]
+  type bytes = js.Array[Double]
 }

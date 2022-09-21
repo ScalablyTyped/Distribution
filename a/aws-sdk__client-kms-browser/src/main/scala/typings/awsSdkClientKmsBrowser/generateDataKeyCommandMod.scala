@@ -16,7 +16,7 @@ object generateDataKeyCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/GenerateDataKeyCommand", "GenerateDataKeyCommand")
   @js.native
-  class GenerateDataKeyCommand protected ()
+  open class GenerateDataKeyCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object generateDataKeyCommandMod {
     override val middlewareStack: MiddlewareStack[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
   }
 }

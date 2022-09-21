@@ -4,13 +4,15 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services")
 @js.native
-class ResourceServices protected () extends StObject {
+open class ResourceServices protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var configs: ResourceServicesConfigs = js.native
@@ -19,19 +21,6 @@ class ResourceServices protected () extends StObject {
   
   var context: APIRequestContext = js.native
   
-  /**
-    * servicemanagement.services.create
-    * @desc Creates a new managed service. Please note one producer project can
-    * own no more than 20 services.  Operation<response: ManagedService>
-    * @alias servicemanagement.services.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().ManagedService} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -39,8 +28,8 @@ class ResourceServices protected () extends StObject {
   def create(params: ParamsResourceServicesCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
     params: ParamsResourceServicesCreate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def create(params: ParamsResourceServicesCreate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(
@@ -48,23 +37,76 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.delete
-    * @desc Deletes a managed service. This method will change the service to
-    * the `Soft-Delete` state for 30 days. Within this period, service
-    * producers may call UndeleteService to restore the service. After 30 days,
-    * the service will be permanently deleted.  Operation<response:
-    * google.protobuf.Empty>
-    * @alias servicemanagement.services.delete
-    * @memberOf! ()
+    * Creates a new managed service. A managed service is immutable, and is subject to mandatory 30-day data retention. You cannot move a service or recreate it within 30 days after deletion. One producer project can own no more than 500 services. For security and reliability purposes, a production service should be hosted in a dedicated producer project. Operation
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/service.management',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.create({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "producerProjectId": "my_producerProjectId",
+    *       //   "serviceName": "my_serviceName"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceServicesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceServicesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -72,8 +114,8 @@ class ResourceServices protected () extends StObject {
   def delete(params: ParamsResourceServicesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceServicesDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceServicesDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -81,93 +123,70 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.disable
-    * @desc Disables a service for a project, so it can no longer be be used
-    * for the project. It prevents accidental usage that may cause unexpected
-    * billing charges or security leaks.  Operation<response:
-    * DisableServiceResponse>
-    * @alias servicemanagement.services.disable
-    * @memberOf! ()
+    * Deletes a managed service. This method will change the service to the `Soft-Delete` state for 30 days. Within this period, service producers may call UndeleteService to restore the service. After 30 days, the service will be permanently deleted. Operation
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.serviceName Name of the service to disable. Specifying an unknown service name will cause the request to fail.
-    * @param {().DisableServiceRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def disable(): GaxiosPromise[SchemaOperation] = js.native
-  def disable(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def disable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def disable(params: ParamsResourceServicesDisable): GaxiosPromise[SchemaOperation] = js.native
-  def disable(params: ParamsResourceServicesDisable, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def disable(
-    params: ParamsResourceServicesDisable,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
-  ): Unit = js.native
-  def disable(params: ParamsResourceServicesDisable, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def disable(
-    params: ParamsResourceServicesDisable,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaOperation]
-  ): Unit = js.native
-  
-  /**
-    * servicemanagement.services.enable
-    * @desc Enables a service for a project, so it can be used for the project.
-    * See [Cloud Auth Guide](https://cloud.google.com/docs/authentication) for
-    * more information.  Operation<response: EnableServiceResponse>
-    * @alias servicemanagement.services.enable
-    * @memberOf! ()
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.serviceName Name of the service to enable. Specifying an unknown service name will cause the request to fail.
-    * @param {().EnableServiceRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/service.management',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.delete({
+    *     // Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
+    *     serviceName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def enable(): GaxiosPromise[SchemaOperation] = js.native
-  def enable(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def enable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def enable(params: ParamsResourceServicesEnable): GaxiosPromise[SchemaOperation] = js.native
-  def enable(params: ParamsResourceServicesEnable, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def enable(
-    params: ParamsResourceServicesEnable,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
-  ): Unit = js.native
-  def enable(params: ParamsResourceServicesEnable, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
-  def enable(
-    params: ParamsResourceServicesEnable,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaOperation]
+  def delete(params: ParamsResourceServicesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceServicesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * servicemanagement.services.generateConfigReport
-    * @desc Generates and returns a report (errors, warnings and changes from
-    * existing configurations) associated with
-    * GenerateConfigReportRequest.new_value  If
-    * GenerateConfigReportRequest.old_value is specified,
-    * GenerateConfigReportRequest will contain a single ChangeReport based on
-    * the comparison between GenerateConfigReportRequest.new_value and
-    * GenerateConfigReportRequest.old_value. If
-    * GenerateConfigReportRequest.old_value is not specified, this method will
-    * compare GenerateConfigReportRequest.new_value with the last pushed
-    * service configuration.
-    * @alias servicemanagement.services.generateConfigReport
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().GenerateConfigReportRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def generateConfigReport(): GaxiosPromise[SchemaGenerateConfigReportResponse] = js.native
   def generateConfigReport(callback: BodyResponseCallback[SchemaGenerateConfigReportResponse]): Unit = js.native
   def generateConfigReport(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGenerateConfigReportResponse] = js.native
@@ -178,8 +197,8 @@ class ResourceServices protected () extends StObject {
   ): Unit = js.native
   def generateConfigReport(
     params: ParamsResourceServicesGenerateconfigreport,
-    options: BodyResponseCallback[SchemaGenerateConfigReportResponse],
-    callback: BodyResponseCallback[SchemaGenerateConfigReportResponse]
+    options: BodyResponseCallback[Readable | SchemaGenerateConfigReportResponse],
+    callback: BodyResponseCallback[Readable | SchemaGenerateConfigReportResponse]
   ): Unit = js.native
   def generateConfigReport(params: ParamsResourceServicesGenerateconfigreport, options: MethodOptions): GaxiosPromise[SchemaGenerateConfigReportResponse] = js.native
   def generateConfigReport(
@@ -187,20 +206,75 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateConfigReportResponse]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.get
-    * @desc Gets a managed service. Authentication is required unless the
-    * service is public.
-    * @alias servicemanagement.services.get
-    * @memberOf! ()
+    * Generates and returns a report (errors, warnings and changes from existing configurations) associated with GenerateConfigReportRequest.new_value If GenerateConfigReportRequest.old_value is specified, GenerateConfigReportRequest will contain a single ChangeReport based on the comparison between GenerateConfigReportRequest.new_value and GenerateConfigReportRequest.old_value. If GenerateConfigReportRequest.old_value is not specified, this method will compare GenerateConfigReportRequest.new_value with the last pushed service configuration.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.serviceName The name of the service.  See the `ServiceManager` overview for naming requirements.  For example: `example.googleapis.com`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/service.management',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.generateConfigReport({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "newConfig": {},
+    *       //   "oldConfig": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "changeReports": [],
+    *   //   "diagnostics": [],
+    *   //   "id": "my_id",
+    *   //   "serviceName": "my_serviceName"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def generateConfigReport(params: ParamsResourceServicesGenerateconfigreport, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def generateConfigReport(
+    params: ParamsResourceServicesGenerateconfigreport,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaManagedService] = js.native
   def get(callback: BodyResponseCallback[SchemaManagedService]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaManagedService] = js.native
@@ -208,8 +282,8 @@ class ResourceServices protected () extends StObject {
   def get(params: ParamsResourceServicesGet, callback: BodyResponseCallback[SchemaManagedService]): Unit = js.native
   def get(
     params: ParamsResourceServicesGet,
-    options: BodyResponseCallback[SchemaManagedService],
-    callback: BodyResponseCallback[SchemaManagedService]
+    options: BodyResponseCallback[Readable | SchemaManagedService],
+    callback: BodyResponseCallback[Readable | SchemaManagedService]
   ): Unit = js.native
   def get(params: ParamsResourceServicesGet, options: MethodOptions): GaxiosPromise[SchemaManagedService] = js.native
   def get(
@@ -217,21 +291,69 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedService]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.getConfig
-    * @desc Gets a service configuration (version) for a managed service.
-    * @alias servicemanagement.services.getConfig
-    * @memberOf! ()
+    * Gets a managed service. Authentication is required unless the service is public.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.configId The id of the service configuration resource.  This field must be specified for the server to return all fields, including `SourceInfo`.
-    * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
-    * @param {string=} params.view Specifies which parts of the Service Config should be returned in the response.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/service.management',
+    *       'https://www.googleapis.com/auth/service.management.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.get({
+    *     // Required. The name of the service. See the `ServiceManager` overview for naming requirements. For example: `example.googleapis.com`.
+    *     serviceName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "producerProjectId": "my_producerProjectId",
+    *   //   "serviceName": "my_serviceName"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceServicesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceServicesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getConfig(): GaxiosPromise[SchemaService] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def getConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
@@ -239,8 +361,8 @@ class ResourceServices protected () extends StObject {
   def getConfig(params: ParamsResourceServicesGetconfig, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def getConfig(
     params: ParamsResourceServicesGetconfig,
-    options: BodyResponseCallback[SchemaService],
-    callback: BodyResponseCallback[SchemaService]
+    options: BodyResponseCallback[Readable | SchemaService],
+    callback: BodyResponseCallback[Readable | SchemaService]
   ): Unit = js.native
   def getConfig(params: ParamsResourceServicesGetconfig, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def getConfig(
@@ -248,21 +370,98 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.getIamPolicy
-    * @desc Gets the access control policy for a resource. Returns an empty
-    * policy if the resource exists and does not have a policy set.
-    * @alias servicemanagement.services.getIamPolicy
-    * @memberOf! ()
+    * Gets a service configuration (version) for a managed service.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
-    * @param {().GetIamPolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/service.management',
+    *       'https://www.googleapis.com/auth/service.management.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.getConfig({
+    *     // Required. The id of the service configuration resource. This field must be specified for the server to return all fields, including `SourceInfo`.
+    *     configId: 'placeholder-value',
+    *     // Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
+    *     serviceName: 'placeholder-value',
+    *     // Specifies which parts of the Service Config should be returned in the response.
+    *     view: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "apis": [],
+    *   //   "authentication": {},
+    *   //   "backend": {},
+    *   //   "billing": {},
+    *   //   "configVersion": 0,
+    *   //   "context": {},
+    *   //   "control": {},
+    *   //   "customError": {},
+    *   //   "documentation": {},
+    *   //   "endpoints": [],
+    *   //   "enums": [],
+    *   //   "http": {},
+    *   //   "id": "my_id",
+    *   //   "logging": {},
+    *   //   "logs": [],
+    *   //   "metrics": [],
+    *   //   "monitoredResources": [],
+    *   //   "monitoring": {},
+    *   //   "name": "my_name",
+    *   //   "producerProjectId": "my_producerProjectId",
+    *   //   "quota": {},
+    *   //   "sourceInfo": {},
+    *   //   "systemParameters": {},
+    *   //   "systemTypes": [],
+    *   //   "title": "my_title",
+    *   //   "types": [],
+    *   //   "usage": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getConfig(params: ParamsResourceServicesGetconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getConfig(
+    params: ParamsResourceServicesGetconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -270,8 +469,8 @@ class ResourceServices protected () extends StObject {
   def getIamPolicy(params: ParamsResourceServicesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
     params: ParamsResourceServicesGetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def getIamPolicy(params: ParamsResourceServicesGetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
@@ -279,27 +478,79 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.list
-    * @desc Lists managed services.  Returns all public services. For
-    * authenticated users, also returns all services the calling user has
-    * "servicemanagement.services.get" permission for.  **BETA:** If the caller
-    * specifies the `consumer_id`, it returns only the services enabled on the
-    * consumer. The `consumer_id` must have the format of
-    * "project:{PROJECT-ID}".
-    * @alias servicemanagement.services.list
-    * @memberOf! ()
+    * Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.consumerId Include services consumed by the specified consumer.  The Google Service Management implementation accepts the following forms: - project:<project_id>
-    * @param {integer=} params.pageSize The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 100.
-    * @param {string=} params.pageToken Token identifying which result to start with; returned by a previous list call.
-    * @param {string=} params.producerProjectId Include services produced by the specified project.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/service.management',
+    *       'https://www.googleapis.com/auth/service.management.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.getIamPolicy({
+    *     // REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: 'services/my-service',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "options": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "auditConfigs": [],
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getIamPolicy(params: ParamsResourceServicesGetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getIamPolicy(
+    params: ParamsResourceServicesGetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
@@ -307,8 +558,8 @@ class ResourceServices protected () extends StObject {
   def list(params: ParamsResourceServicesList, callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(
     params: ParamsResourceServicesList,
-    options: BodyResponseCallback[SchemaListServicesResponse],
-    callback: BodyResponseCallback[SchemaListServicesResponse]
+    options: BodyResponseCallback[Readable | SchemaListServicesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListServicesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceServicesList, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(
@@ -316,23 +567,77 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
+  /**
+    * Lists managed services. Returns all public services. For authenticated users, also returns all services the calling user has "servicemanagement.services.get" permission for.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/service.management',
+    *       'https://www.googleapis.com/auth/service.management.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.list({
+    *     // Include services consumed by the specified consumer. The Google Service Management implementation accepts the following forms: - project:
+    *     consumerId: 'placeholder-value',
+    *     // The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 500.
+    *     pageSize: 'placeholder-value',
+    *     // Token identifying which result to start with; returned by a previous list call.
+    *     pageToken: 'placeholder-value',
+    *     // Include services produced by the specified project.
+    *     producerProjectId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "services": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceServicesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceServicesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var rollouts: ResourceServicesRollouts = js.native
   
-  /**
-    * servicemanagement.services.setIamPolicy
-    * @desc Sets the access control policy on the specified resource. Replaces
-    * any existing policy.
-    * @alias servicemanagement.services.setIamPolicy
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy is being specified. See the operation documentation for the appropriate value for this field.
-    * @param {().SetIamPolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -340,8 +645,8 @@ class ResourceServices protected () extends StObject {
   def setIamPolicy(params: ParamsResourceServicesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
     params: ParamsResourceServicesSetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def setIamPolicy(params: ParamsResourceServicesSetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
@@ -349,24 +654,78 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource. If
-    * the resource does not exist, this will return an empty set of
-    * permissions, not a NOT_FOUND error.  Note: This operation is designed to
-    * be used for building permission-aware UIs and command-line tools, not for
-    * authorization checking. This operation may "fail open" without warning.
-    * @alias servicemanagement.services.testIamPermissions
-    * @memberOf! ()
+    * Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field.
-    * @param {().TestIamPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/service.management',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.setIamPolicy({
+    *     // REQUIRED: The resource for which the policy is being specified. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: 'services/my-service',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "policy": {},
+    *       //   "updateMask": "my_updateMask"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "auditConfigs": [],
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setIamPolicy(params: ParamsResourceServicesSetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setIamPolicy(
+    params: ParamsResourceServicesSetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
@@ -377,8 +736,8 @@ class ResourceServices protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceServicesTestiampermissions,
-    options: BodyResponseCallback[SchemaTestIamPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceServicesTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
@@ -386,22 +745,76 @@ class ResourceServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
-  
   /**
-    * servicemanagement.services.undelete
-    * @desc Revives a previously deleted managed service. The method restores
-    * the service using the configuration at the time the service was deleted.
-    * The target service must exist and must have been deleted within the last
-    * 30 days.  Operation<response: UndeleteServiceResponse>
-    * @alias servicemanagement.services.undelete
-    * @memberOf! ()
+    * Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.serviceName The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/service.management',
+    *       'https://www.googleapis.com/auth/service.management.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.testIamPermissions({
+    *     // REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: 'services/my-service',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def testIamPermissions(params: ParamsResourceServicesTestiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceServicesTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def undelete(): GaxiosPromise[SchemaOperation] = js.native
   def undelete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -409,13 +822,76 @@ class ResourceServices protected () extends StObject {
   def undelete(params: ParamsResourceServicesUndelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def undelete(
     params: ParamsResourceServicesUndelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def undelete(params: ParamsResourceServicesUndelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def undelete(
     params: ParamsResourceServicesUndelete,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Revives a previously deleted managed service. The method restores the service using the configuration at the time the service was deleted. The target service must exist and must have been deleted within the last 30 days. Operation
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/servicemanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const servicemanagement = google.servicemanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/service.management',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await servicemanagement.services.undelete({
+    *     // Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
+    *     serviceName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def undelete(params: ParamsResourceServicesUndelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def undelete(
+    params: ParamsResourceServicesUndelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

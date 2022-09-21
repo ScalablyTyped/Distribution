@@ -1,12 +1,13 @@
 package typings.babylonjs
 
-import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.particleMod.Particle
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.uniformBufferEffectCommonAccessorMod.UniformBufferEffectCommonAccessor
+import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ object sphereParticleEmitterMod {
     * @param direction1 the min limit of the emission direction (up vector by default)
     * @param direction2 the max limit of the emission direction (up vector by default)
     */
-  class SphereDirectedParticleEmitter () extends SphereParticleEmitter {
+  open class SphereDirectedParticleEmitter () extends SphereParticleEmitter {
     def this(radius: Double) = this()
     def this(radius: Double, /**
       * The min limit of the emission direction.
@@ -90,9 +91,8 @@ object sphereParticleEmitterMod {
       * Called by the particle System when the direction is computed for the created particle.
       * @param worldMatrix is the world matrix of the particle system
       * @param directionToUpdate is the direction vector to update with the result
-      * @param particle is the particle we are computed the direction for
       */
-    def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit = js.native
+    def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3): Unit = js.native
   }
   
   @JSImport("babylonjs/Particles/EmitterTypes/sphereParticleEmitter", "SphereParticleEmitter")
@@ -103,7 +103,7 @@ object sphereParticleEmitterMod {
     * @param radiusRange the range of the emission sphere [0-1] 0 Surface only, 1 Entire Radius (1 by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1]
     */
-  class SphereParticleEmitter ()
+  open class SphereParticleEmitter ()
     extends StObject
        with IParticleEmitterType {
     def this(/**
@@ -189,10 +189,17 @@ object sphereParticleEmitterMod {
     
     /**
       * Called by the GPUParticleSystem to setup the update shader
-      * @param effect defines the update shader
+      * @param uboOrEffect defines the update shader
       */
     /* CompleteClass */
-    override def applyToShader(effect: Effect): Unit = js.native
+    override def applyToShader(uboOrEffect: UniformBufferEffectCommonAccessor): Unit = js.native
+    
+    /**
+      * Creates the structure of the ubo for this particle emitter
+      * @param ubo ubo to create the structure for
+      */
+    /* CompleteClass */
+    override def buildUniformLayout(ubo: UniformBuffer): Unit = js.native
     
     /**
       * How much to randomize the particle direction [0-1].
@@ -217,14 +224,14 @@ object sphereParticleEmitterMod {
       * Parse properties from a JSON object
       * @param serializationObject defines the JSON object
       */
-    def parse(serializationObject: js.Any): Unit = js.native
+    def parse(serializationObject: Any): Unit = js.native
     /**
       * Parse properties from a JSON object
       * @param serializationObject defines the JSON object
       * @param scene defines the hosting scene
       */
     /* CompleteClass */
-    override def parse(serializationObject: js.Any, scene: Nullable[Scene]): Unit = js.native
+    override def parse(serializationObject: Any, scene: Nullable[Scene]): Unit = js.native
     
     /**
       * The radius of the emission sphere.
@@ -241,7 +248,7 @@ object sphereParticleEmitterMod {
       * @returns the JSON object
       */
     /* CompleteClass */
-    override def serialize(): js.Any = js.native
+    override def serialize(): Any = js.native
     
     /**
       * Called by the particle System when the direction is computed for the created particle.
@@ -250,8 +257,23 @@ object sphereParticleEmitterMod {
       * @param particle is the particle we are computed the direction for
       * @param isLocal defines if the direction should be set in local space
       */
+    def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+    /**
+      * Called by the particle System when the direction is computed for the created particle.
+      * @param worldMatrix is the world matrix of the particle system
+      * @param directionToUpdate is the direction vector to update with the result
+      * @param particle is the particle we are computed the direction for
+      * @param isLocal defines if the direction should be set in local space
+      * @param inverseWorldMatrix defines the inverted world matrix to use if isLocal is false
+      */
     /* CompleteClass */
-    override def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+    override def startDirectionFunction(
+      worldMatrix: Matrix,
+      directionToUpdate: Vector3,
+      particle: Particle,
+      isLocal: Boolean,
+      inverseWorldMatrix: Matrix
+    ): Unit = js.native
     
     /**
       * Called by the particle System when the position is computed for the created particle.

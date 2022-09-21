@@ -1,5 +1,6 @@
 package typings.voximplantWebsdk.mod
 
+import typings.voximplantWebsdk.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   *    Get Client instance to use platform functions
   */
-inline def getInstance(): typings.voximplantWebsdk.mod.Client = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.voximplantWebsdk.mod.Client]
+inline def getInstance(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Client]
 
 /**
   *    VoxImplant Web SDK lib version
   */
-inline def version(): java.lang.String = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[java.lang.String]
+inline def version(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[String]

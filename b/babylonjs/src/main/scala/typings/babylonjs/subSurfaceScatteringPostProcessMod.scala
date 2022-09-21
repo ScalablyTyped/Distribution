@@ -14,7 +14,7 @@ object subSurfaceScatteringPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/subSurfaceScatteringPostProcess", "SubSurfaceScatteringPostProcess")
   @js.native
-  class SubSurfaceScatteringPostProcess protected () extends PostProcess {
+  open class SubSurfaceScatteringPostProcess protected () extends PostProcess {
     def this(
       name: String,
       scene: Scene,

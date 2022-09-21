@@ -16,6 +16,9 @@ trait UploadType extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. A client-assigned identifier such as "my-bucket". Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. */
+  var bucketId: js.UndefOr[String] = js.undefined
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -28,7 +31,7 @@ trait UploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the project in which to create the metric: "projects/[PROJECT_ID]" The new metric must be provided in the request. */
+  /** Required. The resource in which to create the log bucket: "projects/[PROJECT_ID]/locations/[LOCATION_ID]" For example:"projects/my-project/locations/global" */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -63,6 +66,10 @@ object UploadType {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
+    
+    inline def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

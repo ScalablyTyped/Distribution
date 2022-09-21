@@ -16,6 +16,27 @@ object AppEventsLogger {
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
   /**
+    * Returns advertiser id or null if not set
+    */
+  inline def getAdvertiserID(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdvertiserID")().asInstanceOf[js.Promise[String | Null]]
+  
+  /**
+    * Returns anonymous id or null if not set
+    */
+  inline def getAnonymousID(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnonymousID")().asInstanceOf[js.Promise[String | Null]]
+  
+  /**
+    * Returns advertiser id or null if not set.
+    * @platform android
+    */
+  inline def getAttributionID(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributionID")().asInstanceOf[js.Promise[String | Null]]
+  
+  /**
+    * Returns user id or null if not set
+    */
+  inline def getUserID(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserID")().asInstanceOf[js.Promise[String | Null]]
+  
+  /**
     * Logs an event with eventName and optional arguments.
     * This function supports the following usage:
     * logEvent(eventName: string);
@@ -24,7 +45,7 @@ object AppEventsLogger {
     * logEvent(eventName: string, valueToSum: number, parameters: {[key:string]:string|number});
     * See https://developers.facebook.com/docs/app-events/android for detail.
     */
-  inline def logEvent(eventName: String, args: (Double | Params)*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(eventName: String, args: (Double | Params)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * Logs a purchase. See http://en.wikipedia.org/wiki/ISO_4217 for currencyCode.

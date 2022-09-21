@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +14,11 @@ trait ProximitySensorReading extends StObject {
   var isDetected: Boolean
   
   /** Gets the time for the most recent proximity sensor reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object ProximitySensorReading {
   
-  inline def apply(distanceInMillimeters: Double, isDetected: Boolean, timestamp: Date): ProximitySensorReading = {
+  inline def apply(distanceInMillimeters: Double, isDetected: Boolean, timestamp: js.Date): ProximitySensorReading = {
     val __obj = js.Dynamic.literal(distanceInMillimeters = distanceInMillimeters.asInstanceOf[js.Any], isDetected = isDetected.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProximitySensorReading]
   }
@@ -30,6 +29,6 @@ object ProximitySensorReading {
     
     inline def setIsDetected(value: Boolean): Self = StObject.set(x, "isDetected", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -47,7 +47,7 @@ object typesListTablesOutputMod {
       
       inline def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
       
-      inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
+      inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "TableNames", js.Array(value*))
     }
   }
 }

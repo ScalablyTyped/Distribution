@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class ForceDirectedVertex () extends LayoutVertex {
+open class ForceDirectedVertex () extends LayoutVertex {
   
   /**Gets or sets the electrical charge for this vertex.*/
   var charge: Double = js.native

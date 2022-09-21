@@ -29,7 +29,17 @@ trait ResizeClusterMessage extends StObject {
   /**
     * The new number of nodes for the cluster. If not specified, the cluster's current number of nodes is used.
     */
-  var NumberOfNodes: js.UndefOr[Integer] = js.undefined
+  var NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * The identifier of the reserved node.
+    */
+  var ReservedNodeId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The identifier of the target reserved node offering.
+    */
+  var TargetReservedNodeOfferingId: js.UndefOr[String] = js.undefined
 }
 object ResizeClusterMessage {
   
@@ -54,8 +64,16 @@ object ResizeClusterMessage {
     
     inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    inline def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
+    inline def setNumberOfNodes(value: IntegerOptional): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
     inline def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
+    
+    inline def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
+    
+    inline def setReservedNodeIdUndefined: Self = StObject.set(x, "ReservedNodeId", js.undefined)
+    
+    inline def setTargetReservedNodeOfferingId(value: String): Self = StObject.set(x, "TargetReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetReservedNodeOfferingIdUndefined: Self = StObject.set(x, "TargetReservedNodeOfferingId", js.undefined)
   }
 }

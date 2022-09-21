@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object initialWindowNativeMod {
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/InitialWindow.native", "initialWindowMetrics")
+  @JSImport("react-native-safe-area-context/lib/typescript/InitialWindow.native", "initialWindowMetrics")
   @js.native
   val initialWindowMetrics: Metrics | Null = js.native
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/InitialWindow.native", "initialWindowSafeAreaInsets")
+  @JSImport("react-native-safe-area-context/lib/typescript/InitialWindow.native", "initialWindowSafeAreaInsets")
   @js.native
   val initialWindowSafeAreaInsets: js.UndefOr[EdgeInsets] = js.native
 }

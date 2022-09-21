@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineOfSightViewModelProperties extends StObject {
   
   /**
+    * The line of sight analysis object being created or modified by the view model.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html#analysis)
+    */
+  var analysis: js.UndefOr[LineOfSightAnalysisProperties] = js.undefined
+  
+  /**
     * The observer's viewpoint from which lines of sight will be drawn towards the targets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html#observer)
@@ -36,6 +43,10 @@ object LineOfSightViewModelProperties {
   
   extension [Self <: LineOfSightViewModelProperties](x: Self) {
     
+    inline def setAnalysis(value: LineOfSightAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
+    
+    inline def setAnalysisUndefined: Self = StObject.set(x, "analysis", js.undefined)
+    
     inline def setObserver(value: PointProperties): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
     inline def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
@@ -44,7 +55,7 @@ object LineOfSightViewModelProperties {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: LineOfSightTargetProperties*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: LineOfSightTargetProperties*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait TransitionState extends StObject {
   /**
     * The timestamp when the transition state was last changed.
     */
-  var lastChangedAt: js.UndefOr[LastChangedAt] = js.undefined
+  var lastChangedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the user who last changed the transition state.
@@ -43,7 +43,7 @@ object TransitionState {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setLastChangedAt(value: LastChangedAt): Self = StObject.set(x, "lastChangedAt", value.asInstanceOf[js.Any])
+    inline def setLastChangedAt(value: js.Date): Self = StObject.set(x, "lastChangedAt", value.asInstanceOf[js.Any])
     
     inline def setLastChangedAtUndefined: Self = StObject.set(x, "lastChangedAt", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "TransitionAnimator")
 @js.native
-class TransitionAnimator () extends Animator {
+open class TransitionAnimator () extends Animator {
   
   def add(txn: Transition): Unit = js.native
   

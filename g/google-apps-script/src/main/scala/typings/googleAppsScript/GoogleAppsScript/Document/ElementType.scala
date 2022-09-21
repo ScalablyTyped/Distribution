@@ -32,6 +32,11 @@ object ElementType extends StObject {
        with ElementType
   
   @js.native
+  sealed trait DATE
+    extends StObject
+       with ElementType
+  
+  @js.native
   sealed trait DOCUMENT
     extends StObject
        with ElementType
@@ -103,6 +108,16 @@ object ElementType extends StObject {
   
   @js.native
   sealed trait PARAGRAPH
+    extends StObject
+       with ElementType
+  
+  @js.native
+  sealed trait PERSON
+    extends StObject
+       with ElementType
+  
+  @js.native
+  sealed trait RICH_LINK
     extends StObject
        with ElementType
   

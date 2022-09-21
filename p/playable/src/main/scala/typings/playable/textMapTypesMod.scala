@@ -13,14 +13,14 @@ object textMapTypesMod {
     def destroy(): Unit = js.native
     
     def get(id: String): String = js.native
-    def get(id: String, args: js.Any): String = js.native
-    def get(id: String, args: js.Any, defaultText: String): String = js.native
-    def get(id: String, args: js.Any, defaultText: js.Function): String = js.native
+    def get(id: String, args: Any): String = js.native
+    def get(id: String, args: Any, defaultText: String): String = js.native
+    def get(id: String, args: Any, defaultText: js.Function): String = js.native
     def get(id: String, args: Unit, defaultText: String): String = js.native
     def get(id: String, args: Unit, defaultText: js.Function): String = js.native
   }
   
   type ITextMapConfig = StringDictionary[String | TextResolver]
   
-  type TextResolver = js.Function1[/* args */ js.Any, String]
+  type TextResolver = js.Function1[/* args */ Any, String]
 }

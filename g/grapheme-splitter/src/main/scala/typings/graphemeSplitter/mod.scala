@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("grapheme-splitter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with GraphemeSplitter {
     

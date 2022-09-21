@@ -37,6 +37,6 @@ object ListScramSecretsResponse {
     
     inline def setSecretArnListUndefined: Self = StObject.set(x, "SecretArnList", js.undefined)
     
-    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
+    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value*))
   }
 }

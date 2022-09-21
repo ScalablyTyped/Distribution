@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-Plugin to inject CDN assets into HTML documents
+Plugin to inject CDN script blocks to DOM
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | webpack-cdn-inject |
 | Keywords           | webpack, cdn, html, webpack cdn, webpack html cdn, webpack cdn plugin |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 4338 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 258.3333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/drolsen/webpack-cdn-inject#readme)

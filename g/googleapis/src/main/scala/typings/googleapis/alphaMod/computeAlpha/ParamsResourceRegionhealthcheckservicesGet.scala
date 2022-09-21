@@ -1,8 +1,5 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +9,7 @@ trait ParamsResourceRegionhealthcheckservicesGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the HealthCheckService to update. The name must be 1-63
-    * characters long, and comply with RFC1035.
+    * Name of the HealthCheckService to update. The name must be 1-63 characters long, and comply with RFC1035.
     */
   var healthCheckService: js.UndefOr[String] = js.undefined
   
@@ -40,10 +31,6 @@ object ParamsResourceRegionhealthcheckservicesGet {
   }
   
   extension [Self <: ParamsResourceRegionhealthcheckservicesGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setHealthCheckService(value: String): Self = StObject.set(x, "healthCheckService", value.asInstanceOf[js.Any])
     

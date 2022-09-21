@@ -29,12 +29,12 @@ object BatchGetNamedQueryOutput {
     
     inline def setNamedQueriesUndefined: Self = StObject.set(x, "NamedQueries", js.undefined)
     
-    inline def setNamedQueriesVarargs(value: NamedQuery*): Self = StObject.set(x, "NamedQueries", js.Array(value :_*))
+    inline def setNamedQueriesVarargs(value: NamedQuery*): Self = StObject.set(x, "NamedQueries", js.Array(value*))
     
     inline def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = StObject.set(x, "UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedNamedQueryIdsUndefined: Self = StObject.set(x, "UnprocessedNamedQueryIds", js.undefined)
     
-    inline def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = StObject.set(x, "UnprocessedNamedQueryIds", js.Array(value :_*))
+    inline def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = StObject.set(x, "UnprocessedNamedQueryIds", js.Array(value*))
   }
 }

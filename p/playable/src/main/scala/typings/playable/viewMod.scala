@@ -8,7 +8,7 @@ object viewMod {
   
   @JSImport("playable/dist/src/modules/ui/core/view", JSImport.Default)
   @js.native
-  class default[TStyles] () extends View[TStyles]
+  open class default[TStyles] () extends View[TStyles]
   
   @js.native
   trait View[TStyles]

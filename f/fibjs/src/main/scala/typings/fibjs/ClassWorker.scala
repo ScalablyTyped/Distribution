@@ -28,5 +28,5 @@ trait ClassWorker
     * 
     * 
     */
-  def postMessage(data: js.Any): Unit = js.native
+  def postMessage(data: Any): Unit = js.native
 }

@@ -11,9 +11,9 @@ trait Sheet
   extends StObject
      with Observable {
   
-  def batch(callback: js.Function, changeEventArgs: js.Any): Unit = js.native
+  def batch(callback: js.Function, changeEventArgs: Any): Unit = js.native
   
-  def clearFilter(indexes: js.Any): Unit = js.native
+  def clearFilter(indexes: Any): Unit = js.native
   def clearFilter(indexes: Double): Unit = js.native
   
   def columnWidth(): Unit = js.native
@@ -24,7 +24,7 @@ trait Sheet
   
   def deleteRow(index: Double): Unit = js.native
   
-  def fromJSON(data: js.Any): Unit = js.native
+  def fromJSON(data: Any): Unit = js.native
   
   def frozenColumns(): Unit = js.native
   def frozenColumns(count: Double): Unit = js.native
@@ -59,7 +59,7 @@ trait Sheet
   def selection(): Range = js.native
   
   def setDataSource(dataSource: DataSource): Unit = js.native
-  def setDataSource(dataSource: DataSource, columns: js.Any): Unit = js.native
+  def setDataSource(dataSource: DataSource, columns: Any): Unit = js.native
   
   def showGridLines(): Unit = js.native
   def showGridLines(showGridLines: Boolean): Unit = js.native

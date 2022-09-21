@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.anon.Maximum
 import typings.babylonjs.boundingInfoMod.BoundingInfo
 import typings.babylonjs.bufferMod.VertexBuffer
@@ -17,6 +18,7 @@ import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
+import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +27,7 @@ object geometryMod {
   
   @JSImport("babylonjs/Meshes/geometry", "Geometry")
   @js.native
-  class Geometry protected ()
+  open class Geometry protected ()
     extends StObject
        with IGetSetVerticesData {
     /**
@@ -36,22 +38,68 @@ object geometryMod {
       * @param updatable defines if geometry must be updatable (false by default)
       * @param mesh defines the mesh that will be associated with the geometry
       */
+    def this(id: String) = this()
     def this(id: String, scene: Scene) = this()
+    def this(id: String, scene: Unit, vertexData: VertexData) = this()
     def this(id: String, scene: Scene, vertexData: VertexData) = this()
+    def this(id: String, scene: Unit, vertexData: Unit, updatable: Boolean) = this()
+    def this(id: String, scene: Unit, vertexData: VertexData, updatable: Boolean) = this()
     def this(id: String, scene: Scene, vertexData: Unit, updatable: Boolean) = this()
     def this(id: String, scene: Scene, vertexData: VertexData, updatable: Boolean) = this()
+    def this(id: String, scene: Unit, vertexData: Unit, updatable: Boolean, mesh: Nullable[Mesh]) = this()
+    def this(id: String, scene: Unit, vertexData: Unit, updatable: Unit, mesh: Nullable[Mesh]) = this()
+    def this(id: String, scene: Unit, vertexData: VertexData, updatable: Boolean, mesh: Nullable[Mesh]) = this()
+    def this(id: String, scene: Unit, vertexData: VertexData, updatable: Unit, mesh: Nullable[Mesh]) = this()
     def this(id: String, scene: Scene, vertexData: Unit, updatable: Boolean, mesh: Nullable[Mesh]) = this()
     def this(id: String, scene: Scene, vertexData: Unit, updatable: Unit, mesh: Nullable[Mesh]) = this()
     def this(id: String, scene: Scene, vertexData: VertexData, updatable: Boolean, mesh: Nullable[Mesh]) = this()
     def this(id: String, scene: Scene, vertexData: VertexData, updatable: Unit, mesh: Nullable[Mesh]) = this()
     
-    /* private */ var _applyToMesh: js.Any = js.native
+    /* private */ var _applyToMesh: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param effect
+      * @param indexToBind
+      * @hidden
+      */
     def _bind(effect: Nullable[Effect]): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Unit,
+      overrideVertexBuffers: StringDictionary[Nullable[VertexBuffer]]
+    ): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Unit,
+      overrideVertexBuffers: StringDictionary[Nullable[VertexBuffer]],
+      overrideVertexArrayObjects: StringDictionary[WebGLVertexArrayObject]
+    ): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Unit,
+      overrideVertexBuffers: Unit,
+      overrideVertexArrayObjects: StringDictionary[WebGLVertexArrayObject]
+    ): Unit = js.native
     def _bind(effect: Nullable[Effect], indexToBind: Nullable[DataBuffer]): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Nullable[DataBuffer],
+      overrideVertexBuffers: StringDictionary[Nullable[VertexBuffer]]
+    ): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Nullable[DataBuffer],
+      overrideVertexBuffers: StringDictionary[Nullable[VertexBuffer]],
+      overrideVertexArrayObjects: StringDictionary[WebGLVertexArrayObject]
+    ): Unit = js.native
+    def _bind(
+      effect: Nullable[Effect],
+      indexToBind: Nullable[DataBuffer],
+      overrideVertexBuffers: Unit,
+      overrideVertexArrayObjects: StringDictionary[WebGLVertexArrayObject]
+    ): Unit = js.native
     
-    /* private */ var _boundingBias: js.Any = js.native
+    /* private */ var _boundingBias: Any = js.native
     
     /** @hidden */
     var _boundingInfo: Nullable[BoundingInfo] = js.native
@@ -60,59 +108,72 @@ object geometryMod {
     var _delayInfo: js.Array[String] = js.native
     
     /** @hidden */
-    var _delayLoadingFunction: Nullable[js.Function2[/* any */ js.Any, /* geometry */ this.type, Unit]] = js.native
+    var _delayLoadingFunction: Nullable[js.Function2[/* any */ Any, /* geometry */ this.type, Unit]] = js.native
     
-    /* private */ var _disposeVertexArrayObjects: js.Any = js.native
+    /* private */ var _disposeVertexArrayObjects: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _extend: js.Any = js.native
+    /* private */ var _extend: Any = js.native
     
     /** @hidden */
     def _generatePointsArray(): Boolean = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
     
-    /* private */ var _indexBufferIsUpdatable: js.Any = js.native
+    /* private */ var _indexBufferIsUpdatable: Any = js.native
     
     /** @hidden */
     var _indices: IndicesArray = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _meshes: js.Any = js.native
+    /** @hidden */
+    var _loadedUniqueId: String = js.native
+    
+    /* private */ var _meshes: Any = js.native
+    
+    /* private */ var _notifyUpdate: Any = js.native
+    
+    /** @hidden */
+    var _parentContainer: Nullable[AbstractScene] = js.native
     
     /** @hidden */
     var _positions: Nullable[js.Array[Vector3]] = js.native
     
-    /* private */ var _positionsCache: js.Any = js.native
+    /* private */ var _positionsCache: Any = js.native
     
-    /* private */ var _queueLoad: js.Any = js.native
+    /* private */ var _queueLoad: Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param effect
+      * @hidden
+      */
     def _releaseVertexArrayObject(): Unit = js.native
     def _releaseVertexArrayObject(effect: Nullable[Effect]): Unit = js.native
     
     /** @hidden */
     def _resetPointsArrayCache(): Unit = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /** @hidden */
     var _softwareSkinningFrameId: Double = js.native
     
-    /* private */ var _totalVertices: js.Any = js.native
+    /* private */ var _toNumberArray: Any = js.native
     
-    /* private */ var _updatable: js.Any = js.native
+    /* private */ var _totalVertices: Any = js.native
     
-    /* private */ var _updateBoundingInfo: js.Any = js.native
+    /* private */ var _updatable: Any = js.native
     
-    /* private */ var _updateExtend: js.Any = js.native
+    /* private */ var _updateBoundingInfo: Any = js.native
     
-    /* private */ var _vertexArrayObjects: js.Any = js.native
+    /* private */ var _updateExtend: Any = js.native
+    
+    /* private */ var _vertexArrayObjects: Any = js.native
     
     /** @hidden */
     var _vertexBuffers: StringDictionary[VertexBuffer] = js.native
@@ -131,6 +192,14 @@ object geometryMod {
       *  Gets or sets the Bias Vector to apply on the bounding elements (box/sphere), the max extend is computed as v += v * bias.x + bias.y, the min is computed as v -= v * bias.x + bias.y
       */
     def boundingBias_=(value: Vector2): Unit = js.native
+    
+    /**
+      * Release any memory retained by the cached data on the Geometry.
+      *
+      * Call this function to reduce memory footprint of the mesh.
+      * Vertex buffers will not store CPU data anymore (this will prevent picking, collisions or physics to work correctly)
+      */
+    def clearCachedData(): Unit = js.native
     
     /**
       * Clone the current geometry into a new geometry
@@ -172,7 +241,7 @@ object geometryMod {
     
     /**
       * Gets the index buffer
-      * @return the index buffer
+      * @returns the index buffer
       */
     def getIndexBuffer(): Nullable[DataBuffer] = js.native
     
@@ -203,7 +272,7 @@ object geometryMod {
     
     /**
       * Returns all vertex buffers
-      * @return an object holding all vertex buffers indexed by kind
+      * @returns an object holding all vertex buffers indexed by kind
       */
     def getVertexBuffers(): Nullable[StringDictionary[VertexBuffer]] = js.native
     
@@ -248,8 +317,6 @@ object geometryMod {
     /** Get the list of meshes using this geometry */
     def meshes: js.Array[Mesh] = js.native
     
-    /* private */ var notifyUpdate: js.Any = js.native
-    
     /**
       * Callback called when the geometry is updated
       */
@@ -272,15 +339,15 @@ object geometryMod {
     
     /**
       * Serialize the current geometry info (and not the vertices data) into a JSON object
-      * @return a JSON representation of the current geometry data (without the vertices data)
+      * @returns a JSON representation of the current geometry data (without the vertices data)
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
-      * Serialize all vertices data into a JSON oject
+      * Serialize all vertices data into a JSON object
       * @returns a JSON representation of the current geometry data
       */
-    def serializeVerticeData(): js.Any = js.native
+    def serializeVerticeData(): Any = js.native
     
     /**
       * Affects all geometry data in one call
@@ -303,9 +370,12 @@ object geometryMod {
       * Affect a vertex buffer to the geometry. the vertexBuffer.getKind() function is used to determine where to store the data
       * @param buffer defines the vertex buffer to use
       * @param totalVertices defines the total number of vertices for position kind (could be null)
+      * @param disposeExistingBuffer disposes the existing buffer, if any (default: true)
       */
     def setVerticesBuffer(buffer: VertexBuffer): Unit = js.native
+    def setVerticesBuffer(buffer: VertexBuffer, totalVertices: Unit, disposeExistingBuffer: Boolean): Unit = js.native
     def setVerticesBuffer(buffer: VertexBuffer, totalVertices: Nullable[Double]): Unit = js.native
+    def setVerticesBuffer(buffer: VertexBuffer, totalVertices: Nullable[Double], disposeExistingBuffer: Boolean): Unit = js.native
     
     /**
       * Set specific vertex data
@@ -322,8 +392,6 @@ object geometryMod {
       * Invert the geometry to move from a right handed system to a left handed one.
       */
     def toLeftHanded(): Unit = js.native
-    
-    /* private */ var toNumberArray: js.Any = js.native
     
     /**
       * Gets or sets the unique ID of the geometry
@@ -354,7 +422,7 @@ object geometryMod {
     def updateVerticesDataDirectly(kind: String, data: DataArray, offset: Double, useBytes: Boolean): Unit = js.native
     
     /**
-      * If set to true (false by defaut), the bounding info applied to the meshes sharing this geometry will be the bounding info defined at the class level
+      * If set to true (false by default), the bounding info applied to the meshes sharing this geometry will be the bounding info defined at the class level
       * and won't be computed based on the vertex positions (which is what we get when useBoundingInfoFromGeometry = false)
       */
     var useBoundingInfoFromGeometry: Boolean = js.native
@@ -388,7 +456,7 @@ object geometryMod {
       * @param rootUrl defines the root url to use to load assets (like delayed data)
       * @returns the new geometry object
       */
-    inline def Parse(parsedVertexData: js.Any, scene: Scene, rootUrl: String): Nullable[Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedVertexData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Geometry]]
+    inline def Parse(parsedVertexData: Any, scene: Scene, rootUrl: String): Nullable[Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedVertexData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Geometry]]
     
     /**
       * You should now use Tools.RandomId(), this method is still here for legacy reasons.
@@ -401,10 +469,19 @@ object geometryMod {
     
     @JSImport("babylonjs/Meshes/geometry", "Geometry._CleanMatricesWeights")
     @js.native
-    def _CleanMatricesWeights: js.Any = js.native
-    inline def _CleanMatricesWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
+    def _CleanMatricesWeights: Any = js.native
+    inline def _CleanMatricesWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
-    inline def _ImportGeometry(parsedGeometry: js.Any, mesh: Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @JSImport("babylonjs/Meshes/geometry", "Geometry._GetGeometryByLoadedUniqueId")
+    @js.native
+    def _GetGeometryByLoadedUniqueId: Any = js.native
+    inline def _GetGeometryByLoadedUniqueId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetGeometryByLoadedUniqueId")(x.asInstanceOf[js.Any])
+    
+    /**
+      * @param parsedGeometry
+      * @param mesh
+      * @hidden
+      */
+    inline def _ImportGeometry(parsedGeometry: Any, mesh: Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

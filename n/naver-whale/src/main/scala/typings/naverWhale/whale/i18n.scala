@@ -59,7 +59,7 @@ object i18n {
       
       inline def setLanguages(value: js.Array[typings.chrome.chrome.i18n.DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      inline def setLanguagesVarargs(value: typings.chrome.chrome.i18n.DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: typings.chrome.chrome.i18n.DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value*))
     }
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.IonWorldImageryStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Style extends StObject {
   
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[IonWorldImageryStyle] = js.undefined
 }
 object Style {
   
@@ -17,7 +18,7 @@ object Style {
   
   extension [Self <: Style](x: Self) {
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: IonWorldImageryStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

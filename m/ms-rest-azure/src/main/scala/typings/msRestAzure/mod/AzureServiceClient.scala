@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "AzureServiceClient")
 @js.native
-class AzureServiceClient protected () extends ServiceClient {
+open class AzureServiceClient protected () extends ServiceClient {
   /**
     * @class
     * Initializes a new instance of the AzureServiceClient class.

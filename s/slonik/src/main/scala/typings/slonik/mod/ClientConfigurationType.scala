@@ -39,7 +39,7 @@ trait ClientConfigurationType extends StObject {
   /**
     * An array of [Slonik type parsers](https://github.com/gajus/slonik#slonik-type-parsers)
     */
-  var typeParsers: js.UndefOr[js.Array[TypeParserType[js.Any]]] = js.undefined
+  var typeParsers: js.UndefOr[js.Array[TypeParserType[Any]]] = js.undefined
 }
 object ClientConfigurationType {
   
@@ -74,7 +74,7 @@ object ClientConfigurationType {
     
     inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
     
-    inline def setInterceptorsVarargs(value: InterceptorType*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+    inline def setInterceptorsVarargs(value: InterceptorType*): Self = StObject.set(x, "interceptors", js.Array(value*))
     
     inline def setMaximumPoolSize(value: Double): Self = StObject.set(x, "maximumPoolSize", value.asInstanceOf[js.Any])
     
@@ -88,10 +88,10 @@ object ClientConfigurationType {
     
     inline def setStatementTimeoutUndefined: Self = StObject.set(x, "statementTimeout", js.undefined)
     
-    inline def setTypeParsers(value: js.Array[TypeParserType[js.Any]]): Self = StObject.set(x, "typeParsers", value.asInstanceOf[js.Any])
+    inline def setTypeParsers(value: js.Array[TypeParserType[Any]]): Self = StObject.set(x, "typeParsers", value.asInstanceOf[js.Any])
     
     inline def setTypeParsersUndefined: Self = StObject.set(x, "typeParsers", js.undefined)
     
-    inline def setTypeParsersVarargs(value: TypeParserType[js.Any]*): Self = StObject.set(x, "typeParsers", js.Array(value :_*))
+    inline def setTypeParsersVarargs(value: TypeParserType[Any]*): Self = StObject.set(x, "typeParsers", js.Array(value*))
   }
 }

@@ -16,7 +16,7 @@ trait Conflicts extends StObject {
   
   def Item(Index: Double): Conflict
   
-  val Parent: js.Any
+  val Parent: Any
   
   def RejectAll(): Unit
   
@@ -31,7 +31,7 @@ object Conflicts {
     Count: Double,
     Creator: Double,
     Item: Double => Conflict,
-    Parent: js.Any,
+    Parent: Any,
     RejectAll: () => Unit,
     WordDotConflicts_typekey: Conflicts
   ): Conflicts = {
@@ -52,7 +52,7 @@ object Conflicts {
     
     inline def setItem(value: Double => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRejectAll(value: () => Unit): Self = StObject.set(x, "RejectAll", js.Any.fromFunction0(value))
     

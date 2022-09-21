@@ -15,12 +15,12 @@ trait DescribeStreamInputwaiter extends StObject {
   var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
-    * The shard ID of the shard to start with.
+    * The shard ID of the shard to start with. Specify this parameter to indicate that you want to describe the stream starting with the shard whose ID immediately follows ExclusiveStartShardId. If you don't specify this parameter, the default behavior for DescribeStream is to describe the stream starting with the first shard in the stream.
     */
   var ExclusiveStartShardId: js.UndefOr[ShardId] = js.undefined
   
   /**
-    * The maximum number of shards to return in a single call. The default value is 100. If you specify a value greater than 100, at most 100 shards are returned.
+    * The maximum number of shards to return in a single call. The default value is 100. If you specify a value greater than 100, at most 100 results are returned.
     */
   var Limit: js.UndefOr[DescribeStreamInputLimit] = js.undefined
   

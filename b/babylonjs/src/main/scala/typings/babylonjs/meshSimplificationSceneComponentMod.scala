@@ -13,7 +13,7 @@ object meshSimplificationSceneComponentMod {
   
   @JSImport("babylonjs/Meshes/meshSimplificationSceneComponent", "SimplicationQueueSceneComponent")
   @js.native
-  class SimplicationQueueSceneComponent protected ()
+  open class SimplicationQueueSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -22,7 +22,7 @@ object meshSimplificationSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _beforeCameraUpdate: js.Any = js.native
+    /* private */ var _beforeCameraUpdate: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

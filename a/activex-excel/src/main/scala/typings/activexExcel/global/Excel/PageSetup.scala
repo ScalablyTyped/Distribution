@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PageSetup")
 @js.native
-/* private */ class PageSetup ()
+/* private */ open class PageSetup ()
   extends StObject
      with typings.activexExcel.Excel.PageSetup {
   
@@ -123,7 +123,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PaperSize: XlPaperSize = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PrintArea: String = js.native
@@ -144,11 +144,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PrintNotes: Boolean = js.native
   
   /* CompleteClass */
-  @JSName("PrintQuality")
-  override def PrintQuality_1(Index: `1`): Double = js.native
-  /* CompleteClass */
-  @JSName("PrintQuality")
-  override def PrintQuality_2(Index: `2`): Double = js.native
+  override def PrintQuality(Index: `1` | `2`): Double = js.native
   /* CompleteClass */
   @JSName("PrintQuality")
   var PrintQuality_Original: SafeArray[Double] & (js.Function1[/* Index */ `1` | `2`, Double]) = js.native

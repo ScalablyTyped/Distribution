@@ -60,7 +60,7 @@ trait AreaChartOptions extends StObject {
   
   var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[Any] = js.undefined
   
   var theme: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ trait AreaChartOptions extends StObject {
   
   var tooltip: js.UndefOr[ChartTooltip] = js.undefined
   
-  var vAxes: js.UndefOr[js.Any] = js.undefined
+  var vAxes: js.UndefOr[Any] = js.undefined
   
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
   
@@ -119,7 +119,7 @@ object AreaChartOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setCrosshair(value: ChartCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
     
@@ -189,7 +189,7 @@ object AreaChartOptions {
     
     inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
-    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
@@ -213,7 +213,7 @@ object AreaChartOptions {
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setVAxes(value: js.Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
+    inline def setVAxes(value: Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
     
     inline def setVAxesUndefined: Self = StObject.set(x, "vAxes", js.undefined)
     

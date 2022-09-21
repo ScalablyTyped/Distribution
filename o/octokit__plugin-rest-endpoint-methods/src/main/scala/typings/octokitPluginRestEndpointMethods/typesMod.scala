@@ -10,7 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type Api = RestEndpointMethods
+  trait Api extends StObject {
+    
+    var rest: RestEndpointMethods
+  }
+  object Api {
+    
+    inline def apply(rest: RestEndpointMethods): Api = {
+      val __obj = js.Dynamic.literal(rest = rest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Api]
+    }
+    
+    extension [Self <: Api](x: Self) {
+      
+      inline def setRest(value: RestEndpointMethods): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait EndpointDecorations extends StObject {
     

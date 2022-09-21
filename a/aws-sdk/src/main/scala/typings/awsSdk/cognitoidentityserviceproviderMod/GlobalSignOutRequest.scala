@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalSignOutRequest extends StObject {
   
   /**
-    * The access token.
+    * A valid access token that Amazon Cognito issued to the user who you want to sign out.
     */
   var AccessToken: TokenModelType
 }

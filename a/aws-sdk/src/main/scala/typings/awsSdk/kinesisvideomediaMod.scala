@@ -5,10 +5,8 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object kinesisvideomediaMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends KinesisVideoMedia {
+  open class ^ () extends KinesisVideoMedia {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -146,7 +144,7 @@ object kinesisvideomediaMod {
     def getMedia(params: GetMediaInput, callback: js.Function2[/* err */ AWSError, /* data */ GetMediaOutput, Unit]): Request[GetMediaOutput, AWSError] = js.native
   }
   
-  type Payload = Buffer | Uint8Array | Blob | String | Readable
+  type Payload = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
   
   type ResourceARN = String
   
@@ -170,7 +168,7 @@ object kinesisvideomediaMod {
     /**
       * A timestamp value. This value is required if you choose the PRODUCER_TIMESTAMP or the SERVER_TIMESTAMP as the startSelectorType. The GetMedia API then starts with the chunk containing the fragment that has the specified timestamp.
       */
-    var StartTimestamp: js.UndefOr[Timestamp] = js.undefined
+    var StartTimestamp: js.UndefOr[js.Date] = js.undefined
   }
   object StartSelector {
     
@@ -191,7 +189,7 @@ object kinesisvideomediaMod {
       
       inline def setStartSelectorType(value: StartSelectorType): Self = StObject.set(x, "StartSelectorType", value.asInstanceOf[js.Any])
       
-      inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
       
       inline def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
     }
@@ -210,7 +208,7 @@ object kinesisvideomediaMod {
   
   type StreamName = String
   
-  type Timestamp = Date
+  type Timestamp = js.Date
   
   trait _StartSelectorType extends StObject
   

@@ -1,6 +1,5 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait BootstrapSchedulerRecurrenceInfo extends StObject {
   
   def getDuration(): Double
   
-  def getEnd(): Date
+  def getEnd(): js.Date
   
   def getMonth(): Double
   
@@ -23,19 +22,19 @@ trait BootstrapSchedulerRecurrenceInfo extends StObject {
   
   def getRecurrenceType(): BootstrapSchedulerRecurrenceType
   
-  def getStart(): Date
+  def getStart(): js.Date
   
   def getWeekDays(): WeekDays
   
   def getWeekOfMonth(): WeekOfMonth
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   def setDayNumber(dayNumber: Double): Unit
   
   def setDuration(duration: Double): Unit
   
-  def setEnd(end: Date): Unit
+  def setEnd(end: js.Date): Unit
   
   def setMonth(month: Double): Unit
   
@@ -47,7 +46,7 @@ trait BootstrapSchedulerRecurrenceInfo extends StObject {
   
   def setRecurrenceType(`type`: BootstrapSchedulerRecurrenceType): Unit
   
-  def setStart(start: Date): Unit
+  def setStart(start: js.Date): Unit
   
   def setWeekDays(weekDays: WeekDays): Unit
   
@@ -58,25 +57,25 @@ object BootstrapSchedulerRecurrenceInfo {
   inline def apply(
     getDayNumber: () => Double,
     getDuration: () => Double,
-    getEnd: () => Date,
+    getEnd: () => js.Date,
     getMonth: () => Double,
     getOccurrenceCount: () => Double,
     getPeriodicity: () => Double,
     getRange: () => BootstrapSchedulerRecurrenceRange,
     getRecurrenceType: () => BootstrapSchedulerRecurrenceType,
-    getStart: () => Date,
+    getStart: () => js.Date,
     getWeekDays: () => WeekDays,
     getWeekOfMonth: () => WeekOfMonth,
-    instance: js.Any,
+    instance: Any,
     setDayNumber: Double => Unit,
     setDuration: Double => Unit,
-    setEnd: Date => Unit,
+    setEnd: js.Date => Unit,
     setMonth: Double => Unit,
     setOccurrenceCount: Double => Unit,
     setPeriodicity: Double => Unit,
     setRange: BootstrapSchedulerRecurrenceRange => Unit,
     setRecurrenceType: BootstrapSchedulerRecurrenceType => Unit,
-    setStart: Date => Unit,
+    setStart: js.Date => Unit,
     setWeekDays: WeekDays => Unit,
     setWeekOfMonth: WeekOfMonth => Unit
   ): BootstrapSchedulerRecurrenceInfo = {
@@ -90,7 +89,7 @@ object BootstrapSchedulerRecurrenceInfo {
     
     inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
-    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => js.Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     inline def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
     
@@ -102,19 +101,19 @@ object BootstrapSchedulerRecurrenceInfo {
     
     inline def setGetRecurrenceType(value: () => BootstrapSchedulerRecurrenceType): Self = StObject.set(x, "getRecurrenceType", js.Any.fromFunction0(value))
     
-    inline def setGetStart(value: () => Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => js.Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     inline def setGetWeekDays(value: () => WeekDays): Self = StObject.set(x, "getWeekDays", js.Any.fromFunction0(value))
     
     inline def setGetWeekOfMonth(value: () => WeekOfMonth): Self = StObject.set(x, "getWeekOfMonth", js.Any.fromFunction0(value))
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setSetDayNumber(value: Double => Unit): Self = StObject.set(x, "setDayNumber", js.Any.fromFunction1(value))
     
     inline def setSetDuration(value: Double => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
-    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: js.Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
     
     inline def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
     
@@ -126,7 +125,7 @@ object BootstrapSchedulerRecurrenceInfo {
     
     inline def setSetRecurrenceType(value: BootstrapSchedulerRecurrenceType => Unit): Self = StObject.set(x, "setRecurrenceType", js.Any.fromFunction1(value))
     
-    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: js.Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
     
     inline def setSetWeekDays(value: WeekDays => Unit): Self = StObject.set(x, "setWeekDays", js.Any.fromFunction1(value))
     

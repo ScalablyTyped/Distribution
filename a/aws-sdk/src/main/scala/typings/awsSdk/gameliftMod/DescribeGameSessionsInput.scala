@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeGameSessionsInput extends StObject {
   
   /**
-    * A unique identifier for an alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
+    * A unique identifier for the alias associated with the fleet to retrieve game sessions for. You can use either the alias ID or ARN value.
     */
   var AliasId: js.UndefOr[AliasIdOrArn] = js.undefined
   
   /**
-    * A unique identifier for a fleet to retrieve all game sessions for. You can use either the fleet ID or ARN value. 
+    * A unique identifier for the fleet to retrieve game sessions for. You can use either the fleet ID or ARN value. 
     */
   var FleetId: js.UndefOr[FleetIdOrArn] = js.undefined
   
@@ -27,12 +27,17 @@ trait DescribeGameSessionsInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
+    * A fleet location to get game session details for. You can specify a fleet's home Region or a remote location. Use the Amazon Web Services Region code format, such as us-west-2. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
+  
+  /**
+    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Game session status to filter results on. Possible game session statuses include ACTIVE, TERMINATED, ACTIVATING, and TERMINATING (the last two are transitory). 
+    * Game session status to filter results on. You can filter on the following states: ACTIVE, TERMINATED, ACTIVATING, and TERMINATING. The last two are transitory and used for only very brief periods of time. 
     */
   var StatusFilter: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
@@ -60,6 +65,10 @@ object DescribeGameSessionsInput {
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

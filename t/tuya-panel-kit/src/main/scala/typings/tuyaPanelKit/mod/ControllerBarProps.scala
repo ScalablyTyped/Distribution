@@ -17,20 +17,102 @@ trait ControllerBarProps
   extends StObject
      with ViewProps {
   
+  /**
+    * @language zh-CN
+    * @description 背景颜色
+    * @defaultValue '#fff'
+    */
+  /**
+    * @language en-US
+    * @description Background color
+    * @defaultValue '#fff'
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 背景的透明类型
+    * @defaultValue 'pure'
+    */
+  /**
+    * @language en-US
+    * @description Transparent type of background
+    * @defaultValue 'pure'
+    */
   var backgroundType: js.UndefOr[alpha | pure] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 底部栏内的按钮
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Buttons in the controllerBar
+    * @defaultValue undefined
+    */
   var button: js.Array[ButtonProps]
   
+  /**
+    * @language zh-CN
+    * @description 底部是否有边框
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether there is a border at the bottom
+    * @defaultValue false
+    */
   var hasBottomBorder: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮大小
+    * @defaultValue 'normal'
+    */
+  /**
+    * @language en-US
+    * @description The size of the button
+    * @defaultValue 'normal'
+    */
   var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮是否跟随父容器拉伸
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Does the size of the button follow the stretch of the parent container
+    * @defaultValue true
+    */
   var stretch: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮背景类型
+    * @defaultValue 'normal'
+    */
+  /**
+    * @language en-US
+    * @description The background type of the button
+    * @defaultValue 'normal'
+    */
   var `type`: js.UndefOr[primary | normal] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 包裹按钮的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The style of the parcel button
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object ControllerBarProps {
@@ -52,7 +134,7 @@ object ControllerBarProps {
     
     inline def setButton(value: js.Array[ButtonProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    inline def setButtonVarargs(value: ButtonProps*): Self = StObject.set(x, "button", js.Array(value :_*))
+    inline def setButtonVarargs(value: ButtonProps*): Self = StObject.set(x, "button", js.Array(value*))
     
     inline def setHasBottomBorder(value: Boolean): Self = StObject.set(x, "hasBottomBorder", value.asInstanceOf[js.Any])
     

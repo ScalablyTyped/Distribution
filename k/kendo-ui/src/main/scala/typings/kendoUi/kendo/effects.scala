@@ -14,9 +14,9 @@ object effects {
     
     def duration(value: Double): Effect
     
-    def play(): JQueryPromise[js.Any]
+    def play(): JQueryPromise[Any]
     
-    def reverse(): JQueryPromise[js.Any]
+    def reverse(): JQueryPromise[Any]
     
     def stop(): Effect
   }
@@ -25,8 +25,8 @@ object effects {
     inline def apply(
       add: Effect => Effect,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): Effect = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -39,9 +39,9 @@ object effects {
       
       inline def setDuration(value: Double => Effect): Self = StObject.set(x, "duration", js.Any.fromFunction1(value))
       
-      inline def setPlay(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPlay(value: () => JQueryPromise[Any]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       
-      inline def setReverse(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverse(value: () => JQueryPromise[Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
       inline def setStop(value: () => Effect): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
@@ -203,8 +203,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Expand,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): Expand = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -234,8 +234,8 @@ object effects {
       direction: String => Fade,
       duration: Double => Effect,
       endValue: Double => Fade,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       startValue: Double => Fade,
       stop: () => Effect
     ): Fade = {
@@ -265,8 +265,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Flip,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): Flip = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -291,8 +291,8 @@ object effects {
       add: Effect => Effect,
       direction: String => PageTurn,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): PageTurn = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -317,8 +317,8 @@ object effects {
       add: Effect => Effect,
       direction: String => SlideIn,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): SlideIn = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -343,8 +343,8 @@ object effects {
       add: Effect => Effect,
       direction: String => Tile,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): Tile = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -365,8 +365,8 @@ object effects {
     inline def apply(
       add: Effect => Effect,
       duration: Double => Effect,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       stop: () => Effect
     ): Transfer = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
@@ -391,8 +391,8 @@ object effects {
       direction: String => Zoom,
       duration: Double => Effect,
       endValue: Double => Zoom,
-      play: () => JQueryPromise[js.Any],
-      reverse: () => JQueryPromise[js.Any],
+      play: () => JQueryPromise[Any],
+      reverse: () => JQueryPromise[Any],
       startValue: Double => Zoom,
       stop: () => Effect
     ): Zoom = {

@@ -76,7 +76,7 @@ object BaseMark {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setOnVarargs(value: OnMarkTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
+    inline def setOnVarargs(value: OnMarkTrigger*): Self = StObject.set(x, "on", js.Array(value*))
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -90,13 +90,13 @@ object BaseMark {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     

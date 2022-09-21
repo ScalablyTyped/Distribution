@@ -1,14 +1,15 @@
 package typings.cssSelectorTokenizer.mod
 
+import typings.cssSelectorTokenizer.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def parse(selectors: java.lang.String): typings.cssSelectorTokenizer.mod.SelectorsNode = typings.cssSelectorTokenizer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selectors.asInstanceOf[js.Any]).asInstanceOf[typings.cssSelectorTokenizer.mod.SelectorsNode]
+inline def parse(selectors: String): SelectorsNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selectors.asInstanceOf[js.Any]).asInstanceOf[SelectorsNode]
 
-inline def parseValues(values: java.lang.String): typings.cssSelectorTokenizer.mod.ValuesNode = typings.cssSelectorTokenizer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseValues")(values.asInstanceOf[js.Any]).asInstanceOf[typings.cssSelectorTokenizer.mod.ValuesNode]
+inline def parseValues(values: String): ValuesNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parseValues")(values.asInstanceOf[js.Any]).asInstanceOf[ValuesNode]
 
-inline def stringify(node: typings.cssSelectorTokenizer.mod.SelectorsNode): java.lang.String = typings.cssSelectorTokenizer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def stringify(node: SelectorsNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def stringifyValues(node: typings.cssSelectorTokenizer.mod.ValuesNode): java.lang.String = typings.cssSelectorTokenizer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stringifyValues")(node.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def stringifyValues(node: ValuesNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyValues")(node.asInstanceOf[js.Any]).asInstanceOf[String]

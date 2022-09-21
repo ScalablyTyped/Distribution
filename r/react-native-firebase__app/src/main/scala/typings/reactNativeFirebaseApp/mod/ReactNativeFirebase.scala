@@ -12,7 +12,7 @@ object ReactNativeFirebase {
   
   @JSImport("@react-native-firebase/app", "ReactNativeFirebase.FirebaseModule")
   @js.native
-  class FirebaseModule () extends StObject {
+  open class FirebaseModule () extends StObject {
     
     /**
       * The current `FirebaseApp` instance for this Firebase service.
@@ -22,12 +22,12 @@ object ReactNativeFirebase {
     /**
       * Returns the shared event emitter instance used for all JS event routing.
       */
-    /* private */ var emitter: js.Any = js.native
+    /* private */ var emitter: Any = js.native
     
     /**
       * The native module instance for this Firebase service.
       */
-    /* private */ var native: js.Any = js.native
+    /* private */ var native: Any = js.native
   }
   
   trait FirebaseApp extends StObject {
@@ -76,7 +76,10 @@ object ReactNativeFirebase {
   trait FirebaseAppConfig extends StObject {
     
     /**
-      *
+      * Default setting for data collection on startup that affects all Firebase module startup data collection settings,
+      * in the absence of module-specific overrides. This will start as false if you set "app_data_collection_default_enabled"
+      * to false in firebase.json and may be used in opt-in flows, for example a GDPR-compliant app.
+      * If configured false initially, set to true after obtaining consent, then enable module-specific settings as needed afterwards.
       */
     var automaticDataCollectionEnabled: js.UndefOr[Boolean] = js.undefined
     
@@ -116,7 +119,7 @@ object ReactNativeFirebase {
   
   trait FirebaseAppOptions
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     /**
       * iOS only - The Android client ID used in Google AppInvite when an iOS app has its Android version, for
@@ -219,11 +222,33 @@ object ReactNativeFirebase {
     }
   }
   
-  trait FirebaseJsonConfig extends StObject
-  
   type FirebaseModuleWithStatics[M, S] = Call[M] & S
   
   type FirebaseModuleWithStaticsAndApp[M, S] = SDKVERSION[M] & S
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.debug
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.verbose
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.info
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.warn
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.error
+    - typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.silent
+  */
+  trait LogLevelString extends StObject
+  object LogLevelString {
+    
+    inline def debug: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.debug = "debug".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.debug]
+    
+    inline def error: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.error = "error".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.error]
+    
+    inline def info: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.info = "info".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.info]
+    
+    inline def silent: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.silent = "silent".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.silent]
+    
+    inline def verbose: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.verbose = "verbose".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.verbose]
+    
+    inline def warn: typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.warn = "warn".asInstanceOf[typings.reactNativeFirebaseApp.reactNativeFirebaseAppStrings.warn]
+  }
   
   @js.native
   trait Module extends StObject {
@@ -257,9 +282,22 @@ object ReactNativeFirebase {
       * @param options Options to configure the services used in the App.
       * @param config The optional config for your firebase app
       */
-    def initializeApp(options: FirebaseAppOptions): FirebaseApp = js.native
-    def initializeApp(options: FirebaseAppOptions, config: FirebaseAppConfig): FirebaseApp = js.native
-    def initializeApp(options: FirebaseAppOptions, name: String): FirebaseApp = js.native
+    def initializeApp(options: FirebaseAppOptions): js.Promise[FirebaseApp] = js.native
+    def initializeApp(options: FirebaseAppOptions, config: FirebaseAppConfig): js.Promise[FirebaseApp] = js.native
+    def initializeApp(options: FirebaseAppOptions, name: String): js.Promise[FirebaseApp] = js.native
+    
+    /**
+      * Set the log level across all modules. Only applies to iOS currently, has no effect on Android.
+      * Should be one of 'error', 'warn', 'info', or 'debug'.
+      * Logs messages at the configured level or lower (less verbose / more important).
+      * Note that if an app is running from AppStore, it will never log above info even if
+      * level is set to a higher (more verbose) setting.
+      * Note that iOS is missing firebase-js-sdk log levels 'verbose' and 'silent'.
+      * 'verbose' if used will map to 'debug', 'silent' has no valid mapping and will return an error if used.
+      *
+      * @ios
+      */
+    def setLogLevel(logLevel: LogLevelString): Unit = js.native
     
     /**
       * Utils provides a collection of utilities to aid in using Firebase

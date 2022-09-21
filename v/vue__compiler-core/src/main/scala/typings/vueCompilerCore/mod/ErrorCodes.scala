@@ -45,6 +45,7 @@ import typings.vueCompilerCore.vueCompilerCoreNumbers.`47`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`48`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`49`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
+import typings.vueCompilerCore.vueCompilerCoreNumbers.`50`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`5`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`6`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`7`
@@ -105,6 +106,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.vueCompilerCoreNumbers.`47`
   - typings.vueCompilerCore.vueCompilerCoreNumbers.`48`
   - typings.vueCompilerCore.vueCompilerCoreNumbers.`49`
+  - typings.vueCompilerCore.vueCompilerCoreNumbers.`50`
 */
 trait ErrorCodes extends StObject
 object ErrorCodes {
@@ -155,57 +157,59 @@ object ErrorCodes {
   
   inline def UNEXPECTED_SOLIDUS_IN_TAG: `22` = 22.asInstanceOf[`22`]
   
-  inline def X_CACHE_HANDLER_NOT_SUPPORTED: `47` = 47.asInstanceOf[`47`]
+  inline def X_CACHE_HANDLER_NOT_SUPPORTED: `48` = 48.asInstanceOf[`48`]
   
   inline def X_INVALID_END_TAG: `23` = 23.asInstanceOf[`23`]
   
-  inline def X_INVALID_EXPRESSION: `43` = 43.asInstanceOf[`43`]
+  inline def X_INVALID_EXPRESSION: `44` = 44.asInstanceOf[`44`]
   
-  inline def X_KEEP_ALIVE_INVALID_CHILDREN: `44` = 44.asInstanceOf[`44`]
+  inline def X_KEEP_ALIVE_INVALID_CHILDREN: `45` = 45.asInstanceOf[`45`]
   
-  inline def X_MISSING_DYNAMIC_DIRECTIVE_ARGUMENT_END: `26` = 26.asInstanceOf[`26`]
+  inline def X_MISSING_DIRECTIVE_NAME: `26` = 26.asInstanceOf[`26`]
+  
+  inline def X_MISSING_DYNAMIC_DIRECTIVE_ARGUMENT_END: `27` = 27.asInstanceOf[`27`]
   
   inline def X_MISSING_END_TAG: `24` = 24.asInstanceOf[`24`]
   
   inline def X_MISSING_INTERPOLATION_END: `25` = 25.asInstanceOf[`25`]
   
-  inline def X_MODULE_MODE_NOT_SUPPORTED: `46` = 46.asInstanceOf[`46`]
+  inline def X_MODULE_MODE_NOT_SUPPORTED: `47` = 47.asInstanceOf[`47`]
   
-  inline def X_PREFIX_ID_NOT_SUPPORTED: `45` = 45.asInstanceOf[`45`]
+  inline def X_PREFIX_ID_NOT_SUPPORTED: `46` = 46.asInstanceOf[`46`]
   
-  inline def X_SCOPE_ID_NOT_SUPPORTED: `48` = 48.asInstanceOf[`48`]
+  inline def X_SCOPE_ID_NOT_SUPPORTED: `49` = 49.asInstanceOf[`49`]
   
-  inline def X_V_BIND_NO_EXPRESSION: `33` = 33.asInstanceOf[`33`]
+  inline def X_V_BIND_NO_EXPRESSION: `34` = 34.asInstanceOf[`34`]
   
-  inline def X_V_ELSE_NO_ADJACENT_IF: `29` = 29.asInstanceOf[`29`]
+  inline def X_V_ELSE_NO_ADJACENT_IF: `30` = 30.asInstanceOf[`30`]
   
-  inline def X_V_FOR_MALFORMED_EXPRESSION: `31` = 31.asInstanceOf[`31`]
+  inline def X_V_FOR_MALFORMED_EXPRESSION: `32` = 32.asInstanceOf[`32`]
   
-  inline def X_V_FOR_NO_EXPRESSION: `30` = 30.asInstanceOf[`30`]
+  inline def X_V_FOR_NO_EXPRESSION: `31` = 31.asInstanceOf[`31`]
   
-  inline def X_V_FOR_TEMPLATE_KEY_PLACEMENT: `32` = 32.asInstanceOf[`32`]
+  inline def X_V_FOR_TEMPLATE_KEY_PLACEMENT: `33` = 33.asInstanceOf[`33`]
   
-  inline def X_V_IF_NO_EXPRESSION: `27` = 27.asInstanceOf[`27`]
+  inline def X_V_IF_NO_EXPRESSION: `28` = 28.asInstanceOf[`28`]
   
-  inline def X_V_IF_SAME_KEY: `28` = 28.asInstanceOf[`28`]
+  inline def X_V_IF_SAME_KEY: `29` = 29.asInstanceOf[`29`]
   
-  inline def X_V_MODEL_MALFORMED_EXPRESSION: `41` = 41.asInstanceOf[`41`]
+  inline def X_V_MODEL_MALFORMED_EXPRESSION: `42` = 42.asInstanceOf[`42`]
   
-  inline def X_V_MODEL_NO_EXPRESSION: `40` = 40.asInstanceOf[`40`]
+  inline def X_V_MODEL_NO_EXPRESSION: `41` = 41.asInstanceOf[`41`]
   
-  inline def X_V_MODEL_ON_SCOPE_VARIABLE: `42` = 42.asInstanceOf[`42`]
+  inline def X_V_MODEL_ON_SCOPE_VARIABLE: `43` = 43.asInstanceOf[`43`]
   
-  inline def X_V_ON_NO_EXPRESSION: `34` = 34.asInstanceOf[`34`]
+  inline def X_V_ON_NO_EXPRESSION: `35` = 35.asInstanceOf[`35`]
   
-  inline def X_V_SLOT_DUPLICATE_SLOT_NAMES: `37` = 37.asInstanceOf[`37`]
+  inline def X_V_SLOT_DUPLICATE_SLOT_NAMES: `38` = 38.asInstanceOf[`38`]
   
-  inline def X_V_SLOT_EXTRANEOUS_DEFAULT_SLOT_CHILDREN: `38` = 38.asInstanceOf[`38`]
+  inline def X_V_SLOT_EXTRANEOUS_DEFAULT_SLOT_CHILDREN: `39` = 39.asInstanceOf[`39`]
   
-  inline def X_V_SLOT_MISPLACED: `39` = 39.asInstanceOf[`39`]
+  inline def X_V_SLOT_MISPLACED: `40` = 40.asInstanceOf[`40`]
   
-  inline def X_V_SLOT_MIXED_SLOT_USAGE: `36` = 36.asInstanceOf[`36`]
+  inline def X_V_SLOT_MIXED_SLOT_USAGE: `37` = 37.asInstanceOf[`37`]
   
-  inline def X_V_SLOT_UNEXPECTED_DIRECTIVE_ON_SLOT_OUTLET: `35` = 35.asInstanceOf[`35`]
+  inline def X_V_SLOT_UNEXPECTED_DIRECTIVE_ON_SLOT_OUTLET: `36` = 36.asInstanceOf[`36`]
   
-  inline def __EXTEND_POINT__ : `49` = 49.asInstanceOf[`49`]
+  inline def __EXTEND_POINT__ : `50` = 50.asInstanceOf[`50`]
 }

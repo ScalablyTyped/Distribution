@@ -16,11 +16,11 @@ object gridBaseMod {
   trait GridBase[T /* <: GroupComponentCfg */]
     extends typings.antvComponent.groupComponentMod.default[T] {
     
-    /* private */ var drawAlternateRegion: js.Any = js.native
+    /* private */ var drawAlternateRegion: Any = js.native
     
-    /* private */ var drawGrid: js.Any = js.native
+    /* private */ var drawGrid: Any = js.native
     
-    /* protected */ def getAlternatePath(prePoints: js.Array[Point], points: js.Array[Point]): js.Array[js.Any] = js.native
+    /* protected */ def getAlternatePath(prePoints: js.Array[Point], points: js.Array[Point]): js.Array[Any] = js.native
     
     /**
       * 获取栅格线的路径
@@ -28,8 +28,8 @@ object gridBaseMod {
       * @param  {boolean} reversed 顺序是否相反
       * @return {any[]}            路径
       */
-    /* protected */ def getGridPath(points: js.Array[Point]): js.Array[js.Any] = js.native
-    /* protected */ def getGridPath(points: js.Array[Point], reversed: Boolean): js.Array[js.Any] = js.native
+    /* protected */ def getGridPath(points: js.Array[Point]): js.Array[Any] = js.native
+    /* protected */ def getGridPath(points: js.Array[Point], reversed: Boolean): js.Array[Any] = js.native
     
     /**
       * 获取栅格线的类型
@@ -37,6 +37,6 @@ object gridBaseMod {
       */
     /* protected */ def getLineType(): String = js.native
     
-    /* private */ var getPathStyle: js.Any = js.native
+    /* private */ var getPathStyle: Any = js.native
   }
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnockoutSecureBindingProvider
   extends StObject
      with Instantiable0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ Any
     ]
      with Instantiable1[
       /* options */ KnockoutSecureBindingOptions, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ Any
     ]

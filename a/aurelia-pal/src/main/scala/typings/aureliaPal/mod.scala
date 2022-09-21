@@ -8,7 +8,6 @@ import typings.std.CustomEvent
 import typings.std.CustomEventInit
 import typings.std.DocumentFragment
 import typings.std.Element
-import typings.std.Error
 import typings.std.Event
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
@@ -27,10 +26,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AggregateError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
-  inline def AggregateError(message: String, innerError: Unit, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
-  inline def AggregateError(message: String, innerError: Error): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any])).asInstanceOf[Error]
-  inline def AggregateError(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def AggregateError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
+  inline def AggregateError(message: String, innerError: js.Error): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def AggregateError(message: String, innerError: js.Error, skipIfAlreadyAggregate: Boolean): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def AggregateError(message: String, innerError: Unit, skipIfAlreadyAggregate: Boolean): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   @JSImport("aurelia-pal", "DOM")
   @js.native
@@ -48,10 +47,10 @@ object mod {
   
   @JSImport("aurelia-pal", "isInitialized")
   @js.native
-  def isInitialized: js.Any = js.native
-  inline def isInitialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInitialized")(x.asInstanceOf[js.Any])
+  def isInitialized: Any = js.native
+  inline def isInitialized_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInitialized")(x.asInstanceOf[js.Any])
   
-  inline def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
+  inline def reset(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Any]
   
   @js.native
   trait Dom extends StObject {
@@ -59,17 +58,17 @@ object mod {
     /**
       * The global DOM Element type.
       */
-    var Element: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Element */ js.Any = js.native
+    var Element: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Element */ Any = js.native
     
     /**
       * The global DOM NodeList type.
       */
-    var NodeList: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NodeList */ js.Any = js.native
+    var NodeList: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NodeList */ Any = js.native
     
     /**
       * The global DOM SVGElement type.
       */
-    var SVGElement: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SVGElement */ js.Any = js.native
+    var SVGElement: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SVGElement */ Any = js.native
     
     /**
       * The document's active/focused element.
@@ -124,8 +123,8 @@ object mod {
       * @param options An options object specifying bubbles:boolean, cancelable:boolean and/or detail:Object information.
       * @return A CustomEvent.
       */
-    def createCustomEvent(eventType: String): CustomEvent[js.Any] = js.native
-    def createCustomEvent(eventType: String, options: CustomEventInit[js.Any]): CustomEvent[js.Any] = js.native
+    def createCustomEvent(eventType: String): CustomEvent[Any] = js.native
+    def createCustomEvent(eventType: String, options: CustomEventInit[Any]): CustomEvent[Any] = js.native
     
     /**
       * Creates a new DocumentFragment.
@@ -333,7 +332,7 @@ object mod {
       
       inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
       
-      inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+      inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value*))
     }
   }
   
@@ -366,8 +365,8 @@ object mod {
       * @returns {*}
       * @memberof IPerformance
       */
-    def getEntriesByName(name: String): js.Any = js.native
-    def getEntriesByName(name: String, entryType: String): js.Any = js.native
+    def getEntriesByName(name: String): Any = js.native
+    def getEntriesByName(name: String, entryType: String): Any = js.native
     
     /**
       * Returns a list of PerformanceEntry objects of the given entry type.
@@ -376,7 +375,7 @@ object mod {
       * @returns {*}
       * @memberof IPerformance
       */
-    def getEntriesByType(entryType: String): js.Any = js.native
+    def getEntriesByType(entryType: String): Any = js.native
     
     /**
       * Creates a timestamp in the browser's performance entry buffer with the given name.
@@ -412,7 +411,7 @@ object mod {
     /**
       * Reference to the Loader Class (set after the loader has been first imported)
       */
-    var Loader: js.Any = js.native
+    var Loader: Any = js.native
     
     /**
       * The runtime's XMLHttpRequest API.
@@ -437,17 +436,17 @@ object mod {
     /**
       * The runtime environment's global.
       */
-    var global: js.Any = js.native
+    var global: Any = js.native
     
     /**
       * The runtime's history API.
       */
-    var history: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.history */ js.Any = js.native
+    var history: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.history */ Any = js.native
     
     /**
       * The runtime's location API.
       */
-    var location: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.location */ js.Any = js.native
+    var location: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.location */ Any = js.native
     
     /**
       * Resolves a module name to a path resolvable by the loader. By default returns the first parameter.

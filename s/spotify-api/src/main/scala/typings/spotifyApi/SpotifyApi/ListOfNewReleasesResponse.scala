@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get a list of new releases
-  * 
+  *
   * GET /v1/browse/new-releases
   * https://developer.spotify.com/web-api/get-list-new-releases/
   */

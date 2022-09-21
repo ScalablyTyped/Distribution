@@ -7,47 +7,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BoneLookController extends StObject {
   
-  /* private */ var _boneQuat: js.Any = js.native
+  /* private */ var _boneQuat: Any = js.native
   
-  /* private */ var _firstFrameSkipped: js.Any = js.native
+  /* private */ var _firstFrameSkipped: Any = js.native
   
-  /* private */ var _fowardAxis: js.Any = js.native
+  /* private */ var _fowardAxis: Any = js.native
   
-  /* private */ var _getAngleBetween: js.Any = js.native
+  /* private */ var _getAngleBetween: Any = js.native
   
-  /* private */ var _getAngleDiff: js.Any = js.native
+  /* private */ var _getAngleDiff: Any = js.native
   
-  /* private */ var _isAngleBetween: js.Any = js.native
+  /* private */ var _isAngleBetween: Any = js.native
   
-  /* private */ var _maxPitch: js.Any = js.native
+  /* private */ var _maxPitch: Any = js.native
   
-  /* private */ var _maxPitchTan: js.Any = js.native
+  /* private */ var _maxPitchTan: Any = js.native
   
-  /* private */ var _maxYaw: js.Any = js.native
+  /* private */ var _maxYaw: Any = js.native
   
-  /* private */ var _maxYawCos: js.Any = js.native
+  /* private */ var _maxYawCos: Any = js.native
   
-  /* private */ var _maxYawSin: js.Any = js.native
+  /* private */ var _maxYawSin: Any = js.native
   
-  /* private */ var _midYawConstraint: js.Any = js.native
+  /* private */ var _midYawConstraint: Any = js.native
   
-  /* private */ var _minPitch: js.Any = js.native
+  /* private */ var _minPitch: Any = js.native
   
-  /* private */ var _minPitchTan: js.Any = js.native
+  /* private */ var _minPitchTan: Any = js.native
   
-  /* private */ var _minYaw: js.Any = js.native
+  /* private */ var _minYaw: Any = js.native
   
-  /* private */ var _minYawCos: js.Any = js.native
+  /* private */ var _minYawCos: Any = js.native
   
-  /* private */ var _minYawSin: js.Any = js.native
+  /* private */ var _minYawSin: Any = js.native
   
-  /* private */ var _slerping: js.Any = js.native
+  /* private */ var _slerping: Any = js.native
   
-  /* private */ var _transformYawPitch: js.Any = js.native
+  /* private */ var _transformYawPitch: Any = js.native
   
-  /* private */ var _transformYawPitchInv: js.Any = js.native
+  /* private */ var _transformYawPitchInv: Any = js.native
   
-  /* private */ var _yawRange: js.Any = js.native
+  /* private */ var _updateLinkedTransformRotation: Any = js.native
+  
+  /* private */ var _yawRange: Any = js.native
   
   /**
     * Used to make an adjustment to the pitch of the bone
@@ -82,9 +84,10 @@ trait BoneLookController extends StObject {
   def maxYaw_=(value: Double): Unit = js.native
   
   /**
-    * The mesh that the bone is attached to
+    * The TransformNode that the bone is attached to
+    * Name kept as mesh for back compatibility
     */
-  var mesh: AbstractMesh = js.native
+  var mesh: TransformNode = js.native
   
   /**
     * Gets or sets the minimum pitch angle that the bone can look to

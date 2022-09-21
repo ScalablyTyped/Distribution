@@ -27,11 +27,11 @@ object distTypesMod {
       
       inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value*))
     }
   }
   
-  type Kwargs = StringDictionary[js.Any]
+  type Kwargs = StringDictionary[Any]
   
   type LossOrMetricFn = js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]]
   

@@ -11,6 +11,8 @@ trait KeyStatusesChangedEvent
   
   var data: SessionToken
   
+  var error: js.UndefOr[DashJSError] = js.undefined
+  
   @JSName("type")
   var type_KeyStatusesChangedEvent: public_keyStatusesChanged
 }
@@ -25,6 +27,10 @@ object KeyStatusesChangedEvent {
   extension [Self <: KeyStatusesChangedEvent](x: Self) {
     
     inline def setData(value: SessionToken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setError(value: DashJSError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setType(value: public_keyStatusesChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -62,7 +62,7 @@ object LayoutTreeNode {
     
     inline def setInlineTextNodesUndefined: Self = StObject.set(x, "inlineTextNodes", js.undefined)
     
-    inline def setInlineTextNodesVarargs(value: InlineTextBox*): Self = StObject.set(x, "inlineTextNodes", js.Array(value :_*))
+    inline def setInlineTextNodesVarargs(value: InlineTextBox*): Self = StObject.set(x, "inlineTextNodes", js.Array(value*))
     
     inline def setIsStackingContext(value: Boolean): Self = StObject.set(x, "isStackingContext", value.asInstanceOf[js.Any])
     

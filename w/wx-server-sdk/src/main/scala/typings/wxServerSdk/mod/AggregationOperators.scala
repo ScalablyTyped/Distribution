@@ -9,9 +9,9 @@ trait AggregationOperators extends StObject {
   
   def abs(operand: Double): Double
   
-  def add(operand: js.Any*): js.Any
+  def add(operand: Any*): Any
   
-  def addToSet(expression: String): js.Any
+  def addToSet(expression: String): Any
   
   def allElementsTrue(expression: js.Array[String]): Boolean
   
@@ -19,7 +19,7 @@ trait AggregationOperators extends StObject {
   
   def anyElementTrue(expression: js.Array[String]): Boolean
   
-  def arrayElemAt(expression: js.Tuple2[String, Double]): js.Any
+  def arrayElemAt(expression: js.Tuple2[String, Double]): Any
   
   def arrayToObject(expression: String): js.Object
   
@@ -35,12 +35,12 @@ object AggregationOperators {
   
   inline def apply(
     abs: Double => Double,
-    add: /* repeated */ js.Any => js.Any,
-    addToSet: String => js.Any,
+    add: /* repeated */ Any => Any,
+    addToSet: String => Any,
     allElementsTrue: js.Array[String] => Boolean,
     and: js.Array[Boolean] => Boolean,
     anyElementTrue: js.Array[String] => Boolean,
-    arrayElemAt: js.Tuple2[String, Double] => js.Any,
+    arrayElemAt: js.Tuple2[String, Double] => Any,
     arrayToObject: String => js.Object,
     avg: String => Double,
     lt: (String, Double) => Boolean,
@@ -54,9 +54,9 @@ object AggregationOperators {
     
     inline def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
-    inline def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ Any => Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddToSet(value: String => js.Any): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
+    inline def setAddToSet(value: String => Any): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
     
     inline def setAllElementsTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "allElementsTrue", js.Any.fromFunction1(value))
     
@@ -64,7 +64,7 @@ object AggregationOperators {
     
     inline def setAnyElementTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "anyElementTrue", js.Any.fromFunction1(value))
     
-    inline def setArrayElemAt(value: js.Tuple2[String, Double] => js.Any): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
+    inline def setArrayElemAt(value: js.Tuple2[String, Double] => Any): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
     
     inline def setArrayToObject(value: String => js.Object): Self = StObject.set(x, "arrayToObject", js.Any.fromFunction1(value))
     

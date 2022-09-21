@@ -28,7 +28,7 @@ object XEncryptionResultListener {
   inline def apply(
     acquire: () => Unit,
     encrypted: (Double, SecurityOperationStatus) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEncryptionResultListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), encrypted = js.Any.fromFunction2(encrypted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

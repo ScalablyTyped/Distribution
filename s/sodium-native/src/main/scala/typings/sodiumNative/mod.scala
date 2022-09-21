@@ -1,10 +1,9 @@
 package typings.sodiumNative
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sodiumNative.sodiumNativeNumbers.`-1`
 import typings.sodiumNative.sodiumNativeNumbers.`0`
 import typings.sodiumNative.sodiumNativeNumbers.`1`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -376,7 +375,7 @@ object mod {
     opslimit: Double,
     memlimit: Double,
     algorithm: Double,
-    callback: js.Function1[/* err */ Error | Null, Unit]
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_async")(output.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_pwhash_BYTES_MAX")
@@ -518,7 +517,7 @@ object mod {
     password: Buffer,
     opslimit: Double,
     memlimit: Double,
-    callback: js.Function1[/* err */ Error | Null, Unit]
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_async")(output.asInstanceOf[js.Any], password.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cryptoPwhashStrNeedsRehash(hash: Buffer, opslimit: Double, memlimit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_needs_rehash")(hash.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -528,7 +527,7 @@ object mod {
   inline def cryptoPwhashStrVerifyAsync(
     str: Buffer,
     password: Buffer,
-    callback: js.Function2[/* err */ Error | Null, /* bool */ Boolean, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* bool */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify_async")(str.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cryptoScalarmult(sharedSecret: Buffer, secretKey: Buffer, remotePublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(sharedSecret.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], remotePublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]

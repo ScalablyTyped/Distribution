@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashAssignAllWith extends StObject {
   
   def apply(customizer: AssignCustomizer): LodashAssignAllWith1x1 = js.native
-  def apply(customizer: AssignCustomizer, args: js.Array[js.Any]): js.Any = js.native
-  def apply(customizer: __, args: js.Array[js.Any]): LodashAssignAllWith1x2 = js.native
+  def apply(customizer: AssignCustomizer, args: js.Array[Any]): Any = js.native
+  def apply(customizer: __, args: js.Array[Any]): LodashAssignAllWith1x2 = js.native
 }

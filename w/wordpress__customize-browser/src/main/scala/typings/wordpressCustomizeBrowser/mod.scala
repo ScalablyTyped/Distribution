@@ -20,8 +20,8 @@ object mod {
       @JSGlobal("wp.customize")
       @js.native
       def customize: Customize = js.native
-      inline def customize(arg: String): Setting[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customize")(arg.asInstanceOf[js.Any]).asInstanceOf[Setting[js.Any]]
-      inline def customize(args: (String | (js.Function1[/* repeated */ Setting[js.Any], Unit]))*): Promise[js.Any, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customize")(args.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any, js.Any, js.Any]]
+      inline def customize(arg: String): Setting[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customize")(arg.asInstanceOf[js.Any]).asInstanceOf[Setting[Any]]
+      inline def customize(args: (String | (js.Function1[/* repeated */ Setting[Any], Unit]))*): Promise[Any, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customize")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Promise[Any, Any, Any]]
       inline def customize_=(x: Customize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customize")(x.asInstanceOf[js.Any])
     }
   }

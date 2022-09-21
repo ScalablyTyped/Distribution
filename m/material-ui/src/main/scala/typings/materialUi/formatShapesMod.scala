@@ -10,10 +10,10 @@ object formatShapesMod {
   
   @JSImport("material-ui/svg-icons/editor/format-shapes", JSImport.Default)
   @js.native
-  class default () extends EditorFormatShapes
+  open class default () extends EditorFormatShapes
   
   @JSImport("material-ui/svg-icons/editor/format-shapes", "EditorFormatShapes")
   @js.native
-  class EditorFormatShapes ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatShapes ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointerInput
-  extends StObject
-     with _DeviceInput[js.Any]
+sealed trait PointerInput extends StObject
 @JSGlobal("BABYLON.PointerInput")
 @js.native
 object PointerInput extends StObject {
@@ -24,7 +22,7 @@ object PointerInput extends StObject {
     extends StObject
        with PointerInput
   
-  /** Horizontal Axis */
+  /** Horizontal Axis (Not used in events/observables; only in polling) */
   @js.native
   sealed trait Horizontal
     extends StObject
@@ -42,13 +40,37 @@ object PointerInput extends StObject {
     extends StObject
        with PointerInput
   
+  /** Mouse Wheel X */
+  @js.native
+  sealed trait MouseWheelX
+    extends StObject
+       with PointerInput
+  
+  /** Mouse Wheel Y */
+  @js.native
+  sealed trait MouseWheelY
+    extends StObject
+       with PointerInput
+  
+  /** Mouse Wheel Z */
+  @js.native
+  sealed trait MouseWheelZ
+    extends StObject
+       with PointerInput
+  
+  /** Used in events/observables to identify if x/y changes occurred */
+  @js.native
+  sealed trait Move
+    extends StObject
+       with PointerInput
+  
   /** Right Click */
   @js.native
   sealed trait RightClick
     extends StObject
        with PointerInput
   
-  /** Vertical Axis */
+  /** Vertical Axis (Not used in events/observables; only in polling) */
   @js.native
   sealed trait Vertical
     extends StObject

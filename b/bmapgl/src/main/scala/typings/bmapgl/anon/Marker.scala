@@ -8,13 +8,13 @@ trait Marker extends StObject {
   
   var marker: typings.bmapgl.BMapGL.Marker
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
 object Marker {
   
-  inline def apply(marker: typings.bmapgl.BMapGL.Marker, target: js.Any, `type`: String): Marker = {
+  inline def apply(marker: typings.bmapgl.BMapGL.Marker, target: Any, `type`: String): Marker = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marker]
@@ -24,7 +24,7 @@ object Marker {
     
     inline def setMarker(value: typings.bmapgl.BMapGL.Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

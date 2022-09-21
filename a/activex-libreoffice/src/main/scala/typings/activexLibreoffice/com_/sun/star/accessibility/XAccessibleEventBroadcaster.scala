@@ -27,7 +27,7 @@ object XAccessibleEventBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addAccessibleEventListener: XAccessibleEventListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit
   ): XAccessibleEventBroadcaster = {

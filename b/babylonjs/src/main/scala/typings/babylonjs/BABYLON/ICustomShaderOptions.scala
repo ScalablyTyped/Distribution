@@ -27,7 +27,7 @@ trait ICustomShaderOptions extends StObject {
   var shaderName: String
   
   /**
-    * The list of unifrom names used in the shader
+    * The list of uniform names used in the shader
     */
   var uniforms: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -44,19 +44,19 @@ object ICustomShaderOptions {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
     
-    inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+    inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value*))
     
     inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
     
     inline def setSamplersUndefined: Self = StObject.set(x, "samplers", js.undefined)
     
-    inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+    inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value*))
     
     inline def setShaderName(value: String): Self = StObject.set(x, "shaderName", value.asInstanceOf[js.Any])
     
@@ -64,6 +64,6 @@ object ICustomShaderOptions {
     
     inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
     
-    inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+    inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value*))
   }
 }

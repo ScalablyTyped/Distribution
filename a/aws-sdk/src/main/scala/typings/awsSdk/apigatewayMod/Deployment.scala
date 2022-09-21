@@ -14,7 +14,7 @@ trait Deployment extends StObject {
   /**
     * The date and time that the deployment resource was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description for the deployment resource.
@@ -39,7 +39,7 @@ object Deployment {
     
     inline def setApiSummaryUndefined: Self = StObject.set(x, "apiSummary", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     

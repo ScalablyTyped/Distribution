@@ -25,7 +25,7 @@ object XContextMenuInterception {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerContextMenuInterceptor: XContextMenuInterceptor => Unit,
     release: () => Unit,
     releaseContextMenuInterceptor: XContextMenuInterceptor => Unit

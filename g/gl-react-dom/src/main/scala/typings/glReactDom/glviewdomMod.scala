@@ -13,7 +13,6 @@ import typings.glReactDom.glReactDomNumbers.`0.9`
 import typings.glReactDom.glReactDomNumbers.`1.0`
 import typings.react.mod.Component
 import typings.std.Blob
-import typings.std.Error
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
@@ -25,14 +24,13 @@ object glviewdomMod {
   
   @JSImport("gl-react-dom/GLViewDOM", "GLViewDOM")
   @js.native
-  class GLViewDOM protected ()
-    extends Component[GLViewDOMProps, GLViewDOMState, js.Any] {
+  open class GLViewDOM protected () extends Component[GLViewDOMProps, GLViewDOMState, Any] {
     def this(props: GLViewDOMProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GLViewDOMProps, context: js.Any) = this()
+    def this(props: GLViewDOMProps, context: Any) = this()
     
     var afterDraw: js.UndefOr[js.Function0[Unit]] = js.native
     
@@ -48,7 +46,7 @@ object glviewdomMod {
     def captureAsDataURL(`type`: SupportedImage): String = js.native
     def captureAsDataURL(`type`: SupportedImage, quality: ValidQuality): String = js.native
     
-    var debugError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var debugError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.native
     
     var gl: js.UndefOr[WebGLRenderingContext] = js.native
     
@@ -65,7 +63,7 @@ object glviewdomMod {
     
     var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
     var onContextLost: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -73,7 +71,7 @@ object glviewdomMod {
     
     var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var webglContextAttributes: js.UndefOr[WebGLContextAttributes] = js.undefined
     
@@ -98,7 +96,7 @@ object glviewdomMod {
       
       inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
       inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
       
@@ -114,7 +112,7 @@ object glviewdomMod {
       
       inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -128,18 +126,18 @@ object glviewdomMod {
   
   trait GLViewDOMState extends StObject {
     
-    var error: Error
+    var error: js.Error
   }
   object GLViewDOMState {
     
-    inline def apply(error: Error): GLViewDOMState = {
+    inline def apply(error: js.Error): GLViewDOMState = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[GLViewDOMState]
     }
     
     extension [Self <: GLViewDOMState](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   

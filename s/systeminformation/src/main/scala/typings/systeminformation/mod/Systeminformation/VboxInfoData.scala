@@ -7,21 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 9. Virtual Box
 trait VboxInfoData extends StObject {
   
-  var ACPI: Boolean
+  var acpi: Boolean
   
-  var APIC: Boolean
+  var apic: Boolean
   
-  var HPET: Boolean
-  
-  var IOAPIC: Boolean
-  
-  var PAE: Boolean
-  
-  var RTC: String
-  
-  var X2APIC: Boolean
-  
-  var biosAPICmode: String
+  var biosApicMode: String
   
   var bootDevice1: String
   
@@ -49,7 +39,11 @@ trait VboxInfoData extends StObject {
   
   var hardwareUUID: String
   
+  var hpet: Boolean
+  
   var id: String
+  
+  var ioApic: Boolean
   
   var logFolder: String
   
@@ -59,7 +53,11 @@ trait VboxInfoData extends StObject {
   
   var name: String
   
+  var pae: Boolean
+  
   var pageFusion: Boolean
+  
+  var rtc: String
   
   var running: Boolean
   
@@ -78,18 +76,15 @@ trait VboxInfoData extends StObject {
   var tripleFaultReset: Boolean
   
   var vram: Double
+  
+  var x2Apic: Boolean
 }
 object VboxInfoData {
   
   inline def apply(
-    ACPI: Boolean,
-    APIC: Boolean,
-    HPET: Boolean,
-    IOAPIC: Boolean,
-    PAE: Boolean,
-    RTC: String,
-    X2APIC: Boolean,
-    biosAPICmode: String,
+    acpi: Boolean,
+    apic: Boolean,
+    biosApicMode: String,
     bootDevice1: String,
     bootDevice2: String,
     bootDevice3: String,
@@ -103,12 +98,16 @@ object VboxInfoData {
     firmware: String,
     guestOS: String,
     hardwareUUID: String,
+    hpet: Boolean,
     id: String,
+    ioApic: Boolean,
     logFolder: String,
     longMode: Boolean,
     memory: Double,
     name: String,
+    pae: Boolean,
     pageFusion: Boolean,
+    rtc: String,
     running: Boolean,
     runningSince: Double,
     snapshotFolder: String,
@@ -117,19 +116,20 @@ object VboxInfoData {
     stoppedSince: Double,
     timeOffset: String,
     tripleFaultReset: Boolean,
-    vram: Double
+    vram: Double,
+    x2Apic: Boolean
   ): VboxInfoData = {
-    val __obj = js.Dynamic.literal(ACPI = ACPI.asInstanceOf[js.Any], APIC = APIC.asInstanceOf[js.Any], HPET = HPET.asInstanceOf[js.Any], IOAPIC = IOAPIC.asInstanceOf[js.Any], PAE = PAE.asInstanceOf[js.Any], RTC = RTC.asInstanceOf[js.Any], X2APIC = X2APIC.asInstanceOf[js.Any], biosAPICmode = biosAPICmode.asInstanceOf[js.Any], bootDevice1 = bootDevice1.asInstanceOf[js.Any], bootDevice2 = bootDevice2.asInstanceOf[js.Any], bootDevice3 = bootDevice3.asInstanceOf[js.Any], bootDevice4 = bootDevice4.asInstanceOf[js.Any], bootMenuMode = bootMenuMode.asInstanceOf[js.Any], chipset = chipset.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], cpuExepCap = cpuExepCap.asInstanceOf[js.Any], cpuProfile = cpuProfile.asInstanceOf[js.Any], cpus = cpus.asInstanceOf[js.Any], firmware = firmware.asInstanceOf[js.Any], guestOS = guestOS.asInstanceOf[js.Any], hardwareUUID = hardwareUUID.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], logFolder = logFolder.asInstanceOf[js.Any], longMode = longMode.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pageFusion = pageFusion.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], runningSince = runningSince.asInstanceOf[js.Any], snapshotFolder = snapshotFolder.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any], stopped = stopped.asInstanceOf[js.Any], stoppedSince = stoppedSince.asInstanceOf[js.Any], timeOffset = timeOffset.asInstanceOf[js.Any], tripleFaultReset = tripleFaultReset.asInstanceOf[js.Any], vram = vram.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acpi = acpi.asInstanceOf[js.Any], apic = apic.asInstanceOf[js.Any], biosApicMode = biosApicMode.asInstanceOf[js.Any], bootDevice1 = bootDevice1.asInstanceOf[js.Any], bootDevice2 = bootDevice2.asInstanceOf[js.Any], bootDevice3 = bootDevice3.asInstanceOf[js.Any], bootDevice4 = bootDevice4.asInstanceOf[js.Any], bootMenuMode = bootMenuMode.asInstanceOf[js.Any], chipset = chipset.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], cpuExepCap = cpuExepCap.asInstanceOf[js.Any], cpuProfile = cpuProfile.asInstanceOf[js.Any], cpus = cpus.asInstanceOf[js.Any], firmware = firmware.asInstanceOf[js.Any], guestOS = guestOS.asInstanceOf[js.Any], hardwareUUID = hardwareUUID.asInstanceOf[js.Any], hpet = hpet.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ioApic = ioApic.asInstanceOf[js.Any], logFolder = logFolder.asInstanceOf[js.Any], longMode = longMode.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pae = pae.asInstanceOf[js.Any], pageFusion = pageFusion.asInstanceOf[js.Any], rtc = rtc.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], runningSince = runningSince.asInstanceOf[js.Any], snapshotFolder = snapshotFolder.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any], stopped = stopped.asInstanceOf[js.Any], stoppedSince = stoppedSince.asInstanceOf[js.Any], timeOffset = timeOffset.asInstanceOf[js.Any], tripleFaultReset = tripleFaultReset.asInstanceOf[js.Any], vram = vram.asInstanceOf[js.Any], x2Apic = x2Apic.asInstanceOf[js.Any])
     __obj.asInstanceOf[VboxInfoData]
   }
   
   extension [Self <: VboxInfoData](x: Self) {
     
-    inline def setACPI(value: Boolean): Self = StObject.set(x, "ACPI", value.asInstanceOf[js.Any])
+    inline def setAcpi(value: Boolean): Self = StObject.set(x, "acpi", value.asInstanceOf[js.Any])
     
-    inline def setAPIC(value: Boolean): Self = StObject.set(x, "APIC", value.asInstanceOf[js.Any])
+    inline def setApic(value: Boolean): Self = StObject.set(x, "apic", value.asInstanceOf[js.Any])
     
-    inline def setBiosAPICmode(value: String): Self = StObject.set(x, "biosAPICmode", value.asInstanceOf[js.Any])
+    inline def setBiosApicMode(value: String): Self = StObject.set(x, "biosApicMode", value.asInstanceOf[js.Any])
     
     inline def setBootDevice1(value: String): Self = StObject.set(x, "bootDevice1", value.asInstanceOf[js.Any])
     
@@ -155,13 +155,13 @@ object VboxInfoData {
     
     inline def setGuestOS(value: String): Self = StObject.set(x, "guestOS", value.asInstanceOf[js.Any])
     
-    inline def setHPET(value: Boolean): Self = StObject.set(x, "HPET", value.asInstanceOf[js.Any])
-    
     inline def setHardwareUUID(value: String): Self = StObject.set(x, "hardwareUUID", value.asInstanceOf[js.Any])
     
-    inline def setIOAPIC(value: Boolean): Self = StObject.set(x, "IOAPIC", value.asInstanceOf[js.Any])
+    inline def setHpet(value: Boolean): Self = StObject.set(x, "hpet", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIoApic(value: Boolean): Self = StObject.set(x, "ioApic", value.asInstanceOf[js.Any])
     
     inline def setLogFolder(value: String): Self = StObject.set(x, "logFolder", value.asInstanceOf[js.Any])
     
@@ -171,11 +171,11 @@ object VboxInfoData {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPAE(value: Boolean): Self = StObject.set(x, "PAE", value.asInstanceOf[js.Any])
+    inline def setPae(value: Boolean): Self = StObject.set(x, "pae", value.asInstanceOf[js.Any])
     
     inline def setPageFusion(value: Boolean): Self = StObject.set(x, "pageFusion", value.asInstanceOf[js.Any])
     
-    inline def setRTC(value: String): Self = StObject.set(x, "RTC", value.asInstanceOf[js.Any])
+    inline def setRtc(value: String): Self = StObject.set(x, "rtc", value.asInstanceOf[js.Any])
     
     inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
@@ -195,6 +195,6 @@ object VboxInfoData {
     
     inline def setVram(value: Double): Self = StObject.set(x, "vram", value.asInstanceOf[js.Any])
     
-    inline def setX2APIC(value: Boolean): Self = StObject.set(x, "X2APIC", value.asInstanceOf[js.Any])
+    inline def setX2Apic(value: Boolean): Self = StObject.set(x, "x2Apic", value.asInstanceOf[js.Any])
   }
 }

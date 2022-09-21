@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBoxEvent extends StObject {
   
   /** any object */
-  var args: js.Any
+  var args: Any
   
   /** unique event name */
   var eventName: String
@@ -18,14 +18,14 @@ trait ListBoxEvent extends StObject {
 }
 object ListBoxEvent {
   
-  inline def apply(args: js.Any, eventName: String, target: Element): ListBoxEvent = {
+  inline def apply(args: Any, eventName: String, target: Element): ListBoxEvent = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxEvent]
   }
   
   extension [Self <: ListBoxEvent](x: Self) {
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

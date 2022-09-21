@@ -26,11 +26,11 @@ object webRequestHeaderMod {
       
       inline def setHeaders(value: js.Array[WebRequestHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: WebRequestHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: WebRequestHeader*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "urlPatterns", value.asInstanceOf[js.Any])
       
-      inline def setUrlPatternsVarargs(value: String*): Self = StObject.set(x, "urlPatterns", js.Array(value :_*))
+      inline def setUrlPatternsVarargs(value: String*): Self = StObject.set(x, "urlPatterns", js.Array(value*))
     }
   }
 }

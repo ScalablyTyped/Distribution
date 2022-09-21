@@ -9,7 +9,7 @@ trait DestinationBackup extends StObject {
   /**
     * The date and time when both the source backup was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (ID) of the source backup from which the new backup was copied.
@@ -35,7 +35,7 @@ object DestinationBackup {
   
   extension [Self <: DestinationBackup](x: Self) {
     
-    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     

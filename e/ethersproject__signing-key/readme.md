@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__signing-key
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 Elliptic curve library functions for the secp256k1 curve.
@@ -10,10 +10,10 @@ Elliptic curve library functions for the secp256k1 curve.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/signing-key |
 | Keywords           | Ethereum, ethers |
-| # releases         | 31 |
-| # dependents       | 14 |
-| # downloads        | 2572167 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3598076.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

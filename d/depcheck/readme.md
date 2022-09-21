@@ -1,7 +1,7 @@
 
 # Scala.js typings for depcheck
 
-Typings are for version 1.3.1
+Typings are for version 1.4.3
 
 ## Library description:
 Check dependencies in your node module
@@ -10,15 +10,12 @@ Check dependencies in your node module
 | ------------------ | :-------------: |
 | Full name          | depcheck |
 | Keywords           | check, unused, package, packages, depcheck, dependency, dependencies, devDependencies |
-| # releases         | 14 |
-| # dependents       | 99 |
-| # downloads        | 9720172 |
-| # stars            | 58 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1480845.0 |
+| # stars            | 3319.0 |
 
 ## Links
-- [Homepage](https://github.com/depcheck/depcheck#readme)
-- [Bugs](https://github.com/depcheck/depcheck/issues)
-- [Repository](https://github.com/depcheck/depcheck)
 - [Npm](https://www.npmjs.com/package/depcheck)
     
 

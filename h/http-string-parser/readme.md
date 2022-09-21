@@ -10,9 +10,9 @@ Parse HTTP Request and Response from String
 | Full name          | http-string-parser |
 | Keywords           | http, message, request, response, parser, string, raw, bare |
 | # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 994173 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 86858.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/apiaryio/http-string-parser#readme)

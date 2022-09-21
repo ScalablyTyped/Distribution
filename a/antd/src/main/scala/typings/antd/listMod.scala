@@ -7,6 +7,7 @@ import typings.antd.spinMod.SpinProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Consumer
 import typings.react.mod.Context
+import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -73,7 +74,7 @@ object listMod {
   
   trait ListConsumerProps extends StObject {
     
-    var grid: js.UndefOr[js.Any] = js.undefined
+    var grid: js.UndefOr[Any] = js.undefined
     
     var itemLayout: js.UndefOr[String] = js.undefined
   }
@@ -86,7 +87,7 @@ object listMod {
     
     extension [Self <: ListConsumerProps](x: Self) {
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
@@ -171,7 +172,7 @@ object listMod {
   
   trait ListLocale extends StObject {
     
-    var emptyText: ReactNode | js.Function0[ReactNode]
+    var emptyText: ReactNode
   }
   object ListLocale {
     
@@ -182,9 +183,7 @@ object listMod {
     
     extension [Self <: ListLocale](x: Self) {
       
-      inline def setEmptyText(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
-      
-      inline def setEmptyTextFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyText", js.Any.fromFunction0(value))
+      inline def setEmptyText(value: ReactNode): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
       inline def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
     }
@@ -224,7 +223,7 @@ object listMod {
     
     var renderItem: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, ReactNode]] = js.undefined
     
-    var rowKey: js.UndefOr[(js.Function1[/* item */ T, String]) | String] = js.undefined
+    var rowKey: js.UndefOr[(js.Function1[/* item */ T, Key]) | (/* keyof T */ String)] = js.undefined
     
     var size: js.UndefOr[ListSize] = js.undefined
     
@@ -257,7 +256,7 @@ object listMod {
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -307,9 +306,9 @@ object listMod {
       
       inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
       
-      inline def setRowKey(value: (js.Function1[/* item */ T, String]) | String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+      inline def setRowKey(value: (js.Function1[/* item */ T, Key]) | (/* keyof T */ String)): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
-      inline def setRowKeyFunction1(value: /* item */ T => String): Self = StObject.set(x, "rowKey", js.Any.fromFunction1(value))
+      inline def setRowKeyFunction1(value: /* item */ T => Key): Self = StObject.set(x, "rowKey", js.Any.fromFunction1(value))
       
       inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
       

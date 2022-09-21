@@ -17,5 +17,5 @@ trait BuildingComponentSublayerConstructor
 Instantiable0[BuildingComponentSublayer]
      with Instantiable1[/* properties */ BuildingComponentSublayerProperties, BuildingComponentSublayer] {
   
-  def fromJSON(json: js.Any): BuildingComponentSublayer = js.native
+  def fromJSON(json: Any): BuildingComponentSublayer = js.native
 }

@@ -101,7 +101,7 @@ object UserProfiles {
     
     inline def setAuthenticationMethodsVarargs(
       value: (/* Contains information about the method used for authentication. */ AuthenticationMethod)*
-    ): Self = StObject.set(x, "authenticationMethods", js.Array(value :_*))
+    ): Self = StObject.set(x, "authenticationMethods", js.Array(value*))
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     

@@ -33,6 +33,6 @@ object DeletionTaskFailureReasonType {
     
     inline def setRoleUsageListUndefined: Self = StObject.set(x, "RoleUsageList", js.undefined)
     
-    inline def setRoleUsageListVarargs(value: RoleUsageType*): Self = StObject.set(x, "RoleUsageList", js.Array(value :_*))
+    inline def setRoleUsageListVarargs(value: RoleUsageType*): Self = StObject.set(x, "RoleUsageList", js.Array(value*))
   }
 }

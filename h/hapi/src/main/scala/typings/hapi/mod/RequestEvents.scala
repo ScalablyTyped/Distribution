@@ -13,10 +13,7 @@ trait RequestEvents
   extends StObject
      with Podium {
   
-  @JSName("on")
-  def on_disconnect(criteria: disconnect, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
-  @JSName("on")
-  def on_finish(criteria: finish, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
+  def on(criteria: finish | disconnect, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
   /**
     * Access: read only and the public podium interface.
     * The request.events supports the following events:
@@ -28,10 +25,7 @@ trait RequestEvents
   @JSName("on")
   def on_peek(criteria: peek, listener: PeekListener): Unit = js.native
   
-  @JSName("once")
-  def once_disconnect(criteria: disconnect, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
-  @JSName("once")
-  def once_finish(criteria: finish, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
+  def once(criteria: finish | disconnect, listener: js.Function1[/* data */ Unit, Unit]): Unit = js.native
   /**
     * Access: read only and the public podium interface.
     * The request.events supports the following events:

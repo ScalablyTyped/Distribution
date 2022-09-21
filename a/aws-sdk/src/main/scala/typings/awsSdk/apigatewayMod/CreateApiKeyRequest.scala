@@ -79,7 +79,7 @@ object CreateApiKeyRequest {
     
     inline def setStageKeysUndefined: Self = StObject.set(x, "stageKeys", js.undefined)
     
-    inline def setStageKeysVarargs(value: StageKey*): Self = StObject.set(x, "stageKeys", js.Array(value :_*))
+    inline def setStageKeysVarargs(value: StageKey*): Self = StObject.set(x, "stageKeys", js.Array(value*))
     
     inline def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

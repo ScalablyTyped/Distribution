@@ -16,7 +16,7 @@ trait BonusPayment extends StObject {
   /**
     * The date and time of when the bonus was granted.
     */
-  var GrantTime: js.UndefOr[Timestamp] = js.undefined
+  var GrantTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Reason text given when the bonus was granted, if any.
@@ -45,7 +45,7 @@ object BonusPayment {
     
     inline def setBonusAmountUndefined: Self = StObject.set(x, "BonusAmount", js.undefined)
     
-    inline def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
+    inline def setGrantTime(value: js.Date): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
     
     inline def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
     

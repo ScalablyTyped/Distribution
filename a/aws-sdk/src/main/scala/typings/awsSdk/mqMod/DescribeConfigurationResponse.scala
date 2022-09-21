@@ -12,14 +12,14 @@ trait DescribeConfigurationResponse extends StObject {
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The authentication strategy associated with the configuration.
+    * Optional. The authentication strategy associated with the configuration. The default is SIMPLE.
     */
   var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
     * Required. The date and time of the configuration revision.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Required. The description of the configuration.
@@ -27,12 +27,12 @@ trait DescribeConfigurationResponse extends StObject {
   var Description: js.UndefOr[string] = js.undefined
   
   /**
-    * Required. The type of broker engine. Note: Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
+    * Required. The type of broker engine. Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
     */
   var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
-    * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
+    * Required. The broker engine's version. For a list of supported engine versions, see, Supported engines.
     */
   var EngineVersion: js.UndefOr[string] = js.undefined
   
@@ -73,7 +73,7 @@ object DescribeConfigurationResponse {
     
     inline def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     

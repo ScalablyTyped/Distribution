@@ -71,7 +71,7 @@ trait IRouterRequest extends EventEmitter {
   var remoteAddress: String = js.native
   
   /** An array containing a list of extensions requested by the client */
-  var requestedExtensions: js.Array[js.Any] = js.native
+  var requestedExtensions: js.Array[Any] = js.native
   
   /** A string containing the path that was requested by the client */
   var resource: String = js.native

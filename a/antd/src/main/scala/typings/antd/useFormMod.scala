@@ -24,9 +24,9 @@ object useFormMod {
     /** This is an internal usage. Do not use in your prod */
     var __INTERNAL__ : ItemRef = js.native
     
-    def getFieldInstance(name: NamePath): js.Any = js.native
+    def getFieldInstance(name: NamePath): Any = js.native
     
     def scrollToField(name: NamePath): Unit = js.native
-    def scrollToField(name: NamePath, options: Options[js.Any]): Unit = js.native
+    def scrollToField(name: NamePath, options: Options[Any]): Unit = js.native
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "GraphQuery")
 @js.native
-class GraphQuery protected () extends StObject {
+open class GraphQuery protected () extends StObject {
   /**
     * Create a GraphQuery object
     * @param {String} str The query to execute
@@ -20,11 +20,11 @@ class GraphQuery protected () extends StObject {
   
   var Model: TypeofModel = js.native
   
-  /* private */ var constructor: js.Any = js.native
+  /* private */ var constructor: Any = js.native
   
   var identifier: String = js.native
   
-  var joins: js.Any = js.native
+  var joins: Any = js.native
   
   var name: String = js.native
   
@@ -34,7 +34,7 @@ class GraphQuery protected () extends StObject {
     */
   def query(callback: js.Function): this.type = js.native
   
-  var structure: js.Any = js.native
+  var structure: Any = js.native
 }
 /* static members */
 object GraphQuery {
@@ -46,8 +46,8 @@ object GraphQuery {
   /**
     * Format a parsed syntax tree in a way that the Composer expects
     */
-  inline def formatTree(tree: js.Array[js.Any], max: Double, joins: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def formatTree(tree: js.Array[js.Any], max: Double, joins: js.Any, parents: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def formatTree(tree: js.Array[Any], max: Double, joins: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def formatTree(tree: js.Array[Any], max: Double, joins: Any, parents: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   /**
     * Fully parse a GraphQL query, get necessary joins to make in SQL
@@ -57,10 +57,10 @@ object GraphQuery {
   /**
     * Parse syntax tree of a GraphQL query
     */
-  inline def parseSyntaxTree(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def parseSyntaxTree(str: String, state: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def parseSyntaxTree(str: String, state: String, arr: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def parseSyntaxTree(str: String, state: Unit, arr: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseSyntaxTree(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parseSyntaxTree(str: String, state: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parseSyntaxTree(str: String, state: String, arr: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parseSyntaxTree(str: String, state: Unit, arr: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Create and execute a GraphQuery object

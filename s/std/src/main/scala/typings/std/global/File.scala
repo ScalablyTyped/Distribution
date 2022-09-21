@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("File")
 @js.native
-class File protected ()
+open class File protected ()
   extends StObject
      with typings.std.File {
+  /* standard dom */
   def this(fileBits: js.Array[BlobPart], fileName: java.lang.String) = this()
   def this(fileBits: js.Array[BlobPart], fileName: java.lang.String, options: FilePropertyBag) = this()
 }

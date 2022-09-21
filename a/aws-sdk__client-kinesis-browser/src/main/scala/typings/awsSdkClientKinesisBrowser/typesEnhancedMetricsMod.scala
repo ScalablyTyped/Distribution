@@ -8,7 +8,6 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.Outg
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.OutgoingRecords
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ReadProvisionedThroughputExceeded
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.WriteProvisionedThroughputExceeded
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesEnhancedMetricsMod {
     var ShardLevelMetrics: js.UndefOr[
         (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ])
       ] = js.undefined
@@ -40,7 +39,7 @@ object typesEnhancedMetricsMod {
       inline def setShardLevelMetrics(
         value: (js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
-            ]) | (Iterable[
+            ]) | (js.Iterable[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ])
       ): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
@@ -49,7 +48,7 @@ object typesEnhancedMetricsMod {
       
       inline def setShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
-      ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
+      ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value*))
     }
   }
   
@@ -86,7 +85,7 @@ object typesEnhancedMetricsMod {
       
       inline def setShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
-      ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
+      ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value*))
     }
   }
 }

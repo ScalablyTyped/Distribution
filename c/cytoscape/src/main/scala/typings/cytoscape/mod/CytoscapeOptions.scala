@@ -2,6 +2,7 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.cytoscapeStrings.auto
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +46,11 @@ trait CytoscapeOptions extends StObject {
     * The default is undefined.
     */
   var container: js.UndefOr[HTMLElement | Null] = js.undefined
+  
+  /**
+    * A plain object that contains graph-level data (i.e. data that does not belong to any particular node or edge).
+    */
+  var data: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * A nonnegative integer that indicates the maximum allowable distance that a user may move during a tap gesture,
@@ -275,6 +281,10 @@ object CytoscapeOptions {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
     inline def setDesktopTapThreshold(value: Double): Self = StObject.set(x, "desktopTapThreshold", value.asInstanceOf[js.Any])
     
     inline def setDesktopTapThresholdUndefined: Self = StObject.set(x, "desktopTapThreshold", js.undefined)
@@ -285,7 +295,7 @@ object CytoscapeOptions {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
@@ -343,7 +353,7 @@ object CytoscapeOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: Stylesheet*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: Stylesheet*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setTextureOnViewport(value: Boolean): Self = StObject.set(x, "textureOnViewport", value.asInstanceOf[js.Any])
     

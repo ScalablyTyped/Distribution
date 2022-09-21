@@ -25,14 +25,14 @@ object walkerMod {
   
   @JSImport("tslint/lib/language/walker", "ProgramAwareRuleWalker")
   @js.native
-  class ProgramAwareRuleWalker protected ()
+  open class ProgramAwareRuleWalker protected ()
     extends typings.tslint.programAwareRuleWalkerMod.ProgramAwareRuleWalker {
     def this(sourceFile: SourceFile, options: IOptions, program: Program) = this()
   }
   
   @JSImport("tslint/lib/language/walker", "RuleWalker")
   @js.native
-  class RuleWalker protected ()
+  open class RuleWalker protected ()
     extends typings.tslint.ruleWalkerMod.RuleWalker {
     def this(sourceFile: SourceFile, options: IOptions) = this()
   }
@@ -46,12 +46,12 @@ object walkerMod {
   
   @JSImport("tslint/lib/language/walker", "SyntaxWalker")
   @js.native
-  class SyntaxWalker ()
+  open class SyntaxWalker ()
     extends typings.tslint.syntaxWalkerMod.SyntaxWalker
   
   @JSImport("tslint/lib/language/walker", "WalkContext")
   @js.native
-  class WalkContext[T] protected ()
+  open class WalkContext[T] protected ()
     extends typings.tslint.walkContextMod.WalkContext[T] {
     def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
   }

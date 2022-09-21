@@ -15,7 +15,9 @@ object workspace {
   val ^ : js.Any = js.native
   
   inline def createModelViewEditor(title: String): ModelViewEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any]).asInstanceOf[ModelViewEditor]
+  inline def createModelViewEditor(title: String, options: Unit, name: String): ModelViewEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModelViewEditor]
   inline def createModelViewEditor(title: String, options: ModelViewEditorOptions): ModelViewEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModelViewEditor]
+  inline def createModelViewEditor(title: String, options: ModelViewEditorOptions, name: String): ModelViewEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewEditor")(title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModelViewEditor]
   
   @JSImport("azdata", "workspace.onDidChangeToDashboard")
   @js.native

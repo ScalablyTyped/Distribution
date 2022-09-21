@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response message from importing an SSH public key.
-  */
 trait SchemaImportSshPublicKeyResponse extends StObject {
+  
+  /**
+    * Detailed information about import results.
+    */
+  var details: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The login profile information for the user.
@@ -22,6 +24,12 @@ object SchemaImportSshPublicKeyResponse {
   }
   
   extension [Self <: SchemaImportSshPublicKeyResponse](x: Self) {
+    
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     inline def setLoginProfile(value: SchemaLoginProfile): Self = StObject.set(x, "loginProfile", value.asInstanceOf[js.Any])
     

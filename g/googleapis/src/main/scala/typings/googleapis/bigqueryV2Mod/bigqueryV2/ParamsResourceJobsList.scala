@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +14,7 @@ trait ParamsResourceJobsList
   var allUsers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Max value for job creation time, in milliseconds since the POSIX epoch.
-    * If set, only jobs created before or at this timestamp are returned
+    * Max value for job creation time, in milliseconds since the POSIX epoch. If set, only jobs created before or at this timestamp are returned
     */
   var maxCreationTime: js.UndefOr[String] = js.undefined
   
@@ -34,16 +24,19 @@ trait ParamsResourceJobsList
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Min value for job creation time, in milliseconds since the POSIX epoch.
-    * If set, only jobs created after or at this timestamp are returned
+    * Min value for job creation time, in milliseconds since the POSIX epoch. If set, only jobs created after or at this timestamp are returned
     */
   var minCreationTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Page token, returned by a previous call, to request the next page of
-    * results
+    * Page token, returned by a previous call, to request the next page of results
     */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set, retrieves only jobs whose parent is this job. Otherwise, retrieves only jobs which have no parent
+    */
+  var parentJobId: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID of the jobs to list
@@ -73,10 +66,6 @@ object ParamsResourceJobsList {
     
     inline def setAllUsersUndefined: Self = StObject.set(x, "allUsers", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setMaxCreationTime(value: String): Self = StObject.set(x, "maxCreationTime", value.asInstanceOf[js.Any])
     
     inline def setMaxCreationTimeUndefined: Self = StObject.set(x, "maxCreationTime", js.undefined)
@@ -93,6 +82,10 @@ object ParamsResourceJobsList {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
+    inline def setParentJobId(value: String): Self = StObject.set(x, "parentJobId", value.asInstanceOf[js.Any])
+    
+    inline def setParentJobIdUndefined: Self = StObject.set(x, "parentJobId", js.undefined)
+    
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
@@ -105,6 +98,6 @@ object ParamsResourceJobsList {
     
     inline def setStateFilterUndefined: Self = StObject.set(x, "stateFilter", js.undefined)
     
-    inline def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value :_*))
+    inline def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value*))
   }
 }

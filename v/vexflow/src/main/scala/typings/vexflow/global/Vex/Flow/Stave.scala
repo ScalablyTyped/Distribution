@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Stave")
 @js.native
-class Stave protected ()
+open class Stave protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Stave {
   def this(x: Double, y: Double, width: Double) = this()

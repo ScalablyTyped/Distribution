@@ -10,7 +10,7 @@ trait IPie3D
      with IPolar {
   
   /** [Config Option] (Boolean/Number) */
-  var donut: js.UndefOr[js.Any] = js.undefined
+  var donut: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var field: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ trait IPie3D
   /** [Method] Returns the value of donut
     * @returns Boolean/Number
     */
-  var getDonut: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDonut: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of field
     * @returns String
@@ -48,7 +48,7 @@ trait IPie3D
   /** [Method] Sets the value of donut
     * @param donut Boolean/Number The new value.
     */
-  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of field
     * @param field String The new value.
@@ -74,7 +74,7 @@ object IPie3D {
   
   extension [Self <: IPie3D](x: Self) {
     
-    inline def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+    inline def setDonut(value: Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
@@ -86,7 +86,7 @@ object IPie3D {
     
     inline def setGetDistortionUndefined: Self = StObject.set(x, "getDistortion", js.undefined)
     
-    inline def setGetDonut(value: () => js.Any): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
+    inline def setGetDonut(value: () => Any): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
     inline def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
     
@@ -106,7 +106,7 @@ object IPie3D {
     
     inline def setSetDistortionUndefined: Self = StObject.set(x, "setDistortion", js.undefined)
     
-    inline def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
+    inline def setSetDonut(value: /* donut */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
     
     inline def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
     

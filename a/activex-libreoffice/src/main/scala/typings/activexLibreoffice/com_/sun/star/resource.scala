@@ -99,7 +99,7 @@ object resource {
       isModified: () => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,
@@ -168,7 +168,7 @@ object resource {
       isModified: () => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,
@@ -345,7 +345,7 @@ object resource {
       getISOCountries: () => SafeArray[String],
       getISOLanguages: () => SafeArray[String],
       getLanguagesForCountry: String => SafeArray[String],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDefault: Locale => Unit
     ): XLocale = {
@@ -515,7 +515,7 @@ object resource {
       * @param key specifies the element.
       * @returns an object from a resource bundle or NULL if no resource exists.  It does not look in the parents.
       */
-    def getDirectElement(key: String): js.Any
+    def getDirectElement(key: String): Any
     
     /** @returns the locale for this resource bundle.  This function can be used to determine whether the resource bundle that is returned really corresponds to t */
     def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
@@ -528,14 +528,14 @@ object resource {
       Locale: Locale,
       Parent: XResourceBundle,
       acquire: () => Unit,
-      getByName: String => js.Any,
-      getDirectElement: String => js.Any,
+      getByName: String => Any,
+      getDirectElement: String => Any,
       getElementNames: () => SafeArray[String],
       getElementType: () => `type`,
       getLocale: () => Locale,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XResourceBundle = {
       val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByName = js.Any.fromFunction1(getByName), getDirectElement = js.Any.fromFunction1(getDirectElement), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getLocale = js.Any.fromFunction0(getLocale), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -544,7 +544,7 @@ object resource {
     
     extension [Self <: XResourceBundle](x: Self) {
       
-      inline def setGetDirectElement(value: String => js.Any): Self = StObject.set(x, "getDirectElement", js.Any.fromFunction1(value))
+      inline def setGetDirectElement(value: String => Any): Self = StObject.set(x, "getDirectElement", js.Any.fromFunction1(value))
       
       inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
       
@@ -579,7 +579,7 @@ object resource {
       acquire: () => Unit,
       loadBundle: (String, Locale) => XResourceBundle,
       loadBundle_Default: String => XResourceBundle,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XResourceBundleLoader = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), loadBundle = js.Any.fromFunction2(loadBundle), loadBundle_Default = js.Any.fromFunction1(loadBundle_Default), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -741,7 +741,7 @@ object resource {
       hasEntryForIdAndLocale: (String, Locale) => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,
@@ -907,7 +907,7 @@ object resource {
       isModified: () => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,
@@ -1074,7 +1074,7 @@ object resource {
       getResourceIDsForLocale: Locale => SafeArray[String],
       hasEntryForId: String => Boolean,
       hasEntryForIdAndLocale: (String, Locale) => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeModifyListener: XModifyListener => Unit,
       resolveString: String => String,
@@ -1141,7 +1141,7 @@ object resource {
       StringResource: XStringResourceResolver,
       acquire: () => Unit,
       getStringResource: () => XStringResourceResolver,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XStringResourceSupplier = {
       val __obj = js.Dynamic.literal(StringResource = StringResource.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getStringResource = js.Any.fromFunction0(getStringResource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -1202,7 +1202,7 @@ object resource {
       isModified: () => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,
@@ -1279,7 +1279,7 @@ object resource {
       isModified: () => Boolean,
       isReadOnly: () => Boolean,
       newLocale: Locale => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeId: String => Unit,
       removeIdForLocale: (String, Locale) => Unit,

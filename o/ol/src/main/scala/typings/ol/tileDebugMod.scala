@@ -10,7 +10,7 @@ object tileDebugMod {
   
   @JSImport("ol/source/TileDebug", JSImport.Default)
   @js.native
-  class default () extends TileDebug {
+  open class default () extends TileDebug {
     def this(opt_options: Options) = this()
   }
   

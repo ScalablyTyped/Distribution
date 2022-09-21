@@ -146,7 +146,7 @@ object configurationMod {
       
       inline def setExtends(value: js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setJsRules(value: Map[String, PartialIOptions]): Self = StObject.set(x, "jsRules", value.asInstanceOf[js.Any])
       
@@ -158,7 +158,7 @@ object configurationMod {
       
       inline def setRulesDirectory(value: js.Array[String]): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
       
-      inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
+      inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value*))
     }
   }
   
@@ -218,7 +218,7 @@ object configurationMod {
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setJsRules(value: RawRulesConfig | Boolean): Self = StObject.set(x, "jsRules", value.asInstanceOf[js.Any])
       
@@ -234,13 +234,13 @@ object configurationMod {
       
       inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
       
-      inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
+      inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value*))
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     }
   }
   
-  type RawRuleConfig = js.UndefOr[Null | Boolean | js.Array[js.Any] | Severity]
+  type RawRuleConfig = js.UndefOr[Null | Boolean | js.Array[Any] | Severity]
   
   type RawRulesConfig = StringDictionary[RawRuleConfig]
 }

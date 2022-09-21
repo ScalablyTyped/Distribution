@@ -9,7 +9,7 @@ object anon {
   /* Inlined {  x :number,   y :number} & node-sprite-generator.node-sprite-generator.Image */
   trait xnumberynumberImage extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var height: Double
     
@@ -21,14 +21,14 @@ object anon {
   }
   object xnumberynumberImage {
     
-    inline def apply(data: js.Any, height: Double, width: Double, x: Double, y: Double): xnumberynumberImage = {
+    inline def apply(data: Any, height: Double, width: Double, x: Double, y: Double): xnumberynumberImage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[xnumberynumberImage]
     }
     
     extension [Self <: xnumberynumberImage](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

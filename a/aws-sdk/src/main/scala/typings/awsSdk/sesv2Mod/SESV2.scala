@@ -89,12 +89,12 @@ trait SESV2 extends Service {
   ): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   
   /**
-    * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your AWS account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, the message is sent from one of the addresses in the associated pool.
+    * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your Amazon Web Services account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, the message is sent from one of the addresses in the associated pool.
     */
   def createDedicatedIpPool(): Request[CreateDedicatedIpPoolResponse, AWSError] = js.native
   def createDedicatedIpPool(callback: js.Function2[/* err */ AWSError, /* data */ CreateDedicatedIpPoolResponse, Unit]): Request[CreateDedicatedIpPoolResponse, AWSError] = js.native
   /**
-    * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your AWS account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, the message is sent from one of the addresses in the associated pool.
+    * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your Amazon Web Services account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, the message is sent from one of the addresses in the associated pool.
     */
   def createDedicatedIpPool(params: CreateDedicatedIpPoolRequest): Request[CreateDedicatedIpPoolResponse, AWSError] = js.native
   def createDedicatedIpPool(
@@ -119,12 +119,12 @@ trait SESV2 extends Service {
   ): Request[CreateDeliverabilityTestReportResponse, AWSError] = js.native
   
   /**
-    * Starts the process of verifying an email identity. An identity is an email address or domain that you use when you send email. Before you can use an identity to send email, you first have to verify it. By verifying an identity, you demonstrate that you're the owner of the identity, and that you've given Amazon SES API v2 permission to send email from the identity. When you verify an email address, Amazon SES sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain without specifying the DkimSigningAttributes object, this operation provides a set of DKIM tokens. You can convert these tokens into CNAME records, which you then add to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. This verification method is known as Easy DKIM. Alternatively, you can perform the verification process by providing your own public-private key pair. This verification method is known as Bring Your Own DKIM (BYODKIM). To use BYODKIM, your call to the CreateEmailIdentity operation has to include the DkimSigningAttributes object. When you specify this object, you provide a selector (a component of the DNS record name that identifies the public key that you want to use for DKIM authentication) and a private key.
+    * Starts the process of verifying an email identity. An identity is an email address or domain that you use when you send email. Before you can use an identity to send email, you first have to verify it. By verifying an identity, you demonstrate that you're the owner of the identity, and that you've given Amazon SES API v2 permission to send email from the identity. When you verify an email address, Amazon SES sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain without specifying the DkimSigningAttributes object, this operation provides a set of DKIM tokens. You can convert these tokens into CNAME records, which you then add to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. This verification method is known as Easy DKIM. Alternatively, you can perform the verification process by providing your own public-private key pair. This verification method is known as Bring Your Own DKIM (BYODKIM). To use BYODKIM, your call to the CreateEmailIdentity operation has to include the DkimSigningAttributes object. When you specify this object, you provide a selector (a component of the DNS record name that identifies the public key to use for DKIM authentication) and a private key. When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. For some DNS providers, it can take 72 hours or more to complete the domain verification process. Additionally, you can associate an existing configuration set with the email identity that you're verifying.
     */
   def createEmailIdentity(): Request[CreateEmailIdentityResponse, AWSError] = js.native
   def createEmailIdentity(callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailIdentityResponse, Unit]): Request[CreateEmailIdentityResponse, AWSError] = js.native
   /**
-    * Starts the process of verifying an email identity. An identity is an email address or domain that you use when you send email. Before you can use an identity to send email, you first have to verify it. By verifying an identity, you demonstrate that you're the owner of the identity, and that you've given Amazon SES API v2 permission to send email from the identity. When you verify an email address, Amazon SES sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain without specifying the DkimSigningAttributes object, this operation provides a set of DKIM tokens. You can convert these tokens into CNAME records, which you then add to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. This verification method is known as Easy DKIM. Alternatively, you can perform the verification process by providing your own public-private key pair. This verification method is known as Bring Your Own DKIM (BYODKIM). To use BYODKIM, your call to the CreateEmailIdentity operation has to include the DkimSigningAttributes object. When you specify this object, you provide a selector (a component of the DNS record name that identifies the public key that you want to use for DKIM authentication) and a private key.
+    * Starts the process of verifying an email identity. An identity is an email address or domain that you use when you send email. Before you can use an identity to send email, you first have to verify it. By verifying an identity, you demonstrate that you're the owner of the identity, and that you've given Amazon SES API v2 permission to send email from the identity. When you verify an email address, Amazon SES sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain without specifying the DkimSigningAttributes object, this operation provides a set of DKIM tokens. You can convert these tokens into CNAME records, which you then add to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. This verification method is known as Easy DKIM. Alternatively, you can perform the verification process by providing your own public-private key pair. This verification method is known as Bring Your Own DKIM (BYODKIM). To use BYODKIM, your call to the CreateEmailIdentity operation has to include the DkimSigningAttributes object. When you specify this object, you provide a selector (a component of the DNS record name that identifies the public key to use for DKIM authentication) and a private key. When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon SES detects these records in the DNS configuration for your domain. For some DNS providers, it can take 72 hours or more to complete the domain verification process. Additionally, you can associate an existing configuration set with the email identity that you're verifying.
     */
   def createEmailIdentity(params: CreateEmailIdentityRequest): Request[CreateEmailIdentityResponse, AWSError] = js.native
   def createEmailIdentity(
@@ -319,12 +319,12 @@ trait SESV2 extends Service {
   ): Request[DeleteSuppressedDestinationResponse, AWSError] = js.native
   
   /**
-    * Obtain information about the email-sending status and capabilities of your Amazon SES account in the current AWS Region.
+    * Obtain information about the email-sending status and capabilities of your Amazon SES account in the current Amazon Web Services Region.
     */
   def getAccount(): Request[GetAccountResponse, AWSError] = js.native
   def getAccount(callback: js.Function2[/* err */ AWSError, /* data */ GetAccountResponse, Unit]): Request[GetAccountResponse, AWSError] = js.native
   /**
-    * Obtain information about the email-sending status and capabilities of your Amazon SES account in the current AWS Region.
+    * Obtain information about the email-sending status and capabilities of your Amazon SES account in the current Amazon Web Services Region.
     */
   def getAccount(params: GetAccountRequest): Request[GetAccountResponse, AWSError] = js.native
   def getAccount(
@@ -435,12 +435,12 @@ trait SESV2 extends Service {
   ): Request[GetDedicatedIpResponse, AWSError] = js.native
   
   /**
-    * List the dedicated IP addresses that are associated with your AWS account.
+    * List the dedicated IP addresses that are associated with your Amazon Web Services account.
     */
   def getDedicatedIps(): Request[GetDedicatedIpsResponse, AWSError] = js.native
   def getDedicatedIps(callback: js.Function2[/* err */ AWSError, /* data */ GetDedicatedIpsResponse, Unit]): Request[GetDedicatedIpsResponse, AWSError] = js.native
   /**
-    * List the dedicated IP addresses that are associated with your AWS account.
+    * List the dedicated IP addresses that are associated with your Amazon Web Services account.
     */
   def getDedicatedIps(params: GetDedicatedIpsRequest): Request[GetDedicatedIpsResponse, AWSError] = js.native
   def getDedicatedIps(
@@ -449,14 +449,14 @@ trait SESV2 extends Service {
   ): Request[GetDedicatedIpsResponse, AWSError] = js.native
   
   /**
-    * Retrieve information about the status of the Deliverability dashboard for your account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other AWS services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
+    * Retrieve information about the status of the Deliverability dashboard for your account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other Amazon Web Services services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
     */
   def getDeliverabilityDashboardOptions(): Request[GetDeliverabilityDashboardOptionsResponse, AWSError] = js.native
   def getDeliverabilityDashboardOptions(
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeliverabilityDashboardOptionsResponse, Unit]
   ): Request[GetDeliverabilityDashboardOptionsResponse, AWSError] = js.native
   /**
-    * Retrieve information about the status of the Deliverability dashboard for your account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other AWS services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
+    * Retrieve information about the status of the Deliverability dashboard for your account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other Amazon Web Services services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
     */
   def getDeliverabilityDashboardOptions(params: GetDeliverabilityDashboardOptionsRequest): Request[GetDeliverabilityDashboardOptionsResponse, AWSError] = js.native
   def getDeliverabilityDashboardOptions(
@@ -621,14 +621,14 @@ trait SESV2 extends Service {
   ): Request[ListContactsResponse, AWSError] = js.native
   
   /**
-    * Lists the existing custom verification email templates for your account in the current AWS Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def listCustomVerificationEmailTemplates(): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   def listCustomVerificationEmailTemplates(
     callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVerificationEmailTemplatesResponse, Unit]
   ): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   /**
-    * Lists the existing custom verification email templates for your account in the current AWS Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def listCustomVerificationEmailTemplates(params: ListCustomVerificationEmailTemplatesRequest): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   def listCustomVerificationEmailTemplates(
@@ -637,12 +637,12 @@ trait SESV2 extends Service {
   ): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   
   /**
-    * List all of the dedicated IP pools that exist in your AWS account in the current Region.
+    * List all of the dedicated IP pools that exist in your Amazon Web Services account in the current Region.
     */
   def listDedicatedIpPools(): Request[ListDedicatedIpPoolsResponse, AWSError] = js.native
   def listDedicatedIpPools(callback: js.Function2[/* err */ AWSError, /* data */ ListDedicatedIpPoolsResponse, Unit]): Request[ListDedicatedIpPoolsResponse, AWSError] = js.native
   /**
-    * List all of the dedicated IP pools that exist in your AWS account in the current Region.
+    * List all of the dedicated IP pools that exist in your Amazon Web Services account in the current Region.
     */
   def listDedicatedIpPools(params: ListDedicatedIpPoolsRequest): Request[ListDedicatedIpPoolsResponse, AWSError] = js.native
   def listDedicatedIpPools(
@@ -681,12 +681,12 @@ trait SESV2 extends Service {
   ): Request[ListDomainDeliverabilityCampaignsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of all of the email identities that are associated with your AWS account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't. This operation returns identities that are associated with Amazon SES and Amazon Pinpoint.
+    * Returns a list of all of the email identities that are associated with your Amazon Web Services account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't. This operation returns identities that are associated with Amazon SES and Amazon Pinpoint.
     */
   def listEmailIdentities(): Request[ListEmailIdentitiesResponse, AWSError] = js.native
   def listEmailIdentities(callback: js.Function2[/* err */ AWSError, /* data */ ListEmailIdentitiesResponse, Unit]): Request[ListEmailIdentitiesResponse, AWSError] = js.native
   /**
-    * Returns a list of all of the email identities that are associated with your AWS account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't. This operation returns identities that are associated with Amazon SES and Amazon Pinpoint.
+    * Returns a list of all of the email identities that are associated with your Amazon Web Services account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't. This operation returns identities that are associated with Amazon SES and Amazon Pinpoint.
     */
   def listEmailIdentities(params: ListEmailIdentitiesRequest): Request[ListEmailIdentitiesResponse, AWSError] = js.native
   def listEmailIdentities(
@@ -695,12 +695,12 @@ trait SESV2 extends Service {
   ): Request[ListEmailIdentitiesResponse, AWSError] = js.native
   
   /**
-    * Lists the email templates present in your Amazon SES account in the current AWS Region. You can execute this operation no more than once per second.
+    * Lists the email templates present in your Amazon SES account in the current Amazon Web Services Region. You can execute this operation no more than once per second.
     */
   def listEmailTemplates(): Request[ListEmailTemplatesResponse, AWSError] = js.native
   def listEmailTemplates(callback: js.Function2[/* err */ AWSError, /* data */ ListEmailTemplatesResponse, Unit]): Request[ListEmailTemplatesResponse, AWSError] = js.native
   /**
-    * Lists the email templates present in your Amazon SES account in the current AWS Region. You can execute this operation no more than once per second.
+    * Lists the email templates present in your Amazon SES account in the current Amazon Web Services Region. You can execute this operation no more than once per second.
     */
   def listEmailTemplates(params: ListEmailTemplatesRequest): Request[ListEmailTemplatesResponse, AWSError] = js.native
   def listEmailTemplates(
@@ -827,14 +827,14 @@ trait SESV2 extends Service {
   ): Request[PutConfigurationSetDeliveryOptionsResponse, AWSError] = js.native
   
   /**
-    * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific AWS Region.
+    * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific Amazon Web Services Region.
     */
   def putConfigurationSetReputationOptions(): Request[PutConfigurationSetReputationOptionsResponse, AWSError] = js.native
   def putConfigurationSetReputationOptions(
     callback: js.Function2[/* err */ AWSError, /* data */ PutConfigurationSetReputationOptionsResponse, Unit]
   ): Request[PutConfigurationSetReputationOptionsResponse, AWSError] = js.native
   /**
-    * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific AWS Region.
+    * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific Amazon Web Services Region.
     */
   def putConfigurationSetReputationOptions(params: PutConfigurationSetReputationOptionsRequest): Request[PutConfigurationSetReputationOptionsResponse, AWSError] = js.native
   def putConfigurationSetReputationOptions(
@@ -843,14 +843,14 @@ trait SESV2 extends Service {
   ): Request[PutConfigurationSetReputationOptionsResponse, AWSError] = js.native
   
   /**
-    * Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
+    * Enable or disable email sending for messages that use a particular configuration set in a specific Amazon Web Services Region.
     */
   def putConfigurationSetSendingOptions(): Request[PutConfigurationSetSendingOptionsResponse, AWSError] = js.native
   def putConfigurationSetSendingOptions(
     callback: js.Function2[/* err */ AWSError, /* data */ PutConfigurationSetSendingOptionsResponse, Unit]
   ): Request[PutConfigurationSetSendingOptionsResponse, AWSError] = js.native
   /**
-    * Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
+    * Enable or disable email sending for messages that use a particular configuration set in a specific Amazon Web Services Region.
     */
   def putConfigurationSetSendingOptions(params: PutConfigurationSetSendingOptionsRequest): Request[PutConfigurationSetSendingOptionsResponse, AWSError] = js.native
   def putConfigurationSetSendingOptions(
@@ -891,12 +891,12 @@ trait SESV2 extends Service {
   ): Request[PutConfigurationSetTrackingOptionsResponse, AWSError] = js.native
   
   /**
-    * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your AWS account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
+    * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your Amazon Web Services account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
     */
   def putDedicatedIpInPool(): Request[PutDedicatedIpInPoolResponse, AWSError] = js.native
   def putDedicatedIpInPool(callback: js.Function2[/* err */ AWSError, /* data */ PutDedicatedIpInPoolResponse, Unit]): Request[PutDedicatedIpInPoolResponse, AWSError] = js.native
   /**
-    * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your AWS account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
+    * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your Amazon Web Services account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
     */
   def putDedicatedIpInPool(params: PutDedicatedIpInPoolRequest): Request[PutDedicatedIpInPoolResponse, AWSError] = js.native
   def putDedicatedIpInPool(
@@ -921,20 +921,44 @@ trait SESV2 extends Service {
   ): Request[PutDedicatedIpWarmupAttributesResponse, AWSError] = js.native
   
   /**
-    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other AWS services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
+    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other Amazon Web Services services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
     */
   def putDeliverabilityDashboardOption(): Request[PutDeliverabilityDashboardOptionResponse, AWSError] = js.native
   def putDeliverabilityDashboardOption(
     callback: js.Function2[/* err */ AWSError, /* data */ PutDeliverabilityDashboardOptionResponse, Unit]
   ): Request[PutDeliverabilityDashboardOptionResponse, AWSError] = js.native
   /**
-    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other AWS services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
+    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon SES and other Amazon Web Services services. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon SES Pricing.
     */
   def putDeliverabilityDashboardOption(params: PutDeliverabilityDashboardOptionRequest): Request[PutDeliverabilityDashboardOptionResponse, AWSError] = js.native
   def putDeliverabilityDashboardOption(
     params: PutDeliverabilityDashboardOptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutDeliverabilityDashboardOptionResponse, Unit]
   ): Request[PutDeliverabilityDashboardOptionResponse, AWSError] = js.native
+  
+  /**
+    * Used to associate a configuration set with an email identity.
+    */
+  def putEmailIdentityConfigurationSetAttributes(): Request[PutEmailIdentityConfigurationSetAttributesResponse, AWSError] = js.native
+  def putEmailIdentityConfigurationSetAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ PutEmailIdentityConfigurationSetAttributesResponse, 
+      Unit
+    ]
+  ): Request[PutEmailIdentityConfigurationSetAttributesResponse, AWSError] = js.native
+  /**
+    * Used to associate a configuration set with an email identity.
+    */
+  def putEmailIdentityConfigurationSetAttributes(params: PutEmailIdentityConfigurationSetAttributesRequest): Request[PutEmailIdentityConfigurationSetAttributesResponse, AWSError] = js.native
+  def putEmailIdentityConfigurationSetAttributes(
+    params: PutEmailIdentityConfigurationSetAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ PutEmailIdentityConfigurationSetAttributesResponse, 
+      Unit
+    ]
+  ): Request[PutEmailIdentityConfigurationSetAttributesResponse, AWSError] = js.native
   
   /**
     * Used to enable or disable DKIM authentication for an email identity.
@@ -953,14 +977,14 @@ trait SESV2 extends Service {
   ): Request[PutEmailIdentityDkimAttributesResponse, AWSError] = js.native
   
   /**
-    * Used to configure or change the DKIM authentication settings for an email domain identity. You can use this operation to do any of the following:   Update the signing attributes for an identity that uses Bring Your Own DKIM (BYODKIM).   Change from using no DKIM authentication to using Easy DKIM.   Change from using no DKIM authentication to using BYODKIM.   Change from using Easy DKIM to using BYODKIM.   Change from using BYODKIM to using Easy DKIM.  
+    * Used to configure or change the DKIM authentication settings for an email domain identity. You can use this operation to do any of the following:   Update the signing attributes for an identity that uses Bring Your Own DKIM (BYODKIM).   Update the key length that should be used for Easy DKIM.   Change from using no DKIM authentication to using Easy DKIM.   Change from using no DKIM authentication to using BYODKIM.   Change from using Easy DKIM to using BYODKIM.   Change from using BYODKIM to using Easy DKIM.  
     */
   def putEmailIdentityDkimSigningAttributes(): Request[PutEmailIdentityDkimSigningAttributesResponse, AWSError] = js.native
   def putEmailIdentityDkimSigningAttributes(
     callback: js.Function2[/* err */ AWSError, /* data */ PutEmailIdentityDkimSigningAttributesResponse, Unit]
   ): Request[PutEmailIdentityDkimSigningAttributesResponse, AWSError] = js.native
   /**
-    * Used to configure or change the DKIM authentication settings for an email domain identity. You can use this operation to do any of the following:   Update the signing attributes for an identity that uses Bring Your Own DKIM (BYODKIM).   Change from using no DKIM authentication to using Easy DKIM.   Change from using no DKIM authentication to using BYODKIM.   Change from using Easy DKIM to using BYODKIM.   Change from using BYODKIM to using Easy DKIM.  
+    * Used to configure or change the DKIM authentication settings for an email domain identity. You can use this operation to do any of the following:   Update the signing attributes for an identity that uses Bring Your Own DKIM (BYODKIM).   Update the key length that should be used for Easy DKIM.   Change from using no DKIM authentication to using Easy DKIM.   Change from using no DKIM authentication to using BYODKIM.   Change from using Easy DKIM to using BYODKIM.   Change from using BYODKIM to using Easy DKIM.  
     */
   def putEmailIdentityDkimSigningAttributes(params: PutEmailIdentityDkimSigningAttributesRequest): Request[PutEmailIdentityDkimSigningAttributesResponse, AWSError] = js.native
   def putEmailIdentityDkimSigningAttributes(
@@ -1029,12 +1053,12 @@ trait SESV2 extends Service {
   ): Request[SendBulkEmailResponse, AWSError] = js.native
   
   /**
-    * Adds an email address to the list of identities for your Amazon SES account in the current AWS Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def sendCustomVerificationEmail(): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   def sendCustomVerificationEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendCustomVerificationEmailResponse, Unit]): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   /**
-    * Adds an email address to the list of identities for your Amazon SES account in the current AWS Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def sendCustomVerificationEmail(params: SendCustomVerificationEmailRequest): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   def sendCustomVerificationEmail(
@@ -1043,12 +1067,12 @@ trait SESV2 extends Service {
   ): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   
   /**
-    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
+    * Sends an email message. You can use the Amazon SES API v2 to send the following types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
     */
   def sendEmail(): Request[SendEmailResponse, AWSError] = js.native
   def sendEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendEmailResponse, Unit]): Request[SendEmailResponse, AWSError] = js.native
   /**
-    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
+    * Sends an email message. You can use the Amazon SES API v2 to send the following types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
     */
   def sendEmail(params: SendEmailRequest): Request[SendEmailResponse, AWSError] = js.native
   def sendEmail(

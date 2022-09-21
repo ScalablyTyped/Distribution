@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLText")
 @js.native
-class XMLText () extends XMLCharacterData {
+open class XMLText () extends XMLCharacterData {
   
   def toString(options: XMLToStringOptions): String = js.native
 }

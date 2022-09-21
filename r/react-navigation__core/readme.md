@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation__core
 
-Typings are for version 5.14.4
+Typings are for version 6.4.0
 
 ## Library description:
 Core utilities for building navigators
@@ -10,10 +10,10 @@ Core utilities for building navigators
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/core |
 | Keywords           | react, react-native, react-navigation |
-| # releases         | 125 |
-| # dependents       | 21 |
-| # downloads        | 16730932 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 2523900.3333333335 |
+| # stars            | 21622.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org)

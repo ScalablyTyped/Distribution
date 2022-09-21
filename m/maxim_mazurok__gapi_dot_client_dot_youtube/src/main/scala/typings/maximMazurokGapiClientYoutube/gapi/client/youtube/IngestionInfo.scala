@@ -24,7 +24,7 @@ trait IngestionInfo extends StObject {
   /** This ingestion url may be used instead of ingestionAddress in order to stream via RTMPS. Not applicable to non-RTMP streams. */
   var rtmpsIngestionAddress: js.UndefOr[String] = js.undefined
   
-  /** The HTTP or RTMP stream name that YouTube assigns to the video stream. */
+  /** The stream name that YouTube assigns to the video stream. */
   var streamName: js.UndefOr[String] = js.undefined
 }
 object IngestionInfo {

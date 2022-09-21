@@ -1,13 +1,19 @@
 package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.`lazy`
+import typings.gestalt.gestaltStrings.`use-credentials`
+import typings.gestalt.gestaltStrings.anonymous
+import typings.gestalt.gestaltStrings.async
 import typings.gestalt.gestaltStrings.auto
 import typings.gestalt.gestaltStrings.contain
 import typings.gestalt.gestaltStrings.cover
 import typings.gestalt.gestaltStrings.eager
 import typings.gestalt.gestaltStrings.high
+import typings.gestalt.gestaltStrings.img
 import typings.gestalt.gestaltStrings.low
 import typings.gestalt.gestaltStrings.none
+import typings.gestalt.gestaltStrings.presentation
+import typings.gestalt.gestaltStrings.sync
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,6 +26,12 @@ trait ImageProps extends StObject {
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var color: String
+  
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
+  
+  var decoding: js.UndefOr[sync | async | auto] = js.undefined
+  
+  var elementTiming: js.UndefOr[String] = js.undefined
   
   var fit: js.UndefOr[cover | contain | none] = js.undefined
   
@@ -34,6 +46,8 @@ trait ImageProps extends StObject {
   var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var role: js.UndefOr[img | presentation] = js.undefined
   
   var sizes: js.UndefOr[String] = js.undefined
   
@@ -58,6 +72,18 @@ object ImageProps {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
+    inline def setCrossOrigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setDecoding(value: sync | async | auto): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+    
+    inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
+    
+    inline def setElementTiming(value: String): Self = StObject.set(x, "elementTiming", value.asInstanceOf[js.Any])
+    
+    inline def setElementTimingUndefined: Self = StObject.set(x, "elementTiming", js.undefined)
+    
     inline def setFit(value: cover | contain | none): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
@@ -81,6 +107,10 @@ object ImageProps {
     inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    
+    inline def setRole(value: img | presentation): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     

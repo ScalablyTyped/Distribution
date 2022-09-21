@@ -22,7 +22,7 @@ trait PutEventsRequestEntry extends StObject {
   var EventBusName: js.UndefOr[NonPartnerEventBusNameOrArn] = js.undefined
   
   /**
-    * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
+    * Amazon Web Services resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
     */
   var Resources: js.UndefOr[EventResourceList] = js.undefined
   
@@ -34,7 +34,12 @@ trait PutEventsRequestEntry extends StObject {
   /**
     * The time stamp of the event, per RFC3339. If no time stamp is provided, the time stamp of the PutEvents call is used.
     */
-  var Time: js.UndefOr[EventTime] = js.undefined
+  var Time: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * An X-Ray trade header, which is an http header (X-Amzn-Trace-Id) that contains the trace-id associated with the event. To learn more about X-Ray trace headers, see Tracing header in the X-Ray Developer Guide.
+    */
+  var TraceHeader: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.TraceHeader] = js.undefined
 }
 object PutEventsRequestEntry {
   
@@ -61,14 +66,18 @@ object PutEventsRequestEntry {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    inline def setTime(value: EventTime): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
+    
+    inline def setTraceHeader(value: TraceHeader): Self = StObject.set(x, "TraceHeader", value.asInstanceOf[js.Any])
+    
+    inline def setTraceHeaderUndefined: Self = StObject.set(x, "TraceHeader", js.undefined)
   }
 }

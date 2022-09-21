@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientTransactionGetResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientTransactionGetResponse.
   * @param [properties] Properties to set
   */
-class ClientTransactionGetResponse ()
+open class ClientTransactionGetResponse ()
   extends StObject
      with IClientTransactionGetResponse {
   def this(properties: IClientTransactionGetResponse) = this()
@@ -29,7 +28,7 @@ class ClientTransactionGetResponse ()
     * Converts this ClientTransactionGetResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientTransactionGetResponse {
@@ -87,6 +86,8 @@ object ClientTransactionGetResponse {
   inline def create(): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientTransactionGetResponse]
   inline def create(properties: IClientTransactionGetResponse): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientTransactionGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionGetResponse]
   /**
     * Decodes a ClientTransactionGetResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -97,9 +98,8 @@ object ClientTransactionGetResponse {
     */
   inline def decode(reader: Reader): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
   inline def decode(reader: Reader, length: Double): ClientTransactionGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionGetResponse]
-  inline def decode(reader: Uint8Array): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
-  inline def decode(reader: Uint8Array, length: Double): ClientTransactionGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionGetResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
   /**
     * Decodes a ClientTransactionGetResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -108,7 +108,6 @@ object ClientTransactionGetResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
-  inline def decodeDelimited(reader: Uint8Array): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
   
   /**
     * Encodes the specified ClientTransactionGetResponse message. Does not implicitly {@link ClientTransactionGetResponse.verify|verify} messages.
@@ -133,7 +132,7 @@ object ClientTransactionGetResponse {
     * @param object Plain object
     * @returns ClientTransactionGetResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientTransactionGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionGetResponse]
   
   /**
     * Creates a plain object from a ClientTransactionGetResponse message. Also converts values to other types if specified.
@@ -141,13 +140,13 @@ object ClientTransactionGetResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientTransactionGetResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientTransactionGetResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientTransactionGetResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientTransactionGetResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientTransactionGetResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

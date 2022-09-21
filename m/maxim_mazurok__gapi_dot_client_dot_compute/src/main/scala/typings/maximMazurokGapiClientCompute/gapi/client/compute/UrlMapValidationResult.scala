@@ -29,7 +29,7 @@ object UrlMapValidationResult {
     
     inline def setLoadErrorsUndefined: Self = StObject.set(x, "loadErrors", js.undefined)
     
-    inline def setLoadErrorsVarargs(value: String*): Self = StObject.set(x, "loadErrors", js.Array(value :_*))
+    inline def setLoadErrorsVarargs(value: String*): Self = StObject.set(x, "loadErrors", js.Array(value*))
     
     inline def setLoadSucceeded(value: Boolean): Self = StObject.set(x, "loadSucceeded", value.asInstanceOf[js.Any])
     
@@ -39,7 +39,7 @@ object UrlMapValidationResult {
     
     inline def setTestFailuresUndefined: Self = StObject.set(x, "testFailures", js.undefined)
     
-    inline def setTestFailuresVarargs(value: TestFailure*): Self = StObject.set(x, "testFailures", js.Array(value :_*))
+    inline def setTestFailuresVarargs(value: TestFailure*): Self = StObject.set(x, "testFailures", js.Array(value*))
     
     inline def setTestPassed(value: Boolean): Self = StObject.set(x, "testPassed", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ object proceduralTextureSceneComponentMod {
   
   @JSImport("babylonjs/Materials/Textures/Procedurals/proceduralTextureSceneComponent", "ProceduralTextureSceneComponent")
   @js.native
-  class ProceduralTextureSceneComponent protected ()
+  open class ProceduralTextureSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -20,7 +20,7 @@ object proceduralTextureSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _beforeClear: js.Any = js.native
+    /* private */ var _beforeClear: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -76,7 +76,7 @@ object proceduralTextureSceneComponentMod {
         
         inline def setProceduralTextures(value: js.Array[ProceduralTexture]): Self = StObject.set(x, "proceduralTextures", value.asInstanceOf[js.Any])
         
-        inline def setProceduralTexturesVarargs(value: ProceduralTexture*): Self = StObject.set(x, "proceduralTextures", js.Array(value :_*))
+        inline def setProceduralTexturesVarargs(value: ProceduralTexture*): Self = StObject.set(x, "proceduralTextures", js.Array(value*))
       }
     }
   }

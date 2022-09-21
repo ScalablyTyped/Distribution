@@ -1,13 +1,11 @@
 package typings.passportWindowsauth
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Profile
 import typings.passport.mod.Strategy
 import typings.passportWindowsauth.anon.Base
 import typings.passportWindowsauth.anon.OptionspassReqToCallbackt
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ object mod {
   
   @JSImport("passport-windowsauth", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Strategy {
     def this(verify: Verify) = this()
@@ -27,7 +25,16 @@ object mod {
   trait Options extends StObject {
     
     var getUserNameFromHeader: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+        js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]
       ] = js.undefined
     
     var integrated: js.UndefOr[Boolean] = js.undefined
@@ -49,7 +56,15 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
+      inline def setGetUserNameFromHeader(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
       
       inline def setGetUserNameFromHeaderUndefined: Self = StObject.set(x, "getUserNameFromHeader", js.undefined)
       
@@ -76,7 +91,7 @@ object mod {
   }
   
   type Verified = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* user */ js.UndefOr[js.Object], 
     /* info */ js.UndefOr[js.Object], 
     Unit
@@ -85,7 +100,13 @@ object mod {
   type Verify = js.Function2[/* profile */ Profile, /* done */ Verified, Unit]
   
   type VerifyWithReq = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* profile */ Profile, 
     /* done */ Verified, 
     Unit

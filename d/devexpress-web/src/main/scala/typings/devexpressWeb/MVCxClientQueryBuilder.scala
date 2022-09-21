@@ -22,7 +22,7 @@ trait MVCxClientQueryBuilder
     * Sends a callback to the server and generates the server-side event passing it the specified argument.
     * @param arg A string value that represents any information that needs to be sent to the server-side event.
     */
-  def PerformCallback(arg: js.Any): Unit = js.native
+  def PerformCallback(arg: Any): Unit = js.native
   
   /**
     * Occurs after executing the Save command on the client.

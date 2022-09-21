@@ -1,5 +1,9 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.Item
+import typings.carbonComponents.anon.PartialContentSwitcherOpt
+import typings.std.Event
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,19 +13,11 @@ object contentSwitcherMod {
   
   @JSImport("carbon-components/components/content-switcher/content-switcher", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ContentSwitcher {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _changeState(hasItem: js.Any, callback: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _handleClick(event: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def setActive(item: js.Any, callback: js.Any): Unit = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialContentSwitcherOpt) = this()
   }
   object default {
     
@@ -32,37 +28,59 @@ object contentSwitcherMod {
     /* static member */
     @JSImport("carbon-components/components/content-switcher/content-switcher", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait ContentSwitcher extends StObject {
+  - Dropped any */ @js.native
+  trait ContentSwitcher extends StObject {
     
-    def _changeState(hasItem: js.Any, callback: js.Any): Unit
+    def _changeState(hasItem: Item): Unit = js.native
+    def _changeState(hasItem: Item, callback: js.Function0[Unit]): Unit = js.native
     
-    def _handleClick(event: js.Any): Unit
+    def _handleClick(event: Event): Unit = js.native
     
-    def setActive(item: js.Any, callback: js.Any): Unit
+    def setActive(item: HTMLElement): Unit = js.native
+    def setActive(item: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
   }
-  object ContentSwitcher {
+  
+  trait ContentSwitcherOptions extends StObject {
+    
+    var classActive: String
+    
+    var eventAfterSelected: String
+    
+    var eventBeforeSelected: String
+    
+    var selectorButton: String
+    
+    var selectorInit: String
+  }
+  object ContentSwitcherOptions {
     
     inline def apply(
-      _changeState: (js.Any, js.Any) => Unit,
-      _handleClick: js.Any => Unit,
-      setActive: (js.Any, js.Any) => Unit
-    ): ContentSwitcher = {
-      val __obj = js.Dynamic.literal(_changeState = js.Any.fromFunction2(_changeState), _handleClick = js.Any.fromFunction1(_handleClick), setActive = js.Any.fromFunction2(setActive))
-      __obj.asInstanceOf[ContentSwitcher]
+      classActive: String,
+      eventAfterSelected: String,
+      eventBeforeSelected: String,
+      selectorButton: String,
+      selectorInit: String
+    ): ContentSwitcherOptions = {
+      val __obj = js.Dynamic.literal(classActive = classActive.asInstanceOf[js.Any], eventAfterSelected = eventAfterSelected.asInstanceOf[js.Any], eventBeforeSelected = eventBeforeSelected.asInstanceOf[js.Any], selectorButton = selectorButton.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ContentSwitcherOptions]
     }
     
-    extension [Self <: ContentSwitcher](x: Self) {
+    extension [Self <: ContentSwitcherOptions](x: Self) {
       
-      inline def setSetActive(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
+      inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
       
-      inline def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
+      inline def setEventAfterSelected(value: String): Self = StObject.set(x, "eventAfterSelected", value.asInstanceOf[js.Any])
       
-      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def setEventBeforeSelected(value: String): Self = StObject.set(x, "eventBeforeSelected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorButton(value: String): Self = StObject.set(x, "selectorButton", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
     }
   }
 }

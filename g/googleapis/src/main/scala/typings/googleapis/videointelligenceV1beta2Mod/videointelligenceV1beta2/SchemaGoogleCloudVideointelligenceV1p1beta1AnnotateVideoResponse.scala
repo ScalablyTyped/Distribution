@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video annotation response. Included in the `response` field of the
-  * `Operation` returned by the `GetOperation` call of the
-  * `google::longrunning::Operations` service.
-  */
 trait SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse extends StObject {
   
   /**
@@ -29,6 +24,6 @@ object SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse {
     
     inline def setAnnotationResultsUndefined: Self = StObject.set(x, "annotationResults", js.undefined)
     
-    inline def setAnnotationResultsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults*): Self = StObject.set(x, "annotationResults", js.Array(value :_*))
+    inline def setAnnotationResultsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults*): Self = StObject.set(x, "annotationResults", js.Array(value*))
   }
 }

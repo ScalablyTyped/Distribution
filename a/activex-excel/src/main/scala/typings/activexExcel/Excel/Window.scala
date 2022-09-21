@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Window extends StObject {
   
-  def Activate(): js.Any = js.native
+  def Activate(): Any = js.native
   
-  def ActivateNext(): js.Any = js.native
+  def ActivateNext(): Any = js.native
   
-  def ActivatePrevious(): js.Any = js.native
+  def ActivatePrevious(): Any = js.native
   
   def ActiveCell(Address: String): Range = js.native
   def ActiveCell(RowIndex: Double): Range = js.native
@@ -85,22 +85,22 @@ trait Window extends StObject {
   
   val Index: Double = js.native
   
-  def LargeScroll(): js.Any = js.native
-  def LargeScroll(Down: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def LargeScroll(): Any = js.native
+  def LargeScroll(Down: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
   
   var Left: Double = js.native
   
@@ -112,7 +112,7 @@ trait Window extends StObject {
   @JSName("Panes")
   val Panes_Original: Panes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PointsToScreenPixelsX(Points: Double): Double = js.native
   
@@ -127,10 +127,10 @@ trait Window extends StObject {
     PrintToFile: js.UndefOr[T],
     Collate: js.UndefOr[Boolean],
     PrToFileName: js.UndefOr[PrintToFileName[T]]
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def PrintPreview(): js.Any = js.native
-  def PrintPreview(EnableChanges: Boolean): js.Any = js.native
+  def PrintPreview(): Any = js.native
+  def PrintPreview(EnableChanges: Boolean): Any = js.native
   
   def RangeFromPoint(x: Double, y: Double): Shape | Range | Null = js.native
   
@@ -147,10 +147,8 @@ trait Window extends StObject {
   
   var ScrollRow: Double = js.native
   
-  def ScrollWorkbookTabs(Sheets: Double): js.Any = js.native
-  def ScrollWorkbookTabs(Sheets: `0`, Position: `1`): js.Any = js.native
-  @JSName("ScrollWorkbookTabs")
-  def ScrollWorkbookTabs_0(Sheets: `0`, Position: `0`): js.Any = js.native
+  def ScrollWorkbookTabs(Sheets: Double): Any = js.native
+  def ScrollWorkbookTabs(Sheets: `0`, Position: `0` | `1`): Any = js.native
   
   def SelectedSheets(Indexes: SafeArray[String | Double]): Sheets[Sheet] = js.native
   def SelectedSheets(Index: String): Sheet = js.native
@@ -158,28 +156,28 @@ trait Window extends StObject {
   @JSName("SelectedSheets")
   val SelectedSheets_Original: Sheets[Sheet] = js.native
   
-  val Selection: js.Any = js.native
+  val Selection: Any = js.native
   
-  def SheetViews(Index: js.Any): SheetView = js.native
+  def SheetViews(Index: Any): SheetView = js.native
   @JSName("SheetViews")
   val SheetViews_Original: SheetViews = js.native
   
-  def SmallScroll(): js.Any = js.native
-  def SmallScroll(Down: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def SmallScroll(): Any = js.native
+  def SmallScroll(Down: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
   
   var Split: Boolean = js.native
   
@@ -222,13 +220,13 @@ trait Window extends StObject {
   var _DisplayRightToLeft: Boolean = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
+  ): Any = js.native
 }

@@ -1,7 +1,6 @@
 package typings.urlrouter
 
 import typings.node.httpMod.IncomingMessage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_UrlRouterfunc")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UrlRouterfunc")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit], options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UrlRouterfunc")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait App extends StObject {
     
@@ -174,7 +173,7 @@ object mod {
   trait Options extends StObject {
     
     var errorHandler: js.UndefOr[
-        js.Function3[/* err */ Error, /* req */ ServerRequest, /* res */ ServerResponse, Unit]
+        js.Function3[/* err */ js.Error, /* req */ ServerRequest, /* res */ ServerResponse, Unit]
       ] = js.undefined
     
     var pageNotFound: js.UndefOr[js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, Unit]] = js.undefined
@@ -190,7 +189,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setErrorHandler(value: (/* err */ Error, /* req */ ServerRequest, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
+      inline def setErrorHandler(value: (/* err */ js.Error, /* req */ ServerRequest, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
@@ -207,8 +206,8 @@ object mod {
   @js.native
   trait ServerRequest extends IncomingMessage {
     
-    var params: js.Any = js.native
+    var params: Any = js.native
   }
   
-  type ServerResponse = typings.node.httpMod.ServerResponse
+  type ServerResponse = typings.node.httpMod.ServerResponse[IncomingMessage]
 }

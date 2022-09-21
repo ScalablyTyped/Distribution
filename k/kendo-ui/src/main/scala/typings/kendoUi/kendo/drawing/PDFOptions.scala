@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.drawing
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +8,23 @@ trait PDFOptions extends StObject {
   
   var creator: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var imgDPI: js.UndefOr[Double] = js.undefined
+  
+  var jpegQuality: js.UndefOr[Double] = js.undefined
+  
+  var keepPNG: js.UndefOr[Boolean] = js.undefined
   
   var keywords: js.UndefOr[String] = js.undefined
   
   var landscape: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
-  var paperSize: js.UndefOr[js.Any] = js.undefined
+  var multiPage: js.UndefOr[Boolean] = js.undefined
+  
+  var paperSize: js.UndefOr[Any] = js.undefined
   
   var subject: js.UndefOr[String] = js.undefined
   
@@ -38,13 +43,21 @@ object PDFOptions {
     
     inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     inline def setImgDPI(value: Double): Self = StObject.set(x, "imgDPI", value.asInstanceOf[js.Any])
     
     inline def setImgDPIUndefined: Self = StObject.set(x, "imgDPI", js.undefined)
+    
+    inline def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
+    
+    inline def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
+    
+    inline def setKeepPNG(value: Boolean): Self = StObject.set(x, "keepPNG", value.asInstanceOf[js.Any])
+    
+    inline def setKeepPNGUndefined: Self = StObject.set(x, "keepPNG", js.undefined)
     
     inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
@@ -54,11 +67,15 @@ object PDFOptions {
     
     inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setPaperSize(value: js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
+    inline def setMultiPage(value: Boolean): Self = StObject.set(x, "multiPage", value.asInstanceOf[js.Any])
+    
+    inline def setMultiPageUndefined: Self = StObject.set(x, "multiPage", js.undefined)
+    
+    inline def setPaperSize(value: Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
     inline def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
     

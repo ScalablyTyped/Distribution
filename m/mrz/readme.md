@@ -10,10 +10,10 @@ Parse MRZ (Machine Readable Zone) from identity documents
 | ------------------ | :-------------: |
 | Full name          | mrz |
 | Keywords           | mrz, machine, readable, zone, identity, documents, card, passport |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 31570 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 9914.666666666666 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/cheminfo/mrz#readme)

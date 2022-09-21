@@ -177,15 +177,15 @@ object TrackEntry {
     
     inline def setTimelineHoldMix(value: js.Array[TrackEntry]): Self = StObject.set(x, "timelineHoldMix", value.asInstanceOf[js.Any])
     
-    inline def setTimelineHoldMixVarargs(value: TrackEntry*): Self = StObject.set(x, "timelineHoldMix", js.Array(value :_*))
+    inline def setTimelineHoldMixVarargs(value: TrackEntry*): Self = StObject.set(x, "timelineHoldMix", js.Array(value*))
     
     inline def setTimelineMode(value: js.Array[Double]): Self = StObject.set(x, "timelineMode", value.asInstanceOf[js.Any])
     
-    inline def setTimelineModeVarargs(value: Double*): Self = StObject.set(x, "timelineMode", js.Array(value :_*))
+    inline def setTimelineModeVarargs(value: Double*): Self = StObject.set(x, "timelineMode", js.Array(value*))
     
     inline def setTimelinesRotation(value: js.Array[Double]): Self = StObject.set(x, "timelinesRotation", value.asInstanceOf[js.Any])
     
-    inline def setTimelinesRotationVarargs(value: Double*): Self = StObject.set(x, "timelinesRotation", js.Array(value :_*))
+    inline def setTimelinesRotationVarargs(value: Double*): Self = StObject.set(x, "timelinesRotation", js.Array(value*))
     
     inline def setTotalAlpha(value: Double): Self = StObject.set(x, "totalAlpha", value.asInstanceOf[js.Any])
     

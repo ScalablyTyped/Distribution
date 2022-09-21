@@ -22,7 +22,7 @@ trait CreateDataSourceRequest extends StObject {
   var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
   
   /**
-    * Amazon Elasticsearch Service settings.
+    * Amazon OpenSearch Service settings. As of September 2021, Amazon Elasticsearch service is Amazon OpenSearch Service. This configuration is deprecated. For new data sources, use CreateDataSourceRequest$openSearchServiceConfig to create an OpenSearch data source.
     */
   var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateDataSourceRequest extends StObject {
   var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
   
   /**
-    * AWS Lambda settings.
+    * Lambda settings.
     */
   var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
   
@@ -42,12 +42,17 @@ trait CreateDataSourceRequest extends StObject {
   var name: ResourceName
   
   /**
+    * Amazon OpenSearch Service settings.
+    */
+  var openSearchServiceConfig: js.UndefOr[OpenSearchServiceDataSourceConfig] = js.undefined
+  
+  /**
     * Relational database settings.
     */
   var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
   
   /**
-    * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
+    * The Identity and Access Management (IAM) service role Amazon Resource Name (ARN) for the data source. The system assumes this role when accessing the data source.
     */
   var serviceRoleArn: js.UndefOr[String] = js.undefined
   
@@ -89,6 +94,10 @@ object CreateDataSourceRequest {
     inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOpenSearchServiceConfig(value: OpenSearchServiceDataSourceConfig): Self = StObject.set(x, "openSearchServiceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setOpenSearchServiceConfigUndefined: Self = StObject.set(x, "openSearchServiceConfig", js.undefined)
     
     inline def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = StObject.set(x, "relationalDatabaseConfig", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ trait DescribeConformancePackComplianceRequest extends StObject {
   var Filters: js.UndefOr[ConformancePackComplianceFilters] = js.undefined
   
   /**
-    * The maximum number of AWS Config rules within a conformance pack are returned on each page.
+    * The maximum number of Config rules within a conformance pack are returned on each page.
     */
   var Limit: js.UndefOr[DescribeConformancePackComplianceLimit] = js.undefined
   

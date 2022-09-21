@@ -1,6 +1,6 @@
 package typings.nodeJose.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeJose.anon.PartialKeyStoreGetOptions
 import typings.nodeJose.nodeJoseStrings.`private`
 import typings.nodeJose.nodeJoseStrings.json
@@ -45,11 +45,38 @@ object JWK {
   @js.native
   val MODE_WRAP: String = js.native
   
+  inline def asKey(key: String): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: String, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   inline def asKey(
-    key: String | Buffer | js.Object | RawKey,
-    form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
-    extras: js.UndefOr[Record[String, js.Any]]
+    key: String,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, Any]
   ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: String, form: Unit, extras: Record[String, Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: js.Object): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: js.Object, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(
+    key: js.Object,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, Any]
+  ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: js.Object, form: Unit, extras: Record[String, Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: Buffer): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: Buffer, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(
+    key: Buffer,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, Any]
+  ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: Buffer, form: Unit, extras: Record[String, Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: RawKey): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: RawKey, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(
+    key: RawKey,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, Any]
+  ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def asKey(key: RawKey, form: Unit, extras: Record[String, Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
   inline def asKeyStore(ks: String): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   /**
@@ -57,26 +84,26 @@ object JWK {
     */
   inline def asKeyStore(ks: js.Object): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   
-  inline def createKey(kty: js.Any, size: js.Any, props: js.Any): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(kty.asInstanceOf[js.Any], size.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def createKey(kty: Any, size: Any, props: Any): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(kty.asInstanceOf[js.Any], size.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
   /**
     * To create an empty keystore
     */
   inline def createKeyStore(): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyStore")().asInstanceOf[KeyStore]
   
-  inline def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.Key */ Boolean]
+  inline def isKey(input: Any): /* is node-jose.node-jose.JWK.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.Key */ Boolean]
   
-  inline def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyStore")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.KeyStore */ Boolean]
+  inline def isKeyStore(input: Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyStore")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.KeyStore */ Boolean]
   
   trait JWEEncryptor extends StObject {
     
     def `final`(): js.Promise[String]
     
-    def update(input: js.Any): this.type
+    def update(input: Any): this.type
   }
   object JWEEncryptor {
     
-    inline def apply(`final`: () => js.Promise[String], update: js.Any => JWEEncryptor): JWEEncryptor = {
+    inline def apply(`final`: () => js.Promise[String], update: Any => JWEEncryptor): JWEEncryptor = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction0(`final`))
       __obj.asInstanceOf[JWEEncryptor]
@@ -86,7 +113,7 @@ object JWK {
       
       inline def setFinal(value: () => js.Promise[String]): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: js.Any => JWEEncryptor): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Any => JWEEncryptor): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -135,15 +162,42 @@ object JWK {
       * - "x509" for a DER encoded PKIX X.509 certificate
       * - "pem" for a PEM encoded of PKCS8 / SPKI / PKIX
       */
+    def add(key: String): js.Promise[Key] = js.native
+    def add(key: String, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = js.native
     def add(
-      key: String | Buffer | Key | js.Object,
-      form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
-      extras: js.UndefOr[Record[String, js.Any]]
+      key: String,
+      form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+      extras: Record[String, Any]
     ): js.Promise[Key] = js.native
+    def add(key: String, form: Unit, extras: Record[String, Any]): js.Promise[Key] = js.native
+    def add(key: js.Object): js.Promise[Key] = js.native
+    def add(key: js.Object, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = js.native
+    def add(
+      key: js.Object,
+      form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+      extras: Record[String, Any]
+    ): js.Promise[Key] = js.native
+    def add(key: js.Object, form: Unit, extras: Record[String, Any]): js.Promise[Key] = js.native
+    def add(key: Buffer): js.Promise[Key] = js.native
+    def add(key: Buffer, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = js.native
+    def add(
+      key: Buffer,
+      form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+      extras: Record[String, Any]
+    ): js.Promise[Key] = js.native
+    def add(key: Buffer, form: Unit, extras: Record[String, Any]): js.Promise[Key] = js.native
+    def add(key: Key): js.Promise[Key] = js.native
+    def add(key: Key, form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem): js.Promise[Key] = js.native
+    def add(
+      key: Key,
+      form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+      extras: Record[String, Any]
+    ): js.Promise[Key] = js.native
+    def add(key: Key, form: Unit, extras: Record[String, Any]): js.Promise[Key] = js.native
     def add(key: RawKey): js.Promise[Key] = js.native
     
-    def all(): js.Array[RawKey] = js.native
-    def all(options: PartialKeyStoreGetOptions): js.Array[RawKey] = js.native
+    def all(): js.Array[Key] = js.native
+    def all(options: PartialKeyStoreGetOptions): js.Array[Key] = js.native
     
     /**
       * Generates a new random Key into this KeyStore.
@@ -164,17 +218,17 @@ object JWK {
       */
     def generate(kty: String): js.Promise[Key] = js.native
     def generate(kty: String, size: String): js.Promise[Key] = js.native
-    def generate(kty: String, size: String, props: js.Any): js.Promise[Key] = js.native
+    def generate(kty: String, size: String, props: Any): js.Promise[Key] = js.native
     def generate(kty: String, size: Double): js.Promise[Key] = js.native
-    def generate(kty: String, size: Double, props: js.Any): js.Promise[Key] = js.native
-    def generate(kty: String, size: Unit, props: js.Any): js.Promise[Key] = js.native
+    def generate(kty: String, size: Double, props: Any): js.Promise[Key] = js.native
+    def generate(kty: String, size: Unit, props: Any): js.Promise[Key] = js.native
     
     /**
       * To retrieve a key from a keystore
       */
-    def get(kid: String): RawKey = js.native
-    def get(kid: String, filter: KeyStoreGetFilter): RawKey = js.native
-    def get(options: KeyStoreGetOptions): RawKey = js.native
+    def get(kid: String): Key = js.native
+    def get(kid: String, filter: KeyStoreGetFilter): Key = js.native
+    def get(options: KeyStoreGetOptions): Key = js.native
     
     def remove(key: Key): Unit = js.native
     

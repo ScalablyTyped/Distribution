@@ -9,13 +9,6 @@ trait HeatmapRendererProperties
      with RendererProperties {
   
   /**
-    * The area of influence for each point in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#blurRadius)
-    */
-  var blurRadius: js.UndefOr[Double] = js.undefined
-  
-  /**
     * An array of objects describing the renderer's color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops)
@@ -23,25 +16,54 @@ trait HeatmapRendererProperties
   var colorStops: js.UndefOr[js.Array[HeatmapColorStopProperties]] = js.undefined
   
   /**
-    * The name of the attribute field used to weight the intensity of each heatmap point.
+    * The name of the attribute field used to weight the density of each heatmap point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#field)
     */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * The pixel intensity value that determines which pixels are assigned the final color in the [colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops).
+    * An object providing options for describing the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#maxPixelIntensity)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
     */
-  var maxPixelIntensity: js.UndefOr[Double] = js.undefined
+  var legendOptions: js.UndefOr[HeatmapRendererLegendOptions] = js.undefined
   
   /**
-    * The pixel intensity value used to determine which pixels will be assigned the initial color in the [colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops).
+    * The max density value to be assigned a color in the heatmap surface.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#minPixelIntensity)
+    * @default 0.04
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#maxDensity)
     */
-  var minPixelIntensity: js.UndefOr[Double] = js.undefined
+  var maxDensity: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The minimum density value to be assigned a color in the heatmap surface.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#minDensity)
+    */
+  var minDensity: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The search radius (in points) used to create a smooth kernel surface fitted around each point.
+    *
+    * @default 18
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#radius)
+    */
+  var radius: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * When set, the heatmap's visualization at the given scale will remain static and not change as the user zooms in and out of the view.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#referenceScale)
+    */
+  var referenceScale: js.UndefOr[Double] = js.undefined
 }
 object HeatmapRendererProperties {
   
@@ -52,26 +74,34 @@ object HeatmapRendererProperties {
   
   extension [Self <: HeatmapRendererProperties](x: Self) {
     
-    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
-    
-    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
-    
     inline def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setMaxPixelIntensity(value: Double): Self = StObject.set(x, "maxPixelIntensity", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: HeatmapRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    inline def setMaxPixelIntensityUndefined: Self = StObject.set(x, "maxPixelIntensity", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    inline def setMinPixelIntensity(value: Double): Self = StObject.set(x, "minPixelIntensity", value.asInstanceOf[js.Any])
+    inline def setMaxDensity(value: Double): Self = StObject.set(x, "maxDensity", value.asInstanceOf[js.Any])
     
-    inline def setMinPixelIntensityUndefined: Self = StObject.set(x, "minPixelIntensity", js.undefined)
+    inline def setMaxDensityUndefined: Self = StObject.set(x, "maxDensity", js.undefined)
+    
+    inline def setMinDensity(value: Double): Self = StObject.set(x, "minDensity", value.asInstanceOf[js.Any])
+    
+    inline def setMinDensityUndefined: Self = StObject.set(x, "minDensity", js.undefined)
+    
+    inline def setRadius(value: Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setReferenceScale(value: Double): Self = StObject.set(x, "referenceScale", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceScaleUndefined: Self = StObject.set(x, "referenceScale", js.undefined)
   }
 }

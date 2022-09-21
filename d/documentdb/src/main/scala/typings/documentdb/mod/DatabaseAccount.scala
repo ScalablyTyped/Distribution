@@ -49,10 +49,10 @@ object DatabaseAccount {
     
     inline def setReadableLocations(value: js.Array[String]): Self = StObject.set(x, "ReadableLocations", value.asInstanceOf[js.Any])
     
-    inline def setReadableLocationsVarargs(value: String*): Self = StObject.set(x, "ReadableLocations", js.Array(value :_*))
+    inline def setReadableLocationsVarargs(value: String*): Self = StObject.set(x, "ReadableLocations", js.Array(value*))
     
     inline def setWritableLocations(value: js.Array[String]): Self = StObject.set(x, "WritableLocations", value.asInstanceOf[js.Any])
     
-    inline def setWritableLocationsVarargs(value: String*): Self = StObject.set(x, "WritableLocations", js.Array(value :_*))
+    inline def setWritableLocationsVarargs(value: String*): Self = StObject.set(x, "WritableLocations", js.Array(value*))
   }
 }

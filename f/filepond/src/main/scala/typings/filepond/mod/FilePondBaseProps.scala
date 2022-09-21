@@ -1,5 +1,6 @@
 package typings.filepond.mod
 
+import typings.filepond.filepondBooleans.`false`
 import typings.filepond.filepondStrings.after
 import typings.filepond.filepondStrings.before
 import org.scalablytyped.runtime.StObject
@@ -87,10 +88,24 @@ trait FilePondBaseProps extends StObject {
   var className: js.UndefOr[String | Null] = js.undefined
   
   /**
+    * Shows Powered by PQINA in footer. Can be disabled by setting to false, but please do
+    * link to https://pqina.nl somewhere else on your website, or otherwise donate to help
+    * keep the project alive.
+    * @default "Powered by PQINA"
+    */
+  var credits: js.UndefOr[`false`] = js.undefined
+  
+  /**
     * Sets the disabled attribute to the output field.
     * @default false
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The base value used to calculate file size
+    * @default 1000
+    */
+  var fileSizeBase: js.UndefOr[Double] = js.undefined
   
   /**
     * Require the file to be successfully reverted before continuing.
@@ -141,6 +156,15 @@ trait FilePondBaseProps extends StObject {
     * @default false
     */
   var required: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Tells FilePond to store files in hidden file input elements so they can be posted along with
+    * normal form post. This only works if the browser supports the DataTransfer constructor,
+    * this is the case on Firefox, Chrome, Chromium powered browsers and Safari version 14.1
+    * and higher.
+    * @default false
+    */
+  var storeAsFile: js.UndefOr[Boolean] = js.undefined
 }
 object FilePondBaseProps {
   
@@ -207,9 +231,17 @@ object FilePondBaseProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
+    inline def setCredits(value: `false`): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    
+    inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
+    
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFileSizeBase(value: Double): Self = StObject.set(x, "fileSizeBase", value.asInstanceOf[js.Any])
+    
+    inline def setFileSizeBaseUndefined: Self = StObject.set(x, "fileSizeBase", js.undefined)
     
     inline def setForceRevert(value: Boolean): Self = StObject.set(x, "forceRevert", value.asInstanceOf[js.Any])
     
@@ -248,5 +280,9 @@ object FilePondBaseProps {
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setStoreAsFile(value: Boolean): Self = StObject.set(x, "storeAsFile", value.asInstanceOf[js.Any])
+    
+    inline def setStoreAsFileUndefined: Self = StObject.set(x, "storeAsFile", js.undefined)
   }
 }

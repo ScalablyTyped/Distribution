@@ -11,75 +11,68 @@ object eventContollerMod {
   
   @JSImport("@antv/g-base/lib/event/event-contoller", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EventController {
-    def this(cfg: js.Any) = this()
+    def this(cfg: Any) = this()
   }
   
   @js.native
   trait EventController extends StObject {
     
-    def _afterDrag(draggingShape: js.Any, pointInfo: js.Any, event: js.Any): Unit = js.native
+    def _afterDrag(draggingShape: Any, pointInfo: Any, event: Any): Unit = js.native
     
     def _bindEvents(): Unit = js.native
     
     def _clearEvents(): Unit = js.native
     
-    def _emitDragoverEvents(event: js.Any, pointInfo: js.Any, fromShape: js.Any, toShape: js.Any, isCanvasEmit: js.Any): Unit = js.native
+    def _emitDragoverEvents(event: Any, pointInfo: Any, fromShape: Any, toShape: Any, isCanvasEmit: Any): Unit = js.native
     
-    def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any): Unit = js.native
-    def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any, fromShape: js.Any): Unit = js.native
-    def _emitEvent(
-      `type`: js.Any,
-      event: js.Any,
-      pointInfo: js.Any,
-      shape: js.Any,
-      fromShape: js.Any,
-      toShape: js.Any
-    ): Unit = js.native
-    def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any, fromShape: Unit, toShape: js.Any): Unit = js.native
+    def _emitEvent(`type`: Any, event: Any, pointInfo: Any, shape: Any): Unit = js.native
+    def _emitEvent(`type`: Any, event: Any, pointInfo: Any, shape: Any, fromShape: Any): Unit = js.native
+    def _emitEvent(`type`: Any, event: Any, pointInfo: Any, shape: Any, fromShape: Any, toShape: Any): Unit = js.native
+    def _emitEvent(`type`: Any, event: Any, pointInfo: Any, shape: Any, fromShape: Unit, toShape: Any): Unit = js.native
     
-    def _emitMouseoverEvents(event: js.Any, pointInfo: js.Any, fromShape: js.Any, toShape: js.Any): Unit = js.native
+    def _emitMouseoverEvents(event: Any, pointInfo: Any, fromShape: Any, toShape: Any): Unit = js.native
     
-    def _eventCallback(ev: js.Any): Unit = js.native
+    def _eventCallback(ev: Any): Unit = js.native
     
-    def _getEventObj(`type`: js.Any, event: js.Any, point: js.Any, target: js.Any, fromShape: js.Any, toShape: js.Any): typings.antvGBase.graphEventMod.default = js.native
+    def _getEventObj(`type`: Any, event: Any, point: Any, target: Any, fromShape: Any, toShape: Any): typings.antvGBase.graphEventMod.default = js.native
     
-    def _getPointInfo(ev: js.Any): ClientX = js.native
+    def _getPointInfo(ev: Any): ClientX = js.native
     
-    def _getShape(point: js.Any, ev: Event): IShape = js.native
+    def _getShape(point: Any, ev: Event): IShape = js.native
     
-    def _onDocumentMouseUp(ev: js.Any): Unit = js.native
+    def _onDocumentMouseUp(ev: Any): Unit = js.native
     
     def _onDocumentMove(ev: Event): Unit = js.native
     
-    def _ondragover(pointInfo: js.Any, shape: js.Any, event: js.Any): Unit = js.native
+    def _ondragover(pointInfo: Any, shape: Any, event: Any): Unit = js.native
     
-    def _onmousedown(pointInfo: js.Any, shape: js.Any, event: js.Any): Unit = js.native
+    def _onmousedown(pointInfo: Any, shape: Any, event: Any): Unit = js.native
     
-    def _onmousemove(pointInfo: js.Any, shape: js.Any, event: js.Any): Unit = js.native
+    def _onmousemove(pointInfo: Any, shape: Any, event: Any): Unit = js.native
     
-    def _onmouseup(pointInfo: js.Any, shape: js.Any, event: js.Any): Unit = js.native
+    def _onmouseup(pointInfo: Any, shape: Any, event: Any): Unit = js.native
     
-    def _triggerEvent(`type`: js.Any, ev: js.Any): Unit = js.native
+    def _triggerEvent(`type`: Any, ev: Any): Unit = js.native
     
-    /* private */ var canvas: js.Any = js.native
+    /* private */ var canvas: Any = js.native
     
-    /* private */ var currentShape: js.Any = js.native
+    /* private */ var currentShape: Any = js.native
     
     def destroy(): Unit = js.native
     
-    /* private */ var dragging: js.Any = js.native
+    /* private */ var dragging: Any = js.native
     
-    /* private */ var draggingShape: js.Any = js.native
+    /* private */ var draggingShape: Any = js.native
     
     def init(): Unit = js.native
     
-    /* private */ var mousedownPoint: js.Any = js.native
+    /* private */ var mousedownPoint: Any = js.native
     
-    /* private */ var mousedownShape: js.Any = js.native
+    /* private */ var mousedownShape: Any = js.native
     
-    /* private */ var mousedownTimeStamp: js.Any = js.native
+    /* private */ var mousedownTimeStamp: Any = js.native
   }
 }

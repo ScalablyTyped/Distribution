@@ -16,7 +16,7 @@ object putBucketLoggingCommandMod {
   
   @JSImport("@aws-sdk/client-s3-node/commands/PutBucketLoggingCommand", "PutBucketLoggingCommand")
   @js.native
-  class PutBucketLoggingCommand protected ()
+  open class PutBucketLoggingCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -33,17 +33,17 @@ object putBucketLoggingCommandMod {
     /* CompleteClass */
     override val middlewareStack: MiddlewareStack[PutBucketLoggingInput, PutBucketLoggingOutput] = js.native
     
-    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
+    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ Any = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketLoggingInput, PutBucketLoggingOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: S3ResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PutBucketLoggingInput, PutBucketLoggingOutput] = js.native
   }
 }

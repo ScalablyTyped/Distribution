@@ -61,6 +61,16 @@ object ERRORS {
   def InvalidSocks5IntiailHandshakeSocksVersion: String = js.native
   inline def InvalidSocks5IntiailHandshakeSocksVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidSocks5IntiailHandshakeSocksVersion")(x.asInstanceOf[js.Any])
   
+  @JSImport("socks/typings/common/constants", "ERRORS.InvalidSocksClientOptionsCustomAuthOptions")
+  @js.native
+  def InvalidSocksClientOptionsCustomAuthOptions: String = js.native
+  inline def InvalidSocksClientOptionsCustomAuthOptions_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidSocksClientOptionsCustomAuthOptions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("socks/typings/common/constants", "ERRORS.InvalidSocksClientOptionsCustomAuthRange")
+  @js.native
+  def InvalidSocksClientOptionsCustomAuthRange: String = js.native
+  inline def InvalidSocksClientOptionsCustomAuthRange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidSocksClientOptionsCustomAuthRange")(x.asInstanceOf[js.Any])
+  
   @JSImport("socks/typings/common/constants", "ERRORS.InvalidSocksClientOptionsDestination")
   @js.native
   def InvalidSocksClientOptionsDestination: String = js.native

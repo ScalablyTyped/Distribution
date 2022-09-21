@@ -28,12 +28,12 @@ object mod {
       * the parsed AST for filename
       * Useful optimization for avoiding a parse of filename
       */
-    var ast: js.UndefOr[js.Any] = js.undefined
+    var ast: js.UndefOr[Any] = js.undefined
     
     /**
       * `requirejs` config for resolving aliased JavaScript modules
       */
-    var config: js.UndefOr[js.Any] = js.undefined
+    var config: js.UndefOr[Any] = js.undefined
     
     /** the path to all files */
     var directory: String
@@ -51,7 +51,7 @@ object mod {
       * This value overrides the main attribute in the `package.json` file;
       * used in conjunction with the `packageFilter` of the resolve package
       */
-    var nodeModulesConfig: js.UndefOr[js.Any] = js.undefined
+    var nodeModulesConfig: js.UndefOr[Any] = js.undefined
     
     /** the dependency path */
     var partial: String
@@ -65,7 +65,7 @@ object mod {
     /**
       * `webpack` config for resolving aliased JavaScript modules
       */
-    var webpackConfig: js.UndefOr[js.Any] = js.undefined
+    var webpackConfig: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -76,11 +76,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAst(value: js.Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+      inline def setAst(value: Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
       inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -92,7 +92,7 @@ object mod {
       
       inline def setNoTypeDefinitionsUndefined: Self = StObject.set(x, "noTypeDefinitions", js.undefined)
       
-      inline def setNodeModulesConfig(value: js.Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
+      inline def setNodeModulesConfig(value: Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
       
       inline def setNodeModulesConfigUndefined: Self = StObject.set(x, "nodeModulesConfig", js.undefined)
       
@@ -102,7 +102,7 @@ object mod {
       
       inline def setTsConfigUndefined: Self = StObject.set(x, "tsConfig", js.undefined)
       
-      inline def setWebpackConfig(value: js.Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
+      inline def setWebpackConfig(value: Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
       
       inline def setWebpackConfigUndefined: Self = StObject.set(x, "webpackConfig", js.undefined)
     }
@@ -112,7 +112,7 @@ object mod {
     /* partial */ String, 
     /* filename */ String, 
     /* directory */ String, 
-    /* config */ js.UndefOr[js.Any], 
+    /* config */ js.UndefOr[Any], 
     Unit
   ]
 }

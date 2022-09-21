@@ -10,18 +10,28 @@ trait Attr
   extends StObject
      with Node {
   
+  /* standard dom */
   val localName: java.lang.String = js.native
   
+  /* standard dom */
   val name: java.lang.String = js.native
   
+  /* standard dom */
+  val namespaceURI: java.lang.String | Null = js.native
+  
+  /* standard dom */
   @JSName("ownerDocument")
   val ownerDocument_Attr: Document = js.native
   
+  /* standard dom */
   val ownerElement: Element | Null = js.native
   
+  /* standard dom */
   val prefix: java.lang.String | Null = js.native
   
+  /* standard dom */
   val specified: scala.Boolean = js.native
   
+  /* standard dom */
   var value: java.lang.String = js.native
 }

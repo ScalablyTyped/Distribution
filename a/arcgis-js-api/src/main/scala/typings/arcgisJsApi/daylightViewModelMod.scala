@@ -17,7 +17,12 @@ object daylightViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Daylight/DaylightViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [Daylight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with DaylightViewModel {
     def this(properties: DaylightViewModelProperties) = this()

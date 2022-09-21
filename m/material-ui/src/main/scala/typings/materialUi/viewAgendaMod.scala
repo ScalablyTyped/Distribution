@@ -10,10 +10,10 @@ object viewAgendaMod {
   
   @JSImport("material-ui/svg-icons/action/view-agenda", JSImport.Default)
   @js.native
-  class default () extends ActionViewAgenda
+  open class default () extends ActionViewAgenda
   
   @JSImport("material-ui/svg-icons/action/view-agenda", "ActionViewAgenda")
   @js.native
-  class ActionViewAgenda ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewAgenda ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

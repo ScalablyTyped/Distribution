@@ -2,12 +2,9 @@ package typings.vegaLite.anon
 
 import typings.vegaLite.channeldefMod.DatumDef
 import typings.vegaLite.channeldefMod.PrimitiveValue
+import typings.vegaLite.channeldefMod.SecondaryChannelDef
 import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.utilMod.Dict
-import typings.vegaLite.vegaLiteStrings.datum
-import typings.vegaLite.vegaLiteStrings.datumDotdatum
-import typings.vegaLite.vegaLiteStrings.parent
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,48 +12,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
-  var config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]
+  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
   
-  var expr: js.UndefOr[datum | parent | datumDotdatum] = js.undefined
+  var fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
-  var fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+  var fieldDef2: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
-  var format: String | Dict[js.Any]
-  
-  var formatType: String
-  
-  var normalizeStack: js.UndefOr[Boolean] = js.undefined
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
 }
 object Config {
   
   inline def apply(
-    config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef],
-    fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
-    format: String | Dict[js.Any],
-    formatType: String
+    config: typings.vegaLite.srcConfigMod.Config[SignalRef],
+    fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
   ): Config = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], fieldDef = fieldDef.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
   extension [Self <: Config](x: Self) {
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    inline def setExpr(value: datum | parent | datumDotdatum): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setFieldDef(
+      value: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+    ): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
-    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setFieldDef2(value: SecondaryChannelDef[String]): Self = StObject.set(x, "fieldDef2", value.asInstanceOf[js.Any])
     
-    inline def setFieldOrDatumDef(
-      value: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
-    ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
+    inline def setFieldDef2Undefined: Self = StObject.set(x, "fieldDef2", js.undefined)
     
-    inline def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-    
-    inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
-    
-    inline def setNormalizeStack(value: Boolean): Self = StObject.set(x, "normalizeStack", value.asInstanceOf[js.Any])
-    
-    inline def setNormalizeStackUndefined: Self = StObject.set(x, "normalizeStack", js.undefined)
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
   }
 }

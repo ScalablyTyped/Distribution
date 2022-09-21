@@ -40,7 +40,7 @@ trait RealtimeData extends StObject {
   var totalsForAllResults: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[Any]
   ] = js.undefined
 }
 object RealtimeData {
@@ -56,7 +56,7 @@ object RealtimeData {
     
     inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
-    inline def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+    inline def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object RealtimeData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object RealtimeData {
     inline def setTotalsForAllResults(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[Any]
     ): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
     inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)

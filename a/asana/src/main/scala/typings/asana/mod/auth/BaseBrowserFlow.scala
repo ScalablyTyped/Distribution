@@ -42,7 +42,7 @@ trait BaseBrowserFlow
     * @param state
     * @return
     */
-  def startAuthorization(authUrl: String, state: String): js.Any
+  def startAuthorization(authUrl: String, state: String): Any
 }
 object BaseBrowserFlow {
   
@@ -60,6 +60,6 @@ object BaseBrowserFlow {
     
     inline def setReceiverUrl(value: () => String): Self = StObject.set(x, "receiverUrl", js.Any.fromFunction0(value))
     
-    inline def setStartAuthorization(value: (String, String) => js.Any): Self = StObject.set(x, "startAuthorization", js.Any.fromFunction2(value))
+    inline def setStartAuthorization(value: (String, String) => Any): Self = StObject.set(x, "startAuthorization", js.Any.fromFunction2(value))
   }
 }

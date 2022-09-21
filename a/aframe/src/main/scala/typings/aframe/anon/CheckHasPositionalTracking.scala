@@ -1,6 +1,6 @@
 package typings.aframe.anon
 
-import typings.std.VRDisplay
+import typings.three.eventDispatcherMod.Event
 import typings.three.mod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CheckHasPositionalTracking extends StObject {
   
-  def PolyfillControls(object3D: Object3D): Unit
+  def PolyfillControls(object3D: Object3D[Event]): Unit
   
   def checkHasPositionalTracking(): Boolean
   
   def checkHeadsetConnected(): Boolean
-  
-  def getVRDisplay(): js.Array[VRDisplay]
   
   def isBrowserEnvironment(): Boolean
   
@@ -39,10 +37,9 @@ trait CheckHasPositionalTracking extends StObject {
 object CheckHasPositionalTracking {
   
   inline def apply(
-    PolyfillControls: Object3D => Unit,
+    PolyfillControls: Object3D[Event] => Unit,
     checkHasPositionalTracking: () => Boolean,
     checkHeadsetConnected: () => Boolean,
-    getVRDisplay: () => js.Array[VRDisplay],
     isBrowserEnvironment: () => Boolean,
     isGearVR: () => Boolean,
     isIOS: () => Boolean,
@@ -54,7 +51,7 @@ object CheckHasPositionalTracking {
     isTablet: () => Boolean,
     isWebXRAvailable: Boolean
   ): CheckHasPositionalTracking = {
-    val __obj = js.Dynamic.literal(PolyfillControls = js.Any.fromFunction1(PolyfillControls), checkHasPositionalTracking = js.Any.fromFunction0(checkHasPositionalTracking), checkHeadsetConnected = js.Any.fromFunction0(checkHeadsetConnected), getVRDisplay = js.Any.fromFunction0(getVRDisplay), isBrowserEnvironment = js.Any.fromFunction0(isBrowserEnvironment), isGearVR = js.Any.fromFunction0(isGearVR), isIOS = js.Any.fromFunction0(isIOS), isLandscape = js.Any.fromFunction0(isLandscape), isMobile = js.Any.fromFunction0(isMobile), isNodeEnvironment = js.Any.fromFunction0(isNodeEnvironment), isOculusGo = js.Any.fromFunction0(isOculusGo), isR7 = js.Any.fromFunction0(isR7), isTablet = js.Any.fromFunction0(isTablet), isWebXRAvailable = isWebXRAvailable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(PolyfillControls = js.Any.fromFunction1(PolyfillControls), checkHasPositionalTracking = js.Any.fromFunction0(checkHasPositionalTracking), checkHeadsetConnected = js.Any.fromFunction0(checkHeadsetConnected), isBrowserEnvironment = js.Any.fromFunction0(isBrowserEnvironment), isGearVR = js.Any.fromFunction0(isGearVR), isIOS = js.Any.fromFunction0(isIOS), isLandscape = js.Any.fromFunction0(isLandscape), isMobile = js.Any.fromFunction0(isMobile), isNodeEnvironment = js.Any.fromFunction0(isNodeEnvironment), isOculusGo = js.Any.fromFunction0(isOculusGo), isR7 = js.Any.fromFunction0(isR7), isTablet = js.Any.fromFunction0(isTablet), isWebXRAvailable = isWebXRAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckHasPositionalTracking]
   }
   
@@ -63,8 +60,6 @@ object CheckHasPositionalTracking {
     inline def setCheckHasPositionalTracking(value: () => Boolean): Self = StObject.set(x, "checkHasPositionalTracking", js.Any.fromFunction0(value))
     
     inline def setCheckHeadsetConnected(value: () => Boolean): Self = StObject.set(x, "checkHeadsetConnected", js.Any.fromFunction0(value))
-    
-    inline def setGetVRDisplay(value: () => js.Array[VRDisplay]): Self = StObject.set(x, "getVRDisplay", js.Any.fromFunction0(value))
     
     inline def setIsBrowserEnvironment(value: () => Boolean): Self = StObject.set(x, "isBrowserEnvironment", js.Any.fromFunction0(value))
     
@@ -86,6 +81,6 @@ object CheckHasPositionalTracking {
     
     inline def setIsWebXRAvailable(value: Boolean): Self = StObject.set(x, "isWebXRAvailable", value.asInstanceOf[js.Any])
     
-    inline def setPolyfillControls(value: Object3D => Unit): Self = StObject.set(x, "PolyfillControls", js.Any.fromFunction1(value))
+    inline def setPolyfillControls(value: Object3D[Event] => Unit): Self = StObject.set(x, "PolyfillControls", js.Any.fromFunction1(value))
   }
 }

@@ -9,16 +9,15 @@ trait SchemaProcessingError extends StObject {
   /**
     * Error code indicating the nature of the error.
     */
-  var code: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Description of the error.
+    * The description of the error.
     */
-  var errorMessage: js.UndefOr[String] = js.undefined
+  var errorMessage: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * In case the item fields are invalid, this field contains the details
-    * about the validation errors.
+    * In case the item fields are invalid, this field contains the details about the validation errors.
     */
   var fieldViolations: js.UndefOr[js.Array[SchemaFieldViolation]] = js.undefined
 }
@@ -33,9 +32,13 @@ object SchemaProcessingError {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
+    
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageNull: Self = StObject.set(x, "errorMessage", null)
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
@@ -43,6 +46,6 @@ object SchemaProcessingError {
     
     inline def setFieldViolationsUndefined: Self = StObject.set(x, "fieldViolations", js.undefined)
     
-    inline def setFieldViolationsVarargs(value: SchemaFieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value :_*))
+    inline def setFieldViolationsVarargs(value: SchemaFieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value*))
   }
 }

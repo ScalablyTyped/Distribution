@@ -2,6 +2,9 @@ package typings.naverWhale.whale
 
 import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.tabs.Tab
+import typings.naverWhale.naverWhaleStrings.audio
+import typings.naverWhale.naverWhaleStrings.image
+import typings.naverWhale.naverWhaleStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +19,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object contextMenus {
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.naverWhale.naverWhaleStrings.normal
+    - typings.naverWhale.naverWhaleStrings.checkbox
+    - typings.naverWhale.naverWhaleStrings.radio
+    - typings.naverWhale.naverWhaleStrings.separator
+  */
+  trait ContextItemType extends StObject
+  object ContextItemType {
+    
+    inline def checkbox: typings.naverWhale.naverWhaleStrings.checkbox = "checkbox".asInstanceOf[typings.naverWhale.naverWhaleStrings.checkbox]
+    
+    inline def normal: typings.naverWhale.naverWhaleStrings.normal = "normal".asInstanceOf[typings.naverWhale.naverWhaleStrings.normal]
+    
+    inline def radio: typings.naverWhale.naverWhaleStrings.radio = "radio".asInstanceOf[typings.naverWhale.naverWhaleStrings.radio]
+    
+    inline def separator: typings.naverWhale.naverWhaleStrings.separator = "separator".asInstanceOf[typings.naverWhale.naverWhaleStrings.separator]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.naverWhale.naverWhaleStrings.all
+    - typings.naverWhale.naverWhaleStrings.page
+    - typings.naverWhale.naverWhaleStrings.frame
+    - typings.naverWhale.naverWhaleStrings.selection
+    - typings.naverWhale.naverWhaleStrings.link
+    - typings.naverWhale.naverWhaleStrings.editable
+    - typings.naverWhale.naverWhaleStrings.image
+    - typings.naverWhale.naverWhaleStrings.video
+    - typings.naverWhale.naverWhaleStrings.audio
+    - typings.naverWhale.naverWhaleStrings.launcher
+    - typings.naverWhale.naverWhaleStrings.browser_action
+    - typings.naverWhale.naverWhaleStrings.page_action
+    - typings.naverWhale.naverWhaleStrings.action
+  */
+  trait ContextType extends StObject
+  object ContextType {
+    
+    inline def action: typings.naverWhale.naverWhaleStrings.action = "action".asInstanceOf[typings.naverWhale.naverWhaleStrings.action]
+    
+    inline def all: typings.naverWhale.naverWhaleStrings.all = "all".asInstanceOf[typings.naverWhale.naverWhaleStrings.all]
+    
+    inline def audio: typings.naverWhale.naverWhaleStrings.audio = "audio".asInstanceOf[typings.naverWhale.naverWhaleStrings.audio]
+    
+    inline def browser_action: typings.naverWhale.naverWhaleStrings.browser_action = "browser_action".asInstanceOf[typings.naverWhale.naverWhaleStrings.browser_action]
+    
+    inline def editable: typings.naverWhale.naverWhaleStrings.editable = "editable".asInstanceOf[typings.naverWhale.naverWhaleStrings.editable]
+    
+    inline def frame: typings.naverWhale.naverWhaleStrings.frame = "frame".asInstanceOf[typings.naverWhale.naverWhaleStrings.frame]
+    
+    inline def image: typings.naverWhale.naverWhaleStrings.image = "image".asInstanceOf[typings.naverWhale.naverWhaleStrings.image]
+    
+    inline def launcher: typings.naverWhale.naverWhaleStrings.launcher = "launcher".asInstanceOf[typings.naverWhale.naverWhaleStrings.launcher]
+    
+    inline def link: typings.naverWhale.naverWhaleStrings.link = "link".asInstanceOf[typings.naverWhale.naverWhaleStrings.link]
+    
+    inline def page: typings.naverWhale.naverWhaleStrings.page = "page".asInstanceOf[typings.naverWhale.naverWhaleStrings.page]
+    
+    inline def page_action: typings.naverWhale.naverWhaleStrings.page_action = "page_action".asInstanceOf[typings.naverWhale.naverWhaleStrings.page_action]
+    
+    inline def selection: typings.naverWhale.naverWhaleStrings.selection = "selection".asInstanceOf[typings.naverWhale.naverWhaleStrings.selection]
+    
+    inline def video: typings.naverWhale.naverWhaleStrings.video = "video".asInstanceOf[typings.naverWhale.naverWhaleStrings.video]
+  }
+  
   trait CreateProperties extends StObject {
     
     /** Optional. The initial state of a checkbox or radio item: true for selected and false for unselected. Only one radio item can be selected at a time in a given group of radio items.  */
     var checked: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. List of contexts this menu item will appear in. Defaults to ['page'] if not specified.  */
-    var contexts: js.UndefOr[js.Array[String]] = js.undefined
+    var contexts: js.UndefOr[
+        typings.chrome.chrome.contextMenus.ContextType | js.Array[typings.chrome.chrome.contextMenus.ContextType]
+      ] = js.undefined
     
     /** Optional. Lets you restrict the item to apply only to documents whose URL matches one of the given patterns. (This applies to frames as well.) For details on the format of a pattern, see Match Patterns.  */
     var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
@@ -52,7 +120,7 @@ object contextMenus {
       ] = js.undefined
     
     /** Optional. The ID of a parent menu item; this makes the item a child of a previously added item.  */
-    var parentId: js.UndefOr[js.Any] = js.undefined
+    var parentId: js.UndefOr[Double | String] = js.undefined
     
     /** Optional. Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.  */
     var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
@@ -61,7 +129,7 @@ object contextMenus {
     var title: js.UndefOr[String] = js.undefined
     
     /** Optional. The type of menu item. Defaults to 'normal' if not specified.  */
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[typings.chrome.chrome.contextMenus.ContextItemType] = js.undefined
     
     /**
       * Optional.
@@ -83,17 +151,19 @@ object contextMenus {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(
+        value: typings.chrome.chrome.contextMenus.ContextType | js.Array[typings.chrome.chrome.contextMenus.ContextType]
+      ): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: typings.chrome.chrome.contextMenus.ContextType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
       inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value*))
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -107,7 +177,7 @@ object contextMenus {
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      inline def setParentId(value: js.Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
@@ -115,13 +185,13 @@ object contextMenus {
       
       inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.chrome.chrome.contextMenus.ContextItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -181,17 +251,17 @@ object contextMenus {
       * Since Chrome 35.
       * One of 'image', 'video', or 'audio' if the context menu was activated on one of these types of elements.
       */
-    var mediaType: js.UndefOr[String] = js.undefined
+    var mediaType: js.UndefOr[image | video | audio] = js.undefined
     
     /**
       * Since Chrome 35.
       * The ID of the menu item that was clicked.
       */
-    var menuItemId: js.Any
+    var menuItemId: Double | String
     
     /**
       * Since Chrome 35.
-      * The URL of the page where the menu item was clicked. This property is not set if the click occured in a context where there is no current page, such as in a launcher context menu.
+      * The URL of the page where the menu item was clicked. This property is not set if the click occurred in a context where there is no current page, such as in a launcher context menu.
       */
     var pageUrl: String
     
@@ -200,7 +270,7 @@ object contextMenus {
       * Since Chrome 35.
       * The parent ID, if any, for the item clicked.
       */
-    var parentMenuItemId: js.UndefOr[js.Any] = js.undefined
+    var parentMenuItemId: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Optional.
@@ -225,7 +295,7 @@ object contextMenus {
   }
   object OnClickData {
     
-    inline def apply(editable: Boolean, menuItemId: js.Any, pageUrl: String): OnClickData = {
+    inline def apply(editable: Boolean, menuItemId: Double | String, pageUrl: String): OnClickData = {
       val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], pageUrl = pageUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnClickData]
     }
@@ -250,15 +320,15 @@ object contextMenus {
       
       inline def setLinkUrlUndefined: Self = StObject.set(x, "linkUrl", js.undefined)
       
-      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: image | video | audio): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
       inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      inline def setMenuItemId(value: js.Any): Self = StObject.set(x, "menuItemId", value.asInstanceOf[js.Any])
+      inline def setMenuItemId(value: Double | String): Self = StObject.set(x, "menuItemId", value.asInstanceOf[js.Any])
       
       inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
-      inline def setParentMenuItemId(value: js.Any): Self = StObject.set(x, "parentMenuItemId", value.asInstanceOf[js.Any])
+      inline def setParentMenuItemId(value: Double | String): Self = StObject.set(x, "parentMenuItemId", value.asInstanceOf[js.Any])
       
       inline def setParentMenuItemIdUndefined: Self = StObject.set(x, "parentMenuItemId", js.undefined)
       
@@ -280,7 +350,7 @@ object contextMenus {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
-    var contexts: js.UndefOr[js.Array[String]] = js.undefined
+    var contexts: js.UndefOr[js.Array[typings.chrome.chrome.contextMenus.ContextType]] = js.undefined
     
     var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -290,13 +360,13 @@ object contextMenus {
     var onclick: js.UndefOr[js.Function] = js.undefined
     
     /** Optional. Note: You cannot change an item to be a child of one of its own descendants.  */
-    var parentId: js.UndefOr[js.Any] = js.undefined
+    var parentId: js.UndefOr[Double | String] = js.undefined
     
     var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[typings.chrome.chrome.contextMenus.ContextItemType] = js.undefined
     
     /**
       * Optional.
@@ -318,17 +388,17 @@ object contextMenus {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[typings.chrome.chrome.contextMenus.ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: typings.chrome.chrome.contextMenus.ContextType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
       inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value*))
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -338,7 +408,7 @@ object contextMenus {
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      inline def setParentId(value: js.Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
@@ -346,13 +416,13 @@ object contextMenus {
       
       inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.chrome.chrome.contextMenus.ContextItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

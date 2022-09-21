@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetElement extends StObject {
   
   def getElement(
-    column: InsertModalColumnDescription[js.Any],
+    column: InsertModalColumnDescription[Any],
     attr: EditableAttrs,
     editorClass: String,
     ignoreEditable: Boolean,
-    defaultValue: js.Any
+    defaultValue: Any
   ): ReactElement | Boolean
 }
 object GetElement {
   
   inline def apply(
-    getElement: (InsertModalColumnDescription[js.Any], EditableAttrs, String, Boolean, js.Any) => ReactElement | Boolean
+    getElement: (InsertModalColumnDescription[Any], EditableAttrs, String, Boolean, Any) => ReactElement | Boolean
   ): GetElement = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction5(getElement))
     __obj.asInstanceOf[GetElement]
@@ -29,7 +29,7 @@ object GetElement {
   extension [Self <: GetElement](x: Self) {
     
     inline def setGetElement(
-      value: (InsertModalColumnDescription[js.Any], EditableAttrs, String, Boolean, js.Any) => ReactElement | Boolean
+      value: (InsertModalColumnDescription[Any], EditableAttrs, String, Boolean, Any) => ReactElement | Boolean
     ): Self = StObject.set(x, "getElement", js.Any.fromFunction5(value))
   }
 }

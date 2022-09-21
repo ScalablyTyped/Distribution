@@ -1,6 +1,5 @@
 package typings.jupyterlabCoreutils
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +28,6 @@ object anon {
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Raw extends StObject {
-    
-    var raw: String
-    
-    var rule: RegExp
-  }
-  object Raw {
-    
-    inline def apply(raw: String, rule: RegExp): Raw = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Raw]
-    }
-    
-    extension [Self <: Raw](x: Self) {
-      
-      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
-      
-      inline def setRule(value: RegExp): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     }
   }
 }

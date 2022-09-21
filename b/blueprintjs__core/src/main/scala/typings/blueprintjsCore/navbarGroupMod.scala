@@ -4,6 +4,7 @@ import typings.blueprintjsCore.alignmentMod.Alignment
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -29,10 +30,10 @@ object navbarGroupMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarGroup", "NavbarGroup")
   @js.native
-  class NavbarGroup protected ()
-    extends AbstractPureComponent2[INavbarGroupProps, js.Object, js.Object] {
-    def this(props: INavbarGroupProps) = this()
-    def this(props: INavbarGroupProps, context: js.Any) = this()
+  open class NavbarGroup protected ()
+    extends AbstractPureComponent2[NavbarGroupProps, js.Object, js.Object] {
+    def this(props: NavbarGroupProps) = this()
+    def this(props: NavbarGroupProps, context: Any) = this()
   }
   /* static members */
   object NavbarGroup {
@@ -43,8 +44,8 @@ object navbarGroupMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarGroup", "NavbarGroup.defaultProps")
     @js.native
-    def defaultProps: INavbarGroupProps = js.native
-    inline def defaultProps_=(x: INavbarGroupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: NavbarGroupProps = js.native
+    inline def defaultProps_=(x: NavbarGroupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarGroup", "NavbarGroup.displayName")
     @js.native
@@ -68,6 +69,7 @@ object navbarGroupMod {
     /**
       * The side of the navbar on which the group should appear.
       * The `Alignment` enum provides constants for these values.
+      *
       * @default Alignment.LEFT
       */
     var align: js.UndefOr[Alignment] = js.undefined
@@ -100,7 +102,7 @@ object navbarGroupMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -142,7 +144,7 @@ object navbarGroupMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -225,7 +227,7 @@ object navbarGroupMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,7 @@ object navbarGroupMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -303,7 +305,7 @@ object navbarGroupMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -356,4 +358,6 @@ object navbarGroupMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  type NavbarGroupProps = INavbarGroupProps
 }

@@ -1,121 +1,124 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.monacoEditor.anon.Model
+import typings.monacoEditor.anon.Owner
+import typings.monacoEditor.mod.IDisposable
+import typings.monacoEditor.mod.Selection
+import typings.monacoEditor.mod.Token
+import typings.monacoEditor.mod.Uri
+import typings.monacoEditor.mod.editor.^
+import typings.monacoEditor.monacoEditorStrings.inUntrustedWorkspace
+import typings.std.HTMLElement
+import typings.std.NonNullable
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def colorize(
-  text: java.lang.String,
-  languageId: java.lang.String,
-  options: typings.monacoEditor.mod.editor.IColorizerOptions
-): js.Promise[java.lang.String] = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+inline def colorize(text: String, languageId: String, options: IColorizerOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
-inline def colorizeElement(
-  domNode: typings.std.HTMLElement,
-  options: typings.monacoEditor.mod.editor.IColorizerElementOptions
-): js.Promise[scala.Unit] = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("colorizeElement")(domNode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def colorizeElement(domNode: HTMLElement, options: IColorizerElementOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizeElement")(domNode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def colorizeModelLine(model: typings.monacoEditor.mod.editor.ITextModel, lineNumber: scala.Double): java.lang.String = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("colorizeModelLine")(model.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def colorizeModelLine(model: typings.monacoEditor.mod.editor.ITextModel, lineNumber: scala.Double, tabSize: scala.Double): java.lang.String = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("colorizeModelLine")(model.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], tabSize.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def colorizeModelLine(model: ITextModel, lineNumber: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizeModelLine")(model.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def colorizeModelLine(model: ITextModel, lineNumber: Double, tabSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizeModelLine")(model.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], tabSize.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def create(domElement: typings.std.HTMLElement): typings.monacoEditor.mod.editor.IStandaloneCodeEditor = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneCodeEditor]
+inline def create(domElement: HTMLElement): IStandaloneCodeEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any]).asInstanceOf[IStandaloneCodeEditor]
+inline def create(domElement: HTMLElement, options: Unit, `override`: IEditorOverrideServices): IStandaloneCodeEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[IStandaloneCodeEditor]
+inline def create(domElement: HTMLElement, options: IStandaloneEditorConstructionOptions): IStandaloneCodeEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IStandaloneCodeEditor]
 inline def create(
-  domElement: typings.std.HTMLElement,
-  options: scala.Unit,
-  `override`: typings.monacoEditor.mod.editor.IEditorOverrideServices
-): typings.monacoEditor.mod.editor.IStandaloneCodeEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneCodeEditor]
-inline def create(
-  domElement: typings.std.HTMLElement,
-  options: typings.monacoEditor.mod.editor.IStandaloneEditorConstructionOptions
-): typings.monacoEditor.mod.editor.IStandaloneCodeEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneCodeEditor]
-inline def create(
-  domElement: typings.std.HTMLElement,
-  options: typings.monacoEditor.mod.editor.IStandaloneEditorConstructionOptions,
-  `override`: typings.monacoEditor.mod.editor.IEditorOverrideServices
-): typings.monacoEditor.mod.editor.IStandaloneCodeEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneCodeEditor]
+  domElement: HTMLElement,
+  options: IStandaloneEditorConstructionOptions,
+  `override`: IEditorOverrideServices
+): IStandaloneCodeEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[IStandaloneCodeEditor]
 
-inline def createDiffEditor(domElement: typings.std.HTMLElement): typings.monacoEditor.mod.editor.IStandaloneDiffEditor = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneDiffEditor]
+inline def createDiffEditor(domElement: HTMLElement): IStandaloneDiffEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any]).asInstanceOf[IStandaloneDiffEditor]
+inline def createDiffEditor(domElement: HTMLElement, options: Unit, `override`: IEditorOverrideServices): IStandaloneDiffEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[IStandaloneDiffEditor]
+inline def createDiffEditor(domElement: HTMLElement, options: IStandaloneDiffEditorConstructionOptions): IStandaloneDiffEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IStandaloneDiffEditor]
 inline def createDiffEditor(
-  domElement: typings.std.HTMLElement,
-  options: scala.Unit,
-  `override`: typings.monacoEditor.mod.editor.IEditorOverrideServices
-): typings.monacoEditor.mod.editor.IStandaloneDiffEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneDiffEditor]
-inline def createDiffEditor(
-  domElement: typings.std.HTMLElement,
-  options: typings.monacoEditor.mod.editor.IDiffEditorConstructionOptions
-): typings.monacoEditor.mod.editor.IStandaloneDiffEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneDiffEditor]
-inline def createDiffEditor(
-  domElement: typings.std.HTMLElement,
-  options: typings.monacoEditor.mod.editor.IDiffEditorConstructionOptions,
-  `override`: typings.monacoEditor.mod.editor.IEditorOverrideServices
-): typings.monacoEditor.mod.editor.IStandaloneDiffEditor = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IStandaloneDiffEditor]
+  domElement: HTMLElement,
+  options: IStandaloneDiffEditorConstructionOptions,
+  `override`: IEditorOverrideServices
+): IStandaloneDiffEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffEditor")(domElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[IStandaloneDiffEditor]
 
-inline def createDiffNavigator(diffEditor: typings.monacoEditor.mod.editor.IStandaloneDiffEditor): typings.monacoEditor.mod.editor.IDiffNavigator = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffNavigator")(diffEditor.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.IDiffNavigator]
-inline def createDiffNavigator(
-  diffEditor: typings.monacoEditor.mod.editor.IStandaloneDiffEditor,
-  opts: typings.monacoEditor.mod.editor.IDiffNavigatorOptions
-): typings.monacoEditor.mod.editor.IDiffNavigator = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createDiffNavigator")(diffEditor.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.IDiffNavigator]
+inline def createDiffNavigator(diffEditor: IStandaloneDiffEditor): IDiffNavigator = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffNavigator")(diffEditor.asInstanceOf[js.Any]).asInstanceOf[IDiffNavigator]
+inline def createDiffNavigator(diffEditor: IStandaloneDiffEditor, opts: IDiffNavigatorOptions): IDiffNavigator = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffNavigator")(diffEditor.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IDiffNavigator]
 
-inline def createModel(value: java.lang.String): typings.monacoEditor.mod.editor.ITextModel = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.ITextModel]
-inline def createModel(value: java.lang.String, language: java.lang.String): typings.monacoEditor.mod.editor.ITextModel = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.ITextModel]
-inline def createModel(value: java.lang.String, language: java.lang.String, uri: typings.monacoEditor.mod.Uri): typings.monacoEditor.mod.editor.ITextModel = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.ITextModel]
-inline def createModel(value: java.lang.String, language: scala.Unit, uri: typings.monacoEditor.mod.Uri): typings.monacoEditor.mod.editor.ITextModel = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.editor.ITextModel]
+inline def createModel(value: String): ITextModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any]).asInstanceOf[ITextModel]
+inline def createModel(value: String, language: String): ITextModel = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[ITextModel]
+inline def createModel(value: String, language: String, uri: Uri): ITextModel = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[ITextModel]
+inline def createModel(value: String, language: Unit, uri: Uri): ITextModel = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(value.asInstanceOf[js.Any], language.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[ITextModel]
 
-inline def createWebWorker[T](opts: typings.monacoEditor.mod.editor.IWebWorkerOptions): typings.monacoEditor.mod.editor.MonacoWebWorker[T] = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("createWebWorker")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.MonacoWebWorker[T]]
+inline def createWebWorker[T /* <: js.Object */](opts: IWebWorkerOptions): MonacoWebWorker[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebWorker")(opts.asInstanceOf[js.Any]).asInstanceOf[MonacoWebWorker[T]]
 
-inline def defineTheme(themeName: java.lang.String, themeData: typings.monacoEditor.mod.editor.IStandaloneThemeData): scala.Unit = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("defineTheme")(themeName.asInstanceOf[js.Any], themeData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def defineTheme(themeName: String, themeData: IStandaloneThemeData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTheme")(themeName.asInstanceOf[js.Any], themeData.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def getModel(uri: typings.monacoEditor.mod.Uri): typings.monacoEditor.mod.editor.ITextModel | scala.Null = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.editor.ITextModel | scala.Null]
+inline def getDiffEditors(): js.Array[IDiffEditor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffEditors")().asInstanceOf[js.Array[IDiffEditor]]
 
-inline def getModelMarkers(filter: typings.monacoEditor.anon.Owner): js.Array[typings.monacoEditor.mod.editor.IMarker] = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("getModelMarkers")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.monacoEditor.mod.editor.IMarker]]
+inline def getEditors(): js.Array[ICodeEditor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditors")().asInstanceOf[js.Array[ICodeEditor]]
 
-inline def getModels(): js.Array[typings.monacoEditor.mod.editor.ITextModel] = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("getModels")().asInstanceOf[js.Array[typings.monacoEditor.mod.editor.ITextModel]]
+inline def getModel(uri: Uri): ITextModel | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(uri.asInstanceOf[js.Any]).asInstanceOf[ITextModel | Null]
 
-inline def onDidChangeModelLanguage(listener: js.Function1[/* e */ typings.monacoEditor.anon.Model, scala.Unit]): typings.monacoEditor.mod.IDisposable = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("onDidChangeModelLanguage")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.IDisposable]
+inline def getModelMarkers(filter: Owner): js.Array[IMarker] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelMarkers")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMarker]]
 
-inline def onDidCreateEditor(listener: js.Function1[/* codeEditor */ typings.monacoEditor.mod.editor.ICodeEditor, scala.Unit]): typings.monacoEditor.mod.IDisposable = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("onDidCreateEditor")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.IDisposable]
+inline def getModels(): js.Array[ITextModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModels")().asInstanceOf[js.Array[ITextModel]]
 
-inline def onDidCreateModel(listener: js.Function1[/* model */ typings.monacoEditor.mod.editor.ITextModel, scala.Unit]): typings.monacoEditor.mod.IDisposable = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("onDidCreateModel")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.IDisposable]
+inline def onDidChangeMarkers(listener: js.Function1[/* e */ js.Array[Uri], Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onDidChangeMarkers")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def onWillDisposeModel(listener: js.Function1[/* model */ typings.monacoEditor.mod.editor.ITextModel, scala.Unit]): typings.monacoEditor.mod.IDisposable = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("onWillDisposeModel")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.IDisposable]
+inline def onDidChangeModelLanguage(listener: js.Function1[/* e */ Model, Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onDidChangeModelLanguage")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def remeasureFonts(): scala.Unit = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("remeasureFonts")().asInstanceOf[scala.Unit]
+inline def onDidCreateDiffEditor(listener: js.Function1[/* diffEditor */ IDiffEditor, Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onDidCreateDiffEditor")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def setModelLanguage(model: typings.monacoEditor.mod.editor.ITextModel, languageId: java.lang.String): scala.Unit = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def onDidCreateEditor(listener: js.Function1[/* codeEditor */ ICodeEditor, Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onDidCreateEditor")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def setModelMarkers(
-  model: typings.monacoEditor.mod.editor.ITextModel,
-  owner: java.lang.String,
-  markers: js.Array[typings.monacoEditor.mod.editor.IMarkerData]
-): scala.Unit = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("setModelMarkers")(model.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def onDidCreateModel(listener: js.Function1[/* model */ ITextModel, Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onDidCreateModel")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def setTheme(themeName: java.lang.String): scala.Unit = typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(themeName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def onWillDisposeModel(listener: js.Function1[/* model */ ITextModel, Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("onWillDisposeModel")(listener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
-inline def tokenize(text: java.lang.String, languageId: java.lang.String): js.Array[js.Array[typings.monacoEditor.mod.Token]] = (typings.monacoEditor.mod.editor.^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[typings.monacoEditor.mod.Token]]]
+inline def registerCommand(id: String, handler: js.Function2[/* accessor */ Any, /* repeated */ Any, Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCommand")(id.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
 
-type ComputedEditorOptionValue[T /* <: typings.monacoEditor.mod.editor.IEditorOption[js.Any, js.Any] */] = js.Any
+inline def remeasureFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remeasureFonts")().asInstanceOf[Unit]
 
-type FindComputedEditorOptionValueById[T /* <: typings.monacoEditor.mod.editor.EditorOption */] = typings.std.NonNullable[
-typings.monacoEditor.mod.editor.ComputedEditorOptionValue[
+inline def removeAllMarkers(owner: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllMarkers")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setModelLanguage(model: ITextModel, languageId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setModelMarkers(model: ITextModel, owner: String, markers: js.Array[IMarkerData]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelMarkers")(model.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setTheme(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def tokenize(text: String, languageId: String): js.Array[js.Array[Token]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Token]]]
+
+type ComputedEditorOptionValue[T /* <: IEditorOption[Any, Any] */] = Any
+
+type ContextKeyValue = js.UndefOr[
+Null | Boolean | Double | String | (js.Array[js.UndefOr[Null | Boolean | Double | String]]) | (Record[String, js.UndefOr[Null | Boolean | Double | String]])]
+
+type FindComputedEditorOptionValueById[T /* <: EditorOption */] = NonNullable[
+ComputedEditorOptionValue[
   /* import warning: importer.ImportType#apply Failed type conversion: monaco-editor.monaco-editor.editor.EditorOptionsType[monaco-editor.monaco-editor.editor.FindEditorOptionsKeyById<T>] */ js.Any
 ]]
 
-type FindEditorOptionsKeyById[T /* <: typings.monacoEditor.mod.editor.EditorOption */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof monaco-editor.monaco-editor.editor.EditorOptionsType ]: monaco-editor.monaco-editor.editor.EditorOptionsType[K]['id'] extends T? K : never}[keyof monaco-editor.monaco-editor.editor.EditorOptionsType] */ js.Any
+type FindEditorOptionsKeyById[T /* <: EditorOption */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof monaco-editor.monaco-editor.editor.EditorOptionsType ]: monaco-editor.monaco-editor.editor.EditorOptionsType[K]['id'] extends T? K : never}[keyof monaco-editor.monaco-editor.editor.EditorOptionsType] */ js.Any
 
-type IColors = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type IColors = StringDictionary[String]
 
-type ICommandHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
+type ICommandHandler = js.Function1[/* repeated */ Any, Unit]
 
 type ICursorStateComputer = js.Function1[
-/* inverseEditOperations */ js.Array[typings.monacoEditor.mod.editor.IValidEditOperation], 
-js.Array[typings.monacoEditor.mod.Selection] | scala.Null]
+/* inverseEditOperations */ js.Array[IValidEditOperation], 
+js.Array[Selection] | Null]
 
-type IEditorOverrideServices = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IEditorOverrideServices = StringDictionary[Any]
 
-type IModel = typings.monacoEditor.mod.editor.ITextModel
+type IIdentifiedSingleEditOperation = ISingleEditOperation
 
-type IReadOnlyModel = typings.monacoEditor.mod.editor.ITextModel
+type IModel = ITextModel
+
+type IReadOnlyModel = ITextModel
+
+type InUntrustedWorkspace = inUntrustedWorkspace
 
 /* Rewritten from type alias, can be one of: 
   - typings.monacoEditor.monacoEditorStrings.on
@@ -124,6 +127,4 @@ type IReadOnlyModel = typings.monacoEditor.mod.editor.ITextModel
   - typings.monacoEditor.monacoEditorStrings.interval
   - js.Function1[/ * lineNumber * / scala.Double, java.lang.String]
 */
-type LineNumbersType = typings.monacoEditor.mod.editor._LineNumbersType | (js.Function1[/* lineNumber */ scala.Double, java.lang.String])
-
-type ValidQuickSuggestionsOptions = scala.Boolean | typings.monacoEditor.anon.ReadonlyRequiredIQuickSug
+type LineNumbersType = _LineNumbersType | (js.Function1[/* lineNumber */ Double, String])

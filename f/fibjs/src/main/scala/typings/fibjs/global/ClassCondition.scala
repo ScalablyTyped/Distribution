@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassCondition ()
+open class ClassCondition ()
   extends StObject
      with typings.fibjs.ClassCondition {
   /**

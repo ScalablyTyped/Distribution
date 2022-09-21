@@ -8,7 +8,7 @@ import typings.xrm.xrmStrings.integer
 import typings.xrm.xrmStrings.lookup
 import typings.xrm.xrmStrings.memo
 import typings.xrm.xrmStrings.money
-import typings.xrm.xrmStrings.multioptionset
+import typings.xrm.xrmStrings.multiselectoptionset
 import typings.xrm.xrmStrings.optionset
 import typings.xrm.xrmStrings.string
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.lookup
   - typings.xrm.xrmStrings.memo
   - typings.xrm.xrmStrings.money
-  - typings.xrm.xrmStrings.multioptionset
+  - typings.xrm.xrmStrings.multiselectoptionset
   - typings.xrm.xrmStrings.optionset
   - typings.xrm.xrmStrings.string
 */
@@ -51,7 +51,7 @@ object AttributeType {
   
   inline def Money: money = "money".asInstanceOf[money]
   
-  inline def MultiOptionSet: multioptionset = "multioptionset".asInstanceOf[multioptionset]
+  inline def MultiOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
   
   inline def OptionSet: optionset = "optionset".asInstanceOf[optionset]
   

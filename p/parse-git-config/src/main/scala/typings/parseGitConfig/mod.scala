@@ -2,7 +2,6 @@ package typings.parseGitConfig
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.parseGitConfig.parseGitConfigStrings.global
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,7 +82,7 @@ object mod {
   inline def sync(options: Options): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   // TODO: Can this be defined more precisely?
-  type Config = StringDictionary[js.Any]
+  type Config = StringDictionary[Any]
   
   trait Options
     extends StObject
@@ -112,7 +111,7 @@ object mod {
     }
   }
   
-  type ParseCallback = js.Function2[/* err */ Error | Null, /* config */ Config, Unit]
+  type ParseCallback = js.Function2[/* err */ js.Error | Null, /* config */ Config, Unit]
   
   trait ResolveConfigOptions extends StObject {
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaImagesListResponse extends StObject {
   
+  /**
+    * All listed Images.
+    */
   var images: js.UndefOr[js.Array[SchemaImage]] = js.undefined
 }
 object SchemaImagesListResponse {
@@ -21,6 +24,6 @@ object SchemaImagesListResponse {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: SchemaImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: SchemaImage*): Self = StObject.set(x, "images", js.Array(value*))
   }
 }

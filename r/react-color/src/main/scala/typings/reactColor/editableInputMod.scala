@@ -16,12 +16,10 @@ object editableInputMod {
   
   @JSImport("react-color/lib/components/common/EditableInput", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[EditableInputProps, js.Object, js.Any]
+  open class default ()
+    extends Component[EditableInputProps, js.Object, Any]
   
-  @js.native
-  trait EditableInput
-    extends Component[EditableInputProps, js.Object, js.Any]
+  type EditableInput = Component[EditableInputProps, js.Object, Any]
   
   trait EditableInputProps
     extends StObject
@@ -39,7 +37,7 @@ object editableInputMod {
     
     var style: js.UndefOr[EditableInputStyles] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object EditableInputProps {
     
@@ -74,7 +72,7 @@ object editableInputMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

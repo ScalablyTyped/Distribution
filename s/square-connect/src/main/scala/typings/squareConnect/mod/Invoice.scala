@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Invoice")
 @js.native
-class Invoice () extends StObject {
+open class Invoice () extends StObject {
   
   /**
     * The timestamp when the invoice was created, in RFC 3339 format.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bro-fs
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 Promise-based HTML5 Filesystem API compatible with Node.js fs module
@@ -10,10 +10,10 @@ Promise-based HTML5 Filesystem API compatible with Node.js fs module
 | ------------------ | :-------------: |
 | Full name          | bro-fs |
 | Keywords           | fs, filesystem, html5-fs, html5-filesystem, html5-filesystem-api, browser-fs, browser-filesystem, web-fs, web-filesystem |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 18572 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2945.3333333333335 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/vitalets/bro-fs#readme)

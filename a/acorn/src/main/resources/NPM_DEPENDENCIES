@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "acorn" : "7.4.1"
+      "acorn" : "8.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "acorn" : "7.4.1"
+      "acorn" : "8.8.0"
     }
   ],
   "compile-devDependencies" : [

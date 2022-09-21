@@ -10,7 +10,7 @@ trait PlainElementNode
      with BaseElementNode
      with ElementNode {
   
-  var codegenNode: js.UndefOr[VNodeCall | SimpleExpressionNode | CacheExpression] = js.undefined
+  var codegenNode: js.UndefOr[VNodeCall | SimpleExpressionNode | CacheExpression | MemoExpression] = js.undefined
   
   var ssrCodegenNode: js.UndefOr[TemplateLiteral] = js.undefined
   
@@ -34,7 +34,7 @@ object PlainElementNode {
   
   extension [Self <: PlainElementNode](x: Self) {
     
-    inline def setCodegenNode(value: VNodeCall | SimpleExpressionNode | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: VNodeCall | SimpleExpressionNode | CacheExpression | MemoExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     

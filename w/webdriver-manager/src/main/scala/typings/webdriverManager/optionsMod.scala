@@ -13,7 +13,7 @@ object optionsMod {
   
   @JSImport("webdriver-manager/built/lib/cli/options", "Option")
   @js.native
-  class Option protected () extends StObject {
+  open class Option protected () extends StObject {
     def this(opt: String, description: String, `type`: String) = this()
     def this(opt: String, description: String, `type`: String, defaultValue: String) = this()
     def this(opt: String, description: String, `type`: String, defaultValue: Boolean) = this()

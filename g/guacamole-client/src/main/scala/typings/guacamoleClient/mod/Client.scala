@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Client")
 @js.native
-class Client protected ()
+open class Client protected ()
   extends typings.guacamoleClient.clientMod.Client {
   /**
     * @param tunnel The tunnel to use to send and receive Guacamole instructions.
     */
-  def this(tunnel: typings.guacamoleClient.webSocketTunnelMod.WebSocketTunnel) = this()
+  def this(tunnel: typings.guacamoleClient.tunnelMod.Tunnel) = this()
 }

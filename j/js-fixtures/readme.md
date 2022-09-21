@@ -10,10 +10,10 @@ jasmine-like fixtures without testing framework dependencies
 | ------------------ | :-------------: |
 | Full name          | js-fixtures |
 | Keywords           | test, fixture, mocha, testing, jasmine |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 15721 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 672.6666666666666 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/badunk/js-fixtures)

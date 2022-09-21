@@ -19,9 +19,9 @@ trait ActionTextActiveOpacity extends StObject {
   
   def onDismiss(): Unit
   
-  def onOk(_underscore: js.Any): Unit
+  def onOk(_underscore: Any): Unit
   
-  def onVisibleChange(_underscore: js.Any): Unit
+  def onVisibleChange(_underscore: Any): Unit
   
   var title: String
   
@@ -36,8 +36,8 @@ object ActionTextActiveOpacity {
     dismissText: String,
     okText: String,
     onDismiss: () => Unit,
-    onOk: js.Any => Unit,
-    onVisibleChange: js.Any => Unit,
+    onOk: Any => Unit,
+    onVisibleChange: Any => Unit,
     title: String,
     triggerType: String
   ): ActionTextActiveOpacity = {
@@ -57,9 +57,9 @@ object ActionTextActiveOpacity {
     
     inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
-    inline def setOnOk(value: js.Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+    inline def setOnOk(value: Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
     
-    inline def setOnVisibleChange(value: js.Any => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+    inline def setOnVisibleChange(value: Any => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -1,10 +1,10 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.checkboxCheckboxMod.RefCheckboxProps
+import typings.antDesignReactNative.checkboxStyleMod.CheckboxStyle
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.antDesignReactNative.radioPropsTypeMod.RadioItemPropsType
-import typings.antDesignReactNative.radioStyleMod.RadioStyle
 import typings.react.mod.Component
-import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
@@ -15,40 +15,32 @@ object radioItemMod {
   
   @JSImport("@ant-design/react-native/lib/radio/RadioItem", JSImport.Default)
   @js.native
-  class default () extends RadioItem
+  open class default () extends RadioItem
   
   @js.native
   trait RadioItem
-    extends Component[RadioItemNativeProps, js.Any, js.Any] {
+    extends Component[RadioItemProps, js.Object, Any] {
     
     def handleClick(): Unit = js.native
     
-    var radio: typings.antDesignReactNative.radioRadioMod.default | Null = js.native
+    var radio: RefCheckboxProps = js.native
   }
   
-  trait RadioItemNativeProps
+  trait RadioItemProps
     extends StObject
        with RadioItemPropsType
-       with WithThemeStyles[RadioStyle] {
-    
-    var radioStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
+       with WithThemeStyles[CheckboxStyle] {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
-  object RadioItemNativeProps {
+  object RadioItemProps {
     
-    inline def apply(): RadioItemNativeProps = {
+    inline def apply(): RadioItemProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RadioItemNativeProps]
+      __obj.asInstanceOf[RadioItemProps]
     }
     
-    extension [Self <: RadioItemNativeProps](x: Self) {
-      
-      inline def setRadioStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "radioStyle", value.asInstanceOf[js.Any])
-      
-      inline def setRadioStyleNull: Self = StObject.set(x, "radioStyle", null)
-      
-      inline def setRadioStyleUndefined: Self = StObject.set(x, "radioStyle", js.undefined)
+    extension [Self <: RadioItemProps](x: Self) {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

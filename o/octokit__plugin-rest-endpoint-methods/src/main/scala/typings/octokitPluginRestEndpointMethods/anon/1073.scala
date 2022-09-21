@@ -3,9 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.UsersCreateGpgKeyForAuthenticatedEndpoint
-import typings.octokitTypes.endpointsMod.UsersCreateGpgKeyForAuthenticatedResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -14,15 +14,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1073` extends StObject {
   
-  var parameters: RequestParameters & (Omit[UsersCreateGpgKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType])
+  var parameters: RequestParameters & (Omit[
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+    ]) & RequiredPreview[Any], 
+    baseUrl | headers | mediaType
+  ])
   
-  var response: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+  ]
 }
 object `1073` {
   
   inline def apply(
-    parameters: RequestParameters & (Omit[UsersCreateGpgKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]
+    parameters: RequestParameters & (Omit[
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+      ]) & RequiredPreview[Any], 
+      baseUrl | headers | mediaType
+    ]),
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+    ]
   ): `1073` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1073`]
@@ -31,9 +45,18 @@ object `1073` {
   extension [Self <: `1073`](x: Self) {
     
     inline def setParameters(
-      value: RequestParameters & (Omit[UsersCreateGpgKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+          ]) & RequiredPreview[Any], 
+          baseUrl | headers | mediaType
+        ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/issues']['post'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

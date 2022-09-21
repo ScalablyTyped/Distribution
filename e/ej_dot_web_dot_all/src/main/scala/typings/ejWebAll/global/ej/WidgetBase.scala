@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.WidgetBase")
 @js.native
-class WidgetBase ()
+open class WidgetBase ()
   extends StObject
      with typings.ejWebAll.ej.WidgetBase

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Ignore")
 @js.native
-class Ignore ()
+open class Ignore ()
   extends typings.nodegit.ignoreMod.Ignore
 /* static members */
 object Ignore {

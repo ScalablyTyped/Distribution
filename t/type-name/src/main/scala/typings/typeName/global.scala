@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def typeName(anyVar: js.Any): String = js.Dynamic.global.applyDynamic("typeName")(anyVar.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def typeName(anyVar: Any): String = js.Dynamic.global.applyDynamic("typeName")(anyVar.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "RequestPendingError")
 @js.native
 /** @internal */
-class RequestPendingError ()
+open class RequestPendingError ()
   extends typings.sipJs.apiMod.RequestPendingError {
   def this(message: String) = this()
 }

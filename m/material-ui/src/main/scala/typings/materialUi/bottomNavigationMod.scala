@@ -11,15 +11,15 @@ object bottomNavigationMod {
   
   @JSImport("material-ui/BottomNavigation", JSImport.Default)
   @js.native
-  class default () extends BottomNavigation
+  open class default () extends BottomNavigation
   
   @JSImport("material-ui/BottomNavigation", "BottomNavigation")
   @js.native
-  class BottomNavigation ()
-    extends Component[BottomNavigationProps, js.Object, js.Any]
+  open class BottomNavigation ()
+    extends Component[BottomNavigationProps, js.Object, Any]
   
   @JSImport("material-ui/BottomNavigation", "BottomNavigationItem")
   @js.native
-  class BottomNavigationItem ()
-    extends Component[BottomNavigationItemProps, js.Object, js.Any]
+  open class BottomNavigationItem ()
+    extends Component[BottomNavigationItemProps, js.Object, Any]
 }

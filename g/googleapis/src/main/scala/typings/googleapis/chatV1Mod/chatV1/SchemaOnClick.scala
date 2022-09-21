@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An onclick action (e.g. open a link).
-  */
 trait SchemaOnClick extends StObject {
   
   /**
-    * A form action will be trigger by this onclick if specified.
+    * A form action will be triggered by this onclick if specified.
     */
   var action: js.UndefOr[SchemaFormAction] = js.undefined
   

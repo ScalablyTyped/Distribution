@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkspaceEdit extends StObject {
   
-  var edits: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]
+  var edits: js.Array[IWorkspaceTextEdit | IWorkspaceFileEdit]
 }
 object WorkspaceEdit {
   
-  inline def apply(edits: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): WorkspaceEdit = {
+  inline def apply(edits: js.Array[IWorkspaceTextEdit | IWorkspaceFileEdit]): WorkspaceEdit = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceEdit]
   }
   
   extension [Self <: WorkspaceEdit](x: Self) {
     
-    inline def setEdits(value: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[IWorkspaceTextEdit | IWorkspaceFileEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    inline def setEditsVarargs(value: (WorkspaceTextEdit | WorkspaceFileEdit)*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: (IWorkspaceTextEdit | IWorkspaceFileEdit)*): Self = StObject.set(x, "edits", js.Array(value*))
   }
 }

@@ -6,7 +6,6 @@ import typings.fundamentalReact.anon.State
 import typings.fundamentalReact.anon.WeakValidationMapInputGro
 import typings.fundamentalReact.fundamentalReactStrings.InputGroupDotAddon
 import typings.react.mod.Component
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -17,8 +16,8 @@ object inputGroupMod {
   
   @JSImport("fundamental-react/lib/InputGroup/InputGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[InputGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[InputGroupProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/InputGroup/InputGroup", JSImport.Default)
@@ -29,8 +28,8 @@ object inputGroupMod {
     /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/InputGroup/InputGroup.InputGroupAddonProps> & {  displayName :'InputGroup.Addon'} */
     object Addon {
       
-      inline def apply(props: PropsWithChildren[InputGroupAddonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-      inline def apply(props: PropsWithChildren[InputGroupAddonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+      inline def apply(props: InputGroupAddonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+      inline def apply(props: InputGroupAddonProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
       
       @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon")
       @js.native
@@ -38,8 +37,8 @@ object inputGroupMod {
       
       @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon.defaultProps")
       @js.native
@@ -64,7 +63,7 @@ object inputGroupMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.InputGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type InputGroup = Component[InputGroupProps, js.Object, js.Any]
+  type InputGroup = Component[InputGroupProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.fundamentalReact.fundamentalReactStrings.before
@@ -111,7 +110,7 @@ object inputGroupMod {
   
   trait InputGroupProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -121,7 +120,7 @@ object inputGroupMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
     
     var validationState: js.UndefOr[State] = js.undefined
   }
@@ -150,7 +149,7 @@ object inputGroupMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       

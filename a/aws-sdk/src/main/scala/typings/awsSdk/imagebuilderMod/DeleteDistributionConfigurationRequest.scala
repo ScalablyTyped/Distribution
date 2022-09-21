@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDistributionConfigurationRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the distribution configuration to delete. 
+    * The Amazon Resource Name (ARN) of the distribution configuration to delete.
     */
   var distributionConfigurationArn: DistributionConfigurationArn
 }

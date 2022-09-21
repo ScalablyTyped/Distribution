@@ -12,26 +12,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  minWidth :number,   maxWidth :number,   minHeight :number,   maxHeight :number,   deviceId :string} & std.MediaTrackConstraints */
 trait minWidthnumbermaxWidthnum extends StObject {
   
+  /* standard dom */
   var advanced: js.UndefOr[js.Array[MediaTrackConstraintSet]] = js.undefined
   
+  /* standard dom */
   var aspectRatio: js.UndefOr[ConstrainDouble] = js.undefined
   
+  /* standard dom */
   var autoGainControl: js.UndefOr[ConstrainBoolean] = js.undefined
   
+  /* standard dom */
   var channelCount: js.UndefOr[ConstrainULong] = js.undefined
   
+  /* standard dom */
   var deviceId: String & js.UndefOr[ConstrainDOMString]
   
+  /* standard dom */
   var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
   
+  /* standard dom */
   var facingMode: js.UndefOr[ConstrainDOMString] = js.undefined
   
+  /* standard dom */
   var frameRate: js.UndefOr[ConstrainDouble] = js.undefined
   
+  /* standard dom */
   var groupId: js.UndefOr[ConstrainDOMString] = js.undefined
   
+  /* standard dom */
   var height: js.UndefOr[ConstrainULong] = js.undefined
   
+  /* standard dom */
   var latency: js.UndefOr[ConstrainDouble] = js.undefined
   
   var maxHeight: Double
@@ -42,14 +53,19 @@ trait minWidthnumbermaxWidthnum extends StObject {
   
   var minWidth: Double
   
+  /* standard dom */
   var noiseSuppression: js.UndefOr[ConstrainBoolean] = js.undefined
   
-  var resizeMode: js.UndefOr[ConstrainDOMString] = js.undefined
-  
+  /* standard dom */
   var sampleRate: js.UndefOr[ConstrainULong] = js.undefined
   
+  /* standard dom */
   var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
   
+  /* standard dom */
+  var suppressLocalAudioPlayback: js.UndefOr[ConstrainBoolean] = js.undefined
+  
+  /* standard dom */
   var width: js.UndefOr[ConstrainULong] = js.undefined
 }
 object minWidthnumbermaxWidthnum {
@@ -71,7 +87,7 @@ object minWidthnumbermaxWidthnum {
     
     inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
     
-    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value :_*))
+    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value*))
     
     inline def setAspectRatio(value: ConstrainDouble): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
@@ -95,7 +111,7 @@ object minWidthnumbermaxWidthnum {
     
     inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
-    inline def setFacingModeVarargs(value: String*): Self = StObject.set(x, "facingMode", js.Array(value :_*))
+    inline def setFacingModeVarargs(value: String*): Self = StObject.set(x, "facingMode", js.Array(value*))
     
     inline def setFrameRate(value: ConstrainDouble): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
@@ -105,7 +121,7 @@ object minWidthnumbermaxWidthnum {
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value*))
     
     inline def setHeight(value: ConstrainULong): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -127,12 +143,6 @@ object minWidthnumbermaxWidthnum {
     
     inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
     
-    inline def setResizeMode(value: ConstrainDOMString): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
-    
-    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
-    
-    inline def setResizeModeVarargs(value: String*): Self = StObject.set(x, "resizeMode", js.Array(value :_*))
-    
     inline def setSampleRate(value: ConstrainULong): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
@@ -140,6 +150,10 @@ object minWidthnumbermaxWidthnum {
     inline def setSampleSize(value: ConstrainULong): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    
+    inline def setSuppressLocalAudioPlayback(value: ConstrainBoolean): Self = StObject.set(x, "suppressLocalAudioPlayback", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressLocalAudioPlaybackUndefined: Self = StObject.set(x, "suppressLocalAudioPlayback", js.undefined)
     
     inline def setWidth(value: ConstrainULong): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

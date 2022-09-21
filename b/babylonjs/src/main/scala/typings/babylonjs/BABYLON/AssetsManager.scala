@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AssetsManager extends StObject {
   
-  /* private */ var _decreaseWaitingTasksCount: js.Any = js.native
+  /* private */ var _decreaseWaitingTasksCount: Any = js.native
   
-  /* private */ var _isLoading: js.Any = js.native
+  /* private */ var _formatTaskErrorMessage: Any = js.native
   
-  /* private */ var _runTask: js.Any = js.native
+  /* private */ var _isLoading: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _runTask: Any = js.native
+  
+  /* private */ var _scene: Any = js.native
   
   /* protected */ var _tasks: js.Array[AbstractAssetTask] = js.native
   
@@ -34,10 +37,11 @@ trait AssetsManager extends StObject {
     * @param taskName defines the name of the new task
     * @param meshesNames defines the name of meshes to load
     * @param rootUrl defines the root url to use to locate files
-    * @param sceneFilename defines the filename of the scene file
+    * @param sceneFilename defines the filename of the scene file or the File itself
     * @returns a new ContainerAssetTask object
     */
-  def addContainerTask(taskName: String, meshesNames: js.Any, rootUrl: String, sceneFilename: String): ContainerAssetTask = js.native
+  def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): ContainerAssetTask = js.native
+  def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): ContainerAssetTask = js.native
   
   /**
     * Add a CubeTextureAssetTask to the list of active tasks
@@ -46,6 +50,7 @@ trait AssetsManager extends StObject {
     * @param extensions defines the extension to use to load the cube map (can be null)
     * @param noMipmap defines if the texture must not receive mipmaps (false by default)
     * @param files defines the list of files to load (can be null)
+    * @param prefiltered defines the prefiltered texture option (default is false)
     * @returns a new CubeTextureAssetTask object
     */
   def addCubeTextureTask(taskName: String, url: String): CubeTextureAssetTask = js.native
@@ -62,12 +67,69 @@ trait AssetsManager extends StObject {
     taskName: String,
     url: String,
     extensions: js.Array[String],
+    noMipmap: Boolean,
+    files: js.Array[String],
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: js.Array[String],
+    noMipmap: Boolean,
+    files: Unit,
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: js.Array[String],
     noMipmap: Unit,
     files: js.Array[String]
   ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: js.Array[String],
+    noMipmap: Unit,
+    files: js.Array[String],
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: js.Array[String],
+    noMipmap: Unit,
+    files: Unit,
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
   def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean): CubeTextureAssetTask = js.native
   def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean, files: js.Array[String]): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: Unit,
+    noMipmap: Boolean,
+    files: js.Array[String],
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: Unit,
+    noMipmap: Boolean,
+    files: Unit,
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
   def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: js.Array[String]): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: Unit,
+    noMipmap: Unit,
+    files: js.Array[String],
+    prefiltered: Boolean
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: Unit, prefiltered: Boolean): CubeTextureAssetTask = js.native
   
   /**
     *
@@ -219,10 +281,11 @@ trait AssetsManager extends StObject {
     * @param taskName defines the name of the new task
     * @param meshesNames defines the name of meshes to load
     * @param rootUrl defines the root url to use to locate files
-    * @param sceneFilename defines the filename of the scene file
+    * @param sceneFilename defines the filename of the scene file or the File itself
     * @returns a new MeshAssetTask object
     */
-  def addMeshTask(taskName: String, meshesNames: js.Any, rootUrl: String, sceneFilename: String): MeshAssetTask = js.native
+  def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): MeshAssetTask = js.native
+  def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): MeshAssetTask = js.native
   
   /**
     * Add a TextFileAssetTask to the list of active tasks
@@ -259,13 +322,13 @@ trait AssetsManager extends StObject {
   
   /**
     * Start the loading process
-    * @return the current instance of the AssetsManager
+    * @returns the current instance of the AssetsManager
     */
   def load(): AssetsManager = js.native
   
   /**
     * Start the loading process as an async operation
-    * @return a promise returning the list of failed tasks
+    * @returns a promise returning the list of failed tasks
     */
   def loadAsync(): js.Promise[Unit] = js.native
   
@@ -317,7 +380,7 @@ trait AssetsManager extends StObject {
   
   /**
     * Reset the AssetsManager and remove all tasks
-    * @return the current instance of the AssetsManager
+    * @returns the current instance of the AssetsManager
     */
   def reset(): AssetsManager = js.native
   

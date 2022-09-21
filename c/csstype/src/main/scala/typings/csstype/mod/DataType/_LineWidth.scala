@@ -1,0 +1,64 @@
+package typings.csstype.mod.DataType
+
+import typings.csstype.mod.Property._Border
+import typings.csstype.mod.Property._BorderBlock
+import typings.csstype.mod.Property._BorderBlockEnd
+import typings.csstype.mod.Property._BorderBlockEndWidth
+import typings.csstype.mod.Property._BorderBlockStart
+import typings.csstype.mod.Property._BorderBlockStartWidth
+import typings.csstype.mod.Property._BorderBlockWidth
+import typings.csstype.mod.Property._BorderBottom
+import typings.csstype.mod.Property._BorderBottomWidth
+import typings.csstype.mod.Property._BorderInline
+import typings.csstype.mod.Property._BorderInlineEnd
+import typings.csstype.mod.Property._BorderInlineEndWidth
+import typings.csstype.mod.Property._BorderInlineStart
+import typings.csstype.mod.Property._BorderInlineStartWidth
+import typings.csstype.mod.Property._BorderInlineWidth
+import typings.csstype.mod.Property._BorderLeft
+import typings.csstype.mod.Property._BorderLeftWidth
+import typings.csstype.mod.Property._BorderRight
+import typings.csstype.mod.Property._BorderRightWidth
+import typings.csstype.mod.Property._BorderTop
+import typings.csstype.mod.Property._BorderTopWidth
+import typings.csstype.mod.Property._BorderWidth
+import typings.csstype.mod.Property._ColumnRule
+import typings.csstype.mod.Property._ColumnRuleWidth
+import typings.csstype.mod.Property._Outline
+import typings.csstype.mod.Property._OutlineWidth
+import typings.csstype.mod.Property._WebkitBorderBefore
+import typings.csstype.mod.Property._WebkitBorderBeforeWidth
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _LineWidth[TLength]
+  extends StObject
+     with _Border[TLength]
+     with _BorderBlock[TLength]
+     with _BorderBlockEnd[TLength]
+     with _BorderBlockEndWidth[TLength]
+     with _BorderBlockStart[TLength]
+     with _BorderBlockStartWidth[TLength]
+     with _BorderBlockWidth[TLength]
+     with _BorderBottom[TLength]
+     with _BorderBottomWidth[TLength]
+     with _BorderInline[TLength]
+     with _BorderInlineEnd[TLength]
+     with _BorderInlineEndWidth[TLength]
+     with _BorderInlineStart[TLength]
+     with _BorderInlineStartWidth[TLength]
+     with _BorderInlineWidth[TLength]
+     with _BorderLeft[TLength]
+     with _BorderLeftWidth[TLength]
+     with _BorderRight[TLength]
+     with _BorderRightWidth[TLength]
+     with _BorderTop[TLength]
+     with _BorderTopWidth[TLength]
+     with _BorderWidth[TLength]
+     with _ColumnRule[TLength]
+     with _ColumnRuleWidth[TLength]
+     with _Outline[TLength]
+     with _OutlineWidth[TLength]
+     with _WebkitBorderBefore[TLength]
+     with _WebkitBorderBeforeWidth[TLength]

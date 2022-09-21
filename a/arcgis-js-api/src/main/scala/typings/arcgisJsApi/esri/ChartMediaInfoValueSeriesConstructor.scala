@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChartMediaInfoValueSeriesConstructor
   extends StObject
-     with Instantiable0[ChartMediaInfoValueSeries]
+     with /**
+  * The `ChartMediaInfoValueSeries` class is a read-only support class that represents information specific to how data should be plotted in a chart.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html)
+  */
+Instantiable0[ChartMediaInfoValueSeries]
      with Instantiable1[/* properties */ ChartMediaInfoValueSeriesProperties, ChartMediaInfoValueSeries]

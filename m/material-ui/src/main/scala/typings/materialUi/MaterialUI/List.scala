@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object List {
   
-  type List = Component[ListProps, js.Object, js.Any]
+  type List = Component[ListProps, js.Object, Any]
   
-  type ListItem = Component[ListItemProps, js.Object, js.Any]
+  type ListItem = Component[ListItemProps, js.Object, Any]
   
   trait ListItemProps
     extends StObject
@@ -64,7 +64,7 @@ object List {
     
     var secondaryTextLines: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ListItemProps {
     
@@ -111,7 +111,7 @@ object List {
       
       inline def setNestedItemsUndefined: Self = StObject.set(x, "nestedItems", js.undefined)
       
-      inline def setNestedItemsVarargs(value: ReactElement*): Self = StObject.set(x, "nestedItems", js.Array(value :_*))
+      inline def setNestedItemsVarargs(value: ReactElement*): Self = StObject.set(x, "nestedItems", js.Array(value*))
       
       inline def setNestedLevel(value: Double): Self = StObject.set(x, "nestedLevel", value.asInstanceOf[js.Any])
       
@@ -161,7 +161,7 @@ object List {
       
       inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -171,11 +171,11 @@ object List {
   
   trait SelectableProps extends StObject {
     
-    var onChange: js.UndefOr[js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* value */ Any, Unit]] = js.undefined
     
     var selectedItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object SelectableProps {
     
@@ -186,7 +186,7 @@ object List {
     
     extension [Self <: SelectableProps](x: Self) {
       
-      inline def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* value */ Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -194,7 +194,7 @@ object List {
       
       inline def setSelectedItemStyleUndefined: Self = StObject.set(x, "selectedItemStyle", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

@@ -15,13 +15,13 @@ trait PartialComponentanySystem extends StObject {
   
   var attrName: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var el: js.UndefOr[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]] = js.undefined
+  var el: js.UndefOr[Entity[ObjectMap[Component[Any, System[Any]]]]] = js.undefined
   
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[Any] = js.undefined
   
   var extendSchema: js.UndefOr[js.Function1[/* update */ Schema_[js.Object], Unit]] = js.undefined
   
@@ -29,7 +29,7 @@ trait PartialComponentanySystem extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var init: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
   
   var initialized: js.UndefOr[Boolean] = js.undefined
   
@@ -43,9 +43,9 @@ trait PartialComponentanySystem extends StObject {
   
   var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var schema: js.UndefOr[Schema_[js.Any]] = js.undefined
+  var schema: js.UndefOr[Schema_[Any]] = js.undefined
   
-  var system: js.UndefOr[System[js.Any]] = js.undefined
+  var system: js.UndefOr[System[Any]] = js.undefined
   
   var tick: js.UndefOr[js.Function2[/* time */ Double, /* timeDelta */ Double, Unit]] = js.undefined
   
@@ -53,7 +53,7 @@ trait PartialComponentanySystem extends StObject {
     js.Function3[/* time */ Double, /* timeDelta */ Double, /* camera */ Camera, Unit]
   ] = js.undefined
   
-  var update: js.UndefOr[js.Function1[/* oldData */ js.Any, Unit]] = js.undefined
+  var update: js.UndefOr[js.Function1[/* oldData */ Any, Unit]] = js.undefined
   
   var updateSchema: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -70,7 +70,7 @@ object PartialComponentanySystem {
     
     inline def setAttrNameUndefined: Self = StObject.set(x, "attrName", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -78,13 +78,13 @@ object PartialComponentanySystem {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
-    inline def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Entity[ObjectMap[Component[Any, System[Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
@@ -100,7 +100,7 @@ object PartialComponentanySystem {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInit(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
@@ -128,11 +128,11 @@ object PartialComponentanySystem {
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema_[Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    inline def setSystem(value: System[js.Any]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: System[Any]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
@@ -144,7 +144,7 @@ object PartialComponentanySystem {
     
     inline def setTockUndefined: Self = StObject.set(x, "tock", js.undefined)
     
-    inline def setUpdate(value: /* oldData */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* oldData */ Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     inline def setUpdateSchema(value: () => Unit): Self = StObject.set(x, "updateSchema", js.Any.fromFunction0(value))
     

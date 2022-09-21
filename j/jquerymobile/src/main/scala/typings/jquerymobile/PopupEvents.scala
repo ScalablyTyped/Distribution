@@ -22,15 +22,15 @@ object PopupEvents {
   
   extension [Self <: PopupEvents](x: Self) {
     
-    inline def setPopupafterclose(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafterclose", js.Any.fromFunction2(value))
+    inline def setPopupafterclose(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "popupafterclose", js.Any.fromFunction2(value))
     
     inline def setPopupaftercloseUndefined: Self = StObject.set(x, "popupafterclose", js.undefined)
     
-    inline def setPopupafteropen(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafteropen", js.Any.fromFunction2(value))
+    inline def setPopupafteropen(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "popupafteropen", js.Any.fromFunction2(value))
     
     inline def setPopupafteropenUndefined: Self = StObject.set(x, "popupafteropen", js.undefined)
     
-    inline def setPopupbeforeposition(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupbeforeposition", js.Any.fromFunction2(value))
+    inline def setPopupbeforeposition(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "popupbeforeposition", js.Any.fromFunction2(value))
     
     inline def setPopupbeforepositionUndefined: Self = StObject.set(x, "popupbeforeposition", js.undefined)
   }

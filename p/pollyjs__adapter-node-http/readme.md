@@ -10,15 +10,12 @@ Node HTTP adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-node-http |
 | Keywords           | polly, pollyjs, record, replay, http, adapter |
-| # releases         | 26 |
-| # dependents       | 9 |
-| # downloads        | 609370 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 239705.66666666666 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fadapter-node-http)
     
 

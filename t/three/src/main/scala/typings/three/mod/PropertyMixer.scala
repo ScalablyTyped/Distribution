@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "PropertyMixer")
 @js.native
-class PropertyMixer protected ()
-  extends typings.three.propertyMixerMod.PropertyMixer {
-  def this(binding: js.Any, typeName: String, valueSize: Double) = this()
+open class PropertyMixer protected ()
+  extends typings.three.threeMod.PropertyMixer {
+  def this(binding: Any, typeName: String, valueSize: Double) = this()
 }

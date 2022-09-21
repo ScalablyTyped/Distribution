@@ -33,6 +33,6 @@ object DescribeVpcClassicLinkDnsSupportResult {
     
     inline def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
     
-    inline def setVpcsVarargs(value: ClassicLinkDnsSupport*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
+    inline def setVpcsVarargs(value: ClassicLinkDnsSupport*): Self = StObject.set(x, "Vpcs", js.Array(value*))
   }
 }

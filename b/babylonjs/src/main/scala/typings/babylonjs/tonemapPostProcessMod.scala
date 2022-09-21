@@ -11,28 +11,29 @@ object tonemapPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/tonemapPostProcess", "TonemapPostProcess")
   @js.native
-  class TonemapPostProcess protected () extends PostProcess {
+  open class TonemapPostProcess protected () extends PostProcess {
     /**
       * Creates a new TonemapPostProcess
       * @param name defines the name of the postprocess
       * @param _operator defines the operator to use
-      * @param exposureAdjustment defines the required exposure adjustement
+      * @param exposureAdjustment defines the required exposure adjustment
       * @param camera defines the camera to use (can be null)
       * @param samplingMode defines the required sampling mode (BABYLON.Texture.BILINEAR_SAMPLINGMODE by default)
       * @param engine defines the hosting engine (can be ignore if camera is set)
       * @param textureFormat defines the texture format to use (BABYLON.Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param reusable If the post process can be reused on the same frame. (default: false)
       */
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera
     ) = this()
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Double
@@ -40,7 +41,7 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Double,
@@ -49,7 +50,7 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Unit,
@@ -58,7 +59,7 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Double,
@@ -68,7 +69,7 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Double,
@@ -78,7 +79,7 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Unit,
@@ -88,17 +89,105 @@ object tonemapPostProcessMod {
     def this(
       name: String,
       _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
+      /** Defines the required exposure adjustment */
     exposureAdjustment: Double,
       camera: Camera,
       samplingMode: Unit,
       engine: Engine,
       textureFormat: Double
     ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Double,
+      engine: Unit,
+      textureFormat: Double,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Double,
+      engine: Unit,
+      textureFormat: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Double,
+      engine: Engine,
+      textureFormat: Double,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Double,
+      engine: Engine,
+      textureFormat: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Unit,
+      textureFormat: Double,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Unit,
+      textureFormat: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Engine,
+      textureFormat: Double,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustment */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Engine,
+      textureFormat: Unit,
+      reusable: Boolean
+    ) = this()
     
-    /* private */ var _operator: js.Any = js.native
+    /* private */ var _operator: Any = js.native
     
-    /** Defines the required exposure adjustement */
+    /** Defines the required exposure adjustment */
     var exposureAdjustment: Double = js.native
   }
   

@@ -21,7 +21,7 @@ object IPalette {
     
     inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setGet(value: Double => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

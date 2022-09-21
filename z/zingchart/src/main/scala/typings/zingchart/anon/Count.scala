@@ -9,7 +9,7 @@ trait Count extends StObject {
   /**
     * Offset from start to zoom. This attribute is coupled with the type attribute to determine where to set the zoom level. 1 | 2 | 3
     */
-  var count: js.UndefOr[js.Any] = js.undefined
+  var count: js.UndefOr[Any] = js.undefined
   
   /**
     * To set the text of the button 3m | 2015 | all
@@ -30,7 +30,7 @@ object Count {
   
   extension [Self <: Count](x: Self) {
     
-    inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     

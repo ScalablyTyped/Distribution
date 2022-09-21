@@ -9,7 +9,7 @@ object darwinMod {
   
   @JSImport("devcert/dist/platforms/darwin", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MacOSPlatform
   
@@ -18,16 +18,16 @@ object darwinMod {
     extends StObject
        with Platform {
     
-    /* private */ var FIREFOX_BIN_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BIN_PATH: Any = js.native
     
-    /* private */ var FIREFOX_BUNDLE_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BUNDLE_PATH: Any = js.native
     
-    /* private */ var FIREFOX_NSS_DIR: js.Any = js.native
+    /* private */ var FIREFOX_NSS_DIR: Any = js.native
     
-    /* private */ var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: Any = js.native
     
-    /* private */ var isFirefoxInstalled: js.Any = js.native
+    /* private */ var isFirefoxInstalled: Any = js.native
     
-    /* private */ var isNSSInstalled: js.Any = js.native
+    /* private */ var isNSSInstalled: Any = js.native
   }
 }

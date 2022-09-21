@@ -69,7 +69,7 @@ object PlaylistTrack {
     
     inline def setAlbumArtRefUndefined: Self = StObject.set(x, "albumArtRef", js.undefined)
     
-    inline def setAlbumArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "albumArtRef", js.Array(value :_*))
+    inline def setAlbumArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "albumArtRef", js.Array(value*))
     
     inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
@@ -91,13 +91,13 @@ object PlaylistTrack {
     
     inline def setArtistArtRefUndefined: Self = StObject.set(x, "artistArtRef", js.undefined)
     
-    inline def setArtistArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "artistArtRef", js.Array(value :_*))
+    inline def setArtistArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "artistArtRef", js.Array(value*))
     
     inline def setArtistId(value: js.Array[String]): Self = StObject.set(x, "artistId", value.asInstanceOf[js.Any])
     
     inline def setArtistIdUndefined: Self = StObject.set(x, "artistId", js.undefined)
     
-    inline def setArtistIdVarargs(value: String*): Self = StObject.set(x, "artistId", js.Array(value :_*))
+    inline def setArtistIdVarargs(value: String*): Self = StObject.set(x, "artistId", js.Array(value*))
     
     inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     

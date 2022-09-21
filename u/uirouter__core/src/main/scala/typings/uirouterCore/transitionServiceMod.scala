@@ -33,7 +33,7 @@ object transitionServiceMod {
   
   @JSImport("@uirouter/core/lib/transition/transitionService", "TransitionService")
   @js.native
-  class TransitionService protected ()
+  open class TransitionService protected ()
     extends StObject
        with IHookRegistry
        with Disposable {
@@ -45,13 +45,13 @@ object transitionServiceMod {
     var $view: ViewService = js.native
     
     /** The  paths on a criteria object */
-    /* private */ var _criteriaPaths: js.Any = js.native
+    /* private */ var _criteriaPaths: Any = js.native
     
     /** @internal */
-    /* private */ var _defineCoreEvents: js.Any = js.native
+    /* private */ var _defineCoreEvents: Any = js.native
     
     /** @internal */
-    /* private */ var _defineCorePaths: js.Any = js.native
+    /* private */ var _defineCorePaths: Any = js.native
     
     /** @internal */
     def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): Unit = js.native
@@ -208,7 +208,7 @@ object transitionServiceMod {
       *
       * @internal
       */
-    /* private */ var _definePathType: js.Any = js.native
+    /* private */ var _definePathType: Any = js.native
     
     /**
       * This object has hook de-registration functions for the built-in hooks.
@@ -219,25 +219,25 @@ object transitionServiceMod {
     var _deregisterHookFns: ActivateViews = js.native
     
     /** The transition hook types, such as `onEnter`, `onStart`, etc */
-    /* private */ var _eventTypes: js.Any = js.native
+    /* private */ var _eventTypes: Any = js.native
     
     /** @internal */
-    /* private */ var _getEvents: js.Any = js.native
+    /* private */ var _getEvents: Any = js.native
     
     /** @internal */
-    /* private */ var _getPathTypes: js.Any = js.native
+    /* private */ var _getPathTypes: Any = js.native
     
     /** @internal */
     var _pluginapi: TransitionServicePluginAPI = js.native
     
     /** @internal */
-    /* private */ var _registerCoreTransitionHooks: js.Any = js.native
+    /* private */ var _registerCoreTransitionHooks: Any = js.native
     
     /** @internal The registered transition hooks */
     @JSName("_registeredHooks")
     var _registeredHooks_TransitionService: RegisteredHooks = js.native
     
-    /* private */ var _router: js.Any = js.native
+    /* private */ var _router: Any = js.native
     
     /** @internal */
     var _transitionCount: Double = js.native
@@ -294,14 +294,14 @@ object transitionServiceMod {
       * Defines a transition hook type and returns a transition hook registration
       * function (which can then be used to register hooks of this type).
       */
-    def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): js.Any = js.native
+    def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -311,7 +311,7 @@ object transitionServiceMod {
       getResultHandler: Unit,
       getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -320,7 +320,7 @@ object transitionServiceMod {
       reverseSort: Boolean,
       getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -330,7 +330,7 @@ object transitionServiceMod {
       getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -338,7 +338,7 @@ object transitionServiceMod {
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -348,7 +348,7 @@ object transitionServiceMod {
       getResultHandler: GetResultHandler,
       getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -357,7 +357,7 @@ object transitionServiceMod {
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -367,7 +367,7 @@ object transitionServiceMod {
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -377,7 +377,7 @@ object transitionServiceMod {
       getResultHandler: Unit,
       getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -386,7 +386,7 @@ object transitionServiceMod {
       reverseSort: Unit,
       getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -396,7 +396,7 @@ object transitionServiceMod {
       getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -404,7 +404,7 @@ object transitionServiceMod {
       criteriaMatchPath: PathType,
       reverseSort: Unit,
       getResultHandler: GetResultHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -414,7 +414,7 @@ object transitionServiceMod {
       getResultHandler: GetResultHandler,
       getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -423,7 +423,7 @@ object transitionServiceMod {
       reverseSort: Unit,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
+    ): Any = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -433,7 +433,7 @@ object transitionServiceMod {
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     
     /**
       * Adds a Path to be used as a criterion against a TreeChanges path
@@ -446,7 +446,7 @@ object transitionServiceMod {
       * It was defined by calling `defineTreeChangesCriterion('to', TransitionHookScope.TRANSITION)`
       * Only the tail of the `to` path is checked against the criteria and returned as part of the match.
       */
-    def _definePathType(name: String, hookScope: TransitionHookScope): js.Any = js.native
+    def _definePathType(name: String, hookScope: TransitionHookScope): Any = js.native
     
     /**
       * Returns the known event types, such as `onBefore`

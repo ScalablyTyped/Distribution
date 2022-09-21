@@ -5,30 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A ParagraphElement representing a spot in the text that is dynamically
-  * replaced with content that can change over time, like a page number.
-  */
 trait SchemaAutoText extends StObject {
   
   /**
-    * The suggested deletion IDs. If empty, then there are no suggested
-    * deletions of this content.
+    * The suggested deletion IDs. If empty, then there are no suggested deletions of this content.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var suggestedDeletionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The suggested insertion IDs. An AutoText may have multiple insertion IDs
-    * if it is a nested suggested change. If empty, then this is not a
-    * suggested insertion.
+    * The suggested insertion IDs. An AutoText may have multiple insertion IDs if it is a nested suggested change. If empty, then this is not a suggested insertion.
     */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var suggestedInsertionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The suggested text style changes to this AutoText, keyed by suggestion
-    * ID.
+    * The suggested text style changes to this AutoText, keyed by suggestion ID.
     */
-  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle]] = js.undefined
+  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle] | Null] = js.undefined
   
   /**
     * The text style of this AutoText.
@@ -38,7 +30,7 @@ trait SchemaAutoText extends StObject {
   /**
     * The type of this auto text.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAutoText {
   
@@ -51,17 +43,23 @@ object SchemaAutoText {
     
     inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
+    inline def setSuggestedDeletionIdsNull: Self = StObject.set(x, "suggestedDeletionIds", null)
+    
     inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
-    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
     
     inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
     
+    inline def setSuggestedInsertionIdsNull: Self = StObject.set(x, "suggestedInsertionIds", null)
+    
     inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
     
-    inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+    inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
     
     inline def setSuggestedTextStyleChanges(value: StringDictionary[SchemaSuggestedTextStyle]): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedTextStyleChangesNull: Self = StObject.set(x, "suggestedTextStyleChanges", null)
     
     inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
     
@@ -70,6 +68,8 @@ object SchemaAutoText {
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

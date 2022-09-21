@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IotEventsDestinationConfiguration extends StObject {
   
   /**
-    * The name of the AWS IoT Events input to which dataset contents are delivered.
+    * The name of the IoT Events input to which dataset contents are delivered.
     */
   var inputName: IotEventsInputName
   
   /**
-    * The ARN of the role that grants AWS IoT Analytics permission to deliver dataset contents to an AWS IoT Events input.
+    * The ARN of the role that grants IoT Analytics permission to deliver dataset contents to an IoT Events input.
     */
   var roleArn: RoleArn
 }

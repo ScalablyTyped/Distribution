@@ -1,6 +1,5 @@
 package typings.badWords
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("bad-words", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BadWordsFilter {
     def this(options: Options) = this()
@@ -79,11 +78,11 @@ object mod {
     
     var placeHolder: js.UndefOr[String] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
-    var replaceRegex: js.UndefOr[RegExp] = js.undefined
+    var replaceRegex: js.UndefOr[js.RegExp] = js.undefined
     
-    var splitRegex: js.UndefOr[RegExp] = js.undefined
+    var splitRegex: js.UndefOr[js.RegExp] = js.undefined
   }
   object Options {
     
@@ -102,27 +101,27 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
       
       inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      inline def setReplaceRegex(value: RegExp): Self = StObject.set(x, "replaceRegex", value.asInstanceOf[js.Any])
+      inline def setReplaceRegex(value: js.RegExp): Self = StObject.set(x, "replaceRegex", value.asInstanceOf[js.Any])
       
       inline def setReplaceRegexUndefined: Self = StObject.set(x, "replaceRegex", js.undefined)
       
-      inline def setSplitRegex(value: RegExp): Self = StObject.set(x, "splitRegex", value.asInstanceOf[js.Any])
+      inline def setSplitRegex(value: js.RegExp): Self = StObject.set(x, "splitRegex", value.asInstanceOf[js.Any])
       
       inline def setSplitRegexUndefined: Self = StObject.set(x, "splitRegex", js.undefined)
     }

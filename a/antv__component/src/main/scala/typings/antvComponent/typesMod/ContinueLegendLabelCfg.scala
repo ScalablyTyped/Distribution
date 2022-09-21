@@ -17,6 +17,12 @@ trait ContinueLegendLabelCfg extends StObject {
   var align: js.UndefOr[String] = js.undefined
   
   /**
+    * 文本格式化
+    * @type {string}
+    */
+  var formatter: js.UndefOr[js.Function1[/* text */ String | Double | Null, String]] = js.undefined
+  
+  /**
     * 文本同滑轨的距离
     * @type {number}
     */
@@ -40,6 +46,10 @@ object ContinueLegendLabelCfg {
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setFormatter(value: /* text */ String | Double | Null => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

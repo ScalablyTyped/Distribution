@@ -12,8 +12,8 @@ object timeMod {
   
   @JSImport("fundamental-react/lib/Time/Time", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TimeProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TimeProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/Time/Time", JSImport.Default)
@@ -27,7 +27,7 @@ object timeMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Time): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type Time = Component[TimeProps, js.Object, js.Any]
+  type Time = Component[TimeProps, js.Object, Any]
   
   trait TimeBaseProps extends StObject {
     
@@ -87,39 +87,39 @@ object timeMod {
   trait TimeProps
     extends StObject
        with TimeBaseProps
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hoursDownButtonProps: js.UndefOr[js.Any] = js.undefined
+    var hoursDownButtonProps: js.UndefOr[Any] = js.undefined
     
-    var hoursInputProps: js.UndefOr[js.Any] = js.undefined
+    var hoursInputProps: js.UndefOr[Any] = js.undefined
     
-    var hoursUpButtonProps: js.UndefOr[js.Any] = js.undefined
+    var hoursUpButtonProps: js.UndefOr[Any] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
     var localizedText: js.UndefOr[MeridiemAM] = js.undefined
     
-    var meridiemDownButtonProps: js.UndefOr[js.Any] = js.undefined
+    var meridiemDownButtonProps: js.UndefOr[Any] = js.undefined
     
-    var meridiemInputProps: js.UndefOr[js.Any] = js.undefined
+    var meridiemInputProps: js.UndefOr[Any] = js.undefined
     
-    var meridiemUpButtonProps: js.UndefOr[js.Any] = js.undefined
+    var meridiemUpButtonProps: js.UndefOr[Any] = js.undefined
     
-    var minutesDownButtonProps: js.UndefOr[js.Any] = js.undefined
+    var minutesDownButtonProps: js.UndefOr[Any] = js.undefined
     
-    var minutesInputProps: js.UndefOr[js.Any] = js.undefined
+    var minutesInputProps: js.UndefOr[Any] = js.undefined
     
-    var minutesUpButtonProps: js.UndefOr[js.Any] = js.undefined
+    var minutesUpButtonProps: js.UndefOr[Any] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* time */ Hour, Unit]] = js.undefined
     
-    var secondsDownButtonProps: js.UndefOr[js.Any] = js.undefined
+    var secondsDownButtonProps: js.UndefOr[Any] = js.undefined
     
-    var secondsInputProps: js.UndefOr[js.Any] = js.undefined
+    var secondsInputProps: js.UndefOr[Any] = js.undefined
     
-    var secondsUpButtonProps: js.UndefOr[js.Any] = js.undefined
+    var secondsUpButtonProps: js.UndefOr[Any] = js.undefined
   }
   object TimeProps {
     
@@ -134,15 +134,15 @@ object timeMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setHoursDownButtonProps(value: js.Any): Self = StObject.set(x, "hoursDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setHoursDownButtonProps(value: Any): Self = StObject.set(x, "hoursDownButtonProps", value.asInstanceOf[js.Any])
       
       inline def setHoursDownButtonPropsUndefined: Self = StObject.set(x, "hoursDownButtonProps", js.undefined)
       
-      inline def setHoursInputProps(value: js.Any): Self = StObject.set(x, "hoursInputProps", value.asInstanceOf[js.Any])
+      inline def setHoursInputProps(value: Any): Self = StObject.set(x, "hoursInputProps", value.asInstanceOf[js.Any])
       
       inline def setHoursInputPropsUndefined: Self = StObject.set(x, "hoursInputProps", js.undefined)
       
-      inline def setHoursUpButtonProps(value: js.Any): Self = StObject.set(x, "hoursUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setHoursUpButtonProps(value: Any): Self = StObject.set(x, "hoursUpButtonProps", value.asInstanceOf[js.Any])
       
       inline def setHoursUpButtonPropsUndefined: Self = StObject.set(x, "hoursUpButtonProps", js.undefined)
       
@@ -154,27 +154,27 @@ object timeMod {
       
       inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      inline def setMeridiemDownButtonProps(value: js.Any): Self = StObject.set(x, "meridiemDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemDownButtonProps(value: Any): Self = StObject.set(x, "meridiemDownButtonProps", value.asInstanceOf[js.Any])
       
       inline def setMeridiemDownButtonPropsUndefined: Self = StObject.set(x, "meridiemDownButtonProps", js.undefined)
       
-      inline def setMeridiemInputProps(value: js.Any): Self = StObject.set(x, "meridiemInputProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemInputProps(value: Any): Self = StObject.set(x, "meridiemInputProps", value.asInstanceOf[js.Any])
       
       inline def setMeridiemInputPropsUndefined: Self = StObject.set(x, "meridiemInputProps", js.undefined)
       
-      inline def setMeridiemUpButtonProps(value: js.Any): Self = StObject.set(x, "meridiemUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemUpButtonProps(value: Any): Self = StObject.set(x, "meridiemUpButtonProps", value.asInstanceOf[js.Any])
       
       inline def setMeridiemUpButtonPropsUndefined: Self = StObject.set(x, "meridiemUpButtonProps", js.undefined)
       
-      inline def setMinutesDownButtonProps(value: js.Any): Self = StObject.set(x, "minutesDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setMinutesDownButtonProps(value: Any): Self = StObject.set(x, "minutesDownButtonProps", value.asInstanceOf[js.Any])
       
       inline def setMinutesDownButtonPropsUndefined: Self = StObject.set(x, "minutesDownButtonProps", js.undefined)
       
-      inline def setMinutesInputProps(value: js.Any): Self = StObject.set(x, "minutesInputProps", value.asInstanceOf[js.Any])
+      inline def setMinutesInputProps(value: Any): Self = StObject.set(x, "minutesInputProps", value.asInstanceOf[js.Any])
       
       inline def setMinutesInputPropsUndefined: Self = StObject.set(x, "minutesInputProps", js.undefined)
       
-      inline def setMinutesUpButtonProps(value: js.Any): Self = StObject.set(x, "minutesUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setMinutesUpButtonProps(value: Any): Self = StObject.set(x, "minutesUpButtonProps", value.asInstanceOf[js.Any])
       
       inline def setMinutesUpButtonPropsUndefined: Self = StObject.set(x, "minutesUpButtonProps", js.undefined)
       
@@ -182,15 +182,15 @@ object timeMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setSecondsDownButtonProps(value: js.Any): Self = StObject.set(x, "secondsDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setSecondsDownButtonProps(value: Any): Self = StObject.set(x, "secondsDownButtonProps", value.asInstanceOf[js.Any])
       
       inline def setSecondsDownButtonPropsUndefined: Self = StObject.set(x, "secondsDownButtonProps", js.undefined)
       
-      inline def setSecondsInputProps(value: js.Any): Self = StObject.set(x, "secondsInputProps", value.asInstanceOf[js.Any])
+      inline def setSecondsInputProps(value: Any): Self = StObject.set(x, "secondsInputProps", value.asInstanceOf[js.Any])
       
       inline def setSecondsInputPropsUndefined: Self = StObject.set(x, "secondsInputProps", js.undefined)
       
-      inline def setSecondsUpButtonProps(value: js.Any): Self = StObject.set(x, "secondsUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setSecondsUpButtonProps(value: Any): Self = StObject.set(x, "secondsUpButtonProps", value.asInstanceOf[js.Any])
       
       inline def setSecondsUpButtonPropsUndefined: Self = StObject.set(x, "secondsUpButtonProps", js.undefined)
     }

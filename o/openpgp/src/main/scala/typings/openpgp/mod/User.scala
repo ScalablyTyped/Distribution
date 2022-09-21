@@ -9,20 +9,19 @@ import typings.openpgp.mod.packet.PublicSubkey
 import typings.openpgp.mod.packet.SecretKey
 import typings.openpgp.mod.packet.SecretSubkey
 import typings.openpgp.mod.packet.Signature
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "User")
 @js.native
-class User () extends StObject {
+open class User () extends StObject {
   
-  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: PublicKey, certificate: Signature, key: SecretSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: PublicKey, date: js.Date): js.Promise[Boolean] = js.native
   /**
     * Checks if a given certificate of the user is revoked
     * @param primaryKey The primary key packet
@@ -31,18 +30,18 @@ class User () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns True if the certificate is revoked
     */
-  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
-  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
+  def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretSubkey, date: js.Date): js.Promise[Boolean] = js.native
   
-  def sign(primaryKey: PublicKey, privateKeys: js.Array[js.Any]): js.Promise[Key] = js.native
+  def sign(primaryKey: PublicKey, privateKeys: js.Array[Any]): js.Promise[Key] = js.native
   /**
     * Signs user
     * @param primaryKey The primary key packet
     * @param privateKeys Decrypted private keys for signing
     * @returns New user with new certificate signatures
     */
-  def sign(primaryKey: SecretKey, privateKeys: js.Array[js.Any]): js.Promise[Key] = js.native
+  def sign(primaryKey: SecretKey, privateKeys: js.Array[Any]): js.Promise[Key] = js.native
   
   /**
     * Transforms structured user data to packetlist
@@ -59,7 +58,7 @@ class User () extends StObject {
   def update(user: typings.openpgp.mod.key.User, primaryKey: SecretKey): js.Promise[Unit] = js.native
   def update(user: typings.openpgp.mod.key.User, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
   
-  def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
+  def verify(primaryKey: PublicKey, date: js.Date): js.Promise[keyStatus] = js.native
   /**
     * Verify User. Checks for existence of self signatures, revocation signatures
     * and validity of self signature
@@ -67,9 +66,9 @@ class User () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns Status of user
     */
-  def verify(primaryKey: SecretKey, date: Date): js.Promise[keyStatus] = js.native
+  def verify(primaryKey: SecretKey, date: js.Date): js.Promise[keyStatus] = js.native
   
-  def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[js.Any], date: Date): js.Promise[js.Array[Keyid]] = js.native
+  def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
   /**
     * Verifies all user certificates
     * @param primaryKey The primary key packet
@@ -77,9 +76,9 @@ class User () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns List of signer's keyid and validity of signature
     */
-  def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[js.Any], date: Date): js.Promise[js.Array[Keyid]] = js.native
+  def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
   
-  def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[js.Any], date: Date): js.Promise[keyStatus] = js.native
+  def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[Any], date: js.Date): js.Promise[keyStatus] = js.native
   /**
     * Verifies the user certificate
     * @param primaryKey The primary key packet
@@ -88,5 +87,5 @@ class User () extends StObject {
     * @param date Use the given date instead of the current time
     * @returns status of the certificate
     */
-  def verifyCertificate(primaryKey: SecretKey, certificate: Signature, keys: js.Array[js.Any], date: Date): js.Promise[keyStatus] = js.native
+  def verifyCertificate(primaryKey: SecretKey, certificate: Signature, keys: js.Array[Any], date: js.Date): js.Promise[keyStatus] = js.native
 }

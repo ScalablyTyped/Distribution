@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for KnowledgeBases.ListKnowledgeBases.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse extends StObj
   var knowledgeBases: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]] = js.undefined
   
   /**
-    * Token to retrieve the next page of results, or empty if there are no more
-    * results in the list.
+    * Token to retrieve the next page of results, or empty if there are no more results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse {
   
@@ -33,9 +29,11 @@ object SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse {
     
     inline def setKnowledgeBasesUndefined: Self = StObject.set(x, "knowledgeBases", js.undefined)
     
-    inline def setKnowledgeBasesVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value :_*))
+    inline def setKnowledgeBasesVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

@@ -30,11 +30,11 @@ trait b2JointDef extends StObject {
   /**
     * Use this to attach application specific data to your joints.
     **/
-  var userData: js.Any
+  var userData: Any
 }
 object b2JointDef {
   
-  inline def apply(bodyA: b2Body, bodyB: b2Body, collideConnected: Boolean, `type`: Double, userData: js.Any): b2JointDef = {
+  inline def apply(bodyA: b2Body, bodyB: b2Body, collideConnected: Boolean, `type`: Double, userData: Any): b2JointDef = {
     val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], collideConnected = collideConnected.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2JointDef]
@@ -50,6 +50,6 @@ object b2JointDef {
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

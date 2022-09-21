@@ -9,7 +9,7 @@ object shapeMod {
   
   @JSImport("@antv/attr/lib/attributes/shape", JSImport.Default)
   @js.native
-  class default protected () extends Shape {
+  open class default protected () extends Shape {
     def this(cfg: AttributeCfg) = this()
   }
   

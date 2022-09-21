@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.AndroidNotification")
 @js.native
-class AndroidNotification () extends StObject {
+open class AndroidNotification () extends StObject {
   
   var actions: js.UndefOr[js.Array[Action]] = js.native
   
@@ -27,9 +27,9 @@ class AndroidNotification () extends StObject {
   
   var badgeIconType: js.UndefOr[BadgeIconType] = js.native
   
-  var bigPicture: js.UndefOr[js.Any] = js.native
+  var bigPicture: js.UndefOr[Any] = js.native
   
-  var bigText: js.UndefOr[js.Any] = js.native
+  var bigText: js.UndefOr[Any] = js.native
   
   var category: js.UndefOr[Category] = js.native
   
@@ -155,7 +155,7 @@ class AndroidNotification () extends StObject {
   
   var showWhen: js.UndefOr[Boolean] = js.native
   
-  var smallIcon: js.UndefOr[js.Any] = js.native
+  var smallIcon: js.UndefOr[Any] = js.native
   
   var sortKey: js.UndefOr[String] = js.native
   

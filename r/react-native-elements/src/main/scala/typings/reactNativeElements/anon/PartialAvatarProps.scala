@@ -1,5 +1,6 @@
 package typings.reactNativeElements.anon
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
@@ -9,19 +10,31 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.AvatarIcon
+import typings.reactNativeElements.avatarMod.AvatarIcon
+import typings.reactNativeElements.imageMod.ImageProps
+import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium
 import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.AvatarProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/avatar/Avatar.AvatarProps> */
 trait PartialAvatarProps extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
+  var Component: js.UndefOr[
+    TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      typings.react.mod.Component[
+        typings.reactNativeElements.reactNativeElementsStrings.Component, 
+        js.Object, 
+        js.Object
+      ]
+    ])
+  ] = js.undefined
   
   var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
@@ -35,13 +48,13 @@ trait PartialAvatarProps extends StObject {
   
   var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
+  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
   
   var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var overlayContainerStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -74,7 +87,12 @@ object PartialAvatarProps {
     
     inline def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
     
-    inline def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[Component, js.Object, js.Object]
+        ])
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -98,7 +116,7 @@ object PartialAvatarProps {
     
     inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
-    inline def setImageProps(value: PartialImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+    inline def setImageProps(value: Partial[ImageProps]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
     inline def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
@@ -110,7 +128,7 @@ object PartialAvatarProps {
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    inline def setOverlayContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayContainerStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
     
     inline def setOverlayContainerStyleNull: Self = StObject.set(x, "overlayContainerStyle", null)
     
@@ -138,7 +156,7 @@ object PartialAvatarProps {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

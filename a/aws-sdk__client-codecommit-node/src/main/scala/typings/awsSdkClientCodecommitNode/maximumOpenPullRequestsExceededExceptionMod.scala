@@ -8,5 +8,5 @@ object maximumOpenPullRequestsExceededExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/MaximumOpenPullRequestsExceededException", "MaximumOpenPullRequestsExceededException")
   @js.native
-  val MaximumOpenPullRequestsExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MaximumOpenPullRequestsExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEC2RecommendationProjectedMetricsResponse extends StObject {
   
   /**
-    * An array of objects that describe a projected metrics.
+    * An array of objects that describes projected metrics.
     */
   var recommendedOptionProjectedMetrics: js.UndefOr[RecommendedOptionProjectedMetrics] = js.undefined
 }
@@ -24,6 +24,6 @@ object GetEC2RecommendationProjectedMetricsResponse {
     
     inline def setRecommendedOptionProjectedMetricsUndefined: Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.undefined)
     
-    inline def setRecommendedOptionProjectedMetricsVarargs(value: RecommendedOptionProjectedMetric*): Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.Array(value :_*))
+    inline def setRecommendedOptionProjectedMetricsVarargs(value: RecommendedOptionProjectedMetric*): Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.Array(value*))
   }
 }

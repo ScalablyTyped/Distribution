@@ -9,7 +9,7 @@ object postbufferMod {
   
   @JSImport("bufferstream/postbuffer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PostBuffer {
+  open class ^ protected () extends PostBuffer {
     /** for if you want to get all the post data from a http server request and do some db request before. */
     def this(req: IncomingMessage) = this()
   }
@@ -19,6 +19,6 @@ object postbufferMod {
     extends typings.bufferstream.mod.^ {
     
     /** set a callback to get all post data from a http server request */
-    def onEnd(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def onEnd(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
   }
 }

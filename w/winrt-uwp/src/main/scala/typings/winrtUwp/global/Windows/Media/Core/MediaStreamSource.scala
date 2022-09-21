@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a media source that delivers media samples directly to the media pipeline. */
 @JSGlobal("Windows.Media.Core.MediaStreamSource")
 @js.native
-class MediaStreamSource protected ()
+open class MediaStreamSource protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaStreamSource {
   /**

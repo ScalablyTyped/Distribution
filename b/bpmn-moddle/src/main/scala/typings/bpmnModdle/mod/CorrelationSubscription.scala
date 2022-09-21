@@ -31,6 +31,6 @@ object CorrelationSubscription {
     
     inline def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationPropertyBinding", value.asInstanceOf[js.Any])
     
-    inline def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value :_*))
+    inline def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value*))
   }
 }

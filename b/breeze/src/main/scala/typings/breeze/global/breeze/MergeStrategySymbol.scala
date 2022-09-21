@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.MergeStrategySymbol")
 @js.native
-class MergeStrategySymbol ()
+open class MergeStrategySymbol ()
   extends StObject
      with EnumSymbol {
   

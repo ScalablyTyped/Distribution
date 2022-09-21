@@ -1,8 +1,8 @@
 package typings.estreeWalker
 
-import typings.estree.mod.BaseNode
-import typings.estreeWalker.asyncMod.AsyncWalker
-import typings.estreeWalker.syncMod.SyncWalker
+import typings.estreeWalker.anon.Enter
+import typings.estreeWalker.anon.Leave
+import typings.estreeWalker.anon.Remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def asyncWalk(ast: BaseNode, walker: AsyncWalker): js.Promise[BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BaseNode]]
+  inline def asyncWalk(ast: typings.estree.mod.BaseNode, hasEnterLeave: Leave): js.Promise[typings.estree.mod.BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], hasEnterLeave.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.estree.mod.BaseNode]]
   
-  inline def walk(ast: BaseNode, walker: SyncWalker): BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[BaseNode]
+  inline def walk(ast: typings.estree.mod.BaseNode, hasEnterLeave: Enter): typings.estree.mod.BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], hasEnterLeave.asInstanceOf[js.Any])).asInstanceOf[typings.estree.mod.BaseNode]
+  
+  type AsyncHandler = js.ThisFunction4[
+    /* this */ Remove, 
+    /* node */ typings.estree.mod.BaseNode, 
+    /* parent */ typings.estree.mod.BaseNode, 
+    /* key */ String, 
+    /* index */ Double, 
+    js.Promise[Unit]
+  ]
+  
+  type BaseNode = typings.estree.mod.BaseNode
+  
+  type SyncHandler = js.ThisFunction4[
+    /* this */ Remove, 
+    /* node */ typings.estree.mod.BaseNode, 
+    /* parent */ typings.estree.mod.BaseNode, 
+    /* key */ String, 
+    /* index */ Double, 
+    Unit
+  ]
 }

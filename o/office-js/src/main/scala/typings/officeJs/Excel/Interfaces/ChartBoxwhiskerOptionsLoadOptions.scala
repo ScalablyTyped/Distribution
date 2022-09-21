@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the properties of a box and whisker chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartBoxwhiskerOptionsLoadOptions extends StObject {
@@ -19,41 +19,41 @@ trait ChartBoxwhiskerOptionsLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the quartile calculation type of a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if inner points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the mean line is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the mean marker is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if outlier points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showOutlierPoints: js.UndefOr[Boolean] = js.undefined

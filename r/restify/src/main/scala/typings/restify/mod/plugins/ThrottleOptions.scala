@@ -12,13 +12,13 @@ trait ThrottleOptions extends StObject {
   
   var maxKeys: js.UndefOr[Double] = js.undefined
   
-  var overrides: js.UndefOr[js.Any] = js.undefined
+  var overrides: js.UndefOr[Any] = js.undefined
   
   var rate: js.UndefOr[Double] = js.undefined
   
   var setHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var tokensTable: js.UndefOr[js.Any] = js.undefined
+  var tokensTable: js.UndefOr[Any] = js.undefined
   
   var username: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ object ThrottleOptions {
     
     inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
     
-    inline def setOverrides(value: js.Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
@@ -57,7 +57,7 @@ object ThrottleOptions {
     
     inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
-    inline def setTokensTable(value: js.Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
+    inline def setTokensTable(value: Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
     
     inline def setTokensTableUndefined: Self = StObject.set(x, "tokensTable", js.undefined)
     

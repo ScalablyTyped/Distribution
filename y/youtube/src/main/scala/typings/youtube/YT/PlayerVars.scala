@@ -17,6 +17,11 @@ trait PlayerVars extends StObject {
   var autoplay: js.UndefOr[AutoPlay] = js.undefined
   
   /**
+    * Default caption language as an ISO 639-1 two-letter language code.
+    */
+  var cc_lang_pref: js.UndefOr[String] = js.undefined
+  
+  /**
     * Whether to use user-preferred or forced caption loading (by default, UserDefault).
     */
   var cc_load_policy: js.UndefOr[ClosedCaptionsLoadPolicy] = js.undefined
@@ -63,9 +68,8 @@ trait PlayerVars extends StObject {
   
   /**
     * Identifies content that will load.
-    * If listType is search, this is the search query.
-    * If listType is user_uploads, this is the YouTube user.
-    * If listType is playlist, this is the playlist ID, prepended by 'PL'.
+    * If the listType parameter value is user_uploads, then the list parameter value identifies the YouTube channel whose uploaded videos will be loaded.
+    * If the listType parameter value is playlist, then the list parameter value specifies a YouTube playlist ID.
     */
   var list: js.UndefOr[String] = js.undefined
   
@@ -83,6 +87,11 @@ trait PlayerVars extends StObject {
     * Whether to hide some YouTube branding (by default, Full).
     */
   var modestbranding: js.UndefOr[ModestBranding] = js.undefined
+  
+  /**
+    * Whether to start the video muted (by default, NotMuted).
+    */
+  var mute: js.UndefOr[Mute] = js.undefined
   
   /**
     * Origin domain for additional security if using the JavaScript API.
@@ -130,6 +139,10 @@ object PlayerVars {
     inline def setAutoplay(value: AutoPlay): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    
+    inline def setCc_lang_pref(value: String): Self = StObject.set(x, "cc_lang_pref", value.asInstanceOf[js.Any])
+    
+    inline def setCc_lang_prefUndefined: Self = StObject.set(x, "cc_lang_pref", js.undefined)
     
     inline def setCc_load_policy(value: ClosedCaptionsLoadPolicy): Self = StObject.set(x, "cc_load_policy", value.asInstanceOf[js.Any])
     
@@ -182,6 +195,10 @@ object PlayerVars {
     inline def setModestbranding(value: ModestBranding): Self = StObject.set(x, "modestbranding", value.asInstanceOf[js.Any])
     
     inline def setModestbrandingUndefined: Self = StObject.set(x, "modestbranding", js.undefined)
+    
+    inline def setMute(value: Mute): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    
+    inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

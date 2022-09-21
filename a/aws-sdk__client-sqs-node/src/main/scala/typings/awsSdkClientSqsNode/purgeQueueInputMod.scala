@@ -8,5 +8,5 @@ object purgeQueueInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/PurgeQueueInput", "PurgeQueueInput")
   @js.native
-  val PurgeQueueInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PurgeQueueInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

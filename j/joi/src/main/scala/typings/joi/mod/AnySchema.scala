@@ -5,17 +5,15 @@ import typings.joi.joiStrings.map
 import typings.joi.joiStrings.number
 import typings.joi.joiStrings.set
 import typings.joi.joiStrings.string
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnySchema
+trait AnySchema[TSchema]
   extends StObject
-     with SchemaInternals
-     with _Schema {
+     with SchemaInternals {
   
   /**
     * Sets a default value if the original value is `undefined` where:
@@ -24,7 +22,7 @@ trait AnySchema
     *    - a [references](#refkey-options)
     *    - a function which returns the default value using the signature `function(parent, helpers)` where:
     *        - `parent` - a clone of the object containing the value being validated. Note that since specifying a
-    *          `parent` ragument performs cloning, do not declare format arguments if you are not using them.
+    *          `parent` argument performs cloning, do not declare format arguments if you are not using them.
     *        - `helpers` - same as thsoe described in [`any.custom()`](anycustomermethod_description)
     *
     * When called without any `value` on an object schema type, a default value will be automatically generated
@@ -34,9 +32,7 @@ trait AnySchema
     *  reference and any future assignment.
     */
   def default(): this.type = js.native
-  def default(
-    value: js.Function2[/* parent */ js.Any, /* helpers */ CustomHelpers[js.Any], BasicType | Reference]
-  ): this.type = js.native
+  def default(value: js.Function2[/* parent */ Any, /* helpers */ CustomHelpers[Any], BasicType | Reference]): this.type = js.native
   def default(value: BasicType): this.type = js.native
   def default(value: Reference): this.type = js.native
   
@@ -49,18 +45,18 @@ trait AnySchema
   /**
     * Flags of current schema.
     */
-  var _flags: Record[String, js.Any] = js.native
+  var _flags: Record[String, Any] = js.native
   
   /**
     * Whitelists a value
     */
-  def allow(values: js.Any*): this.type = js.native
+  def allow(values: Any*): this.type = js.native
   
   /**
     * Assign target alteration options to a schema that are applied when `any.tailor()` is called.
     * @param targets - an object where each key is a target name, and each value is a function that takes an schema and returns an schema.
     */
-  def alter(targets: Record[String, SchemaFunction]): this.type = js.native
+  def alter(targets: Record[String, js.Function1[/* schema */ this.type, Schema[Any]]]): this.type = js.native
   
   /**
     * By default, some Joi methods to function properly need to rely on the Joi instance they are attached to because
@@ -80,14 +76,7 @@ trait AnySchema
   /**
     * Casts the validated value to the specified type.
     */
-  @JSName("cast")
-  def cast_map(to: map): this.type = js.native
-  @JSName("cast")
-  def cast_number(to: number): this.type = js.native
-  @JSName("cast")
-  def cast_set(to: set): this.type = js.native
-  @JSName("cast")
-  def cast_string(to: string): this.type = js.native
+  def cast(to: map | number | set | string): this.type = js.native
   
   /**
     * Returns a new type that is the result of adding the rules of one type to another.
@@ -97,8 +86,8 @@ trait AnySchema
   /**
     * Adds a custom validation function.
     */
-  def custom(fn: CustomValidator[js.Any]): this.type = js.native
-  def custom(fn: CustomValidator[js.Any], description: String): this.type = js.native
+  def custom(fn: CustomValidator[Any]): this.type = js.native
+  def custom(fn: CustomValidator[Any], description: String): this.type = js.native
   
   /**
     * Returns a plain object representing the schema's rules and properties
@@ -113,7 +102,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def disallow(values: js.Any*): this.type = js.native
+  def disallow(values: Any*): this.type = js.native
   
   /**
     * Considers anything that matches the schema to be empty (undefined).
@@ -125,9 +114,8 @@ trait AnySchema
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def equal(values: js.Any*): this.type = js.native
+  def equal(values: Any*): this.type = js.native
   
-  def error(err: ValidationErrorFunction): this.type = js.native
   /**
     * Overrides the default joi error with a custom error if the rule fails where:
     * @param err - can be:
@@ -146,13 +134,14 @@ trait AnySchema
     * override, that error will be returned and the override will be ignored (unless the `abortEarly`
     * option has been set to `false`).
     */
-  def error(err: Error): this.type = js.native
+  def error(err: js.Error): this.type = js.native
+  def error(err: ValidationErrorFunction): this.type = js.native
   
   /**
     * Annotates the key with an example value, must be valid.
     */
-  def example(value: js.Any): this.type = js.native
-  def example(value: js.Any, options: Override): this.type = js.native
+  def example(value: Any): this.type = js.native
+  def example(value: Any, options: Override): this.type = js.native
   
   /**
     * Marks a key as required which will not allow undefined as value. All keys are optional by default.
@@ -166,16 +155,16 @@ trait AnySchema
     * This means that any changes made to the value by the external rules are not available to any other validation rules during the non-external validation phase.
     * If schema validation failed, no external validation rules are called.
     */
-  def external(method: ExternalValidationFunction): this.type = js.native
-  def external(method: ExternalValidationFunction, description: String): this.type = js.native
+  def external(method: ExternalValidationFunction[Any]): this.type = js.native
+  def external(method: ExternalValidationFunction[Any], description: String): this.type = js.native
   
   /**
     * Returns a sub-schema based on a path of object keys or schema ids.
     *
     * @param path - a dot `.` separated path string or a pre-split array of path keys. The keys must match the sub-schema id or object key (if no id was explicitly set).
     */
-  def extract(path: String): Schema = js.native
-  def extract(path: js.Array[String]): Schema = js.native
+  def extract(path: String): Schema[Any] = js.native
+  def extract(path: js.Array[String]): Schema[Any] = js.native
   
   /**
     * Sets a failover value if the original value fails passing validation.
@@ -188,7 +177,7 @@ trait AnySchema
     * Using a function with a single argument performs some internal cloning which has a performance impact.
     * If you do not need access to the context, define the function without any arguments.
     */
-  def failover(value: js.Any): this.type = js.native
+  def failover(value: Any): this.type = js.native
   
   /**
     * Marks a key as forbidden which will not allow any value except undefined. Used to explicitly forbid keys.
@@ -215,7 +204,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def invalid(values: js.Any*): this.type = js.native
+  def invalid(values: Any*): this.type = js.native
   
   /**
     * Same as `rule({ keep: true })`.
@@ -252,7 +241,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def not(values: js.Any*): this.type = js.native
+  def not(values: Any*): this.type = js.native
   
   /**
     * Annotates the key
@@ -324,7 +313,7 @@ trait AnySchema
   /**
     * Registers a schema to be used by decendents of the current schema in named link references.
     */
-  def shared(ref: Schema): this.type = js.native
+  def shared(ref: Schema[Any]): this.type = js.native
   
   /**
     * Sets the options.convert options to false which prevent type casting for the current key and any child keys.
@@ -347,8 +336,8 @@ trait AnySchema
   /**
     * Applies any assigned target alterations to a copy of the schema that were applied via `any.alter()`.
     */
-  def tailor(targets: String): Schema = js.native
-  def tailor(targets: js.Array[String]): Schema = js.native
+  def tailor(targets: String): Schema[Any] = js.native
+  def tailor(targets: js.Array[String]): Schema[Any] = js.native
   
   var `type`: js.UndefOr[Types | String] = js.native
   
@@ -360,19 +349,19 @@ trait AnySchema
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def valid(values: js.Any*): this.type = js.native
+  def valid(values: Any*): this.type = js.native
   
   /**
     * Validates a value using the schema and options.
     */
-  def validate(value: js.Any): ValidationResult = js.native
-  def validate(value: js.Any, options: ValidationOptions): ValidationResult = js.native
+  def validate(value: Any): ValidationResult[TSchema] = js.native
+  def validate(value: Any, options: ValidationOptions): ValidationResult[TSchema] = js.native
   
   /**
     * Validates a value using the schema and options.
     */
-  def validateAsync(value: js.Any): js.Promise[js.Any] = js.native
-  def validateAsync(value: js.Any, options: AsyncValidationOptions): js.Promise[js.Any] = js.native
+  def validateAsync(value: Any): js.Promise[Any] = js.native
+  def validateAsync(value: Any, options: AsyncValidationOptions): js.Promise[Any] = js.native
   
   /**
     * Same as `rule({ warn: true })`.
@@ -389,13 +378,15 @@ trait AnySchema
     */
   def warning(code: String, context: Context): this.type = js.native
   
+  def when(ref: String, options: js.Array[WhenOptions]): this.type = js.native
   /**
     * Converts the type into an alternatives type where the conditions are merged into the type definition where:
     */
   def when(ref: String, options: WhenOptions): this.type = js.native
+  def when(ref: Reference, options: js.Array[WhenOptions]): this.type = js.native
   def when(ref: Reference, options: WhenOptions): this.type = js.native
   /**
     * Converts the type into an alternatives type where the conditions are merged into the type definition where:
     */
-  def when(ref: Schema, options: WhenSchemaOptions): this.type = js.native
+  def when(ref: Schema[Any], options: WhenSchemaOptions): this.type = js.native
 }

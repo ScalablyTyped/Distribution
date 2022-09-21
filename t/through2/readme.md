@@ -10,10 +10,10 @@ A tiny wrapper around Node.js streams.Transform (Streams2/3) to avoid explicit s
 | ------------------ | :-------------: |
 | Full name          | through2 |
 | Keywords           | stream, streams2, through, transform |
-| # releases         | 9 |
-| # dependents       | 10133 |
-| # downloads        | 921034890 |
-| # stars            | 205 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.15294722E8 |
+| # stars            | 1870.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/through2#readme)

@@ -14,7 +14,7 @@ trait ASPxClientPivotCustomization
   /**
     * Returns an HTML element that represents the root of the control's hierarchy.
     */
-  def GetMainContainer(): js.Any
+  def GetMainContainer(): Any
   
   /**
     * Returns a client-side equivalent of the owner Pivot Grid Control.
@@ -38,9 +38,9 @@ object ASPxClientPivotCustomization {
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
-    GetMainContainer: () => js.Any,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainContainer: () => Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetPivotGrid: () => ASPxClientPivotGrid,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
@@ -61,7 +61,7 @@ object ASPxClientPivotCustomization {
   
   extension [Self <: ASPxClientPivotCustomization](x: Self) {
     
-    inline def setGetMainContainer(value: () => js.Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
+    inline def setGetMainContainer(value: () => Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
     
     inline def setGetPivotGrid(value: () => ASPxClientPivotGrid): Self = StObject.set(x, "GetPivotGrid", js.Any.fromFunction0(value))
     

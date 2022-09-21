@@ -1,9 +1,9 @@
 package typings.firebaseAppTypes
 
 import typings.firebaseAppTypes.anon.Call
-import typings.firebaseLogger.loggerMod.LogCallback
-import typings.firebaseLogger.loggerMod.LogLevelString
-import typings.firebaseLogger.loggerMod.LogOptions
+import typings.firebaseLogger.srcLoggerMod.LogCallback
+import typings.firebaseLogger.srcLoggerMod.LogLevelString
+import typings.firebaseLogger.srcLoggerMod.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("@firebase/app-types", "FirebaseApp")
   @js.native
-  class FirebaseApp () extends StObject {
+  open class FirebaseApp () extends StObject {
     
     /**
       * The settable config flag for GDPR opt-in/opt-out
@@ -196,24 +196,20 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var app: FirebaseApp
-      
       var `app-version`: VersionService
       
       var `platform-identifier`: VersionService
     }
     object NameServiceMapping {
       
-      inline def apply(app: FirebaseApp, `app-version`: VersionService, `platform-identifier`: VersionService): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+      inline def apply(`app-version`: VersionService, `platform-identifier`: VersionService): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
         __obj.updateDynamic("app-version")(`app-version`.asInstanceOf[js.Any])
         __obj.updateDynamic("platform-identifier")(`platform-identifier`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
-        
-        inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
         
         inline def `setApp-version`(value: VersionService): Self = StObject.set(x, "app-version", value.asInstanceOf[js.Any])
         

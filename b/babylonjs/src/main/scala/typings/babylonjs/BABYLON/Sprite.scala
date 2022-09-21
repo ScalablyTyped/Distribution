@@ -10,11 +10,11 @@ trait Sprite
      with ThinSprite
      with IAnimatable {
   
-  /* private */ var _endAnimation: js.Any = js.native
+  /* private */ var _endAnimation: Any = js.native
   
-  /* private */ var _manager: js.Any = js.native
+  /* private */ var _manager: Any = js.native
   
-  /* private */ var _onAnimationEnd: js.Any = js.native
+  /* private */ var _onAnimationEnd: Any = js.native
   
   /**
     * Gets or sets the associated action manager
@@ -77,7 +77,7 @@ trait Sprite
     * Serializes the sprite to a JSON object
     * @returns the JSON object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Gets or sets the sprite size

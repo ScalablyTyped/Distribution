@@ -29,7 +29,7 @@ object PlannerUser {
     
     inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
     
-    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value*))
     
     inline def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
@@ -37,6 +37,6 @@ object PlannerUser {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

@@ -1,5 +1,10 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.EXACT
+import typings.awsSdk.awsSdkStrings.PHI
+import typings.awsSdk.awsSdkStrings.PII
+import typings.awsSdk.awsSdkStrings.PRIMARYCARE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,27 +15,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.WideBand
   - java.lang.String
 */
-type BaseModelName = typings.awsSdk.transcribeserviceMod._BaseModelName | java.lang.String
+type BaseModelName = _BaseModelName | String
 
 type Boolean = scala.Boolean
 
-type CLMLanguageCode = typings.awsSdk.awsSdkStrings.`en-US` | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`en-US`
+  - typings.awsSdk.awsSdkStrings.`hi-IN`
+  - typings.awsSdk.awsSdkStrings.`es-US`
+  - typings.awsSdk.awsSdkStrings.`en-GB`
+  - typings.awsSdk.awsSdkStrings.`en-AU`
+  - java.lang.String
+*/
+type CLMLanguageCode = _CLMLanguageCode | String
 
-type DataAccessRoleArn = java.lang.String
+type CallAnalyticsJobName = String
 
-type DateTime = typings.std.Date
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.QUEUED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - java.lang.String
+*/
+type CallAnalyticsJobStatus = _CallAnalyticsJobStatus | String
 
-type FailureReason = java.lang.String
+type CallAnalyticsJobSummaries = js.Array[CallAnalyticsJobSummary]
 
-type IdentifiedLanguageScore = scala.Double
+type CategoryName = String
 
-type KMSKeyId = java.lang.String
+type CategoryPropertiesList = js.Array[CategoryProperties]
+
+type ChannelDefinitions = js.Array[ChannelDefinition]
+
+type ChannelId = Double
+
+type DataAccessRoleArn = String
+
+type DateTime = js.Date
+
+type DurationInSeconds = Double
+
+type FailureReason = String
+
+type IdentifiedLanguageScore = Double
+
+type KMSEncryptionContextMap = StringDictionary[NonEmptyString]
+
+type KMSKeyId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`af-ZA`
   - typings.awsSdk.awsSdkStrings.`ar-AE`
   - typings.awsSdk.awsSdkStrings.`ar-SA`
-  - typings.awsSdk.awsSdkStrings.`cy-GB`
   - typings.awsSdk.awsSdkStrings.`da-DK`
   - typings.awsSdk.awsSdkStrings.`de-CH`
   - typings.awsSdk.awsSdkStrings.`de-DE`
@@ -46,8 +83,6 @@ type KMSKeyId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`fa-IR`
   - typings.awsSdk.awsSdkStrings.`fr-CA`
   - typings.awsSdk.awsSdkStrings.`fr-FR`
-  - typings.awsSdk.awsSdkStrings.`ga-IE`
-  - typings.awsSdk.awsSdkStrings.`gd-GB`
   - typings.awsSdk.awsSdkStrings.`he-IL`
   - typings.awsSdk.awsSdkStrings.`hi-IN`
   - typings.awsSdk.awsSdkStrings.`id-ID`
@@ -63,17 +98,25 @@ type KMSKeyId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`te-IN`
   - typings.awsSdk.awsSdkStrings.`tr-TR`
   - typings.awsSdk.awsSdkStrings.`zh-CN`
+  - typings.awsSdk.awsSdkStrings.`zh-TW`
+  - typings.awsSdk.awsSdkStrings.`th-TH`
+  - typings.awsSdk.awsSdkStrings.`en-ZA`
+  - typings.awsSdk.awsSdkStrings.`en-NZ`
   - java.lang.String
 */
-type LanguageCode = typings.awsSdk.transcribeserviceMod._LanguageCode | java.lang.String
+type LanguageCode = _LanguageCode | String
 
-type LanguageOptions = js.Array[typings.awsSdk.transcribeserviceMod.LanguageCode]
+type LanguageCodeList = js.Array[LanguageCodeItem]
 
-type MaxAlternatives = scala.Double
+type LanguageIdSettingsMap = StringDictionary[LanguageIdSettings]
 
-type MaxResults = scala.Double
+type LanguageOptions = js.Array[LanguageCode]
 
-type MaxSpeakers = scala.Double
+type MaxAlternatives = Double
+
+type MaxResults = Double
+
+type MaxSpeakers = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.mp3_
@@ -85,13 +128,17 @@ type MaxSpeakers = scala.Double
   - typings.awsSdk.awsSdkStrings.webm_
   - java.lang.String
 */
-type MediaFormat = typings.awsSdk.transcribeserviceMod._MediaFormat | java.lang.String
+type MediaFormat = _MediaFormat | String
 
-type MediaSampleRateHertz = scala.Double
+type MediaSampleRateHertz = Double
 
-type MedicalTranscriptionJobSummaries = js.Array[typings.awsSdk.transcribeserviceMod.MedicalTranscriptionJobSummary]
+type MedicalContentIdentificationType = PHI | String
 
-type ModelName = java.lang.String
+type MedicalMediaSampleRateHertz = Double
+
+type MedicalTranscriptionJobSummaries = js.Array[MedicalTranscriptionJobSummary]
+
+type ModelName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -99,39 +146,111 @@ type ModelName = java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type ModelStatus = typings.awsSdk.transcribeserviceMod._ModelStatus | java.lang.String
+type ModelStatus = _ModelStatus | String
 
-type Models = js.Array[typings.awsSdk.transcribeserviceMod.LanguageModel]
+type Models = js.Array[LanguageModel]
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type OutputBucketName = java.lang.String
+type NonEmptyString = String
 
-type OutputKey = java.lang.String
+type OutputBucketName = String
+
+type OutputKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CUSTOMER_BUCKET
   - typings.awsSdk.awsSdkStrings.SERVICE_BUCKET
   - java.lang.String
 */
-type OutputLocationType = typings.awsSdk.transcribeserviceMod._OutputLocationType | java.lang.String
+type OutputLocationType = _OutputLocationType | String
 
-type Phrase = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AGENT
+  - typings.awsSdk.awsSdkStrings.CUSTOMER
+  - java.lang.String
+*/
+type ParticipantRole = _ParticipantRole | String
 
-type Phrases = js.Array[typings.awsSdk.transcribeserviceMod.Phrase]
+type Percentage = Double
+
+type Phrase = String
+
+type Phrases = js.Array[Phrase]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BANK_ACCOUNT_NUMBER
+  - typings.awsSdk.awsSdkStrings.BANK_ROUTING
+  - typings.awsSdk.awsSdkStrings.CREDIT_DEBIT_NUMBER
+  - typings.awsSdk.awsSdkStrings.CREDIT_DEBIT_CVV
+  - typings.awsSdk.awsSdkStrings.CREDIT_DEBIT_EXPIRY
+  - typings.awsSdk.awsSdkStrings.PIN
+  - typings.awsSdk.awsSdkStrings.EMAIL
+  - typings.awsSdk.awsSdkStrings.ADDRESS
+  - typings.awsSdk.awsSdkStrings.NAME
+  - typings.awsSdk.awsSdkStrings.PHONE
+  - typings.awsSdk.awsSdkStrings.SSN
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type PiiEntityType = _PiiEntityType | String
+
+type PiiEntityTypes = js.Array[PiiEntityType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.redacted
   - typings.awsSdk.awsSdkStrings.redacted_and_unredacted
   - java.lang.String
 */
-type RedactionOutput = typings.awsSdk.transcribeserviceMod._RedactionOutput | java.lang.String
+type RedactionOutput = _RedactionOutput | String
 
-type RedactionType = typings.awsSdk.awsSdkStrings.PII | java.lang.String
+type RedactionType = PII | String
 
-type Specialty = typings.awsSdk.awsSdkStrings.PRIMARYCARE | java.lang.String
+type RuleList = js.Array[Rule]
 
-type TranscriptionJobName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.POSITIVE
+  - typings.awsSdk.awsSdkStrings.NEGATIVE
+  - typings.awsSdk.awsSdkStrings.NEUTRAL
+  - typings.awsSdk.awsSdkStrings.MIXED
+  - java.lang.String
+*/
+type SentimentValue = _SentimentValue | String
+
+type SentimentValueList = js.Array[SentimentValue]
+
+type Specialty = PRIMARYCARE | String
+
+type StringTargetList = js.Array[NonEmptyString]
+
+type SubtitleFileUris = js.Array[Uri]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.vtt
+  - typings.awsSdk.awsSdkStrings.srt_
+  - java.lang.String
+*/
+type SubtitleFormat = _SubtitleFormat | String
+
+type SubtitleFormats = js.Array[SubtitleFormat]
+
+type SubtitleOutputStartIndex = Double
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
+
+type TagValue = String
+
+type TimestampMilliseconds = Double
+
+type TranscribeArn = String
+
+type TranscriptFilterType = EXACT | String
+
+type TranscriptionJobName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUED
@@ -140,33 +259,34 @@ type TranscriptionJobName = java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type TranscriptionJobStatus = typings.awsSdk.transcribeserviceMod._TranscriptionJobStatus | java.lang.String
+type TranscriptionJobStatus = _TranscriptionJobStatus | String
 
-type TranscriptionJobSummaries = js.Array[typings.awsSdk.transcribeserviceMod.TranscriptionJobSummary]
+type TranscriptionJobSummaries = js.Array[TranscriptionJobSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONVERSATION
   - typings.awsSdk.awsSdkStrings.DICTATION
   - java.lang.String
 */
-type Type = typings.awsSdk.transcribeserviceMod._Type | java.lang.String
+type Type = _Type | String
 
-type Uri = java.lang.String
+type Uri = String
 
-type Vocabularies = js.Array[typings.awsSdk.transcribeserviceMod.VocabularyInfo]
+type Vocabularies = js.Array[VocabularyInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.remove__
   - typings.awsSdk.awsSdkStrings.mask__
+  - typings.awsSdk.awsSdkStrings.tag_
   - java.lang.String
 */
-type VocabularyFilterMethod = typings.awsSdk.transcribeserviceMod._VocabularyFilterMethod | java.lang.String
+type VocabularyFilterMethod = _VocabularyFilterMethod | String
 
-type VocabularyFilterName = java.lang.String
+type VocabularyFilterName = String
 
-type VocabularyFilters = js.Array[typings.awsSdk.transcribeserviceMod.VocabularyFilterInfo]
+type VocabularyFilters = js.Array[VocabularyFilterInfo]
 
-type VocabularyName = java.lang.String
+type VocabularyName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -174,15 +294,15 @@ type VocabularyName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type VocabularyState = typings.awsSdk.transcribeserviceMod._VocabularyState | java.lang.String
+type VocabularyState = _VocabularyState | String
 
-type Word = java.lang.String
+type Word = String
 
-type Words = js.Array[typings.awsSdk.transcribeserviceMod.Word]
+type Words = js.Array[Word]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-10-26`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.transcribeserviceMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

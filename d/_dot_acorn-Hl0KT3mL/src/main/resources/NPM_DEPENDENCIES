@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".acorn-Hl0KT3mL" : "8.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".acorn-Hl0KT3mL" : "8.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

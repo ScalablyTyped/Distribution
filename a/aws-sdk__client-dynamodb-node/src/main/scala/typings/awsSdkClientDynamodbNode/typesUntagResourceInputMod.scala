@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbNode
 
 import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesUntagResourceInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -43,11 +42,11 @@ object typesUntagResourceInputMod {
     /**
       * <p>A list of tag keys. Existing tags of the resource whose keys are members of this list will be removed from the Amazon DynamoDB resource.</p>
       */
-    var TagKeys: js.Array[String] | Iterable[String]
+    var TagKeys: js.Array[String] | js.Iterable[String]
   }
   object UntagResourceInput {
     
-    inline def apply(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): UntagResourceInput = {
+    inline def apply(ResourceArn: String, TagKeys: js.Array[String] | js.Iterable[String]): UntagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagResourceInput]
     }
@@ -59,7 +58,7 @@ object typesUntagResourceInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -70,9 +69,9 @@ object typesUntagResourceInputMod {
       
       inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
       
-      inline def setTagKeys(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+      inline def setTagKeys(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
       
-      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     }
   }
 }

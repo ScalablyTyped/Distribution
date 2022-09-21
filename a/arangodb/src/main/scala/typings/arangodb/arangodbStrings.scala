@@ -2278,6 +2278,10 @@ object arangodbStrings {
   inline def `payment required`: `payment required` = ("payment required").asInstanceOf[`payment required`]
   
   @js.native
+  sealed trait pbkdf2 extends StObject
+  inline def pbkdf2: pbkdf2 = "pbkdf2".asInstanceOf[pbkdf2]
+  
+  @js.native
   sealed trait `permanent redirect`
     extends StObject
        with HttpStatus

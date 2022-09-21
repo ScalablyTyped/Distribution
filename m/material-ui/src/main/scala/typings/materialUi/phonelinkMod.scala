@@ -10,10 +10,10 @@ object phonelinkMod {
   
   @JSImport("material-ui/svg-icons/hardware/phonelink", JSImport.Default)
   @js.native
-  class default () extends HardwarePhonelink
+  open class default () extends HardwarePhonelink
   
   @JSImport("material-ui/svg-icons/hardware/phonelink", "HardwarePhonelink")
   @js.native
-  class HardwarePhonelink ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwarePhonelink ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

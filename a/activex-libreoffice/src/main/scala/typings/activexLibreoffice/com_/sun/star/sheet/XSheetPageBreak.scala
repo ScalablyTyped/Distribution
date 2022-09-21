@@ -62,7 +62,7 @@ object XSheetPageBreak {
     acquire: () => Unit,
     getColumnPageBreaks: () => SafeArray[TablePageBreakData],
     getRowPageBreaks: () => SafeArray[TablePageBreakData],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAllManualPageBreaks: () => Unit
   ): XSheetPageBreak = {

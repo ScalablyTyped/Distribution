@@ -10,10 +10,10 @@ Named routes for node.js. Works with express and independently
 | ------------------ | :-------------: |
 | Full name          | named-routes |
 | Keywords           | named, routes, i18n, router, reversable, express, web |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 62232 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3669.0 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/alubbe/named-routes#readme)

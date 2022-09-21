@@ -16,12 +16,16 @@ trait FillSymbol3DLayerMaterialProperties
   /**
     * The color of the fill.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Specifies how the material `color` is applied to the geometry color/texture information.
+    *
+    * @default multiply
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
     */
@@ -48,6 +52,6 @@ object FillSymbol3DLayerMaterialProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

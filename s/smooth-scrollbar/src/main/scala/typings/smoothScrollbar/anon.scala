@@ -42,18 +42,18 @@ object anon {
   
   trait Get extends StObject {
     
-    def get(): js.Any
+    def get(): Any
   }
   object Get {
     
-    inline def apply(get: () => js.Any): Get = {
+    inline def apply(get: () => Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[Get]
     }
     
     extension [Self <: Get](x: Self) {
       
-      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -164,7 +164,7 @@ object anon {
     
     var delegateTo: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var plugins: js.UndefOr[js.Any] = js.undefined
+    var plugins: js.UndefOr[Any] = js.undefined
     
     var renderByPixels: js.UndefOr[Boolean] = js.undefined
     
@@ -199,7 +199,7 @@ object anon {
       
       inline def setDelegateToUndefined: Self = StObject.set(x, "delegateTo", js.undefined)
       
-      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
@@ -248,11 +248,11 @@ object anon {
         ]
        with Instantiable2[
           /* scrollbar */ typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar, 
-          /* options */ js.Any, 
+          /* options */ Any, 
           ScrollbarPlugin
         ] {
     
-    var defaultOptions: js.Any = js.native
+    var defaultOptions: Any = js.native
     
     var pluginName: String = js.native
   }
@@ -284,22 +284,22 @@ object anon {
   
   trait XY extends StObject {
     
-    var x: js.Any
+    var x: Any
     
-    var y: js.Any
+    var y: Any
   }
   object XY {
     
-    inline def apply(x: js.Any, y: js.Any): XY = {
+    inline def apply(x: Any, y: Any): XY = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[XY]
     }
     
     extension [Self <: XY](x: Self) {
       
-      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

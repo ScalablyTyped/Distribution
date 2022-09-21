@@ -12,7 +12,7 @@ trait TableDefinition extends StObject {
   
   var autoIncrement: js.UndefOr[Boolean] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   var databaseTableName: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait TableDefinition extends StObject {
     js.Array[js.Function2[/* query */ QueryJs, /* context */ Context, Unit | QueryJs]]
   ] = js.undefined
   
-  var hooks: js.UndefOr[js.Array[js.Function2[/* results */ js.Any, /* context */ Context, Unit]]] = js.undefined
+  var hooks: js.UndefOr[js.Array[js.Function2[/* results */ Any, /* context */ Context, Unit]]] = js.undefined
   
   var maxTop: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +38,7 @@ trait TableDefinition extends StObject {
   
   var softDelete: js.UndefOr[Boolean] = js.undefined
   
-  var transforms: js.UndefOr[js.Array[js.Function2[/* item */ js.Any, /* context */ Context, Unit | js.Any]]] = js.undefined
+  var transforms: js.UndefOr[js.Array[js.Function2[/* item */ Any, /* context */ Context, Unit | Any]]] = js.undefined
   
   var userIdColumn: js.UndefOr[String] = js.undefined
   
@@ -65,7 +65,7 @@ object TableDefinition {
     
     inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -81,13 +81,13 @@ object TableDefinition {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: (js.Function2[/* query */ QueryJs, /* context */ Context, Unit | QueryJs])*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: (js.Function2[/* query */ QueryJs, /* context */ Context, Unit | QueryJs])*): Self = StObject.set(x, "filters", js.Array(value*))
     
-    inline def setHooks(value: js.Array[js.Function2[/* results */ js.Any, /* context */ Context, Unit]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: js.Array[js.Function2[/* results */ Any, /* context */ Context, Unit]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    inline def setHooksVarargs(value: (js.Function2[/* results */ js.Any, /* context */ Context, Unit])*): Self = StObject.set(x, "hooks", js.Array(value :_*))
+    inline def setHooksVarargs(value: (js.Function2[/* results */ Any, /* context */ Context, Unit])*): Self = StObject.set(x, "hooks", js.Array(value*))
     
     inline def setMaxTop(value: Double): Self = StObject.set(x, "maxTop", value.asInstanceOf[js.Any])
     
@@ -117,11 +117,11 @@ object TableDefinition {
     
     inline def setSoftDeleteUndefined: Self = StObject.set(x, "softDelete", js.undefined)
     
-    inline def setTransforms(value: js.Array[js.Function2[/* item */ js.Any, /* context */ Context, Unit | js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    inline def setTransforms(value: js.Array[js.Function2[/* item */ Any, /* context */ Context, Unit | Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
     inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
     
-    inline def setTransformsVarargs(value: (js.Function2[/* item */ js.Any, /* context */ Context, Unit | js.Any])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+    inline def setTransformsVarargs(value: (js.Function2[/* item */ Any, /* context */ Context, Unit | Any])*): Self = StObject.set(x, "transforms", js.Array(value*))
     
     inline def setUserIdColumn(value: String): Self = StObject.set(x, "userIdColumn", value.asInstanceOf[js.Any])
     

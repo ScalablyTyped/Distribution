@@ -14,12 +14,12 @@ trait ProjectDetails extends StObject {
   /**
     *  Date the project was created. 
     */
-  var createdDate: js.UndefOr[Date] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Date of the last modification of the project. 
     */
-  var lastUpdatedDate: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   var name: js.UndefOr[ProjectName] = js.undefined
   
@@ -44,11 +44,11 @@ object ProjectDetails {
     
     inline def setConsoleUrlUndefined: Self = StObject.set(x, "consoleUrl", js.undefined)
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
@@ -68,7 +68,7 @@ object ProjectDetails {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setState(value: ProjectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

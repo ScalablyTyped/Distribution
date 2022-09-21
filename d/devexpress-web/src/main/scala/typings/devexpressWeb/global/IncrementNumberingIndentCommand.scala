@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("IncrementNumberingIndentCommand")
 @js.native
-class IncrementNumberingIndentCommand ()
+open class IncrementNumberingIndentCommand ()
   extends StObject
      with typings.devexpressWeb.IncrementNumberingIndentCommand {
   

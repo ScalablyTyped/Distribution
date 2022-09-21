@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait types extends StObject
-@JSImport("@storybook/addons/dist/types", "types")
+@JSImport("@storybook/addons/dist/ts3.9/types", "types")
 @js.native
 object types extends StObject {
   

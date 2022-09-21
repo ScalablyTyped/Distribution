@@ -13,8 +13,8 @@ object linePartMod {
   
   @JSImport("react-lazylog/build/LinePart", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LinePartProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LinePartProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -28,7 +28,7 @@ object linePartMod {
     inline def defaultProps_=(x: PartialLinePartProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type LinePart = Component[LinePartProps, js.Object, js.Any]
+  type LinePart = Component[LinePartProps, js.Object, Any]
   
   trait LinePartProps extends StObject {
     

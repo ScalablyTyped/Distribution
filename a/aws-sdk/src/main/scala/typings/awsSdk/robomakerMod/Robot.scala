@@ -19,7 +19,7 @@ trait Robot extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the robot was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
@@ -39,7 +39,7 @@ trait Robot extends StObject {
   /**
     * The time of the last deployment.
     */
-  var lastDeploymentTime: js.UndefOr[CreatedAt] = js.undefined
+  var lastDeploymentTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the robot.
@@ -68,7 +68,7 @@ object Robot {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -84,7 +84,7 @@ object Robot {
     
     inline def setLastDeploymentJobUndefined: Self = StObject.set(x, "lastDeploymentJob", js.undefined)
     
-    inline def setLastDeploymentTime(value: CreatedAt): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentTime(value: js.Date): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
     
     inline def setLastDeploymentTimeUndefined: Self = StObject.set(x, "lastDeploymentTime", js.undefined)
     

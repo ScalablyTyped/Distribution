@@ -17,7 +17,7 @@ trait ReportWorkItemStatusRequest extends StObject {
   var unifiedWorkerRequest: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[Any]
   ] = js.undefined
   
   /** The order is unimportant, except that the order of the WorkItemServiceState messages in the ReportWorkItemStatusResponse corresponds to the order of WorkItemStatus messages here. */
@@ -49,7 +49,7 @@ object ReportWorkItemStatusRequest {
     inline def setUnifiedWorkerRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[Any]
     ): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     inline def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
@@ -58,7 +58,7 @@ object ReportWorkItemStatusRequest {
     
     inline def setWorkItemStatusesUndefined: Self = StObject.set(x, "workItemStatuses", js.undefined)
     
-    inline def setWorkItemStatusesVarargs(value: WorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value :_*))
+    inline def setWorkItemStatusesVarargs(value: WorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value*))
     
     inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     

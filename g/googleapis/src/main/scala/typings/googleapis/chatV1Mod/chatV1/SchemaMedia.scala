@@ -1,0 +1,29 @@
+package typings.googleapis.chatV1Mod.chatV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaMedia extends StObject {
+  
+  /**
+    * Name of the media resource.
+    */
+  var resourceName: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaMedia {
+  
+  inline def apply(): SchemaMedia = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaMedia]
+  }
+  
+  extension [Self <: SchemaMedia](x: Self) {
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameNull: Self = StObject.set(x, "resourceName", null)
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+  }
+}

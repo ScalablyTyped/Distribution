@@ -16,12 +16,12 @@ trait Sparkline
   
   var dataSource: DataSource = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportImage(options: Any): JQueryPromise[Any] = js.native
   
-  def exportPDF(): JQueryPromise[js.Any] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
+  def exportPDF(): JQueryPromise[Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportSVG(options: Any): JQueryPromise[Any] = js.native
   
   def imageDataURL(): String = js.native
   
@@ -32,7 +32,7 @@ trait Sparkline
   
   def setDataSource(dataSource: DataSource): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def svg(): String = js.native
   

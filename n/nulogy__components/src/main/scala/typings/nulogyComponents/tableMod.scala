@@ -8,5 +8,5 @@ object tableMod {
   
   @JSImport("@nulogy/components/src/Table", "Table")
   @js.native
-  val Table: js.Any = js.native
+  val Table: Any = js.native
 }

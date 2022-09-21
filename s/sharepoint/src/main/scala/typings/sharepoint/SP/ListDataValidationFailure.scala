@@ -21,9 +21,9 @@ trait ListDataValidationFailure
 object ListDataValidationFailure {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_displayName: () => String,
     get_message: () => String,
     get_name: () => String,

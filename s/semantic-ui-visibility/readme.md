@@ -11,9 +11,9 @@ Single component release of visibility
 | Full name          | semantic-ui-visibility |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6354 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 247.66666666666666 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

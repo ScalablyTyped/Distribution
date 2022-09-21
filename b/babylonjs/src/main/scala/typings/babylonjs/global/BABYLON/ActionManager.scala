@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ActionManager")
 @js.native
-class ActionManager protected ()
+/**
+  * Creates a new action manager
+  * @param scene defines the hosting scene
+  */
+open class ActionManager ()
   extends StObject
      with typings.babylonjs.BABYLON.ActionManager {
-  /**
-    * Creates a new action manager
-    * @param scene defines the hosting scene
-    */
-  def this(scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
   
   /**
     * Releases all held resources
@@ -42,7 +42,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.NothingTrigger")
   @js.native
-  val NothingTrigger: Double = js.native
+  val NothingTrigger: /* 0 */ Double = js.native
   
   /**
     * On center pick
@@ -50,7 +50,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnCenterPickTrigger")
   @js.native
-  val OnCenterPickTrigger: Double = js.native
+  val OnCenterPickTrigger: /* 4 */ Double = js.native
   
   /**
     * On double pick
@@ -58,7 +58,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnDoublePickTrigger")
   @js.native
-  val OnDoublePickTrigger: Double = js.native
+  val OnDoublePickTrigger: /* 6 */ Double = js.native
   
   /**
     * On every frame
@@ -66,7 +66,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnEveryFrameTrigger")
   @js.native
-  val OnEveryFrameTrigger: Double = js.native
+  val OnEveryFrameTrigger: /* 11 */ Double = js.native
   
   /**
     * On intersection enter
@@ -74,7 +74,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnIntersectionEnterTrigger")
   @js.native
-  val OnIntersectionEnterTrigger: Double = js.native
+  val OnIntersectionEnterTrigger: /* 12 */ Double = js.native
   
   /**
     * On intersection exit
@@ -82,7 +82,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnIntersectionExitTrigger")
   @js.native
-  val OnIntersectionExitTrigger: Double = js.native
+  val OnIntersectionExitTrigger: /* 13 */ Double = js.native
   
   /**
     * On key down
@@ -90,7 +90,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnKeyDownTrigger")
   @js.native
-  val OnKeyDownTrigger: Double = js.native
+  val OnKeyDownTrigger: /* 14 */ Double = js.native
   
   /**
     * On key up
@@ -98,7 +98,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnKeyUpTrigger")
   @js.native
-  val OnKeyUpTrigger: Double = js.native
+  val OnKeyUpTrigger: /* 15 */ Double = js.native
   
   /**
     * On left pick
@@ -106,7 +106,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnLeftPickTrigger")
   @js.native
-  val OnLeftPickTrigger: Double = js.native
+  val OnLeftPickTrigger: /* 2 */ Double = js.native
   
   /**
     * On long press
@@ -114,7 +114,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnLongPressTrigger")
   @js.native
-  val OnLongPressTrigger: Double = js.native
+  val OnLongPressTrigger: /* 8 */ Double = js.native
   
   /**
     * On pick down
@@ -122,7 +122,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPickDownTrigger")
   @js.native
-  val OnPickDownTrigger: Double = js.native
+  val OnPickDownTrigger: /* 5 */ Double = js.native
   
   /**
     * On pick out.
@@ -131,7 +131,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPickOutTrigger")
   @js.native
-  val OnPickOutTrigger: Double = js.native
+  val OnPickOutTrigger: /* 16 */ Double = js.native
   
   /**
     * On pick
@@ -139,7 +139,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPickTrigger")
   @js.native
-  val OnPickTrigger: Double = js.native
+  val OnPickTrigger: /* 1 */ Double = js.native
   
   /**
     * On pick up
@@ -147,7 +147,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPickUpTrigger")
   @js.native
-  val OnPickUpTrigger: Double = js.native
+  val OnPickUpTrigger: /* 7 */ Double = js.native
   
   /**
     * On pointer out
@@ -155,7 +155,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPointerOutTrigger")
   @js.native
-  val OnPointerOutTrigger: Double = js.native
+  val OnPointerOutTrigger: /* 10 */ Double = js.native
   
   /**
     * On pointer over
@@ -163,7 +163,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnPointerOverTrigger")
   @js.native
-  val OnPointerOverTrigger: Double = js.native
+  val OnPointerOverTrigger: /* 9 */ Double = js.native
   
   /**
     * On right pick
@@ -171,7 +171,7 @@ object ActionManager {
     */
   @JSGlobal("BABYLON.ActionManager.OnRightPickTrigger")
   @js.native
-  val OnRightPickTrigger: Double = js.native
+  val OnRightPickTrigger: /* 3 */ Double = js.native
   
   /**
     * Creates a new ActionManager from a JSON data
@@ -180,7 +180,7 @@ object ActionManager {
     * @param scene defines the hosting scene
     */
   inline def Parse(
-    parsedActions: js.Any,
+    parsedActions: Any,
     `object`: Nullable[typings.babylonjs.BABYLON.AbstractMesh],
     scene: typings.babylonjs.BABYLON.Scene
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]

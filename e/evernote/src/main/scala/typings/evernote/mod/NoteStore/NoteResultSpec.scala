@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NoteResultSpec")
 @js.native
-class NoteResultSpec () extends StObject {
+open class NoteResultSpec () extends StObject {
   def this(args: IncludeAccountLimits) = this()
   
   var includeAccountLimits: js.UndefOr[Boolean] = js.native

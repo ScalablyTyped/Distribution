@@ -58,7 +58,7 @@ object XAuthorizable {
     getGrantablePrivileges: (String, Double) => Double,
     getPrivileges: (String, Double) => Double,
     grantPrivileges: (String, Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     revokePrivileges: (String, Double, Double) => Unit
   ): XAuthorizable = {

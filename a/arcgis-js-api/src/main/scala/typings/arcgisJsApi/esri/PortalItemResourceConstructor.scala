@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalItemResourceConstructor
   extends StObject
-     with Instantiable0[PortalItemResource]
+     with /**
+  * A reference to a portal item resource.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html)
+  */
+Instantiable0[PortalItemResource]
      with Instantiable1[/* properties */ PortalItemResourceProperties, PortalItemResource]

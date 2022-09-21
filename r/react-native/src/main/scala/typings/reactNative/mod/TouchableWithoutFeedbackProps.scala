@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,8 @@ trait TouchableWithoutFeedbackProps
      with TouchableWithoutFeedbackPropsIOS
      with TouchableWithoutFeedbackPropsAndroid
      with AccessibilityProps {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Delay in ms, from onPressIn, before onLongPress is called.
@@ -99,6 +102,10 @@ object TouchableWithoutFeedbackProps {
   }
   
   extension [Self <: TouchableWithoutFeedbackProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
     

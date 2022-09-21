@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.InvertedWeibull")
 @js.native
-class InvertedWeibull ()
+open class InvertedWeibull ()
   extends typings.ranjs.mod.dist.InvertedWeibull {
   def this(c: Double) = this()
 }

@@ -18,16 +18,16 @@ object mod {
   
   @JSImport("@ethersproject/abi", "AbiCoder")
   @js.native
-  class AbiCoder ()
+  open class AbiCoder ()
     extends typings.ethersprojectAbi.abiCoderMod.AbiCoder {
     def this(coerceFunc: CoerceFunc) = this()
   }
   
   @JSImport("@ethersproject/abi", "ConstructorFragment")
   @js.native
-  class ConstructorFragment protected ()
+  open class ConstructorFragment protected ()
     extends typings.ethersprojectAbi.fragmentsMod.ConstructorFragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
   }
   /* static members */
   object ConstructorFragment {
@@ -45,14 +45,39 @@ object mod {
     
     inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ConstructorFragment]
     
-    inline def isConstructorFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean]
+    inline def isConstructorFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean]
+  }
+  
+  @JSImport("@ethersproject/abi", "ErrorFragment")
+  @js.native
+  open class ErrorFragment protected ()
+    extends typings.ethersprojectAbi.fragmentsMod.ErrorFragment {
+    def this(constructorGuard: Any, params: Any) = this()
+  }
+  /* static members */
+  object ErrorFragment {
+    
+    @JSImport("@ethersproject/abi", "ErrorFragment")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def from(value: String): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    inline def from(value: typings.ethersprojectAbi.fragmentsMod.ErrorFragment): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    inline def from(value: JsonFragment): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    
+    inline def fromObject(value: typings.ethersprojectAbi.fragmentsMod.ErrorFragment): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    inline def fromObject(value: JsonFragment): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    
+    inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ErrorFragment]
+    
+    inline def isErrorFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ErrorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ErrorFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "EventFragment")
   @js.native
-  class EventFragment protected ()
+  open class EventFragment protected ()
     extends typings.ethersprojectAbi.fragmentsMod.EventFragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
   }
   /* static members */
   object EventFragment {
@@ -70,14 +95,14 @@ object mod {
     
     inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.EventFragment]
     
-    inline def isEventFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean]
+    inline def isEventFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "Fragment")
   @js.native
   abstract class Fragment protected ()
     extends typings.ethersprojectAbi.fragmentsMod.Fragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
   }
   /* static members */
   object Fragment {
@@ -95,14 +120,14 @@ object mod {
     
     inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.Fragment]
     
-    inline def isFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean]
+    inline def isFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "FunctionFragment")
   @js.native
-  class FunctionFragment protected ()
+  open class FunctionFragment protected ()
     extends typings.ethersprojectAbi.fragmentsMod.FunctionFragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
   }
   /* static members */
   object FunctionFragment {
@@ -120,12 +145,12 @@ object mod {
     
     inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.FunctionFragment]
     
-    inline def isFunctionFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean]
+    inline def isFunctionFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "Indexed")
   @js.native
-  class Indexed protected ()
+  open class Indexed protected ()
     extends typings.ethersprojectAbi.interfaceMod.Indexed {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed ]: @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed[K]}
@@ -138,12 +163,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexed")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean]
+    inline def isIndexed(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexed")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "Interface")
   @js.native
-  class Interface protected ()
+  open class Interface protected ()
     extends typings.ethersprojectAbi.interfaceMod.Interface {
     def this(fragments: String) = this()
     def this(fragments: js.Array[typings.ethersprojectAbi.fragmentsMod.Fragment | JsonFragment | String]) = this()
@@ -161,14 +186,15 @@ object mod {
     
     inline def getEventTopic(eventFragment: typings.ethersprojectAbi.fragmentsMod.EventFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventTopic")(eventFragment.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def getSighash(functionFragment: typings.ethersprojectAbi.fragmentsMod.FunctionFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSighash")(functionFragment.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getSighash(fragment: typings.ethersprojectAbi.fragmentsMod.ErrorFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSighash")(fragment.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getSighash(fragment: typings.ethersprojectAbi.fragmentsMod.FunctionFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSighash")(fragment.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def isInterface(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterface")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean]
+    inline def isInterface(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterface")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "LogDescription")
   @js.native
-  class LogDescription protected ()
+  open class LogDescription protected ()
     extends typings.ethersprojectAbi.interfaceMod.LogDescription {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription[K]}
@@ -177,9 +203,9 @@ object mod {
   
   @JSImport("@ethersproject/abi", "ParamType")
   @js.native
-  class ParamType protected ()
+  open class ParamType protected ()
     extends typings.ethersprojectAbi.fragmentsMod.ParamType {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
   }
   /* static members */
   object ParamType {
@@ -201,12 +227,12 @@ object mod {
     inline def fromString(value: String): typings.ethersprojectAbi.fragmentsMod.ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ParamType]
     inline def fromString(value: String, allowIndexed: Boolean): typings.ethersprojectAbi.fragmentsMod.ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectAbi.fragmentsMod.ParamType]
     
-    inline def isParamType(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParamType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean]
+    inline def isParamType(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParamType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean]
   }
   
   @JSImport("@ethersproject/abi", "TransactionDescription")
   @js.native
-  class TransactionDescription protected ()
+  open class TransactionDescription protected ()
     extends typings.ethersprojectAbi.interfaceMod.TransactionDescription {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription[K]}

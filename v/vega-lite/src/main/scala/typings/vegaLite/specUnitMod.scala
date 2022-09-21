@@ -1,34 +1,32 @@
 package typings.vegaLite
 
-import typings.std.Record
 import typings.vegaLite.channeldefMod.Field
 import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.compositemarkMod.CompositeEncoding
 import typings.vegaLite.compositemarkMod.FacetedCompositeEncoding
 import typings.vegaLite.encodingMod.Encoding
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.parameterMod.Parameter
 import typings.vegaLite.projectionMod.Projection
 import typings.vegaLite.specBaseMod.BaseSpec
-import typings.vegaLite.specBaseMod.DeprecatedFrameMixins
 import typings.vegaLite.specBaseMod.FrameMixins
 import typings.vegaLite.specBaseMod.GenericCompositionLayout
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specBaseMod.Step
 import typings.vegaLite.specBaseMod.ViewBackground
-import typings.vegaLite.specMod._TopLevelSpec
 import typings.vegaLite.srcConfigMod.Config
 import typings.vegaLite.srcDataMod.Data
 import typings.vegaLite.srcMarkMod.AnyMark
 import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcMarkMod.MarkDef
 import typings.vegaLite.srcResolveMod.Resolve
-import typings.vegaLite.srcSelectionMod.SelectionDef
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.titleMod.TitleParams
 import typings.vegaLite.toplevelMod.AutoSizeParams
 import typings.vegaLite.toplevelMod.AutosizeType
 import typings.vegaLite.toplevelMod.Datasets
 import typings.vegaLite.toplevelMod.Padding
+import typings.vegaLite.toplevelMod.TopLevelParameter
 import typings.vegaLite.transformMod.Transform
 import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.container
@@ -51,21 +49,21 @@ object specUnitMod {
   
   inline def isUnitSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  trait FacetedUnitSpec
+  trait FacetedUnitSpec[F /* <: Field */, P]
     extends StObject
-       with GenericUnitSpec[FacetedCompositeEncoding[Field], AnyMark]
+       with GenericUnitSpec[FacetedCompositeEncoding[F], AnyMark, P]
        with ResolveMixins
        with GenericCompositionLayout
        with FrameMixins[ExprRef | SignalRef]
   object FacetedUnitSpec {
     
-    inline def apply(mark: AnyMark): FacetedUnitSpec = {
+    inline def apply[F /* <: Field */, P](mark: AnyMark): FacetedUnitSpec[F, P] = {
       val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FacetedUnitSpec]
+      __obj.asInstanceOf[FacetedUnitSpec[F, P]]
     }
   }
   
-  trait GenericUnitSpec[E /* <: Encoding[js.Any] */, M]
+  trait GenericUnitSpec[E /* <: Encoding[Any] */, M, P]
     extends StObject
        with BaseSpec {
     
@@ -81,24 +79,24 @@ object specUnitMod {
     var mark: M
     
     /**
+      * An array of parameters that may either be simple variables, or more complex selections that map user input to data queries.
+      */
+    var params: js.UndefOr[js.Array[P]] = js.undefined
+    
+    /**
       * An object defining properties of geographic projection, which will be applied to `shape` path for `"geoshape"` marks
       * and to `latitude` and `"longitude"` channels for other marks.
       */
-    var projection: js.UndefOr[Projection] = js.undefined
-    
-    /**
-      * A key-value mapping between selection names and definitions.
-      */
-    var selection: js.UndefOr[Record[String, SelectionDef]] = js.undefined
+    var projection: js.UndefOr[Projection[ExprRef]] = js.undefined
   }
   object GenericUnitSpec {
     
-    inline def apply[E /* <: Encoding[js.Any] */, M](mark: M): GenericUnitSpec[E, M] = {
+    inline def apply[E /* <: Encoding[Any] */, M, P](mark: M): GenericUnitSpec[E, M, P] = {
       val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GenericUnitSpec[E, M]]
+      __obj.asInstanceOf[GenericUnitSpec[E, M, P]]
     }
     
-    extension [Self <: GenericUnitSpec[?, ?], E /* <: Encoding[js.Any] */, M](x: Self & (GenericUnitSpec[E, M])) {
+    extension [Self <: GenericUnitSpec[?, ?, ?], E /* <: Encoding[Any] */, M, P](x: Self & (GenericUnitSpec[E, M, P])) {
       
       inline def setEncoding(value: E): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -106,25 +104,29 @@ object specUnitMod {
       
       inline def setMark(value: M): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[P]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      
+      inline def setParamsVarargs(value: P*): Self = StObject.set(x, "params", js.Array(value*))
+      
+      inline def setProjection(value: Projection[ExprRef]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
-      
-      inline def setSelection(value: Record[String, SelectionDef]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
-      
-      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     }
   }
   
-  type NormalizedUnitSpec = GenericUnitSpec[Encoding[FieldName], Mark | (MarkDef[Mark, ExprRef | SignalRef])]
+  type NormalizedUnitSpec = GenericUnitSpec[
+    Encoding[FieldName], 
+    Mark | (MarkDef[Mark, ExprRef | SignalRef]), 
+    SelectionParameter[SelectionType]
+  ]
   
-  /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec> & vega-lite.vega-lite/build/src/spec/base.DataMixins */
-  trait TopLevelUnitSpec
-    extends StObject
-       with _TopLevelSpec {
+  /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<F, vega-lite.vega-lite/build/src/spec/toplevel.TopLevelParameter>> & vega-lite.vega-lite/build/src/spec/base.DataMixins */
+  trait TopLevelUnitSpec[F /* <: Field */] extends StObject {
     
     /**
-      * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v4.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
+      * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v5.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
       * @format uri
       */
     @JSName("$schema")
@@ -205,7 +207,7 @@ object specUnitMod {
     /**
       * A key-value mapping between encoding channels and definition of fields.
       */
-    var encoding: js.UndefOr[FacetedCompositeEncoding[Field]] = js.undefined
+    var encoding: js.UndefOr[FacetedCompositeEncoding[F]] = js.undefined
     
     /**
       * The height of a visualization.
@@ -242,25 +244,23 @@ object specUnitMod {
     var padding: js.UndefOr[Padding | ExprRef | SignalRef] = js.undefined
     
     /**
-      * Dynamic variables that parameterize a visualization.
+      * An array of parameters that may either be simple variables, or more complex selections that map user input to data queries.
       */
-    var params: js.UndefOr[js.Array[Parameter]] = js.undefined
+    /**
+      * Dynamic variables or selections that parameterize a visualization.
+      */
+    var params: js.UndefOr[js.Array[TopLevelParameter]] = js.undefined
     
     /**
       * An object defining properties of geographic projection, which will be applied to `shape` path for `"geoshape"` marks
       * and to `latitude` and `"longitude"` channels for other marks.
       */
-    var projection: js.UndefOr[Projection] = js.undefined
+    var projection: js.UndefOr[Projection[ExprRef]] = js.undefined
     
     /**
       * Scale, axis, and legend resolutions for view composition specifications.
       */
     var resolve: js.UndefOr[Resolve] = js.undefined
-    
-    /**
-      * A key-value mapping between selection names and definitions.
-      */
-    var selection: js.UndefOr[Record[String, SelectionDef]] = js.undefined
     
     /**
       * The spacing in pixels between sub-views of the composition operator.
@@ -285,7 +285,7 @@ object specUnitMod {
       * Optional metadata that will be passed to Vega.
       * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
       */
-    var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
+    var usermeta: js.UndefOr[Dict[Any]] = js.undefined
     
     /**
       * An object defining the view background's fill and stroke.
@@ -312,12 +312,12 @@ object specUnitMod {
   }
   object TopLevelUnitSpec {
     
-    inline def apply(data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): TopLevelUnitSpec = {
+    inline def apply[F /* <: Field */](data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): TopLevelUnitSpec[F] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TopLevelUnitSpec]
+      __obj.asInstanceOf[TopLevelUnitSpec[F]]
     }
     
-    extension [Self <: TopLevelUnitSpec](x: Self) {
+    extension [Self <: TopLevelUnitSpec[?], F /* <: Field */](x: Self & TopLevelUnitSpec[F]) {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       
@@ -357,7 +357,7 @@ object specUnitMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setEncoding(value: FacetedCompositeEncoding[Field]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: FacetedCompositeEncoding[F]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
@@ -375,23 +375,19 @@ object specUnitMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[TopLevelParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: TopLevelParameter*): Self = StObject.set(x, "params", js.Array(value*))
       
-      inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection[ExprRef]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
       inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
-      
-      inline def setSelection(value: Record[String, SelectionDef]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
-      
-      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
       inline def setSpacing(value: Double | RowCol[Double]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
@@ -401,15 +397,15 @@ object specUnitMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
       
       inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
       
-      inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+      inline def setUsermeta(value: Dict[Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
       
       inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
       
@@ -423,27 +419,17 @@ object specUnitMod {
     }
   }
   
-  trait UnitSpec
-    extends StObject
-       with GenericUnitSpec[CompositeEncoding[Field], AnyMark]
-       with DeprecatedFrameMixins
-  object UnitSpec {
-    
-    inline def apply(mark: AnyMark): UnitSpec = {
-      val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UnitSpec]
-    }
-  }
+  type UnitSpec[F /* <: Field */] = GenericUnitSpec[CompositeEncoding[F], AnyMark, SelectionParameter[SelectionType]]
   
-  trait UnitSpecWithFrame
+  trait UnitSpecWithFrame[F /* <: Field */]
     extends StObject
-       with GenericUnitSpec[CompositeEncoding[Field], AnyMark]
+       with GenericUnitSpec[CompositeEncoding[F], AnyMark, SelectionParameter[SelectionType]]
        with FrameMixins[ExprRef | SignalRef]
   object UnitSpecWithFrame {
     
-    inline def apply(mark: AnyMark): UnitSpecWithFrame = {
+    inline def apply[F /* <: Field */](mark: AnyMark): UnitSpecWithFrame[F] = {
       val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UnitSpecWithFrame]
+      __obj.asInstanceOf[UnitSpecWithFrame[F]]
     }
   }
 }

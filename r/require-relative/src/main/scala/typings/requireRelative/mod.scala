@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(id: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(id: String, relativeTo: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(id: String): Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(id: String, relativeTo: String): Any = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("require-relative", JSImport.Namespace)
   @js.native

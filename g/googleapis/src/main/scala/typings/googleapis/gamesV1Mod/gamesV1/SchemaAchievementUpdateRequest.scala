@@ -4,42 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for a request to update an achievement.
-  */
 trait SchemaAchievementUpdateRequest extends StObject {
   
   /**
     * The achievement this update is being applied to.
     */
-  var achievementId: js.UndefOr[String] = js.undefined
+  var achievementId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The payload if an update of type INCREMENT was requested for the
-    * achievement.
+    * The payload if an update of type `INCREMENT` was requested for the achievement.
     */
   var incrementPayload: js.UndefOr[SchemaGamesAchievementIncrement] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#achievementUpdateRequest.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateRequest`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The payload if an update of type SET_STEPS_AT_LEAST was requested for the
-    * achievement.
+    * The payload if an update of type `SET_STEPS_AT_LEAST` was requested for the achievement.
     */
   var setStepsAtLeastPayload: js.UndefOr[SchemaGamesAchievementSetStepsAtLeast] = js.undefined
   
   /**
-    * The type of update being applied. Possible values are:   -
-    * &quot;REVEAL&quot; - Achievement is revealed.  - &quot;UNLOCK&quot; -
-    * Achievement is unlocked.  - &quot;INCREMENT&quot; - Achievement is
-    * incremented.  - &quot;SET_STEPS_AT_LEAST&quot; - Achievement progress is
-    * set to at least the passed value.
+    * The type of update being applied.
     */
-  var updateType: js.UndefOr[String] = js.undefined
+  var updateType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAchievementUpdateRequest {
   
@@ -52,6 +42,8 @@ object SchemaAchievementUpdateRequest {
     
     inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
+    inline def setAchievementIdNull: Self = StObject.set(x, "achievementId", null)
+    
     inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
     inline def setIncrementPayload(value: SchemaGamesAchievementIncrement): Self = StObject.set(x, "incrementPayload", value.asInstanceOf[js.Any])
@@ -60,6 +52,8 @@ object SchemaAchievementUpdateRequest {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSetStepsAtLeastPayload(value: SchemaGamesAchievementSetStepsAtLeast): Self = StObject.set(x, "setStepsAtLeastPayload", value.asInstanceOf[js.Any])
@@ -67,6 +61,8 @@ object SchemaAchievementUpdateRequest {
     inline def setSetStepsAtLeastPayloadUndefined: Self = StObject.set(x, "setStepsAtLeastPayload", js.undefined)
     
     inline def setUpdateType(value: String): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTypeNull: Self = StObject.set(x, "updateType", null)
     
     inline def setUpdateTypeUndefined: Self = StObject.set(x, "updateType", js.undefined)
   }

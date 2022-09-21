@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlayerSession extends StObject {
   
   /**
-    * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
+    * The DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
     */
   var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.undefined
   
@@ -22,7 +22,7 @@ trait PlayerSession extends StObject {
   var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
-    * A unique identifier for a fleet that the player's game session is running on.
+    * A unique identifier for the fleet that the player's game session is running on.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
@@ -32,12 +32,12 @@ trait PlayerSession extends StObject {
   var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * IP address of the instance that is running the game session. When connecting to a Amazon GameLift game server, a client needs to reference an IP address (or DNS name) and port number.
+    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
     */
   var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.undefined
   
   /**
-    * Developer-defined information related to a player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game. 
+    * Developer-defined information related to a player. GameLift does not use this data, so it can be formatted as needed for use in the game. 
     */
   var PlayerData: js.UndefOr[typings.awsSdk.gameliftMod.PlayerData] = js.undefined
   
@@ -62,9 +62,9 @@ trait PlayerSession extends StObject {
   var Status: js.UndefOr[PlayerSessionStatus] = js.undefined
   
   /**
-    * Time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var TerminationTime: js.UndefOr[Timestamp] = js.undefined
+  var TerminationTime: js.UndefOr[js.Date] = js.undefined
 }
 object PlayerSession {
   
@@ -75,7 +75,7 @@ object PlayerSession {
   
   extension [Self <: PlayerSession](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -119,7 +119,7 @@ object PlayerSession {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTerminationTime(value: Timestamp): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
+    inline def setTerminationTime(value: js.Date): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
     
     inline def setTerminationTimeUndefined: Self = StObject.set(x, "TerminationTime", js.undefined)
   }

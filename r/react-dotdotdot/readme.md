@@ -10,10 +10,10 @@ Multiline text ellipsis for react
 | ------------------ | :-------------: |
 | Full name          | react-dotdotdot |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 4600342 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 245923.0 |
+| # stars            | 401.0 |
 
 ## Links
 - [Homepage](https://github.com/CezaryDanielNowak/React-dotdotdot#readme)

@@ -8,9 +8,9 @@ object checkboxMod {
   
   @JSImport("@nulogy/components/src/Checkbox", "Checkbox")
   @js.native
-  val Checkbox: js.Any = js.native
+  val Checkbox: Any = js.native
   
   @JSImport("@nulogy/components/src/Checkbox", "CheckboxGroup")
   @js.native
-  val CheckboxGroup: js.Any = js.native
+  val CheckboxGroup: Any = js.native
 }

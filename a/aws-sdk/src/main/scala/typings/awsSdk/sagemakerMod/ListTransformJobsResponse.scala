@@ -31,6 +31,6 @@ object ListTransformJobsResponse {
     
     inline def setTransformJobSummaries(value: TransformJobSummaries): Self = StObject.set(x, "TransformJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setTransformJobSummariesVarargs(value: TransformJobSummary*): Self = StObject.set(x, "TransformJobSummaries", js.Array(value :_*))
+    inline def setTransformJobSummariesVarargs(value: TransformJobSummary*): Self = StObject.set(x, "TransformJobSummaries", js.Array(value*))
   }
 }

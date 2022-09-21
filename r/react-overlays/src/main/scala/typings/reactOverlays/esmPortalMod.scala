@@ -40,7 +40,7 @@ object esmPortalMod {
     
     var container: DOMContainer[HTMLElement]
     
-    var onRendered: js.UndefOr[js.Function1[/* element */ js.Any, Unit]] = js.undefined
+    var onRendered: js.UndefOr[js.Function1[/* element */ Any, Unit]] = js.undefined
   }
   object PortalProps {
     
@@ -59,7 +59,7 @@ object esmPortalMod {
       
       inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      inline def setOnRendered(value: /* element */ js.Any => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
+      inline def setOnRendered(value: /* element */ Any => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
       
       inline def setOnRenderedUndefined: Self = StObject.set(x, "onRendered", js.undefined)
     }

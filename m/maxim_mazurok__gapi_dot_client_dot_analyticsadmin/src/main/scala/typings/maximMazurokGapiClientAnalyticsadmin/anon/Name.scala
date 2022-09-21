@@ -25,7 +25,7 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the property to lookup. Format: properties/{property_id} Example: "properties/1000" */
+  /** Required. The name of the google signals settings to retrieve. Format: properties/{property}/googleSignalsSettings */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

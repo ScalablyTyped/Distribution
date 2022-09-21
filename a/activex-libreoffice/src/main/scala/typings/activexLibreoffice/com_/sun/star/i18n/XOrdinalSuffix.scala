@@ -32,7 +32,7 @@ object XOrdinalSuffix {
   inline def apply(
     acquire: () => Unit,
     getOrdinalSuffix: (Double, Locale) => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XOrdinalSuffix = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getOrdinalSuffix = js.Any.fromFunction2(getOrdinalSuffix), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

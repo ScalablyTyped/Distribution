@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of {@link Word.CustomXmlPart} objects.
   *
+  * @remarks
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -25,6 +25,7 @@ trait CustomXmlPartCollection
   /**
     * Adds a new custom XML part to the document.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -39,6 +40,7 @@ trait CustomXmlPartCollection
   /**
     * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -49,6 +51,7 @@ trait CustomXmlPartCollection
   /**
     * Gets the number of items in the collection.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -57,6 +60,7 @@ trait CustomXmlPartCollection
   /**
     * Gets a custom XML part based on its ID. Read only.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -67,6 +71,7 @@ trait CustomXmlPartCollection
   /**
     * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
     *
+    * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -95,12 +100,12 @@ trait CustomXmlPartCollection
   def toJSON(): CustomXmlPartCollectionData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): CustomXmlPartCollection = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): CustomXmlPartCollection = js.native
 }

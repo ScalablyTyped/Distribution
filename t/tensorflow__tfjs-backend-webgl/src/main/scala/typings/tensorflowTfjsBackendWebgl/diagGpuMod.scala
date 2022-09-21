@@ -9,7 +9,7 @@ object diagGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/diag_gpu", "DiagProgram")
   @js.native
-  class DiagProgram protected ()
+  open class DiagProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(size: Double) = this()

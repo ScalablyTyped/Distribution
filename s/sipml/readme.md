@@ -9,10 +9,10 @@ NPM package for SIPml.js
 | ------------------ | :-------------: |
 | Full name          | sipml |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1529 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/sipml)

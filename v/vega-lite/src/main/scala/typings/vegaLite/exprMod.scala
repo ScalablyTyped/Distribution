@@ -1,7 +1,7 @@
 package typings.vegaLite
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.utilMod.Dict
+import typings.vegaLite.vegaSchemaMod.MappedExclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,9 @@ object exprMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isExprOrSignalRef(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprOrSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExprRef(o: Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean]
   
-  inline def isExprRef(o: js.Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean]
-  
-  inline def replaceExprRefInIndex(index: StringDictionary[js.Any | ExprOrSignalRef]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceExprRefInIndex")(index.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  
-  type ExprOrSignalRef = ExprRef | SignalRef
+  inline def replaceExprRef[T /* <: Dict[Any] */](index: T): MappedExclude[T, ExprRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceExprRef")(index.asInstanceOf[js.Any]).asInstanceOf[MappedExclude[T, ExprRef]]
   
   trait ExprRef extends StObject {
     

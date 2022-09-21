@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BasicBufferContainer")
 @js.native
-class BasicBufferContainer protected ()
+open class BasicBufferContainer protected ()
   extends typings.wonderJs.basicBufferContainerMod.BasicBufferContainer {
   def this(entityObject: typings.wonderJs.gameObjectMod.GameObject) = this()
 }

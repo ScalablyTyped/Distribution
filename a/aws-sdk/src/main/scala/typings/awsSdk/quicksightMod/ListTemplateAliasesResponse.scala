@@ -12,7 +12,7 @@ trait ListTemplateAliasesResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,6 @@ object ListTemplateAliasesResponse {
     
     inline def setTemplateAliasListUndefined: Self = StObject.set(x, "TemplateAliasList", js.undefined)
     
-    inline def setTemplateAliasListVarargs(value: TemplateAlias*): Self = StObject.set(x, "TemplateAliasList", js.Array(value :_*))
+    inline def setTemplateAliasListVarargs(value: TemplateAlias*): Self = StObject.set(x, "TemplateAliasList", js.Array(value*))
   }
 }

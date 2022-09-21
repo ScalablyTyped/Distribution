@@ -10,7 +10,7 @@ trait Control
      with IDisposable
      with IMenuItem {
   
-  def createComponentForDisplayMode(displayMode: String): js.Any
+  def createComponentForDisplayMode(displayMode: String): Any
   
   def get_enabled(): Boolean
   
@@ -23,7 +23,7 @@ trait Control
 object Control {
   
   inline def apply(
-    createComponentForDisplayMode: String => js.Any,
+    createComponentForDisplayMode: String => Any,
     dispose: () => scala.Unit,
     get_enabled: () => Boolean,
     get_id: () => String,
@@ -36,7 +36,7 @@ object Control {
   
   extension [Self <: Control](x: Self) {
     
-    inline def setCreateComponentForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
+    inline def setCreateComponentForDisplayMode(value: String => Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
     
     inline def setGet_enabled(value: () => Boolean): Self = StObject.set(x, "get_enabled", js.Any.fromFunction0(value))
     

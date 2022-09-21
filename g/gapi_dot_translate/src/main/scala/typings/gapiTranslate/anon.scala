@@ -56,7 +56,7 @@ object anon {
       
       inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      inline def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value :_*))
+      inline def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value*))
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -72,7 +72,7 @@ object anon {
       
       inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value*))
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object anon {
       
       inline def setDetections(value: js.Array[js.Array[Confidence]]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
       
-      inline def setDetectionsVarargs(value: js.Array[Confidence]*): Self = StObject.set(x, "detections", js.Array(value :_*))
+      inline def setDetectionsVarargs(value: js.Array[Confidence]*): Self = StObject.set(x, "detections", js.Array(value*))
     }
   }
   
@@ -170,7 +170,7 @@ object anon {
       
       inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value*))
     }
   }
   
@@ -210,7 +210,7 @@ object anon {
       
       inline def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value*))
     }
   }
   
@@ -260,7 +260,7 @@ object anon {
       
       inline def setTranslations(value: js.Array[DetectedSourceLanguage]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      inline def setTranslationsVarargs(value: DetectedSourceLanguage*): Self = StObject.set(x, "translations", js.Array(value :_*))
+      inline def setTranslationsVarargs(value: DetectedSourceLanguage*): Self = StObject.set(x, "translations", js.Array(value*))
     }
   }
 }

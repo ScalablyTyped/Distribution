@@ -13,7 +13,7 @@ trait AccountId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the account this label belongs to. */
+  /** Required. The Merchant Center Account Id under which the Return Carrier is to be linked. */
   var accountId: String
   
   /** Data format for response. */

@@ -14,7 +14,6 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.awsColonkms
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,12 +87,12 @@ object typesGetObjectOutputMod {
     /**
       * <p>The date and time at which the object is no longer cacheable.</p>
       */
-    var Expires: js.UndefOr[Date] = js.undefined
+    var Expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Last modified date of the object</p>
       */
-    var LastModified: js.UndefOr[Date] = js.undefined
+    var LastModified: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>A map of metadata to store with the object in S3.</p>
@@ -222,11 +221,11 @@ object typesGetObjectOutputMod {
       
       inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       

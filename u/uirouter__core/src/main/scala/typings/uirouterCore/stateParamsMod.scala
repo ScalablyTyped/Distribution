@@ -11,9 +11,9 @@ object stateParamsMod {
   
   @JSImport("@uirouter/core/lib/params/stateParams", "StateParams")
   @js.native
-  class StateParams ()
+  open class StateParams ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     def this(params: Obj) = this()
     
     /**
@@ -25,6 +25,6 @@ object stateParamsMod {
       * @param {Object} $to Internal definition of object representing state to transition to.
       */
     @JSName("$inherit")
-    def $inherit(newParams: Obj, $current: StateObject, $to: StateObject): js.Any = js.native
+    def $inherit(newParams: Obj, $current: StateObject, $to: StateObject): Any = js.native
   }
 }

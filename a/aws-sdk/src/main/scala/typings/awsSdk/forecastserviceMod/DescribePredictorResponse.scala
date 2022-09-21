@@ -17,9 +17,14 @@ trait DescribePredictorResponse extends StObject {
   var AutoMLAlgorithmArns: js.UndefOr[ArnList] = js.undefined
   
   /**
+    *   The LatencyOptimized AutoML override strategy is only available in private beta. Contact AWS Support or your account manager to learn more about access privileges.   The AutoML strategy used to train the predictor. Unless LatencyOptimized is specified, the AutoML strategy optimizes predictor accuracy. This parameter is only valid for predictors trained using AutoML.
+    */
+  var AutoMLOverrideStrategy: js.UndefOr[typings.awsSdk.forecastserviceMod.AutoMLOverrideStrategy] = js.undefined
+  
+  /**
     * When the model training task was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An array of the ARNs of the dataset import jobs used to import training data for the predictor.
@@ -30,6 +35,11 @@ trait DescribePredictorResponse extends StObject {
     * An AWS Key Management Service (KMS) key and the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
     */
   var EncryptionConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.EncryptionConfig] = js.undefined
+  
+  /**
+    * The estimated time remaining in minutes for the predictor training job to complete.
+    */
+  var EstimatedTimeRemainingInMinutes: js.UndefOr[Long] = js.undefined
   
   /**
     * Used to override the default evaluation parameters of the specified algorithm. Amazon Forecast evaluates a predictor by splitting a dataset into training data and testing data. The evaluation parameters define how to perform the split and the number of iterations.
@@ -62,14 +72,24 @@ trait DescribePredictorResponse extends StObject {
   var InputDataConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.InputDataConfig] = js.undefined
   
   /**
-    * Initially, the same as CreationTime (when the status is CREATE_PENDING). This value is updated when training starts (when the status changes to CREATE_IN_PROGRESS), and when training has completed (when the status changes to ACTIVE) or fails (when the status changes to CREATE_FAILED).
+    * Whether the predictor was created with CreateAutoPredictor.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var IsAutoPredictor: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    */
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
   var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
+  
+  /**
+    * The accuracy metric used to optimize the predictor.
+    */
+  var OptimizationMetric: js.UndefOr[typings.awsSdk.forecastserviceMod.OptimizationMetric] = js.undefined
   
   /**
     * Whether the predictor is set to perform AutoML.
@@ -97,7 +117,7 @@ trait DescribePredictorResponse extends StObject {
   var PredictorName: js.UndefOr[Name] = js.undefined
   
   /**
-    * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     UPDATE_PENDING, UPDATE_IN_PROGRESS, UPDATE_FAILED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
+    * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     CREATE_STOPPING, CREATE_STOPPED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
     */
   var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
   
@@ -123,9 +143,13 @@ object DescribePredictorResponse {
     
     inline def setAutoMLAlgorithmArnsUndefined: Self = StObject.set(x, "AutoMLAlgorithmArns", js.undefined)
     
-    inline def setAutoMLAlgorithmArnsVarargs(value: Arn*): Self = StObject.set(x, "AutoMLAlgorithmArns", js.Array(value :_*))
+    inline def setAutoMLAlgorithmArnsVarargs(value: Arn*): Self = StObject.set(x, "AutoMLAlgorithmArns", js.Array(value*))
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setAutoMLOverrideStrategy(value: AutoMLOverrideStrategy): Self = StObject.set(x, "AutoMLOverrideStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMLOverrideStrategyUndefined: Self = StObject.set(x, "AutoMLOverrideStrategy", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -133,11 +157,15 @@ object DescribePredictorResponse {
     
     inline def setDatasetImportJobArnsUndefined: Self = StObject.set(x, "DatasetImportJobArns", js.undefined)
     
-    inline def setDatasetImportJobArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetImportJobArns", js.Array(value :_*))
+    inline def setDatasetImportJobArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetImportJobArns", js.Array(value*))
     
     inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
     inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+    
+    inline def setEstimatedTimeRemainingInMinutes(value: Long): Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedTimeRemainingInMinutesUndefined: Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", js.undefined)
     
     inline def setEvaluationParameters(value: EvaluationParameters): Self = StObject.set(x, "EvaluationParameters", value.asInstanceOf[js.Any])
     
@@ -155,7 +183,7 @@ object DescribePredictorResponse {
     
     inline def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
     
-    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
+    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value*))
     
     inline def setHPOConfig(value: HyperParameterTuningJobConfig): Self = StObject.set(x, "HPOConfig", value.asInstanceOf[js.Any])
     
@@ -165,13 +193,21 @@ object DescribePredictorResponse {
     
     inline def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setIsAutoPredictor(value: Boolean): Self = StObject.set(x, "IsAutoPredictor", value.asInstanceOf[js.Any])
+    
+    inline def setIsAutoPredictorUndefined: Self = StObject.set(x, "IsAutoPredictor", js.undefined)
+    
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
     inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    
+    inline def setOptimizationMetric(value: OptimizationMetric): Self = StObject.set(x, "OptimizationMetric", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationMetricUndefined: Self = StObject.set(x, "OptimizationMetric", js.undefined)
     
     inline def setPerformAutoML(value: Boolean): Self = StObject.set(x, "PerformAutoML", value.asInstanceOf[js.Any])
     

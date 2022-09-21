@@ -9,9 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object executeFilterMod {
   
   @js.native
-  trait ExecuteFilter extends StObject {
+  trait ExecuteFilter[T] extends StObject {
     
-    def apply(): Readable = js.native
-    def apply(callback: Callback): Unit = js.native
+    def apply(): PromisedReadable[T] = js.native
+    def apply(callback: Callback[T]): Unit = js.native
+  }
+  
+  @js.native
+  trait PromisedReadable[T] extends Readable {
+    
+    // DevNote: Promise function in dynamodb wraps results in an array
+    def promise(): js.Promise[js.Array[T]] = js.native
   }
 }

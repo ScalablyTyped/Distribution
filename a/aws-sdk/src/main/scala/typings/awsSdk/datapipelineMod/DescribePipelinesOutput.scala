@@ -22,6 +22,6 @@ object DescribePipelinesOutput {
     
     inline def setPipelineDescriptionList(value: PipelineDescriptionList): Self = StObject.set(x, "pipelineDescriptionList", value.asInstanceOf[js.Any])
     
-    inline def setPipelineDescriptionListVarargs(value: PipelineDescription*): Self = StObject.set(x, "pipelineDescriptionList", js.Array(value :_*))
+    inline def setPipelineDescriptionListVarargs(value: PipelineDescription*): Self = StObject.set(x, "pipelineDescriptionList", js.Array(value*))
   }
 }

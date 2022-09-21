@@ -25,7 +25,7 @@ object Track {
     
     inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    inline def setReleasesVarargs(value: TrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: TrackRelease*): Self = StObject.set(x, "releases", js.Array(value*))
     
     inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     

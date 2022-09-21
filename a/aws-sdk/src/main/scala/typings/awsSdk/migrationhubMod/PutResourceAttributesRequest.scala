@@ -49,6 +49,6 @@ object PutResourceAttributesRequest {
     
     inline def setResourceAttributeList(value: ResourceAttributeList): Self = StObject.set(x, "ResourceAttributeList", value.asInstanceOf[js.Any])
     
-    inline def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value :_*))
+    inline def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value*))
   }
 }

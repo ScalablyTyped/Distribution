@@ -24,6 +24,6 @@ object DescribeJobsResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: JobDetail*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: JobDetail*): Self = StObject.set(x, "jobs", js.Array(value*))
   }
 }

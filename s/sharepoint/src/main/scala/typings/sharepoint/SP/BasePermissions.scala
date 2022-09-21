@@ -25,10 +25,10 @@ object BasePermissions {
   inline def apply(
     clear: PermissionKind => Unit,
     clearAll: () => Unit,
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     equals_ : BasePermissions => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_typeId: () => String,
     has: PermissionKind => Boolean,
     hasPermissions: (Double, Double) => Boolean,

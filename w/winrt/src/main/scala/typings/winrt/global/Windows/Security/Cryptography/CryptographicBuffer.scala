@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Security.Cryptography
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Security.Cryptography.CryptographicBuffer")
 @js.native
-class CryptographicBuffer ()
+open class CryptographicBuffer ()
   extends StObject
      with typings.winrt.Windows.Security.Cryptography.CryptographicBuffer
 /* static members */
@@ -24,9 +23,9 @@ object CryptographicBuffer {
   
   inline def convertStringToBinary(value: String, encoding: typings.winrt.Windows.Security.Cryptography.BinaryStringEncoding): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertStringToBinary")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
   
-  inline def copyToByteArray(buffer: IBuffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("copyToByteArray")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def copyToByteArray(buffer: IBuffer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("copyToByteArray")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def createFromByteArray(value: Uint8Array): IBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[IBuffer]
+  inline def createFromByteArray(value: js.typedarray.Uint8Array): IBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[IBuffer]
   
   inline def decodeFromBase64String(value: String): IBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromBase64String")(value.asInstanceOf[js.Any]).asInstanceOf[IBuffer]
   

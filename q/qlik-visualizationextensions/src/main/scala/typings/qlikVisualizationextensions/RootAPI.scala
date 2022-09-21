@@ -147,10 +147,10 @@ object RootAPI {
       * @param [body] - Optional. Body of the post.
       * @return - A promise of a Qlik engine reply.
       */
-    def callRepository(path: String): IPromise[js.Any] = js.native
-    def callRepository(path: String, method: String): IPromise[js.Any] = js.native
-    def callRepository(path: String, method: String, body: String): IPromise[js.Any] = js.native
-    def callRepository(path: String, method: Unit, body: String): IPromise[js.Any] = js.native
+    def callRepository(path: String): IPromise[Any] = js.native
+    def callRepository(path: String, method: String): IPromise[Any] = js.native
+    def callRepository(path: String, method: String, body: String): IPromise[Any] = js.native
+    def callRepository(path: String, method: Unit, body: String): IPromise[Any] = js.native
     
     /**
       * Gets a reference to the current app. Use the currApp method in an extension to get a reference to the app currently displayed.
@@ -158,7 +158,7 @@ object RootAPI {
       * @return - An App JavaScript object with app methods.
       */
     def currApp(): IApp = js.native
-    def currApp(`object`: js.Any): IApp = js.native
+    def currApp(`object`: Any): IApp = js.native
     
     /**
       * Gets a list of Qlik Sense apps that you potentially can connect to and registers a callback to receive the data.
@@ -173,8 +173,8 @@ object RootAPI {
       * openWithoutData | Boolean | Optional. Open app without loading data. Introduced in version 1.1. | openWithoutData
       * identity | String | Optional. Unique identity for the session. If omitted, the session will be shared. | identity
       */
-    def getAppList(callback: js.Any): Unit = js.native
-    def getAppList(callback: js.Any, config: js.Any): Unit = js.native
+    def getAppList(callback: Any): Unit = js.native
+    def getAppList(callback: Any, config: Any): Unit = js.native
     
     /**
       * Gets a list of extensions installed for Qlik Sense. The reply contains all extensions,
@@ -182,8 +182,8 @@ object RootAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getExtensionList(): IPromise[js.Any] = js.native
-    def getExtensionList(callback: js.Any): IPromise[js.Any] = js.native
+    def getExtensionList(): IPromise[Any] = js.native
+    def getExtensionList(callback: Any): IPromise[Any] = js.native
     
     /**
       * Opens a WebSocekt connection to the Qlik engine for global methods.
@@ -196,7 +196,7 @@ object RootAPI {
       * identity | String | Unique identity for the session. If omitted, the session will be shared.
       * @return - A global JavaScript object with global methods.
       */
-    def getGlobal(config: js.Any): js.Any = js.native
+    def getGlobal(config: Any): Any = js.native
     
     var navigation: INavigation = js.native
     
@@ -215,8 +215,8 @@ object RootAPI {
       *     Parameter updated in version 2.2.
       * @return - App JavaScript object with app methods.
       */
-    def openApp(appId: String): js.Any = js.native
-    def openApp(appId: String, config: js.Any): js.Any = js.native
+    def openApp(appId: String): Any = js.native
+    def openApp(appId: String, config: Any): Any = js.native
     
     /**
       * Registers an extension for use in this mashup. The extension is not installed on the
@@ -227,8 +227,8 @@ object RootAPI {
       * @param impl - Set the extension implementation.
       * @param [metadata] - Optional. Extension meta-data, same format as the QEXT file. Default: {"type":"visualization"}
       */
-    def registerExtension(id: String, impl: js.Any): Unit = js.native
-    def registerExtension(id: String, impl: js.Any, metadata: js.Any): Unit = js.native
+    def registerExtension(id: String, impl: Any): Unit = js.native
+    def registerExtension(id: String, impl: Any, metadata: Any): Unit = js.native
     
     /**
       * Sends a resize event to all Qlik Sense objects.
@@ -283,8 +283,8 @@ object RootAPI {
       * @param onError - Error handling function
       * @param [onWarning] - Optional. Warning handling function. Introduced in version 2.1.
       */
-    def setOnError(onError: js.Any): Unit = js.native
-    def setOnError(onError: js.Any, onWarning: js.Any): Unit = js.native
+    def setOnError(onError: Any): Unit = js.native
+    def setOnError(onError: Any, onWarning: Any): Unit = js.native
     
     /**
       * Create a QTable object that wraps data in your extension and provides an object oriented interface.
@@ -292,8 +292,8 @@ object RootAPI {
       * @param [path] - Optional. Path to the hypercube. Default: qHyperCube
       * @return - A QTable object that holds data and options for the table.
       */
-    def table(ext: js.Any): IQTable = js.native
-    def table(ext: js.Any, path: String): IQTable = js.native
+    def table(ext: Any): IQTable = js.native
+    def table(ext: Any, path: String): IQTable = js.native
   }
   
   trait ISessionAppConfig extends StObject {

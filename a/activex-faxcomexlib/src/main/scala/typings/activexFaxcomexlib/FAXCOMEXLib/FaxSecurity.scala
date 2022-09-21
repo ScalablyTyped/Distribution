@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FaxSecurity extends StObject {
   
   /** Security descriptor */
-  var Descriptor: js.Any
+  var Descriptor: Any
   
   /* private */ @JSName("FAXCOMEXLib.FaxSecurity_typekey")
   var FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity
@@ -28,7 +28,7 @@ trait FaxSecurity extends StObject {
 object FaxSecurity {
   
   inline def apply(
-    Descriptor: js.Any,
+    Descriptor: Any,
     FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity,
     GrantedRights: FAX_ACCESS_RIGHTS_ENUM,
     InformationType: Double,
@@ -42,7 +42,7 @@ object FaxSecurity {
   
   extension [Self <: FaxSecurity](x: Self) {
     
-    inline def setDescriptor(value: js.Any): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: Any): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
     
     inline def setFAXCOMEXLibDotFaxSecurity_typekey(value: FaxSecurity): Self = StObject.set(x, "FAXCOMEXLib.FaxSecurity_typekey", value.asInstanceOf[js.Any])
     

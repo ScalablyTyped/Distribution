@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a phone event that triggers a background task. */
 @JSGlobal("Windows.ApplicationModel.Background.PhoneTrigger")
 @js.native
-class PhoneTrigger protected ()
+open class PhoneTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.PhoneTrigger {
   /**

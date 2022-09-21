@@ -10,5 +10,5 @@ object formatPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(fromPath: js.Array[js.Array[js.Any]], toPath: js.Array[js.Array[js.Any]]): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def default(fromPath: js.Array[js.Array[Any]], toPath: js.Array[js.Array[Any]]): js.Array[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Any]]]
 }

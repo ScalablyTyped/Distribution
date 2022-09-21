@@ -9,15 +9,15 @@ trait DeviceOrientationCamera
   extends StObject
      with FreeCamera {
   
-  /* private */ var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
+  /* private */ var _disablePointerInputWhenUsingDeviceOrientation: Any = js.native
   
-  /* private */ var _dragFactor: js.Any = js.native
+  /* private */ var _dragFactor: Any = js.native
   
-  /* private */ var _initialQuaternion: js.Any = js.native
+  /* private */ var _initialQuaternion: Any = js.native
   
-  /* private */ var _quaternionCache: js.Any = js.native
+  /* private */ var _quaternionCache: Any = js.native
   
-  /* private */ var _tmpDragQuaternion: js.Any = js.native
+  /* private */ var _tmpDragQuaternion: Any = js.native
   
   /**
     * Gets or sets a boolean indicating that pointer input must be disabled on first orientation sensor update (Default: true)

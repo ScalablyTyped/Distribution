@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SplitTableCellsDialogCommand")
 @js.native
-class SplitTableCellsDialogCommand ()
+open class SplitTableCellsDialogCommand ()
   extends StObject
      with typings.devexpressWeb.SplitTableCellsDialogCommand {
   

@@ -21,14 +21,14 @@ object mod extends Shortcut {
   }
   object IConfig {
     
-    inline def apply(get: String => js.Any, has: String => Boolean, util: IUtil): IConfig = {
+    inline def apply(get: String => Any, has: String => Boolean, util: IUtil): IConfig = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), util = util.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfig]
     }
     
     extension [Self <: IConfig](x: Self) {
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
@@ -42,11 +42,11 @@ object mod extends Shortcut {
     
     var original: js.UndefOr[String] = js.undefined
     
-    var parsed: js.Any
+    var parsed: Any
   }
   object IConfigSource {
     
-    inline def apply(name: String, parsed: js.Any): IConfigSource = {
+    inline def apply(name: String, parsed: Any): IConfigSource = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfigSource]
     }
@@ -59,7 +59,7 @@ object mod extends Shortcut {
       
       inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      inline def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,20 +68,22 @@ object mod extends Shortcut {
   trait IUtil extends StObject {
     
     // Return a deep copy of the specified object.
-    def cloneDeep(copyFrom: js.Any): js.Any = js.native
-    def cloneDeep(copyFrom: js.Any, depth: Double): js.Any = js.native
+    def cloneDeep(copyFrom: Any): Any = js.native
+    def cloneDeep(copyFrom: Any, depth: Double): Any = js.native
     
     // Returns an object containing all elements that differ between two objects.
-    def diffDeep(object1: js.Any, object2: js.Any): js.Any = js.native
-    def diffDeep(object1: js.Any, object2: js.Any, depth: Double): js.Any = js.native
+    def diffDeep(object1: Any, object2: Any): Any = js.native
+    def diffDeep(object1: Any, object2: Any, depth: Double): Any = js.native
     
     // Return true if two objects have equal contents.
-    def equalsDeep(object1: js.Any, object2: js.Any): Boolean = js.native
-    def equalsDeep(object1: js.Any, object2: js.Any, dept: Double): Boolean = js.native
+    def equalsDeep(object1: Any, object2: Any): Boolean = js.native
+    def equalsDeep(object1: Any, object2: Any, dept: Double): Boolean = js.native
     
+    def extendDeep(mergeInto: Any, mergeFrom1: Any, mergeFrom2: Any): Any = js.native
+    def extendDeep(mergeInto: Any, mergeFrom1: Any, mergeFrom2: Any, depth: Double): Any = js.native
     // Extend an object (and any object it contains) with one or more objects (and objects contained in them).
-    def extendDeep(mergeInto: js.Any, mergeFrom: js.Any): js.Any = js.native
-    def extendDeep(mergeInto: js.Any, mergeFrom: js.Any, depth: Double): js.Any = js.native
+    def extendDeep(mergeInto: Any, mergeFrom: Any): Any = js.native
+    def extendDeep(mergeInto: Any, mergeFrom: Any, depth: Double): Any = js.native
     
     // Return the sources for the configurations
     def getConfigSources(): js.Array[IConfigSource] = js.native
@@ -90,28 +92,28 @@ object mod extends Shortcut {
     def getEnv(varName: String): String = js.native
     
     // Return the config for the project based on directory param if not directory then return default one (config).
-    def loadFileConfigs(configDir: String): js.Any = js.native
+    def loadFileConfigs(): Any = js.native
+    def loadFileConfigs(configDir: String): Any = js.native
     
     // Make an object property hidden so it doesn't appear when enumerating elements of the object.
-    def makeHidden(`object`: js.Any, propertyName: String): js.Any = js.native
-    def makeHidden(`object`: js.Any, propertyName: String, propertyValue: String): js.Any = js.native
+    def makeHidden(`object`: Any, propertyName: String): Any = js.native
+    def makeHidden(`object`: Any, propertyName: String, propertyValue: String): Any = js.native
     
     // Make a javascript object property immutable (assuring it cannot be changed from the current value).
-    def makeImmutable(`object`: js.Any): js.Any = js.native
-    def makeImmutable(`object`: js.Any, propertyName: String): js.Any = js.native
-    def makeImmutable(`object`: js.Any, propertyName: String, propertyValue: String): js.Any = js.native
-    def makeImmutable(`object`: js.Any, propertyName: Unit, propertyValue: String): js.Any = js.native
+    def makeImmutable(`object`: Any): Any = js.native
+    def makeImmutable(`object`: Any, propertyName: String): Any = js.native
+    def makeImmutable(`object`: Any, propertyName: String, propertyValue: String): Any = js.native
+    def makeImmutable(`object`: Any, propertyName: Unit, propertyValue: String): Any = js.native
     
     /**
-      * This allows module developers to attach their configurations onto
-      * the 6 years agoInitial 0.4 checkin default configuration object so
-      * they can be configured by the consumers of the module.
+      * This allows module developers to attach their configurations onto the default configuration object
+      * so they can be configured by the consumers of the module.
       */
-    def setModuleDefaults(moduleName: String, defaults: js.Any): js.Any = js.native
+    def setModuleDefaults(moduleName: String, defaults: Any): Any = js.native
     
     // Returns a new deep copy of the current config object, or any part of the config if provided.
-    def toObject(): js.Any = js.native
-    def toObject(config: js.Any): js.Any = js.native
+    def toObject(): Any = js.native
+    def toObject(config: Any): Any = js.native
   }
   
   type _To = IConfig

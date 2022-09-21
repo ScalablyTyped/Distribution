@@ -1,6 +1,6 @@
 package typings.gulpRubySass
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object mod {
     * @param {string} source - Filename or directory
     * @param {Options} options - Additional processing rules/options
     */
-  inline def apply(source: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def apply(source: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(source: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def apply(source: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
   @JSImport("gulp-ruby-sass", JSImport.Namespace)
   @js.native
@@ -103,9 +103,9 @@ object mod {
     var scss: js.UndefOr[Boolean] = js.undefined
     
     // Actually, there should be a string. However due to ts spec, overriding member should be the same type or a subtype.
-    // http://stackoverflow.com/questions/19605557/incompatible-static-properties-in-three-d-ts-with-latest-typescript
+    // https://stackoverflow.com/questions/19605557/incompatible-static-properties-in-three-d-ts-with-latest-typescript
     // We need Options.soucemap to be boolean, so here 'any' is used instead of string.
-    var sourcemap: js.UndefOr[js.Any] = js.undefined
+    var sourcemap: js.UndefOr[Any] = js.undefined
     
     var stdin: js.UndefOr[Boolean] = js.undefined
     
@@ -172,7 +172,7 @@ object mod {
       
       inline def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
       
-      inline def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value :_*))
+      inline def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value*))
       
       inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       
@@ -194,7 +194,7 @@ object mod {
       
       inline def setScssUndefined: Self = StObject.set(x, "scss", js.undefined)
       
-      inline def setSourcemap(value: js.Any): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+      inline def setSourcemap(value: Any): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
       
       inline def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
       

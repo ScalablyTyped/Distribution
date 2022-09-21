@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fmodMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(x: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(x: js.Any, y: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(x: Unit, y: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(x: Any): Any = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(x: Any, y: Any): Any = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(x: Unit, y: Any): Any = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/math/fmod", JSImport.Namespace)
   @js.native

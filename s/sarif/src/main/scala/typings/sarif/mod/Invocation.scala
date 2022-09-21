@@ -157,7 +157,7 @@ object Invocation {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
@@ -201,7 +201,7 @@ object Invocation {
     
     inline def setNotificationConfigurationOverridesUndefined: Self = StObject.set(x, "notificationConfigurationOverrides", js.undefined)
     
-    inline def setNotificationConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "notificationConfigurationOverrides", js.Array(value :_*))
+    inline def setNotificationConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "notificationConfigurationOverrides", js.Array(value*))
     
     inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
@@ -219,13 +219,13 @@ object Invocation {
     
     inline def setResponseFilesUndefined: Self = StObject.set(x, "responseFiles", js.undefined)
     
-    inline def setResponseFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "responseFiles", js.Array(value :_*))
+    inline def setResponseFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "responseFiles", js.Array(value*))
     
     inline def setRuleConfigurationOverrides(value: js.Array[ConfigurationOverride]): Self = StObject.set(x, "ruleConfigurationOverrides", value.asInstanceOf[js.Any])
     
     inline def setRuleConfigurationOverridesUndefined: Self = StObject.set(x, "ruleConfigurationOverrides", js.undefined)
     
-    inline def setRuleConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "ruleConfigurationOverrides", js.Array(value :_*))
+    inline def setRuleConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "ruleConfigurationOverrides", js.Array(value*))
     
     inline def setStartTimeUtc(value: String): Self = StObject.set(x, "startTimeUtc", value.asInstanceOf[js.Any])
     
@@ -251,13 +251,13 @@ object Invocation {
     
     inline def setToolConfigurationNotificationsUndefined: Self = StObject.set(x, "toolConfigurationNotifications", js.undefined)
     
-    inline def setToolConfigurationNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolConfigurationNotifications", js.Array(value :_*))
+    inline def setToolConfigurationNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolConfigurationNotifications", js.Array(value*))
     
     inline def setToolExecutionNotifications(value: js.Array[Notification]): Self = StObject.set(x, "toolExecutionNotifications", value.asInstanceOf[js.Any])
     
     inline def setToolExecutionNotificationsUndefined: Self = StObject.set(x, "toolExecutionNotifications", js.undefined)
     
-    inline def setToolExecutionNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolExecutionNotifications", js.Array(value :_*))
+    inline def setToolExecutionNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolExecutionNotifications", js.Array(value*))
     
     inline def setWorkingDirectory(value: ArtifactLocation): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     

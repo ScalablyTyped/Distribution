@@ -62,7 +62,7 @@ object PageImages {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     

@@ -143,6 +143,12 @@ object stripeV3Strings {
   inline def asn_bank: asn_bank = "asn_bank".asInstanceOf[asn_bank]
   
   @js.native
+  sealed trait auBankAccount
+    extends StObject
+       with elementsType
+  inline def auBankAccount: auBankAccount = "auBankAccount".asInstanceOf[auBankAccount]
+  
+  @js.native
   sealed trait authentication_error
     extends StObject
        with ErrorType

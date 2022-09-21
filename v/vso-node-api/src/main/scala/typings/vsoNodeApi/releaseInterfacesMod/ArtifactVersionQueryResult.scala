@@ -19,6 +19,6 @@ object ArtifactVersionQueryResult {
     
     inline def setArtifactVersions(value: js.Array[ArtifactVersion]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
     
-    inline def setArtifactVersionsVarargs(value: ArtifactVersion*): Self = StObject.set(x, "artifactVersions", js.Array(value :_*))
+    inline def setArtifactVersionsVarargs(value: ArtifactVersion*): Self = StObject.set(x, "artifactVersions", js.Array(value*))
   }
 }

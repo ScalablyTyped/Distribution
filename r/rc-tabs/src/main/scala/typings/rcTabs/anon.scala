@@ -13,13 +13,13 @@ import typings.rcTabs.rcTabsStrings.left
 import typings.rcTabs.rcTabsStrings.right
 import typings.rcTabs.rcTabsStrings.top
 import typings.react.mod.CSSProperties
-import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,6 +132,8 @@ object anon {
     
     var extra: js.UndefOr[TabBarExtraContent] = js.native
     
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    
     var id: String = js.native
     
     var locale: js.UndefOr[TabsLocale] = js.native
@@ -142,12 +144,12 @@ object anon {
     
     var moreTransitionName: js.UndefOr[String] = js.native
     
-    def onTabClick(activeKey: Key, e: KeyboardEvent[Element]): Unit = js.native
-    def onTabClick(activeKey: Key, e: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+    def onTabClick(activeKey: String, e: KeyboardEvent[Element]): Unit = js.native
+    def onTabClick(activeKey: String, e: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
     
     var onTabScroll: js.UndefOr[OnTabScroll] = js.native
     
-    var panes: ReactNode = js.native
+    var popupClassName: js.UndefOr[String] = js.native
     
     var renderTabBar: js.UndefOr[RenderTabBar] = js.native
     

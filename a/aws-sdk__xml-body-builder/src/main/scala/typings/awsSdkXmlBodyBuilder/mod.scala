@@ -11,41 +11,41 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @JSImport("@aws-sdk/xml-body-builder", "XmlBodyBuilder")
   @js.native
-  class XmlBodyBuilder protected () extends StObject {
+  open class XmlBodyBuilder protected () extends StObject {
     def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
     
-    /* private */ val base64Encoder: js.Any = js.native
+    /* private */ val base64Encoder: Any = js.native
     
     def build(
-      hasOperationMemberHasPayloadInputMemberName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ js.Any
+      hasOperationMemberHasPayloadInputMemberName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
     ): String = js.native
     
-    /* private */ var formatMap: js.Any = js.native
+    /* private */ var formatMap: Any = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
     
-    /* private */ var serializeBlob: js.Any = js.native
+    /* private */ var serializeBlob: Any = js.native
     
-    /* private */ var serializeFloat: js.Any = js.native
+    /* private */ var serializeFloat: Any = js.native
     
-    /* private */ var serializeInteger: js.Any = js.native
+    /* private */ var serializeInteger: Any = js.native
     
-    /* private */ var serializeList: js.Any = js.native
+    /* private */ var serializeList: Any = js.native
     
-    /* private */ var serializeMap: js.Any = js.native
+    /* private */ var serializeMap: Any = js.native
     
-    /* private */ var serializeScalar: js.Any = js.native
+    /* private */ var serializeScalar: Any = js.native
     
-    /* private */ var serializeString: js.Any = js.native
+    /* private */ var serializeString: Any = js.native
     
-    /* private */ var serializeStructure: js.Any = js.native
+    /* private */ var serializeStructure: Any = js.native
     
-    /* private */ var serializeStructureMember: js.Any = js.native
+    /* private */ var serializeStructureMember: Any = js.native
     
-    /* private */ var serializeTimestamp: js.Any = js.native
+    /* private */ var serializeTimestamp: Any = js.native
     
-    /* private */ var toXml: js.Any = js.native
+    /* private */ var toXml: Any = js.native
     
-    /* private */ val utf8Decoder: js.Any = js.native
+    /* private */ val utf8Decoder: Any = js.native
   }
 }

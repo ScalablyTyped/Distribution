@@ -10,10 +10,10 @@ you give emoji name, we give you an emoji
 | ------------------ | :-------------: |
 | Full name          | get-emoji |
 | Keywords           | emoji |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1249 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 93.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/get-emoji)

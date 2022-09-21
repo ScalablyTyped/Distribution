@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("WidgetText")
 @js.native
-class WidgetText ()
+open class WidgetText ()
   extends StObject
      with typings.scriptableIos.WidgetText {
   
@@ -130,7 +130,7 @@ class WidgetText ()
     * _URL to open._
     *
     * The URL will be opened when the text is tapped. This is only supported in medium and large widgets. Small widgets can only have a single tap target, which is specified by the `url`
-    * property on the widget.
+    * property in the widget configurator.
     * @see https://docs.scriptable.app/widgettext/#url
     */
   /* CompleteClass */

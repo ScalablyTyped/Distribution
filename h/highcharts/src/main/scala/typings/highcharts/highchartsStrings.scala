@@ -10,19 +10,25 @@ import typings.highcharts.mod.ButtonRelativeToValue
 import typings.highcharts.mod.ColorAxisTypeValue
 import typings.highcharts.mod.CursorValue
 import typings.highcharts.mod.DashStyleValue
+import typings.highcharts.mod.DataGroupingAnchor
+import typings.highcharts.mod.DataGroupingAnchorExtremes
 import typings.highcharts.mod.DataGroupingApproximationValue
 import typings.highcharts.mod.DataLabelsOverflowValue
 import typings.highcharts.mod.ExportingMimeTypeValue
 import typings.highcharts.mod.FlagsShapeValue
+import typings.highcharts.mod.MapGeometryTypeValue
 import typings.highcharts.mod.OptionsApproximationValue
 import typings.highcharts.mod.OptionsBoostBlendingValue
+import typings.highcharts.mod.OptionsCompareValue
 import typings.highcharts.mod.OptionsDataClassColorValue
 import typings.highcharts.mod.OptionsDateFormatValue
+import typings.highcharts.mod.OptionsDropdownValue
 import typings.highcharts.mod.OptionsFindNearestPointByValue
 import typings.highcharts.mod.OptionsGapUnitValue
 import typings.highcharts.mod.OptionsGridLineInterpolationValue
 import typings.highcharts.mod.OptionsHeaderShapeValue
 import typings.highcharts.mod.OptionsIntegrationValue
+import typings.highcharts.mod.OptionsKeyValue
 import typings.highcharts.mod.OptionsLandmarkVerbosityValue
 import typings.highcharts.mod.OptionsLayoutAlgorithmValue
 import typings.highcharts.mod.OptionsLayoutStartingDirectionValue
@@ -36,11 +42,13 @@ import typings.highcharts.mod.OptionsOperatorValue
 import typings.highcharts.mod.OptionsOverflowValue
 import typings.highcharts.mod.OptionsPanKeyValue
 import typings.highcharts.mod.OptionsPinchTypeValue
+import typings.highcharts.mod.OptionsPlacementStrategyValue
 import typings.highcharts.mod.OptionsPointIntervalUnitValue
 import typings.highcharts.mod.OptionsPointValKeyValue
 import typings.highcharts.mod.OptionsPosition3dValue
+import typings.highcharts.mod.OptionsRelativeToValue
 import typings.highcharts.mod.OptionsRotationModeValue
-import typings.highcharts.mod.OptionsRotationOriginValue
+import typings.highcharts.mod.OptionsSpiralValue
 import typings.highcharts.mod.OptionsStackingValue
 import typings.highcharts.mod.OptionsStepValue
 import typings.highcharts.mod.OptionsTextAlignValue
@@ -48,8 +56,8 @@ import typings.highcharts.mod.OptionsTickPositionValue
 import typings.highcharts.mod.OptionsTickmarkPlacementValue
 import typings.highcharts.mod.OptionsTypeValue
 import typings.highcharts.mod.OptionsUnitValue
-import typings.highcharts.mod.OptionsZoomKeyValue
-import typings.highcharts.mod.OptionsZoomTypeValue
+import typings.highcharts.mod.OptionsUnitsValue
+import typings.highcharts.mod.OrganizationHangingIndentTranslationValue
 import typings.highcharts.mod.PaneBackgroundShapeValue
 import typings.highcharts.mod.PointStateValue
 import typings.highcharts.mod.RangeSelectorButtonTypeValue
@@ -184,6 +192,12 @@ object highchartsStrings {
   inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
+  sealed trait LineString
+    extends StObject
+       with MapGeometryTypeValue
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
+  
+  @js.native
   sealed trait LongDash
     extends StObject
        with DashStyleValue
@@ -228,6 +242,28 @@ object highchartsStrings {
     extends StObject
        with TimeUnitValue
   inline def Month: Month = "Month".asInstanceOf[Month]
+  
+  @js.native
+  sealed trait MultiLineString
+    extends StObject
+       with MapGeometryTypeValue
+  inline def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  
+  @js.native
+  sealed trait MultiPolygon
+    extends StObject
+       with MapGeometryTypeValue
+  inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  
+  @js.native
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
+  
+  @js.native
+  sealed trait Polygon
+    extends StObject
+       with MapGeometryTypeValue
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
   sealed trait Q
@@ -374,9 +410,15 @@ object highchartsStrings {
   @js.native
   sealed trait alt
     extends StObject
+       with OptionsKeyValue
        with OptionsPanKeyValue
-       with OptionsZoomKeyValue
   inline def alt: alt = "alt".asInstanceOf[alt]
+  
+  @js.native
+  sealed trait always
+    extends StObject
+       with OptionsDropdownValue
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait ao extends StObject
@@ -398,6 +440,16 @@ object highchartsStrings {
        with PaneBackgroundShapeValue
        with SymbolKeyValue
   inline def arc: arc = "arc".asInstanceOf[arc]
+  
+  @js.native
+  sealed trait arcdiagram extends StObject
+  inline def arcdiagram: arcdiagram = "arcdiagram".asInstanceOf[arcdiagram]
+  
+  @js.native
+  sealed trait archimedean
+    extends StObject
+       with OptionsSpiralValue
+  inline def archimedean: archimedean = "archimedean".asInstanceOf[archimedean]
   
   @js.native
   sealed trait area
@@ -570,11 +622,17 @@ object highchartsStrings {
   sealed trait center
     extends StObject
        with AlignValue
-       with OptionsRotationOriginValue
+       with OptionsPlacementStrategyValue
        with OptionsStepValue
        with OptionsTextAlignValue
        with SeriesOptionsType
   inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait centerInCategory
+    extends StObject
+       with SeriesOptionsType
+  inline def centerInCategory: centerInCategory = "centerInCategory".asInstanceOf[centerInCategory]
   
   @js.native
   sealed trait chaikin extends StObject
@@ -623,6 +681,10 @@ object highchartsStrings {
   @js.native
   sealed trait cmf extends StObject
   inline def cmf: cmf = "cmf".asInstanceOf[cmf]
+  
+  @js.native
+  sealed trait cmo extends StObject
+  inline def cmo: cmo = "cmo".asInstanceOf[cmo]
   
   @js.native
   sealed trait `col-resize`
@@ -703,9 +765,21 @@ object highchartsStrings {
   @js.native
   sealed trait ctrl
     extends StObject
+       with OptionsKeyValue
        with OptionsPanKeyValue
-       with OptionsZoomKeyValue
   inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
+  
+  @js.native
+  sealed trait cumulative
+    extends StObject
+       with OrganizationHangingIndentTranslationValue
+  inline def cumulative: cumulative = "cumulative".asInstanceOf[cumulative]
+  
+  @js.native
+  sealed trait curveFactor
+    extends StObject
+       with SeriesOptionsType
+  inline def curveFactor: curveFactor = "curveFactor".asInstanceOf[curveFactor]
   
   @js.native
   sealed trait cylinder extends StObject
@@ -800,6 +874,14 @@ object highchartsStrings {
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
+  sealed trait disparityindex extends StObject
+  inline def disparityindex: disparityindex = "disparityindex".asInstanceOf[disparityindex]
+  
+  @js.native
+  sealed trait dmi extends StObject
+  inline def dmi: dmi = "dmi".asInstanceOf[dmi]
+  
+  @js.native
   sealed trait dpo extends StObject
   inline def dpo: dpo = "dpo".asInstanceOf[dpo]
   
@@ -852,7 +934,8 @@ object highchartsStrings {
   @js.native
   sealed trait end
     extends StObject
-       with OptionsRotationOriginValue
+       with DataGroupingAnchor
+       with DataGroupingAnchorExtremes
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -878,10 +961,6 @@ object highchartsStrings {
   inline def `ew-resize`: `ew-resize` = "ew-resize".asInstanceOf[`ew-resize`]
   
   @js.native
-  sealed trait exportIcon extends StObject
-  inline def exportIcon: exportIcon = "exportIcon".asInstanceOf[exportIcon]
-  
-  @js.native
   sealed trait fastAvoid
     extends StObject
        with _PathfinderTypeValue
@@ -892,6 +971,12 @@ object highchartsStrings {
     extends StObject
        with SeriesOptionsType
   inline def fillColor: fillColor = "fillColor".asInstanceOf[fillColor]
+  
+  @js.native
+  sealed trait firstPoint
+    extends StObject
+       with DataGroupingAnchorExtremes
+  inline def firstPoint: firstPoint = "firstPoint".asInstanceOf[firstPoint]
   
   @js.native
   sealed trait flag
@@ -984,6 +1069,10 @@ object highchartsStrings {
   inline def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   
   @js.native
+  sealed trait heikinashi extends StObject
+  inline def heikinashi: heikinashi = "heikinashi".asInstanceOf[heikinashi]
+  
+  @js.native
   sealed trait help
     extends StObject
        with CursorValue
@@ -1007,6 +1096,14 @@ object highchartsStrings {
   @js.native
   sealed trait histogram extends StObject
   inline def histogram: histogram = "histogram".asInstanceOf[histogram]
+  
+  @js.native
+  sealed trait hlc extends StObject
+  inline def hlc: hlc = "hlc".asInstanceOf[hlc]
+  
+  @js.native
+  sealed trait hollowcandlestick extends StObject
+  inline def hollowcandlestick: hollowcandlestick = "hollowcandlestick".asInstanceOf[hollowcandlestick]
   
   @js.native
   sealed trait horizontal
@@ -1064,6 +1161,12 @@ object highchartsStrings {
   inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
+  sealed trait inherit
+    extends StObject
+       with OrganizationHangingIndentTranslationValue
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @js.native
   sealed trait inside
     extends StObject
        with OptionsMinorTickPositionValue
@@ -1090,10 +1193,20 @@ object highchartsStrings {
   inline def keltnerchannels: keltnerchannels = "keltnerchannels".asInstanceOf[keltnerchannels]
   
   @js.native
+  sealed trait klinger extends StObject
+  inline def klinger: klinger = "klinger".asInstanceOf[klinger]
+  
+  @js.native
   sealed trait l_
     extends StObject
        with SVGPathCommand
   inline def l_ : l_ = "l".asInstanceOf[l_]
+  
+  @js.native
+  sealed trait lastPoint
+    extends StObject
+       with DataGroupingAnchorExtremes
+  inline def lastPoint: lastPoint = "lastPoint".asInstanceOf[lastPoint]
   
   @js.native
   sealed trait left
@@ -1147,6 +1260,18 @@ object highchartsStrings {
   inline def linecap: linecap = "linecap".asInstanceOf[linecap]
   
   @js.native
+  sealed trait linkRadius
+    extends StObject
+       with SeriesOptionsType
+  inline def linkRadius: linkRadius = "linkRadius".asInstanceOf[linkRadius]
+  
+  @js.native
+  sealed trait linkWeight
+    extends StObject
+       with SeriesOptionsType
+  inline def linkWeight: linkWeight = "linkWeight".asInstanceOf[linkWeight]
+  
+  @js.native
   sealed trait logarithmic
     extends StObject
        with AxisTypeValue
@@ -1175,6 +1300,12 @@ object highchartsStrings {
   @js.native
   sealed trait macd extends StObject
   inline def macd: macd = "macd".asInstanceOf[macd]
+  
+  @js.native
+  sealed trait mapBoundingBox
+    extends StObject
+       with OptionsRelativeToValue
+  inline def mapBoundingBox: mapBoundingBox = "mapBoundingBox".asInstanceOf[mapBoundingBox]
   
   @js.native
   sealed trait mapData
@@ -1221,8 +1352,8 @@ object highchartsStrings {
   @js.native
   sealed trait meta
     extends StObject
+       with OptionsKeyValue
        with OptionsPanKeyValue
-       with OptionsZoomKeyValue
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
@@ -1233,6 +1364,8 @@ object highchartsStrings {
   sealed trait middle
     extends StObject
        with AxisTitleAlignValue
+       with DataGroupingAnchor
+       with DataGroupingAnchorExtremes
        with VerticalAlignValue
   inline def middle: middle = "middle".asInstanceOf[middle]
   
@@ -1322,10 +1455,22 @@ object highchartsStrings {
   inline def networkgraph: networkgraph = "networkgraph".asInstanceOf[networkgraph]
   
   @js.native
+  sealed trait never
+    extends StObject
+       with OptionsDropdownValue
+  inline def never: never = "never".asInstanceOf[never]
+  
+  @js.native
   sealed trait `no-drop`
     extends StObject
        with CursorValue
   inline def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
+  
+  @js.native
+  sealed trait nodePadding
+    extends StObject
+       with SeriesOptionsType
+  inline def nodePadding: nodePadding = "nodePadding".asInstanceOf[nodePadding]
   
   @js.native
   sealed trait nodes
@@ -1376,6 +1521,10 @@ object highchartsStrings {
   inline def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
   
   @js.native
+  sealed trait obv extends StObject
+  inline def obv: obv = "obv".asInstanceOf[obv]
+  
+  @js.native
   sealed trait octet extends StObject
   inline def octet: octet = "octet".asInstanceOf[octet]
   
@@ -1383,6 +1532,7 @@ object highchartsStrings {
   sealed trait offset
     extends StObject
        with OptionsPosition3dValue
+       with SeriesOptionsType
   inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
@@ -1406,7 +1556,6 @@ object highchartsStrings {
     extends StObject
        with DataGroupingApproximationValue
        with OptionsOnKeyValue
-       with OptionsPointValKeyValue
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
@@ -1459,7 +1608,9 @@ object highchartsStrings {
   @js.native
   sealed trait percent
     extends StObject
+       with OptionsCompareValue
        with OptionsStackingValue
+       with OptionsUnitsValue
   inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
@@ -1492,12 +1643,14 @@ object highchartsStrings {
   sealed trait pixels
     extends StObject
        with OptionsUnitValue
+       with OptionsUnitsValue
   inline def pixels: pixels = "pixels".asInstanceOf[pixels]
   
   @js.native
   sealed trait plotBox
     extends StObject
        with ButtonRelativeToValue
+       with OptionsRelativeToValue
   inline def plotBox: plotBox = "plotBox".asInstanceOf[plotBox]
   
   @js.native
@@ -1527,10 +1680,10 @@ object highchartsStrings {
   inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
-  sealed trait polygon
+  sealed trait polygon_
     extends StObject
        with OptionsGridLineInterpolationValue
-  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
+  inline def polygon_ : polygon_ = "polygon".asInstanceOf[polygon_]
   
   @js.native
   sealed trait ppo extends StObject
@@ -1577,7 +1730,9 @@ object highchartsStrings {
   inline def radius: radius = "radius".asInstanceOf[radius]
   
   @js.native
-  sealed trait random extends StObject
+  sealed trait random
+    extends StObject
+       with OptionsPlacementStrategyValue
   inline def random: random = "random".asInstanceOf[random]
   
   @js.native
@@ -1593,6 +1748,12 @@ object highchartsStrings {
   inline def rangeSelectorInput: rangeSelectorInput = "rangeSelectorInput".asInstanceOf[rangeSelectorInput]
   
   @js.native
+  sealed trait rectangular
+    extends StObject
+       with OptionsSpiralValue
+  inline def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
+  
+  @js.native
   sealed trait `reingold-fruchterman` extends StObject
   inline def `reingold-fruchterman`: `reingold-fruchterman` = "reingold-fruchterman".asInstanceOf[`reingold-fruchterman`]
   
@@ -1601,6 +1762,12 @@ object highchartsStrings {
     extends StObject
        with OptionsGapUnitValue
   inline def relative: relative = "relative".asInstanceOf[relative]
+  
+  @js.native
+  sealed trait responsive
+    extends StObject
+       with OptionsDropdownValue
+  inline def responsive: responsive = "responsive".asInstanceOf[responsive]
   
   @js.native
   sealed trait rice extends StObject
@@ -1697,9 +1864,15 @@ object highchartsStrings {
   @js.native
   sealed trait shift
     extends StObject
+       with OptionsKeyValue
        with OptionsPanKeyValue
-       with OptionsZoomKeyValue
   inline def shift: shift = "shift".asInstanceOf[shift]
+  
+  @js.native
+  sealed trait shrink
+    extends StObject
+       with OrganizationHangingIndentTranslationValue
+  inline def shrink: shrink = "shrink".asInstanceOf[shrink]
   
   @js.native
   sealed trait simpleConnect
@@ -1752,6 +1925,7 @@ object highchartsStrings {
     extends StObject
        with OptionsHeaderShapeValue
        with OptionsLinecapValue
+       with OptionsSpiralValue
        with SymbolKeyValue
        with TilemapShapeValue
        with TooltipShapeValue
@@ -1783,7 +1957,8 @@ object highchartsStrings {
   @js.native
   sealed trait start
     extends StObject
-       with OptionsRotationOriginValue
+       with DataGroupingAnchor
+       with DataGroupingAnchorExtremes
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
@@ -1877,6 +2052,12 @@ object highchartsStrings {
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
+  sealed trait thickness
+    extends StObject
+       with SeriesOptionsType
+  inline def thickness: thickness = "thickness".asInstanceOf[thickness]
+  
+  @js.native
   sealed trait tilemap extends StObject
   inline def tilemap: tilemap = "tilemap".asInstanceOf[tilemap]
   
@@ -1953,6 +2134,7 @@ object highchartsStrings {
   @js.native
   sealed trait value
     extends StObject
+       with OptionsCompareValue
        with OptionsGapUnitValue
   inline def value: value = "value".asInstanceOf[value]
   
@@ -2061,7 +2243,6 @@ object highchartsStrings {
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
-       with OptionsZoomTypeValue
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
@@ -2085,7 +2266,6 @@ object highchartsStrings {
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
-       with OptionsZoomTypeValue
   inline def xy: xy = "xy".asInstanceOf[xy]
   
   @js.native
@@ -2095,7 +2275,6 @@ object highchartsStrings {
        with OptionsOnKeyValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
-       with OptionsZoomTypeValue
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IRecord extends StObject {
   
   /** Update the specified field with the specified value */
-  def AddFieldValue(fieldKey: String, value: js.Any): Unit
+  def AddFieldValue(fieldKey: String, value: Any): Unit
   
   /** returns raw data value for the specified field */
-  def GetDataValue(fieldKey: String): js.Any
+  def GetDataValue(fieldKey: String): Any
   
   /** returns localized text value for the specified field */
   def GetLocalizedValue(fieldKey: String): String
@@ -42,8 +42,8 @@ trait IRecord extends StObject {
 object IRecord {
   
   inline def apply(
-    AddFieldValue: (String, js.Any) => Unit,
-    GetDataValue: String => js.Any,
+    AddFieldValue: (String, Any) => Unit,
+    GetDataValue: String => Any,
     GetLocalizedValue: String => String,
     GetProp: String => IPropertyBase,
     HasDataValue: String => Boolean,
@@ -60,11 +60,11 @@ object IRecord {
   
   extension [Self <: IRecord](x: Self) {
     
-    inline def setAddFieldValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
+    inline def setAddFieldValue(value: (String, Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
     
     inline def setBIsNewRow(value: Boolean): Self = StObject.set(x, "bIsNewRow", value.asInstanceOf[js.Any])
     
-    inline def setGetDataValue(value: String => js.Any): Self = StObject.set(x, "GetDataValue", js.Any.fromFunction1(value))
+    inline def setGetDataValue(value: String => Any): Self = StObject.set(x, "GetDataValue", js.Any.fromFunction1(value))
     
     inline def setGetLocalizedValue(value: String => String): Self = StObject.set(x, "GetLocalizedValue", js.Any.fromFunction1(value))
     

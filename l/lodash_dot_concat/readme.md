@@ -10,10 +10,10 @@ The lodash method `_.concat` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.concat |
 | Keywords           | lodash-modularized, concat |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 1982263 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 213052.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

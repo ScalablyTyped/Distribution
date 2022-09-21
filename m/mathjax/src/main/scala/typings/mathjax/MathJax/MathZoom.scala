@@ -10,17 +10,17 @@ trait MathZoom extends StObject {
     * extensions/MathZoom.js for details of what are defined by default. See CSS Style Objects for details on how
     * to specify CSS style in a JavaScript object.
     */
-  var styles: js.Any
+  var styles: Any
 }
 object MathZoom {
   
-  inline def apply(styles: js.Any): MathZoom = {
+  inline def apply(styles: Any): MathZoom = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathZoom]
   }
   
   extension [Self <: MathZoom](x: Self) {
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

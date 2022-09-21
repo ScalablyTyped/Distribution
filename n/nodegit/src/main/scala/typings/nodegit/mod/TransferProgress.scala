@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "TransferProgress")
 @js.native
-class TransferProgress ()
+open class TransferProgress ()
   extends typings.nodegit.transferProgressMod.TransferProgress

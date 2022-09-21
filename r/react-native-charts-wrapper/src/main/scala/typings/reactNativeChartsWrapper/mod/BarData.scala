@@ -28,6 +28,6 @@ object BarData {
     
     inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    inline def setDataSetsVarargs(value: BarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: BarDataset*): Self = StObject.set(x, "dataSets", js.Array(value*))
   }
 }

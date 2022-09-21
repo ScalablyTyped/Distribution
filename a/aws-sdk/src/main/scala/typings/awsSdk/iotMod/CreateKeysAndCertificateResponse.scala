@@ -12,7 +12,7 @@ trait CreateKeysAndCertificateResponse extends StObject {
   var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
-    * The ID of the certificate. AWS IoT issues a default subject name for the certificate (for example, AWS IoT Certificate).
+    * The ID of the certificate. IoT issues a default subject name for the certificate (for example, IoT Certificate).
     */
   var certificateId: js.UndefOr[CertificateId] = js.undefined
   

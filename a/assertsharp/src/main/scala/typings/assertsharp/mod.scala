@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("assertsharp", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Assert
   /* static members */
@@ -31,12 +31,12 @@ object mod {
     inline def AreSequenceEqual[T](
       expected: js.Array[T],
       actual: js.Array[T],
-      equals: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean]
+      equals: js.Function2[/* x */ Any, /* y */ Any, Boolean]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AreSequenceEqual")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any], equals.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def AreSequenceEqual[T](
       expected: js.Array[T],
       actual: js.Array[T],
-      equals: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean],
+      equals: js.Function2[/* x */ Any, /* y */ Any, Boolean],
       message: String
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AreSequenceEqual")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any], equals.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def AreSequenceEqual[T](expected: js.Array[T], actual: js.Array[T], equals: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AreSequenceEqual")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any], equals.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -47,17 +47,17 @@ object mod {
     inline def IsFalse(actual: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFalse")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def IsFalse(actual: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsFalse")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def IsInstanceOfType(actual: js.Any, expectedType: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInstanceOfType")(actual.asInstanceOf[js.Any], expectedType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def IsInstanceOfType(actual: js.Any, expectedType: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInstanceOfType")(actual.asInstanceOf[js.Any], expectedType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsInstanceOfType(actual: Any, expectedType: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInstanceOfType")(actual.asInstanceOf[js.Any], expectedType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsInstanceOfType(actual: Any, expectedType: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInstanceOfType")(actual.asInstanceOf[js.Any], expectedType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def IsNotInstanceOfType(actual: js.Any, wrongType: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotInstanceOfType")(actual.asInstanceOf[js.Any], wrongType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def IsNotInstanceOfType(actual: js.Any, wrongType: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotInstanceOfType")(actual.asInstanceOf[js.Any], wrongType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsNotInstanceOfType(actual: Any, wrongType: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotInstanceOfType")(actual.asInstanceOf[js.Any], wrongType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsNotInstanceOfType(actual: Any, wrongType: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotInstanceOfType")(actual.asInstanceOf[js.Any], wrongType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def IsNotNull(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def IsNotNull(actual: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotNull")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsNotNull(actual: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def IsNotNull(actual: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotNull")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def IsNull(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def IsNull(actual: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def IsNull(actual: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def IsNull(actual: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def IsTrue(actual: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTrue")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def IsTrue(actual: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IsTrue")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]

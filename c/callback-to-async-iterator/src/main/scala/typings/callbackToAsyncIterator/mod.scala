@@ -1,7 +1,6 @@
 package typings.callbackToAsyncIterator
 
-import typings.std.AsyncIterator
-import typings.std.Error
+import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T, R](listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]]): AsyncIterator[T, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T, js.Any, Unit]]
+  inline def default[T, R](listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]]): AsyncIterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any]).asInstanceOf[AsyncIterableIterator[T]]
   inline def default[T, R](
     listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]],
     options: AsyncifyOptions[T, R]
-  ): AsyncIterator[T, js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[T, js.Any, Unit]]
+  ): AsyncIterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[T]]
   
   trait AsyncifyOptions[T, R] extends StObject {
     
@@ -24,7 +23,7 @@ object mod {
     
     var onClose: js.UndefOr[js.Function1[/* arg */ R, Unit | T]] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Error]] = js.undefined
+    var onError: js.UndefOr[js.Function0[js.Error]] = js.undefined
   }
   object AsyncifyOptions {
     
@@ -43,7 +42,7 @@ object mod {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnError(value: () => Error): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => js.Error): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     }

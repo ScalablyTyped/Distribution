@@ -16,7 +16,7 @@ trait WebViewProperties
     */
   var html: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[js.Any] = js.undefined
+  var message: js.UndefOr[Any] = js.undefined
   
   /**
     * Content settings for the webview.
@@ -36,7 +36,7 @@ object WebViewProperties {
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     

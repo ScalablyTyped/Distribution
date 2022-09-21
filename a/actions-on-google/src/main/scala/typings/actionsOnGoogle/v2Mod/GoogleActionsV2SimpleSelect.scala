@@ -24,6 +24,6 @@ object GoogleActionsV2SimpleSelect {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: GoogleActionsV2SimpleSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleActionsV2SimpleSelectItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.UtilObject")
 @js.native
-/* private */ class UtilObject ()
+/* private */ open class UtilObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.UtilObject {
   

@@ -10,10 +10,10 @@ Gracefully cleanup when termination signals are sent to your process.
 | ------------------ | :-------------: |
 | Full name          | death |
 | Keywords           | sigint, sigterm, sigkill, sigquit, exception, kill, terminate, process, clean |
-| # releases         | 0 |
-| # dependents       | 162 |
-| # downloads        | 2877214 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 400986.3333333333 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/node-death#readme)

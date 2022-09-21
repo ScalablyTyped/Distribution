@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SitemapsResource extends StObject {
   
-  /** Deletes a sitemap from this site. */
+  /** Deletes a sitemap from the Sitemaps report. Does not stop Google from crawling this sitemap or the URLs that were previously crawled in the deleted sitemap. */
   def delete(): Request[Unit] = js.native
   def delete(request: Callback): Request[Unit] = js.native
   

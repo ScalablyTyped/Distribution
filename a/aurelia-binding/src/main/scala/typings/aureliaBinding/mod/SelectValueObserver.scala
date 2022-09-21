@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "SelectValueObserver")
 @js.native
-class SelectValueObserver protected ()
+open class SelectValueObserver protected ()
   extends StObject
      with InternalPropertyObserver {
   def this(element: Element, handler: EventSubscriber, observerLocator: ObserverLocator) = this()
@@ -15,5 +15,5 @@ class SelectValueObserver protected ()
   /**
     * Handle underlying checkbox element change events
     */
-  def handleEvent(): js.Any = js.native
+  def handleEvent(): Any = js.native
 }

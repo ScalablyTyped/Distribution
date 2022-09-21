@@ -10,10 +10,10 @@ React component for messenger checkbox plugin
 | ------------------ | :-------------: |
 | Full name          | react-messenger-checkbox |
 | Keywords           | bot, chat, checkbox, component, facebook, messenger, react |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3635 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1666.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-messenger-checkbox)

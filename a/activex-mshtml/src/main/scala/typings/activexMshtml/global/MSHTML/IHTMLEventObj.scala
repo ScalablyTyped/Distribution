@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLEventObj")
 @js.native
-/* private */ class IHTMLEventObj ()
+/* private */ open class IHTMLEventObj ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLEventObj {
   
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val reason: Double = js.native
   
   /* CompleteClass */
-  var returnValue: js.Any = js.native
+  var returnValue: Any = js.native
   
   /* CompleteClass */
   override val screenX: Double = js.native
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val srcElement: typings.activexMshtml.MSHTML.IHTMLElement = js.native
   
   /* CompleteClass */
-  override val srcFilter: js.Any = js.native
+  override val srcFilter: Any = js.native
   
   /* CompleteClass */
   override val toElement: typings.activexMshtml.MSHTML.IHTMLElement = js.native

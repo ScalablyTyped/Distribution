@@ -8,5 +8,5 @@ object Event {
   
   @JSImport("vscode-languageclient", "Event.None")
   @js.native
-  val None: typings.vscodeJsonrpc.eventsMod.Event[js.Any] = js.native
+  val None: typings.vscodeJsonrpc.eventsMod.Event[Any] = js.native
 }

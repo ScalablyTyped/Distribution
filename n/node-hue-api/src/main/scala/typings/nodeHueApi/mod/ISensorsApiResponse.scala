@@ -19,6 +19,6 @@ object ISensorsApiResponse {
     
     inline def setSensors(value: js.Array[ISensor]): Self = StObject.set(x, "sensors", value.asInstanceOf[js.Any])
     
-    inline def setSensorsVarargs(value: ISensor*): Self = StObject.set(x, "sensors", js.Array(value :_*))
+    inline def setSensorsVarargs(value: ISensor*): Self = StObject.set(x, "sensors", js.Array(value*))
   }
 }

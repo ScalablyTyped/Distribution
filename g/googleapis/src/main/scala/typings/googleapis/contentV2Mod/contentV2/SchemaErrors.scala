@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of errors returned by a failed batch entry.
-  */
 trait SchemaErrors extends StObject {
   
   /**
-    * The HTTP status of the first error in errors.
+    * The HTTP status of the first error in `errors`.
     */
-  var code: js.UndefOr[Double] = js.undefined
+  var code: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A list of errors.
@@ -20,9 +17,9 @@ trait SchemaErrors extends StObject {
   var errors: js.UndefOr[js.Array[SchemaError]] = js.undefined
   
   /**
-    * The message of the first error in errors.
+    * The message of the first error in `errors`.
     */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaErrors {
   
@@ -35,15 +32,19 @@ object SchemaErrors {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
+    
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setErrors(value: js.Array[SchemaError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }

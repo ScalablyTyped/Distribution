@@ -7,12 +7,12 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.scriptFailedToParse
 import typings.devtoolsProtocol.devtoolsProtocolStrings.scriptParsed
 import typings.devtoolsProtocol.mod.Protocol.Debugger.BreakpointResolvedEvent
 import typings.devtoolsProtocol.mod.Protocol.Debugger.ContinueToLocationRequest
+import typings.devtoolsProtocol.mod.Protocol.Debugger.DisassembleWasmModuleRequest
+import typings.devtoolsProtocol.mod.Protocol.Debugger.DisassembleWasmModuleResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EnableResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EvaluateOnCallFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EvaluateOnCallFrameResponse
-import typings.devtoolsProtocol.mod.Protocol.Debugger.ExecuteWasmEvaluatorRequest
-import typings.devtoolsProtocol.mod.Protocol.Debugger.ExecuteWasmEvaluatorResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetPossibleBreakpointsRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetPossibleBreakpointsResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetScriptSourceRequest
@@ -21,6 +21,8 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.GetStackTraceRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetStackTraceResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetWasmBytecodeRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetWasmBytecodeResponse
+import typings.devtoolsProtocol.mod.Protocol.Debugger.NextWasmDisassemblyChunkRequest
+import typings.devtoolsProtocol.mod.Protocol.Debugger.NextWasmDisassemblyChunkResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.PauseOnAsyncCallRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.PausedEvent
 import typings.devtoolsProtocol.mod.Protocol.Debugger.RemoveBreakpointRequest
@@ -68,6 +70,8 @@ trait DebuggerApi extends StObject {
     */
   def disable(): js.Promise[Unit] = js.native
   
+  def disassembleWasmModule(params: DisassembleWasmModuleRequest): js.Promise[DisassembleWasmModuleResponse] = js.native
+  
   /**
     * Enables debugger for the given page. Clients should not assume that the debugging has been
     * enabled until the result for this command is received.
@@ -78,11 +82,6 @@ trait DebuggerApi extends StObject {
     * Evaluates expression on a given call frame.
     */
   def evaluateOnCallFrame(params: EvaluateOnCallFrameRequest): js.Promise[EvaluateOnCallFrameResponse] = js.native
-  
-  /**
-    * Execute a Wasm Evaluator module on a given call frame.
-    */
-  def executeWasmEvaluator(params: ExecuteWasmEvaluatorRequest): js.Promise[ExecuteWasmEvaluatorResponse] = js.native
   
   /**
     * Returns possible locations for breakpoint. scriptId in start and end range locations should be
@@ -104,6 +103,14 @@ trait DebuggerApi extends StObject {
     * This command is deprecated. Use getScriptSource instead.
     */
   def getWasmBytecode(params: GetWasmBytecodeRequest): js.Promise[GetWasmBytecodeResponse] = js.native
+  
+  /**
+    * Disassemble the next chunk of lines for the module corresponding to the
+    * stream. If disassembly is complete, this API will invalidate the streamId
+    * and return an empty chunk. Any subsequent calls for the now invalid stream
+    * will return errors.
+    */
+  def nextWasmDisassemblyChunk(params: NextWasmDisassemblyChunkRequest): js.Promise[NextWasmDisassemblyChunkResponse] = js.native
   
   /**
     * Fired when breakpoint is resolved to an actual script and location.
@@ -145,7 +152,19 @@ trait DebuggerApi extends StObject {
   def removeBreakpoint(params: RemoveBreakpointRequest): js.Promise[Unit] = js.native
   
   /**
-    * Restarts particular call frame from the beginning.
+    * Restarts particular call frame from the beginning. The old, deprecated
+    * behavior of `restartFrame` is to stay paused and allow further CDP commands
+    * after a restart was scheduled. This can cause problems with restarting, so
+    * we now continue execution immediatly after it has been scheduled until we
+    * reach the beginning of the restarted frame.
+    * 
+    * To stay back-wards compatible, `restartFrame` now expects a `mode`
+    * parameter to be present. If the `mode` parameter is missing, `restartFrame`
+    * errors out.
+    * 
+    * The various return values are deprecated and `callFrames` is always empty.
+    * Use the call frames from the `Debugger#paused` events instead, that fires
+    * once V8 pauses at the beginning of the restarted function.
     */
   def restartFrame(params: RestartFrameRequest): js.Promise[RestartFrameResponse] = js.native
   
@@ -222,6 +241,12 @@ trait DebuggerApi extends StObject {
   
   /**
     * Edits JavaScript source live.
+    * 
+    * In general, functions that are currently on the stack can not be edited with
+    * a single exception: If the edited function is the top-most stack frame and
+    * that is the only activation of that function on the stack. In this case
+    * the live edit will be successful and a `Debugger.restartFrame` for the
+    * top-most function is automatically triggered.
     */
   def setScriptSource(params: SetScriptSourceRequest): js.Promise[SetScriptSourceResponse] = js.native
   

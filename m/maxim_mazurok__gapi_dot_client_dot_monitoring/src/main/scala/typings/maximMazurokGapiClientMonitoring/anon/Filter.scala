@@ -23,36 +23,34 @@ trait Filter extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional list filter (https://cloud.google.com/monitoring/api/learn_more#filtering) describing the members to be returned. The filter may reference the type, labels, and
-    * metadata of monitored resources that comprise the group. For example, to return only resources representing Compute Engine VM instances, use this filter: `resource.type =
-    * "gce_instance"`
+    * If provided, this field specifies the criteria that must be met by notification channels to be included in the response.For more details, see sorting and filtering
+    * (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
     */
   var filter: js.UndefOr[String] = js.undefined
-  
-  /** Required. The end of the time interval. */
-  @JSName("interval.endTime")
-  var intervalDotendTime: js.UndefOr[String] = js.undefined
-  
-  /** Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time. */
-  @JSName("interval.startTime")
-  var intervalDotstartTime: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The group whose members are listed. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID] */
+  /**
+    * Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the
+    * container in which to look for the notification channels; it does not name a specific channel. To query a specific channel by REST resource name, use the GetNotificationChannel
+    * operation.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** A positive number that is the maximum number of results to return. */
+  /**
+    * A comma-separated list of fields by which to sort the result. Supports the same set of fields as in filter. Entries can be prefixed with a minus sign to sort in descending
+    * rather than ascending order.For more details, see sorting and filtering (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
+    */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /** The maximum number of results to return in a single response. If not set to a positive number, a reasonable value will be chosen by the service. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /**
-    * If this field is not empty then it must contain the next_page_token value returned by a previous call to this method. Using this field causes the method to return additional
-    * results from the previous method call.
-    */
+  /** If non-empty, page_token must contain a value returned as the next_page_token in a previous response to request the next set of results. */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
@@ -100,14 +98,6 @@ object Filter {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setIntervalDotendTime(value: String): Self = StObject.set(x, "interval.endTime", value.asInstanceOf[js.Any])
-    
-    inline def setIntervalDotendTimeUndefined: Self = StObject.set(x, "interval.endTime", js.undefined)
-    
-    inline def setIntervalDotstartTime(value: String): Self = StObject.set(x, "interval.startTime", value.asInstanceOf[js.Any])
-    
-    inline def setIntervalDotstartTimeUndefined: Self = StObject.set(x, "interval.startTime", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -117,6 +107,10 @@ object Filter {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait TProjectionNode
     * retrieved using LView.node).
     */
   @JSName("parent")
-  var parent_TProjectionNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
+  var parent_TProjectionNode: TElementNode | TElementContainerNode | Null
   
   /** Index of the projection node. (See TNode.projection for more info.) */
   @JSName("projection")
@@ -58,7 +58,7 @@ object TProjectionNode {
     
     inline def setChild(value: Null): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TElementNode | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     

@@ -15,5 +15,5 @@ object asyncMod {
   
   inline def read(path: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type AsyncCallback = js.Function2[/* err */ ErrnoException, /* stats */ Stats, Unit]
+  type AsyncCallback = js.Function2[/* error */ ErrnoException, /* stats */ Stats, Unit]
 }

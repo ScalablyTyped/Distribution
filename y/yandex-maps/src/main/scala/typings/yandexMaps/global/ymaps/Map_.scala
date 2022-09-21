@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Map")
 @js.native
-class Map_ protected ()
+open class Map_ protected ()
   extends typings.yandexMaps.mod.Map_ {
   def this(parentElement: String, state: IMapState) = this()
   def this(parentElement: HTMLElement, state: IMapState) = this()

@@ -11,9 +11,9 @@ URI Templates (RFC6570) including de-substitution
 | Full name          | uri-templates |
 | Keywords           | rfc6570, uri, template |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 2265089 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 564891.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/geraintluff/uri-templates#readme)

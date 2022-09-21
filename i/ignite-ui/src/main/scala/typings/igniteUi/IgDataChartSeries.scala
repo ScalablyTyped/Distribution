@@ -10,7 +10,7 @@ trait IgDataChartSeries
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets the effective angle axis for the current series object.
@@ -30,7 +30,7 @@ trait IgDataChartSeries
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the axis annotation.
     */
-  var axisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var axisAnnoationFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the axis annotation backing. Leave unset for an automatic value.
@@ -106,12 +106,12 @@ trait IgDataChartSeries
   /**
     * Sets or gets a function which lets you modify or provide the content for an automatically created callout.
     */
-  var calloutContentUpdating: js.UndefOr[js.Any] = js.undefined
+  var calloutContentUpdating: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets or gets a function which lets you modify or provide the label for an automatically created callout.
     */
-  var calloutLabelUpdating: js.UndefOr[js.Any] = js.undefined
+  var calloutLabelUpdating: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the leader lines for the callouts of the layer are painted.
@@ -151,7 +151,7 @@ trait IgDataChartSeries
   /**
     * Sets or gets a function which lets you modify or provide the associated series for a data source provided callout.
     */
-  var calloutSeriesSelecting: js.UndefOr[js.Any] = js.undefined
+  var calloutSeriesSelecting: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the callout backing. Leave unset for an automatic value.
@@ -179,7 +179,7 @@ trait IgDataChartSeries
     * Should be specified before setting any member paths, if being used. Setting it later
     * will not cause data to be reimported into the chart.
     */
-  var coercionMethods: js.UndefOr[js.Any] = js.undefined
+  var coercionMethods: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets value that is used to determine positioning logic for data items which have been consolidated into a single visual element.
@@ -202,12 +202,12 @@ trait IgDataChartSeries
     * Sets the position a cursor position to use instead of the current mouse cursor position for displaying the annotations in this layer.
     * Should be an object with an x and a y property in world coordinates (ranging from 0 to 1)
     */
-  var cursorPosition: js.UndefOr[js.Any] = js.undefined
+  var cursorPosition: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -225,7 +225,7 @@ trait IgDataChartSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var discreteLegendItemTemplate: js.UndefOr[js.Any] = js.undefined
+  var discreteLegendItemTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the display for the current FinancialIndicator object.
@@ -249,7 +249,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the brush scale for the marker brush.
     */
-  var fillScale: js.UndefOr[js.Any] = js.undefined
+  var fillScale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the y axis annotation backing. Leave unset for an automatic value.
@@ -270,7 +270,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the maximum heat color for the density scale.
     */
-  var heatMaximumColor: js.UndefOr[js.Any] = js.undefined
+  var heatMaximumColor: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the density value that maps to the minimum heat color.
@@ -280,7 +280,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the minimum heat color for the density scale.
     */
-  var heatMinimumColor: js.UndefOr[js.Any] = js.undefined
+  var heatMinimumColor: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the value mapping property for the current series object.
@@ -406,7 +406,7 @@ trait IgDataChartSeries
     * isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemBadgeTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemTemplate property.
@@ -414,7 +414,7 @@ trait IgDataChartSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var legendItemTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the legend item visibility for the current series object.
@@ -461,7 +461,7 @@ trait IgDataChartSeries
     * Gets or sets the MarkerTemplate for the current series object.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var markerTemplate: js.UndefOr[js.Any] = js.undefined
+  var markerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the marker type for the current series object. If the MarkerTemplate property is set, the setting of the MarkerType property will be ignored.
@@ -545,7 +545,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the radius size scale for the bubbles.
     */
-  var radiusScale: js.UndefOr[js.Any] = js.undefined
+  var radiusScale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the x-radius of the ellipse that is used to round the corners of the column.
@@ -580,7 +580,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the series for stacked charts. It should contain array of series objects. Each item in array should represent a series with  and it may have most options supported by top-level series object, such as xAxis, yAxis, valueMemberPath, etc.
     */
-  var series: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var series: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets or sets the blur amount to use for the drop shadow.
@@ -590,7 +590,7 @@ trait IgDataChartSeries
   /**
     * Gets or sets the color to use for the drop shadow.
     */
-  var shadowColor: js.UndefOr[js.Any] = js.undefined
+  var shadowColor: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the x offset amount to use for the drop shadow.
@@ -674,7 +674,7 @@ trait IgDataChartSeries
   /**
     * Provides an easing function to use for the transitions. This should either be a well known name of an easing function (The only currently supported name is cubic), or it should be a function that takes a number and returns the output with the function applied.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var transitionEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the duration of the current series's transition in morph in milliseconds.
@@ -941,7 +941,7 @@ trait IgDataChartSeries
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the x axis annotation.
     */
-  var xAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisAnnoationFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the x axis annotation backing. Leave unset for an automatic value.
@@ -1001,7 +1001,7 @@ trait IgDataChartSeries
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the y axis annotation.
     */
-  var yAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisAnnoationFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the y axis annotation backing. Leave unset for an automatic value.
@@ -1074,7 +1074,7 @@ object IgDataChartSeries {
     
     inline def setAreaFillOpacityUndefined: Self = StObject.set(x, "areaFillOpacity", js.undefined)
     
-    inline def setAxisAnnoationFormatLabel(value: js.Any): Self = StObject.set(x, "axisAnnoationFormatLabel", value.asInstanceOf[js.Any])
+    inline def setAxisAnnoationFormatLabel(value: Any): Self = StObject.set(x, "axisAnnoationFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setAxisAnnoationFormatLabelUndefined: Self = StObject.set(x, "axisAnnoationFormatLabel", js.undefined)
     
@@ -1130,11 +1130,11 @@ object IgDataChartSeries {
     
     inline def setCalloutCollisionModeUndefined: Self = StObject.set(x, "calloutCollisionMode", js.undefined)
     
-    inline def setCalloutContentUpdating(value: js.Any): Self = StObject.set(x, "calloutContentUpdating", value.asInstanceOf[js.Any])
+    inline def setCalloutContentUpdating(value: Any): Self = StObject.set(x, "calloutContentUpdating", value.asInstanceOf[js.Any])
     
     inline def setCalloutContentUpdatingUndefined: Self = StObject.set(x, "calloutContentUpdating", js.undefined)
     
-    inline def setCalloutLabelUpdating(value: js.Any): Self = StObject.set(x, "calloutLabelUpdating", value.asInstanceOf[js.Any])
+    inline def setCalloutLabelUpdating(value: Any): Self = StObject.set(x, "calloutLabelUpdating", value.asInstanceOf[js.Any])
     
     inline def setCalloutLabelUpdatingUndefined: Self = StObject.set(x, "calloutLabelUpdating", js.undefined)
     
@@ -1166,7 +1166,7 @@ object IgDataChartSeries {
     
     inline def setCalloutPositionPaddingUndefined: Self = StObject.set(x, "calloutPositionPadding", js.undefined)
     
-    inline def setCalloutSeriesSelecting(value: js.Any): Self = StObject.set(x, "calloutSeriesSelecting", value.asInstanceOf[js.Any])
+    inline def setCalloutSeriesSelecting(value: Any): Self = StObject.set(x, "calloutSeriesSelecting", value.asInstanceOf[js.Any])
     
     inline def setCalloutSeriesSelectingUndefined: Self = StObject.set(x, "calloutSeriesSelecting", js.undefined)
     
@@ -1186,7 +1186,7 @@ object IgDataChartSeries {
     
     inline def setCloseMemberPathUndefined: Self = StObject.set(x, "closeMemberPath", js.undefined)
     
-    inline def setCoercionMethods(value: js.Any): Self = StObject.set(x, "coercionMethods", value.asInstanceOf[js.Any])
+    inline def setCoercionMethods(value: Any): Self = StObject.set(x, "coercionMethods", value.asInstanceOf[js.Any])
     
     inline def setCoercionMethodsUndefined: Self = StObject.set(x, "coercionMethods", js.undefined)
     
@@ -1198,11 +1198,11 @@ object IgDataChartSeries {
     
     inline def setContentMemberPathUndefined: Self = StObject.set(x, "contentMemberPath", js.undefined)
     
-    inline def setCursorPosition(value: js.Any): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
+    inline def setCursorPosition(value: Any): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
     
     inline def setCursorPositionUndefined: Self = StObject.set(x, "cursorPosition", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -1214,7 +1214,7 @@ object IgDataChartSeries {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setDiscreteLegendItemTemplate(value: js.Any): Self = StObject.set(x, "discreteLegendItemTemplate", value.asInstanceOf[js.Any])
+    inline def setDiscreteLegendItemTemplate(value: Any): Self = StObject.set(x, "discreteLegendItemTemplate", value.asInstanceOf[js.Any])
     
     inline def setDiscreteLegendItemTemplateUndefined: Self = StObject.set(x, "discreteLegendItemTemplate", js.undefined)
     
@@ -1230,7 +1230,7 @@ object IgDataChartSeries {
     
     inline def setFillMemberPathUndefined: Self = StObject.set(x, "fillMemberPath", js.undefined)
     
-    inline def setFillScale(value: js.Any): Self = StObject.set(x, "fillScale", value.asInstanceOf[js.Any])
+    inline def setFillScale(value: Any): Self = StObject.set(x, "fillScale", value.asInstanceOf[js.Any])
     
     inline def setFillScaleUndefined: Self = StObject.set(x, "fillScale", js.undefined)
     
@@ -1240,7 +1240,7 @@ object IgDataChartSeries {
     
     inline def setHeatMaximum(value: Double): Self = StObject.set(x, "heatMaximum", value.asInstanceOf[js.Any])
     
-    inline def setHeatMaximumColor(value: js.Any): Self = StObject.set(x, "heatMaximumColor", value.asInstanceOf[js.Any])
+    inline def setHeatMaximumColor(value: Any): Self = StObject.set(x, "heatMaximumColor", value.asInstanceOf[js.Any])
     
     inline def setHeatMaximumColorUndefined: Self = StObject.set(x, "heatMaximumColor", js.undefined)
     
@@ -1248,7 +1248,7 @@ object IgDataChartSeries {
     
     inline def setHeatMinimum(value: Double): Self = StObject.set(x, "heatMinimum", value.asInstanceOf[js.Any])
     
-    inline def setHeatMinimumColor(value: js.Any): Self = StObject.set(x, "heatMinimumColor", value.asInstanceOf[js.Any])
+    inline def setHeatMinimumColor(value: Any): Self = StObject.set(x, "heatMinimumColor", value.asInstanceOf[js.Any])
     
     inline def setHeatMinimumColorUndefined: Self = StObject.set(x, "heatMinimumColor", js.undefined)
     
@@ -1320,11 +1320,11 @@ object IgDataChartSeries {
     
     inline def setLegend(value: IgDataChartSeriesLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    inline def setLegendItemBadgeTemplate(value: js.Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemBadgeTemplate(value: Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemBadgeTemplateUndefined: Self = StObject.set(x, "legendItemBadgeTemplate", js.undefined)
     
-    inline def setLegendItemTemplate(value: js.Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemTemplate(value: Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemTemplateUndefined: Self = StObject.set(x, "legendItemTemplate", js.undefined)
     
@@ -1354,7 +1354,7 @@ object IgDataChartSeries {
     
     inline def setMarkerOutlineUndefined: Self = StObject.set(x, "markerOutline", js.undefined)
     
-    inline def setMarkerTemplate(value: js.Any): Self = StObject.set(x, "markerTemplate", value.asInstanceOf[js.Any])
+    inline def setMarkerTemplate(value: Any): Self = StObject.set(x, "markerTemplate", value.asInstanceOf[js.Any])
     
     inline def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
     
@@ -1404,7 +1404,7 @@ object IgDataChartSeries {
     
     inline def setRadiusMemberPathUndefined: Self = StObject.set(x, "radiusMemberPath", js.undefined)
     
-    inline def setRadiusScale(value: js.Any): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
+    inline def setRadiusScale(value: Any): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
     
     inline def setRadiusScaleUndefined: Self = StObject.set(x, "radiusScale", js.undefined)
     
@@ -1434,17 +1434,17 @@ object IgDataChartSeries {
     
     inline def setReverseLegendOrderUndefined: Self = StObject.set(x, "reverseLegendOrder", js.undefined)
     
-    inline def setSeries(value: js.Array[js.Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: js.Any*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: Any*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
-    inline def setShadowColor(value: js.Any): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Any): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
@@ -1500,7 +1500,7 @@ object IgDataChartSeries {
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionEasingFunction(value: js.Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
+    inline def setTransitionEasingFunction(value: Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setTransitionEasingFunctionUndefined: Self = StObject.set(x, "transitionEasingFunction", js.undefined)
     
@@ -1598,7 +1598,7 @@ object IgDataChartSeries {
     
     inline def setXAxis(value: String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    inline def setXAxisAnnoationFormatLabel(value: js.Any): Self = StObject.set(x, "xAxisAnnoationFormatLabel", value.asInstanceOf[js.Any])
+    inline def setXAxisAnnoationFormatLabel(value: Any): Self = StObject.set(x, "xAxisAnnoationFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setXAxisAnnoationFormatLabelUndefined: Self = StObject.set(x, "xAxisAnnoationFormatLabel", js.undefined)
     
@@ -1646,7 +1646,7 @@ object IgDataChartSeries {
     
     inline def setYAxis(value: String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    inline def setYAxisAnnoationFormatLabel(value: js.Any): Self = StObject.set(x, "yAxisAnnoationFormatLabel", value.asInstanceOf[js.Any])
+    inline def setYAxisAnnoationFormatLabel(value: Any): Self = StObject.set(x, "yAxisAnnoationFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setYAxisAnnoationFormatLabelUndefined: Self = StObject.set(x, "yAxisAnnoationFormatLabel", js.undefined)
     

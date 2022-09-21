@@ -14,7 +14,7 @@ trait BootstrapFormLayoutItem extends StObject {
   
   def getVisible(): Boolean
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val name: String
   
@@ -30,7 +30,7 @@ object BootstrapFormLayoutItem {
     getCaption: () => String,
     getItemByName: String => BootstrapFormLayoutItem | Null,
     getVisible: () => Boolean,
-    instance: js.Any,
+    instance: Any,
     name: String,
     setCaption: String => Unit,
     setVisible: Boolean => Unit
@@ -51,7 +51,7 @@ object BootstrapFormLayoutItem {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

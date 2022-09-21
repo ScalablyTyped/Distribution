@@ -23,6 +23,6 @@ object PhononDetail {
     
     inline def setReq(value: js.Array[String]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    inline def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value :_*))
+    inline def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SuggestionsHeaderFooterItem")
 @js.native
-class SuggestionsHeaderFooterItem protected ()
+open class SuggestionsHeaderFooterItem protected ()
   extends typings.officeUiFabricReact.mod.SuggestionsHeaderFooterItem {
   def this(props: ISuggestionsHeaderFooterItemProps) = this()
 }

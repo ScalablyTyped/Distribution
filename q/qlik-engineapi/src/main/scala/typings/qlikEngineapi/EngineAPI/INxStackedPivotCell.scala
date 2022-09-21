@@ -137,7 +137,7 @@ object INxStackedPivotCell {
     
     inline def setQSubNodes(value: js.Array[INxStackedPivotCell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
     
-    inline def setQSubNodesVarargs(value: INxStackedPivotCell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
+    inline def setQSubNodesVarargs(value: INxStackedPivotCell*): Self = StObject.set(x, "qSubNodes", js.Array(value*))
     
     inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     

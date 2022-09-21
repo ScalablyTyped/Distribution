@@ -9,15 +9,15 @@ trait Id extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var onAttach: js.UndefOr[js.Function1[/* worker */ SidebarWorker, js.Any]] = js.undefined
+  var onAttach: js.UndefOr[js.Function1[/* worker */ SidebarWorker, Any]] = js.undefined
   
-  var onDetach: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onDetach: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onHide: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var onReady: js.UndefOr[js.Function1[/* worker */ SidebarWorker, js.Any]] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* worker */ SidebarWorker, Any]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var title: String
   
@@ -36,23 +36,23 @@ object Id {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setOnAttach(value: /* worker */ SidebarWorker => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
+    inline def setOnAttach(value: /* worker */ SidebarWorker => Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
     inline def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
-    inline def setOnDetach(value: () => js.Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction0(value))
+    inline def setOnDetach(value: () => Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction0(value))
     
     inline def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
     
-    inline def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnReady(value: /* worker */ SidebarWorker => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+    inline def setOnReady(value: /* worker */ SidebarWorker => Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    inline def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     

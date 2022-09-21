@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video segment level annotation results for label detection.
-  */
 trait SchemaGoogleCloudVideointelligenceV1beta2LabelSegment extends StObject {
   
   /**
     * Confidence that the label is accurate. Range: [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.undefined
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Video segment where a label was detected.
@@ -29,6 +26,8 @@ object SchemaGoogleCloudVideointelligenceV1beta2LabelSegment {
   extension [Self <: SchemaGoogleCloudVideointelligenceV1beta2LabelSegment](x: Self) {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
     
     inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     

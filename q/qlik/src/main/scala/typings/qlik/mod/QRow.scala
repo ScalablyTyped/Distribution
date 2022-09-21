@@ -27,14 +27,14 @@ object QRow {
     
     inline def setCells(value: js.Array[QDimensionCell | QMeasureCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: (QDimensionCell | QMeasureCell)*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: (QDimensionCell | QMeasureCell)*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setDimensions(value: js.Array[QDimensionCell]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    inline def setDimensionsVarargs(value: QDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: QDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setMeasures(value: js.Array[QMeasureCell]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
-    inline def setMeasuresVarargs(value: QMeasureCell*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: QMeasureCell*): Self = StObject.set(x, "measures", js.Array(value*))
   }
 }

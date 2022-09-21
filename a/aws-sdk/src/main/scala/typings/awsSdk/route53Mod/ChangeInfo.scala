@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeInfo extends StObject {
   
   /**
-    * A complex type that describes change information about changes made to your hosted zone. This element contains an ID that you use when performing a GetChange action to get detailed information about the change.
+    * A comment you can provide.
     */
   var Comment: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * The ID of the request.
+    * This element contains an ID that you use when performing a GetChange action to get detailed information about the change.
     */
   var Id: ResourceId
   
@@ -24,11 +24,11 @@ trait ChangeInfo extends StObject {
   /**
     * The date and time that the change request was submitted in ISO 8601 format and Coordinated Universal Time (UTC). For example, the value 2017-03-27T17:48:16.751Z represents March 27, 2017 at 17:48:16.751 UTC.
     */
-  var SubmittedAt: TimeStamp
+  var SubmittedAt: js.Date
 }
 object ChangeInfo {
   
-  inline def apply(Id: ResourceId, Status: ChangeStatus, SubmittedAt: TimeStamp): ChangeInfo = {
+  inline def apply(Id: ResourceId, Status: ChangeStatus, SubmittedAt: js.Date): ChangeInfo = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], SubmittedAt = SubmittedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeInfo]
   }
@@ -43,6 +43,6 @@ object ChangeInfo {
     
     inline def setStatus(value: ChangeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setSubmittedAt(value: TimeStamp): Self = StObject.set(x, "SubmittedAt", value.asInstanceOf[js.Any])
+    inline def setSubmittedAt(value: js.Date): Self = StObject.set(x, "SubmittedAt", value.asInstanceOf[js.Any])
   }
 }

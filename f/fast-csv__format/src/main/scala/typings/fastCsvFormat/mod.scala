@@ -3,9 +3,9 @@ package typings.fastCsvFormat
 import typings.fastCsvFormat.formatterOptionsMod.FormatterOptionsArgs
 import typings.fastCsvFormat.typesMod.Row
 import typings.fastCsvFormat.typesMod.RowTransformFunction
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.WriteStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +18,14 @@ object mod {
   
   @JSImport("@fast-csv/format", "CsvFormatterStream")
   @js.native
-  class CsvFormatterStream[I /* <: Row */, O /* <: Row */] protected ()
+  open class CsvFormatterStream[I /* <: Row */, O /* <: Row */] protected ()
     extends typings.fastCsvFormat.csvFormatterStreamMod.CsvFormatterStream[I, O] {
     def this(formatterOptions: typings.fastCsvFormat.formatterOptionsMod.FormatterOptions[I, O]) = this()
   }
   
   @JSImport("@fast-csv/format", "FormatterOptions")
   @js.native
-  class FormatterOptions[I /* <: Row */, O /* <: Row */] ()
+  open class FormatterOptions[I /* <: Row */, O /* <: Row */] ()
     extends typings.fastCsvFormat.formatterOptionsMod.FormatterOptions[I, O] {
     def this(opts: FormatterOptionsArgs[I, O]) = this()
   }
@@ -44,8 +44,8 @@ object mod {
   inline def writeToPath[I /* <: Row */, O /* <: Row */](path: String, rows: js.Array[I]): WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToPath")(path.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[WriteStream]
   inline def writeToPath[I /* <: Row */, O /* <: Row */](path: String, rows: js.Array[I], options: FormatterOptionsArgs[I, O]): WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToPath")(path.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WriteStream]
   
-  inline def writeToStream[T /* <: WritableStream */, I /* <: Row */, O /* <: Row */](ws: T, rows: js.Array[I]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(ws.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def writeToStream[T /* <: WritableStream */, I /* <: Row */, O /* <: Row */](ws: T, rows: js.Array[I], options: FormatterOptionsArgs[I, O]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(ws.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def writeToStream[T /* <: WritableStream[Any] */, I /* <: Row */, O /* <: Row */](ws: T, rows: js.Array[I]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(ws.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def writeToStream[T /* <: WritableStream[Any] */, I /* <: Row */, O /* <: Row */](ws: T, rows: js.Array[I], options: FormatterOptionsArgs[I, O]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(ws.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def writeToString[I /* <: Row */, O /* <: Row */](rows: js.Array[I]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("writeToString")(rows.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def writeToString[I /* <: Row */, O /* <: Row */](rows: js.Array[I], options: FormatterOptionsArgs[I, O]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToString")(rows.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]

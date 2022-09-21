@@ -1,8 +1,9 @@
 package typings.reactInfinite
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +12,20 @@ object mod {
   
   @JSImport("react-infinite", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[InfiniteProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[InfiniteProps, js.Object, Any]
   @JSImport("react-infinite", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def containerHeightScaleFactor(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def containerHeightScaleFactor(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  @js.native
-  trait Infinite
-    extends Component[InfiniteProps, js.Object, js.Any]
+  type Infinite = Component[InfiniteProps, js.Object, Any]
   
-  trait InfiniteProps
-    extends StObject
-       with Props[Infinite] {
+  trait InfiniteProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -52,6 +51,8 @@ object mod {
     
     var preloadBatchSize: js.UndefOr[Double | js.Object] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[Infinite]] = js.undefined
+    
     var timeScrollStateLastsForAfterUserScrolls: js.UndefOr[Double] = js.undefined
     
     var useWindowAsScrollContainer: js.UndefOr[Boolean] = js.undefined
@@ -64,6 +65,10 @@ object mod {
     }
     
     extension [Self <: InfiniteProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -79,7 +84,7 @@ object mod {
       
       inline def setElementHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "elementHeight", value.asInstanceOf[js.Any])
       
-      inline def setElementHeightVarargs(value: Double*): Self = StObject.set(x, "elementHeight", js.Array(value :_*))
+      inline def setElementHeightVarargs(value: Double*): Self = StObject.set(x, "elementHeight", js.Array(value*))
       
       inline def setHandleScroll(value: /* node */ ReactElement => Unit): Self = StObject.set(x, "handleScroll", js.Any.fromFunction1(value))
       
@@ -112,6 +117,14 @@ object mod {
       inline def setPreloadBatchSize(value: Double | js.Object): Self = StObject.set(x, "preloadBatchSize", value.asInstanceOf[js.Any])
       
       inline def setPreloadBatchSizeUndefined: Self = StObject.set(x, "preloadBatchSize", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Infinite]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Infinite | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setTimeScrollStateLastsForAfterUserScrolls(value: Double): Self = StObject.set(x, "timeScrollStateLastsForAfterUserScrolls", value.asInstanceOf[js.Any])
       

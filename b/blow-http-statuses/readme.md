@@ -10,10 +10,10 @@ Helper for HTTP Statuses
 | ------------------ | :-------------: |
 | Full name          | blow-http-statuses |
 | Keywords           | http, status, code, message, typescript |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 483 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/blow-http-statuses)

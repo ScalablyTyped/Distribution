@@ -43,7 +43,7 @@ object XSubTotalField {
     acquire: () => Unit,
     getGroupColumn: () => Double,
     getSubTotalColumns: () => SafeArray[SubTotalColumn],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setGroupColumn: Double => Unit,
     setSubTotalColumns: SeqEquiv[SubTotalColumn] => Unit

@@ -8,5 +8,5 @@ object unprocessedStatisticsMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_UnprocessedStatistics", "_UnprocessedStatistics")
   @js.native
-  val UnprocessedStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UnprocessedStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

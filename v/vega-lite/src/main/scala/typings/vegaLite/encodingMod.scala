@@ -12,6 +12,7 @@ import typings.vegaLite.channeldefMod.FieldDefWithoutScale
 import typings.vegaLite.channeldefMod.LatLongDef
 import typings.vegaLite.channeldefMod.NumericArrayMarkPropDef
 import typings.vegaLite.channeldefMod.NumericMarkPropDef
+import typings.vegaLite.channeldefMod.OffsetDef
 import typings.vegaLite.channeldefMod.OrderFieldDef
 import typings.vegaLite.channeldefMod.OrderValueDef
 import typings.vegaLite.channeldefMod.PolarDef
@@ -61,8 +62,10 @@ import typings.vegaLite.vegaLiteStrings.tooltip
 import typings.vegaLite.vegaLiteStrings.url
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.x2
+import typings.vegaLite.vegaLiteStrings.xOffset
 import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaLite.vegaLiteStrings.y2
+import typings.vegaLite.vegaLiteStrings.yOffset
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -76,23 +79,33 @@ object encodingMod {
   
   inline def channelHasField[F /* <: Field */](
     encoding: EncodingWithFacet[F],
-    channel: /* keyof vega-lite.vega-lite/build/src/encoding.EncodingWithFacet<F> */ x | y | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | color | fill | stroke | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | shape | detail | key | text | tooltip | href | url | description | order | facet | row | column
+    channel: /* keyof vega-lite.vega-lite/build/src/encoding.EncodingWithFacet<F> */ x | y | xOffset | yOffset | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | color | fill | stroke | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | shape | detail | key | text | tooltip | href | url | description | order | facet | row | column
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelHasField")(encoding.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def extractTransformsFromEncoding(oldEncoding: Encoding[js.Any], config: Config[ExprRef | SignalRef]): Bins = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTransformsFromEncoding")(oldEncoding.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Bins]
+  inline def channelHasFieldOrDatum[F /* <: Field */](
+    encoding: EncodingWithFacet[F],
+    channel: /* keyof vega-lite.vega-lite/build/src/encoding.EncodingWithFacet<F> */ x | y | xOffset | yOffset | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | color | fill | stroke | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | shape | detail | key | text | tooltip | href | url | description | order | facet | row | column
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelHasFieldOrDatum")(encoding.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def fieldDefs[F /* <: Field */](encoding: EncodingWithFacet[F]): js.Array[FieldDef[F, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldDefs")(encoding.asInstanceOf[js.Any]).asInstanceOf[js.Array[FieldDef[F, js.Any]]]
+  inline def channelHasNestedOffsetScale[F /* <: Field */](
+    encoding: EncodingWithFacet[F],
+    channel: /* keyof vega-lite.vega-lite/build/src/encoding.EncodingWithFacet<F> */ x | y | xOffset | yOffset | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | color | fill | stroke | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | shape | detail | key | text | tooltip | href | url | description | order | facet | row | column
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelHasNestedOffsetScale")(encoding.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def forEach[U /* <: Record[js.Any, js.Any] */](mapping: U, f: js.Function2[/* cd */ ChannelDef[String], /* keyof U */ /* c */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def forEach[U /* <: Record[js.Any, js.Any] */](
+  inline def extractTransformsFromEncoding(oldEncoding: Encoding[Any], config: Config[ExprRef | SignalRef]): Bins = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTransformsFromEncoding")(oldEncoding.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Bins]
+  
+  inline def fieldDefs[F /* <: Field */](encoding: EncodingWithFacet[F]): js.Array[FieldDef[F, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldDefs")(encoding.asInstanceOf[js.Any]).asInstanceOf[js.Array[FieldDef[F, Any]]]
+  
+  inline def forEach[U /* <: Record[Any, Any] */](mapping: U, f: js.Function2[/* cd */ ChannelDef[String], /* keyof U */ /* c */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[U /* <: Record[Any, Any] */](
     mapping: U,
     f: js.Function2[/* cd */ ChannelDef[String], /* keyof U */ /* c */ String, Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def initEncoding(encoding: Encoding[String], mark: Mark, filled: Boolean, config: Config[ExprRef | SignalRef]): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("initEncoding")(encoding.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], filled.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
   
-  inline def isAggregate(encoding: EncodingWithFacet[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregate")(encoding.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAggregate(encoding: EncodingWithFacet[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregate")(encoding.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def markChannelCompatible(encoding: Encoding[String], channel: Channel, mark: Mark): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("markChannelCompatible")(encoding.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -100,27 +113,27 @@ object encodingMod {
   
   inline def pathGroupingFields(mark: Mark, encoding: Encoding[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathGroupingFields")(mark.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def reduce_binned[T, U /* <: Record[js.Any, js.Any] */](
+  inline def reduce_binned[T, U /* <: Record[Any, Any] */](
     mapping: U,
     f: js.Function3[
-      /* acc */ js.Any, 
-      /* fd */ TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null], 
+      /* acc */ Any, 
+      /* fd */ TypedFieldDef[String, Any, Boolean | BinParams | binned | Null], 
       /* keyof U */ /* c */ String, 
       U
     ],
     init: T
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def reduce_binned[T, U /* <: Record[js.Any, js.Any] */](
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def reduce_binned[T, U /* <: Record[Any, Any] */](
     mapping: U,
     f: js.Function3[
-      /* acc */ js.Any, 
-      /* fd */ TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null], 
+      /* acc */ Any, 
+      /* fd */ TypedFieldDef[String, Any, Boolean | BinParams | binned | Null], 
       /* keyof U */ /* c */ String, 
       U
     ],
     init: T,
-    thisArg: js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    thisArg: Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(mapping.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Encoding[F /* <: Field */] extends StObject {
     
@@ -326,6 +339,11 @@ object encodingMod {
     var x2: js.UndefOr[Position2Def[F]] = js.undefined
     
     /**
+      * Offset of x-position of the marks
+      */
+    var xOffset: js.UndefOr[OffsetDef[F, StandardType]] = js.undefined
+    
+    /**
       * Y coordinates of the marks, or height of vertical `"bar"` and `"area"` without specified `y2` or `height`.
       *
       * The `value` of this channel can be a number or a string `"height"` for the height of the plot.
@@ -338,6 +356,11 @@ object encodingMod {
       * The `value` of this channel can be a number or a string `"height"` for the height of the plot.
       */
     var y2: js.UndefOr[Position2Def[F]] = js.undefined
+    
+    /**
+      * Offset of y-position of the marks
+      */
+    var yOffset: js.UndefOr[OffsetDef[F, StandardType]] = js.undefined
   }
   object Encoding {
     
@@ -364,7 +387,7 @@ object encodingMod {
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value :_*))
+      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value*))
       
       inline def setFill(value: ColorDef[F]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -406,7 +429,7 @@ object encodingMod {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: OrderFieldDef[F]*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: OrderFieldDef[F]*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setRadius(value: PolarDef[F]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -460,7 +483,7 @@ object encodingMod {
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setTooltipVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "tooltip", js.Array(value :_*))
+      inline def setTooltipVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "tooltip", js.Array(value*))
       
       inline def setUrl(value: StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -472,6 +495,10 @@ object encodingMod {
       
       inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
       
+      inline def setXOffset(value: OffsetDef[F, StandardType]): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      
+      inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+      
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
       inline def setY(value: PositionDef[F]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
@@ -479,6 +506,10 @@ object encodingMod {
       inline def setY2(value: Position2Def[F]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
       inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+      
+      inline def setYOffset(value: OffsetDef[F, StandardType]): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }

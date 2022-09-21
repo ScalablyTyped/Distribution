@@ -9,6 +9,8 @@ trait MaskImageParams extends StObject {
   var `corner-radius`: js.UndefOr[ImgixParamType] = js.undefined
   
   var mask: js.UndefOr[ImgixParamType] = js.undefined
+  
+  var `mask-bg`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object MaskImageParams {
   
@@ -24,6 +26,10 @@ object MaskImageParams {
     inline def `setCorner-radiusUndefined`: Self = StObject.set(x, "corner-radius", js.undefined)
     
     inline def setMask(value: ImgixParamType): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def `setMask-bg`(value: ImgixParamType): Self = StObject.set(x, "mask-bg", value.asInstanceOf[js.Any])
+    
+    inline def `setMask-bgUndefined`: Self = StObject.set(x, "mask-bg", js.undefined)
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }

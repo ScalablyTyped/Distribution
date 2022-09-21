@@ -22,7 +22,7 @@ trait Accesstoken extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The ID of this Backup Run. */
+  /** The ID of this backup run. */
   var id: String
   
   /** Cloud SQL instance ID. This does not include the project ID. */

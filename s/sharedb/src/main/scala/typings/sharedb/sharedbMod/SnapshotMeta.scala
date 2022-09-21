@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnapshotMeta
   extends StObject
      with // Users can use server middleware to add additional metadata to snapshots.
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   var ctime: Double
   

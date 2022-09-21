@@ -7,22 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThinSprite extends StObject {
   
-  /** @hidden */
+  /**
+    * @param deltaTime
+    * @hidden
+    */
   def _animate(deltaTime: Double): Unit = js.native
   
-  /* private */ var _animationStarted: js.Any = js.native
+  /* private */ var _animationStarted: Any = js.native
   
   /* protected */ var _delay: Double = js.native
   
-  /* private */ var _direction: js.Any = js.native
+  /* private */ var _direction: Any = js.native
   
   /* protected */ var _fromIndex: Double = js.native
   
   /* protected */ var _loopAnimation: Boolean = js.native
   
-  /* private */ var _onBaseAnimationEnd: js.Any = js.native
+  /* private */ var _onBaseAnimationEnd: Any = js.native
   
-  /* private */ var _time: js.Any = js.native
+  /* private */ var _time: Any = js.native
   
   /* protected */ var _toIndex: Double = js.native
   

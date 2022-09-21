@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XrmStatic extends StObject {
   
   /**
+    * Provides app-related methods.
+    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
+    */
+  var App: typings.xrm.Xrm.App
+  
+  /**
     * Provides methods to use native device capabilities of mobile devices.
     *
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-device External Link: Xrm.Device (Client API reference)}
@@ -64,6 +70,7 @@ trait XrmStatic extends StObject {
 object XrmStatic {
   
   inline def apply(
+    App: App,
     Device: Device,
     Encoding: Encoding,
     Mobile: Mobile,
@@ -73,11 +80,13 @@ object XrmStatic {
     Utility: Utility,
     WebApi: WebApi
   ): XrmStatic = {
-    val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any], Encoding = Encoding.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Navigation = Navigation.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any], Panel = Panel.asInstanceOf[js.Any], Utility = Utility.asInstanceOf[js.Any], WebApi = WebApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Device = Device.asInstanceOf[js.Any], Encoding = Encoding.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Navigation = Navigation.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any], Panel = Panel.asInstanceOf[js.Any], Utility = Utility.asInstanceOf[js.Any], WebApi = WebApi.asInstanceOf[js.Any])
     __obj.asInstanceOf[XrmStatic]
   }
   
   extension [Self <: XrmStatic](x: Self) {
+    
+    inline def setApp(value: App): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     
     inline def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     

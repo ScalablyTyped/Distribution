@@ -11,9 +11,9 @@ Quick and dirty signatures for Objects.
 | Full name          | sigmund |
 | Keywords           | object, signature, key, data, psychoanalysis |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 130926902 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5627880333333334E7 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/sigmund#readme)

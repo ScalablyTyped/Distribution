@@ -18,7 +18,7 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
   
   /**
     * Name under which the directive is exported (for use with local references in template)
@@ -88,7 +88,7 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
   
   /**
     * A dictionary mapping the outputs' minified property names to their public API names, which
@@ -97,7 +97,7 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
   
   /** Function that resolves providers and publishes them into the DI system. */
   var providersResolver: (js.Function2[
@@ -112,11 +112,16 @@ trait ɵDirectiveDef[T] extends StObject {
   var setInput: (js.ThisFunction4[
     /* this */ ɵDirectiveDef[T], 
     /* instance */ T, 
-    /* value */ js.Any, 
+    /* value */ Any, 
     /* publicName */ String, 
     /* privateName */ String, 
     Unit
   ]) | Null
+  
+  /**
+    * Whether this directive (or component) is standalone.
+    */
+  val standalone: Boolean
   
   /** Token representing the directive. Used by DI. */
   val `type`: Type[T]
@@ -133,18 +138,19 @@ object ɵDirectiveDef {
   inline def apply[T](
     declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
     hostVars: Double,
     inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
     outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
     selectors: ɵCssSelectorList,
+    standalone: Boolean,
     `type`: Type[T]
   ): ɵDirectiveDef[T] = {
-    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], contentQueries = null, exportAs = null, factory = null, features = null, hostAttrs = null, hostBindings = null, providersResolver = null, setInput = null, viewQuery = null)
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any], contentQueries = null, exportAs = null, factory = null, features = null, hostAttrs = null, hostBindings = null, providersResolver = null, setInput = null, viewQuery = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
@@ -158,14 +164,14 @@ object ɵDirectiveDef {
     inline def setDeclaredInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
     ): Self = StObject.set(x, "declaredInputs", value.asInstanceOf[js.Any])
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
     inline def setExportAsNull: Self = StObject.set(x, "exportAs", null)
     
-    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value*))
     
     inline def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
@@ -175,13 +181,13 @@ object ɵDirectiveDef {
     
     inline def setFeaturesNull: Self = StObject.set(x, "features", null)
     
-    inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
     inline def setHostAttrsNull: Self = StObject.set(x, "hostAttrs", null)
     
-    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value*))
     
     inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
@@ -192,13 +198,13 @@ object ɵDirectiveDef {
     inline def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setProvidersResolver(
@@ -209,13 +215,13 @@ object ɵDirectiveDef {
     
     inline def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def setSetInput(
       value: js.ThisFunction4[
           /* this */ ɵDirectiveDef[T], 
           /* instance */ T, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* publicName */ String, 
           /* privateName */ String, 
           Unit
@@ -223,6 +229,8 @@ object ɵDirectiveDef {
     ): Self = StObject.set(x, "setInput", value.asInstanceOf[js.Any])
     
     inline def setSetInputNull: Self = StObject.set(x, "setInput", null)
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
     inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait FileDialogFilters extends StObject {
   def Add(Description: String, Extensions: String): FileDialogFilter = js.native
   def Add(Description: String, Extensions: String, Position: Double): FileDialogFilter = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Clear(): Unit = js.native
   
@@ -21,9 +21,9 @@ trait FileDialogFilters extends StObject {
   val Creator: Double = js.native
   
   def Delete(): Unit = js.native
-  def Delete(filter: js.Any): Unit = js.native
+  def Delete(filter: Any): Unit = js.native
   
   def Item(Index: Double): FileDialogFilter = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

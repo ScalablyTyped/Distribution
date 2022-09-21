@@ -21,7 +21,7 @@ object Fragments {
     * @param href The URI that contains the fragment to be copied.
     * @returns A promise that is fulfilled when the fragment has been prepared for copying.
     **/
-  inline def cache(href: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  inline def cache(href: String): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
   
   /**
     * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.

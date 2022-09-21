@@ -31,7 +31,7 @@ trait ZoneSpec extends StObject {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* task */ Task, 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -68,7 +68,7 @@ trait ZoneSpec extends StObject {
       /* parentZoneDelegate */ ZoneDelegate, 
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
-      /* error */ js.Any, 
+      /* error */ Any, 
       Boolean
     ]
   ] = js.undefined
@@ -128,10 +128,10 @@ trait ZoneSpec extends StObject {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* delegate */ js.Function, 
-      /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[js.Any]], 
+      /* applyThis */ Any, 
+      /* applyArgs */ js.UndefOr[js.Array[Any]], 
       /* source */ js.UndefOr[String], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -141,9 +141,9 @@ trait ZoneSpec extends StObject {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* task */ Task, 
-      /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[js.Any]], 
-      js.Any
+      /* applyThis */ Any, 
+      /* applyArgs */ js.UndefOr[js.Array[Any]], 
+      Any
     ]
   ] = js.undefined
   
@@ -168,7 +168,7 @@ trait ZoneSpec extends StObject {
   /**
     * A set of properties to be associated with Zone. Use [Zone.get] to retrieve them.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object ZoneSpec {
   
@@ -182,7 +182,7 @@ object ZoneSpec {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOnCancelTask(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => js.Any
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => Any
     ): Self = StObject.set(x, "onCancelTask", js.Any.fromFunction4(value))
     
     inline def setOnCancelTaskUndefined: Self = StObject.set(x, "onCancelTask", js.undefined)
@@ -194,7 +194,7 @@ object ZoneSpec {
     inline def setOnForkUndefined: Self = StObject.set(x, "onFork", js.undefined)
     
     inline def setOnHandleError(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ js.Any) => Boolean
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ Any) => Boolean
     ): Self = StObject.set(x, "onHandleError", js.Any.fromFunction4(value))
     
     inline def setOnHandleErrorUndefined: Self = StObject.set(x, "onHandleError", js.undefined)
@@ -212,11 +212,11 @@ object ZoneSpec {
     inline def setOnInterceptUndefined: Self = StObject.set(x, "onIntercept", js.undefined)
     
     inline def setOnInvoke(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => js.Any
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ Any, /* applyArgs */ js.UndefOr[js.Array[Any]], /* source */ js.UndefOr[String]) => Any
     ): Self = StObject.set(x, "onInvoke", js.Any.fromFunction7(value))
     
     inline def setOnInvokeTask(
-      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => js.Any
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ Any, /* applyArgs */ js.UndefOr[js.Array[Any]]) => Any
     ): Self = StObject.set(x, "onInvokeTask", js.Any.fromFunction6(value))
     
     inline def setOnInvokeTaskUndefined: Self = StObject.set(x, "onInvokeTask", js.undefined)
@@ -229,7 +229,7 @@ object ZoneSpec {
     
     inline def setOnScheduleTaskUndefined: Self = StObject.set(x, "onScheduleTask", js.undefined)
     
-    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }

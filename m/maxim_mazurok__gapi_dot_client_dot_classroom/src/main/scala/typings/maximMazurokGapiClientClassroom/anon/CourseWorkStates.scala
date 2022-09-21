@@ -92,7 +92,7 @@ object CourseWorkStates {
     
     inline def setCourseWorkStatesUndefined: Self = StObject.set(x, "courseWorkStates", js.undefined)
     
-    inline def setCourseWorkStatesVarargs(value: String*): Self = StObject.set(x, "courseWorkStates", js.Array(value :_*))
+    inline def setCourseWorkStatesVarargs(value: String*): Self = StObject.set(x, "courseWorkStates", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

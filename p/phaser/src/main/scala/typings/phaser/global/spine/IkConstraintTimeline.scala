@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.IkConstraintTimeline")
 @js.native
-class IkConstraintTimeline protected ()
+open class IkConstraintTimeline protected ()
   extends StObject
      with typings.phaser.spine.IkConstraintTimeline {
   def this(frameCount: Double) = this()
@@ -25,7 +25,7 @@ class IkConstraintTimeline protected ()
   ): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var curves: js.Any = js.native
+  var curves: Any = js.native
   
   /* CompleteClass */
   var frames: ArrayLike[Double] = js.native

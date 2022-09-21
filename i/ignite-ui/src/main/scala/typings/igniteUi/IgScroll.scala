@@ -11,7 +11,7 @@ trait IgScroll
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets or gets if the scrollbars should be always visible (on all environments). Otherwise it will be the default behavior. Note: this option is only for the custom scrollbars set through the scrollbarType option.
@@ -59,7 +59,7 @@ trait IgScroll
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
@@ -216,13 +216,13 @@ trait IgScroll
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     */
-  var syncedElemsH: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var syncedElemsH: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     */
-  var syncedElemsV: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var syncedElemsV: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Event which is raised on mouse up from the scrollbar's thumb drag.
@@ -282,7 +282,7 @@ object IgScroll {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -382,17 +382,17 @@ object IgScroll {
     
     inline def setSwipeToleranceXUndefined: Self = StObject.set(x, "swipeToleranceX", js.undefined)
     
-    inline def setSyncedElemsH(value: js.Array[js.Any]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
+    inline def setSyncedElemsH(value: js.Array[Any]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
     
     inline def setSyncedElemsHUndefined: Self = StObject.set(x, "syncedElemsH", js.undefined)
     
-    inline def setSyncedElemsHVarargs(value: js.Any*): Self = StObject.set(x, "syncedElemsH", js.Array(value :_*))
+    inline def setSyncedElemsHVarargs(value: Any*): Self = StObject.set(x, "syncedElemsH", js.Array(value*))
     
-    inline def setSyncedElemsV(value: js.Array[js.Any]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
+    inline def setSyncedElemsV(value: js.Array[Any]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
     
     inline def setSyncedElemsVUndefined: Self = StObject.set(x, "syncedElemsV", js.undefined)
     
-    inline def setSyncedElemsVVarargs(value: js.Any*): Self = StObject.set(x, "syncedElemsV", js.Array(value :_*))
+    inline def setSyncedElemsVVarargs(value: Any*): Self = StObject.set(x, "syncedElemsV", js.Array(value*))
     
     inline def setThumbDragEnd(value: (/* event */ Event, /* ui */ ThumbDragEndEventUIParam) => Unit): Self = StObject.set(x, "thumbDragEnd", js.Any.fromFunction2(value))
     

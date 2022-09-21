@@ -9,7 +9,7 @@ trait DeviceEvent extends StObject {
   /**
     * The time (in epoch) when the event occurred. 
     */
-  var Timestamp: js.UndefOr[DeviceEventTime] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of device event.
@@ -30,7 +30,7 @@ object DeviceEvent {
   
   extension [Self <: DeviceEvent](x: Self) {
     
-    inline def setTimestamp(value: DeviceEventTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

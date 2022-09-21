@@ -1,7 +1,6 @@
 package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait RefreshToken
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var client: Client
   
   var refreshToken: String
   
-  var refreshTokenExpiresAt: js.UndefOr[Date] = js.undefined
+  var refreshTokenExpiresAt: js.UndefOr[js.Date] = js.undefined
   
   var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -36,7 +35,7 @@ object RefreshToken {
     
     inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    inline def setRefreshTokenExpiresAt(value: Date): Self = StObject.set(x, "refreshTokenExpiresAt", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenExpiresAt(value: js.Date): Self = StObject.set(x, "refreshTokenExpiresAt", value.asInstanceOf[js.Any])
     
     inline def setRefreshTokenExpiresAtUndefined: Self = StObject.set(x, "refreshTokenExpiresAt", js.undefined)
     
@@ -44,7 +43,7 @@ object RefreshToken {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     
     inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

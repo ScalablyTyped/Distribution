@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the attributes for a chart plot area.
   *
-  * This object represents the attributes for a chart plotArea object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartPlotArea")
 @js.native
-class ChartPlotArea ()
+open class ChartPlotArea ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartPlotArea {
   

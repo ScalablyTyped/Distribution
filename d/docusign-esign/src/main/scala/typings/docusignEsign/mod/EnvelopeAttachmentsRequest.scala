@@ -24,6 +24,6 @@ object EnvelopeAttachmentsRequest {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "attachments", js.Array(value*))
   }
 }

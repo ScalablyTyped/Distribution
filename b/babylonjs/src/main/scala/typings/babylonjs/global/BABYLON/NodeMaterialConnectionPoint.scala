@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NodeMaterialConnectionPoint")
 @js.native
-class NodeMaterialConnectionPoint protected ()
+open class NodeMaterialConnectionPoint protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialConnectionPoint {
   /**

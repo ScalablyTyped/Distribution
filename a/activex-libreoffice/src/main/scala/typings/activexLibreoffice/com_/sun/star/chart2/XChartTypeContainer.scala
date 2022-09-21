@@ -37,7 +37,7 @@ object XChartTypeContainer {
     acquire: () => Unit,
     addChartType: XChartType => Unit,
     getChartTypes: () => SafeArray[XChartType],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChartType: XChartType => Unit,
     setChartTypes: SeqEquiv[XChartType] => Unit

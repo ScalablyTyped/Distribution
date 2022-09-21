@@ -42,7 +42,7 @@ trait XExternalDocLink
     * Note that a sheet name lookup is performed in a case-insensitive fashion.
     * @param aSheetName sheet name
     * @param DynamicCache specify whether or not the cache can grow when non-cached regions are queried. If `TRUE` , querying a non-cached cell in this sheet
-    * @returns {@link com.sun.star.sheet.XExternalSheetCache} sheet cache instance
+    * @returns sheet cache instance
     */
   def addSheetCache(aSheetName: String, DynamicCache: Boolean): XExternalSheetCache
 }
@@ -56,14 +56,14 @@ object XExternalDocLink {
     acquire: () => Unit,
     addSheetCache: (String, Boolean) => XExternalSheetCache,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XExternalDocLink = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], TokenIndex = TokenIndex.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addSheetCache = js.Any.fromFunction2(addSheetCache), createEnumeration = js.Any.fromFunction0(createEnumeration), getByIndex = js.Any.fromFunction1(getByIndex), getByName = js.Any.fromFunction1(getByName), getCount = js.Any.fromFunction0(getCount), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

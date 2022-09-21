@@ -12,12 +12,12 @@ object cacheMeasurerMod {
   
   @JSImport("typesettable/build/src/measurers/cacheMeasurer", "CacheMeasurer")
   @js.native
-  class CacheMeasurer protected () extends CacheCharacterMeasurer {
+  open class CacheMeasurer protected () extends CacheCharacterMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
     
     def _measureNotFromCache(s: String): IDimensions = js.native
     
-    /* private */ var dimCache: js.Any = js.native
+    /* private */ var dimCache: Any = js.native
   }
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "SessionTerminatedError")
 @js.native
-class SessionTerminatedError ()
+open class SessionTerminatedError ()
   extends typings.sipJs.apiMod.SessionTerminatedError

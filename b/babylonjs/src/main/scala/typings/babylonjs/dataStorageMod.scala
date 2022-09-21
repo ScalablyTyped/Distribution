@@ -8,7 +8,7 @@ object dataStorageMod {
   
   @JSImport("babylonjs/Misc/dataStorage", "DataStorage")
   @js.native
-  class DataStorage () extends StObject
+  open class DataStorage () extends StObject
   /* static members */
   object DataStorage {
     
@@ -63,12 +63,12 @@ object dataStorageMod {
     
     @JSImport("babylonjs/Misc/dataStorage", "DataStorage._GetStorage")
     @js.native
-    def _GetStorage: js.Any = js.native
-    inline def _GetStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
+    def _GetStorage: Any = js.native
+    inline def _GetStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dataStorage", "DataStorage._Storage")
     @js.native
-    def _Storage: js.Any = js.native
-    inline def _Storage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
+    def _Storage: Any = js.native
+    inline def _Storage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
   }
 }

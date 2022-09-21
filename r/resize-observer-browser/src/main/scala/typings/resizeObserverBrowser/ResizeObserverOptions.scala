@@ -2,6 +2,7 @@ package typings.resizeObserverBrowser
 
 import typings.resizeObserverBrowser.resizeObserverBrowserStrings.`border-box`
 import typings.resizeObserverBrowser.resizeObserverBrowserStrings.`content-box`
+import typings.resizeObserverBrowser.resizeObserverBrowserStrings.`device-pixel-content-box`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ trait ResizeObserverOptions extends StObject {
     *
     * @default 'content-box'
     */
-  var box: js.UndefOr[`content-box` | `border-box`] = js.undefined
+  var box: js.UndefOr[`content-box` | `border-box` | `device-pixel-content-box`] = js.undefined
 }
 object ResizeObserverOptions {
   
@@ -25,7 +26,7 @@ object ResizeObserverOptions {
   
   extension [Self <: ResizeObserverOptions](x: Self) {
     
-    inline def setBox(value: `content-box` | `border-box`): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    inline def setBox(value: `content-box` | `border-box` | `device-pixel-content-box`): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
   }

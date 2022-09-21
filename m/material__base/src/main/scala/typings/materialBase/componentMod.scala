@@ -7,20 +7,22 @@ import typings.materialBase.materialBaseStrings.animationend
 import typings.materialBase.materialBaseStrings.animationiteration
 import typings.materialBase.materialBaseStrings.animationstart
 import typings.materialBase.materialBaseStrings.auxclick
+import typings.materialBase.materialBaseStrings.beforeinput
 import typings.materialBase.materialBaseStrings.blur
-import typings.materialBase.materialBaseStrings.cancel
 import typings.materialBase.materialBaseStrings.canplay
 import typings.materialBase.materialBaseStrings.canplaythrough
 import typings.materialBase.materialBaseStrings.change
 import typings.materialBase.materialBaseStrings.click
 import typings.materialBase.materialBaseStrings.close
+import typings.materialBase.materialBaseStrings.compositionend
+import typings.materialBase.materialBaseStrings.compositionstart
+import typings.materialBase.materialBaseStrings.compositionupdate
 import typings.materialBase.materialBaseStrings.contextmenu
 import typings.materialBase.materialBaseStrings.cuechange
 import typings.materialBase.materialBaseStrings.dblclick
 import typings.materialBase.materialBaseStrings.drag
 import typings.materialBase.materialBaseStrings.dragend
 import typings.materialBase.materialBaseStrings.dragenter
-import typings.materialBase.materialBaseStrings.dragexit
 import typings.materialBase.materialBaseStrings.dragleave
 import typings.materialBase.materialBaseStrings.dragover
 import typings.materialBase.materialBaseStrings.dragstart
@@ -32,6 +34,7 @@ import typings.materialBase.materialBaseStrings.error
 import typings.materialBase.materialBaseStrings.focus
 import typings.materialBase.materialBaseStrings.focusin
 import typings.materialBase.materialBaseStrings.focusout
+import typings.materialBase.materialBaseStrings.formdata
 import typings.materialBase.materialBaseStrings.gotpointercapture
 import typings.materialBase.materialBaseStrings.input
 import typings.materialBase.materialBaseStrings.invalid
@@ -72,6 +75,7 @@ import typings.materialBase.materialBaseStrings.seeking
 import typings.materialBase.materialBaseStrings.select
 import typings.materialBase.materialBaseStrings.selectionchange
 import typings.materialBase.materialBaseStrings.selectstart
+import typings.materialBase.materialBaseStrings.slotchange
 import typings.materialBase.materialBaseStrings.stalled
 import typings.materialBase.materialBaseStrings.submit
 import typings.materialBase.materialBaseStrings.suspend
@@ -87,11 +91,14 @@ import typings.materialBase.materialBaseStrings.transitionrun
 import typings.materialBase.materialBaseStrings.transitionstart
 import typings.materialBase.materialBaseStrings.volumechange
 import typings.materialBase.materialBaseStrings.waiting
+import typings.materialBase.materialBaseStrings.webkitanimationend
+import typings.materialBase.materialBaseStrings.webkitanimationiteration
+import typings.materialBase.materialBaseStrings.webkitanimationstart
+import typings.materialBase.materialBaseStrings.webkittransitionend
 import typings.materialBase.materialBaseStrings.wheel
 import typings.materialBase.typesMod.CustomEventListener
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.std.AddEventListenerOptions
-import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -101,9 +108,9 @@ object componentMod {
   
   @JSImport("@material/base/component", JSImport.Default)
   @js.native
-  class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
-    def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+  open class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
+    def this(root: Element, foundation: FoundationType, args: Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
   }
   /* static members */
   object default {
@@ -117,9 +124,9 @@ object componentMod {
   
   @JSImport("@material/base/component", "MDCComponent")
   @js.native
-  class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends StObject {
-    def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+  open class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends StObject {
+    def this(root: Element, foundation: FoundationType, args: Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     
     def destroy(): Unit = js.native
     
@@ -135,7 +142,7 @@ object componentMod {
     
     def initialSyncWithDOM(): Unit = js.native
     
-    def initialize(_args: js.Any*): Unit = js.native
+    def initialize(_args: Any*): Unit = js.native
     
     def listen[E /* <: Event */](evtType: String, handler: CustomEventListener[E]): Unit = js.native
     def listen[E /* <: Event */](evtType: String, handler: CustomEventListener[E], options: Boolean): Unit = js.native
@@ -197,17 +204,21 @@ object componentMod {
     @JSName("listen")
     def listen_auxclick(evtType: auxclick, handler: SpecificEventListener[auxclick], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
+    def listen_beforeinput(evtType: beforeinput, handler: SpecificEventListener[beforeinput]): Unit = js.native
+    @JSName("listen")
+    def listen_beforeinput(evtType: beforeinput, handler: SpecificEventListener[beforeinput], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_beforeinput(
+      evtType: beforeinput,
+      handler: SpecificEventListener[beforeinput],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
     def listen_blur(evtType: blur, handler: SpecificEventListener[blur]): Unit = js.native
     @JSName("listen")
     def listen_blur(evtType: blur, handler: SpecificEventListener[blur], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_blur(evtType: blur, handler: SpecificEventListener[blur], options: AddEventListenerOptions): Unit = js.native
-    @JSName("listen")
-    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel]): Unit = js.native
-    @JSName("listen")
-    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: Boolean): Unit = js.native
-    @JSName("listen")
-    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_canplay(evtType: canplay, handler: SpecificEventListener[canplay]): Unit = js.native
     @JSName("listen")
@@ -242,6 +253,36 @@ object componentMod {
     def listen_close(evtType: close, handler: SpecificEventListener[close], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_close(evtType: close, handler: SpecificEventListener[close], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
+    def listen_compositionend(evtType: compositionend, handler: SpecificEventListener[compositionend]): Unit = js.native
+    @JSName("listen")
+    def listen_compositionend(evtType: compositionend, handler: SpecificEventListener[compositionend], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_compositionend(
+      evtType: compositionend,
+      handler: SpecificEventListener[compositionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_compositionstart(evtType: compositionstart, handler: SpecificEventListener[compositionstart]): Unit = js.native
+    @JSName("listen")
+    def listen_compositionstart(evtType: compositionstart, handler: SpecificEventListener[compositionstart], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_compositionstart(
+      evtType: compositionstart,
+      handler: SpecificEventListener[compositionstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_compositionupdate(evtType: compositionupdate, handler: SpecificEventListener[compositionupdate]): Unit = js.native
+    @JSName("listen")
+    def listen_compositionupdate(evtType: compositionupdate, handler: SpecificEventListener[compositionupdate], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_compositionupdate(
+      evtType: compositionupdate,
+      handler: SpecificEventListener[compositionupdate],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     @JSName("listen")
     def listen_contextmenu(evtType: contextmenu, handler: SpecificEventListener[contextmenu]): Unit = js.native
     @JSName("listen")
@@ -282,12 +323,6 @@ object componentMod {
     def listen_dragenter(evtType: dragenter, handler: SpecificEventListener[dragenter], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_dragenter(evtType: dragenter, handler: SpecificEventListener[dragenter], options: AddEventListenerOptions): Unit = js.native
-    @JSName("listen")
-    def listen_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit]): Unit = js.native
-    @JSName("listen")
-    def listen_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit], options: Boolean): Unit = js.native
-    @JSName("listen")
-    def listen_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_dragleave(evtType: dragleave, handler: SpecificEventListener[dragleave]): Unit = js.native
     @JSName("listen")
@@ -358,6 +393,12 @@ object componentMod {
     def listen_focusout(evtType: focusout, handler: SpecificEventListener[focusout], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_focusout(evtType: focusout, handler: SpecificEventListener[focusout], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
+    def listen_formdata(evtType: formdata, handler: SpecificEventListener[formdata]): Unit = js.native
+    @JSName("listen")
+    def listen_formdata(evtType: formdata, handler: SpecificEventListener[formdata], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_formdata(evtType: formdata, handler: SpecificEventListener[formdata], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_gotpointercapture(evtType: gotpointercapture, handler: SpecificEventListener[gotpointercapture]): Unit = js.native
     @JSName("listen")
@@ -651,6 +692,12 @@ object componentMod {
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("listen")
+    def listen_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange]): Unit = js.native
+    @JSName("listen")
+    def listen_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
     def listen_stalled(evtType: stalled, handler: SpecificEventListener[stalled]): Unit = js.native
     @JSName("listen")
     def listen_stalled(evtType: stalled, handler: SpecificEventListener[stalled], options: Boolean): Unit = js.native
@@ -765,6 +812,58 @@ object componentMod {
     @JSName("listen")
     def listen_waiting(evtType: waiting, handler: SpecificEventListener[waiting], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
+    def listen_webkitanimationend(evtType: webkitanimationend, handler: SpecificEventListener[webkitanimationend]): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationend(evtType: webkitanimationend, handler: SpecificEventListener[webkitanimationend], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationend(
+      evtType: webkitanimationend,
+      handler: SpecificEventListener[webkitanimationend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationiteration(evtType: webkitanimationiteration, handler: SpecificEventListener[webkitanimationiteration]): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationiteration(
+      evtType: webkitanimationiteration,
+      handler: SpecificEventListener[webkitanimationiteration],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationiteration(
+      evtType: webkitanimationiteration,
+      handler: SpecificEventListener[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationstart(evtType: webkitanimationstart, handler: SpecificEventListener[webkitanimationstart]): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationstart(
+      evtType: webkitanimationstart,
+      handler: SpecificEventListener[webkitanimationstart],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkitanimationstart(
+      evtType: webkitanimationstart,
+      handler: SpecificEventListener[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkittransitionend(evtType: webkittransitionend, handler: SpecificEventListener[webkittransitionend]): Unit = js.native
+    @JSName("listen")
+    def listen_webkittransitionend(
+      evtType: webkittransitionend,
+      handler: SpecificEventListener[webkittransitionend],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("listen")
+    def listen_webkittransitionend(
+      evtType: webkittransitionend,
+      handler: SpecificEventListener[webkittransitionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("listen")
     def listen_wheel(evtType: wheel, handler: SpecificEventListener[wheel]): Unit = js.native
     @JSName("listen")
     def listen_wheel(evtType: wheel, handler: SpecificEventListener[wheel], options: Boolean): Unit = js.native
@@ -833,17 +932,21 @@ object componentMod {
     @JSName("unlisten")
     def unlisten_auxclick(evtType: auxclick, handler: SpecificEventListener[auxclick], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
+    def unlisten_beforeinput(evtType: beforeinput, handler: SpecificEventListener[beforeinput]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_beforeinput(evtType: beforeinput, handler: SpecificEventListener[beforeinput], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_beforeinput(
+      evtType: beforeinput,
+      handler: SpecificEventListener[beforeinput],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
     def unlisten_blur(evtType: blur, handler: SpecificEventListener[blur]): Unit = js.native
     @JSName("unlisten")
     def unlisten_blur(evtType: blur, handler: SpecificEventListener[blur], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_blur(evtType: blur, handler: SpecificEventListener[blur], options: AddEventListenerOptions): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel]): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: Boolean): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_canplay(evtType: canplay, handler: SpecificEventListener[canplay]): Unit = js.native
     @JSName("unlisten")
@@ -878,6 +981,36 @@ object componentMod {
     def unlisten_close(evtType: close, handler: SpecificEventListener[close], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_close(evtType: close, handler: SpecificEventListener[close], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionend(evtType: compositionend, handler: SpecificEventListener[compositionend]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionend(evtType: compositionend, handler: SpecificEventListener[compositionend], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionend(
+      evtType: compositionend,
+      handler: SpecificEventListener[compositionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionstart(evtType: compositionstart, handler: SpecificEventListener[compositionstart]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionstart(evtType: compositionstart, handler: SpecificEventListener[compositionstart], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionstart(
+      evtType: compositionstart,
+      handler: SpecificEventListener[compositionstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionupdate(evtType: compositionupdate, handler: SpecificEventListener[compositionupdate]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionupdate(evtType: compositionupdate, handler: SpecificEventListener[compositionupdate], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_compositionupdate(
+      evtType: compositionupdate,
+      handler: SpecificEventListener[compositionupdate],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     @JSName("unlisten")
     def unlisten_contextmenu(evtType: contextmenu, handler: SpecificEventListener[contextmenu]): Unit = js.native
     @JSName("unlisten")
@@ -918,12 +1051,6 @@ object componentMod {
     def unlisten_dragenter(evtType: dragenter, handler: SpecificEventListener[dragenter], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_dragenter(evtType: dragenter, handler: SpecificEventListener[dragenter], options: AddEventListenerOptions): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit]): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit], options: Boolean): Unit = js.native
-    @JSName("unlisten")
-    def unlisten_dragexit(evtType: dragexit, handler: SpecificEventListener[dragexit], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_dragleave(evtType: dragleave, handler: SpecificEventListener[dragleave]): Unit = js.native
     @JSName("unlisten")
@@ -994,6 +1121,12 @@ object componentMod {
     def unlisten_focusout(evtType: focusout, handler: SpecificEventListener[focusout], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_focusout(evtType: focusout, handler: SpecificEventListener[focusout], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_formdata(evtType: formdata, handler: SpecificEventListener[formdata]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_formdata(evtType: formdata, handler: SpecificEventListener[formdata], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_formdata(evtType: formdata, handler: SpecificEventListener[formdata], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_gotpointercapture(evtType: gotpointercapture, handler: SpecificEventListener[gotpointercapture]): Unit = js.native
     @JSName("unlisten")
@@ -1287,6 +1420,12 @@ object componentMod {
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("unlisten")
+    def unlisten_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_slotchange(evtType: slotchange, handler: SpecificEventListener[slotchange], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
     def unlisten_stalled(evtType: stalled, handler: SpecificEventListener[stalled]): Unit = js.native
     @JSName("unlisten")
     def unlisten_stalled(evtType: stalled, handler: SpecificEventListener[stalled], options: Boolean): Unit = js.native
@@ -1400,6 +1539,58 @@ object componentMod {
     def unlisten_waiting(evtType: waiting, handler: SpecificEventListener[waiting], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_waiting(evtType: waiting, handler: SpecificEventListener[waiting], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationend(evtType: webkitanimationend, handler: SpecificEventListener[webkitanimationend]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationend(evtType: webkitanimationend, handler: SpecificEventListener[webkitanimationend], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationend(
+      evtType: webkitanimationend,
+      handler: SpecificEventListener[webkitanimationend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationiteration(evtType: webkitanimationiteration, handler: SpecificEventListener[webkitanimationiteration]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationiteration(
+      evtType: webkitanimationiteration,
+      handler: SpecificEventListener[webkitanimationiteration],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationiteration(
+      evtType: webkitanimationiteration,
+      handler: SpecificEventListener[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationstart(evtType: webkitanimationstart, handler: SpecificEventListener[webkitanimationstart]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationstart(
+      evtType: webkitanimationstart,
+      handler: SpecificEventListener[webkitanimationstart],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkitanimationstart(
+      evtType: webkitanimationstart,
+      handler: SpecificEventListener[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkittransitionend(evtType: webkittransitionend, handler: SpecificEventListener[webkittransitionend]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkittransitionend(
+      evtType: webkittransitionend,
+      handler: SpecificEventListener[webkittransitionend],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_webkittransitionend(
+      evtType: webkittransitionend,
+      handler: SpecificEventListener[webkittransitionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     @JSName("unlisten")
     def unlisten_wheel(evtType: wheel, handler: SpecificEventListener[wheel]): Unit = js.native
     @JSName("unlisten")

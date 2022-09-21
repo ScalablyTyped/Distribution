@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__memoize
 
-Typings are for version 0.7.4
+Typings are for version 0.8.0
 
 ## Library description:
 emotion's memoize utility
@@ -10,15 +10,15 @@ emotion's memoize utility
 | ------------------ | :-------------: |
 | Full name          | @emotion/memoize |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 225847122 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.8221996666666664E7 |
+| # stars            | 15226.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fmemoize)
     
 

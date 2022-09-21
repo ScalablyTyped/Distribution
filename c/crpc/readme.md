@@ -10,10 +10,10 @@ Simple library for making requests to Cuvva-style RPC APIs
 | ------------------ | :-------------: |
 | Full name          | crpc |
 | Keywords           | crpc, cuvva, rpc, client, api |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 69353 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 633.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/billinghamj/crpc)

@@ -13,13 +13,12 @@ object alertContainerMod {
   
   @JSImport("@ant-design/react-native/lib/modal/AlertContainer", JSImport.Default)
   @js.native
-  class default protected () extends AlertContainer {
+  open class default protected () extends AlertContainer {
     def this(props: AlertContainerProps) = this()
   }
   
   @js.native
-  trait AlertContainer
-    extends Component[AlertContainerProps, js.Any, js.Any] {
+  trait AlertContainer extends Component[AlertContainerProps, Any, Any] {
     
     def onBackAndroid(): Boolean = js.native
     
@@ -49,7 +48,7 @@ object alertContainerMod {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,7 @@ trait IChangeEvent[T] extends StObject {
   
   var formData: T
   
-  var idSchema: IdSchema[js.Any]
+  var idSchema: IdSchema[Any]
   
   var schema: JSONSchema6
   
@@ -30,7 +30,7 @@ object IChangeEvent {
     errorSchema: FormValidation,
     errors: js.Array[AjvError],
     formData: T,
-    idSchema: IdSchema[js.Any],
+    idSchema: IdSchema[Any],
     schema: JSONSchema6,
     uiSchema: UiSchema
   ): IChangeEvent[T] = {
@@ -46,11 +46,11 @@ object IChangeEvent {
     
     inline def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    inline def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    inline def setIdSchema(value: IdSchema[Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

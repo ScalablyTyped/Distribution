@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for Firestore.ListDocuments.
-  */
 trait SchemaListDocumentsResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListDocumentsResponse extends StObject {
   /**
     * The next page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDocumentsResponse {
   
@@ -32,9 +29,11 @@ object SchemaListDocumentsResponse {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: SchemaDocument*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: SchemaDocument*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

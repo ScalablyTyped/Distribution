@@ -12,7 +12,7 @@ trait RegexPatternSet extends StObject {
   var ARN: js.UndefOr[ResourceArn] = js.undefined
   
   /**
-    * A description of the set that helps with identification. You cannot change the description of a set after you create it.
+    * A description of the set that helps with identification. 
     */
   var Description: js.UndefOr[EntityDescription] = js.undefined
   
@@ -60,6 +60,6 @@ object RegexPatternSet {
     
     inline def setRegularExpressionListUndefined: Self = StObject.set(x, "RegularExpressionList", js.undefined)
     
-    inline def setRegularExpressionListVarargs(value: Regex*): Self = StObject.set(x, "RegularExpressionList", js.Array(value :_*))
+    inline def setRegularExpressionListVarargs(value: Regex*): Self = StObject.set(x, "RegularExpressionList", js.Array(value*))
   }
 }

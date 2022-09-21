@@ -84,7 +84,7 @@ object BatchDescribeMergeConflictsInput {
     
     inline def setFilePathsUndefined: Self = StObject.set(x, "filePaths", js.undefined)
     
-    inline def setFilePathsVarargs(value: Path*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
+    inline def setFilePathsVarargs(value: Path*): Self = StObject.set(x, "filePaths", js.Array(value*))
     
     inline def setMaxConflictFiles(value: MaxResults): Self = StObject.set(x, "maxConflictFiles", value.asInstanceOf[js.Any])
     

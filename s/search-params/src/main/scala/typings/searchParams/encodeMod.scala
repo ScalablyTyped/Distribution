@@ -10,11 +10,13 @@ object encodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decode(value: js.Any, opts: IFinalOptions): String | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Boolean | Null]
+  inline def decode(value: Any, opts: IFinalOptions): String | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Boolean | Null]
   
-  inline def encode(name: String, value: js.Any, opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decodeValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def encodeArray(name: String, arr: js.Array[js.Any], opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeArray")(name.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(name: String, value: Any, opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def encodeArray(name: String, arr: js.Array[Any], opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeArray")(name.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def makeOptions(): IFinalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptions")().asInstanceOf[IFinalOptions]
   inline def makeOptions(opts: IOptions): IFinalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[IFinalOptions]

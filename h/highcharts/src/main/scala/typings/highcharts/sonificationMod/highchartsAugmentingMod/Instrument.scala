@@ -53,6 +53,6 @@ trait Instrument extends StObject {
     */
   def stop(immediately: Boolean): Unit = js.native
   def stop(immediately: Boolean, onStopped: js.Function): Unit = js.native
-  def stop(immediately: Boolean, onStopped: js.Function, callbackData: js.Any): Unit = js.native
-  def stop(immediately: Boolean, onStopped: Unit, callbackData: js.Any): Unit = js.native
+  def stop(immediately: Boolean, onStopped: js.Function, callbackData: Any): Unit = js.native
+  def stop(immediately: Boolean, onStopped: Unit, callbackData: Any): Unit = js.native
 }

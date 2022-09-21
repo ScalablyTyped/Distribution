@@ -9,12 +9,12 @@ object methodActionMod {
   
   @JSImport("ts-mockito/lib/MethodAction", "MethodAction")
   @js.native
-  class MethodAction protected () extends StObject {
-    def this(methodName: String, args: js.Array[js.Any]) = this()
+  open class MethodAction protected () extends StObject {
+    def this(methodName: String, args: js.Array[Any]) = this()
     
-    var args: js.Array[js.Any] = js.native
+    var args: js.Array[Any] = js.native
     
-    /* private */ var callIndex: js.Any = js.native
+    /* private */ var callIndex: Any = js.native
     
     def getCallIndex(): Double = js.native
     
@@ -33,7 +33,7 @@ object methodActionMod {
     
     @JSImport("ts-mockito/lib/MethodAction", "MethodAction.globalCallIndex")
     @js.native
-    def globalCallIndex: js.Any = js.native
-    inline def globalCallIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCallIndex")(x.asInstanceOf[js.Any])
+    def globalCallIndex: Any = js.native
+    inline def globalCallIndex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCallIndex")(x.asInstanceOf[js.Any])
   }
 }

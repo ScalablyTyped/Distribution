@@ -11,9 +11,9 @@ A tool for generating the text version of an html email.
 | Full name          | textversionjs |
 | Keywords           | email, html, text, version, plaintext |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 145775 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14471.333333333334 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/EDMdesigner/textversionjs#readme)

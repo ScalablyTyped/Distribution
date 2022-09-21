@@ -1,69 +1,35 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentType
-import typings.reactSelect.srcCreatableMod.Props
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.react.mod.ReactElement
+import typings.react.mod.RefAttributes
+import typings.reactSelect.reactSelectBooleans.`false`
+import typings.reactSelect.selectMod.PublicBaseSelectProps
+import typings.reactSelect.typesMod.GroupBase
+import typings.reactSelect.useCreatableMod.BaseCreatableProps
+import typings.reactSelect.useCreatableMod.CreatableAdditionalProps
+import typings.reactSelect.useStateManagerMod.StateManagerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object creatableMod {
   
-  @JSImport("react-select/creatable", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/Creatable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/creatable", JSImport.Default)
+  @JSImport("react-select/dist/declarations/src/Creatable", JSImport.Default)
   @js.native
-  class default[OptionType /* <: OptionTypeBase */] protected ()
-    extends typings.reactSelect.srcCreatableMod.default[OptionType] {
-    def this(props: Props[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Props[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("react-select/creatable", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/creatable", "default.defaultProps")
-    @js.native
-    def defaultProps: Props[js.Any] = js.native
-    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: CreatableSelect = js.native
   
-  @JSImport("react-select/creatable", "Creatable")
-  @js.native
-  class Creatable[OptionType /* <: OptionTypeBase */] protected ()
-    extends typings.reactSelect.srcCreatableMod.Creatable[OptionType] {
-    def this(props: Props[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Props[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object Creatable {
-    
-    @JSImport("react-select/creatable", "Creatable")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/creatable", "Creatable.defaultProps")
-    @js.native
-    def defaultProps: Props[js.Any] = js.native
-    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  inline def useCreatable[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps: BaseCreatableProps[Option, IsMulti, Group]
+  ): PublicBaseSelectProps[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCreatable")(hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[PublicBaseSelectProps[Option, IsMulti, Group]]
   
-  @JSImport("react-select/creatable", "defaultProps")
-  @js.native
-  val defaultProps: Props[js.Any] = js.native
+  type CreatableProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = (StateManagerProps[Option, IsMulti, Group]) & (CreatableAdditionalProps[Option, Group])
   
-  inline def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): typings.reactSelect.srcCreatableMod.Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[typings.reactSelect.srcCreatableMod.Creatable[js.Any]]
+  type CreatableSelect = js.Function1[
+    /* props */ (CreatableProps[Any, `false`, GroupBase[Any]]) & (RefAttributes[typings.reactSelect.selectMod.default[Any, `false`, GroupBase[Any]]]), 
+    ReactElement
+  ]
 }

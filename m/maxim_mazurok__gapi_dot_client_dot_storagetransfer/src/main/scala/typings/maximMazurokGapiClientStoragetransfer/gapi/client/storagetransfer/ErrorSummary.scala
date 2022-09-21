@@ -12,7 +12,7 @@ trait ErrorSummary extends StObject {
   /** Required. Count of this type of error. */
   var errorCount: js.UndefOr[String] = js.undefined
   
-  /** Error samples. At most 5 error log entries will be recorded for a given error code for a single transfer operation. */
+  /** Error samples. At most 5 error log entries are recorded for a given error code for a single transfer operation. */
   var errorLogEntries: js.UndefOr[js.Array[ErrorLogEntry]] = js.undefined
 }
 object ErrorSummary {
@@ -36,6 +36,6 @@ object ErrorSummary {
     
     inline def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
     
-    inline def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
+    inline def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value*))
   }
 }

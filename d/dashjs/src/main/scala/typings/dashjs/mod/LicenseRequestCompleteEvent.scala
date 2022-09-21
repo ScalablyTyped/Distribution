@@ -12,7 +12,7 @@ trait LicenseRequestCompleteEvent
   
   var data: MessageType
   
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[DashJSError] = js.undefined
   
   @JSName("type")
   var type_LicenseRequestCompleteEvent: public_licenseRequestComplete
@@ -29,7 +29,7 @@ object LicenseRequestCompleteEvent {
     
     inline def setData(value: MessageType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: DashJSError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

@@ -9,7 +9,7 @@ trait LogEvent extends StObject {
   /**
     * The timestamp when the database log event was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message of the database log event.
@@ -25,7 +25,7 @@ object LogEvent {
   
   extension [Self <: LogEvent](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListWorkweekConfigsRequest")
 @js.native
-class ListWorkweekConfigsRequest () extends StObject {
+open class ListWorkweekConfigsRequest () extends StObject {
   
   /**
     * Pointer to the next page of Workweek Config results to fetch.

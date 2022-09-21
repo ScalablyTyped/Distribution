@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Drive file that is used as material for course work.
-  */
 trait SchemaSharedDriveFile extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaSharedDriveFile extends StObject {
   /**
     * Mechanism by which students access the Drive item.
     */
-  var shareMode: js.UndefOr[String] = js.undefined
+  var shareMode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSharedDriveFile {
   
@@ -33,6 +30,8 @@ object SchemaSharedDriveFile {
     inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
     inline def setShareMode(value: String): Self = StObject.set(x, "shareMode", value.asInstanceOf[js.Any])
+    
+    inline def setShareModeNull: Self = StObject.set(x, "shareMode", null)
     
     inline def setShareModeUndefined: Self = StObject.set(x, "shareMode", js.undefined)
   }

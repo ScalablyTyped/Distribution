@@ -13,12 +13,12 @@ object octreesIndexMod {
   
   @JSImport("babylonjs/Culling/Octrees/index", "Octree")
   @js.native
-  class Octree[T] protected ()
+  open class Octree[T] protected ()
     extends typings.babylonjs.octreeMod.Octree[T] {
     /**
       * Creates a octree
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-      * @param creationFunc function to be used to instatiate the octree
+      * @param creationFunc function to be used to instantiate the octree
       * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
       * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
       */
@@ -49,18 +49,22 @@ object octreesIndexMod {
     
     /**
       * Adds a mesh into the octree block if it intersects the block
+      * @param entry
+      * @param block
       */
     inline def CreationFuncForMeshes(entry: AbstractMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[AbstractMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Adds a submesh into the octree block if it intersects the block
+      * @param entry
+      * @param block
       */
     inline def CreationFuncForSubMeshes(entry: SubMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Culling/Octrees/index", "OctreeBlock")
   @js.native
-  class OctreeBlock[T] protected ()
+  open class OctreeBlock[T] protected ()
     extends typings.babylonjs.octreeBlockMod.OctreeBlock[T] {
     /**
       * Creates a new block
@@ -88,6 +92,14 @@ object octreesIndexMod {
     val ^ : js.Any = js.native
     
     /**
+      * @param worldMin
+      * @param worldMax
+      * @param entries
+      * @param maxBlockCapacity
+      * @param currentDepth
+      * @param maxDepth
+      * @param target
+      * @param creationFunc
       * @hidden
       */
     inline def _CreateBlocks[T](
@@ -104,12 +116,12 @@ object octreesIndexMod {
   
   @JSImport("babylonjs/Culling/Octrees/index", "OctreeSceneComponent")
   @js.native
-  class OctreeSceneComponent protected ()
+  /**
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
+  open class OctreeSceneComponent ()
     extends typings.babylonjs.octreeSceneComponentMod.OctreeSceneComponent {
-    /**
-      * Creates a new instance of the component for the given scene
-      * @param scene Defines the scene to register the component in
-      */
     def this(scene: Scene) = this()
   }
   

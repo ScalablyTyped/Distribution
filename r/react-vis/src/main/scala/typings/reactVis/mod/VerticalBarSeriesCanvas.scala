@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "VerticalBarSeriesCanvas")
 @js.native
-class VerticalBarSeriesCanvas protected () extends AbstractSeries[VerticalBarSeriesCanvasProps] {
+open class VerticalBarSeriesCanvas protected () extends AbstractSeries[VerticalBarSeriesCanvasProps] {
   def this(props: VerticalBarSeriesCanvasProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: VerticalBarSeriesCanvasProps, context: js.Any) = this()
+  def this(props: VerticalBarSeriesCanvasProps, context: Any) = this()
 }

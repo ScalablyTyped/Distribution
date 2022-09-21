@@ -10,10 +10,10 @@ Abstraction for exponential and custom retry strategies for failed operations.
 | ------------------ | :-------------: |
 | Full name          | retry |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 397 |
-| # downloads        | 517350484 |
-| # stars            | 38 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.00402613E8 |
+| # stars            | 1018.0 |
 
 ## Links
 - [Homepage](https://github.com/tim-kos/node-retry)

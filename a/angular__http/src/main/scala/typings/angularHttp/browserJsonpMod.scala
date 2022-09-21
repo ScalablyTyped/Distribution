@@ -8,13 +8,13 @@ object browserJsonpMod {
   
   @JSImport("@angular/http/src/backends/browser_jsonp", "BrowserJsonp")
   @js.native
-  class BrowserJsonp () extends StObject {
+  open class BrowserJsonp () extends StObject {
     
-    def build(url: String): js.Any = js.native
+    def build(url: String): Any = js.native
     
-    def cleanup(node: js.Any): Unit = js.native
+    def cleanup(node: Any): Unit = js.native
     
-    def exposeConnection(id: String, connection: js.Any): Unit = js.native
+    def exposeConnection(id: String, connection: Any): Unit = js.native
     
     def nextRequestID(): String = js.native
     
@@ -22,7 +22,7 @@ object browserJsonpMod {
     
     def requestCallback(id: String): String = js.native
     
-    def send(node: js.Any): Unit = js.native
+    def send(node: Any): Unit = js.native
   }
   
   @JSImport("@angular/http/src/backends/browser_jsonp", "JSONP_HOME")

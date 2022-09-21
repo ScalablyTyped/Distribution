@@ -1,6 +1,6 @@
 package typings.three
 
-import typings.three.geometryMod.Geometry
+import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.shapeMod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,19 +10,20 @@ object shapeGeometryMod {
   
   @JSImport("three/src/geometries/ShapeGeometry", "ShapeGeometry")
   @js.native
-  class ShapeGeometry protected () extends Geometry {
+  open class ShapeGeometry () extends BufferGeometry {
     def this(shapes: js.Array[Shape]) = this()
-    /**
-    	 * @param shapes
-    	 * @param [curveSegments=12]
-    	 */
     def this(shapes: Shape) = this()
     def this(shapes: js.Array[Shape], curveSegments: Double) = this()
+    def this(shapes: Unit, curveSegments: Double) = this()
     def this(shapes: Shape, curveSegments: Double) = this()
+  }
+  /* static members */
+  object ShapeGeometry {
     
-    def addShape(shape: Shape): Unit = js.native
-    def addShape(shape: Shape, options: js.Any): Unit = js.native
+    @JSImport("three/src/geometries/ShapeGeometry", "ShapeGeometry")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def addShapeList(shapes: js.Array[Shape], options: js.Any): ShapeGeometry = js.native
+    inline def fromJSON(data: Any): ShapeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ShapeGeometry]
   }
 }

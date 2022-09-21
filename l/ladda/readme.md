@@ -1,7 +1,7 @@
 
 # Scala.js typings for ladda
 
-Typings are for version 2.0.1
+Typings are for version 2.0.3
 
 ## Library description:
 Buttons with built-in loading indicators
@@ -10,13 +10,13 @@ Buttons with built-in loading indicators
 | ------------------ | :-------------: |
 | Full name          | ladda |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 1845706 |
-| # stars            | 8 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 271571.3333333333 |
+| # stars            | 7866.0 |
 
 ## Links
-- [Homepage](http://lab.hakim.se/ladda)
+- [Homepage](https://lab.hakim.se/ladda/)
 - [Bugs](https://github.com/hakimel/Ladda/issues)
 - [Repository](https://github.com/hakimel/Ladda)
 - [Npm](https://www.npmjs.com/package/ladda)

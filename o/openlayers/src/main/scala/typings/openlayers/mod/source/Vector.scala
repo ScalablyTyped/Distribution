@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Vector source options.
   * @api stable
   */
-class Vector () extends Source {
+open class Vector () extends Source {
   def this(opt_options: VectorOptions) = this()
   
   /**
@@ -72,7 +72,7 @@ class Vector () extends Source {
     * @api stable
     */
   def forEachFeature[S](callback: js.Function1[/* feature */ Feature, S]): S = js.native
-  def forEachFeature[S](callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  def forEachFeature[S](callback: js.Function1[/* feature */ Feature, S], opt_this: Any): S = js.native
   
   /**
     * Iterate through all features whose bounding box intersects the provided
@@ -96,7 +96,7 @@ class Vector () extends Source {
     * @api
     */
   def forEachFeatureInExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S]): S = js.native
-  def forEachFeatureInExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  def forEachFeatureInExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: Any): S = js.native
   
   /**
     * Iterate through all features whose geometry intersects the provided extent,
@@ -116,7 +116,7 @@ class Vector () extends Source {
     * @api
     */
   def forEachFeatureIntersectingExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S]): S = js.native
-  def forEachFeatureIntersectingExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  def forEachFeatureIntersectingExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: Any): S = js.native
   
   /**
     * Get the closest feature to the provided coordinate.

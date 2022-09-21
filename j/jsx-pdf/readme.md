@@ -10,10 +10,10 @@ Generate modular PDFs using JSX.
 | ------------------ | :-------------: |
 | Full name          | jsx-pdf |
 | Keywords           | pdf, jsx, pdf-generation, pdfmake |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 747 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 416.0 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/schibsted/jsx-pdf#readme)

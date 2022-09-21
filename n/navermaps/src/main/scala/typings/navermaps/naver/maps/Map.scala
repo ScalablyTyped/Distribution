@@ -14,14 +14,14 @@ trait Map
   def addPane(name: String, elementOrIndex: Double): Unit = js.native
   def addPane(name: String, elementOrIndex: HTMLElement): Unit = js.native
   
-  var controls: js.Any = js.native
+  var controls: Any = js.native
   
-  var data: js.Any = js.native
+  var data: Any = js.native
   
-  def destory(): Unit = js.native
+  def destroy(): Unit = js.native
   
-  def fitBounds(bounds: js.Any): Unit = js.native
-  def fitBounds(bounds: js.Any, margin: js.Any): Unit = js.native
+  def fitBounds(bounds: Any): Unit = js.native
+  def fitBounds(bounds: Any, margin: Any): Unit = js.native
   
   def getBounds(): Bounds = js.native
   
@@ -33,8 +33,8 @@ trait Map
   
   def getMapTypeId(): String = js.native
   
-  def getOptions(): js.Any = js.native
-  def getOptions(key: String): js.Any = js.native
+  def getOptions(): Any = js.native
+  def getOptions(key: String): Any = js.native
   
   def getPanes(): MapPanes = js.native
   
@@ -46,11 +46,11 @@ trait Map
   
   def getZoom(): Double = js.native
   
-  var layers: js.Any = js.native
+  var layers: Any = js.native
   
-  var mapSystemProjection: js.Any = js.native
+  var mapSystemProjection: Any = js.native
   
-  var mapTypes: js.Any = js.native
+  var mapTypes: Any = js.native
   
   def morph(coord: Coord): Unit = js.native
   def morph(coord: CoordLiteral): Unit = js.native
@@ -85,8 +85,8 @@ trait Map
   
   def setMapTypeId(mapTypeId: String): Unit = js.native
   
-  def setOptions(newOptionsOrKey: js.Any): Unit = js.native
-  def setOptions(newOptionsOrKey: js.Any, value: js.Any): Unit = js.native
+  def setOptions(newOptionsOrKey: Any): Unit = js.native
+  def setOptions(newOptionsOrKey: Any, value: Any): Unit = js.native
   
   def setSize(size: Size): Unit = js.native
   def setSize(size: SizeLiteral): Unit = js.native

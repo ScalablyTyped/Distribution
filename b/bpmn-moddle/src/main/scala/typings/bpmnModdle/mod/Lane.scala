@@ -40,7 +40,7 @@ object Lane {
     
     inline def setFlowNodeRef(value: js.Array[FlowNode]): Self = StObject.set(x, "flowNodeRef", value.asInstanceOf[js.Any])
     
-    inline def setFlowNodeRefVarargs(value: FlowNode*): Self = StObject.set(x, "flowNodeRef", js.Array(value :_*))
+    inline def setFlowNodeRefVarargs(value: FlowNode*): Self = StObject.set(x, "flowNodeRef", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

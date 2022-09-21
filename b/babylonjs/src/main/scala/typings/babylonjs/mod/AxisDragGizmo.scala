@@ -7,13 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "AxisDragGizmo")
 @js.native
-class AxisDragGizmo protected ()
+open class AxisDragGizmo protected ()
   extends typings.babylonjs.legacyMod.AxisDragGizmo {
   /**
     * Creates an AxisDragGizmo
-    * @param gizmoLayer The utility layer the gizmo will be added to
     * @param dragAxis The axis which the gizmo will be able to drag on
     * @param color The color of the gizmo
+    * @param gizmoLayer The utility layer the gizmo will be added to
+    * @param parent
     * @param thickness display gizmo axis thickness
     */
   def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3) = this()
@@ -116,7 +117,13 @@ object AxisDragGizmo {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param scene
+    * @param material
+    * @param thickness
+    * @param isCollider
+    * @hidden
+    */
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial
@@ -139,6 +146,10 @@ object AxisDragGizmo {
     isCollider: Boolean
   ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
   
-  /** @hidden */
+  /**
+    * @param scene
+    * @param arrow
+    * @hidden
+    */
   inline def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
 }

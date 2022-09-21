@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait HeaderFooterState extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.HeaderFooterState")
@@ -15,7 +16,8 @@ object HeaderFooterState extends StObject {
   
   /**
     * Only one general header/footer is used for all pages printed.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait default
@@ -24,7 +26,8 @@ object HeaderFooterState extends StObject {
   
   /**
     * There is a separate first page header/footer, and a general header/footer used for all other pages.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait firstAndDefault
@@ -33,7 +36,8 @@ object HeaderFooterState extends StObject {
   
   /**
     * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait firstOddAndEven
@@ -42,7 +46,8 @@ object HeaderFooterState extends StObject {
   
   /**
     * There is a different header/footer for odd and even pages.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait oddAndEven

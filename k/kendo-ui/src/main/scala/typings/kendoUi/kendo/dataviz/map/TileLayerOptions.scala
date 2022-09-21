@@ -8,7 +8,7 @@ trait TileLayerOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.undefined
+  var subdomains: js.UndefOr[Any] = js.undefined
   
   var tileSize: js.UndefOr[Double] = js.undefined
   
@@ -27,7 +27,7 @@ object TileLayerOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSubdomains(value: js.Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
+    inline def setSubdomains(value: Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     

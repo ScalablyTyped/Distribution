@@ -15,7 +15,7 @@ trait EntityKey extends StObject {
   /**
     * The namespace in which the entity exists. If not specified, the `EntityKey` represents a Google-managed entity such as a Google user or a Google Group. If specified, the `EntityKey`
     * represents an external-identity-mapped group. The namespace must correspond to an identity source created in Admin Console and must be in the form of
-    * `identitysources/{identity_source_id}.
+    * `identitysources/{identity_source}`.
     */
   var namespace: js.UndefOr[String] = js.undefined
 }

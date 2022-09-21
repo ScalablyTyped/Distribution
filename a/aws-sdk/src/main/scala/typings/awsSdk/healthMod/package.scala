@@ -1,68 +1,69 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DescribeAffectedEntitiesForOrganizationFailedSet = js.Array[typings.awsSdk.healthMod.OrganizationAffectedEntitiesErrorItem]
+type DescribeAffectedEntitiesForOrganizationFailedSet = js.Array[OrganizationAffectedEntitiesErrorItem]
 
-type DescribeEventDetailsFailedSet = js.Array[typings.awsSdk.healthMod.EventDetailsErrorItem]
+type DescribeEventDetailsFailedSet = js.Array[EventDetailsErrorItem]
 
-type DescribeEventDetailsForOrganizationFailedSet = js.Array[typings.awsSdk.healthMod.OrganizationEventDetailsErrorItem]
+type DescribeEventDetailsForOrganizationFailedSet = js.Array[OrganizationEventDetailsErrorItem]
 
-type DescribeEventDetailsForOrganizationSuccessfulSet = js.Array[typings.awsSdk.healthMod.OrganizationEventDetails]
+type DescribeEventDetailsForOrganizationSuccessfulSet = js.Array[OrganizationEventDetails]
 
-type DescribeEventDetailsSuccessfulSet = js.Array[typings.awsSdk.healthMod.EventDetails]
+type DescribeEventDetailsSuccessfulSet = js.Array[EventDetails]
 
-type EntityAggregateList = js.Array[typings.awsSdk.healthMod.EntityAggregate]
+type EntityAggregateList = js.Array[EntityAggregate]
 
-type EntityList = js.Array[typings.awsSdk.healthMod.AffectedEntity]
+type EntityList = js.Array[AffectedEntity]
 
-type EventAggregateList = js.Array[typings.awsSdk.healthMod.EventAggregate]
+type EventAggregateList = js.Array[EventAggregate]
 
-type EventArnsList = js.Array[typings.awsSdk.healthMod.eventArn]
+type EventArnsList = js.Array[eventArn]
 
-type EventList = js.Array[typings.awsSdk.healthMod.Event]
+type EventList = js.Array[Event]
 
-type EventTypeCategoryList_ = js.Array[typings.awsSdk.healthMod.eventTypeCategory]
+type EventTypeCategoryList_ = js.Array[eventTypeCategory]
 
-type EventTypeCodeList = js.Array[typings.awsSdk.healthMod.eventTypeCode]
+type EventTypeCodeList = js.Array[eventTypeCode]
 
-type EventTypeList_ = js.Array[typings.awsSdk.healthMod.EventType_]
+type EventTypeList_ = js.Array[EventType_]
 
-type OrganizationEntityFiltersList = js.Array[typings.awsSdk.healthMod.EventAccountFilter]
+type OrganizationEntityFiltersList = js.Array[EventAccountFilter]
 
-type OrganizationEventDetailFiltersList = js.Array[typings.awsSdk.healthMod.EventAccountFilter]
+type OrganizationEventDetailFiltersList = js.Array[EventAccountFilter]
 
-type OrganizationEventList = js.Array[typings.awsSdk.healthMod.OrganizationEvent]
+type OrganizationEventList = js.Array[OrganizationEvent]
 
-type accountId = java.lang.String
+type accountId = String
 
-type affectedAccountsList = js.Array[typings.awsSdk.healthMod.accountId]
+type affectedAccountsList = js.Array[accountId]
 
-type aggregateValue = java.lang.String
+type aggregateValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-08-04`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.healthMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type availabilityZone = java.lang.String
+type availabilityZone = String
 
-type availabilityZones = js.Array[typings.awsSdk.healthMod.availabilityZone]
+type availabilityZones = js.Array[availabilityZone]
 
-type awsAccountIdsList = js.Array[typings.awsSdk.healthMod.accountId]
+type awsAccountIdsList = js.Array[accountId]
 
-type count = scala.Double
+type count = Double
 
-type dateTimeRangeList = js.Array[typings.awsSdk.healthMod.DateTimeRange]
+type dateTimeRangeList = js.Array[DateTimeRange]
 
-type entityArn = java.lang.String
+type entityArn = String
 
-type entityArnList = js.Array[typings.awsSdk.healthMod.entityArn]
+type entityArnList = js.Array[entityArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPAIRED
@@ -70,25 +71,25 @@ type entityArnList = js.Array[typings.awsSdk.healthMod.entityArn]
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type entityStatusCode = typings.awsSdk.healthMod._entityStatusCode | java.lang.String
+type entityStatusCode = _entityStatusCode | String
 
-type entityStatusCodeList = js.Array[typings.awsSdk.healthMod.entityStatusCode]
+type entityStatusCodeList = js.Array[entityStatusCode]
 
-type entityUrl = java.lang.String
+type entityUrl = String
 
-type entityValue = java.lang.String
+type entityValue = String
 
-type entityValueList = js.Array[typings.awsSdk.healthMod.entityValue]
+type entityValueList = js.Array[entityValue]
 
-type eventAggregateField = typings.awsSdk.awsSdkStrings.eventTypeCategory | java.lang.String
+type eventAggregateField = typings.awsSdk.awsSdkStrings.eventTypeCategory | String
 
-type eventArn = java.lang.String
+type eventArn = String
 
-type eventArnList = js.Array[typings.awsSdk.healthMod.eventArn]
+type eventArnList = js.Array[eventArn]
 
-type eventDescription = java.lang.String
+type eventDescription = String
 
-type eventMetadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.healthMod.metadataValue]
+type eventMetadata = StringDictionary[metadataValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -96,7 +97,7 @@ type eventMetadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.h
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type eventScopeCode = typings.awsSdk.healthMod._eventScopeCode | java.lang.String
+type eventScopeCode = _eventScopeCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.open__
@@ -104,11 +105,11 @@ type eventScopeCode = typings.awsSdk.healthMod._eventScopeCode | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.upcoming
   - java.lang.String
 */
-type eventStatusCode = typings.awsSdk.healthMod._eventStatusCode | java.lang.String
+type eventStatusCode = _eventStatusCode | String
 
-type eventStatusCodeList = js.Array[typings.awsSdk.healthMod.eventStatusCode]
+type eventStatusCodeList = js.Array[eventStatusCode]
 
-type eventType = java.lang.String
+type eventType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.issue
@@ -117,40 +118,42 @@ type eventType = java.lang.String
   - typings.awsSdk.awsSdkStrings.investigation
   - java.lang.String
 */
-type eventTypeCategory = typings.awsSdk.healthMod._eventTypeCategory | java.lang.String
+type eventTypeCategory = _eventTypeCategory | String
 
-type eventTypeCategoryList = js.Array[typings.awsSdk.healthMod.eventTypeCategory]
+type eventTypeCategoryList = js.Array[eventTypeCategory]
 
-type eventTypeCode = java.lang.String
+type eventTypeCode = String
 
-type eventTypeList = js.Array[typings.awsSdk.healthMod.eventType]
+type eventTypeList = js.Array[eventType]
 
-type healthServiceAccessStatusForOrganization = java.lang.String
+type healthServiceAccessStatusForOrganization = String
 
-type locale = java.lang.String
+type locale = String
 
-type maxResults = scala.Double
+type maxResults = Double
 
-type metadataKey = java.lang.String
+type maxResultsLowerRange = Double
 
-type metadataValue = java.lang.String
+type metadataKey = String
 
-type nextToken = java.lang.String
+type metadataValue = String
 
-type region = java.lang.String
+type nextToken = String
 
-type regionList = js.Array[typings.awsSdk.healthMod.region]
+type region = String
 
-type service = java.lang.String
+type regionList = js.Array[region]
 
-type serviceList = js.Array[typings.awsSdk.healthMod.service]
+type service = String
 
-type tagFilter = js.Array[typings.awsSdk.healthMod.tagSet]
+type serviceList = js.Array[service]
 
-type tagKey = java.lang.String
+type tagFilter = js.Array[tagSet]
 
-type tagSet = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.healthMod.tagValue]
+type tagKey = String
 
-type tagValue = java.lang.String
+type tagSet = StringDictionary[tagValue]
 
-type timestamp = typings.std.Date
+type tagValue = String
+
+type timestamp = js.Date

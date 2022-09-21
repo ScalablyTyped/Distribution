@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-textarea-autosize
 
-Typings are for version 8.3.0
+Typings are for version 8.3.4
 
 ## Library description:
 textarea component for React which grows with content
@@ -10,15 +10,12 @@ textarea component for React which grows with content
 | ------------------ | :-------------: |
 | Full name          | react-textarea-autosize |
 | Keywords           | autosize, grow, react, react-component, textarea |
-| # releases         | 8 |
-| # dependents       | 392 |
-| # downloads        | 114333621 |
-| # stars            | 8 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8814328666666668E7 |
+| # stars            | 1670.0 |
 
 ## Links
-- [Homepage](https://github.com/Andarist/react-textarea-autosize#readme)
-- [Bugs](https://github.com/Andarist/react-textarea-autosize/issues)
-- [Repository](https://github.com/Andarist/react-textarea-autosize)
 - [Npm](https://www.npmjs.com/package/react-textarea-autosize)
     
 

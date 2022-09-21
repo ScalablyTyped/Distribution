@@ -28,7 +28,7 @@ object ListCompaniesResponse {
     
     inline def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
     
-    inline def setCompaniesVarargs(value: Company*): Self = StObject.set(x, "companies", js.Array(value :_*))
+    inline def setCompaniesVarargs(value: Company*): Self = StObject.set(x, "companies", js.Array(value*))
     
     inline def setMetadata(value: ResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

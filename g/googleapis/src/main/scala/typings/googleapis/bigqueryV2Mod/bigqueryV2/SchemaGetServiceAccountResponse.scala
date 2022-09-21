@@ -9,12 +9,12 @@ trait SchemaGetServiceAccountResponse extends StObject {
   /**
     * The service account email address.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The resource type of the response.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGetServiceAccountResponse {
   
@@ -27,9 +27,13 @@ object SchemaGetServiceAccountResponse {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
+    
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

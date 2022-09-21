@@ -20,5 +20,5 @@ object pointer {
     */
   @JSImport("openlayers", "pointer.PointerEvent")
   @js.native
-  class PointerEvent () extends StObject
+  open class PointerEvent () extends StObject
 }

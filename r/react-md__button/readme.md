@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__button
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 This package is used to create buttons with the material design spec. There is built-in support to be able to render accessible clickable divs that look like buttons, or even apply button styles to any element.
@@ -10,10 +10,10 @@ This package is used to create buttons with the material design spec. There is b
 | ------------------ | :-------------: |
 | Full name          | @react-md/button |
 | Keywords           | accessibility, a11y, react-md, material design, react, button, component, components |
-| # releases         | 39 |
-| # dependents       | 7 |
-| # downloads        | 24167 |
-| # stars            | 0 |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 8784.333333333334 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/button/demos)

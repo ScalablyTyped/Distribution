@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ElastiCache ()
+open class ElastiCache ()
   extends typings.awsSdk.mod.ElastiCache {
   def this(options: ClientConfiguration) = this()
 }

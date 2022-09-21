@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-assets-manifest
 
-Typings are for version 3.0
+Typings are for version 5.1
 
 ## Library description:
 This Webpack plugin will generate a JSON file that matches the original filename with the hashed version.
@@ -10,15 +10,12 @@ This Webpack plugin will generate a JSON file that matches the original filename
 | ------------------ | :-------------: |
 | Full name          | webpack-assets-manifest |
 | Keywords           | webpack-assets-manifest, webpack-plugin, webpack, plugin, assets, manifest, json, subresource, integrity, sri |
-| # releases         | 5 |
-| # dependents       | 75 |
-| # downloads        | 27460247 |
-| # stars            | 4 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 4017177.3333333335 |
+| # stars            | 313.0 |
 
 ## Links
-- [Homepage](https://github.com/webdeveric/webpack-assets-manifest)
-- [Bugs](https://github.com/webdeveric/webpack-assets-manifest/issues)
-- [Repository](https://github.com/webdeveric/webpack-assets-manifest)
 - [Npm](https://www.npmjs.com/package/webpack-assets-manifest)
     
 

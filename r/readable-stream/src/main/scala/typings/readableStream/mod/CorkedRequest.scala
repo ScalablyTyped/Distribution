@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // ==== _stream_writable ====
 trait CorkedRequest extends StObject {
   
-  var entry: js.Any
+  var entry: Any
   
   def finish(): Unit
   
-  var next: js.Any
+  var next: Any
 }
 object CorkedRequest {
   
-  inline def apply(entry: js.Any, finish: () => Unit, next: js.Any): CorkedRequest = {
+  inline def apply(entry: Any, finish: () => Unit, next: Any): CorkedRequest = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), next = next.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorkedRequest]
   }
   
   extension [Self <: CorkedRequest](x: Self) {
     
-    inline def setEntry(value: js.Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
     
-    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
   }
 }

@@ -13,7 +13,7 @@ object dnodeMod {
   
   @JSImport("mobservable/lib/dnode", "DataNode")
   @js.native
-  class DataNode protected () extends StObject {
+  open class DataNode protected () extends StObject {
     def this(context: IContextInfoStruct) = this()
     
     def addObserver(node: ViewNode): Unit = js.native
@@ -76,20 +76,20 @@ object dnodeMod {
   
   @JSImport("mobservable/lib/dnode", "ViewNode")
   @js.native
-  class ViewNode protected () extends DataNode {
+  open class ViewNode protected () extends DataNode {
     def this(context: IContextInfoStruct) = this()
     
-    /* private */ def bindDependencies(): js.Any = js.native
+    /* private */ def bindDependencies(): Any = js.native
     
     def compute(): Boolean = js.native
     
     def computeNextState(): Unit = js.native
     
-    /* private */ var dependencyChangeCount: js.Any = js.native
+    /* private */ var dependencyChangeCount: Any = js.native
     
-    /* private */ var dependencyStaleCount: js.Any = js.native
+    /* private */ var dependencyStaleCount: Any = js.native
     
-    /* private */ def findCycle(node: js.Any): js.Any = js.native
+    /* private */ def findCycle(node: Any): Any = js.native
     
     var hasCycle: Boolean = js.native
     
@@ -99,13 +99,13 @@ object dnodeMod {
     
     var observing: js.Array[DataNode] = js.native
     
-    /* private */ var onSleepEmitter: js.Any = js.native
+    /* private */ var onSleepEmitter: Any = js.native
     
-    def onceSleep(onSleep: js.Function1[/* lastValue */ js.Any, Unit]): Unit = js.native
+    def onceSleep(onSleep: js.Function1[/* lastValue */ Any, Unit]): Unit = js.native
     
-    /* private */ var prevObserving: js.Any = js.native
+    /* private */ var prevObserving: Any = js.native
     
-    /* private */ def trackDependencies(): js.Any = js.native
+    /* private */ def trackDependencies(): Any = js.native
     
     def tryToSleep(): Unit = js.native
     
@@ -120,10 +120,10 @@ object dnodeMod {
   
   inline def runAfterTransaction(action: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAfterTransaction")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def stackDepth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stackDepth")().asInstanceOf[js.Any]
+  inline def stackDepth(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stackDepth")().asInstanceOf[Any]
   
   inline def transaction[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def transaction[T](action: js.Function0[T], thisArg: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transaction[T](action: js.Function0[T], thisArg: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
 }

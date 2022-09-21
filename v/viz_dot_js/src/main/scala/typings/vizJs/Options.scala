@@ -33,7 +33,7 @@ object Options {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object Options {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setYInvert(value: Boolean): Self = StObject.set(x, "yInvert", value.asInstanceOf[js.Any])
     

@@ -1,31 +1,26 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDialogflow.anon.Alt
-import typings.maximMazurokGapiClientDialogflow.anon.QuotaUserResource
-import typings.maximMazurokGapiClientDialogflow.anon.QuotaUserUpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var agent: AgentResource = js.native
+  var locations: LocationsResource
   
-  /** Deletes the specified agent. */
-  def deleteAgent(): Request[js.Object] = js.native
-  def deleteAgent(request: Alt): Request[js.Object] = js.native
+  var operations: OperationsResource
+}
+object ProjectsResource {
   
-  /** Retrieves the specified agent. */
-  def getAgent(): Request[GoogleCloudDialogflowV2Agent] = js.native
-  def getAgent(request: Alt): Request[GoogleCloudDialogflowV2Agent] = js.native
+  inline def apply(locations: LocationsResource, operations: OperationsResource): ProjectsResource = {
+    val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProjectsResource]
+  }
   
-  var locations: LocationsResource = js.native
-  
-  var operations: OperationsResource = js.native
-  
-  /** Creates/updates the specified agent. */
-  def setAgent(request: QuotaUserResource): Request[GoogleCloudDialogflowV2Agent] = js.native
-  def setAgent(request: QuotaUserUpdateMask, body: GoogleCloudDialogflowV2Agent): Request[GoogleCloudDialogflowV2Agent] = js.native
+  extension [Self <: ProjectsResource](x: Self) {
+    
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+  }
 }

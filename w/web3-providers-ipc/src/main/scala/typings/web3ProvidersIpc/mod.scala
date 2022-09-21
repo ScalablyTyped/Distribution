@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("web3-providers-ipc", "IpcProvider")
   @js.native
-  class IpcProvider protected () extends IpcProviderBase {
+  open class IpcProvider protected () extends IpcProviderBase {
     def this(path: String, net: Server) = this()
   }
 }

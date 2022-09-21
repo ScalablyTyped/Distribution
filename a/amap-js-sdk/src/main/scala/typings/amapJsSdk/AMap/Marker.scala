@@ -25,7 +25,7 @@ trait Marker
   
   def getDraggable(): Boolean = js.native
   
-  def getExtData(): js.Any = js.native
+  def getExtData(): Any = js.native
   
   def getIcon(): String | Icon = js.native
   
@@ -86,7 +86,7 @@ trait Marker
   
   def setDraggable(draggable: Boolean): Unit = js.native
   
-  def setExtData(ext: js.Any): Unit = js.native
+  def setExtData(ext: Any): Unit = js.native
   
   def setIcon(content: String): Unit = js.native
   def setIcon(content: Icon): Unit = js.native

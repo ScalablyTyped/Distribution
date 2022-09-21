@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LegendLayerConstructor
   extends StObject
-     with Instantiable0[LegendLayer]
+     with /**
+  * Define layer properties for the legend layers associated with a [PrintTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html)
+  */
+Instantiable0[LegendLayer]
      with Instantiable1[/* properties */ LegendLayerProperties, LegendLayer]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Erlang")
 @js.native
-class Erlang ()
+open class Erlang ()
   extends typings.ranjs.mod.dist.Erlang {
   def this(k: Double) = this()
   def this(k: Double, lambda: Double) = this()

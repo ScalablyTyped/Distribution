@@ -25,7 +25,7 @@ object SummonerSpellListDto {
     
     inline def setData(value: js.Array[StringDictionary[SummonerSpellDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: StringDictionary[SummonerSpellDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StringDictionary[SummonerSpellDto]*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

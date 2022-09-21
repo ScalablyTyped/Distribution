@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for creating occurrences in batch.
-  */
 trait SchemaBatchCreateOccurrencesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBatchCreateOccurrencesResponse {
     
     inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
-    inline def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
+    inline def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value*))
   }
 }

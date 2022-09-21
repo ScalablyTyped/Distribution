@@ -79,13 +79,13 @@ object ThirdPartyJobData {
     
     inline def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
     
-    inline def setInputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+    inline def setInputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
     
     inline def setOutputArtifacts(value: ArtifactList): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
     inline def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
-    inline def setOutputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+    inline def setOutputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
     
     inline def setPipelineContext(value: PipelineContext): Self = StObject.set(x, "pipelineContext", value.asInstanceOf[js.Any])
     

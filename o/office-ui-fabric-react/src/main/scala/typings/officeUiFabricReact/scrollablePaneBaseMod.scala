@@ -13,48 +13,48 @@ object scrollablePaneBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.base", "ScrollablePaneBase")
   @js.native
-  class ScrollablePaneBase protected ()
-    extends Component[IScrollablePaneProps, IScrollablePaneState, js.Any]
+  open class ScrollablePaneBase protected ()
+    extends Component[IScrollablePaneProps, IScrollablePaneState, Any]
        with IScrollablePane {
     def this(props: IScrollablePaneProps) = this()
     
-    /* private */ var _addToStickyContainer: js.Any = js.native
+    /* private */ var _addToStickyContainer: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _checkStickyStatus: js.Any = js.native
+    /* private */ var _checkStickyStatus: Any = js.native
     
-    /* private */ var _contentContainer: js.Any = js.native
+    /* private */ var _contentContainer: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getScrollablePaneContext: js.Any = js.native
+    /* private */ var _getScrollablePaneContext: Any = js.native
     
-    /* private */ var _getScrollbarHeight: js.Any = js.native
+    /* private */ var _getScrollbarHeight: Any = js.native
     
-    /* private */ var _getScrollbarWidth: js.Any = js.native
+    /* private */ var _getScrollbarWidth: Any = js.native
     
-    /* private */ var _getStickyContainerStyle: js.Any = js.native
+    /* private */ var _getStickyContainerStyle: Any = js.native
     
-    /* private */ var _mutationObserver: js.Any = js.native
+    /* private */ var _mutationObserver: Any = js.native
     
-    /* private */ var _notifyThrottled: js.Any = js.native
+    /* private */ var _notifyThrottled: Any = js.native
     
-    /* private */ var _onScroll: js.Any = js.native
+    /* private */ var _onScroll: Any = js.native
     
-    /* private */ var _onWindowResize: js.Any = js.native
+    /* private */ var _onWindowResize: Any = js.native
     
-    /* private */ var _removeStickyFromContainers: js.Any = js.native
+    /* private */ var _removeStickyFromContainers: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _stickies: js.Any = js.native
+    /* private */ var _stickies: Any = js.native
     
-    /* private */ var _stickyAboveRef: js.Any = js.native
+    /* private */ var _stickyAboveRef: Any = js.native
     
-    /* private */ var _stickyBelowRef: js.Any = js.native
+    /* private */ var _stickyBelowRef: Any = js.native
     
-    /* private */ var _subscribers: js.Any = js.native
+    /* private */ var _subscribers: Any = js.native
     
     def addSticky(sticky: Sticky): Unit = js.native
     

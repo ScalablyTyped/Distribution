@@ -7,50 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaReportingMetadataEntry extends StObject {
   
   /**
-    * For metrics this is a list of dimension IDs which the metric is
-    * compatible with, for dimensions it is a list of compatibility groups the
-    * dimension belongs to.
+    * For metrics this is a list of dimension IDs which the metric is compatible with, for dimensions it is a list of compatibility groups the dimension belongs to.
     */
-  var compatibleDimensions: js.UndefOr[js.Array[String]] = js.undefined
+  var compatibleDimensions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The names of the metrics the dimension or metric this reporting metadata
-    * entry describes is compatible with.
+    * The names of the metrics the dimension or metric this reporting metadata entry describes is compatible with.
     */
-  var compatibleMetrics: js.UndefOr[js.Array[String]] = js.undefined
+  var compatibleMetrics: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Unique identifier of this reporting metadata entry, corresponding to the
-    * name of the appropriate dimension or metric.
+    * Unique identifier of this reporting metadata entry, corresponding to the name of the appropriate dimension or metric.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Kind of resource this is, in this case adsense#reportingMetadataEntry.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The names of the dimensions which the dimension or metric this reporting
-    * metadata entry describes requires to also be present in order for the
-    * report to be valid. Omitting these will not cause an error or warning,
-    * but may result in data which cannot be correctly interpreted.
+    * The names of the dimensions which the dimension or metric this reporting metadata entry describes requires to also be present in order for the report to be valid. Omitting these will not cause an error or warning, but may result in data which cannot be correctly interpreted.
     */
-  var requiredDimensions: js.UndefOr[js.Array[String]] = js.undefined
+  var requiredDimensions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The names of the metrics which the dimension or metric this reporting
-    * metadata entry describes requires to also be present in order for the
-    * report to be valid. Omitting these will not cause an error or warning,
-    * but may result in data which cannot be correctly interpreted.
+    * The names of the metrics which the dimension or metric this reporting metadata entry describes requires to also be present in order for the report to be valid. Omitting these will not cause an error or warning, but may result in data which cannot be correctly interpreted.
     */
-  var requiredMetrics: js.UndefOr[js.Array[String]] = js.undefined
+  var requiredMetrics: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The codes of the projects supported by the dimension or metric this
-    * reporting metadata entry describes.
+    * The codes of the projects supported by the dimension or metric this reporting metadata entry describes.
     */
-  var supportedProducts: js.UndefOr[js.Array[String]] = js.undefined
+  var supportedProducts: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaReportingMetadataEntry {
   
@@ -63,40 +52,54 @@ object SchemaReportingMetadataEntry {
     
     inline def setCompatibleDimensions(value: js.Array[String]): Self = StObject.set(x, "compatibleDimensions", value.asInstanceOf[js.Any])
     
+    inline def setCompatibleDimensionsNull: Self = StObject.set(x, "compatibleDimensions", null)
+    
     inline def setCompatibleDimensionsUndefined: Self = StObject.set(x, "compatibleDimensions", js.undefined)
     
-    inline def setCompatibleDimensionsVarargs(value: String*): Self = StObject.set(x, "compatibleDimensions", js.Array(value :_*))
+    inline def setCompatibleDimensionsVarargs(value: String*): Self = StObject.set(x, "compatibleDimensions", js.Array(value*))
     
     inline def setCompatibleMetrics(value: js.Array[String]): Self = StObject.set(x, "compatibleMetrics", value.asInstanceOf[js.Any])
     
+    inline def setCompatibleMetricsNull: Self = StObject.set(x, "compatibleMetrics", null)
+    
     inline def setCompatibleMetricsUndefined: Self = StObject.set(x, "compatibleMetrics", js.undefined)
     
-    inline def setCompatibleMetricsVarargs(value: String*): Self = StObject.set(x, "compatibleMetrics", js.Array(value :_*))
+    inline def setCompatibleMetricsVarargs(value: String*): Self = StObject.set(x, "compatibleMetrics", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setRequiredDimensions(value: js.Array[String]): Self = StObject.set(x, "requiredDimensions", value.asInstanceOf[js.Any])
     
+    inline def setRequiredDimensionsNull: Self = StObject.set(x, "requiredDimensions", null)
+    
     inline def setRequiredDimensionsUndefined: Self = StObject.set(x, "requiredDimensions", js.undefined)
     
-    inline def setRequiredDimensionsVarargs(value: String*): Self = StObject.set(x, "requiredDimensions", js.Array(value :_*))
+    inline def setRequiredDimensionsVarargs(value: String*): Self = StObject.set(x, "requiredDimensions", js.Array(value*))
     
     inline def setRequiredMetrics(value: js.Array[String]): Self = StObject.set(x, "requiredMetrics", value.asInstanceOf[js.Any])
     
+    inline def setRequiredMetricsNull: Self = StObject.set(x, "requiredMetrics", null)
+    
     inline def setRequiredMetricsUndefined: Self = StObject.set(x, "requiredMetrics", js.undefined)
     
-    inline def setRequiredMetricsVarargs(value: String*): Self = StObject.set(x, "requiredMetrics", js.Array(value :_*))
+    inline def setRequiredMetricsVarargs(value: String*): Self = StObject.set(x, "requiredMetrics", js.Array(value*))
     
     inline def setSupportedProducts(value: js.Array[String]): Self = StObject.set(x, "supportedProducts", value.asInstanceOf[js.Any])
     
+    inline def setSupportedProductsNull: Self = StObject.set(x, "supportedProducts", null)
+    
     inline def setSupportedProductsUndefined: Self = StObject.set(x, "supportedProducts", js.undefined)
     
-    inline def setSupportedProductsVarargs(value: String*): Self = StObject.set(x, "supportedProducts", js.Array(value :_*))
+    inline def setSupportedProductsVarargs(value: String*): Self = StObject.set(x, "supportedProducts", js.Array(value*))
   }
 }

@@ -37,14 +37,7 @@ trait JQueryJqGridColumn extends StObject {
     * @returns {} 
     */
   var cellattr: js.UndefOr[
-    js.Function5[
-      /* rowId */ js.Any, 
-      /* val */ js.Any, 
-      /* rowObject */ js.Any, 
-      /* cm */ js.Any, 
-      /* rdata */ js.Any, 
-      String
-    ]
+    js.Function5[/* rowId */ Any, /* val */ Any, /* rowObject */ Any, /* cm */ Any, /* rdata */ Any, String]
   ] = js.undefined
   
   /**
@@ -78,7 +71,7 @@ trait JQueryJqGridColumn extends StObject {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, js.Any])
+    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any, Any])
   ] = js.undefined
   
   /**
@@ -140,7 +133,7 @@ object JQueryJqGridColumn {
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setCellattr(
-      value: (/* rowId */ js.Any, /* val */ js.Any, /* rowObject */ js.Any, /* cm */ js.Any, /* rdata */ js.Any) => String
+      value: (/* rowId */ Any, /* val */ Any, /* rowObject */ Any, /* cm */ Any, /* rdata */ Any) => String
     ): Self = StObject.set(x, "cellattr", js.Any.fromFunction5(value))
     
     inline def setCellattrUndefined: Self = StObject.set(x, "cellattr", js.undefined)
@@ -158,10 +151,10 @@ object JQueryJqGridColumn {
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     inline def setFormatter(
-      value: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, js.Any])
+      value: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any, Any])
     ): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    inline def setFormatterFunction3(value: (/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    inline def setFormatterFunction3(value: (/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     

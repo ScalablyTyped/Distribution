@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.None
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Credentialless
   - typings.devtoolsProtocol.devtoolsProtocolStrings.RequireCorp
 */
 trait CrossOriginEmbedderPolicyValue extends StObject
 object CrossOriginEmbedderPolicyValue {
+  
+  inline def Credentialless: typings.devtoolsProtocol.devtoolsProtocolStrings.Credentialless = "Credentialless".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Credentialless]
   
   inline def None: typings.devtoolsProtocol.devtoolsProtocolStrings.None = "None".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.None]
   

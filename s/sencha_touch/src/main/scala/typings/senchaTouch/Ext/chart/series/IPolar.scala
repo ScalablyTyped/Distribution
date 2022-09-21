@@ -40,7 +40,7 @@ trait IPolar
   /** [Method] Returns the value of xAxis
     * @returns Object
     */
-  var getXAxis: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getXAxis: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of xField
     * @returns String
@@ -50,7 +50,7 @@ trait IPolar
   /** [Method] Returns the value of yAxis
     * @returns Object
     */
-  var getYAxis: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getYAxis: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of yField
     * @returns String
@@ -97,7 +97,7 @@ trait IPolar
   /** [Method] Sets the value of xAxis
     * @param xAxis Object The new value.
     */
-  var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of xField
     * @param xField String The new value.
@@ -107,7 +107,7 @@ trait IPolar
   /** [Method] Sets the value of yAxis
     * @param yAxis Object The new value.
     */
-  var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of yField
     * @param yField String The new value.
@@ -153,7 +153,7 @@ object IPolar {
     
     inline def setGetRotationUndefined: Self = StObject.set(x, "getRotation", js.undefined)
     
-    inline def setGetXAxis(value: () => js.Any): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
+    inline def setGetXAxis(value: () => Any): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
     
     inline def setGetXAxisUndefined: Self = StObject.set(x, "getXAxis", js.undefined)
     
@@ -161,7 +161,7 @@ object IPolar {
     
     inline def setGetXFieldUndefined: Self = StObject.set(x, "getXField", js.undefined)
     
-    inline def setGetYAxis(value: () => js.Any): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
+    inline def setGetYAxis(value: () => Any): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
     inline def setGetYAxisUndefined: Self = StObject.set(x, "getYAxis", js.undefined)
     
@@ -205,7 +205,7 @@ object IPolar {
     
     inline def setSetRotationUndefined: Self = StObject.set(x, "setRotation", js.undefined)
     
-    inline def setSetXAxis(value: /* xAxis */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXAxis", js.Any.fromFunction1(value))
+    inline def setSetXAxis(value: /* xAxis */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setXAxis", js.Any.fromFunction1(value))
     
     inline def setSetXAxisUndefined: Self = StObject.set(x, "setXAxis", js.undefined)
     
@@ -213,7 +213,7 @@ object IPolar {
     
     inline def setSetXFieldUndefined: Self = StObject.set(x, "setXField", js.undefined)
     
-    inline def setSetYAxis(value: /* yAxis */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setYAxis", js.Any.fromFunction1(value))
+    inline def setSetYAxis(value: /* yAxis */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setYAxis", js.Any.fromFunction1(value))
     
     inline def setSetYAxisUndefined: Self = StObject.set(x, "setYAxis", js.undefined)
     

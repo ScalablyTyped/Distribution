@@ -36,7 +36,7 @@ object mod {
   object default {
     
     inline def apply(): Numbro = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Numbro]
-    inline def apply(value: js.Any): Numbro = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Numbro]
+    inline def apply(value: Any): Numbro = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Numbro]
     
     @JSImport("numbro", JSImport.Default)
     @js.native
@@ -46,7 +46,7 @@ object mod {
     
     inline def defaultFormat(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFormat")().asInstanceOf[js.Object]
     
-    inline def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumbro")(value.asInstanceOf[js.Any]).asInstanceOf[/* is numbro.numbro.numbro.Numbro */ Boolean]
+    inline def isNumbro(value: Any): /* is numbro.numbro.numbro.Numbro */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumbro")(value.asInstanceOf[js.Any]).asInstanceOf[/* is numbro.numbro.numbro.Numbro */ Boolean]
     
     inline def language(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")().asInstanceOf[String]
     
@@ -101,6 +101,8 @@ object mod {
       var forceAverage: js.UndefOr[trillion | billion | million | thousand] = js.undefined
       
       var forceSign: js.UndefOr[Boolean] = js.undefined
+      
+      var lowPrecision: js.UndefOr[Boolean] = js.undefined
       
       var mantissa: js.UndefOr[Double] = js.undefined
       
@@ -176,6 +178,10 @@ object mod {
         inline def setForceSign(value: Boolean): Self = StObject.set(x, "forceSign", value.asInstanceOf[js.Any])
         
         inline def setForceSignUndefined: Self = StObject.set(x, "forceSign", js.undefined)
+        
+        inline def setLowPrecision(value: Boolean): Self = StObject.set(x, "lowPrecision", value.asInstanceOf[js.Any])
+        
+        inline def setLowPrecisionUndefined: Self = StObject.set(x, "lowPrecision", js.undefined)
         
         inline def setMantissa(value: Double): Self = StObject.set(x, "mantissa", value.asInstanceOf[js.Any])
         

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisIndexDefaultValue extends StObject {
   
-  def apply[T](index: Double): js.Any = js.native
-  def apply[T](index: Double, defaultValue: T): js.Any = js.native
+  def apply[T](index: Double): Any = js.native
+  def apply[T](index: Double, defaultValue: T): Any = js.native
 }

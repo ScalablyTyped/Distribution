@@ -8,7 +8,7 @@ object requestMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/request", "Request")
   @js.native
-  class Request[T] protected () extends StObject {
+  open class Request[T] protected () extends StObject {
     /**
       * Construct a new Request.
       * @param opts Options for this request.
@@ -18,9 +18,9 @@ object requestMod {
       */
     def this(opts: RequestOpts[T]) = this()
     
-    /* private */ var data: js.Any = js.native
+    /* private */ var data: Any = js.native
     
-    /* private */ var defer: js.Any = js.native
+    /* private */ var defer: Any = js.native
     
     /**
       * Get any optional data set on this request.
@@ -45,9 +45,9 @@ object requestMod {
       * respective methods are called on this Request.
       * @return {Promise} A promise
       */
-    def getPromise(): js.Promise[js.Any] = js.native
+    def getPromise(): js.Promise[Any] = js.native
     
-    /* private */ var id: js.Any = js.native
+    /* private */ var id: Any = js.native
     
     def isPending: Boolean = js.native
     
@@ -56,16 +56,16 @@ object requestMod {
       * @param promise The promise whose resolution determines the outcome of this
       * request.
       */
-    def outcomeFrom(promise: js.Promise[js.Any]): js.Promise[Unit] = js.native
+    def outcomeFrom(promise: js.Promise[Any]): js.Promise[Unit] = js.native
     
-    /* private */ var pending: js.Any = js.native
+    /* private */ var pending: Any = js.native
     
     /**
       * Reject a request. This should be invoked for requests which <i>failed to be
       * processed correctly</i>.
       * @param msg The thing to reject with.
       */
-    def reject(msg: js.Any): Unit = js.native
+    def reject(msg: Any): Unit = js.native
     
     /**
       * Resolve a request. This should be invoked for the <i>successful processing</i>
@@ -73,9 +73,9 @@ object requestMod {
       * through, e.g. suppressing AS virtual users' messages is still a success.
       * @param msg The thing to resolve with.
       */
-    def resolve(msg: js.Any): Unit = js.native
+    def resolve(msg: Any): Unit = js.native
     
-    /* private */ var startTs: js.Any = js.native
+    /* private */ var startTs: Any = js.native
   }
   
   trait RequestOpts[T] extends StObject {

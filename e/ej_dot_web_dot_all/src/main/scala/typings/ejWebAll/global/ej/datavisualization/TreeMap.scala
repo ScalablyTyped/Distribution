@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.datavisualization.TreeMap")
 @js.native
-class TreeMap protected ()
+open class TreeMap protected ()
   extends StObject
      with typings.ejWebAll.ej.datavisualization.TreeMap {
   def this(element: JQuery) = this()
@@ -58,8 +58,8 @@ object TreeMap {
   /* static member */
   @JSGlobal("ej.datavisualization.TreeMap.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.TreeMap.Position")
   @js.native

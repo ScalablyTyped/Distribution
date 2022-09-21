@@ -34,7 +34,7 @@ object priorityQueueMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with PriorityQueue[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
@@ -89,7 +89,7 @@ object priorityQueueMod {
     override def forEach(callback: ILoopFunction[T]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var heap: js.Any = js.native
+    var heap: Any = js.native
     
     /**
       * Checks if this priority queue is empty.
@@ -159,7 +159,7 @@ object priorityQueueMod {
       */
     def forEach(callback: ILoopFunction[T]): Unit
     
-    /* private */ var heap: js.Any
+    /* private */ var heap: Any
     
     /**
       * Checks if this priority queue is empty.
@@ -189,7 +189,7 @@ object priorityQueueMod {
       dequeue: () => js.UndefOr[T],
       enqueue: T => Boolean,
       forEach: ILoopFunction[T] => Unit,
-      heap: js.Any,
+      heap: Any,
       isEmpty: () => Boolean,
       peek: () => js.UndefOr[T],
       size: () => Double
@@ -212,7 +212,7 @@ object priorityQueueMod {
       
       inline def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      inline def setHeap(value: js.Any): Self = StObject.set(x, "heap", value.asInstanceOf[js.Any])
+      inline def setHeap(value: Any): Self = StObject.set(x, "heap", value.asInstanceOf[js.Any])
       
       inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       

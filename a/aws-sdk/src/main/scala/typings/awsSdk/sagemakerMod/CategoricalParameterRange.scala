@@ -29,6 +29,6 @@ object CategoricalParameterRange {
     
     inline def setValues(value: ParameterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

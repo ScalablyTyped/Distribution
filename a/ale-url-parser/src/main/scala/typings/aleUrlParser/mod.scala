@@ -14,19 +14,55 @@ object mod {
   inline def parse(url: String): UrlObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlObject]
   
   inline def stringify(urlObject: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(urlObject: UrlObject, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(urlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type QueryParams = StringDictionary[js.Any]
+  trait Options extends StObject {
+    
+    /**
+      * Sorting query params is disabled by default.
+      * You can define your own sorting method
+      */
+    var compareFunction: js.UndefOr[js.Function2[/* a */ String, /* b */ String, Double]] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setCompareFunction(value: (/* a */ String, /* b */ String) => Double): Self = StObject.set(x, "compareFunction", js.Any.fromFunction2(value))
+      
+      inline def setCompareFunctionUndefined: Self = StObject.set(x, "compareFunction", js.undefined)
+    }
+  }
+  
+  type QueryParams = StringDictionary[Any]
   
   trait UrlObject extends StObject {
     
     var hash: js.UndefOr[String] = js.undefined
     
+    /**
+      * @default '''
+      */
     var host: js.UndefOr[String] = js.undefined
     
+    /**
+      * @default []
+      */
     var path: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * @default 'http'
+      */
     var protocol: js.UndefOr[String] = js.undefined
     
+    /**
+      * @default {}
+      */
     var query: js.UndefOr[QueryParams] = js.undefined
   }
   object UrlObject {
@@ -50,7 +86,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

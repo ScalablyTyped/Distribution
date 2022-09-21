@@ -70,7 +70,7 @@ object SketchMSStyle {
     
     inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
-    inline def setBordersVarargs(value: SketchMSStyleBorder*): Self = StObject.set(x, "borders", js.Array(value :_*))
+    inline def setBordersVarargs(value: SketchMSStyleBorder*): Self = StObject.set(x, "borders", js.Array(value*))
     
     inline def setColorControls(value: SketchMSStyleColorControls): Self = StObject.set(x, "colorControls", value.asInstanceOf[js.Any])
     
@@ -92,13 +92,13 @@ object SketchMSStyle {
     
     inline def setFillsUndefined: Self = StObject.set(x, "fills", js.undefined)
     
-    inline def setFillsVarargs(value: SketchMSStyleFill*): Self = StObject.set(x, "fills", js.Array(value :_*))
+    inline def setFillsVarargs(value: SketchMSStyleFill*): Self = StObject.set(x, "fills", js.Array(value*))
     
     inline def setInnerShadows(value: js.Array[SketchMSStyleShadow]): Self = StObject.set(x, "innerShadows", value.asInstanceOf[js.Any])
     
     inline def setInnerShadowsUndefined: Self = StObject.set(x, "innerShadows", js.undefined)
     
-    inline def setInnerShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "innerShadows", js.Array(value :_*))
+    inline def setInnerShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "innerShadows", js.Array(value*))
     
     inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object SketchMSStyle {
     
     inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    inline def setShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
+    inline def setShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "shadows", js.Array(value*))
     
     inline def setStartDecorationType(value: Double): Self = StObject.set(x, "startDecorationType", value.asInstanceOf[js.Any])
     

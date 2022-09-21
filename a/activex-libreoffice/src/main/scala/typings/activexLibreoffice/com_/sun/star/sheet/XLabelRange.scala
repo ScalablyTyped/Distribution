@@ -43,7 +43,7 @@ object XLabelRange {
     acquire: () => Unit,
     getDataArea: () => CellRangeAddress,
     getLabelArea: () => CellRangeAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDataArea: CellRangeAddress => Unit,
     setLabelArea: CellRangeAddress => Unit

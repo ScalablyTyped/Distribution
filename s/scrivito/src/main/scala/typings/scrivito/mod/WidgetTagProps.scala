@@ -8,20 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WidgetTagProps
   extends StObject
-     with HTMLAttributes[js.Any]
-     with /* key */ StringDictionary[js.Any] {
+     with HTMLAttributes[Any]
+     with /* key */ StringDictionary[Any] {
   
-  var tag: String
+  var tag: js.UndefOr[String] = js.undefined
 }
 object WidgetTagProps {
   
-  inline def apply(tag: String): WidgetTagProps = {
-    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
+  inline def apply(): WidgetTagProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetTagProps]
   }
   
   extension [Self <: WidgetTagProps](x: Self) {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

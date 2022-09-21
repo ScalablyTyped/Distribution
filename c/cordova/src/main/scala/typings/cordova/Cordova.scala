@@ -10,7 +10,7 @@ trait Cordova extends StObject {
   /** Defines custom logic as a Cordova module. Other modules can later access it using module name provided. */
   def define(
     moduleName: String,
-    factory: js.Function3[/* require */ js.Any, /* exports */ js.Any, /* module */ js.Any, js.Any]
+    factory: js.Function3[/* require */ Any, /* exports */ Any, /* module */ Any, Any]
   ): Unit = js.native
   
   /** Invokes native functionality by specifying corresponding service name, action and optional parameters.
@@ -21,17 +21,17 @@ trait Cordova extends StObject {
     * @param args An array of arguments to pass into the native environment.
     */
   def exec(
-    success: js.Function1[/* data */ js.Any, js.Any],
-    fail: js.Function1[/* err */ js.Any, js.Any],
+    success: js.Function1[/* data */ Any, Any],
+    fail: js.Function1[/* err */ Any, Any],
     service: String,
     action: String
   ): Unit = js.native
   def exec(
-    success: js.Function1[/* data */ js.Any, js.Any],
-    fail: js.Function1[/* err */ js.Any, js.Any],
+    success: js.Function1[/* data */ Any, Any],
+    fail: js.Function1[/* err */ Any, Any],
     service: String,
     action: String,
-    args: js.Array[js.Any]
+    args: js.Array[Any]
   ): Unit = js.native
   
   /** Gets the operating system name. */
@@ -41,7 +41,7 @@ trait Cordova extends StObject {
   var plugins: CordovaPlugins = js.native
   
   /** Access a Cordova module by name. */
-  def require(moduleName: String): js.Any = js.native
+  def require(moduleName: String): Any = js.native
   
   /** Gets Cordova framework version */
   var version: String = js.native

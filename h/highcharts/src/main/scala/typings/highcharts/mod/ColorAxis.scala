@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "ColorAxis")
 @js.native
-class ColorAxis protected () extends StObject {
+open class ColorAxis protected () extends Axis {
   /**
     * The ColorAxis object for inclusion in gradient legends.
     *

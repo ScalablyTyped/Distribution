@@ -17,9 +17,14 @@ object debugger {
   inline def attach(target: Debuggee, requiredVersion: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def attach(target: Debuggee, requiredVersion: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def attach_Promise(target: Debuggee, requiredVersion: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   inline def detach(target: Debuggee): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def detach(target: Debuggee, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def detach_Promise(target: Debuggee): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def getTargets(): js.Promise[js.Array[TargetInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargets")().asInstanceOf[js.Promise[js.Array[TargetInfo]]]
   inline def getTargets(callback: js.Function1[/* result */ js.Array[TargetInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome._debugger.onDetach")
@@ -46,4 +51,7 @@ object debugger {
     commandParams: Unit,
     callback: js.Function1[/* result */ js.UndefOr[js.Object], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], commandParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def sendCommand_Promise(target: Debuggee, method: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def sendCommand_Promise(target: Debuggee, method: String, commandParams: js.Object): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], commandParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 }

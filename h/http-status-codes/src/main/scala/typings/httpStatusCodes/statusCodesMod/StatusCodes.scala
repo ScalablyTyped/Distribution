@@ -235,6 +235,17 @@ object StatusCodes extends StObject {
   /* 405 */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.statusCodesMod.StatusCodes.METHOD_NOT_ALLOWED & Double = js.native
   
   /**
+    * Official Documentation @ https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2
+    *
+    * Defined in the specification of HTTP/2 to indicate that a server is not able to produce a response for the combination of scheme and authority that are included in the request URI.
+    */
+  @js.native
+  sealed trait MISDIRECTED_REQUEST
+    extends StObject
+       with StatusCodes
+  /* 421 */ val MISDIRECTED_REQUEST: typings.httpStatusCodes.statusCodesMod.StatusCodes.MISDIRECTED_REQUEST & Double = js.native
+  
+  /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.2
     *
     * This response code means that URI of requested resource has been changed. Probably, new URI would be given in the response.

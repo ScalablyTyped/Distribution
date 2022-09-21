@@ -43,6 +43,11 @@ object calloutTypesMod {
     var calloutMaxWidth: js.UndefOr[Double] = js.undefined
     
     /**
+      * Min width for callout including borders.
+      */
+    var calloutMinWidth: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Width for callout including borders.
       */
     var calloutWidth: js.UndefOr[Double] = js.undefined
@@ -88,6 +93,10 @@ object calloutTypesMod {
       inline def setCalloutMaxWidth(value: Double): Self = StObject.set(x, "calloutMaxWidth", value.asInstanceOf[js.Any])
       
       inline def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
+      
+      inline def setCalloutMinWidth(value: Double): Self = StObject.set(x, "calloutMinWidth", value.asInstanceOf[js.Any])
+      
+      inline def setCalloutMinWidthUndefined: Self = StObject.set(x, "calloutMinWidth", js.undefined)
       
       inline def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
       
@@ -232,10 +241,16 @@ object calloutTypesMod {
     var calloutMaxHeight: js.UndefOr[Double] = js.undefined
     
     /**
-      * Custom width for callout including borders. If value is 0, no width is applied.
+      * Maximum width for callout including borders. If value is 0, no width is applied.
       * @defaultvalue 0
       */
     var calloutMaxWidth: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Minimum width for callout including borders. If value is 0, no width is applied.
+      * @defaultvalue 0
+      */
+    var calloutMinWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom width for callout including borders. If value is 0, no width is applied.
@@ -320,7 +335,7 @@ object calloutTypesMod {
     /**
       * Callback when the Callout tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Optional callback when the layer content has mounted.
@@ -358,7 +373,7 @@ object calloutTypesMod {
       */
     var preventDismissOnEvent: js.UndefOr[
         js.Function1[
-          /* ev */ Event | FocusEvent[Element] | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]), 
+          /* ev */ Event | (FocusEvent[Element, Element]) | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]), 
           Boolean
         ]
       ] = js.undefined
@@ -383,6 +398,12 @@ object calloutTypesMod {
       * @deprecated use preventDismissOnEvent callback instead
       */
     var preventDismissOnScroll: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Aria role assigned to the callout (Eg. dialog, alertdialog).
+      */
+    @JSName("role")
+    var role_ICalloutProps: js.UndefOr[String] = js.undefined
     
     /**
       * If true then the callout will attempt to focus the first focusable element that it contains.
@@ -488,6 +509,10 @@ object calloutTypesMod {
       
       inline def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
       
+      inline def setCalloutMinWidth(value: Double): Self = StObject.set(x, "calloutMinWidth", value.asInstanceOf[js.Any])
+      
+      inline def setCalloutMinWidthUndefined: Self = StObject.set(x, "calloutMinWidth", js.undefined)
+      
       inline def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
       
       inline def setCalloutWidthUndefined: Self = StObject.set(x, "calloutWidth", js.undefined)
@@ -540,7 +565,7 @@ object calloutTypesMod {
       
       inline def setMinPagePaddingUndefined: Self = StObject.set(x, "minPagePadding", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
@@ -561,7 +586,7 @@ object calloutTypesMod {
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       inline def setPreventDismissOnEvent(
-        value: /* ev */ Event | FocusEvent[Element] | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Boolean
+        value: /* ev */ Event | (FocusEvent[Element, Element]) | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Boolean
       ): Self = StObject.set(x, "preventDismissOnEvent", js.Any.fromFunction1(value))
       
       inline def setPreventDismissOnEventUndefined: Self = StObject.set(x, "preventDismissOnEvent", js.undefined)
@@ -577,6 +602,10 @@ object calloutTypesMod {
       inline def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
       
       inline def setPreventDismissOnScrollUndefined: Self = StObject.set(x, "preventDismissOnScroll", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
       

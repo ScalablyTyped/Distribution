@@ -10,10 +10,10 @@ Streaming GIF encoder
 | ------------------ | :-------------: |
 | Full name          | gif-encoder |
 | Keywords           | gif, encode, encoder |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 3262488 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 472471.3333333333 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/twolfson/gif-encoder)

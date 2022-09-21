@@ -16,25 +16,25 @@ object pickerIOSMod {
   
   @JSImport("@react-native-community/picker/typings/PickerIOS", "PickerIOS")
   @js.native
-  class PickerIOS protected ()
-    extends Component[PickerIOSProps, js.Object, js.Any] {
+  open class PickerIOS protected ()
+    extends Component[PickerIOSProps, js.Object, Any] {
     def this(props: PickerIOSProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PickerIOSProps, context: js.Any) = this()
+    def this(props: PickerIOSProps, context: Any) = this()
   }
   object PickerIOS {
     
     /* was `typeof PickerIOSItem` */
     @JSImport("@react-native-community/picker/typings/PickerIOS", "PickerIOS.Item")
     @js.native
-    class Item ()
-      extends Component[PickerIOSItemProps, js.Object, js.Any]
+    open class Item ()
+      extends Component[PickerIOSItemProps, js.Object, Any]
   }
   
-  type PickerIOSItem = Component[PickerIOSItemProps, js.Object, js.Any]
+  type PickerIOSItem = Component[PickerIOSItemProps, js.Object, Any]
   
   trait PickerIOSItemProps extends StObject {
     

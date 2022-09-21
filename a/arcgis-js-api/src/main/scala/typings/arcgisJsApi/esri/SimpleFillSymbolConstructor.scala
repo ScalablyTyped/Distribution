@@ -17,5 +17,5 @@ trait SimpleFillSymbolConstructor
 Instantiable0[SimpleFillSymbol]
      with Instantiable1[/* properties */ SimpleFillSymbolProperties, SimpleFillSymbol] {
   
-  def fromJSON(json: js.Any): SimpleFillSymbol = js.native
+  def fromJSON(json: Any): SimpleFillSymbol = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@frctl/fractal", "CliTheme")
 @js.native
-class CliTheme () extends ConfigurableEmitter[CliThemeConfig] {
+open class CliTheme () extends ConfigurableEmitter[CliThemeConfig] {
   def this(config: CliThemeConfig) = this()
   
   def delimiter(): String = js.native
@@ -19,7 +19,7 @@ class CliTheme () extends ConfigurableEmitter[CliThemeConfig] {
   
   def setDelimiter(text: String, formatter: js.Function1[/* str */ String, String]): Unit = js.native
   
-  def setStyle(name: String, opts: js.Any): Unit = js.native
+  def setStyle(name: String, opts: Any): Unit = js.native
   
-  def style(name: String): js.Any = js.native
+  def style(name: String): Any = js.native
 }

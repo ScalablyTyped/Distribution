@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IColorPresentation extends StObject {
   
   /**
-    * An optional array of additional [text edits](#TextEdit) that are applied when
+    * An optional array of additional {@link TextEdit text edits} that are applied when
     * selecting this color presentation.
     */
   var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
@@ -20,7 +20,7 @@ trait IColorPresentation extends StObject {
   var label: String
   
   /**
-    * An [edit](#TextEdit) which is applied to a document when selecting
+    * An {@link TextEdit edit} which is applied to a document when selecting
     * this presentation for the color.
     */
   var textEdit: js.UndefOr[TextEdit] = js.undefined
@@ -38,7 +38,7 @@ object IColorPresentation {
     
     inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

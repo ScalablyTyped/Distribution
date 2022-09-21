@@ -11,14 +11,11 @@ Extract text from bundle into a file.
 | Full name          | extract-text-webpack-plugin |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 3917 |
-| # downloads        | 56333662 |
-| # stars            | 103 |
+| # dependents       | 0.0 |
+| # downloads        | 2928970.6666666665 |
+| # stars            | 4052.0 |
 
 ## Links
-- [Homepage](http://github.com/webpack-contrib/extract-text-webpack-plugin)
-- [Bugs](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues)
-- [Repository](https://github.com/webpack-contrib/extract-text-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/extract-text-webpack-plugin)
     
 

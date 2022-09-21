@@ -10,31 +10,38 @@ trait ImageData
      with ImageBitmapSource
      with TexImageSource {
   
-  /**
-    * Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255.
-    */
-  val data: Uint8ClampedArray
+  /* standard dom */
+  val colorSpace: PredefinedColorSpace
   
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
+  /** Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255. */
+  /* standard dom */
+  val data: js.typedarray.Uint8ClampedArray
+  
+  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /* standard dom */
   val height: Double
   
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
+  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /* standard dom */
   val width: Double
 }
 object ImageData {
   
-  inline def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(
+    colorSpace: PredefinedColorSpace,
+    data: js.typedarray.Uint8ClampedArray,
+    height: Double,
+    width: Double
+  ): ImageData = {
+    val __obj = js.Dynamic.literal(colorSpace = colorSpace.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageData]
   }
   
   extension [Self <: ImageData](x: Self) {
     
-    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.gulpInject
 
-import typings.node.NodeJS.ReadWriteStream
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(sources: ReadableStream): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def apply(sources: ReadableStream, options: IOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(sources: ReadableStream[Any]): Any = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(sources: ReadableStream[Any], options: IOptions): Any = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("gulp-inject", JSImport.Namespace)
   @js.native
@@ -31,6 +30,8 @@ object mod {
     var ignorePath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     var relative: js.UndefOr[Boolean] = js.undefined
     
@@ -77,11 +78,15 @@ object mod {
       
       inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
       
-      inline def setIgnorePathVarargs(value: String*): Self = StObject.set(x, "ignorePath", js.Array(value :_*))
+      inline def setIgnorePathVarargs(value: String*): Self = StObject.set(x, "ignorePath", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       

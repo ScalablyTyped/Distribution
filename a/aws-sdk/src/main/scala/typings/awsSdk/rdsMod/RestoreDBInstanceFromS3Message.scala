@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RestoreDBInstanceFromS3Message extends StObject {
   
   /**
-    * The amount of storage (in gigabytes) to allocate initially for the DB instance. Follow the allocation rules specified in CreateDBInstance.   Be sure to allocate enough memory for your new DB instance so that the restore operation can succeed. You can also allocate additional memory for future growth.  
+    * The amount of storage (in gigabytes) to allocate initially for the DB instance. Follow the allocation rules specified in CreateDBInstance.  Be sure to allocate enough memory for your new DB instance so that the restore operation can succeed. You can also allocate additional memory for future growth. 
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * A value that indicates whether minor engine upgrades are applied automatically to the DB instance during the maintenance window. By default, minor engine upgrades are not applied automatically. 
+    * A value that indicates whether minor engine upgrades are applied automatically to the DB instance during the maintenance window. By default, minor engine upgrades are not applied automatically.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The Availability Zone that the DB instance is created in. For information about AWS Regions and Availability Zones, see Regions and Availability Zones in the Amazon RDS User Guide.  Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.   Example: us-east-1d  Constraint: The AvailabilityZone parameter can't be specified if the DB instance is a Multi-AZ deployment. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
+    * The Availability Zone that the DB instance is created in. For information about Amazon Web Services Regions and Availability Zones, see Regions and Availability Zones in the Amazon RDS User Guide.  Default: A random, system-chosen Availability Zone in the endpoint's Amazon Web Services Region. Example: us-east-1d  Constraint: The AvailabilityZone parameter can't be specified if the DB instance is a Multi-AZ deployment. The specified Availability Zone must be in the same Amazon Web Services Region as the current endpoint.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of days for which automated backups are retained. Setting this parameter to a positive number enables backups. For more information, see CreateDBInstance. 
+    * The number of days for which automated backups are retained. Setting this parameter to a positive number enables backups. For more information, see CreateDBInstance.
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * A value that indicates whether to copy all tags from the DB instance to snapshots of the DB instance. By default, tags are not copied. 
+    * A value that indicates whether to copy all tags from the DB instance to snapshots of the DB instance. By default, tags are not copied.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see DB Instance Class in the Amazon RDS User Guide.  Importing from Amazon S3 isn't supported on the db.t2.micro DB instance class. 
+    * The compute and memory capacity of the DB instance, for example db.m4.large. Not all DB instance classes are available in all Amazon Web Services Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see DB Instance Class in the Amazon RDS User Guide.  Importing from Amazon S3 isn't supported on the db.t2.micro DB instance class.
     */
   var DBInstanceClass: String
   
   /**
-    * The DB instance identifier. This parameter is stored as a lowercase string.  Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
+    * The DB instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
     */
   var DBInstanceIdentifier: String
   
   /**
-    * The name of the database to create when the DB instance is created. Follow the naming rules specified in CreateDBInstance. 
+    * The name of the database to create when the DB instance is created. Follow the naming rules specified in CreateDBInstance.
     */
   var DBName: js.UndefOr[String] = js.undefined
   
@@ -57,12 +57,12 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var DBSecurityGroups: js.UndefOr[DBSecurityGroupNameList] = js.undefined
   
   /**
-    * A DB subnet group to associate with this DB instance.
+    * A DB subnet group to associate with this DB instance. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mydbsubnetgroup 
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. For more information, see  Deleting a DB Instance. 
+    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection isn't enabled. For more information, see  Deleting a DB Instance.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -72,22 +72,22 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled. For more information about IAM database authentication, see  IAM Database Authentication for MySQL and PostgreSQL in the Amazon RDS User Guide. 
+    * A value that indicates whether to enable mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts. By default, mapping isn't enabled. For more information about IAM database authentication, see  IAM Database Authentication for MySQL and PostgreSQL in the Amazon RDS User Guide. 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * A value that indicates whether to enable Performance Insights for the DB instance.  For more information, see Using Amazon Performance Insights in the Amazon Relational Database Service User Guide. 
+    * A value that indicates whether to enable Performance Insights for the DB instance. For more information, see Using Amazon Performance Insights in the Amazon RDS User Guide.
     */
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The name of the database engine to be used for this instance.  Valid Values: mysql 
+    * The name of the database engine to be used for this instance. Valid Values: mysql 
     */
   var Engine: String
   
   /**
-    * The version number of the database engine to use. Choose the latest minor version of your database engine. For information about engine versions, see CreateDBInstance, or call DescribeDBEngineVersions. 
+    * The version number of the database engine to use. Choose the latest minor version of your database engine. For information about engine versions, see CreateDBInstance, or call DescribeDBEngineVersions.
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
@@ -97,67 +97,72 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The AWS KMS key identifier for an encrypted DB instance.  The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB instance with the same AWS account that owns the KMS encryption key used to encrypt the new DB instance, then you can use the KMS key alias instead of the ARN for the KM encryption key.  If the StorageEncrypted parameter is enabled, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region. 
+    * The Amazon Web Services KMS key identifier for an encrypted DB instance. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. To use a KMS key in a different Amazon Web Services account, specify the key ARN or alias ARN. If the StorageEncrypted parameter is enabled, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default KMS key. There is a default KMS key for your Amazon Web Services account. Your Amazon Web Services account has a different default KMS key for each Amazon Web Services Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The license model for this DB instance. Use general-public-license. 
+    * The license model for this DB instance. Use general-public-license.
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * The password for the master user. The password can include any printable ASCII character except "/", """, or "@".  Constraints: Must contain from 8 to 41 characters.
+    * The password for the master user. The password can include any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   
   /**
-    * The name for the master user.  Constraints:    Must be 1 to 16 letters or numbers.   First character must be a letter.   Can't be a reserved word for the chosen database engine.  
+    * The name for the master user. Constraints:   Must be 1 to 16 letters or numbers.   First character must be a letter.   Can't be a reserved word for the chosen database engine.  
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
-    * The upper limit to which Amazon RDS can automatically scale the storage of the DB instance.
+    * The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance. For more information about this setting, including limitations that apply to it, see  Managing capacity automatically with Amazon RDS storage autoscaling in the Amazon RDS User Guide.
     */
   var MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0.  If MonitoringRoleArn is specified, then you must also set MonitoringInterval to a value other than 0.  Valid Values: 0, 1, 5, 10, 15, 30, 60  Default: 0 
+    * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. If MonitoringRoleArn is specified, then you must also set MonitoringInterval to a value other than 0. Valid Values: 0, 1, 5, 10, 15, 30, 60 Default: 0 
     */
   var MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For example, arn:aws:iam:123456789012:role/emaccess. For information on creating a monitoring role, see Setting Up and Enabling Enhanced Monitoring in the Amazon RDS User Guide.  If MonitoringInterval is set to a value other than 0, then you must supply a MonitoringRoleArn value. 
+    * The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For example, arn:aws:iam:123456789012:role/emaccess. For information on creating a monitoring role, see Setting Up and Enabling Enhanced Monitoring in the Amazon RDS User Guide.  If MonitoringInterval is set to a value other than 0, then you must supply a MonitoringRoleArn value.
     */
   var MonitoringRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * A value that indicates whether the DB instance is a Multi-AZ deployment. If the DB instance is a Multi-AZ deployment, you can't set the AvailabilityZone parameter. 
+    * A value that indicates whether the DB instance is a Multi-AZ deployment. If the DB instance is a Multi-AZ deployment, you can't set the AvailabilityZone parameter.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The name of the option group to associate with this DB instance. If this argument is omitted, the default option group for the specified engine is used. 
+    * The network type of the DB instance. Valid values:    IPV4     DUAL    The network type is determined by the DBSubnetGroup specified for the DB instance. A DBSubnetGroup can support only the IPv4 protocol or the IPv4 and the IPv6 protocols (DUAL). For more information, see  Working with a DB instance in a VPC in the Amazon RDS User Guide. 
+    */
+  var NetworkType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name of the option group to associate with this DB instance. If this argument is omitted, the default option group for the specified engine is used.
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key.  If you do not specify a value for PerformanceInsightsKMSKeyId, then Amazon RDS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * The Amazon Web Services KMS key identifier for encryption of Performance Insights data. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. If you do not specify a value for PerformanceInsightsKMSKeyId, then Amazon RDS uses your default KMS key. There is a default KMS key for your Amazon Web Services account. Your Amazon Web Services account has a different default KMS key for each Amazon Web Services Region.
     */
   var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The amount of time, in days, to retain Performance Insights data. Valid values are 7 or 731 (2 years). 
+    * The number of days to retain Performance Insights data. The default is 7 days. The following values are valid:   7    month * 31, where month is a number of months from 1-23   731   For example, the following values are valid:   93 (3 months * 31)   341 (11 months * 31)   589 (19 months * 31)   731   If you specify a retention period such as 94, which isn't a valid value, RDS issues an error.
     */
   var PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The port number on which the database accepts connections.  Type: Integer  Valid Values: 1150-65535  Default: 3306 
+    * The port number on which the database accepts connections. Type: Integer Valid Values: 1150-65535  Default: 3306 
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The time range each day during which automated backups are created if automated backups are enabled. For more information, see The Backup Window in the Amazon RDS User Guide.  Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
+    * The time range each day during which automated backups are created if automated backups are enabled. For more information, see Backup window in the Amazon RDS User Guide.  Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
@@ -172,42 +177,42 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   
   /**
-    * A value that indicates whether the DB instance is publicly accessible. When the DB instance is publicly accessible, its DNS endpoint resolves to the private IP address from within the DB instance's VPC, and to the public IP address from outside of the DB instance's VPC. Access to the DB instance is ultimately controlled by the security group it uses, and that public access is not permitted if the security group assigned to the DB instance doesn't permit it. When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
+    * A value that indicates whether the DB instance is publicly accessible. When the DB instance is publicly accessible, its Domain Name System (DNS) endpoint resolves to the private IP address from within the DB instance's virtual private cloud (VPC). It resolves to the public IP address from outside of the DB instance's VPC. Access to the DB instance is ultimately controlled by the security group it uses. That public access is not permitted if the security group assigned to the DB instance doesn't permit it. When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The name of your Amazon S3 bucket that contains your database backup file. 
+    * The name of your Amazon S3 bucket that contains your database backup file.
     */
   var S3BucketName: String
   
   /**
-    * An AWS Identity and Access Management (IAM) role to allow Amazon RDS to access your Amazon S3 bucket. 
+    * An Amazon Web Services Identity and Access Management (IAM) role to allow Amazon RDS to access your Amazon S3 bucket.
     */
   var S3IngestionRoleArn: String
   
   /**
-    * The prefix of your Amazon S3 bucket. 
+    * The prefix of your Amazon S3 bucket.
     */
   var S3Prefix: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the engine of your source database.  Valid Values: mysql 
+    * The name of the engine of your source database. Valid Values: mysql 
     */
   var SourceEngine: String
   
   /**
-    * The version of the database that the backup files were created from. MySQL versions 5.6 and 5.7 are supported.  Example: 5.6.40 
+    * The version of the database that the backup files were created from. MySQL versions 5.6 and 5.7 are supported. Example: 5.6.40 
     */
   var SourceEngineVersion: String
   
   /**
-    * A value that indicates whether the new DB instance is encrypted or not. 
+    * A value that indicates whether the new DB instance is encrypted or not.
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter.  Default: io1 if the Iops parameter is specified; otherwise gp2 
+    * Specifies the storage type to be associated with the DB instance. Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter. Default: io1 if the Iops parameter is specified; otherwise gp2 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -222,7 +227,7 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * A list of VPC security groups to associate with this DB instance. 
+    * A list of VPC security groups to associate with this DB instance.
     */
   var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
 }
@@ -279,7 +284,7 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setDBSecurityGroupsUndefined: Self = StObject.set(x, "DBSecurityGroups", js.undefined)
     
-    inline def setDBSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value :_*))
+    inline def setDBSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value*))
     
     inline def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
     
@@ -293,7 +298,7 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setEnableCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnableCloudwatchLogsExports", js.undefined)
     
-    inline def setEnableCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnableCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnableCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnableCloudwatchLogsExports", js.Array(value*))
     
     inline def setEnableIAMDatabaseAuthentication(value: BooleanOptional): Self = StObject.set(x, "EnableIAMDatabaseAuthentication", value.asInstanceOf[js.Any])
     
@@ -345,6 +350,10 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
+    inline def setNetworkType(value: String): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    
     inline def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
     inline def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
@@ -373,7 +382,7 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
     inline def setPubliclyAccessible(value: BooleanOptional): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
@@ -403,7 +412,7 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUseDefaultProcessorFeatures(value: BooleanOptional): Self = StObject.set(x, "UseDefaultProcessorFeatures", value.asInstanceOf[js.Any])
     
@@ -413,6 +422,6 @@ object RestoreDBInstanceFromS3Message {
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
   }
 }

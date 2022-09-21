@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GooglePrivacyDlpV2TransformationErrorHandling extends StObject {
   
   /** Ignore errors */
-  var leaveUntransformed: js.UndefOr[js.Any] = js.undefined
+  var leaveUntransformed: js.UndefOr[Any] = js.undefined
   
   /** Throw an error */
-  var throwError: js.UndefOr[js.Any] = js.undefined
+  var throwError: js.UndefOr[Any] = js.undefined
 }
 object GooglePrivacyDlpV2TransformationErrorHandling {
   
@@ -21,11 +21,11 @@ object GooglePrivacyDlpV2TransformationErrorHandling {
   
   extension [Self <: GooglePrivacyDlpV2TransformationErrorHandling](x: Self) {
     
-    inline def setLeaveUntransformed(value: js.Any): Self = StObject.set(x, "leaveUntransformed", value.asInstanceOf[js.Any])
+    inline def setLeaveUntransformed(value: Any): Self = StObject.set(x, "leaveUntransformed", value.asInstanceOf[js.Any])
     
     inline def setLeaveUntransformedUndefined: Self = StObject.set(x, "leaveUntransformed", js.undefined)
     
-    inline def setThrowError(value: js.Any): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
+    inline def setThrowError(value: Any): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
     
     inline def setThrowErrorUndefined: Self = StObject.set(x, "throwError", js.undefined)
   }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.RelatedFieldsFetcher")
 @js.native
-class RelatedFieldsFetcher ()
+open class RelatedFieldsFetcher ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.RelatedFieldsFetcher

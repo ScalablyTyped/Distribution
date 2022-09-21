@@ -20,10 +20,7 @@ object windows {
     /** The CookieStoreId to use for all tabs that were created when the window is opened. */
     var cookieStoreId: js.UndefOr[String] = js.undefined
     
-    /**
-      * If true, opens an active window. If false, opens an inactive window.
-      * @deprecated Unsupported on Firefox at this time.
-      */
+    /** If true, opens an active window. If false, opens an inactive window. */
     var focused: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -127,7 +124,7 @@ object windows {
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -189,7 +186,7 @@ object windows {
       
       inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
       
-      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value*))
     }
   }
   
@@ -224,7 +221,7 @@ object windows {
       
       inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
       
-      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value*))
     }
   }
   
@@ -397,7 +394,7 @@ object windows {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See the `Directive` decorator.
   */
-class DirectiveCls ()
+open class DirectiveCls ()
   extends StObject
      with Directive {
   def this(obj: Directive) = this()

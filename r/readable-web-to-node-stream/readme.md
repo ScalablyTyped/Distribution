@@ -1,7 +1,7 @@
 
 # Scala.js typings for readable-web-to-node-stream
 
-Typings are for version 3.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Converts a Web-API readable-stream into a Node readable-stream.
@@ -9,11 +9,11 @@ Converts a Web-API readable-stream into a Node readable-stream.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | readable-web-to-node-stream |
-| Keywords           | stream.readable, web, stream, coverter, readable, readablestream |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 3219122 |
-| # stars            | 0 |
+| Keywords           | stream.readable, web, node, browser, stream, covert, coverter, readable, readablestream |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6547181.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/Borewit/readable-web-to-node-stream#readme)

@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("fs-finder", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Finder
   @JSImport("fs-finder", JSImport.Namespace)
@@ -62,9 +62,9 @@ object mod {
       
       def checkExcludes(path: String): Boolean = js.native
       
-      def checkFile(path: String, stats: js.Any, mask: Mask, `type`: Type): Double = js.native
+      def checkFile(path: String, stats: Any, mask: Mask, `type`: Type): Double = js.native
       
-      def checkFilters(path: String, stats: js.Any): Boolean = js.native
+      def checkFilters(path: String, stats: Any): Boolean = js.native
       
       def checkSystemFiles(path: String): Boolean = js.native
       
@@ -124,9 +124,9 @@ object mod {
          with Base {
       
       def date(): Finder = js.native
-      def date(operation: js.Any): Finder = js.native
-      def date(operation: js.Any, value: js.Any): Finder = js.native
-      def date(operation: Unit, value: js.Any): Finder = js.native
+      def date(operation: Any): Finder = js.native
+      def date(operation: Any, value: Any): Finder = js.native
+      def date(operation: Unit, value: Any): Finder = js.native
       
       def find(): js.Array[String] = js.native
       def find(mask: Unit, fn: Unit, `type`: Type): js.Array[String] = js.native
@@ -158,9 +158,9 @@ object mod {
       def findFiles(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
       
       def size(): Finder = js.native
-      def size(operation: js.Any): Finder = js.native
-      def size(operation: js.Any, value: js.Any): Finder = js.native
-      def size(operation: Unit, value: js.Any): Finder = js.native
+      def size(operation: Any): Finder = js.native
+      def size(operation: Any, value: Any): Finder = js.native
+      def size(operation: Unit, value: Any): Finder = js.native
     }
     
     // 'all'|'directories'|'files'

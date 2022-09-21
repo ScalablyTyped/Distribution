@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object invertMod {
   
-  @JSImport("konva/types/filters/Invert", "Invert")
+  @JSImport("konva/lib/filters/Invert", "Invert")
   @js.native
   val Invert: Filter = js.native
 }

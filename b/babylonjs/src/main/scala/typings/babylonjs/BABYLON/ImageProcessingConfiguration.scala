@@ -7,44 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageProcessingConfiguration extends StObject {
   
-  /* private */ var _applyByPostProcess: js.Any = js.native
+  /** @hidden */
+  var _applyByPostProcess: Boolean = js.native
   
-  /* private */ var _colorCurvesEnabled: js.Any = js.native
+  /* private */ var _colorCurvesEnabled: Any = js.native
   
-  /* private */ var _colorGradingBGR: js.Any = js.native
+  /* private */ var _colorGradingBGR: Any = js.native
   
-  /* private */ var _colorGradingEnabled: js.Any = js.native
+  /* private */ var _colorGradingEnabled: Any = js.native
   
-  /* private */ var _colorGradingTexture: js.Any = js.native
+  /* private */ var _colorGradingTexture: Any = js.native
   
-  /* private */ var _colorGradingWithGreenDepth: js.Any = js.native
+  /* private */ var _colorGradingWithGreenDepth: Any = js.native
   
   /* protected */ var _contrast: Double = js.native
+  
+  /* private */ var _ditheringEnabled: Any = js.native
+  
+  /* private */ var _ditheringIntensity: Any = js.native
   
   /** @hidden */
   var _exposure: Double = js.native
   
-  /* private */ var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: Any = js.native
   
-  /* private */ var _toneMappingEnabled: js.Any = js.native
+  /** @hidden */
+  var _skipFinalColorClamp: Boolean = js.native
   
-  /* private */ var _toneMappingType: js.Any = js.native
+  /* private */ var _toneMappingEnabled: Any = js.native
+  
+  /* private */ var _toneMappingType: Any = js.native
   
   /**
     * Method called each time the image processing information changes requires to recompile the effect.
     */
   /* protected */ def _updateParameters(): Unit = js.native
   
-  /* private */ var _vignetteBlendMode: js.Any = js.native
+  /* private */ var _vignetteBlendMode: Any = js.native
   
-  /* private */ var _vignetteEnabled: js.Any = js.native
+  /* private */ var _vignetteEnabled: Any = js.native
   
   /**
-    * Gets wether the image processing is applied through a post process or not.
+    * Gets whether the image processing is applied through a post process or not.
     */
   def applyByPostProcess: Boolean = js.native
   /**
-    * Sets wether the image processing is applied through a post process or not.
+    * Sets whether the image processing is applied through a post process or not.
     */
   def applyByPostProcess_=(value: Boolean): Unit = js.native
   
@@ -62,29 +70,29 @@ trait ImageProcessingConfiguration extends StObject {
   var colorCurves: Nullable[ColorCurves] = js.native
   
   /**
-    * Gets wether the color curves effect is enabled.
+    * Gets whether the color curves effect is enabled.
     */
   def colorCurvesEnabled: Boolean = js.native
   /**
-    * Sets wether the color curves effect is enabled.
+    * Sets whether the color curves effect is enabled.
     */
   def colorCurvesEnabled_=(value: Boolean): Unit = js.native
   
   /**
-    * Gets wether the color grading texture contains BGR values.
+    * Gets whether the color grading texture contains BGR values.
     */
   def colorGradingBGR: Boolean = js.native
   /**
-    * Sets wether the color grading texture contains BGR values.
+    * Sets whether the color grading texture contains BGR values.
     */
   def colorGradingBGR_=(value: Boolean): Unit = js.native
   
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def colorGradingEnabled: Boolean = js.native
   /**
-    * Sets wether the color grading effect is enabled.
+    * Sets whether the color grading effect is enabled.
     */
   def colorGradingEnabled_=(value: Boolean): Unit = js.native
   
@@ -98,11 +106,11 @@ trait ImageProcessingConfiguration extends StObject {
   def colorGradingTexture_=(value: Nullable[BaseTexture]): Unit = js.native
   
   /**
-    * Gets wether the color grading effect is using a green depth for the 3d Texture.
+    * Gets whether the color grading effect is using a green depth for the 3d Texture.
     */
   def colorGradingWithGreenDepth: Boolean = js.native
   /**
-    * Sets wether the color grading effect is using a green depth for the 3d Texture.
+    * Sets whether the color grading effect is using a green depth for the 3d Texture.
     */
   def colorGradingWithGreenDepth_=(value: Boolean): Unit = js.native
   
@@ -116,6 +124,26 @@ trait ImageProcessingConfiguration extends StObject {
   def contrast_=(value: Double): Unit = js.native
   
   /**
+    * Gets whether the dithering effect is enabled.
+    * The dithering effect can be used to reduce banding.
+    */
+  def ditheringEnabled: Boolean = js.native
+  /**
+    * Sets whether the dithering effect is enabled.
+    * The dithering effect can be used to reduce banding.
+    */
+  def ditheringEnabled_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Gets the dithering intensity. 0 is no dithering. Default is 1.0 / 255.0.
+    */
+  def ditheringIntensity: Double = js.native
+  /**
+    * Sets the dithering intensity. 0 is no dithering. Default is 1.0 / 255.0.
+    */
+  def ditheringIntensity_=(value: Double): Unit = js.native
+  
+  /**
     * Gets the Exposure used in the effect.
     */
   def exposure: Double = js.native
@@ -126,16 +154,16 @@ trait ImageProcessingConfiguration extends StObject {
   
   /**
     * Gets the current class name.
-    * @return "ImageProcessingConfiguration"
+    * @returns "ImageProcessingConfiguration"
     */
   def getClassName(): String = js.native
   
   /**
-    * Gets wether the image processing is enabled or not.
+    * Gets whether the image processing is enabled or not.
     */
   def isEnabled: Boolean = js.native
   /**
-    * Sets wether the image processing is enabled or not.
+    * Sets whether the image processing is enabled or not.
     */
   def isEnabled_=(value: Boolean): Unit = js.native
   
@@ -160,16 +188,27 @@ trait ImageProcessingConfiguration extends StObject {
   
   /**
     * Serializes the current image processing instance to a json representation.
-    * @return a JSON representation
+    * @returns a JSON representation
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
-    * Gets wether the tone mapping effect is enabled.
+    * If apply by post process is set to true, setting this to true will skip the the final color clamp step in the fragment shader
+    * Applies to PBR materials.
+    */
+  def skipFinalColorClamp: Boolean = js.native
+  /**
+    * If apply by post process is set to true, setting this to true will skip the the final color clamp step in the fragment shader
+    * Applies to PBR materials.
+    */
+  def skipFinalColorClamp_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Gets whether the tone mapping effect is enabled.
     */
   def toneMappingEnabled: Boolean = js.native
   /**
-    * Sets wether the tone mapping effect is enabled.
+    * Sets whether the tone mapping effect is enabled.
     */
   def toneMappingEnabled_=(value: Boolean): Unit = js.native
   
@@ -213,11 +252,11 @@ trait ImageProcessingConfiguration extends StObject {
   var vignetteColor: Color4 = js.native
   
   /**
-    * Gets wether the vignette effect is enabled.
+    * Gets whether the vignette effect is enabled.
     */
   def vignetteEnabled: Boolean = js.native
   /**
-    * Sets wether the vignette effect is enabled.
+    * Sets whether the vignette effect is enabled.
     */
   def vignetteEnabled_=(value: Boolean): Unit = js.native
   

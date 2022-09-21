@@ -14,7 +14,7 @@ object global {
     // global Drop constructor
     @JSGlobal("Drop")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.tetherDrop.mod.^ {
       def this(options: IDropOptions) = this()
     }

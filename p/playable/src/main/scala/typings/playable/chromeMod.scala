@@ -16,7 +16,7 @@ object chromeMod {
   
   @JSImport("playable/dist/src/modules/picture-in-picture/chrome", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ChromePictureInPicture {
     def this(elem: HTMLVideoElement, callback: EventListener) = this()
@@ -44,19 +44,16 @@ object chromeMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
-    def exitPictureInPicture(): js.Promise[Unit] = js.native
-    
-    var pictureInPictureElement: js.UndefOr[Element] = js.native
-    
-    var pictureInPictureEnabled: js.UndefOr[Boolean] = js.native
+    @JSName("pictureInPictureElement")
+    var pictureInPictureElement_ChromeDocument: Element = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
@@ -75,17 +72,17 @@ object chromeMod {
        with IPictureInPictureHelper {
     
     /* private */ @JSName("_$elem")
-    var _$elem: js.Any = js.native
+    var _$elem: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _enterWhenHasMetaData: js.Any = js.native
+    /* private */ var _enterWhenHasMetaData: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
-    /* private */ var catchException: js.Any = js.native
+    /* private */ var catchException: Any = js.native
     
     def isAPIEnabled: Boolean = js.native
     
@@ -105,13 +102,13 @@ object chromeMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
@@ -122,7 +119,5 @@ object chromeMod {
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
-    
-    def requestPictureInPicture(): js.Promise[Unit] = js.native
   }
 }

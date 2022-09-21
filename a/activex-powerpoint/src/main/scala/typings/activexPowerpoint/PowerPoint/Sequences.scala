@@ -17,7 +17,7 @@ trait Sequences extends StObject {
   
   def Item(Index: Double): Sequence = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Sequences_typekey")
   var PowerPointDotSequences_typekey: Sequences = js.native

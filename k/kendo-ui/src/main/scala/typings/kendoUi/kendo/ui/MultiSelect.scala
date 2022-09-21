@@ -13,7 +13,7 @@ trait MultiSelect
   
   def close(): Unit = js.native
   
-  def dataItems(): js.Any = js.native
+  def dataItems(): Any = js.native
   
   var dataSource: DataSource = js.native
   
@@ -23,7 +23,7 @@ trait MultiSelect
   
   var input: JQuery = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   var list: JQuery = js.native
   
@@ -49,9 +49,9 @@ trait MultiSelect
   
   var ul: JQuery = js.native
   
-  def value(): js.Any = js.native
+  def value(): Any = js.native
   def value(value: String): Unit = js.native
-  def value(value: js.Any): Unit = js.native
+  def value(value: Any): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

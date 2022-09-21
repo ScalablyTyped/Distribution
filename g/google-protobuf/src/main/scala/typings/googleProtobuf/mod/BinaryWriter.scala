@@ -1,14 +1,13 @@
 package typings.googleProtobuf.mod
 
 import typings.googleProtobuf.mod.BinaryConstants.FieldType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryWriter")
 @js.native
-class BinaryWriter () extends StObject {
+open class BinaryWriter () extends StObject {
   
   def beginSubMessage(field: Double): Unit = js.native
   
@@ -16,16 +15,16 @@ class BinaryWriter () extends StObject {
   
   def getResultBase64String(): String = js.native
   
-  def getResultBuffer(): Uint8Array = js.native
+  def getResultBuffer(): js.typedarray.Uint8Array = js.native
   
   def maybeWriteSerializedMessage(): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.typedarray.Uint8Array): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.typedarray.Uint8Array, start: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.typedarray.Uint8Array, start: Double, end: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.typedarray.Uint8Array, start: Unit, end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Unit, start: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Unit, start: Double, end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Unit, start: Unit, end: Double): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: Uint8Array): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double, end: Double): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: Uint8Array, start: Unit, end: Double): Unit = js.native
   
   def reset(): Unit = js.native
   
@@ -58,7 +57,7 @@ class BinaryWriter () extends StObject {
   def writeFloat(field: Double): Unit = js.native
   def writeFloat(field: Double, value: Double): Unit = js.native
   
-  def writeGroup(field: Double, value: js.Any, writeCallback: BinaryWriteCallback): Unit = js.native
+  def writeGroup(field: Double, value: Any, writeCallback: BinaryWriteCallback): Unit = js.native
   
   def writeInt32(field: Double): Unit = js.native
   def writeInt32(field: Double, value: Double): Unit = js.native
@@ -72,7 +71,7 @@ class BinaryWriter () extends StObject {
   def writeInt64String(field: Double): Unit = js.native
   def writeInt64String(field: Double, value: String): Unit = js.native
   
-  def writeMessage(fieldNumber: Double, value: js.Any, writerCallback: BinaryWriteCallback): Unit = js.native
+  def writeMessage(fieldNumber: Double, value: Any, writerCallback: BinaryWriteCallback): Unit = js.native
   @JSName("writeMessage")
   var writeMessage_Original: BinaryWrite = js.native
   
@@ -224,7 +223,7 @@ class BinaryWriter () extends StObject {
   def writeRepeatedVarintHash64(field: Double): Unit = js.native
   def writeRepeatedVarintHash64(field: Double, value: js.Array[String]): Unit = js.native
   
-  def writeSerializedMessage(bytes: Uint8Array, start: Double, end: Double): Unit = js.native
+  def writeSerializedMessage(bytes: js.typedarray.Uint8Array, start: Double, end: Double): Unit = js.native
   
   def writeSfixed32(field: Double): Unit = js.native
   def writeSfixed32(field: Double, value: Double): Unit = js.native

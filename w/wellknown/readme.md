@@ -11,11 +11,14 @@ convert wkt to geojson
 | Full name          | wellknown |
 | Keywords           | wkt, geojson, maps |
 | # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 880107 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 167309.66666666666 |
+| # stars            | 237.0 |
 
 ## Links
+- [Homepage](https://github.com/mapbox/wellknown#readme)
+- [Bugs](https://github.com/mapbox/wellknown/issues)
+- [Repository](https://github.com/mapbox/wellknown)
 - [Npm](https://www.npmjs.com/package/wellknown)
     
 

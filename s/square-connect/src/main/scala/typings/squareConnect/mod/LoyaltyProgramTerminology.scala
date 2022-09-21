@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyProgramTerminology")
 @js.native
-class LoyaltyProgramTerminology () extends StObject {
+open class LoyaltyProgramTerminology () extends StObject {
   
   /**
     * A singular unit for a point (for example, 1 point is called 1 star).

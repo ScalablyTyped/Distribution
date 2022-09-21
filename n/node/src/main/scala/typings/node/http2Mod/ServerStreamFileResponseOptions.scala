@@ -1,7 +1,7 @@
 package typings.node.http2Mod
 
-import typings.node.fsMod.Stats
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.nodeFsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

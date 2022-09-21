@@ -42,6 +42,6 @@ object ListCreateAccountStatusRequest {
     
     inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    inline def setStatesVarargs(value: CreateAccountState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: CreateAccountState*): Self = StObject.set(x, "States", js.Array(value*))
   }
 }

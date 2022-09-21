@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import typings.mapboxGl.mapboxGlStrings.pbf
 import typings.mapboxGl.mapboxGlStrings.tms
 import typings.mapboxGl.mapboxGlStrings.vector
 import typings.mapboxGl.mapboxGlStrings.xyz
@@ -10,15 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorSource
   extends StObject
      with Source
-     with AnySourceData {
+     with _AnySourceData {
   
   var attribution: js.UndefOr[String] = js.undefined
   
   var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
+  var format: js.UndefOr[pbf] = js.undefined
+  
+  var id: js.UndefOr[String] = js.undefined
+  
   var maxzoom: js.UndefOr[Double] = js.undefined
   
   var minzoom: js.UndefOr[Double] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
   
   var promoteId: js.UndefOr[PromoteIdSpecification] = js.undefined
   
@@ -30,6 +37,8 @@ trait VectorSource
   var type_VectorSource: vector
   
   var url: js.UndefOr[String] = js.undefined
+  
+  var vector_layers: js.UndefOr[js.Array[SourceVectorLayer]] = js.undefined
 }
 object VectorSource {
   
@@ -49,7 +58,15 @@ object VectorSource {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
+    
+    inline def setFormat(value: pbf): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
@@ -58,6 +75,10 @@ object VectorSource {
     inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPromoteId(value: PromoteIdSpecification): Self = StObject.set(x, "promoteId", value.asInstanceOf[js.Any])
     
@@ -71,12 +92,18 @@ object VectorSource {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setType(value: vector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVector_layers(value: js.Array[SourceVectorLayer]): Self = StObject.set(x, "vector_layers", value.asInstanceOf[js.Any])
+    
+    inline def setVector_layersUndefined: Self = StObject.set(x, "vector_layers", js.undefined)
+    
+    inline def setVector_layersVarargs(value: SourceVectorLayer*): Self = StObject.set(x, "vector_layers", js.Array(value*))
   }
 }

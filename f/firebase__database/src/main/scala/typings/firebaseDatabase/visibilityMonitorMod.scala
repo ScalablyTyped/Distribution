@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object visibilityMonitorMod {
   
-  @JSImport("@firebase/database/dist/src/core/util/VisibilityMonitor", "VisibilityMonitor")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/VisibilityMonitor", "VisibilityMonitor")
   @js.native
-  class VisibilityMonitor () extends EventEmitter {
+  open class VisibilityMonitor () extends EventEmitter {
     
-    /* private */ var visible_ : js.Any = js.native
+    /* private */ var visible_ : Any = js.native
   }
   /* static members */
   object VisibilityMonitor {
     
-    @JSImport("@firebase/database/dist/src/core/util/VisibilityMonitor", "VisibilityMonitor")
+    @JSImport("@firebase/database/dist/node-esm/src/core/util/VisibilityMonitor", "VisibilityMonitor")
     @js.native
     val ^ : js.Any = js.native
     

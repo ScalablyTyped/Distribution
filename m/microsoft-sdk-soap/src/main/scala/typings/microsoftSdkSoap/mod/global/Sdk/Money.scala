@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Money")
 @js.native
-class Money protected () extends AttributeBase {
+open class Money protected () extends AttributeBase {
   /**
     * A Money Attribute.
     * @param name The logical name of the attribute.

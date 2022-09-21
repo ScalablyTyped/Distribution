@@ -35,6 +35,10 @@ object reactAceStrings {
   inline def enableSnippets: enableSnippets = "enableSnippets".asInstanceOf[enableSnippets]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait fullLine extends StObject
   inline def fullLine: fullLine = "fullLine".asInstanceOf[fullLine]
   
@@ -49,6 +53,10 @@ object reactAceStrings {
     extends StObject
        with EditorOption
   inline def highlightActiveLine: highlightActiveLine = "highlightActiveLine".asInstanceOf[highlightActiveLine]
+  
+  @js.native
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait line extends StObject
@@ -153,6 +161,10 @@ object reactAceStrings {
     extends StObject
        with EditorEvent
   inline def updateRef: updateRef = "updateRef".asInstanceOf[updateRef]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait wide extends StObject

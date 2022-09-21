@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.textAreaBoldMod.TextAreaBoldProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemTextAreaBoldMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/TextAreaBold", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaBoldProps] = js.native
+  val default: FC[TextAreaBoldProps] = js.native
   
-  type _To = SFC[TextAreaBoldProps]
+  type _To = FC[TextAreaBoldProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemTextAreaBoldMod.foo` */
-  override def _to: SFC[TextAreaBoldProps] = default
+  override def _to: FC[TextAreaBoldProps] = default
 }

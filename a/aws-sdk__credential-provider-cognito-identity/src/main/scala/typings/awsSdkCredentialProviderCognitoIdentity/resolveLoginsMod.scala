@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resolveLoginsMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/resolveLogins", JSImport.Namespace)
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist-types/resolveLogins", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

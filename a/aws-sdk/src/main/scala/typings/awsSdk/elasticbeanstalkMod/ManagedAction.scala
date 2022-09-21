@@ -29,7 +29,7 @@ trait ManagedAction extends StObject {
   /**
     * The start time of the maintenance window in which the managed action will execute.
     */
-  var WindowStartTime: js.UndefOr[Timestamp] = js.undefined
+  var WindowStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ManagedAction {
   
@@ -56,7 +56,7 @@ object ManagedAction {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setWindowStartTime(value: Timestamp): Self = StObject.set(x, "WindowStartTime", value.asInstanceOf[js.Any])
+    inline def setWindowStartTime(value: js.Date): Self = StObject.set(x, "WindowStartTime", value.asInstanceOf[js.Any])
     
     inline def setWindowStartTimeUndefined: Self = StObject.set(x, "WindowStartTime", js.undefined)
   }

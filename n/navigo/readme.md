@@ -1,7 +1,7 @@
 
 # Scala.js typings for navigo
 
-Typings are for version 7.0
+Typings are for version 8.11.1
 
 ## Library description:
 A simple vanilla JavaScript router
@@ -10,10 +10,10 @@ A simple vanilla JavaScript router
 | ------------------ | :-------------: |
 | Full name          | navigo |
 | Keywords           | router, vanilla, history |
-| # releases         | 68 |
-| # dependents       | 22 |
-| # downloads        | 582942 |
-| # stars            | 2 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 95601.0 |
+| # stars            | 2520.0 |
 
 ## Links
 - [Homepage](https://github.com/krasimir/navigo#readme)
@@ -24,7 +24,7 @@ A simple vanilla JavaScript router
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

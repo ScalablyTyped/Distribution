@@ -1,7 +1,6 @@
 package typings.officeRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OfficeRuntime {
   
   /**
-    * Interface that contains functions for checking API requirement-set support.
+    * Interface that contains methods for checking API requirement-set support.
     */
   @js.native
   trait ApiInformation extends StObject {
@@ -25,6 +24,12 @@ object OfficeRuntime {
   
   /**
     * Interface that contains authorization related APIs.
+    *
+    * @remarks
+    *
+    * The methods in this interface are equivalent to those in the {@link https://learn.microsoft.com/javascript/api/office/office.auth | Office.auth interface}.
+    * If new authentication types are added in the future, they will only be added to the `Office.auth` interface.
+    * For simplicity, the code examples throughout the documentation use `Office.auth`.
     */
   @js.native
   trait Auth extends StObject {
@@ -32,11 +37,11 @@ object OfficeRuntime {
     /**
       * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users.
       * Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the
-      * {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
+      * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
       * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational
       * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
       *
-      * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
       *
       * @remarks
       *
@@ -51,6 +56,12 @@ object OfficeRuntime {
   
   /**
     * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
+    *
+    * @remarks
+    *
+    * The methods in this interface are equivalent to those in the `Office.AuthOptions` interface.
+    * If new authentication types are added in the future, they will only be added to the `Office.AuthOptions` interface.
+    * For simplicity, the code examples throughout the documentation use `Office.AuthOptions`.
     */
   trait AuthOptions extends StObject {
     
@@ -72,7 +83,7 @@ object OfficeRuntime {
     /**
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.undefined
+    var asyncContext: js.UndefOr[Any] = js.undefined
     
     /**
       * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor
@@ -85,8 +96,14 @@ object OfficeRuntime {
     
     /**
       * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`.
-      * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development.
+      * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin.
       * Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.
+      *
+      * @remarks
+      *
+      * **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the `forMSGraphAccess` option before sideloading the add-in for testing.
+      * Otherwise, you'll receive {@link https://learn.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012 | error 13012}. For additional guidance, see
+      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
       */
     var forMSGraphAccess: js.UndefOr[Boolean] = js.undefined
     
@@ -122,7 +139,7 @@ object OfficeRuntime {
       
       inline def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
       
-      inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+      inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
       
       inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
       
@@ -144,13 +161,20 @@ object OfficeRuntime {
     }
   }
   
-  /** Object representing the dialog box. */
+  /**
+    * Object representing the dialog box.
+    *
+    * @remarks
+    * [Api set: CustomFunctionsRuntime 1.1]
+    *
+    */
   trait Dialog extends StObject {
     
     /**
       * Method to close a dialog box. Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     def close(): js.Promise[Unit]
@@ -168,14 +192,21 @@ object OfficeRuntime {
     }
   }
   
-  /** Provides display options and actions a dialog box may take. */
+  /**
+    * Provides display options and actions a dialog box may take.
+    *
+    * @remarks
+    * [Api set: CustomFunctionsRuntime 1.1]
+    *
+    */
   trait DisplayWebDialogOptions extends StObject {
     
     /**
       * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true).
       * This setting is only applicable to custom functions running on Excel Online.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     var displayInIFrame: js.UndefOr[Boolean] = js.undefined
@@ -184,7 +215,8 @@ object OfficeRuntime {
       * Optional parameter that defines the height of the dialog box as a percentage of the current display.
       * For example, accepts strings such as: '50%', '50'.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     var height: js.UndefOr[String] = js.undefined
@@ -192,7 +224,8 @@ object OfficeRuntime {
     /**
       * Optional callback that runs when the dialog box is closed.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -200,7 +233,8 @@ object OfficeRuntime {
     /**
       * Optional callback that runs when the dialog box sends a message to its parent.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     var onMessage: js.UndefOr[js.Function2[/* message */ String, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
@@ -208,16 +242,18 @@ object OfficeRuntime {
     /**
       * Optional callback that runs when the dialog box sends an error.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
-    var onRuntimeError: js.UndefOr[js.Function2[/* error */ Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
+    var onRuntimeError: js.UndefOr[js.Function2[/* error */ js.Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
     
     /**
       * Optional parameter that defines the width of dialog as a percentage of window.
       * For example, accepts strings such as: '50%', '50'.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: CustomFunctionsRuntime 1.1]
       *
       */
     var width: js.UndefOr[String] = js.undefined
@@ -247,7 +283,7 @@ object OfficeRuntime {
       
       inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      inline def setOnRuntimeError(value: (/* error */ Error, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onRuntimeError", js.Any.fromFunction2(value))
+      inline def setOnRuntimeError(value: (/* error */ js.Error, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onRuntimeError", js.Any.fromFunction2(value))
       
       inline def setOnRuntimeErrorUndefined: Self = StObject.set(x, "onRuntimeError", js.undefined)
       
@@ -260,9 +296,12 @@ object OfficeRuntime {
   /**
     * Asynchronous, global, and persistent key-value storage.
     *
-    * [Api set: SharedRuntime 1.1]
-    *
     * @remarks
+    * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+    *
+    * **Important**: In Outlook, support is only available with
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+    *
     * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
     */
   trait Storage extends StObject {
@@ -271,7 +310,11 @@ object OfficeRuntime {
       * Retrieves an item from storage based on its key.
       * Returns a Promise. In the event the Promise does not resolve, returns null.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param key Key of item to be retrieved. Must be a string.
       */
@@ -281,7 +324,11 @@ object OfficeRuntime {
       * Retrieves multiple items from storage based on their key.
       * Returns a Promise. In the event the Promise does not resolve, returns null.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param keys Keys of items to be removed. Must be an array of strings.
       */
@@ -289,10 +336,13 @@ object OfficeRuntime {
     
     /**
       * Retrieves an array of all keys from storage.
-      *  Returns a Promise.
+      * Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
       *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       */
     def getKeys(): js.Promise[js.Array[String]]
     
@@ -300,7 +350,11 @@ object OfficeRuntime {
       * Removes an item from storage based on its key.
       * Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param key Key of item to be removed. Must be a string.
       */
@@ -310,7 +364,11 @@ object OfficeRuntime {
       * Removes multiple items from storage.
       * Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param keys Keys of items to be removed. Must be an array of strings.
       */
@@ -320,7 +378,11 @@ object OfficeRuntime {
       * Sets a key-value pair into storage or updates an existing key-value pair.
       * Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param key Key of item to be set. Must be a string.
       * @param value Must be a string.
@@ -331,7 +393,11 @@ object OfficeRuntime {
       * Sets multiple items into storage or updates multiple items within storage.
       * Returns a Promise.
       *
-      * [Api set: SharedRuntime 1.1]
+      * @remarks
+      * [Api set: SharedRuntime 1.1, Mailbox 1.10]
+      *
+      * **Important**: In Outlook, support is only available with
+      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
       *
       * @param keyValues Key-value pairs to be set. Must be strings.
       */

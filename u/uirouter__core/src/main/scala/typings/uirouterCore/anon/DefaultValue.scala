@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultValue extends StObject {
   
-  var defaultValue: js.Any
+  var defaultValue: Any
 }
 object DefaultValue {
   
-  inline def apply(defaultValue: js.Any): DefaultValue = {
+  inline def apply(defaultValue: Any): DefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValue]
   }
   
   extension [Self <: DefaultValue](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

@@ -19,7 +19,7 @@ object WeightedDiGraph {
     adjList: js.Array[js.Array[Edge]],
     edge: (Double, Double) => Edge | Null,
     node: Double => Node,
-    nodeInfo: js.Any,
+    nodeInfo: Any,
     toDiGraph: () => DiGraph
   ): WeightedDiGraph = {
     val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction1(addEdge), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any], toDiGraph = js.Any.fromFunction0(toDiGraph))

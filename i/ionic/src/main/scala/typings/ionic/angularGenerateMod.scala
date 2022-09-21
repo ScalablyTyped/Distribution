@@ -17,15 +17,15 @@ object angularGenerateMod {
   
   @JSImport("ionic/lib/project/angular/generate", "AngularGenerateRunner")
   @js.native
-  class AngularGenerateRunner protected () extends GenerateRunner[AngularGenerateOptions] {
+  open class AngularGenerateRunner protected () extends GenerateRunner[AngularGenerateOptions] {
     def this(e: AngularGenerateRunnerDeps) = this()
     
     /* protected */ @JSName("e")
     val e_AngularGenerateRunner: AngularGenerateRunnerDeps = js.native
     
-    /* private */ var generateComponent: js.Any = js.native
+    /* private */ var generateComponent: Any = js.native
     
-    /* private */ var validateFeatureType: js.Any = js.native
+    /* private */ var validateFeatureType: Any = js.native
   }
   
   trait AngularGenerateRunnerDeps

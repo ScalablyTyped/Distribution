@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Build extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The build number/name of the build.
@@ -45,7 +44,7 @@ trait Build extends StObject {
   /**
     * The date the build was deleted.
     */
-  var deletedDate: Date
+  var deletedDate: js.Date
   
   /**
     * The description of how the build was deleted.
@@ -55,12 +54,12 @@ trait Build extends StObject {
   /**
     * A list of demands that represents the agent capabilities required by this build.
     */
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   /**
     * The time that the build was completed.
     */
-  var finishTime: Date
+  var finishTime: js.Date
   
   /**
     * The ID of the build.
@@ -80,7 +79,7 @@ trait Build extends StObject {
   /**
     * The date the build was last changed.
     */
-  var lastChangedDate: Date
+  var lastChangedDate: js.Date
   
   /**
     * Information about the build logs.
@@ -112,7 +111,7 @@ trait Build extends StObject {
     */
   var project: TeamProjectReference
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The quality of the xaml build (good, bad, etc.)
@@ -137,7 +136,7 @@ trait Build extends StObject {
   /**
     * The time that the build was queued.
     */
-  var queueTime: Date
+  var queueTime: js.Date
   
   /**
     * The reason that the build was created.
@@ -182,7 +181,7 @@ trait Build extends StObject {
   /**
     * The time that the build was started.
     */
-  var startTime: Date
+  var startTime: js.Date
   
   /**
     * The status of the build.
@@ -211,33 +210,33 @@ trait Build extends StObject {
 object Build {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     buildNumber: String,
     buildNumberRevision: Double,
     controller: BuildController,
     definition: DefinitionReference,
     deleted: Boolean,
     deletedBy: IdentityRef,
-    deletedDate: Date,
+    deletedDate: js.Date,
     deletedReason: String,
-    demands: js.Array[js.Any],
-    finishTime: Date,
+    demands: js.Array[Any],
+    finishTime: js.Date,
     id: Double,
     keepForever: Boolean,
     lastChangedBy: IdentityRef,
-    lastChangedDate: Date,
+    lastChangedDate: js.Date,
     logs: BuildLogReference,
     orchestrationPlan: TaskOrchestrationPlanReference,
     parameters: String,
     plans: js.Array[TaskOrchestrationPlanReference],
     priority: QueuePriority,
     project: TeamProjectReference,
-    properties: js.Any,
+    properties: Any,
     quality: String,
     queue: AgentPoolQueue,
     queueOptions: QueueOptions,
     queuePosition: Double,
-    queueTime: Date,
+    queueTime: js.Date,
     reason: BuildReason,
     repository: BuildRepository,
     requestedBy: IdentityRef,
@@ -246,7 +245,7 @@ object Build {
     retainedByRelease: Boolean,
     sourceBranch: String,
     sourceVersion: String,
-    startTime: Date,
+    startTime: js.Date,
     status: BuildStatus,
     tags: js.Array[String],
     triggerInfo: StringDictionary[String],
@@ -272,15 +271,15 @@ object Build {
     
     inline def setDeletedBy(value: IdentityRef): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
     
-    inline def setDeletedDate(value: Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
+    inline def setDeletedDate(value: js.Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
     
     inline def setDeletedReason(value: String): Self = StObject.set(x, "deletedReason", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -288,7 +287,7 @@ object Build {
     
     inline def setLastChangedBy(value: IdentityRef): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedDate(value: Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
+    inline def setLastChangedDate(value: js.Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
     
     inline def setLogs(value: BuildLogReference): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
@@ -298,13 +297,13 @@ object Build {
     
     inline def setPlans(value: js.Array[TaskOrchestrationPlanReference]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    inline def setPlansVarargs(value: TaskOrchestrationPlanReference*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: TaskOrchestrationPlanReference*): Self = StObject.set(x, "plans", js.Array(value*))
     
     inline def setPriority(value: QueuePriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
@@ -314,7 +313,7 @@ object Build {
     
     inline def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
     
-    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: js.Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     inline def setReason(value: BuildReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
@@ -332,13 +331,13 @@ object Build {
     
     inline def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTriggerInfo(value: StringDictionary[String]): Self = StObject.set(x, "triggerInfo", value.asInstanceOf[js.Any])
     
@@ -348,8 +347,8 @@ object Build {
     
     inline def setValidationResults(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
     
-    inline def setValidationResultsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "validationResults", js.Array(value :_*))
+    inline def setValidationResultsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "validationResults", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

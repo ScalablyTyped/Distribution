@@ -40,6 +40,6 @@ object BulkEmailEntry {
     
     inline def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
     
-    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
+    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value*))
   }
 }

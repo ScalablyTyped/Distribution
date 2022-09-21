@@ -1,7 +1,6 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.GossipMessage.ContentType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGossipMessage extends StObject {
   
   /** GossipMessage content */
-  var content: js.UndefOr[Uint8Array | Null] = js.undefined
+  var content: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** GossipMessage contentType */
   var contentType: js.UndefOr[ContentType | Null] = js.undefined
@@ -26,7 +25,7 @@ object IGossipMessage {
   
   extension [Self <: IGossipMessage](x: Self) {
     
-    inline def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     

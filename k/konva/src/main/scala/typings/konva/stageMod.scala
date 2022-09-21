@@ -1,86 +1,104 @@
 package typings.konva
 
 import typings.konva.anon.Left
+import typings.konva.anon.Vector2didnumber
 import typings.konva.anon.Vector2didnumberundefined
 import typings.konva.canvasMod.HitCanvas
 import typings.konva.canvasMod.SceneCanvas
 import typings.konva.containerMod.Container
 import typings.konva.containerMod.ContainerConfig
 import typings.konva.layerMod.Layer
-import typings.konva.nodeMod.Node
-import typings.konva.nodeMod.NodeConfig
 import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.Vector2d
-import typings.konva.utilMod.Collection
 import typings.std.HTMLDivElement
+import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stageMod {
   
-  @JSImport("konva/types/Stage", "Stage")
+  @JSImport("konva/lib/Stage", "Stage")
   @js.native
-  class Stage protected () extends Container[Layer] {
+  open class Stage protected () extends Container[Layer] {
     def this(config: StageConfig) = this()
     
     def _bindContentEvents(): Unit = js.native
     
     def _buildDOM(): Unit = js.native
     
-    var _changedPointerPositions: js.Array[Vector2didnumberundefined] = js.native
+    var _changedPointerPositions: js.Array[Vector2didnumber] = js.native
     
     def _checkVisibility(): Unit = js.native
     
-    def _contextmenu(evt: js.Any): Unit = js.native
+    def _contextmenu(evt: Any): Unit = js.native
     
     def _getContentPosition(): Left = js.native
     
     def _getPointerById(): Vector2didnumberundefined = js.native
     def _getPointerById(id: Double): Vector2didnumberundefined = js.native
     
+    def _getTargetShape(evenType: Any): Shape[ShapeConfig] = js.native
+    
     def _lostpointercapture(evt: PointerEvent): Unit = js.native
     
-    def _mousedown(evt: js.Any): Unit = js.native
+    var _mouseClickEndShape: Shape[ShapeConfig] = js.native
     
-    def _mouseenter(evt: js.Any): Unit = js.native
+    var _mouseClickStartShape: Shape[ShapeConfig] = js.native
     
-    def _mousemove(evt: js.Any): Unit = js.native
+    var _mouseDblTimeout: Any = js.native
     
-    def _mouseout(evt: js.Any): Unit = js.native
+    var _mouseTargetShape: Shape[ShapeConfig] = js.native
     
-    def _mouseover(evt: js.Any): Unit = js.native
+    var _pointerClickEndShape: Shape[ShapeConfig] = js.native
     
-    def _mouseup(evt: js.Any): Unit = js.native
+    var _pointerClickStartShape: Shape[ShapeConfig] = js.native
+    
+    var _pointerDblTimeout: Any = js.native
     
     var _pointerPositions: js.Array[Vector2didnumberundefined] = js.native
     
+    var _pointerTargetShape: Shape[ShapeConfig] = js.native
+    
     def _pointercancel(evt: PointerEvent): Unit = js.native
     
+    def _pointerdown(evt: MouseEvent): Unit = js.native
     def _pointerdown(evt: PointerEvent): Unit = js.native
+    def _pointerdown(evt: TouchEvent): Unit = js.native
     
+    def _pointerenter(evt: Any): Unit = js.native
+    
+    def _pointerleave(evt: Any): Unit = js.native
+    
+    def _pointermove(evt: MouseEvent): Unit = js.native
     def _pointermove(evt: PointerEvent): Unit = js.native
+    def _pointermove(evt: TouchEvent): Unit = js.native
     
-    def _pointerup(evt: PointerEvent): Unit = js.native
+    def _pointerover(evt: Any): Unit = js.native
+    
+    def _pointerup(evt: Any): Unit = js.native
     
     def _resizeDOM(): Unit = js.native
     
-    def _setPointerPosition(evt: js.Any): Unit = js.native
+    def _setPointerPosition(evt: Any): Unit = js.native
     
-    def _touchend(evt: js.Any): Unit = js.native
+    var _touchClickEndShape: Shape[ShapeConfig] = js.native
     
-    def _touchmove(evt: js.Any): Unit = js.native
+    var _touchClickStartShape: Shape[ShapeConfig] = js.native
     
-    def _touchstart(evt: js.Any): Unit = js.native
+    var _touchDblTimeout: Any = js.native
     
-    def _validateAdd(child: js.Any): Unit = js.native
+    var _touchTargetShape: Shape[ShapeConfig] = js.native
     
-    def _wheel(evt: js.Any): Unit = js.native
+    def _validateAdd(child: Any): Unit = js.native
     
-    def add(layer: Layer): this.type = js.native
+    def _wheel(evt: Any): Unit = js.native
+    
+    def add(layer: Layer, rest: Any*): this.type = js.native
     
     def batchDraw(): this.type = js.native
     
@@ -90,10 +108,6 @@ object stageMod {
     
     def clear(): this.type = js.native
     
-    var clickEndShape: Shape[ShapeConfig] = js.native
-    
-    var clickStartShape: Shape[ShapeConfig] = js.native
-    
     def container(): HTMLDivElement = js.native
     def container(v: HTMLDivElement): this.type = js.native
     @JSName("container")
@@ -101,16 +115,11 @@ object stageMod {
     
     var content: HTMLDivElement = js.native
     
-    var dblTimeout: js.Any = js.native
-    
     def getContent(): HTMLDivElement = js.native
     
-    def getIntersection(): Shape[ShapeConfig] | Null = js.native
-    def getIntersection(pos: Null, selector: String): Shape[ShapeConfig] | Null = js.native
-    def getIntersection(pos: Vector2d): Shape[ShapeConfig] | Null = js.native
-    def getIntersection(pos: Vector2d, selector: String): Shape[ShapeConfig] | Null = js.native
+    def getIntersection(pos: Vector2d): Shape[ShapeConfig] = js.native
     
-    def getLayers(): Collection[Node[NodeConfig]] = js.native
+    def getLayers(): js.Array[Layer] = js.native
     
     def getPointerPosition(): Vector2d | Null = js.native
     
@@ -122,20 +131,14 @@ object stageMod {
     
     def releaseCapture(pointerId: Double): Unit = js.native
     
-    def setContainer(container: js.Any): this.type = js.native
+    def setContainer(container: Any): this.type = js.native
     
     def setPointerCapture(pointerId: Double): Unit = js.native
     
-    def setPointersPositions(evt: js.Any): Unit = js.native
-    
-    var tapEndShape: Shape[ShapeConfig] = js.native
-    
-    var tapStartShape: Shape[ShapeConfig] = js.native
-    
-    var targetShape: Shape[ShapeConfig] = js.native
+    def setPointersPositions(evt: Any): Unit = js.native
   }
   
-  @JSImport("konva/types/Stage", "stages")
+  @JSImport("konva/lib/Stage", "stages")
   @js.native
   val stages: js.Array[Stage] = js.native
   

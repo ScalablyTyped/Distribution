@@ -10,7 +10,7 @@ object stamenMod {
   
   @JSImport("ol/source/Stamen", JSImport.Default)
   @js.native
-  class default protected () extends Stamen {
+  open class default protected () extends Stamen {
     def this(options: Options) = this()
   }
   

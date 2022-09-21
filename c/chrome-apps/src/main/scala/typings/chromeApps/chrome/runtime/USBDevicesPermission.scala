@@ -22,6 +22,6 @@ object USBDevicesPermission {
     
     inline def setUsbDevices(value: js.Array[ProductId]): Self = StObject.set(x, "usbDevices", value.asInstanceOf[js.Any])
     
-    inline def setUsbDevicesVarargs(value: ProductId*): Self = StObject.set(x, "usbDevices", js.Array(value :_*))
+    inline def setUsbDevicesVarargs(value: ProductId*): Self = StObject.set(x, "usbDevices", js.Array(value*))
   }
 }

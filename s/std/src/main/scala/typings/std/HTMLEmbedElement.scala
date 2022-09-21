@@ -11,30 +11,32 @@ trait HTMLEmbedElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var align: java.lang.String = js.native
   
+  /* standard dom */
   def getSVGDocument(): Document | Null = js.native
   
-  /**
-    * Sets or retrieves the height of the object.
-    */
+  /** Sets or retrieves the height of the object. */
+  /* standard dom */
   var height: java.lang.String = js.native
   
   /**
     * Sets or retrieves the name of the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var name: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -48,15 +50,14 @@ trait HTMLEmbedElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Sets or retrieves a URL to be loaded by the object.
-    */
+  /** Sets or retrieves a URL to be loaded by the object. */
+  /* standard dom */
   var src: java.lang.String = js.native
   
+  /* standard dom */
   var `type`: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the width of the object.
-    */
+  /** Sets or retrieves the width of the object. */
+  /* standard dom */
   var width: java.lang.String = js.native
 }

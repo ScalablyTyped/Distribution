@@ -10,15 +10,15 @@ Ledger Hardware Wallet Bitcoin Application API
 | ------------------ | :-------------: |
 | Full name          | @ledgerhq/hw-app-btc |
 | Keywords           | Ledger, LedgerWallet, btc, Bitcoin, NanoS, Blue, Hardware Wallet |
-| # releases         | 128 |
-| # dependents       | 27 |
-| # downloads        | 96871 |
-| # stars            | 1 |
+| # releases         | 87 |
+| # dependents       | 0.0 |
+| # downloads        | 7740.333333333333 |
+| # stars            | 110.0 |
 
 ## Links
-- [Homepage](https://github.com/LedgerHQ/ledgerjs)
-- [Bugs](https://github.com/LedgerHQ/ledgerjs/issues)
-- [Repository](https://github.com/LedgerHQ/ledgerjs)
+- [Homepage](https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/hw-app-btc)
+- [Bugs](https://github.com/LedgerHQ/ledger-live/issues)
+- [Repository](https://github.com/LedgerHQ/ledger-live)
 - [Npm](https://www.npmjs.com/package/%40ledgerhq%2Fhw-app-btc)
     
 

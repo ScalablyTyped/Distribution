@@ -10,7 +10,7 @@ trait GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue exte
   var originalValue: js.UndefOr[String] = js.undefined
   
   /** Always present. Structured value for the parameter extracted from user utterance. */
-  var resolvedValue: js.UndefOr[js.Any] = js.undefined
+  var resolvedValue: js.UndefOr[Any] = js.undefined
 }
 object GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue {
   
@@ -25,7 +25,7 @@ object GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue {
     
     inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
-    inline def setResolvedValue(value: js.Any): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
+    inline def setResolvedValue(value: Any): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
     
     inline def setResolvedValueUndefined: Self = StObject.set(x, "resolvedValue", js.undefined)
   }

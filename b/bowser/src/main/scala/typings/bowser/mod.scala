@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.bowser.mod.Parser.ParsedResult
 import typings.bowser.mod.Parser.Parser
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -222,7 +221,7 @@ object mod {
         * @param {String} anything
         * @returns {Boolean}
         */
-      def is(anything: js.Any): Boolean = js.native
+      def is(anything: Any): Boolean = js.native
       
       /**
         * Check if the browser name equals the passed string
@@ -295,7 +294,7 @@ object mod {
         * @param regex
         * @returns {boolean} true if the regex matches the UA, false otherwise.
         */
-      def test(regex: RegExp): Boolean = js.native
+      def test(regex: js.RegExp): Boolean = js.native
     }
     
     trait PlatformDetails extends StObject {
@@ -329,6 +328,6 @@ object mod {
       }
     }
     
-    type checkTree = StringDictionary[js.Any]
+    type checkTree = StringDictionary[Any]
   }
 }

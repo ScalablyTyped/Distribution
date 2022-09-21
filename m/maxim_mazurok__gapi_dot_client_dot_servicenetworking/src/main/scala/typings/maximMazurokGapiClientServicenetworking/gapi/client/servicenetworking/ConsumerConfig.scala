@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConsumerConfig extends StObject {
   
+  /** Represents one or multiple Cloud SQL configurations. */
+  var cloudsqlConfigs: js.UndefOr[js.Array[CloudSQLConfig]] = js.undefined
+  
   /** Export custom routes flag value for peering from consumer to producer. */
   var consumerExportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
@@ -38,6 +41,12 @@ trait ConsumerConfig extends StObject {
   
   /** Output only. The reserved ranges associated with this private service access connection. */
   var reservedRanges: js.UndefOr[js.Array[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]] = js.undefined
+  
+  /** Output only. The IP ranges already in use by consumer or producer */
+  var usedIpRanges: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Output only. Indicates whether the VPC Service Controls reference architecture is configured for the producer VPC host network. */
+  var vpcScReferenceArchitectureEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ConsumerConfig {
   
@@ -47,6 +56,12 @@ object ConsumerConfig {
   }
   
   extension [Self <: ConsumerConfig](x: Self) {
+    
+    inline def setCloudsqlConfigs(value: js.Array[CloudSQLConfig]): Self = StObject.set(x, "cloudsqlConfigs", value.asInstanceOf[js.Any])
+    
+    inline def setCloudsqlConfigsUndefined: Self = StObject.set(x, "cloudsqlConfigs", js.undefined)
+    
+    inline def setCloudsqlConfigsVarargs(value: CloudSQLConfig*): Self = StObject.set(x, "cloudsqlConfigs", js.Array(value*))
     
     inline def setConsumerExportCustomRoutes(value: Boolean): Self = StObject.set(x, "consumerExportCustomRoutes", value.asInstanceOf[js.Any])
     
@@ -88,6 +103,16 @@ object ConsumerConfig {
     
     inline def setReservedRangesUndefined: Self = StObject.set(x, "reservedRanges", js.undefined)
     
-    inline def setReservedRangesVarargs(value: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange*): Self = StObject.set(x, "reservedRanges", js.Array(value :_*))
+    inline def setReservedRangesVarargs(value: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange*): Self = StObject.set(x, "reservedRanges", js.Array(value*))
+    
+    inline def setUsedIpRanges(value: js.Array[String]): Self = StObject.set(x, "usedIpRanges", value.asInstanceOf[js.Any])
+    
+    inline def setUsedIpRangesUndefined: Self = StObject.set(x, "usedIpRanges", js.undefined)
+    
+    inline def setUsedIpRangesVarargs(value: String*): Self = StObject.set(x, "usedIpRanges", js.Array(value*))
+    
+    inline def setVpcScReferenceArchitectureEnabled(value: Boolean): Self = StObject.set(x, "vpcScReferenceArchitectureEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setVpcScReferenceArchitectureEnabledUndefined: Self = StObject.set(x, "vpcScReferenceArchitectureEnabled", js.undefined)
   }
 }

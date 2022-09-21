@@ -81,7 +81,7 @@ object BillingInvoice {
     
     inline def setInvoiceItemsUndefined: Self = StObject.set(x, "invoiceItems", js.undefined)
     
-    inline def setInvoiceItemsVarargs(value: (/* Contains information about an item on a billing invoice. */ BillingInvoiceItem)*): Self = StObject.set(x, "invoiceItems", js.Array(value :_*))
+    inline def setInvoiceItemsVarargs(value: (/* Contains information about an item on a billing invoice. */ BillingInvoiceItem)*): Self = StObject.set(x, "invoiceItems", js.Array(value*))
     
     inline def setInvoiceNumber(value: String): Self = StObject.set(x, "invoiceNumber", value.asInstanceOf[js.Any])
     

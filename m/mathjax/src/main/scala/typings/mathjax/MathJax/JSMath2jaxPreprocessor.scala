@@ -12,17 +12,17 @@ trait JSMath2jaxPreprocessor extends StObject {
     * previews from being inserted (the math will simply disappear until it is typeset). Set to an array containing
     * the description of an HTML snippet in order to use the same preview for all equations on the page.
     */
-  var preview: js.Any
+  var preview: Any
 }
 object JSMath2jaxPreprocessor {
   
-  inline def apply(preview: js.Any): JSMath2jaxPreprocessor = {
+  inline def apply(preview: Any): JSMath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
   
   extension [Self <: JSMath2jaxPreprocessor](x: Self) {
     
-    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

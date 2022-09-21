@@ -17,11 +17,13 @@ trait OnsDialogElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  var animationOptions: js.UndefOr[js.Object] = js.native
   
   /**
     * @description A boolean value that specifies whether the dialog is cancelable or not. When the dialog is cancelable it can be closed by tapping the background or by pressing the back button on Android devices.
@@ -47,11 +49,13 @@ trait OnsDialogElement
   def hide(): js.Promise[HTMLElement] = js.native
   def hide(options: DialogOptions): js.Promise[HTMLElement] = js.native
   
+  var maskColor: js.UndefOr[String] = js.native
+  
   /**
     * @return {Object} Device back button handler
     * @description Retrieve the back button handler for overriding the default behavior
     */
-  def onDeviceBackButton(): js.Any = js.native
+  def onDeviceBackButton(): Any = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -69,5 +73,5 @@ trait OnsDialogElement
   def show(): js.Promise[HTMLElement] = js.native
   def show(options: DialogOptions): js.Promise[HTMLElement] = js.native
   
-  var visible: js.Any = js.native
+  var visible: Any = js.native
 }

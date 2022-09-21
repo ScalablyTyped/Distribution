@@ -35,7 +35,7 @@ object ItemAnalytics {
     
     inline def setItemActivityStatsUndefined: Self = StObject.set(x, "itemActivityStats", js.undefined)
     
-    inline def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = StObject.set(x, "itemActivityStats", js.Array(value :_*))
+    inline def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = StObject.set(x, "itemActivityStats", js.Array(value*))
     
     inline def setLastSevenDays(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "lastSevenDays", value.asInstanceOf[js.Any])
     

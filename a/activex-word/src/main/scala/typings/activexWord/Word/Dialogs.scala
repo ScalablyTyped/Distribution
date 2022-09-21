@@ -14,7 +14,7 @@ trait Dialogs extends StObject {
   
   def Item(Index: WdWordDialog): Dialog
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Dialogs_typekey")
   var WordDotDialogs_typekey: Dialogs
@@ -26,7 +26,7 @@ object Dialogs {
     Count: Double,
     Creator: Double,
     Item: WdWordDialog => Dialog,
-    Parent: js.Any,
+    Parent: Any,
     WordDotDialogs_typekey: Dialogs
   ): Dialogs = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Dialogs {
     
     inline def setItem(value: WdWordDialog => Dialog): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotDialogs_typekey(value: Dialogs): Self = StObject.set(x, "Word.Dialogs_typekey", value.asInstanceOf[js.Any])
   }

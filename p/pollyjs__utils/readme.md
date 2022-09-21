@@ -10,15 +10,15 @@ Shared utilities and constants between @pollyjs packages
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/utils |
 | Keywords           | polly, pollyjs, utils |
-| # releases         | 9 |
-| # dependents       | 10 |
-| # downloads        | 1508399 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 346426.0 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
+- [Homepage](https://github.com/netflix/pollyjs/tree/master#readme)
 - [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
+- [Repository](https://github.com/netflix/pollyjs/tree/master)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Futils)
     
 

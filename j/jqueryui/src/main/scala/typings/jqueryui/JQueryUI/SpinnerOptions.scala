@@ -13,22 +13,22 @@ trait SpinnerOptions
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
   
-  var incremental: js.UndefOr[js.Any] = js.undefined
+  var incremental: js.UndefOr[Any] = js.undefined
   
   // boolean or ()
-  var max: js.UndefOr[js.Any] = js.undefined
+  var max: js.UndefOr[Any] = js.undefined
   
   // number or string
-  var min: js.UndefOr[js.Any] = js.undefined
+  var min: js.UndefOr[Any] = js.undefined
   
   // number or string
   var numberFormat: js.UndefOr[String] = js.undefined
   
   var page: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[js.Any] = js.undefined
+  var step: js.UndefOr[Any] = js.undefined
 }
 object SpinnerOptions {
   
@@ -47,19 +47,19 @@ object SpinnerOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIncremental(value: js.Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+    inline def setIncremental(value: Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     
     inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
-    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -71,7 +71,7 @@ object SpinnerOptions {
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    inline def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }

@@ -37,17 +37,17 @@ object interfaceMod {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOverflow(value: AdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setPoints(value: js.Array[AlignPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setTargetOffset(value: js.Array[Double]): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
       
-      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value :_*))
+      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value*))
     }
   }
   
@@ -106,7 +106,7 @@ object interfaceMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
@@ -116,13 +116,13 @@ object interfaceMod {
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setTargetOffset(value: js.Array[Double]): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
       
       inline def setTargetOffsetUndefined: Self = StObject.set(x, "targetOffset", js.undefined)
       
-      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value :_*))
+      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value*))
       
       inline def setUseCssBottom(value: Boolean): Self = StObject.set(x, "useCssBottom", value.asInstanceOf[js.Any])
       

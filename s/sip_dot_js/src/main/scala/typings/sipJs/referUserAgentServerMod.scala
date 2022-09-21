@@ -13,7 +13,7 @@ object referUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/refer-user-agent-server", "ReferUserAgentServer")
   @js.native
-  class ReferUserAgentServer protected () extends UserAgentServer {
+  open class ReferUserAgentServer protected () extends UserAgentServer {
     /**
       * REFER UAS constructor.
       * @param dialogOrCore - Dialog for in dialog REFER, UserAgentCore for out of dialog REFER.

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplyParametersRequest extends StObject {
   
   /**
-    * Whether to apply instance-level parameter group to all nodes. If set to true, will explicitly restrict users from specifying any nodes, and apply parameter group updates to all
-    * nodes within the instance.
+    * Whether to apply instance-level parameter group to all nodes. If set to true, users are restricted from specifying individual nodes, and `ApplyParameters` updates all nodes within
+    * the instance.
     */
   var applyAll: js.UndefOr[Boolean] = js.undefined
   
-  /** Nodes to which we should apply the instance-level parameter group. */
+  /** Nodes to which the instance-level parameter group is applied. */
   var nodeIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ApplyParametersRequest {
@@ -32,6 +32,6 @@ object ApplyParametersRequest {
     
     inline def setNodeIdsUndefined: Self = StObject.set(x, "nodeIds", js.undefined)
     
-    inline def setNodeIdsVarargs(value: String*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: String*): Self = StObject.set(x, "nodeIds", js.Array(value*))
   }
 }

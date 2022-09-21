@@ -10,6 +10,10 @@ trait InstanceOptions extends StObject {
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
+  var draft: js.UndefOr[Boolean] = js.undefined
+  
+  var drafts: js.UndefOr[Boolean] = js.undefined
+  
   var safe: js.UndefOr[Boolean] = js.undefined
   
   var silent: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +34,14 @@ object InstanceOptions {
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    
+    inline def setDrafts(value: Boolean): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
+    
+    inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
     
     inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CodeAction")
 @js.native
-class CodeAction protected () extends StObject {
+open class CodeAction protected () extends StObject {
   /**
     * Creates a new code action.
     *
-    * A code action must have at least a [title](#CodeAction.title) and [edits](#CodeAction.edit)
-    * and/or a [command](#CodeAction.command).
+    * A code action must have at least a {@link CodeAction.title title} and {@link CodeAction.edit edits}
+    * and/or a {@link CodeAction.command command}.
     *
     * @param title The title of the code action.
     * @param kind The kind of the code action.
@@ -21,15 +21,15 @@ class CodeAction protected () extends StObject {
   def this(title: String, kind: CodeActionKind) = this()
   
   /**
-    * A [command](#Command) this code action executes.
+    * A {@link Command} this code action executes.
     *
-    * If this command throws an exception, VS Code displays the exception message to users in the editor at the
+    * If this command throws an exception, the editor displays the exception message to users in the editor at the
     * current cursor position.
     */
   var command: js.UndefOr[Command] = js.native
   
   /**
-    * [Diagnostics](#Diagnostic) that this code action resolves.
+    * {@link Diagnostic Diagnostics} that this code action resolves.
     */
   var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
   
@@ -43,13 +43,13 @@ class CodeAction protected () extends StObject {
     * of code action, such as refactorings.
     *
     * - If the user has a [keybinding](https://code.visualstudio.com/docs/editor/refactoring#_keybindings-for-code-actions)
-    * that auto applies a code action and only a disabled code actions are returned, VS Code will show the user an
+    * that auto applies a code action and only a disabled code actions are returned, the editor will show the user an
     * error message with `reason` in the editor.
     */
   var disabled: js.UndefOr[Reason] = js.native
   
   /**
-    * A [workspace edit](#WorkspaceEdit) this code action performs.
+    * A {@link WorkspaceEdit workspace edit} this code action performs.
     */
   var edit: js.UndefOr[WorkspaceEdit] = js.native
   
@@ -63,7 +63,7 @@ class CodeAction protected () extends StObject {
   var isPreferred: js.UndefOr[Boolean] = js.native
   
   /**
-    * [Kind](#CodeActionKind) of the code action.
+    * {@link CodeActionKind Kind} of the code action.
     *
     * Used to filter code actions.
     */

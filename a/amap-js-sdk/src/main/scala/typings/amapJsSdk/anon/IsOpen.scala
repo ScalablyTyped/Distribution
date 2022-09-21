@@ -30,7 +30,7 @@ object IsOpen {
     
     inline def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
     
-    inline def setTileLayerVarargs(value: TileLayer*): Self = StObject.set(x, "tileLayer", js.Array(value :_*))
+    inline def setTileLayerVarargs(value: TileLayer*): Self = StObject.set(x, "tileLayer", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

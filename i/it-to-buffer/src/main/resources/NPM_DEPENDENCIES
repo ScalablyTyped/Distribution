@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-to-buffer" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-to-buffer" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

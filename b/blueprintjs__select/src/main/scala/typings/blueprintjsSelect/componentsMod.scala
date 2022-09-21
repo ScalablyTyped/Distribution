@@ -3,13 +3,18 @@ package typings.blueprintjsSelect
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsSelect.anon.Disabled
 import typings.blueprintjsSelect.anon.Fill
-import typings.blueprintjsSelect.anon.PartialISuggestPropsany
-import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
-import typings.blueprintjsSelect.multiSelectMod.IMultiSelectProps
-import typings.blueprintjsSelect.omnibarMod.IOmnibarProps
-import typings.blueprintjsSelect.queryListMod.IQueryListProps
-import typings.blueprintjsSelect.selectMod.ISelectProps
-import typings.blueprintjsSelect.suggestMod.ISuggestProps
+import typings.blueprintjsSelect.anon.PartialSuggest2Propsany
+import typings.blueprintjsSelect.anon.PartialSuggestPropsany
+import typings.blueprintjsSelect.anon.ResetOnQuery
+import typings.blueprintjsSelect.listItemsUtilsMod.CreateNewItem
+import typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2Props
+import typings.blueprintjsSelect.multiSelectMod.MultiSelectProps
+import typings.blueprintjsSelect.omnibarMod.OmnibarProps
+import typings.blueprintjsSelect.queryListMod.QueryListProps
+import typings.blueprintjsSelect.select2Mod.Select2Props
+import typings.blueprintjsSelect.selectMod.SelectProps
+import typings.blueprintjsSelect.suggest2Mod.Suggest2Props
+import typings.blueprintjsSelect.suggestMod.SuggestProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +27,10 @@ object componentsMod {
   
   @JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect")
   @js.native
-  class MultiSelect[T] protected ()
+  open class MultiSelect[T] protected ()
     extends typings.blueprintjsSelect.multiSelectMod.MultiSelect[T] {
-    def this(props: IMultiSelectProps[T]) = this()
-    def this(props: IMultiSelectProps[T], context: js.Any) = this()
+    def this(props: MultiSelectProps[T]) = this()
+    def this(props: MultiSelectProps[T], context: Any) = this()
   }
   /* static members */
   object MultiSelect {
@@ -45,24 +50,57 @@ object componentsMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     inline def ofType[U](): Instantiable1[
-        /* props */ IMultiSelectProps[U], 
+        /* props */ MultiSelectProps[U], 
         typings.blueprintjsSelect.multiSelectMod.MultiSelect[U]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
-        /* props */ IMultiSelectProps[U], 
+        /* props */ MultiSelectProps[U], 
         typings.blueprintjsSelect.multiSelectMod.MultiSelect[U]
+      ]]
+  }
+  
+  @JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect2")
+  @js.native
+  open class MultiSelect2[T] protected ()
+    extends typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2[T] {
+    def this(props: MultiSelect2Props[T]) = this()
+    def this(props: MultiSelect2Props[T], context: Any) = this()
+  }
+  /* static members */
+  object MultiSelect2 {
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect2")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect2.defaultProps")
+    @js.native
+    def defaultProps: Disabled = js.native
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect2.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    inline def ofType[U](): Instantiable1[
+        /* props */ MultiSelect2Props[U], 
+        typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ MultiSelect2Props[U], 
+        typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2[U]
       ]]
   }
   
   @JSImport("@blueprintjs/select/lib/esm/components", "Omnibar")
   @js.native
-  class Omnibar[T] protected ()
+  open class Omnibar[T] protected ()
     extends typings.blueprintjsSelect.omnibarMod.Omnibar[T] {
-    def this(props: IOmnibarProps[T]) = this()
+    def this(props: OmnibarProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IOmnibarProps[T], context: js.Any) = this()
+    def this(props: OmnibarProps[T], context: Any) = this()
   }
   /* static members */
   object Omnibar {
@@ -76,15 +114,15 @@ object componentsMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ OmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ OmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]]]
   }
   
   @JSImport("@blueprintjs/select/lib/esm/components", "QueryList")
   @js.native
-  class QueryList[T] protected ()
+  open class QueryList[T] protected ()
     extends typings.blueprintjsSelect.queryListMod.QueryList[T] {
-    def this(props: IQueryListProps[T]) = this()
-    def this(props: IQueryListProps[T], context: js.Any) = this()
+    def this(props: QueryListProps[T]) = this()
+    def this(props: QueryListProps[T], context: Any) = this()
   }
   /* static members */
   object QueryList {
@@ -95,29 +133,23 @@ object componentsMod {
     
     @JSImport("@blueprintjs/select/lib/esm/components", "QueryList.defaultProps")
     @js.native
-    def defaultProps: Disabled = js.native
-    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ResetOnQuery = js.native
+    inline def defaultProps_=(x: ResetOnQuery): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/select/lib/esm/components", "QueryList.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[
-        /* props */ IQueryListProps[U], 
-        typings.blueprintjsSelect.queryListMod.QueryList[U]
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
-        /* props */ IQueryListProps[U], 
-        typings.blueprintjsSelect.queryListMod.QueryList[U]
-      ]]
+    inline def ofType[U](): Instantiable1[/* props */ QueryListProps[U], typings.blueprintjsSelect.queryListMod.QueryList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ QueryListProps[U], typings.blueprintjsSelect.queryListMod.QueryList[U]]]
   }
   
   @JSImport("@blueprintjs/select/lib/esm/components", "Select")
   @js.native
-  class Select[T] protected ()
+  open class Select[T] protected ()
     extends typings.blueprintjsSelect.selectMod.Select[T] {
-    def this(props: ISelectProps[T]) = this()
-    def this(props: ISelectProps[T], context: js.Any) = this()
+    def this(props: SelectProps[T]) = this()
+    def this(props: SelectProps[T], context: Any) = this()
   }
   /* static members */
   object Select {
@@ -131,15 +163,37 @@ object componentsMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ ISelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ SelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ SelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]]]
+  }
+  
+  @JSImport("@blueprintjs/select/lib/esm/components", "Select2")
+  @js.native
+  open class Select2[T] protected ()
+    extends typings.blueprintjsSelect.select2Mod.Select2[T] {
+    def this(props: Select2Props[T]) = this()
+    def this(props: Select2Props[T], context: Any) = this()
+  }
+  /* static members */
+  object Select2 {
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "Select2")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "Select2.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    inline def ofType[U](): Instantiable1[/* props */ Select2Props[U], typings.blueprintjsSelect.select2Mod.Select2[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ Select2Props[U], typings.blueprintjsSelect.select2Mod.Select2[U]]]
   }
   
   @JSImport("@blueprintjs/select/lib/esm/components", "Suggest")
   @js.native
-  class Suggest[T] protected ()
+  open class Suggest[T] protected ()
     extends typings.blueprintjsSelect.suggestMod.Suggest[T] {
-    def this(props: ISuggestProps[T]) = this()
-    def this(props: ISuggestProps[T], context: js.Any) = this()
+    def this(props: SuggestProps[T]) = this()
+    def this(props: SuggestProps[T], context: Any) = this()
   }
   /* static members */
   object Suggest {
@@ -150,41 +204,68 @@ object componentsMod {
     
     @JSImport("@blueprintjs/select/lib/esm/components", "Suggest.defaultProps")
     @js.native
-    def defaultProps: PartialISuggestPropsany = js.native
-    inline def defaultProps_=(x: PartialISuggestPropsany): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialSuggestPropsany = js.native
+    inline def defaultProps_=(x: PartialSuggestPropsany): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/select/lib/esm/components", "Suggest.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ ISuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ SuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ SuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]]]
   }
   
-  inline def getFirstEnabledItem[T](items: js.Array[T]): T | ICreateNewItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any]).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Unit, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean]): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  @JSImport("@blueprintjs/select/lib/esm/components", "Suggest2")
+  @js.native
+  open class Suggest2[T] protected ()
+    extends typings.blueprintjsSelect.suggest2Mod.Suggest2[T] {
+    def this(props: Suggest2Props[T]) = this()
+    def this(props: Suggest2Props[T], context: Any) = this()
+  }
+  /* static members */
+  object Suggest2 {
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "Suggest2")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "Suggest2.defaultProps")
+    @js.native
+    def defaultProps: PartialSuggest2Propsany = js.native
+    inline def defaultProps_=(x: PartialSuggest2Propsany): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/select/lib/esm/components", "Suggest2.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    inline def ofType[U](): Instantiable1[/* props */ Suggest2Props[U], typings.blueprintjsSelect.suggest2Mod.Suggest2[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ Suggest2Props[U], typings.blueprintjsSelect.suggest2Mod.Suggest2[U]]]
+  }
+  
+  inline def getFirstEnabledItem[T](items: js.Array[T]): T | CreateNewItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any]).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Double, startIndex: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: /* keyof T */ String, direction: Unit, startIndex: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean]): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
   inline def getFirstEnabledItem[T](
     items: js.Array[T],
     itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
     direction: Double
-  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  ): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
   inline def getFirstEnabledItem[T](
     items: js.Array[T],
     itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
     direction: Double,
     startIndex: Double
-  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  ): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
   inline def getFirstEnabledItem[T](
     items: js.Array[T],
     itemDisabled: js.Function2[/* item */ T, /* index */ Double, Boolean],
     direction: Unit,
     startIndex: Double
-  ): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
-  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Unit, startIndex: Double): T | ICreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | ICreateNewItem | Null]
+  ): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Double, startIndex: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
+  inline def getFirstEnabledItem[T](items: js.Array[T], itemDisabled: Unit, direction: Unit, startIndex: Double): T | CreateNewItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstEnabledItem")(items.asInstanceOf[js.Any], itemDisabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[T | CreateNewItem | Null]
 }

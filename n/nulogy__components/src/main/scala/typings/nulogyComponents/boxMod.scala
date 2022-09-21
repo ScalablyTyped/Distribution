@@ -8,5 +8,5 @@ object boxMod {
   
   @JSImport("@nulogy/components/src/Box", "Box")
   @js.native
-  val Box: js.Any = js.native
+  val Box: Any = js.native
 }

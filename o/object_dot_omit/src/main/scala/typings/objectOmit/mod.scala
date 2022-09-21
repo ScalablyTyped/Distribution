@@ -17,7 +17,7 @@ object mod {
       /* obj */ GObject, 
       Boolean
     ]
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   /**
     * Return a copy of an object excluding the given key, or array of keys. Also accepts an optional filter function as the last argument."
     *

@@ -10,10 +10,10 @@ object createMod {
   
   @JSImport("material-ui/svg-icons/content/create", JSImport.Default)
   @js.native
-  class default () extends ContentCreate
+  open class default () extends ContentCreate
   
   @JSImport("material-ui/svg-icons/content/create", "ContentCreate")
   @js.native
-  class ContentCreate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentCreate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

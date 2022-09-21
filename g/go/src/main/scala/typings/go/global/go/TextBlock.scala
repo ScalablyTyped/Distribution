@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A newly constructed TextBlock has no string to show; if it did, it would draw the text, wrapping if needed, in the default font using a black stroke.
   */
-class TextBlock ()
+open class TextBlock ()
   extends typings.go.mod.TextBlock
 object TextBlock {
   

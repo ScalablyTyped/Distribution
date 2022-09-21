@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-better-password", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PasswordProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PasswordProps, js.Object, Any]
   
-  type Password = Component[PasswordProps, js.Object, js.Any]
+  type Password = Component[PasswordProps, js.Object, Any]
   
   trait PasswordProps extends StObject {
     

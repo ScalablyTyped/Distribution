@@ -2,12 +2,10 @@ package typings.stylableDomTestKit
 
 import typings.std.Element
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -16,15 +14,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -37,7 +31,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -48,7 +41,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -60,10 +52,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -74,6 +65,9 @@ import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import typings.std.NodeListOf
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -87,6 +81,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -109,6 +104,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -119,6 +115,7 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
@@ -132,14 +129,15 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.`var`
 import typings.stylableDomTestKit.stylableDomTestKitStrings.a
 import typings.stylableDomTestKit.stylableDomTestKitStrings.abbr
 import typings.stylableDomTestKit.stylableDomTestKitStrings.address
-import typings.stylableDomTestKit.stylableDomTestKitStrings.applet
+import typings.stylableDomTestKit.stylableDomTestKitStrings.animate
+import typings.stylableDomTestKit.stylableDomTestKitStrings.animateMotion
+import typings.stylableDomTestKit.stylableDomTestKitStrings.animateTransform
 import typings.stylableDomTestKit.stylableDomTestKitStrings.area
 import typings.stylableDomTestKit.stylableDomTestKitStrings.article
 import typings.stylableDomTestKit.stylableDomTestKitStrings.aside
 import typings.stylableDomTestKit.stylableDomTestKitStrings.audio
 import typings.stylableDomTestKit.stylableDomTestKitStrings.b
 import typings.stylableDomTestKit.stylableDomTestKitStrings.base
-import typings.stylableDomTestKit.stylableDomTestKitStrings.basefont
 import typings.stylableDomTestKit.stylableDomTestKitStrings.bdi
 import typings.stylableDomTestKit.stylableDomTestKitStrings.bdo
 import typings.stylableDomTestKit.stylableDomTestKitStrings.blockquote
@@ -163,7 +161,6 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.desc
 import typings.stylableDomTestKit.stylableDomTestKitStrings.details
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dfn
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dialog
-import typings.stylableDomTestKit.stylableDomTestKitStrings.dir
 import typings.stylableDomTestKit.stylableDomTestKitStrings.div
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dl
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dt
@@ -178,6 +175,7 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.feConvolveMatrix
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feDiffuseLighting
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feDisplacementMap
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feDistantLight
+import typings.stylableDomTestKit.stylableDomTestKitStrings.feDropShadow
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feFlood
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feFuncA
 import typings.stylableDomTestKit.stylableDomTestKitStrings.feFuncB
@@ -198,12 +196,9 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.fieldset
 import typings.stylableDomTestKit.stylableDomTestKitStrings.figcaption
 import typings.stylableDomTestKit.stylableDomTestKitStrings.figure
 import typings.stylableDomTestKit.stylableDomTestKitStrings.filter
-import typings.stylableDomTestKit.stylableDomTestKitStrings.font
 import typings.stylableDomTestKit.stylableDomTestKitStrings.footer
 import typings.stylableDomTestKit.stylableDomTestKitStrings.foreignObject
 import typings.stylableDomTestKit.stylableDomTestKitStrings.form
-import typings.stylableDomTestKit.stylableDomTestKitStrings.frame
-import typings.stylableDomTestKit.stylableDomTestKitStrings.frameset
 import typings.stylableDomTestKit.stylableDomTestKitStrings.g
 import typings.stylableDomTestKit.stylableDomTestKitStrings.h1
 import typings.stylableDomTestKit.stylableDomTestKitStrings.h2
@@ -233,12 +228,12 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.main
 import typings.stylableDomTestKit.stylableDomTestKitStrings.map
 import typings.stylableDomTestKit.stylableDomTestKitStrings.mark
 import typings.stylableDomTestKit.stylableDomTestKitStrings.marker
-import typings.stylableDomTestKit.stylableDomTestKitStrings.marquee
 import typings.stylableDomTestKit.stylableDomTestKitStrings.mask
 import typings.stylableDomTestKit.stylableDomTestKitStrings.menu
 import typings.stylableDomTestKit.stylableDomTestKitStrings.meta
 import typings.stylableDomTestKit.stylableDomTestKitStrings.metadata
 import typings.stylableDomTestKit.stylableDomTestKitStrings.meter
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mpath
 import typings.stylableDomTestKit.stylableDomTestKitStrings.nav
 import typings.stylableDomTestKit.stylableDomTestKitStrings.noscript
 import typings.stylableDomTestKit.stylableDomTestKitStrings.ol
@@ -246,7 +241,6 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.optgroup
 import typings.stylableDomTestKit.stylableDomTestKitStrings.option
 import typings.stylableDomTestKit.stylableDomTestKitStrings.output
 import typings.stylableDomTestKit.stylableDomTestKitStrings.p
-import typings.stylableDomTestKit.stylableDomTestKitStrings.param
 import typings.stylableDomTestKit.stylableDomTestKitStrings.path
 import typings.stylableDomTestKit.stylableDomTestKitStrings.pattern
 import typings.stylableDomTestKit.stylableDomTestKitStrings.picture
@@ -265,6 +259,7 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.samp
 import typings.stylableDomTestKit.stylableDomTestKitStrings.script
 import typings.stylableDomTestKit.stylableDomTestKitStrings.section
 import typings.stylableDomTestKit.stylableDomTestKitStrings.select
+import typings.stylableDomTestKit.stylableDomTestKitStrings.set
 import typings.stylableDomTestKit.stylableDomTestKitStrings.slot
 import typings.stylableDomTestKit.stylableDomTestKitStrings.small
 import typings.stylableDomTestKit.stylableDomTestKitStrings.source
@@ -313,14 +308,15 @@ object anon {
     def apply(selectors: a): HTMLAnchorElement | Null = js.native
     def apply(selectors: abbr): HTMLElement | Null = js.native
     def apply(selectors: address): HTMLElement | Null = js.native
-    def apply(selectors: applet): HTMLAppletElement | Null = js.native
+    def apply(selectors: animate): SVGAnimateElement | Null = js.native
+    def apply(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
+    def apply(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
     def apply(selectors: area): HTMLAreaElement | Null = js.native
     def apply(selectors: article): HTMLElement | Null = js.native
     def apply(selectors: aside): HTMLElement | Null = js.native
     def apply(selectors: audio): HTMLAudioElement | Null = js.native
     def apply(selectors: b): HTMLElement | Null = js.native
     def apply(selectors: base): HTMLBaseElement | Null = js.native
-    def apply(selectors: basefont): HTMLBaseFontElement | Null = js.native
     def apply(selectors: bdi): HTMLElement | Null = js.native
     def apply(selectors: bdo): HTMLElement | Null = js.native
     def apply(selectors: blockquote): HTMLQuoteElement | Null = js.native
@@ -344,7 +340,6 @@ object anon {
     def apply(selectors: details): HTMLDetailsElement | Null = js.native
     def apply(selectors: dfn): HTMLElement | Null = js.native
     def apply(selectors: dialog): HTMLDialogElement | Null = js.native
-    def apply(selectors: dir): HTMLDirectoryElement | Null = js.native
     def apply(selectors: div): HTMLDivElement | Null = js.native
     def apply(selectors: dl): HTMLDListElement | Null = js.native
     def apply(selectors: dt): HTMLElement | Null = js.native
@@ -359,6 +354,7 @@ object anon {
     def apply(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
     def apply(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
     def apply(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
+    def apply(selectors: feDropShadow): SVGFEDropShadowElement | Null = js.native
     def apply(selectors: feFlood): SVGFEFloodElement | Null = js.native
     def apply(selectors: feFuncA): SVGFEFuncAElement | Null = js.native
     def apply(selectors: feFuncB): SVGFEFuncBElement | Null = js.native
@@ -379,12 +375,9 @@ object anon {
     def apply(selectors: figcaption): HTMLElement | Null = js.native
     def apply(selectors: figure): HTMLElement | Null = js.native
     def apply(selectors: filter): SVGFilterElement | Null = js.native
-    def apply(selectors: font): HTMLFontElement | Null = js.native
     def apply(selectors: footer): HTMLElement | Null = js.native
     def apply(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
     def apply(selectors: form): HTMLFormElement | Null = js.native
-    def apply(selectors: frame): HTMLFrameElement | Null = js.native
-    def apply(selectors: frameset): HTMLFrameSetElement | Null = js.native
     def apply(selectors: g): SVGGElement | Null = js.native
     def apply(selectors: h1): HTMLHeadingElement | Null = js.native
     def apply(selectors: h2): HTMLHeadingElement | Null = js.native
@@ -414,12 +407,12 @@ object anon {
     def apply(selectors: map): HTMLMapElement | Null = js.native
     def apply(selectors: mark): HTMLElement | Null = js.native
     def apply(selectors: marker): SVGMarkerElement | Null = js.native
-    def apply(selectors: marquee): HTMLMarqueeElement | Null = js.native
     def apply(selectors: mask): SVGMaskElement | Null = js.native
     def apply(selectors: menu): HTMLMenuElement | Null = js.native
     def apply(selectors: meta): HTMLMetaElement | Null = js.native
     def apply(selectors: metadata): SVGMetadataElement | Null = js.native
     def apply(selectors: meter): HTMLMeterElement | Null = js.native
+    def apply(selectors: mpath): SVGMPathElement | Null = js.native
     def apply(selectors: nav): HTMLElement | Null = js.native
     def apply(selectors: noscript): HTMLElement | Null = js.native
     def apply(selectors: ol): HTMLOListElement | Null = js.native
@@ -427,7 +420,6 @@ object anon {
     def apply(selectors: option): HTMLOptionElement | Null = js.native
     def apply(selectors: output): HTMLOutputElement | Null = js.native
     def apply(selectors: p): HTMLParagraphElement | Null = js.native
-    def apply(selectors: param): HTMLParamElement | Null = js.native
     def apply(selectors: path): SVGPathElement | Null = js.native
     def apply(selectors: pattern): SVGPatternElement | Null = js.native
     def apply(selectors: picture): HTMLPictureElement | Null = js.native
@@ -446,6 +438,7 @@ object anon {
     def apply(selectors: script): HTMLScriptElement | Null = js.native
     def apply(selectors: section): HTMLElement | Null = js.native
     def apply(selectors: select): HTMLSelectElement | Null = js.native
+    def apply(selectors: set): SVGSetElement | Null = js.native
     def apply(selectors: slot): HTMLSlotElement | Null = js.native
     def apply(selectors: small): HTMLElement | Null = js.native
     def apply(selectors: source): HTMLSourceElement | Null = js.native
@@ -461,13 +454,13 @@ object anon {
     def apply(selectors: symbol): SVGSymbolElement | Null = js.native
     def apply(selectors: table): HTMLTableElement | Null = js.native
     def apply(selectors: tbody): HTMLTableSectionElement | Null = js.native
-    def apply(selectors: td): HTMLTableDataCellElement | Null = js.native
+    def apply(selectors: td): HTMLTableCellElement | Null = js.native
     def apply(selectors: template): HTMLTemplateElement | Null = js.native
     def apply(selectors: text): SVGTextElement | Null = js.native
     def apply(selectors: textPath): SVGTextPathElement | Null = js.native
     def apply(selectors: textarea): HTMLTextAreaElement | Null = js.native
     def apply(selectors: tfoot): HTMLTableSectionElement | Null = js.native
-    def apply(selectors: th): HTMLTableHeaderCellElement | Null = js.native
+    def apply(selectors: th): HTMLTableCellElement | Null = js.native
     def apply(selectors: thead): HTMLTableSectionElement | Null = js.native
     def apply(selectors: time): HTMLTimeElement | Null = js.native
     def apply(selectors: title): HTMLTitleElement | Null = js.native
@@ -491,14 +484,15 @@ object anon {
     def apply(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
     def apply(selectors: abbr): NodeListOf[HTMLElement] = js.native
     def apply(selectors: address): NodeListOf[HTMLElement] = js.native
-    def apply(selectors: applet): NodeListOf[HTMLAppletElement] = js.native
+    def apply(selectors: animate): NodeListOf[SVGAnimateElement] = js.native
+    def apply(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
+    def apply(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
     def apply(selectors: area): NodeListOf[HTMLAreaElement] = js.native
     def apply(selectors: article): NodeListOf[HTMLElement] = js.native
     def apply(selectors: aside): NodeListOf[HTMLElement] = js.native
     def apply(selectors: audio): NodeListOf[HTMLAudioElement] = js.native
     def apply(selectors: b): NodeListOf[HTMLElement] = js.native
     def apply(selectors: base): NodeListOf[HTMLBaseElement] = js.native
-    def apply(selectors: basefont): NodeListOf[HTMLBaseFontElement] = js.native
     def apply(selectors: bdi): NodeListOf[HTMLElement] = js.native
     def apply(selectors: bdo): NodeListOf[HTMLElement] = js.native
     def apply(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
@@ -522,7 +516,6 @@ object anon {
     def apply(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
     def apply(selectors: dfn): NodeListOf[HTMLElement] = js.native
     def apply(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
-    def apply(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
     def apply(selectors: div): NodeListOf[HTMLDivElement] = js.native
     def apply(selectors: dl): NodeListOf[HTMLDListElement] = js.native
     def apply(selectors: dt): NodeListOf[HTMLElement] = js.native
@@ -537,6 +530,7 @@ object anon {
     def apply(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
     def apply(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
     def apply(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
+    def apply(selectors: feDropShadow): NodeListOf[SVGFEDropShadowElement] = js.native
     def apply(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
     def apply(selectors: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
     def apply(selectors: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
@@ -557,12 +551,9 @@ object anon {
     def apply(selectors: figcaption): NodeListOf[HTMLElement] = js.native
     def apply(selectors: figure): NodeListOf[HTMLElement] = js.native
     def apply(selectors: filter): NodeListOf[SVGFilterElement] = js.native
-    def apply(selectors: font): NodeListOf[HTMLFontElement] = js.native
     def apply(selectors: footer): NodeListOf[HTMLElement] = js.native
     def apply(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
     def apply(selectors: form): NodeListOf[HTMLFormElement] = js.native
-    def apply(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
-    def apply(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
     def apply(selectors: g): NodeListOf[SVGGElement] = js.native
     def apply(selectors: h1): NodeListOf[HTMLHeadingElement] = js.native
     def apply(selectors: h2): NodeListOf[HTMLHeadingElement] = js.native
@@ -592,12 +583,12 @@ object anon {
     def apply(selectors: map): NodeListOf[HTMLMapElement] = js.native
     def apply(selectors: mark): NodeListOf[HTMLElement] = js.native
     def apply(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
-    def apply(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
     def apply(selectors: mask): NodeListOf[SVGMaskElement] = js.native
     def apply(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
     def apply(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
     def apply(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
     def apply(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
+    def apply(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
     def apply(selectors: nav): NodeListOf[HTMLElement] = js.native
     def apply(selectors: noscript): NodeListOf[HTMLElement] = js.native
     def apply(selectors: ol): NodeListOf[HTMLOListElement] = js.native
@@ -605,7 +596,6 @@ object anon {
     def apply(selectors: option): NodeListOf[HTMLOptionElement] = js.native
     def apply(selectors: output): NodeListOf[HTMLOutputElement] = js.native
     def apply(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
-    def apply(selectors: param): NodeListOf[HTMLParamElement] = js.native
     def apply(selectors: path): NodeListOf[SVGPathElement] = js.native
     def apply(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
     def apply(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
@@ -624,6 +614,7 @@ object anon {
     def apply(selectors: script): NodeListOf[HTMLScriptElement] = js.native
     def apply(selectors: section): NodeListOf[HTMLElement] = js.native
     def apply(selectors: select): NodeListOf[HTMLSelectElement] = js.native
+    def apply(selectors: set): NodeListOf[SVGSetElement] = js.native
     def apply(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
     def apply(selectors: small): NodeListOf[HTMLElement] = js.native
     def apply(selectors: source): NodeListOf[HTMLSourceElement] = js.native
@@ -639,13 +630,13 @@ object anon {
     def apply(selectors: symbol): NodeListOf[SVGSymbolElement] = js.native
     def apply(selectors: table): NodeListOf[HTMLTableElement] = js.native
     def apply(selectors: tbody): NodeListOf[HTMLTableSectionElement] = js.native
-    def apply(selectors: td): NodeListOf[HTMLTableDataCellElement] = js.native
+    def apply(selectors: td): NodeListOf[HTMLTableCellElement] = js.native
     def apply(selectors: template): NodeListOf[HTMLTemplateElement] = js.native
     def apply(selectors: text): NodeListOf[SVGTextElement] = js.native
     def apply(selectors: textPath): NodeListOf[SVGTextPathElement] = js.native
     def apply(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
     def apply(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
-    def apply(selectors: th): NodeListOf[HTMLTableHeaderCellElement] = js.native
+    def apply(selectors: th): NodeListOf[HTMLTableCellElement] = js.native
     def apply(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
     def apply(selectors: time): NodeListOf[HTMLTimeElement] = js.native
     def apply(selectors: title): NodeListOf[HTMLTitleElement] = js.native

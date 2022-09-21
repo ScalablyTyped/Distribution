@@ -1,21 +1,30 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExistenceFilter extends js.Object {
+trait ExistenceFilter extends StObject {
+  
   var count: js.UndefOr[Double] = js.undefined
+  
   var targetId: js.UndefOr[Double] = js.undefined
 }
-
 object ExistenceFilter {
-  @scala.inline
-  def apply(count: js.UndefOr[Double] = js.undefined, targetId: js.UndefOr[Double] = js.undefined): ExistenceFilter = {
+  
+  inline def apply(): ExistenceFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetId)) __obj.updateDynamic("targetId")(targetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistenceFilter]
   }
+  
+  extension [Self <: ExistenceFilter](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+  }
 }
-

@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RenderingGroup")
 @js.native
-class RenderingGroup protected ()
+open class RenderingGroup protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RenderingGroup {
   /**
     * Creates a new rendering group.
     * @param index The rendering group index
+    * @param scene
     * @param opaqueSortCompareFn The opaque sort comparison function. If null no order is applied
     * @param alphaTestSortCompareFn The alpha test sort comparison function. If null no order is applied
     * @param transparentSortCompareFn The transparent sort comparison function. If null back to front + alpha index sort is applied
@@ -143,10 +144,32 @@ object RenderingGroup {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("BABYLON.RenderingGroup._zeroVector")
+  /**
+    * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
+    * are grouped by material then geometry.
+    *
+    * @param a The first submesh
+    * @param b The second submesh
+    * @returns The result of the comparison
+    */
+  inline def PainterSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PainterSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * Renders the submeshes in a specified order.
+    * @param subMeshes The submeshes to sort before render
+    * @param sortCompareFn The comparison function use to sort
+    * @param camera The camera position use to preprocess the submeshes to help sorting
+    * @param transparent Specifies to activate blending if true
+    */
+  @JSGlobal("BABYLON.RenderingGroup._RenderSorted")
   @js.native
-  def _zeroVector: js.Any = js.native
-  inline def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
+  def _RenderSorted: Any = js.native
+  inline def _RenderSorted_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RenderSorted")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.RenderingGroup._ZeroVector")
+  @js.native
+  def _ZeroVector: Any = js.native
+  inline def _ZeroVector_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroVector")(x.asInstanceOf[js.Any])
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -177,25 +200,4 @@ object RenderingGroup {
     * @returns The result of the comparison
     */
   inline def frontToBackSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  /**
-    * Renders the submeshes in a specified order.
-    * @param subMeshes The submeshes to sort before render
-    * @param sortCompareFn The comparison function use to sort
-    * @param cameraPosition The camera position use to preprocess the submeshes to help sorting
-    * @param transparent Specifies to activate blending if true
-    */
-  @JSGlobal("BABYLON.RenderingGroup.renderSorted")
-  @js.native
-  def renderSorted: js.Any = js.native
-  inline def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
-  
-  /**
-    * Renders the submeshes in the order they were dispatched (no sort applied).
-    * @param subMeshes The submeshes to render
-    */
-  @JSGlobal("BABYLON.RenderingGroup.renderUnsorted")
-  @js.native
-  def renderUnsorted: js.Any = js.native
-  inline def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
 }

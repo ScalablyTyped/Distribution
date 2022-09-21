@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(value: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("soundex-code", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def soundex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("soundex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def soundex(value: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("soundex")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
 }

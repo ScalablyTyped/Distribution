@@ -9,7 +9,7 @@ trait HumanLoopSummary extends StObject {
   /**
     * When Amazon Augmented AI created the human loop.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The reason why the human loop failed. A failure reason is returned when the status of the human loop is Failed.
@@ -40,7 +40,7 @@ object HumanLoopSummary {
   
   extension [Self <: HumanLoopSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

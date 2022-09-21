@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("@emartech/cls-adapter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ContextFactory {
     
@@ -69,8 +69,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "getContextStorage")
   @js.native
-  def getContextStorage: js.Function0[(Record[String, js.Any]) & RequestId] = js.native
-  inline def getContextStorage_=(x: js.Function0[(Record[String, js.Any]) & RequestId]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getContextStorage")(x.asInstanceOf[js.Any])
+  def getContextStorage: js.Function0[(Record[String, Any]) & RequestId] = js.native
+  inline def getContextStorage_=(x: js.Function0[(Record[String, Any]) & RequestId]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getContextStorage")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a middleware function compatible with Express that stores (or generates if missing)
@@ -89,8 +89,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "getKoaMiddleware")
   @js.native
-  def getKoaMiddleware: js.Function0[Middleware[DefaultState, DefaultContext]] = js.native
-  inline def getKoaMiddleware_=(x: js.Function0[Middleware[DefaultState, DefaultContext]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKoaMiddleware")(x.asInstanceOf[js.Any])
+  def getKoaMiddleware: js.Function0[Middleware[DefaultState, DefaultContext, Any]] = js.native
+  inline def getKoaMiddleware_=(x: js.Function0[Middleware[DefaultState, DefaultContext, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKoaMiddleware")(x.asInstanceOf[js.Any])
   
   /**
     * Returns the the request identifier set on the storage. The identifiers key is request_id.
@@ -104,8 +104,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "run")
   @js.native
-  def run: js.Function1[/* fn */ js.Function1[/* repeated */ js.Any, js.Any], js.Any] = js.native
-  inline def run_=(x: js.Function1[/* fn */ js.Function1[/* repeated */ js.Any, js.Any], js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("run")(x.asInstanceOf[js.Any])
+  def run: js.Function1[/* fn */ js.Function1[/* repeated */ Any, Any], Any] = js.native
+  inline def run_=(x: js.Function1[/* fn */ js.Function1[/* repeated */ Any, Any], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("run")(x.asInstanceOf[js.Any])
   
   /**
     * Sets a key with a given value on the storage.
@@ -113,8 +113,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "setOnContext")
   @js.native
-  def setOnContext: js.Function2[/* key */ String, /* value */ js.Any, js.Any] = js.native
-  inline def setOnContext_=(x: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setOnContext")(x.asInstanceOf[js.Any])
+  def setOnContext: js.Function2[/* key */ String, /* value */ Any, Any] = js.native
+  inline def setOnContext_=(x: js.Function2[/* key */ String, /* value */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setOnContext")(x.asInstanceOf[js.Any])
   
   trait ContextFactory extends StObject {
     

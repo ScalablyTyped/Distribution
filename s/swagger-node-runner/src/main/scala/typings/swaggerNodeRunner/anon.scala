@@ -19,7 +19,7 @@ object anon {
       * @param  options - options for plugin (not used in the moment)
       * @param  next - callback called when register is done
       */
-    def apply(server: Server, options: js.Any, next: js.Function0[Unit]): Unit = js.native
+    def apply(server: Server, options: Any, next: js.Function0[Unit]): Unit = js.native
     
     /** Object attached to `register` function to provide hapi with some additional information about the plugin */
     var attributes: Name = js.native
@@ -50,18 +50,18 @@ object anon {
   
   trait Path extends StObject {
     
-    var path: js.Any
+    var path: Any
   }
   object Path {
     
-    inline def apply(path: js.Any): Path = {
+    inline def apply(path: Any): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
     extension [Self <: Path](x: Self) {
       
-      inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,7 +78,7 @@ object anon {
       * Hapi plugin `register` implementation.
       * @see {@link https://hapijs.com/tutorials/plugins|Hapi Docs}
       */
-    def register(server: Server, options: js.Any, next: js.Function0[Unit]): Unit
+    def register(server: Server, options: Any, next: js.Function0[Unit]): Unit
     /**
       * Hapi plugin `register` implementation.
       * @see {@link https://hapijs.com/tutorials/plugins|Hapi Docs}
@@ -127,7 +127,7 @@ object anon {
       *
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-metadata.js|Git Source}
       */
-    def swaggerMetadata(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any]): SwaggerToolsMiddleware = js.native
+    def swaggerMetadata(rlOrSO: Any, apiDeclarations: js.Array[Any]): SwaggerToolsMiddleware = js.native
     
     /**
       *  Middleware for using Swagger information to route requests to handlers.
@@ -137,7 +137,7 @@ object anon {
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-router.js|Github Source}
       */
     def swaggerRouter(): SwaggerToolsMiddleware = js.native
-    def swaggerRouter(options: js.Any): SwaggerToolsMiddleware = js.native
+    def swaggerRouter(options: Any): SwaggerToolsMiddleware = js.native
     
     /**
       * Middleware for using Swagger security information to authenticate requests.
@@ -157,8 +157,8 @@ object anon {
       *
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-ui.js|Github Source}
       */
-    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any]): SwaggerToolsMiddleware = js.native
-    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any], options: js.Any): SwaggerToolsMiddleware = js.native
+    def swaggerUi(rlOrSO: Any, apiDeclarations: js.Array[Any]): SwaggerToolsMiddleware = js.native
+    def swaggerUi(rlOrSO: Any, apiDeclarations: js.Array[Any], options: Any): SwaggerToolsMiddleware = js.native
     
     /**
       * Middleware for using Swagger information to validate API requests/responses.type
@@ -167,6 +167,6 @@ object anon {
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-validator.js|Github Source}
       */
     def swaggerValidator(): SwaggerToolsMiddleware = js.native
-    def swaggerValidator(options: js.Any): SwaggerToolsMiddleware = js.native
+    def swaggerValidator(options: Any): SwaggerToolsMiddleware = js.native
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SPClientPeoplePicker")
 @js.native
-class SPClientPeoplePicker ()
+open class SPClientPeoplePicker ()
   extends StObject
      with typings.sharepoint.SPClientPeoplePicker
 object SPClientPeoplePicker {

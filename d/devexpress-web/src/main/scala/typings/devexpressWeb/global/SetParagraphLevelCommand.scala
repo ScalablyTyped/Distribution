@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetParagraphLevelCommand")
 @js.native
-class SetParagraphLevelCommand ()
+open class SetParagraphLevelCommand ()
   extends StObject
      with typings.devexpressWeb.SetParagraphLevelCommand {
   

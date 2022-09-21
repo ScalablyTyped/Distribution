@@ -29,18 +29,18 @@ object HandlerCandidate {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
     
     inline def setHandler(value: RequestHandler | js.Array[RequestHandler]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    inline def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+    inline def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => Any): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
-    inline def setHandlerVarargs(value: RequestHandler*): Self = StObject.set(x, "handler", js.Array(value :_*))
+    inline def setHandlerVarargs(value: RequestHandler*): Self = StObject.set(x, "handler", js.Array(value*))
     
     inline def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package typings.cookieclicker.Game
 
-import typings.cookieclicker.cookieclickerStrings.upgrade
+import typings.cookieclicker.cookieclickerStrings.upgrade_
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -57,6 +57,8 @@ trait Upgrade extends StObject {
     */
   var clickFunction: js.UndefOr[js.Function0[Boolean]] = js.native
   
+  var ddesc: String = js.native
+  
   /**
     * The description of the upgrade with auto-adjusted text
     */
@@ -66,6 +68,8 @@ trait Upgrade extends StObject {
     * The function to generate the upgrade descroption
     */
   var descFunc: js.UndefOr[js.Function0[String]] = js.native
+  
+  var dname: String = js.native
   
   /**
     * Gives the upgrade for free
@@ -77,6 +81,8 @@ trait Upgrade extends StObject {
     */
   def getPrice(): Double = js.native
   
+  def getType(): typings.cookieclicker.cookieclickerStrings.Upgrade = js.native
+  
   var icon: Icon = js.native
   
   var iconFunction: js.Function0[Icon] | PseudoNull = js.native
@@ -86,11 +92,21 @@ trait Upgrade extends StObject {
   def isVaulted(): Boolean = js.native
   
   /**
+    * If true, the upgrade is always unlocked, across ascensions
+    */
+  var lasting: js.UndefOr[PseudoBoolean | Boolean] = js.native
+  
+  /**
     * Takes away the upgrade and locks it
     */
   def lose(): Unit = js.native
   
   var name: String = js.native
+  
+  /**
+    * If true, the upgrade cannot be put inside a permanent slot
+    */
+  var noPerm: js.UndefOr[PseudoBoolean | Boolean] = js.native
   
   /**
     * The order the upgrade appears in the upgrade list, higher ids have priorities
@@ -100,7 +116,7 @@ trait Upgrade extends StObject {
   /**
     * The parents of the heavenly upgrade, present on all upgrades
     */
-  var parents: js.Array[HeavenlyUpgrade] = js.native
+  var parents: js.Array[Upgrade] = js.native
   
   /**
     * The type of the upgrade, "prestigeDecor" and "unused" are unused, "" is the default
@@ -110,6 +126,8 @@ trait Upgrade extends StObject {
   /**
     * The power of a cookie upgrade, present as `0` on Non-cookie upgrades
     */
+  // The TSLint disable is for the generic, which is a hack required for a multitude of real use-cases
+  // tslint:disable-next-line
   var power: Double | (js.Function1[/* me */ this.type, Double]) = js.native
   
   var priceFunc: js.UndefOr[js.Function0[Double]] = js.native
@@ -118,6 +136,12 @@ trait Upgrade extends StObject {
     * The price of the upgrade, this is visual only, so the lump spending must be manually implemented
     */
   var priceLumps: Double = js.native
+  
+  /**
+    * If true, it is considered a pseudo cookie
+    * A pseudo cookie upgrade which represents an upgrade which doesn't have to be in the cookie pool but its power is calculated in cookie CpS bonuses
+    */
+  var pseudoCookie: js.UndefOr[PseudoBoolean | Boolean] = js.native
   
   /** @deprecated */
   var techUnlock: js.Array[Unit] = js.native
@@ -129,12 +153,14 @@ trait Upgrade extends StObject {
     */
   def toggle(): Unit = js.native
   
-  var `type`: upgrade = js.native
+  var `type`: upgrade_ = js.native
   
   /**
     * Takes the upgrade away, but doesn't lock it
     */
   def unearn(): Unit = js.native
+  
+  def unlock(): Unit = js.native
   
   var unlockAt: UnlockRequirement | PseudoNull = js.native
   

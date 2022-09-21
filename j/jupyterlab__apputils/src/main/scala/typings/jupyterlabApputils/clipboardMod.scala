@@ -36,10 +36,7 @@ object clipboardMod {
       * This can only be called in response to a user input event.
       */
     inline def generateEvent(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def generateEvent_copy(node: HTMLElement, `type`: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def generateEvent_cut(node: HTMLElement, `type`: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def generateEvent(node: HTMLElement, `type`: copy | cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Get the application clipboard instance.

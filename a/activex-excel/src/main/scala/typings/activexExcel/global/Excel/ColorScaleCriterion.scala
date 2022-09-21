@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ColorScaleCriterion")
 @js.native
-/* private */ class ColorScaleCriterion ()
+/* private */ open class ColorScaleCriterion ()
   extends StObject
      with typings.activexExcel.Excel.ColorScaleCriterion {
   
@@ -25,5 +25,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Type: XlConditionValueTypes = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

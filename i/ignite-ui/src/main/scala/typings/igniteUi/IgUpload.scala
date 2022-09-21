@@ -11,13 +11,13 @@ trait IgUpload
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example ["gif", "jpg", "bmp"].
     *
     */
-  var allowedExtensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var allowedExtensions: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Get or set whether the file start upload automatically when it is selected. Default is false.
@@ -40,7 +40,7 @@ trait IgUpload
     * Get or set control specific CSS options. For example you can override specific control classes with custom ones.
     *
     */
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -159,7 +159,7 @@ trait IgUpload
     * Get or set file size metrics how to be shown files size.
     *
     */
-  var fileSizeMetric: js.UndefOr[js.Any] = js.undefined
+  var fileSizeMetric: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines the name of the file upload cancel event. Fired when the server responses that the file is canceled.
@@ -271,7 +271,7 @@ trait IgUpload
   /**
     * Maximum size(in bytes) allowed for the file to be uploaded. If it is set to null or -1 there is no limitation otherwise if the size(of the selected file) exceeds this value it is not allowed to be uploaded. This option is used for validation only on client side and only if the browser supports HTML5 file API and share information about the file size
     */
-  var maxFileSize: js.UndefOr[js.Any] = js.undefined
+  var maxFileSize: js.UndefOr[Any] = js.undefined
   
   /**
     * Get or set count of files that could be uploaded at the same time.
@@ -289,7 +289,7 @@ trait IgUpload
     * Get or set multiple or single file upload. In single upload it is possible to upload only one file at the same time.
     *
     */
-  var mode: js.UndefOr[js.Any] = js.undefined
+  var mode: js.UndefOr[Any] = js.undefined
   
   /**
     * Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+
@@ -357,11 +357,11 @@ object IgUpload {
   
   extension [Self <: IgUpload](x: Self) {
     
-    inline def setAllowedExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedExtensions(value: js.Array[Any]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     
     inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     
-    inline def setAllowedExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "allowedExtensions", js.Array(value :_*))
+    inline def setAllowedExtensionsVarargs(value: Any*): Self = StObject.set(x, "allowedExtensions", js.Array(value*))
     
     inline def setAutostartupload(value: Boolean): Self = StObject.set(x, "autostartupload", value.asInstanceOf[js.Any])
     
@@ -375,7 +375,7 @@ object IgUpload {
     
     inline def setControlIdUndefined: Self = StObject.set(x, "controlId", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -447,7 +447,7 @@ object IgUpload {
     
     inline def setFileSizeDecimalDisplayUndefined: Self = StObject.set(x, "fileSizeDecimalDisplay", js.undefined)
     
-    inline def setFileSizeMetric(value: js.Any): Self = StObject.set(x, "fileSizeMetric", value.asInstanceOf[js.Any])
+    inline def setFileSizeMetric(value: Any): Self = StObject.set(x, "fileSizeMetric", value.asInstanceOf[js.Any])
     
     inline def setFileSizeMetricUndefined: Self = StObject.set(x, "fileSizeMetric", js.undefined)
     
@@ -519,7 +519,7 @@ object IgUpload {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaxFileSize(value: js.Any): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Any): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
@@ -531,7 +531,7 @@ object IgUpload {
     
     inline def setMaxUploadedFilesUndefined: Self = StObject.set(x, "maxUploadedFiles", js.undefined)
     
-    inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

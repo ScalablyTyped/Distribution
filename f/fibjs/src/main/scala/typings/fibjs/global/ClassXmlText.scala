@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_XmlText")
 @js.native
-class ClassXmlText ()
+open class ClassXmlText ()
   extends StObject
      with typings.fibjs.ClassXmlText

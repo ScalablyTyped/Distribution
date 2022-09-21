@@ -34,7 +34,7 @@ object ExecutionParameter {
     
     inline def setDefaultValuesUndefined: Self = StObject.set(x, "DefaultValues", js.undefined)
     
-    inline def setDefaultValuesVarargs(value: ExecutionParameterValue*): Self = StObject.set(x, "DefaultValues", js.Array(value :_*))
+    inline def setDefaultValuesVarargs(value: ExecutionParameterValue*): Self = StObject.set(x, "DefaultValues", js.Array(value*))
     
     inline def setName(value: ExecutionParameterKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

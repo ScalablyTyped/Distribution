@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkg-conf" : "3.1.0"
+      "pkg-conf" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pkg-conf" : "3.1.0"
+      "pkg-conf" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

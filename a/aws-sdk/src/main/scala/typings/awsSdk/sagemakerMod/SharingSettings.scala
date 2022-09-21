@@ -12,12 +12,12 @@ trait SharingSettings extends StObject {
   var NotebookOutputOption: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookOutputOption] = js.undefined
   
   /**
-    * When NotebookOutputOption is Allowed, the AWS Key Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the Amazon S3 bucket.
+    * When NotebookOutputOption is Allowed, the Amazon Web Services Key Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the Amazon S3 bucket.
     */
   var S3KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
-    * When NotebookOutputOption is Allowed, the Amazon S3 bucket used to save the notebook cell output.
+    * When NotebookOutputOption is Allowed, the Amazon S3 bucket used to store the shared notebook snapshots.
     */
   var S3OutputPath: js.UndefOr[S3Uri] = js.undefined
 }

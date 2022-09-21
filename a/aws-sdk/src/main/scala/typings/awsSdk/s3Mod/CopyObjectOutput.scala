@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CopyObjectOutput extends StObject {
   
   /**
+    * Indicates whether the copied object uses an S3 Bucket Key for server-side encryption with Amazon Web Services KMS (SSE-KMS).
+    */
+  var BucketKeyEnabled: js.UndefOr[typings.awsSdk.s3Mod.BucketKeyEnabled] = js.undefined
+  
+  /**
     * Container for all response elements.
     */
   var CopyObjectResult: js.UndefOr[typings.awsSdk.s3Mod.CopyObjectResult] = js.undefined
@@ -34,12 +39,12 @@ trait CopyObjectOutput extends StObject {
   var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
-    * If present, specifies the AWS KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
+    * If present, specifies the Amazon Web Services KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
     */
   var SSEKMSEncryptionContext: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSEncryptionContext] = js.undefined
   
   /**
-    * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
+    * If present, specifies the ID of the Amazon Web Services Key Management Service (Amazon Web Services KMS) symmetric customer managed key that was used for the object.
     */
   var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
@@ -61,6 +66,10 @@ object CopyObjectOutput {
   }
   
   extension [Self <: CopyObjectOutput](x: Self) {
+    
+    inline def setBucketKeyEnabled(value: BucketKeyEnabled): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setBucketKeyEnabledUndefined: Self = StObject.set(x, "BucketKeyEnabled", js.undefined)
     
     inline def setCopyObjectResult(value: CopyObjectResult): Self = StObject.set(x, "CopyObjectResult", value.asInstanceOf[js.Any])
     

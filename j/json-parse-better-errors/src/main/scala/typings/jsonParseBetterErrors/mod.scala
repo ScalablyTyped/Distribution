@@ -13,10 +13,10 @@ object mod {
     *               If a member contains nested objects, the nested objects are transformed before the parent object is.
     * @param context The number of characters to display in each direction around the position of an error.
     */
-  inline def apply(txt: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, js.Any], context: Double): js.Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(txt: String, reviver: Unit, context: Double): js.Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(txt: String): Any = ^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ Any, Any], context: Double): Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(txt: String, reviver: Unit, context: Double): Any = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("json-parse-better-errors", JSImport.Namespace)
   @js.native

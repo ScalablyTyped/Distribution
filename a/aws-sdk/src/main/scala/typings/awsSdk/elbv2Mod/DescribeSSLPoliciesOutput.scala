@@ -33,6 +33,6 @@ object DescribeSSLPoliciesOutput {
     
     inline def setSslPoliciesUndefined: Self = StObject.set(x, "SslPolicies", js.undefined)
     
-    inline def setSslPoliciesVarargs(value: SslPolicy*): Self = StObject.set(x, "SslPolicies", js.Array(value :_*))
+    inline def setSslPoliciesVarargs(value: SslPolicy*): Self = StObject.set(x, "SslPolicies", js.Array(value*))
   }
 }

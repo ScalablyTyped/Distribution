@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageOperation
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
@@ -19,7 +18,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard")
   @js.native
-  class Clipboard ()
+  open class Clipboard ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.Clipboard
   /* static members */
@@ -37,15 +36,15 @@ object DataTransfer {
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard.oncontentchanged")
     @js.native
-    def oncontentchanged: js.Any = js.native
-    inline def oncontentchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
+    def oncontentchanged: Any = js.native
+    inline def oncontentchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
     
     inline def setContent(content: typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContent")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackage")
   @js.native
-  class DataPackage ()
+  open class DataPackage ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackage
   
@@ -69,7 +68,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySet")
   @js.native
-  class DataPackagePropertySet ()
+  open class DataPackagePropertySet ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet {
     
@@ -89,19 +88,19 @@ object DataTransfer {
     var fileTypes: IVector[String] = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
     override def remove(key: String): Unit = js.native
@@ -118,7 +117,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView")
   @js.native
-  class DataPackagePropertySetView ()
+  open class DataPackagePropertySetView ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView {
     
@@ -135,19 +134,19 @@ object DataTransfer {
     var fileTypes: IVectorView[String] = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
     var size: Double = js.native
     
     /* CompleteClass */
-    override def split(): First[String, js.Any] = js.native
+    override def split(): First[String, Any] = js.native
     
     /* CompleteClass */
     var thumbnail: RandomAccessStreamReference = js.native
@@ -158,13 +157,13 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackageView")
   @js.native
-  class DataPackageView ()
+  open class DataPackageView ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageView
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderDeferral")
   @js.native
-  class DataProviderDeferral ()
+  open class DataProviderDeferral ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataProviderDeferral {
     
@@ -174,12 +173,12 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderRequest")
   @js.native
-  class DataProviderRequest ()
+  open class DataProviderRequest ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataProviderRequest {
     
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /* CompleteClass */
     var formatId: String = js.native
@@ -188,12 +187,12 @@ object DataTransfer {
     override def getDeferral(): typings.winrt.Windows.ApplicationModel.DataTransfer.DataProviderDeferral = js.native
     
     /* CompleteClass */
-    override def setData(value: js.Any): Unit = js.native
+    override def setData(value: Any): Unit = js.native
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequest")
   @js.native
-  class DataRequest ()
+  open class DataRequest ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataRequest {
     
@@ -201,7 +200,7 @@ object DataTransfer {
     var data: typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackage = js.native
     
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /* CompleteClass */
     override def failWithDisplayText(value: String): Unit = js.native
@@ -212,7 +211,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestDeferral")
   @js.native
-  class DataRequestDeferral ()
+  open class DataRequestDeferral ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataRequestDeferral {
     
@@ -222,7 +221,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs")
   @js.native
-  class DataRequestedEventArgs ()
+  open class DataRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs {
     
@@ -232,15 +231,15 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
   @js.native
-  class DataTransferManager ()
+  open class DataTransferManager ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.DataTransferManager {
     
     /* CompleteClass */
-    var ondatarequested: js.Any = js.native
+    var ondatarequested: Any = js.native
     
     /* CompleteClass */
-    var ontargetapplicationchosen: js.Any = js.native
+    var ontargetapplicationchosen: Any = js.native
   }
   /* static members */
   object DataTransferManager {
@@ -256,7 +255,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.HtmlFormatHelper")
   @js.native
-  class HtmlFormatHelper ()
+  open class HtmlFormatHelper ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.HtmlFormatHelper
   /* static members */
@@ -273,7 +272,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
   @js.native
-  class OperationCompletedEventArgs ()
+  open class OperationCompletedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs {
     
@@ -285,7 +284,7 @@ object DataTransfer {
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink")
     @js.native
-    class QuickLink ()
+    open class QuickLink ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink {
       
@@ -307,14 +306,14 @@ object DataTransfer {
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation")
     @js.native
-    class ShareOperation ()
+    open class ShareOperation ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats")
   @js.native
-  class StandardDataFormats ()
+  open class StandardDataFormats ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.StandardDataFormats
   /* static members */
@@ -357,7 +356,7 @@ object DataTransfer {
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs")
   @js.native
-  class TargetApplicationChosenEventArgs ()
+  open class TargetApplicationChosenEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs {
     

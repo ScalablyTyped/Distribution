@@ -4,32 +4,21 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Reports")
 @js.native
-class ResourceReports protected () extends StObject {
+open class ResourceReports protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var compatibleFields: ResourceReportsCompatiblefields = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dfareporting.reports.delete
-    * @desc Deletes a report by its ID.
-    * @alias dfareporting.reports.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {string} params.reportId The ID of the report.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -37,27 +26,67 @@ class ResourceReports protected () extends StObject {
   def delete(params: ParamsResourceReportsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceReportsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceReportsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceReportsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  /**
+    * Deletes a report by its ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.delete({
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The ID of the report.
+    *     reportId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def delete(params: ParamsResourceReportsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceReportsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var files: ResourceReportsFiles = js.native
   
-  /**
-    * dfareporting.reports.get
-    * @desc Retrieves a report by its ID.
-    * @alias dfareporting.reports.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {string} params.reportId The ID of the report.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaReport] = js.native
   def get(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
@@ -65,8 +94,8 @@ class ResourceReports protected () extends StObject {
   def get(params: ParamsResourceReportsGet, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def get(
     params: ParamsResourceReportsGet,
-    options: BodyResponseCallback[SchemaReport],
-    callback: BodyResponseCallback[SchemaReport]
+    options: BodyResponseCallback[Readable | SchemaReport],
+    callback: BodyResponseCallback[Readable | SchemaReport]
   ): Unit = js.native
   def get(params: ParamsResourceReportsGet, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def get(
@@ -74,20 +103,82 @@ class ResourceReports protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
-  
   /**
-    * dfareporting.reports.insert
-    * @desc Creates a report.
-    * @alias dfareporting.reports.insert
-    * @memberOf! ()
+    * Retrieves a report by its ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {().Report} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.get({
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The ID of the report.
+    *     reportId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "criteria": {},
+    *   //   "crossDimensionReachCriteria": {},
+    *   //   "delivery": {},
+    *   //   "etag": "my_etag",
+    *   //   "fileName": "my_fileName",
+    *   //   "floodlightCriteria": {},
+    *   //   "format": "my_format",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifiedTime": "my_lastModifiedTime",
+    *   //   "name": "my_name",
+    *   //   "ownerProfileId": "my_ownerProfileId",
+    *   //   "pathToConversionCriteria": {},
+    *   //   "reachCriteria": {},
+    *   //   "schedule": {},
+    *   //   "subAccountId": "my_subAccountId",
+    *   //   "type": "my_type"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceReportsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceReportsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaReport] = js.native
   def insert(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
@@ -95,8 +186,8 @@ class ResourceReports protected () extends StObject {
   def insert(params: ParamsResourceReportsInsert, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def insert(
     params: ParamsResourceReportsInsert,
-    options: BodyResponseCallback[SchemaReport],
-    callback: BodyResponseCallback[SchemaReport]
+    options: BodyResponseCallback[Readable | SchemaReport],
+    callback: BodyResponseCallback[Readable | SchemaReport]
   ): Unit = js.native
   def insert(params: ParamsResourceReportsInsert, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def insert(
@@ -104,24 +195,105 @@ class ResourceReports protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
-  
   /**
-    * dfareporting.reports.list
-    * @desc Retrieves list of reports.
-    * @alias dfareporting.reports.list
-    * @memberOf! ()
+    * Creates a report.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {integer=} params.maxResults Maximum number of results to return.
-    * @param {string=} params.pageToken The value of the nextToken from the previous result page.
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {string=} params.scope The scope that defines which results are returned.
-    * @param {string=} params.sortField The field by which to sort the list.
-    * @param {string=} params.sortOrder Order of sorted results.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.insert({
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "criteria": {},
+    *       //   "crossDimensionReachCriteria": {},
+    *       //   "delivery": {},
+    *       //   "etag": "my_etag",
+    *       //   "fileName": "my_fileName",
+    *       //   "floodlightCriteria": {},
+    *       //   "format": "my_format",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lastModifiedTime": "my_lastModifiedTime",
+    *       //   "name": "my_name",
+    *       //   "ownerProfileId": "my_ownerProfileId",
+    *       //   "pathToConversionCriteria": {},
+    *       //   "reachCriteria": {},
+    *       //   "schedule": {},
+    *       //   "subAccountId": "my_subAccountId",
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "criteria": {},
+    *   //   "crossDimensionReachCriteria": {},
+    *   //   "delivery": {},
+    *   //   "etag": "my_etag",
+    *   //   "fileName": "my_fileName",
+    *   //   "floodlightCriteria": {},
+    *   //   "format": "my_format",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifiedTime": "my_lastModifiedTime",
+    *   //   "name": "my_name",
+    *   //   "ownerProfileId": "my_ownerProfileId",
+    *   //   "pathToConversionCriteria": {},
+    *   //   "reachCriteria": {},
+    *   //   "schedule": {},
+    *   //   "subAccountId": "my_subAccountId",
+    *   //   "type": "my_type"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceReportsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceReportsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaReportList] = js.native
   def list(callback: BodyResponseCallback[SchemaReportList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReportList] = js.native
@@ -129,8 +301,8 @@ class ResourceReports protected () extends StObject {
   def list(params: ParamsResourceReportsList, callback: BodyResponseCallback[SchemaReportList]): Unit = js.native
   def list(
     params: ParamsResourceReportsList,
-    options: BodyResponseCallback[SchemaReportList],
-    callback: BodyResponseCallback[SchemaReportList]
+    options: BodyResponseCallback[Readable | SchemaReportList],
+    callback: BodyResponseCallback[Readable | SchemaReportList]
   ): Unit = js.native
   def list(params: ParamsResourceReportsList, options: MethodOptions): GaxiosPromise[SchemaReportList] = js.native
   def list(
@@ -138,21 +310,76 @@ class ResourceReports protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReportList]
   ): Unit = js.native
-  
   /**
-    * dfareporting.reports.patch
-    * @desc Updates a report. This method supports patch semantics.
-    * @alias dfareporting.reports.patch
-    * @memberOf! ()
+    * Retrieves list of reports.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {string} params.reportId The ID of the report.
-    * @param {().Report} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.list({
+    *     // Maximum number of results to return.
+    *     maxResults: 'placeholder-value',
+    *     // The value of the nextToken from the previous result page.
+    *     pageToken: 'placeholder-value',
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The scope that defines which results are returned.
+    *     scope: 'placeholder-value',
+    *     // The field by which to sort the list.
+    *     sortField: 'placeholder-value',
+    *     // Order of sorted results.
+    *     sortOrder: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceReportsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceReportsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaReport] = js.native
   def patch(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
@@ -160,8 +387,8 @@ class ResourceReports protected () extends StObject {
   def patch(params: ParamsResourceReportsPatch, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def patch(
     params: ParamsResourceReportsPatch,
-    options: BodyResponseCallback[SchemaReport],
-    callback: BodyResponseCallback[SchemaReport]
+    options: BodyResponseCallback[Readable | SchemaReport],
+    callback: BodyResponseCallback[Readable | SchemaReport]
   ): Unit = js.native
   def patch(params: ParamsResourceReportsPatch, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def patch(
@@ -169,21 +396,107 @@ class ResourceReports protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
-  
   /**
-    * dfareporting.reports.run
-    * @desc Runs a report.
-    * @alias dfareporting.reports.run
-    * @memberOf! ()
+    * Updates an existing report. This method supports patch semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA profile ID.
-    * @param {string} params.reportId The ID of the report.
-    * @param {boolean=} params.synchronous If set and true, tries to run the report synchronously.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.patch({
+    *     // The DFA user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The ID of the report.
+    *     reportId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "criteria": {},
+    *       //   "crossDimensionReachCriteria": {},
+    *       //   "delivery": {},
+    *       //   "etag": "my_etag",
+    *       //   "fileName": "my_fileName",
+    *       //   "floodlightCriteria": {},
+    *       //   "format": "my_format",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lastModifiedTime": "my_lastModifiedTime",
+    *       //   "name": "my_name",
+    *       //   "ownerProfileId": "my_ownerProfileId",
+    *       //   "pathToConversionCriteria": {},
+    *       //   "reachCriteria": {},
+    *       //   "schedule": {},
+    *       //   "subAccountId": "my_subAccountId",
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "criteria": {},
+    *   //   "crossDimensionReachCriteria": {},
+    *   //   "delivery": {},
+    *   //   "etag": "my_etag",
+    *   //   "fileName": "my_fileName",
+    *   //   "floodlightCriteria": {},
+    *   //   "format": "my_format",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifiedTime": "my_lastModifiedTime",
+    *   //   "name": "my_name",
+    *   //   "ownerProfileId": "my_ownerProfileId",
+    *   //   "pathToConversionCriteria": {},
+    *   //   "reachCriteria": {},
+    *   //   "schedule": {},
+    *   //   "subAccountId": "my_subAccountId",
+    *   //   "type": "my_type"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceReportsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceReportsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def run(): GaxiosPromise[SchemaFile] = js.native
   def run(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def run(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
@@ -191,8 +504,8 @@ class ResourceReports protected () extends StObject {
   def run(params: ParamsResourceReportsRun, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def run(
     params: ParamsResourceReportsRun,
-    options: BodyResponseCallback[SchemaFile],
-    callback: BodyResponseCallback[SchemaFile]
+    options: BodyResponseCallback[Readable | SchemaFile],
+    callback: BodyResponseCallback[Readable | SchemaFile]
   ): Unit = js.native
   def run(params: ParamsResourceReportsRun, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def run(
@@ -200,21 +513,76 @@ class ResourceReports protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
-  
   /**
-    * dfareporting.reports.update
-    * @desc Updates a report.
-    * @alias dfareporting.reports.update
-    * @memberOf! ()
+    * Runs a report.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId The DFA user profile ID.
-    * @param {string} params.reportId The ID of the report.
-    * @param {().Report} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.run({
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The ID of the report.
+    *     reportId: 'placeholder-value',
+    *     // If set and true, tries to run the report synchronously.
+    *     synchronous: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "dateRange": {},
+    *   //   "etag": "my_etag",
+    *   //   "fileName": "my_fileName",
+    *   //   "format": "my_format",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifiedTime": "my_lastModifiedTime",
+    *   //   "reportId": "my_reportId",
+    *   //   "status": "my_status",
+    *   //   "urls": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def run(params: ParamsResourceReportsRun, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def run(
+    params: ParamsResourceReportsRun,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaReport] = js.native
   def update(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
@@ -222,13 +590,113 @@ class ResourceReports protected () extends StObject {
   def update(params: ParamsResourceReportsUpdate, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def update(
     params: ParamsResourceReportsUpdate,
-    options: BodyResponseCallback[SchemaReport],
-    callback: BodyResponseCallback[SchemaReport]
+    options: BodyResponseCallback[Readable | SchemaReport],
+    callback: BodyResponseCallback[Readable | SchemaReport]
   ): Unit = js.native
   def update(params: ParamsResourceReportsUpdate, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def update(
     params: ParamsResourceReportsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
+  ): Unit = js.native
+  /**
+    * Updates a report.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfareporting'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.reports.update({
+    *     // The Campaign Manager 360 user profile ID.
+    *     profileId: 'placeholder-value',
+    *     // The ID of the report.
+    *     reportId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "criteria": {},
+    *       //   "crossDimensionReachCriteria": {},
+    *       //   "delivery": {},
+    *       //   "etag": "my_etag",
+    *       //   "fileName": "my_fileName",
+    *       //   "floodlightCriteria": {},
+    *       //   "format": "my_format",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lastModifiedTime": "my_lastModifiedTime",
+    *       //   "name": "my_name",
+    *       //   "ownerProfileId": "my_ownerProfileId",
+    *       //   "pathToConversionCriteria": {},
+    *       //   "reachCriteria": {},
+    *       //   "schedule": {},
+    *       //   "subAccountId": "my_subAccountId",
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "criteria": {},
+    *   //   "crossDimensionReachCriteria": {},
+    *   //   "delivery": {},
+    *   //   "etag": "my_etag",
+    *   //   "fileName": "my_fileName",
+    *   //   "floodlightCriteria": {},
+    *   //   "format": "my_format",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifiedTime": "my_lastModifiedTime",
+    *   //   "name": "my_name",
+    *   //   "ownerProfileId": "my_ownerProfileId",
+    *   //   "pathToConversionCriteria": {},
+    *   //   "reachCriteria": {},
+    *   //   "schedule": {},
+    *   //   "subAccountId": "my_subAccountId",
+    *   //   "type": "my_type"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceReportsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceReportsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

@@ -43,7 +43,7 @@ object TemplateCustomFields {
     
     inline def setListCustomFieldsVarargs(
       value: (/* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField)*
-    ): Self = StObject.set(x, "listCustomFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "listCustomFields", js.Array(value*))
     
     inline def setTextCustomFields(
       value: js.Array[
@@ -55,6 +55,6 @@ object TemplateCustomFields {
     
     inline def setTextCustomFieldsVarargs(
       value: (/* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField)*
-    ): Self = StObject.set(x, "textCustomFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "textCustomFields", js.Array(value*))
   }
 }

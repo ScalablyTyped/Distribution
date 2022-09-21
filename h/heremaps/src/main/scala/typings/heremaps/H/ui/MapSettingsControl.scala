@@ -79,13 +79,13 @@ object MapSettingsControl {
       
       inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
       
-      inline def setBaseLayersVarargs(value: Entry*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
+      inline def setBaseLayersVarargs(value: Entry*): Self = StObject.set(x, "baseLayers", js.Array(value*))
       
       inline def setLayers(value: js.Array[Entry]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Entry*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Entry*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailIrmInfo")
 @js.native
 /** Initializes a new instance of the EmailIrmInfo class. */
-class EmailIrmInfo ()
+open class EmailIrmInfo ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailIrmInfo {
   /**
@@ -17,7 +16,7 @@ class EmailIrmInfo ()
     * @param expiration The time when the information rights management (IRM) permissions expire.
     * @param irmTemplate The IRM template to apply to the message.
     */
-  def this(expiration: Date, irmTemplate: typings.winrtUwp.Windows.ApplicationModel.Email.EmailIrmTemplate) = this()
+  def this(expiration: js.Date, irmTemplate: typings.winrtUwp.Windows.ApplicationModel.Email.EmailIrmTemplate) = this()
   
   /** Gets or sets a Boolean value that indicates if an email message is allowed to be edited. */
   /* CompleteClass */
@@ -53,7 +52,7 @@ class EmailIrmInfo ()
   
   /** Gets or sets the expiration date for the information rights management (IRM) permissions. */
   /* CompleteClass */
-  var expirationDate: Date = js.native
+  var expirationDate: js.Date = js.native
   
   /** Gets or sets a Boolean value that indicates if the sender is the information rights management (IRM) originator. */
   /* CompleteClass */

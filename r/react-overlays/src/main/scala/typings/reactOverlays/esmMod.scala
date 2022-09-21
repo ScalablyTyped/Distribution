@@ -1,6 +1,7 @@
 package typings.reactOverlays
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.ForwardRefExoticComponent
@@ -13,11 +14,12 @@ import typings.reactOverlays.anon.HandleContainerOverflow
 import typings.reactOverlays.anon.PartialModalPropsRefAttriAutoFocus
 import typings.reactOverlays.anon.WeakValidationMapModalProAutoFocus
 import typings.reactOverlays.esmDropdownMenuMod.DropdownMenuProps
+import typings.reactOverlays.esmDropdownMenuMod.UseDropdownMenuMetadata
 import typings.reactOverlays.esmDropdownMenuMod.UseDropdownMenuOptions
-import typings.reactOverlays.esmDropdownMenuMod.UseDropdownMenuValue
+import typings.reactOverlays.esmDropdownMenuMod.UserDropdownMenuProps
 import typings.reactOverlays.esmDropdownMod.DropdownProps
 import typings.reactOverlays.esmDropdownToggleMod.DropdownToggleProps
-import typings.reactOverlays.esmDropdownToggleMod.UseDropdownToggleHelpers
+import typings.reactOverlays.esmDropdownToggleMod.UseDropdownToggleMetadata
 import typings.reactOverlays.esmDropdownToggleMod.UseDropdownToggleProps
 import typings.reactOverlays.esmModalManagerMod.default
 import typings.reactOverlays.esmModalMod.ModalHandle
@@ -41,6 +43,7 @@ object esmMod {
     
     /**
       * @displayName Dropdown
+      * @public
       */
     inline def apply(
       hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
@@ -122,8 +125,8 @@ object esmMod {
           */
         @JSImport("react-overlays/esm", "Dropdown.Menu.propTypes.children")
         @js.native
-        def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+        inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
         
         /**
           * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -211,8 +214,8 @@ object esmMod {
           */
         @JSImport("react-overlays/esm", "Dropdown.Toggle.propTypes.children")
         @js.native
-        def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+        inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -248,8 +251,8 @@ object esmMod {
         */
       @JSImport("react-overlays/esm", "Dropdown.propTypes.children")
       @js.native
-      def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      def children: Requireable[ReactNodeLike] = js.native
+      inline def children_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Sets the initial show position of the Dropdown.
@@ -305,8 +308,8 @@ object esmMod {
         */
       @JSImport("react-overlays/esm", "Dropdown.propTypes.onToggle")
       @js.native
-      def onToggle: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
+      def onToggle: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
       
       /**
         * Whether or not the Dropdown is visible.
@@ -335,7 +338,7 @@ object esmMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("react-overlays/esm", "Modal.Manager")
     @js.native
-    class Manager () extends default {
+    open class Manager () extends default {
       def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
     }
     @JSImport("react-overlays/esm", "Modal.Manager")
@@ -401,10 +404,10 @@ object esmMod {
     inline def propTypes_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  inline def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
-  inline def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(): js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata]]
+  inline def useDropdownMenu(options: UseDropdownMenuOptions): js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata]]
   
-  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
+  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata]]
   
   inline def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useRootClose(

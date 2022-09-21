@@ -9,7 +9,7 @@ object plSqlFormatterMod {
   
   @JSImport("@sqltools/formatter/lib/languages/PlSqlFormatter", JSImport.Default)
   @js.native
-  class default () extends PlSqlFormatter
+  open class default () extends PlSqlFormatter
   
   @js.native
   trait PlSqlFormatter

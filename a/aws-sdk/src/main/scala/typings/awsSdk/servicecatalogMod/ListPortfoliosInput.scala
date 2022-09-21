@@ -14,7 +14,7 @@ trait ListPortfoliosInput extends StObject {
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.undefined
+  var PageSize: js.UndefOr[PageSizeMax100] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
@@ -34,7 +34,7 @@ object ListPortfoliosInput {
     
     inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSizeMax100): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     

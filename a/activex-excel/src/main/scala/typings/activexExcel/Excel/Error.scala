@@ -15,7 +15,7 @@ trait Error extends StObject {
   
   var Ignore: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Value: Boolean
 }
@@ -26,7 +26,7 @@ object Error {
     Creator: XlCreator,
     ExcelDotError_typekey: Error,
     Ignore: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Value: Boolean
   ): Error = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Ignore = Ignore.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Error {
     
     inline def setIgnore(value: Boolean): Self = StObject.set(x, "Ignore", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }

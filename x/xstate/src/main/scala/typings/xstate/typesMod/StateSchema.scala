@@ -10,7 +10,7 @@ trait StateSchema[TC] extends StObject {
   
   var context: js.UndefOr[Partial[TC]] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   var states: js.UndefOr[StringDictionary[StateSchema[TC]]] = js.undefined
 }
@@ -27,7 +27,7 @@ object StateSchema {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

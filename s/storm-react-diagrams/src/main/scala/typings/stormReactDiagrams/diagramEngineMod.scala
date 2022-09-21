@@ -28,7 +28,7 @@ object diagramEngineMod {
   
   @JSImport("storm-react-diagrams/dist/src/DiagramEngine", "DiagramEngine")
   @js.native
-  class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
+  open class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
     
     def calculateCanvasMatrix(): Unit = js.native
     
@@ -40,7 +40,7 @@ object diagramEngineMod {
     
     def calculateRoutingMatrix(): Unit = js.native
     
-    def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Boolean = js.native
+    def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]): Boolean = js.native
     
     var canvas: Element = js.native
     
@@ -50,7 +50,7 @@ object diagramEngineMod {
     
     var diagramModel: DiagramModel = js.native
     
-    def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]]): Unit = js.native
+    def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]]): Unit = js.native
     
     def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.mod.global.JSX.Element | Null = js.native
     
@@ -102,7 +102,7 @@ object diagramEngineMod {
     
     def getNodeFactory(`type`: String): AbstractNodeFactory[NodeModel] = js.native
     
-    def getNodePortElement(port: PortModel): js.Any = js.native
+    def getNodePortElement(port: PortModel): Any = js.native
     
     def getPortCenter(port: PortModel): X = js.native
     
@@ -113,9 +113,9 @@ object diagramEngineMod {
     
     def getPortFactory(`type`: String): AbstractPortFactory[PortModel] = js.native
     
-    def getRelativeMousePoint(event: js.Any): X = js.native
+    def getRelativeMousePoint(event: Any): X = js.native
     
-    def getRelativePoint(x: js.Any, y: js.Any): X = js.native
+    def getRelativePoint(x: Any, y: Any): X = js.native
     
     /**
       * A representation of the canvas in the following format:
@@ -141,7 +141,7 @@ object diagramEngineMod {
       * Checks to see if a model is locked by running through
       * its parents to see if they are locked first
       */
-    def isModelLocked(model: BaseEntity[BaseListener[js.Any]]): Boolean = js.native
+    def isModelLocked(model: BaseEntity[BaseListener[Any]]): Boolean = js.native
     
     def isSmartRoutingEnabled(): Boolean = js.native
     
@@ -212,7 +212,7 @@ object diagramEngineMod {
   
   trait DiagramEngineListener
     extends StObject
-       with BaseListener[js.Any] {
+       with BaseListener[Any] {
     
     var labelFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.undefined
     

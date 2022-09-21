@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "text-extensions" : "2.1.0"
+      "text-extensions" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "text-extensions" : "2.1.0"
+      "text-extensions" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

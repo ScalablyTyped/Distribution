@@ -1,9 +1,5 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,36 +9,17 @@ trait ParamsResourceProjectsDlpjobsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. Allows filtering.  Supported syntax:  * Filter expressions are
-    * made up of one or more restrictions. * Restrictions can be combined by
-    * `AND` or `OR` logical operators. A sequence of restrictions implicitly
-    * uses `AND`. * A restriction has the form of `<field> <operator> <value>`.
-    * * Supported fields/values for inspect jobs:     - `state` -
-    * PENDING|RUNNING|CANCELED|FINISHED|FAILED     - `inspected_storage` -
-    * DATASTORE|CLOUD_STORAGE|BIGQUERY     - `trigger_name` - The resource name
-    * of the trigger that created job. * Supported fields for risk analysis
-    * jobs:     - `state` - RUNNING|CANCELED|FINISHED|FAILED * The operator
-    * must be `=` or `!=`.  Examples:  * inspected_storage = cloud_storage AND
-    * state = done * inspected_storage = cloud_storage OR inspected_storage =
-    * bigquery * inspected_storage = cloud_storage AND (state = done OR state =
-    * canceled)  The length of this field should be no more than 500
-    * characters.
+    * Allows filtering. Supported syntax: * Filter expressions are made up of one or more restrictions. * Restrictions can be combined by `AND` or `OR` logical operators. A sequence of restrictions implicitly uses `AND`. * A restriction has the form of `{field\} {operator\} {value\}`. * Supported fields/values for inspect jobs: - `state` - PENDING|RUNNING|CANCELED|FINISHED|FAILED - `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY - `trigger_name` - The name of the trigger that created the job. - 'end_time` - Corresponds to the time the job finished. - 'start_time` - Corresponds to the time the job finished. * Supported fields for risk analysis jobs: - `state` - RUNNING|CANCELED|FINISHED|FAILED - 'end_time` - Corresponds to the time the job finished. - 'start_time` - Corresponds to the time the job finished. * The operator must be `=` or `!=`. Examples: * inspected_storage = cloud_storage AND state = done * inspected_storage = cloud_storage OR inspected_storage = bigquery * inspected_storage = cloud_storage AND (state = done OR state = canceled) * end_time \> \"2017-12-12T00:00:00+00:00\" The length of this field should be no more than 500 characters.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional comma separated list of fields to order by, followed by `asc` or
-    * `desc` postfix. This list is case-insensitive, default sorting order is
-    * ascending, redundant space characters are insignificant.  Example: `name
-    * asc, end_time asc, create_time desc`  Supported fields are:  -
-    * `create_time`: corresponds to time the job was created. - `end_time`:
-    * corresponds to time the job ended. - `name`: corresponds to job's name. -
-    * `state`: corresponds to `state`
+    * Deprecated. This field has no effect.
+    */
+  var locationId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Comma separated list of fields to order by, followed by `asc` or `desc` postfix. This list is case-insensitive, default sorting order is ascending, redundant space characters are insignificant. Example: `name asc, end_time asc, create_time desc` Supported fields are: - `create_time`: corresponds to the time the job was created. - `end_time`: corresponds to the time the job ended. - `name`: corresponds to the job's name. - `state`: corresponds to `state`
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
@@ -57,7 +34,7 @@ trait ParamsResourceProjectsDlpjobsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The parent resource name, for example projects/my-project-id.
+    * Required. Parent resource name. The format of this value varies depending on whether you have [specified a processing location](https://cloud.google.com/dlp/docs/specifying-location): + Projects scope, location specified: `projects/`PROJECT_ID`/locations/`LOCATION_ID + Projects scope, no location specified (defaults to global): `projects/`PROJECT_ID The following example `parent` string specifies a parent project with the identifier `example-project`, and specifies the `europe-west3` location for processing data: parent=projects/example-project/locations/europe-west3
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -75,13 +52,13 @@ object ParamsResourceProjectsDlpjobsList {
   
   extension [Self <: ParamsResourceProjectsDlpjobsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

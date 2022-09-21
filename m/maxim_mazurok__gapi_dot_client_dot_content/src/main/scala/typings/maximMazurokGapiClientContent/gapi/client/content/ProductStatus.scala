@@ -50,7 +50,7 @@ object ProductStatus {
     
     inline def setDestinationStatusesUndefined: Self = StObject.set(x, "destinationStatuses", js.undefined)
     
-    inline def setDestinationStatusesVarargs(value: ProductStatusDestinationStatus*): Self = StObject.set(x, "destinationStatuses", js.Array(value :_*))
+    inline def setDestinationStatusesVarargs(value: ProductStatusDestinationStatus*): Self = StObject.set(x, "destinationStatuses", js.Array(value*))
     
     inline def setGoogleExpirationDate(value: String): Self = StObject.set(x, "googleExpirationDate", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object ProductStatus {
     
     inline def setItemLevelIssuesUndefined: Self = StObject.set(x, "itemLevelIssues", js.undefined)
     
-    inline def setItemLevelIssuesVarargs(value: ProductStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value :_*))
+    inline def setItemLevelIssuesVarargs(value: ProductStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,7 @@ object IWebXRBackgroundRemoverOptions {
     
     inline def setBackgroundMeshesUndefined: Self = StObject.set(x, "backgroundMeshes", js.undefined)
     
-    inline def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "backgroundMeshes", js.Array(value :_*))
+    inline def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "backgroundMeshes", js.Array(value*))
     
     inline def setEnvironmentHelperRemovalFlags(value: Ground): Self = StObject.set(x, "environmentHelperRemovalFlags", value.asInstanceOf[js.Any])
     

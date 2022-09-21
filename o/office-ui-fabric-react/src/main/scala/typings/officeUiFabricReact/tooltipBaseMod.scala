@@ -11,18 +11,17 @@ object tooltipBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Tooltip/Tooltip.base", "TooltipBase")
   @js.native
-  class TooltipBase protected ()
-    extends Component[ITooltipProps, js.Any, js.Any] {
+  open class TooltipBase protected () extends Component[ITooltipProps, Any, Any] {
     def this(props: ITooltipProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ITooltipProps, context: js.Any) = this()
+    def this(props: ITooltipProps, context: Any) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _onRenderContent: js.Any = js.native
+    /* private */ var _onRenderContent: Any = js.native
   }
   /* static members */
   object TooltipBase {

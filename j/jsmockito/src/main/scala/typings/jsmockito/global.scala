@@ -2,7 +2,6 @@ package typings.jsmockito
 
 import typings.jsmockito.JsMockito.Verifier
 import typings.jsmockito.anon.Instantiable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object global {
       
       inline def YUITest(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("YUITest")().asInstanceOf[Unit]
       
-      inline def importTo(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("importTo")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def importTo(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("importTo")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def jSpec(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jSpec")().asInstanceOf[Unit]
       
@@ -40,7 +39,7 @@ object global {
     
     @JSGlobal("JsMockito.JsMockitoStubBuilder")
     @js.native
-    class JsMockitoStubBuilder ()
+    open class JsMockitoStubBuilder ()
       extends StObject
          with typings.jsmockito.JsMockito.JsMockitoStubBuilder {
       
@@ -48,28 +47,28 @@ object global {
         * Provide functions to be run in place of the mocked method.
         *
         * @param func Functions to be run in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
+        * @return Itself for method chaining
         */
       /* CompleteClass */
-      override def `then`(func: (js.Function1[/* obj */ js.Any, js.Any])*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
+      override def `then`(func: (js.Function1[/* obj */ Any, Any])*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
       
       /**
         * Provide values to be returned by the mocked function.
         *
         * @param obj Values to be returned in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
+        * @return Itself for method chaining
         */
       /* CompleteClass */
-      override def thenReturn(obj: js.Any*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
+      override def thenReturn(obj: Any*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
       
       /**
         * Provide exceptions to be thrown by the mocked function.
         *
         * @param obj Exceptions to be thrown in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
+        * @return Itself for method chaining
         */
       /* CompleteClass */
-      override def thenThrow(obj: Error*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
+      override def thenThrow(obj: js.Error*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
     }
     
     object Verifiers {
@@ -89,7 +88,7 @@ object global {
       inline def zeroInteractions(): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroInteractions")().asInstanceOf[Verifier]
     }
     
-    inline def isMock(maybeMock: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMock")(maybeMock.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isMock(maybeMock: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMock")(maybeMock.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def mock[T](Obj: Instantiable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(Obj.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -102,9 +101,9 @@ object global {
     inline def verify[T](mock: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(mock.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def verify[T](mock: T, verifier: Verifier): T = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(mock.asInstanceOf[js.Any], verifier.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    inline def verifyNoMoreInteractions(mock: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyNoMoreInteractions")(mock.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def verifyNoMoreInteractions(mock: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyNoMoreInteractions")(mock.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
-    inline def verifyZeroInteractions(mock: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyZeroInteractions")(mock.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def verifyZeroInteractions(mock: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyZeroInteractions")(mock.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     @JSGlobal("JsMockito.version")
     @js.native
@@ -121,9 +120,9 @@ object global {
     * Test if a given variable is a mock
     *
     * @param maybeMock An object
-    * @return {boolean} true if the variable is a mock
+    * @return true if the variable is a mock
     */
-  inline def isMock(maybeMock: js.Any): Boolean = js.Dynamic.global.applyDynamic("isMock")(maybeMock.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMock(maybeMock: Any): Boolean = js.Dynamic.global.applyDynamic("isMock")(maybeMock.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Create a mockable and stubbable objects.
@@ -151,8 +150,8 @@ object global {
     * JsMockito.verify(mockObj).add(1, 4); // will throw an exception
     * </pre>
     *
-    * @param Obj {function} the constructor for the object to be mocked
-    * @return {object} a mock object
+    * @param Obj the constructor for the object to be mocked
+    * @return a mock object
     */
   inline def mock[T](Obj: Instantiable[T]): T = js.Dynamic.global.applyDynamic("mock")(Obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -171,7 +170,7 @@ object global {
     *
     * @param funcName The name of the mock function to use in messages (defaults to 'func')
     * @param delegate The function to delegate unstubbed calls to (optional)
-    * @return {T} an anonymous function
+    * @return an anonymous function
     */
   inline def mockFunction(): js.Function = js.Dynamic.global.applyDynamic("mockFunction")().asInstanceOf[js.Function]
   inline def mockFunction(funcName: String): js.Function = js.Dynamic.global.applyDynamic("mockFunction")(funcName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
@@ -211,7 +210,7 @@ object global {
     * still be verified.
     *
     * @param delegate A 'real' (concrete) object or function that the mock will delegate unstubbed invocations to
-    * @return {T} A mock object (as per mock) or mock function (as per mockFunction)
+    * @return A mock object (as per mock) or mock function (as per mockFunction)
     */
   inline def spy[T](delegate: T): T = js.Dynamic.global.applyDynamic("spy")(delegate.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -230,7 +229,7 @@ object global {
     *
     * @param mock A mock object or mock anonymous function
     * @param verifier Optional JsMockito.Verifier instance (default: JsMockito.Verifiers.once())
-    * @return {T} A verifier on which the method or function to be verified can be invoked
+    * @return A verifier on which the method or function to be verified can be invoked
     */
   inline def verify[T](mock: T): T = js.Dynamic.global.applyDynamic("verify")(mock.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def verify[T](mock: T, verifier: Verifier): T = (js.Dynamic.global.applyDynamic("verify")(mock.asInstanceOf[js.Any], verifier.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -241,20 +240,20 @@ object global {
     *
     * @param mock A mock object or mock anonymous function (multiple accepted)
     */
-  inline def verifyNoMoreInteractions(mock: js.Any*): Unit = js.Dynamic.global.applyDynamic("verifyNoMoreInteractions")(mock.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def verifyNoMoreInteractions(mock: Any*): Unit = js.Dynamic.global.applyDynamic("verifyNoMoreInteractions")(mock.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
     * Verify that no mock object methods or the mock function were ever invoked
     *
     * @param mock A mock object or mock anonymous function (multiple accepted)
     */
-  inline def verifyZeroInteractions(mock: js.Any*): Unit = js.Dynamic.global.applyDynamic("verifyZeroInteractions")(mock.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def verifyZeroInteractions(mock: Any*): Unit = js.Dynamic.global.applyDynamic("verifyZeroInteractions")(mock.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
     * Add a stub for a mock object method or mock function
     *
     * @param mock A mock object or mock anonymous function
-    * @return {T} A stub builder on which the method or function to be stubbed can be invoked
+    * @return A stub builder on which the method or function to be stubbed can be invoked
     */
   inline def when[T](mock: T): T = js.Dynamic.global.applyDynamic("when")(mock.asInstanceOf[js.Any]).asInstanceOf[T]
   

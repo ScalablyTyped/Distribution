@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateTerminalCheckoutRequest")
 @js.native
-class CreateTerminalCheckoutRequest () extends StObject {
+open class CreateTerminalCheckoutRequest () extends StObject {
   
   /**
     * The checkout to create.

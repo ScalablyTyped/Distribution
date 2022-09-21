@@ -1,7 +1,7 @@
 package typings.reactAriaLive
 
 import typings.react.mod.Component
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.reactAriaLive.anon.Arialive
 import typings.reactAriaLive.anon.Children
 import org.scalablytyped.runtime.StObject
@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("react-aria-live", "LiveAnnouncer")
   @js.native
-  class LiveAnnouncer protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class LiveAnnouncer protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
     
     def announceAssertive(message: String): Unit = js.native
     def announceAssertive(message: String, id: String): Unit = js.native
@@ -30,9 +30,9 @@ object mod {
   
   @JSImport("react-aria-live", "LiveMessage")
   @js.native
-  val LiveMessage: StatelessComponent[Arialive] = js.native
+  val LiveMessage: FunctionComponent[Arialive] = js.native
   
   @JSImport("react-aria-live", "LiveMessenger")
   @js.native
-  val LiveMessenger: StatelessComponent[Children] = js.native
+  val LiveMessenger: FunctionComponent[Children] = js.native
 }

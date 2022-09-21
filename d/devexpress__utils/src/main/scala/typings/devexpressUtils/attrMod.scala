@@ -10,7 +10,7 @@ object attrMod {
   
   @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils")
   @js.native
-  class AttrUtils () extends StObject
+  open class AttrUtils () extends StObject
   /* static members */
   object AttrUtils {
     
@@ -22,7 +22,7 @@ object attrMod {
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.emptyObject")
     @js.native
-    val emptyObject: js.Any = js.native
+    val emptyObject: Any = js.native
     
     inline def getElementAttribute(obj: HTMLElement, attrName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
@@ -30,13 +30,13 @@ object attrMod {
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.isAttributeExists")
     @js.native
-    def isAttributeExists: js.Any = js.native
-    inline def isAttributeExists_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isAttributeExists")(x.asInstanceOf[js.Any])
+    def isAttributeExists: Any = js.native
+    inline def isAttributeExists_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isAttributeExists")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.isExistsAttributeInElement")
     @js.native
-    def isExistsAttributeInElement: js.Any = js.native
-    inline def isExistsAttributeInElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isExistsAttributeInElement")(x.asInstanceOf[js.Any])
+    def isExistsAttributeInElement: Any = js.native
+    inline def isExistsAttributeInElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isExistsAttributeInElement")(x.asInstanceOf[js.Any])
     
     inline def removeElementAttribute(obj: HTMLElement, attrName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -44,10 +44,7 @@ object attrMod {
     
     inline def restoreElementStyleAttribute(obj: HTMLElement, attrName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreElementStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.saveStyleAttributeInElement")
-    @js.native
-    def saveStyleAttributeInElement: js.Any = js.native
-    inline def saveStyleAttributeInElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("saveStyleAttributeInElement")(x.asInstanceOf[js.Any])
+    inline def saveStyleAttributeInElement(obj: HTMLElement, attrName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveStyleAttributeInElement")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setElementAttribute(obj: HTMLElement, attrName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

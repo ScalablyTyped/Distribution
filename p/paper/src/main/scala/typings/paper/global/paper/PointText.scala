@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.PointText")
 @js.native
-class PointText protected ()
+open class PointText protected ()
   extends StObject
      with typings.paper.paper.PointText {
   /** 

@@ -28,7 +28,7 @@ object AndroidDeviceCatalog {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: AndroidModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: AndroidModel*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setRuntimeConfiguration(value: AndroidRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object AndroidDeviceCatalog {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: AndroidVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: AndroidVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

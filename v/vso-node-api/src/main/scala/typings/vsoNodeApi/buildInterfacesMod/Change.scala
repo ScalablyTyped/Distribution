@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +45,7 @@ trait Change extends StObject {
   /**
     * The timestamp for the change.
     */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /**
     * The type of change. "commit", "changeset", etc.
@@ -63,7 +62,7 @@ object Change {
     message: String,
     messageTruncated: Boolean,
     pusher: String,
-    timestamp: Date,
+    timestamp: js.Date,
     `type`: String
   ): Change = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], displayUri = displayUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageTruncated = messageTruncated.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
@@ -87,7 +86,7 @@ object Change {
     
     inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

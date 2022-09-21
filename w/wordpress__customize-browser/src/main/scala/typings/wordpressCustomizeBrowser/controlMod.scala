@@ -4,6 +4,7 @@ import typings.jquery.JQuery
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Record
+import typings.wordpressCustomizeBrowser.anon.ArraySettinganyValueanyde
 import typings.wordpressCustomizeBrowser.anon.Default
 import typings.wordpressCustomizeBrowser.classMod.Class
 import typings.wordpressCustomizeBrowser.containerMod.ContainerArguments
@@ -19,7 +20,7 @@ object controlMod {
   
   @JSImport("@wordpress/customize-browser/Control", "Control")
   @js.native
-  class Control protected () extends Class {
+  open class Control protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -52,7 +53,7 @@ object controlMod {
     def expand(params: ContainerArguments): Unit = js.native
     
     def focus(): Unit = js.native
-    def focus(params: js.Any): Unit = js.native
+    def focus(params: Any): Unit = js.native
     
     def getNotificationsContainerElement(): JQuery[HTMLElement] = js.native
     
@@ -123,13 +124,13 @@ object controlMod {
     
     var section: String
     
-    var setting: js.UndefOr[String | Setting[js.Any]] = js.undefined
+    var setting: js.UndefOr[String | Setting[Any]] = js.undefined
     
     var settings: ControlSettings
     
     var templateId: js.UndefOr[String] = js.undefined
     
-    var `type`: js.Any
+    var `type`: Any
   }
   object ControlParams {
     
@@ -140,7 +141,7 @@ object controlMod {
       priority: Double,
       section: String,
       settings: ControlSettings,
-      `type`: js.Any
+      `type`: Any
     ): ControlParams = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -171,7 +172,7 @@ object controlMod {
       
       inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      inline def setSetting(value: String | Setting[js.Any]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: String | Setting[Any]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
       inline def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
       
@@ -181,9 +182,9 @@ object controlMod {
       
       inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  type ControlSettings = ((Record[String, Setting[js.Any] | Value[js.Any]]) | (js.Array[Setting[js.Any] | Value[js.Any]])) & Default
+  type ControlSettings = ((Record[String, Setting[Any] | Value[Any]]) & Default) | ArraySettinganyValueanyde
 }

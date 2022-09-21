@@ -60,7 +60,7 @@ object devtools {
       var description: String
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated, contains the array of the values that may be substituted into the description string to provide more information about the cause of the error. */
-      var details: js.Array[js.Any]
+      var details: js.Array[Any]
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
       var isError: Boolean
@@ -76,7 +76,7 @@ object devtools {
       inline def apply(
         code: String,
         description: String,
-        details: js.Array[js.Any],
+        details: js.Array[Any],
         isError: Boolean,
         isException: Boolean,
         value: String
@@ -91,9 +91,9 @@ object devtools {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        inline def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: js.Array[Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        inline def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
+        inline def setDetailsVarargs(value: Any*): Self = StObject.set(x, "details", js.Array(value*))
         
         inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
         
@@ -191,9 +191,9 @@ object devtools {
     */
   object network {
     
-    type HAREntry = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatEntry */ js.Any
+    type HAREntry = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatEntry */ Any
     
-    type HARLog = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatLog */ js.Any
+    type HARLog = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatLog */ Any
     
     type NavigatedEvent = Event[js.Function1[/* url */ String, Unit]]
     

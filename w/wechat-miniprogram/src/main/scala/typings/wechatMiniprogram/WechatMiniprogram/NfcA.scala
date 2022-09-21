@@ -21,7 +21,7 @@ trait NfcA extends StObject {
     *
     * 最低基础库： `2.11.2` */
   def connect(): Unit = js.native
-  def connect(option: ConnectOption): Unit = js.native
+  def connect(option: NdefConnectOption): Unit = js.native
   
   /** [NfcA.getAtqa(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcA.getAtqa.html)
     *
@@ -46,6 +46,14 @@ trait NfcA extends StObject {
     * 最低基础库： `2.11.2` */
   def getSak(): Unit = js.native
   def getSak(option: GetSakOption): Unit = js.native
+  
+  /** [NfcA.isConnected(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcA.isConnected.html)
+    *
+    * 检查是否已连接
+    *
+    * 最低基础库： `2.11.2` */
+  def isConnected(): Unit = js.native
+  def isConnected(option: IsConnectedOption): Unit = js.native
   
   /** [NfcA.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcA.setTimeout.html)
     *

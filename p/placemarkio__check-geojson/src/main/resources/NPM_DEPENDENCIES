@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@placemarkio/check-geojson" : "0.1.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@placemarkio/check-geojson" : "0.1.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

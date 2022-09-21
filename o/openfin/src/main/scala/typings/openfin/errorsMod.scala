@@ -84,7 +84,7 @@ object errorsMod {
   
   @JSImport("openfin/_v2/fdc3/errors", "FDC3Error")
   @js.native
-  class FDC3Error protected ()
+  open class FDC3Error protected ()
     extends StObject
        with Error {
     def this(code: String, message: String) = this()
@@ -97,9 +97,11 @@ object errorsMod {
       */
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

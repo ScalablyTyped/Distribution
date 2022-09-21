@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("project-oxford", "Person")
 @js.native
-class Person () extends StObject {
+open class Person () extends StObject {
   
   /**
     * Adds a face to a person for identification. The maximum face count for each person is 32.

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel Runtime class.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @JSGlobal("Excel.Runtime")
 @js.native
-class Runtime ()
+open class Runtime ()
   extends StObject
      with typings.officeJsPreview.Excel.Runtime {
   

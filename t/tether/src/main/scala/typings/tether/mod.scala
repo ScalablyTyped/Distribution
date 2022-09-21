@@ -11,7 +11,7 @@ object mod {
   // global Tether constructor
   @JSImport("tether", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Tether {
     def this(options: ITetherOptions) = this()
@@ -71,7 +71,7 @@ object mod {
       
       inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
       
-      inline def setPinVarargs(value: String*): Self = StObject.set(x, "pin", js.Array(value :_*))
+      inline def setPinVarargs(value: String*): Self = StObject.set(x, "pin", js.Array(value*))
       
       inline def setPinnedClass(value: String): Self = StObject.set(x, "pinnedClass", value.asInstanceOf[js.Any])
       
@@ -81,7 +81,7 @@ object mod {
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      inline def setToVarargs(value: Double*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: Double*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -97,15 +97,15 @@ object mod {
     
     var constraints: js.UndefOr[js.Array[ITetherConstraint]] = js.undefined
     
-    var element: js.UndefOr[HTMLElement | String | js.Any] = js.undefined
+    var element: js.UndefOr[HTMLElement | String | Any] = js.undefined
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[String] = js.undefined
     
-    var optimizations: js.UndefOr[js.Any] = js.undefined
+    var optimizations: js.UndefOr[Any] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String | js.Any] = js.undefined
+    var target: js.UndefOr[HTMLElement | String | Any] = js.undefined
     
     var targetAttachment: js.UndefOr[String] = js.undefined
     
@@ -140,9 +140,9 @@ object mod {
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      inline def setConstraintsVarargs(value: ITetherConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: ITetherConstraint*): Self = StObject.set(x, "constraints", js.Array(value*))
       
-      inline def setElement(value: HTMLElement | String | js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement | String | Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -154,11 +154,11 @@ object mod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOptimizations(value: js.Any): Self = StObject.set(x, "optimizations", value.asInstanceOf[js.Any])
+      inline def setOptimizations(value: Any): Self = StObject.set(x, "optimizations", value.asInstanceOf[js.Any])
       
       inline def setOptimizationsUndefined: Self = StObject.set(x, "optimizations", js.undefined)
       
-      inline def setTarget(value: HTMLElement | String | js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String | Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetAttachment(value: String): Self = StObject.set(x, "targetAttachment", value.asInstanceOf[js.Any])
       

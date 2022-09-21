@@ -61,7 +61,7 @@ object DiagramShape {
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
     
-    inline def setConnectorsVarargs(value: DiagramShapeConnector*): Self = StObject.set(x, "connectors", js.Array(value :_*))
+    inline def setConnectorsVarargs(value: DiagramShapeConnector*): Self = StObject.set(x, "connectors", js.Array(value*))
     
     inline def setContent(value: DiagramShapeContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,7 @@ object mod {
     *
     *        **Default:** `'SymbolTree data'`
     */
-  class ^[T /* <: js.Object */] ()
+  open class ^[T /* <: js.Object */] ()
     extends typings.symbolTree.symbolTreeMod.^[T] {
     def this(description: String) = this()
   }

@@ -10,10 +10,10 @@ Utility collections for making Japanese text old-fashioned.
 | ------------------ | :-------------: |
 | Full name          | kyujitai |
 | Keywords           | kyujitai, japanese, text, kanji, Unicode, IVS, conversion |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 482 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 69.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/hakatashi/kyujitai.js)

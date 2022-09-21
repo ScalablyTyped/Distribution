@@ -12,7 +12,12 @@ trait ListChannelsRequest extends StObject {
   var filterByName: js.UndefOr[ChannelName] = js.undefined
   
   /**
-    * Maximum number of channels to return.
+    * Filters the channel list to match the specified recording-configuration ARN.
+    */
+  var filterByRecordingConfigurationArn: js.UndefOr[ChannelRecordingConfigurationArn] = js.undefined
+  
+  /**
+    * Maximum number of channels to return. Default: 100.
     */
   var maxResults: js.UndefOr[MaxChannelResults] = js.undefined
   
@@ -33,6 +38,10 @@ object ListChannelsRequest {
     inline def setFilterByName(value: ChannelName): Self = StObject.set(x, "filterByName", value.asInstanceOf[js.Any])
     
     inline def setFilterByNameUndefined: Self = StObject.set(x, "filterByName", js.undefined)
+    
+    inline def setFilterByRecordingConfigurationArn(value: ChannelRecordingConfigurationArn): Self = StObject.set(x, "filterByRecordingConfigurationArn", value.asInstanceOf[js.Any])
+    
+    inline def setFilterByRecordingConfigurationArnUndefined: Self = StObject.set(x, "filterByRecordingConfigurationArn", js.undefined)
     
     inline def setMaxResults(value: MaxChannelResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

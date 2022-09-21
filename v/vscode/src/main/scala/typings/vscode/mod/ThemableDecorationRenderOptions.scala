@@ -13,7 +13,7 @@ trait ThemableDecorationRenderOptions extends StObject {
   
   /**
     * Background color of the decoration. Use rgba() and define transparent background colors to play well with other decorations.
-    * Alternatively a color from the color registry can be [referenced](#ThemeColor).
+    * Alternatively a color from the color registry can be {@link ThemeColor referenced}.
     */
   var backgroundColor: js.UndefOr[String | ThemeColor] = js.undefined
   

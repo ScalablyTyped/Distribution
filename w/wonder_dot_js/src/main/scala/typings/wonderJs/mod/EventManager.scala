@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EventManager")
 @js.native
-class EventManager ()
+open class EventManager ()
   extends typings.wonderJs.eventManagerMod.EventManager
 /* static members */
 object EventManager {
@@ -17,19 +17,19 @@ object EventManager {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def broadcast(target: typings.wonderJs.entityObjectMod.EntityObject, event: typings.wonderJs.eventMod.Event): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def broadcast(target: typings.wonderJs.entityObjectMod.EntityObject, event: typings.wonderJs.eventMod.Event): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def broadcast(
     target: typings.wonderJs.entityObjectMod.EntityObject,
     event: typings.wonderJs.eventMod.Event,
-    userData: js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    userData: Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def emit(target: typings.wonderJs.entityObjectMod.EntityObject, event: typings.wonderJs.eventMod.Event): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def emit(target: typings.wonderJs.entityObjectMod.EntityObject, event: typings.wonderJs.eventMod.Event): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def emit(
     target: typings.wonderJs.entityObjectMod.EntityObject,
     event: typings.wonderJs.eventMod.Event,
-    userData: js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    userData: Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def fromEvent(dom: HTMLElement, eventName: String): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(dom.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
   inline def fromEvent(dom: HTMLElement, eventName: String, priority: Double): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(dom.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
@@ -148,21 +148,21 @@ object EventManager {
     priority: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setBubbleParent(target: typings.wonderJs.entityObjectMod.EntityObject, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleParent")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setBubbleParent(target: typings.wonderJs.entityObjectMod.EntityObject, parent: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleParent")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def trigger(dom: HTMLElement, event: typings.wonderJs.eventMod.Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(dom.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trigger(event: typings.wonderJs.eventMod.Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def trigger(event: typings.wonderJs.eventMod.Event, userData: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(event: typings.wonderJs.eventMod.Event, userData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trigger(target: typings.wonderJs.entityObjectMod.EntityObject, event: typings.wonderJs.eventMod.Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trigger(
     target: typings.wonderJs.entityObjectMod.EntityObject,
     event: typings.wonderJs.eventMod.Event,
-    userData: js.Any
+    userData: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trigger(
     target: typings.wonderJs.entityObjectMod.EntityObject,
     event: typings.wonderJs.eventMod.Event,
-    userData: js.Any,
+    userData: Any,
     notSetTarget: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any], notSetTarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

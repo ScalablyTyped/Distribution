@@ -19,7 +19,7 @@ trait XVclWindowPeer
   def enableClipSiblings(bClip: Boolean): Unit
   
   /** returns the value of the property with the specified name. */
-  def getProperty(PropertyName: String): js.Any
+  def getProperty(PropertyName: String): Any
   
   /** returns the font, foreground and background color for the specified type. */
   def getStyles(
@@ -45,7 +45,7 @@ trait XVclWindowPeer
   def setForeground(Color: Color): Unit
   
   /** sets the value of the property with the specified name. */
-  def setProperty(PropertyName: String, Value: js.Any): Unit
+  def setProperty(PropertyName: String, Value: Any): Unit
 }
 object XVclWindowPeer {
   
@@ -55,14 +55,14 @@ object XVclWindowPeer {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     enableClipSiblings: Boolean => Unit,
-    getProperty: String => js.Any,
+    getProperty: String => Any,
     getStyles: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit,
     getToolkit: () => XToolkit,
     invalidate: Double => Unit,
     invalidateRect: (Rectangle, Double) => Unit,
     isChild: XWindowPeer => Boolean,
     isDesignMode: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setBackground: Color => Unit,
@@ -70,7 +70,7 @@ object XVclWindowPeer {
     setDesignMode: Boolean => Unit,
     setForeground: Color => Unit,
     setPointer: XPointer => Unit,
-    setProperty: (String, js.Any) => Unit
+    setProperty: (String, Any) => Unit
   ): XVclWindowPeer = {
     val __obj = js.Dynamic.literal(Toolkit = Toolkit.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), enableClipSiblings = js.Any.fromFunction1(enableClipSiblings), getProperty = js.Any.fromFunction1(getProperty), getStyles = js.Any.fromFunction4(getStyles), getToolkit = js.Any.fromFunction0(getToolkit), invalidate = js.Any.fromFunction1(invalidate), invalidateRect = js.Any.fromFunction2(invalidateRect), isChild = js.Any.fromFunction1(isChild), isDesignMode = js.Any.fromFunction0(isDesignMode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setBackground = js.Any.fromFunction1(setBackground), setControlFont = js.Any.fromFunction1(setControlFont), setDesignMode = js.Any.fromFunction1(setDesignMode), setForeground = js.Any.fromFunction1(setForeground), setPointer = js.Any.fromFunction1(setPointer), setProperty = js.Any.fromFunction2(setProperty))
     __obj.asInstanceOf[XVclWindowPeer]
@@ -80,7 +80,7 @@ object XVclWindowPeer {
     
     inline def setEnableClipSiblings(value: Boolean => Unit): Self = StObject.set(x, "enableClipSiblings", js.Any.fromFunction1(value))
     
-    inline def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
+    inline def setGetProperty(value: String => Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
     inline def setGetStyles(value: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit): Self = StObject.set(x, "getStyles", js.Any.fromFunction4(value))
     
@@ -94,6 +94,6 @@ object XVclWindowPeer {
     
     inline def setSetForeground(value: Color => Unit): Self = StObject.set(x, "setForeground", js.Any.fromFunction1(value))
     
-    inline def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
+    inline def setSetProperty(value: (String, Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
   }
 }

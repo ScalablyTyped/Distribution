@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a presigner object with a set of configuration options.
   */
-class Presigner ()
+open class Presigner ()
   extends typings.awsSdk.presignerMod.Presigner {
   def this(options: PresignerOptions) = this()
 }

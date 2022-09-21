@@ -54,8 +54,8 @@ trait User[T /* <: Attributes */]
   def setUsername(username: String, options: SuccessFailureOptions): Boolean = js.native
   
   def signUp(): js.Promise[this.type] = js.native
-  def signUp(attrs: js.Any): js.Promise[this.type] = js.native
-  def signUp(attrs: js.Any, options: SignUpOptions): js.Promise[this.type] = js.native
+  def signUp(attrs: Any): js.Promise[this.type] = js.native
+  def signUp(attrs: Any, options: SignUpOptions): js.Promise[this.type] = js.native
   def signUp(attrs: Unit, options: SignUpOptions): js.Promise[this.type] = js.native
 }
 object User {

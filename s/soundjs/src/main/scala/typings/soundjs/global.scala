@@ -18,7 +18,7 @@ object global {
     
     @JSGlobal("createjs.AbstractPlugin")
     @js.native
-    class AbstractPlugin ()
+    open class AbstractPlugin ()
       extends StObject
          with typings.soundjs.createjs.AbstractPlugin {
       
@@ -59,7 +59,7 @@ object global {
     
     @JSGlobal("createjs.AbstractSoundInstance")
     @js.native
-    class AbstractSoundInstance protected ()
+    open class AbstractSoundInstance protected ()
       extends StObject
          with typings.soundjs.createjs.AbstractSoundInstance {
       def this(src: String, startTime: Double, duration: Double, playbackResource: js.Object) = this()
@@ -67,13 +67,13 @@ object global {
     
     @JSGlobal("createjs.FlashAudioLoader")
     @js.native
-    class FlashAudioLoader ()
+    open class FlashAudioLoader ()
       extends StObject
          with typings.soundjs.createjs.FlashAudioLoader
     
     @JSGlobal("createjs.FlashAudioPlugin")
     @js.native
-    class FlashAudioPlugin ()
+    open class FlashAudioPlugin ()
       extends StObject
          with typings.soundjs.createjs.FlashAudioPlugin {
       
@@ -136,7 +136,7 @@ object global {
     
     @JSGlobal("createjs.FlashAudioSoundInstance")
     @js.native
-    class FlashAudioSoundInstance protected ()
+    open class FlashAudioSoundInstance protected ()
       extends StObject
          with typings.soundjs.createjs.AbstractSoundInstance {
       def this(src: String, startTime: Double, duration: Double, playbackResource: js.Object) = this()
@@ -144,7 +144,7 @@ object global {
     
     @JSGlobal("createjs.FlashPlugin")
     @js.native
-    class FlashPlugin ()
+    open class FlashPlugin ()
       extends StObject
          with typings.soundjs.createjs.FlashPlugin {
       
@@ -210,7 +210,7 @@ object global {
     
     @JSGlobal("createjs.HTMLAudioPlugin")
     @js.native
-    class HTMLAudioPlugin ()
+    open class HTMLAudioPlugin ()
       extends StObject
          with typings.soundjs.createjs.HTMLAudioPlugin {
       
@@ -274,7 +274,7 @@ object global {
     
     @JSGlobal("createjs.HTMLAudioSoundInstance")
     @js.native
-    class HTMLAudioSoundInstance protected ()
+    open class HTMLAudioSoundInstance protected ()
       extends StObject
          with typings.soundjs.createjs.AbstractSoundInstance {
       def this(src: String, startTime: Double, duration: Double, playbackResource: js.Object) = this()
@@ -282,13 +282,13 @@ object global {
     
     @JSGlobal("createjs.HTMLAudioTagPool")
     @js.native
-    class HTMLAudioTagPool ()
+    open class HTMLAudioTagPool ()
       extends StObject
          with typings.soundjs.createjs.HTMLAudioTagPool
     
     @JSGlobal("createjs.PlayPropsConfig")
     @js.native
-    class PlayPropsConfig ()
+    open class PlayPropsConfig ()
       extends StObject
          with typings.soundjs.createjs.PlayPropsConfig {
       
@@ -311,7 +311,7 @@ object global {
       var pan: Double = js.native
       
       /* CompleteClass */
-      override def set(props: js.Any): typings.soundjs.createjs.PlayPropsConfig = js.native
+      override def set(props: Any): typings.soundjs.createjs.PlayPropsConfig = js.native
       
       /* CompleteClass */
       var startTime: Double = js.native
@@ -326,13 +326,13 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(value: js.Any): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
+      inline def create(value: Any): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
       inline def create(value: typings.soundjs.createjs.PlayPropsConfig): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
     }
     
     @JSGlobal("createjs.Sound")
     @js.native
-    class Sound ()
+    open class Sound ()
       extends StObject
          with EventDispatcher
     /* static members */
@@ -417,13 +417,13 @@ object global {
       
       @JSGlobal("createjs.Sound.alternateExtensions")
       @js.native
-      def alternateExtensions: js.Array[js.Any] = js.native
-      inline def alternateExtensions_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateExtensions")(x.asInstanceOf[js.Any])
+      def alternateExtensions: js.Array[Any] = js.native
+      inline def alternateExtensions_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateExtensions")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.capabilities")
       @js.native
-      def capabilities: js.Any = js.native
-      inline def capabilities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
+      def capabilities: Any = js.native
+      inline def capabilities_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
       
       // methods
       inline def createInstance(src: String): typings.soundjs.createjs.AbstractSoundInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(src.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.AbstractSoundInstance]
@@ -488,14 +488,14 @@ object global {
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Boolean,
-        data: js.Any
+        data: Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Boolean,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
@@ -511,14 +511,14 @@ object global {
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Unit,
-        data: js.Any
+        data: Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Unit,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
@@ -540,14 +540,14 @@ object global {
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Boolean,
-        data: js.Any
+        data: Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Boolean,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
@@ -563,14 +563,14 @@ object global {
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Unit,
-        data: js.Any
+        data: Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Unit,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
       inline def on(
@@ -584,13 +584,13 @@ object global {
       inline def on(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
         once: Boolean,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(
@@ -601,13 +601,13 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
         once: Unit,
-        data: js.Any,
+        data: Any,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(
@@ -619,39 +619,32 @@ object global {
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(
-        `type`: String,
-        listener: HandleEvent,
-        scope: Unit,
-        once: Boolean,
-        data: js.Any,
-        useCapture: Boolean
-      ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       inline def play(
         src: String,
-        interrupt: js.UndefOr[js.Any],
+        interrupt: js.UndefOr[Any],
         delay: js.UndefOr[Double],
         offset: js.UndefOr[Double],
         loop: js.UndefOr[Double],
@@ -661,7 +654,7 @@ object global {
       
       inline def registerManifest(manifest: js.Array[js.Object], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
-      inline def registerPlugins(plugins: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def registerPlugins(plugins: js.Array[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       inline def registerSound(src: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       inline def registerSound(src: String, id: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Object]
@@ -709,7 +702,7 @@ object global {
       inline def removeEventListener(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def removeManifest(manifest: js.Array[js.Any], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def removeManifest(manifest: js.Array[Any], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       inline def removeSound(src: String, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       inline def removeSound(src: js.Object, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -730,7 +723,7 @@ object global {
     
     @JSGlobal("createjs.SoundJS")
     @js.native
-    class SoundJS ()
+    open class SoundJS ()
       extends StObject
          with typings.soundjs.createjs.SoundJS
     /* static members */
@@ -753,7 +746,7 @@ object global {
     
     @JSGlobal("createjs.WebAudioLoader")
     @js.native
-    class WebAudioLoader ()
+    open class WebAudioLoader ()
       extends StObject
          with typings.soundjs.createjs.WebAudioLoader
     /* static members */
@@ -771,7 +764,7 @@ object global {
     
     @JSGlobal("createjs.WebAudioPlugin")
     @js.native
-    class WebAudioPlugin ()
+    open class WebAudioPlugin ()
       extends StObject
          with typings.soundjs.createjs.WebAudioPlugin {
       
@@ -839,7 +832,7 @@ object global {
     
     @JSGlobal("createjs.WebAudioSoundInstance")
     @js.native
-    class WebAudioSoundInstance protected ()
+    open class WebAudioSoundInstance protected ()
       extends StObject
          with typings.soundjs.createjs.WebAudioSoundInstance {
       def this(src: String, startTime: Double, duration: Double, playbackResource: js.Object) = this()

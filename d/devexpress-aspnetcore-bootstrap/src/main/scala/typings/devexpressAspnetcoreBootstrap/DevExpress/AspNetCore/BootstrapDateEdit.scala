@@ -12,7 +12,6 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.queryCloseUp
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +29,11 @@ trait BootstrapDateEdit
   
   def getCaretPosition(): Double = js.native
   
-  def getDate(): Date = js.native
+  def getDate(): js.Date = js.native
   
-  def getMaxDate(): Date = js.native
+  def getMaxDate(): js.Date = js.native
   
-  def getMinDate(): Date = js.native
+  def getMinDate(): js.Date = js.native
   
   def getRangeDayCount(): Double = js.native
   
@@ -269,11 +268,11 @@ trait BootstrapDateEdit
   
   def setCaretPosition(position: Double): Unit = js.native
   
-  def setDate(date: Date): Unit = js.native
+  def setDate(date: js.Date): Unit = js.native
   
-  def setMaxDate(date: Date): Unit = js.native
+  def setMaxDate(date: js.Date): Unit = js.native
   
-  def setMinDate(date: Date): Unit = js.native
+  def setMinDate(date: js.Date): Unit = js.native
   
   def setSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
   

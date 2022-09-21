@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeleteBreakTypeRequest")
 @js.native
-class DeleteBreakTypeRequest () extends StObject
+open class DeleteBreakTypeRequest () extends StObject

@@ -22,7 +22,7 @@ trait SelectAggregateResourceConfigRequest extends StObject {
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
   /**
-    * The maximum number of query results returned on each page. AWS Config also allows the Limit request parameter.
+    * The maximum number of query results returned on each page. Config also allows the Limit request parameter.
     */
   var MaxResults: js.UndefOr[Limit] = js.undefined
   

@@ -16,12 +16,11 @@ trait DiskInstantiationConfig extends StObject {
   var deviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies whether to include the disk and what image to use. Possible values are:
-    * - source-image: to use the same image that was used to create the source instance's corresponding disk. Applicable to the boot disk and additional read-write disks.
-    * - source-image-family: to use the same image family that was used to create the source instance's corresponding disk. Applicable to the boot disk and additional read-write disks.
-    * - custom-image: to use a user-provided image url for disk creation. Applicable to the boot disk and additional read-write disks.
-    * - attach-read-only: to attach a read-only disk. Applicable to read-only disks.
-    * - do-not-include: to exclude a disk from the template. Applicable to additional read-write disks, local SSDs, and read-only disks.
+    * Specifies whether to include the disk and what image to use. Possible values are: - source-image: to use the same image that was used to create the source instance's corresponding
+    * disk. Applicable to the boot disk and additional read-write disks. - source-image-family: to use the same image family that was used to create the source instance's corresponding
+    * disk. Applicable to the boot disk and additional read-write disks. - custom-image: to use a user-provided image url for disk creation. Applicable to the boot disk and additional
+    * read-write disks. - attach-read-only: to attach a read-only disk. Applicable to read-only disks. - do-not-include: to exclude a disk from the template. Applicable to additional
+    * read-write disks, local SSDs, and read-only disks.
     */
   var instantiateFrom: js.UndefOr[String] = js.undefined
 }

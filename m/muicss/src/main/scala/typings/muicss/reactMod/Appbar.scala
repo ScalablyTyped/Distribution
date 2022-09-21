@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Appbar")
 @js.native
-class Appbar () extends default
+open class Appbar () extends default

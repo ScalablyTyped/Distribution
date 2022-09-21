@@ -12,8 +12,8 @@ trait Navigate[TEntity] extends StObject {
   
   /**
     * raised when the active cell is changed
-    * @param {ng.IScope} scope The grid scope
-    * @param {navigateHandler} handler Callback
+    * @param scope The grid scope
+    * @param handler Callback
     */
   def navigate(scope: IScope, handler: navigateHandler[TEntity]): Unit
   
@@ -21,8 +21,8 @@ trait Navigate[TEntity] extends StObject {
     * viewPortKeyDown is raised when the viewPort receives a keyDown event.
     * Cells never get focus in uiGrid due to the difficulties of setting focus on a cell that is
     * not visible in the viewport. Use this event whenever you need a keydown event on a cell.
-    * @param {ng.IScope} scope The grid scope
-    * @param {viewportKeyDownHandler} handler Callback
+    * @param scope The grid scope
+    * @param handler Callback
     */
   def viewPortKeyDown(scope: IScope, handler: viewportKeyDownHandler[TEntity]): Unit
   
@@ -30,8 +30,8 @@ trait Navigate[TEntity] extends StObject {
     * viewPortKeyPress is raised when the viewPort receives a keyPress event.
     * Cells never get focus in uiGrid due to the difficulties of setting focus on a cell that is
     * not visible in the viewport. Use this event whenever you need a keypress event on a cell.
-    * @param {ng.IScope} scope The grid scope
-    * @param {viewportKeyPressHandler} handler Callback
+    * @param scope The grid scope
+    * @param handler Callback
     */
   def viewPortKeyPress(scope: IScope, handler: viewportKeyPressHandler[TEntity]): Unit
 }

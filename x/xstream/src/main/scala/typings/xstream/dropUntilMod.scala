@@ -13,21 +13,21 @@ object dropUntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](other: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(other.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
+  inline def default[T](other: Stream[Any]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(other.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
   
   @JSImport("xstream/extra/dropUntil", "DropUntilOperator")
   @js.native
-  class DropUntilOperator[T] protected ()
+  open class DropUntilOperator[T] protected ()
     extends StObject
        with Operator[T, T] {
-    def this(o: Stream[js.Any], // o = other
+    def this(o: Stream[Any], // o = other
     ins: Stream[T]) = this()
     
     /* CompleteClass */
     override def _c(): Unit = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
     /* CompleteClass */
     override def _n(v: T): Unit = js.native
@@ -43,11 +43,11 @@ object dropUntilMod {
     /* CompleteClass */
     var ins: Stream[T] = js.native
     
-    var o: Stream[js.Any] = js.native
+    var o: Stream[Any] = js.native
     
-    /* private */ var oil: js.Any = js.native
+    /* private */ var oil: Any = js.native
     
-    /* private */ var on: js.Any = js.native
+    /* private */ var on: Any = js.native
     
     /* CompleteClass */
     var out: Stream[T] = js.native

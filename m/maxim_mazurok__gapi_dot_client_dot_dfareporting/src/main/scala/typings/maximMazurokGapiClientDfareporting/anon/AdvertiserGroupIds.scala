@@ -104,7 +104,7 @@ object AdvertiserGroupIds {
     
     inline def setAdvertiserGroupIdsUndefined: Self = StObject.set(x, "advertiserGroupIds", js.undefined)
     
-    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value :_*))
+    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value*))
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -122,13 +122,13 @@ object AdvertiserGroupIds {
     
     inline def setFloodlightConfigurationIdsUndefined: Self = StObject.set(x, "floodlightConfigurationIds", js.undefined)
     
-    inline def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value :_*))
+    inline def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value*))
     
     inline def setIds(value: String | js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setIncludeAdvertisersWithoutGroupsOnly(value: Boolean): Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", value.asInstanceOf[js.Any])
     

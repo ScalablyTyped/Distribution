@@ -33,6 +33,6 @@ object ListOfferingsResult {
     
     inline def setOfferingsUndefined: Self = StObject.set(x, "offerings", js.undefined)
     
-    inline def setOfferingsVarargs(value: Offering*): Self = StObject.set(x, "offerings", js.Array(value :_*))
+    inline def setOfferingsVarargs(value: Offering*): Self = StObject.set(x, "offerings", js.Array(value*))
   }
 }

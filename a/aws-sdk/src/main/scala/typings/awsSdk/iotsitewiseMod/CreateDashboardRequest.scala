@@ -12,7 +12,7 @@ trait CreateDashboardRequest extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The dashboard definition specified in a JSON literal. For detailed information, see Creating dashboards (CLI) in the AWS IoT SiteWise User Guide.
+    * The dashboard definition specified in a JSON literal. For detailed information, see Creating dashboards (CLI) in the IoT SiteWise User Guide.
     */
   var dashboardDefinition: DashboardDefinition
   
@@ -32,7 +32,7 @@ trait CreateDashboardRequest extends StObject {
   var projectId: ID
   
   /**
-    * A list of key-value pairs that contain metadata for the dashboard. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
+    * A list of key-value pairs that contain metadata for the dashboard. For more information, see Tagging your IoT SiteWise resources in the IoT SiteWise User Guide.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }

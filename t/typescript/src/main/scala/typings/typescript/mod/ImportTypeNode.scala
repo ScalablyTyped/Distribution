@@ -12,6 +12,8 @@ trait ImportTypeNode
   
   val argument: TypeNode = js.native
   
+  val assertions: js.UndefOr[ImportTypeAssertionContainer] = js.native
+  
   val isTypeOf: Boolean = js.native
   
   @JSName("kind")

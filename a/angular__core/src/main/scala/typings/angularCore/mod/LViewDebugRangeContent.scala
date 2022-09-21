@@ -18,16 +18,16 @@ trait LViewDebugRangeContent extends StObject {
   /**
     * Value from the `LView[index]` location.
     */
-  var l: js.Any
+  var l: Any
   
   /**
     * Value from the `TView.data[index]` location.
     */
-  var t: js.Any
+  var t: Any
 }
 object LViewDebugRangeContent {
   
-  inline def apply(index: Double, l: js.Any, t: js.Any): LViewDebugRangeContent = {
+  inline def apply(index: Double, l: Any, t: Any): LViewDebugRangeContent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[LViewDebugRangeContent]
   }
@@ -36,8 +36,8 @@ object LViewDebugRangeContent {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setL(value: js.Any): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Any): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    inline def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

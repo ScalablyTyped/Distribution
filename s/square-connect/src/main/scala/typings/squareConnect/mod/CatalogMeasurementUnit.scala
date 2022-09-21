@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogMeasurementUnit")
 @js.native
-class CatalogMeasurementUnit () extends StObject {
+open class CatalogMeasurementUnit () extends StObject {
   
   /**
     * Indicates the unit used to measure the quantity of a catalog item variation.

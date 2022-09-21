@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SinonChromeStub
   extends StObject
-     with SinonStub[js.Array[js.Any], js.Any] {
+     with SinonStub[js.Array[Any], Any] {
   
   def flush(): Unit = js.native
 }

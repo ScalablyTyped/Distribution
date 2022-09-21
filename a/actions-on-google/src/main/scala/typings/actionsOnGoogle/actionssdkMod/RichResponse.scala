@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "RichResponse")
 @js.native
-class RichResponse protected ()
+open class RichResponse protected ()
   extends typings.actionsOnGoogle.conversationMod.RichResponse {
   /**
     * @param items RichResponse items

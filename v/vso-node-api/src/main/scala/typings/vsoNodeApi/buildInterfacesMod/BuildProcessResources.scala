@@ -27,14 +27,14 @@ object BuildProcessResources {
     
     inline def setEndpoints(value: js.Array[ServiceEndpointReference]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    inline def setEndpointsVarargs(value: ServiceEndpointReference*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: ServiceEndpointReference*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setFiles(value: js.Array[SecureFileReference]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: SecureFileReference*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SecureFileReference*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setQueues(value: js.Array[AgentPoolQueueReference]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    inline def setQueuesVarargs(value: AgentPoolQueueReference*): Self = StObject.set(x, "queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: AgentPoolQueueReference*): Self = StObject.set(x, "queues", js.Array(value*))
   }
 }

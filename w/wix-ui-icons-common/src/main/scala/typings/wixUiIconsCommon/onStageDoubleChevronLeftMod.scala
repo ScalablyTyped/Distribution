@@ -1,0 +1,20 @@
+package typings.wixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.doubleChevronLeftMod.DoubleChevronLeftProps
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object onStageDoubleChevronLeftMod extends Shortcut {
+  
+  @JSImport("wix-ui-icons-common/on-stage/DoubleChevronLeft", JSImport.Default)
+  @js.native
+  val default: FC[DoubleChevronLeftProps] = js.native
+  
+  type _To = FC[DoubleChevronLeftProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `onStageDoubleChevronLeftMod.foo` */
+  override def _to: FC[DoubleChevronLeftProps] = default
+}

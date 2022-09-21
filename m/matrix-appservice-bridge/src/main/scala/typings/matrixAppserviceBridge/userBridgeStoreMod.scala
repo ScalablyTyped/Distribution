@@ -13,12 +13,12 @@ object userBridgeStoreMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/user-bridge-store", "UserBridgeStore")
   @js.native
-  class UserBridgeStore protected () extends BridgeStore {
+  open class UserBridgeStore protected () extends BridgeStore {
     /**
       * Construct a store suitable for user bridging information.
       * @param db The connected NEDB database instance
       */
-    def this(db: ^[js.Any]) = this()
+    def this(db: ^[Any]) = this()
     
     /**
       * Get Matrix users by some data about them, previously stored via the set
@@ -45,7 +45,7 @@ object userBridgeStoreMod {
       *   })
       * });
       */
-    def getByMatrixData(dataQuery: Record[String, js.Any]): js.Promise[js.Array[MatrixUser]] = js.native
+    def getByMatrixData(dataQuery: Record[String, Any]): js.Promise[js.Array[MatrixUser]] = js.native
     
     /**
       * Retrieve a MatrixUser based on their user ID localpart. If there is more than
@@ -81,7 +81,7 @@ object userBridgeStoreMod {
       *   })
       * });
       */
-    def getByRemoteData(dataQuery: Record[String, js.Any]): js.Promise[js.Array[RemoteUser]] = js.native
+    def getByRemoteData(dataQuery: Record[String, Any]): js.Promise[js.Array[RemoteUser]] = js.native
     
     /**
       * Retrieve a list of matrix user IDs linked to this remote ID.
@@ -135,21 +135,21 @@ object userBridgeStoreMod {
       * @param matrixUser The matrix user
       * @param remoteUser The remote user
       */
-    def linkUsers(matrixUser: MatrixUser, remoteUser: RemoteUser): js.Promise[Double] = js.native
+    def linkUsers(matrixUser: MatrixUser, remoteUser: RemoteUser): js.Promise[Unit] = js.native
     
     /**
       * Store a Matrix user. If they already exist, they will be updated. Equivalence
       * is determined by their user ID.
       * @param matrixUser The matrix user
       */
-    def setMatrixUser(matrixUser: MatrixUser): js.Promise[Double] = js.native
+    def setMatrixUser(matrixUser: MatrixUser): js.Promise[Unit] = js.native
     
     /**
       * Store a Remote user. If they already exist, they will be updated. Equivalence
       * is determined by the Remote ID.
       * @param remoteUser The remote user
       */
-    def setRemoteUser(remoteUser: RemoteUser): js.Promise[Double] = js.native
+    def setRemoteUser(remoteUser: RemoteUser): js.Promise[Unit] = js.native
     
     /**
       * Delete a link between a matrix user ID and a remote user ID.

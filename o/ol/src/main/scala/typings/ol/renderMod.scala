@@ -2,7 +2,6 @@ package typings.ol
 
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.pixelMod.Pixel
-import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventMod.default
 import typings.ol.sizeMod.Size
 import typings.std.CanvasRenderingContext2D
@@ -19,8 +18,6 @@ object renderMod {
   inline def getRenderPixel(event: default, pixel: Pixel): Pixel = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderPixel")(event.asInstanceOf[js.Any], pixel.asInstanceOf[js.Any])).asInstanceOf[Pixel]
   
   inline def getVectorContext(event: default): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
-  
-  inline def renderDeclutterItems(frameState: FrameState, declutterTree: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclutterItems")(frameState.asInstanceOf[js.Any], declutterTree.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   inline def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
   inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.immediateMod.default]

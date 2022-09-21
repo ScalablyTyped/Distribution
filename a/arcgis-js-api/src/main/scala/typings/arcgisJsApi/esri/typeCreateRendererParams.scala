@@ -5,8 +5,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`3d-flat`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric-uniform`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
 import typings.arcgisJsApi.arcgisJsApiStrings.count
-import typings.arcgisJsApi.arcgisJsApiStrings.none
-import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.std.AbortSignal
 import typings.std.Object
@@ -20,14 +18,9 @@ trait typeCreateRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
+    *
+    * @default replace
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
@@ -41,13 +34,6 @@ trait typeCreateRendererParams
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to add edges to the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
-  var edgesType: js.UndefOr[solid | none] = js.undefined
-  
-  /**
     * The name of the field from which to extract unique values that will be used for the basis of the data-driven visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
@@ -59,7 +45,7 @@ trait typeCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for setting a title to a field that will override the field alias defined in the service.
@@ -70,6 +56,8 @@ trait typeCreateRendererParams
   
   /**
     * The number of types (or categories) displayed by the renderer.
+    *
+    * @default 10
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
@@ -106,6 +94,8 @@ trait typeCreateRendererParams
   /**
     * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
+    * @default count
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
   var sortBy: js.UndefOr[count | value] = js.undefined
@@ -120,6 +110,8 @@ trait typeCreateRendererParams
   /**
     * The type of symbol to generate.
     *
+    * @default 2d
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
@@ -132,7 +124,7 @@ trait typeCreateRendererParams
   var typeScheme: js.UndefOr[TypeScheme] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number or a string.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
     */
@@ -157,7 +149,7 @@ object typeCreateRendererParams {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): typeCreateRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -165,10 +157,6 @@ object typeCreateRendererParams {
   }
   
   extension [Self <: typeCreateRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
@@ -178,15 +166,11 @@ object typeCreateRendererParams {
     
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    inline def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
-    
-    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
-    
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: typeCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

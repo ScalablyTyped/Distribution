@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "SimpleTextOperation")
 @js.native
-class SimpleTextOperation () extends StObject {
+open class SimpleTextOperation () extends StObject {
   
   @JSName("apply")
   def apply(doc: String): String = js.native
@@ -25,7 +25,7 @@ object SimpleTextOperation {
     */
   @JSImport("ot", "SimpleTextOperation.Delete")
   @js.native
-  class Delete protected () extends SimpleTextOperation {
+  open class Delete protected () extends SimpleTextOperation {
     def this(count: Double, position: Double) = this()
   }
   
@@ -34,7 +34,7 @@ object SimpleTextOperation {
     */
   @JSImport("ot", "SimpleTextOperation.Insert")
   @js.native
-  class Insert protected () extends SimpleTextOperation {
+  open class Insert protected () extends SimpleTextOperation {
     def this(str: String, position: Double) = this()
   }
   
@@ -44,7 +44,7 @@ object SimpleTextOperation {
     */
   @JSImport("ot", "SimpleTextOperation.Noop")
   @js.native
-  class Noop () extends SimpleTextOperation
+  open class Noop () extends SimpleTextOperation
   
   /**
     * Convert a normal, composable `TextOperation` into an array of

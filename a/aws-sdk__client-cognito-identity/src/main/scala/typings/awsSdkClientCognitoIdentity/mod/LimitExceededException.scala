@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeLimitE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object LimitExceededException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "LimitExceededException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.LimitExceededException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "LimitExceededException")
+@js.native
+open class LimitExceededException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.LimitExceededException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeLimitE) = this()
 }

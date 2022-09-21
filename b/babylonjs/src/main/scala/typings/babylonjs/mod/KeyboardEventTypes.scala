@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "KeyboardEventTypes")
 @js.native
-class KeyboardEventTypes ()
+open class KeyboardEventTypes ()
   extends typings.babylonjs.legacyMod.KeyboardEventTypes
 /* static members */
 object KeyboardEventTypes {

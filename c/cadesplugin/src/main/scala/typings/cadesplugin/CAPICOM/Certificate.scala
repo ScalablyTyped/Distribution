@@ -12,6 +12,8 @@ trait Certificate extends StObject {
   
   def Export(EncodingType: ValuesOf[CAPICOM_ENCODING_TYPE]): String
   
+  def ExtendedKeyUsage(): typings.cadesplugin.CAPICOM.ExtendedKeyUsage
+  
   def GetInfo(infoType: CAPICOM_CERT_INFO_TYPE): String
   
   def HasPrivateKey(): Boolean
@@ -19,6 +21,8 @@ trait Certificate extends StObject {
   def IsValid(): CertificateStatus
   
   val IssuerName: String
+  
+  var PrivateKey: typings.cadesplugin.CAPICOM.PrivateKey
   
   def PublicKey(): typings.cadesplugin.CAPICOM.PublicKey
   
@@ -39,10 +43,12 @@ object Certificate {
   inline def apply(
     Display: () => Unit,
     Export: ValuesOf[CAPICOM_ENCODING_TYPE] => String,
+    ExtendedKeyUsage: () => ExtendedKeyUsage,
     GetInfo: CAPICOM_CERT_INFO_TYPE => String,
     HasPrivateKey: () => Boolean,
     IsValid: () => CertificateStatus,
     IssuerName: String,
+    PrivateKey: PrivateKey,
     PublicKey: () => PublicKey,
     SerialNumber: String,
     SubjectName: String,
@@ -51,7 +57,7 @@ object Certificate {
     ValidToDate: VarDate,
     Version: Double
   ): Certificate = {
-    val __obj = js.Dynamic.literal(Display = js.Any.fromFunction0(Display), Export = js.Any.fromFunction1(Export), GetInfo = js.Any.fromFunction1(GetInfo), HasPrivateKey = js.Any.fromFunction0(HasPrivateKey), IsValid = js.Any.fromFunction0(IsValid), IssuerName = IssuerName.asInstanceOf[js.Any], PublicKey = js.Any.fromFunction0(PublicKey), SerialNumber = SerialNumber.asInstanceOf[js.Any], SubjectName = SubjectName.asInstanceOf[js.Any], Thumbprint = Thumbprint.asInstanceOf[js.Any], ValidFromDate = ValidFromDate.asInstanceOf[js.Any], ValidToDate = ValidToDate.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Display = js.Any.fromFunction0(Display), Export = js.Any.fromFunction1(Export), ExtendedKeyUsage = js.Any.fromFunction0(ExtendedKeyUsage), GetInfo = js.Any.fromFunction1(GetInfo), HasPrivateKey = js.Any.fromFunction0(HasPrivateKey), IsValid = js.Any.fromFunction0(IsValid), IssuerName = IssuerName.asInstanceOf[js.Any], PrivateKey = PrivateKey.asInstanceOf[js.Any], PublicKey = js.Any.fromFunction0(PublicKey), SerialNumber = SerialNumber.asInstanceOf[js.Any], SubjectName = SubjectName.asInstanceOf[js.Any], Thumbprint = Thumbprint.asInstanceOf[js.Any], ValidFromDate = ValidFromDate.asInstanceOf[js.Any], ValidToDate = ValidToDate.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certificate]
   }
   
@@ -61,6 +67,8 @@ object Certificate {
     
     inline def setExport(value: ValuesOf[CAPICOM_ENCODING_TYPE] => String): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     
+    inline def setExtendedKeyUsage(value: () => ExtendedKeyUsage): Self = StObject.set(x, "ExtendedKeyUsage", js.Any.fromFunction0(value))
+    
     inline def setGetInfo(value: CAPICOM_CERT_INFO_TYPE => String): Self = StObject.set(x, "GetInfo", js.Any.fromFunction1(value))
     
     inline def setHasPrivateKey(value: () => Boolean): Self = StObject.set(x, "HasPrivateKey", js.Any.fromFunction0(value))
@@ -68,6 +76,8 @@ object Certificate {
     inline def setIsValid(value: () => CertificateStatus): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
     
     inline def setIssuerName(value: String): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateKey(value: PrivateKey): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
     inline def setPublicKey(value: () => PublicKey): Self = StObject.set(x, "PublicKey", js.Any.fromFunction0(value))
     

@@ -35,7 +35,7 @@ object XSheetFilterDescriptor2 {
     FilterFields2: SafeArray[TableFilterField2],
     acquire: () => Unit,
     getFilterFields2: () => SafeArray[TableFilterField2],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFilterFields2: SeqEquiv[TableFilterField2] => Unit
   ): XSheetFilterDescriptor2 = {

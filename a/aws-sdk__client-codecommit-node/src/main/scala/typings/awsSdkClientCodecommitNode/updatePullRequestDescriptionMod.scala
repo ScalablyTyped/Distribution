@@ -8,5 +8,5 @@ object updatePullRequestDescriptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/UpdatePullRequestDescription", "UpdatePullRequestDescription")
   @js.native
-  val UpdatePullRequestDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdatePullRequestDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

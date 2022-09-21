@@ -11,7 +11,7 @@ object dmsMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/dms", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Dms
   object default {

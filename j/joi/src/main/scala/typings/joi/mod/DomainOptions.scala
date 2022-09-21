@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainOptions extends StObject {
   
   /**
+    * if `true`, domains ending with a `.` character are permitted
+    *
+    * @default false
+    */
+  var allowFullyQualified: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If `true`, Unicode characters are permitted
     *
     * @default true
@@ -36,6 +43,10 @@ object DomainOptions {
   }
   
   extension [Self <: DomainOptions](x: Self) {
+    
+    inline def setAllowFullyQualified(value: Boolean): Self = StObject.set(x, "allowFullyQualified", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFullyQualifiedUndefined: Self = StObject.set(x, "allowFullyQualified", js.undefined)
     
     inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     

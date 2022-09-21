@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait ExtensionVersion extends StObject {
   
   var flags: ExtensionVersionFlags
   
-  var lastUpdated: Date
+  var lastUpdated: js.Date
   
   var properties: js.Array[KeyValue]
   
@@ -36,7 +35,7 @@ object ExtensionVersion {
     fallbackAssetUri: String,
     files: js.Array[ExtensionFile],
     flags: ExtensionVersionFlags,
-    lastUpdated: Date,
+    lastUpdated: js.Date,
     properties: js.Array[KeyValue],
     validationResultMessage: String,
     version: String,
@@ -52,21 +51,21 @@ object ExtensionVersion {
     
     inline def setBadges(value: js.Array[ExtensionBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
-    inline def setBadgesVarargs(value: ExtensionBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
+    inline def setBadgesVarargs(value: ExtensionBadge*): Self = StObject.set(x, "badges", js.Array(value*))
     
     inline def setFallbackAssetUri(value: String): Self = StObject.set(x, "fallbackAssetUri", value.asInstanceOf[js.Any])
     
     inline def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setFlags(value: ExtensionVersionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: js.Array[KeyValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setValidationResultMessage(value: String): Self = StObject.set(x, "validationResultMessage", value.asInstanceOf[js.Any])
     

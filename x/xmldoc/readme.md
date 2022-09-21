@@ -10,10 +10,10 @@ A lightweight XML Document class for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | xmldoc |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 281 |
-| # downloads        | 29111693 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6186322.0 |
+| # stars            | 255.0 |
 
 ## Links
 - [Homepage](https://github.com/nfarina/xmldoc#readme)

@@ -17,7 +17,7 @@ object universalMod {
   
   @JSImport("graphql-react/universal", "GraphQL")
   @js.native
-  class GraphQL ()
+  open class GraphQL ()
     extends typings.graphqlReact.mod.GraphQL {
     def this(options: Cache) = this()
   }
@@ -26,7 +26,7 @@ object universalMod {
   @js.native
   val GraphQLContext: Context[typings.graphqlReact.mod.GraphQL] = js.native
   
-  inline def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reportCacheErrors(event: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def ssr(grapphql: typings.graphqlReact.mod.GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ssr(

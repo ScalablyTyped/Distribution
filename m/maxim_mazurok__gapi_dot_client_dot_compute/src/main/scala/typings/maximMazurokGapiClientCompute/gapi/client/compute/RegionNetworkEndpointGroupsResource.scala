@@ -4,7 +4,8 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyNetworkEndpointGroupOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.KeyNetworkEndpointGroupOauthtokenPrettyPrint
-import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRegionRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
+import typings.maximMazurokGapiClientCompute.anon.RegionRequestIdResourceUploadTypeUploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,9 @@ trait RegionNetworkEndpointGroupsResource extends StObject {
   def get(): Request[NetworkEndpointGroup] = js.native
   def get(request: KeyNetworkEndpointGroupOauthtokenPrettyPrint): Request[NetworkEndpointGroup] = js.native
   
+  def insert(request: Oauthtoken, body: NetworkEndpointGroup): Request[Operation] = js.native
   /** Creates a network endpoint group in the specified project using the parameters that are included in the request. */
-  def insert(request: PrettyPrintProjectQuotaUserRegionRequestIdResource): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: NetworkEndpointGroup): Request[Operation] = js.native
+  def insert(request: RegionRequestIdResourceUploadTypeUploadprotocol): Request[Operation] = js.native
   
   /** Retrieves the list of regional network endpoint groups available to the specified project in the given region. */
   def list(): Request[NetworkEndpointGroupList] = js.native

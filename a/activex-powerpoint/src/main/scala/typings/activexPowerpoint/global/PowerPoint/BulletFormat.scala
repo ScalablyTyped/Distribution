@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.BulletFormat")
 @js.native
-/* private */ class BulletFormat ()
+/* private */ open class BulletFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.BulletFormat {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Number: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Picture(Picture: String): Unit = js.native

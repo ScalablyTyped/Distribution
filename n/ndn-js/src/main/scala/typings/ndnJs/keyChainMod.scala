@@ -12,169 +12,142 @@ object keyChainMod {
   
   @JSImport("ndn-js/key-chain", "CertificateV2")
   @js.native
-  class CertificateV2 () extends StObject
+  open class CertificateV2 () extends StObject
   
   @JSImport("ndn-js/key-chain", "KeyChain")
   @js.native
-  class KeyChain () extends StObject {
+  open class KeyChain () extends StObject {
     def this(pibLocator: String, tpmLocator: String) = this()
     def this(pibLocator: String, tpmLocator: String, allowReset: Boolean) = this()
     
     def addCertificate(key: PibKey, certificate: CertificateV2): Unit = js.native
-    def addCertificate(key: PibKey, certificate: CertificateV2, onComplete: js.Function0[js.Any]): Unit = js.native
+    def addCertificate(key: PibKey, certificate: CertificateV2, onComplete: js.Function0[Any]): Unit = js.native
     def addCertificate(
       key: PibKey,
       certificate: CertificateV2,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function0[Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def addCertificate(
       key: PibKey,
       certificate: CertificateV2,
       onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
     def createIdentityV2(identityName: Name): PibIdentity = js.native
-    def createIdentityV2(identityName: Name, onComplete: js.Function1[/* identity */ PibIdentity, js.Any]): Unit = js.native
+    def createIdentityV2(identityName: Name, onComplete: js.Function1[/* identity */ PibIdentity, Any]): Unit = js.native
     def createIdentityV2(
       identityName: Name,
-      onComplete: js.Function1[/* identity */ PibIdentity, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* identity */ PibIdentity, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def createIdentityV2(identityName: Name, params: KeyParams): PibIdentity = js.native
+    def createIdentityV2(identityName: Name, params: KeyParams, onComplete: js.Function1[/* identity */ PibIdentity, Any]): Unit = js.native
     def createIdentityV2(
       identityName: Name,
       params: KeyParams,
-      onComplete: js.Function1[/* identity */ PibIdentity, js.Any]
-    ): Unit = js.native
-    def createIdentityV2(
-      identityName: Name,
-      params: KeyParams,
-      onComplete: js.Function1[/* identity */ PibIdentity, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* identity */ PibIdentity, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
     def createKey(identity: PibIdentity): PibKey = js.native
-    def createKey(identity: PibIdentity, onComplete: js.Function1[/* key */ PibKey, js.Any]): Unit = js.native
+    def createKey(identity: PibIdentity, onComplete: js.Function1[/* key */ PibKey, Any]): Unit = js.native
     def createKey(
       identity: PibIdentity,
-      onComplete: js.Function1[/* key */ PibKey, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* key */ PibKey, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def createKey(identity: PibIdentity, params: KeyParams): PibKey = js.native
-    def createKey(identity: PibIdentity, params: KeyParams, onComplete: js.Function1[/* key */ PibKey, js.Any]): Unit = js.native
+    def createKey(identity: PibIdentity, params: KeyParams, onComplete: js.Function1[/* key */ PibKey, Any]): Unit = js.native
     def createKey(
       identity: PibIdentity,
       params: KeyParams,
-      onComplete: js.Function1[/* key */ PibKey, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* key */ PibKey, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
     def deleteCertificate(key: PibKey, certificateName: Name): Unit = js.native
-    def deleteCertificate(key: PibKey, certificateName: Name, onComplete: js.Function0[js.Any]): Unit = js.native
+    def deleteCertificate(key: PibKey, certificateName: Name, onComplete: js.Function0[Any]): Unit = js.native
     def deleteCertificate(
       key: PibKey,
       certificateName: Name,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function0[Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
-    def deleteCertificate(
-      key: PibKey,
-      certificateName: Name,
-      onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
-    ): Unit = js.native
+    def deleteCertificate(key: PibKey, certificateName: Name, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     
     def deleteIdentity(identity: PibIdentity): Unit = js.native
-    def deleteIdentity(identity: PibIdentity, onComplete: js.Function0[js.Any]): Unit = js.native
-    def deleteIdentity(
-      identity: PibIdentity,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
-    ): Unit = js.native
-    def deleteIdentity(identity: PibIdentity, onComplete: Unit, onError: js.Function1[/* err */ js.Any, js.Any]): Unit = js.native
+    def deleteIdentity(identity: PibIdentity, onComplete: js.Function0[Any]): Unit = js.native
+    def deleteIdentity(identity: PibIdentity, onComplete: js.Function0[Any], onError: js.Function1[/* err */ Any, Any]): Unit = js.native
+    def deleteIdentity(identity: PibIdentity, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     
     def deleteKey(identity: PibIdentity, key: PibKey): Unit = js.native
-    def deleteKey(identity: PibIdentity, key: PibKey, onComplete: js.Function0[js.Any]): Unit = js.native
+    def deleteKey(identity: PibIdentity, key: PibKey, onComplete: js.Function0[Any]): Unit = js.native
     def deleteKey(
       identity: PibIdentity,
       key: PibKey,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function0[Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
-    def deleteKey(
-      identity: PibIdentity,
-      key: PibKey,
-      onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
-    ): Unit = js.native
+    def deleteKey(identity: PibIdentity, key: PibKey, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     
     def getPib(): Pib = js.native
     
     def getTpm(): Tpm = js.native
     
     def setDefaultCertificate(key: PibKey, certificate: CertificateV2): Unit = js.native
-    def setDefaultCertificate(key: PibKey, certificate: CertificateV2, onComplete: js.Function0[js.Any]): Unit = js.native
+    def setDefaultCertificate(key: PibKey, certificate: CertificateV2, onComplete: js.Function0[Any]): Unit = js.native
     def setDefaultCertificate(
       key: PibKey,
       certificate: CertificateV2,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function0[Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def setDefaultCertificate(
       key: PibKey,
       certificate: CertificateV2,
       onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
     def setDefaultIdentity(identity: PibIdentity): Unit = js.native
-    def setDefaultIdentity(identity: PibIdentity, onComplete: js.Function0[js.Any]): Unit = js.native
-    def setDefaultIdentity(
-      identity: PibIdentity,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
-    ): Unit = js.native
-    def setDefaultIdentity(identity: PibIdentity, onComplete: Unit, onError: js.Function1[/* err */ js.Any, js.Any]): Unit = js.native
+    def setDefaultIdentity(identity: PibIdentity, onComplete: js.Function0[Any]): Unit = js.native
+    def setDefaultIdentity(identity: PibIdentity, onComplete: js.Function0[Any], onError: js.Function1[/* err */ Any, Any]): Unit = js.native
+    def setDefaultIdentity(identity: PibIdentity, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     
     def setDefaultKey(identity: PibIdentity, key: PibKey): Unit = js.native
-    def setDefaultKey(identity: PibIdentity, key: PibKey, onComplete: js.Function0[js.Any]): Unit = js.native
+    def setDefaultKey(identity: PibIdentity, key: PibKey, onComplete: js.Function0[Any]): Unit = js.native
     def setDefaultKey(
       identity: PibIdentity,
       key: PibKey,
-      onComplete: js.Function0[js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function0[Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
-    def setDefaultKey(
-      identity: PibIdentity,
-      key: PibKey,
-      onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
-    ): Unit = js.native
+    def setDefaultKey(identity: PibIdentity, key: PibKey, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     
     def sign(data: Data, params: SigningInfo): Unit = js.native
-    def sign(data: Data, params: SigningInfo, onComplete: js.Function1[/* data */ Data, js.Any]): Unit = js.native
+    def sign(data: Data, params: SigningInfo, onComplete: js.Function1[/* data */ Data, Any]): Unit = js.native
     def sign(
       data: Data,
       params: SigningInfo,
-      onComplete: js.Function1[/* data */ Data, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* data */ Data, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
-    def sign(data: Data, params: SigningInfo, onComplete: Unit, onError: js.Function1[/* err */ js.Any, js.Any]): Unit = js.native
+    def sign(data: Data, params: SigningInfo, onComplete: Unit, onError: js.Function1[/* err */ Any, Any]): Unit = js.native
     def sign(interest: Interest, params: SigningInfo): Unit = js.native
-    def sign(interest: Interest, params: SigningInfo, onComplete: js.Function1[/* interest */ Interest, js.Any]): Unit = js.native
+    def sign(interest: Interest, params: SigningInfo, onComplete: js.Function1[/* interest */ Interest, Any]): Unit = js.native
     def sign(
       interest: Interest,
       params: SigningInfo,
-      onComplete: js.Function1[/* interest */ Interest, js.Any],
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onComplete: js.Function1[/* interest */ Interest, Any],
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def sign(
       interest: Interest,
       params: SigningInfo,
       onComplete: Unit,
-      onError: js.Function1[/* err */ js.Any, js.Any]
+      onError: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
     def signWithSha256(packet: Data): Unit = js.native
@@ -192,23 +165,23 @@ object keyChainMod {
   
   @JSImport("ndn-js/key-chain", "KeyParams")
   @js.native
-  class KeyParams () extends StObject
+  open class KeyParams () extends StObject
   
   @JSImport("ndn-js/key-chain", "Pib")
   @js.native
-  class Pib () extends StObject
+  open class Pib () extends StObject
   
   @JSImport("ndn-js/key-chain", "PibIdentity")
   @js.native
-  class PibIdentity () extends StObject
+  open class PibIdentity () extends StObject
   
   @JSImport("ndn-js/key-chain", "PibKey")
   @js.native
-  class PibKey () extends StObject
+  open class PibKey () extends StObject
   
   @JSImport("ndn-js/key-chain", "SigningInfo")
   @js.native
-  class SigningInfo () extends StObject {
+  open class SigningInfo () extends StObject {
     def this(arg: String) = this()
     def this(arg: PibIdentity) = this()
     def this(arg: PibKey) = this()
@@ -264,5 +237,5 @@ object keyChainMod {
   
   @JSImport("ndn-js/key-chain", "Tpm")
   @js.native
-  class Tpm () extends StObject
+  open class Tpm () extends StObject
 }

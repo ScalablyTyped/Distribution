@@ -14,12 +14,12 @@ trait ReservationPlan extends StObject {
   /**
     * The timestamp in epoch seconds for when the current pricing plan term for this reserved queue expires.
     */
-  var ExpiresAt: js.UndefOr[timestampUnix] = js.undefined
+  var ExpiresAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp in epoch seconds for when you set up the current pricing plan for this reserved queue.
     */
-  var PurchasedAt: js.UndefOr[timestampUnix] = js.undefined
+  var PurchasedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether the term of your reserved queue pricing plan is automatically extended (AUTO_RENEW) or expires (EXPIRE) at the end of the term.
@@ -49,11 +49,11 @@ object ReservationPlan {
     
     inline def setCommitmentUndefined: Self = StObject.set(x, "Commitment", js.undefined)
     
-    inline def setExpiresAt(value: timestampUnix): Self = StObject.set(x, "ExpiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "ExpiresAt", value.asInstanceOf[js.Any])
     
     inline def setExpiresAtUndefined: Self = StObject.set(x, "ExpiresAt", js.undefined)
     
-    inline def setPurchasedAt(value: timestampUnix): Self = StObject.set(x, "PurchasedAt", value.asInstanceOf[js.Any])
+    inline def setPurchasedAt(value: js.Date): Self = StObject.set(x, "PurchasedAt", value.asInstanceOf[js.Any])
     
     inline def setPurchasedAtUndefined: Self = StObject.set(x, "PurchasedAt", js.undefined)
     

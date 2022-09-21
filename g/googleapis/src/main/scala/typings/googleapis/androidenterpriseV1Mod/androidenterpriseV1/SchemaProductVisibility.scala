@@ -4,27 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A product to be made visible to a user.
-  */
 trait SchemaProductVisibility extends StObject {
   
   /**
-    * The product ID to make visible to the user. Required for each item in the
-    * productVisibility list.
+    * The product ID to make visible to the user. Required for each item in the productVisibility list.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Grants the user visibility to the specified product track(s), identified
-    * by trackIds.
+    * Grants the user visibility to the specified product track(s), identified by trackIds.
     */
-  var trackIds: js.UndefOr[js.Array[String]] = js.undefined
+  var trackIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Deprecated. Use trackIds instead.
     */
-  var tracks: js.UndefOr[js.Array[String]] = js.undefined
+  var tracks: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaProductVisibility {
   
@@ -37,18 +32,24 @@ object SchemaProductVisibility {
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
+    
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     inline def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
     
+    inline def setTrackIdsNull: Self = StObject.set(x, "trackIds", null)
+    
     inline def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
-    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
+    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value*))
     
     inline def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
+    inline def setTracksNull: Self = StObject.set(x, "tracks", null)
+    
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

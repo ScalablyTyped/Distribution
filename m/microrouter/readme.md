@@ -10,10 +10,10 @@ Typings are for version 3.1
 | ------------------ | :-------------: |
 | Full name          | microrouter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 254724 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17306.666666666668 |
+| # stars            | 625.0 |
 
 ## Links
 - [Homepage](https://github.com/pedronauck/micro-router#readme)

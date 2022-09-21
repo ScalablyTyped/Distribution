@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "TrajectoryClassifier")
 @js.native
-/* private */ class TrajectoryClassifier ()
+/* private */ open class TrajectoryClassifier ()
   extends typings.babylonjs.indexMod.TrajectoryClassifier
 /* static members */
 object TrajectoryClassifier {

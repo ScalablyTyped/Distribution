@@ -27,7 +27,7 @@ object ListApplicationsResponse {
     
     inline def setApplicationSummaries(value: ApplicationSummaries): Self = StObject.set(x, "ApplicationSummaries", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSummariesVarargs(value: ApplicationSummary*): Self = StObject.set(x, "ApplicationSummaries", js.Array(value :_*))
+    inline def setApplicationSummariesVarargs(value: ApplicationSummary*): Self = StObject.set(x, "ApplicationSummaries", js.Array(value*))
     
     inline def setHasMoreApplications(value: BooleanObject): Self = StObject.set(x, "HasMoreApplications", value.asInstanceOf[js.Any])
   }

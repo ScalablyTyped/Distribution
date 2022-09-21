@@ -9,7 +9,7 @@ trait OperationErrors extends StObject {
   /** The list of errors encountered while processing this operation. */
   var errors: js.UndefOr[js.Array[OperationError]] = js.undefined
   
-  /** This is always *sql#operationErrors*. */
+  /** This is always `sql#operationErrors`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object OperationErrors {
@@ -25,7 +25,7 @@ object OperationErrors {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: OperationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: OperationError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

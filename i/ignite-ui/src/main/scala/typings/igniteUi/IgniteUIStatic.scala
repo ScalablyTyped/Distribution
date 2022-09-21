@@ -1,7 +1,6 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,7 +96,7 @@ trait IgniteUIStatic extends StObject {
   
   var OlapTableView: Instantiable1[/* options */ OlapTableViewOptions, typings.igniteUi.Infragistics.OlapTableView] = js.native
   
-  var OlapUtilities: js.Any = js.native
+  var OlapUtilities: Any = js.native
   
   var OlapXmlaDataSource: Instantiable1[
     /* options */ OlapXmlaDataSourceOptions, 
@@ -131,7 +130,7 @@ trait IgniteUIStatic extends StObject {
     typings.igniteUi.Infragistics.SelectionCollection
   ] = js.native
   
-  var SelectionWrapper: Instantiable1[/* NODE */ js.Any, typings.igniteUi.Infragistics.SelectionWrapper] = js.native
+  var SelectionWrapper: Instantiable1[/* NODE */ Any, typings.igniteUi.Infragistics.SelectionWrapper] = js.native
   
   var ShapeDataSource: Instantiable1[
     /* settings */ ShapeDataSourceSettings, 
@@ -163,16 +162,16 @@ trait IgniteUIStatic extends StObject {
   ] = js.native
   
   def formatter(
-    `val`: Double | String | Date,
+    `val`: Double | String | js.Date,
     `type`: String,
     format: String,
     notTemplate: js.UndefOr[Boolean],
     enableUTCDates: js.UndefOr[Boolean],
-    dateOffset: js.UndefOr[js.Any],
+    dateOffset: js.UndefOr[Any],
     displayStyle: js.UndefOr[String],
     labelText: js.UndefOr[String],
     tabIndex: js.UndefOr[String | Double],
-    reg: js.UndefOr[js.Any]
+    reg: js.UndefOr[Any]
   ): String = js.native
   
   var igTemplating: Instantiable1[/* regExp */ IgTemplatingRegExp, typings.igniteUi.Infragistics.igTemplating] = js.native
@@ -182,9 +181,9 @@ trait IgniteUIStatic extends StObject {
   def loader(options: IgLoaderSettings): IgLoader = js.native
   def loader(resources: String, callback: js.Function): IgLoader = js.native
   
-  var regional: js.UndefOr[js.Any] = js.native
+  var regional: js.UndefOr[Any] = js.native
   
-  def tmpl(template: String, data: js.Any, args: js.Any*): String = js.native
+  def tmpl(template: String, data: Any, args: Any*): String = js.native
   
-  var util: js.UndefOr[js.Any] = js.native
+  var util: js.UndefOr[Any] = js.native
 }

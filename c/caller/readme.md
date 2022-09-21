@@ -10,15 +10,12 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | caller |
 | Keywords           | caller, file, require |
-| # releases         | 0 |
-| # dependents       | 154 |
-| # downloads        | 12040835 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1190023.6666666667 |
+| # stars            | 44.0 |
 
 ## Links
-- [Homepage](https://github.com/totherik/caller)
-- [Bugs](https://github.com/totherik/caller/issues)
-- [Repository](https://github.com/totherik/caller)
 - [Npm](https://www.npmjs.com/package/caller)
     
 

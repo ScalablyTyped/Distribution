@@ -13,25 +13,24 @@ object mod {
   
   @JSImport("react-notify-toast", JSImport.Default)
   @js.native
-  class default protected () extends Notification {
+  open class default protected () extends Notification {
     def this(props: NotificationProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: NotificationProps, context: js.Any) = this()
+    def this(props: NotificationProps, context: Any) = this()
   }
   
   @JSImport("react-notify-toast", "Notification")
   @js.native
-  class Notification protected ()
-    extends Component[NotificationProps, js.Any, js.Any] {
+  open class Notification protected () extends Component[NotificationProps, Any, Any] {
     def this(props: NotificationProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: NotificationProps, context: js.Any) = this()
+    def this(props: NotificationProps, context: Any) = this()
   }
   
   @JSImport("react-notify-toast", "notify")
@@ -61,7 +60,7 @@ object mod {
     
     var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var colors: js.UndefOr[js.Any] = js.undefined
+    var colors: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
     
@@ -84,7 +83,7 @@ object mod {
       
       inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      inline def setColors(value: js.Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
@@ -114,41 +113,23 @@ object mod {
     def hide(): Unit = js.native
     
     def show(text: String): Unit = js.native
+    def show(text: String, `type`: success | error | warning | custom): Unit = js.native
+    def show(text: String, `type`: success | error | warning | custom, timeout: Double): Unit = js.native
+    def show(
+      text: String,
+      `type`: success | error | warning | custom,
+      timeout: Double,
+      color: reactNotifyToastColor
+    ): Unit = js.native
+    def show(
+      text: String,
+      `type`: success | error | warning | custom,
+      timeout: Unit,
+      color: reactNotifyToastColor
+    ): Unit = js.native
     def show(text: String, `type`: Unit, timeout: Double): Unit = js.native
     def show(text: String, `type`: Unit, timeout: Double, color: reactNotifyToastColor): Unit = js.native
     def show(text: String, `type`: Unit, timeout: Unit, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_custom(text: String, `type`: custom): Unit = js.native
-    @JSName("show")
-    def show_custom(text: String, `type`: custom, timeout: Double): Unit = js.native
-    @JSName("show")
-    def show_custom(text: String, `type`: custom, timeout: Double, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_custom(text: String, `type`: custom, timeout: Unit, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_error(text: String, `type`: error): Unit = js.native
-    @JSName("show")
-    def show_error(text: String, `type`: error, timeout: Double): Unit = js.native
-    @JSName("show")
-    def show_error(text: String, `type`: error, timeout: Double, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_error(text: String, `type`: error, timeout: Unit, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_success(text: String, `type`: success): Unit = js.native
-    @JSName("show")
-    def show_success(text: String, `type`: success, timeout: Double): Unit = js.native
-    @JSName("show")
-    def show_success(text: String, `type`: success, timeout: Double, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_success(text: String, `type`: success, timeout: Unit, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_warning(text: String, `type`: warning): Unit = js.native
-    @JSName("show")
-    def show_warning(text: String, `type`: warning, timeout: Double): Unit = js.native
-    @JSName("show")
-    def show_warning(text: String, `type`: warning, timeout: Double, color: reactNotifyToastColor): Unit = js.native
-    @JSName("show")
-    def show_warning(text: String, `type`: warning, timeout: Unit, color: reactNotifyToastColor): Unit = js.native
   }
   
   trait reactNotifyToastColor extends StObject {

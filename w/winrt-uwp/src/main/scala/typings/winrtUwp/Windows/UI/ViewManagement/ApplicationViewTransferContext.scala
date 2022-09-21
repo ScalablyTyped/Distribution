@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationViewTransferContext extends StObject {
   
   /* unmapped type */
-  var viewId: js.Any
+  var viewId: Any
 }
 object ApplicationViewTransferContext {
   
-  inline def apply(viewId: js.Any): ApplicationViewTransferContext = {
+  inline def apply(viewId: Any): ApplicationViewTransferContext = {
     val __obj = js.Dynamic.literal(viewId = viewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationViewTransferContext]
   }
   
   extension [Self <: ApplicationViewTransferContext](x: Self) {
     
-    inline def setViewId(value: js.Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+    inline def setViewId(value: Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/rest" : "18.0.9"
+      "@octokit/rest" : "19.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/rest" : "18.0.9"
+      "@octokit/rest" : "19.0.4"
     }
   ],
   "compile-devDependencies" : [

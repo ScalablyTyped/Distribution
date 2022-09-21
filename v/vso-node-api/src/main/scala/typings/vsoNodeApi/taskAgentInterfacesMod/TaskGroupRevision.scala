@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait TaskGroupRevision extends StObject {
   
   var changedBy: IdentityRef
   
-  var changedDate: Date
+  var changedDate: js.Date
   
   var comment: String
   
@@ -27,7 +26,7 @@ object TaskGroupRevision {
   inline def apply(
     changeType: AuditAction,
     changedBy: IdentityRef,
-    changedDate: Date,
+    changedDate: js.Date,
     comment: String,
     fileId: Double,
     revision: Double,
@@ -43,7 +42,7 @@ object TaskGroupRevision {
     
     inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: js.Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

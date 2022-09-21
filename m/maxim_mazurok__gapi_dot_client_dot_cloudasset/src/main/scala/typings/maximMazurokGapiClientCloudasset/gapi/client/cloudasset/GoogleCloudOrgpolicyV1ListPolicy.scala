@@ -66,13 +66,13 @@ object GoogleCloudOrgpolicyV1ListPolicy {
     
     inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value*))
     
     inline def setDeniedValues(value: js.Array[String]): Self = StObject.set(x, "deniedValues", value.asInstanceOf[js.Any])
     
     inline def setDeniedValuesUndefined: Self = StObject.set(x, "deniedValues", js.undefined)
     
-    inline def setDeniedValuesVarargs(value: String*): Self = StObject.set(x, "deniedValues", js.Array(value :_*))
+    inline def setDeniedValuesVarargs(value: String*): Self = StObject.set(x, "deniedValues", js.Array(value*))
     
     inline def setInheritFromParent(value: Boolean): Self = StObject.set(x, "inheritFromParent", value.asInstanceOf[js.Any])
     

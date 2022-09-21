@@ -8,5 +8,5 @@ object getObjectAclOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/GetObjectAclOutput", "GetObjectAclOutput")
   @js.native
-  val GetObjectAclOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetObjectAclOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

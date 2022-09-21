@@ -7,11 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocateViewModelProperties
   extends StObject
      with GeolocationPositioningProperties
-     with GoToProperties
+     with GoToProperties {
+  
+  /**
+    * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) of the result graphic from the [locate()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#locate) method.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#popupEnabled)
+    */
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
+}
 object LocateViewModelProperties {
   
   inline def apply(): LocateViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocateViewModelProperties]
+  }
+  
+  extension [Self <: LocateViewModelProperties](x: Self) {
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
   }
 }

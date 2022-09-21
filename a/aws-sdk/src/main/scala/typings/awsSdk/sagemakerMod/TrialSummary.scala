@@ -9,7 +9,7 @@ trait TrialSummary extends StObject {
   /**
     * When the trial was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the trial as displayed. If DisplayName isn't specified, TrialName is displayed.
@@ -19,7 +19,7 @@ trait TrialSummary extends StObject {
   /**
     * When the trial was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial.
@@ -42,7 +42,7 @@ object TrialSummary {
   
   extension [Self <: TrialSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -50,7 +50,7 @@ object TrialSummary {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

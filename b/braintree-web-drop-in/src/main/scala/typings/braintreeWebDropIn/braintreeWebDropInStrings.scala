@@ -1,5 +1,6 @@
 package typings.braintreeWebDropIn
 
+import typings.braintreeWebDropIn.mod.ActiveView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,20 +40,56 @@ object braintreeWebDropInStrings {
   inline def Yes: Yes = "Yes".asInstanceOf[Yes]
   
   @js.native
+  sealed trait applePay
+    extends StObject
+       with ActiveView
+  inline def applePay: applePay = "applePay".asInstanceOf[applePay]
+  
+  @js.native
   sealed trait black extends StObject
   inline def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait card extends StObject
+  sealed trait card
+    extends StObject
+       with ActiveView
   inline def card: card = "card".asInstanceOf[card]
+  
+  @js.native
+  sealed trait changeActiveView extends StObject
+  inline def changeActiveView: changeActiveView = "changeActiveView".asInstanceOf[changeActiveView]
   
   @js.native
   sealed trait checkout extends StObject
   inline def checkout: checkout = "checkout".asInstanceOf[checkout]
   
   @js.native
+  sealed trait `delete-confirmation`
+    extends StObject
+       with ActiveView
+  inline def `delete-confirmation`: `delete-confirmation` = "delete-confirmation".asInstanceOf[`delete-confirmation`]
+  
+  @js.native
+  sealed trait googlePay
+    extends StObject
+       with ActiveView
+  inline def googlePay: googlePay = "googlePay".asInstanceOf[googlePay]
+  
+  @js.native
+  sealed trait methods
+    extends StObject
+       with ActiveView
+  inline def methods: methods = "methods".asInstanceOf[methods]
+  
+  @js.native
   sealed trait noPaymentMethodRequestable extends StObject
   inline def noPaymentMethodRequestable: noPaymentMethodRequestable = "noPaymentMethodRequestable".asInstanceOf[noPaymentMethodRequestable]
+  
+  @js.native
+  sealed trait options
+    extends StObject
+       with ActiveView
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
   sealed trait paymentMethodRequestable extends StObject
@@ -63,16 +100,26 @@ object braintreeWebDropInStrings {
   inline def paymentOptionSelected: paymentOptionSelected = "paymentOptionSelected".asInstanceOf[paymentOptionSelected]
   
   @js.native
-  sealed trait paypal extends StObject
+  sealed trait paypal
+    extends StObject
+       with ActiveView
   inline def paypal: paypal = "paypal".asInstanceOf[paypal]
   
   @js.native
-  sealed trait paypalCredit extends StObject
+  sealed trait paypalCredit
+    extends StObject
+       with ActiveView
   inline def paypalCredit: paypalCredit = "paypalCredit".asInstanceOf[paypalCredit]
   
   @js.native
   sealed trait vault extends StObject
   inline def vault: vault = "vault".asInstanceOf[vault]
+  
+  @js.native
+  sealed trait venmo
+    extends StObject
+       with ActiveView
+  inline def venmo: venmo = "venmo".asInstanceOf[venmo]
   
   @js.native
   sealed trait white extends StObject

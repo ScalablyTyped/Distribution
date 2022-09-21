@@ -15,7 +15,6 @@ import typings.jupyterlabServices.workspaceMod.WorkspaceManager
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoPolling.pollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,20 +26,20 @@ object libManagerMod {
   /**
     * Construct a new services provider.
     */
-  class ServiceManager ()
+  open class ServiceManager ()
     extends StObject
        with IManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _onConnectionFailure: js.Any = js.native
+    /* private */ var _onConnectionFailure: Any = js.native
     
-    /* private */ var _readyPromise: js.Any = js.native
+    /* private */ var _readyPromise: Any = js.native
     
     /**
       * The builder for the manager.
@@ -57,12 +56,12 @@ object libManagerMod {
       * A signal emitted when there is a connection failure with the server.
       */
     /* CompleteClass */
-    override val connectionFailure: ISignal[IManager, Error] = js.native
+    override val connectionFailure: ISignal[IManager, js.Error] = js.native
     /**
       * A signal emitted when there is a connection failure with the kernel.
       */
     @JSName("connectionFailure")
-    def connectionFailure_MServiceManager: ISignal[this.type, Error] = js.native
+    def connectionFailure_MServiceManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * The contents manager for the manager.
@@ -214,7 +213,7 @@ object libManagerMod {
       /**
         * A signal emitted when there is a connection failure with the server.
         */
-      val connectionFailure: ISignal[IManager, Error]
+      val connectionFailure: ISignal[IManager, js.Error]
       
       /**
         * The contents manager for the manager.
@@ -270,7 +269,7 @@ object libManagerMod {
       
       inline def apply(
         builder: typings.jupyterlabServices.builderMod.Builder.IManager,
-        connectionFailure: ISignal[IManager, Error],
+        connectionFailure: ISignal[IManager, js.Error],
         contents: typings.jupyterlabServices.contentsMod.Contents.IManager,
         dispose: () => Unit,
         isDisposed: Boolean,
@@ -292,7 +291,7 @@ object libManagerMod {
         
         inline def setBuilder(value: typings.jupyterlabServices.builderMod.Builder.IManager): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
         
-        inline def setConnectionFailure(value: ISignal[IManager, Error]): Self = StObject.set(x, "connectionFailure", value.asInstanceOf[js.Any])
+        inline def setConnectionFailure(value: ISignal[IManager, js.Error]): Self = StObject.set(x, "connectionFailure", value.asInstanceOf[js.Any])
         
         inline def setContents(value: typings.jupyterlabServices.contentsMod.Contents.IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         

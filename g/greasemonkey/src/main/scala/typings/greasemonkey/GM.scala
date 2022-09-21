@@ -21,6 +21,7 @@ import typings.greasemonkey.greasemonkeyStrings.end
 import typings.greasemonkey.greasemonkeyStrings.idle
 import typings.greasemonkey.greasemonkeyStrings.start
 import typings.std.Document
+import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ object GM {
       lengthComputable: Boolean,
       loaded: Double,
       readyState: `1` | `2` | `3` | `4`,
-      response: js.Any,
+      response: Any,
       responseHeaders: String,
       responseText: String,
       responseXML: Document | `false`,
@@ -121,6 +122,9 @@ object GM {
     
     /** Password to use for authentication purposes */
     var password: js.UndefOr[String] = js.undefined
+    
+    /** Decode the response as specified type. Default value is "text" */
+    var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.undefined
     
     /**
       * When `true`, this is a synchronous request.
@@ -211,6 +215,10 @@ object GM {
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
+      inline def setResponseType(value: XMLHttpRequestResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      
       inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
       
       inline def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
@@ -240,7 +248,7 @@ object GM {
     
     val readyState: `1` | `2` | `3` | `4`
     
-    val response: js.Any
+    val response: Any
     
     val responseHeaders: String
     
@@ -257,7 +265,7 @@ object GM {
     inline def apply[TContext](
       finalUrl: String,
       readyState: `1` | `2` | `3` | `4`,
-      response: js.Any,
+      response: Any,
       responseHeaders: String,
       responseText: String,
       responseXML: Document | `false`,
@@ -278,7 +286,7 @@ object GM {
       
       inline def setReadyState(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
@@ -294,6 +302,7 @@ object GM {
   
   trait ScriptInfo extends StObject {
     
+    /** Possibly empty string. */
     var description: String
     
     var excludes: js.Array[String]
@@ -304,7 +313,8 @@ object GM {
     
     var name: String
     
-    var namespace: js.UndefOr[String] = js.undefined
+    /** Possibly empty string. */
+    var namespace: String
     
     /**
       * An object keyed by resource name.
@@ -318,6 +328,7 @@ object GM {
     
     var uuid: String
     
+    /** Possibly empty string. */
     var version: String
   }
   object ScriptInfo {
@@ -328,12 +339,13 @@ object GM {
       includes: js.Array[String],
       matches: js.Array[String],
       name: String,
+      namespace: String,
       resources: StringDictionary[Mimetype],
       runAt: start | end | idle,
       uuid: String,
       version: String
     ): ScriptInfo = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], excludes = excludes.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], excludes = excludes.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptInfo]
     }
     
@@ -343,21 +355,19 @@ object GM {
       
       inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       
-      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
       
       inline def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
       
-      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
+      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
       
       inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
-      
-      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
       inline def setResources(value: StringDictionary[Mimetype]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       

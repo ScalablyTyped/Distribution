@@ -12,7 +12,7 @@ object endShaderLibMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/EndShaderLib", "EndShaderLib")
   @js.native
-  class EndShaderLib () extends EngineShaderLib {
+  open class EndShaderLib () extends EngineShaderLib {
     
     def sendShaderVariables(program: Program, cmd: QuadCommand, material: EngineMaterial): Unit = js.native
   }

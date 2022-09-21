@@ -9,41 +9,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotFieldData extends StObject {
   
   /**
+    * ID of the PivotField.
     *
-    * Id of the PivotField.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns the PivotItems associated with the PivotField.
     *
-    * Returns the PivotFields associated with the PivotField.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var items: js.UndefOr[js.Array[PivotItemData]] = js.undefined
   
   /**
-    *
     * Name of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Determines whether to show all items of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAllItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Subtotals of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var subtotals: js.UndefOr[Subtotals] = js.undefined
@@ -65,7 +65,7 @@ object PivotFieldData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PivotItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PivotItemData*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

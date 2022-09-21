@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnalyticsConfigurationType extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of an Amazon Pinpoint project. You can use the Amazon Pinpoint project for Pinpoint integration with the chosen User Pool Client. Amazon Cognito publishes events to the pinpoint project declared by the app ARN.
+    * The Amazon Resource Name (ARN) of an Amazon Pinpoint project. You can use the Amazon Pinpoint project to integrate with the chosen user pool Client. Amazon Cognito publishes events to the Amazon Pinpoint project that the app ARN declares.
     */
   var ApplicationArn: js.UndefOr[ArnType] = js.undefined
   
@@ -22,12 +22,12 @@ trait AnalyticsConfigurationType extends StObject {
   var ExternalId: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
+    * The ARN of an Identity and Access Management role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
     */
   var RoleArn: js.UndefOr[ArnType] = js.undefined
   
   /**
-    * If UserDataShared is true, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
+    * If UserDataShared is true, Amazon Cognito includes user data in the events that it publishes to Amazon Pinpoint analytics.
     */
   var UserDataShared: js.UndefOr[BooleanType] = js.undefined
 }

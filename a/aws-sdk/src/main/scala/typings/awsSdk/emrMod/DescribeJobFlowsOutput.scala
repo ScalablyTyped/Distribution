@@ -24,6 +24,6 @@ object DescribeJobFlowsOutput {
     
     inline def setJobFlowsUndefined: Self = StObject.set(x, "JobFlows", js.undefined)
     
-    inline def setJobFlowsVarargs(value: JobFlowDetail*): Self = StObject.set(x, "JobFlows", js.Array(value :_*))
+    inline def setJobFlowsVarargs(value: JobFlowDetail*): Self = StObject.set(x, "JobFlows", js.Array(value*))
   }
 }

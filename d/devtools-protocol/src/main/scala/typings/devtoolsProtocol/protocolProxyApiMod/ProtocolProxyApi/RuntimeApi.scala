@@ -23,6 +23,8 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.ExceptionRevokedEvent
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExceptionThrownEvent
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextDestroyedEvent
+import typings.devtoolsProtocol.mod.Protocol.Runtime.GetExceptionDetailsRequest
+import typings.devtoolsProtocol.mod.Protocol.Runtime.GetExceptionDetailsResponse
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GetHeapUsageResponse
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GetIsolateIdResponse
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GetPropertiesRequest
@@ -51,8 +53,6 @@ trait RuntimeApi extends StObject {
     * If executionContextId is empty, adds binding with the given name on the
     * global objects of all inspected contexts, including those created later,
     * bindings survive reloads.
-    * If executionContextId is specified, adds binding only on global object of
-    * given execution context.
     * Binding function takes exactly one argument, this argument should be string,
     * in case of any other input, function throws an exception.
     * Each binding function call produces Runtime.bindingCalled notification.
@@ -96,6 +96,15 @@ trait RuntimeApi extends StObject {
     * Evaluates expression on global object.
     */
   def evaluate(params: EvaluateRequest): js.Promise[EvaluateResponse] = js.native
+  
+  /**
+    * This method tries to lookup and populate exception details for a
+    * JavaScript Error object.
+    * Note that the stackTrace portion of the resulting exceptionDetails will
+    * only be populated if the Runtime domain was enabled at the time when the
+    * Error was thrown.
+    */
+  def getExceptionDetails(params: GetExceptionDetailsRequest): js.Promise[GetExceptionDetailsResponse] = js.native
   
   /**
     * Returns the JavaScript heap usage.

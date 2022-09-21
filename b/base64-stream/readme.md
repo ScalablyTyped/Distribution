@@ -10,15 +10,12 @@ Contains new Node.js v0.10 style stream classes for encoding / decoding Base64 d
 | ------------------ | :-------------: |
 | Full name          | base64-stream |
 | Keywords           | Base64, stream, streaming, piping, node, node.js, encode, decode |
-| # releases         | 0 |
-| # dependents       | 94 |
-| # downloads        | 3082801 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 598235.0 |
+| # stars            | 106.0 |
 
 ## Links
-- [Homepage](https://github.com/mazira/base64-stream#readme)
-- [Bugs](https://github.com/mazira/base64-stream/issues)
-- [Repository](https://github.com/mazira/base64-stream)
 - [Npm](https://www.npmjs.com/package/base64-stream)
     
 

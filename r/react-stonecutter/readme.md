@@ -10,10 +10,10 @@ Animated grid layout component for React
 | ------------------ | :-------------: |
 | Full name          | react-stonecutter |
 | Keywords           | react, react-component, grid |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 101608 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5905.0 |
+| # stars            | 1152.0 |
 
 ## Links
 - [Homepage](https://github.com/dantrain/react-stonecutter#readme)

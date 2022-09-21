@@ -32,12 +32,12 @@ object TopLevelDomainOptions {
     
     inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value*))
     
     inline def setDeny(value: Set[String] | js.Array[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     
     inline def setDenyUndefined: Self = StObject.set(x, "deny", js.undefined)
     
-    inline def setDenyVarargs(value: String*): Self = StObject.set(x, "deny", js.Array(value :_*))
+    inline def setDenyVarargs(value: String*): Self = StObject.set(x, "deny", js.Array(value*))
   }
 }

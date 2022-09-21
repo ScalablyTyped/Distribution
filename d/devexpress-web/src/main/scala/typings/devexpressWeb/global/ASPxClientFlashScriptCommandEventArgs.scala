@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFlashScriptCommandEventArgs")
 @js.native
-class ASPxClientFlashScriptCommandEventArgs protected ()
+open class ASPxClientFlashScriptCommandEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFlashScriptCommandEventArgs {
   /**

@@ -25,7 +25,7 @@ object DataSourceRefreshMonthlySchedule {
     
     inline def setDaysOfMonthUndefined: Self = StObject.set(x, "daysOfMonth", js.undefined)
     
-    inline def setDaysOfMonthVarargs(value: Double*): Self = StObject.set(x, "daysOfMonth", js.Array(value :_*))
+    inline def setDaysOfMonthVarargs(value: Double*): Self = StObject.set(x, "daysOfMonth", js.Array(value*))
     
     inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

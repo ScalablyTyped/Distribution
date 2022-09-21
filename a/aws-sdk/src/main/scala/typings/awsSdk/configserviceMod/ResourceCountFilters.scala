@@ -17,7 +17,7 @@ trait ResourceCountFilters extends StObject {
   var Region: js.UndefOr[AwsRegion] = js.undefined
   
   /**
-    * The type of the AWS resource.
+    * The type of the Amazon Web Services resource.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.configserviceMod.ResourceType] = js.undefined
 }

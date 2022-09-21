@@ -2,6 +2,8 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.intercomClient.intercomClientStrings.contact
+import typings.intercomClient.intercomClientStrings.lead
+import typings.intercomClient.intercomClientStrings.user
 import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
 import org.scalablytyped.runtime.StObject
@@ -17,7 +19,7 @@ trait PartialLead extends StObject {
   
   var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var custom_attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var email: js.UndefOr[String | Null] = js.undefined
   
@@ -34,6 +36,8 @@ trait PartialLead extends StObject {
   var phone: js.UndefOr[String | Null] = js.undefined
   
   var referrer: js.UndefOr[String | Null] = js.undefined
+  
+  var role: js.UndefOr[user | lead] = js.undefined
   
   var segments: js.UndefOr[Segments] = js.undefined
   
@@ -72,7 +76,7 @@ object PartialLead {
     
     inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+    inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
@@ -119,6 +123,10 @@ object PartialLead {
     inline def setReferrerNull: Self = StObject.set(x, "referrer", null)
     
     inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    
+    inline def setRole(value: user | lead): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setSegments(value: Segments): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     

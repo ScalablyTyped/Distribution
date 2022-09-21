@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.KeyboardAvoidingView
-import typings.reactNative.mod.ListViewProps
 import typings.reactNative.mod.ModalProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -21,10 +20,10 @@ object mod {
   
   @JSImport("react-native-modal-filter-picker", JSImport.Default)
   @js.native
-  class default[T /* <: ModalFilterPickerOption */] ()
-    extends Component[ModalFilterPickerProps[T], js.Object, js.Any]
+  open class default[T /* <: ModalFilterPickerOption */] ()
+    extends Component[ModalFilterPickerProps[T], js.Object, Any]
   
-  type ModalFilterPicker[T /* <: ModalFilterPickerOption */] = Component[ModalFilterPickerProps[T], js.Object, js.Any]
+  type ModalFilterPicker[T /* <: ModalFilterPickerOption */] = Component[ModalFilterPickerProps[T], js.Object, Any]
   
   trait ModalFilterPickerOption extends StObject {
     
@@ -65,11 +64,11 @@ object mod {
     
     var filterTextInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
+    var flatListProps: js.UndefOr[Partial[FlatListProps[T]]] = js.undefined
+    
     var keyboardShouldPersistTaps: js.UndefOr[never | always | handle] = js.undefined
     
     var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-    
-    var listViewProps: js.UndefOr[Partial[ListViewProps | FlatListProps[T]]] = js.undefined
     
     var modal: js.UndefOr[ModalProps] = js.undefined
     
@@ -159,6 +158,10 @@ object mod {
       
       inline def setFilterTextInputStyleUndefined: Self = StObject.set(x, "filterTextInputStyle", js.undefined)
       
+      inline def setFlatListProps(value: Partial[FlatListProps[T]]): Self = StObject.set(x, "flatListProps", value.asInstanceOf[js.Any])
+      
+      inline def setFlatListPropsUndefined: Self = StObject.set(x, "flatListProps", js.undefined)
+      
       inline def setKeyboardShouldPersistTaps(value: never | always | handle): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
       
       inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
@@ -168,10 +171,6 @@ object mod {
       inline def setListContainerStyleNull: Self = StObject.set(x, "listContainerStyle", null)
       
       inline def setListContainerStyleUndefined: Self = StObject.set(x, "listContainerStyle", js.undefined)
-      
-      inline def setListViewProps(value: Partial[ListViewProps | FlatListProps[T]]): Self = StObject.set(x, "listViewProps", value.asInstanceOf[js.Any])
-      
-      inline def setListViewPropsUndefined: Self = StObject.set(x, "listViewProps", js.undefined)
       
       inline def setModal(value: ModalProps): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
@@ -193,7 +192,7 @@ object mod {
       
       inline def setOptions(value: js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setOverlayStyle(value: StyleProp[KeyboardAvoidingView | ViewStyle]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       

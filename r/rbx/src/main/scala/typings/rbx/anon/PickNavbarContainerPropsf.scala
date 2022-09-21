@@ -131,7 +131,7 @@ trait PickNavbarContainerPropsf extends StObject {
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[js.Any]
+    */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[Any]
   ] = js.undefined
   
   var transparent: js.UndefOr[Boolean] = js.undefined
@@ -298,7 +298,7 @@ object PickNavbarContainerPropsf {
     inline def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

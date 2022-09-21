@@ -4,70 +4,75 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsSelect.anon.Fill
 import typings.blueprintjsSelect.anon.PartialIPopoverProps
-import typings.blueprintjsSelect.anon.PartialITagInputProps
-import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
+import typings.blueprintjsSelect.anon.PartialTagInputProps
+import typings.blueprintjsSelect.listItemsPropsMod.ListItemsProps
+import typings.blueprintjsSelect.queryListMod.QueryList
 import typings.react.mod.ReactNode
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiSelectMod {
   
-  @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect")
+  @JSImport("@blueprintjs/select/lib/esm/components/multi-select/multiSelect", "MultiSelect")
   @js.native
-  class MultiSelect[T] protected ()
-    extends AbstractPureComponent2[IMultiSelectProps[T], IMultiSelectState, js.Object] {
-    def this(props: IMultiSelectProps[T]) = this()
-    def this(props: IMultiSelectProps[T], context: js.Any) = this()
+  open class MultiSelect[T] protected ()
+    extends AbstractPureComponent2[MultiSelectProps[T], IMultiSelectState, js.Object] {
+    def this(props: MultiSelectProps[T]) = this()
+    def this(props: MultiSelectProps[T], context: Any) = this()
     
-    /* private */ var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: Any = js.native
     
-    /* private */ var getTagInputKeyDownHandler: js.Any = js.native
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MMultiSelect(prevProps: MultiSelectProps[T]): Unit = js.native
     
-    /* private */ var getTagInputKeyUpHandler: js.Any = js.native
+    /* private */ var getTagInputKeyDownHandler: Any = js.native
     
-    /* private */ var handleItemSelect: js.Any = js.native
+    /* private */ var getTagInputKeyUpHandler: Any = js.native
     
-    /* private */ var handlePopoverInteraction: js.Any = js.native
+    /* private */ var handleItemSelect: Any = js.native
     
-    /* private */ var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverInteraction: Any = js.native
     
-    /* private */ var handleQueryChange: js.Any = js.native
+    /* private */ var handlePopoverOpened: Any = js.native
     
-    /* private */ var handleTagRemove: js.Any = js.native
+    /* private */ var handleQueryChange: Any = js.native
     
-    /* private */ var input: js.Any = js.native
+    /* private */ var handleTagRemove: Any = js.native
     
-    /* private */ var queryList: js.Any = js.native
+    var input: HTMLInputElement | Null = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    var queryList: QueryList[T] | Null = js.native
     
-    /* private */ var renderQueryList: js.Any = js.native
+    /* private */ var refHandlers: Any = js.native
+    
+    /* private */ var renderQueryList: Any = js.native
   }
   /* static members */
   object MultiSelect {
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect")
+    @JSImport("@blueprintjs/select/lib/esm/components/multi-select/multiSelect", "MultiSelect")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect.defaultProps")
+    @JSImport("@blueprintjs/select/lib/esm/components/multi-select/multiSelect", "MultiSelect.defaultProps")
     @js.native
     def defaultProps: Fill = js.native
     inline def defaultProps_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect.displayName")
+    @JSImport("@blueprintjs/select/lib/esm/components/multi-select/multiSelect", "MultiSelect.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ MultiSelectProps[U], MultiSelect[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ MultiSelectProps[U], MultiSelect[U]]]
   }
   
   @js.native
   trait IMultiSelectProps[T]
     extends StObject
-       with IListItemsProps[T] {
+       with ListItemsProps[T] {
     
     /**
       * Whether the component should take up the full width of its container.
@@ -101,6 +106,7 @@ object multiSelectMod {
     
     /**
       * Input placeholder text. Shorthand for `tagInputProps.placeholder`.
+      *
       * @default "Search..."
       */
     var placeholder: js.UndefOr[String] = js.native
@@ -112,7 +118,7 @@ object multiSelectMod {
     var selectedItems: js.UndefOr[js.Array[T]] = js.native
     
     /** Props to spread to `TagInput`. Use `query` and `onQueryChange` to control the input. */
-    var tagInputProps: js.UndefOr[PartialITagInputProps & js.Object] = js.native
+    var tagInputProps: js.UndefOr[PartialTagInputProps & js.Object] = js.native
     
     /** Custom renderer to transform an item into tag content. */
     def tagRenderer(item: T): ReactNode = js.native
@@ -134,4 +140,6 @@ object multiSelectMod {
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MultiSelectProps[T] = IMultiSelectProps[T]
 }

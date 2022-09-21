@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.anon.SelectedIndex
+import typings.officeUiFabricReact.swatchColorPickerBaseMod.ISwatchColorPickerState
 import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "SwatchColorPickerBase")
 @js.native
-class SwatchColorPickerBase protected ()
+open class SwatchColorPickerBase protected ()
   extends typings.officeUiFabricReact.libSwatchColorPickerMod.SwatchColorPickerBase {
   def this(props: ISwatchColorPickerProps) = this()
 }
@@ -22,4 +24,6 @@ object SwatchColorPickerBase {
   @js.native
   def defaultProps: ISwatchColorPickerProps = js.native
   inline def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  inline def getDerivedStateFromProps(newProps: ISwatchColorPickerProps, state: ISwatchColorPickerState): SelectedIndex | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SelectedIndex | Null]
 }

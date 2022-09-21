@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetVocabularyFilterRequest extends StObject {
   
   /**
-    * The name of the vocabulary filter for which to return information.
+    * The name of the custom vocabulary filter you want information about. Vocabulary filter names are case sensitive.
     */
   var VocabularyFilterName: typings.awsSdk.transcribeserviceMod.VocabularyFilterName
 }

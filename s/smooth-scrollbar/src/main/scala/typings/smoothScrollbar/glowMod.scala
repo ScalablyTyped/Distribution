@@ -11,24 +11,24 @@ object glowMod {
   
   @JSImport("smooth-scrollbar/plugins/overscroll/glow", "Glow")
   @js.native
-  class Glow protected () extends StObject {
+  open class Glow protected () extends StObject {
     def this(_scrollbar: default) = this()
     
-    /* private */ var _canvas: js.Any = js.native
+    /* private */ var _canvas: Any = js.native
     
-    /* private */ var _ctx: js.Any = js.native
+    /* private */ var _ctx: Any = js.native
     
-    /* private */ var _getMaxOverscroll: js.Any = js.native
+    /* private */ var _getMaxOverscroll: Any = js.native
     
-    /* private */ var _renderX: js.Any = js.native
+    /* private */ var _renderX: Any = js.native
     
-    /* private */ var _renderY: js.Any = js.native
+    /* private */ var _renderY: Any = js.native
     
-    /* private */ var _scrollbar: js.Any = js.native
+    /* private */ var _scrollbar: Any = js.native
     
-    /* private */ var _touchX: js.Any = js.native
+    /* private */ var _touchX: Any = js.native
     
-    /* private */ var _touchY: js.Any = js.native
+    /* private */ var _touchY: Any = js.native
     
     def adjust(): Unit = js.native
     

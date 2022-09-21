@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditApi")
 @js.native
-class ASPxClientCardViewBatchEditApi ()
+open class ASPxClientCardViewBatchEditApi ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditApi

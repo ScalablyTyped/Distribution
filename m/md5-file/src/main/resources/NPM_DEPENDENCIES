@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "md5-file" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "md5-file" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,5 +8,5 @@ object putBucketInventoryConfigurationOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutBucketInventoryConfigurationOutput", "PutBucketInventoryConfigurationOutput")
   @js.native
-  val PutBucketInventoryConfigurationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketInventoryConfigurationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

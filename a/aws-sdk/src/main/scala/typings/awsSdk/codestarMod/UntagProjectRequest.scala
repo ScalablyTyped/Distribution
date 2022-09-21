@@ -29,6 +29,6 @@ object UntagProjectRequest {
     
     inline def setTags(value: TagKeys): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: TagKey*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagKey*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

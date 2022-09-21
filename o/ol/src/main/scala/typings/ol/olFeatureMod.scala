@@ -1,7 +1,10 @@
 package typings.ol
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.eventsMod.EventsKey
+import typings.ol.geometryTypeMod.GeometryType
 import typings.ol.objectMod.ObjectEvent
 import typings.ol.olStrings.changeColongeometry
 import typings.ol.styleStyleMod.StyleFunction
@@ -18,9 +21,9 @@ object olFeatureMod {
   
   @JSImport("ol/Feature", JSImport.Default)
   @js.native
-  class default[GeomType /* <: typings.ol.geometryMod.default */] () extends Feature[GeomType] {
+  open class default[GeomType /* <: typings.ol.geometryMod.default */] () extends Feature[GeomType] {
     def this(opt_geometryOrProperties: GeomType) = this()
-    def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
+    def this(opt_geometryOrProperties: StringDictionary[Any]) = this()
   }
   
   inline def createStyleFunction(obj: js.Array[typings.ol.styleStyleMod.default]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
@@ -105,7 +108,19 @@ object olFeatureMod {
     def un_changegeometry(`type`: changeColongeometry, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   }
   
-  type FeatureClass = Feature[typings.ol.geometryMod.default] | typings.ol.renderFeatureMod.default
+  type FeatureClass = (Instantiable1[
+    /* opt_geometryOrProperties */ js.UndefOr[
+      (/* import warning: RewrittenClass.unapply cls was tparam GeomType */ Any) | StringDictionary[Any]
+    ], 
+    Feature[typings.ol.geometryMod.default]
+  ]) | (Instantiable5[
+    /* type */ GeometryType, 
+    /* flatCoordinates */ js.Array[Double], 
+    /* ends */ js.Array[js.Array[Double] | Double], 
+    /* properties */ StringDictionary[Any], 
+    /* id */ js.UndefOr[Double | String], 
+    typings.ol.renderFeatureMod.default
+  ])
   
   type FeatureLike = Feature[typings.ol.geometryMod.default] | typings.ol.renderFeatureMod.default
 }

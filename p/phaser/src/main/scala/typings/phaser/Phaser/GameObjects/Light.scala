@@ -1,5 +1,10 @@
 package typings.phaser.Phaser.GameObjects
 
+import typings.phaser.Phaser.Cameras.Scene2D.Camera
+import typings.phaser.Phaser.Display.RGB
+import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
+import typings.phaser.Phaser.GameObjects.Components.Visible
+import typings.phaser.Phaser.Geom.Circle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,157 +14,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * These are typically created by a {@link Phaser.GameObjects.LightsManager}, available from within a scene via `this.lights`.
   * 
-  * Any Game Objects using the Light2D pipeline will then be affected by these Lights.
+  * Any Game Objects using the Light2D pipeline will then be affected by these Lights as long as they have a normal map.
   * 
   * They can also simply be used to represent a point light for your own purposes.
   */
-trait Light extends StObject {
+@js.native
+trait Light
+  extends StObject
+     with Circle
+     with ScrollFactor
+     with Visible {
   
   /**
-    * The blue color of the light. A value between 0 and 1.
+    * The color of the light.
     */
-  var b: Double
-  
-  /**
-    * The green color of the light. A value between 0 and 1.
-    */
-  var g: Double
+  var color: RGB = js.native
   
   /**
     * The intensity of the light.
     */
-  var intensity: Double
-  
-  /**
-    * The red color of the light. A value between 0 and 1.
-    */
-  var r: Double
-  
-  /**
-    * The radius of the light.
-    */
-  var radius: Double
-  
-  /**
-    * The horizontal scroll factor of the light.
-    */
-  var scrollFactorX: Double
-  
-  /**
-    * The vertical scroll factor of the light.
-    */
-  var scrollFactorY: Double
-  
-  /**
-    * Set the properties of the light.
-    * 
-    * Sets both horizontal and vertical scroll factor to 1. Use {@link Phaser.GameObjects.Light#setScrollFactor} to set
-    * the scroll factor.
-    * @param x The horizontal position of the light.
-    * @param y The vertical position of the light.
-    * @param radius The radius of the light.
-    * @param r The red color. A value between 0 and 1.
-    * @param g The green color. A value between 0 and 1.
-    * @param b The blue color. A value between 0 and 1.
-    * @param intensity The intensity of the light.
-    */
-  def set(x: Double, y: Double, radius: Double, r: Double, g: Double, b: Double, intensity: Double): this.type
+  var intensity: Double = js.native
   
   /**
     * Set the color of the light from a single integer RGB value.
     * @param rgb The integer RGB color of the light.
     */
-  def setColor(rgb: Double): this.type
+  def setColor(rgb: Double): this.type = js.native
   
   /**
     * Set the intensity of the light.
     * @param intensity The intensity of the light.
     */
-  def setIntensity(intensity: Double): this.type
-  
-  /**
-    * Set the position of the light.
-    * @param x The horizontal position of the light.
-    * @param y The vertical position of the light.
-    */
-  def setPosition(x: Double, y: Double): this.type
+  def setIntensity(intensity: Double): this.type = js.native
   
   /**
     * Set the radius of the light.
     * @param radius The radius of the light.
     */
-  def setRadius(radius: Double): this.type
+  def setRadius(radius: Double): this.type = js.native
   
   /**
-    * Set the scroll factor of the light.
-    * @param x The horizontal scroll factor of the light.
-    * @param y The vertical scroll factor of the light.
+    * Compares the renderMask with the renderFlags to see if this Game Object will render or not.
+    * Also checks the Game Object against the given Cameras exclusion list.
+    * @param camera The Camera to check against this Game Object.
     */
-  def setScrollFactor(x: Double, y: Double): this.type
-  
-  /**
-    * The horizontal position of the light.
-    */
-  var x: Double
-  
-  /**
-    * The vertical position of the light.
-    */
-  var y: Double
-}
-object Light {
-  
-  inline def apply(
-    b: Double,
-    g: Double,
-    intensity: Double,
-    r: Double,
-    radius: Double,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    set: (Double, Double, Double, Double, Double, Double, Double) => Light,
-    setColor: Double => Light,
-    setIntensity: Double => Light,
-    setPosition: (Double, Double) => Light,
-    setRadius: Double => Light,
-    setScrollFactor: (Double, Double) => Light,
-    x: Double,
-    y: Double
-  ): Light = {
-    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], intensity = intensity.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], scrollFactorX = scrollFactorX.asInstanceOf[js.Any], scrollFactorY = scrollFactorY.asInstanceOf[js.Any], set = js.Any.fromFunction7(set), setColor = js.Any.fromFunction1(setColor), setIntensity = js.Any.fromFunction1(setIntensity), setPosition = js.Any.fromFunction2(setPosition), setRadius = js.Any.fromFunction1(setRadius), setScrollFactor = js.Any.fromFunction2(setScrollFactor), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Light]
-  }
-  
-  extension [Self <: Light](x: Self) {
-    
-    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
-    
-    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
-    
-    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
-    
-    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
-    
-    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
-    
-    inline def setScrollFactorX(value: Double): Self = StObject.set(x, "scrollFactorX", value.asInstanceOf[js.Any])
-    
-    inline def setScrollFactorY(value: Double): Self = StObject.set(x, "scrollFactorY", value.asInstanceOf[js.Any])
-    
-    inline def setSet(value: (Double, Double, Double, Double, Double, Double, Double) => Light): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
-    
-    inline def setSetColor(value: Double => Light): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
-    
-    inline def setSetIntensity(value: Double => Light): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
-    
-    inline def setSetPosition(value: (Double, Double) => Light): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
-    
-    inline def setSetRadius(value: Double => Light): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
-    
-    inline def setSetScrollFactor(value: (Double, Double) => Light): Self = StObject.set(x, "setScrollFactor", js.Any.fromFunction2(value))
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-  }
+  def willRender(camera: Camera): Boolean = js.native
 }

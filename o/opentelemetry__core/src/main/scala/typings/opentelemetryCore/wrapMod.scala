@@ -10,5 +10,5 @@ object wrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isWrapped(func: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWrapped(func: Any): /* is @opentelemetry/core.@opentelemetry/core/build/src/common/types.ShimWrapped */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(func.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/core.@opentelemetry/core/build/src/common/types.ShimWrapped */ Boolean]
 }

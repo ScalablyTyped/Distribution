@@ -105,5 +105,5 @@ trait ConditionalFormatRuleBuilder extends StObject {
   
   def whenTextStartsWith(text: String): ConditionalFormatRuleBuilder = js.native
   
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Any]): ConditionalFormatRuleBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[Any]): ConditionalFormatRuleBuilder = js.native
 }

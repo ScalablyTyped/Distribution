@@ -19,6 +19,9 @@ trait SupportsTeamDrives extends StObject {
   /** The ID of the file. */
   var fileId: String
   
+  /** A comma-separated list of IDs of labels to include in the labelInfo part of the response. */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
   var includePermissionsForView: js.UndefOr[String] = js.undefined
   
@@ -68,6 +71,10 @@ object SupportsTeamDrives {
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     

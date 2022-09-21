@@ -10,10 +10,10 @@ HTTP Request snippet generator for *most* languages
 | ------------------ | :-------------: |
 | Full name          | httpsnippet |
 | Keywords           | api, clojure, csharp, curl, go, har, http, httpie, httr, java, javascript, jquery, kotlin, objc, objective-c, ocaml, php, python, request, requests, ruby, shell, snippet, swift, swift, unirest, xhr, xmlhttprequest |
-| # releases         | 9 |
-| # dependents       | 19 |
-| # downloads        | 449785 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 149316.33333333334 |
+| # stars            | 869.0 |
 
 ## Links
 - [Homepage](https://github.com/Mashape/httpsnippet)

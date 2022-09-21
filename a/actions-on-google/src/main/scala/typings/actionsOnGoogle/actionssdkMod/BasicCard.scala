@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "BasicCard")
 @js.native
-class BasicCard protected ()
+open class BasicCard protected ()
   extends typings.actionsOnGoogle.conversationMod.BasicCard
      with _IncomingMessage {
   /** @public */

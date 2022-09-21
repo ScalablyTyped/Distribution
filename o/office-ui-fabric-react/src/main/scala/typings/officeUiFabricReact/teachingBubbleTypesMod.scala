@@ -117,7 +117,7 @@ object teachingBubbleTypesMod {
     /**
       * Callback when the TeachingBubble tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * The Primary interaction button
@@ -214,7 +214,7 @@ object teachingBubbleTypesMod {
       
       inline def setIsWideUndefined: Self = StObject.set(x, "isWide", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
@@ -437,20 +437,20 @@ object teachingBubbleTypesMod {
   trait ITeachingBubbleSubComponentStyles extends StObject {
     
     /** Refers to the callout that hosts the TeachingBubble. */
-    var callout: IStyleFunctionOrObject[js.Any, js.Any]
+    var callout: IStyleFunctionOrObject[Any, Any]
   }
   object ITeachingBubbleSubComponentStyles {
     
-    inline def apply(callout: IStyleFunctionOrObject[js.Any, js.Any]): ITeachingBubbleSubComponentStyles = {
+    inline def apply(callout: IStyleFunctionOrObject[Any, Any]): ITeachingBubbleSubComponentStyles = {
       val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITeachingBubbleSubComponentStyles]
     }
     
     extension [Self <: ITeachingBubbleSubComponentStyles](x: Self) {
       
-      inline def setCallout(value: IStyleFunctionOrObject[js.Any, js.Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      inline def setCallout(value: IStyleFunctionOrObject[Any, Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
-      inline def setCalloutFunction1(value: js.Any => DeepPartial[js.Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
+      inline def setCalloutFunction1(value: Any => DeepPartial[Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
     }
   }
 }

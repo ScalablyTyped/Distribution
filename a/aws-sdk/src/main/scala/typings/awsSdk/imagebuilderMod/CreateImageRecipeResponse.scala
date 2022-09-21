@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateImageRecipeResponse extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the image recipe that was created by this request. 
+    * The Amazon Resource Name (ARN) of the image recipe that was created by this request.
     */
   var imageRecipeArn: js.UndefOr[ImageRecipeArn] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

@@ -10,10 +10,10 @@ A Karma plugin. Launcher for Chrome and Chrome Canary.
 | ------------------ | :-------------: |
 | Full name          | karma-chrome-launcher |
 | Keywords           | karma-plugin, karma-launcher, chrome |
-| # releases         | 3 |
-| # dependents       | 540 |
-| # downloads        | 76137209 |
-| # stars            | 23 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8929743.666666666 |
+| # stars            | 459.0 |
 
 ## Links
 - [Homepage](https://github.com/karma-runner/karma-chrome-launcher#readme)

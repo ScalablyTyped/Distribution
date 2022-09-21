@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Sleeping")
 @js.native
-class Sleeping ()
+open class Sleeping ()
   extends StObject
      with typings.phaser.MatterJS.Sleeping
 object Sleeping {

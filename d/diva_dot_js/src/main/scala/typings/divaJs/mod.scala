@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("diva.js", JSImport.Default)
   @js.native
-  class default protected () extends Diva {
+  open class default protected () extends Diva {
     // HashParamState;
     /**
       * @param element - The ID of an HTMLElement to attach an instance of Diva to.
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("diva.js", "Diva")
   @js.native
-  class Diva protected () extends StObject {
+  open class Diva protected () extends StObject {
     // HashParamState;
     /**
       * @param element - The ID of an HTMLElement to attach an instance of Diva to.
@@ -321,7 +321,7 @@ object mod {
       */
     def hasOtherImages(pageIndex: Double): Boolean = js.native
     
-    var hashState: js.Any = js.native
+    var hashState: Any = js.native
     
     /**
       * Hides the pages that are marked "non-paged" in the IIIF manifest.
@@ -467,16 +467,16 @@ object mod {
   
   @JSImport("diva.js", "DivaEvent")
   @js.native
-  class DivaEvent () extends StObject {
+  open class DivaEvent () extends StObject {
     
     def publish(topic: String, args: js.Object): Unit = js.native
     def publish(topic: String, args: js.Object, scope: js.Object): Unit = js.native
     
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Array[js.Any] = js.native
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit], instanceID: String): js.Array[js.Any] = js.native
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ Any, Unit]): js.Array[Any] = js.native
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ Any, Unit], instanceID: String): js.Array[Any] = js.native
     
-    def unsubscribe(handle: js.Array[js.Any]): Boolean = js.native
-    def unsubscribe(handle: js.Array[js.Any], completely: Boolean): Boolean = js.native
+    def unsubscribe(handle: js.Array[Any]): Boolean = js.native
+    def unsubscribe(handle: js.Array[Any], completely: Boolean): Boolean = js.native
     
     def unsubscribeAll(instanceID: String): Unit = js.native
   }

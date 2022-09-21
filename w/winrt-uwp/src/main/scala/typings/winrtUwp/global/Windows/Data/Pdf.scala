@@ -113,7 +113,7 @@ object Pdf {
   @JSGlobal("Windows.Data.Pdf.PdfPageRenderOptions")
   @js.native
   /** Creates and initializes a new instance of display settings for a single page of a Portable Document Format (PDF) document. */
-  class PdfPageRenderOptions ()
+  open class PdfPageRenderOptions ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Pdf.PdfPageRenderOptions {
     

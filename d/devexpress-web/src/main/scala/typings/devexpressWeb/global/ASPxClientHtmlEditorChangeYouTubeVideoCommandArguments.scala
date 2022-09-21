@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments")
 @js.native
-class ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments protected ()
+open class ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
-  /* private */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  /* private */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.
@@ -48,7 +48,7 @@ class ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Determines if the player controls are displayed for the target YouTube video.

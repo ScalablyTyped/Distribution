@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Progress")
 @js.native
-class Progress protected ()
-  extends Component[ProgressBasicProps, js.Object, js.Any] {
+open class Progress protected ()
+  extends Component[ProgressBasicProps, js.Object, Any] {
   def this(props: ProgressBasicProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ProgressBasicProps, context: js.Any) = this()
+  def this(props: ProgressBasicProps, context: Any) = this()
 }
 /* static members */
 object Progress {

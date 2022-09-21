@@ -1,74 +1,72 @@
 package typings.should
 
-import typings.std.Error
 import typings.std.PromiseLike
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(obj: js.Any): Assertion = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Assertion]
+  inline def apply(obj: Any): Assertion = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Assertion]
   
   @JSImport("should", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deepEqual(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deepEqual(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def doesNotThrow(block: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def doesNotThrow(block: js.Function, error: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def doesNotThrow(block: js.Function, error: js.Function1[/* err */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def doesNotThrow(block: js.Function, error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def doesNotThrow(block: js.Function, error: js.Function1[/* err */ Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def doesNotThrow(block: js.Function, error: js.Function1[/* err */ Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def doesNotThrow(block: js.Function, error: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def doesNotThrow(block: js.Function, error: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def doesNotThrow(block: js.Function, error: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def doesNotThrow(block: js.Function, error: js.RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def doesNotThrow(block: js.Function, error: js.RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def doesNotThrow(block: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def equal(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def equal(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def equal(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def equal(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def exist(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exist")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def exist(obj: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exist")(obj.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exist(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exist")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exist(obj: Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exist")(obj.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def exists(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def exists(obj: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(obj.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exists(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exists(obj: Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(obj.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fail(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fail(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fail(actual: js.Any, expected: js.Any, message: String, operator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fail(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fail(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fail(actual: Any, expected: Any, message: String, operator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fail(actual: Any, expected: Any, message: Unit, operator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def ifError(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ifError(value: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("should", "not")
   @js.native
   val not: ShouldAssertExt = js.native
   
-  inline def notDeepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notDeepEqual(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notDeepEqual(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def notEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notEqual(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notEqual(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def notStrictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notStrictEqual(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notStrictEqual(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def ok(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def ok(value: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ok(value: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ok(value: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def strictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def strictEqual(actual: js.Any, expected: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def strictEqual(actual: Any, expected: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def strictEqual(actual: Any, expected: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def throws(block: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def throws(block: js.Function, error: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def throws(block: js.Function, error: js.Function1[/* err */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def throws(block: js.Function, error: js.Function1[/* err */ js.Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def throws(block: js.Function, error: js.Function1[/* err */ Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def throws(block: js.Function, error: js.Function1[/* err */ Any, Boolean], message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def throws(block: js.Function, error: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def throws(block: js.Function, error: RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def throws(block: js.Function, error: RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def throws(block: js.Function, error: js.RegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def throws(block: js.Function, error: js.RegExp, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], error.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def throws(block: js.Function, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
@@ -147,15 +145,15 @@ object mod {
     
     def `class`(className: String): this.type = js.native
     
-    def containDeep(obj: js.Any): this.type = js.native
+    def containDeep(obj: Any): this.type = js.native
     
-    def containDeepOrdered(obj: js.Any): this.type = js.native
+    def containDeepOrdered(obj: Any): this.type = js.native
     
     //contain
-    def containEql(obj: js.Any): this.type = js.native
+    def containEql(obj: Any): this.type = js.native
     
-    def deepEqual(obj: js.Any): this.type = js.native
-    def deepEqual(obj: js.Any, description: String): this.type = js.native
+    def deepEqual(obj: Any): this.type = js.native
+    def deepEqual(obj: Any, description: String): this.type = js.native
     
     def empty(): this.type = js.native
     
@@ -163,25 +161,24 @@ object mod {
     def endWith(postfix: String, description: String): this.type = js.native
     
     // eql
-    def eql(obj: js.Any): this.type = js.native
-    def eql(obj: js.Any, description: String): this.type = js.native
+    def eql(obj: Any): this.type = js.native
+    def eql(obj: Any, description: String): this.type = js.native
     
-    def eqls(obj: js.Any): this.type = js.native
-    def eqls(obj: js.Any, description: String): this.type = js.native
+    def eqls(obj: Any): this.type = js.native
+    def eqls(obj: Any, description: String): this.type = js.native
     
-    def equal(obj: js.Any): this.type = js.native
-    def equal(obj: js.Any, description: String): this.type = js.native
+    def equal(obj: Any): this.type = js.native
+    def equal(obj: Any, description: String): this.type = js.native
     
-    def equalOneOf(obj: js.Array[js.Any]): this.type = js.native
-    def equalOneOf(objs: js.Any*): this.type = js.native
+    def equalOneOf(obj: js.Array[Any]): this.type = js.native
+    def equalOneOf(objs: Any*): this.type = js.native
     
-    def equals(obj: js.Any): this.type = js.native
-    def equals(obj: js.Any, description: String): this.type = js.native
+    def equals(obj: Any, description: String): this.type = js.native
     
     var eventually: PromisedAssertion = js.native
     
-    def exactly(obj: js.Any): this.type = js.native
-    def exactly(obj: js.Any, description: String): this.type = js.native
+    def exactly(obj: Any): this.type = js.native
+    def exactly(obj: Any, description: String): this.type = js.native
     
     def fail(): this.type = js.native
     
@@ -190,9 +187,9 @@ object mod {
     
     var `finally`: PromisedAssertion = js.native
     
-    def fulfilled(): js.Promise[js.Any] = js.native
+    def fulfilled(): js.Promise[Any] = js.native
     
-    def fulfilledWith(obj: js.Any): js.Promise[js.Any] = js.native
+    def fulfilledWith(obj: Any): js.Promise[Any] = js.native
     
     def generator(): this.type = js.native
     
@@ -222,9 +219,9 @@ object mod {
     
     def iterator(): this.type = js.native
     
-    def key(key: js.Any): this.type = js.native
+    def key(key: Any): this.type = js.native
     
-    def keys(keys: js.Any*): this.type = js.native
+    def keys(keys: Any*): this.type = js.native
     
     def length(value: Double): this.type = js.native
     def length(value: Double, description: String): this.type = js.native
@@ -238,41 +235,41 @@ object mod {
     def lessThanOrEqual(value: Double): this.type = js.native
     def lessThanOrEqual(value: Double, description: String): this.type = js.native
     
-    def `match`(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit]): this.type = js.native
-    def `match`(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit], description: String): this.type = js.native
+    def `match`(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit]): this.type = js.native
+    def `match`(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit], description: String): this.type = js.native
     def `match`(obj: js.Object): this.type = js.native
     def `match`(obj: js.Object, description: String): this.type = js.native
     // match
-    def `match`(obj: RegExp): this.type = js.native
-    def `match`(obj: RegExp, description: String): this.type = js.native
+    def `match`(obj: js.RegExp): this.type = js.native
+    def `match`(obj: js.RegExp, description: String): this.type = js.native
     
-    def matchAny(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit]): this.type = js.native
-    def matchAny(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit], description: String): this.type = js.native
+    def matchAny(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit]): this.type = js.native
+    def matchAny(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit], description: String): this.type = js.native
     def matchAny(obj: js.Object): this.type = js.native
     def matchAny(obj: js.Object, description: String): this.type = js.native
-    def matchAny(obj: RegExp): this.type = js.native
-    def matchAny(obj: RegExp, description: String): this.type = js.native
+    def matchAny(obj: js.RegExp): this.type = js.native
+    def matchAny(obj: js.RegExp, description: String): this.type = js.native
     
-    def matchEach(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit]): this.type = js.native
-    def matchEach(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit], description: String): this.type = js.native
+    def matchEach(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit]): this.type = js.native
+    def matchEach(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit], description: String): this.type = js.native
     def matchEach(obj: js.Object): this.type = js.native
     def matchEach(obj: js.Object, description: String): this.type = js.native
-    def matchEach(obj: RegExp): this.type = js.native
-    def matchEach(obj: RegExp, description: String): this.type = js.native
+    def matchEach(obj: js.RegExp): this.type = js.native
+    def matchEach(obj: js.RegExp, description: String): this.type = js.native
     
-    def matchEvery(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit]): this.type = js.native
-    def matchEvery(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit], description: String): this.type = js.native
+    def matchEvery(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit]): this.type = js.native
+    def matchEvery(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit], description: String): this.type = js.native
     def matchEvery(obj: js.Object): this.type = js.native
     def matchEvery(obj: js.Object, description: String): this.type = js.native
-    def matchEvery(obj: RegExp): this.type = js.native
-    def matchEvery(obj: RegExp, description: String): this.type = js.native
+    def matchEvery(obj: js.RegExp): this.type = js.native
+    def matchEvery(obj: js.RegExp, description: String): this.type = js.native
     
-    def matchSome(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit]): this.type = js.native
-    def matchSome(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, Boolean | Unit], description: String): this.type = js.native
+    def matchSome(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit]): this.type = js.native
+    def matchSome(obj: js.Function2[/* value */ Any, /* key */ Any, Boolean | Unit], description: String): this.type = js.native
     def matchSome(obj: js.Object): this.type = js.native
     def matchSome(obj: js.Object, description: String): this.type = js.native
-    def matchSome(obj: RegExp): this.type = js.native
-    def matchSome(obj: RegExp, description: String): this.type = js.native
+    def matchSome(obj: js.RegExp): this.type = js.native
+    def matchSome(obj: js.RegExp, description: String): this.type = js.native
     
     var not: this.type = js.native
     
@@ -282,8 +279,8 @@ object mod {
     
     def ok(): this.type = js.native
     
-    def oneOf(obj: js.Array[js.Any]): this.type = js.native
-    def oneOf(objs: js.Any*): this.type = js.native
+    def oneOf(obj: js.Array[Any]): this.type = js.native
+    def oneOf(objs: Any*): this.type = js.native
     
     var only: this.type = js.native
     
@@ -295,7 +292,7 @@ object mod {
     def properties(props: js.Object): this.type = js.native
     
     def property(name: String): this.type = js.native
-    def property(name: String, value: js.Any): this.type = js.native
+    def property(name: String, value: Any): this.type = js.native
     
     def propertyByPath(path: String*): this.type = js.native
     def propertyByPath(path: js.Array[String]): this.type = js.native
@@ -303,19 +300,19 @@ object mod {
     // property
     def propertyWithDescriptor(name: String, descriptor: js.Object): this.type = js.native
     
-    def rejected(): js.Promise[js.Any] = js.native
+    def rejected(): js.Promise[Any] = js.native
     
-    def rejectedWith(msg: String): js.Promise[js.Any] = js.native
-    def rejectedWith(msg: String, properties: js.Object): js.Promise[js.Any] = js.native
-    def rejectedWith(msg: Error): js.Promise[js.Any] = js.native
-    def rejectedWith(msg: Error, properties: js.Object): js.Promise[js.Any] = js.native
-    def rejectedWith(msg: RegExp): js.Promise[js.Any] = js.native
-    def rejectedWith(msg: RegExp, properties: js.Object): js.Promise[js.Any] = js.native
-    def rejectedWith(properties: js.Object): js.Promise[js.Any] = js.native
+    def rejectedWith(msg: String): js.Promise[Any] = js.native
+    def rejectedWith(msg: String, properties: js.Object): js.Promise[Any] = js.native
+    def rejectedWith(msg: js.Error): js.Promise[Any] = js.native
+    def rejectedWith(msg: js.Error, properties: js.Object): js.Promise[Any] = js.native
+    def rejectedWith(msg: js.RegExp): js.Promise[Any] = js.native
+    def rejectedWith(msg: js.RegExp, properties: js.Object): js.Promise[Any] = js.native
+    def rejectedWith(properties: js.Object): js.Promise[Any] = js.native
     
-    def resolved(): js.Promise[js.Any] = js.native
+    def resolved(): js.Promise[Any] = js.native
     
-    def resolvedWith(obj: js.Any): js.Promise[js.Any] = js.native
+    def resolvedWith(obj: Any): js.Promise[Any] = js.native
     
     def size(value: Double): this.type = js.native
     
@@ -331,8 +328,8 @@ object mod {
     def `throw`(msg: String, properties: js.Object): this.type = js.native
     def `throw`(msg: js.Function): this.type = js.native
     def `throw`(msg: js.Function, properties: js.Object): this.type = js.native
-    def `throw`(msg: RegExp): this.type = js.native
-    def `throw`(msg: RegExp, properties: js.Object): this.type = js.native
+    def `throw`(msg: js.RegExp): this.type = js.native
+    def `throw`(msg: js.RegExp, properties: js.Object): this.type = js.native
     def `throw`(properties: js.Object): this.type = js.native
     
     //TODO how to express generators???
@@ -341,8 +338,8 @@ object mod {
     def throwError(msg: String, properties: js.Object): this.type = js.native
     def throwError(msg: js.Function): this.type = js.native
     def throwError(msg: js.Function, properties: js.Object): this.type = js.native
-    def throwError(msg: RegExp): this.type = js.native
-    def throwError(msg: RegExp, properties: js.Object): this.type = js.native
+    def throwError(msg: js.RegExp): this.type = js.native
+    def throwError(msg: js.RegExp, properties: js.Object): this.type = js.native
     def throwError(properties: js.Object): this.type = js.native
     
     // bool
@@ -354,7 +351,7 @@ object mod {
     
     def undefined(): this.type = js.native
     
-    def value(key: js.Any, value: js.Any): this.type = js.native
+    def value(key: Any, value: Any): this.type = js.native
     
     var which: this.type = js.native
     
@@ -368,16 +365,16 @@ object mod {
   trait PromisedAssertion
     extends StObject
        with Assertion
-       with PromiseLike[js.Any]
+       with PromiseLike[Any]
   
   @js.native
   trait ShouldAssertExt extends StObject {
     
-    def exist(obj: js.Any): Unit = js.native
-    def exist(obj: js.Any, msg: String): Unit = js.native
+    def exist(obj: Any): Unit = js.native
+    def exist(obj: Any, msg: String): Unit = js.native
     
-    def exists(obj: js.Any): Unit = js.native
-    def exists(obj: js.Any, msg: String): Unit = js.native
+    def exists(obj: Any): Unit = js.native
+    def exists(obj: Any, msg: String): Unit = js.native
   }
   
   object global {

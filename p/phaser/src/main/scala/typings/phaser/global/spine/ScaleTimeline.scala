@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.ScaleTimeline")
 @js.native
-class ScaleTimeline protected ()
+open class ScaleTimeline protected ()
   extends StObject
      with typings.phaser.spine.ScaleTimeline {
   def this(frameCount: Double) = this()
@@ -28,7 +28,7 @@ class ScaleTimeline protected ()
   var boneIndex: Double = js.native
   
   /* private */ /* CompleteClass */
-  var curves: js.Any = js.native
+  var curves: Any = js.native
   
   /* CompleteClass */
   var frames: ArrayLike[Double] = js.native

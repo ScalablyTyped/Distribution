@@ -1,0 +1,47 @@
+package typings.googleapis.cloudresourcemanagerV3Mod.cloudresourcemanagerV3
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceTagkeysDelete
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Optional. The etag known to the client for the expected state of the TagKey. This is to be used for optimistic concurrency.
+    */
+  var etag: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Required. The resource name of a TagKey to be deleted in the format `tagKeys/123`. The TagKey cannot be a parent of any existing TagValues or it will not be deleted successfully.
+    */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. Set as true to perform validations necessary for deletion, but not actually perform the action.
+    */
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
+}
+object ParamsResourceTagkeysDelete {
+  
+  inline def apply(): ParamsResourceTagkeysDelete = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceTagkeysDelete]
+  }
+  
+  extension [Self <: ParamsResourceTagkeysDelete](x: Self) {
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+  }
+}

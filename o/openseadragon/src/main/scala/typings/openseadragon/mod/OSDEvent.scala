@@ -1,16 +1,26 @@
 package typings.openseadragon.mod
 
-import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OSDEvent[T]
-  extends StObject
-     with Event {
+trait OSDEvent[T] extends StObject {
   
-  var eventSource: js.UndefOr[T] = js.native
+  var eventSource: T
   
-  var userData: js.Any = js.native
+  var userData: Any
+}
+object OSDEvent {
+  
+  inline def apply[T](eventSource: T, userData: Any): OSDEvent[T] = {
+    val __obj = js.Dynamic.literal(eventSource = eventSource.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OSDEvent[T]]
+  }
+  
+  extension [Self <: OSDEvent[?], T](x: Self & OSDEvent[T]) {
+    
+    inline def setEventSource(value: T): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+  }
 }

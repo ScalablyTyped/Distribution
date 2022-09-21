@@ -20,6 +20,6 @@ object ShareTickets {
     
     inline def setShareTickets(value: js.Array[String]): Self = StObject.set(x, "shareTickets", value.asInstanceOf[js.Any])
     
-    inline def setShareTicketsVarargs(value: String*): Self = StObject.set(x, "shareTickets", js.Array(value :_*))
+    inline def setShareTicketsVarargs(value: String*): Self = StObject.set(x, "shareTickets", js.Array(value*))
   }
 }

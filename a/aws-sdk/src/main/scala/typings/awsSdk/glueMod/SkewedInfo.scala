@@ -34,7 +34,7 @@ object SkewedInfo {
     
     inline def setSkewedColumnNamesUndefined: Self = StObject.set(x, "SkewedColumnNames", js.undefined)
     
-    inline def setSkewedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "SkewedColumnNames", js.Array(value :_*))
+    inline def setSkewedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "SkewedColumnNames", js.Array(value*))
     
     inline def setSkewedColumnValueLocationMaps(value: LocationMap): Self = StObject.set(x, "SkewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object SkewedInfo {
     
     inline def setSkewedColumnValuesUndefined: Self = StObject.set(x, "SkewedColumnValues", js.undefined)
     
-    inline def setSkewedColumnValuesVarargs(value: ColumnValuesString*): Self = StObject.set(x, "SkewedColumnValues", js.Array(value :_*))
+    inline def setSkewedColumnValuesVarargs(value: ColumnValuesString*): Self = StObject.set(x, "SkewedColumnValues", js.Array(value*))
   }
 }

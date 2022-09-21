@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@matteodisabatino/gc_info" : "1.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@matteodisabatino/gc_info" : "1.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

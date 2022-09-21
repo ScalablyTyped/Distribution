@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusSettingsGetRequest.
   * @param [properties] Properties to set
   */
-class ConsensusSettingsGetRequest ()
+open class ConsensusSettingsGetRequest ()
   extends StObject
      with IConsensusSettingsGetRequest {
   def this(properties: IConsensusSettingsGetRequest) = this()
   
   /** ConsensusSettingsGetRequest blockId. */
   @JSName("blockId")
-  var blockId_ConsensusSettingsGetRequest: Uint8Array = js.native
+  var blockId_ConsensusSettingsGetRequest: js.typedarray.Uint8Array = js.native
   
   /** ConsensusSettingsGetRequest keys. */
   @JSName("keys")
@@ -32,7 +31,7 @@ class ConsensusSettingsGetRequest ()
     * Converts this ConsensusSettingsGetRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusSettingsGetRequest {
@@ -49,6 +48,8 @@ object ConsensusSettingsGetRequest {
   inline def create(): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusSettingsGetRequest]
   inline def create(properties: IConsensusSettingsGetRequest): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusSettingsGetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSettingsGetRequest]
   /**
     * Decodes a ConsensusSettingsGetRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -59,9 +60,8 @@ object ConsensusSettingsGetRequest {
     */
   inline def decode(reader: Reader): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
   inline def decode(reader: Reader, length: Double): ConsensusSettingsGetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSettingsGetRequest]
-  inline def decode(reader: Uint8Array): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusSettingsGetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSettingsGetRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
   /**
     * Decodes a ConsensusSettingsGetRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -70,7 +70,6 @@ object ConsensusSettingsGetRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
   
   /**
     * Encodes the specified ConsensusSettingsGetRequest message. Does not implicitly {@link ConsensusSettingsGetRequest.verify|verify} messages.
@@ -95,7 +94,7 @@ object ConsensusSettingsGetRequest {
     * @param object Plain object
     * @returns ConsensusSettingsGetRequest
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusSettingsGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSettingsGetRequest]
   
   /**
     * Creates a plain object from a ConsensusSettingsGetRequest message. Also converts values to other types if specified.
@@ -103,13 +102,13 @@ object ConsensusSettingsGetRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusSettingsGetRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusSettingsGetRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusSettingsGetRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusSettingsGetRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusSettingsGetRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

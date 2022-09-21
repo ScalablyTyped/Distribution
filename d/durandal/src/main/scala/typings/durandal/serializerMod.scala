@@ -20,28 +20,28 @@ object serializerMod {
   inline def deserialize[T](text: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(text.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def deserialize[T](text: String, settings: DeserializerOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(text.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def getTypeId(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeId")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTypeId(`object`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeId")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def registerType(typeId: String, constructor: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(typeId.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerType(typeId: String, constructor: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(typeId.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def replacer(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def replacer(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def reviver(
     key: String,
-    value: js.Any,
-    getTypeId: js.Function1[/* value */ js.Any, String],
-    getConstructor: js.Function1[/* id */ String, js.Function0[js.Any]]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], getTypeId.asInstanceOf[js.Any], getConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    value: Any,
+    getTypeId: js.Function1[/* value */ Any, String],
+    getConstructor: js.Function1[/* id */ String, js.Function0[Any]]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], getTypeId.asInstanceOf[js.Any], getConstructor.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def serialize(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def serialize(`object`: js.Any, settings: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def serialize(`object`: js.Any, settings: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def serialize(`object`: js.Any, settings: SerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(`object`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(`object`: Any, settings: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(`object`: Any, settings: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(`object`: Any, settings: SerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("plugins/serializer", "space")
   @js.native
-  def space: js.Any = js.native
-  inline def space_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("space")(x.asInstanceOf[js.Any])
+  def space: Any = js.native
+  inline def space_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("space")(x.asInstanceOf[js.Any])
   
   @JSImport("plugins/serializer", "typeAttribute")
   @js.native
@@ -50,8 +50,8 @@ object serializerMod {
   
   @JSImport("plugins/serializer", "typeMap")
   @js.native
-  def typeMap: js.Any = js.native
-  inline def typeMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeMap")(x.asInstanceOf[js.Any])
+  def typeMap: Any = js.native
+  inline def typeMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeMap")(x.asInstanceOf[js.Any])
   
   trait DeserializerOptions extends StObject {
     
@@ -60,14 +60,14 @@ object serializerMod {
       * @param {string} typeId The type id.
       * @returns {Function} The constructor.
       */
-    def getConstructor(typeId: String): js.Function0[js.Any]
+    def getConstructor(typeId: String): js.Function0[Any]
     
     /**
       * Gets the type id for an object instance, using the configured `typeAttribute`.
       * @param {object} object The object to serialize.
       * @returns {string} The type.
       */
-    def getTypeId(`object`: js.Any): String
+    def getTypeId(`object`: Any): String
     
     /**
       * The default reviver function used during deserialization. By default is detects type properties on objects and uses them to re-construct the correct object using the provided constructor mapping.
@@ -75,14 +75,14 @@ object serializerMod {
       * @param {object} value The object value associated with the key.
       * @returns {object} The value.
       */
-    def reviver(key: String, value: js.Any): js.Any
+    def reviver(key: String, value: Any): Any
   }
   object DeserializerOptions {
     
     inline def apply(
-      getConstructor: String => js.Function0[js.Any],
-      getTypeId: js.Any => String,
-      reviver: (String, js.Any) => js.Any
+      getConstructor: String => js.Function0[Any],
+      getTypeId: Any => String,
+      reviver: (String, Any) => Any
     ): DeserializerOptions = {
       val __obj = js.Dynamic.literal(getConstructor = js.Any.fromFunction1(getConstructor), getTypeId = js.Any.fromFunction1(getTypeId), reviver = js.Any.fromFunction2(reviver))
       __obj.asInstanceOf[DeserializerOptions]
@@ -90,11 +90,11 @@ object serializerMod {
     
     extension [Self <: DeserializerOptions](x: Self) {
       
-      inline def setGetConstructor(value: String => js.Function0[js.Any]): Self = StObject.set(x, "getConstructor", js.Any.fromFunction1(value))
+      inline def setGetConstructor(value: String => js.Function0[Any]): Self = StObject.set(x, "getConstructor", js.Any.fromFunction1(value))
       
-      inline def setGetTypeId(value: js.Any => String): Self = StObject.set(x, "getTypeId", js.Any.fromFunction1(value))
+      inline def setGetTypeId(value: Any => String): Self = StObject.set(x, "getTypeId", js.Any.fromFunction1(value))
       
-      inline def setReviver(value: (String, js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (String, Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
     }
   }
   
@@ -106,28 +106,28 @@ object serializerMod {
       * @param {object} value The object value to check.
       * @returns {object} The value to serialize.
       */
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
     
     /**
       * The amount of space to use for indentation when writing out JSON.
       * @default undefined
       */
-    var space: js.Any
+    var space: Any
   }
   object SerializerOptions {
     
-    inline def apply(space: js.Any): SerializerOptions = {
+    inline def apply(space: Any): SerializerOptions = {
       val __obj = js.Dynamic.literal(space = space.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializerOptions]
     }
     
     extension [Self <: SerializerOptions](x: Self) {
       
-      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      inline def setSpace(value: js.Any): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Any): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     }
   }
 }

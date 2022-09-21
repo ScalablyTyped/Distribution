@@ -33,6 +33,6 @@ object DescribeActivationsFilter {
     
     inline def setFilterValuesUndefined: Self = StObject.set(x, "FilterValues", js.undefined)
     
-    inline def setFilterValuesVarargs(value: String*): Self = StObject.set(x, "FilterValues", js.Array(value :_*))
+    inline def setFilterValuesVarargs(value: String*): Self = StObject.set(x, "FilterValues", js.Array(value*))
   }
 }

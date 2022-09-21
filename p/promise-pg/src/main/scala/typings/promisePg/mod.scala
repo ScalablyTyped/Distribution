@@ -1,5 +1,6 @@
 package typings.promisePg
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
@@ -8,15 +9,16 @@ import typings.pg.mod.ConnectionConfig
 import typings.pg.mod.Defaults_
 import typings.pg.mod.PoolConfig
 import typings.pg.mod.QueryResultRow
-import typings.pgTypes.mod.TypeFormat
+import typings.pgProtocol.messagesMod.MessageName
 import typings.pgTypes.mod.TypeId
-import typings.pgTypes.mod.TypesBuiltins
+import typings.pgTypes.mod.TypeParser
+import typings.promisePg.promisePgStrings.binary
 import typings.promisePg.promisePgStrings.drain
 import typings.promisePg.promisePgStrings.error
 import typings.promisePg.promisePgStrings.notice
 import typings.promisePg.promisePgStrings.notification
+import typings.promisePg.promisePgStrings.text
 import typings.q.mod.Promise
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +31,7 @@ object mod {
   
   @JSImport("promise-pg", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(config: ClientConfig) = this()
     def this(connection: String) = this()
     
@@ -45,34 +47,34 @@ object mod {
     @JSName("on")
     def on_drain(event: drain, listener: js.Function0[Unit]): Client = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): Client = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): Client = js.native
     @JSName("on")
-    def on_notice(event: notice, listener: js.Function1[/* message */ js.Any, Unit]): Client = js.native
+    def on_notice(event: notice, listener: js.Function1[/* message */ Any, Unit]): Client = js.native
     @JSName("on")
-    def on_notification(event: notification, listener: js.Function1[/* message */ js.Any, Unit]): Client = js.native
+    def on_notification(event: notification, listener: js.Function1[/* message */ Any, Unit]): Client = js.native
     
     def pauseDrain(): Unit = js.native
     
     def query(config: QueryConfig): Query = js.native
     def query(queryText: String): Query = js.native
-    def query(queryText: String, values: js.Array[js.Any]): Query = js.native
+    def query(queryText: String, values: js.Array[Any]): Query = js.native
     
     var raw: typings.pg.mod.Client = js.native
     
     def resumeDrain(): Unit = js.native
     
-    def transaction(task: js.Function0[Promise[js.Any]]): Promise[js.Any] = js.native
+    def transaction(task: js.Function0[Promise[Any]]): Promise[Any] = js.native
   }
   
   @JSImport("promise-pg", "Query")
   @js.native
-  class Query ()
-    extends typings.pg.mod.Query[js.Any, js.Any] {
+  open class Query ()
+    extends typings.pg.mod.Query[Any, Any] {
     def this(queryTextOrConfig: String) = this()
-    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[js.Any]) = this()
-    def this(queryTextOrConfig: String, values: js.Any) = this()
-    def this(queryTextOrConfig: Unit, values: js.Any) = this()
-    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[js.Any], values: js.Any) = this()
+    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[Any]) = this()
+    def this(queryTextOrConfig: String, values: Any) = this()
+    def this(queryTextOrConfig: Unit, values: Any) = this()
+    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[Any], values: Any) = this()
     
     var promise: Promise[QueryResult] = js.native
   }
@@ -86,7 +88,7 @@ object mod {
     
     @JSImport("promise-pg", "raw.Client")
     @js.native
-    class Client ()
+    open class Client ()
       extends typings.pg.mod.Client {
       def this(config: String) = this()
       def this(config: typings.pg.mod.ClientConfig) = this()
@@ -94,7 +96,7 @@ object mod {
     
     @JSImport("promise-pg", "raw.ClientBase")
     @js.native
-    class ClientBase ()
+    open class ClientBase ()
       extends typings.pg.mod.ClientBase {
       def this(config: String) = this()
       def this(config: typings.pg.mod.ClientConfig) = this()
@@ -102,14 +104,21 @@ object mod {
     
     @JSImport("promise-pg", "raw.Connection")
     @js.native
-    class Connection ()
+    open class Connection ()
       extends typings.pg.mod.Connection {
       def this(config: ConnectionConfig) = this()
     }
     
+    @JSImport("promise-pg", "raw.DatabaseError")
+    @js.native
+    open class DatabaseError protected ()
+      extends typings.pg.mod.DatabaseError {
+      def this(message: String, length: Double, name: MessageName) = this()
+    }
+    
     @JSImport("promise-pg", "raw.Events")
     @js.native
-    class Events ()
+    open class Events ()
       extends typings.pg.mod.Events {
       def this(options: EventEmitterOptions) = this()
     }
@@ -121,14 +130,14 @@ object mod {
       * The config passed to the pool is also passed to every client
       * instance within the pool when the pool creates that client.
       */
-    class Pool ()
+    open class Pool ()
       extends typings.pg.mod.Pool {
       def this(config: PoolConfig) = this()
     }
     
     @JSImport("promise-pg", "raw.Query")
     @js.native
-    class Query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */] ()
+    open class Query[R /* <: QueryResultRow */, I /* <: js.Array[Any] */] ()
       extends typings.pg.mod.Query[R, I] {
       def this(queryTextOrConfig: String) = this()
       def this(queryTextOrConfig: typings.pg.mod.QueryConfig[I]) = this()
@@ -151,17 +160,23 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayParser")(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def getTypeParser[T](oid: Double): TypeParser[String, T | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any]).asInstanceOf[TypeParser[String, T | String]]
+      inline def getTypeParser[T](oid: TypeId): TypeParser[String, T | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any]).asInstanceOf[TypeParser[String, T | String]]
       
-      @JSImport("promise-pg", "raw.types.builtins")
-      @js.native
-      val builtins: TypesBuiltins = js.native
+      inline def getTypeParser_binary[T](oid: Double, format: binary): TypeParser[Buffer, T | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[TypeParser[Buffer, T | String]]
+      inline def getTypeParser_binary[T](oid: TypeId, format: binary): TypeParser[Buffer, T | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[TypeParser[Buffer, T | String]]
       
-      inline def getTypeParser(id: TypeId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def getTypeParser(id: TypeId, format: TypeFormat): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def getTypeParser_text[T](oid: Double, format: text): TypeParser[String, T | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[TypeParser[String, T | String]]
+      inline def getTypeParser_text[T](oid: TypeId, format: text): TypeParser[String, T | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[TypeParser[String, T | String]]
       
-      inline def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser[T](oid: Double, parseFn: TypeParser[String, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser[T](oid: TypeId, parseFn: TypeParser[String, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def setTypeParser_binary[T](oid: Double, format: binary, parseFn: TypeParser[Buffer, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser_binary[T](oid: TypeId, format: binary, parseFn: TypeParser[Buffer, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def setTypeParser_text[T](oid: Double, format: text, parseFn: TypeParser[String, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser_text[T](oid: TypeId, format: text, parseFn: TypeParser[String, T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(oid.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
   
@@ -169,7 +184,7 @@ object mod {
   
   trait QueryConfig
     extends StObject
-       with typings.pg.mod.QueryConfig[js.Array[js.Any]] {
+       with typings.pg.mod.QueryConfig[js.Array[Any]] {
     
     var buffer: js.UndefOr[Boolean] = js.undefined
   }
@@ -188,7 +203,7 @@ object mod {
     }
   }
   
-  type QueryResult = typings.pg.mod.QueryResult[js.Any]
+  type QueryResult = typings.pg.mod.QueryResult[Any]
   
-  type ResultBuilder = typings.pg.mod.ResultBuilder[js.Any]
+  type ResultBuilder = typings.pg.mod.ResultBuilder[Any]
 }

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.REQUESTING
   - typings.invityApi.invityApiStrings.SUBMITTED
   - typings.invityApi.invityApiStrings.APPROVAL_PENDING
+  - typings.invityApi.invityApiStrings.WAITING_FOR_USER
   - typings.invityApi.invityApiStrings.SUCCESS
   - typings.invityApi.invityApiStrings.ERROR
   - typings.invityApi.invityApiStrings.BLOCKED
@@ -29,4 +30,6 @@ object BuyTradeStatus {
   inline def SUBMITTED: typings.invityApi.invityApiStrings.SUBMITTED = "SUBMITTED".asInstanceOf[typings.invityApi.invityApiStrings.SUBMITTED]
   
   inline def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
+  
+  inline def WAITING_FOR_USER: typings.invityApi.invityApiStrings.WAITING_FOR_USER = "WAITING_FOR_USER".asInstanceOf[typings.invityApi.invityApiStrings.WAITING_FOR_USER]
 }

@@ -11,14 +11,11 @@ swipe out ui component for react(web and react-native)
 | Full name          | rc-swipeout |
 | Keywords           | react, react-component, swipeout, rc-swipeout, swipe delete |
 | # releases         | 0 |
-| # dependents       | 73 |
-| # downloads        | 1125486 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 132677.0 |
+| # stars            | 210.0 |
 
 ## Links
-- [Homepage](https://github.com/react-component/swipeout)
-- [Bugs](https://github.com/react-component/swipeout/issues)
-- [Repository](https://github.com/react-component/swipeout)
 - [Npm](https://www.npmjs.com/package/rc-swipeout)
     
 

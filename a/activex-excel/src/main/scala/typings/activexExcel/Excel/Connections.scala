@@ -10,7 +10,7 @@ trait Connections extends StObject {
   def apply(Index: Double): WorkbookConnection = js.native
   
   def Add(Name: String, Description: String, ConnectionString: String, CommandText: String): WorkbookConnection = js.native
-  def Add(Name: String, Description: String, ConnectionString: String, CommandText: String, lCmdtype: js.Any): WorkbookConnection = js.native
+  def Add(Name: String, Description: String, ConnectionString: String, CommandText: String, lCmdtype: Any): WorkbookConnection = js.native
   
   def AddFromFile(Filename: String): WorkbookConnection = js.native
   
@@ -22,7 +22,7 @@ trait Connections extends StObject {
   
   def Item(Index: Double): WorkbookConnection = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): WorkbookConnection = js.native
+  def _Default(Index: Any): WorkbookConnection = js.native
 }

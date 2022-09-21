@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.StorageStreamTransaction")
 @js.native
-class StorageStreamTransaction ()
+open class StorageStreamTransaction ()
   extends StObject
      with typings.winrt.Windows.Storage.StorageStreamTransaction {
   

@@ -26,7 +26,7 @@ object XLocalizable {
     Locale: Locale,
     acquire: () => Unit,
     getLocale: () => Locale,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLocale: Locale => Unit
   ): XLocalizable = {

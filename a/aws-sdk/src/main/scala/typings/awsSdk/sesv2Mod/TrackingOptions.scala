@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrackingOptions extends StObject {
   
   /**
-    * The domain that you want to use for tracking open and click events.
+    * The domain to use for tracking open and click events.
     */
   var CustomRedirectDomain: typings.awsSdk.sesv2Mod.CustomRedirectDomain
 }

@@ -10,10 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def render(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def render(data: js.Any, options: Unit, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def render(data: js.Any, options: RendererOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def render(data: js.Any, options: RendererOptions, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(data: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def render(data: Any, options: Unit, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(data: Any, options: RendererOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(data: Any, options: RendererOptions, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def renderString(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def renderString(data: String, options: Unit, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]

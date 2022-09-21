@@ -28,7 +28,7 @@ object RuleMatch {
     
     inline def setMatchingSelectors(value: js.Array[integer]): Self = StObject.set(x, "matchingSelectors", value.asInstanceOf[js.Any])
     
-    inline def setMatchingSelectorsVarargs(value: integer*): Self = StObject.set(x, "matchingSelectors", js.Array(value :_*))
+    inline def setMatchingSelectorsVarargs(value: integer*): Self = StObject.set(x, "matchingSelectors", js.Array(value*))
     
     inline def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }

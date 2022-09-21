@@ -10,7 +10,7 @@ trait SortField extends StObject {
   
   val Creator: XlCreator
   
-  var CustomOrder: js.Any
+  var CustomOrder: Any
   
   var DataOption: XlSortDataOption
   
@@ -29,7 +29,7 @@ trait SortField extends StObject {
   
   var Order: XlSortOrder
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Priority: Double
   
@@ -37,25 +37,25 @@ trait SortField extends StObject {
   
   var SortOn: XlSortOn
   
-  val SortOnValue: js.Any
+  val SortOnValue: Any
 }
 object SortField {
   
   inline def apply(
     Application: Application,
     Creator: XlCreator,
-    CustomOrder: js.Any,
+    CustomOrder: Any,
     DataOption: XlSortDataOption,
     Delete: () => Unit,
     ExcelDotSortField_typekey: SortField,
     Key: Range,
     ModifyKey: Range => Unit,
     Order: XlSortOrder,
-    Parent: js.Any,
+    Parent: Any,
     Priority: Double,
     SetIcon: Icon => Unit,
     SortOn: XlSortOn,
-    SortOnValue: js.Any
+    SortOnValue: Any
   ): SortField = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], CustomOrder = CustomOrder.asInstanceOf[js.Any], DataOption = DataOption.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Key = Key.asInstanceOf[js.Any], ModifyKey = js.Any.fromFunction1(ModifyKey), Order = Order.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], SetIcon = js.Any.fromFunction1(SetIcon), SortOn = SortOn.asInstanceOf[js.Any], SortOnValue = SortOnValue.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.SortField_typekey")(ExcelDotSortField_typekey.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object SortField {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setCustomOrder(value: js.Any): Self = StObject.set(x, "CustomOrder", value.asInstanceOf[js.Any])
+    inline def setCustomOrder(value: Any): Self = StObject.set(x, "CustomOrder", value.asInstanceOf[js.Any])
     
     inline def setDataOption(value: XlSortDataOption): Self = StObject.set(x, "DataOption", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object SortField {
     
     inline def setOrder(value: XlSortOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
@@ -90,6 +90,6 @@ object SortField {
     
     inline def setSortOn(value: XlSortOn): Self = StObject.set(x, "SortOn", value.asInstanceOf[js.Any])
     
-    inline def setSortOnValue(value: js.Any): Self = StObject.set(x, "SortOnValue", value.asInstanceOf[js.Any])
+    inline def setSortOnValue(value: Any): Self = StObject.set(x, "SortOnValue", value.asInstanceOf[js.Any])
   }
 }

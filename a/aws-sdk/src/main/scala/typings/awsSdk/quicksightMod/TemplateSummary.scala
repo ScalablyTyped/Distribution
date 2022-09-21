@@ -14,12 +14,12 @@ trait TemplateSummary extends StObject {
   /**
     * The last time that this template was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time that this template was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A structure containing a list of version numbers for the template summary.
@@ -32,7 +32,7 @@ trait TemplateSummary extends StObject {
   var Name: js.UndefOr[TemplateName] = js.undefined
   
   /**
-    * The ID of the template. This ID is unique per AWS Region for each AWS account.
+    * The ID of the template. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
 }
@@ -49,11 +49,11 @@ object TemplateSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

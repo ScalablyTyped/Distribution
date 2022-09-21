@@ -58,7 +58,7 @@ object FieldSchemaInFormDateTime {
     HijriAdjustment: Double,
     HoursMode24: Boolean,
     HoursOptions: js.Array[String],
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     LanguageId: String,
     LocaleId: String,
@@ -96,7 +96,7 @@ object FieldSchemaInFormDateTime {
     
     inline def setHoursOptions(value: js.Array[String]): Self = StObject.set(x, "HoursOptions", value.asInstanceOf[js.Any])
     
-    inline def setHoursOptionsVarargs(value: String*): Self = StObject.set(x, "HoursOptions", js.Array(value :_*))
+    inline def setHoursOptionsVarargs(value: String*): Self = StObject.set(x, "HoursOptions", js.Array(value*))
     
     inline def setLanguageId(value: String): Self = StObject.set(x, "LanguageId", value.asInstanceOf[js.Any])
     

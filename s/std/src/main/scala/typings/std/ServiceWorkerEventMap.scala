@@ -8,6 +8,7 @@ trait ServiceWorkerEventMap
   extends StObject
      with AbstractWorkerEventMap {
   
+  /* standard dom */
   var statechange: Event
 }
 object ServiceWorkerEventMap {

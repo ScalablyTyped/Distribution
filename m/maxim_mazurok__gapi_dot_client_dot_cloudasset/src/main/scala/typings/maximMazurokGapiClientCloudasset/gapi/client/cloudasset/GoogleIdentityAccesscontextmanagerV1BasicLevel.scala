@@ -32,6 +32,6 @@ object GoogleIdentityAccesscontextmanagerV1BasicLevel {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: GoogleIdentityAccesscontextmanagerV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: GoogleIdentityAccesscontextmanagerV1Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
   }
 }

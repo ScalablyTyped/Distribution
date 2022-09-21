@@ -8,5 +8,5 @@ object putBucketRequestPaymentOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutBucketRequestPaymentOutput", "PutBucketRequestPaymentOutput")
   @js.native
-  val PutBucketRequestPaymentOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketRequestPaymentOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

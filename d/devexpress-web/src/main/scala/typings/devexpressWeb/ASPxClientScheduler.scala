@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,13 +106,13 @@ trait ASPxClientScheduler
     * Returns focus to the form if the ASPxScheduler control is not visible when the reminder fires.
     * @param container A DIV object that is located in such a way that it is visible on the page in situations when the ASPxScheduler control is hidden.
     */
-  def ChangeFormContainer(container: js.Any): Unit = js.native
+  def ChangeFormContainer(container: Any): Unit = js.native
   
   /**
     * Changes the container that the ASPxScheduler pop-up menu belongs to.
     * @param container An object that serves as the new container for the pop-up menu.
     */
-  def ChangePopupMenuContainer(container: js.Any): Unit = js.native
+  def ChangePopupMenuContainer(container: Any): Unit = js.native
   
   /**
     * Client-side method which raises the callback command to change the SchedulerOptionsBehaviorBase.ClientTimeZoneId of the scheduler.
@@ -125,7 +124,7 @@ trait ASPxClientScheduler
     * Changes the container that the ASPxScheduler tooltip belongs to.
     * @param container An object that serves as the new container for the pop-up menu.
     */
-  def ChangeToolTipContainer(container: js.Any): Unit = js.native
+  def ChangeToolTipContainer(container: Any): Unit = js.native
   
   /**
     * Client-side scripting  method to delete the specified appointment.
@@ -166,7 +165,7 @@ trait ASPxClientScheduler
     * @param propertyNames An array of strings, representing the appointment properties to query.
     * @param onCallBack A handler of a function which will receive and process the property values.
     */
-  def GetAppointmentProperties(aptId: String, propertyNames: js.Array[String], onCallBack: js.Any): js.Array[String] = js.native
+  def GetAppointmentProperties(aptId: String, propertyNames: js.Array[String], onCallBack: Any): js.Array[String] = js.native
   
   /**
     * Returns the floating action button's object.
@@ -239,7 +238,7 @@ trait ASPxClientScheduler
     * Client-side scripting method which raises the SchedulerCallbackCommandId.GotoDate callback command.
     * @param date A DateTime value specifying the destination time.
     */
-  def GotoDate(date: Date): Unit = js.native
+  def GotoDate(date: js.Date): Unit = js.native
   
   /**
     * Client-side method that navigates the scheduler to the current system date.
@@ -311,7 +310,7 @@ trait ASPxClientScheduler
     * @param propertyNames An array of strings, that are the names of appointment properties to query.
     * @param onCallBack A handler of a function executed after a callback.
     */
-  def RefreshClientAppointmentProperties(clientAppointment: ASPxClientAppointment, propertyNames: js.Array[String], onCallBack: js.Any): Unit = js.native
+  def RefreshClientAppointmentProperties(clientAppointment: ASPxClientAppointment, propertyNames: js.Array[String], onCallBack: Any): Unit = js.native
   
   /**
     * Client-side scripting method that closes the Reminder form.
@@ -429,8 +428,8 @@ trait ASPxClientScheduler
     * @param end A date object, representing the end of the new appointment.
     * @param resourceId An object representing the identifier of a resource associated with the new appointment.
     */
-  def ShowInplaceEditor(start: Date, end: Date): Unit = js.native
-  def ShowInplaceEditor(start: Date, end: Date, resourceId: String): Unit = js.native
+  def ShowInplaceEditor(start: js.Date, end: js.Date): Unit = js.native
+  def ShowInplaceEditor(start: js.Date, end: js.Date, resourceId: String): Unit = js.native
   
   /**
     * Client-side scripting method which displays the Loading Panel.

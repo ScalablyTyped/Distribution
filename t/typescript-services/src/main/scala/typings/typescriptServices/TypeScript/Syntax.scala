@@ -12,7 +12,7 @@ object Syntax {
     
     def findTokenInternal(parent: PositionedElement, position: Double, fullStart: Double): PositionedToken
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object EmptySyntaxList {
     
@@ -36,7 +36,7 @@ object Syntax {
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
       toArray: () => js.Array[ISyntaxNodeOrToken],
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
       width: () => Double
@@ -49,7 +49,7 @@ object Syntax {
       
       inline def setFindTokenInternal(value: (PositionedElement, Double, Double) => PositionedToken): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     }
   }
   
@@ -57,29 +57,29 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: Any
     
-    /* private */ var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object FixedWidthTokenWithLeadingAndTrailingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _leadingTriviaInfo: js.Any,
-      _trailingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _leadingTriviaInfo: Any,
+      _trailingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -107,13 +107,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -125,17 +125,17 @@ object Syntax {
     
     extension [Self <: FixedWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
       
-      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,26 +143,26 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object FixedWidthTokenWithLeadingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _leadingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _leadingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -190,13 +190,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -208,15 +208,15 @@ object Syntax {
     
     extension [Self <: FixedWidthTokenWithLeadingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,20 +224,20 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object FixedWidthTokenWithNoTrivia {
     
     inline def apply(
-      accept: ISyntaxVisitor => js.Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -265,13 +265,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -283,11 +283,11 @@ object Syntax {
     
     extension [Self <: FixedWidthTokenWithNoTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     }
   }
   
@@ -295,26 +295,26 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object FixedWidthTokenWithTrailingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _trailingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _trailingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -342,13 +342,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -360,15 +360,15 @@ object Syntax {
     
     extension [Self <: FixedWidthTokenWithTrailingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1290,29 +1290,29 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: Any
     
-    /* private */ var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object VariableWidthTokenWithLeadingAndTrailingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _leadingTriviaInfo: js.Any,
-      _trailingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _leadingTriviaInfo: Any,
+      _trailingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -1340,13 +1340,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -1358,17 +1358,17 @@ object Syntax {
     
     extension [Self <: VariableWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
       
-      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1376,26 +1376,26 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object VariableWidthTokenWithLeadingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _leadingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _leadingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -1423,13 +1423,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -1441,15 +1441,15 @@ object Syntax {
     
     extension [Self <: VariableWidthTokenWithLeadingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1457,23 +1457,23 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object VariableWidthTokenWithNoTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -1501,13 +1501,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -1519,13 +1519,13 @@ object Syntax {
     
     extension [Self <: VariableWidthTokenWithNoTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1533,26 +1533,26 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    /* private */ var _fullText: js.Any
+    /* private */ var _fullText: Any
     
-    /* private */ var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: Any
     
-    /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
+    /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any
     
-    /* private */ def realize(): js.Any
+    /* private */ def realize(): Any
     
-    def toJSON(key: js.Any): js.Any
+    def toJSON(key: Any): Any
   }
   object VariableWidthTokenWithTrailingTrivia {
     
     inline def apply(
-      _fullText: js.Any,
-      _trailingTriviaInfo: js.Any,
-      accept: ISyntaxVisitor => js.Any,
+      _fullText: Any,
+      _trailingTriviaInfo: Any,
+      accept: ISyntaxVisitor => Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
-      findTokenInternal: (js.Any, js.Any, js.Any) => js.Any,
+      findTokenInternal: (Any, Any, Any) => Any,
       firstToken: () => ISyntaxToken,
       fullText: () => String,
       fullWidth: () => Double,
@@ -1580,13 +1580,13 @@ object Syntax {
       lastToken: () => ISyntaxToken,
       leadingTrivia: () => ISyntaxTriviaList,
       leadingTriviaWidth: () => Double,
-      realize: () => js.Any,
+      realize: () => Any,
       text: () => String,
-      toJSON: js.Any => js.Any,
+      toJSON: Any => Any,
       tokenKind: SyntaxKind,
       trailingTrivia: () => ISyntaxTriviaList,
       trailingTriviaWidth: () => Double,
-      value: () => js.Any,
+      value: () => Any,
       valueText: () => String,
       width: () => Double,
       withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -1598,15 +1598,15 @@ object Syntax {
     
     extension [Self <: VariableWidthTokenWithTrailingTrivia](x: Self) {
       
-      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
 }

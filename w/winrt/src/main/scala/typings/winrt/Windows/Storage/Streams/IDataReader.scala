@@ -1,7 +1,5 @@
 package typings.winrt.Windows.Storage.Streams
 
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +24,9 @@ trait IDataReader extends StObject {
   def readByte(): Double = js.native
   
   def readBytes(value: js.Array[Double]): Unit = js.native
-  def readBytes(value: Uint8Array): Unit = js.native
+  def readBytes(value: js.typedarray.Uint8Array): Unit = js.native
   
-  def readDateTime(): Date = js.native
+  def readDateTime(): js.Date = js.native
   
   def readDouble(): Double = js.native
   

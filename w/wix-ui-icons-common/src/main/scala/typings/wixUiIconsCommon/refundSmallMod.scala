@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object refundSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/RefundSmall", JSImport.Default)
   @js.native
-  val default: SFC[RefundSmallProps] = js.native
+  val default: FC[RefundSmallProps] = js.native
   
   trait RefundSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object RefundSmallProps {
     
@@ -29,14 +29,14 @@ object refundSmallMod extends Shortcut {
     
     extension [Self <: RefundSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[RefundSmallProps]
+  type _To = FC[RefundSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `refundSmallMod.foo` */
-  override def _to: SFC[RefundSmallProps] = default
+  override def _to: FC[RefundSmallProps] = default
 }

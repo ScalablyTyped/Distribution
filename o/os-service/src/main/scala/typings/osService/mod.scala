@@ -1,6 +1,5 @@
 package typings.osService
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +11,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def add(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def add(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def add(name: String, opts: AddOptions, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(name: String, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(name: String, opts: AddOptions, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def remove(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(name: String, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def run(stopCallback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(stopCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -96,7 +95,7 @@ object mod {
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -106,7 +105,7 @@ object mod {
       
       inline def setNodeArgsUndefined: Self = StObject.set(x, "nodeArgs", js.undefined)
       
-      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value :_*))
+      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value*))
       
       inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
       
@@ -120,7 +119,7 @@ object mod {
       
       inline def setProgramArgsUndefined: Self = StObject.set(x, "programArgs", js.undefined)
       
-      inline def setProgramArgsVarargs(value: String*): Self = StObject.set(x, "programArgs", js.Array(value :_*))
+      inline def setProgramArgsVarargs(value: String*): Self = StObject.set(x, "programArgs", js.Array(value*))
       
       inline def setProgramPath(value: String): Self = StObject.set(x, "programPath", value.asInstanceOf[js.Any])
       
@@ -130,7 +129,7 @@ object mod {
       
       inline def setRunLevelsUndefined: Self = StObject.set(x, "runLevels", js.undefined)
       
-      inline def setRunLevelsVarargs(value: Double*): Self = StObject.set(x, "runLevels", js.Array(value :_*))
+      inline def setRunLevelsVarargs(value: Double*): Self = StObject.set(x, "runLevels", js.Array(value*))
       
       inline def setSystemdWantedBy(value: String): Self = StObject.set(x, "systemdWantedBy", value.asInstanceOf[js.Any])
       

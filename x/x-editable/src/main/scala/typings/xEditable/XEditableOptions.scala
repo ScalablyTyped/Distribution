@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XEditableOptions extends StObject {
   
-  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
+  var ajaxOptions: js.UndefOr[Any] = js.undefined
   
   var anim: js.UndefOr[String] = js.undefined
   
   var autotext: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var display: js.UndefOr[js.Any] = js.undefined
+  var display: js.UndefOr[Any] = js.undefined
   
   var emptyclass: js.UndefOr[String] = js.undefined
   
   var emptytext: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[Any] = js.undefined
   
-  var highlight: js.UndefOr[js.Any] = js.undefined
+  var highlight: js.UndefOr[Any] = js.undefined
   
   var mode: js.UndefOr[String] = js.undefined
   
@@ -32,9 +32,9 @@ trait XEditableOptions extends StObject {
   
   var onblur: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
-  var pk: js.UndefOr[js.Any] = js.undefined
+  var pk: js.UndefOr[Any] = js.undefined
   
   var placement: js.UndefOr[String] = js.undefined
   
@@ -44,9 +44,9 @@ trait XEditableOptions extends StObject {
   
   var send: js.UndefOr[String] = js.undefined
   
-  var showbuttons: js.UndefOr[js.Any] = js.undefined
+  var showbuttons: js.UndefOr[Any] = js.undefined
   
-  var success: js.UndefOr[js.Any] = js.undefined
+  var success: js.UndefOr[Any] = js.undefined
   
   var toggle: js.UndefOr[String] = js.undefined
   
@@ -54,11 +54,11 @@ trait XEditableOptions extends StObject {
   
   var unsavedclass: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
-  var validate: js.UndefOr[js.Any] = js.undefined
+  var validate: js.UndefOr[Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object XEditableOptions {
   
@@ -69,7 +69,7 @@ object XEditableOptions {
   
   extension [Self <: XEditableOptions](x: Self) {
     
-    inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
     inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
@@ -81,7 +81,7 @@ object XEditableOptions {
     
     inline def setAutotextUndefined: Self = StObject.set(x, "autotext", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -89,7 +89,7 @@ object XEditableOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDisplay(value: js.Any): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Any): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -101,11 +101,11 @@ object XEditableOptions {
     
     inline def setEmptytextUndefined: Self = StObject.set(x, "emptytext", js.undefined)
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
@@ -121,11 +121,11 @@ object XEditableOptions {
     
     inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setPk(value: js.Any): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Any): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     inline def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
     
@@ -145,11 +145,11 @@ object XEditableOptions {
     
     inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    inline def setShowbuttons(value: js.Any): Self = StObject.set(x, "showbuttons", value.asInstanceOf[js.Any])
+    inline def setShowbuttons(value: Any): Self = StObject.set(x, "showbuttons", value.asInstanceOf[js.Any])
     
     inline def setShowbuttonsUndefined: Self = StObject.set(x, "showbuttons", js.undefined)
     
-    inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
@@ -165,15 +165,15 @@ object XEditableOptions {
     
     inline def setUnsavedclassUndefined: Self = StObject.set(x, "unsavedclass", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setValidate(value: js.Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

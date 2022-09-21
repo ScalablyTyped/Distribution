@@ -26,7 +26,7 @@ object animationMod {
   
   @JSImport("babylonjs/Animations/animation", "Animation")
   @js.native
-  class Animation protected () extends StObject {
+  open class Animation protected () extends StObject {
     /**
       * Initializes the animation
       * @param name Name of the animation
@@ -90,32 +90,35 @@ object animationMod {
     /**
       * Stores the easing function of the animation
       */
-    /* private */ var _easingFunction: js.Any = js.native
+    /* private */ var _easingFunction: Any = js.native
     
     /**
       * The set of event that will be linked to this animation
       */
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     /**
+      * @param value
       * @hidden Internal use only
       */
-    def _getKeyValue(value: js.Any): js.Any = js.native
+    def _getKeyValue(value: Any): Any = js.native
     
     /**
+      * @param currentFrame
+      * @param state
       * @hidden Internal use only
       */
-    def _interpolate(currentFrame: Double, state: IAnimationState): js.Any = js.native
+    def _interpolate(currentFrame: Double, state: IAnimationState): Any = js.native
     
     /**
       * Stores the key frames of the animation
       */
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
     /**
       * Stores the animation ranges for the animation
       */
-    /* private */ var _ranges: js.Any = js.native
+    /* private */ var _ranges: Any = js.native
     
     /**
       * @hidden Internal use only
@@ -143,6 +146,17 @@ object animationMod {
     def color3InterpolateFunction(startValue: Color3, endValue: Color3, gradient: Double): Color3 = js.native
     
     /**
+      * Interpolates a Color3 cubically
+      * @param startValue Start value of the animation curve
+      * @param outTangent End tangent of the animation
+      * @param endValue End value of the animation curve
+      * @param inTangent Start tangent of the animation curve
+      * @param gradient Scalar amount to interpolate
+      * @returns interpolated value
+      */
+    def color3InterpolateFunctionWithTangents(startValue: Color3, outTangent: Color3, endValue: Color3, inTangent: Color3, gradient: Double): Color3 = js.native
+    
+    /**
       * Interpolates a Color4 linearly
       * @param startValue Start value of the animation curve
       * @param endValue End value of the animation curve
@@ -150,6 +164,17 @@ object animationMod {
       * @returns Interpolated Color3 value
       */
     def color4InterpolateFunction(startValue: Color4, endValue: Color4, gradient: Double): Color4 = js.native
+    
+    /**
+      * Interpolates a Color4 cubically
+      * @param startValue Start value of the animation curve
+      * @param outTangent End tangent of the animation
+      * @param endValue End value of the animation curve
+      * @param inTangent Start tangent of the animation curve
+      * @param gradient Scalar amount to interpolate
+      * @returns interpolated value
+      */
+    def color4InterpolateFunctionWithTangents(startValue: Color4, outTangent: Color4, endValue: Color4, inTangent: Color4, gradient: Double): Color4 = js.native
     
     /**
       * Creates an animation range
@@ -172,6 +197,13 @@ object animationMod {
     
     /**Specifies if blending should be enabled */
     var enableBlending: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Evaluate the animation value at a given frame
+      * @param currentFrame defines the frame where we want to evaluate the animation
+      * @returns the animation value
+      */
+    def evaluate(currentFrame: Double): Any = js.native
     
     /**
       * Interpolates a scalar linearly
@@ -200,7 +232,7 @@ object animationMod {
       * Gets the easing function of the animation
       * @returns Easing function of the animation
       */
-    def getEasingFunction(): IEasingFunction = js.native
+    def getEasingFunction(): Nullable[IEasingFunction] = js.native
     
     /**
       * Retrieves all the events from the animation
@@ -290,13 +322,13 @@ object animationMod {
       * Serializes the animation to an object
       * @returns Serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Sets the easing function of the animation
       * @param easingFunction A custom mathematical formula for animation
       */
-    def setEasingFunction(easingFunction: EasingFunction): Unit = js.native
+    def setEasingFunction(easingFunction: Nullable[IEasingFunction]): Unit = js.native
     
     /**
       * Sets the key frames of the animation
@@ -327,10 +359,15 @@ object animationMod {
     def toString(fullDetails: Boolean): String = js.native
     
     /**
+      * Gets or sets the unique id of the animation (the uniqueness is solely among other animations)
+      */
+    var uniqueId: Double = js.native
+    
+    /**
       * Interpolates a Vector2 linearly
       * @param startValue Start value of the animation curve
       * @param endValue End value of the animation curve
-      * @param gradient Scalar amount to interpolate
+      * @param gradient Scalar amount to interpolate (value between 0 and 1)
       * @returns Interpolated Vector2 value
       */
     def vector2InterpolateFunction(startValue: Vector2, endValue: Vector2, gradient: Double): Vector2 = js.native
@@ -341,16 +378,16 @@ object animationMod {
       * @param outTangent End tangent of the animation
       * @param endValue End value of the animation curve
       * @param inTangent Start tangent of the animation curve
-      * @param gradient Scalar amount to interpolate
+      * @param gradient Scalar amount to interpolate (value between 0 and 1)
       * @returns Interpolated Vector2 value
       */
     def vector2InterpolateFunctionWithTangents(startValue: Vector2, outTangent: Vector2, endValue: Vector2, inTangent: Vector2, gradient: Double): Vector2 = js.native
     
     /**
-      * Interpolates a Vector3 linearl
+      * Interpolates a Vector3 linearly
       * @param startValue Start value of the animation curve
       * @param endValue End value of the animation curve
-      * @param gradient Scalar amount to interpolate
+      * @param gradient Scalar amount to interpolate (value between 0 and 1)
       * @returns Interpolated scalar value
       */
     def vector3InterpolateFunction(startValue: Vector3, endValue: Vector3, gradient: Double): Vector3 = js.native
@@ -361,7 +398,7 @@ object animationMod {
       * @param outTangent End tangent of the animation
       * @param endValue End value of the animation curve
       * @param inTangent Start tangent of the animation curve
-      * @param gradient Scalar amount to interpolate
+      * @param gradient Scalar amount to interpolate (value between 0 and 1)
       * @returns InterpolatedVector3 value
       */
     def vector3InterpolateFunctionWithTangents(startValue: Vector3, outTangent: Vector3, endValue: Vector3, inTangent: Vector3, gradient: Double): Vector3 = js.native
@@ -471,12 +508,12 @@ object animationMod {
       * @param source Source containing the animations
       * @param destination Target to store the animations
       */
-    inline def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def AppendSerializedAnimations(source: IAnimatable, destination: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create and start an animation on a node
       * @param name defines the name of the global animation that will be run on all nodes
-      * @param node defines the root node where the animation will take place
+      * @param target defines the target where the animation will take place
       * @param targetProperty defines property to animate
       * @param framePerSecond defines the number of frame per second yo use
       * @param totalFrame defines the number of frames in total
@@ -485,97 +522,202 @@ object animationMod {
       * @param loopMode defines which loop mode you want to use (off by default)
       * @param easingFunction defines the easing function to use (linear by default)
       * @param onAnimationEnd defines the callback to call when animation end
+      * @param scene defines the hosting scene
       * @returns the animatable created for this animation
       */
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+      from: Any,
+      to: Any
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
+      loopMode: Double,
+      easingFunction: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
+      loopMode: Double,
+      easingFunction: Unit,
+      onAnimationEnd: Unit,
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
+      loopMode: Double,
+      easingFunction: EasingFunction,
+      onAnimationEnd: js.Function0[Unit],
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
+      loopMode: Double,
+      easingFunction: EasingFunction,
+      onAnimationEnd: Unit,
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
+      loopMode: Unit,
+      easingFunction: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
+      loopMode: Unit,
+      easingFunction: Unit,
+      onAnimationEnd: Unit,
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateAndStartAnimation(
       name: String,
-      node: Node,
+      target: Any,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction,
+      onAnimationEnd: js.Function0[Unit],
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      target: Any,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: Any,
+      to: Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction,
+      onAnimationEnd: Unit,
+      scene: Scene
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
       * Create and start an animation on a node and its descendants
@@ -600,8 +742,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any
+      from: Any,
+      to: Any
     ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
     inline def CreateAndStartHierarchyAnimation(
       name: String,
@@ -610,8 +752,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double
     ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
     inline def CreateAndStartHierarchyAnimation(
@@ -621,8 +763,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
@@ -634,8 +776,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction
     ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
@@ -646,8 +788,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
@@ -659,8 +801,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
@@ -672,8 +814,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction
     ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
@@ -684,8 +826,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
@@ -703,10 +845,16 @@ object animationMod {
     
     /**
       * Creates an animation or an array of animations from a snippet saved by the Inspector
+      * @deprecated Please use ParseFromSnippetAsync instead
       * @param snippetId defines the snippet to load
       * @returns a promise that will resolve to the new animation or a new array of animations
       */
-    inline def CreateFromSnippetAsync(snippetId: String): js.Promise[Animation | js.Array[Animation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Animation | js.Array[Animation]]]
+    @JSImport("babylonjs/Animations/animation", "Animation.CreateFromSnippetAsync")
+    @js.native
+    def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Animation.ParseFromSnippetAsync */ Any = js.native
+    inline def CreateFromSnippetAsync_=(
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Animation.ParseFromSnippetAsync */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a new animation, merges it with the existing animations and starts it
@@ -728,8 +876,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any
+      from: Any,
+      to: Any
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateMergeAndStartAnimation(
       name: String,
@@ -737,8 +885,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def CreateMergeAndStartAnimation(
@@ -747,8 +895,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
@@ -759,8 +907,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
@@ -770,8 +918,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
@@ -782,8 +930,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
@@ -794,8 +942,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
@@ -805,8 +953,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
@@ -891,7 +1039,7 @@ object animationMod {
       * @param parsedAnimation Parsed animation object
       * @returns Animation object
       */
-    inline def Parse(parsedAnimation: js.Any): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimation.asInstanceOf[js.Any]).asInstanceOf[Animation]
+    inline def Parse(parsedAnimation: Any): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimation.asInstanceOf[js.Any]).asInstanceOf[Animation]
     
     /**
       * Creates a new animation or an array of animations from a snippet saved in a remote file
@@ -900,6 +1048,13 @@ object animationMod {
       * @returns a promise that will resolve to the new animation or an array of animations
       */
     inline def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[Animation | js.Array[Animation]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Animation | js.Array[Animation]]]
+    
+    /**
+      * Creates an animation or an array of animations from a snippet saved by the Inspector
+      * @param snippetId defines the snippet to load
+      * @returns a promise that will resolve to the new animation or a new array of animations
+      */
+    inline def ParseFromSnippetAsync(snippetId: String): js.Promise[Animation | js.Array[Animation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Animation | js.Array[Animation]]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Animations/animation", "Animation.SnippetUrl")
@@ -921,8 +1076,8 @@ object animationMod {
       */
     inline def TransitionTo(
       property: String,
-      targetValue: js.Any,
-      host: js.Any,
+      targetValue: Any,
+      host: Any,
       scene: Scene,
       frameRate: Double,
       transition: Animation,
@@ -930,8 +1085,8 @@ object animationMod {
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     inline def TransitionTo(
       property: String,
-      targetValue: js.Any,
-      host: js.Any,
+      targetValue: Any,
+      host: Any,
       scene: Scene,
       frameRate: Double,
       transition: Animation,
@@ -940,6 +1095,14 @@ object animationMod {
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
+      * @param name
+      * @param targetProperty
+      * @param framePerSecond
+      * @param totalFrame
+      * @param from
+      * @param to
+      * @param loopMode
+      * @param easingFunction
       * @hidden Internal use
       */
     inline def _PrepareAnimation(
@@ -947,16 +1110,16 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any
+      from: Any,
+      to: Any
     ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
     inline def _PrepareAnimation(
       name: String,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double
     ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
     inline def _PrepareAnimation(
@@ -964,8 +1127,8 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Double,
       easingFunction: EasingFunction
     ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
@@ -974,30 +1137,40 @@ object animationMod {
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
+      from: Any,
+      to: Any,
       loopMode: Unit,
       easingFunction: EasingFunction
     ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
     
-    /** @hidden */
-    inline def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("babylonjs/Animations/animation", "Animation._UniqueIdGenerator")
+    @js.native
+    def _UniqueIdGenerator: Any = js.native
+    inline def _UniqueIdGenerator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdGenerator")(x.asInstanceOf[js.Any])
+    
+    /**
+      * @param left
+      * @param right
+      * @param amount
+      * @hidden
+      */
+    inline def _UniversalLerp(left: Any, right: Any, amount: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("babylonjs/Animations/animation", "_IAnimationState")
   @js.native
-  class IAnimationState () extends StObject {
+  open class IAnimationState () extends StObject {
     
-    var highLimitValue: js.UndefOr[js.Any] = js.native
+    var highLimitValue: js.UndefOr[Any] = js.native
     
     var key: Double = js.native
     
     var loopMode: js.UndefOr[Double] = js.native
     
-    var offsetValue: js.UndefOr[js.Any] = js.native
+    var offsetValue: js.UndefOr[Any] = js.native
     
     var repeatCount: Double = js.native
     
-    var workValue: js.UndefOr[js.Any] = js.native
+    var workValue: js.UndefOr[Any] = js.native
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.FetchListViewWebPartPageComponentWorker")
 @js.native
-class FetchListViewWebPartPageComponentWorker ()
+open class FetchListViewWebPartPageComponentWorker ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.FetchListViewWebPartPageComponentWorker

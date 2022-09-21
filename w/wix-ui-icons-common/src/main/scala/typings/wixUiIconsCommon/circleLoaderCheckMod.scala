@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object circleLoaderCheckMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/CircleLoaderCheck", JSImport.Default)
   @js.native
-  val default: SFC[CircleLoaderCheckProps] = js.native
+  val default: FC[CircleLoaderCheckProps] = js.native
   
   trait CircleLoaderCheckProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CircleLoaderCheckProps {
     
@@ -29,14 +29,14 @@ object circleLoaderCheckMod extends Shortcut {
     
     extension [Self <: CircleLoaderCheckProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[CircleLoaderCheckProps]
+  type _To = FC[CircleLoaderCheckProps]
   
   /* This means you don't have to write `default`, but can instead just say `circleLoaderCheckMod.foo` */
-  override def _to: SFC[CircleLoaderCheckProps] = default
+  override def _to: FC[CircleLoaderCheckProps] = default
 }

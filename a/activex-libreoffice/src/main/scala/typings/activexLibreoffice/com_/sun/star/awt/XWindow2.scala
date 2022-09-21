@@ -60,7 +60,7 @@ object XWindow2 {
     isActive: () => Boolean,
     isEnabled: () => Boolean,
     isVisible: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeFocusListener: XFocusListener => Unit,

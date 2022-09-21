@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "Database")
 @js.native
-class Database () extends StObject {
+open class Database () extends StObject {
   def this(connection: Connection) = this()
   
   def buildRules(): SelectQueryRules = js.native
@@ -30,7 +30,7 @@ class Database () extends StObject {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def end(maybeAcallbackError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def end(maybeAcallbackError: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   def has(tableName: String): Boolean = js.native
   def has(tableName: String, functionName: String): Boolean = js.native
@@ -44,11 +44,11 @@ class Database () extends StObject {
   
   def noticeReady(): Unit = js.native
   
-  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any]): Unit = js.native
+  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ Any, Any]): Unit = js.native
   def query(
     queryStr: String,
-    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any],
-    queryArguments: js.Array[js.Any]
+    callback: js.Function2[/* err */ MysqlError, /* results */ Any, Any],
+    queryArguments: js.Array[Any]
   ): Unit = js.native
   
   def ready(): Unit = js.native
@@ -68,7 +68,7 @@ class Database () extends StObject {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def useOnly(useTables: js.Any*): Unit = js.native
+  def useOnly(useTables: Any*): Unit = js.native
 }
 object Database {
   
@@ -77,5 +77,5 @@ object Database {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def when(_promises: typings.bluebird.mod.^[js.Any]*): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(_promises.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
+  inline def when(_promises: typings.bluebird.mod.^[Any]*): typings.bluebird.mod.^[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(_promises.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.bluebird.mod.^[Any]]
 }

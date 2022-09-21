@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ExportAgentRequest.
   * @param [properties] Properties to set
   */
-class ExportAgentRequest ()
+open class ExportAgentRequest ()
   extends StObject
      with IExportAgentRequest {
   def this(properties: IExportAgentRequest) = this()
@@ -33,7 +32,7 @@ class ExportAgentRequest ()
     * Converts this ExportAgentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ExportAgentRequest {
   
@@ -50,6 +49,8 @@ object ExportAgentRequest {
   inline def create(): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExportAgentRequest]
   inline def create(properties: IExportAgentRequest): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ExportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExportAgentRequest]
   /**
     * Decodes an ExportAgentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ExportAgentRequest {
   /* static member */
   inline def decode(reader: Reader): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   inline def decode(reader: Reader, length: Double): ExportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExportAgentRequest]
-  inline def decode(reader: Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
-  inline def decode(reader: Uint8Array, length: Double): ExportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExportAgentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   /**
     * Decodes an ExportAgentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ExportAgentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
-  inline def decodeDelimited(reader: Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
   /**
     * Encodes the specified ExportAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ExportAgentRequest.verify|verify} messages.
@@ -101,7 +100,7 @@ object ExportAgentRequest {
     * @returns ExportAgentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
   /**
     * Creates a plain object from an ExportAgentRequest message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object ExportAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ExportAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ExportAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ExportAgentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ExportAgentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an ExportAgentRequest message.
@@ -119,5 +118,5 @@ object ExportAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

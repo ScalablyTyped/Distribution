@@ -15,7 +15,7 @@ object imageCanvasMod {
   
   @JSImport("ol/source/ImageCanvas", JSImport.Default)
   @js.native
-  class default () extends ImageCanvasSource {
+  open class default () extends ImageCanvasSource {
     def this(opt_options: Options) = this()
   }
   
@@ -64,7 +64,7 @@ object imageCanvasMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCanvasFunction(value: FunctionType): Self = StObject.set(x, "canvasFunction", value.asInstanceOf[js.Any])
       
@@ -86,7 +86,7 @@ object imageCanvasMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

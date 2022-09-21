@@ -30,7 +30,7 @@ object PhotoCapabilities {
     
     inline def setFillLightMode(value: js.Array[FillLightMode]): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     
-    inline def setFillLightModeVarargs(value: FillLightMode*): Self = StObject.set(x, "fillLightMode", js.Array(value :_*))
+    inline def setFillLightModeVarargs(value: FillLightMode*): Self = StObject.set(x, "fillLightMode", js.Array(value*))
     
     inline def setImageHeight(value: MediaSettingsRange): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     

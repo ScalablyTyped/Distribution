@@ -17,5 +17,5 @@ trait UniqueValueInfoConstructor
 Instantiable0[UniqueValueInfo]
      with Instantiable1[/* properties */ UniqueValueInfoProperties, UniqueValueInfo] {
   
-  def fromJSON(json: js.Any): UniqueValueInfo = js.native
+  def fromJSON(json: Any): UniqueValueInfo = js.native
 }

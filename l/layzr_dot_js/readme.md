@@ -10,10 +10,10 @@ A modern lazy loading library for images.
 | ------------------ | :-------------: |
 | Full name          | layzr.js |
 | Keywords           | images, lazy, load, scroll |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 138844 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12082.0 |
+| # stars            | 5628.0 |
 
 ## Links
 - [Homepage](https://github.com/callmecavs/layzr.js#readme)

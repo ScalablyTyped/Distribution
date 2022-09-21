@@ -4,19 +4,16 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Express
 import typings.express.mod.RequestHandler
+import typings.expressServeStaticCore.mod.Application
 import typings.expressServeStaticCore.mod.IRouter
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.lodash.mod.Collection
 import typings.lodash.mod.Function
 import typings.lodash.mod.List
 import typings.lodash.mod.LoDashStatic
 import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
+import typings.std.Record
 import typings.yog2Kernel.anon.CleanCache
 import typings.yog2Kernel.anon.TypeofRAL
 import typings.yog2Kernel.anon.TypeofRALPromise
@@ -34,39 +31,167 @@ object mod extends Shortcut {
   
   trait ActionObject
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var copy: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var copy: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var del: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var del: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var delete: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var delete: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var get: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var get: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var head: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var head: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var link: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var link: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var lock: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var lock: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var options: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var options: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var patch: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var patch: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var post: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var post: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var propfind: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var propfind: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var purge: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var purge: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var put: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var put: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var unlick: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var unlick: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var unlock: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var unlock: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
-    var view: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var view: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
   }
   object ActionObject {
     
@@ -78,97 +203,97 @@ object mod extends Shortcut {
     extension [Self <: ActionObject](x: Self) {
       
       inline def setCopy(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "copy", js.Any.fromFunction3(value))
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       inline def setDel(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "del", js.Any.fromFunction3(value))
       
       inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
       inline def setDelete(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
       inline def setGet(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
       inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
       inline def setHead(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "head", js.Any.fromFunction3(value))
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
       inline def setLink(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "link", js.Any.fromFunction3(value))
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
       inline def setLock(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "lock", js.Any.fromFunction3(value))
       
       inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
       
       inline def setOptions(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "options", js.Any.fromFunction3(value))
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       inline def setPatch(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
       
       inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
       
       inline def setPost(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
       inline def setPropfind(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "propfind", js.Any.fromFunction3(value))
       
       inline def setPropfindUndefined: Self = StObject.set(x, "propfind", js.undefined)
       
       inline def setPurge(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "purge", js.Any.fromFunction3(value))
       
       inline def setPurgeUndefined: Self = StObject.set(x, "purge", js.undefined)
       
       inline def setPut(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
       
       inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
       
       inline def setUnlick(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "unlick", js.Any.fromFunction3(value))
       
       inline def setUnlickUndefined: Self = StObject.set(x, "unlick", js.undefined)
       
       inline def setUnlock(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "unlock", js.Any.fromFunction3(value))
       
       inline def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
       
       inline def setView(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request, /* res */ typings.expressServeStaticCore.mod.Response, /* next */ js.UndefOr[NextFunction]) => Any
       ): Self = StObject.set(x, "view", js.Any.fromFunction3(value))
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
@@ -177,7 +302,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Request
-    extends typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query] {
+    extends StObject
+       with typings.expressServeStaticCore.mod.Request {
     
     var CURRENT_APP: String = js.native
     
@@ -188,7 +314,7 @@ object mod extends Shortcut {
   
   @js.native
   trait Response
-    extends typings.expressServeStaticCore.mod.Response[js.Any, Double] {
+    extends typings.expressServeStaticCore.mod.Response {
     
     var bigpipe: BigPipe = js.native
   }
@@ -196,16 +322,28 @@ object mod extends Shortcut {
   @js.native
   trait Router extends IRouter {
     
-    def action(actionName: String): (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | ActionObject = js.native
+    def action(actionName: String): (RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]) | ActionObject = js.native
     
     def wrapAsync(
       fn: js.Function3[
           /* req */ Request, 
           /* resp */ Response, 
           /* next */ typings.express.mod.NextFunction, 
-          js.Any
+          Any
         ]
-    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    ): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
   @js.native
@@ -226,7 +364,7 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore(value: String): typings.lodash.mod.String = js.native
     @JSName("_")
-    def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
+    def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
     @JSName("_")
     def _underscore[T](value: List[T]): Collection[T] = js.native
     @JSName("_")
@@ -234,9 +372,9 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore_T_Collection[T](): Collection[T] = js.native
     @JSName("_")
-    def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+    def _underscore_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
     @JSName("_")
-    def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
+    def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
     @JSName("_")
     def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
     @JSName("_")
@@ -310,22 +448,9 @@ object mod extends Shortcut {
       * upperFirst, value, and words.
       **/
     @JSName("_")
-    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & typings.lodash.mod.String = js.native
+    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & typings.lodash.mod.String = js.native
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def app(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
-      res: typings.expressServeStaticCore.mod.Response[js.Any, Double]
-    ): js.Any = js.native
-    def app(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
-      res: ServerResponse
-    ): js.Any = js.native
-    def app(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[js.Any, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(): Application = js.native
     @JSName("app")
     var app_Original: Express = js.native
     
@@ -352,7 +477,7 @@ object mod extends Shortcut {
     // debug模式时存在
     var reloadView: js.UndefOr[js.Function0[Unit]] = js.native
     
-    def require(moduleName: String): js.Any = js.native
+    def require(moduleName: String): Any = js.native
     
     var view: CleanCache = js.native
   }

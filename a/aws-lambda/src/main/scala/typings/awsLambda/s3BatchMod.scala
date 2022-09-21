@@ -43,7 +43,7 @@ object s3BatchMod {
       
       inline def setTasks(value: js.Array[S3BatchEventTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      inline def setTasksVarargs(value: S3BatchEventTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: S3BatchEventTask*): Self = StObject.set(x, "tasks", js.Array(value*))
     }
   }
   
@@ -127,7 +127,7 @@ object s3BatchMod {
       
       inline def setResults(value: js.Array[S3BatchResultResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: S3BatchResultResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: S3BatchResultResult*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setTreatMissingKeysAs(value: S3BatchResultResultCode): Self = StObject.set(x, "treatMissingKeysAs", value.asInstanceOf[js.Any])
     }

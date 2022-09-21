@@ -11,6 +11,7 @@ import typings.aliOss.anon.Name
 import typings.aliOss.anon.ResRules
 import typings.aliOss.anon.Rules
 import typings.aliOss.anon.SourceBucketName
+import typings.aliOss.anon.Status
 import typings.aliOss.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,8 +29,20 @@ trait OSS extends StObject {
   /**
     * Append an object to the bucket, it's almost same as put, but it can add content to existing object rather than override it.
     */
-  def append(name: String, file: js.Any): js.Promise[AppendObjectResult] = js.native
-  def append(name: String, file: js.Any, options: AppendObjectOptions): js.Promise[AppendObjectResult] = js.native
+  def append(name: String, file: Any): js.Promise[AppendObjectResult] = js.native
+  def append(name: String, file: Any, options: AppendObjectOptions): js.Promise[AppendObjectResult] = js.native
+  
+  def calculatePostSignature(/**
+    * policy config object or JSON string
+    */
+  policy: String): PostObjectParams = js.native
+  /**
+    * get postObject params.
+    */
+  def calculatePostSignature(/**
+    * policy config object or JSON string
+    */
+  policy: js.Object): PostObjectParams = js.native
   
   /**
     * After uploading all data parts, you must call the Complete Multipart Upload API to complete Multipart Upload for the entire file.
@@ -42,6 +55,9 @@ trait OSS extends StObject {
     */
   def copy(name: String, sourceName: String): js.Promise[CopyAndPutMetaResult] = js.native
   def copy(name: String, sourceName: String, options: CopyObjectOptions): js.Promise[CopyAndPutMetaResult] = js.native
+  def copy(name: String, sourceName: String, sourceBucket: String): js.Promise[CopyAndPutMetaResult] = js.native
+  def copy(name: String, sourceName: String, sourceBucket: String, options: CopyObjectOptions): js.Promise[CopyAndPutMetaResult] = js.native
+  def copy(name: String, sourceName: String, sourceBucket: Unit, options: CopyObjectOptions): js.Promise[CopyAndPutMetaResult] = js.native
   
   /**
     * Create a VOD playlist for the channel.
@@ -79,6 +95,12 @@ trait OSS extends StObject {
   def deleteBucketLogging(name: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   
   /**
+    * Deletes the policy added for a bucket.
+    */
+  def deleteBucketPolicy(name: String): js.Promise[Status] = js.native
+  def deleteBucketPolicy(name: String, options: RequestOptions): js.Promise[Status] = js.native
+  
+  /**
     * Delete the bucket request Referer white list.
     */
   def deleteBucketReferer(name: String): js.Promise[NormalSuccessResponse] = js.native
@@ -112,8 +134,8 @@ trait OSS extends StObject {
     * Get an object from the bucket.
     */
   def get(name: String): js.Promise[GetObjectResult] = js.native
-  def get(name: String, file: js.Any): js.Promise[GetObjectResult] = js.native
-  def get(name: String, file: js.Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: Any): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: Unit, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   
   /**
@@ -137,7 +159,7 @@ trait OSS extends StObject {
   /**
     * Get bucket information,include CreationDate、ExtranetEndpoint、IntranetEndpoint、Location、Name、StorageClass、 Owner、AccessControlList
     */
-  def getBucketInfo(name: String): js.Promise[js.Any] = js.native
+  def getBucketInfo(name: String): js.Promise[Any] = js.native
   
   /**
     * Get the bucket object lifecycle.
@@ -148,13 +170,19 @@ trait OSS extends StObject {
   /**
     * Get bucket location
     */
-  def getBucketLocation(name: String): js.Promise[js.Any] = js.native
+  def getBucketLocation(name: String): js.Promise[Any] = js.native
   
   /**
     * Get the bucket logging settings.
     */
   def getBucketLogging(name: String): js.Promise[Enable] = js.native
   def getBucketLogging(name: String, options: RequestOptions): js.Promise[Enable] = js.native
+  
+  /**
+    * Obtains the policy for a bucket.
+    */
+  def getBucketPolicy(name: String): js.Promise[GetBucketPolicyResult] = js.native
+  def getBucketPolicy(name: String, options: RequestOptions): js.Promise[GetBucketPolicyResult] = js.native
   
   /**
     * Get the bucket request Referer white list.
@@ -260,7 +288,7 @@ trait OSS extends StObject {
   /**
     * Upload file with OSS multipart.
     */
-  def multipartUpload(name: String, file: js.Any, options: MultipartUploadOptions): js.Promise[MultipartUploadResult] = js.native
+  def multipartUpload(name: String, file: Any, options: MultipartUploadOptions): js.Promise[MultipartUploadResult] = js.native
   
   /**
     * Copy file with OSS multipart.
@@ -273,8 +301,8 @@ trait OSS extends StObject {
   /**
     * Add an object to the bucket.
     */
-  def put(name: String, file: js.Any): js.Promise[PutObjectResult] = js.native
-  def put(name: String, file: js.Any, options: PutObjectOptions): js.Promise[PutObjectResult] = js.native
+  def put(name: String, file: Any): js.Promise[PutObjectResult] = js.native
+  def put(name: String, file: Any, options: PutObjectOptions): js.Promise[PutObjectResult] = js.native
   
   /**
     * Set object's ACL.
@@ -318,6 +346,13 @@ trait OSS extends StObject {
   def putBucketLogging(name: String, prefix: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putBucketLogging(name: String, prefix: Unit, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   
+  // policy operations
+  /**
+    * Adds or modify policy for a bucket.
+    */
+  def putBucketPolicy(name: String, policy: BucketPolicy): js.Promise[Status] = js.native
+  def putBucketPolicy(name: String, policy: BucketPolicy, options: RequestOptions): js.Promise[Status] = js.native
+  
   // referer operations
   /**
     * Set the bucket request Referer white list.
@@ -354,8 +389,8 @@ trait OSS extends StObject {
   /**
     * Add a stream object to the bucket.
     */
-  def putStream(name: String, stream: js.Any): js.Promise[Name] = js.native
-  def putStream(name: String, stream: js.Any, options: PutStreamOptions): js.Promise[Name] = js.native
+  def putStream(name: String, stream: Any): js.Promise[Name] = js.native
+  def putStream(name: String, stream: Any, options: PutStreamOptions): js.Promise[Name] = js.native
   
   /**
     * Restore Object.
@@ -372,12 +407,12 @@ trait OSS extends StObject {
   /**
     * After initiating a Multipart Upload event, you can upload data in parts based on the specified object name and Upload ID.
     */
-  def uploadPart(name: String, uploadId: String, partNo: Double, file: js.Any, start: Double, end: Double): js.Promise[UploadPartResult] = js.native
+  def uploadPart(name: String, uploadId: String, partNo: Double, file: Any, start: Double, end: Double): js.Promise[UploadPartResult] = js.native
   def uploadPart(
     name: String,
     uploadId: String,
     partNo: Double,
-    file: js.Any,
+    file: Any,
     start: Double,
     end: Double,
     options: RequestOptions

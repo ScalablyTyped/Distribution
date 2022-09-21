@@ -1,6 +1,5 @@
 package typings.xhrMock
 
-import typings.std.Error
 import typings.xhrMock.mockHeadersMod.MockHeaders
 import typings.xhrMock.mockRequestMod.default
 import org.scalablytyped.runtime.StObject
@@ -11,20 +10,20 @@ object typesMod {
   
   trait ErrorCallbackEvent extends StObject {
     
-    var err: Error
+    var err: js.Error
     
     var req: default
   }
   object ErrorCallbackEvent {
     
-    inline def apply(err: Error, req: default): ErrorCallbackEvent = {
+    inline def apply(err: js.Error, req: default): ErrorCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorCallbackEvent]
     }
     
     extension [Self <: ErrorCallbackEvent](x: Self) {
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setReq(value: default): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
@@ -42,7 +41,7 @@ object typesMod {
   
   trait MockObject extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[MockHeaders] = js.undefined
     
@@ -59,7 +58,7 @@ object typesMod {
     
     extension [Self <: MockObject](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkPoints")
 @js.native
-/* private */ class SparkPoints ()
+/* private */ open class SparkPoints ()
   extends StObject
      with typings.activexExcel.Excel.SparkPoints {
   
@@ -40,5 +40,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Negative: typings.activexExcel.Excel.SparkColor = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

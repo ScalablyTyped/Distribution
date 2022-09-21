@@ -1,9 +1,5 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,39 +9,28 @@ trait ParamsResourceIndexingDatasourcesItemsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * When set to true, the indexing system only populates the following
-    * fields: name, version, metadata.hash, structured_data.hash, content.hash.
-    * <br />If this value is false, then all the fields are populated in Item.
+    * When set to true, the indexing system only populates the following fields: name, version, queue. metadata.hash, metadata.title, metadata.sourceRepositoryURL, metadata.objectType, metadata.createTime, metadata.updateTime, metadata.contentLanguage, metadata.mimeType, structured_data.hash, content.hash, itemType, itemStatus.code, itemStatus.processingError.code, itemStatus.repositoryError.type, If this value is false, then all the fields are populated in Item.
     */
   var brief: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Name of connector making this call. <br />Format:
-    * datasources/{source_id}/connectors/{ID}
+    * The name of connector making this call. Format: datasources/{source_id\}/connectors/{ID\}
     */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /**
-    * If set, the request will enable debugging features of Cloud Search. Only
-    * turn on this field, if asked by Google to help with debugging.
+    * If you are asked by Google to help with debugging, set this field. Otherwise, ignore this field.
     */
   @JSName("debugOptions.enableDebugging")
   var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Name of the Data Source to list Items.  Format: datasources/{source_id}
+    * The name of the Data Source to list Items. Format: datasources/{source_id\}
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of items to fetch in a request. The max value is 1000 when
-    * brief is true.  The max value is 10 if brief is false. <br />The default
-    * value is 10
+    * Maximum number of items to fetch in a request. The max value is 1000 when brief is true. The max value is 10 if brief is false. The default value is 10
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -62,10 +47,6 @@ object ParamsResourceIndexingDatasourcesItemsList {
   }
   
   extension [Self <: ParamsResourceIndexingDatasourcesItemsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setBrief(value: Boolean): Self = StObject.set(x, "brief", value.asInstanceOf[js.Any])
     

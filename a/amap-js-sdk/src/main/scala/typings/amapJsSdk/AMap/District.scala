@@ -41,7 +41,7 @@ object District {
     
     inline def setBoundaries(value: js.Array[LngLat]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
-    inline def setBoundariesVarargs(value: LngLat*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
+    inline def setBoundariesVarargs(value: LngLat*): Self = StObject.set(x, "boundaries", js.Array(value*))
     
     inline def setCenter(value: LngLat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object District {
     
     inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
     
-    inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+    inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value*))
     
     inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

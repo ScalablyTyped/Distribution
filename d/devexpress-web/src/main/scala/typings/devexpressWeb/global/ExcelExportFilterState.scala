@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ExcelExportFilterState")
 @js.native
-class ExcelExportFilterState ()
+open class ExcelExportFilterState ()
   extends StObject
      with typings.devexpressWeb.ExcelExportFilterState
 object ExcelExportFilterState {

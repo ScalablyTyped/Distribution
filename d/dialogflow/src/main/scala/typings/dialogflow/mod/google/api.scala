@@ -11,7 +11,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.History
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object api {
     * Constructs a new CustomHttpPattern.
     * @param [properties] Properties to set
     */
-  class CustomHttpPattern ()
+  open class CustomHttpPattern ()
     extends StObject
        with ICustomHttpPattern {
     def this(properties: ICustomHttpPattern) = this()
@@ -43,7 +42,7 @@ object api {
       * Converts this CustomHttpPattern to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object CustomHttpPattern {
     
@@ -60,6 +59,8 @@ object api {
     inline def create(): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CustomHttpPattern]
     inline def create(properties: ICustomHttpPattern): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
+    inline def decode(reader: js.typedarray.Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CustomHttpPattern]
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -71,9 +72,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     inline def decode(reader: Reader, length: Double): CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CustomHttpPattern]
-    inline def decode(reader: Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
-    inline def decode(reader: Uint8Array, length: Double): CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CustomHttpPattern]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -83,7 +83,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
-    inline def decodeDelimited(reader: Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
     /**
       * Encodes the specified CustomHttpPattern message. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -111,7 +110,7 @@ object api {
       * @returns CustomHttpPattern
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
+    inline def fromObject(`object`: StringDictionary[Any]): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
     /**
       * Creates a plain object from a CustomHttpPattern message. Also converts values to other types if specified.
@@ -120,8 +119,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: CustomHttpPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: CustomHttpPattern, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: CustomHttpPattern): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: CustomHttpPattern, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a CustomHttpPattern message.
@@ -129,7 +128,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -186,7 +185,7 @@ object api {
     * Constructs a new Http.
     * @param [properties] Properties to set
     */
-  class Http ()
+  open class Http ()
     extends StObject
        with IHttp {
     def this(properties: IHttp) = this()
@@ -203,7 +202,7 @@ object api {
       * Converts this Http to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Http {
     
@@ -220,6 +219,8 @@ object api {
     inline def create(): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Http]
     inline def create(properties: IHttp): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Http]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Http]
     /**
       * Decodes a Http message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -231,9 +232,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
     inline def decode(reader: Reader, length: Double): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Http]
-    inline def decode(reader: Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
-    inline def decode(reader: Uint8Array, length: Double): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Http]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
     /**
       * Decodes a Http message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -243,7 +243,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
-    inline def decodeDelimited(reader: Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
     
     /**
       * Encodes the specified Http message. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -271,7 +270,7 @@ object api {
       * @returns Http
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Http]
+    inline def fromObject(`object`: StringDictionary[Any]): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Http]
     
     /**
       * Creates a plain object from a Http message. Also converts values to other types if specified.
@@ -280,8 +279,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Http): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Http, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Http): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Http, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Http message.
@@ -289,7 +288,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a HttpRule. */
@@ -299,7 +298,7 @@ object api {
     * Constructs a new HttpRule.
     * @param [properties] Properties to set
     */
-  class HttpRule ()
+  open class HttpRule ()
     extends StObject
        with IHttpRule {
     def this(properties: IHttpRule) = this()
@@ -347,7 +346,7 @@ object api {
       * Converts this HttpRule to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object HttpRule {
     
@@ -364,6 +363,8 @@ object api {
     inline def create(): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HttpRule]
     inline def create(properties: IHttpRule): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
+    inline def decode(reader: js.typedarray.Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HttpRule]
     /**
       * Decodes a HttpRule message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -375,9 +376,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     inline def decode(reader: Reader, length: Double): HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HttpRule]
-    inline def decode(reader: Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
-    inline def decode(reader: Uint8Array, length: Double): HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HttpRule]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     /**
       * Decodes a HttpRule message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -387,7 +387,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
-    inline def decodeDelimited(reader: Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
     /**
       * Encodes the specified HttpRule message. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -415,7 +414,7 @@ object api {
       * @returns HttpRule
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
+    inline def fromObject(`object`: StringDictionary[Any]): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
     /**
       * Creates a plain object from a HttpRule message. Also converts values to other types if specified.
@@ -424,8 +423,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: HttpRule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: HttpRule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: HttpRule): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: HttpRule, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a HttpRule message.
@@ -433,7 +432,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceDescriptor. */
@@ -443,7 +442,7 @@ object api {
     * Constructs a new ResourceDescriptor.
     * @param [properties] Properties to set
     */
-  class ResourceDescriptor ()
+  open class ResourceDescriptor ()
     extends StObject
        with IResourceDescriptor {
     def this(properties: IResourceDescriptor) = this()
@@ -472,7 +471,7 @@ object api {
       * Converts this ResourceDescriptor to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** ResourceDescriptor type. */
     @JSName("type")
@@ -522,6 +521,8 @@ object api {
     inline def create(): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceDescriptor]
     inline def create(properties: IResourceDescriptor): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
+    inline def decode(reader: js.typedarray.Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceDescriptor]
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -533,9 +534,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     inline def decode(reader: Reader, length: Double): ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceDescriptor]
-    inline def decode(reader: Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
-    inline def decode(reader: Uint8Array, length: Double): ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceDescriptor]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -545,7 +545,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
-    inline def decodeDelimited(reader: Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
     /**
       * Encodes the specified ResourceDescriptor message. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -573,7 +572,7 @@ object api {
       * @returns ResourceDescriptor
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
+    inline def fromObject(`object`: StringDictionary[Any]): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
     /**
       * Creates a plain object from a ResourceDescriptor message. Also converts values to other types if specified.
@@ -582,8 +581,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ResourceDescriptor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: ResourceDescriptor, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ResourceDescriptor): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ResourceDescriptor, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ResourceDescriptor message.
@@ -591,7 +590,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceReference. */
@@ -601,7 +600,7 @@ object api {
     * Constructs a new ResourceReference.
     * @param [properties] Properties to set
     */
-  class ResourceReference ()
+  open class ResourceReference ()
     extends StObject
        with IResourceReference {
     def this(properties: IResourceReference) = this()
@@ -614,7 +613,7 @@ object api {
       * Converts this ResourceReference to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** ResourceReference type. */
     @JSName("type")
@@ -635,6 +634,8 @@ object api {
     inline def create(): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceReference]
     inline def create(properties: IResourceReference): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
+    inline def decode(reader: js.typedarray.Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceReference]
     /**
       * Decodes a ResourceReference message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -646,9 +647,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     inline def decode(reader: Reader, length: Double): ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceReference]
-    inline def decode(reader: Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
-    inline def decode(reader: Uint8Array, length: Double): ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceReference]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     /**
       * Decodes a ResourceReference message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -658,7 +658,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
-    inline def decodeDelimited(reader: Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
     /**
       * Encodes the specified ResourceReference message. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -686,7 +685,7 @@ object api {
       * @returns ResourceReference
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
+    inline def fromObject(`object`: StringDictionary[Any]): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
     /**
       * Creates a plain object from a ResourceReference message. Also converts values to other types if specified.
@@ -695,8 +694,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ResourceReference): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: ResourceReference, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ResourceReference): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ResourceReference, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ResourceReference message.
@@ -704,7 +703,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of a CustomHttpPattern. */
@@ -769,7 +768,7 @@ object api {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: IHttpRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: IHttpRule*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
   
@@ -821,7 +820,7 @@ object api {
       
       inline def setAdditionalBindingsUndefined: Self = StObject.set(x, "additionalBindings", js.undefined)
       
-      inline def setAdditionalBindingsVarargs(value: IHttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value :_*))
+      inline def setAdditionalBindingsVarargs(value: IHttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value*))
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -931,7 +930,7 @@ object api {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
       
       inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       

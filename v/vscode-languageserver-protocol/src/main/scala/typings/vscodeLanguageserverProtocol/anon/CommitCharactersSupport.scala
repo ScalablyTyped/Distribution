@@ -18,15 +18,49 @@ trait CommitCharactersSupport extends StObject {
   var deprecatedSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Client supports the follow content formats for the documentation
+    * Client supports the following content formats for the documentation
     * property. The order describes the preferred format of the client.
     */
   var documentationFormat: js.UndefOr[js.Array[MarkupKind]] = js.undefined
   
   /**
+    * Client support insert replace edit to control different behavior if a
+    * completion item is inserted in the text or should replace text.
+    *
+    * @since 3.16.0
+    */
+  var insertReplaceSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The client supports the `insertTextMode` property on
+    * a completion item to override the whitespace handling mode
+    * as defined by the client (see `insertTextMode`).
+    *
+    * @since 3.16.0
+    */
+  var insertTextModeSupport: js.UndefOr[`0`] = js.undefined
+  
+  /**
+    * The client has support for completion item label
+    * details (see also `CompletionItemLabelDetails`).
+    *
+    * @since 3.17.0
+    */
+  var labelDetailsSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Client supports the preselect property on a completion item.
     */
   var preselectSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates which properties a client can resolve lazily on a completion
+    * item. Before version 3.16.0 only the predefined properties `documentation`
+    * and `details` could be resolved lazily.
+    *
+    * @since 3.16.0
+    */
+  var resolveSupport: js.UndefOr[Properties] = js.undefined
   
   /**
     * Client supports snippets as insert text.
@@ -69,11 +103,27 @@ object CommitCharactersSupport {
     
     inline def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
     
-    inline def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
+    inline def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value*))
+    
+    inline def setInsertReplaceSupport(value: Boolean): Self = StObject.set(x, "insertReplaceSupport", value.asInstanceOf[js.Any])
+    
+    inline def setInsertReplaceSupportUndefined: Self = StObject.set(x, "insertReplaceSupport", js.undefined)
+    
+    inline def setInsertTextModeSupport(value: `0`): Self = StObject.set(x, "insertTextModeSupport", value.asInstanceOf[js.Any])
+    
+    inline def setInsertTextModeSupportUndefined: Self = StObject.set(x, "insertTextModeSupport", js.undefined)
+    
+    inline def setLabelDetailsSupport(value: Boolean): Self = StObject.set(x, "labelDetailsSupport", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDetailsSupportUndefined: Self = StObject.set(x, "labelDetailsSupport", js.undefined)
     
     inline def setPreselectSupport(value: Boolean): Self = StObject.set(x, "preselectSupport", value.asInstanceOf[js.Any])
     
     inline def setPreselectSupportUndefined: Self = StObject.set(x, "preselectSupport", js.undefined)
+    
+    inline def setResolveSupport(value: Properties): Self = StObject.set(x, "resolveSupport", value.asInstanceOf[js.Any])
+    
+    inline def setResolveSupportUndefined: Self = StObject.set(x, "resolveSupport", js.undefined)
     
     inline def setSnippetSupport(value: Boolean): Self = StObject.set(x, "snippetSupport", value.asInstanceOf[js.Any])
     

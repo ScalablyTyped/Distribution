@@ -34,7 +34,7 @@ object SimpleMethodSpec {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value*))
     
     inline def setImplementation(value: I): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

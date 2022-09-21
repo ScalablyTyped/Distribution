@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FreeCameraInputsManager")
 @js.native
-class FreeCameraInputsManager protected ()
+open class FreeCameraInputsManager protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FreeCameraInputsManager {
   /**

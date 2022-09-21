@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "BlessedProgram")
 @js.native
-class BlessedProgram () extends EventEmitter {
+open class BlessedProgram () extends EventEmitter {
   def this(options: IBlessedProgramOptions) = this()
   
   def HPositionRelative(): Boolean = js.native
@@ -418,7 +418,7 @@ class BlessedProgram () extends EventEmitter {
   def lsaveCursor(): Unit = js.native
   def lsaveCursor(key: String): Unit = js.native
   
-  def manipulateWindow(args: js.Any*): Boolean = js.native
+  def manipulateWindow(args: Any*): Boolean = js.native
   
   def mc(args: String*): Boolean = js.native
   
@@ -451,7 +451,7 @@ class BlessedProgram () extends EventEmitter {
   
   var options: IBlessedProgramOptions = js.native
   
-  def out(param: String, args: js.Any*): Boolean = js.native
+  def out(param: String, args: Any*): Boolean = js.native
   
   var output: Writable = js.native
   

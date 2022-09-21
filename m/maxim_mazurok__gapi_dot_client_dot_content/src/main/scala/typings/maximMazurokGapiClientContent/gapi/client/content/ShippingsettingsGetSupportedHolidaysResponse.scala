@@ -9,7 +9,7 @@ trait ShippingsettingsGetSupportedHolidaysResponse extends StObject {
   /** A list of holidays applicable for delivery guarantees. May be empty. */
   var holidays: js.UndefOr[js.Array[HolidaysHoliday]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#shippingsettingsGetSupportedHolidaysResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsGetSupportedHolidaysResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object ShippingsettingsGetSupportedHolidaysResponse {
@@ -25,7 +25,7 @@ object ShippingsettingsGetSupportedHolidaysResponse {
     
     inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
     
-    inline def setHolidaysVarargs(value: HolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+    inline def setHolidaysVarargs(value: HolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

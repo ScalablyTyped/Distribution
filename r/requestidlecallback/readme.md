@@ -11,9 +11,9 @@ A polyfill for the requestIdleCallback.
 | Full name          | requestidlecallback |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 4873003 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 901650.6666666666 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/aFarkas/requestIdleCallback#readme)

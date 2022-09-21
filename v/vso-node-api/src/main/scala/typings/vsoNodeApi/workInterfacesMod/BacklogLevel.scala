@@ -46,10 +46,10 @@ object BacklogLevel {
     
     inline def setWorkItemStates(value: js.Array[String]): Self = StObject.set(x, "workItemStates", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemStatesVarargs(value: String*): Self = StObject.set(x, "workItemStates", js.Array(value :_*))
+    inline def setWorkItemStatesVarargs(value: String*): Self = StObject.set(x, "workItemStates", js.Array(value*))
     
     inline def setWorkItemTypes(value: js.Array[String]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
+    inline def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value*))
   }
 }

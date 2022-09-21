@@ -1,190 +1,131 @@
 package typings.prosemirrorState
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.prosemirrorModel.mod.Mark
 import typings.prosemirrorModel.mod.Node
+import typings.prosemirrorModel.mod.Schema
+import typings.prosemirrorState.mod.AllSelection
 import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Plugin
 import typings.prosemirrorState.mod.Selection
 import typings.prosemirrorState.mod.Transaction
-import typings.prosemirrorView.mod.EditorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Destroy[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] extends StObject {
+  trait `0` extends StObject {
     
-    var destroy: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
-    
-    var update: js.UndefOr[
-        (js.Function2[/* view */ EditorView[S], /* prevState */ EditorState[S], Unit]) | Null
-      ] = js.undefined
+    /**
+      New set of active plugins.
+      */
+    var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
   }
-  object Destroy {
+  object `0` {
     
-    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Destroy[S] = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Destroy[S]]
+      __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: Destroy[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Destroy[S]) {
+    extension [Self <: `0`](x: Self) {
       
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setDestroyNull: Self = StObject.set(x, "destroy", null)
-      
-      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
-      
-      inline def setUpdate(value: (/* view */ EditorView[S], /* prevState */ EditorState[S]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
-      
-      inline def setUpdateNull: Self = StObject.set(x, "update", null)
-      
-      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
-    }
-  }
-  
-  trait Doc[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] extends StObject {
-    
-    var doc: js.UndefOr[Node[S] | Null] = js.undefined
-    
-    var plugins: js.UndefOr[(js.Array[Plugin[js.Any, S]]) | Null] = js.undefined
-    
-    var schema: js.UndefOr[S | Null] = js.undefined
-    
-    var selection: js.UndefOr[Selection[S] | Null] = js.undefined
-    
-    var storedMarks: js.UndefOr[js.Array[Mark[js.Any]] | Null] = js.undefined
-  }
-  object Doc {
-    
-    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Doc[S] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Doc[S]]
-    }
-    
-    extension [Self <: Doc[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Doc[S]) {
-      
-      inline def setDoc(value: Node[S]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
-      
-      inline def setDocNull: Self = StObject.set(x, "doc", null)
-      
-      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
-      
-      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
-      
-      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setSchemaNull: Self = StObject.set(x, "schema", null)
-      
-      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
-      
-      inline def setSelection(value: Selection[S]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
-      
-      inline def setSelectionNull: Self = StObject.set(x, "selection", null)
-      
-      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
-      
-      inline def setStoredMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "storedMarks", value.asInstanceOf[js.Any])
-      
-      inline def setStoredMarksNull: Self = StObject.set(x, "storedMarks", null)
-      
-      inline def setStoredMarksUndefined: Self = StObject.set(x, "storedMarks", js.undefined)
-      
-      inline def setStoredMarksVarargs(value: Mark[js.Any]*): Self = StObject.set(x, "storedMarks", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
   
-  @js.native
-  trait Instantiable
-    extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, Selection[js.Any]]
+  trait FromJSON extends StObject {
+    
+    def fromJSON(doc: Node, json: Any): Selection
+  }
+  object FromJSON {
+    
+    inline def apply(fromJSON: (Node, Any) => Selection): FromJSON = {
+      val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction2(fromJSON))
+      __obj.asInstanceOf[FromJSON]
+    }
+    
+    extension [Self <: FromJSON](x: Self) {
+      
+      inline def setFromJSON(value: (Node, Any) => Selection): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
+    }
+  }
   
-  trait Plugins[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] extends StObject {
+  trait Map extends StObject {
     
-    var plugins: js.UndefOr[(js.Array[Plugin[js.Any, S]]) | Null] = js.undefined
+    def map(): Any
     
-    var schema: js.UndefOr[S | Null] = js.undefined
+    def resolve(doc: Node): AllSelection
+  }
+  object Map {
+    
+    inline def apply(map: () => Any, resolve: Node => AllSelection): Map = {
+      val __obj = js.Dynamic.literal(map = js.Any.fromFunction0(map), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[Map]
+    }
+    
+    extension [Self <: Map](x: Self) {
+      
+      inline def setMap(value: () => Any): Self = StObject.set(x, "map", js.Any.fromFunction0(value))
+      
+      inline def setResolve(value: Node => AllSelection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Plugins extends StObject {
+    
+    /**
+      The set of active plugins.
+      */
+    var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
+    
+    /**
+      The schema to use.
+      */
+    var schema: Schema[Any, Any]
   }
   object Plugins {
     
-    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Plugins[S] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Plugins[S]]
-    }
-    
-    extension [Self <: Plugins[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Plugins[S]) {
-      
-      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
-      
-      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setSchemaNull: Self = StObject.set(x, "schema", null)
-      
-      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
-    }
-  }
-  
-  trait Schema[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] extends StObject {
-    
-    var plugins: js.UndefOr[(js.Array[Plugin[js.Any, S]]) | Null] = js.undefined
-    
-    var schema: S
-  }
-  object Schema {
-    
-    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](schema: S): Schema[S] = {
+    inline def apply(schema: Schema[Any, Any]): Plugins = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Schema[S]]
+      __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Schema[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Schema[S]) {
+    extension [Self <: Plugins](x: Self) {
       
-      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Schema[Any, Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
-  trait State[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] extends StObject {
+  trait State extends StObject {
     
-    var state: EditorState[S]
+    var state: EditorState
     
-    var transactions: js.Array[Transaction[S]]
+    var transactions: js.Array[Transaction]
   }
   object State {
     
-    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](state: EditorState[S], transactions: js.Array[Transaction[S]]): State[S] = {
+    inline def apply(state: EditorState, transactions: js.Array[Transaction]): State = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
-      __obj.asInstanceOf[State[S]]
+      __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & State[S]) {
+    extension [Self <: State](x: Self) {
       
-      inline def setState(value: EditorState[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: EditorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setTransactions(value: js.Array[Transaction[S]]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: js.Array[Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: Transaction[S]*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value*))
     }
   }
 }

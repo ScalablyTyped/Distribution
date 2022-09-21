@@ -5,27 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * WorkerMessage provides information to the backend about a worker.
-  */
 trait SchemaWorkerMessage extends StObject {
   
   /**
-    * Labels are used to group WorkerMessages. For example, a worker_message
-    * about a particular container might have the labels: { &quot;JOB_ID&quot;:
-    * &quot;2015-04-22&quot;,   &quot;WORKER_ID&quot;:
-    * &quot;wordcount-vm-2015…&quot;   &quot;CONTAINER_TYPE&quot;:
-    * &quot;worker&quot;,   &quot;CONTAINER_ID&quot;: &quot;ac1234def&quot;}
-    * Label tags typically correspond to Label enum values. However, for ease
-    * of development other strings can be used as tags. LABEL_UNSPECIFIED
-    * should not be used here.
+    * Labels are used to group WorkerMessages. For example, a worker_message about a particular container might have the labels: { "JOB_ID": "2015-04-22", "WORKER_ID": "wordcount-vm-2015…" "CONTAINER_TYPE": "worker", "CONTAINER_ID": "ac1234def"\} Label tags typically correspond to Label enum values. However, for ease of development other strings can be used as tags. LABEL_UNSPECIFIED should not be used here.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
     * The timestamp of the worker_message.
     */
-  var time: js.UndefOr[String] = js.undefined
+  var time: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The health of a worker.
@@ -63,9 +53,13 @@ object SchemaWorkerMessage {
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
     inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     

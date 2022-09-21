@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.ControlWrapper")
 @js.native
-class ControlWrapper ()
+open class ControlWrapper ()
   extends StObject
      with typings.googleVisualization.google.visualization.ControlWrapper {
   def this(opt_spec: ControlWrapperOptions) = this()

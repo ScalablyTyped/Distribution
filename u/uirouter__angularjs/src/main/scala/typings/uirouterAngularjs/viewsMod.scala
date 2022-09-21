@@ -22,7 +22,7 @@ object viewsMod {
   
   @JSImport("@uirouter/angularjs/lib/statebuilders/views", "Ng1ViewConfig")
   @js.native
-  class Ng1ViewConfig protected ()
+  open class Ng1ViewConfig protected ()
     extends StObject
        with ViewConfig {
     def this(path: js.Array[PathNode], viewDecl: Ng1ViewDeclaration, factory: TemplateFactory) = this()
@@ -44,7 +44,7 @@ object viewsMod {
       */
     def getController(context: ResolveContext): IInjectable | String | (js.Promise[IInjectable | String]) = js.native
     
-    def getTemplate(uiView: js.Any, context: ResolveContext): String = js.native
+    def getTemplate(uiView: Any, context: ResolveContext): String = js.native
     
     /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */
     /* CompleteClass */
@@ -53,7 +53,7 @@ object viewsMod {
     /* CompleteClass */
     var loaded: Boolean = js.native
     
-    var locals: js.Any = js.native
+    var locals: Any = js.native
     
     /** The node the ViewConfig is bound to */
     /* CompleteClass */

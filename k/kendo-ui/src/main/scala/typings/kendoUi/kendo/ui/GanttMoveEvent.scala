@@ -1,7 +1,6 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.GanttTask
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,9 @@ trait GanttMoveEvent
   extends StObject
      with GanttEvent {
   
-  var end: js.UndefOr[Date] = js.undefined
+  var end: js.UndefOr[js.Date] = js.undefined
   
-  var start: js.UndefOr[Date] = js.undefined
+  var start: js.UndefOr[js.Date] = js.undefined
   
   var task: js.UndefOr[GanttTask] = js.undefined
 }
@@ -25,11 +24,11 @@ object GanttMoveEvent {
   
   extension [Self <: GanttMoveEvent](x: Self) {
     
-    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ThinMaterialHelper")
 @js.native
-class ThinMaterialHelper ()
+open class ThinMaterialHelper ()
   extends typings.babylonjs.indexMod.ThinMaterialHelper
 /* static members */
 object ThinMaterialHelper {

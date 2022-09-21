@@ -23,8 +23,8 @@ trait MVCxClientScheduler
     * @param data An object containing any information that needs to be passed to a handling Action specified via the SchedulerSettings.CustomActionRouteValues property.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(data: js.Any): Unit = js.native
-  def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  def PerformCallback(data: Any): Unit = js.native
+  def PerformCallback(data: Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
   
   /**
     * Occurs on the client side when the tooltip is about to be displayed.

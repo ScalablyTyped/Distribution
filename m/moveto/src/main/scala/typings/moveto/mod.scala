@@ -16,7 +16,7 @@ object mod {
     * @param options Options
     * @param easeFunctions Custom ease functions
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MoveTo {
     def this(options: MoveToOptions) = this()

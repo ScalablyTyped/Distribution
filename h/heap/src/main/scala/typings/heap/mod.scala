@@ -9,10 +9,18 @@ object mod {
   @JSImport("heap", JSImport.Namespace)
   @js.native
   // Constructor
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with Heap[T] {
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
+    
+    // Clear the heap.
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    // Determine whether the given item is in the heap.
+    /* CompleteClass */
+    override def contains(item: T): Boolean = js.native
     
     /* CompleteClass */
     override def copy(): Heap[T] = js.native
@@ -22,7 +30,10 @@ object mod {
     override def empty(): Boolean = js.native
     
     /* CompleteClass */
-    override def front(): T = js.native
+    override def front(): js.UndefOr[T] = js.native
+    
+    /* CompleteClass */
+    override def has(item: T): Boolean = js.native
     
     // Rebuild the heap. This method may come handy when the priority of the internal data is being modified.
     /* CompleteClass */
@@ -33,11 +44,11 @@ object mod {
     
     // Return the smallest item of the heap.
     /* CompleteClass */
-    override def peek(): T = js.native
+    override def peek(): js.UndefOr[T] = js.native
     
     // Pop the smallest item off the heap and return it.
     /* CompleteClass */
-    override def pop(): T = js.native
+    override def pop(): js.UndefOr[T] = js.native
     
     // Instance Methods
     // Push item onto heap.
@@ -63,7 +74,7 @@ object mod {
     override def toArray(): js.Array[T] = js.native
     
     /* CompleteClass */
-    override def top(): T = js.native
+    override def top(): js.UndefOr[T] = js.native
     
     // Update the position of the given item in the heap. This function should be called every time the item is being modified.
     /* CompleteClass */
@@ -117,12 +128,20 @@ object mod {
   
   trait Heap[T] extends StObject {
     
+    // Clear the heap.
+    def clear(): Unit
+    
+    // Determine whether the given item is in the heap.
+    def contains(item: T): Boolean
+    
     def copy(): Heap[T]
     
     // Determine whether the heap is empty.
     def empty(): Boolean
     
-    def front(): T
+    def front(): js.UndefOr[T]
+    
+    def has(item: T): Boolean
     
     // Rebuild the heap. This method may come handy when the priority of the internal data is being modified.
     def heapify(): Unit
@@ -130,10 +149,10 @@ object mod {
     def insert(item: T): Unit
     
     // Return the smallest item of the heap.
-    def peek(): T
+    def peek(): js.UndefOr[T]
     
     // Pop the smallest item off the heap and return it.
-    def pop(): T
+    def pop(): js.UndefOr[T]
     
     // Instance Methods
     // Push item onto heap.
@@ -153,7 +172,7 @@ object mod {
     // Return the array representation of the heap. (note: the array is a shallow copy of the heap's internal nodes)
     def toArray(): js.Array[T]
     
-    def top(): T
+    def top(): js.UndefOr[T]
     
     // Update the position of the given item in the heap. This function should be called every time the item is being modified.
     def updateItem(item: T): Unit
@@ -161,40 +180,49 @@ object mod {
   object Heap {
     
     inline def apply[T](
+      clear: () => Unit,
+      contains: T => Boolean,
       copy: () => Heap[T],
       empty: () => Boolean,
-      front: () => T,
+      front: () => js.UndefOr[T],
+      has: T => Boolean,
       heapify: () => Unit,
       insert: T => Unit,
-      peek: () => T,
-      pop: () => T,
+      peek: () => js.UndefOr[T],
+      pop: () => js.UndefOr[T],
       push: T => Unit,
       pushpop: T => T,
       replace: T => T,
       size: () => Double,
       toArray: () => js.Array[T],
-      top: () => T,
+      top: () => js.UndefOr[T],
       updateItem: T => Unit
     ): Heap[T] = {
-      val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), empty = js.Any.fromFunction0(empty), front = js.Any.fromFunction0(front), heapify = js.Any.fromFunction0(heapify), insert = js.Any.fromFunction1(insert), peek = js.Any.fromFunction0(peek), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), pushpop = js.Any.fromFunction1(pushpop), replace = js.Any.fromFunction1(replace), size = js.Any.fromFunction0(size), toArray = js.Any.fromFunction0(toArray), top = js.Any.fromFunction0(top), updateItem = js.Any.fromFunction1(updateItem))
+      val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), copy = js.Any.fromFunction0(copy), empty = js.Any.fromFunction0(empty), front = js.Any.fromFunction0(front), has = js.Any.fromFunction1(has), heapify = js.Any.fromFunction0(heapify), insert = js.Any.fromFunction1(insert), peek = js.Any.fromFunction0(peek), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), pushpop = js.Any.fromFunction1(pushpop), replace = js.Any.fromFunction1(replace), size = js.Any.fromFunction0(size), toArray = js.Any.fromFunction0(toArray), top = js.Any.fromFunction0(top), updateItem = js.Any.fromFunction1(updateItem))
       __obj.asInstanceOf[Heap[T]]
     }
     
     extension [Self <: Heap[?], T](x: Self & Heap[T]) {
       
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      
       inline def setCopy(value: () => Heap[T]): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
       inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      inline def setFront(value: () => T): Self = StObject.set(x, "front", js.Any.fromFunction0(value))
+      inline def setFront(value: () => js.UndefOr[T]): Self = StObject.set(x, "front", js.Any.fromFunction0(value))
+      
+      inline def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
       inline def setHeapify(value: () => Unit): Self = StObject.set(x, "heapify", js.Any.fromFunction0(value))
       
       inline def setInsert(value: T => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      inline def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      inline def setPop(value: () => T): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[T]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
       inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
@@ -206,7 +234,7 @@ object mod {
       
       inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      inline def setTop(value: () => T): Self = StObject.set(x, "top", js.Any.fromFunction0(value))
+      inline def setTop(value: () => js.UndefOr[T]): Self = StObject.set(x, "top", js.Any.fromFunction0(value))
       
       inline def setUpdateItem(value: T => Unit): Self = StObject.set(x, "updateItem", js.Any.fromFunction1(value))
     }

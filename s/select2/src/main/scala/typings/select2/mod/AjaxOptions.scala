@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in select2.select2.Sub<keyof jquery.JQueryAjaxSettings, 'url'> ]: jquery.JQueryAjaxSettings[P]} */ trait AjaxOptions[Result, RemoteResult] extends StObject {
   
-  var data: js.UndefOr[js.Function1[/* params */ QueryOptions, PlainObject[js.Any]]] = js.undefined
+  var data: js.UndefOr[js.Function1[/* params */ QueryOptions, PlainObject[Any] | String]] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var transport: js.UndefOr[
     js.Function3[
       /* settings */ JQueryAjaxSettings, 
-      /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, Unit]], 
-      /* failure */ js.UndefOr[js.Function0[Unit]], 
+      /* success */ js.Function1[/* data */ RemoteResult, Unit], 
+      /* failure */ js.Function0[Unit], 
       Unit
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ object AjaxOptions {
   
   extension [Self <: AjaxOptions[?, ?], Result, RemoteResult](x: Self & (AjaxOptions[Result, RemoteResult])) {
     
-    inline def setData(value: /* params */ QueryOptions => PlainObject[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+    inline def setData(value: /* params */ QueryOptions => PlainObject[Any] | String): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -49,7 +49,7 @@ object AjaxOptions {
     inline def setProcessResultsUndefined: Self = StObject.set(x, "processResults", js.undefined)
     
     inline def setTransport(
-      value: (/* settings */ JQueryAjaxSettings, /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, Unit]], /* failure */ js.UndefOr[js.Function0[Unit]]) => Unit
+      value: (/* settings */ JQueryAjaxSettings, /* success */ js.Function1[/* data */ RemoteResult, Unit], /* failure */ js.Function0[Unit]) => Unit
     ): Self = StObject.set(x, "transport", js.Any.fromFunction3(value))
     
     inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)

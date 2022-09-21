@@ -1,6 +1,5 @@
 package typings.forgeViewer.Autodesk.Viewing
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +9,10 @@ trait Document extends StObject {
   
   var acmSessionId: String = js.native
   
-  def downloadAecModelData(): js.Promise[js.Any] = js.native
-  def downloadAecModelData(onFinished: js.Function1[/* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  var docRoot: Any = js.native
+  
+  def downloadAecModelData(): js.Promise[Any] = js.native
+  def downloadAecModelData(onFinished: js.Function1[/* data */ Any, Unit]): js.Promise[Any] = js.native
   
   def getFullPath(urn: String): String = js.native
   
@@ -51,8 +52,22 @@ trait Document extends StObject {
     onErrorCallback: js.Function0[Unit],
     accessControlProperties: js.Object
   ): Unit = js.native
+  def load(
+    documentId: String,
+    onSuccessCallback: js.Function0[Unit],
+    onErrorCallback: js.Function0[Unit],
+    accessControlProperties: js.Object,
+    options: js.Object
+  ): Unit = js.native
+  def load(
+    documentId: String,
+    onSuccessCallback: js.Function0[Unit],
+    onErrorCallback: js.Function0[Unit],
+    accessControlProperties: Unit,
+    options: js.Object
+  ): Unit = js.native
   
-  var myData: js.Any = js.native
+  var myData: Any = js.native
   
-  def requestThumbnailWithSecurity(data: String, onComplete: js.Function2[/* err */ Error, /* response */ js.Any, Unit]): Unit = js.native
+  def requestThumbnailWithSecurity(data: String, onComplete: js.Function2[/* err */ js.Error, /* response */ Any, Unit]): Unit = js.native
 }

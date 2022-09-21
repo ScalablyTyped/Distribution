@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new MorphTargetManager
   * @param scene defines the current scene
   */
-class MorphTargetManager ()
+open class MorphTargetManager ()
   extends typings.babylonjs.indexMod.MorphTargetManager {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }
@@ -22,11 +22,17 @@ object MorphTargetManager {
   @js.native
   val ^ : js.Any = js.native
   
+  /** Enable storing morph target data into textures when set to true (true by default) */
+  @JSImport("babylonjs/Legacy/legacy", "MorphTargetManager.EnableTextureStorage")
+  @js.native
+  def EnableTextureStorage: Boolean = js.native
+  inline def EnableTextureStorage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableTextureStorage")(x.asInstanceOf[js.Any])
+  
   /**
     * Creates a new MorphTargetManager from serialized data
     * @param serializationObject defines the serialized data
     * @param scene defines the hosting scene
     * @returns the new MorphTargetManager
     */
-  inline def Parse(serializationObject: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.morphTargetManagerMod.MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.morphTargetManagerMod.MorphTargetManager]
+  inline def Parse(serializationObject: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.morphTargetManagerMod.MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.morphTargetManagerMod.MorphTargetManager]
 }

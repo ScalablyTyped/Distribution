@@ -50,19 +50,19 @@ trait PartialModalPropsRefAttriAutoFocus extends StObject {
   
   var onBackdropClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
   
-  var onEnter: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onEnter: js.UndefOr[js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]] = js.undefined
   
-  var onEntered: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onEntered: js.UndefOr[js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]] = js.undefined
   
-  var onEntering: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onEntering: js.UndefOr[js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]] = js.undefined
   
   var onEscapeKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, Unit]] = js.undefined
   
-  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
   
-  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
   
-  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
   
   var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -149,15 +149,15 @@ object PartialModalPropsRefAttriAutoFocus {
     
     inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
-    inline def setOnEnter(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+    inline def setOnEnter(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
     
     inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    inline def setOnEntered(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+    inline def setOnEntered(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction2(value))
     
     inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
-    inline def setOnEntering(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+    inline def setOnEntering(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction2(value))
     
     inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
@@ -165,15 +165,15 @@ object PartialModalPropsRefAttriAutoFocus {
     
     inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
     
-    inline def setOnExit(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+    inline def setOnExit(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
     inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    inline def setOnExited(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    inline def setOnExited(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
-    inline def setOnExiting(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
+    inline def setOnExiting(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
     
     inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
     

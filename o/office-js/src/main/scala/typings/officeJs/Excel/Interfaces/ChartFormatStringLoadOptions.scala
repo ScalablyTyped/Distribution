@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle` object.
   *
-  * Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait ChartFormatStringLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait ChartFormatStringLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the font attributes, such as font name, font size, and color of a chart characters object.
     *
-    * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined

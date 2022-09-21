@@ -9,7 +9,7 @@ object defaultLabelModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultLabelModel", "DefaultLabelModel")
   @js.native
-  class DefaultLabelModel () extends LabelModel {
+  open class DefaultLabelModel () extends LabelModel {
     
     var label: String = js.native
     

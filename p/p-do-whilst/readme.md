@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-do-whilst
 
-Typings are for version 1.1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Calls a function repeatedly while a condition returns true and then resolves the promise
@@ -10,10 +10,10 @@ Calls a function repeatedly while a condition returns true and then resolves the
 | ------------------ | :-------------: |
 | Full name          | p-do-whilst |
 | Keywords           | promise, do, whilst, while, loop, wait, condition, conditional, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 280966 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 29091.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-do-whilst#readme)

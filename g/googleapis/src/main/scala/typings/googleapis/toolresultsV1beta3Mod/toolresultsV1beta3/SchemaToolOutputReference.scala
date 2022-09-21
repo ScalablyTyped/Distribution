@@ -4,26 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reference to a ToolExecution output file.
-  */
 trait SchemaToolOutputReference extends StObject {
   
   /**
-    * The creation time of the file.  - In response: present if set by
-    * create/update request - In create/update request: optional
+    * The creation time of the file. - In response: present if set by create/update request - In create/update request: optional
     */
   var creationTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
-    * A FileReference to an output file.  - In response: always set - In
-    * create/update request: always set
+    * A FileReference to an output file. - In response: always set - In create/update request: always set
     */
   var output: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
-    * The test case to which this output file belongs.  - In response: present
-    * if set by create/update request - In create/update request: optional
+    * The test case to which this output file belongs. - In response: present if set by create/update request - In create/update request: optional
     */
   var testCase: js.UndefOr[SchemaTestCaseReference] = js.undefined
 }

@@ -11,11 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def combineActions(actionTypes: (ActionFunctions[js.Any] | String | js.Symbol)*): CombinedActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("combineActions")(actionTypes.asInstanceOf[js.Any]).asInstanceOf[CombinedActionType]
+  inline def combineActions(actionTypes: (ActionFunctions[Any] | String | js.Symbol)*): CombinedActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("combineActions")(actionTypes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CombinedActionType]
   
-  inline def createAction(actionType: String): ActionFunctionAny[Action[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[Action[js.Any]]]
-  inline def createAction[Meta](actionType: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[js.Any, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ActionMeta[js.Any, Meta]]]
-  inline def createAction[Meta](actionType: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[js.Any, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ActionMeta[js.Any, Meta]]]
+  inline def createAction(actionType: String): ActionFunctionAny[Action[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[Action[Any]]]
+  inline def createAction[Meta](actionType: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[Any, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ActionMeta[Any, Meta]]]
+  inline def createAction[Meta](actionType: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[Any, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ActionMeta[Any, Meta]]]
   inline def createAction[Payload](actionType: String, payloadCreator: ActionFunction0[Payload]): ActionFunction0[Action[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunction0[Action[Payload]]]
   inline def createAction[Payload, Arg1](actionType: String, payloadCreator: ActionFunction1[Arg1, Payload]): ActionFunction1[Arg1, Action[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunction1[Arg1, Action[Payload]]]
   inline def createAction[Payload, Meta](
@@ -49,11 +49,11 @@ object mod {
   
   inline def createAction_Payload_ActionFunction1[Payload](actionType: String): ActionFunction1[Payload, Action[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionType.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Payload, Action[Payload]]]
   
-  inline def createActions(actionMapOrIdentityAction: String, identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(actionMapOrIdentityAction.asInstanceOf[js.Any], identityActions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ActionFunctionAny[Action[js.Any]]]]
-  inline def createActions(actionMapOrIdentityAction: ActionMap[js.Any, js.Any], identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(actionMapOrIdentityAction.asInstanceOf[js.Any], identityActions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ActionFunctionAny[Action[js.Any]]]]
+  inline def createActions(actionMapOrIdentityAction: String, identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(List(actionMapOrIdentityAction.asInstanceOf[js.Any]).`++`(identityActions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Any]]]]
+  inline def createActions(actionMapOrIdentityAction: ActionMap[Any, Any], identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(List(actionMapOrIdentityAction.asInstanceOf[js.Any]).`++`(identityActions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Any]]]]
   
-  inline def createActions_Payload[Payload](actionMapOrIdentityAction: String, identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(actionMapOrIdentityAction.asInstanceOf[js.Any], identityActions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Payload]]]]
-  inline def createActions_Payload[Payload](actionMapOrIdentityAction: ActionMap[Payload, js.Any], identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(actionMapOrIdentityAction.asInstanceOf[js.Any], identityActions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Payload]]]]
+  inline def createActions_Payload[Payload](actionMapOrIdentityAction: String, identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Payload]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(List(actionMapOrIdentityAction.asInstanceOf[js.Any]).`++`(identityActions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Payload]]]]
+  inline def createActions_Payload[Payload](actionMapOrIdentityAction: ActionMap[Payload, Any], identityActions: (String | Options)*): StringDictionary[ActionFunctionAny[Action[Payload]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(List(actionMapOrIdentityAction.asInstanceOf[js.Any]).`++`(identityActions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[ActionFunctionAny[Action[Payload]]]]
   
   inline def handleAction[State, Payload](actionType: String, reducer: ReducerNextThrow[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleAction")(actionType.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[ReduxCompatibleReducer[State, Payload]]
   inline def handleAction[State, Payload](actionType: String, reducer: Reducer[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleAction")(actionType.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[ReduxCompatibleReducer[State, Payload]]
@@ -136,7 +136,7 @@ object mod {
   @js.native
   trait ActionFunctionAny[R] extends StObject {
     
-    def apply(args: js.Any*): R = js.native
+    def apply(args: Any*): R = js.native
   }
   
   type ActionFunctions[Payload] = BaseActionFunctions[Action[Payload]]
@@ -196,7 +196,7 @@ object mod {
     }
   }
   
-  type BaseActionFunctions[TAction] = ActionFunction0[TAction] | (ActionFunction1[js.Any, TAction]) | (ActionFunction2[js.Any, js.Any, TAction]) | (ActionFunction3[js.Any, js.Any, js.Any, TAction]) | (ActionFunction4[js.Any, js.Any, js.Any, js.Any, TAction]) | ActionFunctionAny[TAction]
+  type BaseActionFunctions[TAction] = ActionFunction0[TAction] | (ActionFunction1[Any, TAction]) | (ActionFunction2[Any, Any, TAction]) | (ActionFunction3[Any, Any, Any, TAction]) | (ActionFunction4[Any, Any, Any, Any, TAction]) | ActionFunctionAny[TAction]
   
   trait CombinedActionType extends StObject {
     

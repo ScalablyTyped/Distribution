@@ -1,21 +1,35 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.driving
-import typings.devextreme.devextremeStrings.walking
+import typings.devextreme.mod.DevExpress.ui.dxMap.RouteMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Color extends StObject {
   
+  /**
+    * Specifies the color of the line displaying the route.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var locations: js.UndefOr[js.Array[js.Any]] = js.undefined
+  /**
+    * Contains an array of objects making up the route.
+    */
+  var locations: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var mode: js.UndefOr[driving | walking] = js.undefined
+  /**
+    * Specifies a transportation mode to be used in the displayed route.
+    */
+  var mode: js.UndefOr[RouteMode] = js.undefined
   
+  /**
+    * Specifies the opacity of the line displaying the route.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the thickness of the line displaying the route in pixels.
+    */
   var weight: js.UndefOr[Double] = js.undefined
 }
 object Color {
@@ -31,13 +45,13 @@ object Color {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setLocations(value: js.Array[js.Any]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Any]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: js.Any*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Any*): Self = StObject.set(x, "locations", js.Array(value*))
     
-    inline def setMode(value: driving | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: RouteMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

@@ -9,7 +9,7 @@ trait GoogleCloudDialogflowV2Message extends StObject {
   /** Required. The message content. */
   var content: js.UndefOr[String] = js.undefined
   
-  /** Output only. The time when the message was created. */
+  /** Output only. The time when the message was created in Contact Center AI. */
   var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. The message language. This should be a [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag. Example: "en-US". */
@@ -18,7 +18,7 @@ trait GoogleCloudDialogflowV2Message extends StObject {
   /** Output only. The annotation for the message. */
   var messageAnnotation: js.UndefOr[GoogleCloudDialogflowV2MessageAnnotation] = js.undefined
   
-  /** The unique identifier of the message. Format: `projects//conversations//messages/`. */
+  /** Optional. The unique identifier of the message. Format: `projects//locations//conversations//messages/`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The participant that sends this message. */
@@ -26,6 +26,12 @@ trait GoogleCloudDialogflowV2Message extends StObject {
   
   /** Output only. The role of the participant. */
   var participantRole: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The time when the message was sent. */
+  var sendTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The sentiment analysis result for the message. */
+  var sentimentAnalysis: js.UndefOr[GoogleCloudDialogflowV2SentimentAnalysisResult] = js.undefined
 }
 object GoogleCloudDialogflowV2Message {
   
@@ -63,5 +69,13 @@ object GoogleCloudDialogflowV2Message {
     inline def setParticipantRoleUndefined: Self = StObject.set(x, "participantRole", js.undefined)
     
     inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    
+    inline def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
+    
+    inline def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
+    
+    inline def setSentimentAnalysis(value: GoogleCloudDialogflowV2SentimentAnalysisResult): Self = StObject.set(x, "sentimentAnalysis", value.asInstanceOf[js.Any])
+    
+    inline def setSentimentAnalysisUndefined: Self = StObject.set(x, "sentimentAnalysis", js.undefined)
   }
 }

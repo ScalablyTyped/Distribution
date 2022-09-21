@@ -1,6 +1,6 @@
 package typings.braintreeWebDropIn.mod
 
-import typings.braintreeWeb.threeDSecureMod.ThreeDSecureVerifyPayload
+import typings.braintreeWeb.threeDSecureMod.ThreeDSecureInfo
 import typings.braintreeWebDropIn.anon.Bin
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
 import org.scalablytyped.runtime.StObject
@@ -23,7 +23,7 @@ trait cardPaymentMethodPayload
   
   var nonce: String
   
-  var threeDSecureInfo: js.UndefOr[ThreeDSecureVerifyPayload] = js.undefined
+  var threeDSecureInfo: js.UndefOr[ThreeDSecureInfo] = js.undefined
   
   var `type`: CreditCard
   
@@ -57,7 +57,7 @@ object cardPaymentMethodPayload {
     
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    inline def setThreeDSecureInfo(value: ThreeDSecureVerifyPayload): Self = StObject.set(x, "threeDSecureInfo", value.asInstanceOf[js.Any])
+    inline def setThreeDSecureInfo(value: ThreeDSecureInfo): Self = StObject.set(x, "threeDSecureInfo", value.asInstanceOf[js.Any])
     
     inline def setThreeDSecureInfoUndefined: Self = StObject.set(x, "threeDSecureInfo", js.undefined)
     

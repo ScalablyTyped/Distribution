@@ -1,16 +1,18 @@
 package typings.cassandraDriver.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.cassandraDriver.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def defaultOptions(): typings.cassandraDriver.mod.ClientOptions = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[typings.cassandraDriver.mod.ClientOptions]
+inline def defaultOptions(): ClientOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[ClientOptions]
 
-inline def version: scala.Double = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
+inline def version: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[Double]
 
-type ArrayOrObject = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
+type ArrayOrObject = js.Array[Any] | StringDictionary[Any]
 
-type EmptyCallback = js.Function1[/* err */ typings.std.Error, scala.Unit]
+type EmptyCallback = js.Function1[/* err */ js.Error, Unit]
 
-type ValueCallback[T] = js.Function2[/* err */ typings.std.Error, /* val */ T, scala.Unit]
+type ValueCallback[T] = js.Function2[/* err */ js.Error, /* val */ T, Unit]

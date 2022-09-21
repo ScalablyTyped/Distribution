@@ -11,12 +11,14 @@ trait FulfillRequestRequest extends StObject {
     * Alternative way of specifying response headers as a \0-separated
     * series of name: value pairs. Prefer the above method unless you
     * need to represent some non-UTF8 values that can't be transmitted
-    * over the protocol as text.
+    * over the protocol as text. (Encoded as a base64 string when passed over JSON)
     */
   var binaryResponseHeaders: js.UndefOr[String] = js.undefined
   
   /**
-    * A response body.
+    * A response body. If absent, original response body will be used if
+    * the request is intercepted at the response stage and empty body
+    * will be used if the request is intercepted at the request stage. (Encoded as a base64 string when passed over JSON)
     */
   var body: js.UndefOr[String] = js.undefined
   
@@ -66,7 +68,7 @@ object FulfillRequestRequest {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setResponsePhrase(value: String): Self = StObject.set(x, "responsePhrase", value.asInstanceOf[js.Any])
     

@@ -13,72 +13,72 @@ object detailsHeaderBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsHeader.base", "DetailsHeaderBase")
   @js.native
-  class DetailsHeaderBase protected ()
-    extends Component[IDetailsHeaderBaseProps, IDetailsHeaderState, js.Any]
+  open class DetailsHeaderBase protected ()
+    extends Component[IDetailsHeaderBaseProps, IDetailsHeaderState, Any]
        with IDetailsHeader {
     def this(props: IDetailsHeaderBaseProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
     /**
       * Based on the given cursor position, finds the nearest drop hint and updates the state to make it visible
       */
-    /* private */ var _computeDropHintToBeShown: js.Any = js.native
+    /* private */ var _computeDropHintToBeShown: Any = js.native
     
-    /* private */ var _currentDropHintIndex: js.Any = js.native
+    /* private */ var _currentDropHintIndex: Any = js.native
     
-    /* private */ var _dragDropHelper: js.Any = js.native
+    /* private */ var _dragDropHelper: Any = js.native
     
-    /* private */ var _draggedColumnIndex: js.Any = js.native
+    /* private */ var _draggedColumnIndex: Any = js.native
     
-    /* private */ var _dropHintDetails: js.Any = js.native
+    /* private */ var _dropHintDetails: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     /**
       * Gets column reorder props from this.props. If the calling code is part of setting up or
       * handling drag/drop events, it's safe to assume that this method's return value is defined
       * (because drag/drop handling will only be set up if reorder props are given).
       */
-    /* private */ var _getColumnReorderProps: js.Any = js.native
+    /* private */ var _getColumnReorderProps: Any = js.native
     
-    /* private */ var _getDropHintPositions: js.Any = js.native
+    /* private */ var _getDropHintPositions: Any = js.native
     
-    /* private */ var _getHeaderDragDropOptions: js.Any = js.native
+    /* private */ var _getHeaderDragDropOptions: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
     /**
       * @returns whether or not the "Select All" checkbox column is hidden.
       */
-    /* private */ var _isCheckboxColumnHidden: js.Any = js.native
+    /* private */ var _isCheckboxColumnHidden: Any = js.native
     
-    /* private */ var _isEventOnHeader: js.Any = js.native
+    /* private */ var _isEventOnHeader: Any = js.native
     
-    /* private */ var _isValidCurrentDropHintIndex: js.Any = js.native
+    /* private */ var _isValidCurrentDropHintIndex: Any = js.native
     
-    /* private */ var _onDragOver: js.Any = js.native
+    /* private */ var _onDragOver: Any = js.native
     
-    /* private */ var _onDrop: js.Any = js.native
+    /* private */ var _onDrop: Any = js.native
     
-    /* private */ var _onDropIndexInfo: js.Any = js.native
+    /* private */ var _onDropIndexInfo: Any = js.native
     
-    /* private */ var _onRenderColumnHeaderTooltip: js.Any = js.native
+    /* private */ var _onRenderColumnHeaderTooltip: Any = js.native
     
-    /* private */ var _onRootKeyDown: js.Any = js.native
+    /* private */ var _onRootKeyDown: Any = js.native
     
-    /* private */ var _onRootMouseDown: js.Any = js.native
+    /* private */ var _onRootMouseDown: Any = js.native
     
-    /* private */ var _onRootMouseMove: js.Any = js.native
+    /* private */ var _onRootMouseMove: Any = js.native
     
     /**
       * Called when the select all toggle is clicked.
       */
-    /* private */ var _onSelectAllClicked: js.Any = js.native
+    /* private */ var _onSelectAllClicked: Any = js.native
     
-    /* private */ var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onSelectionChanged: Any = js.native
     
-    /* private */ var _onSizerBlur: js.Any = js.native
+    /* private */ var _onSizerBlur: Any = js.native
     
     /**
       * double click on the column sizer will auto ajust column width
@@ -87,7 +87,7 @@ object detailsHeaderBaseMod {
       * @param columnIndex - index of the column user double clicked
       * @param ev - mouse double click event
       */
-    /* private */ var _onSizerDoubleClick: js.Any = js.native
+    /* private */ var _onSizerDoubleClick: Any = js.native
     
     /**
       * mouse move event handler in the header
@@ -95,7 +95,7 @@ object detailsHeaderBaseMod {
       *
       * @param ev - mouse move event
       */
-    /* private */ var _onSizerMouseMove: js.Any = js.native
+    /* private */ var _onSizerMouseMove: Any = js.native
     
     /**
       * mouse up event handler in the header
@@ -104,29 +104,29 @@ object detailsHeaderBaseMod {
       *
       * @param ev - mouse up event
       */
-    /* private */ var _onSizerMouseUp: js.Any = js.native
+    /* private */ var _onSizerMouseUp: Any = js.native
     
-    /* private */ var _onToggleCollapseAll: js.Any = js.native
+    /* private */ var _onToggleCollapseAll: Any = js.native
     
-    /* private */ var _renderColumnDivider: js.Any = js.native
+    /* private */ var _renderColumnDivider: Any = js.native
     
-    /* private */ var _renderColumnSizer: js.Any = js.native
+    /* private */ var _renderColumnSizer: Any = js.native
     
-    /* private */ var _renderDropHint: js.Any = js.native
+    /* private */ var _renderDropHint: Any = js.native
     
-    /* private */ var _resetDropHints: js.Any = js.native
+    /* private */ var _resetDropHints: Any = js.native
     
-    /* private */ var _rootComponent: js.Any = js.native
+    /* private */ var _rootComponent: Any = js.native
     
-    /* private */ var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: Any = js.native
     
-    /* private */ var _subscriptionObject: js.Any = js.native
+    /* private */ var _subscriptionObject: Any = js.native
     
-    /* private */ var _updateDragInfo: js.Any = js.native
+    /* private */ var _updateDragInfo: Any = js.native
     
-    /* private */ var _updateDropHintElement: js.Any = js.native
+    /* private */ var _updateDropHintElement: Any = js.native
     
-    /* private */ var _updateDroppingState: js.Any = js.native
+    /* private */ var _updateDroppingState: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDetailsHeaderBase(): Unit = js.native

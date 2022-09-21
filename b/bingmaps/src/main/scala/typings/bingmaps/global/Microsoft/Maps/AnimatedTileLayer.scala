@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @contstructor
   * @param options Options that define how to animate between the specified tile layers. 
   */
-class AnimatedTileLayer ()
+open class AnimatedTileLayer ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.AnimatedTileLayer {
   def this(options: IAnimatedTileLayerOptions) = this()

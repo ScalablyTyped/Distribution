@@ -1,11 +1,13 @@
 package typings.babylonjs
 
+import typings.babylonjs.mathViewportMod.Viewport
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
-import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.webXRLayerWrapperMod.WebXRLayerWrapper
 import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
+import typings.babylonjs.webXRRenderTargetTextureProviderMod.IWebXRRenderTargetTextureProvider
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +17,9 @@ object webXRSessionManagerMod {
   
   @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager")
   @js.native
-  class WebXRSessionManager protected ()
+  open class WebXRSessionManager protected ()
     extends StObject
-       with IDisposable {
+       with IWebXRRenderTargetTextureProvider {
     /**
       * Constructs a WebXRSessionManager, this must be initialized within a user action before usage
       * @param scene The scene which the session should be created for
@@ -25,17 +27,25 @@ object webXRSessionManagerMod {
     def this(/** The scene which the session should be created for */
     scene: Scene) = this()
     
-    /* private */ var _createRenderTargetTexture: js.Any = js.native
+    /* private */ var _baseLayerRTTProvider: Any = js.native
     
-    /* private */ var _referenceSpace: js.Any = js.native
+    /* private */ var _baseLayerWrapper: Any = js.native
     
-    /* private */ var _rttProvider: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _sessionEnded: js.Any = js.native
+    /* private */ var _onEngineDisposedObserver: Any = js.native
     
-    /* private */ var _xrNavigator: js.Any = js.native
+    /* private */ var _referenceSpace: Any = js.native
     
-    /* private */ var baseLayer: js.Any = js.native
+    /* private */ var _sessionMode: Any = js.native
+    
+    /**
+      * @param baseLayerWrapper
+      * @hidden
+      */
+    def _setBaseLayerWrapper(baseLayerWrapper: Nullable[WebXRLayerWrapper]): Unit = js.native
+    
+    /* private */ var _xrNavigator: Any = js.native
     
     /**
       * The base reference space from which the session started. good if you want to reset your
@@ -47,6 +57,11 @@ object webXRSessionManagerMod {
       * Current XR frame
       */
     var currentFrame: Nullable[XRFrame] = js.native
+    
+    /**
+      * The current frame rate as reported by the device
+      */
+    def currentFrameRate: js.UndefOr[Double] = js.native
     
     /** WebXR timestamp updated every frame */
     var currentTimestamp: Double = js.native
@@ -70,20 +85,49 @@ object webXRSessionManagerMod {
     def exitXRAsync(): js.Promise[Unit] = js.native
     
     /**
+      * Get the fixed foveation currently set, as specified by the webxr specs
+      * If this returns null, then fixed foveation is not supported
+      */
+    def fixedFoveation: Nullable[Double] = js.native
+    /**
+      * Set the fixed foveation to the specified value, as specified by the webxr specs
+      * This value will be normalized to be between 0 and 1, 1 being max foveation, 0 being no foveation
+      */
+    def fixedFoveation_=(value: Nullable[Double]): Unit = js.native
+    
+    /**
       * Gets the correct render target texture to be rendered this frame for this eye
       * @param eye the eye for which to get the render target
-      * @returns the render target for the specified eye
+      * @returns the render target for the specified eye or null if not available
       */
-    def getRenderTargetTextureForEye(eye: XREye): RenderTargetTexture = js.native
+    /* CompleteClass */
+    override def getRenderTargetTextureForEye(eye: XREye): Nullable[RenderTargetTexture] = js.native
+    
+    /**
+      * Gets the correct render target texture to be rendered this frame for this view
+      * @param view the view for which to get the render target
+      * @returns the render target for the specified view or null if not available
+      */
+    /* CompleteClass */
+    override def getRenderTargetTextureForView(view: XRView): Nullable[RenderTargetTexture] = js.native
     
     /**
       * Creates a WebXRRenderTarget object for the XR session
-      * @param onStateChangedObservable optional, mechanism for enabling/disabling XR rendering canvas, used only on Web
       * @param options optional options to provide when creating a new render target
       * @returns a WebXR render target to which the session can render
       */
     def getWebXRRenderTarget(): WebXRRenderTarget = js.native
     def getWebXRRenderTarget(options: WebXRManagedOutputCanvasOptions): WebXRRenderTarget = js.native
+    
+    /**
+      * Are we currently in the XR loop?
+      */
+    var inXRFrameLoop: Boolean = js.native
+    
+    /**
+      * Are we in an XR session?
+      */
+    var inXRSession: Boolean = js.native
     
     /**
       * Initializes the manager
@@ -102,6 +146,16 @@ object webXRSessionManagerMod {
     def initializeSessionAsync(xrSessionMode: Unit, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
     def initializeSessionAsync(xrSessionMode: XRSessionMode): js.Promise[XRSession] = js.native
     def initializeSessionAsync(xrSessionMode: XRSessionMode, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
+    
+    /**
+      * Check if fixed foveation is supported on this device
+      */
+    def isFixedFoveationSupported: Boolean = js.native
+    
+    /**
+      * Returns true if Babylon.js is using the BabylonNative backend, otherwise false
+      */
+    def isNative: Boolean = js.native
     
     /**
       * Checks if a session would be supported for the creation options specified
@@ -123,10 +177,10 @@ object webXRSessionManagerMod {
     /**
       * Fires when the xr session is ended either by the device or manually done
       */
-    var onXRSessionEnded: Observable[js.Any] = js.native
+    var onXRSessionEnded: Observable[Any] = js.native
     
     /**
-      * Fires when the xr session is ended either by the device or manually done
+      * Fires when the xr session is initialized: right after requestSession was called and returned with a successful result
       */
     var onXRSessionInit: Observable[XRSession] = js.native
     
@@ -146,6 +200,14 @@ object webXRSessionManagerMod {
     def resetReferenceSpace(): Unit = js.native
     
     /**
+      * Run a callback in the xr render loop
+      * @param callback the callback to call when in XR Frame
+      * @param ignoreIfNotInSession if no session is currently running, run it first thing on the next session
+      */
+    def runInXRFrame(callback: js.Function0[Unit]): Unit = js.native
+    def runInXRFrame(callback: js.Function0[Unit], ignoreIfNotInSession: Boolean): Unit = js.native
+    
+    /**
       * Starts rendering to the xr layer
       */
     def runXRRenderLoop(): Unit = js.native
@@ -159,6 +221,11 @@ object webXRSessionManagerMod {
     var session: XRSession = js.native
     
     /**
+      * The mode for the managed XR session
+      */
+    def sessionMode: XRSessionMode = js.native
+    
+    /**
       * Sets the reference space on the xr session
       * @param referenceSpaceType space to set
       * @returns a promise that will resolve once the reference space has been set
@@ -167,11 +234,41 @@ object webXRSessionManagerMod {
     def setReferenceSpaceTypeAsync(referenceSpaceType: XRReferenceSpaceType): js.Promise[XRReferenceSpace] = js.native
     
     /**
+      * A list of supported frame rates (only available in-session!
+      */
+    def supportedFrameRates: js.UndefOr[js.typedarray.Float32Array] = js.native
+    
+    /**
+      * Attempts to set the framebuffer-size-normalized viewport to be rendered this frame for this view.
+      * In the event of a failure, the supplied viewport is not updated.
+      * @param viewport the viewport to which the view will be rendered
+      * @param view the view for which to set the viewport
+      * @returns whether the operation was successful
+      */
+    /* CompleteClass */
+    override def trySetViewportForView(viewport: Viewport, view: XRView): Boolean = js.native
+    
+    /**
       * Updates the render state of the session
       * @param state state to set
+      */
+    def updateRenderState(state: XRRenderStateInit): Unit = js.native
+    
+    /**
+      * Updates the render state of the session.
+      * Note that this is deprecated in favor of WebXRSessionManager.updateRenderState().
+      * @param state state to set
       * @returns a promise that resolves once the render state has been updated
+      * @deprecated
       */
     def updateRenderStateAsync(state: XRRenderState): js.Promise[Unit] = js.native
+    
+    /**
+      * Set the framerate of the session.
+      * @param rate the new framerate. This value needs to be in the supportedFrameRates array
+      * @returns a promise that resolves once the framerate has been set
+      */
+    def updateTargetFrameRate(rate: Double): js.Promise[Unit] = js.native
     
     /**
       * The viewer (head position) reference space. This can be used to get the XR world coordinates

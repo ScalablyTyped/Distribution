@@ -29,7 +29,7 @@ trait AlgorithmSummary extends StObject {
   /**
     * A timestamp that shows when the algorithm was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
+  var CreationTime: js.Date
 }
 object AlgorithmSummary {
   
@@ -37,7 +37,7 @@ object AlgorithmSummary {
     AlgorithmArn: AlgorithmArn,
     AlgorithmName: EntityName,
     AlgorithmStatus: AlgorithmStatus,
-    CreationTime: CreationTime
+    CreationTime: js.Date
   ): AlgorithmSummary = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any], AlgorithmName = AlgorithmName.asInstanceOf[js.Any], AlgorithmStatus = AlgorithmStatus.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmSummary]
@@ -55,6 +55,6 @@ object AlgorithmSummary {
     
     inline def setAlgorithmStatus(value: AlgorithmStatus): Self = StObject.set(x, "AlgorithmStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
   }
 }

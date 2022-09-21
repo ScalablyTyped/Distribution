@@ -8,7 +8,7 @@ trait Alias extends StObject {
   
   var alias: String
   
-  var auth: js.Any
+  var auth: Any
   
   var epub: String
   
@@ -16,7 +16,7 @@ trait Alias extends StObject {
 }
 object Alias {
   
-  inline def apply(alias: String, auth: js.Any, epub: String, pub: String): Alias = {
+  inline def apply(alias: String, auth: Any, epub: String, pub: String): Alias = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], epub = epub.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
@@ -25,7 +25,7 @@ object Alias {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    inline def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     inline def setEpub(value: String): Self = StObject.set(x, "epub", value.asInstanceOf[js.Any])
     

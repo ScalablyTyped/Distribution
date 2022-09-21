@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LightBlock")
 @js.native
-class LightBlock protected ()
+open class LightBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.LightBlock {
   /**

@@ -9,7 +9,7 @@ import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
 import typings.jsonwebtoken.mod.VerifyOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -126,7 +126,7 @@ object mod extends Shortcut {
       * The secret key used to check the signature of the token *or* a *key lookup function*
       */
     var key: js.UndefOr[
-        String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
+        String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
       ] = js.undefined
     
     /**
@@ -147,7 +147,7 @@ object mod extends Shortcut {
     var responseFunc: js.UndefOr[
         js.Function2[
           /* request */ Request, 
-          /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit], 
+          /* reply */ js.Function2[/* err */ Any, /* response */ ResponseObject, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -212,21 +212,21 @@ object mod extends Shortcut {
       inline def setHeaderKeyUndefined: Self = StObject.set(x, "headerKey", js.undefined)
       
       inline def setKey(
-        value: String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
+        value: String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
       ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyFunction1(value: /* decodedToken */ js.Any => js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKeyFunction1(value: /* decodedToken */ Any => js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setPayloadKey(value: String | Boolean): Self = StObject.set(x, "payloadKey", value.asInstanceOf[js.Any])
       
       inline def setPayloadKeyUndefined: Self = StObject.set(x, "payloadKey", js.undefined)
       
       inline def setResponseFunc(
-        value: (/* request */ Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit]) => Unit
+        value: (/* request */ Request, /* reply */ js.Function2[/* err */ Any, /* response */ ResponseObject, Unit]) => Unit
       ): Self = StObject.set(x, "responseFunc", js.Any.fromFunction2(value))
       
       inline def setResponseFuncUndefined: Self = StObject.set(x, "responseFunc", js.undefined)
@@ -252,9 +252,7 @@ object mod extends Shortcut {
     /**
       * function which is run once the Token has been decoded (instead of a validate) with signature async function(decoded, request) where:
       */
-    var verify: js.UndefOr[
-        js.Function2[/* decoded */ js.Any, /* request */ Request, js.Promise[Credentials]]
-      ] = js.undefined
+    var verify: js.UndefOr[js.Function2[/* decoded */ Any, /* request */ Request, js.Promise[Credentials]]] = js.undefined
   }
   object RegisterOptions {
     
@@ -265,7 +263,7 @@ object mod extends Shortcut {
     
     extension [Self <: RegisterOptions](x: Self) {
       
-      inline def setVerify(value: (/* decoded */ js.Any, /* request */ Request) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (/* decoded */ Any, /* request */ Request) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
       
       inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }
@@ -273,7 +271,7 @@ object mod extends Shortcut {
   
   trait ValidationResult extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
     var errorMessage: js.UndefOr[String] = js.undefined
     
@@ -290,7 +288,7 @@ object mod extends Shortcut {
     
     extension [Self <: ValidationResult](x: Self) {
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       

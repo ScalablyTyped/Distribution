@@ -3,8 +3,9 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ReposDeleteDeployKeyEndpoint
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -13,15 +14,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `923` extends StObject {
   
-  var parameters: RequestParameters & (Omit[ReposDeleteDeployKeyEndpoint, baseUrl | headers | mediaType])
+  var parameters: RequestParameters & (Omit[
+    (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+    ]) & RequiredPreview[Any], 
+    baseUrl | headers | mediaType
+  ])
   
-  var response: OctokitResponse[js.Any]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+  ]
 }
 object `923` {
   
   inline def apply(
-    parameters: RequestParameters & (Omit[ReposDeleteDeployKeyEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[js.Any]
+    parameters: RequestParameters & (Omit[
+      (ToOctokitParameters[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+      ]) & RequiredPreview[Any], 
+      baseUrl | headers | mediaType
+    ]),
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+    ]
   ): `923` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`923`]
@@ -29,8 +44,19 @@ object `923` {
   
   extension [Self <: `923`](x: Self) {
     
-    inline def setParameters(value: RequestParameters & (Omit[ReposDeleteDeployKeyEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: RequestParameters & (Omit[
+          (ToOctokitParameters[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+          ]) & RequiredPreview[Any], 
+          baseUrl | headers | mediaType
+        ])
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/applications/{client_id}/token']['patch'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

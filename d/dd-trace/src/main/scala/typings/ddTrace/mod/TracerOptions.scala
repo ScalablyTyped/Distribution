@@ -4,15 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.B3
 import typings.ddTrace.anon.Debug
 import typings.ddTrace.anon.Hostname
+import typings.ddTrace.anon.ObfuscatorKeyRegex
 import typings.ddTrace.anon.RateLimit
 import typings.ddTrace.ddTraceStrings.async_hooks
 import typings.ddTrace.ddTraceStrings.async_local_storage
+import typings.ddTrace.ddTraceStrings.async_resource
 import typings.ddTrace.ddTraceStrings.debug
 import typings.ddTrace.ddTraceStrings.error
 import typings.ddTrace.ddTraceStrings.noop
-import typings.node.NodeJS.ErrnoException
+import typings.ddTrace.ddTraceStrings.sync
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
+import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,21 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TracerOptions extends StObject {
   
   /**
-    * Enable Trace Analytics.
-    * @default false
+    * Configuration of the AppSec protection. Can be a boolean as an alias to `appsec.enabled`.
     */
-  var analytics: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Client token for browser tracing. Can be generated in the UI at `Integrations -> APIs`.
-    */
-  var clientToken: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Enable debug logging in the tracer.
-    * @default false
-    */
-  var debug: js.UndefOr[Boolean] = js.undefined
+  var appsec: js.UndefOr[Boolean | ObfuscatorKeyRegex] = js.undefined
   
   /**
     * Options specific for the Dogstatsd agent.
@@ -42,21 +33,15 @@ trait TracerOptions extends StObject {
   var dogstatsd: js.UndefOr[Hostname] = js.undefined
   
   /**
-    * Whether to enable the tracer.
-    * @default true
-    */
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Set an application’s environment e.g. prod, pre-prod, stage.
     */
   var env: js.UndefOr[String] = js.undefined
   
   /**
-    * Experimental features can be enabled all at once by using true or individually using key / value pairs.
+    * Experimental features can be enabled individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[Boolean | B3] = js.undefined
+  var experimental: js.UndefOr[B3] = js.undefined
   
   /**
     * Interval in milliseconds at which the tracer will submit traces to the agent.
@@ -65,13 +50,22 @@ trait TracerOptions extends StObject {
   var flushInterval: js.UndefOr[Double] = js.undefined
   
   /**
+    *  Number of spans before partially exporting a trace. This prevents keeping all the spans in memory for very large traces.
+    * @default 1000
+    */
+  var flushMinSpans: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
     */
   var hostname: js.UndefOr[String] = js.undefined
   
   /**
-    * Configuration of the ingestion between the agent and the backend.
+    * Deprecated in favor of the global versions of the variables provided under this option
+    *
+    * @deprecated
+    * @hidden
     */
   var ingestion: js.UndefOr[RateLimit] = js.undefined
   
@@ -120,10 +114,22 @@ trait TracerOptions extends StObject {
   var port: js.UndefOr[Double | String] = js.undefined
   
   /**
+    * Whether to enable profiling.
+    */
+  var profiling: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Protocol version to use for requests to the agent. The version configured must be supported by the agent version installed or all traces will be dropped.
     * @default 0.4
     */
   var protocolVersion: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Global rate limit that is applied on the global sample rate and all rules,
+    * and controls the ingestion rate limit between the agent and the backend.
+    * Defaults to deferring the decision to the agent.
+    */
+  var rateLimit: js.UndefOr[Number] = js.undefined
   
   /**
     * Whether to report the hostname of the service host. This is used when the agent is deployed on a different host and cannot determine the hostname automatically.
@@ -138,17 +144,25 @@ trait TracerOptions extends StObject {
   var runtimeMetrics: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Percentage of spans to sample as a float between 0 and 1.
-    * @default 1
+    * Controls the ingestion sample rate (between 0 and 1) between the agent and the backend.
     */
   var sampleRate: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Sampling rules to apply to priority samplin. Each rule is a JSON,
+    * consisting of `service` and `name`, which are regexes to match against
+    * a trace's `service` and `name`, and a corresponding `sampleRate`. If not
+    * specified, will defer to global sampling rate for all spans.
+    * @default []
+    */
+  var samplingRules: js.UndefOr[js.Array[SamplingRule]] = js.undefined
   
   /**
     * Specifies which scope implementation to use. The default is to use the best
     * implementation for the runtime. Only change this if you know what you are
     * doing.
     */
-  var scope: js.UndefOr[async_hooks | async_local_storage | noop] = js.undefined
+  var scope: js.UndefOr[async_hooks | async_local_storage | async_resource | sync | noop] = js.undefined
   
   /**
     * The service name to be used for this program. If not set, the service name
@@ -165,13 +179,7 @@ trait TracerOptions extends StObject {
   /**
     * Global tags that should be assigned to every span.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  
-  /**
-    * Whether to track the scope of async functions. This is needed for async/await to work with non-native promises (thenables). Only disable this if you are sure only native promises are used with async/await, or if you are using Node >=14.5 since the issue has been fixed in that version.
-    * @default true
-    */
-  var trackAsyncScope: js.UndefOr[Boolean] = js.undefined
+  var tags: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * The url of the trace agent that the tracer will submit to.
@@ -194,37 +202,29 @@ object TracerOptions {
   
   extension [Self <: TracerOptions](x: Self) {
     
-    inline def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+    inline def setAppsec(value: Boolean | ObfuscatorKeyRegex): Self = StObject.set(x, "appsec", value.asInstanceOf[js.Any])
     
-    inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
-    
-    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
-    
-    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
-    
-    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
-    
-    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setAppsecUndefined: Self = StObject.set(x, "appsec", js.undefined)
     
     inline def setDogstatsd(value: Hostname): Self = StObject.set(x, "dogstatsd", value.asInstanceOf[js.Any])
     
     inline def setDogstatsdUndefined: Self = StObject.set(x, "dogstatsd", js.undefined)
     
-    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-    
-    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-    
     inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setExperimental(value: Boolean | B3): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: B3): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
     
     inline def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
+    
+    inline def setFlushMinSpans(value: Double): Self = StObject.set(x, "flushMinSpans", value.asInstanceOf[js.Any])
+    
+    inline def setFlushMinSpansUndefined: Self = StObject.set(x, "flushMinSpans", js.undefined)
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
@@ -247,7 +247,12 @@ object TracerOptions {
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* address */ String, 
+          /* family */ Double, 
+          Unit
+        ]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -264,9 +269,17 @@ object TracerOptions {
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
+    inline def setProfiling(value: Boolean): Self = StObject.set(x, "profiling", value.asInstanceOf[js.Any])
+    
+    inline def setProfilingUndefined: Self = StObject.set(x, "profiling", js.undefined)
+    
     inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
+    
+    inline def setRateLimit(value: Number): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+    
+    inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     
     inline def setReportHostname(value: Boolean): Self = StObject.set(x, "reportHostname", value.asInstanceOf[js.Any])
     
@@ -280,7 +293,13 @@ object TracerOptions {
     
     inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     
-    inline def setScope(value: async_hooks | async_local_storage | noop): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setSamplingRules(value: js.Array[SamplingRule]): Self = StObject.set(x, "samplingRules", value.asInstanceOf[js.Any])
+    
+    inline def setSamplingRulesUndefined: Self = StObject.set(x, "samplingRules", js.undefined)
+    
+    inline def setSamplingRulesVarargs(value: SamplingRule*): Self = StObject.set(x, "samplingRules", js.Array(value*))
+    
+    inline def setScope(value: async_hooks | async_local_storage | async_resource | sync | noop): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -292,13 +311,9 @@ object TracerOptions {
     
     inline def setStartupLogsUndefined: Self = StObject.set(x, "startupLogs", js.undefined)
     
-    inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StringDictionary[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
-    
-    inline def setTrackAsyncScope(value: Boolean): Self = StObject.set(x, "trackAsyncScope", value.asInstanceOf[js.Any])
-    
-    inline def setTrackAsyncScopeUndefined: Self = StObject.set(x, "trackAsyncScope", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

@@ -104,13 +104,13 @@ object windowOptionMod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
       
       inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
       inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
     }
   }
   
@@ -133,13 +133,13 @@ object windowOptionMod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
       
       inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
       inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
     }
   }
   
@@ -170,26 +170,26 @@ object windowOptionMod {
   
   trait CustomRequestHeaders extends StObject {
     
-    var headers: js.Array[js.Any]
+    var headers: js.Array[Any]
     
     var urlPatterns: js.Array[String]
   }
   object CustomRequestHeaders {
     
-    inline def apply(headers: js.Array[js.Any], urlPatterns: js.Array[String]): CustomRequestHeaders = {
+    inline def apply(headers: js.Array[Any], urlPatterns: js.Array[String]): CustomRequestHeaders = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], urlPatterns = urlPatterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomRequestHeaders]
     }
     
     extension [Self <: CustomRequestHeaders](x: Self) {
       
-      inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "urlPatterns", value.asInstanceOf[js.Any])
       
-      inline def setUrlPatternsVarargs(value: String*): Self = StObject.set(x, "urlPatterns", js.Array(value :_*))
+      inline def setUrlPatternsVarargs(value: String*): Self = StObject.set(x, "urlPatterns", js.Array(value*))
     }
   }
   
@@ -252,9 +252,9 @@ object windowOptionMod {
     
     var cornerRounding: js.UndefOr[CornerRounding] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.undefined
+    var customContext: js.UndefOr[Any] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
     
@@ -381,11 +381,11 @@ object windowOptionMod {
       
       inline def setCornerRoundingUndefined: Self = StObject.set(x, "cornerRounding", js.undefined)
       
-      inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+      inline def setCustomContext(value: Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
       
       inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -393,7 +393,7 @@ object windowOptionMod {
       
       inline def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
       
-      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
+      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value*))
       
       inline def setDefaultCentered(value: Boolean): Self = StObject.set(x, "defaultCentered", value.asInstanceOf[js.Any])
       
@@ -427,7 +427,7 @@ object windowOptionMod {
       
       inline def setHotkeysUndefined: Self = StObject.set(x, "hotkeys", js.undefined)
       
-      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value :_*))
+      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value*))
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -473,7 +473,7 @@ object windowOptionMod {
       
       inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      inline def setPreloadScriptsVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
       
       inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       

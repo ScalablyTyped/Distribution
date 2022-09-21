@@ -12,7 +12,7 @@ object infoUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/info-user-agent-server", "InfoUserAgentServer")
   @js.native
-  class InfoUserAgentServer protected () extends UserAgentServer {
+  open class InfoUserAgentServer protected () extends UserAgentServer {
     def this(dialog: SessionDialog, message: IncomingRequestMessage) = this()
     def this(dialog: SessionDialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
   }

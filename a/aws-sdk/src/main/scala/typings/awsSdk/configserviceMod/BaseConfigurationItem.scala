@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseConfigurationItem extends StObject {
   
   /**
-    * The 12-digit AWS account ID associated with the resource.
+    * The 12-digit Amazon Web Services account ID associated with the resource.
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   
@@ -34,7 +34,7 @@ trait BaseConfigurationItem extends StObject {
   /**
     * The time when the configuration recording was initiated.
     */
-  var configurationItemCaptureTime: js.UndefOr[ConfigurationItemCaptureTime] = js.undefined
+  var configurationItemCaptureTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The configuration item status. The valid values are:   OK – The resource configuration has been updated   ResourceDiscovered – The resource was newly discovered   ResourceNotRecorded – The resource was discovered but its configuration was not recorded since the recorder excludes the recording of resources of this type   ResourceDeleted – The resource was deleted   ResourceDeletedNotRecorded – The resource was deleted but its configuration was not recorded since the recorder excludes the recording of resources of this type    The CIs do not incur any cost. 
@@ -49,7 +49,7 @@ trait BaseConfigurationItem extends StObject {
   /**
     * The time stamp when the resource was created.
     */
-  var resourceCreationTime: js.UndefOr[ResourceCreationTime] = js.undefined
+  var resourceCreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the resource (for example., sg-xxxxxx).
@@ -62,12 +62,12 @@ trait BaseConfigurationItem extends StObject {
   var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The type of AWS resource.
+    * The type of Amazon Web Services resource.
     */
   var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
-    * Configuration attributes that AWS Config returns for certain resource types to supplement the information returned for the configuration parameter.
+    * Configuration attributes that Config returns for certain resource types to supplement the information returned for the configuration parameter.
     */
   var supplementaryConfiguration: js.UndefOr[SupplementaryConfiguration] = js.undefined
   
@@ -103,7 +103,7 @@ object BaseConfigurationItem {
     
     inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
+    inline def setConfigurationItemCaptureTime(value: js.Date): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
     
     inline def setConfigurationItemCaptureTimeUndefined: Self = StObject.set(x, "configurationItemCaptureTime", js.undefined)
     
@@ -117,7 +117,7 @@ object BaseConfigurationItem {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    inline def setResourceCreationTime(value: ResourceCreationTime): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
+    inline def setResourceCreationTime(value: js.Date): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
     
     inline def setResourceCreationTimeUndefined: Self = StObject.set(x, "resourceCreationTime", js.undefined)
     

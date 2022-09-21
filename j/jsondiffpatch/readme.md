@@ -10,10 +10,10 @@ Diff & Patch for Javascript objects
 | ------------------ | :-------------: |
 | Full name          | jsondiffpatch |
 | Keywords           | json, diff, patch |
-| # releases         | 3 |
-| # dependents       | 273 |
-| # downloads        | 4814148 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 862348.3333333334 |
+| # stars            | 4126.0 |
 
 ## Links
 - [Homepage](https://github.com/benjamine/jsondiffpatch)

@@ -22,7 +22,7 @@ object Chai {
     
     def `type`(`type`: String): Unit
     
-    def value(value: js.Any): Unit
+    def value(value: Any): Unit
   }
   object Assertion {
     
@@ -34,7 +34,7 @@ object Chai {
       rels: /* repeated */ String => Unit,
       title: String => Unit,
       `type`: String => Unit,
-      value: js.Any => Unit
+      value: Any => Unit
     ): Assertion = {
       val __obj = js.Dynamic.literal(classes = js.Any.fromFunction1(classes), href = js.Any.fromFunction1(href), method = js.Any.fromFunction1(method), name = js.Any.fromFunction1(name), rels = js.Any.fromFunction1(rels), title = js.Any.fromFunction1(title), value = js.Any.fromFunction1(value))
       __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
@@ -57,7 +57,7 @@ object Chai {
       
       inline def setType(value: String => Unit): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      inline def setValue(value: js.Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     }
   }
   

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomXmlPartData extends StObject {
   
   /**
-    *
     * The custom XML part's ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The custom XML part's namespace URI.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var namespaceUri: js.UndefOr[String] = js.undefined

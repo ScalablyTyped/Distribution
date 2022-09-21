@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The entrypoint for the application.
-  */
 trait SchemaEntrypoint extends StObject {
   
   /**
     * The format should be a shell command that can be fed to bash -c.
     */
-  var shell: js.UndefOr[String] = js.undefined
+  var shell: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEntrypoint {
   
@@ -24,6 +21,8 @@ object SchemaEntrypoint {
   extension [Self <: SchemaEntrypoint](x: Self) {
     
     inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    
+    inline def setShellNull: Self = StObject.set(x, "shell", null)
     
     inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
   }

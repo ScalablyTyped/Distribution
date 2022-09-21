@@ -13,30 +13,30 @@ object providerMod {
   
   @JSImport("openfin/_v2/api/interappbus/channel/provider", "ChannelProvider")
   @js.native
-  class ChannelProvider protected () extends ChannelBase {
+  open class ChannelProvider protected () extends ChannelBase {
     def this(providerIdentity: ProviderIdentity, send: FnCall) = this()
     
-    /* private */ var connectListener: js.Any = js.native
+    /* private */ var connectListener: Any = js.native
     
     var connections: js.Array[ClientIdentity] = js.native
     
     def destroy(): js.Promise[Unit] = js.native
     
-    /* private */ var disconnectListener: js.Any = js.native
+    /* private */ var disconnectListener: Any = js.native
     
-    def dispatch(to: Identity, action: String): js.Promise[js.Any] = js.native
-    def dispatch(to: Identity, action: String, payload: js.Any): js.Promise[js.Any] = js.native
+    def dispatch(to: Identity, action: String): js.Promise[Any] = js.native
+    def dispatch(to: Identity, action: String, payload: Any): js.Promise[Any] = js.native
     
     def onConnection(listener: ConnectionListener): Unit = js.native
     
     def onDisconnection(listener: DisconnectionListener): Unit = js.native
     
-    def processConnection(senderId: Identity, payload: js.Any): js.Promise[js.Any] = js.native
+    def processConnection(senderId: Identity, payload: Any): js.Promise[Any] = js.native
     
-    def publish(action: String, payload: js.Any): js.Array[js.Promise[js.Any]] = js.native
+    def publish(action: String, payload: Any): js.Array[js.Promise[Any]] = js.native
   }
   
-  type ConnectionListener = js.Function2[/* identity */ Identity, /* connectionMessage */ js.UndefOr[js.Any], js.Any]
+  type ConnectionListener = js.Function2[/* identity */ Identity, /* connectionMessage */ js.UndefOr[Any], Any]
   
-  type DisconnectionListener = js.Function1[/* identity */ Identity, js.Any]
+  type DisconnectionListener = js.Function1[/* identity */ Identity, Any]
 }

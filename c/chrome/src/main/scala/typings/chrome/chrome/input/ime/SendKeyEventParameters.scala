@@ -25,6 +25,6 @@ object SendKeyEventParameters {
     
     inline def setKeyData(value: js.Array[KeyboardEvent]): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
     
-    inline def setKeyDataVarargs(value: KeyboardEvent*): Self = StObject.set(x, "keyData", js.Array(value :_*))
+    inline def setKeyDataVarargs(value: KeyboardEvent*): Self = StObject.set(x, "keyData", js.Array(value*))
   }
 }

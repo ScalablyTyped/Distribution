@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The current certificate provisioning status information for a domain.
-  */
 trait SchemaDomainProvisioning extends StObject {
   
   /**
-    * The TXT records (for the certificate challenge) that were found at the
-    * last DNS fetch.
+    * The TXT records (for the certificate challenge) that were found at the last DNS fetch.
     */
-  var certChallengeDiscoveredTxt: js.UndefOr[js.Array[String]] = js.undefined
+  var certChallengeDiscoveredTxt: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The DNS challenge for generating a certificate.
@@ -26,30 +22,29 @@ trait SchemaDomainProvisioning extends StObject {
   var certChallengeHttp: js.UndefOr[SchemaCertHttpChallenge] = js.undefined
   
   /**
-    * The certificate provisioning status; updated when Firebase Hosting
-    * provisions an SSL certificate for the domain.
+    * The certificate provisioning status; updated when Firebase Hosting provisions an SSL certificate for the domain.
     */
-  var certStatus: js.UndefOr[String] = js.undefined
+  var certStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The IPs found at the last DNS fetch.
     */
-  var discoveredIps: js.UndefOr[js.Array[String]] = js.undefined
+  var discoveredIps: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The time at which the last DNS fetch occurred.
     */
-  var dnsFetchTime: js.UndefOr[String] = js.undefined
+  var dnsFetchTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The DNS record match status as of the last DNS fetch.
     */
-  var dnsStatus: js.UndefOr[String] = js.undefined
+  var dnsStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of IPs to which the domain is expected to resolve.
     */
-  var expectedIps: js.UndefOr[js.Array[String]] = js.undefined
+  var expectedIps: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaDomainProvisioning {
   
@@ -62,9 +57,11 @@ object SchemaDomainProvisioning {
     
     inline def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = StObject.set(x, "certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
     
+    inline def setCertChallengeDiscoveredTxtNull: Self = StObject.set(x, "certChallengeDiscoveredTxt", null)
+    
     inline def setCertChallengeDiscoveredTxtUndefined: Self = StObject.set(x, "certChallengeDiscoveredTxt", js.undefined)
     
-    inline def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = StObject.set(x, "certChallengeDiscoveredTxt", js.Array(value :_*))
+    inline def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = StObject.set(x, "certChallengeDiscoveredTxt", js.Array(value*))
     
     inline def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = StObject.set(x, "certChallengeDns", value.asInstanceOf[js.Any])
     
@@ -76,26 +73,36 @@ object SchemaDomainProvisioning {
     
     inline def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
     
+    inline def setCertStatusNull: Self = StObject.set(x, "certStatus", null)
+    
     inline def setCertStatusUndefined: Self = StObject.set(x, "certStatus", js.undefined)
     
     inline def setDiscoveredIps(value: js.Array[String]): Self = StObject.set(x, "discoveredIps", value.asInstanceOf[js.Any])
     
+    inline def setDiscoveredIpsNull: Self = StObject.set(x, "discoveredIps", null)
+    
     inline def setDiscoveredIpsUndefined: Self = StObject.set(x, "discoveredIps", js.undefined)
     
-    inline def setDiscoveredIpsVarargs(value: String*): Self = StObject.set(x, "discoveredIps", js.Array(value :_*))
+    inline def setDiscoveredIpsVarargs(value: String*): Self = StObject.set(x, "discoveredIps", js.Array(value*))
     
     inline def setDnsFetchTime(value: String): Self = StObject.set(x, "dnsFetchTime", value.asInstanceOf[js.Any])
+    
+    inline def setDnsFetchTimeNull: Self = StObject.set(x, "dnsFetchTime", null)
     
     inline def setDnsFetchTimeUndefined: Self = StObject.set(x, "dnsFetchTime", js.undefined)
     
     inline def setDnsStatus(value: String): Self = StObject.set(x, "dnsStatus", value.asInstanceOf[js.Any])
     
+    inline def setDnsStatusNull: Self = StObject.set(x, "dnsStatus", null)
+    
     inline def setDnsStatusUndefined: Self = StObject.set(x, "dnsStatus", js.undefined)
     
     inline def setExpectedIps(value: js.Array[String]): Self = StObject.set(x, "expectedIps", value.asInstanceOf[js.Any])
     
+    inline def setExpectedIpsNull: Self = StObject.set(x, "expectedIps", null)
+    
     inline def setExpectedIpsUndefined: Self = StObject.set(x, "expectedIps", js.undefined)
     
-    inline def setExpectedIpsVarargs(value: String*): Self = StObject.set(x, "expectedIps", js.Array(value :_*))
+    inline def setExpectedIpsVarargs(value: String*): Self = StObject.set(x, "expectedIps", js.Array(value*))
   }
 }

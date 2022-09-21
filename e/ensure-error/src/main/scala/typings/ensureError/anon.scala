@@ -9,10 +9,16 @@ object anon {
   /* Inlined ensure-error.ensure-error.ErrorWithStack<std.Error> */
   trait ErrorWithStackError extends StObject {
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
+    /* standard es5 */
     var stack: js.UndefOr[String] & String
   }
   object ErrorWithStackError {
@@ -23,6 +29,10 @@ object anon {
     }
     
     extension [Self <: ErrorWithStackError](x: Self) {
+      
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unist-util-modify-children" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unist-util-modify-children" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

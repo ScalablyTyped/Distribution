@@ -36,7 +36,7 @@ object XCloseBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCloseListener: XCloseListener => Unit
   ): XCloseBroadcaster = {

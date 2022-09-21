@@ -20,6 +20,9 @@ trait AccountUser extends StObject {
   
   /** Whether user can manage payment settings. */
   var paymentsManager: js.UndefOr[Boolean] = js.undefined
+  
+  /** Whether user is a reporting manager. */
+  var reportingManager: js.UndefOr[Boolean] = js.undefined
 }
 object AccountUser {
   
@@ -49,5 +52,9 @@ object AccountUser {
     inline def setPaymentsManager(value: Boolean): Self = StObject.set(x, "paymentsManager", value.asInstanceOf[js.Any])
     
     inline def setPaymentsManagerUndefined: Self = StObject.set(x, "paymentsManager", js.undefined)
+    
+    inline def setReportingManager(value: Boolean): Self = StObject.set(x, "reportingManager", value.asInstanceOf[js.Any])
+    
+    inline def setReportingManagerUndefined: Self = StObject.set(x, "reportingManager", js.undefined)
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rabin-wasm" : "0.1.4"
+      "rabin-wasm" : "0.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "rabin-wasm" : "0.1.4"
+      "rabin-wasm" : "0.1.5"
     }
   ],
   "compile-devDependencies" : [

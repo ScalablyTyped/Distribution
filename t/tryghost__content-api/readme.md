@@ -10,15 +10,15 @@ JavaScript Client Library for the Ghost [Content API](https://ghost.org/docs/con
 | ------------------ | :-------------: |
 | Full name          | @tryghost/content-api |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 17 |
-| # downloads        | 663745 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 147352.33333333334 |
+| # stars            | 83.0 |
 
 ## Links
-- [Homepage](https://github.com/TryGhost/SDK#readme)
+- [Homepage](https://github.com/TryGhost/SDK/tree/master#readme)
 - [Bugs](https://github.com/TryGhost/SDK/issues)
-- [Repository](https://github.com/TryGhost/SDK)
+- [Repository](https://github.com/TryGhost/SDK/tree/master)
 - [Npm](https://www.npmjs.com/package/%40tryghost%2Fcontent-api)
     
 

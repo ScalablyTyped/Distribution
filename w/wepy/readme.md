@@ -10,10 +10,10 @@ Typings are for version 1.7
 | ------------------ | :-------------: |
 | Full name          | wepy |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 22681 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 694.6666666666666 |
+| # stars            | 21829.0 |
 
 ## Links
 - [Homepage](https://github.com/wepyjs/wepy#readme)

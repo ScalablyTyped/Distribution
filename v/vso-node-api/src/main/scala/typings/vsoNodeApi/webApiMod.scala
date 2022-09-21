@@ -39,17 +39,17 @@ object webApiMod {
   
   @JSImport("vso-node-api/WebApi", "WebApi")
   @js.native
-  class WebApi protected () extends StObject {
+  open class WebApi protected () extends StObject {
     def this(defaultUrl: String, authHandler: IRequestHandler) = this()
     def this(defaultUrl: String, authHandler: IRequestHandler, options: IRequestOptions) = this()
     
-    /* private */ def _getResourceAreaUrl(serverUrl: js.Any, resourceId: js.Any): js.Any = js.native
+    /* private */ def _getResourceAreaUrl(serverUrl: Any, resourceId: Any): Any = js.native
     
-    /* private */ def _getResourceAreas(): js.Any = js.native
+    /* private */ def _getResourceAreas(): Any = js.native
     
-    /* private */ def _readTaskLibSecrets(lookupKey: js.Any): js.Any = js.native
+    /* private */ def _readTaskLibSecrets(lookupKey: Any): Any = js.native
     
-    /* private */ var _resourceAreas: js.Any = js.native
+    /* private */ var _resourceAreas: Any = js.native
     
     var authHandler: IRequestHandler = js.native
     

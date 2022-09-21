@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CalloutOpenOptions")
 @js.native
-class CalloutOpenOptions ()
+open class CalloutOpenOptions ()
   extends StObject
      with typings.sharepoint.CalloutOpenOptions {
   

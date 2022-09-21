@@ -9,7 +9,7 @@ trait PrintManager
      with IPrintManager
 object PrintManager {
   
-  inline def apply(onprinttaskrequested: js.Any): PrintManager = {
+  inline def apply(onprinttaskrequested: Any): PrintManager = {
     val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintManager]
   }

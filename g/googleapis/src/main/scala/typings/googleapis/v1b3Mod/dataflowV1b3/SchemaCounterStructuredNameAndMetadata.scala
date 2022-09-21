@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single message which encapsulates structured name and metadata for a
-  * given counter.
-  */
 trait SchemaCounterStructuredNameAndMetadata extends StObject {
   
   /**

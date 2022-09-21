@@ -9,7 +9,7 @@ trait PredictorSummary extends StObject {
   /**
     * When the model training task was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that contains the data used to train the predictor.
@@ -17,9 +17,14 @@ trait PredictorSummary extends StObject {
   var DatasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * Initially, the same as CreationTime (status is CREATE_PENDING). Updated when training starts (status changed to CREATE_IN_PROGRESS), and when training is complete (status changed to ACTIVE) or fails (status changed to CREATE_FAILED).
+    * Whether AutoPredictor was used to create the predictor.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var IsAutoPredictor: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    */
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
@@ -37,7 +42,12 @@ trait PredictorSummary extends StObject {
   var PredictorName: js.UndefOr[Name] = js.undefined
   
   /**
-    * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     UPDATE_PENDING, UPDATE_IN_PROGRESS, UPDATE_FAILED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
+    * A summary of the reference predictor used if the predictor was retrained or upgraded.
+    */
+  var ReferencePredictorSummary: js.UndefOr[typings.awsSdk.forecastserviceMod.ReferencePredictorSummary] = js.undefined
+  
+  /**
+    * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     CREATE_STOPPING, CREATE_STOPPED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
     */
   var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
@@ -50,7 +60,7 @@ object PredictorSummary {
   
   extension [Self <: PredictorSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -58,7 +68,11 @@ object PredictorSummary {
     
     inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setIsAutoPredictor(value: Boolean): Self = StObject.set(x, "IsAutoPredictor", value.asInstanceOf[js.Any])
+    
+    inline def setIsAutoPredictorUndefined: Self = StObject.set(x, "IsAutoPredictor", js.undefined)
+    
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
@@ -73,6 +87,10 @@ object PredictorSummary {
     inline def setPredictorName(value: Name): Self = StObject.set(x, "PredictorName", value.asInstanceOf[js.Any])
     
     inline def setPredictorNameUndefined: Self = StObject.set(x, "PredictorName", js.undefined)
+    
+    inline def setReferencePredictorSummary(value: ReferencePredictorSummary): Self = StObject.set(x, "ReferencePredictorSummary", value.asInstanceOf[js.Any])
+    
+    inline def setReferencePredictorSummaryUndefined: Self = StObject.set(x, "ReferencePredictorSummary", js.undefined)
     
     inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

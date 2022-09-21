@@ -57,7 +57,7 @@ object GetShippingLabelInput {
     
     inline def setJobIds(value: JobIdList): Self = StObject.set(x, "jobIds", value.asInstanceOf[js.Any])
     
-    inline def setJobIdsVarargs(value: GenericString*): Self = StObject.set(x, "jobIds", js.Array(value :_*))
+    inline def setJobIdsVarargs(value: GenericString*): Self = StObject.set(x, "jobIds", js.Array(value*))
     
     inline def setName(value: name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

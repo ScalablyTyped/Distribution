@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object stripTagsMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: Any): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: Any, allowed: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, allowed: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strip_tags", JSImport.Namespace)
   @js.native

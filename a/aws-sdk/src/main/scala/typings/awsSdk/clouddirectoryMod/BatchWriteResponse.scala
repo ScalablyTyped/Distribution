@@ -24,6 +24,6 @@ object BatchWriteResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
     
-    inline def setResponsesVarargs(value: BatchWriteOperationResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: BatchWriteOperationResponse*): Self = StObject.set(x, "Responses", js.Array(value*))
   }
 }

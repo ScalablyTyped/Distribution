@@ -298,6 +298,6 @@ object venues {
       * Method returns map of all loaded buildings associated with the venue.
       * @returns {Object<*, H.service.venues.Building>}
       */
-    def getBuildings(): js.Any = js.native
+    def getBuildings(): Any = js.native
   }
 }

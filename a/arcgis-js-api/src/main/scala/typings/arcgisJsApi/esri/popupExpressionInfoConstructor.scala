@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait popupExpressionInfoConstructor
   extends StObject
-     with Instantiable0[popupExpressionInfo]
+     with /**
+  * The `ExpressionInfo` class references [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions following the specification defined by the [Arcade Popup Profile](https://developers.arcgis.com/javascript/latest/arcade/#popup).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html)
+  */
+Instantiable0[popupExpressionInfo]
      with Instantiable1[/* properties */ popupExpressionInfoProperties, popupExpressionInfo] {
   
-  def fromJSON(json: js.Any): popupExpressionInfo = js.native
+  def fromJSON(json: Any): popupExpressionInfo = js.native
 }

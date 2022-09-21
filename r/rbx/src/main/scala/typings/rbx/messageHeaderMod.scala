@@ -54,7 +54,7 @@ object messageHeaderMod {
   
   @JSImport("rbx/components/message/message-header", "MessageHeader")
   @js.native
-  val MessageHeader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val MessageHeader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait MessageHeaderProps extends StObject {

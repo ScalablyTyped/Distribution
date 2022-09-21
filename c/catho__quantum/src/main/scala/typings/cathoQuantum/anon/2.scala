@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `2` extends StObject {
   
-  var theme: js.UndefOr[`1`] = js.undefined
+  var spacing: js.UndefOr[js.Object] = js.undefined
 }
 object `2` {
   
@@ -17,8 +17,8 @@ object `2` {
   
   extension [Self <: `2`](x: Self) {
     
-    inline def setTheme(value: `1`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

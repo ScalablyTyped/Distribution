@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object loadEntryPointMod {
   
-  @JSImport("react-relay/lib/relay-experimental/loadEntryPoint", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/loadEntryPoint", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def loadEntryPoint[TEntryPoint](
-    environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, js.Any]]],
+    environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, Any]]],
     entryPoint: TEntryPoint,
     entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]
   ): PreloadedEntryPoint[GetEntryPointComponentFromEntryPoint[TEntryPoint]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEntryPoint")(environmentProvider.asInstanceOf[js.Any], entryPoint.asInstanceOf[js.Any], entryPointParams.asInstanceOf[js.Any])).asInstanceOf[PreloadedEntryPoint[GetEntryPointComponentFromEntryPoint[TEntryPoint]]]

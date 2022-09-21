@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.segmented")
 @js.native
-class segmented ()
+open class segmented ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
@@ -17,7 +17,7 @@ class segmented ()
   var $allowsClear: Boolean = js.native
   
   @JSName("$compareValue")
-  def $compareValue(args: js.Any*): js.Any = js.native
+  def $compareValue(args: Any*): Any = js.native
   @JSName("$compareValue")
   var $compareValue_Original: WebixCallback = js.native
   
@@ -25,33 +25,33 @@ class segmented ()
   def $getValue(): String = js.native
   
   @JSName("$prepareValue")
-  def $prepareValue(args: js.Any*): js.Any = js.native
+  def $prepareValue(args: Any*): Any = js.native
   @JSName("$prepareValue")
   var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$render")
-  def $render(args: js.Any*): js.Any = js.native
+  def $render(args: Any*): Any = js.native
   
   @JSName("$renderIcon")
-  def $renderIcon(args: js.Any*): js.Any = js.native
+  def $renderIcon(args: Any*): Any = js.native
   @JSName("$renderIcon")
   var $renderIcon_Original: WebixCallback = js.native
   
   @JSName("$renderInput")
-  def $renderInput(obj: js.Any, html: String, id: String): String = js.native
+  def $renderInput(obj: Any, html: String, id: String): String = js.native
   @JSName("$renderInput")
-  def $renderInput(obj: js.Any, html: String, id: Double): String = js.native
+  def $renderInput(obj: Any, html: String, id: Double): String = js.native
   
   @JSName("$renderLabel")
-  def $renderLabel(config: js.Any, id: String): String = js.native
+  def $renderLabel(config: Any, id: String): String = js.native
   @JSName("$renderLabel")
-  def $renderLabel(config: js.Any, id: Double): String = js.native
+  def $renderLabel(config: Any, id: Double): String = js.native
   
   @JSName("$render")
   var $render_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -68,26 +68,26 @@ class segmented ()
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   
-  def addOption(id: String, value: js.Any): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Unit, index: Double): Unit = js.native
-  def addOption(id: Double, value: js.Any): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Unit, index: Double): Unit = js.native
+  def addOption(id: String, value: Any): Unit = js.native
+  def addOption(id: String, value: Any, show: Boolean): Unit = js.native
+  def addOption(id: String, value: Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: String, value: Any, show: Unit, index: Double): Unit = js.native
+  def addOption(id: Double, value: Any): Unit = js.native
+  def addOption(id: Double, value: Any, show: Boolean): Unit = js.native
+  def addOption(id: Double, value: Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: Double, value: Any, show: Unit, index: Double): Unit = js.native
   
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_segmented: segmentedConfig = js.native
@@ -104,8 +104,8 @@ class segmented ()
   
   def getInputNode(): HTMLElement = js.native
   
-  def getOption(id: String): js.Any = js.native
-  def getOption(id: Double): js.Any = js.native
+  def getOption(id: String): Any = js.native
+  def getOption(id: Double): Any = js.native
   
   def getValue(): String = js.native
   
@@ -114,9 +114,9 @@ class segmented ()
   def hideOption(id: String): Unit = js.native
   def hideOption(id: Double): Unit = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def on_click(args: js.Any*): js.Any = js.native
+  def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
@@ -128,17 +128,20 @@ class segmented ()
   def removeOption(id: String): Unit = js.native
   def removeOption(id: Double): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def setBottomText(text: String): Unit = js.native
   
   def setValue(value: String): Unit = js.native
   
+  def setValueHere(value: String): Unit = js.native
+  def setValueHere(value: Double): Unit = js.native
+  
   def showOption(id: String): Unit = js.native
   def showOption(id: Double): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

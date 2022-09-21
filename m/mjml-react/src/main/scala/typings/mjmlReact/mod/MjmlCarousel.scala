@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlCarousel")
 @js.native
-class MjmlCarousel protected ()
-  extends Component[RequiredChildrenProps & MjmlCarouselProps & ClassNameProps, js.Object, js.Any] {
-  def this(props: RequiredChildrenProps & MjmlCarouselProps & ClassNameProps) = this()
+open class MjmlCarousel protected ()
+  extends Component[MjmlCarouselProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlCarouselProps & ClassNameProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RequiredChildrenProps & MjmlCarouselProps & ClassNameProps, context: js.Any) = this()
+  def this(props: MjmlCarouselProps & ClassNameProps, context: Any) = this()
 }

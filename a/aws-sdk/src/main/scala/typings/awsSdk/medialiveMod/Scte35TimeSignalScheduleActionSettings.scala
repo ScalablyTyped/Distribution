@@ -22,6 +22,6 @@ object Scte35TimeSignalScheduleActionSettings {
     
     inline def setScte35Descriptors(value: listOfScte35Descriptor): Self = StObject.set(x, "Scte35Descriptors", value.asInstanceOf[js.Any])
     
-    inline def setScte35DescriptorsVarargs(value: Scte35Descriptor*): Self = StObject.set(x, "Scte35Descriptors", js.Array(value :_*))
+    inline def setScte35DescriptorsVarargs(value: Scte35Descriptor*): Self = StObject.set(x, "Scte35Descriptors", js.Array(value*))
   }
 }

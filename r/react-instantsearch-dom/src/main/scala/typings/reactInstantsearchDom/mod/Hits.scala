@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "Hits")
 @js.native
-class Hits[T] protected ()
-  extends Component[HitsProps[T], js.Object, js.Any] {
+open class Hits[T] protected ()
+  extends Component[HitsProps[T], js.Object, Any] {
   def this(props: HitsProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HitsProps[T], context: js.Any) = this()
+  def this(props: HitsProps[T], context: Any) = this()
 }

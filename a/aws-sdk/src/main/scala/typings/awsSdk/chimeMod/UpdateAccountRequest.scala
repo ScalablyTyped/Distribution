@@ -12,6 +12,11 @@ trait UpdateAccountRequest extends StObject {
   var AccountId: NonEmptyString
   
   /**
+    * The default license applied when you add users to an Amazon Chime account.
+    */
+  var DefaultLicense: js.UndefOr[License] = js.undefined
+  
+  /**
     * The new name for the specified Amazon Chime account.
     */
   var Name: js.UndefOr[AccountName] = js.undefined
@@ -26,6 +31,10 @@ object UpdateAccountRequest {
   extension [Self <: UpdateAccountRequest](x: Self) {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultLicense(value: License): Self = StObject.set(x, "DefaultLicense", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultLicenseUndefined: Self = StObject.set(x, "DefaultLicense", js.undefined)
     
     inline def setName(value: AccountName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

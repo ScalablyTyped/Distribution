@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ConsensusFailBlockResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusFailBlockResponse.
   * @param [properties] Properties to set
   */
-class ConsensusFailBlockResponse ()
+open class ConsensusFailBlockResponse ()
   extends StObject
      with IConsensusFailBlockResponse {
   def this(properties: IConsensusFailBlockResponse) = this()
@@ -29,7 +28,7 @@ class ConsensusFailBlockResponse ()
     * Converts this ConsensusFailBlockResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusFailBlockResponse {
@@ -93,6 +92,8 @@ object ConsensusFailBlockResponse {
   inline def create(): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusFailBlockResponse]
   inline def create(properties: IConsensusFailBlockResponse): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusFailBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFailBlockResponse]
   /**
     * Decodes a ConsensusFailBlockResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -103,9 +104,8 @@ object ConsensusFailBlockResponse {
     */
   inline def decode(reader: Reader): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   inline def decode(reader: Reader, length: Double): ConsensusFailBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFailBlockResponse]
-  inline def decode(reader: Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusFailBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFailBlockResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   /**
     * Decodes a ConsensusFailBlockResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -114,7 +114,6 @@ object ConsensusFailBlockResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Encodes the specified ConsensusFailBlockResponse message. Does not implicitly {@link ConsensusFailBlockResponse.verify|verify} messages.
@@ -139,7 +138,7 @@ object ConsensusFailBlockResponse {
     * @param object Plain object
     * @returns ConsensusFailBlockResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusFailBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusFailBlockResponse]
   
   /**
     * Creates a plain object from a ConsensusFailBlockResponse message. Also converts values to other types if specified.
@@ -147,13 +146,13 @@ object ConsensusFailBlockResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusFailBlockResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusFailBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusFailBlockResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusFailBlockResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusFailBlockResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

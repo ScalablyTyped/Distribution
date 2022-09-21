@@ -29,7 +29,7 @@ object ResourcesMoveInfo {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setTargetResourceGroup(value: String): Self = StObject.set(x, "targetResourceGroup", value.asInstanceOf[js.Any])
     

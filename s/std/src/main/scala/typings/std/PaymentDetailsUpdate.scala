@@ -8,8 +8,10 @@ trait PaymentDetailsUpdate
   extends StObject
      with PaymentDetailsBase {
   
-  var error: js.UndefOr[java.lang.String] = js.undefined
+  /* standard dom */
+  var paymentMethodErrors: js.UndefOr[Any] = js.undefined
   
+  /* standard dom */
   var total: js.UndefOr[PaymentItem] = js.undefined
 }
 object PaymentDetailsUpdate {
@@ -21,9 +23,9 @@ object PaymentDetailsUpdate {
   
   extension [Self <: PaymentDetailsUpdate](x: Self) {
     
-    inline def setError(value: java.lang.String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodErrors(value: Any): Self = StObject.set(x, "paymentMethodErrors", value.asInstanceOf[js.Any])
     
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setPaymentMethodErrorsUndefined: Self = StObject.set(x, "paymentMethodErrors", js.undefined)
     
     inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

@@ -10,9 +10,9 @@ trait AjaxSettings extends StObject {
   
   var cache: Boolean
   
-  var contentType: js.UndefOr[js.Any] = js.undefined
+  var contentType: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataType: js.UndefOr[String] = js.undefined
   
@@ -33,11 +33,11 @@ object AjaxSettings {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    inline def setContentType(value: js.Any): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Any): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

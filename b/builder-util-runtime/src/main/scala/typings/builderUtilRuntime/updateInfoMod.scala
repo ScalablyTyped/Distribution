@@ -173,7 +173,7 @@ object updateInfoMod {
       
       inline def setFiles(value: js.Array[UpdateFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: UpdateFileInfo*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: UpdateFileInfo*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -191,7 +191,7 @@ object updateInfoMod {
       
       inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
       
-      inline def setReleaseNotesVarargs(value: ReleaseNoteInfo*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
+      inline def setReleaseNotesVarargs(value: ReleaseNoteInfo*): Self = StObject.set(x, "releaseNotes", js.Array(value*))
       
       inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
       

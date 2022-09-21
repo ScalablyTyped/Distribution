@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CalculateLoyaltyPointsRequest")
 @js.native
-class CalculateLoyaltyPointsRequest () extends StObject {
+open class CalculateLoyaltyPointsRequest () extends StObject {
   
   /**
     * The `order` ID for which to calculate the points.

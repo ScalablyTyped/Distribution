@@ -74,7 +74,7 @@ trait EmailOptions extends StObject {
   
   var NewColorOnReply: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PlainTextStyle: Style
   
@@ -130,7 +130,7 @@ object EmailOptions {
     MarkComments: Boolean,
     MarkCommentsWith: String,
     NewColorOnReply: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PlainTextStyle: Style,
     RelyOnCSS: Boolean,
     ReplyStyle: Style,
@@ -215,7 +215,7 @@ object EmailOptions {
     
     inline def setNewColorOnReply(value: Boolean): Self = StObject.set(x, "NewColorOnReply", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlainTextStyle(value: Style): Self = StObject.set(x, "PlainTextStyle", value.asInstanceOf[js.Any])
     

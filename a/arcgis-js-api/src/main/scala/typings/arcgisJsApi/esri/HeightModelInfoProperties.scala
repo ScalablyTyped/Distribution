@@ -27,12 +27,16 @@ trait HeightModelInfoProperties extends StObject {
   /**
     * The surface type or height model of the vertical coordinate system (VCS).
     *
+    * @default "gravity-related-height"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightModel)
     */
   var heightModel: js.UndefOr[`gravity-related-height` | ellipsoidal] = js.undefined
   
   /**
     * The unit of the vertical coordinate system.
+    *
+    * @default "meters"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightUnit)
     */

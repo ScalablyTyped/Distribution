@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Icon")
 @js.native
-class Icon protected ()
+open class Icon protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Icon {
   def this(url: String, size: typings.bmapgl.BMapGL.Size) = this()

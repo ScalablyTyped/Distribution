@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceDataSyncAwsOrganizationsSource extends StObject {
   
   /**
-    * If an AWS Organization is present, this is either OrganizationalUnits or EntireOrganization. For OrganizationalUnits, the data is aggregated from a set of organization units. For EntireOrganization, the data is aggregated from the entire AWS Organization. 
+    * If an Amazon Web Services organization is present, this is either OrganizationalUnits or EntireOrganization. For OrganizationalUnits, the data is aggregated from a set of organization units. For EntireOrganization, the data is aggregated from the entire Amazon Web Services organization.
     */
   var OrganizationSourceType: ResourceDataSyncOrganizationSourceType
   
   /**
-    * The AWS Organizations organization units included in the sync.
+    * The Organizations organization units included in the sync.
     */
   var OrganizationalUnits: js.UndefOr[ResourceDataSyncOrganizationalUnitList] = js.undefined
 }
@@ -31,6 +31,6 @@ object ResourceDataSyncAwsOrganizationsSource {
     
     inline def setOrganizationalUnitsUndefined: Self = StObject.set(x, "OrganizationalUnits", js.undefined)
     
-    inline def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value :_*))
+    inline def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value*))
   }
 }

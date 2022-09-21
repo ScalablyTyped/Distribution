@@ -12,18 +12,18 @@ trait Nvd3Static extends StObject {
   def addGraph[TChart /* <: Nvd3Element */](generate: js.Function0[TChart], callBack: js.Function1[/* chart */ TChart, Unit]): Unit = js.native
   
   /*stores all the ready to use charts*/
-  var charts: js.Any = js.native
+  var charts: Any = js.native
   
   /*set to false in production*/
   var dev: Boolean = js.native
   
   //returns last argument
-  def log(arg: js.Array[js.Any]): js.Any = js.native
+  def log(arg: js.Array[Any]): Any = js.native
   def log(topic: String): String = js.native
   def log(topic: String, value: String): String = js.native
   
   /*stores some statistics and potential error messages*/
-  var logs: js.Any = js.native
+  var logs: Any = js.native
   
   var models: Models = js.native
   

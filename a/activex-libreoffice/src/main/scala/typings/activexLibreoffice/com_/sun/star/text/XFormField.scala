@@ -30,7 +30,7 @@ object XFormField {
     acquire: () => Unit,
     getFieldType: () => String,
     getParameters: () => XNameContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFieldType: String => Unit
   ): XFormField = {

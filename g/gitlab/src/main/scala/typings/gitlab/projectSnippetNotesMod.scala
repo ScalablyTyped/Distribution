@@ -10,7 +10,7 @@ object projectSnippetNotesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectSnippetNotes", "ProjectSnippetNotes")
   @js.native
-  class ProjectSnippetNotes protected () extends ResourceNotes {
+  open class ProjectSnippetNotes protected () extends ResourceNotes {
     def this(options: BaseServiceOptions) = this()
   }
 }

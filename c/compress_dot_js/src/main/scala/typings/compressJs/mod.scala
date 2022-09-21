@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("compress.js", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Compress {
     

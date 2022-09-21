@@ -22,7 +22,9 @@ object localeMod {
     
     var minuteAriaLabel: js.UndefOr[String] = js.undefined
     
-    var months: Shorthand
+    var monthAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var months: Longhand
     
     var ordinal: js.UndefOr[js.Function1[/* nth */ Double, String]] = js.undefined
     
@@ -36,13 +38,13 @@ object localeMod {
     
     var weekAbbreviation: js.UndefOr[String] = js.undefined
     
-    var weekdays: Longhand
+    var weekdays: Shorthand
     
     var yearAriaLabel: js.UndefOr[String] = js.undefined
   }
   object CustomLocale {
     
-    inline def apply(months: Shorthand, weekdays: Longhand): CustomLocale = {
+    inline def apply(months: Longhand, weekdays: Shorthand): CustomLocale = {
       val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomLocale]
     }
@@ -71,7 +73,11 @@ object localeMod {
       
       inline def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
       
-      inline def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setMonthAriaLabelUndefined: Self = StObject.set(x, "monthAriaLabel", js.undefined)
+      
+      inline def setMonths(value: Longhand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
       inline def setOrdinal(value: /* nth */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
       
@@ -97,7 +103,7 @@ object localeMod {
       
       inline def setWeekAbbreviationUndefined: Self = StObject.set(x, "weekAbbreviation", js.undefined)
       
-      inline def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: Shorthand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
       inline def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
       
@@ -119,7 +125,7 @@ object localeMod {
     
     var monthAriaLabel: String
     
-    var months: Shorthand
+    var months: Longhand
     
     def ordinal(nth: Double): String
     
@@ -133,7 +139,7 @@ object localeMod {
     
     var weekAbbreviation: String
     
-    var weekdays: Longhand
+    var weekdays: Shorthand
     
     var yearAriaLabel: String
   }
@@ -146,14 +152,14 @@ object localeMod {
       hourAriaLabel: String,
       minuteAriaLabel: String,
       monthAriaLabel: String,
-      months: Shorthand,
+      months: Longhand,
       ordinal: Double => String,
       rangeSeparator: String,
       scrollTitle: String,
       time_24hr: Boolean,
       toggleTitle: String,
       weekAbbreviation: String,
-      weekdays: Longhand,
+      weekdays: Shorthand,
       yearAriaLabel: String
     ): Locale = {
       val __obj = js.Dynamic.literal(amPM = amPM.asInstanceOf[js.Any], daysInMonth = daysInMonth.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], hourAriaLabel = hourAriaLabel.asInstanceOf[js.Any], minuteAriaLabel = minuteAriaLabel.asInstanceOf[js.Any], monthAriaLabel = monthAriaLabel.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator.asInstanceOf[js.Any], scrollTitle = scrollTitle.asInstanceOf[js.Any], time_24hr = time_24hr.asInstanceOf[js.Any], toggleTitle = toggleTitle.asInstanceOf[js.Any], weekAbbreviation = weekAbbreviation.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], yearAriaLabel = yearAriaLabel.asInstanceOf[js.Any])
@@ -176,7 +182,7 @@ object localeMod {
       
       inline def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
       
-      inline def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Longhand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
       inline def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
       
@@ -190,7 +196,7 @@ object localeMod {
       
       inline def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
       
-      inline def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: Shorthand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
       inline def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
     }
@@ -206,6 +212,7 @@ object localeMod {
     - typings.flatpickr.flatpickrStrings.bs
     - typings.flatpickr.flatpickrStrings.ca
     - typings.flatpickr.flatpickrStrings.cat
+    - typings.flatpickr.flatpickrStrings.ckb
     - typings.flatpickr.flatpickrStrings.cs
     - typings.flatpickr.flatpickrStrings.cy
     - typings.flatpickr.flatpickrStrings.da
@@ -224,6 +231,7 @@ object localeMod {
     - typings.flatpickr.flatpickrStrings.hi
     - typings.flatpickr.flatpickrStrings.hr
     - typings.flatpickr.flatpickrStrings.hu
+    - typings.flatpickr.flatpickrStrings.hy
     - typings.flatpickr.flatpickrStrings.id
     - typings.flatpickr.flatpickrStrings.is
     - typings.flatpickr.flatpickrStrings.it
@@ -239,6 +247,7 @@ object localeMod {
     - typings.flatpickr.flatpickrStrings.ms
     - typings.flatpickr.flatpickrStrings.my
     - typings.flatpickr.flatpickrStrings.nl
+    - typings.flatpickr.flatpickrStrings.nn
     - typings.flatpickr.flatpickrStrings.no
     - typings.flatpickr.flatpickrStrings.pa
     - typings.flatpickr.flatpickrStrings.pl
@@ -283,6 +292,8 @@ object localeMod {
     
     inline def cat: typings.flatpickr.flatpickrStrings.cat = "cat".asInstanceOf[typings.flatpickr.flatpickrStrings.cat]
     
+    inline def ckb: typings.flatpickr.flatpickrStrings.ckb = "ckb".asInstanceOf[typings.flatpickr.flatpickrStrings.ckb]
+    
     inline def cs: typings.flatpickr.flatpickrStrings.cs = "cs".asInstanceOf[typings.flatpickr.flatpickrStrings.cs]
     
     inline def cy: typings.flatpickr.flatpickrStrings.cy = "cy".asInstanceOf[typings.flatpickr.flatpickrStrings.cy]
@@ -317,6 +328,8 @@ object localeMod {
     
     inline def hu: typings.flatpickr.flatpickrStrings.hu = "hu".asInstanceOf[typings.flatpickr.flatpickrStrings.hu]
     
+    inline def hy: typings.flatpickr.flatpickrStrings.hy = "hy".asInstanceOf[typings.flatpickr.flatpickrStrings.hy]
+    
     inline def id: typings.flatpickr.flatpickrStrings.id = "id".asInstanceOf[typings.flatpickr.flatpickrStrings.id]
     
     inline def is: typings.flatpickr.flatpickrStrings.is = "is".asInstanceOf[typings.flatpickr.flatpickrStrings.is]
@@ -346,6 +359,8 @@ object localeMod {
     inline def my: typings.flatpickr.flatpickrStrings.my = "my".asInstanceOf[typings.flatpickr.flatpickrStrings.my]
     
     inline def nl: typings.flatpickr.flatpickrStrings.nl = "nl".asInstanceOf[typings.flatpickr.flatpickrStrings.nl]
+    
+    inline def nn: typings.flatpickr.flatpickrStrings.nn = "nn".asInstanceOf[typings.flatpickr.flatpickrStrings.nn]
     
     inline def no: typings.flatpickr.flatpickrStrings.no = "no".asInstanceOf[typings.flatpickr.flatpickrStrings.no]
     

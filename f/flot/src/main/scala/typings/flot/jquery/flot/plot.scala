@@ -39,7 +39,7 @@ trait plot extends StObject {
   
   def resize(): Unit = js.native
   
-  def setData(data: js.Any): Unit = js.native
+  def setData(data: Any): Unit = js.native
   
   def setupGrid(): Unit = js.native
   

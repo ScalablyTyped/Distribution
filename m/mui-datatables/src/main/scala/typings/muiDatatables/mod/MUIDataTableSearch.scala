@@ -8,9 +8,9 @@ trait MUIDataTableSearch extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.undefined
   
-  var onHide: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onHide: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
-  var onSearch: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onSearch: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
   var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
@@ -29,11 +29,11 @@ object MUIDataTableSearch {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setOnHide(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    inline def setOnHide(value: /* args */ Any => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnSearch(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+    inline def setOnSearch(value: /* args */ Any => Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
     
     inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
     

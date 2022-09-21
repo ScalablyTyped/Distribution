@@ -5,51 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create an instance of a pc.ElementInputEvent.
-  * @property event - The MouseEvent or TouchEvent that was originally raised.
-  * @property element - The ElementComponent that this event was originally raised on.
-  * @property camera - The CameraComponent that this event was originally raised via.
-  * @param event - The MouseEvent or TouchEvent that was originally raised.
-  * @param element - The ElementComponent that this event was originally raised on.
-  * @param camera - The CameraComponent that this event was originally raised via.
+  * Represents an input event fired on a {@link ElementComponent}. When an event is raised on an
+  * ElementComponent it bubbles up to its parent ElementComponents unless we call stopPropagation().
   */
 @JSImport("playcanvas", "ElementInputEvent")
 @js.native
-class ElementInputEvent protected ()
-  extends StObject
-     with typings.playcanvas.pc.ElementInputEvent {
-  def this(
-    event: typings.playcanvas.pc.MouseEvent,
-    element: typings.playcanvas.pc.ElementComponent,
-    camera: typings.playcanvas.pc.CameraComponent
-  ) = this()
-  def this(
-    event: typings.playcanvas.pc.TouchEvent,
-    element: typings.playcanvas.pc.ElementComponent,
-    camera: typings.playcanvas.pc.CameraComponent
-  ) = this()
+open class ElementInputEvent protected () extends StObject {
+  /**
+    * Create a new ElementInputEvent instance.
+    *
+    * @param {MouseEvent|TouchEvent} event - The MouseEvent or TouchEvent that was originally
+    * raised.
+    * @param {ElementComponent} element - The ElementComponent that this event was originally
+    * raised on.
+    * @param {CameraComponent} camera - The CameraComponent that this event was originally raised
+    * via.
+    */
+  def this(event: typings.std.MouseEvent, element: ElementComponent, camera: CameraComponent) = this()
+  def this(event: typings.std.TouchEvent, element: ElementComponent, camera: CameraComponent) = this()
+  
+  var _stopPropagation: Boolean = js.native
   
   /**
     * The CameraComponent that this event was originally raised via.
+    *
+    * @type {CameraComponent}
     */
-  /* CompleteClass */
-  var camera: typings.playcanvas.pc.CameraComponent = js.native
+  var camera: CameraComponent = js.native
   
   /**
     * The ElementComponent that this event was originally raised on.
+    *
+    * @type {ElementComponent}
     */
-  /* CompleteClass */
-  var element: typings.playcanvas.pc.ElementComponent = js.native
+  var element: ElementComponent = js.native
   
   /**
     * The MouseEvent or TouchEvent that was originally raised.
+    *
+    * @type {MouseEvent|TouchEvent}
     */
-  /* CompleteClass */
-  var event: typings.playcanvas.pc.MouseEvent | typings.playcanvas.pc.TouchEvent = js.native
+  var event: typings.std.MouseEvent | typings.std.TouchEvent = js.native
   
   /**
-    * Stop propagation of the event to parent {@link pc.ElementComponent}s. This also stops propagation of the event to other event listeners of the original DOM Event.
+    * Stop propagation of the event to parent {@link ElementComponent}s. This also stops
+    * propagation of the event to other event listeners of the original DOM Event.
     */
-  /* CompleteClass */
-  override def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit = js.native
 }

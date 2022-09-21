@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutConfigurationSetSuppressionOptionsRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to change the suppression list preferences for.
+    * The name of the configuration set to change the suppression list preferences for.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
@@ -31,6 +31,6 @@ object PutConfigurationSetSuppressionOptionsRequest {
     
     inline def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
     
-    inline def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
+    inline def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value*))
   }
 }

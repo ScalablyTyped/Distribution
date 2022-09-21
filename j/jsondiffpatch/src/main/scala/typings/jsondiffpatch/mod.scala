@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("jsondiffpatch", "Context")
   @js.native
-  class Context () extends StObject {
+  open class Context () extends StObject {
     
     var childName: js.UndefOr[String] = js.native
     
@@ -45,56 +45,56 @@ object mod {
     
     var root: js.UndefOr[PatchContext] = js.native
     
-    def setResult(result: js.Any): Context = js.native
+    def setResult(result: Any): Context = js.native
   }
   
   @JSImport("jsondiffpatch", "DiffContext")
   @js.native
-  class DiffContext ()
+  open class DiffContext ()
     extends Context
        with FilterContext {
     
-    var left: js.Any = js.native
+    var left: Any = js.native
     
     var pipe: diff = js.native
     
-    var right: js.Any = js.native
+    var right: Any = js.native
   }
   
   @JSImport("jsondiffpatch", "DiffPatcher")
   @js.native
-  class DiffPatcher () extends StObject {
+  open class DiffPatcher () extends StObject {
     def this(options: Config) = this()
     
-    def clone(value: js.Any): js.Any = js.native
+    def clone(value: Any): Any = js.native
     
-    def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = js.native
+    def diff(left: Any, right: Any): js.UndefOr[Delta] = js.native
     
-    def patch(left: js.Any, delta: Delta): js.Any = js.native
+    def patch(left: Any, delta: Delta): Any = js.native
     
     var processor: Processor = js.native
     
     def reverse(delta: Delta): js.UndefOr[Delta] = js.native
     
-    def unpatch(right: js.Any, delta: Delta): js.Any = js.native
+    def unpatch(right: Any, delta: Delta): Any = js.native
   }
   
   @JSImport("jsondiffpatch", "PatchContext")
   @js.native
-  class PatchContext ()
+  open class PatchContext ()
     extends Context
        with FilterContext {
     
     var delta: Delta = js.native
     
-    var left: js.Any = js.native
+    var left: Any = js.native
     
     var pipe: patch = js.native
   }
   
   @JSImport("jsondiffpatch", "Pipe")
   @js.native
-  class Pipe[TContext /* <: FilterContext */] () extends StObject {
+  open class Pipe[TContext /* <: FilterContext */] () extends StObject {
     
     /**
       * Add one ore more filters after the specified filter
@@ -146,7 +146,7 @@ object mod {
   
   @JSImport("jsondiffpatch", "Processor")
   @js.native
-  class Processor () extends StObject {
+  open class Processor () extends StObject {
     def this(options: Config) = this()
     
     var pipes: Diff = js.native
@@ -154,7 +154,7 @@ object mod {
   
   @JSImport("jsondiffpatch", "ReverseContext")
   @js.native
-  class ReverseContext ()
+  open class ReverseContext ()
     extends Context
        with FilterContext {
     
@@ -168,11 +168,11 @@ object mod {
   val console: Formatter = js.native
   
   inline def create(): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DiffPatcher]
-  inline def create(options: js.Any): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[DiffPatcher]
+  inline def create(options: Any): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[DiffPatcher]
   
-  inline def dateReviver(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dateReviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def dateReviver(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dateReviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Delta]]
+  inline def diff(left: Any, right: Any): js.UndefOr[Delta] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Delta]]
   
   object formatters {
     
@@ -196,11 +196,11 @@ object mod {
     inline def html_=(x: HtmlFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
   }
   
-  inline def patch(left: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(left.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def patch(left: Any, delta: Delta): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(left.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def reverse(delta: Delta): js.UndefOr[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(delta.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Delta]]
   
-  inline def unpatch(right: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")(right.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def unpatch(right: Any, delta: Delta): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")(right.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Config extends StObject {
     
@@ -213,10 +213,10 @@ object mod {
       *
       *  instead of true, a function can be specified here to provide a custom clone(value)
       */
-    var cloneDiffValues: js.UndefOr[Boolean | (js.Function1[/* value */ js.Any, js.Any])] = js.undefined
+    var cloneDiffValues: js.UndefOr[Boolean | (js.Function1[/* value */ Any, Any])] = js.undefined
     
     // used to match objects when diffing arrays, by default only === operator is used
-    var objectHash: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, String]] = js.undefined
+    var objectHash: js.UndefOr[js.Function2[/* item */ Any, /* index */ Double, String]] = js.undefined
     
     /**
       * this optional function can be specified to ignore object properties (eg. volatile data)
@@ -243,13 +243,13 @@ object mod {
       
       inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
-      inline def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ js.Any, js.Any])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
+      inline def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ Any, Any])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
       
-      inline def setCloneDiffValuesFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
+      inline def setCloneDiffValuesFunction1(value: /* value */ Any => Any): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
       
       inline def setCloneDiffValuesUndefined: Self = StObject.set(x, "cloneDiffValues", js.undefined)
       
-      inline def setObjectHash(value: (/* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "objectHash", js.Any.fromFunction2(value))
+      inline def setObjectHash(value: (/* item */ Any, /* index */ Double) => String): Self = StObject.set(x, "objectHash", js.Any.fromFunction2(value))
       
       inline def setObjectHashUndefined: Self = StObject.set(x, "objectHash", js.undefined)
       
@@ -263,7 +263,7 @@ object mod {
     }
   }
   
-  type Delta = StringDictionary[js.Any] & NumberDictionary[js.Any]
+  type Delta = StringDictionary[Any] & NumberDictionary[Any]
   
   @js.native
   trait Filter[TContext /* <: FilterContext */] extends StObject {
@@ -289,18 +289,18 @@ object mod {
   
   trait Formatter extends StObject {
     
-    def format(delta: Delta, original: js.Any): String
+    def format(delta: Delta, original: Any): String
   }
   object Formatter {
     
-    inline def apply(format: (Delta, js.Any) => String): Formatter = {
+    inline def apply(format: (Delta, Any) => String): Formatter = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
       __obj.asInstanceOf[Formatter]
     }
     
     extension [Self <: Formatter](x: Self) {
       
-      inline def setFormat(value: (Delta, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (Delta, Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     }
   }
   

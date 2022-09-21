@@ -32,7 +32,7 @@ trait SendAs extends StObject {
   /** The email address that appears in the "From:" header for mail sent using this alias. This is read-only for all operations except create. */
   var sendAsEmail: js.UndefOr[String] = js.undefined
   
-  /** An optional HTML signature that is included in messages composed with this alias in the Gmail web UI. */
+  /** An optional HTML signature that is included in messages composed with this alias in the Gmail web UI. This signature is added to new emails only. */
   var signature: js.UndefOr[String] = js.undefined
   
   /**

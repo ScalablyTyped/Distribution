@@ -32,9 +32,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the background of a range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -45,14 +45,15 @@ trait RangeFill
   /**
     * Resets the range background.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def clear(): Unit = js.native
   
   /**
+    * HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     *
-    * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: String = js.native
@@ -73,39 +74,33 @@ trait RangeFill
   def load(propertyNames: js.Array[String]): RangeFill = js.native
   
   /**
+    * The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not supported.
+    A `null` value indicates that the entire range doesn't have a uniform pattern setting.
     *
-    * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
-    A null value indicates that the entire range doesn't have uniform pattern setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient = js.native
   
   /**
+    * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     *
-    * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: String = js.native
   
   /**
+    * Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `patternTintAndShade` settings.
     *
-    * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the pattern tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: Double = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.RangeFill): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -115,10 +110,10 @@ trait RangeFill
   def set(properties: RangeFill): Unit = js.native
   
   /**
+    * Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `tintAndShade` settings.
     *
-    * Specifies a double that lightens or darkens a color for Range Fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: Double = js.native

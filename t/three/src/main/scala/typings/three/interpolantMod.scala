@@ -9,16 +9,16 @@ object interpolantMod {
   @JSImport("three/src/math/Interpolant", "Interpolant")
   @js.native
   abstract class Interpolant protected () extends StObject {
-    def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double) = this()
-    def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double, resultBuffer: js.Any) = this()
+    def this(parameterPositions: Any, sampleValues: Any, sampleSize: Double) = this()
+    def this(parameterPositions: Any, sampleValues: Any, sampleSize: Double, resultBuffer: Any) = this()
     
-    def evaluate(time: Double): js.Any = js.native
+    def evaluate(time: Double): Any = js.native
     
-    var parameterPositions: js.Any = js.native
+    var parameterPositions: Any = js.native
     
-    var resultBuffer: js.Any = js.native
+    var resultBuffer: Any = js.native
     
-    var sampleValues: js.Any = js.native
+    var sampleValues: Any = js.native
     
     var valueSize: Double = js.native
   }

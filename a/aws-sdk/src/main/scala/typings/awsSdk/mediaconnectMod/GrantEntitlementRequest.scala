@@ -67,6 +67,6 @@ object GrantEntitlementRequest {
     
     inline def setSubscribers(value: listOfString): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    inline def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

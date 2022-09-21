@@ -1,6 +1,5 @@
 package typings.c3.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +14,12 @@ trait AxisConfiguration extends StObject {
   /**
     * Set max value of the axis.
     */
-  var max: js.UndefOr[String | Double | Date] = js.undefined
+  var max: js.UndefOr[String | Double | js.Date] = js.undefined
   
   /**
     * Set min value of the axis.
     */
-  var min: js.UndefOr[String | Double | Date] = js.undefined
+  var min: js.UndefOr[String | Double | js.Date] = js.undefined
   
   /**
     * Set padding for axis.
@@ -47,11 +46,11 @@ object AxisConfiguration {
     
     inline def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
     
-    inline def setMax(value: String | Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String | Double | js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: String | Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String | Double | js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     

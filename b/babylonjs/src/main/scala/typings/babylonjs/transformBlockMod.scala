@@ -10,7 +10,7 @@ object transformBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/transformBlock", "TransformBlock")
   @js.native
-  class TransformBlock protected () extends NodeMaterialBlock {
+  open class TransformBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new TransformBlock
       * @param name defines the block name

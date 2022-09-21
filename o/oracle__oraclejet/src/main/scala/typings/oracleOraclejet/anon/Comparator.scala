@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Comparator
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var comparator: js.UndefOr[
     Null | String | (js.Function2[/* model1 */ Model, /* model2 */ js.UndefOr[Model], Double])
@@ -22,7 +22,7 @@ trait Comparator
   
   var modelLimit: js.UndefOr[Double] = js.undefined
   
-  var parse: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+  var parse: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
 }
@@ -59,7 +59,7 @@ object Comparator {
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    inline def setParse(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: /* data */ Any => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     

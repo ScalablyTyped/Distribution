@@ -8,5 +8,5 @@ object deleteTableOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/DeleteTableOutput", "DeleteTableOutput")
   @js.native
-  val DeleteTableOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteTableOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

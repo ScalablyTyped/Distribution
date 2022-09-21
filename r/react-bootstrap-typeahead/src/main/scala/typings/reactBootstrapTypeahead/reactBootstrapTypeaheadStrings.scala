@@ -51,12 +51,6 @@ object reactBootstrapTypeaheadStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bsSize
-    extends StObject
-       with TypeaheadInputPropKeys
-  inline def bsSize: bsSize = "bsSize".asInstanceOf[bsSize]
-  
-  @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
   
@@ -91,10 +85,6 @@ object reactBootstrapTypeaheadStrings {
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait div extends StObject
-  inline def div: div = "div".asInstanceOf[div]
-  
-  @js.native
   sealed trait done extends StObject
   inline def done: done = "done".asInstanceOf[done]
   
@@ -105,6 +95,10 @@ object reactBootstrapTypeaheadStrings {
   @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait execute extends StObject
@@ -145,10 +139,6 @@ object reactBootstrapTypeaheadStrings {
   @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  
-  @js.native
-  sealed trait input extends StObject
-  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait inputProps
@@ -230,12 +220,6 @@ object reactBootstrapTypeaheadStrings {
     extends StObject
        with TypeaheadInputPropKeys
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
-  
-  @js.native
-  sealed trait newSelectionPrefix
-    extends StObject
-       with TypeaheadMenuPropsPick
-  inline def newSelectionPrefix: newSelectionPrefix = "newSelectionPrefix".asInstanceOf[newSelectionPrefix]
   
   @js.native
   sealed trait next extends StObject
@@ -322,6 +306,12 @@ object reactBootstrapTypeaheadStrings {
   @js.native
   sealed trait page extends StObject
   inline def page: page = "page".asInstanceOf[page]
+  
+  @js.native
+  sealed trait paginationText
+    extends StObject
+       with TypeaheadMenuPropsPick
+  inline def paginationText: paginationText = "paginationText".asInstanceOf[paginationText]
   
   @js.native
   sealed trait placeholder
@@ -438,6 +428,10 @@ object reactBootstrapTypeaheadStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait vertical extends StObject

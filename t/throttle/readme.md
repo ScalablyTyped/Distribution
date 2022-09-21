@@ -11,9 +11,9 @@ Node.js Transform stream that passes data through at `n` bytes per second
 | Full name          | throttle |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 108049 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 16196.0 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-throttle#readme)

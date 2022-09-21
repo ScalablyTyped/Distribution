@@ -11,9 +11,9 @@ Extra assertions on top of node's assert module
 | Full name          | assert-plus |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 563 |
-| # downloads        | 911762798 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 9.109417E7 |
+| # stars            | 120.0 |
 
 ## Links
 - [Homepage](https://github.com/mcavage/node-assert-plus#readme)

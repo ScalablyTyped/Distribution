@@ -1,11 +1,10 @@
 package typings.babylonjs
 
+import typings.babylonjs.deviceInputEventsMod.IKeyboardEvent
+import typings.babylonjs.deviceInputEventsMod.IMouseEvent
 import typings.babylonjs.pickingInfoMod.PickingInfo
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ClipboardEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseWheelEvent
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object eventsIndexMod {
   
   @JSImport("babylonjs/Events/index", "ClipboardEventTypes")
   @js.native
-  class ClipboardEventTypes ()
+  open class ClipboardEventTypes ()
     extends typings.babylonjs.clipboardEventsMod.ClipboardEventTypes
   /* static members */
   object ClipboardEventTypes {
@@ -43,7 +42,7 @@ object eventsIndexMod {
   
   @JSImport("babylonjs/Events/index", "ClipboardInfo")
   @js.native
-  class ClipboardInfo protected ()
+  open class ClipboardInfo protected ()
     extends typings.babylonjs.clipboardEventsMod.ClipboardInfo {
     /**
       *Creates an instance of ClipboardInfo.
@@ -71,14 +70,64 @@ object eventsIndexMod {
     /**
       *  Get the clipboard event's type from the keycode.
       * @param keyCode Defines the keyCode for the current keyboard event.
-      * @return {number}
+      * @returns {number}
       */
     inline def GetTypeFromCharacter(keyCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTypeFromCharacter")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
+  @JSImport("babylonjs/Events/index", "DeviceInputEventType")
+  @js.native
+  object DeviceInputEventType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.babylonjs.deviceInputEventsMod.DeviceInputEventType & Double] = js.native
+    
+    /* 1 */ val PointerDown: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerDown & Double = js.native
+    
+    /* 0 */ val PointerMove: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerMove & Double = js.native
+    
+    /* 2 */ val PointerUp: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerUp & Double = js.native
+  }
+  
+  @JSImport("babylonjs/Events/index", "EventConstants")
+  @js.native
+  open class EventConstants ()
+    extends typings.babylonjs.deviceInputEventsMod.EventConstants
+  /* static members */
+  object EventConstants {
+    
+    @JSImport("babylonjs/Events/index", "EventConstants")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Line delta for Wheel Events
+      */
+    @JSImport("babylonjs/Events/index", "EventConstants.DOM_DELTA_LINE")
+    @js.native
+    def DOM_DELTA_LINE: Double = js.native
+    inline def DOM_DELTA_LINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DELTA_LINE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Page delta for Wheel Events
+      */
+    @JSImport("babylonjs/Events/index", "EventConstants.DOM_DELTA_PAGE")
+    @js.native
+    def DOM_DELTA_PAGE: Double = js.native
+    inline def DOM_DELTA_PAGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DELTA_PAGE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Pixel delta for Wheel Events (Default)
+      */
+    @JSImport("babylonjs/Events/index", "EventConstants.DOM_DELTA_PIXEL")
+    @js.native
+    def DOM_DELTA_PIXEL: Double = js.native
+    inline def DOM_DELTA_PIXEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DELTA_PIXEL")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("babylonjs/Events/index", "KeyboardEventTypes")
   @js.native
-  class KeyboardEventTypes ()
+  open class KeyboardEventTypes ()
     extends typings.babylonjs.keyboardEventsMod.KeyboardEventTypes
   /* static members */
   object KeyboardEventTypes {
@@ -100,7 +149,7 @@ object eventsIndexMod {
   
   @JSImport("babylonjs/Events/index", "KeyboardInfo")
   @js.native
-  class KeyboardInfo protected ()
+  open class KeyboardInfo protected ()
     extends typings.babylonjs.keyboardEventsMod.KeyboardInfo {
     /**
       * Instantiates a new keyboard info.
@@ -116,13 +165,13 @@ object eventsIndexMod {
       /**
       * Defines the related dom event
       */
-    event: KeyboardEvent
+    event: IKeyboardEvent
     ) = this()
   }
   
   @JSImport("babylonjs/Events/index", "KeyboardInfoPre")
   @js.native
-  class KeyboardInfoPre protected ()
+  open class KeyboardInfoPre protected ()
     extends typings.babylonjs.keyboardEventsMod.KeyboardInfoPre {
     /**
       * Instantiates a new keyboard pre info.
@@ -138,13 +187,13 @@ object eventsIndexMod {
       /**
       * Defines the related dom event
       */
-    event: KeyboardEvent
+    event: IKeyboardEvent
     ) = this()
   }
   
   @JSImport("babylonjs/Events/index", "PointerEventTypes")
   @js.native
-  class PointerEventTypes ()
+  open class PointerEventTypes ()
     extends typings.babylonjs.pointerEventsMod.PointerEventTypes
   /* static members */
   object PointerEventTypes {
@@ -201,16 +250,8 @@ object eventsIndexMod {
   
   @JSImport("babylonjs/Events/index", "PointerInfo")
   @js.native
-  class PointerInfo protected ()
+  open class PointerInfo protected ()
     extends typings.babylonjs.pointerEventsMod.PointerInfo {
-    def this(
-      `type`: Double,
-      event: MouseWheelEvent,
-      /**
-      * Defines the picking info associated to the info (if any)\
-      */
-    pickInfo: Nullable[PickingInfo]
-    ) = this()
     /**
       * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
@@ -219,7 +260,7 @@ object eventsIndexMod {
       */
     def this(
       `type`: Double,
-      event: PointerEvent,
+      event: IMouseEvent,
       /**
       * Defines the picking info associated to the info (if any)\
       */
@@ -229,18 +270,8 @@ object eventsIndexMod {
   
   @JSImport("babylonjs/Events/index", "PointerInfoBase")
   @js.native
-  class PointerInfoBase protected ()
+  open class PointerInfoBase protected ()
     extends typings.babylonjs.pointerEventsMod.PointerInfoBase {
-    def this(
-      /**
-      * Defines the type of event (PointerEventTypes)
-      */
-    `type`: Double,
-      /**
-      * Defines the related dom event
-      */
-    event: MouseWheelEvent
-    ) = this()
     /**
       * Instantiates the base class of pointers info.
       * @param type Defines the type of event (PointerEventTypes)
@@ -254,15 +285,14 @@ object eventsIndexMod {
       /**
       * Defines the related dom event
       */
-    event: PointerEvent
+    event: IMouseEvent
     ) = this()
   }
   
   @JSImport("babylonjs/Events/index", "PointerInfoPre")
   @js.native
-  class PointerInfoPre protected ()
+  open class PointerInfoPre protected ()
     extends typings.babylonjs.pointerEventsMod.PointerInfoPre {
-    def this(`type`: Double, event: MouseWheelEvent, localX: Double, localY: Double) = this()
     /**
       * Instantiates a PointerInfoPre to store pointer related info to the onPrePointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
@@ -270,6 +300,6 @@ object eventsIndexMod {
       * @param localX Defines the local x coordinates of the pointer when the event occured
       * @param localY Defines the local y coordinates of the pointer when the event occured
       */
-    def this(`type`: Double, event: PointerEvent, localX: Double, localY: Double) = this()
+    def this(`type`: Double, event: IMouseEvent, localX: Double, localY: Double) = this()
   }
 }

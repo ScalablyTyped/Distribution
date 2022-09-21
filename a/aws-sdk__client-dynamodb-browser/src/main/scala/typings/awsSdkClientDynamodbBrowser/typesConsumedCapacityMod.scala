@@ -3,7 +3,6 @@ package typings.awsSdkClientDynamodbBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientDynamodbBrowser.typesCapacityMod.Capacity
 import typings.awsSdkClientDynamodbBrowser.typesCapacityMod.UnmarshalledCapacity
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +19,12 @@ object typesConsumedCapacityMod {
     /**
       * <p>The amount of throughput consumed on each global index affected by the operation.</p>
       */
-    var GlobalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.undefined
+    var GlobalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (js.Iterable[js.Tuple2[String, Capacity]])] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on each local index affected by the operation.</p>
       */
-    var LocalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])] = js.undefined
+    var LocalSecondaryIndexes: js.UndefOr[StringDictionary[Capacity] | (js.Iterable[js.Tuple2[String, Capacity]])] = js.undefined
     
     /**
       * <p>The amount of throughput consumed on the table affected by the operation.</p>
@@ -50,11 +49,11 @@ object typesConsumedCapacityMod {
       
       inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
       
-      inline def setGlobalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: StringDictionary[Capacity] | (js.Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: StringDictionary[Capacity] | (js.Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       

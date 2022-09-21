@@ -6,22 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicKeyCredentialCreationOptions extends StObject {
   
+  /* standard dom */
   var attestation: js.UndefOr[AttestationConveyancePreference] = js.undefined
   
+  /* standard dom */
   var authenticatorSelection: js.UndefOr[AuthenticatorSelectionCriteria] = js.undefined
   
+  /* standard dom */
   var challenge: BufferSource
   
+  /* standard dom */
   var excludeCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.undefined
   
+  /* standard dom */
   var extensions: js.UndefOr[AuthenticationExtensionsClientInputs] = js.undefined
   
+  /* standard dom */
   var pubKeyCredParams: js.Array[PublicKeyCredentialParameters]
   
+  /* standard dom */
   var rp: PublicKeyCredentialRpEntity
   
+  /* standard dom */
   var timeout: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var user: PublicKeyCredentialUserEntity
 }
 object PublicKeyCredentialCreationOptions {
@@ -52,7 +61,7 @@ object PublicKeyCredentialCreationOptions {
     
     inline def setExcludeCredentialsUndefined: Self = StObject.set(x, "excludeCredentials", js.undefined)
     
-    inline def setExcludeCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = StObject.set(x, "excludeCredentials", js.Array(value :_*))
+    inline def setExcludeCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = StObject.set(x, "excludeCredentials", js.Array(value*))
     
     inline def setExtensions(value: AuthenticationExtensionsClientInputs): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -60,7 +69,7 @@ object PublicKeyCredentialCreationOptions {
     
     inline def setPubKeyCredParams(value: js.Array[PublicKeyCredentialParameters]): Self = StObject.set(x, "pubKeyCredParams", value.asInstanceOf[js.Any])
     
-    inline def setPubKeyCredParamsVarargs(value: PublicKeyCredentialParameters*): Self = StObject.set(x, "pubKeyCredParams", js.Array(value :_*))
+    inline def setPubKeyCredParamsVarargs(value: PublicKeyCredentialParameters*): Self = StObject.set(x, "pubKeyCredParams", js.Array(value*))
     
     inline def setRp(value: PublicKeyCredentialRpEntity): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
     

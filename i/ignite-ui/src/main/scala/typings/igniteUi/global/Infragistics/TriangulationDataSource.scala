@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.TriangulationDataSource")
 @js.native
-class TriangulationDataSource protected ()
+open class TriangulationDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.TriangulationDataSource {
   def this(settings: TriangulationDataSourceSettings) = this()

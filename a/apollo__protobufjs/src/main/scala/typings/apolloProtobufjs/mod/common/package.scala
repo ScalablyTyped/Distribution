@@ -1,11 +1,14 @@
 package typings.apolloProtobufjs.mod.common
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.apolloProtobufjs.mod.INamespace
+import typings.apolloProtobufjs.mod.common.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(name: java.lang.String, json: org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Any]]): scala.Unit = (typings.apolloProtobufjs.mod.common.^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def apply(name: String, json: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Gets the root definition of the specified common proto file.
@@ -22,4 +25,4 @@ inline def apply(name: java.lang.String, json: org.scalablytyped.runtime.StringD
   * @param file Proto file name
   * @returns Root definition or `null` if not defined
   */
-inline def get(file: java.lang.String): typings.apolloProtobufjs.mod.INamespace | scala.Null = typings.apolloProtobufjs.mod.common.^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.INamespace | scala.Null]
+inline def get(file: String): INamespace | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[INamespace | Null]

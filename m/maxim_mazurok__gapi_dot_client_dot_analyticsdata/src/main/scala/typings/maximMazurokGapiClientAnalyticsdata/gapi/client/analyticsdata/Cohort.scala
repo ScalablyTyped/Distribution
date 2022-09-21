@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Cohort extends StObject {
   
   /**
-    * The cohort selects users whose first visit date is between start date and end date defined in the `dateRange`. In a cohort request, this `dateRange` is required and the `dateRanges`
-    * in the `RunReportRequest` or `RunPivotReportRequest` must be unspecified. The date range should be aligned with the cohort's granularity. If CohortsRange uses daily granularity, the
-    * date range can be aligned to any day. If CohortsRange uses weekly granularity, the date range should be aligned to the week boundary, starting at Sunday and ending Saturday. If
-    * CohortsRange uses monthly granularity, the date range should be aligned to the month, starting at the first and ending on the last day of the month.
+    * The cohort selects users whose first touch date is between start date and end date defined in the `dateRange`. This `dateRange` does not specify the full date range of event data
+    * that is present in a cohort report. In a cohort report, this `dateRange` is extended by the granularity and offset present in the `cohortsRange`; event data for the extended
+    * reporting date range is present in a cohort report. In a cohort request, this `dateRange` is required and the `dateRanges` in the `RunReportRequest` or `RunPivotReportRequest` must
+    * be unspecified. This `dateRange` should generally be aligned with the cohort's granularity. If `CohortsRange` uses daily granularity, this `dateRange` can be a single day. If
+    * `CohortsRange` uses weekly granularity, this `dateRange` can be aligned to a week boundary, starting at Sunday and ending Saturday. If `CohortsRange` uses monthly granularity, this
+    * `dateRange` can be aligned to a month, starting at the first and ending on the last day of the month.
     */
   var dateRange: js.UndefOr[DateRange] = js.undefined
   
-  /** The dimension used by cohort. Only supports `firstTouchDate` for retention report. */
+  /** Dimension used by the cohort. Required and only supports `firstSessionDate`. */
   var dimension: js.UndefOr[String] = js.undefined
   
   /**

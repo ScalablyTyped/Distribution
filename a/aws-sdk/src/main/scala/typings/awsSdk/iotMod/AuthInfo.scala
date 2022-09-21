@@ -31,6 +31,6 @@ object AuthInfo {
     
     inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

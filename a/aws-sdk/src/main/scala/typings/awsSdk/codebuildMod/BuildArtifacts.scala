@@ -11,6 +11,8 @@ trait BuildArtifacts extends StObject {
     */
   var artifactIdentifier: js.UndefOr[String] = js.undefined
   
+  var bucketOwnerAccess: js.UndefOr[BucketOwnerAccess] = js.undefined
+  
   /**
     *  Information that tells you if encryption for build artifacts is disabled. 
     */
@@ -48,6 +50,10 @@ object BuildArtifacts {
     inline def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
     
     inline def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
+    
+    inline def setBucketOwnerAccess(value: BucketOwnerAccess): Self = StObject.set(x, "bucketOwnerAccess", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwnerAccessUndefined: Self = StObject.set(x, "bucketOwnerAccess", js.undefined)
     
     inline def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     

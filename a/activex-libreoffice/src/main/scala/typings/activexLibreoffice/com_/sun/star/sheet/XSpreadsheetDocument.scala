@@ -32,7 +32,7 @@ object XSpreadsheetDocument {
     Sheets: XSpreadsheets,
     acquire: () => Unit,
     getSheets: () => XSpreadsheets,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSpreadsheetDocument = {
     val __obj = js.Dynamic.literal(Sheets = Sheets.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getSheets = js.Any.fromFunction0(getSheets), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -134,7 +134,7 @@ object JQueryTransitOptions {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value :_*))
+    inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value*))
     
     inline def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object JQueryTransitOptions {
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setTranslateVarargs(value: (Double | String)*): Self = StObject.set(x, "translate", js.Array(value :_*))
+    inline def setTranslateVarargs(value: (Double | String)*): Self = StObject.set(x, "translate", js.Array(value*))
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

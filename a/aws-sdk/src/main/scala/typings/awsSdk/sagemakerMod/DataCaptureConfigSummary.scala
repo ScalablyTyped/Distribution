@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataCaptureConfigSummary extends StObject {
   
   /**
-    * 
+    * Whether data capture is currently functional.
     */
   var CaptureStatus: typings.awsSdk.sagemakerMod.CaptureStatus
   
   /**
-    * 
+    * The percentage of requests being captured by your Endpoint.
     */
   var CurrentSamplingPercentage: SamplingPercentage
   
   /**
-    * 
+    * The Amazon S3 location being used to capture the data.
     */
   var DestinationS3Uri: typings.awsSdk.sagemakerMod.DestinationS3Uri
   
   /**
-    * 
+    * Whether data capture is enabled or disabled.
     */
   var EnableCapture: typings.awsSdk.sagemakerMod.EnableCapture
   
   /**
-    * 
+    * The KMS key being used to encrypt the data in Amazon S3.
     */
   var KmsKeyId: typings.awsSdk.sagemakerMod.KmsKeyId
 }

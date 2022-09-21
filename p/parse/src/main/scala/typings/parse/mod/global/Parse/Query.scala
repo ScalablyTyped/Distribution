@@ -1,8 +1,11 @@
 package typings.parse.mod.global.Parse
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.parse.anon.Dictkey
+import typings.parse.anon.As
+import typings.parse.anon.ConnectFromField
+import typings.parse.anon.From
+import typings.parse.anon.ObjectId
 import typings.parse.anon.SizeNumber
 import typings.parse.mod.global.Parse.Query.AggregationOptions
 import typings.parse.mod.global.Parse.Query.BatchOptions
@@ -17,7 +20,7 @@ import typings.parse.parseStrings.createdAt
 import typings.parse.parseStrings.objectId
 import typings.parse.parseStrings.updatedAt
 import typings.std.Extract
-import typings.std.RegExp
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,9 +82,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.Query")
 @js.native
-class Query[T /* <: Object[Attributes] */] protected () extends StObject {
+open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def this(objectClass: String) = this()
-  def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T | Object[Attributes]]) = this()
+  def this(objectClass: Instantiable1[/* args (repeated) */ Any, T | Object[Attributes]]) = this()
   
   def addAscending[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K): this.type = js.native
   def addAscending[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: js.Array[K]): this.type = js.native
@@ -189,22 +192,22 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   
   def contains[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, substring: String): this.type = js.native
   
-  def containsAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[js.Any]): this.type = js.native
+  def containsAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[Any]): this.type = js.native
   
-  def containsAllStartingWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[js.Any]): this.type = js.native
+  def containsAllStartingWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_createdAt(key: createdAt, values: js.Array[js.Any]): this.type = js.native
+  def containsAllStartingWith_createdAt(key: createdAt, values: js.Array[Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_objectId(key: objectId, values: js.Array[js.Any]): this.type = js.native
+  def containsAllStartingWith_objectId(key: objectId, values: js.Array[Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_updatedAt(key: updatedAt, values: js.Array[js.Any]): this.type = js.native
+  def containsAllStartingWith_updatedAt(key: updatedAt, values: js.Array[Any]): this.type = js.native
   
   @JSName("containsAll")
-  def containsAll_createdAt(key: createdAt, values: js.Array[js.Any]): this.type = js.native
+  def containsAll_createdAt(key: createdAt, values: js.Array[Any]): this.type = js.native
   @JSName("containsAll")
-  def containsAll_objectId(key: objectId, values: js.Array[js.Any]): this.type = js.native
+  def containsAll_objectId(key: objectId, values: js.Array[Any]): this.type = js.native
   @JSName("containsAll")
-  def containsAll_updatedAt(key: updatedAt, values: js.Array[js.Any]): this.type = js.native
+  def containsAll_updatedAt(key: updatedAt, values: js.Array[Any]): this.type = js.native
   
   @JSName("contains")
   def contains_createdAt(key: createdAt, substring: String): this.type = js.native
@@ -231,7 +234,7 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   @JSName("descending")
   def descending_updatedAt(key: updatedAt): this.type = js.native
   
-  def distinct[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */, V](key: K): js.Promise[V] = js.native
+  def distinct[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */, V](key: K): js.Promise[js.Array[V]] = js.native
   
   def doesNotExist[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K): this.type = js.native
   @JSName("doesNotExist")
@@ -277,28 +280,28 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   @JSName("endsWith")
   def endsWith_updatedAt(key: updatedAt, suffix: String): this.type = js.native
   
+  def equalTo(key: createdAt, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: createdAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
   ): this.type = js.native
-  def equalTo(key: createdAt, value: Pointer): this.type = js.native
+  def equalTo(key: objectId, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: objectId,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
   ): this.type = js.native
-  def equalTo(key: objectId, value: Pointer): this.type = js.native
+  def equalTo(key: updatedAt, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: updatedAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
   ): this.type = js.native
-  def equalTo(key: updatedAt, value: Pointer): this.type = js.native
+  @JSName("equalTo")
+  def equalTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, value: Any | Pointer): this.type = js.native
   @JSName("equalTo")
   def equalTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any
   ): this.type = js.native
-  @JSName("equalTo")
-  def equalTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, value: Pointer): this.type = js.native
   
   def exclude[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](keys: K*): this.type = js.native
   @JSName("exclude")
@@ -411,23 +414,23 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def hint(value: String): this.type = js.native
   def hint(value: js.Object): this.type = js.native
   
-  def include[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K): this.type = js.native
+  def include[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K*): this.type = js.native
   def include[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: js.Array[K]): this.type = js.native
   
   def includeAll(): Query[T] = js.native
   
   @JSName("include")
+  def include_createdAt(key: createdAt*): this.type = js.native
+  @JSName("include")
   def include_createdAt(key: js.Array[createdAt]): this.type = js.native
   @JSName("include")
-  def include_createdAt(key: createdAt): this.type = js.native
+  def include_objectId(key: objectId*): this.type = js.native
   @JSName("include")
   def include_objectId(key: js.Array[objectId]): this.type = js.native
   @JSName("include")
-  def include_objectId(key: objectId): this.type = js.native
+  def include_updatedAt(key: updatedAt*): this.type = js.native
   @JSName("include")
   def include_updatedAt(key: js.Array[updatedAt]): this.type = js.native
-  @JSName("include")
-  def include_updatedAt(key: updatedAt): this.type = js.native
   
   def lessThan(
     key: createdAt,
@@ -486,8 +489,8 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
     options: BatchOptions
   ): js.Promise[js.Array[U]] = js.native
   
-  def matches[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, regex: RegExp): this.type = js.native
-  def matches[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, regex: RegExp, modifiers: String): this.type = js.native
+  def matches[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, regex: js.RegExp): this.type = js.native
+  def matches[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, regex: js.RegExp, modifiers: String): this.type = js.native
   
   def matchesKeyInQuery[U /* <: Object[Attributes] */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */, X /* <: Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: keyof U['attributes'] */ js.Any, 
@@ -497,17 +500,17 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def matchesQuery[U /* <: Object[Attributes] */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, query: Query[U]): this.type = js.native
   
   @JSName("matches")
-  def matches_createdAt(key: createdAt, regex: RegExp): this.type = js.native
+  def matches_createdAt(key: createdAt, regex: js.RegExp): this.type = js.native
   @JSName("matches")
-  def matches_createdAt(key: createdAt, regex: RegExp, modifiers: String): this.type = js.native
+  def matches_createdAt(key: createdAt, regex: js.RegExp, modifiers: String): this.type = js.native
   @JSName("matches")
-  def matches_objectId(key: objectId, regex: RegExp): this.type = js.native
+  def matches_objectId(key: objectId, regex: js.RegExp): this.type = js.native
   @JSName("matches")
-  def matches_objectId(key: objectId, regex: RegExp, modifiers: String): this.type = js.native
+  def matches_objectId(key: objectId, regex: js.RegExp, modifiers: String): this.type = js.native
   @JSName("matches")
-  def matches_updatedAt(key: updatedAt, regex: RegExp): this.type = js.native
+  def matches_updatedAt(key: updatedAt, regex: js.RegExp): this.type = js.native
   @JSName("matches")
-  def matches_updatedAt(key: updatedAt, regex: RegExp, modifiers: String): this.type = js.native
+  def matches_updatedAt(key: updatedAt, regex: js.RegExp, modifiers: String): this.type = js.native
   
   def near[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint): this.type = js.native
   @JSName("near")
@@ -543,25 +546,30 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
     ]
   ): this.type = js.native
   
+  def notEqualTo(key: createdAt, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: createdAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
   ): this.type = js.native
+  def notEqualTo(key: objectId, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: objectId,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
   ): this.type = js.native
+  def notEqualTo(key: updatedAt, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: updatedAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
   ): this.type = js.native
+  @JSName("notEqualTo")
+  def notEqualTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, value: Any | Pointer): this.type = js.native
   @JSName("notEqualTo")
   def notEqualTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any
   ): this.type = js.native
   
-  var objectClass: js.Any = js.native
+  var objectClass: Any = js.native
   
   def polygonContains[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint): this.type = js.native
   @JSName("polygonContains")
@@ -590,12 +598,19 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   ): js.Promise[U] = js.native
   
   def select[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](keys: K*): this.type = js.native
+  def select[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](keys: js.Array[K]): this.type = js.native
   @JSName("select")
   def select_createdAt(keys: createdAt*): this.type = js.native
   @JSName("select")
+  def select_createdAt(keys: js.Array[createdAt]): this.type = js.native
+  @JSName("select")
   def select_objectId(keys: objectId*): this.type = js.native
   @JSName("select")
+  def select_objectId(keys: js.Array[objectId]): this.type = js.native
+  @JSName("select")
   def select_updatedAt(keys: updatedAt*): this.type = js.native
+  @JSName("select")
+  def select_updatedAt(keys: js.Array[updatedAt]): this.type = js.native
   
   def skip(n: Double): Query[T] = js.native
   
@@ -610,10 +625,14 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def startsWith_updatedAt(key: updatedAt, prefix: String): this.type = js.native
   
   def subscribe(): js.Promise[LiveQuerySubscription] = js.native
+  def subscribe(sessionToken: String): js.Promise[LiveQuerySubscription] = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
-  def withJSON(json: js.Any): this.type = js.native
+  def withCount(): this.type = js.native
+  def withCount(includeCount: Boolean): this.type = js.native
+  
+  def withJSON(json: Any): this.type = js.native
   
   def withinGeoBox[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, southwest: GeoPoint, northeast: GeoPoint): this.type = js.native
   @JSName("withinGeoBox")
@@ -624,20 +643,34 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def withinGeoBox_updatedAt(key: updatedAt, southwest: GeoPoint, northeast: GeoPoint): this.type = js.native
   
   def withinKilometers[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint, maxDistance: Double): this.type = js.native
+  def withinKilometers[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
   @JSName("withinKilometers")
   def withinKilometers_createdAt(key: createdAt, point: GeoPoint, maxDistance: Double): this.type = js.native
   @JSName("withinKilometers")
+  def withinKilometers_createdAt(key: createdAt, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
+  @JSName("withinKilometers")
   def withinKilometers_objectId(key: objectId, point: GeoPoint, maxDistance: Double): this.type = js.native
   @JSName("withinKilometers")
+  def withinKilometers_objectId(key: objectId, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
+  @JSName("withinKilometers")
   def withinKilometers_updatedAt(key: updatedAt, point: GeoPoint, maxDistance: Double): this.type = js.native
+  @JSName("withinKilometers")
+  def withinKilometers_updatedAt(key: updatedAt, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
   
   def withinMiles[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint, maxDistance: Double): this.type = js.native
+  def withinMiles[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
   @JSName("withinMiles")
   def withinMiles_createdAt(key: createdAt, point: GeoPoint, maxDistance: Double): this.type = js.native
   @JSName("withinMiles")
+  def withinMiles_createdAt(key: createdAt, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
+  @JSName("withinMiles")
   def withinMiles_objectId(key: objectId, point: GeoPoint, maxDistance: Double): this.type = js.native
   @JSName("withinMiles")
+  def withinMiles_objectId(key: objectId, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
+  @JSName("withinMiles")
   def withinMiles_updatedAt(key: updatedAt, point: GeoPoint, maxDistance: Double): this.type = js.native
+  @JSName("withinMiles")
+  def withinMiles_updatedAt(key: updatedAt, point: GeoPoint, maxDistance: Double, sorted: Boolean): this.type = js.native
   
   def withinPolygon[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, points: js.Array[js.Array[Double]]): this.type = js.native
   @JSName("withinPolygon")
@@ -662,27 +695,40 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Query[U]]
   
   /* static member */
-  inline def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
+  inline def fromJSON[U /* <: Object[Attributes] */](className: String, json: Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
+  inline def fromJSON[U /* <: Object[Attributes] */](className: Instantiable0[U], json: Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
   
   /* static member */
-  inline def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Query[U]]
   
   /* static member */
-  inline def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Query[U]]
   
   // According to http://docs.parseplatform.org/rest/guide/#aggregate-queries
   trait AggregationOptions extends StObject {
     
-    var group: js.UndefOr[Dictkey] = js.undefined
+    // Count documentation: https://docs.mongodb.com/manual/reference/operator/aggregation/count/
+    var count: js.UndefOr[String] = js.undefined
+    
+    // Facet documentation: https://docs.mongodb.com/manual/reference/operator/aggregation/facet/
+    var facet: js.UndefOr[Record[String, js.Array[Record[String, Any]]]] = js.undefined
+    
+    // Graph Lookup documentation: https://docs.mongodb.com/manual/reference/operator/aggregation/graphLookup/
+    var graphLookup: js.UndefOr[ConnectFromField] = js.undefined
+    
+    var group: js.UndefOr[(Record[String, Any]) & ObjectId] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
-    var `match`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    // Lookup documentation: https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/
+    var lookup: js.UndefOr[As | From] = js.undefined
     
-    var project: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var `match`: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var project: js.UndefOr[Record[String, Any]] = js.undefined
     
     // Sample documentation: https://docs.mongodb.com/v3.2/reference/operator/aggregation/sample/
     var sample: js.UndefOr[SizeNumber] = js.undefined
@@ -690,7 +736,7 @@ object Query {
     var skip: js.UndefOr[Double] = js.undefined
     
     // Sort documentation https://docs.mongodb.com/v3.2/reference/operator/aggregation/sort/#pipe._S_sort
-    var sort: js.UndefOr[StringDictionary[`1` | `-1`]] = js.undefined
+    var sort: js.UndefOr[Record[String, `1` | `-1`]] = js.undefined
   }
   object AggregationOptions {
     
@@ -701,7 +747,19 @@ object Query {
     
     extension [Self <: AggregationOptions](x: Self) {
       
-      inline def setGroup(value: Dictkey): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      
+      inline def setFacet(value: Record[String, js.Array[Record[String, Any]]]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+      
+      inline def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
+      
+      inline def setGraphLookup(value: ConnectFromField): Self = StObject.set(x, "graphLookup", value.asInstanceOf[js.Any])
+      
+      inline def setGraphLookupUndefined: Self = StObject.set(x, "graphLookup", js.undefined)
+      
+      inline def setGroup(value: (Record[String, Any]) & ObjectId): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
@@ -709,11 +767,15 @@ object Query {
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      inline def setMatch(value: StringDictionary[js.Any]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setLookup(value: As | From): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      
+      inline def setMatch(value: Record[String, Any]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setProject(value: StringDictionary[js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Record[String, Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
       inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
@@ -725,7 +787,7 @@ object Query {
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      inline def setSort(value: StringDictionary[`1` | `-1`]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Record[String, `1` | `-1`]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }

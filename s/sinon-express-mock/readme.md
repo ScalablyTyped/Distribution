@@ -10,15 +10,12 @@ Simple request and response mock objects to pass into Express routes when testin
 | ------------------ | :-------------: |
 | Full name          | sinon-express-mock |
 | Keywords           | express, mock, test, request, response, req, res, spec, mocha, sinon, spy |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 1144297 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 129322.0 |
+| # stars            | 45.0 |
 
 ## Links
-- [Homepage](https://github.com/danawoodman/sinon-express-mock#readme)
-- [Bugs](https://github.com/danawoodman/sinon-express-mock/issues)
-- [Repository](https://github.com/danawoodman/sinon-express-mock)
 - [Npm](https://www.npmjs.com/package/sinon-express-mock)
     
 

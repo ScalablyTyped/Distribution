@@ -8,5 +8,5 @@ object changeMessageVisibilityBatchRequestEntryMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_ChangeMessageVisibilityBatchRequestEntry", "_ChangeMessageVisibilityBatchRequestEntry")
   @js.native
-  val ChangeMessageVisibilityBatchRequestEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ChangeMessageVisibilityBatchRequestEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

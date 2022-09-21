@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateResourceShareRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * Specifies a unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This lets you safely retry the request without accidentally performing the same operation a second time. Passing the same value to a later call to an operation requires that you also pass the same value for all other parameters. We recommend that you use a UUID type of value.. If you don't provide this value, then Amazon Web Services generates a random one for you.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The principals.
+    * Specifies a list of one or more principals that no longer are to have access to the resources in this resource share. You can include the following values:   An Amazon Web Services account ID, for example: 123456789012    An Amazon Resoure Name (ARN) of an organization in Organizations, for example: organizations::123456789012:organization/o-exampleorgid    An ARN of an organizational unit (OU) in Organizations, for example: organizations::123456789012:ou/o-exampleorgid/ou-examplerootid-exampleouid123    An ARN of an IAM role, for example: iam::123456789012:role/rolename    An ARN of an IAM user, for example: iam::123456789012user/username     Not all resource types can be shared with IAM roles and users. For more information, see Sharing with IAM roles and users in the Resource Access Manager User Guide. 
     */
   var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of the resources.
+    * Specifies a list of Amazon Resource Names (ARNs) for one or more resources that you want to remove from the resource share. After the operation runs, these resources are no longer shared with principals outside of the Amazon Web Services account that created the resources.
     */
   var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * Specifies Amazon Resoure Name (ARN) of the resource share that you want to remove resources from.
     */
   var resourceShareArn: String
 }
@@ -43,13 +43,13 @@ object DisassociateResourceShareRequest {
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value*))
     
     inline def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
     inline def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
-    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value*))
     
     inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }

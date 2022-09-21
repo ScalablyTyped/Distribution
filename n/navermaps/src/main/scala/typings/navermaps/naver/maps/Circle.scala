@@ -36,7 +36,7 @@ trait Circle
   
   def setClickable(clickable: Boolean): Unit = js.native
   
-  def setOptions(key: String, value: js.Any): Unit = js.native
+  def setOptions(key: String, value: Any): Unit = js.native
   def setOptions(options: CircleOptions): Unit = js.native
   
   def setRadius(radius: Double): Unit = js.native

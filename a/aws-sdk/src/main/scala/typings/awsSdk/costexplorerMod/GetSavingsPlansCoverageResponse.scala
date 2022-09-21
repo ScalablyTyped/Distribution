@@ -31,6 +31,6 @@ object GetSavingsPlansCoverageResponse {
     
     inline def setSavingsPlansCoverages(value: SavingsPlansCoverages): Self = StObject.set(x, "SavingsPlansCoverages", value.asInstanceOf[js.Any])
     
-    inline def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = StObject.set(x, "SavingsPlansCoverages", js.Array(value :_*))
+    inline def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = StObject.set(x, "SavingsPlansCoverages", js.Array(value*))
   }
 }

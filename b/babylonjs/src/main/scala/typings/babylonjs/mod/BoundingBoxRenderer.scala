@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "BoundingBoxRenderer")
 @js.native
-class BoundingBoxRenderer protected ()
+open class BoundingBoxRenderer protected ()
   extends typings.babylonjs.legacyMod.BoundingBoxRenderer {
   /**
     * Instantiates a new bounding box renderer in a scene.

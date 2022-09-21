@@ -18,4 +18,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPropertyControl
   * @since OOo 2.0.3
   */
-type GenericPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+type GenericPropertyHandler = XPropertyHandler

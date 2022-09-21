@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ArcTan2Block")
 @js.native
-class ArcTan2Block protected ()
+open class ArcTan2Block protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ArcTan2Block {
   /**

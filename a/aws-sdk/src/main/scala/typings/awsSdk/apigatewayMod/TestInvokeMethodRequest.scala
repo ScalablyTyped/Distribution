@@ -22,7 +22,7 @@ trait TestInvokeMethodRequest extends StObject {
   var headers: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * [Required] Specifies a test invoke method request's HTTP method.
+    * Specifies a test invoke method request's HTTP method.
     */
   var httpMethod: String
   
@@ -37,12 +37,12 @@ trait TestInvokeMethodRequest extends StObject {
   var pathWithQueryString: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] Specifies a test invoke method request's resource ID.
+    * Specifies a test invoke method request's resource ID.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   

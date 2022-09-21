@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-root
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if the process is running as root user, for example, one started with `sudo`
@@ -11,14 +11,11 @@ Check if the process is running as root user, for example, one started with `sud
 | Full name          | is-root |
 | Keywords           | sudo, root, user, permissions, uid, process, posix |
 | # releases         | 2 |
-| # dependents       | 277 |
-| # downloads        | 176770762 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4106799666666668E7 |
+| # stars            | 68.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/is-root#readme)
-- [Bugs](https://github.com/sindresorhus/is-root/issues)
-- [Repository](https://github.com/sindresorhus/is-root)
 - [Npm](https://www.npmjs.com/package/is-root)
     
 

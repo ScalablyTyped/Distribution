@@ -21,11 +21,11 @@ trait PartialViewOptions extends StObject {
   
   var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
   
-  var customContext: js.UndefOr[js.Any] = js.undefined
+  var customContext: js.UndefOr[Any] = js.undefined
   
-  var customData: js.UndefOr[js.Any] = js.undefined
+  var customData: js.UndefOr[Any] = js.undefined
   
-  var experimental: js.UndefOr[js.Any] = js.undefined
+  var experimental: js.UndefOr[Any] = js.undefined
 }
 object PartialViewOptions {
   
@@ -56,15 +56,15 @@ object PartialViewOptions {
     
     inline def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
     
-    inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+    inline def setCustomContext(value: Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
     
     inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
     
-    inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
   }

@@ -10,10 +10,10 @@ Open popup windows
 | ------------------ | :-------------: |
 | Full name          | popup-window |
 | Keywords           | popup, window, blocked, blocker |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 847 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 157.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/webdeveric/popup-window#readme)

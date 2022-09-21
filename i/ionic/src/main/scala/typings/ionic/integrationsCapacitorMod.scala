@@ -14,7 +14,7 @@ object integrationsCapacitorMod {
   
   @JSImport("ionic/lib/integrations/capacitor", "Integration")
   @js.native
-  class Integration protected ()
+  open class Integration protected ()
     extends BaseIntegration[ProjectIntegration]
        with IntegationUnion {
     def this(e: IntegrationDeps) = this()

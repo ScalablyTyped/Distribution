@@ -3,7 +3,6 @@ package typings.awsSdkClientSqsNode
 import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchRequestEntryMod.ChangeMessageVisibilityBatchRequestEntry
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesChangeMessageVisibilityBatchInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -39,7 +38,7 @@ object typesChangeMessageVisibilityBatchInputMod {
     /**
       * <p>A list of receipt handles of the messages for which the visibility timeout must be changed.</p>
       */
-    var Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | Iterable[ChangeMessageVisibilityBatchRequestEntry]
+    var Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | js.Iterable[ChangeMessageVisibilityBatchRequestEntry]
     
     /**
       * <p>The URL of the Amazon SQS queue whose messages' visibility is changed.</p> <p>Queue URLs and names are case-sensitive.</p>
@@ -49,7 +48,7 @@ object typesChangeMessageVisibilityBatchInputMod {
   object ChangeMessageVisibilityBatchInput {
     
     inline def apply(
-      Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | Iterable[ChangeMessageVisibilityBatchRequestEntry],
+      Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | js.Iterable[ChangeMessageVisibilityBatchRequestEntry],
       QueueUrl: String
     ): ChangeMessageVisibilityBatchInput = {
       val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
@@ -63,7 +62,7 @@ object typesChangeMessageVisibilityBatchInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -73,10 +72,10 @@ object typesChangeMessageVisibilityBatchInputMod {
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
       inline def setEntries(
-        value: js.Array[ChangeMessageVisibilityBatchRequestEntry] | Iterable[ChangeMessageVisibilityBatchRequestEntry]
+        value: js.Array[ChangeMessageVisibilityBatchRequestEntry] | js.Iterable[ChangeMessageVisibilityBatchRequestEntry]
       ): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: ChangeMessageVisibilityBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: ChangeMessageVisibilityBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
       
       inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     }

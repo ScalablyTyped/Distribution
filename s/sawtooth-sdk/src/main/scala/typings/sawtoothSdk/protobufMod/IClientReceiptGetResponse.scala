@@ -28,7 +28,7 @@ object IClientReceiptGetResponse {
     
     inline def setReceiptsUndefined: Self = StObject.set(x, "receipts", js.undefined)
     
-    inline def setReceiptsVarargs(value: ITransactionReceipt*): Self = StObject.set(x, "receipts", js.Array(value :_*))
+    inline def setReceiptsVarargs(value: ITransactionReceipt*): Self = StObject.set(x, "receipts", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

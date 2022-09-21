@@ -5,22 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A selector that chooses target cluster for jobs based on metadata.
-  */
 trait SchemaClusterSelector extends StObject {
   
   /**
     * Required. The cluster labels. Cluster must have all labels to match.
     */
-  var clusterLabels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var clusterLabels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * Optional. The zone where workflow process executes. This parameter does
-    * not affect the selection of the cluster.If unspecified, the zone of the
-    * first cluster matching the selector is used.
+    * Optional. The zone where workflow process executes. This parameter does not affect the selection of the cluster.If unspecified, the zone of the first cluster matching the selector is used.
     */
-  var zone: js.UndefOr[String] = js.undefined
+  var zone: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaClusterSelector {
   
@@ -33,9 +28,13 @@ object SchemaClusterSelector {
     
     inline def setClusterLabels(value: StringDictionary[String]): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
+    inline def setClusterLabelsNull: Self = StObject.set(x, "clusterLabels", null)
+    
     inline def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    
+    inline def setZoneNull: Self = StObject.set(x, "zone", null)
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }

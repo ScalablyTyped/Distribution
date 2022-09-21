@@ -12,12 +12,12 @@ trait JsonRpcPayload extends StObject {
   
   var method: String
   
-  var params: js.Array[js.Any]
+  var params: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object JsonRpcPayload {
   
-  inline def apply(jsonrpc: String, method: String, params: js.Array[js.Any]): JsonRpcPayload = {
-    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+  inline def apply(jsonrpc: String, method: String): JsonRpcPayload = {
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonRpcPayload]
   }
   
@@ -31,8 +31,10 @@ object JsonRpcPayload {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

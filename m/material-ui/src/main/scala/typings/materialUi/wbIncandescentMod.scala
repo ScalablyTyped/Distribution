@@ -10,10 +10,10 @@ object wbIncandescentMod {
   
   @JSImport("material-ui/svg-icons/image/wb-incandescent", JSImport.Default)
   @js.native
-  class default () extends ImageWbIncandescent
+  open class default () extends ImageWbIncandescent
   
   @JSImport("material-ui/svg-icons/image/wb-incandescent", "ImageWbIncandescent")
   @js.native
-  class ImageWbIncandescent ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageWbIncandescent ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

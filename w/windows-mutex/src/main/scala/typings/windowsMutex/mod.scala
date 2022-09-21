@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("windows-mutex", "Mutex")
   @js.native
-  class Mutex protected () extends StObject {
+  open class Mutex protected () extends StObject {
     def this(name: String) = this()
     
     def isActive(): Boolean = js.native

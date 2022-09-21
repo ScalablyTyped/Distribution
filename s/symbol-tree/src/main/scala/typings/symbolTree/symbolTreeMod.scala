@@ -19,7 +19,7 @@ object symbolTreeMod {
     *
     *        **Default:** `'SymbolTree data'`
     */
-  class ^[T /* <: js.Object */] ()
+  open class ^[T /* <: js.Object */] ()
     extends StObject
        with SymbolTree[T] {
     def this(description: String) = this()
@@ -387,10 +387,10 @@ object symbolTreeMod {
       *
       * @param object
       */
-    var filter: js.UndefOr[js.Function1[/* object */ T, js.Any]] = js.undefined
+    var filter: js.UndefOr[js.Function1[/* object */ T, Any]] = js.undefined
     
     /** Value to use as `this` when executing `filter`. */
-    var thisArg: js.UndefOr[js.Any] = js.undefined
+    var thisArg: js.UndefOr[Any] = js.undefined
   }
   object ToArrayOptions {
     
@@ -405,13 +405,13 @@ object symbolTreeMod {
       
       inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      inline def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value*))
       
-      inline def setFilter(value: /* object */ T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* object */ T => Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setThisArg(value: js.Any): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
+      inline def setThisArg(value: Any): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
       
       inline def setThisArgUndefined: Self = StObject.set(x, "thisArg", js.undefined)
     }

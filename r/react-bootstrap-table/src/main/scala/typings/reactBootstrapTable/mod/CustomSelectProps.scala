@@ -28,8 +28,8 @@ trait CustomSelectProps extends StObject {
     *   `event`: the current event target
     *   `rowIndex`: the index of the current row being toggled.
     */
-  def onChange(event: js.Any, rowIndex: String): Unit = js.native
-  def onChange(event: js.Any, rowIndex: Double): Unit = js.native
+  def onChange(event: Any, rowIndex: String): Unit = js.native
+  def onChange(event: Any, rowIndex: Double): Unit = js.native
   
   /**
     * Index for the row currently being rendered.

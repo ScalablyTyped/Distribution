@@ -21,8 +21,8 @@ trait GlideElement extends StObject {
   
   def getAttribute(attributeName: String): String = js.native
   
-  def getChoices(): js.Array[js.Any] = js.native
-  def getChoices(name: String): js.Array[js.Any] = js.native
+  def getChoices(): js.Array[Any] = js.native
+  def getChoices(name: String): js.Array[Any] = js.native
   
   def getDecryptedValue(): String = js.native
   

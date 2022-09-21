@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for `ListServices`.
-  */
 trait SchemaListServicesResponse extends StObject {
   
   /**
-    * A token to retrieve the next page of results. To retrieve the next page,
-    * call `ListServices` again with the `page_token` field set to this value.
-    * This field is empty if there are no more results to retrieve.
+    * A token to retrieve the next page of results. To retrieve the next page, call `ListServices` again with the `page_token` field set to this value. This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of services.
@@ -32,12 +27,14 @@ object SchemaListServicesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setServices(value: js.Array[SchemaService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: SchemaService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaService*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

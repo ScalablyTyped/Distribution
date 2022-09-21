@@ -80,7 +80,7 @@ object XCellRangesQuery {
     queryContentCells: Double => XSheetCellRanges,
     queryEmptyCells: () => XSheetCellRanges,
     queryFormulaCells: Double => XSheetCellRanges,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryIntersection: CellRangeAddress => XSheetCellRanges,
     queryRowDifferences: CellAddress => XSheetCellRanges,
     queryVisibleCells: () => XSheetCellRanges,

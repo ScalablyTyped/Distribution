@@ -19,7 +19,7 @@ trait SketchMSDocument extends StObject {
   
   var foreignSymbols: js.Array[SketchMSImmutableForeignSymbol]
   
-  var foreignTextStyles: js.Array[js.Any]
+  var foreignTextStyles: js.Array[Any]
   
   var layerStyles: SketchMSSharedStyleContainer
   
@@ -37,7 +37,7 @@ object SketchMSDocument {
     currentPageIndex: Double,
     do_objectID: String,
     foreignSymbols: js.Array[SketchMSImmutableForeignSymbol],
-    foreignTextStyles: js.Array[js.Any],
+    foreignTextStyles: js.Array[Any],
     layerStyles: SketchMSSharedStyleContainer,
     layerSymbols: SketchMSSymbolContainers,
     layerTextStyles: SketchMSSharedTextStyleContainer,
@@ -59,11 +59,11 @@ object SketchMSDocument {
     
     inline def setForeignSymbols(value: js.Array[SketchMSImmutableForeignSymbol]): Self = StObject.set(x, "foreignSymbols", value.asInstanceOf[js.Any])
     
-    inline def setForeignSymbolsVarargs(value: SketchMSImmutableForeignSymbol*): Self = StObject.set(x, "foreignSymbols", js.Array(value :_*))
+    inline def setForeignSymbolsVarargs(value: SketchMSImmutableForeignSymbol*): Self = StObject.set(x, "foreignSymbols", js.Array(value*))
     
-    inline def setForeignTextStyles(value: js.Array[js.Any]): Self = StObject.set(x, "foreignTextStyles", value.asInstanceOf[js.Any])
+    inline def setForeignTextStyles(value: js.Array[Any]): Self = StObject.set(x, "foreignTextStyles", value.asInstanceOf[js.Any])
     
-    inline def setForeignTextStylesVarargs(value: js.Any*): Self = StObject.set(x, "foreignTextStyles", js.Array(value :_*))
+    inline def setForeignTextStylesVarargs(value: Any*): Self = StObject.set(x, "foreignTextStyles", js.Array(value*))
     
     inline def setLayerStyles(value: SketchMSSharedStyleContainer): Self = StObject.set(x, "layerStyles", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object SketchMSDocument {
     
     inline def setPages(value: js.Array[SketchMSPageReference]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: SketchMSPageReference*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: SketchMSPageReference*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def set_class(value: documentData): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }

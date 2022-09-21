@@ -13,7 +13,7 @@ trait Shape extends StObject {
   
   var AlternativeText: String = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Apply(): Unit = js.native
   
@@ -70,7 +70,7 @@ trait Shape extends StObject {
   
   val Glow: GlowFormat = js.native
   
-  def GroupItems(Index: js.Any): Shape = js.native
+  def GroupItems(Index: Any): Shape = js.native
   @JSName("GroupItems")
   val GroupItems_Original: GroupShapes = js.native
   
@@ -102,14 +102,14 @@ trait Shape extends StObject {
   
   var Name: String = js.native
   
-  def Nodes(Index: js.Any): ShapeNode = js.native
+  def Nodes(Index: Any): ShapeNode = js.native
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
   
   /* private */ @JSName("Office.Shape_typekey")
   var OfficeDotShape_typekey: Shape = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -136,7 +136,7 @@ trait Shape extends StObject {
   val Script: typings.activexOffice.Office.Script = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
   def SetShapesDefaultProperties(): Unit = js.native
   
@@ -166,7 +166,7 @@ trait Shape extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

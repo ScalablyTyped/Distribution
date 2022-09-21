@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object ChannelDtmfReceived {
     channel: Channel,
     digit: String,
     duration_ms: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     `type`: String
   ): ChannelDtmfReceived = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], digit = digit.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])

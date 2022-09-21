@@ -24,11 +24,11 @@ trait ShortcutEventArgs
   /**
     * Gets an object containing information about a keyboard shortcut event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ShortcutEventArgs {
   
-  inline def apply(commandName: String, handled: Boolean, htmlEvent: js.Any): ShortcutEventArgs = {
+  inline def apply(commandName: String, handled: Boolean, htmlEvent: Any): ShortcutEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutEventArgs]
   }
@@ -39,6 +39,6 @@ object ShortcutEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

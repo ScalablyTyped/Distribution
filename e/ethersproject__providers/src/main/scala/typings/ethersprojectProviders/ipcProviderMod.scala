@@ -10,7 +10,7 @@ object ipcProviderMod {
   
   @JSImport("@ethersproject/providers/lib/ipc-provider", "IpcProvider")
   @js.native
-  class IpcProvider protected () extends JsonRpcProvider {
+  open class IpcProvider protected () extends JsonRpcProvider {
     def this(path: String) = this()
     def this(path: String, network: Networkish) = this()
     

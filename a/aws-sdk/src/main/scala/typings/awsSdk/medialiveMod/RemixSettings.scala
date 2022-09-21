@@ -33,7 +33,7 @@ object RemixSettings {
     
     inline def setChannelMappings(value: listOfAudioChannelMapping): Self = StObject.set(x, "ChannelMappings", value.asInstanceOf[js.Any])
     
-    inline def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = StObject.set(x, "ChannelMappings", js.Array(value :_*))
+    inline def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = StObject.set(x, "ChannelMappings", js.Array(value*))
     
     inline def setChannelsIn(value: integerMin1Max16): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
     

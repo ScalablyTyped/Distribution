@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalAccessPlatforms extends StObject {
   
-  // Possible values are: android, iOS, windows, windowsPhone, macOS, unknownFutureValue.
+  // Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
   var excludePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.undefined
   
-  // Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue.
+  // Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
   var includePlatforms: js.UndefOr[js.Array[ConditionalAccessDevicePlatform]] = js.undefined
 }
 object ConditionalAccessPlatforms {
@@ -25,12 +25,12 @@ object ConditionalAccessPlatforms {
     
     inline def setExcludePlatformsUndefined: Self = StObject.set(x, "excludePlatforms", js.undefined)
     
-    inline def setExcludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "excludePlatforms", js.Array(value :_*))
+    inline def setExcludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "excludePlatforms", js.Array(value*))
     
     inline def setIncludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "includePlatforms", value.asInstanceOf[js.Any])
     
     inline def setIncludePlatformsUndefined: Self = StObject.set(x, "includePlatforms", js.undefined)
     
-    inline def setIncludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "includePlatforms", js.Array(value :_*))
+    inline def setIncludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "includePlatforms", js.Array(value*))
   }
 }

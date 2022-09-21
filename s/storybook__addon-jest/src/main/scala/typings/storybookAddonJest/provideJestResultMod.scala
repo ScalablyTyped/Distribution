@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object provideJestResultMod {
   
-  @JSImport("@storybook/addon-jest/dist/hoc/provideJestResult", JSImport.Namespace)
+  @JSImport("@storybook/addon-jest/dist/ts3.9/hoc/provideJestResult", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -37,7 +37,7 @@ object provideJestResultMod {
       
       inline def setFailureMessages(value: js.Array[String]): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
       
-      inline def setFailureMessagesVarargs(value: String*): Self = StObject.set(x, "failureMessages", js.Array(value :_*))
+      inline def setFailureMessagesVarargs(value: String*): Self = StObject.set(x, "failureMessages", js.Array(value*))
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
@@ -99,7 +99,7 @@ object provideJestResultMod {
       
       inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value*))
     }
   }
   
@@ -120,7 +120,7 @@ object provideJestResultMod {
       
       inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value*))
     }
   }
   

@@ -1,6 +1,7 @@
 package typings.bitwise
 
-import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.Bits
+import typings.bitwise.typesMod.BooleanBits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +12,5 @@ object bitsToBooleanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(bits: js.Array[Bit]): js.Array[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Array[Boolean]]
+  inline def default(bits: Bits): BooleanBits = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[BooleanBits]
 }

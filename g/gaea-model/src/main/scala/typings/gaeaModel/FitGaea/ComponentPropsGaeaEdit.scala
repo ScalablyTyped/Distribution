@@ -27,7 +27,7 @@ trait ComponentPropsGaeaEdit extends StObject {
   /**
     * 为空时的值，默认为 null
     */
-  var emptyValue: js.UndefOr[js.Any] = js.undefined
+  var emptyValue: js.UndefOr[Any] = js.undefined
   
   /**
     * 对应字段名
@@ -77,13 +77,13 @@ object ComponentPropsGaeaEdit {
     
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    inline def setArrayVarargs(value: ComponentPropsOptionsArrayValue*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: ComponentPropsOptionsArrayValue*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    inline def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
+    inline def setEmptyValue(value: Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
     
     inline def setEmptyValueUndefined: Self = StObject.set(x, "emptyValue", js.undefined)
     
@@ -95,7 +95,7 @@ object ComponentPropsGaeaEdit {
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    inline def setInstanceVarargs(value: StringDictionary[ComponentPropsOptionValue]*): Self = StObject.set(x, "instance", js.Array(value :_*))
+    inline def setInstanceVarargs(value: StringDictionary[ComponentPropsOptionValue]*): Self = StObject.set(x, "instance", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -107,7 +107,7 @@ object ComponentPropsGaeaEdit {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setSelectorVarargs(value: ComponentPropsOptionsSelector*): Self = StObject.set(x, "selector", js.Array(value :_*))
+    inline def setSelectorVarargs(value: ComponentPropsOptionsSelector*): Self = StObject.set(x, "selector", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

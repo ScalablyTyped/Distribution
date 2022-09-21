@@ -28,7 +28,7 @@ object XFilePickerNotifier {
   inline def apply(
     acquire: () => Unit,
     addFilePickerListener: XFilePickerListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeFilePickerListener: XFilePickerListener => Unit
   ): XFilePickerNotifier = {

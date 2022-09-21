@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListReusableDelegationSetsResponse extends StObject {
   
   /**
-    * A complex type that contains one DelegationSet element for each reusable delegation set that was created by the current AWS account.
+    * A complex type that contains one DelegationSet element for each reusable delegation set that was created by the current Amazon Web Services account.
     */
   var DelegationSets: typings.awsSdk.route53Mod.DelegationSets
   
@@ -47,7 +47,7 @@ object ListReusableDelegationSetsResponse {
     
     inline def setDelegationSets(value: DelegationSets): Self = StObject.set(x, "DelegationSets", value.asInstanceOf[js.Any])
     
-    inline def setDelegationSetsVarargs(value: DelegationSet*): Self = StObject.set(x, "DelegationSets", js.Array(value :_*))
+    inline def setDelegationSetsVarargs(value: DelegationSet*): Self = StObject.set(x, "DelegationSets", js.Array(value*))
     
     inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html)
   */
-class ViewCls ()
+open class ViewCls ()
   extends StObject
      with typings.arcgisJsApi.esri.View {
   def this(properties: ViewProperties) = this()
@@ -38,6 +38,8 @@ class ViewCls ()
   /**
     * The height of the view in pixels read from the view container element.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#height)
     */
   /* CompleteClass */
@@ -53,6 +55,8 @@ class ViewCls ()
   
   /**
     * Indicates if the view is being resized.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#resizing)
     */
@@ -70,6 +74,8 @@ class ViewCls ()
   /**
     * Indicates if the view is visible on the page.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#suspended)
     */
   /* CompleteClass */
@@ -85,6 +91,8 @@ class ViewCls ()
   
   /**
     * The width of the view in pixels read from the view container element.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#width)
     */

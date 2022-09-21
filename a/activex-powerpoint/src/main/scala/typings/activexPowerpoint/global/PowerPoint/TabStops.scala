@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TabStops")
 @js.native
-/* private */ class TabStops ()
+/* private */ open class TabStops ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TabStops {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: Double): typings.activexPowerpoint.PowerPoint.TabStop = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.TabStops_typekey")

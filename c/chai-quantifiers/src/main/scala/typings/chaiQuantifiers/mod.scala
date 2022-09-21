@@ -35,9 +35,9 @@ object mod extends Shortcut {
       object Assertion {
         
         inline def apply(
-          containAll: js.Function1[js.Any, Boolean] => Unit,
-          containExactlyOne: js.Function1[js.Any, Boolean] => Unit,
-          containOne: js.Function1[js.Any, Boolean] => Unit
+          containAll: js.Function1[Any, Boolean] => Unit,
+          containExactlyOne: js.Function1[Any, Boolean] => Unit,
+          containOne: js.Function1[Any, Boolean] => Unit
         ): Assertion = {
           val __obj = js.Dynamic.literal(containAll = js.Any.fromFunction1(containAll), containExactlyOne = js.Any.fromFunction1(containExactlyOne), containOne = js.Any.fromFunction1(containOne))
           __obj.asInstanceOf[Assertion]
@@ -45,11 +45,11 @@ object mod extends Shortcut {
         
         extension [Self <: Assertion](x: Self) {
           
-          inline def setContainAll(value: js.Function1[js.Any, Boolean] => Unit): Self = StObject.set(x, "containAll", js.Any.fromFunction1(value))
+          inline def setContainAll(value: js.Function1[Any, Boolean] => Unit): Self = StObject.set(x, "containAll", js.Any.fromFunction1(value))
           
-          inline def setContainExactlyOne(value: js.Function1[js.Any, Boolean] => Unit): Self = StObject.set(x, "containExactlyOne", js.Any.fromFunction1(value))
+          inline def setContainExactlyOne(value: js.Function1[Any, Boolean] => Unit): Self = StObject.set(x, "containExactlyOne", js.Any.fromFunction1(value))
           
-          inline def setContainOne(value: js.Function1[js.Any, Boolean] => Unit): Self = StObject.set(x, "containOne", js.Any.fromFunction1(value))
+          inline def setContainOne(value: js.Function1[Any, Boolean] => Unit): Self = StObject.set(x, "containOne", js.Any.fromFunction1(value))
         }
       }
     }

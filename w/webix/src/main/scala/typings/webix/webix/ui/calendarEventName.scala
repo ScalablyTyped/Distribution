@@ -20,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onBlur
   - typings.webix.webixStrings.onChange
   - typings.webix.webixStrings.onDateClear
-  - typings.webix.webixStrings.onDateSelect
   - typings.webix.webixStrings.onDestruct
   - typings.webix.webixStrings.onEnter
   - typings.webix.webixStrings.onFocus
@@ -73,8 +72,6 @@ object calendarEventName {
   inline def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   
   inline def onDateClear: typings.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typings.webix.webixStrings.onDateClear]
-  
-  inline def onDateSelect: typings.webix.webixStrings.onDateSelect = "onDateSelect".asInstanceOf[typings.webix.webixStrings.onDateSelect]
   
   inline def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   

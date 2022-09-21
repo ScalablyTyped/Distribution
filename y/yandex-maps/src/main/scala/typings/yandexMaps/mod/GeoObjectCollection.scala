@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.ICustomizable because Already inherited
 - typings.yandexMaps.mod.IGeoObjectCollection because var conflicts: events, options. Inlined add, add, each, each, get, getBounds, getIterator, getLength, getPixelBounds, indexOf, remove, removeAll, set, splice */ @JSImport("yandex-maps", "GeoObjectCollection")
 @js.native
-class GeoObjectCollection ()
+open class GeoObjectCollection ()
   extends StObject
      with IGeoObject[IGeometry] {
   def this(feature: Children) = this()

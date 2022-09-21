@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EbuTtDDestinationSettings extends StObject {
   
   /**
+    * Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.
+    */
+  var CopyrightHolder: js.UndefOr[stringMax1000] = js.undefined
+  
+  /**
     * Specifies how to handle the gap between the lines (in multi-line captions).
   - enabled: Fill with the captions background color (as specified in the input captions).
   - disabled: Leave the gap unfilled.
@@ -36,6 +41,10 @@ object EbuTtDDestinationSettings {
   }
   
   extension [Self <: EbuTtDDestinationSettings](x: Self) {
+    
+    inline def setCopyrightHolder(value: stringMax1000): Self = StObject.set(x, "CopyrightHolder", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightHolderUndefined: Self = StObject.set(x, "CopyrightHolder", js.undefined)
     
     inline def setFillLineGap(value: EbuTtDFillLineGapControl): Self = StObject.set(x, "FillLineGap", value.asInstanceOf[js.Any])
     

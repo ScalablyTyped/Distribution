@@ -24,6 +24,6 @@ object BucketInfo {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value*))
   }
 }

@@ -6,11 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "TextureBlock")
 @js.native
-class TextureBlock protected ()
+open class TextureBlock protected ()
   extends typings.babylonjs.materialsIndexMod.TextureBlock {
   /**
     * Create a new TextureBlock
     * @param name defines the block name
+    * @param fragmentOnly
     */
   def this(name: String) = this()
   def this(name: String, fragmentOnly: Boolean) = this()

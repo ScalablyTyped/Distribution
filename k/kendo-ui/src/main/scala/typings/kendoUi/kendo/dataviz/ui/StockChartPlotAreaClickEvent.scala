@@ -8,15 +8,15 @@ trait StockChartPlotAreaClickEvent
   extends StObject
      with StockChartEvent {
   
-  var category: js.UndefOr[js.Any] = js.undefined
+  var category: js.UndefOr[Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.undefined
+  var element: js.UndefOr[Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[Any] = js.undefined
   
-  var y: js.UndefOr[js.Any] = js.undefined
+  var y: js.UndefOr[Any] = js.undefined
 }
 object StockChartPlotAreaClickEvent {
   
@@ -27,23 +27,23 @@ object StockChartPlotAreaClickEvent {
   
   extension [Self <: StockChartPlotAreaClickEvent](x: Self) {
     
-    inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

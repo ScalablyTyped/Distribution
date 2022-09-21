@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTaskSetRequest extends StObject {
   
   /**
-    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set exists in.
+    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set is found in.
     */
   var cluster: String
   
+  /**
+    * A floating-point percentage of the desired number of tasks to place and keep running in the task set.
+    */
   var scale: Scale
   
   /**
-    * The short name or full Amazon Resource Name (ARN) of the service that the task set exists in.
+    * The short name or full Amazon Resource Name (ARN) of the service that the task set is found in.
     */
   var service: String
   

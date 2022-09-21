@@ -25,6 +25,6 @@ object PluralReaderSelector {
     
     inline def setSelectors(value: js.Array[SingularReaderSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: SingularReaderSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: SingularReaderSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
   }
 }

@@ -2,9 +2,7 @@ package typings.vegaLite.anon
 
 import typings.vegaLite.channelMod.PolarPositionChannel
 import typings.vegaLite.channelMod.PositionChannel
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.srcMarkMod.Mark
-import typings.vegaLite.vegaSchemaMod.VgValueRef
+import typings.vegaLite.unitMod.UnitModel
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,39 +10,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MarkDef extends StObject {
   
+  var bandPosition: js.UndefOr[Double] = js.undefined
+  
   var channel: PositionChannel | PolarPositionChannel
   
-  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
+  var encoding: js.UndefOr[typings.vegaLite.encodingMod.Encoding[String]] = js.undefined
   
-  var fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]
-  
-  var ref: VgValueRef
+  var model: js.UndefOr[UnitModel] = js.undefined
 }
 object MarkDef {
   
   inline def apply(
     channel: PositionChannel | PolarPositionChannel,
-    config: typings.vegaLite.srcConfigMod.Config[SignalRef],
-    fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, js.Any],
-    markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef],
-    ref: VgValueRef
+    markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
   ): MarkDef = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], fieldDef = fieldDef.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkDef]
   }
   
   extension [Self <: MarkDef](x: Self) {
     
+    inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
+    
     inline def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    inline def setFieldDef(value: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    inline def setRef(value: VgValueRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setModel(value: UnitModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

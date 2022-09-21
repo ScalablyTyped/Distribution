@@ -22,7 +22,7 @@ object XUnoUrlResolver {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resolve: String => XInterface
   ): XUnoUrlResolver = {

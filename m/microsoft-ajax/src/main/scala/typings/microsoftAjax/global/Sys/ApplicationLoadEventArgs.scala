@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.ApplicationLoadEventArgs")
 @js.native
-class ApplicationLoadEventArgs protected ()
+open class ApplicationLoadEventArgs protected ()
   extends StObject
      with typings.microsoftAjax.Sys.ApplicationLoadEventArgs {
   //#region Constructors
@@ -23,7 +23,7 @@ class ApplicationLoadEventArgs protected ()
     * @param isPartialLoad
     *           true to indicate that the event is a partial-page update.
     */
-  def this(components: js.Any, isPartialLoad: Boolean) = this()
+  def this(components: Any, isPartialLoad: Boolean) = this()
   
   //#endregion
   //#region Properties

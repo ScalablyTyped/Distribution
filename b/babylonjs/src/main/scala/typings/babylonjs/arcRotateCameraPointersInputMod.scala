@@ -10,13 +10,27 @@ object arcRotateCameraPointersInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraPointersInput", "ArcRotateCameraPointersInput")
   @js.native
-  class ArcRotateCameraPointersInput () extends BaseCameraPointersInput {
+  open class ArcRotateCameraPointersInput () extends BaseCameraPointersInput {
     
-    /* private */ var _isPanClick: js.Any = js.native
+    /**
+      * Move camera from multi touch panning positions.
+      * @param previousMultiTouchPanPosition
+      * @param multiTouchPanPosition
+      */
+    /* private */ var _computeMultiTouchPanning: Any = js.native
     
-    /* private */ var _isPinching: js.Any = js.native
+    /**
+      * Move camera from pinch zoom distances.
+      * @param previousPinchSquaredDistance
+      * @param pinchSquaredDistance
+      */
+    /* private */ var _computePinchZoom: Any = js.native
     
-    /* private */ var _twoFingerActivityCount: js.Any = js.native
+    /* private */ var _isPanClick: Any = js.native
+    
+    /* private */ var _isPinching: Any = js.native
+    
+    /* private */ var _twoFingerActivityCount: Any = js.native
     
     /**
       * Defines the pointer angular sensibility  along the X axis or how fast is
@@ -48,6 +62,17 @@ object arcRotateCameraPointersInputMod {
     var multiTouchPanning: Boolean = js.native
     
     /**
+      * Called each time a new POINTERUP event occurs. Ie, for each button
+      * release.
+      */
+    def onButtonUp(): Unit = js.native
+    
+    /**
+      * Called on pointer POINTERDOUBLETAP event.
+      */
+    def onDoubleTap(): Unit = js.native
+    
+    /**
       * Defines the pointer panning sensibility or how fast is the camera moving.
       */
     var panningSensibility: Double = js.native
@@ -71,11 +96,31 @@ object arcRotateCameraPointersInputMod {
     var pinchPrecision: Double = js.native
     
     /**
+      * Defines whether zoom (2 fingers pinch) is enabled through multitouch
+      */
+    var pinchZoom: Boolean = js.native
+    
+    /**
       * When useNaturalPinchZoom is true, multi touch zoom will zoom in such
       * that any object in the plane at the camera's target point will scale
       * perfectly with finger motion.
       * Overrides pinchDeltaPercentage and pinchPrecision.
       */
     var useNaturalPinchZoom: Boolean = js.native
+  }
+  /* static members */
+  object ArcRotateCameraPointersInput {
+    
+    @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraPointersInput", "ArcRotateCameraPointersInput")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The minimum radius used for pinch, to avoid radius lock at 0
+      */
+    @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraPointersInput", "ArcRotateCameraPointersInput.MinimumRadiusForPinch")
+    @js.native
+    def MinimumRadiusForPinch: Double = js.native
+    inline def MinimumRadiusForPinch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinimumRadiusForPinch")(x.asInstanceOf[js.Any])
   }
 }

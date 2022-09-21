@@ -1,18 +1,16 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.mod.model.Node
-import typings.ckeditorCkeditor5Engine.mod.model.SchemaContextDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Context extends StObject {
   
-  var context: js.UndefOr[SchemaContextDefinition] = js.undefined
+  var context: js.UndefOr[String] = js.undefined
   
-  var lastRangeBackward: js.UndefOr[Boolean] = js.undefined
-  
-  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var priority: js.UndefOr[
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)
+  ] = js.undefined
 }
 object Context {
   
@@ -23,20 +21,14 @@ object Context {
   
   extension [Self <: Context](x: Self) {
     
-    inline def setContext(value: SchemaContextDefinition): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setContextVarargs(value: (String | Node)*): Self = StObject.set(x, "context", js.Array(value :_*))
+    inline def setPriority(
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)
+    ): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    inline def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
-    
-    inline def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
-    
-    inline def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
-    
-    inline def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
-    
-    inline def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

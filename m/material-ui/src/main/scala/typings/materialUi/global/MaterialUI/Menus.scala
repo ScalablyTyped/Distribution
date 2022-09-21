@@ -13,21 +13,21 @@ object Menus {
   
   @JSGlobal("__MaterialUI.Menus.DropDownMenu")
   @js.native
-  class DropDownMenu ()
-    extends Component[DropDownMenuProps, js.Object, js.Any]
+  open class DropDownMenu ()
+    extends Component[DropDownMenuProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Menus.IconMenu")
   @js.native
-  class IconMenu ()
-    extends Component[IconMenuProps, js.Object, js.Any]
+  open class IconMenu ()
+    extends Component[IconMenuProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Menus.Menu")
   @js.native
-  class Menu ()
-    extends Component[MenuProps, js.Object, js.Any]
+  open class Menu ()
+    extends Component[MenuProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Menus.MenuItem")
   @js.native
-  class MenuItem ()
-    extends Component[MenuItemProps, js.Object, js.Any]
+  open class MenuItem ()
+    extends Component[MenuItemProps, js.Object, Any]
 }

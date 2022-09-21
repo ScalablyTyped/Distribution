@@ -32,7 +32,7 @@ object anon {
   
   trait `1` extends StObject {
     
-    var inject: js.UndefOr[js.Any] = js.undefined
+    var inject: js.UndefOr[Any] = js.undefined
   }
   object `1` {
     
@@ -43,7 +43,7 @@ object anon {
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setInject(value: js.Any): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Any): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
       inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     }
@@ -52,7 +52,7 @@ object anon {
   trait Decorates extends StObject {
     
     var decorates: js.UndefOr[
-        js.Function1[/* key */ js.Any, /* is aurelia-dependency-injection.anon.Get */ Boolean]
+        js.Function1[/* key */ Any, /* is aurelia-dependency-injection.anon.Get */ Boolean]
       ] = js.undefined
   }
   object Decorates {
@@ -64,7 +64,7 @@ object anon {
     
     extension [Self <: Decorates](x: Self) {
       
-      inline def setDecorates(value: /* key */ js.Any => /* is aurelia-dependency-injection.anon.Get */ Boolean): Self = StObject.set(x, "decorates", js.Any.fromFunction1(value))
+      inline def setDecorates(value: /* key */ Any => /* is aurelia-dependency-injection.anon.Get */ Boolean): Self = StObject.set(x, "decorates", js.Any.fromFunction1(value))
       
       inline def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
     }
@@ -72,18 +72,18 @@ object anon {
   
   trait Get extends StObject {
     
-    def get(container: Container, key: js.Any): js.Any
+    def get(container: Container, key: Any): Any
   }
   object Get {
     
-    inline def apply(get: (Container, js.Any) => js.Any): Get = {
+    inline def apply(get: (Container, Any) => Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[Get]
     }
     
     extension [Self <: Get](x: Self) {
       
-      inline def setGet(value: (Container, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Container, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
@@ -114,7 +114,7 @@ object anon {
       
       inline def setInjectVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
-      ): Self = StObject.set(x, "inject", js.Array(value :_*))
+      ): Self = StObject.set(x, "inject", js.Array(value*))
     }
   }
   

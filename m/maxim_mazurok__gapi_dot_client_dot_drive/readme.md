@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_drive
 
-Typings are for version 3.0.20201115
+Typings are for version 3.0.20220731
 
 ## Library description:
 TypeScript typings for Drive API v3
@@ -10,10 +10,10 @@ TypeScript typings for Drive API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.drive |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 224251 |
-| # stars            | 0 |
+| # releases         | 79 |
+| # dependents       | 0.0 |
+| # downloads        | 120577.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -23,7 +23,7 @@ object ReturnTypeSnapshotCommandLogResponse {
     
     inline def setParamsType(value: js.Array[SnapshotCommandLogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SnapshotCommandLogRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SnapshotCommandLogRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: SnapshotCommandLogResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

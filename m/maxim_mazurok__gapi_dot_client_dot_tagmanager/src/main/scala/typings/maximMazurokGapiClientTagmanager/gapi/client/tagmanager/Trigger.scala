@@ -184,7 +184,7 @@ object Trigger {
     
     inline def setAutoEventFilterUndefined: Self = StObject.set(x, "autoEventFilter", js.undefined)
     
-    inline def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value :_*))
+    inline def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value*))
     
     inline def setCheckValidation(value: Parameter): Self = StObject.set(x, "checkValidation", value.asInstanceOf[js.Any])
     
@@ -202,7 +202,7 @@ object Trigger {
     
     inline def setCustomEventFilterUndefined: Self = StObject.set(x, "customEventFilter", js.undefined)
     
-    inline def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value :_*))
+    inline def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value*))
     
     inline def setEventName(value: Parameter): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
@@ -212,7 +212,7 @@ object Trigger {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
@@ -250,7 +250,7 @@ object Trigger {
     
     inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     

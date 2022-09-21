@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBlueprintsRequest extends StObject {
   
   /**
-    * A Boolean value indicating whether to include inactive results in your request.
+    * A Boolean value that indicates whether to include inactive (unavailable) blueprints in the response of your request.
     */
   var includeInactive: js.UndefOr[Boolean] = js.undefined
   

@@ -14,7 +14,7 @@ object panelBaseWithHeaderMod {
   
   @JSImport("js/PanelBase/PanelBaseWithHeader", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PanelBaseWithHeader {
     def this(options: OptionsWithHeader, layoutManger: LayoutManager) = this()
@@ -32,7 +32,7 @@ object panelBaseWithHeaderMod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    var control: js.Any = js.native
+    var control: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

@@ -36,6 +36,6 @@ object ResolvedReflectiveProvider {
     
     inline def setResolvedFactories(value: js.Array[ResolvedReflectiveFactory]): Self = StObject.set(x, "resolvedFactories", value.asInstanceOf[js.Any])
     
-    inline def setResolvedFactoriesVarargs(value: ResolvedReflectiveFactory*): Self = StObject.set(x, "resolvedFactories", js.Array(value :_*))
+    inline def setResolvedFactoriesVarargs(value: ResolvedReflectiveFactory*): Self = StObject.set(x, "resolvedFactories", js.Array(value*))
   }
 }

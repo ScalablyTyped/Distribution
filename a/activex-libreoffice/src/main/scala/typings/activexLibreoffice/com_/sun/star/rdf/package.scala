@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rdf
 
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,21 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-type ParseException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type ParseException = Exception
 
 /**
   * represents an error condition that is signaled on evaluating a query against an RDF {@link Repository} .
   * @see XRepository
   * @since OOo 3.0
   */
-type QueryException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type QueryException = Exception
 
 /**
   * represents an error condition that is signaled on accessing an RDF {@link Repository} .
   * @see XRepository
   * @since OOo 3.0
   */
-type RepositoryException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type RepositoryException = Exception
 
 /**
   * represents a blank node that may occur in a RDF graph.
@@ -33,7 +34,7 @@ type RepositoryException = typings.activexLibreoffice.com_.sun.star.uno.Exceptio
   * @see XRepository
   * @since OOo 3.0
   */
-type XBlankNode = typings.activexLibreoffice.com_.sun.star.rdf.XResource
+type XBlankNode = XResource
 
 /**
   * represents a resource node that may occur in a RDF graph.
@@ -44,4 +45,4 @@ type XBlankNode = typings.activexLibreoffice.com_.sun.star.rdf.XResource
   * @see XURI
   * @since OOo 3.0
   */
-type XResource = typings.activexLibreoffice.com_.sun.star.rdf.XNode
+type XResource = XNode

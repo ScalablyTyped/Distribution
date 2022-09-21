@@ -45,7 +45,7 @@ object anon {
       
       inline def setBaseFontScaleUndefined: Self = StObject.set(x, "baseFontScale", js.undefined)
       
-      inline def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value :_*))
+      inline def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value*))
       
       inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       

@@ -9,7 +9,7 @@ trait DescribeUserProfileResponse extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the domain that contains the profile.
@@ -29,15 +29,15 @@ trait DescribeUserProfileResponse extends StObject {
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The SSO user identifier.
+    * The Amazon Web Services SSO user identifier.
     */
   var SingleSignOnUserIdentifier: js.UndefOr[typings.awsSdk.sagemakerMod.SingleSignOnUserIdentifier] = js.undefined
   
   /**
-    * The SSO user value.
+    * The Amazon Web Services SSO user value.
     */
   var SingleSignOnUserValue: js.UndefOr[String256] = js.undefined
   
@@ -70,7 +70,7 @@ object DescribeUserProfileResponse {
   
   extension [Self <: DescribeUserProfileResponse](x: Self) {
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -86,7 +86,7 @@ object DescribeUserProfileResponse {
     
     inline def setHomeEfsFileSystemUidUndefined: Self = StObject.set(x, "HomeEfsFileSystemUid", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,11 +27,11 @@ trait GetCredentialsForIdentityInput extends StObject {
     *          <p>Logins should not be specified when trying to get credentials for an unauthenticated
     *          identity.</p>
     *          <p>The Logins parameter is required when using identities associated with external
-    *          identity providers such as FaceBook. For examples of <code>Logins</code> maps, see the code
-    *          examples in the <a href="http://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html">External Identity Providers</a> section of the Amazon Cognito Developer
+    *          identity providers such as Facebook. For examples of <code>Logins</code> maps, see the code
+    *          examples in the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html">External Identity Providers</a> section of the Amazon Cognito Developer
     *          Guide.</p>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Logins: js.UndefOr[Record[String, String]] = js.undefined
 }
 object GetCredentialsForIdentityInput {
   
@@ -39,12 +39,6 @@ object GetCredentialsForIdentityInput {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
-  
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   extension [Self <: GetCredentialsForIdentityInput](x: Self) {
     
@@ -56,7 +50,7 @@ object GetCredentialsForIdentityInput {
     
     inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: Record[String, String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
     inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }

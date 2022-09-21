@@ -71,7 +71,7 @@ object FindPlaceRequest {
     
     inline def setFieldsVarargs(
       value: (icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed)*
-    ): Self = StObject.set(x, "fields", js.Array(value :_*))
+    ): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

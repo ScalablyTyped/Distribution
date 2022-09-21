@@ -11,7 +11,7 @@ object handlersMod {
   
   @JSImport("diva.js/handlers", "DocumentHandler")
   @js.native
-  class DocumentHandler protected ()
+  open class DocumentHandler protected ()
     extends StObject
        with ViewHandler {
     def this(viewerCore: default) = this()
@@ -21,7 +21,7 @@ object handlersMod {
   
   @JSImport("diva.js/handlers", "GridHandler")
   @js.native
-  class GridHandler protected ()
+  open class GridHandler protected ()
     extends StObject
        with ViewHandler {
     def this(viewerCore: default) = this()

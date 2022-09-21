@@ -10,7 +10,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("MultiSelectListBox")
   @js.native
-  class MultiSelectListBox protected ()
+  open class MultiSelectListBox protected ()
     extends StObject
        with BaseListBox {
     def this(domElement: HTMLElement) = this()
@@ -20,7 +20,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("SingleSelectListBox")
   @js.native
-  class SingleSelectListBox protected ()
+  open class SingleSelectListBox protected ()
     extends StObject
        with BaseListBox {
     def this(domElement: HTMLElement) = this()

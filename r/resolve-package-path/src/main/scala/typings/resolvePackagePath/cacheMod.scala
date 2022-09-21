@@ -11,7 +11,7 @@ object cacheMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("resolve-package-path/lib/cache", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Delete {
     
@@ -28,7 +28,7 @@ object cacheMod {
     override def has(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def set(key: String, value: js.Any): js.Any = js.native
+    override def set(key: String, value: Any): Any = js.native
     
     /* CompleteClass */
     override val size: Double = js.native

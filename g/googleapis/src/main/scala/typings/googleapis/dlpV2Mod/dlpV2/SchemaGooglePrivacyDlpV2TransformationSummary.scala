@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Summary of a single transformation. Only one of &#39;transformation&#39;,
-  * &#39;field_transformation&#39;, or &#39;record_suppress&#39; will be set.
-  */
 trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
   
   /**
@@ -16,9 +12,7 @@ trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
   var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
-    * The field transformation that was applied. If multiple field
-    * transformations are requested for a single field, this list will contain
-    * all of them; otherwise, only one is supplied.
+    * The field transformation that was applied. If multiple field transformations are requested for a single field, this list will contain all of them; otherwise, only one is supplied.
     */
   var fieldTransformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]] = js.undefined
   
@@ -32,6 +26,9 @@ trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
     */
   var recordSuppress: js.UndefOr[SchemaGooglePrivacyDlpV2RecordSuppression] = js.undefined
   
+  /**
+    * Collection of all transformations that took place or had an error.
+    */
   var results: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2SummaryResult]] = js.undefined
   
   /**
@@ -42,7 +39,7 @@ trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
   /**
     * Total size in bytes that were transformed in some way.
     */
-  var transformedBytes: js.UndefOr[String] = js.undefined
+  var transformedBytes: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TransformationSummary {
   
@@ -59,7 +56,7 @@ object SchemaGooglePrivacyDlpV2TransformationSummary {
     
     inline def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
     
-    inline def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
+    inline def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value*))
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
@@ -75,13 +72,15 @@ object SchemaGooglePrivacyDlpV2TransformationSummary {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaGooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaGooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
     inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
     
     inline def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
+    
+    inline def setTransformedBytesNull: Self = StObject.set(x, "transformedBytes", null)
     
     inline def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
   }

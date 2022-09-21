@@ -17,12 +17,12 @@ trait StartContactRecordingRequest extends StObject {
   var InitialContactId: ContactId
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * Who is being recorded.
+    * The person being recorded.
     */
   var VoiceRecordingConfiguration: typings.awsSdk.connectMod.VoiceRecordingConfiguration
 }

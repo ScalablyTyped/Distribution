@@ -11,7 +11,7 @@ trait CanAddToArray extends StObject {
   
   def canAddToArray(array: js.Array[Bip32Derivation], item: Bip32Derivation, dupeSet: Set[String]): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean
+  def check(data: Any): /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean
   
   def decode(keyVal: KeyValue): Bip32Derivation
   
@@ -23,7 +23,7 @@ object CanAddToArray {
   
   inline def apply(
     canAddToArray: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean,
-    check: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean,
+    check: Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean,
     decode: KeyValue => Bip32Derivation,
     encode: Bip32Derivation => KeyValue,
     expected: String
@@ -36,7 +36,7 @@ object CanAddToArray {
     
     inline def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
-    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     inline def setDecode(value: KeyValue => Bip32Derivation): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

@@ -39,13 +39,13 @@ trait HTMLCurrentStyle extends StObject {
   
   val backgroundAttachment: String = js.native
   
-  val backgroundColor: js.Any = js.native
+  val backgroundColor: Any = js.native
   
   val backgroundImage: String = js.native
   
-  val backgroundPositionX: js.Any = js.native
+  val backgroundPositionX: Any = js.native
   
-  val backgroundPositionY: js.Any = js.native
+  val backgroundPositionY: Any = js.native
   
   val backgroundRepeat: String = js.native
   
@@ -53,11 +53,11 @@ trait HTMLCurrentStyle extends StObject {
   
   val blockDirection: String = js.native
   
-  val borderBottomColor: js.Any = js.native
+  val borderBottomColor: Any = js.native
   
   val borderBottomStyle: String = js.native
   
-  val borderBottomWidth: js.Any = js.native
+  val borderBottomWidth: Any = js.native
   
   val borderCollapse: String = js.native
   
@@ -75,31 +75,31 @@ trait HTMLCurrentStyle extends StObject {
   
   var borderImageWidth: String = js.native
   
-  val borderLeftColor: js.Any = js.native
+  val borderLeftColor: Any = js.native
   
   val borderLeftStyle: String = js.native
   
-  val borderLeftWidth: js.Any = js.native
+  val borderLeftWidth: Any = js.native
   
-  val borderRightColor: js.Any = js.native
+  val borderRightColor: Any = js.native
   
   val borderRightStyle: String = js.native
   
-  val borderRightWidth: js.Any = js.native
+  val borderRightWidth: Any = js.native
   
   val borderSpacing: String = js.native
   
   val borderStyle: String = js.native
   
-  val borderTopColor: js.Any = js.native
+  val borderTopColor: Any = js.native
   
   val borderTopStyle: String = js.native
   
-  val borderTopWidth: js.Any = js.native
+  val borderTopWidth: Any = js.native
   
   val borderWidth: String = js.native
   
-  val bottom: js.Any = js.native
+  val bottom: Any = js.native
   
   val boxSizing: String = js.native
   
@@ -113,39 +113,39 @@ trait HTMLCurrentStyle extends StObject {
   
   val clear: String = js.native
   
-  val clipBottom: js.Any = js.native
+  val clipBottom: Any = js.native
   
-  val clipLeft: js.Any = js.native
+  val clipLeft: Any = js.native
   
-  val clipRight: js.Any = js.native
+  val clipRight: Any = js.native
   
-  val clipTop: js.Any = js.native
+  val clipTop: Any = js.native
   
-  val color: js.Any = js.native
+  val color: Any = js.native
   
   var colorInterpolationFilters: String = js.native
   
-  var columnCount: js.Any = js.native
+  var columnCount: Any = js.native
   
   var columnFill: String = js.native
   
-  var columnGap: js.Any = js.native
+  var columnGap: Any = js.native
   
   var columnRule: String = js.native
   
-  var columnRuleColor: js.Any = js.native
+  var columnRuleColor: Any = js.native
   
   var columnRuleStyle: String = js.native
   
-  var columnRuleWidth: js.Any = js.native
+  var columnRuleWidth: Any = js.native
   
   var columnSpan: String = js.native
   
-  var columnWidth: js.Any = js.native
+  var columnWidth: Any = js.native
   
   var columns: String = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   val cursor: String = js.native
   
@@ -161,37 +161,37 @@ trait HTMLCurrentStyle extends StObject {
   
   var flex: String = js.native
   
-  var flexBasis: js.Any = js.native
+  var flexBasis: Any = js.native
   
   var flexDirection: String = js.native
   
   var flexFlow: String = js.native
   
-  var flexGrow: js.Any = js.native
+  var flexGrow: Any = js.native
   
-  var flexShrink: js.Any = js.native
+  var flexShrink: Any = js.native
   
   var flexWrap: String = js.native
   
-  var floodColor: js.Any = js.native
+  var floodColor: Any = js.native
   
-  var floodOpacity: js.Any = js.native
+  var floodOpacity: Any = js.native
   
   val fontFamily: String = js.native
   
   var fontFeatureSettings: String = js.native
   
-  val fontSize: js.Any = js.native
+  val fontSize: Any = js.native
   
   val fontStyle: String = js.native
   
   val fontVariant: String = js.native
   
-  val fontWeight: js.Any = js.native
+  val fontWeight: Any = js.native
   
   /** @param lFlags [lFlags=0] */
-  def getAttribute(strAttributeName: String): js.Any = js.native
-  def getAttribute(strAttributeName: String, lFlags: Double): js.Any = js.native
+  def getAttribute(strAttributeName: String): Any = js.native
+  def getAttribute(strAttributeName: String, lFlags: Double): Any = js.native
   
   def getPropertyPriority(bstrPropertyName: String): String = js.native
   
@@ -199,7 +199,7 @@ trait HTMLCurrentStyle extends StObject {
   
   val hasLayout: Boolean = js.native
   
-  val height: js.Any = js.native
+  val height: Any = js.native
   
   val imeMode: String = js.native
   
@@ -209,25 +209,25 @@ trait HTMLCurrentStyle extends StObject {
   
   val layoutFlow: String = js.native
   
-  val layoutGridChar: js.Any = js.native
+  val layoutGridChar: Any = js.native
   
-  val layoutGridLine: js.Any = js.native
+  val layoutGridLine: Any = js.native
   
   val layoutGridMode: String = js.native
   
   val layoutGridType: String = js.native
   
-  val left: js.Any = js.native
+  val left: Any = js.native
   
   val length: Double = js.native
   
-  val letterSpacing: js.Any = js.native
+  val letterSpacing: Any = js.native
   
-  var lightingColor: js.Any = js.native
+  var lightingColor: Any = js.native
   
   val lineBreak: String = js.native
   
-  val lineHeight: js.Any = js.native
+  val lineHeight: Any = js.native
   
   val listStyleImage: String = js.native
   
@@ -237,21 +237,21 @@ trait HTMLCurrentStyle extends StObject {
   
   val margin: String = js.native
   
-  val marginBottom: js.Any = js.native
+  val marginBottom: Any = js.native
   
-  val marginLeft: js.Any = js.native
+  val marginLeft: Any = js.native
   
-  val marginRight: js.Any = js.native
+  val marginRight: Any = js.native
   
-  val marginTop: js.Any = js.native
+  val marginTop: Any = js.native
   
-  val maxHeight: js.Any = js.native
+  val maxHeight: Any = js.native
   
-  val maxWidth: js.Any = js.native
+  val maxWidth: Any = js.native
   
-  val minHeight: js.Any = js.native
+  val minHeight: Any = js.native
   
-  val minWidth: js.Any = js.native
+  val minWidth: Any = js.native
   
   var msAnimation: String = js.native
   
@@ -279,9 +279,9 @@ trait HTMLCurrentStyle extends StObject {
   
   var msContentZoomLimit: String = js.native
   
-  var msContentZoomLimitMax: js.Any = js.native
+  var msContentZoomLimitMax: Any = js.native
   
-  var msContentZoomLimitMin: js.Any = js.native
+  var msContentZoomLimitMin: Any = js.native
   
   var msContentZoomSnap: String = js.native
   
@@ -303,15 +303,15 @@ trait HTMLCurrentStyle extends StObject {
   
   var msFlexLinePack: String = js.native
   
-  var msFlexNegative: js.Any = js.native
+  var msFlexNegative: Any = js.native
   
-  var msFlexOrder: js.Any = js.native
+  var msFlexOrder: Any = js.native
   
   var msFlexPack: String = js.native
   
-  var msFlexPositive: js.Any = js.native
+  var msFlexPositive: Any = js.native
   
-  var msFlexPreferredSize: js.Any = js.native
+  var msFlexPreferredSize: Any = js.native
   
   var msFlexWrap: String = js.native
   
@@ -321,19 +321,19 @@ trait HTMLCurrentStyle extends StObject {
   
   var msFontFeatureSettings: String = js.native
   
-  var msGridColumn: js.Any = js.native
+  var msGridColumn: Any = js.native
   
   var msGridColumnAlign: String = js.native
   
-  var msGridColumnSpan: js.Any = js.native
+  var msGridColumnSpan: Any = js.native
   
   var msGridColumns: String = js.native
   
-  var msGridRow: js.Any = js.native
+  var msGridRow: Any = js.native
   
   var msGridRowAlign: String = js.native
   
-  var msGridRowSpan: js.Any = js.native
+  var msGridRowSpan: Any = js.native
   
   var msGridRows: String = js.native
   
@@ -341,9 +341,9 @@ trait HTMLCurrentStyle extends StObject {
   
   var msHyphenateLimitChars: String = js.native
   
-  var msHyphenateLimitLines: js.Any = js.native
+  var msHyphenateLimitLines: Any = js.native
   
-  var msHyphenateLimitZone: js.Any = js.native
+  var msHyphenateLimitZone: Any = js.native
   
   var msHyphens: String = js.native
   
@@ -353,7 +353,7 @@ trait HTMLCurrentStyle extends StObject {
   
   var msOverflowStyle: String = js.native
   
-  var msPerspective: js.Any = js.native
+  var msPerspective: Any = js.native
   
   var msPerspectiveOrigin: String = js.native
   
@@ -361,13 +361,13 @@ trait HTMLCurrentStyle extends StObject {
   
   var msScrollLimit: String = js.native
   
-  var msScrollLimitXMax: js.Any = js.native
+  var msScrollLimitXMax: Any = js.native
   
-  var msScrollLimitXMin: js.Any = js.native
+  var msScrollLimitXMin: Any = js.native
   
-  var msScrollLimitYMax: js.Any = js.native
+  var msScrollLimitYMax: Any = js.native
   
-  var msScrollLimitYMin: js.Any = js.native
+  var msScrollLimitYMin: Any = js.native
   
   var msScrollRails: String = js.native
   
@@ -385,7 +385,7 @@ trait HTMLCurrentStyle extends StObject {
   
   var msTextCombineHorizontal: String = js.native
   
-  var msTextSizeAdjust: js.Any = js.native
+  var msTextSizeAdjust: Any = js.native
   
   var msTouchAction: String = js.native
   
@@ -407,19 +407,19 @@ trait HTMLCurrentStyle extends StObject {
   
   var msWrapFlow: String = js.native
   
-  var msWrapMargin: js.Any = js.native
+  var msWrapMargin: Any = js.native
   
   var msWrapThrough: String = js.native
   
-  val orphans: js.Any = js.native
+  val orphans: Any = js.native
   
   val outline: String = js.native
   
-  val outlineColor: js.Any = js.native
+  val outlineColor: Any = js.native
   
   val outlineStyle: String = js.native
   
-  val outlineWidth: js.Any = js.native
+  val outlineWidth: Any = js.native
   
   val overflow: String = js.native
   
@@ -429,13 +429,13 @@ trait HTMLCurrentStyle extends StObject {
   
   val padding: String = js.native
   
-  val paddingBottom: js.Any = js.native
+  val paddingBottom: Any = js.native
   
-  val paddingLeft: js.Any = js.native
+  val paddingLeft: Any = js.native
   
-  val paddingRight: js.Any = js.native
+  val paddingRight: Any = js.native
   
-  val paddingTop: js.Any = js.native
+  val paddingTop: Any = js.native
   
   val pageBreakAfter: String = js.native
   
@@ -443,9 +443,9 @@ trait HTMLCurrentStyle extends StObject {
   
   val pageBreakInside: String = js.native
   
-  val parentRule: js.Any = js.native
+  val parentRule: Any = js.native
   
-  var perspective: js.Any = js.native
+  var perspective: Any = js.native
   
   var perspectiveOrigin: String = js.native
   
@@ -455,7 +455,7 @@ trait HTMLCurrentStyle extends StObject {
   
   def removeProperty(bstrPropertyName: String): String = js.native
   
-  val right: js.Any = js.native
+  val right: Any = js.native
   
   val rubyAlign: String = js.native
   
@@ -463,25 +463,25 @@ trait HTMLCurrentStyle extends StObject {
   
   val rubyPosition: String = js.native
   
-  val scrollbar3dLightColor: js.Any = js.native
+  val scrollbar3dLightColor: Any = js.native
   
-  val scrollbarArrowColor: js.Any = js.native
+  val scrollbarArrowColor: Any = js.native
   
-  val scrollbarBaseColor: js.Any = js.native
+  val scrollbarBaseColor: Any = js.native
   
-  val scrollbarDarkShadowColor: js.Any = js.native
+  val scrollbarDarkShadowColor: Any = js.native
   
-  val scrollbarFaceColor: js.Any = js.native
+  val scrollbarFaceColor: Any = js.native
   
-  val scrollbarHighlightColor: js.Any = js.native
+  val scrollbarHighlightColor: Any = js.native
   
-  val scrollbarShadowColor: js.Any = js.native
+  val scrollbarShadowColor: Any = js.native
   
-  val scrollbarTrackColor: js.Any = js.native
+  val scrollbarTrackColor: Any = js.native
   
   /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
-  def setProperty(bstrPropertyName: String, pvarPropertyValue: js.Any): Unit = js.native
-  def setProperty(bstrPropertyName: String, pvarPropertyValue: js.Any, pvarPropertyPriority: js.Any): Unit = js.native
+  def setProperty(bstrPropertyName: String, pvarPropertyValue: Any): Unit = js.native
+  def setProperty(bstrPropertyName: String, pvarPropertyValue: Any, pvarPropertyPriority: Any): Unit = js.native
   
   val styleFloat: String = js.native
   
@@ -495,15 +495,15 @@ trait HTMLCurrentStyle extends StObject {
   
   val textDecoration: String = js.native
   
-  val textIndent: js.Any = js.native
+  val textIndent: Any = js.native
   
   val textJustify: String = js.native
   
   val textJustifyTrim: String = js.native
   
-  val textKashida: js.Any = js.native
+  val textKashida: Any = js.native
   
-  val textKashidaSpace: js.Any = js.native
+  val textKashidaSpace: Any = js.native
   
   val textOverflow: String = js.native
   
@@ -513,7 +513,7 @@ trait HTMLCurrentStyle extends StObject {
   
   val textUnderlinePosition: String = js.native
   
-  val top: js.Any = js.native
+  val top: Any = js.native
   
   var touchAction: String = js.native
   
@@ -535,7 +535,7 @@ trait HTMLCurrentStyle extends StObject {
   
   val unicodeBidi: String = js.native
   
-  val verticalAlign: js.Any = js.native
+  val verticalAlign: Any = js.native
   
   val visibility: String = js.native
   
@@ -567,7 +567,7 @@ trait HTMLCurrentStyle extends StObject {
   
   var webkitBackgroundClip: String = js.native
   
-  var webkitBackgroundColor: js.Any = js.native
+  var webkitBackgroundColor: Any = js.native
   
   var webkitBackgroundImage: String = js.native
   
@@ -575,9 +575,9 @@ trait HTMLCurrentStyle extends StObject {
   
   var webkitBackgroundPosition: String = js.native
   
-  var webkitBackgroundPositionX: js.Any = js.native
+  var webkitBackgroundPositionX: Any = js.native
   
-  var webkitBackgroundPositionY: js.Any = js.native
+  var webkitBackgroundPositionY: Any = js.native
   
   var webkitBackgroundRepeat: String = js.native
   
@@ -599,9 +599,9 @@ trait HTMLCurrentStyle extends StObject {
   
   var webkitBoxDirection: String = js.native
   
-  var webkitBoxFlex: js.Any = js.native
+  var webkitBoxFlex: Any = js.native
   
-  var webkitBoxOrdinalGroup: js.Any = js.native
+  var webkitBoxOrdinalGroup: Any = js.native
   
   var webkitBoxOrient: String = js.native
   
@@ -609,7 +609,7 @@ trait HTMLCurrentStyle extends StObject {
   
   var webkitBoxSizing: String = js.native
   
-  var webkitTextSizeAdjust: js.Any = js.native
+  var webkitTextSizeAdjust: Any = js.native
   
   var webkitTransform: String = js.native
   
@@ -629,19 +629,19 @@ trait HTMLCurrentStyle extends StObject {
   
   val whiteSpace: String = js.native
   
-  val widows: js.Any = js.native
+  val widows: Any = js.native
   
-  val width: js.Any = js.native
+  val width: Any = js.native
   
   val wordBreak: String = js.native
   
-  val wordSpacing: js.Any = js.native
+  val wordSpacing: Any = js.native
   
   val wordWrap: String = js.native
   
   val writingMode: String = js.native
   
-  val zIndex: js.Any = js.native
+  val zIndex: Any = js.native
   
-  val zoom: js.Any = js.native
+  val zoom: Any = js.native
 }

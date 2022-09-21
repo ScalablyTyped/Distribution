@@ -11,6 +11,9 @@ trait TargetId extends StObject {
   
   /** The MIME type of the file that this shortcut points to. The value of this field is a snapshot of the target's MIME type, captured when the shortcut is created. */
   var targetMimeType: js.UndefOr[String] = js.undefined
+  
+  /** The ResourceKey for the target file. */
+  var targetResourceKey: js.UndefOr[String] = js.undefined
 }
 object TargetId {
   
@@ -28,5 +31,9 @@ object TargetId {
     inline def setTargetMimeType(value: String): Self = StObject.set(x, "targetMimeType", value.asInstanceOf[js.Any])
     
     inline def setTargetMimeTypeUndefined: Self = StObject.set(x, "targetMimeType", js.undefined)
+    
+    inline def setTargetResourceKey(value: String): Self = StObject.set(x, "targetResourceKey", value.asInstanceOf[js.Any])
+    
+    inline def setTargetResourceKeyUndefined: Self = StObject.set(x, "targetResourceKey", js.undefined)
   }
 }

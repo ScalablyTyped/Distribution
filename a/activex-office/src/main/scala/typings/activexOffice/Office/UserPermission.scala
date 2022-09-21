@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UserPermission extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -16,7 +16,7 @@ trait UserPermission extends StObject {
   /* private */ @JSName("Office.UserPermission_typekey")
   var OfficeDotUserPermission_typekey: UserPermission
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Permission: Double
   
@@ -27,11 +27,11 @@ trait UserPermission extends StObject {
 object UserPermission {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     ExpirationDate: VarDate,
     OfficeDotUserPermission_typekey: UserPermission,
-    Parent: js.Any,
+    Parent: Any,
     Permission: Double,
     Remove: () => Unit,
     UserId: String
@@ -43,7 +43,7 @@ object UserPermission {
   
   extension [Self <: UserPermission](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object UserPermission {
     
     inline def setOfficeDotUserPermission_typekey(value: UserPermission): Self = StObject.set(x, "Office.UserPermission_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPermission(value: Double): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     

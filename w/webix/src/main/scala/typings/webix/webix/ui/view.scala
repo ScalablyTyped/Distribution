@@ -10,7 +10,7 @@ trait view
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("config")
   var config_view: viewConfig = js.native

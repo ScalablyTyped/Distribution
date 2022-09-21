@@ -9,19 +9,17 @@ trait SchemaRoutineReference extends StObject {
   /**
     * [Required] The ID of the dataset containing this routine.
     */
-  var datasetId: js.UndefOr[String] = js.undefined
+  var datasetId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Required] The ID of the project containing this routine.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Required] The ID of the routine. The ID must contain only letters (a-z,
-    * A-Z), numbers (0-9), or underscores (_). The maximum length is 256
-    * characters.
+    * [Required] The ID of the routine. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.
     */
-  var routineId: js.UndefOr[String] = js.undefined
+  var routineId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRoutineReference {
   
@@ -34,13 +32,19 @@ object SchemaRoutineReference {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
+    inline def setDatasetIdNull: Self = StObject.set(x, "datasetId", null)
+    
     inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
+    
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setRoutineId(value: String): Self = StObject.set(x, "routineId", value.asInstanceOf[js.Any])
+    
+    inline def setRoutineIdNull: Self = StObject.set(x, "routineId", null)
     
     inline def setRoutineIdUndefined: Self = StObject.set(x, "routineId", js.undefined)
   }

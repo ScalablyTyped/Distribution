@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-width
 
-Typings are for version 4.2.0
+Typings are for version 5.1.2
 
 ## Library description:
 Get the visual width of a string - the number of columns required to display it
@@ -10,10 +10,10 @@ Get the visual width of a string - the number of columns required to display it
 | ------------------ | :-------------: |
 | Full name          | string-width |
 | Keywords           | string, character, unicode, width, visual, column, columns, fullwidth, full-width, full, ansi, escape, codes, cli, command-line, terminal, console, cjk, chinese, japanese, korean, fixed-width |
-| # releases         | 5 |
-| # dependents       | 500 |
-| # downloads        | 2598701882 |
-| # stars            | 4 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3.85326297E8 |
+| # stars            | 332.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/string-width#readme)

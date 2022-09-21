@@ -4,91 +4,97 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A query definition relevant for search &amp; export.
-  */
 trait SchemaQuery extends StObject {
   
   /**
-    * When &#39;ACCOUNT&#39; is chosen as search method, account_info needs to
-    * be specified.
+    * Required when **SearchMethod** is **ACCOUNT**.
     */
   var accountInfo: js.UndefOr[SchemaAccountInfo] = js.undefined
   
   /**
-    * The corpus to search.
+    * The Google Workspace service to search.
     */
-  var corpus: js.UndefOr[String] = js.undefined
+  var corpus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The data source to search from.
+    * The data source to search.
     */
-  var dataScope: js.UndefOr[String] = js.undefined
+  var dataScope: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * For Drive search, specify more options in this field.
+    * Set Drive search-specific options.
     */
   var driveOptions: js.UndefOr[SchemaDriveOptions] = js.undefined
   
   /**
-    * The end time range for the search query. These timestamps are in GMT and
-    * rounded down to the start of the given date.
+    * The end time for the search query. Specify in GMT. The value is rounded to 12 AM on the specified date.
     */
-  var endTime: js.UndefOr[String] = js.undefined
+  var endTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * When &#39;ROOM&#39; is chosen as search method, hangout_chats_info needs
-    * to be specified. (read-only)
+    * Required when **SearchMethod** is **ROOM**. (read-only)
     */
   var hangoutsChatInfo: js.UndefOr[SchemaHangoutsChatInfo] = js.undefined
   
   /**
-    * For hangouts chat search, specify more options in this field. (read-only)
+    * Set Chat search-specific options. (read-only)
     */
   var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatOptions] = js.undefined
   
   /**
-    * For mail search, specify more options in this field.
+    * Set Gmail search-specific options.
     */
   var mailOptions: js.UndefOr[SchemaMailOptions] = js.undefined
   
   /**
-    * When &#39;ORG_UNIT&#39; is chosen as as search method, org_unit_info
-    * needs to be specified.
+    * The entity to search. This field replaces **searchMethod** to support shared drives. When **searchMethod** is **TEAM_DRIVE**, the response of this field is **SHARED_DRIVE**.
+    */
+  var method: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required when **SearchMethod** is **ORG_UNIT**.
     */
   var orgUnitInfo: js.UndefOr[SchemaOrgUnitInfo] = js.undefined
   
   /**
     * The search method to use.
     */
-  var searchMethod: js.UndefOr[String] = js.undefined
+  var searchMethod: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The start time range for the search query. These timestamps are in GMT
-    * and rounded down to the start of the given date.
+    * Required when **SearchMethod** is **SHARED_DRIVE**.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var sharedDriveInfo: js.UndefOr[SchemaSharedDriveInfo] = js.undefined
   
   /**
-    * When &#39;TEAM_DRIVE&#39; is chosen as search method, team_drive_info
-    * needs to be specified.
+    * Required when **SearchMethod** is **SITES_URL**.
+    */
+  var sitesUrlInfo: js.UndefOr[SchemaSitesUrlInfo] = js.undefined
+  
+  /**
+    * The start time for the search query. Specify in GMT. The value is rounded to 12 AM on the specified date.
+    */
+  var startTime: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required when **SearchMethod** is **TEAM_DRIVE**.
     */
   var teamDriveInfo: js.UndefOr[SchemaTeamDriveInfo] = js.undefined
   
   /**
-    * The corpus-specific &lt;a
-    * href=&quot;https://support.google.com/vault/answer/2474474&quot;&gt;search
-    * operators&lt;/a&gt; used to generate search results.
+    * Service-specific [search operators](https://support.google.com/vault/answer/2474474) to filter search results.
     */
-  var terms: js.UndefOr[String] = js.undefined
+  var terms: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The time zone name. It should be an IANA TZ name, such as
-    * &quot;America/Los_Angeles&quot;. For more information, see &lt;a
-    * href=&quot;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones&quot;&gt;Time
-    * Zone&lt;/a&gt;.
+    * The time zone name. It should be an IANA TZ name, such as "America/Los_Angeles". For a list of time zone names, see [Time Zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For more information about how Vault uses time zones, see [the Vault help center](https://support.google.com/vault/answer/6092995#time).
     */
-  var timeZone: js.UndefOr[String] = js.undefined
+  var timeZone: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Set Voice search-specific options.
+    */
+  var voiceOptions: js.UndefOr[SchemaVoiceOptions] = js.undefined
 }
 object SchemaQuery {
   
@@ -105,9 +111,13 @@ object SchemaQuery {
     
     inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
+    inline def setCorpusNull: Self = StObject.set(x, "corpus", null)
+    
     inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
     inline def setDataScope(value: String): Self = StObject.set(x, "dataScope", value.asInstanceOf[js.Any])
+    
+    inline def setDataScopeNull: Self = StObject.set(x, "dataScope", null)
     
     inline def setDataScopeUndefined: Self = StObject.set(x, "dataScope", js.undefined)
     
@@ -116,6 +126,8 @@ object SchemaQuery {
     inline def setDriveOptionsUndefined: Self = StObject.set(x, "driveOptions", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -131,15 +143,33 @@ object SchemaQuery {
     
     inline def setMailOptionsUndefined: Self = StObject.set(x, "mailOptions", js.undefined)
     
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodNull: Self = StObject.set(x, "method", null)
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
     inline def setOrgUnitInfo(value: SchemaOrgUnitInfo): Self = StObject.set(x, "orgUnitInfo", value.asInstanceOf[js.Any])
     
     inline def setOrgUnitInfoUndefined: Self = StObject.set(x, "orgUnitInfo", js.undefined)
     
     inline def setSearchMethod(value: String): Self = StObject.set(x, "searchMethod", value.asInstanceOf[js.Any])
     
+    inline def setSearchMethodNull: Self = StObject.set(x, "searchMethod", null)
+    
     inline def setSearchMethodUndefined: Self = StObject.set(x, "searchMethod", js.undefined)
     
+    inline def setSharedDriveInfo(value: SchemaSharedDriveInfo): Self = StObject.set(x, "sharedDriveInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSharedDriveInfoUndefined: Self = StObject.set(x, "sharedDriveInfo", js.undefined)
+    
+    inline def setSitesUrlInfo(value: SchemaSitesUrlInfo): Self = StObject.set(x, "sitesUrlInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSitesUrlInfoUndefined: Self = StObject.set(x, "sitesUrlInfo", js.undefined)
+    
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
@@ -149,10 +179,18 @@ object SchemaQuery {
     
     inline def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
+    inline def setTermsNull: Self = StObject.set(x, "terms", null)
+    
     inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
+    inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
+    
     inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    
+    inline def setVoiceOptions(value: SchemaVoiceOptions): Self = StObject.set(x, "voiceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceOptionsUndefined: Self = StObject.set(x, "voiceOptions", js.undefined)
   }
 }

@@ -23,6 +23,8 @@ trait Station extends StObject {
   
   var isMeta: js.UndefOr[Boolean] = js.undefined
   
+  var lines: js.UndefOr[js.Array[Line]] = js.undefined
+  
   var location: js.UndefOr[Location] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -60,7 +62,7 @@ object Station {
     
     inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    inline def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value :_*))
+    inline def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value*))
     
     inline def setFacilities(value: Facilities): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     
@@ -73,6 +75,12 @@ object Station {
     inline def setIsMeta(value: Boolean): Self = StObject.set(x, "isMeta", value.asInstanceOf[js.Any])
     
     inline def setIsMetaUndefined: Self = StObject.set(x, "isMeta", js.undefined)
+    
+    inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    
+    inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -90,7 +98,7 @@ object Station {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = StObject.set(x, "reisezentrumOpeningHours", value.asInstanceOf[js.Any])
     
@@ -104,7 +112,7 @@ object Station {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: (Station | Stop | Location)*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: (Station | Stop | Location)*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTransitAuthority(value: String): Self = StObject.set(x, "transitAuthority", value.asInstanceOf[js.Any])
     

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result of the k-anonymity computation.
-  */
 trait SchemaGooglePrivacyDlpV2KAnonymityResult extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGooglePrivacyDlpV2KAnonymityResult {
     
     inline def setEquivalenceClassHistogramBucketsUndefined: Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.undefined)
     
-    inline def setEquivalenceClassHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value :_*))
+    inline def setEquivalenceClassHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value*))
   }
 }

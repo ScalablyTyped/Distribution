@@ -1,22 +1,24 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.asn1js.mod.ILocalHexBlock because var conflicts: isHexOnly, valueHex. Inlined 
-- typings.asn1js.mod.LocalHexBlock because Inheritance from two classes. Inlined isHexOnly, valueHex, fromBER, toBER, toBER, toJSON */ @JSImport("asn1js", "LocalBitStringValueBlock")
 @js.native
-class LocalBitStringValueBlock () extends LocalConstructedValueBlock {
-  def this(params: LocalBitStringValueBlockParams) = this()
+trait LocalBitStringValueBlock
+  extends LocalConstructedValueBlock
+     with ILocalBitStringValueBlock {
   
-  var isConstructed: scala.Boolean = js.native
+  /**
+    * @deprecated since version 3.0.0
+    */
+  @JSName("valueBeforeDecode")
+  var valueBeforeDecode_FLocalBitStringValueBlock: js.typedarray.ArrayBuffer = js.native
   
-  var isHexOnly: scala.Boolean = js.native
-  
-  var unusedBits: Double = js.native
-  
-  var valueHex: ArrayBuffer = js.native
+  /**
+    * Binary data in ArrayBuffer representation
+    *
+    * @deprecated since version 3.0.0
+    */
+  var valueHex: js.typedarray.ArrayBuffer = js.native
 }

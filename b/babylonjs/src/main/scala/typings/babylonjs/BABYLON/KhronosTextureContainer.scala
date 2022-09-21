@@ -1,13 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait KhronosTextureContainer extends StObject {
   
-  /* private */ var _upload2DCompressedLevels: js.Any
+  /* private */ var _upload2DCompressedLevels: Any
   
   /**
     * Gets the bytes of key value data
@@ -15,7 +14,7 @@ trait KhronosTextureContainer extends StObject {
   var bytesOfKeyValueData: Double
   
   /** contents of the KTX container file */
-  var data: ArrayBufferView
+  var data: js.typedarray.ArrayBufferView
   
   /**
     * Gets the base internal format
@@ -85,6 +84,8 @@ trait KhronosTextureContainer extends StObject {
   /**
     * Uploads KTX content to a Babylon Texture.
     * It is assumed that the texture has already been created & is currently bound
+    * @param texture
+    * @param loadMipmaps
     * @hidden
     */
   def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit
@@ -92,9 +93,9 @@ trait KhronosTextureContainer extends StObject {
 object KhronosTextureContainer {
   
   inline def apply(
-    _upload2DCompressedLevels: js.Any,
+    _upload2DCompressedLevels: Any,
     bytesOfKeyValueData: Double,
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     glBaseInternalFormat: Double,
     glFormat: Double,
     glInternalFormat: Double,
@@ -118,7 +119,7 @@ object KhronosTextureContainer {
     
     inline def setBytesOfKeyValueData(value: Double): Self = StObject.set(x, "bytesOfKeyValueData", value.asInstanceOf[js.Any])
     
-    inline def setData(value: ArrayBufferView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBufferView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setGlBaseInternalFormat(value: Double): Self = StObject.set(x, "glBaseInternalFormat", value.asInstanceOf[js.Any])
     
@@ -148,6 +149,6 @@ object KhronosTextureContainer {
     
     inline def setUploadLevels(value: (InternalTexture, Boolean) => Unit): Self = StObject.set(x, "uploadLevels", js.Any.fromFunction2(value))
     
-    inline def set_upload2DCompressedLevels(value: js.Any): Self = StObject.set(x, "_upload2DCompressedLevels", value.asInstanceOf[js.Any])
+    inline def set_upload2DCompressedLevels(value: Any): Self = StObject.set(x, "_upload2DCompressedLevels", value.asInstanceOf[js.Any])
   }
 }

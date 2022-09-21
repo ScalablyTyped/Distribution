@@ -7,7 +7,6 @@ import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ trait Zone
     * Although a Zone never renders, it still has a blend mode to allow it to fit seamlessly into
     * display lists without causing a batch flush.
     */
-  var blendMode: integer = js.native
+  var blendMode: Double = js.native
   
   /**
     * The displayed height of this Game Object.
@@ -76,10 +75,10 @@ trait Zone
   
   /**
     * Allows you to define your own Geometry shape to be used as a Drop Zone.
-    * @param shape A Geometry shape instance, such as Phaser.Geom.Ellipse, or your own custom shape.
-    * @param callback A function that will return `true` if the given x/y coords it is sent are within the shape.
+    * @param hitArea A Geometry shape instance, such as Phaser.Geom.Ellipse, or your own custom shape.
+    * @param hitAreaCallback A function that will return `true` if the given x/y coords it is sent are within the shape.
     */
-  def setDropZone(shape: js.Object, callback: HitAreaCallback): this.type = js.native
+  def setDropZone(hitArea: js.Object, hitAreaCallback: HitAreaCallback): this.type = js.native
   
   /**
     * Sets this Zone to be a Rectangle Drop Zone.

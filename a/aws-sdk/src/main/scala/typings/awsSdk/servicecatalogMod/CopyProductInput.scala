@@ -58,7 +58,7 @@ object CopyProductInput {
     
     inline def setCopyOptionsUndefined: Self = StObject.set(x, "CopyOptions", js.undefined)
     
-    inline def setCopyOptionsVarargs(value: CopyOption*): Self = StObject.set(x, "CopyOptions", js.Array(value :_*))
+    inline def setCopyOptionsVarargs(value: CopyOption*): Self = StObject.set(x, "CopyOptions", js.Array(value*))
     
     inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object CopyProductInput {
     
     inline def setSourceProvisioningArtifactIdentifiersUndefined: Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.undefined)
     
-    inline def setSourceProvisioningArtifactIdentifiersVarargs(value: SourceProvisioningArtifactPropertiesMap*): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.Array(value :_*))
+    inline def setSourceProvisioningArtifactIdentifiersVarargs(value: SourceProvisioningArtifactPropertiesMap*): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.Array(value*))
     
     inline def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
     

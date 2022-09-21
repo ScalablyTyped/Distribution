@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchPutDocumentResponse extends StObject {
   
   /**
-    * A list of documents that were not added to the index because the document failed a validation check. Each document contains an error message that indicates why the document couldn't be added to the index. If there was an error adding a document to an index the error is reported in your AWS CloudWatch log. For more information, see Monitoring Amazon Kendra with Amazon CloudWatch Logs 
+    * A list of documents that were not added to the index because the document failed a validation check. Each document contains an error message that indicates why the document couldn't be added to the index. If there was an error adding a document to an index the error is reported in your Amazon Web Services CloudWatch log. For more information, see Monitoring Amazon Kendra with Amazon CloudWatch Logs 
     */
   var FailedDocuments: js.UndefOr[BatchPutDocumentResponseFailedDocuments] = js.undefined
 }
@@ -24,6 +24,6 @@ object BatchPutDocumentResponse {
     
     inline def setFailedDocumentsUndefined: Self = StObject.set(x, "FailedDocuments", js.undefined)
     
-    inline def setFailedDocumentsVarargs(value: BatchPutDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value :_*))
+    inline def setFailedDocumentsVarargs(value: BatchPutDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value*))
   }
 }

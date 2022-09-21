@@ -39,7 +39,7 @@ object Channel {
     
     inline def setHints(value: js.Array[Property]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    inline def setHintsVarargs(value: Property*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: Property*): Self = StObject.set(x, "hints", js.Array(value*))
     
     inline def setImage(value: BackgroundImageUrl): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

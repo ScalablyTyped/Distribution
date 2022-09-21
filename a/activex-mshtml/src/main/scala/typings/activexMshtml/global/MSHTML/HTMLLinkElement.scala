@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLLinkElement")
 @js.native
-/* private */ class HTMLLinkElement ()
+/* private */ open class HTMLLinkElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLLinkElement

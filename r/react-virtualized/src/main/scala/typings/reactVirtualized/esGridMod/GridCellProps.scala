@@ -17,7 +17,7 @@ trait GridCellProps extends StObject {
   
   var key: String
   
-  var parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent
+  var parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent
   
   var rowIndex: Double
   
@@ -30,7 +30,7 @@ object GridCellProps {
     isScrolling: Boolean,
     isVisible: Boolean,
     key: String,
-    parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent,
+    parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent,
     rowIndex: Double,
     style: CSSProperties
   ): GridCellProps = {
@@ -48,7 +48,7 @@ object GridCellProps {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ The official JavaScript client for the Phoenix web framework.
 | Full name          | phoenix |
 | Keywords           | - |
 | # releases         | 25 |
-| # dependents       | 87 |
-| # downloads        | 2939117 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 427125.3333333333 |
+| # stars            | 18530.0 |
 
 ## Links
 - [Homepage](https://github.com/phoenixframework/phoenix#readme)

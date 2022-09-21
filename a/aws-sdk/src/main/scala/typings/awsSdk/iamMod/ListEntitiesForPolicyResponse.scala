@@ -52,18 +52,18 @@ object ListEntitiesForPolicyResponse {
     
     inline def setPolicyGroupsUndefined: Self = StObject.set(x, "PolicyGroups", js.undefined)
     
-    inline def setPolicyGroupsVarargs(value: PolicyGroup*): Self = StObject.set(x, "PolicyGroups", js.Array(value :_*))
+    inline def setPolicyGroupsVarargs(value: PolicyGroup*): Self = StObject.set(x, "PolicyGroups", js.Array(value*))
     
     inline def setPolicyRoles(value: PolicyRoleListType): Self = StObject.set(x, "PolicyRoles", value.asInstanceOf[js.Any])
     
     inline def setPolicyRolesUndefined: Self = StObject.set(x, "PolicyRoles", js.undefined)
     
-    inline def setPolicyRolesVarargs(value: PolicyRole*): Self = StObject.set(x, "PolicyRoles", js.Array(value :_*))
+    inline def setPolicyRolesVarargs(value: PolicyRole*): Self = StObject.set(x, "PolicyRoles", js.Array(value*))
     
     inline def setPolicyUsers(value: PolicyUserListType): Self = StObject.set(x, "PolicyUsers", value.asInstanceOf[js.Any])
     
     inline def setPolicyUsersUndefined: Self = StObject.set(x, "PolicyUsers", js.undefined)
     
-    inline def setPolicyUsersVarargs(value: PolicyUser*): Self = StObject.set(x, "PolicyUsers", js.Array(value :_*))
+    inline def setPolicyUsersVarargs(value: PolicyUser*): Self = StObject.set(x, "PolicyUsers", js.Array(value*))
   }
 }

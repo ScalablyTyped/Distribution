@@ -6,13 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "SafePropertyRead")
 @js.native
-class SafePropertyRead protected ()
-  extends typings.angularCompiler.compilerMod.SafePropertyRead {
+open class SafePropertyRead protected () extends ASTWithName {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    receiver: typings.angularCompiler.astMod.AST,
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    nameSpan: AbsoluteSourceSpan,
+    receiver: AST,
     name: String
   ) = this()
+  
+  var name: String = js.native
+  
+  var receiver: AST = js.native
 }

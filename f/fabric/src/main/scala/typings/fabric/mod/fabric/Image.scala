@@ -2,6 +2,7 @@ package typings.fabric.mod.fabric
 
 import typings.fabric.fabricImplMod.IAllFilters
 import typings.fabric.fabricImplMod.IImageOptions
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGElement
@@ -11,18 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Image")
 @js.native
-/**
-  * Constructor
-  * @param element Image or Video element
-  * @param [options] Options object
-  */
-class Image ()
+open class Image protected ()
   extends typings.fabric.fabricImplMod.Image {
+  /**
+    * Constructor
+    * @param element Image element
+    * @param [options] Options object
+    */
   def this(element: String) = this()
+  def this(element: HTMLCanvasElement) = this()
   def this(element: HTMLImageElement) = this()
   def this(element: HTMLVideoElement) = this()
   def this(element: String, options: IImageOptions) = this()
-  def this(element: Unit, options: IImageOptions) = this()
+  def this(element: HTMLCanvasElement, options: IImageOptions) = this()
   def this(element: HTMLImageElement, options: IImageOptions) = this()
   def this(element: HTMLVideoElement, options: IImageOptions) = this()
 }

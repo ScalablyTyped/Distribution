@@ -2,8 +2,7 @@ package typings.undertaker
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.node.processMod.global.NodeJS.Process
-import typings.node.streamMod.Duplex
+import typings.std.ReturnType
 import typings.undertaker.undertakerStrings.Tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("undertaker", JSImport.Namespace)
   @js.native
-  class ^ () extends Undertaker {
+  open class ^ () extends Undertaker {
     def this(registry: typings.undertakerRegistry.mod.^) = this()
   }
   
@@ -44,7 +43,7 @@ object mod {
       
       inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -54,6 +53,8 @@ object mod {
   
   type Task = String | TaskFunction
   
+  type TaskCallback = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
+  
   type TaskFlags = StringDictionary[String]
   
   @js.native
@@ -62,12 +63,16 @@ object mod {
        with TaskFunctionParams {
     
     /* InferMemberOverrides */
-    override def apply(arg1: /* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit | Duplex | Process | js.Promise[scala.Nothing] | js.Any = js.native
+    override def apply(arg1: /* done */ TaskCallback): ReturnType[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AsyncTask */ Any
+      ] = js.native
   }
   
   type TaskFunctionBase = js.Function1[
-    /* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
-    Unit | Duplex | Process | js.Promise[scala.Nothing] | js.Any
+    /* done */ TaskCallback, 
+    ReturnType[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AsyncTask */ Any
+    ]
   ]
   
   trait TaskFunctionParams extends StObject {
@@ -157,7 +162,7 @@ object mod {
       
       inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -235,7 +240,7 @@ object mod {
       * Returns the wrapped registered function.
       * @param taskName - Task name.
       */
-    def task(taskName: String): TaskFunctionWrapped = js.native
+    def task(taskName: String): js.UndefOr[TaskFunctionWrapped] = js.native
     /**
       * Register the task by the taskName.
       * @param taskName - Task name.

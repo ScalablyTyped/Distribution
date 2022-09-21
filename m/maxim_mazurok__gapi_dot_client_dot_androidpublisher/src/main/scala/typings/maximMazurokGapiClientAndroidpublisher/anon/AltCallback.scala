@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.SubscriptionPurchasesDeferRequest
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ArchiveSubscriptionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,23 +29,20 @@ trait AltCallback extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The package name of the application for which this subscription was purchased (for example, 'com.some.thing'). */
+  /** Required. The parent app (package name) of the app of the subscription to delete. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
+  /** Required. The unique product ID of the subscription to delete. */
+  var productId: String
+  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SubscriptionPurchasesDeferRequest
-  
-  /** The purchased subscription ID (for example, 'monthly001'). */
-  var subscriptionId: String
-  
-  /** The token provided to the user's device when the subscription was purchased. */
-  var token: String
+  var resource: ArchiveSubscriptionRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,13 +52,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(
-    packageName: String,
-    resource: SubscriptionPurchasesDeferRequest,
-    subscriptionId: String,
-    token: String
-  ): AltCallback = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+  inline def apply(packageName: String, productId: String, resource: ArchiveSubscriptionRequest): AltCallback = {
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -101,15 +93,13 @@ object AltCallback {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SubscriptionPurchasesDeferRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
-    
-    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setResource(value: ArchiveSubscriptionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

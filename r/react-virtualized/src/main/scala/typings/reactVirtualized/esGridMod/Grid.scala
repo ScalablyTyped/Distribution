@@ -13,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
-class Grid protected ()
-  extends PureComponent[GridProps, GridState, js.Any] {
+open class Grid protected () extends PureComponent[GridProps, GridState, Any] {
   def this(props: GridProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: GridProps, context: js.Any) = this()
+  def this(props: GridProps, context: Any) = this()
   
   /**
     * Gets offsets for a given cell and alignment.

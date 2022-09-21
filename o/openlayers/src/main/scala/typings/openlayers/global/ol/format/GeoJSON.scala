@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class GeoJSON ()
+open class GeoJSON ()
   extends typings.openlayers.mod.format.GeoJSON {
   def this(opt_options: GeoJSONOptions) = this()
 }

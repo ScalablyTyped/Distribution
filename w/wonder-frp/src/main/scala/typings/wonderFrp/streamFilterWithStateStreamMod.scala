@@ -10,16 +10,16 @@ object streamFilterWithStateStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/FilterWithStateStream", "FilterWithStateStream")
   @js.native
-  class FilterWithStateStream protected () extends FilterStream {
+  open class FilterWithStateStream protected () extends FilterStream {
     def this(
       source: Stream,
       predicate: js.Function3[
-            /* value */ js.Any, 
+            /* value */ Any, 
             /* index */ js.UndefOr[Double], 
             /* source */ js.UndefOr[Stream], 
             Boolean
           ],
-      thisArg: js.Any
+      thisArg: Any
     ) = this()
   }
   /* static members */
@@ -32,12 +32,12 @@ object streamFilterWithStateStreamMod {
     inline def create(
       source: Stream,
       predicate: js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* index */ js.UndefOr[Double], 
           /* source */ js.UndefOr[Stream], 
           Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): FilterWithStateStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[FilterWithStateStream]
   }
 }

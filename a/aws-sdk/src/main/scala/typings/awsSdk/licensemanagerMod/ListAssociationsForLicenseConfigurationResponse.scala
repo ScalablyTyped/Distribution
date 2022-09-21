@@ -29,7 +29,7 @@ object ListAssociationsForLicenseConfigurationResponse {
     
     inline def setLicenseConfigurationAssociationsUndefined: Self = StObject.set(x, "LicenseConfigurationAssociations", js.undefined)
     
-    inline def setLicenseConfigurationAssociationsVarargs(value: LicenseConfigurationAssociation*): Self = StObject.set(x, "LicenseConfigurationAssociations", js.Array(value :_*))
+    inline def setLicenseConfigurationAssociationsVarargs(value: LicenseConfigurationAssociation*): Self = StObject.set(x, "LicenseConfigurationAssociations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

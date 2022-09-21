@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersSort")
 @js.native
-class SearchOrdersSort () extends StObject {
+open class SearchOrdersSort () extends StObject {
   
   /**
     * The field to sort by.

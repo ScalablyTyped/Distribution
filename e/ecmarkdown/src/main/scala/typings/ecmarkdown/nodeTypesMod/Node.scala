@@ -1,5 +1,6 @@
 package typings.ecmarkdown.nodeTypesMod
 
+import typings.ecmarkdown.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,8 +39,8 @@ object Node {
     __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.OpaqueTagNode]
   }
   
-  inline def OrderedListItemNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.nodeTypesMod.OrderedListItemNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ordered-list-item", id = null, sublist = null)
+  inline def OrderedListItemNode(attrs: js.Array[Key], contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.nodeTypesMod.OrderedListItemNode = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ordered-list-item", sublist = null)
     __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.OrderedListItemNode]
   }
   
@@ -83,8 +84,8 @@ object Node {
     __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.UnderscoreNode]
   }
   
-  inline def UnorderedListItemNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "unordered-list-item", id = null, sublist = null)
+  inline def UnorderedListItemNode(attrs: js.Array[Key], contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "unordered-list-item", sublist = null)
     __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode]
   }
   

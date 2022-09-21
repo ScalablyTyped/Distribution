@@ -1,17 +1,16 @@
 package typings.lodashWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lodash-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("lodash-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   

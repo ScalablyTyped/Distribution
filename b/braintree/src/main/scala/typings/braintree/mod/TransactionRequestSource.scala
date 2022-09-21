@@ -1,39 +1,24 @@
 package typings.braintree.mod
 
+import typings.braintree.braintreeStrings.recurring_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait TransactionRequestSource extends StObject
-@JSImport("braintree", "TransactionRequestSource")
-@js.native
-object TransactionRequestSource extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.braintree.braintreeStrings.recurring_
+  - typings.braintree.braintreeStrings.unscheduled
+  - typings.braintree.braintreeStrings.recurring_first
+  - typings.braintree.braintreeStrings.moto
+*/
+trait TransactionRequestSource extends StObject
+object TransactionRequestSource {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TransactionRequestSource & String] = js.native
+  inline def moto: typings.braintree.braintreeStrings.moto = "moto".asInstanceOf[typings.braintree.braintreeStrings.moto]
   
-  @js.native
-  sealed trait moto
-    extends StObject
-       with TransactionRequestSource
-  /* "moto" */ val moto: typings.braintree.mod.TransactionRequestSource.moto & String = js.native
+  inline def recurring: recurring_ = "recurring".asInstanceOf[recurring_]
   
-  @js.native
-  sealed trait recurring
-    extends StObject
-       with TransactionRequestSource
-  /* "recurring" */ val recurring: typings.braintree.mod.TransactionRequestSource.recurring & String = js.native
+  inline def recurring_first: typings.braintree.braintreeStrings.recurring_first = "recurring_first".asInstanceOf[typings.braintree.braintreeStrings.recurring_first]
   
-  @js.native
-  sealed trait recurring_first
-    extends StObject
-       with TransactionRequestSource
-  /* "recurring_first" */ val recurring_first: typings.braintree.mod.TransactionRequestSource.recurring_first & String = js.native
-  
-  @js.native
-  sealed trait unscheduled
-    extends StObject
-       with TransactionRequestSource
-  /* "unscheduled" */ val unscheduled: typings.braintree.mod.TransactionRequestSource.unscheduled & String = js.native
+  inline def unscheduled: typings.braintree.braintreeStrings.unscheduled = "unscheduled".asInstanceOf[typings.braintree.braintreeStrings.unscheduled]
 }

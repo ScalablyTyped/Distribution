@@ -24,7 +24,7 @@ trait ReadonlyProps extends StObject {
   
   val navigation: StackNavigationHelpers
   
-  val screenProps: js.Any
+  val screenProps: Any
   
   val state: NavigationState
 }
@@ -33,7 +33,7 @@ object ReadonlyProps {
   inline def apply(
     descriptors: StackDescriptorMap,
     navigation: StackNavigationHelpers,
-    screenProps: js.Any,
+    screenProps: Any,
     state: NavigationState
   ): ReadonlyProps = {
     val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object ReadonlyProps {
     
     inline def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
     inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,7 @@ object libImageMod {
   
   @JSImport("office-ui-fabric-react/lib/Image", "ImageBase")
   @js.native
-  class ImageBase protected ()
+  open class ImageBase protected ()
     extends typings.officeUiFabricReact.imageMod.ImageBase {
     def this(props: IImageProps) = this()
   }
@@ -28,8 +28,8 @@ object libImageMod {
     
     @JSImport("office-ui-fabric-react/lib/Image", "ImageBase._svgRegex")
     @js.native
-    def _svgRegex: js.Any = js.native
-    inline def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
+    def _svgRegex: Any = js.native
+    inline def _svgRegex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/Image", "ImageBase.defaultProps")
     @js.native

@@ -27,6 +27,6 @@ object Dimension {
     
     inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    inline def setDimensionValuesVarargs(value: DimensionDimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: DimensionDimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
   }
 }

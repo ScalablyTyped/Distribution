@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HandlesConstructor
   extends StObject
-     with Instantiable0[Handles]
+     with /**
+  * This class helps manage a group of handles.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Handles.html)
+  */
+Instantiable0[Handles]
      with Instantiable1[/* properties */ HandlesProperties, Handles]

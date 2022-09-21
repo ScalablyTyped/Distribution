@@ -36,12 +36,12 @@ object valuesMod {
     
     var ancestorValues: AncestorValueList[V]
     
-    def convertValue(value: js.Any, key: String, props: Props): V
+    def convertValue(value: Any, key: String, props: Props): V
     @JSName("convertValue")
     var convertValue_Original: ConvertValue[V]
     
-    def createValue(init: js.Any, key: String, props: Props): V
-    def createValue(init: js.Any, key: String, props: Props, createValueProps: CreateValueProps): V
+    def createValue(init: Any, key: String, props: Props): V
+    def createValue(init: Any, key: String, props: Props, createValueProps: CreateValueProps): V
     @JSName("createValue")
     var createValue_Original: CreateValue[V]
     
@@ -53,14 +53,14 @@ object valuesMod {
     
     var props: Props
     
-    def readValue(value: V): js.Any
+    def readValue(value: V): Any
     
     var readValueFromSource: js.UndefOr[ReadValueFromSource] = js.undefined
     
     @JSName("readValue")
     var readValue_Original: ReadValue[V]
     
-    def setValueNative(key: String, value: js.Any, props: Props): Unit
+    def setValueNative(key: String, value: Any, props: Props): Unit
     @JSName("setValueNative")
     var setValueNative_Original: SetValueNative
     
@@ -71,12 +71,12 @@ object valuesMod {
     inline def apply[V, A, TD](
       activePoses: ActivePoses,
       ancestorValues: AncestorValueList[V],
-      convertValue: (/* value */ js.Any, /* key */ String, /* props */ Props) => V,
-      createValue: (/* init */ js.Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V,
+      convertValue: (/* value */ Any, /* key */ String, /* props */ Props) => V,
+      createValue: (/* init */ Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V,
       poses: PoseMap[A, TD],
       props: Props,
-      readValue: V => js.Any,
-      setValueNative: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit,
+      readValue: V => Any,
+      setValueNative: (/* key */ String, /* value */ Any, /* props */ Props) => Unit,
       userSetValues: StringDictionary[V]
     ): ValueFactoryProps[V, A, TD] = {
       val __obj = js.Dynamic.literal(activePoses = activePoses.asInstanceOf[js.Any], ancestorValues = ancestorValues.asInstanceOf[js.Any], convertValue = js.Any.fromFunction3(convertValue), createValue = js.Any.fromFunction4(createValue), poses = poses.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], readValue = js.Any.fromFunction1(readValue), setValueNative = js.Any.fromFunction3(setValueNative), userSetValues = userSetValues.asInstanceOf[js.Any])
@@ -89,19 +89,19 @@ object valuesMod {
       
       inline def setAncestorValues(value: AncestorValueList[V]): Self = StObject.set(x, "ancestorValues", value.asInstanceOf[js.Any])
       
-      inline def setAncestorValuesVarargs(value: AncestorValue[V]*): Self = StObject.set(x, "ancestorValues", js.Array(value :_*))
+      inline def setAncestorValuesVarargs(value: AncestorValue[V]*): Self = StObject.set(x, "ancestorValues", js.Array(value*))
       
-      inline def setConvertValue(value: (/* value */ js.Any, /* key */ String, /* props */ Props) => V): Self = StObject.set(x, "convertValue", js.Any.fromFunction3(value))
+      inline def setConvertValue(value: (/* value */ Any, /* key */ String, /* props */ Props) => V): Self = StObject.set(x, "convertValue", js.Any.fromFunction3(value))
       
       inline def setCreateValue(
-        value: (/* init */ js.Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V
+        value: (/* init */ Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V
       ): Self = StObject.set(x, "createValue", js.Any.fromFunction4(value))
       
       inline def setInitialPose(value: String | js.Array[String]): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
       
       inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value*))
       
       inline def setPassive(value: PassiveValueMap): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
@@ -111,13 +111,13 @@ object valuesMod {
       
       inline def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setReadValue(value: V => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+      inline def setReadValue(value: V => Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
       
-      inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
+      inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
       
       inline def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
       
-      inline def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+      inline def setSetValueNative(value: (/* key */ String, /* value */ Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
       
       inline def setUserSetValues(value: StringDictionary[V]): Self = StObject.set(x, "userSetValues", value.asInstanceOf[js.Any])
     }

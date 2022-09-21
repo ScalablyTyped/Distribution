@@ -16,7 +16,7 @@ object deleteIdentityPoolCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/DeleteIdentityPoolCommand", "DeleteIdentityPoolCommand")
   @js.native
-  class DeleteIdentityPoolCommand protected ()
+  open class DeleteIdentityPoolCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteIdentityPoolCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteIdentityPoolInput, DeleteIdentityPoolOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[DeleteIdentityPoolInput, DeleteIdentityPoolOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteIdentityPoolInput, DeleteIdentityPoolOutput] = js.native
   }
 }

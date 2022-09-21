@@ -10,15 +10,12 @@ Just another another (another) url slug plugin for jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-slugify |
 | Keywords           | javascript, jquery, slugs, slug, strings, jquery-plugin |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 13969 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 745.6666666666666 |
+| # stars            | 53.0 |
 
 ## Links
-- [Homepage](https://github.com/madflow/jquery-slugify#readme)
-- [Bugs](https://github.com/madflow/jquery-slugify/issues)
-- [Repository](https://github.com/madflow/jquery-slugify)
 - [Npm](https://www.npmjs.com/package/jquery-slugify)
     
 

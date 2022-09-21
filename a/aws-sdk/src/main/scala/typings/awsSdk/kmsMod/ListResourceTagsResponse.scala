@@ -12,7 +12,7 @@ trait ListResourceTagsResponse extends StObject {
   var NextMarker: js.UndefOr[MarkerType] = js.undefined
   
   /**
-    * A list of tags. Each tag consists of a tag key and a tag value.
+    * A list of tags. Each tag consists of a tag key and a tag value.  Tagging or untagging a KMS key can allow or deny permission to the KMS key. For details, see ABAC in KMS in the Key Management Service Developer Guide. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -38,7 +38,7 @@ object ListResourceTagsResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     

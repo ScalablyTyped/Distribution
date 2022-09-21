@@ -11,9 +11,9 @@ A wrapper library for the autobahn wamp v1/v2 library in the browser/node
 | Full name          | rx.wamp |
 | Keywords           | rx, rxjs, wamp, async, realtime |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 886 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 80.0 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/paulpdaniels/rx.wamp)

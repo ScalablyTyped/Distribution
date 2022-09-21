@@ -24,30 +24,29 @@ object resizeGroupBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "ResizeGroupBase")
   @js.native
-  class ResizeGroupBase protected ()
-    extends Component[IResizeGroupProps, IResizeGroupState, js.Any] {
+  open class ResizeGroupBase protected () extends Component[IResizeGroupProps, IResizeGroupState, Any] {
     def this(props: IResizeGroupProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MResizeGroupBase(nextProps: IResizeGroupProps): Unit = js.native
     
-    /* private */ var _afterComponentRendered: js.Any = js.native
+    /* private */ var _afterComponentRendered: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _hasRenderedContent: js.Any = js.native
+    /* private */ var _hasRenderedContent: Any = js.native
     
-    /* private */ var _initialHiddenDiv: js.Any = js.native
+    /* private */ var _initialHiddenDiv: Any = js.native
     
-    /* private */ var _nextResizeGroupStateProvider: js.Any = js.native
+    /* private */ var _nextResizeGroupStateProvider: Any = js.native
     
-    /* private */ var _onResize: js.Any = js.native
+    /* private */ var _onResize: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _updateHiddenDiv: js.Any = js.native
+    /* private */ var _updateHiddenDiv: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MResizeGroupBase(): Unit = js.native
@@ -71,7 +70,7 @@ object resizeGroupBaseMod {
     /**
       * Data to render in a hidden div for measurement
       */
-    var dataToMeasure: js.UndefOr[js.Any] = js.undefined
+    var dataToMeasure: js.UndefOr[Any] = js.undefined
     
     /**
       * Set to true when the content container might have new dimensions and should
@@ -82,7 +81,7 @@ object resizeGroupBaseMod {
     /**
       * Final data used to render proper sized component
       */
-    var renderedData: js.UndefOr[js.Any] = js.undefined
+    var renderedData: js.UndefOr[Any] = js.undefined
     
     /**
       * Are we resizing to accommodate having more or less available space?
@@ -102,7 +101,7 @@ object resizeGroupBaseMod {
     
     extension [Self <: IResizeGroupState](x: Self) {
       
-      inline def setDataToMeasure(value: js.Any): Self = StObject.set(x, "dataToMeasure", value.asInstanceOf[js.Any])
+      inline def setDataToMeasure(value: Any): Self = StObject.set(x, "dataToMeasure", value.asInstanceOf[js.Any])
       
       inline def setDataToMeasureUndefined: Self = StObject.set(x, "dataToMeasure", js.undefined)
       
@@ -110,7 +109,7 @@ object resizeGroupBaseMod {
       
       inline def setMeasureContainerUndefined: Self = StObject.set(x, "measureContainer", js.undefined)
       
-      inline def setRenderedData(value: js.Any): Self = StObject.set(x, "renderedData", value.asInstanceOf[js.Any])
+      inline def setRenderedData(value: Any): Self = StObject.set(x, "renderedData", value.asInstanceOf[js.Any])
       
       inline def setRenderedDataUndefined: Self = StObject.set(x, "renderedData", js.undefined)
       

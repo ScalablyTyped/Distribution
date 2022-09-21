@@ -13,7 +13,7 @@ object mod {
   /**
     * create a tagger instance
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Tagger {
     
@@ -25,7 +25,7 @@ object mod {
       * @returns object with active configuration
       */
     /* CompleteClass */
-    override def defineConfig(config: js.Any): Lemma = js.native
+    override def defineConfig(config: Any): Lemma = js.native
     
     /**
       * Tags the input tokens with their pos.
@@ -69,6 +69,8 @@ object mod {
     - typings.winkPosTagger.winkPosTaggerStrings.DT
     - typings.winkPosTagger.winkPosTaggerStrings.JJ
     - typings.winkPosTagger.winkPosTaggerStrings.NN
+    - typings.winkPosTagger.winkPosTaggerStrings.NNP
+    - typings.winkPosTagger.winkPosTaggerStrings.NNS
     - typings.winkPosTagger.winkPosTaggerStrings.IN
     - typings.winkPosTagger.winkPosTaggerStrings.VBG
     - typings.winkPosTagger.winkPosTaggerStrings.Dot
@@ -85,6 +87,10 @@ object mod {
     inline def JJ: typings.winkPosTagger.winkPosTaggerStrings.JJ = "JJ".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.JJ]
     
     inline def NN: typings.winkPosTagger.winkPosTaggerStrings.NN = "NN".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.NN]
+    
+    inline def NNP: typings.winkPosTagger.winkPosTaggerStrings.NNP = "NNP".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.NNP]
+    
+    inline def NNS: typings.winkPosTagger.winkPosTaggerStrings.NNS = "NNS".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.NNS]
     
     inline def PRP: typings.winkPosTagger.winkPosTaggerStrings.PRP = "PRP".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.PRP]
     
@@ -188,7 +194,7 @@ object mod {
       * @param config configuration object
       * @returns object with active configuration
       */
-    def defineConfig(config: js.Any): Lemma
+    def defineConfig(config: Any): Lemma
     
     /**
       * Tags the input tokens with their pos.
@@ -224,7 +230,7 @@ object mod {
   object Tagger {
     
     inline def apply(
-      defineConfig: js.Any => Lemma,
+      defineConfig: Any => Lemma,
       tag: js.Array[Token] => js.Array[PosTaggedToken],
       tagRawTokens: js.Array[String] => js.Array[PosTaggedToken],
       tagSentence: String => js.Array[PosTaggedToken],
@@ -236,7 +242,7 @@ object mod {
     
     extension [Self <: Tagger](x: Self) {
       
-      inline def setDefineConfig(value: js.Any => Lemma): Self = StObject.set(x, "defineConfig", js.Any.fromFunction1(value))
+      inline def setDefineConfig(value: Any => Lemma): Self = StObject.set(x, "defineConfig", js.Any.fromFunction1(value))
       
       inline def setTag(value: js.Array[Token] => js.Array[PosTaggedToken]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "DeviceOrientationCamera")
 @js.native
-class DeviceOrientationCamera protected ()
+open class DeviceOrientationCamera protected ()
   extends typings.babylonjs.babylonjsMod.DeviceOrientationCamera {
   /**
     * Creates a new device orientation camera
@@ -14,6 +14,7 @@ class DeviceOrientationCamera protected ()
     * @param position The start position camera
     * @param scene The scene the camera belongs to
     */
+  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
   def this(
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,

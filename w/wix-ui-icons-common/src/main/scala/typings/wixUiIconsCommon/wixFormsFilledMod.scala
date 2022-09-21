@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object wixFormsFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/WixFormsFilled", JSImport.Default)
   @js.native
-  val default: SFC[WixFormsFilledProps] = js.native
+  val default: FC[WixFormsFilledProps] = js.native
   
   trait WixFormsFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object WixFormsFilledProps {
     
@@ -29,14 +29,14 @@ object wixFormsFilledMod extends Shortcut {
     
     extension [Self <: WixFormsFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[WixFormsFilledProps]
+  type _To = FC[WixFormsFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixFormsFilledMod.foo` */
-  override def _to: SFC[WixFormsFilledProps] = default
+  override def _to: FC[WixFormsFilledProps] = default
 }

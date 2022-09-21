@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncOperation
@@ -30,7 +29,7 @@ object Streams {
   /** Provides a default implementation of the IBuffer interface and its related interfaces. */
   @JSGlobal("Windows.Storage.Streams.Buffer")
   @js.native
-  class Buffer protected ()
+  open class Buffer protected ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.Buffer {
     /**
@@ -40,7 +39,7 @@ object Streams {
     def this(capacity: Double) = this()
     
     /* CompleteClass */
-    var byteLength: js.Any = js.native
+    var byteLength: Any = js.native
     
     /* unmapped type */
     /** Gets the maximum number of bytes that the buffer can hold. */
@@ -90,7 +89,7 @@ object Streams {
   /** Reads data from an input stream. */
   @JSGlobal("Windows.Storage.Streams.DataReader")
   @js.native
-  class DataReader protected ()
+  open class DataReader protected ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.DataReader {
     /**
@@ -131,7 +130,7 @@ object Streams {
       * @return The asynchronous load data request.
       */
     /* CompleteClass */
-    override def loadAsync(count: Double): IPromiseWithOperation[js.Any, typings.winrtUwp.Windows.Storage.Streams.DataReaderLoadOperation] = js.native
+    override def loadAsync(count: Double): IPromiseWithOperation[Any, typings.winrtUwp.Windows.Storage.Streams.DataReaderLoadOperation] = js.native
     
     /**
       * Reads a Boolean value from the input stream.
@@ -167,7 +166,7 @@ object Streams {
       * @return The value.
       */
     /* CompleteClass */
-    override def readDateTime(): Date = js.native
+    override def readDateTime(): js.Date = js.native
     
     /**
       * Reads a floating-point value from the input stream.
@@ -317,7 +316,7 @@ object Streams {
   @JSGlobal("Windows.Storage.Streams.DataWriter")
   @js.native
   /** Creates and initializes a new instance of the data writer. */
-  class DataWriter ()
+  open class DataWriter ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.DataWriter {
     /**
@@ -506,7 +505,7 @@ object Streams {
   @JSGlobal("Windows.Storage.Streams.InMemoryRandomAccessStream")
   @js.native
   /** Creates a new instance of the InMemoryRandomAccessStream class. */
-  class InMemoryRandomAccessStream ()
+  open class InMemoryRandomAccessStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.InMemoryRandomAccessStream {
     

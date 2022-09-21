@@ -22,6 +22,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object summernoteStrings {
   
   @js.native
+  sealed trait SummernoteUndocumentedCallbacks extends StObject
+  inline def SummernoteUndocumentedCallbacks: SummernoteUndocumentedCallbacks = "SummernoteUndocumentedCallbacks".asInstanceOf[SummernoteUndocumentedCallbacks]
+  
+  @js.native
   sealed trait backColor extends StObject
   inline def backColor: backColor = "backColor".asInstanceOf[backColor]
   

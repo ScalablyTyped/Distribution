@@ -26,6 +26,6 @@ object TablesMixinProperties {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: LayerProperties*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: LayerProperties*): Self = StObject.set(x, "tables", js.Array(value*))
   }
 }

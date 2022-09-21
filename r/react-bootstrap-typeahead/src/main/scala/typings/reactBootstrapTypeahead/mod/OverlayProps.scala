@@ -10,15 +10,17 @@ trait OverlayProps
   extends StObject
      with OverlayTypeaheadProps {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[js.Function1[/* menuProps */ MenuProps, ReactNode]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
   var container: HTMLElement
   
-  var referenceElement: js.UndefOr[HTMLElement] = js.undefined
+  var isMenuShown: js.UndefOr[Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.undefined
+  var positionFixed: js.UndefOr[Boolean] = js.undefined
+  
+  var referenceElement: js.UndefOr[HTMLElement] = js.undefined
 }
 object OverlayProps {
   
@@ -29,7 +31,7 @@ object OverlayProps {
   
   extension [Self <: OverlayProps](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: /* menuProps */ MenuProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -39,12 +41,16 @@ object OverlayProps {
     
     inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
+    inline def setIsMenuShown(value: Boolean): Self = StObject.set(x, "isMenuShown", value.asInstanceOf[js.Any])
+    
+    inline def setIsMenuShownUndefined: Self = StObject.set(x, "isMenuShown", js.undefined)
+    
+    inline def setPositionFixed(value: Boolean): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
+    
+    inline def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
+    
     inline def setReferenceElement(value: HTMLElement): Self = StObject.set(x, "referenceElement", value.asInstanceOf[js.Any])
     
     inline def setReferenceElementUndefined: Self = StObject.set(x, "referenceElement", js.undefined)
-    
-    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-    
-    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

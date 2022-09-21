@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.datacatalog" : "1.0.20201107"
+      "@maxim_mazurok/gapi.client.datacatalog" : "1.0.20220805"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.datacatalog" : "1.0.20201107"
+      "@maxim_mazurok/gapi.client.datacatalog" : "1.0.20220805"
     }
   ],
   "compile-devDependencies" : [

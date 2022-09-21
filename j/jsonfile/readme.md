@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonfile
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 Easily read/write JSON files.
@@ -10,10 +10,10 @@ Easily read/write JSON files.
 | ------------------ | :-------------: |
 | Full name          | jsonfile |
 | Keywords           | read, write, file, json, fs, fs-extra |
-| # releases         | 4 |
-| # dependents       | 1987 |
-| # downloads        | 1003032732 |
-| # stars            | 154 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8407518233333334E8 |
+| # stars            | 1126.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/node-jsonfile#readme)

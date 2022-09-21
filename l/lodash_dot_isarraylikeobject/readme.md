@@ -10,10 +10,10 @@ The lodash method `_.isArrayLikeObject` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isarraylikeobject |
 | Keywords           | lodash-modularized, isarraylikeobject |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 7019 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5920.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

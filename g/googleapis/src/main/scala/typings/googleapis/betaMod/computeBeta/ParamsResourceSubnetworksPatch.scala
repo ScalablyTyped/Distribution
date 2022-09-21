@@ -1,8 +1,5 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +9,9 @@ trait ParamsResourceSubnetworksPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * The drain timeout specifies the upper bound in seconds on the amount of time allowed to drain connections from the current ACTIVE subnetwork to the current BACKUP subnetwork. The drain timeout is only applicable when the following conditions are true: - the subnetwork being patched has purpose = INTERNAL_HTTPS_LOAD_BALANCER - the subnetwork being patched has role = BACKUP - the patch request is setting the role to ACTIVE. Note that after this patch operation the roles of the ACTIVE and BACKUP subnetworks will be swapped.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var drainTimeoutSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * Project ID for this request.
@@ -32,16 +29,7 @@ trait ParamsResourceSubnetworksPatch
   var requestBody: js.UndefOr[SchemaSubnetwork] = js.undefined
   
   /**
-    * An optional request ID to identify requests. Specify a unique request ID
-    * so that if you must retry your request, the server will know to ignore
-    * the request if it has already been completed.  For example, consider a
-    * situation where you make an initial request and the request times out. If
-    * you make the request again with the same request ID, the server can check
-    * if original operation with the same request ID was received, and if so,
-    * will ignore the second request. This prevents clients from accidentally
-    * creating duplicate commitments.  The request ID must be a valid UUID with
-    * the exception that zero UUID is not supported
-    * (00000000-0000-0000-0000-000000000000).
+    * An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
     */
   var requestId: js.UndefOr[String] = js.undefined
   
@@ -59,9 +47,9 @@ object ParamsResourceSubnetworksPatch {
   
   extension [Self <: ParamsResourceSubnetworksPatch](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setDrainTimeoutSeconds(value: Double): Self = StObject.set(x, "drainTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setDrainTimeoutSecondsUndefined: Self = StObject.set(x, "drainTimeoutSeconds", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

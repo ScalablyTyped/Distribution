@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined konva.konva/types/types.Vector2d & {  id :number | undefined} */
+/* Inlined konva.konva/lib/types.Vector2d & {  id :number | undefined} */
 trait Vector2didnumberundefined extends StObject {
   
   var id: js.UndefOr[Double] = js.undefined

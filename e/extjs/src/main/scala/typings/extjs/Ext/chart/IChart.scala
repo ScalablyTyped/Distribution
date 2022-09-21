@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
     */
   @JSName("addEvents")
-  var addEvents_IChart: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addEvents_IChart: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Appends an event handler to this object
     * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -35,11 +35,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("addListener")
   var addListener_IChart: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -54,31 +54,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("addManagedListener")
   var addManagedListener_IChart: js.UndefOr[
     js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
   @JSName("animate")
-  var animate_IChart: js.UndefOr[js.Any] = js.undefined
+  var animate_IChart: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.chart.axis.Axis[]) */
   var axes: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Object/Boolean) */
-  var background: js.UndefOr[js.Any] = js.undefined
+  var background: js.UndefOr[Any] = js.undefined
   
   /** [Method] Binds a store to this instance
     * @param store Object
     * @param initial Object
     */
   var bindStore: js.UndefOr[
-    (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit])
+    (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit])
   ] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
@@ -98,7 +98,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param eventNames String/String[] The event name to bubble, or an Array of event names.
     */
   @JSName("enableBubble")
-  var enableBubble_IChart: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var enableBubble_IChart: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameter list
     * @param eventName String The name of the event to fire.
@@ -116,7 +116,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   @JSName("fireEvent")
-  var fireEvent_IChart: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent_IChart: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ Any, Boolean]] = js.undefined
   
   /** [Method] Gets the current store instance
     * @returns Ext.data.AbstractStore The store, null if one does not exist.
@@ -126,7 +126,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Gets the listeners to bind to a new store
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
   
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
     * @param eventName String The name of the event to check for
@@ -139,10 +139,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var insetPadding: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean/String) */
-  var mask: js.UndefOr[js.Any] = js.undefined
+  var mask: js.UndefOr[Any] = js.undefined
   
   /** [Method] Shorthand for addManagedListener
     * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -155,12 +155,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("mon")
   var mon_IChart: js.UndefOr[
     js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -173,10 +173,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("mun")
   var mun_IChart: js.UndefOr[
     js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -207,11 +207,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("on")
   var on_IChart: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -229,10 +229,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("relayEvents")
   var relayEvents_IChart: js.UndefOr[
     js.Function3[
-      /* origin */ js.UndefOr[js.Any], 
+      /* origin */ js.UndefOr[Any], 
       /* events */ js.UndefOr[Array], 
       /* prefix */ js.UndefOr[String], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -245,8 +245,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var removeListener_IChart: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -260,10 +260,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("removeManagedListener")
   var removeManagedListener_IChart: js.UndefOr[
     js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -275,7 +275,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param eventName String... Multiple event names to resume.
     */
   @JSName("resumeEvent")
-  var resumeEvent_IChart: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var resumeEvent_IChart: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** [Method] Resumes firing events see suspendEvents */
   @JSName("resumeEvents")
@@ -285,7 +285,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param config Object The configuration to be passed to the exporter. See the export method for the appropriate exporter for the relevant configuration options
     * @returns Object See the return types for the appropriate exporter
     */
-  var save: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var save: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Ext.chart.series.Series[]) */
   var series: js.UndefOr[Array] = js.undefined
@@ -293,7 +293,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Zooms the chart to the specified selection range
     * @param zoomConfig Object
     */
-  var setZoom: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var setZoom: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
@@ -302,7 +302,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param eventName String... Multiple event names to suspend.
     */
   @JSName("suspendEvent")
-  var suspendEvent_IChart: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var suspendEvent_IChart: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** [Method] Suspends the firing of all events
     * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
@@ -322,8 +322,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var un_IChart: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -342,23 +342,23 @@ object IChart {
   
   extension [Self <: IChart](x: Self) {
     
-    inline def setAddEvents(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+    inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
     
     inline def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
     inline def setAddManagedListener(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
     
     inline def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -366,17 +366,17 @@ object IChart {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     inline def setBindStore(
-      value: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit])
+      value: (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit])
     ): Self = StObject.set(x, "bindStore", value.asInstanceOf[js.Any])
     
-    inline def setBindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStoreFunction1(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
-    inline def setBindStoreFunction2(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
+    inline def setBindStoreFunction2(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
     
     inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
@@ -392,11 +392,11 @@ object IChart {
     
     inline def setClearManagedListenersUndefined: Self = StObject.set(x, "clearManagedListeners", js.undefined)
     
-    inline def setEnableBubble(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+    inline def setEnableBubble(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
     
     inline def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
     
-    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
     
     inline def setFireEventArgs(value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean): Self = StObject.set(x, "fireEventArgs", js.Any.fromFunction2(value))
     
@@ -406,11 +406,11 @@ object IChart {
     
     inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+    inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
     
-    inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+    inline def setGetStoreListenersFunction0(value: () => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     
@@ -424,28 +424,28 @@ object IChart {
     
     inline def setInsetPaddingUndefined: Self = StObject.set(x, "insetPadding", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setMask(value: js.Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     inline def setMon(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
     
     inline def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
     
     inline def setMun(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
     
     inline def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
     
     inline def setOn(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
     inline def setOnBindStore(value: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
@@ -467,19 +467,19 @@ object IChart {
     inline def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => js.Any
+      value: (/* origin */ js.UndefOr[Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => Any
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     inline def setRemoveListener(
-      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
     
     inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
     
     inline def setRemoveManagedListener(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
     
     inline def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
@@ -488,7 +488,7 @@ object IChart {
     
     inline def setRestoreZoomUndefined: Self = StObject.set(x, "restoreZoom", js.undefined)
     
-    inline def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
+    inline def setResumeEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
     
     inline def setResumeEventUndefined: Self = StObject.set(x, "resumeEvent", js.undefined)
     
@@ -496,7 +496,7 @@ object IChart {
     
     inline def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
     
-    inline def setSave(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
@@ -504,7 +504,7 @@ object IChart {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSetZoom(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
+    inline def setSetZoom(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
     
     inline def setSetZoomUndefined: Self = StObject.set(x, "setZoom", js.undefined)
     
@@ -512,7 +512,7 @@ object IChart {
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    inline def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
+    inline def setSuspendEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
     
     inline def setSuspendEventUndefined: Self = StObject.set(x, "suspendEvent", js.undefined)
     
@@ -525,7 +525,7 @@ object IChart {
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setUn(
-      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
     
     inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)

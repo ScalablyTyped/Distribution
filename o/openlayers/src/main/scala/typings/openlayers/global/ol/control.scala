@@ -43,7 +43,7 @@ object control {
     * @param opt_options Attribution options.
     * @api stable
     */
-  class Attribution ()
+  open class Attribution ()
     extends typings.openlayers.mod.control.Attribution {
     def this(opt_options: AttributionOptions) = this()
   }
@@ -90,7 +90,7 @@ object control {
     */
   @JSGlobal("ol.control.Control")
   @js.native
-  class Control protected ()
+  open class Control protected ()
     extends typings.openlayers.mod.control.Control {
     /**
       * @classdesc
@@ -153,7 +153,7 @@ object control {
     * @param opt_options Options.
     * @api stable
     */
-  class FullScreen ()
+  open class FullScreen ()
     extends typings.openlayers.mod.control.FullScreen {
     def this(opt_options: FullScreenOptions) = this()
   }
@@ -182,7 +182,7 @@ object control {
     *     options.
     * @api stable
     */
-  class MousePosition ()
+  open class MousePosition ()
     extends typings.openlayers.mod.control.MousePosition {
     def this(opt_options: MousePositionOptions) = this()
   }
@@ -215,7 +215,7 @@ object control {
     * @param opt_options OverviewMap options.
     * @api
     */
-  class OverviewMap ()
+  open class OverviewMap ()
     extends typings.openlayers.mod.control.OverviewMap {
     def this(opt_options: OverviewMapOptions) = this()
   }
@@ -254,7 +254,7 @@ object control {
     * @param opt_options Rotate options.
     * @api stable
     */
-  class Rotate ()
+  open class Rotate ()
     extends typings.openlayers.mod.control.Rotate {
     def this(opt_options: RotateOptions) = this()
   }
@@ -301,7 +301,7 @@ object control {
     * @param opt_options Scale line options.
     * @api stable
     */
-  class ScaleLine ()
+  open class ScaleLine ()
     extends typings.openlayers.mod.control.ScaleLine {
     def this(opt_options: ScaleLineOptions) = this()
   }
@@ -340,7 +340,7 @@ object control {
     * @param opt_options Zoom options.
     * @api stable
     */
-  class Zoom ()
+  open class Zoom ()
     extends typings.openlayers.mod.control.Zoom {
     def this(opt_options: ZoomOptions) = this()
   }
@@ -369,7 +369,7 @@ object control {
     * @param opt_options Zoom slider options.
     * @api stable
     */
-  class ZoomSlider ()
+  open class ZoomSlider ()
     extends typings.openlayers.mod.control.ZoomSlider {
     def this(opt_options: ZoomSliderOptions) = this()
   }
@@ -406,7 +406,7 @@ object control {
     * @param opt_options Options.
     * @api stable
     */
-  class ZoomToExtent ()
+  open class ZoomToExtent ()
     extends typings.openlayers.mod.control.ZoomToExtent {
     def this(opt_options: ZoomToExtentOptions) = this()
   }

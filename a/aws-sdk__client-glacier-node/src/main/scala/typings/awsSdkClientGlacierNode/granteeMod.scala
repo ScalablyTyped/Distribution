@@ -8,5 +8,5 @@ object granteeMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_Grantee", "_Grantee")
   @js.native
-  val Grantee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Grantee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

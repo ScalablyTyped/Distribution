@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class BaseStream protected ()
   extends typings.wonderFrp.streamBaseStreamMod.BaseStream {
-  def this(subscribeFunc: js.Any) = this()
+  def this(subscribeFunc: Any) = this()
 }

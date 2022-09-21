@@ -48,7 +48,7 @@ object PolarLayout {
     
     inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object PolarLayout {
     
     inline def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
     
-    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
+    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value*))
     
     inline def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
   }

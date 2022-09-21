@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__collection-core
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.24
 
 ## Library description:
 A low-level Symbol-based API for defining common collection behaviors.
@@ -10,10 +10,10 @@ A low-level Symbol-based API for defining common collection behaviors.
 | ------------------ | :-------------: |
 | Full name          | @esfx/collection-core |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 15 |
-| # downloads        | 22966 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 9023.0 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

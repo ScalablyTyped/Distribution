@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Codegen extends StObject {
   
-  def apply(formatStringOrScope: String, formatParams: js.Any*): Codegen | js.Function = js.native
-  def apply(formatStringOrScope: StringDictionary[js.UndefOr[js.Any]], formatParams: js.Any*): Codegen | js.Function = js.native
-  def apply(formatStringOrScope: Unit, formatParams: js.Any*): Codegen | js.Function = js.native
+  def apply(formatStringOrScope: String, formatParams: Any*): Codegen | js.Function = js.native
+  def apply(formatStringOrScope: StringDictionary[Any], formatParams: Any*): Codegen | js.Function = js.native
+  def apply(formatStringOrScope: Unit, formatParams: Any*): Codegen | js.Function = js.native
 }

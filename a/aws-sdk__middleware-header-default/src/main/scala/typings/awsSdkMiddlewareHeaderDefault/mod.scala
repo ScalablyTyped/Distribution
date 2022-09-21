@@ -1,7 +1,7 @@
 package typings.awsSdkMiddlewareHeaderDefault
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkTypes.middlewareMod.BuildMiddleware
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def headerDefault(headerBag: HeaderDefaultArgs): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("headerDefault")(headerBag.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def headerDefault(headerBag: HeaderDefaultArgs): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("headerDefault")(headerBag.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
   
-  type HeaderDefaultArgs = StringDictionary[String]
+  type HeaderDefaultArgs = Record[String, String]
 }

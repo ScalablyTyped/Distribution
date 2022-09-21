@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWebDocumentViewerDocumentReadyEventArgs")
 @js.native
-class ASPxClientWebDocumentViewerDocumentReadyEventArgs protected ()
+open class ASPxClientWebDocumentViewerDocumentReadyEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerDocumentReadyEventArgs {
   /**

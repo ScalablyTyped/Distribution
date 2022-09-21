@@ -10,7 +10,7 @@ object disableMod {
   
   @JSImport("ionic/commands/integrations/disable", "IntegrationsDisableCommand")
   @js.native
-  class IntegrationsDisableCommand protected () extends Command {
+  open class IntegrationsDisableCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

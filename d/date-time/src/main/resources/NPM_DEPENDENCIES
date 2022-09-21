@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "date-time" : "3.1.0"
+      "date-time" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "date-time" : "3.1.0"
+      "date-time" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

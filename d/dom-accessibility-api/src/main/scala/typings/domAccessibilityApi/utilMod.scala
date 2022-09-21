@@ -29,6 +29,9 @@ object utilMod {
   inline def isHTMLLegendElement(): /* is std.HTMLLegendElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLLegendElement")().asInstanceOf[/* is std.HTMLLegendElement */ Boolean]
   inline def isHTMLLegendElement(node: Node): /* is std.HTMLLegendElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLLegendElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLLegendElement */ Boolean]
   
+  inline def isHTMLOptGroupElement(): /* is std.HTMLOptGroupElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLOptGroupElement")().asInstanceOf[/* is std.HTMLOptGroupElement */ Boolean]
+  inline def isHTMLOptGroupElement(node: Node): /* is std.HTMLOptGroupElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLOptGroupElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLOptGroupElement */ Boolean]
+  
   inline def isHTMLSelectElement(): /* is std.HTMLSelectElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLSelectElement")().asInstanceOf[/* is std.HTMLSelectElement */ Boolean]
   inline def isHTMLSelectElement(node: Node): /* is std.HTMLSelectElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLSelectElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLSelectElement */ Boolean]
   

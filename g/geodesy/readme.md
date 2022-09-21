@@ -9,11 +9,11 @@ Libraries of geodesy functions
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | geodesy |
-| Keywords           | geodesy, latitude, longitude, distance, bearing, destination, haversine, vincenty, rhumb, ellipsoid, datum, reference frame, TRF, wgs84, utm, mgrs |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 405978 |
-| # stars            | 3 |
+| Keywords           | geodesy, latitude, longitude, distance, bearing, destination, haversine, vincenty, rhumb, ellipsoid, datum, reference-frame, TRF, vector, n-vector, wgs84, utm, mgrs |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 51333.666666666664 |
+| # stars            | 1016.0 |
 
 ## Links
 - [Homepage](http://www.movable-type.co.uk/scripts/geodesy-library.html)

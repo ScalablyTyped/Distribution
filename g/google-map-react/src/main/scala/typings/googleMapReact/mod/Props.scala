@@ -1,8 +1,8 @@
 package typings.googleMapReact.mod
 
 import typings.googleMapReact.anon.Map
-import typings.react.mod.HTMLProps
-import typings.std.HTMLDivElement
+import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,8 @@ trait Props extends StObject {
   var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.undefined
   
   var center: js.UndefOr[Coords] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var debounced: js.UndefOr[Boolean] = js.undefined
   
@@ -25,7 +27,7 @@ trait Props extends StObject {
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ js.Any, Unit]] = js.undefined
+  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ Any, Unit]] = js.undefined
   
   var heatmap: js.UndefOr[Heatmap] = js.undefined
   
@@ -35,43 +37,37 @@ trait Props extends StObject {
   
   var layerTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var margin: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var margin: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, Any]] = js.undefined
   
-  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
+  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
   
-  var onChildMouseDown: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
+  var onChildMouseDown: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
   
-  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
+  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
   
-  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
+  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
   
-  var onChildMouseMove: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
+  var onChildMouseMove: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
   
-  var onChildMouseUp: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
+  var onChildMouseUp: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, Any]] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
+  var onDrag: js.UndefOr[js.Function1[/* map */ Any, Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function1[/* map */ Any, Unit]] = js.undefined
   
   var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Map, Unit]] = js.undefined
   
-  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
   
   var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
   
-  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
   
   var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.undefined
   
@@ -79,7 +75,7 @@ trait Props extends StObject {
   
   var shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   var yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined
   
@@ -102,6 +98,10 @@ object Props {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setDebounced(value: Boolean): Self = StObject.set(x, "debounced", value.asInstanceOf[js.Any])
     
     inline def setDebouncedUndefined: Self = StObject.set(x, "debounced", js.undefined)
@@ -122,7 +122,7 @@ object Props {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setGoogleMapLoader(value: /* bootstrapURLKeys */ js.Any => Unit): Self = StObject.set(x, "googleMapLoader", js.Any.fromFunction1(value))
+    inline def setGoogleMapLoader(value: /* bootstrapURLKeys */ Any => Unit): Self = StObject.set(x, "googleMapLoader", js.Any.fromFunction1(value))
     
     inline def setGoogleMapLoaderUndefined: Self = StObject.set(x, "googleMapLoader", js.undefined)
     
@@ -142,49 +142,49 @@ object Props {
     
     inline def setLayerTypesUndefined: Self = StObject.set(x, "layerTypes", js.undefined)
     
-    inline def setLayerTypesVarargs(value: String*): Self = StObject.set(x, "layerTypes", js.Array(value :_*))
+    inline def setLayerTypesVarargs(value: String*): Self = StObject.set(x, "layerTypes", js.Array(value*))
     
-    inline def setMargin(value: js.Array[js.Any]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Array[Any]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: js.Any*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Any*): Self = StObject.set(x, "margin", js.Array(value*))
     
-    inline def setOnChange(value: /* value */ ChangeEventValue => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ ChangeEventValue => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnChildClick(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildClick", js.Any.fromFunction2(value))
+    inline def setOnChildClick(value: (/* hoverKey */ Any, /* childProps */ Any) => Unit): Self = StObject.set(x, "onChildClick", js.Any.fromFunction2(value))
     
     inline def setOnChildClickUndefined: Self = StObject.set(x, "onChildClick", js.undefined)
     
-    inline def setOnChildMouseDown(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseDown", js.Any.fromFunction3(value))
+    inline def setOnChildMouseDown(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Unit): Self = StObject.set(x, "onChildMouseDown", js.Any.fromFunction3(value))
     
     inline def setOnChildMouseDownUndefined: Self = StObject.set(x, "onChildMouseDown", js.undefined)
     
-    inline def setOnChildMouseEnter(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseEnter", js.Any.fromFunction2(value))
+    inline def setOnChildMouseEnter(value: (/* hoverKey */ Any, /* childProps */ Any) => Unit): Self = StObject.set(x, "onChildMouseEnter", js.Any.fromFunction2(value))
     
     inline def setOnChildMouseEnterUndefined: Self = StObject.set(x, "onChildMouseEnter", js.undefined)
     
-    inline def setOnChildMouseLeave(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseLeave", js.Any.fromFunction2(value))
+    inline def setOnChildMouseLeave(value: (/* hoverKey */ Any, /* childProps */ Any) => Unit): Self = StObject.set(x, "onChildMouseLeave", js.Any.fromFunction2(value))
     
     inline def setOnChildMouseLeaveUndefined: Self = StObject.set(x, "onChildMouseLeave", js.undefined)
     
-    inline def setOnChildMouseMove(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseMove", js.Any.fromFunction3(value))
+    inline def setOnChildMouseMove(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Unit): Self = StObject.set(x, "onChildMouseMove", js.Any.fromFunction3(value))
     
     inline def setOnChildMouseMoveUndefined: Self = StObject.set(x, "onChildMouseMove", js.undefined)
     
-    inline def setOnChildMouseUp(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseUp", js.Any.fromFunction3(value))
+    inline def setOnChildMouseUp(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Unit): Self = StObject.set(x, "onChildMouseUp", js.Any.fromFunction3(value))
     
     inline def setOnChildMouseUpUndefined: Self = StObject.set(x, "onChildMouseUp", js.undefined)
     
-    inline def setOnClick(value: /* value */ ClickEventValue => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* value */ ClickEventValue => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnDrag(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* map */ Any => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragEnd(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: /* map */ Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
@@ -194,7 +194,7 @@ object Props {
     
     inline def setOnGoogleApiLoadedUndefined: Self = StObject.set(x, "onGoogleApiLoaded", js.undefined)
     
-    inline def setOnMapTypeIdChange(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onMapTypeIdChange", js.Any.fromFunction1(value))
+    inline def setOnMapTypeIdChange(value: /* args */ Any => Unit): Self = StObject.set(x, "onMapTypeIdChange", js.Any.fromFunction1(value))
     
     inline def setOnMapTypeIdChangeUndefined: Self = StObject.set(x, "onMapTypeIdChange", js.undefined)
     
@@ -202,11 +202,11 @@ object Props {
     
     inline def setOnTilesLoadedUndefined: Self = StObject.set(x, "onTilesLoaded", js.undefined)
     
-    inline def setOnZoomAnimationEnd(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onZoomAnimationEnd", js.Any.fromFunction1(value))
+    inline def setOnZoomAnimationEnd(value: /* args */ Any => Unit): Self = StObject.set(x, "onZoomAnimationEnd", js.Any.fromFunction1(value))
     
     inline def setOnZoomAnimationEndUndefined: Self = StObject.set(x, "onZoomAnimationEnd", js.undefined)
     
-    inline def setOnZoomAnimationStart(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onZoomAnimationStart", js.Any.fromFunction1(value))
+    inline def setOnZoomAnimationStart(value: /* args */ Any => Unit): Self = StObject.set(x, "onZoomAnimationStart", js.Any.fromFunction1(value))
     
     inline def setOnZoomAnimationStartUndefined: Self = StObject.set(x, "onZoomAnimationStart", js.undefined)
     
@@ -224,7 +224,7 @@ object Props {
     
     inline def setShouldUnregisterMapOnUnmountUndefined: Self = StObject.set(x, "shouldUnregisterMapOnUnmount", js.undefined)
     
-    inline def setStyle(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpersMod {
   
-  @JSImport("ip-address/dist/lib/v6/helpers", JSImport.Namespace)
+  @JSImport("ip-address/dist/cjs/lib/v6/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

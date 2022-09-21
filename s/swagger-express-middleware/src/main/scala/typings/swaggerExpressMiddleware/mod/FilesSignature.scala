@@ -3,8 +3,7 @@ package typings.swaggerExpressMiddleware.mod
 import typings.express.mod.Application_
 import typings.express.mod.RequestHandler
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FilesSignature extends StObject {
   
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
   def apply(/**
     * Options for how the files are served
     */
-  options: FilesOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  options: FilesOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -32,13 +49,25 @@ trait FilesSignature extends StObject {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Router
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -48,5 +77,11 @@ trait FilesSignature extends StObject {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
 }

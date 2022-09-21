@@ -44,7 +44,7 @@ trait XHierarchicalPropertySet
     * @throws com::sun::star::uno::lang::IllegalArgumentException if **aHierarchicalPropertyName** is not a well-formed nested name for this hierarchy. An impl
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getHierarchicalPropertyValue(aHierarchicalPropertyName: String): js.Any
+  def getHierarchicalPropertyValue(aHierarchicalPropertyName: String): Any
   
   /**
     * sets the value of the property with the specified nested name.
@@ -56,7 +56,7 @@ trait XHierarchicalPropertySet
     * @throws com::sun::star::uno::lang::IllegalArgumentException if **aValue** is not a legal value for this property or if **aHierarchicalPropertyName** is n
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def setHierarchicalPropertyValue(aHierarchicalPropertyName: String, aValue: js.Any): Unit
+  def setHierarchicalPropertyValue(aHierarchicalPropertyName: String, aValue: Any): Unit
 }
 object XHierarchicalPropertySet {
   
@@ -64,10 +64,10 @@ object XHierarchicalPropertySet {
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
     acquire: () => Unit,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
-    getHierarchicalPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getHierarchicalPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setHierarchicalPropertyValue: (String, js.Any) => Unit
+    setHierarchicalPropertyValue: (String, Any) => Unit
   ): XHierarchicalPropertySet = {
     val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValue = js.Any.fromFunction1(getHierarchicalPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHierarchicalPropertyValue = js.Any.fromFunction2(setHierarchicalPropertyValue))
     __obj.asInstanceOf[XHierarchicalPropertySet]
@@ -77,10 +77,10 @@ object XHierarchicalPropertySet {
     
     inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
-    inline def setGetHierarchicalPropertyValue(value: String => js.Any): Self = StObject.set(x, "getHierarchicalPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetHierarchicalPropertyValue(value: String => Any): Self = StObject.set(x, "getHierarchicalPropertyValue", js.Any.fromFunction1(value))
     
     inline def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
     
-    inline def setSetHierarchicalPropertyValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValue", js.Any.fromFunction2(value))
+    inline def setSetHierarchicalPropertyValue(value: (String, Any) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValue", js.Any.fromFunction2(value))
   }
 }

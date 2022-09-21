@@ -10,10 +10,10 @@ object layersMod {
   
   @JSImport("material-ui/svg-icons/maps/layers", JSImport.Default)
   @js.native
-  class default () extends MapsLayers
+  open class default () extends MapsLayers
   
   @JSImport("material-ui/svg-icons/maps/layers", "MapsLayers")
   @js.native
-  class MapsLayers ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLayers ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

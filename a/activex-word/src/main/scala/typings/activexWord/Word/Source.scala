@@ -16,7 +16,7 @@ trait Source extends StObject {
   
   def Field(Name: String): String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Tag: String
   
@@ -33,7 +33,7 @@ object Source {
     Creator: Double,
     Delete: () => Unit,
     Field: String => String,
-    Parent: js.Any,
+    Parent: Any,
     Tag: String,
     WordDotSource_typekey: Source,
     XML: String
@@ -55,7 +55,7 @@ object Source {
     
     inline def setField(value: String => String): Self = StObject.set(x, "Field", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     

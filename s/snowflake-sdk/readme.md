@@ -1,7 +1,7 @@
 
 # Scala.js typings for snowflake-sdk
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 Node.js driver for Snowflake
@@ -10,10 +10,10 @@ Node.js driver for Snowflake
 | ------------------ | :-------------: |
 | Full name          | snowflake-sdk |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 21 |
-| # downloads        | 1409219 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 919120.3333333334 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/snowflakedb/snowflake-connector-nodejs#readme)

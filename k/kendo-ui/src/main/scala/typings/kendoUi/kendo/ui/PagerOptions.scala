@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PagerOptions extends StObject {
   
+  var ARIATemplate: js.UndefOr[String] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
   var buttonCount: js.UndefOr[Double] = js.undefined
   
   var change: js.UndefOr[js.Function1[/* e */ PagerChangeEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var info: js.UndefOr[Boolean] = js.undefined
   
@@ -25,9 +27,11 @@ trait PagerOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
+  var pageSizes: js.UndefOr[Boolean | Any] = js.undefined
   
   var previousNext: js.UndefOr[Boolean] = js.undefined
   
@@ -46,6 +50,10 @@ object PagerOptions {
   
   extension [Self <: PagerOptions](x: Self) {
     
+    inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
+    
+    inline def setARIATemplateUndefined: Self = StObject.set(x, "ARIATemplate", js.undefined)
+    
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
@@ -58,7 +66,7 @@ object PagerOptions {
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -82,11 +90,15 @@ object PagerOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
     inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    inline def setPageSizes(value: Boolean | js.Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
+    inline def setPageSizes(value: Boolean | Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
     inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     

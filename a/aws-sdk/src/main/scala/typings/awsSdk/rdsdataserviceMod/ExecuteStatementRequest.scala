@@ -17,6 +17,11 @@ trait ExecuteStatementRequest extends StObject {
   var database: js.UndefOr[DbName] = js.undefined
   
   /**
+    * A value that indicates whether to format the result set as a single JSON string. This parameter only applies to SELECT statements and is ignored for other types of statements. Allowed values are NONE and JSON. The default value is NONE. The result is returned in the formattedRecords field. For usage information about the JSON format for result sets, see Using the Data API in the Amazon Aurora User Guide.
+    */
+  var formatRecordsAs: js.UndefOr[RecordsFormatType] = js.undefined
+  
+  /**
     * A value that indicates whether to include metadata in the results.
     */
   var includeResultMetadata: js.UndefOr[Boolean] = js.undefined
@@ -37,12 +42,12 @@ trait ExecuteStatementRequest extends StObject {
   var resultSetOptions: js.UndefOr[ResultSetOptions] = js.undefined
   
   /**
-    * The name of the database schema.
+    * The name of the database schema.  Currently, the schema parameter isn't supported. 
     */
   var schema: js.UndefOr[DbName] = js.undefined
   
   /**
-    * The name or ARN of the secret that enables access to the DB cluster.
+    * The ARN of the secret that enables access to the DB cluster. Enter the database user name and password for the credentials in the secret. For information about creating the secret, see Create a database secret.
     */
   var secretArn: Arn
   
@@ -73,6 +78,10 @@ object ExecuteStatementRequest {
     
     inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
+    inline def setFormatRecordsAs(value: RecordsFormatType): Self = StObject.set(x, "formatRecordsAs", value.asInstanceOf[js.Any])
+    
+    inline def setFormatRecordsAsUndefined: Self = StObject.set(x, "formatRecordsAs", js.undefined)
+    
     inline def setIncludeResultMetadata(value: Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
     
     inline def setIncludeResultMetadataUndefined: Self = StObject.set(x, "includeResultMetadata", js.undefined)
@@ -81,7 +90,7 @@ object ExecuteStatementRequest {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

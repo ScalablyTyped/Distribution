@@ -29,7 +29,7 @@ trait GetOperationDetailResponse extends StObject {
   /**
     * The date when the request was submitted.
     */
-  var SubmittedDate: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of operation that was requested.
@@ -61,7 +61,7 @@ object GetOperationDetailResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setSubmittedDate(value: Timestamp): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
+    inline def setSubmittedDate(value: js.Date): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
     
     inline def setSubmittedDateUndefined: Self = StObject.set(x, "SubmittedDate", js.undefined)
     

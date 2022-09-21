@@ -37,12 +37,12 @@ trait OrderableReplicationInstance extends StObject {
   var MinAllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The value returned when the specified EngineVersion of the replication instance is in Beta or test mode. This indicates some features might not work as expected.  AWS DMS supports the ReleaseStatus parameter in versions 3.1.4 and later. 
+    * The value returned when the specified EngineVersion of the replication instance is in Beta or test mode. This indicates some features might not work as expected.  DMS supports the ReleaseStatus parameter in versions 3.1.4 and later. 
     */
   var ReleaseStatus: js.UndefOr[ReleaseStatusValues] = js.undefined
   
   /**
-    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For example to specify the instance class dms.c4.large, set this parameter to "dms.c4.large". For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
+    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For example to specify the instance class dms.c4.large, set this parameter to "dms.c4.large". For more information on the settings and capacities for the available replication instance classes, see  Selecting the right DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ object OrderableReplicationInstance {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setDefaultAllocatedStorage(value: Integer): Self = StObject.set(x, "DefaultAllocatedStorage", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.gulpCleanDest
 
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +11,8 @@ object mod {
     * @param destination The name of the dest directory
     * @param options Options for the cleaning process
     */
-  inline def apply(destination: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def apply(destination: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(destination: String): Any = ^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(destination: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("gulp-clean-dest", JSImport.Namespace)
   @js.native

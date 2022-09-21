@@ -10,51 +10,44 @@ object errorListenerMod {
   
   @JSImport("antlr4/error/ErrorListener", "ConsoleErrorListener")
   @js.native
-  class ConsoleErrorListener () extends ErrorListener
+  open class ConsoleErrorListener () extends ErrorListener
   
   @JSImport("antlr4/error/ErrorListener", "ErrorListener")
   @js.native
-  class ErrorListener () extends StObject {
+  open class ErrorListener () extends StObject {
     
     def reportAmbiguity(
       recognizer: Recognizer,
-      dfa: js.Any,
+      dfa: Any,
       startIndex: Double,
       stopIndex: Double,
-      exact: js.Any,
-      ambigAlts: js.Any,
-      configs: js.Any
+      exact: Any,
+      ambigAlts: Any,
+      configs: Any
     ): Unit = js.native
     
     def reportAttemptingFullContext(
       recognizer: Recognizer,
-      dfa: js.Any,
+      dfa: Any,
       startIndex: Double,
       stopIndex: Double,
-      conflictingAlts: js.Any,
-      configs: js.Any
+      conflictingAlts: Any,
+      configs: Any
     ): Unit = js.native
     
     def reportContextSensitivity(
       recognizer: Recognizer,
-      dfa: js.Any,
+      dfa: Any,
       startIndex: Double,
       stopIndex: Double,
-      conflictingAlts: js.Any,
-      configs: js.Any
+      conflictingAlts: Any,
+      configs: Any
     ): Unit = js.native
     
-    def syntaxError(
-      recognizer: Recognizer,
-      offendingSymbol: Token,
-      line: Double,
-      column: Double,
-      msg: String,
-      e: js.Any
-    ): Unit = js.native
+    def syntaxError(recognizer: Recognizer, offendingSymbol: Token, line: Double, column: Double, msg: String, e: Any): Unit = js.native
   }
   
   @JSImport("antlr4/error/ErrorListener", "ProxyErrorListener")
   @js.native
-  class ProxyErrorListener () extends ErrorListener
+  open class ProxyErrorListener () extends ErrorListener
 }

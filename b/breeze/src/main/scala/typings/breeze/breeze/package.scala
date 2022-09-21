@@ -1,25 +1,20 @@
 package typings.breeze.breeze
 
+import typings.breeze.anon.EntityErrors
+import typings.breeze.breeze.core.EnumSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EntityActionSymbol = typings.breeze.breeze.core.EnumSymbol
+type ExecuteQueryErrorCallback = js.Function1[/* error */ typings.breeze.anon.EntityManager, Unit]
 
-type ExecuteQueryErrorCallback = js.Function1[/* error */ typings.breeze.anon.EntityManager, scala.Unit]
+type ExecuteQuerySuccessCallback = js.Function1[/* data */ QueryResult, Unit]
 
-type ExecuteQuerySuccessCallback = js.Function1[/* data */ typings.breeze.breeze.QueryResult, scala.Unit]
+type MergeStrategySymbol = EnumSymbol
 
-type FilterQueryOpSymbol = typings.breeze.breeze.core.EnumSymbol
+type SaveChangesErrorCallback = js.Function1[/* error */ EntityErrors, Unit]
 
-type MergeStrategySymbol = typings.breeze.breeze.core.EnumSymbol
+type SaveChangesSuccessCallback = js.Function1[/* saveResult */ SaveResult, Unit]
 
-type SaveChangesErrorCallback = js.Function1[/* error */ typings.breeze.anon.EntityErrors, scala.Unit]
-
-type SaveChangesSuccessCallback = js.Function1[/* saveResult */ typings.breeze.breeze.SaveResult, scala.Unit]
-
-type ValidatorFunction = js.Function2[
-/* value */ js.Any, 
-/* context */ typings.breeze.breeze.ValidatorFunctionContext, 
-scala.Unit]
+type ValidatorFunction = js.Function2[/* value */ Any, /* context */ ValidatorFunctionContext, Unit]

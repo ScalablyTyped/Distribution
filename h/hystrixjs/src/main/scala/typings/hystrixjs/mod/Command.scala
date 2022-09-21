@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Command extends StObject {
   
-  def execute(args: js.Any*): js.Thenable[js.Any]
+  def execute(args: Any*): js.Thenable[Any]
 }
 object Command {
   
-  inline def apply(execute: /* repeated */ js.Any => js.Thenable[js.Any]): Command = {
+  inline def apply(execute: /* repeated */ Any => js.Thenable[Any]): Command = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[Command]
   }
   
   extension [Self <: Command](x: Self) {
     
-    inline def setExecute(value: /* repeated */ js.Any => js.Thenable[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ Any => js.Thenable[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

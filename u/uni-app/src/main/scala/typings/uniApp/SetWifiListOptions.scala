@@ -51,6 +51,6 @@ object SetWifiListOptions {
     
     inline def setWifiListUndefined: Self = StObject.set(x, "wifiList", js.undefined)
     
-    inline def setWifiListVarargs(value: WiFiItem*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: WiFiItem*): Self = StObject.set(x, "wifiList", js.Array(value*))
   }
 }

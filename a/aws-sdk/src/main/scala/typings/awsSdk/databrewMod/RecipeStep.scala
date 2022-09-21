@@ -12,7 +12,7 @@ trait RecipeStep extends StObject {
   var Action: RecipeAction
   
   /**
-    * One or more conditions that must be met, in order for the recipe step to succeed.  All of the conditions in the array must be met. In other words, all of the conditions must be combined using a logical AND operation. 
+    * One or more conditions that must be met for the recipe step to succeed.  All of the conditions in the array must be met. In other words, all of the conditions must be combined using a logical AND operation. 
     */
   var ConditionExpressions: js.UndefOr[ConditionExpressionList] = js.undefined
 }
@@ -31,6 +31,6 @@ object RecipeStep {
     
     inline def setConditionExpressionsUndefined: Self = StObject.set(x, "ConditionExpressions", js.undefined)
     
-    inline def setConditionExpressionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "ConditionExpressions", js.Array(value :_*))
+    inline def setConditionExpressionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "ConditionExpressions", js.Array(value*))
   }
 }

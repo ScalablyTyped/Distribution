@@ -49,6 +49,6 @@ object PartialAddWorksheetOption {
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: Partial[WorksheetView]*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: Partial[WorksheetView]*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "HighlightsPostProcess")
 @js.native
-class HighlightsPostProcess protected ()
+open class HighlightsPostProcess protected ()
   extends typings.babylonjs.postProcessesIndexMod.HighlightsPostProcess {
   /**
     * Extracts highlights from the image

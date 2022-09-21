@@ -58,8 +58,8 @@ trait Application extends StObject {
   
   val ActiveWorkbook: Workbook = js.native
   
-  def AddChartAutoFormat(Chart: js.Any, Name: String): Unit = js.native
-  def AddChartAutoFormat(Chart: js.Any, Name: String, Description: js.Any): Unit = js.native
+  def AddChartAutoFormat(Chart: Any, Name: String): Unit = js.native
+  def AddChartAutoFormat(Chart: Any, Name: String, Description: Any): Unit = js.native
   
   def AddCustomList(ListArray: Range): Unit = js.native
   def AddCustomList(ListArray: Range, ByRow: Boolean): Unit = js.native
@@ -249,9 +249,9 @@ trait Application extends StObject {
   
   def DDEInitiate(App: String, Topic: String): Double = js.native
   
-  def DDEPoke(Channel: Double, Item: js.Any, Data: js.Any): Unit = js.native
+  def DDEPoke(Channel: Double, Item: Any, Data: Any): Unit = js.native
   
-  def DDERequest(Channel: Double, Item: String): js.Any = js.native
+  def DDERequest(Channel: Double, Item: String): Any = js.native
   
   def DDETerminate(Channel: Double): Unit = js.native
   
@@ -322,128 +322,128 @@ trait Application extends StObject {
   
   def DoubleClick(): Unit = js.native
   
-  def Dummy1(): js.Any = js.native
-  def Dummy1(Arg1: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: Unit, Arg3: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: js.Any, Arg2: Unit, Arg3: Unit, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
-  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: Unit, Arg4: js.Any): js.Any = js.native
+  def Dummy1(): Any = js.native
+  def Dummy1(Arg1: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Any, Arg3: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Any, Arg3: Any, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Any, Arg3: Unit, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Unit, Arg3: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Unit, Arg3: Any, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Any, Arg2: Unit, Arg3: Unit, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Any, Arg3: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Any, Arg3: Any, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Any, Arg3: Unit, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: Any, Arg4: Any): Any = js.native
+  def Dummy1(Arg1: Unit, Arg2: Unit, Arg3: Unit, Arg4: Any): Any = js.native
   
   def Dummy10(): Boolean = js.native
-  def Dummy10(arg: js.Any): Boolean = js.native
+  def Dummy10(arg: Any): Boolean = js.native
   
-  val Dummy101: js.Any = js.native
+  val Dummy101: Any = js.native
   
   def Dummy11(): Unit = js.native
   
   def Dummy12(p1: PivotTable, p2: PivotTable): Unit = js.native
   
   def Dummy13(
-    Arg1: js.Any,
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: Any,
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
   def Dummy14(): Unit = js.native
   
   def Dummy2(
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any]
+  ): Any = js.native
   
-  def Dummy20(grfCompareFunctions: Double): js.Any = js.native
+  def Dummy20(grfCompareFunctions: Double): Any = js.native
   
   var Dummy22: Boolean = js.native
   
   var Dummy23: Boolean = js.native
   
-  def Dummy3(): js.Any = js.native
+  def Dummy3(): Any = js.native
   
   def Dummy4(
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any]
+  ): Any = js.native
   
   def Dummy5(
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any]
+  ): Any = js.native
   
-  def Dummy6(): js.Any = js.native
+  def Dummy6(): Any = js.native
   
-  def Dummy7(): js.Any = js.native
+  def Dummy7(): Any = js.native
   
-  def Dummy8(): js.Any = js.native
-  def Dummy8(Arg1: js.Any): js.Any = js.native
+  def Dummy8(): Any = js.native
+  def Dummy8(Arg1: Any): Any = js.native
   
-  def Dummy9(): js.Any = js.native
+  def Dummy9(): Any = js.native
   
   var EditDirectlyInCell: Boolean = js.native
   
@@ -465,7 +465,7 @@ trait Application extends StObject {
   
   val ErrorCheckingOptions: typings.activexExcel.Excel.ErrorCheckingOptions = js.native
   
-  def Evaluate(Name: String): js.Any = js.native
+  def Evaluate(Name: String): Any = js.native
   
   def Excel4IntlMacroSheets(Indexes: SafeArray[String | Double]): Sheets[Sheet] = js.native
   def Excel4IntlMacroSheets(Index: String): Sheet = js.native
@@ -482,16 +482,16 @@ trait Application extends StObject {
   /* private */ @JSName("Excel.Application_typekey")
   var ExcelDotApplication_typekey: typings.activexExcel.Excel.Application = js.native
   
-  def ExecuteExcel4Macro(String: String): js.Any = js.native
+  def ExecuteExcel4Macro(String: String): Any = js.native
   
   var ExtendList: Boolean = js.native
   
   var FeatureInstall: MsoFeatureInstall = js.native
   
-  def FileConverters(): SafeArray[js.Any] = js.native
-  def FileConverters(Index1: String): SafeArray[js.Any] = js.native
-  def FileConverters(Index1: String, Index2: String): SafeArray[js.Any] = js.native
-  def FileConverters(Index1: Unit, Index2: String): SafeArray[js.Any] = js.native
+  def FileConverters(): SafeArray[Any] = js.native
+  def FileConverters(Index1: String): SafeArray[Any] = js.native
+  def FileConverters(Index1: String, Index2: String): SafeArray[Any] = js.native
+  def FileConverters(Index1: Unit, Index2: String): SafeArray[Any] = js.native
   
   def FileDialog(fileDialogType: MsoFileDialogType): typings.activexOffice.Office.FileDialog = js.native
   
@@ -646,7 +646,7 @@ trait Application extends StObject {
   
   def International[T](Index: T): InternationalResult[T] = js.native
   @JSName("International")
-  var International_Original: SafeArray[js.Any] & (js.Function1[/* Index */ js.Any, InternationalResult[js.Any]]) = js.native
+  var International_Original: SafeArray[Any] & (js.Function1[/* Index */ Any, InternationalResult[Any]]) = js.native
   
   def Intersect(
     Arg1: Range,
@@ -740,11 +740,11 @@ trait Application extends StObject {
   
   val MemoryUsed: Double = js.native
   
-  def MenuBars(Index: js.Any): MenuBar = js.native
+  def MenuBars(Index: Any): MenuBar = js.native
   @JSName("MenuBars")
   val MenuBars_Original: MenuBars = js.native
   
-  def Modules(Index: js.Any): js.Any = js.native
+  def Modules(Index: Any): Any = js.native
   @JSName("Modules")
   val Modules_Original: Modules = js.native
   
@@ -798,10 +798,10 @@ trait Application extends StObject {
   
   var OnSheetDeactivate: String = js.native
   
-  def OnTime(EarliestTime: js.Any, Procedure: String): Unit = js.native
-  def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: js.Any): Unit = js.native
-  def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: js.Any, Schedule: Boolean): Unit = js.native
-  def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: Unit, Schedule: Boolean): Unit = js.native
+  def OnTime(EarliestTime: Any, Procedure: String): Unit = js.native
+  def OnTime(EarliestTime: Any, Procedure: String, LatestTime: Any): Unit = js.native
+  def OnTime(EarliestTime: Any, Procedure: String, LatestTime: Any, Schedule: Boolean): Unit = js.native
+  def OnTime(EarliestTime: Any, Procedure: String, LatestTime: Unit, Schedule: Boolean): Unit = js.native
   
   def OnUndo(Text: String, Procedure: String): Unit = js.native
   
@@ -819,14 +819,7 @@ trait Application extends StObject {
   
   var PivotTableSelection: Boolean = js.native
   
-  @JSName("PreviousSelections")
-  def PreviousSelections_1(Index: `1`): Range | Null = js.native
-  @JSName("PreviousSelections")
-  def PreviousSelections_2(Index: `2`): Range | Null = js.native
-  @JSName("PreviousSelections")
-  def PreviousSelections_3(Index: `3`): Range | Null = js.native
-  @JSName("PreviousSelections")
-  def PreviousSelections_4(Index: `4`): Range | Null = js.native
+  def PreviousSelections(Index: `1` | `2` | `3` | `4`): Range | Null = js.native
   
   var PrintCommunication: Boolean = js.native
   
@@ -868,10 +861,10 @@ trait Application extends StObject {
   
   def RegisterXLL(Filename: String): Boolean = js.native
   
-  def RegisteredFunctions(): SafeArray[js.Any] | Null = js.native
-  def RegisteredFunctions(Index1: String): SafeArray[js.Any] | Null = js.native
-  def RegisteredFunctions(Index1: String, Index2: String): SafeArray[js.Any] | Null = js.native
-  def RegisteredFunctions(Index1: Unit, Index2: String): SafeArray[js.Any] | Null = js.native
+  def RegisteredFunctions(): SafeArray[Any] | Null = js.native
+  def RegisteredFunctions(Index1: String): SafeArray[Any] | Null = js.native
+  def RegisteredFunctions(Index1: String, Index2: String): SafeArray[Any] | Null = js.native
+  def RegisteredFunctions(Index1: Unit, Index2: String): SafeArray[Any] | Null = js.native
   
   def Repeat(): Unit = js.native
   
@@ -889,58 +882,58 @@ trait Application extends StObject {
   
   def Run(
     Macro: js.UndefOr[String | Range | Double],
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
   def Save(): Unit = js.native
-  def Save(Filename: js.Any): Unit = js.native
+  def Save(Filename: Any): Unit = js.native
   
   var SaveISO8601Dates: Boolean = js.native
   
   /** @deprecated */
   def SaveWorkspace(): Unit = js.native
-  def SaveWorkspace(Filename: js.Any): Unit = js.native
+  def SaveWorkspace(Filename: Any): Unit = js.native
   
   var ScreenUpdating: Boolean = js.native
   
-  val Selection: js.Any = js.native
+  val Selection: Any = js.native
   
   def SendKeys(Keys: String): Unit = js.native
   def SendKeys(Keys: String, Wait: Boolean): Unit = js.native
   
   def SetDefaultChart(): Unit = js.native
-  def SetDefaultChart(FormatName: js.Any): Unit = js.native
-  def SetDefaultChart(FormatName: js.Any, Gallery: js.Any): Unit = js.native
-  def SetDefaultChart(FormatName: Unit, Gallery: js.Any): Unit = js.native
+  def SetDefaultChart(FormatName: Any): Unit = js.native
+  def SetDefaultChart(FormatName: Any, Gallery: Any): Unit = js.native
+  def SetDefaultChart(FormatName: Unit, Gallery: Any): Unit = js.native
   
   def SharePointVersion(bstrUrl: String): Double = js.native
   
@@ -986,7 +979,7 @@ trait Application extends StObject {
   @JSName("SmartArtQuickStyles")
   val SmartArtQuickStyles_Original: SmartArtQuickStyles = js.native
   
-  def SmartTagRecognizers(Index: js.Any): SmartTagRecognizer = js.native
+  def SmartTagRecognizers(Index: Any): SmartTagRecognizer = js.native
   @JSName("SmartTagRecognizers")
   val SmartTagRecognizers_Original: SmartTagRecognizers = js.native
   
@@ -1009,8 +1002,8 @@ trait Application extends StObject {
     */
   var StatusBar: String | `false` = js.native
   
-  def Support(Object: js.Any, ID: Double): js.Any = js.native
-  def Support(Object: js.Any, ID: Double, arg: js.Any): js.Any = js.native
+  def Support(Object: Any, ID: Double): Any = js.native
+  def Support(Object: Any, ID: Double, arg: Any): Any = js.native
   
   val TemplatesPath: String = js.native
   
@@ -1024,7 +1017,7 @@ trait Application extends StObject {
   
   var ThousandsSeparator: String = js.native
   
-  def Toolbars(Index: js.Any): Toolbar = js.native
+  def Toolbars(Index: Any): Toolbar = js.native
   @JSName("Toolbars")
   val Toolbars_Original: Toolbars = js.native
   
@@ -1081,8 +1074,8 @@ trait Application extends StObject {
   
   var UseSystemSeparators: Boolean = js.native
   
-  def UsedObjects(Index: String): js.Any = js.native
-  def UsedObjects(Index: Double): js.Any = js.native
+  def UsedObjects(Index: String): Any = js.native
+  def UsedObjects(Index: Double): Any = js.native
   @JSName("UsedObjects")
   val UsedObjects_Original: UsedObjects = js.native
   
@@ -1106,7 +1099,7 @@ trait Application extends StObject {
   def Volatile(): Unit = js.native
   def Volatile(Volatile: Boolean): Unit = js.native
   
-  def Wait(Time: js.Any): Boolean = js.native
+  def Wait(Time: Any): Boolean = js.native
   
   var WarnOnFunctionNameConflict: Boolean = js.native
   
@@ -1142,89 +1135,89 @@ trait Application extends StObject {
   
   val _Default: String = js.native
   
-  def _Evaluate(Name: js.Any): js.Any = js.native
+  def _Evaluate(Name: Any): Any = js.native
   
   def _FindFile(): Unit = js.native
   
   def _MacroOptions(
-    Macro: js.UndefOr[js.Any],
-    Description: js.UndefOr[js.Any],
-    HasMenu: js.UndefOr[js.Any],
-    MenuText: js.UndefOr[js.Any],
-    HasShortcutKey: js.UndefOr[js.Any],
-    ShortcutKey: js.UndefOr[js.Any],
-    Category: js.UndefOr[js.Any],
-    StatusBar: js.UndefOr[js.Any],
-    HelpContextID: js.UndefOr[js.Any],
-    HelpFile: js.UndefOr[js.Any]
+    Macro: js.UndefOr[Any],
+    Description: js.UndefOr[Any],
+    HasMenu: js.UndefOr[Any],
+    MenuText: js.UndefOr[Any],
+    HasShortcutKey: js.UndefOr[Any],
+    ShortcutKey: js.UndefOr[Any],
+    Category: js.UndefOr[Any],
+    StatusBar: js.UndefOr[Any],
+    HelpContextID: js.UndefOr[Any],
+    HelpFile: js.UndefOr[Any]
   ): Unit = js.native
   
   def _Run2(
-    Macro: js.UndefOr[js.Any],
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Macro: js.UndefOr[Any],
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
   def _WSFunction(
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
-  def _Wait(Time: js.Any): Unit = js.native
+  def _Wait(Time: Any): Unit = js.native
 }

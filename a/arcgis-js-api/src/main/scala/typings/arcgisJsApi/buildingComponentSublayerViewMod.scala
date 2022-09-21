@@ -22,7 +22,7 @@ object buildingComponentSublayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-BuildingComponentSublayerView.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BuildingComponentSublayerView {
     def this(properties: BuildingComponentSublayerViewProperties) = this()

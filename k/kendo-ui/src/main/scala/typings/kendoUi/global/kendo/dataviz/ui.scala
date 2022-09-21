@@ -5,6 +5,7 @@ import typings.kendoUi.anon.TypeofWidget
 import typings.kendoUi.kendo.dataviz.ui.ArcGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.BarcodeOptions
 import typings.kendoUi.kendo.dataviz.ui.ChartOptions
+import typings.kendoUi.kendo.dataviz.ui.CircularGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.DiagramOptions
 import typings.kendoUi.kendo.dataviz.ui.LinearGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.MapOptions
@@ -27,7 +28,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.ArcGauge")
   @js.native
-  class ArcGauge protected ()
+  open class ArcGauge protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.ArcGauge {
     def this(element: Element) = this()
@@ -51,7 +52,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.Barcode")
   @js.native
-  class Barcode protected ()
+  open class Barcode protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.Barcode {
     def this(element: Element) = this()
@@ -75,7 +76,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.Chart")
   @js.native
-  class Chart protected ()
+  open class Chart protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.Chart {
     def this(element: Element) = this()
@@ -97,9 +98,33 @@ object ui {
     inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Chart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
+  @JSGlobal("kendo.dataviz.ui.CircularGauge")
+  @js.native
+  open class CircularGauge protected ()
+    extends StObject
+       with typings.kendoUi.kendo.dataviz.ui.CircularGauge {
+    def this(element: Element) = this()
+    def this(element: Element, options: CircularGaugeOptions) = this()
+  }
+  object CircularGauge {
+    
+    @JSGlobal("kendo.dataviz.ui.CircularGauge")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.CircularGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.CircularGauge]
+    
+    /* static member */
+    @JSGlobal("kendo.dataviz.ui.CircularGauge.fn")
+    @js.native
+    def fn: typings.kendoUi.kendo.dataviz.ui.CircularGauge = js.native
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.CircularGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  }
+  
   @JSGlobal("kendo.dataviz.ui.Diagram")
   @js.native
-  class Diagram protected ()
+  open class Diagram protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.Diagram {
     def this(element: Element) = this()
@@ -123,7 +148,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.LinearGauge")
   @js.native
-  class LinearGauge protected ()
+  open class LinearGauge protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.LinearGauge {
     def this(element: Element) = this()
@@ -147,7 +172,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.Map")
   @js.native
-  class Map protected ()
+  open class Map protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.Map {
     def this(element: Element) = this()
@@ -171,7 +196,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.QRCode")
   @js.native
-  class QRCode protected ()
+  open class QRCode protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.QRCode {
     def this(element: Element) = this()
@@ -195,7 +220,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.RadialGauge")
   @js.native
-  class RadialGauge protected ()
+  open class RadialGauge protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.RadialGauge {
     def this(element: Element) = this()
@@ -219,7 +244,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.Sparkline")
   @js.native
-  class Sparkline protected ()
+  open class Sparkline protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.Sparkline {
     def this(element: Element) = this()
@@ -243,7 +268,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.StockChart")
   @js.native
-  class StockChart protected ()
+  open class StockChart protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.StockChart {
     def this(element: Element) = this()
@@ -267,7 +292,7 @@ object ui {
   
   @JSGlobal("kendo.dataviz.ui.TreeMap")
   @js.native
-  class TreeMap protected ()
+  open class TreeMap protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.ui.TreeMap {
     def this(element: Element) = this()
@@ -292,7 +317,7 @@ object ui {
   inline def plugin(
     widget: TypeofWidget & (Instantiable2[/* element */ Element, /* options */ js.UndefOr[js.Object], Widget])
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def plugin(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def plugin(widget: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerTheme(name: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTheme(name: String, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

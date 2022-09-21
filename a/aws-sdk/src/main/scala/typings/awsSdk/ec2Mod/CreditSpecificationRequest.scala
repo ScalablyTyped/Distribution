@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreditSpecificationRequest extends StObject {
   
   /**
-    * The credit option for CPU usage of a T2, T3, or T3a instance. Valid values are standard and unlimited.
+    * The credit option for CPU usage of a T instance. Valid values: standard | unlimited 
     */
   var CpuCredits: String
 }

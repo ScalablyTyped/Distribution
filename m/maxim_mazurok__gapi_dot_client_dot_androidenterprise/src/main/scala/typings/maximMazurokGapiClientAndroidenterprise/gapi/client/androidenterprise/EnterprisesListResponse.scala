@@ -22,6 +22,6 @@ object EnterprisesListResponse {
     
     inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     
-    inline def setEnterpriseVarargs(value: Enterprise*): Self = StObject.set(x, "enterprise", js.Array(value :_*))
+    inline def setEnterpriseVarargs(value: Enterprise*): Self = StObject.set(x, "enterprise", js.Array(value*))
   }
 }

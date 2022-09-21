@@ -2,6 +2,7 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleSpreadsheet.anon.Data
+import typings.googleSpreadsheet.anon.End
 import typings.googleSpreadsheet.anon.Insert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetWorksheet")
 @js.native
-class GoogleSpreadsheetWorksheet protected ()
+open class GoogleSpreadsheetWorksheet protected ()
   extends StObject
      with WorksheetBasicProperties {
   def this(parentSpreadsheet: GoogleSpreadsheetWorksheet, hasPropertiesData: Data) = this()
@@ -69,9 +70,23 @@ class GoogleSpreadsheetWorksheet protected ()
   
   /**
     * @description
-    * clear all data/cells in the worksheet
+    * defaults to clearing the entire sheet, or pass in a specific a1 range
+    *
+    * @param a1Range optional specific range within the sheet to clear
     */
   def clear(): js.Promise[Unit] = js.native
+  def clear(a1Range: String): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * clear data/cells in a range of rows, defaulting to all rows after the header row(s)
+    *
+    * @param options options to control which rows to clear:
+    * - start: A1 style row number of first row to clear, defaults to first non-header row
+    * - end: A1 style row number of last row to clear, defaults to last row
+    */
+  def clearRows(): js.Promise[Unit] = js.native
+  def clearRows(options: End): js.Promise[Unit] = js.native
   
   /**
     * @description
@@ -85,7 +100,7 @@ class GoogleSpreadsheetWorksheet protected ()
     *
     * @param destinationSpreadsheetId destination spreadsheet doc ID
     */
-  def copyToSpreadSheet(destinationSpreadsheetId: String): js.Promise[Unit] = js.native
+  def copyToSpreadsheet(destinationSpreadsheetId: String): js.Promise[Unit] = js.native
   
   /**
     * @description
@@ -151,6 +166,19 @@ class GoogleSpreadsheetWorksheet protected ()
   
   /**
     * @description
+    * insert into worksheet "dimension properties"
+    *
+    * @param columnsOrRows which dimension to update
+    *
+    * @param bounds start index and end index of the dimension to be added
+    *
+    * @param inheritFromBefore to inherit properties from the previous dimension
+    */
+  def insertDimension(columnsOrRows: WorksheetDimension, bounds: WorksheetDimensionBounds): js.Promise[Unit] = js.native
+  def insertDimension(columnsOrRows: WorksheetDimension, bounds: WorksheetDimensionBounds, inheritFromBefore: Boolean): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
     * A1 column letter of the last column in the worksheet
     */
   var lastColumnLetter: String = js.native
@@ -164,7 +192,9 @@ class GoogleSpreadsheetWorksheet protected ()
     * @param filters single or array of filters
     * - strings are treated as an A1 range
     * - objects are treated as a WorksheetGridRange
+    * - if skipped, all cells are loaded
     */
+  def loadCells(): js.Promise[Unit] = js.native
   def loadCells(filters: String): js.Promise[Unit] = js.native
   def loadCells(filters: js.Array[String | WorksheetGridRange]): js.Promise[Unit] = js.native
   def loadCells(filters: WorksheetGridRange): js.Promise[Unit] = js.native
@@ -173,8 +203,11 @@ class GoogleSpreadsheetWorksheet protected ()
     * @description
     * loads the header row (first row) of the sheet
     * - usually do not need to call this directly
+    *
+    * @param headerRowIndex The index of the header row, if not the first. NOTE: not zero-indexed
     */
   def loadHeaderRow(): js.Promise[Unit] = js.native
+  def loadHeaderRow(headerRowIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * @description
@@ -232,8 +265,10 @@ class GoogleSpreadsheetWorksheet protected ()
     * set the header (first) row in the worksheet
     *
     * @param headers
+    * @param headerRowIndex The index of the header row, if not the first. NOTE: not zero-indexed
     */
   def setHeaderRow(headers: js.Array[String]): js.Promise[Unit] = js.native
+  def setHeaderRow(headers: js.Array[String], headerRowIndex: Double): js.Promise[Unit] = js.native
   
   // #endregion
   // #region NON-BASIC PROPERTIES

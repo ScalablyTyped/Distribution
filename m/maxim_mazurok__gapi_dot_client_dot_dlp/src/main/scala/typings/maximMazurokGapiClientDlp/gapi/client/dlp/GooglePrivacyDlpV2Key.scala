@@ -33,6 +33,6 @@ object GooglePrivacyDlpV2Key {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: GooglePrivacyDlpV2PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: GooglePrivacyDlpV2PathElement*): Self = StObject.set(x, "path", js.Array(value*))
   }
 }

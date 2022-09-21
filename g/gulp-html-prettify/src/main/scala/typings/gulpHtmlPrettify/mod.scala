@@ -1,7 +1,6 @@
 package typings.gulpHtmlPrettify
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,10 @@ object mod extends Shortcut {
   @js.native
   val ^ : GulpHtmlPrettify = js.native
   
-  type GulpHtmlPrettify = js.Function1[/* options */ js.UndefOr[GulpHtmlPrettifyOptions], ReadWriteStream]
+  type GulpHtmlPrettify = js.Function1[
+    /* options */ js.UndefOr[GulpHtmlPrettifyOptions], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   trait GulpHtmlPrettifyOptions extends StObject {
     

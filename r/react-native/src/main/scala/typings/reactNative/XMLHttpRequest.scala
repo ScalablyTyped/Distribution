@@ -27,14 +27,14 @@ trait XMLHttpRequest
   def abort(): Unit = js.native
   
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   
   def getAllResponseHeaders(): String = js.native
   
   def getResponseHeader(header: String): String | Null = js.native
   
   //  msCaching: string;
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   //  msCachingEnabled(): boolean;
   def open(method: String, url: String): Unit = js.native
@@ -54,9 +54,9 @@ trait XMLHttpRequest
   
   //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   
-  val response: js.Any = js.native
+  val response: Any = js.native
   
   val responseText: String = js.native
   
@@ -67,7 +67,7 @@ trait XMLHttpRequest
   val responseXML: Document | Null = js.native
   
   def send(): Unit = js.native
-  def send(data: js.Any): Unit = js.native
+  def send(data: Any): Unit = js.native
   
   def setRequestHeader(header: String, value: String): Unit = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object posterizeMod {
   
-  @JSImport("konva/types/filters/Posterize", "Posterize")
+  @JSImport("konva/lib/filters/Posterize", "Posterize")
   @js.native
   val Posterize: Filter = js.native
 }

@@ -151,53 +151,45 @@ object renderPlaygroundPageMod {
   trait ISettings extends StObject {
     
     @JSName("editor.cursorShape")
-    var editorDotcursorShape: CursorShape
+    var editorDotcursorShape: js.UndefOr[CursorShape] = js.undefined
     
     @JSName("editor.fontFamily")
-    var editorDotfontFamily: String
+    var editorDotfontFamily: js.UndefOr[String] = js.undefined
     
     @JSName("editor.fontSize")
-    var editorDotfontSize: Double
+    var editorDotfontSize: js.UndefOr[Double] = js.undefined
     
     @JSName("editor.reuseHeaders")
-    var editorDotreuseHeaders: Boolean
+    var editorDotreuseHeaders: js.UndefOr[Boolean] = js.undefined
     
     @JSName("editor.theme")
-    var editorDottheme: Theme
+    var editorDottheme: js.UndefOr[Theme] = js.undefined
     
     @JSName("general.betaUpdates")
-    var generalDotbetaUpdates: Boolean
+    var generalDotbetaUpdates: js.UndefOr[Boolean] = js.undefined
     
     @JSName("queryPlan.hideQueryPlanResponse")
     var queryPlanDothideQueryPlanResponse: js.UndefOr[Boolean] = js.undefined
     
     @JSName("request.credentials")
-    var requestDotcredentials: String
+    var requestDotcredentials: js.UndefOr[String] = js.undefined
+    
+    @JSName("schema.polling.enable")
+    var schemaDotpollingDotenable: js.UndefOr[Boolean] = js.undefined
+    
+    @JSName("schema.polling.endpointFilter")
+    var schemaDotpollingDotendpointFilter: js.UndefOr[String] = js.undefined
+    
+    @JSName("schema.polling.interval")
+    var schemaDotpollingDotinterval: js.UndefOr[Double] = js.undefined
     
     @JSName("tracing.hideTracingResponse")
-    var tracingDothideTracingResponse: Boolean
+    var tracingDothideTracingResponse: js.UndefOr[Boolean] = js.undefined
   }
   object ISettings {
     
-    inline def apply(
-      editorDotcursorShape: CursorShape,
-      editorDotfontFamily: String,
-      editorDotfontSize: Double,
-      editorDotreuseHeaders: Boolean,
-      editorDottheme: Theme,
-      generalDotbetaUpdates: Boolean,
-      requestDotcredentials: String,
-      tracingDothideTracingResponse: Boolean
-    ): ISettings = {
+    inline def apply(): ISettings = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("editor.cursorShape")(editorDotcursorShape.asInstanceOf[js.Any])
-      __obj.updateDynamic("editor.fontFamily")(editorDotfontFamily.asInstanceOf[js.Any])
-      __obj.updateDynamic("editor.fontSize")(editorDotfontSize.asInstanceOf[js.Any])
-      __obj.updateDynamic("editor.reuseHeaders")(editorDotreuseHeaders.asInstanceOf[js.Any])
-      __obj.updateDynamic("editor.theme")(editorDottheme.asInstanceOf[js.Any])
-      __obj.updateDynamic("general.betaUpdates")(generalDotbetaUpdates.asInstanceOf[js.Any])
-      __obj.updateDynamic("request.credentials")(requestDotcredentials.asInstanceOf[js.Any])
-      __obj.updateDynamic("tracing.hideTracingResponse")(tracingDothideTracingResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISettings]
     }
     
@@ -205,15 +197,27 @@ object renderPlaygroundPageMod {
       
       inline def setEditorDotcursorShape(value: CursorShape): Self = StObject.set(x, "editor.cursorShape", value.asInstanceOf[js.Any])
       
+      inline def setEditorDotcursorShapeUndefined: Self = StObject.set(x, "editor.cursorShape", js.undefined)
+      
       inline def setEditorDotfontFamily(value: String): Self = StObject.set(x, "editor.fontFamily", value.asInstanceOf[js.Any])
+      
+      inline def setEditorDotfontFamilyUndefined: Self = StObject.set(x, "editor.fontFamily", js.undefined)
       
       inline def setEditorDotfontSize(value: Double): Self = StObject.set(x, "editor.fontSize", value.asInstanceOf[js.Any])
       
+      inline def setEditorDotfontSizeUndefined: Self = StObject.set(x, "editor.fontSize", js.undefined)
+      
       inline def setEditorDotreuseHeaders(value: Boolean): Self = StObject.set(x, "editor.reuseHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setEditorDotreuseHeadersUndefined: Self = StObject.set(x, "editor.reuseHeaders", js.undefined)
       
       inline def setEditorDottheme(value: Theme): Self = StObject.set(x, "editor.theme", value.asInstanceOf[js.Any])
       
+      inline def setEditorDotthemeUndefined: Self = StObject.set(x, "editor.theme", js.undefined)
+      
       inline def setGeneralDotbetaUpdates(value: Boolean): Self = StObject.set(x, "general.betaUpdates", value.asInstanceOf[js.Any])
+      
+      inline def setGeneralDotbetaUpdatesUndefined: Self = StObject.set(x, "general.betaUpdates", js.undefined)
       
       inline def setQueryPlanDothideQueryPlanResponse(value: Boolean): Self = StObject.set(x, "queryPlan.hideQueryPlanResponse", value.asInstanceOf[js.Any])
       
@@ -221,24 +225,40 @@ object renderPlaygroundPageMod {
       
       inline def setRequestDotcredentials(value: String): Self = StObject.set(x, "request.credentials", value.asInstanceOf[js.Any])
       
+      inline def setRequestDotcredentialsUndefined: Self = StObject.set(x, "request.credentials", js.undefined)
+      
+      inline def setSchemaDotpollingDotenable(value: Boolean): Self = StObject.set(x, "schema.polling.enable", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaDotpollingDotenableUndefined: Self = StObject.set(x, "schema.polling.enable", js.undefined)
+      
+      inline def setSchemaDotpollingDotendpointFilter(value: String): Self = StObject.set(x, "schema.polling.endpointFilter", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaDotpollingDotendpointFilterUndefined: Self = StObject.set(x, "schema.polling.endpointFilter", js.undefined)
+      
+      inline def setSchemaDotpollingDotinterval(value: Double): Self = StObject.set(x, "schema.polling.interval", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaDotpollingDotintervalUndefined: Self = StObject.set(x, "schema.polling.interval", js.undefined)
+      
       inline def setTracingDothideTracingResponse(value: Boolean): Self = StObject.set(x, "tracing.hideTracingResponse", value.asInstanceOf[js.Any])
+      
+      inline def setTracingDothideTracingResponseUndefined: Self = StObject.set(x, "tracing.hideTracingResponse", js.undefined)
     }
   }
   
   trait IntrospectionResult extends StObject {
     
-    var __schema: js.Any
+    var __schema: Any
   }
   object IntrospectionResult {
     
-    inline def apply(__schema: js.Any): IntrospectionResult = {
+    inline def apply(__schema: Any): IntrospectionResult = {
       val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntrospectionResult]
     }
     
     extension [Self <: IntrospectionResult](x: Self) {
       
-      inline def set__schema(value: js.Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
+      inline def set__schema(value: Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,11 +266,11 @@ object renderPlaygroundPageMod {
     
     var codeTheme: js.UndefOr[EditorColours] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.undefined
+    var config: js.UndefOr[Any] = js.undefined
     
     var endpoint: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
     
     var schema: js.UndefOr[IntrospectionResult] = js.undefined
     
@@ -275,7 +295,7 @@ object renderPlaygroundPageMod {
       
       inline def setCodeThemeUndefined: Self = StObject.set(x, "codeTheme", js.undefined)
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -283,7 +303,7 @@ object renderPlaygroundPageMod {
       
       inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
@@ -303,7 +323,7 @@ object renderPlaygroundPageMod {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
       
@@ -391,7 +411,7 @@ object renderPlaygroundPageMod {
       
       inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
       
-      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value*))
       
       inline def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       

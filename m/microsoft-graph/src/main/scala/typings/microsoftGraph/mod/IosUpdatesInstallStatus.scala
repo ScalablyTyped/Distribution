@@ -6,10 +6,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.success
-  - typings.microsoftGraph.microsoftGraphStrings.available
-  - typings.microsoftGraph.microsoftGraphStrings.idle
-  - typings.microsoftGraph.microsoftGraphStrings.unknown_
   - typings.microsoftGraph.microsoftGraphStrings.deviceOsHigherThanDesiredOsVersion
   - typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError
   - typings.microsoftGraph.microsoftGraphStrings.notSupportedOperation
@@ -24,6 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.downloadRequiresComputer
   - typings.microsoftGraph.microsoftGraphStrings.downloadFailed
   - typings.microsoftGraph.microsoftGraphStrings.downloading
+  - typings.microsoftGraph.microsoftGraphStrings.success
+  - typings.microsoftGraph.microsoftGraphStrings.available
+  - typings.microsoftGraph.microsoftGraphStrings.idle
+  - typings.microsoftGraph.microsoftGraphStrings.unknown_
 */
 trait IosUpdatesInstallStatus extends StObject
 object IosUpdatesInstallStatus {

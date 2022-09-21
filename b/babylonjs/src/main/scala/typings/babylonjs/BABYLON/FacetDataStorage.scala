@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Ind
-import typings.babylonjs.anon.X
+import typings.babylonjs.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ trait FacetDataStorage extends StObject {
   
   var facetNormals: js.Array[Vector3]
   
-  var facetParameters: js.Any
+  var facetParameters: Any
   
   var facetPartitioning: js.Array[js.Array[Double]]
   
@@ -43,7 +43,7 @@ trait FacetDataStorage extends StObject {
   
   var partitioningSubdivisions: Double
   
-  var subDiv: X
+  var subDiv: Y
 }
 object FacetDataStorage {
   
@@ -59,13 +59,13 @@ object FacetDataStorage {
     facetDepthSortOrigin: Vector3,
     facetNb: Double,
     facetNormals: js.Array[Vector3],
-    facetParameters: js.Any,
+    facetParameters: Any,
     facetPartitioning: js.Array[js.Array[Double]],
     facetPositions: js.Array[Vector3],
     invertedMatrix: Matrix,
     partitioningBBoxRatio: Double,
     partitioningSubdivisions: Double,
-    subDiv: X
+    subDiv: Y
   ): FacetDataStorage = {
     val __obj = js.Dynamic.literal(bbSize = bbSize.asInstanceOf[js.Any], depthSortedFacets = depthSortedFacets.asInstanceOf[js.Any], depthSortedIndices = depthSortedIndices.asInstanceOf[js.Any], facetDataEnabled = facetDataEnabled.asInstanceOf[js.Any], facetDepthSort = facetDepthSort.asInstanceOf[js.Any], facetDepthSortEnabled = facetDepthSortEnabled.asInstanceOf[js.Any], facetDepthSortFrom = facetDepthSortFrom.asInstanceOf[js.Any], facetDepthSortFunction = js.Any.fromFunction2(facetDepthSortFunction), facetDepthSortOrigin = facetDepthSortOrigin.asInstanceOf[js.Any], facetNb = facetNb.asInstanceOf[js.Any], facetNormals = facetNormals.asInstanceOf[js.Any], facetParameters = facetParameters.asInstanceOf[js.Any], facetPartitioning = facetPartitioning.asInstanceOf[js.Any], facetPositions = facetPositions.asInstanceOf[js.Any], invertedMatrix = invertedMatrix.asInstanceOf[js.Any], partitioningBBoxRatio = partitioningBBoxRatio.asInstanceOf[js.Any], partitioningSubdivisions = partitioningSubdivisions.asInstanceOf[js.Any], subDiv = subDiv.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetDataStorage]
@@ -77,11 +77,11 @@ object FacetDataStorage {
     
     inline def setDepthSortedFacets(value: js.Array[Ind]): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
     
-    inline def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value :_*))
+    inline def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value*))
     
     inline def setDepthSortedIndices(value: IndicesArray): Self = StObject.set(x, "depthSortedIndices", value.asInstanceOf[js.Any])
     
-    inline def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value :_*))
+    inline def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value*))
     
     inline def setFacetDataEnabled(value: Boolean): Self = StObject.set(x, "facetDataEnabled", value.asInstanceOf[js.Any])
     
@@ -99,17 +99,17 @@ object FacetDataStorage {
     
     inline def setFacetNormals(value: js.Array[Vector3]): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
     
-    inline def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value :_*))
+    inline def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value*))
     
-    inline def setFacetParameters(value: js.Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
+    inline def setFacetParameters(value: Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
     
     inline def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
     
-    inline def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value :_*))
+    inline def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value*))
     
     inline def setFacetPositions(value: js.Array[Vector3]): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
     
-    inline def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value :_*))
+    inline def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value*))
     
     inline def setInvertedMatrix(value: Matrix): Self = StObject.set(x, "invertedMatrix", value.asInstanceOf[js.Any])
     
@@ -117,6 +117,6 @@ object FacetDataStorage {
     
     inline def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
     
-    inline def setSubDiv(value: X): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
+    inline def setSubDiv(value: Y): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
   }
 }

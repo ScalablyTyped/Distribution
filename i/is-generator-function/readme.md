@@ -10,15 +10,15 @@ Determine if a function is a native generator function.
 | ------------------ | :-------------: |
 | Full name          | is-generator-function |
 | Keywords           | generator, generator function, es6, es2015, yield, function, function* |
-| # releases         | 2 |
-| # dependents       | 70 |
-| # downloads        | 56312172 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1779967333333332E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/ljharb/is-generator-function#readme)
-- [Bugs](https://github.com/ljharb/is-generator-function/issues)
-- [Repository](https://github.com/ljharb/is-generator-function)
+- [Homepage](https://github.com/inspect-js/is-generator-function#readme)
+- [Bugs](https://github.com/inspect-js/is-generator-function/issues)
+- [Repository](https://github.com/inspect-js/is-generator-function)
 - [Npm](https://www.npmjs.com/package/is-generator-function)
     
 

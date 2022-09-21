@@ -25,7 +25,7 @@ object Document {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

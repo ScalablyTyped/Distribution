@@ -12,7 +12,7 @@ trait GridDataBindingEvent
   
   var index: js.UndefOr[Double] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
 }
 object GridDataBindingEvent {
   
@@ -31,7 +31,7 @@ object GridDataBindingEvent {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
   }

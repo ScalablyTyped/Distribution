@@ -19,7 +19,7 @@ trait NotebookExecution extends StObject {
   /**
     * The timestamp when notebook execution ended.
     */
-  var EndTime: js.UndefOr[Date] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The execution engine, such as an EMR cluster, used to run the EMR notebook and perform the notebook execution.
@@ -59,7 +59,7 @@ trait NotebookExecution extends StObject {
   /**
     * The timestamp when notebook execution started.
     */
-  var StartTime: js.UndefOr[Date] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the notebook execution.    START_PENDING indicates that the cluster has received the execution request but execution has not begun.    STARTING indicates that the execution is starting on the cluster.    RUNNING indicates that the execution is being processed by the cluster.    FINISHING indicates that execution processing is in the final stages.    FINISHED indicates that the execution has completed without error.    FAILING indicates that the execution is failing and will not finish successfully.    FAILED indicates that the execution failed.    STOP_PENDING indicates that the cluster has received a StopNotebookExecution request and the stop is pending.    STOPPING indicates that the cluster is in the process of stopping the execution as a result of a StopNotebookExecution request.    STOPPED indicates that the execution stopped because of a StopNotebookExecution request.  
@@ -67,7 +67,7 @@ trait NotebookExecution extends StObject {
   var Status: js.UndefOr[NotebookExecutionStatus] = js.undefined
   
   /**
-    * A list of tags associated with a notebook execution. Tags are user-defined key value pairs that consist of a required key string with a maximum of 128 characters and an optional value string with a maximum of 256 characters.
+    * A list of tags associated with a notebook execution. Tags are user-defined key-value pairs that consist of a required key string with a maximum of 128 characters and an optional value string with a maximum of 256 characters.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -88,7 +88,7 @@ object NotebookExecution {
     
     inline def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -120,7 +120,7 @@ object NotebookExecution {
     
     inline def setOutputNotebookURIUndefined: Self = StObject.set(x, "OutputNotebookURI", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -132,6 +132,6 @@ object NotebookExecution {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -22,7 +22,7 @@ object Data {
     
     inline def setData(value: js.Array[integer]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: integer*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: integer*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

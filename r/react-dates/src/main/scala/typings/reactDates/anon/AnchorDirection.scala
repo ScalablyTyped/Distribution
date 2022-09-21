@@ -39,7 +39,7 @@ trait AnchorDirection extends StObject {
   var dayAriaLabelFormat: js.UndefOr[String] = js.native
   
   // navigation related props
-  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, js.Any]) | Null] = js.native
+  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, Any]) | Null] = js.native
   
   var daySize: js.UndefOr[Double] = js.native
   

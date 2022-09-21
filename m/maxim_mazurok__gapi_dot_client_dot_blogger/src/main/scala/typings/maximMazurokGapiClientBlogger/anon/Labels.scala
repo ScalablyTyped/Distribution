@@ -145,7 +145,7 @@ object Labels {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

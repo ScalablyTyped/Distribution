@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerParameterType")
 @js.native
-class ASPxDesignerParameterType ()
+open class ASPxDesignerParameterType ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerParameterType {
   
   /* CompleteClass */
-  var defaultVal: js.Any = js.native
+  var defaultVal: Any = js.native
   
   /* CompleteClass */
   var displayValue: String = js.native
@@ -23,5 +23,5 @@ class ASPxDesignerParameterType ()
   var value: String = js.native
   
   /* CompleteClass */
-  override def valueConverter(`val`: js.Any): js.Any = js.native
+  override def valueConverter(`val`: Any): Any = js.native
 }

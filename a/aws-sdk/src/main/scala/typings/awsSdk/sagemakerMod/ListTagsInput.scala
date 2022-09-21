@@ -12,7 +12,7 @@ trait ListTagsInput extends StObject {
   var MaxResults: js.UndefOr[ListTagsMaxResults] = js.undefined
   
   /**
-    *  If the response to the previous ListTags request is truncated, Amazon SageMaker returns this token. To retrieve the next set of tags, use it in the subsequent request. 
+    *  If the response to the previous ListTags request is truncated, SageMaker returns this token. To retrieve the next set of tags, use it in the subsequent request. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   

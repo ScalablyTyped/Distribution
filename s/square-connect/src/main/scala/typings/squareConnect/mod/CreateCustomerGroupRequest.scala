@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateCustomerGroupRequest")
 @js.native
-class CreateCustomerGroupRequest () extends StObject {
+open class CreateCustomerGroupRequest () extends StObject {
   
   /**
     * The customer group to create.

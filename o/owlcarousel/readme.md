@@ -11,9 +11,9 @@ Owl Carousel. Touch enabled jQuery plugin that lets you create beautiful respons
 | Full name          | owlcarousel |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 13520 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1903.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/OwlFonk/OwlCarousel)

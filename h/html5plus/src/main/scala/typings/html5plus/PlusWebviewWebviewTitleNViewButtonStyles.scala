@@ -121,7 +121,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var onclick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 按钮上是否显示红点
@@ -226,7 +226,7 @@ object PlusWebviewWebviewTitleNViewButtonStyles {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setOnclick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: /* result */ Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     

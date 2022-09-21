@@ -32,6 +32,11 @@ trait ExtendedS3DestinationUpdate extends StObject {
   var DataFormatConversionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.DataFormatConversionConfiguration] = js.undefined
   
   /**
+    * The configuration of the dynamic partitioning mechanism that creates smaller data sets from the streaming data by partitioning it based on partition keys. Currently, dynamic partitioning is only supported for Amazon S3 destinations. For more information, see https://docs.aws.amazon.com/firehose/latest/dev/dynamic-partitioning.html 
+    */
+  var DynamicPartitioningConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.DynamicPartitioningConfiguration] = js.undefined
+  
+  /**
     * The encryption configuration. If no value is specified, the default is no encryption.
     */
   var EncryptionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.EncryptionConfiguration] = js.undefined
@@ -94,6 +99,10 @@ object ExtendedS3DestinationUpdate {
     inline def setDataFormatConversionConfiguration(value: DataFormatConversionConfiguration): Self = StObject.set(x, "DataFormatConversionConfiguration", value.asInstanceOf[js.Any])
     
     inline def setDataFormatConversionConfigurationUndefined: Self = StObject.set(x, "DataFormatConversionConfiguration", js.undefined)
+    
+    inline def setDynamicPartitioningConfiguration(value: DynamicPartitioningConfiguration): Self = StObject.set(x, "DynamicPartitioningConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicPartitioningConfigurationUndefined: Self = StObject.set(x, "DynamicPartitioningConfiguration", js.undefined)
     
     inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     

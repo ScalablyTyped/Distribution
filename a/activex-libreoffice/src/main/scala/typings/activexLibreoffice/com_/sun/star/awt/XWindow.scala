@@ -95,7 +95,7 @@ object XWindow {
     addWindowListener: XWindowListener => Unit,
     dispose: () => Unit,
     getPosSize: () => Rectangle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeFocusListener: XFocusListener => Unit,

@@ -10,10 +10,10 @@ Express Routers 🚦 - just another way to create router in express apps.
 | ------------------ | :-------------: |
 | Full name          | express-routers |
 | Keywords           | express, router, express router, express routing, typescript |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 155 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19.666666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/chanlito/express-routers#readme)

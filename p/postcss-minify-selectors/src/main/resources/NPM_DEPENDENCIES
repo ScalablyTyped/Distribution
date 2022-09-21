@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-minify-selectors" : "5.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-minify-selectors" : "5.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

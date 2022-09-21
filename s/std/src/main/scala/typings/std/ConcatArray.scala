@@ -8,13 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ConcatArray[T]
   extends StObject
-     with /* n */ NumberDictionary[T] {
+     with /* standard es5 */
+/* n */ NumberDictionary[T] {
   
+  /* standard es5 */
   def join(): java.lang.String = js.native
   def join(separator: java.lang.String): java.lang.String = js.native
   
+  /* standard es5 */
   val length: Double = js.native
   
+  /* standard es5 */
   def slice(): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native

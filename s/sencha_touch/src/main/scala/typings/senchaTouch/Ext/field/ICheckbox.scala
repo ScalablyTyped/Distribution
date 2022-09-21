@@ -26,7 +26,7 @@ trait ICheckbox
   /** [Method] Returns the field checked value
     * @returns Mixed The field value.
     */
-  var getChecked: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getChecked: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns an array of values from the checkboxes in the group that are checked
     * @returns Array
@@ -36,7 +36,7 @@ trait ICheckbox
   /** [Method] Returns the submit value for the checkbox which can be used when submitting forms
     * @returns Boolean/String value The value of value or true, if checked.
     */
-  var getSubmitValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSubmitValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns String
@@ -106,7 +106,7 @@ object ICheckbox {
     
     inline def setDoUnCheckedUndefined: Self = StObject.set(x, "doUnChecked", js.undefined)
     
-    inline def setGetChecked(value: () => js.Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+    inline def setGetChecked(value: () => Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
     
     inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
     
@@ -114,7 +114,7 @@ object ICheckbox {
     
     inline def setGetGroupValuesUndefined: Self = StObject.set(x, "getGroupValues", js.undefined)
     
-    inline def setGetSubmitValue(value: () => js.Any): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
+    inline def setGetSubmitValue(value: () => Any): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
     inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     

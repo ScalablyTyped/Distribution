@@ -25,6 +25,6 @@ object INxAxisData {
     
     inline def setQAxis(value: js.Array[INxAxisTicks]): Self = StObject.set(x, "qAxis", value.asInstanceOf[js.Any])
     
-    inline def setQAxisVarargs(value: INxAxisTicks*): Self = StObject.set(x, "qAxis", js.Array(value :_*))
+    inline def setQAxisVarargs(value: INxAxisTicks*): Self = StObject.set(x, "qAxis", js.Array(value*))
   }
 }

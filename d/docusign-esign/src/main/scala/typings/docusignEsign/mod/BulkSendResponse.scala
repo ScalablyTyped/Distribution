@@ -47,12 +47,12 @@ object BulkSendResponse {
     
     inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value*))
     
     inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object validateByMod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var constraints: js.UndefOr[js.Array[Any]] = js.undefined
     
     var name: String
     
@@ -46,11 +46,11 @@ object validateByMod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Array[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      inline def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: Any*): Self = StObject.set(x, "constraints", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

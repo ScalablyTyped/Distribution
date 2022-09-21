@@ -8,9 +8,9 @@ trait PivotGridExcelExportEvent
   extends StObject
      with PivotGridEvent {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var workbook: js.UndefOr[js.Any] = js.undefined
+  var workbook: js.UndefOr[Any] = js.undefined
 }
 object PivotGridExcelExportEvent {
   
@@ -21,11 +21,11 @@ object PivotGridExcelExportEvent {
   
   extension [Self <: PivotGridExcelExportEvent](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
     
     inline def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
   }

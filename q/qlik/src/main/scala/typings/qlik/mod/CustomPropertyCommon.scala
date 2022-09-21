@@ -40,7 +40,7 @@ object CustomPropertyCommon {
     inline def setShow(value: Boolean | ShowFunction): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     inline def setShowFunction3(
-      value: (/* layout */ Layout, /* cls */ js.Any, /* obj */ js.Any) => Boolean | (js.Function1[/* measure */ NxMeasure, Boolean])
+      value: (/* layout */ Layout, /* cls */ Any, /* obj */ Any) => Boolean | (js.Function1[/* measure */ NxMeasure, Boolean])
     ): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)

@@ -39,7 +39,7 @@ object GitTreeDiff {
     
     inline def setDiffEntries(value: js.Array[GitTreeDiffEntry]): Self = StObject.set(x, "diffEntries", value.asInstanceOf[js.Any])
     
-    inline def setDiffEntriesVarargs(value: GitTreeDiffEntry*): Self = StObject.set(x, "diffEntries", js.Array(value :_*))
+    inline def setDiffEntriesVarargs(value: GitTreeDiffEntry*): Self = StObject.set(x, "diffEntries", js.Array(value*))
     
     inline def setTargetTreeId(value: String): Self = StObject.set(x, "targetTreeId", value.asInstanceOf[js.Any])
     

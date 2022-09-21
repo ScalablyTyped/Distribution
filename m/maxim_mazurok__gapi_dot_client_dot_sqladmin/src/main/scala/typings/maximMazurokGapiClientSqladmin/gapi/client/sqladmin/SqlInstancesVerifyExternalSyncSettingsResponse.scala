@@ -9,8 +9,11 @@ trait SqlInstancesVerifyExternalSyncSettingsResponse extends StObject {
   /** List of migration violations. */
   var errors: js.UndefOr[js.Array[SqlExternalSyncSettingError]] = js.undefined
   
-  /** This is always *sql#migrationSettingErrorList*. */
+  /** This is always `sql#migrationSettingErrorList`. */
   var kind: js.UndefOr[String] = js.undefined
+  
+  /** List of migration warnings. */
+  var warnings: js.UndefOr[js.Array[SqlExternalSyncSettingError]] = js.undefined
 }
 object SqlInstancesVerifyExternalSyncSettingsResponse {
   
@@ -25,10 +28,16 @@ object SqlInstancesVerifyExternalSyncSettingsResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SqlExternalSyncSettingError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SqlExternalSyncSettingError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setWarnings(value: js.Array[SqlExternalSyncSettingError]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: SqlExternalSyncSettingError*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.SubscribeUserAgentServer")
 @js.native
-class SubscribeUserAgentServer protected ()
+open class SubscribeUserAgentServer protected ()
   extends typings.sipJs.coreMod.SubscribeUserAgentServer {
   def this(
     core: typings.sipJs.userAgentCoreMod.UserAgentCore,

@@ -27,7 +27,7 @@ object Job {
     
     inline def setSteps(value: Steps): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setSummary(value: JobSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Higher-level content negotiation
 | ------------------ | :-------------: |
 | Full name          | accepts |
 | Keywords           | content, negotiation, accept, accepts |
-| # releases         | 3 |
-| # dependents       | 550 |
-| # downloads        | 745511940 |
-| # stars            | 21 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.05580118E8 |
+| # stars            | 229.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/accepts#readme)

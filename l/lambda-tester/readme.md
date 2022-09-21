@@ -10,15 +10,12 @@ Unit/Integration tests for AWS Lambda handlers
 | ------------------ | :-------------: |
 | Full name          | lambda-tester |
 | Keywords           | AWS, Lambda, unit, test, mocha, TDD, unit test, unit testing, integration test, integration testing, serverless, environment, variables, x-ray |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 546531 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 65189.333333333336 |
+| # stars            | 260.0 |
 
 ## Links
-- [Homepage](https://github.com/vandium-io/lambda-tester#readme)
-- [Bugs](https://github.com/vandium-io/lambda-tester/issues)
-- [Repository](https://github.com/vandium-io/lambda-tester)
 - [Npm](https://www.npmjs.com/package/lambda-tester)
     
 

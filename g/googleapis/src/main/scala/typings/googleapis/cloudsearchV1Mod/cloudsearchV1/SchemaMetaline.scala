@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A metaline is a list of properties that are displayed along with the search
-  * result to provide context.
-  */
 trait SchemaMetaline extends StObject {
   
   /**
-    * The list of displayed properties for the metaline.
+    * The list of displayed properties for the metaline. The maximum number of properties is 5.
     */
   var properties: js.UndefOr[js.Array[SchemaDisplayedProperty]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaMetaline {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: SchemaDisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SchemaDisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value*))
   }
 }

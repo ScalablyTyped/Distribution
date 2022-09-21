@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeConnectorProfilesRequest extends StObject {
   
   /**
-    *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account. 
+    * The name of the connector. The name is unique for each ConnectorRegistration in your Amazon Web Services account. Only needed if calling for CUSTOMCONNECTOR connector type/.
+    */
+  var connectorLabel: js.UndefOr[ConnectorLabel] = js.undefined
+  
+  /**
+    *  The name of the connector profile. The name is unique for each ConnectorProfile in the Amazon Web Services account. 
     */
   var connectorProfileNames: js.UndefOr[ConnectorProfileNameList] = js.undefined
   
@@ -35,11 +40,15 @@ object DescribeConnectorProfilesRequest {
   
   extension [Self <: DescribeConnectorProfilesRequest](x: Self) {
     
+    inline def setConnectorLabel(value: ConnectorLabel): Self = StObject.set(x, "connectorLabel", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorLabelUndefined: Self = StObject.set(x, "connectorLabel", js.undefined)
+    
     inline def setConnectorProfileNames(value: ConnectorProfileNameList): Self = StObject.set(x, "connectorProfileNames", value.asInstanceOf[js.Any])
     
     inline def setConnectorProfileNamesUndefined: Self = StObject.set(x, "connectorProfileNames", js.undefined)
     
-    inline def setConnectorProfileNamesVarargs(value: ConnectorProfileName*): Self = StObject.set(x, "connectorProfileNames", js.Array(value :_*))
+    inline def setConnectorProfileNamesVarargs(value: ConnectorProfileName*): Self = StObject.set(x, "connectorProfileNames", js.Array(value*))
     
     inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     

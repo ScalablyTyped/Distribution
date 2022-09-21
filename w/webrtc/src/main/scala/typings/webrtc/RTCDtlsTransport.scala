@@ -1,34 +1,86 @@
 package typings.webrtc
 
-import typings.std.ArrayBuffer
+import typings.std.AddEventListenerOptions
+import typings.std.Event
+import typings.std.EventListenerOptions
+import typings.std.EventTarget
+import typings.std.RTCDtlsTransportState
+import typings.webrtc.webrtcStrings.error
+import typings.webrtc.webrtcStrings.statechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCDtlsTransport extends StObject {
+@js.native
+trait RTCDtlsTransport
+  extends StObject
+     with EventTarget {
   
-  //readonly state: RTCDtlsTransportState;
-  def getRemoteCertificates(): js.Array[ArrayBuffer]
+  @JSName("addEventListener")
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   
-  var onstatechange: DtlsTransportEventHandler
+  def getRemoteCertificates(): js.Array[js.typedarray.ArrayBuffer] = js.native
   
-  val transport: RTCIceTransport
-}
-object RTCDtlsTransport {
+  val iceTransport: RTCIceTransport = js.native
   
-  inline def apply(getRemoteCertificates: () => js.Array[ArrayBuffer], transport: RTCIceTransport): RTCDtlsTransport = {
-    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), transport = transport.asInstanceOf[js.Any], onstatechange = null)
-    __obj.asInstanceOf[RTCDtlsTransport]
-  }
+  var onerror: DtlsTransportEventHandler[Event] = js.native
   
-  extension [Self <: RTCDtlsTransport](x: Self) {
-    
-    inline def setGetRemoteCertificates(value: () => js.Array[ArrayBuffer]): Self = StObject.set(x, "getRemoteCertificates", js.Any.fromFunction0(value))
-    
-    inline def setOnstatechange(value: DtlsTransportEventHandler): Self = StObject.set(x, "onstatechange", value.asInstanceOf[js.Any])
-    
-    inline def setOnstatechangeNull: Self = StObject.set(x, "onstatechange", null)
-    
-    inline def setTransport(value: RTCIceTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
-  }
+  var onstatechange: DtlsTransportEventHandler[Event] = js.native
+  
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  
+  val state: RTCDtlsTransportState = js.native
 }

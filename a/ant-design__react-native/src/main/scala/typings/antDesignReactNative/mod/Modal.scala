@@ -4,7 +4,7 @@ import typings.antDesignReactNative.modalMod.default
 import typings.antDesignReactNative.modalPropsTypeMod.Action
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOrActions
-import typings.propTypes.mod.Requireable
+import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Modal")
 @js.native
-class Modal () extends default
+open class Modal () extends default
 object Modal {
   
   @JSImport("@ant-design/react-native", "Modal")
@@ -42,17 +42,10 @@ object Modal {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
   
   /* static member */
-  object contextTypes {
-    
-    @JSImport("@ant-design/react-native", "Modal.contextTypes")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/react-native", "Modal.contextTypes.antLocale")
-    @js.native
-    def antLocale: Requireable[js.Object] = js.native
-    inline def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/react-native", "Modal.contextType")
+  @js.native
+  def contextType: Context[js.Object] = js.native
+  inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaultProps {
@@ -114,13 +107,13 @@ object Modal {
   @JSImport("@ant-design/react-native", "Modal.operation")
   @js.native
   def operation: js.Function2[
-    /* actions */ js.Array[js.Any], 
+    /* actions */ js.Array[Any], 
     /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
     Double
   ] = js.native
   inline def operation_=(
     x: js.Function2[
-      /* actions */ js.Array[js.Any], 
+      /* actions */ js.Array[Any], 
       /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
       Double
     ]

@@ -33,6 +33,6 @@ object GetMLTaskRunsResponse {
     
     inline def setTaskRunsUndefined: Self = StObject.set(x, "TaskRuns", js.undefined)
     
-    inline def setTaskRunsVarargs(value: TaskRun*): Self = StObject.set(x, "TaskRuns", js.Array(value :_*))
+    inline def setTaskRunsVarargs(value: TaskRun*): Self = StObject.set(x, "TaskRuns", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object FileManager {
     dropZone: HTMLElement,
     multiselect: Boolean,
     open: () => Unit,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit
   ): FileManager = {
     val __obj = js.Dynamic.literal(acceptedExts = acceptedExts.asInstanceOf[js.Any], acceptedMimes = acceptedMimes.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), dropZone = dropZone.asInstanceOf[js.Any], multiselect = multiselect.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), registerCallback = js.Any.fromFunction4(registerCallback), removeCallback = js.Any.fromFunction1(removeCallback))
@@ -40,11 +40,11 @@ object FileManager {
     
     inline def setAcceptedExts(value: js.Array[String]): Self = StObject.set(x, "acceptedExts", value.asInstanceOf[js.Any])
     
-    inline def setAcceptedExtsVarargs(value: String*): Self = StObject.set(x, "acceptedExts", js.Array(value :_*))
+    inline def setAcceptedExtsVarargs(value: String*): Self = StObject.set(x, "acceptedExts", js.Array(value*))
     
     inline def setAcceptedMimes(value: js.Array[String]): Self = StObject.set(x, "acceptedMimes", value.asInstanceOf[js.Any])
     
-    inline def setAcceptedMimesVarargs(value: String*): Self = StObject.set(x, "acceptedMimes", js.Array(value :_*))
+    inline def setAcceptedMimesVarargs(value: String*): Self = StObject.set(x, "acceptedMimes", js.Array(value*))
     
     inline def setDropZone(value: HTMLElement): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
     

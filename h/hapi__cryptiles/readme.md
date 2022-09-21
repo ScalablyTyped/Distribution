@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__cryptiles
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 General purpose crypto utilities
@@ -10,10 +10,10 @@ General purpose crypto utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/cryptiles |
 | Keywords           | cryptography, security, utilites |
-| # releases         | 5 |
-| # dependents       | 17 |
-| # downloads        | 15561474 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2932613.3333333335 |
+| # stars            | 181.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/cryptiles#readme)

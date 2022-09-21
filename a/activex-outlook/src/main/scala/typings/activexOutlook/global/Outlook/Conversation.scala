@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Conversation")
 @js.native
-/* private */ class Conversation ()
+/* private */ open class Conversation ()
   extends StObject
      with typings.activexOutlook.Outlook.Conversation {
   
@@ -34,10 +34,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GetAlwaysMoveToFolder(Store: typings.activexOutlook.Outlook.Store): typings.activexOutlook.Outlook.Folder = js.native
   
   /* CompleteClass */
-  override def GetChildren(Item: js.Any): typings.activexOutlook.Outlook.SimpleItems = js.native
+  override def GetChildren(Item: Any): typings.activexOutlook.Outlook.SimpleItems = js.native
   
   /* CompleteClass */
-  override def GetParent(Item: js.Any): js.Any = js.native
+  override def GetParent(Item: Any): Any = js.native
   
   /* CompleteClass */
   override def GetRootItems(): typings.activexOutlook.Outlook.SimpleItems = js.native
@@ -56,7 +56,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotConversation_typekey: typings.activexOutlook.Outlook.Conversation = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

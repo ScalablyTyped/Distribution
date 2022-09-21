@@ -9,7 +9,7 @@ object stackMod {
   
   @JSImport("@antv/adjust/lib/adjusts/stack", JSImport.Default)
   @js.native
-  class default protected () extends Stack {
+  open class default protected () extends Stack {
     def this(cfg: StackCfg) = this()
   }
   
@@ -17,10 +17,10 @@ object stackMod {
   trait Stack
     extends typings.antvAdjust.adjustMod.default {
     
-    /* private */ var processOneDimStack: js.Any = js.native
+    /* private */ var processOneDimStack: Any = js.native
     
-    /* private */ var processStack: js.Any = js.native
+    /* private */ var processStack: Any = js.native
     
-    /* private */ var reverse: js.Any = js.native
+    /* private */ var reverse: Any = js.native
   }
 }

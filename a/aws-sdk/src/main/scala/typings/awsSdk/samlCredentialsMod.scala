@@ -9,7 +9,7 @@ object samlCredentialsMod {
   
   @JSImport("aws-sdk/lib/credentials/saml_credentials", "SAMLCredentials")
   @js.native
-  class SAMLCredentials protected () extends Credentials {
+  open class SAMLCredentials protected () extends Credentials {
     /**
     		 * Creates a new credentials object.
     		 * @param {object} params - The map of params passed to AWS.STS.assumeRoleWithSAML().

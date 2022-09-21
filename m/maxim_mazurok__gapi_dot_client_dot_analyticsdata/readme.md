@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_analyticsdata
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220810
 
 ## Library description:
-TypeScript typings for Google Analytics Data API v1alpha
+TypeScript typings for Google Analytics Data API v1beta
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.analyticsdata |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 1 |
-| # downloads        | 2271 |
-| # stars            | 0 |
+| # releases         | 262 |
+| # dependents       | 0.0 |
+| # downloads        | 2230.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

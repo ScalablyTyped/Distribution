@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoiceCommandContentTile extends StObject {
   
   /** Gets or sets supplementary information the background app service can associate with the content tile. This information is not used by Cortana. */
-  var appContext: js.Any
+  var appContext: Any
   
   /** Gets or sets a string as a launch parameter that can be associated with the response by the background app service. */
   var appLaunchArgument: String
@@ -35,7 +35,7 @@ trait VoiceCommandContentTile extends StObject {
 object VoiceCommandContentTile {
   
   inline def apply(
-    appContext: js.Any,
+    appContext: Any,
     appLaunchArgument: String,
     contentTileType: VoiceCommandContentTileType,
     image: IStorageFile,
@@ -50,7 +50,7 @@ object VoiceCommandContentTile {
   
   extension [Self <: VoiceCommandContentTile](x: Self) {
     
-    inline def setAppContext(value: js.Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
+    inline def setAppContext(value: Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     
     inline def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     

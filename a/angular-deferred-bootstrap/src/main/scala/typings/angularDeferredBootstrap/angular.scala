@@ -14,11 +14,11 @@ object angular {
     
     var module: js.UndefOr[String] = js.undefined
     
-    var resolve: js.Any
+    var resolve: Any
   }
   object IConfigParam {
     
-    inline def apply(resolve: js.Any): IConfigParam = {
+    inline def apply(resolve: Any): IConfigParam = {
       val __obj = js.Dynamic.literal(resolve = resolve.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfigParam]
     }
@@ -33,7 +33,7 @@ object angular {
       
       inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      inline def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     }
   }
   

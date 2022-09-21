@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.GroundOverlay")
 @js.native
-class GroundOverlay protected ()
+open class GroundOverlay protected ()
   extends StObject
      with typings.navermaps.naver.maps.GroundOverlay {
   def this(url: String, bounds: Bounds) = this()

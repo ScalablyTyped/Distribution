@@ -8,15 +8,15 @@ trait TreeViewNodeClickEventArgs
   extends StObject
      with TreeViewNodeProcessingModeEventArgs {
   
-  val htmlElement: js.Any
+  val htmlElement: Any
   
-  val htmlEvent: js.Any
+  val htmlEvent: Any
 }
 object TreeViewNodeClickEventArgs {
   
   inline def apply(
-    htmlElement: js.Any,
-    htmlEvent: js.Any,
+    htmlElement: Any,
+    htmlEvent: Any,
     node: BootstrapTreeViewNode,
     processOnServer: Boolean,
     sender: Control
@@ -27,8 +27,8 @@ object TreeViewNodeClickEventArgs {
   
   extension [Self <: TreeViewNodeClickEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

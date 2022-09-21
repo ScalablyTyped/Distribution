@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Campaign
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.BillingProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Campaign
+  var resource: BillingProfile
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(profileId: String, resource: Campaign): CallbackFields = {
+  inline def apply(profileId: String, resource: BillingProfile): CallbackFields = {
     val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
@@ -94,7 +94,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Campaign): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: BillingProfile): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

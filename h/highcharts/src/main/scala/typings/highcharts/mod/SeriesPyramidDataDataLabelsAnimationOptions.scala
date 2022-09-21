@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesPyramidDataDataLabelsAnimationOptions extends StObject {
   
   /**
-    * (Highcharts) The animation delay time in milliseconds. Set to `0` renders
-    * dataLabel immediately. As `undefined` inherits defer time from the
-    * series.animation.defer.
+    * (Highcharts, Highmaps) The animation delay time in milliseconds. Set to
+    * `0` renders dataLabel immediately. As `undefined` inherits defer time
+    * from the series.animation.defer.
     */
   var defer: js.UndefOr[Double] = js.undefined
 }

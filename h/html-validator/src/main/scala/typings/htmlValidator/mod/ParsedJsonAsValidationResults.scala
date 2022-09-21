@@ -19,6 +19,6 @@ object ParsedJsonAsValidationResults {
     
     inline def setMessages(value: js.Array[ValidationMessageObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: ValidationMessageObject*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: ValidationMessageObject*): Self = StObject.set(x, "messages", js.Array(value*))
   }
 }

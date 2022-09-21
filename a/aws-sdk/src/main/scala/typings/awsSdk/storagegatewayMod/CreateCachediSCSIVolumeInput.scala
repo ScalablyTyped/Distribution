@@ -14,7 +14,7 @@ trait CreateCachediSCSIVolumeInput extends StObject {
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
-    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
+    * Set to true to use Amazon S3 server-side encryption with your own KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
   
@@ -94,7 +94,7 @@ object CreateCachediSCSIVolumeInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     

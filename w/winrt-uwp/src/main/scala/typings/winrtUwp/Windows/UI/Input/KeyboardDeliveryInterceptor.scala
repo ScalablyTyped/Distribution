@@ -13,30 +13,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KeyboardDeliveryInterceptor extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_keydown(`type`: keydown, listener: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any]): Unit = js.native
+  def addEventListener_keydown(`type`: keydown, listener: TypedEventHandler[KeyboardDeliveryInterceptor, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_keyup(`type`: keyup, listener: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any]): Unit = js.native
+  def addEventListener_keyup(`type`: keyup, listener: TypedEventHandler[KeyboardDeliveryInterceptor, Any]): Unit = js.native
   
   /** Gets or sets whether the app overrides the system processing of raw keyboard input, including key combinations such as shortcut keys, access keys (or hot keys), accelerator keys, and application keys. */
   var isInterceptionEnabledWhenInForeground: Boolean = js.native
   
   /** Occurs when a keyboard key is pressed. State info and event data is routed through this event instead of CoreWindow.KeyDown . */
-  def onkeydown(ev: js.Any & WinRTEvent[KeyboardDeliveryInterceptor]): Unit = js.native
+  def onkeydown(ev: Any & WinRTEvent[KeyboardDeliveryInterceptor]): Unit = js.native
   /** Occurs when a keyboard key is pressed. State info and event data is routed through this event instead of CoreWindow.KeyDown . */
   @JSName("onkeydown")
-  var onkeydown_Original: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any] = js.native
+  var onkeydown_Original: TypedEventHandler[KeyboardDeliveryInterceptor, Any] = js.native
   
   /** Occurs when a pressed keyboard key is released. State info and event data is routed through this event instead of CoreWindow.KeyUp . */
-  def onkeyup(ev: js.Any & WinRTEvent[KeyboardDeliveryInterceptor]): Unit = js.native
+  def onkeyup(ev: Any & WinRTEvent[KeyboardDeliveryInterceptor]): Unit = js.native
   /** Occurs when a pressed keyboard key is released. State info and event data is routed through this event instead of CoreWindow.KeyUp . */
   @JSName("onkeyup")
-  var onkeyup_Original: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any] = js.native
+  var onkeyup_Original: TypedEventHandler[KeyboardDeliveryInterceptor, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keydown(`type`: keydown, listener: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any]): Unit = js.native
+  def removeEventListener_keydown(`type`: keydown, listener: TypedEventHandler[KeyboardDeliveryInterceptor, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keyup(`type`: keyup, listener: TypedEventHandler[KeyboardDeliveryInterceptor, js.Any]): Unit = js.native
+  def removeEventListener_keyup(`type`: keyup, listener: TypedEventHandler[KeyboardDeliveryInterceptor, Any]): Unit = js.native
 }

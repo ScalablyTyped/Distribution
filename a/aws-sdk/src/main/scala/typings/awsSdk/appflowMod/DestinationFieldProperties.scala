@@ -12,6 +12,11 @@ trait DestinationFieldProperties extends StObject {
   var isCreatable: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether the field can use the default value during a Create operation.
+    */
+  var isDefaultedOnCreate: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     *  Specifies if the destination field can have a null value. 
     */
   var isNullable: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +49,10 @@ object DestinationFieldProperties {
     
     inline def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
     
+    inline def setIsDefaultedOnCreate(value: Boolean): Self = StObject.set(x, "isDefaultedOnCreate", value.asInstanceOf[js.Any])
+    
+    inline def setIsDefaultedOnCreateUndefined: Self = StObject.set(x, "isDefaultedOnCreate", js.undefined)
+    
     inline def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
     
     inline def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
@@ -60,6 +69,6 @@ object DestinationFieldProperties {
     
     inline def setSupportedWriteOperationsUndefined: Self = StObject.set(x, "supportedWriteOperations", js.undefined)
     
-    inline def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = StObject.set(x, "supportedWriteOperations", js.Array(value :_*))
+    inline def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = StObject.set(x, "supportedWriteOperations", js.Array(value*))
   }
 }

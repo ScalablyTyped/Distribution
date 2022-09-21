@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DaydreamController")
 @js.native
-class DaydreamController protected ()
+open class DaydreamController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DaydreamController {
   /**
     * Creates a new DaydreamController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.

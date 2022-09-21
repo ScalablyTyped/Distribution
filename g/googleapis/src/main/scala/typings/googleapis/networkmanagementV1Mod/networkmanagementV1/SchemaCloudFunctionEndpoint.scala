@@ -1,0 +1,29 @@
+package typings.googleapis.networkmanagementV1Mod.networkmanagementV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaCloudFunctionEndpoint extends StObject {
+  
+  /**
+    * A [Cloud function](https://cloud.google.com/functions) name.
+    */
+  var uri: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaCloudFunctionEndpoint {
+  
+  inline def apply(): SchemaCloudFunctionEndpoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaCloudFunctionEndpoint]
+  }
+  
+  extension [Self <: SchemaCloudFunctionEndpoint](x: Self) {
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
+    
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+  }
+}

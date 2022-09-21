@@ -22,6 +22,6 @@ object GetContentQuadsResponse {
     
     inline def setQuads(value: js.Array[Quad]): Self = StObject.set(x, "quads", value.asInstanceOf[js.Any])
     
-    inline def setQuadsVarargs(value: Quad*): Self = StObject.set(x, "quads", js.Array(value :_*))
+    inline def setQuadsVarargs(value: Quad*): Self = StObject.set(x, "quads", js.Array(value*))
   }
 }

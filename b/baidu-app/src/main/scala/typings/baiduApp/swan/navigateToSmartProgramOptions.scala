@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait navigateToSmartProgramOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 要打开的小程序App Key
@@ -20,7 +20,7 @@ trait navigateToSmartProgramOptions
     * 需要传递给目标小程序的数据，目标小程序可在 App.onLaunch()
     * App.onShow() 中获取到这份数据。
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   /**
     * 打开的页面路径，如果为空则打开首页 。
@@ -38,7 +38,7 @@ object navigateToSmartProgramOptions {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

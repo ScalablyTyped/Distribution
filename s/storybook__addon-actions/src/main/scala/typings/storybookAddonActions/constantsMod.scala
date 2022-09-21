@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("@storybook/addon-actions/dist/constants", "ADDON_ID")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/constants", "ADDON_ID")
   @js.native
   val ADDON_ID: /* "storybook/actions" */ String = js.native
   
-  @JSImport("@storybook/addon-actions/dist/constants", "CYCLIC_KEY")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/constants", "CYCLIC_KEY")
   @js.native
   val CYCLIC_KEY: /* "$___storybook.isCyclic" */ String = js.native
   
-  @JSImport("@storybook/addon-actions/dist/constants", "EVENT_ID")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/constants", "EVENT_ID")
   @js.native
   val EVENT_ID: String = js.native
   
-  @JSImport("@storybook/addon-actions/dist/constants", "PANEL_ID")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/constants", "PANEL_ID")
   @js.native
   val PANEL_ID: String = js.native
   
-  @JSImport("@storybook/addon-actions/dist/constants", "PARAM_KEY")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/constants", "PARAM_KEY")
   @js.native
   val PARAM_KEY: /* "actions" */ String = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0
 
-Typings are for version 2.20.0
+Typings are for version 2.35
 
 ## Library description:
 SDK for Auth0 API v2
@@ -10,10 +10,10 @@ SDK for Auth0 API v2
 | ------------------ | :-------------: |
 | Full name          | auth0 |
 | Keywords           | auth0, api |
-| # releases         | 24 |
-| # dependents       | 60 |
-| # downloads        | 5145141 |
-| # stars            | 7 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 929094.3333333334 |
+| # stars            | 532.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/node-auth0)

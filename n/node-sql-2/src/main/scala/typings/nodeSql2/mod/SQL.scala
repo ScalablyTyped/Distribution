@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SQL extends StObject {
   
+  def array[T](arr: js.Array[T]): BinaryNode
+  
   var functions: LOWER
 }
 object SQL {
   
-  inline def apply(functions: LOWER): SQL = {
-    val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
+  inline def apply(array: js.Array[Any] => BinaryNode, functions: LOWER): SQL = {
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction1(array), functions = functions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQL]
   }
   
   extension [Self <: SQL](x: Self) {
+    
+    inline def setArray(value: js.Array[Any] => BinaryNode): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
     
     inline def setFunctions(value: LOWER): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
   }

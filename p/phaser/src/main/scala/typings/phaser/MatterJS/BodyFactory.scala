@@ -71,8 +71,8 @@ trait BodyFactory extends StObject {
     * @param {} settings A property name (or map of properties and values) to set on the body.
     * @param {} value The value to set if `settings` is a single property name.
     */
-  def set(body: BodyType, settings: js.Any): Unit = js.native
-  def set(body: BodyType, settings: js.Any, value: js.Any): Unit = js.native
+  def set(body: BodyType, settings: Any): Unit = js.native
+  def set(body: BodyType, settings: Any, value: Any): Unit = js.native
   
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.

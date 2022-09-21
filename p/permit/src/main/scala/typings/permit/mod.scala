@@ -10,24 +10,24 @@ object mod {
   
   @JSImport("permit", "Basic")
   @js.native
-  class Basic protected () extends Permit {
+  open class Basic protected () extends Permit {
     def this(options: PermitOptions) = this()
   }
   
   @JSImport("permit", "Bearer")
   @js.native
-  class Bearer protected () extends Permit {
+  open class Bearer protected () extends Permit {
     def this(options: BearerOptions) = this()
   }
   
   @JSImport("permit", "Permit")
   @js.native
-  class Permit protected () extends StObject {
+  open class Permit protected () extends StObject {
     def this(options: PermitOptions) = this()
     
     def check(req: IncomingMessage): Unit = js.native
     
-    def fail(res: ServerResponse): Unit = js.native
+    def fail(res: ServerResponse[IncomingMessage]): Unit = js.native
   }
   
   trait BearerOptions

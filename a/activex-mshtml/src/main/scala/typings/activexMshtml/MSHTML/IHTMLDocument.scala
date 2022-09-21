@@ -9,11 +9,11 @@ trait IHTMLDocument extends StObject {
   /* private */ @JSName("MSHTML.IHTMLDocument_typekey")
   var MSHTMLDotIHTMLDocument_typekey: IHTMLDocument
   
-  val Script: js.Any
+  val Script: Any
 }
 object IHTMLDocument {
   
-  inline def apply(MSHTMLDotIHTMLDocument_typekey: IHTMLDocument, Script: js.Any): IHTMLDocument = {
+  inline def apply(MSHTMLDotIHTMLDocument_typekey: IHTMLDocument, Script: Any): IHTMLDocument = {
     val __obj = js.Dynamic.literal(Script = Script.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.IHTMLDocument_typekey")(MSHTMLDotIHTMLDocument_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTMLDocument]
@@ -23,6 +23,6 @@ object IHTMLDocument {
     
     inline def setMSHTMLDotIHTMLDocument_typekey(value: IHTMLDocument): Self = StObject.set(x, "MSHTML.IHTMLDocument_typekey", value.asInstanceOf[js.Any])
     
-    inline def setScript(value: js.Any): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
+    inline def setScript(value: Any): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
   }
 }

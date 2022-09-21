@@ -21,6 +21,8 @@ object timelineTimelineMod extends Shortcut {
   
   trait TimelineProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var mode: js.UndefOr[left | alternate | right] = js.undefined
@@ -44,6 +46,10 @@ object timelineTimelineMod extends Shortcut {
     }
     
     extension [Self <: TimelineProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

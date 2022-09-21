@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Template extends StObject {
   
-  def template(item: js.Any): js.Any
+  def template(item: Any): Any
 }
 object Template {
   
-  inline def apply(template: js.Any => js.Any): Template = {
+  inline def apply(template: Any => Any): Template = {
     val __obj = js.Dynamic.literal(template = js.Any.fromFunction1(template))
     __obj.asInstanceOf[Template]
   }
   
   extension [Self <: Template](x: Self) {
     
-    inline def setTemplate(value: js.Any => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: Any => Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
   }
 }

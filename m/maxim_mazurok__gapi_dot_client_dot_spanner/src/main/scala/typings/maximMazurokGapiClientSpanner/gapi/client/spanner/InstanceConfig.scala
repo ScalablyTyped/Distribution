@@ -9,7 +9,13 @@ trait InstanceConfig extends StObject {
   /** The name of this instance configuration as it appears in UIs. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** A unique identifier for the instance configuration. Values are of the form `projects//instanceConfigs/a-z*` */
+  /** Output only. Describes whether free instances are available to be created in this instance config. */
+  var freeInstanceAvailability: js.UndefOr[String] = js.undefined
+  
+  /** Allowed values of the "default_leader" schema option for databases in instances that use this instance configuration. */
+  var leaderOptions: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** A unique identifier for the instance configuration. Values are of the form `projects//instanceConfigs/a-z*`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** The geographic placement of nodes in this instance configuration and their replication properties. */
@@ -28,6 +34,16 @@ object InstanceConfig {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setFreeInstanceAvailability(value: String): Self = StObject.set(x, "freeInstanceAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setFreeInstanceAvailabilityUndefined: Self = StObject.set(x, "freeInstanceAvailability", js.undefined)
+    
+    inline def setLeaderOptions(value: js.Array[String]): Self = StObject.set(x, "leaderOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLeaderOptionsUndefined: Self = StObject.set(x, "leaderOptions", js.undefined)
+    
+    inline def setLeaderOptionsVarargs(value: String*): Self = StObject.set(x, "leaderOptions", js.Array(value*))
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -36,6 +52,6 @@ object InstanceConfig {
     
     inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    inline def setReplicasVarargs(value: ReplicaInfo*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: ReplicaInfo*): Self = StObject.set(x, "replicas", js.Array(value*))
   }
 }

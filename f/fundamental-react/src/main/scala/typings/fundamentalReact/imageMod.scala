@@ -16,7 +16,7 @@ object imageMod extends Shortcut {
   
   trait ImageProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     

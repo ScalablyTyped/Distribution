@@ -26,7 +26,7 @@ object VpnGatewaysScopedList {
     
     inline def setVpnGatewaysUndefined: Self = StObject.set(x, "vpnGateways", js.undefined)
     
-    inline def setVpnGatewaysVarargs(value: VpnGateway*): Self = StObject.set(x, "vpnGateways", js.Array(value :_*))
+    inline def setVpnGatewaysVarargs(value: VpnGateway*): Self = StObject.set(x, "vpnGateways", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

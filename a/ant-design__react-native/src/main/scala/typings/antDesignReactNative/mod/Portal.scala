@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@ant-design/react-native", "Portal")
 @js.native
-class Portal () extends default
+open class Portal () extends default
 object Portal {
   
   @JSImport("@ant-design/react-native", "Portal")
@@ -40,7 +40,7 @@ object Portal {
   /* was `typeof PortalHost` */
   @JSImport("@ant-design/react-native", "Portal.Host")
   @js.native
-  class Host ()
+  open class Host ()
     extends typings.antDesignReactNative.portalMod.default.Host
   /* static members */
   object Host {

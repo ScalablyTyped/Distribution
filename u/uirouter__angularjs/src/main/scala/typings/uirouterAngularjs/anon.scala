@@ -51,8 +51,8 @@ object anon {
       */
     def resolve(invocables: StringDictionary[js.Function]): js.Promise[Obj] = js.native
     def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[Obj] = js.native
-    def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[js.Any]): js.Promise[Obj] = js.native
-    def resolve(invocables: StringDictionary[js.Function], locals: Unit, parent: js.Promise[js.Any]): js.Promise[Obj] = js.native
+    def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[Any]): js.Promise[Obj] = js.native
+    def resolve(invocables: StringDictionary[js.Function], locals: Unit, parent: js.Promise[Any]): js.Promise[Obj] = js.native
   }
   
   trait Component extends StObject {
@@ -87,18 +87,18 @@ object anon {
   
   trait Resolve extends StObject {
     
-    def resolve(): js.Any
+    def resolve(): Any
   }
   object Resolve {
     
-    inline def apply(resolve: () => js.Any): Resolve = {
+    inline def apply(resolve: () => Any): Resolve = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction0(resolve))
       __obj.asInstanceOf[Resolve]
     }
     
     extension [Self <: Resolve](x: Self) {
       
-      inline def setResolve(value: () => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
+      inline def setResolve(value: () => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
     }
   }
 }

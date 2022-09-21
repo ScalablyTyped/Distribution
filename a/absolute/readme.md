@@ -10,15 +10,12 @@ Test if a path (string) is absolute
 | ------------------ | :-------------: |
 | Full name          | absolute |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 2060386 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47393.666666666664 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/bahamas10/node-absolute)
-- [Bugs](https://github.com/bahamas10/node-absolute/issues)
-- [Repository](https://github.com/bahamas10/node-absolute)
 - [Npm](https://www.npmjs.com/package/absolute)
     
 

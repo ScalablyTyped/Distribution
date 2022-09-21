@@ -1,196 +1,103 @@
 package typings.estree.mod
 
-import typings.estree.anon.Flags
+import typings.estree.estreeStrings.property_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined estree.estree.ExpressionMap[keyof estree.estree.ExpressionMap] */
 /* Rewritten from type alias, can be one of: 
-  - typings.estree.mod.ThisExpression
-  - typings.estree.mod.ArrayExpression
-  - typings.estree.mod.ObjectExpression
-  - typings.estree.mod.FunctionExpression
-  - typings.estree.mod.ArrowFunctionExpression
-  - typings.estree.mod.YieldExpression
-  - typings.estree.mod.Literal
-  - typings.estree.mod.UnaryExpression
-  - typings.estree.mod.UpdateExpression
-  - typings.estree.mod.BinaryExpression
-  - typings.estree.mod.AssignmentExpression
-  - typings.estree.mod.LogicalExpression
-  - typings.estree.mod.MemberExpression
-  - typings.estree.mod.ConditionalExpression
-  - typings.estree.mod.CallExpression
-  - typings.estree.mod.NewExpression
-  - typings.estree.mod.SequenceExpression
-  - typings.estree.mod.TemplateLiteral
-  - typings.estree.mod.TaggedTemplateExpression
-  - typings.estree.mod.ClassExpression
-  - typings.estree.mod.MetaProperty
-  - typings.estree.mod.Identifier
-  - typings.estree.mod.AwaitExpression
-  - typings.estree.mod.ImportExpression
-  - typings.estree.mod.ChainExpression
+  - typings.estree.estreeStrings.quasis
+  - typings.estree.estreeStrings.meta
+  - typings.estree.estreeStrings.operator
+  - typings.estree.estreeStrings.expressions
+  - typings.estree.estreeStrings.quasi
+  - typings.estree.estreeStrings.raw
+  - typings.estree.estreeStrings.alternate
+  - typings.estree.estreeStrings.argument
+  - typings.estree.estreeStrings.bigint
+  - typings.estree.estreeStrings.value
+  - typings.estree.estreeStrings.properties
+  - typings.estree.estreeStrings.expression
+  - typings.estree.estreeStrings.source
+  - typings.estree.estreeStrings.property_
+  - typings.estree.estreeStrings.regex
+  - typings.estree.estreeStrings.optional
+  - typings.estree.estreeStrings.body
+  - typings.estree.estreeStrings.tag
+  - typings.estree.estreeStrings.elements
+  - typings.estree.estreeStrings.right
+  - typings.estree.estreeStrings.test
+  - typings.estree.estreeStrings.consequent
+  - typings.estree.estreeStrings.left
+  - typings.estree.estreeStrings.`type`
+  - typings.estree.estreeStrings.prefix
+  - typings.estree.estreeStrings.name
+  - typings.estree.estreeStrings.delegate
+  - typings.estree.estreeStrings.id
+  - typings.estree.estreeStrings.`object`
+  - typings.estree.estreeStrings.computed
 */
-trait Expression
-  extends StObject
-     with Node
+trait Expression extends StObject
 object Expression {
   
-  inline def ArrayExpression(elements: js.Array[Expression | SpreadElement]): typings.estree.mod.ArrayExpression = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ArrayExpression")
-    __obj.asInstanceOf[typings.estree.mod.ArrayExpression]
-  }
+  inline def alternate: typings.estree.estreeStrings.alternate = "alternate".asInstanceOf[typings.estree.estreeStrings.alternate]
   
-  inline def ArrowFunctionExpression(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): typings.estree.mod.ArrowFunctionExpression = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ArrowFunctionExpression")
-    __obj.asInstanceOf[typings.estree.mod.ArrowFunctionExpression]
-  }
+  inline def argument: typings.estree.estreeStrings.argument = "argument".asInstanceOf[typings.estree.estreeStrings.argument]
   
-  inline def AssignmentExpression(left: Pattern | MemberExpression, operator: AssignmentOperator, right: Expression): typings.estree.mod.AssignmentExpression = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("AssignmentExpression")
-    __obj.asInstanceOf[typings.estree.mod.AssignmentExpression]
-  }
+  inline def bigint: typings.estree.estreeStrings.bigint = "bigint".asInstanceOf[typings.estree.estreeStrings.bigint]
   
-  inline def AwaitExpression(argument: Expression): typings.estree.mod.AwaitExpression = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("AwaitExpression")
-    __obj.asInstanceOf[typings.estree.mod.AwaitExpression]
-  }
+  inline def body: typings.estree.estreeStrings.body = "body".asInstanceOf[typings.estree.estreeStrings.body]
   
-  inline def BinaryExpression(left: Expression, operator: BinaryOperator, right: Expression): typings.estree.mod.BinaryExpression = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("BinaryExpression")
-    __obj.asInstanceOf[typings.estree.mod.BinaryExpression]
-  }
+  inline def computed: typings.estree.estreeStrings.computed = "computed".asInstanceOf[typings.estree.estreeStrings.computed]
   
-  inline def ChainExpression(expression: ChainElement): typings.estree.mod.ChainExpression = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ChainExpression")
-    __obj.asInstanceOf[typings.estree.mod.ChainExpression]
-  }
+  inline def consequent: typings.estree.estreeStrings.consequent = "consequent".asInstanceOf[typings.estree.estreeStrings.consequent]
   
-  inline def ClassExpression(body: ClassBody): typings.estree.mod.ClassExpression = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ClassExpression")
-    __obj.asInstanceOf[typings.estree.mod.ClassExpression]
-  }
+  inline def delegate: typings.estree.estreeStrings.delegate = "delegate".asInstanceOf[typings.estree.estreeStrings.delegate]
   
-  inline def ConditionalExpression(alternate: Expression, consequent: Expression, test: Expression): typings.estree.mod.ConditionalExpression = {
-    val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ConditionalExpression")
-    __obj.asInstanceOf[typings.estree.mod.ConditionalExpression]
-  }
+  inline def elements: typings.estree.estreeStrings.elements = "elements".asInstanceOf[typings.estree.estreeStrings.elements]
   
-  inline def FunctionExpression(body: BlockStatement, params: js.Array[Pattern]): typings.estree.mod.FunctionExpression = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("FunctionExpression")
-    __obj.asInstanceOf[typings.estree.mod.FunctionExpression]
-  }
+  inline def expression: typings.estree.estreeStrings.expression = "expression".asInstanceOf[typings.estree.estreeStrings.expression]
   
-  inline def Identifier(name: String): typings.estree.mod.Identifier = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("Identifier")
-    __obj.asInstanceOf[typings.estree.mod.Identifier]
-  }
+  inline def expressions: typings.estree.estreeStrings.expressions = "expressions".asInstanceOf[typings.estree.estreeStrings.expressions]
   
-  inline def ImportExpression(source: Expression): typings.estree.mod.ImportExpression = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ImportExpression")
-    __obj.asInstanceOf[typings.estree.mod.ImportExpression]
-  }
+  inline def id: typings.estree.estreeStrings.id = "id".asInstanceOf[typings.estree.estreeStrings.id]
   
-  inline def LogicalExpression(left: Expression, operator: LogicalOperator, right: Expression): typings.estree.mod.LogicalExpression = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("LogicalExpression")
-    __obj.asInstanceOf[typings.estree.mod.LogicalExpression]
-  }
+  inline def left: typings.estree.estreeStrings.left = "left".asInstanceOf[typings.estree.estreeStrings.left]
   
-  inline def MemberExpression(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): typings.estree.mod.MemberExpression = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("MemberExpression")
-    __obj.asInstanceOf[typings.estree.mod.MemberExpression]
-  }
+  inline def meta: typings.estree.estreeStrings.meta = "meta".asInstanceOf[typings.estree.estreeStrings.meta]
   
-  inline def MetaProperty(meta: Identifier, property: Identifier): typings.estree.mod.MetaProperty = {
-    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("MetaProperty")
-    __obj.asInstanceOf[typings.estree.mod.MetaProperty]
-  }
+  inline def name: typings.estree.estreeStrings.name = "name".asInstanceOf[typings.estree.estreeStrings.name]
   
-  inline def NewExpression(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): typings.estree.mod.NewExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("NewExpression")
-    __obj.asInstanceOf[typings.estree.mod.NewExpression]
-  }
+  inline def `object`: typings.estree.estreeStrings.`object` = "object".asInstanceOf[typings.estree.estreeStrings.`object`]
   
-  inline def ObjectExpression(properties: js.Array[Property | SpreadElement]): typings.estree.mod.ObjectExpression = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("ObjectExpression")
-    __obj.asInstanceOf[typings.estree.mod.ObjectExpression]
-  }
+  inline def operator: typings.estree.estreeStrings.operator = "operator".asInstanceOf[typings.estree.estreeStrings.operator]
   
-  inline def RegExpLiteral(regex: Flags): typings.estree.mod.RegExpLiteral = {
-    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("Literal")
-    __obj.asInstanceOf[typings.estree.mod.RegExpLiteral]
-  }
+  inline def optional: typings.estree.estreeStrings.optional = "optional".asInstanceOf[typings.estree.estreeStrings.optional]
   
-  inline def SequenceExpression(expressions: js.Array[Expression]): typings.estree.mod.SequenceExpression = {
-    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("SequenceExpression")
-    __obj.asInstanceOf[typings.estree.mod.SequenceExpression]
-  }
+  inline def prefix: typings.estree.estreeStrings.prefix = "prefix".asInstanceOf[typings.estree.estreeStrings.prefix]
   
-  inline def SimpleCallExpression(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): typings.estree.mod.SimpleCallExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("CallExpression")
-    __obj.asInstanceOf[typings.estree.mod.SimpleCallExpression]
-  }
+  inline def properties: typings.estree.estreeStrings.properties = "properties".asInstanceOf[typings.estree.estreeStrings.properties]
   
-  inline def SimpleLiteral(): typings.estree.mod.SimpleLiteral = {
-    val __obj = js.Dynamic.literal(value = null)
-    __obj.updateDynamic("type")("Literal")
-    __obj.asInstanceOf[typings.estree.mod.SimpleLiteral]
-  }
+  inline def property: property_ = "property".asInstanceOf[property_]
   
-  inline def TaggedTemplateExpression(quasi: TemplateLiteral, tag: Expression): typings.estree.mod.TaggedTemplateExpression = {
-    val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("TaggedTemplateExpression")
-    __obj.asInstanceOf[typings.estree.mod.TaggedTemplateExpression]
-  }
+  inline def quasi: typings.estree.estreeStrings.quasi = "quasi".asInstanceOf[typings.estree.estreeStrings.quasi]
   
-  inline def TemplateLiteral(expressions: js.Array[Expression], quasis: js.Array[TemplateElement]): typings.estree.mod.TemplateLiteral = {
-    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("TemplateLiteral")
-    __obj.asInstanceOf[typings.estree.mod.TemplateLiteral]
-  }
+  inline def quasis: typings.estree.estreeStrings.quasis = "quasis".asInstanceOf[typings.estree.estreeStrings.quasis]
   
-  inline def ThisExpression(): typings.estree.mod.ThisExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("ThisExpression")
-    __obj.asInstanceOf[typings.estree.mod.ThisExpression]
-  }
+  inline def raw: typings.estree.estreeStrings.raw = "raw".asInstanceOf[typings.estree.estreeStrings.raw]
   
-  inline def UnaryExpression(argument: Expression, operator: UnaryOperator): typings.estree.mod.UnaryExpression = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = true)
-    __obj.updateDynamic("type")("UnaryExpression")
-    __obj.asInstanceOf[typings.estree.mod.UnaryExpression]
-  }
+  inline def regex: typings.estree.estreeStrings.regex = "regex".asInstanceOf[typings.estree.estreeStrings.regex]
   
-  inline def UpdateExpression(argument: Expression, operator: UpdateOperator, prefix: Boolean): typings.estree.mod.UpdateExpression = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("UpdateExpression")
-    __obj.asInstanceOf[typings.estree.mod.UpdateExpression]
-  }
+  inline def right: typings.estree.estreeStrings.right = "right".asInstanceOf[typings.estree.estreeStrings.right]
   
-  inline def YieldExpression(delegate: Boolean): typings.estree.mod.YieldExpression = {
-    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("YieldExpression")
-    __obj.asInstanceOf[typings.estree.mod.YieldExpression]
-  }
+  inline def source: typings.estree.estreeStrings.source = "source".asInstanceOf[typings.estree.estreeStrings.source]
+  
+  inline def tag: typings.estree.estreeStrings.tag = "tag".asInstanceOf[typings.estree.estreeStrings.tag]
+  
+  inline def test: typings.estree.estreeStrings.test = "test".asInstanceOf[typings.estree.estreeStrings.test]
+  
+  inline def `type`: typings.estree.estreeStrings.`type` = "type".asInstanceOf[typings.estree.estreeStrings.`type`]
+  
+  inline def value: typings.estree.estreeStrings.value = "value".asInstanceOf[typings.estree.estreeStrings.value]
 }

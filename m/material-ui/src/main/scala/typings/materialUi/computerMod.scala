@@ -10,10 +10,10 @@ object computerMod {
   
   @JSImport("material-ui/svg-icons/hardware/computer", JSImport.Default)
   @js.native
-  class default () extends HardwareComputer
+  open class default () extends HardwareComputer
   
   @JSImport("material-ui/svg-icons/hardware/computer", "HardwareComputer")
   @js.native
-  class HardwareComputer ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareComputer ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

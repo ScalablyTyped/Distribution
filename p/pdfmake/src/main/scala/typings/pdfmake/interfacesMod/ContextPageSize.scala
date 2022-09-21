@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContextPageSize extends StObject {
   
+  /** Page height in `pt`. */
   var height: Double
   
+  /** Page orientation. */
   var orientation: PageOrientation
   
+  /** Page width in `pt`. */
   var width: Double
 }
 object ContextPageSize {

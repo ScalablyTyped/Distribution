@@ -29,5 +29,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @api stable
   */
-class Feature ()
+open class Feature ()
   extends typings.openlayers.mod.format.Feature

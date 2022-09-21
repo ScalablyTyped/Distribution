@@ -8,5 +8,5 @@ object kmsnotfoundexceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/KMSNotFoundException", "KMSNotFoundException")
   @js.native
-  val KMSNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KMSNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

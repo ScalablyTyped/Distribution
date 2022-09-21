@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-os-utils
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 An operating system utility library.
@@ -10,15 +10,12 @@ An operating system utility library.
 | ------------------ | :-------------: |
 | Full name          | node-os-utils |
 | Keywords           | os, operating system, server, netstat, memory, cpu, monitor, stats, processes, openfiles, harddrive |
-| # releases         | 12 |
-| # dependents       | 20 |
-| # downloads        | 1018779 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 95299.0 |
+| # stars            | 97.0 |
 
 ## Links
-- [Homepage](https://github.com/SunilWang/node-os-utils#readme)
-- [Bugs](https://github.com/SunilWang/node-os-utils/issues)
-- [Repository](https://github.com/SunilWang/node-os-utils)
 - [Npm](https://www.npmjs.com/package/node-os-utils)
     
 

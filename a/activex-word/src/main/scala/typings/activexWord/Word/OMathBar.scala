@@ -14,7 +14,7 @@ trait OMathBar extends StObject {
   
   val E: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathBar_typekey")
   var WordDotOMathBar_typekey: OMathBar
@@ -26,7 +26,7 @@ object OMathBar {
     BarTop: Boolean,
     Creator: Double,
     E: OMath,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathBar_typekey: OMathBar
   ): OMathBar = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BarTop = BarTop.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object OMathBar {
     
     inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathBar_typekey(value: OMathBar): Self = StObject.set(x, "Word.OMathBar_typekey", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ object ionicAngularAilmentsMod {
   
   @JSImport("ionic/lib/project/ionic-angular/ailments", "AppScriptsMajorUpdateAvailable")
   @js.native
-  class AppScriptsMajorUpdateAvailable protected () extends IonicAngularAilment {
+  open class AppScriptsMajorUpdateAvailable protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native
@@ -31,7 +31,7 @@ object ionicAngularAilmentsMod {
   - typings.ionic.definitionsMod.IAilment because Already inherited
   - typings.ionic.definitionsMod.TreatableAilment because var conflicts: `implicit`, projects. Inlined treatable */ @JSImport("ionic/lib/project/ionic-angular/ailments", "AppScriptsUpdateAvailable")
   @js.native
-  class AppScriptsUpdateAvailable protected () extends IonicAngularAilment {
+  open class AppScriptsUpdateAvailable protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native
@@ -57,7 +57,7 @@ object ionicAngularAilmentsMod {
   
   @JSImport("ionic/lib/project/ionic-angular/ailments", "IonicAngularMajorUpdateAvailable")
   @js.native
-  class IonicAngularMajorUpdateAvailable protected () extends IonicAngularAilment {
+  open class IonicAngularMajorUpdateAvailable protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native
@@ -69,7 +69,7 @@ object ionicAngularAilmentsMod {
   
   @JSImport("ionic/lib/project/ionic-angular/ailments", "IonicAngularPackageJsonHasDefaultIonicBuildCommand")
   @js.native
-  class IonicAngularPackageJsonHasDefaultIonicBuildCommand protected () extends IonicAngularAilment {
+  open class IonicAngularPackageJsonHasDefaultIonicBuildCommand protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native
@@ -79,7 +79,7 @@ object ionicAngularAilmentsMod {
   
   @JSImport("ionic/lib/project/ionic-angular/ailments", "IonicAngularPackageJsonHasDefaultIonicServeCommand")
   @js.native
-  class IonicAngularPackageJsonHasDefaultIonicServeCommand protected () extends IonicAngularAilment {
+  open class IonicAngularPackageJsonHasDefaultIonicServeCommand protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native
@@ -89,7 +89,7 @@ object ionicAngularAilmentsMod {
   
   @JSImport("ionic/lib/project/ionic-angular/ailments", "IonicAngularUpdateAvailable")
   @js.native
-  class IonicAngularUpdateAvailable protected () extends IonicAngularAilment {
+  open class IonicAngularUpdateAvailable protected () extends IonicAngularAilment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
     var currentVersion: js.UndefOr[String] = js.native

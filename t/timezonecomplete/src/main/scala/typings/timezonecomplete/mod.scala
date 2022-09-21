@@ -1,6 +1,5 @@
 package typings.timezonecomplete
 
-import typings.std.Date
 import typings.timezonecomplete.basicsMod.TimeComponentOpts
 import typings.timezonecomplete.basicsMod.TimeComponents
 import typings.timezonecomplete.basicsMod.TimeUnit
@@ -144,7 +143,7 @@ object mod {
     * Constructor. Creates current time in local timezone.
     * @throws nothing
     */
-  class DateTime ()
+  open class DateTime ()
     extends typings.timezonecomplete.datetimeMod.DateTime {
     /**
       * Constructor. Parses ISO timestamp string.
@@ -206,7 +205,7 @@ object mod {
       * @throws timezonecomplete.Argument.GetFuncs if the getFuncs argument is invalid
       * @throws timezonecomplete.Argument.TimeZone if the time zone argument is invalid
       */
-    def this(date: Date, getFuncs: DateFunctions) = this()
+    def this(date: js.Date, getFuncs: DateFunctions) = this()
     def this(isoString: String, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
     def this(
       tm: typings.timezonecomplete.basicsMod.TimeStruct,
@@ -214,7 +213,7 @@ object mod {
     ) = this()
     def this(unixTimestamp: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
     def this(dateString: String, formatString: String, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
-    def this(date: Date, getFuncs: DateFunctions, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
+    def this(date: js.Date, getFuncs: DateFunctions, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
     /**
       * Constructor. Note that unlike JavaScript dates we require fields to be in normal ranges.
       * Use the add(duration) or sub(duration) for arithmetic.
@@ -488,8 +487,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "DateTime._splitDateFromTimeZone")
     @js.native
-    def _splitDateFromTimeZone: js.Any = js.native
-    inline def _splitDateFromTimeZone_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
+    def _splitDateFromTimeZone: Any = js.native
+    inline def _splitDateFromTimeZone_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
     
     /**
       * Check whether a given date exists in the given time zone.
@@ -600,7 +599,7 @@ object mod {
     * Construct a time duration of 0 milliseconds
     * @throws nothing
     */
-  class Duration ()
+  open class Duration ()
     extends typings.timezonecomplete.durationMod.Duration {
     /**
       * Construct a duration from an amount and a time unit.
@@ -737,7 +736,7 @@ object mod {
   
   @JSImport("timezonecomplete", "Period")
   @js.native
-  class Period protected ()
+  open class Period protected ()
     extends typings.timezonecomplete.periodMod.Period {
     /**
       * Constructor
@@ -835,12 +834,12 @@ object mod {
   
   @JSImport("timezonecomplete", "RealTimeSource")
   @js.native
-  class RealTimeSource ()
+  open class RealTimeSource ()
     extends typings.timezonecomplete.timesourceMod.RealTimeSource
   
   @JSImport("timezonecomplete", "RuleInfo")
   @js.native
-  class RuleInfo protected ()
+  open class RuleInfo protected ()
     extends typings.timezonecomplete.tzDatabaseMod.RuleInfo {
     /**
       * Constructor
@@ -863,7 +862,6 @@ object mod {
     def this(
       /**
       * FROM column year number.
-      * Note, can be -10000 for NaN value (e.g. for "SystemV" rules)
       */
     from: Double,
       /**
@@ -970,7 +968,7 @@ object mod {
   
   @JSImport("timezonecomplete", "TimeStruct")
   @js.native
-  class TimeStruct protected ()
+  open class TimeStruct protected ()
     extends typings.timezonecomplete.basicsMod.TimeStruct {
     /**
       * Constructor
@@ -1030,7 +1028,7 @@ object mod {
       * @param df Which functions to take (getX() or getUTCX())
       * @throws nothing
       */
-    inline def fromDate(d: Date, df: DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
+    inline def fromDate(d: js.Date, df: DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
     
     /**
       * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
@@ -1082,7 +1080,7 @@ object mod {
     * @throws timezonecomplete.NotFound.Zone if the given zone name doesn't exist
     * @throws timezonecomplete.InvalidTimeZoneData if the time zone database is invalid
     */
-  /* private */ class TimeZone ()
+  /* private */ open class TimeZone ()
     extends typings.timezonecomplete.timezoneMod.TimeZone
   /* static members */
   object TimeZone {
@@ -1096,8 +1094,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "TimeZone._cache")
     @js.native
-    def _cache: js.Any = js.native
-    inline def _cache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
+    def _cache: Any = js.native
+    inline def _cache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
     
     /**
       * Find in cache or create zone
@@ -1107,8 +1105,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "TimeZone._findOrCreate")
     @js.native
-    def _findOrCreate: js.Any = js.native
-    inline def _findOrCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
+    def _findOrCreate: Any = js.native
+    inline def _findOrCreate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true iff the first non-whitespace character of s is +, -, or Z
@@ -1117,8 +1115,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "TimeZone._isOffsetString")
     @js.native
-    def _isOffsetString: js.Any = js.native
-    inline def _isOffsetString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
+    def _isOffsetString: Any = js.native
+    inline def _isOffsetString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
     
     /**
       * Normalize a string so it can be used as a key for a cache lookup
@@ -1126,8 +1124,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "TimeZone._normalizeString")
     @js.native
-    def _normalizeString: js.Any = js.native
-    inline def _normalizeString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
+    def _normalizeString: Any = js.native
+    inline def _normalizeString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
     
     /**
       * The local time zone for a given date. Note that
@@ -1212,7 +1210,7 @@ object mod {
   
   @JSImport("timezonecomplete", "Transition")
   @js.native
-  class Transition protected ()
+  open class Transition protected ()
     extends typings.timezonecomplete.tzDatabaseMod.Transition {
     /**
       * Constructor
@@ -1244,7 +1242,7 @@ object mod {
     * @throws AlreadyCreated if an instance already exists
     * @throws timezonecomplete.InvalidTimeZoneData if `data` is empty or invalid
     */
-  /* private */ class TzDatabase ()
+  /* private */ open class TzDatabase ()
     extends typings.timezonecomplete.tzDatabaseMod.TzDatabase
   /* static members */
   object TzDatabase {
@@ -1258,8 +1256,8 @@ object mod {
       */
     @JSImport("timezonecomplete", "TzDatabase._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * (re-) initialize timezonecomplete with time zone data
@@ -1269,8 +1267,8 @@ object mod {
       * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
       */
     inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    inline def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(data: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Single instance of this database
@@ -1311,7 +1309,7 @@ object mod {
   
   @JSImport("timezonecomplete", "ZoneInfo")
   @js.native
-  class ZoneInfo protected ()
+  open class ZoneInfo protected ()
     extends typings.timezonecomplete.tzDatabaseMod.ZoneInfo {
     /**
       * Constructor
@@ -1453,15 +1451,15 @@ object mod {
   
   inline def hours(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  inline def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
+  inline def isDateTime(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
   
-  inline def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
+  inline def isDuration(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
   
   inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
+  inline def isPeriod(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
   
-  inline def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
+  inline def isTimeZone(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
   
   inline def isValidOffsetString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOffsetString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

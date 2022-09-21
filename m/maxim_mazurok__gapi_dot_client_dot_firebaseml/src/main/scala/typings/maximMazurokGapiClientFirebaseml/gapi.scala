@@ -46,7 +46,7 @@ object gapi {
           
           inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
           
-          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value*))
         }
       }
       
@@ -91,7 +91,7 @@ object gapi {
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
               ] = js.undefined
         
         /**
@@ -108,7 +108,7 @@ object gapi {
         var response: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
               ] = js.undefined
       }
       object Operation {
@@ -131,7 +131,7 @@ object gapi {
           inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -143,7 +143,7 @@ object gapi {
           inline def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
@@ -171,7 +171,7 @@ object gapi {
         
         /**
           * Lists operations that match the specified filter in the request. If the server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the `name` binding allows API services
-          * to override the binding to use different resource name schemes, such as `users/∗/operations`. To override the binding, API services can add a binding such as
+          * to override the binding to use different resource name schemes, such as `users/ *‍/operations`. To override the binding, API services can add a binding such as
           * `"/v1/{name=users/ *}/operations"` to their service configuration. For backwards compatibility, the default name includes the operations collection id, however overriding users must
           * ensure the name binding is the parent resource, without the operations collection id.
           */
@@ -189,7 +189,7 @@ object gapi {
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any]
                 ]
               ] = js.undefined
         
@@ -216,7 +216,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any]
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
@@ -225,8 +225,8 @@ object gapi {
           inline def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any])*
-          ): Self = StObject.set(x, "details", js.Array(value :_*))
+            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any])*
+          ): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           

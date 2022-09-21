@@ -24,7 +24,7 @@ trait Purchase extends StObject {
   /**
     * The ID of the reservation.
     */
-  var HostReservationId: js.UndefOr[String] = js.undefined
+  var HostReservationId: js.UndefOr[typings.awsSdk.ec2Mod.HostReservationId] = js.undefined
   
   /**
     * The hourly price of the reservation per hour.
@@ -67,9 +67,9 @@ object Purchase {
     
     inline def setHostIdSetUndefined: Self = StObject.set(x, "HostIdSet", js.undefined)
     
-    inline def setHostIdSetVarargs(value: String*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
+    inline def setHostIdSetVarargs(value: String*): Self = StObject.set(x, "HostIdSet", js.Array(value*))
     
-    inline def setHostReservationId(value: String): Self = StObject.set(x, "HostReservationId", value.asInstanceOf[js.Any])
+    inline def setHostReservationId(value: HostReservationId): Self = StObject.set(x, "HostReservationId", value.asInstanceOf[js.Any])
     
     inline def setHostReservationIdUndefined: Self = StObject.set(x, "HostReservationId", js.undefined)
     

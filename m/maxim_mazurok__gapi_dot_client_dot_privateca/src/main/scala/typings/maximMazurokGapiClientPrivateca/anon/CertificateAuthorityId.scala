@@ -32,7 +32,7 @@ trait CertificateAuthorityId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the location associated with the CertificateAuthorities, in the format `projects/∗/locations/ *`. */
+  /** Required. The resource name of the CaPool associated with the CertificateAuthorities, in the format `projects/ *‍/locations/ *‍/caPools/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

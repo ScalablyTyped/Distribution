@@ -17,19 +17,19 @@ object mod {
   
   @JSImport("react-native-settings-list", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SettingsListProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SettingsListProps, js.Object, Any]
   object default {
     
     @JSImport("react-native-settings-list", "default.Header")
     @js.native
-    class Header ()
-      extends Component[HeaderProps, js.Object, js.Any]
+    open class Header ()
+      extends Component[HeaderProps, js.Object, Any]
     
     @JSImport("react-native-settings-list", "default.Item")
     @js.native
-    class Item ()
-      extends Component[ItemProps, js.Object, js.Any]
+    open class Item ()
+      extends Component[ItemProps, js.Object, Any]
   }
   
   trait HeaderProps extends StObject {
@@ -333,11 +333,11 @@ object mod {
   
   object SettingsList {
     
-    type Header = Component[HeaderProps, js.Object, js.Any]
+    type Header = Component[HeaderProps, js.Object, Any]
     
-    type Item = Component[ItemProps, js.Object, js.Any]
+    type Item = Component[ItemProps, js.Object, Any]
   }
-  type SettingsList = Component[SettingsListProps, js.Object, js.Any]
+  type SettingsList = Component[SettingsListProps, js.Object, Any]
   
   trait SettingsListProps extends StObject {
     
@@ -350,6 +350,8 @@ object mod {
       * default: black
       */
     var borderColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * default: 50
@@ -386,6 +388,10 @@ object mod {
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultItemSize(value: Double): Self = StObject.set(x, "defaultItemSize", value.asInstanceOf[js.Any])
       

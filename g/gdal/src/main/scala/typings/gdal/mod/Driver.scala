@@ -299,10 +299,7 @@ trait Driver extends StObject {
   def getMetadata(domain: String): js.Object = js.native
   
   def open(path: String): Dataset = js.native
-  @JSName("open")
-  def open_r(path: String, mode: r): Dataset = js.native
-  @JSName("open")
-  def open_r(path: String, mode: rPlussign): Dataset = js.native
+  def open(path: String, mode: r | rPlussign): Dataset = js.native
   
   def rename(new_name: String, old_name: String): Unit = js.native
 }

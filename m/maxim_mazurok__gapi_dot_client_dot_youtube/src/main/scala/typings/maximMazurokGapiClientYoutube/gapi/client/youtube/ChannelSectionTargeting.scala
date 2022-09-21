@@ -28,18 +28,18 @@ object ChannelSectionTargeting {
     
     inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

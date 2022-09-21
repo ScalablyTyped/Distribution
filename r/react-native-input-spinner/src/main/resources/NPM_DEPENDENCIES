@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-input-spinner" : "1.7.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-input-spinner" : "1.7.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

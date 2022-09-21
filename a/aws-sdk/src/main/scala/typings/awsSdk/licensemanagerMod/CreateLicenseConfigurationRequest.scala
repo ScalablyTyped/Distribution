@@ -12,6 +12,11 @@ trait CreateLicenseConfigurationRequest extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
+    * When true, disassociates a resource when software is uninstalled.
+    */
+  var DisassociateWhenNotFound: js.UndefOr[BoxBoolean] = js.undefined
+  
+  /**
     * Number of licenses managed by the license configuration.
     */
   var LicenseCount: js.UndefOr[BoxLong] = js.undefined
@@ -59,6 +64,10 @@ object CreateLicenseConfigurationRequest {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
+    inline def setDisassociateWhenNotFound(value: BoxBoolean): Self = StObject.set(x, "DisassociateWhenNotFound", value.asInstanceOf[js.Any])
+    
+    inline def setDisassociateWhenNotFoundUndefined: Self = StObject.set(x, "DisassociateWhenNotFound", js.undefined)
+    
     inline def setLicenseCount(value: BoxLong): Self = StObject.set(x, "LicenseCount", value.asInstanceOf[js.Any])
     
     inline def setLicenseCountHardLimit(value: BoxBoolean): Self = StObject.set(x, "LicenseCountHardLimit", value.asInstanceOf[js.Any])
@@ -73,7 +82,7 @@ object CreateLicenseConfigurationRequest {
     
     inline def setLicenseRulesUndefined: Self = StObject.set(x, "LicenseRules", js.undefined)
     
-    inline def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value :_*))
+    inline def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -81,12 +90,12 @@ object CreateLicenseConfigurationRequest {
     
     inline def setProductInformationListUndefined: Self = StObject.set(x, "ProductInformationList", js.undefined)
     
-    inline def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value :_*))
+    inline def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

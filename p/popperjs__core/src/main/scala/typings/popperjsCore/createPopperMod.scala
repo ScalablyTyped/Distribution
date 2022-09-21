@@ -55,7 +55,7 @@ object createPopperMod {
   
   trait PopperGeneratorArgs extends StObject {
     
-    var defaultModifiers: js.UndefOr[js.Array[Modifier[js.Any, js.Any]]] = js.undefined
+    var defaultModifiers: js.UndefOr[js.Array[Modifier[Any, Any]]] = js.undefined
     
     var defaultOptions: js.UndefOr[PartialOptionsGenericany] = js.undefined
   }
@@ -68,11 +68,11 @@ object createPopperMod {
     
     extension [Self <: PopperGeneratorArgs](x: Self) {
       
-      inline def setDefaultModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "defaultModifiers", value.asInstanceOf[js.Any])
+      inline def setDefaultModifiers(value: js.Array[Modifier[Any, Any]]): Self = StObject.set(x, "defaultModifiers", value.asInstanceOf[js.Any])
       
       inline def setDefaultModifiersUndefined: Self = StObject.set(x, "defaultModifiers", js.undefined)
       
-      inline def setDefaultModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "defaultModifiers", js.Array(value :_*))
+      inline def setDefaultModifiersVarargs(value: (Modifier[Any, Any])*): Self = StObject.set(x, "defaultModifiers", js.Array(value*))
       
       inline def setDefaultOptions(value: PartialOptionsGenericany): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       

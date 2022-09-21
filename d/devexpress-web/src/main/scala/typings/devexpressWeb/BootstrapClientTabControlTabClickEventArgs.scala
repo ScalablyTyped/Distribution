@@ -14,19 +14,19 @@ trait BootstrapClientTabControlTabClickEventArgs
   /**
     * Gets an HTML object that contains the processed tab.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object BootstrapClientTabControlTabClickEventArgs {
   
   inline def apply(
     cancel: Boolean,
-    htmlElement: js.Any,
-    htmlEvent: js.Any,
+    htmlElement: Any,
+    htmlEvent: Any,
     processOnServer: Boolean,
     reloadContentOnCallback: Boolean,
     tab: BootstrapClientTab
@@ -37,8 +37,8 @@ object BootstrapClientTabControlTabClickEventArgs {
   
   extension [Self <: BootstrapClientTabControlTabClickEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

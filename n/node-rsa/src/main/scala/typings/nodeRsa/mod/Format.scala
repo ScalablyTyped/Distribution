@@ -19,6 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-private-pem`
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-public`
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-public-pem`
+  - typings.nodeRsa.nodeRsaStrings.`openssh-public`
+  - typings.nodeRsa.nodeRsaStrings.`openssh-private`
   - typings.nodeRsa.nodeRsaStrings.`pkcs1-der`
   - typings.nodeRsa.nodeRsaStrings.`pkcs1-private-der`
   - typings.nodeRsa.nodeRsaStrings.`pkcs1-public-der`
@@ -55,6 +57,10 @@ object Format {
   inline def `components-public-der`: typings.nodeRsa.nodeRsaStrings.`components-public-der` = "components-public-der".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-public-der`]
   
   inline def `components-public-pem`: typings.nodeRsa.nodeRsaStrings.`components-public-pem` = "components-public-pem".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-public-pem`]
+  
+  inline def `openssh-private`: typings.nodeRsa.nodeRsaStrings.`openssh-private` = "openssh-private".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`openssh-private`]
+  
+  inline def `openssh-public`: typings.nodeRsa.nodeRsaStrings.`openssh-public` = "openssh-public".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`openssh-public`]
   
   inline def pkcs1: typings.nodeRsa.nodeRsaStrings.pkcs1 = "pkcs1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.pkcs1]
   

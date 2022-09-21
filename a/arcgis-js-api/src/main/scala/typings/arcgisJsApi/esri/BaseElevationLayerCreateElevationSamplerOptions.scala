@@ -13,6 +13,8 @@ trait BaseElevationLayerCreateElevationSamplerOptions
   /**
     * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
     *
+    * @default auto
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
     */
   var demResolution: js.UndefOr[Double | String] = js.undefined

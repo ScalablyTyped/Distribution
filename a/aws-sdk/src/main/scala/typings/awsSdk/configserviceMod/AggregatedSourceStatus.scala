@@ -12,7 +12,7 @@ trait AggregatedSourceStatus extends StObject {
   var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
   
   /**
-    * The error code that AWS Config returned when the source account aggregation last failed.
+    * The error code that Config returned when the source account aggregation last failed.
     */
   var LastErrorCode: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ trait AggregatedSourceStatus extends StObject {
   /**
     * The time of the last update.
     */
-  var LastUpdateTime: js.UndefOr[Date] = js.undefined
+  var LastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The source account ID or an organization.
@@ -66,7 +66,7 @@ object AggregatedSourceStatus {
     
     inline def setLastUpdateStatusUndefined: Self = StObject.set(x, "LastUpdateStatus", js.undefined)
     
-    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     

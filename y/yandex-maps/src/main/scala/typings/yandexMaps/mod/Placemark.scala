@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Placemark")
 @js.native
-class Placemark protected () extends GeoObject_[IPointGeometry, Point] {
+open class Placemark protected () extends GeoObject_[IPointGeometry, Point] {
   def this(geometry: js.Array[Double], properties: js.Object) = this()
   def this(geometry: js.Array[Double], properties: IDataManager) = this()
   def this(geometry: js.Object, properties: js.Object) = this()

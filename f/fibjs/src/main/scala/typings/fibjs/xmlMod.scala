@@ -37,7 +37,7 @@ object xmlMod {
   
   @JSImport("xml", "Document")
   @js.native
-  class Document ()
+  open class Document ()
     extends StObject
        with ClassXmlDocument
   

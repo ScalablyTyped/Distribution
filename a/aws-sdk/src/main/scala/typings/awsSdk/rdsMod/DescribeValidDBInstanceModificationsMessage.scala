@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeValidDBInstanceModificationsMessage extends StObject {
   
   /**
-    * The customer identifier or the ARN of your DB instance. 
+    * The customer identifier or the ARN of your DB instance.
     */
   var DBInstanceIdentifier: String
 }

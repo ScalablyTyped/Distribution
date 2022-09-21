@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Duration
   extends StObject
-     with _SpeedSettings[js.Any] {
+     with _SpeedSettings[Any] {
   
   /**
     * A string or number determining how long the animation will run.

@@ -17,7 +17,7 @@ trait MapOptions extends StObject {
   
   var mapType: js.UndefOr[String] = js.undefined
   
-  var mapTypeIds: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var mapTypeIds: js.UndefOr[js.Array[Any]] = js.undefined
   
   var maps: MapTypeId
   
@@ -58,11 +58,11 @@ object MapOptions {
     
     inline def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
     
-    inline def setMapTypeIds(value: js.Array[js.Any]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
+    inline def setMapTypeIds(value: js.Array[Any]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
     
     inline def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)
     
-    inline def setMapTypeIdsVarargs(value: js.Any*): Self = StObject.set(x, "mapTypeIds", js.Array(value :_*))
+    inline def setMapTypeIdsVarargs(value: Any*): Self = StObject.set(x, "mapTypeIds", js.Array(value*))
     
     inline def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
     

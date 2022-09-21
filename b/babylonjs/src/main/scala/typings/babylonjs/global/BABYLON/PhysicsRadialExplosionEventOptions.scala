@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsRadialExplosionEventOptions")
 @js.native
-class PhysicsRadialExplosionEventOptions ()
+open class PhysicsRadialExplosionEventOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsRadialExplosionEventOptions {
   
@@ -19,7 +19,7 @@ class PhysicsRadialExplosionEventOptions ()
   override def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit = js.native
   
   /**
-    * The strenght of the force in correspondence to the distance of the affected object
+    * The strength of the force in correspondence to the distance of the affected object
     */
   /* CompleteClass */
   var falloff: typings.babylonjs.BABYLON.PhysicsRadialImpulseFalloff = js.native
@@ -37,7 +37,7 @@ class PhysicsRadialExplosionEventOptions ()
   var sphere: DiameterSegments = js.native
   
   /**
-    * The strenth of the explosion.
+    * The strength of the explosion.
     */
   /* CompleteClass */
   var strength: Double = js.native

@@ -15,7 +15,7 @@ trait IApplicationData extends StObject {
   
   var localSettings: ApplicationDataContainer = js.native
   
-  var ondatachanged: js.Any = js.native
+  var ondatachanged: Any = js.native
   
   var roamingFolder: StorageFolder = js.native
   

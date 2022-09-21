@@ -2,9 +2,11 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientDrive.anon.Aperture
-import typings.maximMazurokGapiClientDrive.anon.CanAddFolderFromAnotherDrive
+import typings.maximMazurokGapiClientDrive.anon.CanAcceptOwnership
 import typings.maximMazurokGapiClientDrive.anon.DurationMillis
 import typings.maximMazurokGapiClientDrive.anon.IndexableText
+import typings.maximMazurokGapiClientDrive.anon.Labels
+import typings.maximMazurokGapiClientDrive.anon.SecurityUpdateEligible
 import typings.maximMazurokGapiClientDrive.anon.TargetId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,16 +16,17 @@ trait File extends StObject {
   
   /**
     * A collection of arbitrary key-value pairs which are private to the requesting app.
-    * Entries with null values are cleared in update and copy requests.
+    * Entries with null values are cleared in update and copy requests. These properties can only be retrieved using an authenticated request. An authenticated request uses an access
+    * token obtained with a OAuth 2 client ID. You cannot use an API key to retrieve private properties.
     */
   var appProperties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
   ] = js.undefined
   
   /** Capabilities the current user has on this file. Each capability corresponds to a fine-grained action that a user may take. */
-  var capabilities: js.UndefOr[CanAddFolderFromAnotherDrive] = js.undefined
+  var capabilities: js.UndefOr[CanAcceptOwnership] = js.undefined
   
   /** Additional information about the content of the file. These fields are never populated in responses. */
   var contentHints: js.UndefOr[IndexableText] = js.undefined
@@ -50,14 +53,14 @@ trait File extends StObject {
   var exportLinks: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
   ] = js.undefined
   
   /** The final component of fullFileExtension. This is only available for files with binary content in Google Drive. */
   var fileExtension: js.UndefOr[String] = js.undefined
   
   /**
-    * The color for a folder as an RGB hex string. The supported colors are published in the folderColorPalette field of the About resource.
+    * The color for a folder or shortcut to a folder as an RGB hex string. The supported colors are published in the folderColorPalette field of the About resource.
     * If an unsupported color is specified, the closest color in the palette will be used instead.
     */
   var folderColorRgb: js.UndefOr[String] = js.undefined
@@ -93,8 +96,14 @@ trait File extends StObject {
   /** Identifies what kind of resource this is. Value: the fixed string "drive#file". */
   var kind: js.UndefOr[String] = js.undefined
   
+  /** An overview of the labels on the file. */
+  var labelInfo: js.UndefOr[Labels] = js.undefined
+  
   /** The last user to modify the file. */
   var lastModifyingUser: js.UndefOr[User] = js.undefined
+  
+  /** Contains details about the link URLs that clients are using to refer to this item. */
+  var linkShareMetadata: js.UndefOr[SecurityUpdateEligible] = js.undefined
   
   /** The MD5 checksum for the content of the file. This is only applicable to files with binary content in Google Drive. */
   var md5Checksum: js.UndefOr[String] = js.undefined
@@ -130,7 +139,7 @@ trait File extends StObject {
   /** Whether the user owns the file. Not populated for items in shared drives. */
   var ownedByMe: js.UndefOr[Boolean] = js.undefined
   
-  /** The owners of the file. Currently, only certain legacy files may have more than one owner. Not populated for items in shared drives. */
+  /** The owner of this file. Only certain legacy files may have more than one owner. This field isn't populated for items in shared drives. */
   var owners: js.UndefOr[js.Array[User]] = js.undefined
   
   /**
@@ -153,11 +162,14 @@ trait File extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
   ] = js.undefined
   
   /** The number of storage quota bytes used by the file. This includes the head revision as well as previous revisions with keepForever enabled. */
   var quotaBytesUsed: js.UndefOr[String] = js.undefined
+  
+  /** A key needed to access the item via a shared link. */
+  var resourceKey: js.UndefOr[String] = js.undefined
   
   /** Whether the file has been shared. Not populated for items in shared drives. */
   var shared: js.UndefOr[Boolean] = js.undefined
@@ -241,12 +253,12 @@ object File {
     inline def setAppProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
     ): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
     
     inline def setAppPropertiesUndefined: Self = StObject.set(x, "appProperties", js.undefined)
     
-    inline def setCapabilities(value: CanAddFolderFromAnotherDrive): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: CanAcceptOwnership): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
@@ -258,7 +270,7 @@ object File {
     
     inline def setContentRestrictionsUndefined: Self = StObject.set(x, "contentRestrictions", js.undefined)
     
-    inline def setContentRestrictionsVarargs(value: ContentRestriction*): Self = StObject.set(x, "contentRestrictions", js.Array(value :_*))
+    inline def setContentRestrictionsVarargs(value: ContentRestriction*): Self = StObject.set(x, "contentRestrictions", js.Array(value*))
     
     inline def setCopyRequiresWriterPermission(value: Boolean): Self = StObject.set(x, "copyRequiresWriterPermission", value.asInstanceOf[js.Any])
     
@@ -283,7 +295,7 @@ object File {
     inline def setExportLinks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
     ): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
     
     inline def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)
@@ -332,9 +344,17 @@ object File {
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
+    inline def setLabelInfo(value: Labels): Self = StObject.set(x, "labelInfo", value.asInstanceOf[js.Any])
+    
+    inline def setLabelInfoUndefined: Self = StObject.set(x, "labelInfo", js.undefined)
+    
     inline def setLastModifyingUser(value: User): Self = StObject.set(x, "lastModifyingUser", value.asInstanceOf[js.Any])
     
     inline def setLastModifyingUserUndefined: Self = StObject.set(x, "lastModifyingUser", js.undefined)
+    
+    inline def setLinkShareMetadata(value: SecurityUpdateEligible): Self = StObject.set(x, "linkShareMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setLinkShareMetadataUndefined: Self = StObject.set(x, "linkShareMetadata", js.undefined)
     
     inline def setMd5Checksum(value: String): Self = StObject.set(x, "md5Checksum", value.asInstanceOf[js.Any])
     
@@ -372,30 +392,30 @@ object File {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    inline def setOwnersVarargs(value: User*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: User*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
     inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
     
-    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
     
     inline def setPermissionIds(value: js.Array[String]): Self = StObject.set(x, "permissionIds", value.asInstanceOf[js.Any])
     
     inline def setPermissionIdsUndefined: Self = StObject.set(x, "permissionIds", js.undefined)
     
-    inline def setPermissionIdsVarargs(value: String*): Self = StObject.set(x, "permissionIds", js.Array(value :_*))
+    inline def setPermissionIdsVarargs(value: String*): Self = StObject.set(x, "permissionIds", js.Array(value*))
     
     inline def setPermissions(value: js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -403,6 +423,10 @@ object File {
     inline def setQuotaBytesUsed(value: String): Self = StObject.set(x, "quotaBytesUsed", value.asInstanceOf[js.Any])
     
     inline def setQuotaBytesUsedUndefined: Self = StObject.set(x, "quotaBytesUsed", js.undefined)
+    
+    inline def setResourceKey(value: String): Self = StObject.set(x, "resourceKey", value.asInstanceOf[js.Any])
+    
+    inline def setResourceKeyUndefined: Self = StObject.set(x, "resourceKey", js.undefined)
     
     inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
@@ -428,7 +452,7 @@ object File {
     
     inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value*))
     
     inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     

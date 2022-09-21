@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.ApplicationData")
 @js.native
-class ApplicationData ()
+open class ApplicationData ()
   extends StObject
      with typings.winrt.Windows.Storage.ApplicationData
 /* static members */

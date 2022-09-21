@@ -10,10 +10,10 @@ object lensMod {
   
   @JSImport("material-ui/svg-icons/image/lens", JSImport.Default)
   @js.native
-  class default () extends ImageLens
+  open class default () extends ImageLens
   
   @JSImport("material-ui/svg-icons/image/lens", "ImageLens")
   @js.native
-  class ImageLens ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageLens ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

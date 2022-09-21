@@ -57,7 +57,7 @@ object global {
     */
   @JSGlobal("CameraPopoverOptions")
   @js.native
-  class CameraPopoverOptions ()
+  open class CameraPopoverOptions ()
     extends StObject
        with typings.cordovaPluginCamera.CameraPopoverOptions {
     def this(x: Double) = this()

@@ -10,10 +10,10 @@ object playCircleFilledMod {
   
   @JSImport("material-ui/svg-icons/av/play-circle-filled", JSImport.Default)
   @js.native
-  class default () extends AvPlayCircleFilled
+  open class default () extends AvPlayCircleFilled
   
   @JSImport("material-ui/svg-icons/av/play-circle-filled", "AvPlayCircleFilled")
   @js.native
-  class AvPlayCircleFilled ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvPlayCircleFilled ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

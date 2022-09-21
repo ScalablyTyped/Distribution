@@ -14,7 +14,7 @@ object libLinkMod {
   
   @JSImport("office-ui-fabric-react/lib/Link", "LinkBase")
   @js.native
-  class LinkBase protected ()
+  open class LinkBase protected ()
     extends typings.officeUiFabricReact.linkMod.LinkBase {
     def this(props: ILinkProps) = this()
   }

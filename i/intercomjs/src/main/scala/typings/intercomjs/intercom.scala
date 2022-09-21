@@ -14,8 +14,8 @@ object intercom {
       * @param socket A socket.io socket to bind to.
       * @param options Object with "send" and "receive" keys having values of Boolean or Boolean-producing function to determine whether message(s) should be forwarded to/from the socket.
       */
-    def bind(socket: js.Any): Unit = js.native
-    def bind(socket: js.Any, options: SocketBindingOptions): Unit = js.native
+    def bind(socket: Any): Unit = js.native
+    def bind(socket: Any, options: SocketBindingOptions): Unit = js.native
     
     /**
       * Broadcasts a message to all open windows (including the current window).
@@ -23,7 +23,7 @@ object intercom {
       * @param message The event data/message
       */
     def emit(name: String): Unit = js.native
-    def emit(name: String, message: js.Any): Unit = js.native
+    def emit(name: String, message: Any): Unit = js.native
     
     /**
       * Remove a registered event listener
@@ -52,9 +52,9 @@ object intercom {
   trait SocketBindingOptions extends StObject {
     
     /* boolean | (name: string, message: any)=>any */
-    var receive: js.UndefOr[js.Any] = js.undefined
+    var receive: js.UndefOr[Any] = js.undefined
     
-    var send: js.UndefOr[js.Any] = js.undefined
+    var send: js.UndefOr[Any] = js.undefined
   }
   object SocketBindingOptions {
     
@@ -65,11 +65,11 @@ object intercom {
     
     extension [Self <: SocketBindingOptions](x: Self) {
       
-      inline def setReceive(value: js.Any): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+      inline def setReceive(value: Any): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
       
       inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
       
-      inline def setSend(value: js.Any): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: Any): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
       
       inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     }

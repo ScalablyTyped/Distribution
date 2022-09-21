@@ -33,6 +33,6 @@ object ListThingGroupsForThingResponse {
     
     inline def setThingGroupsUndefined: Self = StObject.set(x, "thingGroups", js.undefined)
     
-    inline def setThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "thingGroups", js.Array(value :_*))
+    inline def setThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "thingGroups", js.Array(value*))
   }
 }

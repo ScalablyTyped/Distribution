@@ -1,10 +1,13 @@
 package typings.jsrsasign.anon
 
+import typings.jsrsasign.jsrsasign._ASN1HEXParseResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OidString extends StObject {
+trait OidString
+  extends StObject
+     with _ASN1HEXParseResult {
   
   var oid: String
 }

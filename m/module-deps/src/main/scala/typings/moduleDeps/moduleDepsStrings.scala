@@ -11,6 +11,10 @@ object moduleDepsStrings {
   inline def _package: _package = "package".asInstanceOf[_package]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait file extends StObject
   inline def file: file = "file".asInstanceOf[file]
   

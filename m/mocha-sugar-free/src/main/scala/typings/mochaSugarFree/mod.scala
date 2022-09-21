@@ -1011,7 +1011,7 @@ object mod extends Shortcut {
   
   trait Options
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.
@@ -1564,7 +1564,7 @@ object mod extends Shortcut {
     }
   }
   
-  type TestCase = js.ThisFunction1[/* this */ Unit, /* context */ TestContext, Unit | js.Thenable[js.Any]]
+  type TestCase = js.ThisFunction1[/* this */ Unit, /* context */ TestContext, Unit | js.Thenable[Any]]
   
   type TestCaseWithDone = js.ThisFunction1[/* this */ Unit, /* context */ TestContextWithDone, Unit]
   
@@ -1632,7 +1632,7 @@ object mod extends Shortcut {
       * Mark a test as completed.
       */
     def done(): Unit = js.native
-    def done(err: js.Any): Unit = js.native
+    def done(err: Any): Unit = js.native
   }
   
   /**

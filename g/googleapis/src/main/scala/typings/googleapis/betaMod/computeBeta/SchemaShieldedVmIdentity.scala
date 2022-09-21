@@ -4,24 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A shielded VM identity entry.
-  */
 trait SchemaShieldedVmIdentity extends StObject {
   
   /**
-    * An Endorsement Key (EK) issued to the Shielded VM&#39;s vTPM.
+    * An Endorsement Key (EK) issued to the Shielded VM's vTPM.
     */
   var encryptionKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.undefined
   
   /**
-    * [Output Only] Type of the resource. Always compute#shieldedVmIdentity for
-    * shielded VM identity entry.
+    * [Output Only] Type of the resource. Always compute#shieldedVmIdentity for shielded VM identity entry.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An Attestation Key (AK) issued to the Shielded VM&#39;s vTPM.
+    * An Attestation Key (AK) issued to the Shielded VM's vTPM.
     */
   var signingKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.undefined
 }
@@ -39,6 +35,8 @@ object SchemaShieldedVmIdentity {
     inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

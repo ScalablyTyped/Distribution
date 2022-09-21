@@ -1,7 +1,6 @@
 package typings.sharepoint.SP
 
 import typings.sharepoint.SP.Workflow.WorkflowAssociationCollection
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait List[T]
   def getItems(query: CamlQuery): ListItemCollection[T] = js.native
   
   /** Returns array of items describing changes since time specified in the query */
-  def getListItemChangesSinceToken(query: ChangeLogItemQuery): js.Array[js.Any] = js.native
+  def getListItemChangesSinceToken(query: ChangeLogItemQuery): js.Array[Any] = js.native
   
   /** Returns a collection of lookup fields that use this list as a data source and that have FieldLookup.IsRelationship set to true. */
   def getRelatedFields(): RelatedFieldCollection = js.native
@@ -61,7 +60,7 @@ trait List[T]
   def get_contentTypesEnabled(): Boolean = js.native
   
   /** Gets a value that specifies when the list was created. */
-  def get_created(): Date = js.native
+  def get_created(): js.Date = js.native
   
   /** Gets the data source associated with the list, or null if the list is not a virtual list. */
   def get_dataSource(): ListDataSource = js.native
@@ -172,10 +171,10 @@ trait List[T]
   def get_itemCount(): Double = js.native
   
   /** Gets a value that specifies the last time a list item was deleted from the list. */
-  def get_lastItemDeletedDate(): Date = js.native
+  def get_lastItemDeletedDate(): js.Date = js.native
   
   /** Gets a value that specifies the last time a list item, field, or property of the list was modified. */
-  def get_lastItemModifiedDate(): Date = js.native
+  def get_lastItemModifiedDate(): js.Date = js.native
   
   /** The entity type full name of the list item in the list. */
   def get_listItemEntityTypeFullName(): String = js.native
@@ -308,7 +307,7 @@ trait List[T]
   def set_isApplicationList(value: Boolean): Unit = js.native
   
   /** Sets a value that specifies the last time the list was modified. */
-  def set_lastItemModifiedDate(value: Date): Unit = js.native
+  def set_lastItemModifiedDate(value: js.Date): Unit = js.native
   
   /** Sets a value that indicates whether the list in a Meeting Workspace site contains data for multiple meeting instances within the site */
   def set_multipleDataList(value: Boolean): Unit = js.native

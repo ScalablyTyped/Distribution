@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("XMLSerializer")
 @js.native
-class XMLSerializer ()
+/* standard dom */
+open class XMLSerializer ()
   extends StObject
      with typings.std.XMLSerializer {
   
+  /* standard dom */
   /* CompleteClass */
   override def serializeToString(root: typings.std.Node): java.lang.String = js.native
 }

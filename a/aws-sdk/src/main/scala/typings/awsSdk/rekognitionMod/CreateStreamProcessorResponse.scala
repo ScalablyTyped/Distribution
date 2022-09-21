@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStreamProcessorResponse extends StObject {
   
   /**
-    * ARN for the newly create stream processor.
+    * Amazon Resource Number for the newly created stream processor.
     */
   var StreamProcessorArn: js.UndefOr[typings.awsSdk.rekognitionMod.StreamProcessorArn] = js.undefined
 }

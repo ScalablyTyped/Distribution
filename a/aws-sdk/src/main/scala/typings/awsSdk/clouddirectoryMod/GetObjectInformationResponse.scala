@@ -33,6 +33,6 @@ object GetObjectInformationResponse {
     
     inline def setSchemaFacetsUndefined: Self = StObject.set(x, "SchemaFacets", js.undefined)
     
-    inline def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
+    inline def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value*))
   }
 }

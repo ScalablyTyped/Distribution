@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.CommandEventArgs")
 @js.native
-class CommandEventArgs protected ()
+open class CommandEventArgs protected ()
   extends StObject
      with EventArgs {
-  def this(id: js.Any, `type`: typings.sharepoint.CUI.CommandType, source: js.Any, pars: js.Any) = this()
+  def this(id: Any, `type`: typings.sharepoint.CUI.CommandType, source: Any, pars: Any) = this()
   
   /**
     * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.

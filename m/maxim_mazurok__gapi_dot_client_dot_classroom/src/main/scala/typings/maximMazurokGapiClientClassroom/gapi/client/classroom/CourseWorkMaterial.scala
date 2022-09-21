@@ -96,7 +96,7 @@ object CourseWorkMaterial {
     
     inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
     
     inline def setScheduledTime(value: String): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
     

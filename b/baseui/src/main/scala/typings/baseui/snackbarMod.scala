@@ -1,12 +1,20 @@
 package typings.baseui
 
+import typings.baseui.anon.Animating
 import typings.baseui.anon.Dequeue
-import typings.baseui.anon.Size
-import typings.react.mod.FC
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.std.HTMLButtonElement
-import typings.std.Node
+import typings.baseui.anon.HasSuffix
+import typings.baseui.anon.heightnumberwidthnumberSp
+import typings.baseui.baseuiStrings.div
+import typings.baseui.baseuiStrings.i
+import typings.baseui.baseuiStrings.p
+import typings.baseui.baseuiStrings.span
+import typings.baseui.snackbarTypesMod.Duration
+import typings.baseui.snackbarTypesMod.Placement
+import typings.baseui.snackbarTypesMod.SnackbarElementOverrides
+import typings.baseui.snackbarTypesMod.SnackbarElementProps
+import typings.baseui.snackbarTypesMod.SnackbarProviderProps
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,200 +25,105 @@ object snackbarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("baseui/snackbar", "DURATION")
-  @js.native
-  val DURATION: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof DURATION */ js.Any = js.native
+  object DURATION {
+    
+    @JSImport("baseui/snackbar", "DURATION")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("baseui/snackbar", "DURATION.infinite")
+    @js.native
+    def infinite: Double = js.native
+    inline def infinite_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("infinite")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/snackbar", "DURATION.long")
+    @js.native
+    def long: Double = js.native
+    inline def long_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/snackbar", "DURATION.medium")
+    @js.native
+    def medium: Double = js.native
+    inline def medium_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/snackbar", "DURATION.short")
+    @js.native
+    def short: Double = js.native
+    inline def short_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("short")(x.asInstanceOf[js.Any])
+  }
   
-  @JSImport("baseui/snackbar", "PLACEMENT")
-  @js.native
-  val PLACEMENT: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof PLACEMENT */ js.Any = js.native
+  object PLACEMENT {
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.bottom")
+    @js.native
+    val bottom: typings.baseui.baseuiStrings.bottom = js.native
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.bottomLeft")
+    @js.native
+    val bottomLeft: typings.baseui.baseuiStrings.bottomLeft = js.native
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.bottomRight")
+    @js.native
+    val bottomRight: typings.baseui.baseuiStrings.bottomRight = js.native
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.top")
+    @js.native
+    val top: typings.baseui.baseuiStrings.top = js.native
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.topLeft")
+    @js.native
+    val topLeft: typings.baseui.baseuiStrings.topLeft = js.native
+    
+    @JSImport("baseui/snackbar", "PLACEMENT.topRight")
+    @js.native
+    val topRight: typings.baseui.baseuiStrings.topRight = js.native
+  }
   
-  @JSImport("baseui/snackbar", "SnackbarElement")
-  @js.native
-  val SnackbarElement: FC[SnackbarElementPropsT] = js.native
+  inline def SnackbarElement(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer: SnackbarElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarElement")(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("baseui/snackbar", "SnackbarProvider")
+  inline def SnackbarProvider(hasChildrenOverridesPlacementDefaultDuration: SnackbarProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarProvider")(hasChildrenOverridesPlacementDefaultDuration.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("baseui/snackbar", "StyledActionButtonContainer")
   @js.native
-  val SnackbarProvider: FC[SnackbarProviderPropsT] = js.native
+  val StyledActionButtonContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledContent")
+  @js.native
+  val StyledContent: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledMessage")
+  @js.native
+  val StyledMessage: StyletronComponent[p, HasSuffix] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledPlacementContainer")
+  @js.native
+  val StyledPlacementContainer: StyletronComponent[div, Animating] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledRoot")
+  @js.native
+  val StyledRoot: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledSpinner")
+  @js.native
+  val StyledSpinner: StyletronComponent[i, heightnumberwidthnumberSp] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledStartEnhancerContainer")
+  @js.native
+  val StyledStartEnhancerContainer: StyletronComponent[span, js.Object] = js.native
+  
+  @JSImport("baseui/snackbar", "StyledWrapActionButtonContainer")
+  @js.native
+  val StyledWrapActionButtonContainer: StyletronComponent[div, js.Object] = js.native
   
   inline def useSnackbar(): Dequeue = ^.asInstanceOf[js.Dynamic].applyDynamic("useSnackbar")().asInstanceOf[Dequeue]
   
-  type DurationT = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DURATION.infinite */ js.Any
+  type DurationT = Duration
   
-  type PlacementT = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PLACEMENT.topLeft */ js.Any
+  type PlacementT = Placement
   
-  trait SnackbarElementOverridesT extends StObject {
-    
-    var ActionButtonContainer: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Content: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Message: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Root: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Spinner: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var StartEnhancerContainer: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var WrapActionButtonContainer: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-  }
-  object SnackbarElementOverridesT {
-    
-    inline def apply(): SnackbarElementOverridesT = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SnackbarElementOverridesT]
-    }
-    
-    extension [Self <: SnackbarElementOverridesT](x: Self) {
-      
-      inline def setActionButtonContainer(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "ActionButtonContainer", value.asInstanceOf[js.Any])
-      
-      inline def setActionButtonContainerUndefined: Self = StObject.set(x, "ActionButtonContainer", js.undefined)
-      
-      inline def setContent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
-      
-      inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
-      
-      inline def setMessage(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
-      
-      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
-      
-      inline def setRoot(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
-      
-      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
-      
-      inline def setSpinner(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Spinner", value.asInstanceOf[js.Any])
-      
-      inline def setSpinnerUndefined: Self = StObject.set(x, "Spinner", js.undefined)
-      
-      inline def setStartEnhancerContainer(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "StartEnhancerContainer", value.asInstanceOf[js.Any])
-      
-      inline def setStartEnhancerContainerUndefined: Self = StObject.set(x, "StartEnhancerContainer", js.undefined)
-      
-      inline def setWrapActionButtonContainer(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "WrapActionButtonContainer", value.asInstanceOf[js.Any])
-      
-      inline def setWrapActionButtonContainerUndefined: Self = StObject.set(x, "WrapActionButtonContainer", js.undefined)
-    }
-  }
+  type SnackbarElementOverridesT = SnackbarElementOverrides
   
-  trait SnackbarElementPropsT extends StObject {
-    
-    var actionMessage: js.UndefOr[String] = js.undefined
-    
-    var actionOnClick: js.UndefOr[
-        js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Any]
-      ] = js.undefined
-    
-    var focus: js.UndefOr[Boolean] = js.undefined
-    
-    var message: String
-    
-    var overrides: js.UndefOr[SnackbarElementOverridesT] = js.undefined
-    
-    var progress: js.UndefOr[Boolean] = js.undefined
-    
-    var startEnhancer: js.UndefOr[FC[Size]] = js.undefined
-  }
-  object SnackbarElementPropsT {
-    
-    inline def apply(message: String): SnackbarElementPropsT = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SnackbarElementPropsT]
-    }
-    
-    extension [Self <: SnackbarElementPropsT](x: Self) {
-      
-      inline def setActionMessage(value: String): Self = StObject.set(x, "actionMessage", value.asInstanceOf[js.Any])
-      
-      inline def setActionMessageUndefined: Self = StObject.set(x, "actionMessage", js.undefined)
-      
-      inline def setActionOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "actionOnClick", js.Any.fromFunction1(value))
-      
-      inline def setActionOnClickUndefined: Self = StObject.set(x, "actionOnClick", js.undefined)
-      
-      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
-      
-      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
-      
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setOverrides(value: SnackbarElementOverridesT): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setProgress(value: Boolean): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
-      
-      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
-      
-      inline def setStartEnhancer(value: FC[Size]): Self = StObject.set(x, "startEnhancer", value.asInstanceOf[js.Any])
-      
-      inline def setStartEnhancerUndefined: Self = StObject.set(x, "startEnhancer", js.undefined)
-    }
-  }
+  type SnackbarElementPropsT = SnackbarElementProps
   
-  trait SnackbarProviderPropsT extends StObject {
-    
-    var children: js.UndefOr[Node] = js.undefined
-    
-    var defaultDuration: js.UndefOr[DurationT] = js.undefined
-    
-    var overrides: js.UndefOr[typings.baseui.anon.SnackbarElementOverridesT] = js.undefined
-    
-    var placement: js.UndefOr[PlacementT] = js.undefined
-  }
-  object SnackbarProviderPropsT {
-    
-    inline def apply(): SnackbarProviderPropsT = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SnackbarProviderPropsT]
-    }
-    
-    extension [Self <: SnackbarProviderPropsT](x: Self) {
-      
-      inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setDefaultDuration(value: DurationT): Self = StObject.set(x, "defaultDuration", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultDurationUndefined: Self = StObject.set(x, "defaultDuration", js.undefined)
-      
-      inline def setOverrides(value: typings.baseui.anon.SnackbarElementOverridesT): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setPlacement(value: PlacementT): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
-    }
-  }
+  type SnackbarProviderPropsT = SnackbarProviderProps
 }

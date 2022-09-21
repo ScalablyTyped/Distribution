@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PickerField")
 @js.native
-/* private */ class PickerField ()
+/* private */ open class PickerField ()
   extends StObject
      with typings.activexOffice.Office.PickerField {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native

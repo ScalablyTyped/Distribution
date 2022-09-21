@@ -6,6 +6,8 @@ import typings.cspHtmlWebpackPlugin.cspHtmlWebpackPluginStrings.sha256
 import typings.cspHtmlWebpackPlugin.cspHtmlWebpackPluginStrings.sha384
 import typings.cspHtmlWebpackPlugin.cspHtmlWebpackPluginStrings.sha512
 import typings.tapable.mod.AsyncSeriesWaterfallHook
+import typings.tapable.mod.UnsetAdditionalOptions
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +21,7 @@ object mod {
     * @param policy - the policy object
     * @param additionalOpts - additional config options
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with CspHtmlWebpackPlugin {
     def this(policy: Policy) = this()
@@ -28,9 +30,7 @@ object mod {
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   // Fallback when nothing works.
@@ -115,64 +115,58 @@ object mod {
   trait CspHtmlWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
   }
   object CspHtmlWebpackPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any => Unit
-    ): CspHtmlWebpackPlugin = {
+    inline def apply(apply: Compiler => Unit): CspHtmlWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[CspHtmlWebpackPlugin]
     }
     
     extension [Self <: CspHtmlWebpackPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
   // HtmlWebpackPlugin v3 and v4 use different hook interfaces. Figure out
   // which we're using and infer the generic type variable inside.
-  type HtmlPluginData = js.Any
+  type HtmlPluginData = Any
   
   // Helpers for extracting the relevant generic types from
   // HtmlWebpackPlugin.Hooks.
   trait HtmlPluginDataHookV3[T] extends StObject {
     
-    var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]
+    var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]
   }
   object HtmlPluginDataHookV3 {
     
-    inline def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV3[T] = {
+    inline def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): HtmlPluginDataHookV3[T] = {
       val __obj = js.Dynamic.literal(htmlWebpackPluginAfterHtmlProcessing = htmlWebpackPluginAfterHtmlProcessing.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV3[T]]
     }
     
     extension [Self <: HtmlPluginDataHookV3[?], T](x: Self & HtmlPluginDataHookV3[T]) {
       
-      inline def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
+      inline def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
     }
   }
   
   trait HtmlPluginDataHookV4[T] extends StObject {
     
-    var beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]
+    var beforeEmit: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]
   }
   object HtmlPluginDataHookV4 {
     
-    inline def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV4[T] = {
+    inline def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): HtmlPluginDataHookV4[T] = {
       val __obj = js.Dynamic.literal(beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV4[T]]
     }
     
     extension [Self <: HtmlPluginDataHookV4[?], T](x: Self & HtmlPluginDataHookV4[T]) {
       
-      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   

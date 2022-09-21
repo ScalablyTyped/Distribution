@@ -20,6 +20,6 @@ object StepInfoList {
     
     inline def setStepInfoList(value: js.Array[StepInfo]): Self = StObject.set(x, "stepInfoList", value.asInstanceOf[js.Any])
     
-    inline def setStepInfoListVarargs(value: StepInfo*): Self = StObject.set(x, "stepInfoList", js.Array(value :_*))
+    inline def setStepInfoListVarargs(value: StepInfo*): Self = StObject.set(x, "stepInfoList", js.Array(value*))
   }
 }

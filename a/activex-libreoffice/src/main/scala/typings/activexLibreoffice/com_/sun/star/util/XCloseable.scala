@@ -60,7 +60,7 @@ object XCloseable {
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCloseListener: XCloseListener => Unit
   ): XCloseable = {

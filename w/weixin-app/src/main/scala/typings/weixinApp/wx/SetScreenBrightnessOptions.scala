@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 设备-----屏幕亮度
 trait SetScreenBrightnessOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 屏幕亮度值，范围 0~1，0 最暗，1 最亮 */
   var value: Double

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GSuitePrincipal extends StObject {
   
-  /** This principal represents all users of the G Suite domain of the customer. */
+  /** This principal represents all users of the Google Workspace domain of the customer. */
   var gsuiteDomain: js.UndefOr[Boolean] = js.undefined
   
-  /** This principal references a G Suite group account */
+  /** This principal references a Google Workspace group name. */
   var gsuiteGroupEmail: js.UndefOr[String] = js.undefined
   
-  /** This principal references a G Suite user account */
+  /** This principal references a Google Workspace user account. */
   var gsuiteUserEmail: js.UndefOr[String] = js.undefined
 }
 object GSuitePrincipal {

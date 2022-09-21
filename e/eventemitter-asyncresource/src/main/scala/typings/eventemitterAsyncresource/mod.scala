@@ -11,12 +11,12 @@ object mod {
   
   @JSImport("eventemitter-asyncresource", JSImport.Namespace)
   @js.native
-  class ^ () extends EventEmitterAsyncResource {
+  open class ^ () extends EventEmitterAsyncResource {
     def this(options: String) = this()
     def this(options: Options) = this()
   }
   
-  type AsyncResourceOptions = js.Any
+  type AsyncResourceOptions = Any
   
   @js.native
   trait EventEmitterAsyncResource extends EventEmitter {
@@ -30,7 +30,7 @@ object mod {
     def triggerAsyncId(): Double = js.native
   }
   
-  type EventEmitterOptions = js.Any
+  type EventEmitterOptions = Any
   
   @js.native
   trait EventEmitterReferencingAsyncResource extends AsyncResource {

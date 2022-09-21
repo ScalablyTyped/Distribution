@@ -10,16 +10,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DividerProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 分隔线颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Divider color
+    * @defaultValue null
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主轴方向
+    * @defaultValue 'row'
+    */
+  /**
+    * @language en-US
+    * @description The direction of main axis
+    * @defaultValue 'row'
+    */
   var flexDirection: js.UndefOr[row | column] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 分隔线高
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Divider height
+    * @defaultValue null
+    */
   var height: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 分割线样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Split line style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否显示
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether it is visible or not
+    * @defaultValue true
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 分隔线宽
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Divider width
+    * @defaultValue null
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object DividerProps {

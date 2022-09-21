@@ -12,7 +12,7 @@ object titleMod {
   
   @JSImport("playable/dist/src/modules/ui/title/title", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Title {
     def this(hasThemeConfig: ConfigTheme) = this()
@@ -26,7 +26,7 @@ object titleMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/title/title", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.titleViewMod.default {
       def this(config: ITitleViewConfig) = this()
     }
@@ -55,15 +55,15 @@ object titleMod {
     extends StObject
        with ITitle {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _theme: js.Any = js.native
+    /* private */ var _theme: Any = js.native
     
-    /* private */ var _triggerCallback: js.Any = js.native
+    /* private */ var _triggerCallback: Any = js.native
     
     var isHidden: Boolean = js.native
     

@@ -10,10 +10,10 @@ Memory adapter for catbox
 | ------------------ | :-------------: |
 | Full name          | @hapi/catbox-memory |
 | Keywords           | cache, catbox, memory |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 13514035 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2306023.0 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/catbox-memory#readme)

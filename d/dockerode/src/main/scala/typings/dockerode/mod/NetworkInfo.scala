@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NetworkInfo extends StObject {
   
-  var Aliases: js.UndefOr[js.Any] = js.undefined
+  var Aliases: js.UndefOr[Any] = js.undefined
   
   var EndpointID: String
   
@@ -16,7 +16,7 @@ trait NetworkInfo extends StObject {
   
   var GlobalIPv6PrefixLen: Double
   
-  var IPAMConfig: js.UndefOr[js.Any] = js.undefined
+  var IPAMConfig: js.UndefOr[Any] = js.undefined
   
   var IPAddress: String
   
@@ -24,7 +24,7 @@ trait NetworkInfo extends StObject {
   
   var IPv6Gateway: String
   
-  var Links: js.UndefOr[js.Any] = js.undefined
+  var Links: js.UndefOr[Any] = js.undefined
   
   var MacAddress: String
   
@@ -49,7 +49,7 @@ object NetworkInfo {
   
   extension [Self <: NetworkInfo](x: Self) {
     
-    inline def setAliases(value: js.Any): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: Any): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
@@ -61,7 +61,7 @@ object NetworkInfo {
     
     inline def setGlobalIPv6PrefixLen(value: Double): Self = StObject.set(x, "GlobalIPv6PrefixLen", value.asInstanceOf[js.Any])
     
-    inline def setIPAMConfig(value: js.Any): Self = StObject.set(x, "IPAMConfig", value.asInstanceOf[js.Any])
+    inline def setIPAMConfig(value: Any): Self = StObject.set(x, "IPAMConfig", value.asInstanceOf[js.Any])
     
     inline def setIPAMConfigUndefined: Self = StObject.set(x, "IPAMConfig", js.undefined)
     
@@ -71,7 +71,7 @@ object NetworkInfo {
     
     inline def setIPv6Gateway(value: String): Self = StObject.set(x, "IPv6Gateway", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: js.Any): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Any): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     

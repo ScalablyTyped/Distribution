@@ -35,6 +35,13 @@ trait CallFunctionOnRequest extends StObject {
   var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether the result should contain `webDriverValue`, serialized according to
+    * https://w3c.github.io/webdriver-bidi. This is mutually exclusive with `returnByValue`, but
+    * resulting `objectId` is still provided.
+    */
+  var generateWebDriverValue: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Symbolic group name that can be used to release multiple objects. If objectGroup is not
     * specified and objectId is, objectGroup will be inherited from object.
     */
@@ -58,6 +65,11 @@ trait CallFunctionOnRequest extends StObject {
   var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether to throw an exception if side effect cannot be ruled out during evaluation.
+    */
+  var throwOnSideEffect: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether execution should be treated as initiated by user in the UI.
     */
   var userGesture: js.UndefOr[Boolean] = js.undefined
@@ -75,7 +87,7 @@ object CallFunctionOnRequest {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: CallArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: CallArgument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     
@@ -90,6 +102,10 @@ object CallFunctionOnRequest {
     inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
+    
+    inline def setGenerateWebDriverValue(value: Boolean): Self = StObject.set(x, "generateWebDriverValue", value.asInstanceOf[js.Any])
+    
+    inline def setGenerateWebDriverValueUndefined: Self = StObject.set(x, "generateWebDriverValue", js.undefined)
     
     inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
@@ -106,6 +122,10 @@ object CallFunctionOnRequest {
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setThrowOnSideEffect(value: Boolean): Self = StObject.set(x, "throwOnSideEffect", value.asInstanceOf[js.Any])
+    
+    inline def setThrowOnSideEffectUndefined: Self = StObject.set(x, "throwOnSideEffect", js.undefined)
     
     inline def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     

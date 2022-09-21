@@ -17,7 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def enableTransform(module: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTransform")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def enableTransform(module: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTransform")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def getCurrentFlow(): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentFlow")().asInstanceOf[Flow]
   

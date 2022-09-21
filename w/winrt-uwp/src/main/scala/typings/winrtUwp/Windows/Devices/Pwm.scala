@@ -9,32 +9,32 @@ object Pwm {
   trait PwmController extends StObject {
     
     /* unmapped type */
-    var actualFrequency: js.Any
+    var actualFrequency: Any
     
     /* unmapped type */
-    var maxFrequency: js.Any
+    var maxFrequency: Any
     
     /* unmapped type */
-    var minFrequency: js.Any
+    var minFrequency: Any
     
     /* unmapped type */
-    var openPin: js.Any
+    var openPin: Any
     
     /* unmapped type */
-    var pinCount: js.Any
+    var pinCount: Any
     
     /* unmapped type */
-    var setDesiredFrequency: js.Any
+    var setDesiredFrequency: Any
   }
   object PwmController {
     
     inline def apply(
-      actualFrequency: js.Any,
-      maxFrequency: js.Any,
-      minFrequency: js.Any,
-      openPin: js.Any,
-      pinCount: js.Any,
-      setDesiredFrequency: js.Any
+      actualFrequency: Any,
+      maxFrequency: Any,
+      minFrequency: Any,
+      openPin: Any,
+      pinCount: Any,
+      setDesiredFrequency: Any
     ): PwmController = {
       val __obj = js.Dynamic.literal(actualFrequency = actualFrequency.asInstanceOf[js.Any], maxFrequency = maxFrequency.asInstanceOf[js.Any], minFrequency = minFrequency.asInstanceOf[js.Any], openPin = openPin.asInstanceOf[js.Any], pinCount = pinCount.asInstanceOf[js.Any], setDesiredFrequency = setDesiredFrequency.asInstanceOf[js.Any])
       __obj.asInstanceOf[PwmController]
@@ -42,56 +42,56 @@ object Pwm {
     
     extension [Self <: PwmController](x: Self) {
       
-      inline def setActualFrequency(value: js.Any): Self = StObject.set(x, "actualFrequency", value.asInstanceOf[js.Any])
+      inline def setActualFrequency(value: Any): Self = StObject.set(x, "actualFrequency", value.asInstanceOf[js.Any])
       
-      inline def setMaxFrequency(value: js.Any): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
+      inline def setMaxFrequency(value: Any): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
       
-      inline def setMinFrequency(value: js.Any): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
+      inline def setMinFrequency(value: Any): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
       
-      inline def setOpenPin(value: js.Any): Self = StObject.set(x, "openPin", value.asInstanceOf[js.Any])
+      inline def setOpenPin(value: Any): Self = StObject.set(x, "openPin", value.asInstanceOf[js.Any])
       
-      inline def setPinCount(value: js.Any): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
+      inline def setPinCount(value: Any): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
       
-      inline def setSetDesiredFrequency(value: js.Any): Self = StObject.set(x, "setDesiredFrequency", value.asInstanceOf[js.Any])
+      inline def setSetDesiredFrequency(value: Any): Self = StObject.set(x, "setDesiredFrequency", value.asInstanceOf[js.Any])
     }
   }
   
   trait PwmPin extends StObject {
     
-    var close: js.Any
+    var close: Any
     
     /* unmapped type */
-    var controller: js.Any
+    var controller: Any
     
     /* unmapped type */
-    var getActiveDutyCyclePercentage: js.Any
+    var getActiveDutyCyclePercentage: Any
     
     /* unmapped type */
-    var isStarted: js.Any
+    var isStarted: Any
     
     /* unmapped type */
-    var polarity: js.Any
+    var polarity: Any
     
     /* unmapped type */
-    var setActiveDutyCyclePercentage: js.Any
+    var setActiveDutyCyclePercentage: Any
     
     /* unmapped type */
-    var start: js.Any
+    var start: Any
     
     /* unmapped type */
-    var stop: js.Any
+    var stop: Any
   }
   object PwmPin {
     
     inline def apply(
-      close: js.Any,
-      controller: js.Any,
-      getActiveDutyCyclePercentage: js.Any,
-      isStarted: js.Any,
-      polarity: js.Any,
-      setActiveDutyCyclePercentage: js.Any,
-      start: js.Any,
-      stop: js.Any
+      close: Any,
+      controller: Any,
+      getActiveDutyCyclePercentage: Any,
+      isStarted: Any,
+      polarity: Any,
+      setActiveDutyCyclePercentage: Any,
+      start: Any,
+      stop: Any
     ): PwmPin = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], getActiveDutyCyclePercentage = getActiveDutyCyclePercentage.asInstanceOf[js.Any], isStarted = isStarted.asInstanceOf[js.Any], polarity = polarity.asInstanceOf[js.Any], setActiveDutyCyclePercentage = setActiveDutyCyclePercentage.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
       __obj.asInstanceOf[PwmPin]
@@ -99,21 +99,21 @@ object Pwm {
     
     extension [Self <: PwmPin](x: Self) {
       
-      inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      inline def setGetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "getActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
+      inline def setGetActiveDutyCyclePercentage(value: Any): Self = StObject.set(x, "getActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
       
-      inline def setIsStarted(value: js.Any): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
+      inline def setIsStarted(value: Any): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
       
-      inline def setPolarity(value: js.Any): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
+      inline def setPolarity(value: Any): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
       
-      inline def setSetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "setActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
+      inline def setSetActiveDutyCyclePercentage(value: Any): Self = StObject.set(x, "setActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setStop(value: js.Any): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: Any): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     }
   }
 }

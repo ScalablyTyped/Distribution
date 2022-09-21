@@ -10,5 +10,5 @@ object apiModelApiModelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isApiModel(model: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ApiModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isApiModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ApiModel */ Boolean]
+  inline def isApiModel(model: Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ApiModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isApiModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ApiModel */ Boolean]
 }

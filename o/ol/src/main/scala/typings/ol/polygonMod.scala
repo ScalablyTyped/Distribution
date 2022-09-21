@@ -15,7 +15,7 @@ object polygonMod {
   
   @JSImport("ol/geom/Polygon", JSImport.Default)
   @js.native
-  class default protected () extends Polygon {
+  open class default protected () extends Polygon {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: Unit, opt_ends: js.Array[Double]) = this()

@@ -11,9 +11,9 @@ Media Tags Reader (ID3, MP4)
 | Full name          | jsmediatags |
 | Keywords           | ID3, tags, mp3, audio, mp4 |
 | # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 32631 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 6818.666666666667 |
+| # stars            | 618.0 |
 
 ## Links
 - [Homepage](https://github.com/aadsm/jsmediatags#readme)

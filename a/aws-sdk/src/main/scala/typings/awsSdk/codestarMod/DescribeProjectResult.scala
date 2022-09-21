@@ -19,7 +19,7 @@ trait DescribeProjectResult extends StObject {
   /**
     * The date and time the project was created, in timestamp format.
     */
-  var createdTimeStamp: js.UndefOr[CreatedTimestamp] = js.undefined
+  var createdTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the project, if any.
@@ -68,7 +68,7 @@ object DescribeProjectResult {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    inline def setCreatedTimeStamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "createdTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "createdTimeStamp", js.undefined)
     

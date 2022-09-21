@@ -9,15 +9,12 @@ Library for performing 2D collision detection
 | ------------------ | :-------------: |
 | Full name          | sat |
 | Keywords           | collision detection, sat, game |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 144310 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26657.0 |
+| # stars            | 670.0 |
 
 ## Links
-- [Homepage](https://github.com/jriecken/sat-js#readme)
-- [Bugs](http://github.com/jriecken/sat-js/issues)
-- [Repository](https://github.com/jriecken/sat-js)
 - [Npm](https://www.npmjs.com/package/sat)
     
 

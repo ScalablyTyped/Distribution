@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ abstract class AppointmentConflictResult ()
   
   /** Gets the date of the appointment conflict. */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /** Gets a value indicating the type of appointment conflict. */
   /* CompleteClass */

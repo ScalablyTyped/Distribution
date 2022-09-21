@@ -8,24 +8,24 @@ object commonConnectionTransportMod {
   
   trait ConnectionTransport extends StObject {
     
-    def close(): js.Any
+    def close(): Unit
     
     var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onmessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
-    def send(string: js.Any): js.Any
+    def send(message: String): Unit
   }
   object ConnectionTransport {
     
-    inline def apply(close: () => js.Any, send: js.Any => js.Any): ConnectionTransport = {
+    inline def apply(close: () => Unit, send: String => Unit): ConnectionTransport = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[ConnectionTransport]
     }
     
     extension [Self <: ConnectionTransport](x: Self) {
       
-      inline def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
       inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
       
@@ -35,7 +35,7 @@ object commonConnectionTransportMod {
       
       inline def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
       
-      inline def setSend(value: js.Any => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
 }

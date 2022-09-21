@@ -10,10 +10,10 @@ More powerful replacer for built-in Angular $cookieStore (https://github.com/ang
 | ------------------ | :-------------: |
 | Full name          | ngkookies |
 | Keywords           | angular, javascript, cookies, ngKookies, ngCookies |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2632 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 142.33333333333334 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/voronianski/ngKookies)

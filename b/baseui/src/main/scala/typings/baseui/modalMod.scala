@@ -1,472 +1,233 @@
 package typings.baseui
 
-import typings.baseui.anon.ButtonPropsautoFocusboole
-import typings.baseui.anon.ChildrenReactNode
-import typings.baseui.anon.CloseSource
-import typings.baseui.anon.SharedStylePropsArgchildrAnimate
-import typings.baseui.baseuiStrings.`100Percentsign`
-import typings.baseui.baseuiStrings.`500px`
-import typings.baseui.baseuiStrings.alertdialog
-import typings.baseui.baseuiStrings.auto
-import typings.baseui.baseuiStrings.backdrop
-import typings.baseui.baseuiStrings.closeButton
+import org.scalablytyped.runtime.Shortcut
+import typings.baseui.anon.`18`
+import typings.baseui.anon.`19`
+import typings.baseui.baseuiStrings.$colors
+import typings.baseui.baseuiStrings.$disabled
+import typings.baseui.baseuiStrings.$isFocusVisible
+import typings.baseui.baseuiStrings.$isLoading
+import typings.baseui.baseuiStrings.$isSelected
+import typings.baseui.baseuiStrings.$kind
+import typings.baseui.baseuiStrings.$shape
+import typings.baseui.baseuiStrings.$size
+import typings.baseui.baseuiStrings.`type`
+import typings.baseui.baseuiStrings.button
+import typings.baseui.baseuiStrings.children
+import typings.baseui.baseuiStrings.colors
 import typings.baseui.baseuiStrings.default_
-import typings.baseui.baseuiStrings.dialog
+import typings.baseui.baseuiStrings.disabled
+import typings.baseui.baseuiStrings.div
+import typings.baseui.baseuiStrings.endEnhancer
 import typings.baseui.baseuiStrings.escape_
-import typings.baseui.baseuiStrings.full
-import typings.react.mod.Component
+import typings.baseui.baseuiStrings.isLoading
+import typings.baseui.baseuiStrings.isSelected
+import typings.baseui.baseuiStrings.kind
+import typings.baseui.baseuiStrings.onClick
+import typings.baseui.baseuiStrings.overrides
+import typings.baseui.baseuiStrings.shape
+import typings.baseui.baseuiStrings.size
+import typings.baseui.baseuiStrings.startEnhancer
+import typings.baseui.buttonTypesMod.ButtonProps
+import typings.baseui.buttonTypesMod.SharedStyleProps
+import typings.baseui.focusOnceMod.Props
+import typings.baseui.modalModalMod.default
+import typings.baseui.modalTypesMod.ModalOverrides
+import typings.baseui.modalTypesMod.RoleProp
+import typings.baseui.modalTypesMod.SharedStylePropsArg
+import typings.baseui.modalTypesMod.SizeProp
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
+import typings.react.mod.RefAttributes
+import typings.std.Element
+import typings.std.FocusOptions
+import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
-import typings.std.KeyboardEvent
-import typings.styletronReact.mod.StyletronComponent
+import typings.std.Omit
+import typings.std.Pick
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
   
-  trait CLOSE_SOURCE extends StObject {
-    
-    var backdrop: typings.baseui.baseuiStrings.backdrop
-    
-    var closeButton: typings.baseui.baseuiStrings.closeButton
-    
-    var escape: escape_
-  }
+  @JSImport("baseui/modal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object CLOSE_SOURCE {
     
-    @JSImport("baseui/modal", "CLOSE_SOURCE")
+    @JSImport("baseui/modal", "CLOSE_SOURCE.backdrop")
     @js.native
-    val ^ : CLOSE_SOURCE = js.native
+    val backdrop: typings.baseui.baseuiStrings.backdrop = js.native
     
-    extension [Self <: CLOSE_SOURCE](x: Self) {
-      
-      inline def setBackdrop(value: backdrop): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
-      
-      inline def setCloseButton(value: closeButton): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
-      
-      inline def setEscape(value: escape_): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
-    }
+    @JSImport("baseui/modal", "CLOSE_SOURCE.closeButton")
+    @js.native
+    val closeButton: typings.baseui.baseuiStrings.closeButton = js.native
+    
+    @JSImport("baseui/modal", "CLOSE_SOURCE.escape")
+    @js.native
+    val escape: escape_ = js.native
   }
   
-  @JSImport("baseui/modal", "FocusOnce")
-  @js.native
-  class FocusOnce protected ()
-    extends Component[ChildrenReactNode, js.Object, js.Any] {
-    def this(props: ChildrenReactNode) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ChildrenReactNode, context: js.Any) = this()
-  }
+  inline def FocusOnce(props: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusOnce")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("baseui/modal", "Modal")
   @js.native
-  class Modal protected ()
-    extends Component[ModalProps, ModalState, js.Any] {
-    def this(props: ModalProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ModalProps, context: js.Any) = this()
+  open class Modal () extends default
+  object Modal {
     
-    def addDomEvents(): Unit = js.native
-    
-    def animateOutComplete(): Unit = js.native
-    
-    def autoFocus(): Unit = js.native
-    
-    def captureLastFocus(): Unit = js.native
-    
-    def clearTimers(): Unit = js.native
-    
-    def didClose(): Unit = js.native
-    
-    def didOpen(): Unit = js.native
-    
-    def disableMountNodeScroll(): Unit = js.native
-    
-    def getChildren(): ReactNode = js.native
-    
-    def getMountNode(): HTMLElement = js.native
-    
-    def getRef(component: String): Ref[js.Any] = js.native
-    
-    def getSharedProps(): SharedStylePropsArgchildrAnimate = js.native
-    
-    def onBackdropClick(): Unit = js.native
-    
-    def onCloseClick(): Unit = js.native
-    
-    def onDocumentKeyPress(event: KeyboardEvent): Unit = js.native
-    
-    def removeDomEvents(): Unit = js.native
-    
-    def renderModal(): ReactNode = js.native
-    
-    def resentMountNodeScroll(): Unit = js.native
-    
-    def restoreLastFocus(): Unit = js.native
-    
-    @JSName("triggerClose")
-    def triggerClose_backdrop(source: backdrop): Unit = js.native
-    @JSName("triggerClose")
-    def triggerClose_closeButton(source: closeButton): Unit = js.native
-    @JSName("triggerClose")
-    def triggerClose_escape(source: escape_): Unit = js.native
+    /* static member */
+    /* Inlined std.Partial<baseui.baseui/modal/types.ModalProps> */
+    object defaultProps {
+      
+      @JSImport("baseui/modal", "Modal.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.animate")
+      @js.native
+      def animate: js.UndefOr[Boolean] = js.native
+      inline def animate_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animate")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.autoFocus")
+      @js.native
+      def autoFocus: js.UndefOr[Boolean] = js.native
+      inline def autoFocus_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoFocus")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.children")
+      @js.native
+      def children: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
+      inline def children_=(x: js.UndefOr[ReactNode | js.Function0[ReactNode]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.closeable")
+      @js.native
+      def closeable: js.UndefOr[Boolean] = js.native
+      inline def closeable_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeable")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.focusLock")
+      @js.native
+      def focusLock: js.UndefOr[Boolean] = js.native
+      inline def focusLock_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusLock")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.isOpen")
+      @js.native
+      def isOpen: js.UndefOr[Boolean] = js.native
+      inline def isOpen_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOpen")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.mountNode")
+      @js.native
+      def mountNode: js.UndefOr[HTMLElement] = js.native
+      inline def mountNode_=(x: js.UndefOr[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountNode")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.name")
+      @js.native
+      def name: js.UndefOr[String] = js.native
+      inline def name_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.onClose")
+      @js.native
+      def onClose: js.UndefOr[js.Function1[/* a */ `18`, Any]] = js.native
+      inline def onClose_=(x: js.UndefOr[js.Function1[/* a */ `18`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.overrides")
+      @js.native
+      def overrides: js.UndefOr[ModalOverrides] = js.native
+      inline def overrides_=(x: js.UndefOr[ModalOverrides]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overrides")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.returnFocus")
+      @js.native
+      def returnFocus: js.UndefOr[
+            Boolean | FocusOptions | (js.Function1[/* returnTo */ Element, Boolean | FocusOptions])
+          ] = js.native
+      inline def returnFocus_=(
+        x: js.UndefOr[
+              Boolean | FocusOptions | (js.Function1[/* returnTo */ Element, Boolean | FocusOptions])
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("returnFocus")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.role")
+      @js.native
+      def role: js.UndefOr[RoleProp] = js.native
+      inline def role_=(x: js.UndefOr[RoleProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/modal", "Modal.defaultProps.size")
+      @js.native
+      def size: js.UndefOr[SizeProp] = js.native
+      inline def size_=(x: js.UndefOr[SizeProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    }
   }
   
   @JSImport("baseui/modal", "ModalBody")
   @js.native
-  val ModalBody: StyletronComponent[js.Any] = js.native
+  val ModalBody: StyletronComponent[div, js.Object] = js.native
   
   @JSImport("baseui/modal", "ModalButton")
   @js.native
-  class ModalButton protected ()
-    extends Component[ButtonPropsautoFocusboole, js.Object, js.Any] {
-    def this(props: ButtonPropsautoFocusboole) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ButtonPropsautoFocusboole, context: js.Any) = this()
-  }
+  val ModalButton: ForwardRefExoticComponent[
+    (Pick[
+      ButtonProps & SharedStyleProps & (Omit[
+        Any, 
+        $colors | $kind | $isSelected | $shape | $size | $isLoading | $disabled | $isFocusVisible | children | colors | disabled | endEnhancer | isLoading | isSelected | kind | onClick | overrides | shape | size | startEnhancer | `type`
+      ]) & `19`, 
+      String | Double | js.Symbol
+    ]) & RefAttributes[HTMLButtonElement]
+  ] = js.native
   
   @JSImport("baseui/modal", "ModalFooter")
   @js.native
-  val ModalFooter: StyletronComponent[js.Any] = js.native
+  val ModalFooter: StyletronComponent[div, js.Object] = js.native
   
   @JSImport("baseui/modal", "ModalHeader")
   @js.native
-  val ModalHeader: StyletronComponent[js.Any] = js.native
+  val ModalHeader: StyletronComponent[div, js.Object] = js.native
   
-  trait ROLE extends StObject {
-    
-    var alertdialog: typings.baseui.baseuiStrings.alertdialog
-    
-    var dialog: typings.baseui.baseuiStrings.dialog
-  }
   object ROLE {
     
-    @JSImport("baseui/modal", "ROLE")
+    @JSImport("baseui/modal", "ROLE.alertdialog")
     @js.native
-    val ^ : ROLE = js.native
+    val alertdialog: typings.baseui.baseuiStrings.alertdialog = js.native
     
-    extension [Self <: ROLE](x: Self) {
-      
-      inline def setAlertdialog(value: alertdialog): Self = StObject.set(x, "alertdialog", value.asInstanceOf[js.Any])
-      
-      inline def setDialog(value: dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
-    }
+    @JSImport("baseui/modal", "ROLE.dialog")
+    @js.native
+    val dialog: typings.baseui.baseuiStrings.dialog = js.native
   }
   
-  trait SIZE extends StObject {
+  object SIZE extends Shortcut {
     
-    var default: default_
-    
-    var auto: typings.baseui.baseuiStrings.auto
-    
-    var full: typings.baseui.baseuiStrings.full
-  }
-  object SIZE {
-    
-    @JSImport("baseui/modal", "SIZE")
+    @JSImport("baseui/modal", "SIZE.default")
     @js.native
-    val ^ : SIZE = js.native
+    val default: default_ = js.native
     
-    extension [Self <: SIZE](x: Self) {
-      
-      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
-      
-      inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
-      
-      inline def setFull(value: full): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SIZE_WIDTHS extends StObject {
-    
-    var default: `500px`
-    
-    var auto: typings.baseui.baseuiStrings.auto
-    
-    var full: `100Percentsign`
-  }
-  object SIZE_WIDTHS {
-    
-    @JSImport("baseui/modal", "SIZE_WIDTHS")
+    @JSImport("baseui/modal", "SIZE.auto")
     @js.native
-    val ^ : SIZE_WIDTHS = js.native
+    val auto: typings.baseui.baseuiStrings.auto = js.native
     
-    extension [Self <: SIZE_WIDTHS](x: Self) {
-      
-      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
-      
-      inline def setDefault(value: `500px`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
-      
-      inline def setFull(value: `100Percentsign`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
-    }
+    @JSImport("baseui/modal", "SIZE.full")
+    @js.native
+    val full: typings.baseui.baseuiStrings.full = js.native
+    
+    type _To = default_
+    
+    /* This means you don't have to write `default`, but can instead just say `SIZE.foo` */
+    override def _to: default_ = default
   }
-  
-  @JSImport("baseui/modal", "StyledBackdrop")
-  @js.native
-  val StyledBackdrop: StyletronComponent[js.Any] = js.native
   
   @JSImport("baseui/modal", "StyledClose")
   @js.native
-  val StyledClose: StyletronComponent[js.Any] = js.native
+  val StyledClose: StyletronComponent[button, SharedStylePropsArg] = js.native
   
   @JSImport("baseui/modal", "StyledDialog")
   @js.native
-  val StyledDialog: StyletronComponent[js.Any] = js.native
+  val StyledDialog: StyletronComponent[div, SharedStylePropsArg] = js.native
   
   @JSImport("baseui/modal", "StyledDialogContainer")
   @js.native
-  val StyledDialogContainer: StyletronComponent[js.Any] = js.native
+  val StyledDialogContainer: StyletronComponent[div, SharedStylePropsArg] = js.native
   
   @JSImport("baseui/modal", "StyledRoot")
   @js.native
-  val StyledRoot: StyletronComponent[js.Any] = js.native
-  
-  trait ModalOverrides extends StObject {
-    
-    var Backdrop: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.undefined
-    
-    var Close: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.undefined
-    
-    var Dialog: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.undefined
-    
-    var DialogContainer: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.undefined
-    
-    var Root: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.undefined
-  }
-  object ModalOverrides {
-    
-    inline def apply(): ModalOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ModalOverrides]
-    }
-    
-    extension [Self <: ModalOverrides](x: Self) {
-      
-      inline def setBackdrop(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ): Self = StObject.set(x, "Backdrop", value.asInstanceOf[js.Any])
-      
-      inline def setBackdropUndefined: Self = StObject.set(x, "Backdrop", js.undefined)
-      
-      inline def setClose(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
-      
-      inline def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
-      
-      inline def setDialog(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
-      
-      inline def setDialogContainer(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
-      
-      inline def setDialogContainerUndefined: Self = StObject.set(x, "DialogContainer", js.undefined)
-      
-      inline def setDialogUndefined: Self = StObject.set(x, "Dialog", js.undefined)
-      
-      inline def setRoot(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
-      
-      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
-    }
-  }
-  
-  trait ModalProps extends StObject {
-    
-    var animate: js.UndefOr[Boolean] = js.undefined
-    
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
-    var autofocus: js.UndefOr[Boolean] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var closeable: js.UndefOr[Boolean] = js.undefined
-    
-    var focusLock: js.UndefOr[Boolean] = js.undefined
-    
-    var isOpen: js.UndefOr[Boolean] = js.undefined
-    
-    var mountNode: js.UndefOr[HTMLElement] = js.undefined
-    
-    var onClose: js.UndefOr[js.Function1[/* args */ CloseSource, js.Any]] = js.undefined
-    
-    var overrides: js.UndefOr[ModalOverrides] = js.undefined
-    
-    var role: js.UndefOr[dialog | alertdialog] = js.undefined
-    
-    var size: js.UndefOr[default_ | full | auto] = js.undefined
-    
-    var unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
-  }
-  object ModalProps {
-    
-    inline def apply(): ModalProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ModalProps]
-    }
-    
-    extension [Self <: ModalProps](x: Self) {
-      
-      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
-      
-      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
-      
-      inline def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
-      
-      inline def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
-      
-      inline def setFocusLockUndefined: Self = StObject.set(x, "focusLock", js.undefined)
-      
-      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
-      
-      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
-      
-      inline def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
-      
-      inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
-      
-      inline def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
-      
-      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
-      
-      inline def setOverrides(value: ModalOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setRole(value: dialog | alertdialog): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-      
-      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
-      
-      inline def setSize(value: default_ | full | auto): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setUnstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
-      
-      inline def setUnstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "unstable_ModalBackdropScroll", js.undefined)
-    }
-  }
-  
-  trait ModalState extends StObject {
-    
-    var isVisible: Boolean
-    
-    var mounted: Boolean
-  }
-  object ModalState {
-    
-    inline def apply(isVisible: Boolean, mounted: Boolean): ModalState = {
-      val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ModalState]
-    }
-    
-    extension [Self <: ModalState](x: Self) {
-      
-      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
-      
-      inline def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SharedStylePropsArg extends StObject {
-    
-    @JSName("$animate")
-    var $animate: js.UndefOr[Boolean] = js.undefined
-    
-    @JSName("$closeable")
-    var $closeable: js.UndefOr[Boolean] = js.undefined
-    
-    @JSName("$isOpen")
-    var $isOpen: js.UndefOr[Boolean] = js.undefined
-    
-    @JSName("$isVisible")
-    var $isVisible: js.UndefOr[Boolean] = js.undefined
-    
-    @JSName("$role")
-    var $role: js.UndefOr[dialog | alertdialog] = js.undefined
-    
-    @JSName("$size")
-    var $size: js.UndefOr[default_ | full | auto] = js.undefined
-    
-    @JSName("$unstable_ModalBackdropScroll")
-    var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-  }
-  object SharedStylePropsArg {
-    
-    inline def apply(): SharedStylePropsArg = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SharedStylePropsArg]
-    }
-    
-    extension [Self <: SharedStylePropsArg](x: Self) {
-      
-      inline def set$animate(value: Boolean): Self = StObject.set(x, "$animate", value.asInstanceOf[js.Any])
-      
-      inline def set$animateUndefined: Self = StObject.set(x, "$animate", js.undefined)
-      
-      inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
-      
-      inline def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
-      
-      inline def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
-      
-      inline def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
-      
-      inline def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
-      
-      inline def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
-      
-      inline def set$role(value: dialog | alertdialog): Self = StObject.set(x, "$role", value.asInstanceOf[js.Any])
-      
-      inline def set$roleUndefined: Self = StObject.set(x, "$role", js.undefined)
-      
-      inline def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
-      
-      inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
-      
-      inline def set$unstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "$unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
-      
-      inline def set$unstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "$unstable_ModalBackdropScroll", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
+  val StyledRoot: StyletronComponent[div, SharedStylePropsArg] = js.native
 }

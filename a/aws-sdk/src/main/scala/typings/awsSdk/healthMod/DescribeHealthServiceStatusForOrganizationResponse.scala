@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeHealthServiceStatusForOrganizationResponse extends StObject {
   
   /**
-    * Information about the status of enabling or disabling AWS Health Organizational View in your organization. Valid values are ENABLED | DISABLED | PENDING. 
+    * Information about the status of enabling or disabling the Health organizational view feature in your organization. Valid values are ENABLED | DISABLED | PENDING. 
     */
   var healthServiceAccessStatusForOrganization: js.UndefOr[typings.awsSdk.healthMod.healthServiceAccessStatusForOrganization] = js.undefined
 }

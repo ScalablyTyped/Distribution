@@ -10,10 +10,10 @@ Blazing fast, zero configuration web application bundler
 | ------------------ | :-------------: |
 | Full name          | parcel-bundler |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 389 |
-| # downloads        | 6506772 |
-| # stars            | 31 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 396671.3333333333 |
+| # stars            | 40975.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

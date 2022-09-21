@@ -33,6 +33,10 @@ trait Delay extends StObject {
     */
   var `on-legend-toggle`: js.UndefOr[Boolean] = js.undefined
   
+  var onChange: js.UndefOr[Boolean] = js.undefined
+  
+  var onLegendToggle: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Determines animation groups. ANIMATION_NO_SEQUENCE | ANIMATION_BY_PLOT | 0 | 1 | ...
     */
@@ -71,6 +75,14 @@ object Delay {
     inline def `setOn-legend-toggle`(value: Boolean): Self = StObject.set(x, "on-legend-toggle", value.asInstanceOf[js.Any])
     
     inline def `setOn-legend-toggleUndefined`: Self = StObject.set(x, "on-legend-toggle", js.undefined)
+    
+    inline def setOnChange(value: Boolean): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnLegendToggle(value: Boolean): Self = StObject.set(x, "onLegendToggle", value.asInstanceOf[js.Any])
+    
+    inline def setOnLegendToggleUndefined: Self = StObject.set(x, "onLegendToggle", js.undefined)
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     

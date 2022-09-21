@@ -45,7 +45,7 @@ object Value {
     
     inline def setMapValUndefined: Self = StObject.set(x, "mapVal", js.undefined)
     
-    inline def setMapValVarargs(value: ValueMapValEntry*): Self = StObject.set(x, "mapVal", js.Array(value :_*))
+    inline def setMapValVarargs(value: ValueMapValEntry*): Self = StObject.set(x, "mapVal", js.Array(value*))
     
     inline def setStringVal(value: String): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
     

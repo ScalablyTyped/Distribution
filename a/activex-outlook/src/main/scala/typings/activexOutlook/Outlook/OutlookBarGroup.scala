@@ -15,7 +15,7 @@ trait OutlookBarGroup extends StObject {
   /* private */ @JSName("Outlook.OutlookBarGroup_typekey")
   var OutlookDotOutlookBarGroup_typekey: OutlookBarGroup
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -30,7 +30,7 @@ object OutlookBarGroup {
     Class: OlObjectClass,
     Name: String,
     OutlookDotOutlookBarGroup_typekey: OutlookBarGroup,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Shortcuts: OutlookBarShortcuts,
     ViewType: OlOutlookBarViewType
@@ -50,7 +50,7 @@ object OutlookBarGroup {
     
     inline def setOutlookDotOutlookBarGroup_typekey(value: OutlookBarGroup): Self = StObject.set(x, "Outlook.OutlookBarGroup_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

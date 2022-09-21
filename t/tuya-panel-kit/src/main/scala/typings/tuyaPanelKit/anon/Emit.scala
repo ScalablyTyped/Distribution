@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Emit extends StObject {
   
-  def emit(event: String, data: js.Any): Unit = js.native
+  def emit(event: String, data: Any): Unit = js.native
   
-  def fire(event: String, data: js.Any): Unit = js.native
+  def fire(event: String, data: Any): Unit = js.native
   
   /**
     * 存在 callback 则移除指定 listener，不存在则移除所有 listeners

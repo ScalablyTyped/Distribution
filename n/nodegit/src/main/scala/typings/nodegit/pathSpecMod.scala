@@ -21,17 +21,17 @@ object pathSpecMod {
   
   @JSImport("nodegit/path-spec", "Pathspec")
   @js.native
-  class Pathspec () extends StObject {
+  open class Pathspec () extends StObject {
     
     def free(): Unit = js.native
     
-    def matchDiff(diff: Diff, flags: Double): js.Promise[js.Any] = js.native
+    def matchDiff(diff: Diff, flags: Double): js.Promise[Any] = js.native
     
-    def matchIndex(index: Index, flags: Double): js.Promise[js.Any] = js.native
+    def matchIndex(index: Index, flags: Double): js.Promise[Any] = js.native
     
-    def matchTree(tree: Tree, flags: Double): js.Promise[js.Any] = js.native
+    def matchTree(tree: Tree, flags: Double): js.Promise[Any] = js.native
     
-    def matchWorkdir(repo: Repository, flags: Double): js.Promise[js.Any] = js.native
+    def matchWorkdir(repo: Repository, flags: Double): js.Promise[Any] = js.native
     
     def matchesPath(flags: Double, path: String): Double = js.native
   }
@@ -46,15 +46,15 @@ object pathSpecMod {
     inline def create(pathspec: js.Array[String]): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
     inline def create(pathspec: Strarray): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
     
-    inline def matchListDiffEntry(m: js.Any, pos: Double): DiffDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListDiffEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[DiffDelta]
+    inline def matchListDiffEntry(m: Any, pos: Double): DiffDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListDiffEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[DiffDelta]
     
-    inline def matchListEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def matchListEntry(m: Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def matchListEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def matchListEntrycount(m: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def matchListFailedEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def matchListFailedEntry(m: Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def matchListFailedEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def matchListFailedEntrycount(m: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

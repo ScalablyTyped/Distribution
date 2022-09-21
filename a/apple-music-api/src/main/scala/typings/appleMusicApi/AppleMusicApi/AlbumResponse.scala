@@ -20,6 +20,6 @@ object AlbumResponse {
     
     inline def setData(value: js.Array[Album]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Album*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Album*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

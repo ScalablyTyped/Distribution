@@ -10,10 +10,10 @@ Random number generator for browsers and node.js
 | ------------------ | :-------------: |
 | Full name          | brorand |
 | Keywords           | Random, RNG, browser, crypto |
-| # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 470914621 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2832432E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/indutny/brorand)

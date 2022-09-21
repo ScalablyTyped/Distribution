@@ -32,7 +32,7 @@ trait IVaultNotificationOperationsAsync extends StObject {
     Subject: String,
     Body: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SendCustomNotification(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
@@ -42,7 +42,7 @@ trait IVaultNotificationOperationsAsync extends StObject {
     Subject: String,
     Body: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SendCustomNotification(
@@ -64,7 +64,7 @@ trait IVaultNotificationOperationsAsync extends StObject {
     Subject: String,
     Body: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SendCustomNotification(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
@@ -74,7 +74,7 @@ trait IVaultNotificationOperationsAsync extends StObject {
     Subject: String,
     Body: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SendCustomNotification(

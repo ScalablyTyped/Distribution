@@ -26,6 +26,9 @@ trait AdministratorWebTokenSpec extends StObject {
   
   /** Options for displaying the Web Apps page. */
   var webApps: js.UndefOr[AdministratorWebTokenSpecWebApps] = js.undefined
+  
+  /** Options for displaying the Zero Touch page. */
+  var zeroTouch: js.UndefOr[AdministratorWebTokenSpecZeroTouch] = js.undefined
 }
 object AdministratorWebTokenSpec {
   
@@ -48,7 +51,7 @@ object AdministratorWebTokenSpec {
     
     inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value*))
     
     inline def setPlaySearch(value: AdministratorWebTokenSpecPlaySearch): Self = StObject.set(x, "playSearch", value.asInstanceOf[js.Any])
     
@@ -65,5 +68,9 @@ object AdministratorWebTokenSpec {
     inline def setWebApps(value: AdministratorWebTokenSpecWebApps): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
     
     inline def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
+    
+    inline def setZeroTouch(value: AdministratorWebTokenSpecZeroTouch): Self = StObject.set(x, "zeroTouch", value.asInstanceOf[js.Any])
+    
+    inline def setZeroTouchUndefined: Self = StObject.set(x, "zeroTouch", js.undefined)
   }
 }

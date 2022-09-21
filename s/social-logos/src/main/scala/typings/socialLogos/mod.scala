@@ -9,8 +9,8 @@ object mod {
   
   @JSImport("social-logos", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   trait Props extends StObject {
     
@@ -69,7 +69,9 @@ object mod {
     - typings.socialLogos.socialLogosStrings.instagram
     - typings.socialLogos.socialLogosStrings.linkedin
     - typings.socialLogos.socialLogosStrings.mail
+    - typings.socialLogos.socialLogosStrings.`medium-alt`
     - typings.socialLogos.socialLogosStrings.medium
+    - typings.socialLogos.socialLogosStrings.patreon
     - typings.socialLogos.socialLogosStrings.`pinterest-alt`
     - typings.socialLogos.socialLogosStrings.pinterest
     - typings.socialLogos.socialLogosStrings.pocket
@@ -82,6 +84,8 @@ object mod {
     - typings.socialLogos.socialLogosStrings.squarespace
     - typings.socialLogos.socialLogosStrings.stumbleupon
     - typings.socialLogos.socialLogosStrings.telegram
+    - typings.socialLogos.socialLogosStrings.`tiktok-alt`
+    - typings.socialLogos.socialLogosStrings.tiktok
     - typings.socialLogos.socialLogosStrings.`tumblr-alt`
     - typings.socialLogos.socialLogosStrings.tumblr
     - typings.socialLogos.socialLogosStrings.twitch
@@ -141,6 +145,10 @@ object mod {
     
     inline def medium: typings.socialLogos.socialLogosStrings.medium = "medium".asInstanceOf[typings.socialLogos.socialLogosStrings.medium]
     
+    inline def `medium-alt`: typings.socialLogos.socialLogosStrings.`medium-alt` = "medium-alt".asInstanceOf[typings.socialLogos.socialLogosStrings.`medium-alt`]
+    
+    inline def patreon: typings.socialLogos.socialLogosStrings.patreon = "patreon".asInstanceOf[typings.socialLogos.socialLogosStrings.patreon]
+    
     inline def pinterest: typings.socialLogos.socialLogosStrings.pinterest = "pinterest".asInstanceOf[typings.socialLogos.socialLogosStrings.pinterest]
     
     inline def `pinterest-alt`: typings.socialLogos.socialLogosStrings.`pinterest-alt` = "pinterest-alt".asInstanceOf[typings.socialLogos.socialLogosStrings.`pinterest-alt`]
@@ -165,6 +173,10 @@ object mod {
     
     inline def telegram: typings.socialLogos.socialLogosStrings.telegram = "telegram".asInstanceOf[typings.socialLogos.socialLogosStrings.telegram]
     
+    inline def tiktok: typings.socialLogos.socialLogosStrings.tiktok = "tiktok".asInstanceOf[typings.socialLogos.socialLogosStrings.tiktok]
+    
+    inline def `tiktok-alt`: typings.socialLogos.socialLogosStrings.`tiktok-alt` = "tiktok-alt".asInstanceOf[typings.socialLogos.socialLogosStrings.`tiktok-alt`]
+    
     inline def tumblr: typings.socialLogos.socialLogosStrings.tumblr = "tumblr".asInstanceOf[typings.socialLogos.socialLogosStrings.tumblr]
     
     inline def `tumblr-alt`: typings.socialLogos.socialLogosStrings.`tumblr-alt` = "tumblr-alt".asInstanceOf[typings.socialLogos.socialLogosStrings.`tumblr-alt`]
@@ -188,5 +200,5 @@ object mod {
     inline def youtube: typings.socialLogos.socialLogosStrings.youtube = "youtube".asInstanceOf[typings.socialLogos.socialLogosStrings.youtube]
   }
   
-  type SocialLogo = Component[Props, js.Object, js.Any]
+  type SocialLogo = Component[Props, js.Object, Any]
 }

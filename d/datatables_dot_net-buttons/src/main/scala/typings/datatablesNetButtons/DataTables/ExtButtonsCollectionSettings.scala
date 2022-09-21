@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExtButtonsCollectionSettings extends StObject {
   
-  def action(e: js.Any, dt: Api, node: JQuery, config: ButtonSettings): Unit
+  def action(e: Any, dt: Api, node: JQuery, config: ButtonSettings): Unit
   @JSName("action")
   var action_Original: FunctionButtonAction
   
@@ -23,21 +23,21 @@ trait ExtButtonsCollectionSettings extends StObject {
   
   var fade: Double
   
-  def text(a: js.Any): String
+  def text(a: Any): String
   @JSName("text")
   var text_Original: FunctionExtButtonsCollectionText
 }
 object ExtButtonsCollectionSettings {
   
   inline def apply(
-    action: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit,
+    action: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit,
     autoClose: Boolean,
     background: Boolean,
     backgroundClassName: String,
     className: String,
     collectionLayout: String,
     fade: Double,
-    text: /* a */ js.Any => String
+    text: /* a */ Any => String
   ): ExtButtonsCollectionSettings = {
     val __obj = js.Dynamic.literal(action = js.Any.fromFunction4(action), autoClose = autoClose.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], backgroundClassName = backgroundClassName.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], collectionLayout = collectionLayout.asInstanceOf[js.Any], fade = fade.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
     __obj.asInstanceOf[ExtButtonsCollectionSettings]
@@ -45,7 +45,7 @@ object ExtButtonsCollectionSettings {
   
   extension [Self <: ExtButtonsCollectionSettings](x: Self) {
     
-    inline def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
+    inline def setAction(value: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
@@ -59,6 +59,6 @@ object ExtButtonsCollectionSettings {
     
     inline def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
     
-    inline def setText(value: /* a */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: /* a */ Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

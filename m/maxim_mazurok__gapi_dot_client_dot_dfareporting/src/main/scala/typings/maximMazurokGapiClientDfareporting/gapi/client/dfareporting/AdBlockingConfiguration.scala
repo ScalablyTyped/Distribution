@@ -6,23 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdBlockingConfiguration extends StObject {
   
-  /** Click-through URL used by brand-neutral ads. This is a required field when overrideClickThroughUrl is set to true. */
-  var clickThroughUrl: js.UndefOr[String] = js.undefined
-  
-  /** ID of a creative bundle to use for this campaign. If set, brand-neutral ads will select creatives from this bundle. Otherwise, a default transparent pixel will be used. */
-  var creativeBundleId: js.UndefOr[String] = js.undefined
-  
   /**
     * Whether this campaign has enabled ad blocking. When true, ad blocking is enabled for placements in the campaign, but this may be overridden by site and placement settings. When
     * false, ad blocking is disabled for all placements under the campaign, regardless of site and placement settings.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Whether the brand-neutral ad's click-through URL comes from the campaign's creative bundle or the override URL. Must be set to true if ad blocking is enabled and no creative bundle
-    * is configured.
-    */
-  var overrideClickThroughUrl: js.UndefOr[Boolean] = js.undefined
 }
 object AdBlockingConfiguration {
   
@@ -33,20 +21,8 @@ object AdBlockingConfiguration {
   
   extension [Self <: AdBlockingConfiguration](x: Self) {
     
-    inline def setClickThroughUrl(value: String): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
-    
-    inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
-    
-    inline def setCreativeBundleId(value: String): Self = StObject.set(x, "creativeBundleId", value.asInstanceOf[js.Any])
-    
-    inline def setCreativeBundleIdUndefined: Self = StObject.set(x, "creativeBundleId", js.undefined)
-    
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-    
-    inline def setOverrideClickThroughUrl(value: Boolean): Self = StObject.set(x, "overrideClickThroughUrl", value.asInstanceOf[js.Any])
-    
-    inline def setOverrideClickThroughUrlUndefined: Self = StObject.set(x, "overrideClickThroughUrl", js.undefined)
   }
 }

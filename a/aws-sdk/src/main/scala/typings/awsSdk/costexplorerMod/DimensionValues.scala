@@ -38,12 +38,12 @@ object DimensionValues {
     
     inline def setMatchOptionsUndefined: Self = StObject.set(x, "MatchOptions", js.undefined)
     
-    inline def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value :_*))
+    inline def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value*))
     
     inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

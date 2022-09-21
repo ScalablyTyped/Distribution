@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param next_Call The next call in the chain
   * @param requester Interceptor methods to handle request
   */
-class InterceptingCall () extends StObject {
+open class InterceptingCall () extends StObject {
   def this(nextCall: InterceptingCall) = this()
   def this(nextCall: Null, requester: Requester) = this()
   def this(nextCall: InterceptingCall, requester: Requester) = this()
@@ -47,7 +47,7 @@ class InterceptingCall () extends StObject {
   /**
     * Pass a message through the interceptor chain.
     */
-  def sendMessage(message: js.Any): Unit = js.native
+  def sendMessage(message: Any): Unit = js.native
   
   /**
     * For streaming calls, we need to transparently pass the stream's context
@@ -56,7 +56,7 @@ class InterceptingCall () extends StObject {
     * @param context Carries objects needed for streaming operations.
     * @param message The message to send.
     */
-  def sendMessageWithContext(context: js.Object, message: js.Any): Unit = js.native
+  def sendMessageWithContext(context: js.Object, message: Any): Unit = js.native
   
   /**
     * Starts a call through the outbound interceptor chain and adds an element to

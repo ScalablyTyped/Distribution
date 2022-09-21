@@ -1,26 +1,22 @@
 package typings.protonNative.mod
 
+import typings.protonNative.anon.Description
+import typings.protonNative.anon.Title
+import typings.protonNative.mod.^
+import typings.protonNative.protonNativeStrings.Error
+import typings.protonNative.protonNativeStrings.Message
+import typings.protonNative.protonNativeStrings.Open
+import typings.protonNative.protonNativeStrings.Save
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Dialog_Error(`type`: typings.protonNative.protonNativeStrings.Error): scala.Unit = typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def Dialog_Error(
-  `type`: typings.protonNative.protonNativeStrings.Error,
-  options: typings.protonNative.anon.Description
-): scala.Unit = (typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def Dialog_Error(`type`: typings.protonNative.protonNativeStrings.Error, options: typings.protonNative.anon.Title): scala.Unit = (typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def Dialog(`type`: Open | Save): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def Dialog(`type`: Message | Error, options: Description): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def Dialog(`type`: Message | Error, options: Title): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def Dialog_Message(`type`: typings.protonNative.protonNativeStrings.Message): scala.Unit = typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def Dialog_Message(
-  `type`: typings.protonNative.protonNativeStrings.Message,
-  options: typings.protonNative.anon.Description
-): scala.Unit = (typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def Dialog_Message(`type`: typings.protonNative.protonNativeStrings.Message, options: typings.protonNative.anon.Title): scala.Unit = (typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def Dialog_Unit(`type`: Message | Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def Dialog_Open(`type`: typings.protonNative.protonNativeStrings.Open): java.lang.String = typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def Dialog_Save(`type`: typings.protonNative.protonNativeStrings.Save): java.lang.String = typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(`type`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def render(element: typings.react.mod.global.JSX.Element): scala.Unit = typings.protonNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def render(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]

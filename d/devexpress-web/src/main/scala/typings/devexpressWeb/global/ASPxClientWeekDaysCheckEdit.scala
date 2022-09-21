@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWeekDaysCheckEdit")
 @js.native
-class ASPxClientWeekDaysCheckEdit ()
+open class ASPxClientWeekDaysCheckEdit ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWeekDaysCheckEdit {
   
@@ -37,13 +37,13 @@ class ASPxClientWeekDaysCheckEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the selection state of the week day check boxes.

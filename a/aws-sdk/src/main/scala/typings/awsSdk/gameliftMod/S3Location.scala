@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Location extends StObject {
   
   /**
-    * An S3 bucket identifier. This is the name of the S3 bucket.  GameLift currently does not support uploading from S3 buckets with names that contain a dot (.). 
+    * An Amazon S3 bucket identifier. This is the name of the S3 bucket.  GameLift currently does not support uploading from Amazon S3 buckets with names that contain a dot (.). 
     */
   var Bucket: js.UndefOr[NonEmptyString] = js.undefined
   

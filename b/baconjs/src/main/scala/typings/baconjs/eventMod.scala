@@ -16,17 +16,17 @@ object eventMod {
   
   @JSImport("baconjs/types/event", "End")
   @js.native
-  class End () extends NoValue
+  open class End () extends NoValue
   
   @JSImport("baconjs/types/event", "Error")
   @js.native
-  class Error protected () extends NoValue {
-    def this(error: js.Any) = this()
+  open class Error protected () extends NoValue {
+    def this(error: Any) = this()
     
     /**
       * The actual error object carried by this event
       */
-    var error: js.Any = js.native
+    var error: Any = js.native
   }
   
   @JSImport("baconjs/types/event", "Event")
@@ -61,7 +61,7 @@ object eventMod {
     var isNext: Boolean = js.native
     
     /** @hidden */
-    def log(): js.Any = js.native
+    def log(): Any = js.native
     
     /** @hidden */
     def toNext(): Event[V] = js.native
@@ -69,7 +69,7 @@ object eventMod {
   
   @JSImport("baconjs/types/event", "Initial")
   @js.native
-  class Initial[V] protected () extends Value[V] {
+  open class Initial[V] protected () extends Value[V] {
     def this(value: V) = this()
     
     /** @hidden */
@@ -78,7 +78,7 @@ object eventMod {
   
   @JSImport("baconjs/types/event", "Next")
   @js.native
-  class Next[V] protected () extends Value[V] {
+  open class Next[V] protected () extends Value[V] {
     def this(value: V) = this()
     
     /** @hidden */
@@ -87,8 +87,7 @@ object eventMod {
   
   @JSImport("baconjs/types/event", "NoValue")
   @js.native
-  abstract class NoValue ()
-    extends Event[js.Any] {
+  abstract class NoValue () extends Event[Any] {
     
     /** @hidden */
     def fmap[V2](f: js.Function): NoValue = js.native
@@ -116,7 +115,7 @@ object eventMod {
   
   inline def isError[V](e: Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Error */ Boolean]
   
-  inline def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Event<V> */ Boolean]
+  inline def isEvent[V](e: Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Event<V> */ Boolean]
   
   inline def isInitial[V](e: Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitial")(e.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/event.Initial<V> */ Boolean]
   

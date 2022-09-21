@@ -1,0 +1,293 @@
+package typings.firebase.firebaseMod.firebase
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.firebase.firebaseMod.firebase.app.App
+import typings.firebase.firebaseStrings.error_
+import typings.firebase.firebaseStrings.success_
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * @webonly
+  */
+object remoteConfig {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebase.firebaseStrings.`no-fetch-yet`
+    - typings.firebase.firebaseStrings.success_
+    - typings.firebase.firebaseStrings.failure
+    - typings.firebase.firebaseStrings.throttle
+  */
+  trait FetchStatus extends StObject
+  object FetchStatus {
+    
+    inline def failure: typings.firebase.firebaseStrings.failure = "failure".asInstanceOf[typings.firebase.firebaseStrings.failure]
+    
+    inline def `no-fetch-yet`: typings.firebase.firebaseStrings.`no-fetch-yet` = "no-fetch-yet".asInstanceOf[typings.firebase.firebaseStrings.`no-fetch-yet`]
+    
+    inline def success: success_ = "success".asInstanceOf[success_]
+    
+    inline def throttle: typings.firebase.firebaseStrings.throttle = "throttle".asInstanceOf[typings.firebase.firebaseStrings.throttle]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebase.firebaseStrings.debug
+    - typings.firebase.firebaseStrings.error_
+    - typings.firebase.firebaseStrings.silent
+  */
+  trait LogLevel extends StObject
+  object LogLevel {
+    
+    inline def debug: typings.firebase.firebaseStrings.debug = "debug".asInstanceOf[typings.firebase.firebaseStrings.debug]
+    
+    inline def error: error_ = "error".asInstanceOf[error_]
+    
+    inline def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
+  }
+  
+  trait RemoteConfig extends StObject {
+    
+    /**
+      * Makes the last fetched config available to the getters.
+      * Returns a promise which resolves to true if the current call activated the fetched configs.
+      * If the fetched configs were already activated, the promise will resolve to false.
+      */
+    def activate(): js.Promise[Boolean]
+    
+    /**
+      * The {@link firebase.app.App app} associated with the `Performance` service
+      * instance.
+      *
+      * @example
+      * ```javascript
+      * var app = analytics.app;
+      * ```
+      */
+    var app: App
+    
+    /**
+      * Object containing default values for configs.
+      */
+    var defaultConfig: StringDictionary[String | Double | Boolean]
+    
+    /**
+      * Ensures the last activated config are available to the getters.
+      */
+    def ensureInitialized(): js.Promise[Unit]
+    
+    /**
+      * Fetches and caches configuration from the Remote Config service.
+      */
+    def fetch(): js.Promise[Unit]
+    
+    /**
+      * Performs fetch and activate operations, as a convenience.
+      * Returns a promise which resolves to true if the current call activated the fetched configs.
+      * If the fetched configs were already activated, the promise will resolve to false.
+      */
+    def fetchAndActivate(): js.Promise[Boolean]
+    
+    /**
+      * The Unix timestamp in milliseconds of the last <i>successful</i> fetch, or negative one if
+      * the {@link RemoteConfig} instance either hasn't fetched or initialization
+      * is incomplete.
+      */
+    var fetchTimeMillis: Double
+    
+    /**
+      * Gets all config.
+      */
+    def getAll(): StringDictionary[Value]
+    
+    /**
+      * Gets the value for the given key as a boolean.
+      *
+      * Convenience method for calling <code>remoteConfig.getValue(key).asBoolean()</code>.
+      */
+    def getBoolean(key: String): Boolean
+    
+    /**
+      * Gets the value for the given key as a number.
+      *
+      * Convenience method for calling <code>remoteConfig.getValue(key).asNumber()</code>.
+      */
+    def getNumber(key: String): Double
+    
+    /**
+      * Gets the value for the given key as a String.
+      *
+      * Convenience method for calling <code>remoteConfig.getValue(key).asString()</code>.
+      */
+    def getString(key: String): String
+    
+    /**
+      * Gets the {@link Value} for the given key.
+      */
+    def getValue(key: String): Value
+    
+    /**
+      * The status of the last fetch <i>attempt</i>.
+      */
+    var lastFetchStatus: FetchStatus
+    
+    /**
+      * Defines the log level to use.
+      */
+    def setLogLevel(logLevel: typings.firebase.firebaseMod.firebase.remoteConfig.LogLevel): Unit
+    
+    /**
+      * Defines configuration for the Remote Config SDK.
+      */
+    var settings: Settings
+  }
+  object RemoteConfig {
+    
+    inline def apply(
+      activate: () => js.Promise[Boolean],
+      app: App,
+      defaultConfig: StringDictionary[String | Double | Boolean],
+      ensureInitialized: () => js.Promise[Unit],
+      fetch: () => js.Promise[Unit],
+      fetchAndActivate: () => js.Promise[Boolean],
+      fetchTimeMillis: Double,
+      getAll: () => StringDictionary[Value],
+      getBoolean: String => Boolean,
+      getNumber: String => Double,
+      getString: String => String,
+      getValue: String => Value,
+      lastFetchStatus: FetchStatus,
+      setLogLevel: typings.firebase.firebaseMod.firebase.remoteConfig.LogLevel => Unit,
+      settings: Settings
+    ): RemoteConfig = {
+      val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), app = app.asInstanceOf[js.Any], defaultConfig = defaultConfig.asInstanceOf[js.Any], ensureInitialized = js.Any.fromFunction0(ensureInitialized), fetch = js.Any.fromFunction0(fetch), fetchAndActivate = js.Any.fromFunction0(fetchAndActivate), fetchTimeMillis = fetchTimeMillis.asInstanceOf[js.Any], getAll = js.Any.fromFunction0(getAll), getBoolean = js.Any.fromFunction1(getBoolean), getNumber = js.Any.fromFunction1(getNumber), getString = js.Any.fromFunction1(getString), getValue = js.Any.fromFunction1(getValue), lastFetchStatus = lastFetchStatus.asInstanceOf[js.Any], setLogLevel = js.Any.fromFunction1(setLogLevel), settings = settings.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RemoteConfig]
+    }
+    
+    extension [Self <: RemoteConfig](x: Self) {
+      
+      inline def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+      
+      inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultConfig(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
+      
+      inline def setEnsureInitialized(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureInitialized", js.Any.fromFunction0(value))
+      
+      inline def setFetch(value: () => js.Promise[Unit]): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
+      
+      inline def setFetchAndActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "fetchAndActivate", js.Any.fromFunction0(value))
+      
+      inline def setFetchTimeMillis(value: Double): Self = StObject.set(x, "fetchTimeMillis", value.asInstanceOf[js.Any])
+      
+      inline def setGetAll(value: () => StringDictionary[Value]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      
+      inline def setGetBoolean(value: String => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
+      
+      inline def setGetNumber(value: String => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction1(value))
+      
+      inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+      
+      inline def setGetValue(value: String => Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      
+      inline def setLastFetchStatus(value: FetchStatus): Self = StObject.set(x, "lastFetchStatus", value.asInstanceOf[js.Any])
+      
+      inline def setSetLogLevel(value: typings.firebase.firebaseMod.firebase.remoteConfig.LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+      
+      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Settings extends StObject {
+    
+    /**
+      * Defines the maximum amount of milliseconds to wait for a response when fetching
+      * configuration from the Remote Config server. Defaults to 60000 (One minute).
+      */
+    var fetchTimeoutMillis: Double
+    
+    /**
+      * Defines the maximum age in milliseconds of an entry in the config cache before
+      * it is considered stale. Defaults to 43200000 (Twelve hours).
+      */
+    var minimumFetchIntervalMillis: Double
+  }
+  object Settings {
+    
+    inline def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
+      val __obj = js.Dynamic.literal(fetchTimeoutMillis = fetchTimeoutMillis.asInstanceOf[js.Any], minimumFetchIntervalMillis = minimumFetchIntervalMillis.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Settings]
+    }
+    
+    extension [Self <: Settings](x: Self) {
+      
+      inline def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
+      
+      inline def setMinimumFetchIntervalMillis(value: Double): Self = StObject.set(x, "minimumFetchIntervalMillis", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Value extends StObject {
+    
+    /**
+      * Gets the value as a boolean.
+      *
+      * The following values (case insensitive) are interpreted as true:
+      * "1", "true", "t", "yes", "y", "on". Other values are interpreted as false.
+      */
+    def asBoolean(): Boolean
+    
+    /**
+      * Gets the value as a number. Comparable to calling <code>Number(value) || 0</code>.
+      */
+    def asNumber(): Double
+    
+    /**
+      * Gets the value as a string.
+      */
+    def asString(): String
+    
+    /**
+      * Gets the {@link ValueSource} for the given key.
+      */
+    def getSource(): ValueSource
+  }
+  object Value {
+    
+    inline def apply(
+      asBoolean: () => Boolean,
+      asNumber: () => Double,
+      asString: () => String,
+      getSource: () => ValueSource
+    ): Value = {
+      val __obj = js.Dynamic.literal(asBoolean = js.Any.fromFunction0(asBoolean), asNumber = js.Any.fromFunction0(asNumber), asString = js.Any.fromFunction0(asString), getSource = js.Any.fromFunction0(getSource))
+      __obj.asInstanceOf[Value]
+    }
+    
+    extension [Self <: Value](x: Self) {
+      
+      inline def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
+      
+      inline def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
+      
+      inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
+      
+      inline def setGetSource(value: () => ValueSource): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebase.firebaseStrings.static
+    - typings.firebase.firebaseStrings.default
+    - typings.firebase.firebaseStrings.remote
+  */
+  trait ValueSource extends StObject
+  object ValueSource {
+    
+    inline def default: typings.firebase.firebaseStrings.default = "default".asInstanceOf[typings.firebase.firebaseStrings.default]
+    
+    inline def remote: typings.firebase.firebaseStrings.remote = "remote".asInstanceOf[typings.firebase.firebaseStrings.remote]
+    
+    inline def static: typings.firebase.firebaseStrings.static = "static".asInstanceOf[typings.firebase.firebaseStrings.static]
+  }
+}

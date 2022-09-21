@@ -2,7 +2,6 @@ package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.Chart
 import typings.highcharts.highchartsStrings.Map
-import typings.highcharts.highchartsStrings.StockChart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +32,18 @@ object global {
       * @return The current JQuery selector.
       */
     def highcharts(): JQuery = js.native
+    def highcharts(className: Chart | Map | typings.highcharts.highchartsStrings.StockChart): JQuery = js.native
+    def highcharts(
+      className: Chart | Map | typings.highcharts.highchartsStrings.StockChart,
+      options: Unit,
+      callback: ChartCallbackFunction
+    ): JQuery = js.native
+    def highcharts(className: Chart | Map | typings.highcharts.highchartsStrings.StockChart, options: Options): JQuery = js.native
+    def highcharts(
+      className: Chart | Map | typings.highcharts.highchartsStrings.StockChart,
+      options: Options,
+      callback: ChartCallbackFunction
+    ): JQuery = js.native
     def highcharts(className: String): JQuery = js.native
     def highcharts(className: String, options: Unit, callback: ChartCallbackFunction): JQuery = js.native
     def highcharts(className: String, options: Options): JQuery = js.native
@@ -40,29 +51,5 @@ object global {
     def highcharts(className: Unit, options: Unit, callback: ChartCallbackFunction): JQuery = js.native
     def highcharts(className: Unit, options: Options): JQuery = js.native
     def highcharts(className: Unit, options: Options, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Chart(className: Chart): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Chart(className: Chart, options: Unit, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Chart(className: Chart, options: Options): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Chart(className: Chart, options: Options, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Map(className: Map): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Map(className: Map, options: Unit, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Map(className: Map, options: Options): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_Map(className: Map, options: Options, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_StockChart(className: StockChart): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_StockChart(className: StockChart, options: Unit, callback: ChartCallbackFunction): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_StockChart(className: StockChart, options: Options): JQuery = js.native
-    @JSName("highcharts")
-    def highcharts_StockChart(className: StockChart, options: Options, callback: ChartCallbackFunction): JQuery = js.native
   }
 }

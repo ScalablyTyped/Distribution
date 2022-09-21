@@ -9,21 +9,21 @@ trait LayerSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _draw: js.Any = js.native
+  /* private */ var _draw: Any = js.native
   
-  /* private */ var _drawCameraBackground: js.Any = js.native
+  /* private */ var _drawCameraBackground: Any = js.native
   
-  /* private */ var _drawCameraForeground: js.Any = js.native
+  /* private */ var _drawCameraForeground: Any = js.native
   
-  /* private */ var _drawCameraPredicate: js.Any = js.native
+  /* private */ var _drawCameraPredicate: Any = js.native
   
-  /* private */ var _drawRenderTargetBackground: js.Any = js.native
+  /* private */ var _drawRenderTargetBackground: Any = js.native
   
-  /* private */ var _drawRenderTargetForeground: js.Any = js.native
+  /* private */ var _drawRenderTargetForeground: Any = js.native
   
-  /* private */ var _drawRenderTargetPredicate: js.Any = js.native
+  /* private */ var _drawRenderTargetPredicate: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
   /**
     * Adds all the elements from the container to the scene

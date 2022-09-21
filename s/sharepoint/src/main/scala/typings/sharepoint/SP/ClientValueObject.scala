@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientValueObject extends StObject {
   
-  def customFromJson(obj: js.Any): Boolean
+  def customFromJson(obj: Any): Boolean
   
   def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean
   
-  def fromJson(obj: js.Any): Unit
+  def fromJson(obj: Any): Unit
   
   def get_typeId(): String
   
@@ -19,9 +19,9 @@ trait ClientValueObject extends StObject {
 object ClientValueObject {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_typeId: () => String,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): ClientValueObject = {
@@ -31,11 +31,11 @@ object ClientValueObject {
   
   extension [Self <: ClientValueObject](x: Self) {
     
-    inline def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
+    inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
     inline def setCustomWriteToXml(value: (XmlWriter, SerializationContext) => Boolean): Self = StObject.set(x, "customWriteToXml", js.Any.fromFunction2(value))
     
-    inline def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+    inline def setFromJson(value: Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
     inline def setGet_typeId(value: () => String): Self = StObject.set(x, "get_typeId", js.Any.fromFunction0(value))
     

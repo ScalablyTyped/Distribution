@@ -32,7 +32,7 @@ object cascaderTypesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ICascaderDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ICascaderDataItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -72,7 +72,7 @@ object cascaderTypesMod {
     
     var rootNativeProps: js.UndefOr[js.Object] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var value: js.UndefOr[CascaderValue] = js.undefined
   }
@@ -95,13 +95,13 @@ object cascaderTypesMod {
       
       inline def setData(value: js.Array[ICascaderDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: ICascaderDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ICascaderDataItem*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDefaultValue(value: CascaderValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -135,7 +135,7 @@ object cascaderTypesMod {
       
       inline def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -143,7 +143,7 @@ object cascaderTypesMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

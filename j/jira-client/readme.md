@@ -1,7 +1,7 @@
 
 # Scala.js typings for jira-client
 
-Typings are for version 6.13
+Typings are for version 7.1
 
 ## Library description:
 Wrapper for the JIRA API
@@ -10,10 +10,10 @@ Wrapper for the JIRA API
 | ------------------ | :-------------: |
 | Full name          | jira-client |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 53 |
-| # downloads        | 1285762 |
-| # stars            | 9 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 302207.3333333333 |
+| # stars            | 375.0 |
 
 ## Links
 - [Homepage](http://github.com/jira-node/node-jira-client)

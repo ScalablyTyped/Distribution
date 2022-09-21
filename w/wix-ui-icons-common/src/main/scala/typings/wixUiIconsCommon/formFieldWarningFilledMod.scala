@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object formFieldWarningFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/FormFieldWarningFilled", JSImport.Default)
   @js.native
-  val default: SFC[FormFieldWarningFilledProps] = js.native
+  val default: FC[FormFieldWarningFilledProps] = js.native
   
   trait FormFieldWarningFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object FormFieldWarningFilledProps {
     
@@ -29,14 +29,14 @@ object formFieldWarningFilledMod extends Shortcut {
     
     extension [Self <: FormFieldWarningFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[FormFieldWarningFilledProps]
+  type _To = FC[FormFieldWarningFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `formFieldWarningFilledMod.foo` */
-  override def _to: SFC[FormFieldWarningFilledProps] = default
+  override def _to: FC[FormFieldWarningFilledProps] = default
 }

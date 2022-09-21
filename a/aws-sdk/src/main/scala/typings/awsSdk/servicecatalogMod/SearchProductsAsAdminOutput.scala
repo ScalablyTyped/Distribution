@@ -33,6 +33,6 @@ object SearchProductsAsAdminOutput {
     
     inline def setProductViewDetailsUndefined: Self = StObject.set(x, "ProductViewDetails", js.undefined)
     
-    inline def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = StObject.set(x, "ProductViewDetails", js.Array(value :_*))
+    inline def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = StObject.set(x, "ProductViewDetails", js.Array(value*))
   }
 }

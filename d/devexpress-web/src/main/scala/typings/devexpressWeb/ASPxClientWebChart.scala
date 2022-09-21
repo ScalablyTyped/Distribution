@@ -126,7 +126,7 @@ object ASPxClientWebChart {
     
     inline def setAnnotations(value: js.Array[ASPxClientAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationsVarargs(value: ASPxClientAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: ASPxClientAnnotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAppearanceName(value: String): Self = StObject.set(x, "appearanceName", value.asInstanceOf[js.Any])
     
@@ -142,7 +142,7 @@ object ASPxClientWebChart {
     
     inline def setLegends(value: js.Array[ASPxClientLegend]): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
     
-    inline def setLegendsVarargs(value: ASPxClientLegend*): Self = StObject.set(x, "legends", js.Array(value :_*))
+    inline def setLegendsVarargs(value: ASPxClientLegend*): Self = StObject.set(x, "legends", js.Array(value*))
     
     inline def setPaletteName(value: String): Self = StObject.set(x, "paletteName", value.asInstanceOf[js.Any])
     
@@ -150,7 +150,7 @@ object ASPxClientWebChart {
     
     inline def setSeries(value: js.Array[ASPxClientSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    inline def setSeriesVarargs(value: ASPxClientSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ASPxClientSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setShowCrosshair(value: Boolean): Self = StObject.set(x, "showCrosshair", value.asInstanceOf[js.Any])
     
@@ -160,7 +160,7 @@ object ASPxClientWebChart {
     
     inline def setTitles(value: js.Array[ASPxClientChartTitle]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
-    inline def setTitlesVarargs(value: ASPxClientChartTitle*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: ASPxClientChartTitle*): Self = StObject.set(x, "titles", js.Array(value*))
     
     inline def setToolTipController(value: ASPxClientToolTipController): Self = StObject.set(x, "toolTipController", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Actions")
 @js.native
-/* private */ class Actions ()
+/* private */ open class Actions ()
   extends StObject
      with typings.activexOutlook.Outlook.Actions {
   
@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.Action = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.Action = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Actions_typekey")
   var OutlookDotActions_typekey: typings.activexOutlook.Outlook.Actions = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Remove(Index: Double): Unit = js.native

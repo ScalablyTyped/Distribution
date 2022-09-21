@@ -1,13 +1,12 @@
 package typings.miniprogram.anon
 
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Data extends StObject {
   
-  var data: js.UndefOr[Uint8ClampedArray] = js.undefined
+  var data: js.UndefOr[js.typedarray.Uint8ClampedArray] = js.undefined
   
   var height: Double
   
@@ -22,7 +21,7 @@ object Data {
   
   extension [Self <: Data](x: Self) {
     
-    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

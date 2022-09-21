@@ -10,10 +10,10 @@ Nice, downward compatible, touchable, jQuery dial
 | ------------------ | :-------------: |
 | Full name          | jquery-knob |
 | Keywords           | jquery, knob, dial |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 905815 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70098.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/aterrien/jQuery-Knob#readme)

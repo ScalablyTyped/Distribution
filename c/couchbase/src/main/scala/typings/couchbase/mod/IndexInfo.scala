@@ -77,7 +77,7 @@ object IndexInfo {
     
     inline def setIndex_key(value: js.Array[String]): Self = StObject.set(x, "index_key", value.asInstanceOf[js.Any])
     
-    inline def setIndex_keyVarargs(value: String*): Self = StObject.set(x, "index_key", js.Array(value :_*))
+    inline def setIndex_keyVarargs(value: String*): Self = StObject.set(x, "index_key", js.Array(value*))
     
     inline def setIs_primary(value: Boolean): Self = StObject.set(x, "is_primary", value.asInstanceOf[js.Any])
     

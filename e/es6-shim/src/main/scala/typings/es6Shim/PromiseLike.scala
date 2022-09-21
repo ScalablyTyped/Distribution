@@ -17,10 +17,10 @@ trait PromiseLike[T] extends StObject {
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | PromiseLike[TResult]]): PromiseLike[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, PromiseLike[TResult] | TResult],
-    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+    onrejected: js.Function1[/* reason */ Any, PromiseLike[TResult] | TResult | Unit]
   ): PromiseLike[TResult] = js.native
   def `then`[TResult](
     onfulfilled: Unit,
-    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+    onrejected: js.Function1[/* reason */ Any, PromiseLike[TResult] | TResult | Unit]
   ): PromiseLike[TResult] = js.native
 }

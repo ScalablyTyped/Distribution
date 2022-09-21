@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDRTAccessResponse extends StObject {
   
   /**
-    * The list of Amazon S3 buckets accessed by the DRT.
+    * The list of Amazon S3 buckets accessed by the SRT.
     */
   var LogBucketList: js.UndefOr[typings.awsSdk.shieldMod.LogBucketList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the role the DRT used to access your AWS account.
+    * The Amazon Resource Name (ARN) of the role the SRT used to access your Amazon Web Services account.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.shieldMod.RoleArn] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeDRTAccessResponse {
     
     inline def setLogBucketListUndefined: Self = StObject.set(x, "LogBucketList", js.undefined)
     
-    inline def setLogBucketListVarargs(value: LogBucket*): Self = StObject.set(x, "LogBucketList", js.Array(value :_*))
+    inline def setLogBucketListVarargs(value: LogBucket*): Self = StObject.set(x, "LogBucketList", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

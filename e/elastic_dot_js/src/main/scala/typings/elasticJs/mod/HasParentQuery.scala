@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "HasParentQuery")
 @js.native
-class HasParentQuery protected ()
+open class HasParentQuery protected ()
   extends StObject
      with Query {
   /*
@@ -58,5 +58,5 @@ class HasParentQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

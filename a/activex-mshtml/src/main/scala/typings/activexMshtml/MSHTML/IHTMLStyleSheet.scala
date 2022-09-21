@@ -26,7 +26,7 @@ trait IHTMLStyleSheet extends StObject {
   
   val id: String = js.native
   
-  def imports(pvarIndex: js.Any): js.Any = js.native
+  def imports(pvarIndex: Any): Any = js.native
   @JSName("imports")
   val imports_Original: IHTMLStyleSheetsCollection = js.native
   

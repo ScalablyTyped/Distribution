@@ -41,7 +41,7 @@ object UserPageLoadMetricV5 {
     
     inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    inline def setDistributionsVarargs(value: Bucket*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Bucket*): Self = StObject.set(x, "distributions", js.Array(value*))
     
     inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     

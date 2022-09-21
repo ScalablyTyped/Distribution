@@ -22,12 +22,12 @@ trait StartContentModerationRequest extends StObject {
   var MinConfidence: js.UndefOr[Percent] = js.undefined
   
   /**
-    * The Amazon SNS topic ARN that you want Amazon Rekognition Video to publish the completion status of the unsafe content analysis to.
+    * The Amazon SNS topic ARN that you want Amazon Rekognition Video to publish the completion status of the content analysis to. The Amazon SNS topic must have a topic name that begins with AmazonRekognition if you are using the AmazonRekognitionServiceRole permissions policy to access the topic.
     */
   var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.undefined
   
   /**
-    * The video in which you want to detect unsafe content. The video must be stored in an Amazon S3 bucket.
+    * The video in which you want to detect inappropriate, unwanted, or offensive content. The video must be stored in an Amazon S3 bucket.
     */
   var Video: typings.awsSdk.rekognitionMod.Video
 }

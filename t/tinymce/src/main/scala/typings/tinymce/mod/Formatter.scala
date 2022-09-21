@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tinymce", "Formatter")
 @js.native
-class Formatter protected () extends StObject {
+open class Formatter protected () extends StObject {
   def this(ed: Editor) = this()
   
   @JSName("apply")
@@ -23,8 +23,8 @@ class Formatter protected () extends StObject {
   
   def formatChanged(formats: String, callback: js.Function0[Unit], similar: Boolean): Unit = js.native
   
-  def get(): js.Array[js.Any] | js.Object = js.native
-  def get(name: String): js.Array[js.Any] | js.Object = js.native
+  def get(): js.Array[Any] | js.Object = js.native
+  def get(name: String): js.Array[Any] | js.Object = js.native
   
   def getCssText(format: String): String = js.native
   
@@ -33,8 +33,8 @@ class Formatter protected () extends StObject {
   def `match`(name: String, vars: js.Object, node: Node): Boolean = js.native
   def `match`(name: String, vars: Unit, node: Node): Boolean = js.native
   
-  def matchAll(names: js.Array[js.Any]): js.Array[js.Any] = js.native
-  def matchAll(names: js.Array[js.Any], vars: js.Object): js.Array[js.Any] = js.native
+  def matchAll(names: js.Array[Any]): js.Array[Any] = js.native
+  def matchAll(names: js.Array[Any], vars: js.Object): js.Array[Any] = js.native
   
   def matchNode(node: Node, name: String, vars: js.Object, similar: Boolean): js.Object = js.native
   

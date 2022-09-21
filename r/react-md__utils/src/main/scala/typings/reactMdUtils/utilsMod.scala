@@ -1,148 +1,105 @@
 package typings.reactMdUtils
 
+import typings.std.AddEventListenerOptions
+import typings.std.Document
+import typings.std.EventListener
+import typings.std.HTMLElement
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@react-md/utils/types/search/utils", JSImport.Namespace)
+  @JSImport("@react-md/utils/types/events/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/search/utils", "DEFAULT_GET_ITEM_VALUE")
-  @js.native
-  val DEFAULT_GET_ITEM_VALUE: js.Function2[/* item */ js.Any, /* valueKey */ js.UndefOr[String], String] = js.native
+  inline def delegateEvent(eventType: String): DelegatedEventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any]).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: Unit, throttle: Boolean, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: Unit, throttle: Unit, options: AddEventListenerOptions): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Boolean, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(
+    eventType: String,
+    eventTarget: DelegatedEventTarget,
+    throttle: Boolean,
+    options: AddEventListenerOptions
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget, throttle: Unit, options: Boolean): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
+  inline def delegateEvent(
+    eventType: String,
+    eventTarget: DelegatedEventTarget,
+    throttle: Unit,
+    options: AddEventListenerOptions
+  ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
   
-  @JSImport("@react-md/utils/types/search/utils", "DEFAULT_IGNORE_WHITESPACE")
-  @js.native
-  val DEFAULT_IGNORE_WHITESPACE: /* false */ Boolean = js.native
-  
-  /* Inlined std.Required<@react-md/utils.@react-md/utils/types/search/utils.SearchOptions<unknown>> */
-  object DEFAULT_SEARCH_OPTIONS {
+  trait DelegatableEvent extends StObject {
     
-    @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_OPTIONS")
-    @js.native
-    val ^ : js.Any = js.native
+    var handler: DelegatedEventHandler
     
-    @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_OPTIONS.getItemValue")
-    @js.native
-    def getItemValue: GetItemValue_[js.Any] = js.native
-    inline def getItemValue_=(x: GetItemValue_[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItemValue")(x.asInstanceOf[js.Any])
+    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.undefined
     
-    @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_OPTIONS.ignoreWhitespace")
-    @js.native
-    def ignoreWhitespace: Boolean = js.native
-    inline def ignoreWhitespace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreWhitespace")(x.asInstanceOf[js.Any])
+    var target: DelegatedEventTarget
     
-    @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_OPTIONS.trim")
-    @js.native
-    def trim: Boolean = js.native
-    inline def trim_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trim")(x.asInstanceOf[js.Any])
+    var throttle: Boolean
     
-    @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_OPTIONS.valueKey")
-    @js.native
-    def valueKey: String = js.native
-    inline def valueKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueKey")(x.asInstanceOf[js.Any])
+    var `type`: String
   }
-  
-  @JSImport("@react-md/utils/types/search/utils", "DEFAULT_SEARCH_RESET_TIME")
-  @js.native
-  val DEFAULT_SEARCH_RESET_TIME: /* 500 */ Double = js.native
-  
-  @JSImport("@react-md/utils/types/search/utils", "DEFAULT_TRIM")
-  @js.native
-  val DEFAULT_TRIM: /* true */ Boolean = js.native
-  
-  @JSImport("@react-md/utils/types/search/utils", "DEFAULT_VALUE_KEY")
-  @js.native
-  val DEFAULT_VALUE_KEY: /* "value" */ String = js.native
-  
-  inline def getItemValue(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getItemValue(item: js.Any, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def getSearchString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Boolean, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Boolean, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Boolean, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Unit, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Unit, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getSearchString(value: String, lowercase: Unit, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  trait BaseSearchOptions[T] extends StObject {
+  object DelegatableEvent {
     
-    /**
-      * A function that will get a string value from each item. The default
-      * implementation will:
-      *
-      * - return a number as a string
-      * - return a string as itself
-      * - return the result of item() if it is a function (this will also be used
-      *   if the `valueKey` on an object is a function).
-      * - return item[valueKey] if it's an object (this uses typeof item === "object")
-      * - return the empty string for all other data types
-      */
-    var getItemValue: js.UndefOr[GetItemValue_[T]] = js.undefined
-    
-    /**
-      * The key to use to get a value string if the item is an object.
-      */
-    var valueKey: js.UndefOr[String] = js.undefined
-  }
-  object BaseSearchOptions {
-    
-    inline def apply[T](): BaseSearchOptions[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BaseSearchOptions[T]]
+    inline def apply(handler: DelegatedEventHandler, target: DelegatedEventTarget, throttle: Boolean, `type`: String): DelegatableEvent = {
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DelegatableEvent]
     }
     
-    extension [Self <: BaseSearchOptions[?], T](x: Self & BaseSearchOptions[T]) {
+    extension [Self <: DelegatableEvent](x: Self) {
       
-      inline def setGetItemValue(value: (T, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
+      inline def setHandler(value: DelegatedEventHandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      inline def setGetItemValueUndefined: Self = StObject.set(x, "getItemValue", js.undefined)
+      inline def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+      inline def setTarget(value: DelegatedEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setThrottle(value: Boolean): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  type GetItemValue_[T] = js.Function2[/* item */ T, /* valueKey */ String, String]
+  trait DelegatedEventHandler extends StObject {
+    
+    /**
+      * Adds the provided callback to the throttled event listener.
+      */
+    def add(callback: EventListener): Unit
+    
+    /**
+      * Attempts to remove the provided callback from the throttled event listener.
+      */
+    def remove(callback: EventListener): Unit
+  }
+  object DelegatedEventHandler {
+    
+    inline def apply(add: EventListener => Unit, remove: EventListener => Unit): DelegatedEventHandler = {
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), remove = js.Any.fromFunction1(remove))
+      __obj.asInstanceOf[DelegatedEventHandler]
+    }
+    
+    extension [Self <: DelegatedEventHandler](x: Self) {
+      
+      inline def setAdd(value: EventListener => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      
+      inline def setRemove(value: EventListener => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    }
+  }
   
-  trait SearchOptions[T]
-    extends StObject
-       with BaseSearchOptions[T] {
-    
-    /**
-      * Boolean if all the whitespace should be ignored in the query string and for
-      * each item.
-      */
-    var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Boolean if the query string and each item should have the leading and
-      * trailing spaces removed.
-      */
-    var trim: js.UndefOr[Boolean] = js.undefined
-  }
-  object SearchOptions {
-    
-    inline def apply[T](): SearchOptions[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SearchOptions[T]]
-    }
-    
-    extension [Self <: SearchOptions[?], T](x: Self & SearchOptions[T]) {
-      
-      inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
-      
-      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
-      
-      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
-    }
-  }
+  type DelegatedEventTarget = Window | Document | HTMLElement
 }

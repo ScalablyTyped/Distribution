@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackupRule extends StObject {
   
   /**
-    * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by AWS Backup. This value is optional.
+    * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by Backup. This value is optional.
     */
   var CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   
@@ -17,7 +17,12 @@ trait BackupRule extends StObject {
   var CopyActions: js.UndefOr[typings.awsSdk.backupMod.CopyActions] = js.undefined
   
   /**
-    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * Specifies whether Backup creates continuous backups. True causes Backup to create continuous backups capable of point-in-time restore (PITR). False (or not specified) causes Backup to create snapshot backups.
+    */
+  var EnableContinuousBackup: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “retention” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold.  Resource types that are able to be transitioned to cold storage are listed in the "Lifecycle to cold storage" section of the  Feature availability by resource table. Backup ignores this expression for other resource types.
     */
   var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
@@ -32,12 +37,12 @@ trait BackupRule extends StObject {
   var RuleId: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional display name for a backup rule.
+    * A display name for a backup rule. Must contain 1 to 50 alphanumeric or '-_.' characters.
     */
   var RuleName: BackupRuleName
   
   /**
-    * A CRON expression specifying when AWS Backup initiates a backup job. For more information about cron expressions, see Schedule Expressions for Rules in the Amazon CloudWatch Events User Guide.. Prior to specifying a value for this parameter, we recommend testing your cron expression using one of the many available cron generator and testing tools.
+    * A cron expression in UTC specifying when Backup initiates a backup job. For more information about Amazon Web Services cron expressions, see Schedule Expressions for Rules in the Amazon CloudWatch Events User Guide.. Two examples of Amazon Web Services cron expressions are  15 * ? * * * (take a backup every hour at 15 minutes past the hour) and 0 12 * * ? * (take a backup every day at 12 noon UTC). For a table of examples, click the preceding link and scroll down the page.
     */
   var ScheduleExpression: js.UndefOr[CronExpression] = js.undefined
   
@@ -47,7 +52,7 @@ trait BackupRule extends StObject {
   var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   
   /**
-    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var TargetBackupVaultName: BackupVaultName
 }
@@ -68,7 +73,11 @@ object BackupRule {
     
     inline def setCopyActionsUndefined: Self = StObject.set(x, "CopyActions", js.undefined)
     
-    inline def setCopyActionsVarargs(value: CopyAction*): Self = StObject.set(x, "CopyActions", js.Array(value :_*))
+    inline def setCopyActionsVarargs(value: CopyAction*): Self = StObject.set(x, "CopyActions", js.Array(value*))
+    
+    inline def setEnableContinuousBackup(value: Boolean): Self = StObject.set(x, "EnableContinuousBackup", value.asInstanceOf[js.Any])
+    
+    inline def setEnableContinuousBackupUndefined: Self = StObject.set(x, "EnableContinuousBackup", js.undefined)
     
     inline def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

@@ -5708,7 +5708,7 @@ object AccountSettingsInformation {
     
     inline def setIdCheckConfigurationsUndefined: Self = StObject.set(x, "idCheckConfigurations", js.undefined)
     
-    inline def setIdCheckConfigurationsVarargs(value: (/* A complex object specifying ID check configuration. */ IdCheckConfiguration)*): Self = StObject.set(x, "idCheckConfigurations", js.Array(value :_*))
+    inline def setIdCheckConfigurationsVarargs(value: (/* A complex object specifying ID check configuration. */ IdCheckConfiguration)*): Self = StObject.set(x, "idCheckConfigurations", js.Array(value*))
     
     inline def setIdCheckExpire(value: String): Self = StObject.set(x, "idCheckExpire", value.asInstanceOf[js.Any])
     
@@ -5764,7 +5764,7 @@ object AccountSettingsInformation {
     
     inline def setIdentityVerificationUndefined: Self = StObject.set(x, "identityVerification", js.undefined)
     
-    inline def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value :_*))
+    inline def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value*))
     
     inline def setIgnoreErrorIfAnchorTabNotFound(value: String): Self = StObject.set(x, "ignoreErrorIfAnchorTabNotFound", value.asInstanceOf[js.Any])
     
@@ -6190,7 +6190,7 @@ object AccountSettingsInformation {
     
     inline def setSignatureProvidersUndefined: Self = StObject.set(x, "signatureProviders", js.undefined)
     
-    inline def setSignatureProvidersVarargs(value: String*): Self = StObject.set(x, "signatureProviders", js.Array(value :_*))
+    inline def setSignatureProvidersVarargs(value: String*): Self = StObject.set(x, "signatureProviders", js.Array(value*))
     
     inline def setSignerAttachCertificateToEnvelopePDF(value: String): Self = StObject.set(x, "signerAttachCertificateToEnvelopePDF", value.asInstanceOf[js.Any])
     

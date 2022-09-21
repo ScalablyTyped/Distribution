@@ -12,7 +12,6 @@ import typings.socketcluster.socketclusterStrings.workerClusterReady
 import typings.socketcluster.socketclusterStrings.workerClusterStart
 import typings.socketcluster.socketclusterStrings.workerExit
 import typings.socketcluster.socketclusterStrings.workerStart
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +20,8 @@ object mod {
   
   @JSImport("socketcluster", JSImport.Namespace)
   @js.native
-  class ^ () extends SocketCluster {
-    def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any) = this()
+  open class ^ () extends SocketCluster {
+    def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ Any) = this()
   }
   @JSImport("socketcluster", JSImport.Namespace)
   @js.native
@@ -31,7 +30,7 @@ object mod {
   /* static member */
   inline def create(): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SocketCluster]
   inline def create(
-    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ Any
   ): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SocketCluster]
   
   trait BrokerExitInfo extends StObject {
@@ -173,11 +172,11 @@ object mod {
     @JSName("on")
     def on_brokerStart(event: brokerStart, listener: js.Function1[/* brokerInfo */ BrokerStartInfo, Unit]): this.type = js.native
     @JSName("on")
-    def on_fail(event: fail, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_fail(event: fail, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_warning(event: warning, listener: js.Function1[/* warning */ Error, Unit]): this.type = js.native
+    def on_warning(event: warning, listener: js.Function1[/* warning */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_workerClusterExit(
       event: workerClusterExit,
@@ -198,22 +197,22 @@ object mod {
     @JSName("on")
     def on_workerStart(event: workerStart, listener: js.Function1[/* workerInfo */ WorkerStartInfo, Unit]): this.type = js.native
     
-    var options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
+    var options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ Any = js.native
     
     def run(): Unit = js.native
     
-    def sendToBroker(brokerId: Double, data: js.Any): Unit = js.native
+    def sendToBroker(brokerId: Double, data: Any): Unit = js.native
     def sendToBroker(
       brokerId: Double,
-      data: js.Any,
-      callback: js.Function2[/* err */ Error | Null, /* responseData */ js.Any, Unit]
+      data: Any,
+      callback: js.Function2[/* err */ js.Error | Null, /* responseData */ Any, Unit]
     ): Unit = js.native
     
-    def sendToWorker(workerId: Double, data: js.Any): Unit = js.native
+    def sendToWorker(workerId: Double, data: Any): Unit = js.native
     def sendToWorker(
       workerId: Double,
-      data: js.Any,
-      callback: js.Function3[/* err */ Error, /* responseData */ js.Any, /* workerId */ Double, Unit]
+      data: Any,
+      callback: js.Function3[/* err */ js.Error, /* responseData */ Any, /* workerId */ Double, Unit]
     ): Unit = js.native
   }
   

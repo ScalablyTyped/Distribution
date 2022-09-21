@@ -52,7 +52,7 @@ trait Kik extends StObject {
   def pickUsers(callback: js.Function1[/* users */ js.Array[KikUser], Unit]): Unit = js.native
   def pickUsers(options: KikPickUsersOptions, callback: js.Function1[/* users */ js.Array[KikUser], Unit]): Unit = js.native
   
-  def picker(url: String, data: js.Any, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  def picker(url: String, data: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
   @JSName("picker")
   var picker_Original: Call = js.native
   
@@ -69,7 +69,7 @@ trait Kik extends StObject {
   ): Unit = js.native
   
   def trigger(property: String): Unit = js.native
-  def trigger(property: String, data: js.Any): Unit = js.native
+  def trigger(property: String, data: Any): Unit = js.native
   
   var utils: Platform = js.native
 }

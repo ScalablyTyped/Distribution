@@ -3,7 +3,7 @@ package typings.javaApplet
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
-import typings.std.HTMLAppletElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,30 +16,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JavaApplet
   extends StObject
-     with HTMLAppletElement {
+     with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @summary Handler if the applet status is {@link JavaAppletStatus#Error}. An error has occurred while loading the applet.
-    * @type {Function}
     */
   var onError: js.UndefOr[js.Function] = js.native
   
   /**
     * @summary Handler if the applet status is {@link JavaAppletStatus#Ready}. Applet has finished loading and is ready to receive JavaScript calls.
-    * @type {Function}
     */
   var onLoad: js.UndefOr[js.Function] = js.native
   
   /**
     * @summary Handler if the applet has stopped.
-    * @type {Function}
     */
   var onStop: js.UndefOr[js.Function] = js.native
   
@@ -52,7 +49,6 @@ trait JavaApplet
   
   /**
     * @summary Java applet Status.
-    * @type {JavaAppletStatus}
     */
   var status: js.UndefOr[JavaAppletStatus] = js.native
 }

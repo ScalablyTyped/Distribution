@@ -117,7 +117,7 @@ object RouteStep {
     
     inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
     
-    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value*))
     
     inline def setManeuver(value: StepManeuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     

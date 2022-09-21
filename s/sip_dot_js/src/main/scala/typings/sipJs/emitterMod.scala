@@ -9,7 +9,7 @@ object emitterMod {
   
   @JSImport("sip.js/lib/api/emitter", "EmitterImpl")
   @js.native
-  class EmitterImpl[T] ()
+  open class EmitterImpl[T] ()
     extends StObject
        with Emitter[T] {
     
@@ -19,7 +19,7 @@ object emitterMod {
       */
     def emit(data: T): Unit = js.native
     
-    /* private */ var listeners: js.Any = js.native
+    /* private */ var listeners: Any = js.native
     
     /**
       * Removes all listeners previously registered with addListener.

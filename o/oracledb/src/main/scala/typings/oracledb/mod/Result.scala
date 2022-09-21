@@ -12,7 +12,7 @@ trait Result[T] extends StObject {
   /**
     * This property will be defined if the executed statement returned Implicit Results. Depending on the value of resultSet it will either be an array,
     * each element containing an array of rows from one query, or an array of ResultSets each corresponding to a query.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#implicitresults
     * @since 4.0
     */
@@ -21,7 +21,7 @@ trait Result[T] extends StObject {
   /**
     * ROWID of a row affected by an INSERT, UPDATE, DELETE or MERGE statement. For other statements,
     * or if no row was affected, it is not set. If more than one row was affected, only the ROWID of the last row is returned.
-    * 
+    *
     * @since 4.2
     */
   val lastRowid: js.UndefOr[String] = js.undefined
@@ -85,7 +85,7 @@ object Result {
     
     inline def setImplicitResultsUndefined: Self = StObject.set(x, "implicitResults", js.undefined)
     
-    inline def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = StObject.set(x, "implicitResults", js.Array(value :_*))
+    inline def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = StObject.set(x, "implicitResults", js.Array(value*))
     
     inline def setLastRowid(value: String): Self = StObject.set(x, "lastRowid", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object Result {
     
     inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
+    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value*))
     
     inline def setOutBinds(value: T): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
@@ -113,6 +113,6 @@ object Result {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

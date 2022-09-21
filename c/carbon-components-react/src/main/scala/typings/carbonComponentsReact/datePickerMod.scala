@@ -8,6 +8,6 @@ object datePickerMod {
   
   @JSImport("carbon-components-react/lib/components/DatePicker", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.datePickerDatePickerMod.default
 }

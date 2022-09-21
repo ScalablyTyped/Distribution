@@ -1,6 +1,7 @@
 package typings.grommet
 
 import typings.grommet.anon.ColorValue
+import typings.grommet.grommetStrings.children
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BasisType
@@ -13,6 +14,7 @@ import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +24,25 @@ object distributionMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Distribution", "Distribution")
   @js.native
-  class Distribution protected ()
-    extends Component[
-          DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  open class Distribution protected () extends Component[DistributionExtendedProps, ComponentState, Any] {
+    def this(props: DistributionExtendedProps) = this()
+    def this(props: DistributionExtendedProps, context: Any) = this()
   }
   @JSImport("grommet/components/Distribution", "Distribution")
   @js.native
-  val Distribution: ComponentClass[
-    DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
+  val Distribution: ComponentClass[DistributionExtendedProps, ComponentState] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'children'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait DistributionExtendedProps
+    extends StObject
+       with DistributionProps
+  object DistributionExtendedProps {
+    
+    inline def apply(values: js.Array[ColorValue]): DistributionExtendedProps = {
+      val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DistributionExtendedProps]
+    }
+  }
   
   trait DistributionProps extends StObject {
     
@@ -49,7 +52,7 @@ object distributionMod {
     
     var basis: js.UndefOr[BasisType] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var children: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var fill: js.UndefOr[Boolean] = js.undefined
     
@@ -82,7 +85,7 @@ object distributionMod {
       
       inline def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
       
-      inline def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* repeated */ Any => Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -104,7 +107,9 @@ object distributionMod {
       
       inline def setValues(value: js.Array[ColorValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: ColorValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ColorValue*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
+  
+  type divProps = Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], children]
 }

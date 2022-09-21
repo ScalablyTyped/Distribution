@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BatchRetrieveInventoryChangesRequest")
 @js.native
-class BatchRetrieveInventoryChangesRequest () extends StObject {
+open class BatchRetrieveInventoryChangesRequest () extends StObject {
   
   /**
     * The filter to return results by `CatalogObject` ID. The filter is only applicable when set. The default value is null.

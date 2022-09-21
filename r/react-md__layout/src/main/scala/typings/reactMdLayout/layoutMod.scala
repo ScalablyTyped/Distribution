@@ -2,9 +2,8 @@ package typings.reactMdLayout
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactMdLayout.anon.OmitSkipToMainContentProp
 import typings.reactMdLayout.layoutAppBarMod.LayoutAppBarProps
-import typings.reactMdLayout.layoutMainMod.LayoutMainProps
+import typings.reactMdLayout.layoutChildrenMod.LayoutChildrenProps
 import typings.reactMdLayout.layoutNavToggleMod.LayoutWithNavToggle
 import typings.reactMdLayout.layoutNavigationMod.LayoutNavigationProps
 import typings.reactMdLayout.layoutTreeMod.LayoutTreeProps
@@ -22,160 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layoutMod {
   
-  object Layout {
-    
-    inline def apply(
-      hasIdPropAppBarAppBarPropsNavAfterAppBarChildrenSkipPropsMainPropsPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutCustomTitleTitleTitlePropsNavToggleNavTogglePropsPropNavNavPropsNavHeaderNavHeaderPropsNavHeaderTitleNavHeaderTitlePropsCloseNavCloseNavPropsTreeProps: LayoutProps[LayoutNavigationItem]
-    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasIdPropAppBarAppBarPropsNavAfterAppBarChildrenSkipPropsMainPropsPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutCustomTitleTitleTitlePropsNavToggleNavTogglePropsPropNavNavPropsNavHeaderNavHeaderPropsNavHeaderTitleNavHeaderTitlePropsCloseNavCloseNavPropsTreeProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/layout/types/Layout", "Layout")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.appBar")
-      @js.native
-      def appBar: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.appBarProps")
-      @js.native
-      def appBarProps: js.Any = js.native
-      inline def appBarProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appBarProps")(x.asInstanceOf[js.Any])
-      
-      inline def appBar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appBar")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.closeNav")
-      @js.native
-      def closeNav: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.closeNavProps")
-      @js.native
-      def closeNavProps: js.Any = js.native
-      inline def closeNavProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeNavProps")(x.asInstanceOf[js.Any])
-      
-      inline def closeNav_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeNav")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.customTitle")
-      @js.native
-      def customTitle: js.Any = js.native
-      inline def customTitle_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customTitle")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.desktopLayout")
-      @js.native
-      def desktopLayout: js.Any = js.native
-      inline def desktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.id")
-      @js.native
-      def id: js.Any = js.native
-      inline def id_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.landscapeTabletLayout")
-      @js.native
-      def landscapeTabletLayout: js.Any = js.native
-      inline def landscapeTabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("landscapeTabletLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.largeDesktopLayout")
-      @js.native
-      def largeDesktopLayout: js.Any = js.native
-      inline def largeDesktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeDesktopLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.mainProps")
-      @js.native
-      def mainProps: js.Any = js.native
-      inline def mainProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mainProps")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.nav")
-      @js.native
-      def nav: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navAfterAppBar")
-      @js.native
-      def navAfterAppBar: js.Any = js.native
-      inline def navAfterAppBar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navAfterAppBar")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navHeader")
-      @js.native
-      def navHeader: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navHeaderProps")
-      @js.native
-      def navHeaderProps: js.Any = js.native
-      inline def navHeaderProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navHeaderProps")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navHeaderTitle")
-      @js.native
-      def navHeaderTitle: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navHeaderTitleProps")
-      @js.native
-      def navHeaderTitleProps: js.Any = js.native
-      inline def navHeaderTitleProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navHeaderTitleProps")(x.asInstanceOf[js.Any])
-      
-      inline def navHeaderTitle_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navHeaderTitle")(x.asInstanceOf[js.Any])
-      
-      inline def navHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navHeader")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navProps")
-      @js.native
-      def navProps: js.Any = js.native
-      inline def navProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navProps")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navToggle")
-      @js.native
-      def navToggle: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.navToggleProps")
-      @js.native
-      def navToggleProps: js.Any = js.native
-      inline def navToggleProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navToggleProps")(x.asInstanceOf[js.Any])
-      
-      inline def navToggle_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navToggle")(x.asInstanceOf[js.Any])
-      
-      inline def nav_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nav")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.phoneLayout")
-      @js.native
-      def phoneLayout: js.Any = js.native
-      inline def phoneLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.skipProps")
-      @js.native
-      def skipProps: js.Any = js.native
-      inline def skipProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipProps")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.tabletLayout")
-      @js.native
-      def tabletLayout: js.Any = js.native
-      inline def tabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.title")
-      @js.native
-      def title: js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.titleProps")
-      @js.native
-      def titleProps: js.Any = js.native
-      inline def titleProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleProps")(x.asInstanceOf[js.Any])
-      
-      inline def title_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/Layout", "Layout.propTypes.treeProps")
-      @js.native
-      def treeProps: js.Any = js.native
-      inline def treeProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("treeProps")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/layout/types/Layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def Layout(
+    hasIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutDefaultToggleableVisibleProps: LayoutProps[LayoutNavigationItem]
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Layout")(hasIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutDefaultToggleableVisibleProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait FlattenedLayoutComponentConfiguration[T /* <: BaseTreeItem */]
     extends StObject
@@ -216,7 +68,7 @@ object layoutMod {
     
     /**
       * Any additional props to provide to the default
-      * `LayoutCloseNavigationButton` compoent.
+      * `LayoutCloseNavigationButton` component.
       */
     var closeNavProps: js.UndefOr[
         PropsWithRef[
@@ -224,6 +76,26 @@ object layoutMod {
           HTMLButtonElement
         ]
       ] = js.undefined
+    
+    /**
+      * A custom implementation for the main mini navigation component within the
+      * `Layout`. If this is not `undefined`, it will be used instead of the
+      * default implementation.
+      *
+      * Using this prop will make the following props do nothing for the mini nav:
+      *
+      * - `navProps`
+      * - `navHeader`
+      * - `navHeaderProps`
+      * - `navHeaderTitle`
+      * - `navHeaderTitleProps`
+      * - `closeNav`
+      * - `closeNavProps`
+      * - `treeProps`
+      *
+      * @remarks \@since.2.7.0
+      */
+    var miniNav: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * A custom implementation for the main navigation component within the
@@ -355,6 +227,10 @@ object layoutMod {
       
       inline def setCloseNavUndefined: Self = StObject.set(x, "closeNav", js.undefined)
       
+      inline def setMiniNav(value: ReactNode): Self = StObject.set(x, "miniNav", value.asInstanceOf[js.Any])
+      
+      inline def setMiniNavUndefined: Self = StObject.set(x, "miniNav", js.undefined)
+      
       inline def setNav(value: ReactNode): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
       
       inline def setNavHeader(value: ReactNode): Self = StObject.set(x, "navHeader", value.asInstanceOf[js.Any])
@@ -400,73 +276,12 @@ object layoutMod {
   trait LayoutProps[T /* <: BaseTreeItem */]
     extends StObject
        with LayoutConfiguration
-       with FlattenedLayoutComponentConfiguration[T] {
-    
-    /**
-      * The children to display within the layout. This is pretty much required
-      * since you'll have an empty app otherwise, but it's left as optional just
-      * for prototyping purposes.
-      */
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    /**
-      * The base id to use for everything within the layout component. The `id`
-      * will be applied to:
-      *
-      * - the `LayoutAppBar` as `${id}-header`
-      * - the `AppBarTitle` as `${id}-title`
-      * - the `LayoutNavToggle` as `${id}-nav-toggle`
-      * - the `LayoutMain` element as `${id}-main`
-      */
-    var id: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Any optional props to provide to the `<main>` element of the page.
-      */
-    var mainProps: js.UndefOr[PropsWithRef[LayoutMainProps, HTMLDivElement]] = js.undefined
-    
-    /**
-      * Boolean if the main app bar should appear after the navigation component.
-      * It is generally recommended to enable this prop if the navigation component
-      * as a focusable element in the header since it will have a better tab focus
-      * order.
-      */
-    var navAfterAppBar: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Any additional props to provide to the `<SkipToMainContent />` link that is
-      * automatically rendered in the layout.
-      */
-    var skipProps: js.UndefOr[OmitSkipToMainContentProp] = js.undefined
-  }
+       with LayoutChildrenProps[T]
   object LayoutProps {
     
     inline def apply[T /* <: BaseTreeItem */](): LayoutProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutProps[T]]
-    }
-    
-    extension [Self <: LayoutProps[?], T /* <: BaseTreeItem */](x: Self & LayoutProps[T]) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setMainProps(value: PropsWithRef[LayoutMainProps, HTMLDivElement]): Self = StObject.set(x, "mainProps", value.asInstanceOf[js.Any])
-      
-      inline def setMainPropsUndefined: Self = StObject.set(x, "mainProps", js.undefined)
-      
-      inline def setNavAfterAppBar(value: Boolean): Self = StObject.set(x, "navAfterAppBar", value.asInstanceOf[js.Any])
-      
-      inline def setNavAfterAppBarUndefined: Self = StObject.set(x, "navAfterAppBar", js.undefined)
-      
-      inline def setSkipProps(value: OmitSkipToMainContentProp): Self = StObject.set(x, "skipProps", value.asInstanceOf[js.Any])
-      
-      inline def setSkipPropsUndefined: Self = StObject.set(x, "skipProps", js.undefined)
     }
   }
 }

@@ -43,7 +43,7 @@ object AutomaticInputFailoverSettings {
     
     inline def setFailoverConditionsUndefined: Self = StObject.set(x, "FailoverConditions", js.undefined)
     
-    inline def setFailoverConditionsVarargs(value: FailoverCondition*): Self = StObject.set(x, "FailoverConditions", js.Array(value :_*))
+    inline def setFailoverConditionsVarargs(value: FailoverCondition*): Self = StObject.set(x, "FailoverConditions", js.Array(value*))
     
     inline def setInputPreference(value: InputPreference): Self = StObject.set(x, "InputPreference", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MultiMaterial")
 @js.native
-class MultiMaterial protected ()
+open class MultiMaterial protected ()
   extends StObject
      with typings.babylonjs.BABYLON.MultiMaterial {
   /**
@@ -18,6 +18,7 @@ class MultiMaterial protected ()
     * @param name Define the name in the scene
     * @param scene Define the scene the material belongs to
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**
@@ -39,5 +40,5 @@ object MultiMaterial {
     * @param scene defines the hosting scene
     * @returns a new MultiMaterial
     */
-  inline def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MultiMaterial]
+  inline def ParseMultiMaterial(parsedMultiMaterial: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MultiMaterial]
 }

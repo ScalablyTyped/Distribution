@@ -9,7 +9,6 @@ import typings.awsSdk.s3Mod.PresignedPost
 import typings.awsSdk.s3Mod.PutObjectRequest
 import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object servicesS3Mod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class S3Customizations () extends Service {
+  open class S3Customizations () extends Service {
     def this(config: ServiceConfigurationOptions) = this()
     
     /**
@@ -31,21 +30,21 @@ object servicesS3Mod {
     /**
       * Get the form fields and target URL for direct POST uploading.
       */
-    def createPresignedPost(params: Params, callback: js.Function2[/* err */ Error, /* data */ PresignedPost, Unit]): Unit = js.native
+    def createPresignedPost(params: Params, callback: js.Function2[/* err */ js.Error, /* data */ PresignedPost, Unit]): Unit = js.native
     
     /**
       * Get a pre-signed URL for a given operation name.
       */
-    def getSignedUrl(operation: String, params: js.Any): String = js.native
+    def getSignedUrl(operation: String, params: Any): String = js.native
     /**
       * Get a pre-signed URL for a given operation name.
       */
-    def getSignedUrl(operation: String, params: js.Any, callback: js.Function2[/* err */ Error, /* url */ String, Unit]): Unit = js.native
+    def getSignedUrl(operation: String, params: Any, callback: js.Function2[/* err */ js.Error, /* url */ String, Unit]): Unit = js.native
     
     /**
       * Returns a 'thenable' promise that will be resolved with a pre-signed URL for a given operation name.
       */
-    def getSignedUrlPromise(operation: String, params: js.Any): js.Promise[String] = js.native
+    def getSignedUrlPromise(operation: String, params: Any): js.Promise[String] = js.native
     
     /**
       * Uploads an arbitrarily sized buffer, blob, or stream, using intelligent
@@ -55,17 +54,17 @@ object servicesS3Mod {
       * bodies.
       */
     def upload(params: PutObjectRequest): ManagedUpload = js.native
-    def upload(params: PutObjectRequest, callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]): ManagedUpload = js.native
+    def upload(params: PutObjectRequest, callback: js.Function2[/* err */ js.Error, /* data */ SendData, Unit]): ManagedUpload = js.native
     def upload(
       params: PutObjectRequest,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]
+      callback: js.Function2[/* err */ js.Error, /* data */ SendData, Unit]
     ): ManagedUpload = js.native
     def upload(params: PutObjectRequest, options: ManagedUploadOptions): ManagedUpload = js.native
     def upload(
       params: PutObjectRequest,
       options: ManagedUploadOptions,
-      callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]
+      callback: js.Function2[/* err */ js.Error, /* data */ SendData, Unit]
     ): ManagedUpload = js.native
   }
   /* static members */

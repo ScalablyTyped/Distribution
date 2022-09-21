@@ -10,10 +10,10 @@ A simple RPC layer for communicating with web workers and over other transports
 | ------------------ | :-------------: |
 | Full name          | worker-rpc |
 | Keywords           | worker, rpc |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 175742649 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3387845666666668E7 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/DirtyHairy/worker-rpc#readme)

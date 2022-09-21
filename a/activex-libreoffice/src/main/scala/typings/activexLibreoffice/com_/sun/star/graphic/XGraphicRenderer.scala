@@ -20,12 +20,7 @@ trait XGraphicRenderer
 }
 object XGraphicRenderer {
   
-  inline def apply(
-    acquire: () => Unit,
-    queryInterface: `type` => js.Any,
-    release: () => Unit,
-    render: XGraphic => Unit
-  ): XGraphicRenderer = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, render: XGraphic => Unit): XGraphicRenderer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[XGraphicRenderer]
   }

@@ -17,7 +17,7 @@ trait ListResolverRulesResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
-    * The Resolver rules that were created using the current AWS account and that match the specified filters, if any.
+    * The Resolver rules that were created using the current Amazon Web Services account and that match the specified filters, if any.
     */
   var ResolverRules: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverRules] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListResolverRulesResponse {
     
     inline def setResolverRulesUndefined: Self = StObject.set(x, "ResolverRules", js.undefined)
     
-    inline def setResolverRulesVarargs(value: ResolverRule*): Self = StObject.set(x, "ResolverRules", js.Array(value :_*))
+    inline def setResolverRulesVarargs(value: ResolverRule*): Self = StObject.set(x, "ResolverRules", js.Array(value*))
   }
 }

@@ -1,11 +1,21 @@
 package typings.chaiJsonSchema
 
+import org.scalablytyped.runtime.Shortcut
 import typings.tv4.mod.TV4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
+  
+  @JSImport("chai-json-schema", JSImport.Namespace)
+  @js.native
+  val ^ : /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chai.ChaiPlugin */ Any = js.native
+  
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chai.ChaiPlugin */ Any
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chai.ChaiPlugin */ Any = ^
   
   object global {
     
@@ -14,11 +24,11 @@ object mod {
       @js.native
       trait Assert extends StObject {
         
-        def jsonSchema(value: js.Any, schema: js.Any): Unit = js.native
-        def jsonSchema(value: js.Any, schema: js.Any, msg: String): Unit = js.native
+        def jsonSchema(value: Any, schema: Any): Unit = js.native
+        def jsonSchema(value: Any, schema: Any, msg: String): Unit = js.native
         
-        def notJsonSchema(value: js.Any, schema: js.Any): Unit = js.native
-        def notJsonSchema(value: js.Any, schema: js.Any, msg: String): Unit = js.native
+        def notJsonSchema(value: Any, schema: Any): Unit = js.native
+        def notJsonSchema(value: Any, schema: Any, msg: String): Unit = js.native
       }
       
       trait ChaiStatic extends StObject {
@@ -41,8 +51,8 @@ object mod {
       @js.native
       trait LanguageChains extends StObject {
         
-        def jsonSchema(schema: js.Any): Unit = js.native
-        def jsonSchema(schema: js.Any, msg: String): Unit = js.native
+        def jsonSchema(schema: Any): Unit = js.native
+        def jsonSchema(schema: Any, msg: String): Unit = js.native
       }
     }
   }

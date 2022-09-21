@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartICD10CMInferenceJobRequest extends StObject {
   
   /**
-    * A unique identifier for the request. If you don't set the client request token, Amazon Comprehend Medical generates one.
+    * A unique identifier for the request. If you don't set the client request token, Comprehend Medical; generates one.
     */
   var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend Medical read access to your input data. For more information, see  Role-Based Permissions Required for Asynchronous Operations.
+    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Comprehend Medical; read access to your input data. For more information, see  Role-Based Permissions Required for Asynchronous Operations.
     */
   var DataAccessRoleArn: IamRoleArn
   

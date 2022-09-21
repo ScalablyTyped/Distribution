@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__signature-v4
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 A standalone implementation of the AWS Signature V4 request signing algorithm
@@ -10,10 +10,10 @@ A standalone implementation of the AWS Signature V4 request signing algorithm
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4 |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 13 |
-| # downloads        | 7121705 |
-| # stars            | 0 |
+| # releases         | 64 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6514264E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/signature-v4)

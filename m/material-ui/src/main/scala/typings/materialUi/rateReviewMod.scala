@@ -10,10 +10,10 @@ object rateReviewMod {
   
   @JSImport("material-ui/svg-icons/maps/rate-review", JSImport.Default)
   @js.native
-  class default () extends MapsRateReview
+  open class default () extends MapsRateReview
   
   @JSImport("material-ui/svg-icons/maps/rate-review", "MapsRateReview")
   @js.native
-  class MapsRateReview ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsRateReview ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

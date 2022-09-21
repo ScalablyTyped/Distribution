@@ -11,14 +11,14 @@ trait ArcGISImageServiceCapabilities
      with Object {
   
   /**
-    * Describes operations supported by the layer.
+    * Describes operations supported by the ImageryLayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
   var operations: ArcGISImageServiceCapabilitiesOperations
   
   /**
-    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations supported by the layer.
+    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations supported by the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */

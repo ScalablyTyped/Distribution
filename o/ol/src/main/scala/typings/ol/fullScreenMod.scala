@@ -13,7 +13,7 @@ object fullScreenMod {
   
   @JSImport("ol/control/FullScreen", JSImport.Default)
   @js.native
-  class default () extends FullScreen {
+  open class default () extends FullScreen {
     def this(opt_options: Options) = this()
   }
   
@@ -39,7 +39,11 @@ object fullScreenMod {
   
   trait Options extends StObject {
     
+    var activeClassName: js.UndefOr[String] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
+    
+    var inactiveClassName: js.UndefOr[String] = js.undefined
     
     var keys: js.UndefOr[Boolean] = js.undefined
     
@@ -62,9 +66,17 @@ object fullScreenMod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
+      
+      inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setInactiveClassName(value: String): Self = StObject.set(x, "inactiveClassName", value.asInstanceOf[js.Any])
+      
+      inline def setInactiveClassNameUndefined: Self = StObject.set(x, "inactiveClassName", js.undefined)
       
       inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       

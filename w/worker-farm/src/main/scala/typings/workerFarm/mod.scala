@@ -85,23 +85,23 @@ object mod {
   
   type WorkerCallback0 = js.Function0[Unit]
   
-  type WorkerCallback1 = js.Function1[/* arg1 */ js.Any, Unit]
+  type WorkerCallback1 = js.Function1[/* arg1 */ Any, Unit]
   
-  type WorkerCallback2 = js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]
+  type WorkerCallback2 = js.Function2[/* arg1 */ Any, /* arg2 */ Any, Unit]
   
-  type WorkerCallback3 = js.Function3[/* arg1 */ js.Any, /* arg2 */ js.Any, /* arg3 */ js.Any, Unit]
+  type WorkerCallback3 = js.Function3[/* arg1 */ Any, /* arg2 */ Any, /* arg3 */ Any, Unit]
   
-  type WorkerCallback4 = js.Function4[/* arg1 */ js.Any, /* arg2 */ js.Any, /* arg3 */ js.Any, /* arg4 */ js.Any, Unit]
+  type WorkerCallback4 = js.Function4[/* arg1 */ Any, /* arg2 */ Any, /* arg3 */ Any, /* arg4 */ Any, Unit]
   
   @js.native
   trait Workers
     extends StObject
        with /* x */ StringDictionary[Workers] {
     
-    def apply(arg1: js.Any, arg2: js.Any, arg3: js.Any, arg4: js.Any, callback: WorkerCallback): Unit = js.native
-    def apply(arg1: js.Any, arg2: js.Any, arg3: js.Any, callback: WorkerCallback): Unit = js.native
-    def apply(arg1: js.Any, arg2: js.Any, callback: WorkerCallback): Unit = js.native
-    def apply(arg1: js.Any, callback: WorkerCallback): Unit = js.native
+    def apply(arg1: Any, arg2: Any, arg3: Any, arg4: Any, callback: WorkerCallback): Unit = js.native
+    def apply(arg1: Any, arg2: Any, arg3: Any, callback: WorkerCallback): Unit = js.native
+    def apply(arg1: Any, arg2: Any, callback: WorkerCallback): Unit = js.native
+    def apply(arg1: Any, callback: WorkerCallback): Unit = js.native
     def apply(callback: WorkerCallback): Unit = js.native
   }
 }

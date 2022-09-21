@@ -12,7 +12,7 @@ trait OMathPhantom extends StObject {
   
   val E: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Show: Boolean
   
@@ -35,7 +35,7 @@ object OMathPhantom {
     Application: Application,
     Creator: Double,
     E: OMath,
-    Parent: js.Any,
+    Parent: Any,
     Show: Boolean,
     Smash: Boolean,
     Transp: Boolean,
@@ -57,7 +57,7 @@ object OMathPhantom {
     
     inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     

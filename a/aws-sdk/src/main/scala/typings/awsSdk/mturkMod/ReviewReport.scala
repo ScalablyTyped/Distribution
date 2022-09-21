@@ -29,12 +29,12 @@ object ReviewReport {
     
     inline def setReviewActionsUndefined: Self = StObject.set(x, "ReviewActions", js.undefined)
     
-    inline def setReviewActionsVarargs(value: ReviewActionDetail*): Self = StObject.set(x, "ReviewActions", js.Array(value :_*))
+    inline def setReviewActionsVarargs(value: ReviewActionDetail*): Self = StObject.set(x, "ReviewActions", js.Array(value*))
     
     inline def setReviewResults(value: ReviewResultDetailList): Self = StObject.set(x, "ReviewResults", value.asInstanceOf[js.Any])
     
     inline def setReviewResultsUndefined: Self = StObject.set(x, "ReviewResults", js.undefined)
     
-    inline def setReviewResultsVarargs(value: ReviewResultDetail*): Self = StObject.set(x, "ReviewResults", js.Array(value :_*))
+    inline def setReviewResultsVarargs(value: ReviewResultDetail*): Self = StObject.set(x, "ReviewResults", js.Array(value*))
   }
 }

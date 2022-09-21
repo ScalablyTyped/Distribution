@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-draggable-list
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 Make a list of draggable collapsible items.
@@ -10,10 +10,10 @@ Make a list of draggable collapsible items.
 | ------------------ | :-------------: |
 | Full name          | react-draggable-list |
 | Keywords           | react, react-component, animation, reorder, move, drag-and-drop, draggable |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 94341 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18013.0 |
+| # stars            | 269.0 |
 
 ## Links
 - [Homepage](https://github.com/StreakYC/react-draggable-list#readme)

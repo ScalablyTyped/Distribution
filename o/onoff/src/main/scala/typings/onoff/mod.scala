@@ -2,7 +2,6 @@ package typings.onoff
 
 import typings.onoff.onoffNumbers.`0`
 import typings.onoff.onoffNumbers.`1`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("onoff", "Gpio")
   @js.native
-  class Gpio protected () extends StObject {
+  open class Gpio protected () extends StObject {
     def this(gpio: Double, direction: Direction) = this()
     def this(gpio: Double, direction: Direction, edge: Edge) = this()
     def this(gpio: Double, direction: Direction, edge: Unit, options: Options) = this()
@@ -44,7 +43,7 @@ object mod {
     def watch(callback: ValueCallback): Unit = js.native
     
     def write(value: BinaryValue): js.Promise[Unit] = js.native
-    def write(value: BinaryValue, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def write(value: BinaryValue, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     def writeSync(value: BinaryValue): Unit = js.native
   }
@@ -144,5 +143,5 @@ object mod {
     }
   }
   
-  type ValueCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ BinaryValue, Unit]
+  type ValueCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* value */ BinaryValue, Unit]
 }

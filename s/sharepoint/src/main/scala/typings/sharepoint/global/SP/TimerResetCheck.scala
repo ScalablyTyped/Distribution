@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.TimerResetCheck")
 @js.native
-class TimerResetCheck ()
+open class TimerResetCheck ()
   extends StObject
      with typings.sharepoint.SP.TimerResetCheck

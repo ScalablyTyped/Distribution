@@ -1,8 +1,9 @@
 package typings.googleapis.anon
 
-import typings.googleapis.cloudiotV1Mod.cloudiotV1.Cloudiot
-import typings.googleapis.cloudiotV1Mod.cloudiotV1.Options
+import typings.googleapis.bigtableadminV1Mod.bigtableadminV1.Bigtableadmin
+import typings.googleapis.bigtableadminV1Mod.bigtableadminV1.Options
 import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn34 extends StObject {
   
-  def apply(options: Options): Cloudiot = js.native
-  def apply(version: v1): Cloudiot = js.native
+  def apply(options: Options): Bigtableadmin = js.native
+  def apply(options: typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Options): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = js.native
+  def apply(version: v1): Bigtableadmin = js.native
+  def apply(version: v2): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = js.native
 }

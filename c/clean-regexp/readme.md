@@ -10,10 +10,10 @@ Clean up regular expressions
 | ------------------ | :-------------: |
 | Full name          | clean-regexp |
 | Keywords           | regex, regexp, regular, expression, clean, cleanup, digit, word |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 14140267 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4695216.666666667 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/samverschueren/clean-regexp#readme)

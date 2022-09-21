@@ -333,7 +333,7 @@ object UploaderOption {
     
     inline def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
     
-    inline def setStaticFilesVarargs(value: Id*): Self = StObject.set(x, "staticFiles", js.Array(value :_*))
+    inline def setStaticFilesVarargs(value: Id*): Self = StObject.set(x, "staticFiles", js.Array(value*))
     
     inline def setStatusCreator(value: (/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader) => Unit): Self = StObject.set(x, "statusCreator", js.Any.fromFunction3(value))
     

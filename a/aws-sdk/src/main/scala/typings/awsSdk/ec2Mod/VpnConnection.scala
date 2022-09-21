@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpnConnection extends StObject {
   
   /**
-    * The category of the VPN connection. A value of VPN indicates an AWS VPN connection. A value of VPN-Classic indicates an AWS Classic VPN connection.
+    * The category of the VPN connection. A value of VPN indicates an Amazon Web Services VPN connection. A value of VPN-Classic indicates an Amazon Web Services Classic VPN connection.
     */
   var Category: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ARN of the core network.
+    */
+  var CoreNetworkArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ARN of the core network attachment.
+    */
+  var CoreNetworkAttachmentArn: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration information for the VPN connection's customer gateway (in the native XML format). This element is always present in the CreateVpnConnection response; however, it's present in the DescribeVpnConnections response only if the VPN connection is in the pending or available state.
@@ -20,6 +30,11 @@ trait VpnConnection extends StObject {
     * The ID of the customer gateway at your end of the VPN connection.
     */
   var CustomerGatewayId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The current state of the gateway association.
+    */
+  var GatewayAssociationState: js.UndefOr[typings.awsSdk.ec2Mod.GatewayAssociationState] = js.undefined
   
   /**
     * The VPN connection options.
@@ -62,7 +77,7 @@ trait VpnConnection extends StObject {
   var VpnConnectionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the virtual private gateway at the AWS side of the VPN connection.
+    * The ID of the virtual private gateway at the Amazon Web Services side of the VPN connection.
     */
   var VpnGatewayId: js.UndefOr[String] = js.undefined
 }
@@ -79,6 +94,14 @@ object VpnConnection {
     
     inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
+    inline def setCoreNetworkArn(value: String): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkArnUndefined: Self = StObject.set(x, "CoreNetworkArn", js.undefined)
+    
+    inline def setCoreNetworkAttachmentArn(value: String): Self = StObject.set(x, "CoreNetworkAttachmentArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkAttachmentArnUndefined: Self = StObject.set(x, "CoreNetworkAttachmentArn", js.undefined)
+    
     inline def setCustomerGatewayConfiguration(value: String): Self = StObject.set(x, "CustomerGatewayConfiguration", value.asInstanceOf[js.Any])
     
     inline def setCustomerGatewayConfigurationUndefined: Self = StObject.set(x, "CustomerGatewayConfiguration", js.undefined)
@@ -86,6 +109,10 @@ object VpnConnection {
     inline def setCustomerGatewayId(value: String): Self = StObject.set(x, "CustomerGatewayId", value.asInstanceOf[js.Any])
     
     inline def setCustomerGatewayIdUndefined: Self = StObject.set(x, "CustomerGatewayId", js.undefined)
+    
+    inline def setGatewayAssociationState(value: GatewayAssociationState): Self = StObject.set(x, "GatewayAssociationState", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayAssociationStateUndefined: Self = StObject.set(x, "GatewayAssociationState", js.undefined)
     
     inline def setOptions(value: VpnConnectionOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
@@ -95,7 +122,7 @@ object VpnConnection {
     
     inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    inline def setRoutesVarargs(value: VpnStaticRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: VpnStaticRoute*): Self = StObject.set(x, "Routes", js.Array(value*))
     
     inline def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
@@ -105,7 +132,7 @@ object VpnConnection {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTransitGatewayId(value: String): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
     
@@ -119,7 +146,7 @@ object VpnConnection {
     
     inline def setVgwTelemetryUndefined: Self = StObject.set(x, "VgwTelemetry", js.undefined)
     
-    inline def setVgwTelemetryVarargs(value: VgwTelemetry*): Self = StObject.set(x, "VgwTelemetry", js.Array(value :_*))
+    inline def setVgwTelemetryVarargs(value: VgwTelemetry*): Self = StObject.set(x, "VgwTelemetry", js.Array(value*))
     
     inline def setVpnConnectionId(value: String): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Allows Microphone access in node with arecord (Linux) and sox (Windows/OSX).
 | ------------------ | :-------------: |
 | Full name          | node-microphone |
 | Keywords           | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 1710 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 270.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/MexXxo/node-microphone#readme)

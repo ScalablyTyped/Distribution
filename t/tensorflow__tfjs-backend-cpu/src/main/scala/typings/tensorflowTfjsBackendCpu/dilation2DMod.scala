@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dilation2DMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Dilation2D", "dilation2dConfig")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Dilation2D", "dilation2DConfig")
   @js.native
-  val dilation2dConfig: KernelConfig = js.native
+  val dilation2DConfig: KernelConfig = js.native
 }

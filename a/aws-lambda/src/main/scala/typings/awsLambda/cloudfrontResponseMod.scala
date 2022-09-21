@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.anon.CfCloudFrontEventreadonlyre
+import typings.awsLambda.anon.Cf
 import typings.awsLambda.cloudfrontMod.CloudFrontResultResponse
 import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
@@ -14,20 +14,20 @@ object cloudfrontResponseMod {
   
   trait CloudFrontResponseEvent extends StObject {
     
-    var Records: js.Array[CfCloudFrontEventreadonlyre]
+    var Records: js.Array[Cf]
   }
   object CloudFrontResponseEvent {
     
-    inline def apply(Records: js.Array[CfCloudFrontEventreadonlyre]): CloudFrontResponseEvent = {
+    inline def apply(Records: js.Array[Cf]): CloudFrontResponseEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFrontResponseEvent]
     }
     
     extension [Self <: CloudFrontResponseEvent](x: Self) {
       
-      inline def setRecords(value: js.Array[CfCloudFrontEventreadonlyre]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[Cf]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: CfCloudFrontEventreadonlyre*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Cf*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   

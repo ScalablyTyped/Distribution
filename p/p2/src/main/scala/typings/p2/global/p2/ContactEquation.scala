@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.ContactEquation")
 @js.native
-class ContactEquation protected ()
+open class ContactEquation protected ()
   extends typings.p2.mod.ContactEquation {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body) = this()
 }

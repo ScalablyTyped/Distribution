@@ -9,7 +9,7 @@ trait SchemaAdministratorWebTokenSpecPrivateApps extends StObject {
   /**
     * Whether the Private Apps page is displayed. Default is true.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaAdministratorWebTokenSpecPrivateApps {
   
@@ -21,6 +21,8 @@ object SchemaAdministratorWebTokenSpecPrivateApps {
   extension [Self <: SchemaAdministratorWebTokenSpecPrivateApps](x: Self) {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }

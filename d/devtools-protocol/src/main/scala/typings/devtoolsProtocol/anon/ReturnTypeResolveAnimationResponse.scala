@@ -23,7 +23,7 @@ object ReturnTypeResolveAnimationResponse {
     
     inline def setParamsType(value: js.Array[ResolveAnimationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: ResolveAnimationRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ResolveAnimationRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: ResolveAnimationResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

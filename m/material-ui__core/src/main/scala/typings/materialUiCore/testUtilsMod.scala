@@ -29,7 +29,7 @@ object testUtilsMod {
   inline def createShallow(): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallow")().asInstanceOf[Fn1]
   inline def createShallow(options: PartialShallowOptions): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallow")(options.asInstanceOf[js.Any]).asInstanceOf[Fn1]
   
-  inline def findOutermostIntrinsic(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOutermostIntrinsic")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def findOutermostIntrinsic(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOutermostIntrinsic")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]]
   
   inline def getClasses[T](element: ReactElement): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(element.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def getClasses[T](element: ReactElement, options: PartialwithThemeboolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]

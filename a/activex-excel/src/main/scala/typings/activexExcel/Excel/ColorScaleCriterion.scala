@@ -15,7 +15,7 @@ trait ColorScaleCriterion extends StObject {
   
   var Type: XlConditionValueTypes
   
-  var Value: js.Any
+  var Value: Any
 }
 object ColorScaleCriterion {
   
@@ -24,7 +24,7 @@ object ColorScaleCriterion {
     FormatColor: FormatColor,
     Index: Double,
     Type: XlConditionValueTypes,
-    Value: js.Any
+    Value: Any
   ): ColorScaleCriterion = {
     val __obj = js.Dynamic.literal(FormatColor = FormatColor.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.ColorScaleCriterion_typekey")(ExcelDotColorScaleCriterion_typekey.asInstanceOf[js.Any])
@@ -41,6 +41,6 @@ object ColorScaleCriterion {
     
     inline def setType(value: XlConditionValueTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

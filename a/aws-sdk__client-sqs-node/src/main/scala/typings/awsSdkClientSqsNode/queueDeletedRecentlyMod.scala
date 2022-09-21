@@ -8,5 +8,5 @@ object queueDeletedRecentlyMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/QueueDeletedRecently", "QueueDeletedRecently")
   @js.native
-  val QueueDeletedRecently: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val QueueDeletedRecently: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

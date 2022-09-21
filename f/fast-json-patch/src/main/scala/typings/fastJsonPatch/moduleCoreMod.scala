@@ -24,15 +24,15 @@ object moduleCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("fast-json-patch/module/core", "JsonPatchError")
   @js.native
-  class JsonPatchError protected () extends PatchError {
+  open class JsonPatchError protected () extends PatchError {
     def this(message: String, name: JsonPatchErrorName) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Any, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Any, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: Any) = this()
   }
   @JSImport("fast-json-patch/module/core", "JsonPatchError")
   @js.native
@@ -40,8 +40,8 @@ object moduleCoreMod {
     /* message */ String, 
     /* name */ JsonPatchErrorName, 
     /* index */ js.UndefOr[Double], 
-    /* operation */ js.UndefOr[js.Any], 
-    /* tree */ js.UndefOr[js.Any], 
+    /* operation */ js.UndefOr[Any], 
+    /* tree */ js.UndefOr[Any], 
     PatchError
   ] = js.native
   
@@ -241,13 +241,13 @@ object moduleCoreMod {
   
   inline def applyReducer[T](document: T, operation: Operation, index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReducer")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def areEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_areEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areEquals(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_areEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("fast-json-patch/module/core", "deepClone")
   @js.native
-  val deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native
+  val deepClone: js.Function1[/* obj */ Any, Any] = js.native
   
-  inline def getValueByPointer(document: js.Any, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPointer")(document.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getValueByPointer(document: Any, pointer: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPointer")(document.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def validate[T](sequence: js.Array[Operation]): PatchError = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any]).asInstanceOf[PatchError]
   inline def validate[T](sequence: js.Array[Operation], document: T): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[PatchError]
@@ -255,8 +255,8 @@ object moduleCoreMod {
   inline def validate[T](sequence: js.Array[Operation], document: Unit, externalValidator: Validator_[T]): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any], externalValidator.asInstanceOf[js.Any])).asInstanceOf[PatchError]
   
   inline def validator(operation: Operation, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validator(operation: Operation, index: Double, document: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validator(operation: Operation, index: Double, document: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validator(operation: Operation, index: Double, document: Any, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validator(operation: Operation, index: Double, document: Unit, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AddOperation[T]
@@ -371,21 +371,21 @@ object moduleCoreMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.fastJsonPatch.moduleCoreMod.AddOperation[js.Any]
+    - typings.fastJsonPatch.moduleCoreMod.AddOperation[scala.Any]
     - typings.fastJsonPatch.moduleCoreMod.RemoveOperation
-    - typings.fastJsonPatch.moduleCoreMod.ReplaceOperation[js.Any]
+    - typings.fastJsonPatch.moduleCoreMod.ReplaceOperation[scala.Any]
     - typings.fastJsonPatch.moduleCoreMod.MoveOperation
     - typings.fastJsonPatch.moduleCoreMod.CopyOperation
-    - typings.fastJsonPatch.moduleCoreMod.TestOperation[js.Any]
-    - typings.fastJsonPatch.moduleCoreMod.GetOperation[js.Any]
+    - typings.fastJsonPatch.moduleCoreMod.TestOperation[scala.Any]
+    - typings.fastJsonPatch.moduleCoreMod.GetOperation[scala.Any]
   */
-  type Operation = _Operation | AddOperation[js.Any] | ReplaceOperation[js.Any] | TestOperation[js.Any] | GetOperation[js.Any]
+  type Operation = _Operation | AddOperation[Any] | ReplaceOperation[Any] | TestOperation[Any] | GetOperation[Any]
   
   trait OperationResult[T] extends StObject {
     
     var newDocument: T
     
-    var removed: js.UndefOr[js.Any] = js.undefined
+    var removed: js.UndefOr[Any] = js.undefined
     
     var test: js.UndefOr[Boolean] = js.undefined
   }
@@ -400,7 +400,7 @@ object moduleCoreMod {
       
       inline def setNewDocument(value: T): Self = StObject.set(x, "newDocument", value.asInstanceOf[js.Any])
       
-      inline def setRemoved(value: js.Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
       inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
       

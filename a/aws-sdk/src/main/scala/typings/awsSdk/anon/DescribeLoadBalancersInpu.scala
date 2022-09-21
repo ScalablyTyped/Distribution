@@ -54,7 +54,7 @@ object DescribeLoadBalancersInpu {
     
     inline def setLoadBalancerArnsUndefined: Self = StObject.set(x, "LoadBalancerArns", js.undefined)
     
-    inline def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value :_*))
+    inline def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object DescribeLoadBalancersInpu {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: LoadBalancerName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: LoadBalancerName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

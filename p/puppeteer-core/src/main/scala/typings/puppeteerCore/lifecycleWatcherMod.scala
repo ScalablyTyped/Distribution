@@ -1,14 +1,10 @@
 package typings.puppeteerCore
 
-import typings.node.NodeJS.Timeout
 import typings.puppeteerCore.errorsMod.TimeoutError
-import typings.puppeteerCore.frameManagerMod.Frame
 import typings.puppeteerCore.frameManagerMod.FrameManager
-import typings.puppeteerCore.helperMod.PuppeteerEventListener
-import typings.puppeteerCore.httprequestMod.HTTPRequest
+import typings.puppeteerCore.frameMod.Frame
 import typings.puppeteerCore.httpresponseMod.HTTPResponse
 import typings.puppeteerCore.puppeteerCoreStrings.domcontentloaded_
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +13,7 @@ object lifecycleWatcherMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/LifecycleWatcher", "LifecycleWatcher")
   @js.native
-  class LifecycleWatcher protected () extends StObject {
+  open class LifecycleWatcher protected () extends StObject {
     def this(
       frameManager: FrameManager,
       frame: Frame,
@@ -26,68 +22,19 @@ object lifecycleWatcherMod {
     ) = this()
     def this(frameManager: FrameManager, frame: Frame, waitUntil: PuppeteerLifeCycleEvent, timeout: Double) = this()
     
-    def _checkLifecycleComplete(): Unit = js.native
-    
-    def _createTimeoutPromise(): js.Promise[TimeoutError | Null] = js.native
-    
-    var _eventListeners: js.Array[PuppeteerEventListener] = js.native
-    
-    var _expectedLifecycle: js.Array[ProtocolLifeCycleEvent] = js.native
-    
-    var _frame: Frame = js.native
-    
-    var _frameManager: FrameManager = js.native
-    
-    var _hasSameDocumentNavigation: js.UndefOr[Boolean] = js.native
-    
-    var _initialLoaderId: String = js.native
-    
-    def _lifecycleCallback(): Unit = js.native
-    
-    var _lifecyclePromise: js.Promise[Unit] = js.native
-    
-    var _maximumTimer: js.UndefOr[Timeout] = js.native
-    
-    def _navigatedWithinDocument(frame: Frame): Unit = js.native
-    
-    var _navigationRequest: js.UndefOr[HTTPRequest] = js.native
-    
-    def _newDocumentNavigationCompleteCallback(): Unit = js.native
-    def _newDocumentNavigationCompleteCallback(x: Error): Unit = js.native
-    
-    var _newDocumentNavigationPromise: js.Promise[Error | Null] = js.native
-    
-    def _onFrameDetached(frame: Frame): Unit = js.native
-    
-    def _onRequest(request: HTTPRequest): Unit = js.native
-    
-    def _sameDocumentNavigationCompleteCallback(): Unit = js.native
-    def _sameDocumentNavigationCompleteCallback(x: Error): Unit = js.native
-    
-    var _sameDocumentNavigationPromise: js.Promise[Error | Null] = js.native
-    
-    def _terminate(error: Error): Unit = js.native
-    
-    def _terminationCallback(): Unit = js.native
-    def _terminationCallback(x: Error): Unit = js.native
-    
-    var _terminationPromise: js.Promise[Error | Null] = js.native
-    
-    var _timeout: Double = js.native
-    
-    var _timeoutPromise: js.Promise[TimeoutError | Null] = js.native
-    
     def dispose(): Unit = js.native
     
     def lifecyclePromise(): js.Promise[Unit] = js.native
     
-    def navigationResponse(): HTTPResponse | Null = js.native
+    def navigationResponse(): js.Promise[HTTPResponse | Null] = js.native
     
-    def newDocumentNavigationPromise(): js.Promise[Error | Null] = js.native
+    def newDocumentNavigationPromise(): js.Promise[js.UndefOr[js.Error]] = js.native
     
-    def sameDocumentNavigationPromise(): js.Promise[Error | Null] = js.native
+    /* private */ var `private`: Any = js.native
     
-    def timeoutOrTerminationPromise(): js.Promise[Error | TimeoutError | Null] = js.native
+    def sameDocumentNavigationPromise(): js.Promise[js.UndefOr[js.Error]] = js.native
+    
+    def timeoutOrTerminationPromise(): js.Promise[js.UndefOr[js.Error | TimeoutError]] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

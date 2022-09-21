@@ -9,21 +9,21 @@ trait LoggerModule
   extends StObject
      with Module {
   
-  def error(args: js.Any*): Unit
+  def error(args: Any*): Unit
   
-  def log(args: js.Any*): Unit
+  def log(args: Any*): Unit
   
   @JSName("type")
   var type_LoggerModule: logger
   
-  def warn(args: js.Any*): Unit
+  def warn(args: Any*): Unit
 }
 object LoggerModule {
   
   inline def apply(
-    error: /* repeated */ js.Any => Unit,
-    log: /* repeated */ js.Any => Unit,
-    warn: /* repeated */ js.Any => Unit
+    error: /* repeated */ Any => Unit,
+    log: /* repeated */ Any => Unit,
+    warn: /* repeated */ Any => Unit
   ): LoggerModule = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
     __obj.updateDynamic("type")("logger")
@@ -32,12 +32,12 @@ object LoggerModule {
   
   extension [Self <: LoggerModule](x: Self) {
     
-    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     inline def setType(value: logger): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

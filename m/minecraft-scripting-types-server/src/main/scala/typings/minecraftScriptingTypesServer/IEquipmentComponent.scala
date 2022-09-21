@@ -31,7 +31,7 @@ object IEquipmentComponent {
     
     inline def setSlot_drop_chance(value: js.Array[Dropchance]): Self = StObject.set(x, "slot_drop_chance", value.asInstanceOf[js.Any])
     
-    inline def setSlot_drop_chanceVarargs(value: Dropchance*): Self = StObject.set(x, "slot_drop_chance", js.Array(value :_*))
+    inline def setSlot_drop_chanceVarargs(value: Dropchance*): Self = StObject.set(x, "slot_drop_chance", js.Array(value*))
     
     inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }

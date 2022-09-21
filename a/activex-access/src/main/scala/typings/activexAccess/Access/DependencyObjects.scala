@@ -19,5 +19,5 @@ trait DependencyObjects extends StObject {
   def Item(Index: String): AccessObject = js.native
   def Item(Index: Double): AccessObject = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

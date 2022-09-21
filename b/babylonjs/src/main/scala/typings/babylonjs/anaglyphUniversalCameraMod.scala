@@ -11,7 +11,7 @@ object anaglyphUniversalCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphUniversalCamera", "AnaglyphUniversalCamera")
   @js.native
-  class AnaglyphUniversalCamera protected () extends UniversalCamera {
+  open class AnaglyphUniversalCamera protected () extends UniversalCamera {
     /**
       * Creates a new AnaglyphUniversalCamera
       * @param name defines camera name
@@ -19,6 +19,9 @@ object anaglyphUniversalCameraMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

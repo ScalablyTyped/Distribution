@@ -48,13 +48,11 @@ trait EntrySync extends StObject {
   
   /**
     * EntrySync is a directory.
-    * @readonly
     */
   var isDirectory: Boolean = js.native
   
   /**
     * EntrySync is a file.
-    * @readonly
     */
   var isFile: Boolean = js.native
   

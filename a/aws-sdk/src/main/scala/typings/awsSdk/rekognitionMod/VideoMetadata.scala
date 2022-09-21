@@ -12,6 +12,11 @@ trait VideoMetadata extends StObject {
   var Codec: js.UndefOr[String] = js.undefined
   
   /**
+    *  A description of the range of luminance values in a video, either LIMITED (16 to 235) or FULL (0 to 255). 
+    */
+  var ColorRange: js.UndefOr[VideoColorRange] = js.undefined
+  
+  /**
     * Length of the video in milliseconds.
     */
   var DurationMillis: js.UndefOr[ULong] = js.undefined
@@ -48,6 +53,10 @@ object VideoMetadata {
     inline def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    
+    inline def setColorRange(value: VideoColorRange): Self = StObject.set(x, "ColorRange", value.asInstanceOf[js.Any])
+    
+    inline def setColorRangeUndefined: Self = StObject.set(x, "ColorRange", js.undefined)
     
     inline def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     

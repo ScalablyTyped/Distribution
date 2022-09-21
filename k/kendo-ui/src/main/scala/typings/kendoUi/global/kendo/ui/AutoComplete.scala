@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.AutoComplete")
 @js.native
-class AutoComplete protected ()
+open class AutoComplete protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.AutoComplete {
   def this(element: Element) = this()

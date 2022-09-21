@@ -10,10 +10,10 @@ Express middleware for the sanitizer module using Caja's HTML Sanitizer.
 | ------------------ | :-------------: |
 | Full name          | express-sanitized |
 | Keywords           | express, sanitize, sanitization, xss |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 39064 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2243.3333333333335 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/askhogan/express-sanitized)

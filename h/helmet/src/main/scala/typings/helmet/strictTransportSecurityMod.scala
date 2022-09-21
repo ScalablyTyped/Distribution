@@ -9,29 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strictTransportSecurityMod {
   
-  @JSImport("helmet/dist/middlewares/strict-transport-security", JSImport.Namespace)
+  @JSImport("helmet/dist/types/middlewares/strict-transport-security", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ]]
   inline def default(options: ReadonlyStrictTransportSe): js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ]]

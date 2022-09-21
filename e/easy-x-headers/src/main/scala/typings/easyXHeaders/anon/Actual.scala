@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Actual extends StObject {
   
-  var actual: js.UndefOr[js.Any] = js.undefined
+  var actual: js.UndefOr[Any] = js.undefined
   
-  var expected: js.UndefOr[js.Any] = js.undefined
+  var expected: js.UndefOr[Any] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -25,11 +25,11 @@ object Actual {
   
   extension [Self <: Actual](x: Self) {
     
-    inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
     
-    inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     

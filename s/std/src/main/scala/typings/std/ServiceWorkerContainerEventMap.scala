@@ -6,15 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServiceWorkerContainerEventMap extends StObject {
   
+  /* standard dom */
   var controllerchange: Event
   
-  var message: MessageEvent[js.Any]
+  /* standard dom */
+  var message: MessageEvent[Any]
   
-  var messageerror: MessageEvent[js.Any]
+  /* standard dom */
+  var messageerror: MessageEvent[Any]
 }
 object ServiceWorkerContainerEventMap {
   
-  inline def apply(controllerchange: Event, message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): ServiceWorkerContainerEventMap = {
+  inline def apply(controllerchange: Event, message: MessageEvent[Any], messageerror: MessageEvent[Any]): ServiceWorkerContainerEventMap = {
     val __obj = js.Dynamic.literal(controllerchange = controllerchange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerContainerEventMap]
   }
@@ -23,8 +26,8 @@ object ServiceWorkerContainerEventMap {
     
     inline def setControllerchange(value: Event): Self = StObject.set(x, "controllerchange", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    inline def setMessageerror(value: MessageEvent[Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ trait GetBatchPayoutResponse extends StObject {
   
   var batch_header: js.UndefOr[PayoutBatchHeader] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
   var items: js.UndefOr[js.Array[PayoutBatchItems]] = js.undefined
   
@@ -31,7 +31,7 @@ object GetBatchPayoutResponse {
     
     inline def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
@@ -39,13 +39,13 @@ object GetBatchPayoutResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PayoutBatchItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PayoutBatchItems*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
     

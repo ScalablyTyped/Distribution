@@ -20,12 +20,12 @@ trait Type extends StObject {
   /**
     * Converts `value` from a JNI value to a JavaScript value.
     */
-  var fromJni: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var fromJni: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   /**
     * Checks whether a given JavaScript `value` is compatible.
     */
-  def isCompatible(value: js.Any): Boolean
+  def isCompatible(value: Any): Boolean
   
   /**
     * VM type name. For example `I` for `int`.
@@ -35,7 +35,7 @@ trait Type extends StObject {
   /**
     * Reads a value from memory.
     */
-  var read: js.UndefOr[js.Function1[/* address */ NativePointerValue, js.Any]] = js.undefined
+  var read: js.UndefOr[js.Function1[/* address */ NativePointerValue, Any]] = js.undefined
   
   /**
     * Size in words.
@@ -45,7 +45,7 @@ trait Type extends StObject {
   /**
     * Converts `value` from a JavaScript value to a JNI value.
     */
-  var toJni: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var toJni: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   /**
     * Frida type name. For example `pointer` for a handle.
@@ -55,11 +55,11 @@ trait Type extends StObject {
   /**
     * Writes a value to memory.
     */
-  var write: js.UndefOr[js.Function2[/* address */ NativePointerValue, /* value */ js.Any, Unit]] = js.undefined
+  var write: js.UndefOr[js.Function2[/* address */ NativePointerValue, /* value */ Any, Unit]] = js.undefined
 }
 object Type {
   
-  inline def apply(byteSize: Double, isCompatible: js.Any => Boolean, name: String, size: Double, `type`: String): Type = {
+  inline def apply(byteSize: Double, isCompatible: Any => Boolean, name: String, size: Double, `type`: String): Type = {
     val __obj = js.Dynamic.literal(byteSize = byteSize.asInstanceOf[js.Any], isCompatible = js.Any.fromFunction1(isCompatible), name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
@@ -73,27 +73,27 @@ object Type {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setFromJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "fromJni", js.Any.fromFunction1(value))
+    inline def setFromJni(value: /* value */ Any => Any): Self = StObject.set(x, "fromJni", js.Any.fromFunction1(value))
     
     inline def setFromJniUndefined: Self = StObject.set(x, "fromJni", js.undefined)
     
-    inline def setIsCompatible(value: js.Any => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction1(value))
+    inline def setIsCompatible(value: Any => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction1(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setRead(value: /* address */ NativePointerValue => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* address */ NativePointerValue => Any): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setToJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toJni", js.Any.fromFunction1(value))
+    inline def setToJni(value: /* value */ Any => Any): Self = StObject.set(x, "toJni", js.Any.fromFunction1(value))
     
     inline def setToJniUndefined: Self = StObject.set(x, "toJni", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWrite(value: (/* address */ NativePointerValue, /* value */ js.Any) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+    inline def setWrite(value: (/* address */ NativePointerValue, /* value */ Any) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     
     inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }

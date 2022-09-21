@@ -20,7 +20,7 @@ object splitMod {
   
   @JSImport("react-ace/lib/split", JSImport.Default)
   @js.native
-  class default protected () extends SplitComponent {
+  open class default protected () extends SplitComponent {
     def this(props: ISplitEditorProps) = this()
   }
   /* static members */
@@ -45,15 +45,15 @@ object splitMod {
   trait IAceEditorClass
     extends StObject
        with Editor
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     @JSName("$options")
-    var $options: js.UndefOr[js.Any] = js.native
+    var $options: js.UndefOr[Any] = js.native
   }
   
   trait ISplitEditorProps
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var annotations: js.UndefOr[js.Array[js.Array[IAnnotation]]] = js.undefined
     
@@ -94,19 +94,19 @@ object splitMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.undefined
+    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ Any, Unit]] = js.undefined
     
     var onBlur: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onFocus: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
@@ -114,9 +114,9 @@ object splitMod {
     
     var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var orientation: js.UndefOr[String] = js.undefined
     
@@ -158,7 +158,7 @@ object splitMod {
       
       inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      inline def setAnnotationsVarargs(value: js.Array[IAnnotation]*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: js.Array[IAnnotation]*): Self = StObject.set(x, "annotations", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -168,7 +168,7 @@ object splitMod {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setCursorStart(value: Double): Self = StObject.set(x, "cursorStart", value.asInstanceOf[js.Any])
       
@@ -182,7 +182,7 @@ object splitMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setEditorProps(value: IEditorProps): Self = StObject.set(x, "editorProps", value.asInstanceOf[js.Any])
       
@@ -192,13 +192,13 @@ object splitMod {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
@@ -224,7 +224,7 @@ object splitMod {
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: js.Array[IMarker]*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: js.Array[IMarker]*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
@@ -242,7 +242,7 @@ object splitMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBeforeLoad(value: /* ace */ js.Any => Unit): Self = StObject.set(x, "onBeforeLoad", js.Any.fromFunction1(value))
+      inline def setOnBeforeLoad(value: /* ace */ Any => Unit): Self = StObject.set(x, "onBeforeLoad", js.Any.fromFunction1(value))
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
@@ -250,7 +250,7 @@ object splitMod {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -258,7 +258,7 @@ object splitMod {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
+      inline def setOnCursorChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
@@ -266,7 +266,7 @@ object splitMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: /* event */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -282,9 +282,9 @@ object splitMod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
-      inline def setOnSelectionChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
+      inline def setOnSelectionChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -302,7 +302,7 @@ object splitMod {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: IAceOptions): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -334,7 +334,7 @@ object splitMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -348,8 +348,8 @@ object splitMod {
   
   @js.native
   trait SplitComponent
-    extends Component[ISplitEditorProps, Unit, js.Any]
-       with /* index */ StringDictionary[js.Any] {
+    extends Component[ISplitEditorProps, Unit, Any]
+       with /* index */ StringDictionary[Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MSplitComponent(): Unit = js.native
@@ -360,7 +360,7 @@ object splitMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSplitComponent(): Unit = js.native
     
-    def debounce(fn: js.Any, delay: Double): js.Function1[/* args */ js.Any, Unit] = js.native
+    def debounce(fn: Any, delay: Double): js.Function1[/* args */ Any, Unit] = js.native
     
     var editor: IAceEditorClass = js.native
     
@@ -370,23 +370,23 @@ object splitMod {
     
     def isInShadow(node: HTMLElement): Boolean = js.native
     
-    def onBlur(event: js.Any): Unit = js.native
+    def onBlur(event: Any): Unit = js.native
     
-    def onChange(event: js.Any): Unit = js.native
+    def onChange(event: Any): Unit = js.native
     
     def onCopy(text: String): Unit = js.native
     
-    def onCursorChange(event: js.Any): Unit = js.native
+    def onCursorChange(event: Any): Unit = js.native
     
-    def onFocus(event: js.Any): Unit = js.native
+    def onFocus(event: Any): Unit = js.native
     
-    def onInput(event: js.Any): Unit = js.native
+    def onInput(event: Any): Unit = js.native
     
     def onPaste(text: String): Unit = js.native
     
     def onScroll(): Unit = js.native
     
-    def onSelectionChange(event: js.Any): Unit = js.native
+    def onSelectionChange(event: Any): Unit = js.native
     
     var refEditor: HTMLElement = js.native
     

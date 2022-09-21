@@ -10,10 +10,10 @@ Adds an extender to Knockout to add paging functionality to observable arrays.
 | ------------------ | :-------------: |
 | Full name          | knockout-paging |
 | Keywords           | knockout, foreach, paging, initialize, javascript |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 837 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 427.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/ErikSchierboom/knockout-paging)

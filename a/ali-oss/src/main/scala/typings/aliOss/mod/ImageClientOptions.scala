@@ -6,24 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageClientOptions extends StObject {
   
-  // your image service domain that binding to a OSS bucket
+  /** access key you create on aliyun console website */
   var accessKeyId: String
   
-  // access key you create on aliyun console website
+  /** access secret you create */
   var accessKeySecret: String
   
-  // access secret you create
+  /** the default bucket you want to access If you don't have any bucket, please use putBucket() create one first. */
   var bucket: String
   
+  /** your image service domain that binding to a OSS bucket */
   var imageHost: String
   
-  // the bucket data region location, please see Data Regions, default is oss-cn-hangzhou
+  /** access OSS with aliyun internal network or not, default is false If your servers are running on aliyun too, you can set true to save lot of money. */
   var internal: js.UndefOr[Boolean] = js.undefined
   
-  //  the default bucket you want to access If you don't have any bucket, please use putBucket() create one first.
+  /** the bucket data region location, please see Data Regions, default is oss-cn-hangzhou */
   var region: js.UndefOr[String] = js.undefined
   
-  // access OSS with aliyun internal network or not, default is false If your servers are running on aliyun too, you can set true to save lot of money.
+  /** instance level timeout for all operations, default is 60s */
   var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object ImageClientOptions {

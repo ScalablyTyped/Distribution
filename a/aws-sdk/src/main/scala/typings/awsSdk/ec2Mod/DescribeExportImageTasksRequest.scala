@@ -48,13 +48,13 @@ object DescribeExportImageTasksRequest {
     
     inline def setExportImageTaskIdsUndefined: Self = StObject.set(x, "ExportImageTaskIds", js.undefined)
     
-    inline def setExportImageTaskIdsVarargs(value: ExportImageTaskId*): Self = StObject.set(x, "ExportImageTaskIds", js.Array(value :_*))
+    inline def setExportImageTaskIdsVarargs(value: ExportImageTaskId*): Self = StObject.set(x, "ExportImageTaskIds", js.Array(value*))
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeExportImageTasksMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

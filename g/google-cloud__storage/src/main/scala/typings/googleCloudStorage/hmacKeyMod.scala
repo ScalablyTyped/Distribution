@@ -1,11 +1,10 @@
 package typings.googleCloudStorage
 
-import typings.googleCloudCommon.mod.ServiceObject
-import typings.googleCloudCommon.serviceObjectMod.Metadata
 import typings.googleCloudStorage.googleCloudStorageStrings.ACTIVE
 import typings.googleCloudStorage.googleCloudStorageStrings.INACTIVE
+import typings.googleCloudStorage.nodejsCommonMod.ServiceObject
+import typings.googleCloudStorage.serviceObjectMod.Metadata
 import typings.googleCloudStorage.storageMod.Storage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object hmacKeyMod {
   
   @JSImport("@google-cloud/storage/build/src/hmacKey", "HmacKey")
   @js.native
-  class HmacKey protected ()
+  open class HmacKey protected ()
     extends ServiceObject[js.UndefOr[HmacKeyMetadata]] {
     /**
       * @typedef {object} HmacKeyOptions
@@ -33,15 +32,27 @@ object hmacKeyMod {
       * @param {string} accessId The unique accessId for this HMAC key.
       * @param {HmacKeyOptions} options Constructor configurations.
       * @example
+      * ```
       * const {Storage} = require('@google-cloud/storage');
       * const storage = new Storage();
       * const hmacKey = storage.hmacKey('access-id');
+      * ```
       */
     def this(storage: Storage, accessId: String) = this()
     def this(storage: Storage, accessId: String, options: HmacKeyOptions) = this()
     
+    /* private */ var instanceRetryValue: Any = js.native
+    
     @JSName("metadata")
     var metadata_HmacKey: js.UndefOr[HmacKeyMetadata] = js.native
+    
+    /**
+      * A reference to the {@link Storage} associated with this {@link HmacKey}
+      * instance.
+      * @name HmacKey#storage
+      * @type {Storage}
+      */
+    var storage: Storage = js.native
   }
   
   trait HmacKeyMetadata extends StObject {
@@ -104,7 +115,7 @@ object hmacKeyMod {
   }
   
   type HmacKeyMetadataCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* metadata */ js.UndefOr[HmacKeyMetadata], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit

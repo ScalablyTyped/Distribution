@@ -10,12 +10,19 @@ object mediaListMod {
   
   @JSImport("react-bootstrap/lib/MediaList", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[MediaListProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[MediaListProps, js.Object, Any]
   
-  @js.native
-  trait MediaList
-    extends Component[MediaListProps, js.Object, js.Any]
+  type MediaList = Component[MediaListProps, js.Object, Any]
   
-  type MediaListProps = HTMLProps[MediaList]
+  trait MediaListProps
+    extends StObject
+       with HTMLProps[MediaList]
+  object MediaListProps {
+    
+    inline def apply(): MediaListProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MediaListProps]
+    }
+  }
 }

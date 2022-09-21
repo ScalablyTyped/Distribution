@@ -21,7 +21,7 @@ object emailMod {
     
     def addHeader(name: String, value: String): Unit
     
-    def pipe(stream: js.Any): Unit
+    def pipe(stream: Any): Unit
     
     def setMessageOption(from: String, to: String, body: String, html: String): Unit
     
@@ -37,7 +37,7 @@ object emailMod {
       
       inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
       
-      inline def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+      inline def setPipe(value: Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
       
       inline def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
       
@@ -48,7 +48,7 @@ object emailMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("meteor/email", "MailComposer")
   @js.native
-  class MailComposerCls protected ()
+  open class MailComposerCls protected ()
     extends StObject
        with typings.meteorTypings.emailMod.MailComposer {
     def this(options: typings.meteorTypings.emailMod.MailComposerOptions) = this()
@@ -57,7 +57,7 @@ object emailMod {
     override def addHeader(name: String, value: String): Unit = js.native
     
     /* CompleteClass */
-    override def pipe(stream: js.Any): Unit = js.native
+    override def pipe(stream: Any): Unit = js.native
     
     /* CompleteClass */
     override def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native

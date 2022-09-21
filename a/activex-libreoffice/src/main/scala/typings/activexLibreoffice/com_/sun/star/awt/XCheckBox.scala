@@ -49,7 +49,7 @@ object XCheckBox {
     addItemListener: XItemListener => Unit,
     enableTriState: Boolean => Unit,
     getState: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeItemListener: XItemListener => Unit,
     setLabel: String => Unit,

@@ -11,15 +11,15 @@ object types {
     
     // Methods
     def clear(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any
     @JSName("clear")
     var clear_Original: SinonChromeStub
     
     // Methods
     def get(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any
     @JSName("get")
     var get_Original: SinonChromeStub
     
@@ -27,8 +27,8 @@ object types {
     
     // Methods
     def set(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any
     @JSName("set")
     var set_Original: SinonChromeStub
   }

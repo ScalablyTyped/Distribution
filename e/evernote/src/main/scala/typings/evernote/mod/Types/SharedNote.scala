@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.SharedNote")
 @js.native
-class SharedNote () extends StObject {
+open class SharedNote () extends StObject {
   def this(args: RecipientIdentity) = this()
   
   var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.native

@@ -28,7 +28,7 @@ object ListCreativeStatusBreakdownByCreativeResponse {
     
     inline def setFilteredBidCreativeRowsUndefined: Self = StObject.set(x, "filteredBidCreativeRows", js.undefined)
     
-    inline def setFilteredBidCreativeRowsVarargs(value: FilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value :_*))
+    inline def setFilteredBidCreativeRowsVarargs(value: FilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

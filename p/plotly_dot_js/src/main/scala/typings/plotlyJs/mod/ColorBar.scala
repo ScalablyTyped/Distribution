@@ -66,7 +66,7 @@ trait ColorBar extends StObject {
   
   var tick0: Double | String
   
-  var tickangle: Double
+  var tickangle: auto | Double
   
   var tickcolor: Color
   
@@ -88,11 +88,11 @@ trait ColorBar extends StObject {
   
   var ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
-  var ticktextsrc: js.Any
+  var ticktextsrc: Any
   
   var tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
-  var tickvalssrc: js.Any
+  var tickvalssrc: Any
   
   var tickwidth: Double
   
@@ -135,7 +135,7 @@ object ColorBar {
     thickness: Double,
     thicknessmode: fraction | pixels,
     tick0: Double | String,
-    tickangle: Double,
+    tickangle: auto | Double,
     tickcolor: Color,
     tickfont: Font,
     tickformat: String,
@@ -146,9 +146,9 @@ object ColorBar {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
-    ticktextsrc: js.Any,
+    ticktextsrc: Any,
     tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
-    tickvalssrc: js.Any,
+    tickvalssrc: Any,
     tickwidth: Double,
     title: String,
     titlefont: Font,
@@ -168,15 +168,15 @@ object ColorBar {
     
     inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setBordercolor(value: Color): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
-    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value :_*))
+    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value*))
     
     inline def setBorderwidth(value: Color): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    inline def setBorderwidthVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "borderwidth", js.Array(value :_*))
+    inline def setBorderwidthVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "borderwidth", js.Array(value*))
     
     inline def setDtick(value: DTickValue): Self = StObject.set(x, "dtick", value.asInstanceOf[js.Any])
     
@@ -190,7 +190,7 @@ object ColorBar {
     
     inline def setOutlinecolor(value: Color): Self = StObject.set(x, "outlinecolor", value.asInstanceOf[js.Any])
     
-    inline def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value :_*))
+    inline def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value*))
     
     inline def setOutlinewidth(value: Double): Self = StObject.set(x, "outlinewidth", value.asInstanceOf[js.Any])
     
@@ -210,11 +210,11 @@ object ColorBar {
     
     inline def setTick0(value: Double | String): Self = StObject.set(x, "tick0", value.asInstanceOf[js.Any])
     
-    inline def setTickangle(value: Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
+    inline def setTickangle(value: auto | Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
     
     inline def setTickcolor(value: Color): Self = StObject.set(x, "tickcolor", value.asInstanceOf[js.Any])
     
-    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
+    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
     inline def setTickfont(value: Font): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
@@ -222,7 +222,7 @@ object ColorBar {
     
     inline def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
     
-    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value :_*))
+    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
@@ -236,15 +236,15 @@ object ColorBar {
     
     inline def setTicktext(value: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray): Self = StObject.set(x, "ticktext", value.asInstanceOf[js.Any])
     
-    inline def setTicktextVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
+    inline def setTicktextVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "ticktext", js.Array(value*))
     
-    inline def setTicktextsrc(value: js.Any): Self = StObject.set(x, "ticktextsrc", value.asInstanceOf[js.Any])
+    inline def setTicktextsrc(value: Any): Self = StObject.set(x, "ticktextsrc", value.asInstanceOf[js.Any])
     
     inline def setTickvals(value: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
-    inline def setTickvalsVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "tickvals", js.Array(value :_*))
+    inline def setTickvalsVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "tickvals", js.Array(value*))
     
-    inline def setTickvalssrc(value: js.Any): Self = StObject.set(x, "tickvalssrc", value.asInstanceOf[js.Any])
+    inline def setTickvalssrc(value: Any): Self = StObject.set(x, "tickvalssrc", value.asInstanceOf[js.Any])
     
     inline def setTickwidth(value: Double): Self = StObject.set(x, "tickwidth", value.asInstanceOf[js.Any])
     

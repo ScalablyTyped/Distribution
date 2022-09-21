@@ -40,16 +40,9 @@ trait Game extends StObject {
     * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
     * @param id The unique identifier.
     * @returns an object instance or null if it cannot be found.
-    * @deprecated Use Id<T>, instead of strings, to increase type safety
     */
-  // tslint:disable-next-line:unified-signatures
-  def getObjectById[T](id: String): T | Null = js.native
-  /**
-    * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
-    * @param id The unique identifier.
-    * @returns an object instance or null if it cannot be found.
-    */
-  def getObjectById[T](id: Id[T]): T | Null = js.native
+  def getObjectById[T /* <: Id[HasId] */](id: T): fromId[T] | Null = js.native
+  def getObjectById[T /* <: HasId */](id: Id[T]): T | Null = js.native
   
   /**
     * Your clobal Power Level
@@ -87,7 +80,7 @@ trait Game extends StObject {
   /**
     * An object with your global resources that are bound to the account, like pixels or cpu unlocks. Each object key is a resource constant, values are resources amounts.
     */
-  var resources: StringDictionary[js.Any] = js.native
+  var resources: StringDictionary[Any] = js.native
   
   /**
     * A hash containing all the rooms available to you with room names as hash keys.

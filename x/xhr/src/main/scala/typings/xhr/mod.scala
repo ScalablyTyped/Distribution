@@ -2,12 +2,12 @@ package typings.xhr
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.XMLHttpRequest
 import typings.xhr.xhrStrings.DELETE
 import typings.xhr.xhrStrings.GET
 import typings.xhr.xhrStrings.HEAD
 import typings.xhr.xhrStrings.OPTIONS
+import typings.xhr.xhrStrings.PATCH
 import typings.xhr.xhrStrings.POST
 import typings.xhr.xhrStrings.PUT
 import typings.xhr.xhrStrings._empty
@@ -30,13 +30,13 @@ object mod extends Shortcut {
     
     var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ XMLHttpRequest, Unit]] = js.undefined
     
-    var body: js.UndefOr[String | js.Any] = js.undefined
+    var body: js.UndefOr[String | Any] = js.undefined
     
     var headers: js.UndefOr[XhrHeaders] = js.undefined
     
     var json: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.undefined
+    var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT | PATCH] = js.undefined
     
     var password: js.UndefOr[String] = js.undefined
     
@@ -67,7 +67,7 @@ object mod extends Shortcut {
       
       inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
-      inline def setBody(value: String | js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -79,7 +79,7 @@ object mod extends Shortcut {
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setMethod(value: DELETE | GET | HEAD | OPTIONS | POST | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: DELETE | GET | HEAD | OPTIONS | POST | PUT | PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
@@ -117,17 +117,17 @@ object mod extends Shortcut {
     }
   }
   
-  type XhrCallback = js.Function3[/* error */ Error, /* response */ XhrResponse, /* body */ js.Any, Unit]
+  type XhrCallback = js.Function3[/* error */ js.Error, /* response */ XhrResponse, /* body */ Any, Unit]
   
   type XhrHeaders = StringDictionary[String]
   
   @js.native
   trait XhrInstance extends StObject {
     
-    def apply(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def apply(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def apply(url: String, callback: XhrCallback): js.Any = js.native
-    def apply(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def apply(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def apply(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def apply(url: String, callback: XhrCallback): Any = js.native
+    def apply(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
   }
   
   trait XhrResponse extends StObject {
@@ -179,45 +179,45 @@ object mod extends Shortcut {
     extends StObject
        with XhrInstance {
     
-    def del(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def del(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def del(url: String, callback: XhrCallback): js.Any = js.native
-    def del(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def del(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def del(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def del(url: String, callback: XhrCallback): Any = js.native
+    def del(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("del")
     var del_Original: XhrInstance = js.native
     
-    def get(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def get(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def get(url: String, callback: XhrCallback): js.Any = js.native
-    def get(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def get(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def get(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def get(url: String, callback: XhrCallback): Any = js.native
+    def get(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("get")
     var get_Original: XhrInstance = js.native
     
-    def head(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def head(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def head(url: String, callback: XhrCallback): js.Any = js.native
-    def head(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def head(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def head(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def head(url: String, callback: XhrCallback): Any = js.native
+    def head(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("head")
     var head_Original: XhrInstance = js.native
     
-    def patch(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def patch(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def patch(url: String, callback: XhrCallback): js.Any = js.native
-    def patch(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def patch(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def patch(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def patch(url: String, callback: XhrCallback): Any = js.native
+    def patch(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("patch")
     var patch_Original: XhrInstance = js.native
     
-    def post(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def post(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def post(url: String, callback: XhrCallback): js.Any = js.native
-    def post(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def post(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def post(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def post(url: String, callback: XhrCallback): Any = js.native
+    def post(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("post")
     var post_Original: XhrInstance = js.native
     
-    def put(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
-    def put(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
-    def put(url: String, callback: XhrCallback): js.Any = js.native
-    def put(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
+    def put(options: XhrUriConfig, callback: XhrCallback): Any = js.native
+    def put(options: XhrUrlConfig, callback: XhrCallback): Any = js.native
+    def put(url: String, callback: XhrCallback): Any = js.native
+    def put(url: String, options: XhrBaseConfig, callback: XhrCallback): Any = js.native
     @JSName("put")
     var put_Original: XhrInstance = js.native
   }

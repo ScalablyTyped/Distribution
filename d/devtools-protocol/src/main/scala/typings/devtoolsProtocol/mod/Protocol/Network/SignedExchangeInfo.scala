@@ -39,7 +39,7 @@ object SignedExchangeInfo {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SignedExchangeError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SignedExchangeError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setHeader(value: SignedExchangeHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

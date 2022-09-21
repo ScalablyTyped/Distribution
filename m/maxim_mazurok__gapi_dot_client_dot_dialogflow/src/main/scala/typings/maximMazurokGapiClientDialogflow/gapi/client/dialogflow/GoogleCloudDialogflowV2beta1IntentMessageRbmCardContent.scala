@@ -39,7 +39,7 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent {
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    inline def setSuggestionsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

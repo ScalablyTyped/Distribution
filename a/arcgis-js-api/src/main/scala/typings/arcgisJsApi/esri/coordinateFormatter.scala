@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Converts between [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) and formatted coordinates notation strings such as:.
+  * Converts between [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) and formatted coordinates notation strings such as:
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html)
   */
@@ -35,16 +35,11 @@ trait coordinateFormatter extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#fromMgrs)
     */
-  @JSName("fromMgrs")
-  def fromMgrs_automatic(coordinates: String, spatialReference: SpatialReference, conversionMode: automatic): Point = js.native
-  @JSName("fromMgrs")
-  def fromMgrs_new180inzone01(coordinates: String, spatialReference: SpatialReference, conversionMode: `new-180-in-zone-01`): Point = js.native
-  @JSName("fromMgrs")
-  def fromMgrs_new180inzone60(coordinates: String, spatialReference: SpatialReference, conversionMode: `new-180-in-zone-60`): Point = js.native
-  @JSName("fromMgrs")
-  def fromMgrs_old180inzone01(coordinates: String, spatialReference: SpatialReference, conversionMode: `old-180-in-zone-01`): Point = js.native
-  @JSName("fromMgrs")
-  def fromMgrs_old180inzone60(coordinates: String, spatialReference: SpatialReference, conversionMode: `old-180-in-zone-60`): Point = js.native
+  def fromMgrs(
+    coordinates: String,
+    spatialReference: SpatialReference,
+    conversionMode: automatic | `new-180-in-zone-01` | `new-180-in-zone-60` | `old-180-in-zone-01` | `old-180-in-zone-60`
+  ): Point = js.native
   
   /**
     * Parses coordinates in United States National Grid (USNG) notation, and returns a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing that location.
@@ -59,14 +54,11 @@ trait coordinateFormatter extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#fromUtm)
     */
-  @JSName("fromUtm")
-  def fromUtm_latitudebandindicators(
+  def fromUtm(
     coordinates: String,
     spatialReference: SpatialReference,
-    conversionMode: `latitude-band-indicators`
+    conversionMode: `latitude-band-indicators` | `north-south-indicators`
   ): Point = js.native
-  @JSName("fromUtm")
-  def fromUtm_northsouthindicators(coordinates: String, spatialReference: SpatialReference, conversionMode: `north-south-indicators`): Point = js.native
   
   /**
     * Indicates if all dependencies of this module have been loaded.
@@ -87,71 +79,42 @@ trait coordinateFormatter extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#load)
     */
-  def load(): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
   
   /**
     * Returns formatted coordinates in latitude/longitude notation representing the given point's location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toLatitudeLongitude)
     */
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_dd(point: Point, format: dd): String = js.native
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_dd(point: Point, format: dd, decimalPlaces: Double): String = js.native
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_ddm(point: Point, format: ddm): String = js.native
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_ddm(point: Point, format: ddm, decimalPlaces: Double): String = js.native
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_dms(point: Point, format: dms): String = js.native
-  @JSName("toLatitudeLongitude")
-  def toLatitudeLongitude_dms(point: Point, format: dms, decimalPlaces: Double): String = js.native
+  def toLatitudeLongitude(point: Point, format: dd | ddm | dms): String = js.native
+  def toLatitudeLongitude(point: Point, format: dd | ddm | dms, decimalPlaces: Double): String = js.native
   
   /**
     * Returns formatted coordinates in Military Grid Reference System (MGRS) notation representing the given point's location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toMgrs)
     */
-  @JSName("toMgrs")
-  def toMgrs_automatic(point: Point, conversionMode: automatic): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Unit, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Unit, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Unit, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Unit, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
-  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Unit, addSpaces: Boolean): String = js.native
+  def toMgrs(
+    point: Point,
+    conversionMode: automatic | `new-180-in-zone-01` | `new-180-in-zone-60` | `old-180-in-zone-01` | `old-180-in-zone-60`
+  ): String = js.native
+  def toMgrs(
+    point: Point,
+    conversionMode: automatic | `new-180-in-zone-01` | `new-180-in-zone-60` | `old-180-in-zone-01` | `old-180-in-zone-60`,
+    precision: Double
+  ): String = js.native
+  def toMgrs(
+    point: Point,
+    conversionMode: automatic | `new-180-in-zone-01` | `new-180-in-zone-60` | `old-180-in-zone-01` | `old-180-in-zone-60`,
+    precision: Double,
+    addSpaces: Boolean
+  ): String = js.native
+  def toMgrs(
+    point: Point,
+    conversionMode: automatic | `new-180-in-zone-01` | `new-180-in-zone-60` | `old-180-in-zone-01` | `old-180-in-zone-60`,
+    precision: scala.Unit,
+    addSpaces: Boolean
+  ): String = js.native
   
   /**
     * Returns formatted coordinates in United States National Grid (USNG) notation representing the given point's location.
@@ -161,19 +124,17 @@ trait coordinateFormatter extends StObject {
   def toUsng(point: Point): String = js.native
   def toUsng(point: Point, precision: Double): String = js.native
   def toUsng(point: Point, precision: Double, addSpaces: Boolean): String = js.native
-  def toUsng(point: Point, precision: Unit, addSpaces: Boolean): String = js.native
+  def toUsng(point: Point, precision: scala.Unit, addSpaces: Boolean): String = js.native
   
   /**
     * Returns formatted coordinates in Universal Transverse Mercator (UTM) notation representing the given point's location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toUtm)
     */
-  @JSName("toUtm")
-  def toUtm_latitudebandindicators(point: Point, conversionMode: `latitude-band-indicators`): String = js.native
-  @JSName("toUtm")
-  def toUtm_latitudebandindicators(point: Point, conversionMode: `latitude-band-indicators`, addSpaces: Boolean): String = js.native
-  @JSName("toUtm")
-  def toUtm_northsouthindicators(point: Point, conversionMode: `north-south-indicators`): String = js.native
-  @JSName("toUtm")
-  def toUtm_northsouthindicators(point: Point, conversionMode: `north-south-indicators`, addSpaces: Boolean): String = js.native
+  def toUtm(point: Point, conversionMode: `latitude-band-indicators` | `north-south-indicators`): String = js.native
+  def toUtm(
+    point: Point,
+    conversionMode: `latitude-band-indicators` | `north-south-indicators`,
+    addSpaces: Boolean
+  ): String = js.native
 }

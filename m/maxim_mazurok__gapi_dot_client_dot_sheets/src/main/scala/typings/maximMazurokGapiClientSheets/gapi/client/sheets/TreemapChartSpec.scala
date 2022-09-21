@@ -20,7 +20,7 @@ trait TreemapChartSpec extends StObject {
     */
   var colorScale: js.UndefOr[TreemapChartColorScale] = js.undefined
   
-  /** The background color for header cells. */
+  /** The background color for header cells. Deprecated: Use header_color_style. */
   var headerColor: js.UndefOr[Color] = js.undefined
   
   /** The background color for header cells. If header_color is also set, this field takes precedence. */
@@ -62,7 +62,7 @@ trait TreemapChartSpec extends StObject {
     */
   var sizeData: js.UndefOr[ChartData] = js.undefined
   
-  /** The text format for all labels on the chart. */
+  /** The text format for all labels on the chart. The link field is not supported. */
   var textFormat: js.UndefOr[TextFormat] = js.undefined
 }
 object TreemapChartSpec {

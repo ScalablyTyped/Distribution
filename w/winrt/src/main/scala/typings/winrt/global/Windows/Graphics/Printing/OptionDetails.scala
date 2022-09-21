@@ -15,7 +15,7 @@ object OptionDetails {
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails")
   @js.native
-  class PrintBindingOptionDetails ()
+  open class PrintBindingOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails {
     
@@ -23,7 +23,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -35,15 +35,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails")
   @js.native
-  class PrintCollationOptionDetails ()
+  open class PrintCollationOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails {
     
@@ -51,7 +51,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -63,15 +63,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails")
   @js.native
-  class PrintColorModeOptionDetails ()
+  open class PrintColorModeOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails {
     
@@ -79,7 +79,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -91,15 +91,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails")
   @js.native
-  class PrintCopiesOptionDetails ()
+  open class PrintCopiesOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails {
     
@@ -122,15 +122,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails")
   @js.native
-  class PrintCustomItemDetails ()
+  open class PrintCustomItemDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails {
     
@@ -143,7 +143,7 @@ object OptionDetails {
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails")
   @js.native
-  class PrintCustomItemListOptionDetails ()
+  open class PrintCustomItemListOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails {
     
@@ -157,7 +157,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -169,15 +169,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails")
   @js.native
-  class PrintCustomTextOptionDetails ()
+  open class PrintCustomTextOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails {
     
@@ -200,15 +200,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails")
   @js.native
-  class PrintDuplexOptionDetails ()
+  open class PrintDuplexOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails {
     
@@ -216,7 +216,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -228,15 +228,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails")
   @js.native
-  class PrintHolePunchOptionDetails ()
+  open class PrintHolePunchOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails {
     
@@ -244,7 +244,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -256,15 +256,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails")
   @js.native
-  class PrintMediaSizeOptionDetails ()
+  open class PrintMediaSizeOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails {
     
@@ -272,7 +272,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -284,15 +284,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails")
   @js.native
-  class PrintMediaTypeOptionDetails ()
+  open class PrintMediaTypeOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails {
     
@@ -300,7 +300,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -312,10 +312,10 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintOptionStates")
@@ -350,7 +350,7 @@ object OptionDetails {
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails")
   @js.native
-  class PrintOrientationOptionDetails ()
+  open class PrintOrientationOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails {
     
@@ -358,7 +358,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -370,15 +370,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails")
   @js.native
-  class PrintQualityOptionDetails ()
+  open class PrintQualityOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails {
     
@@ -386,7 +386,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -398,15 +398,15 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails")
   @js.native
-  class PrintStapleOptionDetails ()
+  open class PrintStapleOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails {
     
@@ -414,7 +414,7 @@ object OptionDetails {
     var errorText: String = js.native
     
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /* CompleteClass */
     var optionId: String = js.native
@@ -426,25 +426,25 @@ object OptionDetails {
     var state: PrintOptionStates = js.native
     
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs")
   @js.native
-  class PrintTaskOptionChangedEventArgs ()
+  open class PrintTaskOptionChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs {
     
     /* CompleteClass */
-    var optionId: js.Any = js.native
+    var optionId: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
   @js.native
-  class PrintTaskOptionDetails ()
+  open class PrintTaskOptionDetails ()
     extends StObject
        with typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails {
     
@@ -461,10 +461,10 @@ object OptionDetails {
     override def getPageDescription(jobPageNumber: Double): PrintPageDescription = js.native
     
     /* CompleteClass */
-    var onbeginvalidation: js.Any = js.native
+    var onbeginvalidation: Any = js.native
     
     /* CompleteClass */
-    var onoptionchanged: js.Any = js.native
+    var onoptionchanged: Any = js.native
     
     /* CompleteClass */
     var options: IMapView[String, IPrintOptionDetails] = js.native

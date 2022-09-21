@@ -11,9 +11,9 @@ A library to generate ASCII boxes via NodeJS
 | Full name          | cli-box |
 | Keywords           | cli, box, ascii, node |
 | # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 314143 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9677.333333333334 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/node-cli-box)

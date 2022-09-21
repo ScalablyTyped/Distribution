@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("consul", "Watch")
 @js.native
-class WatchCls protected ()
+open class WatchCls protected ()
   extends StObject
      with Watch {
   def this(consul: Consul, opts: Options) = this()

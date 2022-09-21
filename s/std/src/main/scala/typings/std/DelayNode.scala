@@ -10,5 +10,6 @@ trait DelayNode
   extends StObject
      with AudioNode {
   
+  /* standard dom */
   val delayTime: AudioParam = js.native
 }

@@ -1,31 +1,37 @@
 package typings.peculiarAsn1Schema
 
-import typings.std.ArrayBuffer
+import typings.asn1js.mod.AsnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/asn1-schema/build/types/serializer", JSImport.Namespace)
-@js.native
-object serializerMod extends js.Object {
-  @js.native
-  class AsnSerializer () extends js.Object
+object serializerMod {
   
-  /* static members */
+  @JSImport("@peculiar/asn1-schema/build/types/serializer", "AsnSerializer")
   @js.native
-  object AsnSerializer extends js.Object {
-    var toAsnItem: js.Any = js.native
+  open class AsnSerializer () extends StObject
+  /* static members */
+  object AsnSerializer {
+    
+    @JSImport("@peculiar/asn1-schema/build/types/serializer", "AsnSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Serializes an object to the ASN.1 encoded buffer
       * @param obj The object to serialize
       */
-    def serialize(obj: js.Any): ArrayBuffer = js.native
+    inline def serialize(obj: Any): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
+    
     /**
       * Serialize an object to the asn1js object
       * @param obj The object to serialize
       */
-    def toASN(obj: js.Any): js.Any = js.native
+    inline def toASN(obj: Any): AsnType = ^.asInstanceOf[js.Dynamic].applyDynamic("toASN")(obj.asInstanceOf[js.Any]).asInstanceOf[AsnType]
+    
+    @JSImport("@peculiar/asn1-schema/build/types/serializer", "AsnSerializer.toAsnItem")
+    @js.native
+    def toAsnItem: Any = js.native
+    inline def toAsnItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toAsnItem")(x.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -31,7 +31,7 @@ object GoogleDomainsDns {
     
     inline def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
     
-    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
+    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value*))
     
     inline def setDsState(value: String): Self = StObject.set(x, "dsState", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object GoogleDomainsDns {
     
     inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value*))
   }
 }

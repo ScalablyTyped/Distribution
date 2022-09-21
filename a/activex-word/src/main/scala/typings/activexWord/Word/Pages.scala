@@ -14,7 +14,7 @@ trait Pages extends StObject {
   
   def Item(Index: Double): Page
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Pages_typekey")
   var WordDotPages_typekey: Pages
@@ -26,7 +26,7 @@ object Pages {
     Count: Double,
     Creator: Double,
     Item: Double => Page,
-    Parent: js.Any,
+    Parent: Any,
     WordDotPages_typekey: Pages
   ): Pages = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Pages {
     
     inline def setItem(value: Double => Page): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotPages_typekey(value: Pages): Self = StObject.set(x, "Word.Pages_typekey", value.asInstanceOf[js.Any])
   }

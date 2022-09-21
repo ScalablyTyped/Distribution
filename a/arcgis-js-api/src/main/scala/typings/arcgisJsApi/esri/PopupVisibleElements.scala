@@ -18,7 +18,7 @@ trait PopupVisibleElements
   var closeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to the feature navigation will be displayed.
+    * Indicates whether pagination for feature navigation will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
     */

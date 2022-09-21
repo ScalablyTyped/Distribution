@@ -12,7 +12,7 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var headers: StringDictionary[String]
     
@@ -22,14 +22,14 @@ object anon {
   }
   object Data {
     
-    inline def apply(data: js.Any, headers: StringDictionary[String], status: Double, url: String): Data = {
+    inline def apply(data: Any, headers: StringDictionary[String], status: Double, url: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

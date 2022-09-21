@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSpyCall[TArgs /* <: js.Array[js.Any] */, TReturnValue]
+trait SinonSpyCall[TArgs /* <: js.Array[Any] */, TReturnValue]
   extends StObject
      with SinonSpyCallApi[TArgs, TReturnValue] {
   
@@ -19,29 +19,29 @@ trait SinonSpyCall[TArgs /* <: js.Array[js.Any] */, TReturnValue]
     * Returns true if the spy call occurred after another spy call.
     * @param call
     */
-  def calledAfter(call: SinonSpyCall[js.Any, js.Any]): Boolean = js.native
+  def calledAfter(call: SinonSpyCall[Any, Any]): Boolean = js.native
   
   /**
     * Returns true if the spy call occurred before another spy call.
     * @param call
     *
     */
-  def calledBefore(call: SinonSpyCall[js.Any, js.Any]): Boolean = js.native
+  def calledBefore(call: SinonSpyCall[Any, Any]): Boolean = js.native
   
   /**
     * Exception thrown, if any.
     */
-  var exception: js.Any = js.native
+  var exception: Any = js.native
   
   /**
     * This property is a convenience for the first argument of the call.
     */
-  var firstArg: js.Any = js.native
+  var firstArg: Any = js.native
   
   /**
     * This property is a convenience for the last argument of the call.
     */
-  var lastArg: js.Any = js.native
+  var lastArg: Any = js.native
   
   /**
     * Return value.
@@ -51,5 +51,5 @@ trait SinonSpyCall[TArgs /* <: js.Array[js.Any] */, TReturnValue]
   /**
     * The call’s this value.
     */
-  var thisValue: js.Any = js.native
+  var thisValue: Any = js.native
 }

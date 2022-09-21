@@ -10,11 +10,11 @@ trait ISearchProvider extends StObject {
   
   var extFilter: Boolean
   
-  var fieldMap: js.Any
+  var fieldMap: Any
 }
 object ISearchProvider {
   
-  inline def apply(evalFilter: () => Unit, extFilter: Boolean, fieldMap: js.Any): ISearchProvider = {
+  inline def apply(evalFilter: () => Unit, extFilter: Boolean, fieldMap: Any): ISearchProvider = {
     val __obj = js.Dynamic.literal(evalFilter = js.Any.fromFunction0(evalFilter), extFilter = extFilter.asInstanceOf[js.Any], fieldMap = fieldMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchProvider]
   }
@@ -25,6 +25,6 @@ object ISearchProvider {
     
     inline def setExtFilter(value: Boolean): Self = StObject.set(x, "extFilter", value.asInstanceOf[js.Any])
     
-    inline def setFieldMap(value: js.Any): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
+    inline def setFieldMap(value: Any): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,9 @@ Convert a string to title case.
 | Full name          | to-title-case |
 | Keywords           | title, case, titlecase, string |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 737192 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 75964.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/ianstormtaylor/to-title-case)

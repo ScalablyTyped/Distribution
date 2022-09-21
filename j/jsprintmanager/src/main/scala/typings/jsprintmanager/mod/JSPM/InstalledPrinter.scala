@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.InstalledPrinter")
 @js.native
-class InstalledPrinter protected ()
+open class InstalledPrinter protected ()
   extends StObject
      with IClientPrinter {
   def this(printerName: String) = this()
@@ -19,19 +19,19 @@ class InstalledPrinter protected ()
   def this(printerName: String, printToDefaultIfNotFound: Unit, trayName: Unit, paperName: String) = this()
   
   /* CompleteClass */
-  var Id: js.Any = js.native
+  var Id: Any = js.native
   @JSName("Id")
   var Id_InstalledPrinter: String = js.native
   
-  /* private */ var _name: js.Any = js.native
+  /* private */ var _name: Any = js.native
   
-  /* private */ var _paper: js.Any = js.native
+  /* private */ var _paper: Any = js.native
   
-  /* private */ var _printDefault: js.Any = js.native
+  /* private */ var _printDefault: Any = js.native
   
-  /* private */ var _tray: js.Any = js.native
+  /* private */ var _tray: Any = js.native
   
-  /* private */ def bool2str(value: js.Any, true_val: js.Any, false_val: js.Any): js.Any = js.native
+  /* private */ def bool2str(value: Any, true_val: Any, false_val: Any): Any = js.native
   
   var paperName: String = js.native
   
@@ -40,7 +40,7 @@ class InstalledPrinter protected ()
   var printerName: String = js.native
   
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
   
   var trayName: String = js.native
 }

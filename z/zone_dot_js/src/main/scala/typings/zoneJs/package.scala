@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Patch Function to allow user define their own monkey patch module.
   */
-type PatchFn = js.Function3[
-/* global */ typings.std.Window, 
-/* Zone */ typings.zoneJs.ZoneType, 
-/* api */ typings.zoneJs.ZonePrivate, 
-scala.Unit]
+type PatchFn = js.Function3[/* global */ Window, /* Zone */ ZoneType, /* api */ ZonePrivate, Unit]

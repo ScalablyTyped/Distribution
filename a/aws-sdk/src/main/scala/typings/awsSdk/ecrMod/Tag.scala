@@ -12,7 +12,7 @@ trait Tag extends StObject {
   var Key: js.UndefOr[TagKey] = js.undefined
   
   /**
-    * The optional part of a key-value pair that make up a tag. A value acts as a descriptor within a tag category (key).
+    * A value acts as a descriptor within a tag category (key).
     */
   var Value: js.UndefOr[TagValue] = js.undefined
 }

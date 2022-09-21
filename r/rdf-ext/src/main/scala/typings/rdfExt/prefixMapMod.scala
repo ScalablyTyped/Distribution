@@ -1,9 +1,9 @@
 package typings.rdfExt
 
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.NamedNode
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Stream
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.NamedNode
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.streamMod.Stream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object prefixMapMod {
   
   @JSImport("rdf-ext/lib/PrefixMap", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PrefixMap {
     def this(factory: DataFactory[Quad, Quad], prefixes: Prefixes) = this()

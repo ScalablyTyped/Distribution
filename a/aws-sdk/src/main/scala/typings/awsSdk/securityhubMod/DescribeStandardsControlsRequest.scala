@@ -17,7 +17,7 @@ trait DescribeStandardsControlsRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
   
   /**
-    * The ARN of a resource that represents your subscription to a supported standard.
+    * The ARN of a resource that represents your subscription to a supported standard. To get the subscription ARNs of the standards you have enabled, use the GetEnabledStandards operation.
     */
   var StandardsSubscriptionArn: NonEmptyString
 }

@@ -6,33 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the chart that raised the activated event.
   *
-  * Provides information about the chart that raised the Activated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ChartActivatedEventArgs extends StObject {
   
   /**
+    * Gets the ID of the chart that is activated.
     *
-    * Gets the id of the chart that is activated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var chartId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var `type`: ChartActivated
   
   /**
+    * Gets the ID of the worksheet in which the chart is activated.
     *
-    * Gets the id of the worksheet in which the chart is activated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var worksheetId: String

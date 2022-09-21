@@ -11,21 +11,21 @@ trait HostConfig extends StObject {
   
   var Binds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var BlkioDeviceReadBps: js.UndefOr[js.Any] = js.undefined
+  var BlkioDeviceReadBps: js.UndefOr[Any] = js.undefined
   
-  var BlkioDeviceReadIOps: js.UndefOr[js.Any] = js.undefined
+  var BlkioDeviceReadIOps: js.UndefOr[Any] = js.undefined
   
-  var BlkioDeviceWriteBps: js.UndefOr[js.Any] = js.undefined
+  var BlkioDeviceWriteBps: js.UndefOr[Any] = js.undefined
   
-  var BlkioDeviceWriteIOps: js.UndefOr[js.Any] = js.undefined
+  var BlkioDeviceWriteIOps: js.UndefOr[Any] = js.undefined
   
   var BlkioWeight: js.UndefOr[Double] = js.undefined
   
-  var BlkioWeightDevice: js.UndefOr[js.Any] = js.undefined
+  var BlkioWeightDevice: js.UndefOr[Any] = js.undefined
   
-  var CapAdd: js.UndefOr[js.Any] = js.undefined
+  var CapAdd: js.UndefOr[Any] = js.undefined
   
-  var CapDrop: js.UndefOr[js.Any] = js.undefined
+  var CapDrop: js.UndefOr[Any] = js.undefined
   
   var Cgroup: js.UndefOr[String] = js.undefined
   
@@ -35,9 +35,17 @@ trait HostConfig extends StObject {
   
   var ContainerIDFile: js.UndefOr[String] = js.undefined
   
+  var CpuCount: js.UndefOr[Double] = js.undefined
+  
+  var CpuPercent: js.UndefOr[Double] = js.undefined
+  
   var CpuPeriod: js.UndefOr[Double] = js.undefined
   
   var CpuQuota: js.UndefOr[Double] = js.undefined
+  
+  var CpuRealtimePeriod: js.UndefOr[Double] = js.undefined
+  
+  var CpuRealtimeRuntime: js.UndefOr[Double] = js.undefined
   
   var CpuShares: js.UndefOr[Double] = js.undefined
   
@@ -49,19 +57,21 @@ trait HostConfig extends StObject {
   
   var DeviceRequests: js.UndefOr[js.Array[DeviceRequest]] = js.undefined
   
-  var Devices: js.UndefOr[js.Any] = js.undefined
+  var Devices: js.UndefOr[Any] = js.undefined
   
   var DiskQuota: js.UndefOr[Double] = js.undefined
   
-  var Dns: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var Dns: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var DnsOptions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var DnsOptions: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var DnsSearch: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var DnsSearch: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ExtraHosts: js.UndefOr[js.Any] = js.undefined
+  var ExtraHosts: js.UndefOr[Any] = js.undefined
   
   var GroupAdd: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var Init: js.UndefOr[Boolean] = js.undefined
   
   var IpcMode: js.UndefOr[String] = js.undefined
   
@@ -69,7 +79,7 @@ trait HostConfig extends StObject {
   
   var KernelMemory: js.UndefOr[Double] = js.undefined
   
-  var Links: js.UndefOr[js.Any] = js.undefined
+  var Links: js.UndefOr[Any] = js.undefined
   
   var LogConfig: js.UndefOr[typings.dockerode.anon.Config] = js.undefined
   
@@ -95,7 +105,7 @@ trait HostConfig extends StObject {
   
   var PidsLimit: js.UndefOr[Double] = js.undefined
   
-  var PortBindings: js.UndefOr[js.Any] = js.undefined
+  var PortBindings: js.UndefOr[Any] = js.undefined
   
   var Privileged: js.UndefOr[Boolean] = js.undefined
   
@@ -109,7 +119,7 @@ trait HostConfig extends StObject {
   
   var Runtime: js.UndefOr[String] = js.undefined
   
-  var SecurityOpt: js.UndefOr[js.Any] = js.undefined
+  var SecurityOpt: js.UndefOr[Any] = js.undefined
   
   var ShmSize: js.UndefOr[Double] = js.undefined
   
@@ -121,13 +131,13 @@ trait HostConfig extends StObject {
   
   var UTSMode: js.UndefOr[String] = js.undefined
   
-  var Ulimits: js.UndefOr[js.Any] = js.undefined
+  var Ulimits: js.UndefOr[Any] = js.undefined
   
   var UsernsMode: js.UndefOr[String] = js.undefined
   
   var VolumeDriver: js.UndefOr[String] = js.undefined
   
-  var VolumesFrom: js.UndefOr[js.Any] = js.undefined
+  var VolumesFrom: js.UndefOr[Any] = js.undefined
 }
 object HostConfig {
   
@@ -146,37 +156,37 @@ object HostConfig {
     
     inline def setBindsUndefined: Self = StObject.set(x, "Binds", js.undefined)
     
-    inline def setBindsVarargs(value: String*): Self = StObject.set(x, "Binds", js.Array(value :_*))
+    inline def setBindsVarargs(value: String*): Self = StObject.set(x, "Binds", js.Array(value*))
     
-    inline def setBlkioDeviceReadBps(value: js.Any): Self = StObject.set(x, "BlkioDeviceReadBps", value.asInstanceOf[js.Any])
+    inline def setBlkioDeviceReadBps(value: Any): Self = StObject.set(x, "BlkioDeviceReadBps", value.asInstanceOf[js.Any])
     
     inline def setBlkioDeviceReadBpsUndefined: Self = StObject.set(x, "BlkioDeviceReadBps", js.undefined)
     
-    inline def setBlkioDeviceReadIOps(value: js.Any): Self = StObject.set(x, "BlkioDeviceReadIOps", value.asInstanceOf[js.Any])
+    inline def setBlkioDeviceReadIOps(value: Any): Self = StObject.set(x, "BlkioDeviceReadIOps", value.asInstanceOf[js.Any])
     
     inline def setBlkioDeviceReadIOpsUndefined: Self = StObject.set(x, "BlkioDeviceReadIOps", js.undefined)
     
-    inline def setBlkioDeviceWriteBps(value: js.Any): Self = StObject.set(x, "BlkioDeviceWriteBps", value.asInstanceOf[js.Any])
+    inline def setBlkioDeviceWriteBps(value: Any): Self = StObject.set(x, "BlkioDeviceWriteBps", value.asInstanceOf[js.Any])
     
     inline def setBlkioDeviceWriteBpsUndefined: Self = StObject.set(x, "BlkioDeviceWriteBps", js.undefined)
     
-    inline def setBlkioDeviceWriteIOps(value: js.Any): Self = StObject.set(x, "BlkioDeviceWriteIOps", value.asInstanceOf[js.Any])
+    inline def setBlkioDeviceWriteIOps(value: Any): Self = StObject.set(x, "BlkioDeviceWriteIOps", value.asInstanceOf[js.Any])
     
     inline def setBlkioDeviceWriteIOpsUndefined: Self = StObject.set(x, "BlkioDeviceWriteIOps", js.undefined)
     
     inline def setBlkioWeight(value: Double): Self = StObject.set(x, "BlkioWeight", value.asInstanceOf[js.Any])
     
-    inline def setBlkioWeightDevice(value: js.Any): Self = StObject.set(x, "BlkioWeightDevice", value.asInstanceOf[js.Any])
+    inline def setBlkioWeightDevice(value: Any): Self = StObject.set(x, "BlkioWeightDevice", value.asInstanceOf[js.Any])
     
     inline def setBlkioWeightDeviceUndefined: Self = StObject.set(x, "BlkioWeightDevice", js.undefined)
     
     inline def setBlkioWeightUndefined: Self = StObject.set(x, "BlkioWeight", js.undefined)
     
-    inline def setCapAdd(value: js.Any): Self = StObject.set(x, "CapAdd", value.asInstanceOf[js.Any])
+    inline def setCapAdd(value: Any): Self = StObject.set(x, "CapAdd", value.asInstanceOf[js.Any])
     
     inline def setCapAddUndefined: Self = StObject.set(x, "CapAdd", js.undefined)
     
-    inline def setCapDrop(value: js.Any): Self = StObject.set(x, "CapDrop", value.asInstanceOf[js.Any])
+    inline def setCapDrop(value: Any): Self = StObject.set(x, "CapDrop", value.asInstanceOf[js.Any])
     
     inline def setCapDropUndefined: Self = StObject.set(x, "CapDrop", js.undefined)
     
@@ -192,11 +202,19 @@ object HostConfig {
     
     inline def setConsoleSizeUndefined: Self = StObject.set(x, "ConsoleSize", js.undefined)
     
-    inline def setConsoleSizeVarargs(value: Double*): Self = StObject.set(x, "ConsoleSize", js.Array(value :_*))
+    inline def setConsoleSizeVarargs(value: Double*): Self = StObject.set(x, "ConsoleSize", js.Array(value*))
     
     inline def setContainerIDFile(value: String): Self = StObject.set(x, "ContainerIDFile", value.asInstanceOf[js.Any])
     
     inline def setContainerIDFileUndefined: Self = StObject.set(x, "ContainerIDFile", js.undefined)
+    
+    inline def setCpuCount(value: Double): Self = StObject.set(x, "CpuCount", value.asInstanceOf[js.Any])
+    
+    inline def setCpuCountUndefined: Self = StObject.set(x, "CpuCount", js.undefined)
+    
+    inline def setCpuPercent(value: Double): Self = StObject.set(x, "CpuPercent", value.asInstanceOf[js.Any])
+    
+    inline def setCpuPercentUndefined: Self = StObject.set(x, "CpuPercent", js.undefined)
     
     inline def setCpuPeriod(value: Double): Self = StObject.set(x, "CpuPeriod", value.asInstanceOf[js.Any])
     
@@ -205,6 +223,14 @@ object HostConfig {
     inline def setCpuQuota(value: Double): Self = StObject.set(x, "CpuQuota", value.asInstanceOf[js.Any])
     
     inline def setCpuQuotaUndefined: Self = StObject.set(x, "CpuQuota", js.undefined)
+    
+    inline def setCpuRealtimePeriod(value: Double): Self = StObject.set(x, "CpuRealtimePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setCpuRealtimePeriodUndefined: Self = StObject.set(x, "CpuRealtimePeriod", js.undefined)
+    
+    inline def setCpuRealtimeRuntime(value: Double): Self = StObject.set(x, "CpuRealtimeRuntime", value.asInstanceOf[js.Any])
+    
+    inline def setCpuRealtimeRuntimeUndefined: Self = StObject.set(x, "CpuRealtimeRuntime", js.undefined)
     
     inline def setCpuShares(value: Double): Self = StObject.set(x, "CpuShares", value.asInstanceOf[js.Any])
     
@@ -222,15 +248,15 @@ object HostConfig {
     
     inline def setDeviceCgroupRulesUndefined: Self = StObject.set(x, "DeviceCgroupRules", js.undefined)
     
-    inline def setDeviceCgroupRulesVarargs(value: String*): Self = StObject.set(x, "DeviceCgroupRules", js.Array(value :_*))
+    inline def setDeviceCgroupRulesVarargs(value: String*): Self = StObject.set(x, "DeviceCgroupRules", js.Array(value*))
     
     inline def setDeviceRequests(value: js.Array[DeviceRequest]): Self = StObject.set(x, "DeviceRequests", value.asInstanceOf[js.Any])
     
     inline def setDeviceRequestsUndefined: Self = StObject.set(x, "DeviceRequests", js.undefined)
     
-    inline def setDeviceRequestsVarargs(value: DeviceRequest*): Self = StObject.set(x, "DeviceRequests", js.Array(value :_*))
+    inline def setDeviceRequestsVarargs(value: DeviceRequest*): Self = StObject.set(x, "DeviceRequests", js.Array(value*))
     
-    inline def setDevices(value: js.Any): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: Any): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
     inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
@@ -238,25 +264,25 @@ object HostConfig {
     
     inline def setDiskQuotaUndefined: Self = StObject.set(x, "DiskQuota", js.undefined)
     
-    inline def setDns(value: js.Array[js.Any]): Self = StObject.set(x, "Dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: js.Array[Any]): Self = StObject.set(x, "Dns", value.asInstanceOf[js.Any])
     
-    inline def setDnsOptions(value: js.Array[js.Any]): Self = StObject.set(x, "DnsOptions", value.asInstanceOf[js.Any])
+    inline def setDnsOptions(value: js.Array[Any]): Self = StObject.set(x, "DnsOptions", value.asInstanceOf[js.Any])
     
     inline def setDnsOptionsUndefined: Self = StObject.set(x, "DnsOptions", js.undefined)
     
-    inline def setDnsOptionsVarargs(value: js.Any*): Self = StObject.set(x, "DnsOptions", js.Array(value :_*))
+    inline def setDnsOptionsVarargs(value: Any*): Self = StObject.set(x, "DnsOptions", js.Array(value*))
     
-    inline def setDnsSearch(value: js.Array[js.Any]): Self = StObject.set(x, "DnsSearch", value.asInstanceOf[js.Any])
+    inline def setDnsSearch(value: js.Array[String]): Self = StObject.set(x, "DnsSearch", value.asInstanceOf[js.Any])
     
     inline def setDnsSearchUndefined: Self = StObject.set(x, "DnsSearch", js.undefined)
     
-    inline def setDnsSearchVarargs(value: js.Any*): Self = StObject.set(x, "DnsSearch", js.Array(value :_*))
+    inline def setDnsSearchVarargs(value: String*): Self = StObject.set(x, "DnsSearch", js.Array(value*))
     
     inline def setDnsUndefined: Self = StObject.set(x, "Dns", js.undefined)
     
-    inline def setDnsVarargs(value: js.Any*): Self = StObject.set(x, "Dns", js.Array(value :_*))
+    inline def setDnsVarargs(value: Any*): Self = StObject.set(x, "Dns", js.Array(value*))
     
-    inline def setExtraHosts(value: js.Any): Self = StObject.set(x, "ExtraHosts", value.asInstanceOf[js.Any])
+    inline def setExtraHosts(value: Any): Self = StObject.set(x, "ExtraHosts", value.asInstanceOf[js.Any])
     
     inline def setExtraHostsUndefined: Self = StObject.set(x, "ExtraHosts", js.undefined)
     
@@ -264,7 +290,11 @@ object HostConfig {
     
     inline def setGroupAddUndefined: Self = StObject.set(x, "GroupAdd", js.undefined)
     
-    inline def setGroupAddVarargs(value: String*): Self = StObject.set(x, "GroupAdd", js.Array(value :_*))
+    inline def setGroupAddVarargs(value: String*): Self = StObject.set(x, "GroupAdd", js.Array(value*))
+    
+    inline def setInit(value: Boolean): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
+    
+    inline def setInitUndefined: Self = StObject.set(x, "Init", js.undefined)
     
     inline def setIpcMode(value: String): Self = StObject.set(x, "IpcMode", value.asInstanceOf[js.Any])
     
@@ -278,7 +308,7 @@ object HostConfig {
     
     inline def setKernelMemoryUndefined: Self = StObject.set(x, "KernelMemory", js.undefined)
     
-    inline def setLinks(value: js.Any): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Any): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     
@@ -290,7 +320,7 @@ object HostConfig {
     
     inline def setMaskedPathsUndefined: Self = StObject.set(x, "MaskedPaths", js.undefined)
     
-    inline def setMaskedPathsVarargs(value: String*): Self = StObject.set(x, "MaskedPaths", js.Array(value :_*))
+    inline def setMaskedPathsVarargs(value: String*): Self = StObject.set(x, "MaskedPaths", js.Array(value*))
     
     inline def setMemory(value: Double): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
     
@@ -312,7 +342,7 @@ object HostConfig {
     
     inline def setMountsUndefined: Self = StObject.set(x, "Mounts", js.undefined)
     
-    inline def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value*))
     
     inline def setNetworkMode(value: String): Self = StObject.set(x, "NetworkMode", value.asInstanceOf[js.Any])
     
@@ -334,7 +364,7 @@ object HostConfig {
     
     inline def setPidsLimitUndefined: Self = StObject.set(x, "PidsLimit", js.undefined)
     
-    inline def setPortBindings(value: js.Any): Self = StObject.set(x, "PortBindings", value.asInstanceOf[js.Any])
+    inline def setPortBindings(value: Any): Self = StObject.set(x, "PortBindings", value.asInstanceOf[js.Any])
     
     inline def setPortBindingsUndefined: Self = StObject.set(x, "PortBindings", js.undefined)
     
@@ -350,7 +380,7 @@ object HostConfig {
     
     inline def setReadonlyPathsUndefined: Self = StObject.set(x, "ReadonlyPaths", js.undefined)
     
-    inline def setReadonlyPathsVarargs(value: String*): Self = StObject.set(x, "ReadonlyPaths", js.Array(value :_*))
+    inline def setReadonlyPathsVarargs(value: String*): Self = StObject.set(x, "ReadonlyPaths", js.Array(value*))
     
     inline def setReadonlyRootfs(value: Boolean): Self = StObject.set(x, "ReadonlyRootfs", value.asInstanceOf[js.Any])
     
@@ -364,7 +394,7 @@ object HostConfig {
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
     
-    inline def setSecurityOpt(value: js.Any): Self = StObject.set(x, "SecurityOpt", value.asInstanceOf[js.Any])
+    inline def setSecurityOpt(value: Any): Self = StObject.set(x, "SecurityOpt", value.asInstanceOf[js.Any])
     
     inline def setSecurityOptUndefined: Self = StObject.set(x, "SecurityOpt", js.undefined)
     
@@ -388,7 +418,7 @@ object HostConfig {
     
     inline def setUTSModeUndefined: Self = StObject.set(x, "UTSMode", js.undefined)
     
-    inline def setUlimits(value: js.Any): Self = StObject.set(x, "Ulimits", value.asInstanceOf[js.Any])
+    inline def setUlimits(value: Any): Self = StObject.set(x, "Ulimits", value.asInstanceOf[js.Any])
     
     inline def setUlimitsUndefined: Self = StObject.set(x, "Ulimits", js.undefined)
     
@@ -400,7 +430,7 @@ object HostConfig {
     
     inline def setVolumeDriverUndefined: Self = StObject.set(x, "VolumeDriver", js.undefined)
     
-    inline def setVolumesFrom(value: js.Any): Self = StObject.set(x, "VolumesFrom", value.asInstanceOf[js.Any])
+    inline def setVolumesFrom(value: Any): Self = StObject.set(x, "VolumesFrom", value.asInstanceOf[js.Any])
     
     inline def setVolumesFromUndefined: Self = StObject.set(x, "VolumesFrom", js.undefined)
   }

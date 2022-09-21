@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration to suppress records whose suppression conditions evaluate to
-  * true.
-  */
 trait SchemaGooglePrivacyDlpV2RecordSuppression extends StObject {
   
   /**
-    * A condition that when it evaluates to true will result in the record
-    * being evaluated to be suppressed from the transformed content.
+    * A condition that when it evaluates to true will result in the record being evaluated to be suppressed from the transformed content.
     */
   var condition: js.UndefOr[SchemaGooglePrivacyDlpV2RecordCondition] = js.undefined
 }

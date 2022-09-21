@@ -77,13 +77,13 @@ object modelMod {
     
     /* protected */ def assembleDefaultLayout(): VgLayout = js.native
     
-    /* private */ var assembleEncodeFromView: js.Any = js.native
+    /* private */ var assembleEncodeFromView: Any = js.native
     
     /**
       * Assemble the mark group for this model. We accept optional `signals` so that we can include concat top-level signals with the top-level model's local signals.
       */
-    def assembleGroup(): js.Any = js.native
-    def assembleGroup(signals: js.Array[Signal]): js.Any = js.native
+    def assembleGroup(): Any = js.native
+    def assembleGroup(signals: js.Array[Signal]): Any = js.native
     
     def assembleGroupEncodeEntry(isTopLevel: Boolean): VgEncodeEntry = js.native
     
@@ -118,7 +118,7 @@ object modelMod {
     /**
       * Corrects the data references in marks after assemble.
       */
-    def correctDataNames(mark: VgMarkGroup): js.Any = js.native
+    def correctDataNames(mark: VgMarkGroup): Any = js.native
     
     val data: Data | Null = js.native
     
@@ -148,8 +148,6 @@ object modelMod {
     def hasAxisOrientSignalRef(): Boolean = js.native
     
     def height: SignalRef = js.native
-    
-    /* private */ var initTitle: js.Any = js.native
     
     val layout: GenericCompositionLayoutWithColumns = js.native
     
@@ -200,7 +198,7 @@ object modelMod {
       * This essentially merges the top-level spec's width/height signals with the width/height signals
       * to help us reduce redundant signals declaration.
       */
-    /* private */ var renameTopLevelLayoutSizeSignal: js.Any = js.native
+    /* private */ var renameTopLevelLayoutSizeSignal: Any = js.native
     
     /**
       * Request a data source name for the given data source type and mark that data source as required.
@@ -259,14 +257,14 @@ object modelMod {
     
     def channelHasField(channel: Channel): Boolean = js.native
     
-    def fieldDef(channel: SingleDefChannel): FieldDef[js.Any, js.Any] = js.native
+    def fieldDef(channel: SingleDefChannel): FieldDef[Any, Any] = js.native
     
-    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, js.Any], /* c */ ExtendedChannel, Unit]): Unit = js.native
-    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, js.Any], /* c */ ExtendedChannel, Unit], t: js.Any): Unit = js.native
+    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, Any], /* c */ ExtendedChannel, Unit]): Unit = js.native
+    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, Any], /* c */ ExtendedChannel, Unit], t: Any): Unit = js.native
     
     /* protected */ def getMapping(): PartialRecordExtendedChan = js.native
     
-    def reduceFieldDef[T, U](f: js.Function3[/* acc */ U, /* fd */ FieldDef[String, js.Any], /* c */ Channel, U], init: T): T = js.native
+    def reduceFieldDef[T, U](f: js.Function3[/* acc */ U, /* fd */ FieldDef[String, Any], /* c */ Channel, U], init: T): T = js.native
     
     /** Get "field" reference for Vega */
     def vgField(channel: SingleDefChannel): String = js.native
@@ -275,7 +273,7 @@ object modelMod {
   
   @JSImport("vega-lite/build/src/compile/model", "NameMap")
   @js.native
-  class NameMap ()
+  open class NameMap ()
     extends StObject
        with NameMapInterface {
     
@@ -285,7 +283,7 @@ object modelMod {
     /* CompleteClass */
     override def has(name: String): Boolean = js.native
     
-    /* private */ var nameMap: js.Any = js.native
+    /* private */ var nameMap: Any = js.native
     
     /* CompleteClass */
     override def rename(oldname: String, newName: String): Unit = js.native
@@ -355,7 +353,7 @@ object modelMod {
       
       inline def setMark(value: js.Array[VgMarkGroup]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      inline def setMarkVarargs(value: VgMarkGroup*): Self = StObject.set(x, "mark", js.Array(value :_*))
+      inline def setMarkVarargs(value: VgMarkGroup*): Self = StObject.set(x, "mark", js.Array(value*))
       
       inline def setProjection(value: ProjectionComponent): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       

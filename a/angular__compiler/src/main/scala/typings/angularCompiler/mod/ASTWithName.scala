@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ASTWithName")
 @js.native
-abstract class ASTWithName protected ()
-  extends typings.angularCompiler.compilerMod.ASTWithName {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
-  ) = this()
+abstract class ASTWithName protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, nameSpan: AbsoluteSourceSpan) = this()
+  
+  var nameSpan: AbsoluteSourceSpan = js.native
 }

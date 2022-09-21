@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object userLeaveMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/UserLeave", JSImport.Default)
   @js.native
-  val default: SFC[UserLeaveProps] = js.native
+  val default: FC[UserLeaveProps] = js.native
   
   trait UserLeaveProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object UserLeaveProps {
     
@@ -29,14 +29,14 @@ object userLeaveMod extends Shortcut {
     
     extension [Self <: UserLeaveProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[UserLeaveProps]
+  type _To = FC[UserLeaveProps]
   
   /* This means you don't have to write `default`, but can instead just say `userLeaveMod.foo` */
-  override def _to: SFC[UserLeaveProps] = default
+  override def _to: FC[UserLeaveProps] = default
 }

@@ -14,20 +14,20 @@ trait ASPxClientNavBarGroupClickEventArgs
   /**
     * Gets the HTML object that contains the processed group.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientNavBarGroupClickEventArgs {
   
   inline def apply(
     cancel: Boolean,
     group: ASPxClientNavBarGroup,
-    htmlElement: js.Any,
-    htmlEvent: js.Any,
+    htmlElement: Any,
+    htmlEvent: Any,
     processOnServer: Boolean
   ): ASPxClientNavBarGroupClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
@@ -36,8 +36,8 @@ object ASPxClientNavBarGroupClickEventArgs {
   
   extension [Self <: ASPxClientNavBarGroupClickEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

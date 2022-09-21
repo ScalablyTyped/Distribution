@@ -33,6 +33,6 @@ object NodeGroupUpdateStatus {
     
     inline def setNodeGroupMemberUpdateStatusUndefined: Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.undefined)
     
-    inline def setNodeGroupMemberUpdateStatusVarargs(value: NodeGroupMemberUpdateStatus*): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.Array(value :_*))
+    inline def setNodeGroupMemberUpdateStatusVarargs(value: NodeGroupMemberUpdateStatus*): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.Array(value*))
   }
 }

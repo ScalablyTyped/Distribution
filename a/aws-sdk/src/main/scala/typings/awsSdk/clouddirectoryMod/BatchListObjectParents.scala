@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchListObjectParents extends StObject {
   
+  /**
+    * The maximum number of items to be retrieved in a single call. This is an approximate number.
+    */
   var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
+  /**
+    * The pagination token.
+    */
   var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference

@@ -8,5 +8,5 @@ object listFunctionsInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/ListFunctionsInput", "ListFunctionsInput")
   @js.native
-  val ListFunctionsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListFunctionsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

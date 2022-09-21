@@ -10,15 +10,15 @@ Restricts screen reader virtual cursor to a single subtree in the DOM
 | ------------------ | :-------------: |
 | Full name          | makeup-screenreader-trap |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 22133 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 24666.0 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/makeup/makeup-js#readme)
+- [Homepage](https://github.com/makeup/makeup-js/tree/master#readme)
 - [Bugs](https://github.com/makeup/makeup-js/issues)
-- [Repository](https://github.com/makeup/makeup-js)
+- [Repository](https://github.com/makeup/makeup-js/tree/master)
 - [Npm](https://www.npmjs.com/package/makeup-screenreader-trap)
     
 

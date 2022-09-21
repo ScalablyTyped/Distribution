@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lock-system" : "2.0.0"
+      "lock-system" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "lock-system" : "2.0.0"
+      "lock-system" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

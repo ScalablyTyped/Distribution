@@ -7,4 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StereoscopicUniversalCamera
   extends StObject
-     with UniversalCamera
+     with UniversalCamera {
+  
+  /* protected */ var _setRigMode: Any = js.native
+}

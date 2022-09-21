@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTesters extends StObject {
   
-  var googleGroups: js.UndefOr[js.Array[String]] = js.undefined
-  
-  var googlePlusCommunities: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * All testing Google Groups, as email addresses.
+    */
+  var googleGroups: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTesters {
   
@@ -21,14 +22,10 @@ object SchemaTesters {
     
     inline def setGoogleGroups(value: js.Array[String]): Self = StObject.set(x, "googleGroups", value.asInstanceOf[js.Any])
     
+    inline def setGoogleGroupsNull: Self = StObject.set(x, "googleGroups", null)
+    
     inline def setGoogleGroupsUndefined: Self = StObject.set(x, "googleGroups", js.undefined)
     
-    inline def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value :_*))
-    
-    inline def setGooglePlusCommunities(value: js.Array[String]): Self = StObject.set(x, "googlePlusCommunities", value.asInstanceOf[js.Any])
-    
-    inline def setGooglePlusCommunitiesUndefined: Self = StObject.set(x, "googlePlusCommunities", js.undefined)
-    
-    inline def setGooglePlusCommunitiesVarargs(value: String*): Self = StObject.set(x, "googlePlusCommunities", js.Array(value :_*))
+    inline def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Autocomplete, 'selectOption'> */
 trait PickAutocompleteselectOpt extends StObject {
   
-  var selectOption: js.UndefOr[js.Any] = js.undefined
+  var selectOption: js.UndefOr[Any] = js.undefined
 }
 object PickAutocompleteselectOpt {
   
@@ -18,7 +18,7 @@ object PickAutocompleteselectOpt {
   
   extension [Self <: PickAutocompleteselectOpt](x: Self) {
     
-    inline def setSelectOption(value: js.Any): Self = StObject.set(x, "selectOption", value.asInstanceOf[js.Any])
+    inline def setSelectOption(value: Any): Self = StObject.set(x, "selectOption", value.asInstanceOf[js.Any])
     
     inline def setSelectOptionUndefined: Self = StObject.set(x, "selectOption", js.undefined)
   }

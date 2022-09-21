@@ -14,7 +14,7 @@ trait ImportMeta extends StObject {
   // to change `hot` to the more correct "possibly undefined" (hot?: ...).
   val hot: ImportMetaHot
   
-  val url: String
+  var url: String
 }
 object ImportMeta {
   

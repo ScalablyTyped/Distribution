@@ -10,21 +10,21 @@ object bearerSecurityMod {
   
   @JSImport("soap/lib/security/BearerSecurity", "BearerSecurity")
   @js.native
-  class BearerSecurity protected ()
+  open class BearerSecurity protected ()
     extends StObject
        with ISecurity {
     def this(token: String) = this()
-    def this(token: String, defaults: js.Any) = this()
+    def this(token: String, defaults: Any) = this()
     
-    /* private */ var _token: js.Any = js.native
+    /* private */ var _token: Any = js.native
     
     @JSName("addHeaders")
     def addHeaders_MBearerSecurity(headers: IHeaders): Unit = js.native
     
     @JSName("addOptions")
-    def addOptions_MBearerSecurity(options: js.Any): Unit = js.native
+    def addOptions_MBearerSecurity(options: Any): Unit = js.native
     
-    /* private */ var defaults: js.Any = js.native
+    /* private */ var defaults: Any = js.native
     
     @JSName("toXML")
     def toXML_MBearerSecurity(): String = js.native

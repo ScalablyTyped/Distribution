@@ -116,7 +116,7 @@ object ComponentOptions {
           DefaultMethods[Component[js.Object, js.Object]], 
           PropsDefinition[DefaultProps]
         ]) | String)*
-    ): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+    ): Self = StObject.set(x, "behaviors", js.Array(value*))
     
     inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
@@ -134,7 +134,7 @@ object ComponentOptions {
     
     inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
-    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value*))
     
     inline def setLifetimes(value: PartialLifetimes): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     

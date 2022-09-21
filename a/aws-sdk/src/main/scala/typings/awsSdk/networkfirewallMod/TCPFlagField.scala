@@ -27,12 +27,12 @@ object TCPFlagField {
     
     inline def setFlags(value: Flags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    inline def setFlagsVarargs(value: TCPFlag*): Self = StObject.set(x, "Flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: TCPFlag*): Self = StObject.set(x, "Flags", js.Array(value*))
     
     inline def setMasks(value: Flags): Self = StObject.set(x, "Masks", value.asInstanceOf[js.Any])
     
     inline def setMasksUndefined: Self = StObject.set(x, "Masks", js.undefined)
     
-    inline def setMasksVarargs(value: TCPFlag*): Self = StObject.set(x, "Masks", js.Array(value :_*))
+    inline def setMasksVarargs(value: TCPFlag*): Self = StObject.set(x, "Masks", js.Array(value*))
   }
 }

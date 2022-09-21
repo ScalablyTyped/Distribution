@@ -12,10 +12,10 @@ object mod {
   
   @JSImport("redux-infinite-scroll", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, js.Any]
+  open class default ()
+    extends Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, Any]
   
-  type InfiniteScoller = Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, js.Any]
+  type InfiniteScoller = Component[InfiniteScrollerProps & HTMLProps[HTMLDivElement], js.Object, Any]
   
   trait InfiniteScrollerProps extends StObject {
     
@@ -33,7 +33,7 @@ object mod {
     
     def loadMore(): Unit
     
-    var loader: js.UndefOr[js.Any] = js.undefined
+    var loader: js.UndefOr[Any] = js.undefined
     
     var loadingMore: js.UndefOr[Boolean] = js.undefined
     
@@ -54,7 +54,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setContainerHeight(value: Double | String): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
@@ -76,11 +76,11 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Element*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Element*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLoadMore(value: () => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction0(value))
       
-      inline def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       

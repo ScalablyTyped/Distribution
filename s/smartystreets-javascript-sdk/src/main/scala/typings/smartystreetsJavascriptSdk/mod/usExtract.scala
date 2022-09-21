@@ -10,30 +10,53 @@ object usExtract {
   
   @JSImport("smartystreets-javascript-sdk", "usExtract.Lookup")
   @js.native
-  class Lookup protected ()
-    extends StObject
-       with typings.smartystreetsJavascriptSdk.mod.core.Lookup {
-    def this(text: String) = this()
+  open class Lookup protected () extends StObject {
+    def this(/**
+      * The text with addresses to extract as the body of the request. Set the value of the Content-Type header to text/plain; charset=utf-8. Each request body is limited to a maximum length of
+      * 64 kilobytes.
+      */
+    text: String) = this()
     
-    var addressesHaveLineBreaks: js.Any = js.native
+    /**
+      * This parameter specifies if addresses in your input will ever have line breaks.
+      * @default true
+      */
+    var addressesHaveLineBreaks: Boolean = js.native
     
-    var addressesPerLine: js.Any = js.native
+    /**
+      * Limits the extractor to a certain number of addresses per input line. Generally, you will not need this parameter unless you are submitting structured data that you know will only have a
+      * certain number of addresses per line.
+      * @default 0 - no limit
+      */
+    var addressesPerLine: Double = js.native
     
-    var aggressive: js.Any = js.native
+    /**
+      * Aggressive mode may use more lookups on your account, but it can find addresses in populous cities without needing a state and [ZIP Code](https://smartystreets.com/docs/zip-codes-101) , as
+      * well as finding addresses in some messy inputs.
+      * @default true
+      */
+    var aggressive: Boolean = js.native
     
-    var html: js.Any = js.native
+    /**
+      * HTML input is automatically detected and stripped, but you can manually specify whether your input is formatted as HTML by setting this to true or false.
+      */
+    var html: Boolean = js.native
     
-    var result: Addresses = js.native
+    var result: js.Array[Result] = js.native
     
+    /**
+      * The text with addresses to extract as the body of the request. Set the value of the Content-Type header to text/plain; charset=utf-8. Each request body is limited to a maximum length of 64
+      * kilobytes.
+      */
     var text: String = js.native
   }
   
   @JSImport("smartystreets-javascript-sdk", "usExtract.Result")
   @js.native
-  class Result protected () extends StObject {
+  open class Result protected () extends StObject {
     def this(x: Addresses) = this()
     
-    var addressees: js.Array[js.Any] = js.native
+    var addressees: js.Array[Any] = js.native
     
     var meta: AddressCount = js.native
   }

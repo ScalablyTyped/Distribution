@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGStopElement")
 @js.native
-/* private */ class SVGStopElement ()
+/* private */ open class SVGStopElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGStopElement {
   

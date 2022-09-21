@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The resource submessage for group checks. It can be used instead of a
-  * monitored resource, when multiple resources are being monitored.
-  */
 trait SchemaResourceGroup extends StObject {
   
   /**
-    * The group of resources being monitored. Should be only the group_id, not
-    * projects/&lt;project_id&gt;/groups/&lt;group_id&gt;.
+    * The group of resources being monitored. Should be only the [GROUP_ID], and not the full-path projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID].
     */
-  var groupId: js.UndefOr[String] = js.undefined
+  var groupId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The resource type of the group members.
     */
-  var resourceType: js.UndefOr[String] = js.undefined
+  var resourceType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResourceGroup {
   
@@ -32,9 +27,13 @@ object SchemaResourceGroup {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
+    inline def setGroupIdNull: Self = StObject.set(x, "groupId", null)
+    
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTypeNull: Self = StObject.set(x, "resourceType", null)
     
     inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }

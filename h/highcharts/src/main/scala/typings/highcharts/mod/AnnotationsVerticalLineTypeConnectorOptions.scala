@@ -19,6 +19,11 @@ trait AnnotationsVerticalLineTypeConnectorOptions extends StObject {
   var markerEnd: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highstock) The radius of the shape in y direction. Used for the ellipse.
+    */
+  var ry: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock) Defines additional snapping area around an annotation making
     * this annotation to focus. Defined in pixels.
     */
@@ -39,6 +44,18 @@ trait AnnotationsVerticalLineTypeConnectorOptions extends StObject {
     * (Highstock) The pixel stroke width of the shape.
     */
   var strokeWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) The xAxis index to which the points should be attached. Used
+    * for the ellipse.
+    */
+  var xAxis: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) The yAxis index to which the points should be attached. Used
+    * for the ellipse.
+    */
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsVerticalLineTypeConnectorOptions {
   
@@ -61,6 +78,10 @@ object AnnotationsVerticalLineTypeConnectorOptions {
     
     inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    
     inline def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
@@ -76,5 +97,13 @@ object AnnotationsVerticalLineTypeConnectorOptions {
     inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

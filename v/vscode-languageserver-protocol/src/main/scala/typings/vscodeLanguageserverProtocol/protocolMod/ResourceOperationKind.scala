@@ -15,21 +15,21 @@ object ResourceOperationKind {
   /**
     * Supports creating new files and folders.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ResourceOperationKind.Create")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ResourceOperationKind.Create")
   @js.native
   val Create: ResourceOperationKind = js.native
   
   /**
     * Supports deleting existing files and folders.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ResourceOperationKind.Delete")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ResourceOperationKind.Delete")
   @js.native
   val Delete: ResourceOperationKind = js.native
   
   /**
     * Supports renaming existing files and folders.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ResourceOperationKind.Rename")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ResourceOperationKind.Rename")
   @js.native
   val Rename: ResourceOperationKind = js.native
 }

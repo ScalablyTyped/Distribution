@@ -31,10 +31,10 @@ object BatchGetJobsResponse {
     
     inline def setJobsNotFoundUndefined: Self = StObject.set(x, "JobsNotFound", js.undefined)
     
-    inline def setJobsNotFoundVarargs(value: NameString*): Self = StObject.set(x, "JobsNotFound", js.Array(value :_*))
+    inline def setJobsNotFoundVarargs(value: NameString*): Self = StObject.set(x, "JobsNotFound", js.Array(value*))
     
     inline def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
-    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value*))
   }
 }

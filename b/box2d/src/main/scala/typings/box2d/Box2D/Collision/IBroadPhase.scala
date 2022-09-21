@@ -13,7 +13,7 @@ trait IBroadPhase extends StObject {
     * @param userData User defined data.
     * @return Proxy created from aabb and userData.
     **/
-  def CreateProxy(aabb: b2AABB, userData: js.Any): b2DynamicTreeNode
+  def CreateProxy(aabb: b2AABB, userData: Any): b2DynamicTreeNode
   
   /**
     * Destroy a proxy. It is up to the client to remove any pairs.
@@ -38,7 +38,7 @@ trait IBroadPhase extends StObject {
     * @param proxy Proxy to retrieve user data from.
     * @return Gets the user data from proxy, or null if the proxy is invalid.
     **/
-  def GetUserData(proxy: b2DynamicTreeNode): js.Any
+  def GetUserData(proxy: b2DynamicTreeNode): Any
   
   /**
     * Call MoveProxy as many times as you like, then when you are done call UpdatePairs to finalized the proxy pairs (for your time step).
@@ -78,11 +78,11 @@ trait IBroadPhase extends StObject {
 object IBroadPhase {
   
   inline def apply(
-    CreateProxy: (b2AABB, js.Any) => b2DynamicTreeNode,
+    CreateProxy: (b2AABB, Any) => b2DynamicTreeNode,
     DestroyProxy: b2DynamicTreeNode => Unit,
     GetFatAABB: b2DynamicTreeNode => b2AABB,
     GetProxyCount: () => Double,
-    GetUserData: b2DynamicTreeNode => js.Any,
+    GetUserData: b2DynamicTreeNode => Any,
     MoveProxy: (b2DynamicTreeNode, b2AABB, b2Vec2) => Unit,
     Query: (js.Function1[/* proxy */ b2DynamicTreeNode, Boolean], b2AABB) => Unit,
     RayCast: (js.Function2[/* input */ b2RayCastInput, /* proxy */ b2DynamicTreeNode, Double], b2RayCastInput) => Unit,
@@ -94,7 +94,7 @@ object IBroadPhase {
   
   extension [Self <: IBroadPhase](x: Self) {
     
-    inline def setCreateProxy(value: (b2AABB, js.Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
+    inline def setCreateProxy(value: (b2AABB, Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
     
     inline def setDestroyProxy(value: b2DynamicTreeNode => Unit): Self = StObject.set(x, "DestroyProxy", js.Any.fromFunction1(value))
     
@@ -102,7 +102,7 @@ object IBroadPhase {
     
     inline def setGetProxyCount(value: () => Double): Self = StObject.set(x, "GetProxyCount", js.Any.fromFunction0(value))
     
-    inline def setGetUserData(value: b2DynamicTreeNode => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction1(value))
+    inline def setGetUserData(value: b2DynamicTreeNode => Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction1(value))
     
     inline def setMoveProxy(value: (b2DynamicTreeNode, b2AABB, b2Vec2) => Unit): Self = StObject.set(x, "MoveProxy", js.Any.fromFunction3(value))
     

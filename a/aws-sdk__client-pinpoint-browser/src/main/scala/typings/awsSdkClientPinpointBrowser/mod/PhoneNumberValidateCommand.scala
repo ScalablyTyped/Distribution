@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "PhoneNumberValidateCommand")
 @js.native
-class PhoneNumberValidateCommand protected ()
+open class PhoneNumberValidateCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.phoneNumberValidateCommandMod.PhoneNumberValidateCommand {
   def this(input: PhoneNumberValidateInput) = this()
 }

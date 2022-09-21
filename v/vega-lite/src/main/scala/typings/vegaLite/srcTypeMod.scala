@@ -73,7 +73,11 @@ object srcTypeMod {
   inline def getFullName(`type`: String): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
   inline def getFullName(`type`: Type): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
   
-  inline def isType(t: js.Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/type.Type */ Boolean]
+  inline def isContinuous(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuous")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isDiscrete(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDiscrete")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isType(t: Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/type.Type */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.quantitative

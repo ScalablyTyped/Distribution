@@ -226,7 +226,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var content: String
   }
@@ -272,7 +272,7 @@ object anon {
   
   trait Path
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var path: String
     

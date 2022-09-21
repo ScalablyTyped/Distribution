@@ -3,17 +3,16 @@
 
 Typings are for version 1.1
 
-## Library description:
-@node-red/editor-api ====================
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @node-red/editor-api |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 3 |
-| # downloads        | 930124 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 84619.33333333333 |
+| # stars            | 15051.0 |
 
 ## Links
 - [Homepage](https://github.com/node-red/node-red#readme)

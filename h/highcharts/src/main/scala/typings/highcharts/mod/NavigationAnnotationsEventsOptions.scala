@@ -19,6 +19,12 @@ trait NavigationAnnotationsEventsOptions extends StObject {
   var afterUpdate: js.UndefOr[EventCallbackFunction[Annotation]] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Fires when the annotation is
+    * clicked.
+    */
+  var click: js.UndefOr[EventCallbackFunction[Annotation]] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event callback when annotation
     * is removed from the chart.
     */
@@ -40,6 +46,10 @@ object NavigationAnnotationsEventsOptions {
     inline def setAfterUpdate(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
     
     inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    
+    inline def setClick(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     inline def setRemove(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

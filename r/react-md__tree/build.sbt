@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "react-md__tree"
-version := "2.4.3-2efc7a"
-scalaVersion := "3.0.1"
+version := "5.1.4-4be715"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "react-md__icon" % "2.4.2-63d7ad",
-  "org.scalablytyped" %%% "react-md__list" % "2.4.3-2849a9",
-  "org.scalablytyped" %%% "react-md__portal" % "2.4.2-6074e9",
-  "org.scalablytyped" %%% "react-md__states" % "2.4.2-22455f",
-  "org.scalablytyped" %%% "react-md__transition" % "2.4.2-ec7ed1",
-  "org.scalablytyped" %%% "react-md__utils" % "2.4.2-023133",
-  "org.scalablytyped" %%% "react-transition-group" % "4.4-dt-20200521Z-e04b09",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "react-md__icon" % "5.1.3-688e15",
+  "org.scalablytyped" %%% "react-md__list" % "5.1.3-9ea5d7",
+  "org.scalablytyped" %%% "react-md__portal" % "5.1.0-b16e54",
+  "org.scalablytyped" %%% "react-md__states" % "5.1.3-2deaae",
+  "org.scalablytyped" %%% "react-md__transition" % "5.1.3-d8eb52",
+  "org.scalablytyped" %%% "react-md__utils" % "5.1.3-7e5645",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KnockoutUtils extends StObject {
   
-  def wrapAccessor(accessor: js.Any): js.Function
+  def wrapAccessor(accessor: Any): js.Function
 }
 object KnockoutUtils {
   
-  inline def apply(wrapAccessor: js.Any => js.Function): KnockoutUtils = {
+  inline def apply(wrapAccessor: Any => js.Function): KnockoutUtils = {
     val __obj = js.Dynamic.literal(wrapAccessor = js.Any.fromFunction1(wrapAccessor))
     __obj.asInstanceOf[KnockoutUtils]
   }
   
   extension [Self <: KnockoutUtils](x: Self) {
     
-    inline def setWrapAccessor(value: js.Any => js.Function): Self = StObject.set(x, "wrapAccessor", js.Any.fromFunction1(value))
+    inline def setWrapAccessor(value: Any => js.Function): Self = StObject.set(x, "wrapAccessor", js.Any.fromFunction1(value))
   }
 }

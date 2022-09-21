@@ -43,7 +43,7 @@ object BulkIndexDocumentsParams {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -79,16 +79,16 @@ object BulkIndexDocumentsParams {
     
     inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
     
-    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value :_*))
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
     
     inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
     
     inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
     
-    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value :_*))
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
     
     inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
-    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value :_*))
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
   }
 }

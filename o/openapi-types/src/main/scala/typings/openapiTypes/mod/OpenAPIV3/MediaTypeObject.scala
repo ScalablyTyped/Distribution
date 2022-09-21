@@ -9,7 +9,7 @@ trait MediaTypeObject extends StObject {
   
   var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.undefined
+  var example: js.UndefOr[Any] = js.undefined
   
   var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
   
@@ -28,7 +28,7 @@ object MediaTypeObject {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     

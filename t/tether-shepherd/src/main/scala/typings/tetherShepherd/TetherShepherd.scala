@@ -54,20 +54,20 @@ object TetherShepherd {
     /**
       * Unbind an event
       */
-    def off(eventName: String): js.Any = js.native
-    def off(eventName: String, handler: js.Function): js.Any = js.native
+    def off(eventName: String): Any = js.native
+    def off(eventName: String, handler: js.Function): Any = js.native
     
     /**
       * Bind an event
       */
-    def on(eventName: String, handler: js.Function): js.Any = js.native
-    def on(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def on(eventName: String, handler: js.Function): Any = js.native
+    def on(eventName: String, handler: js.Function, context: Any): Any = js.native
     
     /**
       * Bind just the next instance of an event
       */
-    def once(eventName: String, handler: js.Function): js.Any = js.native
-    def once(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def once(eventName: String, handler: js.Function): Any = js.native
+    def once(eventName: String, handler: js.Function, context: Any): Any = js.native
     
     /**
       * Show the step specified by id (if it's a string), or index (if it's a number) provided. Defaults to the first step.
@@ -163,7 +163,7 @@ object TetherShepherd {
       
       inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      inline def setStepsVarargs(value: IShepherdTourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: IShepherdTourStep*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
@@ -198,20 +198,20 @@ object TetherShepherd {
     /**
       * Unbind an event
       */
-    def off(eventName: String): js.Any = js.native
-    def off(eventName: String, handler: js.Function): js.Any = js.native
+    def off(eventName: String): Any = js.native
+    def off(eventName: String, handler: js.Function): Any = js.native
     
     /**
       * Bind an event
       */
-    def on(eventName: String, handler: js.Function): js.Any = js.native
-    def on(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def on(eventName: String, handler: js.Function): Any = js.native
+    def on(eventName: String, handler: js.Function, context: Any): Any = js.native
     
     /**
       * Bind just the next instance of an event
       */
-    def once(eventName: String, handler: js.Function): js.Any = js.native
-    def once(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def once(eventName: String, handler: js.Function): Any = js.native
+    def once(eventName: String, handler: js.Function, context: Any): Any = js.native
     
     /**
       * Scroll to this step's element
@@ -226,11 +226,11 @@ object TetherShepherd {
   
   trait IShepherdTourStepOptions extends StObject {
     
-    var advanceOn: js.UndefOr[js.Any] = js.undefined
+    var advanceOn: js.UndefOr[Any] = js.undefined
     
-    var attachTo: js.UndefOr[js.Any] = js.undefined
+    var attachTo: js.UndefOr[Any] = js.undefined
     
-    var beforeShowPromise: js.UndefOr[js.Any] = js.undefined
+    var beforeShowPromise: js.UndefOr[Any] = js.undefined
     
     var buttons: js.UndefOr[js.Array[IShepherdTourButton]] = js.undefined
     
@@ -243,13 +243,13 @@ object TetherShepherd {
     var showOn: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     // TODO: Tie this in with the tether.d.ts
-    var tetherOptions: js.UndefOr[js.Any] = js.undefined
+    var tetherOptions: js.UndefOr[Any] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.undefined
+    var text: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
-    var when: js.UndefOr[js.Any] = js.undefined
+    var when: js.UndefOr[Any] = js.undefined
   }
   object IShepherdTourStepOptions {
     
@@ -260,15 +260,15 @@ object TetherShepherd {
     
     extension [Self <: IShepherdTourStepOptions](x: Self) {
       
-      inline def setAdvanceOn(value: js.Any): Self = StObject.set(x, "advanceOn", value.asInstanceOf[js.Any])
+      inline def setAdvanceOn(value: Any): Self = StObject.set(x, "advanceOn", value.asInstanceOf[js.Any])
       
       inline def setAdvanceOnUndefined: Self = StObject.set(x, "advanceOn", js.undefined)
       
-      inline def setAttachTo(value: js.Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+      inline def setAttachTo(value: Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
       inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
       
-      inline def setBeforeShowPromise(value: js.Any): Self = StObject.set(x, "beforeShowPromise", value.asInstanceOf[js.Any])
+      inline def setBeforeShowPromise(value: Any): Self = StObject.set(x, "beforeShowPromise", value.asInstanceOf[js.Any])
       
       inline def setBeforeShowPromiseUndefined: Self = StObject.set(x, "beforeShowPromise", js.undefined)
       
@@ -276,7 +276,7 @@ object TetherShepherd {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: IShepherdTourButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: IShepherdTourButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -294,11 +294,11 @@ object TetherShepherd {
       
       inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
       
-      inline def setTetherOptions(value: js.Any): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
+      inline def setTetherOptions(value: Any): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
       
       inline def setTetherOptionsUndefined: Self = StObject.set(x, "tetherOptions", js.undefined)
       
-      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
@@ -306,7 +306,7 @@ object TetherShepherd {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setWhen(value: js.Any): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: Any): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
       inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
@@ -319,13 +319,13 @@ object TetherShepherd {
     
     var activeTour: IShepherdTour = js.native
     
-    def off(eventName: String): js.Any = js.native
-    def off(eventName: String, handler: js.Function): js.Any = js.native
+    def off(eventName: String): Any = js.native
+    def off(eventName: String, handler: js.Function): Any = js.native
     
-    def on(eventName: String, handler: js.Function): js.Any = js.native
-    def on(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def on(eventName: String, handler: js.Function): Any = js.native
+    def on(eventName: String, handler: js.Function, context: Any): Any = js.native
     
-    def once(eventName: String, handler: js.Function): js.Any = js.native
-    def once(eventName: String, handler: js.Function, context: js.Any): js.Any = js.native
+    def once(eventName: String, handler: js.Function): Any = js.native
+    def once(eventName: String, handler: js.Function, context: Any): Any = js.native
   }
 }

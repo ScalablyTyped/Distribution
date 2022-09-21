@@ -9,11 +9,10 @@ trait SchemaListDataPointChangesResponse extends StObject {
   /**
     * The data stream ID of the data source with data point changes.
     */
-  var dataSourceId: js.UndefOr[String] = js.undefined
+  var dataSourceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deleted data points for the user. Note, for modifications this should be
-    * parsed before handling insertions.
+    * Deleted data points for the user. Note, for modifications this should be parsed before handling insertions.
     */
   var deletedDataPoint: js.UndefOr[js.Array[SchemaDataPoint]] = js.undefined
   
@@ -23,11 +22,9 @@ trait SchemaListDataPointChangesResponse extends StObject {
   var insertedDataPoint: js.UndefOr[js.Array[SchemaDataPoint]] = js.undefined
   
   /**
-    * The continuation token, which is used to page through large result sets.
-    * Provide this value in a subsequent request to return the next page of
-    * results.
+    * The continuation token, which is used to page through large result sets. Provide this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDataPointChangesResponse {
   
@@ -40,21 +37,25 @@ object SchemaListDataPointChangesResponse {
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
+    inline def setDataSourceIdNull: Self = StObject.set(x, "dataSourceId", null)
+    
     inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     inline def setDeletedDataPoint(value: js.Array[SchemaDataPoint]): Self = StObject.set(x, "deletedDataPoint", value.asInstanceOf[js.Any])
     
     inline def setDeletedDataPointUndefined: Self = StObject.set(x, "deletedDataPoint", js.undefined)
     
-    inline def setDeletedDataPointVarargs(value: SchemaDataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value :_*))
+    inline def setDeletedDataPointVarargs(value: SchemaDataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value*))
     
     inline def setInsertedDataPoint(value: js.Array[SchemaDataPoint]): Self = StObject.set(x, "insertedDataPoint", value.asInstanceOf[js.Any])
     
     inline def setInsertedDataPointUndefined: Self = StObject.set(x, "insertedDataPoint", js.undefined)
     
-    inline def setInsertedDataPointVarargs(value: SchemaDataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value :_*))
+    inline def setInsertedDataPointVarargs(value: SchemaDataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

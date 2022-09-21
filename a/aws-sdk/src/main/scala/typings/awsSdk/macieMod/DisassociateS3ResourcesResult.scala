@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateS3ResourcesResult extends StObject {
   
   /**
-    * S3 resources that couldn't be removed from being monitored and classified by Amazon Macie Classic. An error code and an error message are provided for each failed item. 
+    * (Discontinued) S3 resources that couldn't be removed from being monitored and classified by Amazon Macie Classic. An error code and an error message are provided for each failed item. 
     */
   var failedS3Resources: js.UndefOr[FailedS3Resources] = js.undefined
 }
@@ -24,6 +24,6 @@ object DisassociateS3ResourcesResult {
     
     inline def setFailedS3ResourcesUndefined: Self = StObject.set(x, "failedS3Resources", js.undefined)
     
-    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value :_*))
+    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value*))
   }
 }

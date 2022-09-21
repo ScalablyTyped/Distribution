@@ -10,10 +10,10 @@ object invertColorsOffMod {
   
   @JSImport("material-ui/svg-icons/communication/invert-colors-off", JSImport.Default)
   @js.native
-  class default () extends CommunicationInvertColorsOff
+  open class default () extends CommunicationInvertColorsOff
   
   @JSImport("material-ui/svg-icons/communication/invert-colors-off", "CommunicationInvertColorsOff")
   @js.native
-  class CommunicationInvertColorsOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationInvertColorsOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

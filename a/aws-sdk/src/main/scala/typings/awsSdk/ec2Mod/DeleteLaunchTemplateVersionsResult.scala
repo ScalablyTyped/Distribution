@@ -29,12 +29,12 @@ object DeleteLaunchTemplateVersionsResult {
     
     inline def setSuccessfullyDeletedLaunchTemplateVersionsUndefined: Self = StObject.set(x, "SuccessfullyDeletedLaunchTemplateVersions", js.undefined)
     
-    inline def setSuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseSuccessItem*): Self = StObject.set(x, "SuccessfullyDeletedLaunchTemplateVersions", js.Array(value :_*))
+    inline def setSuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseSuccessItem*): Self = StObject.set(x, "SuccessfullyDeletedLaunchTemplateVersions", js.Array(value*))
     
     inline def setUnsuccessfullyDeletedLaunchTemplateVersions(value: DeleteLaunchTemplateVersionsResponseErrorSet): Self = StObject.set(x, "UnsuccessfullyDeletedLaunchTemplateVersions", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfullyDeletedLaunchTemplateVersionsUndefined: Self = StObject.set(x, "UnsuccessfullyDeletedLaunchTemplateVersions", js.undefined)
     
-    inline def setUnsuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseErrorItem*): Self = StObject.set(x, "UnsuccessfullyDeletedLaunchTemplateVersions", js.Array(value :_*))
+    inline def setUnsuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseErrorItem*): Self = StObject.set(x, "UnsuccessfullyDeletedLaunchTemplateVersions", js.Array(value*))
   }
 }

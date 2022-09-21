@@ -4,7 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.BABYLON.IDisposable because Already inherited
+- typings.babylonjs.BABYLON.IGizmo because Already inherited
+- typings.babylonjs.BABYLON.IBoundingBoxGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined ignoreChildren, includeChildPredicate, rotationSphereSize, scaleBoxSize, fixedDragMeshScreenSize, fixedDragMeshBoundsSize, fixedDragMeshScreenSizeDistanceFactor, onDragStartObservable, onScaleBoxDragObservable, onScaleBoxDragEndObservable, onRotationSphereDragObservable, onRotationSphereDragEndObservable, scalePivot, axisFactor, scaleDragSpeed, setColor, getScaleBoxes, updateBoundingBox, setEnabledRotationAxis, setEnabledScaling, setEnabledScaling, enableDragBehavior */ @js.native
 trait BoundingBoxGizmo
   extends StObject
      with Gizmo {
@@ -12,47 +15,71 @@ trait BoundingBoxGizmo
   /**
     * Mesh used as a pivot to rotate the attached node
     */
-  /* private */ var _anchorMesh: js.Any = js.native
+  /* protected */ var _anchorMesh: AbstractMesh = js.native
   
   /* protected */ def _attachedNodeChanged(value: Nullable[AbstractMesh]): Unit = js.native
   
-  /* private */ var _boundingDimensions: js.Any = js.native
+  /**
+    * Scale factor used for masking some axis
+    */
+  /* protected */ var _axisFactor: Vector3 = js.native
   
-  /* private */ var _dragMesh: js.Any = js.native
+  /* protected */ var _boundingDimensions: Vector3 = js.native
   
-  /* private */ var _existingMeshScale: js.Any = js.native
+  /* protected */ var _coloredMaterial: StandardMaterial = js.native
   
-  /* private */ var _lineBoundingBox: js.Any = js.native
+  /* protected */ var _dragMesh: Nullable[Mesh] = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* protected */ var _existingMeshScale: Vector3 = js.native
   
-  /* private */ var _renderObserver: js.Any = js.native
+  /* protected */ var _hoverColoredMaterial: StandardMaterial = js.native
   
-  /* private */ var _rotateSpheresParent: js.Any = js.native
+  /* protected */ var _lineBoundingBox: AbstractMesh = js.native
   
-  /* private */ var _scaleBoxesParent: js.Any = js.native
+  /* protected */ var _pointerDragBehavior: PointerDragBehavior = js.native
   
-  /* private */ var _scaleDragSpeed: js.Any = js.native
+  /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
   
-  /* private */ var _selectNode: js.Any = js.native
+  /* protected */ var _renderObserver: Nullable[Observer[Scene]] = js.native
   
-  /* private */ var _tmpQuaternion: js.Any = js.native
+  /* protected */ var _rotateSpheresParent: AbstractMesh = js.native
   
-  /* private */ var _tmpRotationMatrix: js.Any = js.native
+  /* protected */ var _scaleBoxesParent: AbstractMesh = js.native
   
-  /* private */ var _tmpVector: js.Any = js.native
+  /* protected */ var _scaleDragSpeed: Double = js.native
   
-  /* private */ var _updateDummy: js.Any = js.native
+  /* protected */ def _selectNode(selectedMesh: Nullable[Mesh]): Unit = js.native
   
-  /* private */ var _updateRotationSpheres: js.Any = js.native
+  /* private */ var _tmpQuaternion: Any = js.native
   
-  /* private */ var _updateScaleBoxes: js.Any = js.native
+  /* private */ var _tmpRotationMatrix: Any = js.native
   
-  /* private */ var coloredMaterial: js.Any = js.native
+  /* private */ var _tmpVector: Any = js.native
+  
+  /* protected */ def _updateDummy(): Unit = js.native
+  
+  /* protected */ def _updateRotationSpheres(): Unit = js.native
+  
+  /* protected */ def _updateScaleBoxes(): Unit = js.native
+  
+  /**
+    * Gets the axis factor
+    * @returns the Vector3 factor value
+    */
+  def axisFactor: Vector3 = js.native
+  /**
+    * Sets the axis factor
+    * @param factor the Vector3 value
+    */
+  def axisFactor_=(factor: Vector3): Unit = js.native
+  /** Scale factor vector used for masking some axis */
+  @JSName("axisFactor")
+  var axisFactor_FBoundingBoxGizmo: Vector3 = js.native
   
   /**
     * Enables a pointer drag behavior on the bounding box of the gizmo
     */
+  /** Enables a pointer drag behavior on the bounding box of the gizmo */
   def enableDragBehavior(): Unit = js.native
   
   /**
@@ -72,10 +99,14 @@ trait BoundingBoxGizmo
     */
   var fixedDragMeshScreenSizeDistanceFactor: Double = js.native
   
-  /* private */ var hoverColoredMaterial: js.Any = js.native
+  /**
+    * returns an array containing all boxes used for scaling (in increasing x, y and z orders)
+    */
+  /** Returns an array containing all boxes used for scaling (in increasing x, y and z orders) */
+  def getScaleBoxes(): js.Array[AbstractMesh] = js.native
   
   /**
-    * If child meshes should be ignored when calculating the boudning box. This should be set to true to avoid perf hits with heavily nested meshes (Default: false)
+    * If child meshes should be ignored when calculating the bounding box. This should be set to true to avoid perf hits with heavily nested meshes (Default: false)
     */
   var ignoreChildren: Boolean = js.native
   
@@ -109,7 +140,10 @@ trait BoundingBoxGizmo
     */
   var onScaleBoxDragObservable: Observable[js.Object] = js.native
   
-  /* private */ var pointerDragBehavior: js.Any = js.native
+  /**
+    * Get the pointerDragBehavior
+    */
+  def pointerDragBehavior: PointerDragBehavior = js.native
   
   /**
     * The size of the rotation spheres attached to the bounding box (Default: 0.1)
@@ -122,6 +156,20 @@ trait BoundingBoxGizmo
   var scaleBoxSize: Double = js.native
   
   /**
+    * Gets scale drag speed
+    * @returns the scale speed number
+    */
+  def scaleDragSpeed: Double = js.native
+  /**
+    * Sets scale drag speed value
+    * @param value the new speed value
+    */
+  def scaleDragSpeed_=(value: Double): Unit = js.native
+  /** Scale factor scalar affecting all axes' drag speed */
+  @JSName("scaleDragSpeed")
+  var scaleDragSpeed_FBoundingBoxGizmo: Double = js.native
+  
+  /**
     * Relative bounding box pivot used when scaling the attached node. When null object with scale from the opposite corner. 0.5,0.5,0.5 for center and 0.5,0,0.5 for bottom (Default: null)
     */
   var scalePivot: Nullable[Vector3] = js.native
@@ -131,6 +179,11 @@ trait BoundingBoxGizmo
     * @param color the color to set
     */
   def setColor(color: Color3): Unit = js.native
+  
+  /**
+    * CustomMeshes are not supported by this gizmo
+    */
+  def setCustomMesh(): Unit = js.native
   
   /**
     * Enables rotation on the specified axis and disables rotation on the others
@@ -149,5 +202,6 @@ trait BoundingBoxGizmo
   /**
     * Updates the bounding box information for the Gizmo
     */
+  /** Updates the bounding box information for the Gizmo */
   def updateBoundingBox(): Unit = js.native
 }

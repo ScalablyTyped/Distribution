@@ -19,7 +19,7 @@ trait RefreshSchemasStatus extends StObject {
   /**
     * The date the schema was last refreshed.
     */
-  var LastRefreshDate: js.UndefOr[TStamp] = js.undefined
+  var LastRefreshDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication instance.
@@ -48,7 +48,7 @@ object RefreshSchemasStatus {
     
     inline def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
-    inline def setLastRefreshDate(value: TStamp): Self = StObject.set(x, "LastRefreshDate", value.asInstanceOf[js.Any])
+    inline def setLastRefreshDate(value: js.Date): Self = StObject.set(x, "LastRefreshDate", value.asInstanceOf[js.Any])
     
     inline def setLastRefreshDateUndefined: Self = StObject.set(x, "LastRefreshDate", js.undefined)
     

@@ -17,6 +17,12 @@ object ChannelType extends StObject {
     extends StObject
        with ChannelType
   
+  /** A task contact. */
+  @js.native
+  sealed trait TASK
+    extends StObject
+       with ChannelType
+  
   /** A voice contact. */
   @js.native
   sealed trait VOICE

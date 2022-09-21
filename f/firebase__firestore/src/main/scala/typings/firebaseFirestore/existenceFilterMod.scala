@@ -1,17 +1,16 @@
 package typings.firebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/existence_filter", JSImport.Namespace)
-@js.native
-object existenceFilterMod extends js.Object {
+object existenceFilterMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/remote/existence_filter", "ExistenceFilter")
   @js.native
-  class ExistenceFilter protected () extends js.Object {
+  open class ExistenceFilter protected () extends StObject {
     def this(count: Double) = this()
+    
     var count: Double = js.native
   }
-  
 }
-

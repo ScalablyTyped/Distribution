@@ -11,29 +11,29 @@ trait IWebGeocoordinates extends StObject {
   
   val accuracy: Double
   
-  val altitude: js.Any
+  val altitude: Any
   
-  val altitudeAccuracy: js.Any
+  val altitudeAccuracy: Any
   
-  val heading: js.Any
+  val heading: Any
   
   val latitude: Double
   
   val longitude: Double
   
-  val speed: js.Any
+  val speed: Any
 }
 object IWebGeocoordinates {
   
   inline def apply(
     MSHTMLDotIWebGeocoordinates_typekey: IWebGeocoordinates,
     accuracy: Double,
-    altitude: js.Any,
-    altitudeAccuracy: js.Any,
-    heading: js.Any,
+    altitude: Any,
+    altitudeAccuracy: Any,
+    heading: Any,
     latitude: Double,
     longitude: Double,
-    speed: js.Any
+    speed: Any
   ): IWebGeocoordinates = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.IWebGeocoordinates_typekey")(MSHTMLDotIWebGeocoordinates_typekey.asInstanceOf[js.Any])
@@ -44,11 +44,11 @@ object IWebGeocoordinates {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    inline def setAltitude(value: js.Any): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Any): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    inline def setAltitudeAccuracy(value: js.Any): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+    inline def setAltitudeAccuracy(value: Any): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
     
-    inline def setHeading(value: js.Any): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Any): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object IWebGeocoordinates {
     
     inline def setMSHTMLDotIWebGeocoordinates_typekey(value: IWebGeocoordinates): Self = StObject.set(x, "MSHTML.IWebGeocoordinates_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSpeed(value: js.Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

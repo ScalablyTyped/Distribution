@@ -65,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Chart
   extends StObject
-     with AddSheetResult[js.Any]
+     with AddSheetResult[Any]
      with Sheet {
   
   def Activate(): Unit = js.native
@@ -75,7 +75,7 @@ trait Chart
   def ApplyChartTemplate(Filename: String): Unit = js.native
   
   def ApplyCustomType(ChartType: XlChartType): Unit = js.native
-  def ApplyCustomType(ChartType: XlChartType, TypeName: js.Any): Unit = js.native
+  def ApplyCustomType(ChartType: XlChartType, TypeName: Any): Unit = js.native
   
   /** @param Type [Type=2] */
   def ApplyDataLabels(
@@ -91,57 +91,19 @@ trait Chart
     Separator: js.UndefOr[String]
   ): Unit = js.native
   
-  @JSName("ApplyLayout")
-  def ApplyLayout_1(Layout: `1`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_1(Layout: `1`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_10(Layout: `10`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_10(Layout: `10`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_2(Layout: `2`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_2(Layout: `2`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_3(Layout: `3`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_3(Layout: `3`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_4(Layout: `4`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_4(Layout: `4`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_5(Layout: `5`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_5(Layout: `5`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_6(Layout: `6`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_6(Layout: `6`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_7(Layout: `7`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_7(Layout: `7`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_8(Layout: `8`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_8(Layout: `8`, ChartType: XlChartType): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_9(Layout: `9`): Unit = js.native
-  @JSName("ApplyLayout")
-  def ApplyLayout_9(Layout: `9`, ChartType: XlChartType): Unit = js.native
+  def ApplyLayout(Layout: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`): Unit = js.native
+  def ApplyLayout(Layout: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`, ChartType: XlChartType): Unit = js.native
   
-  def Arcs(): js.Any = js.native
-  def Arcs(Index: js.Any): js.Any = js.native
+  def Arcs(): Any = js.native
+  def Arcs(Index: Any): Any = js.native
   
   val Area3DGroup: ChartGroup = js.native
   
-  def AreaGroups(): js.Any = js.native
-  def AreaGroups(Index: js.Any): js.Any = js.native
+  def AreaGroups(): Any = js.native
+  def AreaGroups(Index: Any): Any = js.native
   
   def AutoFormat(Gallery: Double): Unit = js.native
-  def AutoFormat(Gallery: Double, Format: js.Any): Unit = js.native
+  def AutoFormat(Gallery: Double, Format: Any): Unit = js.native
   
   var AutoScaling: Boolean = js.native
   
@@ -155,13 +117,13 @@ trait Chart
   
   val Bar3DGroup: ChartGroup = js.native
   
-  def BarGroups(): js.Any = js.native
-  def BarGroups(Index: js.Any): js.Any = js.native
+  def BarGroups(): Any = js.native
+  def BarGroups(Index: Any): Any = js.native
   
   var BarShape: XlBarShape = js.native
   
-  def Buttons(): js.Any = js.native
-  def Buttons(Index: js.Any): js.Any = js.native
+  def Buttons(): Any = js.native
+  def Buttons(Index: Any): Any = js.native
   
   val ChartArea: typings.activexExcel.Excel.ChartArea = js.native
   
@@ -190,8 +152,8 @@ trait Chart
     ExtraTitle: js.UndefOr[String]
   ): Unit = js.native
   
-  def CheckBoxes(): js.Any = js.native
-  def CheckBoxes(Index: js.Any): js.Any = js.native
+  def CheckBoxes(): Any = js.native
+  def CheckBoxes(Index: Any): Any = js.native
   
   def CheckSpelling(): Unit = js.native
   def CheckSpelling(CustomDictionary: String): Unit = js.native
@@ -221,8 +183,8 @@ trait Chart
   
   val Column3DGroup: ChartGroup = js.native
   
-  def ColumnGroups(): js.Any = js.native
-  def ColumnGroups(Index: js.Any): js.Any = js.native
+  def ColumnGroups(): Any = js.native
+  def ColumnGroups(Index: Any): Any = js.native
   
   def Copy(): Unit = js.native
   def Copy(Before: Unit, After: Sheet): Unit = js.native
@@ -251,13 +213,13 @@ trait Chart
     * @param Size [Size=1]
     */
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: js.UndefOr[XlPictureAppearance],
     Size: js.UndefOr[XlPictureAppearance],
-    ContainsPICT: js.UndefOr[js.Any],
-    ContainsBIFF: js.UndefOr[js.Any],
-    ContainsRTF: js.UndefOr[js.Any],
-    ContainsVALU: js.UndefOr[js.Any]
+    ContainsPICT: js.UndefOr[Any],
+    ContainsBIFF: js.UndefOr[Any],
+    ContainsRTF: js.UndefOr[Any],
+    ContainsVALU: js.UndefOr[Any]
   ): Unit = js.native
   
   val Creator: XlCreator = js.native
@@ -272,17 +234,17 @@ trait Chart
   
   var DisplayBlanksAs: XlDisplayBlanksAs = js.native
   
-  def DoughnutGroups(): js.Any = js.native
-  def DoughnutGroups(Index: js.Any): js.Any = js.native
+  def DoughnutGroups(): Any = js.native
+  def DoughnutGroups(Index: Any): Any = js.native
   
-  def DrawingObjects(): js.Any = js.native
-  def DrawingObjects(Index: js.Any): js.Any = js.native
+  def DrawingObjects(): Any = js.native
+  def DrawingObjects(Index: Any): Any = js.native
   
-  def Drawings(): js.Any = js.native
-  def Drawings(Index: js.Any): js.Any = js.native
+  def Drawings(): Any = js.native
+  def Drawings(Index: Any): Any = js.native
   
-  def DropDowns(): js.Any = js.native
-  def DropDowns(Index: js.Any): js.Any = js.native
+  def DropDowns(): Any = js.native
+  def DropDowns(Index: Any): Any = js.native
   
   var Dummy24: Boolean = js.native
   
@@ -290,7 +252,7 @@ trait Chart
   
   var Elevation: Double = js.native
   
-  def Evaluate(Name: String): js.Any = js.native
+  def Evaluate(Name: String): Any = js.native
   
   /* private */ @JSName("Excel.Chart_typekey")
   var ExcelDotChart_typekey: Chart = js.native
@@ -309,7 +271,7 @@ trait Chart
     From: js.UndefOr[Double],
     To: js.UndefOr[Double],
     OpenAfterPublish: js.UndefOr[Boolean],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
   val Floor: typings.activexExcel.Excel.Floor = js.native
@@ -318,11 +280,11 @@ trait Chart
   
   def GetChartElement(x: Double, y: Double, ElementID: Double, Arg1: Double, Arg2: Double): Unit = js.native
   
-  def GroupBoxes(): js.Any = js.native
-  def GroupBoxes(Index: js.Any): js.Any = js.native
+  def GroupBoxes(): Any = js.native
+  def GroupBoxes(Index: Any): Any = js.native
   
-  def GroupObjects(): js.Any = js.native
-  def GroupObjects(Index: js.Any): js.Any = js.native
+  def GroupObjects(): Any = js.native
+  def GroupObjects(Index: Any): Any = js.native
   
   def HasAxis(): Boolean = js.native
   def HasAxis(Index1: Unit, Index2: XlAxisGroup): Boolean = js.native
@@ -346,21 +308,21 @@ trait Chart
   
   val Index: Double = js.native
   
-  def Labels(): js.Any = js.native
-  def Labels(Index: js.Any): js.Any = js.native
+  def Labels(): Any = js.native
+  def Labels(Index: Any): Any = js.native
   
   val Legend: typings.activexExcel.Excel.Legend = js.native
   
   val Line3DGroup: ChartGroup = js.native
   
-  def LineGroups(): js.Any = js.native
-  def LineGroups(Index: js.Any): js.Any = js.native
+  def LineGroups(): Any = js.native
+  def LineGroups(Index: Any): Any = js.native
   
-  def Lines(): js.Any = js.native
-  def Lines(Index: js.Any): js.Any = js.native
+  def Lines(): Any = js.native
+  def Lines(Index: Any): Any = js.native
   
-  def ListBoxes(): js.Any = js.native
-  def ListBoxes(Index: js.Any): js.Any = js.native
+  def ListBoxes(): Any = js.native
+  def ListBoxes(Index: Any): Any = js.native
   
   def Location(Where: XlChartLocation): Chart = js.native
   def Location(Where: XlChartLocation, Name: String): Chart = js.native
@@ -388,33 +350,28 @@ trait Chart
   
   var OnSheetDeactivate: String = js.native
   
-  def OptionButtons(): js.Any = js.native
-  def OptionButtons(Index: js.Any): js.Any = js.native
+  def OptionButtons(): Any = js.native
+  def OptionButtons(Index: Any): Any = js.native
   
-  def Ovals(): js.Any = js.native
-  def Ovals(Index: js.Any): js.Any = js.native
+  def Ovals(): Any = js.native
+  def Ovals(Index: Any): Any = js.native
   
   val PageSetup: typings.activexExcel.Excel.PageSetup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): Unit = js.native
-  @JSName("Paste")
-  def Paste_4104(Type: `-4104`): Unit = js.native
-  @JSName("Paste")
-  def Paste_4122(Type: `-4122`): Unit = js.native
-  @JSName("Paste")
-  def Paste_4123(Type: `-4123`): Unit = js.native
+  def Paste(Type: `-4104` | `-4122` | `-4123`): Unit = js.native
   
   var Perspective: Double = js.native
   
-  def Pictures(): js.Any = js.native
-  def Pictures(Index: js.Any): js.Any = js.native
+  def Pictures(): Any = js.native
+  def Pictures(Index: Any): Any = js.native
   
   val Pie3DGroup: ChartGroup = js.native
   
-  def PieGroups(): js.Any = js.native
-  def PieGroups(Index: js.Any): js.Any = js.native
+  def PieGroups(): Any = js.native
+  def PieGroups(Index: Any): Any = js.native
   
   val PivotLayout: typings.activexExcel.Excel.PivotLayout = js.native
   
@@ -435,7 +392,7 @@ trait Chart
     PrintToFile: js.UndefOr[T],
     Collate: js.UndefOr[Boolean],
     PrToFileName: js.UndefOr[PrintToFileName[T]]
-  ): js.Any = js.native
+  ): Any = js.native
   
   def PrintPreview(): Unit = js.native
   def PrintPreview(EnableChanges: Boolean): Unit = js.native
@@ -597,11 +554,11 @@ trait Chart
   
   val ProtectionMode: Boolean = js.native
   
-  def RadarGroups(): js.Any = js.native
-  def RadarGroups(Index: js.Any): js.Any = js.native
+  def RadarGroups(): Any = js.native
+  def RadarGroups(Index: Any): Any = js.native
   
-  def Rectangles(): js.Any = js.native
-  def Rectangles(Index: js.Any): js.Any = js.native
+  def Rectangles(): Any = js.native
+  def Rectangles(Index: Any): Any = js.native
   
   def Refresh(): Unit = js.native
   
@@ -618,19 +575,19 @@ trait Chart
     ReadOnlyRecommended: js.UndefOr[Boolean],
     CreateBackup: js.UndefOr[Boolean],
     AddToMru: js.UndefOr[Boolean],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any],
-    Local: js.UndefOr[js.Any]
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any],
+    Local: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveChartTemplate(Filename: String): Unit = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   
-  def ScrollBars(): js.Any = js.native
-  def ScrollBars(Index: js.Any): js.Any = js.native
+  def ScrollBars(): Any = js.native
+  def ScrollBars(Index: Any): Any = js.native
   
   def Select(): Unit = js.native
   def Select(Replace: Boolean): Unit = js.native
@@ -641,7 +598,7 @@ trait Chart
   
   def SetBackgroundPicture(Filename: String): Unit = js.native
   
-  def SetDefaultChart(Name: js.Any): Unit = js.native
+  def SetDefaultChart(Name: Any): Unit = js.native
   
   def SetElement(Element: MsoChartElementType): Unit = js.native
   
@@ -671,8 +628,8 @@ trait Chart
   
   var SizeWithWindow: Boolean = js.native
   
-  def Spinners(): js.Any = js.native
-  def Spinners(Index: js.Any): js.Any = js.native
+  def Spinners(): Any = js.native
+  def Spinners(Index: Any): Any = js.native
   
   var SubType: Double = js.native
   
@@ -680,8 +637,8 @@ trait Chart
   
   val Tab: typings.activexExcel.Excel.Tab = js.native
   
-  def TextBoxes(): js.Any = js.native
-  def TextBoxes(Index: js.Any): js.Any = js.native
+  def TextBoxes(): Any = js.native
+  def TextBoxes(Index: Any): Any = js.native
   
   var Type: Double = js.native
   
@@ -694,160 +651,94 @@ trait Chart
   
   var WallsAndGridlines2D: Boolean = js.native
   
-  def XYGroups(): js.Any = js.native
-  def XYGroups(Index: js.Any): js.Any = js.native
+  def XYGroups(): Any = js.native
+  def XYGroups(Index: Any): Any = js.native
   
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
   
   var _CodeName: String = js.native
   
-  def _Evaluate(Name: js.Any): js.Any = js.native
+  def _Evaluate(Name: Any): Any = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
   
   def _SaveAs(
     Filename: String,
-    FileFormat: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    WriteResPassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    CreateBackup: js.UndefOr[js.Any],
-    AddToMru: js.UndefOr[js.Any],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any]
+    FileFormat: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    WriteResPassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    CreateBackup: js.UndefOr[Any],
+    AddToMru: js.UndefOr[Any],
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any]
   ): Unit = js.native
   
   def __PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any]
   ): Unit = js.native
 }

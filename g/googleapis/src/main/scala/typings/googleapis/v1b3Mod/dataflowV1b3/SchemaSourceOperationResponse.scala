@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of a SourceOperationRequest, specified in
-  * ReportWorkItemStatusRequest.source_operation when the work item is
-  * completed.
-  */
 trait SchemaSourceOperationResponse extends StObject {
   
   /**

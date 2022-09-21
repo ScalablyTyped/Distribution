@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NormalizationLinkedField
   extends StObject
      with NormalizationField
+     with NormalizationNode
      with NormalizationSelectableNode {
   
-  // 'LinkedField';
+  // "LinkedField";
   val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.Array[NormalizationArgument]
+  val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.undefined
   
   val concreteType: js.UndefOr[String | Null] = js.undefined
   
@@ -28,14 +29,8 @@ trait NormalizationLinkedField
 }
 object NormalizationLinkedField {
   
-  inline def apply(
-    args: js.Array[NormalizationArgument],
-    kind: String,
-    name: String,
-    plural: Boolean,
-    selections: js.Array[NormalizationSelection]
-  ): NormalizationLinkedField = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  inline def apply(kind: String, name: String, plural: Boolean, selections: js.Array[NormalizationSelection]): NormalizationLinkedField = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLinkedField]
   }
   
@@ -49,7 +44,11 @@ object NormalizationLinkedField {
     
     inline def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsNull: Self = StObject.set(x, "args", null)
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setConcreteType(value: String): Self = StObject.set(x, "concreteType", value.asInstanceOf[js.Any])
     
@@ -65,7 +64,7 @@ object NormalizationLinkedField {
     
     inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value*))
     
     inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     

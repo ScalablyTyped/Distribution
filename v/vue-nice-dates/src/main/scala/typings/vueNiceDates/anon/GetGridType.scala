@@ -8,25 +8,25 @@ trait GetGridType extends StObject {
   
   def getGridType(`type`: String, isReverse: Boolean): String
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit
+  def handleClickDate(date: js.Date, `type`: String): Unit
   
   def handleClickTitle(): Unit
   
-  def handleMouseEnterDate(date: typings.std.Date): Unit
+  def handleMouseEnterDate(date: js.Date): Unit
   
   def handleMouseLeaveDates(): Unit
   
-  def handleNavigate(date: typings.std.Date): Unit
+  def handleNavigate(date: js.Date): Unit
 }
 object GetGridType {
   
   inline def apply(
     getGridType: (String, Boolean) => String,
-    handleClickDate: (typings.std.Date, String) => Unit,
+    handleClickDate: (js.Date, String) => Unit,
     handleClickTitle: () => Unit,
-    handleMouseEnterDate: typings.std.Date => Unit,
+    handleMouseEnterDate: js.Date => Unit,
     handleMouseLeaveDates: () => Unit,
-    handleNavigate: typings.std.Date => Unit
+    handleNavigate: js.Date => Unit
   ): GetGridType = {
     val __obj = js.Dynamic.literal(getGridType = js.Any.fromFunction2(getGridType), handleClickDate = js.Any.fromFunction2(handleClickDate), handleClickTitle = js.Any.fromFunction0(handleClickTitle), handleMouseEnterDate = js.Any.fromFunction1(handleMouseEnterDate), handleMouseLeaveDates = js.Any.fromFunction0(handleMouseLeaveDates), handleNavigate = js.Any.fromFunction1(handleNavigate))
     __obj.asInstanceOf[GetGridType]
@@ -36,14 +36,14 @@ object GetGridType {
     
     inline def setGetGridType(value: (String, Boolean) => String): Self = StObject.set(x, "getGridType", js.Any.fromFunction2(value))
     
-    inline def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
+    inline def setHandleClickDate(value: (js.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
     inline def setHandleClickTitle(value: () => Unit): Self = StObject.set(x, "handleClickTitle", js.Any.fromFunction0(value))
     
-    inline def setHandleMouseEnterDate(value: typings.std.Date => Unit): Self = StObject.set(x, "handleMouseEnterDate", js.Any.fromFunction1(value))
+    inline def setHandleMouseEnterDate(value: js.Date => Unit): Self = StObject.set(x, "handleMouseEnterDate", js.Any.fromFunction1(value))
     
     inline def setHandleMouseLeaveDates(value: () => Unit): Self = StObject.set(x, "handleMouseLeaveDates", js.Any.fromFunction0(value))
     
-    inline def setHandleNavigate(value: typings.std.Date => Unit): Self = StObject.set(x, "handleNavigate", js.Any.fromFunction1(value))
+    inline def setHandleNavigate(value: js.Date => Unit): Self = StObject.set(x, "handleNavigate", js.Any.fromFunction1(value))
   }
 }

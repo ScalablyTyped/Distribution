@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "slate" : "0.82.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "slate" : "0.82.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

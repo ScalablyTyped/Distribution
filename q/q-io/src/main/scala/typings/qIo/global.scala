@@ -1,13 +1,12 @@
 package typings.qIo
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.q.mod.Promise
 import typings.qIo.QioFS.Stats
 import typings.qIo.QioHTTP.Request
 import typings.qIo.QioHTTP.Response
 import typings.qIo.anon.TypeofQioFS
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +27,9 @@ object global {
     inline def absolute(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("absolute")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def append(path: String, content: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
-    inline def append(path: String, content: String, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def append(path: String, content: String, options: Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     inline def append(path: String, content: Buffer): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
-    inline def append(path: String, content: Buffer, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def append(path: String, content: Buffer, options: Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     
     inline def base(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base")(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
     
@@ -66,21 +65,21 @@ object global {
     
     inline def isSymbolicLink(path: String): Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolicLink")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Boolean]]
     
-    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     inline def join(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def lastAccessed(path: String): Promise[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAccessed")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Date]]
+    inline def lastAccessed(path: String): Promise[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAccessed")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Date]]
     
-    inline def lastModified(path: String): Promise[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastModified")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Date]]
+    inline def lastModified(path: String): Promise[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastModified")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Date]]
     
-    inline def link(source: String, target: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def link(source: String, target: Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     
     inline def list(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
     
     inline def listDirectoryTree(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDirectoryTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
     
     inline def listTree(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
-    inline def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ js.Any, Boolean]): Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listTree")(path.asInstanceOf[js.Any], guard.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Array[String]]]
+    inline def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ Any, Boolean]): Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listTree")(path.asInstanceOf[js.Any], guard.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Array[String]]]
     
     inline def makeDirectory(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
     inline def makeDirectory(path: String, mode: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectory")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
@@ -92,14 +91,14 @@ object global {
     
     inline def move(source: String, target: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     
-    inline def normal(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normal(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(path.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     inline def normal(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def open(path: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
-    inline def open(path: String, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def open(path: String): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
+    inline def open(path: String, options: Any): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
     
-    inline def read(path: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
-    inline def read(path: String, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def read(path: String): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
+    inline def read(path: String, options: Any): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
     
     inline def readLink(path: String): Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLink")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[String]]
     
@@ -117,7 +116,7 @@ object global {
     
     inline def reroot(path: String): TypeofQioFS = ^.asInstanceOf[js.Dynamic].applyDynamic("reroot")(path.asInstanceOf[js.Any]).asInstanceOf[TypeofQioFS]
     
-    inline def resolve(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     inline def resolve(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def root(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("root")(path.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -137,9 +136,9 @@ object global {
     inline def toObject(path: String): StringDictionary[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(path.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Buffer]]
     
     inline def write(path: String, content: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
-    inline def write(path: String, content: String, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def write(path: String, content: String, options: Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
     inline def write(path: String, content: Buffer): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
-    inline def write(path: String, content: Buffer, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def write(path: String, content: Buffer, options: Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   }
   
   object QioHTTP {

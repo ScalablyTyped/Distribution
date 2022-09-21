@@ -16,12 +16,12 @@ trait SetLoggingServiceRequest extends StObject {
     */
   var loggingService: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster) of the cluster to set logging. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster) of the cluster to set logging. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

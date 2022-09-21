@@ -10,10 +10,10 @@ Find how many values of a discrete periodic function are contained in an interva
 | ------------------ | :-------------: |
 | Full name          | contained-periodic-values |
 | Keywords           | mathematics, math, period, periodic, contained, solution, function |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1334771 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 148584.66666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/jmeas/contained-periodic-values.js)

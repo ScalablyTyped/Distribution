@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("p-fifo", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with PFifo[T] {
     

@@ -1,17 +1,15 @@
 package typings.firebaseMessaging
 
 import typings.firebaseMessaging.tokenDetailsMod.TokenDetails
-import typings.std.ArrayBuffer
 import typings.std.ArrayBufferLike
 import typings.std.PushSubscription
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrateOldDatabaseMod {
   
-  @JSImport("@firebase/messaging/dist/helpers/migrate-old-database", JSImport.Namespace)
+  @JSImport("@firebase/messaging/dist/esm/src/helpers/migrate-old-database", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -37,7 +35,7 @@ object migrateOldDatabaseMod {
     
     var swScope: String
     
-    var vapidKey: String | Uint8Array
+    var vapidKey: String | js.typedarray.Uint8Array
   }
   object V2TokenDetails {
     
@@ -47,7 +45,7 @@ object migrateOldDatabaseMod {
       fcmToken: String,
       subscription: PushSubscription,
       swScope: String,
-      vapidKey: String | Uint8Array
+      vapidKey: String | js.typedarray.Uint8Array
     ): V2TokenDetails = {
       val __obj = js.Dynamic.literal(fcmPushSet = fcmPushSet.asInstanceOf[js.Any], fcmSenderId = fcmSenderId.asInstanceOf[js.Any], fcmToken = fcmToken.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], swScope = swScope.asInstanceOf[js.Any], vapidKey = vapidKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[V2TokenDetails]
@@ -81,13 +79,13 @@ object migrateOldDatabaseMod {
       
       inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      inline def setVapidKey(value: String | Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
   
   trait V3TokenDetails extends StObject {
     
-    var auth: ArrayBuffer
+    var auth: js.typedarray.ArrayBuffer
     
     var createTime: Double
     
@@ -99,24 +97,24 @@ object migrateOldDatabaseMod {
     
     var fcmToken: String
     
-    var p256dh: ArrayBuffer
+    var p256dh: js.typedarray.ArrayBuffer
     
     var swScope: String
     
-    var vapidKey: Uint8Array
+    var vapidKey: js.typedarray.Uint8Array
   }
   object V3TokenDetails {
     
     inline def apply(
-      auth: ArrayBuffer,
+      auth: js.typedarray.ArrayBuffer,
       createTime: Double,
       endpoint: String,
       fcmPushSet: String,
       fcmSenderId: String,
       fcmToken: String,
-      p256dh: ArrayBuffer,
+      p256dh: js.typedarray.ArrayBuffer,
       swScope: String,
-      vapidKey: Uint8Array
+      vapidKey: js.typedarray.Uint8Array
     ): V3TokenDetails = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], fcmPushSet = fcmPushSet.asInstanceOf[js.Any], fcmSenderId = fcmSenderId.asInstanceOf[js.Any], fcmToken = fcmToken.asInstanceOf[js.Any], p256dh = p256dh.asInstanceOf[js.Any], swScope = swScope.asInstanceOf[js.Any], vapidKey = vapidKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[V3TokenDetails]
@@ -124,7 +122,7 @@ object migrateOldDatabaseMod {
     
     extension [Self <: V3TokenDetails](x: Self) {
       
-      inline def setAuth(value: ArrayBuffer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
       inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -136,11 +134,11 @@ object migrateOldDatabaseMod {
       
       inline def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
       
-      inline def setP256dh(value: ArrayBuffer): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
+      inline def setP256dh(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
       
       inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      inline def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,7 +158,7 @@ object migrateOldDatabaseMod {
     
     var swScope: String
     
-    var vapidKey: Uint8Array
+    var vapidKey: js.typedarray.Uint8Array
   }
   object V4TokenDetails {
     
@@ -172,7 +170,7 @@ object migrateOldDatabaseMod {
       fcmToken: String,
       p256dh: ArrayBufferLike,
       swScope: String,
-      vapidKey: Uint8Array
+      vapidKey: js.typedarray.Uint8Array
     ): V4TokenDetails = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], fcmSenderId = fcmSenderId.asInstanceOf[js.Any], fcmToken = fcmToken.asInstanceOf[js.Any], p256dh = p256dh.asInstanceOf[js.Any], swScope = swScope.asInstanceOf[js.Any], vapidKey = vapidKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[V4TokenDetails]
@@ -194,7 +192,7 @@ object migrateOldDatabaseMod {
       
       inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      inline def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
 }

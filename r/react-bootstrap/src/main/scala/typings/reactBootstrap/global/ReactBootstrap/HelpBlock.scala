@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.HelpBlock")
 @js.native
-class HelpBlock ()
+open class HelpBlock ()
   extends typings.reactBootstrap.mod.HelpBlock

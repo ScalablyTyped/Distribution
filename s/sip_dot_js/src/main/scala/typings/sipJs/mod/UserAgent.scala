@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new instance of the `UserAgent` class.
   * @param options - Options bucket. See {@link UserAgentOptions} for details.
   */
-class UserAgent ()
+open class UserAgent ()
   extends typings.sipJs.apiMod.UserAgent {
   def this(options: PartialUserAgentOptions) = this()
 }
@@ -25,8 +25,8 @@ object UserAgent {
   /** Default user agent options. */
   @JSImport("sip.js", "UserAgent.defaultOptions")
   @js.native
-  def defaultOptions: js.Any = js.native
-  inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  def defaultOptions: Any = js.native
+  inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   /**
     * Create a URI instance from a string.
@@ -47,6 +47,6 @@ object UserAgent {
     */
   @JSImport("sip.js", "UserAgent.stripUndefinedProperties")
   @js.native
-  def stripUndefinedProperties: js.Any = js.native
-  inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+  def stripUndefinedProperties: Any = js.native
+  inline def stripUndefinedProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
 }

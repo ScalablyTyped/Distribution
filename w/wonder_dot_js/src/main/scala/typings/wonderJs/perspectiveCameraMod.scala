@@ -9,7 +9,7 @@ object perspectiveCameraMod {
   
   @JSImport("wonder.js/dist/es2015/component/camera/PerspectiveCamera", "PerspectiveCamera")
   @js.native
-  class PerspectiveCamera () extends Camera {
+  open class PerspectiveCamera () extends Camera {
     
     var aspect: Double = js.native
     

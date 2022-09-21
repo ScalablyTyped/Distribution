@@ -15,22 +15,21 @@ object mod {
   
   @JSImport("react-image-fallback", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[
+  open class default () extends Component[
           ReactImageFallbackProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ]
   
   type ReactImageFallback = Component[
     ReactImageFallbackProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]), 
-    js.Any, 
-    js.Any
+    Any, 
+    Any
   ]
   
   trait ReactImageFallbackProps extends StObject {
     
-    var fallbackImage: String | ReactElement | (js.Array[ReactElement | String])
+    var fallbackImage: String | ReactElement | (js.Array[js.UndefOr[ReactElement | String]])
     
     var initialImage: js.UndefOr[String | ReactElement] = js.undefined
     
@@ -40,20 +39,20 @@ object mod {
     
     var onLoad: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
-    var src: String
+    var src: js.UndefOr[String] = js.undefined
   }
   object ReactImageFallbackProps {
     
-    inline def apply(fallbackImage: String | ReactElement | (js.Array[ReactElement | String]), src: String): ReactImageFallbackProps = {
-      val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    inline def apply(fallbackImage: String | ReactElement | (js.Array[js.UndefOr[ReactElement | String]])): ReactImageFallbackProps = {
+      val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactImageFallbackProps]
     }
     
     extension [Self <: ReactImageFallbackProps](x: Self) {
       
-      inline def setFallbackImage(value: String | ReactElement | (js.Array[ReactElement | String])): Self = StObject.set(x, "fallbackImage", value.asInstanceOf[js.Any])
+      inline def setFallbackImage(value: String | ReactElement | (js.Array[js.UndefOr[ReactElement | String]])): Self = StObject.set(x, "fallbackImage", value.asInstanceOf[js.Any])
       
-      inline def setFallbackImageVarargs(value: (ReactElement | String)*): Self = StObject.set(x, "fallbackImage", js.Array(value :_*))
+      inline def setFallbackImageVarargs(value: (js.UndefOr[ReactElement | String])*): Self = StObject.set(x, "fallbackImage", js.Array(value*))
       
       inline def setInitialImage(value: String | ReactElement): Self = StObject.set(x, "initialImage", value.asInstanceOf[js.Any])
       
@@ -72,6 +71,8 @@ object mod {
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
 }

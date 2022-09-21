@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CaptionLabel")
 @js.native
-/* private */ class CaptionLabel ()
+/* private */ open class CaptionLabel ()
   extends StObject
      with typings.activexWord.Word.CaptionLabel {
   
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NumberStyle: WdCaptionNumberStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: WdCaptionPosition = js.native

@@ -10,13 +10,21 @@ trait NOGLASS3DNOTSUPPORTED extends StObject {
   
   /**
     * Glasses-free 3D is not supported
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var NO_GLASS_3D_NOT_SUPPORTED: `0`
   
   /**
-    * @descEng Glasses-free 3D is supported
+    * Glasses-free 3D is supported
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var NO_GLASS_3D_SUPPORTED: `1`
 }

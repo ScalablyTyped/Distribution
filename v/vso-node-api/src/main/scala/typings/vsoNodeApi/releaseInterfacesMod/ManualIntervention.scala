@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait ManualIntervention extends StObject {
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets the unique identifier for manual intervention.
@@ -36,7 +35,7 @@ trait ManualIntervention extends StObject {
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   /**
     * Gets or sets the name.
@@ -78,10 +77,10 @@ object ManualIntervention {
   inline def apply(
     approver: IdentityRef,
     comments: String,
-    createdOn: Date,
+    createdOn: js.Date,
     id: Double,
     instructions: String,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     release: ReleaseShallowReference,
     releaseDefinition: ReleaseDefinitionShallowReference,
@@ -100,13 +99,13 @@ object ManualIntervention {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

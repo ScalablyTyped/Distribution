@@ -10,10 +10,10 @@ Javascript Timezone Offset
 | ------------------ | :-------------: |
 | Full name          | tz-offset |
 | Keywords           | timezone, offset, time, zone |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 14105729 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 536809.3333333334 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/merencia/tz-offset#readme)

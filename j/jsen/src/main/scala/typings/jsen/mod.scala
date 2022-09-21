@@ -2,7 +2,6 @@ package typings.jsen
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,21 +37,21 @@ object mod extends Shortcut {
     }
   }
   
-  type JsenFormats = StringDictionary[String | RegExp | js.Function]
+  type JsenFormats = StringDictionary[String | js.RegExp | js.Function]
   
   @js.native
   trait JsenMain extends StObject {
     
     def apply(): JsenValidator = js.native
-    def apply(schema: js.Any): JsenValidator = js.native
-    def apply(schema: js.Any, options: JsenSettings): JsenValidator = js.native
+    def apply(schema: Any): JsenValidator = js.native
+    def apply(schema: Any, options: JsenSettings): JsenValidator = js.native
     def apply(schema: Unit, options: JsenSettings): JsenValidator = js.native
     
-    def clone(data: js.Any): js.Any = js.native
+    def clone(data: Any): Any = js.native
     
-    def equal(a: js.Any, b: js.Any): Boolean = js.native
+    def equal(a: Any, b: Any): Boolean = js.native
     
-    def unique(array: js.Array[js.Any]): Boolean = js.native
+    def unique(array: js.Array[Any]): Boolean = js.native
     @JSName("unique")
     var unique_Original: JsenUnique = js.native
   }
@@ -66,7 +65,7 @@ object mod extends Shortcut {
     @JSName("missing$Ref")
     var missing$Ref: js.UndefOr[Boolean] = js.undefined
     
-    var schemas: js.UndefOr[js.Any] = js.undefined
+    var schemas: js.UndefOr[Any] = js.undefined
   }
   object JsenSettings {
     
@@ -89,7 +88,7 @@ object mod extends Shortcut {
       
       inline def setMissing$RefUndefined: Self = StObject.set(x, "missing$Ref", js.undefined)
       
-      inline def setSchemas(value: js.Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
       inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     }
@@ -98,12 +97,12 @@ object mod extends Shortcut {
   @js.native
   trait JsenUnique extends StObject {
     
-    def apply(array: js.Array[js.Any]): Boolean = js.native
+    def apply(array: js.Array[Any]): Boolean = js.native
     
     def findIndex(
-      array: js.Array[js.Any],
-      value: js.Any,
-      comparator: js.Function2[/* obj1 */ js.Any, /* obj2 */ js.Any, Boolean]
+      array: js.Array[Any],
+      value: Any,
+      comparator: js.Function2[/* obj1 */ Any, /* obj2 */ Any, Boolean]
     ): Double = js.native
   }
   
@@ -138,12 +137,12 @@ object mod extends Shortcut {
   trait JsenValidator extends StObject {
     
     def apply(): Boolean = js.native
-    def apply(data: js.Any): Boolean = js.native
+    def apply(data: Any): Boolean = js.native
     
-    def build(): js.Any = js.native
-    def build(initial: js.Any): js.Any = js.native
-    def build(initial: js.Any, options: JsenBuildSettings): js.Any = js.native
-    def build(initial: Unit, options: JsenBuildSettings): js.Any = js.native
+    def build(): Any = js.native
+    def build(initial: Any): Any = js.native
+    def build(initial: Any, options: JsenBuildSettings): Any = js.native
+    def build(initial: Unit, options: JsenBuildSettings): Any = js.native
     
     var errors: js.Array[JsenValidateError] = js.native
   }

@@ -2,13 +2,24 @@ package typings.antDesignIconsAngular
 
 import typings.angularCommon.httpMod.HttpBackend
 import typings.angularCore.mod.ElementRef
+import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.RendererFactory2
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectableDeclaration
+import typings.angularCore.mod.ɵɵInjectorDeclaration
+import typings.angularCore.mod.ɵɵNgModuleDeclaration
 import typings.angularPlatformBrowser.mod.DomSanitizer
+import typings.antDesignIconsAngular.anon.Optional
+import typings.antDesignIconsAngular.anon.Theme
+import typings.antDesignIconsAngular.anon.TypeofCommonModule
+import typings.antDesignIconsAngular.anon.TypeofIconDirective
+import typings.antDesignIconsAngular.antDesignIconsAngularBooleans.`false`
+import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`[antIcon]`
 import typings.antDesignIconsAngular.typesMod.IconDefinition
 import typings.antDesignIconsAngular.typesMod.Manifest
 import typings.antDesignIconsAngular.typesMod.ThemeType
-import typings.std.Error
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,49 +31,152 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@ant-design/icons-angular", "ANT_ICONS")
+  @js.native
+  val ANT_ICONS: InjectionToken[js.Array[IconDefinition]] = js.native
+  
   @JSImport("@ant-design/icons-angular", "ANT_ICON_ANGULAR_CONSOLE_PREFIX")
   @js.native
   val ANT_ICON_ANGULAR_CONSOLE_PREFIX: /* "[@ant-design/icons-angular]:" */ String = js.native
   
-  inline def DynamicLoadingTimeoutError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("DynamicLoadingTimeoutError")().asInstanceOf[Error]
+  inline def DynamicLoadingTimeoutError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("DynamicLoadingTimeoutError")().asInstanceOf[js.Error]
   
   inline def HttpModuleNotImport(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HttpModuleNotImport")().asInstanceOf[Null]
   
   @JSImport("@ant-design/icons-angular", "IconDirective")
   @js.native
-  class IconDirective protected ()
+  open class IconDirective protected ()
     extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconDirective {
     def this(
       _iconService: typings.antDesignIconsAngular.iconServiceMod.IconService,
-      _elementRef: ElementRef[js.Any],
+      _elementRef: ElementRef[Any],
       _renderer: Renderer2
     ) = this()
+  }
+  /* static members */
+  object IconDirective {
+    
+    @JSImport("@ant-design/icons-angular", "IconDirective")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/icons-angular", "IconDirective.\u0275dir")
+    @js.native
+    def ɵdir: ɵɵDirectiveDeclaration[
+        typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, 
+        `[antIcon]`, 
+        scala.Nothing, 
+        Theme, 
+        js.Object, 
+        scala.Nothing, 
+        scala.Nothing, 
+        `false`
+      ] = js.native
+    inline def ɵdir_=(
+      x: ɵɵDirectiveDeclaration[
+          typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, 
+          `[antIcon]`, 
+          scala.Nothing, 
+          Theme, 
+          js.Object, 
+          scala.Nothing, 
+          scala.Nothing, 
+          `false`
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-angular", "IconDirective.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, scala.Nothing] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, scala.Nothing]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@ant-design/icons-angular", "IconModule")
   @js.native
-  class IconModule ()
+  open class IconModule ()
     extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconModule
+  /* static members */
+  object IconModule {
+    
+    @JSImport("@ant-design/icons-angular", "IconModule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/icons-angular", "IconModule.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule, scala.Nothing] = js.native
+    inline def ɵfac_=(x: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-angular", "IconModule.\u0275inj")
+    @js.native
+    def ɵinj: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule] = js.native
+    inline def ɵinj_=(x: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-angular", "IconModule.\u0275mod")
+    @js.native
+    def ɵmod: ɵɵNgModuleDeclaration[
+        typings.antDesignIconsAngular.iconModuleMod.IconModule, 
+        js.Array[TypeofIconDirective], 
+        js.Array[TypeofCommonModule], 
+        js.Array[TypeofIconDirective]
+      ] = js.native
+    inline def ɵmod_=(
+      x: ɵɵNgModuleDeclaration[
+          typings.antDesignIconsAngular.iconModuleMod.IconModule, 
+          js.Array[TypeofIconDirective], 
+          js.Array[TypeofCommonModule], 
+          js.Array[TypeofIconDirective]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
+  }
   
-  inline def IconNotFoundError(icon: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("IconNotFoundError")(icon.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def IconNotFoundError(icon: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("IconNotFoundError")(icon.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   @JSImport("@ant-design/icons-angular", "IconService")
   @js.native
-  class IconService protected ()
+  open class IconService protected ()
     extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconService {
     def this(
       _rendererFactory: RendererFactory2,
       _handler: HttpBackend,
-      _document: js.Any,
-      sanitizer: DomSanitizer
+      _document: Any,
+      sanitizer: DomSanitizer,
+      _antIcons: js.Array[IconDefinition]
     ) = this()
   }
+  /* static members */
+  object IconService {
+    
+    @JSImport("@ant-design/icons-angular", "IconService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/icons-angular", "IconService.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.antDesignIconsAngular.iconServiceMod.IconService, 
+        js.Tuple5[Null, Optional, Optional, Null, Optional]
+      ] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[
+          typings.antDesignIconsAngular.iconServiceMod.IconService, 
+          js.Tuple5[Null, Optional, Optional, Null, Optional]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-angular", "IconService.\u0275prov")
+    @js.native
+    def ɵprov: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.iconServiceMod.IconService] = js.native
+    inline def ɵprov_=(x: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.iconServiceMod.IconService]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+  }
   
-  inline def NameSpaceIsNotSpecifyError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NameSpaceIsNotSpecifyError")().asInstanceOf[Error]
+  inline def NameSpaceIsNotSpecifyError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NameSpaceIsNotSpecifyError")().asInstanceOf[js.Error]
   
-  inline def SVGTagNotFoundError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("SVGTagNotFoundError")().asInstanceOf[Error]
+  inline def SVGTagNotFoundError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("SVGTagNotFoundError")().asInstanceOf[js.Error]
   
-  inline def UrlNotSafeError(url: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlNotSafeError")(url.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def UrlNotSafeError(url: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlNotSafeError")(url.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   inline def alreadyHasAThemeSuffix(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("alreadyHasAThemeSuffix")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

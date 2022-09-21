@@ -10,14 +10,14 @@ trait JQueryStatic extends StObject {
   /**
     * Scroll window
     */
-  def scrollTo(target: js.Any): JQuery = js.native
-  def scrollTo(target: js.Any, duration: Double): JQuery = js.native
-  def scrollTo(target: js.Any, duration: Double, onAfter: js.Function): JQuery = js.native
-  def scrollTo(target: js.Any, duration: Double, settings: ScrollToOptions): JQuery = js.native
-  def scrollTo(target: js.Any, duration: Unit, settings: ScrollToOptions): JQuery = js.native
+  def scrollTo(target: Any): JQuery = js.native
+  def scrollTo(target: Any, duration: Double): JQuery = js.native
+  def scrollTo(target: Any, duration: Double, onAfter: js.Function): JQuery = js.native
+  def scrollTo(target: Any, duration: Double, settings: ScrollToOptions): JQuery = js.native
+  def scrollTo(target: Any, duration: Unit, settings: ScrollToOptions): JQuery = js.native
   /**
     * Scroll window
     */
-  def scrollTo(target: js.Any, settings: ScrollToOptions): JQuery = js.native
-  def scrollTo(target: js.Any, settings: ScrollToOptions, onAfter: js.Function): JQuery = js.native
+  def scrollTo(target: Any, settings: ScrollToOptions): JQuery = js.native
+  def scrollTo(target: Any, settings: ScrollToOptions, onAfter: js.Function): JQuery = js.native
 }

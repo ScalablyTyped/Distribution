@@ -1,40 +1,45 @@
 package typings.playcanvas.mod
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * The scope for variables and subspaces.
-  * @property name - The scope name.
-  * @param name - The scope name.
+  * The scope for variables.
   */
 @JSImport("playcanvas", "ScopeSpace")
 @js.native
-class ScopeSpace protected ()
-  extends StObject
-     with typings.playcanvas.pc.ScopeSpace {
+open class ScopeSpace protected () extends StObject {
+  /**
+    * Create a new ScopeSpace instance.
+    *
+    * @param {string} name - The scope name.
+    */
   def this(name: String) = this()
   
   /**
-    * Get (or create, if it doesn't already exist) a subspace in the scope.
-    * @param name - The subspace name.
-    * @returns The subspace instance.
-    */
-  /* CompleteClass */
-  override def getSubSpace(name: String): typings.playcanvas.pc.ScopeSpace = js.native
-  
-  /**
     * The scope name.
+    *
+    * @type {string}
     */
-  /* CompleteClass */
   var name: String = js.native
   
   /**
-    * Get (or create, if it doesn't already exist) a variable in the scope.
-    * @param name - The variable name.
-    * @returns The variable instance.
+    * Clears value for any uniform with matching value (used to remove deleted textures).
+    *
+    * @param {*} value - The value to clear.
+    * @ignore
     */
-  /* CompleteClass */
-  override def resolve(name: String): typings.playcanvas.pc.ScopeId = js.native
+  def removeValue(value: Any): Unit = js.native
+  
+  /**
+    * Get (or create, if it doesn't already exist) a variable in the scope.
+    *
+    * @param {string} name - The variable name.
+    * @returns {ScopeId} The variable instance.
+    */
+  def resolve(name: String): ScopeId = js.native
+  
+  var variables: Map[Any, Any] = js.native
 }

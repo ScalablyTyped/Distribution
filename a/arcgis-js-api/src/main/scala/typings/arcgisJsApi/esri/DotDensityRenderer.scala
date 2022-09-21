@@ -22,6 +22,8 @@ trait DotDensityRenderer
   /**
     * The color used to shade the polygon fill behind the dots.
     *
+    * @default [0, 0, 0, 0.25] - black, semitransparent
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#backgroundColor)
     */
   var backgroundColor: Color_ = js.native
@@ -36,9 +38,20 @@ trait DotDensityRenderer
   /**
     * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
     */
   var dotBlendingEnabled: Boolean = js.native
+  
+  /**
+    * Defines the size of the dots in points.
+    *
+    * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotSize)
+    */
+  var dotSize: Double = js.native
   
   /**
     * Defines the initial dot value used for visualizing density.
@@ -70,6 +83,8 @@ trait DotDensityRenderer
   
   /**
     * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
     */

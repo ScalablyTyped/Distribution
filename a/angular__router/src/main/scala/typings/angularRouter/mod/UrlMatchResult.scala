@@ -22,7 +22,7 @@ object UrlMatchResult {
     
     inline def setConsumed(value: js.Array[UrlSegment]): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     
-    inline def setConsumedVarargs(value: UrlSegment*): Self = StObject.set(x, "consumed", js.Array(value :_*))
+    inline def setConsumedVarargs(value: UrlSegment*): Self = StObject.set(x, "consumed", js.Array(value*))
     
     inline def setPosParams(value: StringDictionary[UrlSegment]): Self = StObject.set(x, "posParams", value.asInstanceOf[js.Any])
     

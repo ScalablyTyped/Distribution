@@ -21,6 +21,6 @@ object S3KeyFilter {
     
     inline def setFilterRulesUndefined: Self = StObject.set(x, "FilterRules", js.undefined)
     
-    inline def setFilterRulesVarargs(value: FilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value :_*))
+    inline def setFilterRulesVarargs(value: FilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value*))
   }
 }

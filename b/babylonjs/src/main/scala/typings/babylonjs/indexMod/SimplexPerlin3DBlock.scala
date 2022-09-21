@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SimplexPerlin3DBlock")
 @js.native
-class SimplexPerlin3DBlock protected ()
+open class SimplexPerlin3DBlock protected ()
   extends typings.babylonjs.materialsIndexMod.SimplexPerlin3DBlock {
   /**
     * Creates a new SimplexPerlin3DBlock

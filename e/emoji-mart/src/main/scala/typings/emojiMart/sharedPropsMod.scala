@@ -90,7 +90,7 @@ object sharedPropsMod {
         js.Function2[
           /* emoji */ EmojiData, 
           /* props */ this.type, 
-          (Component[js.Object, js.Object, js.Any]) | Element
+          (Component[js.Object, js.Object, Any]) | Element
         ]
       ] = js.undefined
     
@@ -146,7 +146,7 @@ object sharedPropsMod {
       
       inline def setEmoji(value: String | EmojiData): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      inline def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
+      inline def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, Any]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
@@ -338,7 +338,7 @@ object sharedPropsMod {
     
     var native: js.UndefOr[Boolean] = js.undefined
     
-    var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, js.Any]]] = js.undefined
+    var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, Any]]] = js.undefined
     
     var notFoundEmoji: js.UndefOr[String] = js.undefined
     
@@ -400,7 +400,7 @@ object sharedPropsMod {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      inline def setCustomVarargs(value: CustomEmoji*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: CustomEmoji*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setDefaultSkin(value: EmojiSkin): Self = StObject.set(x, "defaultSkin", value.asInstanceOf[js.Any])
       
@@ -430,7 +430,7 @@ object sharedPropsMod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: CategoryName*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: CategoryName*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setI18n(value: PartialI18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -444,13 +444,13 @@ object sharedPropsMod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: CategoryName*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: CategoryName*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
       inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
       
-      inline def setNotFound(value: () => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
+      inline def setNotFound(value: () => Component[js.Object, js.Object, Any]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
       
       inline def setNotFoundEmoji(value: String): Self = StObject.set(x, "notFoundEmoji", value.asInstanceOf[js.Any])
       
@@ -478,7 +478,7 @@ object sharedPropsMod {
       
       inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
       
-      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
+      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value*))
       
       inline def setSet(value: EmojiSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       

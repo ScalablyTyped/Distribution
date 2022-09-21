@@ -34,7 +34,7 @@ object CtorOptions {
     
     inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
-    inline def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
+    inline def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value*))
     
     inline def setEcmaVersion(value: `5` | `6`): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
     

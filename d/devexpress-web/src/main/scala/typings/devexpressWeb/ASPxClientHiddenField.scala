@@ -16,7 +16,7 @@ trait ASPxClientHiddenField
     * @param propertyName A string value that specifies the property name. It can contain letters, digits, underline characters, and dollar signs. It cannot begin with a digit character.
     * @param propertyValue An object that represents the value of the specified property.
     */
-  def Add(propertyName: String, propertyValue: js.Any): Unit
+  def Add(propertyName: String, propertyValue: Any): Unit
   
   /**
     * Occurs when a callback for server-side processing is initiated.
@@ -48,7 +48,7 @@ trait ASPxClientHiddenField
     * Returns the value with the specified property name. An object that represents the value of the specified property.
     * @param propertyName A string value that specifies the property name.
     */
-  def Get(propertyName: String): js.Any
+  def Get(propertyName: String): Any
   
   /**
     * Sends a callback to the server and generates the server-side ASPxHiddenField.CustomCallback event, passing it the specified argument.
@@ -67,23 +67,23 @@ trait ASPxClientHiddenField
     * @param propertyName A string value that specifies the property name. It can contain letters, digits, underline characters, and dollar signs. It cannot begin with a digit character.
     * @param propertyValue An object that represents the property value.
     */
-  def Set(propertyName: String, propertyValue: js.Any): Unit
+  def Set(propertyName: String, propertyValue: Any): Unit
 }
 object ASPxClientHiddenField {
   
   inline def apply(
-    Add: (String, js.Any) => Unit,
+    Add: (String, Any) => Unit,
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]],
     Clear: () => Unit,
     Contains: String => Boolean,
     EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]],
-    Get: String => js.Any,
+    Get: String => Any,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -91,7 +91,7 @@ object ASPxClientHiddenField {
     PerformCallback: String => Unit,
     Remove: String => Unit,
     SendMessageToAssistiveTechnology: String => Unit,
-    Set: (String, js.Any) => Unit,
+    Set: (String, Any) => Unit,
     SetClientVisible: Boolean => Unit,
     SetHeight: Double => Unit,
     SetVisible: Boolean => Unit,
@@ -104,7 +104,7 @@ object ASPxClientHiddenField {
   
   extension [Self <: ASPxClientHiddenField](x: Self) {
     
-    inline def setAdd(value: (String, js.Any) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, Any) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
@@ -116,12 +116,12 @@ object ASPxClientHiddenField {
     
     inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
     
     inline def setPerformCallback(value: String => Unit): Self = StObject.set(x, "PerformCallback", js.Any.fromFunction1(value))
     
     inline def setRemove(value: String => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
   }
 }

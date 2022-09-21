@@ -20,51 +20,51 @@ object dragBoxLayerMod {
     *
     * @constructor
     */
-  class DragBoxLayer () extends SelectionBoxLayer {
+  open class DragBoxLayer () extends SelectionBoxLayer {
     
-    /* private */ var _detectionCornerBL: js.Any = js.native
+    /* private */ var _detectionCornerBL: Any = js.native
     
-    /* private */ var _detectionCornerBR: js.Any = js.native
+    /* private */ var _detectionCornerBR: Any = js.native
     
-    /* private */ var _detectionCornerTL: js.Any = js.native
+    /* private */ var _detectionCornerTL: Any = js.native
     
-    /* private */ var _detectionCornerTR: js.Any = js.native
+    /* private */ var _detectionCornerTR: Any = js.native
     
-    /* private */ var _detectionEdgeB: js.Any = js.native
+    /* private */ var _detectionEdgeB: Any = js.native
     
-    /* private */ var _detectionEdgeL: js.Any = js.native
+    /* private */ var _detectionEdgeL: Any = js.native
     
-    /* private */ var _detectionEdgeR: js.Any = js.native
+    /* private */ var _detectionEdgeR: Any = js.native
     
-    /* private */ var _detectionEdgeT: js.Any = js.native
+    /* private */ var _detectionEdgeT: Any = js.native
     
-    /* private */ var _detectionRadius: js.Any = js.native
+    /* private */ var _detectionRadius: Any = js.native
     
-    /* private */ var _disconnectInteraction: js.Any = js.native
+    /* private */ var _disconnectInteraction: Any = js.native
     
-    /* private */ var _dragCallbacks: js.Any = js.native
+    /* private */ var _dragCallbacks: Any = js.native
     
-    /* private */ var _dragEndCallbacks: js.Any = js.native
+    /* private */ var _dragEndCallbacks: Any = js.native
     
-    /* private */ var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: Any = js.native
     
-    /* private */ var _dragStartCallbacks: js.Any = js.native
+    /* private */ var _dragStartCallbacks: Any = js.native
     
-    /* private */ def _getResizingEdges(p: js.Any): js.Any = js.native
+    /* private */ var _getResizingEdges: Any = js.native
     
     /* protected */ var _hasCorners: Boolean = js.native
     
-    /* private */ var _movable: js.Any = js.native
+    /* private */ var _movable: Any = js.native
     
-    /* private */ def _resetState(): js.Any = js.native
+    /* private */ var _resetState: Any = js.native
     
-    /* private */ var _resizable: js.Any = js.native
+    /* private */ var _resizable: Any = js.native
     
-    /* private */ def _setMovableClass(): js.Any = js.native
+    /* private */ var _setMovableClass: Any = js.native
     
     /* protected */ def _setResizableClasses(canResize: Boolean): Unit = js.native
     
-    /* private */ def _setUpCallbacks(): js.Any = js.native
+    /* private */ var _setUpCallbacks: Any = js.native
     
     /**
       * Gets the detection radius of the drag box in pixels.

@@ -29,7 +29,7 @@ object EnvironmentLanguage {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: EnvironmentImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: EnvironmentImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setLanguage(value: LanguageType): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Security related configuration, including encryption, Kerberos, etc.
-  */
 trait SchemaSecurityConfig extends StObject {
   
   /**
-    * Kerberos related configuration.
+    * Optional. Kerberos related configuration.
     */
   var kerberosConfig: js.UndefOr[SchemaKerberosConfig] = js.undefined
 }

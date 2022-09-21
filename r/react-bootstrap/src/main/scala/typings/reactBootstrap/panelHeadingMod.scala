@@ -10,12 +10,10 @@ object panelHeadingMod {
   
   @JSImport("react-bootstrap/lib/PanelHeading", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelHeadingProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelHeadingProps, js.Object, Any]
   
-  @js.native
-  trait PanelHeading
-    extends Component[PanelHeadingProps, js.Object, js.Any]
+  type PanelHeading = Component[PanelHeadingProps, js.Object, Any]
   
   trait PanelHeadingProps
     extends StObject

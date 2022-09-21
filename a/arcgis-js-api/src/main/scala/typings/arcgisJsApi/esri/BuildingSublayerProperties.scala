@@ -9,6 +9,8 @@ trait BuildingSublayerProperties extends StObject {
   /**
     * Opacity of the sublayer.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html#opacity)
     */
   var opacity: js.UndefOr[Double] = js.undefined
@@ -22,6 +24,8 @@ trait BuildingSublayerProperties extends StObject {
   
   /**
     * Indicates if the sublayer is visible in the view.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html#visible)
     */

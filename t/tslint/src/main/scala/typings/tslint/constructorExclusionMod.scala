@@ -12,7 +12,7 @@ object constructorExclusionMod {
   
   @JSImport("tslint/lib/rules/completed-docs/constructorExclusion", "ConstructorExclusion")
   @js.native
-  class ConstructorExclusion () extends Exclusion[IConstructorExclusionDescriptor] {
+  open class ConstructorExclusion () extends Exclusion[IConstructorExclusionDescriptor] {
     def this(descriptor: Partial[IConstructorExclusionDescriptor]) = this()
     
     val privacies: Set[Privacy] = js.native
@@ -35,7 +35,7 @@ object constructorExclusionMod {
       
       inline def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
       
-      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
+      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value*))
     }
   }
 }

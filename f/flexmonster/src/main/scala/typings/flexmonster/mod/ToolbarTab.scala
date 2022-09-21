@@ -8,7 +8,7 @@ trait ToolbarTab extends StObject {
   
   var android: Boolean
   
-  var args: js.Any
+  var args: Any
   
   var handler: js.Function0[Unit] | String
   
@@ -28,7 +28,7 @@ object ToolbarTab {
   
   inline def apply(
     android: Boolean,
-    args: js.Any,
+    args: Any,
     handler: js.Function0[Unit] | String,
     icon: String,
     id: String,
@@ -45,7 +45,7 @@ object ToolbarTab {
     
     inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setHandler(value: js.Function0[Unit] | String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object ToolbarTab {
     
     inline def setMenu(value: js.Array[ToolbarTab]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    inline def setMenuVarargs(value: ToolbarTab*): Self = StObject.set(x, "menu", js.Array(value :_*))
+    inline def setMenuVarargs(value: ToolbarTab*): Self = StObject.set(x, "menu", js.Array(value*))
     
     inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     

@@ -1,30 +1,21 @@
 package typings.isTypedarray
 
-import typings.node.Buffer
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def apply(candidate: Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
   @JSImport("is-typedarray", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loose(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loose")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def loose(candidate: Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loose")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
-  inline def strict(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("strict")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def strict(candidate: Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("strict")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
-  type TypedArray = Int8Array | Int16Array | Int32Array | Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Float32Array | Float64Array | Buffer
+  type TypedArray = js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array | Buffer
 }

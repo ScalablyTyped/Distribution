@@ -53,7 +53,7 @@ object XClassifiedObject {
     acquire: () => Unit,
     getClassID: () => SafeArray[Double],
     getClassName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setClassInfo: (SeqEquiv[Double], String) => Unit
   ): XClassifiedObject = {

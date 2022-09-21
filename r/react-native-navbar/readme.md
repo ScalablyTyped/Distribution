@@ -11,9 +11,9 @@ Simple customizable navbar component for react-native
 | Full name          | react-native-navbar |
 | Keywords           | react-native, navbar |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 79679 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 4435.666666666667 |
+| # stars            | 1891.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-navbar)

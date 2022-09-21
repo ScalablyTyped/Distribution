@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Polyline")
 @js.native
-class Polyline protected ()
+open class Polyline protected ()
   extends typings.fabric.fabricImplMod.Polyline {
   /**
     * Constructor
@@ -47,5 +47,5 @@ object Polyline {
     * Returns fabric.Polyline instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polyline]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polyline]
 }

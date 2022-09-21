@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaAccountGoogleMyBusinessLink extends StObject {
   
   /**
-    * The GMB email address of which a specific account within a GMB account. A
-    * sample account within a GMB account could be a business account with set
-    * of locations, managed under the GMB account.
+    * The GMB email address of which a specific account within a GMB account. A sample account within a GMB account could be a business account with set of locations, managed under the GMB account.
     */
-  var gmbEmail: js.UndefOr[String] = js.undefined
+  var gmbEmail: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Status of the link between this Merchant Center account and the GMB
-    * account.
+    * Status of the link between this Merchant Center account and the GMB account. Acceptable values are: - "`active`" - "`pending`"
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountGoogleMyBusinessLink {
   
@@ -30,9 +27,13 @@ object SchemaAccountGoogleMyBusinessLink {
     
     inline def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
     
+    inline def setGmbEmailNull: Self = StObject.set(x, "gmbEmail", null)
+    
     inline def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

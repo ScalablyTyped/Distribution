@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListJobExecutionsForThingRequest extends StObject {
   
   /**
+    * The unique identifier you assigned to this job when it was created.
+    */
+  var jobId: js.UndefOr[JobId] = js.undefined
+  
+  /**
     * The maximum number of results to be returned per request.
     */
   var maxResults: js.UndefOr[LaserMaxResults] = js.undefined
   
   /**
-    * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
+    * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, Amazon Web Services IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
   var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
@@ -39,6 +44,10 @@ object ListJobExecutionsForThingRequest {
   }
   
   extension [Self <: ListJobExecutionsForThingRequest](x: Self) {
+    
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     inline def setMaxResults(value: LaserMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

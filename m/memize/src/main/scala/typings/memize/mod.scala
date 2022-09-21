@@ -58,7 +58,7 @@ object mod {
       * Function arguments for cache
       * entry.
       */
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     /**
       * Next node.
@@ -73,11 +73,11 @@ object mod {
     /**
       * Function result.
       */
-    var `val`: js.Any
+    var `val`: Any
   }
   object MemizeCacheNode {
     
-    inline def apply(args: js.Array[js.Any], `val`: js.Any): MemizeCacheNode = {
+    inline def apply(args: js.Array[Any], `val`: Any): MemizeCacheNode = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemizeCacheNode]
@@ -85,9 +85,9 @@ object mod {
     
     extension [Self <: MemizeCacheNode](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setNext(value: MemizeCacheNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object mod {
       
       inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   

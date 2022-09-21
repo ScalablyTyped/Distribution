@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "HTTPTunnel")
 @js.native
-class HTTPTunnel protected ()
+open class HTTPTunnel protected ()
   extends typings.guacamoleClient.httptunnelMod.HTTPTunnel {
   /**
     * @param tunnelURL The URL of the HTTP tunneling service.

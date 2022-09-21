@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ trait ExecStartOptions extends StObject {
   var Detach: js.UndefOr[Boolean] = js.undefined
   
   var Tty: js.UndefOr[Boolean] = js.undefined
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
   
   // hijack and stdin are used by docker-modem
   var hijack: js.UndefOr[Boolean] = js.undefined
@@ -24,6 +27,10 @@ object ExecStartOptions {
   }
   
   extension [Self <: ExecStartOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
     inline def setDetach(value: Boolean): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
     

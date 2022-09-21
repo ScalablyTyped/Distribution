@@ -12,11 +12,17 @@ trait TargetingOption extends StObject {
   /** App category details. */
   var appCategoryDetails: js.UndefOr[AppCategoryTargetingOptionDetails] = js.undefined
   
+  /** Audio content type details. */
+  var audioContentTypeDetails: js.UndefOr[AudioContentTypeTargetingOptionDetails] = js.undefined
+  
   /** Authorized seller status resource details. */
   var authorizedSellerStatusDetails: js.UndefOr[AuthorizedSellerStatusTargetingOptionDetails] = js.undefined
   
   /** Browser details. */
   var browserDetails: js.UndefOr[BrowserTargetingOptionDetails] = js.undefined
+  
+  /** Business chain resource details. */
+  var businessChainDetails: js.UndefOr[BusinessChainTargetingOptionDetails] = js.undefined
   
   /** Carrier and ISP details. */
   var carrierAndIspDetails: js.UndefOr[CarrierAndIspTargetingOptionDetails] = js.undefined
@@ -24,11 +30,20 @@ trait TargetingOption extends StObject {
   /** Category resource details. */
   var categoryDetails: js.UndefOr[CategoryTargetingOptionDetails] = js.undefined
   
+  /** Content duration resource details. */
+  var contentDurationDetails: js.UndefOr[ContentDurationTargetingOptionDetails] = js.undefined
+  
+  /** Content genre resource details. */
+  var contentGenreDetails: js.UndefOr[ContentGenreTargetingOptionDetails] = js.undefined
+  
   /** Content instream position details. */
   var contentInstreamPositionDetails: js.UndefOr[ContentInstreamPositionTargetingOptionDetails] = js.undefined
   
   /** Content outstream position details. */
   var contentOutstreamPositionDetails: js.UndefOr[ContentOutstreamPositionTargetingOptionDetails] = js.undefined
+  
+  /** Content stream type resource details. */
+  var contentStreamTypeDetails: js.UndefOr[ContentStreamTypeTargetingOptionDetails] = js.undefined
   
   /** Device make and model resource details. */
   var deviceMakeModelDetails: js.UndefOr[DeviceMakeModelTargetingOptionDetails] = js.undefined
@@ -60,6 +75,12 @@ trait TargetingOption extends StObject {
   /** Output only. The resource name for this targeting option. */
   var name: js.UndefOr[String] = js.undefined
   
+  /** Native content position details. */
+  var nativeContentPositionDetails: js.UndefOr[NativeContentPositionTargetingOptionDetails] = js.undefined
+  
+  /** Open Measurement enabled inventory details. */
+  var omidDetails: js.UndefOr[OmidTargetingOptionDetails] = js.undefined
+  
   /** On screen position details. */
   var onScreenPositionDetails: js.UndefOr[OnScreenPositionTargetingOptionDetails] = js.undefined
   
@@ -68,6 +89,9 @@ trait TargetingOption extends StObject {
   
   /** Parental status details. */
   var parentalStatusDetails: js.UndefOr[ParentalStatusTargetingOptionDetails] = js.undefined
+  
+  /** POI resource details. */
+  var poiDetails: js.UndefOr[PoiTargetingOptionDetails] = js.undefined
   
   /** Sensitive Category details. */
   var sensitiveCategoryDetails: js.UndefOr[SensitiveCategoryTargetingOptionDetails] = js.undefined
@@ -107,6 +131,10 @@ object TargetingOption {
     
     inline def setAppCategoryDetailsUndefined: Self = StObject.set(x, "appCategoryDetails", js.undefined)
     
+    inline def setAudioContentTypeDetails(value: AudioContentTypeTargetingOptionDetails): Self = StObject.set(x, "audioContentTypeDetails", value.asInstanceOf[js.Any])
+    
+    inline def setAudioContentTypeDetailsUndefined: Self = StObject.set(x, "audioContentTypeDetails", js.undefined)
+    
     inline def setAuthorizedSellerStatusDetails(value: AuthorizedSellerStatusTargetingOptionDetails): Self = StObject.set(x, "authorizedSellerStatusDetails", value.asInstanceOf[js.Any])
     
     inline def setAuthorizedSellerStatusDetailsUndefined: Self = StObject.set(x, "authorizedSellerStatusDetails", js.undefined)
@@ -114,6 +142,10 @@ object TargetingOption {
     inline def setBrowserDetails(value: BrowserTargetingOptionDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
     
     inline def setBrowserDetailsUndefined: Self = StObject.set(x, "browserDetails", js.undefined)
+    
+    inline def setBusinessChainDetails(value: BusinessChainTargetingOptionDetails): Self = StObject.set(x, "businessChainDetails", value.asInstanceOf[js.Any])
+    
+    inline def setBusinessChainDetailsUndefined: Self = StObject.set(x, "businessChainDetails", js.undefined)
     
     inline def setCarrierAndIspDetails(value: CarrierAndIspTargetingOptionDetails): Self = StObject.set(x, "carrierAndIspDetails", value.asInstanceOf[js.Any])
     
@@ -123,6 +155,14 @@ object TargetingOption {
     
     inline def setCategoryDetailsUndefined: Self = StObject.set(x, "categoryDetails", js.undefined)
     
+    inline def setContentDurationDetails(value: ContentDurationTargetingOptionDetails): Self = StObject.set(x, "contentDurationDetails", value.asInstanceOf[js.Any])
+    
+    inline def setContentDurationDetailsUndefined: Self = StObject.set(x, "contentDurationDetails", js.undefined)
+    
+    inline def setContentGenreDetails(value: ContentGenreTargetingOptionDetails): Self = StObject.set(x, "contentGenreDetails", value.asInstanceOf[js.Any])
+    
+    inline def setContentGenreDetailsUndefined: Self = StObject.set(x, "contentGenreDetails", js.undefined)
+    
     inline def setContentInstreamPositionDetails(value: ContentInstreamPositionTargetingOptionDetails): Self = StObject.set(x, "contentInstreamPositionDetails", value.asInstanceOf[js.Any])
     
     inline def setContentInstreamPositionDetailsUndefined: Self = StObject.set(x, "contentInstreamPositionDetails", js.undefined)
@@ -130,6 +170,10 @@ object TargetingOption {
     inline def setContentOutstreamPositionDetails(value: ContentOutstreamPositionTargetingOptionDetails): Self = StObject.set(x, "contentOutstreamPositionDetails", value.asInstanceOf[js.Any])
     
     inline def setContentOutstreamPositionDetailsUndefined: Self = StObject.set(x, "contentOutstreamPositionDetails", js.undefined)
+    
+    inline def setContentStreamTypeDetails(value: ContentStreamTypeTargetingOptionDetails): Self = StObject.set(x, "contentStreamTypeDetails", value.asInstanceOf[js.Any])
+    
+    inline def setContentStreamTypeDetailsUndefined: Self = StObject.set(x, "contentStreamTypeDetails", js.undefined)
     
     inline def setDeviceMakeModelDetails(value: DeviceMakeModelTargetingOptionDetails): Self = StObject.set(x, "deviceMakeModelDetails", value.asInstanceOf[js.Any])
     
@@ -171,6 +215,14 @@ object TargetingOption {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNativeContentPositionDetails(value: NativeContentPositionTargetingOptionDetails): Self = StObject.set(x, "nativeContentPositionDetails", value.asInstanceOf[js.Any])
+    
+    inline def setNativeContentPositionDetailsUndefined: Self = StObject.set(x, "nativeContentPositionDetails", js.undefined)
+    
+    inline def setOmidDetails(value: OmidTargetingOptionDetails): Self = StObject.set(x, "omidDetails", value.asInstanceOf[js.Any])
+    
+    inline def setOmidDetailsUndefined: Self = StObject.set(x, "omidDetails", js.undefined)
+    
     inline def setOnScreenPositionDetails(value: OnScreenPositionTargetingOptionDetails): Self = StObject.set(x, "onScreenPositionDetails", value.asInstanceOf[js.Any])
     
     inline def setOnScreenPositionDetailsUndefined: Self = StObject.set(x, "onScreenPositionDetails", js.undefined)
@@ -182,6 +234,10 @@ object TargetingOption {
     inline def setParentalStatusDetails(value: ParentalStatusTargetingOptionDetails): Self = StObject.set(x, "parentalStatusDetails", value.asInstanceOf[js.Any])
     
     inline def setParentalStatusDetailsUndefined: Self = StObject.set(x, "parentalStatusDetails", js.undefined)
+    
+    inline def setPoiDetails(value: PoiTargetingOptionDetails): Self = StObject.set(x, "poiDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPoiDetailsUndefined: Self = StObject.set(x, "poiDetails", js.undefined)
     
     inline def setSensitiveCategoryDetails(value: SensitiveCategoryTargetingOptionDetails): Self = StObject.set(x, "sensitiveCategoryDetails", value.asInstanceOf[js.Any])
     

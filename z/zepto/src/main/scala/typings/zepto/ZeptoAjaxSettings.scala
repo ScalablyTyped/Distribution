@@ -1,7 +1,6 @@
 package typings.zepto
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,14 +18,14 @@ trait ZeptoAjaxSettings extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataType: js.UndefOr[String] = js.undefined
   
   var error: js.UndefOr[
-    js.Function3[/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ Error, Unit]
+    js.Function3[/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ js.Error, Unit]
   ] = js.undefined
   
   var global: js.UndefOr[Boolean] = js.undefined
@@ -35,7 +34,7 @@ trait ZeptoAjaxSettings extends StObject {
   
   var jsonp: js.UndefOr[String] = js.undefined
   
-  var jsonpCallback: js.UndefOr[js.Any] = js.undefined
+  var jsonpCallback: js.UndefOr[Any] = js.undefined
   
   var mimeType: js.UndefOr[String] = js.undefined
   
@@ -44,7 +43,7 @@ trait ZeptoAjaxSettings extends StObject {
   var processData: js.UndefOr[Boolean] = js.undefined
   
   var success: js.UndefOr[
-    js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ] = js.undefined
   
   // string or Function
@@ -58,7 +57,7 @@ trait ZeptoAjaxSettings extends StObject {
   
   var username: js.UndefOr[String] = js.undefined
   
-  var xhrFields: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var xhrFields: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object ZeptoAjaxSettings {
   
@@ -89,11 +88,11 @@ object ZeptoAjaxSettings {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
@@ -101,7 +100,7 @@ object ZeptoAjaxSettings {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setError(value: (/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ js.Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
@@ -115,7 +114,7 @@ object ZeptoAjaxSettings {
     
     inline def setJsonp(value: String): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
-    inline def setJsonpCallback(value: js.Any): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
+    inline def setJsonpCallback(value: Any): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
     
     inline def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
     
@@ -133,7 +132,7 @@ object ZeptoAjaxSettings {
     
     inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
     
-    inline def setSuccess(value: (/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
@@ -157,7 +156,7 @@ object ZeptoAjaxSettings {
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    inline def setXhrFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+    inline def setXhrFields(value: StringDictionary[Any]): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
     
     inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
   }

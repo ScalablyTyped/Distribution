@@ -52,7 +52,7 @@ object inputItemPropsTypeMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var textAlign: js.UndefOr[left | center] = js.undefined
     
@@ -135,7 +135,7 @@ object inputItemPropsTypeMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

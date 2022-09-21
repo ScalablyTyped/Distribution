@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-map" : "1.0.4"
+      "it-map" : "1.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "it-map" : "1.0.4"
+      "it-map" : "1.0.6"
     }
   ],
   "compile-devDependencies" : [

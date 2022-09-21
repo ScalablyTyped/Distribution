@@ -63,7 +63,7 @@ object errorMod {
   
   @JSImport("nodegit/error", "Error")
   @js.native
-  class Error () extends StObject {
+  open class Error () extends StObject {
     
     var klass: Double = js.native
     

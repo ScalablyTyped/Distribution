@@ -22,7 +22,7 @@ object XXMLExtractor {
   inline def apply(
     acquire: () => Unit,
     extract: XInputStream => XInputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XXMLExtractor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), extract = js.Any.fromFunction1(extract), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

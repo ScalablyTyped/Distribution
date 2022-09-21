@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDocument")
 @js.native
-/* private */ class IHTMLDocument ()
+/* private */ open class IHTMLDocument ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDocument {
   
@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIHTMLDocument_typekey: typings.activexMshtml.MSHTML.IHTMLDocument = js.native
   
   /* CompleteClass */
-  override val Script: js.Any = js.native
+  override val Script: Any = js.native
 }

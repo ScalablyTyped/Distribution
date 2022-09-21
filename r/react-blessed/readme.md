@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-blessed
 
-Typings are for version 0.3
+Typings are for version 0.7
 
 ## Library description:
 A react renderer for blessed.
@@ -10,10 +10,10 @@ A react renderer for blessed.
 | ------------------ | :-------------: |
 | Full name          | react-blessed |
 | Keywords           | blessed, react, renderer, cli, interface |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 12143 |
-| # stars            | 17 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1399.6666666666667 |
+| # stars            | 4295.0 |
 
 ## Links
 - [Homepage](https://github.com/yomguithereal/react-blessed#readme)

@@ -10,10 +10,10 @@ The lodash method `_.toLower` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tolower |
 | Keywords           | lodash-modularized, tolower |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 160574 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24098.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

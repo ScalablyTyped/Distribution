@@ -46,7 +46,7 @@ trait Name extends StObject {
   /** Request body */
   var resource: AndroidApp
   
-  /** Specifies which fields to update. Note that the fields `name`, `app_id`, `project_id`, and `package_name` are all immutable. */
+  /** Specifies which fields to update. Note that the fields `name`, `app_id`, `project_id`, `package_name`, and `state` are all immutable. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

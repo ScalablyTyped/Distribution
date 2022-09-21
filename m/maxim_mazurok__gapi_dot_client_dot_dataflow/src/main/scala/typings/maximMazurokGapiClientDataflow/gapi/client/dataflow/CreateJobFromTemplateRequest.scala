@@ -23,7 +23,7 @@ trait CreateJobFromTemplateRequest extends StObject {
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.CreateJobFromTemplateRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.CreateJobFromTemplateRequest & TopLevel[Any]
   ] = js.undefined
 }
 object CreateJobFromTemplateRequest {
@@ -54,7 +54,7 @@ object CreateJobFromTemplateRequest {
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.CreateJobFromTemplateRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.CreateJobFromTemplateRequest & TopLevel[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

@@ -1,11 +1,24 @@
 package typings.forceGraph
 
-import typings.forceGraph.mod.ForceGraph.DagMode
+import typings.forceGraph.mod.CanvasCustomRenderMode
+import typings.forceGraph.mod.DagMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forceGraphStrings {
+  
+  @js.native
+  sealed trait after
+    extends StObject
+       with CanvasCustomRenderMode
+  inline def after: after = "after".asInstanceOf[after]
+  
+  @js.native
+  sealed trait before
+    extends StObject
+       with CanvasCustomRenderMode
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait bu
@@ -42,6 +55,12 @@ object forceGraphStrings {
     extends StObject
        with DagMode
   inline def radialout: radialout = "radialout".asInstanceOf[radialout]
+  
+  @js.native
+  sealed trait replace
+    extends StObject
+       with CanvasCustomRenderMode
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait rl

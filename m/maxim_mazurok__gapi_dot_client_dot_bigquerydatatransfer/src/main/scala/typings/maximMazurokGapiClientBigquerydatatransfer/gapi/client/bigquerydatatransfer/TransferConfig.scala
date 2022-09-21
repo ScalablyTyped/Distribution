@@ -13,7 +13,10 @@ trait TransferConfig extends StObject {
     */
   var dataRefreshWindowDays: js.UndefOr[Double] = js.undefined
   
-  /** Data source id. Cannot be changed once data transfer is created. */
+  /**
+    * Data source ID. This cannot be changed once data transfer is created. The full list of available data source IDs can be returned through an API call:
+    * https://cloud.google.com/bigquery-transfer/docs/reference/datatransfer/rest/v1/projects.locations.dataSources/list
+    */
   var dataSourceId: js.UndefOr[String] = js.undefined
   
   /** Output only. Region in which BigQuery dataset is located. */
@@ -32,30 +35,41 @@ trait TransferConfig extends StObject {
   var emailPreferences: js.UndefOr[EmailPreferences] = js.undefined
   
   /**
-    * The resource name of the transfer config. Transfer config names have the form of `projects/{project_id}/locations/{region}/transferConfigs/{config_id}`. The name is automatically
-    * generated based on the config_id specified in CreateTransferConfigRequest along with project_id and region. If config_id is not provided, usually a uuid, even though it is not
-    * guaranteed or required, will be generated for config_id.
+    * The resource name of the transfer config. Transfer config names have the form `projects/{project_id}/locations/{region}/transferConfigs/{config_id}`. Where `config_id` is usually a
+    * uuid, even though it is not guaranteed or required. The name is ignored when creating a transfer config.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Next time when data transfer will run. */
   var nextRunTime: js.UndefOr[String] = js.undefined
   
-  /** Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish. */
+  /**
+    * Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish. The format for specifying a pubsub topic is:
+    * `projects/{project}/topics/{topic}`
+    */
   var notificationPubsubTopic: js.UndefOr[String] = js.undefined
   
-  /** Data transfer specific parameters. */
+  /**
+    * Output only. Information about the user whose credentials are used to transfer data. Populated only for `transferConfigs.get` requests. In case the user information is not
+    * available, this field will not be populated.
+    */
+  var ownerInfo: js.UndefOr[UserInfo] = js.undefined
+  
+  /**
+    * Parameters specific to each data source. For more information see the bq tab in the 'Setting up a data transfer' section for each data source. For example the parameters for Cloud
+    * Storage transfers are listed here: https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
+    */
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
     * Data transfer schedule. If the data source does not support a custom schedule, this should be empty. If it is empty, the default value for the data source will be used. The
     * specified times are in UTC. Examples of valid format: `1st,3rd monday of month 15:30`, `every wed,fri of jan,jun 13:15`, and `first sunday of quarter 00:00`. See more explanation
-    * about the format here: https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cron-yaml#the_schedule_format NOTE: the granularity should be at least 8 hours,
-    * or less frequent.
+    * about the format here: https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cron-yaml#the_schedule_format NOTE: The minimum interval time between recurring
+    * transfers depends on the data source; refer to the documentation for your data source.
     */
   var schedule: js.UndefOr[String] = js.undefined
   
@@ -120,10 +134,14 @@ object TransferConfig {
     
     inline def setNotificationPubsubTopicUndefined: Self = StObject.set(x, "notificationPubsubTopic", js.undefined)
     
+    inline def setOwnerInfo(value: UserInfo): Self = StObject.set(x, "ownerInfo", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerInfoUndefined: Self = StObject.set(x, "ownerInfo", js.undefined)
+    
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

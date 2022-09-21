@@ -32,7 +32,7 @@ object GetSystemInfoOption {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setSuccess(value: /* result */ GetSystemInfoSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ SystemInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }

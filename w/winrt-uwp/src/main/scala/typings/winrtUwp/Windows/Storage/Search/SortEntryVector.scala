@@ -49,7 +49,7 @@ trait SortEntryVector
     */
   def getView(): IVectorView[SortEntry] = js.native
   
-  def indexOf(value: SortEntry, extra: js.Any*): Index = js.native
+  def indexOf(value: SortEntry, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: SortEntry): Double = js.native

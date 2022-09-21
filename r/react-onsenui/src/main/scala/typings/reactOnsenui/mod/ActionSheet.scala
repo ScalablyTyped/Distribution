@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "ActionSheet")
 @js.native
-class ActionSheet protected ()
-  extends Component[IsDisabled, js.Any] {
+open class ActionSheet protected () extends Component[IsDisabled, Any] {
   def this(props: HTMLAttributesidclassName & IsDisabled) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & IsDisabled, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & IsDisabled, context: Any) = this()
 }

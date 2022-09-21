@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "UserInfo")
 @js.native
-class UserInfo protected () extends StObject {
+open class UserInfo protected () extends StObject {
   def this(str: String) = this()
   
-  var date: js.Any = js.native
+  var date: Any = js.native
   
-  var email: js.Any = js.native
+  var email: Any = js.native
   
-  var name: js.Any = js.native
+  var name: Any = js.native
   
-  var offset: js.Any = js.native
+  var offset: Any = js.native
 }

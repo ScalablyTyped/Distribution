@@ -15,10 +15,10 @@ trait PBRSpecularGlossinessMaterial
   var diffuseColor: Color3 = js.native
   
   /**
-    * Specifies the diffuse texture of the material. This can also contains the opcity value in its alpha
+    * Specifies the diffuse texture of the material. This can also contains the opacity value in its alpha
     * channel.
     */
-  var diffuseTexture: BaseTexture = js.native
+  var diffuseTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Specifies the glossiness of the material. This indicates "how sharp is the reflection".
@@ -33,5 +33,10 @@ trait PBRSpecularGlossinessMaterial
   /**
     * Specifies both the specular color RGB and the glossiness A of the material per pixels.
     */
-  var specularGlossinessTexture: BaseTexture = js.native
+  var specularGlossinessTexture: Nullable[BaseTexture] = js.native
+  
+  /**
+    * Specifies if the reflectivity texture contains the glossiness information in its alpha channel.
+    */
+  def useMicroSurfaceFromReflectivityMapAlpha: Boolean = js.native
 }

@@ -19,7 +19,7 @@ trait IStreamSocketListener
   
   var information: StreamSocketListenerInformation
   
-  var onconnectionreceived: js.Any
+  var onconnectionreceived: Any
 }
 object IStreamSocketListener {
   
@@ -29,7 +29,7 @@ object IStreamSocketListener {
     close: () => Unit,
     control: StreamSocketListenerControl,
     information: StreamSocketListenerInformation,
-    onconnectionreceived: js.Any
+    onconnectionreceived: Any
   ): IStreamSocketListener = {
     val __obj = js.Dynamic.literal(bindEndpointAsync = js.Any.fromFunction2(bindEndpointAsync), bindServiceNameAsync = js.Any.fromFunction1(bindServiceNameAsync), close = js.Any.fromFunction0(close), control = control.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], onconnectionreceived = onconnectionreceived.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamSocketListener]
@@ -45,6 +45,6 @@ object IStreamSocketListener {
     
     inline def setInformation(value: StreamSocketListenerInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
-    inline def setOnconnectionreceived(value: js.Any): Self = StObject.set(x, "onconnectionreceived", value.asInstanceOf[js.Any])
+    inline def setOnconnectionreceived(value: Any): Self = StObject.set(x, "onconnectionreceived", value.asInstanceOf[js.Any])
   }
 }

@@ -9,21 +9,21 @@ object simulatedClockMod {
   
   @JSImport("xstate/lib/SimulatedClock", "SimulatedClock")
   @js.native
-  class SimulatedClock ()
+  open class SimulatedClock ()
     extends StObject
        with Clock {
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _now: js.Any = js.native
+    /* private */ var _now: Any = js.native
     
     /* CompleteClass */
-    override def clearTimeout(id: js.Any): Unit = js.native
+    override def clearTimeout(id: Any): Unit = js.native
     def clearTimeout(id: Double): Unit = js.native
     
-    /* private */ var flushTimeouts: js.Any = js.native
+    /* private */ var flushTimeouts: Any = js.native
     
-    /* private */ var getId: js.Any = js.native
+    /* private */ var getId: Any = js.native
     
     def increment(ms: Double): Unit = js.native
     
@@ -32,10 +32,10 @@ object simulatedClockMod {
     def set(ms: Double): Unit = js.native
     
     /* CompleteClass */
-    override def setTimeout(fn: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): js.Any = js.native
+    override def setTimeout(fn: js.Function1[/* repeated */ Any, Unit], timeout: Double): Any = js.native
     
     def start(speed: Double): Unit = js.native
     
-    /* private */ var timeouts: js.Any = js.native
+    /* private */ var timeouts: Any = js.native
   }
 }

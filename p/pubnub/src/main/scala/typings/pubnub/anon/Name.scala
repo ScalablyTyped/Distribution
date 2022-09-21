@@ -27,6 +27,6 @@ object Name {
     
     inline def setOccupants(value: js.Array[State]): Self = StObject.set(x, "occupants", value.asInstanceOf[js.Any])
     
-    inline def setOccupantsVarargs(value: State*): Self = StObject.set(x, "occupants", js.Array(value :_*))
+    inline def setOccupantsVarargs(value: State*): Self = StObject.set(x, "occupants", js.Array(value*))
   }
 }

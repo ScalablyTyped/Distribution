@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackSetOperationResultSummary extends StObject {
   
   /**
-    * [Self-managed permissions] The name of the AWS account for this operation result.
+    * [Self-managed permissions] The name of the Amazon Web Services account for this operation result.
     */
   var Account: js.UndefOr[typings.awsSdk.cloudformationMod.Account] = js.undefined
   
   /**
-    * The results of the account gate function AWS CloudFormation invokes, if present, before proceeding with stack set operations in an account
+    * The results of the account gate function CloudFormation invokes, if present, before proceeding with stack set operations in an account.
     */
   var AccountGateResult: js.UndefOr[typings.awsSdk.cloudformationMod.AccountGateResult] = js.undefined
   
@@ -22,12 +22,12 @@ trait StackSetOperationResultSummary extends StObject {
   var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.undefined
   
   /**
-    * The name of the AWS Region for this operation result.
+    * The name of the Amazon Web Services Region for this operation result.
     */
   var Region: js.UndefOr[typings.awsSdk.cloudformationMod.Region] = js.undefined
   
   /**
-    * The result status of the stack set operation for the given account in the given Region.    CANCELLED: The operation in the specified account and Region has been cancelled. This is either because a user has stopped the stack set operation, or because the failure tolerance of the stack set operation has been exceeded.    FAILED: The operation in the specified account and Region failed.  If the stack set operation fails in enough accounts within a Region, the failure tolerance for the stack set operation as a whole might be exceeded.     RUNNING: The operation in the specified account and Region is currently in progress.    PENDING: The operation in the specified account and Region has yet to start.     SUCCEEDED: The operation in the specified account and Region completed successfully.  
+    * The result status of the stack set operation for the given account in the given Region.    CANCELLED: The operation in the specified account and Region has been canceled. This is either because a user has stopped the stack set operation, or because the failure tolerance of the stack set operation has been exceeded.    FAILED: The operation in the specified account and Region failed. If the stack set operation fails in enough accounts within a Region, the failure tolerance for the stack set operation as a whole might be exceeded.    RUNNING: The operation in the specified account and Region is currently in progress.    PENDING: The operation in the specified account and Region has yet to start.    SUCCEEDED: The operation in the specified account and Region completed successfully.  
     */
   var Status: js.UndefOr[StackSetOperationResultStatus] = js.undefined
   

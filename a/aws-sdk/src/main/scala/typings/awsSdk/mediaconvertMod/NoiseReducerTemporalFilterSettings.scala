@@ -12,9 +12,14 @@ trait NoiseReducerTemporalFilterSettings extends StObject {
   var AggressiveMode: js.UndefOr[integerMin0Max4] = js.undefined
   
   /**
-    * Optional. When you set Noise reducer (noiseReducer) to Temporal (TEMPORAL), you can use this setting to apply sharpening. The default behavior, Auto (AUTO), allows the transcoder to determine whether to apply filtering, depending on input type and quality. When you set Noise reducer to Temporal, your output bandwidth is reduced. When Post temporal sharpening is also enabled, that bandwidth reduction is smaller.
+    * When you set Noise reducer (noiseReducer) to Temporal (TEMPORAL), the bandwidth and sharpness of your output is reduced. You can optionally use Post temporal sharpening (postTemporalSharpening) to apply sharpening to the edges of your output. Note that Post temporal sharpening will also make the bandwidth reduction from the Noise reducer smaller. The default behavior, Auto (AUTO), allows the transcoder to determine whether to apply sharpening, depending on your input type and quality. When you set Post temporal sharpening to Enabled (ENABLED), specify how much sharpening is applied using Post temporal sharpening strength (postTemporalSharpeningStrength). Set Post temporal sharpening to Disabled (DISABLED) to not apply sharpening.
     */
   var PostTemporalSharpening: js.UndefOr[NoiseFilterPostTemporalSharpening] = js.undefined
+  
+  /**
+    * Use Post temporal sharpening strength (postTemporalSharpeningStrength) to define the amount of sharpening the transcoder applies to your output. Set Post temporal sharpening strength to Low (LOW), Medium (MEDIUM), or High (HIGH) to indicate the amount of sharpening.
+    */
+  var PostTemporalSharpeningStrength: js.UndefOr[NoiseFilterPostTemporalSharpeningStrength] = js.undefined
   
   /**
     * The speed of the filter (higher number is faster). Low setting reduces bit rate at the cost of transcode time, high setting improves transcode time at the cost of bit rate.
@@ -40,6 +45,10 @@ object NoiseReducerTemporalFilterSettings {
     inline def setAggressiveModeUndefined: Self = StObject.set(x, "AggressiveMode", js.undefined)
     
     inline def setPostTemporalSharpening(value: NoiseFilterPostTemporalSharpening): Self = StObject.set(x, "PostTemporalSharpening", value.asInstanceOf[js.Any])
+    
+    inline def setPostTemporalSharpeningStrength(value: NoiseFilterPostTemporalSharpeningStrength): Self = StObject.set(x, "PostTemporalSharpeningStrength", value.asInstanceOf[js.Any])
+    
+    inline def setPostTemporalSharpeningStrengthUndefined: Self = StObject.set(x, "PostTemporalSharpeningStrength", js.undefined)
     
     inline def setPostTemporalSharpeningUndefined: Self = StObject.set(x, "PostTemporalSharpening", js.undefined)
     

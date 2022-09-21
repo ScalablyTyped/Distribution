@@ -17,7 +17,7 @@ object DB {
   
   @JSGlobal("DB.APIBaseContract")
   @js.native
-  class APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT] ()
+  open class APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[Any] */, CONTEXT] ()
     extends StObject
        with typings.minappEnv.DB.APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT] {
     
@@ -39,13 +39,13 @@ object DB {
   
   @JSGlobal("DB.Batch")
   @js.native
-  class Batch ()
+  open class Batch ()
     extends StObject
        with typings.minappEnv.DB.Batch
   
   @JSGlobal("DB.CollectionReference")
   @js.native
-  class CollectionReference protected ()
+  open class CollectionReference protected ()
     extends StObject
        with typings.minappEnv.DB.CollectionReference {
     /* private */ def this(name: java.lang.String, database: typings.minappEnv.DB.Database) = this()
@@ -53,7 +53,7 @@ object DB {
   
   @JSGlobal("DB.Database")
   @js.native
-  /* private */ class Database ()
+  /* private */ open class Database ()
     extends StObject
        with typings.minappEnv.DB.Database {
     
@@ -75,7 +75,7 @@ object DB {
   
   @JSGlobal("DB.DatabaseLogicCommand")
   @js.native
-  class DatabaseLogicCommand ()
+  open class DatabaseLogicCommand ()
     extends StObject
        with typings.minappEnv.DB.DatabaseLogicCommand {
     
@@ -89,7 +89,7 @@ object DB {
     var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
     
     /* CompleteClass */
-    var operands: typings.minappEnv.Array[js.Any] = js.native
+    var operands: typings.minappEnv.Array[Any] = js.native
     
     /* CompleteClass */
     var operator: LOGIC_COMMANDS_LITERAL | java.lang.String = js.native
@@ -100,7 +100,7 @@ object DB {
   
   @JSGlobal("DB.DatabaseQueryCommand")
   @js.native
-  class DatabaseQueryCommand ()
+  open class DatabaseQueryCommand ()
     extends StObject
        with typings.minappEnv.DB.DatabaseQueryCommand {
     
@@ -111,34 +111,31 @@ object DB {
     override def and(expressions: (typings.minappEnv.DB.DatabaseLogicCommand | IQueryCondition)*): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def eq(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    
-    /* CompleteClass */
     var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
     
     /* CompleteClass */
-    override def gt(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def gt(`val`: Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def gte(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def gte(`val`: Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def in(`val`: typings.minappEnv.Array[js.Any]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def in(`val`: typings.minappEnv.Array[Any]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def lt(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def lt(`val`: Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def lte(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def lte(`val`: Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def neq(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def neq(`val`: Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    override def nin(`val`: typings.minappEnv.Array[js.Any]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
+    override def nin(`val`: typings.minappEnv.Array[Any]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
     
     /* CompleteClass */
-    var operands: typings.minappEnv.Array[js.Any] = js.native
+    var operands: typings.minappEnv.Array[Any] = js.native
     
     /* CompleteClass */
     var operator: LOGIC_COMMANDS_LITERAL | java.lang.String = js.native
@@ -152,18 +149,18 @@ object DB {
   
   @JSGlobal("DB.DatabaseUpdateCommand")
   @js.native
-  class DatabaseUpdateCommand protected ()
+  open class DatabaseUpdateCommand protected ()
     extends StObject
        with typings.minappEnv.DB.DatabaseUpdateCommand {
-    def this(operator: UPDATE_COMMANDS_LITERAL, operands: typings.minappEnv.Array[js.Any]) = this()
+    def this(operator: UPDATE_COMMANDS_LITERAL, operands: typings.minappEnv.Array[Any]) = this()
     def this(
       operator: UPDATE_COMMANDS_LITERAL,
-      operands: typings.minappEnv.Array[js.Any],
+      operands: typings.minappEnv.Array[Any],
       fieldName: java.lang.String
     ) = this()
     def this(
       operator: UPDATE_COMMANDS_LITERAL,
-      operands: typings.minappEnv.Array[js.Any],
+      operands: typings.minappEnv.Array[Any],
       fieldName: typings.minappEnv.InternalSymbol
     ) = this()
     
@@ -174,7 +171,7 @@ object DB {
     var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
     
     /* CompleteClass */
-    var operands: typings.minappEnv.Array[js.Any] = js.native
+    var operands: typings.minappEnv.Array[Any] = js.native
     
     /* CompleteClass */
     var operator: UPDATE_COMMANDS_LITERAL = js.native
@@ -182,7 +179,7 @@ object DB {
   
   @JSGlobal("DB.DocumentReference")
   @js.native
-  class DocumentReference protected ()
+  open class DocumentReference protected ()
     extends StObject
        with typings.minappEnv.DB.DocumentReference {
     /* private */ def this(docId: java.lang.String, database: typings.minappEnv.DB.Database) = this()
@@ -248,7 +245,7 @@ object DB {
   
   @JSGlobal("DB.Query")
   @js.native
-  class Query ()
+  open class Query ()
     extends StObject
        with typings.minappEnv.DB.Query
   

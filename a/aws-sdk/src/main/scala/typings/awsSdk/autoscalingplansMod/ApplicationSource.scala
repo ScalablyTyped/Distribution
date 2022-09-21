@@ -33,6 +33,6 @@ object ApplicationSource {
     
     inline def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
     
-    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value*))
   }
 }

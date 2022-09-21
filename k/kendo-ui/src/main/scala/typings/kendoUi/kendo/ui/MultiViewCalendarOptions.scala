@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +10,21 @@ trait MultiViewCalendarOptions extends StObject {
   
   var culture: js.UndefOr[String] = js.undefined
   
-  var dates: js.UndefOr[js.Any] = js.undefined
+  var dates: js.UndefOr[Any] = js.undefined
   
   var depth: js.UndefOr[String] = js.undefined
   
-  var disableDates: js.UndefOr[js.Any | js.Function] = js.undefined
+  var disableDates: js.UndefOr[Any | js.Function] = js.undefined
   
   var footer: js.UndefOr[String | js.Function] = js.undefined
   
   var format: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Date] = js.undefined
+  var max: js.UndefOr[js.Date] = js.undefined
   
   var messages: js.UndefOr[MultiViewCalendarMessages] = js.undefined
   
-  var min: js.UndefOr[Date] = js.undefined
+  var min: js.UndefOr[js.Date] = js.undefined
   
   var month: js.UndefOr[MultiViewCalendarMonth] = js.undefined
   
@@ -35,7 +34,7 @@ trait MultiViewCalendarOptions extends StObject {
   
   var range: js.UndefOr[MultiViewCalendarRange] = js.undefined
   
-  var selectDates: js.UndefOr[js.Any] = js.undefined
+  var selectDates: js.UndefOr[Any] = js.undefined
   
   var selectable: js.UndefOr[String] = js.undefined
   
@@ -43,7 +42,7 @@ trait MultiViewCalendarOptions extends StObject {
   
   var start: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Date] = js.undefined
+  var value: js.UndefOr[js.Date] = js.undefined
   
   var views: js.UndefOr[Double] = js.undefined
   
@@ -66,7 +65,7 @@ object MultiViewCalendarOptions {
     
     inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    inline def setDates(value: js.Any): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    inline def setDates(value: Any): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
     inline def setDatesUndefined: Self = StObject.set(x, "dates", js.undefined)
     
@@ -74,7 +73,7 @@ object MultiViewCalendarOptions {
     
     inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    inline def setDisableDates(value: js.Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    inline def setDisableDates(value: Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
     
     inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
     
@@ -86,7 +85,7 @@ object MultiViewCalendarOptions {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
@@ -94,7 +93,7 @@ object MultiViewCalendarOptions {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -114,7 +113,7 @@ object MultiViewCalendarOptions {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setSelectDates(value: js.Any): Self = StObject.set(x, "selectDates", value.asInstanceOf[js.Any])
+    inline def setSelectDates(value: Any): Self = StObject.set(x, "selectDates", value.asInstanceOf[js.Any])
     
     inline def setSelectDatesUndefined: Self = StObject.set(x, "selectDates", js.undefined)
     
@@ -130,7 +129,7 @@ object MultiViewCalendarOptions {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

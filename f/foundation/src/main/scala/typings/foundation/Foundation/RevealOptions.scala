@@ -16,11 +16,11 @@ trait RevealOptions extends StObject {
   
   var bg_class: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var close: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var close_on_background_click: js.UndefOr[Boolean] = js.undefined
   
-  var closed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var closed: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var css: js.UndefOr[Close] = js.undefined
   
@@ -28,11 +28,11 @@ trait RevealOptions extends StObject {
   
   var multiple_opened: js.UndefOr[Boolean] = js.undefined
   
-  var on_ajax_error: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var on_ajax_error: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var open: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var open: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var opened: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var opened: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var root_element: js.UndefOr[String] = js.undefined
 }
@@ -61,7 +61,7 @@ object RevealOptions {
     
     inline def setBg_classUndefined: Self = StObject.set(x, "bg_class", js.undefined)
     
-    inline def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
@@ -69,7 +69,7 @@ object RevealOptions {
     
     inline def setClose_on_background_clickUndefined: Self = StObject.set(x, "close_on_background_click", js.undefined)
     
-    inline def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    inline def setClosed(value: () => Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
@@ -85,15 +85,15 @@ object RevealOptions {
     
     inline def setMultiple_openedUndefined: Self = StObject.set(x, "multiple_opened", js.undefined)
     
-    inline def setOn_ajax_error(value: () => js.Any): Self = StObject.set(x, "on_ajax_error", js.Any.fromFunction0(value))
+    inline def setOn_ajax_error(value: () => Any): Self = StObject.set(x, "on_ajax_error", js.Any.fromFunction0(value))
     
     inline def setOn_ajax_errorUndefined: Self = StObject.set(x, "on_ajax_error", js.undefined)
     
-    inline def setOpen(value: () => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Any): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
+    inline def setOpened(value: () => Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     

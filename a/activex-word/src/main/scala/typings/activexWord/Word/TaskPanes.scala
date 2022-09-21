@@ -14,7 +14,7 @@ trait TaskPanes extends StObject {
   
   def Item(Index: WdTaskPanes): TaskPane
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.TaskPanes_typekey")
   var WordDotTaskPanes_typekey: TaskPanes
@@ -26,7 +26,7 @@ object TaskPanes {
     Count: Double,
     Creator: Double,
     Item: WdTaskPanes => TaskPane,
-    Parent: js.Any,
+    Parent: Any,
     WordDotTaskPanes_typekey: TaskPanes
   ): TaskPanes = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object TaskPanes {
     
     inline def setItem(value: WdTaskPanes => TaskPane): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotTaskPanes_typekey(value: TaskPanes): Self = StObject.set(x, "Word.TaskPanes_typekey", value.asInstanceOf[js.Any])
   }

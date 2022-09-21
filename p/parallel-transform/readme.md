@@ -10,10 +10,10 @@ Transform stream that allows you to run your transforms in parallel without chan
 | ------------------ | :-------------: |
 | Full name          | parallel-transform |
 | Keywords           | transform, stream, parallel, preserve, order |
-| # releases         | 2 |
-| # dependents       | 87 |
-| # downloads        | 465796813 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1292508666666664E7 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/parallel-transform#readme)

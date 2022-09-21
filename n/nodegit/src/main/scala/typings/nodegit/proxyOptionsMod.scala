@@ -9,15 +9,15 @@ object proxyOptionsMod {
   
   @JSImport("nodegit/proxy-options", "ProxyOptions")
   @js.native
-  class ProxyOptions ()
+  open class ProxyOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var certificateCheck: js.UndefOr[js.Function] = js.native
     
     var credentials: js.UndefOr[js.Function] = js.native
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[Any] = js.native
     
     var `type`: js.UndefOr[Double] = js.native
     

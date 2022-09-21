@@ -39,7 +39,7 @@ object anon {
     
     var scope: Boolean
     
-    var templateUrl: js.Any
+    var templateUrl: Any
   }
   object Controller {
     
@@ -49,7 +49,7 @@ object anon {
       replace: Boolean,
       restrict: String,
       scope: Boolean,
-      templateUrl: js.Any
+      templateUrl: Any
     ): Controller = {
       val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], controllerAs = controllerAs.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any], restrict = restrict.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Controller]
@@ -67,7 +67,7 @@ object anon {
       
       inline def setScope(value: Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setTemplateUrl(value: js.Any): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: Any): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }
   }
   

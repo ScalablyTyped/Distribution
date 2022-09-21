@@ -9,7 +9,7 @@ trait ConfigurationId extends StObject {
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
     */
-  var Id: js.UndefOr[string] = js.undefined
+  var Id: string
   
   /**
     * The revision number of the configuration.
@@ -18,16 +18,14 @@ trait ConfigurationId extends StObject {
 }
 object ConfigurationId {
   
-  inline def apply(): ConfigurationId = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Id: string): ConfigurationId = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationId]
   }
   
   extension [Self <: ConfigurationId](x: Self) {
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     inline def setRevision(value: integer): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AnaglyphUniversalCamera")
 @js.native
-class AnaglyphUniversalCamera protected ()
+open class AnaglyphUniversalCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AnaglyphUniversalCamera {
   /**
@@ -18,6 +18,7 @@ class AnaglyphUniversalCamera protected ()
     * @param interaxialDistance defines distance between each color axis
     * @param scene defines the hosting scene
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3, interaxialDistance: Double) = this()
   def this(
     name: String,
     position: typings.babylonjs.BABYLON.Vector3,

@@ -14,7 +14,7 @@ trait ServiceSetting extends StObject {
   /**
     * The last time the service setting was modified.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the last modified user. This field is populated only if the setting value was overwritten.
@@ -32,7 +32,7 @@ trait ServiceSetting extends StObject {
   var SettingValue: js.UndefOr[ServiceSettingValue] = js.undefined
   
   /**
-    * The status of the service setting. The value can be Default, Customized or PendingUpdate.   Default: The current setting uses a default value provisioned by the AWS service team.   Customized: The current setting use a custom value specified by the customer.   PendingUpdate: The current setting uses a default or custom value, but a setting change request is pending approval.  
+    * The status of the service setting. The value can be Default, Customized or PendingUpdate.   Default: The current setting uses a default value provisioned by the Amazon Web Services service team.   Customized: The current setting use a custom value specified by the customer.   PendingUpdate: The current setting uses a default or custom value, but a setting change request is pending approval.  
     */
   var Status: js.UndefOr[String] = js.undefined
 }
@@ -49,7 +49,7 @@ object ServiceSetting {
     
     inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    inline def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

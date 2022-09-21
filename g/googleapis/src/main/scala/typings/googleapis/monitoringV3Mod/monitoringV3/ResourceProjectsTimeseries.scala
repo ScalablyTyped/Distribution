@@ -4,80 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Timeseries")
 @js.native
-class ResourceProjectsTimeseries protected () extends StObject {
+open class ResourceProjectsTimeseries protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * monitoring.projects.timeSeries.create
-    * @desc Creates or adds data to one or more time series. The response is
-    * empty if all time series in the request were written. If any time series
-    * could not be written, a corresponding failure message is included in the
-    * error response.
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'create' method:
-    *
-    *     // The project on which to execute the request. The format is
-    * `"projects/{project_id_or_number}"`. name: "projects/{MY-PROJECT}",
-    *     resource: {},
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.timeSeries.create(request, function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *     }
-    *   });
-    * });
-    * @alias monitoring.projects.timeSeries.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The project on which to execute the request. The format is "projects/{project_id_or_number}".
-    * @param {().CreateTimeSeriesRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaEmpty] = js.native
   def create(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -85,8 +24,8 @@ class ResourceProjectsTimeseries protected () extends StObject {
   def create(params: ParamsResourceProjectsTimeseriesCreate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(
     params: ParamsResourceProjectsTimeseriesCreate,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsTimeseriesCreate, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def create(
@@ -94,84 +33,156 @@ class ResourceProjectsTimeseries protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.timeSeries.list
-    * @desc Lists time series that match a filter. This method does not require
-    * a Stackdriver account.
+    * Creates or adds data to one or more time series. The response is empty if all time series in the request were written. If any time series could not be written, a corresponding failure message is included in the error response.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'list' method:
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
+    *   });
     *
-    *     // The project on which to execute the request. The format is
-    * "projects/{project_id_or_number}". name: "projects/{MY-PROJECT}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
     *
+    *   // Do the magic
+    *   const res = await monitoring.projects.timeSeries.create({
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
     *
-    *   var recur = function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *       if (result.nextPageToken) {
-    *         request.pageToken = result.nextPageToken;
-    *         monitoring.projects.timeSeries.list(request, recur);
-    *       }
-    *     }
-    *   };
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "timeSeries": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
     *
-    *   monitoring.projects.timeSeries.list(request, recur);
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
-    * @alias monitoring.projects.timeSeries.list
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.aggregation.alignmentPeriod The alignment period for per-time series alignment. If present, alignmentPeriod must be at least 60 seconds. After per-time series alignment, each time series will contain data points only on the period boundaries. If perSeriesAligner is not specified or equals ALIGN_NONE, then this field is ignored. If perSeriesAligner is specified and does not equal ALIGN_NONE, then this field must be defined; otherwise an error is returned.
-    * @param {string=} params.aggregation.crossSeriesReducer The approach to be used to combine time series. Not all reducer functions may be applied to all time series, depending on the metric type and the value type of the original time series. Reduction may change the metric type of value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.
-    * @param {string=} params.aggregation.groupByFields The set of fields to preserve when crossSeriesReducer is specified. The groupByFields determine how the time series are partitioned into subsets prior to applying the aggregation function. Each subset contains time series that have the same value for each of the grouping fields. Each individual time series is a member of exactly one subset. The crossSeriesReducer is applied to each subset of time series. It is not possible to reduce across different resource types, so this field implicitly contains resource.type. Fields not specified in groupByFields are aggregated away. If groupByFields is not specified and all the time series have the same resource type, then the time series are aggregated into a single output time series. If crossSeriesReducer is not defined, this field is ignored.
-    * @param {string=} params.aggregation.perSeriesAligner The approach to be used to align individual time series. Not all alignment functions may be applied to all time series, depending on the metric type and value type of the original time series. Alignment may change the metric type or the value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.
-    * @param {string=} params.filter A monitoring filter that specifies which time series should be returned. The filter must specify a single metric type, and can additionally specify metric labels and other information. For example: metric.type = "compute.googleapis.com/instance/cpu/usage_time" AND     metric.label.instance_name = "my-instance-name"
-    * @param {string=} params.interval.endTime Required. The end of the time interval.
-    * @param {string=} params.interval.startTime Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.
-    * @param {string} params.name The project on which to execute the request. The format is "projects/{project_id_or_number}".
-    * @param {string=} params.orderBy Unsupported: must be left blank. The points in each time series are returned in reverse time order.
-    * @param {integer=} params.pageSize A positive number that is the maximum number of results to return. If page_size is empty or more than 100,000 results, the effective page_size is 100,000 results. If view is set to FULL, this is the maximum number of Points returned. If view is set to HEADERS, this is the maximum number of TimeSeries returned.
-    * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
-    * @param {string=} params.view Specifies which information is returned about the time series.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsTimeseriesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsTimeseriesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def createService(): GaxiosPromise[SchemaEmpty] = js.native
+  def createService(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def createService(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def createService(params: ParamsResourceProjectsTimeseriesCreateservice): GaxiosPromise[SchemaEmpty] = js.native
+  def createService(params: ParamsResourceProjectsTimeseriesCreateservice, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def createService(
+    params: ParamsResourceProjectsTimeseriesCreateservice,
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
+  ): Unit = js.native
+  def createService(params: ParamsResourceProjectsTimeseriesCreateservice, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def createService(
+    params: ParamsResourceProjectsTimeseriesCreateservice,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  /**
+    * Creates or adds data to one or more service time series. A service time series is a time series for a metric from a Google Cloud service. The response is empty if all time series in the request were written. If any time series could not be written, a corresponding failure message is included in the error response. This endpoint rejects writes to user-defined metrics. This method is only for use by Google Cloud services. Use projects.timeSeries.create instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.timeSeries.createService({
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "timeSeries": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def createService(params: ParamsResourceProjectsTimeseriesCreateservice, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def createService(
+    params: ParamsResourceProjectsTimeseriesCreateservice,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTimeSeriesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
@@ -182,13 +193,199 @@ class ResourceProjectsTimeseries protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsTimeseriesList,
-    options: BodyResponseCallback[SchemaListTimeSeriesResponse],
-    callback: BodyResponseCallback[SchemaListTimeSeriesResponse]
+    options: BodyResponseCallback[Readable | SchemaListTimeSeriesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListTimeSeriesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsTimeseriesList, options: MethodOptions): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(
     params: ParamsResourceProjectsTimeseriesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTimeSeriesResponse]
+  ): Unit = js.native
+  /**
+    * Lists time series that match a filter.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.timeSeries.list({
+    *     // The alignment_period specifies a time interval, in seconds, that is used to divide the data in all the time series into consistent blocks of time. This will be done before the per-series aligner can be applied to the data.The value must be at least 60 seconds. If a per-series aligner other than ALIGN_NONE is specified, this field is required or an error is returned. If no per-series aligner is specified, or the aligner ALIGN_NONE is specified, then this field is ignored.The maximum value of the alignment_period is 104 weeks (2 years) for charts, and 90,000 seconds (25 hours) for alerting policies.
+    *     'aggregation.alignmentPeriod': 'placeholder-value',
+    *     // The reduction operation to be used to combine time series into a single time series, where the value of each data point in the resulting series is a function of all the already aligned values in the input time series.Not all reducer operations can be applied to all time series. The valid choices depend on the metric_kind and the value_type of the original time series. Reduction can yield a time series with a different metric_kind or value_type than the input time series.Time series data must first be aligned (see per_series_aligner) in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be specified, and must not be ALIGN_NONE. An alignment_period must also be specified; otherwise, an error is returned.
+    *     'aggregation.crossSeriesReducer': 'placeholder-value',
+    *     // The set of fields to preserve when cross_series_reducer is specified. The group_by_fields determine how the time series are partitioned into subsets prior to applying the aggregation operation. Each subset contains time series that have the same value for each of the grouping fields. Each individual time series is a member of exactly one subset. The cross_series_reducer is applied to each subset of time series. It is not possible to reduce across different resource types, so this field implicitly contains resource.type. Fields not specified in group_by_fields are aggregated away. If group_by_fields is not specified and all the time series have the same resource type, then the time series are aggregated into a single output time series. If cross_series_reducer is not defined, this field is ignored.
+    *     'aggregation.groupByFields': 'placeholder-value',
+    *     // An Aligner describes how to bring the data points in a single time series into temporal alignment. Except for ALIGN_NONE, all alignments cause all the data points in an alignment_period to be mathematically grouped together, resulting in a single data point for each alignment_period with end timestamp at the end of the period.Not all alignment operations may be applied to all time series. The valid choices depend on the metric_kind and value_type of the original time series. Alignment can change the metric_kind or the value_type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be specified and not equal to ALIGN_NONE and alignment_period must be specified; otherwise, an error is returned.
+    *     'aggregation.perSeriesAligner': 'placeholder-value',
+    *     // Required. A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) that specifies which time series should be returned. The filter must specify a single metric type, and can additionally specify metric labels and other information. For example: metric.type = "compute.googleapis.com/instance/cpu/usage_time" AND metric.labels.instance_name = "my-instance-name"
+    *     filter: 'placeholder-value',
+    *     // Required. The end of the time interval.
+    *     'interval.endTime': 'placeholder-value',
+    *     // Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.
+    *     'interval.startTime': 'placeholder-value',
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name), organization or folder on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] organizations/[ORGANIZATION_ID] folders/[FOLDER_ID]
+    *     name: 'projects/my-project',
+    *     // Unsupported: must be left blank. The points in each time series are currently returned in reverse time order (most recent to oldest).
+    *     orderBy: 'placeholder-value',
+    *     // A positive number that is the maximum number of results to return. If page_size is empty or more than 100,000 results, the effective page_size is 100,000 results. If view is set to FULL, this is the maximum number of Points returned. If view is set to HEADERS, this is the maximum number of TimeSeries returned.
+    *     pageSize: 'placeholder-value',
+    *     // If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
+    *     pageToken: 'placeholder-value',
+    *     // The alignment_period specifies a time interval, in seconds, that is used to divide the data in all the time series into consistent blocks of time. This will be done before the per-series aligner can be applied to the data.The value must be at least 60 seconds. If a per-series aligner other than ALIGN_NONE is specified, this field is required or an error is returned. If no per-series aligner is specified, or the aligner ALIGN_NONE is specified, then this field is ignored.The maximum value of the alignment_period is 104 weeks (2 years) for charts, and 90,000 seconds (25 hours) for alerting policies.
+    *     'secondaryAggregation.alignmentPeriod': 'placeholder-value',
+    *     // The reduction operation to be used to combine time series into a single time series, where the value of each data point in the resulting series is a function of all the already aligned values in the input time series.Not all reducer operations can be applied to all time series. The valid choices depend on the metric_kind and the value_type of the original time series. Reduction can yield a time series with a different metric_kind or value_type than the input time series.Time series data must first be aligned (see per_series_aligner) in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be specified, and must not be ALIGN_NONE. An alignment_period must also be specified; otherwise, an error is returned.
+    *     'secondaryAggregation.crossSeriesReducer': 'placeholder-value',
+    *     // The set of fields to preserve when cross_series_reducer is specified. The group_by_fields determine how the time series are partitioned into subsets prior to applying the aggregation operation. Each subset contains time series that have the same value for each of the grouping fields. Each individual time series is a member of exactly one subset. The cross_series_reducer is applied to each subset of time series. It is not possible to reduce across different resource types, so this field implicitly contains resource.type. Fields not specified in group_by_fields are aggregated away. If group_by_fields is not specified and all the time series have the same resource type, then the time series are aggregated into a single output time series. If cross_series_reducer is not defined, this field is ignored.
+    *     'secondaryAggregation.groupByFields': 'placeholder-value',
+    *     // An Aligner describes how to bring the data points in a single time series into temporal alignment. Except for ALIGN_NONE, all alignments cause all the data points in an alignment_period to be mathematically grouped together, resulting in a single data point for each alignment_period with end timestamp at the end of the period.Not all alignment operations may be applied to all time series. The valid choices depend on the metric_kind and value_type of the original time series. Alignment can change the metric_kind or the value_type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If cross_series_reducer is specified, then per_series_aligner must be specified and not equal to ALIGN_NONE and alignment_period must be specified; otherwise, an error is returned.
+    *     'secondaryAggregation.perSeriesAligner': 'placeholder-value',
+    *     // Required. Specifies which information is returned about the time series.
+    *     view: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "executionErrors": [],
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "timeSeries": [],
+    *   //   "unit": "my_unit"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsTimeseriesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsTimeseriesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def query(): GaxiosPromise[SchemaQueryTimeSeriesResponse] = js.native
+  def query(callback: BodyResponseCallback[SchemaQueryTimeSeriesResponse]): Unit = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryTimeSeriesResponse] = js.native
+  def query(params: ParamsResourceProjectsTimeseriesQuery): GaxiosPromise[SchemaQueryTimeSeriesResponse] = js.native
+  def query(
+    params: ParamsResourceProjectsTimeseriesQuery,
+    callback: BodyResponseCallback[SchemaQueryTimeSeriesResponse]
+  ): Unit = js.native
+  def query(
+    params: ParamsResourceProjectsTimeseriesQuery,
+    options: BodyResponseCallback[Readable | SchemaQueryTimeSeriesResponse],
+    callback: BodyResponseCallback[Readable | SchemaQueryTimeSeriesResponse]
+  ): Unit = js.native
+  def query(params: ParamsResourceProjectsTimeseriesQuery, options: MethodOptions): GaxiosPromise[SchemaQueryTimeSeriesResponse] = js.native
+  def query(
+    params: ParamsResourceProjectsTimeseriesQuery,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaQueryTimeSeriesResponse]
+  ): Unit = js.native
+  /**
+    * Queries time series using Monitoring Query Language.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.timeSeries.query({
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "pageSize": 0,
+    *       //   "pageToken": "my_pageToken",
+    *       //   "query": "my_query"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "partialErrors": [],
+    *   //   "timeSeriesData": [],
+    *   //   "timeSeriesDescriptor": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def query(params: ParamsResourceProjectsTimeseriesQuery, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def query(
+    params: ParamsResourceProjectsTimeseriesQuery,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

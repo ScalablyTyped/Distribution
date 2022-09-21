@@ -37,6 +37,6 @@ object SnapshotStatusParams {
     
     inline def setSnapshot(value: NameList): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    inline def setSnapshotVarargs(value: String*): Self = StObject.set(x, "snapshot", js.Array(value :_*))
+    inline def setSnapshotVarargs(value: String*): Self = StObject.set(x, "snapshot", js.Array(value*))
   }
 }

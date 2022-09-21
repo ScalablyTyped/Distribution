@@ -1,5 +1,6 @@
 package typings.materialTextfield
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialFloatingLabel.componentMod.MDCFloatingLabelFactory
 import typings.materialLineRipple.componentMod.MDCLineRippleFactory
@@ -10,7 +11,6 @@ import typings.materialTextfield.componentMod.MDCTextFieldCharacterCounterFactor
 import typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperTextFactory
 import typings.materialTextfield.iconComponentMod.MDCTextFieldIconFactory
 import typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +20,13 @@ object materialTextfieldMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/textfield/component", "MDCTextField")
   @js.native
-  class MDCTextField protected () extends MDCComponent[MDCTextFieldFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCTextFieldFoundation, args: js.Any*) = this()
+  open class MDCTextField protected () extends MDCComponent[MDCTextFieldFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCTextFieldFoundation, args: Any*) = this()
+    
+    /* private */ var characterCounter: Any = js.native
+    
+    /* private */ var createRipple: Any = js.native
     
     def disabled: Boolean = js.native
     /**
@@ -36,6 +40,23 @@ object materialTextfieldMod {
       * Focuses the input element.
       */
     def focus(): Unit = js.native
+    
+    /**
+      * @return A map of all subcomponents to subfoundations.
+      */
+    /* private */ var getFoundationMap: Any = js.native
+    
+    /* private */ var getInputAdapterMethods: Any = js.native
+    
+    /* private */ var getLabelAdapterMethods: Any = js.native
+    
+    /* private */ var getLineRippleAdapterMethods: Any = js.native
+    
+    /* private */ var getOutlineAdapterMethods: Any = js.native
+    
+    /* private */ var getRootAdapterMethods: Any = js.native
+    
+    /* private */ var helperText: Any = js.native
     
     /**
       * Sets the helper text element content.
@@ -52,10 +73,16 @@ object materialTextfieldMod {
       outlineFactory: js.UndefOr[MDCNotchedOutlineFactory]
     ): Unit = js.native
     
+    /* private */ var input: Any = js.native
+    
+    /* private */ var label: Any = js.native
+    
     /**
       * Recomputes the outline SVG path for the outline element.
       */
     def layout(): Unit = js.native
+    
+    /* private */ var leadingIcon: Any = js.native
     
     /**
       * Sets the aria label of the leading icon.
@@ -66,6 +93,8 @@ object materialTextfieldMod {
       * Sets the text content of the leading icon.
       */
     def leadingIconContent_=(content: String): Unit = js.native
+    
+    /* private */ var lineRipple: Any = js.native
     
     def max: String = js.native
     
@@ -93,11 +122,15 @@ object materialTextfieldMod {
       */
     def min_=(min: String): Unit = js.native
     
+    /* private */ var outline: Any = js.native
+    
     def pattern: String = js.native
     /**
       * @param pattern Sets the input element's validation pattern.
       */
     def pattern_=(pattern: String): Unit = js.native
+    
+    /* private */ var prefix: Any = js.native
     
     /**
       * Gets the text content of the prefix, or null if it does not exist.
@@ -122,6 +155,8 @@ object materialTextfieldMod {
       */
     def step_=(step: String): Unit = js.native
     
+    /* private */ var suffix: Any = js.native
+    
     /**
       * Gets the text content of the suffix, or null if it does not exist.
       */
@@ -130,6 +165,8 @@ object materialTextfieldMod {
       * Sets the text content of the suffix, if it exists.
       */
     def suffixText_=(suffixText: String | Null): Unit = js.native
+    
+    /* private */ var trailingIcon: Any = js.native
     
     /**
       * Sets the aria label of the trailing icon.
@@ -168,6 +205,6 @@ object materialTextfieldMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTextField]
+    inline def attachTo(root: typings.std.Element): MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTextField]
   }
 }

@@ -33,6 +33,6 @@ object UniqueValuesResult {
     
     inline def setUniqueValueInfos(value: js.Array[UniqueValuesResultUniqueValueInfos]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    inline def setUniqueValueInfosVarargs(value: UniqueValuesResultUniqueValueInfos*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: UniqueValuesResultUniqueValueInfos*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value*))
   }
 }

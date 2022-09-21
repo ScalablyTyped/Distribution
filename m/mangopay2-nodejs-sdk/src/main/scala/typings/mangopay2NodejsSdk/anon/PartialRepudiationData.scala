@@ -1,16 +1,16 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION
-import typings.mangopay2NodejsSdk.mod.MoneyData
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.refund.RefundReason
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.refundMod.refund.RefundReason
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.repudiation.RepudiationData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/repudiation.repudiation.RepudiationData> */
 trait PartialRepudiationData extends StObject {
   
   var AuthorId: js.UndefOr[String] = js.undefined
@@ -39,7 +39,7 @@ trait PartialRepudiationData extends StObject {
   
   var Nature: js.UndefOr[REPUDIATION] = js.undefined
   
-  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.refund.RefundReason] = js.undefined
+  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.refundMod.refund.RefundReason] = js.undefined
   
   var ResultCode: js.UndefOr[String] = js.undefined
   

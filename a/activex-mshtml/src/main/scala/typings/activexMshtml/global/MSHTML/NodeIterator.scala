@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.NodeIterator")
 @js.native
-/* private */ class NodeIterator ()
+/* private */ open class NodeIterator ()
   extends StObject
      with typings.activexMshtml.MSHTML.NodeIterator {
   
@@ -21,16 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val expandEntityReferences: Boolean = js.native
   
   /* CompleteClass */
-  override val filter: js.Any = js.native
+  override val filter: Any = js.native
   
   /* CompleteClass */
-  override def nextNode(): js.Any = js.native
+  override def nextNode(): Any = js.native
   
   /* CompleteClass */
-  override def previousNode(): js.Any = js.native
+  override def previousNode(): Any = js.native
   
   /* CompleteClass */
-  override val root: js.Any = js.native
+  override val root: Any = js.native
   
   /* CompleteClass */
   override val whatToShow: Double = js.native

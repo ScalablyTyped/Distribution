@@ -1,49 +1,53 @@
 package typings.awsSdk.ebsMod
 
+import typings.awsSdk.awsSdkStrings.LINEAR
+import typings.awsSdk.awsSdkStrings.SHA256
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BlockData = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.ebsMod.Blob | java.lang.String | typings.node.streamMod.Readable
+type BlockData = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
 
-type BlockIndex = scala.Double
+type BlockIndex = Double
 
-type BlockSize = scala.Double
+type BlockSize = Double
 
-type BlockToken = java.lang.String
+type BlockToken = String
 
-type Blocks = js.Array[typings.awsSdk.ebsMod.Block]
+type Blocks = js.Array[Block]
 
 type Boolean = scala.Boolean
 
-type ChangedBlocks = js.Array[typings.awsSdk.ebsMod.ChangedBlock]
+type ChangedBlocks = js.Array[ChangedBlock]
 
-type ChangedBlocksCount = scala.Double
+type ChangedBlocksCount = Double
 
-type Checksum = java.lang.String
+type Checksum = String
 
-type ChecksumAggregationMethod = typings.awsSdk.awsSdkStrings.LINEAR | java.lang.String
+type ChecksumAggregationMethod = LINEAR | String
 
-type ChecksumAlgorithm = typings.awsSdk.awsSdkStrings.SHA256 | java.lang.String
+type ChecksumAlgorithm = SHA256 | String
 
-type DataLength = scala.Double
+type DataLength = Double
 
-type Description = java.lang.String
+type Description = String
 
-type IdempotencyToken = java.lang.String
+type IdempotencyToken = String
 
-type KmsKeyArn = java.lang.String
+type KmsKeyArn = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type OwnerId = java.lang.String
+type OwnerId = String
 
-type PageToken = java.lang.String
+type PageToken = String
 
-type Progress = scala.Double
+type Progress = Double
 
-type SnapshotId = java.lang.String
+type SnapshotId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.completed__
@@ -51,23 +55,23 @@ type SnapshotId = java.lang.String
   - typings.awsSdk.awsSdkStrings.error__
   - java.lang.String
 */
-type Status = typings.awsSdk.ebsMod._Status | java.lang.String
+type Status = _Status | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = js.Array[typings.awsSdk.ebsMod.Tag]
+type Tags = js.Array[Tag]
 
-type TimeStamp = typings.std.Date
+type TimeStamp = js.Date
 
-type Timeout = scala.Double
+type Timeout = Double
 
-type VolumeSize = scala.Double
+type VolumeSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-11-02`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ebsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

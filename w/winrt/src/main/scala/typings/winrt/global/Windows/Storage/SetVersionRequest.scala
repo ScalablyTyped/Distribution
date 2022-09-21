@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.SetVersionRequest")
 @js.native
-class SetVersionRequest ()
+open class SetVersionRequest ()
   extends StObject
      with typings.winrt.Windows.Storage.SetVersionRequest {
   

@@ -42,7 +42,7 @@ object observableMod {
   
   @JSImport("baconjs/types/observable", "EventStream")
   @js.native
-  class EventStream[V] protected () extends Observable[V] {
+  open class EventStream[V] protected () extends Observable[V] {
     def this(desc: Desc, subscribe: Subscribe[V]) = this()
     def this(desc: Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
     def this(desc: Desc, subscribe: Subscribe[V], handler: Unit, options: EventStreamOptions) = this()
@@ -147,7 +147,7 @@ object observableMod {
       ```
       
       */
-    def awaiting(other: Observable[js.Any]): Property[Boolean] = js.native
+    def awaiting(other: Observable[Any]): Property[Boolean] = js.native
     
     /**
       Throttles the observable using a buffer so that at most one value event in minimumInterval is issued.
@@ -244,7 +244,7 @@ object observableMod {
       The return value of [`decode`](#decode) is always a [`Property`](property.html).
       
       */
-    def decode[T /* <: Record[js.Any, js.Any] */](cases: T): Property[DecodedValueOf[T]] = js.native
+    def decode[T /* <: Record[Any, Any] */](cases: T): Property[DecodedValueOf[T]] = js.native
     
     /**
       Delays the stream/property by given amount of milliseconds. Does not delay the initial value of a [`Property`](property.html).
@@ -267,7 +267,7 @@ object observableMod {
       Internally, many combinator functions depend on other combinators to create intermediate Observables that the result will actually depend on.
       The `deps` method will skip these internal dependencies. See also: [internalDeps](#internaldeps)
       */
-    def deps(): js.Array[Observable[js.Any]] = js.native
+    def deps(): js.Array[Observable[Any]] = js.native
     
     /**
       * Contains a structured version of what [`toString`](#tostring) returns.
@@ -311,16 +311,16 @@ object observableMod {
       per event; when a Property loses all of its subscribers it will re-emit its current value when a
       new subscriber is added.
       */
-    def doAction(f: Function1[V, js.Any]): this.type = js.native
+    def doAction(f: Function1[V, Any]): this.type = js.native
     
-    def doEnd(f: Function0[js.Any]): this.type = js.native
+    def doEnd(f: Function0[Any]): this.type = js.native
     
     /**
       Returns a stream/property where the function f
       is executed for each error, before dispatching to subscribers.
       That is, same as [`doAction`](#observable-doaction) but for errors.
       */
-    def doError(f: Function1[js.Any, js.Any]): this.type = js.native
+    def doError(f: Function1[Any, Any]): this.type = js.native
     
     /**
       Logs each value of the Observable to the console. doLog() behaves like [`log`](#log)
@@ -329,7 +329,7 @@ object observableMod {
       safe, because it does not cause the same surprising side-effects as log()
       does.
       */
-    def doLog(args: js.Any*): this.type = js.native
+    def doLog(args: Any*): this.type = js.native
     
     def endAsValue(): Observable[js.Object] = js.native
     
@@ -340,7 +340,7 @@ object observableMod {
       @param  predicate   optional predicate function to determine whether to end on a given error
       */
     def endOnError(): this.type = js.native
-    def endOnError(predicate: Predicate[js.Any]): this.type = js.native
+    def endOnError(predicate: Predicate[Any]): this.type = js.native
     
     /**
       Returns a stream containing [`Error`](error.html) events only.
@@ -403,7 +403,7 @@ object observableMod {
       value stream, unless an error event is returned. As an example, one type of error could result in a retry and another just
       passed through, which can be implemented using flatMapError.
       */
-    def flatMapError[V2](f: Function1[js.Any, Observable[V2] | EventOrValue[V2]]): Observable[V | V2] = js.native
+    def flatMapError[V2](f: Function1[Any, Observable[V2] | EventOrValue[V2]]): Observable[V | V2] = js.native
     
     def flatMapEvent[V2](f: EventSpawner[V, V2]): Observable[V2] = js.native
     
@@ -509,7 +509,7 @@ object observableMod {
       This method is for Bacon.js internal purposes but could be useful for debugging/analysis tools as well.
       See also: [deps](#deps)
       */
-    def internalDeps(): js.Array[js.Any] = js.native
+    def internalDeps(): js.Array[Any] = js.native
     
     /**
       Takes the last element from the stream. None, if stream is empty.
@@ -538,7 +538,7 @@ object observableMod {
       ```
       
       */
-    def log(args: js.Any*): this.type = js.native
+    def log(args: Any*): this.type = js.native
     
     def map[V2](f: V2): Observable[V2] = js.native
     def map[V2](f: Property[V2]): Observable[V2] = js.native
@@ -564,7 +564,7 @@ object observableMod {
       specifically, feeds the "error" field of the error event to the function
       and produces a [`Next`](next.html) event based on the return value.
       */
-    def mapError(f: Function1[js.Any, V]): this.type = js.native
+    def mapError(f: Function1[Any, V]): this.type = js.native
     
     /**
       Sets the name of the observable. Overrides the default
@@ -590,7 +590,7 @@ object observableMod {
       Just like `subscribe`, this method returns a function for unsubscribing.
       */
     def onError(): Unsub = js.native
-    def onError(f: Sink[js.Any]): Unsub = js.native
+    def onError(f: Sink[Any]): Unsub = js.native
     
     /**
       Subscribes a given handler function to the observable. Function will be called for each new value.
@@ -629,9 +629,9 @@ object observableMod {
       
       @param {Observable<V2>} sampler
       */
-    def sampledBy(sampler: EventStream[js.Any]): EventStream[V] = js.native
-    def sampledBy(sampler: Observable[js.Any]): Observable[V] = js.native
-    def sampledBy(sampler: Property[js.Any]): Property[V] = js.native
+    def sampledBy(sampler: EventStream[Any]): EventStream[V] = js.native
+    def sampledBy(sampler: Observable[Any]): Observable[V] = js.native
+    def sampledBy(sampler: Property[Any]): Property[V] = js.native
     
     /**
       Scans stream/property with given seed value and
@@ -691,7 +691,7 @@ object observableMod {
       appears in the given `starter` stream/property. In other words, starts delivering values
       from the source after first value appears in `starter`.
       */
-    def skipUntil(starter: Observable[js.Any]): this.type = js.native
+    def skipUntil(starter: Observable[Any]): this.type = js.native
     
     /**
       Skips elements until the given predicate function returns falsy once, and then
@@ -752,7 +752,7 @@ object observableMod {
       Takes elements from source until a value event appears in the other stream.
       If other stream ends without value, it is ignored.
       */
-    def takeUntil(stopper: Observable[js.Any]): this.type = js.native
+    def takeUntil(stopper: Observable[Any]): this.type = js.native
     
     /**
       Takes while given predicate function holds true, and then ends. Alternatively, you can supply a boolean Property to take elements while the Property holds `true`.
@@ -845,7 +845,7 @@ object observableMod {
       The method returns the same observable with mutated description.
       
       */
-    def withDescription(context: js.Any, method: String, args: js.Any*): this.type = js.native
+    def withDescription(context: Any, method: String, args: Any*): this.type = js.native
     
     /**
       Creates an EventStream/Property by sampling a given `samplee`
@@ -916,7 +916,7 @@ object observableMod {
   
   @JSImport("baconjs/types/observable", "Property")
   @js.native
-  class Property[V] protected () extends Observable[V] {
+  open class Property[V] protected () extends Observable[V] {
     def this(desc: Desc, subscribe: Subscribe[V]) = this()
     def this(desc: Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
     
@@ -924,13 +924,13 @@ object observableMod {
       Combines properties with the `&&` operator. It produces a new value when either of the Properties change,
       combining the latest values using `&&`.
       */
-    def and(other: Property[js.Any]): Property[Boolean] = js.native
+    def and(other: Property[Any]): Property[Boolean] = js.native
     
     /**
       Combines properties with the `||` operator. It produces a new value when either of the Properties change,
       combining the latest values using `||`.
       */
-    def or(other: Property[js.Any]): Property[Boolean] = js.native
+    def or(other: Property[Any]): Property[Boolean] = js.native
     
     /**
       Creates an EventStream by sampling the
@@ -956,7 +956,7 @@ object observableMod {
     inline def forceAsync_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAsync")(x.asInstanceOf[js.Any])
   }
   
-  inline def isProperty[V](x: js.Any): /* is baconjs.baconjs/types/observable.Property<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProperty")(x.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/observable.Property<V> */ Boolean]
+  inline def isProperty[V](x: Any): /* is baconjs.baconjs/types/observable.Property<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProperty")(x.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/observable.Property<V> */ Boolean]
   
   inline def newEventStream[V](description: Desc, subscribe: Subscribe[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("newEventStream")(description.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
@@ -979,5 +979,5 @@ object observableMod {
     }
   }
   
-  type ObservableConstructor = js.Function2[/* description */ Desc, /* subscribe */ Subscribe[js.Any], Observable[js.Any]]
+  type ObservableConstructor = js.Function2[/* description */ Desc, /* subscribe */ Subscribe[Any], Observable[Any]]
 }

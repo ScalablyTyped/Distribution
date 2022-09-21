@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.VectorEvent")
 @js.native
-class VectorEvent protected () extends Event {
+open class VectorEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.source.Vector} instances are instances of this

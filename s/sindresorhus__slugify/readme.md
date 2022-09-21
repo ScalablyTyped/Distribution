@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__slugify
 
-Typings are for version 1.1.0
+Typings are for version 2.1.0
 
 ## Library description:
 Slugify a string
@@ -10,10 +10,10 @@ Slugify a string
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/slugify |
 | Keywords           | string, slugify, slug, url, url-safe, urlify, transliterate, transliteration, deburr, unicode, ascii, text, decamelize, pretty, clean, filename, id |
-| # releases         | 8 |
-| # dependents       | 192 |
-| # downloads        | 13547314 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 4036708.0 |
+| # stars            | 2174.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/slugify#readme)

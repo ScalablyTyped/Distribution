@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrioConfig extends StObject {
   
-  var exclude: js.UndefOr[js.Any] = js.undefined
+  var exclude: js.UndefOr[Any] = js.undefined
   
-  var include: js.UndefOr[js.Any] = js.undefined
+  var include: js.UndefOr[Any] = js.undefined
   
   var inherited: js.UndefOr[Boolean] = js.undefined
   
@@ -27,11 +27,11 @@ object ErrioConfig {
   
   extension [Self <: ErrioConfig](x: Self) {
     
-    inline def setExclude(value: js.Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setInclude(value: js.Any): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: Any): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     

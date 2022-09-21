@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge
 
-import typings.matrixAppserviceBridge.anon.Content
+import typings.matrixAppserviceBridge.anon.Ts
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object clientRequestCacheMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/client-request-cache", "ClientRequestCache")
   @js.native
-  class ClientRequestCache[T, P /* <: js.Array[js.Any] */] protected () extends StObject {
+  open class ClientRequestCache[T, P /* <: js.Array[Any] */] protected () extends StObject {
     /**
       * @param ttl How old a result can be before it gets expired.
       * @param size How many results to store before we trim.
@@ -40,14 +40,16 @@ object clientRequestCacheMod {
       * Clone the current request result cache, mapping keys to their cache records.
       * @returns {Map<string,any>}
       */
-    def getCachedResults(): Map[String, Content[T]] = js.native
+    def getCachedResults(): Map[String, Ts[T]] = js.native
     
-    /* private */ val maxSize: js.Any = js.native
+    def invalidate(key: String): Unit = js.native
     
-    /* private */ var requestContent: js.Any = js.native
+    /* private */ val maxSize: Any = js.native
     
-    /* private */ val requestFunc: js.Any = js.native
+    /* private */ var requestContent: Any = js.native
     
-    /* private */ val ttl: js.Any = js.native
+    /* private */ val requestFunc: Any = js.native
+    
+    /* private */ val ttl: Any = js.native
   }
 }

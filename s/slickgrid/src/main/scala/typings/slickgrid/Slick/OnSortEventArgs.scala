@@ -39,6 +39,6 @@ object OnSortEventArgs {
     
     inline def setSortColsUndefined: Self = StObject.set(x, "sortCols", js.undefined)
     
-    inline def setSortColsVarargs(value: SortColumn[T]*): Self = StObject.set(x, "sortCols", js.Array(value :_*))
+    inline def setSortColsVarargs(value: SortColumn[T]*): Self = StObject.set(x, "sortCols", js.Array(value*))
   }
 }

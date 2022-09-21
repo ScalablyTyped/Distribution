@@ -2,8 +2,6 @@ package typings.antDesignReactNative
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignReactNative.anon.Actionsheetitemfontsize
-import typings.antDesignReactNative.anon.ThemeStyles
-import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -24,31 +22,7 @@ object libStyleMod {
   
   inline def ThemeProvider(props: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@ant-design/react-native/lib/style", "WithTheme")
-  @js.native
-  class WithTheme[T, S] protected ()
-    extends Component[WithThemeProps[T, S], js.Object, js.Any] {
-    def this(props: WithThemeProps[T, S]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: WithThemeProps[T, S], context: js.Any) = this()
-    
-    def getStyles(theme: Theme): T = js.native
-  }
-  /* static members */
-  object WithTheme {
-    
-    @JSImport("@ant-design/react-native/lib/style", "WithTheme")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/react-native/lib/style", "WithTheme.defaultProps")
-    @js.native
-    def defaultProps: ThemeStyles = js.native
-    inline def defaultProps_=(x: ThemeStyles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  inline def WithTheme[T, S](props: WithThemeProps[T, S]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithTheme")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useTheme(): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Actionsheetitemfontsize]
   inline def useTheme(props: UseThemeContextProps): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")(props.asInstanceOf[js.Any]).asInstanceOf[Actionsheetitemfontsize]
@@ -91,6 +65,14 @@ object libStyleMod {
     var button_height: js.UndefOr[Double] = js.undefined
     
     var button_height_sm: js.UndefOr[Double] = js.undefined
+    
+    var checkbox_border: js.UndefOr[String] = js.undefined
+    
+    var checkbox_border_disabled: js.UndefOr[String] = js.undefined
+    
+    var checkbox_fill: js.UndefOr[String] = js.undefined
+    
+    var checkbox_fill_disabled: js.UndefOr[String] = js.undefined
     
     var color_icon_base: js.UndefOr[String] = js.undefined
     
@@ -224,7 +206,13 @@ object libStyleMod {
     
     var segmented_control_height: js.UndefOr[Double] = js.undefined
     
+    var switch_checked_disabled: js.UndefOr[String] = js.undefined
+    
     var switch_fill: js.UndefOr[String] = js.undefined
+    
+    var switch_unchecked: js.UndefOr[String] = js.undefined
+    
+    var switch_unchecked_disabled: js.UndefOr[String] = js.undefined
     
     var tab_bar_fill: js.UndefOr[String] = js.undefined
     
@@ -338,6 +326,22 @@ object libStyleMod {
       inline def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
       
       inline def setButton_height_smUndefined: Self = StObject.set(x, "button_height_sm", js.undefined)
+      
+      inline def setCheckbox_border(value: String): Self = StObject.set(x, "checkbox_border", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_borderUndefined: Self = StObject.set(x, "checkbox_border", js.undefined)
+      
+      inline def setCheckbox_border_disabled(value: String): Self = StObject.set(x, "checkbox_border_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border_disabledUndefined: Self = StObject.set(x, "checkbox_border_disabled", js.undefined)
+      
+      inline def setCheckbox_fill(value: String): Self = StObject.set(x, "checkbox_fill", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fillUndefined: Self = StObject.set(x, "checkbox_fill", js.undefined)
+      
+      inline def setCheckbox_fill_disabled(value: String): Self = StObject.set(x, "checkbox_fill_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill_disabledUndefined: Self = StObject.set(x, "checkbox_fill_disabled", js.undefined)
       
       inline def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
       
@@ -603,9 +607,21 @@ object libStyleMod {
       
       inline def setSegmented_control_heightUndefined: Self = StObject.set(x, "segmented_control_height", js.undefined)
       
+      inline def setSwitch_checked_disabled(value: String): Self = StObject.set(x, "switch_checked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_checked_disabledUndefined: Self = StObject.set(x, "switch_checked_disabled", js.undefined)
+      
       inline def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
       
       inline def setSwitch_fillUndefined: Self = StObject.set(x, "switch_fill", js.undefined)
+      
+      inline def setSwitch_unchecked(value: String): Self = StObject.set(x, "switch_unchecked", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_uncheckedUndefined: Self = StObject.set(x, "switch_unchecked", js.undefined)
+      
+      inline def setSwitch_unchecked_disabled(value: String): Self = StObject.set(x, "switch_unchecked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked_disabledUndefined: Self = StObject.set(x, "switch_unchecked_disabled", js.undefined)
       
       inline def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
       
@@ -675,7 +691,7 @@ object libStyleMod {
   
   trait Theme
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var action_sheet_zindex: Double
     
@@ -712,6 +728,14 @@ object libStyleMod {
     var button_height: Double
     
     var button_height_sm: Double
+    
+    var checkbox_border: String
+    
+    var checkbox_border_disabled: String
+    
+    var checkbox_fill: String
+    
+    var checkbox_fill_disabled: String
     
     var color_icon_base: String
     
@@ -845,7 +869,13 @@ object libStyleMod {
     
     var segmented_control_height: Double
     
+    var switch_checked_disabled: String
+    
     var switch_fill: String
+    
+    var switch_unchecked: String
+    
+    var switch_unchecked_disabled: String
     
     var tab_bar_fill: String
     
@@ -900,6 +930,10 @@ object libStyleMod {
       button_font_size_sm: Double,
       button_height: Double,
       button_height_sm: Double,
+      checkbox_border: String,
+      checkbox_border_disabled: String,
+      checkbox_fill: String,
+      checkbox_fill_disabled: String,
       color_icon_base: String,
       color_link: String,
       color_text_base: String,
@@ -966,7 +1000,10 @@ object libStyleMod {
       segmented_control_color: String,
       segmented_control_fill_tap: String,
       segmented_control_height: Double,
+      switch_checked_disabled: String,
       switch_fill: String,
+      switch_unchecked: String,
+      switch_unchecked_disabled: String,
       tab_bar_fill: String,
       tab_bar_height: Double,
       tabs_color: String,
@@ -984,7 +1021,7 @@ object libStyleMod {
       warning_button_fill: String,
       warning_button_fill_tap: String
     ): Theme = {
-      val __obj = js.Dynamic.literal(action_sheet_zindex = action_sheet_zindex.asInstanceOf[js.Any], actionsheet_item_font_size = actionsheet_item_font_size.asInstanceOf[js.Any], actionsheet_item_height = actionsheet_item_height.asInstanceOf[js.Any], border_color_base = border_color_base.asInstanceOf[js.Any], border_width_lg = border_width_lg.asInstanceOf[js.Any], border_width_md = border_width_md.asInstanceOf[js.Any], border_width_sm = border_width_sm.asInstanceOf[js.Any], brand_error = brand_error.asInstanceOf[js.Any], brand_important = brand_important.asInstanceOf[js.Any], brand_primary = brand_primary.asInstanceOf[js.Any], brand_primary_tap = brand_primary_tap.asInstanceOf[js.Any], brand_success = brand_success.asInstanceOf[js.Any], brand_wait = brand_wait.asInstanceOf[js.Any], brand_warning = brand_warning.asInstanceOf[js.Any], button_font_size = button_font_size.asInstanceOf[js.Any], button_font_size_sm = button_font_size_sm.asInstanceOf[js.Any], button_height = button_height.asInstanceOf[js.Any], button_height_sm = button_height_sm.asInstanceOf[js.Any], color_icon_base = color_icon_base.asInstanceOf[js.Any], color_link = color_link.asInstanceOf[js.Any], color_text_base = color_text_base.asInstanceOf[js.Any], color_text_base_inverse = color_text_base_inverse.asInstanceOf[js.Any], color_text_caption = color_text_caption.asInstanceOf[js.Any], color_text_disabled = color_text_disabled.asInstanceOf[js.Any], color_text_paragraph = color_text_paragraph.asInstanceOf[js.Any], color_text_placeholder = color_text_placeholder.asInstanceOf[js.Any], color_text_secondary = color_text_secondary.asInstanceOf[js.Any], ease_in_out_quint = ease_in_out_quint.asInstanceOf[js.Any], fill_base = fill_base.asInstanceOf[js.Any], fill_body = fill_body.asInstanceOf[js.Any], fill_disabled = fill_disabled.asInstanceOf[js.Any], fill_grey = fill_grey.asInstanceOf[js.Any], fill_mask = fill_mask.asInstanceOf[js.Any], fill_tap = fill_tap.asInstanceOf[js.Any], font_size_base = font_size_base.asInstanceOf[js.Any], font_size_caption = font_size_caption.asInstanceOf[js.Any], font_size_caption_sm = font_size_caption_sm.asInstanceOf[js.Any], font_size_heading = font_size_heading.asInstanceOf[js.Any], font_size_icontext = font_size_icontext.asInstanceOf[js.Any], font_size_subhead = font_size_subhead.asInstanceOf[js.Any], ghost_button_color = ghost_button_color.asInstanceOf[js.Any], ghost_button_fill_tap = ghost_button_fill_tap.asInstanceOf[js.Any], h_spacing_lg = h_spacing_lg.asInstanceOf[js.Any], h_spacing_md = h_spacing_md.asInstanceOf[js.Any], h_spacing_sm = h_spacing_sm.asInstanceOf[js.Any], icon_size_lg = icon_size_lg.asInstanceOf[js.Any], icon_size_md = icon_size_md.asInstanceOf[js.Any], icon_size_sm = icon_size_sm.asInstanceOf[js.Any], icon_size_xs = icon_size_xs.asInstanceOf[js.Any], icon_size_xxs = icon_size_xxs.asInstanceOf[js.Any], input_color_icon = input_color_icon.asInstanceOf[js.Any], input_color_icon_tap = input_color_icon_tap.asInstanceOf[js.Any], input_font_size = input_font_size.asInstanceOf[js.Any], input_label_width = input_label_width.asInstanceOf[js.Any], line_height_base = line_height_base.asInstanceOf[js.Any], line_height_paragraph = line_height_paragraph.asInstanceOf[js.Any], link_button_fill_tap = link_button_fill_tap.asInstanceOf[js.Any], link_button_font_size = link_button_font_size.asInstanceOf[js.Any], list_item_height = list_item_height.asInstanceOf[js.Any], list_item_height_sm = list_item_height_sm.asInstanceOf[js.Any], list_title_height = list_title_height.asInstanceOf[js.Any], modal_button_font_size = modal_button_font_size.asInstanceOf[js.Any], modal_button_height = modal_button_height.asInstanceOf[js.Any], modal_font_size_heading = modal_font_size_heading.asInstanceOf[js.Any], modal_zindex = modal_zindex.asInstanceOf[js.Any], notice_bar_fill = notice_bar_fill.asInstanceOf[js.Any], notice_bar_height = notice_bar_height.asInstanceOf[js.Any], opacity_disabled = opacity_disabled.asInstanceOf[js.Any], option_height = option_height.asInstanceOf[js.Any], popup_zindex = popup_zindex.asInstanceOf[js.Any], primary_button_fill = primary_button_fill.asInstanceOf[js.Any], primary_button_fill_tap = primary_button_fill_tap.asInstanceOf[js.Any], radius_lg = radius_lg.asInstanceOf[js.Any], radius_md = radius_md.asInstanceOf[js.Any], radius_sm = radius_sm.asInstanceOf[js.Any], radius_xs = radius_xs.asInstanceOf[js.Any], search_bar_fill = search_bar_fill.asInstanceOf[js.Any], search_bar_font_size = search_bar_font_size.asInstanceOf[js.Any], search_bar_height = search_bar_height.asInstanceOf[js.Any], search_bar_input_height = search_bar_input_height.asInstanceOf[js.Any], search_color_icon = search_color_icon.asInstanceOf[js.Any], segmented_control_color = segmented_control_color.asInstanceOf[js.Any], segmented_control_fill_tap = segmented_control_fill_tap.asInstanceOf[js.Any], segmented_control_height = segmented_control_height.asInstanceOf[js.Any], switch_fill = switch_fill.asInstanceOf[js.Any], tab_bar_fill = tab_bar_fill.asInstanceOf[js.Any], tab_bar_height = tab_bar_height.asInstanceOf[js.Any], tabs_color = tabs_color.asInstanceOf[js.Any], tabs_font_size_heading = tabs_font_size_heading.asInstanceOf[js.Any], tabs_height = tabs_height.asInstanceOf[js.Any], tag_height = tag_height.asInstanceOf[js.Any], tag_small_height = tag_small_height.asInstanceOf[js.Any], toast_fill = toast_fill.asInstanceOf[js.Any], toast_zindex = toast_zindex.asInstanceOf[js.Any], v_spacing_lg = v_spacing_lg.asInstanceOf[js.Any], v_spacing_md = v_spacing_md.asInstanceOf[js.Any], v_spacing_sm = v_spacing_sm.asInstanceOf[js.Any], v_spacing_xl = v_spacing_xl.asInstanceOf[js.Any], v_spacing_xs = v_spacing_xs.asInstanceOf[js.Any], warning_button_fill = warning_button_fill.asInstanceOf[js.Any], warning_button_fill_tap = warning_button_fill_tap.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action_sheet_zindex = action_sheet_zindex.asInstanceOf[js.Any], actionsheet_item_font_size = actionsheet_item_font_size.asInstanceOf[js.Any], actionsheet_item_height = actionsheet_item_height.asInstanceOf[js.Any], border_color_base = border_color_base.asInstanceOf[js.Any], border_width_lg = border_width_lg.asInstanceOf[js.Any], border_width_md = border_width_md.asInstanceOf[js.Any], border_width_sm = border_width_sm.asInstanceOf[js.Any], brand_error = brand_error.asInstanceOf[js.Any], brand_important = brand_important.asInstanceOf[js.Any], brand_primary = brand_primary.asInstanceOf[js.Any], brand_primary_tap = brand_primary_tap.asInstanceOf[js.Any], brand_success = brand_success.asInstanceOf[js.Any], brand_wait = brand_wait.asInstanceOf[js.Any], brand_warning = brand_warning.asInstanceOf[js.Any], button_font_size = button_font_size.asInstanceOf[js.Any], button_font_size_sm = button_font_size_sm.asInstanceOf[js.Any], button_height = button_height.asInstanceOf[js.Any], button_height_sm = button_height_sm.asInstanceOf[js.Any], checkbox_border = checkbox_border.asInstanceOf[js.Any], checkbox_border_disabled = checkbox_border_disabled.asInstanceOf[js.Any], checkbox_fill = checkbox_fill.asInstanceOf[js.Any], checkbox_fill_disabled = checkbox_fill_disabled.asInstanceOf[js.Any], color_icon_base = color_icon_base.asInstanceOf[js.Any], color_link = color_link.asInstanceOf[js.Any], color_text_base = color_text_base.asInstanceOf[js.Any], color_text_base_inverse = color_text_base_inverse.asInstanceOf[js.Any], color_text_caption = color_text_caption.asInstanceOf[js.Any], color_text_disabled = color_text_disabled.asInstanceOf[js.Any], color_text_paragraph = color_text_paragraph.asInstanceOf[js.Any], color_text_placeholder = color_text_placeholder.asInstanceOf[js.Any], color_text_secondary = color_text_secondary.asInstanceOf[js.Any], ease_in_out_quint = ease_in_out_quint.asInstanceOf[js.Any], fill_base = fill_base.asInstanceOf[js.Any], fill_body = fill_body.asInstanceOf[js.Any], fill_disabled = fill_disabled.asInstanceOf[js.Any], fill_grey = fill_grey.asInstanceOf[js.Any], fill_mask = fill_mask.asInstanceOf[js.Any], fill_tap = fill_tap.asInstanceOf[js.Any], font_size_base = font_size_base.asInstanceOf[js.Any], font_size_caption = font_size_caption.asInstanceOf[js.Any], font_size_caption_sm = font_size_caption_sm.asInstanceOf[js.Any], font_size_heading = font_size_heading.asInstanceOf[js.Any], font_size_icontext = font_size_icontext.asInstanceOf[js.Any], font_size_subhead = font_size_subhead.asInstanceOf[js.Any], ghost_button_color = ghost_button_color.asInstanceOf[js.Any], ghost_button_fill_tap = ghost_button_fill_tap.asInstanceOf[js.Any], h_spacing_lg = h_spacing_lg.asInstanceOf[js.Any], h_spacing_md = h_spacing_md.asInstanceOf[js.Any], h_spacing_sm = h_spacing_sm.asInstanceOf[js.Any], icon_size_lg = icon_size_lg.asInstanceOf[js.Any], icon_size_md = icon_size_md.asInstanceOf[js.Any], icon_size_sm = icon_size_sm.asInstanceOf[js.Any], icon_size_xs = icon_size_xs.asInstanceOf[js.Any], icon_size_xxs = icon_size_xxs.asInstanceOf[js.Any], input_color_icon = input_color_icon.asInstanceOf[js.Any], input_color_icon_tap = input_color_icon_tap.asInstanceOf[js.Any], input_font_size = input_font_size.asInstanceOf[js.Any], input_label_width = input_label_width.asInstanceOf[js.Any], line_height_base = line_height_base.asInstanceOf[js.Any], line_height_paragraph = line_height_paragraph.asInstanceOf[js.Any], link_button_fill_tap = link_button_fill_tap.asInstanceOf[js.Any], link_button_font_size = link_button_font_size.asInstanceOf[js.Any], list_item_height = list_item_height.asInstanceOf[js.Any], list_item_height_sm = list_item_height_sm.asInstanceOf[js.Any], list_title_height = list_title_height.asInstanceOf[js.Any], modal_button_font_size = modal_button_font_size.asInstanceOf[js.Any], modal_button_height = modal_button_height.asInstanceOf[js.Any], modal_font_size_heading = modal_font_size_heading.asInstanceOf[js.Any], modal_zindex = modal_zindex.asInstanceOf[js.Any], notice_bar_fill = notice_bar_fill.asInstanceOf[js.Any], notice_bar_height = notice_bar_height.asInstanceOf[js.Any], opacity_disabled = opacity_disabled.asInstanceOf[js.Any], option_height = option_height.asInstanceOf[js.Any], popup_zindex = popup_zindex.asInstanceOf[js.Any], primary_button_fill = primary_button_fill.asInstanceOf[js.Any], primary_button_fill_tap = primary_button_fill_tap.asInstanceOf[js.Any], radius_lg = radius_lg.asInstanceOf[js.Any], radius_md = radius_md.asInstanceOf[js.Any], radius_sm = radius_sm.asInstanceOf[js.Any], radius_xs = radius_xs.asInstanceOf[js.Any], search_bar_fill = search_bar_fill.asInstanceOf[js.Any], search_bar_font_size = search_bar_font_size.asInstanceOf[js.Any], search_bar_height = search_bar_height.asInstanceOf[js.Any], search_bar_input_height = search_bar_input_height.asInstanceOf[js.Any], search_color_icon = search_color_icon.asInstanceOf[js.Any], segmented_control_color = segmented_control_color.asInstanceOf[js.Any], segmented_control_fill_tap = segmented_control_fill_tap.asInstanceOf[js.Any], segmented_control_height = segmented_control_height.asInstanceOf[js.Any], switch_checked_disabled = switch_checked_disabled.asInstanceOf[js.Any], switch_fill = switch_fill.asInstanceOf[js.Any], switch_unchecked = switch_unchecked.asInstanceOf[js.Any], switch_unchecked_disabled = switch_unchecked_disabled.asInstanceOf[js.Any], tab_bar_fill = tab_bar_fill.asInstanceOf[js.Any], tab_bar_height = tab_bar_height.asInstanceOf[js.Any], tabs_color = tabs_color.asInstanceOf[js.Any], tabs_font_size_heading = tabs_font_size_heading.asInstanceOf[js.Any], tabs_height = tabs_height.asInstanceOf[js.Any], tag_height = tag_height.asInstanceOf[js.Any], tag_small_height = tag_small_height.asInstanceOf[js.Any], toast_fill = toast_fill.asInstanceOf[js.Any], toast_zindex = toast_zindex.asInstanceOf[js.Any], v_spacing_lg = v_spacing_lg.asInstanceOf[js.Any], v_spacing_md = v_spacing_md.asInstanceOf[js.Any], v_spacing_sm = v_spacing_sm.asInstanceOf[js.Any], v_spacing_xl = v_spacing_xl.asInstanceOf[js.Any], v_spacing_xs = v_spacing_xs.asInstanceOf[js.Any], warning_button_fill = warning_button_fill.asInstanceOf[js.Any], warning_button_fill_tap = warning_button_fill_tap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
@@ -1025,6 +1062,14 @@ object libStyleMod {
       inline def setButton_height(value: Double): Self = StObject.set(x, "button_height", value.asInstanceOf[js.Any])
       
       inline def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border(value: String): Self = StObject.set(x, "checkbox_border", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border_disabled(value: String): Self = StObject.set(x, "checkbox_border_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill(value: String): Self = StObject.set(x, "checkbox_fill", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill_disabled(value: String): Self = StObject.set(x, "checkbox_fill_disabled", value.asInstanceOf[js.Any])
       
       inline def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
       
@@ -1158,7 +1203,13 @@ object libStyleMod {
       
       inline def setSegmented_control_height(value: Double): Self = StObject.set(x, "segmented_control_height", value.asInstanceOf[js.Any])
       
+      inline def setSwitch_checked_disabled(value: String): Self = StObject.set(x, "switch_checked_disabled", value.asInstanceOf[js.Any])
+      
       inline def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked(value: String): Self = StObject.set(x, "switch_unchecked", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked_disabled(value: String): Self = StObject.set(x, "switch_unchecked_disabled", value.asInstanceOf[js.Any])
       
       inline def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
       
@@ -1240,28 +1291,30 @@ object libStyleMod {
   
   trait WithThemeProps[T, S] extends StObject {
     
-    def children(styles: T & StringDictionary[js.Any], theme: Theme): ReactNode
+    def children(styles: T & StringDictionary[Any], theme: Theme): ReactNode
     
-    var styles: js.UndefOr[S] = js.undefined
+    var styles: js.UndefOr[S & StringDictionary[Any]] = js.undefined
     
-    def themeStyles(theme: Theme): T
+    var themeStyles: js.UndefOr[js.Function1[/* theme */ Theme, T]] = js.undefined
   }
   object WithThemeProps {
     
-    inline def apply[T, S](children: (T & StringDictionary[js.Any], Theme) => ReactNode, themeStyles: Theme => T): WithThemeProps[T, S] = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), themeStyles = js.Any.fromFunction1(themeStyles))
+    inline def apply[T, S](children: (T & StringDictionary[Any], Theme) => ReactNode): WithThemeProps[T, S] = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
       __obj.asInstanceOf[WithThemeProps[T, S]]
     }
     
     extension [Self <: WithThemeProps[?, ?], T, S](x: Self & (WithThemeProps[T, S])) {
       
-      inline def setChildren(value: (T & StringDictionary[js.Any], Theme) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (T & StringDictionary[Any], Theme) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      inline def setStyles(value: S): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: S & StringDictionary[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setThemeStyles(value: Theme => T): Self = StObject.set(x, "themeStyles", js.Any.fromFunction1(value))
+      inline def setThemeStyles(value: /* theme */ Theme => T): Self = StObject.set(x, "themeStyles", js.Any.fromFunction1(value))
+      
+      inline def setThemeStylesUndefined: Self = StObject.set(x, "themeStyles", js.undefined)
     }
   }
   

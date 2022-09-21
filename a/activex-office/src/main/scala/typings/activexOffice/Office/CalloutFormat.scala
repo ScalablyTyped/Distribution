@@ -10,7 +10,7 @@ trait CalloutFormat extends StObject {
   
   var Angle: MsoCalloutAngleType
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoAttach: MsoTriState
   
@@ -37,7 +37,7 @@ trait CalloutFormat extends StObject {
   /* private */ @JSName("Office.CalloutFormat_typekey")
   var OfficeDotCalloutFormat_typekey: CalloutFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PresetDrop(DropType: MsoCalloutDropType): Unit
   
@@ -48,7 +48,7 @@ object CalloutFormat {
   inline def apply(
     Accent: MsoTriState,
     Angle: MsoCalloutAngleType,
-    Application: js.Any,
+    Application: Any,
     AutoAttach: MsoTriState,
     AutoLength: MsoTriState,
     AutomaticLength: () => Unit,
@@ -61,7 +61,7 @@ object CalloutFormat {
     Gap: Double,
     Length: Double,
     OfficeDotCalloutFormat_typekey: CalloutFormat,
-    Parent: js.Any,
+    Parent: Any,
     PresetDrop: MsoCalloutDropType => Unit,
     Type: MsoCalloutType
   ): CalloutFormat = {
@@ -76,7 +76,7 @@ object CalloutFormat {
     
     inline def setAngle(value: MsoCalloutAngleType): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoAttach(value: MsoTriState): Self = StObject.set(x, "AutoAttach", value.asInstanceOf[js.Any])
     
@@ -102,7 +102,7 @@ object CalloutFormat {
     
     inline def setOfficeDotCalloutFormat_typekey(value: CalloutFormat): Self = StObject.set(x, "Office.CalloutFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPresetDrop(value: MsoCalloutDropType => Unit): Self = StObject.set(x, "PresetDrop", js.Any.fromFunction1(value))
     

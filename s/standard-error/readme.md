@@ -11,9 +11,9 @@ Tiny library that simplifies subclassing and inheriting from Error while keeping
 | Full name          | standard-error |
 | Keywords           | error, exception |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1551951 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 178061.0 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/moll/js-standard-error)

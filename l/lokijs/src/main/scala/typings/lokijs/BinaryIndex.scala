@@ -27,6 +27,6 @@ object BinaryIndex {
     
     inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

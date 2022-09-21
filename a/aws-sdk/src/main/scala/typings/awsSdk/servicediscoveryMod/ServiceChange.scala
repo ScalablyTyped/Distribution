@@ -12,10 +12,13 @@ trait ServiceChange extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
+    * Information about the Route 53 DNS records that you want Cloud Map to create when you register an instance.
     */
   var DnsConfig: js.UndefOr[DnsConfigChange] = js.undefined
   
+  /**
+    *  Public DNS and HTTP namespaces only. Settings for an optional health check. If you specify settings for a health check, Cloud Map associates the health check with the records that you specify in DnsConfig.
+    */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.undefined
 }
 object ServiceChange {

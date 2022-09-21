@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Font2")
 @js.native
-/* private */ class Font2 ()
+/* private */ open class Font2 ()
   extends StObject
      with typings.activexOffice.Office.Font2 {
   
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Allcaps: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutorotateNumbers: MsoTriState = js.native
@@ -87,7 +87,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotFont2_typekey: typings.activexOffice.Office.Font2 = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Reflection: typings.activexOffice.Office.ReflectionFormat = js.native

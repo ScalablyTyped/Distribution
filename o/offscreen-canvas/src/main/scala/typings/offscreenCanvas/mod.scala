@@ -16,8 +16,8 @@ object mod {
   inline def createWorker(
     canvas: HTMLCanvasElement,
     workerUrl: String,
-    listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]
+    listener: js.Function1[/* ev */ MessageEvent[Any], Any]
   ): WorkerInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(canvas.asInstanceOf[js.Any], workerUrl.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[WorkerInterface]
   
-  inline def insideWorker(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("insideWorker")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
+  inline def insideWorker(listener: js.Function1[/* ev */ MessageEvent[Any], Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("insideWorker")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
 }

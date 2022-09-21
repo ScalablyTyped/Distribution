@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.sourcerepo" : "1.0.20201024"
+      "@maxim_mazurok/gapi.client.sourcerepo" : "1.0.20220810"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.sourcerepo" : "1.0.20201024"
+      "@maxim_mazurok/gapi.client.sourcerepo" : "1.0.20220810"
     }
   ],
   "compile-devDependencies" : [

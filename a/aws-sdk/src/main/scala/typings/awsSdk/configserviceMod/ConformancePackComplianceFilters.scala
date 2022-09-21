@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConformancePackComplianceFilters extends StObject {
   
   /**
-    * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
+    * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT. INSUFFICIENT_DATA is not supported.
     */
   var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.undefined
   
   /**
-    * Filters the results by AWS Config rule names.
+    * Filters the results by Config rule names.
     */
   var ConfigRuleNames: js.UndefOr[ConformancePackConfigRuleNames] = js.undefined
 }
@@ -33,6 +33,6 @@ object ConformancePackComplianceFilters {
     
     inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    inline def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value*))
   }
 }

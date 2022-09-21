@@ -27,6 +27,8 @@ object carouselStyleMod {
     var pointStyle: ViewStyle
     
     var spaceStyle: ViewStyle
+    
+    var wrapperStyle: ViewStyle
   }
   object CarouselStyle {
     
@@ -36,9 +38,10 @@ object carouselStyleMod {
       paginationY: ViewStyle,
       pointActiveStyle: ViewStyle,
       pointStyle: ViewStyle,
-      spaceStyle: ViewStyle
+      spaceStyle: ViewStyle,
+      wrapperStyle: ViewStyle
     ): CarouselStyle = {
-      val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], paginationX = paginationX.asInstanceOf[js.Any], paginationY = paginationY.asInstanceOf[js.Any], pointActiveStyle = pointActiveStyle.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], spaceStyle = spaceStyle.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], paginationX = paginationX.asInstanceOf[js.Any], paginationY = paginationY.asInstanceOf[js.Any], pointActiveStyle = pointActiveStyle.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], spaceStyle = spaceStyle.asInstanceOf[js.Any], wrapperStyle = wrapperStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[CarouselStyle]
     }
     
@@ -55,6 +58,8 @@ object carouselStyleMod {
       inline def setPointStyle(value: ViewStyle): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
       
       inline def setSpaceStyle(value: ViewStyle): Self = StObject.set(x, "spaceStyle", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperStyle(value: ViewStyle): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,15 +10,12 @@ Pure JavaScript implementation of BLAKE2s cryptographic hash function.
 | ------------------ | :-------------: |
 | Full name          | blake2s-js |
 | Keywords           | blake2, blake2s, blake, hash, crypto, cryptographic |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 6567 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 317.0 |
+| # stars            | 81.0 |
 
 ## Links
-- [Homepage](https://github.com/dchest/blake2s-js)
-- [Bugs](https://github.com/dchest/blake2s-js/issues)
-- [Repository](https://github.com/dchest/blake2s-js)
 - [Npm](https://www.npmjs.com/package/blake2s-js)
     
 

@@ -35,7 +35,7 @@ object Game {
     
     inline def setPhoto(value: js.Array[PhotoSize]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    inline def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value :_*))
+    inline def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object Game {
     
     inline def setText_entitiesUndefined: Self = StObject.set(x, "text_entities", js.undefined)
     
-    inline def setText_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "text_entities", js.Array(value :_*))
+    inline def setText_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "text_entities", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

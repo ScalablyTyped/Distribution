@@ -1,7 +1,7 @@
 
 # Scala.js typings for local-storage
 
-Typings are for version 1.4
+Typings are for version 2.0.0
 
 ## Library description:
 A simplified localStorage API that just works
@@ -10,10 +10,10 @@ A simplified localStorage API that just works
 | ------------------ | :-------------: |
 | Full name          | local-storage |
 | Keywords           | localstorage, local-storage, persistance |
-| # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 1589465 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 195886.66666666666 |
+| # stars            | 514.0 |
 
 ## Links
 - [Homepage](https://github.com/bevacqua/local-storage)
@@ -24,7 +24,7 @@ A simplified localStorage API that just works
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

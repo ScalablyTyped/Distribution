@@ -22,14 +22,11 @@ trait AltCallback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job ID. */
-  var jobId: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
-  var location: js.UndefOr[String] = js.undefined
+  var location: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -43,6 +40,9 @@ trait AltCallback extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Deprecated. This field is now in the Job message. */
+  var replaceJobId: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -54,8 +54,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(jobId: String, projectId: String): AltCallback = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(location: String, projectId: String): AltCallback = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -81,15 +81,11 @@ object AltCallback {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-    
-    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -104,6 +100,10 @@ object AltCallback {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setReplaceJobId(value: String): Self = StObject.set(x, "replaceJobId", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceJobIdUndefined: Self = StObject.set(x, "replaceJobId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

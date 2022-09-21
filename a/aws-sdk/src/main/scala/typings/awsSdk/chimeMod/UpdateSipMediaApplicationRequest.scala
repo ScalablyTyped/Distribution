@@ -34,7 +34,7 @@ object UpdateSipMediaApplicationRequest {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setName(value: SipMediaApplicationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

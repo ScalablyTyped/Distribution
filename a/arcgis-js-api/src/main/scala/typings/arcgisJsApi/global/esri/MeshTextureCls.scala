@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html)
   */
-class MeshTextureCls ()
+open class MeshTextureCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MeshTexture {
   def this(properties: MeshTextureProperties) = this()

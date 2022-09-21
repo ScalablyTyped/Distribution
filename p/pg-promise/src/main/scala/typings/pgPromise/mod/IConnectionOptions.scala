@@ -9,7 +9,7 @@ trait IConnectionOptions[C /* <: IClient */] extends StObject {
   
   var direct: js.UndefOr[Boolean] = js.undefined
   
-  var onLost: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ ILostContext[C], Unit]] = js.undefined
+  var onLost: js.UndefOr[js.Function2[/* err */ Any, /* e */ ILostContext[C], Unit]] = js.undefined
 }
 object IConnectionOptions {
   
@@ -24,7 +24,7 @@ object IConnectionOptions {
     
     inline def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
     
-    inline def setOnLost(value: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit): Self = StObject.set(x, "onLost", js.Any.fromFunction2(value))
+    inline def setOnLost(value: (/* err */ Any, /* e */ ILostContext[C]) => Unit): Self = StObject.set(x, "onLost", js.Any.fromFunction2(value))
     
     inline def setOnLostUndefined: Self = StObject.set(x, "onLost", js.undefined)
   }

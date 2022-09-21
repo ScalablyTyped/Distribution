@@ -35,13 +35,13 @@ object optionParserMod {
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value*))
       
       inline def setFields(value: String | js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     }
   }
 }

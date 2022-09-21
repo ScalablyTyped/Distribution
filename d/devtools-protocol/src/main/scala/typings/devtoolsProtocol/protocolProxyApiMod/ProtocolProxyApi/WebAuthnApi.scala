@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AddCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AddVirtualAuthenticatorRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AddVirtualAuthenticatorResponse
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.ClearCredentialsRequest
+import typings.devtoolsProtocol.mod.Protocol.WebAuthn.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialResponse
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialsRequest
@@ -42,7 +43,7 @@ trait WebAuthnApi extends StObject {
     * Enable the WebAuthn domain and start intercepting credential storage and
     * retrieval with a virtual authenticator.
     */
-  def enable(): js.Promise[Unit]
+  def enable(params: EnableRequest): js.Promise[Unit]
   
   /**
     * Returns a single credential stored in the given virtual authenticator that
@@ -84,7 +85,7 @@ object WebAuthnApi {
     addVirtualAuthenticator: AddVirtualAuthenticatorRequest => js.Promise[AddVirtualAuthenticatorResponse],
     clearCredentials: ClearCredentialsRequest => js.Promise[Unit],
     disable: () => js.Promise[Unit],
-    enable: () => js.Promise[Unit],
+    enable: EnableRequest => js.Promise[Unit],
     getCredential: GetCredentialRequest => js.Promise[GetCredentialResponse],
     getCredentials: GetCredentialsRequest => js.Promise[GetCredentialsResponse],
     removeCredential: RemoveCredentialRequest => js.Promise[Unit],
@@ -92,7 +93,7 @@ object WebAuthnApi {
     setAutomaticPresenceSimulation: SetAutomaticPresenceSimulationRequest => js.Promise[Unit],
     setUserVerified: SetUserVerifiedRequest => js.Promise[Unit]
   ): WebAuthnApi = {
-    val __obj = js.Dynamic.literal(addCredential = js.Any.fromFunction1(addCredential), addVirtualAuthenticator = js.Any.fromFunction1(addVirtualAuthenticator), clearCredentials = js.Any.fromFunction1(clearCredentials), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), getCredential = js.Any.fromFunction1(getCredential), getCredentials = js.Any.fromFunction1(getCredentials), removeCredential = js.Any.fromFunction1(removeCredential), removeVirtualAuthenticator = js.Any.fromFunction1(removeVirtualAuthenticator), setAutomaticPresenceSimulation = js.Any.fromFunction1(setAutomaticPresenceSimulation), setUserVerified = js.Any.fromFunction1(setUserVerified))
+    val __obj = js.Dynamic.literal(addCredential = js.Any.fromFunction1(addCredential), addVirtualAuthenticator = js.Any.fromFunction1(addVirtualAuthenticator), clearCredentials = js.Any.fromFunction1(clearCredentials), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction1(enable), getCredential = js.Any.fromFunction1(getCredential), getCredentials = js.Any.fromFunction1(getCredentials), removeCredential = js.Any.fromFunction1(removeCredential), removeVirtualAuthenticator = js.Any.fromFunction1(removeVirtualAuthenticator), setAutomaticPresenceSimulation = js.Any.fromFunction1(setAutomaticPresenceSimulation), setUserVerified = js.Any.fromFunction1(setUserVerified))
     __obj.asInstanceOf[WebAuthnApi]
   }
   
@@ -106,7 +107,7 @@ object WebAuthnApi {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: EnableRequest => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     
     inline def setGetCredential(value: GetCredentialRequest => js.Promise[GetCredentialResponse]): Self = StObject.set(x, "getCredential", js.Any.fromFunction1(value))
     

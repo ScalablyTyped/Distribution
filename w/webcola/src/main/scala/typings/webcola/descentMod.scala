@@ -9,7 +9,7 @@ object descentMod {
   
   @JSImport("webcola/dist/src/descent", "Descent")
   @js.native
-  class Descent protected () extends StObject {
+  open class Descent protected () extends StObject {
     def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]]) = this()
     def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]], G: js.Array[js.Array[Double]]) = this()
     
@@ -19,51 +19,51 @@ object descentMod {
     
     var H: js.Array[js.Array[js.Array[Double]]] = js.native
     
-    /* private */ var Hd: js.Any = js.native
+    /* private */ var Hd: Any = js.native
     
-    /* private */ var a: js.Any = js.native
+    /* private */ var a: Any = js.native
     
-    /* private */ var b: js.Any = js.native
+    /* private */ var b: Any = js.native
     
-    /* private */ var c: js.Any = js.native
+    /* private */ var c: Any = js.native
     
     def computeDerivatives(x: js.Array[js.Array[Double]]): Unit = js.native
     
-    /* private */ var computeNextPosition: js.Any = js.native
+    /* private */ var computeNextPosition: Any = js.native
     
     def computeStepSize(d: js.Array[js.Array[Double]]): Double = js.native
     
     def computeStress(): Double = js.native
     
-    /* private */ var d: js.Any = js.native
+    /* private */ var d: Any = js.native
     
-    /* private */ var e: js.Any = js.native
+    /* private */ var e: Any = js.native
     
     var g: js.Array[js.Array[Double]] = js.native
     
-    /* private */ var ia: js.Any = js.native
+    /* private */ var ia: Any = js.native
     
-    /* private */ var ib: js.Any = js.native
+    /* private */ var ib: Any = js.native
     
     var k: Double = js.native
     
     var locks: Locks = js.native
     
-    /* private */ var matrixApply: js.Any = js.native
+    /* private */ var matrixApply: Any = js.native
     
-    /* private */ var minD: js.Any = js.native
+    /* private */ var minD: Any = js.native
     
     var n: Double = js.native
     
     var numGridSnapNodes: Double = js.native
     
-    /* private */ var offsetDir: js.Any = js.native
+    /* private */ var offsetDir: Any = js.native
     
     var project: js.Array[
         js.Function3[/* x0 */ js.Array[Double], /* y0 */ js.Array[Double], /* r */ js.Array[Double], Unit]
       ] = js.native
     
-    /* private */ var random: js.Any = js.native
+    /* private */ var random: Any = js.native
     
     def reduceStress(): Double = js.native
     
@@ -77,7 +77,7 @@ object descentMod {
     
     var snapStrength: Double = js.native
     
-    /* private */ var stepAndProject: js.Any = js.native
+    /* private */ var stepAndProject: Any = js.native
     
     def takeDescentStep(x: js.Array[Double], d: js.Array[Double], stepSize: Double): Unit = js.native
     
@@ -85,7 +85,7 @@ object descentMod {
     
     var x: js.Array[js.Array[Double]] = js.native
     
-    /* private */ var xtmp: js.Any = js.native
+    /* private */ var xtmp: Any = js.native
   }
   /* static members */
   object Descent {
@@ -96,40 +96,40 @@ object descentMod {
     
     @JSImport("webcola/dist/src/descent", "Descent.copy")
     @js.native
-    def copy: js.Any = js.native
-    inline def copy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copy")(x.asInstanceOf[js.Any])
+    def copy: Any = js.native
+    inline def copy_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copy")(x.asInstanceOf[js.Any])
     
     inline def createSquareMatrix(n: Double, f: js.Function2[/* i */ Double, /* j */ Double, Double]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSquareMatrix")(n.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
     
     @JSImport("webcola/dist/src/descent", "Descent.dotProd")
     @js.native
-    def dotProd: js.Any = js.native
-    inline def dotProd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotProd")(x.asInstanceOf[js.Any])
+    def dotProd: Any = js.native
+    inline def dotProd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotProd")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/descent", "Descent.mApply")
     @js.native
-    def mApply: js.Any = js.native
-    inline def mApply_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mApply")(x.asInstanceOf[js.Any])
+    def mApply: Any = js.native
+    inline def mApply_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mApply")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/descent", "Descent.mid")
     @js.native
-    def mid: js.Any = js.native
-    inline def mid_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mid")(x.asInstanceOf[js.Any])
+    def mid: Any = js.native
+    inline def mid_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mid")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/descent", "Descent.rightMultiply")
     @js.native
-    def rightMultiply: js.Any = js.native
-    inline def rightMultiply_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightMultiply")(x.asInstanceOf[js.Any])
+    def rightMultiply: Any = js.native
+    inline def rightMultiply_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightMultiply")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/descent", "Descent.zeroDistance")
     @js.native
-    def zeroDistance: js.Any = js.native
-    inline def zeroDistance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zeroDistance")(x.asInstanceOf[js.Any])
+    def zeroDistance: Any = js.native
+    inline def zeroDistance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zeroDistance")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webcola/dist/src/descent", "Locks")
   @js.native
-  class Locks () extends StObject {
+  open class Locks () extends StObject {
     
     def add(id: Double, x: js.Array[Double]): Unit = js.native
     
@@ -145,20 +145,20 @@ object descentMod {
   
   @JSImport("webcola/dist/src/descent", "PseudoRandom")
   @js.native
-  class PseudoRandom () extends StObject {
+  open class PseudoRandom () extends StObject {
     def this(seed: Double) = this()
     
-    /* private */ var a: js.Any = js.native
+    /* private */ var a: Any = js.native
     
-    /* private */ var c: js.Any = js.native
+    /* private */ var c: Any = js.native
     
     def getNext(): Double = js.native
     
     def getNextBetween(min: Double, max: Double): Double = js.native
     
-    /* private */ var m: js.Any = js.native
+    /* private */ var m: Any = js.native
     
-    /* private */ var range: js.Any = js.native
+    /* private */ var range: Any = js.native
     
     var seed: Double = js.native
   }

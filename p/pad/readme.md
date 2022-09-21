@@ -10,10 +10,10 @@ Left and right string padding
 | ------------------ | :-------------: |
 | Full name          | pad |
 | Keywords           | pad, string |
-| # releases         | 7 |
-| # dependents       | 309 |
-| # downloads        | 13862050 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 832641.3333333334 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/adaltas/node-pad)

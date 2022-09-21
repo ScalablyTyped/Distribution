@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Panorama")
 @js.native
-class Panorama protected ()
+open class Panorama protected ()
   extends StObject
      with typings.navermaps.naver.maps.Panorama {
   def this(panoramaDiv: String, panoramaOptions: PanoramaOptions) = this()

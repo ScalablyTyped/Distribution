@@ -1,11 +1,15 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.SQL
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessControlPolicyList = js.Array[typings.awsSdk.glacierMod.Grant]
+type AccessControlPolicyList = js.Array[Grant]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ArchiveRetrieval
@@ -13,7 +17,7 @@ type AccessControlPolicyList = js.Array[typings.awsSdk.glacierMod.Grant]
   - typings.awsSdk.awsSdkStrings.Select_
   - java.lang.String
 */
-type ActionCode = typings.awsSdk.glacierMod._ActionCode | java.lang.String
+type ActionCode = _ActionCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.private__
@@ -25,20 +29,20 @@ type ActionCode = typings.awsSdk.glacierMod._ActionCode | java.lang.String
   - typings.awsSdk.awsSdkStrings.`bucket-owner-full-control`
   - java.lang.String
 */
-type CannedACL = typings.awsSdk.glacierMod._CannedACL | java.lang.String
+type CannedACL = _CannedACL | String
 
-type DataRetrievalRulesList = js.Array[typings.awsSdk.glacierMod.DataRetrievalRule]
+type DataRetrievalRulesList = js.Array[DataRetrievalRule]
 
-type DateTime = java.lang.String
+type DateTime = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.awsColonkms
   - typings.awsSdk.awsSdkStrings.AES256
   - java.lang.String
 */
-type EncryptionType = typings.awsSdk.glacierMod._EncryptionType | java.lang.String
+type EncryptionType = _EncryptionType | String
 
-type ExpressionType = typings.awsSdk.awsSdkStrings.SQL | java.lang.String
+type ExpressionType = SQL | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USE
@@ -46,15 +50,15 @@ type ExpressionType = typings.awsSdk.awsSdkStrings.SQL | java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type FileHeaderInfo = typings.awsSdk.glacierMod._FileHeaderInfo | java.lang.String
+type FileHeaderInfo = _FileHeaderInfo | String
 
-type JobList = js.Array[typings.awsSdk.glacierMod.GlacierJobDescription]
+type JobList = js.Array[GlacierJobDescription]
 
-type NotificationEventList = js.Array[java.lang.String]
+type NotificationEventList = js.Array[String]
 
-type NullableLong = scala.Double
+type NullableLong = Double
 
-type PartList = js.Array[typings.awsSdk.glacierMod.PartListElement]
+type PartList = js.Array[PartListElement]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL_CONTROL
@@ -64,18 +68,18 @@ type PartList = js.Array[typings.awsSdk.glacierMod.PartListElement]
   - typings.awsSdk.awsSdkStrings.READ_ACP
   - java.lang.String
 */
-type Permission = typings.awsSdk.glacierMod._Permission | java.lang.String
+type Permission = _Permission | String
 
-type ProvisionedCapacityList = js.Array[typings.awsSdk.glacierMod.ProvisionedCapacityDescription]
+type ProvisionedCapacityList = js.Array[ProvisionedCapacityDescription]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - typings.awsSdk.awsSdkStrings.ASNEEDED
   - java.lang.String
 */
-type QuoteFields = typings.awsSdk.glacierMod._QuoteFields | java.lang.String
+type QuoteFields = _QuoteFields | String
 
-type Size = scala.Double
+type Size = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InProgress_
@@ -83,7 +87,7 @@ type Size = scala.Double
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type StatusCode = typings.awsSdk.glacierMod._StatusCode | java.lang.String
+type StatusCode = _StatusCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -91,17 +95,17 @@ type StatusCode = typings.awsSdk.glacierMod._StatusCode | java.lang.String
   - typings.awsSdk.awsSdkStrings.STANDARD_IA
   - java.lang.String
 */
-type StorageClass = typings.awsSdk.glacierMod._StorageClass | java.lang.String
+type StorageClass = _StorageClass | String
 
-type Stream = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.glacierMod.Blob | java.lang.String | typings.node.streamMod.Readable
+type Stream = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[java.lang.String]
+type TagKeyList = js.Array[String]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glacierMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AmazonCustomerByEmail
@@ -109,21 +113,21 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.Group_
   - java.lang.String
 */
-type Type = typings.awsSdk.glacierMod._Type | java.lang.String
+type Type = _Type | String
 
-type UploadsList = js.Array[typings.awsSdk.glacierMod.UploadListElement]
+type UploadsList = js.Array[UploadListElement]
 
-type VaultList = js.Array[typings.awsSdk.glacierMod.DescribeVaultOutput]
+type VaultList = js.Array[DescribeVaultOutput]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2012-06-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.glacierMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type hashmap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type hashmap = StringDictionary[String]
 
-type httpstatus = scala.Double
+type httpstatus = Double
 
-type long = scala.Double
+type long = Double

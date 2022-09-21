@@ -10,10 +10,10 @@ Cordova Keyboard Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-keyboard |
 | Keywords           | cordova, keyboard, ecosystem:cordova, cordova-ios, cordova-android |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 126661 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7588.333333333333 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://github.com/cjpearson/cordova-plugin-keyboard#readme)

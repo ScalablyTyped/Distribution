@@ -26,6 +26,6 @@ object CropHintsParams {
     
     inline def setAspectRatiosUndefined: Self = StObject.set(x, "aspectRatios", js.undefined)
     
-    inline def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value :_*))
+    inline def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value*))
   }
 }

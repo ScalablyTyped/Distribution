@@ -11,31 +11,46 @@ trait daterangesuggest
   extends StObject
      with baseview {
   
+  @JSName("$dragCreate")
+  def $dragCreate(args: Any*): Any = js.native
+  @JSName("$dragCreate")
+  var $dragCreate_Original: WebixCallback = js.native
+  
+  @JSName("$dragDestroy")
+  def $dragDestroy(args: Any*): Any = js.native
+  @JSName("$dragDestroy")
+  var $dragDestroy_Original: WebixCallback = js.native
+  
+  @JSName("$dragPos")
+  def $dragPos(args: Any*): Any = js.native
+  @JSName("$dragPos")
+  var $dragPos_Original: WebixCallback = js.native
+  
   @JSName("$enterKey")
-  def $enterKey(args: js.Any*): js.Any = js.native
+  def $enterKey(args: Any*): Any = js.native
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   def attachEvent(`type`: daterangesuggestEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: daterangesuggestEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_daterangesuggest: daterangesuggestConfig = js.native
   
   def detachEvent(id: String): Unit = js.native
   
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   def getButton(): baseview = js.native
   
-  def getHead(): js.Any = js.native
+  def getHead(): Any = js.native
   
   def getItemId(text: String): String | Double = js.native
   
@@ -44,7 +59,7 @@ trait daterangesuggest
   
   def getList(): baseview = js.native
   
-  def getMasterValue(): js.Any = js.native
+  def getMasterValue(): Any = js.native
   
   def getRange(): baseview = js.native
   
@@ -56,11 +71,11 @@ trait daterangesuggest
   
   def linkInput(input: HTMLElement): Unit = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   
-  def setMasterValue(value: js.Any): Unit = js.native
+  def setMasterValue(value: Any, refresh: Boolean): Unit = js.native
   
   def setPosition(x: Double, y: Double): Unit = js.native
   

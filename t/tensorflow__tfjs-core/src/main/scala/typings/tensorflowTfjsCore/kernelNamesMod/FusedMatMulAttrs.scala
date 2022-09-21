@@ -9,6 +9,8 @@ trait FusedMatMulAttrs extends StObject {
   
   var activation: Activation
   
+  var leakyreluAlpha: js.UndefOr[Double] = js.undefined
+  
   var transposeA: Boolean
   
   var transposeB: Boolean
@@ -23,6 +25,10 @@ object FusedMatMulAttrs {
   extension [Self <: FusedMatMulAttrs](x: Self) {
     
     inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
     
     inline def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     

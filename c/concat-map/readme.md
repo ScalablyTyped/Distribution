@@ -10,10 +10,10 @@ concatenative mapdashery
 | ------------------ | :-------------: |
 | Full name          | concat-map |
 | Keywords           | concat, concatMap, map, functional, higher-order |
-| # releases         | 0 |
-| # dependents       | 222 |
-| # downloads        | 847511075 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4101492733333334E8 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-concat-map)

@@ -38,7 +38,7 @@ object XRowSetListener {
     acquire: () => Unit,
     cursorMoved: EventObject => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     rowChanged: EventObject => Unit,
     rowSetChanged: EventObject => Unit

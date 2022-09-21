@@ -8,7 +8,7 @@ object actionMod {
   
   @JSImport("rot-js/lib/scheduler/action", JSImport.Default)
   @js.native
-  class default[T] () extends Action[T]
+  open class default[T] () extends Action[T]
   
   @js.native
   trait Action[T]
@@ -19,8 +19,6 @@ object actionMod {
     var _duration: Double = js.native
     
     def add(item: T, repeat: Boolean, time: Double): this.type = js.native
-    
-    def remove(item: T): Boolean = js.native
     
     /**
       * Set duration for the active item

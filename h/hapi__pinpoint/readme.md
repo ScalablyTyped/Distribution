@@ -10,10 +10,10 @@ Return the filename and line number of the calling function
 | ------------------ | :-------------: |
 | Full name          | @hapi/pinpoint |
 | Keywords           | utilities |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 3557791 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3577205.6666666665 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/pinpoint#readme)

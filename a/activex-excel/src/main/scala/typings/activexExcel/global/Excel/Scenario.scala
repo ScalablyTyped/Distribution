@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Scenario")
 @js.native
-/* private */ class Scenario ()
+/* private */ open class Scenario ()
   extends StObject
      with typings.activexExcel.Excel.Scenario

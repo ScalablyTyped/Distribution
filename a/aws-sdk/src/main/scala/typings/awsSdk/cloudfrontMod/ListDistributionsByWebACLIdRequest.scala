@@ -17,7 +17,7 @@ trait ListDistributionsByWebACLIdRequest extends StObject {
   var MaxItems: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS WAF web ACL that you want to list the associated distributions. If you specify "null" for the ID, the request returns a list of the distributions that aren't associated with a web ACL. 
+    * The ID of the WAF web ACL that you want to list the associated distributions. If you specify "null" for the ID, the request returns a list of the distributions that aren't associated with a web ACL.
     */
   var WebACLId: String
 }

@@ -29,6 +29,8 @@ object tabsListMod {
     /**
       * Boolean if the indicator transition should be disabled while the active tab
       * index changes.
+      *
+      * @defaultValue `false`
       */
     var disableTransition: js.UndefOr[Boolean] = js.undefined
     

@@ -70,7 +70,7 @@ object AnnotationsTunnelTypeOptions {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

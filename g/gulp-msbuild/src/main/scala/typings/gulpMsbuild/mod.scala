@@ -1,7 +1,6 @@
 package typings.gulpMsbuild
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,10 @@ object mod extends Shortcut {
   @js.native
   val ^ : GulpMsBuild = js.native
   
-  type GulpMsBuild = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
+  type GulpMsBuild = js.Function1[
+    /* options */ js.UndefOr[Options], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   trait Options extends StObject {
     
@@ -49,7 +51,7 @@ object mod extends Shortcut {
     var nologo: js.UndefOr[Boolean] = js.undefined
     
     // 'x86' | 'x64'
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     // false
     var stderr: js.UndefOr[Boolean] = js.undefined
@@ -118,7 +120,7 @@ object mod extends Shortcut {
       
       inline def setNologoUndefined: Self = StObject.set(x, "nologo", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -134,7 +136,7 @@ object mod extends Shortcut {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setToolsVersion(value: Double): Self = StObject.set(x, "toolsVersion", value.asInstanceOf[js.Any])
       

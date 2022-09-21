@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `440` extends StObject {
+  
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[CommittedatUrl]
+}
+object `440` {
+  
+  inline def apply(applicationSlashjson: js.Array[CommittedatUrl]): `440` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`440`]
+  }
+  
+  extension [Self <: `440`](x: Self) {
+    
+    inline def setApplicationSlashjson(value: js.Array[CommittedatUrl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(value: CommittedatUrl*): Self = StObject.set(x, "application/json", js.Array(value*))
+  }
+}

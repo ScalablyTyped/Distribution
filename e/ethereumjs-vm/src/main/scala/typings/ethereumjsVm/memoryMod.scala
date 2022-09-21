@@ -1,6 +1,6 @@
 package typings.ethereumjsVm
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object memoryMod {
   
   @JSImport("ethereumjs-vm/dist/evm/memory", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Memory {
     
@@ -90,7 +90,7 @@ object memoryMod {
       
       inline def set_store(value: js.Array[Double]): Self = StObject.set(x, "_store", value.asInstanceOf[js.Any])
       
-      inline def set_storeVarargs(value: Double*): Self = StObject.set(x, "_store", js.Array(value :_*))
+      inline def set_storeVarargs(value: Double*): Self = StObject.set(x, "_store", js.Array(value*))
     }
   }
 }

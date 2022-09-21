@@ -33,6 +33,6 @@ object OrderableClusterOptionsMessage {
     
     inline def setOrderableClusterOptionsUndefined: Self = StObject.set(x, "OrderableClusterOptions", js.undefined)
     
-    inline def setOrderableClusterOptionsVarargs(value: OrderableClusterOption*): Self = StObject.set(x, "OrderableClusterOptions", js.Array(value :_*))
+    inline def setOrderableClusterOptionsVarargs(value: OrderableClusterOption*): Self = StObject.set(x, "OrderableClusterOptions", js.Array(value*))
   }
 }

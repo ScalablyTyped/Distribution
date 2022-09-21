@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCatalogImportStatusRequest extends StObject {
   
   /**
-    * The ID of the catalog to migrate. Currently, this should be the AWS account ID.
+    * The ID of the catalog to migrate. Currently, this should be the Amazon Web Services account ID.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
 }

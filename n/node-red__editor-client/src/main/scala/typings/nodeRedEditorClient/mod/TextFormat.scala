@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextFormat extends StObject {
   
-  @JSName("attach")
-  def attach_email(element: HTMLDivElement, `type`: email, args: js.Any, isRtl: Boolean, locale: String): Boolean = js.native
   /*
     * Handle Structured text correct display for a given HTML element.
     * @param element - the element  : should be of type div contenteditable=true
@@ -22,10 +20,7 @@ trait TextFormat extends StObject {
     * @param isRtl - indicates if the GUI is mirrored
     * @param locale - the browser locale
     */
-  @JSName("attach")
-  def attach_filepath(element: HTMLDivElement, `type`: filepath, args: js.Any, isRtl: Boolean, locale: String): Boolean = js.native
-  @JSName("attach")
-  def attach_url(element: HTMLDivElement, `type`: url, args: js.Any, isRtl: Boolean, locale: String): Boolean = js.native
+  def attach(element: HTMLDivElement, `type`: filepath | url | email, args: Any, isRtl: Boolean, locale: String): Boolean = js.native
   
   def getHtml(text: String, `type`: String, args: Null, isRtl: Boolean, locale: String): String = js.native
   /*

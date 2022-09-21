@@ -19,7 +19,7 @@ trait nlobjList
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a button (nlobjButton) to the footer of this page.
@@ -90,7 +90,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param row
     */
-  def addRow(row: js.Any): Unit = js.native
+  def addRow(row: Any): Unit = js.native
   
   /**
     * add multiple rows (Array of nlobjSearchResults or name-value pair Arrays) to this portlet.
@@ -99,7 +99,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param rows
     */
-  def addRows(rows: js.Any): Unit = js.native
+  def addRows(rows: Any): Unit = js.native
   
   /**
     * set the Client SuiteScript used for this page.
@@ -108,7 +108,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param script
     */
-  def setScript(script: js.Any): Unit = js.native
+  def setScript(script: Any): Unit = js.native
   
   /**
     * set the global style for this list: grid|report|plain|normal.

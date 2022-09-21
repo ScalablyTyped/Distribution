@@ -10,15 +10,15 @@ Local storage persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister-local-storage |
 | Keywords           | polly, pollyjs, record, replay, local-storage, persister |
-| # releases         | 13 |
-| # dependents       | 3 |
-| # downloads        | 81931 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 6911.333333333333 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
+- [Homepage](https://github.com/netflix/pollyjs/tree/master#readme)
 - [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
+- [Repository](https://github.com/netflix/pollyjs/tree/master)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fpersister-local-storage)
     
 

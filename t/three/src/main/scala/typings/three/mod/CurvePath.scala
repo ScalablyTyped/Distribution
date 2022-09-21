@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "CurvePath")
 @js.native
-class CurvePath[T /* <: Vector */] ()
-  extends typings.three.curvePathMod.CurvePath[T]
+open class CurvePath[T /* <: Vector */] ()
+  extends typings.three.threeMod.CurvePath[T]

@@ -23,6 +23,6 @@ object DimensionFilters {
     
     inline def setOptionKeys(value: js.Array[String]): Self = StObject.set(x, "optionKeys", value.asInstanceOf[js.Any])
     
-    inline def setOptionKeysVarargs(value: String*): Self = StObject.set(x, "optionKeys", js.Array(value :_*))
+    inline def setOptionKeysVarargs(value: String*): Self = StObject.set(x, "optionKeys", js.Array(value*))
   }
 }

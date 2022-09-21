@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ExtensionDraftAsset = typings.vsoNodeApi.galleryInterfacesMod.ExtensionFile
+type ExtensionDraftAsset = ExtensionFile
 
-type Response = typings.vsoNodeApi.galleryInterfacesMod.QnAItem
+type Response = QnAItem

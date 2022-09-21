@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-jss
 
-Typings are for version 10.5.0
+Typings are for version 10.9.2
 
 ## Library description:
 Implements css() interface on top of JSS
@@ -10,10 +10,10 @@ Implements css() interface on top of JSS
 | ------------------ | :-------------: |
 | Full name          | css-jss |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
-| # releases         | 23 |
-| # dependents       | 4 |
-| # downloads        | 2524273 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 482547.6666666667 |
+| # stars            | 6773.0 |
 
 ## Links
 - [Homepage](https://cssinjs.org/)

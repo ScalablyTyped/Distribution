@@ -10,10 +10,10 @@ Less code, more flow. Let's dance!
 | ------------------ | :-------------: |
 | Full name          | bagpipes |
 | Keywords           | swagger, plumbing, pipes |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 639350 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 49539.0 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/apigee-127/bagpipes)

@@ -27,9 +27,14 @@ trait UpdateFunctionRequest extends StObject {
   var functionId: ResourceName
   
   /**
-    * The version of the request mapping template. Currently the supported value is 2018-05-29. 
+    * The version of the request mapping template. Currently, the supported value is 2018-05-29.
     */
   var functionVersion: String
+  
+  /**
+    * The maximum batching size for a resolver.
+    */
+  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined
   
   /**
     * The Function name.
@@ -42,9 +47,11 @@ trait UpdateFunctionRequest extends StObject {
   var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
-    * The Function request mapping template. 
+    * The Function request mapping template.
     */
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
+  
+  var syncConfig: js.UndefOr[SyncConfig] = js.undefined
 }
 object UpdateFunctionRequest {
   
@@ -73,6 +80,10 @@ object UpdateFunctionRequest {
     
     inline def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
     
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
+    
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
@@ -82,5 +93,9 @@ object UpdateFunctionRequest {
     inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
     inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    
+    inline def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSyncConfigUndefined: Self = StObject.set(x, "syncConfig", js.undefined)
   }
 }

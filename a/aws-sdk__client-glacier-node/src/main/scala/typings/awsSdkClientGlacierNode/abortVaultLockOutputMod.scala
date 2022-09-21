@@ -8,5 +8,5 @@ object abortVaultLockOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/AbortVaultLockOutput", "AbortVaultLockOutput")
   @js.native
-  val AbortVaultLockOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AbortVaultLockOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

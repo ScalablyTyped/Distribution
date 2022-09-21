@@ -47,6 +47,8 @@ object `extension` {
   
   /**
     * Set for the lifetime of a callback if an ansychronous extension api has resulted in an error. If no error has occured lastError will be `undefined`.
+    * @deprecated Please use `runtime.lastError`.
+    * Not supported on manifest versions above 2.
     */
   trait LastError extends StObject {
     

@@ -1,43 +1,48 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.EAP_TLS
+import typings.awsSdk.awsSdkStrings.VOICE
+import typings.awsSdk.awsSdkStrings.WORK
+import typings.awsSdk.awsSdkStrings.`en-US`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Address = java.lang.String
+type Address = String
 
-type AddressBookDataList = js.Array[typings.awsSdk.alexaforbusinessMod.AddressBookData]
+type AddressBookDataList = js.Array[AddressBookData]
 
-type AddressBookDescription = java.lang.String
+type AddressBookDescription = String
 
-type AddressBookName = java.lang.String
+type AddressBookName = String
 
-type AmazonId = java.lang.String
+type AmazonId = String
 
-type ApplianceDescription = java.lang.String
+type ApplianceDescription = String
 
-type ApplianceFriendlyName = java.lang.String
+type ApplianceFriendlyName = String
 
-type ApplianceManufacturerName = java.lang.String
+type ApplianceManufacturerName = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type AudioList = js.Array[typings.awsSdk.alexaforbusinessMod.Audio]
+type AudioList = js.Array[Audio]
 
-type AudioLocation = java.lang.String
+type AudioLocation = String
 
-type AuthorizationResult = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.alexaforbusinessMod.Value]
+type AuthorizationResult = StringDictionary[Value]
 
 type Boolean = scala.Boolean
 
-type BulletPoint = java.lang.String
+type BulletPoint = String
 
-type BulletPoints = js.Array[typings.awsSdk.alexaforbusinessMod.BulletPoint]
+type BulletPoints = js.Array[BulletPoint]
 
-type BusinessReportDeliveryTime = typings.std.Date
+type BusinessReportDeliveryTime = js.Date
 
-type BusinessReportDownloadUrl = java.lang.String
+type BusinessReportDownloadUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
@@ -45,14 +50,14 @@ type BusinessReportDownloadUrl = java.lang.String
   - typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE
   - java.lang.String
 */
-type BusinessReportFailureCode = typings.awsSdk.alexaforbusinessMod._BusinessReportFailureCode | java.lang.String
+type BusinessReportFailureCode = _BusinessReportFailureCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
   - typings.awsSdk.awsSdkStrings.CSV_ZIP
   - java.lang.String
 */
-type BusinessReportFormat = typings.awsSdk.alexaforbusinessMod._BusinessReportFormat | java.lang.String
+type BusinessReportFormat = _BusinessReportFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONE_DAY
@@ -60,13 +65,13 @@ type BusinessReportFormat = typings.awsSdk.alexaforbusinessMod._BusinessReportFo
   - typings.awsSdk.awsSdkStrings.THIRTY_DAYS
   - java.lang.String
 */
-type BusinessReportInterval = typings.awsSdk.alexaforbusinessMod._BusinessReportInterval | java.lang.String
+type BusinessReportInterval = _BusinessReportInterval | String
 
-type BusinessReportS3Path = java.lang.String
+type BusinessReportS3Path = String
 
-type BusinessReportScheduleList = js.Array[typings.awsSdk.alexaforbusinessMod.BusinessReportSchedule]
+type BusinessReportScheduleList = js.Array[BusinessReportSchedule]
 
-type BusinessReportScheduleName = java.lang.String
+type BusinessReportScheduleName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -74,19 +79,19 @@ type BusinessReportScheduleName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type BusinessReportStatus = typings.awsSdk.alexaforbusinessMod._BusinessReportStatus | java.lang.String
+type BusinessReportStatus = _BusinessReportStatus | String
 
-type CategoryId = scala.Double
+type CategoryId = Double
 
-type CategoryList = js.Array[typings.awsSdk.alexaforbusinessMod.Category]
+type CategoryList = js.Array[Category]
 
-type CategoryName = java.lang.String
+type CategoryName = String
 
-type CertificateTime = typings.std.Date
+type CertificateTime = js.Date
 
-type ClientId = java.lang.String
+type ClientId = String
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SIP
@@ -94,9 +99,9 @@ type ClientRequestToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.H323
   - java.lang.String
 */
-type CommsProtocol = typings.awsSdk.alexaforbusinessMod._CommsProtocol | java.lang.String
+type CommsProtocol = _CommsProtocol | String
 
-type ConferenceProviderName = java.lang.String
+type ConferenceProviderName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CHIME
@@ -111,59 +116,59 @@ type ConferenceProviderName = java.lang.String
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type ConferenceProviderType = typings.awsSdk.alexaforbusinessMod._ConferenceProviderType | java.lang.String
+type ConferenceProviderType = _ConferenceProviderType | String
 
-type ConferenceProvidersList = js.Array[typings.awsSdk.alexaforbusinessMod.ConferenceProvider]
+type ConferenceProvidersList = js.Array[ConferenceProvider]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONLINE
   - typings.awsSdk.awsSdkStrings.OFFLINE
   - java.lang.String
 */
-type ConnectionStatus = typings.awsSdk.alexaforbusinessMod._ConnectionStatus | java.lang.String
+type ConnectionStatus = _ConnectionStatus | String
 
-type ConnectionStatusUpdatedTime = typings.std.Date
+type ConnectionStatusUpdatedTime = js.Date
 
-type ContactDataList = js.Array[typings.awsSdk.alexaforbusinessMod.ContactData]
+type ContactDataList = js.Array[ContactData]
 
-type ContactName = java.lang.String
+type ContactName = String
 
-type CountryCode = java.lang.String
+type CountryCode = String
 
-type CurrentWiFiPassword = java.lang.String
+type CurrentWiFiPassword = String
 
-type CustomerS3BucketName = java.lang.String
+type CustomerS3BucketName = String
 
-type Date = java.lang.String
+type Date = String
 
-type DeveloperName = java.lang.String
+type DeveloperName = String
 
-type DeviceDataCreatedTime = typings.std.Date
+type DeviceDataCreatedTime = js.Date
 
-type DeviceDataList = js.Array[typings.awsSdk.alexaforbusinessMod.DeviceData]
+type DeviceDataList = js.Array[DeviceData]
 
-type DeviceEventList = js.Array[typings.awsSdk.alexaforbusinessMod.DeviceEvent]
+type DeviceEventList = js.Array[DeviceEvent]
 
-type DeviceEventTime = typings.std.Date
+type DeviceEventTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTION_STATUS
   - typings.awsSdk.awsSdkStrings.DEVICE_STATUS
   - java.lang.String
 */
-type DeviceEventType = typings.awsSdk.alexaforbusinessMod._DeviceEventType | java.lang.String
+type DeviceEventType = _DeviceEventType | String
 
-type DeviceEventValue = java.lang.String
+type DeviceEventValue = String
 
-type DeviceLocale = java.lang.String
+type DeviceLocale = String
 
-type DeviceName = java.lang.String
+type DeviceName = String
 
-type DeviceRoomName = java.lang.String
+type DeviceRoomName = String
 
-type DeviceSerialNumber = java.lang.String
+type DeviceSerialNumber = String
 
-type DeviceSerialNumberForAVS = java.lang.String
+type DeviceSerialNumberForAVS = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY
@@ -173,7 +178,7 @@ type DeviceSerialNumberForAVS = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DeviceStatus = typings.awsSdk.alexaforbusinessMod._DeviceStatus | java.lang.String
+type DeviceStatus = _DeviceStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEVICE_SOFTWARE_UPDATE_NEEDED
@@ -195,38 +200,38 @@ type DeviceStatus = typings.awsSdk.alexaforbusinessMod._DeviceStatus | java.lang
   - typings.awsSdk.awsSdkStrings.CERTIFICATE_AUTHORITY_ACCESS_DENIED
   - java.lang.String
 */
-type DeviceStatusDetailCode = typings.awsSdk.alexaforbusinessMod._DeviceStatusDetailCode | java.lang.String
+type DeviceStatusDetailCode = _DeviceStatusDetailCode | String
 
-type DeviceStatusDetails = js.Array[typings.awsSdk.alexaforbusinessMod.DeviceStatusDetail]
+type DeviceStatusDetails = js.Array[DeviceStatusDetail]
 
-type DeviceType = java.lang.String
+type DeviceType = String
 
-type DeviceUsageType = typings.awsSdk.awsSdkStrings.VOICE | java.lang.String
+type DeviceUsageType = VOICE | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.METRIC
   - typings.awsSdk.awsSdkStrings.IMPERIAL
   - java.lang.String
 */
-type DistanceUnit = typings.awsSdk.alexaforbusinessMod._DistanceUnit | java.lang.String
+type DistanceUnit = _DistanceUnit | String
 
-type Email = java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.ENABLED
-  - typings.awsSdk.awsSdkStrings.PENDING
-  - java.lang.String
-*/
-type EnablementType = typings.awsSdk.alexaforbusinessMod._EnablementType | java.lang.String
+type Email = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type EnablementTypeFilter = typings.awsSdk.alexaforbusinessMod._EnablementTypeFilter | java.lang.String
+type EnablementType = _EnablementType | String
 
-type EndOfMeetingReminderMinutesList = js.Array[typings.awsSdk.alexaforbusinessMod.Minutes]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - java.lang.String
+*/
+type EnablementTypeFilter = _EnablementTypeFilter | String
+
+type EndOfMeetingReminderMinutesList = js.Array[Minutes]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ANNOUNCEMENT_TIME_CHECK
@@ -235,13 +240,13 @@ type EndOfMeetingReminderMinutesList = js.Array[typings.awsSdk.alexaforbusinessM
   - typings.awsSdk.awsSdkStrings.KNOCK
   - java.lang.String
 */
-type EndOfMeetingReminderType = typings.awsSdk.alexaforbusinessMod._EndOfMeetingReminderType | java.lang.String
+type EndOfMeetingReminderType = _EndOfMeetingReminderType | String
 
-type EndUserLicenseAgreement = java.lang.String
+type EndUserLicenseAgreement = String
 
-type Endpoint = java.lang.String
+type Endpoint = String
 
-type EnrollmentId = java.lang.String
+type EnrollmentId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZED
@@ -251,7 +256,7 @@ type EnrollmentId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DEREGISTERING
   - java.lang.String
 */
-type EnrollmentStatus = typings.awsSdk.alexaforbusinessMod._EnrollmentStatus | java.lang.String
+type EnrollmentStatus = _EnrollmentStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLUETOOTH
@@ -264,59 +269,59 @@ type EnrollmentStatus = typings.awsSdk.alexaforbusinessMod._EnrollmentStatus | j
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type Feature = typings.awsSdk.alexaforbusinessMod._Feature | java.lang.String
+type Feature = _Feature | String
 
-type Features = js.Array[typings.awsSdk.alexaforbusinessMod.Feature]
+type Features = js.Array[Feature]
 
-type FilterKey = java.lang.String
+type FilterKey = String
 
-type FilterList = js.Array[typings.awsSdk.alexaforbusinessMod.Filter]
+type FilterList = js.Array[Filter]
 
-type FilterValue = java.lang.String
+type FilterValue = String
 
-type FilterValueList = js.Array[typings.awsSdk.alexaforbusinessMod.FilterValue]
+type FilterValueList = js.Array[FilterValue]
 
-type GatewayDescription = java.lang.String
+type GatewayDescription = String
 
-type GatewayGroupDescription = java.lang.String
+type GatewayGroupDescription = String
 
-type GatewayGroupName = java.lang.String
+type GatewayGroupName = String
 
-type GatewayGroupSummaries = js.Array[typings.awsSdk.alexaforbusinessMod.GatewayGroupSummary]
+type GatewayGroupSummaries = js.Array[GatewayGroupSummary]
 
-type GatewayName = java.lang.String
+type GatewayName = String
 
-type GatewaySummaries = js.Array[typings.awsSdk.alexaforbusinessMod.GatewaySummary]
+type GatewaySummaries = js.Array[GatewaySummary]
 
-type GatewayVersion = java.lang.String
+type GatewayVersion = String
 
-type GenericKeyword = java.lang.String
+type GenericKeyword = String
 
-type GenericKeywords = js.Array[typings.awsSdk.alexaforbusinessMod.GenericKeyword]
+type GenericKeywords = js.Array[GenericKeyword]
 
-type IconUrl = java.lang.String
+type IconUrl = String
 
-type InvocationPhrase = java.lang.String
+type InvocationPhrase = String
 
-type Key = java.lang.String
+type Key = String
 
-type Locale = typings.awsSdk.awsSdkStrings.`en-US` | java.lang.String
+type Locale = `en-US` | String
 
-type MacAddress = java.lang.String
+type MacAddress = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MaxVolumeLimit = scala.Double
+type MaxVolumeLimit = Double
 
-type Minutes = scala.Double
+type Minutes = Double
 
-type NetworkEapMethod = typings.awsSdk.awsSdkStrings.EAP_TLS | java.lang.String
+type NetworkEapMethod = EAP_TLS | String
 
-type NetworkProfileDataList = js.Array[typings.awsSdk.alexaforbusinessMod.NetworkProfileData]
+type NetworkProfileDataList = js.Array[NetworkProfileData]
 
-type NetworkProfileDescription = java.lang.String
+type NetworkProfileDescription = String
 
-type NetworkProfileName = java.lang.String
+type NetworkProfileName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OPEN
@@ -326,25 +331,25 @@ type NetworkProfileName = java.lang.String
   - typings.awsSdk.awsSdkStrings.WPA2_ENTERPRISE
   - java.lang.String
 */
-type NetworkSecurityType = typings.awsSdk.alexaforbusinessMod._NetworkSecurityType | java.lang.String
+type NetworkSecurityType = _NetworkSecurityType | String
 
-type NetworkSsid = java.lang.String
+type NetworkSsid = String
 
-type NewInThisVersionBulletPoints = js.Array[typings.awsSdk.alexaforbusinessMod.BulletPoint]
+type NewInThisVersionBulletPoints = js.Array[BulletPoint]
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NextWiFiPassword = java.lang.String
+type NextWiFiPassword = String
 
-type OneClickIdDelay = java.lang.String
+type OneClickIdDelay = String
 
-type OneClickPinDelay = java.lang.String
+type OneClickPinDelay = String
 
-type OrganizationName = java.lang.String
+type OrganizationName = String
 
-type OutboundPhoneNumber = java.lang.String
+type OutboundPhoneNumber = String
 
-type PhoneNumberList = js.Array[typings.awsSdk.alexaforbusinessMod.PhoneNumber]
+type PhoneNumberList = js.Array[PhoneNumber]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MOBILE
@@ -352,23 +357,23 @@ type PhoneNumberList = js.Array[typings.awsSdk.alexaforbusinessMod.PhoneNumber]
   - typings.awsSdk.awsSdkStrings.HOME
   - java.lang.String
 */
-type PhoneNumberType = typings.awsSdk.alexaforbusinessMod._PhoneNumberType | java.lang.String
+type PhoneNumberType = _PhoneNumberType | String
 
-type PrivacyPolicy = java.lang.String
+type PrivacyPolicy = String
 
-type ProductDescription = java.lang.String
+type ProductDescription = String
 
-type ProductId = java.lang.String
+type ProductId = String
 
-type ProfileDataList = js.Array[typings.awsSdk.alexaforbusinessMod.ProfileData]
+type ProfileDataList = js.Array[ProfileData]
 
-type ProfileName = java.lang.String
+type ProfileName = String
 
-type ProviderCalendarId = java.lang.String
+type ProviderCalendarId = String
 
-type RawPhoneNumber = java.lang.String
+type RawPhoneNumber = String
 
-type ReleaseDate = java.lang.String
+type ReleaseDate = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.YES
@@ -376,62 +381,62 @@ type ReleaseDate = java.lang.String
   - typings.awsSdk.awsSdkStrings.OPTIONAL
   - java.lang.String
 */
-type RequirePin = typings.awsSdk.alexaforbusinessMod._RequirePin | java.lang.String
+type RequirePin = _RequirePin | String
 
-type ReviewKey = java.lang.String
+type ReviewKey = String
 
-type ReviewValue = java.lang.String
+type ReviewValue = String
 
-type Reviews = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.alexaforbusinessMod.ReviewValue]
+type Reviews = StringDictionary[ReviewValue]
 
-type RoomDataList = js.Array[typings.awsSdk.alexaforbusinessMod.RoomData]
+type RoomDataList = js.Array[RoomData]
 
-type RoomDescription = java.lang.String
+type RoomDescription = String
 
-type RoomName = java.lang.String
+type RoomName = String
 
-type RoomSkillParameterKey = java.lang.String
+type RoomSkillParameterKey = String
 
-type RoomSkillParameterValue = java.lang.String
+type RoomSkillParameterValue = String
 
-type RoomSkillParameters = js.Array[typings.awsSdk.alexaforbusinessMod.RoomSkillParameter]
+type RoomSkillParameters = js.Array[RoomSkillParameter]
 
-type S3KeyPrefix = java.lang.String
+type S3KeyPrefix = String
 
-type SampleUtterances = js.Array[typings.awsSdk.alexaforbusinessMod.Utterance]
+type SampleUtterances = js.Array[Utterance]
 
-type ShortDescription = java.lang.String
+type ShortDescription = String
 
-type ShortSkillIdList = js.Array[typings.awsSdk.alexaforbusinessMod.SkillId]
+type ShortSkillIdList = js.Array[SkillId]
 
-type SipAddressList = js.Array[typings.awsSdk.alexaforbusinessMod.SipAddress]
+type SipAddressList = js.Array[SipAddress]
 
-type SipType = typings.awsSdk.awsSdkStrings.WORK | java.lang.String
+type SipType = WORK | String
 
-type SipUri = java.lang.String
+type SipUri = String
 
-type SkillGroupDataList = js.Array[typings.awsSdk.alexaforbusinessMod.SkillGroupData]
+type SkillGroupDataList = js.Array[SkillGroupData]
 
-type SkillGroupDescription = java.lang.String
+type SkillGroupDescription = String
 
-type SkillGroupName = java.lang.String
+type SkillGroupName = String
 
-type SkillId = java.lang.String
+type SkillId = String
 
-type SkillListMaxResults = scala.Double
+type SkillListMaxResults = Double
 
-type SkillName = java.lang.String
+type SkillName = String
 
-type SkillStoreType = java.lang.String
+type SkillStoreType = String
 
-type SkillSummaryList = js.Array[typings.awsSdk.alexaforbusinessMod.SkillSummary]
+type SkillSummaryList = js.Array[SkillSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
   - typings.awsSdk.awsSdkStrings.PRIVATE
   - java.lang.String
 */
-type SkillType = typings.awsSdk.alexaforbusinessMod._SkillType | java.lang.String
+type SkillType = _SkillType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -439,71 +444,71 @@ type SkillType = typings.awsSdk.alexaforbusinessMod._SkillType | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type SkillTypeFilter = typings.awsSdk.alexaforbusinessMod._SkillTypeFilter | java.lang.String
+type SkillTypeFilter = _SkillTypeFilter | String
 
-type SkillTypes = js.Array[typings.awsSdk.alexaforbusinessMod.SkillStoreType]
+type SkillTypes = js.Array[SkillStoreType]
 
-type SkillsStoreSkillList = js.Array[typings.awsSdk.alexaforbusinessMod.SkillsStoreSkill]
+type SkillsStoreSkillList = js.Array[SkillsStoreSkill]
 
-type SmartHomeApplianceList = js.Array[typings.awsSdk.alexaforbusinessMod.SmartHomeAppliance]
+type SmartHomeApplianceList = js.Array[SmartHomeAppliance]
 
-type SoftwareVersion = java.lang.String
+type SoftwareVersion = String
 
-type SortKey = java.lang.String
+type SortKey = String
 
-type SortList = js.Array[typings.awsSdk.alexaforbusinessMod.Sort]
+type SortList = js.Array[Sort]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
   - java.lang.String
 */
-type SortValue = typings.awsSdk.alexaforbusinessMod._SortValue | java.lang.String
+type SortValue = _SortValue | String
 
-type SsmlList = js.Array[typings.awsSdk.alexaforbusinessMod.Ssml]
+type SsmlList = js.Array[Ssml]
 
-type SsmlValue = java.lang.String
+type SsmlValue = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.alexaforbusinessMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.alexaforbusinessMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAHRENHEIT
   - typings.awsSdk.awsSdkStrings.CELSIUS
   - java.lang.String
 */
-type TemperatureUnit = typings.awsSdk.alexaforbusinessMod._TemperatureUnit | java.lang.String
+type TemperatureUnit = _TemperatureUnit | String
 
-type TextList = js.Array[typings.awsSdk.alexaforbusinessMod.Text]
+type TextList = js.Array[Text]
 
-type TextValue = java.lang.String
+type TextValue = String
 
-type TimeToLiveInSeconds = scala.Double
+type TimeToLiveInSeconds = Double
 
-type Timezone = java.lang.String
+type Timezone = String
 
-type TotalCount = scala.Double
+type TotalCount = Double
 
-type TrustAnchor = java.lang.String
+type TrustAnchor = String
 
-type TrustAnchorList = js.Array[typings.awsSdk.alexaforbusinessMod.TrustAnchor]
+type TrustAnchorList = js.Array[TrustAnchor]
 
-type Url = java.lang.String
+type Url = String
 
-type UserCode = java.lang.String
+type UserCode = String
 
-type UserDataList = js.Array[typings.awsSdk.alexaforbusinessMod.UserData]
+type UserDataList = js.Array[UserData]
 
-type UserId = java.lang.String
+type UserId = String
 
-type Utterance = java.lang.String
+type Utterance = String
 
-type Value = java.lang.String
+type Value = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALEXA
@@ -512,17 +517,17 @@ type Value = java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPUTER
   - java.lang.String
 */
-type WakeWord = typings.awsSdk.alexaforbusinessMod._WakeWord | java.lang.String
+type WakeWord = _WakeWord | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-11-09`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.alexaforbusinessMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type userFirstName = java.lang.String
+type userFirstName = String
 
-type userLastName = java.lang.String
+type userLastName = String
 
-type userUserId = java.lang.String
+type userUserId = String

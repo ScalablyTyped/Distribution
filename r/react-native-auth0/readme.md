@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-auth0
 
-Typings are for version 2.5
+Typings are for version 2.13
 
 ## Library description:
 React Native toolkit for Auth0 API
@@ -10,10 +10,10 @@ React Native toolkit for Auth0 API
 | ------------------ | :-------------: |
 | Full name          | react-native-auth0 |
 | Keywords           | react-native |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 532143 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 68343.66666666667 |
+| # stars            | 374.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/react-native-auth0#readme)

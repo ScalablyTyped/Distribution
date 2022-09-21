@@ -24,6 +24,6 @@ object Logging {
     
     inline def setClusterLoggingUndefined: Self = StObject.set(x, "clusterLogging", js.undefined)
     
-    inline def setClusterLoggingVarargs(value: LogSetup*): Self = StObject.set(x, "clusterLogging", js.Array(value :_*))
+    inline def setClusterLoggingVarargs(value: LogSetup*): Self = StObject.set(x, "clusterLogging", js.Array(value*))
   }
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BaseDeclaration = typings.estree.mod.BaseStatement
+type BaseDeclaration = BaseStatement
 
-type BaseExpression = typings.estree.mod.BaseNode
+type BaseExpression = BaseNode
 
-type BaseModuleDeclaration = typings.estree.mod.BaseNode
+type BaseModuleDeclaration = BaseNode
 
-type BasePattern = typings.estree.mod.BaseNode
+type BasePattern = BaseNode
 
-type BaseStatement = typings.estree.mod.BaseNode
+type BaseStatement = BaseNode

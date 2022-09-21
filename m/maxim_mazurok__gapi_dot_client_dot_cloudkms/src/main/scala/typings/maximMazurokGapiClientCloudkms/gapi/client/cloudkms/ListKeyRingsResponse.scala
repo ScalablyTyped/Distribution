@@ -28,7 +28,7 @@ object ListKeyRingsResponse {
     
     inline def setKeyRingsUndefined: Self = StObject.set(x, "keyRings", js.undefined)
     
-    inline def setKeyRingsVarargs(value: KeyRing*): Self = StObject.set(x, "keyRings", js.Array(value :_*))
+    inline def setKeyRingsVarargs(value: KeyRing*): Self = StObject.set(x, "keyRings", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

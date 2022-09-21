@@ -9,27 +9,38 @@ trait CubeTexture
   extends StObject
      with BaseTexture {
   
-  /* private */ var _boundingBoxSize: js.Any = js.native
+  /* private */ var _boundingBoxSize: Any = js.native
   
-  /* private */ var _createPolynomials: js.Any = js.native
+  /* private */ var _createPolynomials: Any = js.native
   
-  /* private */ var _delayedOnLoad: js.Any = js.native
+  /* private */ var _delayedOnError: Any = js.native
   
-  /* private */ var _extensions: js.Any = js.native
+  /* private */ var _delayedOnLoad: Any = js.native
   
-  /* private */ var _files: js.Any = js.native
+  /* private */ var _extensions: Any = js.native
+  
+  /** @hidden */
+  var _files: Nullable[js.Array[String]] = js.native
   
   /* protected */ var _forcedExtension: Nullable[String] = js.native
   
-  /* private */ var _format: js.Any = js.native
+  /* private */ var _format: Any = js.native
   
-  /* private */ var _loaderOptions: js.Any = js.native
+  /* private */ var _loadTexture: Any = js.native
   
-  /* private */ var _noMipmap: js.Any = js.native
+  /* private */ var _loaderOptions: Any = js.native
+  
+  /* private */ var _lodOffset: Any = js.native
+  
+  /* private */ var _lodScale: Any = js.native
+  
+  /* private */ var _noMipmap: Any = js.native
   
   /* protected */ var _rotationY: Double = js.native
   
-  /* private */ var _textureMatrix: js.Any = js.native
+  /* private */ var _textureMatrix: Any = js.native
+  
+  /* private */ var _useSRGBBuffer: Any = js.native
   
   /**
     * Gets or sets the center of the bounding box associated with the cube texture.
@@ -52,6 +63,11 @@ trait CubeTexture
   def boundingBoxSize_=(value: Vector3): Unit = js.native
   
   def delayLoad(forcedExtension: String): Unit = js.native
+  
+  /**
+    * Gets the forced extension (if any)
+    */
+  def forcedExtension: Nullable[String] = js.native
   
   /**
     * Observable triggered once the texture has been loaded.
@@ -79,15 +95,25 @@ trait CubeTexture
     * @param forcedExtension defines the extension to use
     * @param onLoad callback called when the texture is loaded  (defaults to null)
     * @param prefiltered Defines whether the updated texture is prefiltered or not
+    * @param onError callback called if there was an error during the loading process (defaults to null)
+    * @param extensions defines the suffixes add to the picture name in case six images are in use like _px.jpg...
+    * @param delayLoad defines if the texture should be loaded now (false by default)
+    * @param files defines the six files to load for the different faces in that order: px, py, pz, nx, ny, nz
     */
-  def updateURL(url: String): Unit = js.native
-  def updateURL(url: String, forcedExtension: String): Unit = js.native
-  def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit]): Unit = js.native
-  def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
-  def updateURL(url: String, forcedExtension: String, onLoad: Unit, prefiltered: Boolean): Unit = js.native
-  def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit]): Unit = js.native
-  def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
-  def updateURL(url: String, forcedExtension: Unit, onLoad: Unit, prefiltered: Boolean): Unit = js.native
+  def updateURL(
+    url: String,
+    forcedExtension: js.UndefOr[String],
+    onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
+    prefiltered: js.UndefOr[Boolean],
+    onError: js.UndefOr[
+      Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ]
+    ],
+    extensions: js.UndefOr[Nullable[js.Array[String]]],
+    delayLoad: js.UndefOr[Boolean],
+    files: js.UndefOr[Nullable[js.Array[String]]]
+  ): Unit = js.native
   
   /**
     * The url of the texture

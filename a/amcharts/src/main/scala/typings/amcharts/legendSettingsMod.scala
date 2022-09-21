@@ -8,7 +8,7 @@ object legendSettingsMod {
   
   @JSImport("amcharts/LegendSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with LegendSettings {
     

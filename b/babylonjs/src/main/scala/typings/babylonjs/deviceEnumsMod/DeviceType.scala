@@ -13,6 +13,13 @@ object DeviceType extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeviceType & Double] = js.native
   
+  /** PS5 DualSense */
+  @js.native
+  sealed trait DualSense
+    extends StObject
+       with DeviceType
+  /* 7 */ val DualSense: typings.babylonjs.deviceEnumsMod.DeviceType.DualSense & Double = js.native
+  
   /** PS4 Dual Shock */
   @js.native
   sealed trait DualShock

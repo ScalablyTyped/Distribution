@@ -10,15 +10,12 @@ Decorator for binding method to an object
 | ------------------ | :-------------: |
 | Full name          | autobind-decorator |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 361 |
-| # downloads        | 8129288 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 863763.3333333334 |
+| # stars            | 1444.0 |
 
 ## Links
-- [Homepage](https://github.com/andreypopp/autobind-decorator#readme)
-- [Bugs](https://github.com/andreypopp/autobind-decorator/issues)
-- [Repository](https://github.com/andreypopp/autobind-decorator)
 - [Npm](https://www.npmjs.com/package/autobind-decorator)
     
 

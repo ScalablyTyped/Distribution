@@ -87,18 +87,18 @@ object anon {
   
   trait Visible extends StObject {
     
-    var visible: js.Any
+    var visible: Any
   }
   object Visible {
     
-    inline def apply(visible: js.Any): Visible = {
+    inline def apply(visible: Any): Visible = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Visible]
     }
     
     extension [Self <: Visible](x: Self) {
       
-      inline def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

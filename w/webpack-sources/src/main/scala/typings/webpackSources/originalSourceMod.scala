@@ -1,6 +1,6 @@
 package typings.webpackSources
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sourceMap.mod.RawSourceMap
 import typings.webpackSources.libMod.MapOptions
 import typings.webpackSources.libMod.SourceAndMapMixin
@@ -16,7 +16,7 @@ object originalSourceMod {
     */
   @JSImport("webpack-sources/lib/OriginalSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends OriginalSource {
+  open class ^ protected () extends OriginalSource {
     /**
       * OriginalSource tries to create column mappings if requested, by splitting the source code at typical statement borders (;, {, }).
       */

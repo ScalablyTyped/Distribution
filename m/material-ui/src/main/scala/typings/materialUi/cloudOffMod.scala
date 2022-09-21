@@ -10,10 +10,10 @@ object cloudOffMod {
   
   @JSImport("material-ui/svg-icons/file/cloud-off", JSImport.Default)
   @js.native
-  class default () extends FileCloudOff
+  open class default () extends FileCloudOff
   
   @JSImport("material-ui/svg-icons/file/cloud-off", "FileCloudOff")
   @js.native
-  class FileCloudOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileCloudOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

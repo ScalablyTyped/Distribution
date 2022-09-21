@@ -8,5 +8,5 @@ object notAuthorizedExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/NotAuthorizedException", "NotAuthorizedException")
   @js.native
-  val NotAuthorizedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NotAuthorizedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

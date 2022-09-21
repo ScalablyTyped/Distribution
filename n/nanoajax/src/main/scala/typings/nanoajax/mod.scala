@@ -15,7 +15,7 @@ object mod {
   
   inline def ajax(params: RequestParameters, callback: Callback): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
   
-  type Callback = js.Function3[/* statusCode */ Double, /* response */ String, /* request */ XMLHttpRequest, js.Any]
+  type Callback = js.Function3[/* statusCode */ Double, /* response */ String, /* request */ XMLHttpRequest, Any]
   
   trait RequestParameters extends StObject {
     

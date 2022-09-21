@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cp-file" : "9.0.0"
+      "cp-file" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cp-file" : "9.0.0"
+      "cp-file" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

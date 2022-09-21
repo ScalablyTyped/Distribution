@@ -27,7 +27,7 @@ object Diagnostics {
   
   @JSGlobal("Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings")
   @js.native
-  class RuntimeBrokerErrorSettings ()
+  open class RuntimeBrokerErrorSettings ()
     extends StObject
        with typings.winrt.Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings {
     

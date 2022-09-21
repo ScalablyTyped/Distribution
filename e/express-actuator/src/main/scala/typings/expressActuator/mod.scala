@@ -1,8 +1,6 @@
 package typings.expressActuator
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,14 +8,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: Options): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-actuator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type CustomControllerMethod = js.Function2[/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any], Unit]
+  type CustomControllerMethod = js.Function2[/* req */ js.UndefOr[Any], /* res */ js.UndefOr[Any], Unit]
   
   trait CustomEndpoint extends StObject {
     
@@ -25,9 +47,9 @@ object mod {
       * @summary Controller to be called when accessing this endpoint
       */
     def controller(): Unit
-    def controller(req: js.Any): Unit
-    def controller(req: js.Any, res: js.Any): Unit
-    def controller(req: Unit, res: js.Any): Unit
+    def controller(req: Any): Unit
+    def controller(req: Any, res: Any): Unit
+    def controller(req: Unit, res: Any): Unit
     /**
       * @summary Controller to be called when accessing this endpoint
       */
@@ -41,14 +63,14 @@ object mod {
   }
   object CustomEndpoint {
     
-    inline def apply(controller: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit, id: String): CustomEndpoint = {
+    inline def apply(controller: (/* req */ js.UndefOr[Any], /* res */ js.UndefOr[Any]) => Unit, id: String): CustomEndpoint = {
       val __obj = js.Dynamic.literal(controller = js.Any.fromFunction2(controller), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomEndpoint]
     }
     
     extension [Self <: CustomEndpoint](x: Self) {
       
-      inline def setController(value: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
+      inline def setController(value: (/* req */ js.UndefOr[Any], /* res */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -84,7 +106,7 @@ object mod {
     /**
       * @summary Extra Options to pass to info build output.
       */
-    var infoBuildOptions: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var infoBuildOptions: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * @summary DateFormat for info git.time output.
@@ -113,9 +135,9 @@ object mod {
       
       inline def setCustomEndpointsUndefined: Self = StObject.set(x, "customEndpoints", js.undefined)
       
-      inline def setCustomEndpointsVarargs(value: CustomEndpoint*): Self = StObject.set(x, "customEndpoints", js.Array(value :_*))
+      inline def setCustomEndpointsVarargs(value: CustomEndpoint*): Self = StObject.set(x, "customEndpoints", js.Array(value*))
       
-      inline def setInfoBuildOptions(value: Record[String, js.Any]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
+      inline def setInfoBuildOptions(value: Record[String, Any]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
       
       inline def setInfoBuildOptionsUndefined: Self = StObject.set(x, "infoBuildOptions", js.undefined)
       

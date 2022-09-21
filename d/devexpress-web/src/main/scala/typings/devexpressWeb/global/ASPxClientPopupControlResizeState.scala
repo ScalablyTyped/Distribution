@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPopupControlResizeState")
 @js.native
-class ASPxClientPopupControlResizeState ()
+open class ASPxClientPopupControlResizeState ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPopupControlResizeState
 object ASPxClientPopupControlResizeState {

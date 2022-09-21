@@ -1,6 +1,6 @@
 package typings.imageSize
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +72,7 @@ object interfaceMod {
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      inline def setImagesVarargs(value: ISize*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: ISize*): Self = StObject.set(x, "images", js.Array(value*))
     }
   }
 }

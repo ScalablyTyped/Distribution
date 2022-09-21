@@ -12,7 +12,7 @@ trait ObserverArrayDescriptor[T /* <: Ractive[T] */]
   /**
   	 * The observer callback.j
   	 */
-  def handler(changes: ArrayChanges): Unit | js.Promise[js.Any]
+  def handler(changes: ArrayChanges): Unit | js.Promise[Any]
   /**
   	 * The observer callback.j
   	 */

@@ -27,7 +27,7 @@ trait IFieldAttributes extends StObject {
   /**
     * no / empty docu
     */
-  var qSAFEARRAY: js.Array[js.Any]
+  var qSAFEARRAY: js.Array[Any]
   
   /**
     * Defines the thousand separator (if any).
@@ -72,7 +72,7 @@ object IFieldAttributes {
   inline def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[js.Any],
+    qSAFEARRAY: js.Array[Any],
     qThou: String,
     qType: FieldAttributesType,
     qUseThou: Boolean,
@@ -88,9 +88,9 @@ object IFieldAttributes {
     
     inline def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
-    inline def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    inline def setQSAFEARRAY(value: js.Array[Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
-    inline def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))
+    inline def setQSAFEARRAYVarargs(value: Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value*))
     
     inline def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
     

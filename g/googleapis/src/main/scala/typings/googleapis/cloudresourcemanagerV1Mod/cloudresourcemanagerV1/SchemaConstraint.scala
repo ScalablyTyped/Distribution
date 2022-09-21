@@ -4,21 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A `Constraint` describes a way in which a resource&#39;s configuration can
-  * be restricted. For example, it controls which cloud services can be
-  * activated across an organization, or whether a Compute Engine instance can
-  * have serial port connections established. `Constraints` can be configured
-  * by the organization&#39;s policy adminstrator to fit the needs of the
-  * organzation by setting Policies for `Constraints` at different locations in
-  * the organization&#39;s resource hierarchy. Policies are inherited down the
-  * resource hierarchy from higher levels, but can also be overridden. For
-  * details about the inheritance rules please read about Policies.
-  * `Constraints` have a default behavior determined by the
-  * `constraint_default` field, which is the enforcement behavior that is used
-  * in the absence of a `Policy` being defined or inherited for the resource in
-  * question.
-  */
 trait SchemaConstraint extends StObject {
   
   /**
@@ -27,21 +12,19 @@ trait SchemaConstraint extends StObject {
   var booleanConstraint: js.UndefOr[SchemaBooleanConstraint] = js.undefined
   
   /**
-    * The evaluation behavior of this constraint in the absense of
-    * &#39;Policy&#39;.
+    * The evaluation behavior of this constraint in the absence of 'Policy'.
     */
-  var constraintDefault: js.UndefOr[String] = js.undefined
+  var constraintDefault: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Detailed description of what this `Constraint` controls as well as how
-    * and where it is enforced.  Mutable.
+    * Detailed description of what this `Constraint` controls as well as how and where it is enforced. Mutable.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The human readable name.  Mutable.
+    * The human readable name. Mutable.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Defines this constraint as being a ListConstraint.
@@ -49,15 +32,14 @@ trait SchemaConstraint extends StObject {
   var listConstraint: js.UndefOr[SchemaListConstraint] = js.undefined
   
   /**
-    * Immutable value, required to globally be unique. For example,
-    * `constraints/serviceuser.services`
+    * Immutable value, required to globally be unique. For example, `constraints/serviceuser.services`
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Version of the `Constraint`. Default version is 0;
     */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaConstraint {
   
@@ -74,13 +56,19 @@ object SchemaConstraint {
     
     inline def setConstraintDefault(value: String): Self = StObject.set(x, "constraintDefault", value.asInstanceOf[js.Any])
     
+    inline def setConstraintDefaultNull: Self = StObject.set(x, "constraintDefault", null)
+    
     inline def setConstraintDefaultUndefined: Self = StObject.set(x, "constraintDefault", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
@@ -90,9 +78,13 @@ object SchemaConstraint {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }

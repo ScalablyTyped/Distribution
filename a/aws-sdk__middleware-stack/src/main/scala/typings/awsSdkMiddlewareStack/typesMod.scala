@@ -1,6 +1,5 @@
 package typings.awsSdkMiddlewareStack
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkMiddlewareStack.anon.After
 import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
 import typings.awsSdkTypes.middlewareMod.BuildHandler
@@ -15,6 +14,7 @@ import typings.awsSdkTypes.middlewareMod.Relation
 import typings.awsSdkTypes.middlewareMod.RelativeLocation
 import typings.awsSdkTypes.middlewareMod.SerializeHandler
 import typings.awsSdkTypes.middlewareMod.Step
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,9 +74,9 @@ object typesMod {
     }
   }
   
-  type NamedMiddlewareEntriesMap[Input /* <: js.Object */, Output /* <: js.Object */] = StringDictionary[MiddlewareEntry[Input, Output]]
+  type NamedMiddlewareEntriesMap[Input /* <: js.Object */, Output /* <: js.Object */] = Record[String, MiddlewareEntry[Input, Output]]
   
-  type Normalized[T /* <: MiddlewareEntry[Input, Output] */, Input /* <: js.Object */, Output /* <: js.Object */] = T & After
+  type Normalized[T /* <: MiddlewareEntry[Input, Output] */, Input /* <: js.Object */, Output /* <: js.Object */] = T & (After[Input, Output])
   
   trait NormalizedRelativeEntry[Input /* <: js.Object */, Output /* <: js.Object */]
     extends StObject

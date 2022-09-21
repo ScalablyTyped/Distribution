@@ -227,9 +227,9 @@ trait CalculatedMembers extends StObject {
     SolveOrder: js.UndefOr[Double],
     Type: js.UndefOr[XlCalculatedMemberType],
     DisplayFolder: js.UndefOr[String],
-    MeasureGroup: js.UndefOr[js.Any],
-    ParentMember: js.UndefOr[js.Any],
-    NumberFormat: js.UndefOr[js.Any]
+    MeasureGroup: js.UndefOr[Any],
+    ParentMember: js.UndefOr[Any],
+    NumberFormat: js.UndefOr[Any]
   ): CalculatedMember = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
@@ -241,12 +241,12 @@ trait CalculatedMembers extends StObject {
   def Item(Index: String): CalculatedMember = js.native
   def Item(Index: Double): CalculatedMember = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Add(Name: String, Formula: String): CalculatedMember = js.native
-  def _Add(Name: String, Formula: String, SolveOrder: js.Any): CalculatedMember = js.native
-  def _Add(Name: String, Formula: String, SolveOrder: js.Any, Type: js.Any): CalculatedMember = js.native
-  def _Add(Name: String, Formula: String, SolveOrder: Unit, Type: js.Any): CalculatedMember = js.native
+  def _Add(Name: String, Formula: String, SolveOrder: Any): CalculatedMember = js.native
+  def _Add(Name: String, Formula: String, SolveOrder: Any, Type: Any): CalculatedMember = js.native
+  def _Add(Name: String, Formula: String, SolveOrder: Unit, Type: Any): CalculatedMember = js.native
   
-  def _Default(Index: js.Any): CalculatedMember = js.native
+  def _Default(Index: Any): CalculatedMember = js.native
 }

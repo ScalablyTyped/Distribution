@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object decorateActionMod {
   
-  @JSImport("@storybook/addon-actions/dist/preview/decorateAction", JSImport.Namespace)
+  @JSImport("@storybook/addon-actions/dist/ts3.9/preview/decorateAction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

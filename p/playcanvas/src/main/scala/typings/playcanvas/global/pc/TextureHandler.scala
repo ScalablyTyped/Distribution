@@ -1,24 +1,23 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Resource handler used for loading 2D and 3D {@link pc.Texture} resources.
-  * @param device - The graphics device.
-  * @param assets - The asset registry.
-  * @param loader - The resource loader.
+  * Resource handler used for loading 2D and 3D {@link Texture} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSGlobal("pc.TextureHandler")
 @js.native
-class TextureHandler protected ()
-  extends StObject
-     with ResourceHandler {
-  def this(
-    device: typings.playcanvas.pc.GraphicsDevice,
-    assets: typings.playcanvas.pc.AssetRegistry,
-    loader: typings.playcanvas.pc.ResourceLoader
-  ) = this()
+open class TextureHandler protected ()
+  extends typings.playcanvas.mod.TextureHandler {
+  /**
+    * Create a new TextureHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

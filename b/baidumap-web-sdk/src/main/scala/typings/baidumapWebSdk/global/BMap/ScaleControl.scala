@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.ScaleControl")
 @js.native
-class ScaleControl ()
+open class ScaleControl ()
   extends StObject
      with typings.baidumapWebSdk.BMap.ScaleControl {
   def this(opts: ScaleControlOptions) = this()

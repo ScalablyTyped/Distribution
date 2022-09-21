@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait References extends StObject {
   
-  def apply(index: js.Any): Reference = js.native
+  def apply(index: Any): Reference = js.native
   
   def AddFromFile(FileName: String): Reference = js.native
   
@@ -15,7 +15,7 @@ trait References extends StObject {
   
   val Count: Double = js.native
   
-  def Item(index: js.Any): Reference = js.native
+  def Item(index: Any): Reference = js.native
   
   val Parent: VBProject = js.native
   

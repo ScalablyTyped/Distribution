@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__auto-id
 
-Typings are for version 0.2
+Typings are for version 0.17.0
 
 ## Library description:
 Autogenerate IDs to facilitate WAI-ARIA and server rendering.
@@ -10,21 +10,18 @@ Autogenerate IDs to facilitate WAI-ARIA and server rendering.
 | ------------------ | :-------------: |
 | Full name          | @reach/auto-id |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 80 |
-| # downloads        | 13329132 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2441040.3333333335 |
+| # stars            | 5390.0 |
 
 ## Links
-- [Homepage](https://github.com/reach/reach-ui#readme)
-- [Bugs](https://github.com/reach/reach-ui/issues)
-- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fauto-id)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

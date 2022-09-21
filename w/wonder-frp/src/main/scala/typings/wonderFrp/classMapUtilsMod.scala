@@ -8,7 +8,7 @@ object classMapUtilsMod {
   
   @JSImport("wonder-frp/dist/commonjs/utils/ClassMapUtils", "ClassMapUtils")
   @js.native
-  class ClassMapUtils () extends StObject
+  open class ClassMapUtils () extends StObject
   /* static members */
   object ClassMapUtils {
     
@@ -18,11 +18,11 @@ object classMapUtilsMod {
     
     @JSImport("wonder-frp/dist/commonjs/utils/ClassMapUtils", "ClassMapUtils._classMap")
     @js.native
-    def _classMap: js.Any = js.native
-    inline def _classMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_classMap")(x.asInstanceOf[js.Any])
+    def _classMap: Any = js.native
+    inline def _classMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_classMap")(x.asInstanceOf[js.Any])
     
-    inline def addClassMap(className: String, _class: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassMap")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClassMap(className: String, _class: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassMap")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def getClass(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getClass(className: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(className.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

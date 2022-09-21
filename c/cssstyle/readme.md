@@ -10,15 +10,12 @@ CSSStyleDeclaration Object Model implementation
 | ------------------ | :-------------: |
 | Full name          | cssstyle |
 | Keywords           | CSS, CSSStyleDeclaration, StyleSheet |
-| # releases         | 10 |
-| # dependents       | 101 |
-| # downloads        | 463970542 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.6846658E7 |
+| # stars            | 76.0 |
 
 ## Links
-- [Homepage](https://github.com/jsdom/cssstyle)
-- [Bugs](https://github.com/jsdom/cssstyle/issues)
-- [Repository](https://github.com/jsdom/cssstyle)
 - [Npm](https://www.npmjs.com/package/cssstyle)
     
 

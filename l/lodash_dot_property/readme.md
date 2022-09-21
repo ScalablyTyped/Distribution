@@ -10,10 +10,10 @@ The lodash method `_.property` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.property |
 | Keywords           | lodash-modularized, property |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 2116865 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 173780.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

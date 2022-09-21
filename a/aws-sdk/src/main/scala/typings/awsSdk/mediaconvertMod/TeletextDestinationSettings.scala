@@ -33,6 +33,6 @@ object TeletextDestinationSettings {
     
     inline def setPageTypesUndefined: Self = StObject.set(x, "PageTypes", js.undefined)
     
-    inline def setPageTypesVarargs(value: TeletextPageType*): Self = StObject.set(x, "PageTypes", js.Array(value :_*))
+    inline def setPageTypesVarargs(value: TeletextPageType*): Self = StObject.set(x, "PageTypes", js.Array(value*))
   }
 }

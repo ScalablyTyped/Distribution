@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "ClassicAuthenticator")
 @js.native
-class ClassicAuthenticator protected ()
+open class ClassicAuthenticator protected ()
   extends StObject
      with Authenticator {
   /**

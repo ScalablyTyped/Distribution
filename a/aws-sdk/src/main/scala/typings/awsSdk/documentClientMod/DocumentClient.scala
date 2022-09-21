@@ -32,19 +32,8 @@ import typings.awsSdk.dynamodbMod.ClientConfiguration
 import typings.awsSdk.dynamodbMod.^
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
-import typings.std.ArrayBuffer
-import typings.std.DataView
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a DynamoDB document client with a set of configuration options.
   */
-class DocumentClient () extends StObject {
+open class DocumentClient () extends StObject {
   def this(options: DocumentClientOptions & ClientConfiguration) = this()
   
   /**
@@ -124,7 +113,7 @@ class DocumentClient () extends StObject {
   ): Request[TransactGetItemsOutput, AWSError] = js.native
   
   /**
-    * Synchronous write operation that groups up to 10 action requests
+    * Synchronous write operation that groups up to 25 action requests.
     */
   def transactWrite(params: TransactWriteItemsInput): Request[TransactWriteItemsOutput, AWSError] = js.native
   def transactWrite(
@@ -155,10 +144,10 @@ object DocumentClient {
     /**
       * The date and time when table archival was initiated by DynamoDB, in UNIX epoch time format.
       */
-    var ArchivalDateTime: js.UndefOr[Date] = js.undefined
+    var ArchivalDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
-      * The reason DynamoDB archived the table. Currently, the only possible value is:    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The table was archived due to the table's AWS KMS key being inaccessible for more than seven days. An On-Demand backup was created at the archival time.  
+      * The reason DynamoDB archived the table. Currently, the only possible value is:    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The table was archived due to the table's KMS key being inaccessible for more than seven days. An On-Demand backup was created at the archival time.  
       */
     var ArchivalReason: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ArchivalReason] = js.undefined
   }
@@ -175,7 +164,7 @@ object DocumentClient {
       
       inline def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
       
-      inline def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
+      inline def setArchivalDateTime(value: js.Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
       
       inline def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
       
@@ -230,14 +219,14 @@ object DocumentClient {
   
   type AttributeUpdates = StringDictionary[AttributeValueUpdate]
   
-  type AttributeValue = js.Any
+  type AttributeValue = Any
   
   type AttributeValueList = js.Array[AttributeValue]
   
   trait AttributeValueUpdate extends StObject {
     
     /**
-      * Specifies how to perform the update. Valid values are PUT (default), DELETE, and ADD. The behavior depends on whether the specified primary key already exists in the table.  If an item with the specified Key is found in the table:     PUT - Adds the specified attribute to the item. If the attribute already exists, it is replaced by the new value.     DELETE - If no value is specified, the attribute and its value are removed from the item. The data type of the specified value must match the existing value's data type. If a set of values is specified, then those values are subtracted from the old set. For example, if the attribute value was the set [a,b,c] and the DELETE action specified [a,c], then the final attribute value would be [b]. Specifying an empty set is an error.    ADD - If the attribute does not already exist, then the attribute and its values are added to the item. If the attribute does exist, then the behavior of ADD depends on the data type of the attribute:   If the existing attribute is a number, and if Value is also a number, then the Value is mathematically added to the existing attribute. If Value is a negative number, then it is subtracted from the existing attribute.   If you use ADD to increment or decrement a number value for an item that doesn't exist before the update, DynamoDB uses 0 as the initial value. In addition, if you use ADD to update an existing item, and intend to increment or decrement an attribute value which does not yet exist, DynamoDB uses 0 as the initial value. For example, suppose that the item you want to update does not yet have an attribute named itemcount, but you decide to ADD the number 3 to this attribute anyway, even though it currently does not exist. DynamoDB will create the itemcount attribute, set its initial value to 0, and finally add 3 to it. The result will be a new itemcount attribute in the item, with a value of 3.    If the existing data type is a set, and if the Value is also a set, then the Value is added to the existing set. (This is a set operation, not mathematical addition.) For example, if the attribute value was the set [1,2], and the ADD action specified [3], then the final attribute value would be [1,2,3]. An error occurs if an Add action is specified for a set attribute and the attribute type specified does not match the existing set type.  Both sets must have the same primitive data type. For example, if the existing data type is a set of strings, the Value must also be a set of strings. The same holds true for number sets and binary sets.   This action is only valid for an existing attribute whose data type is number or is a set. Do not use ADD for any other data types.    If no item with the specified Key is found:     PUT - DynamoDB creates a new item with the specified primary key, and then adds the attribute.     DELETE - Nothing happens; there is no attribute to delete.    ADD - DynamoDB creates an item with the supplied primary key and number (or set of numbers) for the attribute value. The only data types allowed are number and number set; no other data types can be specified.  
+      * Specifies how to perform the update. Valid values are PUT (default), DELETE, and ADD. The behavior depends on whether the specified primary key already exists in the table.  If an item with the specified Key is found in the table:     PUT - Adds the specified attribute to the item. If the attribute already exists, it is replaced by the new value.     DELETE - If no value is specified, the attribute and its value are removed from the item. The data type of the specified value must match the existing value's data type. If a set of values is specified, then those values are subtracted from the old set. For example, if the attribute value was the set [a,b,c] and the DELETE action specified [a,c], then the final attribute value would be [b]. Specifying an empty set is an error.    ADD - If the attribute does not already exist, then the attribute and its values are added to the item. If the attribute does exist, then the behavior of ADD depends on the data type of the attribute:   If the existing attribute is a number, and if Value is also a number, then the Value is mathematically added to the existing attribute. If Value is a negative number, then it is subtracted from the existing attribute.   If you use ADD to increment or decrement a number value for an item that doesn't exist before the update, DynamoDB uses 0 as the initial value. In addition, if you use ADD to update an existing item, and intend to increment or decrement an attribute value which does not yet exist, DynamoDB uses 0 as the initial value. For example, suppose that the item you want to update does not yet have an attribute named itemcount, but you decide to ADD the number 3 to this attribute anyway, even though it currently does not exist. DynamoDB will create the itemcount attribute, set its initial value to 0, and finally add 3 to it. The result will be a new itemcount attribute in the item, with a value of 3.    If the existing data type is a set, and if the Value is also a set, then the Value is added to the existing set. (This is a set operation, not mathematical addition.) For example, if the attribute value was the set [1,2], and the ADD action specified [3], then the final attribute value would be [1,2,3]. An error occurs if an Add action is specified for a set attribute and the attribute type specified does not match the existing set type.  Both sets must have the same primitive data type. For example, if the existing data type is a set of strings, the Value must also be a set of strings. The same holds true for number sets and binary sets.   This action is only valid for an existing attribute whose data type is number or is a set. Do not use ADD for any other data types.    If no item with the specified Key is found:     PUT - DynamoDB creates a new item with the specified primary key, and then adds the attribute.     DELETE - Nothing happens; there is no attribute to delete.    ADD - DynamoDB creates a new item with the supplied primary key and number (or set) for the attribute value. The only data types allowed are number, number set, string set or binary set.  
       */
     var Action: js.UndefOr[AttributeAction] = js.undefined
     
@@ -389,7 +378,7 @@ object DocumentClient {
       
       inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
       
-      inline def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+      inline def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value*))
     }
   }
   
@@ -549,7 +538,7 @@ object DocumentClient {
   
   type BackupArn = java.lang.String
   
-  type BackupCreationDateTime = typings.std.Date
+  type BackupCreationDateTime = js.Date
   
   trait BackupDescription extends StObject {
     
@@ -601,12 +590,12 @@ object DocumentClient {
     /**
       * Time at which the backup was created. This is the request time of the backup. 
       */
-    var BackupCreationDateTime: typings.awsSdk.documentClientMod.DocumentClient.BackupCreationDateTime
+    var BackupCreationDateTime: js.Date
     
     /**
       * Time at which the automatic on-demand backup created by DynamoDB will expire. This SYSTEM on-demand backup expires automatically 35 days after its creation.
       */
-    var BackupExpiryDateTime: js.UndefOr[Date] = js.undefined
+    var BackupExpiryDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Name of the requested backup.
@@ -614,7 +603,7 @@ object DocumentClient {
     var BackupName: typings.awsSdk.documentClientMod.DocumentClient.BackupName
     
     /**
-      * Size of the backup in bytes.
+      * Size of the backup in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
     var BackupSizeBytes: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.BackupSizeBytes] = js.undefined
     
@@ -624,7 +613,7 @@ object DocumentClient {
     var BackupStatus: typings.awsSdk.documentClientMod.DocumentClient.BackupStatus
     
     /**
-      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
+      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from Backup service.  
       */
     var BackupType: typings.awsSdk.documentClientMod.DocumentClient.BackupType
   }
@@ -632,7 +621,7 @@ object DocumentClient {
     
     inline def apply(
       BackupArn: BackupArn,
-      BackupCreationDateTime: BackupCreationDateTime,
+      BackupCreationDateTime: js.Date,
       BackupName: BackupName,
       BackupStatus: BackupStatus,
       BackupType: BackupType
@@ -645,9 +634,9 @@ object DocumentClient {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
-      inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: js.Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
-      inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: js.Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
       inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
       
@@ -687,12 +676,12 @@ object DocumentClient {
     /**
       * Time at which the backup was created.
       */
-    var BackupCreationDateTime: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.BackupCreationDateTime] = js.undefined
+    var BackupCreationDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Time at which the automatic on-demand backup created by DynamoDB will expire. This SYSTEM on-demand backup expires automatically 35 days after its creation.
       */
-    var BackupExpiryDateTime: js.UndefOr[Date] = js.undefined
+    var BackupExpiryDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Name of the specified backup.
@@ -710,7 +699,7 @@ object DocumentClient {
     var BackupStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.BackupStatus] = js.undefined
     
     /**
-      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
+      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from Backup service.  
       */
     var BackupType: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.BackupType] = js.undefined
     
@@ -742,11 +731,11 @@ object DocumentClient {
       
       inline def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
       
-      inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: js.Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
       
-      inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: js.Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
       inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
       
@@ -798,6 +787,69 @@ object DocumentClient {
   type BackupTypeFilter = _BackupTypeFilter | java.lang.String
   
   type BackupsInputLimit = scala.Double
+  
+  trait BatchExecuteStatementInput extends StObject {
+    
+    var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnConsumedCapacity] = js.undefined
+    
+    /**
+      * The list of PartiQL statements representing the batch to run.
+      */
+    var Statements: PartiQLBatchRequest
+  }
+  object BatchExecuteStatementInput {
+    
+    inline def apply(Statements: PartiQLBatchRequest): BatchExecuteStatementInput = {
+      val __obj = js.Dynamic.literal(Statements = Statements.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BatchExecuteStatementInput]
+    }
+    
+    extension [Self <: BatchExecuteStatementInput](x: Self) {
+      
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      
+      inline def setStatements(value: PartiQLBatchRequest): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
+      
+      inline def setStatementsVarargs(value: BatchStatementRequest*): Self = StObject.set(x, "Statements", js.Array(value*))
+    }
+  }
+  
+  trait BatchExecuteStatementOutput extends StObject {
+    
+    /**
+      * The capacity units consumed by the entire operation. The values of the list are ordered according to the ordering of the statements.
+      */
+    var ConsumedCapacity: js.UndefOr[ConsumedCapacityMultiple] = js.undefined
+    
+    /**
+      * The response to each PartiQL statement in the batch.
+      */
+    var Responses: js.UndefOr[PartiQLBatchResponse] = js.undefined
+  }
+  object BatchExecuteStatementOutput {
+    
+    inline def apply(): BatchExecuteStatementOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BatchExecuteStatementOutput]
+    }
+    
+    extension [Self <: BatchExecuteStatementOutput](x: Self) {
+      
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
+      
+      inline def setResponses(value: PartiQLBatchResponse): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+      
+      inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+      
+      inline def setResponsesVarargs(value: BatchStatementResponse*): Self = StObject.set(x, "Responses", js.Array(value*))
+    }
+  }
   
   trait BatchGetItemInput extends StObject {
     
@@ -855,7 +907,7 @@ object DocumentClient {
       
       inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
       
       inline def setResponses(value: BatchGetResponseMap): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       
@@ -870,6 +922,133 @@ object DocumentClient {
   type BatchGetRequestMap = StringDictionary[KeysAndAttributes]
   
   type BatchGetResponseMap = StringDictionary[ItemList]
+  
+  trait BatchStatementError extends StObject {
+    
+    /**
+      *  The error code associated with the failed PartiQL batch statement. 
+      */
+    var Code: js.UndefOr[BatchStatementErrorCodeEnum] = js.undefined
+    
+    /**
+      *  The error message associated with the PartiQL batch response. 
+      */
+    var Message: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.String] = js.undefined
+  }
+  object BatchStatementError {
+    
+    inline def apply(): BatchStatementError = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BatchStatementError]
+    }
+    
+    extension [Self <: BatchStatementError](x: Self) {
+      
+      inline def setCode(value: BatchStatementErrorCodeEnum): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+      
+      inline def setMessage(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ConditionalCheckFailed
+    - typings.awsSdk.awsSdkStrings.ItemCollectionSizeLimitExceeded
+    - typings.awsSdk.awsSdkStrings.RequestLimitExceeded
+    - typings.awsSdk.awsSdkStrings.ValidationError
+    - typings.awsSdk.awsSdkStrings.ProvisionedThroughputExceeded
+    - typings.awsSdk.awsSdkStrings.TransactionConflict
+    - typings.awsSdk.awsSdkStrings.ThrottlingError
+    - typings.awsSdk.awsSdkStrings.InternalServerError
+    - typings.awsSdk.awsSdkStrings.ResourceNotFound
+    - typings.awsSdk.awsSdkStrings.AccessDenied
+    - typings.awsSdk.awsSdkStrings.DuplicateItem
+    - java.lang.String
+  */
+  type BatchStatementErrorCodeEnum = _BatchStatementErrorCodeEnum | java.lang.String
+  
+  trait BatchStatementRequest extends StObject {
+    
+    /**
+      *  The read consistency of the PartiQL batch request. 
+      */
+    var ConsistentRead: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ConsistentRead] = js.undefined
+    
+    /**
+      *  The parameters associated with a PartiQL statement in the batch request. 
+      */
+    var Parameters: js.UndefOr[PreparedStatementParameters] = js.undefined
+    
+    /**
+      *  A valid PartiQL statement. 
+      */
+    var Statement: PartiQLStatement
+  }
+  object BatchStatementRequest {
+    
+    inline def apply(Statement: PartiQLStatement): BatchStatementRequest = {
+      val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BatchStatementRequest]
+    }
+    
+    extension [Self <: BatchStatementRequest](x: Self) {
+      
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      
+      inline def setParameters(value: PreparedStatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+      
+      inline def setParametersVarargs(value: AttributeValue*): Self = StObject.set(x, "Parameters", js.Array(value*))
+      
+      inline def setStatement(value: PartiQLStatement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BatchStatementResponse extends StObject {
+    
+    /**
+      *  The error associated with a failed PartiQL batch statement. 
+      */
+    var Error: js.UndefOr[BatchStatementError] = js.undefined
+    
+    /**
+      *  A DynamoDB item associated with a BatchStatementResponse 
+      */
+    var Item: js.UndefOr[AttributeMap] = js.undefined
+    
+    /**
+      *  The table name associated with a failed PartiQL batch statement. 
+      */
+    var TableName: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableName] = js.undefined
+  }
+  object BatchStatementResponse {
+    
+    inline def apply(): BatchStatementResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BatchStatementResponse]
+    }
+    
+    extension [Self <: BatchStatementResponse](x: Self) {
+      
+      inline def setError(value: BatchStatementError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+      
+      inline def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    }
+  }
   
   trait BatchWriteItemInput extends StObject {
     
@@ -936,7 +1115,7 @@ object DocumentClient {
       
       inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
       
       inline def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
@@ -969,7 +1148,7 @@ object DocumentClient {
     /**
       * Represents the time when PAY_PER_REQUEST was last set as the read/write capacity mode.
       */
-    var LastUpdateToPayPerRequestDateTime: js.UndefOr[Date] = js.undefined
+    var LastUpdateToPayPerRequestDateTime: js.UndefOr[js.Date] = js.undefined
   }
   object BillingModeSummary {
     
@@ -984,13 +1163,13 @@ object DocumentClient {
       
       inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
       
-      inline def setLastUpdateToPayPerRequestDateTime(value: Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
+      inline def setLastUpdateToPayPerRequestDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
     }
   }
   
-  type BinaryAttributeValue = Buffer | Uint8Array | typings.awsSdk.documentClientMod.DocumentClient.Blob | java.lang.String
+  type BinaryAttributeValue = Buffer | js.typedarray.Uint8Array | typings.awsSdk.documentClientMod.DocumentClient.Blob | java.lang.String
   
   trait BinarySet
     extends StObject
@@ -1014,7 +1193,7 @@ object DocumentClient {
       
       inline def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -1071,6 +1250,8 @@ object DocumentClient {
   
   type ClientToken = java.lang.String
   
+  type CloudWatchLogGroupArn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EQ
     - typings.awsSdk.awsSdkStrings.NE
@@ -1114,7 +1295,7 @@ object DocumentClient {
       
       inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value*))
       
       inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     }
@@ -1491,7 +1672,7 @@ object DocumentClient {
       
       inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -1526,7 +1707,7 @@ object DocumentClient {
       
       inline def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
   
@@ -1580,7 +1761,7 @@ object DocumentClient {
     var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexList] = js.undefined
     
     /**
-      * The AWS KMS customer master key (CMK) that should be used for AWS KMS encryption in the new replica. To specify a CMK, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS master key alias/aws/dynamodb.
+      * The KMS key that should be used for KMS encryption in the new replica. To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS key alias/aws/dynamodb.
       */
     var KMSMasterKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KMSMasterKeyId] = js.undefined
     
@@ -1593,6 +1774,11 @@ object DocumentClient {
       * The Region where the new replica will be created.
       */
     var RegionName: typings.awsSdk.documentClientMod.DocumentClient.RegionName
+    
+    /**
+      * Replica-specific table class. If not specified, uses the source table's table class.
+      */
+    var TableClassOverride: js.UndefOr[TableClass] = js.undefined
   }
   object CreateReplicationGroupMemberAction {
     
@@ -1607,7 +1793,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
@@ -1618,6 +1804,10 @@ object DocumentClient {
       inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassOverride(value: TableClass): Self = StObject.set(x, "TableClassOverride", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassOverrideUndefined: Self = StObject.set(x, "TableClassOverride", js.undefined)
     }
   }
   
@@ -1686,6 +1876,11 @@ object DocumentClient {
     var StreamSpecification: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.StreamSpecification] = js.undefined
     
     /**
+      * The table class of the new table. Valid values are STANDARD and STANDARD_INFREQUENT_ACCESS.
+      */
+    var TableClass: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableClass] = js.undefined
+    
+    /**
       * The name of the table to create.
       */
     var TableName: typings.awsSdk.documentClientMod.DocumentClient.TableName
@@ -1706,7 +1901,7 @@ object DocumentClient {
       
       inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
-      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
       
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
@@ -1716,17 +1911,17 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setLocalSecondaryIndexes(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
       
       inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
@@ -1740,13 +1935,17 @@ object DocumentClient {
       
       inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
       
+      inline def setTableClass(value: TableClass): Self = StObject.set(x, "TableClass", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassUndefined: Self = StObject.set(x, "TableClass", js.undefined)
+      
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
       inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
   
@@ -1772,7 +1971,46 @@ object DocumentClient {
     }
   }
   
-  type Date = typings.std.Date
+  type CsvDelimiter = java.lang.String
+  
+  type CsvHeader = java.lang.String
+  
+  type CsvHeaderList = js.Array[CsvHeader]
+  
+  trait CsvOptions extends StObject {
+    
+    /**
+      *  The delimiter used for separating items in the CSV file being imported. 
+      */
+    var Delimiter: js.UndefOr[CsvDelimiter] = js.undefined
+    
+    /**
+      *  List of the headers used to specify a common header for all source CSV files being imported. If this field is specified then the first line of each CSV file is treated as data instead of the header. If this field is not specified the the first line of each CSV file is treated as the header. 
+      */
+    var HeaderList: js.UndefOr[CsvHeaderList] = js.undefined
+  }
+  object CsvOptions {
+    
+    inline def apply(): CsvOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CsvOptions]
+    }
+    
+    extension [Self <: CsvOptions](x: Self) {
+      
+      inline def setDelimiter(value: CsvDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+      
+      inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+      
+      inline def setHeaderList(value: CsvHeaderList): Self = StObject.set(x, "HeaderList", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderListUndefined: Self = StObject.set(x, "HeaderList", js.undefined)
+      
+      inline def setHeaderListVarargs(value: CsvHeader*): Self = StObject.set(x, "HeaderList", js.Array(value*))
+    }
+  }
+  
+  type Date = js.Date
   
   trait Delete extends StObject {
     
@@ -1941,7 +2179,7 @@ object DocumentClient {
     var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnItemCollectionMetrics] = js.undefined
     
     /**
-      * Use ReturnValues if you want to get the item attributes as they appeared before they were deleted. For DeleteItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - The content of the old item is returned.    The ReturnValues parameter is used by several DynamoDB operations; however, DeleteItem does not recognize any values other than NONE or ALL_OLD. 
+      * Use ReturnValues if you want to get the item attributes as they appeared before they were deleted. For DeleteItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - The content of the old item is returned.   There is no additional cost associated with requesting a return value aside from the small network and processing overhead of receiving a larger response. No read capacity units are consumed.  The ReturnValues parameter is used by several DynamoDB operations; however, DeleteItem does not recognize any values other than NONE or ALL_OLD. 
       */
     var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
     
@@ -2255,17 +2493,17 @@ object DocumentClient {
   trait DescribeContributorInsightsOutput extends StObject {
     
     /**
-      * List of names of the associated Alpine rules.
+      * List of names of the associated contributor insights rules.
       */
     var ContributorInsightsRuleList: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ContributorInsightsRuleList] = js.undefined
     
     /**
-      * Current Status contributor insights.
+      * Current status of contributor insights.
       */
     var ContributorInsightsStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ContributorInsightsStatus] = js.undefined
     
     /**
-      * Returns information about the last failure that encountered. The most common exceptions for a FAILED status are:   LimitExceededException - Per-account Amazon CloudWatch Contributor Insights rule limit reached. Please disable Contributor Insights for other tables/indexes OR disable Contributor Insights rules before retrying.   AccessDeniedException - Amazon CloudWatch Contributor Insights rules cannot be modified due to insufficient permissions.   AccessDeniedException - Failed to create service-linked role for Contributor Insights due to insufficient permissions.   InternalServerError - Failed to create Amazon CloudWatch Contributor Insights rules. Please retry request.  
+      * Returns information about the last failure that was encountered. The most common exceptions for a FAILED status are:   LimitExceededException - Per-account Amazon CloudWatch Contributor Insights rule limit reached. Please disable Contributor Insights for other tables/indexes OR disable Contributor Insights rules before retrying.   AccessDeniedException - Amazon CloudWatch Contributor Insights rules cannot be modified due to insufficient permissions.   AccessDeniedException - Failed to create service-linked role for Contributor Insights due to insufficient permissions.   InternalServerError - Failed to create Amazon CloudWatch Contributor Insights rules. Please retry request.  
       */
     var FailureException: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.FailureException] = js.undefined
     
@@ -2277,7 +2515,7 @@ object DocumentClient {
     /**
       * Timestamp of the last time the status was changed.
       */
-    var LastUpdateDateTime: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.LastUpdateDateTime] = js.undefined
+    var LastUpdateDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The name of the table being described.
@@ -2297,7 +2535,7 @@ object DocumentClient {
       
       inline def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
       
-      inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
+      inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value*))
       
       inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
@@ -2311,7 +2549,7 @@ object DocumentClient {
       
       inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      inline def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
+      inline def setLastUpdateDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
       
@@ -2341,7 +2579,7 @@ object DocumentClient {
       
       inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     }
   }
   
@@ -2478,7 +2716,100 @@ object DocumentClient {
       
       inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
       
-      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value*))
+    }
+  }
+  
+  trait DescribeImportInput extends StObject {
+    
+    /**
+      *  The Amazon Resource Name (ARN) associated with the table you're importing to. 
+      */
+    var ImportArn: typings.awsSdk.documentClientMod.DocumentClient.ImportArn
+  }
+  object DescribeImportInput {
+    
+    inline def apply(ImportArn: ImportArn): DescribeImportInput = {
+      val __obj = js.Dynamic.literal(ImportArn = ImportArn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeImportInput]
+    }
+    
+    extension [Self <: DescribeImportInput](x: Self) {
+      
+      inline def setImportArn(value: ImportArn): Self = StObject.set(x, "ImportArn", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DescribeImportOutput extends StObject {
+    
+    /**
+      *  Represents the properties of the table created for the import, and parameters of the import. The import parameters include import status, how many items were processed, and how many errors were encountered. 
+      */
+    var ImportTableDescription: typings.awsSdk.documentClientMod.DocumentClient.ImportTableDescription
+  }
+  object DescribeImportOutput {
+    
+    inline def apply(ImportTableDescription: ImportTableDescription): DescribeImportOutput = {
+      val __obj = js.Dynamic.literal(ImportTableDescription = ImportTableDescription.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeImportOutput]
+    }
+    
+    extension [Self <: DescribeImportOutput](x: Self) {
+      
+      inline def setImportTableDescription(value: ImportTableDescription): Self = StObject.set(x, "ImportTableDescription", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DescribeKinesisStreamingDestinationInput extends StObject {
+    
+    /**
+      * The name of the table being described.
+      */
+    var TableName: typings.awsSdk.documentClientMod.DocumentClient.TableName
+  }
+  object DescribeKinesisStreamingDestinationInput {
+    
+    inline def apply(TableName: TableName): DescribeKinesisStreamingDestinationInput = {
+      val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeKinesisStreamingDestinationInput]
+    }
+    
+    extension [Self <: DescribeKinesisStreamingDestinationInput](x: Self) {
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DescribeKinesisStreamingDestinationOutput extends StObject {
+    
+    /**
+      * The list of replica structures for the table being described.
+      */
+    var KinesisDataStreamDestinations: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KinesisDataStreamDestinations] = js.undefined
+    
+    /**
+      * The name of the table being described.
+      */
+    var TableName: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableName] = js.undefined
+  }
+  object DescribeKinesisStreamingDestinationOutput {
+    
+    inline def apply(): DescribeKinesisStreamingDestinationOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DescribeKinesisStreamingDestinationOutput]
+    }
+    
+    extension [Self <: DescribeKinesisStreamingDestinationOutput](x: Self) {
+      
+      inline def setKinesisDataStreamDestinations(value: KinesisDataStreamDestinations): Self = StObject.set(x, "KinesisDataStreamDestinations", value.asInstanceOf[js.Any])
+      
+      inline def setKinesisDataStreamDestinationsUndefined: Self = StObject.set(x, "KinesisDataStreamDestinations", js.undefined)
+      
+      inline def setKinesisDataStreamDestinationsVarargs(value: KinesisDataStreamDestination*): Self = StObject.set(x, "KinesisDataStreamDestinations", js.Array(value*))
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -2659,6 +2990,16 @@ object DocumentClient {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLING
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DISABLING
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLE_FAILED
+    - java.lang.String
+  */
+  type DestinationStatus = _DestinationStatus | java.lang.String
+  
   trait DocumentClientOptions
     extends StObject
        with ConverterOptions {
@@ -2666,10 +3007,14 @@ object DocumentClient {
     /**
       * An optional map of parameters to bind to every request sent by this service object.
       */
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
-      * An optional pre-configured instance of the AWS.DynamoDB service object to use for requests. The object may bound parameters used by the document client.
+      * An optional pre-configured instance
+      * of the AWS.DynamoDB service object. This instance's config will be
+      * copied to a new instance used by this client. You should not need to
+      * retain a reference to the input object, and may destroy it or allow it
+      * to be garbage collected.
       */
     var service: js.UndefOr[^] = js.undefined
   }
@@ -2682,7 +3027,7 @@ object DocumentClient {
     
     extension [Self <: DocumentClientOptions](x: Self) {
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -2750,9 +3095,198 @@ object DocumentClient {
   
   type Endpoints = js.Array[Endpoint]
   
+  type ErrorCount = scala.Double
+  
   type ExceptionDescription = java.lang.String
   
   type ExceptionName = java.lang.String
+  
+  trait ExecuteStatementInput extends StObject {
+    
+    /**
+      * The consistency of a read operation. If set to true, then a strongly consistent read is used; otherwise, an eventually consistent read is used.
+      */
+    var ConsistentRead: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ConsistentRead] = js.undefined
+    
+    /**
+      * The maximum number of items to evaluate (not necessarily the number of matching items). If DynamoDB processes the number of items up to the limit while processing the results, it stops the operation and returns the matching values up to that point, along with a key in LastEvaluatedKey to apply in a subsequent operation so you can pick up where you left off. Also, if the processed dataset size exceeds 1 MB before DynamoDB reaches this limit, it stops the operation and returns the matching values up to the limit, and a key in LastEvaluatedKey to apply in a subsequent operation to continue the operation. 
+      */
+    var Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
+    
+    /**
+      * Set this value to get remaining results, if NextToken was returned in the statement response.
+      */
+    var NextToken: js.UndefOr[PartiQLNextToken] = js.undefined
+    
+    /**
+      * The parameters for the PartiQL statement, if any.
+      */
+    var Parameters: js.UndefOr[PreparedStatementParameters] = js.undefined
+    
+    var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnConsumedCapacity] = js.undefined
+    
+    /**
+      * The PartiQL statement representing the operation to run.
+      */
+    var Statement: PartiQLStatement
+  }
+  object ExecuteStatementInput {
+    
+    inline def apply(Statement: PartiQLStatement): ExecuteStatementInput = {
+      val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ExecuteStatementInput]
+    }
+    
+    extension [Self <: ExecuteStatementInput](x: Self) {
+      
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      
+      inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      
+      inline def setNextToken(value: PartiQLNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      
+      inline def setParameters(value: PreparedStatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+      
+      inline def setParametersVarargs(value: AttributeValue*): Self = StObject.set(x, "Parameters", js.Array(value*))
+      
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      
+      inline def setStatement(value: PartiQLStatement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ExecuteStatementOutput extends StObject {
+    
+    var ConsumedCapacity: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ConsumedCapacity] = js.undefined
+    
+    /**
+      * If a read operation was used, this property will contain the result of the read operation; a map of attribute names and their values. For the write operations this value will be empty.
+      */
+    var Items: js.UndefOr[ItemList] = js.undefined
+    
+    /**
+      * The primary key of the item where the operation stopped, inclusive of the previous result set. Use this value to start a new operation, excluding this value in the new request. If LastEvaluatedKey is empty, then the "last page" of results has been processed and there is no more data to be retrieved. If LastEvaluatedKey is not empty, it does not necessarily mean that there is more data in the result set. The only way to know when you have reached the end of the result set is when LastEvaluatedKey is empty. 
+      */
+    var LastEvaluatedKey: js.UndefOr[Key] = js.undefined
+    
+    /**
+      * If the response of a read request exceeds the response payload limit DynamoDB will set this value in the response. If set, you can use that this value in the subsequent request to get the remaining results.
+      */
+    var NextToken: js.UndefOr[PartiQLNextToken] = js.undefined
+  }
+  object ExecuteStatementOutput {
+    
+    inline def apply(): ExecuteStatementOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExecuteStatementOutput]
+    }
+    
+    extension [Self <: ExecuteStatementOutput](x: Self) {
+      
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      
+      inline def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+      
+      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value*))
+      
+      inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+      
+      inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
+      
+      inline def setNextToken(value: PartiQLNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    }
+  }
+  
+  trait ExecuteTransactionInput extends StObject {
+    
+    /**
+      * Set this value to get remaining results, if NextToken was returned in the statement response.
+      */
+    var ClientRequestToken: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ClientRequestToken] = js.undefined
+    
+    /**
+      * Determines the level of detail about either provisioned or on-demand throughput consumption that is returned in the response. For more information, see TransactGetItems and TransactWriteItems.
+      */
+    var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnConsumedCapacity] = js.undefined
+    
+    /**
+      * The list of PartiQL statements representing the transaction to run.
+      */
+    var TransactStatements: ParameterizedStatements
+  }
+  object ExecuteTransactionInput {
+    
+    inline def apply(TransactStatements: ParameterizedStatements): ExecuteTransactionInput = {
+      val __obj = js.Dynamic.literal(TransactStatements = TransactStatements.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ExecuteTransactionInput]
+    }
+    
+    extension [Self <: ExecuteTransactionInput](x: Self) {
+      
+      inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+      
+      inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+      
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      
+      inline def setTransactStatements(value: ParameterizedStatements): Self = StObject.set(x, "TransactStatements", value.asInstanceOf[js.Any])
+      
+      inline def setTransactStatementsVarargs(value: ParameterizedStatement*): Self = StObject.set(x, "TransactStatements", js.Array(value*))
+    }
+  }
+  
+  trait ExecuteTransactionOutput extends StObject {
+    
+    /**
+      * The capacity units consumed by the entire operation. The values of the list are ordered according to the ordering of the statements.
+      */
+    var ConsumedCapacity: js.UndefOr[ConsumedCapacityMultiple] = js.undefined
+    
+    /**
+      * The response to a PartiQL transaction.
+      */
+    var Responses: js.UndefOr[ItemResponseList] = js.undefined
+  }
+  object ExecuteTransactionOutput {
+    
+    inline def apply(): ExecuteTransactionOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExecuteTransactionOutput]
+    }
+    
+    extension [Self <: ExecuteTransactionOutput](x: Self) {
+      
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
+      
+      inline def setResponses(value: ItemResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+      
+      inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+      
+      inline def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value*))
+    }
+  }
   
   type ExpectedAttributeMap = StringDictionary[ExpectedAttributeValue]
   
@@ -2791,7 +3325,7 @@ object DocumentClient {
       
       inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value*))
       
       inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
       
@@ -2824,7 +3358,7 @@ object DocumentClient {
     /**
       * The time at which the export task completed.
       */
-    var EndTime: js.UndefOr[ExportEndTime] = js.undefined
+    var EndTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the table export.
@@ -2849,7 +3383,7 @@ object DocumentClient {
     /**
       * Point in time from which table data was exported.
       */
-    var ExportTime: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ExportTime] = js.undefined
+    var ExportTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Status code for the result of the failed export.
@@ -2872,7 +3406,7 @@ object DocumentClient {
     var S3Bucket: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3Bucket] = js.undefined
     
     /**
-      * The ID of the AWS account that owns the bucket containing the export.
+      * The ID of the Amazon Web Services account that owns the bucket containing the export.
       */
     var S3BucketOwner: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3BucketOwner] = js.undefined
     
@@ -2882,19 +3416,19 @@ object DocumentClient {
     var S3Prefix: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3Prefix] = js.undefined
     
     /**
-      * Type of encryption used on the bucket where export data is stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with AWS KMS managed keys  
+      * Type of encryption used on the bucket where export data is stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with KMS managed keys  
       */
     var S3SseAlgorithm: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3SseAlgorithm] = js.undefined
     
     /**
-      * The ID of the AWS KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable).
+      * The ID of the KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable).
       */
     var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3SseKmsKeyId] = js.undefined
     
     /**
       * The time at which the export task began.
       */
-    var StartTime: js.UndefOr[ExportStartTime] = js.undefined
+    var StartTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the table that was exported.
@@ -2923,7 +3457,7 @@ object DocumentClient {
       
       inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
       
-      inline def setEndTime(value: ExportEndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -2943,7 +3477,7 @@ object DocumentClient {
       
       inline def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
       
-      inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+      inline def setExportTime(value: js.Date): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
       
       inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
       
@@ -2979,7 +3513,7 @@ object DocumentClient {
       
       inline def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
       
-      inline def setStartTime(value: ExportStartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
@@ -2993,7 +3527,7 @@ object DocumentClient {
     }
   }
   
-  type ExportEndTime = typings.std.Date
+  type ExportEndTime = js.Date
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DYNAMODB_JSON
@@ -3006,7 +3540,7 @@ object DocumentClient {
   
   type ExportNextToken = java.lang.String
   
-  type ExportStartTime = typings.std.Date
+  type ExportStartTime = js.Date
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -3052,7 +3586,7 @@ object DocumentClient {
   trait ExportTableToPointInTimeInput extends StObject {
     
     /**
-      * Providing a ClientToken makes the call to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
+      * Providing a ClientToken makes the call to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an ImportConflictException.
       */
     var ClientToken: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ClientToken] = js.undefined
     
@@ -3062,9 +3596,9 @@ object DocumentClient {
     var ExportFormat: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ExportFormat] = js.undefined
     
     /**
-      * Time in the past from which to export table data. The table export will be a snapshot of the table's state at this point in time.
+      * Time in the past from which to export table data, counted in seconds from the start of the Unix epoch. The table export will be a snapshot of the table's state at this point in time.
       */
-    var ExportTime: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ExportTime] = js.undefined
+    var ExportTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The name of the Amazon S3 bucket to export the snapshot to.
@@ -3072,7 +3606,7 @@ object DocumentClient {
     var S3Bucket: typings.awsSdk.documentClientMod.DocumentClient.S3Bucket
     
     /**
-      * The ID of the AWS account that owns the bucket the export will be stored in.
+      * The ID of the Amazon Web Services account that owns the bucket the export will be stored in.
       */
     var S3BucketOwner: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3BucketOwner] = js.undefined
     
@@ -3082,12 +3616,12 @@ object DocumentClient {
     var S3Prefix: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3Prefix] = js.undefined
     
     /**
-      * Type of encryption used on the bucket where export data will be stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with AWS KMS managed keys  
+      * Type of encryption used on the bucket where export data will be stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with KMS managed keys  
       */
     var S3SseAlgorithm: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3SseAlgorithm] = js.undefined
     
     /**
-      * The ID of the AWS KMS managed key used to encrypt the S3 bucket where export data will be stored (if applicable).
+      * The ID of the KMS managed key used to encrypt the S3 bucket where export data will be stored (if applicable).
       */
     var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3SseKmsKeyId] = js.undefined
     
@@ -3113,7 +3647,7 @@ object DocumentClient {
       
       inline def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
       
-      inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+      inline def setExportTime(value: js.Date): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
       
       inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
       
@@ -3161,7 +3695,7 @@ object DocumentClient {
     }
   }
   
-  type ExportTime = typings.std.Date
+  type ExportTime = js.Date
   
   type ExpressionAttributeNameMap = StringDictionary[AttributeName]
   
@@ -3300,7 +3834,7 @@ object DocumentClient {
       
       inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
       
       inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
@@ -3390,7 +3924,7 @@ object DocumentClient {
       
       inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -3514,7 +4048,7 @@ object DocumentClient {
       
       inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -3567,7 +4101,7 @@ object DocumentClient {
       
       inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -3654,7 +4188,7 @@ object DocumentClient {
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
   
@@ -3665,7 +4199,7 @@ object DocumentClient {
     /**
       * The creation time of the global table.
       */
-    var CreationDateTime: js.UndefOr[Date] = js.undefined
+    var CreationDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The unique identifier of the global table.
@@ -3696,7 +4230,7 @@ object DocumentClient {
     
     extension [Self <: GlobalTableDescription](x: Self) {
       
-      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
@@ -3716,7 +4250,7 @@ object DocumentClient {
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
   
@@ -3771,6 +4305,382 @@ object DocumentClient {
   */
   type GlobalTableStatus = _GlobalTableStatus | java.lang.String
   
+  type ImportArn = java.lang.String
+  
+  type ImportEndTime = js.Date
+  
+  type ImportNextToken = java.lang.String
+  
+  type ImportStartTime = js.Date
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+    - typings.awsSdk.awsSdkStrings.COMPLETED
+    - typings.awsSdk.awsSdkStrings.CANCELLING
+    - typings.awsSdk.awsSdkStrings.CANCELLED
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - java.lang.String
+  */
+  type ImportStatus = _ImportStatus | java.lang.String
+  
+  trait ImportSummary extends StObject {
+    
+    /**
+      *  The Amazon Resource Number (ARN) of the Cloudwatch Log Group associated with this import task. 
+      */
+    var CloudWatchLogGroupArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.CloudWatchLogGroupArn] = js.undefined
+    
+    /**
+      *  The time at which this import task ended. (Does this include the successful complete creation of the table it was imported to?) 
+      */
+    var EndTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      *  The Amazon Resource Number (ARN) corresponding to the import request. 
+      */
+    var ImportArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportArn] = js.undefined
+    
+    /**
+      *  The status of the import operation. 
+      */
+    var ImportStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportStatus] = js.undefined
+    
+    /**
+      *  The format of the source data. Valid values are CSV, DYNAMODB_JSON or ION.
+      */
+    var InputFormat: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputFormat] = js.undefined
+    
+    /**
+      *  The path and S3 bucket of the source file that is being imported. This includes the S3Bucket (required), S3KeyPrefix (optional) and S3BucketOwner (optional if the bucket is owned by the requester). 
+      */
+    var S3BucketSource: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3BucketSource] = js.undefined
+    
+    /**
+      *  The time at which this import task began. 
+      */
+    var StartTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      *  The Amazon Resource Number (ARN) of the table being imported into. 
+      */
+    var TableArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableArn] = js.undefined
+  }
+  object ImportSummary {
+    
+    inline def apply(): ImportSummary = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ImportSummary]
+    }
+    
+    extension [Self <: ImportSummary](x: Self) {
+      
+      inline def setCloudWatchLogGroupArn(value: CloudWatchLogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
+      
+      inline def setCloudWatchLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogGroupArn", js.undefined)
+      
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      
+      inline def setImportArn(value: ImportArn): Self = StObject.set(x, "ImportArn", value.asInstanceOf[js.Any])
+      
+      inline def setImportArnUndefined: Self = StObject.set(x, "ImportArn", js.undefined)
+      
+      inline def setImportStatus(value: ImportStatus): Self = StObject.set(x, "ImportStatus", value.asInstanceOf[js.Any])
+      
+      inline def setImportStatusUndefined: Self = StObject.set(x, "ImportStatus", js.undefined)
+      
+      inline def setInputFormat(value: InputFormat): Self = StObject.set(x, "InputFormat", value.asInstanceOf[js.Any])
+      
+      inline def setInputFormatUndefined: Self = StObject.set(x, "InputFormat", js.undefined)
+      
+      inline def setS3BucketSource(value: S3BucketSource): Self = StObject.set(x, "S3BucketSource", value.asInstanceOf[js.Any])
+      
+      inline def setS3BucketSourceUndefined: Self = StObject.set(x, "S3BucketSource", js.undefined)
+      
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+    }
+  }
+  
+  type ImportSummaryList = js.Array[ImportSummary]
+  
+  trait ImportTableDescription extends StObject {
+    
+    /**
+      *  The client token that was provided for the import task. Reusing the client token on retry makes a call to ImportTable idempotent. 
+      */
+    var ClientToken: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ClientToken] = js.undefined
+    
+    /**
+      *  The Amazon Resource Number (ARN) of the Cloudwatch Log Group associated with the target table. 
+      */
+    var CloudWatchLogGroupArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.CloudWatchLogGroupArn] = js.undefined
+    
+    /**
+      *  The time at which the creation of the table associated with this import task completed. 
+      */
+    var EndTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      *  The number of errors occurred on importing the source file into the target table. 
+      */
+    var ErrorCount: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ErrorCount] = js.undefined
+    
+    /**
+      *  The error code corresponding to the failure that the import job ran into during execution. 
+      */
+    var FailureCode: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.FailureCode] = js.undefined
+    
+    /**
+      *  The error message corresponding to the failure that the import job ran into during execution. 
+      */
+    var FailureMessage: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.FailureMessage] = js.undefined
+    
+    /**
+      *  The Amazon Resource Number (ARN) corresponding to the import request. 
+      */
+    var ImportArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportArn] = js.undefined
+    
+    /**
+      *  The status of the import. 
+      */
+    var ImportStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportStatus] = js.undefined
+    
+    /**
+      *  The number of items successfully imported into the new table. 
+      */
+    var ImportedItemCount: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportedItemCount] = js.undefined
+    
+    /**
+      *  The compression options for the data that has been imported into the target table. The values are NONE, GZIP, or ZSTD. 
+      */
+    var InputCompressionType: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputCompressionType] = js.undefined
+    
+    /**
+      *  The format of the source data going into the target table. 
+      */
+    var InputFormat: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputFormat] = js.undefined
+    
+    /**
+      *  The format options for the data that was imported into the target table. There is one value, CsvOption. 
+      */
+    var InputFormatOptions: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputFormatOptions] = js.undefined
+    
+    /**
+      *  The total number of items processed from the source file. 
+      */
+    var ProcessedItemCount: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ProcessedItemCount] = js.undefined
+    
+    /**
+      *  The total size of data processed from the source file, in Bytes. 
+      */
+    var ProcessedSizeBytes: js.UndefOr[Long] = js.undefined
+    
+    /**
+      *  Values for the S3 bucket the source file is imported from. Includes bucket name (required), key prefix (optional) and bucket account owner ID (optional). 
+      */
+    var S3BucketSource: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3BucketSource] = js.undefined
+    
+    /**
+      *  The time when this import task started. 
+      */
+    var StartTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      *  The Amazon Resource Number (ARN) of the table being imported into. 
+      */
+    var TableArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableArn] = js.undefined
+    
+    /**
+      *  The parameters for the new table that is being imported into. 
+      */
+    var TableCreationParameters: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableCreationParameters] = js.undefined
+    
+    /**
+      *  The table id corresponding to the table created by import table process. 
+      */
+    var TableId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableId] = js.undefined
+  }
+  object ImportTableDescription {
+    
+    inline def apply(): ImportTableDescription = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ImportTableDescription]
+    }
+    
+    extension [Self <: ImportTableDescription](x: Self) {
+      
+      inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+      
+      inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+      
+      inline def setCloudWatchLogGroupArn(value: CloudWatchLogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
+      
+      inline def setCloudWatchLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogGroupArn", js.undefined)
+      
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      
+      inline def setErrorCount(value: ErrorCount): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
+      
+      inline def setErrorCountUndefined: Self = StObject.set(x, "ErrorCount", js.undefined)
+      
+      inline def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+      
+      inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+      
+      inline def setFailureMessage(value: FailureMessage): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+      
+      inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+      
+      inline def setImportArn(value: ImportArn): Self = StObject.set(x, "ImportArn", value.asInstanceOf[js.Any])
+      
+      inline def setImportArnUndefined: Self = StObject.set(x, "ImportArn", js.undefined)
+      
+      inline def setImportStatus(value: ImportStatus): Self = StObject.set(x, "ImportStatus", value.asInstanceOf[js.Any])
+      
+      inline def setImportStatusUndefined: Self = StObject.set(x, "ImportStatus", js.undefined)
+      
+      inline def setImportedItemCount(value: ImportedItemCount): Self = StObject.set(x, "ImportedItemCount", value.asInstanceOf[js.Any])
+      
+      inline def setImportedItemCountUndefined: Self = StObject.set(x, "ImportedItemCount", js.undefined)
+      
+      inline def setInputCompressionType(value: InputCompressionType): Self = StObject.set(x, "InputCompressionType", value.asInstanceOf[js.Any])
+      
+      inline def setInputCompressionTypeUndefined: Self = StObject.set(x, "InputCompressionType", js.undefined)
+      
+      inline def setInputFormat(value: InputFormat): Self = StObject.set(x, "InputFormat", value.asInstanceOf[js.Any])
+      
+      inline def setInputFormatOptions(value: InputFormatOptions): Self = StObject.set(x, "InputFormatOptions", value.asInstanceOf[js.Any])
+      
+      inline def setInputFormatOptionsUndefined: Self = StObject.set(x, "InputFormatOptions", js.undefined)
+      
+      inline def setInputFormatUndefined: Self = StObject.set(x, "InputFormat", js.undefined)
+      
+      inline def setProcessedItemCount(value: ProcessedItemCount): Self = StObject.set(x, "ProcessedItemCount", value.asInstanceOf[js.Any])
+      
+      inline def setProcessedItemCountUndefined: Self = StObject.set(x, "ProcessedItemCount", js.undefined)
+      
+      inline def setProcessedSizeBytes(value: Long): Self = StObject.set(x, "ProcessedSizeBytes", value.asInstanceOf[js.Any])
+      
+      inline def setProcessedSizeBytesUndefined: Self = StObject.set(x, "ProcessedSizeBytes", js.undefined)
+      
+      inline def setS3BucketSource(value: S3BucketSource): Self = StObject.set(x, "S3BucketSource", value.asInstanceOf[js.Any])
+      
+      inline def setS3BucketSourceUndefined: Self = StObject.set(x, "S3BucketSource", js.undefined)
+      
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      
+      inline def setTableCreationParameters(value: TableCreationParameters): Self = StObject.set(x, "TableCreationParameters", value.asInstanceOf[js.Any])
+      
+      inline def setTableCreationParametersUndefined: Self = StObject.set(x, "TableCreationParameters", js.undefined)
+      
+      inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      
+      inline def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
+    }
+  }
+  
+  trait ImportTableInput extends StObject {
+    
+    /**
+      * Providing a ClientToken makes the call to ImportTableInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
+      */
+    var ClientToken: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ClientToken] = js.undefined
+    
+    /**
+      *  Type of compression to be used on the input coming from the imported table. 
+      */
+    var InputCompressionType: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputCompressionType] = js.undefined
+    
+    /**
+      *  The format of the source data. Valid values for ImportFormat are CSV, DYNAMODB_JSON or ION. 
+      */
+    var InputFormat: typings.awsSdk.documentClientMod.DocumentClient.InputFormat
+    
+    /**
+      *  Additional properties that specify how the input is formatted, 
+      */
+    var InputFormatOptions: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.InputFormatOptions] = js.undefined
+    
+    /**
+      *  The S3 bucket that provides the source for the import. 
+      */
+    var S3BucketSource: typings.awsSdk.documentClientMod.DocumentClient.S3BucketSource
+    
+    /**
+      * Parameters for the table to import the data into. 
+      */
+    var TableCreationParameters: typings.awsSdk.documentClientMod.DocumentClient.TableCreationParameters
+  }
+  object ImportTableInput {
+    
+    inline def apply(
+      InputFormat: InputFormat,
+      S3BucketSource: S3BucketSource,
+      TableCreationParameters: TableCreationParameters
+    ): ImportTableInput = {
+      val __obj = js.Dynamic.literal(InputFormat = InputFormat.asInstanceOf[js.Any], S3BucketSource = S3BucketSource.asInstanceOf[js.Any], TableCreationParameters = TableCreationParameters.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImportTableInput]
+    }
+    
+    extension [Self <: ImportTableInput](x: Self) {
+      
+      inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+      
+      inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+      
+      inline def setInputCompressionType(value: InputCompressionType): Self = StObject.set(x, "InputCompressionType", value.asInstanceOf[js.Any])
+      
+      inline def setInputCompressionTypeUndefined: Self = StObject.set(x, "InputCompressionType", js.undefined)
+      
+      inline def setInputFormat(value: InputFormat): Self = StObject.set(x, "InputFormat", value.asInstanceOf[js.Any])
+      
+      inline def setInputFormatOptions(value: InputFormatOptions): Self = StObject.set(x, "InputFormatOptions", value.asInstanceOf[js.Any])
+      
+      inline def setInputFormatOptionsUndefined: Self = StObject.set(x, "InputFormatOptions", js.undefined)
+      
+      inline def setS3BucketSource(value: S3BucketSource): Self = StObject.set(x, "S3BucketSource", value.asInstanceOf[js.Any])
+      
+      inline def setTableCreationParameters(value: TableCreationParameters): Self = StObject.set(x, "TableCreationParameters", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ImportTableOutput extends StObject {
+    
+    /**
+      *  Represents the properties of the table created for the import, and parameters of the import. The import parameters include import status, how many items were processed, and how many errors were encountered. 
+      */
+    var ImportTableDescription: typings.awsSdk.documentClientMod.DocumentClient.ImportTableDescription
+  }
+  object ImportTableOutput {
+    
+    inline def apply(ImportTableDescription: ImportTableDescription): ImportTableOutput = {
+      val __obj = js.Dynamic.literal(ImportTableDescription = ImportTableDescription.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImportTableOutput]
+    }
+    
+    extension [Self <: ImportTableOutput](x: Self) {
+      
+      inline def setImportTableDescription(value: ImportTableDescription): Self = StObject.set(x, "ImportTableDescription", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ImportedItemCount = scala.Double
+  
   type IndexName = java.lang.String
   
   /* Rewritten from type alias, can be one of: 
@@ -3781,6 +4691,44 @@ object DocumentClient {
     - java.lang.String
   */
   type IndexStatus = _IndexStatus | java.lang.String
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.GZIP
+    - typings.awsSdk.awsSdkStrings.ZSTD
+    - typings.awsSdk.awsSdkStrings.NONE
+    - java.lang.String
+  */
+  type InputCompressionType = _InputCompressionType | java.lang.String
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DYNAMODB_JSON
+    - typings.awsSdk.awsSdkStrings.ION
+    - typings.awsSdk.awsSdkStrings.CSV
+    - java.lang.String
+  */
+  type InputFormat = _InputFormat | java.lang.String
+  
+  trait InputFormatOptions extends StObject {
+    
+    /**
+      *  The options for imported source files in CSV format. The values are Delimiter and HeaderList. 
+      */
+    var Csv: js.UndefOr[CsvOptions] = js.undefined
+  }
+  object InputFormatOptions {
+    
+    inline def apply(): InputFormatOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InputFormatOptions]
+    }
+    
+    extension [Self <: InputFormatOptions](x: Self) {
+      
+      inline def setCsv(value: CsvOptions): Self = StObject.set(x, "Csv", value.asInstanceOf[js.Any])
+      
+      inline def setCsvUndefined: Self = StObject.set(x, "Csv", js.undefined)
+    }
+  }
   
   type Integer = scala.Double
   
@@ -3817,7 +4765,7 @@ object DocumentClient {
       
       inline def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
       
-      inline def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
+      inline def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value*))
     }
   }
   
@@ -3947,7 +4895,7 @@ object DocumentClient {
       
       inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
       
       inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
@@ -3959,7 +4907,7 @@ object DocumentClient {
       
       inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
       
-      inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value*))
       
       inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
@@ -3967,14 +4915,123 @@ object DocumentClient {
     }
   }
   
-  type LastUpdateDateTime = typings.std.Date
+  trait KinesisDataStreamDestination extends StObject {
+    
+    /**
+      * The current status of replication.
+      */
+    var DestinationStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.DestinationStatus] = js.undefined
+    
+    /**
+      * The human-readable string that corresponds to the replica status.
+      */
+    var DestinationStatusDescription: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.String] = js.undefined
+    
+    /**
+      * The ARN for a specific Kinesis data stream.
+      */
+    var StreamArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.StreamArn] = js.undefined
+  }
+  object KinesisDataStreamDestination {
+    
+    inline def apply(): KinesisDataStreamDestination = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KinesisDataStreamDestination]
+    }
+    
+    extension [Self <: KinesisDataStreamDestination](x: Self) {
+      
+      inline def setDestinationStatus(value: DestinationStatus): Self = StObject.set(x, "DestinationStatus", value.asInstanceOf[js.Any])
+      
+      inline def setDestinationStatusDescription(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "DestinationStatusDescription", value.asInstanceOf[js.Any])
+      
+      inline def setDestinationStatusDescriptionUndefined: Self = StObject.set(x, "DestinationStatusDescription", js.undefined)
+      
+      inline def setDestinationStatusUndefined: Self = StObject.set(x, "DestinationStatus", js.undefined)
+      
+      inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+      
+      inline def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
+    }
+  }
+  
+  type KinesisDataStreamDestinations = js.Array[KinesisDataStreamDestination]
+  
+  trait KinesisStreamingDestinationInput extends StObject {
+    
+    /**
+      * The ARN for a Kinesis data stream.
+      */
+    var StreamArn: typings.awsSdk.documentClientMod.DocumentClient.StreamArn
+    
+    /**
+      * The name of the DynamoDB table.
+      */
+    var TableName: typings.awsSdk.documentClientMod.DocumentClient.TableName
+  }
+  object KinesisStreamingDestinationInput {
+    
+    inline def apply(StreamArn: StreamArn, TableName: TableName): KinesisStreamingDestinationInput = {
+      val __obj = js.Dynamic.literal(StreamArn = StreamArn.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KinesisStreamingDestinationInput]
+    }
+    
+    extension [Self <: KinesisStreamingDestinationInput](x: Self) {
+      
+      inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait KinesisStreamingDestinationOutput extends StObject {
+    
+    /**
+      * The current status of the replication.
+      */
+    var DestinationStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.DestinationStatus] = js.undefined
+    
+    /**
+      * The ARN for the specific Kinesis data stream.
+      */
+    var StreamArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.StreamArn] = js.undefined
+    
+    /**
+      * The name of the table being modified.
+      */
+    var TableName: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableName] = js.undefined
+  }
+  object KinesisStreamingDestinationOutput {
+    
+    inline def apply(): KinesisStreamingDestinationOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KinesisStreamingDestinationOutput]
+    }
+    
+    extension [Self <: KinesisStreamingDestinationOutput](x: Self) {
+      
+      inline def setDestinationStatus(value: DestinationStatus): Self = StObject.set(x, "DestinationStatus", value.asInstanceOf[js.Any])
+      
+      inline def setDestinationStatusUndefined: Self = StObject.set(x, "DestinationStatus", js.undefined)
+      
+      inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+      
+      inline def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    }
+  }
+  
+  type LastUpdateDateTime = js.Date
   
   type ListAttributeValue = js.Array[AttributeValue]
   
   trait ListBackupsInput extends StObject {
     
     /**
-      * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you.    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
+      * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you. (The default setting if no other backup types are specified.)    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
       */
     var BackupType: js.UndefOr[BackupTypeFilter] = js.undefined
     
@@ -3996,12 +5053,12 @@ object DocumentClient {
     /**
       * Only backups created after this time are listed. TimeRangeLowerBound is inclusive.
       */
-    var TimeRangeLowerBound: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TimeRangeLowerBound] = js.undefined
+    var TimeRangeLowerBound: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Only backups created before this time are listed. TimeRangeUpperBound is exclusive. 
       */
-    var TimeRangeUpperBound: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TimeRangeUpperBound] = js.undefined
+    var TimeRangeUpperBound: js.UndefOr[js.Date] = js.undefined
   }
   object ListBackupsInput {
     
@@ -4028,11 +5085,11 @@ object DocumentClient {
       
       inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      inline def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeLowerBound(value: js.Date): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
       
       inline def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
       
-      inline def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeUpperBound(value: js.Date): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
       
       inline def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
     }
@@ -4063,7 +5120,7 @@ object DocumentClient {
       
       inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
       
-      inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+      inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value*))
       
       inline def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
       
@@ -4138,7 +5195,7 @@ object DocumentClient {
       
       inline def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
       
-      inline def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
+      inline def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value*))
       
       inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -4213,7 +5270,7 @@ object DocumentClient {
       
       inline def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
       
-      inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
+      inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value*))
       
       inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -4286,11 +5343,86 @@ object DocumentClient {
       
       inline def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
       
-      inline def setGlobalTablesVarargs(value: GlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
+      inline def setGlobalTablesVarargs(value: GlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value*))
       
       inline def setLastEvaluatedGlobalTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
       
       inline def setLastEvaluatedGlobalTableNameUndefined: Self = StObject.set(x, "LastEvaluatedGlobalTableName", js.undefined)
+    }
+  }
+  
+  trait ListImportsInput extends StObject {
+    
+    /**
+      *  An optional string that, if supplied, must be copied from the output of a previous call to ListImports. When provided in this manner, the API fetches the next page of results. 
+      */
+    var NextToken: js.UndefOr[ImportNextToken] = js.undefined
+    
+    /**
+      *  The number of ImportSummary objects returned in a single page. 
+      */
+    var PageSize: js.UndefOr[ListImportsMaxLimit] = js.undefined
+    
+    /**
+      *  The Amazon Resource Name (ARN) associated with the table that was imported to. 
+      */
+    var TableArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableArn] = js.undefined
+  }
+  object ListImportsInput {
+    
+    inline def apply(): ListImportsInput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListImportsInput]
+    }
+    
+    extension [Self <: ListImportsInput](x: Self) {
+      
+      inline def setNextToken(value: ImportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      
+      inline def setPageSize(value: ListImportsMaxLimit): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+      
+      inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+      
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+    }
+  }
+  
+  type ListImportsMaxLimit = scala.Double
+  
+  trait ListImportsOutput extends StObject {
+    
+    /**
+      *  A list of ImportSummary objects. 
+      */
+    var ImportSummaryList: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ImportSummaryList] = js.undefined
+    
+    /**
+      *  If this value is returned, there are additional results to be displayed. To retrieve them, call ListImports again, with NextToken set to this value. 
+      */
+    var NextToken: js.UndefOr[ImportNextToken] = js.undefined
+  }
+  object ListImportsOutput {
+    
+    inline def apply(): ListImportsOutput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListImportsOutput]
+    }
+    
+    extension [Self <: ListImportsOutput](x: Self) {
+      
+      inline def setImportSummaryList(value: ImportSummaryList): Self = StObject.set(x, "ImportSummaryList", value.asInstanceOf[js.Any])
+      
+      inline def setImportSummaryListUndefined: Self = StObject.set(x, "ImportSummaryList", js.undefined)
+      
+      inline def setImportSummaryListVarargs(value: ImportSummary*): Self = StObject.set(x, "ImportSummaryList", js.Array(value*))
+      
+      inline def setNextToken(value: ImportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -4356,7 +5488,7 @@ object DocumentClient {
       
       inline def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
       
-      inline def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
+      inline def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value*))
     }
   }
   
@@ -4418,7 +5550,7 @@ object DocumentClient {
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
   
@@ -4452,7 +5584,7 @@ object DocumentClient {
       
       inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     }
@@ -4519,7 +5651,7 @@ object DocumentClient {
       
       inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -4563,7 +5695,7 @@ object DocumentClient {
       
       inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -4613,26 +5745,67 @@ object DocumentClient {
       
       inline def setValues(value: js.Array[scala.Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: scala.Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: scala.Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
   type NumberSetAttributeValue = js.Array[NumberAttributeValue]
+  
+  trait ParameterizedStatement extends StObject {
+    
+    /**
+      *  The parameter values. 
+      */
+    var Parameters: js.UndefOr[PreparedStatementParameters] = js.undefined
+    
+    /**
+      *  A PartiQL statment that uses parameters. 
+      */
+    var Statement: PartiQLStatement
+  }
+  object ParameterizedStatement {
+    
+    inline def apply(Statement: PartiQLStatement): ParameterizedStatement = {
+      val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParameterizedStatement]
+    }
+    
+    extension [Self <: ParameterizedStatement](x: Self) {
+      
+      inline def setParameters(value: PreparedStatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+      
+      inline def setParametersVarargs(value: AttributeValue*): Self = StObject.set(x, "Parameters", js.Array(value*))
+      
+      inline def setStatement(value: PartiQLStatement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ParameterizedStatements = js.Array[ParameterizedStatement]
+  
+  type PartiQLBatchRequest = js.Array[BatchStatementRequest]
+  
+  type PartiQLBatchResponse = js.Array[BatchStatementResponse]
+  
+  type PartiQLNextToken = java.lang.String
+  
+  type PartiQLStatement = java.lang.String
   
   trait PointInTimeRecoveryDescription extends StObject {
     
     /**
       * Specifies the earliest point in time you can restore your table to. You can restore your table to any point in time during the last 35 days. 
       */
-    var EarliestRestorableDateTime: js.UndefOr[Date] = js.undefined
+    var EarliestRestorableDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       *  LatestRestorableDateTime is typically 5 minutes before the current time. 
       */
-    var LatestRestorableDateTime: js.UndefOr[Date] = js.undefined
+    var LatestRestorableDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
-      * The current state of point in time recovery:    ENABLING - Point in time recovery is being enabled.    ENABLED - Point in time recovery is enabled.    DISABLED - Point in time recovery is disabled.  
+      * The current state of point in time recovery:    ENABLED - Point in time recovery is enabled.    DISABLED - Point in time recovery is disabled.  
       */
     var PointInTimeRecoveryStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.PointInTimeRecoveryStatus] = js.undefined
   }
@@ -4645,11 +5818,11 @@ object DocumentClient {
     
     extension [Self <: PointInTimeRecoveryDescription](x: Self) {
       
-      inline def setEarliestRestorableDateTime(value: Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
+      inline def setEarliestRestorableDateTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
       
       inline def setEarliestRestorableDateTimeUndefined: Self = StObject.set(x, "EarliestRestorableDateTime", js.undefined)
       
-      inline def setLatestRestorableDateTime(value: Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
+      inline def setLatestRestorableDateTime(value: js.Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
       
       inline def setLatestRestorableDateTimeUndefined: Self = StObject.set(x, "LatestRestorableDateTime", js.undefined)
       
@@ -4690,10 +5863,14 @@ object DocumentClient {
   
   type PositiveLongObject = scala.Double
   
+  type PreparedStatementParameters = js.Array[AttributeValue]
+  
+  type ProcessedItemCount = scala.Double
+  
   trait Projection extends StObject {
     
     /**
-      * Represents the non-key attribute names which will be projected into the index. For local secondary indexes, the total count of NonKeyAttributes summed across all of the local secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.
+      * Represents the non-key attribute names which will be projected into the index. For local secondary indexes, the total count of NonKeyAttributes summed across all of the local secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.
       */
     var NonKeyAttributes: js.UndefOr[NonKeyAttributeNameList] = js.undefined
     
@@ -4715,7 +5892,7 @@ object DocumentClient {
       
       inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      inline def setNonKeyAttributesVarargs(value: NonKeyAttributeName*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: NonKeyAttributeName*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value*))
       
       inline def setProjectionType(value: ProjectionType): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
       
@@ -4765,12 +5942,12 @@ object DocumentClient {
     /**
       * The date and time of the last provisioned throughput decrease for this table.
       */
-    var LastDecreaseDateTime: js.UndefOr[Date] = js.undefined
+    var LastDecreaseDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The date and time of the last provisioned throughput increase for this table.
       */
-    var LastIncreaseDateTime: js.UndefOr[Date] = js.undefined
+    var LastIncreaseDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The number of provisioned throughput decreases for this table during this UTC calendar day. For current maximums on provisioned throughput decreases, see Service, Account, and Table Quotas in the Amazon DynamoDB Developer Guide.
@@ -4796,11 +5973,11 @@ object DocumentClient {
     
     extension [Self <: ProvisionedThroughputDescription](x: Self) {
       
-      inline def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: js.Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      inline def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: js.Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
       
@@ -4945,7 +6122,7 @@ object DocumentClient {
     var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnItemCollectionMetrics] = js.undefined
     
     /**
-      * Use ReturnValues if you want to get the item attributes as they appeared before they were updated with the PutItem request. For PutItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - If PutItem overwrote an attribute name-value pair, then the content of the old item is returned.    The ReturnValues parameter is used by several DynamoDB operations; however, PutItem does not recognize any values other than NONE or ALL_OLD. 
+      * Use ReturnValues if you want to get the item attributes as they appeared before they were updated with the PutItem request. For PutItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - If PutItem overwrote an attribute name-value pair, then the content of the old item is returned.   The values returned are strongly consistent. There is no additional cost associated with requesting a return value aside from the small network and processing overhead of receiving a larger response. No read capacity units are consumed.  The ReturnValues parameter is used by several DynamoDB operations; however, PutItem does not recognize any values other than NONE or ALL_OLD. 
       */
     var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
     
@@ -5138,7 +6315,7 @@ object DocumentClient {
     var ScanIndexForward: js.UndefOr[BooleanObject] = js.undefined
     
     /**
-      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in AttributesToGet. This return value is equivalent to specifying AttributesToGet without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation will read only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor AttributesToGet are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and AttributesToGet together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying AttributesToGet without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
+      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation will read only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
       */
     var Select: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.Select] = js.undefined
     
@@ -5160,7 +6337,7 @@ object DocumentClient {
       
       inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
       
       inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
@@ -5274,7 +6451,7 @@ object DocumentClient {
       
       inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
       
-      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value*))
       
       inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
       
@@ -5344,7 +6521,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -5395,7 +6572,7 @@ object DocumentClient {
       
       inline def setReplicaGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.undefined)
       
-      inline def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.Array(value*))
       
       inline def setReplicaProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
@@ -5413,7 +6590,7 @@ object DocumentClient {
     var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexDescriptionList] = js.undefined
     
     /**
-      * The AWS KMS customer master key (CMK) of the replica that will be used for AWS KMS encryption.
+      * The KMS key of the replica that will be used for KMS encryption.
       */
     var KMSMasterKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KMSMasterKeyId] = js.undefined
     
@@ -5430,10 +6607,10 @@ object DocumentClient {
     /**
       * The time at which the replica was first detected as inaccessible. To determine cause of inaccessibility check the ReplicaStatus property.
       */
-    var ReplicaInaccessibleDateTime: js.UndefOr[Date] = js.undefined
+    var ReplicaInaccessibleDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
-      * The current state of the replica:    CREATING - The replica is being created.    UPDATING - The replica is being updated.    DELETING - The replica is being deleted.    ACTIVE - The replica is ready for use.    REGION_DISABLED - The replica is inaccessible because the AWS Region has been disabled.  If the AWS Region remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.     INACCESSIBLE_ENCRYPTION_CREDENTIALS  - The AWS KMS key used to encrypt the table is inaccessible.  If the AWS KMS key remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.   
+      * The current state of the replica:    CREATING - The replica is being created.    UPDATING - The replica is being updated.    DELETING - The replica is being deleted.    ACTIVE - The replica is ready for use.    REGION_DISABLED - The replica is inaccessible because the Amazon Web Services Region has been disabled.  If the Amazon Web Services Region remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.     INACCESSIBLE_ENCRYPTION_CREDENTIALS  - The KMS key used to encrypt the table is inaccessible.  If the KMS key remains inaccessible for more than 20 hours, DynamoDB will remove this replica from the replication group. The replica will not be deleted and replication will stop from and to this region.   
       */
     var ReplicaStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReplicaStatus] = js.undefined
     
@@ -5446,6 +6623,8 @@ object DocumentClient {
       * Specifies the progress of a Create, Update, or Delete action on the replica as a percentage.
       */
     var ReplicaStatusPercentProgress: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReplicaStatusPercentProgress] = js.undefined
+    
+    var ReplicaTableClassSummary: js.UndefOr[TableClassSummary] = js.undefined
   }
   object ReplicaDescription {
     
@@ -5460,7 +6639,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
@@ -5474,7 +6653,7 @@ object DocumentClient {
       
       inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
       
-      inline def setReplicaInaccessibleDateTime(value: Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
+      inline def setReplicaInaccessibleDateTime(value: js.Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
       
       inline def setReplicaInaccessibleDateTimeUndefined: Self = StObject.set(x, "ReplicaInaccessibleDateTime", js.undefined)
       
@@ -5489,6 +6668,10 @@ object DocumentClient {
       inline def setReplicaStatusPercentProgressUndefined: Self = StObject.set(x, "ReplicaStatusPercentProgress", js.undefined)
       
       inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+      
+      inline def setReplicaTableClassSummary(value: TableClassSummary): Self = StObject.set(x, "ReplicaTableClassSummary", value.asInstanceOf[js.Any])
+      
+      inline def setReplicaTableClassSummaryUndefined: Self = StObject.set(x, "ReplicaTableClassSummary", js.undefined)
     }
   }
   
@@ -5783,6 +6966,8 @@ object DocumentClient {
       * The current state of the Region:    CREATING - The Region is being created.    UPDATING - The Region is being updated.    DELETING - The Region is being deleted.    ACTIVE - The Region is ready for use.  
       */
     var ReplicaStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReplicaStatus] = js.undefined
+    
+    var ReplicaTableClassSummary: js.UndefOr[TableClassSummary] = js.undefined
   }
   object ReplicaSettingsDescription {
     
@@ -5803,7 +6988,7 @@ object DocumentClient {
       
       inline def setReplicaGlobalSecondaryIndexSettingsUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.undefined)
       
-      inline def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.Array(value*))
       
       inline def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
@@ -5824,6 +7009,10 @@ object DocumentClient {
       inline def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
       
       inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+      
+      inline def setReplicaTableClassSummary(value: TableClassSummary): Self = StObject.set(x, "ReplicaTableClassSummary", value.asInstanceOf[js.Any])
+      
+      inline def setReplicaTableClassSummaryUndefined: Self = StObject.set(x, "ReplicaTableClassSummary", js.undefined)
     }
   }
   
@@ -5850,6 +7039,11 @@ object DocumentClient {
       * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. For more information, see Specifying Read and Write Requirements in the Amazon DynamoDB Developer Guide. 
       */
     var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+    
+    /**
+      * Replica-specific table class. If not specified, uses the source table's table class.
+      */
+    var ReplicaTableClass: js.UndefOr[TableClass] = js.undefined
   }
   object ReplicaSettingsUpdate {
     
@@ -5866,7 +7060,7 @@ object DocumentClient {
       
       inline def setReplicaGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.undefined)
       
-      inline def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value*))
       
       inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
@@ -5875,6 +7069,10 @@ object DocumentClient {
       inline def setReplicaProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
       inline def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
+      
+      inline def setReplicaTableClass(value: TableClass): Self = StObject.set(x, "ReplicaTableClass", value.asInstanceOf[js.Any])
+      
+      inline def setReplicaTableClassUndefined: Self = StObject.set(x, "ReplicaTableClass", js.undefined)
     }
   }
   
@@ -5980,7 +7178,7 @@ object DocumentClient {
     /**
       * Point in time or source backup time.
       */
-    var RestoreDateTime: Date
+    var RestoreDateTime: js.Date
     
     /**
       * Indicates if a restore is in progress or not.
@@ -5999,14 +7197,14 @@ object DocumentClient {
   }
   object RestoreSummary {
     
-    inline def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
+    inline def apply(RestoreDateTime: js.Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
       val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreSummary]
     }
     
     extension [Self <: RestoreSummary](x: Self) {
       
-      inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
       inline def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
       
@@ -6076,13 +7274,13 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
       
-      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value*))
       
       inline def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
       
-      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value*))
       
       inline def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
@@ -6143,7 +7341,7 @@ object DocumentClient {
     /**
       * Time in the past to restore the table to.
       */
-    var RestoreDateTime: js.UndefOr[Date] = js.undefined
+    var RestoreDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The new server-side encryption settings for the restored table.
@@ -6187,19 +7385,19 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
       
-      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value*))
       
       inline def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
       
-      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value*))
       
       inline def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
       inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
       inline def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
       
@@ -6281,6 +7479,44 @@ object DocumentClient {
   
   type S3BucketOwner = java.lang.String
   
+  trait S3BucketSource extends StObject {
+    
+    /**
+      *  The S3 bucket that is being imported from. 
+      */
+    var S3Bucket: typings.awsSdk.documentClientMod.DocumentClient.S3Bucket
+    
+    /**
+      *  The account number of the S3 bucket that is being imported from. If the bucket is owned by the requester this is optional. 
+      */
+    var S3BucketOwner: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.S3BucketOwner] = js.undefined
+    
+    /**
+      *  The key prefix shared by all S3 Objects that are being imported. 
+      */
+    var S3KeyPrefix: js.UndefOr[S3Prefix] = js.undefined
+  }
+  object S3BucketSource {
+    
+    inline def apply(S3Bucket: S3Bucket): S3BucketSource = {
+      val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
+      __obj.asInstanceOf[S3BucketSource]
+    }
+    
+    extension [Self <: S3BucketSource](x: Self) {
+      
+      inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+      
+      inline def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
+      
+      inline def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
+      
+      inline def setS3KeyPrefix(value: S3Prefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
+    }
+  }
+  
   type S3Prefix = java.lang.String
   
   /* Rewritten from type alias, can be one of: 
@@ -6295,17 +7531,17 @@ object DocumentClient {
   trait SSEDescription extends StObject {
     
     /**
-      * Indicates the time, in UNIX epoch date format, when DynamoDB detected that the table's AWS KMS key was inaccessible. This attribute will automatically be cleared when DynamoDB detects that the table's AWS KMS key is accessible again. DynamoDB will initiate the table archival process when table's AWS KMS key remains inaccessible for more than seven days from this date.
+      * Indicates the time, in UNIX epoch date format, when DynamoDB detected that the table's KMS key was inaccessible. This attribute will automatically be cleared when DynamoDB detects that the table's KMS key is accessible again. DynamoDB will initiate the table archival process when table's KMS key remains inaccessible for more than seven days from this date.
       */
-    var InaccessibleEncryptionDateTime: js.UndefOr[Date] = js.undefined
+    var InaccessibleEncryptionDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
-      * The AWS KMS customer master key (CMK) ARN used for the AWS KMS encryption.
+      * The KMS key ARN used for the KMS encryption.
       */
     var KMSMasterKeyArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KMSMasterKeyArn] = js.undefined
     
     /**
-      * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses AWS Key Management Service. The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).  
+      * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses Key Management Service. The key is stored in your account and is managed by KMS (KMS charges apply).  
       */
     var SSEType: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.SSEType] = js.undefined
     
@@ -6323,7 +7559,7 @@ object DocumentClient {
     
     extension [Self <: SSEDescription](x: Self) {
       
-      inline def setInaccessibleEncryptionDateTime(value: Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+      inline def setInaccessibleEncryptionDateTime(value: js.Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
       
       inline def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
       
@@ -6346,17 +7582,17 @@ object DocumentClient {
   trait SSESpecification extends StObject {
     
     /**
-      * Indicates whether server-side encryption is done using an AWS managed CMK or an AWS owned CMK. If enabled (true), server-side encryption type is set to KMS and an AWS managed CMK is used (AWS KMS charges apply). If disabled (false) or not specified, server-side encryption is set to AWS owned CMK.
+      * Indicates whether server-side encryption is done using an Amazon Web Services managed key or an Amazon Web Services owned key. If enabled (true), server-side encryption type is set to KMS and an Amazon Web Services managed key is used (KMS charges apply). If disabled (false) or not specified, server-side encryption is set to Amazon Web Services owned key.
       */
     var Enabled: js.UndefOr[SSEEnabled] = js.undefined
     
     /**
-      * The AWS KMS customer master key (CMK) that should be used for the AWS KMS encryption. To specify a CMK, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB customer master key alias/aws/dynamodb.
+      * The KMS key that should be used for the KMS encryption. To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB key alias/aws/dynamodb.
       */
     var KMSMasterKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KMSMasterKeyId] = js.undefined
     
     /**
-      * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses AWS Key Management Service. The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).  
+      * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses Key Management Service. The key is stored in your account and is managed by KMS (KMS charges apply).  
       */
     var SSEType: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.SSEType] = js.undefined
   }
@@ -6473,7 +7709,7 @@ object DocumentClient {
     var Segment: js.UndefOr[ScanSegment] = js.undefined
     
     /**
-      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in AttributesToGet. This return value is equivalent to specifying AttributesToGet without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation reads only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor AttributesToGet are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and AttributesToGet together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying AttributesToGet without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
+      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation reads only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
       */
     var Select: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.Select] = js.undefined
     
@@ -6500,7 +7736,7 @@ object DocumentClient {
       
       inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
       
       inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
@@ -6610,7 +7846,7 @@ object DocumentClient {
       
       inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
       
-      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value*))
       
       inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
       
@@ -6667,7 +7903,7 @@ object DocumentClient {
     /**
       * Time when the source table was created. 
       */
-    var TableCreationDateTime: typings.awsSdk.documentClientMod.DocumentClient.TableCreationDateTime
+    var TableCreationDateTime: js.Date
     
     /**
       * Unique identifier for the table for which the backup was created. 
@@ -6689,7 +7925,7 @@ object DocumentClient {
     inline def apply(
       KeySchema: KeySchema,
       ProvisionedThroughput: ProvisionedThroughput,
-      TableCreationDateTime: TableCreationDateTime,
+      TableCreationDateTime: js.Date,
       TableId: TableId,
       TableName: TableName
     ): SourceTableDetails = {
@@ -6709,7 +7945,7 @@ object DocumentClient {
       
       inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
@@ -6717,7 +7953,7 @@ object DocumentClient {
       
       inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      inline def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: js.Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
@@ -6769,13 +8005,13 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
       
       inline def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
       
@@ -6859,7 +8095,7 @@ object DocumentClient {
       
       inline def setValues(value: js.Array[java.lang.String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: java.lang.String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: java.lang.String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -6897,7 +8133,7 @@ object DocumentClient {
       
       inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
       
-      inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value*))
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
@@ -6909,7 +8145,115 @@ object DocumentClient {
     }
   }
   
-  type TableCreationDateTime = typings.std.Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.STANDARD
+    - typings.awsSdk.awsSdkStrings.STANDARD_INFREQUENT_ACCESS
+    - java.lang.String
+  */
+  type TableClass = _TableClass | java.lang.String
+  
+  trait TableClassSummary extends StObject {
+    
+    /**
+      * The date and time at which the table class was last updated.
+      */
+    var LastUpdateDateTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      * The table class of the specified table. Valid values are STANDARD and STANDARD_INFREQUENT_ACCESS.
+      */
+    var TableClass: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableClass] = js.undefined
+  }
+  object TableClassSummary {
+    
+    inline def apply(): TableClassSummary = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableClassSummary]
+    }
+    
+    extension [Self <: TableClassSummary](x: Self) {
+      
+      inline def setLastUpdateDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
+      
+      inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
+      
+      inline def setTableClass(value: TableClass): Self = StObject.set(x, "TableClass", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassUndefined: Self = StObject.set(x, "TableClass", js.undefined)
+    }
+  }
+  
+  type TableCreationDateTime = js.Date
+  
+  trait TableCreationParameters extends StObject {
+    
+    /**
+      *  The attributes of the table created as part of the import operation. 
+      */
+    var AttributeDefinitions: typings.awsSdk.documentClientMod.DocumentClient.AttributeDefinitions
+    
+    /**
+      *  The billing mode for provisioning the table created as part of the import operation. 
+      */
+    var BillingMode: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.BillingMode] = js.undefined
+    
+    /**
+      *  The Global Secondary Indexes (GSI) of the table to be created as part of the import operation. 
+      */
+    var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
+    
+    /**
+      *  The primary key and option sort key of the table created as part of the import operation. 
+      */
+    var KeySchema: typings.awsSdk.documentClientMod.DocumentClient.KeySchema
+    
+    var ProvisionedThroughput: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ProvisionedThroughput] = js.undefined
+    
+    var SSESpecification: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.SSESpecification] = js.undefined
+    
+    /**
+      *  The name of the table created as part of the import operation. 
+      */
+    var TableName: typings.awsSdk.documentClientMod.DocumentClient.TableName
+  }
+  object TableCreationParameters {
+    
+    inline def apply(AttributeDefinitions: AttributeDefinitions, KeySchema: KeySchema, TableName: TableName): TableCreationParameters = {
+      val __obj = js.Dynamic.literal(AttributeDefinitions = AttributeDefinitions.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TableCreationParameters]
+    }
+    
+    extension [Self <: TableCreationParameters](x: Self) {
+      
+      inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
+      
+      inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+      
+      inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      
+      inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
+      
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
+      
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      
+      inline def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
+      
+      inline def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
+      
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait TableDescription extends StObject {
     
@@ -6931,15 +8275,15 @@ object DocumentClient {
     /**
       * The date and time when the table was created, in UNIX epoch time format.
       */
-    var CreationDateTime: js.UndefOr[Date] = js.undefined
+    var CreationDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
-      * The global secondary indexes, if any, on the table. Each index is scoped to a given partition key value. Each element is composed of:    Backfilling - If true, then the index is currently in the backfilling phase. Backfilling occurs only when a new global secondary index is added to the table. It is the process by which DynamoDB populates the new index with data from the table. (This attribute does not appear for indexes that were created during a CreateTable operation.)   You can delete an index that is being created during the Backfilling phase when IndexStatus is set to CREATING and Backfilling is true. You can't delete the index that is being created when IndexStatus is set to CREATING and Backfilling is false. (This attribute does not appear for indexes that were created during a CreateTable operation.)    IndexName - The name of the global secondary index.    IndexSizeBytes - The total size of the global secondary index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     IndexStatus - The current status of the global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.      ItemCount - The number of items in the global secondary index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - In addition to the attributes described in KEYS_ONLY, the secondary index will include other non-key attributes that you specify.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units, along with data about increases and decreases.    If the table is in the DELETING state, no information about indexes will be returned.
+      * The global secondary indexes, if any, on the table. Each index is scoped to a given partition key value. Each element is composed of:    Backfilling - If true, then the index is currently in the backfilling phase. Backfilling occurs only when a new global secondary index is added to the table. It is the process by which DynamoDB populates the new index with data from the table. (This attribute does not appear for indexes that were created during a CreateTable operation.)   You can delete an index that is being created during the Backfilling phase when IndexStatus is set to CREATING and Backfilling is true. You can't delete the index that is being created when IndexStatus is set to CREATING and Backfilling is false. (This attribute does not appear for indexes that were created during a CreateTable operation.)    IndexName - The name of the global secondary index.    IndexSizeBytes - The total size of the global secondary index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     IndexStatus - The current status of the global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.      ItemCount - The number of items in the global secondary index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - In addition to the attributes described in KEYS_ONLY, the secondary index will include other non-key attributes that you specify.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units, along with data about increases and decreases.    If the table is in the DELETING state, no information about indexes will be returned.
       */
     var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexDescriptionList] = js.undefined
     
     /**
-      * Represents the version of global tables in use, if the table is replicated across AWS Regions.
+      * Represents the version of global tables in use, if the table is replicated across Amazon Web Services Regions.
       */
     var GlobalTableVersion: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.String] = js.undefined
     
@@ -6959,12 +8303,12 @@ object DocumentClient {
     var LatestStreamArn: js.UndefOr[StreamArn] = js.undefined
     
     /**
-      * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   AWS customer ID   Table name    StreamLabel   
+      * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   Amazon Web Services customer ID   Table name    StreamLabel   
       */
     var LatestStreamLabel: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.String] = js.undefined
     
     /**
-      * Represents one or more local secondary indexes on the table. Each index is scoped to a given partition key value. Tables with one or more local secondary indexes are subject to an item collection size limit, where the amount of data within a given item collection cannot exceed 10 GB. Each element is composed of:    IndexName - The name of the local secondary index.    KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes is in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      IndexSizeBytes - Represents the total size of the index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.    ItemCount - Represents the number of items in the index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.   If the table is in the DELETING state, no information about indexes will be returned.
+      * Represents one or more local secondary indexes on the table. Each index is scoped to a given partition key value. Tables with one or more local secondary indexes are subject to an item collection size limit, where the amount of data within a given item collection cannot exceed 10 GB. Each element is composed of:    IndexName - The name of the local secondary index.    KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes is in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      IndexSizeBytes - Represents the total size of the index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.    ItemCount - Represents the number of items in the index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.   If the table is in the DELETING state, no information about indexes will be returned.
       */
     var LocalSecondaryIndexes: js.UndefOr[LocalSecondaryIndexDescriptionList] = js.undefined
     
@@ -6999,6 +8343,11 @@ object DocumentClient {
     var TableArn: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.String] = js.undefined
     
     /**
+      * Contains details of the table class.
+      */
+    var TableClassSummary: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableClassSummary] = js.undefined
+    
+    /**
       * Unique identifier for the table for which the backup was created. 
       */
     var TableId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableId] = js.undefined
@@ -7014,7 +8363,7 @@ object DocumentClient {
     var TableSizeBytes: js.UndefOr[Long] = js.undefined
     
     /**
-      * The current state of the table:    CREATING - The table is being created.    UPDATING - The table is being updated.    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The AWS KMS key used to encrypt the table in inaccessible. Table operations may fail due to failure to use the AWS KMS key. DynamoDB will initiate the table archival process when a table's AWS KMS key remains inaccessible for more than seven days.     ARCHIVING - The table is being archived. Operations are not allowed until archival is complete.     ARCHIVED - The table has been archived. See the ArchivalReason for more information.   
+      * The current state of the table:    CREATING - The table is being created.    UPDATING - The table is being updated.    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The KMS key used to encrypt the table in inaccessible. Table operations may fail due to failure to use the KMS key. DynamoDB will initiate the table archival process when a table's KMS key remains inaccessible for more than seven days.     ARCHIVING - The table is being archived. Operations are not allowed until archival is complete.     ARCHIVED - The table has been archived. See the ArchivalReason for more information.   
       */
     var TableStatus: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableStatus] = js.undefined
   }
@@ -7035,13 +8384,13 @@ object DocumentClient {
       
       inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
       
-      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
       
       inline def setBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "BillingModeSummary", value.asInstanceOf[js.Any])
       
       inline def setBillingModeSummaryUndefined: Self = StObject.set(x, "BillingModeSummary", js.undefined)
       
-      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
@@ -7049,7 +8398,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setGlobalTableVersion(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "GlobalTableVersion", value.asInstanceOf[js.Any])
       
@@ -7063,7 +8412,7 @@ object DocumentClient {
       
       inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setLatestStreamArn(value: StreamArn): Self = StObject.set(x, "LatestStreamArn", value.asInstanceOf[js.Any])
       
@@ -7077,7 +8426,7 @@ object DocumentClient {
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexDescription*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexDescription*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
       
       inline def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
@@ -7087,7 +8436,7 @@ object DocumentClient {
       
       inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
       
-      inline def setReplicasVarargs(value: ReplicaDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: ReplicaDescription*): Self = StObject.set(x, "Replicas", js.Array(value*))
       
       inline def setRestoreSummary(value: RestoreSummary): Self = StObject.set(x, "RestoreSummary", value.asInstanceOf[js.Any])
       
@@ -7104,6 +8453,10 @@ object DocumentClient {
       inline def setTableArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
       inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      
+      inline def setTableClassSummary(value: TableClassSummary): Self = StObject.set(x, "TableClassSummary", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassSummaryUndefined: Self = StObject.set(x, "TableClassSummary", js.undefined)
       
       inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
@@ -7144,7 +8497,7 @@ object DocumentClient {
   trait Tag extends StObject {
     
     /**
-      * The key of the tag. Tag keys are case sensitive. Each DynamoDB table can only have up to one tag with the same key. If you try to add an existing tag (same key), the existing tag value will be updated to the new value. 
+      * The key of the tag. Tag keys are case sensitive. Each DynamoDB table can only have up to one tag with the same key. If you try to add an existing tag (same key), the existing tag value will be updated to the new value.
       */
     var Key: TagKeyString
     
@@ -7199,15 +8552,15 @@ object DocumentClient {
       
       inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
   
   type TagValueString = java.lang.String
   
-  type TimeRangeLowerBound = typings.std.Date
+  type TimeRangeLowerBound = js.Date
   
-  type TimeRangeUpperBound = typings.std.Date
+  type TimeRangeUpperBound = js.Date
   
   type TimeToLiveAttributeName = java.lang.String
   
@@ -7310,7 +8663,7 @@ object DocumentClient {
     var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnConsumedCapacity] = js.undefined
     
     /**
-      * An ordered array of up to 25 TransactGetItem objects, each of which contains a Get structure.
+      * An ordered array of up to 100 TransactGetItem objects, each of which contains a Get structure.
       */
     var TransactItems: TransactGetItemList
   }
@@ -7329,7 +8682,7 @@ object DocumentClient {
       
       inline def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
       
-      inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+      inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value*))
     }
   }
   
@@ -7341,7 +8694,7 @@ object DocumentClient {
     var ConsumedCapacity: js.UndefOr[ConsumedCapacityMultiple] = js.undefined
     
     /**
-      * An ordered array of up to 25 ItemResponse objects, each of which corresponds to the TransactGetItem object in the same position in the TransactItems array. Each ItemResponse object contains a Map of the name-value pairs that are the projected attributes of the requested item. If a requested item could not be retrieved, the corresponding ItemResponse object is Null, or if the requested item has no projected attributes, the corresponding ItemResponse object is an empty Map. 
+      * An ordered array of up to 100 ItemResponse objects, each of which corresponds to the TransactGetItem object in the same position in the TransactItems array. Each ItemResponse object contains a Map of the name-value pairs that are the projected attributes of the requested item. If a requested item could not be retrieved, the corresponding ItemResponse object is Null, or if the requested item has no projected attributes, the corresponding ItemResponse object is an empty Map. 
       */
     var Responses: js.UndefOr[ItemResponseList] = js.undefined
   }
@@ -7358,13 +8711,13 @@ object DocumentClient {
       
       inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
       
       inline def setResponses(value: ItemResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       
       inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
       
-      inline def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value*))
     }
   }
   
@@ -7434,7 +8787,7 @@ object DocumentClient {
     var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.ReturnItemCollectionMetrics] = js.undefined
     
     /**
-      * An ordered array of up to 25 TransactWriteItem objects, each of which contains a ConditionCheck, Put, Update, or Delete object. These can operate on items in different tables, but the tables must reside in the same AWS account and Region, and no two of them can operate on the same item. 
+      * An ordered array of up to 100 TransactWriteItem objects, each of which contains a ConditionCheck, Put, Update, or Delete object. These can operate on items in different tables, but the tables must reside in the same Amazon Web Services account and Region, and no two of them can operate on the same item. 
       */
     var TransactItems: TransactWriteItemList
   }
@@ -7461,7 +8814,7 @@ object DocumentClient {
       
       inline def setTransactItems(value: TransactWriteItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
       
-      inline def setTransactItemsVarargs(value: TransactWriteItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+      inline def setTransactItemsVarargs(value: TransactWriteItem*): Self = StObject.set(x, "TransactItems", js.Array(value*))
     }
   }
   
@@ -7490,7 +8843,7 @@ object DocumentClient {
       
       inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
       
       inline def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
@@ -7523,7 +8876,7 @@ object DocumentClient {
       
       inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
       
-      inline def setTagKeysVarargs(value: TagKeyString*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+      inline def setTagKeysVarargs(value: TagKeyString*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     }
   }
   
@@ -7778,7 +9131,7 @@ object DocumentClient {
       
       inline def setReplicaUpdates(value: ReplicaUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
       
-      inline def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value*))
     }
   }
   
@@ -7853,7 +9206,7 @@ object DocumentClient {
       
       inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.undefined)
       
-      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value*))
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -7869,7 +9222,7 @@ object DocumentClient {
       
       inline def setReplicaSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaSettingsUpdate", js.undefined)
       
-      inline def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value :_*))
+      inline def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value*))
     }
   }
   
@@ -7902,7 +9255,7 @@ object DocumentClient {
       
       inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
       
-      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value*))
     }
   }
   
@@ -8068,7 +9421,7 @@ object DocumentClient {
     var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexList] = js.undefined
     
     /**
-      * The AWS KMS customer master key (CMK) of the replica that should be used for AWS KMS encryption. To specify a CMK, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS master key alias/aws/dynamodb.
+      * The KMS key of the replica that should be used for KMS encryption. To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS key alias/aws/dynamodb.
       */
     var KMSMasterKeyId: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.KMSMasterKeyId] = js.undefined
     
@@ -8081,6 +9434,11 @@ object DocumentClient {
       * The Region where the replica exists.
       */
     var RegionName: typings.awsSdk.documentClientMod.DocumentClient.RegionName
+    
+    /**
+      * Replica-specific table class. If not specified, uses the source table's table class.
+      */
+    var TableClassOverride: js.UndefOr[TableClass] = js.undefined
   }
   object UpdateReplicationGroupMemberAction {
     
@@ -8095,7 +9453,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
@@ -8106,6 +9464,10 @@ object DocumentClient {
       inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassOverride(value: TableClass): Self = StObject.set(x, "TableClassOverride", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassOverrideUndefined: Self = StObject.set(x, "TableClassOverride", js.undefined)
     }
   }
   
@@ -8147,6 +9509,11 @@ object DocumentClient {
     var StreamSpecification: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.StreamSpecification] = js.undefined
     
     /**
+      * The table class of the table to be updated. Valid values are STANDARD and STANDARD_INFREQUENT_ACCESS.
+      */
+    var TableClass: js.UndefOr[typings.awsSdk.documentClientMod.DocumentClient.TableClass] = js.undefined
+    
+    /**
       * The name of the table to be updated.
       */
     var TableName: typings.awsSdk.documentClientMod.DocumentClient.TableName
@@ -8164,7 +9531,7 @@ object DocumentClient {
       
       inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
       
-      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
       
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
@@ -8174,7 +9541,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
       
-      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value*))
       
       inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
@@ -8184,7 +9551,7 @@ object DocumentClient {
       
       inline def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
       
-      inline def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value*))
       
       inline def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
       
@@ -8193,6 +9560,10 @@ object DocumentClient {
       inline def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
       
       inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
+      
+      inline def setTableClass(value: TableClass): Self = StObject.set(x, "TableClass", value.asInstanceOf[js.Any])
+      
+      inline def setTableClassUndefined: Self = StObject.set(x, "TableClass", js.undefined)
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -8252,7 +9623,7 @@ object DocumentClient {
       
       inline def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
       
-      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value*))
       
       inline def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
@@ -8262,7 +9633,7 @@ object DocumentClient {
       
       inline def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
       
-      inline def setReplicaUpdatesVarargs(value: ReplicaAutoScalingUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicaAutoScalingUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value*))
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -8380,6 +9751,8 @@ object DocumentClient {
   
   trait _BackupTypeFilter extends StObject
   
+  trait _BatchStatementErrorCodeEnum extends StObject
+  
   trait _BillingMode extends StObject
   
   trait _ComparisonOperator extends StObject
@@ -8392,13 +9765,21 @@ object DocumentClient {
   
   trait _ContributorInsightsStatus extends StObject
   
+  trait _DestinationStatus extends StObject
+  
   trait _ExportFormat extends StObject
   
   trait _ExportStatus extends StObject
   
   trait _GlobalTableStatus extends StObject
   
+  trait _ImportStatus extends StObject
+  
   trait _IndexStatus extends StObject
+  
+  trait _InputCompressionType extends StObject
+  
+  trait _InputFormat extends StObject
   
   trait _KeyType extends StObject
   
@@ -8428,6 +9809,8 @@ object DocumentClient {
   
   trait _StreamViewType extends StObject
   
+  trait _TableClass extends StObject
+  
   trait _TableStatus extends StObject
   
   trait _TimeToLiveStatus extends StObject
@@ -8435,21 +9818,21 @@ object DocumentClient {
   trait _binaryType extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.node.Buffer
+    - typings.node.bufferMod.global.Buffer
     - typings.awsSdk.documentClientMod.File
     - typings.awsSdk.documentClientMod.Blob
-    - typings.std.ArrayBuffer
-    - typings.std.DataView
-    - typings.std.Int8Array
-    - typings.std.Uint8Array
-    - typings.std.Uint8ClampedArray
-    - typings.std.Int16Array
-    - typings.std.Uint16Array
-    - typings.std.Int32Array
-    - typings.std.Uint32Array
-    - typings.std.Float32Array
-    - typings.std.Float64Array
+    - js.typedarray.ArrayBuffer
+    - js.typedarray.DataView
+    - js.typedarray.Int8Array
+    - js.typedarray.Uint8Array
+    - js.typedarray.Uint8ClampedArray
+    - js.typedarray.Int16Array
+    - js.typedarray.Uint16Array
+    - js.typedarray.Int32Array
+    - js.typedarray.Uint32Array
+    - js.typedarray.Float32Array
+    - js.typedarray.Float64Array
     - typings.node.streamMod.Stream
   */
-  type binaryType = _binaryType | Buffer | ArrayBuffer | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | Stream
+  type binaryType = _binaryType | Buffer | js.typedarray.ArrayBuffer | js.typedarray.DataView | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array | Stream
 }

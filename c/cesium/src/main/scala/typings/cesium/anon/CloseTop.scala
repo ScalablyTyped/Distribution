@@ -1,104 +1,91 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.MaterialProperty
-import typings.cesium.mod.Property
+import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CloseTop extends StObject {
   
-  var closeBottom: js.UndefOr[Property] = js.undefined
+  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.undefined
   
-  var closeTop: js.UndefOr[Property] = js.undefined
+  var closeBottom: js.UndefOr[Boolean] = js.undefined
   
-  var coordinates: js.UndefOr[Property] = js.undefined
+  var closeTop: js.UndefOr[Boolean] = js.undefined
   
-  var extrudedHeight: js.UndefOr[Property] = js.undefined
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var fill: js.UndefOr[Property] = js.undefined
+  var extrudedHeight: js.UndefOr[Double] = js.undefined
   
-  var granularity: js.UndefOr[Property] = js.undefined
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Property] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty] = js.undefined
+  var perPositionHeight: js.UndefOr[Boolean] = js.undefined
   
-  var outline: js.UndefOr[Property] = js.undefined
+  var positions: js.Array[Cartesian3]
   
-  var outlineColor: js.UndefOr[Property] = js.undefined
+  var stRotation: js.UndefOr[Double] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property] = js.undefined
+  var textureCoordinates: js.UndefOr[typings.cesium.mod.PolygonHierarchy] = js.undefined
   
-  var rotation: js.UndefOr[Property] = js.undefined
-  
-  var show: js.UndefOr[Property] = js.undefined
-  
-  var stRotation: js.UndefOr[Property] = js.undefined
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object CloseTop {
   
-  inline def apply(): CloseTop = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(positions: js.Array[Cartesian3]): CloseTop = {
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseTop]
   }
   
   extension [Self <: CloseTop](x: Self) {
     
-    inline def setCloseBottom(value: Property): Self = StObject.set(x, "closeBottom", value.asInstanceOf[js.Any])
+    inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
+    
+    inline def setCloseBottom(value: Boolean): Self = StObject.set(x, "closeBottom", value.asInstanceOf[js.Any])
     
     inline def setCloseBottomUndefined: Self = StObject.set(x, "closeBottom", js.undefined)
     
-    inline def setCloseTop(value: Property): Self = StObject.set(x, "closeTop", value.asInstanceOf[js.Any])
+    inline def setCloseTop(value: Boolean): Self = StObject.set(x, "closeTop", value.asInstanceOf[js.Any])
     
     inline def setCloseTopUndefined: Self = StObject.set(x, "closeTop", js.undefined)
     
-    inline def setCoordinates(value: Property): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    inline def setExtrudedHeight(value: Property): Self = StObject.set(x, "extrudedHeight", value.asInstanceOf[js.Any])
+    inline def setExtrudedHeight(value: Double): Self = StObject.set(x, "extrudedHeight", value.asInstanceOf[js.Any])
     
     inline def setExtrudedHeightUndefined: Self = StObject.set(x, "extrudedHeight", js.undefined)
     
-    inline def setFill(value: Property): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-    
-    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-    
-    inline def setGranularity(value: Property): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
-    inline def setHeight(value: Property): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setPerPositionHeight(value: Boolean): Self = StObject.set(x, "perPositionHeight", value.asInstanceOf[js.Any])
     
-    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setPerPositionHeightUndefined: Self = StObject.set(x, "perPositionHeight", js.undefined)
     
-    inline def setOutline(value: Property): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setOutlineColor(value: Property): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value*))
     
-    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
-    
-    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
-    
-    inline def setOutlineWidth(value: Property): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
-    
-    inline def setRotation(value: Property): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
-    
-    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
-    
-    inline def setShow(value: Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-    
-    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
-    
-    inline def setStRotation(value: Property): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
+    inline def setStRotation(value: Double): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
     
     inline def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
+    
+    inline def setTextureCoordinates(value: typings.cesium.mod.PolygonHierarchy): Self = StObject.set(x, "textureCoordinates", value.asInstanceOf[js.Any])
+    
+    inline def setTextureCoordinatesUndefined: Self = StObject.set(x, "textureCoordinates", js.undefined)
+    
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

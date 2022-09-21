@@ -44,7 +44,7 @@ object systemSystemMod {
   
   @JSImport("openfin/_v2/api/system/system", JSImport.Default)
   @js.native
-  class default protected () extends System {
+  open class default protected () extends System {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
@@ -125,7 +125,7 @@ object systemSystemMod {
       * @return {Promise.<any>}
       * @ignore
       */
-    def executeOnRemote(requestingIdentity: Identity, data: js.Any): js.Promise[js.Any] = js.native
+    def executeOnRemote(requestingIdentity: Identity, data: Any): js.Promise[Any] = js.native
     
     /**
       * Exits the Runtime.
@@ -524,7 +524,7 @@ object systemSystemMod {
       */
     def runRvmHealthCheck(): js.Promise[js.Array[String]] = js.native
     
-    /* private */ var sendExternalProcessRequest: js.Any = js.native
+    /* private */ var sendExternalProcessRequest: Any = js.native
     
     /**
       * Set the minimum log level above which logs will be written to the OpenFin log

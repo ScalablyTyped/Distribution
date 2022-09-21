@@ -1,7 +1,7 @@
 
 # Scala.js typings for consumable-stream
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 A readable async stream which can be iterated over using a for-await-of loop.
@@ -10,10 +10,10 @@ A readable async stream which can be iterated over using a for-await-of loop.
 | ------------------ | :-------------: |
 | Full name          | consumable-stream |
 | Keywords           | async, generator, stream, data, for-await-of |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 89516 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19601.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/consumable-stream#readme)

@@ -33,6 +33,6 @@ object GetUtterancesViewResponse {
     
     inline def setUtterancesUndefined: Self = StObject.set(x, "utterances", js.undefined)
     
-    inline def setUtterancesVarargs(value: UtteranceList*): Self = StObject.set(x, "utterances", js.Array(value :_*))
+    inline def setUtterancesVarargs(value: UtteranceList*): Self = StObject.set(x, "utterances", js.Array(value*))
   }
 }

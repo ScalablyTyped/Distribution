@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContainerServiceHealthCheckConfig extends StObject {
   
   /**
-    * The number of consecutive health checks successes required before moving the container to the Healthy state.
+    * The number of consecutive health checks successes required before moving the container to the Healthy state. The default value is 2.
     */
   var healthyThreshold: js.UndefOr[integer] = js.undefined
   
   /**
-    * The approximate interval, in seconds, between health checks of an individual container. You may specify between 5 and 300 seconds.
+    * The approximate interval, in seconds, between health checks of an individual container. You can specify between 5 and 300 seconds. The default value is 5.
     */
   var intervalSeconds: js.UndefOr[integer] = js.undefined
   
   /**
-    * The path on the container on which to perform the health check.
+    * The path on the container on which to perform the health check. The default value is /.
     */
   var path: js.UndefOr[String] = js.undefined
   
   /**
-    * The HTTP codes to use when checking for a successful response from a container. You can specify values between 200 and 499.
+    * The HTTP codes to use when checking for a successful response from a container. You can specify values between 200 and 499. You can specify multiple values (for example, 200,202) or a range of values (for example, 200-299).
     */
   var successCodes: js.UndefOr[String] = js.undefined
   
   /**
-    * The amount of time, in seconds, during which no response means a failed health check. You may specify between 2 and 60 seconds.
+    * The amount of time, in seconds, during which no response means a failed health check. You can specify between 2 and 60 seconds. The default value is 2.
     */
   var timeoutSeconds: js.UndefOr[integer] = js.undefined
   
   /**
-    * The number of consecutive health check failures required before moving the container to the Unhealthy state.
+    * The number of consecutive health check failures required before moving the container to the Unhealthy state. The default value is 2.
     */
   var unhealthyThreshold: js.UndefOr[integer] = js.undefined
 }

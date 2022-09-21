@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param base the root directory of the website, `base_dir` .
   * @param args an object containing the initialization options.
   */
-class ^ () extends Hexo {
+open class ^ () extends Hexo {
   def this(base: String) = this()
   def this(base: String, args: InstanceOptions) = this()
   def this(base: Unit, args: InstanceOptions) = this()

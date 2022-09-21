@@ -2,14 +2,8 @@ package typings.reactNavigationRouters
 
 import typings.reactNavigationRouters.anon.Count
 import typings.reactNavigationRouters.anon.Name
-import typings.reactNavigationRouters.anon.Payload
-import typings.reactNavigationRouters.anon.PayloadSource
-import typings.reactNavigationRouters.anon.PayloadSourceTarget
-import typings.reactNavigationRouters.anon.PayloadSourceTargetType
-import typings.reactNavigationRouters.anon.Source
-import typings.reactNavigationRouters.anon.SourceTargetType
-import typings.reactNavigationRouters.anon.TargetType
-import typings.reactNavigationRouters.anon.Type
+import typings.reactNavigationRouters.anon.NameParams
+import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.stack
 import typings.reactNavigationRouters.typesMod.DefaultRouterOptions
@@ -17,7 +11,6 @@ import typings.reactNavigationRouters.typesMod.NavigationRoute
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.Router
 import typings.std.Extract
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +21,7 @@ object stackRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(options: StackRouterOptions): Router[
-    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
-    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ]]
+  inline def default(options: StackRouterOptions): Router[StackNavigationState[ParamListBase], Action | StackActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router[StackNavigationState[ParamListBase], Action | StackActionType]]
   
   object StackActions {
     
@@ -75,10 +62,10 @@ object stackRouterMod {
       * @param [params] Params object for the route.
       */
     def push[RouteName /* <: /* keyof ParamList */ String */](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
-          RouteName, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[RouteName]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
+          /* screen */ RouteName, 
+          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+        ]) | (js.Array[/* screen */ RouteName])
     ): Unit = js.native
     
     /**
@@ -88,10 +75,10 @@ object stackRouterMod {
       * @param [params] Params object for the new route.
       */
     def replace[RouteName /* <: /* keyof ParamList */ String */](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
-          RouteName, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[RouteName]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
+          /* screen */ RouteName, 
+          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+        ]) | (js.Array[/* screen */ RouteName])
     ): Unit = js.native
   }
   
@@ -122,7 +109,7 @@ object stackRouterMod {
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.SourceTargetType]
     }
     
-    inline def TargetType(payload: Name): typings.reactNavigationRouters.anon.TargetType = {
+    inline def TargetType(payload: NameParams): typings.reactNavigationRouters.anon.TargetType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("PUSH")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.TargetType]
@@ -132,7 +119,7 @@ object stackRouterMod {
   /* Inlined @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationState<ParamList> & {  type :'stack'} */
   trait StackNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
+    val history: js.UndefOr[js.Array[Any]] = js.undefined
     
     val index: Double
     
@@ -165,11 +152,11 @@ object stackRouterMod {
     
     extension [Self <: StackNavigationState[?], ParamList /* <: ParamListBase */](x: Self & StackNavigationState[ParamList]) {
       
-      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -177,11 +164,11 @@ object stackRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

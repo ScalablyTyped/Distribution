@@ -36,7 +36,7 @@ object XThesaurus {
     acquire: () => Unit,
     getLocales: () => SafeArray[Locale],
     hasLocale: Locale => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryMeanings: (String, Locale, PropertyValues) => SafeArray[XMeaning],
     release: () => Unit
   ): XThesaurus = {

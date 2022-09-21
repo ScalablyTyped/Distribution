@@ -24,10 +24,10 @@ object mod extends Shortcut {
       
       /** Converts the specified array of rows into comma-separated values format, returning a string. This operation is the reverse of parse. Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
       Each row should be an object, and all object properties will be converted into fields. For greater control over which properties are converted, convert the rows into arrays containing only the properties that should be converted and use formatRows. */
-      def format(rows: js.Array[js.Any]): String = js.native
+      def format(rows: js.Array[Any]): String = js.native
       
       /** Converts the specified array of rows into comma-separated values format, returning a string. This operation is the reverse of parseRows. Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes. */
-      def formatRows(rows: js.Array[js.Any]): String = js.native
+      def formatRows(rows: js.Array[Any]): String = js.native
       
       /** Parses the specified string, which is the contents of a CSV file, returning an array of objects representing the parsed rows. 
         The string is assumed to be RFC4180-compliant. 
@@ -45,7 +45,7 @@ object mod extends Shortcut {
       def parse[TRow](
         table: String,
         /** coerce cells (strings) into different types or modify them. return null to strip this row from the output results. */
-      accessor: js.Function1[/* row */ js.Any, TRow]
+      accessor: js.Function1[/* row */ Any, TRow]
       ): js.Array[TRow] = js.native
       
       /** Parses the specified string, which is the contents of a CSV file, returning an array of arrays representing the parsed rows. The string is assumed to be RFC4180-compliant. Unlike the parse method, this method treats the header line as a standard row, and should be used whenever the CSV file does not contain a header. Each row is represented as an array rather than an object. Rows may have variable length. For example, consider the following CSV file:

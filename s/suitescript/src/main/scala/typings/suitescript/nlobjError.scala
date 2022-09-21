@@ -59,7 +59,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getInternalId(): js.Any
+  def getInternalId(): Any
   
   /**
     * return a stacktrace containing the location of the error.
@@ -90,7 +90,7 @@ object nlobjError {
     getCode: () => String,
     getDetails: () => String,
     getId: () => String,
-    getInternalId: () => js.Any,
+    getInternalId: () => Any,
     getStackTrace: () => Unit,
     getUserEvent: () => String
   ): nlobjError = {
@@ -106,7 +106,7 @@ object nlobjError {
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    inline def setGetInternalId(value: () => js.Any): Self = StObject.set(x, "getInternalId", js.Any.fromFunction0(value))
+    inline def setGetInternalId(value: () => Any): Self = StObject.set(x, "getInternalId", js.Any.fromFunction0(value))
     
     inline def setGetStackTrace(value: () => Unit): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
     

@@ -9,7 +9,7 @@ trait PolicyVersion extends StObject {
   /**
     * The date and time the policy was created.
     */
-  var createDate: js.UndefOr[DateType] = js.undefined
+  var createDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether the policy version is the default.
@@ -30,7 +30,7 @@ object PolicyVersion {
   
   extension [Self <: PolicyVersion](x: Self) {
     
-    inline def setCreateDate(value: DateType): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
     

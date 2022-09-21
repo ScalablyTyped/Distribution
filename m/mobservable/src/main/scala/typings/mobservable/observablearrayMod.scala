@@ -20,7 +20,7 @@ object observablearrayMod {
   
   @JSImport("mobservable/lib/observablearray", "ObservableArray")
   @js.native
-  class ObservableArray[T] protected () extends StubArray {
+  open class ObservableArray[T] protected () extends StubArray {
     def this(
       initialValues: js.Array[T],
       mode: ValueMode,
@@ -36,11 +36,11 @@ object observablearrayMod {
     def find(predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean]): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
-      thisArg: js.Any,
+      thisArg: Any,
       fromIndex: Double
     ): T = js.native
     def find(
@@ -82,7 +82,7 @@ object observablearrayMod {
   
   @JSImport("mobservable/lib/observablearray", "ObservableArrayAdministration")
   @js.native
-  class ObservableArrayAdministration[T] protected () extends DataNode {
+  open class ObservableArrayAdministration[T] protected () extends DataNode {
     def this(
       array: ObservableArray[T],
       mode: ValueMode,
@@ -98,17 +98,17 @@ object observablearrayMod {
     
     var lastKnownLength: Double = js.native
     
-    def makeReactiveArrayItem(value: js.Any): js.Any = js.native
+    def makeReactiveArrayItem(value: Any): Any = js.native
     
     var mode: ValueMode = js.native
     
-    /* private */ def notifyChanged(): js.Any = js.native
+    /* private */ def notifyChanged(): Any = js.native
     
-    /* private */ def notifyChildUpdate(index: js.Any, oldValue: js.Any): js.Any = js.native
+    /* private */ def notifyChildUpdate(index: Any, oldValue: Any): Any = js.native
     
-    /* private */ def notifySplice(index: js.Any, deleted: js.Any, added: js.Any): js.Any = js.native
+    /* private */ def notifySplice(index: Any, deleted: Any, added: Any): Any = js.native
     
-    def setLength(newLength: js.Any): Double = js.native
+    def setLength(newLength: Any): Double = js.native
     
     def spliceWithArray(index: Double): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
@@ -124,7 +124,7 @@ object observablearrayMod {
   
   @JSImport("mobservable/lib/observablearray", "StubArray")
   @js.native
-  class StubArray () extends StObject
+  open class StubArray () extends StObject
   
   inline def createObservableArray[T](
     initialValues: js.Array[T],

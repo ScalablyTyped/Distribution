@@ -1,13 +1,13 @@
 package typings.grpc.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "ServerCredentials")
 @js.native
-class ServerCredentials () extends StObject
+open class ServerCredentials () extends StObject
 /* static members */
 object ServerCredentials {
   

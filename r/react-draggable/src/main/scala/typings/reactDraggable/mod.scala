@@ -2,6 +2,7 @@ package typings.reactDraggable
 
 import typings.react.mod.Component
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.TouchEvent
 import typings.reactDraggable.anon.PartialDraggableCoreProps
@@ -22,8 +23,8 @@ object mod {
   
   @JSImport("react-draggable", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PartialDraggableProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PartialDraggableProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -39,14 +40,14 @@ object mod {
   
   @JSImport("react-draggable", "DraggableCore")
   @js.native
-  class DraggableCore protected ()
-    extends Component[PartialDraggableCoreProps, js.Object, js.Any] {
+  open class DraggableCore protected ()
+    extends Component[PartialDraggableCoreProps, js.Object, Any] {
     def this(props: PartialDraggableCoreProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PartialDraggableCoreProps, context: js.Any) = this()
+    def this(props: PartialDraggableCoreProps, context: Any) = this()
   }
   /* static members */
   object DraggableCore {
@@ -82,7 +83,7 @@ object mod {
     }
   }
   
-  type Draggable = Component[PartialDraggableProps, js.Object, js.Any]
+  type Draggable = Component[PartialDraggableProps, js.Object, Any]
   
   trait DraggableBounds extends StObject {
     
@@ -126,6 +127,8 @@ object mod {
     var allowAnyClick: Boolean
     
     var cancel: String
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var disabled: Boolean
     
@@ -174,6 +177,10 @@ object mod {
       inline def setAllowAnyClick(value: Boolean): Self = StObject.set(x, "allowAnyClick", value.asInstanceOf[js.Any])
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

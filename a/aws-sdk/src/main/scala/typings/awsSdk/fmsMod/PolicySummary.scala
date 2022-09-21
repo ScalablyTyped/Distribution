@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolicySummary extends StObject {
   
   /**
+    * Indicates whether Firewall Manager should automatically remove protections from resources that leave the policy scope and clean up resources that Firewall Manager is managing for accounts when those accounts leave policy scope. For example, Firewall Manager will disassociate a Firewall Manager managed web ACL from a protected customer resource when the customer resource leaves policy scope.  By default, Firewall Manager doesn't remove protections or delete Firewall Manager managed resources.  This option is not available for Shield Advanced or WAF Classic policies.
+    */
+  var DeleteUnusedFMManagedResources: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the specified policy.
     */
   var PolicyArn: js.UndefOr[ResourceArn] = js.undefined
@@ -27,12 +32,12 @@ trait PolicySummary extends StObject {
   var RemediationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The type of resource protected by or in scope of the policy. This is in the format shown in the AWS Resource Types Reference. For AWS WAF and Shield Advanced, examples include AWS::ElasticLoadBalancingV2::LoadBalancer and AWS::CloudFront::Distribution. For a security group common policy, valid values are AWS::EC2::NetworkInterface and AWS::EC2::Instance. For a security group content audit policy, valid values are AWS::EC2::SecurityGroup, AWS::EC2::NetworkInterface, and AWS::EC2::Instance. For a security group usage audit policy, the value is AWS::EC2::SecurityGroup. For an AWS Network Firewall policy, the value is AWS::EC2::VPC.
+    * The type of resource protected by or in scope of the policy. This is in the format shown in the Amazon Web Services Resource Types Reference. For WAF and Shield Advanced, examples include AWS::ElasticLoadBalancingV2::LoadBalancer and AWS::CloudFront::Distribution. For a security group common policy, valid values are AWS::EC2::NetworkInterface and AWS::EC2::Instance. For a security group content audit policy, valid values are AWS::EC2::SecurityGroup, AWS::EC2::NetworkInterface, and AWS::EC2::Instance. For a security group usage audit policy, the value is AWS::EC2::SecurityGroup. For an Network Firewall policy or DNS Firewall policy, the value is AWS::EC2::VPC.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.fmsMod.ResourceType] = js.undefined
   
   /**
-    * The service that the policy is using to protect the resources. This specifies the type of policy that is created, either an AWS WAF policy, a Shield Advanced policy, or a security group policy.
+    * The service that the policy is using to protect the resources. This specifies the type of policy that is created, either an WAF policy, a Shield Advanced policy, or a security group policy.
     */
   var SecurityServiceType: js.UndefOr[typings.awsSdk.fmsMod.SecurityServiceType] = js.undefined
 }
@@ -44,6 +49,10 @@ object PolicySummary {
   }
   
   extension [Self <: PolicySummary](x: Self) {
+    
+    inline def setDeleteUnusedFMManagedResources(value: Boolean): Self = StObject.set(x, "DeleteUnusedFMManagedResources", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteUnusedFMManagedResourcesUndefined: Self = StObject.set(x, "DeleteUnusedFMManagedResources", js.undefined)
     
     inline def setPolicyArn(value: ResourceArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     

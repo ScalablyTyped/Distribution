@@ -2,7 +2,12 @@ package typings.awsSdkCredentialProviderImds
 
 import typings.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProviderConfig
 import typings.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProviderInit
+import typings.awsSdkCredentialProviderImds.typesMod.InstanceMetadataCredentials
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
+import typings.awsSdkTypes.httpMod.Endpoint
+import typings.awsSdkTypes.utilMod.Provider
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,8 +41,12 @@ object mod {
   inline def fromContainerMetadata(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromContainerMetadata")().asInstanceOf[CredentialProvider]
   inline def fromContainerMetadata(init: RemoteProviderInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromContainerMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  inline def fromInstanceMetadata(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")().asInstanceOf[CredentialProvider]
-  inline def fromInstanceMetadata(init: RemoteProviderInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromInstanceMetadata(): Provider[InstanceMetadataCredentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")().asInstanceOf[Provider[InstanceMetadataCredentials]]
+  inline def fromInstanceMetadata(init: RemoteProviderInit): Provider[InstanceMetadataCredentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[Provider[InstanceMetadataCredentials]]
+  
+  inline def getInstanceMetadataEndpoint(): js.Promise[Endpoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceMetadataEndpoint")().asInstanceOf[js.Promise[Endpoint]]
+  
+  inline def httpRequest(options: RequestOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
   inline def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
 }

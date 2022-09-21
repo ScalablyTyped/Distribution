@@ -1,9 +1,9 @@
 package typings.phaser.Phaser.GameObjects
 
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Structs.List
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +26,11 @@ trait DisplayList
   def depthSort(): Unit = js.native
   
   /**
+    * The Scene's Event Emitter.
+    */
+  var events: EventEmitter = js.native
+  
+  /**
     * Returns an array which contains all objects currently on the Display List.
     * This is a reference to the main list array, not a copy of it, so be careful not to modify it.
     */
@@ -46,7 +51,7 @@ trait DisplayList
     * @param childA The first Game Object.
     * @param childB The second Game Object.
     */
-  def sortByDepth(childA: GameObject, childB: GameObject): integer = js.native
+  def sortByDepth(childA: GameObject, childB: GameObject): Double = js.native
   
   /**
     * The flag the determines whether Game Objects should be sorted when `depthSort()` is called.

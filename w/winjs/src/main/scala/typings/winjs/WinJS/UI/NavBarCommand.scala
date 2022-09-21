@@ -28,7 +28,7 @@ trait NavBarCommand extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this NavBarCommand. Call this method when the NavBarCommand is no longer needed. After calling this method, the NavBarCommand becomes unusable.
@@ -55,7 +55,7 @@ trait NavBarCommand extends StObject {
   /**
     * Get or sets the location to navigate to when this command is invoked.
     **/
-  var location: js.Any = js.native
+  var location: Any = js.native
   
   //#endregion Constructors
   //#region Events
@@ -63,7 +63,7 @@ trait NavBarCommand extends StObject {
     * This API supports the Windows Library for JavaScript infrastructure and is not intended to be used directly from your code.
     * Use NavBarContainer.oninvoked instead.
     **/
-  var oninvoked: js.Any = js.native
+  var oninvoked: Any = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.
@@ -87,7 +87,7 @@ trait NavBarCommand extends StObject {
   /**
     * Gets or sets a user-defined object that represents the state associated with the command's location.
     **/
-  var state: js.Any = js.native
+  var state: Any = js.native
   
   /**
     * Gets or sets the tooltip of the command.

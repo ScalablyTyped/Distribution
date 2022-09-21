@@ -19,7 +19,7 @@ object XCloneable {
   inline def apply(
     acquire: () => Unit,
     createClone: () => XCloneable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCloneable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createClone = js.Any.fromFunction0(createClone), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

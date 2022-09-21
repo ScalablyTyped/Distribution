@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get Several Albums
-  * 
+  *
   * GET /v1/albums?ids={ids}
-  * https://developer.spotify.com/web-api/get-several-albums/ 
+  * https://developer.spotify.com/web-api/get-several-albums/
   */
 trait MultipleAlbumsResponse extends StObject {
   
@@ -25,6 +25,6 @@ object MultipleAlbumsResponse {
     
     inline def setAlbums(value: js.Array[AlbumObjectFull]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    inline def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value :_*))
+    inline def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value*))
   }
 }

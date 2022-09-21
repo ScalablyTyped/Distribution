@@ -36,14 +36,14 @@ object GetSnapshotResponse {
     
     inline def setComputedStyles(value: js.Array[ComputedStyle]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
-    inline def setComputedStylesVarargs(value: ComputedStyle*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
+    inline def setComputedStylesVarargs(value: ComputedStyle*): Self = StObject.set(x, "computedStyles", js.Array(value*))
     
     inline def setDomNodes(value: js.Array[DOMNode]): Self = StObject.set(x, "domNodes", value.asInstanceOf[js.Any])
     
-    inline def setDomNodesVarargs(value: DOMNode*): Self = StObject.set(x, "domNodes", js.Array(value :_*))
+    inline def setDomNodesVarargs(value: DOMNode*): Self = StObject.set(x, "domNodes", js.Array(value*))
     
     inline def setLayoutTreeNodes(value: js.Array[LayoutTreeNode]): Self = StObject.set(x, "layoutTreeNodes", value.asInstanceOf[js.Any])
     
-    inline def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = StObject.set(x, "layoutTreeNodes", js.Array(value :_*))
+    inline def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = StObject.set(x, "layoutTreeNodes", js.Array(value*))
   }
 }

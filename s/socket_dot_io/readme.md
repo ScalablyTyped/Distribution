@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io
 
-Typings are for version 2.1
+Typings are for version 4.5.2
 
 ## Library description:
 node.js realtime framework server
@@ -10,10 +10,10 @@ node.js realtime framework server
 | ------------------ | :-------------: |
 | Full name          | socket.io |
 | Keywords           | realtime, framework, websocket, tcp, events, socket, io |
-| # releases         | 15 |
-| # dependents       | 6280 |
-| # downloads        | 180767852 |
-| # stars            | 795 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9666839E7 |
+| # stars            | 56575.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/socket.io#readme)
@@ -24,7 +24,7 @@ node.js realtime framework server
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

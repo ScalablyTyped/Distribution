@@ -12,8 +12,8 @@ object pagerMod {
   
   @JSImport("react-bootstrap/lib/Pager", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PagerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PagerProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Pager", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,7 +21,7 @@ object pagerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pager", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.pagerItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pager", "Item")
@@ -29,9 +29,7 @@ object pagerMod {
   def Item: Instantiable0[typings.reactBootstrap.pagerItemMod.^] = js.native
   inline def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Pager
-    extends Component[PagerProps, js.Object, js.Any]
+  type Pager = Component[PagerProps, js.Object, Any]
   
   trait PagerProps
     extends StObject

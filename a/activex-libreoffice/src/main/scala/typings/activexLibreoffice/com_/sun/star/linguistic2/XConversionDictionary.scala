@@ -131,7 +131,7 @@ object XConversionDictionary {
     getMaxCharCount: ConversionDirection => Double,
     getName: () => String,
     isActive: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEntry: (String, String) => Unit,
     setActive: Boolean => Unit

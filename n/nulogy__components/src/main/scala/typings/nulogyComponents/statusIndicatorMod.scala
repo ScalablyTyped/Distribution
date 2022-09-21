@@ -8,5 +8,5 @@ object statusIndicatorMod {
   
   @JSImport("@nulogy/components/src/StatusIndicator", "StatusIndicator")
   @js.native
-  val StatusIndicator: js.Any = js.native
+  val StatusIndicator: Any = js.native
 }

@@ -13,7 +13,7 @@ object webClientDriverMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iclientdriverMod.IClientDriver because var conflicts: onClose. Inlined listen */ @JSImport("samchon/protocol/communicator/client_driver/WebClientDriver", "WebClientDriver")
   @js.native
-  class WebClientDriver protected () extends WebCommunicator {
+  open class WebClientDriver protected () extends WebCommunicator {
     /**
       * Initialization Constructor.
       *
@@ -21,7 +21,7 @@ object webClientDriverMod {
       * @param path Requested path.
       * @param session_id Session ID, an identifier of the remote client.
       */
-    def this(connection: js.Any, path: String, session_id: String) = this()
+    def this(connection: Any, path: String, session_id: String) = this()
     
     /**
       * Get requested path.
@@ -51,16 +51,16 @@ object webClientDriverMod {
     /**
       * @hidden
       */
-    /* private */ var listening_ : js.Any = js.native
+    /* private */ var listening_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var path_ : js.Any = js.native
+    /* private */ var path_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var session_id_ : js.Any = js.native
+    /* private */ var session_id_ : Any = js.native
   }
 }

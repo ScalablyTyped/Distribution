@@ -23,7 +23,7 @@ object nodeFsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/node_fs", "default.FS")
     @js.native
-    class FS ()
+    open class FS ()
       extends StObject
          with typings.browserfs.fSMod.FS
     

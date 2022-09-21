@@ -6,22 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("eev", JSImport.Namespace)
+  @JSImport("eev", JSImport.Default)
   @js.native
-  class ^ ()
-    extends StObject
-       with Eev
+  open class default () extends Eev
   
-  type CallbackFunction = js.Function1[/* data */ js.Any, Unit]
-  
+  @JSImport("eev", "Eev")
   @js.native
-  trait Eev extends StObject {
+  open class Eev () extends StObject {
     
     def emit(name: String): Unit = js.native
-    def emit(name: String, data: js.Any): Unit = js.native
+    def emit(name: String, data: Any): Unit = js.native
     
     def off(names: String, fn: CallbackFunction): Unit = js.native
     
     def on(names: String, fn: CallbackFunction): Unit = js.native
   }
+  
+  type CallbackFunction = js.Function1[/* data */ Any, Unit]
 }

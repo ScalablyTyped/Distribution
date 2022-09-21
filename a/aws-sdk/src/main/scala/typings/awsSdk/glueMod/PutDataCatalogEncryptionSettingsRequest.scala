@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutDataCatalogEncryptionSettingsRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog to set the security configuration for. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   

@@ -24,6 +24,6 @@ object ConnectionsList {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: GenericString*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: GenericString*): Self = StObject.set(x, "Connections", js.Array(value*))
   }
 }

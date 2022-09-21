@@ -12,13 +12,13 @@ trait HTMLInputButtonElement extends StObject {
   
   var accessKey: String = js.native
   
-  def addFilter(pUnk: js.Any): Unit = js.native
+  def addFilter(pUnk: Any): Unit = js.native
   
-  val all: js.Any = js.native
+  val all: Any = js.native
   
   def blur(): Unit = js.native
   
-  val children: js.Any = js.native
+  val children: Any = js.native
   
   var className: String = js.native
   
@@ -38,24 +38,24 @@ trait HTMLInputButtonElement extends StObject {
   
   var disabled: Boolean = js.native
   
-  val document: js.Any = js.native
+  val document: Any = js.native
   
-  def filters(pvarIndex: js.Any): js.Any = js.native
+  def filters(pvarIndex: Any): Any = js.native
   @JSName("filters")
   val filters_Original: IHTMLFiltersCollection = js.native
   
   def focus(): Unit = js.native
   
-  def form(): js.Any = js.native
-  def form(name: js.Any): js.Any = js.native
-  def form(name: js.Any, index: js.Any): js.Any = js.native
-  def form(name: Unit, index: js.Any): js.Any = js.native
+  def form(): Any = js.native
+  def form(name: Any): Any = js.native
+  def form(name: Any, index: Any): Any = js.native
+  def form(name: Unit, index: Any): Any = js.native
   @JSName("form")
   val form_Original: IHTMLFormElement = js.native
   
   /** @param lFlags [lFlags=0] */
-  def getAttribute(strAttributeName: String): js.Any = js.native
-  def getAttribute(strAttributeName: String, lFlags: Double): js.Any = js.native
+  def getAttribute(strAttributeName: String): Any = js.native
+  def getAttribute(strAttributeName: String, lFlags: Double): Any = js.native
   
   var id: String = js.native
   
@@ -85,55 +85,55 @@ trait HTMLInputButtonElement extends StObject {
   
   val offsetWidth: Double = js.native
   
-  var onafterupdate: js.Any = js.native
+  var onafterupdate: Any = js.native
   
-  var onbeforeupdate: js.Any = js.native
+  var onbeforeupdate: Any = js.native
   
-  var onblur: js.Any = js.native
+  var onblur: Any = js.native
   
-  var onclick: js.Any = js.native
+  var onclick: Any = js.native
   
-  var ondataavailable: js.Any = js.native
+  var ondataavailable: Any = js.native
   
-  var ondatasetchanged: js.Any = js.native
+  var ondatasetchanged: Any = js.native
   
-  var ondatasetcomplete: js.Any = js.native
+  var ondatasetcomplete: Any = js.native
   
-  var ondblclick: js.Any = js.native
+  var ondblclick: Any = js.native
   
-  var ondragstart: js.Any = js.native
+  var ondragstart: Any = js.native
   
-  var onerrorupdate: js.Any = js.native
+  var onerrorupdate: Any = js.native
   
-  var onfilterchange: js.Any = js.native
+  var onfilterchange: Any = js.native
   
-  var onfocus: js.Any = js.native
+  var onfocus: Any = js.native
   
-  var onhelp: js.Any = js.native
+  var onhelp: Any = js.native
   
-  var onkeydown: js.Any = js.native
+  var onkeydown: Any = js.native
   
-  var onkeypress: js.Any = js.native
+  var onkeypress: Any = js.native
   
-  var onkeyup: js.Any = js.native
+  var onkeyup: Any = js.native
   
-  var onmousedown: js.Any = js.native
+  var onmousedown: Any = js.native
   
-  var onmousemove: js.Any = js.native
+  var onmousemove: Any = js.native
   
-  var onmouseout: js.Any = js.native
+  var onmouseout: Any = js.native
   
-  var onmouseover: js.Any = js.native
+  var onmouseover: Any = js.native
   
-  var onmouseup: js.Any = js.native
+  var onmouseup: Any = js.native
   
-  var onresize: js.Any = js.native
+  var onresize: Any = js.native
   
-  var onrowenter: js.Any = js.native
+  var onrowenter: Any = js.native
   
-  var onrowexit: js.Any = js.native
+  var onrowexit: Any = js.native
   
-  var onselectstart: js.Any = js.native
+  var onselectstart: Any = js.native
   
   var outerHTML: String = js.native
   
@@ -143,24 +143,24 @@ trait HTMLInputButtonElement extends StObject {
   
   val parentTextEdit: IHTMLElement = js.native
   
-  val recordNumber: js.Any = js.native
+  val recordNumber: Any = js.native
   
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: String): Boolean = js.native
   def removeAttribute(strAttributeName: String, lFlags: Double): Boolean = js.native
   
-  def removeFilter(pUnk: js.Any): Unit = js.native
+  def removeFilter(pUnk: Any): Unit = js.native
   
   def scrollIntoView(): Unit = js.native
-  def scrollIntoView(varargStart: js.Any): Unit = js.native
+  def scrollIntoView(varargStart: Any): Unit = js.native
   
   /** @param lFlags [lFlags=1] */
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any): Unit = js.native
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any, lFlags: Double): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any, lFlags: Double): Unit = js.native
   
   val sourceIndex: Double = js.native
   
-  var status: js.Any = js.native
+  var status: Any = js.native
   
   val style: IHTMLStyle = js.native
   

@@ -10,23 +10,23 @@ object arcRotateCameraKeyboardMoveInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraKeyboardMoveInput", "ArcRotateCameraKeyboardMoveInput")
   @js.native
-  class ArcRotateCameraKeyboardMoveInput ()
+  open class ArcRotateCameraKeyboardMoveInput ()
     extends StObject
        with ICameraInput[ArcRotateCamera] {
     
-    /* private */ var _altPressed: js.Any = js.native
+    /* private */ var _altPressed: Any = js.native
     
-    /* private */ var _ctrlPressed: js.Any = js.native
+    /* private */ var _ctrlPressed: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
-    /* private */ var _onCanvasBlurObserver: js.Any = js.native
+    /* private */ var _onCanvasBlurObserver: Any = js.native
     
-    /* private */ var _onKeyboardObserver: js.Any = js.native
+    /* private */ var _onKeyboardObserver: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Rotation speed of the camera

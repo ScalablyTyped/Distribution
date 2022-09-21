@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("memcached", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Memcached {
+  open class ^ protected () extends Memcached {
     /**
       * Connect to a single Memcached server or cluster
       * @param location Server locations
@@ -57,7 +57,7 @@ object mod {
   
   trait CommandData extends StObject {
     
-    def callback(args: js.Any*): js.Any
+    def callback(args: Any*): Any
     
     var cas: js.UndefOr[String] = js.undefined
     
@@ -75,19 +75,19 @@ object mod {
     
     var `type`: String
     
-    var validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]
+    var validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ Any, Any]]]
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object CommandData {
     
     inline def apply(
-      callback: /* repeated */ js.Any => js.Any,
+      callback: /* repeated */ Any => Any,
       command: String,
       execution: Double,
       start: Double,
       `type`: String,
-      validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]
+      validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ Any, Any]]]
     ): CommandData = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object mod {
     
     extension [Self <: CommandData](x: Self) {
       
-      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
@@ -122,11 +122,11 @@ object mod {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ Any, Any]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      inline def setValidateVarargs(value: (js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]])*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: (js.Tuple2[String, js.Function1[/* repeated */ Any, Any]])*): Self = StObject.set(x, "validate", js.Array(value*))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -197,7 +197,7 @@ object mod {
       
       inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
@@ -249,9 +249,9 @@ object mod {
       */
     def add(
       key: String,
-      value: js.Any,
+      value: Any,
       lifetime: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -261,8 +261,8 @@ object mod {
       */
     def append(
       key: String,
-      value: js.Any,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      value: Any,
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -272,7 +272,7 @@ object mod {
       server: String,
       slabid: Double,
       number: Double,
-      cb: js.Function2[/* err */ js.Any, /* cachedump */ CacheDumpData | js.Array[CacheDumpData], Unit]
+      cb: js.Function2[/* err */ Any, /* cachedump */ CacheDumpData | js.Array[CacheDumpData], Unit]
     ): Unit = js.native
     
     /**
@@ -282,10 +282,10 @@ object mod {
       */
     def cas(
       key: String,
-      value: js.Any,
+      value: Any,
       cas: String,
       lifetime: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -296,7 +296,7 @@ object mod {
     def decr(
       key: String,
       amount: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean | Double, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean | Double, Unit]
     ): Unit = js.native
     
     /**
@@ -305,7 +305,7 @@ object mod {
       */
     def del(
       key: String,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -316,16 +316,13 @@ object mod {
     /**
       * Flushes the memcached server.
       */
-    def flush(cb: js.ThisFunction2[/* this */ Unit, /* err */ js.Any, /* results */ js.Array[Boolean], Unit]): Unit = js.native
+    def flush(cb: js.ThisFunction2[/* this */ Unit, /* err */ Any, /* results */ js.Array[Boolean], Unit]): Unit = js.native
     
     /**
       * Get the value for the given key.
       * @param key The key
       */
-    def get(
-      key: String,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ js.Any, Unit]
-    ): Unit = js.native
+    def get(key: String, cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
     /**
       * Retrieves a bunch of values from multiple keys.
@@ -333,17 +330,14 @@ object mod {
       */
     def getMulti(
       keys: js.Array[String],
-      cb: js.ThisFunction2[/* this */ Unit, /* err */ js.Any, /* data */ StringDictionary[js.Any], Unit]
+      cb: js.ThisFunction2[/* this */ Unit, /* err */ Any, /* data */ StringDictionary[Any], Unit]
     ): Unit = js.native
     
     /**
       * Get the value and the CAS id.
       * @param key The key
       */
-    def gets(
-      key: String,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ Dictkey, Unit]
-    ): Unit = js.native
+    def gets(key: String, cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* data */ Dictkey, Unit]): Unit = js.native
     
     /**
       * Increment a given key.
@@ -353,13 +347,13 @@ object mod {
     def incr(
       key: String,
       amount: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean | Double, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean | Double, Unit]
     ): Unit = js.native
     
     /**
       * Retrieves stats items information.
       */
-    def items(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
+    def items(cb: js.Function2[/* err */ Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
     
     /**
       * Register event listener
@@ -373,8 +367,8 @@ object mod {
       */
     def prepend(
       key: String,
-      value: js.Any,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      value: Any,
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -384,9 +378,9 @@ object mod {
       */
     def replace(
       key: String,
-      value: js.Any,
+      value: Any,
       lifetime: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -397,41 +391,37 @@ object mod {
       */
     def set(
       key: String,
-      value: js.Any,
+      value: Any,
       lifetime: Double,
-      cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ Boolean, Unit]
+      cb: js.ThisFunction2[/* this */ CommandData, /* err */ Any, /* result */ Boolean, Unit]
     ): Unit = js.native
     
     /**
       * Retrieves your stats settings.
       */
-    def settings(cb: js.Function2[/* err */ js.Any, /* settings */ js.Array[StatusData], Unit]): Unit = js.native
+    def settings(cb: js.Function2[/* err */ Any, /* settings */ js.Array[StatusData], Unit]): Unit = js.native
     
     /**
       * Retrieves stats slabs information.
       */
-    def slabs(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
+    def slabs(cb: js.Function2[/* err */ Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
     
     /**
       * Retrieves stats from your memcached server.
       */
-    def stats(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
+    def stats(cb: js.Function2[/* err */ Any, /* stats */ js.Array[StatusData], Unit]): Unit = js.native
     
     /**
       * Touches the given key.
       * @param key The key
       * @param lifetime After how long should the key expire measured in seconds
       */
-    def touch(
-      key: String,
-      lifetime: Double,
-      cb: js.ThisFunction1[/* this */ CommandData, /* err */ js.Any, Unit]
-    ): Unit = js.native
+    def touch(key: String, lifetime: Double, cb: js.ThisFunction1[/* this */ CommandData, /* err */ Any, Unit]): Unit = js.native
     
     /**
       * Retrieves the version number of your server.
       */
-    def version(cb: js.Function2[/* err */ js.Any, /* version */ js.Array[VersionData], Unit]): Unit = js.native
+    def version(cb: js.Function2[/* err */ Any, /* version */ js.Array[VersionData], Unit]): Unit = js.native
   }
   
   trait StatusData
@@ -580,7 +570,7 @@ object mod {
       
       inline def setFailOverServersUndefined: Self = StObject.set(x, "failOverServers", js.undefined)
       
-      inline def setFailOverServersVarargs(value: String*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
+      inline def setFailOverServersVarargs(value: String*): Self = StObject.set(x, "failOverServers", js.Array(value*))
       
       inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       

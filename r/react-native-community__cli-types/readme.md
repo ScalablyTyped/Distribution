@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cli-types
 
-Typings are for version 4.10.1
+Typings are for version 9.1.0
 
 
 
@@ -9,12 +9,15 @@ Typings are for version 4.10.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-types |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 2 |
-| # downloads        | 17405880 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 3576345.3333333335 |
+| # stars            | 1890.0 |
 
 ## Links
+- [Homepage](https://github.com/react-native-community/cli/tree/master/packages/cli-types)
+- [Bugs](https://github.com/react-native-community/cli/issues)
+- [Repository](https://github.com/react-native-community/cli)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fcli-types)
     
 

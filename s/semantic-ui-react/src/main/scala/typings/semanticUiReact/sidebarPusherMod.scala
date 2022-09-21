@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object sidebarPusherMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar/SidebarPusher", JSImport.Default)
   @js.native
-  val default: StatelessComponent[SidebarPusherProps] = js.native
+  val default: FC[SidebarPusherProps] = js.native
   
   trait SidebarPusherProps
     extends StObject
        with StrictSidebarPusherProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SidebarPusherProps {
     
     inline def apply(): SidebarPusherProps = {
@@ -30,7 +30,7 @@ object sidebarPusherMod extends Shortcut {
   trait StrictSidebarPusherProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -53,7 +53,7 @@ object sidebarPusherMod extends Shortcut {
     
     extension [Self <: StrictSidebarPusherProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -75,8 +75,8 @@ object sidebarPusherMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[SidebarPusherProps]
+  type _To = FC[SidebarPusherProps]
   
   /* This means you don't have to write `default`, but can instead just say `sidebarPusherMod.foo` */
-  override def _to: StatelessComponent[SidebarPusherProps] = default
+  override def _to: FC[SidebarPusherProps] = default
 }

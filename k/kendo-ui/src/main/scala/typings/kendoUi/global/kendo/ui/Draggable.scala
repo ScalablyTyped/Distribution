@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Draggable")
 @js.native
-class Draggable protected ()
+open class Draggable protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Draggable {
   def this(element: Element) = this()

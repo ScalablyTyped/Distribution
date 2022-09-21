@@ -10,15 +10,12 @@ Common operations for ndarray arrays
 | ------------------ | :-------------: |
 | Full name          | ndarray-ops |
 | Keywords           | ndarray, math, operations, scientific, linear, algebra |
-| # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 7199050 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 903461.3333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/mikolalysenko/ndarray-ops)
-- [Bugs](https://github.com/mikolalysenko/ndarray-ops/issues)
-- [Repository](https://github.com/mikolalysenko/ndarray-ops)
 - [Npm](https://www.npmjs.com/package/ndarray-ops)
     
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Instantiable
   extends StObject
-     with Instantiable1[/* props */ js.Any, ComponentDidMount] {
+     with Instantiable1[/* props */ Any, ComponentDidMount] {
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
   
   def rewind(): State = js.native
 }

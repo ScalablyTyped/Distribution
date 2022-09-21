@@ -8,7 +8,7 @@ trait IFieldInfo extends StObject {
   
   var dateOnly: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCellStyleId: js.UndefOr[js.Any] = js.undefined
+  var defaultCellStyleId: js.UndefOr[Any] = js.undefined
   
   var editMode: js.UndefOr[EditMode] = js.undefined
   
@@ -37,7 +37,7 @@ object IFieldInfo {
     
     inline def setDateOnlyUndefined: Self = StObject.set(x, "dateOnly", js.undefined)
     
-    inline def setDefaultCellStyleId(value: js.Any): Self = StObject.set(x, "defaultCellStyleId", value.asInstanceOf[js.Any])
+    inline def setDefaultCellStyleId(value: Any): Self = StObject.set(x, "defaultCellStyleId", value.asInstanceOf[js.Any])
     
     inline def setDefaultCellStyleIdUndefined: Self = StObject.set(x, "defaultCellStyleId", js.undefined)
     

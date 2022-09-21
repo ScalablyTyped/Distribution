@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddIn extends StObject {
   
-  def Collection(index: js.Any): AddIn
+  def Collection(index: Any): AddIn
   @JSName("Collection")
   val Collection_Original: Addins
   
@@ -16,7 +16,7 @@ trait AddIn extends StObject {
   
   val Guid: String
   
-  var Object: js.Any
+  var Object: Any
   
   val ProgId: String
   
@@ -32,7 +32,7 @@ object AddIn {
     Connect: Boolean,
     Description: String,
     Guid: String,
-    Object: js.Any,
+    Object: Any,
     ProgId: String,
     VBE: VBE,
     VBIDEDotAddIn_typekey: AddIn
@@ -52,7 +52,7 @@ object AddIn {
     
     inline def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
     inline def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
     

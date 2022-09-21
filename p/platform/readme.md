@@ -10,10 +10,10 @@ A platform detection library that works on nearly all JavaScript platforms.
 | ------------------ | :-------------: |
 | Full name          | platform |
 | Keywords           | environment, platform, ua, useragent |
-| # releases         | 2 |
-| # dependents       | 253 |
-| # downloads        | 31648984 |
-| # stars            | 26 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7585871.666666667 |
+| # stars            | 3007.0 |
 
 ## Links
 - [Homepage](https://github.com/bestiejs/platform.js#readme)

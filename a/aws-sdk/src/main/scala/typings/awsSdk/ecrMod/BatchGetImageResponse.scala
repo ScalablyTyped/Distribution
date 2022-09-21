@@ -29,12 +29,12 @@ object BatchGetImageResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setImages(value: ImageList): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value*))
   }
 }

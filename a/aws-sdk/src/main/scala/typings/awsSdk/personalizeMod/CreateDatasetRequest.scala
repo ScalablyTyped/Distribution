@@ -25,6 +25,11 @@ trait CreateDatasetRequest extends StObject {
     * The ARN of the schema to associate with the dataset. The schema defines the dataset fields.
     */
   var schemaArn: Arn
+  
+  /**
+    * A list of tags to apply to the dataset.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateDatasetRequest {
   
@@ -42,5 +47,11 @@ object CreateDatasetRequest {
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setSchemaArn(value: Arn): Self = StObject.set(x, "schemaArn", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvas-renderer
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 HTML5 inspired canvas that can be rendered to PNG with no native dependencies.
@@ -10,10 +10,10 @@ HTML5 inspired canvas that can be rendered to PNG with no native dependencies.
 | ------------------ | :-------------: |
 | Full name          | canvas-renderer |
 | Keywords           | javascript, canvas, rasterize, rasterizer, renderer, png, polygon |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 347791 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 78839.33333333333 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/dmester/canvas-renderer#readme)

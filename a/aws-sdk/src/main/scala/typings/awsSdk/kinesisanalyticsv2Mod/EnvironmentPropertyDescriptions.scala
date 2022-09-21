@@ -24,6 +24,6 @@ object EnvironmentPropertyDescriptions {
     
     inline def setPropertyGroupDescriptionsUndefined: Self = StObject.set(x, "PropertyGroupDescriptions", js.undefined)
     
-    inline def setPropertyGroupDescriptionsVarargs(value: PropertyGroup*): Self = StObject.set(x, "PropertyGroupDescriptions", js.Array(value :_*))
+    inline def setPropertyGroupDescriptionsVarargs(value: PropertyGroup*): Self = StObject.set(x, "PropertyGroupDescriptions", js.Array(value*))
   }
 }

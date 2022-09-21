@@ -33,6 +33,6 @@ object GetTransitGatewayPrefixListReferencesResult {
     
     inline def setTransitGatewayPrefixListReferencesUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.undefined)
     
-    inline def setTransitGatewayPrefixListReferencesVarargs(value: TransitGatewayPrefixListReference*): Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.Array(value :_*))
+    inline def setTransitGatewayPrefixListReferencesVarargs(value: TransitGatewayPrefixListReference*): Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.Array(value*))
   }
 }

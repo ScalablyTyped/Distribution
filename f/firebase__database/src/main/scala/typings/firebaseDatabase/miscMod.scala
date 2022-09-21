@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object miscMod {
   
-  type Indexable = StringDictionary[js.Any]
+  type Indexable = StringDictionary[Any]
 }

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateResourceShareRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * Specifies a unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This lets you safely retry the request without accidentally performing the same operation a second time. Passing the same value to a later call to an operation requires that you also pass the same value for all other parameters. We recommend that you use a UUID type of value.. If you don't provide this value, then Amazon Web Services generates a random one for you.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The principals.
+    * Specifies a list of principals to whom you want to the resource share. This can be null if you want to add only resources. What the principals can do with the resources in the share is determined by the RAM permissions that you associate with the resource share. See AssociateResourceSharePermission. You can include the following values:   An Amazon Web Services account ID, for example: 123456789012    An Amazon Resoure Name (ARN) of an organization in Organizations, for example: organizations::123456789012:organization/o-exampleorgid    An ARN of an organizational unit (OU) in Organizations, for example: organizations::123456789012:ou/o-exampleorgid/ou-examplerootid-exampleouid123    An ARN of an IAM role, for example: iam::123456789012:role/rolename    An ARN of an IAM user, for example: iam::123456789012user/username     Not all resource types can be shared with IAM roles and users. For more information, see Sharing with IAM roles and users in the Resource Access Manager User Guide. 
     */
   var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARN) of the resources.
+    * Specifies a list of Amazon Resource Names (ARNs) of the resources that you want to share. This can be null if you want to add only principals.
     */
   var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * Specifies the Amazon Resoure Name (ARN) of the resource share that you want to add principals or resources to.
     */
   var resourceShareArn: String
 }
@@ -43,13 +43,13 @@ object AssociateResourceShareRequest {
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value*))
     
     inline def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
     inline def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
-    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value*))
     
     inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }

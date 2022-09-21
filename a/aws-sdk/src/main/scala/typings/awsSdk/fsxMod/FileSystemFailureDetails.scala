@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemFailureDetails extends StObject {
   
   /**
-    * A message describing any failures that occurred during file system creation.
+    * A message describing any failures that occurred.
     */
   var Message: js.UndefOr[ErrorMessage] = js.undefined
 }

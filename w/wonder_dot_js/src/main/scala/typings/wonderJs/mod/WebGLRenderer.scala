@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "WebGLRenderer")
 @js.native
-class WebGLRenderer ()
+open class WebGLRenderer ()
   extends typings.wonderJs.webGLRendererMod.WebGLRenderer
 /* static members */
 object WebGLRenderer {

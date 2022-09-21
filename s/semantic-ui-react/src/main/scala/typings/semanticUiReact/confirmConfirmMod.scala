@@ -24,10 +24,9 @@ object confirmConfirmMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/addons/Confirm/Confirm", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ConfirmProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ConfirmProps, ComponentState, Any] {
     def this(props: ConfirmProps) = this()
-    def this(props: ConfirmProps, context: js.Any) = this()
+    def this(props: ConfirmProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/addons/Confirm/Confirm", JSImport.Default)
   @js.native
@@ -36,7 +35,7 @@ object confirmConfirmMod extends Shortcut {
   trait ConfirmProps
     extends StObject
        with StrictConfirmProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ConfirmProps {
     
     inline def apply(): ConfirmProps = {

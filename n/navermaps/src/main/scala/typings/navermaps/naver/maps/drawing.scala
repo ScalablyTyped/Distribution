@@ -172,14 +172,14 @@ object drawing {
     
     def getDrawing(id: String): DrawingOverlay = js.native
     
-    def getDrawings(): js.Any = js.native
+    def getDrawings(): Any = js.native
     
     def getMap(): Map | Null = js.native
     
     def setMap(): Unit = js.native
     def setMap(map: Map): Unit = js.native
     
-    def toGeoJson(): js.Any = js.native
+    def toGeoJson(): Any = js.native
   }
   
   trait DrawingOptions extends StObject {
@@ -231,7 +231,7 @@ object drawing {
       
       inline def setDrawingControlUndefined: Self = StObject.set(x, "drawingControl", js.undefined)
       
-      inline def setDrawingControlVarargs(value: DrawingMode*): Self = StObject.set(x, "drawingControl", js.Array(value :_*))
+      inline def setDrawingControlVarargs(value: DrawingMode*): Self = StObject.set(x, "drawingControl", js.Array(value*))
       
       inline def setDrawingMode(value: DrawingMode): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
       

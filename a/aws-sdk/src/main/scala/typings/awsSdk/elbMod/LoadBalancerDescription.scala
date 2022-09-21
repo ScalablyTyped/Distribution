@@ -29,7 +29,7 @@ trait LoadBalancerDescription extends StObject {
   /**
     * The date and time the load balancer was created.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.elbMod.CreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The DNS name of the load balancer.
@@ -99,13 +99,13 @@ object LoadBalancerDescription {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBackendServerDescriptions(value: BackendServerDescriptions): Self = StObject.set(x, "BackendServerDescriptions", value.asInstanceOf[js.Any])
     
     inline def setBackendServerDescriptionsUndefined: Self = StObject.set(x, "BackendServerDescriptions", js.undefined)
     
-    inline def setBackendServerDescriptionsVarargs(value: BackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value :_*))
+    inline def setBackendServerDescriptionsVarargs(value: BackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value*))
     
     inline def setCanonicalHostedZoneName(value: DNSName): Self = StObject.set(x, "CanonicalHostedZoneName", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object LoadBalancerDescription {
     
     inline def setCanonicalHostedZoneNameUndefined: Self = StObject.set(x, "CanonicalHostedZoneName", js.undefined)
     
-    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -131,13 +131,13 @@ object LoadBalancerDescription {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setListenerDescriptions(value: ListenerDescriptions): Self = StObject.set(x, "ListenerDescriptions", value.asInstanceOf[js.Any])
     
     inline def setListenerDescriptionsUndefined: Self = StObject.set(x, "ListenerDescriptions", js.undefined)
     
-    inline def setListenerDescriptionsVarargs(value: ListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value :_*))
+    inline def setListenerDescriptionsVarargs(value: ListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value*))
     
     inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
@@ -155,7 +155,7 @@ object LoadBalancerDescription {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSourceSecurityGroup(value: SourceSecurityGroup): Self = StObject.set(x, "SourceSecurityGroup", value.asInstanceOf[js.Any])
     
@@ -165,7 +165,7 @@ object LoadBalancerDescription {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value*))
     
     inline def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     

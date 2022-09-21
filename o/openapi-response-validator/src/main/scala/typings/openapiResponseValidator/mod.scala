@@ -1,13 +1,14 @@
 package typings.openapiResponseValidator
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.mod.ErrorObject
-import typings.ajv.mod.FormatDefinition
-import typings.ajv.mod.FormatValidator
+import typings.ajv.distTypesMod.ErrorObject
+import typings.ajv.distTypesMod.Format
+import typings.ajv.distTypesMod.FormatDefinition
 import typings.openapiResponseValidator.anon.Errors
 import typings.openapiResponseValidator.anon.Schema
 import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPIV3.ComponentsObject
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,37 +17,37 @@ object mod {
   
   @JSImport("openapi-response-validator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with OpenAPIResponseValidator {
     def this(args: OpenAPIResponseValidatorArgs) = this()
     
     /* private */ /* CompleteClass */
-    var errorMapper: js.Any = js.native
+    var errorMapper: Any = js.native
     
     /* CompleteClass */
-    override def validateResponse(statusCode: String, response: js.Any): Unit | OpenAPIResponseValidatorValidationError = js.native
+    override def validateResponse(statusCode: String, response: Any): Unit | OpenAPIResponseValidatorValidationError = js.native
     /* CompleteClass */
-    override def validateResponse(statusCode: js.Any, response: js.Any): Errors = js.native
+    override def validateResponse(statusCode: Any, response: Any): Errors = js.native
     
     /* private */ /* CompleteClass */
-    var validators: js.Any = js.native
+    var validators: Any = js.native
   }
   
   trait IOpenAPIResponseValidator extends StObject {
     
-    def validateResponse(statusCode: String, response: js.Any): Unit | OpenAPIResponseValidatorValidationError
+    def validateResponse(statusCode: String, response: Any): Unit | OpenAPIResponseValidatorValidationError
   }
   object IOpenAPIResponseValidator {
     
-    inline def apply(validateResponse: (String, js.Any) => Unit | OpenAPIResponseValidatorValidationError): IOpenAPIResponseValidator = {
+    inline def apply(validateResponse: (String, Any) => Unit | OpenAPIResponseValidatorValidationError): IOpenAPIResponseValidator = {
       val __obj = js.Dynamic.literal(validateResponse = js.Any.fromFunction2(validateResponse))
       __obj.asInstanceOf[IOpenAPIResponseValidator]
     }
     
     extension [Self <: IOpenAPIResponseValidator](x: Self) {
       
-      inline def setValidateResponse(value: (String, js.Any) => Unit | OpenAPIResponseValidatorValidationError): Self = StObject.set(x, "validateResponse", js.Any.fromFunction2(value))
+      inline def setValidateResponse(value: (String, Any) => Unit | OpenAPIResponseValidatorValidationError): Self = StObject.set(x, "validateResponse", js.Any.fromFunction2(value))
     }
   }
   
@@ -54,26 +55,26 @@ object mod {
     extends StObject
        with IOpenAPIResponseValidator {
     
-    /* private */ var errorMapper: js.Any
+    /* private */ var errorMapper: Any
     
-    def validateResponse(statusCode: js.Any, response: js.Any): Errors
+    def validateResponse(statusCode: Any, response: Any): Errors
     
-    /* private */ var validators: js.Any
+    /* private */ var validators: Any
   }
   object OpenAPIResponseValidator {
     
-    inline def apply(errorMapper: js.Any, validateResponse: (js.Any, js.Any) => Errors, validators: js.Any): OpenAPIResponseValidator = {
+    inline def apply(errorMapper: Any, validateResponse: (Any, Any) => Errors, validators: Any): OpenAPIResponseValidator = {
       val __obj = js.Dynamic.literal(errorMapper = errorMapper.asInstanceOf[js.Any], validateResponse = js.Any.fromFunction2(validateResponse), validators = validators.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIResponseValidator]
     }
     
     extension [Self <: OpenAPIResponseValidator](x: Self) {
       
-      inline def setErrorMapper(value: js.Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
+      inline def setErrorMapper(value: Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
       
-      inline def setValidateResponse(value: (js.Any, js.Any) => Errors): Self = StObject.set(x, "validateResponse", js.Any.fromFunction2(value))
+      inline def setValidateResponse(value: (Any, Any) => Errors): Self = StObject.set(x, "validateResponse", js.Any.fromFunction2(value))
       
-      inline def setValidators(value: js.Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      inline def setValidators(value: Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,34 +82,28 @@ object mod {
     
     var components: js.UndefOr[ComponentsObject] = js.undefined
     
-    var customFormats: StringDictionary[FormatValidator | FormatDefinition]
+    var customFormats: js.UndefOr[StringDictionary[Format | (FormatDefinition[String | Double])]] = js.undefined
     
-    var definitions: StringDictionary[IJsonSchema]
+    var definitions: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
     
     var errorTransformer: js.UndefOr[
         js.Function2[
           /* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, 
-          /* ajvError */ ErrorObject, 
-          js.Any
+          /* ajvError */ ErrorObject[String, Record[String, Any], Any], 
+          Any
         ]
       ] = js.undefined
     
-    var externalSchemas: StringDictionary[IJsonSchema]
+    var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
     
-    var loggingKey: String
+    var loggingKey: js.UndefOr[String] = js.undefined
     
     var responses: StringDictionary[Schema]
   }
   object OpenAPIResponseValidatorArgs {
     
-    inline def apply(
-      customFormats: StringDictionary[FormatValidator | FormatDefinition],
-      definitions: StringDictionary[IJsonSchema],
-      externalSchemas: StringDictionary[IJsonSchema],
-      loggingKey: String,
-      responses: StringDictionary[Schema]
-    ): OpenAPIResponseValidatorArgs = {
-      val __obj = js.Dynamic.literal(customFormats = customFormats.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any], externalSchemas = externalSchemas.asInstanceOf[js.Any], loggingKey = loggingKey.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    inline def apply(responses: StringDictionary[Schema]): OpenAPIResponseValidatorArgs = {
+      val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIResponseValidatorArgs]
     }
     
@@ -118,19 +113,27 @@ object mod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setCustomFormats(value: StringDictionary[FormatValidator | FormatDefinition]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: StringDictionary[Format | (FormatDefinition[String | Double])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      
+      inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
       
       inline def setDefinitions(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
+      inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
+      
       inline def setErrorTransformer(
-        value: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject) => js.Any
+        value: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject[String, Record[String, Any], Any]) => Any
       ): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
       inline def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
       
       inline def setExternalSchemas(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
       
+      inline def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
+      
       inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      
+      inline def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
       
       inline def setResponses(value: StringDictionary[Schema]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     }
@@ -165,7 +168,7 @@ object mod {
   
   trait OpenAPIResponseValidatorValidationError extends StObject {
     
-    var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var errors: js.UndefOr[js.Array[Any]] = js.undefined
     
     var message: String
   }
@@ -178,11 +181,11 @@ object mod {
     
     extension [Self <: OpenAPIResponseValidatorValidationError](x: Self) {
       
-      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

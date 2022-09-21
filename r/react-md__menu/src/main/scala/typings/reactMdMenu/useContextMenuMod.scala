@@ -1,11 +1,22 @@
 package typings.reactMdMenu
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Dispatch
-import typings.react.mod.MouseEventHandler
-import typings.react.mod.Ref
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.RefObject
 import typings.react.mod.SetStateAction
-import typings.reactMdUtils.typesMod.PositionAnchor
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
+import typings.reactMdMenu.anon.ReadonlyCalculateFixedPos
+import typings.reactMdMenu.typesMod.BaseMenuHookReturnValue
+import typings.reactMdMenu.typesMod.ProvidedMenuProps
+import typings.reactMdTransition.typesMod.FixedPositioningScrollData
+import typings.reactMdTransition.typesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesMod.TransitionExitHandler
+import typings.reactMdTransition.typesMod.TransitionScrollCallback
+import typings.reactMdUtils.positioningTypesMod.InitialCoords
+import typings.reactMdUtils.positioningTypesMod.PositionAnchor
+import typings.std.Event
+import typings.std.EventListener
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -18,138 +29,227 @@ object useContextMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
-  inline def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
+  inline def useContextMenu(): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ContextMenuHookReturnValue]
+  inline def useContextMenu(
+    hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions: ContextMenuHookOptions
+  ): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions.asInstanceOf[js.Any]).asInstanceOf[ContextMenuHookReturnValue]
   
-  trait Options extends StObject {
+  /* Inlined parent std.Omit<@react-md/menu.@react-md/menu/types/types.BaseMenuHookOptions, 'baseId' | 'visible' | 'setVisible'> */
+  trait ContextMenuHookOptions extends StObject {
     
-    /**
-      * The anchor to use for context menus.
-      *
-      * Defaults to `inner-left` and `top` to mimic native context menus.
-      */
     var anchor: js.UndefOr[PositionAnchor] = js.undefined
     
     /**
-      * The CSS classNames to use for the context menu animation. This defaults to
-      * a vertical scaling transition instead of the default "from-point-scaling"
-      * transition.
+      * Since there can generally only be one context menu visible at a time, this
+      * will be defaulted to `"context-menu"` instead of requiring an id like the
+      * {@link useMenu} hook. If the default `id` does not work for your use case,
+      * it can still be overridden.
+      *
+      * @defaultValue `"context-menu"`
+      * @see {@link BaseMenuHookOptions.baseId}
       */
-    var classNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
+    var baseId: js.UndefOr[String] = js.undefined
+    
+    var closeOnResize: js.UndefOr[Boolean] = js.undefined
+    
+    var closeOnScroll: js.UndefOr[Boolean] = js.undefined
+    
+    var disableFocusOnMount: js.UndefOr[Boolean] = js.undefined
+    
+    var disableFocusOnUnmount: js.UndefOr[Boolean] = js.undefined
+    
+    var fixedPositionOptions: js.UndefOr[ReadonlyCalculateFixedPos] = js.undefined
+    
+    var getFixedPositionOptions: js.UndefOr[js.Function0[ReadonlyCalculateFixedPos]] = js.undefined
+    
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When a context menu becomes visible, the native functionality is to also
-      * highlight any text below the cursor when possible. Since this is a custom
-      * context menu, this is normally not desired behavior so this hook will
-      * automatically deselect this text. If the text selection behavior is
-      * desired, this property can be enabled to keep text selected.
+      * The label _should_ be required for a context menu since there is no valid
+      * "toggle" component here to inherit a label from. However, this will be
+      * defaulted to `"Context Menu"` for convenience.
+      *
+      * @defaultValue `"Context Menu"`
+      * @see {@link BaseMenuHookOptions.menuLabel}
       */
-    var disableDeselect: js.UndefOr[Boolean] = js.undefined
+    var menuLabel: js.UndefOr[String] = js.undefined
+    
+    var menuitem: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The id to use for the context menu. This defaults to `context-menu` since
-      * there can usually only be one context menu visible at a time.
+      * An optional custom contextmenu event handler that will be merged with the
+      * menu visibility behavior. If this function calls `event.stopPropagation()`,
+      * the default context menu behavior will not occur.
       */
-    var id: js.UndefOr[String] = js.undefined
+    var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    
+    var onEnter: js.UndefOr[TransitionEnterHandler] = js.undefined
+    
+    var onEntered: js.UndefOr[TransitionEnterHandler] = js.undefined
+    
+    var onEntering: js.UndefOr[TransitionEnterHandler] = js.undefined
+    
+    var onExited: js.UndefOr[TransitionExitHandler] = js.undefined
+    
+    var onFixedPositionResize: js.UndefOr[EventListener] = js.undefined
+    
+    var onFixedPositionScroll: js.UndefOr[TransitionScrollCallback[HTMLElement, HTMLDivElement]] = js.undefined
     
     /**
-      * An optional ref that should be merged with the returned ref.
+      * Unlike other menus, context menus will default to no longer allowing the
+      * page to be scrolled while visible.
+      *
+      * @see {@link BaseMenuHookOptions.preventScroll}
+      * @defaultValue `true`.
       */
-    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+    var preventScroll: js.UndefOr[Boolean] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
-  object Options {
+  object ContextMenuHookOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): ContextMenuHookOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[ContextMenuHookOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: ContextMenuHookOptions](x: Self) {
       
       inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
-      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setBaseIdUndefined: Self = StObject.set(x, "baseId", js.undefined)
       
-      inline def setDisableDeselect(value: Boolean): Self = StObject.set(x, "disableDeselect", value.asInstanceOf[js.Any])
+      inline def setCloseOnResize(value: Boolean): Self = StObject.set(x, "closeOnResize", value.asInstanceOf[js.Any])
       
-      inline def setDisableDeselectUndefined: Self = StObject.set(x, "disableDeselect", js.undefined)
+      inline def setCloseOnResizeUndefined: Self = StObject.set(x, "closeOnResize", js.undefined)
       
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setCloseOnScroll(value: Boolean): Self = StObject.set(x, "closeOnScroll", value.asInstanceOf[js.Any])
       
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setCloseOnScrollUndefined: Self = StObject.set(x, "closeOnScroll", js.undefined)
       
-      inline def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setDisableFocusOnMount(value: Boolean): Self = StObject.set(x, "disableFocusOnMount", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setDisableFocusOnMountUndefined: Self = StObject.set(x, "disableFocusOnMount", js.undefined)
       
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setDisableFocusOnUnmount(value: Boolean): Self = StObject.set(x, "disableFocusOnUnmount", value.asInstanceOf[js.Any])
       
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setDisableFocusOnUnmountUndefined: Self = StObject.set(x, "disableFocusOnUnmount", js.undefined)
+      
+      inline def setFixedPositionOptions(value: ReadonlyCalculateFixedPos): Self = StObject.set(x, "fixedPositionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFixedPositionOptionsUndefined: Self = StObject.set(x, "fixedPositionOptions", js.undefined)
+      
+      inline def setGetFixedPositionOptions(value: () => ReadonlyCalculateFixedPos): Self = StObject.set(x, "getFixedPositionOptions", js.Any.fromFunction0(value))
+      
+      inline def setGetFixedPositionOptionsUndefined: Self = StObject.set(x, "getFixedPositionOptions", js.undefined)
+      
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      
+      inline def setMenuLabel(value: String): Self = StObject.set(x, "menuLabel", value.asInstanceOf[js.Any])
+      
+      inline def setMenuLabelUndefined: Self = StObject.set(x, "menuLabel", js.undefined)
+      
+      inline def setMenuitem(value: Boolean): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+      
+      inline def setMenuitemUndefined: Self = StObject.set(x, "menuitem", js.undefined)
+      
+      inline def setOnContextMenu(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      
+      inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      
+      inline def setOnEntered(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+      
+      inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
+      
+      inline def setOnEntering(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+      
+      inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
+      
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
+      
+      inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+      
+      inline def setOnFixedPositionResize(value: /* evt */ Event => Unit): Self = StObject.set(x, "onFixedPositionResize", js.Any.fromFunction1(value))
+      
+      inline def setOnFixedPositionResizeUndefined: Self = StObject.set(x, "onFixedPositionResize", js.undefined)
+      
+      inline def setOnFixedPositionScroll(
+        value: (/* event */ Event, /* data */ FixedPositioningScrollData[HTMLElement, HTMLDivElement]) => Unit
+      ): Self = StObject.set(x, "onFixedPositionScroll", js.Any.fromFunction2(value))
+      
+      inline def setOnFixedPositionScrollUndefined: Self = StObject.set(x, "onFixedPositionScroll", js.undefined)
+      
+      inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
-  /* Inlined parent std.Required<std.Pick<@react-md/menu.@react-md/menu/types/Menu.MenuProps, @react-md/menu.@react-md/menu/types/useContextMenu.ProvidedPropNames>> */
-  @js.native
-  trait ProvidedContextMenuProps extends StObject {
-    
-    var anchor: js.Any = js.native
-    
-    var classNames: js.Any = js.native
-    
-    var disableControlClickOkay: js.Any = js.native
-    
-    var id: js.Any = js.native
-    
-    var onRequestClose: js.Any = js.native
-    
-    var positionOptions: js.Any = js.native
+  trait ContextMenuHookReturnValue
+    extends StObject
+       with BaseMenuHookReturnValue {
     
     /**
-      * A ref that must be provided to the `Menu` component that is acting as a
-      * context menu if you want to allow the native context menus within this
-      * custom context menu.
-      *
-      * If this is never provided to the `Menu` component, right clicking (to
-      * inspect an element for example) will close this context menu.
+      * An event handler that should passed to an element that causes a `Menu` to
+      * appear instead of the default browser context menu.
       */
-    def ref(): Unit = js.native
-    def ref(instance: HTMLDivElement): Unit = js.native
+    def onContextMenu[E /* <: HTMLElement */](event: MouseEvent[E, NativeMouseEvent]): Unit
     
-    var visible: js.Any = js.native
+    /**
+      * This function can be used to manually move the context menu to new
+      * coordinates if the default behavior did not work. You probably won't ever
+      * need to use this.
+      */
+    var setCoords: Dispatch[SetStateAction[InitialCoords]]
+    
+    /**
+      * A function that can be used to manually set the visibility of the context
+      * menu when the default behavior does not match your use case.
+      */
+    var setVisible: Dispatch[SetStateAction[Boolean]]
+    
+    /**
+      * Boolean if the context menu is currently visible,
+      */
+    var visible: Boolean
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMdMenu.reactMdMenuStrings.id
-    - typings.reactMdMenu.reactMdMenuStrings.anchor
-    - typings.reactMdMenu.reactMdMenuStrings.visible
-    - typings.reactMdMenu.reactMdMenuStrings.classNames
-    - typings.reactMdMenu.reactMdMenuStrings.positionOptions
-    - typings.reactMdMenu.reactMdMenuStrings.onRequestClose
-    - typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay
-  */
-  trait ProvidedPropNames extends StObject
-  object ProvidedPropNames {
+  object ContextMenuHookReturnValue {
     
-    inline def anchor: typings.reactMdMenu.reactMdMenuStrings.anchor = "anchor".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.anchor]
+    inline def apply(
+      menuNodeRef: RefObject[HTMLDivElement],
+      menuProps: ProvidedMenuProps,
+      onContextMenu: MouseEvent[Any, NativeMouseEvent] => Unit,
+      setCoords: SetStateAction[InitialCoords] => Unit,
+      setVisible: SetStateAction[Boolean] => Unit,
+      visible: Boolean
+    ): ContextMenuHookReturnValue = {
+      val __obj = js.Dynamic.literal(menuNodeRef = menuNodeRef.asInstanceOf[js.Any], menuProps = menuProps.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), setCoords = js.Any.fromFunction1(setCoords), setVisible = js.Any.fromFunction1(setVisible), visible = visible.asInstanceOf[js.Any], menuRef = null)
+      __obj.asInstanceOf[ContextMenuHookReturnValue]
+    }
     
-    inline def classNames: typings.reactMdMenu.reactMdMenuStrings.classNames = "classNames".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.classNames]
-    
-    inline def disableControlClickOkay: typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay = "disableControlClickOkay".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay]
-    
-    inline def id: typings.reactMdMenu.reactMdMenuStrings.id = "id".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.id]
-    
-    inline def onRequestClose: typings.reactMdMenu.reactMdMenuStrings.onRequestClose = "onRequestClose".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.onRequestClose]
-    
-    inline def positionOptions: typings.reactMdMenu.reactMdMenuStrings.positionOptions = "positionOptions".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.positionOptions]
-    
-    inline def visible: typings.reactMdMenu.reactMdMenuStrings.visible = "visible".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.visible]
+    extension [Self <: ContextMenuHookReturnValue](x: Self) {
+      
+      inline def setOnContextMenu(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      
+      inline def setSetCoords(value: SetStateAction[InitialCoords] => Unit): Self = StObject.set(x, "setCoords", js.Any.fromFunction1(value))
+      
+      inline def setSetVisible(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    }
   }
-  
-  type ReturnValue[CE /* <: HTMLElement */] = js.Tuple3[ProvidedContextMenuProps, MouseEventHandler[CE], VisibilityDispatcher]
-  
-  type VisibilityDispatcher = Dispatch[SetStateAction[Boolean]]
 }

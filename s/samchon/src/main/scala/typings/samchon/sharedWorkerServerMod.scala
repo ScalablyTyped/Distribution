@@ -18,7 +18,7 @@ object sharedWorkerServerMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_connect: js.Any = js.native
+    /* private */ var _Handle_connect: Any = js.native
     
     /**
       * Add a newly connected remote client.

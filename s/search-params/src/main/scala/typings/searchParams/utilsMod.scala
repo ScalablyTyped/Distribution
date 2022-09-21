@@ -12,7 +12,7 @@ object utilsMod {
   
   inline def getSearch(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearch")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def isSerialisable(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialisable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSerialisable(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialisable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def parseName(name: String): IParsedName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[IParsedName]
   

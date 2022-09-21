@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpdateItemTaxesRequest")
 @js.native
-class UpdateItemTaxesRequest () extends StObject {
+open class UpdateItemTaxesRequest () extends StObject {
   
   /**
     * IDs for the CatalogItems associated with the CatalogTax objects being updated.

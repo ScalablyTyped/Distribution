@@ -10,11 +10,15 @@ trait SVGLineElement
   extends StObject
      with SVGGeometryElement {
   
+  /* standard dom */
   val x1: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val x2: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y1: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y2: SVGAnimatedLength = js.native
 }

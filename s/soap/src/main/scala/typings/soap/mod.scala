@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.soap.serverMod.ServerType
 import typings.soap.typesMod.IOptions
 import typings.soap.typesMod.IServerOptions
@@ -23,23 +23,23 @@ object mod {
   
   @JSImport("soap", "BasicAuthSecurity")
   @js.native
-  class BasicAuthSecurity protected ()
+  open class BasicAuthSecurity protected ()
     extends typings.soap.securityMod.BasicAuthSecurity {
     def this(username: String, password: String) = this()
-    def this(username: String, password: String, defaults: js.Any) = this()
+    def this(username: String, password: String, defaults: Any) = this()
   }
   
   @JSImport("soap", "BearerSecurity")
   @js.native
-  class BearerSecurity protected ()
+  open class BearerSecurity protected ()
     extends typings.soap.securityMod.BearerSecurity {
     def this(token: String) = this()
-    def this(token: String, defaults: js.Any) = this()
+    def this(token: String, defaults: Any) = this()
   }
   
   @JSImport("soap", "Client")
   @js.native
-  class Client protected ()
+  open class Client protected ()
     extends typings.soap.clientMod.Client {
     def this(wsdl: typings.soap.wsdlMod.WSDL) = this()
     def this(wsdl: typings.soap.wsdlMod.WSDL, endpoint: String) = this()
@@ -49,82 +49,94 @@ object mod {
   
   @JSImport("soap", "ClientSSLSecurity")
   @js.native
-  class ClientSSLSecurity protected ()
+  open class ClientSSLSecurity protected ()
     extends typings.soap.securityMod.ClientSSLSecurity {
     def this(key: String, cert: String) = this()
     def this(key: String, cert: Buffer) = this()
     def this(key: Buffer, cert: String) = this()
     def this(key: Buffer, cert: Buffer) = this()
     def this(key: String, cert: String, ca: String) = this()
-    def this(key: String, cert: String, ca: js.Any) = this()
-    def this(key: String, cert: String, ca: js.Array[js.Any]) = this()
+    def this(key: String, cert: String, ca: js.Array[Any]) = this()
+    def this(key: String, cert: String, ca: Any) = this()
     def this(key: String, cert: String, ca: Buffer) = this()
     def this(key: String, cert: Buffer, ca: String) = this()
-    def this(key: String, cert: Buffer, ca: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.Array[js.Any]) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[Any]) = this()
+    def this(key: String, cert: Buffer, ca: Any) = this()
     def this(key: String, cert: Buffer, ca: Buffer) = this()
     def this(key: Buffer, cert: String, ca: String) = this()
-    def this(key: Buffer, cert: String, ca: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.Array[js.Any]) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[Any]) = this()
+    def this(key: Buffer, cert: String, ca: Any) = this()
     def this(key: Buffer, cert: String, ca: Buffer) = this()
     def this(key: Buffer, cert: Buffer, ca: String) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any]) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[Any]) = this()
+    def this(key: Buffer, cert: Buffer, ca: Any) = this()
     def this(key: Buffer, cert: Buffer, ca: Buffer) = this()
-    def this(key: String, cert: String, ca: String, defaults: js.Any) = this()
-    def this(key: String, cert: String, ca: js.Any, defaults: js.Any) = this()
-    def this(key: String, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
-    def this(key: String, cert: String, ca: Unit, defaults: js.Any) = this()
-    def this(key: String, cert: String, ca: Buffer, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: String, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: Unit, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: String, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.Any, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: Unit, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: Buffer, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: String, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: Unit, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: String, defaults: Any) = this()
+    def this(key: String, cert: String, ca: js.Array[Any], defaults: Any) = this()
+    def this(key: String, cert: String, ca: Any, defaults: Any) = this()
+    def this(key: String, cert: String, ca: Unit, defaults: Any) = this()
+    def this(key: String, cert: String, ca: Buffer, defaults: Any) = this()
+    def this(key: String, cert: Buffer, ca: String, defaults: Any) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[Any], defaults: Any) = this()
+    def this(key: String, cert: Buffer, ca: Any, defaults: Any) = this()
+    def this(key: String, cert: Buffer, ca: Unit, defaults: Any) = this()
+    def this(key: String, cert: Buffer, ca: Buffer, defaults: Any) = this()
+    def this(key: Buffer, cert: String, ca: String, defaults: Any) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[Any], defaults: Any) = this()
+    def this(key: Buffer, cert: String, ca: Any, defaults: Any) = this()
+    def this(key: Buffer, cert: String, ca: Unit, defaults: Any) = this()
+    def this(key: Buffer, cert: String, ca: Buffer, defaults: Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: String, defaults: Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[Any], defaults: Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: Any, defaults: Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: Unit, defaults: Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: Any) = this()
   }
   
   @JSImport("soap", "ClientSSLSecurityPFX")
   @js.native
-  class ClientSSLSecurityPFX protected ()
+  open class ClientSSLSecurityPFX protected ()
     extends typings.soap.securityMod.ClientSSLSecurityPFX {
     def this(pfx: String) = this()
     def this(pfx: Buffer) = this()
-    def this(pfx: String, defaults: js.Any) = this()
-    def this(pfx: Buffer, defaults: js.Any) = this()
+    def this(pfx: String, defaults: Any) = this()
+    def this(pfx: String, passphrase: String) = this()
+    def this(pfx: Buffer, defaults: Any) = this()
+    def this(pfx: Buffer, passphrase: String) = this()
+    def this(pfx: String, passphrase: String, defaults: Any) = this()
+    def this(pfx: Buffer, passphrase: String, defaults: Any) = this()
   }
   
   @JSImport("soap", "HttpClient")
   @js.native
-  class HttpClient ()
+  open class HttpClient ()
     extends typings.soap.httpMod.HttpClient {
     def this(options: IOptions) = this()
   }
   
   @JSImport("soap", "NTLMSecurity")
   @js.native
-  class NTLMSecurity protected ()
+  open class NTLMSecurity protected ()
     extends typings.soap.securityMod.NTLMSecurity {
-    def this(defaults: js.Any) = this()
+    def this(defaults: Any) = this()
   }
   
   @JSImport("soap", "Server")
   @js.native
-  class Server protected ()
+  open class Server protected ()
     extends typings.soap.serverMod.Server {
     def this(server: ServerType, path: String, services: IServices, wsdl: typings.soap.wsdlMod.WSDL) = this()
+    def this(server: ServerType, path: js.RegExp, services: IServices, wsdl: typings.soap.wsdlMod.WSDL) = this()
     def this(
       server: ServerType,
       path: String,
+      services: IServices,
+      wsdl: typings.soap.wsdlMod.WSDL,
+      options: IServerOptions
+    ) = this()
+    def this(
+      server: ServerType,
+      path: js.RegExp,
       services: IServices,
       wsdl: typings.soap.wsdlMod.WSDL,
       options: IServerOptions
@@ -133,14 +145,14 @@ object mod {
   
   @JSImport("soap", "WSDL")
   @js.native
-  class WSDL protected ()
+  open class WSDL protected ()
     extends typings.soap.wsdlMod.WSDL {
-    def this(definition: js.Any, uri: String, options: IOptions) = this()
+    def this(definition: Any, uri: String, options: IOptions) = this()
   }
   
   @JSImport("soap", "WSSecurity")
   @js.native
-  class WSSecurity protected ()
+  open class WSSecurity protected ()
     extends typings.soap.securityMod.WSSecurity {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, options: String) = this()
@@ -149,10 +161,10 @@ object mod {
   
   @JSImport("soap", "WSSecurityCert")
   @js.native
-  class WSSecurityCert protected ()
+  open class WSSecurityCert protected ()
     extends typings.soap.securityMod.WSSecurityCert {
-    def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
-    def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
+    def this(privatePEM: Any, publicP12PEM: Any, password: Any) = this()
+    def this(privatePEM: Any, publicP12PEM: Any, password: Any, options: IWSSecurityCertOptions) = this()
   }
   
   inline def createClient(url: String, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -172,7 +184,15 @@ object mod {
     path: String,
     services: IServices,
     wsdl: String,
-    callback: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]
+    callback: js.Function2[/* err */ Any, /* res */ Any, Unit]
+  ): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  inline def listen(server: ServerType, path: js.RegExp, services: IServices, wsdl: String): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  inline def listen(
+    server: ServerType,
+    path: js.RegExp,
+    services: IServices,
+    wsdl: String,
+    callback: js.Function2[/* err */ Any, /* res */ Any, Unit]
   ): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
   
   inline def passwordDigest(nonce: String, created: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("passwordDigest")(nonce.asInstanceOf[js.Any], created.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -188,24 +208,24 @@ object mod {
     def BasicAuthSecurity: Instantiable3[
         /* username */ String, 
         /* password */ String, 
-        /* defaults */ js.UndefOr[js.Any], 
+        /* defaults */ js.UndefOr[Any], 
         typings.soap.securityMod.BasicAuthSecurity
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.BasicAuthSecurity")
     @js.native
-    class BasicAuthSecurityCls protected ()
+    open class BasicAuthSecurityCls protected ()
       extends typings.soap.securityMod.BasicAuthSecurity {
       def this(username: String, password: String) = this()
-      def this(username: String, password: String, defaults: js.Any) = this()
+      def this(username: String, password: String, defaults: Any) = this()
     }
     
     inline def BasicAuthSecurity_=(
       x: Instantiable3[
           /* username */ String, 
           /* password */ String, 
-          /* defaults */ js.UndefOr[js.Any], 
+          /* defaults */ js.UndefOr[Any], 
           typings.soap.securityMod.BasicAuthSecurity
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BasicAuthSecurity")(x.asInstanceOf[js.Any])
@@ -214,23 +234,23 @@ object mod {
     @js.native
     def BearerSecurity: Instantiable2[
         /* token */ String, 
-        /* defaults */ js.UndefOr[js.Any], 
+        /* defaults */ js.UndefOr[Any], 
         typings.soap.securityMod.BearerSecurity
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.BearerSecurity")
     @js.native
-    class BearerSecurityCls protected ()
+    open class BearerSecurityCls protected ()
       extends typings.soap.securityMod.BearerSecurity {
       def this(token: String) = this()
-      def this(token: String, defaults: js.Any) = this()
+      def this(token: String, defaults: Any) = this()
     }
     
     inline def BearerSecurity_=(
       x: Instantiable2[
           /* token */ String, 
-          /* defaults */ js.UndefOr[js.Any], 
+          /* defaults */ js.UndefOr[Any], 
           typings.soap.securityMod.BearerSecurity
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BearerSecurity")(x.asInstanceOf[js.Any])
@@ -240,81 +260,81 @@ object mod {
     def ClientSSLSecurity: Instantiable4[
         /* key */ String | Buffer, 
         /* cert */ String | Buffer, 
-        /* ca */ js.UndefOr[Buffer | String | js.Array[js.Any] | js.Any], 
-        /* defaults */ js.UndefOr[js.Any], 
+        /* ca */ js.UndefOr[Buffer | String | js.Array[Any] | Any], 
+        /* defaults */ js.UndefOr[Any], 
         typings.soap.securityMod.ClientSSLSecurity
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.ClientSSLSecurity")
     @js.native
-    class ClientSSLSecurityCls protected ()
+    open class ClientSSLSecurityCls protected ()
       extends typings.soap.securityMod.ClientSSLSecurity {
       def this(key: String, cert: String) = this()
       def this(key: String, cert: Buffer) = this()
       def this(key: Buffer, cert: String) = this()
       def this(key: Buffer, cert: Buffer) = this()
       def this(key: String, cert: String, ca: String) = this()
-      def this(key: String, cert: String, ca: js.Any) = this()
-      def this(key: String, cert: String, ca: js.Array[js.Any]) = this()
+      def this(key: String, cert: String, ca: js.Array[Any]) = this()
+      def this(key: String, cert: String, ca: Any) = this()
       def this(key: String, cert: String, ca: Buffer) = this()
       def this(key: String, cert: Buffer, ca: String) = this()
-      def this(key: String, cert: Buffer, ca: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.Array[js.Any]) = this()
+      def this(key: String, cert: Buffer, ca: js.Array[Any]) = this()
+      def this(key: String, cert: Buffer, ca: Any) = this()
       def this(key: String, cert: Buffer, ca: Buffer) = this()
       def this(key: Buffer, cert: String, ca: String) = this()
-      def this(key: Buffer, cert: String, ca: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.Array[js.Any]) = this()
+      def this(key: Buffer, cert: String, ca: js.Array[Any]) = this()
+      def this(key: Buffer, cert: String, ca: Any) = this()
       def this(key: Buffer, cert: String, ca: Buffer) = this()
       def this(key: Buffer, cert: Buffer, ca: String) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any]) = this()
+      def this(key: Buffer, cert: Buffer, ca: js.Array[Any]) = this()
+      def this(key: Buffer, cert: Buffer, ca: Any) = this()
       def this(key: Buffer, cert: Buffer, ca: Buffer) = this()
-      def this(key: String, cert: String, ca: String, defaults: js.Any) = this()
-      def this(key: String, cert: String, ca: js.Any, defaults: js.Any) = this()
-      def this(key: String, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
-      def this(key: String, cert: String, ca: Unit, defaults: js.Any) = this()
-      def this(key: String, cert: String, ca: Buffer, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: String, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: Unit, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: String, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.Any, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: Unit, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: Buffer, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: String, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: Unit, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
+      def this(key: String, cert: String, ca: String, defaults: Any) = this()
+      def this(key: String, cert: String, ca: js.Array[Any], defaults: Any) = this()
+      def this(key: String, cert: String, ca: Any, defaults: Any) = this()
+      def this(key: String, cert: String, ca: Unit, defaults: Any) = this()
+      def this(key: String, cert: String, ca: Buffer, defaults: Any) = this()
+      def this(key: String, cert: Buffer, ca: String, defaults: Any) = this()
+      def this(key: String, cert: Buffer, ca: js.Array[Any], defaults: Any) = this()
+      def this(key: String, cert: Buffer, ca: Any, defaults: Any) = this()
+      def this(key: String, cert: Buffer, ca: Unit, defaults: Any) = this()
+      def this(key: String, cert: Buffer, ca: Buffer, defaults: Any) = this()
+      def this(key: Buffer, cert: String, ca: String, defaults: Any) = this()
+      def this(key: Buffer, cert: String, ca: js.Array[Any], defaults: Any) = this()
+      def this(key: Buffer, cert: String, ca: Any, defaults: Any) = this()
+      def this(key: Buffer, cert: String, ca: Unit, defaults: Any) = this()
+      def this(key: Buffer, cert: String, ca: Buffer, defaults: Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: String, defaults: Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: js.Array[Any], defaults: Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: Any, defaults: Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: Unit, defaults: Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: Any) = this()
     }
     
     @JSImport("soap", "security.ClientSSLSecurityPFX")
     @js.native
     def ClientSSLSecurityPFX: Instantiable2[
         /* pfx */ String | Buffer, 
-        /* defaults */ js.UndefOr[js.Any], 
+        /* defaults */ js.UndefOr[Any], 
         typings.soap.securityMod.ClientSSLSecurityPFX
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.ClientSSLSecurityPFX")
     @js.native
-    class ClientSSLSecurityPFXCls protected ()
+    open class ClientSSLSecurityPFXCls protected ()
       extends typings.soap.securityMod.ClientSSLSecurityPFX {
       def this(pfx: String) = this()
       def this(pfx: Buffer) = this()
-      def this(pfx: String, defaults: js.Any) = this()
-      def this(pfx: Buffer, defaults: js.Any) = this()
+      def this(pfx: String, defaults: Any) = this()
+      def this(pfx: Buffer, defaults: Any) = this()
     }
     
     inline def ClientSSLSecurityPFX_=(
       x: Instantiable2[
           /* pfx */ String | Buffer, 
-          /* defaults */ js.UndefOr[js.Any], 
+          /* defaults */ js.UndefOr[Any], 
           typings.soap.securityMod.ClientSSLSecurityPFX
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientSSLSecurityPFX")(x.asInstanceOf[js.Any])
@@ -323,25 +343,25 @@ object mod {
       x: Instantiable4[
           /* key */ String | Buffer, 
           /* cert */ String | Buffer, 
-          /* ca */ js.UndefOr[Buffer | String | js.Array[js.Any] | js.Any], 
-          /* defaults */ js.UndefOr[js.Any], 
+          /* ca */ js.UndefOr[Buffer | String | js.Array[Any] | Any], 
+          /* defaults */ js.UndefOr[Any], 
           typings.soap.securityMod.ClientSSLSecurity
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientSSLSecurity")(x.asInstanceOf[js.Any])
     
     @JSImport("soap", "security.NTLMSecurity")
     @js.native
-    def NTLMSecurity: Instantiable1[/* defaults */ js.Any, typings.soap.securityMod.NTLMSecurity] = js.native
+    def NTLMSecurity: Instantiable1[/* defaults */ Any, typings.soap.securityMod.NTLMSecurity] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.NTLMSecurity")
     @js.native
-    class NTLMSecurityCls protected ()
+    open class NTLMSecurityCls protected ()
       extends typings.soap.securityMod.NTLMSecurity {
-      def this(defaults: js.Any) = this()
+      def this(defaults: Any) = this()
     }
     
-    inline def NTLMSecurity_=(x: Instantiable1[/* defaults */ js.Any, typings.soap.securityMod.NTLMSecurity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NTLMSecurity")(x.asInstanceOf[js.Any])
+    inline def NTLMSecurity_=(x: Instantiable1[/* defaults */ Any, typings.soap.securityMod.NTLMSecurity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NTLMSecurity")(x.asInstanceOf[js.Any])
     
     @JSImport("soap", "security.WSSecurity")
     @js.native
@@ -355,9 +375,9 @@ object mod {
     @JSImport("soap", "security.WSSecurityCert")
     @js.native
     def WSSecurityCert: Instantiable4[
-        /* privatePEM */ js.Any, 
-        /* publicP12PEM */ js.Any, 
-        /* password */ js.Any, 
+        /* privatePEM */ Any, 
+        /* publicP12PEM */ Any, 
+        /* password */ Any, 
         /* options */ js.UndefOr[IWSSecurityCertOptions], 
         typings.soap.securityMod.WSSecurityCert
       ] = js.native
@@ -365,17 +385,17 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.WSSecurityCert")
     @js.native
-    class WSSecurityCertCls protected ()
+    open class WSSecurityCertCls protected ()
       extends typings.soap.securityMod.WSSecurityCert {
-      def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
-      def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
+      def this(privatePEM: Any, publicP12PEM: Any, password: Any) = this()
+      def this(privatePEM: Any, publicP12PEM: Any, password: Any, options: IWSSecurityCertOptions) = this()
     }
     
     inline def WSSecurityCert_=(
       x: Instantiable4[
-          /* privatePEM */ js.Any, 
-          /* publicP12PEM */ js.Any, 
-          /* password */ js.Any, 
+          /* privatePEM */ Any, 
+          /* publicP12PEM */ Any, 
+          /* password */ Any, 
           /* options */ js.UndefOr[IWSSecurityCertOptions], 
           typings.soap.securityMod.WSSecurityCert
         ]
@@ -384,7 +404,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("soap", "security.WSSecurity")
     @js.native
-    class WSSecurityCls protected ()
+    open class WSSecurityCls protected ()
       extends typings.soap.securityMod.WSSecurity {
       def this(username: String, password: String) = this()
       def this(username: String, password: String, options: String) = this()
@@ -401,5 +421,5 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSSecurity")(x.asInstanceOf[js.Any])
   }
   
-  type CreateClientCallback = js.Function2[/* err */ js.Any, /* client */ typings.soap.clientMod.Client, Unit]
+  type CreateClientCallback = js.Function2[/* err */ Any, /* client */ typings.soap.clientMod.Client, Unit]
 }

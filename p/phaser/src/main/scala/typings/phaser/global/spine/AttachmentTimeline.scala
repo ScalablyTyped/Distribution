@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.AttachmentTimeline")
 @js.native
-class AttachmentTimeline protected ()
+open class AttachmentTimeline protected ()
   extends StObject
      with typings.phaser.spine.AttachmentTimeline {
   def this(frameCount: Double) = this()

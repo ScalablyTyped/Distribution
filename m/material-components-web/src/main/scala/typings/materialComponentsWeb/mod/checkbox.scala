@@ -1,7 +1,7 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialCheckbox.anon.PartialMDCCheckboxAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ object checkbox {
   
   @JSImport("material-components-web", "checkbox.MDCCheckbox")
   @js.native
-  class MDCCheckbox protected ()
+  open class MDCCheckbox protected ()
     extends typings.materialCheckbox.mod.MDCCheckbox {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialCheckbox.foundationMod.MDCCheckboxFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -26,12 +26,12 @@ object checkbox {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialCheckbox.componentMod.MDCCheckbox = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialCheckbox.componentMod.MDCCheckbox]
+    inline def attachTo(root: typings.std.Element): typings.materialCheckbox.componentMod.MDCCheckbox = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialCheckbox.componentMod.MDCCheckbox]
   }
   
   @JSImport("material-components-web", "checkbox.MDCCheckboxFoundation")
   @js.native
-  class MDCCheckboxFoundation ()
+  open class MDCCheckboxFoundation ()
     extends typings.materialCheckbox.mod.MDCCheckboxFoundation {
     def this(adapter: PartialMDCCheckboxAdapter) = this()
   }

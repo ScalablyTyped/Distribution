@@ -25,7 +25,7 @@ object AsyncJob {
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,
     executeAsync: (SeqEquiv[NamedValue], XJobListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCloseListener: XCloseListener => Unit
   ): AsyncJob = {

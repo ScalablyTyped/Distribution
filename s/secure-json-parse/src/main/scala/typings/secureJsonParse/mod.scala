@@ -1,5 +1,7 @@
 package typings.secureJsonParse
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import typings.secureJsonParse.secureJsonParseStrings.error
 import typings.secureJsonParse.secureJsonParseStrings.ignore
 import typings.secureJsonParse.secureJsonParseStrings.remove
@@ -13,21 +15,41 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(input: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def parse(input: String, reviver: Unit, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def parse(input: String, reviver: Reviver): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def parse(input: String, reviver: Reviver, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(text: String, reviver: Null, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: String, reviver: Unit, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: String, reviver: Reviver): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: String, reviver: Reviver, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(text: Buffer, reviver: Null, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: Buffer, reviver: Unit, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: Buffer, reviver: Reviver): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(text: Buffer, reviver: Reviver, options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def safeParse(input: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def safeParse(input: String, reviver: Reviver): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def safeParse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def safeParse(text: String, reviver: Reviver): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def safeParse(text: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def safeParse(text: Buffer, reviver: Reviver): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def scan(input: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def scan(input: js.Any, options: ParseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scan(obj: StringDictionary[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def scan(obj: StringDictionary[Any], options: ParseOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait ParseOptions extends StObject {
     
-    var constructorAction: js.UndefOr[error | remove] = js.undefined
+    /**
+      * What to do when a `constructor` key is found.
+      * - `'error'` - throw a `SyntaxError` when a `constructor.prototype` key is found. This is the default value.
+      * - `'remove'` - deletes any `constructor` keys from the result object.
+      * - `'ignore'` - skips all validation (same as calling `JSON.parse()` directly).
+      */
+    var constructorAction: js.UndefOr[error | remove | ignore] = js.undefined
     
+    /**
+      * What to do when a `__proto__` key is found.
+      * - `'error'` - throw a `SyntaxError` when a `__proto__` key is found. This is the default value.
+      * - `'remove'` - deletes any `__proto__` keys from the result object.
+      * - `'ignore'` - skips all validation (same as calling `JSON.parse()` directly).
+      */
     var protoAction: js.UndefOr[error | remove | ignore] = js.undefined
   }
   object ParseOptions {
@@ -39,7 +61,7 @@ object mod {
     
     extension [Self <: ParseOptions](x: Self) {
       
-      inline def setConstructorAction(value: error | remove): Self = StObject.set(x, "constructorAction", value.asInstanceOf[js.Any])
+      inline def setConstructorAction(value: error | remove | ignore): Self = StObject.set(x, "constructorAction", value.asInstanceOf[js.Any])
       
       inline def setConstructorActionUndefined: Self = StObject.set(x, "constructorAction", js.undefined)
       
@@ -49,5 +71,7 @@ object mod {
     }
   }
   
-  type Reviver = js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
+  type Reviver = js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]
+  
+  type ScanOptions = ParseOptions
 }

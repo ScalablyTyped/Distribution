@@ -8,17 +8,17 @@ trait DefaultObservable
   extends StObject
      with Destroyable {
   
-  def setToDefault(): js.Any
+  def setToDefault(): Any
 }
 object DefaultObservable {
   
-  inline def apply(destroy: () => js.Any, setToDefault: () => js.Any): DefaultObservable = {
+  inline def apply(destroy: () => Any, setToDefault: () => Any): DefaultObservable = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), setToDefault = js.Any.fromFunction0(setToDefault))
     __obj.asInstanceOf[DefaultObservable]
   }
   
   extension [Self <: DefaultObservable](x: Self) {
     
-    inline def setSetToDefault(value: () => js.Any): Self = StObject.set(x, "setToDefault", js.Any.fromFunction0(value))
+    inline def setSetToDefault(value: () => Any): Self = StObject.set(x, "setToDefault", js.Any.fromFunction0(value))
   }
 }

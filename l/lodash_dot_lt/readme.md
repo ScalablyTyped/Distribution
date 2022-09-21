@@ -10,10 +10,10 @@ The lodash method `_.lt` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.lt |
 | Keywords           | lodash-modularized, lt |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 69625 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4028.3333333333335 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

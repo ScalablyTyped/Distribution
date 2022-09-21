@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "SvgRenderContext")
 @js.native
-class SvgRenderContext protected () extends RenderContext {
+open class SvgRenderContext protected () extends RenderContext {
   def this(svgElementOrId: String) = this()
   def this(svgElementOrId: HTMLElement) = this()
   

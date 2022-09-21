@@ -54,7 +54,7 @@ object contentOrderedListItemMod {
   
   @JSImport("rbx/elements/content/content-ordered-list-item", "ContentOrderedListItem")
   @js.native
-  val ContentOrderedListItem: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val ContentOrderedListItem: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait ContentOrderedListItemProps extends StObject {

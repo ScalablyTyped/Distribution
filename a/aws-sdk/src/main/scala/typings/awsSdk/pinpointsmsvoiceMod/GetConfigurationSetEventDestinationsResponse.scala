@@ -21,6 +21,6 @@ object GetConfigurationSetEventDestinationsResponse {
     
     inline def setEventDestinationsUndefined: Self = StObject.set(x, "EventDestinations", js.undefined)
     
-    inline def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value :_*))
+    inline def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value*))
   }
 }

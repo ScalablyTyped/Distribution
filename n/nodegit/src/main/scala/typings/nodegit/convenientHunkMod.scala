@@ -9,7 +9,7 @@ object convenientHunkMod {
   
   @JSImport("nodegit/convenient-hunk", "ConvenientHunk")
   @js.native
-  class ConvenientHunk () extends StObject {
+  open class ConvenientHunk () extends StObject {
     
     /**
       * Diff header string that represents the context of this hunk

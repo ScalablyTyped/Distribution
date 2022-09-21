@@ -1,19 +1,15 @@
 package typings.grommet
 
+import typings.grommet.anon.Background
+import typings.grommet.anon.ColorError
 import typings.grommet.anon.Delay
-import typings.grommet.anon.Error
+import typings.grommet.anon.Duration
 import typings.grommet.anon.Grow
 import typings.grommet.anon.Horizontal
-import typings.grommet.anon.Max
-import typings.grommet.grommetStrings.`column-reverse`
-import typings.grommet.grommetStrings.`row-responsive`
-import typings.grommet.grommetStrings.`row-reverse`
 import typings.grommet.grommetStrings.around
 import typings.grommet.grommetStrings.auto
-import typings.grommet.grommetStrings.baseline
 import typings.grommet.grommetStrings.between
 import typings.grommet.grommetStrings.center
-import typings.grommet.grommetStrings.column
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.evenly
 import typings.grommet.grommetStrings.fadeIn
@@ -21,43 +17,39 @@ import typings.grommet.grommetStrings.fadeOut
 import typings.grommet.grommetStrings.grow
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.jiggle
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.pulse
 import typings.grommet.grommetStrings.reverse
 import typings.grommet.grommetStrings.rotateLeft
 import typings.grommet.grommetStrings.rotateRight
-import typings.grommet.grommetStrings.row
 import typings.grommet.grommetStrings.scroll
 import typings.grommet.grommetStrings.shrink
 import typings.grommet.grommetStrings.slideDown
 import typings.grommet.grommetStrings.slideLeft
 import typings.grommet.grommetStrings.slideRight
 import typings.grommet.grommetStrings.slideUp
-import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
 import typings.grommet.grommetStrings.visible
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxlarge
-import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.grommetStrings.zoomIn
 import typings.grommet.grommetStrings.zoomOut
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.AlignType
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.BasisType
 import typings.grommet.utilsMod.BorderType
+import typings.grommet.utilsMod.DirectionType
 import typings.grommet.utilsMod.ElevationType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.HeightType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PadType
 import typings.grommet.utilsMod.PolymorphicType
 import typings.grommet.utilsMod.RoundType
+import typings.grommet.utilsMod.WidthType
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
@@ -70,13 +62,25 @@ object boxMod {
   
   @JSImport("grommet/components/Box", "Box")
   @js.native
-  val Box: FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
+  val Box: FC[BoxExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'a11yTitle' | 'alignSelf' | 'gridArea' | 'margin' | 'align' | 'alignContent' | 'animation' | 'background' | 'basis' | 'border' | 'direction' | 'elevation' | 'flex' | 'fill' | 'focusIndicator' | 'gap' | 'height' | 'hoverIndicator' | 'justify' | 'onClick' | 'overflow' | 'pad' | 'responsive' | 'round' | 'tag' | 'as' | 'width' | 'wrap'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait BoxExtendedProps
+    extends StObject
+       with BoxProps
+  object BoxExtendedProps {
+    
+    inline def apply(): BoxExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BoxExtendedProps]
+    }
+  }
   
   trait BoxProps extends StObject {
     
     var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var align: js.UndefOr[start | center | end | baseline | stretch] = js.undefined
+    var align: js.UndefOr[AlignType] = js.undefined
     
     var alignContent: js.UndefOr[AlignContentType] = js.undefined
     
@@ -84,7 +88,7 @@ object boxMod {
     
     var animation: js.UndefOr[
         fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
-          fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
+          fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Duration
         ])
       ] = js.undefined
     
@@ -96,7 +100,7 @@ object boxMod {
     
     var border: js.UndefOr[BorderType] = js.undefined
     
-    var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
     var elevation: js.UndefOr[ElevationType] = js.undefined
     
@@ -110,15 +114,15 @@ object boxMod {
     
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
+    var height: js.UndefOr[HeightType] = js.undefined
     
-    var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
+    var hoverIndicator: js.UndefOr[Background | BackgroundType | Boolean] = js.undefined
     
     var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.undefined
     
@@ -130,7 +134,7 @@ object boxMod {
     
     var tag: js.UndefOr[PolymorphicType] = js.undefined
     
-    var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
+    var width: js.UndefOr[WidthType] = js.undefined
     
     var wrap: js.UndefOr[Boolean | reverse] = js.undefined
   }
@@ -147,7 +151,7 @@ object boxMod {
       
       inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
-      inline def setAlign(value: start | center | end | baseline | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignContent(value: AlignContentType): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -161,15 +165,15 @@ object boxMod {
       
       inline def setAnimation(
         value: fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
-              fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
+              fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Duration
             ])
       ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
       inline def setAnimationVarargs(
-        value: (fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay)*
-      ): Self = StObject.set(x, "animation", js.Array(value :_*))
+        value: (fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Duration)*
+      ): Self = StObject.set(x, "animation", js.Array(value*))
       
       inline def setAs(value: PolymorphicType): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -187,9 +191,9 @@ object boxMod {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: ColorError*): Self = StObject.set(x, "border", js.Array(value*))
       
-      inline def setDirection(value: row | column | `row-responsive` | `row-reverse` | `column-reverse`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -217,11 +221,11 @@ object boxMod {
       
       inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      inline def setHeight(value: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: HeightType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHoverIndicator(value: BackgroundType | Boolean): Self = StObject.set(x, "hoverIndicator", value.asInstanceOf[js.Any])
+      inline def setHoverIndicator(value: Background | BackgroundType | Boolean): Self = StObject.set(x, "hoverIndicator", value.asInstanceOf[js.Any])
       
       inline def setHoverIndicatorUndefined: Self = StObject.set(x, "hoverIndicator", js.undefined)
       
@@ -233,7 +237,7 @@ object boxMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -257,7 +261,7 @@ object boxMod {
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      inline def setWidth(value: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: WidthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       

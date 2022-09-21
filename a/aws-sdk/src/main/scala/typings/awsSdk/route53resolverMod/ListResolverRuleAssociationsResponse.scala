@@ -17,7 +17,7 @@ trait ListResolverRuleAssociationsResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
-    * The associations that were created between Resolver rules and VPCs using the current AWS account, and that match the specified filters, if any.
+    * The associations that were created between Resolver rules and VPCs using the current Amazon Web Services account, and that match the specified filters, if any.
     */
   var ResolverRuleAssociations: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverRuleAssociations] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListResolverRuleAssociationsResponse {
     
     inline def setResolverRuleAssociationsUndefined: Self = StObject.set(x, "ResolverRuleAssociations", js.undefined)
     
-    inline def setResolverRuleAssociationsVarargs(value: ResolverRuleAssociation*): Self = StObject.set(x, "ResolverRuleAssociations", js.Array(value :_*))
+    inline def setResolverRuleAssociationsVarargs(value: ResolverRuleAssociation*): Self = StObject.set(x, "ResolverRuleAssociations", js.Array(value*))
   }
 }

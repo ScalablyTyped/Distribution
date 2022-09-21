@@ -16,26 +16,26 @@ object embeddingsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/embeddings", "Embedding")
   @js.native
-  class Embedding protected () extends Layer {
+  open class Embedding protected () extends Layer {
     def this(args: EmbeddingLayerArgs) = this()
     
     val DEFAULT_EMBEDDINGS_INITIALIZER: InitializerIdentifier = js.native
     
-    /* private */ var embeddings: js.Any = js.native
+    /* private */ var embeddings: Any = js.native
     
-    /* private */ val embeddingsConstraint: js.Any = js.native
+    /* private */ val embeddingsConstraint: Any = js.native
     
-    /* private */ var embeddingsInitializer: js.Any = js.native
+    /* private */ var embeddingsInitializer: Any = js.native
     
-    /* private */ val embeddingsRegularizer: js.Any = js.native
+    /* private */ val embeddingsRegularizer: Any = js.native
     
-    /* private */ var inputDim: js.Any = js.native
+    /* private */ var inputDim: Any = js.native
     
-    /* private */ var inputLength: js.Any = js.native
+    /* private */ var inputLength: Any = js.native
     
-    /* private */ var maskZero: js.Any = js.native
+    /* private */ var maskZero: Any = js.native
     
-    /* private */ var outputDim: js.Any = js.native
+    /* private */ var outputDim: Any = js.native
   }
   /* static members */
   object Embedding {
@@ -137,7 +137,7 @@ object embeddingsMod {
       
       inline def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
       
-      inline def setInputLengthVarargs(value: Double*): Self = StObject.set(x, "inputLength", js.Array(value :_*))
+      inline def setInputLengthVarargs(value: Double*): Self = StObject.set(x, "inputLength", js.Array(value*))
       
       inline def setMaskZero(value: Boolean): Self = StObject.set(x, "maskZero", value.asInstanceOf[js.Any])
       

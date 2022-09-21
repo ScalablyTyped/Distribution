@@ -1,6 +1,7 @@
 package typings.vegaLite.transformMod
 
 import typings.vegaLite.channeldefMod.FieldName
+import typings.vegaTypings.transformMod.AggregateOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait PivotTransform
     * The aggregation operation to apply to grouped `value` field values.
     * __Default value:__ `sum`
     */
-  var op: js.UndefOr[String] = js.undefined
+  var op: js.UndefOr[AggregateOp] = js.undefined
   
   /**
     * The data field to pivot on. The unique values of this field become new field names in the output stream.
@@ -50,13 +51,13 @@ object PivotTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: AggregateOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     

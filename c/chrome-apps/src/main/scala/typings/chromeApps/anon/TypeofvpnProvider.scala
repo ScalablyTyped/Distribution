@@ -3,7 +3,6 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.vpnProvider.VpnSessionParameters
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -113,7 +112,7 @@ trait TypeofvpnProvider extends StObject {
   val onConfigRemoved: Event[js.Function1[/* id */ String, Unit]] = js.native
   
   /** Triggered when an IP packet is received via the tunnel for the VPN session owned by the extension. */
-  val onPacketReceived: Event[js.Function1[/* data */ ArrayBuffer, Unit]] = js.native
+  val onPacketReceived: Event[js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]] = js.native
   
   /** Triggered when a message is received from the platform for a VPN configuration owned by the extension. */
   val onPlatformMessage: Event[
@@ -156,8 +155,8 @@ trait TypeofvpnProvider extends StObject {
     * @param data The IP packet to be sent to the platform.
     * @param callback Called when the packet is sent or if there is an error.
     */
-  def sendPacket(data: ArrayBuffer): Unit = js.native
-  def sendPacket(data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def sendPacket(data: js.typedarray.ArrayBuffer): Unit = js.native
+  def sendPacket(data: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Sets the parameters for the VPN session. This should be called immediately after 'connected' is received from the platform. This will succeed only when the VPN session is owned by the extension.

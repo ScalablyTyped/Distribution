@@ -8,6 +8,6 @@ object sliderMod {
   
   @JSImport("@antv/component/lib/slider", "Slider")
   @js.native
-  class Slider ()
+  open class Slider ()
     extends typings.antvComponent.sliderSliderMod.Slider
 }

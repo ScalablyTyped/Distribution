@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.RaycastVehicle")
 @js.native
-class RaycastVehicle ()
+open class RaycastVehicle ()
   extends StObject
      with typings.cannon.CANNON.RaycastVehicle {
   def this(options: IRaycastVehicleOptions) = this()

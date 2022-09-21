@@ -77,7 +77,7 @@ object GetMissionProfileResponse {
     
     inline def setDataflowEdgesUndefined: Self = StObject.set(x, "dataflowEdges", js.undefined)
     
-    inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value :_*))
+    inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value*))
     
     inline def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     

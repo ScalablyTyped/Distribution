@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateOrganizationConfigurationRequest extends StObject {
   
   /**
-    * Specifies whether Amazon Macie is enabled automatically for each account, when the account is added to the AWS organization.
+    * Specifies whether to enable Amazon Macie automatically for an account when the account is added to the organization in Organizations.
     */
   var autoEnable: boolean
 }

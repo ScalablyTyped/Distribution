@@ -8,7 +8,7 @@ object unitConverterMod {
   
   @JSImport("@devexpress/utils/lib/class/unit-converter", "UnitConverter")
   @js.native
-  class UnitConverter () extends StObject
+  open class UnitConverter () extends StObject
   /* static members */
   object UnitConverter {
     
@@ -32,6 +32,8 @@ object unitConverterMod {
     inline def PICAS_PER_INCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PICAS_PER_INCH")(x.asInstanceOf[js.Any])
     
     inline def centimeterToPixel(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("centimeterToPixel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def centimeterToPixelF(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("centimeterToPixelF")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def centimetersToTwips(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("centimetersToTwips")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ports extends StObject {
   
-  var extras: js.Any
+  var extras: Any
   
   var id: String
   
@@ -23,7 +23,7 @@ trait Ports extends StObject {
 object Ports {
   
   inline def apply(
-    extras: js.Any,
+    extras: Any,
     id: String,
     ports: js.Array[Links],
     selected: Boolean,
@@ -38,13 +38,13 @@ object Ports {
   
   extension [Self <: Ports](x: Self) {
     
-    inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setPorts(value: js.Array[Links]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    inline def setPortsVarargs(value: Links*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Links*): Self = StObject.set(x, "ports", js.Array(value*))
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

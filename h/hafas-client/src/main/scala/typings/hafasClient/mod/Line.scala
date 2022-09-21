@@ -20,6 +20,8 @@ trait Line extends StObject {
   
   var adminCode: js.UndefOr[String] = js.undefined
   
+  var directions: js.UndefOr[js.Array[String]] = js.undefined
+  
   var express: js.UndefOr[Boolean] = js.undefined
   
   var fahrtNr: js.UndefOr[String] = js.undefined
@@ -39,6 +41,8 @@ trait Line extends StObject {
   var operator: js.UndefOr[Operator] = js.undefined
   
   var product: js.UndefOr[String] = js.undefined
+  
+  var productName: js.UndefOr[String] = js.undefined
   
   var public: js.UndefOr[Boolean] = js.undefined
   
@@ -66,6 +70,12 @@ object Line {
     inline def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
     
     inline def setAdminCodeUndefined: Self = StObject.set(x, "adminCode", js.undefined)
+    
+    inline def setDirections(value: js.Array[String]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    
+    inline def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value*))
     
     inline def setExpress(value: Boolean): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
     
@@ -105,6 +115,10 @@ object Line {
     
     inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
+    inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
@@ -115,7 +129,7 @@ object Line {
     
     inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    inline def setRoutesVarargs(value: String*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: String*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

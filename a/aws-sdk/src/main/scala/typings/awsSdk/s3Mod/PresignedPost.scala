@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aws-sdk/clients/s3", "PresignedPost")
 @js.native
-class PresignedPost ()
+open class PresignedPost ()
   extends typings.awsSdk.presignedPostMod.PresignedPost

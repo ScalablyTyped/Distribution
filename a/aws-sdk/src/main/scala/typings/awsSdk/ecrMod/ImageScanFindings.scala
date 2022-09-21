@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageScanFindings extends StObject {
   
   /**
+    * Details about the enhanced scan findings from Amazon Inspector.
+    */
+  var enhancedFindings: js.UndefOr[EnhancedImageScanFindingList] = js.undefined
+  
+  /**
     * The image vulnerability counts, sorted by severity.
     */
   var findingSeverityCounts: js.UndefOr[FindingSeverityCounts] = js.undefined
@@ -19,12 +24,12 @@ trait ImageScanFindings extends StObject {
   /**
     * The time of the last completed image scan.
     */
-  var imageScanCompletedAt: js.UndefOr[ScanTimestamp] = js.undefined
+  var imageScanCompletedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time when the vulnerability data was last scanned.
     */
-  var vulnerabilitySourceUpdatedAt: js.UndefOr[VulnerabilitySourceUpdateTimestamp] = js.undefined
+  var vulnerabilitySourceUpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object ImageScanFindings {
   
@@ -35,6 +40,12 @@ object ImageScanFindings {
   
   extension [Self <: ImageScanFindings](x: Self) {
     
+    inline def setEnhancedFindings(value: EnhancedImageScanFindingList): Self = StObject.set(x, "enhancedFindings", value.asInstanceOf[js.Any])
+    
+    inline def setEnhancedFindingsUndefined: Self = StObject.set(x, "enhancedFindings", js.undefined)
+    
+    inline def setEnhancedFindingsVarargs(value: EnhancedImageScanFinding*): Self = StObject.set(x, "enhancedFindings", js.Array(value*))
+    
     inline def setFindingSeverityCounts(value: FindingSeverityCounts): Self = StObject.set(x, "findingSeverityCounts", value.asInstanceOf[js.Any])
     
     inline def setFindingSeverityCountsUndefined: Self = StObject.set(x, "findingSeverityCounts", js.undefined)
@@ -43,13 +54,13 @@ object ImageScanFindings {
     
     inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    inline def setFindingsVarargs(value: ImageScanFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: ImageScanFinding*): Self = StObject.set(x, "findings", js.Array(value*))
     
-    inline def setImageScanCompletedAt(value: ScanTimestamp): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
+    inline def setImageScanCompletedAt(value: js.Date): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
     
     inline def setImageScanCompletedAtUndefined: Self = StObject.set(x, "imageScanCompletedAt", js.undefined)
     
-    inline def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setVulnerabilitySourceUpdatedAt(value: js.Date): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setVulnerabilitySourceUpdatedAtUndefined: Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", js.undefined)
   }

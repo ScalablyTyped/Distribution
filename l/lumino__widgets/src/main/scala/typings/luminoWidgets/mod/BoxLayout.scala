@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the layout.
   */
-class BoxLayout ()
+open class BoxLayout ()
   extends typings.luminoWidgets.boxlayoutMod.BoxLayout {
   def this(options: IOptions) = this()
 }

@@ -27,47 +27,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  type CatchAllCallbackArguments = js.Array[Event]
-  
-  type CompleteCallbackArguments = js.Array[js.Any]
-  
-  type ErrorCallbackArguments = js.Tuple3[String, FlowFile, FlowChunk]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.flowjs.flowjsStrings.fileSuccess
-    - typings.flowjs.flowjsStrings.fileProgress
-    - typings.flowjs.flowjsStrings.fileAdded
-    - typings.flowjs.flowjsStrings.filesAdded
-    - typings.flowjs.flowjsStrings.filesSubmitted
-    - typings.flowjs.flowjsStrings.fileRemoved
-    - typings.flowjs.flowjsStrings.fileRetry
-    - typings.flowjs.flowjsStrings.fileError
-    - typings.flowjs.flowjsStrings.uploadStart
-    - typings.flowjs.flowjsStrings.complete
-    - typings.flowjs.flowjsStrings.progress
-    - typings.flowjs.flowjsStrings.error
-    - typings.flowjs.flowjsStrings.catchAll
-  */
-  trait EventName extends StObject
-  
-  type FileAddedCallbackArguments = js.Tuple2[FlowFile, Event]
-  
-  type FileErrorCallbackArguments = js.Tuple3[FlowFile, String, FlowChunk]
-  
-  type FileProgressCallbackArguments = js.Tuple2[FlowFile, FlowChunk]
-  
-  type FileRemovedCallbackArguments = js.Array[FlowFile]
-  
-  type FileRetryCallbackArguments = js.Tuple2[FlowFile, FlowChunk]
-  
-  type FileSuccessCallbackArguments = js.Tuple3[FlowFile, String, FlowChunk]
-  
-  type FilesAddedCallbackArguments = js.Tuple2[js.Array[FlowFile], Event]
-  
-  type FilesSubmittedCallbackArguments = js.Tuple2[js.Array[FlowFile], Event]
-  
+  @JSImport("flowjs", "Flow")
   @js.native
-  trait Flow extends StObject {
+  open class Flow () extends StObject {
+    def this(options: FlowOptions) = this()
     
     def addFile(file: File): Unit = js.native
     
@@ -148,6 +111,45 @@ object mod {
     
     def upload(): Unit = js.native
   }
+  
+  type CatchAllCallbackArguments = js.Array[Event]
+  
+  type CompleteCallbackArguments = js.Array[Any]
+  
+  type ErrorCallbackArguments = js.Tuple3[String, FlowFile, FlowChunk]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.flowjs.flowjsStrings.fileSuccess
+    - typings.flowjs.flowjsStrings.fileProgress
+    - typings.flowjs.flowjsStrings.fileAdded
+    - typings.flowjs.flowjsStrings.filesAdded
+    - typings.flowjs.flowjsStrings.filesSubmitted
+    - typings.flowjs.flowjsStrings.fileRemoved
+    - typings.flowjs.flowjsStrings.fileRetry
+    - typings.flowjs.flowjsStrings.fileError
+    - typings.flowjs.flowjsStrings.uploadStart
+    - typings.flowjs.flowjsStrings.complete
+    - typings.flowjs.flowjsStrings.progress
+    - typings.flowjs.flowjsStrings.error
+    - typings.flowjs.flowjsStrings.catchAll
+  */
+  trait EventName extends StObject
+  
+  type FileAddedCallbackArguments = js.Tuple2[FlowFile, Event]
+  
+  type FileErrorCallbackArguments = js.Tuple3[FlowFile, String, FlowChunk]
+  
+  type FileProgressCallbackArguments = js.Tuple2[FlowFile, FlowChunk]
+  
+  type FileRemovedCallbackArguments = js.Array[FlowFile]
+  
+  type FileRetryCallbackArguments = js.Tuple2[FlowFile, FlowChunk]
+  
+  type FileSuccessCallbackArguments = js.Tuple3[FlowFile, String, FlowChunk]
+  
+  type FilesAddedCallbackArguments = js.Tuple2[js.Array[FlowFile], Event]
+  
+  type FilesSubmittedCallbackArguments = js.Tuple2[js.Array[FlowFile], Event]
   
   trait FlowChunk extends StObject {
     
@@ -282,7 +284,7 @@ object mod {
     
     var flowFilename: String
     
-    var flowIdentifier: js.Any
+    var flowIdentifier: Any
     
     var flowRelativePath: String
     
@@ -297,7 +299,7 @@ object mod {
       flowChunkSize: Double,
       flowCurrentChunkSize: Double,
       flowFilename: String,
-      flowIdentifier: js.Any,
+      flowIdentifier: Any,
       flowRelativePath: String,
       flowTotalChunks: Double,
       flowTotalSize: Double
@@ -316,7 +318,7 @@ object mod {
       
       inline def setFlowFilename(value: String): Self = StObject.set(x, "flowFilename", value.asInstanceOf[js.Any])
       
-      inline def setFlowIdentifier(value: js.Any): Self = StObject.set(x, "flowIdentifier", value.asInstanceOf[js.Any])
+      inline def setFlowIdentifier(value: Any): Self = StObject.set(x, "flowIdentifier", value.asInstanceOf[js.Any])
       
       inline def setFlowRelativePath(value: String): Self = StObject.set(x, "flowRelativePath", value.asInstanceOf[js.Any])
       
@@ -383,11 +385,11 @@ object mod {
       
       inline def setCatchAll(value: CatchAllCallbackArguments): Self = StObject.set(x, "catchAll", value.asInstanceOf[js.Any])
       
-      inline def setCatchAllVarargs(value: Event*): Self = StObject.set(x, "catchAll", js.Array(value :_*))
+      inline def setCatchAllVarargs(value: Event*): Self = StObject.set(x, "catchAll", js.Array(value*))
       
       inline def setComplete(value: CompleteCallbackArguments): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      inline def setCompleteVarargs(value: js.Any*): Self = StObject.set(x, "complete", js.Array(value :_*))
+      inline def setCompleteVarargs(value: Any*): Self = StObject.set(x, "complete", js.Array(value*))
       
       inline def setError(value: ErrorCallbackArguments): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -399,7 +401,7 @@ object mod {
       
       inline def setFileRemoved(value: FileRemovedCallbackArguments): Self = StObject.set(x, "fileRemoved", value.asInstanceOf[js.Any])
       
-      inline def setFileRemovedVarargs(value: FlowFile*): Self = StObject.set(x, "fileRemoved", js.Array(value :_*))
+      inline def setFileRemovedVarargs(value: FlowFile*): Self = StObject.set(x, "fileRemoved", js.Array(value*))
       
       inline def setFileRetry(value: FileRetryCallbackArguments): Self = StObject.set(x, "fileRetry", value.asInstanceOf[js.Any])
       
@@ -411,15 +413,15 @@ object mod {
       
       inline def setProgress(value: ProgressCallbackArguments): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      inline def setProgressVarargs(value: js.Any*): Self = StObject.set(x, "progress", js.Array(value :_*))
+      inline def setProgressVarargs(value: Any*): Self = StObject.set(x, "progress", js.Array(value*))
       
       inline def setUploadStart(value: UploadStartCallbackArguments): Self = StObject.set(x, "uploadStart", value.asInstanceOf[js.Any])
       
-      inline def setUploadStartVarargs(value: js.Any*): Self = StObject.set(x, "uploadStart", js.Array(value :_*))
+      inline def setUploadStartVarargs(value: Any*): Self = StObject.set(x, "uploadStart", js.Array(value*))
     }
   }
   
-  type FlowEventTypeFromFlowEvent[T /* <: FlowEvent */] = js.Any
+  type FlowEventTypeFromFlowEvent[T /* <: FlowEvent */] = Any
   
   trait FlowFile extends StObject {
     
@@ -510,7 +512,7 @@ object mod {
       
       inline def setChunks(value: js.Array[FlowChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      inline def setChunksVarargs(value: FlowChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: FlowChunk*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setCurrentSpeed(value: Double): Self = StObject.set(x, "currentSpeed", value.asInstanceOf[js.Any])
       
@@ -564,7 +566,7 @@ object mod {
     
     var forceChunkSize: js.UndefOr[Boolean] = js.undefined
     
-    var generateUniqueIdentifier: js.UndefOr[js.Function1[/* file */ FlowFile, js.Any]] = js.undefined
+    var generateUniqueIdentifier: js.UndefOr[js.Function1[/* file */ FlowFile, Any]] = js.undefined
     
     var headers: js.UndefOr[js.Object] = js.undefined
     
@@ -574,7 +576,7 @@ object mod {
     
     var method: js.UndefOr[String] = js.undefined
     
-    var permanentErrors: js.UndefOr[js.Array[String]] = js.undefined
+    var permanentErrors: js.UndefOr[js.Array[Double]] = js.undefined
     
     var preprocess: js.UndefOr[js.Function1[/* chunk */ FlowChunk, Unit]] = js.undefined
     
@@ -601,7 +603,7 @@ object mod {
     
     var speedSmoothingFactor: js.UndefOr[Double] = js.undefined
     
-    var successStatuses: js.UndefOr[js.Array[String]] = js.undefined
+    var successStatuses: js.UndefOr[js.Array[Double]] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
     
@@ -642,7 +644,7 @@ object mod {
       
       inline def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
       
-      inline def setGenerateUniqueIdentifier(value: /* file */ FlowFile => js.Any): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
+      inline def setGenerateUniqueIdentifier(value: /* file */ FlowFile => Any): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
       
       inline def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
       
@@ -662,11 +664,11 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setPermanentErrors(value: js.Array[String]): Self = StObject.set(x, "permanentErrors", value.asInstanceOf[js.Any])
+      inline def setPermanentErrors(value: js.Array[Double]): Self = StObject.set(x, "permanentErrors", value.asInstanceOf[js.Any])
       
       inline def setPermanentErrorsUndefined: Self = StObject.set(x, "permanentErrors", js.undefined)
       
-      inline def setPermanentErrorsVarargs(value: String*): Self = StObject.set(x, "permanentErrors", js.Array(value :_*))
+      inline def setPermanentErrorsVarargs(value: Double*): Self = StObject.set(x, "permanentErrors", js.Array(value*))
       
       inline def setPreprocess(value: /* chunk */ FlowChunk => Unit): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
@@ -702,11 +704,11 @@ object mod {
       
       inline def setSpeedSmoothingFactorUndefined: Self = StObject.set(x, "speedSmoothingFactor", js.undefined)
       
-      inline def setSuccessStatuses(value: js.Array[String]): Self = StObject.set(x, "successStatuses", value.asInstanceOf[js.Any])
+      inline def setSuccessStatuses(value: js.Array[Double]): Self = StObject.set(x, "successStatuses", value.asInstanceOf[js.Any])
       
       inline def setSuccessStatusesUndefined: Self = StObject.set(x, "successStatuses", js.undefined)
       
-      inline def setSuccessStatusesVarargs(value: String*): Self = StObject.set(x, "successStatuses", js.Array(value :_*))
+      inline def setSuccessStatusesVarargs(value: Double*): Self = StObject.set(x, "successStatuses", js.Array(value*))
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -730,7 +732,7 @@ object mod {
     }
   }
   
-  type ProgressCallbackArguments = js.Array[js.Any]
+  type ProgressCallbackArguments = js.Array[Any]
   
-  type UploadStartCallbackArguments = js.Array[js.Any]
+  type UploadStartCallbackArguments = js.Array[Any]
 }

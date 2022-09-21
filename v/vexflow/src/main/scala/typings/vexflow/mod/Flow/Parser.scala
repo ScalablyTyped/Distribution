@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Parser")
 @js.native
-class Parser protected ()
+open class Parser protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Parser {
-  def this(grammar: js.Any) = this()
+  def this(grammar: Any) = this()
 }

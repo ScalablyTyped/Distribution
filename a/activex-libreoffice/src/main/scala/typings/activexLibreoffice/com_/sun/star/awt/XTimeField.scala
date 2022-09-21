@@ -85,7 +85,7 @@ object XTimeField {
     getTime: () => Time,
     isEmpty: () => Boolean,
     isStrictFormat: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setEmpty: () => Unit,
     setFirst: Time => Unit,

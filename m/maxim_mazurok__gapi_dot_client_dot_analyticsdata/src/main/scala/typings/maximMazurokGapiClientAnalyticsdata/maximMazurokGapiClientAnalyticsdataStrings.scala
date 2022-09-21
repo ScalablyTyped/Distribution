@@ -11,6 +11,6 @@ object maximMazurokGapiClientAnalyticsdataStrings {
   inline def analyticsdata: analyticsdata = "analyticsdata".asInstanceOf[analyticsdata]
   
   @js.native
-  sealed trait v1alpha extends StObject
-  inline def v1alpha: v1alpha = "v1alpha".asInstanceOf[v1alpha]
+  sealed trait v1beta extends StObject
+  inline def v1beta: v1beta = "v1beta".asInstanceOf[v1beta]
 }

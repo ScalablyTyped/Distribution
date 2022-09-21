@@ -57,9 +57,9 @@ object anon {
   
   trait End extends StObject {
     
-    var end: js.UndefOr[typings.std.Date] = js.undefined
+    var end: js.UndefOr[js.Date] = js.undefined
     
-    var start: js.UndefOr[typings.std.Date] = js.undefined
+    var start: js.UndefOr[js.Date] = js.undefined
   }
   object End {
     
@@ -70,11 +70,11 @@ object anon {
     
     extension [Self <: End](x: Self) {
       
-      inline def setEnd(value: typings.std.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setStart(value: typings.std.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
@@ -82,24 +82,24 @@ object anon {
   
   trait EndDate extends StObject {
     
-    var endDate: js.UndefOr[typings.std.Date] = js.undefined
+    var endDate: js.UndefOr[js.Date] = js.undefined
     
-    var startDate: typings.std.Date
+    var startDate: js.Date
   }
   object EndDate {
     
-    inline def apply(startDate: typings.std.Date): EndDate = {
+    inline def apply(startDate: js.Date): EndDate = {
       val __obj = js.Dynamic.literal(startDate = startDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndDate]
     }
     
     extension [Self <: EndDate](x: Self) {
       
-      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     }
   }
 }

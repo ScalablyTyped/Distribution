@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "iso8601-duration" : "1.2.0"
+      "iso8601-duration" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "iso8601-duration" : "1.2.0"
+      "iso8601-duration" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

@@ -8,10 +8,13 @@ trait ProgressEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var lengthComputable: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var loaded: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var total: js.UndefOr[Double] = js.undefined
 }
 object ProgressEventInit {

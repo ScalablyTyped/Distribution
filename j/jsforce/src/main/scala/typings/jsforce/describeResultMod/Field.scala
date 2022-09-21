@@ -1,6 +1,5 @@
 package typings.jsforce.describeResultMod
 
-import typings.jsforce.jsforceBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,11 @@ trait Field extends StObject {
   
   var aggregatable: Boolean
   
-  var autonumber: Boolean
+  // Not in documentation, but exists in data
+  var aiPredictionField: js.UndefOr[maybe[Boolean]] = js.undefined
+  
+  // Salesforce documentation is wrong, they show `autonumber` but true data returned is `autoNumber`
+  var autoNumber: Boolean
   
   var byteLength: Double
   
@@ -43,7 +46,7 @@ trait Field extends StObject {
   
   var displayLocationInDecimal: js.UndefOr[maybe[Boolean]] = js.undefined
   
-  var encrypted: js.UndefOr[maybe[`true`]] = js.undefined
+  var encrypted: js.UndefOr[maybe[Boolean]] = js.undefined
   
   var externalId: Boolean
   
@@ -53,7 +56,11 @@ trait Field extends StObject {
   
   var filteredLookupInfo: js.UndefOr[maybe[FilteredLookupInfo]] = js.undefined
   
+  // Salesforce documentation is wrong, this field does not exist, calculatedFormula is correct
   var formula: js.UndefOr[maybe[String]] = js.undefined
+  
+  // Not in documentation, but exists in data
+  var formulaTreatNullNumberAsZero: js.UndefOr[maybe[Boolean]] = js.undefined
   
   var groupable: Boolean
   
@@ -99,6 +106,8 @@ trait Field extends StObject {
   
   var relationshipOrder: js.UndefOr[maybe[Double]] = js.undefined
   
+  var restrictedDelete: js.UndefOr[maybe[Boolean]] = js.undefined
+  
   var restrictedPicklist: Boolean
   
   var scale: Double
@@ -121,7 +130,7 @@ object Field {
   
   inline def apply(
     aggregatable: Boolean,
-    autonumber: Boolean,
+    autoNumber: Boolean,
     byteLength: Double,
     calculated: Boolean,
     cascadeDelete: Boolean,
@@ -154,7 +163,7 @@ object Field {
     unique: Boolean,
     updateable: Boolean
   ): Field = {
-    val __obj = js.Dynamic.literal(aggregatable = aggregatable.asInstanceOf[js.Any], autonumber = autonumber.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any], calculated = calculated.asInstanceOf[js.Any], cascadeDelete = cascadeDelete.asInstanceOf[js.Any], caseSensitive = caseSensitive.asInstanceOf[js.Any], createable = createable.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], defaultedOnCreate = defaultedOnCreate.asInstanceOf[js.Any], dependentPicklist = dependentPicklist.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], externalId = externalId.asInstanceOf[js.Any], filterable = filterable.asInstanceOf[js.Any], groupable = groupable.asInstanceOf[js.Any], htmlFormatted = htmlFormatted.asInstanceOf[js.Any], idLookup = idLookup.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameField = nameField.asInstanceOf[js.Any], namePointing = namePointing.asInstanceOf[js.Any], nillable = nillable.asInstanceOf[js.Any], permissionable = permissionable.asInstanceOf[js.Any], polymorphicForeignKey = polymorphicForeignKey.asInstanceOf[js.Any], queryByDistance = queryByDistance.asInstanceOf[js.Any], restrictedPicklist = restrictedPicklist.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], searchPrefilterable = searchPrefilterable.asInstanceOf[js.Any], soapType = soapType.asInstanceOf[js.Any], sortable = sortable.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any], updateable = updateable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aggregatable = aggregatable.asInstanceOf[js.Any], autoNumber = autoNumber.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any], calculated = calculated.asInstanceOf[js.Any], cascadeDelete = cascadeDelete.asInstanceOf[js.Any], caseSensitive = caseSensitive.asInstanceOf[js.Any], createable = createable.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], defaultedOnCreate = defaultedOnCreate.asInstanceOf[js.Any], dependentPicklist = dependentPicklist.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], externalId = externalId.asInstanceOf[js.Any], filterable = filterable.asInstanceOf[js.Any], groupable = groupable.asInstanceOf[js.Any], htmlFormatted = htmlFormatted.asInstanceOf[js.Any], idLookup = idLookup.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameField = nameField.asInstanceOf[js.Any], namePointing = namePointing.asInstanceOf[js.Any], nillable = nillable.asInstanceOf[js.Any], permissionable = permissionable.asInstanceOf[js.Any], polymorphicForeignKey = polymorphicForeignKey.asInstanceOf[js.Any], queryByDistance = queryByDistance.asInstanceOf[js.Any], restrictedPicklist = restrictedPicklist.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], searchPrefilterable = searchPrefilterable.asInstanceOf[js.Any], soapType = soapType.asInstanceOf[js.Any], sortable = sortable.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any], updateable = updateable.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
@@ -163,7 +172,13 @@ object Field {
     
     inline def setAggregatable(value: Boolean): Self = StObject.set(x, "aggregatable", value.asInstanceOf[js.Any])
     
-    inline def setAutonumber(value: Boolean): Self = StObject.set(x, "autonumber", value.asInstanceOf[js.Any])
+    inline def setAiPredictionField(value: maybe[Boolean]): Self = StObject.set(x, "aiPredictionField", value.asInstanceOf[js.Any])
+    
+    inline def setAiPredictionFieldNull: Self = StObject.set(x, "aiPredictionField", null)
+    
+    inline def setAiPredictionFieldUndefined: Self = StObject.set(x, "aiPredictionField", js.undefined)
+    
+    inline def setAutoNumber(value: Boolean): Self = StObject.set(x, "autoNumber", value.asInstanceOf[js.Any])
     
     inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
@@ -225,7 +240,7 @@ object Field {
     
     inline def setDisplayLocationInDecimalUndefined: Self = StObject.set(x, "displayLocationInDecimal", js.undefined)
     
-    inline def setEncrypted(value: maybe[`true`]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: maybe[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     inline def setEncryptedNull: Self = StObject.set(x, "encrypted", null)
     
@@ -250,6 +265,12 @@ object Field {
     inline def setFormula(value: maybe[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     inline def setFormulaNull: Self = StObject.set(x, "formula", null)
+    
+    inline def setFormulaTreatNullNumberAsZero(value: maybe[Boolean]): Self = StObject.set(x, "formulaTreatNullNumberAsZero", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaTreatNullNumberAsZeroNull: Self = StObject.set(x, "formulaTreatNullNumberAsZero", null)
+    
+    inline def setFormulaTreatNullNumberAsZeroUndefined: Self = StObject.set(x, "formulaTreatNullNumberAsZero", js.undefined)
     
     inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
@@ -303,7 +324,7 @@ object Field {
     
     inline def setPicklistValuesUndefined: Self = StObject.set(x, "picklistValues", js.undefined)
     
-    inline def setPicklistValuesVarargs(value: PicklistEntry*): Self = StObject.set(x, "picklistValues", js.Array(value :_*))
+    inline def setPicklistValuesVarargs(value: PicklistEntry*): Self = StObject.set(x, "picklistValues", js.Array(value*))
     
     inline def setPolymorphicForeignKey(value: Boolean): Self = StObject.set(x, "polymorphicForeignKey", value.asInstanceOf[js.Any])
     
@@ -327,7 +348,7 @@ object Field {
     
     inline def setReferenceToUndefined: Self = StObject.set(x, "referenceTo", js.undefined)
     
-    inline def setReferenceToVarargs(value: String*): Self = StObject.set(x, "referenceTo", js.Array(value :_*))
+    inline def setReferenceToVarargs(value: String*): Self = StObject.set(x, "referenceTo", js.Array(value*))
     
     inline def setRelationshipName(value: maybe[String]): Self = StObject.set(x, "relationshipName", value.asInstanceOf[js.Any])
     
@@ -340,6 +361,12 @@ object Field {
     inline def setRelationshipOrderNull: Self = StObject.set(x, "relationshipOrder", null)
     
     inline def setRelationshipOrderUndefined: Self = StObject.set(x, "relationshipOrder", js.undefined)
+    
+    inline def setRestrictedDelete(value: maybe[Boolean]): Self = StObject.set(x, "restrictedDelete", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictedDeleteNull: Self = StObject.set(x, "restrictedDelete", null)
+    
+    inline def setRestrictedDeleteUndefined: Self = StObject.set(x, "restrictedDelete", js.undefined)
     
     inline def setRestrictedPicklist(value: Boolean): Self = StObject.set(x, "restrictedPicklist", value.asInstanceOf[js.Any])
     

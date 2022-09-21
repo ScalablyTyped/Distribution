@@ -21,7 +21,7 @@ object anon {
   trait Optionsdtypefloat32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -47,7 +47,7 @@ object anon {
     
     extension [Self <: Optionsdtypefloat32](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -75,7 +75,7 @@ object anon {
   trait Optionsdtypefloat64undefi extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -101,7 +101,7 @@ object anon {
     
     extension [Self <: Optionsdtypefloat64undefi](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -129,7 +129,7 @@ object anon {
   trait Optionsdtypeint16 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -155,7 +155,7 @@ object anon {
     
     extension [Self <: Optionsdtypeint16](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -183,7 +183,7 @@ object anon {
   trait Optionsdtypeint32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -209,7 +209,7 @@ object anon {
     
     extension [Self <: Optionsdtypeint32](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -237,7 +237,7 @@ object anon {
   trait Optionsdtypeint8 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -263,7 +263,7 @@ object anon {
     
     extension [Self <: Optionsdtypeint8](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -291,7 +291,7 @@ object anon {
   trait Optionsdtypeuint16 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -317,7 +317,7 @@ object anon {
     
     extension [Self <: Optionsdtypeuint16](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -345,7 +345,7 @@ object anon {
   trait Optionsdtypeuint32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -371,7 +371,7 @@ object anon {
     
     extension [Self <: Optionsdtypeuint32](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -399,7 +399,7 @@ object anon {
   trait Optionsdtypeuint8 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -425,7 +425,7 @@ object anon {
     
     extension [Self <: Optionsdtypeuint8](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -453,7 +453,7 @@ object anon {
   trait Optionsdtypeuint8clamped extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -479,7 +479,7 @@ object anon {
     
     extension [Self <: Optionsdtypeuint8clamped](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
@@ -507,7 +507,7 @@ object anon {
   trait Optionsdtypeundefined extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -533,7 +533,7 @@ object anon {
     
     extension [Self <: Optionsdtypeundefined](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       

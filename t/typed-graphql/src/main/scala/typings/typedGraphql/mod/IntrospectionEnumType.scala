@@ -32,7 +32,7 @@ object IntrospectionEnumType {
     
     inline def setEnumValues(value: js.Array[IntrospectionEnumValue]): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
     
-    inline def setEnumValuesVarargs(value: IntrospectionEnumValue*): Self = StObject.set(x, "enumValues", js.Array(value :_*))
+    inline def setEnumValuesVarargs(value: IntrospectionEnumValue*): Self = StObject.set(x, "enumValues", js.Array(value*))
     
     inline def setKind(value: ENUM): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

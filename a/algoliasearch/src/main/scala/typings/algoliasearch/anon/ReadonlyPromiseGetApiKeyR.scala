@@ -17,9 +17,9 @@ trait ReadonlyPromiseGetApiKeyR extends StObject {
 object ReadonlyPromiseGetApiKeyR {
   
   inline def apply(
-    `catch`: () => js.Promise[GetApiKeyResponse | js.Any],
+    `catch`: () => js.Promise[GetApiKeyResponse | Any],
     `finally`: () => js.Promise[GetApiKeyResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseGetApiKeyR = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseGetApiKeyR {
   
   extension [Self <: ReadonlyPromiseGetApiKeyR](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[GetApiKeyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[GetApiKeyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[GetApiKeyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

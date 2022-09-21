@@ -1,13 +1,5 @@
 package typings.winrt.Windows.Foundation
 
-import typings.std.Date
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,17 +17,17 @@ object IReference {
     getBooleanArray: () => js.Array[Boolean],
     getChar16: () => String,
     getChar16Array: () => js.Array[String],
-    getDateTime: () => Date,
-    getDateTimeArray: () => js.Array[Date],
+    getDateTime: () => js.Date,
+    getDateTimeArray: () => js.Array[js.Date],
     getDouble: () => Double,
-    getDoubleArray: () => Float64Array,
+    getDoubleArray: () => js.typedarray.Float64Array,
     getGuid: () => String,
     getGuidArray: () => js.Array[String],
-    getInspectableArray: () => js.Array[js.Any],
+    getInspectableArray: () => js.Array[Any],
     getInt16: () => Double,
-    getInt16Array: () => Int16Array,
+    getInt16Array: () => js.typedarray.Int16Array,
     getInt32: () => Double,
-    getInt32Array: () => Int32Array,
+    getInt32Array: () => js.typedarray.Int32Array,
     getInt64: () => Double,
     getInt64Array: () => js.Array[Double],
     getPoint: () => Point,
@@ -43,7 +35,7 @@ object IReference {
     getRect: () => Rect,
     getRectArray: () => js.Array[Rect],
     getSingle: () => Double,
-    getSingleArray: () => Float32Array,
+    getSingleArray: () => js.typedarray.Float32Array,
     getSize: () => Size,
     getSizeArray: () => js.Array[Size],
     getString: () => String,
@@ -51,13 +43,13 @@ object IReference {
     getTimeSpan: () => Double,
     getTimeSpanArray: () => js.Array[Double],
     getUInt16: () => Double,
-    getUInt16Array: () => Uint16Array,
+    getUInt16Array: () => js.typedarray.Uint16Array,
     getUInt32: () => Double,
-    getUInt32Array: () => Uint32Array,
+    getUInt32Array: () => js.typedarray.Uint32Array,
     getUInt64: () => Double,
     getUInt64Array: () => js.Array[Double],
     getUInt8: () => Double,
-    getUInt8Array: () => Uint8Array,
+    getUInt8Array: () => js.typedarray.Uint8Array,
     isNumericScalar: Boolean,
     `type`: PropertyType,
     value: T

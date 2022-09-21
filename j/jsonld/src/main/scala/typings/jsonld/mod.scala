@@ -1,7 +1,7 @@
 package typings.jsonld
 
-import typings.jsonld.jsonldSpecMod.Context
-import typings.jsonld.jsonldSpecMod.Document
+import typings.jsonld.jsonldMod.ContextDefinition
+import typings.jsonld.jsonldMod.JsonLdDocument
 import typings.jsonld.jsonldSpecMod.Frame
 import typings.jsonld.jsonldSpecMod.JsonLdArray
 import typings.jsonld.jsonldSpecMod.JsonLdObj
@@ -21,7 +21,6 @@ import typings.jsonld.mod.Options.Flatten
 import typings.jsonld.mod.Options.FromRdf
 import typings.jsonld.mod.Options.Normalize
 import typings.jsonld.mod.Options.ToRdf
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,32 +36,37 @@ object mod {
   def JsonLdProcessor: typings.jsonld.jsonldSpecMod.JsonLdProcessor = js.native
   inline def JsonLdProcessor_=(x: JsonLdProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonLdProcessor")(x.asInstanceOf[js.Any])
   
-  inline def compact(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def compact(input: Document, ctx: Unit, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def compact(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def compact(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def compact(input: Document, ctx: Context, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def compact(input: Document, ctx: Context, options: Compact, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def canonize(input: JsonLdDocument): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("canonize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def canonize(input: JsonLdDocument, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("canonize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def canonize(input: JsonLdDocument, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("canonize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def canonize(input: JsonLdDocument, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("canonize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def expand(input: Document): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
-  inline def expand(input: Document, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def expand(input: Document, options: Expand): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
-  inline def expand(input: Document, options: Expand, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compact(input: JsonLdDocument): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: JsonLdDocument, ctx: Unit, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: JsonLdDocument, ctx: ContextDefinition): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: JsonLdDocument, ctx: ContextDefinition, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compact(input: JsonLdDocument, ctx: ContextDefinition, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: JsonLdDocument, ctx: ContextDefinition, options: Compact, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def flatten(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def flatten(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def flatten(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def flatten(input: Document, ctx: Unit, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def flatten(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def flatten(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def flatten(input: Document, ctx: Context, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def flatten(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expand(input: JsonLdDocument): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def expand(input: JsonLdDocument, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expand(input: JsonLdDocument, options: Expand): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def expand(input: JsonLdDocument, options: Expand, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def frame(input: Document, frame: Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  inline def frame(input: Document, frame: Frame, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def frame(input: Document, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: JsonLdDocument): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: JsonLdDocument, ctx: Null, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: JsonLdDocument, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: JsonLdDocument, ctx: Unit, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: JsonLdDocument, ctx: ContextDefinition): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: JsonLdDocument, ctx: ContextDefinition, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: JsonLdDocument, ctx: ContextDefinition, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: JsonLdDocument, ctx: ContextDefinition, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def frame(input: JsonLdDocument, frame: Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def frame(input: JsonLdDocument, frame: Frame, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def frame(input: JsonLdDocument, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
   inline def frame(
-    input: Document,
+    input: JsonLdDocument,
     frame: Frame,
     options: typings.jsonld.mod.Options.Frame,
     callback: Callback[JsonLdObj]
@@ -73,18 +77,18 @@ object mod {
   inline def fromRDF(dataset: RdfDataSet, options: FromRdf): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
   inline def fromRDF(dataset: RdfDataSet, options: FromRdf, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def normalize(input: Document): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def normalize(input: Document, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def normalize(input: Document, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def normalize(input: Document, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalize(input: JsonLdDocument): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def normalize(input: JsonLdDocument, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalize(input: JsonLdDocument, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def normalize(input: JsonLdDocument, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def toRDF(input: Document): js.Promise[RdfDataSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RdfDataSet]]
-  inline def toRDF(input: Document, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def toRDF(input: Document, options: ToRdf): js.Promise[RdfDataSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfDataSet]]
-  inline def toRDF(input: Document, options: ToRdf, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toRDF(input: JsonLdDocument): js.Promise[RdfDataSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RdfDataSet]]
+  inline def toRDF(input: JsonLdDocument, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toRDF(input: JsonLdDocument, options: ToRdf): js.Promise[RdfDataSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfDataSet]]
+  inline def toRDF(input: JsonLdDocument, options: ToRdf, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Placeholder
-  type Callback[T] = js.Function2[/* err */ Error, /* res */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ js.Error, /* res */ T, Unit]
   
   // Some typealiases for better readability and some placeholders
   type MimeNQuad = `applicationSlashn-quads`
@@ -97,7 +101,7 @@ object mod {
       
       var base: js.UndefOr[String] = js.undefined
       
-      var expandContext: js.UndefOr[Context] = js.undefined
+      var expandContext: js.UndefOr[ContextDefinition] = js.undefined
     }
     object Common {
       
@@ -112,11 +116,9 @@ object mod {
         
         inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
         
-        inline def setExpandContext(value: Context): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
+        inline def setExpandContext(value: ContextDefinition): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
         
         inline def setExpandContextUndefined: Self = StObject.set(x, "expandContext", js.undefined)
-        
-        inline def setExpandContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "expandContext", js.Array(value :_*))
       }
     }
     
@@ -132,7 +134,7 @@ object mod {
       var compactToRelative: js.UndefOr[Boolean] = js.undefined
       
       // TODO: Figure out type of info
-      var compactionMap: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.undefined
+      var compactionMap: js.UndefOr[js.Function1[/* info */ Any, Unit]] = js.undefined
       
       var expansion: js.UndefOr[Boolean] = js.undefined
       
@@ -163,7 +165,7 @@ object mod {
         
         inline def setCompactToRelativeUndefined: Self = StObject.set(x, "compactToRelative", js.undefined)
         
-        inline def setCompactionMap(value: /* info */ js.Any => Unit): Self = StObject.set(x, "compactionMap", js.Any.fromFunction1(value))
+        inline def setCompactionMap(value: /* info */ Any => Unit): Self = StObject.set(x, "compactionMap", js.Any.fromFunction1(value))
         
         inline def setCompactionMapUndefined: Self = StObject.set(x, "compactionMap", js.undefined)
         
@@ -190,7 +192,7 @@ object mod {
       var documentLoader: js.UndefOr[
             js.Function2[
               /* url */ Url, 
-              /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit], 
+              /* callback */ js.Function2[/* err */ js.Error, /* remoteDoc */ RemoteDocument, Unit], 
               js.Promise[RemoteDocument]
             ]
           ] = js.undefined
@@ -205,7 +207,7 @@ object mod {
       extension [Self <: DocLoader](x: Self) {
         
         inline def setDocumentLoader(
-          value: (/* url */ Url, /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument]
+          value: (/* url */ Url, /* callback */ js.Function2[/* err */ js.Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument]
         ): Self = StObject.set(x, "documentLoader", js.Any.fromFunction2(value))
         
         inline def setDocumentLoaderUndefined: Self = StObject.set(x, "documentLoader", js.undefined)
@@ -215,7 +217,7 @@ object mod {
     trait ExpMap extends StObject {
       
       // TODO: Figure out type of info
-      var expansionMap: js.UndefOr[js.Function1[/* info */ js.Any, js.Any]] = js.undefined
+      var expansionMap: js.UndefOr[js.Function1[/* info */ Any, Any]] = js.undefined
     }
     object ExpMap {
       
@@ -226,7 +228,7 @@ object mod {
       
       extension [Self <: ExpMap](x: Self) {
         
-        inline def setExpansionMap(value: /* info */ js.Any => js.Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
+        inline def setExpansionMap(value: /* info */ Any => Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
         
         inline def setExpansionMapUndefined: Self = StObject.set(x, "expansionMap", js.undefined)
       }
@@ -297,7 +299,7 @@ object mod {
       
       var format: js.UndefOr[MimeNQuad] = js.undefined
       
-      var rdfParser: js.UndefOr[js.Any] = js.undefined
+      var rdfParser: js.UndefOr[Any] = js.undefined
       
       var useNativeTypes: js.UndefOr[Boolean] = js.undefined
       
@@ -316,7 +318,7 @@ object mod {
         
         inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        inline def setRdfParser(value: js.Any): Self = StObject.set(x, "rdfParser", value.asInstanceOf[js.Any])
+        inline def setRdfParser(value: Any): Self = StObject.set(x, "rdfParser", value.asInstanceOf[js.Any])
         
         inline def setRdfParserUndefined: Self = StObject.set(x, "rdfParser", js.undefined)
         

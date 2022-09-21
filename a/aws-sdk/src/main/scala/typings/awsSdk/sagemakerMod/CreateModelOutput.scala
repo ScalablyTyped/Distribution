@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateModelOutput extends StObject {
   
   /**
-    * The ARN of the model created in Amazon SageMaker.
+    * The ARN of the model created in SageMaker.
     */
   var ModelArn: typings.awsSdk.sagemakerMod.ModelArn
 }

@@ -1,16 +1,17 @@
 package typings.mangopay2NodejsSdk.anon
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.user.KYCLevel
-import typings.mangopay2NodejsSdk.mod.user.LegalPersonType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.userMod.user.KYCLevel
+import typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
+import typings.mangopay2NodejsSdk.userMod.user.UserCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserLegalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserLegalData> */
+/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/user.user.UserLegalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/user.user.RequiredUserLegalData> */
 trait MakeKeysRequiredPartialUs extends StObject {
   
   var CompanyNumber: js.UndefOr[String] = js.undefined
@@ -23,11 +24,11 @@ trait MakeKeysRequiredPartialUs extends StObject {
   
   var Id: js.UndefOr[String] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.undefined
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.KYCLevel] = js.undefined
   
-  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType
+  var LegalPersonType: typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
   
-  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.undefined
+  var LegalRepresentativeAddress: AddressType
   
   var LegalRepresentativeBirthday: Timestamp
   
@@ -54,12 +55,17 @@ trait MakeKeysRequiredPartialUs extends StObject {
   var Statute: js.UndefOr[String | Null] = js.undefined
   
   var Tag: js.UndefOr[String] = js.undefined
+  
+  var TermsAndConditionsAccepted: js.UndefOr[Boolean] = js.undefined
+  
+  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.UserCategory] = js.undefined
 }
 object MakeKeysRequiredPartialUs {
   
   inline def apply(
     Email: String,
     LegalPersonType: LegalPersonType,
+    LegalRepresentativeAddress: AddressType,
     LegalRepresentativeBirthday: Timestamp,
     LegalRepresentativeCountryOfResidence: CountryISO,
     LegalRepresentativeFirstName: String,
@@ -67,7 +73,7 @@ object MakeKeysRequiredPartialUs {
     LegalRepresentativeNationality: CountryISO,
     Name: String
   ): MakeKeysRequiredPartialUs = {
-    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeAddress = LegalRepresentativeAddress.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeKeysRequiredPartialUs]
   }
   
@@ -98,8 +104,6 @@ object MakeKeysRequiredPartialUs {
     inline def setLegalPersonType(value: LegalPersonType): Self = StObject.set(x, "LegalPersonType", value.asInstanceOf[js.Any])
     
     inline def setLegalRepresentativeAddress(value: AddressType): Self = StObject.set(x, "LegalRepresentativeAddress", value.asInstanceOf[js.Any])
-    
-    inline def setLegalRepresentativeAddressUndefined: Self = StObject.set(x, "LegalRepresentativeAddress", js.undefined)
     
     inline def setLegalRepresentativeBirthday(value: Timestamp): Self = StObject.set(x, "LegalRepresentativeBirthday", value.asInstanceOf[js.Any])
     
@@ -148,5 +152,13 @@ object MakeKeysRequiredPartialUs {
     inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    
+    inline def setTermsAndConditionsAccepted(value: Boolean): Self = StObject.set(x, "TermsAndConditionsAccepted", value.asInstanceOf[js.Any])
+    
+    inline def setTermsAndConditionsAcceptedUndefined: Self = StObject.set(x, "TermsAndConditionsAccepted", js.undefined)
+    
+    inline def setUserCategory(value: UserCategory): Self = StObject.set(x, "UserCategory", value.asInstanceOf[js.Any])
+    
+    inline def setUserCategoryUndefined: Self = StObject.set(x, "UserCategory", js.undefined)
   }
 }

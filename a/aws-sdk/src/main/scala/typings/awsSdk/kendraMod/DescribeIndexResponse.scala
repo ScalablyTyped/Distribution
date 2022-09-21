@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeIndexResponse extends StObject {
   
   /**
-    * For enterprise edtion indexes, you can choose to use additional capacity to meet the needs of your application. This contains the capacity units used for the index. A 0 for the query capacity or the storage capacity indicates that the index is using the default capacity for the index.
+    * For Enterprise Edition indexes, you can choose to use additional capacity to meet the needs of your application. This contains the capacity units used for the index. A query or document storage capacity of zero indicates that the index is using the default capacity. For more information on the default capacity for an index and adjusting this, see Adjusting capacity.
     */
   var CapacityUnits: js.UndefOr[CapacityUnitsConfiguration] = js.undefined
   
   /**
     * The Unix datetime that the index was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The description of the index.
+    * The description for the index.
     */
   var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
-    * Configuration settings for any metadata applied to the documents in the index.
+    * Configuration information for document metadata or fields. Document metadata are fields or attributes associated with your documents. For example, the company department name associated with each document.
     */
   var DocumentMetadataConfigurations: js.UndefOr[DocumentMetadataConfigurationList] = js.undefined
   
@@ -32,12 +32,12 @@ trait DescribeIndexResponse extends StObject {
   var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
-    * When th eStatus field value is FAILED, the ErrorMessage field contains a message that explains why.
+    * When the Status field value is FAILED, the ErrorMessage field contains a message that explains why.
     */
   var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
-    * the name of the index.
+    * The identifier of the index.
     */
   var Id: js.UndefOr[IndexId] = js.undefined
   
@@ -57,7 +57,7 @@ trait DescribeIndexResponse extends StObject {
   var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
   /**
-    * The identifier of the AWS KMS customer master key (CMK) used to encrypt your data. Amazon Kendra doesn't support asymmetric CMKs.
+    * The identifier of the KMScustomer master key (CMK) that is used to encrypt your data. Amazon Kendra doesn't support asymmetric CMKs.
     */
   var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServerSideEncryptionConfiguration] = js.undefined
   
@@ -69,12 +69,17 @@ trait DescribeIndexResponse extends StObject {
   /**
     * The Unix datetime that the index was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user context policy for the Amazon Kendra index.
     */
   var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.undefined
+  
+  /**
+    * Whether you have enabled the configuration for fetching access levels of groups and users from an Amazon Web Services Single Sign On identity source.
+    */
+  var UserGroupResolutionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.UserGroupResolutionConfiguration] = js.undefined
   
   /**
     * The user token configuration for the Amazon Kendra index.
@@ -94,7 +99,7 @@ object DescribeIndexResponse {
     
     inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -106,7 +111,7 @@ object DescribeIndexResponse {
     
     inline def setDocumentMetadataConfigurationsUndefined: Self = StObject.set(x, "DocumentMetadataConfigurations", js.undefined)
     
-    inline def setDocumentMetadataConfigurationsVarargs(value: DocumentMetadataConfiguration*): Self = StObject.set(x, "DocumentMetadataConfigurations", js.Array(value :_*))
+    inline def setDocumentMetadataConfigurationsVarargs(value: DocumentMetadataConfiguration*): Self = StObject.set(x, "DocumentMetadataConfigurations", js.Array(value*))
     
     inline def setEdition(value: IndexEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
@@ -140,7 +145,7 @@ object DescribeIndexResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
     
@@ -148,10 +153,14 @@ object DescribeIndexResponse {
     
     inline def setUserContextPolicyUndefined: Self = StObject.set(x, "UserContextPolicy", js.undefined)
     
+    inline def setUserGroupResolutionConfiguration(value: UserGroupResolutionConfiguration): Self = StObject.set(x, "UserGroupResolutionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setUserGroupResolutionConfigurationUndefined: Self = StObject.set(x, "UserGroupResolutionConfiguration", js.undefined)
+    
     inline def setUserTokenConfigurations(value: UserTokenConfigurationList): Self = StObject.set(x, "UserTokenConfigurations", value.asInstanceOf[js.Any])
     
     inline def setUserTokenConfigurationsUndefined: Self = StObject.set(x, "UserTokenConfigurations", js.undefined)
     
-    inline def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = StObject.set(x, "UserTokenConfigurations", js.Array(value :_*))
+    inline def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = StObject.set(x, "UserTokenConfigurations", js.Array(value*))
   }
 }

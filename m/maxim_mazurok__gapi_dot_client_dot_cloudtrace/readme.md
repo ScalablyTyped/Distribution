@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_cloudtrace
 
-Typings are for version 2.0.20201107
+Typings are for version 2.0.20220728
 
 ## Library description:
 TypeScript typings for Cloud Trace API v2
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Trace API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudtrace |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 871 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 828.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

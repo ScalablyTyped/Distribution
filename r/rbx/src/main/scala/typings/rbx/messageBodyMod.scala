@@ -54,7 +54,7 @@ object messageBodyMod {
   
   @JSImport("rbx/components/message/message-body", "MessageBody")
   @js.native
-  val MessageBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val MessageBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait MessageBodyProps extends StObject {

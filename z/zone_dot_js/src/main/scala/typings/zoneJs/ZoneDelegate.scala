@@ -38,41 +38,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZoneDelegate extends StObject {
   
-  def cancelTask(targetZone: Zone, task: Task): js.Any = js.native
+  def cancelTask(targetZone: Zone, task: Task): Any = js.native
   
   def fork(targetZone: Zone, zoneSpec: ZoneSpec): Zone = js.native
   
-  def handleError(targetZone: Zone, error: js.Any): Boolean = js.native
+  def handleError(targetZone: Zone, error: Any): Boolean = js.native
   
   def hasTask(targetZone: Zone, isEmpty: HasTaskState): Unit = js.native
   
   def intercept(targetZone: Zone, callback: js.Function, source: String): js.Function = js.native
   
-  def invoke(targetZone: Zone, callback: js.Function): js.Any = js.native
-  def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any): js.Any = js.native
-  def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[js.Any]): js.Any = js.native
-  def invoke(
-    targetZone: Zone,
-    callback: js.Function,
-    applyThis: js.Any,
-    applyArgs: js.Array[js.Any],
-    source: String
-  ): js.Any = js.native
-  def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: Unit, source: String): js.Any = js.native
-  def invoke(targetZone: Zone, callback: js.Function, applyThis: Unit, applyArgs: js.Array[js.Any]): js.Any = js.native
-  def invoke(
-    targetZone: Zone,
-    callback: js.Function,
-    applyThis: Unit,
-    applyArgs: js.Array[js.Any],
-    source: String
-  ): js.Any = js.native
-  def invoke(targetZone: Zone, callback: js.Function, applyThis: Unit, applyArgs: Unit, source: String): js.Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Any): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Any, applyArgs: js.Array[Any]): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Any, applyArgs: js.Array[Any], source: String): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Any, applyArgs: Unit, source: String): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any]): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any], source: String): Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: Unit, applyArgs: Unit, source: String): Any = js.native
   
-  def invokeTask(targetZone: Zone, task: Task): js.Any = js.native
-  def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any): js.Any = js.native
-  def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any, applyArgs: js.Array[js.Any]): js.Any = js.native
-  def invokeTask(targetZone: Zone, task: Task, applyThis: Unit, applyArgs: js.Array[js.Any]): js.Any = js.native
+  def invokeTask(targetZone: Zone, task: Task): Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: Any): Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: Any, applyArgs: js.Array[Any]): Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: Unit, applyArgs: js.Array[Any]): Any = js.native
   
   def scheduleTask(targetZone: Zone, task: Task): Task = js.native
   

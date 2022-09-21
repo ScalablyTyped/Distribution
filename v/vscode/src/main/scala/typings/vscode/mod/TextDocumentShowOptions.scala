@@ -7,27 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDocumentShowOptions extends StObject {
   
   /**
-    * An optional flag that when `true` will stop the [editor](#TextEditor) from taking focus.
+    * An optional flag that when `true` will stop the {@link TextEditor editor} from taking focus.
     */
   var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An optional flag that controls if an [editor](#TextEditor)-tab will be replaced
-    * with the next editor or if it will be kept.
+    * An optional flag that controls if an {@link TextEditor editor}-tab shows as preview. Preview tabs will
+    * be replaced and reused until set to stay - either explicitly or through editing.
+    *
+    * *Note* that the flag is ignored if a user has disabled preview editors in settings.
     */
   var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An optional selection to apply for the document in the [editor](#TextEditor).
+    * An optional selection to apply for the document in the {@link TextEditor editor}.
     */
   var selection: js.UndefOr[Range] = js.undefined
   
   /**
-    * An optional view column in which the [editor](#TextEditor) should be shown.
-    * The default is the [active](#ViewColumn.Active), other values are adjusted to
-    * be `Min(column, columnCount + 1)`, the [active](#ViewColumn.Active)-column is
-    * not adjusted. Use [`ViewColumn.Beside`](#ViewColumn.Beside) to open the
-    * editor to the side of the currently active one.
+    * An optional view column in which the {@link TextEditor editor} should be shown.
+    * The default is the {@link ViewColumn.Active active}. Columns that do not exist
+    * will be created as needed up to the maximum of {@linkcode ViewColumn.Nine}.
+    * Use {@linkcode ViewColumn.Beside} to open the editor to the side of the currently
+    * active one.
     */
   var viewColumn: js.UndefOr[ViewColumn] = js.undefined
 }

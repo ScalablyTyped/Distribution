@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object attachtoMod {
   
-  @JSImport("snabbdom/build/package/helpers/attachto", JSImport.Namespace)
+  @JSImport("snabbdom/build/helpers/attachto", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -19,10 +19,10 @@ object attachtoMod {
   
   trait AttachData
     extends StObject
-       with /* i */ NumberDictionary[js.Any]
-       with /* key */ StringDictionary[js.Any] {
+       with /* i */ NumberDictionary[Any]
+       with /* key */ StringDictionary[Any] {
     
-    var placeholder: js.UndefOr[js.Any] = js.undefined
+    var placeholder: js.UndefOr[Any] = js.undefined
     
     var real: js.UndefOr[Node] = js.undefined
   }
@@ -35,7 +35,7 @@ object attachtoMod {
     
     extension [Self <: AttachData](x: Self) {
       
-      inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       

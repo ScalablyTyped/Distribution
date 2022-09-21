@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementCSSInlineStyle extends StObject {
   
+  /* standard dom */
   val style: CSSStyleDeclaration
 }
 object ElementCSSInlineStyle {

@@ -14,7 +14,7 @@ trait JobDescriptionAttributes extends StObject {
   
   var `job-mandatory-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
     ]
   ] = js.undefined
   
@@ -43,7 +43,7 @@ object JobDescriptionAttributes {
     
     inline def `setDocument-metadataUndefined`: Self = StObject.set(x, "document-metadata", js.undefined)
     
-    inline def `setDocument-metadataVarargs`(value: String*): Self = StObject.set(x, "document-metadata", js.Array(value :_*))
+    inline def `setDocument-metadataVarargs`(value: String*): Self = StObject.set(x, "document-metadata", js.Array(value*))
     
     inline def `setJob-charge-info`(value: String): Self = StObject.set(x, "job-charge-info", value.asInstanceOf[js.Any])
     
@@ -51,13 +51,13 @@ object JobDescriptionAttributes {
     
     inline def `setJob-mandatory-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
         ]
     ): Self = StObject.set(x, "job-mandatory-attributes", value.asInstanceOf[js.Any])
     
     inline def `setJob-mandatory-attributesUndefined`: Self = StObject.set(x, "job-mandatory-attributes", js.undefined)
     
-    inline def `setJob-mandatory-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value :_*))
+    inline def `setJob-mandatory-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value*))
     
     inline def `setJob-message-from-operator`(value: String): Self = StObject.set(x, "job-message-from-operator", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object JobDescriptionAttributes {
     
     inline def `setJob-message-to-operator-actualUndefined`: Self = StObject.set(x, "job-message-to-operator-actual", js.undefined)
     
-    inline def `setJob-message-to-operator-actualVarargs`(value: String*): Self = StObject.set(x, "job-message-to-operator-actual", js.Array(value :_*))
+    inline def `setJob-message-to-operator-actualVarargs`(value: String*): Self = StObject.set(x, "job-message-to-operator-actual", js.Array(value*))
     
     inline def `setJob-name`(value: String): Self = StObject.set(x, "job-name", value.asInstanceOf[js.Any])
     

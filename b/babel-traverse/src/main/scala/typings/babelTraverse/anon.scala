@@ -7,7 +7,7 @@ import typings.babelTraverse.mod.Binding
 import typings.babelTraverse.mod.Node
 import typings.babelTraverse.mod.NodePath
 import typings.babelTraverse.mod.Scope
-import typings.babelTypes.ts36Mod.Identifier_
+import typings.babelTypes.mod.Identifier_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,11 @@ object anon {
     
     var confident: Boolean
     
-    var value: js.Any
+    var value: Any
   }
   object Confident {
     
-    inline def apply(confident: Boolean, value: js.Any): Confident = {
+    inline def apply(confident: Boolean, value: Any): Confident = {
       val __obj = js.Dynamic.literal(confident = confident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Confident]
     }
@@ -31,7 +31,7 @@ object anon {
       
       inline def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

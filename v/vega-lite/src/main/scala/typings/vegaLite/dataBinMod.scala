@@ -20,12 +20,12 @@ object dataBinMod {
   
   @JSImport("vega-lite/build/src/compile/data/bin", "BinNode")
   @js.native
-  class BinNode protected () extends DataFlowNode {
+  open class BinNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, bins: Dict[BinComponent]) = this()
     
     def assemble(): js.Array[Transforms] = js.native
     
-    /* private */ var bins: js.Any = js.native
+    /* private */ var bins: Any = js.native
     
     /**
       * Merge bin nodes. This method either integrates the bin config from the other node
@@ -82,7 +82,7 @@ object dataBinMod {
       
       inline def setAs(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      inline def setAsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setBin(value: BinParams): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       

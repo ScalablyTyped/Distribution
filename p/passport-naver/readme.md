@@ -1,7 +1,7 @@
 
 # Scala.js typings for passport-naver
 
-Typings are for version 0.2
+Typings are for version 1.0
 
 ## Library description:
 Naver authentication strategy for Passport
@@ -10,10 +10,10 @@ Naver authentication strategy for Passport
 | ------------------ | :-------------: |
 | Full name          | passport-naver |
 | Keywords           | passport, naver, auth, oauth, authentication, oauth2 |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 127721 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6078.666666666667 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/naver/passport-naver)

@@ -5,7 +5,6 @@ import typings.scriptableIos.scriptableIosStrings.busy
 import typings.scriptableIos.scriptableIosStrings.free
 import typings.scriptableIos.scriptableIosStrings.tentative
 import typings.scriptableIos.scriptableIosStrings.unavailable
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In order to add the event to your calendar, you must call the save() function.
   * @see https://docs.scriptable.app/calendarevent/#-new-calendarevent
   */
-class CalendarEvent ()
+open class CalendarEvent ()
   extends StObject
      with typings.scriptableIos.CalendarEvent {
   
@@ -86,7 +85,7 @@ class CalendarEvent ()
     * @see https://docs.scriptable.app/calendarevent/#enddate
     */
   /* CompleteClass */
-  var endDate: Date = js.native
+  var endDate: js.Date = js.native
   
   /**
     * _Identifier of event._
@@ -153,7 +152,7 @@ class CalendarEvent ()
     * @see https://docs.scriptable.app/calendarevent/#startdate
     */
   /* CompleteClass */
-  var startDate: Date = js.native
+  var startDate: js.Date = js.native
   
   /**
     * _Time zone of event._
@@ -185,8 +184,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#between
     */
   /* static member */
-  inline def between(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  inline def between(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def between(startDate: js.Date, endDate: js.Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def between(startDate: js.Date, endDate: js.Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occurred last week._

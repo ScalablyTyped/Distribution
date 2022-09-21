@@ -25,6 +25,6 @@ object INxAttributeExpressionValues {
     
     inline def setQValues(value: js.Array[INxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: INxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: INxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

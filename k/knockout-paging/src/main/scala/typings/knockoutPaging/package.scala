@@ -1,8 +1,9 @@
 package typings.knockoutPaging
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type KnockoutComputedFunctions[T] = org.scalablytyped.runtime.StringDictionary[typings.knockoutPaging.KnockoutBindingHandler]
+type KnockoutComputedFunctions[T] = StringDictionary[KnockoutBindingHandler]

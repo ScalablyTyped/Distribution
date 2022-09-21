@@ -28,29 +28,29 @@ object XSockets {
     
     var id: String = js.native
     
-    def many(event: String, times: Double, handler: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def many(event: String, times: Double, handler: js.Function1[/* data */ Any, Unit]): Unit = js.native
     def many(
       event: String,
       times: Double,
-      handler: js.Function1[/* data */ js.Any, Unit],
+      handler: js.Function1[/* data */ Any, Unit],
       confirmation: js.Function1[/* arg */ ConfirmationArgument, Unit]
     ): Unit = js.native
     
-    def on(event: String, handler: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def on(event: String, handler: js.Function1[/* data */ Any, Unit]): Unit = js.native
     def on(
       event: String,
-      handler: js.Function1[/* data */ js.Any, Unit],
+      handler: js.Function1[/* data */ Any, Unit],
       confirmation: js.Function1[/* arg */ ConfirmationArgument, Unit]
     ): Unit = js.native
     
-    def one(event: String, handler: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def one(event: String, handler: js.Function1[/* data */ Any, Unit]): Unit = js.native
     def one(
       event: String,
-      handler: js.Function1[/* data */ js.Any, Unit],
+      handler: js.Function1[/* data */ Any, Unit],
       confirmation: js.Function1[/* arg */ ConfirmationArgument, Unit]
     ): Unit = js.native
     
-    def publish(topic: String, data: js.Any): Unit = js.native
+    def publish(topic: String, data: Any): Unit = js.native
     
     def unbind(event: String): Unit = js.native
   }

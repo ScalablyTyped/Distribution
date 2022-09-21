@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new MobileAuthorizationApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class MobileAuthorizationApi () extends StObject {
+open class MobileAuthorizationApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**

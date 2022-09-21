@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Cube")
 @js.native
-class Cube ()
+open class Cube ()
   extends StObject
      with typings.igniteUi.Infragistics.Cube {
   

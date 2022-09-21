@@ -48,7 +48,7 @@ object SetTypings {
     
     inline def setTypings_(value: js.Array[String]): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
     
-    inline def setTypings_Varargs(value: String*): Self = StObject.set(x, "typings", js.Array(value :_*))
+    inline def setTypings_Varargs(value: String*): Self = StObject.set(x, "typings", js.Array(value*))
     
     inline def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
   }

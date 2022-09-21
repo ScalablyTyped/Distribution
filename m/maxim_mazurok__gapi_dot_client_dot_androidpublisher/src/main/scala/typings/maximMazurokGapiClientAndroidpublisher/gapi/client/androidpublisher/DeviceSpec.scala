@@ -32,12 +32,12 @@ object DeviceSpec {
     
     inline def setSupportedAbisUndefined: Self = StObject.set(x, "supportedAbis", js.undefined)
     
-    inline def setSupportedAbisVarargs(value: String*): Self = StObject.set(x, "supportedAbis", js.Array(value :_*))
+    inline def setSupportedAbisVarargs(value: String*): Self = StObject.set(x, "supportedAbis", js.Array(value*))
     
     inline def setSupportedLocales(value: js.Array[String]): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
     
     inline def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
-    inline def setSupportedLocalesVarargs(value: String*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
+    inline def setSupportedLocalesVarargs(value: String*): Self = StObject.set(x, "supportedLocales", js.Array(value*))
   }
 }

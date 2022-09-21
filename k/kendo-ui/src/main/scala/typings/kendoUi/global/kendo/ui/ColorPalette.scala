@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.ColorPalette")
 @js.native
-class ColorPalette protected ()
+open class ColorPalette protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.ColorPalette {
   def this(element: Element) = this()

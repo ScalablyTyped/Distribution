@@ -14,7 +14,7 @@ trait ASPxClientValidationCompletedEventArgs
   /**
     * Gets a container object that holds the validated control(s).
     */
-  var container: js.Any
+  var container: Any
   
   /**
     * Gets the first control (either visible or invisible) that hasn't passed the validation applied.
@@ -44,7 +44,7 @@ trait ASPxClientValidationCompletedEventArgs
 object ASPxClientValidationCompletedEventArgs {
   
   inline def apply(
-    container: js.Any,
+    container: Any,
     firstInvalidControl: ASPxClientControl,
     firstVisibleInvalidControl: ASPxClientControl,
     invisibleControlsValidated: Boolean,
@@ -57,7 +57,7 @@ object ASPxClientValidationCompletedEventArgs {
   
   extension [Self <: ASPxClientValidationCompletedEventArgs](x: Self) {
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setFirstInvalidControl(value: ASPxClientControl): Self = StObject.set(x, "firstInvalidControl", value.asInstanceOf[js.Any])
     

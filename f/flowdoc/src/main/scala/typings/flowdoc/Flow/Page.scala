@@ -38,7 +38,7 @@ object Page {
     
     inline def setChildren(value: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setStartNodeID(value: String): Self = StObject.set(x, "startNodeID", value.asInstanceOf[js.Any])
     

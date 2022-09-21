@@ -14,13 +14,13 @@ object firestore extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "firestore.Blob")
   @js.native
-  class Blob ()
+  open class Blob ()
     extends typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "firestore.FieldPath")
   @js.native
-  class FieldPath protected ()
+  open class FieldPath protected ()
     extends typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldPath {
     def this(segments: String*) = this()
   }
@@ -28,13 +28,13 @@ object firestore extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "firestore.FieldValue")
   @js.native
-  class FieldValue ()
+  open class FieldValue ()
     extends typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "firestore.GeoPoint")
   @js.native
-  class GeoPoint protected ()
+  open class GeoPoint protected ()
     extends typings.reactNativeFirebase.mod.RNFirebase.firestore.GeoPoint {
     def this(latitude: Double, longitude: Double) = this()
   }
@@ -42,7 +42,7 @@ object firestore extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "firestore.Timestamp")
   @js.native
-  class Timestamp protected ()
+  open class Timestamp protected ()
     extends typings.reactNativeFirebase.mod.RNFirebase.firestore.Timestamp {
     def this(seconds: Double, nanoseconds: Double) = this()
   }

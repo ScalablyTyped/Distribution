@@ -18,6 +18,8 @@ trait PackagingGroup extends StObject {
     */
   var DomainName: js.UndefOr[string] = js.undefined
   
+  var EgressAccessLogs: js.UndefOr[typings.awsSdk.mediapackagevodMod.EgressAccessLogs] = js.undefined
+  
   /**
     * The ID of the PackagingGroup.
     */
@@ -45,6 +47,10 @@ object PackagingGroup {
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    
+    inline def setEgressAccessLogs(value: EgressAccessLogs): Self = StObject.set(x, "EgressAccessLogs", value.asInstanceOf[js.Any])
+    
+    inline def setEgressAccessLogsUndefined: Self = StObject.set(x, "EgressAccessLogs", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ trait Tag extends StObject {
   var PropagateAtLaunch: js.UndefOr[typings.awsSdk.autoscalingMod.PropagateAtLaunch] = js.undefined
   
   /**
-    * The name of the group.
+    * The name of the Auto Scaling group.
     */
   var ResourceId: js.UndefOr[XmlString] = js.undefined
   

@@ -44,7 +44,7 @@ object FillGradientPath {
     
     inline def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setType(value: gradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

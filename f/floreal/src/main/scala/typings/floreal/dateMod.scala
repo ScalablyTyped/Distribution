@@ -1,6 +1,5 @@
 package typings.floreal
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +8,11 @@ object dateMod {
   
   @JSImport("floreal/date", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FlorealDate {
     def this(value: String) = this()
+    def this(value: js.Date) = this()
     def this(value: Double) = this()
     
     /* CompleteClass */
@@ -40,7 +40,7 @@ object dateMod {
     override def decade(): Double = js.native
     
     /* CompleteClass */
-    override def firstDayOfYear(): Date = js.native
+    override def firstDayOfYear(): js.Date = js.native
     
     /* CompleteClass */
     override def isComplementaryDay(): Boolean = js.native
@@ -70,10 +70,20 @@ object dateMod {
     override def setYearDecimal(year: Double): Unit = js.native
     
     /* CompleteClass */
+    override def toDateString(): String = js.native
+    /* CompleteClass */
+    @JSName("toDateString")
+    var toDateString_Original: js.Function0[String] = js.native
+    
+    /* CompleteClass */
     override def toFullDateString(): String = js.native
     
     /* CompleteClass */
     override def toShortDateString(): String = js.native
+    
+    /* CompleteClass */
+    @JSName("toString")
+    var toString_Original: js.Function0[String] = js.native
     
     /* CompleteClass */
     override def year(): String = js.native
@@ -93,7 +103,7 @@ object dateMod {
   inline def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def firstDayOfYear(year: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait FlorealDate extends StObject {
     
@@ -113,7 +123,7 @@ object dateMod {
     
     def decade(): Double
     
-    def firstDayOfYear(): Date
+    def firstDayOfYear(): js.Date
     
     def isComplementaryDay(): Boolean
     
@@ -133,9 +143,16 @@ object dateMod {
     
     def setYearDecimal(year: Double): Unit
     
+    def toDateString(): String
+    @JSName("toDateString")
+    var toDateString_Original: js.Function0[String]
+    
     def toFullDateString(): String
     
     def toShortDateString(): String
+    
+    @JSName("toString")
+    var toString_Original: js.Function0[String]
     
     def year(): String
     
@@ -152,7 +169,7 @@ object dateMod {
       dayOfYear: () => Double,
       dayTitle: () => String,
       decade: () => Double,
-      firstDayOfYear: () => Date,
+      firstDayOfYear: () => js.Date,
       isComplementaryDay: () => Boolean,
       isYearSextile: () => Boolean,
       month: () => Double,
@@ -162,12 +179,15 @@ object dateMod {
       setMonth: Double => Unit,
       setYear: String => Unit,
       setYearDecimal: Double => Unit,
+      toDateString: () => String,
       toFullDateString: () => String,
       toShortDateString: () => String,
+      toString_ : () => String,
       year: () => String,
       yearDecimal: () => Double
     ): FlorealDate = {
-      val __obj = js.Dynamic.literal(day = js.Any.fromFunction0(day), dayName = js.Any.fromFunction0(dayName), dayOfDecade = js.Any.fromFunction0(dayOfDecade), dayOfMonth = js.Any.fromFunction0(dayOfMonth), dayOfWeek = js.Any.fromFunction0(dayOfWeek), dayOfYear = js.Any.fromFunction0(dayOfYear), dayTitle = js.Any.fromFunction0(dayTitle), decade = js.Any.fromFunction0(decade), firstDayOfYear = js.Any.fromFunction0(firstDayOfYear), isComplementaryDay = js.Any.fromFunction0(isComplementaryDay), isYearSextile = js.Any.fromFunction0(isYearSextile), month = js.Any.fromFunction0(month), monthName = js.Any.fromFunction0(monthName), setDate = js.Any.fromFunction3(setDate), setDay = js.Any.fromFunction1(setDay), setMonth = js.Any.fromFunction1(setMonth), setYear = js.Any.fromFunction1(setYear), setYearDecimal = js.Any.fromFunction1(setYearDecimal), toFullDateString = js.Any.fromFunction0(toFullDateString), toShortDateString = js.Any.fromFunction0(toShortDateString), year = js.Any.fromFunction0(year), yearDecimal = js.Any.fromFunction0(yearDecimal))
+      val __obj = js.Dynamic.literal(day = js.Any.fromFunction0(day), dayName = js.Any.fromFunction0(dayName), dayOfDecade = js.Any.fromFunction0(dayOfDecade), dayOfMonth = js.Any.fromFunction0(dayOfMonth), dayOfWeek = js.Any.fromFunction0(dayOfWeek), dayOfYear = js.Any.fromFunction0(dayOfYear), dayTitle = js.Any.fromFunction0(dayTitle), decade = js.Any.fromFunction0(decade), firstDayOfYear = js.Any.fromFunction0(firstDayOfYear), isComplementaryDay = js.Any.fromFunction0(isComplementaryDay), isYearSextile = js.Any.fromFunction0(isYearSextile), month = js.Any.fromFunction0(month), monthName = js.Any.fromFunction0(monthName), setDate = js.Any.fromFunction3(setDate), setDay = js.Any.fromFunction1(setDay), setMonth = js.Any.fromFunction1(setMonth), setYear = js.Any.fromFunction1(setYear), setYearDecimal = js.Any.fromFunction1(setYearDecimal), toDateString = js.Any.fromFunction0(toDateString), toFullDateString = js.Any.fromFunction0(toFullDateString), toShortDateString = js.Any.fromFunction0(toShortDateString), year = js.Any.fromFunction0(year), yearDecimal = js.Any.fromFunction0(yearDecimal))
+      __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
       __obj.asInstanceOf[FlorealDate]
     }
     
@@ -189,7 +209,7 @@ object dateMod {
       
       inline def setDecade(value: () => Double): Self = StObject.set(x, "decade", js.Any.fromFunction0(value))
       
-      inline def setFirstDayOfYear(value: () => Date): Self = StObject.set(x, "firstDayOfYear", js.Any.fromFunction0(value))
+      inline def setFirstDayOfYear(value: () => js.Date): Self = StObject.set(x, "firstDayOfYear", js.Any.fromFunction0(value))
       
       inline def setIsComplementaryDay(value: () => Boolean): Self = StObject.set(x, "isComplementaryDay", js.Any.fromFunction0(value))
       
@@ -209,9 +229,13 @@ object dateMod {
       
       inline def setSetYearDecimal(value: Double => Unit): Self = StObject.set(x, "setYearDecimal", js.Any.fromFunction1(value))
       
+      inline def setToDateString(value: () => String): Self = StObject.set(x, "toDateString", js.Any.fromFunction0(value))
+      
       inline def setToFullDateString(value: () => String): Self = StObject.set(x, "toFullDateString", js.Any.fromFunction0(value))
       
       inline def setToShortDateString(value: () => String): Self = StObject.set(x, "toShortDateString", js.Any.fromFunction0(value))
+      
+      inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
       inline def setYear(value: () => String): Self = StObject.set(x, "year", js.Any.fromFunction0(value))
       

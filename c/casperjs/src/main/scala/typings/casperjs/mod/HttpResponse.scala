@@ -8,7 +8,7 @@ trait HttpResponse extends StObject {
   
   var contentType: String
   
-  var data: js.Any
+  var data: Any
   
   var headers: js.Array[Header]
   
@@ -30,7 +30,7 @@ object HttpResponse {
   
   inline def apply(
     contentType: String,
-    data: js.Any,
+    data: Any,
     headers: js.Array[Header],
     id: Double,
     stage: String,
@@ -47,11 +47,11 @@ object HttpResponse {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

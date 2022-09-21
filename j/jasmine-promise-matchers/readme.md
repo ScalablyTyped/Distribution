@@ -9,10 +9,10 @@ Jasmine Promise Matchers ================
 | ------------------ | :-------------: |
 | Full name          | jasmine-promise-matchers |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 110564 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3452.3333333333335 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/bvaughn/jasmine-promise-matchers)

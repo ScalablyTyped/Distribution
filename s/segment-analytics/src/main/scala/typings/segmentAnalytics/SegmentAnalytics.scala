@@ -18,7 +18,7 @@ object SegmentAnalytics {
   trait AnalyticsJS extends StObject {
     
     /* Define a new integration */
-    def addIntegration(integration: js.Function1[/* options */ js.Any, Unit]): this.type = js.native
+    def addIntegration(integration: js.Function1[/* options */ Any, Unit]): this.type = js.native
     
     /* The alias method combines two previously unassociated user identities.
       This comes in handy if the same user visits from two different devices
@@ -420,7 +420,7 @@ object SegmentAnalytics {
     }
   }
   
-  type IntegrationsSettings = StringDictionary[js.Any]
+  type IntegrationsSettings = StringDictionary[Any]
   
   trait MetricsOptions extends StObject {
     
@@ -466,7 +466,7 @@ object SegmentAnalytics {
     
     var context: js.UndefOr[js.Object] = js.undefined
     
-    var integrations: js.UndefOr[js.Any] = js.undefined
+    var integrations: js.UndefOr[Any] = js.undefined
   }
   object SegmentOpts {
     
@@ -485,7 +485,7 @@ object SegmentAnalytics {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setIntegrations(value: js.Any): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: Any): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
       inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
     }

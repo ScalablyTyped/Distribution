@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Skeleton")
 @js.native
-class Skeleton protected ()
+open class Skeleton protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Skeleton {
   /**
@@ -53,5 +53,5 @@ object Skeleton {
     * @param scene defines the hosting scene
     * @returns a new skeleton
     */
-  inline def Parse(parsedSkeleton: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Skeleton]
+  inline def Parse(parsedSkeleton: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Skeleton]
 }

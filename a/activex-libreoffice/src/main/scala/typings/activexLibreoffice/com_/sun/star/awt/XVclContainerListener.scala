@@ -28,7 +28,7 @@ object XVclContainerListener {
   inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     windowAdded: VclContainerEvent => Unit,
     windowRemoved: VclContainerEvent => Unit

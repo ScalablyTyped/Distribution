@@ -12,7 +12,7 @@ trait CellExpandEvent[T] extends StObject {
   /**
     * Expand data.
     */
-  var expandArgs: js.Any
+  var expandArgs: Any
   
   /**
     * The column index where the cell is being expanded.
@@ -31,14 +31,14 @@ trait CellExpandEvent[T] extends StObject {
 }
 object CellExpandEvent {
   
-  inline def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): CellExpandEvent[T] = {
+  inline def apply[T](expandArgs: Any, idx: Double, rowData: T, rowIdx: Double): CellExpandEvent[T] = {
     val __obj = js.Dynamic.literal(expandArgs = expandArgs.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellExpandEvent[T]]
   }
   
   extension [Self <: CellExpandEvent[?], T](x: Self & CellExpandEvent[T]) {
     
-    inline def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
+    inline def setExpandArgs(value: Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
     
     inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     

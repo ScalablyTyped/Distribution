@@ -24,11 +24,11 @@ object anon {
     
     var checkTypes: Boolean
     
-    var env: js.Array[js.Any]
+    var env: js.Array[Any]
   }
   object CheckTypes {
     
-    inline def apply(checkTypes: Boolean, env: js.Array[js.Any]): CheckTypes = {
+    inline def apply(checkTypes: Boolean, env: js.Array[Any]): CheckTypes = {
       val __obj = js.Dynamic.literal(checkTypes = checkTypes.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckTypes]
     }
@@ -37,9 +37,9 @@ object anon {
       
       inline def setCheckTypes(value: Boolean): Self = StObject.set(x, "checkTypes", value.asInstanceOf[js.Any])
       
-      inline def setEnv(value: js.Array[js.Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Array[Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      inline def setEnvVarargs(value: js.Any*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: Any*): Self = StObject.set(x, "env", js.Array(value*))
     }
   }
   

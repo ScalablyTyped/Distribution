@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.Endpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,8 @@ trait QuotaUser extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. To fetch remarketing tag for an account, name must follow the pattern `buyers/{accountId}` where `{accountId}` represents ID of a buyer that owns the remarketing tag.
-    * For a bidder accessing remarketing tag on behalf of a child seat buyer, `{accountId}` should represent the ID of the child seat buyer. To fetch remarketing tag for a specific
-    * user list, name must follow the pattern `buyers/{accountId}/userLists/{userListId}`. See UserList.name.
+    * Output only. Name of the endpoint resource that must follow the pattern `bidders/{bidderAccountId}/endpoints/{endpointId}`, where {bidderAccountId} is the account ID of the
+    * bidder who operates this endpoint, and {endpointId} is a unique ID assigned by the server.
     */
   var name: String
   
@@ -41,6 +41,12 @@ trait QuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: Endpoint
+  
+  /** Field mask to use for partial in-place updates. */
+  var updateMask: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -49,8 +55,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String): QuotaUser = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: Endpoint): QuotaUser = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -93,6 +99,12 @@ object QuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: Endpoint): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

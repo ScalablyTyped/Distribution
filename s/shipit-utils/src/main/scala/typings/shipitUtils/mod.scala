@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def equalValues(value: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalValues")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def equalValues(value: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalValues")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def getShipit(gruntOrShipit: GruntOrShipit): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShipit")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
   

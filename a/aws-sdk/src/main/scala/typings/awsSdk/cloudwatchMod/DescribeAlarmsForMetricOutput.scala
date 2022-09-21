@@ -24,6 +24,6 @@ object DescribeAlarmsForMetricOutput {
     
     inline def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
     
-    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
+    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value*))
   }
 }

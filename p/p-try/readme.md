@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-try
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 `Start a promise chain
@@ -10,10 +10,10 @@ Typings are for version 2.2.0
 | ------------------ | :-------------: |
 | Full name          | p-try |
 | Keywords           | promise, try, resolve, function, catch, async, await, promises, settled, ponyfill, polyfill, shim, bluebird |
-| # releases         | 3 |
-| # dependents       | 146 |
-| # downloads        | 1329229357 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9691323E8 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-try#readme)

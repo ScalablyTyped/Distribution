@@ -12,9 +12,19 @@ trait S3CopyObjectOperation extends StObject {
   var AccessControlGrants: js.UndefOr[S3GrantList] = js.undefined
   
   /**
+    * Specifies whether Amazon S3 should use an S3 Bucket Key for object encryption with server-side encryption using Amazon Web Services KMS (SSE-KMS). Setting this header to true causes Amazon S3 to use an S3 Bucket Key for object encryption with SSE-KMS. Specifying this header with an object action doesn’t affect bucket-level settings for S3 Bucket Key.
+    */
+  var BucketKeyEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * 
     */
   var CannedAccessControlList: js.UndefOr[S3CannedAccessControlList] = js.undefined
+  
+  /**
+    * Indicates the algorithm you want Amazon S3 to use to create the checksum. For more information see  Checking object integrity in the Amazon S3 User Guide.
+    */
+  var ChecksumAlgorithm: js.UndefOr[S3ChecksumAlgorithm] = js.undefined
   
   /**
     * 
@@ -24,10 +34,10 @@ trait S3CopyObjectOperation extends StObject {
   /**
     * 
     */
-  var ModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.undefined
+  var ModifiedSinceConstraint: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * If you don't provide this parameter, Amazon S3 copies all the metadata from the original objects. If you specify an empty set, the new objects will have no tags. Otherwise, Amazon S3 assigns the supplied tags to the new objects.
     */
   var NewObjectMetadata: js.UndefOr[S3ObjectMetadata] = js.undefined
   
@@ -49,7 +59,7 @@ trait S3CopyObjectOperation extends StObject {
   /**
     * The date when the applied object retention configuration expires on all objects in the Batch Operations job.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[TimeStamp] = js.undefined
+  var ObjectLockRetainUntilDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies an optional metadata property for website redirects, x-amz-website-redirect-location. Allows webpage redirects if the object is accessed through a website endpoint.
@@ -72,7 +82,7 @@ trait S3CopyObjectOperation extends StObject {
   var StorageClass: js.UndefOr[S3StorageClass] = js.undefined
   
   /**
-    * Specifies the folder prefix into which you would like the objects to be copied. For example, to copy objects into a folder named "Folder1" in the destination bucket, set the TargetKeyPrefix to "Folder1/".
+    * Specifies the folder prefix into which you would like the objects to be copied. For example, to copy objects into a folder named Folder1 in the destination bucket, set the TargetKeyPrefix to Folder1.
     */
   var TargetKeyPrefix: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
@@ -84,7 +94,7 @@ trait S3CopyObjectOperation extends StObject {
   /**
     * 
     */
-  var UnModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.undefined
+  var UnModifiedSinceConstraint: js.UndefOr[js.Date] = js.undefined
 }
 object S3CopyObjectOperation {
   
@@ -99,17 +109,25 @@ object S3CopyObjectOperation {
     
     inline def setAccessControlGrantsUndefined: Self = StObject.set(x, "AccessControlGrants", js.undefined)
     
-    inline def setAccessControlGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "AccessControlGrants", js.Array(value :_*))
+    inline def setAccessControlGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "AccessControlGrants", js.Array(value*))
+    
+    inline def setBucketKeyEnabled(value: Boolean): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setBucketKeyEnabledUndefined: Self = StObject.set(x, "BucketKeyEnabled", js.undefined)
     
     inline def setCannedAccessControlList(value: S3CannedAccessControlList): Self = StObject.set(x, "CannedAccessControlList", value.asInstanceOf[js.Any])
     
     inline def setCannedAccessControlListUndefined: Self = StObject.set(x, "CannedAccessControlList", js.undefined)
     
+    inline def setChecksumAlgorithm(value: S3ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
+    
     inline def setMetadataDirective(value: S3MetadataDirective): Self = StObject.set(x, "MetadataDirective", value.asInstanceOf[js.Any])
     
     inline def setMetadataDirectiveUndefined: Self = StObject.set(x, "MetadataDirective", js.undefined)
     
-    inline def setModifiedSinceConstraint(value: TimeStamp): Self = StObject.set(x, "ModifiedSinceConstraint", value.asInstanceOf[js.Any])
+    inline def setModifiedSinceConstraint(value: js.Date): Self = StObject.set(x, "ModifiedSinceConstraint", value.asInstanceOf[js.Any])
     
     inline def setModifiedSinceConstraintUndefined: Self = StObject.set(x, "ModifiedSinceConstraint", js.undefined)
     
@@ -121,7 +139,7 @@ object S3CopyObjectOperation {
     
     inline def setNewObjectTaggingUndefined: Self = StObject.set(x, "NewObjectTagging", js.undefined)
     
-    inline def setNewObjectTaggingVarargs(value: S3Tag*): Self = StObject.set(x, "NewObjectTagging", js.Array(value :_*))
+    inline def setNewObjectTaggingVarargs(value: S3Tag*): Self = StObject.set(x, "NewObjectTagging", js.Array(value*))
     
     inline def setObjectLockLegalHoldStatus(value: S3ObjectLockLegalHoldStatus): Self = StObject.set(x, "ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
     
@@ -131,7 +149,7 @@ object S3CopyObjectOperation {
     
     inline def setObjectLockModeUndefined: Self = StObject.set(x, "ObjectLockMode", js.undefined)
     
-    inline def setObjectLockRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setObjectLockRetainUntilDate(value: js.Date): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
     
     inline def setObjectLockRetainUntilDateUndefined: Self = StObject.set(x, "ObjectLockRetainUntilDate", js.undefined)
     
@@ -159,7 +177,7 @@ object S3CopyObjectOperation {
     
     inline def setTargetResourceUndefined: Self = StObject.set(x, "TargetResource", js.undefined)
     
-    inline def setUnModifiedSinceConstraint(value: TimeStamp): Self = StObject.set(x, "UnModifiedSinceConstraint", value.asInstanceOf[js.Any])
+    inline def setUnModifiedSinceConstraint(value: js.Date): Self = StObject.set(x, "UnModifiedSinceConstraint", value.asInstanceOf[js.Any])
     
     inline def setUnModifiedSinceConstraintUndefined: Self = StObject.set(x, "UnModifiedSinceConstraint", js.undefined)
   }

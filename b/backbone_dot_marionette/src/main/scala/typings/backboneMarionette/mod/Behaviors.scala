@@ -13,7 +13,7 @@ object Behaviors {
   /**
     * This method defines where your behavior classes are stored. Override this to provide another lookup.
     */
-  inline def behaviorsLookup(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("behaviorsLookup")().asInstanceOf[js.Any]
+  inline def behaviorsLookup(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("behaviorsLookup")().asInstanceOf[Any]
   
   /**
     * This method has a default implementation that is simple to override. It
@@ -21,5 +21,5 @@ object Behaviors {
     * Behaviors.behaviorsLookup or elsewhere. Note that it should return the type of the
     * class to instantiate, not an instance of that class.
     */
-  inline def getBehaviorClass(options: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorClass")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getBehaviorClass(options: Any, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorClass")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

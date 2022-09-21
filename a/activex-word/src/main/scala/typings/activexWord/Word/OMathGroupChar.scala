@@ -18,7 +18,7 @@ trait OMathGroupChar extends StObject {
   
   val E: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathGroupChar_typekey")
   var WordDotOMathGroupChar_typekey: OMathGroupChar
@@ -32,7 +32,7 @@ object OMathGroupChar {
     CharTop: Boolean,
     Creator: Double,
     E: OMath,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathGroupChar_typekey: OMathGroupChar
   ): OMathGroupChar = {
     val __obj = js.Dynamic.literal(AlignTop = AlignTop.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Char = Char.asInstanceOf[js.Any], CharTop = CharTop.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object OMathGroupChar {
     
     inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathGroupChar_typekey(value: OMathGroupChar): Self = StObject.set(x, "Word.OMathGroupChar_typekey", value.asInstanceOf[js.Any])
   }

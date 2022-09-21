@@ -46,7 +46,9 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.generatePickerMod.DataPickerPlacement
 import typings.antd.generatePickerMod.PickerLocale
+import typings.antd.statusUtilsMod.InputStatus
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
 import typings.rcPicker.interfaceMod.CustomFormat
@@ -62,16 +64,20 @@ import typings.rcPicker.rangePickerMod.RangeDateRender
 import typings.rcPicker.rangePickerMod.RangeInfo
 import typings.rcPicker.rangePickerMod.RangeType
 import typings.rcTrigger.interfaceMod.AlignType
+import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
+import typings.std.Element
 import typings.std.Exclude
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -90,9 +96,9 @@ object timePickerMod extends Shortcut {
   @js.native
   trait MergedTimePicker
     extends StObject
-       with ForwardRefExoticComponent[TimePickerProps & RefAttributes[js.Any]] {
+       with ForwardRefExoticComponent[TimePickerProps & RefAttributes[Any]] {
     
-    var RangePicker: ForwardRefExoticComponent[TimeRangePickerProps & RefAttributes[js.Any]] = js.native
+    var RangePicker: ForwardRefExoticComponent[TimeRangePickerProps & RefAttributes[Any]] = js.native
   }
   
   trait TimePickerLocale extends StObject {
@@ -120,7 +126,7 @@ object timePickerMod extends Shortcut {
     }
   }
   
-  /* Inlined parent antd.antd/lib/_util/type.Omit<antd.antd/lib/date-picker/generatePicker.PickerTimeProps<moment.moment.Moment>, 'picker'> */
+  /* Inlined parent std.Omit<antd.antd/lib/date-picker/generatePicker.PickerTimeProps<moment.moment.Moment>, 'picker'> */
   trait TimePickerProps extends StObject {
     
     var addon: js.UndefOr[js.Function0[ReactNode]] = js.undefined
@@ -129,11 +135,11 @@ object timePickerMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -151,21 +157,21 @@ object timePickerMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -179,11 +185,11 @@ object timePickerMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -195,13 +201,13 @@ object timePickerMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -211,7 +217,7 @@ object timePickerMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -257,8 +263,14 @@ object timePickerMod extends Shortcut {
     
     var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
+    var disabledTime: js.UndefOr[js.Function1[/* date */ Moment, DisabledTimes]] = js.undefined
+    
     var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
+    /**
+      * @deprecated `dropdownClassName` is deprecated which will be removed in next major
+      *   version.Please use `popupClassName` instead.
+      */
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var format: js.UndefOr[String | CustomFormat[Moment] | (js.Array[String | CustomFormat[Moment]])] = js.undefined
@@ -273,6 +285,8 @@ object timePickerMod extends Shortcut {
     
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
+    
     var locale: js.UndefOr[PickerLocale] = js.undefined
     
     var minuteStep: js.UndefOr[Double] = js.undefined
@@ -283,6 +297,8 @@ object timePickerMod extends Shortcut {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
+    
     var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     var onChange: js.UndefOr[js.Function2[/* value */ Moment | Null, /* dateString */ String, Unit]] = js.undefined
@@ -292,6 +308,14 @@ object timePickerMod extends Shortcut {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -317,11 +341,15 @@ object timePickerMod extends Shortcut {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
+    var placement: js.UndefOr[DataPickerPlacement] = js.undefined
+    
     var popupClassName: js.UndefOr[String] = js.undefined
     
     var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
@@ -339,9 +367,15 @@ object timePickerMod extends Shortcut {
     
     var size: js.UndefOr[SizeType] = js.undefined
     
+    var status: js.UndefOr[InputStatus] = js.undefined
+    
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suffixIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -372,7 +406,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -380,7 +414,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -416,7 +450,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -428,7 +462,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -436,7 +470,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -444,7 +478,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -472,15 +506,15 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -504,7 +538,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -514,7 +548,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -534,7 +568,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -624,6 +658,10 @@ object timePickerMod extends Shortcut {
       
       inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
       
+      inline def setDisabledTime(value: /* date */ Moment => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
+      
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDropdownAlign(value: AlignType): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
@@ -640,7 +678,7 @@ object timePickerMod extends Shortcut {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[Moment])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[Moment])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
@@ -662,6 +700,10 @@ object timePickerMod extends Shortcut {
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
       
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
+      
       inline def setLocale(value: PickerLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
@@ -682,7 +724,11 @@ object timePickerMod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setNextIcon(value: ReactNode): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
+      
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -698,9 +744,15 @@ object timePickerMod extends Shortcut {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -750,6 +802,10 @@ object timePickerMod extends Shortcut {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setPlacement(value: DataPickerPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
       inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
       inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
@@ -761,6 +817,10 @@ object timePickerMod extends Shortcut {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
       
       inline def setRenderExtraFooter(value: /* mode */ PanelMode => ReactNode): Self = StObject.set(x, "renderExtraFooter", js.Any.fromFunction1(value))
       
@@ -794,6 +854,10 @@ object timePickerMod extends Shortcut {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -801,6 +865,14 @@ object timePickerMod extends Shortcut {
       inline def setSuffixIcon(value: ReactNode): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
       
       inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+      
+      inline def setSuperNextIcon(value: ReactNode): Self = StObject.set(x, "superNextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSuperNextIconUndefined: Self = StObject.set(x, "superNextIcon", js.undefined)
+      
+      inline def setSuperPrevIcon(value: ReactNode): Self = StObject.set(x, "superPrevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSuperPrevIconUndefined: Self = StObject.set(x, "superPrevIcon", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
@@ -822,7 +894,7 @@ object timePickerMod extends Shortcut {
     }
   }
   
-  /* Inlined parent antd.antd/lib/_util/type.Omit<antd.antd/lib/date-picker/generatePicker.RangePickerTimeProps<moment.moment.Moment>, 'picker'> */
+  /* Inlined parent std.Omit<antd.antd/lib/date-picker/generatePicker.RangePickerTimeProps<moment.moment.Moment>, 'picker'> */
   trait TimeRangePickerProps extends StObject {
     
     var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
@@ -833,11 +905,11 @@ object timePickerMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -855,21 +927,21 @@ object timePickerMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -883,11 +955,11 @@ object timePickerMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -899,13 +971,13 @@ object timePickerMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -915,7 +987,7 @@ object timePickerMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -965,6 +1037,10 @@ object timePickerMod extends Shortcut {
     
     var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
+    /**
+      * @deprecated `dropdownClassName` is deprecated which will be removed in next major
+      *   version.Please use `popupClassName` instead.
+      */
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var format: js.UndefOr[String | CustomFormat[Moment] | (js.Array[String | CustomFormat[Moment]])] = js.undefined
@@ -979,6 +1055,8 @@ object timePickerMod extends Shortcut {
     
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
+    
     var locale: js.UndefOr[PickerLocale] = js.undefined
     
     var minuteStep: js.UndefOr[Double] = js.undefined
@@ -988,6 +1066,8 @@ object timePickerMod extends Shortcut {
     var monthCellRender: js.UndefOr[MonthCellRender[Moment]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
@@ -1009,6 +1089,14 @@ object timePickerMod extends Shortcut {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1036,9 +1124,15 @@ object timePickerMod extends Shortcut {
     
     var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
+    var placement: js.UndefOr[DataPickerPlacement] = js.undefined
+    
+    var popupClassName: js.UndefOr[String] = js.undefined
+    
     var popupStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var ranges: js.UndefOr[
         Record[
@@ -1065,9 +1159,15 @@ object timePickerMod extends Shortcut {
     
     var size: js.UndefOr[SizeType] = js.undefined
     
+    var status: js.UndefOr[InputStatus] = js.undefined
+    
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suffixIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -1102,7 +1202,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -1110,7 +1210,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -1146,7 +1246,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -1158,7 +1258,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -1166,7 +1266,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -1174,7 +1274,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -1202,15 +1302,15 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -1234,7 +1334,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -1244,7 +1344,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -1264,7 +1364,7 @@ object timePickerMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1376,7 +1476,7 @@ object timePickerMod extends Shortcut {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[Moment])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[Moment])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
@@ -1398,6 +1498,10 @@ object timePickerMod extends Shortcut {
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
       
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
+      
       inline def setLocale(value: PickerLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
@@ -1418,7 +1522,11 @@ object timePickerMod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setNextIcon(value: ReactNode): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
+      
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1440,9 +1548,15 @@ object timePickerMod extends Shortcut {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -1492,6 +1606,14 @@ object timePickerMod extends Shortcut {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setPlacement(value: DataPickerPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
+      
       inline def setPopupStyle(value: CSSProperties): Self = StObject.set(x, "popupStyle", value.asInstanceOf[js.Any])
       
       inline def setPopupStyleUndefined: Self = StObject.set(x, "popupStyle", js.undefined)
@@ -1499,6 +1621,10 @@ object timePickerMod extends Shortcut {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
       
       inline def setRanges(
         value: Record[
@@ -1545,6 +1671,10 @@ object timePickerMod extends Shortcut {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -1552,6 +1682,14 @@ object timePickerMod extends Shortcut {
       inline def setSuffixIcon(value: ReactNode): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
       
       inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+      
+      inline def setSuperNextIcon(value: ReactNode): Self = StObject.set(x, "superNextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSuperNextIconUndefined: Self = StObject.set(x, "superNextIcon", js.undefined)
+      
+      inline def setSuperPrevIcon(value: ReactNode): Self = StObject.set(x, "superPrevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSuperPrevIconUndefined: Self = StObject.set(x, "superPrevIcon", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       

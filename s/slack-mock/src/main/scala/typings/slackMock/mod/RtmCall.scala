@@ -1,6 +1,6 @@
 package typings.slackMock.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ws.mod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +27,7 @@ object RtmCall {
     
     inline def setRawMessage(value: Data): Self = StObject.set(x, "rawMessage", value.asInstanceOf[js.Any])
     
-    inline def setRawMessageVarargs(value: Buffer*): Self = StObject.set(x, "rawMessage", js.Array(value :_*))
+    inline def setRawMessageVarargs(value: Buffer*): Self = StObject.set(x, "rawMessage", js.Array(value*))
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }

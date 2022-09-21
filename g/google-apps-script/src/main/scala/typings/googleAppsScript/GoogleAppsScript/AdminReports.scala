@@ -150,7 +150,7 @@ object AdminReports {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -199,7 +199,7 @@ object AdminReports {
         
         inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
         
-        inline def setEventsVarargs(value: ActivityEvents*): Self = StObject.set(x, "events", js.Array(value :_*))
+        inline def setEventsVarargs(value: ActivityEvents*): Self = StObject.set(x, "events", js.Array(value*))
         
         inline def setId(value: ActivityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -281,7 +281,7 @@ object AdminReports {
         
         inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
         
-        inline def setParametersVarargs(value: ActivityEventsParameters*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+        inline def setParametersVarargs(value: ActivityEventsParameters*): Self = StObject.set(x, "parameters", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -324,13 +324,13 @@ object AdminReports {
         
         inline def setMultiIntValueUndefined: Self = StObject.set(x, "multiIntValue", js.undefined)
         
-        inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value :_*))
+        inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value*))
         
         inline def setMultiValue(value: js.Array[String]): Self = StObject.set(x, "multiValue", value.asInstanceOf[js.Any])
         
         inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
         
-        inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value :_*))
+        inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -493,7 +493,7 @@ object AdminReports {
         
         inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
         
-        inline def setParametersVarargs(value: UsageReportParameters*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+        inline def setParametersVarargs(value: UsageReportParameters*): Self = StObject.set(x, "parameters", js.Array(value*))
       }
     }
     
@@ -579,7 +579,7 @@ object AdminReports {
         
         inline def setMsgValueUndefined: Self = StObject.set(x, "msgValue", js.undefined)
         
-        inline def setMsgValueVarargs(value: js.Object*): Self = StObject.set(x, "msgValue", js.Array(value :_*))
+        inline def setMsgValueVarargs(value: js.Object*): Self = StObject.set(x, "msgValue", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -628,13 +628,13 @@ object AdminReports {
         
         inline def setUsageReportsUndefined: Self = StObject.set(x, "usageReports", js.undefined)
         
-        inline def setUsageReportsVarargs(value: UsageReport*): Self = StObject.set(x, "usageReports", js.Array(value :_*))
+        inline def setUsageReportsVarargs(value: UsageReport*): Self = StObject.set(x, "usageReports", js.Array(value*))
         
         inline def setWarnings(value: js.Array[UsageReportsWarnings]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
         
         inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
         
-        inline def setWarningsVarargs(value: UsageReportsWarnings*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+        inline def setWarningsVarargs(value: UsageReportsWarnings*): Self = StObject.set(x, "warnings", js.Array(value*))
       }
     }
     
@@ -663,7 +663,7 @@ object AdminReports {
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: UsageReportsWarningsData*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: UsageReportsWarningsData*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         

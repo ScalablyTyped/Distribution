@@ -110,13 +110,13 @@ object mod {
       
       inline def setPackagePropUndefined: Self = StObject.set(x, "packageProp", js.undefined)
       
-      inline def setPackagePropVarargs(value: String*): Self = StObject.set(x, "packageProp", js.Array(value :_*))
+      inline def setPackagePropVarargs(value: String*): Self = StObject.set(x, "packageProp", js.Array(value*))
       
       inline def setSearchPlaces(value: js.Array[String]): Self = StObject.set(x, "searchPlaces", value.asInstanceOf[js.Any])
       
       inline def setSearchPlacesUndefined: Self = StObject.set(x, "searchPlaces", js.undefined)
       
-      inline def setSearchPlacesVarargs(value: String*): Self = StObject.set(x, "searchPlaces", js.Array(value :_*))
+      inline def setSearchPlacesVarargs(value: String*): Self = StObject.set(x, "searchPlaces", js.Array(value*))
       
       inline def setStopDir(value: String): Self = StObject.set(x, "stopDir", value.asInstanceOf[js.Any])
       

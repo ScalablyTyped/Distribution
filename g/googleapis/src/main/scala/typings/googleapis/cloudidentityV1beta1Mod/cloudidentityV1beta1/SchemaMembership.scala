@@ -4,43 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Resource representing a Membership within a Group
-  */
 trait SchemaMembership extends StObject {
   
   /**
-    * Creation timestamp of the Membership.
+    * Output only. The time when the `Membership` was created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * EntityKey of the entity to be added as the member. Must be set while
-    * creating a Membership, read-only afterwards.  Currently allowed entity
-    * types: `Users`, `Groups`.
+    * Immutable. The `EntityKey` of the member. Either `member_key` or `preferred_member_key` must be set when calling MembershipsService.CreateMembership but not both; both shall be set when returned.
     */
   var memberKey: js.UndefOr[SchemaEntityKey] = js.undefined
   
   /**
-    * [Resource name](https://cloud.google.com/apis/design/resource_names) of
-    * the Membership in the format:
-    * `groups/{group_id}/memberships/{member_id}`, where group_id is the unique
-    * id assigned to the Group to which Membership belongs to, and member_id is
-    * the unique id assigned to the member  Must be left blank while creating a
-    * Membership.
+    * Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Membership`. Shall be of the form `groups/{group_id\}/memberships/{membership_id\}`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Roles for a member within the Group.  Currently supported
-    * MembershipRoles: `&quot;MEMBER&quot;`.
+    * Required. Immutable. The `EntityKey` of the member. Either `member_key` or `preferred_member_key` must be set when calling MembershipsService.CreateMembership but not both; both shall be set when returned.
+    */
+  var preferredMemberKey: js.UndefOr[SchemaEntityKey] = js.undefined
+  
+  /**
+    * The `MembershipRole`s that apply to the `Membership`. If unspecified, defaults to a single `MembershipRole` with `name` `MEMBER`. Must not contain duplicate `MembershipRole`s with the same `name`.
     */
   var roles: js.UndefOr[js.Array[SchemaMembershipRole]] = js.undefined
   
   /**
-    * Last updated timestamp of the Membership.
+    * Output only. The type of the membership.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. The time when the `Membership` was last updated.
+    */
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMembership {
   
@@ -53,6 +52,8 @@ object SchemaMembership {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setMemberKey(value: SchemaEntityKey): Self = StObject.set(x, "memberKey", value.asInstanceOf[js.Any])
@@ -61,15 +62,29 @@ object SchemaMembership {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPreferredMemberKey(value: SchemaEntityKey): Self = StObject.set(x, "preferredMemberKey", value.asInstanceOf[js.Any])
+    
+    inline def setPreferredMemberKeyUndefined: Self = StObject.set(x, "preferredMemberKey", js.undefined)
     
     inline def setRoles(value: js.Array[SchemaMembershipRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: SchemaMembershipRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: SchemaMembershipRole*): Self = StObject.set(x, "roles", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

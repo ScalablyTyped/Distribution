@@ -20,7 +20,7 @@ object Axes {
   
   @JSImport("plottable", "Axes.Category")
   @js.native
-  class Category protected ()
+  open class Category protected ()
     extends typings.plottable.axesMod.Category {
     /**
       * Constructs a Category Axis.
@@ -49,13 +49,13 @@ object Axes {
       */
     @JSImport("plottable", "Axes.Category._MINIMUM_WIDTH_PER_LABEL_PX")
     @js.native
-    def _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
-    inline def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
+    def _MINIMUM_WIDTH_PER_LABEL_PX: Any = js.native
+    inline def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Axes.Numeric")
   @js.native
-  class Numeric protected ()
+  open class Numeric protected ()
     extends typings.plottable.axesMod.Numeric {
     /**
       * Constructs a Numeric Axis.
@@ -91,7 +91,7 @@ object Axes {
   
   @JSImport("plottable", "Axes.Time")
   @js.native
-  class Time protected ()
+  open class Time protected ()
     extends typings.plottable.axesMod.Time {
     /**
       * Constructs a Time Axis.
@@ -124,18 +124,18 @@ object Axes {
     
     @JSImport("plottable", "Axes.Time._DEFAULT_TIME_AXIS_CONFIGURATIONS")
     @js.native
-    def _DEFAULT_TIME_AXIS_CONFIGURATIONS: js.Any = js.native
-    inline def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_TIME_AXIS_CONFIGURATIONS: Any = js.native
+    inline def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Axes.Time._LONG_DATE")
     @js.native
-    def _LONG_DATE: js.Any = js.native
-    inline def _LONG_DATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
+    def _LONG_DATE: Any = js.native
+    inline def _LONG_DATE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Axes.Time._SORTED_TIME_INTERVAL_INDEX")
     @js.native
-    def _SORTED_TIME_INTERVAL_INDEX: js.Any = js.native
-    inline def _SORTED_TIME_INTERVAL_INDEX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
+    def _SORTED_TIME_INTERVAL_INDEX: Any = js.native
+    inline def _SORTED_TIME_INTERVAL_INDEX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
   }
   
   object TimeAxisOrientation {

@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import typings.std.ErrorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,81 +12,129 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Errors extends StObject {
   
-  def AccessDeniedError(): typings.std.Error
-  def AccessDeniedError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def AccessDeniedError(): js.Error
+  def AccessDeniedError(message: String): js.Error
+  def AccessDeniedError(message: String, options: ErrorOptions): js.Error
+  def AccessDeniedError(message: Unit, options: ErrorOptions): js.Error
   @JSName("AccessDeniedError")
   var AccessDeniedError_Original: AccessDeniedError
   
-  def ConnectionError(): typings.std.Error
-  def ConnectionError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ConnectionError(): js.Error
+  def ConnectionError(message: String): js.Error
+  def ConnectionError(message: String, options: ErrorOptions): js.Error
+  def ConnectionError(message: Unit, options: ErrorOptions): js.Error
   @JSName("ConnectionError")
   var ConnectionError_Original: ConnectionError
   
-  def ConnectionRefusedError(): typings.std.Error
-  def ConnectionRefusedError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ConnectionRefusedError(): js.Error
+  def ConnectionRefusedError(message: String): js.Error
+  def ConnectionRefusedError(message: String, options: ErrorOptions): js.Error
+  def ConnectionRefusedError(message: Unit, options: ErrorOptions): js.Error
   @JSName("ConnectionRefusedError")
   var ConnectionRefusedError_Original: ConnectionRefusedError
   
-  def ConnectionTimedOutError(): typings.std.Error
-  def ConnectionTimedOutError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ConnectionTimedOutError(): js.Error
+  def ConnectionTimedOutError(message: String): js.Error
+  def ConnectionTimedOutError(message: String, options: ErrorOptions): js.Error
+  def ConnectionTimedOutError(message: Unit, options: ErrorOptions): js.Error
   @JSName("ConnectionTimedOutError")
   var ConnectionTimedOutError_Original: ConnectionTimedOutError
   
-  def DatabaseError(): typings.std.Error
-  def DatabaseError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def DatabaseError(): js.Error
+  def DatabaseError(message: String): js.Error
+  def DatabaseError(message: String, options: ErrorOptions): js.Error
+  def DatabaseError(message: Unit, options: ErrorOptions): js.Error
   @JSName("DatabaseError")
   var DatabaseError_Original: DatabaseError
   
-  def EmptyResultError(): typings.std.Error
-  def EmptyResultError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def EmptyResultError(): js.Error
+  def EmptyResultError(message: String): js.Error
+  def EmptyResultError(message: String, options: ErrorOptions): js.Error
+  def EmptyResultError(message: Unit, options: ErrorOptions): js.Error
   @JSName("EmptyResultError")
   var EmptyResultError_Original: EmptyResultError
   
-  def Error(): typings.std.Error
-  def Error(message: String): typings.std.Error
+  /* standard es2022.error */
+  def Error(): js.Error
+  def Error(message: String): js.Error
+  def Error(message: String, options: ErrorOptions): js.Error
+  def Error(message: Unit, options: ErrorOptions): js.Error
   @JSName("Error")
   var Error_Original: BaseError
   
-  def ExclusionConstraintError(): typings.std.Error
-  def ExclusionConstraintError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ExclusionConstraintError(): js.Error
+  def ExclusionConstraintError(message: String): js.Error
+  def ExclusionConstraintError(message: String, options: ErrorOptions): js.Error
+  def ExclusionConstraintError(message: Unit, options: ErrorOptions): js.Error
   @JSName("ExclusionConstraintError")
   var ExclusionConstraintError_Original: ExclusionConstraintError
   
-  def ForeignKeyConstraintError(): typings.std.Error
-  def ForeignKeyConstraintError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ForeignKeyConstraintError(): js.Error
+  def ForeignKeyConstraintError(message: String): js.Error
+  def ForeignKeyConstraintError(message: String, options: ErrorOptions): js.Error
+  def ForeignKeyConstraintError(message: Unit, options: ErrorOptions): js.Error
   @JSName("ForeignKeyConstraintError")
   var ForeignKeyConstraintError_Original: ForeignKeyConstraintError
   
-  def HostNotFoundError(): typings.std.Error
-  def HostNotFoundError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def HostNotFoundError(): js.Error
+  def HostNotFoundError(message: String): js.Error
+  def HostNotFoundError(message: String, options: ErrorOptions): js.Error
+  def HostNotFoundError(message: Unit, options: ErrorOptions): js.Error
   @JSName("HostNotFoundError")
   var HostNotFoundError_Original: HostNotFoundError
   
-  def HostNotReachableError(): typings.std.Error
-  def HostNotReachableError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def HostNotReachableError(): js.Error
+  def HostNotReachableError(message: String): js.Error
+  def HostNotReachableError(message: String, options: ErrorOptions): js.Error
+  def HostNotReachableError(message: Unit, options: ErrorOptions): js.Error
   @JSName("HostNotReachableError")
   var HostNotReachableError_Original: HostNotReachableError
   
-  def InvalidConnectionError(): typings.std.Error
-  def InvalidConnectionError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def InvalidConnectionError(): js.Error
+  def InvalidConnectionError(message: String): js.Error
+  def InvalidConnectionError(message: String, options: ErrorOptions): js.Error
+  def InvalidConnectionError(message: Unit, options: ErrorOptions): js.Error
   @JSName("InvalidConnectionError")
   var InvalidConnectionError_Original: InvalidConnectionError
   
-  def TimeoutError(): typings.std.Error
-  def TimeoutError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def TimeoutError(): js.Error
+  def TimeoutError(message: String): js.Error
+  def TimeoutError(message: String, options: ErrorOptions): js.Error
+  def TimeoutError(message: Unit, options: ErrorOptions): js.Error
   @JSName("TimeoutError")
   var TimeoutError_Original: TimeoutError
   
-  def UniqueConstraintError(): typings.std.Error
-  def UniqueConstraintError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def UniqueConstraintError(): js.Error
+  def UniqueConstraintError(message: String): js.Error
+  def UniqueConstraintError(message: String, options: ErrorOptions): js.Error
+  def UniqueConstraintError(message: Unit, options: ErrorOptions): js.Error
   @JSName("UniqueConstraintError")
   var UniqueConstraintError_Original: UniqueConstraintError
   
-  def ValidationError(): typings.std.Error
-  def ValidationError(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ValidationError(): js.Error
+  def ValidationError(message: String): js.Error
+  def ValidationError(message: String, options: ErrorOptions): js.Error
+  def ValidationError(message: Unit, options: ErrorOptions): js.Error
   
-  def ValidationErrorItem(): typings.std.Error
-  def ValidationErrorItem(message: String): typings.std.Error
+  /* standard es2022.error */
+  def ValidationErrorItem(): js.Error
+  def ValidationErrorItem(message: String): js.Error
+  def ValidationErrorItem(message: String, options: ErrorOptions): js.Error
+  def ValidationErrorItem(message: Unit, options: ErrorOptions): js.Error
   @JSName("ValidationErrorItem")
   var ValidationErrorItem_Original: ValidationErrorItem
   

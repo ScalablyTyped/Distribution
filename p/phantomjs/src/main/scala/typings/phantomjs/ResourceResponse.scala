@@ -1,7 +1,6 @@
 package typings.phantomjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait ResourceResponse extends StObject {
   
   var statusText: String
   
-  var time: Date
+  var time: js.Date
   
   var url: String
 }
@@ -37,7 +36,7 @@ object ResourceResponse {
     stage: String,
     status: Double,
     statusText: String,
-    time: Date,
+    time: js.Date,
     url: String
   ): ResourceResponse = {
     val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -66,7 +65,7 @@ object ResourceResponse {
     
     inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

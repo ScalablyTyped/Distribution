@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("Combiner")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.combineSourceMap.mod.^ {
       def this(file: String) = this()
       def this(file: String, sourceRoot: String) = this()

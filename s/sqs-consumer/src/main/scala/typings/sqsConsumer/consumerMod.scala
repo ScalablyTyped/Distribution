@@ -11,7 +11,6 @@ import typings.sqsConsumer.sqsConsumerStrings.processing_error
 import typings.sqsConsumer.sqsConsumerStrings.response_processed
 import typings.sqsConsumer.sqsConsumerStrings.stopped
 import typings.sqsConsumer.sqsConsumerStrings.timeout_error
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,34 +19,34 @@ object consumerMod {
   
   @JSImport("sqs-consumer/dist/consumer", "Consumer")
   @js.native
-  class Consumer protected () extends EventEmitter {
+  open class Consumer protected () extends EventEmitter {
     def this(options: ConsumerOptions) = this()
     
-    /* private */ var attributeNames: js.Any = js.native
+    /* private */ var attributeNames: Any = js.native
     
-    /* private */ var authenticationErrorTimeout: js.Any = js.native
+    /* private */ var authenticationErrorTimeout: Any = js.native
     
-    /* private */ var batchSize: js.Any = js.native
+    /* private */ var batchSize: Any = js.native
     
-    /* private */ var changeVisabilityTimeout: js.Any = js.native
+    /* private */ var changeVisabilityTimeoutBatch: Any = js.native
     
-    /* private */ var changeVisabilityTimeoutBatch: js.Any = js.native
+    /* private */ var changeVisibilityTimeout: Any = js.native
     
-    /* private */ var deleteMessage: js.Any = js.native
+    /* private */ var deleteMessage: Any = js.native
     
-    /* private */ var deleteMessageBatch: js.Any = js.native
+    /* private */ var deleteMessageBatch: Any = js.native
     
-    /* private */ var emitError: js.Any = js.native
+    /* private */ var emitError: Any = js.native
     
     @JSName("emit")
     def emit_empty(
       event: empty,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[js.Any]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[Any]
     ): Boolean = js.native
     @JSName("emit")
     def emit_error(
       event: error,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]]
     ): Boolean = js.native
     @JSName("emit")
     def emit_messageprocessed(
@@ -62,109 +61,111 @@ object consumerMod {
     @JSName("emit")
     def emit_processingerror(
       event: processing_error,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[Error, SQSMessage]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[js.Error, SQSMessage]
     ): Boolean = js.native
     @JSName("emit")
     def emit_responseprocessed(
       event: response_processed,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[js.Any]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[Any]
     ): Boolean = js.native
     @JSName("emit")
     def emit_stopped(
       event: stopped,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[js.Any]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Array[Any]
     ): Boolean = js.native
     @JSName("emit")
     def emit_timeouterror(
       event: timeout_error,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[Error, SQSMessage]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Events[T] is not an array type */ args: js.Tuple2[js.Error, SQSMessage]
     ): Boolean = js.native
     
-    /* private */ var executeBatchHandler: js.Any = js.native
+    /* private */ var executeBatchHandler: Any = js.native
     
-    /* private */ var executeHandler: js.Any = js.native
+    /* private */ var executeHandler: Any = js.native
     
-    /* private */ var handleMessage: js.Any = js.native
+    /* private */ var handleMessage: Any = js.native
     
-    /* private */ var handleMessageBatch: js.Any = js.native
+    /* private */ var handleMessageBatch: Any = js.native
     
-    /* private */ var handleMessageTimeout: js.Any = js.native
+    /* private */ var handleMessageTimeout: Any = js.native
     
-    /* private */ var handleSqsResponse: js.Any = js.native
+    /* private */ var handleSqsResponse: Any = js.native
     
-    /* private */ var heartbeatInterval: js.Any = js.native
+    /* private */ var heartbeatInterval: Any = js.native
     
     def isRunning: Boolean = js.native
     
-    /* private */ var messageAttributeNames: js.Any = js.native
+    /* private */ var messageAttributeNames: Any = js.native
     
     @JSName("on")
-    def on_empty(event: empty, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def on_empty(event: empty, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("on")
     def on_error(
       event: error,
-      listener: js.Function1[/* args */ js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]], Unit]
+      listener: js.Function1[/* args */ js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]], Unit]
     ): this.type = js.native
     @JSName("on")
     def on_messageprocessed(event: message_processed, listener: js.Function1[/* args */ js.Array[SQSMessage], Unit]): this.type = js.native
     @JSName("on")
     def on_messagereceived(event: message_received, listener: js.Function1[/* args */ js.Array[SQSMessage], Unit]): this.type = js.native
     @JSName("on")
-    def on_processingerror(event: processing_error, listener: js.Function1[/* args */ js.Tuple2[Error, SQSMessage], Unit]): this.type = js.native
+    def on_processingerror(event: processing_error, listener: js.Function1[/* args */ js.Tuple2[js.Error, SQSMessage], Unit]): this.type = js.native
     @JSName("on")
-    def on_responseprocessed(event: response_processed, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def on_responseprocessed(event: response_processed, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("on")
-    def on_stopped(event: stopped, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def on_stopped(event: stopped, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("on")
-    def on_timeouterror(event: timeout_error, listener: js.Function1[/* args */ js.Tuple2[Error, SQSMessage], Unit]): this.type = js.native
+    def on_timeouterror(event: timeout_error, listener: js.Function1[/* args */ js.Tuple2[js.Error, SQSMessage], Unit]): this.type = js.native
     
     @JSName("once")
-    def once_empty(event: empty, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def once_empty(event: empty, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("once")
     def once_error(
       event: error,
-      listener: js.Function1[/* args */ js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]], Unit]
+      listener: js.Function1[/* args */ js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]], Unit]
     ): this.type = js.native
     @JSName("once")
     def once_messageprocessed(event: message_processed, listener: js.Function1[/* args */ js.Array[SQSMessage], Unit]): this.type = js.native
     @JSName("once")
     def once_messagereceived(event: message_received, listener: js.Function1[/* args */ js.Array[SQSMessage], Unit]): this.type = js.native
     @JSName("once")
-    def once_processingerror(event: processing_error, listener: js.Function1[/* args */ js.Tuple2[Error, SQSMessage], Unit]): this.type = js.native
+    def once_processingerror(event: processing_error, listener: js.Function1[/* args */ js.Tuple2[js.Error, SQSMessage], Unit]): this.type = js.native
     @JSName("once")
-    def once_responseprocessed(event: response_processed, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def once_responseprocessed(event: response_processed, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("once")
-    def once_stopped(event: stopped, listener: js.Function1[/* args */ js.Array[js.Any], Unit]): this.type = js.native
+    def once_stopped(event: stopped, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
     @JSName("once")
-    def once_timeouterror(event: timeout_error, listener: js.Function1[/* args */ js.Tuple2[Error, SQSMessage], Unit]): this.type = js.native
+    def once_timeouterror(event: timeout_error, listener: js.Function1[/* args */ js.Tuple2[js.Error, SQSMessage], Unit]): this.type = js.native
     
-    /* private */ var poll: js.Any = js.native
+    /* private */ var poll: Any = js.native
     
-    /* private */ var pollingWaitTimeMs: js.Any = js.native
+    /* private */ var pollingWaitTimeMs: Any = js.native
     
-    /* private */ var processMessage: js.Any = js.native
+    /* private */ var processMessage: Any = js.native
     
-    /* private */ var processMessageBatch: js.Any = js.native
+    /* private */ var processMessageBatch: Any = js.native
     
-    /* private */ var queueUrl: js.Any = js.native
+    /* private */ var queueUrl: Any = js.native
     
-    /* private */ var receiveMessage: js.Any = js.native
+    /* private */ var receiveMessage: Any = js.native
     
-    /* private */ var sqs: js.Any = js.native
+    /* private */ var shouldDeleteMessages: Any = js.native
+    
+    /* private */ var sqs: Any = js.native
     
     def start(): Unit = js.native
     
-    /* private */ var startHeartbeat: js.Any = js.native
+    /* private */ var startHeartbeat: Any = js.native
     
     def stop(): Unit = js.native
     
-    /* private */ var stopped: js.Any = js.native
+    /* private */ var stopped: Any = js.native
     
-    /* private */ var terminateVisibilityTimeout: js.Any = js.native
+    /* private */ var terminateVisibilityTimeout: Any = js.native
     
-    /* private */ var visibilityTimeout: js.Any = js.native
+    /* private */ var visibilityTimeout: Any = js.native
     
-    /* private */ var waitTimeSeconds: js.Any = js.native
+    /* private */ var waitTimeSeconds: Any = js.native
   }
   /* static members */
   object Consumer {
@@ -200,6 +201,8 @@ object consumerMod {
     
     var region: js.UndefOr[String] = js.undefined
     
+    var shouldDeleteMessages: js.UndefOr[Boolean] = js.undefined
+    
     var sqs: js.UndefOr[^] = js.undefined
     
     var stopped: js.UndefOr[Boolean] = js.undefined
@@ -223,7 +226,7 @@ object consumerMod {
       
       inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
       
-      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
+      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value*))
       
       inline def setAuthenticationErrorTimeout(value: Double): Self = StObject.set(x, "authenticationErrorTimeout", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,7 @@ object consumerMod {
       
       inline def setMessageAttributeNamesUndefined: Self = StObject.set(x, "messageAttributeNames", js.undefined)
       
-      inline def setMessageAttributeNamesVarargs(value: String*): Self = StObject.set(x, "messageAttributeNames", js.Array(value :_*))
+      inline def setMessageAttributeNamesVarargs(value: String*): Self = StObject.set(x, "messageAttributeNames", js.Array(value*))
       
       inline def setPollingWaitTimeMs(value: Double): Self = StObject.set(x, "pollingWaitTimeMs", value.asInstanceOf[js.Any])
       
@@ -266,6 +269,10 @@ object consumerMod {
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      
+      inline def setShouldDeleteMessages(value: Boolean): Self = StObject.set(x, "shouldDeleteMessages", value.asInstanceOf[js.Any])
+      
+      inline def setShouldDeleteMessagesUndefined: Self = StObject.set(x, "shouldDeleteMessages", js.undefined)
       
       inline def setSqs(value: ^): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
       
@@ -291,33 +298,33 @@ object consumerMod {
   
   trait Events extends StObject {
     
-    var empty: js.Array[js.Any]
+    var empty: js.Array[Any]
     
-    var error: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]]
+    var error: js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]]
     
     var message_processed: js.Array[SQSMessage]
     
     var message_received: js.Array[SQSMessage]
     
-    var processing_error: js.Tuple2[Error, SQSMessage]
+    var processing_error: js.Tuple2[js.Error, SQSMessage]
     
-    var response_processed: js.Array[js.Any]
+    var response_processed: js.Array[Any]
     
-    var stopped: js.Array[js.Any]
+    var stopped: js.Array[Any]
     
-    var timeout_error: js.Tuple2[Error, SQSMessage]
+    var timeout_error: js.Tuple2[js.Error, SQSMessage]
   }
   object Events {
     
     inline def apply(
-      empty: js.Array[js.Any],
-      error: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]],
+      empty: js.Array[Any],
+      error: js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]],
       message_processed: js.Array[SQSMessage],
       message_received: js.Array[SQSMessage],
-      processing_error: js.Tuple2[Error, SQSMessage],
-      response_processed: js.Array[js.Any],
-      stopped: js.Array[js.Any],
-      timeout_error: js.Tuple2[Error, SQSMessage]
+      processing_error: js.Tuple2[js.Error, SQSMessage],
+      response_processed: js.Array[Any],
+      stopped: js.Array[Any],
+      timeout_error: js.Tuple2[js.Error, SQSMessage]
     ): Events = {
       val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message_processed = message_processed.asInstanceOf[js.Any], message_received = message_received.asInstanceOf[js.Any], processing_error = processing_error.asInstanceOf[js.Any], response_processed = response_processed.asInstanceOf[js.Any], stopped = stopped.asInstanceOf[js.Any], timeout_error = timeout_error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Events]
@@ -325,31 +332,31 @@ object consumerMod {
     
     extension [Self <: Events](x: Self) {
       
-      inline def setEmpty(value: js.Array[js.Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: js.Array[Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      inline def setEmptyVarargs(value: js.Any*): Self = StObject.set(x, "empty", js.Array(value :_*))
+      inline def setEmptyVarargs(value: Any*): Self = StObject.set(x, "empty", js.Array(value*))
       
-      inline def setError(value: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Tuple2[js.Error, Unit | SQSMessage | js.Array[SQSMessage]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setMessage_processed(value: js.Array[SQSMessage]): Self = StObject.set(x, "message_processed", value.asInstanceOf[js.Any])
       
-      inline def setMessage_processedVarargs(value: SQSMessage*): Self = StObject.set(x, "message_processed", js.Array(value :_*))
+      inline def setMessage_processedVarargs(value: SQSMessage*): Self = StObject.set(x, "message_processed", js.Array(value*))
       
       inline def setMessage_received(value: js.Array[SQSMessage]): Self = StObject.set(x, "message_received", value.asInstanceOf[js.Any])
       
-      inline def setMessage_receivedVarargs(value: SQSMessage*): Self = StObject.set(x, "message_received", js.Array(value :_*))
+      inline def setMessage_receivedVarargs(value: SQSMessage*): Self = StObject.set(x, "message_received", js.Array(value*))
       
-      inline def setProcessing_error(value: js.Tuple2[Error, SQSMessage]): Self = StObject.set(x, "processing_error", value.asInstanceOf[js.Any])
+      inline def setProcessing_error(value: js.Tuple2[js.Error, SQSMessage]): Self = StObject.set(x, "processing_error", value.asInstanceOf[js.Any])
       
-      inline def setResponse_processed(value: js.Array[js.Any]): Self = StObject.set(x, "response_processed", value.asInstanceOf[js.Any])
+      inline def setResponse_processed(value: js.Array[Any]): Self = StObject.set(x, "response_processed", value.asInstanceOf[js.Any])
       
-      inline def setResponse_processedVarargs(value: js.Any*): Self = StObject.set(x, "response_processed", js.Array(value :_*))
+      inline def setResponse_processedVarargs(value: Any*): Self = StObject.set(x, "response_processed", js.Array(value*))
       
-      inline def setStopped(value: js.Array[js.Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: js.Array[Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
       
-      inline def setStoppedVarargs(value: js.Any*): Self = StObject.set(x, "stopped", js.Array(value :_*))
+      inline def setStoppedVarargs(value: Any*): Self = StObject.set(x, "stopped", js.Array(value*))
       
-      inline def setTimeout_error(value: js.Tuple2[Error, SQSMessage]): Self = StObject.set(x, "timeout_error", value.asInstanceOf[js.Any])
+      inline def setTimeout_error(value: js.Tuple2[js.Error, SQSMessage]): Self = StObject.set(x, "timeout_error", value.asInstanceOf[js.Any])
     }
   }
   

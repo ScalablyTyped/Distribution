@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("awesomplete", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Awesomplete {
     def this(input: String) = this()
@@ -32,9 +32,9 @@ object mod {
   
   /* static member */
   inline def $(expr: String): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any]).asInstanceOf[NodeList]
-  inline def $(expr: String, con: js.Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
+  inline def $(expr: String, con: Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
   inline def $(expr: ParentNode): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any]).asInstanceOf[NodeList]
-  inline def $(expr: ParentNode, con: js.Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
+  inline def $(expr: ParentNode, con: Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
   
   /* static member */
   @JSImport("awesomplete", "DATA")
@@ -69,10 +69,8 @@ object mod {
   /* static member */
   @JSImport("awesomplete", "SORT_BYLENGTH")
   @js.native
-  def SORT_BYLENGTH: js.Function2[/* left */ Double | js.Array[js.Any], /* right */ Double | js.Array[js.Any], Double] = js.native
-  inline def SORT_BYLENGTH_=(
-    x: js.Function2[/* left */ Double | js.Array[js.Any], /* right */ Double | js.Array[js.Any], Double]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_BYLENGTH")(x.asInstanceOf[js.Any])
+  def SORT_BYLENGTH: js.Function2[/* left */ Double | js.Array[Any], /* right */ Double | js.Array[Any], Double] = js.native
+  inline def SORT_BYLENGTH_=(x: js.Function2[/* left */ Double | js.Array[Any], /* right */ Double | js.Array[Any], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_BYLENGTH")(x.asInstanceOf[js.Any])
   
   /* static member */
   object _empty {
@@ -86,11 +84,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(tag: String, o: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tag.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def create(tag: String, o: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tag.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    inline def fire(target: EventTarget, `type`: String, properties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def fire(target: EventTarget, `type`: String, properties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def regExpEscape(s: Replace): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("regExpEscape")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def regExpEscape(s: Replace): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("regExpEscape")(s.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def siblingIndex(el: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("siblingIndex")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
@@ -98,8 +96,8 @@ object mod {
   /* static member */
   @JSImport("awesomplete", "all")
   @js.native
-  def all: js.Array[js.Any] = js.native
-  inline def all_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+  def all: js.Array[Any] = js.native
+  inline def all_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Awesomplete extends StObject {
@@ -189,7 +187,7 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: (String | (js.Tuple2[String, String]) | Value)*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: (String | (js.Tuple2[String, String]) | Value)*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -205,13 +203,13 @@ object mod {
       
       inline def setSort(value: Boolean | SortFunction): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      inline def setSortFunction2(value: (/* left */ Double | js.Array[js.Any], /* right */ Double | js.Array[js.Any]) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSortFunction2(value: (/* left */ Double | js.Array[Any], /* right */ Double | js.Array[Any]) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
-  type SortFunction = js.Function2[/* left */ Double | js.Array[js.Any], /* right */ Double | js.Array[js.Any], Double]
+  type SortFunction = js.Function2[/* left */ Double | js.Array[Any], /* right */ Double | js.Array[Any], Double]
   
   type Suggestion = String | Label | (js.Tuple2[String, String])
 }

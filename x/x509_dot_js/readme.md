@@ -11,9 +11,9 @@ parsing of x509 certificates and keys in javascript (via emscripten)
 | Full name          | x509.js |
 | Keywords           | x509, ssl, certificates |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 136389 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 36505.666666666664 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/CodeCharmLtd/x509.js)

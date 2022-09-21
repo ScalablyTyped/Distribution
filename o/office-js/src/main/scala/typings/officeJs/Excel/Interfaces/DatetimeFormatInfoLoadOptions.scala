@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait DatetimeFormatInfoLoadOptions extends StObject {
@@ -19,41 +19,41 @@ trait DatetimeFormatInfoLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the string used as the date separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var dateSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the format string for a long date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var longDatePattern: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the format string for a long time value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var longTimePattern: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the format string for a short date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var shortDatePattern: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the string used as the time separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var timeSeparator: js.UndefOr[Boolean] = js.undefined

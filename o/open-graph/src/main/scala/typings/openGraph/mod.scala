@@ -1,9 +1,7 @@
 package typings.openGraph
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cheerio.cheerio.Cheerio
 import typings.openGraph.anon.Alternate
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def getHTML(url: String, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def getHTML(url: Cheerio, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getHTML(
+    url: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify cheerio.Cheerio */ Any,
+    callback: RequestCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def parse(websiteContent: String): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any]).asInstanceOf[Data]
   inline def parse(websiteContent: String, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
@@ -73,63 +74,63 @@ object mod {
       
       inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      inline def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value :_*))
+      inline def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value*))
       
       inline def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
       
       inline def setDeterminer(value: String | js.Array[String]): Self = StObject.set(x, "determiner", value.asInstanceOf[js.Any])
       
       inline def setDeterminerUndefined: Self = StObject.set(x, "determiner", js.undefined)
       
-      inline def setDeterminerVarargs(value: String*): Self = StObject.set(x, "determiner", js.Array(value :_*))
+      inline def setDeterminerVarargs(value: String*): Self = StObject.set(x, "determiner", js.Array(value*))
       
       inline def setImage(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
+      inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value*))
       
       inline def setLocale(value: String | js.Array[String] | Alternate): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setLocaleVarargs(value: String*): Self = StObject.set(x, "locale", js.Array(value :_*))
+      inline def setLocaleVarargs(value: String*): Self = StObject.set(x, "locale", js.Array(value*))
       
       inline def setSite_name(value: String | js.Array[String]): Self = StObject.set(x, "site_name", value.asInstanceOf[js.Any])
       
       inline def setSite_nameUndefined: Self = StObject.set(x, "site_name", js.undefined)
       
-      inline def setSite_nameVarargs(value: String*): Self = StObject.set(x, "site_name", js.Array(value :_*))
+      inline def setSite_nameVarargs(value: String*): Self = StObject.set(x, "site_name", js.Array(value*))
       
       inline def setTitle(value: String | js.Array[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
       
       inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
       
       inline def setVideo(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
       inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
       
-      inline def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value :_*))
+      inline def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value*))
     }
   }
   
-  type DataCallback = js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Data], Unit]
+  type DataCallback = js.Function2[/* err */ js.Error | Null, /* data */ js.UndefOr[Data], Unit]
   
   trait ImageVideoMetadata
     extends StObject
@@ -160,25 +161,25 @@ object mod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value*))
       
       inline def setHeight(value: String | js.Array[String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(value: String*): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: String*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
       
       inline def setWidth(value: String | js.Array[String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(value: String*): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: String*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -205,13 +206,13 @@ object mod {
       
       inline def setSecure_urlUndefined: Self = StObject.set(x, "secure_url", js.undefined)
       
-      inline def setSecure_urlVarargs(value: String*): Self = StObject.set(x, "secure_url", js.Array(value :_*))
+      inline def setSecure_urlVarargs(value: String*): Self = StObject.set(x, "secure_url", js.Array(value*))
       
       inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -234,5 +235,5 @@ object mod {
     }
   }
   
-  type RequestCallback = js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[String], Unit]
+  type RequestCallback = js.Function2[/* err */ js.Error | Null, /* data */ js.UndefOr[String], Unit]
 }

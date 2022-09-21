@@ -35,7 +35,7 @@ object useFocusedListenersChildrenAdapterMod {
       
       inline def setFocusedListeners(value: js.Array[FocusedNavigationListener]): Self = StObject.set(x, "focusedListeners", value.asInstanceOf[js.Any])
       
-      inline def setFocusedListenersVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focusedListeners", js.Array(value :_*))
+      inline def setFocusedListenersVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focusedListeners", js.Array(value*))
       
       inline def setNavigation(value: NavigationHelpers[ParamListBase, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     }

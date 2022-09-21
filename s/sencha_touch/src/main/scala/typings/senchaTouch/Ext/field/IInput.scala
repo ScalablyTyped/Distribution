@@ -59,7 +59,7 @@ trait IInput
   /** [Method] Returns the checked value of this field
     * @returns Mixed value The field value
     */
-  var getChecked: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getChecked: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
@@ -120,7 +120,7 @@ trait IInput
   /** [Method] Returns the value of startValue
     * @returns Mixed
     */
-  var getStartValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStartValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of stepValue
     * @returns Number
@@ -140,7 +140,7 @@ trait IInput
   /** [Method] Returns the field data value
     * @returns Mixed value The field value.
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns true if the value of this Field has been changed from its original value
     * @returns Boolean
@@ -256,7 +256,7 @@ trait IInput
   /** [Method] Sets the value of startValue
     * @param startValue Mixed The new value.
     */
-  var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of stepValue
     * @param stepValue Number The new value.
@@ -274,7 +274,7 @@ trait IInput
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var startValue: js.UndefOr[js.Any] = js.undefined
+  var startValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var stepValue: js.UndefOr[Double] = js.undefined
@@ -289,17 +289,15 @@ trait IInput
     * @param newCls Object
     * @param oldCls Object
     */
-  var updateCls: js.UndefOr[
-    js.Function2[/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var updateCls: js.UndefOr[js.Function2[/* newCls */ js.UndefOr[Any], /* oldCls */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Updates the useMask configuration
     * @param newUseMask Object
     */
-  var updateUseMask: js.UndefOr[js.Function1[/* newUseMask */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateUseMask: js.UndefOr[js.Function1[/* newUseMask */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IInput {
   
@@ -358,7 +356,7 @@ object IInput {
     
     inline def setGetAutoCorrectUndefined: Self = StObject.set(x, "getAutoCorrect", js.undefined)
     
-    inline def setGetChecked(value: () => js.Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+    inline def setGetChecked(value: () => Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
     
     inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
     
@@ -406,7 +404,7 @@ object IInput {
     
     inline def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
     
-    inline def setGetStartValue(value: () => js.Any): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
+    inline def setGetStartValue(value: () => Any): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
     
     inline def setGetStartValueUndefined: Self = StObject.set(x, "getStartValue", js.undefined)
     
@@ -422,7 +420,7 @@ object IInput {
     
     inline def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -530,7 +528,7 @@ object IInput {
     
     inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    inline def setSetStartValue(value: /* startValue */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
+    inline def setSetStartValue(value: /* startValue */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
     
     inline def setSetStartValueUndefined: Self = StObject.set(x, "setStartValue", js.undefined)
     
@@ -546,7 +544,7 @@ object IInput {
     
     inline def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
     
-    inline def setStartValue(value: js.Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
     inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
     
@@ -562,15 +560,15 @@ object IInput {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUpdateCls(value: (/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateCls", js.Any.fromFunction2(value))
+    inline def setUpdateCls(value: (/* newCls */ js.UndefOr[Any], /* oldCls */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateCls", js.Any.fromFunction2(value))
     
     inline def setUpdateClsUndefined: Self = StObject.set(x, "updateCls", js.undefined)
     
-    inline def setUpdateUseMask(value: /* newUseMask */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateUseMask", js.Any.fromFunction1(value))
+    inline def setUpdateUseMask(value: /* newUseMask */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateUseMask", js.Any.fromFunction1(value))
     
     inline def setUpdateUseMaskUndefined: Self = StObject.set(x, "updateUseMask", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

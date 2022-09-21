@@ -28,17 +28,17 @@ trait SearchBox
   
   def activateDefaultQuerySuggestionBehavior(): Unit
   
-  def add_batchQueryIssuing(value: js.Any): Unit
+  def add_batchQueryIssuing(value: Any): Unit
   
-  def add_batchResultReady(value: js.Any): Unit
+  def add_batchResultReady(value: Any): Unit
   
-  def add_queryReady(value: js.Any): Unit
+  def add_queryReady(value: Any): Unit
   
-  def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit
+  def dataProvider_QueryIssuing(sender: Any, e: Any): Unit
   
-  def dataProvider_QueryStateChanged(sender: js.Any, e: js.Any): Unit
+  def dataProvider_QueryStateChanged(sender: Any, e: Any): Unit
   
-  def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit
+  def dataProvider_ResultReady(sender: Any, e: Any): Unit
   
   def focus(): Unit
   
@@ -62,7 +62,7 @@ trait SearchBox
   
   def get_navigationListId(): String
   
-  def get_navigationNodes(): js.Any
+  def get_navigationNodes(): Any
   
   def get_pageTitlePrefix(): String
   
@@ -126,17 +126,17 @@ trait SearchBox
   
   def hidePrompt(): Unit
   
-  def raiseBatchQueryIssuingEvent(arg: js.Any): Unit
+  def raiseBatchQueryIssuingEvent(arg: Any): Unit
   
-  def raiseBatchResultReadyEvent(arg: js.Any): Unit
+  def raiseBatchResultReadyEvent(arg: Any): Unit
   
-  def raiseQueryReadyEvent(arg: js.Any): Unit
+  def raiseQueryReadyEvent(arg: Any): Unit
   
-  def remove_batchQueryIssuing(value: js.Any): Unit
+  def remove_batchQueryIssuing(value: Any): Unit
   
-  def remove_batchResultReady(value: js.Any): Unit
+  def remove_batchResultReady(value: Any): Unit
   
-  def remove_queryReady(value: js.Any): Unit
+  def remove_queryReady(value: Any): Unit
   
   def search(term: String): Unit
   
@@ -165,7 +165,7 @@ trait SearchBox
   
   def set_navigationListId(value: String): String
   
-  def set_navigationNodes(value: js.Any): js.Any
+  def set_navigationNodes(value: Any): Any
   
   def set_pageTitlePrefix(value: String): String
   
@@ -174,7 +174,7 @@ trait SearchBox
   /** Sets the css class/classes of the placeholder text. Default is 'ms-srch-sb-prompt ms-helperText' */
   def set_promptCssClass(value: String): String
   
-  def set_queryGroupNames(value: js.Any): js.Array[String]
+  def set_queryGroupNames(value: Any): js.Array[String]
   
   /** Sets the interval in milliseconds, if user is idle during this interval, suggestions retrieval will be initiated.
     * Default value is 250.
@@ -233,18 +233,18 @@ object SearchBox {
     activateDefaultNavigationBehavior: () => Unit,
     activateDefaultQuerySuggestionBehavior: () => Unit,
     addCssClass: String => Unit,
-    add_batchQueryIssuing: js.Any => Unit,
-    add_batchResultReady: js.Any => Unit,
+    add_batchQueryIssuing: Any => Unit,
+    add_batchResultReady: Any => Unit,
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
-    add_queryReady: js.Any => Unit,
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    add_queryReady: Any => Unit,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     beginUpdate: () => Unit,
-    clickHandler: Event => js.Any,
-    dataProvider_QueryIssuing: (js.Any, js.Any) => Unit,
-    dataProvider_QueryStateChanged: (js.Any, js.Any) => Unit,
-    dataProvider_ResultReady: (js.Any, js.Any) => Unit,
+    clickHandler: Event => Any,
+    dataProvider_QueryIssuing: (Any, Any) => Unit,
+    dataProvider_QueryStateChanged: (Any, Any) => Unit,
+    dataProvider_ResultReady: (Any, Any) => Unit,
     dispose: () => Unit,
     endUpdate: () => Unit,
     focus: () => Unit,
@@ -255,18 +255,18 @@ object SearchBox {
     get_currentTerm: () => String,
     get_delayLoadTemplateScripts: () => Boolean,
     get_element: () => HTMLElement,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_initialPrompt: () => String,
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
     get_maintainQueryState: () => Boolean,
-    get_messages: () => js.Array[js.Any],
+    get_messages: () => js.Array[Any],
     get_msBeforeShowingProgress: () => Double,
     get_navigationButtonId: () => String,
     get_navigationListId: () => String,
-    get_navigationNodes: () => js.Any,
+    get_navigationNodes: () => Any,
     get_nextUniqueId: () => String,
     get_pageTitlePrefix: () => String,
     get_personalResultCount: () => Double,
@@ -293,42 +293,42 @@ object SearchBox {
     get_showPeopleNameSuggestions: () => Boolean,
     get_showPreferencesLink: () => Boolean,
     get_showQuerySuggestions: () => Boolean,
-    get_states: () => js.Any,
+    get_states: () => Any,
     get_suggestionsListId: () => String,
     get_tryInplaceQuery: () => Boolean,
     get_updatePageTitle: () => Boolean,
-    hasMessages: () => js.Any,
+    hasMessages: () => Any,
     hidePrompt: () => Unit,
     initialize: () => Unit,
-    invokeAlternateRender: (js.Any, js.Any, js.Any) => js.Any,
-    invokeClientRenderer: (js.Any, js.Any) => js.Any,
-    loadRenderTemplateScripts: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean,
+    invokeAlternateRender: (Any, Any, Any) => Any,
+    invokeClientRenderer: (Any, Any) => Any,
+    loadRenderTemplateScripts: (Any, Any, Any, Any, Any) => Boolean,
     loadServerTemplateScripts: () => Unit,
     loaded: Boolean,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
-    processDataErrorMessages: js.Any => js.Any,
-    processDataProviderErrors: js.Any => Unit,
-    processRenderingErrorMessages: js.Any => js.Any,
-    raiseBatchQueryIssuingEvent: js.Any => Unit,
-    raiseBatchResultReadyEvent: js.Any => Unit,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
+    onBubbleEvent: (Any, Any) => Boolean,
+    processDataErrorMessages: Any => Any,
+    processDataProviderErrors: Any => Unit,
+    processRenderingErrorMessages: Any => Any,
+    raiseBatchQueryIssuingEvent: Any => Unit,
+    raiseBatchResultReadyEvent: Any => Unit,
+    raiseBubbleEvent: (Any, Any) => Unit,
     raisePropertyChanged: String => Unit,
-    raiseQueryReadyEvent: js.Any => Unit,
+    raiseQueryReadyEvent: Any => Unit,
     removeCssClass: String => Unit,
-    remove_batchQueryIssuing: js.Any => Unit,
-    remove_batchResultReady: js.Any => Unit,
+    remove_batchQueryIssuing: Any => Unit,
+    remove_batchResultReady: Any => Unit,
     remove_disposing: js.Function => Unit,
     remove_propertyChanged: js.Function => Unit,
-    remove_queryReady: js.Any => Unit,
-    renderControl: (js.Any, js.Any) => Unit,
-    scriptApplication_Load: (js.Any, js.Any) => Unit,
-    scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
-    scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
+    remove_queryReady: Any => Unit,
+    renderControl: (Any, Any) => Unit,
+    scriptApplication_Load: (Any, Any) => Unit,
+    scriptApplication_PostLoad: (Any, Any) => Unit,
+    scriptApplication_PreLoad: (Any, Any) => Unit,
     search: String => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[js.Any],
+    serverTemplateScriptsToLoad: js.Array[Any],
     setBorder: Boolean => Unit,
-    setControlElementVisibility: Boolean => js.Any,
+    setControlElementVisibility: Boolean => Any,
     set_advancedSearchPageAddress: String => String,
     set_allowEmptySearch: Boolean => Boolean,
     set_alternateErrorMessage: String => String,
@@ -338,15 +338,15 @@ object SearchBox {
     set_id: String => Unit,
     set_initialPrompt: String => String,
     set_maintainQueryState: Boolean => Boolean,
-    set_messages: js.Array[js.Any] => js.Array[js.Any],
+    set_messages: js.Array[Any] => js.Array[Any],
     set_msBeforeShowingProgress: Double => Double,
     set_navigationButtonId: String => String,
     set_navigationListId: String => String,
-    set_navigationNodes: js.Any => js.Any,
+    set_navigationNodes: Any => Any,
     set_pageTitlePrefix: String => String,
     set_personalResultCount: Double => Double,
     set_promptCssClass: String => String,
-    set_queryGroupNames: js.Any => js.Array[String],
+    set_queryGroupNames: Any => js.Array[String],
     set_querySuggestionCompletionInterval: Double => Double,
     set_querySuggestionCount: Double => Double,
     set_querySuggestionMinimumPrefixLength: Double => Double,
@@ -365,13 +365,13 @@ object SearchBox {
     set_showPeopleNameSuggestions: Boolean => Boolean,
     set_showPreferencesLink: Boolean => Boolean,
     set_showQuerySuggestions: Boolean => Boolean,
-    set_states: js.Any => js.Any,
+    set_states: Any => Any,
     set_suggestionsListId: String => String,
     set_tryInplaceQuery: Boolean => Boolean,
     set_updatePageTitle: Boolean => Boolean,
     showPrompt: () => Unit,
     toggleCssClass: String => Unit,
-    updateDisplayControlWithNewMessages: () => js.Any,
+    updateDisplayControlWithNewMessages: () => Any,
     updated: () => Unit
   ): SearchBox = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction9(activate), activateDefaultNavigationBehavior = js.Any.fromFunction0(activateDefaultNavigationBehavior), activateDefaultQuerySuggestionBehavior = js.Any.fromFunction0(activateDefaultQuerySuggestionBehavior), addCssClass = js.Any.fromFunction1(addCssClass), add_batchQueryIssuing = js.Any.fromFunction1(add_batchQueryIssuing), add_batchResultReady = js.Any.fromFunction1(add_batchResultReady), add_disposing = js.Any.fromFunction1(add_disposing), add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), add_queryReady = js.Any.fromFunction1(add_queryReady), alternateRenderContext = alternateRenderContext.asInstanceOf[js.Any], alternateRenderer = alternateRenderer.asInstanceOf[js.Any], beginUpdate = js.Any.fromFunction0(beginUpdate), clickHandler = js.Any.fromFunction1(clickHandler), dataProvider_QueryIssuing = js.Any.fromFunction2(dataProvider_QueryIssuing), dataProvider_QueryStateChanged = js.Any.fromFunction2(dataProvider_QueryStateChanged), dataProvider_ResultReady = js.Any.fromFunction2(dataProvider_ResultReady), dispose = js.Any.fromFunction0(dispose), endUpdate = js.Any.fromFunction0(endUpdate), focus = js.Any.fromFunction0(focus), get_advancedSearchPageAddress = js.Any.fromFunction0(get_advancedSearchPageAddress), get_allowEmptySearch = js.Any.fromFunction0(get_allowEmptySearch), get_alternateErrorMessage = js.Any.fromFunction0(get_alternateErrorMessage), get_currentPrompt = js.Any.fromFunction0(get_currentPrompt), get_currentTerm = js.Any.fromFunction0(get_currentTerm), get_delayLoadTemplateScripts = js.Any.fromFunction0(get_delayLoadTemplateScripts), get_element = js.Any.fromFunction0(get_element), get_events = js.Any.fromFunction0(get_events), get_id = js.Any.fromFunction0(get_id), get_initialPrompt = js.Any.fromFunction0(get_initialPrompt), get_isInitialLoad = js.Any.fromFunction0(get_isInitialLoad), get_isInitialized = js.Any.fromFunction0(get_isInitialized), get_isUpdating = js.Any.fromFunction0(get_isUpdating), get_maintainQueryState = js.Any.fromFunction0(get_maintainQueryState), get_messages = js.Any.fromFunction0(get_messages), get_msBeforeShowingProgress = js.Any.fromFunction0(get_msBeforeShowingProgress), get_navigationButtonId = js.Any.fromFunction0(get_navigationButtonId), get_navigationListId = js.Any.fromFunction0(get_navigationListId), get_navigationNodes = js.Any.fromFunction0(get_navigationNodes), get_nextUniqueId = js.Any.fromFunction0(get_nextUniqueId), get_pageTitlePrefix = js.Any.fromFunction0(get_pageTitlePrefix), get_personalResultCount = js.Any.fromFunction0(get_personalResultCount), get_promptCssClass = js.Any.fromFunction0(get_promptCssClass), get_queryGroupNames = js.Any.fromFunction0(get_queryGroupNames), get_querySuggestionCompletionInterval = js.Any.fromFunction0(get_querySuggestionCompletionInterval), get_querySuggestionCount = js.Any.fromFunction0(get_querySuggestionCount), get_querySuggestionMinimumPrefixLength = js.Any.fromFunction0(get_querySuggestionMinimumPrefixLength), get_querySuggestionsSourceID = js.Any.fromFunction0(get_querySuggestionsSourceID), get_renderTemplateId = js.Any.fromFunction0(get_renderTemplateId), get_resultsPageAddress = js.Any.fromFunction0(get_resultsPageAddress), get_searchBoxContainerElement = js.Any.fromFunction0(get_searchBoxContainerElement), get_searchBoxContainerId = js.Any.fromFunction0(get_searchBoxContainerId), get_searchBoxInputElement = js.Any.fromFunction0(get_searchBoxInputElement), get_searchBoxInputId = js.Any.fromFunction0(get_searchBoxInputId), get_searchBoxLinkElement = js.Any.fromFunction0(get_searchBoxLinkElement), get_searchBoxLinkId = js.Any.fromFunction0(get_searchBoxLinkId), get_searchBoxProgressClass = js.Any.fromFunction0(get_searchBoxProgressClass), get_serverInitialRender = js.Any.fromFunction0(get_serverInitialRender), get_setFocusOnPageLoad = js.Any.fromFunction0(get_setFocusOnPageLoad), get_showAdvancedLink = js.Any.fromFunction0(get_showAdvancedLink), get_showDataErrors = js.Any.fromFunction0(get_showDataErrors), get_showNavigation = js.Any.fromFunction0(get_showNavigation), get_showPeopleNameSuggestions = js.Any.fromFunction0(get_showPeopleNameSuggestions), get_showPreferencesLink = js.Any.fromFunction0(get_showPreferencesLink), get_showQuerySuggestions = js.Any.fromFunction0(get_showQuerySuggestions), get_states = js.Any.fromFunction0(get_states), get_suggestionsListId = js.Any.fromFunction0(get_suggestionsListId), get_tryInplaceQuery = js.Any.fromFunction0(get_tryInplaceQuery), get_updatePageTitle = js.Any.fromFunction0(get_updatePageTitle), hasMessages = js.Any.fromFunction0(hasMessages), hidePrompt = js.Any.fromFunction0(hidePrompt), initialize = js.Any.fromFunction0(initialize), invokeAlternateRender = js.Any.fromFunction3(invokeAlternateRender), invokeClientRenderer = js.Any.fromFunction2(invokeClientRenderer), loadRenderTemplateScripts = js.Any.fromFunction5(loadRenderTemplateScripts), loadServerTemplateScripts = js.Any.fromFunction0(loadServerTemplateScripts), loaded = loaded.asInstanceOf[js.Any], onBubbleEvent = js.Any.fromFunction2(onBubbleEvent), processDataErrorMessages = js.Any.fromFunction1(processDataErrorMessages), processDataProviderErrors = js.Any.fromFunction1(processDataProviderErrors), processRenderingErrorMessages = js.Any.fromFunction1(processRenderingErrorMessages), raiseBatchQueryIssuingEvent = js.Any.fromFunction1(raiseBatchQueryIssuingEvent), raiseBatchResultReadyEvent = js.Any.fromFunction1(raiseBatchResultReadyEvent), raiseBubbleEvent = js.Any.fromFunction2(raiseBubbleEvent), raisePropertyChanged = js.Any.fromFunction1(raisePropertyChanged), raiseQueryReadyEvent = js.Any.fromFunction1(raiseQueryReadyEvent), removeCssClass = js.Any.fromFunction1(removeCssClass), remove_batchQueryIssuing = js.Any.fromFunction1(remove_batchQueryIssuing), remove_batchResultReady = js.Any.fromFunction1(remove_batchResultReady), remove_disposing = js.Any.fromFunction1(remove_disposing), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged), remove_queryReady = js.Any.fromFunction1(remove_queryReady), renderControl = js.Any.fromFunction2(renderControl), scriptApplication_Load = js.Any.fromFunction2(scriptApplication_Load), scriptApplication_PostLoad = js.Any.fromFunction2(scriptApplication_PostLoad), scriptApplication_PreLoad = js.Any.fromFunction2(scriptApplication_PreLoad), search = js.Any.fromFunction1(search), serverTemplateScriptsCallback = js.Any.fromFunction0(serverTemplateScriptsCallback), serverTemplateScriptsToLoad = serverTemplateScriptsToLoad.asInstanceOf[js.Any], setBorder = js.Any.fromFunction1(setBorder), setControlElementVisibility = js.Any.fromFunction1(setControlElementVisibility), set_advancedSearchPageAddress = js.Any.fromFunction1(set_advancedSearchPageAddress), set_allowEmptySearch = js.Any.fromFunction1(set_allowEmptySearch), set_alternateErrorMessage = js.Any.fromFunction1(set_alternateErrorMessage), set_currentPrompt = js.Any.fromFunction1(set_currentPrompt), set_currentTerm = js.Any.fromFunction1(set_currentTerm), set_delayLoadTemplateScripts = js.Any.fromFunction1(set_delayLoadTemplateScripts), set_id = js.Any.fromFunction1(set_id), set_initialPrompt = js.Any.fromFunction1(set_initialPrompt), set_maintainQueryState = js.Any.fromFunction1(set_maintainQueryState), set_messages = js.Any.fromFunction1(set_messages), set_msBeforeShowingProgress = js.Any.fromFunction1(set_msBeforeShowingProgress), set_navigationButtonId = js.Any.fromFunction1(set_navigationButtonId), set_navigationListId = js.Any.fromFunction1(set_navigationListId), set_navigationNodes = js.Any.fromFunction1(set_navigationNodes), set_pageTitlePrefix = js.Any.fromFunction1(set_pageTitlePrefix), set_personalResultCount = js.Any.fromFunction1(set_personalResultCount), set_promptCssClass = js.Any.fromFunction1(set_promptCssClass), set_queryGroupNames = js.Any.fromFunction1(set_queryGroupNames), set_querySuggestionCompletionInterval = js.Any.fromFunction1(set_querySuggestionCompletionInterval), set_querySuggestionCount = js.Any.fromFunction1(set_querySuggestionCount), set_querySuggestionMinimumPrefixLength = js.Any.fromFunction1(set_querySuggestionMinimumPrefixLength), set_querySuggestionsSourceID = js.Any.fromFunction1(set_querySuggestionsSourceID), set_renderTemplateId = js.Any.fromFunction1(set_renderTemplateId), set_resultsPageAddress = js.Any.fromFunction1(set_resultsPageAddress), set_searchBoxContainerId = js.Any.fromFunction1(set_searchBoxContainerId), set_searchBoxInputId = js.Any.fromFunction1(set_searchBoxInputId), set_searchBoxLinkId = js.Any.fromFunction1(set_searchBoxLinkId), set_searchBoxProgressClass = js.Any.fromFunction1(set_searchBoxProgressClass), set_serverInitialRender = js.Any.fromFunction1(set_serverInitialRender), set_setFocusOnPageLoad = js.Any.fromFunction1(set_setFocusOnPageLoad), set_showAdvancedLink = js.Any.fromFunction1(set_showAdvancedLink), set_showDataErrors = js.Any.fromFunction1(set_showDataErrors), set_showNavigation = js.Any.fromFunction1(set_showNavigation), set_showPeopleNameSuggestions = js.Any.fromFunction1(set_showPeopleNameSuggestions), set_showPreferencesLink = js.Any.fromFunction1(set_showPreferencesLink), set_showQuerySuggestions = js.Any.fromFunction1(set_showQuerySuggestions), set_states = js.Any.fromFunction1(set_states), set_suggestionsListId = js.Any.fromFunction1(set_suggestionsListId), set_tryInplaceQuery = js.Any.fromFunction1(set_tryInplaceQuery), set_updatePageTitle = js.Any.fromFunction1(set_updatePageTitle), showPrompt = js.Any.fromFunction0(showPrompt), toggleCssClass = js.Any.fromFunction1(toggleCssClass), updateDisplayControlWithNewMessages = js.Any.fromFunction0(updateDisplayControlWithNewMessages), updated = js.Any.fromFunction0(updated))
@@ -386,17 +386,17 @@ object SearchBox {
     
     inline def setActivateDefaultQuerySuggestionBehavior(value: () => Unit): Self = StObject.set(x, "activateDefaultQuerySuggestionBehavior", js.Any.fromFunction0(value))
     
-    inline def setAdd_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "add_batchQueryIssuing", js.Any.fromFunction1(value))
+    inline def setAdd_batchQueryIssuing(value: Any => Unit): Self = StObject.set(x, "add_batchQueryIssuing", js.Any.fromFunction1(value))
     
-    inline def setAdd_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "add_batchResultReady", js.Any.fromFunction1(value))
+    inline def setAdd_batchResultReady(value: Any => Unit): Self = StObject.set(x, "add_batchResultReady", js.Any.fromFunction1(value))
     
-    inline def setAdd_queryReady(value: js.Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
+    inline def setAdd_queryReady(value: Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
     
-    inline def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
+    inline def setDataProvider_QueryIssuing(value: (Any, Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
     
-    inline def setDataProvider_QueryStateChanged(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryStateChanged", js.Any.fromFunction2(value))
+    inline def setDataProvider_QueryStateChanged(value: (Any, Any) => Unit): Self = StObject.set(x, "dataProvider_QueryStateChanged", js.Any.fromFunction2(value))
     
-    inline def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
+    inline def setDataProvider_ResultReady(value: (Any, Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
     
     inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
@@ -418,7 +418,7 @@ object SearchBox {
     
     inline def setGet_navigationListId(value: () => String): Self = StObject.set(x, "get_navigationListId", js.Any.fromFunction0(value))
     
-    inline def setGet_navigationNodes(value: () => js.Any): Self = StObject.set(x, "get_navigationNodes", js.Any.fromFunction0(value))
+    inline def setGet_navigationNodes(value: () => Any): Self = StObject.set(x, "get_navigationNodes", js.Any.fromFunction0(value))
     
     inline def setGet_pageTitlePrefix(value: () => String): Self = StObject.set(x, "get_pageTitlePrefix", js.Any.fromFunction0(value))
     
@@ -474,17 +474,17 @@ object SearchBox {
     
     inline def setHidePrompt(value: () => Unit): Self = StObject.set(x, "hidePrompt", js.Any.fromFunction0(value))
     
-    inline def setRaiseBatchQueryIssuingEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchQueryIssuingEvent", js.Any.fromFunction1(value))
+    inline def setRaiseBatchQueryIssuingEvent(value: Any => Unit): Self = StObject.set(x, "raiseBatchQueryIssuingEvent", js.Any.fromFunction1(value))
     
-    inline def setRaiseBatchResultReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchResultReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseBatchResultReadyEvent(value: Any => Unit): Self = StObject.set(x, "raiseBatchResultReadyEvent", js.Any.fromFunction1(value))
     
-    inline def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseQueryReadyEvent(value: Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
     
-    inline def setRemove_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "remove_batchQueryIssuing", js.Any.fromFunction1(value))
+    inline def setRemove_batchQueryIssuing(value: Any => Unit): Self = StObject.set(x, "remove_batchQueryIssuing", js.Any.fromFunction1(value))
     
-    inline def setRemove_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "remove_batchResultReady", js.Any.fromFunction1(value))
+    inline def setRemove_batchResultReady(value: Any => Unit): Self = StObject.set(x, "remove_batchResultReady", js.Any.fromFunction1(value))
     
-    inline def setRemove_queryReady(value: js.Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
+    inline def setRemove_queryReady(value: Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
     
     inline def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
@@ -508,7 +508,7 @@ object SearchBox {
     
     inline def setSet_navigationListId(value: String => String): Self = StObject.set(x, "set_navigationListId", js.Any.fromFunction1(value))
     
-    inline def setSet_navigationNodes(value: js.Any => js.Any): Self = StObject.set(x, "set_navigationNodes", js.Any.fromFunction1(value))
+    inline def setSet_navigationNodes(value: Any => Any): Self = StObject.set(x, "set_navigationNodes", js.Any.fromFunction1(value))
     
     inline def setSet_pageTitlePrefix(value: String => String): Self = StObject.set(x, "set_pageTitlePrefix", js.Any.fromFunction1(value))
     
@@ -516,7 +516,7 @@ object SearchBox {
     
     inline def setSet_promptCssClass(value: String => String): Self = StObject.set(x, "set_promptCssClass", js.Any.fromFunction1(value))
     
-    inline def setSet_queryGroupNames(value: js.Any => js.Array[String]): Self = StObject.set(x, "set_queryGroupNames", js.Any.fromFunction1(value))
+    inline def setSet_queryGroupNames(value: Any => js.Array[String]): Self = StObject.set(x, "set_queryGroupNames", js.Any.fromFunction1(value))
     
     inline def setSet_querySuggestionCompletionInterval(value: Double => Double): Self = StObject.set(x, "set_querySuggestionCompletionInterval", js.Any.fromFunction1(value))
     

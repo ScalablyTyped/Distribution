@@ -1,6 +1,5 @@
 package typings.dhtmlxgantt
 
-import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -14,31 +13,37 @@ trait GanttStatic extends StObject {
     * redefines the default click behavior for buttons of the Gantt chart
     */
   @JSName("$click")
-  var $click: js.Any = js.native
+  var $click: Any = js.native
+  
+  /**
+    * dhtmlx ui module
+    */
+  @JSName("$ui")
+  var $ui: Any = js.native
   
   /**
     * adds a calendar into Gantt
     * @param calendar an object with configuration of the calendar
     */
-  def addCalendar(calendar: js.Any): Double = js.native
+  def addCalendar(calendar: Any): Double = js.native
   
   /**
     * adds a new dependency link
     * @param link the link object
     */
-  def addLink(link: js.Any): String | Double = js.native
+  def addLink(link: Any): String | Double = js.native
   
   /**
     * displays an additional layer with custom elements for a link in the timeline area
     * @param func a render function or a config object
     */
-  def addLinkLayer(func: js.Any): String = js.native
+  def addLinkLayer(func: Any): String = js.native
   
   /**
     * adds a marker to the timeline area
     * @param marker the marker's configuration object
     */
-  def addMarker(marker: js.Any): String = js.native
+  def addMarker(marker: Any): String = js.native
   
   /**
     * adds a new keyboard shortcut
@@ -54,25 +59,25 @@ trait GanttStatic extends StObject {
     * @param parent the parent's id
     * @param index optional, optional, the position the task will be added into (0 or greater)
     */
-  def addTask(task: js.Any, parent: String): String | Double = js.native
-  def addTask(task: js.Any, parent: String, index: Double): String | Double = js.native
+  def addTask(task: Any, parent: String): String | Double = js.native
+  def addTask(task: Any, parent: String, index: Double): String | Double = js.native
   
   /**
     * displays an additional layer with custom elements for a task in the timeline area
     * @param func a render function or a config object
     */
-  def addTaskLayer(func: js.Any): String = js.native
+  def addTaskLayer(func: Any): String = js.native
   
   /**
     * dhtmlx ajax module
     */
-  var ajax: js.Any = js.native
+  var ajax: Any = js.native
   
   /**
     * calls an alert message box
     * @param config the alert box's configuration
     */
-  def alert(config: js.Any): HTMLElement = js.native
+  def alert(config: Any): HTMLElement = js.native
   
   /**
     * if the specified expression is false, an errorMessage is shown in the red popup at the top right corner of the screen
@@ -107,50 +112,50 @@ trait GanttStatic extends StObject {
     * @param method the target function
     * @param thisArg the value to be passed as the <i>this</i> parameter to the target function when the bound function is called
     */
-  def bind(method: GanttCallback, thisArg: js.Any): GanttCallback = js.native
+  def bind(method: GanttCallback, thisArg: Any): GanttCallback = js.native
   
   /**
     * calculates the duration of a task
     * @param config the <a href="#configurationobjectproperties">configuration object</a> of a time span
     */
-  def calculateDuration(config: js.Any): Double = js.native
+  def calculateDuration(config: Any): Double = js.native
   /**
     * calculates the duration of a task
     * @param start the date when a task is scheduled to begin
     * @param end the date when a task is scheduled to be completed
     */
-  def calculateDuration(start: Date, end: Date): Double = js.native
+  def calculateDuration(start: js.Date, end: js.Date): Double = js.native
   
   /**
     * calculates the end date of a task
     * @param config the <a href="#configurationobjectproperties">configuration object</a> of a time span
     */
-  def calculateEndDate(config: js.Any): Date = js.native
+  def calculateEndDate(config: Any): js.Date = js.native
   /**
     * calculates the end date of a task
     * @param start the date when a task is scheduled to begin
     * @param duration the duration of a task
     * @param unit the time unit of the duration
     */
-  def calculateEndDate(start: Date, duration: Double, unit: String): Date = js.native
+  def calculateEndDate(start: js.Date, duration: Double, unit: String): js.Date = js.native
   
   /**
     * calculates the level of a task
     * @param task the task's object
     */
-  def calculateTaskLevel(task: js.Any): Double = js.native
+  def calculateTaskLevel(task: Any): Double = js.native
   
   /**
     * the interface of the working calendar object
     */
-  var calendar: js.Any = js.native
+  var calendar: Any = js.native
   
   /**
     * calls an inner event
     * @param name the event's name, case-insensitive
     * @param params an array of the event-related data
     */
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   /**
     * repaints the lighbox for the task according to its type
@@ -215,7 +220,7 @@ trait GanttStatic extends StObject {
     * returns the index of the column by the date
     * @param date a date object
     */
-  def columnIndexByDate(date: Date): Unit = js.native
+  def columnIndexByDate(date: js.Date): Unit = js.native
   
   /**
     * defines configuration options for dates, scale, controls
@@ -226,37 +231,37 @@ trait GanttStatic extends StObject {
     * calls a confirm message box
     * @param config the confirm box's configuration
     */
-  def confirm(config: js.Any): HTMLElement = js.native
+  def confirm(config: Any): HTMLElement = js.native
   
   /**
     * stores various constants to reduce the use of magic numbers in the code
     */
-  var constants: js.Any = js.native
+  var constants: Any = js.native
   
   /**
     * creates a deep copy of provided object
     * @param task the object that needs to be copied
     */
-  def copy(task: js.Any): js.Any = js.native
+  def copy(task: Any): Any = js.native
   
   /**
     * recalculates the task duration in the work time
     * @param task the task's object
     */
-  def correctTaskWorkTime(task: js.Any): Unit = js.native
+  def correctTaskWorkTime(task: Any): Unit = js.native
   
   /**
     * creates a working calendar
     * @param parentCalendar optional, (optional) an existing calendar that is used for creating a new one on the base of it
     */
   def createCalendar(): Unit = js.native
-  def createCalendar(parentCalendar: js.Any): Unit = js.native
+  def createCalendar(parentCalendar: Any): Unit = js.native
   
   /**
     * creates a datastore according to the provided configuration
     * @param config a configuration object of a datastore
     */
-  def createDatastore(config: js.Any): Unit = js.native
+  def createDatastore(config: Any): Unit = js.native
   
   /**
     * adds a new task and opens the lightbox to confirm
@@ -264,8 +269,8 @@ trait GanttStatic extends StObject {
     * @param parent the parent's id
     * @param index optional, optional, the position the task will be added into (0 or greater)
     */
-  def createTask(task: js.Any, parent: String): String | Double = js.native
-  def createTask(task: js.Any, parent: String, index: Double): String | Double = js.native
+  def createTask(task: Any, parent: String): String | Double = js.native
+  def createTask(task: Any, parent: String, index: Double): String | Double = js.native
   
   /**
     * dataProcessor constructor
@@ -282,13 +287,13 @@ trait GanttStatic extends StObject {
     * gets the date of the specified horizontal  position in the chart area
     * @param pos the relative horizontal position you want to know the date of
     */
-  def dateFromPos(pos: Double): Date = js.native
+  def dateFromPos(pos: Double): js.Date = js.native
   
   /**
     * returns false if the provided argument is undefined, otherwise true
     * @param task the object that should be checked
     */
-  def defined(task: js.Any): Boolean = js.native
+  def defined(task: Any): Boolean = js.native
   
   /**
     * deletes a task calendar by its id
@@ -340,9 +345,9 @@ trait GanttStatic extends StObject {
     * @param master optional, the object, that 'this'  will refer to
     */
   def eachParent(code: GanttCallback, startTask: String): Unit = js.native
-  def eachParent(code: GanttCallback, startTask: String, master: js.Any): Unit = js.native
+  def eachParent(code: GanttCallback, startTask: String, master: Any): Unit = js.native
   def eachParent(code: GanttCallback, startTask: Double): Unit = js.native
-  def eachParent(code: GanttCallback, startTask: Double, master: js.Any): Unit = js.native
+  def eachParent(code: GanttCallback, startTask: Double, master: Any): Unit = js.native
   
   /**
     * iterates over all selected tasks in the Gantt chart
@@ -358,18 +363,18 @@ trait GanttStatic extends StObject {
     */
   def eachTask(code: GanttCallback): Unit = js.native
   def eachTask(code: GanttCallback, parent: String): Unit = js.native
-  def eachTask(code: GanttCallback, parent: String, master: js.Any): Unit = js.native
+  def eachTask(code: GanttCallback, parent: String, master: Any): Unit = js.native
   def eachTask(code: GanttCallback, parent: Double): Unit = js.native
-  def eachTask(code: GanttCallback, parent: Double, master: js.Any): Unit = js.native
-  def eachTask(code: GanttCallback, parent: Unit, master: js.Any): Unit = js.native
+  def eachTask(code: GanttCallback, parent: Double, master: Any): Unit = js.native
+  def eachTask(code: GanttCallback, parent: Unit, master: Any): Unit = js.native
   
   /**
     * a set of flags which describe current environment
     */
-  var env: js.Any = js.native
+  var env: Any = js.native
   
   def event(node: String, event: String, handler: GanttCallback): Unit = js.native
-  def event(node: String, event: String, handler: GanttCallback, options: js.Any): Unit = js.native
+  def event(node: String, event: String, handler: GanttCallback, options: Any): Unit = js.native
   /**
     * attaches an event handler to an HTML element
     * @param node the HTML node or its id
@@ -378,10 +383,10 @@ trait GanttStatic extends StObject {
     * @param options optional, optional, the value of either the <i>useCapture</i> or <i>options</i> parameter. <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">Read details</a>
     */
   def event(node: HTMLElement, event: String, handler: GanttCallback): Unit = js.native
-  def event(node: HTMLElement, event: String, handler: GanttCallback, options: js.Any): Unit = js.native
+  def event(node: HTMLElement, event: String, handler: GanttCallback, options: Any): Unit = js.native
   
   def eventRemove(node: String, event: String, handler: GanttCallback): Unit = js.native
-  def eventRemove(node: String, event: String, handler: GanttCallback, options: js.Any): Unit = js.native
+  def eventRemove(node: String, event: String, handler: GanttCallback, options: Any): Unit = js.native
   /**
     * removes an event handler from an HTML element
     * @param node the HTML node or its id
@@ -390,7 +395,7 @@ trait GanttStatic extends StObject {
     * @param options optional, optional, the value of either the <i>useCapture</i> or <i>options</i> parameter. <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener">Read details</a>
     */
   def eventRemove(node: HTMLElement, event: String, handler: GanttCallback): Unit = js.native
-  def eventRemove(node: HTMLElement, event: String, handler: GanttCallback, options: js.Any): Unit = js.native
+  def eventRemove(node: HTMLElement, event: String, handler: GanttCallback, options: Any): Unit = js.native
   
   /**
     * expands gantt to the full screen mode
@@ -401,49 +406,49 @@ trait GanttStatic extends StObject {
     * exports data from the Gantt chart to an Excel document
     * @param _export_ an object with export settings (see the details)
     */
-  def exportToExcel(_export_ : js.Any): Unit = js.native
+  def exportToExcel(_export_ : Any): Unit = js.native
   
   /**
     * exports data from the Gantt chart to an iCal string
     * @param _export_ an object with export settings (see the details)
     */
-  def exportToICal(_export_ : js.Any): Unit = js.native
+  def exportToICal(_export_ : Any): Unit = js.native
   
   /**
     * exports the structure and data of a Gantt chart into a JSON object
     * @param config an object with Gantt configuration
     */
-  def exportToJSON(config: js.Any): Unit = js.native
+  def exportToJSON(config: Any): Unit = js.native
   
   /**
     * exports data from the Gantt chart to MS Project
     * @param _export_ an object with export settings (see the details)
     */
-  def exportToMSProject(_export_ : js.Any): Unit = js.native
+  def exportToMSProject(_export_ : Any): Unit = js.native
   
   /**
     * exports a Gantt chart into the PDF format
     * @param _export_ an object with export settings (see the details)
     */
   def exportToPDF(): Unit = js.native
-  def exportToPDF(_export_ : js.Any): Unit = js.native
+  def exportToPDF(_export_ : Any): Unit = js.native
   
   /**
     * exports a Gantt chart into the PNG format
     * @param _export_ an object with export settings (see the details)
     */
   def exportToPNG(): Unit = js.native
-  def exportToPNG(_export_ : js.Any): Unit = js.native
+  def exportToPNG(_export_ : Any): Unit = js.native
   
   /**
     * an object that stores various extensions
     */
-  var ext: js.Any = js.native
+  var ext: Any = js.native
   
   /**
     * returns all dependency loops in the chart
     */
-  def findCycles(): js.Array[js.Any] = js.native
+  def findCycles(): js.Array[Any] = js.native
   
   /**
     * sets focus on the gantt
@@ -454,26 +459,26 @@ trait GanttStatic extends StObject {
     * gets worktime calendar by id
     * @param calendarId the id of the global calendar or "global"
     */
-  def getCalendar(calendarId: String): js.Any = js.native
-  def getCalendar(calendarId: Double): js.Any = js.native
+  def getCalendar(calendarId: String): Any = js.native
+  def getCalendar(calendarId: Double): Any = js.native
   
   /**
     * gets all the calendars added into Gantt
     */
-  def getCalendars(): js.Array[js.Any] = js.native
+  def getCalendars(): js.Array[Any] = js.native
   
   /**
     * returns the 1st-level child tasks of the specified parent branch
     * @param id the parent branch's id
     */
-  def getChildren(id: String): js.Array[js.Any] = js.native
-  def getChildren(id: Double): js.Array[js.Any] = js.native
+  def getChildren(id: String): js.Array[Any] = js.native
+  def getChildren(id: Double): js.Array[Any] = js.native
   
   /**
     * returns the closest working time
     * @param config the configuration object
     */
-  def getClosestWorkTime(config: js.Any): Date = js.native
+  def getClosestWorkTime(config: Any): js.Date = js.native
   
   /**
     * returns the index of the column by its name
@@ -485,21 +490,21 @@ trait GanttStatic extends StObject {
     * returns all tasks and links that a task is connected with
     * @param id optional, optional, the id of a task
     */
-  def getConnectedGroup(): js.Any = js.native
-  def getConnectedGroup(id: String): js.Any = js.native
-  def getConnectedGroup(id: Double): js.Any = js.native
+  def getConnectedGroup(): Any = js.native
+  def getConnectedGroup(id: String): Any = js.native
+  def getConnectedGroup(id: Double): Any = js.native
   
   /**
     * returns the configuration object of a datastore
     * @param name the name of the datastore
     */
-  def getDatastore(name: String): js.Any = js.native
+  def getDatastore(name: String): Any = js.native
   
   /**
     * returns the free slack of a task
     * @param task the object of a task
     */
-  def getFreeSlack(task: js.Any): Double = js.native
+  def getFreeSlack(task: Any): Double = js.native
   
   /**
     * gets the index of a task in the tree
@@ -512,12 +517,12 @@ trait GanttStatic extends StObject {
     * gets the configuration object of a column
     * @param name the column's name
     */
-  def getGridColumn(name: String): js.Any = js.native
+  def getGridColumn(name: String): Any = js.native
   
   /**
     * gets columns of the Gantt chart
     */
-  def getGridColumns(): js.Array[js.Any] = js.native
+  def getGridColumns(): js.Array[Any] = js.native
   
   /**
     * gets the label of a select control in the lightbox
@@ -541,7 +546,7 @@ trait GanttStatic extends StObject {
     * returns the object of the lightbox's section
     * @param name the name of the section
     */
-  def getLightboxSection(name: String): js.Any = js.native
+  def getLightboxSection(name: String): Any = js.native
   
   /**
     * returns the name of the active lighbox's structure
@@ -551,14 +556,14 @@ trait GanttStatic extends StObject {
   /**
     * returns values of the lightbox's sections
     */
-  def getLightboxValues(): js.Any = js.native
+  def getLightboxValues(): Any = js.native
   
   /**
     * returns the dependency link object by the specified id
     * @param id the link id
     */
-  def getLink(id: String): js.Any = js.native
-  def getLink(id: Double): js.Any = js.native
+  def getLink(id: String): Any = js.native
+  def getLink(id: Double): Any = js.native
   
   /**
     * returns the number of all dependency links presented in the Gantt chart
@@ -575,13 +580,13 @@ trait GanttStatic extends StObject {
   /**
     * returns all links presented in the Gantt chart
     */
-  def getLinks(): js.Array[js.Any] = js.native
+  def getLinks(): js.Array[Any] = js.native
   
   /**
     * gets the marker's object
     * @param markerId the marker's id
     */
-  def getMarker(markerId: String): js.Any = js.native
+  def getMarker(markerId: String): Any = js.native
   
   /**
     * returns the id of the next item (no matter what the level of nesting is: the same or different)
@@ -621,24 +626,24 @@ trait GanttStatic extends StObject {
   /**
     * returns the stack of stored redo user actions
     */
-  def getRedoStack(): js.Array[js.Any] = js.native
+  def getRedoStack(): js.Array[Any] = js.native
   
   /**
     * returns all tasks assigned to the resource
     * @param resourceId the id of the resource
     */
-  def getResourceAssignments(resourceId: String): js.Array[js.Any] = js.native
-  def getResourceAssignments(resourceId: Double): js.Array[js.Any] = js.native
+  def getResourceAssignments(resourceId: String): js.Array[Any] = js.native
+  def getResourceAssignments(resourceId: Double): js.Array[Any] = js.native
   
   /**
     * returns the configuration of the time scale
     */
-  def getScale(): js.Any = js.native
+  def getScale(): Any = js.native
   
   /**
     * returns the scroll position
     */
-  def getScrollState(): js.Any = js.native
+  def getScrollState(): Any = js.native
   
   /**
     * returns the id of the selected task
@@ -648,7 +653,7 @@ trait GanttStatic extends StObject {
   /**
     * returns an array of the currently selected tasks
     */
-  def getSelectedTasks(): js.Array[js.Any] = js.native
+  def getSelectedTasks(): js.Array[Any] = js.native
   
   /**
     * gets a key navigation shortcut handler
@@ -661,28 +666,28 @@ trait GanttStatic extends StObject {
     * returns siblings of the specified  task (including itself)
     * @param id the task id
     */
-  def getSiblings(id: String): js.Array[js.Any] = js.native
-  def getSiblings(id: Double): js.Array[js.Any] = js.native
+  def getSiblings(id: String): js.Array[Any] = js.native
+  def getSiblings(id: Double): js.Array[Any] = js.native
   
   /**
     * checks how much time (in the current duration unit) a task has before it starts to affect other tasks
     * @param task1 the object of the 1st task to check the slack for
     * @param task2 the object of the 2nd task to check the slack for
     */
-  def getSlack(task1: js.Any, task2: js.Any): Double | String = js.native
+  def getSlack(task1: Any, task2: Any): Double | String = js.native
   
   /**
     * gets the current state of the Gantt chart
     */
-  def getState(): js.Any = js.native
+  def getState(): Any = js.native
   
   /**
     * calculates the combined start/end dates of tasks nested in a project or another task
     * @param task_id optional, the task's id, api/gantt_root_id_config.md will be used if not specified
     */
-  def getSubtaskDates(): js.Any = js.native
-  def getSubtaskDates(task_id: String): js.Any = js.native
-  def getSubtaskDates(task_id: Double): js.Any = js.native
+  def getSubtaskDates(): Any = js.native
+  def getSubtaskDates(task_id: String): Any = js.native
+  def getSubtaskDates(task_id: Double): Any = js.native
   
   /**
     * calculates the combined duration of tasks nested in a project or another task.
@@ -696,44 +701,44 @@ trait GanttStatic extends StObject {
     * returns the task object
     * @param id the task id
     */
-  def getTask(id: String): js.Any = js.native
-  def getTask(id: Double): js.Any = js.native
+  def getTask(id: String): Any = js.native
+  def getTask(id: Double): Any = js.native
   
   /**
     * finds a task by the specified criteria
     * @param propertyName the name of the property to match, or a filter function
     * @param propertyValue the property value
     */
-  def getTaskBy(propertyName: String, propertyValue: js.Any): js.Array[js.Any] = js.native
-  def getTaskBy(propertyName: GanttCallback, propertyValue: js.Any): js.Array[js.Any] = js.native
+  def getTaskBy(propertyName: String, propertyValue: Any): js.Array[Any] = js.native
+  def getTaskBy(propertyName: GanttCallback, propertyValue: Any): js.Array[Any] = js.native
   
   /**
     * returns a task by its index
     * @param index the task index in the tree (zero-based numbering)
     */
-  def getTaskByIndex(index: Double): js.Any = js.native
+  def getTaskByIndex(index: Double): Any = js.native
   
   /**
     * returns a collection of tasks which occur during the specified period
     * @param from optional, the start date of the period
     * @param to optional, the end date of the period
     */
-  def getTaskByTime(): js.Array[js.Any] = js.native
-  def getTaskByTime(from: Unit, to: Date): js.Array[js.Any] = js.native
-  def getTaskByTime(from: Date): js.Array[js.Any] = js.native
-  def getTaskByTime(from: Date, to: Date): js.Array[js.Any] = js.native
+  def getTaskByTime(): js.Array[Any] = js.native
+  def getTaskByTime(from: js.Date): js.Array[Any] = js.native
+  def getTaskByTime(from: js.Date, to: js.Date): js.Array[Any] = js.native
+  def getTaskByTime(from: Unit, to: js.Date): js.Array[Any] = js.native
   
   /**
     * returns a task by its WBS code
     * @param code the WBS code of the task
     */
-  def getTaskByWBSCode(code: String): js.Any = js.native
+  def getTaskByWBSCode(code: String): Any = js.native
   
   /**
     * gets a calendar assigned to the specified task (a task level calendar)
     * @param task the object of a task
     */
-  def getTaskCalendar(task: js.Any): js.Any = js.native
+  def getTaskCalendar(task: Any): Any = js.native
   
   /**
     * gets the number of tasks that are currently loaded in the gantt
@@ -765,7 +770,7 @@ trait GanttStatic extends StObject {
     * @param from the start date of the item
     * @param to the end date of the item
     */
-  def getTaskPosition(task: js.Any, from: Date, to: Date): js.Any = js.native
+  def getTaskPosition(task: Any, from: js.Date, to: js.Date): Any = js.native
   
   /**
     * returns the HTML element of the task row in the table
@@ -785,18 +790,18 @@ trait GanttStatic extends StObject {
     * returns the type of a task
     * @param task the task object
     */
-  def getTaskType(task: js.Any): String = js.native
+  def getTaskType(task: Any): String = js.native
   
   /**
     * returns the total slack of a task
     * @param task the object of a task
     */
-  def getTotalSlack(task: js.Any): Double = js.native
+  def getTotalSlack(task: Any): Double = js.native
   
   /**
     * returns the stack of stored undo user actions
     */
-  def getUndoStack(): js.Array[js.Any] = js.native
+  def getUndoStack(): js.Array[Any] = js.native
   
   /**
     * gets the number of tasks visible on the screen (those that are not collapsed)
@@ -807,19 +812,19 @@ trait GanttStatic extends StObject {
     * returns the WBS code (the outline number) of a task
     * @param task the object of a task
     */
-  def getWBSCode(task: js.Any): String = js.native
+  def getWBSCode(task: Any): String = js.native
   
   /**
     * returns the working hours of the specified date
     * @param date a date to check
     */
-  def getWorkHours(date: Date): js.Array[js.Any] = js.native
+  def getWorkHours(date: js.Date): js.Array[Any] = js.native
   
   /**
     * groups tasks by the specified task's attribute
     * @param config the grouping configuration object
     */
-  def groupBy(config: js.Any): Unit = js.native
+  def groupBy(config: Any): Unit = js.native
   
   /**
     * checks whether the specified item has child tasks
@@ -846,16 +851,22 @@ trait GanttStatic extends StObject {
   def hideQuickInfo(): Unit = js.native
   
   /**
+    * hiding time units in the scale
+    * @param date the date object
+    */
+  def ignore_time(date: js.Date): js.UndefOr[Boolean] = js.native
+  
+  /**
     * converts an Excel file to JSON
     * @param config an object with configuration properties of an imported file
     */
-  def importFromExcel(config: js.Any): Unit = js.native
+  def importFromExcel(config: Any): Unit = js.native
   
   /**
     * converts an XML or MPP MS Project file to JSON
     * @param config an object with configuration properties of an imported file
     */
-  def importFromMSProject(config: js.Any): Unit = js.native
+  def importFromMSProject(config: Any): Unit = js.native
   
   /**
     * constructor. Initializes a dhtmlxGantt object
@@ -864,13 +875,13 @@ trait GanttStatic extends StObject {
     * @param to optional, the end value of the time scale (X&ndash;Axis)
     */
   def init(container: String): Unit = js.native
-  def init(container: String, from: Unit, to: Date): Unit = js.native
-  def init(container: String, from: Date): Unit = js.native
-  def init(container: String, from: Date, to: Date): Unit = js.native
+  def init(container: String, from: js.Date): Unit = js.native
+  def init(container: String, from: js.Date, to: js.Date): Unit = js.native
+  def init(container: String, from: Unit, to: js.Date): Unit = js.native
   def init(container: HTMLElement): Unit = js.native
-  def init(container: HTMLElement, from: Unit, to: Date): Unit = js.native
-  def init(container: HTMLElement, from: Date): Unit = js.native
-  def init(container: HTMLElement, from: Date, to: Date): Unit = js.native
+  def init(container: HTMLElement, from: js.Date): Unit = js.native
+  def init(container: HTMLElement, from: js.Date, to: js.Date): Unit = js.native
+  def init(container: HTMLElement, from: Unit, to: js.Date): Unit = js.native
   
   /**
     * checks whether a task is a child of other task
@@ -886,25 +897,25 @@ trait GanttStatic extends StObject {
     * checks whether the link is circular
     * @param link the link object
     */
-  def isCircularLink(link: js.Any): Boolean = js.native
+  def isCircularLink(link: Any): Boolean = js.native
   
   /**
     * checks whether the specified link is critical
     * @param link the link's object
     */
-  def isCriticalLink(link: js.Any): Boolean = js.native
+  def isCriticalLink(link: Any): Boolean = js.native
   
   /**
     * checks whether the specified task is critical
     * @param task the task's object
     */
-  def isCriticalTask(task: js.Any): Boolean = js.native
+  def isCriticalTask(task: Any): Boolean = js.native
   
   /**
     * checks whether the specified link is correct
     * @param link the link object
     */
-  def isLinkAllowed(link: js.Any): Boolean = js.native
+  def isLinkAllowed(link: Any): Boolean = js.native
   
   /**
     * checks whether the specified link exists
@@ -931,13 +942,13 @@ trait GanttStatic extends StObject {
     * checks whether the specified task is split
     * @param task the object of a task
     */
-  def isSplitTask(task: js.Any): Boolean = js.native
+  def isSplitTask(task: Any): Boolean = js.native
   
   /**
     * checks whether the specified task is summary
     * @param task the object of a task
     */
-  def isSummaryTask(task: js.Any): Boolean = js.native
+  def isSummaryTask(task: Any): Boolean = js.native
   
   /**
     * checks whether the specified task exists
@@ -957,24 +968,24 @@ trait GanttStatic extends StObject {
     * checks if the task is unscheduled
     * @param task the task's object
     */
-  def isUnscheduledTask(task: js.Any): Boolean = js.native
+  def isUnscheduledTask(task: Any): Boolean = js.native
   
   /**
     * checks whether the specified date is working or not
     * @param config the configuration object of a time span
     */
-  def isWorkTime(config: js.Any): Boolean = js.native
+  def isWorkTime(config: Any): Boolean = js.native
   /**
     * checks whether the specified date is working or not
     * @param date a date to check
     * @param timeunit a time unit: 'hour' or 'day'.<br> If not specified, the value of 'gantt.config.duration_unit'  is used
     */
-  def isWorkTime(date: Date, timeunit: String): Boolean = js.native
+  def isWorkTime(date: js.Date, timeunit: String): Boolean = js.native
   
   /**
     * specifies JSON serialization and parsing
     */
-  var json: js.Any = js.native
+  var json: Any = js.native
   
   /**
     * defines the hot keys for the Gantt chart
@@ -1007,7 +1018,7 @@ trait GanttStatic extends StObject {
     * calls a message box of the specified type
     * @param config the message box's configuration
     */
-  def message(config: js.Any): HTMLElement = js.native
+  def message(config: Any): HTMLElement = js.native
   
   /**
     * adds properties of the 'source' object into the 'target' object
@@ -1015,13 +1026,13 @@ trait GanttStatic extends StObject {
     * @param source the source object
     * @param force if true, properties of the 'source' will overwrite matching properties of the 'target', if there are any. If false, properties that already exist in the 'target' will be omitted
     */
-  def mixin(target: js.Any, source: js.Any, force: Boolean): Unit = js.native
+  def mixin(target: Any, source: Any, force: Boolean): Unit = js.native
   
   /**
     * calls a modalbox
     * @param config the modal box's configuration
     */
-  def modalbox(config: js.Any): HTMLElement = js.native
+  def modalbox(config: Any): HTMLElement = js.native
   
   /**
     * moves a task to a new position
@@ -1039,7 +1050,7 @@ trait GanttStatic extends StObject {
   /**
     * specifies serialization and parsing in the XML format of dhtmlxGantt 1.0
     */
-  var oldxml: js.Any = js.native
+  var oldxml: Any = js.native
   
   /**
     * opens the branch with the specified id
@@ -1053,14 +1064,20 @@ trait GanttStatic extends StObject {
     * @param url a string or object which represents data
     * @param type optional, optional, (<i>'json', 'xml'</i>) the data type. The default value - <i>'json'</i>
     */
-  def parse(url: js.Any): Unit = js.native
-  def parse(url: js.Any, `type`: String): Unit = js.native
+  def parse(url: Any): Unit = js.native
+  def parse(url: Any, `type`: String): Unit = js.native
+  
+  /**
+    * activates specified extensions
+    * @param ext extensions that need to be activated
+    */
+  def plugins(ext: Any): Unit = js.native
   
   /**
     * gets the relative horizontal position of the specified date in the chart area
     * @param date a date you want to know the position of
     */
-  def posFromDate(date: Date): Double = js.native
+  def posFromDate(date: js.Date): Double = js.native
   
   /**
     * applies the reverted changes to the gantt once again
@@ -1100,7 +1117,7 @@ trait GanttStatic extends StObject {
     * @param shortcut the key name or the name of keys combination for a shortcut (<a href="desktop/keyboard_navigation.md#shortcutsyntax">shortcut syntax</a>)
     * @param scope the element to which the shortcut is attached (<a href="desktop/keyboard_navigation.md#scopes">list of scopes</a>)
     */
-  def removeShortcut(shortcut: String, scope: js.Any): Unit = js.native
+  def removeShortcut(shortcut: String, scope: Any): Unit = js.native
   
   /**
     * removes the specified layer related to a task
@@ -1127,7 +1144,7 @@ trait GanttStatic extends StObject {
     * re-calculates the duration of a project task depending on the dates of its children
     * @param task the task's object
     */
-  def resetProjectDates(task: js.Any): Unit = js.native
+  def resetProjectDates(task: Any): Unit = js.native
   
   /**
     * re-calculates the skin's settings from the related attached skin CSS file
@@ -1143,13 +1160,13 @@ trait GanttStatic extends StObject {
     * rounds the specified date to the nearest date in the time scale
     * @param date the Date object to round
     */
-  def roundDate(date: Date): Date = js.native
+  def roundDate(date: js.Date): js.Date = js.native
   
   /**
     * rounds the start and end task's dates to the nearest dates in the time scale
     * @param task the task object
     */
-  def roundTaskDates(task: js.Any): Unit = js.native
+  def roundTaskDates(task: Any): Unit = js.native
   
   /**
     * scrolls the Gantt container to the specified position
@@ -1177,8 +1194,8 @@ trait GanttStatic extends StObject {
     * @param list_name the name of a list
     * @param options optional, an array of options
     */
-  def serverList(list_name: String): js.Array[js.Any] = js.native
-  def serverList(list_name: String, options: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def serverList(list_name: String): js.Array[Any] = js.native
+  def serverList(list_name: String, options: js.Array[Any]): js.Array[Any] = js.native
   
   def setParent(task: String, pid: String): Unit = js.native
   def setParent(task: String, pid: Double): Unit = js.native
@@ -1199,7 +1216,7 @@ trait GanttStatic extends StObject {
     * sets the working time for the Gantt chart
     * @param config the configuration object of a time span
     */
-  def setWorkTime(config: js.Any): Unit = js.native
+  def setWorkTime(config: Any): Unit = js.native
   
   /**
     * shows the lightbox modal overlay that blocks interactions with the remaining screen
@@ -1212,7 +1229,7 @@ trait GanttStatic extends StObject {
     * scrolls the chart area to makes the specified date visible
     * @param date the date to show in the chart
     */
-  def showDate(date: Date): Unit = js.native
+  def showDate(date: js.Date): Unit = js.native
   
   /**
     * opens the lightbox for the specified task
@@ -1243,7 +1260,7 @@ trait GanttStatic extends StObject {
   /**
     * returns objects of the available skins
     */
-  var skins: js.Any = js.native
+  var skins: Any = js.native
   
   /**
     * sorts tasks in the grid
@@ -1311,14 +1328,14 @@ trait GanttStatic extends StObject {
     * unsets a working time in the Gantt Chart
     * @param config the configuration object of a time span
     */
-  def unsetWorkTime(config: js.Any): Unit = js.native
+  def unsetWorkTime(config: Any): Unit = js.native
   
   /**
     * updates the specified collection with new options
     * @param collection the name of the collection to update
     * @param options the new values of the collection
     */
-  def updateCollection(collection: String, options: js.Array[js.Any]): Boolean = js.native
+  def updateCollection(collection: String, options: js.Array[Any]): Boolean = js.native
   
   /**
     * updates the specified dependency link
@@ -1346,5 +1363,5 @@ trait GanttStatic extends StObject {
   /**
     * specifies XML serialization and parsing
     */
-  var xml: js.Any = js.native
+  var xml: Any = js.native
 }

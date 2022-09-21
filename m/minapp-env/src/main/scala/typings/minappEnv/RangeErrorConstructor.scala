@@ -2,7 +2,6 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.RangeError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RangeErrorConstructor
   extends StObject
-     with Instantiable0[RangeError]
-     with Instantiable1[/* message */ java.lang.String, RangeError] {
+     with Instantiable0[js.RangeError]
+     with Instantiable1[/* message */ java.lang.String, js.RangeError] {
   
-  def apply(): RangeError = js.native
-  def apply(message: java.lang.String): RangeError = js.native
+  def apply(): js.RangeError = js.native
+  def apply(message: java.lang.String): js.RangeError = js.native
 }

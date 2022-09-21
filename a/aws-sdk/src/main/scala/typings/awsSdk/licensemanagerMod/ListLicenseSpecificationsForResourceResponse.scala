@@ -29,7 +29,7 @@ object ListLicenseSpecificationsForResourceResponse {
     
     inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
-    inline def setLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
+    inline def setLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

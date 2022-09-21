@@ -11,9 +11,9 @@ React component library for building declarative multi-step flows.
 | Full name          | react-albus |
 | Keywords           | react, react-component, wizard, step, multistep, routing |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 431478 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62499.0 |
+| # stars            | 991.0 |
 
 ## Links
 - [Homepage](https://github.com/americanexpress/react-albus#readme)

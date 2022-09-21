@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcceptInvitationRequest extends StObject {
   
   /**
-    * The ID of the invitation sent from the Security Hub master account.
+    * The identifier of the invitation sent from the Security Hub administrator account.
     */
   var InvitationId: NonEmptyString
   
   /**
-    * The account ID of the Security Hub master account that sent the invitation.
+    * The account ID of the Security Hub administrator account that sent the invitation.
     */
   var MasterId: NonEmptyString
 }

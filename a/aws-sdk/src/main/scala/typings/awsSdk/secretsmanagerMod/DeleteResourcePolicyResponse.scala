@@ -12,7 +12,7 @@ trait DeleteResourcePolicyResponse extends StObject {
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret that the resource-based policy was deleted for.
+    * The name of the secret that the resource-based policy was deleted for.
     */
   var Name: js.UndefOr[NameType] = js.undefined
 }

@@ -37,6 +37,8 @@ trait BuildingExplorerViewModel
   /**
     * The current state of the view model that can be used for rendering the UI of the widget.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html#state)
     */
   val state: disabled | loading | ready | failed = js.native

@@ -1,20 +1,30 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.smallValueThreshold
-import typings.devextreme.devextremeStrings.topN
+import typings.devextreme.mod.DevExpress.viz.dxPieChart.SmallValuesGroupingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GroupName extends StObject {
   
+  /**
+    * Specifies the name of the grouped chart segment. This name represents the segment in the chart legend.
+    */
   var groupName: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[none | smallValueThreshold | topN] = js.undefined
+  /**
+    * Specifies the segment grouping mode.
+    */
+  var mode: js.UndefOr[SmallValuesGroupingMode] = js.undefined
   
+  /**
+    * Specifies a threshold for segment values.
+    */
   var threshold: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies how many segments must not be grouped.
+    */
   var topCount: js.UndefOr[Double] = js.undefined
 }
 object GroupName {
@@ -30,7 +40,7 @@ object GroupName {
     
     inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    inline def setMode(value: none | smallValueThreshold | topN): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: SmallValuesGroupingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

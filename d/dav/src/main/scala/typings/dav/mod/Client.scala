@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "Client")
 @js.native
-class Client protected () extends StObject {
+open class Client protected () extends StObject {
   /**
     * Create a new Client object. The client interface allows consumers to set
     * their credentials and transport once and then make authorized requests
@@ -73,8 +73,8 @@ class Client protected () extends StObject {
     * `transformResponse` function to the xhr object after its readyState
     * is 4.
     */
-  def send(req: Request_, uri: String): js.Promise[js.Any] = js.native
-  def send(req: Request_, uri: String, options: ClientSendOptions): js.Promise[js.Any] = js.native
+  def send(req: Request_, uri: String): js.Promise[Any] = js.native
+  def send(req: Request_, uri: String, options: ClientSendOptions): js.Promise[Any] = js.native
   
   /**
     * Fetch changes from the remote server to the parameter address books.

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isImgMod {
   
-  @JSImport("@ant-design/pro-utils/lib/isImg", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/isImg", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImg(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImg")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

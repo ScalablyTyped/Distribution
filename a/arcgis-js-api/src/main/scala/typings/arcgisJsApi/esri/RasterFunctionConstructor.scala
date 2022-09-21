@@ -17,5 +17,5 @@ trait RasterFunctionConstructor
 Instantiable0[RasterFunction]
      with Instantiable1[/* properties */ RasterFunctionProperties, RasterFunction] {
   
-  def fromJSON(json: js.Any): RasterFunction = js.native
+  def fromJSON(json: Any): RasterFunction = js.native
 }

@@ -5,77 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Audience = java.lang.String
+type Audience = String
 
-type Issuer = java.lang.String
+type Issuer = String
 
-type NameQualifier = java.lang.String
+type NameQualifier = String
 
-type SAMLAssertionType = java.lang.String
+type SAMLAssertionType = String
 
-type Subject = java.lang.String
+type Subject = String
 
-type SubjectType = java.lang.String
+type SubjectType = String
 
-type accessKeyIdType = java.lang.String
+type accessKeyIdType = String
 
-type accessKeySecretType = java.lang.String
+type accessKeySecretType = String
 
-type accountType = java.lang.String
+type accountType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2011-06-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.stsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type arnType = java.lang.String
+type arnType = String
 
-type assumedRoleIdType = java.lang.String
+type assumedRoleIdType = String
 
-type clientTokenType = java.lang.String
+type clientTokenType = String
 
-type dateType = typings.std.Date
+type dateType = js.Date
 
-type decodedMessageType = java.lang.String
+type decodedMessageType = String
 
-type durationSecondsType = scala.Double
+type durationSecondsType = Double
 
-type encodedMessageType = java.lang.String
+type encodedMessageType = String
 
-type externalIdType = java.lang.String
+type externalIdType = String
 
-type federatedIdType = java.lang.String
+type federatedIdType = String
 
-type nonNegativeIntegerType = scala.Double
+type nonNegativeIntegerType = Double
 
-type policyDescriptorListType = js.Array[typings.awsSdk.stsMod.PolicyDescriptorType]
+type policyDescriptorListType = js.Array[PolicyDescriptorType]
 
-type roleDurationSecondsType = scala.Double
+type roleDurationSecondsType = Double
 
-type roleSessionNameType = java.lang.String
+type roleSessionNameType = String
 
-type serialNumberType = java.lang.String
+type serialNumberType = String
 
-type sessionPolicyDocumentType = java.lang.String
+type sessionPolicyDocumentType = String
 
-type tagKeyListType = js.Array[typings.awsSdk.stsMod.tagKeyType]
+type sourceIdentityType = String
 
-type tagKeyType = java.lang.String
+type tagKeyListType = js.Array[tagKeyType]
 
-type tagListType = js.Array[typings.awsSdk.stsMod.Tag]
+type tagKeyType = String
 
-type tagValueType = java.lang.String
+type tagListType = js.Array[Tag]
 
-type tokenCodeType = java.lang.String
+type tagValueType = String
 
-type tokenType = java.lang.String
+type tokenCodeType = String
 
-type urlType = java.lang.String
+type tokenType = String
 
-type userIdType = java.lang.String
+type urlType = String
 
-type userNameType = java.lang.String
+type userIdType = String
 
-type webIdentitySubjectType = java.lang.String
+type userNameType = String
+
+type webIdentitySubjectType = String

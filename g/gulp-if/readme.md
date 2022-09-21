@@ -9,10 +9,10 @@ Conditionally run a task
 | ------------------ | :-------------: |
 | Full name          | gulp-if |
 | Keywords           | gulpplugin, conditional, if, ternary |
-| # releases         | 2 |
-| # dependents       | 1267 |
-| # downloads        | 15272610 |
-| # stars            | 164 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1303194.0 |
+| # stars            | 657.0 |
 
 ## Links
 - [Homepage](https://github.com/robrich/gulp-if)

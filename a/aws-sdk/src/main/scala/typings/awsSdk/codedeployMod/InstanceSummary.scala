@@ -24,7 +24,7 @@ trait InstanceSummary extends StObject {
   /**
     * A timestamp that indicates when the instance information was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of lifecycle events for this instance.
@@ -57,7 +57,7 @@ object InstanceSummary {
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
-    inline def setLastUpdatedAt(value: Timestamp): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -65,7 +65,7 @@ object InstanceSummary {
     
     inline def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
     
-    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
+    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value*))
     
     inline def setStatus(value: InstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

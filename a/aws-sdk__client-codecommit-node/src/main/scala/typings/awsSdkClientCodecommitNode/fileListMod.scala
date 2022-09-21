@@ -8,5 +8,5 @@ object fileListMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_FileList", "_FileList")
   @js.native
-  val FileList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val FileList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

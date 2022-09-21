@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomAppender
   extends StObject
-     with /* key */ StringDictionary[js.Any]
-     with Appender {
+     with /* key */ StringDictionary[Any] {
   
   var `type`: String | AppenderModule
 }

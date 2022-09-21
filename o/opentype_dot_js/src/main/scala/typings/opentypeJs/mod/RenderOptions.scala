@@ -13,7 +13,11 @@ trait RenderOptions extends StObject {
   
   var language: js.UndefOr[String] = js.undefined
   
+  var letterSpacing: js.UndefOr[Double] = js.undefined
+  
   var script: js.UndefOr[String] = js.undefined
+  
+  var tracking: js.UndefOr[Double] = js.undefined
   
   var xScale: js.UndefOr[Double] = js.undefined
   
@@ -40,9 +44,17 @@ object RenderOptions {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    
     inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    
+    inline def setTracking(value: Double): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    
+    inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
     
     inline def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     

@@ -10,15 +10,12 @@ Library for updating an npmjs.com profile
 | ------------------ | :-------------: |
 | Full name          | npm-profile |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 30 |
-| # downloads        | 27659317 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2734823.3333333335 |
+| # stars            | 27.0 |
 
 ## Links
-- [Homepage](https://github.com/npm/npm-profile#readme)
-- [Bugs](https://github.com/npm/npm-profile/issues)
-- [Repository](https://github.com/npm/npm-profile)
 - [Npm](https://www.npmjs.com/package/npm-profile)
     
 

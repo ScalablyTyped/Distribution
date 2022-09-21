@@ -8,11 +8,11 @@ trait Add extends StObject {
   
   var add: Boolean
   
-  var key: String | Double
+  var key: typings.rcTree.interfaceMod.Key
 }
 object Add {
   
-  inline def apply(add: Boolean, key: String | Double): Add = {
+  inline def apply(add: Boolean, key: typings.rcTree.interfaceMod.Key): Add = {
     val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Add]
   }
@@ -21,6 +21,6 @@ object Add {
     
     inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

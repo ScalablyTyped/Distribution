@@ -19,6 +19,23 @@ trait ExecuteOptions extends StObject {
   var autoCommit: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Overrides oracledb.dbObjectAsPojo.
+    *
+    * Specify whether Oracle Database named objects or collections that are queried should be returned to the application
+    * as “plain old JavaScript objects” or kept as database-backed objects. This option also applies to output BIND_OUT bind variables.
+    *
+    * Note that LOBs in objects will be represented as Lob instances and will not be String or Buffer, regardless of any fetchAsString,
+    * fetchAsBuffer, or fetchInfo setting.
+    *
+    * Setting dbObjectAsPojo to true can avoid overhead if object attributes are repeatedly accessed. It also allows applications to
+    * close connections before any attributes are accessed unless LOBs are involved. Regardless of the value, the interface to access objects is the same.
+    *
+    * @default false
+    * @since 5.1
+    */
+  var dbObjectAsPojo: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Determines whether additional metadata is available for queries and for REF CURSORs returned from PL/SQL blocks.
     *
     * With this value, the result.metaData result.resultSet.metaData objects only include column names.
@@ -96,14 +113,14 @@ trait ExecuteOptions extends StObject {
     * This is a query tuning option to set the number of additional rows the underlying Oracle Client library fetches during
     * the internal initial statement execution phase of a query. The prefetch size does not affect when, or how many,
     * rows are returned by node-oracledb to the application.
-    * 
+    *
     * The prefetchRows attribute can be used in conjunction with oracledb.fetchArraySize to tune query performance, memory use,
     * and to reduce the number of round-trip calls needed to return query results.
-    * 
+    *
     * The prefetchRows value is ignored in some cases, such as when the query involves a LOB.
-    * 
+    *
     * This attribute is not used in node-oracledb version 2, 3 or 4. In those versions use only oracledb.fetchArraySize instead.
-    * 
+    *
     * @default 2
     * @see https://oracle.github.io/node-oracledb/doc/api.html#rowfetching
     * @since 5.0
@@ -129,6 +146,10 @@ object ExecuteOptions {
     inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
     inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    
+    inline def setDbObjectAsPojo(value: Boolean): Self = StObject.set(x, "dbObjectAsPojo", value.asInstanceOf[js.Any])
+    
+    inline def setDbObjectAsPojoUndefined: Self = StObject.set(x, "dbObjectAsPojo", js.undefined)
     
     inline def setExtendedMetaData(value: Boolean): Self = StObject.set(x, "extendedMetaData", value.asInstanceOf[js.Any])
     

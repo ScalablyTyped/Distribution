@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__theme
 
-Typings are for version 1.7.0
+Typings are for version 2.6.16
 
 ## Library description:
 Basic building blocks for Fluent UI React Component themes
@@ -10,10 +10,10 @@ Basic building blocks for Fluent UI React Component themes
 | ------------------ | :-------------: |
 | Full name          | @fluentui/theme |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 26 |
-| # downloads        | 1013415 |
-| # stars            | 0 |
+| # releases         | 93 |
+| # dependents       | 0.0 |
+| # downloads        | 649158.6666666666 |
+| # stars            | 13904.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

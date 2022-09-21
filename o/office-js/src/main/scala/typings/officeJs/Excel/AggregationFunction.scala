@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait AggregationFunction extends StObject
 /**
+  * Aggregation function for the DataPivotField.
   *
-  * Aggregation Function for the Data Pivot Field.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.AggregationFunction")
@@ -18,7 +18,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Excel will automatically select the aggregation based on the data items.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait automatic
@@ -27,7 +28,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the average of the data, equivalent to the AVERAGE function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait average
@@ -36,7 +38,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the count of items in the data, equivalent to the COUNTA function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait count
@@ -45,7 +48,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the count of numbers in the data, equivalent to the COUNT function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait countNumbers
@@ -54,7 +58,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the maximum value of the data, equivalent to the MAX function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait max
@@ -63,7 +68,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the minimum value of the data, equivalent to the MIN function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait min
@@ -72,7 +78,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the product of the data, equivalent to the PRODUCT function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait product
@@ -81,7 +88,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the standard deviation of the data, equivalent to the STDEV function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait standardDeviation
@@ -90,7 +98,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the standard deviation of the data, equivalent to the STDEVP function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait standardDeviationP
@@ -99,7 +108,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the sum of the data, equivalent to the SUM function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait sum
@@ -108,7 +118,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregation function is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait unknown
@@ -117,7 +128,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the variance of the data, equivalent to the VAR function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait variance
@@ -126,7 +138,8 @@ object AggregationFunction extends StObject {
   
   /**
     * Aggregate using the variance of the data, equivalent to the VARP function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait varianceP

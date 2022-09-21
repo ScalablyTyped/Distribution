@@ -43,7 +43,7 @@ object ListBucketIntelligentTieringConfigurationsOutput {
     
     inline def setIntelligentTieringConfigurationListUndefined: Self = StObject.set(x, "IntelligentTieringConfigurationList", js.undefined)
     
-    inline def setIntelligentTieringConfigurationListVarargs(value: IntelligentTieringConfiguration*): Self = StObject.set(x, "IntelligentTieringConfigurationList", js.Array(value :_*))
+    inline def setIntelligentTieringConfigurationListVarargs(value: IntelligentTieringConfiguration*): Self = StObject.set(x, "IntelligentTieringConfigurationList", js.Array(value*))
     
     inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

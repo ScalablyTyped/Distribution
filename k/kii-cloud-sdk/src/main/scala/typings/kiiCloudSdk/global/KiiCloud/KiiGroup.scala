@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiGroup")
 @js.native
-class KiiGroup ()
+open class KiiGroup ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiGroup
 object KiiGroup {

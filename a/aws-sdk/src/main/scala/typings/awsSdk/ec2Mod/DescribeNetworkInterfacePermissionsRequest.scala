@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   
   /**
-    * One or more filters.    network-interface-permission.network-interface-permission-id - The ID of the permission.    network-interface-permission.network-interface-id - The ID of the network interface.    network-interface-permission.aws-account-id - The AWS account ID.    network-interface-permission.aws-service - The AWS service.    network-interface-permission.permission - The type of permission (INSTANCE-ATTACH | EIP-ASSOCIATE).  
+    * One or more filters.    network-interface-permission.network-interface-permission-id - The ID of the permission.    network-interface-permission.network-interface-id - The ID of the network interface.    network-interface-permission.aws-account-id - The Amazon Web Services account ID.    network-interface-permission.aws-service - The Amazon Web Service.    network-interface-permission.permission - The type of permission (INSTANCE-ATTACH | EIP-ASSOCIATE).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -39,7 +39,7 @@ object DescribeNetworkInterfacePermissionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeNetworkInterfacePermissionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object DescribeNetworkInterfacePermissionsRequest {
     
     inline def setNetworkInterfacePermissionIdsUndefined: Self = StObject.set(x, "NetworkInterfacePermissionIds", js.undefined)
     
-    inline def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = StObject.set(x, "NetworkInterfacePermissionIds", js.Array(value :_*))
+    inline def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = StObject.set(x, "NetworkInterfacePermissionIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

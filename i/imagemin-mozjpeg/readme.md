@@ -10,10 +10,10 @@ Imagemin plugin for mozjpeg
 | ------------------ | :-------------: |
 | Full name          | imagemin-mozjpeg |
 | Keywords           | compress, image, imageminplugin, img, jpeg, jpg, minify, mozjpeg, optimize |
-| # releases         | 3 |
-| # dependents       | 275 |
-| # downloads        | 26452670 |
-| # stars            | 16 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2494853.0 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-mozjpeg#readme)

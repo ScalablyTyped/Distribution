@@ -4,6 +4,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`2d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-flat`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric-uniform`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.days
 import typings.arcgisJsApi.arcgisJsApiStrings.hours
 import typings.arcgisJsApi.arcgisJsApiStrings.minutes
@@ -11,7 +14,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.months
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import typings.std.AbortSignal
-import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -23,14 +25,9 @@ trait sizeCreateAgeRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
     */
@@ -41,14 +38,14 @@ trait sizeCreateAgeRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
     */
-  var endTime: Date | String | Double
+  var endTime: js.Date | String | Double
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
@@ -104,7 +101,7 @@ trait sizeCreateAgeRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
     */
-  var startTime: Date | String | Double
+  var startTime: js.Date | String | Double
   
   /**
     * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
@@ -116,9 +113,20 @@ trait sizeCreateAgeRendererParams
   /**
     * The type of symbol to generate.
     *
+    * @default 2d
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
+  
+  /**
+    * Sets the size stops based on meaningful data values.
+    *
+    * @default high-to-low
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+    */
+  var theme: js.UndefOr[`high-to-low` | above | below] = js.undefined
   
   /**
     * The time unit used to calculate the difference between `endTime` and `startTime`.
@@ -138,11 +146,11 @@ object sizeCreateAgeRendererParams {
   
   inline def apply(
     constructor: js.Function,
-    endTime: Date | String | Double,
+    endTime: js.Date | String | Double,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
-    startTime: Date | String | Double,
+    startTime: js.Date | String | Double,
     view: View
   ): sizeCreateAgeRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
@@ -151,17 +159,13 @@ object sizeCreateAgeRendererParams {
   
   extension [Self <: sizeCreateAgeRendererParams](x: Self) {
     
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
-    
     inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: sizeCreateAgeRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
@@ -191,7 +195,7 @@ object sizeCreateAgeRendererParams {
     
     inline def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
     
-    inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
@@ -200,6 +204,10 @@ object sizeCreateAgeRendererParams {
     inline def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    
+    inline def setTheme(value: `high-to-low` | above | below): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

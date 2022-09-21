@@ -18,13 +18,13 @@ trait XPath extends StObject {
   
   val Map: XmlMap = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Repeating: Boolean = js.native
   
   def SetValue(Map: XmlMap, XPath: String): Unit = js.native
-  def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: js.Any): Unit = js.native
-  def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: js.Any, Repeating: Boolean): Unit = js.native
+  def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: Any): Unit = js.native
+  def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: Any, Repeating: Boolean): Unit = js.native
   def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: Unit, Repeating: Boolean): Unit = js.native
   
   val Value: String = js.native

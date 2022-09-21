@@ -21,11 +21,11 @@ object armManagerMod {
       */
     @JSImport("msportalfx-mock/lib/src/ArmProxy/armManager", "ArmManager.Manager")
     @js.native
-    class Manager () extends StObject {
+    open class Manager () extends StObject {
       
-      /* private */ var data: js.Any = js.native
+      /* private */ var data: Any = js.native
       
-      /* private */ var events: js.Any = js.native
+      /* private */ var events: Any = js.native
       
       /**
         * Gets a subscription based on id from the mock data.
@@ -110,7 +110,7 @@ object armManagerMod {
         * @param data The mock data.
         * @return A promise that is resolved when the data is initialized.
         */
-      def initializeMockData(data: MockData): Promise[js.Any] = js.native
+      def initializeMockData(data: MockData): Promise[Any] = js.native
       
       /**
         * Publishes a subscription event.
@@ -143,13 +143,13 @@ object armManagerMod {
         
         inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
         
-        inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+        inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
         
         inline def setSubscriptions(value: js.Array[typings.msportalfxMock.mockModelMod.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
         
         inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
         
-        inline def setSubscriptionsVarargs(value: typings.msportalfxMock.mockModelMod.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+        inline def setSubscriptionsVarargs(value: typings.msportalfxMock.mockModelMod.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
       }
     }
   }

@@ -36,7 +36,7 @@ object GatedCheckInTrigger {
     
     inline def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value*))
     
     inline def setRunContinuousIntegration(value: Boolean): Self = StObject.set(x, "runContinuousIntegration", value.asInstanceOf[js.Any])
     

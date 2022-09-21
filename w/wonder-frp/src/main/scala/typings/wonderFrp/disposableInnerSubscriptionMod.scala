@@ -12,15 +12,15 @@ object disposableInnerSubscriptionMod {
   
   @JSImport("wonder-frp/dist/es2015/Disposable/InnerSubscription", "InnerSubscription")
   @js.native
-  class InnerSubscription protected ()
+  open class InnerSubscription protected ()
     extends StObject
        with IDisposable {
     def this(subject: GeneratorSubject, observer: Observer) = this()
     def this(subject: Subject, observer: Observer) = this()
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _subject: js.Any = js.native
+    /* private */ var _subject: Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native

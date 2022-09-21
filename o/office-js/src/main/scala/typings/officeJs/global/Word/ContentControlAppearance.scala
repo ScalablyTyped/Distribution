@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * ContentControl appearance.
   *
-  * ContentControl appearance
+  * @remarks
+  * [Api set: WordApi 1.1]
   *
-  * [Api set: WordApi]
+  * Content control appearance options are bounding box, tags, or hidden.
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native

@@ -18,6 +18,13 @@ trait VisibleContentElements
   var attachments: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether to display any [ExpressionContent](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html) elements.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#VisibleContentElements)
+    */
+  var expression: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates whether to display any [FieldsContent](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html) elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#VisibleContentElements)
@@ -54,6 +61,10 @@ object VisibleContentElements {
     inline def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    
+    inline def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     inline def setFields(value: Boolean): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

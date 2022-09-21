@@ -27,11 +27,11 @@ object anon {
       
       inline def setHoles(value: js.Array[Double]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
       
-      inline def setHolesVarargs(value: Double*): Self = StObject.set(x, "holes", js.Array(value :_*))
+      inline def setHolesVarargs(value: Double*): Self = StObject.set(x, "holes", js.Array(value*))
       
       inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
 }

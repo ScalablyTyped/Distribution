@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/kms", "KeyManagementServiceClient")
 @js.native
-class KeyManagementServiceClient ()
+open class KeyManagementServiceClient ()
   extends typings.googleCloudKms.mod.v1.KeyManagementServiceClient {
   def this(options: ConfigurationObject) = this()
 }

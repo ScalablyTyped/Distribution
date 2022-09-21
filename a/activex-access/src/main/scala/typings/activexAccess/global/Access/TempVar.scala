@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.TempVar")
 @js.native
-/* private */ class TempVar ()
+/* private */ open class TempVar ()
   extends StObject
      with typings.activexAccess.Access.TempVar {
   

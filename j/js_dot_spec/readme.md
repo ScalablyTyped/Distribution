@@ -10,10 +10,10 @@ clojure.spec for Javascript
 | ------------------ | :-------------: |
 | Full name          | js.spec |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 14463 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1134.0 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/prayerslayer/js.spec#readme)

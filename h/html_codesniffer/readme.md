@@ -10,10 +10,10 @@ HTML_CodeSniffer is a client-side JavaScript that checks a HTML document or sour
 | ------------------ | :-------------: |
 | Full name          | html_codesniffer |
 | Keywords           | htmlcs |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 1740018 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 590048.6666666666 |
+| # stars            | 1058.0 |
 
 ## Links
 - [Homepage](http://squizlabs.github.io/HTML_CodeSniffer/)

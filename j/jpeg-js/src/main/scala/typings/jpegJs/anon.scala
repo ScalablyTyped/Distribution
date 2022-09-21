@@ -2,8 +2,8 @@ package typings.jpegJs
 
 import typings.jpegJs.jpegJsBooleans.`false`
 import typings.jpegJs.jpegJsBooleans.`true`
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.jpegJs.mod.BufferLike
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ object anon {
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -140,12 +140,46 @@ object anon {
     }
   }
   
+  /* Inlined jpeg-js.jpeg-js.RawImageData<jpeg-js.jpeg-js.BufferLike> & {  comments :std.Array<string> | undefined} */
+  trait RawImageDataBufferLikecom extends StObject {
+    
+    var comments: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var data: BufferLike
+    
+    var height: Double
+    
+    var width: Double
+  }
+  object RawImageDataBufferLikecom {
+    
+    inline def apply(data: BufferLike, height: Double, width: Double): RawImageDataBufferLikecom = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RawImageDataBufferLikecom]
+    }
+    
+    extension [Self <: RawImageDataBufferLikecom](x: Self) {
+      
+      inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      
+      inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
+      
+      inline def setData(value: BufferLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined jpeg-js.jpeg-js.UintArrRet & {  comments :std.Array<string> | undefined} */
   trait UintArrRetcommentsArrayst extends StObject {
     
     var comments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var data: Uint8Array
+    var data: js.typedarray.Uint8Array
     
     var height: Double
     
@@ -153,7 +187,7 @@ object anon {
   }
   object UintArrRetcommentsArrayst {
     
-    inline def apply(data: Uint8Array, height: Double, width: Double): UintArrRetcommentsArrayst = {
+    inline def apply(data: js.typedarray.Uint8Array, height: Double, width: Double): UintArrRetcommentsArrayst = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[UintArrRetcommentsArrayst]
     }
@@ -164,9 +198,9 @@ object anon {
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

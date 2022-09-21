@@ -5,7 +5,7 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.levelup.mod.LevelUp
 import typings.merklePatriciaTree.merklePatriciaTreeStrings.del
 import typings.merklePatriciaTree.merklePatriciaTreeStrings.put
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +17,16 @@ object dbMod {
   /**
     * Initialize a DB instance. If `leveldb` is not provided, DB
     * defaults to an [in-memory store](https://github.com/Level/memdown).
-    * @param {Object} [leveldb] - An abstract-leveldown compliant store
+    * @param leveldb - An abstract-leveldown compliant store
     */
-  class DB () extends StObject {
-    def this(leveldb: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]) = this()
+  open class DB () extends StObject {
+    def this(leveldb: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]]) = this()
     
-    var _leveldb: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]] = js.native
+    var _leveldb: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]] = js.native
     
     /**
       * Performs a batch operation on db.
-      * @param {Array} opStack A stack of levelup operations
-      * @returns {Promise}
+      * @param opStack A stack of levelup operations
       */
     def batch(opStack: js.Array[BatchDBOp]): js.Promise[Unit] = js.native
     
@@ -39,23 +38,21 @@ object dbMod {
     
     /**
       * Removes a raw value in the underlying leveldb.
-      * @param {Buffer} key
-      * @returns {Promise}
+      * @param keys
       */
     def del(key: Buffer): js.Promise[Unit] = js.native
     
     /**
       * Retrieves a raw value from leveldb.
-      * @param {Buffer} key
+      * @param key
       * @returns A Promise that resolves to `Buffer` if a value is found or `null` if no value is found.
       */
     def get(key: Buffer): js.Promise[Buffer | Null] = js.native
     
     /**
       * Writes a value directly to leveldb.
-      * @param {Buffer} key The key as a `Buffer`
-      * @param {Buffer} value The value to be stored
-      * @returns {Promise}
+      * @param key The key as a `Buffer`
+      * @param value The value to be stored
       */
     def put(key: Buffer, `val`: Buffer): js.Promise[Unit] = js.native
   }

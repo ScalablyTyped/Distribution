@@ -40,7 +40,7 @@ object vdomMod {
       *
       * @returns a promise that resolves when the rendering is done.
       */
-    /* private */ var renderDOM: js.Any = js.native
+    /* private */ var renderDOM: Any = js.native
     
     var renderPromise: js.UndefOr[js.Promise[Unit]] = js.native
   }
@@ -60,8 +60,7 @@ object vdomMod {
   
   @JSImport("@jupyterlab/apputils/lib/vdom", "UseSignal")
   @js.native
-  class UseSignal[SENDER, ARGS] protected ()
-    extends Component[IUseSignalProps[SENDER, ARGS], IUseSignalState[SENDER, ARGS], js.Any] {
+  open class UseSignal[SENDER, ARGS] protected () extends Component[IUseSignalProps[SENDER, ARGS], IUseSignalState[SENDER, ARGS], Any] {
     def this(props: IUseSignalProps[SENDER, ARGS]) = this()
     
     @JSName("componentDidMount")
@@ -70,16 +69,16 @@ object vdomMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MUseSignal(): Unit = js.native
     
-    /* private */ var slot: js.Any = js.native
+    /* private */ var slot: Any = js.native
   }
   
   @JSImport("@jupyterlab/apputils/lib/vdom", "VDomModel")
   @js.native
-  class VDomModel ()
+  open class VDomModel ()
     extends StObject
        with IModel {
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -129,9 +128,9 @@ object vdomMod {
       */
     def this(model: T | Unit) = this()
     
-    /* private */ var _model: js.Any = js.native
+    /* private */ var _model: Any = js.native
     
-    /* private */ var _modelChanged: js.Any = js.native
+    /* private */ var _modelChanged: Any = js.native
     
     /**
       * Get the current model.
@@ -180,7 +179,7 @@ object vdomMod {
   trait IUseSignalProps[SENDER, ARGS] extends StObject {
     
     /**
-      * Function mapping the last signal value or inital values to an element to render.
+      * Function mapping the last signal value or initial values to an element to render.
       *
       * Note: returns `React.ReactNode` as per
       * https://github.com/sw-yx/react-typescript-cheatsheet#higher-order-componentsrender-props

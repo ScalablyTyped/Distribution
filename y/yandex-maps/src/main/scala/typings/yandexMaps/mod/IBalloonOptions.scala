@@ -12,13 +12,17 @@ trait IBalloonOptions extends StObject {
   
   var autoPanDuration: js.UndefOr[Double] = js.undefined
   
-  var autoPanMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
+  var autoPanMargin: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   var autoPanUseMapMargin: js.UndefOr[Boolean] = js.undefined
   
   var closeButton: js.UndefOr[Boolean] = js.undefined
   
+  var closeTimeout: js.UndefOr[Double] = js.undefined
+  
   var contentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
+  
+  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   
   var layout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
@@ -31,6 +35,8 @@ trait IBalloonOptions extends StObject {
   var minWidth: js.UndefOr[Double] = js.undefined
   
   var offset: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var openTimeout: js.UndefOr[Double] = js.undefined
   
   var pane: js.UndefOr[String] = js.undefined
   
@@ -45,6 +51,8 @@ trait IBalloonOptions extends StObject {
   var shadowLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
   var shadowOffset: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var zIndex: js.UndefOr[String] = js.undefined
 }
 object IBalloonOptions {
   
@@ -65,11 +73,11 @@ object IBalloonOptions {
     
     inline def setAutoPanDurationUndefined: Self = StObject.set(x, "autoPanDuration", js.undefined)
     
-    inline def setAutoPanMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "autoPanMargin", value.asInstanceOf[js.Any])
+    inline def setAutoPanMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "autoPanMargin", value.asInstanceOf[js.Any])
     
     inline def setAutoPanMarginUndefined: Self = StObject.set(x, "autoPanMargin", js.undefined)
     
-    inline def setAutoPanMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "autoPanMargin", js.Array(value :_*))
+    inline def setAutoPanMarginVarargs(value: Double*): Self = StObject.set(x, "autoPanMargin", js.Array(value*))
     
     inline def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
     
@@ -81,9 +89,17 @@ object IBalloonOptions {
     
     inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
+    inline def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
+    
     inline def setContentLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "contentLayout", value.asInstanceOf[js.Any])
     
     inline def setContentLayoutUndefined: Self = StObject.set(x, "contentLayout", js.undefined)
+    
+    inline def setInteractivityModel(value: InteractivityModelKey): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
+    
+    inline def setInteractivityModelUndefined: Self = StObject.set(x, "interactivityModel", js.undefined)
     
     inline def setLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
@@ -109,7 +125,11 @@ object IBalloonOptions {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
+    
+    inline def setOpenTimeout(value: Double): Self = StObject.set(x, "openTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setOpenTimeoutUndefined: Self = StObject.set(x, "openTimeout", js.undefined)
     
     inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
@@ -137,8 +157,12 @@ object IBalloonOptions {
     
     inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
-    inline def setShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "shadowOffset", js.Array(value :_*))
+    inline def setShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "shadowOffset", js.Array(value*))
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

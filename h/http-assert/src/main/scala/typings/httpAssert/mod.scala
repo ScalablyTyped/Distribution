@@ -1,21 +1,22 @@
 package typings.httpAssert
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Double, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Double, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(value: js.Any, status: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: Any): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Double): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Double, msg: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Double, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Double, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Double, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Unit, msg: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Unit, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Unit, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def apply(value: Any, status: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
   
   @JSImport("http-assert", JSImport.Namespace)
   @js.native
@@ -55,11 +56,11 @@ object mod {
     * @param opts custom properties to attach to the error object
     */
   type Assert = js.Function5[
-    /* a */ js.Any, 
-    /* b */ js.Any, 
+    /* a */ Any, 
+    /* b */ Any, 
     /* status */ js.UndefOr[Double], 
     /* msg */ js.UndefOr[String], 
-    /* opts */ js.UndefOr[js.Object], 
+    /* opts */ js.UndefOr[Record[String, Any]], 
     Unit
   ]
   
@@ -69,11 +70,11 @@ object mod {
     * @param opts custom properties to attach to the error object
     */
   type AssertEqual = js.Function5[
-    /* a */ js.Any, 
-    /* b */ js.Any, 
+    /* a */ Any, 
+    /* b */ Any, 
     /* status */ js.UndefOr[Double], 
     /* msg */ js.UndefOr[String], 
-    /* opts */ js.UndefOr[js.Object], 
+    /* opts */ js.UndefOr[Record[String, Any]], 
     Unit
   ]
   
@@ -83,10 +84,10 @@ object mod {
     * @param opts custom properties to attach to the error object
     */
   type AssertOK = js.Function4[
-    /* a */ js.Any, 
+    /* a */ Any, 
     /* status */ js.UndefOr[Double], 
     /* msg */ js.UndefOr[String], 
-    /* opts */ js.UndefOr[js.Object], 
-    Unit
+    /* opts */ js.UndefOr[Record[String, Any]], 
+    /* asserts a */ Boolean
   ]
 }

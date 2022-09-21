@@ -10,11 +10,11 @@ trait IsValid extends StObject {
   
   var parse: CertsIdx
   
-  var signerInfos: js.Array[js.Any]
+  var signerInfos: js.Array[Any]
 }
 object IsValid {
   
-  inline def apply(isValid: Boolean, parse: CertsIdx, signerInfos: js.Array[js.Any]): IsValid = {
+  inline def apply(isValid: Boolean, parse: CertsIdx, signerInfos: js.Array[Any]): IsValid = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsValid]
   }
@@ -25,8 +25,8 @@ object IsValid {
     
     inline def setParse(value: CertsIdx): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    inline def setSignerInfos(value: js.Array[js.Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
+    inline def setSignerInfos(value: js.Array[Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
     
-    inline def setSignerInfosVarargs(value: js.Any*): Self = StObject.set(x, "signerInfos", js.Array(value :_*))
+    inline def setSignerInfosVarargs(value: Any*): Self = StObject.set(x, "signerInfos", js.Array(value*))
   }
 }

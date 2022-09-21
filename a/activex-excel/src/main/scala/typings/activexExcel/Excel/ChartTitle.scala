@@ -9,7 +9,7 @@ trait ChartTitle extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   val Border: typings.activexExcel.Excel.Border = js.native
   
@@ -22,7 +22,7 @@ trait ChartTitle extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   /* private */ @JSName("Excel.ChartTitle_typekey")
   var ExcelDotChartTitle_typekey: ChartTitle = js.native
@@ -53,15 +53,15 @@ trait ChartTitle extends StObject {
   
   val Name: String = js.native
   
-  var Orientation: js.Any = js.native
+  var Orientation: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlChartElementPosition = js.native
   
   var ReadingOrder: Double = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   

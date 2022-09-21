@@ -1,13 +1,12 @@
 package typings.std
 
-import typings.std.stdStrings.anyfunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebAssembly {
   
-  trait CompileError extends StObject
+  type CompileError = js.Error
   
   /* Rewritten from type alias, can be one of: 
     - js.Function
@@ -23,25 +22,28 @@ object WebAssembly {
     extends StObject
        with _ExportValue {
     
-    var value: js.Any
+    /* standard dom */
+    var value: Any
   }
   object Global {
     
-    inline def apply(value: js.Any): Global = {
+    inline def apply(value: Any): Global = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Global]
     }
     
     extension [Self <: Global](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait GlobalDescriptor extends StObject {
     
+    /* standard dom */
     var mutable: js.UndefOr[scala.Boolean] = js.undefined
     
+    /* standard dom */
     var value: ValueType
   }
   object GlobalDescriptor {
@@ -85,6 +87,7 @@ object WebAssembly {
   
   trait Instance extends StObject {
     
+    /* standard dom */
     val exports: Exports
   }
   object Instance {
@@ -100,26 +103,28 @@ object WebAssembly {
     }
   }
   
-  trait LinkError extends StObject
+  type LinkError = js.Error
   
   trait Memory
     extends StObject
        with _ExportValue {
     
-    val buffer: ArrayBuffer
+    /* standard dom */
+    val buffer: js.typedarray.ArrayBuffer
     
+    /* standard dom */
     def grow(delta: Double): Double
   }
   object Memory {
     
-    inline def apply(buffer: ArrayBuffer, grow: Double => Double): Memory = {
+    inline def apply(buffer: js.typedarray.ArrayBuffer, grow: Double => Double): Memory = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], grow = js.Any.fromFunction1(grow))
       __obj.asInstanceOf[Memory]
     }
     
     extension [Self <: Memory](x: Self) {
       
-      inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setGrow(value: Double => Double): Self = StObject.set(x, "grow", js.Any.fromFunction1(value))
     }
@@ -127,9 +132,14 @@ object WebAssembly {
   
   trait MemoryDescriptor extends StObject {
     
+    /* standard dom */
     var initial: Double
     
+    /* standard dom */
     var maximum: js.UndefOr[Double] = js.undefined
+    
+    /* standard dom */
+    var shared: js.UndefOr[scala.Boolean] = js.undefined
   }
   object MemoryDescriptor {
     
@@ -145,6 +155,10 @@ object WebAssembly {
       inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
       inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+      
+      inline def setShared(value: scala.Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+      
+      inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     }
   }
   
@@ -152,8 +166,10 @@ object WebAssembly {
   
   trait ModuleExportDescriptor extends StObject {
     
+    /* standard dom */
     var kind: ImportExportKind
     
+    /* standard dom */
     var name: java.lang.String
   }
   object ModuleExportDescriptor {
@@ -173,10 +189,13 @@ object WebAssembly {
   
   trait ModuleImportDescriptor extends StObject {
     
+    /* standard dom */
     var kind: ImportExportKind
     
+    /* standard dom */
     var module: java.lang.String
     
+    /* standard dom */
     var name: java.lang.String
   }
   object ModuleImportDescriptor {
@@ -198,29 +217,37 @@ object WebAssembly {
   
   type ModuleImports = Record[java.lang.String, ImportValue]
   
-  trait RuntimeError extends StObject
+  type RuntimeError = js.Error
   
   @js.native
   trait Table
     extends StObject
        with _ExportValue {
     
-    def get(index: Double): js.Function | Null = js.native
+    /* standard dom */
+    def get(index: Double): Any = js.native
     
+    /* standard dom */
     def grow(delta: Double): Double = js.native
+    def grow(delta: Double, value: Any): Double = js.native
     
+    /* standard dom */
     val length: Double = js.native
     
+    /* standard dom */
     def set(index: Double): Unit = js.native
-    def set(index: Double, value: js.Function): Unit = js.native
+    def set(index: Double, value: Any): Unit = js.native
   }
   
   trait TableDescriptor extends StObject {
     
+    /* standard dom */
     var element: TableKind
     
+    /* standard dom */
     var initial: Double
     
+    /* standard dom */
     var maximum: js.UndefOr[Double] = js.undefined
   }
   object TableDescriptor {
@@ -242,16 +269,33 @@ object WebAssembly {
     }
   }
   
-  type TableKind = anyfunc
+  /* Rewritten from type alias, can be one of: 
+    - typings.std.stdStrings.anyfunc
+    - typings.std.stdStrings.externref
+  */
+  trait TableKind extends StObject
+  object TableKind {
+    
+    inline def anyfunc: typings.std.stdStrings.anyfunc = "anyfunc".asInstanceOf[typings.std.stdStrings.anyfunc]
+    
+    inline def externref: typings.std.stdStrings.externref = "externref".asInstanceOf[typings.std.stdStrings.externref]
+  }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.std.stdStrings.anyfunc
+    - typings.std.stdStrings.externref
     - typings.std.stdStrings.f32
     - typings.std.stdStrings.f64
     - typings.std.stdStrings.i32
     - typings.std.stdStrings.i64
+    - typings.std.stdStrings.v128
   */
   trait ValueType extends StObject
   object ValueType {
+    
+    inline def anyfunc: typings.std.stdStrings.anyfunc = "anyfunc".asInstanceOf[typings.std.stdStrings.anyfunc]
+    
+    inline def externref: typings.std.stdStrings.externref = "externref".asInstanceOf[typings.std.stdStrings.externref]
     
     inline def f32: typings.std.stdStrings.f32 = "f32".asInstanceOf[typings.std.stdStrings.f32]
     
@@ -260,12 +304,16 @@ object WebAssembly {
     inline def i32: typings.std.stdStrings.i32 = "i32".asInstanceOf[typings.std.stdStrings.i32]
     
     inline def i64: typings.std.stdStrings.i64 = "i64".asInstanceOf[typings.std.stdStrings.i64]
+    
+    inline def v128: typings.std.stdStrings.v128 = "v128".asInstanceOf[typings.std.stdStrings.v128]
   }
   
   trait WebAssemblyInstantiatedSource extends StObject {
     
+    /* standard dom */
     var instance: Instance
     
+    /* standard dom */
     var module: Module
   }
   object WebAssemblyInstantiatedSource {

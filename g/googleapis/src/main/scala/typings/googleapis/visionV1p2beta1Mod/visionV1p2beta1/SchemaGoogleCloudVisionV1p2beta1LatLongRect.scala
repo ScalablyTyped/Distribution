@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rectangle determined by min and max `LatLng` pairs.
-  */
 trait SchemaGoogleCloudVisionV1p2beta1LatLongRect extends StObject {
   
   /**

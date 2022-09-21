@@ -14,7 +14,7 @@ object tagsMod {
   
   @JSImport("gitlab/dist/types/core/services/Tags", "Tags")
   @js.native
-  class Tags () extends BaseService {
+  open class Tags () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

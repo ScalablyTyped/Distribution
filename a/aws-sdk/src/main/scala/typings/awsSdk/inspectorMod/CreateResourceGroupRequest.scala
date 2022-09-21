@@ -22,6 +22,6 @@ object CreateResourceGroupRequest {
     
     inline def setResourceGroupTags(value: ResourceGroupTags): Self = StObject.set(x, "resourceGroupTags", value.asInstanceOf[js.Any])
     
-    inline def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "resourceGroupTags", js.Array(value :_*))
+    inline def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "resourceGroupTags", js.Array(value*))
   }
 }

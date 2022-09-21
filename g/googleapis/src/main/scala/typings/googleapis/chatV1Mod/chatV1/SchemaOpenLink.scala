@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A link that opens a new window.
-  */
 trait SchemaOpenLink extends StObject {
   
   /**
     * The URL to open.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOpenLink {
   
@@ -24,6 +21,8 @@ object SchemaOpenLink {
   extension [Self <: SchemaOpenLink](x: Self) {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

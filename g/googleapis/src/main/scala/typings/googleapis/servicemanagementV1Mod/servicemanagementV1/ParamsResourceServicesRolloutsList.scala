@@ -1,9 +1,5 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +9,12 @@ trait ParamsResourceServicesRolloutsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Use `filter` to return subset of rollouts. The following filters are
-    * supported:   -- To limit the results to only those in
-    * [status](google.api.servicemanagement.v1.RolloutStatus) 'SUCCESS', use
-    * filter='status=SUCCESS'   -- To limit the results to those in
-    * [status](google.api.servicemanagement.v1.RolloutStatus) 'CANCELLED' or
-    * 'FAILED', use filter='status=CANCELLED OR status=FAILED'
+    * Required. Use `filter` to return subset of rollouts. The following filters are supported: -- By status. For example, `filter='status=SUCCESS'` -- By strategy. For example, `filter='strategy=TrafficPercentStrategy'`
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The max number of items to include in the response list. Page size is 50
-    * if not specified. Maximum value is 100.
+    * The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -39,9 +24,7 @@ trait ParamsResourceServicesRolloutsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the service.  See the
-    * [overview](/service-management/overview) for naming requirements.  For
-    * example: `example.googleapis.com`.
+    * Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
     */
   var serviceName: js.UndefOr[String] = js.undefined
 }
@@ -53,10 +36,6 @@ object ParamsResourceServicesRolloutsList {
   }
   
   extension [Self <: ParamsResourceServicesRolloutsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

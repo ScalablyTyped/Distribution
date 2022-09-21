@@ -14,9 +14,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromCSG(csg: typings.openjscad.CSG, defaultColor: js.Any): BoundLen = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCSG")(csg.asInstanceOf[js.Any], defaultColor.asInstanceOf[js.Any])).asInstanceOf[BoundLen]
+    inline def fromCSG(csg: typings.openjscad.CSG, defaultColor: Any): BoundLen = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCSG")(csg.asInstanceOf[js.Any], defaultColor.asInstanceOf[js.Any])).asInstanceOf[BoundLen]
     
-    inline def getGeometryVertex(geometry: js.Any, vertex_position: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryVertex")(geometry.asInstanceOf[js.Any], vertex_position.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getGeometryVertex(geometry: Any, vertex_position: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryVertex")(geometry.asInstanceOf[js.Any], vertex_position.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /*

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines an object that represents a Uniform Resource Identifier (URI) value and parses it into components. The Uri object is used by many other Windows Runtime APIs that are not necessarily confined to web browser scenarios. */
 @JSGlobal("Windows.Foundation.Uri")
 @js.native
-class Uri protected ()
+open class Uri protected ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Uri {
   /**

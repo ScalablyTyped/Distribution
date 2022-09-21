@@ -1,5 +1,6 @@
 package typings.grunt.grunt
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   * Common interfaces
   */
-type IFlag = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+type IFlag = StringDictionary[Boolean]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Color3Gradient")
 @js.native
-class Color3Gradient protected ()
+open class Color3Gradient protected ()
   extends typings.babylonjs.legacyMod.Color3Gradient {
   /**
     * Creates a new color3 gradient

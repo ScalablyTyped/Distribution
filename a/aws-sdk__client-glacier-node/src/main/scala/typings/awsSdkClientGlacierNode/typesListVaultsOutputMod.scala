@@ -48,7 +48,7 @@ object typesListVaultsOutputMod {
       
       inline def setVaultListUndefined: Self = StObject.set(x, "VaultList", js.undefined)
       
-      inline def setVaultListVarargs(value: UnmarshalledDescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value :_*))
+      inline def setVaultListVarargs(value: UnmarshalledDescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value*))
     }
   }
 }

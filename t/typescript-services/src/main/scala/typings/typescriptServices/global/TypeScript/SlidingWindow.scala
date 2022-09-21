@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.SlidingWindow")
 @js.native
-class SlidingWindow protected ()
+open class SlidingWindow protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SlidingWindow {
-  def this(source: ISlidingWindowSource, window: js.Array[js.Any], defaultValue: js.Any) = this()
-  def this(source: ISlidingWindowSource, window: js.Array[js.Any], defaultValue: js.Any, sourceLength: Double) = this()
+  def this(source: ISlidingWindowSource, window: js.Array[Any], defaultValue: Any) = this()
+  def this(source: ISlidingWindowSource, window: js.Array[Any], defaultValue: Any, sourceLength: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _pinCount: js.Any = js.native
+  var _pinCount: Any = js.native
   
   /* CompleteClass */
   override def absoluteIndex(): Double = js.native
   
   /* private */ /* CompleteClass */
-  override def addMoreItemsToWindow(argument: js.Any): js.Any = js.native
+  override def addMoreItemsToWindow(argument: Any): Any = js.native
   
   /* CompleteClass */
-  override def currentItem(argument: js.Any): js.Any = js.native
+  override def currentItem(argument: Any): Any = js.native
   
   /* CompleteClass */
   var currentRelativeItemIndex: Double = js.native
   
   /* private */ /* CompleteClass */
-  var defaultValue: js.Any = js.native
+  var defaultValue: Any = js.native
   
   /* CompleteClass */
   override def disgardAllItemsFromCurrentIndexOnwards(): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var firstPinnedAbsoluteIndex: js.Any = js.native
+  var firstPinnedAbsoluteIndex: Any = js.native
   
   /* CompleteClass */
   override def getAndPinAbsoluteIndex(): Double = js.native
@@ -47,7 +47,7 @@ class SlidingWindow protected ()
   override def moveToNextItem(): Unit = js.native
   
   /* CompleteClass */
-  override def peekItemN(n: Double): js.Any = js.native
+  override def peekItemN(n: Double): Any = js.native
   
   /* CompleteClass */
   override def pinCount(): Double = js.native
@@ -62,19 +62,19 @@ class SlidingWindow protected ()
   override def setAbsoluteIndex(absoluteIndex: Double): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var source: js.Any = js.native
+  var source: Any = js.native
   
   /* private */ /* CompleteClass */
-  var sourceLength: js.Any = js.native
+  var sourceLength: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def tryShiftOrGrowWindow(): js.Any = js.native
+  override def tryShiftOrGrowWindow(): Any = js.native
   
   /* CompleteClass */
-  var window: js.Array[js.Any] = js.native
+  var window: js.Array[Any] = js.native
   
   /* private */ /* CompleteClass */
-  override def windowAbsoluteEndIndex(): js.Any = js.native
+  override def windowAbsoluteEndIndex(): Any = js.native
   
   /* CompleteClass */
   var windowAbsoluteStartIndex: Double = js.native

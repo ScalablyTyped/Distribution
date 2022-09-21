@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hooksMod {
   
-  type CreateHook = js.Function2[/* emptyVNode */ VNode_, /* vNode */ VNode_, js.Any]
+  type CreateHook = js.Function2[/* emptyVNode */ VNode_, /* vNode */ VNode_, Any]
   
-  type DestroyHook = js.Function1[/* vNode */ VNode_, js.Any]
+  type DestroyHook = js.Function1[/* vNode */ VNode_, Any]
   
   trait Hooks extends StObject {
     
@@ -42,61 +42,61 @@ object hooksMod {
     
     extension [Self <: Hooks](x: Self) {
       
-      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      inline def setDestroy(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* vNode */ VNode_ => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setInit(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* vNode */ VNode_ => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setInsert(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: /* vNode */ VNode_ => Any): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
       inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      inline def setPost(value: () => js.Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPostpatch(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "postpatch", js.Any.fromFunction2(value))
+      inline def setPostpatch(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "postpatch", js.Any.fromFunction2(value))
       
       inline def setPostpatchUndefined: Self = StObject.set(x, "postpatch", js.undefined)
       
-      inline def setPre(value: () => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPre(value: () => Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      inline def setPrepatch(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "prepatch", js.Any.fromFunction2(value))
+      inline def setPrepatch(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "prepatch", js.Any.fromFunction2(value))
       
       inline def setPrepatchUndefined: Self = StObject.set(x, "prepatch", js.undefined)
       
-      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
-  type InitHook = js.Function1[/* vNode */ VNode_, js.Any]
+  type InitHook = js.Function1[/* vNode */ VNode_, Any]
   
-  type InsertHook = js.Function1[/* vNode */ VNode_, js.Any]
+  type InsertHook = js.Function1[/* vNode */ VNode_, Any]
   
-  type PostHook = js.Function0[js.Any]
+  type PostHook = js.Function0[Any]
   
-  type PostPatchHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, js.Any]
+  type PostPatchHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, Any]
   
-  type PreHook = js.Function0[js.Any]
+  type PreHook = js.Function0[Any]
   
-  type PrePatchHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, js.Any]
+  type PrePatchHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, Any]
   
-  type RemoveHook = js.Function2[/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit], js.Any]
+  type RemoveHook = js.Function2[/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit], Any]
   
-  type UpdateHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, js.Any]
+  type UpdateHook = js.Function2[/* oldVNode */ VNode_, /* vNode */ VNode_, Any]
 }

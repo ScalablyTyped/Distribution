@@ -37,6 +37,6 @@ object Extend {
     
     inline def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value*))
   }
 }

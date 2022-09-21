@@ -14,7 +14,7 @@ trait DashboardSummary extends StObject {
   /**
     * The time that this dashboard was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Dashboard ID.
@@ -24,12 +24,12 @@ trait DashboardSummary extends StObject {
   /**
     * The last time that this dashboard was published.
     */
-  var LastPublishedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastPublishedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time that this dashboard was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A display name for the dashboard.
@@ -54,7 +54,7 @@ object DashboardSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -62,11 +62,11 @@ object DashboardSummary {
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     
-    inline def setLastPublishedTime(value: Timestamp_): Self = StObject.set(x, "LastPublishedTime", value.asInstanceOf[js.Any])
+    inline def setLastPublishedTime(value: js.Date): Self = StObject.set(x, "LastPublishedTime", value.asInstanceOf[js.Any])
     
     inline def setLastPublishedTimeUndefined: Self = StObject.set(x, "LastPublishedTime", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

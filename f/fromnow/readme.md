@@ -10,10 +10,10 @@ A tiny (339B) utility for human-readable time differences between now and past o
 | ------------------ | :-------------: |
 | Full name          | fromnow |
 | Keywords           | ago, date, time, parse, format, moment, from now, fromnow |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 27917 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14056.666666666666 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/fromnow#readme)

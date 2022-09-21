@@ -6,47 +6,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Node")
 @js.native
-class Node protected () extends AbstractNode {
-  def this(branch: js.Any, `object`: js.Any) = this()
+open class Node protected () extends AbstractNode {
+  def this(branch: Any, `object`: Any) = this()
   
   var _type: String = js.native
   
-  def associate(targetNodeId: String, `object`: js.Any, undirected: Boolean): this.type = js.native
-  def associate(targetNodeId: Node, `object`: js.Any, undirected: Boolean): this.type = js.native
+  def associate(targetNodeId: String, `object`: Any, undirected: Boolean): this.type = js.native
+  def associate(targetNodeId: Node, `object`: Any, undirected: Boolean): this.type = js.native
   
-  def associateOf(sourceNode: Node, `object`: js.Any, undirected: Boolean): this.type = js.native
+  def associateOf(sourceNode: Node, `object`: Any, undirected: Boolean): this.type = js.native
   
-  def associations(config: js.Any, pagination: js.Any): NodeMap = js.native
+  def associations(config: Any, pagination: Any): NodeMap = js.native
   
-  def checkLocked(callback: js.Any): js.Any = js.native
+  def checkLocked(callback: Any): Any = js.native
   
-  def childOf(sourceNode: js.Any): js.Any = js.native
+  def childOf(sourceNode: Any): Any = js.native
   
-  def createChild(`object`: js.Any): js.Any = js.native
+  def createChild(`object`: Any): Any = js.native
   
-  def createTranslation(edition: js.Any, locale: js.Any, `object`: js.Any): js.Any = js.native
+  def createTranslation(edition: Any, locale: Any, `object`: Any): Any = js.native
   
-  def editions(callback: js.Any): js.Any = js.native
+  def editions(callback: Any): Any = js.native
   
-  def find(config: js.Any, pagination: js.Any): NodeMap = js.native
+  def find(config: Any, pagination: Any): NodeMap = js.native
   
-  def findRelatives(config: js.Any, associationConfig: js.Any, pagination: js.Any): NodeMap = js.native
+  def findRelatives(config: Any, associationConfig: Any, pagination: Any): NodeMap = js.native
   
-  def incomingAssociations(`type`: js.Any, pagination: js.Any): NodeMap = js.native
+  def incomingAssociations(`type`: Any, pagination: Any): NodeMap = js.native
   
-  def listAuthorities(principal: js.Any): js.Any = js.native
+  def listAuthorities(principal: Any): Any = js.native
   
-  def listChildren(pagination: js.Any): NodeMap = js.native
+  def listChildren(pagination: Any): NodeMap = js.native
   
-  def listRelatives(config: js.Any, pagination: js.Any): NodeMap = js.native
+  def listRelatives(config: Any, pagination: Any): NodeMap = js.native
   
-  def listTranslations(edition: js.Any, pagination: js.Any): js.Any = js.native
+  def listTranslations(edition: Any, pagination: Any): Any = js.native
   
-  def listVersions(pagination: js.Any, excludeSystem: js.Any): js.Any = js.native
+  def listVersions(pagination: Any, excludeSystem: Any): Any = js.native
   
-  def loadTree(config: js.Any, callback: js.Any): this.type = js.native
+  def loadTree(config: Any, callback: Any): this.type = js.native
   
-  def locales(edition: js.Any, callback: js.Any): js.Any = js.native
+  def locales(edition: Any, callback: Any): Any = js.native
   
   def lock(): this.type = js.native
   
@@ -55,24 +55,24 @@ class Node protected () extends AbstractNode {
   def moveToFolder(targetFolder: String): this.type = js.native
   def moveToFolder(targetFolder: Node): this.type = js.native
   
-  def outgoingAssociations(`type`: js.Any, pagination: js.Any): NodeMap = js.native
+  def outgoingAssociations(`type`: Any, pagination: Any): NodeMap = js.native
   
-  def patch(patches: js.Any): js.Any = js.native
+  def patch(patches: Any): Any = js.native
   
-  def queryRelatives(query: js.Any, config: js.Any, pagination: js.Any): NodeMap = js.native
+  def queryRelatives(query: Any, config: Any, pagination: Any): NodeMap = js.native
   
-  def readTranslation(args: js.Any*): js.Any = js.native
+  def readTranslation(args: Any*): Any = js.native
   
-  def readVersion(changesetId: js.Any, params: js.Any): js.Any = js.native
+  def readVersion(changesetId: Any, params: Any): Any = js.native
   
-  def resolvePath(rootNodeId: String, callback: js.Any): js.Any = js.native
+  def resolvePath(rootNodeId: String, callback: Any): Any = js.native
   
-  def restoreVersion(changesetId: js.Any): js.Any = js.native
+  def restoreVersion(changesetId: Any): Any = js.native
   
-  def traverse(config: js.Any): TraversalResults = js.native
+  def traverse(config: Any): TraversalResults = js.native
   
-  def unassociate(targetNodeId: String, `type`: js.Any, undirected: js.Any): this.type = js.native
-  def unassociate(targetNodeId: Node, `type`: js.Any, undirected: js.Any): this.type = js.native
+  def unassociate(targetNodeId: String, `type`: Any, undirected: Any): this.type = js.native
+  def unassociate(targetNodeId: Node, `type`: Any, undirected: Any): this.type = js.native
   
   def unlock(): this.type = js.native
   
@@ -85,17 +85,17 @@ object Node {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

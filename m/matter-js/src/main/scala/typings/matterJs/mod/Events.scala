@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Events")
 @js.native
-class Events () extends StObject
+open class Events () extends StObject
 /* static members */
 object Events {
   
@@ -40,9 +40,9 @@ object Events {
     * @param eventName
     * @param callback
     */
-  inline def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(obj.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off(obj: Any, eventName: String, callback: js.Function1[/* e */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(obj.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(obj: Any, name: String, callback: js.Function1[/* e */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a call to `Composite.add` is made, after objects have been added.
@@ -238,7 +238,7 @@ object Events {
     * Fired when a body ends sleeping (where `this` is the body).
     *
     * @event sleepEnd
-    * @this {body} The body that has ended sleeping
+    * @this {Body} The body that has ended sleeping
     * @param {} event An event object
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
@@ -249,7 +249,7 @@ object Events {
     * Fired when a body starts sleeping (where `this` is the body).
     *
     * @event sleepStart
-    * @this {body} The body that has started sleeping
+    * @this {Body} The body that has started sleeping
     * @param {} event An event object
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
@@ -274,6 +274,6 @@ object Events {
     * @param eventNames
     * @param event
     */
-  inline def trigger(`object`: js.Any, eventNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(`object`: Any, eventNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(`object`: Any, eventNames: String, event: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

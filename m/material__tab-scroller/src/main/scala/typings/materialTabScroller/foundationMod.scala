@@ -13,14 +13,47 @@ object foundationMod {
   
   @JSImport("@material/tab-scroller/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTabScrollerFoundation {
+  open class default () extends MDCTabScrollerFoundation {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
   }
   
   @JSImport("@material/tab-scroller/foundation", "MDCTabScrollerFoundation")
   @js.native
-  class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
+  open class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
+    
+    /**
+      * Animates the tab scrolling
+      * @param animation The animation to apply
+      */
+    /* private */ var animate: Any = js.native
+    
+    /**
+      * @return translateX value from a CSS matrix transform function string.
+      */
+    /* private */ var calculateCurrentTranslateX: Any = js.native
+    
+    /* private */ var calculateScrollEdges: Any = js.native
+    
+    /**
+      * Calculates a safe scroll value that is > 0 and < the max scroll value
+      * @param scrollX The distance to scroll
+      */
+    /* private */ var clampScrollValue: Any = js.native
+    
+    /* private */ var computeCurrentScrollPositionRTL: Any = js.native
+    
+    /**
+      * Gets the current scroll position during animation
+      */
+    /* private */ var getAnimatingScrollPosition: Any = js.native
+    
+    /**
+      * Internal method to compute the increment scroll operation values.
+      * @param scrollX The desired scroll position increment
+      * @return MDCTabScrollerAnimation with the sanitized values for performing the scroll operation.
+      */
+    /* private */ var getIncrementScrollOperation: Any = js.native
     
     /**
       * @return Browser-specific {@link MDCTabScrollerRTL} instance.
@@ -55,8 +88,43 @@ object foundationMod {
     def incrementScrollImmediate(scrollXIncrement: Double): Unit = js.native
     
     /**
+      * Controls whether we should handle the transitionend and interaction events during the animation.
+      */
+    /* private */ var isAnimating: Any = js.native
+    
+    /* private */ var isRTL: Any = js.native
+    
+    /**
+      * Determines the RTL Scroller to use
+      */
+    /* private */ var rtlScrollerFactory: Any = js.native
+    
+    /**
+      * The MDCTabScrollerRTL instance varies per browser and allows us to encapsulate the peculiar browser behavior
+      * of RTL scrolling in it's own class.
+      */
+    /* private */ var rtlScrollerInstance: Any = js.native
+    
+    /**
       * Scrolls to the given scrollX value
       */
     def scrollTo(scrollX: Double): Unit = js.native
+    
+    /**
+      * Internal scroll method
+      * @param scrollX The new scroll position
+      */
+    /* private */ var scrollToImpl: Any = js.native
+    
+    /**
+      * Internal RTL scroll method
+      * @param scrollX The new scroll position
+      */
+    /* private */ var scrollToImplRTL: Any = js.native
+    
+    /**
+      * Stops scroll animation
+      */
+    /* private */ var stopScrollAnimation: Any = js.native
   }
 }

@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.phaser.anon.Version
   - java.lang.String
 */
-type Dependency = typings.phaser.MatterJS._Dependency | java.lang.String
+type Dependency = _Dependency | String

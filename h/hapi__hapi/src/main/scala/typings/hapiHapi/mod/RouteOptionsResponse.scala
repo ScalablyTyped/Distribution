@@ -6,8 +6,7 @@ import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.Dictionary
 import typings.joi.mod.ValidationOptions
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +47,7 @@ trait RouteOptionsResponse extends StObject {
   
   /**
     * @default none.
-    * [joi](http://github.com/hapijs/joi) options object pass to the validation function. Useful to set global options such as stripUnknown or abortEarly (the complete list is available here). If a
+    * [joi](https://github.com/hapijs/joi) options object pass to the validation function. Useful to set global options such as stripUnknown or abortEarly (the complete list is available here). If a
     * custom validation function is defined via schema or status then options can an arbitrary object that will be passed to this function as the second argument.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponseoptions)
     */
@@ -112,7 +111,7 @@ object RouteOptionsResponse {
     inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     inline def setFailActionFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
@@ -136,7 +135,7 @@ object RouteOptionsResponse {
     inline def setSchema(value: RouteOptionsResponseSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "schema", js.Any.fromFunction2(value))
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)

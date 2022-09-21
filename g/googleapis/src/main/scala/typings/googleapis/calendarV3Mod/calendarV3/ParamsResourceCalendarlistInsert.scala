@@ -1,9 +1,5 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceCalendarlistInsert
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Whether to use the foregroundColor and backgroundColor fields to write
-    * the calendar colors (RGB). If this feature is used, the index-based
-    * colorId field will be set to the best matching option automatically.
-    * Optional. The default is False.
+    * Whether to use the foregroundColor and backgroundColor fields to write the calendar colors (RGB). If this feature is used, the index-based colorId field will be set to the best matching option automatically. Optional. The default is False.
     */
   var colorRgbFormat: js.UndefOr[Boolean] = js.undefined
   
@@ -38,10 +26,6 @@ object ParamsResourceCalendarlistInsert {
   }
   
   extension [Self <: ParamsResourceCalendarlistInsert](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
     

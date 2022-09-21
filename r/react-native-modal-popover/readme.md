@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-modal-popover
 
-Typings are for version 0.0.12
+Typings are for version 2.1.0
 
 ## Library description:
 Pure JS popover component for react-native
@@ -10,10 +10,10 @@ Pure JS popover component for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-modal-popover |
 | Keywords           | react, react-native, popover, modal |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 167060 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 18347.0 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/doomsower/react-native-modal-popover#readme)

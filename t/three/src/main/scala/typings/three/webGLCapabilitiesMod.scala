@@ -9,8 +9,8 @@ object webGLCapabilitiesMod {
   
   @JSImport("three/src/renderers/webgl/WebGLCapabilities", "WebGLCapabilities")
   @js.native
-  class WebGLCapabilities protected () extends StObject {
-    def this(gl: WebGLRenderingContext, extensions: js.Any, parameters: WebGLCapabilitiesParameters) = this()
+  open class WebGLCapabilities protected () extends StObject {
+    def this(gl: WebGLRenderingContext, extensions: Any, parameters: WebGLCapabilitiesParameters) = this()
     
     var floatFragmentTextures: Boolean = js.native
     

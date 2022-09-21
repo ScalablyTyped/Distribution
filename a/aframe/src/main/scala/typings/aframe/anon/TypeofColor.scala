@@ -13,7 +13,7 @@ trait TypeofColor
      with Instantiable0[Color] {
   
   /**
-  	 * List of X11 color names.
-  	 */
+    * List of X11 color names.
+    */
   var NAMES: Record[String, Double] = js.native
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param direction1 the min limit of the emission direction (up vector by default)
   * @param direction2 the max limit of the emission direction (up vector by default)
   */
-class CylinderDirectedParticleEmitter ()
+open class CylinderDirectedParticleEmitter ()
   extends typings.babylonjs.legacyMod.CylinderDirectedParticleEmitter {
   def this(radius: Double) = this()
   def this(radius: Double, height: Double) = this()

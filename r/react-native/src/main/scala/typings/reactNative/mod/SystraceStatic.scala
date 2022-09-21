@@ -18,29 +18,29 @@ trait SystraceStatic extends StObject {
     * occur on another thread or out of the current stack frame, eg await
     * the returned cookie variable should be used as input into the endAsyncEvent call to end the profile
     **/
-  def beginAsyncEvent(): js.Any = js.native
-  def beginAsyncEvent(profileName: js.Any): js.Any = js.native
+  def beginAsyncEvent(): Any = js.native
+  def beginAsyncEvent(profileName: Any): Any = js.native
   
   /**
     * beginEvent/endEvent for starting and then ending a profile within the same call stack frame
     **/
   def beginEvent(): Unit = js.native
-  def beginEvent(profileName: js.Any): Unit = js.native
-  def beginEvent(profileName: js.Any, args: js.Any): Unit = js.native
-  def beginEvent(profileName: Unit, args: js.Any): Unit = js.native
+  def beginEvent(profileName: Any): Unit = js.native
+  def beginEvent(profileName: Any, args: Any): Unit = js.native
+  def beginEvent(profileName: Unit, args: Any): Unit = js.native
   
   /**
     * counterEvent registers the value to the profileName on the systrace timeline
     **/
   def counterEvent(): Unit = js.native
-  def counterEvent(profileName: js.Any): Unit = js.native
-  def counterEvent(profileName: js.Any, value: js.Any): Unit = js.native
-  def counterEvent(profileName: Unit, value: js.Any): Unit = js.native
+  def counterEvent(profileName: Any): Unit = js.native
+  def counterEvent(profileName: Any, value: Any): Unit = js.native
+  def counterEvent(profileName: Unit, value: Any): Unit = js.native
   
   def endAsyncEvent(): Unit = js.native
-  def endAsyncEvent(profileName: js.Any): Unit = js.native
-  def endAsyncEvent(profileName: js.Any, cookie: js.Any): Unit = js.native
-  def endAsyncEvent(profileName: Unit, cookie: js.Any): Unit = js.native
+  def endAsyncEvent(profileName: Any): Unit = js.native
+  def endAsyncEvent(profileName: Any, cookie: Any): Unit = js.native
+  def endAsyncEvent(profileName: Unit, cookie: Any): Unit = js.native
   
   def endEvent(): Unit = js.native
   
@@ -58,7 +58,7 @@ trait SystraceStatic extends StObject {
     *
     * @param methodNames Map from method names to method display names.
     */
-  def measureMethods(`object`: js.Any, objectName: String, methodNames: js.Array[String]): Unit = js.native
+  def measureMethods(`object`: Any, objectName: String, methodNames: js.Array[String]): Unit = js.native
   
   def setEnabled(enabled: Boolean): Unit = js.native
   

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new InventoryApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class InventoryApi () extends StObject {
+open class InventoryApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**
@@ -18,14 +18,14 @@ class InventoryApi () extends StObject {
     * On success: returns the current calculated counts for all objects referenced in the request.
     * On failure: returns a list of related errors.
     */
-  def batchChangeInventory(args: js.Any*): js.Promise[BatchChangeInventoryResponse] = js.native
+  def batchChangeInventory(args: Any*): js.Promise[BatchChangeInventoryResponse] = js.native
   
   /**
     * Returns historical physical counts and adjustments based on the provided filter criteria.
     * Results are paginated and sorted in ascending order according their `occurred_at` timestamp (oldest first).
     * BatchRetrieveInventoryChanges is a catch-all query endpoint for queries that cannot be handled by other, simpler endpoints.
     */
-  def batchRetrieveInventoryChanges(args: js.Any*): js.Promise[BatchRetrieveInventoryChangesResponse] = js.native
+  def batchRetrieveInventoryChanges(args: Any*): js.Promise[BatchRetrieveInventoryChangesResponse] = js.native
   
   /**
     * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.
@@ -34,12 +34,12 @@ class InventoryApi () extends StObject {
     * the most recent change) are returned. This allows clients to perform a "sync" operation, for example in response to
     * receiving a Webhook notification.
     */
-  def batchRetrieveInventoryCounts(args: js.Any*): js.Promise[BatchRetrieveInventoryCountsResponse] = js.native
+  def batchRetrieveInventoryCounts(args: Any*): js.Promise[BatchRetrieveInventoryCountsResponse] = js.native
   
   /**
     * Returns the [InventoryAdjustment](#type-inventoryadjustment) object with the provided `adjustment_id`.
     */
-  def retrieveInventoryAdjustment(args: js.Any*): js.Promise[RetrieveInventoryAdjustmentResponse] = js.native
+  def retrieveInventoryAdjustment(args: Any*): js.Promise[RetrieveInventoryAdjustmentResponse] = js.native
   
   /**
     * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the
@@ -48,16 +48,16 @@ class InventoryApi () extends StObject {
     * This endpoint is useful when displaying recent changes for a specific item. For more sophisticated queries,
     * use a batch endpoint.
     */
-  def retrieveInventoryChanges(args: js.Any*): js.Promise[RetrieveInventoryChangesResponse] = js.native
+  def retrieveInventoryChanges(args: Any*): js.Promise[RetrieveInventoryChangesResponse] = js.native
   
   /**
     * Retrieves the current calculated stock count for a given [CatalogObject](#type-catalogobject) at a given set
     * of [Location](#type-location)s. Responses are paginated and unsorted. For more sophisticated queries, use a batch endpoint.
     */
-  def retrieveInventoryCount(args: js.Any*): js.Promise[RetrieveInventoryCountResponse] = js.native
+  def retrieveInventoryCount(args: Any*): js.Promise[RetrieveInventoryCountResponse] = js.native
   
   /**
     * Returns the [InventoryPhysicalCount](#type-inventoryphysicalcount) object with the provided `physical_count_id`.
     */
-  def retrieveInventoryPhysicalCount(args: js.Any*): js.Promise[RetrieveInventoryPhysicalCountResponse] = js.native
+  def retrieveInventoryPhysicalCount(args: Any*): js.Promise[RetrieveInventoryPhysicalCountResponse] = js.native
 }

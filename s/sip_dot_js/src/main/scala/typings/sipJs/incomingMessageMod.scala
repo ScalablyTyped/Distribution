@@ -12,7 +12,7 @@ object incomingMessageMod {
   
   @JSImport("sip.js/lib/core/messages/incoming-message", "IncomingMessage")
   @js.native
-  class IncomingMessage () extends StObject {
+  open class IncomingMessage () extends StObject {
     
     /**
       * Insert a header of the given name and value into the last position of the
@@ -66,8 +66,8 @@ object incomingMessageMod {
       * @returns Parsed header object, undefined if the
       *   header is not present or in case of a parsing error.
       */
-    def parseHeader(name: String): js.UndefOr[js.Any] = js.native
-    def parseHeader(name: String, idx: Double): js.UndefOr[js.Any] = js.native
+    def parseHeader(name: String): js.UndefOr[Any] = js.native
+    def parseHeader(name: String, idx: Double): js.UndefOr[Any] = js.native
     
     var referTo: js.UndefOr[String] = js.native
     
@@ -81,8 +81,8 @@ object incomingMessageMod {
       * @example
       * message.s('via',3).port
       */
-    def s(name: String): js.UndefOr[js.Any] = js.native
-    def s(name: String, idx: Double): js.UndefOr[js.Any] = js.native
+    def s(name: String): js.UndefOr[Any] = js.native
+    def s(name: String, idx: Double): js.UndefOr[Any] = js.native
     
     /**
       * Replace the value of the given header by the value.

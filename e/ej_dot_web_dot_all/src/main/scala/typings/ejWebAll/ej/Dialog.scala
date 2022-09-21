@@ -12,24 +12,24 @@ trait Dialog
   /** Closes the dialog widget dynamically.
     * @returns {any}
     */
-  def close(): js.Any = js.native
+  def close(): Any = js.native
   
   /** Collapses the content area when it is expanded.
     * @returns {any}
     */
-  def collapse(): js.Any = js.native
+  def collapse(): Any = js.native
   
   var defaults: Model = js.native
   
   /** Expands the content area when it is collapsed.
     * @returns {any}
     */
-  def expand(): js.Any = js.native
+  def expand(): Any = js.native
   
   /** Sets the focus on the Dialog widget.
     * @returns {any}
     */
-  def focus(): js.Any = js.native
+  def focus(): Any = js.native
   
   /** Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
     * @returns {boolean}
@@ -39,12 +39,12 @@ trait Dialog
   /** Maximizes the Dialog widget.
     * @returns {any}
     */
-  def maximize(): js.Any = js.native
+  def maximize(): Any = js.native
   
   /** Minimizes the Dialog widget.
     * @returns {any}
     */
-  def minimize(): js.Any = js.native
+  def minimize(): Any = js.native
   
   @JSName("model")
   var model_Dialog: Model = js.native
@@ -52,12 +52,12 @@ trait Dialog
   /** Opens the Dialog widget.
     * @returns {any}
     */
-  def open(): js.Any = js.native
+  def open(): Any = js.native
   
   /** Pins the dialog in its current position.
     * @returns {any}
     */
-  def pin(): js.Any = js.native
+  def pin(): Any = js.native
   
   /** Refreshes the dialog content dynamically.
     * @returns {void}
@@ -67,24 +67,24 @@ trait Dialog
   /** Restores the dialog.
     * @returns {any}
     */
-  def restore(): js.Any = js.native
+  def restore(): Any = js.native
   
   /** Sets the content for the Dialog widget dynamically.
     * @param {string} The content for the dialog widget. It accepts both string and HTML string.
     * @returns {any}
     */
-  def setContent(content: String): js.Any = js.native
+  def setContent(content: String): Any = js.native
   
   /** Sets the title for the Dialog widget.
     * @param {string} The title for the dialog widget.
     * @returns {any}
     */
-  def setTitle(Title: String): js.Any = js.native
+  def setTitle(Title: String): Any = js.native
   
   /** Unpins the Dialog widget.
     * @returns {any}
     */
-  def unpin(): js.Any = js.native
+  def unpin(): Any = js.native
 }
 object Dialog {
   
@@ -234,7 +234,7 @@ object Dialog {
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
@@ -265,7 +265,7 @@ object Dialog {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -340,7 +340,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns true when the dialog activated by user interaction otherwise returns false
       */
@@ -367,7 +367,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -430,7 +430,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns true when the Dialog activated by user interaction otherwise returns false
       */
@@ -457,7 +457,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -532,7 +532,7 @@ object Dialog {
     
     /** Content type
       */
-    var contentType: js.UndefOr[js.Any] = js.undefined
+    var contentType: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -555,7 +555,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContentType(value: js.Any): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: Any): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
@@ -655,7 +655,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -678,7 +678,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -700,7 +700,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -723,7 +723,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -745,7 +745,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -768,7 +768,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -861,7 +861,7 @@ object Dialog {
     /** Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set
       * â€œenableAnimationâ€ as true. It contains the following sub properties.
       */
-    var animation: js.UndefOr[js.Any] = js.undefined
+    var animation: js.UndefOr[Any] = js.undefined
     
     /** To Enable or disable the scrolling for background element of the modal dialog. This will work only with modal dialog.
       */
@@ -975,7 +975,7 @@ object Dialog {
     /** Specifies the HTML Attributes of the Dialog.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enable or disables responsive behavior.
       */
@@ -1007,7 +1007,7 @@ object Dialog {
     
     /** Displays the Dialog widget at the given X and Y position.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** Triggered while the dialog is resized.
       */
@@ -1047,7 +1047,7 @@ object Dialog {
     
     /** Add or configure the tooltip text for actionButtons in the dialog header.
       */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like â€œautoâ€, â€œ100%â€, â€œ100pxâ€ as string type and
       * â€œ100â€, â€œ500â€ as integer type.
@@ -1075,7 +1075,7 @@ object Dialog {
       
       inline def setActionButtonsUndefined: Self = StObject.set(x, "actionButtons", js.undefined)
       
-      inline def setActionButtonsVarargs(value: String*): Self = StObject.set(x, "actionButtons", js.Array(value :_*))
+      inline def setActionButtonsVarargs(value: String*): Self = StObject.set(x, "actionButtons", js.Array(value*))
       
       inline def setAjaxError(value: /* e */ AjaxErrorEventArgs => Unit): Self = StObject.set(x, "ajaxError", js.Any.fromFunction1(value))
       
@@ -1097,7 +1097,7 @@ object Dialog {
       
       inline def setAllowKeyboardNavigationUndefined: Self = StObject.set(x, "allowKeyboardNavigation", js.undefined)
       
-      inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -1205,7 +1205,7 @@ object Dialog {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -1237,7 +1237,7 @@ object Dialog {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -1277,7 +1277,7 @@ object Dialog {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
@@ -1336,7 +1336,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -1359,7 +1359,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -1381,7 +1381,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -1404,7 +1404,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -1426,7 +1426,7 @@ object Dialog {
     
     /** Current event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Instance of the dialog model object.
       */
@@ -1449,7 +1449,7 @@ object Dialog {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       

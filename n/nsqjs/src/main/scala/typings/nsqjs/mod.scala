@@ -1,6 +1,6 @@
 package typings.nsqjs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.nsqjs.nsqjsStrings.backoff
 import typings.nsqjs.nsqjsStrings.closed
@@ -12,7 +12,6 @@ import typings.nsqjs.nsqjsStrings.nsqd_closed
 import typings.nsqjs.nsqjsStrings.nsqd_connected
 import typings.nsqjs.nsqjsStrings.ready
 import typings.nsqjs.nsqjsStrings.respond
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod {
   
   @JSImport("nsqjs", "Message")
   @js.native
-  class Message protected () extends EventEmitter {
+  open class Message protected () extends EventEmitter {
     def this(rawMessage: Buffer, requeueDelay: Double, msgTimeout: Double, maxMsgTimeout: Double) = this()
     
     var attempts: Double = js.native
@@ -34,7 +33,7 @@ object mod {
     
     val id: String = js.native
     
-    def json(): js.Any = js.native
+    def json(): Any = js.native
     
     @JSName("on")
     def on_backoff(event: backoff, listener: js.Function0[Unit]): this.type = js.native
@@ -90,7 +89,7 @@ object mod {
   
   @JSImport("nsqjs", "Reader")
   @js.native
-  class Reader protected () extends EventEmitter {
+  open class Reader protected () extends EventEmitter {
     def this(topic: String, channel: String) = this()
     def this(topic: String, channel: String, options: ReaderConnectionConfigOptions) = this()
     
@@ -104,20 +103,14 @@ object mod {
     
     def isPaused(): Boolean = js.native
     
+    def on(event: ready | not_ready, listener: js.Function0[Unit]): this.type = js.native
+    def on(event: message | discard, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
+    def on(
+      event: nsqd_connected | nsqd_closed,
+      listener: js.Function2[/* host */ String, /* port */ Double, Unit]
+    ): this.type = js.native
     @JSName("on")
-    def on_discard(event: discard, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_message(event: message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-    @JSName("on")
-    def on_notready(event: not_ready, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_nsqdclosed(event: nsqd_closed, listener: js.Function2[/* host */ String, /* port */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_nsqdconnected(event: nsqd_connected, listener: js.Function2[/* host */ String, /* port */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     def pause(): Unit = js.native
     
@@ -170,7 +163,7 @@ object mod {
   
   @JSImport("nsqjs", "Writer")
   @js.native
-  class Writer protected () extends EventEmitter {
+  open class Writer protected () extends EventEmitter {
     def this(nsqdHost: String, nsqdPort: Double) = this()
     def this(nsqdHost: String, nsqdPort: Double, options: ConnectionConfigOptions) = this()
     
@@ -183,53 +176,50 @@ object mod {
       topic: String,
       msgs: String,
       timeMs: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def deferPublish(topic: String, msgs: js.Array[Buffer | js.Object | String], timeMs: Double): Unit = js.native
     def deferPublish(
       topic: String,
       msgs: js.Array[Buffer | js.Object | String],
       timeMs: Double,
-      callback: js.Function1[js.UndefOr[Error], Unit]
+      callback: js.Function1[js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def deferPublish(topic: String, msgs: js.Object, timeMs: Double): Unit = js.native
     def deferPublish(
       topic: String,
       msgs: js.Object,
       timeMs: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def deferPublish(topic: String, msgs: Buffer, timeMs: Double): Unit = js.native
     def deferPublish(
       topic: String,
       msgs: Buffer,
       timeMs: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
     val nsqdHost: String = js.native
     
     val nsqdPort: Double = js.native
     
+    def on(event: ready | closed, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_closed(event: closed, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     def publish(topic: String, msgs: String): Unit = js.native
-    def publish(topic: String, msgs: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def publish(topic: String, msgs: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     def publish(topic: String, msgs: js.Array[Buffer | js.Object | String]): Unit = js.native
     def publish(
       topic: String,
       msgs: js.Array[Buffer | js.Object | String],
-      callback: js.Function1[js.UndefOr[Error], Unit]
+      callback: js.Function1[js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def publish(topic: String, msgs: js.Object): Unit = js.native
-    def publish(topic: String, msgs: js.Object, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def publish(topic: String, msgs: js.Object, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     def publish(topic: String, msgs: Buffer): Unit = js.native
-    def publish(topic: String, msgs: Buffer, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def publish(topic: String, msgs: Buffer, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   }
   /* static members */
   object Writer {
@@ -390,7 +380,7 @@ object mod {
       
       inline def setLookupdHTTPAddressesUndefined: Self = StObject.set(x, "lookupdHTTPAddresses", js.undefined)
       
-      inline def setLookupdHTTPAddressesVarargs(value: String*): Self = StObject.set(x, "lookupdHTTPAddresses", js.Array(value :_*))
+      inline def setLookupdHTTPAddressesVarargs(value: String*): Self = StObject.set(x, "lookupdHTTPAddresses", js.Array(value*))
       
       inline def setLookupdPollInterval(value: Double): Self = StObject.set(x, "lookupdPollInterval", value.asInstanceOf[js.Any])
       
@@ -420,7 +410,7 @@ object mod {
       
       inline def setNsqdTCPAddressesUndefined: Self = StObject.set(x, "nsqdTCPAddresses", js.undefined)
       
-      inline def setNsqdTCPAddressesVarargs(value: String*): Self = StObject.set(x, "nsqdTCPAddresses", js.Array(value :_*))
+      inline def setNsqdTCPAddressesVarargs(value: String*): Self = StObject.set(x, "nsqdTCPAddresses", js.Array(value*))
     }
   }
 }

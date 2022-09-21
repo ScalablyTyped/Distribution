@@ -10,15 +10,13 @@ Chai plugin for JSON Schema v4
 | ------------------ | :-------------: |
 | Full name          | chai-json-schema |
 | Keywords           | array, assert, assertion, browser, chai, chai-plugin, json, json-schema, objects, schema, test, testing |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 1185632 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 318038.3333333333 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](http://chaijs.com)
-- [Bugs](https://github.com/chaijs/chai-json-schema/issues)
-- [Repository](https://github.com/chaijs/chai-json-schema)
 - [Npm](https://www.npmjs.com/package/chai-json-schema)
     
 

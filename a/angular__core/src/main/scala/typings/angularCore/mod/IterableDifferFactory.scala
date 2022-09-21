@@ -10,5 +10,5 @@ trait IterableDifferFactory extends StObject {
   def create[V](): IterableDiffer[V] = js.native
   def create[V](trackByFn: TrackByFunction[V]): IterableDiffer[V] = js.native
   
-  def supports(objects: js.Any): Boolean = js.native
+  def supports(objects: Any): Boolean = js.native
 }

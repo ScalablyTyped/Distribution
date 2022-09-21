@@ -1,30 +1,25 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "BmpString")
 @js.native
-class BmpString () extends BaseBlock[LocalBmpStringValueBlock] {
-  def this(params: BmpStringParams) = this()
+open class BmpString ()
+  extends LocalBmpStringValueBlock
+     with _AsnType {
+  def this(hasParameters: BmpStringParams) = this()
+}
+object BmpString {
   
-  /**
-    * Function converting ArrayBuffer into ASN.1 internal string
-    * 
-    * @param {ArrayBuffer} inputBuffer ASN.1 BER encoded array
-    * 
-    * @memberOf BmpString
-    */
-  def fromBuffer(inputBuffer: ArrayBuffer): Unit = js.native
+  @JSImport("asn1js", "BmpString")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * Function converting JavaScript string into ASN.1 internal class
-    * 
-    * @param {string} inputString ASN.1 BER encoded array
-    * 
-    * @memberOf BmpString
-    */
-  def fromString(inputString: String): Unit = js.native
+  /* static member */
+  @JSImport("asn1js", "BmpString.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

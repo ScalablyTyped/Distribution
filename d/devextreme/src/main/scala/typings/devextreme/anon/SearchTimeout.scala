@@ -6,16 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchTimeout extends StObject {
   
+  /**
+    * Specifies whether searching is enabled in the header filter.
+    */
   var allowSearch: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the height of the popup menu containing filtering values.
+    */
   var height: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a delay in milliseconds between when a user finishes typing in the header filter&apos;s search panel, and when the search is executed.
+    */
   var searchTimeout: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether to show all field values or only those that satisfy the other applied filters.
+    */
   var showRelevantValues: js.UndefOr[Boolean] = js.undefined
   
-  var texts: js.UndefOr[Cancel] = js.undefined
+  /**
+    * Configures the texts of the popup menu&apos;s elements.
+    */
+  var texts: js.UndefOr[EmptyValue] = js.undefined
   
+  /**
+    * Specifies the width of the popup menu containing filtering values.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object SearchTimeout {
@@ -43,7 +61,7 @@ object SearchTimeout {
     
     inline def setShowRelevantValuesUndefined: Self = StObject.set(x, "showRelevantValues", js.undefined)
     
-    inline def setTexts(value: Cancel): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: EmptyValue): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     

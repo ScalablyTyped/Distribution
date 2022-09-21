@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileManager")
 @js.native
-/* private */ class FileManager ()
+/* private */ open class FileManager ()
   extends StObject
      with typings.scriptableIos.FileManager
 object FileManager {

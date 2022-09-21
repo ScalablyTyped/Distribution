@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new Thin Sprite
   */
-class ThinSprite ()
+open class ThinSprite ()
   extends StObject
      with typings.babylonjs.BABYLON.ThinSprite

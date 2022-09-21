@@ -22,7 +22,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def add(members: js.Any*): Double = js.native
+  def add(members: Any*): Double = js.native
   /**
     * 
     * @brief 将一个或多个 member 元素加入到集合 key 当中，已经存在于集合的 member 元素将被忽略
@@ -31,7 +31,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def add(members: js.Array[js.Any]): Double = js.native
+  def add(members: js.Array[Any]): Double = js.native
   
   /**
     * 
@@ -59,7 +59,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def members(): js.Array[js.Any] = js.native
+  def members(): js.Array[Any] = js.native
   
   /**
     * 
@@ -77,7 +77,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def randMember(): js.Any = js.native
+  def randMember(): Any = js.native
   /**
     * 
     * @brief 从集合中获取随机的若干元素
@@ -86,7 +86,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def randMember(count: Double): js.Any = js.native
+  def randMember(count: Double): Any = js.native
   
   /**
     * 
@@ -96,7 +96,7 @@ trait ClassRedisSet
     * 
     * 
     */
-  def remove(members: js.Any*): Double = js.native
+  def remove(members: Any*): Double = js.native
   /**
     * 
     * @brief 移除集合中的一个或多个 member 元素
@@ -105,5 +105,5 @@ trait ClassRedisSet
     * 
     * 
     */
-  def remove(members: js.Array[js.Any]): Double = js.native
+  def remove(members: js.Array[Any]): Double = js.native
 }

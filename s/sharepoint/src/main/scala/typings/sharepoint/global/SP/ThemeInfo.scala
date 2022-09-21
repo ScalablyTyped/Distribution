@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ThemeInfo")
 @js.native
-class ThemeInfo ()
+open class ThemeInfo ()
   extends StObject
      with typings.sharepoint.SP.ThemeInfo

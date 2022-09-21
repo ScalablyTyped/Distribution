@@ -1,7 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashsymbol
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkspaceSymbolParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkspaceSymbolRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -10,21 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WorkspaceSymbolRequest {
   
+  @JSImport("vscode-languageclient", "WorkspaceSymbolRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageclient", "WorkspaceSymbolRequest.method")
   @js.native
   val method: workspaceSlashsymbol = js.native
   
-  /** @deprecated Use WorkspaceSymbolRequest.type */
-  @JSImport("vscode-languageclient", "WorkspaceSymbolRequest.resultType")
-  @js.native
-  val resultType: typings.vscodeJsonrpc.mod.ProgressType[js.Array[typings.vscodeLanguageserverTypes.mod.SymbolInformation]] = js.native
-  
   @JSImport("vscode-languageclient", "WorkspaceSymbolRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     WorkspaceSymbolParams, 
-    js.Array[typings.vscodeLanguageserverTypes.mod.SymbolInformation] | Null, 
-    js.Array[typings.vscodeLanguageserverTypes.mod.SymbolInformation], 
+    (js.Array[
+      typings.vscodeLanguageserverTypes.mod.SymbolInformation | typings.vscodeLanguageserverTypes.mod.WorkspaceSymbol
+    ]) | Null, 
+    js.Array[
+      typings.vscodeLanguageserverTypes.mod.SymbolInformation | typings.vscodeLanguageserverTypes.mod.WorkspaceSymbol
+    ], 
     Unit, 
     WorkspaceSymbolRegistrationOptions
   ] = js.native

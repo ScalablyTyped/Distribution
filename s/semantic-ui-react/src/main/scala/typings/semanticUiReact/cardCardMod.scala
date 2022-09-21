@@ -6,12 +6,12 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.cardContentMod.CardContentProps
 import typings.semanticUiReact.cardDescriptionMod.CardDescriptionProps
 import typings.semanticUiReact.cardGroupMod.CardGroupProps
@@ -31,10 +31,9 @@ object cardCardMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/views/Card/Card", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CardProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CardProps, ComponentState, Any] {
     def this(props: CardProps) = this()
-    def this(props: CardProps, context: js.Any) = this()
+    def this(props: CardProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/views/Card/Card", JSImport.Default)
   @js.native
@@ -45,21 +44,21 @@ object cardCardMod extends Shortcut {
     extends StObject
        with ComponentClass[CardProps, ComponentState] {
     
-    var Content: StatelessComponent[CardContentProps] = js.native
+    var Content: FC[CardContentProps] = js.native
     
-    var Description: StatelessComponent[CardDescriptionProps] = js.native
+    var Description: FC[CardDescriptionProps] = js.native
     
-    var Group: StatelessComponent[CardGroupProps] = js.native
+    var Group: FC[CardGroupProps] = js.native
     
-    var Header: StatelessComponent[CardHeaderProps] = js.native
+    var Header: FC[CardHeaderProps] = js.native
     
-    var Meta: StatelessComponent[CardMetaProps] = js.native
+    var Meta: FC[CardMetaProps] = js.native
   }
   
   trait CardProps
     extends StObject
        with StrictCardProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CardProps {
     
     inline def apply(): CardProps = {
@@ -71,7 +70,7 @@ object cardCardMod extends Shortcut {
   trait StrictCardProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A Card can center itself inside its container. */
     var centered: js.UndefOr[Boolean] = js.undefined
@@ -139,7 +138,7 @@ object cardCardMod extends Shortcut {
     
     extension [Self <: StrictCardProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

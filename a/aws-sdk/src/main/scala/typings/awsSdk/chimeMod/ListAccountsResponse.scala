@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAccountsResponse extends StObject {
   
   /**
-    * The list of accounts.
+    * List of Amazon Chime accounts and account details.
     */
   var Accounts: js.UndefOr[AccountList] = js.undefined
   
   /**
-    * The account's user token.
+    * The token to use to retrieve the next page of results.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

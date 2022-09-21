@@ -36,25 +36,25 @@ object gpudetectorMod {
   
   @JSImport("wonder.js/dist/es2015/device/GPUDetector", "GPUDetector")
   @js.native
-  class GPUDetector () extends StObject {
+  open class GPUDetector () extends StObject {
     
     def detect(): Unit = js.native
     
-    var extensionCompressedTextureS3TC: js.Any = js.native
+    var extensionCompressedTextureS3TC: Any = js.native
     
     var extensionDepthTexture: Boolean = js.native
     
-    var extensionInstancedArrays: js.Any = js.native
+    var extensionInstancedArrays: Any = js.native
     
     var extensionStandardDerivatives: Boolean = js.native
     
-    var extensionTextureFilterAnisotropic: js.Any = js.native
+    var extensionTextureFilterAnisotropic: Any = js.native
     
     var extensionUintIndices: Boolean = js.native
     
-    var extensionVAO: js.Any = js.native
+    var extensionVAO: Any = js.native
     
-    val gl: js.Any = js.native
+    val gl: Any = js.native
     
     var maxAnisotropy: Double = js.native
     
@@ -75,6 +75,6 @@ object gpudetectorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

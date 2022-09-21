@@ -14,7 +14,7 @@ trait S3Retention extends StObject {
   /**
     * The date when the applied Object Lock retention will expire on all objects set by the Batch Operations job.
     */
-  var RetainUntilDate: js.UndefOr[TimeStamp] = js.undefined
+  var RetainUntilDate: js.UndefOr[js.Date] = js.undefined
 }
 object S3Retention {
   
@@ -29,7 +29,7 @@ object S3Retention {
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    inline def setRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setRetainUntilDate(value: js.Date): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
     
     inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
   }

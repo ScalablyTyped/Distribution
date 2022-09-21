@@ -34,12 +34,12 @@ object WidgetClassOptions {
     
     inline def setExtractTextAttributesUndefined: Self = StObject.set(x, "extractTextAttributes", js.undefined)
     
-    inline def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value :_*))
+    inline def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value*))
     
     inline def setOnlyInside(value: String | js.Array[String]): Self = StObject.set(x, "onlyInside", value.asInstanceOf[js.Any])
     
     inline def setOnlyInsideUndefined: Self = StObject.set(x, "onlyInside", js.undefined)
     
-    inline def setOnlyInsideVarargs(value: String*): Self = StObject.set(x, "onlyInside", js.Array(value :_*))
+    inline def setOnlyInsideVarargs(value: String*): Self = StObject.set(x, "onlyInside", js.Array(value*))
   }
 }

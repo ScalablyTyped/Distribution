@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertHeaderCommand")
 @js.native
-class InsertHeaderCommand ()
+open class InsertHeaderCommand ()
   extends StObject
      with typings.devexpressWeb.InsertHeaderCommand {
   

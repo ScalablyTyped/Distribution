@@ -12,8 +12,9 @@ trait HTMLFormControlsCollection
   
   /**
     * Returns the item with ID or name name from the collection.
-    * 
+    *
     * If there are multiple matching items, then a RadioNodeList object containing all those elements is returned.
     */
+  /* standard dom */
   def namedItem(name: java.lang.String): RadioNodeList | Element | Null = js.native
 }

@@ -24,7 +24,7 @@ object Data {
     
     inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

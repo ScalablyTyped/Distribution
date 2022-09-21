@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simple-statistics" : "6.1.1"
+      "simple-statistics" : "7.7.6"
     }
   ],
   "test-dependencies" : [
     {
-      "simple-statistics" : "6.1.1"
+      "simple-statistics" : "7.7.6"
     }
   ],
   "compile-devDependencies" : [

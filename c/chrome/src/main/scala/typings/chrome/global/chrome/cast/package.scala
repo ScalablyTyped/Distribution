@@ -1,74 +1,75 @@
 package typings.chrome.global.chrome.cast
 
+import typings.chrome.global.chrome.cast.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def VERSION: js.Array[scala.Double] = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[js.Array[scala.Double]]
-inline def VERSION_=(x: js.Array[scala.Double]): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+inline def VERSION: js.Array[Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[js.Array[Double]]
+inline def VERSION_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
 
 inline def addReceiverActionListener(
   listener: js.Function2[
   /* receiver */ typings.chrome.chrome.cast.Receiver, 
   /* receiverAction */ typings.chrome.chrome.cast.ReceiverAction, 
-  scala.Unit
+  Unit
 ]
-): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("addReceiverActionListener")(listener.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addReceiverActionListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def initialize(
   apiConfig: typings.chrome.chrome.cast.ApiConfig,
   successCallback: js.Function,
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit]
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(apiConfig.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(apiConfig.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def isAvailable: scala.Boolean = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].selectDynamic("isAvailable").asInstanceOf[scala.Boolean]
-inline def isAvailable_=(x: scala.Boolean): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].updateDynamic("isAvailable")(x.asInstanceOf[js.Any])
+inline def isAvailable: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("isAvailable").asInstanceOf[Boolean]
+inline def isAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isAvailable")(x.asInstanceOf[js.Any])
 
-inline def logMessage(message: java.lang.String): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("logMessage")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def logMessage(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def removeReceiverActionListener(
   listener: js.Function2[
   /* receiver */ typings.chrome.chrome.cast.Receiver, 
   /* receiverAction */ typings.chrome.chrome.cast.ReceiverAction, 
-  scala.Unit
+  Unit
 ]
-): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("removeReceiverActionListener")(listener.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeReceiverActionListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def requestSession(
-  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, scala.Unit],
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit]
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def requestSession(
-  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, scala.Unit],
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit],
-  sessionRequest: scala.Unit,
-  label: java.lang.String
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit],
+  sessionRequest: Unit,
+  label: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def requestSession(
-  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, scala.Unit],
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit],
+  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit],
   sessionRequest: typings.chrome.chrome.cast.SessionRequest
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def requestSession(
-  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, scala.Unit],
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit],
+  successCallback: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit],
   sessionRequest: typings.chrome.chrome.cast.SessionRequest,
-  label: java.lang.String
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  label: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSession")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], sessionRequest.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def requestSessionById(sessionId: java.lang.String): scala.Unit = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("requestSessionById")(sessionId.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def requestSessionById(sessionId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestSessionById")(sessionId.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def setCustomReceivers(
   receivers: js.Array[typings.chrome.chrome.cast.Receiver],
   successCallback: js.Function,
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit]
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("setCustomReceivers")(receivers.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomReceivers")(receivers.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def setReceiverDisplayStatus(
   receiver: typings.chrome.chrome.cast.Receiver,
   successCallback: js.Function,
-  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, scala.Unit]
-): scala.Unit = (typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("setReceiverDisplayStatus")(receiver.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setReceiverDisplayStatus")(receiver.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def unescape(escaped: java.lang.String): java.lang.String = typings.chrome.global.chrome.cast.^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(escaped.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def unescape(escaped: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(escaped.asInstanceOf[js.Any]).asInstanceOf[String]

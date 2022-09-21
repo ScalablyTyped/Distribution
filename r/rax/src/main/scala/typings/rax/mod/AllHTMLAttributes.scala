@@ -69,7 +69,7 @@ trait AllHTMLAttributes[T]
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var encType: js.UndefOr[String] = js.undefined
   
@@ -348,7 +348,7 @@ object AllHTMLAttributes {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -636,7 +636,7 @@ object AllHTMLAttributes {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

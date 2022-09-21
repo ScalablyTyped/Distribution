@@ -68,7 +68,7 @@ trait ChildrenVisibleMin extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.color
     */
-  var color: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var color: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * It indicates the range of tranparent rate (color alpha) for
@@ -99,7 +99,7 @@ trait ChildrenVisibleMin extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.colorAlpha
     */
-  var colorAlpha: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var colorAlpha: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Specify the rule according to which each node obtain color
@@ -413,13 +413,13 @@ object ChildrenVisibleMin {
     
     inline def setChildrenVisibleMinUndefined: Self = StObject.set(x, "childrenVisibleMin", js.undefined)
     
-    inline def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorAlpha(value: js.Array[js.Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
+    inline def setColorAlpha(value: js.Array[Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
     
     inline def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
     
-    inline def setColorAlphaVarargs(value: js.Any*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
+    inline def setColorAlphaVarargs(value: Any*): Self = StObject.set(x, "colorAlpha", js.Array(value*))
     
     inline def setColorMappingBy(value: String): Self = StObject.set(x, "colorMappingBy", value.asInstanceOf[js.Any])
     
@@ -431,7 +431,7 @@ object ChildrenVisibleMin {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Any*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setEmphasis(value: UpperLabel): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     

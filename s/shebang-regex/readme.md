@@ -1,7 +1,7 @@
 
 # Scala.js typings for shebang-regex
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Regular expression for matching a shebang line
@@ -10,10 +10,10 @@ Regular expression for matching a shebang line
 | ------------------ | :-------------: |
 | Full name          | shebang-regex |
 | Keywords           | regex, regexp, shebang, match, test, line |
-| # releases         | 2 |
-| # dependents       | 152 |
-| # downloads        | 1170888705 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9494044933333334E8 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/shebang-regex#readme)

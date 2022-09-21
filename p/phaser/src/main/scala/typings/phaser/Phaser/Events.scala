@@ -19,9 +19,9 @@ object Events {
       * @param context The context to invoke the listener with. Default this.
       */
     def addListener(event: String, fn: js.Function): this.type = js.native
-    def addListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
+    def addListener(event: String, fn: js.Function, context: Any): this.type = js.native
     def addListener(event: js.Symbol, fn: js.Function): this.type = js.native
-    def addListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+    def addListener(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
     
     /**
       * Removes all listeners.
@@ -33,8 +33,8 @@ object Events {
       * @param event The event name.
       * @param args Additional arguments that will be passed to the event handler.
       */
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
+    def emit(event: js.Symbol, args: Any*): Boolean = js.native
     
     /**
       * Return an array listing the events for which the emitter has registered listeners.
@@ -64,19 +64,19 @@ object Events {
       */
     def off(event: String): this.type = js.native
     def off(event: String, fn: js.Function): this.type = js.native
-    def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
-    def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: js.Function, context: Any): this.type = js.native
+    def off(event: String, fn: js.Function, context: Any, once: Boolean): this.type = js.native
     def off(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-    def off(event: String, fn: Unit, context: js.Any): this.type = js.native
-    def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: Any): this.type = js.native
+    def off(event: String, fn: Unit, context: Any, once: Boolean): this.type = js.native
     def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def off(event: js.Symbol): this.type = js.native
     def off(event: js.Symbol, fn: js.Function): this.type = js.native
-    def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-    def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
+    def off(event: js.Symbol, fn: js.Function, context: Any, once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-    def off(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
-    def off(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Any): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Any, once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     
     /**
@@ -86,9 +86,9 @@ object Events {
       * @param context The context to invoke the listener with. Default this.
       */
     def on(event: String, fn: js.Function): this.type = js.native
-    def on(event: String, fn: js.Function, context: js.Any): this.type = js.native
+    def on(event: String, fn: js.Function, context: Any): this.type = js.native
     def on(event: js.Symbol, fn: js.Function): this.type = js.native
-    def on(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+    def on(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
     
     /**
       * Add a one-time listener for a given event.
@@ -97,9 +97,9 @@ object Events {
       * @param context The context to invoke the listener with. Default this.
       */
     def once(event: String, fn: js.Function): this.type = js.native
-    def once(event: String, fn: js.Function, context: js.Any): this.type = js.native
+    def once(event: String, fn: js.Function, context: Any): this.type = js.native
     def once(event: js.Symbol, fn: js.Function): this.type = js.native
-    def once(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+    def once(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
     
     /**
       * Remove all listeners, or those of the specified event.
@@ -118,19 +118,19 @@ object Events {
       */
     def removeListener(event: String): this.type = js.native
     def removeListener(event: String, fn: js.Function): this.type = js.native
-    def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
-    def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: js.Function, context: Any): this.type = js.native
+    def removeListener(event: String, fn: js.Function, context: Any, once: Boolean): this.type = js.native
     def removeListener(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-    def removeListener(event: String, fn: Unit, context: js.Any): this.type = js.native
-    def removeListener(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: Any): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: Any, once: Boolean): this.type = js.native
     def removeListener(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
+    def removeListener(event: js.Symbol, fn: js.Function, context: Any, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-    def removeListener(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
-    def removeListener(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: Any): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: Any, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     
     /**

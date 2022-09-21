@@ -1,15 +1,15 @@
 package typings.merge2
 
 import typings.merge2.merge2Strings.queueDrain
-import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.PassThrough
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
+  inline def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Merge2Stream]
   /**
     * @summary        This function takes an arbitrary number of streams and returns a
     *                 Merge2Stream.
@@ -51,6 +51,7 @@ object mod {
       */
     def add(args: Streams*): Merge2Stream = js.native
     
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     /**
       * @summary    It will emit 'queueDrain' when all streams merged.
       *             If you set end === false in options, this event give you a notice that
@@ -63,6 +64,7 @@ object mod {
     @JSName("on")
     def on_queueDrain(event: queueDrain, listener: js.Function0[Unit]): this.type = js.native
     
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_queueDrain(event: queueDrain, listener: js.Function0[Unit]): this.type = js.native
   }
@@ -92,7 +94,7 @@ object mod {
     }
   }
   
-  type StreamType = ReadableStream | Merge2Stream
+  type StreamType = ReadableStream[Any] | Merge2Stream
   
   type Streams = StreamType | js.Array[StreamType]
 }

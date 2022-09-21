@@ -54,7 +54,7 @@ object XXMLSecurityContext {
     getSecurityEnvironment: () => XSecurityEnvironment,
     getSecurityEnvironmentByIndex: Double => XSecurityEnvironment,
     getSecurityEnvironmentNumber: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultSecurityEnvironmentIndex: Double => Unit
   ): XXMLSecurityContext = {

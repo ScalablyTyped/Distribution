@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientYoutube.anon
 
-import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.TestItem
+import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +29,10 @@ trait ResourceUploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /**
+    * The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will
+    * include.
+    */
   var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
@@ -38,7 +42,7 @@ trait ResourceUploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: TestItem
+  var resource: Subscription
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,7 +52,7 @@ trait ResourceUploadType extends StObject {
 }
 object ResourceUploadType {
   
-  inline def apply(part: String | js.Array[String], resource: TestItem): ResourceUploadType = {
+  inline def apply(part: String | js.Array[String], resource: Subscription): ResourceUploadType = {
     val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUploadType]
   }
@@ -85,7 +89,7 @@ object ResourceUploadType {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -95,7 +99,7 @@ object ResourceUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: TestItem): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Subscription): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

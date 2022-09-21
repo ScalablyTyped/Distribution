@@ -1,7 +1,7 @@
 package typings.backlogJs
 
-import typings.backlogJs.mod.Error.BacklogErrorMessage
-import typings.backlogJs.mod.Params
+import typings.backlogJs.errorMod.BacklogErrorMessage
+import typings.backlogJs.requestMod.Params
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -86,7 +86,7 @@ object anon {
       
       inline def setErrors(value: js.Array[BacklogErrorMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: BacklogErrorMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: BacklogErrorMessage*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   

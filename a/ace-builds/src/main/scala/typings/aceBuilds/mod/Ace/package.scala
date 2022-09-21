@@ -1,25 +1,24 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.aceBuilds.anon.Args
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CommandLike = typings.aceBuilds.mod.Ace.Command | (js.Function1[/* editor */ typings.aceBuilds.mod.Ace.Editor, scala.Unit])
+type CommandLike = Command | (js.Function1[/* editor */ Editor, Unit])
 
-type CommandMap = org.scalablytyped.runtime.StringDictionary[typings.aceBuilds.mod.Ace.Command]
+type CommandMap = StringDictionary[Command]
 
-type CompleterCallback = js.Function2[
-/* error */ js.Any, 
-/* completions */ js.Array[typings.aceBuilds.mod.Ace.Completion], 
-scala.Unit]
+type CompleterCallback = js.Function2[/* error */ Any, /* completions */ js.Array[Completion], Unit]
 
 type MarkerRenderer = js.Function5[
-/* html */ js.Array[java.lang.String], 
-/* range */ typings.aceBuilds.mod.Ace.Range, 
-/* left */ scala.Double, 
-/* top */ scala.Double, 
-/* config */ js.Any, 
-scala.Unit]
+/* html */ js.Array[String], 
+/* range */ Range, 
+/* left */ Double, 
+/* top */ Double, 
+/* config */ Any, 
+Unit]
 
-type execEventHandler = js.Function1[/* obj */ typings.aceBuilds.anon.Args, scala.Unit]
+type execEventHandler = js.Function1[/* obj */ Args, Unit]

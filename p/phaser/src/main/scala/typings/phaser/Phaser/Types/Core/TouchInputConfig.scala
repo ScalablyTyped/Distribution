@@ -14,7 +14,7 @@ trait TouchInputConfig extends StObject {
   /**
     * Where the Touch Manager listens for touch input events. The default is the game canvas.
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object TouchInputConfig {
   
@@ -29,7 +29,7 @@ object TouchInputConfig {
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

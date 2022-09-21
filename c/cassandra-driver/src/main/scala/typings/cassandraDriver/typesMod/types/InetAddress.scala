@@ -1,13 +1,13 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.InetAddress")
 @js.native
-class InetAddress protected () extends StObject {
+open class InetAddress protected () extends StObject {
   def this(buffer: Buffer) = this()
   
   def equals(other: InetAddress): Boolean = js.native

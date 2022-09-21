@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.typesSessionMod.Session
 import typings.awsSdkClientPinpointBrowser.typesSessionMod.UnmarshalledSession
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object typesEventMod {
     /**
       * Custom attributes that are associated with the event you're adding or updating.
       */
-    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Attributes: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * The version of the SDK that's running on the client device.
@@ -30,7 +29,7 @@ object typesEventMod {
     /**
       * Custom metrics related to the event.
       */
-    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
+    var Metrics: js.UndefOr[StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * Information about the session in which the event occurred.
@@ -51,7 +50,7 @@ object typesEventMod {
     
     extension [Self <: Event](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
@@ -63,7 +62,7 @@ object typesEventMod {
       
       inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
       
-      inline def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
       inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       

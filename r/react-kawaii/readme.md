@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-kawaii
 
-Typings are for version 0.11
+Typings are for version 0.17
 
 ## Library description:
 React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.
@@ -10,10 +10,10 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 | ------------------ | :-------------: |
 | Full name          | react-kawaii |
 | Keywords           | library, react, component, svg, illustration, kawaii, icon, ui, animation, icons, cute, mbe, cartoons, design |
-| # releases         | 12 |
-| # dependents       | 4 |
-| # downloads        | 44250 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5461.0 |
+| # stars            | 2793.0 |
 
 ## Links
 - [Homepage](https://github.com/miukimiu/react-kawaii#readme)

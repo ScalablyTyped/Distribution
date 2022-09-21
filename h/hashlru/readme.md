@@ -10,10 +10,10 @@ simpler faster substitute for LRU
 | ------------------ | :-------------: |
 | Full name          | hashlru |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 1130213 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 397132.6666666667 |
+| # stars            | 221.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/hashlru)

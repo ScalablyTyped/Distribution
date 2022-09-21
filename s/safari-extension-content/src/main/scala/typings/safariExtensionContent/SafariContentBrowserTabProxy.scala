@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SafariContentBrowserTabProxy extends StObject {
   
-  def canLoad(event: js.Any, message: js.Any): js.Any = js.native
+  def canLoad(event: Any, message: Any): Any = js.native
   
   def dispatchMessage(name: String): Unit = js.native
-  def dispatchMessage(name: String, message: js.Any): Unit = js.native
+  def dispatchMessage(name: String, message: Any): Unit = js.native
   
-  def setContextMenuEventUserInfo(event: MouseEvent, userInfo: js.Any): Unit = js.native
+  def setContextMenuEventUserInfo(event: MouseEvent, userInfo: Any): Unit = js.native
 }

@@ -33,6 +33,6 @@ object RevokeSecurityGroupIngressResult {
     
     inline def setUnknownIpPermissionsUndefined: Self = StObject.set(x, "UnknownIpPermissions", js.undefined)
     
-    inline def setUnknownIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "UnknownIpPermissions", js.Array(value :_*))
+    inline def setUnknownIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "UnknownIpPermissions", js.Array(value*))
   }
 }

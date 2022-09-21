@@ -24,6 +24,6 @@ object GetBucketLifecycleConfigurationResult {
     
     inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

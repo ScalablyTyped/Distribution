@@ -9,7 +9,7 @@ trait InstanceStatusDetails extends StObject {
   /**
     * The time when a status check failed. For an instance that was launched and impaired, this is the time when the instance was launched.
     */
-  var ImpairedSince: js.UndefOr[DateTime] = js.undefined
+  var ImpairedSince: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of instance status.
@@ -30,7 +30,7 @@ object InstanceStatusDetails {
   
   extension [Self <: InstanceStatusDetails](x: Self) {
     
-    inline def setImpairedSince(value: DateTime): Self = StObject.set(x, "ImpairedSince", value.asInstanceOf[js.Any])
+    inline def setImpairedSince(value: js.Date): Self = StObject.set(x, "ImpairedSince", value.asInstanceOf[js.Any])
     
     inline def setImpairedSinceUndefined: Self = StObject.set(x, "ImpairedSince", js.undefined)
     

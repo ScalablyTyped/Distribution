@@ -1,34 +1,20 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid
-import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
-import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Items extends StObject {
   
-  var column: js.UndefOr[dxDataGridColumn] = js.undefined
+  /**
+    * An array that specifies the zoom level items in the _Zoom Level_ combobox on &apos;Properties&apos; panel.
+    */
+  var items: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.undefined
-  
-  var component: js.UndefOr[dxDataGrid] = js.undefined
-  
-  var element: js.UndefOr[dxElement] = js.undefined
-  
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
-  
-  var model: js.UndefOr[js.Any] = js.undefined
-  
-  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
-  
-  var rowIndex: js.UndefOr[Double] = js.undefined
-  
-  var target: js.UndefOr[String] = js.undefined
-  
-  var targetElement: js.UndefOr[dxElement] = js.undefined
+  /**
+    * Specifies the zoom level.
+    */
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Items {
   
@@ -39,46 +25,14 @@ object Items {
   
   extension [Self <: Items](x: Self) {
     
-    inline def setColumn(value: dxDataGridColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-    
-    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
-    
-    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
-    
-    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
-    
-    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-    
-    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-    
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
-    
-    inline def setRow(value: dxDataGridRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
-    
-    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
-    
-    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
-    
-    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
-    
-    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-    
-    inline def setTargetElement(value: dxElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
-    
-    inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
-    
-    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -39,8 +39,9 @@ trait MessagesResource extends StObject {
   def get(request: Format): Request[Message] = js.native
   
   /**
-    * Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message. Note: This function
-    * doesn't trigger forwarding rules or filters set up by the user.
+    * Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. This method doesn't perform SPF checks, so
+    * it might not work for some spam messages, such as those attempting to perform domain spoofing. This method does not send a message. Note: This function doesn't trigger forwarding
+    * rules or filters set up by the user.
     */
   def `import`(request: Deleted): Request[Message] = js.native
   def `import`(request: InternalDateSource, body: Message): Request[Message] = js.native

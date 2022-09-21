@@ -137,7 +137,7 @@ object WindowsPhone81GeneralConfiguration {
     
     inline def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
     
-    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
+    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value*))
     
     inline def setDiagnosticDataBlockSubmission(value: Boolean): Self = StObject.set(x, "diagnosticDataBlockSubmission", value.asInstanceOf[js.Any])
     

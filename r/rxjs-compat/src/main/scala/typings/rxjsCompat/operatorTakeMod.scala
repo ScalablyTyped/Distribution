@@ -10,5 +10,5 @@ object operatorTakeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def take[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def take[T](count: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

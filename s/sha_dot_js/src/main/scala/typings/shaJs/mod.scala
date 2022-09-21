@@ -17,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha")
   @js.native
-  class sha () extends Hash
+  open class sha () extends Hash
   @JSImport("sha.js", "sha")
   @js.native
   val sha: HashStatic = js.native
@@ -25,7 +25,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha1")
   @js.native
-  class sha1 () extends Hash
+  open class sha1 () extends Hash
   @JSImport("sha.js", "sha1")
   @js.native
   val sha1: HashStatic = js.native
@@ -33,7 +33,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha224")
   @js.native
-  class sha224 () extends Hash
+  open class sha224 () extends Hash
   @JSImport("sha.js", "sha224")
   @js.native
   val sha224: HashStatic = js.native
@@ -41,7 +41,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha256")
   @js.native
-  class sha256 () extends Hash
+  open class sha256 () extends Hash
   @JSImport("sha.js", "sha256")
   @js.native
   val sha256: HashStatic = js.native
@@ -49,7 +49,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha384")
   @js.native
-  class sha384 () extends Hash
+  open class sha384 () extends Hash
   @JSImport("sha.js", "sha384")
   @js.native
   val sha384: HashStatic = js.native
@@ -57,7 +57,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha512")
   @js.native
-  class sha512 () extends Hash
+  open class sha512 () extends Hash
   @JSImport("sha.js", "sha512")
   @js.native
   val sha512: HashStatic = js.native

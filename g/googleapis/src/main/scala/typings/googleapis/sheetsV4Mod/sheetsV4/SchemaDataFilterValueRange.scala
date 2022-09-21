@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A range of values whose location is specified by a DataFilter.
-  */
 trait SchemaDataFilterValueRange extends StObject {
   
   /**
@@ -17,15 +14,12 @@ trait SchemaDataFilterValueRange extends StObject {
   /**
     * The major dimension of the values.
     */
-  var majorDimension: js.UndefOr[String] = js.undefined
+  var majorDimension: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The data to be written.  If the provided values exceed any of the ranges
-    * matched by the data filter then the request will fail.  If the provided
-    * values are less than the matched ranges only the specified values will be
-    * written, existing values in the matched ranges will remain unaffected.
+    * The data to be written. If the provided values exceed any of the ranges matched by the data filter then the request fails. If the provided values are less than the matched ranges only the specified values are written, existing values in the matched ranges remain unaffected.
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]] | Null] = js.undefined
 }
 object SchemaDataFilterValueRange {
   
@@ -42,12 +36,16 @@ object SchemaDataFilterValueRange {
     
     inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
+    inline def setMajorDimensionNull: Self = StObject.set(x, "majorDimension", null)
+    
     inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesNull: Self = StObject.set(x, "values", null)
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

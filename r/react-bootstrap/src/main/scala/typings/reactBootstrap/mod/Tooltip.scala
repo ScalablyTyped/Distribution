@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Tooltip")
 @js.native
-class Tooltip ()
+open class Tooltip ()
   extends typings.reactBootstrap.libMod.Tooltip

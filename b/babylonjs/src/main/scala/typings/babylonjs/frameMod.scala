@@ -9,7 +9,7 @@ object frameMod {
   
   @JSImport("babylonjs/Materials/Textures/Packer/frame", "TexturePackerFrame")
   @js.native
-  class TexturePackerFrame protected ()
+  open class TexturePackerFrame protected ()
     extends StObject
        with ITexturePackerFrame {
     /**

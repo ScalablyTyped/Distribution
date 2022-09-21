@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertFloatingTextBoxCommand")
 @js.native
-class InsertFloatingTextBoxCommand ()
+open class InsertFloatingTextBoxCommand ()
   extends StObject
      with typings.devexpressWeb.InsertFloatingTextBoxCommand {
   

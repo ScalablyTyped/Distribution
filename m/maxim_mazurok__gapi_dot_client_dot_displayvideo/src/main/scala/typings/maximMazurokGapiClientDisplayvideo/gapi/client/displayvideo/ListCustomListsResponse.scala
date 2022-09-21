@@ -25,7 +25,7 @@ object ListCustomListsResponse {
     
     inline def setCustomListsUndefined: Self = StObject.set(x, "customLists", js.undefined)
     
-    inline def setCustomListsVarargs(value: CustomList*): Self = StObject.set(x, "customLists", js.Array(value :_*))
+    inline def setCustomListsVarargs(value: CustomList*): Self = StObject.set(x, "customLists", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

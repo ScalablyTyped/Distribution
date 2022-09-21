@@ -1,10 +1,13 @@
 package typings.protonNative.mod
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AppProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Called when the quit menu item is called, right before the entire app quits.
@@ -19,6 +22,10 @@ object AppProps {
   }
   
   extension [Self <: AppProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setOnShouldQuit(value: () => Unit): Self = StObject.set(x, "onShouldQuit", js.Any.fromFunction0(value))
     

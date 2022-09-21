@@ -29,6 +29,6 @@ object StageExecutionDetails {
     
     inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     
-    inline def setWorkersVarargs(value: WorkerDetails*): Self = StObject.set(x, "workers", js.Array(value :_*))
+    inline def setWorkersVarargs(value: WorkerDetails*): Self = StObject.set(x, "workers", js.Array(value*))
   }
 }

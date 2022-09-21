@@ -10,10 +10,10 @@ Transform stream to read line-by-line and write a string
 | ------------------ | :-------------: |
 | Full name          | readline-transform |
 | Keywords           | stream, transform, readline, byline |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 2251294 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 405546.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/tilfin/readline-transform#readme)

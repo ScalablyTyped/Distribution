@@ -18,13 +18,13 @@ object cellNav {
     // Methods
     /**
       * Gets the currently selected rows and columns.  array is empty if no selection has occurred
-      * @returns {Array<IRowCol>} an array containing the current selection
+      * @returns an array containing the current selection
       */
     def getCurrentSelection(): js.Array[IRowCol[TEntity]]
     
     /**
       * Gets the current focused cell.  value is null if no selection has occurred
-      * @returns {IRowCol} the current (or last if Grid does not have focus) focused row and column
+      * @returns the current (or last if Grid does not have focus) focused row and column
       */
     def getFocusedCell(): IRowCol[TEntity]
     
@@ -40,10 +40,10 @@ object cellNav {
     
     /**
       * Brings the specified row and column into view, and sets focus to that cell
-      * @param {TEntity} rowEntity gridOptions.data[] array instance to make visible and set focus
-      * @param {IColumnDef} colDef Column definition to make visible and set focus
+      * @param rowEntity gridOptions.data[] array instance to make visible and set focus
+      * @param colDef Column definition to make visible and set focus
       */
-    def scrollToFocus(rowEntity: TEntity, colDef: typings.uiGrid.mod.cellNav.IColumnDef): IPromise[js.Any]
+    def scrollToFocus(rowEntity: TEntity, colDef: typings.uiGrid.mod.cellNav.IColumnDef): IPromise[Any]
   }
   object ICellNavApi {
     
@@ -52,7 +52,7 @@ object cellNav {
       getFocusedCell: () => IRowCol[TEntity],
       on: Navigate[TEntity],
       rowColSelectIndex: IRowCol[TEntity] => Double,
-      scrollToFocus: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[js.Any]
+      scrollToFocus: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[Any]
     ): ICellNavApi[TEntity] = {
       val __obj = js.Dynamic.literal(getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getFocusedCell = js.Any.fromFunction0(getFocusedCell), on = on.asInstanceOf[js.Any], rowColSelectIndex = js.Any.fromFunction1(rowColSelectIndex), scrollToFocus = js.Any.fromFunction2(scrollToFocus))
       __obj.asInstanceOf[ICellNavApi[TEntity]]
@@ -68,7 +68,7 @@ object cellNav {
       
       inline def setRowColSelectIndex(value: IRowCol[TEntity] => Double): Self = StObject.set(x, "rowColSelectIndex", js.Any.fromFunction1(value))
       
-      inline def setScrollToFocus(value: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[js.Any]): Self = StObject.set(x, "scrollToFocus", js.Any.fromFunction2(value))
+      inline def setScrollToFocus(value: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[Any]): Self = StObject.set(x, "scrollToFocus", js.Any.fromFunction2(value))
     }
   }
   

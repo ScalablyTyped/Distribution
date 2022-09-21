@@ -10,7 +10,7 @@ object canvasMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/canvas", "Canvas")
   @js.native
-  class Canvas protected () extends StObject {
+  open class Canvas protected () extends StObject {
     /** @hidden */
     def this(user: GoogleActionsV2Input) = this()
     

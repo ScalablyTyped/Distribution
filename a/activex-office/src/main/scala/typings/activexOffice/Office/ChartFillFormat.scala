@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartFillFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val BackColor: ChartColorFormat
   
@@ -27,7 +27,7 @@ trait ChartFillFormat extends StObject {
   
   def OneColorGradient(Style: Double, Variant: Double, Degree: Double): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Pattern: Double
   
@@ -51,7 +51,7 @@ trait ChartFillFormat extends StObject {
   
   val Type: Double
   
-  def UserPicture(PictureFile: String, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit
+  def UserPicture(PictureFile: String, PictureFormat: Any, PictureStackUnit: Any, PicturePlacement: Any): Unit
   
   def UserTextured(TextureFile: String): Unit
   
@@ -60,7 +60,7 @@ trait ChartFillFormat extends StObject {
 object ChartFillFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     BackColor: ChartColorFormat,
     Creator: Double,
     ForeColor: ChartColorFormat,
@@ -70,7 +70,7 @@ object ChartFillFormat {
     GradientVariant: Double,
     OfficeDotChartFillFormat_typekey: ChartFillFormat,
     OneColorGradient: (Double, Double, Double) => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: Double,
     Patterned: Double => Unit,
     PresetGradient: (Double, Double, Double) => Unit,
@@ -82,7 +82,7 @@ object ChartFillFormat {
     TextureType: Double,
     TwoColorGradient: (Double, Double) => Unit,
     Type: Double,
-    UserPicture: (String, js.Any, js.Any, js.Any) => Unit,
+    UserPicture: (String, Any, Any, Any) => Unit,
     UserTextured: String => Unit,
     Visible: Double
   ): ChartFillFormat = {
@@ -93,7 +93,7 @@ object ChartFillFormat {
   
   extension [Self <: ChartFillFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBackColor(value: ChartColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
@@ -113,7 +113,7 @@ object ChartFillFormat {
     
     inline def setOneColorGradient(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: Double): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object ChartFillFormat {
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setUserPicture(value: (String, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction4(value))
+    inline def setUserPicture(value: (String, Any, Any, Any) => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction4(value))
     
     inline def setUserTextured(value: String => Unit): Self = StObject.set(x, "UserTextured", js.Any.fromFunction1(value))
     

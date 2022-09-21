@@ -3,9 +3,9 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
-import typings.maximMazurokGapiClientTagmanager.anon.CallbackFields
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
-import typings.maximMazurokGapiClientTagmanager.anon.FieldsFingerprint
+import typings.maximMazurokGapiClientTagmanager.anon.FieldsKey
+import typings.maximMazurokGapiClientTagmanager.anon.FingerprintKey
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait TriggersResource extends StObject {
   
   def create(request: Alt, body: Trigger): Request[Trigger] = js.native
   /** Creates a GTM Trigger. */
-  def create(request: CallbackFields): Request[Trigger] = js.native
+  def create(request: FieldsKey): Request[Trigger] = js.native
   
   /** Deletes a GTM Trigger. */
   def delete(): Request[Unit] = js.native
@@ -35,6 +35,6 @@ trait TriggersResource extends StObject {
   def revert(request: Oauthtoken): Request[RevertTriggerResponse] = js.native
   
   /** Updates a GTM Trigger. */
-  def update(request: FieldsFingerprint): Request[Trigger] = js.native
+  def update(request: FingerprintKey): Request[Trigger] = js.native
   def update(request: Oauthtoken, body: Trigger): Request[Trigger] = js.native
 }

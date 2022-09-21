@@ -19,6 +19,10 @@ object maximMazurokGapiClientAppengineStrings {
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
+  sealed trait Service extends StObject
+  inline def Service: Service = "Service".asInstanceOf[Service]
+  
+  @js.native
   sealed trait StaticFilesHandler extends StObject
   inline def StaticFilesHandler: StaticFilesHandler = "StaticFilesHandler".asInstanceOf[StaticFilesHandler]
   

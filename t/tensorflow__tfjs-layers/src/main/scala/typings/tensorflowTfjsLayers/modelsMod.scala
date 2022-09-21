@@ -24,7 +24,7 @@ object modelsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential")
   @js.native
-  class Sequential () extends LayersModel {
+  open class Sequential () extends LayersModel {
     def this(args: SequentialArgs) = this()
     
     /**
@@ -52,9 +52,9 @@ object modelsMod {
     
     def build(): Unit = js.native
     
-    /* private */ var checkShape: js.Any = js.native
+    /* private */ var checkShape: Any = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
     /**
       * Removes the last layer in the model.
@@ -151,7 +151,7 @@ object modelsMod {
       
       inline def setWeightsManifestUndefined: Self = StObject.set(x, "weightsManifest", js.undefined)
       
-      inline def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value :_*))
+      inline def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value*))
     }
   }
   
@@ -207,7 +207,7 @@ object modelsMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait ListNamespacesResponse extends StObject {
   var Namespaces: js.UndefOr[NamespaceSummariesList] = js.undefined
   
   /**
-    * If the response contains NextToken, submit another ListNamespaces request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  AWS Cloud Map gets MaxResults namespaces and then filters them based on the specified criteria. It's possible that no namespaces in the first MaxResults namespaces matched the specified criteria but that subsequent groups of MaxResults namespaces do contain namespaces that match the criteria. 
+    * If the response contains NextToken, submit another ListNamespaces request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  Cloud Map gets MaxResults namespaces and then filters them based on the specified criteria. It's possible that no namespaces in the first MaxResults namespaces matched the specified criteria but that subsequent groups of MaxResults namespaces do contain namespaces that match the criteria. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListNamespacesResponse {
     
     inline def setNamespacesUndefined: Self = StObject.set(x, "Namespaces", js.undefined)
     
-    inline def setNamespacesVarargs(value: NamespaceSummary*): Self = StObject.set(x, "Namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: NamespaceSummary*): Self = StObject.set(x, "Namespaces", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

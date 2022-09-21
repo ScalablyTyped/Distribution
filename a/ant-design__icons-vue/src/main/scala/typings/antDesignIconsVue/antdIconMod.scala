@@ -1,48 +1,19 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import typings.antDesignIconsVue.iconMod.IconBaseProps
 import typings.antDesignIconsVue.twoTonePrimaryColorMod.TwoToneColor
+import typings.vueRuntimeCore.mod.FunctionalComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object antdIconMod {
+object antdIconMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(
-      props: IconComponentProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    inline def getTwoToneColor(): TwoToneColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColor")().asInstanceOf[TwoToneColor]
-    @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", "default.getTwoToneColor")
-    @js.native
-    def getTwoToneColor_Fdefault: js.Function0[TwoToneColor] = js.native
-    
-    inline def getTwoToneColor_Fdefault_=(x: js.Function0[TwoToneColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTwoToneColor")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", "default.setTwoToneColor")
-    @js.native
-    def setTwoToneColor: js.Function1[/* twoToneColor */ TwoToneColor, Unit] = js.native
-    inline def setTwoToneColor(twoToneColor: TwoToneColor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColor")(twoToneColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def setTwoToneColor_=(x: js.Function1[/* twoToneColor */ TwoToneColor, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setTwoToneColor")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/icons-vue/lib/components/AntdIcon", JSImport.Default)
+  @js.native
+  val default: AntdIconType = js.native
   
   trait AntdIconProps
     extends StObject
@@ -65,6 +36,37 @@ object antdIconMod {
     }
   }
   
+  @js.native
+  trait AntdIconType
+    extends StObject
+       with Color
+       with FunctionalComponent[IconComponentProps, js.Object] {
+    
+    @JSName("displayName")
+    var displayName_AntdIconType: String = js.native
+  }
+  
+  trait Color extends StObject {
+    
+    def getTwoToneColor(): TwoToneColor
+    
+    def setTwoToneColor(twoToneColor: TwoToneColor): Unit
+  }
+  object Color {
+    
+    inline def apply(getTwoToneColor: () => TwoToneColor, setTwoToneColor: TwoToneColor => Unit): Color = {
+      val __obj = js.Dynamic.literal(getTwoToneColor = js.Any.fromFunction0(getTwoToneColor), setTwoToneColor = js.Any.fromFunction1(setTwoToneColor))
+      __obj.asInstanceOf[Color]
+    }
+    
+    extension [Self <: Color](x: Self) {
+      
+      inline def setGetTwoToneColor(value: () => TwoToneColor): Self = StObject.set(x, "getTwoToneColor", js.Any.fromFunction0(value))
+      
+      inline def setSetTwoToneColor(value: TwoToneColor => Unit): Self = StObject.set(x, "setTwoToneColor", js.Any.fromFunction1(value))
+    }
+  }
+  
   trait IconComponentProps
     extends StObject
        with AntdIconProps {
@@ -83,4 +85,9 @@ object antdIconMod {
       inline def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = AntdIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `antdIconMod.foo` */
+  override def _to: AntdIconType = default
 }

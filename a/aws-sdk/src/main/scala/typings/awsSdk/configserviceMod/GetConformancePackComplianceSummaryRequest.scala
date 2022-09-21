@@ -32,7 +32,7 @@ object GetConformancePackComplianceSummaryRequest {
     
     inline def setConformancePackNames(value: ConformancePackNamesToSummarizeList): Self = StObject.set(x, "ConformancePackNames", value.asInstanceOf[js.Any])
     
-    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value :_*))
+    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value*))
     
     inline def setLimit(value: PageSizeLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

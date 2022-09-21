@@ -32,7 +32,7 @@ object global {
     /**
       * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
       */
-    inline def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ConnectObject(objEventSource: Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a COM object.
@@ -45,14 +45,14 @@ object global {
     /**
       * Disconnects a COM object from its event sources.
       */
-    inline def DisconnectObject(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def DisconnectObject(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Outputs text to either a message box (under WScript.exe) or the command console window followed by
       * a newline (under CScript.exe).
       */
     inline def Echo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")().asInstanceOf[Unit]
-    inline def Echo(s: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Echo(s: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Fully qualified path of the host executable.
@@ -62,10 +62,10 @@ object global {
     def FullName: String = js.native
     inline def FullName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
     
-    inline def GetObject(strPathname: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetObject(strPathname: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: String, strPrefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Retrieves an existing object with the specified ProgID from memory, or creates a new one from a file.
       * @param strPathname Fully qualified path to the file containing the object persisted to disk.
@@ -187,7 +187,7 @@ object global {
     /**
       * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
       */
-    inline def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ConnectObject(objEventSource: Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a COM object.
@@ -200,14 +200,14 @@ object global {
     /**
       * Disconnects a COM object from its event sources.
       */
-    inline def DisconnectObject(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def DisconnectObject(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Outputs text to either a message box (under WScript.exe) or the command console window followed by
       * a newline (under CScript.exe).
       */
     inline def Echo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")().asInstanceOf[Unit]
-    inline def Echo(s: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Echo(s: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Fully qualified path of the host executable.
@@ -217,10 +217,10 @@ object global {
     def FullName: String = js.native
     inline def FullName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
     
-    inline def GetObject(strPathname: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetObject(strPathname: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: String, strPrefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Retrieves an existing object with the specified ProgID from memory, or creates a new one from a file.
       * @param strPathname Fully qualified path to the file containing the object persisted to disk.

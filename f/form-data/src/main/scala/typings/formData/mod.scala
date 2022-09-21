@@ -3,12 +3,11 @@ package typings.formData
 import org.scalablytyped.runtime.StringDictionary
 import typings.formData.formDataStrings.httpColon
 import typings.formData.formDataStrings.httpsColon
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
   
   @JSImport("form-data", JSImport.Namespace)
   @js.native
-  class ^ () extends FormData {
+  open class ^ () extends FormData {
     def this(options: Options) = this()
   }
   
@@ -67,9 +66,9 @@ object mod {
   @js.native
   trait FormData extends Readable {
     
-    def append(key: String, value: js.Any): Unit = js.native
-    def append(key: String, value: js.Any, options: String): Unit = js.native
-    def append(key: String, value: js.Any, options: AppendOptions): Unit = js.native
+    def append(key: String, value: Any): Unit = js.native
+    def append(key: String, value: Any, options: String): Unit = js.native
+    def append(key: String, value: Any, options: AppendOptions): Unit = js.native
     
     def getBoundary(): String = js.native
     
@@ -78,25 +77,27 @@ object mod {
     def getHeaders(): Headers = js.native
     def getHeaders(userHeaders: Headers): Headers = js.native
     
-    def getLength(callback: js.Function2[/* err */ Error | Null, /* length */ Double, Unit]): Unit = js.native
+    def getLength(callback: js.Function2[/* err */ js.Error | Null, /* length */ Double, Unit]): Unit = js.native
     
     def getLengthSync(): Double = js.native
     
     def hasKnownLength(): Boolean = js.native
     
+    def setBoundary(boundary: String): Unit = js.native
+    
     def submit(params: String): ClientRequest = js.native
     def submit(
       params: String,
-      callback: js.Function2[/* error */ Error | Null, /* response */ IncomingMessage, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* response */ IncomingMessage, Unit]
     ): ClientRequest = js.native
     def submit(params: SubmitOptions): ClientRequest = js.native
     def submit(
       params: SubmitOptions,
-      callback: js.Function2[/* error */ Error | Null, /* response */ IncomingMessage, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* response */ IncomingMessage, Unit]
     ): ClientRequest = js.native
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   trait Options
     extends StObject
@@ -151,8 +152,8 @@ object mod {
     var destroy: js.UndefOr[
         js.ThisFunction2[
           /* this */ Readable, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -181,8 +182,8 @@ object mod {
       inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Readable, 
-              /* error */ Error | Null, 
-              /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+              /* error */ js.Error | Null, 
+              /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])

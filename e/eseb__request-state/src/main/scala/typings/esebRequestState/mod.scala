@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@eseb/request-state", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with RequestState[T] {
     def this(state: State) = this()
@@ -100,7 +100,7 @@ object mod {
       shouldBeRequested: () => Boolean,
       shouldShowAsLoading: () => Boolean,
       state: State,
-      withAttachment: js.Any => RequestState[js.Any]
+      withAttachment: Any => RequestState[Any]
     ): RequestState[T] = {
       val __obj = js.Dynamic.literal(isFailed = js.Any.fromFunction0(isFailed), isInProgress = js.Any.fromFunction0(isInProgress), isNotRequested = js.Any.fromFunction0(isNotRequested), isSucceeded = js.Any.fromFunction0(isSucceeded), shouldBeRequested = js.Any.fromFunction0(shouldBeRequested), shouldShowAsLoading = js.Any.fromFunction0(shouldShowAsLoading), state = state.asInstanceOf[js.Any], withAttachment = js.Any.fromFunction1(withAttachment))
       __obj.asInstanceOf[RequestState[T]]
@@ -126,7 +126,7 @@ object mod {
       
       inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setWithAttachment(value: js.Any => RequestState[js.Any]): Self = StObject.set(x, "withAttachment", js.Any.fromFunction1(value))
+      inline def setWithAttachment(value: Any => RequestState[Any]): Self = StObject.set(x, "withAttachment", js.Any.fromFunction1(value))
     }
   }
   

@@ -30,6 +30,6 @@ object PageListRendererOptions {
     
     inline def setPages(value: js.Array[Active]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: Active*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Active*): Self = StObject.set(x, "pages", js.Array(value*))
   }
 }

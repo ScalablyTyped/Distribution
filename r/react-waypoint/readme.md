@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-waypoint
 
-Typings are for version 9.0.3
+Typings are for version 10.3.0
 
 ## Library description:
 A React component to execute a function whenever you scroll to an element.
@@ -10,15 +10,15 @@ A React component to execute a function whenever you scroll to an element.
 | ------------------ | :-------------: |
 | Full name          | react-waypoint |
 | Keywords           | react, component, react-component, scroll, onscroll, scrollspy |
-| # releases         | 5 |
-| # dependents       | 145 |
-| # downloads        | 9100879 |
-| # stars            | 17 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1923816.6666666667 |
+| # stars            | 3959.0 |
 
 ## Links
-- [Homepage](https://github.com/brigade/react-waypoint)
-- [Bugs](https://github.com/brigade/react-waypoint/issues)
-- [Repository](https://github.com/brigade/react-waypoint)
+- [Homepage](https://github.com/civiccc/react-waypoint)
+- [Bugs](https://github.com/civiccc/react-waypoint/issues)
+- [Repository](https://github.com/civiccc/react-waypoint)
 - [Npm](https://www.npmjs.com/package/react-waypoint)
     
 

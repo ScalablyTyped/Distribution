@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ArrayChanges")
 @js.native
-class ArrayChanges protected () extends StObject {
-  def this(index: Double, deleteCount: Double, itemsToAdd: js.Array[js.Any], deletedItems: js.Array[js.Any]) = this()
+open class ArrayChanges protected () extends StObject {
+  def this(index: Double, deleteCount: Double, itemsToAdd: Any, deletedItems: Any) = this()
   
   var deleteCount: Double = js.native
   
-  var deletedItems: js.Array[js.Any] = js.native
+  var deletedItems: Any = js.native
   
   var index: Double = js.native
   
-  var itemsToAdd: js.Array[js.Any] = js.native
+  var itemsToAdd: Any = js.native
 }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents workbook properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait DocumentPropertiesLoadOptions extends StObject {
@@ -19,89 +19,89 @@ trait DocumentPropertiesLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The author of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var author: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The category of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var category: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The comments of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var comments: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The company of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var company: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Gets the creation date of the workbook.
     *
-    * Gets the creation date of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The keywords of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var keywords: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Gets the last author of the workbook.
     *
-    * Gets the last author of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lastAuthor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The manager of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var manager: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Gets the revision number of the workbook.
     *
-    * Gets the revision number of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var revisionNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The subject of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var subject: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The title of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var title: js.UndefOr[Boolean] = js.undefined

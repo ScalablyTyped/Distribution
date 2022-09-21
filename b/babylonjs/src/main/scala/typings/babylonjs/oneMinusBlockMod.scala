@@ -10,7 +10,7 @@ object oneMinusBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/oneMinusBlock", "OneMinusBlock")
   @js.native
-  class OneMinusBlock protected () extends NodeMaterialBlock {
+  open class OneMinusBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new OneMinusBlock
       * @param name defines the block name

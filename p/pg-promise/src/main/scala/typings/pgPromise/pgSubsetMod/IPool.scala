@@ -2,7 +2,6 @@ package typings.pgPromise.pgSubsetMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPool extends EventEmitter {
   
   def end(): js.Promise[Unit] = js.native
-  def end(cb: js.Function1[/* err */ Error, js.Any]): js.Any = js.native
+  def end(cb: js.Function1[/* err */ js.Error, Any]): Any = js.native
   
   // connection options
   val ended: Boolean = js.native
@@ -23,7 +22,7 @@ trait IPool extends EventEmitter {
   
   val idleCount: Double = js.native
   
-  val options: StringDictionary[js.Any] = js.native
+  val options: StringDictionary[Any] = js.native
   
   val totalCount: Double = js.native
   

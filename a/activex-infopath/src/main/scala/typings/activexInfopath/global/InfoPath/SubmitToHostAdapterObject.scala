@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SubmitToHostAdapterObject")
 @js.native
-/* private */ class SubmitToHostAdapterObject ()
+/* private */ open class SubmitToHostAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SubmitToHostAdapterObject {
   

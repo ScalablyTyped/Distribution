@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Permission extends StObject {
   
   /**
-    * The private CA actions that can be performed by the designated AWS service.
+    * The private CA actions that can be performed by the designated Amazon Web Services service.
     */
   var Actions: js.UndefOr[ActionList] = js.undefined
   
@@ -19,7 +19,7 @@ trait Permission extends StObject {
   /**
     * The time at which the permission was created.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the policy that is associated with the permission.
@@ -27,7 +27,7 @@ trait Permission extends StObject {
   var Policy: js.UndefOr[AWSPolicy] = js.undefined
   
   /**
-    * The AWS service or entity that holds the permission. At this time, the only valid principal is acm.amazonaws.com.
+    * The Amazon Web Services service or entity that holds the permission. At this time, the only valid principal is acm.amazonaws.com.
     */
   var Principal: js.UndefOr[typings.awsSdk.acmpcaMod.Principal] = js.undefined
   
@@ -49,13 +49,13 @@ object Permission {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: ActionType*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ActionType*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
-    inline def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     

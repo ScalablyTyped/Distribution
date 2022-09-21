@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commonMod {
   
-  @JSImport("ip-address/dist/lib/common", JSImport.Namespace)
+  @JSImport("ip-address/dist/cjs/lib/common", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -16,4 +16,23 @@ object commonMod {
   
   inline def isInSubnet(address: Address4): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isInSubnet(address: Address6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  trait ReverseFormOptions extends StObject {
+    
+    var omitSuffix: js.UndefOr[Boolean] = js.undefined
+  }
+  object ReverseFormOptions {
+    
+    inline def apply(): ReverseFormOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ReverseFormOptions]
+    }
+    
+    extension [Self <: ReverseFormOptions](x: Self) {
+      
+      inline def setOmitSuffix(value: Boolean): Self = StObject.set(x, "omitSuffix", value.asInstanceOf[js.Any])
+      
+      inline def setOmitSuffixUndefined: Self = StObject.set(x, "omitSuffix", js.undefined)
+    }
+  }
 }

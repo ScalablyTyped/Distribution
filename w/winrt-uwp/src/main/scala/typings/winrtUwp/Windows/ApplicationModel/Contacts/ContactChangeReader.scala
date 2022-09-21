@@ -22,14 +22,14 @@ trait ContactChangeReader extends StObject {
     * Asynchronously gets a list of ContactChange objects.
     * @return A list of ContactChange objects.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
 }
 object ContactChangeReader {
   
   inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: ContactChange => Unit,
-    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]]
   ): ContactChangeReader = {
     val __obj = js.Dynamic.literal(acceptChanges = js.Any.fromFunction0(acceptChanges), acceptChangesThrough = js.Any.fromFunction1(acceptChangesThrough), readBatchAsync = js.Any.fromFunction0(readBatchAsync))
     __obj.asInstanceOf[ContactChangeReader]
@@ -41,6 +41,6 @@ object ContactChangeReader {
     
     inline def setAcceptChangesThrough(value: ContactChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

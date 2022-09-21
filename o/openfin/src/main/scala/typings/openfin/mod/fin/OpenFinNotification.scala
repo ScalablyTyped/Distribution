@@ -22,12 +22,12 @@ trait OpenFinNotification extends StObject {
   /**
     * Sends a message to the notification.
     */
-  def sendMessage(message: js.Any): Unit = js.native
-  def sendMessage(message: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def sendMessage(message: Any): Unit = js.native
+  def sendMessage(message: Any, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Sends a message from the notification to the application that created the notification. The message is handled by the notification's onMessage callback.
     */
-  def sendMessageToApplication(message: js.Any): Unit = js.native
-  def sendMessageToApplication(message: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def sendMessageToApplication(message: Any): Unit = js.native
+  def sendMessageToApplication(message: Any, callback: js.Function0[Unit]): Unit = js.native
 }

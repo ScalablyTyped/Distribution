@@ -12,10 +12,10 @@ object mod extends Shortcut {
   
   @JSImport("koa-range", JSImport.Namespace)
   @js.native
-  val ^ : Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : Middleware[DefaultState, DefaultContext, Any] = js.native
   
-  type _To = Middleware[DefaultState, DefaultContext]
+  type _To = Middleware[DefaultState, DefaultContext, Any]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Middleware[DefaultState, DefaultContext] = ^
+  override def _to: Middleware[DefaultState, DefaultContext, Any] = ^
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tslint", "Replacement")
 @js.native
-class Replacement protected ()
+open class Replacement protected ()
   extends typings.tslint.ruleMod.Replacement {
   def this(start: Double, length: Double, text: String) = this()
 }

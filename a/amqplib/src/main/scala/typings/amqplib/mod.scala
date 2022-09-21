@@ -7,7 +7,8 @@ import typings.amqplib.amqplibStrings.fanout
 import typings.amqplib.amqplibStrings.headers
 import typings.amqplib.amqplibStrings.topic
 import typings.amqplib.anon.Mechanism
-import typings.amqplib.anon.Password
+import typings.amqplib.anon.Response
+import typings.amqplib.anon.ServerProperties
 import typings.amqplib.propertiesMod.ConsumeMessage
 import typings.amqplib.propertiesMod.GetMessage
 import typings.amqplib.propertiesMod.Message
@@ -21,8 +22,7 @@ import typings.amqplib.propertiesMod.Replies.Consume
 import typings.amqplib.propertiesMod.Replies.DeleteQueue
 import typings.amqplib.propertiesMod.Replies.Empty
 import typings.amqplib.propertiesMod.Replies.PurgeQueue
-import typings.amqplib.propertiesMod.ServerProperties
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,9 +35,9 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def connect(url: String): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
-  inline def connect(url: String, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: String, socketOptions: Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
   inline def connect(url: Connect): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
-  inline def connect(url: Connect, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: Connect, socketOptions: Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
   
   object credentials {
     
@@ -45,9 +45,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
+    inline def amqplain(username: String, password: String): Mechanism = (^.asInstanceOf[js.Dynamic].applyDynamic("amqplain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Mechanism]
     
-    inline def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
+    inline def external(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Response]
+    
+    inline def plain(username: String, password: String): Mechanism = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Mechanism]
   }
   
   @js.native
@@ -58,37 +60,23 @@ object mod {
     
     def ackAll(): Unit = js.native
     
+    def assertExchange(exchange: String, `type`: direct | topic | headers | fanout | `match`): typings.bluebird.mod.^[AssertExchange] = js.native
+    def assertExchange(
+      exchange: String,
+      `type`: direct | topic | headers | fanout | `match`,
+      options: typings.amqplib.propertiesMod.Options.AssertExchange
+    ): typings.bluebird.mod.^[AssertExchange] = js.native
     def assertExchange(exchange: String, `type`: String): typings.bluebird.mod.^[AssertExchange] = js.native
     def assertExchange(exchange: String, `type`: String, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_direct(exchange: String, `type`: direct): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_direct(exchange: String, `type`: direct, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_fanout(exchange: String, `type`: fanout): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_fanout(exchange: String, `type`: fanout, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_headers(exchange: String, `type`: headers): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_headers(exchange: String, `type`: headers, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_match(exchange: String, `type`: `match`): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_match(exchange: String, `type`: `match`, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_topic(exchange: String, `type`: topic): typings.bluebird.mod.^[AssertExchange] = js.native
-    @JSName("assertExchange")
-    def assertExchange_topic(exchange: String, `type`: topic, options: typings.amqplib.propertiesMod.Options.AssertExchange): typings.bluebird.mod.^[AssertExchange] = js.native
     
     def assertQueue(queue: String): typings.bluebird.mod.^[AssertQueue] = js.native
     def assertQueue(queue: String, options: typings.amqplib.propertiesMod.Options.AssertQueue): typings.bluebird.mod.^[AssertQueue] = js.native
     
     def bindExchange(destination: String, source: String, pattern: String): typings.bluebird.mod.^[Empty] = js.native
-    def bindExchange(destination: String, source: String, pattern: String, args: js.Any): typings.bluebird.mod.^[Empty] = js.native
+    def bindExchange(destination: String, source: String, pattern: String, args: Any): typings.bluebird.mod.^[Empty] = js.native
     
     def bindQueue(queue: String, source: String, pattern: String): typings.bluebird.mod.^[Empty] = js.native
-    def bindQueue(queue: String, source: String, pattern: String, args: js.Any): typings.bluebird.mod.^[Empty] = js.native
+    def bindQueue(queue: String, source: String, pattern: String, args: Any): typings.bluebird.mod.^[Empty] = js.native
     
     def cancel(consumerTag: String): typings.bluebird.mod.^[Empty] = js.native
     
@@ -139,10 +127,10 @@ object mod {
     def sendToQueue(queue: String, content: Buffer, options: Publish): Boolean = js.native
     
     def unbindExchange(destination: String, source: String, pattern: String): typings.bluebird.mod.^[Empty] = js.native
-    def unbindExchange(destination: String, source: String, pattern: String, args: js.Any): typings.bluebird.mod.^[Empty] = js.native
+    def unbindExchange(destination: String, source: String, pattern: String, args: Any): typings.bluebird.mod.^[Empty] = js.native
     
     def unbindQueue(queue: String, source: String, pattern: String): typings.bluebird.mod.^[Empty] = js.native
-    def unbindQueue(queue: String, source: String, pattern: String, args: js.Any): typings.bluebird.mod.^[Empty] = js.native
+    def unbindQueue(queue: String, source: String, pattern: String, args: Any): typings.bluebird.mod.^[Empty] = js.native
   }
   
   @js.native
@@ -153,27 +141,27 @@ object mod {
       routingKey: String,
       content: Buffer,
       options: Unit,
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+      callback: js.Function2[/* err */ Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     def publish(
       exchange: String,
       routingKey: String,
       content: Buffer,
       options: Publish,
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+      callback: js.Function2[/* err */ Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     
     def sendToQueue(
       queue: String,
       content: Buffer,
       options: Unit,
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+      callback: js.Function2[/* err */ Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     def sendToQueue(
       queue: String,
       content: Buffer,
       options: Publish,
-      callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+      callback: js.Function2[/* err */ Any, /* ok */ Empty, Unit]
     ): Boolean = js.native
     
     def waitForConfirms(): typings.bluebird.mod.^[Unit] = js.native
@@ -184,10 +172,10 @@ object mod {
     
     def close(): typings.bluebird.mod.^[Unit] = js.native
     
+    var connection: ServerProperties = js.native
+    
     def createChannel(): typings.bluebird.mod.^[Channel] = js.native
     
     def createConfirmChannel(): typings.bluebird.mod.^[ConfirmChannel] = js.native
-    
-    var serverProperties: ServerProperties = js.native
   }
 }

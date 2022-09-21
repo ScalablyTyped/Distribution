@@ -22,15 +22,15 @@ object SliderEvents {
   
   extension [Self <: SliderEvents](x: Self) {
     
-    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    inline def setSlidestart(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "slidestart", js.Any.fromFunction2(value))
+    inline def setSlidestart(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "slidestart", js.Any.fromFunction2(value))
     
     inline def setSlidestartUndefined: Self = StObject.set(x, "slidestart", js.undefined)
     
-    inline def setSlidestop(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "slidestop", js.Any.fromFunction2(value))
+    inline def setSlidestop(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "slidestop", js.Any.fromFunction2(value))
     
     inline def setSlidestopUndefined: Self = StObject.set(x, "slidestop", js.undefined)
   }

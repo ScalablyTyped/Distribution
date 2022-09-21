@@ -39,7 +39,7 @@ object Deployment {
     
     inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
-    inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
+    inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

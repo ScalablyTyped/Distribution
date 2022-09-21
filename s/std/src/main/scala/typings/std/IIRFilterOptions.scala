@@ -8,8 +8,10 @@ trait IIRFilterOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var feedback: js.Array[Double]
   
+  /* standard dom */
   var feedforward: js.Array[Double]
 }
 object IIRFilterOptions {
@@ -23,10 +25,10 @@ object IIRFilterOptions {
     
     inline def setFeedback(value: js.Array[Double]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    inline def setFeedbackVarargs(value: Double*): Self = StObject.set(x, "feedback", js.Array(value :_*))
+    inline def setFeedbackVarargs(value: Double*): Self = StObject.set(x, "feedback", js.Array(value*))
     
     inline def setFeedforward(value: js.Array[Double]): Self = StObject.set(x, "feedforward", value.asInstanceOf[js.Any])
     
-    inline def setFeedforwardVarargs(value: Double*): Self = StObject.set(x, "feedforward", js.Array(value :_*))
+    inline def setFeedforwardVarargs(value: Double*): Self = StObject.set(x, "feedforward", js.Array(value*))
   }
 }

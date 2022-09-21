@@ -11,9 +11,9 @@ Fork of the famous Sylvester vector, matrix and geometry library. Rewritten in E
 | Full name          | sylvester-es6 |
 | Keywords           | sylvester, glutils, matrix, vector, geometry, es6 |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 13190 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3597.3333333333335 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/pithumke/sylvester#readme)

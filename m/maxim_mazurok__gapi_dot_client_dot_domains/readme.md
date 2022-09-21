@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_domains
 
-Typings are for version 1.0.20201110
+Typings are for version 1.0.20220808
 
 ## Library description:
-TypeScript typings for Cloud Domains API v1beta1
+TypeScript typings for Cloud Domains API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.domains |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 767 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 624.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

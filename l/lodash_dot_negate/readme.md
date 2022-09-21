@@ -10,10 +10,10 @@ The lodash method `_.negate` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.negate |
 | Keywords           | lodash-modularized, negate |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 215693 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 127965.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

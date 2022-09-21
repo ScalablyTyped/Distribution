@@ -1,7 +1,5 @@
 package typings.winrt.global.Windows.Devices
 
-import typings.std.Date
-import typings.std.Uint8Array
 import typings.winrt.Windows.Devices.Sms.CellularClass
 import typings.winrt.Windows.Devices.Sms.ISmsBinaryMessage
 import typings.winrt.Windows.Devices.Sms.ISmsMessage
@@ -38,7 +36,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.DeleteSmsMessageOperation")
   @js.native
-  class DeleteSmsMessageOperation ()
+  open class DeleteSmsMessageOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.DeleteSmsMessageOperation {
     
@@ -60,7 +58,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.DeleteSmsMessagesOperation")
   @js.native
-  class DeleteSmsMessagesOperation ()
+  open class DeleteSmsMessagesOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.DeleteSmsMessagesOperation {
     
@@ -82,7 +80,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.GetSmsDeviceOperation")
   @js.native
-  class GetSmsDeviceOperation ()
+  open class GetSmsDeviceOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.GetSmsDeviceOperation {
     
@@ -104,7 +102,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.GetSmsMessageOperation")
   @js.native
-  class GetSmsMessageOperation ()
+  open class GetSmsMessageOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.GetSmsMessageOperation {
     
@@ -126,7 +124,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.GetSmsMessagesOperation")
   @js.native
-  class GetSmsMessagesOperation ()
+  open class GetSmsMessagesOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.GetSmsMessagesOperation {
     
@@ -148,7 +146,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SendSmsMessageOperation")
   @js.native
-  class SendSmsMessageOperation ()
+  open class SendSmsMessageOperation ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SendSmsMessageOperation {
     
@@ -170,7 +168,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsBinaryMessage")
   @js.native
-  class SmsBinaryMessage ()
+  open class SmsBinaryMessage ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsBinaryMessage {
     
@@ -178,7 +176,7 @@ object Sms {
     var format: SmsDataFormat = js.native
     
     /* CompleteClass */
-    override def getData(): Uint8Array = js.native
+    override def getData(): js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     var id: Double = js.native
@@ -187,7 +185,7 @@ object Sms {
     var messageClass: SmsMessageClass = js.native
     
     /* CompleteClass */
-    override def setData(value: Uint8Array): Unit = js.native
+    override def setData(value: js.typedarray.Uint8Array): Unit = js.native
   }
   
   @JSGlobal("Windows.Devices.Sms.SmsDataFormat")
@@ -210,7 +208,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsDevice")
   @js.native
-  class SmsDevice ()
+  open class SmsDevice ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsDevice {
     
@@ -230,10 +228,10 @@ object Sms {
     var messageStore: typings.winrt.Windows.Devices.Sms.SmsDeviceMessageStore = js.native
     
     /* CompleteClass */
-    var onsmsdevicestatuschanged: js.Any = js.native
+    var onsmsdevicestatuschanged: Any = js.native
     
     /* CompleteClass */
-    var onsmsmessagereceived: js.Any = js.native
+    var onsmsmessagereceived: Any = js.native
     
     /* CompleteClass */
     override def sendMessageAsync(message: ISmsMessage): typings.winrt.Windows.Devices.Sms.SendSmsMessageOperation = js.native
@@ -254,7 +252,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsDeviceMessageStore")
   @js.native
-  class SmsDeviceMessageStore ()
+  open class SmsDeviceMessageStore ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsDeviceMessageStore {
     
@@ -354,7 +352,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsMessageReceivedEventArgs")
   @js.native
-  class SmsMessageReceivedEventArgs ()
+  open class SmsMessageReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsMessageReceivedEventArgs {
     
@@ -379,7 +377,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsReceivedEventDetails")
   @js.native
-  class SmsReceivedEventDetails ()
+  open class SmsReceivedEventDetails ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsReceivedEventDetails {
     
@@ -392,7 +390,7 @@ object Sms {
   
   @JSGlobal("Windows.Devices.Sms.SmsTextMessage")
   @js.native
-  class SmsTextMessage ()
+  open class SmsTextMessage ()
     extends StObject
        with typings.winrt.Windows.Devices.Sms.SmsTextMessage {
     
@@ -421,7 +419,7 @@ object Sms {
     var partReferenceId: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /* CompleteClass */
     var to: String = js.native
@@ -436,7 +434,7 @@ object Sms {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromBinaryData(format: SmsDataFormat, value: Uint8Array): typings.winrt.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
+    inline def fromBinaryData(format: SmsDataFormat, value: js.typedarray.Uint8Array): typings.winrt.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
     
     inline def fromBinaryMessage(binaryMessage: typings.winrt.Windows.Devices.Sms.SmsBinaryMessage): typings.winrt.Windows.Devices.Sms.SmsTextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryMessage")(binaryMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
   }

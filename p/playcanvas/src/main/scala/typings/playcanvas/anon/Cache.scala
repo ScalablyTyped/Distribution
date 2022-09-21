@@ -8,9 +8,9 @@ trait Cache extends StObject {
   
   var async: js.UndefOr[Boolean] = js.undefined
   
-  var cache: js.UndefOr[js.Any] = js.undefined
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   var maxRetries: js.UndefOr[Double] = js.undefined
   
@@ -35,11 +35,11 @@ object Cache {
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

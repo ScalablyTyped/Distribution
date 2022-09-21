@@ -9,19 +9,19 @@ trait Mailer extends StObject {
   
   val Application: typings.activexWord.Word.Application
   
-  var BCCRecipients: js.Any
+  var BCCRecipients: Any
   
-  var CCRecipients: js.Any
+  var CCRecipients: Any
   
   val Creator: Double
   
-  var Enclosures: js.Any
+  var Enclosures: Any
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Received: Boolean
   
-  var Recipients: js.Any
+  var Recipients: Any
   
   val SendDateTime: VarDate
   
@@ -36,13 +36,13 @@ object Mailer {
   
   inline def apply(
     Application: Application,
-    BCCRecipients: js.Any,
-    CCRecipients: js.Any,
+    BCCRecipients: Any,
+    CCRecipients: Any,
     Creator: Double,
-    Enclosures: js.Any,
-    Parent: js.Any,
+    Enclosures: Any,
+    Parent: Any,
     Received: Boolean,
-    Recipients: js.Any,
+    Recipients: Any,
     SendDateTime: VarDate,
     Sender: String,
     Subject: String,
@@ -57,19 +57,19 @@ object Mailer {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setBCCRecipients(value: js.Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
+    inline def setBCCRecipients(value: Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
     
-    inline def setCCRecipients(value: js.Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
+    inline def setCCRecipients(value: Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setEnclosures(value: js.Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
+    inline def setEnclosures(value: Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReceived(value: Boolean): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
     
-    inline def setRecipients(value: js.Any): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: Any): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
     inline def setSendDateTime(value: VarDate): Self = StObject.set(x, "SendDateTime", value.asInstanceOf[js.Any])
     

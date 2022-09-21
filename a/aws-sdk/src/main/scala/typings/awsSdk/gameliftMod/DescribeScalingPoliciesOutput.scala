@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeScalingPoliciesOutput extends StObject {
   
   /**
-    * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
+    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -33,6 +33,6 @@ object DescribeScalingPoliciesOutput {
     
     inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
-    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value*))
   }
 }

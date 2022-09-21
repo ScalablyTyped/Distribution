@@ -11,9 +11,9 @@ Optimized bcrypt in plain JavaScript with zero dependencies. Compatible to 'bcry
 | Full name          | react-native-bcrypt |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 44599 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6346.0 |
+| # stars            | 3032.0 |
 
 ## Links
 - [Homepage](https://github.com/dcodeIO/bcrypt.js#readme)

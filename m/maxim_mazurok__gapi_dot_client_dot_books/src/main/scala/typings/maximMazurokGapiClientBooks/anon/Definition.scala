@@ -27,6 +27,6 @@ object Definition {
     
     inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    inline def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value*))
   }
 }

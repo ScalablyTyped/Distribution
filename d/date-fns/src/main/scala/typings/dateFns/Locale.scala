@@ -1,7 +1,7 @@
 package typings.dateFns
 
 import typings.dateFns.anon.DateTime
-import typings.dateFns.anon.Day
+import typings.dateFns.anon.DayPeriod
 import typings.dateFns.anon.FirstWeekContainsDateWeekStartsOn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,15 +11,15 @@ trait Locale extends StObject {
   
   var code: js.UndefOr[String] = js.undefined
   
-  var formatDistance: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var formatDistance: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var formatLong: js.UndefOr[DateTime] = js.undefined
   
-  var formatRelative: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var formatRelative: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
-  var localize: js.UndefOr[Day] = js.undefined
+  var localize: js.UndefOr[DayPeriod] = js.undefined
   
-  var `match`: js.UndefOr[Day] = js.undefined
+  var `match`: js.UndefOr[DayPeriod] = js.undefined
   
   var options: js.UndefOr[FirstWeekContainsDateWeekStartsOn] = js.undefined
 }
@@ -36,7 +36,7 @@ object Locale {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setFormatDistance(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
+    inline def setFormatDistance(value: /* repeated */ Any => Any): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
     
     inline def setFormatDistanceUndefined: Self = StObject.set(x, "formatDistance", js.undefined)
     
@@ -44,15 +44,15 @@ object Locale {
     
     inline def setFormatLongUndefined: Self = StObject.set(x, "formatLong", js.undefined)
     
-    inline def setFormatRelative(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
+    inline def setFormatRelative(value: /* repeated */ Any => Any): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
     
     inline def setFormatRelativeUndefined: Self = StObject.set(x, "formatRelative", js.undefined)
     
-    inline def setLocalize(value: Day): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
+    inline def setLocalize(value: DayPeriod): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
     
     inline def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
     
-    inline def setMatch(value: Day): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: DayPeriod): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     

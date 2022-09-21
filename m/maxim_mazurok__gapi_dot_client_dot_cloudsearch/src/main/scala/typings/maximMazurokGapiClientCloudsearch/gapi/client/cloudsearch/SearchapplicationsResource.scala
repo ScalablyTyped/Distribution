@@ -36,11 +36,15 @@ trait SearchapplicationsResource extends StObject {
   def list(): Request[ListSearchApplicationsResponse] = js.native
   def list(request: PageSize): Request[ListSearchApplicationsResponse] = js.native
   
-  /** Resets a search application to default settings. This will return an empty response. **Note:** This API requires an admin account to execute. */
-  def reset(request: KeyName): Request[Operation] = js.native
-  def reset(request: Key, body: ResetSearchApplicationRequest): Request[Operation] = js.native
-  
-  def update(request: Key, body: SearchApplication): Request[Operation] = js.native
   /** Updates a search application. **Note:** This API requires an admin account to execute. */
-  def update(request: NameOauthtoken): Request[Operation] = js.native
+  def patch(request: KeyName): Request[Operation] = js.native
+  def patch(request: Key, body: SearchApplication): Request[Operation] = js.native
+  
+  def reset(request: Key, body: ResetSearchApplicationRequest): Request[Operation] = js.native
+  /** Resets a search application to default settings. This will return an empty response. **Note:** This API requires an admin account to execute. */
+  def reset(request: NameOauthtoken): Request[Operation] = js.native
+  
+  /** Updates a search application. **Note:** This API requires an admin account to execute. */
+  def update(request: KeyName): Request[Operation] = js.native
+  def update(request: Key, body: SearchApplication): Request[Operation] = js.native
 }

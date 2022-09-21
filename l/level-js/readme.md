@@ -10,10 +10,10 @@ An abstract-leveldown compliant store on top of IndexedDB
 | ------------------ | :-------------: |
 | Full name          | level-js |
 | Keywords           | level, leveldb, indexeddb, abstract-leveldown |
-| # releases         | 6 |
-| # dependents       | 76 |
-| # downloads        | 6538687 |
-| # stars            | 11 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1058739.6666666667 |
+| # stars            | 515.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/level-js)

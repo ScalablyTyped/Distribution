@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox__sphericalmercator
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Transformations between the Web Mercator projection and Latitude Longitude coordinates
@@ -10,15 +10,15 @@ Transformations between the Web Mercator projection and Latitude Longitude coord
 | ------------------ | :-------------: |
 | Full name          | @mapbox/sphericalmercator |
 | Keywords           | map, projection, transformations |
-| # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 1743645 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 234907.33333333334 |
+| # stars            | 235.0 |
 
 ## Links
-- [Homepage](https://github.com/mapbox/node-sphericalmercator#readme)
-- [Bugs](https://github.com/mapbox/node-sphericalmercator/issues)
-- [Repository](https://github.com/mapbox/node-sphericalmercator)
+- [Homepage](https://github.com/mapbox/sphericalmercator#readme)
+- [Bugs](https://github.com/mapbox/sphericalmercator/issues)
+- [Repository](https://github.com/mapbox/sphericalmercator)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Fsphericalmercator)
     
 

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-typeahead", "Highlighter")
 @js.native
-class Highlighter protected ()
-  extends PureComponent[HighligherProps, js.Object, js.Any] {
+open class Highlighter protected ()
+  extends PureComponent[HighligherProps, js.Object, Any] {
   def this(props: HighligherProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HighligherProps, context: js.Any) = this()
+  def this(props: HighligherProps, context: Any) = this()
 }

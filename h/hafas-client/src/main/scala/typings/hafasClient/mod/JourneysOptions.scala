@@ -1,6 +1,5 @@
 package typings.hafasClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,16 @@ trait JourneysOptions extends StObject {
   var accessibility: js.UndefOr[String] = js.undefined
   
   /**
+    * age
+    * @default none
+    */
+  var age: js.UndefOr[Double] = js.undefined
+  
+  /**
     * arrival date, departure and arrival are mutually exclusive.
     * @default undefined
     */
-  var arrival: js.UndefOr[Date] = js.undefined
+  var arrival: js.UndefOr[js.Date] = js.undefined
   
   /**
     * only bike-friendly journeys
@@ -29,7 +34,7 @@ trait JourneysOptions extends StObject {
     * departure date, undefined corresponds to Date.Now
     * @default undefined
     */
-  var departure: js.UndefOr[Date] = js.undefined
+  var departure: js.UndefOr[js.Date] = js.undefined
   
   /**
     * earlierThan, use {@link Journeys#earlierRef}, earlierThan and departure/arrival are mutually exclusive.
@@ -44,6 +49,12 @@ trait JourneysOptions extends StObject {
   var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * firstClass
+    * @default false
+    */
+  var firstClass: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * language to get results in
     * @default en
     */
@@ -54,6 +65,12 @@ trait JourneysOptions extends StObject {
     *  @default undefined
     */
   var laterThan: js.UndefOr[String] = js.undefined
+  
+  /**
+    *  LoyaltyCard
+    *  @default none
+    */
+  var loyaltyCard: js.UndefOr[LoyaltyCard] = js.undefined
   
   /**
     * return a shape for each leg?
@@ -132,7 +149,7 @@ trait JourneysOptions extends StObject {
   /**
     * @deprecated
     */
-  var when: js.UndefOr[Date] = js.undefined
+  var when: js.UndefOr[js.Date] = js.undefined
 }
 object JourneysOptions {
   
@@ -147,7 +164,11 @@ object JourneysOptions {
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    inline def setArrival(value: Date): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    
+    inline def setArrival(value: js.Date): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     
     inline def setArrivalUndefined: Self = StObject.set(x, "arrival", js.undefined)
     
@@ -155,7 +176,7 @@ object JourneysOptions {
     
     inline def setBikeUndefined: Self = StObject.set(x, "bike", js.undefined)
     
-    inline def setDeparture(value: Date): Self = StObject.set(x, "departure", value.asInstanceOf[js.Any])
+    inline def setDeparture(value: js.Date): Self = StObject.set(x, "departure", value.asInstanceOf[js.Any])
     
     inline def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
     
@@ -167,6 +188,10 @@ object JourneysOptions {
     
     inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
+    inline def setFirstClass(value: Boolean): Self = StObject.set(x, "firstClass", value.asInstanceOf[js.Any])
+    
+    inline def setFirstClassUndefined: Self = StObject.set(x, "firstClass", js.undefined)
+    
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
@@ -174,6 +199,10 @@ object JourneysOptions {
     inline def setLaterThan(value: String): Self = StObject.set(x, "laterThan", value.asInstanceOf[js.Any])
     
     inline def setLaterThanUndefined: Self = StObject.set(x, "laterThan", js.undefined)
+    
+    inline def setLoyaltyCard(value: LoyaltyCard): Self = StObject.set(x, "loyaltyCard", value.asInstanceOf[js.Any])
+    
+    inline def setLoyaltyCardUndefined: Self = StObject.set(x, "loyaltyCard", js.undefined)
     
     inline def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
@@ -227,7 +256,7 @@ object JourneysOptions {
     
     inline def setWalkingSpeedUndefined: Self = StObject.set(x, "walkingSpeed", js.undefined)
     
-    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }

@@ -10,10 +10,10 @@ Merge multiple files (js,css..) into single file to include somewhere
 | ------------------ | :-------------: |
 | Full name          | webpack-merge-and-include-globally |
 | Keywords           | webpack, global, js, merge, concat, global library, expose |
-| # releases         | 17 |
-| # dependents       | 5 |
-| # downloads        | 611911 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 213482.66666666666 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/markshapiro/webpack-merge-and-include-globally#readme)

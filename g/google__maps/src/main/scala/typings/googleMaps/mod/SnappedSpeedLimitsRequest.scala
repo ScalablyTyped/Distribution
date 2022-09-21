@@ -36,7 +36,7 @@ object SnappedSpeedLimitsRequest {
     
     inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch
   - typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite
   - typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.displayCapture
   - typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage
   - typings.devtoolsProtocol.devtoolsProtocolStrings.flash
   - typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation
@@ -42,6 +43,8 @@ object PermissionType {
   inline def clipboardReadWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite = "clipboardReadWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite]
   
   inline def clipboardSanitizedWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite = "clipboardSanitizedWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite]
+  
+  inline def displayCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.displayCapture = "displayCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.displayCapture]
   
   inline def durableStorage: typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage = "durableStorage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage]
   

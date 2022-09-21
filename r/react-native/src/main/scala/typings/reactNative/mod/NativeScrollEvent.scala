@@ -14,6 +14,11 @@ trait NativeScrollEvent extends StObject {
   
   var layoutMeasurement: NativeScrollSize
   
+  /**
+    * @platform ios
+    */
+  var targetContentOffset: js.UndefOr[NativeScrollPoint] = js.undefined
+  
   var velocity: js.UndefOr[NativeScrollVelocity] = js.undefined
   
   var zoomScale: Double
@@ -40,6 +45,10 @@ object NativeScrollEvent {
     inline def setContentSize(value: NativeScrollSize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
     inline def setLayoutMeasurement(value: NativeScrollSize): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
+    
+    inline def setTargetContentOffset(value: NativeScrollPoint): Self = StObject.set(x, "targetContentOffset", value.asInstanceOf[js.Any])
+    
+    inline def setTargetContentOffsetUndefined: Self = StObject.set(x, "targetContentOffset", js.undefined)
     
     inline def setVelocity(value: NativeScrollVelocity): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     

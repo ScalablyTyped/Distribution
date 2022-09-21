@@ -12,8 +12,6 @@ trait BaseFontSizeBreakpoints extends StObject {
   
   var colors: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[Snackbar] = js.undefined
-  
   var spacing: js.UndefOr[js.Object] = js.undefined
 }
 object BaseFontSizeBreakpoints {
@@ -36,10 +34,6 @@ object BaseFontSizeBreakpoints {
     inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
-    
-    inline def setComponents(value: Snackbar): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

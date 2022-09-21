@@ -1,7 +1,7 @@
 
 # Scala.js typings for irregular-plurals
 
-Typings are for version 3.2.0
+Typings are for version 3.3.0
 
 ## Library description:
 Map of nouns to their irregular plural form
@@ -10,10 +10,10 @@ Map of nouns to their irregular plural form
 | ------------------ | :-------------: |
 | Full name          | irregular-plurals |
 | Keywords           | word, words, list, map, hash, json, irregular, plural, plurals, noun, nouns |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 43208721 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4987168.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/irregular-plurals#readme)

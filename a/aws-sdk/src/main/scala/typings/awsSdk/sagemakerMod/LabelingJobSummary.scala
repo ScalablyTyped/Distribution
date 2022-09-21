@@ -14,7 +14,7 @@ trait LabelingJobSummary extends StObject {
   /**
     * The date and time that the job was created (timestamp).
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * If the LabelingJobStatus field is Failed, this field contains a description of the error.
@@ -54,7 +54,7 @@ trait LabelingJobSummary extends StObject {
   /**
     * The date and time that the job was last modified (timestamp).
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of a Lambda function. The function is run before each data object is sent to a worker.
@@ -69,12 +69,12 @@ trait LabelingJobSummary extends StObject {
 object LabelingJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     LabelCounters: LabelCounters,
     LabelingJobArn: LabelingJobArn,
     LabelingJobName: LabelingJobName,
     LabelingJobStatus: LabelingJobStatus,
-    LastModifiedTime: Timestamp,
+    LastModifiedTime: js.Date,
     PreHumanTaskLambdaArn: LambdaFunctionArn,
     WorkteamArn: WorkteamArn
   ): LabelingJobSummary = {
@@ -88,7 +88,7 @@ object LabelingJobSummary {
     
     inline def setAnnotationConsolidationLambdaArnUndefined: Self = StObject.set(x, "AnnotationConsolidationLambdaArn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object LabelingJobSummary {
     
     inline def setLabelingJobStatus(value: LabelingJobStatus): Self = StObject.set(x, "LabelingJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setPreHumanTaskLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "PreHumanTaskLambdaArn", value.asInstanceOf[js.Any])
     

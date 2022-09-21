@@ -35,7 +35,7 @@ object CompanionSetting {
     
     inline def setEnabledSizesUndefined: Self = StObject.set(x, "enabledSizes", js.undefined)
     
-    inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value :_*))
+    inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value*))
     
     inline def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
     

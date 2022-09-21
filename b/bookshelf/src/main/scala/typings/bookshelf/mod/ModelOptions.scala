@@ -1,27 +1,36 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModelOptions extends js.Object {
+trait ModelOptions extends StObject {
+  
   var hasTimestamps: js.UndefOr[Boolean] = js.undefined
+  
   var parse: js.UndefOr[Boolean] = js.undefined
+  
   var tableName: js.UndefOr[String] = js.undefined
 }
-
 object ModelOptions {
-  @scala.inline
-  def apply(
-    hasTimestamps: js.UndefOr[Boolean] = js.undefined,
-    parse: js.UndefOr[Boolean] = js.undefined,
-    tableName: String = null
-  ): ModelOptions = {
+  
+  inline def apply(): ModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasTimestamps)) __obj.updateDynamic("hasTimestamps")(hasTimestamps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.get.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
+  
+  extension [Self <: ModelOptions](x: Self) {
+    
+    inline def setHasTimestamps(value: Boolean): Self = StObject.set(x, "hasTimestamps", value.asInstanceOf[js.Any])
+    
+    inline def setHasTimestampsUndefined: Self = StObject.set(x, "hasTimestamps", js.undefined)
+    
+    inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+  }
 }
-

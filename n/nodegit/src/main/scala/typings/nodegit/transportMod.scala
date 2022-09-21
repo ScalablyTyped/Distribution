@@ -12,7 +12,7 @@ object transportMod {
   
   @JSImport("nodegit/transport", "Transport")
   @js.native
-  class Transport () extends StObject {
+  open class Transport () extends StObject {
     
     def init(version: Double): Double = js.native
     

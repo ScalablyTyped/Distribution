@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "random-obj-key" : "2.0.1"
+      "random-obj-key" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "random-obj-key" : "2.0.1"
+      "random-obj-key" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

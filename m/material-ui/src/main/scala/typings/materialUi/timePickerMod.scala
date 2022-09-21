@@ -8,10 +8,10 @@ object timePickerMod {
   
   @JSImport("material-ui/TimePicker", JSImport.Default)
   @js.native
-  class default () extends TimePicker
+  open class default () extends TimePicker
   
   @JSImport("material-ui/TimePicker", "TimePicker")
   @js.native
-  class TimePicker ()
+  open class TimePicker ()
     extends typings.materialUi.MaterialUI.TimePicker
 }

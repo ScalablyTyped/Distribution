@@ -65,7 +65,7 @@ object anon {
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

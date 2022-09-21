@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ITogglerOptions extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
+  
+  var toggler: js.UndefOr[String] = js.undefined
 }
 object ITogglerOptions {
   
@@ -20,5 +22,9 @@ object ITogglerOptions {
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setToggler(value: String): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
+    
+    inline def setTogglerUndefined: Self = StObject.set(x, "toggler", js.undefined)
   }
 }

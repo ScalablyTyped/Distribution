@@ -10,10 +10,10 @@ Gulp plugin to lint Pug (nee Jade) files
 | ------------------ | :-------------: |
 | Full name          | gulp-pug-linter |
 | Keywords           | gulp, lint, pug, plugin, jade |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 65091 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5223.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ilyakam/gulp-pug-linter#readme)

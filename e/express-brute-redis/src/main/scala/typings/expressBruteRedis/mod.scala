@@ -1,7 +1,6 @@
 package typings.expressBruteRedis
 
-import typings.expressBruteRedis.anon.ClientOptsclientRedisClie
-import typings.std.Error
+import typings.expressBruteRedis.anon.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +12,18 @@ object mod {
     */
   @JSImport("express-brute-redis", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RedisStore {
-    def this(options: Unit, args: js.Any*) = this()
     /**
       * @summary constructor
       * @param options Options to configure the Redis client.
       */
-    def this(options: ClientOptsclientRedisClie, args: js.Any*) = this()
+    def this(
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) & Client,
+      args: Any*
+    ) = this()
+    def this(options: Unit, args: Any*) = this()
   }
   @JSImport("express-brute-redis", JSImport.Namespace)
   @js.native
@@ -30,8 +32,8 @@ object mod {
   /* static member */
   @JSImport("express-brute-redis", "Redis")
   @js.native
-  def Redis: js.Any = js.native
-  inline def Redis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redis")(x.asInstanceOf[js.Any])
+  def Redis: Any = js.native
+  inline def Redis_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redis")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaults {
@@ -66,13 +68,13 @@ object mod {
       * @summary Gets a key in Redis storage.
       */
     def get(key: String): String | Null = js.native
-    def get(key: String, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): String | Null = js.native
+    def get(key: String, callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit]): String | Null = js.native
     
     /**
       * @summary Resets a key in Redis storage.
       */
-    def reset(key: String, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit], args: js.Any*): Unit = js.native
-    def reset(key: String, callback: Unit, args: js.Any*): Unit = js.native
+    def reset(key: String, callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit], args: Any*): Unit = js.native
+    def reset(key: String, callback: Unit, args: Any*): Unit = js.native
     
     /**
       * @summary Sets a key in Redis storage.

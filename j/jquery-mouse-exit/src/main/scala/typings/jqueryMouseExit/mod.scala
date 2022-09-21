@@ -67,7 +67,7 @@ object mod {
       def on_mouseExit(
         event: mouseExit,
         handler: js.Function2[
-              /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
+              /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
               /* data */ FocusElements, 
               Unit
             ]

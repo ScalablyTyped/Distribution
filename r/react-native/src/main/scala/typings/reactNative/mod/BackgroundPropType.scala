@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackgroundPropType extends StObject
 object BackgroundPropType {
   
-  inline def RippleBackgroundPropType(): typings.reactNative.mod.RippleBackgroundPropType = {
-    val __obj = js.Dynamic.literal()
+  inline def RippleBackgroundPropType(borderless: Boolean): typings.reactNative.mod.RippleBackgroundPropType = {
+    val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RippleAndroid")
     __obj.asInstanceOf[typings.reactNative.mod.RippleBackgroundPropType]
   }

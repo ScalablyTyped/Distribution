@@ -16,6 +16,8 @@ trait MinMaxReducer extends StObject {
   
   /* protected */ var _onAfterUnbindObserver: Nullable[Observer[RenderTargetTexture]] = js.native
   
+  /* protected */ var _onContextRestoredObserver: Nullable[Observer[ThinEngine]] = js.native
+  
   /* protected */ var _postProcessManager: PostProcessManager = js.native
   
   /* protected */ var _reductionSteps: Nullable[js.Array[PostProcess]] = js.native
@@ -25,7 +27,7 @@ trait MinMaxReducer extends StObject {
   /**
     * Activates the reduction computation.
     * When activated, the observers registered in onAfterReductionPerformed are
-    * called after the compuation is performed
+    * called after the computation is performed
     */
   def activate(): Unit = js.native
   

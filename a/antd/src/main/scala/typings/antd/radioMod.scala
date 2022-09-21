@@ -21,7 +21,7 @@ object radioMod extends Shortcut {
   
   @JSImport("antd/lib/radio", "Button")
   @js.native
-  val Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = js.native
+  val Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[Any]] = js.native
   
   @JSImport("antd/lib/radio", "Group")
   @js.native
@@ -32,9 +32,11 @@ object radioMod extends Shortcut {
     extends StObject
        with ForwardRefExoticComponent[RadioProps & RefAttributes[HTMLElement]] {
     
-    var Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = js.native
+    var Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[Any]] = js.native
     
     var Group: MemoExoticComponent[ForwardRefExoticComponent[RadioGroupProps & RefAttributes[HTMLDivElement]]] = js.native
+    
+    var __ANT_RADIO: Boolean = js.native
   }
   
   type _To = CompoundedComponent

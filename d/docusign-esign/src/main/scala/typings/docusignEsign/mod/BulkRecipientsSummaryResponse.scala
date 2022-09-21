@@ -51,7 +51,7 @@ object BulkRecipientsSummaryResponse {
     
     inline def setBulkRecipientsUriUndefined: Self = StObject.set(x, "bulkRecipientsUri", js.undefined)
     
-    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
+    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value*))
     
     inline def setErrorDetails(
       value: js.Array[
@@ -63,6 +63,6 @@ object BulkRecipientsSummaryResponse {
     
     inline def setErrorDetailsVarargs(
       value: (/* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails)*
-    ): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    ): Self = StObject.set(x, "errorDetails", js.Array(value*))
   }
 }

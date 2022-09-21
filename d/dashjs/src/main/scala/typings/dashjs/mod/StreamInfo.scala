@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dashjs", "StreamInfo")
 @js.native
-class StreamInfo () extends StObject {
+open class StreamInfo () extends StObject {
   
   var duration: Double = js.native
   
@@ -16,7 +16,7 @@ class StreamInfo () extends StObject {
   
   var isLast: Boolean = js.native
   
-  var manifestInfo: js.Object = js.native
+  var manifestInfo: IManifestInfo = js.native
   
   var start: Double = js.native
 }

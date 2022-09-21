@@ -22,7 +22,7 @@ object ReturnValue {
     
     inline def setItems(value: js.Array[IWwwFormUrlDecoderEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: IWwwFormUrlDecoderEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IWwwFormUrlDecoderEntry*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }

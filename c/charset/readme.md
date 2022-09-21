@@ -10,10 +10,10 @@ Get the content charset from header and html content-type.
 | ------------------ | :-------------: |
 | Full name          | charset |
 | Keywords           | charset, content-type, ContentType, Content-Type, xml, encoding |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 8915187 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2075401.6666666667 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/charset)

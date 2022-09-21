@@ -13,7 +13,7 @@ trait CustomerGateway extends StObject {
   
   def find(customerId: String): js.Promise[Customer]
   
-  def search(searchFn: js.Any): Readable
+  def search(searchFn: Any): Readable
   
   def update(customerId: String, updates: CustomerUpdateRequest): js.Promise[ValidatedResponse[Customer]]
 }
@@ -23,7 +23,7 @@ object CustomerGateway {
     create: CustomerCreateRequest => js.Promise[ValidatedResponse[Customer]],
     delete: String => js.Promise[Unit],
     find: String => js.Promise[Customer],
-    search: js.Any => Readable,
+    search: Any => Readable,
     update: (String, CustomerUpdateRequest) => js.Promise[ValidatedResponse[Customer]]
   ): CustomerGateway = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), find = js.Any.fromFunction1(find), search = js.Any.fromFunction1(search), update = js.Any.fromFunction2(update))
@@ -38,7 +38,7 @@ object CustomerGateway {
     
     inline def setFind(value: String => js.Promise[Customer]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
     inline def setUpdate(value: (String, CustomerUpdateRequest) => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }

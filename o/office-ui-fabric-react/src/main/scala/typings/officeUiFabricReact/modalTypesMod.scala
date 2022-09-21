@@ -2,6 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
+import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import typings.officeUiFabricReact.iaccessiblepopuppropsMod.IAccessiblePopupProps
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.layerTypesMod.ILayerProps
@@ -32,7 +33,7 @@ object modalTypesMod {
     
     /**
       * Optional selector for the element where the drag can be initiated. If not supplied when
-      * isDraggable is true dragging can be initated by the whole contents of the modal
+      * isDraggable is true dragging can be initiated by the whole contents of the modal
       */
     var dragHandleSelector: js.UndefOr[String] = js.undefined
     
@@ -113,7 +114,7 @@ object modalTypesMod {
     
     /**
       * Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
-      * @defaultvalue false
+      * @default false
       */
     var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
     
@@ -146,14 +147,28 @@ object modalTypesMod {
     var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Set of props to customize the `FocusTrapZone` inside of the `Modal`.
+      * @default `{}`
+      */
+    var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
+    
+    /**
+      * Determines the ARIA role of the dialog (alertdialog/dialog)
+      * If this is set, it will override the ARIA role determined by isBlocking and isModeless
+      *
+      * For more information regarding dialogs please see https://w3c.github.io/aria-practices/#alertdialog
+      */
+    var isAlert: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
-      * @defaultvalue false
+      * @default false
       */
     var isBlocking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the overlay is dark themed.
-      * @defaultvalue true
+      * @default true
       */
     var isDarkOverlay: js.UndefOr[Boolean] = js.undefined
     
@@ -166,7 +181,7 @@ object modalTypesMod {
     
     /**
       * Whether the dialog is displayed.
-      * @defaultvalue false
+      * @default false
       */
     var isOpen: js.UndefOr[Boolean] = js.undefined
     
@@ -179,13 +194,13 @@ object modalTypesMod {
       * A callback function for when the Modal is dismissed light dismiss, before the animation completes.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], Any]
       ] = js.undefined
     
     /**
       * A callback function which is called after the Modal is dismissed and the animation is complete.
       */
-    var onDismissed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onDismissed: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * A callback function for when the Modal content is mounted on the overlay layer
@@ -264,6 +279,14 @@ object modalTypesMod {
       
       inline def setEnableAriaHiddenSiblingsUndefined: Self = StObject.set(x, "enableAriaHiddenSiblings", js.undefined)
       
+      inline def setFocusTrapZoneProps(value: IFocusTrapZoneProps): Self = StObject.set(x, "focusTrapZoneProps", value.asInstanceOf[js.Any])
+      
+      inline def setFocusTrapZonePropsUndefined: Self = StObject.set(x, "focusTrapZoneProps", js.undefined)
+      
+      inline def setIsAlert(value: Boolean): Self = StObject.set(x, "isAlert", value.asInstanceOf[js.Any])
+      
+      inline def setIsAlertUndefined: Self = StObject.set(x, "isAlert", js.undefined)
+      
       inline def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
       
       inline def setIsBlockingUndefined: Self = StObject.set(x, "isBlocking", js.undefined)
@@ -284,11 +307,11 @@ object modalTypesMod {
       
       inline def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      inline def setOnDismissed(value: () => Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
       inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
       

@@ -9,9 +9,6 @@ trait IStatsContext extends StObject {
   /** StatsContext clientName */
   var clientName: js.UndefOr[String | Null] = js.undefined
   
-  /** StatsContext clientReferenceId */
-  var clientReferenceId: js.UndefOr[String | Null] = js.undefined
-  
   /** StatsContext clientVersion */
   var clientVersion: js.UndefOr[String | Null] = js.undefined
 }
@@ -29,12 +26,6 @@ object IStatsContext {
     inline def setClientNameNull: Self = StObject.set(x, "clientName", null)
     
     inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
-    
-    inline def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
-    
-    inline def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
-    
-    inline def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
     inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     

@@ -9,18 +9,15 @@ trait SchemaScreenshotCluster extends StObject {
   /**
     * A string that describes the activity of every screen in the cluster.
     */
-  var activity: js.UndefOr[String] = js.undefined
+  var activity: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A unique identifier for the cluster.
+    * A unique identifier for the cluster. @OutputOnly
     */
-  var clusterId: js.UndefOr[String] = js.undefined
+  var clusterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A singular screen that represents the cluster as a whole. This screen
-    * will act as the &quot;cover&quot; of the entire cluster. When users look
-    * at the clusters, only the key screen from each cluster will be shown.
-    * Which screen is the key screen is determined by the ClusteringAlgorithm
+    * A singular screen that represents the cluster as a whole. This screen will act as the "cover" of the entire cluster. When users look at the clusters, only the key screen from each cluster will be shown. Which screen is the key screen is determined by the ClusteringAlgorithm
     */
   var keyScreen: js.UndefOr[SchemaScreen] = js.undefined
   
@@ -40,9 +37,13 @@ object SchemaScreenshotCluster {
     
     inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
+    inline def setActivityNull: Self = StObject.set(x, "activity", null)
+    
     inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    
+    inline def setClusterIdNull: Self = StObject.set(x, "clusterId", null)
     
     inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
@@ -54,6 +55,6 @@ object SchemaScreenshotCluster {
     
     inline def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
     
-    inline def setScreensVarargs(value: SchemaScreen*): Self = StObject.set(x, "screens", js.Array(value :_*))
+    inline def setScreensVarargs(value: SchemaScreen*): Self = StObject.set(x, "screens", js.Array(value*))
   }
 }

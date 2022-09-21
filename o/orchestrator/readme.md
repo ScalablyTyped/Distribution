@@ -10,10 +10,10 @@ A module for sequencing and executing tasks and dependencies in maximum concurre
 | ------------------ | :-------------: |
 | Full name          | orchestrator |
 | Keywords           | async, task, parallel, compose |
-| # releases         | 0 |
-| # dependents       | 90 |
-| # downloads        | 25351308 |
-| # stars            | 39 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1227597.3333333333 |
+| # stars            | 1227.0 |
 
 ## Links
 - [Homepage](https://github.com/robrich/orchestrator)

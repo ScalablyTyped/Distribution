@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioTracksParam extends StObject {
   
-  var levels: js.Array[js.Any]
+  var levels: js.Array[Any]
 }
 object AudioTracksParam {
   
-  inline def apply(levels: js.Array[js.Any]): AudioTracksParam = {
+  inline def apply(levels: js.Array[Any]): AudioTracksParam = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTracksParam]
   }
   
   extension [Self <: AudioTracksParam](x: Self) {
     
-    inline def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    inline def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Any*): Self = StObject.set(x, "levels", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ object constantsMod {
   
   @JSImport("@devexpress/utils/lib/constants", "Constants")
   @js.native
-  class Constants () extends StObject
+  open class Constants () extends StObject
   /* static members */
   object Constants {
     
@@ -34,7 +34,7 @@ object constantsMod {
   
   @JSImport("@devexpress/utils/lib/constants", "Int32Constants")
   @js.native
-  class Int32Constants () extends StObject
+  open class Int32Constants () extends StObject
   /* static members */
   object Int32Constants {
     

@@ -108,7 +108,7 @@ object XConnectionPoint {
     getConnectionPointContainer: () => XConnectionPointContainer,
     getConnectionType: () => `type`,
     getConnections: () => SafeArray[XInterface],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unadvise: XInterface => Unit
   ): XConnectionPoint = {

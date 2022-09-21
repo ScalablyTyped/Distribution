@@ -36,6 +36,6 @@ object ExecutionError {
     
     inline def setScriptStackTraceElementsUndefined: Self = StObject.set(x, "scriptStackTraceElements", js.undefined)
     
-    inline def setScriptStackTraceElementsVarargs(value: ScriptStackTraceElement*): Self = StObject.set(x, "scriptStackTraceElements", js.Array(value :_*))
+    inline def setScriptStackTraceElementsVarargs(value: ScriptStackTraceElement*): Self = StObject.set(x, "scriptStackTraceElements", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-dedent
 
-Typings are for version 2.0.0
+Typings are for version 2.2.0
 
 ## Library description:
 TypeScript package which smartly trims and strips indentation from multi-line strings
@@ -10,10 +10,10 @@ TypeScript package which smartly trims and strips indentation from multi-line st
 | ------------------ | :-------------: |
 | Full name          | ts-dedent |
 | Keywords           | dedent, deindent, indentation, multi-line string, multiline strings, template literals, template strings, ts, typescript, es6, harmony |
-| # releases         | 5 |
-| # dependents       | 58 |
-| # downloads        | 51383098 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2.129019E7 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/tamino-martinius/node-ts-dedent#readme)

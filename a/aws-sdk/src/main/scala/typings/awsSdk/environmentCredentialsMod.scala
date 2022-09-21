@@ -9,7 +9,7 @@ object environmentCredentialsMod {
   
   @JSImport("aws-sdk/lib/credentials/environment_credentials", "EnvironmentCredentials")
   @js.native
-  class EnvironmentCredentials protected () extends Credentials {
+  open class EnvironmentCredentials protected () extends Credentials {
     /**
       * Creates a new EnvironmentCredentials class with a given variable prefix envPrefix.
       * @param {string} envPrefix - The prefix for the environment variable names excluding the separating underscore.

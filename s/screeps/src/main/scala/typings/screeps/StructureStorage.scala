@@ -13,7 +13,7 @@ trait StructureStorage
      with OwnedStructure[STRUCTURE_STORAGE]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * An object with the storage contents.

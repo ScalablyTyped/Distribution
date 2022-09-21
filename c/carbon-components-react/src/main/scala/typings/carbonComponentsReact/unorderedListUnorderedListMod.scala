@@ -18,6 +18,8 @@ object unorderedListUnorderedListMod extends Shortcut {
     extends StObject
        with HTMLAttributes[HTMLUListElement] {
     
+    var isExpressive: js.UndefOr[Boolean] = js.undefined
+    
     var nested: js.UndefOr[Boolean] = js.undefined
   }
   object UnorderedListProps {
@@ -28,6 +30,10 @@ object unorderedListUnorderedListMod extends Shortcut {
     }
     
     extension [Self <: UnorderedListProps](x: Self) {
+      
+      inline def setIsExpressive(value: Boolean): Self = StObject.set(x, "isExpressive", value.asInstanceOf[js.Any])
+      
+      inline def setIsExpressiveUndefined: Self = StObject.set(x, "isExpressive", js.undefined)
       
       inline def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
       

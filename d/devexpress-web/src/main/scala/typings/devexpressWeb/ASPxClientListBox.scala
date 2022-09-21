@@ -19,12 +19,12 @@ trait ASPxClientListBox
     * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
-  def AddItem(text: String, value: js.Any): Double = js.native
-  def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: String, value: Any): Double = js.native
+  def AddItem(text: String, value: Any, imageUrl: String): Double = js.native
   def AddItem(text: String, value: Unit, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String]): Double = js.native
-  def AddItem(text: js.Array[String], value: js.Any): Double = js.native
-  def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: js.Array[String], value: Any): Double = js.native
+  def AddItem(text: js.Array[String], value: Any, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String], value: Unit, imageUrl: String): Double = js.native
   
   /**
@@ -87,7 +87,7 @@ trait ASPxClientListBox
     * Returns a list box item by its value. A ASPxClientListEditItem object that represents the list box item. null (Nothing in Visual Basic) if the item was not found.
     * @param value An object that specifies the item's value.
     */
-  def FindItemByValue(value: js.Any): ASPxClientListEditItem = js.native
+  def FindItemByValue(value: Any): ASPxClientListEditItem = js.native
   
   /**
     * Returns an item specified by its index within the list box editor's item collection. An ASPxClientListEditItem object representing the collection item found.
@@ -113,7 +113,7 @@ trait ASPxClientListBox
   /**
     * Returns an array of the list editor's selected items values.
     */
-  def GetSelectedValues(): js.Array[js.Any] = js.native
+  def GetSelectedValues(): js.Array[Any] = js.native
   
   /** @deprecated Use the AdjustControl method instead. */
   /**
@@ -128,12 +128,12 @@ trait ASPxClientListBox
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
   def InsertItem(index: Double, text: String): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Any): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Any, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: String, value: Unit, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Any): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Any, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: Unit, imageUrl: String): Unit = js.native
   
   /**
@@ -215,7 +215,7 @@ trait ASPxClientListBox
     * Select the items with the specified values within a list box.
     * @param values An array of Object[] objects that represent the item's values.
     */
-  def SelectValues(values: js.Array[js.Any]): Unit = js.native
+  def SelectValues(values: js.Array[Any]): Unit = js.native
   
   /**
     * Occurs on the client side after a different item in the list box has been selected (focus has been moved from one item to another).
@@ -291,5 +291,5 @@ trait ASPxClientListBox
     * Unselects an array of the list box items with the specified values.
     * @param values An array of Object[] objects that represent the values.
     */
-  def UnselectValues(values: js.Array[js.Any]): Unit = js.native
+  def UnselectValues(values: js.Array[Any]): Unit = js.native
 }

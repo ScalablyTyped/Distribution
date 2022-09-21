@@ -10,10 +10,10 @@ virtual domain hosting
 | ------------------ | :-------------: |
 | Full name          | vhost |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 150 |
-| # downloads        | 6836365 |
-| # stars            | 54 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 502624.0 |
+| # stars            | 724.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/vhost)

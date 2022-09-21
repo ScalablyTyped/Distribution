@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@twilio/notifications" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@twilio/notifications" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

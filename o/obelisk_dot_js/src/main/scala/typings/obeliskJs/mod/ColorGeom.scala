@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "ColorGeom")
 @js.native
-class ColorGeom () extends StObject
+open class ColorGeom () extends StObject
 /* static members */
 object ColorGeom {
   

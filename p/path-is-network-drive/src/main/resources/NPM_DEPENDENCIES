@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "path-is-network-drive" : "1.0.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "path-is-network-drive" : "1.0.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

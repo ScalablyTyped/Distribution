@@ -29,9 +29,8 @@ trait InstanceGroupManager extends StObject {
   
   /**
     * Fingerprint of this resource. This field may be used in optimistic locking. It will be ignored when inserting an InstanceGroupManager. An up-to-date fingerprint must be provided in
-    * order to update the InstanceGroupManager, otherwise the request will fail with error 412 conditionNotMet.
-    *
-    * To see the latest fingerprint, make a get() request to retrieve an InstanceGroupManager.
+    * order to update the InstanceGroupManager, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get() request to retrieve an
+    * InstanceGroupManager.
     */
   var fingerprint: js.UndefOr[String] = js.undefined
   
@@ -84,11 +83,9 @@ trait InstanceGroupManager extends StObject {
   var updatePolicy: js.UndefOr[InstanceGroupManagerUpdatePolicy] = js.undefined
   
   /**
-    * Specifies the instance templates used by this managed instance group to create instances.
-    *
-    * Each version is defined by an instanceTemplate and a name. Every version can appear at most once per instance group. This field overrides the top-level instanceTemplate field. Read
-    * more about the relationships between these fields. Exactly one version must leave the targetSize field unset. That version will be applied to all remaining instances. For more
-    * information, read about canary updates.
+    * Specifies the instance templates used by this managed instance group to create instances. Each version is defined by an instanceTemplate and a name. Every version can appear at most
+    * once per instance group. This field overrides the top-level instanceTemplate field. Read more about the relationships between these fields. Exactly one version must leave the
+    * targetSize field unset. That version will be applied to all remaining instances. For more information, read about canary updates.
     */
   var versions: js.UndefOr[js.Array[InstanceGroupManagerVersion]] = js.undefined
   
@@ -108,7 +105,7 @@ object InstanceGroupManager {
     
     inline def setAutoHealingPoliciesUndefined: Self = StObject.set(x, "autoHealingPolicies", js.undefined)
     
-    inline def setAutoHealingPoliciesVarargs(value: InstanceGroupManagerAutoHealingPolicy*): Self = StObject.set(x, "autoHealingPolicies", js.Array(value :_*))
+    inline def setAutoHealingPoliciesVarargs(value: InstanceGroupManagerAutoHealingPolicy*): Self = StObject.set(x, "autoHealingPolicies", js.Array(value*))
     
     inline def setBaseInstanceName(value: String): Self = StObject.set(x, "baseInstanceName", value.asInstanceOf[js.Any])
     
@@ -158,7 +155,7 @@ object InstanceGroupManager {
     
     inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value*))
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
@@ -180,7 +177,7 @@ object InstanceGroupManager {
     
     inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value*))
     
     inline def setTargetSize(value: Double): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
@@ -194,7 +191,7 @@ object InstanceGroupManager {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: InstanceGroupManagerVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: InstanceGroupManagerVersion*): Self = StObject.set(x, "versions", js.Array(value*))
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     

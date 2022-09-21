@@ -19,12 +19,12 @@ trait OutgoingCertificate extends StObject {
   /**
     * The certificate creation date.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the transfer was initiated.
     */
-  var transferDate: js.UndefOr[DateType] = js.undefined
+  var transferDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The transfer message.
@@ -32,7 +32,7 @@ trait OutgoingCertificate extends StObject {
   var transferMessage: js.UndefOr[Message] = js.undefined
   
   /**
-    * The AWS account to which the transfer was made.
+    * The Amazon Web Services account to which the transfer was made.
     */
   var transferredTo: js.UndefOr[AwsAccountId] = js.undefined
 }
@@ -53,11 +53,11 @@ object OutgoingCertificate {
     
     inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    inline def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
+    inline def setTransferDate(value: js.Date): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
     inline def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     

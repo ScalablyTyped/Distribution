@@ -21,6 +21,9 @@ trait Tag extends StObject {
     */
   var blockingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Consent settings of a tag. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
+  var consentSettings: js.UndefOr[TagConsentSetting] = js.undefined
+  
   /** GTM Container ID. */
   var containerId: js.UndefOr[String] = js.undefined
   
@@ -128,13 +131,17 @@ object Tag {
     
     inline def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
     
-    inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
+    inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value*))
     
     inline def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
     
     inline def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
     
-    inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
+    inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value*))
+    
+    inline def setConsentSettings(value: TagConsentSetting): Self = StObject.set(x, "consentSettings", value.asInstanceOf[js.Any])
+    
+    inline def setConsentSettingsUndefined: Self = StObject.set(x, "consentSettings", js.undefined)
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
@@ -148,13 +155,13 @@ object Tag {
     
     inline def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
     
-    inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
+    inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value*))
     
     inline def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
     
     inline def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
     
-    inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
+    inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value*))
     
     inline def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
     
@@ -180,7 +187,7 @@ object Tag {
     
     inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
@@ -210,7 +217,7 @@ object Tag {
     
     inline def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
     
-    inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
+    inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value*))
     
     inline def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
     
@@ -228,7 +235,7 @@ object Tag {
     
     inline def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
     
-    inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
+    inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ Parse a JSON string that has git merge conflicts, resolving if possible
 | Full name          | parse-conflict-json |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 130582 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3371156.3333333335 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/parse-conflict-json#readme)

@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("bidirectional-map", JSImport.Default)
   @js.native
-  class default[TValue] ()
+  open class default[TValue] ()
     extends StObject
        with BiMap[TValue] {
     def this(`object`: StringDictionary[TValue]) = this()

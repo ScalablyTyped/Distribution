@@ -17,5 +17,5 @@ trait ClassBreaksRendererConstructor
 Instantiable0[ClassBreaksRenderer]
      with Instantiable1[/* properties */ ClassBreaksRendererProperties, ClassBreaksRenderer] {
   
-  def fromJSON(json: js.Any): ClassBreaksRenderer = js.native
+  def fromJSON(json: Any): ClassBreaksRenderer = js.native
 }

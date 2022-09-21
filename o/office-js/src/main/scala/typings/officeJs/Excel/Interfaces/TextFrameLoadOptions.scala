@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the text frame of a shape object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait TextFrameLoadOptions extends StObject {
@@ -19,105 +19,105 @@ trait TextFrameLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoSizeSetting: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the bottom margin, in points, of the text frame.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bottomMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the text frame contains text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var hasText: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the horizontal alignment of the text frame. See `Excel.ShapeTextHorizontalAlignment` for details.
     *
-    * Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the horizontal overflow behavior of the text frame. See `Excel.ShapeTextHorizontalOverflow` for details.
     *
-    * Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var horizontalOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the left margin, in points, of the text frame.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the angle to which the text is oriented for the text frame. See `Excel.ShapeTextOrientation` for details.
     *
-    * Represents the angle to which the text is oriented for the text frame. See Excel.ShapeTextOrientation for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var orientation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the reading order of the text frame, either left-to-right or right-to-left. See `Excel.ShapeTextReadingOrder` for details.
     *
-    * Represents the reading order of the text frame, either left-to-right or right-to-left. See Excel.ShapeTextReadingOrder for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the right margin, in points, of the text frame.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See `Excel.TextRange` for details.
     *
-    * Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See Excel.TextRange for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var textRange: js.UndefOr[TextRangeLoadOptions] = js.undefined
   
   /**
-    *
     * Represents the top margin, in points, of the text frame.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var topMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the vertical alignment of the text frame. See `Excel.ShapeTextVerticalAlignment` for details.
     *
-    * Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
     *
-    * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var verticalOverflow: js.UndefOr[Boolean] = js.undefined

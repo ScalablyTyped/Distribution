@@ -34,7 +34,7 @@ object DataSource {
     
     inline def setCalculatedColumnsUndefined: Self = StObject.set(x, "calculatedColumns", js.undefined)
     
-    inline def setCalculatedColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "calculatedColumns", js.Array(value :_*))
+    inline def setCalculatedColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "calculatedColumns", js.Array(value*))
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

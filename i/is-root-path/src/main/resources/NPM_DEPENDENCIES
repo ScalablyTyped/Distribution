@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-root-path" : "2.0.0"
+      "is-root-path" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-root-path" : "2.0.0"
+      "is-root-path" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

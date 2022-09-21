@@ -8,41 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information about the column-sorted event and its related worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait WorksheetColumnSortedEventArgs extends StObject {
   
   /**
-    *
     * Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result of the sort operation are returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var address: String
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var `type`: WorksheetColumnSorted
   
   /**
+    * Gets the ID of the worksheet where the sorting happened.
     *
-    * Gets the id of the worksheet where the sorting happened.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var worksheetId: String

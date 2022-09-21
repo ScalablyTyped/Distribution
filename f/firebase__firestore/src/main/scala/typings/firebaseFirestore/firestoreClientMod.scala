@@ -1,31 +1,46 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.PartialObserverViewSnapsh
+import typings.firebaseFirestore.anon.PartialObservervoid
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
-import typings.firebaseFirestore.componentProviderMod.ComponentProvider
+import typings.firebaseFirestore.bundleMod.LoadBundleTask
+import typings.firebaseFirestore.componentProviderMod.ComponentConfiguration
+import typings.firebaseFirestore.componentProviderMod.OfflineComponentProvider
+import typings.firebaseFirestore.componentProviderMod.OnlineComponentProvider
+import typings.firebaseFirestore.coreBundleMod.NamedQuery
 import typings.firebaseFirestore.coreTransactionMod.Transaction
+import typings.firebaseFirestore.coreTransactionOptionsMod.TransactionOptions
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
+import typings.firebaseFirestore.eventManagerMod.EventManager
 import typings.firebaseFirestore.eventManagerMod.ListenOptions
-import typings.firebaseFirestore.eventManagerMod.Observer
-import typings.firebaseFirestore.eventManagerMod.QueryListener
+import typings.firebaseFirestore.localStoreMod.LocalStore
 import typings.firebaseFirestore.mutationMod.Mutation
 import typings.firebaseFirestore.queryMod.Query
+import typings.firebaseFirestore.syncEngineMod.SyncEngine
+import typings.firebaseFirestore.userMod.User
 import typings.firebaseFirestore.viewSnapshotMod.ViewSnapshot
+import typings.firebaseFirestoreTypes.mod.GetOptions
+import typings.std.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/core/firestore_client", JSImport.Namespace)
-@js.native
-object firestoreClientMod extends js.Object {
+object firestoreClientMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/core/firestore_client", JSImport.Namespace)
   @js.native
-  class FirestoreClient protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/core/firestore_client", "FirestoreClient")
+  @js.native
+  open class FirestoreClient protected () extends StObject {
     def this(
-      databaseInfo: DatabaseInfo,
-      credentials: CredentialsProvider,
+      authCredentials: CredentialsProvider[User],
+      appCheckCredentials: CredentialsProvider[String],
       /**
       * Asynchronous queue responsible for all of our internal processing. When
       * we get incoming work from the user (via public API) or the network
@@ -34,8 +49,14 @@ object firestoreClientMod extends js.Object {
       * start processing a new operation while the previous one is waiting for
       * an async I/O to complete).
       */
-    asyncQueue: AsyncQueue
+    asyncQueue: AsyncQueue,
+      databaseInfo: DatabaseInfo
     ) = this()
+    
+    /* private */ var appCheckCredentialListener: Any = js.native
+    
+    /* private */ var appCheckCredentials: Any = js.native
+    
     /**
       * Asynchronous queue responsible for all of our internal processing. When
       * we get incoming work from the user (via public API) or the network
@@ -44,113 +65,92 @@ object firestoreClientMod extends js.Object {
       * start processing a new operation while the previous one is waiting for
       * an async I/O to complete).
       */
-    var asyncQueue: js.Any = js.native
-    /**
-      * Decides whether the provided error allows us to gracefully disable
-      * persistence (as opposed to crashing the client).
-      */
-    var canFallback: js.Any = js.native
-    val clientId: js.Any = js.native
-    var credentials: js.Any = js.native
-    var databaseInfo: js.Any = js.native
-    var eventMgr: js.Any = js.native
-    var gcScheduler: js.Any = js.native
-    /**
-      * Initializes persistent storage, attempting to use IndexedDB if
-      * usePersistence is true or memory-only if false.
-      *
-      * If IndexedDB fails because it's already open in another tab or because the
-      * platform can't possibly support our implementation then this method rejects
-      * the persistenceResult and falls back on memory-only persistence.
-      *
-      * @param componentProvider The provider that provides all core componennts
-      *     for IndexedDB or memory-backed persistence
-      * @param persistenceSettings Settings object to configure offline persistence
-      * @param user The initial user
-      * @param persistenceResult A deferred result indicating the user-visible
-      *     result of enabling offline persistence. This method will reject this if
-      *     IndexedDB fails to start for any reason. If usePersistence is false
-      *     this is unconditionally resolved.
-      * @returns a Promise indicating whether or not initialization should
-      *     continue, i.e. that one of the persistence implementations actually
-      *     succeeded.
-      */
-    var initializeComponents: js.Any = js.native
-    var localStore: js.Any = js.native
-    var persistence: js.Any = js.native
-    var remoteStore: js.Any = js.native
-    var sharedClientState: js.Any = js.native
-    var syncEngine: js.Any = js.native
+    var asyncQueue: AsyncQueue = js.native
+    
+    /* private */ var authCredentialListener: Any = js.native
+    
+    /* private */ var authCredentials: Any = js.native
+    
+    /* private */ val clientId: Any = js.native
+    
+    /* private */ var databaseInfo: Any = js.native
+    
+    def getConfiguration(): js.Promise[ComponentConfiguration] = js.native
+    
+    var offlineComponents: js.UndefOr[OfflineComponentProvider] = js.native
+    
+    var onlineComponents: js.UndefOr[OnlineComponentProvider] = js.native
+    
+    def setAppCheckTokenChangeListener(listener: js.Function2[/* appCheckToken */ String, /* user */ User, js.Promise[Unit]]): Unit = js.native
+    
+    def setCredentialChangeListener(listener: js.Function1[/* user */ User, js.Promise[Unit]]): Unit = js.native
+    
+    def terminate(): js.Promise[Unit] = js.native
+    
+    /* private */ var user: Any = js.native
+    
     /**
       * Checks that the client has not been terminated. Ensures that other methods on
       * this class cannot be called after the client is terminated.
       */
-    var verifyNotTerminated: js.Any = js.native
-    def addSnapshotsInSyncListener(observer: Observer[Unit]): Unit = js.native
-    def clientTerminated: Boolean = js.native
-    def databaseId(): DatabaseId = js.native
-    /** Disables the network connection. Pending operations will not complete. */
-    def disableNetwork(): js.Promise[Unit] = js.native
-    /** Enables the network connection and requeues all pending operations. */
-    def enableNetwork(): js.Promise[Unit] = js.native
-    def getDocumentFromLocalCache(docKey: DocumentKey): js.Promise[Document | Null] = js.native
-    def getDocumentsFromLocalCache(query: Query): js.Promise[ViewSnapshot] = js.native
-    def listen(query: Query, observer: Observer[ViewSnapshot], options: ListenOptions): QueryListener = js.native
-    def removeSnapshotsInSyncListener(observer: Observer[Unit]): Unit = js.native
-    /**
-      * Starts up the FirestoreClient, returning only whether or not enabling
-      * persistence succeeded.
-      *
-      * The intent here is to "do the right thing" as far as users are concerned.
-      * Namely, in cases where offline persistence is requested and possible,
-      * enable it, but otherwise fall back to persistence disabled. For the most
-      * part we expect this to succeed one way or the other so we don't expect our
-      * users to actually wait on the firestore.enablePersistence Promise since
-      * they generally won't care.
-      *
-      * Of course some users actually do care about whether or not persistence
-      * was successfully enabled, so the Promise returned from this method
-      * indicates this outcome.
-      *
-      * This presents a problem though: even before enablePersistence resolves or
-      * rejects, users may have made calls to e.g. firestore.collection() which
-      * means that the FirestoreClient in there will be available and will be
-      * enqueuing actions on the async queue.
-      *
-      * Meanwhile any failure of an operation on the async queue causes it to
-      * panic and reject any further work, on the premise that unhandled errors
-      * are fatal.
-      *
-      * Consequently the fallback is handled internally here in start, and if the
-      * fallback succeeds we signal success to the async queue even though the
-      * start() itself signals failure.
-      *
-      * @param componentProvider Provider that returns all core components.
-      * @param persistenceSettings Settings object to configure offline
-      *     persistence.
-      * @returns A deferred result indicating the user-visible result of enabling
-      *     offline persistence. This method will reject this if IndexedDB fails to
-      *     start for any reason. If usePersistence is false this is
-      *     unconditionally resolved.
-      */
-    def start(componentProvider: ComponentProvider, persistenceSettings: PersistenceSettings): js.Promise[Unit] = js.native
-    def terminate(): js.Promise[Unit] = js.native
-    def transaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
-    def unlisten(listener: QueryListener): Unit = js.native
-    /**
-      * Returns a Promise that resolves when all writes that were pending at the time this
-      * method was called received server acknowledgement. An acknowledgement can be either acceptance
-      * or rejection.
-      */
-    def waitForPendingWrites(): js.Promise[Unit] = js.native
-    def write(mutations: js.Array[Mutation]): js.Promise[Unit] = js.native
+    def verifyNotTerminated(): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.anon.Durable
-    - typings.firebaseFirestore.anon.CacheSizeBytes
-  */
-  trait PersistenceSettings extends js.Object
+  @JSImport("@firebase/firestore/dist/firestore/src/core/firestore_client", "MAX_CONCURRENT_LIMBO_RESOLUTIONS")
+  @js.native
+  val MAX_CONCURRENT_LIMBO_RESOLUTIONS: /* 100 */ Double = js.native
   
+  inline def firestoreClientAddSnapshotsInSyncListener(client: FirestoreClient, observer: PartialObservervoid): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientAddSnapshotsInSyncListener")(client.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def firestoreClientDisableNetwork(client: FirestoreClient): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientDisableNetwork")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def firestoreClientEnableNetwork(client: FirestoreClient): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientEnableNetwork")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def firestoreClientGetDocumentFromLocalCache(client: FirestoreClient, docKey: DocumentKey): js.Promise[Document | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentFromLocalCache")(client.asInstanceOf[js.Any], docKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document | Null]]
+  
+  inline def firestoreClientGetDocumentViaSnapshotListener(client: FirestoreClient, key: DocumentKey): js.Promise[ViewSnapshot] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentViaSnapshotListener")(client.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ViewSnapshot]]
+  inline def firestoreClientGetDocumentViaSnapshotListener(client: FirestoreClient, key: DocumentKey, options: GetOptions): js.Promise[ViewSnapshot] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentViaSnapshotListener")(client.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ViewSnapshot]]
+  
+  inline def firestoreClientGetDocumentsFromLocalCache(client: FirestoreClient, query: Query): js.Promise[ViewSnapshot] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentsFromLocalCache")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ViewSnapshot]]
+  
+  inline def firestoreClientGetDocumentsViaSnapshotListener(client: FirestoreClient, query: Query): js.Promise[ViewSnapshot] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentsViaSnapshotListener")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ViewSnapshot]]
+  inline def firestoreClientGetDocumentsViaSnapshotListener(client: FirestoreClient, query: Query, options: GetOptions): js.Promise[ViewSnapshot] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetDocumentsViaSnapshotListener")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ViewSnapshot]]
+  
+  inline def firestoreClientGetNamedQuery(client: FirestoreClient, queryName: String): js.Promise[js.UndefOr[NamedQuery]] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientGetNamedQuery")(client.asInstanceOf[js.Any], queryName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[NamedQuery]]]
+  
+  inline def firestoreClientListen(client: FirestoreClient, query: Query, options: ListenOptions, observer: PartialObserverViewSnapsh): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientListen")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def firestoreClientLoadBundle(client: FirestoreClient, databaseId: DatabaseId, data: String, resultTask: LoadBundleTask): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientLoadBundle")(client.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], resultTask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def firestoreClientLoadBundle(
+    client: FirestoreClient,
+    databaseId: DatabaseId,
+    data: js.typedarray.ArrayBuffer,
+    resultTask: LoadBundleTask
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientLoadBundle")(client.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], resultTask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def firestoreClientLoadBundle(
+    client: FirestoreClient,
+    databaseId: DatabaseId,
+    data: ReadableStream[js.typedarray.Uint8Array],
+    resultTask: LoadBundleTask
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientLoadBundle")(client.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], resultTask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def firestoreClientTransaction[T](
+    client: FirestoreClient,
+    updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]],
+    options: TransactionOptions
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientTransaction")(client.asInstanceOf[js.Any], updateFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
+  inline def firestoreClientWaitForPendingWrites(client: FirestoreClient): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientWaitForPendingWrites")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def firestoreClientWrite(client: FirestoreClient, mutations: js.Array[Mutation]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientWrite")(client.asInstanceOf[js.Any], mutations.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def getEventManager(client: FirestoreClient): js.Promise[EventManager] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventManager")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EventManager]]
+  
+  inline def getLocalStore(client: FirestoreClient): js.Promise[LocalStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalStore")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalStore]]
+  
+  inline def getSyncEngine(client: FirestoreClient): js.Promise[SyncEngine] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSyncEngine")(client.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SyncEngine]]
+  
+  inline def setOfflineComponentProvider(client: FirestoreClient, offlineComponentProvider: OfflineComponentProvider): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setOfflineComponentProvider")(client.asInstanceOf[js.Any], offlineComponentProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def setOnlineComponentProvider(client: FirestoreClient, onlineComponentProvider: OnlineComponentProvider): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setOnlineComponentProvider")(client.asInstanceOf[js.Any], onlineComponentProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }
-

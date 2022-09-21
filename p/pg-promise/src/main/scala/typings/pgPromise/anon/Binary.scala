@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Binary extends StObject {
   
-  var _types: js.Any
+  var _types: Any
   
-  var binary: js.Any
+  var binary: Any
   
-  var text: js.Any
+  var text: Any
 }
 object Binary {
   
-  inline def apply(_types: js.Any, binary: js.Any, text: js.Any): Binary = {
+  inline def apply(_types: Any, binary: Any, text: Any): Binary = {
     val __obj = js.Dynamic.literal(_types = _types.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binary]
   }
   
   extension [Self <: Binary](x: Self) {
     
-    inline def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def set_types(value: js.Any): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
+    inline def set_types(value: Any): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
   }
 }

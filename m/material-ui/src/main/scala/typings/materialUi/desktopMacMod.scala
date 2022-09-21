@@ -10,10 +10,10 @@ object desktopMacMod {
   
   @JSImport("material-ui/svg-icons/hardware/desktop-mac", JSImport.Default)
   @js.native
-  class default () extends HardwareDesktopMac
+  open class default () extends HardwareDesktopMac
   
   @JSImport("material-ui/svg-icons/hardware/desktop-mac", "HardwareDesktopMac")
   @js.native
-  class HardwareDesktopMac ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareDesktopMac ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

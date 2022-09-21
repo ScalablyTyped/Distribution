@@ -8,7 +8,7 @@ object PullHelpers {
   
   trait OtherPullDeclsWalker extends StObject {
     
-    /* private */ var currentlyWalkingOtherDecls: js.Any
+    /* private */ var currentlyWalkingOtherDecls: Any
     
     def walkOtherPullDecls(
       currentDecl: PullDecl,
@@ -19,7 +19,7 @@ object PullHelpers {
   object OtherPullDeclsWalker {
     
     inline def apply(
-      currentlyWalkingOtherDecls: js.Any,
+      currentlyWalkingOtherDecls: Any,
       walkOtherPullDecls: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit
     ): OtherPullDeclsWalker = {
       val __obj = js.Dynamic.literal(currentlyWalkingOtherDecls = currentlyWalkingOtherDecls.asInstanceOf[js.Any], walkOtherPullDecls = js.Any.fromFunction3(walkOtherPullDecls))
@@ -28,7 +28,7 @@ object PullHelpers {
     
     extension [Self <: OtherPullDeclsWalker](x: Self) {
       
-      inline def setCurrentlyWalkingOtherDecls(value: js.Any): Self = StObject.set(x, "currentlyWalkingOtherDecls", value.asInstanceOf[js.Any])
+      inline def setCurrentlyWalkingOtherDecls(value: Any): Self = StObject.set(x, "currentlyWalkingOtherDecls", value.asInstanceOf[js.Any])
       
       inline def setWalkOtherPullDecls(value: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit): Self = StObject.set(x, "walkOtherPullDecls", js.Any.fromFunction3(value))
     }
@@ -95,7 +95,7 @@ object PullHelpers {
       
       inline def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
       
-      inline def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value :_*))
+      inline def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value*))
       
       inline def setSignature(value: PullSignatureSymbol): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }

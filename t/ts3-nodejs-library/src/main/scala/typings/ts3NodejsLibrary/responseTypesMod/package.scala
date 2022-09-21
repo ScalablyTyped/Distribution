@@ -5,50 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApiKeyList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ApiKeyEntry]
+type ApiKeyList = js.Array[ApiKeyEntry]
 
-type BanList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.BanEntry]
+type BanList = js.Array[BanEntry]
 
-type BindingList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.BindingEntry]
+type BindingList = js.Array[BindingEntry]
 
-type ChannelClientPermIdList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ChannelClientPermIdEntry]
+type ChannelClientPermIdList = js.Array[ChannelClientPermIdEntry]
 
-type ChannelClientPermSidList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ChannelClientPermSidEntry]
+type ChannelClientPermSidList = js.Array[ChannelClientPermSidEntry]
 
-type ChannelGroupClientList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupClientEntry]
+type ChannelGroupClientList = js.Array[ChannelGroupClientEntry]
 
-type ChannelGroupList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupEntry]
+type ChannelGroupList = js.Array[ChannelGroupEntry]
 
-type ChannelList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ChannelEntry]
+type ChannelList = js.Array[ChannelEntry]
 
-type ClientDBList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ClientDBEntry]
+type ClientDBList = js.Array[ClientDBEntry]
 
-type ClientGetIds = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ClientGetIdEntry]
+type ClientGetIds = js.Array[ClientGetIdEntry]
 
-type ClientList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ClientEntry]
+type ClientList = js.Array[ClientEntry]
 
-type ComplainList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ComplainEntry]
+type ComplainList = js.Array[ComplainEntry]
 
-type FTGetFileList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.FTGetFileEntry]
+type FTGetFileList = js.Array[FTGetFileEntry]
 
-type FTList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.FileTransferEntry]
+type FTList = js.Array[FileTransferEntry]
 
-type MessageList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.MessageEntry]
+type MessageList = js.Array[MessageEntry]
 
-type PermList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.PermEntry]
+type PermList = js.Array[PermEntry]
 
-type PermOverview = js.Array[typings.ts3NodejsLibrary.responseTypesMod.PermOverviewEntry]
+type PermOverview = js.Array[PermOverviewEntry]
 
-type PermissionList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.PermissionEntry]
+type PermissionList = js.Array[PermissionEntry]
 
-type PrivilegeKeyList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.PrivilegeKeyEntry]
+type PrivilegeKeyList = js.Array[PrivilegeKeyEntry]
 
-type QueryLoginList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.QueryLoginEntry]
+type QueryLoginList = js.Array[QueryLoginEntry]
 
-type ServerGroupClientList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ServerGroupClientEntry]
+type ServerGroupClientList = js.Array[ServerGroupClientEntry]
 
-type ServerGroupList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ServerGroupEntry]
+type ServerGroupList = js.Array[ServerGroupEntry]
 
-type ServerList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ServerEntry]
+type ServerList = js.Array[ServerEntry]
 
-type ServerTempPasswordList = js.Array[typings.ts3NodejsLibrary.responseTypesMod.ServerTempPasswordEntry]
+type ServerTempPasswordList = js.Array[ServerTempPasswordEntry]

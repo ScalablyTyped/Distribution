@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Vector")
 @js.native
-class Vector protected () extends StObject {
+open class Vector protected () extends StObject {
   def this(x: Double, y: Double) = this()
   
   def add(v1: Vector, v2: Vector): this.type = js.native

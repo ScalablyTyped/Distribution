@@ -21,7 +21,7 @@ trait UpdateWorkflowDataProperties extends StObject {
   var editableItem: js.UndefOr[EditableItem] = js.undefined
   
   /**
-    * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being modified.
+    * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#edits)
     */
@@ -47,7 +47,7 @@ object UpdateWorkflowDataProperties {
     
     inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
-    inline def setCandidatesVarargs(value: GraphicProperties*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: GraphicProperties*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setEditableItem(value: EditableItem): Self = StObject.set(x, "editableItem", value.asInstanceOf[js.Any])
     

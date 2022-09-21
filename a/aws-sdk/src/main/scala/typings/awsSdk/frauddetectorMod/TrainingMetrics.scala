@@ -33,6 +33,6 @@ object TrainingMetrics {
     
     inline def setMetricDataPointsUndefined: Self = StObject.set(x, "metricDataPoints", js.undefined)
     
-    inline def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = StObject.set(x, "metricDataPoints", js.Array(value :_*))
+    inline def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = StObject.set(x, "metricDataPoints", js.Array(value*))
   }
 }

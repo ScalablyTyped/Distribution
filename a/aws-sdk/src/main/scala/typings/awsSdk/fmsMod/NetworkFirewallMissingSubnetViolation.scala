@@ -22,7 +22,7 @@ trait NetworkFirewallMissingSubnetViolation extends StObject {
   var VPC: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The ID of the AWS Network Firewall or VPC resource that's in violation.
+    * The ID of the Network Firewall or VPC resource that's in violation.
     */
   var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
 }

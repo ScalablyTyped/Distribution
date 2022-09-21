@@ -34,12 +34,12 @@ trait AuthenticationInfo extends StObject {
   
   /**
     * The third party identification (if any) of the authenticated user making the request. When the JSON object represented here has a proto equivalent, the proto name will be indicated
-    * in the `@type` property.
+    * in the `@‍type` property.
     */
   var thirdPartyPrincipal: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuthenticationInfo & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuthenticationInfo & TopLevel[Any]
   ] = js.undefined
 }
 object AuthenticationInfo {
@@ -67,7 +67,7 @@ object AuthenticationInfo {
     
     inline def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
     
-    inline def setServiceAccountDelegationInfoVarargs(value: ServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
+    inline def setServiceAccountDelegationInfoVarargs(value: ServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value*))
     
     inline def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object AuthenticationInfo {
     inline def setThirdPartyPrincipal(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuthenticationInfo & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuthenticationInfo & TopLevel[Any]
     ): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
     inline def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)

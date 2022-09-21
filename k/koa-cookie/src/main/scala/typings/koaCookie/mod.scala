@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-cookie", JSImport.Namespace)
   @js.native
@@ -21,18 +21,18 @@ object mod {
     
     trait BaseContext extends StObject {
       
-      var cookie: Record[String, js.Any]
+      var cookie: Record[String, Any]
     }
     object BaseContext {
       
-      inline def apply(cookie: Record[String, js.Any]): BaseContext = {
+      inline def apply(cookie: Record[String, Any]): BaseContext = {
         val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseContext]
       }
       
       extension [Self <: BaseContext](x: Self) {
         
-        inline def setCookie(value: Record[String, js.Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+        inline def setCookie(value: Record[String, Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       }
     }
   }

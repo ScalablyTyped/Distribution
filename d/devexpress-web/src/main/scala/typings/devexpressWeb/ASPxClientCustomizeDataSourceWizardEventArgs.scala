@@ -19,11 +19,11 @@ trait ASPxClientCustomizeDataSourceWizardEventArgs
   /**
     * Specifies the wizard.
     */
-  var Wizard: js.Any
+  var Wizard: Any
 }
 object ASPxClientCustomizeDataSourceWizardEventArgs {
   
-  inline def apply(Type: String, Wizard: js.Any): ASPxClientCustomizeDataSourceWizardEventArgs = {
+  inline def apply(Type: String, Wizard: Any): ASPxClientCustomizeDataSourceWizardEventArgs = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Wizard = Wizard.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCustomizeDataSourceWizardEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientCustomizeDataSourceWizardEventArgs {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setWizard(value: js.Any): Self = StObject.set(x, "Wizard", value.asInstanceOf[js.Any])
+    inline def setWizard(value: Any): Self = StObject.set(x, "Wizard", value.asInstanceOf[js.Any])
   }
 }

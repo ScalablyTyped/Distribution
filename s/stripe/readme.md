@@ -1,7 +1,7 @@
 
 # Scala.js typings for stripe
 
-Typings are for version 7.13
+Typings are for version 10.10.0
 
 ## Library description:
 Stripe API wrapper
@@ -10,10 +10,10 @@ Stripe API wrapper
 | ------------------ | :-------------: |
 | Full name          | stripe |
 | Keywords           | stripe, payment processing, credit cards, api |
-| # releases         | 190 |
-| # dependents       | 349 |
-| # downloads        | 23958720 |
-| # stars            | 61 |
+| # releases         | 166 |
+| # dependents       | 0.0 |
+| # downloads        | 4275450.0 |
+| # stars            | 3090.0 |
 
 ## Links
 - [Homepage](https://github.com/stripe/stripe-node)
@@ -24,7 +24,7 @@ Stripe API wrapper
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

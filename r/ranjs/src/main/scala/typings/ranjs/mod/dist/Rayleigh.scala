@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.Rayleigh")
 @js.native
-class Rayleigh ()
+open class Rayleigh ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Rayleigh] {
   def this(sigma: Double) = this()

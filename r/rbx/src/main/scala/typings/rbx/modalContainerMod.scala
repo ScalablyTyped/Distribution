@@ -3,7 +3,6 @@ package typings.rbx
 import typings.react.mod.ComponentType
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
 import typings.std.Document
 import typings.std.HTMLElement
@@ -16,8 +15,8 @@ object modalContainerMod {
   
   @JSImport("rbx/components/modal/modal-container", "ModalContainer")
   @js.native
-  class ModalContainer protected ()
-    extends PureComponent[ModalContainerProps, js.Object, js.Any] {
+  open class ModalContainer protected ()
+    extends PureComponent[ModalContainerProps, js.Object, Any] {
     def this(props: ModalContainerProps) = this()
     
     @JSName("componentDidMount")
@@ -26,9 +25,9 @@ object modalContainerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MModalContainer(): Unit = js.native
     
-    /* private */ val document: js.Any = js.native
+    /* private */ val document: Any = js.native
     
-    /* private */ val el: js.Any = js.native
+    /* private */ val el: Any = js.native
   }
   /* static members */
   object ModalContainer {
@@ -47,7 +46,9 @@ object modalContainerMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -78,7 +79,9 @@ object modalContainerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

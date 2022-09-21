@@ -33,6 +33,6 @@ object ListSizeConstraintSetsResponse {
     
     inline def setSizeConstraintSetsUndefined: Self = StObject.set(x, "SizeConstraintSets", js.undefined)
     
-    inline def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = StObject.set(x, "SizeConstraintSets", js.Array(value :_*))
+    inline def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = StObject.set(x, "SizeConstraintSets", js.Array(value*))
   }
 }

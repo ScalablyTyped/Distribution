@@ -28,10 +28,9 @@ trait CountryWhitelist extends StObject {
     * HTTP headers to use when trying to playback url.
     * Only applies to urls.
     *
-    * @readonly
     * @ignore
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /**
     * Applies if the protocol of the url is http(s).
@@ -53,13 +52,13 @@ object CountryWhitelist {
     
     inline def setCountryWhitelistUndefined: Self = StObject.set(x, "countryWhitelist", js.undefined)
     
-    inline def setCountryWhitelistVarargs(value: String*): Self = StObject.set(x, "countryWhitelist", js.Array(value :_*))
+    inline def setCountryWhitelistVarargs(value: String*): Self = StObject.set(x, "countryWhitelist", js.Array(value*))
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

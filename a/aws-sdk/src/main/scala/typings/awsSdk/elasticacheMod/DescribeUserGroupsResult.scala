@@ -33,6 +33,6 @@ object DescribeUserGroupsResult {
     
     inline def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
     
-    inline def setUserGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "UserGroups", js.Array(value :_*))
+    inline def setUserGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "UserGroups", js.Array(value*))
   }
 }

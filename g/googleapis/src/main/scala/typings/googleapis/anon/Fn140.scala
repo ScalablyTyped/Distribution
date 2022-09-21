@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v2
-import typings.googleapis.translateV2Mod.translateV2.Options
-import typings.googleapis.translateV2Mod.translateV2.Translate
+import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.kgsearchV1Mod.kgsearchV1.Kgsearch
+import typings.googleapis.kgsearchV1Mod.kgsearchV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn140 extends StObject {
   
-  def apply(options: Options): Translate = js.native
-  def apply(version: v2): Translate = js.native
+  def apply(options: Options): Kgsearch = js.native
+  def apply(version: v1): Kgsearch = js.native
 }

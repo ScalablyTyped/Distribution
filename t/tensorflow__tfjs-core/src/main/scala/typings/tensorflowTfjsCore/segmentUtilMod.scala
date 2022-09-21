@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsCore
 
-import typings.tensorflowTfjsCore.distTensorMod.Tensor
-import typings.tensorflowTfjsCore.distTypesMod.Rank
+import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object segmentUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def collectGatherOpShapeInfo(x: Tensor[Rank], indices: Tensor[Rank], axis: Double): GatherOpShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGatherOpShapeInfo")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[GatherOpShapeInfo]
+  inline def collectGatherOpShapeInfo(x: TensorInfo, indices: TensorInfo, axis: Double, batchDims: Double): GatherOpShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGatherOpShapeInfo")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[GatherOpShapeInfo]
   
   inline def computeOutShape(aShape: js.Array[Double], axis: Double, numSegments: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(aShape.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
@@ -24,14 +23,22 @@ object segmentUtilMod {
     
     var dimSize: Double
     
+    var outerSize: Double
+    
     var outputShape: js.Array[Double]
     
     var sliceSize: Double
   }
   object GatherOpShapeInfo {
     
-    inline def apply(batchSize: Double, dimSize: Double, outputShape: js.Array[Double], sliceSize: Double): GatherOpShapeInfo = {
-      val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], dimSize = dimSize.asInstanceOf[js.Any], outputShape = outputShape.asInstanceOf[js.Any], sliceSize = sliceSize.asInstanceOf[js.Any])
+    inline def apply(
+      batchSize: Double,
+      dimSize: Double,
+      outerSize: Double,
+      outputShape: js.Array[Double],
+      sliceSize: Double
+    ): GatherOpShapeInfo = {
+      val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], dimSize = dimSize.asInstanceOf[js.Any], outerSize = outerSize.asInstanceOf[js.Any], outputShape = outputShape.asInstanceOf[js.Any], sliceSize = sliceSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatherOpShapeInfo]
     }
     
@@ -41,9 +48,11 @@ object segmentUtilMod {
       
       inline def setDimSize(value: Double): Self = StObject.set(x, "dimSize", value.asInstanceOf[js.Any])
       
+      inline def setOuterSize(value: Double): Self = StObject.set(x, "outerSize", value.asInstanceOf[js.Any])
+      
       inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
       
-      inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+      inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value*))
       
       inline def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
     }

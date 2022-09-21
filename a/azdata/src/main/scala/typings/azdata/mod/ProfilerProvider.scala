@@ -19,11 +19,11 @@ trait ProfilerProvider
   
   def pauseSession(sessionId: String): Thenable[Boolean]
   
-  def registerOnProfilerSessionCreated(handler: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any]): Unit
+  def registerOnProfilerSessionCreated(handler: js.Function1[/* response */ ProfilerSessionCreatedParams, Any]): Unit
   
-  def registerOnSessionEventsAvailable(handler: js.Function1[/* response */ ProfilerSessionEvents, js.Any]): Unit
+  def registerOnSessionEventsAvailable(handler: js.Function1[/* response */ ProfilerSessionEvents, Any]): Unit
   
-  def registerOnSessionStopped(handler: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any]): Unit
+  def registerOnSessionStopped(handler: js.Function1[/* response */ ProfilerSessionStoppedParams, Any]): Unit
   
   def startSession(sessionId: String, sessionName: String): Thenable[Boolean]
   
@@ -38,9 +38,9 @@ object ProfilerProvider {
     getXEventSessions: String => Thenable[js.Array[String]],
     pauseSession: String => Thenable[Boolean],
     providerId: String,
-    registerOnProfilerSessionCreated: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit,
-    registerOnSessionEventsAvailable: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit,
-    registerOnSessionStopped: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit,
+    registerOnProfilerSessionCreated: js.Function1[/* response */ ProfilerSessionCreatedParams, Any] => Unit,
+    registerOnSessionEventsAvailable: js.Function1[/* response */ ProfilerSessionEvents, Any] => Unit,
+    registerOnSessionStopped: js.Function1[/* response */ ProfilerSessionStoppedParams, Any] => Unit,
     startSession: (String, String) => Thenable[Boolean],
     stopSession: String => Thenable[Boolean]
   ): ProfilerProvider = {
@@ -60,11 +60,11 @@ object ProfilerProvider {
     
     inline def setPauseSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "pauseSession", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
+    inline def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, Any] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, Any] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, Any] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
     
     inline def setStartSession(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "startSession", js.Any.fromFunction2(value))
     

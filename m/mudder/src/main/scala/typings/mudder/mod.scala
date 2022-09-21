@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("mudder", "SymbolTable")
   @js.native
-  class SymbolTable protected () extends StObject {
+  open class SymbolTable protected () extends StObject {
     def this(symbols: String) = this()
     def this(symbols: js.Array[String]) = this()
     def this(symbols: String, map: Map[String, Double]) = this()
@@ -37,7 +37,8 @@ object mod {
       b: js.UndefOr[String | js.Array[String]],
       numStrings: js.UndefOr[Double],
       base: js.UndefOr[Double],
-      numDivisions: js.UndefOr[Double]
+      numDivisions: js.UndefOr[Double],
+      placesToKeep: js.UndefOr[Double]
     ): js.Array[String] = js.native
     def mudder(num: Double): js.Array[String] = js.native
     

@@ -18,12 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that will host the control.
   * @param options The set of properties and values to apply to the new SettingsFlyout.
   **/
-class SettingsFlyout ()
+open class SettingsFlyout ()
   extends StObject
      with typings.winjs.WinJS.UI.SettingsFlyout {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object SettingsFlyout {
   
@@ -36,7 +36,7 @@ object SettingsFlyout {
     * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
     **/
   /* static member */
-  inline def populateSettings(e: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateSettings")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def populateSettings(e: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateSettings")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows the SettingsPane UI, if hidden, regardless of other state.
@@ -50,7 +50,7 @@ object SettingsFlyout {
     * @param path The path of the page that contains the Settings element.
     **/
   /* static member */
-  inline def showSettings(id: String, path: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSettings")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showSettings(id: String, path: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSettings")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Indicates that the object is compatibile with declarative processing.

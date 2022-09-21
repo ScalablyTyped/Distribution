@@ -53,7 +53,7 @@ object FaultRootCauseService {
     
     inline def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
     
-    inline def setEntityPathVarargs(value: FaultRootCauseEntity*): Self = StObject.set(x, "EntityPath", js.Array(value :_*))
+    inline def setEntityPathVarargs(value: FaultRootCauseEntity*): Self = StObject.set(x, "EntityPath", js.Array(value*))
     
     inline def setInferred(value: NullableBoolean): Self = StObject.set(x, "Inferred", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object FaultRootCauseService {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

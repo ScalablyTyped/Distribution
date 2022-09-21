@@ -5,25 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A structure for the comment ID and IDs of its related replies.
   *
-  * A structure for the comment Id and Ids of its related replies.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait CommentDetail extends StObject {
   
   /**
+    * Represents the ID of the comment.
     *
-    * Represents the id of comment.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var commentId: String
   
   /**
+    * Represents the IDs of the related replies that belong to the comment.
     *
-    * Represents the ids of the related replies belong to comment.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var replyIds: js.Array[String]
@@ -41,6 +41,6 @@ object CommentDetail {
     
     inline def setReplyIds(value: js.Array[String]): Self = StObject.set(x, "replyIds", value.asInstanceOf[js.Any])
     
-    inline def setReplyIdsVarargs(value: String*): Self = StObject.set(x, "replyIds", js.Array(value :_*))
+    inline def setReplyIdsVarargs(value: String*): Self = StObject.set(x, "replyIds", js.Array(value*))
   }
 }

@@ -4,24 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An absolute date range, specified by its start date and end date. The
-  * supported range of dates begins 30 days before today and ends today.
-  * Validity checked upon filter set creation. If a filter set with an absolute
-  * date range is run at a later date more than 30 days after start_date, it
-  * will fail.
-  */
 trait SchemaAbsoluteDateRange extends StObject {
   
   /**
-    * The end date of the range (inclusive). Must be within the 30 days leading
-    * up to current date, and must be equal to or after start_date.
+    * The end date of the range (inclusive). Must be within the 30 days leading up to current date, and must be equal to or after start_date.
     */
   var endDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
-    * The start date of the range (inclusive). Must be within the 30 days
-    * leading up to current date, and must be equal to or before end_date.
+    * The start date of the range (inclusive). Must be within the 30 days leading up to current date, and must be equal to or before end_date.
     */
   var startDate: js.UndefOr[SchemaDate] = js.undefined
 }

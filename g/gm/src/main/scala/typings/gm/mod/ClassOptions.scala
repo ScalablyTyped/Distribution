@@ -11,6 +11,8 @@ trait ClassOptions extends StObject {
   var imageMagick: js.UndefOr[Boolean] = js.undefined
   
   var nativeAutoOrient: js.UndefOr[Boolean] = js.undefined
+  
+  var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object ClassOptions {
   
@@ -32,5 +34,9 @@ object ClassOptions {
     inline def setNativeAutoOrient(value: Boolean): Self = StObject.set(x, "nativeAutoOrient", value.asInstanceOf[js.Any])
     
     inline def setNativeAutoOrientUndefined: Self = StObject.set(x, "nativeAutoOrient", js.undefined)
+    
+    inline def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

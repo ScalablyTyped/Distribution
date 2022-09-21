@@ -16,20 +16,20 @@ object retryMod {
   
   trait RetryContext extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var retriesDone: Double
   }
   object RetryContext {
     
-    inline def apply(error: js.Any, retriesDone: Double): RetryContext = {
+    inline def apply(error: Any, retriesDone: Double): RetryContext = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], retriesDone = retriesDone.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetryContext]
     }
     
     extension [Self <: RetryContext](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setRetriesDone(value: Double): Self = StObject.set(x, "retriesDone", value.asInstanceOf[js.Any])
     }
@@ -45,7 +45,7 @@ object retryMod {
     /**
       * Optional. A function returning `true` to continue retrying, `false` to stop. Defaults to `true`. The error that occurred is given as a parameter. For example, there is usually no reason to retry a 404 HTTP error, whereas a 500 or a timeout might work on the next attempt.
       */
-    var isRetryable: js.UndefOr[js.Function1[/* error */ js.Any, Boolean]] = js.undefined
+    var isRetryable: js.UndefOr[js.Function1[/* error */ Any, Boolean]] = js.undefined
     
     /**
       * Required. The number of times to retry the `source` function _in addition to the initial attempt_. The default value is 0 (zero) for retrying indefinitely.
@@ -70,7 +70,7 @@ object retryMod {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setIsRetryable(value: /* error */ js.Any => Boolean): Self = StObject.set(x, "isRetryable", js.Any.fromFunction1(value))
+      inline def setIsRetryable(value: /* error */ Any => Boolean): Self = StObject.set(x, "isRetryable", js.Any.fromFunction1(value))
       
       inline def setIsRetryableUndefined: Self = StObject.set(x, "isRetryable", js.undefined)
       

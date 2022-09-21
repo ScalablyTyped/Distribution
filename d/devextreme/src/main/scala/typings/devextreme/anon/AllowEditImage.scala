@@ -1,133 +1,213 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.arrowBottom
-import typings.devextreme.devextremeStrings.arrowEastWest
-import typings.devextreme.devextremeStrings.arrowLeft
-import typings.devextreme.devextremeStrings.arrowNorthSouth
-import typings.devextreme.devextremeStrings.arrowRight
-import typings.devextreme.devextremeStrings.arrowTop
-import typings.devextreme.devextremeStrings.cardWithImageOnLeft
-import typings.devextreme.devextremeStrings.cardWithImageOnRight
-import typings.devextreme.devextremeStrings.cardWithImageOnTop
-import typings.devextreme.devextremeStrings.connector
-import typings.devextreme.devextremeStrings.cross
-import typings.devextreme.devextremeStrings.data
-import typings.devextreme.devextremeStrings.database
-import typings.devextreme.devextremeStrings.decision
-import typings.devextreme.devextremeStrings.delay
-import typings.devextreme.devextremeStrings.diamond
-import typings.devextreme.devextremeStrings.display
-import typings.devextreme.devextremeStrings.document
-import typings.devextreme.devextremeStrings.ellipse
-import typings.devextreme.devextremeStrings.hardDisk
-import typings.devextreme.devextremeStrings.heart
-import typings.devextreme.devextremeStrings.horizontalContainer
-import typings.devextreme.devextremeStrings.internalStorage
-import typings.devextreme.devextremeStrings.manualInput
-import typings.devextreme.devextremeStrings.manualOperation
-import typings.devextreme.devextremeStrings.merge
-import typings.devextreme.devextremeStrings.multipleDocuments
-import typings.devextreme.devextremeStrings.octagon
-import typings.devextreme.devextremeStrings.or
-import typings.devextreme.devextremeStrings.paperTape
-import typings.devextreme.devextremeStrings.pentagon
-import typings.devextreme.devextremeStrings.predefinedProcess
-import typings.devextreme.devextremeStrings.preparation
-import typings.devextreme.devextremeStrings.process
-import typings.devextreme.devextremeStrings.rectangle
-import typings.devextreme.devextremeStrings.star
-import typings.devextreme.devextremeStrings.storedData
-import typings.devextreme.devextremeStrings.summingJunction
-import typings.devextreme.devextremeStrings.terminator
-import typings.devextreme.devextremeStrings.text
-import typings.devextreme.devextremeStrings.triangle
-import typings.devextreme.devextremeStrings.verticalContainer
-import typings.devextreme.mod.DevExpress.core.dxSVGElement
+import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.CustomShapeTemplateData
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.CustomShapeToolboxTemplateData
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramShapeType
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AllowEditImage extends StObject {
   
+  /**
+    * Specifies whether a card shape&apos;s image can be edited.
+    */
   var allowEditImage: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether the shape&apos;s text can be edited.
+    */
   var allowEditText: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether the shape can be resized.
+    */
   var allowResize: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the shape background image&apos;s fractional height.
+    */
   var backgroundImageHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape background image&apos;s left offset.
+    */
   var backgroundImageLeft: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape image displayed in the toolbox.
+    */
   var backgroundImageToolboxUrl: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the shape background image&apos;s top offset.
+    */
   var backgroundImageTop: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape background image&apos;s URL.
+    */
   var backgroundImageUrl: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the shape background image&apos;s fractional width.
+    */
   var backgroundImageWidth: js.UndefOr[Double] = js.undefined
   
-  var baseType: js.UndefOr[
-    text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-  ] = js.undefined
+  /**
+    * Specifies the base shape type for the custom shape. The built-in shape types are shown in the Shape Types section.
+    */
+  var baseType: js.UndefOr[DiagramShapeType | String] = js.undefined
   
+  /**
+    * Specifies a category to which the custom shape belongs.
+    */
   var category: js.UndefOr[String] = js.undefined
   
+  /**
+    * An array of the shape&apos;s connection points.
+    */
   var connectionPoints: js.UndefOr[js.Array[Y]] = js.undefined
   
+  /**
+    * Specifies the initial height of the shape.
+    */
   var defaultHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the URL of an image displayed in a card shape.
+    */
   var defaultImageUrl: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the initial text of the shape.
+    */
   var defaultText: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the initial width of the shape.
+    */
   var defaultWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape image&apos;s fractional height.
+    */
   var imageHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape image&apos;s left offset.
+    */
   var imageLeft: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape image&apos;s top offset.
+    */
   var imageTop: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape image&apos;s fractional width.
+    */
   var imageWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether the shape maintains its width-to-height ratio on auto resize.
+    */
   var keepRatioOnAutoSize: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the maximum height of the shape.
+    */
   var maxHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the maximum width of the shape.
+    */
   var maxWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the maximum height of the shape.
+    */
   var minHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the minimum width of the shape.
+    */
   var minWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a custom template for the shape.
+    */
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData, Any])
   ] = js.undefined
   
+  /**
+    * Specifies the shape template&apos;s fractional height.
+    */
   var templateHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape template&apos;s left offset.
+    */
   var templateLeft: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape template&apos;s top offset.
+    */
   var templateTop: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape template&apos;s fractional width.
+    */
   var templateWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape text container&apos;s height.
+    */
   var textHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape text&apos;s left offset.
+    */
   var textLeft: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape text&apos;s top offset.
+    */
   var textTop: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape text container&apos;s width.
+    */
   var textWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape&apos;s tooltip in the toolbox panel.
+    */
   var title: js.UndefOr[String] = js.undefined
   
-  var toolboxTemplate: js.UndefOr[template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])] = js.undefined
+  /**
+    * Specifies a custom template for the shape in the toolbox.
+    */
+  var toolboxTemplate: js.UndefOr[
+    template | (js.Function2[
+      /* container */ DxElement_[SVGElement], 
+      /* data */ CustomShapeToolboxTemplateData, 
+      Any
+    ])
+  ] = js.undefined
   
+  /**
+    * Specifies the aspect ratio of the shape in the toolbox.
+    */
   var toolboxWidthToHeightRatio: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shape&apos;s type.
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object AllowEditImage {
@@ -175,9 +255,7 @@ object AllowEditImage {
     
     inline def setBackgroundImageWidthUndefined: Self = StObject.set(x, "backgroundImageWidth", js.undefined)
     
-    inline def setBaseType(
-      value: text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-    ): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
+    inline def setBaseType(value: DiagramShapeType | String): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
     
     inline def setBaseTypeUndefined: Self = StObject.set(x, "baseType", js.undefined)
     
@@ -189,7 +267,7 @@ object AllowEditImage {
     
     inline def setConnectionPointsUndefined: Self = StObject.set(x, "connectionPoints", js.undefined)
     
-    inline def setConnectionPointsVarargs(value: Y*): Self = StObject.set(x, "connectionPoints", js.Array(value :_*))
+    inline def setConnectionPointsVarargs(value: Y*): Self = StObject.set(x, "connectionPoints", js.Array(value*))
     
     inline def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
     
@@ -243,9 +321,11 @@ object AllowEditImage {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(
+      value: template | (js.Function2[/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData, Any])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    inline def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplateFunction2(value: (/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData) => Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
     inline def setTemplateHeight(value: Double): Self = StObject.set(x, "templateHeight", value.asInstanceOf[js.Any])
     
@@ -285,9 +365,15 @@ object AllowEditImage {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setToolboxTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
+    inline def setToolboxTemplate(
+      value: template | (js.Function2[
+          /* container */ DxElement_[SVGElement], 
+          /* data */ CustomShapeToolboxTemplateData, 
+          Any
+        ])
+    ): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
     
-    inline def setToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
+    inline def setToolboxTemplateFunction2(value: (/* container */ DxElement_[SVGElement], /* data */ CustomShapeToolboxTemplateData) => Any): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
     
     inline def setToolboxTemplateUndefined: Self = StObject.set(x, "toolboxTemplate", js.undefined)
     

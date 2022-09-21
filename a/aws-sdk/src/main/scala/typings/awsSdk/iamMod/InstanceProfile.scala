@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceProfile extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) specifying the instance profile. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
+    *  The Amazon Resource Name (ARN) specifying the instance profile. For more information about ARNs and how to use them in policies, see IAM identifiers in the IAM User Guide. 
     */
   var Arn: arnType
   
   /**
     * The date when the instance profile was created.
     */
-  var CreateDate: dateType
+  var CreateDate: js.Date
   
   /**
-    *  The stable and unique string identifying the instance profile. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
+    *  The stable and unique string identifying the instance profile. For more information about IDs, see IAM identifiers in the IAM User Guide. 
     */
   var InstanceProfileId: idType
   
@@ -27,7 +27,7 @@ trait InstanceProfile extends StObject {
   var InstanceProfileName: instanceProfileNameType
   
   /**
-    *  The path to the instance profile. For more information about paths, see IAM Identifiers in the IAM User Guide. 
+    *  The path to the instance profile. For more information about paths, see IAM identifiers in the IAM User Guide. 
     */
   var Path: pathType
   
@@ -35,12 +35,17 @@ trait InstanceProfile extends StObject {
     * The role associated with the instance profile.
     */
   var Roles: roleListType
+  
+  /**
+    * A list of tags that are attached to the instance profile. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
+    */
+  var Tags: js.UndefOr[tagListType] = js.undefined
 }
 object InstanceProfile {
   
   inline def apply(
     Arn: arnType,
-    CreateDate: dateType,
+    CreateDate: js.Date,
     InstanceProfileId: idType,
     InstanceProfileName: instanceProfileNameType,
     Path: pathType,
@@ -54,7 +59,7 @@ object InstanceProfile {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setInstanceProfileId(value: idType): Self = StObject.set(x, "InstanceProfileId", value.asInstanceOf[js.Any])
     
@@ -64,6 +69,12 @@ object InstanceProfile {
     
     inline def setRoles(value: roleListType): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
-    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value*))
+    
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

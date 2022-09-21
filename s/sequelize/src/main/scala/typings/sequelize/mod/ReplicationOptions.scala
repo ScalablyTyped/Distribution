@@ -29,7 +29,7 @@ object ReplicationOptions {
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value :_*))
+    inline def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value*))
     
     inline def setWrite(value: Database): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     

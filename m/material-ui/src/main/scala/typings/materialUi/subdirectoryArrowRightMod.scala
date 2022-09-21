@@ -10,10 +10,10 @@ object subdirectoryArrowRightMod {
   
   @JSImport("material-ui/svg-icons/navigation/subdirectory-arrow-right", JSImport.Default)
   @js.native
-  class default () extends NavigationSubdirectoryArrowRight
+  open class default () extends NavigationSubdirectoryArrowRight
   
   @JSImport("material-ui/svg-icons/navigation/subdirectory-arrow-right", "NavigationSubdirectoryArrowRight")
   @js.native
-  class NavigationSubdirectoryArrowRight ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationSubdirectoryArrowRight ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

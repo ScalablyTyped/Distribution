@@ -31,6 +31,6 @@ object DocumentFieldsInformation {
     
     inline def setDocumentFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "documentFields", js.Array(value*))
   }
 }

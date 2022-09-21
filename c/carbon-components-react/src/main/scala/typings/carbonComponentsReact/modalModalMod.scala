@@ -23,10 +23,12 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.grammar
 import typings.carbonComponentsReact.carbonComponentsReactStrings.grid
 import typings.carbonComponentsReact.carbonComponentsReactStrings.horizontal
 import typings.carbonComponentsReact.carbonComponentsReactStrings.inherit
+import typings.carbonComponentsReact.carbonComponentsReactStrings.lg
 import typings.carbonComponentsReact.carbonComponentsReactStrings.link
 import typings.carbonComponentsReact.carbonComponentsReactStrings.list
 import typings.carbonComponentsReact.carbonComponentsReactStrings.listbox
 import typings.carbonComponentsReact.carbonComponentsReactStrings.location
+import typings.carbonComponentsReact.carbonComponentsReactStrings.md
 import typings.carbonComponentsReact.carbonComponentsReactStrings.menu
 import typings.carbonComponentsReact.carbonComponentsReactStrings.mixed
 import typings.carbonComponentsReact.carbonComponentsReactStrings.move
@@ -41,6 +43,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.polite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.popup
 import typings.carbonComponentsReact.carbonComponentsReactStrings.removals
 import typings.carbonComponentsReact.carbonComponentsReactStrings.search
+import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
 import typings.carbonComponentsReact.carbonComponentsReactStrings.spelling
 import typings.carbonComponentsReact.carbonComponentsReactStrings.step
 import typings.carbonComponentsReact.carbonComponentsReactStrings.tel
@@ -49,8 +52,8 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.time
 import typings.carbonComponentsReact.carbonComponentsReactStrings.tree
 import typings.carbonComponentsReact.carbonComponentsReactStrings.url
 import typings.carbonComponentsReact.carbonComponentsReactStrings.vertical
+import typings.carbonComponentsReact.carbonComponentsReactStrings.xs
 import typings.carbonComponentsReact.carbonComponentsReactStrings.yes
-import typings.carbonComponentsReact.typingsSharedMod.CarbonSize
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -84,9 +87,11 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,8 +100,8 @@ object modalModalMod {
   
   @JSImport("carbon-components-react/lib/components/Modal/Modal", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ModalProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ModalProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.role
@@ -122,7 +127,7 @@ object modalModalMod {
     inline def role: typings.carbonComponentsReact.carbonComponentsReactStrings.role = "role".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.role]
   }
   
-  type Modal = Component[ModalProps, js.Object, js.Any]
+  type Modal = Component[ModalProps, js.Object, Any]
   
   /* Inlined parent std.Omit<carbon-components-react.carbon-components-react/typings/shared.ReactDivAttr, carbon-components-react.carbon-components-react/lib/components/Modal/Modal.ExcludedAttributes> */
   trait ModalProps extends StObject {
@@ -135,11 +140,11 @@ object modalModalMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none_ | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -157,21 +162,21 @@ object modalModalMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none_ | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -185,11 +190,11 @@ object modalModalMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -201,13 +206,13 @@ object modalModalMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -217,7 +222,7 @@ object modalModalMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -240,6 +245,8 @@ object modalModalMod {
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
+    
+    var closeButtonLabel: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
@@ -266,17 +273,23 @@ object modalModalMod {
       */
     var focusTrap: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @deprecated
+      */
     var hasForm: js.UndefOr[Boolean] = js.undefined
     
     var hasScrollingContent: js.UndefOr[Boolean] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @deprecated
+      */
     var iconDescription: js.UndefOr[String] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none_ | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -495,6 +508,8 @@ object modalModalMod {
     
     var secondaryButtonText: js.UndefOr[ReactNode] = js.undefined
     
+    var secondaryButtons: js.UndefOr[js.Array[ModalSecondaryButtonConfig]] = js.undefined
+    
     var security: js.UndefOr[String] = js.undefined
     
     var selectorPrimaryFocus: js.UndefOr[String] = js.undefined
@@ -503,7 +518,7 @@ object modalModalMod {
     
     var shouldSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[CarbonSize] = js.undefined
+    var size: js.UndefOr[xs | sm | md | lg] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -552,7 +567,7 @@ object modalModalMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -560,7 +575,7 @@ object modalModalMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -596,7 +611,7 @@ object modalModalMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -608,7 +623,7 @@ object modalModalMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -616,7 +631,7 @@ object modalModalMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -624,7 +639,7 @@ object modalModalMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -652,15 +667,15 @@ object modalModalMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -684,7 +699,7 @@ object modalModalMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -694,7 +709,7 @@ object modalModalMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -714,7 +729,7 @@ object modalModalMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -762,6 +777,10 @@ object modalModalMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseButtonLabel(value: String): Self = StObject.set(x, "closeButtonLabel", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonLabelUndefined: Self = StObject.set(x, "closeButtonLabel", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -794,7 +813,7 @@ object modalModalMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -828,7 +847,7 @@ object modalModalMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -992,7 +1011,7 @@ object modalModalMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1242,6 +1261,12 @@ object modalModalMod {
       
       inline def setSecondaryButtonTextUndefined: Self = StObject.set(x, "secondaryButtonText", js.undefined)
       
+      inline def setSecondaryButtons(value: js.Array[ModalSecondaryButtonConfig]): Self = StObject.set(x, "secondaryButtons", value.asInstanceOf[js.Any])
+      
+      inline def setSecondaryButtonsUndefined: Self = StObject.set(x, "secondaryButtons", js.undefined)
+      
+      inline def setSecondaryButtonsVarargs(value: ModalSecondaryButtonConfig*): Self = StObject.set(x, "secondaryButtons", js.Array(value*))
+      
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
@@ -1254,13 +1279,13 @@ object modalModalMod {
       
       inline def setSelectorsFloatingMenusUndefined: Self = StObject.set(x, "selectorsFloatingMenus", js.undefined)
       
-      inline def setSelectorsFloatingMenusVarargs(value: String*): Self = StObject.set(x, "selectorsFloatingMenus", js.Array(value :_*))
+      inline def setSelectorsFloatingMenusVarargs(value: String*): Self = StObject.set(x, "selectorsFloatingMenus", js.Array(value*))
       
       inline def setShouldSubmitOnEnter(value: Boolean): Self = StObject.set(x, "shouldSubmitOnEnter", value.asInstanceOf[js.Any])
       
       inline def setShouldSubmitOnEnterUndefined: Self = StObject.set(x, "shouldSubmitOnEnter", js.undefined)
       
-      inline def setSize(value: CarbonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xs | sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1307,6 +1332,30 @@ object modalModalMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait ModalSecondaryButtonConfig extends StObject {
+    
+    var buttonText: NonNullable[ReactNode]
+    
+    var onClick: NonNullable[js.UndefOr[MouseEventHandler[HTMLButtonElement]]]
+  }
+  object ModalSecondaryButtonConfig {
+    
+    inline def apply(
+      buttonText: NonNullable[ReactNode],
+      onClick: NonNullable[js.UndefOr[MouseEventHandler[HTMLButtonElement]]]
+    ): ModalSecondaryButtonConfig = {
+      val __obj = js.Dynamic.literal(buttonText = buttonText.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ModalSecondaryButtonConfig]
+    }
+    
+    extension [Self <: ModalSecondaryButtonConfig](x: Self) {
+      
+      inline def setButtonText(value: NonNullable[ReactNode]): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      
+      inline def setOnClick(value: NonNullable[js.UndefOr[MouseEventHandler[HTMLButtonElement]]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     }
   }
 }

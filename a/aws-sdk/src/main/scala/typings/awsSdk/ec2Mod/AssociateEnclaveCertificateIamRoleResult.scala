@@ -12,12 +12,12 @@ trait AssociateEnclaveCertificateIamRoleResult extends StObject {
   var CertificateS3BucketName: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon S3 object key where the certificate, certificate chain, and encrypted private key bundle are stored. The object key is formatted as follows: certificate_arn/role_arn.
+    * The Amazon S3 object key where the certificate, certificate chain, and encrypted private key bundle are stored. The object key is formatted as follows: role_arn/certificate_arn.
     */
   var CertificateS3ObjectKey: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS KMS CMK used to encrypt the private key of the certificate.
+    * The ID of the KMS key used to encrypt the private key of the certificate.
     */
   var EncryptionKmsKeyId: js.UndefOr[String] = js.undefined
 }

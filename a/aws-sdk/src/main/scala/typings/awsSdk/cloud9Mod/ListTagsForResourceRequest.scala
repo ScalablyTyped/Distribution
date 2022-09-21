@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Cloud9 development environment to get the tags for.
+    * The Amazon Resource Name (ARN) of the Cloud9 development environment to get the tags for.
     */
   var ResourceARN: EnvironmentArn
 }

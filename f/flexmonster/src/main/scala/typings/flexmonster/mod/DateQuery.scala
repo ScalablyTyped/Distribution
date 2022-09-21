@@ -57,7 +57,7 @@ object DateQuery {
     
     inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
-    inline def setBetweenVarargs(value: String*): Self = StObject.set(x, "between", js.Array(value :_*))
+    inline def setBetweenVarargs(value: String*): Self = StObject.set(x, "between", js.Array(value*))
     
     inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object DateQuery {
     
     inline def setNot_betweenUndefined: Self = StObject.set(x, "not_between", js.undefined)
     
-    inline def setNot_betweenVarargs(value: String*): Self = StObject.set(x, "not_between", js.Array(value :_*))
+    inline def setNot_betweenVarargs(value: String*): Self = StObject.set(x, "not_between", js.Array(value*))
     
     inline def setNot_equal(value: String): Self = StObject.set(x, "not_equal", value.asInstanceOf[js.Any])
     

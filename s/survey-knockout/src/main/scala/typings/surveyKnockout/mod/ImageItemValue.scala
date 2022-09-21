@@ -6,27 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ImageItemValue")
 @js.native
-class ImageItemValue protected ()
-  extends ItemValue
-     with ILocalizableOwner {
-  def this(value: js.Any) = this()
-  def this(value: js.Any, text: String) = this()
-  def this(value: js.Any, text: String, typeName: String) = this()
-  def this(value: js.Any, text: Unit, typeName: String) = this()
+open class ImageItemValue protected () extends ItemValue {
+  def this(value: Any) = this()
+  def this(value: Any, text: String) = this()
+  def this(value: Any, text: String, typeName: String) = this()
+  def this(value: Any, text: Unit, typeName: String) = this()
   
-  /* InferMemberOverrides */
-  override def getLocale(): String = js.native
+  var aspectRatio: Double = js.native
   
-  /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
-  
-  /* CompleteClass */
-  override def getProcessedText(text: String): String = js.native
-  
-  /**
+  /*
     * The image or video link property.
     */
-  var imageLink: String = js.native
+  def imageLink: String = js.native
+  def imageLink_=(`val`: String): Unit = js.native
   
-  val locImageLink: LocalizableString = js.native
+  def locImageLink: LocalizableString = js.native
 }

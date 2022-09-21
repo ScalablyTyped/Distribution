@@ -12,7 +12,7 @@ trait GoogleCloudDatalabelingV1beta1TextClassificationConfig extends StObject {
   /** Required. Annotation spec set resource name. */
   var annotationSpecSet: js.UndefOr[String] = js.undefined
   
-  /** Optional. Configs for sentiment selection. */
+  /** Optional. Configs for sentiment selection. We deprecate sentiment analysis in data labeling side as it is incompatible with uCAIP. */
   var sentimentConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1SentimentConfig] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1TextClassificationConfig {

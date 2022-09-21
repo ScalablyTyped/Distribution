@@ -31,7 +31,7 @@ object TemplateDocumentsResult {
     
     inline def setTemplateDocumentsUndefined: Self = StObject.set(x, "templateDocuments", js.undefined)
     
-    inline def setTemplateDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "templateDocuments", js.Array(value :_*))
+    inline def setTemplateDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "templateDocuments", js.Array(value*))
     
     inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     

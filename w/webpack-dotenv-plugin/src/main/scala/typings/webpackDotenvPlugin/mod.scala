@@ -1,5 +1,6 @@
 package typings.webpackDotenvPlugin
 
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("webpack-dotenv-plugin", JSImport.Namespace)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-dotenv-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends StObject {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -56,5 +57,5 @@ object mod {
     }
   }
   
-  type WebpackDotenvPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type WebpackDotenvPlugin = Plugin
 }

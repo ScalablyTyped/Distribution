@@ -57,6 +57,13 @@ trait LiveTracker
   def liveWindow(): Double = js.native
   
   /**
+    * The next seeked event is from the user. Meaning that any seek
+    * > 2s behind live will be considered behind live for real and
+    * liveTolerance will be ignored.
+    */
+  def nextSeekedFromUser(): Unit = js.native
+  
+  /**
     * This is the main value that we use to track if the player is live or not.
     * Every 30ms we add 0.03 seconds to this value and every seekableendchange it is reset to 0 and 0.03 is added to it right away.
     */

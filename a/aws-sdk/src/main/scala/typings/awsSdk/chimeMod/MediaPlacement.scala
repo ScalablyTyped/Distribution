@@ -17,6 +17,11 @@ trait MediaPlacement extends StObject {
   var AudioHostUrl: js.UndefOr[UriType] = js.undefined
   
   /**
+    * The event ingestion URL to which you send client meeting events.
+    */
+  var EventIngestionUrl: js.UndefOr[UriType] = js.undefined
+  
+  /**
     * The screen data URL.
     */
   var ScreenDataUrl: js.UndefOr[UriType] = js.undefined
@@ -57,6 +62,10 @@ object MediaPlacement {
     inline def setAudioHostUrl(value: UriType): Self = StObject.set(x, "AudioHostUrl", value.asInstanceOf[js.Any])
     
     inline def setAudioHostUrlUndefined: Self = StObject.set(x, "AudioHostUrl", js.undefined)
+    
+    inline def setEventIngestionUrl(value: UriType): Self = StObject.set(x, "EventIngestionUrl", value.asInstanceOf[js.Any])
+    
+    inline def setEventIngestionUrlUndefined: Self = StObject.set(x, "EventIngestionUrl", js.undefined)
     
     inline def setScreenDataUrl(value: UriType): Self = StObject.set(x, "ScreenDataUrl", value.asInstanceOf[js.Any])
     

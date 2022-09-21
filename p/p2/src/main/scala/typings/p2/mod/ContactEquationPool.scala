@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "ContactEquationPool")
 @js.native
-class ContactEquationPool () extends Pool {
+open class ContactEquationPool () extends Pool {
   def this(options: PoolOptions) = this()
   
   def create(): ContactEquation = js.native

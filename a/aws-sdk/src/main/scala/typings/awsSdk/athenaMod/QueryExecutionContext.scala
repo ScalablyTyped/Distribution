@@ -12,7 +12,7 @@ trait QueryExecutionContext extends StObject {
   var Catalog: js.UndefOr[CatalogNameString] = js.undefined
   
   /**
-    * The name of the database used in the query execution.
+    * The name of the database used in the query execution. The database must exist in the catalog.
     */
   var Database: js.UndefOr[DatabaseString] = js.undefined
 }

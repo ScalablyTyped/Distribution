@@ -11,9 +11,9 @@ A mirror of Facebook's Warning
 | Full name          | warning |
 | Keywords           | warning, facebook, react, invariant |
 | # releases         | 0 |
-| # dependents       | 1943 |
-| # downloads        | 351688629 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3.9788723666666664E7 |
+| # stars            | 213.0 |
 
 ## Links
 - [Homepage](https://github.com/BerkeleyTrue/warning)

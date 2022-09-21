@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("StructurePortal")
 @js.native
-class StructurePortal protected ()
+open class StructurePortal protected ()
   extends StObject
      with typings.screeps.StructurePortal {
   def this(id: Id[typings.screeps.StructurePortal]) = this()

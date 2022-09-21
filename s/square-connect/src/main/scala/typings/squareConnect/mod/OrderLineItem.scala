@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderLineItem")
 @js.native
-class OrderLineItem () extends StObject {
+open class OrderLineItem () extends StObject {
   
   /**
     * The list of references to discounts applied to this line item. Each `OrderLineItemAppliedDiscount` has a

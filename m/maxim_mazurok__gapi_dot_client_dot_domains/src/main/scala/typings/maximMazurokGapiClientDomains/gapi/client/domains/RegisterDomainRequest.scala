@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegisterDomainRequest extends StObject {
   
-  /** The list of contact notices that the caller acknowledges. The notices required here depend on the values specified in `registration.contact_settings`. */
+  /** The list of contact notices that the caller acknowledges. The notices needed here depend on the values specified in `registration.contact_settings`. */
   var contactNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of domain notices that you acknowledge. Call `RetrieveRegisterParameters` to see the notices that need acknowledgement. */
@@ -15,7 +15,7 @@ trait RegisterDomainRequest extends StObject {
   /** Required. The complete `Registration` resource to be created. */
   var registration: js.UndefOr[Registration] = js.undefined
   
-  /** When true, only validation will be performed, without actually registering the domain. Follows: https://cloud.google.com/apis/design/design_patterns#request_validation */
+  /** When true, only validation is performed, without actually registering the domain. Follows: https://cloud.google.com/apis/design/design_patterns#request_validation */
   var validateOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Yearly price to register or renew the domain. The value that should be put here can be obtained from RetrieveRegisterParameters or SearchDomains calls. */
@@ -34,13 +34,13 @@ object RegisterDomainRequest {
     
     inline def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
     
-    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
+    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value*))
     
     inline def setDomainNotices(value: js.Array[String]): Self = StObject.set(x, "domainNotices", value.asInstanceOf[js.Any])
     
     inline def setDomainNoticesUndefined: Self = StObject.set(x, "domainNotices", js.undefined)
     
-    inline def setDomainNoticesVarargs(value: String*): Self = StObject.set(x, "domainNotices", js.Array(value :_*))
+    inline def setDomainNoticesVarargs(value: String*): Self = StObject.set(x, "domainNotices", js.Array(value*))
     
     inline def setRegistration(value: Registration): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
     

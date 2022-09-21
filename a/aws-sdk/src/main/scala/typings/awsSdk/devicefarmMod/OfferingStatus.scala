@@ -9,7 +9,7 @@ trait OfferingStatus extends StObject {
   /**
     * The date on which the offering is effective.
     */
-  var effectiveOn: js.UndefOr[DateTime] = js.undefined
+  var effectiveOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Represents the metadata of an offering status.
@@ -35,7 +35,7 @@ object OfferingStatus {
   
   extension [Self <: OfferingStatus](x: Self) {
     
-    inline def setEffectiveOn(value: DateTime): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
+    inline def setEffectiveOn(value: js.Date): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
     
     inline def setEffectiveOnUndefined: Self = StObject.set(x, "effectiveOn", js.undefined)
     

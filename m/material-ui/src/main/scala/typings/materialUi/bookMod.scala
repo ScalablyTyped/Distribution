@@ -10,10 +10,10 @@ object bookMod {
   
   @JSImport("material-ui/svg-icons/action/book", JSImport.Default)
   @js.native
-  class default () extends ActionBook
+  open class default () extends ActionBook
   
   @JSImport("material-ui/svg-icons/action/book", "ActionBook")
   @js.native
-  class ActionBook ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBook ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

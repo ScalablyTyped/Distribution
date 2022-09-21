@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("react-native-sortable-list", JSImport.Default)
   @js.native
-  class default[T, K] () extends SortableList[T, K]
+  open class default[T, K] () extends SortableList[T, K]
   
   type DataByNumber[T] = NumberDictionary[T]
   
@@ -83,7 +83,7 @@ object mod {
   
   @js.native
   trait SortableList[T, K]
-    extends Component[SortableListProps[T, K], js.Object, js.Any] {
+    extends Component[SortableListProps[T, K], js.Object, Any] {
     
     /**
       * scrolls by a given y offset, either immediately or with a smooth animation
@@ -283,7 +283,7 @@ object mod {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: K*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: K*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setRefreshControl(value: ReactElement): Self = StObject.set(x, "refreshControl", value.asInstanceOf[js.Any])
       

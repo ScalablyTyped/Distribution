@@ -38,7 +38,7 @@ object Backend {
     isEqualEntity: (String, String) => Boolean,
     listLayers: (String, String) => SafeArray[XLayer],
     listOwnLayers: String => SafeArray[XLayer],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsEntity: String => Boolean
   ): Backend = {

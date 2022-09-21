@@ -7,42 +7,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait NoteTagStatus extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.NoteTagStatus")
 @js.native
 object NoteTagStatus extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait completed
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait disabled
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait normal
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait outlookTask
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait taskNotSyncedYet
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait taskRemoved
     extends StObject
        with NoteTagStatus
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait unknown
     extends StObject

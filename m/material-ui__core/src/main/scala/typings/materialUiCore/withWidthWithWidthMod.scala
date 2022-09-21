@@ -1,9 +1,8 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.createBreakpointsMod.Breakpoint
-import typings.materialUiCore.mod.PropInjector
+import typings.materialUiTypes.mod.PropInjector
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +79,7 @@ object withWidthWithWidthMod {
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/withWidth/withWidth.WithWidth> */
   trait WithWidthProps extends StObject {
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var width: js.UndefOr[Breakpoint] = js.undefined
   }
@@ -93,9 +92,9 @@ object withWidthWithWidthMod {
     
     extension [Self <: WithWidthProps](x: Self) {
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       

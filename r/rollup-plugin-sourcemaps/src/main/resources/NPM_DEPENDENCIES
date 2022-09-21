@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rollup-plugin-sourcemaps" : "0.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rollup-plugin-sourcemaps" : "0.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

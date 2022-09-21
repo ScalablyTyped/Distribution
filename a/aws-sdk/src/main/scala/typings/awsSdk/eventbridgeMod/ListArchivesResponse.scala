@@ -29,7 +29,7 @@ object ListArchivesResponse {
     
     inline def setArchivesUndefined: Self = StObject.set(x, "Archives", js.undefined)
     
-    inline def setArchivesVarargs(value: Archive*): Self = StObject.set(x, "Archives", js.Array(value :_*))
+    inline def setArchivesVarargs(value: Archive*): Self = StObject.set(x, "Archives", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

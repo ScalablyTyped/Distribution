@@ -27,7 +27,7 @@ trait Server extends StObject {
     * Provide an express middleware function or an array of middleware functions.
     * Use: [compression(); bodyParser()]
     */
-  var use: js.UndefOr[js.Any] = js.undefined
+  var use: js.UndefOr[Any] = js.undefined
 }
 object Server {
   
@@ -50,7 +50,7 @@ object Server {
     
     inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    inline def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }

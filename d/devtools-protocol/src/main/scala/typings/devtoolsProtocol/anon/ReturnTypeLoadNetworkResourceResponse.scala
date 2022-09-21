@@ -23,7 +23,7 @@ object ReturnTypeLoadNetworkResourceResponse {
     
     inline def setParamsType(value: js.Array[LoadNetworkResourceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: LoadNetworkResourceRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: LoadNetworkResourceRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: LoadNetworkResourceResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

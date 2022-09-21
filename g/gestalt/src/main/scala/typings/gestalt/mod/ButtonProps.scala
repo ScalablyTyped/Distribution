@@ -1,5 +1,6 @@
 package typings.gestalt.mod
 
+import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
 import typings.gestalt.gestaltNumbers.`-1`
 import typings.gestalt.gestaltNumbers.`0`
@@ -14,6 +15,7 @@ import typings.gestalt.gestaltStrings.nofollow
 import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.red
 import typings.gestalt.gestaltStrings.self
+import typings.gestalt.gestaltStrings.semiTransparentWhite
 import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.submit
 import typings.gestalt.gestaltStrings.transparent
@@ -38,22 +40,24 @@ trait ButtonProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[gray | red | blue | transparent | transparentWhiteText | white] = js.undefined
+  var color: js.UndefOr[
+    gray | red | blue | transparent | semiTransparentWhite | transparentWhiteText | white
+  ] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
   var iconEnd: js.UndefOr[Icons] = js.undefined
-  
-  var `inline`: js.UndefOr[Boolean] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
   var onClick: js.UndefOr[
     AbstractEventHandler[
       (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-      js.Object
+      DangerouslyDisableOnNavigation
     ]
   ] = js.undefined
   
@@ -98,13 +102,17 @@ object ButtonProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setColor(value: gray | red | blue | transparent | transparentWhiteText | white): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: gray | red | blue | transparent | semiTransparentWhite | transparentWhiteText | white): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
@@ -114,16 +122,12 @@ object ButtonProps {
     
     inline def setIconEndUndefined: Self = StObject.set(x, "iconEnd", js.undefined)
     
-    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
-    
-    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOnClick(
-      value: /* arg */ js.Object & (Event[
+      value: /* arg */ DangerouslyDisableOnNavigation & (Event[
           (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
         ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))

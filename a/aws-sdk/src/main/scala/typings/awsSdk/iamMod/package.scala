@@ -1,5 +1,9 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.PermissionsBoundaryPolicy
+import typings.awsSdk.awsSdkStrings.textSlashcsv
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,30 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.ACTION_LEVEL
   - java.lang.String
 */
-type AccessAdvisorUsageGranularityType = typings.awsSdk.iamMod._AccessAdvisorUsageGranularityType | java.lang.String
+type AccessAdvisorUsageGranularityType = _AccessAdvisorUsageGranularityType | String
 
-type AccessDetails = js.Array[typings.awsSdk.iamMod.AccessDetail]
+type AccessDetails = js.Array[AccessDetail]
 
-type ActionNameListType = js.Array[typings.awsSdk.iamMod.ActionNameType]
+type ActionNameListType = js.Array[ActionNameType]
 
-type ActionNameType = java.lang.String
+type ActionNameType = String
 
-type ArnListType = js.Array[typings.awsSdk.iamMod.arnType]
+type ArnListType = js.Array[arnType]
 
-type BootstrapDatum = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.iamMod.Blob | java.lang.String
+type BootstrapDatum = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type ColumnNumber = scala.Double
+type ColumnNumber = Double
 
-type ContextEntryListType = js.Array[typings.awsSdk.iamMod.ContextEntry]
+type ContextEntryListType = js.Array[ContextEntry]
 
-type ContextKeyNameType = java.lang.String
+type ContextKeyNameType = String
 
-type ContextKeyNamesResultListType = js.Array[typings.awsSdk.iamMod.ContextKeyNameType]
+type ContextKeyNamesResultListType = js.Array[ContextKeyNameType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.string__
   - typings.awsSdk.awsSdkStrings.stringList_
-  - typings.awsSdk.awsSdkStrings.numeric
+  - typings.awsSdk.awsSdkStrings.numeric_
   - typings.awsSdk.awsSdkStrings.numericList
   - typings.awsSdk.awsSdkStrings.boolean__
   - typings.awsSdk.awsSdkStrings.booleanList
@@ -45,13 +49,13 @@ type ContextKeyNamesResultListType = js.Array[typings.awsSdk.iamMod.ContextKeyNa
   - typings.awsSdk.awsSdkStrings.dateList
   - java.lang.String
 */
-type ContextKeyTypeEnum = typings.awsSdk.iamMod._ContextKeyTypeEnum | java.lang.String
+type ContextKeyTypeEnum = _ContextKeyTypeEnum | String
 
-type ContextKeyValueListType = js.Array[typings.awsSdk.iamMod.ContextKeyValueType]
+type ContextKeyValueListType = js.Array[ContextKeyValueType]
 
-type ContextKeyValueType = java.lang.String
+type ContextKeyValueType = String
 
-type DeletionTaskIdType = java.lang.String
+type DeletionTaskIdType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -60,7 +64,7 @@ type DeletionTaskIdType = java.lang.String
   - typings.awsSdk.awsSdkStrings.NOT_STARTED
   - java.lang.String
 */
-type DeletionTaskStatusType = typings.awsSdk.iamMod._DeletionTaskStatusType | java.lang.String
+type DeletionTaskStatusType = _DeletionTaskStatusType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.User_
@@ -70,23 +74,23 @@ type DeletionTaskStatusType = typings.awsSdk.iamMod._DeletionTaskStatusType | ja
   - typings.awsSdk.awsSdkStrings.AWSManagedPolicy
   - java.lang.String
 */
-type EntityType = typings.awsSdk.iamMod._EntityType | java.lang.String
+type EntityType = _EntityType | String
 
-type EvalDecisionDetailsType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iamMod.PolicyEvaluationDecisionType]
+type EvalDecisionDetailsType = StringDictionary[PolicyEvaluationDecisionType]
 
-type EvalDecisionSourceType = java.lang.String
+type EvalDecisionSourceType = String
 
-type EvaluationResultsListType = js.Array[typings.awsSdk.iamMod.EvaluationResult]
+type EvaluationResultsListType = js.Array[EvaluationResult]
 
-type LineNumber = scala.Double
+type LineNumber = Double
 
-type ManagedPolicyDetailListType = js.Array[typings.awsSdk.iamMod.ManagedPolicyDetail]
+type ManagedPolicyDetailListType = js.Array[ManagedPolicyDetail]
 
-type OpenIDConnectProviderListType = js.Array[typings.awsSdk.iamMod.OpenIDConnectProviderListEntry]
+type OpenIDConnectProviderListType = js.Array[OpenIDConnectProviderListEntry]
 
-type OpenIDConnectProviderUrlType = java.lang.String
+type OpenIDConnectProviderUrlType = String
 
-type PermissionsBoundaryAttachmentType = typings.awsSdk.awsSdkStrings.PermissionsBoundaryPolicy | java.lang.String
+type PermissionsBoundaryAttachmentType = PermissionsBoundaryPolicy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.allowed__
@@ -94,44 +98,44 @@ type PermissionsBoundaryAttachmentType = typings.awsSdk.awsSdkStrings.Permission
   - typings.awsSdk.awsSdkStrings.implicitDeny
   - java.lang.String
 */
-type PolicyEvaluationDecisionType = typings.awsSdk.iamMod._PolicyEvaluationDecisionType | java.lang.String
+type PolicyEvaluationDecisionType = _PolicyEvaluationDecisionType | String
 
-type PolicyGroupListType = js.Array[typings.awsSdk.iamMod.PolicyGroup]
+type PolicyGroupListType = js.Array[PolicyGroup]
 
-type PolicyIdentifierType = java.lang.String
+type PolicyIdentifierType = String
 
-type PolicyRoleListType = js.Array[typings.awsSdk.iamMod.PolicyRole]
+type PolicyRoleListType = js.Array[PolicyRole]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.user__
   - typings.awsSdk.awsSdkStrings.group__
   - typings.awsSdk.awsSdkStrings.role__
-  - typings.awsSdk.awsSdkStrings.`aws-managed`
+  - typings.awsSdk.awsSdkStrings.`aws-managed_`
   - typings.awsSdk.awsSdkStrings.`user-managed`
   - typings.awsSdk.awsSdkStrings.resource__
   - typings.awsSdk.awsSdkStrings.none__
   - java.lang.String
 */
-type PolicySourceType = typings.awsSdk.iamMod._PolicySourceType | java.lang.String
+type PolicySourceType = _PolicySourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PermissionsPolicy
   - typings.awsSdk.awsSdkStrings.PermissionsBoundary
   - java.lang.String
 */
-type PolicyUsageType = typings.awsSdk.iamMod._PolicyUsageType | java.lang.String
+type PolicyUsageType = _PolicyUsageType | String
 
-type PolicyUserListType = js.Array[typings.awsSdk.iamMod.PolicyUser]
+type PolicyUserListType = js.Array[PolicyUser]
 
-type ReasonType = java.lang.String
+type ReasonType = String
 
-type RegionNameType = java.lang.String
+type RegionNameType = String
 
-type ReportContentType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.iamMod.Blob | java.lang.String
+type ReportContentType = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type ReportFormatType = typings.awsSdk.awsSdkStrings.textSlashcsv | java.lang.String
+type ReportFormatType = textSlashcsv | String
 
-type ReportStateDescriptionType = java.lang.String
+type ReportStateDescriptionType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STARTED
@@ -139,54 +143,54 @@ type ReportStateDescriptionType = java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPLETE
   - java.lang.String
 */
-type ReportStateType = typings.awsSdk.iamMod._ReportStateType | java.lang.String
+type ReportStateType = _ReportStateType | String
 
-type ResourceHandlingOptionType = java.lang.String
+type ResourceHandlingOptionType = String
 
-type ResourceNameListType = js.Array[typings.awsSdk.iamMod.ResourceNameType]
+type ResourceNameListType = js.Array[ResourceNameType]
 
-type ResourceNameType = java.lang.String
+type ResourceNameType = String
 
-type ResourceSpecificResultListType = js.Array[typings.awsSdk.iamMod.ResourceSpecificResult]
+type ResourceSpecificResultListType = js.Array[ResourceSpecificResult]
 
-type RoleUsageListType = js.Array[typings.awsSdk.iamMod.RoleUsageType]
+type RoleUsageListType = js.Array[RoleUsageType]
 
-type SAMLMetadataDocumentType = java.lang.String
+type SAMLMetadataDocumentType = String
 
-type SAMLProviderListType = js.Array[typings.awsSdk.iamMod.SAMLProviderListEntry]
+type SAMLProviderListType = js.Array[SAMLProviderListEntry]
 
-type SAMLProviderNameType = java.lang.String
+type SAMLProviderNameType = String
 
-type SSHPublicKeyListType = js.Array[typings.awsSdk.iamMod.SSHPublicKeyMetadata]
+type SSHPublicKeyListType = js.Array[SSHPublicKeyMetadata]
 
-type ServiceSpecificCredentialsListType = js.Array[typings.awsSdk.iamMod.ServiceSpecificCredentialMetadata]
+type ServiceSpecificCredentialsListType = js.Array[ServiceSpecificCredentialMetadata]
 
-type ServicesLastAccessed = js.Array[typings.awsSdk.iamMod.ServiceLastAccessed]
+type ServicesLastAccessed = js.Array[ServiceLastAccessed]
 
-type SimulationPolicyListType = js.Array[typings.awsSdk.iamMod.policyDocumentType]
+type SimulationPolicyListType = js.Array[policyDocumentType]
 
-type StatementListType = js.Array[typings.awsSdk.iamMod.Statement]
+type StatementListType = js.Array[Statement]
 
-type TrackedActionsLastAccessed = js.Array[typings.awsSdk.iamMod.TrackedActionLastAccessed]
+type TrackedActionsLastAccessed = js.Array[TrackedActionLastAccessed]
 
-type accessKeyIdType = java.lang.String
+type accessKeyIdType = String
 
-type accessKeyMetadataListType = js.Array[typings.awsSdk.iamMod.AccessKeyMetadata]
+type accessKeyMetadataListType = js.Array[AccessKeyMetadata]
 
-type accessKeySecretType = java.lang.String
+type accessKeySecretType = String
 
-type accountAliasListType = js.Array[typings.awsSdk.iamMod.accountAliasType]
+type accountAliasListType = js.Array[accountAliasType]
 
-type accountAliasType = java.lang.String
+type accountAliasType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2010-05-08`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iamMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type arnType = java.lang.String
+type arnType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Assigned_
@@ -194,73 +198,73 @@ type arnType = java.lang.String
   - typings.awsSdk.awsSdkStrings.Any_
   - java.lang.String
 */
-type assignmentStatusType = typings.awsSdk.iamMod._assignmentStatusType | java.lang.String
+type assignmentStatusType = _assignmentStatusType | String
 
-type attachedPoliciesListType = js.Array[typings.awsSdk.iamMod.AttachedPolicy]
+type attachedPoliciesListType = js.Array[AttachedPolicy]
 
-type attachmentCountType = scala.Double
+type attachmentCountType = Double
 
-type authenticationCodeType = java.lang.String
+type authenticationCodeType = String
 
-type booleanObjectType = scala.Boolean
+type booleanObjectType = Boolean
 
-type booleanType = scala.Boolean
+type booleanType = Boolean
 
-type certificateBodyType = java.lang.String
+type certificateBodyType = String
 
-type certificateChainType = java.lang.String
+type certificateChainType = String
 
-type certificateIdType = java.lang.String
+type certificateIdType = String
 
-type certificateListType = js.Array[typings.awsSdk.iamMod.SigningCertificate]
+type certificateListType = js.Array[SigningCertificate]
 
-type clientIDListType = js.Array[typings.awsSdk.iamMod.clientIDType]
+type clientIDListType = js.Array[clientIDType]
 
-type clientIDType = java.lang.String
+type clientIDType = String
 
-type customSuffixType = java.lang.String
+type customSuffixType = String
 
-type dateType = typings.std.Date
+type dateType = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SSH
   - typings.awsSdk.awsSdkStrings.PEM
   - java.lang.String
 */
-type encodingType = typings.awsSdk.iamMod._encodingType | java.lang.String
+type encodingType = _encodingType | String
 
-type entityDetailsListType = js.Array[typings.awsSdk.iamMod.EntityDetails]
+type entityDetailsListType = js.Array[EntityDetails]
 
-type entityListType = js.Array[typings.awsSdk.iamMod.EntityType]
+type entityListType = js.Array[EntityType]
 
-type entityNameType = java.lang.String
+type entityNameType = String
 
-type existingUserNameType = java.lang.String
+type existingUserNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.v1Token
   - typings.awsSdk.awsSdkStrings.v2Token
   - java.lang.String
 */
-type globalEndpointTokenVersion = typings.awsSdk.iamMod._globalEndpointTokenVersion | java.lang.String
+type globalEndpointTokenVersion = _globalEndpointTokenVersion | String
 
-type groupDetailListType = js.Array[typings.awsSdk.iamMod.GroupDetail]
+type groupDetailListType = js.Array[GroupDetail]
 
-type groupListType = js.Array[typings.awsSdk.iamMod.Group]
+type groupListType = js.Array[Group]
 
-type groupNameListType = js.Array[typings.awsSdk.iamMod.groupNameType]
+type groupNameListType = js.Array[groupNameType]
 
-type groupNameType = java.lang.String
+type groupNameType = String
 
-type idType = java.lang.String
+type idType = String
 
-type instanceProfileListType = js.Array[typings.awsSdk.iamMod.InstanceProfile]
+type instanceProfileListType = js.Array[InstanceProfile]
 
-type instanceProfileNameType = java.lang.String
+type instanceProfileNameType = String
 
-type integerType = scala.Double
+type integerType = Double
 
-type jobIDType = java.lang.String
+type jobIDType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -268,47 +272,47 @@ type jobIDType = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type jobStatusType = typings.awsSdk.iamMod._jobStatusType | java.lang.String
+type jobStatusType = _jobStatusType | String
 
-type listPolicyGrantingServiceAccessResponseListType = js.Array[typings.awsSdk.iamMod.ListPoliciesGrantingServiceAccessEntry]
+type listPolicyGrantingServiceAccessResponseListType = js.Array[ListPoliciesGrantingServiceAccessEntry]
 
-type markerType = java.lang.String
+type markerType = String
 
-type maxItemsType = scala.Double
+type maxItemsType = Double
 
-type maxPasswordAgeType = scala.Double
+type maxPasswordAgeType = Double
 
-type mfaDeviceListType = js.Array[typings.awsSdk.iamMod.MFADevice]
+type mfaDeviceListType = js.Array[MFADevice]
 
-type minimumPasswordLengthType = scala.Double
+type minimumPasswordLengthType = Double
 
-type organizationsEntityPathType = java.lang.String
+type organizationsEntityPathType = String
 
-type organizationsPolicyIdType = java.lang.String
+type organizationsPolicyIdType = String
 
-type passwordReusePreventionType = scala.Double
+type passwordReusePreventionType = Double
 
-type passwordType = java.lang.String
+type passwordType = String
 
-type pathPrefixType = java.lang.String
+type pathPrefixType = String
 
-type pathType = java.lang.String
+type pathType = String
 
-type policyDescriptionType = java.lang.String
+type policyDescriptionType = String
 
-type policyDetailListType = js.Array[typings.awsSdk.iamMod.PolicyDetail]
+type policyDetailListType = js.Array[PolicyDetail]
 
-type policyDocumentType = java.lang.String
+type policyDocumentType = String
 
-type policyDocumentVersionListType = js.Array[typings.awsSdk.iamMod.PolicyVersion]
+type policyDocumentVersionListType = js.Array[PolicyVersion]
 
-type policyGrantingServiceAccessListType = js.Array[typings.awsSdk.iamMod.PolicyGrantingServiceAccess]
+type policyGrantingServiceAccessListType = js.Array[PolicyGrantingServiceAccess]
 
-type policyListType = js.Array[typings.awsSdk.iamMod.Policy]
+type policyListType = js.Array[Policy]
 
-type policyNameListType = js.Array[typings.awsSdk.iamMod.policyNameType]
+type policyNameListType = js.Array[policyNameType]
 
-type policyNameType = java.lang.String
+type policyNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -316,9 +320,9 @@ type policyNameType = java.lang.String
   - typings.awsSdk.awsSdkStrings.GROUP
   - java.lang.String
 */
-type policyOwnerEntityType = typings.awsSdk.iamMod._policyOwnerEntityType | java.lang.String
+type policyOwnerEntityType = _policyOwnerEntityType | String
 
-type policyPathType = java.lang.String
+type policyPathType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.All_
@@ -326,56 +330,56 @@ type policyPathType = java.lang.String
   - typings.awsSdk.awsSdkStrings.Local_
   - java.lang.String
 */
-type policyScopeType = typings.awsSdk.iamMod._policyScopeType | java.lang.String
+type policyScopeType = _policyScopeType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INLINE
   - typings.awsSdk.awsSdkStrings.MANAGED
   - java.lang.String
 */
-type policyType = typings.awsSdk.iamMod._policyType | java.lang.String
+type policyType = _policyType | String
 
-type policyVersionIdType = java.lang.String
+type policyVersionIdType = String
 
-type privateKeyType = java.lang.String
+type privateKeyType = String
 
-type publicKeyFingerprintType = java.lang.String
+type publicKeyFingerprintType = String
 
-type publicKeyIdType = java.lang.String
+type publicKeyIdType = String
 
-type publicKeyMaterialType = java.lang.String
+type publicKeyMaterialType = String
 
-type responseMarkerType = java.lang.String
+type responseMarkerType = String
 
-type roleDescriptionType = java.lang.String
+type roleDescriptionType = String
 
-type roleDetailListType = js.Array[typings.awsSdk.iamMod.RoleDetail]
+type roleDetailListType = js.Array[RoleDetail]
 
-type roleListType = js.Array[typings.awsSdk.iamMod.Role]
+type roleListType = js.Array[Role]
 
-type roleMaxSessionDurationType = scala.Double
+type roleMaxSessionDurationType = Double
 
-type roleNameType = java.lang.String
+type roleNameType = String
 
-type serialNumberType = java.lang.String
+type serialNumberType = String
 
-type serverCertificateMetadataListType = js.Array[typings.awsSdk.iamMod.ServerCertificateMetadata]
+type serverCertificateMetadataListType = js.Array[ServerCertificateMetadata]
 
-type serverCertificateNameType = java.lang.String
+type serverCertificateNameType = String
 
-type serviceName = java.lang.String
+type serviceName = String
 
-type serviceNameType = java.lang.String
+type serviceNameType = String
 
-type serviceNamespaceListType = js.Array[typings.awsSdk.iamMod.serviceNamespaceType]
+type serviceNamespaceListType = js.Array[serviceNamespaceType]
 
-type serviceNamespaceType = java.lang.String
+type serviceNamespaceType = String
 
-type servicePassword = java.lang.String
+type servicePassword = String
 
-type serviceSpecificCredentialId = java.lang.String
+type serviceSpecificCredentialId = String
 
-type serviceUserName = java.lang.String
+type serviceUserName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERVICE_NAMESPACE_ASCENDING
@@ -384,16 +388,16 @@ type serviceUserName = java.lang.String
   - typings.awsSdk.awsSdkStrings.LAST_AUTHENTICATED_TIME_DESCENDING
   - java.lang.String
 */
-type sortKeyType = typings.awsSdk.iamMod._sortKeyType | java.lang.String
+type sortKeyType = _sortKeyType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
   - typings.awsSdk.awsSdkStrings.Inactive_
   - java.lang.String
 */
-type statusType = typings.awsSdk.iamMod._statusType | java.lang.String
+type statusType = _statusType | String
 
-type stringType = java.lang.String
+type stringType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Users
@@ -424,30 +428,30 @@ type stringType = java.lang.String
   - typings.awsSdk.awsSdkStrings.GlobalEndpointTokenVersion
   - java.lang.String
 */
-type summaryKeyType = typings.awsSdk.iamMod._summaryKeyType | java.lang.String
+type summaryKeyType = _summaryKeyType | String
 
-type summaryMapType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iamMod.summaryValueType]
+type summaryMapType = StringDictionary[summaryValueType]
 
-type summaryValueType = scala.Double
+type summaryValueType = Double
 
-type tagKeyListType = js.Array[typings.awsSdk.iamMod.tagKeyType]
+type tagKeyListType = js.Array[tagKeyType]
 
-type tagKeyType = java.lang.String
+type tagKeyType = String
 
-type tagListType = js.Array[typings.awsSdk.iamMod.Tag]
+type tagListType = js.Array[Tag]
 
-type tagValueType = java.lang.String
+type tagValueType = String
 
-type thumbprintListType = js.Array[typings.awsSdk.iamMod.thumbprintType]
+type thumbprintListType = js.Array[thumbprintType]
 
-type thumbprintType = java.lang.String
+type thumbprintType = String
 
-type userDetailListType = js.Array[typings.awsSdk.iamMod.UserDetail]
+type userDetailListType = js.Array[UserDetail]
 
-type userListType = js.Array[typings.awsSdk.iamMod.User]
+type userListType = js.Array[User]
 
-type userNameType = java.lang.String
+type userNameType = String
 
-type virtualMFADeviceListType = js.Array[typings.awsSdk.iamMod.VirtualMFADevice]
+type virtualMFADeviceListType = js.Array[VirtualMFADevice]
 
-type virtualMFADeviceName = java.lang.String
+type virtualMFADeviceName = String

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLOptions extends StObject {
   
-  def addOption(id: String, value: js.Any): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
-  def addOption(id: String, value: js.Any, show: Unit, index: Double): Unit = js.native
-  def addOption(id: Double, value: js.Any): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: Unit, index: Double): Unit = js.native
+  def addOption(id: String, value: Any): Unit = js.native
+  def addOption(id: String, value: Any, show: Boolean): Unit = js.native
+  def addOption(id: String, value: Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: String, value: Any, show: Unit, index: Double): Unit = js.native
+  def addOption(id: Double, value: Any): Unit = js.native
+  def addOption(id: Double, value: Any, show: Boolean): Unit = js.native
+  def addOption(id: Double, value: Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: Double, value: Any, show: Unit, index: Double): Unit = js.native
   
   def disableOption(id: String): Unit = js.native
   def disableOption(id: Double): Unit = js.native
@@ -23,8 +23,8 @@ trait HTMLOptions extends StObject {
   def enableOption(id: String): Unit = js.native
   def enableOption(id: Double): Unit = js.native
   
-  def getOption(id: String): js.Any = js.native
-  def getOption(id: Double): js.Any = js.native
+  def getOption(id: String): Any = js.native
+  def getOption(id: Double): Any = js.native
   
   def hideOption(id: String): Unit = js.native
   def hideOption(id: Double): Unit = js.native

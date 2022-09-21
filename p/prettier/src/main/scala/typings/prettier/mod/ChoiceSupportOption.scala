@@ -11,7 +11,7 @@ trait ChoiceSupportOption[Value]
   extends StObject
      with BaseSupportOption[choice] {
   
-  var default: Value | js.Array[Since[Value]]
+  var default: js.UndefOr[Value | js.Array[Since[Value]]] = js.undefined
   
   var choices: js.Array[Description[Value]]
   
@@ -20,14 +20,8 @@ trait ChoiceSupportOption[Value]
 }
 object ChoiceSupportOption {
   
-  inline def apply[Value](
-    category: String,
-    choices: js.Array[Description[Value]],
-    default: Value | js.Array[Since[Value]],
-    description: String,
-    since: String
-  ): ChoiceSupportOption[Value] = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+  inline def apply[Value](category: String, choices: js.Array[Description[Value]], description: String, since: String): ChoiceSupportOption[Value] = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], choices = choices.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("choice")
     __obj.asInstanceOf[ChoiceSupportOption[Value]]
   }
@@ -36,11 +30,13 @@ object ChoiceSupportOption {
     
     inline def setChoices(value: js.Array[Description[Value]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    inline def setChoicesVarargs(value: Description[Value]*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: Description[Value]*): Self = StObject.set(x, "choices", js.Array(value*))
     
     inline def setDefault(value: Value | js.Array[Since[Value]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setDefaultVarargs(value: Since[Value]*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDefaultVarargs(value: Since[Value]*): Self = StObject.set(x, "default", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }

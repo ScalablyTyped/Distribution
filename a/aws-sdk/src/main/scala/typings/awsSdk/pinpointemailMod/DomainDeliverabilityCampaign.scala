@@ -24,7 +24,7 @@ trait DomainDeliverabilityCampaign extends StObject {
   /**
     * The first time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
-  var FirstSeenDateTime: js.UndefOr[Timestamp] = js.undefined
+  var FirstSeenDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The verified email address that the email message was sent from.
@@ -44,7 +44,7 @@ trait DomainDeliverabilityCampaign extends StObject {
   /**
     * The last time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
-  var LastSeenDateTime: js.UndefOr[Timestamp] = js.undefined
+  var LastSeenDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The projected number of recipients that the email message was sent to.
@@ -97,9 +97,9 @@ object DomainDeliverabilityCampaign {
     
     inline def setEspsUndefined: Self = StObject.set(x, "Esps", js.undefined)
     
-    inline def setEspsVarargs(value: Esp*): Self = StObject.set(x, "Esps", js.Array(value :_*))
+    inline def setEspsVarargs(value: Esp*): Self = StObject.set(x, "Esps", js.Array(value*))
     
-    inline def setFirstSeenDateTime(value: Timestamp): Self = StObject.set(x, "FirstSeenDateTime", value.asInstanceOf[js.Any])
+    inline def setFirstSeenDateTime(value: js.Date): Self = StObject.set(x, "FirstSeenDateTime", value.asInstanceOf[js.Any])
     
     inline def setFirstSeenDateTimeUndefined: Self = StObject.set(x, "FirstSeenDateTime", js.undefined)
     
@@ -115,7 +115,7 @@ object DomainDeliverabilityCampaign {
     
     inline def setInboxCountUndefined: Self = StObject.set(x, "InboxCount", js.undefined)
     
-    inline def setLastSeenDateTime(value: Timestamp): Self = StObject.set(x, "LastSeenDateTime", value.asInstanceOf[js.Any])
+    inline def setLastSeenDateTime(value: js.Date): Self = StObject.set(x, "LastSeenDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastSeenDateTimeUndefined: Self = StObject.set(x, "LastSeenDateTime", js.undefined)
     
@@ -135,7 +135,7 @@ object DomainDeliverabilityCampaign {
     
     inline def setSendingIpsUndefined: Self = StObject.set(x, "SendingIps", js.undefined)
     
-    inline def setSendingIpsVarargs(value: Ip*): Self = StObject.set(x, "SendingIps", js.Array(value :_*))
+    inline def setSendingIpsVarargs(value: Ip*): Self = StObject.set(x, "SendingIps", js.Array(value*))
     
     inline def setSpamCount(value: Volume): Self = StObject.set(x, "SpamCount", value.asInstanceOf[js.Any])
     

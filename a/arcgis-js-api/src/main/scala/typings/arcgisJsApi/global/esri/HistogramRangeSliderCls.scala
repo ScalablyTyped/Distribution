@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html)
   */
-class HistogramRangeSliderCls ()
+open class HistogramRangeSliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.HistogramRangeSlider {
   def this(properties: HistogramRangeSliderProperties) = this()

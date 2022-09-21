@@ -21,6 +21,6 @@ object Whitelist {
     
     inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
   }
 }

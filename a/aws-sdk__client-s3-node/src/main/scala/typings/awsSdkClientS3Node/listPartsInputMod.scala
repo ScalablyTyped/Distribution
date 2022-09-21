@@ -8,5 +8,5 @@ object listPartsInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/ListPartsInput", "ListPartsInput")
   @js.native
-  val ListPartsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListPartsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

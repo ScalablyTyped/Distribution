@@ -9,7 +9,7 @@ trait AgendaRangeChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the current AgendaView start date.
     */
-  var currentAgendaRangeStartDate: js.UndefOr[js.Any] = js.undefined
+  var currentAgendaRangeStartDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the days to be shown in AgendaView mode.
@@ -19,12 +19,12 @@ trait AgendaRangeChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the newly AgendaView start date.
     */
-  var newAgendaRangeStartDate: js.UndefOr[js.Any] = js.undefined
+  var newAgendaRangeStartDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object AgendaRangeChangingEventUIParam {
   
@@ -35,7 +35,7 @@ object AgendaRangeChangingEventUIParam {
   
   extension [Self <: AgendaRangeChangingEventUIParam](x: Self) {
     
-    inline def setCurrentAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "currentAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setCurrentAgendaRangeStartDate(value: Any): Self = StObject.set(x, "currentAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
     inline def setCurrentAgendaRangeStartDateUndefined: Self = StObject.set(x, "currentAgendaRangeStartDate", js.undefined)
     
@@ -43,11 +43,11 @@ object AgendaRangeChangingEventUIParam {
     
     inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
     
-    inline def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setNewAgendaRangeStartDate(value: Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
     inline def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

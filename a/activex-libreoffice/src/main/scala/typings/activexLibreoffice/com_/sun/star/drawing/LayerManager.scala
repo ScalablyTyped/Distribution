@@ -23,8 +23,8 @@ object LayerManager {
     ElementType: `type`,
     acquire: () => Unit,
     attachShapeToLayer: (XShape, XLayer) => Unit,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
@@ -32,7 +32,7 @@ object LayerManager {
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     insertNewByIndex: Double => XLayer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XLayer => Unit
   ): LayerManager = {

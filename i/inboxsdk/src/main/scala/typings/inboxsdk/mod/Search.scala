@@ -71,7 +71,7 @@ object Search {
       
       inline def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
       
-      inline def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value :_*))
+      inline def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value*))
     }
   }
   

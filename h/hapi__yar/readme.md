@@ -1,19 +1,19 @@
 
 # Scala.js typings for hapi__yar
 
-Typings are for version 9.2
+Typings are for version 10.1
 
 ## Library description:
-Cookie jar plugin for Hapi
+Cookie jar plugin for hapi
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @hapi/yar |
 | Keywords           | hapi, plugin, cookies, jar, session |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 88240 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9785.666666666666 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/yar#readme)

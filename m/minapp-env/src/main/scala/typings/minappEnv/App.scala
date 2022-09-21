@@ -273,7 +273,7 @@ object App {
     var appId: java.lang.String
     
     /** 来源小程序传过来的数据，scene=1037或1038时支持 */
-    var extraData: js.UndefOr[js.Any] = js.undefined
+    var extraData: js.UndefOr[Any] = js.undefined
   }
   object IReferrerInfo {
     
@@ -286,7 +286,7 @@ object App {
       
       inline def setAppId(value: java.lang.String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
       inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     }

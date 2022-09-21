@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionBindKey extends StObject {
   
-  def apply(`object`: js.Object, key: java.lang.String, partials: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+  def apply(`object`: js.Object, key: java.lang.String, partials: Any*): js.Function1[/* repeated */ Any, Any] = js.native
   
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
+  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
   def placeholder[T](value: List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def placeholder_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
+  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("placeholder")
   def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("placeholder")
@@ -94,5 +94,5 @@ trait FunctionBindKey extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
 }

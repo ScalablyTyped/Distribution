@@ -19,7 +19,7 @@ trait Node extends StObject {
   /**
     * The date and time (in UNIX epoch format) when the node was launched.
     */
-  var NodeCreateTime: js.UndefOr[TStamp] = js.undefined
+  var NodeCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A system-generated identifier for the node.
@@ -53,7 +53,7 @@ object Node {
     
     inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    inline def setNodeCreateTime(value: TStamp): Self = StObject.set(x, "NodeCreateTime", value.asInstanceOf[js.Any])
+    inline def setNodeCreateTime(value: js.Date): Self = StObject.set(x, "NodeCreateTime", value.asInstanceOf[js.Any])
     
     inline def setNodeCreateTimeUndefined: Self = StObject.set(x, "NodeCreateTime", js.undefined)
     

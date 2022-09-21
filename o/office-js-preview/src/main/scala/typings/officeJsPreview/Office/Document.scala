@@ -21,7 +21,7 @@ trait Document extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
@@ -31,22 +31,18 @@ trait Document extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
-  def addHandlerAsync(eventType: EventType, handler: js.Any): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
+    handler: Any,
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
+    handler: Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -71,15 +67,15 @@ trait Document extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview | ActiveView}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview | ActiveView}
     *
     * Can trigger an event when the view changes.
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the state of the presentation's current view.
-    *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides,
-    *                  such as Normal or Outline View. "read" corresponds to either Slide Show or Reading View.
+    *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides:
+    *                  Normal, Slide Sorter, or Outline View. "read" corresponds to either Slide Show or Reading View.
     */
   def getActiveViewAsync(): Unit = js.native
   def getActiveViewAsync(callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]): Unit = js.native
@@ -95,11 +91,11 @@ trait Document extends StObject {
     *
     * **Requirement sets**:
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
     *
     * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
     * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to
@@ -113,7 +109,7 @@ trait Document extends StObject {
     *   <tr><th>                             </th><th> Office on Windows           </th><th> Office on the web           </th><th> Office on iPad      </th><th> Office on Mac               </th></tr>
     *   <tr><td><strong> Excel      </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`         </td><td>                     </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`         </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`        </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
     *  </table>
     *
     * @param fileType The format in which the file will be returned
@@ -136,7 +132,7 @@ trait Document extends StObject {
     *
     * @remarks
     *
-    * **Requirement sets**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement sets**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * You get the file's URL with the url property `asyncResult.value.url`.
     *
@@ -193,13 +189,13 @@ trait Document extends StObject {
     *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
     */
   def getProjectFieldAsync(fieldId: Double): Unit = js.native
-  def getProjectFieldAsync(fieldId: Double, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
-  def getProjectFieldAsync(fieldId: Double, options: Unit, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getProjectFieldAsync(fieldId: Double, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
+  def getProjectFieldAsync(fieldId: Double, options: Unit, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def getProjectFieldAsync(fieldId: Double, options: AsyncContextOptions): Unit = js.native
   def getProjectFieldAsync(
     fieldId: Double,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -263,17 +259,17 @@ trait Document extends StObject {
     *
     * **Requirement sets**:
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     *
     * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
     * the following information.
@@ -333,7 +329,7 @@ trait Document extends StObject {
     *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, and Word</td>
+    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
     *     <td>`Office.CoercionType.XmlSvg`</td>
     *   </tr>
     * </table>
@@ -397,10 +393,10 @@ trait Document extends StObject {
     *
     */
   def getSelectedViewAsync(): Unit = js.native
-  def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
-  def getSelectedViewAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
+  def getSelectedViewAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions): Unit = js.native
-  def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   
   /**
     * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
@@ -414,13 +410,13 @@ trait Document extends StObject {
     *
     */
   def getTaskAsync(taskId: String): Unit = js.native
-  def getTaskAsync(taskId: String, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
-  def getTaskAsync(taskId: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getTaskAsync(taskId: String, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
+  def getTaskAsync(taskId: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def getTaskAsync(taskId: String, options: AsyncContextOptions): Unit = js.native
   def getTaskAsync(
     taskId: String,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -454,19 +450,19 @@ trait Document extends StObject {
     *
     */
   def getTaskFieldAsync(taskId: String, fieldId: Double): Unit = js.native
-  def getTaskFieldAsync(taskId: String, fieldId: Double, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getTaskFieldAsync(taskId: String, fieldId: Double, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def getTaskFieldAsync(
     taskId: String,
     fieldId: Double,
     options: Unit,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   def getTaskFieldAsync(taskId: String, fieldId: Double, options: AsyncContextOptions): Unit = js.native
   def getTaskFieldAsync(
     taskId: String,
     fieldId: Double,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -479,17 +475,17 @@ trait Document extends StObject {
     *
     */
   def getWSSUrlAsync(): Unit = js.native
-  def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
-  def getWSSUrlAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
+  def getWSSUrlAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions): Unit = js.native
-  def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   
   /**
     * Goes to the specified object or location in the document.
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * PowerPoint doesn't support the goToByIdAsync method in Master Views.
     *
@@ -511,34 +507,34 @@ trait Document extends StObject {
     *                  The `value` property of the result is the current view.
     */
   def goToByIdAsync(id: String, goToType: GoToType): Unit = js.native
-  def goToByIdAsync(id: String, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def goToByIdAsync(id: String, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def goToByIdAsync(
     id: String,
     goToType: GoToType,
     options: Unit,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   def goToByIdAsync(id: String, goToType: GoToType, options: GoToByIdOptions): Unit = js.native
   def goToByIdAsync(
     id: String,
     goToType: GoToType,
     options: GoToByIdOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   def goToByIdAsync(id: Double, goToType: GoToType): Unit = js.native
-  def goToByIdAsync(id: Double, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]): Unit = js.native
+  def goToByIdAsync(id: Double, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
   def goToByIdAsync(
     id: Double,
     goToType: GoToType,
     options: Unit,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   def goToByIdAsync(id: Double, goToType: GoToType, options: GoToByIdOptions): Unit = js.native
   def goToByIdAsync(
     id: Double,
     goToType: GoToType,
     options: GoToByIdOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Any], Unit]
+    callback: js.Function1[/* result */ AsyncResult[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -551,7 +547,7 @@ trait Document extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
     * @param options Provides options to determine which event handler or handlers are removed.
@@ -675,21 +671,21 @@ trait Document extends StObject {
     *
     * **Requirement sets**:
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
     *
     * **Application-specific behaviors**
     *
@@ -786,15 +782,6 @@ trait Document extends StObject {
     *   </tr>
     * </table>
     *
-    * **Type-specific behaviors**
-    *
-    * <table>
-    *   <tr>
-    *     <td>`Office.CoercionType.XmlSvg`</td>
-    *     <td>(Excel only): In Excel builds between 16.0.11526.10000 and 16.0.12309.10000, there is a 64KB size limitation for SVG insertions.</td>
-    *   </tr>
-    * </table>
-    *
     * **Hosts**
     *
     * The possible values for the {@link Office.CoercionType} parameter vary by the host.
@@ -829,7 +816,7 @@ trait Document extends StObject {
     *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, and Word</td>
+    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
     *     <td>`Office.CoercionType.XmlSvg`</td>
     *   </tr>
     * </table>
@@ -875,16 +862,16 @@ trait Document extends StObject {
     options: SetSelectedDataOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setSelectedDataAsync(data: js.Array[js.Array[js.Any]]): Unit = js.native
-  def setSelectedDataAsync(data: js.Array[js.Array[js.Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setSelectedDataAsync(data: js.Array[js.Array[Any]]): Unit = js.native
+  def setSelectedDataAsync(data: js.Array[js.Array[Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setSelectedDataAsync(
-    data: js.Array[js.Array[js.Any]],
+    data: js.Array[js.Array[Any]],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setSelectedDataAsync(data: js.Array[js.Array[js.Any]], options: SetSelectedDataOptions): Unit = js.native
+  def setSelectedDataAsync(data: js.Array[js.Array[Any]], options: SetSelectedDataOptions): Unit = js.native
   def setSelectedDataAsync(
-    data: js.Array[js.Array[js.Any]],
+    data: js.Array[js.Array[Any]],
     options: SetSelectedDataOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native

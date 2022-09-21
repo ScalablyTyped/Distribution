@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchWriteSpansRequest extends StObject {
   
-  /** Required. A list of new spans. The span names must not match existing spans, or the results are undefined. */
+  /** Required. A list of new spans. The span names must not match existing spans, otherwise the results are undefined. */
   var spans: js.UndefOr[js.Array[Span]] = js.undefined
 }
 object BatchWriteSpansRequest {
@@ -22,6 +22,6 @@ object BatchWriteSpansRequest {
     
     inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
     
-    inline def setSpansVarargs(value: Span*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: Span*): Self = StObject.set(x, "spans", js.Array(value*))
   }
 }

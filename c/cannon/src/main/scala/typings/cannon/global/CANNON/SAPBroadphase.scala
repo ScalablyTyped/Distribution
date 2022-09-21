@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.SAPBroadphase")
 @js.native
-class SAPBroadphase ()
+open class SAPBroadphase ()
   extends StObject
      with typings.cannon.CANNON.SAPBroadphase {
   def this(world: typings.cannon.CANNON.World) = this()
@@ -80,9 +80,9 @@ object SAPBroadphase {
   inline def checkBounds(bi: typings.cannon.CANNON.Body, bj: typings.cannon.CANNON.Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkBounds")(bi.asInstanceOf[js.Any], bj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def checkBounds(bi: typings.cannon.CANNON.Body, bj: typings.cannon.CANNON.Body, axisIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkBounds")(bi.asInstanceOf[js.Any], bj.asInstanceOf[js.Any], axisIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def insertionSortX(a: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortX")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def insertionSortX(a: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortX")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def insertionSortY(a: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortY")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def insertionSortY(a: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortY")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def insertionSortZ(a: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortZ")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def insertionSortZ(a: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertionSortZ")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
 }

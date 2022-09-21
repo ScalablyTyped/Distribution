@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasRectPainter")
 @js.native
-class CanvasRectPainter protected () extends CanvasStyler {
+open class CanvasRectPainter protected () extends CanvasStyler {
   def this(ctx: CanvasRenderingContext2D) = this()
   
   def rect(width: Double, height: Double): this.type = js.native

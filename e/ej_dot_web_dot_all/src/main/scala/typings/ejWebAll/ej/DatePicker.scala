@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -135,7 +134,7 @@ object DatePicker {
     
     /** returns the event parameters from DatePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DatePicker model.
       */
@@ -162,7 +161,7 @@ object DatePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -180,7 +179,7 @@ object DatePicker {
     
     /** returns the currently created date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the current DOM object of the date from the Calendar.
       */
@@ -207,7 +206,7 @@ object DatePicker {
     
     extension [Self <: BeforeDateCreateEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -241,7 +240,7 @@ object DatePicker {
     
     /** returns the event parameters from DatePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DatePicker model.
       */
@@ -268,7 +267,7 @@ object DatePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -331,7 +330,7 @@ object DatePicker {
     
     /** returns the current date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the DatePicker model.
       */
@@ -358,7 +357,7 @@ object DatePicker {
     
     extension [Self <: CloseEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -600,7 +599,7 @@ object DatePicker {
     /** Disable the list of specified date value.
       * @Default {{}}
       */
-    var blackoutDates: js.UndefOr[js.Any] = js.undefined
+    var blackoutDates: js.UndefOr[Any] = js.undefined
     
     /** Sets the specified text value to the today button in the DatePicker calendar.
       * @Default {Today}
@@ -709,7 +708,7 @@ object DatePicker {
     /** Specifies the HTML Attributes of the DatePicker.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Change the DatePicker calendar and date format based on given culture.
       * @Default {en-US}
@@ -719,12 +718,12 @@ object DatePicker {
     /** Specifies the maximum date in the calendar that the user can select.
       * @Default {new Date(2099, 11, 31)}
       */
-    var maxDate: js.UndefOr[String | Date] = js.undefined
+    var maxDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the minimum date in the calendar that the user can select.
       * @Default {new Date(1900, 00, 01)}
       */
-    var minDate: js.UndefOr[String | Date] = js.undefined
+    var minDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Fires when calender view navigates to month/year/decade/century.
       */
@@ -776,7 +775,7 @@ object DatePicker {
     /** Specifies the special dates in DatePicker.
       * @Default {null}
       */
-    var specialDates: js.UndefOr[js.Any] = js.undefined
+    var specialDates: js.UndefOr[Any] = js.undefined
     
     /** Specifies the start day of the week in DatePicker calendar.
       * @Default {0}
@@ -801,17 +800,17 @@ object DatePicker {
     /** Sets the jQuery validation support to DatePicker Date value. See validation
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation custom rules to the DatePicker. see validation
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** sets or returns the current value of DatePicker
       * @Default {null}
       */
-    var value: js.UndefOr[String | Date] = js.undefined
+    var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
       * @Default {Select date}
@@ -857,7 +856,7 @@ object DatePicker {
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      inline def setBlackoutDates(value: js.Any): Self = StObject.set(x, "blackoutDates", value.asInstanceOf[js.Any])
+      inline def setBlackoutDates(value: Any): Self = StObject.set(x, "blackoutDates", value.asInstanceOf[js.Any])
       
       inline def setBlackoutDatesUndefined: Self = StObject.set(x, "blackoutDates", js.undefined)
       
@@ -949,7 +948,7 @@ object DatePicker {
       
       inline def setHighlightWeekendUndefined: Self = StObject.set(x, "highlightWeekend", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -957,11 +956,11 @@ object DatePicker {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: String | js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: String | js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -1005,7 +1004,7 @@ object DatePicker {
       
       inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
-      inline def setSpecialDates(value: js.Any): Self = StObject.set(x, "specialDates", value.asInstanceOf[js.Any])
+      inline def setSpecialDates(value: Any): Self = StObject.set(x, "specialDates", value.asInstanceOf[js.Any])
       
       inline def setSpecialDatesUndefined: Self = StObject.set(x, "specialDates", js.undefined)
       
@@ -1025,15 +1024,15 @@ object DatePicker {
       
       inline def setTooltipFormatUndefined: Self = StObject.set(x, "tooltipFormat", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      inline def setValue(value: String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -1055,7 +1054,7 @@ object DatePicker {
     
     /** returns the current date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the DatePicker model.
       */
@@ -1086,7 +1085,7 @@ object DatePicker {
     
     extension [Self <: NavigateEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -1116,7 +1115,7 @@ object DatePicker {
     
     /** returns the current date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the DatePicker model.
       */
@@ -1143,7 +1142,7 @@ object DatePicker {
     
     extension [Self <: OpenEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -1169,7 +1168,7 @@ object DatePicker {
     
     /** returns the selected date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns whether the  currently selected date is special date or not.
       */
@@ -1200,7 +1199,7 @@ object DatePicker {
     
     extension [Self <: SelectEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       

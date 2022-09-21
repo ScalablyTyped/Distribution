@@ -10,10 +10,10 @@ Extracting text from files of various type including html, pdf, doc, docx, xls, 
 | ------------------ | :-------------: |
 | Full name          | textract |
 | Keywords           | textract, extract, html, csv, text, pdf, docx, doc, xls, xlsx, png, jpg, gif, rtf, dxf, pptx, html, markdown, xml, odt, ott, xlsb, xlsm, xltx, ods, ots, potx, odg, otg, epub |
-| # releases         | 2 |
-| # dependents       | 27 |
-| # downloads        | 196730 |
-| # stars            | 26 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 32066.333333333332 |
+| # stars            | 1464.0 |
 
 ## Links
 - [Homepage](https://github.com/dbashford/textract)

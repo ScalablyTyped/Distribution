@@ -5,28 +5,39 @@ import typings.devtoolsProtocol.mod.Protocol.Accessibility.AXValueNativeSourceTy
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.AXValueSourceType
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.AXValueType
 import typings.devtoolsProtocol.mod.Protocol.Animation.AnimationType
+import typings.devtoolsProtocol.mod.Protocol.Audits.AttributionReportingIssueType
 import typings.devtoolsProtocol.mod.Protocol.Audits.BlockedByResponseReason
+import typings.devtoolsProtocol.mod.Protocol.Audits.ClientHintIssueReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.ContentSecurityPolicyViolationType
+import typings.devtoolsProtocol.mod.Protocol.Audits.CookieExclusionReason
+import typings.devtoolsProtocol.mod.Protocol.Audits.CookieOperation
+import typings.devtoolsProtocol.mod.Protocol.Audits.CookieWarningReason
+import typings.devtoolsProtocol.mod.Protocol.Audits.DeprecationIssueType
+import typings.devtoolsProtocol.mod.Protocol.Audits.FederatedAuthRequestIssueReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseRequestEncoding
 import typings.devtoolsProtocol.mod.Protocol.Audits.HeavyAdReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.HeavyAdResolutionStatus
 import typings.devtoolsProtocol.mod.Protocol.Audits.InspectorIssueCode
 import typings.devtoolsProtocol.mod.Protocol.Audits.MixedContentResolutionStatus
 import typings.devtoolsProtocol.mod.Protocol.Audits.MixedContentResourceType
-import typings.devtoolsProtocol.mod.Protocol.Audits.SameSiteCookieExclusionReason
-import typings.devtoolsProtocol.mod.Protocol.Audits.SameSiteCookieOperation
-import typings.devtoolsProtocol.mod.Protocol.Audits.SameSiteCookieWarningReason
+import typings.devtoolsProtocol.mod.Protocol.Audits.SharedArrayBufferIssueType
+import typings.devtoolsProtocol.mod.Protocol.Audits.TwaQualityEnforcementViolationType
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.ServiceName
+import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserCommandId
 import typings.devtoolsProtocol.mod.Protocol.Browser.PermissionSetting
 import typings.devtoolsProtocol.mod.Protocol.Browser.PermissionType
+import typings.devtoolsProtocol.mod.Protocol.Browser.SetDownloadBehaviorRequestBehavior
 import typings.devtoolsProtocol.mod.Protocol.Browser.WindowState
 import typings.devtoolsProtocol.mod.Protocol.CSS.CSSMediaSource
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetOrigin
 import typings.devtoolsProtocol.mod.Protocol.CacheStorage.CachedResponseType
 import typings.devtoolsProtocol.mod.Protocol.Console.ConsoleMessageLevel
 import typings.devtoolsProtocol.mod.Protocol.Console.ConsoleMessageSource
+import typings.devtoolsProtocol.mod.Protocol.DOM.CompatibilityMode
+import typings.devtoolsProtocol.mod.Protocol.DOM.EnableRequestIncludeWhitespace
 import typings.devtoolsProtocol.mod.Protocol.DOM.PseudoType
 import typings.devtoolsProtocol.mod.Protocol.DOM.ShadowRootType
+import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.CSPViolationType
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.DOMBreakpointType
 import typings.devtoolsProtocol.mod.Protocol.Debugger.BreakLocationType
 import typings.devtoolsProtocol.mod.Protocol.Debugger.ContinueToLocationRequestTargetCallFrames
@@ -36,6 +47,8 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.ScopeType
 import typings.devtoolsProtocol.mod.Protocol.Debugger.ScriptLanguage
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetInstrumentationBreakpointRequestInstrumentation
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetPauseOnExceptionsRequestState
+import typings.devtoolsProtocol.mod.Protocol.Debugger.SetScriptSourceResponseStatus
+import typings.devtoolsProtocol.mod.Protocol.Emulation.DisabledImageType
 import typings.devtoolsProtocol.mod.Protocol.Emulation.DisplayFeatureOrientation
 import typings.devtoolsProtocol.mod.Protocol.Emulation.ScreenOrientationType
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetEmitTouchEventsForMouseRequestConfiguration
@@ -45,6 +58,7 @@ import typings.devtoolsProtocol.mod.Protocol.Fetch.RequestStage
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.ScreenshotParamsFormat
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.KeyPathType
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.KeyType
+import typings.devtoolsProtocol.mod.Protocol.Input.DispatchDragEventRequestType
 import typings.devtoolsProtocol.mod.Protocol.Input.DispatchKeyEventRequestType
 import typings.devtoolsProtocol.mod.Protocol.Input.DispatchMouseEventRequestPointerType
 import typings.devtoolsProtocol.mod.Protocol.Input.DispatchMouseEventRequestType
@@ -56,7 +70,6 @@ import typings.devtoolsProtocol.mod.Protocol.LayerTree.ScrollRectType
 import typings.devtoolsProtocol.mod.Protocol.Log.LogEntryLevel
 import typings.devtoolsProtocol.mod.Protocol.Log.LogEntrySource
 import typings.devtoolsProtocol.mod.Protocol.Log.ViolationSettingName
-import typings.devtoolsProtocol.mod.Protocol.Media.PlayerErrorType
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayerMessageLevel
 import typings.devtoolsProtocol.mod.Protocol.Memory.PressureLevel
 import typings.devtoolsProtocol.mod.Protocol.Network.AuthChallengeResponseResponse
@@ -64,25 +77,37 @@ import typings.devtoolsProtocol.mod.Protocol.Network.AuthChallengeSource
 import typings.devtoolsProtocol.mod.Protocol.Network.BlockedReason
 import typings.devtoolsProtocol.mod.Protocol.Network.CertificateTransparencyCompliance
 import typings.devtoolsProtocol.mod.Protocol.Network.ConnectionType
+import typings.devtoolsProtocol.mod.Protocol.Network.ContentEncoding
 import typings.devtoolsProtocol.mod.Protocol.Network.CookieBlockedReason
 import typings.devtoolsProtocol.mod.Protocol.Network.CookiePriority
 import typings.devtoolsProtocol.mod.Protocol.Network.CookieSameSite
+import typings.devtoolsProtocol.mod.Protocol.Network.CookieSourceScheme
+import typings.devtoolsProtocol.mod.Protocol.Network.CorsError
 import typings.devtoolsProtocol.mod.Protocol.Network.CrossOriginEmbedderPolicyValue
 import typings.devtoolsProtocol.mod.Protocol.Network.CrossOriginOpenerPolicyValue
 import typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason
+import typings.devtoolsProtocol.mod.Protocol.Network.IPAddressSpace
 import typings.devtoolsProtocol.mod.Protocol.Network.InitiatorType
 import typings.devtoolsProtocol.mod.Protocol.Network.InterceptionStage
+import typings.devtoolsProtocol.mod.Protocol.Network.PrivateNetworkRequestPolicy
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportStatus
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestReferrerPolicy
 import typings.devtoolsProtocol.mod.Protocol.Network.ResourcePriority
 import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import typings.devtoolsProtocol.mod.Protocol.Network.ServiceWorkerResponseSource
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCookieBlockedReason
 import typings.devtoolsProtocol.mod.Protocol.Network.SignedExchangeErrorField
+import typings.devtoolsProtocol.mod.Protocol.Network.TrustTokenOperationDoneEventStatus
 import typings.devtoolsProtocol.mod.Protocol.Network.TrustTokenOperationType
 import typings.devtoolsProtocol.mod.Protocol.Network.TrustTokenParamsRefreshPolicy
 import typings.devtoolsProtocol.mod.Protocol.Overlay.ColorFormat
+import typings.devtoolsProtocol.mod.Protocol.Overlay.ContrastAlgorithm
 import typings.devtoolsProtocol.mod.Protocol.Overlay.InspectMode
+import typings.devtoolsProtocol.mod.Protocol.Overlay.LineStylePattern
+import typings.devtoolsProtocol.mod.Protocol.Page.AdFrameExplanation
 import typings.devtoolsProtocol.mod.Protocol.Page.AdFrameType
+import typings.devtoolsProtocol.mod.Protocol.Page.BackForwardCacheNotRestoredReason
+import typings.devtoolsProtocol.mod.Protocol.Page.BackForwardCacheNotRestoredReasonType
 import typings.devtoolsProtocol.mod.Protocol.Page.CaptureScreenshotRequestFormat
 import typings.devtoolsProtocol.mod.Protocol.Page.ClientNavigationDisposition
 import typings.devtoolsProtocol.mod.Protocol.Page.ClientNavigationReason
@@ -90,10 +115,19 @@ import typings.devtoolsProtocol.mod.Protocol.Page.CrossOriginIsolatedContextType
 import typings.devtoolsProtocol.mod.Protocol.Page.DialogType
 import typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEventState
 import typings.devtoolsProtocol.mod.Protocol.Page.FileChooserOpenedEventMode
+import typings.devtoolsProtocol.mod.Protocol.Page.FrameDetachedEventReason
+import typings.devtoolsProtocol.mod.Protocol.Page.GatedAPIFeatures
+import typings.devtoolsProtocol.mod.Protocol.Page.NavigationType
+import typings.devtoolsProtocol.mod.Protocol.Page.OriginTrialStatus
+import typings.devtoolsProtocol.mod.Protocol.Page.OriginTrialTokenStatus
+import typings.devtoolsProtocol.mod.Protocol.Page.OriginTrialUsageRestriction
+import typings.devtoolsProtocol.mod.Protocol.Page.PermissionsPolicyBlockReason
+import typings.devtoolsProtocol.mod.Protocol.Page.PermissionsPolicyFeature
+import typings.devtoolsProtocol.mod.Protocol.Page.PrerenderFinalStatus
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFRequestTransferMode
 import typings.devtoolsProtocol.mod.Protocol.Page.ReferrerPolicy
 import typings.devtoolsProtocol.mod.Protocol.Page.SecureContextType
-import typings.devtoolsProtocol.mod.Protocol.Page.SetDownloadBehaviorRequestBehavior
+import typings.devtoolsProtocol.mod.Protocol.Page.SetSPCTransactionModeRequestMode
 import typings.devtoolsProtocol.mod.Protocol.Page.SetTouchEmulationEnabledRequestConfiguration
 import typings.devtoolsProtocol.mod.Protocol.Page.SetWebLifecycleStateRequestState
 import typings.devtoolsProtocol.mod.Protocol.Page.StartScreencastRequestFormat
@@ -107,19 +141,23 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.PropertyPreviewSubtype
 import typings.devtoolsProtocol.mod.Protocol.Runtime.PropertyPreviewType
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectSubtype
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectType
+import typings.devtoolsProtocol.mod.Protocol.Runtime.WebDriverValueType
 import typings.devtoolsProtocol.mod.Protocol.Security.CertificateErrorAction
 import typings.devtoolsProtocol.mod.Protocol.Security.MixedContentType
 import typings.devtoolsProtocol.mod.Protocol.Security.SafetyTipStatus
 import typings.devtoolsProtocol.mod.Protocol.Security.SecurityState
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.ServiceWorkerVersionRunningStatus
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.ServiceWorkerVersionStatus
+import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessType
 import typings.devtoolsProtocol.mod.Protocol.Storage.StorageType
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.ImageType
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.SubsamplingFormat
+import typings.devtoolsProtocol.mod.Protocol.Tracing.MemoryDumpLevelOfDetail
 import typings.devtoolsProtocol.mod.Protocol.Tracing.StartRequestTransferMode
 import typings.devtoolsProtocol.mod.Protocol.Tracing.StreamCompression
 import typings.devtoolsProtocol.mod.Protocol.Tracing.StreamFormat
 import typings.devtoolsProtocol.mod.Protocol.Tracing.TraceConfigRecordMode
+import typings.devtoolsProtocol.mod.Protocol.Tracing.TracingBackend
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.AutomationRate
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.ChannelCountMode
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.ChannelInterpretation
@@ -127,6 +165,7 @@ import typings.devtoolsProtocol.mod.Protocol.WebAudio.ContextState
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.ContextType
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AuthenticatorProtocol
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AuthenticatorTransport
+import typings.devtoolsProtocol.mod.Protocol.WebAuthn.Ctap2Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -146,10 +185,82 @@ object devtoolsProtocolStrings {
   inline def AccessDenied: AccessDenied = "AccessDenied".asInstanceOf[AccessDenied]
   
   @js.native
+  sealed trait AccountsHttpNotFound
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def AccountsHttpNotFound: AccountsHttpNotFound = "AccountsHttpNotFound".asInstanceOf[AccountsHttpNotFound]
+  
+  @js.native
+  sealed trait AccountsInvalidResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def AccountsInvalidResponse: AccountsInvalidResponse = "AccountsInvalidResponse".asInstanceOf[AccountsInvalidResponse]
+  
+  @js.native
+  sealed trait AccountsNoResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def AccountsNoResponse: AccountsNoResponse = "AccountsNoResponse".asInstanceOf[AccountsNoResponse]
+  
+  @js.native
+  sealed trait Activated
+    extends StObject
+       with PrerenderFinalStatus
+  inline def Activated: Activated = "Activated".asInstanceOf[Activated]
+  
+  @js.native
+  sealed trait ActivatedBeforeStarted
+    extends StObject
+       with PrerenderFinalStatus
+  inline def ActivatedBeforeStarted: ActivatedBeforeStarted = "ActivatedBeforeStarted".asInstanceOf[ActivatedBeforeStarted]
+  
+  @js.native
+  sealed trait ActivationNavigationsDisallowedForBug1234857
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ActivationNavigationsDisallowedForBug1234857: ActivationNavigationsDisallowedForBug1234857 = "ActivationNavigationsDisallowedForBug1234857".asInstanceOf[ActivationNavigationsDisallowedForBug1234857]
+  
+  @js.native
   sealed trait AddressUnreachable
     extends StObject
        with ErrorReason
   inline def AddressUnreachable: AddressUnreachable = "AddressUnreachable".asInstanceOf[AddressUnreachable]
+  
+  @js.native
+  sealed trait Allow
+    extends StObject
+       with PrivateNetworkRequestPolicy
+  inline def Allow: Allow = "Allow".asInstanceOf[Allow]
+  
+  @js.native
+  sealed trait AllowOriginMismatch
+    extends StObject
+       with CorsError
+  inline def AllowOriginMismatch: AllowOriginMismatch = "AllowOriginMismatch".asInstanceOf[AllowOriginMismatch]
+  
+  @js.native
+  sealed trait AlreadyExists
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def AlreadyExists: AlreadyExists = "AlreadyExists".asInstanceOf[AlreadyExists]
+  
+  @js.native
+  sealed trait AppBanner
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def AppBanner: AppBanner = "AppBanner".asInstanceOf[AppBanner]
+  
+  @js.native
+  sealed trait AttributionReportingIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def AttributionReportingIssue: AttributionReportingIssue = "AttributionReportingIssue".asInstanceOf[AttributionReportingIssue]
+  
+  @js.native
+  sealed trait AttributionSrc
+    extends StObject
+       with MixedContentResourceType
+  inline def AttributionSrc: AttributionSrc = "AttributionSrc".asInstanceOf[AttributionSrc]
   
   @js.native
   sealed trait Audio
@@ -158,15 +269,88 @@ object devtoolsProtocolStrings {
   inline def Audio: Audio = "Audio".asInstanceOf[Audio]
   
   @js.native
+  sealed trait AudioOutputDeviceRequested
+    extends StObject
+       with PrerenderFinalStatus
+  inline def AudioOutputDeviceRequested: AudioOutputDeviceRequested = "AudioOutputDeviceRequested".asInstanceOf[AudioOutputDeviceRequested]
+  
+  @js.native
+  sealed trait AuthorizationCoveredByWildcard
+    extends StObject
+       with DeprecationIssueType
+  inline def AuthorizationCoveredByWildcard: AuthorizationCoveredByWildcard = "AuthorizationCoveredByWildcard".asInstanceOf[AuthorizationCoveredByWildcard]
+  
+  @js.native
+  sealed trait BackForwardCacheDisabled
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BackForwardCacheDisabled: BackForwardCacheDisabled = "BackForwardCacheDisabled".asInstanceOf[BackForwardCacheDisabled]
+  
+  @js.native
+  sealed trait BackForwardCacheDisabledByCommandLine
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BackForwardCacheDisabledByCommandLine: BackForwardCacheDisabledByCommandLine = "BackForwardCacheDisabledByCommandLine".asInstanceOf[BackForwardCacheDisabledByCommandLine]
+  
+  @js.native
+  sealed trait BackForwardCacheDisabledByLowMemory
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BackForwardCacheDisabledByLowMemory: BackForwardCacheDisabledByLowMemory = "BackForwardCacheDisabledByLowMemory".asInstanceOf[BackForwardCacheDisabledByLowMemory]
+  
+  @js.native
+  sealed trait BackForwardCacheDisabledForDelegate
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BackForwardCacheDisabledForDelegate: BackForwardCacheDisabledForDelegate = "BackForwardCacheDisabledForDelegate".asInstanceOf[BackForwardCacheDisabledForDelegate]
+  
+  @js.native
+  sealed trait BackForwardCacheDisabledForPrerender
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BackForwardCacheDisabledForPrerender: BackForwardCacheDisabledForPrerender = "BackForwardCacheDisabledForPrerender".asInstanceOf[BackForwardCacheDisabledForPrerender]
+  
+  @js.native
+  sealed trait BackForwardCacheRestore
+    extends StObject
+       with NavigationType
+  inline def BackForwardCacheRestore: BackForwardCacheRestore = "BackForwardCacheRestore".asInstanceOf[BackForwardCacheRestore]
+  
+  @js.native
+  sealed trait BadResponse
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def BadResponse: BadResponse = "BadResponse".asInstanceOf[BadResponse]
+  
+  @js.native
   sealed trait Beacon
     extends StObject
        with MixedContentResourceType
   inline def Beacon: Beacon = "Beacon".asInstanceOf[Beacon]
   
   @js.native
+  sealed trait BlockFromInsecureToMorePrivate
+    extends StObject
+       with PrivateNetworkRequestPolicy
+  inline def BlockFromInsecureToMorePrivate: BlockFromInsecureToMorePrivate = "BlockFromInsecureToMorePrivate".asInstanceOf[BlockFromInsecureToMorePrivate]
+  
+  @js.native
+  sealed trait BlockedByActiveFunction
+    extends StObject
+       with SetScriptSourceResponseStatus
+  inline def BlockedByActiveFunction: BlockedByActiveFunction = "BlockedByActiveFunction".asInstanceOf[BlockedByActiveFunction]
+  
+  @js.native
+  sealed trait BlockedByActiveGenerator
+    extends StObject
+       with SetScriptSourceResponseStatus
+  inline def BlockedByActiveGenerator: BlockedByActiveGenerator = "BlockedByActiveGenerator".asInstanceOf[BlockedByActiveGenerator]
+  
+  @js.native
   sealed trait BlockedByClient
     extends StObject
        with ErrorReason
+       with PrerenderFinalStatus
   inline def BlockedByClient: BlockedByClient = "BlockedByClient".asInstanceOf[BlockedByClient]
   
   @js.native
@@ -182,10 +366,28 @@ object devtoolsProtocolStrings {
   inline def BlockedByResponseIssue: BlockedByResponseIssue = "BlockedByResponseIssue".asInstanceOf[BlockedByResponseIssue]
   
   @js.native
+  sealed trait BroadcastChannel
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BroadcastChannel: BroadcastChannel = "BroadcastChannel".asInstanceOf[BroadcastChannel]
+  
+  @js.native
+  sealed trait BrowsingInstanceNotSwapped
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def BrowsingInstanceNotSwapped: BrowsingInstanceNotSwapped = "BrowsingInstanceNotSwapped".asInstanceOf[BrowsingInstanceNotSwapped]
+  
+  @js.native
   sealed trait CSPReport
     extends StObject
        with MixedContentResourceType
   inline def CSPReport: CSPReport = "CSPReport".asInstanceOf[CSPReport]
+  
+  @js.native
+  sealed trait CSPViolation
+    extends StObject
+       with PausedEventReason
+  inline def CSPViolation: CSPViolation = "CSPViolation".asInstanceOf[CSPViolation]
   
   @js.native
   sealed trait CSPViolationReport
@@ -200,10 +402,58 @@ object devtoolsProtocolStrings {
   inline def CSSAnimation: CSSAnimation = "CSSAnimation".asInstanceOf[CSSAnimation]
   
   @js.native
+  sealed trait CSSSelectorInternalMediaControlsOverlayCastButton
+    extends StObject
+       with DeprecationIssueType
+  inline def CSSSelectorInternalMediaControlsOverlayCastButton: CSSSelectorInternalMediaControlsOverlayCastButton = "CSSSelectorInternalMediaControlsOverlayCastButton".asInstanceOf[CSSSelectorInternalMediaControlsOverlayCastButton]
+  
+  @js.native
   sealed trait CSSTransition
     extends StObject
        with AnimationType
   inline def CSSTransition: CSSTransition = "CSSTransition".asInstanceOf[CSSTransition]
+  
+  @js.native
+  sealed trait CacheControlNoStore
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CacheControlNoStore: CacheControlNoStore = "CacheControlNoStore".asInstanceOf[CacheControlNoStore]
+  
+  @js.native
+  sealed trait CacheControlNoStoreCookieModified
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CacheControlNoStoreCookieModified: CacheControlNoStoreCookieModified = "CacheControlNoStoreCookieModified".asInstanceOf[CacheControlNoStoreCookieModified]
+  
+  @js.native
+  sealed trait CacheControlNoStoreHTTPOnlyCookieModified
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CacheControlNoStoreHTTPOnlyCookieModified: CacheControlNoStoreHTTPOnlyCookieModified = "CacheControlNoStoreHTTPOnlyCookieModified".asInstanceOf[CacheControlNoStoreHTTPOnlyCookieModified]
+  
+  @js.native
+  sealed trait CacheFlushed
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CacheFlushed: CacheFlushed = "CacheFlushed".asInstanceOf[CacheFlushed]
+  
+  @js.native
+  sealed trait CacheLimit
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CacheLimit: CacheLimit = "CacheLimit".asInstanceOf[CacheLimit]
+  
+  @js.native
+  sealed trait CanRequestURLHTTPContainingNewline
+    extends StObject
+       with DeprecationIssueType
+  inline def CanRequestURLHTTPContainingNewline: CanRequestURLHTTPContainingNewline = "CanRequestURLHTTPContainingNewline".asInstanceOf[CanRequestURLHTTPContainingNewline]
+  
+  @js.native
+  sealed trait CancelAllHostsForTesting
+    extends StObject
+       with PrerenderFinalStatus
+  inline def CancelAllHostsForTesting: CancelAllHostsForTesting = "CancelAllHostsForTesting".asInstanceOf[CancelAllHostsForTesting]
   
   @js.native
   sealed trait CancelAuth
@@ -213,10 +463,82 @@ object devtoolsProtocolStrings {
   inline def CancelAuth: CancelAuth = "CancelAuth".asInstanceOf[CancelAuth]
   
   @js.native
+  sealed trait Canceled
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def Canceled: Canceled = "Canceled".asInstanceOf[Canceled]
+  
+  @js.native
+  sealed trait ChromeLoadTimesConnectionInfo
+    extends StObject
+       with DeprecationIssueType
+  inline def ChromeLoadTimesConnectionInfo: ChromeLoadTimesConnectionInfo = "ChromeLoadTimesConnectionInfo".asInstanceOf[ChromeLoadTimesConnectionInfo]
+  
+  @js.native
+  sealed trait ChromeLoadTimesFirstPaintAfterLoadTime
+    extends StObject
+       with DeprecationIssueType
+  inline def ChromeLoadTimesFirstPaintAfterLoadTime: ChromeLoadTimesFirstPaintAfterLoadTime = "ChromeLoadTimesFirstPaintAfterLoadTime".asInstanceOf[ChromeLoadTimesFirstPaintAfterLoadTime]
+  
+  @js.native
+  sealed trait ChromeLoadTimesWasAlternateProtocolAvailable
+    extends StObject
+       with DeprecationIssueType
+  inline def ChromeLoadTimesWasAlternateProtocolAvailable: ChromeLoadTimesWasAlternateProtocolAvailable = "ChromeLoadTimesWasAlternateProtocolAvailable".asInstanceOf[ChromeLoadTimesWasAlternateProtocolAvailable]
+  
+  @js.native
+  sealed trait Circumstantial
+    extends StObject
+       with BackForwardCacheNotRestoredReasonType
+  inline def Circumstantial: Circumstantial = "Circumstantial".asInstanceOf[Circumstantial]
+  
+  @js.native
+  sealed trait ClientCertRequested
+    extends StObject
+       with PrerenderFinalStatus
+  inline def ClientCertRequested: ClientCertRequested = "ClientCertRequested".asInstanceOf[ClientCertRequested]
+  
+  @js.native
+  sealed trait ClientHintIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def ClientHintIssue: ClientHintIssue = "ClientHintIssue".asInstanceOf[ClientHintIssue]
+  
+  @js.native
+  sealed trait ClientMetadataHttpNotFound
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ClientMetadataHttpNotFound: ClientMetadataHttpNotFound = "ClientMetadataHttpNotFound".asInstanceOf[ClientMetadataHttpNotFound]
+  
+  @js.native
+  sealed trait ClientMetadataInvalidResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ClientMetadataInvalidResponse: ClientMetadataInvalidResponse = "ClientMetadataInvalidResponse".asInstanceOf[ClientMetadataInvalidResponse]
+  
+  @js.native
+  sealed trait ClientMetadataNoResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ClientMetadataNoResponse: ClientMetadataNoResponse = "ClientMetadataNoResponse".asInstanceOf[ClientMetadataNoResponse]
+  
+  @js.native
   sealed trait CoepFrameResourceNeedsCoepHeader
     extends StObject
        with BlockedByResponseReason
   inline def CoepFrameResourceNeedsCoepHeader: CoepFrameResourceNeedsCoepHeader = "CoepFrameResourceNeedsCoepHeader".asInstanceOf[CoepFrameResourceNeedsCoepHeader]
+  
+  @js.native
+  sealed trait CompileError
+    extends StObject
+       with SetScriptSourceResponseStatus
+  inline def CompileError: CompileError = "CompileError".asInstanceOf[CompileError]
+  
+  @js.native
+  sealed trait ConflictingBrowsingInstance
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ConflictingBrowsingInstance: ConflictingBrowsingInstance = "ConflictingBrowsingInstance".asInstanceOf[ConflictingBrowsingInstance]
   
   @js.native
   sealed trait ConnectionAborted
@@ -249,10 +571,88 @@ object devtoolsProtocolStrings {
   inline def ConnectionReset: ConnectionReset = "ConnectionReset".asInstanceOf[ConnectionReset]
   
   @js.native
+  sealed trait ContainsPlugins
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContainsPlugins: ContainsPlugins = "ContainsPlugins".asInstanceOf[ContainsPlugins]
+  
+  @js.native
+  sealed trait ContentFileChooser
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentFileChooser: ContentFileChooser = "ContentFileChooser".asInstanceOf[ContentFileChooser]
+  
+  @js.native
+  sealed trait ContentFileSystemAccess
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentFileSystemAccess: ContentFileSystemAccess = "ContentFileSystemAccess".asInstanceOf[ContentFileSystemAccess]
+  
+  @js.native
+  sealed trait ContentMediaDevicesDispatcherHost
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentMediaDevicesDispatcherHost: ContentMediaDevicesDispatcherHost = "ContentMediaDevicesDispatcherHost".asInstanceOf[ContentMediaDevicesDispatcherHost]
+  
+  @js.native
+  sealed trait ContentMediaSessionService
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentMediaSessionService: ContentMediaSessionService = "ContentMediaSessionService".asInstanceOf[ContentMediaSessionService]
+  
+  @js.native
+  sealed trait ContentScreenReader
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentScreenReader: ContentScreenReader = "ContentScreenReader".asInstanceOf[ContentScreenReader]
+  
+  @js.native
+  sealed trait ContentSecurityHandler
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentSecurityHandler: ContentSecurityHandler = "ContentSecurityHandler".asInstanceOf[ContentSecurityHandler]
+  
+  @js.native
   sealed trait ContentSecurityPolicyIssue
     extends StObject
        with InspectorIssueCode
   inline def ContentSecurityPolicyIssue: ContentSecurityPolicyIssue = "ContentSecurityPolicyIssue".asInstanceOf[ContentSecurityPolicyIssue]
+  
+  @js.native
+  sealed trait ContentSerial
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentSerial: ContentSerial = "ContentSerial".asInstanceOf[ContentSerial]
+  
+  @js.native
+  sealed trait ContentWebAuthenticationAPI
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentWebAuthenticationAPI: ContentWebAuthenticationAPI = "ContentWebAuthenticationAPI".asInstanceOf[ContentWebAuthenticationAPI]
+  
+  @js.native
+  sealed trait ContentWebBluetooth
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentWebBluetooth: ContentWebBluetooth = "ContentWebBluetooth".asInstanceOf[ContentWebBluetooth]
+  
+  @js.native
+  sealed trait ContentWebUSB
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ContentWebUSB: ContentWebUSB = "ContentWebUSB".asInstanceOf[ContentWebUSB]
+  
+  @js.native
+  sealed trait CookieIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def CookieIssue: CookieIssue = "CookieIssue".asInstanceOf[CookieIssue]
+  
+  @js.native
+  sealed trait CookieWithTruncatingChar
+    extends StObject
+       with DeprecationIssueType
+  inline def CookieWithTruncatingChar: CookieWithTruncatingChar = "CookieWithTruncatingChar".asInstanceOf[CookieWithTruncatingChar]
   
   @js.native
   sealed trait CoopSandboxedIFrameCannotNavigateToCoopPage
@@ -279,6 +679,18 @@ object devtoolsProtocolStrings {
   inline def CorpNotSameSite: CorpNotSameSite = "CorpNotSameSite".asInstanceOf[CorpNotSameSite]
   
   @js.native
+  sealed trait CorsDisabledScheme
+    extends StObject
+       with CorsError
+  inline def CorsDisabledScheme: CorsDisabledScheme = "CorsDisabledScheme".asInstanceOf[CorsDisabledScheme]
+  
+  @js.native
+  sealed trait CorsIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def CorsIssue: CorsIssue = "CorsIssue".asInstanceOf[CorsIssue]
+  
+  @js.native
   sealed trait CpuPeakLimit
     extends StObject
        with HeavyAdReason
@@ -291,10 +703,74 @@ object devtoolsProtocolStrings {
   inline def CpuTotalLimit: CpuTotalLimit = "CpuTotalLimit".asInstanceOf[CpuTotalLimit]
   
   @js.native
+  sealed trait CreatedByAdScript
+    extends StObject
+       with AdFrameExplanation
+  inline def CreatedByAdScript: CreatedByAdScript = "CreatedByAdScript".asInstanceOf[CreatedByAdScript]
+  
+  @js.native
+  sealed trait CreationIssue
+    extends StObject
+       with SharedArrayBufferIssueType
+  inline def CreationIssue: CreationIssue = "CreationIssue".asInstanceOf[CreationIssue]
+  
+  @js.native
+  sealed trait Credentialless
+    extends StObject
+       with CrossOriginEmbedderPolicyValue
+  inline def Credentialless: Credentialless = "Credentialless".asInstanceOf[Credentialless]
+  
+  @js.native
+  sealed trait CrossOriginAccessBasedOnDocumentDomain
+    extends StObject
+       with DeprecationIssueType
+  inline def CrossOriginAccessBasedOnDocumentDomain: CrossOriginAccessBasedOnDocumentDomain = "CrossOriginAccessBasedOnDocumentDomain".asInstanceOf[CrossOriginAccessBasedOnDocumentDomain]
+  
+  @js.native
+  sealed trait CrossOriginNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def CrossOriginNavigation: CrossOriginNavigation = "CrossOriginNavigation".asInstanceOf[CrossOriginNavigation]
+  
+  @js.native
+  sealed trait CrossOriginPortalPostMessageError extends StObject
+  inline def CrossOriginPortalPostMessageError: CrossOriginPortalPostMessageError = "CrossOriginPortalPostMessageError".asInstanceOf[CrossOriginPortalPostMessageError]
+  
+  @js.native
+  sealed trait CrossOriginRedirect
+    extends StObject
+       with PrerenderFinalStatus
+  inline def CrossOriginRedirect: CrossOriginRedirect = "CrossOriginRedirect".asInstanceOf[CrossOriginRedirect]
+  
+  @js.native
+  sealed trait CrossOriginWindowAlert
+    extends StObject
+       with DeprecationIssueType
+  inline def CrossOriginWindowAlert: CrossOriginWindowAlert = "CrossOriginWindowAlert".asInstanceOf[CrossOriginWindowAlert]
+  
+  @js.native
+  sealed trait CrossOriginWindowConfirm
+    extends StObject
+       with DeprecationIssueType
+  inline def CrossOriginWindowConfirm: CrossOriginWindowConfirm = "CrossOriginWindowConfirm".asInstanceOf[CrossOriginWindowConfirm]
+  
+  @js.native
   sealed trait DOM
     extends StObject
        with PausedEventReason
   inline def DOM: DOM = "DOM".asInstanceOf[DOM]
+  
+  @js.native
+  sealed trait DataSaverEnabled
+    extends StObject
+       with PrerenderFinalStatus
+  inline def DataSaverEnabled: DataSaverEnabled = "DataSaverEnabled".asInstanceOf[DataSaverEnabled]
+  
+  @js.native
+  sealed trait DedicatedWorkerOrWorklet
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def DedicatedWorkerOrWorklet: DedicatedWorkerOrWorklet = "DedicatedWorkerOrWorklet".asInstanceOf[DedicatedWorkerOrWorklet]
   
   @js.native
   sealed trait Default
@@ -304,10 +780,64 @@ object devtoolsProtocolStrings {
   inline def Default: Default = "Default".asInstanceOf[Default]
   
   @js.native
+  sealed trait DeprecationExample
+    extends StObject
+       with DeprecationIssueType
+  inline def DeprecationExample: DeprecationExample = "DeprecationExample".asInstanceOf[DeprecationExample]
+  
+  @js.native
+  sealed trait DeprecationIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def DeprecationIssue: DeprecationIssue = "DeprecationIssue".asInstanceOf[DeprecationIssue]
+  
+  @js.native
+  sealed trait Destroyed
+    extends StObject
+       with PrerenderFinalStatus
+  inline def Destroyed: Destroyed = "Destroyed".asInstanceOf[Destroyed]
+  
+  @js.native
+  sealed trait DidFailLoad
+    extends StObject
+       with PrerenderFinalStatus
+  inline def DidFailLoad: DidFailLoad = "DidFailLoad".asInstanceOf[DidFailLoad]
+  
+  @js.native
+  sealed trait DisableForRenderFrameHostCalled
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def DisableForRenderFrameHostCalled: DisableForRenderFrameHostCalled = "DisableForRenderFrameHostCalled".asInstanceOf[DisableForRenderFrameHostCalled]
+  
+  @js.native
+  sealed trait DisabledInSettings
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def DisabledInSettings: DisabledInSettings = "DisabledInSettings".asInstanceOf[DisabledInSettings]
+  
+  @js.native
+  sealed trait DisallowedByMode
+    extends StObject
+       with CorsError
+  inline def DisallowedByMode: DisallowedByMode = "DisallowedByMode".asInstanceOf[DisallowedByMode]
+  
+  @js.native
   sealed trait Document
     extends StObject
        with ResourceType
   inline def Document: Document = "Document".asInstanceOf[Document]
+  
+  @js.native
+  sealed trait DocumentDomainSettingWithoutOriginAgentClusterHeader
+    extends StObject
+       with DeprecationIssueType
+  inline def DocumentDomainSettingWithoutOriginAgentClusterHeader: DocumentDomainSettingWithoutOriginAgentClusterHeader = "DocumentDomainSettingWithoutOriginAgentClusterHeader".asInstanceOf[DocumentDomainSettingWithoutOriginAgentClusterHeader]
+  
+  @js.native
+  sealed trait DocumentLoaded
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def DocumentLoaded: DocumentLoaded = "DocumentLoaded".asInstanceOf[DocumentLoaded]
   
   @js.native
   sealed trait DomainMismatch
@@ -316,10 +846,23 @@ object devtoolsProtocolStrings {
   inline def DomainMismatch: DomainMismatch = "DomainMismatch".asInstanceOf[DomainMismatch]
   
   @js.native
+  sealed trait DomainNotAllowed
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def DomainNotAllowed: DomainNotAllowed = "DomainNotAllowed".asInstanceOf[DomainNotAllowed]
+  
+  @js.native
   sealed trait Download
     extends StObject
        with MixedContentResourceType
+       with PrerenderFinalStatus
   inline def Download: Download = "Download".asInstanceOf[Download]
+  
+  @js.native
+  sealed trait Dummy
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def Dummy: Dummy = "Dummy".asInstanceOf[Dummy]
   
   @js.native
   sealed trait EmbeddedDWARF
@@ -328,10 +871,142 @@ object devtoolsProtocolStrings {
   inline def EmbeddedDWARF: EmbeddedDWARF = "EmbeddedDWARF".asInstanceOf[EmbeddedDWARF]
   
   @js.native
+  sealed trait EmbedderAppBannerManager
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderAppBannerManager: EmbedderAppBannerManager = "EmbedderAppBannerManager".asInstanceOf[EmbedderAppBannerManager]
+  
+  @js.native
+  sealed trait EmbedderChromePasswordManagerClientBindCredentialManager
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderChromePasswordManagerClientBindCredentialManager: EmbedderChromePasswordManagerClientBindCredentialManager = "EmbedderChromePasswordManagerClientBindCredentialManager".asInstanceOf[EmbedderChromePasswordManagerClientBindCredentialManager]
+  
+  @js.native
+  sealed trait EmbedderDomDistillerSelfDeletingRequestDelegate
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderDomDistillerSelfDeletingRequestDelegate: EmbedderDomDistillerSelfDeletingRequestDelegate = "EmbedderDomDistillerSelfDeletingRequestDelegate".asInstanceOf[EmbedderDomDistillerSelfDeletingRequestDelegate]
+  
+  @js.native
+  sealed trait EmbedderDomDistillerViewerSource
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderDomDistillerViewerSource: EmbedderDomDistillerViewerSource = "EmbedderDomDistillerViewerSource".asInstanceOf[EmbedderDomDistillerViewerSource]
+  
+  @js.native
+  sealed trait EmbedderExtensionMessaging
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderExtensionMessaging: EmbedderExtensionMessaging = "EmbedderExtensionMessaging".asInstanceOf[EmbedderExtensionMessaging]
+  
+  @js.native
+  sealed trait EmbedderExtensionMessagingForOpenPort
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderExtensionMessagingForOpenPort: EmbedderExtensionMessagingForOpenPort = "EmbedderExtensionMessagingForOpenPort".asInstanceOf[EmbedderExtensionMessagingForOpenPort]
+  
+  @js.native
+  sealed trait EmbedderExtensionSentMessageToCachedFrame
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderExtensionSentMessageToCachedFrame: EmbedderExtensionSentMessageToCachedFrame = "EmbedderExtensionSentMessageToCachedFrame".asInstanceOf[EmbedderExtensionSentMessageToCachedFrame]
+  
+  @js.native
+  sealed trait EmbedderExtensions
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderExtensions: EmbedderExtensions = "EmbedderExtensions".asInstanceOf[EmbedderExtensions]
+  
+  @js.native
+  sealed trait EmbedderModalDialog
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderModalDialog: EmbedderModalDialog = "EmbedderModalDialog".asInstanceOf[EmbedderModalDialog]
+  
+  @js.native
+  sealed trait EmbedderOfflinePage
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderOfflinePage: EmbedderOfflinePage = "EmbedderOfflinePage".asInstanceOf[EmbedderOfflinePage]
+  
+  @js.native
+  sealed trait EmbedderOomInterventionTabHelper
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderOomInterventionTabHelper: EmbedderOomInterventionTabHelper = "EmbedderOomInterventionTabHelper".asInstanceOf[EmbedderOomInterventionTabHelper]
+  
+  @js.native
+  sealed trait EmbedderPermissionRequestManager
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderPermissionRequestManager: EmbedderPermissionRequestManager = "EmbedderPermissionRequestManager".asInstanceOf[EmbedderPermissionRequestManager]
+  
+  @js.native
+  sealed trait EmbedderPopupBlockerTabHelper
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderPopupBlockerTabHelper: EmbedderPopupBlockerTabHelper = "EmbedderPopupBlockerTabHelper".asInstanceOf[EmbedderPopupBlockerTabHelper]
+  
+  @js.native
+  sealed trait EmbedderSafeBrowsingThreatDetails
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderSafeBrowsingThreatDetails: EmbedderSafeBrowsingThreatDetails = "EmbedderSafeBrowsingThreatDetails".asInstanceOf[EmbedderSafeBrowsingThreatDetails]
+  
+  @js.native
+  sealed trait EmbedderSafeBrowsingTriggeredPopupBlocker
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EmbedderSafeBrowsingTriggeredPopupBlocker: EmbedderSafeBrowsingTriggeredPopupBlocker = "EmbedderSafeBrowsingTriggeredPopupBlocker".asInstanceOf[EmbedderSafeBrowsingTriggeredPopupBlocker]
+  
+  @js.native
+  sealed trait EmbedderTriggeredAndCrossOriginRedirected
+    extends StObject
+       with PrerenderFinalStatus
+  inline def EmbedderTriggeredAndCrossOriginRedirected: EmbedderTriggeredAndCrossOriginRedirected = "EmbedderTriggeredAndCrossOriginRedirected".asInstanceOf[EmbedderTriggeredAndCrossOriginRedirected]
+  
+  @js.native
+  sealed trait Enabled
+    extends StObject
+       with OriginTrialStatus
+  inline def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
+  
+  @js.native
+  sealed trait EnteredBackForwardCacheBeforeServiceWorkerHostAdded
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def EnteredBackForwardCacheBeforeServiceWorkerHostAdded: EnteredBackForwardCacheBeforeServiceWorkerHostAdded = "EnteredBackForwardCacheBeforeServiceWorkerHostAdded".asInstanceOf[EnteredBackForwardCacheBeforeServiceWorkerHostAdded]
+  
+  @js.native
+  sealed trait ErrorDocument
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ErrorDocument: ErrorDocument = "ErrorDocument".asInstanceOf[ErrorDocument]
+  
+  @js.native
+  sealed trait ErrorFetchingSignin
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ErrorFetchingSignin: ErrorFetchingSignin = "ErrorFetchingSignin".asInstanceOf[ErrorFetchingSignin]
+  
+  @js.native
+  sealed trait ErrorIdToken
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ErrorIdToken: ErrorIdToken = "ErrorIdToken".asInstanceOf[ErrorIdToken]
+  
+  @js.native
   sealed trait EventListener
     extends StObject
        with PausedEventReason
   inline def EventListener: EventListener = "EventListener".asInstanceOf[EventListener]
+  
+  @js.native
+  sealed trait EventPath
+    extends StObject
+       with DeprecationIssueType
+  inline def EventPath: EventPath = "EventPath".asInstanceOf[EventPath]
   
   @js.native
   sealed trait EventSource
@@ -341,28 +1016,58 @@ object devtoolsProtocolStrings {
   inline def EventSource: EventSource = "EventSource".asInstanceOf[EventSource]
   
   @js.native
+  sealed trait ExcludeDomainNonASCII
+    extends StObject
+       with CookieExclusionReason
+  inline def ExcludeDomainNonASCII: ExcludeDomainNonASCII = "ExcludeDomainNonASCII".asInstanceOf[ExcludeDomainNonASCII]
+  
+  @js.native
+  sealed trait ExcludeInvalidSameParty
+    extends StObject
+       with CookieExclusionReason
+  inline def ExcludeInvalidSameParty: ExcludeInvalidSameParty = "ExcludeInvalidSameParty".asInstanceOf[ExcludeInvalidSameParty]
+  
+  @js.native
+  sealed trait ExcludeSamePartyCrossPartyContext
+    extends StObject
+       with CookieExclusionReason
+  inline def ExcludeSamePartyCrossPartyContext: ExcludeSamePartyCrossPartyContext = "ExcludeSamePartyCrossPartyContext".asInstanceOf[ExcludeSamePartyCrossPartyContext]
+  
+  @js.native
   sealed trait ExcludeSameSiteLax
     extends StObject
-       with SameSiteCookieExclusionReason
+       with CookieExclusionReason
   inline def ExcludeSameSiteLax: ExcludeSameSiteLax = "ExcludeSameSiteLax".asInstanceOf[ExcludeSameSiteLax]
   
   @js.native
   sealed trait ExcludeSameSiteNoneInsecure
     extends StObject
-       with SameSiteCookieExclusionReason
+       with CookieExclusionReason
   inline def ExcludeSameSiteNoneInsecure: ExcludeSameSiteNoneInsecure = "ExcludeSameSiteNoneInsecure".asInstanceOf[ExcludeSameSiteNoneInsecure]
   
   @js.native
   sealed trait ExcludeSameSiteStrict
     extends StObject
-       with SameSiteCookieExclusionReason
+       with CookieExclusionReason
   inline def ExcludeSameSiteStrict: ExcludeSameSiteStrict = "ExcludeSameSiteStrict".asInstanceOf[ExcludeSameSiteStrict]
   
   @js.native
   sealed trait ExcludeSameSiteUnspecifiedTreatedAsLax
     extends StObject
-       with SameSiteCookieExclusionReason
+       with CookieExclusionReason
   inline def ExcludeSameSiteUnspecifiedTreatedAsLax: ExcludeSameSiteUnspecifiedTreatedAsLax = "ExcludeSameSiteUnspecifiedTreatedAsLax".asInstanceOf[ExcludeSameSiteUnspecifiedTreatedAsLax]
+  
+  @js.native
+  sealed trait ExpectCTHeader
+    extends StObject
+       with DeprecationIssueType
+  inline def ExpectCTHeader: ExpectCTHeader = "ExpectCTHeader".asInstanceOf[ExpectCTHeader]
+  
+  @js.native
+  sealed trait Expired
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def Expired: Expired = "Expired".asInstanceOf[Expired]
   
   @js.native
   sealed trait ExternalDWARF
@@ -371,16 +1076,52 @@ object devtoolsProtocolStrings {
   inline def ExternalDWARF: ExternalDWARF = "ExternalDWARF".asInstanceOf[ExternalDWARF]
   
   @js.native
+  sealed trait FailToGetMemoryUsage
+    extends StObject
+       with PrerenderFinalStatus
+  inline def FailToGetMemoryUsage: FailToGetMemoryUsage = "FailToGetMemoryUsage".asInstanceOf[FailToGetMemoryUsage]
+  
+  @js.native
   sealed trait Failed
     extends StObject
        with ErrorReason
   inline def Failed: Failed = "Failed".asInstanceOf[Failed]
   
   @js.native
+  sealed trait FailedPrecondition
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def FailedPrecondition: FailedPrecondition = "FailedPrecondition".asInstanceOf[FailedPrecondition]
+  
+  @js.native
   sealed trait Favicon
     extends StObject
        with MixedContentResourceType
   inline def Favicon: Favicon = "Favicon".asInstanceOf[Favicon]
+  
+  @js.native
+  sealed trait FeatureDisabled
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def FeatureDisabled: FeatureDisabled = "FeatureDisabled".asInstanceOf[FeatureDisabled]
+  
+  @js.native
+  sealed trait FeatureDisabledForUser
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def FeatureDisabledForUser: FeatureDisabledForUser = "FeatureDisabledForUser".asInstanceOf[FeatureDisabledForUser]
+  
+  @js.native
+  sealed trait FederatedAuthRequestIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def FederatedAuthRequestIssue: FederatedAuthRequestIssue = "FederatedAuthRequestIssue".asInstanceOf[FederatedAuthRequestIssue]
+  
+  @js.native
+  sealed trait FencedFramesEmbedder
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def FencedFramesEmbedder: FencedFramesEmbedder = "FencedFramesEmbedder".asInstanceOf[FencedFramesEmbedder]
   
   @js.native
   sealed trait Fetch
@@ -396,6 +1137,12 @@ object devtoolsProtocolStrings {
   inline def Font: Font = "Font".asInstanceOf[Font]
   
   @js.native
+  sealed trait ForegroundCacheLimit
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ForegroundCacheLimit: ForegroundCacheLimit = "ForegroundCacheLimit".asInstanceOf[ForegroundCacheLimit]
+  
+  @js.native
   sealed trait Form
     extends StObject
        with MixedContentResourceType
@@ -406,6 +1153,72 @@ object devtoolsProtocolStrings {
     extends StObject
        with MixedContentResourceType
   inline def Frame: Frame = "Frame".asInstanceOf[Frame]
+  
+  @js.native
+  sealed trait FulfilledLocally
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def FulfilledLocally: FulfilledLocally = "FulfilledLocally".asInstanceOf[FulfilledLocally]
+  
+  @js.native
+  sealed trait GenericIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def GenericIssue: GenericIssue = "GenericIssue".asInstanceOf[GenericIssue]
+  
+  @js.native
+  sealed trait GeolocationInsecureOrigin
+    extends StObject
+       with DeprecationIssueType
+  inline def GeolocationInsecureOrigin: GeolocationInsecureOrigin = "GeolocationInsecureOrigin".asInstanceOf[GeolocationInsecureOrigin]
+  
+  @js.native
+  sealed trait GeolocationInsecureOriginDeprecatedNotRemoved
+    extends StObject
+       with DeprecationIssueType
+  inline def GeolocationInsecureOriginDeprecatedNotRemoved: GeolocationInsecureOriginDeprecatedNotRemoved = "GeolocationInsecureOriginDeprecatedNotRemoved".asInstanceOf[GeolocationInsecureOriginDeprecatedNotRemoved]
+  
+  @js.native
+  sealed trait GetUserMediaInsecureOrigin
+    extends StObject
+       with DeprecationIssueType
+  inline def GetUserMediaInsecureOrigin: GetUserMediaInsecureOrigin = "GetUserMediaInsecureOrigin".asInstanceOf[GetUserMediaInsecureOrigin]
+  
+  @js.native
+  sealed trait HTTPMethodNotGET
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def HTTPMethodNotGET: HTTPMethodNotGET = "HTTPMethodNotGET".asInstanceOf[HTTPMethodNotGET]
+  
+  @js.native
+  sealed trait HTTPStatusNotOK
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def HTTPStatusNotOK: HTTPStatusNotOK = "HTTPStatusNotOK".asInstanceOf[HTTPStatusNotOK]
+  
+  @js.native
+  sealed trait HasEffectiveUrl
+    extends StObject
+       with PrerenderFinalStatus
+  inline def HasEffectiveUrl: HasEffectiveUrl = "HasEffectiveUrl".asInstanceOf[HasEffectiveUrl]
+  
+  @js.native
+  sealed trait HaveInnerContents
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def HaveInnerContents: HaveInnerContents = "HaveInnerContents".asInstanceOf[HaveInnerContents]
+  
+  @js.native
+  sealed trait Header
+    extends StObject
+       with PermissionsPolicyBlockReason
+  inline def Header: Header = "Header".asInstanceOf[Header]
+  
+  @js.native
+  sealed trait HeaderDisallowedByPreflightResponse
+    extends StObject
+       with CorsError
+  inline def HeaderDisallowedByPreflightResponse: HeaderDisallowedByPreflightResponse = "HeaderDisallowedByPreflightResponse".asInstanceOf[HeaderDisallowedByPreflightResponse]
   
   @js.native
   sealed trait HeadersReceived
@@ -439,6 +1252,60 @@ object devtoolsProtocolStrings {
   inline def High: High = "High".asInstanceOf[High]
   
   @js.native
+  sealed trait HostCandidateAttributeGetter
+    extends StObject
+       with DeprecationIssueType
+  inline def HostCandidateAttributeGetter: HostCandidateAttributeGetter = "HostCandidateAttributeGetter".asInstanceOf[HostCandidateAttributeGetter]
+  
+  @js.native
+  sealed trait IdTokenHttpNotFound
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def IdTokenHttpNotFound: IdTokenHttpNotFound = "IdTokenHttpNotFound".asInstanceOf[IdTokenHttpNotFound]
+  
+  @js.native
+  sealed trait IdTokenInvalidRequest
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def IdTokenInvalidRequest: IdTokenInvalidRequest = "IdTokenInvalidRequest".asInstanceOf[IdTokenInvalidRequest]
+  
+  @js.native
+  sealed trait IdTokenInvalidResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def IdTokenInvalidResponse: IdTokenInvalidResponse = "IdTokenInvalidResponse".asInstanceOf[IdTokenInvalidResponse]
+  
+  @js.native
+  sealed trait IdTokenNoResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def IdTokenNoResponse: IdTokenNoResponse = "IdTokenNoResponse".asInstanceOf[IdTokenNoResponse]
+  
+  @js.native
+  sealed trait IdentityInCanMakePaymentEvent
+    extends StObject
+       with DeprecationIssueType
+  inline def IdentityInCanMakePaymentEvent: IdentityInCanMakePaymentEvent = "IdentityInCanMakePaymentEvent".asInstanceOf[IdentityInCanMakePaymentEvent]
+  
+  @js.native
+  sealed trait IdleManager
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def IdleManager: IdleManager = "IdleManager".asInstanceOf[IdleManager]
+  
+  @js.native
+  sealed trait IframeAttribute
+    extends StObject
+       with PermissionsPolicyBlockReason
+  inline def IframeAttribute: IframeAttribute = "IframeAttribute".asInstanceOf[IframeAttribute]
+  
+  @js.native
+  sealed trait IgnoreEventAndEvict
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def IgnoreEventAndEvict: IgnoreEventAndEvict = "IgnoreEventAndEvict".asInstanceOf[IgnoreEventAndEvict]
+  
+  @js.native
   sealed trait Image
     extends StObject
        with MixedContentResourceType
@@ -452,10 +1319,76 @@ object devtoolsProtocolStrings {
   inline def Import: Import = "Import".asInstanceOf[Import]
   
   @js.native
+  sealed trait InFencedFrameTree
+    extends StObject
+       with PermissionsPolicyBlockReason
+  inline def InFencedFrameTree: InFencedFrameTree = "InFencedFrameTree".asInstanceOf[InFencedFrameTree]
+  
+  @js.native
+  sealed trait InIsolatedApp
+    extends StObject
+       with PermissionsPolicyBlockReason
+  inline def InIsolatedApp: InIsolatedApp = "InIsolatedApp".asInstanceOf[InIsolatedApp]
+  
+  @js.native
+  sealed trait InProgressNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def InProgressNavigation: InProgressNavigation = "InProgressNavigation".asInstanceOf[InProgressNavigation]
+  
+  @js.native
+  sealed trait InactivePageRestriction
+    extends StObject
+       with PrerenderFinalStatus
+  inline def InactivePageRestriction: InactivePageRestriction = "InactivePageRestriction".asInstanceOf[InactivePageRestriction]
+  
+  @js.native
+  sealed trait IndexedDBConnection
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def IndexedDBConnection: IndexedDBConnection = "IndexedDBConnection".asInstanceOf[IndexedDBConnection]
+  
+  @js.native
+  sealed trait InjectedJavascript
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def InjectedJavascript: InjectedJavascript = "InjectedJavascript".asInstanceOf[InjectedJavascript]
+  
+  @js.native
+  sealed trait InjectedStyleSheet
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def InjectedStyleSheet: InjectedStyleSheet = "InjectedStyleSheet".asInstanceOf[InjectedStyleSheet]
+  
+  @js.native
+  sealed trait Insecure
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def Insecure: Insecure = "Insecure".asInstanceOf[Insecure]
+  
+  @js.native
   sealed trait InsecureAncestor
     extends StObject
        with SecureContextType
   inline def InsecureAncestor: InsecureAncestor = "InsecureAncestor".asInstanceOf[InsecureAncestor]
+  
+  @js.native
+  sealed trait InsecureContext
+    extends StObject
+       with AttributionReportingIssueType
+  inline def InsecureContext: InsecureContext = "InsecureContext".asInstanceOf[InsecureContext]
+  
+  @js.native
+  sealed trait InsecurePrivateNetwork
+    extends StObject
+       with CorsError
+  inline def InsecurePrivateNetwork: InsecurePrivateNetwork = "InsecurePrivateNetwork".asInstanceOf[InsecurePrivateNetwork]
+  
+  @js.native
+  sealed trait InsecurePrivateNetworkSubresourceRequest
+    extends StObject
+       with DeprecationIssueType
+  inline def InsecurePrivateNetworkSubresourceRequest: InsecurePrivateNetworkSubresourceRequest = "InsecurePrivateNetworkSubresourceRequest".asInstanceOf[InsecurePrivateNetworkSubresourceRequest]
   
   @js.native
   sealed trait InsecureScheme
@@ -464,10 +1397,46 @@ object devtoolsProtocolStrings {
   inline def InsecureScheme: InsecureScheme = "InsecureScheme".asInstanceOf[InsecureScheme]
   
   @js.native
+  sealed trait InternalError
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
+  
+  @js.native
   sealed trait InternetDisconnected
     extends StObject
        with ErrorReason
   inline def InternetDisconnected: InternetDisconnected = "InternetDisconnected".asInstanceOf[InternetDisconnected]
+  
+  @js.native
+  sealed trait InvalidAllowCredentials
+    extends StObject
+       with CorsError
+  inline def InvalidAllowCredentials: InvalidAllowCredentials = "InvalidAllowCredentials".asInstanceOf[InvalidAllowCredentials]
+  
+  @js.native
+  sealed trait InvalidAllowHeadersPreflightResponse
+    extends StObject
+       with CorsError
+  inline def InvalidAllowHeadersPreflightResponse: InvalidAllowHeadersPreflightResponse = "InvalidAllowHeadersPreflightResponse".asInstanceOf[InvalidAllowHeadersPreflightResponse]
+  
+  @js.native
+  sealed trait InvalidAllowMethodsPreflightResponse
+    extends StObject
+       with CorsError
+  inline def InvalidAllowMethodsPreflightResponse: InvalidAllowMethodsPreflightResponse = "InvalidAllowMethodsPreflightResponse".asInstanceOf[InvalidAllowMethodsPreflightResponse]
+  
+  @js.native
+  sealed trait InvalidAllowOriginValue
+    extends StObject
+       with CorsError
+  inline def InvalidAllowOriginValue: InvalidAllowOriginValue = "InvalidAllowOriginValue".asInstanceOf[InvalidAllowOriginValue]
+  
+  @js.native
+  sealed trait InvalidArgument
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def InvalidArgument: InvalidArgument = "InvalidArgument".asInstanceOf[InvalidArgument]
   
   @js.native
   sealed trait InvalidDomain
@@ -476,10 +1445,64 @@ object devtoolsProtocolStrings {
   inline def InvalidDomain: InvalidDomain = "InvalidDomain".asInstanceOf[InvalidDomain]
   
   @js.native
+  sealed trait InvalidEligibleHeader
+    extends StObject
+       with AttributionReportingIssueType
+  inline def InvalidEligibleHeader: InvalidEligibleHeader = "InvalidEligibleHeader".asInstanceOf[InvalidEligibleHeader]
+  
+  @js.native
+  sealed trait InvalidHeader
+    extends StObject
+       with AttributionReportingIssueType
+  inline def InvalidHeader: InvalidHeader = "InvalidHeader".asInstanceOf[InvalidHeader]
+  
+  @js.native
   sealed trait InvalidPrefix
     extends StObject
        with SetCookieBlockedReason
   inline def InvalidPrefix: InvalidPrefix = "InvalidPrefix".asInstanceOf[InvalidPrefix]
+  
+  @js.native
+  sealed trait InvalidPrivateNetworkAccess
+    extends StObject
+       with CorsError
+  inline def InvalidPrivateNetworkAccess: InvalidPrivateNetworkAccess = "InvalidPrivateNetworkAccess".asInstanceOf[InvalidPrivateNetworkAccess]
+  
+  @js.native
+  sealed trait InvalidRegisterTriggerHeader
+    extends StObject
+       with AttributionReportingIssueType
+  inline def InvalidRegisterTriggerHeader: InvalidRegisterTriggerHeader = "InvalidRegisterTriggerHeader".asInstanceOf[InvalidRegisterTriggerHeader]
+  
+  @js.native
+  sealed trait InvalidResponse
+    extends StObject
+       with CorsError
+  inline def InvalidResponse: InvalidResponse = "InvalidResponse".asInstanceOf[InvalidResponse]
+  
+  @js.native
+  sealed trait InvalidSchemeNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def InvalidSchemeNavigation: InvalidSchemeNavigation = "InvalidSchemeNavigation".asInstanceOf[InvalidSchemeNavigation]
+  
+  @js.native
+  sealed trait InvalidSchemeRedirect
+    extends StObject
+       with PrerenderFinalStatus
+  inline def InvalidSchemeRedirect: InvalidSchemeRedirect = "InvalidSchemeRedirect".asInstanceOf[InvalidSchemeRedirect]
+  
+  @js.native
+  sealed trait InvalidSignature
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def InvalidSignature: InvalidSignature = "InvalidSignature".asInstanceOf[InvalidSignature]
+  
+  @js.native
+  sealed trait InvalidSigninResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def InvalidSigninResponse: InvalidSigninResponse = "InvalidSigninResponse".asInstanceOf[InvalidSigninResponse]
   
   @js.native
   sealed trait Isolated
@@ -500,10 +1523,52 @@ object devtoolsProtocolStrings {
   inline def JavaScript: JavaScript = "JavaScript".asInstanceOf[JavaScript]
   
   @js.native
+  sealed trait JavaScriptExecution
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def JavaScriptExecution: JavaScriptExecution = "JavaScriptExecution".asInstanceOf[JavaScriptExecution]
+  
+  @js.native
+  sealed trait KeyboardLock
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def KeyboardLock: KeyboardLock = "KeyboardLock".asInstanceOf[KeyboardLock]
+  
+  @js.native
   sealed trait Lax
     extends StObject
        with CookieSameSite
   inline def Lax: Lax = "Lax".asInstanceOf[Lax]
+  
+  @js.native
+  sealed trait LimitedQuirksMode
+    extends StObject
+       with CompatibilityMode
+  inline def LimitedQuirksMode: LimitedQuirksMode = "LimitedQuirksMode".asInstanceOf[LimitedQuirksMode]
+  
+  @js.native
+  sealed trait Loading
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def Loading: Loading = "Loading".asInstanceOf[Loading]
+  
+  @js.native
+  sealed trait Local
+    extends StObject
+       with IPAddressSpace
+  inline def Local: Local = "Local".asInstanceOf[Local]
+  
+  @js.native
+  sealed trait LocalCSSFileExtensionRejected
+    extends StObject
+       with DeprecationIssueType
+  inline def LocalCSSFileExtensionRejected: LocalCSSFileExtensionRejected = "LocalCSSFileExtensionRejected".asInstanceOf[LocalCSSFileExtensionRejected]
+  
+  @js.native
+  sealed trait LoginAuthRequested
+    extends StObject
+       with PrerenderFinalStatus
+  inline def LoginAuthRequested: LoginAuthRequested = "LoginAuthRequested".asInstanceOf[LoginAuthRequested]
   
   @js.native
   sealed trait Low
@@ -513,11 +1578,113 @@ object devtoolsProtocolStrings {
   inline def Low: Low = "Low".asInstanceOf[Low]
   
   @js.native
+  sealed trait LowEndDevice
+    extends StObject
+       with PrerenderFinalStatus
+  inline def LowEndDevice: LowEndDevice = "LowEndDevice".asInstanceOf[LowEndDevice]
+  
+  @js.native
+  sealed trait LowTextContrastIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def LowTextContrastIssue: LowTextContrastIssue = "LowTextContrastIssue".asInstanceOf[LowTextContrastIssue]
+  
+  @js.native
+  sealed trait MainFrameNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def MainFrameNavigation: MainFrameNavigation = "MainFrameNavigation".asInstanceOf[MainFrameNavigation]
+  
+  @js.native
+  sealed trait MainResourceHasCacheControlNoCache
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def MainResourceHasCacheControlNoCache: MainResourceHasCacheControlNoCache = "MainResourceHasCacheControlNoCache".asInstanceOf[MainResourceHasCacheControlNoCache]
+  
+  @js.native
+  sealed trait MainResourceHasCacheControlNoStore
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def MainResourceHasCacheControlNoStore: MainResourceHasCacheControlNoStore = "MainResourceHasCacheControlNoStore".asInstanceOf[MainResourceHasCacheControlNoStore]
+  
+  @js.native
+  sealed trait Malformed
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def Malformed: Malformed = "Malformed".asInstanceOf[Malformed]
+  
+  @js.native
   sealed trait Manifest
     extends StObject
        with MixedContentResourceType
        with ResourceType
   inline def Manifest: Manifest = "Manifest".asInstanceOf[Manifest]
+  
+  @js.native
+  sealed trait ManifestHttpNotFound
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestHttpNotFound: ManifestHttpNotFound = "ManifestHttpNotFound".asInstanceOf[ManifestHttpNotFound]
+  
+  @js.native
+  sealed trait ManifestInvalidResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestInvalidResponse: ManifestInvalidResponse = "ManifestInvalidResponse".asInstanceOf[ManifestInvalidResponse]
+  
+  @js.native
+  sealed trait ManifestListHttpNotFound
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestListHttpNotFound: ManifestListHttpNotFound = "ManifestListHttpNotFound".asInstanceOf[ManifestListHttpNotFound]
+  
+  @js.native
+  sealed trait ManifestListInvalidResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestListInvalidResponse: ManifestListInvalidResponse = "ManifestListInvalidResponse".asInstanceOf[ManifestListInvalidResponse]
+  
+  @js.native
+  sealed trait ManifestListNoResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestListNoResponse: ManifestListNoResponse = "ManifestListNoResponse".asInstanceOf[ManifestListNoResponse]
+  
+  @js.native
+  sealed trait ManifestListTooBig
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestListTooBig: ManifestListTooBig = "ManifestListTooBig".asInstanceOf[ManifestListTooBig]
+  
+  @js.native
+  sealed trait ManifestNoResponse
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestNoResponse: ManifestNoResponse = "ManifestNoResponse".asInstanceOf[ManifestNoResponse]
+  
+  @js.native
+  sealed trait ManifestNotInManifestList
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ManifestNotInManifestList: ManifestNotInManifestList = "ManifestNotInManifestList".asInstanceOf[ManifestNotInManifestList]
+  
+  @js.native
+  sealed trait MarkedForRemoval
+    extends StObject
+       with ReportStatus
+  inline def MarkedForRemoval: MarkedForRemoval = "MarkedForRemoval".asInstanceOf[MarkedForRemoval]
+  
+  @js.native
+  sealed trait MatchedBlockingRule
+    extends StObject
+       with AdFrameExplanation
+  inline def MatchedBlockingRule: MatchedBlockingRule = "MatchedBlockingRule".asInstanceOf[MatchedBlockingRule]
+  
+  @js.native
+  sealed trait MaxNumOfRunningPrerendersExceeded
+    extends StObject
+       with PrerenderFinalStatus
+  inline def MaxNumOfRunningPrerendersExceeded: MaxNumOfRunningPrerendersExceeded = "MaxNumOfRunningPrerendersExceeded".asInstanceOf[MaxNumOfRunningPrerendersExceeded]
   
   @js.native
   sealed trait Media
@@ -526,11 +1693,59 @@ object devtoolsProtocolStrings {
   inline def Media: Media = "Media".asInstanceOf[Media]
   
   @js.native
+  sealed trait MediaSourceAbortRemove
+    extends StObject
+       with DeprecationIssueType
+  inline def MediaSourceAbortRemove: MediaSourceAbortRemove = "MediaSourceAbortRemove".asInstanceOf[MediaSourceAbortRemove]
+  
+  @js.native
+  sealed trait MediaSourceDurationTruncatingBuffered
+    extends StObject
+       with DeprecationIssueType
+  inline def MediaSourceDurationTruncatingBuffered: MediaSourceDurationTruncatingBuffered = "MediaSourceDurationTruncatingBuffered".asInstanceOf[MediaSourceDurationTruncatingBuffered]
+  
+  @js.native
   sealed trait Medium
     extends StObject
        with CookiePriority
        with ResourcePriority
   inline def Medium: Medium = "Medium".asInstanceOf[Medium]
+  
+  @js.native
+  sealed trait MemoryLimitExceeded
+    extends StObject
+       with PrerenderFinalStatus
+  inline def MemoryLimitExceeded: MemoryLimitExceeded = "MemoryLimitExceeded".asInstanceOf[MemoryLimitExceeded]
+  
+  @js.native
+  sealed trait MetaTagAllowListInvalidOrigin
+    extends StObject
+       with ClientHintIssueReason
+  inline def MetaTagAllowListInvalidOrigin: MetaTagAllowListInvalidOrigin = "MetaTagAllowListInvalidOrigin".asInstanceOf[MetaTagAllowListInvalidOrigin]
+  
+  @js.native
+  sealed trait MetaTagModifiedHTML
+    extends StObject
+       with ClientHintIssueReason
+  inline def MetaTagModifiedHTML: MetaTagModifiedHTML = "MetaTagModifiedHTML".asInstanceOf[MetaTagModifiedHTML]
+  
+  @js.native
+  sealed trait MethodDisallowedByPreflightResponse
+    extends StObject
+       with CorsError
+  inline def MethodDisallowedByPreflightResponse: MethodDisallowedByPreflightResponse = "MethodDisallowedByPreflightResponse".asInstanceOf[MethodDisallowedByPreflightResponse]
+  
+  @js.native
+  sealed trait MissingAllowOriginHeader
+    extends StObject
+       with CorsError
+  inline def MissingAllowOriginHeader: MissingAllowOriginHeader = "MissingAllowOriginHeader".asInstanceOf[MissingAllowOriginHeader]
+  
+  @js.native
+  sealed trait MixedContent
+    extends StObject
+       with PrerenderFinalStatus
+  inline def MixedContent: MixedContent = "MixedContent".asInstanceOf[MixedContent]
   
   @js.native
   sealed trait MixedContentAutomaticallyUpgraded
@@ -557,10 +1772,107 @@ object devtoolsProtocolStrings {
   inline def MixedContentWarning: MixedContentWarning = "MixedContentWarning".asInstanceOf[MixedContentWarning]
   
   @js.native
+  sealed trait MojoBinderPolicy
+    extends StObject
+       with PrerenderFinalStatus
+  inline def MojoBinderPolicy: MojoBinderPolicy = "MojoBinderPolicy".asInstanceOf[MojoBinderPolicy]
+  
+  @js.native
+  sealed trait MultipleAllowOriginValues
+    extends StObject
+       with CorsError
+  inline def MultipleAllowOriginValues: MultipleAllowOriginValues = "MultipleAllowOriginValues".asInstanceOf[MultipleAllowOriginValues]
+  
+  @js.native
   sealed trait NameNotResolved
     extends StObject
        with ErrorReason
   inline def NameNotResolved: NameNotResolved = "NameNotResolved".asInstanceOf[NameNotResolved]
+  
+  @js.native
+  sealed trait NameValuePairExceedsMaxSize
+    extends StObject
+       with CookieBlockedReason
+       with SetCookieBlockedReason
+  inline def NameValuePairExceedsMaxSize: NameValuePairExceedsMaxSize = "NameValuePairExceedsMaxSize".asInstanceOf[NameValuePairExceedsMaxSize]
+  
+  @js.native
+  sealed trait NavigateEventRestoreScroll
+    extends StObject
+       with DeprecationIssueType
+  inline def NavigateEventRestoreScroll: NavigateEventRestoreScroll = "NavigateEventRestoreScroll".asInstanceOf[NavigateEventRestoreScroll]
+  
+  @js.native
+  sealed trait NavigateEventTransitionWhile
+    extends StObject
+       with DeprecationIssueType
+  inline def NavigateEventTransitionWhile: NavigateEventTransitionWhile = "NavigateEventTransitionWhile".asInstanceOf[NavigateEventTransitionWhile]
+  
+  @js.native
+  sealed trait Navigation
+    extends StObject
+       with NavigationType
+  inline def Navigation: Navigation = "Navigation".asInstanceOf[Navigation]
+  
+  @js.native
+  sealed trait NavigationBadHttpStatus
+    extends StObject
+       with PrerenderFinalStatus
+  inline def NavigationBadHttpStatus: NavigationBadHttpStatus = "NavigationBadHttpStatus".asInstanceOf[NavigationBadHttpStatus]
+  
+  @js.native
+  sealed trait NavigationCancelledWhileRestoring
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NavigationCancelledWhileRestoring: NavigationCancelledWhileRestoring = "NavigationCancelledWhileRestoring".asInstanceOf[NavigationCancelledWhileRestoring]
+  
+  @js.native
+  sealed trait NavigationNotCommitted
+    extends StObject
+       with PrerenderFinalStatus
+  inline def NavigationNotCommitted: NavigationNotCommitted = "NavigationNotCommitted".asInstanceOf[NavigationNotCommitted]
+  
+  @js.native
+  sealed trait NavigationRequestBlockedByCsp
+    extends StObject
+       with PrerenderFinalStatus
+  inline def NavigationRequestBlockedByCsp: NavigationRequestBlockedByCsp = "NavigationRequestBlockedByCsp".asInstanceOf[NavigationRequestBlockedByCsp]
+  
+  @js.native
+  sealed trait NavigationRequestNetworkError
+    extends StObject
+       with PrerenderFinalStatus
+  inline def NavigationRequestNetworkError: NavigationRequestNetworkError = "NavigationRequestNetworkError".asInstanceOf[NavigationRequestNetworkError]
+  
+  @js.native
+  sealed trait NavigatorUserAgentIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def NavigatorUserAgentIssue: NavigatorUserAgentIssue = "NavigatorUserAgentIssue".asInstanceOf[NavigatorUserAgentIssue]
+  
+  @js.native
+  sealed trait NetworkExceedsBufferLimit
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NetworkExceedsBufferLimit: NetworkExceedsBufferLimit = "NetworkExceedsBufferLimit".asInstanceOf[NetworkExceedsBufferLimit]
+  
+  @js.native
+  sealed trait NetworkRequestDatapipeDrainedAsBytesConsumer
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NetworkRequestDatapipeDrainedAsBytesConsumer: NetworkRequestDatapipeDrainedAsBytesConsumer = "NetworkRequestDatapipeDrainedAsBytesConsumer".asInstanceOf[NetworkRequestDatapipeDrainedAsBytesConsumer]
+  
+  @js.native
+  sealed trait NetworkRequestRedirected
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NetworkRequestRedirected: NetworkRequestRedirected = "NetworkRequestRedirected".asInstanceOf[NetworkRequestRedirected]
+  
+  @js.native
+  sealed trait NetworkRequestTimeout
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NetworkRequestTimeout: NetworkRequestTimeout = "NetworkRequestTimeout".asInstanceOf[NetworkRequestTimeout]
   
   @js.native
   sealed trait NetworkTotalLimit
@@ -569,11 +1881,42 @@ object devtoolsProtocolStrings {
   inline def NetworkTotalLimit: NetworkTotalLimit = "NetworkTotalLimit".asInstanceOf[NetworkTotalLimit]
   
   @js.native
+  sealed trait NoCorsRedirectModeNotFollow
+    extends StObject
+       with CorsError
+  inline def NoCorsRedirectModeNotFollow: NoCorsRedirectModeNotFollow = "NoCorsRedirectModeNotFollow".asInstanceOf[NoCorsRedirectModeNotFollow]
+  
+  @js.native
+  sealed trait NoQuirksMode
+    extends StObject
+       with CompatibilityMode
+  inline def NoQuirksMode: NoQuirksMode = "NoQuirksMode".asInstanceOf[NoQuirksMode]
+  
+  @js.native
+  sealed trait NoResponseHead
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NoResponseHead: NoResponseHead = "NoResponseHead".asInstanceOf[NoResponseHead]
+  
+  @js.native
+  sealed trait NoSysexWebMIDIWithoutPermission
+    extends StObject
+       with DeprecationIssueType
+  inline def NoSysexWebMIDIWithoutPermission: NoSysexWebMIDIWithoutPermission = "NoSysexWebMIDIWithoutPermission".asInstanceOf[NoSysexWebMIDIWithoutPermission]
+  
+  @js.native
+  sealed trait NonSecure
+    extends StObject
+       with CookieSourceScheme
+  inline def NonSecure: NonSecure = "NonSecure".asInstanceOf[NonSecure]
+  
+  @js.native
   sealed trait None
     extends StObject
        with CookieSameSite
        with CrossOriginEmbedderPolicyValue
        with DebugSymbolsType
+       with OriginTrialUsageRestriction
   inline def None: None = "None".asInstanceOf[None]
   
   @js.native
@@ -589,10 +1932,40 @@ object devtoolsProtocolStrings {
   inline def NotIsolatedFeatureDisabled: NotIsolatedFeatureDisabled = "NotIsolatedFeatureDisabled".asInstanceOf[NotIsolatedFeatureDisabled]
   
   @js.native
+  sealed trait NotMostRecentNavigationEntry
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NotMostRecentNavigationEntry: NotMostRecentNavigationEntry = "NotMostRecentNavigationEntry".asInstanceOf[NotMostRecentNavigationEntry]
+  
+  @js.native
   sealed trait NotOnPath
     extends StObject
        with CookieBlockedReason
   inline def NotOnPath: NotOnPath = "NotOnPath".asInstanceOf[NotOnPath]
+  
+  @js.native
+  sealed trait NotPrimaryMainFrame
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def NotPrimaryMainFrame: NotPrimaryMainFrame = "NotPrimaryMainFrame".asInstanceOf[NotPrimaryMainFrame]
+  
+  @js.native
+  sealed trait NotSupported
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def NotSupported: NotSupported = "NotSupported".asInstanceOf[NotSupported]
+  
+  @js.native
+  sealed trait NotificationInsecureOrigin
+    extends StObject
+       with DeprecationIssueType
+  inline def NotificationInsecureOrigin: NotificationInsecureOrigin = "NotificationInsecureOrigin".asInstanceOf[NotificationInsecureOrigin]
+  
+  @js.native
+  sealed trait NotificationPermissionRequestedIframe
+    extends StObject
+       with DeprecationIssueType
+  inline def NotificationPermissionRequestedIframe: NotificationPermissionRequestedIframe = "NotificationPermissionRequestedIframe".asInstanceOf[NotificationPermissionRequestedIframe]
   
   @js.native
   sealed trait OOM
@@ -601,16 +1974,143 @@ object devtoolsProtocolStrings {
   inline def OOM: OOM = "OOM".asInstanceOf[OOM]
   
   @js.native
+  sealed trait OSNotSupported
+    extends StObject
+       with OriginTrialStatus
+  inline def OSNotSupported: OSNotSupported = "OSNotSupported".asInstanceOf[OSNotSupported]
+  
+  @js.native
+  sealed trait ObsoleteWebRtcCipherSuite
+    extends StObject
+       with DeprecationIssueType
+  inline def ObsoleteWebRtcCipherSuite: ObsoleteWebRtcCipherSuite = "ObsoleteWebRtcCipherSuite".asInstanceOf[ObsoleteWebRtcCipherSuite]
+  
+  @js.native
+  sealed trait Ok
+    extends StObject
+       with SetScriptSourceResponseStatus
+       with TrustTokenOperationDoneEventStatus
+  inline def Ok: Ok = "Ok".asInstanceOf[Ok]
+  
+  @js.native
+  sealed trait OpenWebDatabaseInsecureContext
+    extends StObject
+       with DeprecationIssueType
+  inline def OpenWebDatabaseInsecureContext: OpenWebDatabaseInsecureContext = "OpenWebDatabaseInsecureContext".asInstanceOf[OpenWebDatabaseInsecureContext]
+  
+  @js.native
   sealed trait Other
     extends StObject
        with ResourceType
   inline def Other: Other = "Other".asInstanceOf[Other]
   
   @js.native
+  sealed trait OutstandingIndexedDBTransaction
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def OutstandingIndexedDBTransaction: OutstandingIndexedDBTransaction = "OutstandingIndexedDBTransaction".asInstanceOf[OutstandingIndexedDBTransaction]
+  
+  @js.native
+  sealed trait OutstandingNetworkRequestDirectSocket
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def OutstandingNetworkRequestDirectSocket: OutstandingNetworkRequestDirectSocket = "OutstandingNetworkRequestDirectSocket".asInstanceOf[OutstandingNetworkRequestDirectSocket]
+  
+  @js.native
+  sealed trait OutstandingNetworkRequestFetch
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def OutstandingNetworkRequestFetch: OutstandingNetworkRequestFetch = "OutstandingNetworkRequestFetch".asInstanceOf[OutstandingNetworkRequestFetch]
+  
+  @js.native
+  sealed trait OutstandingNetworkRequestOthers
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def OutstandingNetworkRequestOthers: OutstandingNetworkRequestOthers = "OutstandingNetworkRequestOthers".asInstanceOf[OutstandingNetworkRequestOthers]
+  
+  @js.native
+  sealed trait OutstandingNetworkRequestXHR
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def OutstandingNetworkRequestXHR: OutstandingNetworkRequestXHR = "OutstandingNetworkRequestXHR".asInstanceOf[OutstandingNetworkRequestXHR]
+  
+  @js.native
+  sealed trait OverflowVisibleOnReplacedElement
+    extends StObject
+       with DeprecationIssueType
+  inline def OverflowVisibleOnReplacedElement: OverflowVisibleOnReplacedElement = "OverflowVisibleOnReplacedElement".asInstanceOf[OverflowVisibleOnReplacedElement]
+  
+  @js.native
   sealed trait OverwriteSecure
     extends StObject
        with SetCookieBlockedReason
   inline def OverwriteSecure: OverwriteSecure = "OverwriteSecure".asInstanceOf[OverwriteSecure]
+  
+  @js.native
+  sealed trait PageSupportNeeded
+    extends StObject
+       with BackForwardCacheNotRestoredReasonType
+  inline def PageSupportNeeded: PageSupportNeeded = "PageSupportNeeded".asInstanceOf[PageSupportNeeded]
+  
+  @js.native
+  sealed trait ParentIsAd
+    extends StObject
+       with AdFrameExplanation
+  inline def ParentIsAd: ParentIsAd = "ParentIsAd".asInstanceOf[ParentIsAd]
+  
+  @js.native
+  sealed trait PaymentManager
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def PaymentManager: PaymentManager = "PaymentManager".asInstanceOf[PaymentManager]
+  
+  @js.native
+  sealed trait Pending
+    extends StObject
+       with ReportStatus
+  inline def Pending: Pending = "Pending".asInstanceOf[Pending]
+  
+  @js.native
+  sealed trait PerformanceMeasureMemory
+    extends StObject
+       with GatedAPIFeatures
+  inline def PerformanceMeasureMemory: PerformanceMeasureMemory = "PerformanceMeasureMemory".asInstanceOf[PerformanceMeasureMemory]
+  
+  @js.native
+  sealed trait PerformanceProfile
+    extends StObject
+       with GatedAPIFeatures
+  inline def PerformanceProfile: PerformanceProfile = "PerformanceProfile".asInstanceOf[PerformanceProfile]
+  
+  @js.native
+  sealed trait PermissionPolicyDisabled
+    extends StObject
+       with AttributionReportingIssueType
+  inline def PermissionPolicyDisabled: PermissionPolicyDisabled = "PermissionPolicyDisabled".asInstanceOf[PermissionPolicyDisabled]
+  
+  @js.native
+  sealed trait PermissionPolicyNotDelegated
+    extends StObject
+       with AttributionReportingIssueType
+  inline def PermissionPolicyNotDelegated: PermissionPolicyNotDelegated = "PermissionPolicyNotDelegated".asInstanceOf[PermissionPolicyNotDelegated]
+  
+  @js.native
+  sealed trait PersistentQuotaType
+    extends StObject
+       with DeprecationIssueType
+  inline def PersistentQuotaType: PersistentQuotaType = "PersistentQuotaType".asInstanceOf[PersistentQuotaType]
+  
+  @js.native
+  sealed trait PictureInPicture
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def PictureInPicture: PictureInPicture = "PictureInPicture".asInstanceOf[PictureInPicture]
+  
+  @js.native
+  sealed trait PictureSourceSrc
+    extends StObject
+       with DeprecationIssueType
+  inline def PictureSourceSrc: PictureSourceSrc = "PictureSourceSrc".asInstanceOf[PictureSourceSrc]
   
   @js.native
   sealed trait Ping
@@ -632,10 +2132,173 @@ object devtoolsProtocolStrings {
   inline def PluginResource: PluginResource = "PluginResource".asInstanceOf[PluginResource]
   
   @js.native
+  sealed trait Portal
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def Portal: Portal = "Portal".asInstanceOf[Portal]
+  
+  @js.native
   sealed trait Prefetch
     extends StObject
        with MixedContentResourceType
+       with ResourceType
   inline def Prefetch: Prefetch = "Prefetch".asInstanceOf[Prefetch]
+  
+  @js.native
+  sealed trait PrefixedCancelAnimationFrame
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedCancelAnimationFrame: PrefixedCancelAnimationFrame = "PrefixedCancelAnimationFrame".asInstanceOf[PrefixedCancelAnimationFrame]
+  
+  @js.native
+  sealed trait PrefixedRequestAnimationFrame
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedRequestAnimationFrame: PrefixedRequestAnimationFrame = "PrefixedRequestAnimationFrame".asInstanceOf[PrefixedRequestAnimationFrame]
+  
+  @js.native
+  sealed trait PrefixedStorageInfo
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedStorageInfo: PrefixedStorageInfo = "PrefixedStorageInfo".asInstanceOf[PrefixedStorageInfo]
+  
+  @js.native
+  sealed trait PrefixedVideoDisplayingFullscreen
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoDisplayingFullscreen: PrefixedVideoDisplayingFullscreen = "PrefixedVideoDisplayingFullscreen".asInstanceOf[PrefixedVideoDisplayingFullscreen]
+  
+  @js.native
+  sealed trait PrefixedVideoEnterFullScreen
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoEnterFullScreen: PrefixedVideoEnterFullScreen = "PrefixedVideoEnterFullScreen".asInstanceOf[PrefixedVideoEnterFullScreen]
+  
+  @js.native
+  sealed trait PrefixedVideoEnterFullscreen_
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoEnterFullscreen_ : PrefixedVideoEnterFullscreen_ = "PrefixedVideoEnterFullscreen".asInstanceOf[PrefixedVideoEnterFullscreen_]
+  
+  @js.native
+  sealed trait PrefixedVideoExitFullScreen
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoExitFullScreen: PrefixedVideoExitFullScreen = "PrefixedVideoExitFullScreen".asInstanceOf[PrefixedVideoExitFullScreen]
+  
+  @js.native
+  sealed trait PrefixedVideoExitFullscreen_
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoExitFullscreen_ : PrefixedVideoExitFullscreen_ = "PrefixedVideoExitFullscreen".asInstanceOf[PrefixedVideoExitFullscreen_]
+  
+  @js.native
+  sealed trait PrefixedVideoSupportsFullscreen
+    extends StObject
+       with DeprecationIssueType
+  inline def PrefixedVideoSupportsFullscreen: PrefixedVideoSupportsFullscreen = "PrefixedVideoSupportsFullscreen".asInstanceOf[PrefixedVideoSupportsFullscreen]
+  
+  @js.native
+  sealed trait Preflight
+    extends StObject
+       with ResourceType
+  inline def Preflight: Preflight = "Preflight".asInstanceOf[Preflight]
+  
+  @js.native
+  sealed trait PreflightAllowOriginMismatch
+    extends StObject
+       with CorsError
+  inline def PreflightAllowOriginMismatch: PreflightAllowOriginMismatch = "PreflightAllowOriginMismatch".asInstanceOf[PreflightAllowOriginMismatch]
+  
+  @js.native
+  sealed trait PreflightBlock
+    extends StObject
+       with PrivateNetworkRequestPolicy
+  inline def PreflightBlock: PreflightBlock = "PreflightBlock".asInstanceOf[PreflightBlock]
+  
+  @js.native
+  sealed trait PreflightDisallowedRedirect
+    extends StObject
+       with CorsError
+  inline def PreflightDisallowedRedirect: PreflightDisallowedRedirect = "PreflightDisallowedRedirect".asInstanceOf[PreflightDisallowedRedirect]
+  
+  @js.native
+  sealed trait PreflightInvalidAllowCredentials
+    extends StObject
+       with CorsError
+  inline def PreflightInvalidAllowCredentials: PreflightInvalidAllowCredentials = "PreflightInvalidAllowCredentials".asInstanceOf[PreflightInvalidAllowCredentials]
+  
+  @js.native
+  sealed trait PreflightInvalidAllowExternal
+    extends StObject
+       with CorsError
+  inline def PreflightInvalidAllowExternal: PreflightInvalidAllowExternal = "PreflightInvalidAllowExternal".asInstanceOf[PreflightInvalidAllowExternal]
+  
+  @js.native
+  sealed trait PreflightInvalidAllowOriginValue
+    extends StObject
+       with CorsError
+  inline def PreflightInvalidAllowOriginValue: PreflightInvalidAllowOriginValue = "PreflightInvalidAllowOriginValue".asInstanceOf[PreflightInvalidAllowOriginValue]
+  
+  @js.native
+  sealed trait PreflightInvalidAllowPrivateNetwork
+    extends StObject
+       with CorsError
+  inline def PreflightInvalidAllowPrivateNetwork: PreflightInvalidAllowPrivateNetwork = "PreflightInvalidAllowPrivateNetwork".asInstanceOf[PreflightInvalidAllowPrivateNetwork]
+  
+  @js.native
+  sealed trait PreflightInvalidStatus
+    extends StObject
+       with CorsError
+  inline def PreflightInvalidStatus: PreflightInvalidStatus = "PreflightInvalidStatus".asInstanceOf[PreflightInvalidStatus]
+  
+  @js.native
+  sealed trait PreflightMissingAllowExternal
+    extends StObject
+       with CorsError
+  inline def PreflightMissingAllowExternal: PreflightMissingAllowExternal = "PreflightMissingAllowExternal".asInstanceOf[PreflightMissingAllowExternal]
+  
+  @js.native
+  sealed trait PreflightMissingAllowOriginHeader
+    extends StObject
+       with CorsError
+  inline def PreflightMissingAllowOriginHeader: PreflightMissingAllowOriginHeader = "PreflightMissingAllowOriginHeader".asInstanceOf[PreflightMissingAllowOriginHeader]
+  
+  @js.native
+  sealed trait PreflightMissingAllowPrivateNetwork
+    extends StObject
+       with CorsError
+  inline def PreflightMissingAllowPrivateNetwork: PreflightMissingAllowPrivateNetwork = "PreflightMissingAllowPrivateNetwork".asInstanceOf[PreflightMissingAllowPrivateNetwork]
+  
+  @js.native
+  sealed trait PreflightMultipleAllowOriginValues
+    extends StObject
+       with CorsError
+  inline def PreflightMultipleAllowOriginValues: PreflightMultipleAllowOriginValues = "PreflightMultipleAllowOriginValues".asInstanceOf[PreflightMultipleAllowOriginValues]
+  
+  @js.native
+  sealed trait PreflightWarn
+    extends StObject
+       with PrivateNetworkRequestPolicy
+  inline def PreflightWarn: PreflightWarn = "PreflightWarn".asInstanceOf[PreflightWarn]
+  
+  @js.native
+  sealed trait PreflightWildcardOriginNotAllowed
+    extends StObject
+       with CorsError
+  inline def PreflightWildcardOriginNotAllowed: PreflightWildcardOriginNotAllowed = "PreflightWildcardOriginNotAllowed".asInstanceOf[PreflightWildcardOriginNotAllowed]
+  
+  @js.native
+  sealed trait Printing
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def Printing: Printing = "Printing".asInstanceOf[Printing]
+  
+  @js.native
+  sealed trait Private
+    extends StObject
+       with IPAddressSpace
+  inline def Private: Private = "Private".asInstanceOf[Private]
   
   @js.native
   sealed trait ProvideCredentials
@@ -652,9 +2315,63 @@ object devtoolsProtocolStrings {
   inline def Proxy: Proxy = "Proxy".asInstanceOf[Proxy]
   
   @js.native
+  sealed trait Public
+    extends StObject
+       with IPAddressSpace
+  inline def Public: Public = "Public".asInstanceOf[Public]
+  
+  @js.native
+  sealed trait Queued
+    extends StObject
+       with ReportStatus
+  inline def Queued: Queued = "Queued".asInstanceOf[Queued]
+  
+  @js.native
+  sealed trait QuirksMode
+    extends StObject
+       with CompatibilityMode
+  inline def QuirksMode: QuirksMode = "QuirksMode".asInstanceOf[QuirksMode]
+  
+  @js.native
+  sealed trait QuirksModeIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def QuirksModeIssue: QuirksModeIssue = "QuirksModeIssue".asInstanceOf[QuirksModeIssue]
+  
+  @js.native
+  sealed trait RTCConstraintEnableDtlsSrtpFalse
+    extends StObject
+       with DeprecationIssueType
+  inline def RTCConstraintEnableDtlsSrtpFalse: RTCConstraintEnableDtlsSrtpFalse = "RTCConstraintEnableDtlsSrtpFalse".asInstanceOf[RTCConstraintEnableDtlsSrtpFalse]
+  
+  @js.native
+  sealed trait RTCConstraintEnableDtlsSrtpTrue
+    extends StObject
+       with DeprecationIssueType
+  inline def RTCConstraintEnableDtlsSrtpTrue: RTCConstraintEnableDtlsSrtpTrue = "RTCConstraintEnableDtlsSrtpTrue".asInstanceOf[RTCConstraintEnableDtlsSrtpTrue]
+  
+  @js.native
+  sealed trait RTCPeerConnectionComplexPlanBSdpUsingDefaultSdpSemantics
+    extends StObject
+       with DeprecationIssueType
+  inline def RTCPeerConnectionComplexPlanBSdpUsingDefaultSdpSemantics: RTCPeerConnectionComplexPlanBSdpUsingDefaultSdpSemantics = "RTCPeerConnectionComplexPlanBSdpUsingDefaultSdpSemantics".asInstanceOf[RTCPeerConnectionComplexPlanBSdpUsingDefaultSdpSemantics]
+  
+  @js.native
+  sealed trait RTCPeerConnectionSdpSemanticsPlanB
+    extends StObject
+       with DeprecationIssueType
+  inline def RTCPeerConnectionSdpSemanticsPlanB: RTCPeerConnectionSdpSemanticsPlanB = "RTCPeerConnectionSdpSemanticsPlanB".asInstanceOf[RTCPeerConnectionSdpSemanticsPlanB]
+  
+  @js.native
+  sealed trait RangeExpand
+    extends StObject
+       with DeprecationIssueType
+  inline def RangeExpand: RangeExpand = "RangeExpand".asInstanceOf[RangeExpand]
+  
+  @js.native
   sealed trait ReadCookie
     extends StObject
-       with SameSiteCookieOperation
+       with CookieOperation
   inline def ReadCookie: ReadCookie = "ReadCookie".asInstanceOf[ReadCookie]
   
   @js.native
@@ -664,10 +2381,48 @@ object devtoolsProtocolStrings {
   inline def Redemption: Redemption = "Redemption".asInstanceOf[Redemption]
   
   @js.native
+  sealed trait RedirectContainsCredentials
+    extends StObject
+       with CorsError
+  inline def RedirectContainsCredentials: RedirectContainsCredentials = "RedirectContainsCredentials".asInstanceOf[RedirectContainsCredentials]
+  
+  @js.native
   sealed trait Refresh
     extends StObject
        with TrustTokenParamsRefreshPolicy
   inline def Refresh: Refresh = "Refresh".asInstanceOf[Refresh]
+  
+  @js.native
+  sealed trait RelatedActiveContentsExist
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RelatedActiveContentsExist: RelatedActiveContentsExist = "RelatedActiveContentsExist".asInstanceOf[RelatedActiveContentsExist]
+  
+  @js.native
+  sealed trait RenderFrameHostReused_CrossSite
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RenderFrameHostReused_CrossSite: RenderFrameHostReused_CrossSite = "RenderFrameHostReused_CrossSite".asInstanceOf[RenderFrameHostReused_CrossSite]
+  
+  @js.native
+  sealed trait RenderFrameHostReused_SameSite
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RenderFrameHostReused_SameSite: RenderFrameHostReused_SameSite = "RenderFrameHostReused_SameSite".asInstanceOf[RenderFrameHostReused_SameSite]
+  
+  @js.native
+  sealed trait RendererProcessCrashed
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+       with PrerenderFinalStatus
+  inline def RendererProcessCrashed: RendererProcessCrashed = "RendererProcessCrashed".asInstanceOf[RendererProcessCrashed]
+  
+  @js.native
+  sealed trait RendererProcessKilled
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+       with PrerenderFinalStatus
+  inline def RendererProcessKilled: RendererProcessKilled = "RendererProcessKilled".asInstanceOf[RendererProcessKilled]
   
   @js.native
   sealed trait RepaintsOnScroll
@@ -689,6 +2444,54 @@ object devtoolsProtocolStrings {
   inline def Request: Request = "Request".asInstanceOf[Request]
   
   @js.native
+  sealed trait RequestedAudioCapturePermission
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedAudioCapturePermission: RequestedAudioCapturePermission = "RequestedAudioCapturePermission".asInstanceOf[RequestedAudioCapturePermission]
+  
+  @js.native
+  sealed trait RequestedBackForwardCacheBlockedSensors
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedBackForwardCacheBlockedSensors: RequestedBackForwardCacheBlockedSensors = "RequestedBackForwardCacheBlockedSensors".asInstanceOf[RequestedBackForwardCacheBlockedSensors]
+  
+  @js.native
+  sealed trait RequestedBackgroundWorkPermission
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedBackgroundWorkPermission: RequestedBackgroundWorkPermission = "RequestedBackgroundWorkPermission".asInstanceOf[RequestedBackgroundWorkPermission]
+  
+  @js.native
+  sealed trait RequestedMIDIPermission
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedMIDIPermission: RequestedMIDIPermission = "RequestedMIDIPermission".asInstanceOf[RequestedMIDIPermission]
+  
+  @js.native
+  sealed trait RequestedNotificationsPermission
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedNotificationsPermission: RequestedNotificationsPermission = "RequestedNotificationsPermission".asInstanceOf[RequestedNotificationsPermission]
+  
+  @js.native
+  sealed trait RequestedStorageAccessGrant
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedStorageAccessGrant: RequestedStorageAccessGrant = "RequestedStorageAccessGrant".asInstanceOf[RequestedStorageAccessGrant]
+  
+  @js.native
+  sealed trait RequestedSubresourceWithEmbeddedCredentials
+    extends StObject
+       with DeprecationIssueType
+  inline def RequestedSubresourceWithEmbeddedCredentials: RequestedSubresourceWithEmbeddedCredentials = "RequestedSubresourceWithEmbeddedCredentials".asInstanceOf[RequestedSubresourceWithEmbeddedCredentials]
+  
+  @js.native
+  sealed trait RequestedVideoCapturePermission
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def RequestedVideoCapturePermission: RequestedVideoCapturePermission = "RequestedVideoCapturePermission".asInstanceOf[RequestedVideoCapturePermission]
+  
+  @js.native
   sealed trait RequireCorp
     extends StObject
        with CrossOriginEmbedderPolicyValue
@@ -701,10 +2504,28 @@ object devtoolsProtocolStrings {
   inline def Resource: Resource = "Resource".asInstanceOf[Resource]
   
   @js.native
+  sealed trait ResourceExhausted
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def ResourceExhausted: ResourceExhausted = "ResourceExhausted".asInstanceOf[ResourceExhausted]
+  
+  @js.native
   sealed trait Response
     extends StObject
        with RequestStage
   inline def Response: Response = "Response".asInstanceOf[Response]
+  
+  @js.native
+  sealed trait RestrictProperties
+    extends StObject
+       with CrossOriginOpenerPolicyValue
+  inline def RestrictProperties: RestrictProperties = "RestrictProperties".asInstanceOf[RestrictProperties]
+  
+  @js.native
+  sealed trait RestrictPropertiesPlusCoep
+    extends StObject
+       with CrossOriginOpenerPolicyValue
+  inline def RestrictPropertiesPlusCoep: RestrictPropertiesPlusCoep = "RestrictPropertiesPlusCoep".asInstanceOf[RestrictPropertiesPlusCoep]
   
   @js.native
   sealed trait ReturnAsBase64
@@ -718,6 +2539,18 @@ object devtoolsProtocolStrings {
        with PrintToPDFRequestTransferMode
        with StartRequestTransferMode
   inline def ReturnAsStream: ReturnAsStream = "ReturnAsStream".asInstanceOf[ReturnAsStream]
+  
+  @js.native
+  sealed trait RpPageNotVisible
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def RpPageNotVisible: RpPageNotVisible = "RpPageNotVisible".asInstanceOf[RpPageNotVisible]
+  
+  @js.native
+  sealed trait RtcpMuxPolicyNegotiate
+    extends StObject
+       with DeprecationIssueType
+  inline def RtcpMuxPolicyNegotiate: RtcpMuxPolicyNegotiate = "RtcpMuxPolicyNegotiate".asInstanceOf[RtcpMuxPolicyNegotiate]
   
   @js.native
   sealed trait SameOrigin
@@ -738,10 +2571,17 @@ object devtoolsProtocolStrings {
   inline def SameOriginPlusCoep: SameOriginPlusCoep = "SameOriginPlusCoep".asInstanceOf[SameOriginPlusCoep]
   
   @js.native
-  sealed trait SameSiteCookieIssue
+  sealed trait SamePartyConflictsWithOtherAttributes
     extends StObject
-       with InspectorIssueCode
-  inline def SameSiteCookieIssue: SameSiteCookieIssue = "SameSiteCookieIssue".asInstanceOf[SameSiteCookieIssue]
+       with SetCookieBlockedReason
+  inline def SamePartyConflictsWithOtherAttributes: SamePartyConflictsWithOtherAttributes = "SamePartyConflictsWithOtherAttributes".asInstanceOf[SamePartyConflictsWithOtherAttributes]
+  
+  @js.native
+  sealed trait SamePartyFromCrossPartyContext
+    extends StObject
+       with CookieBlockedReason
+       with SetCookieBlockedReason
+  inline def SamePartyFromCrossPartyContext: SamePartyFromCrossPartyContext = "SamePartyFromCrossPartyContext".asInstanceOf[SamePartyFromCrossPartyContext]
   
   @js.native
   sealed trait SameSiteLax
@@ -770,6 +2610,18 @@ object devtoolsProtocolStrings {
        with CookieBlockedReason
        with SetCookieBlockedReason
   inline def SameSiteUnspecifiedTreatedAsLax: SameSiteUnspecifiedTreatedAsLax = "SameSiteUnspecifiedTreatedAsLax".asInstanceOf[SameSiteUnspecifiedTreatedAsLax]
+  
+  @js.native
+  sealed trait SchedulerTrackedFeatureUsed
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SchedulerTrackedFeatureUsed: SchedulerTrackedFeatureUsed = "SchedulerTrackedFeatureUsed".asInstanceOf[SchedulerTrackedFeatureUsed]
+  
+  @js.native
+  sealed trait SchemeNotHTTPOrHTTPS
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SchemeNotHTTPOrHTTPS: SchemeNotHTTPOrHTTPS = "SchemeNotHTTPOrHTTPS".asInstanceOf[SchemeNotHTTPOrHTTPS]
   
   @js.native
   sealed trait SchemeNotSupported
@@ -808,6 +2660,7 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait Secure
     extends StObject
+       with CookieSourceScheme
        with SecureContextType
   inline def Secure: Secure = "Secure".asInstanceOf[Secure]
   
@@ -838,16 +2691,77 @@ object devtoolsProtocolStrings {
   inline def ServiceWorker: ServiceWorker = "ServiceWorker".asInstanceOf[ServiceWorker]
   
   @js.native
+  sealed trait ServiceWorkerClaim
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ServiceWorkerClaim: ServiceWorkerClaim = "ServiceWorkerClaim".asInstanceOf[ServiceWorkerClaim]
+  
+  @js.native
+  sealed trait ServiceWorkerPostMessage
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ServiceWorkerPostMessage: ServiceWorkerPostMessage = "ServiceWorkerPostMessage".asInstanceOf[ServiceWorkerPostMessage]
+  
+  @js.native
+  sealed trait ServiceWorkerUnregistration
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ServiceWorkerUnregistration: ServiceWorkerUnregistration = "ServiceWorkerUnregistration".asInstanceOf[ServiceWorkerUnregistration]
+  
+  @js.native
+  sealed trait ServiceWorkerVersionActivation
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def ServiceWorkerVersionActivation: ServiceWorkerVersionActivation = "ServiceWorkerVersionActivation".asInstanceOf[ServiceWorkerVersionActivation]
+  
+  @js.native
+  sealed trait SessionRestored
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SessionRestored: SessionRestored = "SessionRestored".asInstanceOf[SessionRestored]
+  
+  @js.native
   sealed trait SetCookie
     extends StObject
-       with SameSiteCookieOperation
+       with CookieOperation
   inline def SetCookie: SetCookie = "SetCookie".asInstanceOf[SetCookie]
+  
+  @js.native
+  sealed trait SharedArrayBufferConstructedWithoutIsolation
+    extends StObject
+       with DeprecationIssueType
+  inline def SharedArrayBufferConstructedWithoutIsolation: SharedArrayBufferConstructedWithoutIsolation = "SharedArrayBufferConstructedWithoutIsolation".asInstanceOf[SharedArrayBufferConstructedWithoutIsolation]
+  
+  @js.native
+  sealed trait SharedArrayBufferIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def SharedArrayBufferIssue: SharedArrayBufferIssue = "SharedArrayBufferIssue".asInstanceOf[SharedArrayBufferIssue]
+  
+  @js.native
+  sealed trait SharedArrayBuffers
+    extends StObject
+       with GatedAPIFeatures
+  inline def SharedArrayBuffers: SharedArrayBuffers = "SharedArrayBuffers".asInstanceOf[SharedArrayBuffers]
+  
+  @js.native
+  sealed trait SharedArrayBuffersTransferAllowed
+    extends StObject
+       with GatedAPIFeatures
+  inline def SharedArrayBuffersTransferAllowed: SharedArrayBuffersTransferAllowed = "SharedArrayBuffersTransferAllowed".asInstanceOf[SharedArrayBuffersTransferAllowed]
   
   @js.native
   sealed trait SharedWorker
     extends StObject
+       with BackForwardCacheNotRestoredReason
        with MixedContentResourceType
   inline def SharedWorker: SharedWorker = "SharedWorker".asInstanceOf[SharedWorker]
+  
+  @js.native
+  sealed trait ShouldEmbargo
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ShouldEmbargo: ShouldEmbargo = "ShouldEmbargo".asInstanceOf[ShouldEmbargo]
   
   @js.native
   sealed trait SignedExchange
@@ -863,10 +2777,56 @@ object devtoolsProtocolStrings {
   inline def Signing: Signing = "Signing".asInstanceOf[Signing]
   
   @js.native
+  sealed trait SourceAndTriggerHeaders
+    extends StObject
+       with AttributionReportingIssueType
+  inline def SourceAndTriggerHeaders: SourceAndTriggerHeaders = "SourceAndTriggerHeaders".asInstanceOf[SourceAndTriggerHeaders]
+  
+  @js.native
+  sealed trait SourceIgnored
+    extends StObject
+       with AttributionReportingIssueType
+  inline def SourceIgnored: SourceIgnored = "SourceIgnored".asInstanceOf[SourceIgnored]
+  
+  @js.native
   sealed trait SourceMap
     extends StObject
        with DebugSymbolsType
   inline def SourceMap: SourceMap = "SourceMap".asInstanceOf[SourceMap]
+  
+  @js.native
+  sealed trait SpeechRecognizer
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SpeechRecognizer: SpeechRecognizer = "SpeechRecognizer".asInstanceOf[SpeechRecognizer]
+  
+  @js.native
+  sealed trait SpeechSynthesis
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SpeechSynthesis: SpeechSynthesis = "SpeechSynthesis".asInstanceOf[SpeechSynthesis]
+  
+  @js.native
+  sealed trait SslCertificateError
+    extends StObject
+       with PrerenderFinalStatus
+  inline def SslCertificateError: SslCertificateError = "SslCertificateError".asInstanceOf[SslCertificateError]
+  
+  @js.native
+  sealed trait StartFailed
+    extends StObject
+       with PrerenderFinalStatus
+  inline def StartFailed: StartFailed = "StartFailed".asInstanceOf[StartFailed]
+  
+  @js.native
+  sealed trait StepInto extends StObject
+  inline def StepInto: StepInto = "StepInto".asInstanceOf[StepInto]
+  
+  @js.native
+  sealed trait Stop
+    extends StObject
+       with PrerenderFinalStatus
+  inline def Stop: Stop = "Stop".asInstanceOf[Stop]
   
   @js.native
   sealed trait Strict
@@ -882,10 +2842,53 @@ object devtoolsProtocolStrings {
   inline def Stylesheet: Stylesheet = "Stylesheet".asInstanceOf[Stylesheet]
   
   @js.native
+  sealed trait SubframeIsNavigating
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SubframeIsNavigating: SubframeIsNavigating = "SubframeIsNavigating".asInstanceOf[SubframeIsNavigating]
+  
+  @js.native
+  sealed trait SubresourceHasCacheControlNoCache
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SubresourceHasCacheControlNoCache: SubresourceHasCacheControlNoCache = "SubresourceHasCacheControlNoCache".asInstanceOf[SubresourceHasCacheControlNoCache]
+  
+  @js.native
+  sealed trait SubresourceHasCacheControlNoStore
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def SubresourceHasCacheControlNoStore: SubresourceHasCacheControlNoStore = "SubresourceHasCacheControlNoStore".asInstanceOf[SubresourceHasCacheControlNoStore]
+  
+  @js.native
+  sealed trait Subset
+    extends StObject
+       with OriginTrialUsageRestriction
+  inline def Subset: Subset = "Subset".asInstanceOf[Subset]
+  
+  @js.native
+  sealed trait Success
+    extends StObject
+       with OriginTrialTokenStatus
+       with ReportStatus
+  inline def Success: Success = "Success".asInstanceOf[Success]
+  
+  @js.native
+  sealed trait SupportPending
+    extends StObject
+       with BackForwardCacheNotRestoredReasonType
+  inline def SupportPending: SupportPending = "SupportPending".asInstanceOf[SupportPending]
+  
+  @js.native
   sealed trait SyntaxError
     extends StObject
        with SetCookieBlockedReason
   inline def SyntaxError: SyntaxError = "SyntaxError".asInstanceOf[SyntaxError]
+  
+  @js.native
+  sealed trait TextToSpeech_DisallowedByAutoplay
+    extends StObject
+       with DeprecationIssueType
+  inline def TextToSpeech_DisallowedByAutoplay: TextToSpeech_DisallowedByAutoplay = "TextToSpeech_DisallowedByAutoplay".asInstanceOf[TextToSpeech_DisallowedByAutoplay]
   
   @js.native
   sealed trait TextTrack
@@ -900,6 +2903,36 @@ object devtoolsProtocolStrings {
   inline def TimedOut: TimedOut = "TimedOut".asInstanceOf[TimedOut]
   
   @js.native
+  sealed trait Timeout
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def Timeout: Timeout = "Timeout".asInstanceOf[Timeout]
+  
+  @js.native
+  sealed trait TimeoutPuttingInCache
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def TimeoutPuttingInCache: TimeoutPuttingInCache = "TimeoutPuttingInCache".asInstanceOf[TimeoutPuttingInCache]
+  
+  @js.native
+  sealed trait TokenDisabled
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def TokenDisabled: TokenDisabled = "TokenDisabled".asInstanceOf[TokenDisabled]
+  
+  @js.native
+  sealed trait TooManyConcurrentRequests
+    extends StObject
+       with AttributionReportingIssueType
+  inline def TooManyConcurrentRequests: TooManyConcurrentRequests = "TooManyConcurrentRequests".asInstanceOf[TooManyConcurrentRequests]
+  
+  @js.native
+  sealed trait TooManyRequests
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def TooManyRequests: TooManyRequests = "TooManyRequests".asInstanceOf[TooManyRequests]
+  
+  @js.native
   sealed trait TouchEventHandler
     extends StObject
        with ScrollRectType
@@ -912,11 +2945,91 @@ object devtoolsProtocolStrings {
   inline def Track: Track = "Track".asInstanceOf[Track]
   
   @js.native
+  sealed trait TransferIssue
+    extends StObject
+       with SharedArrayBufferIssueType
+  inline def TransferIssue: TransferIssue = "TransferIssue".asInstanceOf[TransferIssue]
+  
+  @js.native
+  sealed trait TrialNotAllowed
+    extends StObject
+       with OriginTrialStatus
+  inline def TrialNotAllowed: TrialNotAllowed = "TrialNotAllowed".asInstanceOf[TrialNotAllowed]
+  
+  @js.native
+  sealed trait TriggerBackgrounded
+    extends StObject
+       with PrerenderFinalStatus
+  inline def TriggerBackgrounded: TriggerBackgrounded = "TriggerBackgrounded".asInstanceOf[TriggerBackgrounded]
+  
+  @js.native
+  sealed trait TriggerDestroyed
+    extends StObject
+       with PrerenderFinalStatus
+  inline def TriggerDestroyed: TriggerDestroyed = "TriggerDestroyed".asInstanceOf[TriggerDestroyed]
+  
+  @js.native
+  sealed trait TriggerIgnored
+    extends StObject
+       with AttributionReportingIssueType
+  inline def TriggerIgnored: TriggerIgnored = "TriggerIgnored".asInstanceOf[TriggerIgnored]
+  
+  @js.native
+  sealed trait TrustedWebActivityIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def TrustedWebActivityIssue: TrustedWebActivityIssue = "TrustedWebActivityIssue".asInstanceOf[TrustedWebActivityIssue]
+  
+  @js.native
+  sealed trait UaChangeRequiresReload
+    extends StObject
+       with PrerenderFinalStatus
+  inline def UaChangeRequiresReload: UaChangeRequiresReload = "UaChangeRequiresReload".asInstanceOf[UaChangeRequiresReload]
+  
+  @js.native
+  sealed trait Unavailable
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def Unavailable: Unavailable = "Unavailable".asInstanceOf[Unavailable]
+  
+  @js.native
+  sealed trait UnexpectedPrivateNetworkAccess
+    extends StObject
+       with CorsError
+  inline def UnexpectedPrivateNetworkAccess: UnexpectedPrivateNetworkAccess = "UnexpectedPrivateNetworkAccess".asInstanceOf[UnexpectedPrivateNetworkAccess]
+  
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+       with IPAddressSpace
+  inline def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  
+  @js.native
   sealed trait UnknownError
     extends StObject
        with CookieBlockedReason
        with SetCookieBlockedReason
+       with TrustTokenOperationDoneEventStatus
   inline def UnknownError: UnknownError = "UnknownError".asInstanceOf[UnknownError]
+  
+  @js.native
+  sealed trait UnknownTrial
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def UnknownTrial: UnknownTrial = "UnknownTrial".asInstanceOf[UnknownTrial]
+  
+  @js.native
+  sealed trait UnloadHandlerExistsInMainFrame
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def UnloadHandlerExistsInMainFrame: UnloadHandlerExistsInMainFrame = "UnloadHandlerExistsInMainFrame".asInstanceOf[UnloadHandlerExistsInMainFrame]
+  
+  @js.native
+  sealed trait UnloadHandlerExistsInSubFrame
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def UnloadHandlerExistsInSubFrame: UnloadHandlerExistsInSubFrame = "UnloadHandlerExistsInSubFrame".asInstanceOf[UnloadHandlerExistsInSubFrame]
   
   @js.native
   sealed trait UnsafeNone
@@ -925,10 +3038,28 @@ object devtoolsProtocolStrings {
   inline def UnsafeNone: UnsafeNone = "UnsafeNone".asInstanceOf[UnsafeNone]
   
   @js.native
+  sealed trait Unset
+    extends StObject
+       with CookieSourceScheme
+  inline def Unset: Unset = "Unset".asInstanceOf[Unset]
+  
+  @js.native
+  sealed trait UntrustworthyReportingOrigin
+    extends StObject
+       with AttributionReportingIssueType
+  inline def UntrustworthyReportingOrigin: UntrustworthyReportingOrigin = "UntrustworthyReportingOrigin".asInstanceOf[UntrustworthyReportingOrigin]
+  
+  @js.native
   sealed trait UseCached
     extends StObject
        with TrustTokenParamsRefreshPolicy
   inline def UseCached: UseCached = "UseCached".asInstanceOf[UseCached]
+  
+  @js.native
+  sealed trait UserAgentOverrideDiffers
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def UserAgentOverrideDiffers: UserAgentOverrideDiffers = "UserAgentOverrideDiffers".asInstanceOf[UserAgentOverrideDiffers]
   
   @js.native
   sealed trait UserPreferences
@@ -936,6 +3067,18 @@ object devtoolsProtocolStrings {
        with CookieBlockedReason
        with SetCookieBlockedReason
   inline def UserPreferences: UserPreferences = "UserPreferences".asInstanceOf[UserPreferences]
+  
+  @js.native
+  sealed trait V8SharedArrayBufferConstructedInExtensionWithoutIsolation
+    extends StObject
+       with DeprecationIssueType
+  inline def V8SharedArrayBufferConstructedInExtensionWithoutIsolation: V8SharedArrayBufferConstructedInExtensionWithoutIsolation = "V8SharedArrayBufferConstructedInExtensionWithoutIsolation".asInstanceOf[V8SharedArrayBufferConstructedInExtensionWithoutIsolation]
+  
+  @js.native
+  sealed trait ValidTokenNotProvided
+    extends StObject
+       with OriginTrialStatus
+  inline def ValidTokenNotProvided: ValidTokenNotProvided = "ValidTokenNotProvided".asInstanceOf[ValidTokenNotProvided]
   
   @js.native
   sealed trait VeryHigh
@@ -956,52 +3099,76 @@ object devtoolsProtocolStrings {
   inline def Video: Video = "Video".asInstanceOf[Video]
   
   @js.native
+  sealed trait WarnAttributeValueExceedsMaxSize
+    extends StObject
+       with CookieWarningReason
+  inline def WarnAttributeValueExceedsMaxSize: WarnAttributeValueExceedsMaxSize = "WarnAttributeValueExceedsMaxSize".asInstanceOf[WarnAttributeValueExceedsMaxSize]
+  
+  @js.native
+  sealed trait WarnDomainNonASCII
+    extends StObject
+       with CookieWarningReason
+  inline def WarnDomainNonASCII: WarnDomainNonASCII = "WarnDomainNonASCII".asInstanceOf[WarnDomainNonASCII]
+  
+  @js.native
+  sealed trait WarnFromInsecureToMorePrivate
+    extends StObject
+       with PrivateNetworkRequestPolicy
+  inline def WarnFromInsecureToMorePrivate: WarnFromInsecureToMorePrivate = "WarnFromInsecureToMorePrivate".asInstanceOf[WarnFromInsecureToMorePrivate]
+  
+  @js.native
   sealed trait WarnSameSiteLaxCrossDowngradeLax
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteLaxCrossDowngradeLax: WarnSameSiteLaxCrossDowngradeLax = "WarnSameSiteLaxCrossDowngradeLax".asInstanceOf[WarnSameSiteLaxCrossDowngradeLax]
   
   @js.native
   sealed trait WarnSameSiteLaxCrossDowngradeStrict
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteLaxCrossDowngradeStrict: WarnSameSiteLaxCrossDowngradeStrict = "WarnSameSiteLaxCrossDowngradeStrict".asInstanceOf[WarnSameSiteLaxCrossDowngradeStrict]
   
   @js.native
   sealed trait WarnSameSiteNoneInsecure
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteNoneInsecure: WarnSameSiteNoneInsecure = "WarnSameSiteNoneInsecure".asInstanceOf[WarnSameSiteNoneInsecure]
   
   @js.native
   sealed trait WarnSameSiteStrictCrossDowngradeLax
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteStrictCrossDowngradeLax: WarnSameSiteStrictCrossDowngradeLax = "WarnSameSiteStrictCrossDowngradeLax".asInstanceOf[WarnSameSiteStrictCrossDowngradeLax]
   
   @js.native
   sealed trait WarnSameSiteStrictCrossDowngradeStrict
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteStrictCrossDowngradeStrict: WarnSameSiteStrictCrossDowngradeStrict = "WarnSameSiteStrictCrossDowngradeStrict".asInstanceOf[WarnSameSiteStrictCrossDowngradeStrict]
   
   @js.native
   sealed trait WarnSameSiteStrictLaxDowngradeStrict
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteStrictLaxDowngradeStrict: WarnSameSiteStrictLaxDowngradeStrict = "WarnSameSiteStrictLaxDowngradeStrict".asInstanceOf[WarnSameSiteStrictLaxDowngradeStrict]
   
   @js.native
   sealed trait WarnSameSiteUnspecifiedCrossSiteContext
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteUnspecifiedCrossSiteContext: WarnSameSiteUnspecifiedCrossSiteContext = "WarnSameSiteUnspecifiedCrossSiteContext".asInstanceOf[WarnSameSiteUnspecifiedCrossSiteContext]
   
   @js.native
   sealed trait WarnSameSiteUnspecifiedLaxAllowUnsafe
     extends StObject
-       with SameSiteCookieWarningReason
+       with CookieWarningReason
   inline def WarnSameSiteUnspecifiedLaxAllowUnsafe: WarnSameSiteUnspecifiedLaxAllowUnsafe = "WarnSameSiteUnspecifiedLaxAllowUnsafe".asInstanceOf[WarnSameSiteUnspecifiedLaxAllowUnsafe]
+  
+  @js.native
+  sealed trait WasGrantedMediaAccess
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WasGrantedMediaAccess: WasGrantedMediaAccess = "WasGrantedMediaAccess".asInstanceOf[WasGrantedMediaAccess]
   
   @js.native
   sealed trait WebAnimation
@@ -1016,10 +3183,65 @@ object devtoolsProtocolStrings {
   inline def WebAssembly: WebAssembly = "WebAssembly".asInstanceOf[WebAssembly]
   
   @js.native
+  sealed trait WebDatabase
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebDatabase: WebDatabase = "WebDatabase".asInstanceOf[WebDatabase]
+  
+  @js.native
+  sealed trait WebHID
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebHID: WebHID = "WebHID".asInstanceOf[WebHID]
+  
+  @js.native
+  sealed trait WebLocks
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebLocks: WebLocks = "WebLocks".asInstanceOf[WebLocks]
+  
+  @js.native
+  sealed trait WebNfc
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebNfc: WebNfc = "WebNfc".asInstanceOf[WebNfc]
+  
+  @js.native
+  sealed trait WebOTPService
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebOTPService: WebOTPService = "WebOTPService".asInstanceOf[WebOTPService]
+  
+  @js.native
+  sealed trait WebRTC
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebRTC: WebRTC = "WebRTC".asInstanceOf[WebRTC]
+  
+  @js.native
+  sealed trait WebShare
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebShare: WebShare = "WebShare".asInstanceOf[WebShare]
+  
+  @js.native
   sealed trait WebSocket
     extends StObject
+       with BackForwardCacheNotRestoredReason
        with ResourceType
   inline def WebSocket: WebSocket = "WebSocket".asInstanceOf[WebSocket]
+  
+  @js.native
+  sealed trait WebTransport
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebTransport: WebTransport = "WebTransport".asInstanceOf[WebTransport]
+  
+  @js.native
+  sealed trait WebXR
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebXR: WebXR = "WebXR".asInstanceOf[WebXR]
   
   @js.native
   sealed trait WheelEventHandler
@@ -1028,10 +3250,28 @@ object devtoolsProtocolStrings {
   inline def WheelEventHandler: WheelEventHandler = "WheelEventHandler".asInstanceOf[WheelEventHandler]
   
   @js.native
+  sealed trait WildcardOriginNotAllowed
+    extends StObject
+       with CorsError
+  inline def WildcardOriginNotAllowed: WildcardOriginNotAllowed = "WildcardOriginNotAllowed".asInstanceOf[WildcardOriginNotAllowed]
+  
+  @js.native
   sealed trait Worker
     extends StObject
        with MixedContentResourceType
   inline def Worker: Worker = "Worker".asInstanceOf[Worker]
+  
+  @js.native
+  sealed trait WrongOrigin
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def WrongOrigin: WrongOrigin = "WrongOrigin".asInstanceOf[WrongOrigin]
+  
+  @js.native
+  sealed trait WrongVersion
+    extends StObject
+       with OriginTrialTokenStatus
+  inline def WrongVersion: WrongVersion = "WrongVersion".asInstanceOf[WrongVersion]
   
   @js.native
   sealed trait XHR
@@ -1041,10 +3281,28 @@ object devtoolsProtocolStrings {
   inline def XHR: XHR = "XHR".asInstanceOf[XHR]
   
   @js.native
+  sealed trait XHRJSONEncodingDetection
+    extends StObject
+       with DeprecationIssueType
+  inline def XHRJSONEncodingDetection: XHRJSONEncodingDetection = "XHRJSONEncodingDetection".asInstanceOf[XHRJSONEncodingDetection]
+  
+  @js.native
   sealed trait XMLHttpRequest
     extends StObject
        with MixedContentResourceType
   inline def XMLHttpRequest: XMLHttpRequest = "XMLHttpRequest".asInstanceOf[XMLHttpRequest]
+  
+  @js.native
+  sealed trait XMLHttpRequestSynchronousInNonWorkerOutsideBeforeUnload
+    extends StObject
+       with DeprecationIssueType
+  inline def XMLHttpRequestSynchronousInNonWorkerOutsideBeforeUnload: XMLHttpRequestSynchronousInNonWorkerOutsideBeforeUnload = "XMLHttpRequestSynchronousInNonWorkerOutsideBeforeUnload".asInstanceOf[XMLHttpRequestSynchronousInNonWorkerOutsideBeforeUnload]
+  
+  @js.native
+  sealed trait XRSupportsSession
+    extends StObject
+       with DeprecationIssueType
+  inline def XRSupportsSession: XRSupportsSession = "XRSupportsSession".asInstanceOf[XRSupportsSession]
   
   @js.native
   sealed trait XSLT
@@ -1057,6 +3315,24 @@ object devtoolsProtocolStrings {
     extends StObject
        with AutomationRate
   inline def `a-rate`: `a-rate` = "a-rate".asInstanceOf[`a-rate`]
+  
+  @js.native
+  sealed trait aa
+    extends StObject
+       with ContrastAlgorithm
+  inline def aa: aa = "aa".asInstanceOf[aa]
+  
+  @js.native
+  sealed trait aaa
+    extends StObject
+       with ContrastAlgorithm
+  inline def aaa: aaa = "aaa".asInstanceOf[aaa]
+  
+  @js.native
+  sealed trait accelerometer
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
   
   @js.native
   sealed trait accepted extends StObject
@@ -1081,10 +3357,10 @@ object devtoolsProtocolStrings {
   inline def achromatopsia: achromatopsia = "achromatopsia".asInstanceOf[achromatopsia]
   
   @js.native
-  sealed trait activated
+  sealed trait activated_
     extends StObject
        with ServiceWorkerVersionStatus
-  inline def activated: activated = "activated".asInstanceOf[activated]
+  inline def activated_ : activated_ = "activated".asInstanceOf[activated_]
   
   @js.native
   sealed trait activating
@@ -1139,22 +3415,29 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait all
     extends StObject
+       with EnableRequestIncludeWhitespace
        with SetPauseOnExceptionsRequestState
        with StorageType
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait allow
-    extends StObject
-       with SetDownloadBehaviorRequestBehavior
-       with typings.devtoolsProtocol.mod.Protocol.Browser.SetDownloadBehaviorRequestBehavior
-  inline def allow: allow = "allow".asInstanceOf[allow]
-  
-  @js.native
   sealed trait allowAndName
     extends StObject
-       with typings.devtoolsProtocol.mod.Protocol.Browser.SetDownloadBehaviorRequestBehavior
+       with SetDownloadBehaviorRequestBehavior
   inline def allowAndName: allowAndName = "allowAndName".asInstanceOf[allowAndName]
+  
+  @js.native
+  sealed trait allow_
+    extends StObject
+       with typings.devtoolsProtocol.mod.Protocol.Page.SetDownloadBehaviorRequestBehavior
+       with SetDownloadBehaviorRequestBehavior
+  inline def allow_ : allow_ = "allow".asInstanceOf[allow_]
+  
+  @js.native
+  sealed trait `ambient-light-sensor`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ambient-light-sensor`: `ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[`ambient-light-sensor`]
   
   @js.native
   sealed trait ambiguous
@@ -1187,16 +3470,18 @@ object devtoolsProtocolStrings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
+  sealed trait apca
+    extends StObject
+       with ContrastAlgorithm
+  inline def apca: apca = "apca".asInstanceOf[apca]
+  
+  @js.native
   sealed trait appcache
     extends StObject
        with ConsoleMessageSource
        with LogEntrySource
        with StorageType
   inline def appcache: appcache = "appcache".asInstanceOf[appcache]
-  
-  @js.native
-  sealed trait applicationCacheStatusUpdated extends StObject
-  inline def applicationCacheStatusUpdated: applicationCacheStatusUpdated = "applicationCacheStatusUpdated".asInstanceOf[applicationCacheStatusUpdated]
   
   @js.native
   sealed trait array
@@ -1206,12 +3491,16 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait arraybuffer
     extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
@@ -1252,6 +3541,12 @@ object devtoolsProtocolStrings {
   inline def attributeRemoved: attributeRemoved = "attributeRemoved".asInstanceOf[attributeRemoved]
   
   @js.native
+  sealed trait `attribution-reporting`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `attribution-reporting`: `attribution-reporting` = "attribution-reporting".asInstanceOf[`attribution-reporting`]
+  
+  @js.native
   sealed trait audioCapture
     extends StObject
        with PermissionType
@@ -1286,6 +3581,12 @@ object devtoolsProtocolStrings {
   inline def authRequired: authRequired = "authRequired".asInstanceOf[authRequired]
   
   @js.native
+  sealed trait auto
+    extends StObject
+       with TracingBackend
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
   sealed trait auto_bookmark
     extends StObject
        with TransitionType
@@ -1304,10 +3605,34 @@ object devtoolsProtocolStrings {
   inline def auto_toplevel: auto_toplevel = "auto_toplevel".asInstanceOf[auto_toplevel]
   
   @js.native
+  sealed trait autoaccept
+    extends StObject
+       with SetSPCTransactionModeRequestMode
+  inline def autoaccept: autoaccept = "autoaccept".asInstanceOf[autoaccept]
+  
+  @js.native
   sealed trait autocomplete
     extends StObject
        with AXPropertyName
   inline def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
+  
+  @js.native
+  sealed trait autoplay
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
+  
+  @js.native
+  sealed trait autoreject
+    extends StObject
+       with SetSPCTransactionModeRequestMode
+  inline def autoreject: autoreject = "autoreject".asInstanceOf[autoreject]
+  
+  @js.native
+  sealed trait avif
+    extends StObject
+       with DisabledImageType
+  inline def avif: avif = "avif".asInstanceOf[avif]
   
   @js.native
   sealed trait back
@@ -1316,10 +3641,20 @@ object devtoolsProtocolStrings {
   inline def back: back = "back".asInstanceOf[back]
   
   @js.native
+  sealed trait backForwardCacheNotUsed extends StObject
+  inline def backForwardCacheNotUsed: backForwardCacheNotUsed = "backForwardCacheNotUsed".asInstanceOf[backForwardCacheNotUsed]
+  
+  @js.native
   sealed trait backdrop
     extends StObject
        with PseudoType
   inline def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
+  
+  @js.native
+  sealed trait background
+    extends StObject
+       with MemoryDumpLevelOfDetail
+  inline def background: background = "background".asInstanceOf[background]
   
   @js.native
   sealed trait backgroundFetch
@@ -1376,11 +3711,18 @@ object devtoolsProtocolStrings {
   inline def beforeunload: beforeunload = "beforeunload".asInstanceOf[beforeunload]
   
   @js.native
+  sealed trait bid
+    extends StObject
+       with InterestGroupAccessType
+  inline def bid: bid = "bid".asInstanceOf[bid]
+  
+  @js.native
   sealed trait bigint
     extends StObject
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
@@ -1421,6 +3763,7 @@ object devtoolsProtocolStrings {
   sealed trait bluetooth
     extends StObject
        with ConnectionType
+       with PermissionsPolicyFeature
   inline def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
   
   @js.native
@@ -1436,6 +3779,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
@@ -1445,8 +3789,20 @@ object devtoolsProtocolStrings {
   inline def booleanOrUndefined: booleanOrUndefined = "booleanOrUndefined".asInstanceOf[booleanOrUndefined]
   
   @js.native
+  sealed trait br
+    extends StObject
+       with ContentEncoding
+  inline def br: br = "br".asInstanceOf[br]
+  
+  @js.native
   sealed trait breakpointResolved extends StObject
   inline def breakpointResolved: breakpointResolved = "breakpointResolved".asInstanceOf[breakpointResolved]
+  
+  @js.native
+  sealed trait `browsing-topics`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `browsing-topics`: `browsing-topics` = "browsing-topics".asInstanceOf[`browsing-topics`]
   
   @js.native
   sealed trait bufferUsage extends StObject
@@ -1491,16 +3847,23 @@ object devtoolsProtocolStrings {
   inline def call: call = "call".asInstanceOf[call]
   
   @js.native
+  sealed trait camera
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def camera: camera = "camera".asInstanceOf[camera]
+  
+  @js.native
   sealed trait cancel
     extends StObject
        with CertificateErrorAction
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait canceled
+  sealed trait canceled_
     extends StObject
        with DownloadProgressEventState
-  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
+       with typings.devtoolsProtocol.mod.Protocol.Browser.DownloadProgressEventState
+  inline def canceled_ : canceled_ = "canceled".asInstanceOf[canceled_]
   
   @js.native
   sealed trait captureAreaScreenshot
@@ -1537,6 +3900,138 @@ object devtoolsProtocolStrings {
   inline def certificateError: certificateError = "certificateError".asInstanceOf[certificateError]
   
   @js.native
+  sealed trait `ch-device-memory`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-device-memory`: `ch-device-memory` = "ch-device-memory".asInstanceOf[`ch-device-memory`]
+  
+  @js.native
+  sealed trait `ch-downlink`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-downlink`: `ch-downlink` = "ch-downlink".asInstanceOf[`ch-downlink`]
+  
+  @js.native
+  sealed trait `ch-dpr`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-dpr`: `ch-dpr` = "ch-dpr".asInstanceOf[`ch-dpr`]
+  
+  @js.native
+  sealed trait `ch-ect`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ect`: `ch-ect` = "ch-ect".asInstanceOf[`ch-ect`]
+  
+  @js.native
+  sealed trait `ch-prefers-color-scheme`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-prefers-color-scheme`: `ch-prefers-color-scheme` = "ch-prefers-color-scheme".asInstanceOf[`ch-prefers-color-scheme`]
+  
+  @js.native
+  sealed trait `ch-rtt`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-rtt`: `ch-rtt` = "ch-rtt".asInstanceOf[`ch-rtt`]
+  
+  @js.native
+  sealed trait `ch-save-data`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-save-data`: `ch-save-data` = "ch-save-data".asInstanceOf[`ch-save-data`]
+  
+  @js.native
+  sealed trait `ch-ua`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua`: `ch-ua` = "ch-ua".asInstanceOf[`ch-ua`]
+  
+  @js.native
+  sealed trait `ch-ua-arch`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-arch`: `ch-ua-arch` = "ch-ua-arch".asInstanceOf[`ch-ua-arch`]
+  
+  @js.native
+  sealed trait `ch-ua-bitness`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-bitness`: `ch-ua-bitness` = "ch-ua-bitness".asInstanceOf[`ch-ua-bitness`]
+  
+  @js.native
+  sealed trait `ch-ua-full`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-full`: `ch-ua-full` = "ch-ua-full".asInstanceOf[`ch-ua-full`]
+  
+  @js.native
+  sealed trait `ch-ua-full-version`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-full-version`: `ch-ua-full-version` = "ch-ua-full-version".asInstanceOf[`ch-ua-full-version`]
+  
+  @js.native
+  sealed trait `ch-ua-full-version-list`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-full-version-list`: `ch-ua-full-version-list` = "ch-ua-full-version-list".asInstanceOf[`ch-ua-full-version-list`]
+  
+  @js.native
+  sealed trait `ch-ua-mobile`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-mobile`: `ch-ua-mobile` = "ch-ua-mobile".asInstanceOf[`ch-ua-mobile`]
+  
+  @js.native
+  sealed trait `ch-ua-model`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-model`: `ch-ua-model` = "ch-ua-model".asInstanceOf[`ch-ua-model`]
+  
+  @js.native
+  sealed trait `ch-ua-platform`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-platform`: `ch-ua-platform` = "ch-ua-platform".asInstanceOf[`ch-ua-platform`]
+  
+  @js.native
+  sealed trait `ch-ua-platform-version`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-platform-version`: `ch-ua-platform-version` = "ch-ua-platform-version".asInstanceOf[`ch-ua-platform-version`]
+  
+  @js.native
+  sealed trait `ch-ua-reduced`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-reduced`: `ch-ua-reduced` = "ch-ua-reduced".asInstanceOf[`ch-ua-reduced`]
+  
+  @js.native
+  sealed trait `ch-ua-wow64`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-ua-wow64`: `ch-ua-wow64` = "ch-ua-wow64".asInstanceOf[`ch-ua-wow64`]
+  
+  @js.native
+  sealed trait `ch-viewport-height`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-viewport-height`: `ch-viewport-height` = "ch-viewport-height".asInstanceOf[`ch-viewport-height`]
+  
+  @js.native
+  sealed trait `ch-viewport-width`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-viewport-width`: `ch-viewport-width` = "ch-viewport-width".asInstanceOf[`ch-viewport-width`]
+  
+  @js.native
+  sealed trait `ch-width`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-width`: `ch-width` = "ch-width".asInstanceOf[`ch-width`]
+  
+  @js.native
   sealed trait char
     extends StObject
        with DispatchKeyEventRequestType
@@ -1571,6 +4066,12 @@ object devtoolsProtocolStrings {
   inline def childNodeRemoved: childNodeRemoved = "childNodeRemoved".asInstanceOf[childNodeRemoved]
   
   @js.native
+  sealed trait chrome
+    extends StObject
+       with TracingBackend
+  inline def chrome: chrome = "chrome".asInstanceOf[chrome]
+  
+  @js.native
   sealed trait `clamped-max`
     extends StObject
        with ChannelCountMode
@@ -1583,6 +4084,18 @@ object devtoolsProtocolStrings {
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
+  sealed trait `clipboard-read`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `clipboard-read`: `clipboard-read` = "clipboard-read".asInstanceOf[`clipboard-read`]
+  
+  @js.native
+  sealed trait `clipboard-write`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `clipboard-write`: `clipboard-write` = "clipboard-write".asInstanceOf[`clipboard-write`]
+  
+  @js.native
   sealed trait clipboardReadWrite
     extends StObject
        with PermissionType
@@ -1593,6 +4106,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionType
   inline def clipboardSanitizedWrite: clipboardSanitizedWrite = "clipboardSanitizedWrite".asInstanceOf[clipboardSanitizedWrite]
+  
+  @js.native
+  sealed trait closeTabSearch
+    extends StObject
+       with BrowserCommandId
+  inline def closeTabSearch: closeTabSearch = "closeTabSearch".asInstanceOf[closeTabSearch]
   
   @js.native
   sealed trait closed
@@ -1614,12 +4133,6 @@ object devtoolsProtocolStrings {
   inline def `coep-frame-resource-needs-coep-header`: `coep-frame-resource-needs-coep-header` = "coep-frame-resource-needs-coep-header".asInstanceOf[`coep-frame-resource-needs-coep-header`]
   
   @js.native
-  sealed trait `collapsed-by-client`
-    extends StObject
-       with BlockedReason
-  inline def `collapsed-by-client`: `collapsed-by-client` = "collapsed-by-client".asInstanceOf[`collapsed-by-client`]
-  
-  @js.native
   sealed trait compilationCacheProduced extends StObject
   inline def compilationCacheProduced: compilationCacheProduced = "compilationCacheProduced".asInstanceOf[compilationCacheProduced]
   
@@ -1627,6 +4140,7 @@ object devtoolsProtocolStrings {
   sealed trait completed
     extends StObject
        with DownloadProgressEventState
+       with typings.devtoolsProtocol.mod.Protocol.Browser.DownloadProgressEventState
   inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
@@ -1750,6 +4264,12 @@ object devtoolsProtocolStrings {
   inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
+  sealed trait `cross-origin-isolated`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `cross-origin-isolated`: `cross-origin-isolated` = "cross-origin-isolated".asInstanceOf[`cross-origin-isolated`]
+  
+  @js.native
   sealed trait csp
     extends StObject
        with BlockedReason
@@ -1760,6 +4280,18 @@ object devtoolsProtocolStrings {
     extends StObject
        with AuthenticatorProtocol
   inline def ctap2: ctap2 = "ctap2".asInstanceOf[ctap2]
+  
+  @js.native
+  sealed trait ctap2_0
+    extends StObject
+       with Ctap2Version
+  inline def ctap2_0: ctap2_0 = "ctap2_0".asInstanceOf[ctap2_0]
+  
+  @js.native
+  sealed trait ctap2_1
+    extends StObject
+       with Ctap2Version
+  inline def ctap2_1: ctap2_1 = "ctap2_1".asInstanceOf[ctap2_1]
   
   @js.native
   sealed trait current
@@ -1774,6 +4306,12 @@ object devtoolsProtocolStrings {
   inline def currentTab: currentTab = "currentTab".asInstanceOf[currentTab]
   
   @js.native
+  sealed trait dashed
+    extends StObject
+       with LineStylePattern
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
+  
+  @js.native
   sealed trait dataCollected extends StObject
   inline def dataCollected: dataCollected = "dataCollected".asInstanceOf[dataCollected]
   
@@ -1784,6 +4322,8 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait dataview
     extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
        with RemoteObjectSubtype
   inline def dataview: dataview = "dataview".asInstanceOf[dataview]
   
@@ -1794,6 +4334,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
@@ -1821,9 +4362,15 @@ object devtoolsProtocolStrings {
     extends StObject
        with CachedResponseType
        with GestureSourceType
+       with typings.devtoolsProtocol.mod.Protocol.Page.SetDownloadBehaviorRequestBehavior
        with SetDownloadBehaviorRequestBehavior
-       with typings.devtoolsProtocol.mod.Protocol.Browser.SetDownloadBehaviorRequestBehavior
   inline def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @js.native
+  sealed trait deflate
+    extends StObject
+       with ContentEncoding
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
   sealed trait denied
@@ -1834,8 +4381,8 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait deny
     extends StObject
+       with typings.devtoolsProtocol.mod.Protocol.Page.SetDownloadBehaviorRequestBehavior
        with SetDownloadBehaviorRequestBehavior
-       with typings.devtoolsProtocol.mod.Protocol.Browser.SetDownloadBehaviorRequestBehavior
   inline def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
@@ -1852,6 +4399,12 @@ object devtoolsProtocolStrings {
   inline def describedby: describedby = "describedby".asInstanceOf[describedby]
   
   @js.native
+  sealed trait description
+    extends StObject
+       with AXValueNativeSourceType
+  inline def description: description = "description".asInstanceOf[description]
+  
+  @js.native
   sealed trait desktop
     extends StObject
        with SetEmitTouchEventsForMouseRequestConfiguration
@@ -1865,6 +4418,12 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait detachedFromTarget extends StObject
   inline def detachedFromTarget: detachedFromTarget = "detachedFromTarget".asInstanceOf[detachedFromTarget]
+  
+  @js.native
+  sealed trait detailed
+    extends StObject
+       with MemoryDumpLevelOfDetail
+  inline def detailed: detailed = "detailed".asInstanceOf[detailed]
   
   @js.native
   sealed trait details
@@ -1883,6 +4442,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ConsoleAPICalledEventType
   inline def dir: dir = "dir".asInstanceOf[dir]
+  
+  @js.native
+  sealed trait `direct-sockets`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `direct-sockets`: `direct-sockets` = "direct-sockets".asInstanceOf[`direct-sockets`]
   
   @js.native
   sealed trait dirxml
@@ -1909,8 +4474,30 @@ object devtoolsProtocolStrings {
   inline def discrete: discrete = "discrete".asInstanceOf[discrete]
   
   @js.native
+  sealed trait `display-capture`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `display-capture`: `display-capture` = "display-capture".asInstanceOf[`display-capture`]
+  
+  @js.native
+  sealed trait displayCapture
+    extends StObject
+       with PermissionType
+  inline def displayCapture: displayCapture = "displayCapture".asInstanceOf[displayCapture]
+  
+  @js.native
   sealed trait distributedNodesUpdated extends StObject
   inline def distributedNodesUpdated: distributedNodesUpdated = "distributedNodesUpdated".asInstanceOf[distributedNodesUpdated]
+  
+  @js.native
+  sealed trait `document-domain`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `document-domain`: `document-domain` = "document-domain".asInstanceOf[`document-domain`]
+  
+  @js.native
+  sealed trait documentOpened extends StObject
+  inline def documentOpened: documentOpened = "documentOpened".asInstanceOf[documentOpened]
   
   @js.native
   sealed trait documentUpdated extends StObject
@@ -1943,6 +4530,12 @@ object devtoolsProtocolStrings {
   inline def domStorageItemsCleared: domStorageItemsCleared = "domStorageItemsCleared".asInstanceOf[domStorageItemsCleared]
   
   @js.native
+  sealed trait dotted
+    extends StObject
+       with LineStylePattern
+  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
+  
+  @js.native
   sealed trait downloadProgress extends StObject
   inline def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
   
@@ -1955,6 +4548,34 @@ object devtoolsProtocolStrings {
     extends StObject
        with ClientNavigationDisposition
   inline def download_ : download_ = "download".asInstanceOf[download_]
+  
+  @js.native
+  sealed trait dragCancel
+    extends StObject
+       with DispatchDragEventRequestType
+  inline def dragCancel: dragCancel = "dragCancel".asInstanceOf[dragCancel]
+  
+  @js.native
+  sealed trait dragEnter
+    extends StObject
+       with DispatchDragEventRequestType
+  inline def dragEnter: dragEnter = "dragEnter".asInstanceOf[dragEnter]
+  
+  @js.native
+  sealed trait dragIntercepted extends StObject
+  inline def dragIntercepted: dragIntercepted = "dragIntercepted".asInstanceOf[dragIntercepted]
+  
+  @js.native
+  sealed trait dragOver
+    extends StObject
+       with DispatchDragEventRequestType
+  inline def dragOver: dragOver = "dragOver".asInstanceOf[dragOver]
+  
+  @js.native
+  sealed trait drop
+    extends StObject
+       with DispatchDragEventRequestType
+  inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
   sealed trait durableStorage
@@ -1973,6 +4594,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXPropertyName
   inline def editable: editable = "editable".asInstanceOf[editable]
+  
+  @js.native
+  sealed trait `encrypted-media`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `encrypted-media`: `encrypted-media` = "encrypted-media".asInstanceOf[`encrypted-media`]
   
   @js.native
   sealed trait endGroup
@@ -1995,6 +4622,7 @@ object devtoolsProtocolStrings {
        with PlayerMessageLevel
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
@@ -2034,6 +4662,18 @@ object devtoolsProtocolStrings {
   inline def exceptionThrown: exceptionThrown = "exceptionThrown".asInstanceOf[exceptionThrown]
   
   @js.native
+  sealed trait `execution-while-not-rendered`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `execution-while-not-rendered`: `execution-while-not-rendered` = "execution-while-not-rendered".asInstanceOf[`execution-while-not-rendered`]
+  
+  @js.native
+  sealed trait `execution-while-out-of-viewport`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `execution-while-out-of-viewport`: `execution-while-out-of-viewport` = "execution-while-out-of-viewport".asInstanceOf[`execution-while-out-of-viewport`]
+  
+  @js.native
   sealed trait executionContextCreated extends StObject
   inline def executionContextCreated: executionContextCreated = "executionContextCreated".asInstanceOf[executionContextCreated]
   
@@ -2058,28 +4698,16 @@ object devtoolsProtocolStrings {
   inline def explicit: explicit = "explicit".asInstanceOf[explicit]
   
   @js.native
-  sealed trait externref
-    extends StObject
-       with RemoteObjectSubtype
-  inline def externref: externref = "externref".asInstanceOf[externref]
-  
-  @js.native
-  sealed trait f32
-    extends StObject
-       with RemoteObjectSubtype
-  inline def f32: f32 = "f32".asInstanceOf[f32]
-  
-  @js.native
-  sealed trait f64
-    extends StObject
-       with RemoteObjectSubtype
-  inline def f64: f64 = "f64".asInstanceOf[f64]
-  
-  @js.native
   sealed trait `fallback-code`
     extends StObject
        with ServiceWorkerResponseSource
   inline def `fallback-code`: `fallback-code` = "fallback-code".asInstanceOf[`fallback-code`]
+  
+  @js.native
+  sealed trait `federated-credentials`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `federated-credentials`: `federated-credentials` = "federated-credentials".asInstanceOf[`federated-credentials`]
   
   @js.native
   sealed trait figcaption
@@ -2126,6 +4754,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXPropertyName
   inline def flowto: flowto = "flowto".asInstanceOf[flowto]
+  
+  @js.native
+  sealed trait `focus-without-user-activation`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `focus-without-user-activation`: `focus-without-user-activation` = "focus-without-user-activation".asInstanceOf[`focus-without-user-activation`]
   
   @js.native
   sealed trait focusable
@@ -2204,6 +4838,12 @@ object devtoolsProtocolStrings {
   inline def frameStoppedLoading: frameStoppedLoading = "frameStoppedLoading".asInstanceOf[frameStoppedLoading]
   
   @js.native
+  sealed trait frobulate
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def frobulate: frobulate = "frobulate".asInstanceOf[frobulate]
+  
+  @js.native
   sealed trait frozen
     extends StObject
        with SetWebLifecycleStateRequestState
@@ -2212,6 +4852,7 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait fullscreen
     extends StObject
+       with PermissionsPolicyFeature
        with WindowState
   inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
@@ -2221,7 +4862,14 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
+  sealed trait gamepad
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
   
   @js.native
   sealed trait generated
@@ -2241,6 +4889,7 @@ object devtoolsProtocolStrings {
   sealed trait geolocation
     extends StObject
        with PermissionType
+       with PermissionsPolicyFeature
   inline def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
   
   @js.native
@@ -2250,14 +4899,27 @@ object devtoolsProtocolStrings {
   inline def global: global = "global".asInstanceOf[global]
   
   @js.native
+  sealed trait `grammar-error`
+    extends StObject
+       with PseudoType
+  inline def `grammar-error`: `grammar-error` = "grammar-error".asInstanceOf[`grammar-error`]
+  
+  @js.native
   sealed trait granted
     extends StObject
        with PermissionSetting
   inline def granted: granted = "granted".asInstanceOf[granted]
   
   @js.native
+  sealed trait gyroscope
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def gyroscope: gyroscope = "gyroscope".asInstanceOf[gyroscope]
+  
+  @js.native
   sealed trait gzip
     extends StObject
+       with ContentEncoding
        with StreamCompression
   inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
@@ -2284,6 +4946,12 @@ object devtoolsProtocolStrings {
   inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
+  sealed trait hid
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def hid: hid = "hid".asInstanceOf[hid]
+  
+  @js.native
   sealed trait hidden
     extends StObject
        with AXPropertyName
@@ -2294,6 +4962,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXPropertyName
   inline def hiddenRoot: hiddenRoot = "hiddenRoot".asInstanceOf[hiddenRoot]
+  
+  @js.native
+  sealed trait highlight
+    extends StObject
+       with PseudoType
+  inline def highlight: highlight = "highlight".asInstanceOf[highlight]
   
   @js.native
   sealed trait horizontal
@@ -2320,16 +4994,16 @@ object devtoolsProtocolStrings {
   inline def httpHeaderRefresh: httpHeaderRefresh = "httpHeaderRefresh".asInstanceOf[httpHeaderRefresh]
   
   @js.native
-  sealed trait i32
+  sealed trait hwb
     extends StObject
-       with RemoteObjectSubtype
-  inline def i32: i32 = "i32".asInstanceOf[i32]
+       with ColorFormat
+  inline def hwb: hwb = "hwb".asInstanceOf[hwb]
   
   @js.native
-  sealed trait i64
+  sealed trait `idle-detection`
     extends StObject
-       with RemoteObjectSubtype
-  inline def i64: i64 = "i64".asInstanceOf[i64]
+       with PermissionsPolicyFeature
+  inline def `idle-detection`: `idle-detection` = "idle-detection".asInstanceOf[`idle-detection`]
   
   @js.native
   sealed trait idleDetection
@@ -2365,6 +5039,7 @@ object devtoolsProtocolStrings {
   sealed trait inProgress
     extends StObject
        with DownloadProgressEventState
+       with typings.devtoolsProtocol.mod.Protocol.Browser.DownloadProgressEventState
   inline def inProgress: inProgress = "inProgress".asInstanceOf[inProgress]
   
   @js.native
@@ -2414,16 +5089,16 @@ object devtoolsProtocolStrings {
   inline def `input-list-button`: `input-list-button` = "input-list-button".asInstanceOf[`input-list-button`]
   
   @js.native
-  sealed trait insecure
-    extends StObject
-       with SecurityState
-  inline def insecure: insecure = "insecure".asInstanceOf[insecure]
-  
-  @js.native
   sealed trait `insecure-broken`
     extends StObject
        with SecurityState
   inline def `insecure-broken`: `insecure-broken` = "insecure-broken".asInstanceOf[`insecure-broken`]
+  
+  @js.native
+  sealed trait insecure_
+    extends StObject
+       with SecurityState
+  inline def insecure_ : insecure_ = "insecure".asInstanceOf[insecure_]
   
   @js.native
   sealed trait inspectModeCanceled extends StObject
@@ -2467,6 +5142,22 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXValueType
   inline def integer: integer = "integer".asInstanceOf[integer]
+  
+  @js.native
+  sealed trait `interest-cohort`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `interest-cohort`: `interest-cohort` = "interest-cohort".asInstanceOf[`interest-cohort`]
+  
+  @js.native
+  sealed trait interestGroupAccessed extends StObject
+  inline def interestGroupAccessed: interestGroupAccessed = "interestGroupAccessed".asInstanceOf[interestGroupAccessed]
+  
+  @js.native
+  sealed trait interest_groups
+    extends StObject
+       with StorageType
+  inline def interest_groups: interest_groups = "interest_groups".asInstanceOf[interest_groups]
   
   @js.native
   sealed trait internal
@@ -2532,6 +5223,18 @@ object devtoolsProtocolStrings {
   inline def javascript_ : javascript_ = "javascript".asInstanceOf[javascript_]
   
   @js.native
+  sealed trait join
+    extends StObject
+       with InterestGroupAccessType
+  inline def join: join = "join".asInstanceOf[join]
+  
+  @js.native
+  sealed trait `join-ad-interest-group`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `join-ad-interest-group`: `join-ad-interest-group` = "join-ad-interest-group".asInstanceOf[`join-ad-interest-group`]
+  
+  @js.native
   sealed trait jpeg
     extends StObject
        with CaptureScreenshotRequestFormat
@@ -2548,16 +5251,34 @@ object devtoolsProtocolStrings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
+  sealed trait jxl
+    extends StObject
+       with DisabledImageType
+  inline def jxl: jxl = "jxl".asInstanceOf[jxl]
+  
+  @js.native
   sealed trait `k-rate`
     extends StObject
        with AutomationRate
   inline def `k-rate`: `k-rate` = "k-rate".asInstanceOf[`k-rate`]
   
   @js.native
+  sealed trait kDigitalAssetLinks
+    extends StObject
+       with TwaQualityEnforcementViolationType
+  inline def kDigitalAssetLinks: kDigitalAssetLinks = "kDigitalAssetLinks".asInstanceOf[kDigitalAssetLinks]
+  
+  @js.native
   sealed trait kEvalViolation
     extends StObject
        with ContentSecurityPolicyViolationType
   inline def kEvalViolation: kEvalViolation = "kEvalViolation".asInstanceOf[kEvalViolation]
+  
+  @js.native
+  sealed trait kHttpError
+    extends StObject
+       with TwaQualityEnforcementViolationType
+  inline def kHttpError: kHttpError = "kHttpError".asInstanceOf[kHttpError]
   
   @js.native
   sealed trait kInlineViolation
@@ -2584,6 +5305,18 @@ object devtoolsProtocolStrings {
   inline def kURLViolation: kURLViolation = "kURLViolation".asInstanceOf[kURLViolation]
   
   @js.native
+  sealed trait kUnavailableOffline
+    extends StObject
+       with TwaQualityEnforcementViolationType
+  inline def kUnavailableOffline: kUnavailableOffline = "kUnavailableOffline".asInstanceOf[kUnavailableOffline]
+  
+  @js.native
+  sealed trait kWasmEvalViolation
+    extends StObject
+       with ContentSecurityPolicyViolationType
+  inline def kWasmEvalViolation: kWasmEvalViolation = "kWasmEvalViolation".asInstanceOf[kWasmEvalViolation]
+  
+  @js.native
   sealed trait keyDown
     extends StObject
        with DispatchKeyEventRequestType
@@ -2594,6 +5327,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with DispatchKeyEventRequestType
   inline def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
+  
+  @js.native
+  sealed trait `keyboard-map`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `keyboard-map`: `keyboard-map` = "keyboard-map".asInstanceOf[`keyboard-map`]
   
   @js.native
   sealed trait keyshortcuts
@@ -2662,6 +5401,12 @@ object devtoolsProtocolStrings {
   inline def layerTreeDidChange: layerTreeDidChange = "layerTreeDidChange".asInstanceOf[layerTreeDidChange]
   
   @js.native
+  sealed trait leave
+    extends StObject
+       with InterestGroupAccessType
+  inline def leave: leave = "leave".asInstanceOf[leave]
+  
+  @js.native
   sealed trait left
     extends StObject
        with MouseButton
@@ -2684,6 +5429,12 @@ object devtoolsProtocolStrings {
   inline def lifecycleEvent: lifecycleEvent = "lifecycleEvent".asInstanceOf[lifecycleEvent]
   
   @js.native
+  sealed trait light
+    extends StObject
+       with MemoryDumpLevelOfDetail
+  inline def light: light = "light".asInstanceOf[light]
+  
+  @js.native
   sealed trait link
     extends StObject
        with TransitionType
@@ -2702,6 +5453,10 @@ object devtoolsProtocolStrings {
   inline def live: live = "live".asInstanceOf[live]
   
   @js.native
+  sealed trait loadComplete extends StObject
+  inline def loadComplete: loadComplete = "loadComplete".asInstanceOf[loadComplete]
+  
+  @js.native
   sealed trait loadEventFired extends StObject
   inline def loadEventFired: loadEventFired = "loadEventFired".asInstanceOf[loadEventFired]
   
@@ -2714,10 +5469,16 @@ object devtoolsProtocolStrings {
   inline def loadingFinished: loadingFinished = "loadingFinished".asInstanceOf[loadingFinished]
   
   @js.native
-  sealed trait local
+  sealed trait `local-fonts`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `local-fonts`: `local-fonts` = "local-fonts".asInstanceOf[`local-fonts`]
+  
+  @js.native
+  sealed trait local_
     extends StObject
        with ScopeType
-  inline def local: local = "local".asInstanceOf[local]
+  inline def local_ : local_ = "local".asInstanceOf[local_]
   
   @js.native
   sealed trait local_storage
@@ -2751,6 +5512,12 @@ object devtoolsProtocolStrings {
   inline def lookalike: lookalike = "lookalike".asInstanceOf[lookalike]
   
   @js.native
+  sealed trait magnetometer
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
+  
+  @js.native
   sealed trait manual_subframe
     extends StObject
        with TransitionType
@@ -2762,6 +5529,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def map: map = "map".asInstanceOf[map]
   
   @js.native
@@ -2793,12 +5561,6 @@ object devtoolsProtocolStrings {
   inline def mediaRule: mediaRule = "mediaRule".asInstanceOf[mediaRule]
   
   @js.native
-  sealed trait media_error
-    extends StObject
-       with PlayerErrorType
-  inline def media_error: media_error = "media_error".asInstanceOf[media_error]
-  
-  @js.native
   sealed trait messageAdded extends StObject
   inline def messageAdded: messageAdded = "messageAdded".asInstanceOf[messageAdded]
   
@@ -2817,6 +5579,12 @@ object devtoolsProtocolStrings {
   inline def mhtml: mhtml = "mhtml".asInstanceOf[mhtml]
   
   @js.native
+  sealed trait microphone
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def microphone: microphone = "microphone".asInstanceOf[microphone]
+  
+  @js.native
   sealed trait middle
     extends StObject
        with MouseButton
@@ -2826,6 +5594,7 @@ object devtoolsProtocolStrings {
   sealed trait midi
     extends StObject
        with PermissionType
+       with PermissionsPolicyFeature
   inline def midi: midi = "midi".asInstanceOf[midi]
   
   @js.native
@@ -2935,10 +5704,6 @@ object devtoolsProtocolStrings {
   inline def network: network = "network".asInstanceOf[network]
   
   @js.native
-  sealed trait networkStateUpdated extends StObject
-  inline def networkStateUpdated: networkStateUpdated = "networkStateUpdated".asInstanceOf[networkStateUpdated]
-  
-  @js.native
   sealed trait neutral
     extends StObject
        with SecurityState
@@ -3000,6 +5765,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def node: node = "node".asInstanceOf[node]
   
   @js.native
@@ -3035,15 +5801,21 @@ object devtoolsProtocolStrings {
   inline def nodesDisconnected: nodesDisconnected = "nodesDisconnected".asInstanceOf[nodesDisconnected]
   
   @js.native
+  sealed trait nodesUpdated extends StObject
+  inline def nodesUpdated: nodesUpdated = "nodesUpdated".asInstanceOf[nodesUpdated]
+  
+  @js.native
   sealed trait none_
     extends StObject
        with AdFrameType
        with ConnectionType
+       with EnableRequestIncludeWhitespace
        with InspectMode
        with MixedContentType
        with MouseButton
        with SetEmulatedVisionDeficiencyRequestType
        with SetPauseOnExceptionsRequestState
+       with SetSPCTransactionModeRequestMode
        with StreamCompression
   inline def none_ : none_ = "none".asInstanceOf[none_]
   
@@ -3073,6 +5845,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
@@ -3083,6 +5856,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
@@ -3091,6 +5865,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
@@ -3116,6 +5891,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ShadowRootType
   inline def open: open = "open".asInstanceOf[open]
+  
+  @js.native
+  sealed trait openTabSearch
+    extends StObject
+       with BrowserCommandId
+  inline def openTabSearch: openTabSearch = "openTabSearch".asInstanceOf[openTabSearch]
   
   @js.native
   sealed trait `optionally-blockable`
@@ -3164,10 +5945,46 @@ object devtoolsProtocolStrings {
   inline def other_ : other_ = "other".asInstanceOf[other_]
   
   @js.native
+  sealed trait `otp-credentials`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `otp-credentials`: `otp-credentials` = "otp-credentials".asInstanceOf[`otp-credentials`]
+  
+  @js.native
   sealed trait owns
     extends StObject
        with AXPropertyName
   inline def owns: owns = "owns".asInstanceOf[owns]
+  
+  @js.native
+  sealed trait `page-transition`
+    extends StObject
+       with PseudoType
+  inline def `page-transition`: `page-transition` = "page-transition".asInstanceOf[`page-transition`]
+  
+  @js.native
+  sealed trait `page-transition-container`
+    extends StObject
+       with PseudoType
+  inline def `page-transition-container`: `page-transition-container` = "page-transition-container".asInstanceOf[`page-transition-container`]
+  
+  @js.native
+  sealed trait `page-transition-image-wrapper`
+    extends StObject
+       with PseudoType
+  inline def `page-transition-image-wrapper`: `page-transition-image-wrapper` = "page-transition-image-wrapper".asInstanceOf[`page-transition-image-wrapper`]
+  
+  @js.native
+  sealed trait `page-transition-incoming-image`
+    extends StObject
+       with PseudoType
+  inline def `page-transition-incoming-image`: `page-transition-incoming-image` = "page-transition-incoming-image".asInstanceOf[`page-transition-incoming-image`]
+  
+  @js.native
+  sealed trait `page-transition-outgoing-image`
+    extends StObject
+       with PseudoType
+  inline def `page-transition-outgoing-image`: `page-transition-outgoing-image` = "page-transition-outgoing-image".asInstanceOf[`page-transition-outgoing-image`]
   
   @js.native
   sealed trait pageBlockInterstitial
@@ -3198,6 +6015,12 @@ object devtoolsProtocolStrings {
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
+  sealed trait payment
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def payment: payment = "payment".asInstanceOf[payment]
+  
+  @js.native
   sealed trait paymentHandler
     extends StObject
        with PermissionType
@@ -3218,10 +6041,10 @@ object devtoolsProtocolStrings {
   inline def periodicBackgroundSync: periodicBackgroundSync = "periodicBackgroundSync".asInstanceOf[periodicBackgroundSync]
   
   @js.native
-  sealed trait pipeline_error
+  sealed trait `picture-in-picture`
     extends StObject
-       with PlayerErrorType
-  inline def pipeline_error: pipeline_error = "pipeline_error".asInstanceOf[pipeline_error]
+       with PermissionsPolicyFeature
+  inline def `picture-in-picture`: `picture-in-picture` = "picture-in-picture".asInstanceOf[`picture-in-picture`]
   
   @js.native
   sealed trait placeholder
@@ -3275,10 +6098,20 @@ object devtoolsProtocolStrings {
   inline def preciseCoverageDeltaUpdate: preciseCoverageDeltaUpdate = "preciseCoverageDeltaUpdate".asInstanceOf[preciseCoverageDeltaUpdate]
   
   @js.native
+  sealed trait preflight_
+    extends StObject
+       with InitiatorType
+  inline def preflight_ : preflight_ = "preflight".asInstanceOf[preflight_]
+  
+  @js.native
   sealed trait preload
     extends StObject
        with InitiatorType
   inline def preload: preload = "preload".asInstanceOf[preload]
+  
+  @js.native
+  sealed trait prerenderAttemptCompleted extends StObject
+  inline def prerenderAttemptCompleted: prerenderAttemptCompleted = "prerenderAttemptCompleted".asInstanceOf[prerenderAttemptCompleted]
   
   @js.native
   sealed trait pressed
@@ -3301,7 +6134,10 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait promise
     extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def promise: promise = "promise".asInstanceOf[promise]
   
   @js.native
@@ -3338,7 +6174,10 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait proxy_
     extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def proxy_ : proxy_ = "proxy".asInstanceOf[proxy_]
   
   @js.native
@@ -3348,6 +6187,12 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait pseudoElementRemoved extends StObject
   inline def pseudoElementRemoved: pseudoElementRemoved = "pseudoElementRemoved".asInstanceOf[pseudoElementRemoved]
+  
+  @js.native
+  sealed trait `publickey-credentials-get`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `publickey-credentials-get`: `publickey-credentials-get` = "publickey-credentials-get".asInstanceOf[`publickey-credentials-get`]
   
   @js.native
   sealed trait pushMessaging
@@ -3423,6 +6268,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
@@ -3451,6 +6297,12 @@ object devtoolsProtocolStrings {
   inline def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native
+  sealed trait remove
+    extends StObject
+       with FrameDetachedEventReason
+  inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
   sealed trait rendering
     extends StObject
        with ConsoleMessageSource
@@ -3460,6 +6312,18 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait reportHeapSnapshotProgress extends StObject
   inline def reportHeapSnapshotProgress: reportHeapSnapshotProgress = "reportHeapSnapshotProgress".asInstanceOf[reportHeapSnapshotProgress]
+  
+  @js.native
+  sealed trait reportingApiEndpointsChangedForOrigin extends StObject
+  inline def reportingApiEndpointsChangedForOrigin: reportingApiEndpointsChangedForOrigin = "reportingApiEndpointsChangedForOrigin".asInstanceOf[reportingApiEndpointsChangedForOrigin]
+  
+  @js.native
+  sealed trait reportingApiReportAdded extends StObject
+  inline def reportingApiReportAdded: reportingApiReportAdded = "reportingApiReportAdded".asInstanceOf[reportingApiReportAdded]
+  
+  @js.native
+  sealed trait reportingApiReportUpdated extends StObject
+  inline def reportingApiReportUpdated: reportingApiReportUpdated = "reportingApiReportUpdated".asInstanceOf[reportingApiReportUpdated]
   
   @js.native
   sealed trait requestIntercepted extends StObject
@@ -3551,6 +6415,18 @@ object devtoolsProtocolStrings {
   inline def root: root = "root".asInstanceOf[root]
   
   @js.native
+  sealed trait rubyannotation
+    extends StObject
+       with AXValueNativeSourceType
+  inline def rubyannotation: rubyannotation = "rubyannotation".asInstanceOf[rubyannotation]
+  
+  @js.native
+  sealed trait `run-ad-auction`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `run-ad-auction`: `run-ad-auction` = "run-ad-auction".asInstanceOf[`run-ad-auction`]
+  
+  @js.native
   sealed trait running
     extends StObject
        with ContextState
@@ -3568,6 +6444,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ReferrerPolicy
   inline def sameOrigin_ : sameOrigin_ = "sameOrigin".asInstanceOf[sameOrigin_]
+  
+  @js.native
+  sealed trait `screen-wake-lock`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `screen-wake-lock`: `screen-wake-lock` = "screen-wake-lock".asInstanceOf[`screen-wake-lock`]
   
   @js.native
   sealed trait screencastFrame extends StObject
@@ -3698,6 +6580,12 @@ object devtoolsProtocolStrings {
   inline def sensors: sensors = "sensors".asInstanceOf[sensors]
   
   @js.native
+  sealed trait serial
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def serial: serial = "serial".asInstanceOf[serial]
+  
+  @js.native
   sealed trait service_workers
     extends StObject
        with StorageType
@@ -3709,6 +6597,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def set: set = "set".asInstanceOf[set]
   
   @js.native
@@ -3734,6 +6623,18 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait shadowRootPushed extends StObject
   inline def shadowRootPushed: shadowRootPushed = "shadowRootPushed".asInstanceOf[shadowRootPushed]
+  
+  @js.native
+  sealed trait `shared-autofill`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `shared-autofill`: `shared-autofill` = "shared-autofill".asInstanceOf[`shared-autofill`]
+  
+  @js.native
+  sealed trait `shared-storage`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `shared-storage`: `shared-storage` = "shared-storage".asInstanceOf[`shared-storage`]
   
   @js.native
   sealed trait showDistances
@@ -3792,6 +6693,12 @@ object devtoolsProtocolStrings {
   inline def speakers: speakers = "speakers".asInstanceOf[speakers]
   
   @js.native
+  sealed trait `spelling-error`
+    extends StObject
+       with PseudoType
+  inline def `spelling-error`: `spelling-error` = "spelling-error".asInstanceOf[`spelling-error`]
+  
+  @js.native
   sealed trait startGroup
     extends StObject
        with ConsoleAPICalledEventType
@@ -3829,6 +6736,12 @@ object devtoolsProtocolStrings {
   inline def storage: storage = "storage".asInstanceOf[storage]
   
   @js.native
+  sealed trait `storage-access`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `storage-access`: `storage-access` = "storage-access".asInstanceOf[`storage-access`]
+  
+  @js.native
   sealed trait `strict-origin`
     extends StObject
        with RequestReferrerPolicy
@@ -3861,6 +6774,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def string: string = "string".asInstanceOf[string]
   
   @js.native
@@ -3888,6 +6802,22 @@ object devtoolsProtocolStrings {
   inline def `subresource-filter`: `subresource-filter` = "subresource-filter".asInstanceOf[`subresource-filter`]
   
   @js.native
+  sealed trait subresourceWebBundleInnerResponseError extends StObject
+  inline def subresourceWebBundleInnerResponseError: subresourceWebBundleInnerResponseError = "subresourceWebBundleInnerResponseError".asInstanceOf[subresourceWebBundleInnerResponseError]
+  
+  @js.native
+  sealed trait subresourceWebBundleInnerResponseParsed extends StObject
+  inline def subresourceWebBundleInnerResponseParsed: subresourceWebBundleInnerResponseParsed = "subresourceWebBundleInnerResponseParsed".asInstanceOf[subresourceWebBundleInnerResponseParsed]
+  
+  @js.native
+  sealed trait subresourceWebBundleMetadataError extends StObject
+  inline def subresourceWebBundleMetadataError: subresourceWebBundleMetadataError = "subresourceWebBundleMetadataError".asInstanceOf[subresourceWebBundleMetadataError]
+  
+  @js.native
+  sealed trait subresourceWebBundleMetadataReceived extends StObject
+  inline def subresourceWebBundleMetadataReceived: subresourceWebBundleMetadataReceived = "subresourceWebBundleMetadataReceived".asInstanceOf[subresourceWebBundleMetadataReceived]
+  
+  @js.native
   sealed trait `subtree-modified`
     extends StObject
        with DOMBreakpointType
@@ -3900,12 +6830,31 @@ object devtoolsProtocolStrings {
   inline def suspended: suspended = "suspended".asInstanceOf[suspended]
   
   @js.native
+  sealed trait swap
+    extends StObject
+       with FrameDetachedEventReason
+  inline def swap: swap = "swap".asInstanceOf[swap]
+  
+  @js.native
   sealed trait symbol
     extends StObject
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait `sync-xhr`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `sync-xhr`: `sync-xhr` = "sync-xhr".asInstanceOf[`sync-xhr`]
+  
+  @js.native
+  sealed trait system
+    extends StObject
+       with TracingBackend
+  inline def system: system = "system".asInstanceOf[system]
   
   @js.native
   sealed trait table
@@ -3918,6 +6867,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXValueNativeSourceType
   inline def tablecaption: tablecaption = "tablecaption".asInstanceOf[tablecaption]
+  
+  @js.native
+  sealed trait `target-text`
+    extends StObject
+       with PseudoType
+  inline def `target-text`: `target-text` = "target-text".asInstanceOf[`target-text`]
   
   @js.native
   sealed trait targetCrashed extends StObject
@@ -3960,6 +6915,10 @@ object devtoolsProtocolStrings {
   inline def timeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
   
   @js.native
+  sealed trait timelineEventAdded extends StObject
+  inline def timelineEventAdded: timelineEventAdded = "timelineEventAdded".asInstanceOf[timelineEventAdded]
+  
+  @js.native
   sealed trait title
     extends StObject
        with AXValueNativeSourceType
@@ -3976,6 +6935,10 @@ object devtoolsProtocolStrings {
     extends StObject
        with AXValueType
   inline def tokenList: tokenList = "tokenList".asInstanceOf[tokenList]
+  
+  @js.native
+  sealed trait topLayerElementsUpdated extends StObject
+  inline def topLayerElementsUpdated: topLayerElementsUpdated = "topLayerElementsUpdated".asInstanceOf[topLayerElementsUpdated]
   
   @js.native
   sealed trait touch
@@ -4030,6 +6993,28 @@ object devtoolsProtocolStrings {
   inline def tritanopia: tritanopia = "tritanopia".asInstanceOf[tritanopia]
   
   @js.native
+  sealed trait `trust-token-redemption`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `trust-token-redemption`: `trust-token-redemption` = "trust-token-redemption".asInstanceOf[`trust-token-redemption`]
+  
+  @js.native
+  sealed trait trustTokenOperationDone extends StObject
+  inline def trustTokenOperationDone: trustTokenOperationDone = "trustTokenOperationDone".asInstanceOf[trustTokenOperationDone]
+  
+  @js.native
+  sealed trait `trustedtype-policy-violation`
+    extends StObject
+       with CSPViolationType
+  inline def `trustedtype-policy-violation`: `trustedtype-policy-violation` = "trustedtype-policy-violation".asInstanceOf[`trustedtype-policy-violation`]
+  
+  @js.native
+  sealed trait `trustedtype-sink-violation`
+    extends StObject
+       with CSPViolationType
+  inline def `trustedtype-sink-violation`: `trustedtype-sink-violation` = "trustedtype-sink-violation".asInstanceOf[`trustedtype-sink-violation`]
+  
+  @js.native
   sealed trait typed
     extends StObject
        with TransitionType
@@ -4038,7 +7023,10 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait typedarray
     extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def typedarray: typedarray = "typedarray".asInstanceOf[typedarray]
   
   @js.native
@@ -4059,15 +7047,22 @@ object devtoolsProtocolStrings {
        with ObjectPreviewType
        with PropertyPreviewType
        with RemoteObjectType
+       with WebDriverValueType
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait unknown
+  sealed trait unknown_
     extends StObject
        with CertificateTransparencyCompliance
        with ImageType
        with SecurityState
-  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
+  
+  @js.native
+  sealed trait unload
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
   sealed trait `unsafe-url`
@@ -4082,9 +7077,16 @@ object devtoolsProtocolStrings {
   inline def unsafeUrl: unsafeUrl = "unsafeUrl".asInstanceOf[unsafeUrl]
   
   @js.native
+  sealed trait update
+    extends StObject
+       with InterestGroupAccessType
+  inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
   sealed trait usb
     extends StObject
        with AuthenticatorTransport
+       with PermissionsPolicyFeature
   inline def usb: usb = "usb".asInstanceOf[usb]
   
   @js.native
@@ -4093,12 +7095,6 @@ object devtoolsProtocolStrings {
        with ShadowRootType
        with StyleSheetOrigin
   inline def `user-agent`: `user-agent` = "user-agent".asInstanceOf[`user-agent`]
-  
-  @js.native
-  sealed trait v128
-    extends StObject
-       with RemoteObjectSubtype
-  inline def v128: v128 = "v128".asInstanceOf[v128]
   
   @js.native
   sealed trait valueUndefined
@@ -4135,6 +7131,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with DisplayFeatureOrientation
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait `vertical-scroll`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `vertical-scroll`: `vertical-scroll` = "vertical-scroll".asInstanceOf[`vertical-scroll`]
   
   @js.native
   sealed trait videoCapture
@@ -4184,16 +7186,18 @@ object devtoolsProtocolStrings {
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wasm
-    extends StObject
-       with RemoteObjectType
-  inline def wasm: wasm = "wasm".asInstanceOf[wasm]
-  
-  @js.native
   sealed trait `wasm-expression-stack`
     extends StObject
        with ScopeType
   inline def `wasm-expression-stack`: `wasm-expression-stack` = "wasm-expression-stack".asInstanceOf[`wasm-expression-stack`]
+  
+  @js.native
+  sealed trait wasmvalue
+    extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
+       with RemoteObjectSubtype
+  inline def wasmvalue: wasmvalue = "wasmvalue".asInstanceOf[wasmvalue]
   
   @js.native
   sealed trait weakmap
@@ -4201,6 +7205,7 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
   
   @js.native
@@ -4209,7 +7214,14 @@ object devtoolsProtocolStrings {
        with ObjectPreviewSubtype
        with PropertyPreviewSubtype
        with RemoteObjectSubtype
+       with WebDriverValueType
   inline def weakset: weakset = "weakset".asInstanceOf[weakset]
+  
+  @js.native
+  sealed trait `web-share`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `web-share`: `web-share` = "web-share".asInstanceOf[`web-share`]
   
   @js.native
   sealed trait webSocketClosed extends StObject
@@ -4240,8 +7252,30 @@ object devtoolsProtocolStrings {
   inline def webSocketWillSendHandshakeRequest: webSocketWillSendHandshakeRequest = "webSocketWillSendHandshakeRequest".asInstanceOf[webSocketWillSendHandshakeRequest]
   
   @js.native
+  sealed trait webTransportClosed extends StObject
+  inline def webTransportClosed: webTransportClosed = "webTransportClosed".asInstanceOf[webTransportClosed]
+  
+  @js.native
+  sealed trait webTransportConnectionEstablished extends StObject
+  inline def webTransportConnectionEstablished: webTransportConnectionEstablished = "webTransportConnectionEstablished".asInstanceOf[webTransportConnectionEstablished]
+  
+  @js.native
+  sealed trait webTransportCreated extends StObject
+  inline def webTransportCreated: webTransportCreated = "webTransportCreated".asInstanceOf[webTransportCreated]
+  
+  @js.native
+  sealed trait webassemblymemory
+    extends StObject
+       with ObjectPreviewSubtype
+       with PropertyPreviewSubtype
+       with RemoteObjectSubtype
+  inline def webassemblymemory: webassemblymemory = "webassemblymemory".asInstanceOf[webassemblymemory]
+  
+  @js.native
   sealed trait webp
     extends StObject
+       with CaptureScreenshotRequestFormat
+       with DisabledImageType
        with GetEncodedResponseRequestEncoding
        with ImageType
   inline def webp: webp = "webp".asInstanceOf[webp]
@@ -4263,6 +7297,24 @@ object devtoolsProtocolStrings {
     extends StObject
        with ConnectionType
   inline def wimax: wimax = "wimax".asInstanceOf[wimax]
+  
+  @js.native
+  sealed trait win
+    extends StObject
+       with InterestGroupAccessType
+  inline def win: win = "win".asInstanceOf[win]
+  
+  @js.native
+  sealed trait window
+    extends StObject
+       with WebDriverValueType
+  inline def window: window = "window".asInstanceOf[window]
+  
+  @js.native
+  sealed trait `window-placement`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `window-placement`: `window-placement` = "window-placement".asInstanceOf[`window-placement`]
   
   @js.native
   sealed trait windowOpen extends StObject
@@ -4299,6 +7351,12 @@ object devtoolsProtocolStrings {
        with ConsoleMessageSource
        with LogEntrySource
   inline def xml: xml = "xml".asInstanceOf[xml]
+  
+  @js.native
+  sealed trait `xr-spatial-tracking`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `xr-spatial-tracking`: `xr-spatial-tracking` = "xr-spatial-tracking".asInstanceOf[`xr-spatial-tracking`]
   
   @js.native
   sealed trait yuv420

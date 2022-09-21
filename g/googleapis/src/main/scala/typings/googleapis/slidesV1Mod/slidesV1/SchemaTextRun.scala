@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A TextElement kind that represents a run of text that all has the same
-  * styling.
-  */
 trait SchemaTextRun extends StObject {
   
   /**
     * The text of this run.
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The styling applied to this run.
@@ -30,6 +26,8 @@ object SchemaTextRun {
   extension [Self <: SchemaTextRun](x: Self) {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     

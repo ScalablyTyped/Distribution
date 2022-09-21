@@ -1,145 +1,129 @@
 package typings.materialChips
 
-import typings.materialChips.chipConstantsMod.EventSource
-import typings.std.ClientRect
-import typings.std.EventTarget
+import typings.materialChips.chipConstantsMod.MDCChipAttributes
+import typings.materialChips.chipConstantsMod.MDCChipCssClasses
+import typings.materialChips.chipConstantsMod.MDCChipEvents
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipAdapterMod {
   
-  @js.native
   trait MDCChipAdapter extends StObject {
     
-    /**
-      * Adds a class to the root element.
-      */
-    def addClass(className: String): Unit = js.native
+    /** Adds the given class to the root element. */
+    def addClass(className: MDCChipCssClasses): Unit
     
-    /**
-      * Adds a class to the leading icon element.
-      */
-    def addClassToLeadingIcon(className: String): Unit = js.native
+    /** Emits the given event with the given detail. */
+    def emitEvent[D /* <: js.Object */](eventName: MDCChipEvents, eventDetail: D): Unit
     
-    def eventTargetHasClass(target: Null, className: String): Boolean = js.native
-    /**
-      * @return true if target has className, false otherwise.
-      */
-    def eventTargetHasClass(target: EventTarget, className: String): Boolean = js.native
+    /** Returns the child actions provided by the chip. */
+    def getActions(): js.Array[MDCChipActionType]
     
-    /**
-      * Gives focus to the primary action.
-      */
-    def focusPrimaryAction(): Unit = js.native
+    /** Returns the value for the given attribute, if it exists. */
+    def getAttribute(attrName: MDCChipAttributes): String | Null
     
-    /**
-      * Sets focus to the trailing action.
-      */
-    def focusTrailingAction(): Unit = js.native
+    /** Returns the ID of the root element. */
+    def getElementID(): String
     
-    /**
-      * @return the attribute string value if present, otherwise null
-      */
-    def getAttribute(attr: String): String | Null = js.native
+    /** Returns the offset width of the root element. */
+    def getOffsetWidth(): Double
     
-    /**
-      * @return The bounding client rect of the checkmark element or null if it doesn't exist.
-      */
-    def getCheckmarkBoundingClientRect(): ClientRect | Null = js.native
+    /** Returns true if the root element has the given class. */
+    def hasClass(className: MDCChipCssClasses): Boolean
     
-    /**
-      * @return The computed property value of the given style property on the root element.
-      */
-    def getComputedStyleValue(propertyName: String): String = js.native
+    /** Proxies to the MDCChipAction#isDisabled method. */
+    def isActionDisabled(action: MDCChipActionType): Boolean
     
-    /**
-      * @return The bounding client rect of the root element.
-      */
-    def getRootBoundingClientRect(): ClientRect = js.native
+    /** Proxies to the MDCChipAction#isFocusable method. */
+    def isActionFocusable(action: MDCChipActionType): Boolean
     
-    /**
-      * @return true if the root element contains the given class.
-      */
-    def hasClass(className: String): Boolean = js.native
+    /** Proxies to the MDCChipAction#isSelectable method. */
+    def isActionSelectable(action: MDCChipActionType): Boolean
     
-    /**
-      * @return Whether the chip has a leading icon.
-      */
-    def hasLeadingIcon(): Boolean = js.native
+    /** Proxies to the MDCChipAction#isSelected method. */
+    def isActionSelected(action: MDCChipActionType): Boolean
     
-    /**
-      * @return true if the text direction is right-to-left.
-      */
-    def isRTL(): Boolean = js.native
+    /** Returns true if the text direction is right-to-left. */
+    def isRTL(): Boolean
     
-    /**
-      * Returns true if the trailing action is navigable.
-      * Should return the value of MDCChipTrailingAction#isNavigable() or false.
-      */
-    def isTrailingActionNavigable(): Boolean = js.native
+    /** Removes the given class from the root element. */
+    def removeClass(className: MDCChipCssClasses): Unit
     
-    /**
-      * Emits when editing finishes.
-      */
-    def notifyEditFinish(): Unit = js.native
+    /** Proxies to the MDCChipAction#setDisabled method. */
+    def setActionDisabled(action: MDCChipActionType, isDisabled: Boolean): Unit
     
-    /**
-      * Emits when editing starts.
-      */
-    def notifyEditStart(): Unit = js.native
+    /** Proxies to the MDCChipAction#setFocus method. */
+    def setActionFocus(action: MDCChipActionType, behavior: MDCChipActionFocusBehavior): Unit
     
-    /**
-      * Emits a custom "MDCChip:interaction" event denoting the chip has been
-      * interacted with (typically on click or keydown).
-      */
-    def notifyInteraction(): Unit = js.native
+    /** Proxies to the MDCChipAction#setSelected method. */
+    def setActionSelected(action: MDCChipActionType, isSelected: Boolean): Unit
     
-    /**
-      * Emits a custom event "MDCChip:navigation" denoting a focus navigation event.
-      */
-    def notifyNavigation(key: String, source: EventSource): Unit = js.native
+    /** Sets the style property to the given value. */
+    def setStyleProperty(property: String, value: String): Unit
+  }
+  object MDCChipAdapter {
     
-    /**
-      * Emits a custom event "MDCChip:removal" denoting the chip will be removed.
-      */
-    def notifyRemoval(): Unit = js.native
-    def notifyRemoval(removedAnnouncement: String): Unit = js.native
+    inline def apply(
+      addClass: MDCChipCssClasses => Unit,
+      emitEvent: (MDCChipEvents, Any) => Unit,
+      getActions: () => js.Array[MDCChipActionType],
+      getAttribute: MDCChipAttributes => String | Null,
+      getElementID: () => String,
+      getOffsetWidth: () => Double,
+      hasClass: MDCChipCssClasses => Boolean,
+      isActionDisabled: MDCChipActionType => Boolean,
+      isActionFocusable: MDCChipActionType => Boolean,
+      isActionSelectable: MDCChipActionType => Boolean,
+      isActionSelected: MDCChipActionType => Boolean,
+      isRTL: () => Boolean,
+      removeClass: MDCChipCssClasses => Unit,
+      setActionDisabled: (MDCChipActionType, Boolean) => Unit,
+      setActionFocus: (MDCChipActionType, MDCChipActionFocusBehavior) => Unit,
+      setActionSelected: (MDCChipActionType, Boolean) => Unit,
+      setStyleProperty: (String, String) => Unit
+    ): MDCChipAdapter = {
+      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), emitEvent = js.Any.fromFunction2(emitEvent), getActions = js.Any.fromFunction0(getActions), getAttribute = js.Any.fromFunction1(getAttribute), getElementID = js.Any.fromFunction0(getElementID), getOffsetWidth = js.Any.fromFunction0(getOffsetWidth), hasClass = js.Any.fromFunction1(hasClass), isActionDisabled = js.Any.fromFunction1(isActionDisabled), isActionFocusable = js.Any.fromFunction1(isActionFocusable), isActionSelectable = js.Any.fromFunction1(isActionSelectable), isActionSelected = js.Any.fromFunction1(isActionSelected), isRTL = js.Any.fromFunction0(isRTL), removeClass = js.Any.fromFunction1(removeClass), setActionDisabled = js.Any.fromFunction2(setActionDisabled), setActionFocus = js.Any.fromFunction2(setActionFocus), setActionSelected = js.Any.fromFunction2(setActionSelected), setStyleProperty = js.Any.fromFunction2(setStyleProperty))
+      __obj.asInstanceOf[MDCChipAdapter]
+    }
     
-    /**
-      * Emits a custom "MDCChip:selection" event denoting the chip has been selected or deselected.
-      */
-    def notifySelection(selected: Boolean, chipSetShouldIgnore: Boolean): Unit = js.native
-    
-    /**
-      * Emits a custom "MDCChip:trailingIconInteraction" event denoting the trailing icon has been
-      * interacted with (typically on click or keydown).
-      */
-    def notifyTrailingIconInteraction(): Unit = js.native
-    
-    /**
-      * Removes a class from the root element.
-      */
-    def removeClass(className: String): Unit = js.native
-    
-    /**
-      * Removes a class from the leading icon element.
-      */
-    def removeClassFromLeadingIcon(className: String): Unit = js.native
-    
-    /**
-      * Removes focus from the trailing action.
-      */
-    def removeTrailingActionFocus(): Unit = js.native
-    
-    /**
-      * Sets the value of the attribute on the primary action content.
-      */
-    def setPrimaryActionAttr(attr: String, value: String): Unit = js.native
-    
-    /**
-      * Sets the property value of the given style property on the root element.
-      */
-    def setStyleProperty(propertyName: String, value: String): Unit = js.native
+    extension [Self <: MDCChipAdapter](x: Self) {
+      
+      inline def setAddClass(value: MDCChipCssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      
+      inline def setEmitEvent(value: (MDCChipEvents, Any) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
+      
+      inline def setGetActions(value: () => js.Array[MDCChipActionType]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+      
+      inline def setGetAttribute(value: MDCChipAttributes => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      
+      inline def setGetElementID(value: () => String): Self = StObject.set(x, "getElementID", js.Any.fromFunction0(value))
+      
+      inline def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
+      
+      inline def setHasClass(value: MDCChipCssClasses => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      
+      inline def setIsActionDisabled(value: MDCChipActionType => Boolean): Self = StObject.set(x, "isActionDisabled", js.Any.fromFunction1(value))
+      
+      inline def setIsActionFocusable(value: MDCChipActionType => Boolean): Self = StObject.set(x, "isActionFocusable", js.Any.fromFunction1(value))
+      
+      inline def setIsActionSelectable(value: MDCChipActionType => Boolean): Self = StObject.set(x, "isActionSelectable", js.Any.fromFunction1(value))
+      
+      inline def setIsActionSelected(value: MDCChipActionType => Boolean): Self = StObject.set(x, "isActionSelected", js.Any.fromFunction1(value))
+      
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      
+      inline def setRemoveClass(value: MDCChipCssClasses => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      
+      inline def setSetActionDisabled(value: (MDCChipActionType, Boolean) => Unit): Self = StObject.set(x, "setActionDisabled", js.Any.fromFunction2(value))
+      
+      inline def setSetActionFocus(value: (MDCChipActionType, MDCChipActionFocusBehavior) => Unit): Self = StObject.set(x, "setActionFocus", js.Any.fromFunction2(value))
+      
+      inline def setSetActionSelected(value: (MDCChipActionType, Boolean) => Unit): Self = StObject.set(x, "setActionSelected", js.Any.fromFunction2(value))
+      
+      inline def setSetStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setStyleProperty", js.Any.fromFunction2(value))
+    }
   }
 }

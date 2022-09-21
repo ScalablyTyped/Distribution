@@ -13,7 +13,7 @@ object widget {
       
       trait Element extends StObject
       
-      type IntrinsicElements = StringDictionary[js.Any]
+      type IntrinsicElements = StringDictionary[Any]
     }
   }
 }

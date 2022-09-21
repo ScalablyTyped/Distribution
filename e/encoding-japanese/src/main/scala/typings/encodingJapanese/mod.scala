@@ -1,16 +1,10 @@
 package typings.encodingJapanese
 
+import typings.encodingJapanese.encodingJapaneseStrings.`html-entity-hex`
+import typings.encodingJapanese.encodingJapaneseStrings.`html-entity`
 import typings.encodingJapanese.encodingJapaneseStrings.array
 import typings.encodingJapanese.encodingJapaneseStrings.arraybuffer
 import typings.encodingJapanese.encodingJapaneseStrings.string
-import typings.node.Buffer
-import typings.std.ArrayBuffer
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +21,13 @@ object mod {
   
   inline def codeToString(data: IntArrayType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("codeToString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def convert(data: String, options: ConvertArrayBufferOptions): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def convert(data: String, options: ConvertArrayBufferOptions): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   inline def convert(data: String, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def convert(data: String, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def convert(data: String, options: ConvertUnknownOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def convert(data: String, to: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def convert(data: String, to: Encoding, from: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(data: RawType, options: ConvertArrayBufferOptions): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def convert(data: RawType, options: ConvertArrayBufferOptions): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   inline def convert(data: RawType, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def convert(data: RawType, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def convert(data: RawType, options: ConvertUnknownOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
@@ -81,11 +75,17 @@ object mod {
   
   inline def urlEncode(data: IntArrayType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @JSImport("encoding-japanese", "version")
+  @js.native
+  val version: String = js.native
+  
   trait ConvertArrayBufferOptions
     extends StObject
        with ConvertOptions {
     
     var bom: js.UndefOr[Boolean | String] = js.undefined
+    
+    var fallback: js.UndefOr[`html-entity` | `html-entity-hex`] = js.undefined
     
     var from: js.UndefOr[Encoding] = js.undefined
     
@@ -107,6 +107,10 @@ object mod {
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
+      inline def setFallback(value: `html-entity` | `html-entity-hex`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
       inline def setFrom(value: Encoding): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
@@ -122,6 +126,8 @@ object mod {
        with ConvertOptions {
     
     var bom: js.UndefOr[Boolean | String] = js.undefined
+    
+    var fallback: js.UndefOr[`html-entity` | `html-entity-hex`] = js.undefined
     
     var from: js.UndefOr[Encoding] = js.undefined
     
@@ -142,6 +148,10 @@ object mod {
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
+      
+      inline def setFallback(value: `html-entity` | `html-entity-hex`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
       inline def setFrom(value: Encoding): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -192,6 +202,8 @@ object mod {
     
     var bom: js.UndefOr[Boolean | String] = js.undefined
     
+    var fallback: js.UndefOr[`html-entity` | `html-entity-hex`] = js.undefined
+    
     var from: js.UndefOr[Encoding] = js.undefined
     
     var to: Encoding
@@ -212,6 +224,10 @@ object mod {
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
+      inline def setFallback(value: `html-entity` | `html-entity-hex`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
       inline def setFrom(value: Encoding): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
@@ -227,6 +243,8 @@ object mod {
        with ConvertOptions {
     
     var bom: js.UndefOr[Boolean | String] = js.undefined
+    
+    var fallback: js.UndefOr[`html-entity` | `html-entity-hex`] = js.undefined
     
     var from: js.UndefOr[Encoding] = js.undefined
     
@@ -244,6 +262,10 @@ object mod {
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
+      
+      inline def setFallback(value: `html-entity` | `html-entity-hex`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
       inline def setFrom(value: Encoding): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -340,7 +362,7 @@ object mod {
     inline def `false`: typings.encodingJapanese.encodingJapaneseBooleans.`false` = false.asInstanceOf[typings.encodingJapanese.encodingJapaneseBooleans.`false`]
   }
   
-  type IntArrayType = js.Array[Double] | Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array
+  type IntArrayType = js.Array[Double] | js.typedarray.Uint8Array | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array
   
-  type RawType = IntArrayType | js.Array[Double] | Buffer
+  type RawType = IntArrayType | js.Array[Double]
 }

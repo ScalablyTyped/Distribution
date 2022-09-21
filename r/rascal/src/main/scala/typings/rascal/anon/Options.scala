@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Options extends StObject {
   
-  var options: TimeoutNumber
+  var options: Timeout
   
   var port: Double
   
@@ -16,14 +16,14 @@ trait Options extends StObject {
 }
 object Options {
   
-  inline def apply(options: TimeoutNumber, port: Double, protocol: String, slashes: Boolean): Options = {
+  inline def apply(options: Timeout, port: Double, protocol: String, slashes: Boolean): Options = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
   extension [Self <: Options](x: Self) {
     
-    inline def setOptions(value: TimeoutNumber): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Timeout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

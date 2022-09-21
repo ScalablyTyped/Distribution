@@ -1,7 +1,6 @@
 package typings.convertSourceMap
 
 import typings.convertSourceMap.anon.Multiline
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("convert-source-map", "commentRegex")
   @js.native
-  val commentRegex: RegExp = js.native
+  val commentRegex: js.RegExp = js.native
   
   inline def fromBase64(base64: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
@@ -26,7 +25,7 @@ object mod {
   
   inline def fromMapFileSource(content: String, commentFileDir: String): SourceMapConverter | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileSource")(content.asInstanceOf[js.Any], commentFileDir.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter | Null]
   
-  inline def fromObject(obj: js.Any): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
+  inline def fromObject(obj: Any): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
   inline def fromSource(content: String): SourceMapConverter | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSource")(content.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter | Null]
   
@@ -35,7 +34,7 @@ object mod {
   
   @JSImport("convert-source-map", "mapFileCommentRegex")
   @js.native
-  val mapFileCommentRegex: RegExp = js.native
+  val mapFileCommentRegex: js.RegExp = js.native
   
   inline def removeComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -45,16 +44,16 @@ object mod {
   trait SourceMapConverter extends StObject {
     
     /** Adds given property to the source map. Throws an error if property already exists */
-    def addProperty(key: String, value: js.Any): SourceMapConverter = js.native
+    def addProperty(key: String, value: Any): SourceMapConverter = js.native
     
     /** Gets given property of the source map */
-    def getProperty(key: String): js.Any = js.native
+    def getProperty(key: String): Any = js.native
     
     /** Sets given property to the source map. If property doesn't exist it is added, otherwise its value is updated */
-    def setProperty(key: String, value: js.Any): SourceMapConverter = js.native
+    def setProperty(key: String, value: Any): SourceMapConverter = js.native
     
     /** The parsed sourcemap object */
-    var sourcemap: js.Any = js.native
+    var sourcemap: Any = js.native
     
     /** Converts source map to base64 encoded json string */
     def toBase64(): String = js.native
@@ -73,6 +72,6 @@ object mod {
     def toJSON(space: Double): String = js.native
     
     /** Returns a copy of the underlying source map */
-    def toObject(): js.Any = js.native
+    def toObject(): Any = js.native
   }
 }

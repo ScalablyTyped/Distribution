@@ -46,7 +46,7 @@ object anon {
       
       inline def setAtMobiles(value: js.Array[String]): Self = StObject.set(x, "atMobiles", value.asInstanceOf[js.Any])
       
-      inline def setAtMobilesVarargs(value: String*): Self = StObject.set(x, "atMobiles", js.Array(value :_*))
+      inline def setAtMobilesVarargs(value: String*): Self = StObject.set(x, "atMobiles", js.Array(value*))
       
       inline def setIsAtAll(value: Boolean): Self = StObject.set(x, "isAtAll", value.asInstanceOf[js.Any])
     }
@@ -83,7 +83,7 @@ object anon {
       
       inline def setBtnsUndefined: Self = StObject.set(x, "btns", js.undefined)
       
-      inline def setBtnsVarargs(value: ActionURL*): Self = StObject.set(x, "btns", js.Array(value :_*))
+      inline def setBtnsVarargs(value: ActionURL*): Self = StObject.set(x, "btns", js.Array(value*))
       
       inline def setHideAvatar(value: `0` | `1`): Self = StObject.set(x, "hideAvatar", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object anon {
       
       inline def setAtMobiles(value: js.Array[String]): Self = StObject.set(x, "atMobiles", value.asInstanceOf[js.Any])
       
-      inline def setAtMobilesVarargs(value: String*): Self = StObject.set(x, "atMobiles", js.Array(value :_*))
+      inline def setAtMobilesVarargs(value: String*): Self = StObject.set(x, "atMobiles", js.Array(value*))
       
       inline def setIsAtAll(value: Boolean): Self = StObject.set(x, "isAtAll", value.asInstanceOf[js.Any])
       

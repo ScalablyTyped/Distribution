@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Tile")
 @js.native
-class Tile protected () extends StObject {
+open class Tile protected () extends StObject {
   def this(
     level: Double,
     x: Double,
@@ -37,22 +37,22 @@ class Tile protected () extends StObject {
   
   def drawCanvas(
     context: CanvasRenderingContext2D,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit]
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit]
   ): Unit = js.native
   def drawCanvas(
     context: CanvasRenderingContext2D,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     scale: Double
   ): Unit = js.native
   def drawCanvas(
     context: CanvasRenderingContext2D,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     scale: Double,
     translate: Point
   ): Unit = js.native
   def drawCanvas(
     context: CanvasRenderingContext2D,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     scale: Unit,
     translate: Point
   ): Unit = js.native
@@ -62,6 +62,8 @@ class Tile protected () extends StObject {
   var element: Element = js.native
   
   var exists: Boolean = js.native
+  
+  var flipped: Boolean = js.native
   
   def getScaleForEdgeSmoothing(): Double = js.native
   

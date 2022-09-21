@@ -17,12 +17,12 @@ trait UpdateDatasetRequest extends StObject {
   var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
   
   /**
-    * The name of the data set to update.
+    * The name of the dataset to update.
     */
   var datasetName: DatasetName
   
   /**
-    * A list of data rules that send notifications to Amazon CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
+    * A list of data rules that send notifications to CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
     */
   var lateDataRules: js.UndefOr[LateDataRules] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateDatasetRequest extends StObject {
   var triggers: js.UndefOr[DatasetTriggers] = js.undefined
   
   /**
-    * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
+    * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of IoT Analytics datasets in the IoT Analytics User Guide.
     */
   var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
 }
@@ -52,13 +52,13 @@ object UpdateDatasetRequest {
     
     inline def setActions(value: DatasetActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: DatasetAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DatasetAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setContentDeliveryRules(value: DatasetContentDeliveryRules): Self = StObject.set(x, "contentDeliveryRules", value.asInstanceOf[js.Any])
     
     inline def setContentDeliveryRulesUndefined: Self = StObject.set(x, "contentDeliveryRules", js.undefined)
     
-    inline def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = StObject.set(x, "contentDeliveryRules", js.Array(value :_*))
+    inline def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = StObject.set(x, "contentDeliveryRules", js.Array(value*))
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object UpdateDatasetRequest {
     
     inline def setLateDataRulesUndefined: Self = StObject.set(x, "lateDataRules", js.undefined)
     
-    inline def setLateDataRulesVarargs(value: LateDataRule*): Self = StObject.set(x, "lateDataRules", js.Array(value :_*))
+    inline def setLateDataRulesVarargs(value: LateDataRule*): Self = StObject.set(x, "lateDataRules", js.Array(value*))
     
     inline def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object UpdateDatasetRequest {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "versioningConfiguration", value.asInstanceOf[js.Any])
     

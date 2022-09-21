@@ -10,10 +10,10 @@ Bunyan logger stream for Logentries
 | ------------------ | :-------------: |
 | Full name          | bunyan-logentries |
 | Keywords           | bunyan, logentries |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 33463 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1341.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/nemtsov/node-bunyan-logentries)

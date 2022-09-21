@@ -3,7 +3,6 @@ package typings.awsSdkClientXrayNode
 import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.typesTraceSummaryMod.UnmarshalledTraceSummary
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesGetTraceSummariesOutputMod {
     /**
       * <p>The start time of this page of results.</p>
       */
-    var ApproximateTime: js.UndefOr[Date] = js.undefined
+    var ApproximateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>If the requested time frame contained more than one page of results, you can use this token to retrieve the next page. The first page contains the most most recent results, closest to the end of the time frame.</p>
@@ -51,7 +50,7 @@ object typesGetTraceSummariesOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setApproximateTime(value: Date): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
+      inline def setApproximateTime(value: js.Date): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
       
       inline def setApproximateTimeUndefined: Self = StObject.set(x, "ApproximateTime", js.undefined)
       
@@ -63,7 +62,7 @@ object typesGetTraceSummariesOutputMod {
       
       inline def setTraceSummariesUndefined: Self = StObject.set(x, "TraceSummaries", js.undefined)
       
-      inline def setTraceSummariesVarargs(value: UnmarshalledTraceSummary*): Self = StObject.set(x, "TraceSummaries", js.Array(value :_*))
+      inline def setTraceSummariesVarargs(value: UnmarshalledTraceSummary*): Self = StObject.set(x, "TraceSummaries", js.Array(value*))
       
       inline def setTracesProcessedCount(value: Double): Self = StObject.set(x, "TracesProcessedCount", value.asInstanceOf[js.Any])
       

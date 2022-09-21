@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.IAsyncAction
@@ -30,7 +29,7 @@ trait IFileIOStatics extends StObject {
   
   def writeBufferAsync(file: IStorageFile, buffer: IBuffer): IAsyncAction = js.native
   
-  def writeBytesAsync(file: IStorageFile, buffer: Uint8Array): IAsyncAction = js.native
+  def writeBytesAsync(file: IStorageFile, buffer: js.typedarray.Uint8Array): IAsyncAction = js.native
   
   def writeLinesAsync(file: IStorageFile, lines: IIterable[String]): IAsyncAction = js.native
   def writeLinesAsync(file: IStorageFile, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = js.native

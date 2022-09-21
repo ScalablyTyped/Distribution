@@ -22,7 +22,7 @@ object GetBluetoothDevicesSuccessCallbackResult {
     
     inline def setDevices(value: js.Array[BlueToothDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: BlueToothDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: BlueToothDevice*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,7 @@ object zmqMod {
   
   @JSImport("zmq", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with ClassZmqSocket
   

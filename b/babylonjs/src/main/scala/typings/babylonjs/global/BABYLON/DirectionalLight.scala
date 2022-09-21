@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DirectionalLight")
 @js.native
-class DirectionalLight protected ()
+open class DirectionalLight protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DirectionalLight {
   /**
@@ -45,4 +45,18 @@ class DirectionalLight protected ()
     */
   /* CompleteClass */
   override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Defines the rendering priority of the lights. It can help in case of fallback or number of lights
+    * exceeding the number allowed of the materials.
+    */
+  /* CompleteClass */
+  var renderPriority: Double = js.native
+  
+  /**
+    * Gets or sets whether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
+    * the current shadow generator.
+    */
+  /* CompleteClass */
+  var shadowEnabled: Boolean = js.native
 }

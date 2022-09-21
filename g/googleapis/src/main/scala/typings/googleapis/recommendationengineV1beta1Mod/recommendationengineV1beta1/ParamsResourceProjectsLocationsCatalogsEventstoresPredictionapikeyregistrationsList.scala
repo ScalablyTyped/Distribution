@@ -1,0 +1,47 @@
+package typings.googleapis.recommendationengineV1beta1Mod.recommendationengineV1beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceProjectsLocationsCatalogsEventstoresPredictionapikeyregistrationsList
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Optional. Maximum number of results to return per page. If unset, the service will choose a reasonable default.
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Optional. The previous `ListPredictionApiKeyRegistration.nextPageToken`.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Required. The parent placement resource name such as `projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store`
+    */
+  var parent: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceProjectsLocationsCatalogsEventstoresPredictionapikeyregistrationsList {
+  
+  inline def apply(): ParamsResourceProjectsLocationsCatalogsEventstoresPredictionapikeyregistrationsList = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceProjectsLocationsCatalogsEventstoresPredictionapikeyregistrationsList]
+  }
+  
+  extension [Self <: ParamsResourceProjectsLocationsCatalogsEventstoresPredictionapikeyregistrationsList](x: Self) {
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
+}

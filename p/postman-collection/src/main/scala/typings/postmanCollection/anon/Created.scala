@@ -23,14 +23,14 @@ object Created {
     
     inline def setCreated(value: js.Array[String]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    inline def setCreatedVarargs(value: String*): Self = StObject.set(x, "created", js.Array(value :_*))
+    inline def setCreatedVarargs(value: String*): Self = StObject.set(x, "created", js.Array(value*))
     
     inline def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value*))
     
     inline def setUpdated(value: js.Array[String]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedVarargs(value: String*): Self = StObject.set(x, "updated", js.Array(value :_*))
+    inline def setUpdatedVarargs(value: String*): Self = StObject.set(x, "updated", js.Array(value*))
   }
 }

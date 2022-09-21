@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("web3-eth-accounts", "Accounts")
   @js.native
-  class Accounts () extends AccountsBase {
+  open class Accounts () extends AccountsBase {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
   }
   
   @JSImport("web3-eth-accounts", "Wallet")
   @js.native
-  class Wallet protected () extends WalletBase {
+  open class Wallet protected () extends WalletBase {
     def this(accounts: AccountsBase) = this()
   }
   

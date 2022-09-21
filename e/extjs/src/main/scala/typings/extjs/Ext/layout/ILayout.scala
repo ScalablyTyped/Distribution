@@ -13,7 +13,7 @@ trait ILayout
   /** [Method] Removes layout s itemCls and owning Container s itemCls
     * @param item Object
     */
-  var afterRemove: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterRemove: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Called before any calculation cycles to prepare for layout
     * @param ownerContext Ext.layout.ContextItem The context item for the layout's owner component.
@@ -78,9 +78,9 @@ trait ILayout
     */
   var isValidParent: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
-      /* target */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* target */ js.UndefOr[Any], 
+      /* position */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -100,9 +100,7 @@ trait ILayout
     * @param items Object
     * @param target Object
     */
-  var renderItems: js.UndefOr[
-    js.Function2[/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var renderItems: js.UndefOr[js.Function2[/* items */ js.UndefOr[Any], /* target */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ILayout {
   
@@ -113,7 +111,7 @@ object ILayout {
   
   extension [Self <: ILayout](x: Self) {
     
-    inline def setAfterRemove(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterRemove", js.Any.fromFunction1(value))
+    inline def setAfterRemove(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterRemove", js.Any.fromFunction1(value))
     
     inline def setAfterRemoveUndefined: Self = StObject.set(x, "afterRemove", js.undefined)
     
@@ -170,7 +168,7 @@ object ILayout {
     inline def setIsLayoutUndefined: Self = StObject.set(x, "isLayout", js.undefined)
     
     inline def setIsValidParent(
-      value: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* target */ js.UndefOr[Any], /* position */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "isValidParent", js.Any.fromFunction3(value))
     
     inline def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
@@ -183,7 +181,7 @@ object ILayout {
     
     inline def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
     
-    inline def setRenderItems(value: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction2(value))
+    inline def setRenderItems(value: (/* items */ js.UndefOr[Any], /* target */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction2(value))
     
     inline def setRenderItemsUndefined: Self = StObject.set(x, "renderItems", js.undefined)
   }

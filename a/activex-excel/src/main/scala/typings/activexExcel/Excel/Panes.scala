@@ -17,7 +17,7 @@ trait Panes extends StObject {
   
   def Item(Index: Double): Pane = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): Pane = js.native
 }

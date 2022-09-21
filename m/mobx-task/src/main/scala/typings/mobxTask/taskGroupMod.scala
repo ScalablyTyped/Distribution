@@ -8,55 +8,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object taskGroupMod {
   
   /* Inlined std.Pick<mobx-task.mobx-task/lib/task.Task<A, R>, mobx-task.mobx-task/lib/task-group.QueryableMethods> */
-  trait TaskGroup[A /* <: js.Array[js.Any] */, R] extends StObject {
+  trait TaskGroup[A /* <: js.Array[Any] */, R] extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var `match`: js.UndefOr[js.Any] = js.undefined
+    var `match`: js.UndefOr[Any] = js.undefined
     
-    var pending: js.UndefOr[js.Any] = js.undefined
+    var pending: js.UndefOr[Any] = js.undefined
     
-    var rejected: js.UndefOr[js.Any] = js.undefined
+    var rejected: js.UndefOr[Any] = js.undefined
     
-    var resolved: js.UndefOr[js.Any] = js.undefined
+    var resolved: js.UndefOr[Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
   }
   object TaskGroup {
     
     @JSImport("mobx-task/lib/task-group", "TaskGroup")
     @js.native
-    def apply[A /* <: js.Array[js.Any] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
+    def apply[A /* <: js.Array[Any] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
     
-    extension [Self <: TaskGroup[?, ?], A /* <: js.Array[js.Any] */, R](x: Self & (TaskGroup[A, R])) {
+    extension [Self <: TaskGroup[?, ?], A /* <: js.Array[Any] */, R](x: Self & (TaskGroup[A, R])) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setPending(value: js.Any): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Any): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
       inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      inline def setRejected(value: js.Any): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: Any): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
       inline def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
       
-      inline def setResolved(value: js.Any): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: Any): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
       inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }

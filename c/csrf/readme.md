@@ -10,10 +10,10 @@ primary logic behind csrf tokens
 | ------------------ | :-------------: |
 | Full name          | csrf |
 | Keywords           | csrf, tokens |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 17879945 |
-| # stars            | 25 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2189988.6666666665 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/csrf#readme)

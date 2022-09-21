@@ -11,11 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with LVal
      with Pattern
-     with PatternLike {
+     with PatternLike
+     with Standardized {
   
   var decorators: js.Array[Decorator_] | Null
   
-  var elements: js.Array[Null | PatternLike]
+  var elements: js.Array[Null | PatternLike | LVal]
+  
+  var optional: Boolean | Null
   
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
@@ -24,8 +27,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ArrayPattern_ {
   
-  inline def apply(elements: js.Array[Null | PatternLike]): ArrayPattern_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+  inline def apply(elements: js.Array[Null | PatternLike | LVal]): ArrayPattern_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[ArrayPattern_]
   }
@@ -36,11 +39,15 @@ object ArrayPattern_ {
     
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
-    inline def setElements(value: js.Array[Null | PatternLike]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Null | PatternLike | LVal]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: (Null | PatternLike)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (Null | PatternLike | LVal)*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setType(value: ArrayPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ trait InventoryDeletionSummary extends StObject {
   var SummaryItems: js.UndefOr[InventoryDeletionSummaryItems] = js.undefined
   
   /**
-    * The total number of items to delete. This count does not change during the delete operation.
+    * The total number of items to delete. This count doesn't change during the delete operation.
     */
   var TotalCount: js.UndefOr[typings.awsSdk.ssmMod.TotalCount] = js.undefined
 }
@@ -38,7 +38,7 @@ object InventoryDeletionSummary {
     
     inline def setSummaryItemsUndefined: Self = StObject.set(x, "SummaryItems", js.undefined)
     
-    inline def setSummaryItemsVarargs(value: InventoryDeletionSummaryItem*): Self = StObject.set(x, "SummaryItems", js.Array(value :_*))
+    inline def setSummaryItemsVarargs(value: InventoryDeletionSummaryItem*): Self = StObject.set(x, "SummaryItems", js.Array(value*))
     
     inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

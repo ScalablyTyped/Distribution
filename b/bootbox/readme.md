@@ -10,10 +10,10 @@ Wrappers for JavaScript alert(), confirm(), prompt(), and other flexible dialogs
 | ------------------ | :-------------: |
 | Full name          | bootbox |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 27 |
-| # downloads        | 1302405 |
-| # stars            | 6 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 190762.33333333334 |
+| # stars            | 4992.0 |
 
 ## Links
 - [Homepage](https://github.com/makeusabrew/bootbox#readme)

@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +25,11 @@ trait WriteBLECharacteristicValueOption extends StObject {
   var success: js.UndefOr[WriteBLECharacteristicValueSuccessCallback] = js.undefined
   
   /** 蓝牙设备特征值对应的二进制值 */
-  var value: ArrayBuffer
+  var value: js.typedarray.ArrayBuffer
 }
 object WriteBLECharacteristicValueOption {
   
-  inline def apply(characteristicId: String, deviceId: String, serviceId: String, value: ArrayBuffer): WriteBLECharacteristicValueOption = {
+  inline def apply(characteristicId: String, deviceId: String, serviceId: String, value: js.typedarray.ArrayBuffer): WriteBLECharacteristicValueOption = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteBLECharacteristicValueOption]
   }
@@ -55,6 +54,6 @@ object WriteBLECharacteristicValueOption {
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsData
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.stringIteratorMod.StringIterator
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,8 @@ object byteChunkIteratorMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/byte_chunk_iterator", "ByteChunkIterator")
   @js.native
-  abstract class ByteChunkIterator () extends LazyIterator[Uint8Array] {
+  abstract class ByteChunkIterator ()
+    extends LazyIterator[js.typedarray.Uint8Array] {
     
     /**
       * Decode a stream of UTF8-encoded byte arrays to a stream of strings.

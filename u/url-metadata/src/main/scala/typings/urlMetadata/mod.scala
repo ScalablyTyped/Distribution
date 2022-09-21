@@ -1,6 +1,7 @@
 package typings.urlMetadata
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,11 @@ object mod {
   
   trait Options extends StObject {
     
+    var decode: js.UndefOr[js.Function1[/* v */ Buffer, String]] = js.undefined
+    
     var descriptionLength: js.UndefOr[Double] = js.undefined
     
-    var encode: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var encode: js.UndefOr[js.Function1[/* v */ String, String]] = js.undefined
     
     var ensureSecureImageRequest: js.UndefOr[Boolean] = js.undefined
     
@@ -41,11 +44,15 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setDecode(value: /* v */ Buffer => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      
       inline def setDescriptionLength(value: Double): Self = StObject.set(x, "descriptionLength", value.asInstanceOf[js.Any])
       
       inline def setDescriptionLengthUndefined: Self = StObject.set(x, "descriptionLength", js.undefined)
       
-      inline def setEncode(value: () => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
+      inline def setEncode(value: /* v */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
@@ -97,11 +104,15 @@ object mod {
     
     var author: String
     
+    var availability: String
+    
     var canonical: String
     
     var description: String
     
     var image: String
+    
+    var jsonld: Any
     
     var keywords: String
     
@@ -162,9 +173,54 @@ object mod {
     @JSName("og:url")
     var ogColonurl: String
     
+    var price: String
+    
+    var priceCurrency: String
+    
+    var robots: String
+    
     var source: String
     
     var title: String
+    
+    @JSName("twitter:account_id")
+    var twitterColonaccount_id: String
+    
+    @JSName("twitter:card")
+    var twitterColoncard: String
+    
+    @JSName("twitter:creator")
+    var twitterColoncreator: String
+    
+    @JSName("twitter:creator:id")
+    var twitterColoncreatorColonid: String
+    
+    @JSName("twitter:image")
+    var twitterColonimage: String
+    
+    @JSName("twitter:image:alt")
+    var twitterColonimageColonalt: String
+    
+    @JSName("twitter:player")
+    var twitterColonplayer: String
+    
+    @JSName("twitter:player:height")
+    var twitterColonplayerColonheight: String
+    
+    @JSName("twitter:player:stream")
+    var twitterColonplayerColonstream: String
+    
+    @JSName("twitter:player:width")
+    var twitterColonplayerColonwidth: String
+    
+    @JSName("twitter:site")
+    var twitterColonsite: String
+    
+    @JSName("twitter:site:id")
+    var twitterColonsiteColonid: String
+    
+    @JSName("twitter:title")
+    var twitterColontitle: String
     
     var url: String
   }
@@ -172,9 +228,11 @@ object mod {
     
     inline def apply(
       author: String,
+      availability: String,
       canonical: String,
       description: String,
       image: String,
+      jsonld: Any,
       keywords: String,
       ogColondescription: String,
       ogColondeterminer: String,
@@ -189,11 +247,27 @@ object mod {
       ogColontitle: String,
       ogColontype: String,
       ogColonurl: String,
+      price: String,
+      priceCurrency: String,
+      robots: String,
       source: String,
       title: String,
+      twitterColonaccount_id: String,
+      twitterColoncard: String,
+      twitterColoncreator: String,
+      twitterColoncreatorColonid: String,
+      twitterColonimage: String,
+      twitterColonimageColonalt: String,
+      twitterColonplayer: String,
+      twitterColonplayerColonheight: String,
+      twitterColonplayerColonstream: String,
+      twitterColonplayerColonwidth: String,
+      twitterColonsite: String,
+      twitterColonsiteColonid: String,
+      twitterColontitle: String,
       url: String
     ): Result = {
-      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], canonical = canonical.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], availability = availability.asInstanceOf[js.Any], canonical = canonical.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], jsonld = jsonld.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], priceCurrency = priceCurrency.asInstanceOf[js.Any], robots = robots.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("og:description")(ogColondescription.asInstanceOf[js.Any])
       __obj.updateDynamic("og:determiner")(ogColondeterminer.asInstanceOf[js.Any])
       __obj.updateDynamic("og:image")(ogColonimage.asInstanceOf[js.Any])
@@ -207,6 +281,19 @@ object mod {
       __obj.updateDynamic("og:title")(ogColontitle.asInstanceOf[js.Any])
       __obj.updateDynamic("og:type")(ogColontype.asInstanceOf[js.Any])
       __obj.updateDynamic("og:url")(ogColonurl.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:account_id")(twitterColonaccount_id.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:card")(twitterColoncard.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:creator")(twitterColoncreator.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:creator:id")(twitterColoncreatorColonid.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:image")(twitterColonimage.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:image:alt")(twitterColonimageColonalt.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:player")(twitterColonplayer.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:player:height")(twitterColonplayerColonheight.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:player:stream")(twitterColonplayerColonstream.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:player:width")(twitterColonplayerColonwidth.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:site")(twitterColonsite.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:site:id")(twitterColonsiteColonid.asInstanceOf[js.Any])
+      __obj.updateDynamic("twitter:title")(twitterColontitle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
@@ -238,11 +325,15 @@ object mod {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
+      inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+      
       inline def setCanonical(value: String): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setJsonld(value: Any): Self = StObject.set(x, "jsonld", value.asInstanceOf[js.Any])
       
       inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
@@ -296,9 +387,41 @@ object mod {
       
       inline def setOgColonurl(value: String): Self = StObject.set(x, "og:url", value.asInstanceOf[js.Any])
       
+      inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      
+      inline def setPriceCurrency(value: String): Self = StObject.set(x, "priceCurrency", value.asInstanceOf[js.Any])
+      
+      inline def setRobots(value: String): Self = StObject.set(x, "robots", value.asInstanceOf[js.Any])
+      
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonaccount_id(value: String): Self = StObject.set(x, "twitter:account_id", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColoncard(value: String): Self = StObject.set(x, "twitter:card", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColoncreator(value: String): Self = StObject.set(x, "twitter:creator", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColoncreatorColonid(value: String): Self = StObject.set(x, "twitter:creator:id", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonimage(value: String): Self = StObject.set(x, "twitter:image", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonimageColonalt(value: String): Self = StObject.set(x, "twitter:image:alt", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonplayer(value: String): Self = StObject.set(x, "twitter:player", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonplayerColonheight(value: String): Self = StObject.set(x, "twitter:player:height", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonplayerColonstream(value: String): Self = StObject.set(x, "twitter:player:stream", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonplayerColonwidth(value: String): Self = StObject.set(x, "twitter:player:width", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonsite(value: String): Self = StObject.set(x, "twitter:site", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColonsiteColonid(value: String): Self = StObject.set(x, "twitter:site:id", value.asInstanceOf[js.Any])
+      
+      inline def setTwitterColontitle(value: String): Self = StObject.set(x, "twitter:title", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

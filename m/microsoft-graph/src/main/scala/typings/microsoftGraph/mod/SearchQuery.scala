@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchQuery extends StObject {
   
+  // The search query containing the search terms. Required.
   var queryString: js.UndefOr[String] = js.undefined
 }
 object SearchQuery {

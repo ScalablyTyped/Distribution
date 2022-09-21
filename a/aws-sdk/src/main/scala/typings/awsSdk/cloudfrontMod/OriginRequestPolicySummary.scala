@@ -12,7 +12,7 @@ trait OriginRequestPolicySummary extends StObject {
   var OriginRequestPolicy: typings.awsSdk.cloudfrontMod.OriginRequestPolicy
   
   /**
-    * The type of origin request policy, either managed (created by AWS) or custom (created in this AWS account).
+    * The type of origin request policy, either managed (created by Amazon Web Services) or custom (created in this Amazon Web Services account).
     */
   var Type: OriginRequestPolicyType
 }

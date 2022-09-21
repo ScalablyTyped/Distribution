@@ -4,19 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A user belonging to an enterprise.
-  */
 trait SchemaUser extends StObject {
   
   /**
-    * A unique identifier you create for this user, such as user342 or
-    * asset#44418. This field must be set when the user is created and
-    * can&#39;t be updated. This field must not contain personally identifiable
-    * information (PII). This identifier must be 1024 characters or less;
-    * otherwise, the update policy request will fail.
+    * A unique identifier you create for this user, such as user342 or asset#44418. This field must be set when the user is created and can't be updated. This field must not contain personally identifiable information (PII). This identifier must be 1024 characters or less; otherwise, the update policy request will fail.
     */
-  var accountIdentifier: js.UndefOr[String] = js.undefined
+  var accountIdentifier: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUser {
   
@@ -28,6 +21,8 @@ object SchemaUser {
   extension [Self <: SchemaUser](x: Self) {
     
     inline def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdentifierNull: Self = StObject.set(x, "accountIdentifier", null)
     
     inline def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
   }

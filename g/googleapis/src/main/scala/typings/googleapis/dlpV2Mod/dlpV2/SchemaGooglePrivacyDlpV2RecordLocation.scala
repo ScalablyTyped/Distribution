@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Location of a finding within a row or record.
-  */
 trait SchemaGooglePrivacyDlpV2RecordLocation extends StObject {
   
   /**

@@ -1,20 +1,14 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
-import typings.antDesignProLayout.anon.Tip
+import typings.antd.spinMod.SpinProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object pageLoadingMod extends Shortcut {
+object pageLoadingMod {
   
-  @JSImport("@ant-design/pro-layout/lib/PageLoading", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/PageLoading", "PageLoading")
   @js.native
-  val default: FC[Tip] = js.native
-  
-  type _To = FC[Tip]
-  
-  /* This means you don't have to write `default`, but can instead just say `pageLoadingMod.foo` */
-  override def _to: FC[Tip] = default
+  val PageLoading: FC[SpinProps & Any] = js.native
 }

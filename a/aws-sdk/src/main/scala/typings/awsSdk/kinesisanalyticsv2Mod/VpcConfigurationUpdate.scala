@@ -34,13 +34,13 @@ object VpcConfigurationUpdate {
     
     inline def setSecurityGroupIdUpdatesUndefined: Self = StObject.set(x, "SecurityGroupIdUpdates", js.undefined)
     
-    inline def setSecurityGroupIdUpdatesVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIdUpdates", js.Array(value :_*))
+    inline def setSecurityGroupIdUpdatesVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIdUpdates", js.Array(value*))
     
     inline def setSubnetIdUpdates(value: SubnetIds): Self = StObject.set(x, "SubnetIdUpdates", value.asInstanceOf[js.Any])
     
     inline def setSubnetIdUpdatesUndefined: Self = StObject.set(x, "SubnetIdUpdates", js.undefined)
     
-    inline def setSubnetIdUpdatesVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIdUpdates", js.Array(value :_*))
+    inline def setSubnetIdUpdatesVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIdUpdates", js.Array(value*))
     
     inline def setVpcConfigurationId(value: Id): Self = StObject.set(x, "VpcConfigurationId", value.asInstanceOf[js.Any])
   }

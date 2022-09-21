@@ -25,7 +25,7 @@ object ListChannelsResponse {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

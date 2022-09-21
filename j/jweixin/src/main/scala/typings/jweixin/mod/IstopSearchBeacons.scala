@@ -10,17 +10,17 @@ trait IstopSearchBeacons
   
   // 关闭查找完成后的回调函数
   @JSName("complete")
-  def complete_MIstopSearchBeacons(res: js.Any): Unit
+  def complete_MIstopSearchBeacons(res: Any): Unit
 }
 object IstopSearchBeacons {
   
-  inline def apply(complete: js.Any => Unit): IstopSearchBeacons = {
+  inline def apply(complete: Any => Unit): IstopSearchBeacons = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[IstopSearchBeacons]
   }
   
   extension [Self <: IstopSearchBeacons](x: Self) {
     
-    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

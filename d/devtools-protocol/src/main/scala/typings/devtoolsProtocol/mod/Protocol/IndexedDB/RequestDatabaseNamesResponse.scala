@@ -22,6 +22,6 @@ object RequestDatabaseNamesResponse {
     
     inline def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
+    inline def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value*))
   }
 }

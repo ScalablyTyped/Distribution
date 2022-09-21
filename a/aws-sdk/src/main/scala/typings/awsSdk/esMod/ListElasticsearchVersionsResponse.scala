@@ -23,7 +23,7 @@ object ListElasticsearchVersionsResponse {
     
     inline def setElasticsearchVersionsUndefined: Self = StObject.set(x, "ElasticsearchVersions", js.undefined)
     
-    inline def setElasticsearchVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "ElasticsearchVersions", js.Array(value :_*))
+    inline def setElasticsearchVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "ElasticsearchVersions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

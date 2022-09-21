@@ -27,6 +27,6 @@ object Ename {
     
     inline def setTraceback(value: js.Array[String]): Self = StObject.set(x, "traceback", value.asInstanceOf[js.Any])
     
-    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value :_*))
+    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value*))
   }
 }

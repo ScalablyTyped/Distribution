@@ -9,7 +9,7 @@ trait TransitGatewayRouteTable extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether this is the default association route table for the transit gateway.
@@ -50,7 +50,7 @@ object TransitGatewayRouteTable {
   
   extension [Self <: TransitGatewayRouteTable](x: Self) {
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -70,7 +70,7 @@ object TransitGatewayRouteTable {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTransitGatewayId(value: String): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
     

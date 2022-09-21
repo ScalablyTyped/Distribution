@@ -10,10 +10,10 @@ Parity's native order entry protocol
 | ------------------ | :-------------: |
 | Full name          | parity-poe |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 593 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61.666666666666664 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/paritytrading/node-parity-poe#readme)

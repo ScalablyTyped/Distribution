@@ -10,8 +10,8 @@ object lightAsyncMod {
   
   @JSImport("react-syntax-highlighter/dist/cjs/light-async", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SyntaxHighlighterProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SyntaxHighlighterProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -19,8 +19,8 @@ object lightAsyncMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, js.Any]
+  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, Any]
 }

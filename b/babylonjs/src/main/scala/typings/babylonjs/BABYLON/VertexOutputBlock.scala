@@ -9,6 +9,8 @@ trait VertexOutputBlock
   extends StObject
      with NodeMaterialBlock {
   
+  /* private */ var _isLogarithmicDepthEnabled: Any = js.native
+  
   /**
     * Gets the vector input component
     */

@@ -33,6 +33,6 @@ object LookupPolicyResponse {
     
     inline def setPolicyToPathListUndefined: Self = StObject.set(x, "PolicyToPathList", js.undefined)
     
-    inline def setPolicyToPathListVarargs(value: PolicyToPath*): Self = StObject.set(x, "PolicyToPathList", js.Array(value :_*))
+    inline def setPolicyToPathListVarargs(value: PolicyToPath*): Self = StObject.set(x, "PolicyToPathList", js.Array(value*))
   }
 }

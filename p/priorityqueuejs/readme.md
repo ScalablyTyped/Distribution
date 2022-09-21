@@ -10,10 +10,10 @@ a simple priority queue data structure
 | ------------------ | :-------------: |
 | Full name          | priorityqueuejs |
 | Keywords           | heap, priority, queue, priority queue, data structure |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 3040707 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 421063.3333333333 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/janogonzalez/priorityqueuejs#readme)

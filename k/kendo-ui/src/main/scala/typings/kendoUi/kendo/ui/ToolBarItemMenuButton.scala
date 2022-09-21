@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ToolBarItemMenuButton extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
   var enable: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ object ToolBarItemMenuButton {
   
   extension [Self <: ToolBarItemMenuButton](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     

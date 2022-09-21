@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/discover" : "2.0.8"
+      "@ionic/discover" : "3.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/discover" : "2.0.8"
+      "@ionic/discover" : "3.1.5"
     }
   ],
   "compile-devDependencies" : [

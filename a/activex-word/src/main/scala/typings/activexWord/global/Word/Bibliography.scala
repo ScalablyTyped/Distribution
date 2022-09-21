@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Bibliography")
 @js.native
-/* private */ class Bibliography ()
+/* private */ open class Bibliography ()
   extends StObject
      with typings.activexWord.Word.Bibliography {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GenerateUniqueTag(): String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Sources: typings.activexWord.Word.Sources = js.native

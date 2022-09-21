@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("typed-rest-client/handlers/basiccreds", "BasicCredentialHandler")
   @js.native
-  class BasicCredentialHandler protected ()
+  open class BasicCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(username: String, password: String) = this()
@@ -25,13 +25,13 @@ object mod {
     override def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
+    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: Any): js.Promise[IHttpClientResponse] = js.native
     
     var origin: String = js.native
     
     var password: String = js.native
     
-    def prepareRequest(options: js.Any): Unit = js.native
+    def prepareRequest(options: Any): Unit = js.native
     /* CompleteClass */
     override def prepareRequest(options: RequestOptions): Unit = js.native
     

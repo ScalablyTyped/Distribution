@@ -12,7 +12,7 @@ trait AwsDynamoDbTableProjection extends StObject {
   var NonKeyAttributes: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The types of attributes that are projected into the index.
+    * The types of attributes that are projected into the index. Valid values are as follows:    ALL     INCLUDE     KEYS_ONLY   
     */
   var ProjectionType: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -29,7 +29,7 @@ object AwsDynamoDbTableProjection {
     
     inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
     
-    inline def setNonKeyAttributesVarargs(value: NonEmptyString*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+    inline def setNonKeyAttributesVarargs(value: NonEmptyString*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value*))
     
     inline def setProjectionType(value: NonEmptyString): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
     

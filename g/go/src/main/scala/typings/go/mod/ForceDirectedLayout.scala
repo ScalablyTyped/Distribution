@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a ForceDirectedLayout with no Layout.network and with no owning Layout.diagram.
   */
-class ForceDirectedLayout () extends Layout {
+open class ForceDirectedLayout () extends Layout {
   
   /**
     * Find associated objects to be positioned along with the vertex.

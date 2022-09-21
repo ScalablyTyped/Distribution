@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Descriptor extends StObject {
   
-  var descriptor: js.UndefOr[js.Any] = js.undefined
+  var descriptor: js.UndefOr[Any] = js.undefined
   
   var enableTileFadeIn: js.UndefOr[Boolean] = js.undefined
   
@@ -26,7 +26,7 @@ trait Descriptor extends StObject {
   
   var renderer: js.UndefOr[typings.mapsjs.mod.tile.renderer] = js.undefined
   
-  var requestProcessor: js.UndefOr[js.Any] = js.undefined
+  var requestProcessor: js.UndefOr[Any] = js.undefined
   
   var requestor: js.UndefOr[typings.mapsjs.mod.tile.requestor] = js.undefined
   
@@ -47,7 +47,7 @@ object Descriptor {
   
   extension [Self <: Descriptor](x: Self) {
     
-    inline def setDescriptor(value: js.Any): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: Any): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     inline def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
     
@@ -83,7 +83,7 @@ object Descriptor {
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    inline def setRequestProcessor(value: js.Any): Self = StObject.set(x, "requestProcessor", value.asInstanceOf[js.Any])
+    inline def setRequestProcessor(value: Any): Self = StObject.set(x, "requestProcessor", value.asInstanceOf[js.Any])
     
     inline def setRequestProcessorUndefined: Self = StObject.set(x, "requestProcessor", js.undefined)
     

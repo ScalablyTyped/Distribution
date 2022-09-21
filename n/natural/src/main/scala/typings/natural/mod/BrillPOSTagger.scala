@@ -10,11 +10,11 @@ trait BrillPOSTagger extends StObject {
   
   var ruleSet: RuleSet
   
-  def tag(sentence: js.Array[String]): js.Array[js.Array[String]]
+  def tag(sentence: js.Array[String]): Sentence
 }
 object BrillPOSTagger {
   
-  inline def apply(lexicon: Lexicon, ruleSet: RuleSet, tag: js.Array[String] => js.Array[js.Array[String]]): BrillPOSTagger = {
+  inline def apply(lexicon: Lexicon, ruleSet: RuleSet, tag: js.Array[String] => Sentence): BrillPOSTagger = {
     val __obj = js.Dynamic.literal(lexicon = lexicon.asInstanceOf[js.Any], ruleSet = ruleSet.asInstanceOf[js.Any], tag = js.Any.fromFunction1(tag))
     __obj.asInstanceOf[BrillPOSTagger]
   }
@@ -25,6 +25,6 @@ object BrillPOSTagger {
     
     inline def setRuleSet(value: RuleSet): Self = StObject.set(x, "ruleSet", value.asInstanceOf[js.Any])
     
-    inline def setTag(value: js.Array[String] => js.Array[js.Array[String]]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
+    inline def setTag(value: js.Array[String] => Sentence): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
   }
 }

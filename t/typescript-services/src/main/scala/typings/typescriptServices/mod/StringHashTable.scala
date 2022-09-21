@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "StringHashTable")
 @js.native
-class StringHashTable[T] ()
+open class StringHashTable[T] ()
   extends StObject
      with typings.typescriptServices.TypeScript.StringHashTable[T] {
   
@@ -20,26 +20,26 @@ class StringHashTable[T] ()
   override def count(): Double = js.native
   
   /* CompleteClass */
-  override def every(fn: js.Function3[/* k */ String, T, /* context */ js.Any, Unit], context: js.Any): Boolean = js.native
+  override def every(fn: js.Function3[/* k */ String, T, /* context */ Any, Unit], context: Any): Boolean = js.native
   
   /* CompleteClass */
   override def getAllKeys(): js.Array[String] = js.native
   
   /* private */ /* CompleteClass */
-  var itemCount: js.Any = js.native
+  var itemCount: Any = js.native
   
   /* CompleteClass */
   override def lookup(key: String): T = js.native
   
   /* CompleteClass */
-  override def map(fn: js.Function3[/* k */ String, T, /* context */ js.Any, Unit], context: js.Any): Unit = js.native
+  override def map(fn: js.Function3[/* k */ String, T, /* context */ Any, Unit], context: Any): Unit = js.native
   
   /* CompleteClass */
   override def remove(key: String): Unit = js.native
   
   /* CompleteClass */
-  override def some(fn: js.Function3[/* k */ String, T, /* context */ js.Any, Unit], context: js.Any): Boolean = js.native
+  override def some(fn: js.Function3[/* k */ String, T, /* context */ Any, Unit], context: Any): Boolean = js.native
   
   /* private */ /* CompleteClass */
-  var table: js.Any = js.native
+  var table: Any = js.native
 }

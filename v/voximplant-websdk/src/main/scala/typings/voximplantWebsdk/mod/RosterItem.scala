@@ -51,7 +51,7 @@ object RosterItem {
     
     inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object RosterItem {
     
     inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSubscription_type(value: Double): Self = StObject.set(x, "subscription_type", value.asInstanceOf[js.Any])
   }

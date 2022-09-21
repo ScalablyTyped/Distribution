@@ -9,7 +9,7 @@ trait EndpointConfigSummary extends StObject {
   /**
     * A timestamp that shows when the endpoint configuration was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint configuration.
@@ -24,7 +24,7 @@ trait EndpointConfigSummary extends StObject {
 object EndpointConfigSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     EndpointConfigArn: EndpointConfigArn,
     EndpointConfigName: EndpointConfigName
   ): EndpointConfigSummary = {
@@ -34,7 +34,7 @@ object EndpointConfigSummary {
   
   extension [Self <: EndpointConfigSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setEndpointConfigArn(value: EndpointConfigArn): Self = StObject.set(x, "EndpointConfigArn", value.asInstanceOf[js.Any])
     

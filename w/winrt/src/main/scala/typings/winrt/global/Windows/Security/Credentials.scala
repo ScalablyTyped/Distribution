@@ -17,7 +17,7 @@ object Credentials {
   
   @JSGlobal("Windows.Security.Credentials.PasswordCredential")
   @js.native
-  class PasswordCredential ()
+  open class PasswordCredential ()
     extends StObject
        with typings.winrt.Windows.Security.Credentials.PasswordCredential {
     def this(resource: String, userName: String, password: String) = this()
@@ -40,7 +40,7 @@ object Credentials {
   
   @JSGlobal("Windows.Security.Credentials.PasswordCredentialPropertyStore")
   @js.native
-  class PasswordCredentialPropertyStore ()
+  open class PasswordCredentialPropertyStore ()
     extends StObject
        with typings.winrt.Windows.Security.Credentials.PasswordCredentialPropertyStore {
     
@@ -48,22 +48,22 @@ object Credentials {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
-    var onmapchanged: js.Any = js.native
+    var onmapchanged: Any = js.native
     
     /* CompleteClass */
     override def remove(key: String): Unit = js.native
@@ -74,7 +74,7 @@ object Credentials {
   
   @JSGlobal("Windows.Security.Credentials.PasswordVault")
   @js.native
-  class PasswordVault ()
+  open class PasswordVault ()
     extends StObject
        with typings.winrt.Windows.Security.Credentials.PasswordVault {
     
@@ -123,7 +123,7 @@ object Credentials {
     
     @JSGlobal("Windows.Security.Credentials.UI.CredentialPicker")
     @js.native
-    class CredentialPicker ()
+    open class CredentialPicker ()
       extends StObject
          with typings.winrt.Windows.Security.Credentials.UI.CredentialPicker
     /* static members */
@@ -140,7 +140,7 @@ object Credentials {
     
     @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerOptions")
     @js.native
-    class CredentialPickerOptions ()
+    open class CredentialPickerOptions ()
       extends StObject
          with typings.winrt.Windows.Security.Credentials.UI.CredentialPickerOptions {
       
@@ -177,7 +177,7 @@ object Credentials {
     
     @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerResults")
     @js.native
-    class CredentialPickerResults ()
+    open class CredentialPickerResults ()
       extends StObject
          with typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults {
       

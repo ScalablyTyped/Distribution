@@ -11,9 +11,9 @@ A lite wrapper around tape to simplify async testing.
 | Full name          | tape-async |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 23096 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4535.333333333333 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/parro-it/tape-async#readme)

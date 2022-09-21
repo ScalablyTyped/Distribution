@@ -11,9 +11,9 @@ Generate media query string from JSON or javascript object
 | Full name          | json2mq |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 256 |
-| # downloads        | 49202960 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7048718.333333333 |
+| # stars            | 158.0 |
 
 ## Links
 - [Homepage](https://github.com/akiran/json2mq)

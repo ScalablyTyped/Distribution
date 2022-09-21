@@ -17,8 +17,8 @@ object lineMod {
   
   @JSImport("react-lazylog/build/Line", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LineProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LineProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -32,7 +32,7 @@ object lineMod {
     inline def defaultProps_=(x: PartialLineProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type Line = Component[LineProps, js.Object, js.Any]
+  type Line = Component[LineProps, js.Object, Any]
   
   trait LineProps extends StObject {
     
@@ -50,7 +50,7 @@ object lineMod {
       * This is never called
       * https://github.com/mozilla-frontend-infra/react-lazylog/issues/18
       */
-    var onRowClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onRowClick: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var rowHeight: Double
     
@@ -69,7 +69,7 @@ object lineMod {
       
       inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
       
@@ -85,7 +85,7 @@ object lineMod {
       
       inline def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
       
-      inline def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
+      inline def setOnRowClick(value: () => Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
       
       inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       

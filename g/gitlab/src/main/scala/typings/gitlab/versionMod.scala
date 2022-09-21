@@ -12,7 +12,7 @@ object versionMod {
   
   @JSImport("gitlab/dist/types/core/services/Version", "Version")
   @js.native
-  class Version () extends BaseService {
+  open class Version () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def show(): js.Promise[GetResponse] = js.native

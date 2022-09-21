@@ -29,7 +29,7 @@ object DescribeNatGatewaysResult {
     
     inline def setNatGatewaysUndefined: Self = StObject.set(x, "NatGateways", js.undefined)
     
-    inline def setNatGatewaysVarargs(value: NatGateway*): Self = StObject.set(x, "NatGateways", js.Array(value :_*))
+    inline def setNatGatewaysVarargs(value: NatGateway*): Self = StObject.set(x, "NatGateways", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,9 @@ trait IgnoreDefaultVisibility extends StObject {
     */
   var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
   
+  /** A comma-separated list of IDs of labels to include in the labelInfo part of the response. */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
   var includePermissionsForView: js.UndefOr[String] = js.undefined
   
@@ -83,6 +86,10 @@ object IgnoreDefaultVisibility {
     inline def setIgnoreDefaultVisibility(value: Boolean): Self = StObject.set(x, "ignoreDefaultVisibility", value.asInstanceOf[js.Any])
     
     inline def setIgnoreDefaultVisibilityUndefined: Self = StObject.set(x, "ignoreDefaultVisibility", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     

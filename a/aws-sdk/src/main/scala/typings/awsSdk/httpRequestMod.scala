@@ -2,6 +2,7 @@ package typings.awsSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.endpointMod.Endpoint
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object httpRequestMod {
   
   @JSImport("aws-sdk/lib/http_request", "HttpRequest")
   @js.native
-  class HttpRequest protected () extends StObject {
+  open class HttpRequest protected () extends StObject {
     /**
       * Constructs HttpRequest object with provided endpoint and region
       */
@@ -19,7 +20,7 @@ object httpRequestMod {
     /**
       * The request body payload.
       */
-    var body: String = js.native
+    var body: String | Buffer = js.native
     
     /**
       * The endpoint for the request.

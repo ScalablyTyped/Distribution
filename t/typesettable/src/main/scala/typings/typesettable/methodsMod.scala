@@ -8,7 +8,7 @@ object methodsMod {
   
   @JSImport("typesettable/build/src/utils/methods", "Methods")
   @js.native
-  class Methods () extends StObject
+  open class Methods () extends StObject
   /* static members */
   object Methods {
     
@@ -24,7 +24,7 @@ object methodsMod {
     /**
       * Shim for _.defaults
       */
-    inline def defaults(target: js.Any, objects: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def defaults(target: Any, objects: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     /**
       * @param {any} a Object to check against b for equality.
@@ -34,8 +34,8 @@ object methodsMod {
       *          values associated with those keys. Values will be compared
       *          with ===.
       */
-    inline def objEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def objEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def strictEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def strictEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

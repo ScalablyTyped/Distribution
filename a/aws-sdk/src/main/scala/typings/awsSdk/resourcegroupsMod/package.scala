@@ -1,29 +1,32 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.PENDING
+import typings.awsSdk.awsSdkStrings.`resource-type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Description = java.lang.String
+type Description = String
 
-type ErrorCode = java.lang.String
+type ErrorCode = String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type FailedResourceList = js.Array[typings.awsSdk.resourcegroupsMod.FailedResource]
+type FailedResourceList = js.Array[FailedResource]
 
-type GroupArn = java.lang.String
+type GroupArn = String
 
-type GroupConfigurationFailureReason = java.lang.String
+type GroupConfigurationFailureReason = String
 
-type GroupConfigurationList = js.Array[typings.awsSdk.resourcegroupsMod.GroupConfigurationItem]
+type GroupConfigurationList = js.Array[GroupConfigurationItem]
 
-type GroupConfigurationParameterName = java.lang.String
+type GroupConfigurationParameterName = String
 
-type GroupConfigurationParameterValue = java.lang.String
+type GroupConfigurationParameterValue = String
 
-type GroupConfigurationParameterValueList = js.Array[typings.awsSdk.resourcegroupsMod.GroupConfigurationParameterValue]
+type GroupConfigurationParameterValueList = js.Array[GroupConfigurationParameterValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPDATING
@@ -31,84 +34,90 @@ type GroupConfigurationParameterValueList = js.Array[typings.awsSdk.resourcegrou
   - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - java.lang.String
 */
-type GroupConfigurationStatus = typings.awsSdk.resourcegroupsMod._GroupConfigurationStatus | java.lang.String
+type GroupConfigurationStatus = _GroupConfigurationStatus | String
 
-type GroupConfigurationType = java.lang.String
+type GroupConfigurationType = String
 
-type GroupFilterList = js.Array[typings.awsSdk.resourcegroupsMod.GroupFilter]
+type GroupFilterList = js.Array[GroupFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`resource-type`
   - typings.awsSdk.awsSdkStrings.`configuration-type`
   - java.lang.String
 */
-type GroupFilterName = typings.awsSdk.resourcegroupsMod._GroupFilterName | java.lang.String
+type GroupFilterName = _GroupFilterName | String
 
-type GroupFilterValue = java.lang.String
+type GroupFilterValue = String
 
-type GroupFilterValues = js.Array[typings.awsSdk.resourcegroupsMod.GroupFilterValue]
+type GroupFilterValues = js.Array[GroupFilterValue]
 
-type GroupIdentifierList = js.Array[typings.awsSdk.resourcegroupsMod.GroupIdentifier]
+type GroupIdentifierList = js.Array[GroupIdentifier]
 
-type GroupList = js.Array[typings.awsSdk.resourcegroupsMod.Group]
+type GroupList = js.Array[Group]
 
-type GroupName = java.lang.String
+type GroupName = String
 
-type GroupParameterList = js.Array[typings.awsSdk.resourcegroupsMod.GroupConfigurationParameter]
+type GroupParameterList = js.Array[GroupConfigurationParameter]
 
-type GroupString = java.lang.String
+type GroupString = String
 
-type MaxResults = scala.Double
+type ListGroupResourcesItemList = js.Array[ListGroupResourcesItem]
 
-type NextToken = java.lang.String
+type MaxResults = Double
 
-type Query = java.lang.String
+type NextToken = String
+
+type PendingResourceList = js.Array[PendingResource]
+
+type Query = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_INACTIVE
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_NOT_EXISTING
   - java.lang.String
 */
-type QueryErrorCode = typings.awsSdk.resourcegroupsMod._QueryErrorCode | java.lang.String
+type QueryErrorCode = _QueryErrorCode | String
 
-type QueryErrorList = js.Array[typings.awsSdk.resourcegroupsMod.QueryError]
+type QueryErrorList = js.Array[QueryError]
 
-type QueryErrorMessage = java.lang.String
+type QueryErrorMessage = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TAG_FILTERS_1_0
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_1_0
   - java.lang.String
 */
-type QueryType = typings.awsSdk.resourcegroupsMod._QueryType | java.lang.String
+type QueryType = _QueryType | String
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceArnList = js.Array[typings.awsSdk.resourcegroupsMod.ResourceArn]
+type ResourceArnList = js.Array[ResourceArn]
 
-type ResourceFilterList = js.Array[typings.awsSdk.resourcegroupsMod.ResourceFilter]
+type ResourceFilterList = js.Array[ResourceFilter]
 
-type ResourceFilterName = typings.awsSdk.awsSdkStrings.`resource-type` | java.lang.String
+type ResourceFilterName = `resource-type` | String
 
-type ResourceFilterValue = java.lang.String
+type ResourceFilterValue = String
 
-type ResourceFilterValues = js.Array[typings.awsSdk.resourcegroupsMod.ResourceFilterValue]
+type ResourceFilterValues = js.Array[ResourceFilterValue]
 
-type ResourceIdentifierList = js.Array[typings.awsSdk.resourcegroupsMod.ResourceIdentifier]
+type ResourceIdentifierList = js.Array[ResourceIdentifier]
 
-type ResourceType = java.lang.String
+type ResourceStatusValue = PENDING | String
 
-type TagKey = java.lang.String
+type ResourceType = String
 
-type TagKeyList = js.Array[typings.awsSdk.resourcegroupsMod.TagKey]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeyList = js.Array[TagKey]
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.resourcegroupsMod.TagValue]
+type TagValue = String
+
+type Tags = StringDictionary[TagValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-11-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.resourcegroupsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

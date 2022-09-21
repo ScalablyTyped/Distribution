@@ -29,6 +29,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.TypeofTypeAnnotation_
   - typings.babelTypes.mod.UnionTypeAnnotation_
   - typings.babelTypes.mod.VoidTypeAnnotation_
+  - typings.babelTypes.mod.IndexedAccessType_
+  - typings.babelTypes.mod.OptionalIndexedAccessType_
 */
 trait FlowType
   extends StObject
@@ -74,6 +76,7 @@ object FlowType {
   inline def FunctionTypeAnnotation_(params: js.Array[FunctionTypeParam_], returnType: FlowType): typings.babelTypes.mod.FunctionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, rest = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionTypeAnnotation")
+    __obj.updateDynamic("this")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionTypeAnnotation_]
   }
   
@@ -81,6 +84,12 @@ object FlowType {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("GenericTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.mod.GenericTypeAnnotation_]
+  }
+  
+  inline def IndexedAccessType_(indexType: FlowType, objectType: FlowType): typings.babelTypes.mod.IndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.IndexedAccessType_]
   }
   
   inline def InterfaceTypeAnnotation_(body: ObjectTypeAnnotation_): typings.babelTypes.mod.InterfaceTypeAnnotation_ = {
@@ -126,10 +135,22 @@ object FlowType {
     __obj.asInstanceOf[typings.babelTypes.mod.NumberTypeAnnotation_]
   }
   
-  inline def ObjectTypeAnnotation_(exact: Boolean, properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], callProperties = null, end = null, indexers = null, inexact = null, innerComments = null, internalSlots = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def ObjectTypeAnnotation_(
+    callProperties: js.Array[ObjectTypeCallProperty_],
+    exact: Boolean,
+    indexers: js.Array[ObjectTypeIndexer_],
+    internalSlots: js.Array[ObjectTypeInternalSlot_],
+    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
+  ): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], internalSlots = internalSlots.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], end = null, inexact = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectTypeAnnotation_]
+  }
+  
+  inline def OptionalIndexedAccessType_(indexType: FlowType, objectType: FlowType, optional: Boolean): typings.babelTypes.mod.OptionalIndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("OptionalIndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.OptionalIndexedAccessType_]
   }
   
   inline def StringLiteralTypeAnnotation_(value: String): typings.babelTypes.mod.StringLiteralTypeAnnotation_ = {

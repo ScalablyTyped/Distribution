@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@humanwhocodes/module-importer" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@humanwhocodes/module-importer" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

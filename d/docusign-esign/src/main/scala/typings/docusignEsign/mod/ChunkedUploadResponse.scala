@@ -91,7 +91,7 @@ object ChunkedUploadResponse {
     
     inline def setChunkedUploadPartsVarargs(
       value: (/* An object that contains information about the chunked upload part. */ ChunkedUploadPart)*
-    ): Self = StObject.set(x, "chunkedUploadParts", js.Array(value :_*))
+    ): Self = StObject.set(x, "chunkedUploadParts", js.Array(value*))
     
     inline def setChunkedUploadUri(value: String): Self = StObject.set(x, "chunkedUploadUri", value.asInstanceOf[js.Any])
     

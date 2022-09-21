@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DataBarBorder")
 @js.native
-/* private */ class DataBarBorder ()
+/* private */ open class DataBarBorder ()
   extends StObject
      with typings.activexExcel.Excel.DataBarBorder {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotDataBarBorder_typekey: typings.activexExcel.Excel.DataBarBorder = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Type: XlDataBarBorderType = js.native

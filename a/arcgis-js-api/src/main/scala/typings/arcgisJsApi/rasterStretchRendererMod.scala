@@ -18,22 +18,22 @@ object rasterStretchRendererMod extends Shortcut {
   @JSImport("esri/renderers/RasterStretchRenderer", JSImport.Namespace)
   @js.native
   /**
-    * RasterStretchRenderer defines the symbology with a gradual ramp of colors for each pixel in a [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) based on the pixel value.
+    * RasterStretchRenderer defines the symbology with a gradual ramp of colors for each pixel in a [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), [ImageryTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html), and [WCSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html) based on the pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with RasterStretchRenderer {
     def this(properties: RasterStretchRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   type _To = js.Object & RasterStretchRendererConstructor

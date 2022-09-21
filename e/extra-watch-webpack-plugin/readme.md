@@ -10,10 +10,10 @@ extra-watch-webpack-plugin would help you to attach extra files or dirs to webpa
 | ------------------ | :-------------: |
 | Full name          | extra-watch-webpack-plugin |
 | Keywords           | webpack, webpack-plugin, watch |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 975968 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 199027.0 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/pigcan/extra-watch-webpack-plugin#readme)

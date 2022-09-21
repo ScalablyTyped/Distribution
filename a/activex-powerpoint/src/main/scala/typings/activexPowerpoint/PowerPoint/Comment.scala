@@ -21,7 +21,7 @@ trait Comment extends StObject {
   
   val Left: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Comment_typekey")
   var PowerPointDotComment_typekey: Comment
@@ -40,7 +40,7 @@ object Comment {
     DateTime: VarDate,
     Delete: () => Unit,
     Left: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotComment_typekey: Comment,
     Text: String,
     Top: Double
@@ -66,7 +66,7 @@ object Comment {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotComment_typekey(value: Comment): Self = StObject.set(x, "PowerPoint.Comment_typekey", value.asInstanceOf[js.Any])
     

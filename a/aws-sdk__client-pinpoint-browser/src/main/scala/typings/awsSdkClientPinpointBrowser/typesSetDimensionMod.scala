@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.EXCLUSIVE
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.INCLUSIVE
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesSetDimensionMod {
     /**
       * The criteria values for the segment dimension. Endpoints with matching attribute values are included or excluded from the segment, depending on the setting for Type.
       */
-    var Values: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Values: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
   }
   object SetDimension {
     
@@ -38,11 +37,11 @@ object typesSetDimensionMod {
       
       inline def setDimensionTypeUndefined: Self = StObject.set(x, "DimensionType", js.undefined)
       
-      inline def setValues(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
     }
   }
   
@@ -69,7 +68,7 @@ object typesSetDimensionMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
     }
   }
 }

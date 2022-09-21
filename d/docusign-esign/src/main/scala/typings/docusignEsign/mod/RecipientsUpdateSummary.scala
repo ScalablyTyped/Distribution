@@ -34,6 +34,6 @@ object RecipientsUpdateSummary {
     
     inline def setRecipientUpdateResultsVarargs(
       value: (/* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse)*
-    ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value :_*))
+    ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value*))
   }
 }

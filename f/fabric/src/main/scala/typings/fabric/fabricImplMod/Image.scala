@@ -1,6 +1,7 @@
 package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Height
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGElement
@@ -10,19 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
-- typings.fabric.fabricImplMod.IImageOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined crossOrigin, srcFromAttribute, minimumScaleTrigger, cacheKey, cropX, cropY, filters */ @JSImport("fabric/fabric-impl", "Image")
+- typings.fabric.fabricImplMod.IImageOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transparentCorners, `type`, visible, width. Inlined crossOrigin, srcFromAttribute, minimumScaleTrigger, cacheKey, cropX, cropY, filters */ @JSImport("fabric/fabric-impl", "Image")
 @js.native
-/**
-  * Constructor
-  * @param element Image or Video element
-  * @param [options] Options object
-  */
-class Image () extends Object {
+open class Image protected () extends Object {
+  /**
+    * Constructor
+    * @param element Image element
+    * @param [options] Options object
+    */
   def this(element: String) = this()
+  def this(element: HTMLCanvasElement) = this()
   def this(element: HTMLImageElement) = this()
   def this(element: HTMLVideoElement) = this()
   def this(element: String, options: IImageOptions) = this()
-  def this(element: Unit, options: IImageOptions) = this()
+  def this(element: HTMLCanvasElement, options: IImageOptions) = this()
   def this(element: HTMLImageElement, options: IImageOptions) = this()
   def this(element: HTMLVideoElement, options: IImageOptions) = this()
   
@@ -118,17 +120,12 @@ class Image () extends Object {
     * @private
     * @return {Object}
     */
-  def parsePreserveAspectRatioAttribute(): js.Any = js.native
+  def parsePreserveAspectRatioAttribute(): Any = js.native
   
   /**
     * Delete a single texture if in webgl mode
     */
-  def removeTexture(key: js.Any): Unit = js.native
-  
-  /**
-    * Sets crossOrigin value (on an instance and corresponding image element)
-    */
-  def setCrossOrigin(value: String): Image = js.native
+  def removeTexture(key: Any): Unit = js.native
   
   /**
     * Sets image or video element for this instance to a specified one.

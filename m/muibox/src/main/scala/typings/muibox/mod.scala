@@ -11,11 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DialogProvider(_underscore: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogProvider")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DialogProvider(_underscore: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogProvider")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useDialog(): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialog")().asInstanceOf[Dialog]
   
-  inline def withDialog(): js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDialog")().asInstanceOf[js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]]]
+  inline def withDialog(): js.Function1[/* WrappedComponent */ Any, js.Function1[/* props */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDialog")().asInstanceOf[js.Function1[/* WrappedComponent */ Any, js.Function1[/* props */ Any, Any]]]
   
   trait AlertOptions extends StObject {
     

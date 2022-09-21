@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTypeRegistrationOutput extends StObject {
   
   /**
-    * The description of the type registration request.
+    * The description of the extension registration request.
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * The current status of the type registration request.
+    * The current status of the extension registration request.
     */
   var ProgressStatus: js.UndefOr[RegistrationStatus] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the type being registered. For registration requests with a ProgressStatus of other than COMPLETE, this will be null.
+    * The Amazon Resource Name (ARN) of the extension being registered. For registration requests with a ProgressStatus of other than COMPLETE, this will be null.
     */
   var TypeArn: js.UndefOr[typings.awsSdk.cloudformationMod.TypeArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of this specific version of the type being registered. For registration requests with a ProgressStatus of other than COMPLETE, this will be null.
+    * The Amazon Resource Name (ARN) of this specific version of the extension being registered. For registration requests with a ProgressStatus of other than COMPLETE, this will be null.
     */
   var TypeVersionArn: js.UndefOr[TypeArn] = js.undefined
 }

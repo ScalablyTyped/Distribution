@@ -46,7 +46,7 @@ object CreateAuthUriResponse {
     
     inline def setAllProvidersUndefined: Self = StObject.set(x, "allProviders", js.undefined)
     
-    inline def setAllProvidersVarargs(value: String*): Self = StObject.set(x, "allProviders", js.Array(value :_*))
+    inline def setAllProvidersVarargs(value: String*): Self = StObject.set(x, "allProviders", js.Array(value*))
     
     inline def setAuthUri(value: String): Self = StObject.set(x, "authUri", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object CreateAuthUriResponse {
     
     inline def setSigninMethodsUndefined: Self = StObject.set(x, "signinMethods", js.undefined)
     
-    inline def setSigninMethodsVarargs(value: String*): Self = StObject.set(x, "signinMethods", js.Array(value :_*))
+    inline def setSigninMethodsVarargs(value: String*): Self = StObject.set(x, "signinMethods", js.Array(value*))
   }
 }

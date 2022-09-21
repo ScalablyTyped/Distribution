@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "WheelInfo")
 @js.native
-class WheelInfo ()
+open class WheelInfo ()
   extends StObject
      with typings.cannon.CANNON.WheelInfo {
   def this(options: IWheelInfoOptions) = this()

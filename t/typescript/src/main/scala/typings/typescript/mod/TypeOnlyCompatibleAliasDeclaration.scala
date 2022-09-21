@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.mod.ImportClause
+  - typings.typescript.mod.ImportEqualsDeclaration
   - typings.typescript.mod.NamespaceImport
   - typings.typescript.mod.ImportOrExportSpecifier
 */

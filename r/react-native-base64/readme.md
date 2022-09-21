@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-base64
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Base64 encoding and decoding helping util. Created for React Native but can be used anywhere
@@ -11,9 +11,9 @@ Base64 encoding and decoding helping util. Created for React Native but can be u
 | Full name          | react-native-base64 |
 | Keywords           | base64, encode, decode, react, native |
 | # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 781880 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 261253.66666666666 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/eranbo/react-native-base64#readme)

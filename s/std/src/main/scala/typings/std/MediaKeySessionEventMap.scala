@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaKeySessionEventMap extends StObject {
   
+  /* standard dom */
   var keystatuseschange: Event
   
+  /* standard dom */
   var message: MediaKeyMessageEvent
 }
 object MediaKeySessionEventMap {

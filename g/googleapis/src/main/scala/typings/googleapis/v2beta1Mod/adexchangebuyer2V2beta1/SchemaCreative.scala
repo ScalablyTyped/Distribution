@@ -4,111 +4,92 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A creative and its classification data.
-  */
 trait SchemaCreative extends StObject {
   
   /**
-    * The account that this creative belongs to. Can be used to filter the
-    * response of the creatives.list method.
+    * The account that this creative belongs to. Can be used to filter the response of the creatives.list method.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The link to AdChoices destination page.
     */
-  var adChoicesDestinationUrl: js.UndefOr[String] = js.undefined
+  var adChoicesDestinationUrl: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. The detected ad technology providers.
+    */
+  var adTechnologyProviders: js.UndefOr[SchemaAdTechnologyProviders] = js.undefined
   
   /**
     * The name of the company being advertised in the creative.
     */
-  var advertiserName: js.UndefOr[String] = js.undefined
+  var advertiserName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The agency ID for this creative.
     */
-  var agencyId: js.UndefOr[String] = js.undefined
+  var agencyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * @OutputOnly The last update timestamp of the creative via API.
+    * Output only. The last update timestamp of the creative via API.
     */
-  var apiUpdateTime: js.UndefOr[String] = js.undefined
+  var apiUpdateTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * All attributes for the ads that may be shown from this creative. Can be
-    * used to filter the response of the creatives.list method.
+    * All attributes for the ads that may be shown from this creative. Can be used to filter the response of the creatives.list method.
     */
-  var attributes: js.UndefOr[js.Array[String]] = js.undefined
+  var attributes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The set of destination URLs for the creative.
     */
-  var clickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
+  var clickThroughUrls: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly Shows any corrections that were applied to this creative.
+    * Output only. Shows any corrections that were applied to this creative.
     */
   var corrections: js.UndefOr[js.Array[SchemaCorrection]] = js.undefined
   
   /**
-    * The buyer-defined creative ID of this creative. Can be used to filter the
-    * response of the creatives.list method.
+    * The buyer-defined creative ID of this creative. Can be used to filter the response of the creatives.list method.
     */
-  var creativeId: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * @OutputOnly The top-level deals status of this creative. If disapproved,
-    * an entry for &#39;auctionType=DIRECT_DEALS&#39; (or &#39;ALL&#39;) in
-    * serving_restrictions will also exist. Note that this may be nuanced with
-    * other contextual restrictions, in which case, it may be preferable to
-    * read from serving_restrictions directly. Can be used to filter the
-    * response of the creatives.list method.
+    * Output only. The top-level deals status of this creative. If disapproved, an entry for 'auctionType=DIRECT_DEALS' (or 'ALL') in serving_restrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case, it may be preferable to read from serving_restrictions directly. Can be used to filter the response of the creatives.list method.
     */
-  var dealsStatus: js.UndefOr[String] = js.undefined
+  var dealsStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The set of declared destination URLs for the creative.
     */
-  var declaredClickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
+  var declaredClickThroughUrls: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly Detected advertiser IDs, if any.
+    * Output only. Detected advertiser IDs, if any.
     */
-  var detectedAdvertiserIds: js.UndefOr[js.Array[String]] = js.undefined
+  var detectedAdvertiserIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly The detected domains for this creative.
+    * Output only. The detected domains for this creative.
     */
-  var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
+  var detectedDomains: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly The detected languages for this creative. The order is
-    * arbitrary. The codes are 2 or 5 characters and are documented at
-    * https://developers.google.com/adwords/api/docs/appendix/languagecodes.
+    * Output only. The detected languages for this creative. The order is arbitrary. The codes are 2 or 5 characters and are documented at https://developers.google.com/adwords/api/docs/appendix/languagecodes.
     */
-  var detectedLanguages: js.UndefOr[js.Array[String]] = js.undefined
+  var detectedLanguages: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly Detected product categories, if any. See the
-    * ad-product-categories.txt file in the technical documentation for a list
-    * of IDs.
+    * Output only. Detected product categories, if any. See the ad-product-categories.txt file in the technical documentation for a list of IDs.
     */
-  var detectedProductCategories: js.UndefOr[js.Array[Double]] = js.undefined
+  var detectedProductCategories: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * @OutputOnly Detected sensitive categories, if any. See the
-    * ad-sensitive-categories.txt file in the technical documentation for a
-    * list of IDs. You should use these IDs along with the
-    * excluded-sensitive-category field in the bid request to filter your bids.
+    * Output only. Detected sensitive categories, if any. See the ad-sensitive-categories.txt file in the technical documentation for a list of IDs. You should use these IDs along with the excluded-sensitive-category field in the bid request to filter your bids.
     */
-  var detectedSensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
-  
-  /**
-    * @OutputOnly The filtering stats for this creative. Deprecated; please use
-    * bidders.accounts.filterSets.filteredBids.creatives.list method instead.
-    */
-  var filteringStats: js.UndefOr[SchemaFilteringStats] = js.undefined
+  var detectedSensitiveCategories: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
     * An HTML creative.
@@ -118,7 +99,7 @@ trait SchemaCreative extends StObject {
   /**
     * The set of URLs to be called to record an impression.
     */
-  var impressionTrackingUrls: js.UndefOr[js.Array[String]] = js.undefined
+  var impressionTrackingUrls: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * A native creative.
@@ -126,40 +107,29 @@ trait SchemaCreative extends StObject {
   var native: js.UndefOr[SchemaNativeContent] = js.undefined
   
   /**
-    * @OutputOnly The top-level open auction status of this creative. If
-    * disapproved, an entry for &#39;auctionType = OPEN_AUCTION&#39; (or
-    * &#39;ALL&#39;) in serving_restrictions will also exist. Note that this
-    * may be nuanced with other contextual restrictions, in which case, it may
-    * be preferable to read from serving_restrictions directly. Can be used to
-    * filter the response of the creatives.list method.
+    * Output only. The top-level open auction status of this creative. If disapproved, an entry for 'auctionType = OPEN_AUCTION' (or 'ALL') in serving_restrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case, it may be preferable to read from serving_restrictions directly. Can be used to filter the response of the creatives.list method.
     */
-  var openAuctionStatus: js.UndefOr[String] = js.undefined
+  var openAuctionStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * All restricted categories for the ads that may be shown from this
-    * creative.
+    * All restricted categories for the ads that may be shown from this creative.
     */
-  var restrictedCategories: js.UndefOr[js.Array[String]] = js.undefined
+  var restrictedCategories: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * @OutputOnly The granular status of this ad in specific contexts. A
-    * context here relates to where something ultimately serves (for example, a
-    * physical location, a platform, an HTTPS vs HTTP request, or the type of
-    * auction).
+    * Output only. The granular status of this ad in specific contexts. A context here relates to where something ultimately serves (for example, a physical location, a platform, an HTTPS vs HTTP request, or the type of auction).
     */
   var servingRestrictions: js.UndefOr[js.Array[SchemaServingRestriction]] = js.undefined
   
   /**
-    * All vendor IDs for the ads that may be shown from this creative. See
-    * https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt for
-    * possible values.
+    * All vendor IDs for the ads that may be shown from this creative. See https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt for possible values.
     */
-  var vendorIds: js.UndefOr[js.Array[Double]] = js.undefined
+  var vendorIds: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * @OutputOnly The version of this creative.
+    * Output only. The version of this creative.
     */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A video creative.
@@ -177,89 +147,119 @@ object SchemaCreative {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setAdChoicesDestinationUrl(value: String): Self = StObject.set(x, "adChoicesDestinationUrl", value.asInstanceOf[js.Any])
     
+    inline def setAdChoicesDestinationUrlNull: Self = StObject.set(x, "adChoicesDestinationUrl", null)
+    
     inline def setAdChoicesDestinationUrlUndefined: Self = StObject.set(x, "adChoicesDestinationUrl", js.undefined)
     
+    inline def setAdTechnologyProviders(value: SchemaAdTechnologyProviders): Self = StObject.set(x, "adTechnologyProviders", value.asInstanceOf[js.Any])
+    
+    inline def setAdTechnologyProvidersUndefined: Self = StObject.set(x, "adTechnologyProviders", js.undefined)
+    
     inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserNameNull: Self = StObject.set(x, "advertiserName", null)
     
     inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
     inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
+    inline def setAgencyIdNull: Self = StObject.set(x, "agencyId", null)
+    
     inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
     inline def setApiUpdateTime(value: String): Self = StObject.set(x, "apiUpdateTime", value.asInstanceOf[js.Any])
+    
+    inline def setApiUpdateTimeNull: Self = StObject.set(x, "apiUpdateTime", null)
     
     inline def setApiUpdateTimeUndefined: Self = StObject.set(x, "apiUpdateTime", js.undefined)
     
     inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setClickThroughUrls(value: js.Array[String]): Self = StObject.set(x, "clickThroughUrls", value.asInstanceOf[js.Any])
     
+    inline def setClickThroughUrlsNull: Self = StObject.set(x, "clickThroughUrls", null)
+    
     inline def setClickThroughUrlsUndefined: Self = StObject.set(x, "clickThroughUrls", js.undefined)
     
-    inline def setClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "clickThroughUrls", js.Array(value :_*))
+    inline def setClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "clickThroughUrls", js.Array(value*))
     
     inline def setCorrections(value: js.Array[SchemaCorrection]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
     
     inline def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
     
-    inline def setCorrectionsVarargs(value: SchemaCorrection*): Self = StObject.set(x, "corrections", js.Array(value :_*))
+    inline def setCorrectionsVarargs(value: SchemaCorrection*): Self = StObject.set(x, "corrections", js.Array(value*))
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
     
     inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     inline def setDealsStatus(value: String): Self = StObject.set(x, "dealsStatus", value.asInstanceOf[js.Any])
     
+    inline def setDealsStatusNull: Self = StObject.set(x, "dealsStatus", null)
+    
     inline def setDealsStatusUndefined: Self = StObject.set(x, "dealsStatus", js.undefined)
     
     inline def setDeclaredClickThroughUrls(value: js.Array[String]): Self = StObject.set(x, "declaredClickThroughUrls", value.asInstanceOf[js.Any])
     
+    inline def setDeclaredClickThroughUrlsNull: Self = StObject.set(x, "declaredClickThroughUrls", null)
+    
     inline def setDeclaredClickThroughUrlsUndefined: Self = StObject.set(x, "declaredClickThroughUrls", js.undefined)
     
-    inline def setDeclaredClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "declaredClickThroughUrls", js.Array(value :_*))
+    inline def setDeclaredClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "declaredClickThroughUrls", js.Array(value*))
     
     inline def setDetectedAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "detectedAdvertiserIds", value.asInstanceOf[js.Any])
     
+    inline def setDetectedAdvertiserIdsNull: Self = StObject.set(x, "detectedAdvertiserIds", null)
+    
     inline def setDetectedAdvertiserIdsUndefined: Self = StObject.set(x, "detectedAdvertiserIds", js.undefined)
     
-    inline def setDetectedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "detectedAdvertiserIds", js.Array(value :_*))
+    inline def setDetectedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "detectedAdvertiserIds", js.Array(value*))
     
     inline def setDetectedDomains(value: js.Array[String]): Self = StObject.set(x, "detectedDomains", value.asInstanceOf[js.Any])
     
+    inline def setDetectedDomainsNull: Self = StObject.set(x, "detectedDomains", null)
+    
     inline def setDetectedDomainsUndefined: Self = StObject.set(x, "detectedDomains", js.undefined)
     
-    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value :_*))
+    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value*))
     
     inline def setDetectedLanguages(value: js.Array[String]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
+    inline def setDetectedLanguagesNull: Self = StObject.set(x, "detectedLanguages", null)
+    
     inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    inline def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value*))
     
     inline def setDetectedProductCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedProductCategories", value.asInstanceOf[js.Any])
     
+    inline def setDetectedProductCategoriesNull: Self = StObject.set(x, "detectedProductCategories", null)
+    
     inline def setDetectedProductCategoriesUndefined: Self = StObject.set(x, "detectedProductCategories", js.undefined)
     
-    inline def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value :_*))
+    inline def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value*))
     
     inline def setDetectedSensitiveCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedSensitiveCategories", value.asInstanceOf[js.Any])
     
+    inline def setDetectedSensitiveCategoriesNull: Self = StObject.set(x, "detectedSensitiveCategories", null)
+    
     inline def setDetectedSensitiveCategoriesUndefined: Self = StObject.set(x, "detectedSensitiveCategories", js.undefined)
     
-    inline def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value :_*))
-    
-    inline def setFilteringStats(value: SchemaFilteringStats): Self = StObject.set(x, "filteringStats", value.asInstanceOf[js.Any])
-    
-    inline def setFilteringStatsUndefined: Self = StObject.set(x, "filteringStats", js.undefined)
+    inline def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value*))
     
     inline def setHtml(value: SchemaHtmlContent): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
@@ -267,9 +267,11 @@ object SchemaCreative {
     
     inline def setImpressionTrackingUrls(value: js.Array[String]): Self = StObject.set(x, "impressionTrackingUrls", value.asInstanceOf[js.Any])
     
+    inline def setImpressionTrackingUrlsNull: Self = StObject.set(x, "impressionTrackingUrls", null)
+    
     inline def setImpressionTrackingUrlsUndefined: Self = StObject.set(x, "impressionTrackingUrls", js.undefined)
     
-    inline def setImpressionTrackingUrlsVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrls", js.Array(value :_*))
+    inline def setImpressionTrackingUrlsVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrls", js.Array(value*))
     
     inline def setNative(value: SchemaNativeContent): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
@@ -277,27 +279,35 @@ object SchemaCreative {
     
     inline def setOpenAuctionStatus(value: String): Self = StObject.set(x, "openAuctionStatus", value.asInstanceOf[js.Any])
     
+    inline def setOpenAuctionStatusNull: Self = StObject.set(x, "openAuctionStatus", null)
+    
     inline def setOpenAuctionStatusUndefined: Self = StObject.set(x, "openAuctionStatus", js.undefined)
     
     inline def setRestrictedCategories(value: js.Array[String]): Self = StObject.set(x, "restrictedCategories", value.asInstanceOf[js.Any])
     
+    inline def setRestrictedCategoriesNull: Self = StObject.set(x, "restrictedCategories", null)
+    
     inline def setRestrictedCategoriesUndefined: Self = StObject.set(x, "restrictedCategories", js.undefined)
     
-    inline def setRestrictedCategoriesVarargs(value: String*): Self = StObject.set(x, "restrictedCategories", js.Array(value :_*))
+    inline def setRestrictedCategoriesVarargs(value: String*): Self = StObject.set(x, "restrictedCategories", js.Array(value*))
     
     inline def setServingRestrictions(value: js.Array[SchemaServingRestriction]): Self = StObject.set(x, "servingRestrictions", value.asInstanceOf[js.Any])
     
     inline def setServingRestrictionsUndefined: Self = StObject.set(x, "servingRestrictions", js.undefined)
     
-    inline def setServingRestrictionsVarargs(value: SchemaServingRestriction*): Self = StObject.set(x, "servingRestrictions", js.Array(value :_*))
+    inline def setServingRestrictionsVarargs(value: SchemaServingRestriction*): Self = StObject.set(x, "servingRestrictions", js.Array(value*))
     
     inline def setVendorIds(value: js.Array[Double]): Self = StObject.set(x, "vendorIds", value.asInstanceOf[js.Any])
     
+    inline def setVendorIdsNull: Self = StObject.set(x, "vendorIds", null)
+    
     inline def setVendorIdsUndefined: Self = StObject.set(x, "vendorIds", js.undefined)
     
-    inline def setVendorIdsVarargs(value: Double*): Self = StObject.set(x, "vendorIds", js.Array(value :_*))
+    inline def setVendorIdsVarargs(value: Double*): Self = StObject.set(x, "vendorIds", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     

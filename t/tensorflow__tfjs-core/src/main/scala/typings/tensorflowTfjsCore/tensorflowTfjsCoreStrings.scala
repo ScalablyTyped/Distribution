@@ -25,10 +25,6 @@ object tensorflowTfjsCoreStrings {
   inline def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   
   @js.native
-  sealed trait Engine extends StObject
-  inline def Engine: Engine = "Engine".asInstanceOf[Engine]
-  
-  @js.native
   sealed trait GraphDef extends StObject
   inline def GraphDef: GraphDef = "GraphDef".asInstanceOf[GraphDef]
   
@@ -77,6 +73,12 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with PadType
   inline def VALID: VALID = "VALID".asInstanceOf[VALID]
+  
+  @js.native
+  sealed trait at
+    extends StObject
+       with DataValues
+  inline def at: at = "at".asInstanceOf[at]
   
   @js.native
   sealed trait avg extends StObject
@@ -135,6 +137,10 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with DataValues
   inline def concat: concat = "concat".asInstanceOf[concat]
+  
+  @js.native
+  sealed trait constant extends StObject
+  inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
   sealed trait copyWithin
@@ -263,6 +269,16 @@ object tensorflowTfjsCoreStrings {
   inline def lastIndexOf: lastIndexOf = "lastIndexOf".asInstanceOf[lastIndexOf]
   
   @js.native
+  sealed trait leakyrelu
+    extends StObject
+       with Activation
+  inline def leakyrelu: leakyrelu = "leakyrelu".asInstanceOf[leakyrelu]
+  
+  @js.native
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
   sealed trait length
     extends StObject
        with DataValues
@@ -357,6 +373,10 @@ object tensorflowTfjsCoreStrings {
   inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
   sealed trait round extends StObject
   inline def round: round = "round".asInstanceOf[round]
   
@@ -375,6 +395,12 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with DataValues
   inline def shift: shift = "shift".asInstanceOf[shift]
+  
+  @js.native
+  sealed trait sigmoid
+    extends StObject
+       with Activation
+  inline def sigmoid: sigmoid = "sigmoid".asInstanceOf[sigmoid]
   
   @js.native
   sealed trait slice
@@ -405,6 +431,10 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with DataType
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait string_or_numeric extends StObject
+  inline def string_or_numeric: string_or_numeric = "string_or_numeric".asInstanceOf[string_or_numeric]
   
   @js.native
   sealed trait subarray
@@ -454,4 +484,8 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with DataValues
   inline def values: values = "values".asInstanceOf[values]
+  
+  @js.native
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
 }

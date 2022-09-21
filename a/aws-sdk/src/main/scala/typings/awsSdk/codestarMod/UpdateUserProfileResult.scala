@@ -9,7 +9,7 @@ trait UpdateUserProfileResult extends StObject {
   /**
     * The date the user profile was created, in timestamp format.
     */
-  var createdTimestamp: js.UndefOr[CreatedTimestamp] = js.undefined
+  var createdTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name that is displayed as the friendly name for the user in AWS CodeStar.
@@ -24,7 +24,7 @@ trait UpdateUserProfileResult extends StObject {
   /**
     * The date the user profile was last modified, in timestamp format.
     */
-  var lastModifiedTimestamp: js.UndefOr[LastModifiedTimestamp] = js.undefined
+  var lastModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The SSH public key associated with the user in AWS CodeStar. This is the public portion of the public/private keypair the user can use to access project resources if a project owner allows the user remote access to those resources.
@@ -45,7 +45,7 @@ object UpdateUserProfileResult {
   
   extension [Self <: UpdateUserProfileResult](x: Self) {
     
-    inline def setCreatedTimestamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
     
@@ -57,7 +57,7 @@ object UpdateUserProfileResult {
     
     inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    inline def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimestamp(value: js.Date): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimestampUndefined: Self = StObject.set(x, "lastModifiedTimestamp", js.undefined)
     

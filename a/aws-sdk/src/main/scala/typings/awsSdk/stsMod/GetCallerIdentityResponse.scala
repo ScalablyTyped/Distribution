@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCallerIdentityResponse extends StObject {
   
   /**
-    * The AWS account ID number of the account that owns or contains the calling entity.
+    * The Amazon Web Services account ID number of the account that owns or contains the calling entity.
     */
   var Account: js.UndefOr[accountType] = js.undefined
   
   /**
-    * The AWS ARN associated with the calling entity.
+    * The Amazon Web Services ARN associated with the calling entity.
     */
   var Arn: js.UndefOr[arnType] = js.undefined
   

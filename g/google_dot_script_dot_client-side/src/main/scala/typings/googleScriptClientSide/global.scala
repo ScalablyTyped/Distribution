@@ -1,6 +1,7 @@
 package typings.googleScriptClientSide
 
-import typings.googleScriptClientSide.google.script.Runner
+import typings.googleScriptClientSide.google.script.PublicEndpoints
+import typings.googleScriptClientSide.google.script.RunnerFunctions
 import typings.googleScriptClientSide.google.script.UrlLocation
 import typings.googleScriptClientSide.google.script.history.HistoryChangeEvent
 import typings.googleScriptClientSide.google.script.history.Query
@@ -105,7 +106,7 @@ object global {
       
       @JSGlobal("google.script.run")
       @js.native
-      val run: Runner = js.native
+      val run: RunnerFunctions & PublicEndpoints = js.native
       
       object url {
         

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientBigtableadmin.anon
 
-import typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin.ModifyColumnFamiliesRequest
+import typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin.GenerateConsistencyTokenRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait CallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The unique name of the table whose families should be modified. Values are of the form `projects/{project}/instances/{instance}/tables/{table}`. */
+  /** Required. The unique name of the Table for which to create a consistency token. Values are of the form `projects/{project}/instances/{instance}/tables/{table}`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ModifyColumnFamiliesRequest
+  var resource: GenerateConsistencyTokenRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(name: String, resource: ModifyColumnFamiliesRequest): CallbackFields = {
+  inline def apply(name: String, resource: GenerateConsistencyTokenRequest): CallbackFields = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
@@ -94,7 +94,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ModifyColumnFamiliesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GenerateConsistencyTokenRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

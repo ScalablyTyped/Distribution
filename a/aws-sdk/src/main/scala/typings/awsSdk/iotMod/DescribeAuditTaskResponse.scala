@@ -19,7 +19,7 @@ trait DescribeAuditTaskResponse extends StObject {
   /**
     * The time the audit started.
     */
-  var taskStartTime: js.UndefOr[Timestamp] = js.undefined
+  var taskStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Statistical information about the audit.
@@ -53,7 +53,7 @@ object DescribeAuditTaskResponse {
     
     inline def setScheduledAuditNameUndefined: Self = StObject.set(x, "scheduledAuditName", js.undefined)
     
-    inline def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: js.Date): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
     
     inline def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
     

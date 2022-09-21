@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashOverArgs extends StObject {
   
-  def apply(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashOverArgs1x1 = js.native
+  def apply(func: js.Function1[/* repeated */ Any, Any]): LodashOverArgs1x1 = js.native
   def apply(
-    func: js.Function1[/* repeated */ js.Any, js.Any],
-    transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]
-  ): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply(func: __, transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]): LodashOverArgs1x2 = js.native
+    func: js.Function1[/* repeated */ Any, Any],
+    transforms: Many[js.Function1[/* repeated */ Any, Any]]
+  ): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(func: __, transforms: Many[js.Function1[/* repeated */ Any, Any]]): LodashOverArgs1x2 = js.native
 }

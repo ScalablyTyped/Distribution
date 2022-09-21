@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the protection of a workbook object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait WorkbookProtectionLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait WorkbookProtectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the workbook is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `protected`: js.UndefOr[Boolean] = js.undefined

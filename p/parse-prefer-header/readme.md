@@ -10,10 +10,10 @@ parses an http prefer header, aka rfc7240
 | ------------------ | :-------------: |
 | Full name          | parse-prefer-header |
 | Keywords           | prefer, rfc7240, 7240 |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 533649 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 183087.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/ppaskaris/node-parse-prefer-header#readme)

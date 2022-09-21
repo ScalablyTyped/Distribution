@@ -22,10 +22,9 @@ object stickyStickyMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky/Sticky", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[StickyProps, ComponentState, js.Any] {
+  open class default protected () extends Component[StickyProps, ComponentState, Any] {
     def this(props: StickyProps) = this()
-    def this(props: StickyProps, context: js.Any) = this()
+    def this(props: StickyProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky/Sticky", JSImport.Default)
   @js.native
@@ -34,7 +33,7 @@ object stickyStickyMod extends Shortcut {
   trait StickyProps
     extends StObject
        with StrictStickyProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StickyProps {
     
     inline def apply(): StickyProps = {
@@ -49,7 +48,7 @@ object stickyStickyMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Offset in pixels from the bottom of the screen when fixing element to viewport. */
     var bottomOffset: js.UndefOr[Double] = js.undefined
@@ -128,7 +127,7 @@ object stickyStickyMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

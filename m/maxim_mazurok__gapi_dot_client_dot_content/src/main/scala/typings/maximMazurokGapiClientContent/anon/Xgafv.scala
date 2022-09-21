@@ -14,9 +14,6 @@ trait Xgafv extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account. */
-  var accountId: String
-  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -29,10 +26,7 @@ trait Xgafv extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account
-    * of this account.
-    */
+  /** The ID of the managing account. This must be a multi-client account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -55,8 +49,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(accountId: String, merchantId: String, resource: Account): Xgafv = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, resource: Account): Xgafv = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -69,8 +63,6 @@ object Xgafv {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
-    
-    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

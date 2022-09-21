@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListenerTimeout extends StObject {
   
+  /**
+    * An object that represents types of timeouts. 
+    */
   var grpc: js.UndefOr[GrpcTimeout] = js.undefined
   
   /**

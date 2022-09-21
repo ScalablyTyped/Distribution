@@ -10,10 +10,10 @@ object localShippingMod {
   
   @JSImport("material-ui/svg-icons/maps/local-shipping", JSImport.Default)
   @js.native
-  class default () extends MapsLocalShipping
+  open class default () extends MapsLocalShipping
   
   @JSImport("material-ui/svg-icons/maps/local-shipping", "MapsLocalShipping")
   @js.native
-  class MapsLocalShipping ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalShipping ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

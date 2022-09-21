@@ -15,6 +15,8 @@ object OuterExpressionKinds extends StObject {
   
   /* 6 */ val Assertions: typings.typescript.mod.OuterExpressionKinds.Assertions & Double = js.native
   
+  /* 16 */ val ExcludeJSDocTypeAssertion: typings.typescript.mod.OuterExpressionKinds.ExcludeJSDocTypeAssertion & Double = js.native
+  
   /* 4 */ val NonNullAssertions: typings.typescript.mod.OuterExpressionKinds.NonNullAssertions & Double = js.native
   
   /* 1 */ val Parentheses: typings.typescript.mod.OuterExpressionKinds.Parentheses & Double = js.native

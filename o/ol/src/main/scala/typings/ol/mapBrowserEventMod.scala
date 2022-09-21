@@ -12,7 +12,7 @@ object mapBrowserEventMod {
   
   @JSImport("ol/MapBrowserEvent", JSImport.Default)
   @js.native
-  class default[EVENT /* <: UIEvent */] protected () extends MapBrowserEvent[EVENT] {
+  open class default[EVENT /* <: UIEvent */] protected () extends MapBrowserEvent[EVENT] {
     def this(`type`: String, map: typings.ol.pluggableMapMod.default, originalEvent: EVENT) = this()
     def this(
       `type`: String,

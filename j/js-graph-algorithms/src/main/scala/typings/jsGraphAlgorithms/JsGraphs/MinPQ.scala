@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MinPQ[T] extends StObject {
   
-  /* private */ var N: js.Any
+  /* private */ var N: Any
   
-  /* private */ var compare: js.Any
+  /* private */ var compare: Any
   
   def delMin(): js.UndefOr[T]
   
@@ -16,7 +16,7 @@ trait MinPQ[T] extends StObject {
   
   def isEmpty(): Boolean
   
-  /* private */ var s: js.Any
+  /* private */ var s: Any
   
   def sink(k: Double): Unit
   
@@ -27,12 +27,12 @@ trait MinPQ[T] extends StObject {
 object MinPQ {
   
   inline def apply[T](
-    N: js.Any,
-    compare: js.Any,
+    N: Any,
+    compare: Any,
     delMin: () => js.UndefOr[T],
     enqueue: T => Unit,
     isEmpty: () => Boolean,
-    s: js.Any,
+    s: Any,
     sink: Double => Unit,
     size: () => Double,
     swim: Double => Unit
@@ -43,7 +43,7 @@ object MinPQ {
   
   extension [Self <: MinPQ[?], T](x: Self & MinPQ[T]) {
     
-    inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setDelMin(value: () => js.UndefOr[T]): Self = StObject.set(x, "delMin", js.Any.fromFunction0(value))
     
@@ -51,9 +51,9 @@ object MinPQ {
     
     inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    inline def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    inline def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     inline def setSink(value: Double => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
     

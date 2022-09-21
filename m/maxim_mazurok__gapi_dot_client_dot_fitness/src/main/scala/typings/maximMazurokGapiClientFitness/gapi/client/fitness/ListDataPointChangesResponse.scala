@@ -35,13 +35,13 @@ object ListDataPointChangesResponse {
     
     inline def setDeletedDataPointUndefined: Self = StObject.set(x, "deletedDataPoint", js.undefined)
     
-    inline def setDeletedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value :_*))
+    inline def setDeletedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value*))
     
     inline def setInsertedDataPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "insertedDataPoint", value.asInstanceOf[js.Any])
     
     inline def setInsertedDataPointUndefined: Self = StObject.set(x, "insertedDataPoint", js.undefined)
     
-    inline def setInsertedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value :_*))
+    inline def setInsertedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

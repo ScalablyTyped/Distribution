@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for chart gridlines.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -26,9 +26,9 @@ trait ChartGridlinesFormat
   var context_ChartGridlinesFormat: RequestContext = js.native
   
   /**
-    *
     * Represents chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val line: ChartLineFormat = js.native
@@ -46,14 +46,8 @@ trait ChartGridlinesFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartGridlinesFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartGridlinesFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

@@ -14,7 +14,7 @@ trait XControllerBorder
   
   /**
     * allows to get current border sizes of the document.
-    * @returns {@link BorderWidths} representing the sizes of border
+    * @returns representing the sizes of border
     */
   val Border: BorderWidths
   
@@ -23,7 +23,7 @@ trait XControllerBorder
   
   /**
     * allows to get current border sizes of the document.
-    * @returns {@link BorderWidths} representing the sizes of border
+    * @returns representing the sizes of border
     */
   def getBorder(): BorderWidths
   
@@ -46,7 +46,7 @@ object XControllerBorder {
     addBorderResizeListener: XBorderResizeListener => Unit,
     getBorder: () => BorderWidths,
     queryBorderedArea: Rectangle => Rectangle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeBorderResizeListener: XBorderResizeListener => Unit
   ): XControllerBorder = {

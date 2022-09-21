@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Treebuilder")
 @js.native
-class Treebuilder ()
+open class Treebuilder ()
   extends typings.nodegit.treeBuilderMod.Treebuilder
 /* static members */
 object Treebuilder {

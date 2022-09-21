@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "Crosshair")
 @js.native
-class Crosshair[T] protected ()
-  extends PureComponent[CrosshairProps & T, js.Object, js.Any] {
+open class Crosshair[T] protected ()
+  extends PureComponent[CrosshairProps & T, js.Object, Any] {
   def this(props: CrosshairProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CrosshairProps & T, context: js.Any) = this()
+  def this(props: CrosshairProps & T, context: Any) = this()
 }

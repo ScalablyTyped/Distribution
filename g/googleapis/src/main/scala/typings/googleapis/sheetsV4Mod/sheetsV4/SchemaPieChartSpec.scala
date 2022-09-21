@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A &lt;a href=&quot;/chart/interactive/docs/gallery/piechart&quot;&gt;pie
-  * chart&lt;/a&gt;.
-  */
 trait SchemaPieChartSpec extends StObject {
   
   /**
@@ -18,12 +14,12 @@ trait SchemaPieChartSpec extends StObject {
   /**
     * Where the legend of the pie chart should be drawn.
     */
-  var legendPosition: js.UndefOr[String] = js.undefined
+  var legendPosition: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The size of the hole in the pie chart.
     */
-  var pieHole: js.UndefOr[Double] = js.undefined
+  var pieHole: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The data that covers the one and only series of the pie chart.
@@ -33,7 +29,7 @@ trait SchemaPieChartSpec extends StObject {
   /**
     * True if the pie is three dimensional.
     */
-  var threeDimensional: js.UndefOr[Boolean] = js.undefined
+  var threeDimensional: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaPieChartSpec {
   
@@ -50,9 +46,13 @@ object SchemaPieChartSpec {
     
     inline def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
+    inline def setLegendPositionNull: Self = StObject.set(x, "legendPosition", null)
+    
     inline def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
     inline def setPieHole(value: Double): Self = StObject.set(x, "pieHole", value.asInstanceOf[js.Any])
+    
+    inline def setPieHoleNull: Self = StObject.set(x, "pieHole", null)
     
     inline def setPieHoleUndefined: Self = StObject.set(x, "pieHole", js.undefined)
     
@@ -61,6 +61,8 @@ object SchemaPieChartSpec {
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     inline def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
+    
+    inline def setThreeDimensionalNull: Self = StObject.set(x, "threeDimensional", null)
     
     inline def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
   }

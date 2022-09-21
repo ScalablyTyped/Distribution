@@ -12,7 +12,6 @@ import typings.reactMdAlert.messageQueueMod.MessageQueueProps
 import typings.reactMdAlert.snackbarMod.SnackbarProps
 import typings.reactMdAlert.toastMod.ToastProps
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,54 +31,51 @@ object mod {
   @js.native
   val DEFAULT_MESSAGE_QUEUE_TIMEOUT: /* 5000 */ Double = js.native
   
-  @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES")
-  @js.native
-  val DEFAULT_TOAST_CLASSNAMES: CSSTransitionClassNames = js.native
+  /* Inlined std.Readonly<@react-md/transition.@react-md/transition.CSSTransitionClassNamesObject> */
+  object DEFAULT_TOAST_CLASSNAMES {
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.appear")
+    @js.native
+    val appear: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.appearActive")
+    @js.native
+    val appearActive: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.appearDone")
+    @js.native
+    val appearDone: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.enter")
+    @js.native
+    val enter: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.enterActive")
+    @js.native
+    val enterActive: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.enterDone")
+    @js.native
+    val enterDone: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.exit")
+    @js.native
+    val exit: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.exitActive")
+    @js.native
+    val exitActive: js.UndefOr[String] = js.native
+    
+    @JSImport("@react-md/alert", "DEFAULT_TOAST_CLASSNAMES.exitDone")
+    @js.native
+    val exitDone: js.UndefOr[String] = js.native
+  }
   
   @JSImport("@react-md/alert", "DEFAULT_TOAST_TIMEOUT")
   @js.native
   val DEFAULT_TOAST_TIMEOUT: TransitionTimeout = js.native
   
-  object MessageQueue {
-    
-    inline def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/alert", "MessageQueue")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes.defaultQueue")
-      @js.native
-      def defaultQueue: js.Any = js.native
-      inline def defaultQueue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultQueue")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes.duplicates")
-      @js.native
-      def duplicates: js.Any = js.native
-      inline def duplicates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicates")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes.onActionClick")
-      @js.native
-      def onActionClick: js.Any = js.native
-      inline def onActionClick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onActionClick")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/alert", "MessageQueue.propTypes.timeout")
-      @js.native
-      def timeout: js.Any = js.native
-      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
-    }
-  }
+  inline def MessageQueue[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MessageQueue")(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/alert", "MessageQueueActionsContext")
   @js.native

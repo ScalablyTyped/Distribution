@@ -15,7 +15,6 @@ import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
-import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,11 +64,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Selectors]
     }
     
-    type AttrHandleFunction = js.Function3[/* elem */ js.Any, /* casePreservedName */ String, /* isXML */ Boolean, String]
+    type AttrHandleFunction = js.Function3[/* elem */ Any, /* casePreservedName */ String, /* isXML */ Boolean, String]
     
     type AttrHandleFunctions = StringDictionary[AttrHandleFunction]
     
-    type CreatePseudoFunction = js.Function1[/* repeated */ js.Any, PseudoFunction]
+    type CreatePseudoFunction = js.Function1[/* repeated */ Any, PseudoFunction]
     
     type FilterFunction = js.Function2[/* element */ String, /* repeated */ String, Boolean]
     
@@ -84,7 +83,7 @@ object mod extends Shortcut {
     
     type FindFunctions = StringDictionary[FindFunction]
     
-    type Matches = StringDictionary[RegExp]
+    type Matches = StringDictionary[js.RegExp]
     
     type PreFilterFunction = js.Function1[/* match */ RegExpMatchArray, js.Array[String]]
     
@@ -139,9 +138,9 @@ object mod extends Shortcut {
     // tslint:disable-next-line:ban-types
     def compile(selector: String): js.Function = js.native
     
-    def matchSelector(element: Element, selector: String): Boolean = js.native
-    
     def matches(selector: String, elements: js.Array[Element]): js.Array[Element] = js.native
+    
+    def matchesSelector(element: Element, selector: String): Boolean = js.native
     
     var selectors: Selectors = js.native
   }

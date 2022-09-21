@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "HeadBucketCommand")
 @js.native
-class HeadBucketCommand protected ()
+open class HeadBucketCommand protected ()
   extends typings.awsSdkClientS3Browser.headBucketCommandMod.HeadBucketCommand {
   def this(input: HeadBucketInput) = this()
 }

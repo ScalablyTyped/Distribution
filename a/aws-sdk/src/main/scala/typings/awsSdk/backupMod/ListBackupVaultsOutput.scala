@@ -29,7 +29,7 @@ object ListBackupVaultsOutput {
     
     inline def setBackupVaultListUndefined: Self = StObject.set(x, "BackupVaultList", js.undefined)
     
-    inline def setBackupVaultListVarargs(value: BackupVaultListMember*): Self = StObject.set(x, "BackupVaultList", js.Array(value :_*))
+    inline def setBackupVaultListVarargs(value: BackupVaultListMember*): Self = StObject.set(x, "BackupVaultList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

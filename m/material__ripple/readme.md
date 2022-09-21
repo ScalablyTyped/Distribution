@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__ripple
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web Ink Ripple effect for web element interactions
@@ -10,10 +10,10 @@ The Material Components for the web Ink Ripple effect for web element interactio
 | ------------------ | :-------------: |
 | Full name          | @material/ripple |
 | Keywords           | material components, material design, ripple |
-| # releases         | 618 |
-| # dependents       | 132 |
-| # downloads        | 5458105 |
-| # stars            | 1 |
+| # releases         | 715 |
+| # dependents       | 0.0 |
+| # downloads        | 715338.6666666666 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

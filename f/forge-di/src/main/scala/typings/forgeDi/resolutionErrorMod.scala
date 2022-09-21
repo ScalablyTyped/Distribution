@@ -9,14 +9,16 @@ object resolutionErrorMod {
   
   @JSImport("forge-di/dist/errors/ResolutionError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ResolutionError {
-    def this(name: String, hint: js.Any, context: typings.forgeDi.contextMod.default, message: String) = this()
+    def this(name: String, hint: Any, context: typings.forgeDi.contextMod.default, message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

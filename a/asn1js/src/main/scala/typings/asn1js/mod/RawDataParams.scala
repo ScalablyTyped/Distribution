@@ -1,13 +1,13 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined std.Partial<asn1js.asn1js.IRawData> */
 trait RawDataParams extends StObject {
   
-  var data: js.UndefOr[ArrayBuffer] = js.undefined
+  var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
 }
 object RawDataParams {
   
@@ -18,7 +18,7 @@ object RawDataParams {
   
   extension [Self <: RawDataParams](x: Self) {
     
-    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DbJsStatic extends StObject {
   
-  def cmp(key1: js.Any, key2: js.Any): Double
+  def cmp(key1: Any, key2: Any): Double
   
   def delete(dbName: String): js.Promise[Unit]
   
@@ -15,7 +15,7 @@ trait DbJsStatic extends StObject {
 object DbJsStatic {
   
   inline def apply(
-    cmp: (js.Any, js.Any) => Double,
+    cmp: (Any, Any) => Double,
     delete: String => js.Promise[Unit],
     open: OpenOptions => js.Promise[Server]
   ): DbJsStatic = {
@@ -25,7 +25,7 @@ object DbJsStatic {
   
   extension [Self <: DbJsStatic](x: Self) {
     
-    inline def setCmp(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
+    inline def setCmp(value: (Any, Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
     
     inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

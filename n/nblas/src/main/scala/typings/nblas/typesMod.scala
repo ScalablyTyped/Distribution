@@ -1,29 +1,40 @@
 package typings.nblas
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Float32Array
-import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type FloatArray = Float64Array | Float32Array
+  type FloatArray = js.typedarray.Float64Array | js.typedarray.Float32Array
   
   @js.native
   trait INBlas
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     def asum(x: FloatArray): Double = js.native
     
     def axpy(x: FloatArray, y: FloatArray): Unit = js.native
     def axpy(x: FloatArray, y: FloatArray, a: Double): Unit = js.native
     
-    def caxpy(n: Double, alpha: Float32Array, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def caxpy(
+      n: Double,
+      alpha: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
-    def ccopy(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def ccopy(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
     def cgbmv(
       trans: MatrixTrans,
@@ -31,13 +42,13 @@ object typesMod {
       n: Double,
       kl: Double,
       ku: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      beta: Float32Array,
-      y: Float32Array,
+      beta: js.typedarray.Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
@@ -47,13 +58,13 @@ object typesMod {
       m: Double,
       n: Double,
       k: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
-      beta: Float32Array,
-      c: Float32Array,
+      beta: js.typedarray.Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -61,34 +72,40 @@ object typesMod {
       trans: MatrixTrans,
       m: Double,
       n: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      beta: Float32Array,
-      y: Float32Array,
+      beta: js.typedarray.Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
     def copy(x: FloatArray, y: FloatArray): Unit = js.native
     
-    def cscal(n: Double, a: Float32Array, x: Float32Array, incx: Double): Unit = js.native
+    def cscal(n: Double, a: js.typedarray.Float32Array, x: js.typedarray.Float32Array, incx: Double): Unit = js.native
     
-    def cswap(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def cswap(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
     def csymm(
       side: MatrixLeftRight,
       uplo: MatrixUpperLower,
       m: Double,
       n: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
-      beta: Float32Array,
-      c: Float32Array,
+      beta: js.typedarray.Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -97,13 +114,13 @@ object typesMod {
       trans: MatrixTrans,
       n: Double,
       k: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
-      beta: Float32Array,
-      c: Float32Array,
+      beta: js.typedarray.Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -112,11 +129,11 @@ object typesMod {
       trans: MatrixTrans,
       n: Double,
       k: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      beta: Float32Array,
-      c: Float32Array,
+      beta: js.typedarray.Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -126,9 +143,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -138,9 +155,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -149,8 +166,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float32Array,
-      x: Float32Array,
+      ap: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -159,8 +176,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float32Array,
-      x: Float32Array,
+      ap: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -171,10 +188,10 @@ object typesMod {
       diag: MatrixUnit,
       m: Double,
       n: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double
     ): Unit = js.native
     
@@ -183,9 +200,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -196,10 +213,10 @@ object typesMod {
       diag: MatrixUnit,
       m: Double,
       n: Double,
-      alpha: Float32Array,
-      a: Float32Array,
+      alpha: js.typedarray.Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double
     ): Unit = js.native
     
@@ -208,19 +225,38 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
-    def dasum(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def dasum(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
-    def daxpy(n: Double, alpha: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def daxpy(
+      n: Double,
+      alpha: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
-    def dcopy(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def dcopy(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
-    def ddot(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Double = js.native
+    def ddot(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Double = js.native
     
     def dgbmv(
       trans: MatrixTrans,
@@ -229,12 +265,12 @@ object typesMod {
       kl: Double,
       ku: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
       beta: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
@@ -245,12 +281,12 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
       beta: Double,
-      c: Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -259,12 +295,12 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
       beta: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
@@ -272,68 +308,106 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double
     ): Unit = js.native
     
-    def dnrm2(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def dnrm2(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
     def dot(x: FloatArray, y: FloatArray): Double = js.native
     
-    def drot(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double, c: Double, s: Double): Unit = js.native
+    def drot(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double,
+      c: Double,
+      s: Double
+    ): Unit = js.native
     
-    def drotg(a: Float64Array, b: Float64Array, c: Float64Array, s: Float64Array): Unit = js.native
+    def drotg(
+      a: js.typedarray.Float64Array,
+      b: js.typedarray.Float64Array,
+      c: js.typedarray.Float64Array,
+      s: js.typedarray.Float64Array
+    ): Unit = js.native
     
-    def drotm(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def drotm(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
-    def drotmg(d1: Float64Array, d2: Float64Array, x1: Float64Array, y1: Float64Array, param: Float64Array): Unit = js.native
+    def drotmg(
+      d1: js.typedarray.Float64Array,
+      d2: js.typedarray.Float64Array,
+      x1: js.typedarray.Float64Array,
+      y1: js.typedarray.Float64Array,
+      param: js.typedarray.Float64Array
+    ): Unit = js.native
     
     def dsbmv(
       uplo: MatrixUpperLower,
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
       beta: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
-    def dscal(n: Double, a: Double, x: Float64Array, incx: Double): Unit = js.native
+    def dscal(n: Double, a: Double, x: js.typedarray.Float64Array, incx: Double): Unit = js.native
     
     def dspmv(
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      ap: Float64Array,
-      x: Float64Array,
+      ap: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
       beta: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
-    def dspr(uplo: MatrixUpperLower, n: Double, alpha: Double, x: Float64Array, incx: Double, ap: Float64Array): Unit = js.native
+    def dspr(
+      uplo: MatrixUpperLower,
+      n: Double,
+      alpha: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      ap: js.typedarray.Float64Array
+    ): Unit = js.native
     
     def dspr2(
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double,
-      ap: Float64Array
+      ap: js.typedarray.Float64Array
     ): Unit = js.native
     
-    def dswap(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def dswap(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
     def dsymm(
       side: MatrixLeftRight,
@@ -341,12 +415,12 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
       beta: Double,
-      c: Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -354,12 +428,12 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
       beta: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
@@ -367,9 +441,9 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double
     ): Unit = js.native
     
@@ -377,11 +451,11 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      y: Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double
     ): Unit = js.native
     
@@ -391,12 +465,12 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
       beta: Double,
-      c: Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -406,10 +480,10 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
       beta: Double,
-      c: Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -419,9 +493,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -431,9 +505,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -442,8 +516,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float64Array,
-      x: Float64Array,
+      ap: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -452,8 +526,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float64Array,
-      x: Float64Array,
+      ap: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -465,9 +539,9 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double
     ): Unit = js.native
     
@@ -476,9 +550,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -490,9 +564,9 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double
     ): Unit = js.native
     
@@ -501,15 +575,15 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
-    def dzasum(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def dzasum(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
-    def dznrm2(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def dznrm2(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
     def gbmv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
     def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: Double): Unit = js.native
@@ -865,13 +939,13 @@ object typesMod {
     
     def iamax(x: FloatArray): Double = js.native
     
-    def icamax(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def icamax(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
-    def idamax(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def idamax(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
-    def isamax(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def isamax(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
-    def izamax(n: Double, x: Float64Array, incx: Double): Double = js.native
+    def izamax(n: Double, x: js.typedarray.Float64Array, incx: Double): Double = js.native
     
     def nrm2(x: FloatArray): Double = js.native
     
@@ -883,9 +957,16 @@ object typesMod {
     
     def rotmg(d1: FloatArray, d2: FloatArray, x1: FloatArray, y1: FloatArray, param: FloatArray): Unit = js.native
     
-    def sasum(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def sasum(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
-    def saxpy(n: Double, alpha: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def saxpy(
+      n: Double,
+      alpha: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
     def sbmv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
     def sbmv(a: FloatArray, x: FloatArray, y: FloatArray, k: Double): Unit = js.native
@@ -938,13 +1019,25 @@ object typesMod {
     
     def scal(x: FloatArray, a: Double): Unit = js.native
     
-    def scasum(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def scasum(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
-    def scnrm2(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def scnrm2(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
-    def scopy(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def scopy(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
-    def sdot(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Double = js.native
+    def sdot(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Double = js.native
     
     def sgbmv(
       trans: MatrixTrans,
@@ -953,12 +1046,12 @@ object typesMod {
       kl: Double,
       ku: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
       beta: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
@@ -969,12 +1062,12 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
       beta: Double,
-      c: Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -983,12 +1076,12 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
       beta: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
@@ -996,15 +1089,15 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double
     ): Unit = js.native
     
-    def snrm2(n: Double, x: Float32Array, incx: Double): Double = js.native
+    def snrm2(n: Double, x: js.typedarray.Float32Array, incx: Double): Double = js.native
     
     def spmv(ap: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
     def spmv(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: Unit, alpha: Double): Unit = js.native
@@ -1025,56 +1118,94 @@ object typesMod {
     def spr2(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower): Unit = js.native
     def spr2(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
     
-    def srot(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double, c: Double, s: Double): Unit = js.native
+    def srot(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double,
+      c: Double,
+      s: Double
+    ): Unit = js.native
     
-    def srotg(a: Float32Array, b: Float32Array, c: Float32Array, s: Float32Array): Unit = js.native
+    def srotg(
+      a: js.typedarray.Float32Array,
+      b: js.typedarray.Float32Array,
+      c: js.typedarray.Float32Array,
+      s: js.typedarray.Float32Array
+    ): Unit = js.native
     
-    def srotm(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def srotm(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
-    def srotmg(d1: Float32Array, d2: Float32Array, x1: Float32Array, y1: Float32Array, param: Float32Array): Unit = js.native
+    def srotmg(
+      d1: js.typedarray.Float32Array,
+      d2: js.typedarray.Float32Array,
+      x1: js.typedarray.Float32Array,
+      y1: js.typedarray.Float32Array,
+      param: js.typedarray.Float32Array
+    ): Unit = js.native
     
     def ssbmv(
       uplo: MatrixUpperLower,
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
       beta: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
-    def sscal(n: Double, a: Double, x: Float32Array, incx: Double): Unit = js.native
+    def sscal(n: Double, a: Double, x: js.typedarray.Float32Array, incx: Double): Unit = js.native
     
     def sspmv(
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      ap: Float32Array,
-      x: Float32Array,
+      ap: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
       beta: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
-    def sspr(uplo: MatrixUpperLower, n: Double, alpha: Double, x: Float32Array, incx: Double, ap: Float32Array): Unit = js.native
+    def sspr(
+      uplo: MatrixUpperLower,
+      n: Double,
+      alpha: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      ap: js.typedarray.Float32Array
+    ): Unit = js.native
     
     def sspr2(
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double,
-      ap: Float32Array
+      ap: js.typedarray.Float32Array
     ): Unit = js.native
     
-    def sswap(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
+    def sswap(
+      n: Double,
+      x: js.typedarray.Float32Array,
+      incx: Double,
+      y: js.typedarray.Float32Array,
+      incy: Double
+    ): Unit = js.native
     
     def ssymm(
       side: MatrixLeftRight,
@@ -1082,12 +1213,12 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
       beta: Double,
-      c: Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -1095,12 +1226,12 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
       beta: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double
     ): Unit = js.native
     
@@ -1108,9 +1239,9 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double
     ): Unit = js.native
     
@@ -1118,11 +1249,11 @@ object typesMod {
       uplo: MatrixUpperLower,
       n: Double,
       alpha: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double,
-      y: Float32Array,
+      y: js.typedarray.Float32Array,
       incy: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double
     ): Unit = js.native
     
@@ -1132,12 +1263,12 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double,
       beta: Double,
-      c: Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -1147,10 +1278,10 @@ object typesMod {
       n: Double,
       k: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
       beta: Double,
-      c: Float32Array,
+      c: js.typedarray.Float32Array,
       ldc: Double
     ): Unit = js.native
     
@@ -1160,9 +1291,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -1172,9 +1303,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -1183,8 +1314,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float32Array,
-      x: Float32Array,
+      ap: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -1193,8 +1324,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float32Array,
-      x: Float32Array,
+      ap: js.typedarray.Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -1206,9 +1337,9 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double
     ): Unit = js.native
     
@@ -1217,9 +1348,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -1231,9 +1362,9 @@ object typesMod {
       m: Double,
       n: Double,
       alpha: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      b: Float32Array,
+      b: js.typedarray.Float32Array,
       ldb: Double
     ): Unit = js.native
     
@@ -1242,9 +1373,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float32Array,
+      a: js.typedarray.Float32Array,
       lda: Double,
-      x: Float32Array,
+      x: js.typedarray.Float32Array,
       incx: Double
     ): Unit = js.native
     
@@ -2304,9 +2435,22 @@ object typesMod {
     def trsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
     def trsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
     
-    def zaxpy(n: Double, alpha: Float64Array, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def zaxpy(
+      n: Double,
+      alpha: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
-    def zcopy(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def zcopy(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
     def zgbmv(
       trans: MatrixTrans,
@@ -2314,13 +2458,13 @@ object typesMod {
       n: Double,
       kl: Double,
       ku: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      beta: Float64Array,
-      y: Float64Array,
+      beta: js.typedarray.Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
@@ -2330,13 +2474,13 @@ object typesMod {
       m: Double,
       n: Double,
       k: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
-      beta: Float64Array,
-      c: Float64Array,
+      beta: js.typedarray.Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -2344,32 +2488,38 @@ object typesMod {
       trans: MatrixTrans,
       m: Double,
       n: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double,
-      beta: Float64Array,
-      y: Float64Array,
+      beta: js.typedarray.Float64Array,
+      y: js.typedarray.Float64Array,
       incy: Double
     ): Unit = js.native
     
-    def zscal(n: Double, a: Float64Array, x: Float64Array, incx: Double): Unit = js.native
+    def zscal(n: Double, a: js.typedarray.Float64Array, x: js.typedarray.Float64Array, incx: Double): Unit = js.native
     
-    def zswap(n: Double, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native
+    def zswap(
+      n: Double,
+      x: js.typedarray.Float64Array,
+      incx: Double,
+      y: js.typedarray.Float64Array,
+      incy: Double
+    ): Unit = js.native
     
     def zsymm(
       side: MatrixLeftRight,
       uplo: MatrixUpperLower,
       m: Double,
       n: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
-      beta: Float64Array,
-      c: Float64Array,
+      beta: js.typedarray.Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -2378,13 +2528,13 @@ object typesMod {
       trans: MatrixTrans,
       n: Double,
       k: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double,
-      beta: Float64Array,
-      c: Float64Array,
+      beta: js.typedarray.Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -2393,11 +2543,11 @@ object typesMod {
       trans: MatrixTrans,
       n: Double,
       k: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      beta: Float64Array,
-      c: Float64Array,
+      beta: js.typedarray.Float64Array,
+      c: js.typedarray.Float64Array,
       ldc: Double
     ): Unit = js.native
     
@@ -2407,9 +2557,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -2419,9 +2569,9 @@ object typesMod {
       diag: MatrixUnit,
       n: Double,
       k: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -2430,8 +2580,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float64Array,
-      x: Float64Array,
+      ap: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -2440,8 +2590,8 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      ap: Float64Array,
-      x: Float64Array,
+      ap: js.typedarray.Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -2452,10 +2602,10 @@ object typesMod {
       diag: MatrixUnit,
       m: Double,
       n: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double
     ): Unit = js.native
     
@@ -2464,9 +2614,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
     
@@ -2477,10 +2627,10 @@ object typesMod {
       diag: MatrixUnit,
       m: Double,
       n: Double,
-      alpha: Float64Array,
-      a: Float64Array,
+      alpha: js.typedarray.Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      b: Float64Array,
+      b: js.typedarray.Float64Array,
       ldb: Double
     ): Unit = js.native
     
@@ -2489,9 +2639,9 @@ object typesMod {
       trans: MatrixTrans,
       diag: MatrixUnit,
       n: Double,
-      a: Float64Array,
+      a: js.typedarray.Float64Array,
       lda: Double,
-      x: Float64Array,
+      x: js.typedarray.Float64Array,
       incx: Double
     ): Unit = js.native
   }

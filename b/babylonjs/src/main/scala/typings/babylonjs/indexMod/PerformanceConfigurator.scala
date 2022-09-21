@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PerformanceConfigurator")
 @js.native
-class PerformanceConfigurator ()
+open class PerformanceConfigurator ()
   extends typings.babylonjs.enginesIndexMod.PerformanceConfigurator
 /* static members */
 object PerformanceConfigurator {
@@ -18,8 +18,8 @@ object PerformanceConfigurator {
   /** @hidden */
   @JSImport("babylonjs/index", "PerformanceConfigurator.MatrixCurrentType")
   @js.native
-  def MatrixCurrentType: js.Any = js.native
-  inline def MatrixCurrentType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MatrixCurrentType")(x.asInstanceOf[js.Any])
+  def MatrixCurrentType: Any = js.native
+  inline def MatrixCurrentType_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MatrixCurrentType")(x.asInstanceOf[js.Any])
   
   /** @hidden */
   @JSImport("babylonjs/index", "PerformanceConfigurator.MatrixTrackPrecisionChange")
@@ -30,8 +30,8 @@ object PerformanceConfigurator {
   /** @hidden */
   @JSImport("babylonjs/index", "PerformanceConfigurator.MatrixTrackedMatrices")
   @js.native
-  def MatrixTrackedMatrices: js.Array[js.Any] | Null = js.native
-  inline def MatrixTrackedMatrices_=(x: js.Array[js.Any] | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MatrixTrackedMatrices")(x.asInstanceOf[js.Any])
+  def MatrixTrackedMatrices: js.Array[Any] | Null = js.native
+  inline def MatrixTrackedMatrices_=(x: js.Array[Any] | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MatrixTrackedMatrices")(x.asInstanceOf[js.Any])
   
   /** @hidden */
   @JSImport("babylonjs/index", "PerformanceConfigurator.MatrixUse64Bits")
@@ -39,6 +39,9 @@ object PerformanceConfigurator {
   def MatrixUse64Bits: Boolean = js.native
   inline def MatrixUse64Bits_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MatrixUse64Bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /**
+    * @param use64bits
+    * @hidden
+    */
   inline def SetMatrixPrecision(use64bits: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetMatrixPrecision")(use64bits.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

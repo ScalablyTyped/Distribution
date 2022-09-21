@@ -1,9 +1,9 @@
 package typings.materialCircularProgress
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialCircularProgress.foundationMod.MDCCircularProgressFoundation
 import typings.materialProgressIndicator.mod.MDCProgressIndicator
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ object componentMod {
   
   @JSImport("@material/circular-progress/component", "MDCCircularProgress")
   @js.native
-  class MDCCircularProgress protected ()
+  open class MDCCircularProgress protected ()
     extends MDCComponent[MDCCircularProgressFoundation]
        with MDCProgressIndicator {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCCircularProgressFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCCircularProgressFoundation, args: Any*) = this()
     
     /**
       * Puts the component in the closed state.
@@ -29,6 +29,8 @@ object componentMod {
       */
     /* CompleteClass */
     var determinate: Boolean = js.native
+    
+    /* private */ var determinateCircle: Any = js.native
     
     def initialize(): Unit = js.native
     
@@ -56,6 +58,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCCircularProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCCircularProgress]
+    inline def attachTo(root: typings.std.Element): MDCCircularProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCCircularProgress]
   }
 }

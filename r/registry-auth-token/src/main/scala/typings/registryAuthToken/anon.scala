@@ -33,4 +33,24 @@ object anon {
       inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     }
   }
+  
+  /* Inlined std.Pick<registry-auth-token.registry-auth-token.AuthOptions, 'npmrc'> */
+  trait PickAuthOptionsnpmrc extends StObject {
+    
+    var npmrc: js.UndefOr[DictregistryUrls] = js.undefined
+  }
+  object PickAuthOptionsnpmrc {
+    
+    inline def apply(): PickAuthOptionsnpmrc = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickAuthOptionsnpmrc]
+    }
+    
+    extension [Self <: PickAuthOptionsnpmrc](x: Self) {
+      
+      inline def setNpmrc(value: DictregistryUrls): Self = StObject.set(x, "npmrc", value.asInstanceOf[js.Any])
+      
+      inline def setNpmrcUndefined: Self = StObject.set(x, "npmrc", js.undefined)
+    }
+  }
 }

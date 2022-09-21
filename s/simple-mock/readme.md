@@ -11,9 +11,9 @@ Super simple stubs and spies with 1-step sandbox restore
 | Full name          | simple-mock |
 | Keywords           | test, simplemock, simple, mock, stub, spy, fake |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 357002 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 24449.333333333332 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/jupiter/simple-mock)

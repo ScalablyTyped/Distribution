@@ -1,9 +1,5 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +9,24 @@ trait ParamsResourceInfotypesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional filter to only return infoTypes supported by certain parts of
-    * the API. Defaults to supported_by=INSPECT.
+    * filter to only return infoTypes supported by certain parts of the API. Defaults to supported_by=INSPECT.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional BCP-47 language code for localized infoType friendly names. If
-    * omitted, or if localized strings are not available, en-US strings will be
-    * returned.
+    * BCP-47 language code for localized infoType friendly names. If omitted, or if localized strings are not available, en-US strings will be returned.
     */
   var languageCode: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Deprecated. This field has no effect.
+    */
+  var locationId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The parent resource name. The format of this value is as follows: locations/ LOCATION_ID
+    */
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceInfotypesList {
   
@@ -39,10 +37,6 @@ object ParamsResourceInfotypesList {
   
   extension [Self <: ParamsResourceInfotypesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -50,5 +44,13 @@ object ParamsResourceInfotypesList {
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

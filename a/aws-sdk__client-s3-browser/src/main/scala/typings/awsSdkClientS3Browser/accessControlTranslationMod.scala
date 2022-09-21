@@ -8,5 +8,5 @@ object accessControlTranslationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_AccessControlTranslation", "_AccessControlTranslation")
   @js.native
-  val AccessControlTranslation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AccessControlTranslation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

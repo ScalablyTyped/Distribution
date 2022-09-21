@@ -11,9 +11,9 @@ Detect if the browser supports the touch events api
 | Full name          | detect-touch-events |
 | Keywords           | detect, touch, touch events, touch device |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 1572470 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 224177.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/rafgraph/detect-touch-events#readme)

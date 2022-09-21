@@ -12,7 +12,7 @@ trait DescribeConfigurationAggregatorSourcesStatusRequest extends StObject {
   var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
-    * The maximum number of AggregatorSourceStatus returned on each page. The default is maximum. If you specify 0, AWS Config uses the default.
+    * The maximum number of AggregatorSourceStatus returned on each page. The default is maximum. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -49,6 +49,6 @@ object DescribeConfigurationAggregatorSourcesStatusRequest {
     
     inline def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
     
-    inline def setUpdateStatusVarargs(value: AggregatedSourceStatusType*): Self = StObject.set(x, "UpdateStatus", js.Array(value :_*))
+    inline def setUpdateStatusVarargs(value: AggregatedSourceStatusType*): Self = StObject.set(x, "UpdateStatus", js.Array(value*))
   }
 }

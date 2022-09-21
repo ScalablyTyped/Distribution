@@ -10,10 +10,10 @@ A plugin for the Karma test runner that loads .html and .json fixtures
 | ------------------ | :-------------: |
 | Full name          | karma-fixture |
 | Keywords           | karma, karma-plugin, fixtures, fixture |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 705186 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 72401.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/billtrik/karma-fixture)

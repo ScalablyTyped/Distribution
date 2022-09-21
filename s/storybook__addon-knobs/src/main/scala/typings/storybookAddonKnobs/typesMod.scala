@@ -34,7 +34,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.array")
     @js.native
-    class array ()
+    open class array ()
       extends typings.storybookAddonKnobs.arrayMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.array")
     @js.native
@@ -54,7 +54,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.color")
     @js.native
-    class color ()
+    open class color ()
       extends typings.storybookAddonKnobs.colorMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.color")
     @js.native
@@ -64,7 +64,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.date")
     @js.native
-    class date ()
+    open class date ()
       extends typings.storybookAddonKnobs.dateMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.date")
     @js.native
@@ -79,7 +79,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.number")
     @js.native
-    class number ()
+    open class number ()
       extends typings.storybookAddonKnobs.numberMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.number")
     @js.native
@@ -89,7 +89,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
     @js.native
-    class `object`[T] ()
+    open class `object`[T] ()
       extends typings.storybookAddonKnobs.objectMod.default[T]
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
     @js.native
@@ -103,7 +103,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.radios")
     @js.native
-    class radios ()
+    open class radios ()
       extends typings.storybookAddonKnobs.radioMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.radios")
     @js.native
@@ -118,7 +118,7 @@ object typesMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.text")
     @js.native
-    class text ()
+    open class text ()
       extends typings.storybookAddonKnobs.textMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.text")
     @js.native
@@ -128,7 +128,7 @@ object typesMod {
   
   inline def getKnobControl(`type`: KnobType): KnobControlType = ^.asInstanceOf[js.Dynamic].applyDynamic("getKnobControl")(`type`.asInstanceOf[js.Any]).asInstanceOf[KnobControlType]
   
-  type KnobControlType = ComponentType[js.Any] & Deserialize
+  type KnobControlType = ComponentType[Any] & Deserialize
   
   /* keyof @storybook/addon-knobs.anon.Array */ /* Rewritten from type alias, can be one of: 
     - typings.storybookAddonKnobs.storybookAddonKnobsStrings.text

@@ -27,7 +27,7 @@ object GetEntitiesRequest {
     
     inline def setIds(value: Urns): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    inline def setIdsVarargs(value: Urn*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: Urn*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
     

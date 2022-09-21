@@ -1,108 +1,54 @@
 package typings.materialChips
 
+import typings.materialChips.constantsMod.MDCChipActionAttributes
+import typings.materialChips.constantsMod.MDCChipActionEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  trait MDCChipSetAdapter extends StObject {
+  trait MDCChipActionAdapter extends StObject {
     
-    /**
-      * Announces the message via an aria-live region.
-      */
-    def announceMessage(message: String): Unit
+    def emitEvent[D /* <: js.Object */](name: MDCChipActionEvents, detail: D): Unit
     
-    /**
-      * Calls Chip#focusPrimaryAction() on the chip at the given index.
-      * @param index the index of the chip
-      */
-    def focusChipPrimaryActionAtIndex(index: Double): Unit
+    def focus(): Unit
     
-    /**
-      * Calls Chip#focusTrailingAction() on the chip at the given index.
-      * @param index the index of the chip
-      */
-    def focusChipTrailingActionAtIndex(index: Double): Unit
+    def getAttribute(attr: MDCChipActionAttributes): String | Null
     
-    /**
-      * @return the number of chips in the chip set.
-      */
-    def getChipListCount(): Double
+    def getElementID(): String
     
-    /**
-      * Returns the index of the chip at the given ID.
-      * @param chipId the unique ID of the chip
-      * @return the numerical index of the chip with the matching id or -1.
-      */
-    def getIndexOfChipById(chipId: String): Double
+    def removeAttribute(attr: MDCChipActionAttributes): Unit
     
-    /**
-      * @return true if the root element contains the given class name.
-      */
-    def hasClass(className: String): Boolean
-    
-    /**
-      * @return true if the text direction is RTL.
-      */
-    def isRTL(): Boolean
-    
-    /**
-      * Removes the chip with the given index from the chip set.
-      * Make sure to remove it from the chip list, too.
-      */
-    def removeChipAtIndex(index: Double): Unit
-    
-    /**
-      * Removes focus from the chip at the given index.
-      * @param index the index of the chip
-      */
-    def removeFocusFromChipAtIndex(index: Double): Unit
-    
-    /**
-      * Sets the selected state of the chip at the given index.
-      */
-    def selectChipAtIndex(index: Double, isSelected: Boolean, shouldNotifyClients: Boolean): Unit
+    def setAttribute(attr: MDCChipActionAttributes, value: String): Unit
   }
-  object MDCChipSetAdapter {
+  object MDCChipActionAdapter {
     
     inline def apply(
-      announceMessage: String => Unit,
-      focusChipPrimaryActionAtIndex: Double => Unit,
-      focusChipTrailingActionAtIndex: Double => Unit,
-      getChipListCount: () => Double,
-      getIndexOfChipById: String => Double,
-      hasClass: String => Boolean,
-      isRTL: () => Boolean,
-      removeChipAtIndex: Double => Unit,
-      removeFocusFromChipAtIndex: Double => Unit,
-      selectChipAtIndex: (Double, Boolean, Boolean) => Unit
-    ): MDCChipSetAdapter = {
-      val __obj = js.Dynamic.literal(announceMessage = js.Any.fromFunction1(announceMessage), focusChipPrimaryActionAtIndex = js.Any.fromFunction1(focusChipPrimaryActionAtIndex), focusChipTrailingActionAtIndex = js.Any.fromFunction1(focusChipTrailingActionAtIndex), getChipListCount = js.Any.fromFunction0(getChipListCount), getIndexOfChipById = js.Any.fromFunction1(getIndexOfChipById), hasClass = js.Any.fromFunction1(hasClass), isRTL = js.Any.fromFunction0(isRTL), removeChipAtIndex = js.Any.fromFunction1(removeChipAtIndex), removeFocusFromChipAtIndex = js.Any.fromFunction1(removeFocusFromChipAtIndex), selectChipAtIndex = js.Any.fromFunction3(selectChipAtIndex))
-      __obj.asInstanceOf[MDCChipSetAdapter]
+      emitEvent: (MDCChipActionEvents, Any) => Unit,
+      focus: () => Unit,
+      getAttribute: MDCChipActionAttributes => String | Null,
+      getElementID: () => String,
+      removeAttribute: MDCChipActionAttributes => Unit,
+      setAttribute: (MDCChipActionAttributes, String) => Unit
+    ): MDCChipActionAdapter = {
+      val __obj = js.Dynamic.literal(emitEvent = js.Any.fromFunction2(emitEvent), focus = js.Any.fromFunction0(focus), getAttribute = js.Any.fromFunction1(getAttribute), getElementID = js.Any.fromFunction0(getElementID), removeAttribute = js.Any.fromFunction1(removeAttribute), setAttribute = js.Any.fromFunction2(setAttribute))
+      __obj.asInstanceOf[MDCChipActionAdapter]
     }
     
-    extension [Self <: MDCChipSetAdapter](x: Self) {
+    extension [Self <: MDCChipActionAdapter](x: Self) {
       
-      inline def setAnnounceMessage(value: String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
+      inline def setEmitEvent(value: (MDCChipActionEvents, Any) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
       
-      inline def setFocusChipPrimaryActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipPrimaryActionAtIndex", js.Any.fromFunction1(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      inline def setFocusChipTrailingActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipTrailingActionAtIndex", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: MDCChipActionAttributes => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      inline def setGetChipListCount(value: () => Double): Self = StObject.set(x, "getChipListCount", js.Any.fromFunction0(value))
+      inline def setGetElementID(value: () => String): Self = StObject.set(x, "getElementID", js.Any.fromFunction0(value))
       
-      inline def setGetIndexOfChipById(value: String => Double): Self = StObject.set(x, "getIndexOfChipById", js.Any.fromFunction1(value))
+      inline def setRemoveAttribute(value: MDCChipActionAttributes => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
       
-      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
-      
-      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
-      
-      inline def setRemoveChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeChipAtIndex", js.Any.fromFunction1(value))
-      
-      inline def setRemoveFocusFromChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeFocusFromChipAtIndex", js.Any.fromFunction1(value))
-      
-      inline def setSelectChipAtIndex(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "selectChipAtIndex", js.Any.fromFunction3(value))
+      inline def setSetAttribute(value: (MDCChipActionAttributes, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     }
   }
 }

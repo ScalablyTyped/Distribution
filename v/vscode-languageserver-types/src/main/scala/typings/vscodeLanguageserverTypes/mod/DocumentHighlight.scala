@@ -30,6 +30,7 @@ object DocumentHighlight {
   /**
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
+    * @param kind The highlight kind
     */
   inline def create(range: Range): DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentHighlight]
   inline def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DocumentHighlight]

@@ -10,10 +10,10 @@ The lodash method `_.isMatch` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.ismatch |
 | Keywords           | lodash-modularized, ismatch |
-| # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 66851607 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0749567E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

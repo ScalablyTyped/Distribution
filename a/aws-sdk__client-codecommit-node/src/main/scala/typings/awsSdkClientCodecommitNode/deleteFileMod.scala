@@ -8,5 +8,5 @@ object deleteFileMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/DeleteFile", "DeleteFile")
   @js.native
-  val DeleteFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnedDetails extends StObject {
   
   /** The content setting. See the description of the individual ContentSetting objects for the possible values. */
-  var setting: js.Any
+  var setting: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails
 }
 object ReturnedDetails {
   
-  inline def apply(setting: js.Any): ReturnedDetails = {
+  inline def apply(setting: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails): ReturnedDetails = {
     val __obj = js.Dynamic.literal(setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnedDetails]
   }
   
   extension [Self <: ReturnedDetails](x: Self) {
     
-    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

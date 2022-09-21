@@ -23,22 +23,16 @@ object global {
     val ^ : js.Any = js.native
     
     /**
-      * Bootstrapping translations enables your app to translate without fetching translations remotely from Localizejs.com
-      * @param translations Required. Generate properly formatted translations on your Languages page
-      */
-    inline def bootstrap(translations: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(translations.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    /**
       * Returns the visitor's list of preferred languages, based on the browser's "accept-language" header.
       * @param callback Required.
       */
-    inline def detectLanguage(callback: js.Function2[/* error */ js.Any, /* languages */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def detectLanguage(callback: js.Function2[/* error */ Any, /* languages */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Returns all available languages for the project.
       * @param callback Required.
       */
-    inline def getAvailableLanguages(callback: js.Function2[/* error */ js.Any, /* languages */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableLanguages")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getAvailableLanguages(callback: js.Function2[/* error */ Any, /* languages */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableLanguages")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Returns exchange rate for provided currencies.
@@ -50,13 +44,24 @@ object global {
     inline def getExchangeRate(
       fromCurrency: String,
       toCurrency: String,
-      callback: js.Function2[/* error */ js.Any, /* rateData */ RateData, Unit]
+      callback: js.Function2[/* error */ Any, /* rateData */ RateData, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExchangeRate")(fromCurrency.asInstanceOf[js.Any], toCurrency.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the current language of the page. If a language hasn't been set, source is returned.
       */
     inline def getLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String]
+    
+    /**
+      * Returns the language code for the source language of the current project.
+      */
+    inline def getSourceLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceLanguage")().asInstanceOf[String]
+    
+    /**
+      * Calling this function will hide the widget if it's currently visible.
+      * You can use this function to hide the widget on certain pages.
+      */
+    inline def hideWidget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideWidget")().asInstanceOf[Unit]
     
     /**
       * Initializes LocalizeJS with the supplied options.
@@ -69,40 +74,21 @@ object global {
       * @param eventName Required. Name of event to unbind to. Can optionally be namespaced: "setLanguage.ns"
       * @param fn Optional. The function to unbind from the event.
       */
-    inline def off_initialize(eventName: initialize): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_initialize(eventName: initialize, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def off_pluralize(eventName: pluralize): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_pluralize(eventName: pluralize, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def off_setLanguage(eventName: setLanguage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_setLanguage(eventName: setLanguage, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def off_translate(eventName: translate): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_translate(eventName: translate, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def off_untranslatePage(eventName: untranslatePage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_untranslatePage(eventName: untranslatePage, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def off_updatedDictionary(eventName: updatedDictionary): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off_updatedDictionary(eventName: updatedDictionary, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def off(eventName: initialize | setLanguage | pluralize | translate | untranslatePage | updatedDictionary): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def off(
+      eventName: initialize | setLanguage | pluralize | translate | untranslatePage | updatedDictionary,
+      fn: js.Function1[/* event */ Event, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Attach an event handler to Localize events.
       * @param eventName Required. Name of event to bind to. Can optionally be namespaced: "setLanguage.ns"
       * @param fn Required. Event handler.
       */
-    inline def on_initialize(eventName: initialize, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_pluralize(eventName: pluralize, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_setLanguage(eventName: setLanguage, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_translate(eventName: translate, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_untranslatePage(eventName: untranslatePage, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_updatedDictionary(eventName: updatedDictionary, fn: js.Function1[/* event */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def on(
+      eventName: initialize | setLanguage | pluralize | translate | untranslatePage | updatedDictionary,
+      fn: js.Function1[/* event */ Event, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Saves the phrase, if unrecognized, to your Localize project. Useful for ensuring rarely printed text
@@ -126,6 +112,11 @@ object global {
     inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
+      * Calling this function will show the widget if it's currently hidden.
+      */
+    inline def showWidget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWidget")().asInstanceOf[Unit]
+    
+    /**
       * Translates text or text within html.
       *
       * If the Localize.translate() input is a string, instances of %{variable} will be replaced with the given value in the variables object.
@@ -142,10 +133,10 @@ object global {
       * @param callback Optional. Callback will trigger once translations have been fetched from Localize.
       */
     inline def translate(input: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def translate(input: String, variables: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def translate(input: String, variables: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def translate(
       input: String,
-      variables: js.Any,
+      variables: Any,
       callback: js.Function1[/* translation */ String | HTMLElement, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def translate(
@@ -154,10 +145,10 @@ object global {
       callback: js.Function1[/* translation */ String | HTMLElement, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def translate(input: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def translate(input: HTMLElement, variables: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def translate(input: HTMLElement, variables: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def translate(
       input: HTMLElement,
-      variables: js.Any,
+      variables: Any,
       callback: js.Function1[/* translation */ String | HTMLElement, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(input.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def translate(

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Removes the banded range with the given ID from the spreadsheet.
-  */
 trait SchemaDeleteBandingRequest extends StObject {
   
   /**
     * The ID of the banded range to delete.
     */
-  var bandedRangeId: js.UndefOr[Double] = js.undefined
+  var bandedRangeId: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDeleteBandingRequest {
   
@@ -24,6 +21,8 @@ object SchemaDeleteBandingRequest {
   extension [Self <: SchemaDeleteBandingRequest](x: Self) {
     
     inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
+    
+    inline def setBandedRangeIdNull: Self = StObject.set(x, "bandedRangeId", null)
     
     inline def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
   }

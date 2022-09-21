@@ -1,6 +1,6 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.Vec3
+import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +24,6 @@ trait DistanceModel extends StObject {
   var rollOffFactor: js.UndefOr[Double] = js.undefined
   
   var startTime: js.UndefOr[Double] = js.undefined
-  
-  var velocity: js.UndefOr[Vec3] = js.undefined
   
   var volume: js.UndefOr[Double] = js.undefined
 }
@@ -73,10 +71,6 @@ object DistanceModel {
     inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
-    
-    inline def setVelocity(value: Vec3): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
-    
-    inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     

@@ -3,15 +3,16 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.ButtonInformation
+import typings.reactNativeElements.buttonMod.ButtonProps
+import typings.reactNativeElements.pricingCardMod.ButtonInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.PricingCardProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/pricing/PricingCard.PricingCardProps> */
 trait PartialPricingCardProps extends StObject {
   
-  var button: js.UndefOr[ButtonInformation] = js.undefined
+  var button: js.UndefOr[ButtonProps | ButtonInformation] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -23,7 +24,7 @@ trait PartialPricingCardProps extends StObject {
   
   var onButtonPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var price: js.UndefOr[String] = js.undefined
+  var price: js.UndefOr[String | Double] = js.undefined
   
   var pricingStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
@@ -42,7 +43,7 @@ object PartialPricingCardProps {
   
   extension [Self <: PartialPricingCardProps](x: Self) {
     
-    inline def setButton(value: ButtonInformation): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: ButtonProps | ButtonInformation): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
@@ -66,13 +67,13 @@ object PartialPricingCardProps {
     
     inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+    inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value*))
     
     inline def setOnButtonPress(value: () => Unit): Self = StObject.set(x, "onButtonPress", js.Any.fromFunction0(value))
     
     inline def setOnButtonPressUndefined: Self = StObject.set(x, "onButtonPress", js.undefined)
     
-    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String | Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     

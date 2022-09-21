@@ -10,7 +10,7 @@ trait ConfigureManagementSettingsRequest extends StObject {
   var managementSettings: js.UndefOr[ManagementSettings] = js.undefined
   
   /**
-    * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the transfer lock is being updated, the `update_mask` would be
+    * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the transfer lock is being updated, the `update_mask` is
     * `"transfer_lock_state"`.
     */
   var updateMask: js.UndefOr[String] = js.undefined

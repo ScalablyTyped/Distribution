@@ -40,6 +40,8 @@ object mskMod {
   
   trait MSKRecord extends StObject {
     
+    var headers: js.Array[MSKRecordHeader]
+    
     var key: String
     
     var offset: Double
@@ -57,6 +59,7 @@ object mskMod {
   object MSKRecord {
     
     inline def apply(
+      headers: js.Array[MSKRecordHeader],
       key: String,
       offset: Double,
       partition: Double,
@@ -65,11 +68,15 @@ object mskMod {
       topic: String,
       value: String
     ): MSKRecord = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampType = timestampType.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampType = timestampType.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MSKRecord]
     }
     
     extension [Self <: MSKRecord](x: Self) {
+      
+      inline def setHeaders(value: js.Array[MSKRecordHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersVarargs(value: MSKRecordHeader*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -86,4 +93,6 @@ object mskMod {
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MSKRecordHeader = StringDictionary[js.Array[Double]]
 }

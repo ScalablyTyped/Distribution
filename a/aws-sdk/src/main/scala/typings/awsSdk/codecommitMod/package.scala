@@ -1,66 +1,66 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AdditionalData = java.lang.String
+type AdditionalData = String
 
-type ApprovalList = js.Array[typings.awsSdk.codecommitMod.Approval]
+type ApprovalList = js.Array[Approval]
 
-type ApprovalRuleContent = java.lang.String
+type ApprovalRuleContent = String
 
-type ApprovalRuleId = java.lang.String
+type ApprovalRuleId = String
 
-type ApprovalRuleName = java.lang.String
+type ApprovalRuleName = String
 
-type ApprovalRuleTemplateContent = java.lang.String
+type ApprovalRuleTemplateContent = String
 
-type ApprovalRuleTemplateDescription = java.lang.String
+type ApprovalRuleTemplateDescription = String
 
-type ApprovalRuleTemplateId = java.lang.String
+type ApprovalRuleTemplateId = String
 
-type ApprovalRuleTemplateName = java.lang.String
+type ApprovalRuleTemplateName = String
 
-type ApprovalRuleTemplateNameList = js.Array[typings.awsSdk.codecommitMod.ApprovalRuleTemplateName]
+type ApprovalRuleTemplateNameList = js.Array[ApprovalRuleTemplateName]
 
-type ApprovalRulesList = js.Array[typings.awsSdk.codecommitMod.ApprovalRule]
+type ApprovalRulesList = js.Array[ApprovalRule]
 
-type ApprovalRulesNotSatisfiedList = js.Array[typings.awsSdk.codecommitMod.ApprovalRuleName]
+type ApprovalRulesNotSatisfiedList = js.Array[ApprovalRuleName]
 
-type ApprovalRulesSatisfiedList = js.Array[typings.awsSdk.codecommitMod.ApprovalRuleName]
+type ApprovalRulesSatisfiedList = js.Array[ApprovalRuleName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPROVE
   - typings.awsSdk.awsSdkStrings.REVOKE
   - java.lang.String
 */
-type ApprovalState = typings.awsSdk.codecommitMod._ApprovalState | java.lang.String
+type ApprovalState = _ApprovalState | String
 
-type Approved = scala.Boolean
+type Approved = Boolean
 
-type Arn = java.lang.String
+type Arn = String
 
-type BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList = js.Array[
-typings.awsSdk.codecommitMod.BatchAssociateApprovalRuleTemplateWithRepositoriesError]
+type BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList = js.Array[BatchAssociateApprovalRuleTemplateWithRepositoriesError]
 
-type BatchDescribeMergeConflictsErrors = js.Array[typings.awsSdk.codecommitMod.BatchDescribeMergeConflictsError]
+type BatchDescribeMergeConflictsErrors = js.Array[BatchDescribeMergeConflictsError]
 
-type BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList = js.Array[
-typings.awsSdk.codecommitMod.BatchDisassociateApprovalRuleTemplateFromRepositoriesError]
+type BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList = js.Array[BatchDisassociateApprovalRuleTemplateFromRepositoriesError]
 
-type BatchGetCommitsErrorsList = js.Array[typings.awsSdk.codecommitMod.BatchGetCommitsError]
+type BatchGetCommitsErrorsList = js.Array[BatchGetCommitsError]
 
-type BranchName = java.lang.String
+type BranchName = String
 
-type BranchNameList = js.Array[typings.awsSdk.codecommitMod.BranchName]
+type BranchNameList = js.Array[BranchName]
 
-type CallerReactions = js.Array[typings.awsSdk.codecommitMod.ReactionValue]
+type CallerReactions = js.Array[ReactionValue]
 
-type CapitalBoolean = scala.Boolean
+type CapitalBoolean = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.A
@@ -68,38 +68,38 @@ type CapitalBoolean = scala.Boolean
   - typings.awsSdk.awsSdkStrings.D
   - java.lang.String
 */
-type ChangeTypeEnum = typings.awsSdk.codecommitMod._ChangeTypeEnum | java.lang.String
+type ChangeTypeEnum = _ChangeTypeEnum | String
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type CloneUrlHttp = java.lang.String
+type CloneUrlHttp = String
 
-type CloneUrlSsh = java.lang.String
+type CloneUrlSsh = String
 
-type CommentId = java.lang.String
+type CommentId = String
 
-type Comments = js.Array[typings.awsSdk.codecommitMod.Comment]
+type Comments = js.Array[Comment]
 
-type CommentsForComparedCommitData = js.Array[typings.awsSdk.codecommitMod.CommentsForComparedCommit]
+type CommentsForComparedCommitData = js.Array[CommentsForComparedCommit]
 
-type CommentsForPullRequestData = js.Array[typings.awsSdk.codecommitMod.CommentsForPullRequest]
+type CommentsForPullRequestData = js.Array[CommentsForPullRequest]
 
-type CommitId = java.lang.String
+type CommitId = String
 
-type CommitIdsInputList = js.Array[typings.awsSdk.codecommitMod.ObjectId]
+type CommitIdsInputList = js.Array[ObjectId]
 
-type CommitName = java.lang.String
+type CommitName = String
 
-type CommitObjectsList = js.Array[typings.awsSdk.codecommitMod.Commit]
+type CommitObjectsList = js.Array[Commit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FILE_LEVEL
   - typings.awsSdk.awsSdkStrings.LINE_LEVEL
   - java.lang.String
 */
-type ConflictDetailLevelTypeEnum = typings.awsSdk.codecommitMod._ConflictDetailLevelTypeEnum | java.lang.String
+type ConflictDetailLevelTypeEnum = _ConflictDetailLevelTypeEnum | String
 
-type ConflictMetadataList = js.Array[typings.awsSdk.codecommitMod.ConflictMetadata]
+type ConflictMetadataList = js.Array[ConflictMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -108,37 +108,37 @@ type ConflictMetadataList = js.Array[typings.awsSdk.codecommitMod.ConflictMetada
   - typings.awsSdk.awsSdkStrings.AUTOMERGE
   - java.lang.String
 */
-type ConflictResolutionStrategyTypeEnum = typings.awsSdk.codecommitMod._ConflictResolutionStrategyTypeEnum | java.lang.String
+type ConflictResolutionStrategyTypeEnum = _ConflictResolutionStrategyTypeEnum | String
 
-type Conflicts = js.Array[typings.awsSdk.codecommitMod.Conflict]
+type Conflicts = js.Array[Conflict]
 
-type Content = java.lang.String
+type Content = String
 
-type Count = scala.Double
+type Count = Double
 
-type CreationDate = typings.std.Date
+type CreationDate = js.Date
 
-type Date = java.lang.String
+type Date = String
 
-type DeleteFileEntries = js.Array[typings.awsSdk.codecommitMod.DeleteFileEntry]
+type DeleteFileEntries = js.Array[DeleteFileEntry]
 
-type Description = java.lang.String
+type Description = String
 
-type DifferenceList = js.Array[typings.awsSdk.codecommitMod.Difference]
+type DifferenceList = js.Array[Difference]
 
-type Email = java.lang.String
+type Email = String
 
-type ErrorCode = java.lang.String
+type ErrorCode = String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type EventDate = typings.std.Date
+type EventDate = js.Date
 
-type ExceptionName = java.lang.String
+type ExceptionName = String
 
-type FileContent = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.codecommitMod.Blob_ | java.lang.String
+type FileContent = Buffer | js.typedarray.Uint8Array | Blob_ | String
 
-type FileList = js.Array[typings.awsSdk.codecommitMod.File]
+type FileList = js.Array[File]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXECUTABLE
@@ -146,45 +146,45 @@ type FileList = js.Array[typings.awsSdk.codecommitMod.File]
   - typings.awsSdk.awsSdkStrings.SYMLINK
   - java.lang.String
 */
-type FileModeTypeEnum = typings.awsSdk.codecommitMod._FileModeTypeEnum | java.lang.String
+type FileModeTypeEnum = _FileModeTypeEnum | String
 
-type FilePaths = js.Array[typings.awsSdk.codecommitMod.Path]
+type FilePaths = js.Array[Path]
 
-type FileSize = scala.Double
+type FileSize = Double
 
-type FilesMetadata = js.Array[typings.awsSdk.codecommitMod.FileMetadata]
+type FilesMetadata = js.Array[FileMetadata]
 
-type FolderList = js.Array[typings.awsSdk.codecommitMod.Folder]
+type FolderList = js.Array[Folder]
 
-type HunkContent = java.lang.String
+type HunkContent = String
 
-type IsCommentDeleted = scala.Boolean
+type IsCommentDeleted = Boolean
 
-type IsContentConflict = scala.Boolean
+type IsContentConflict = Boolean
 
-type IsFileModeConflict = scala.Boolean
+type IsFileModeConflict = Boolean
 
-type IsHunkConflict = scala.Boolean
+type IsHunkConflict = Boolean
 
-type IsMergeable = scala.Boolean
+type IsMergeable = Boolean
 
-type IsMerged = scala.Boolean
+type IsMerged = Boolean
 
-type IsMove = scala.Boolean
+type IsMove = Boolean
 
-type IsObjectTypeConflict = scala.Boolean
+type IsObjectTypeConflict = Boolean
 
-type KeepEmptyFolders = scala.Boolean
+type KeepEmptyFolders = Boolean
 
-type LastModifiedDate = typings.std.Date
+type LastModifiedDate = js.Date
 
-type Limit = scala.Double
+type Limit = Double
 
-type LineNumber = scala.Double
+type LineNumber = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MergeHunks = js.Array[typings.awsSdk.codecommitMod.MergeHunk]
+type MergeHunks = js.Array[MergeHunk]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAST_FORWARD_MERGE
@@ -192,23 +192,23 @@ type MergeHunks = js.Array[typings.awsSdk.codecommitMod.MergeHunk]
   - typings.awsSdk.awsSdkStrings.THREE_WAY_MERGE
   - java.lang.String
 */
-type MergeOptionTypeEnum = typings.awsSdk.codecommitMod._MergeOptionTypeEnum | java.lang.String
+type MergeOptionTypeEnum = _MergeOptionTypeEnum | String
 
-type MergeOptions = js.Array[typings.awsSdk.codecommitMod.MergeOptionTypeEnum]
+type MergeOptions = js.Array[MergeOptionTypeEnum]
 
-type Message = java.lang.String
+type Message = String
 
-type Mode = java.lang.String
+type Mode = String
 
-type Name = java.lang.String
+type Name = String
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NumberOfConflicts = scala.Double
+type NumberOfConflicts = Double
 
-type ObjectId = java.lang.String
+type ObjectId = String
 
-type ObjectSize = scala.Double
+type ObjectSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FILE
@@ -217,31 +217,31 @@ type ObjectSize = scala.Double
   - typings.awsSdk.awsSdkStrings.SYMBOLIC_LINK
   - java.lang.String
 */
-type ObjectTypeEnum = typings.awsSdk.codecommitMod._ObjectTypeEnum | java.lang.String
+type ObjectTypeEnum = _ObjectTypeEnum | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ascending__
   - typings.awsSdk.awsSdkStrings.descending__
   - java.lang.String
 */
-type OrderEnum = typings.awsSdk.codecommitMod._OrderEnum | java.lang.String
+type OrderEnum = _OrderEnum | String
 
-type Overridden = scala.Boolean
+type Overridden = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OVERRIDE
   - typings.awsSdk.awsSdkStrings.REVOKE
   - java.lang.String
 */
-type OverrideStatus = typings.awsSdk.codecommitMod._OverrideStatus | java.lang.String
+type OverrideStatus = _OverrideStatus | String
 
-type ParentList = js.Array[typings.awsSdk.codecommitMod.ObjectId]
+type ParentList = js.Array[ObjectId]
 
-type Path = java.lang.String
+type Path = String
 
-type Position = scala.Double
+type Position = Double
 
-type PullRequestEventList = js.Array[typings.awsSdk.codecommitMod.PullRequestEvent]
+type PullRequestEventList = js.Array[PullRequestEvent]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PULL_REQUEST_CREATED
@@ -255,47 +255,47 @@ type PullRequestEventList = js.Array[typings.awsSdk.codecommitMod.PullRequestEve
   - typings.awsSdk.awsSdkStrings.PULL_REQUEST_APPROVAL_STATE_CHANGED
   - java.lang.String
 */
-type PullRequestEventType = typings.awsSdk.codecommitMod._PullRequestEventType | java.lang.String
+type PullRequestEventType = _PullRequestEventType | String
 
-type PullRequestId = java.lang.String
+type PullRequestId = String
 
-type PullRequestIdList = js.Array[typings.awsSdk.codecommitMod.PullRequestId]
+type PullRequestIdList = js.Array[PullRequestId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OPEN
   - typings.awsSdk.awsSdkStrings.CLOSED
   - java.lang.String
 */
-type PullRequestStatusEnum = typings.awsSdk.codecommitMod._PullRequestStatusEnum | java.lang.String
+type PullRequestStatusEnum = _PullRequestStatusEnum | String
 
-type PullRequestTargetList = js.Array[typings.awsSdk.codecommitMod.PullRequestTarget]
+type PullRequestTargetList = js.Array[PullRequestTarget]
 
-type PutFileEntries = js.Array[typings.awsSdk.codecommitMod.PutFileEntry]
+type PutFileEntries = js.Array[PutFileEntry]
 
-type ReactionCountsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codecommitMod.Count]
+type ReactionCountsMap = StringDictionary[Count]
 
-type ReactionEmoji = java.lang.String
+type ReactionEmoji = String
 
-type ReactionShortCode = java.lang.String
+type ReactionShortCode = String
 
-type ReactionUnicode = java.lang.String
+type ReactionUnicode = String
 
-type ReactionUsersList = js.Array[typings.awsSdk.codecommitMod.Arn]
+type ReactionUsersList = js.Array[Arn]
 
-type ReactionValue = java.lang.String
+type ReactionValue = String
 
-type ReactionsForCommentList = js.Array[typings.awsSdk.codecommitMod.ReactionForComment]
+type ReactionsForCommentList = js.Array[ReactionForComment]
 
-type ReferenceName = java.lang.String
+type ReferenceName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BEFORE
   - typings.awsSdk.awsSdkStrings.AFTER
   - java.lang.String
 */
-type RelativeFileVersionEnum = typings.awsSdk.codecommitMod._RelativeFileVersionEnum | java.lang.String
+type RelativeFileVersionEnum = _RelativeFileVersionEnum | String
 
-type ReplaceContentEntries = js.Array[typings.awsSdk.codecommitMod.ReplaceContentEntry]
+type ReplaceContentEntries = js.Array[ReplaceContentEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.KEEP_BASE
@@ -304,23 +304,23 @@ type ReplaceContentEntries = js.Array[typings.awsSdk.codecommitMod.ReplaceConten
   - typings.awsSdk.awsSdkStrings.USE_NEW_CONTENT
   - java.lang.String
 */
-type ReplacementTypeEnum = typings.awsSdk.codecommitMod._ReplacementTypeEnum | java.lang.String
+type ReplacementTypeEnum = _ReplacementTypeEnum | String
 
-type RepositoryDescription = java.lang.String
+type RepositoryDescription = String
 
-type RepositoryId = java.lang.String
+type RepositoryId = String
 
-type RepositoryMetadataList = js.Array[typings.awsSdk.codecommitMod.RepositoryMetadata]
+type RepositoryMetadataList = js.Array[RepositoryMetadata]
 
-type RepositoryName = java.lang.String
+type RepositoryName = String
 
-type RepositoryNameIdPairList = js.Array[typings.awsSdk.codecommitMod.RepositoryNameIdPair]
+type RepositoryNameIdPairList = js.Array[RepositoryNameIdPair]
 
-type RepositoryNameList = js.Array[typings.awsSdk.codecommitMod.RepositoryName]
+type RepositoryNameList = js.Array[RepositoryName]
 
-type RepositoryNotFoundList = js.Array[typings.awsSdk.codecommitMod.RepositoryName]
+type RepositoryNotFoundList = js.Array[RepositoryName]
 
-type RepositoryTriggerCustomData = java.lang.String
+type RepositoryTriggerCustomData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.all__
@@ -329,58 +329,58 @@ type RepositoryTriggerCustomData = java.lang.String
   - typings.awsSdk.awsSdkStrings.deleteReference
   - java.lang.String
 */
-type RepositoryTriggerEventEnum = typings.awsSdk.codecommitMod._RepositoryTriggerEventEnum | java.lang.String
+type RepositoryTriggerEventEnum = _RepositoryTriggerEventEnum | String
 
-type RepositoryTriggerEventList = js.Array[typings.awsSdk.codecommitMod.RepositoryTriggerEventEnum]
+type RepositoryTriggerEventList = js.Array[RepositoryTriggerEventEnum]
 
-type RepositoryTriggerExecutionFailureList = js.Array[typings.awsSdk.codecommitMod.RepositoryTriggerExecutionFailure]
+type RepositoryTriggerExecutionFailureList = js.Array[RepositoryTriggerExecutionFailure]
 
-type RepositoryTriggerExecutionFailureMessage = java.lang.String
+type RepositoryTriggerExecutionFailureMessage = String
 
-type RepositoryTriggerName = java.lang.String
+type RepositoryTriggerName = String
 
-type RepositoryTriggerNameList = js.Array[typings.awsSdk.codecommitMod.RepositoryTriggerName]
+type RepositoryTriggerNameList = js.Array[RepositoryTriggerName]
 
-type RepositoryTriggersConfigurationId = java.lang.String
+type RepositoryTriggersConfigurationId = String
 
-type RepositoryTriggersList = js.Array[typings.awsSdk.codecommitMod.RepositoryTrigger]
+type RepositoryTriggersList = js.Array[RepositoryTrigger]
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type RevisionId = java.lang.String
+type RevisionId = String
 
-type RuleContentSha256 = java.lang.String
+type RuleContentSha256 = String
 
-type SetFileModeEntries = js.Array[typings.awsSdk.codecommitMod.SetFileModeEntry]
+type SetFileModeEntries = js.Array[SetFileModeEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.repositoryName
   - typings.awsSdk.awsSdkStrings.lastModifiedDate_
   - java.lang.String
 */
-type SortByEnum = typings.awsSdk.codecommitMod._SortByEnum | java.lang.String
+type SortByEnum = _SortByEnum | String
 
-type SubModuleList = js.Array[typings.awsSdk.codecommitMod.SubModule]
+type SubModuleList = js.Array[SubModule]
 
-type SymbolicLinkList = js.Array[typings.awsSdk.codecommitMod.SymbolicLink]
+type SymbolicLinkList = js.Array[SymbolicLink]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeysList = js.Array[typings.awsSdk.codecommitMod.TagKey]
+type TagKeysList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codecommitMod.TagValue]
+type TagsMap = StringDictionary[TagValue]
 
-type TargetList = js.Array[typings.awsSdk.codecommitMod.Target]
+type TargetList = js.Array[Target]
 
-type Title = java.lang.String
+type Title = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-04-13`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codecommitMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.codecommitMod.Blob_ | java.lang.String
+type blob = Buffer | js.typedarray.Uint8Array | Blob_ | String

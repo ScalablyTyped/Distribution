@@ -38,7 +38,7 @@ object ResponseCard {
     
     inline def setGenericAttachmentsUndefined: Self = StObject.set(x, "genericAttachments", js.undefined)
     
-    inline def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
+    inline def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

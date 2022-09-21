@@ -36,6 +36,6 @@ object TargetingTemplatesListResponse {
     
     inline def setTargetingTemplatesUndefined: Self = StObject.set(x, "targetingTemplates", js.undefined)
     
-    inline def setTargetingTemplatesVarargs(value: TargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value :_*))
+    inline def setTargetingTemplatesVarargs(value: TargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value*))
   }
 }

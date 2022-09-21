@@ -8,6 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FhirStore extends StObject {
   
   /**
+    * Enable parsing of references within complex FHIR data types such as Extensions. If this value is set to ENABLED, then features like referential integrity and Bundle reference
+    * rewriting apply to all references. If this flag has not been specified the behavior of the FHIR store will not change, references in complex data types will not be parsed. New
+    * stores will have this value set to ENABLED after a notification period. Warning: turning on this flag causes processing existing resources to fail if they contain references to
+    * non-existent resources.
+    */
+  var complexDataTypeReferenceParsing: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If true, overrides the default search behavior for this FHIR store to `handling=strict` which returns an error for unrecognized search parameters. If false, uses the FHIR
+    * specification default `handling=lenient` which ignores unrecognized search parameters. The handling can always be changed from the default on an individual API call by setting the
+    * HTTP header `Prefer: handling=strict` or `Prefer: handling=lenient`.
+    */
+  var defaultSearchHandlingStrict: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Immutable. Whether to disable referential integrity in this FHIR store. This field is immutable after FHIR store creation. The default value is false, meaning that the API enforces
     * referential integrity and fails the requests that result in inconsistent state in the FHIR store. When this field is set to true, the API skips referential integrity checks.
     * Consequently, operations that rely on references, such as GetPatientEverything, do not return all the results if broken references exist.
@@ -24,8 +39,8 @@ trait FhirStore extends StObject {
   /**
     * Whether this FHIR store has the [updateCreate capability](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.rest.resource.updateCreate). This
     * determines if the client can use an Update operation to create a new resource with a client-specified ID. If false, all IDs are server-assigned through the Create operation and
-    * attempts to update a non-existent resource return errors. Be careful with the audit logs if client-specified resource IDs contain sensitive data such as patient identifiers, those
-    * IDs are part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub notifications.
+    * attempts to update a non-existent resource return errors. It is strongly advised not to include or encode any sensitive data such as patient identifiers in client-specified resource
+    * IDs. Those IDs are part of the FHIR resource path recorded in Cloud audit logs and Pub/Sub notifications. Those IDs can also be contained in reference fields within other resources.
     */
   var enableUpdateCreate: js.UndefOr[Boolean] = js.undefined
   
@@ -37,15 +52,15 @@ trait FhirStore extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. Resource name of the FHIR store, of the form `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * If non-empty, publish all resource modifications of this FHIR store to this destination. The Cloud Pub/Sub message attributes contain a map with a string describing the action that
-    * has triggered the notification. For example, "action":"CreateResource".
+    * If non-empty, publish all resource modifications of this FHIR store to this destination. The Pub/Sub message attributes contain a map with a string describing the action that has
+    * triggered the notification. For example, "action":"CreateResource".
     */
   var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
@@ -58,6 +73,9 @@ trait FhirStore extends StObject {
     * destination.
     */
   var streamConfigs: js.UndefOr[js.Array[StreamConfig]] = js.undefined
+  
+  /** Configuration for how to validate incoming FHIR resources against configured profiles. */
+  var validationConfig: js.UndefOr[ValidationConfig] = js.undefined
   
   /**
     * Immutable. The FHIR specification version that this FHIR store supports natively. This field is immutable after store creation. Requests are rejected if they contain FHIR resources
@@ -74,6 +92,14 @@ object FhirStore {
   
   extension [Self <: FhirStore](x: Self) {
     
+    inline def setComplexDataTypeReferenceParsing(value: String): Self = StObject.set(x, "complexDataTypeReferenceParsing", value.asInstanceOf[js.Any])
+    
+    inline def setComplexDataTypeReferenceParsingUndefined: Self = StObject.set(x, "complexDataTypeReferenceParsing", js.undefined)
+    
+    inline def setDefaultSearchHandlingStrict(value: Boolean): Self = StObject.set(x, "defaultSearchHandlingStrict", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSearchHandlingStrictUndefined: Self = StObject.set(x, "defaultSearchHandlingStrict", js.undefined)
+    
     inline def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
     
     inline def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
@@ -89,7 +115,7 @@ object FhirStore {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -106,7 +132,11 @@ object FhirStore {
     
     inline def setStreamConfigsUndefined: Self = StObject.set(x, "streamConfigs", js.undefined)
     
-    inline def setStreamConfigsVarargs(value: StreamConfig*): Self = StObject.set(x, "streamConfigs", js.Array(value :_*))
+    inline def setStreamConfigsVarargs(value: StreamConfig*): Self = StObject.set(x, "streamConfigs", js.Array(value*))
+    
+    inline def setValidationConfig(value: ValidationConfig): Self = StObject.set(x, "validationConfig", value.asInstanceOf[js.Any])
+    
+    inline def setValidationConfigUndefined: Self = StObject.set(x, "validationConfig", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

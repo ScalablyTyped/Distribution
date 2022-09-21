@@ -32,12 +32,12 @@ object ChooseImageArgs {
     
     inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
-    inline def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value*))
     
     inline def setSourceType(value: js.Array[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value*))
   }
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDeployablePatchSnapshotForInstanceResult extends StObject {
   
   /**
-    * The ID of the instance.
+    * The managed node ID.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
-    * Returns the specific operating system (for example Windows Server 2012 or Amazon Linux 2015.09) on the instance for the specified patch snapshot.
+    * Returns the specific operating system (for example Windows Server 2012 or Amazon Linux 2015.09) on the managed node for the specified patch snapshot.
     */
   var Product: js.UndefOr[typings.awsSdk.ssmMod.Product] = js.undefined
   
   /**
-    * A pre-signed Amazon S3 URL that can be used to download the patch snapshot.
+    * A pre-signed Amazon Simple Storage Service (Amazon S3) URL that can be used to download the patch snapshot.
     */
   var SnapshotDownloadUrl: js.UndefOr[typings.awsSdk.ssmMod.SnapshotDownloadUrl] = js.undefined
   

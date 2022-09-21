@@ -1,6 +1,7 @@
 package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mapboxGl.anon.Center
 import typings.mapboxGl.mapboxGlStrings.`bottom-left`
 import typings.mapboxGl.mapboxGlStrings.`bottom-right`
 import typings.mapboxGl.mapboxGlStrings.`top-left`
@@ -64,6 +65,13 @@ trait MapboxOptions extends StObject {
   var container: String | HTMLElement
   
   /**
+    * If `true` , scroll zoom will require pressing the ctrl or ⌘ key while scrolling to zoom map,
+    * and touch pan will require using two fingers while panning to move the map.
+    * Touch pitch will require three fingers to activate if enabled.
+    */
+  var cooperativeGestures: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If `true`, symbols from multiple sources can collide with each other during collision
     * detection. If `false`, collision detection is run separately for the symbols in each source.
     *
@@ -78,8 +86,11 @@ trait MapboxOptions extends StObject {
   /** If true, enable the "double click to zoom" interaction (see DoubleClickZoomHandler). */
   var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  /** If true, enable the "drag to pan" interaction (see DragPanHandler). */
-  var dragPan: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, the "drag to pan" interaction is enabled.
+    * An `Object` value is passed as options to {@link DragPanHandler#enable}.
+    */
+  var dragPan: js.UndefOr[Boolean | DragPanOptions] = js.undefined
   
   /** If true, enable the "drag to rotate" interaction (see DragRotateHandler). */
   var dragRotate: js.UndefOr[Boolean] = js.undefined
@@ -112,6 +123,13 @@ trait MapboxOptions extends StObject {
   
   /** If true, enable keyboard shortcuts (see KeyboardHandler). */
   var keyboard: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Overrides the generation of all glyphs and font settings except font-weight keywords
+    * Also overrides localIdeographFontFamily
+    * @default null
+    */
+  var localFontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, defines a CSS font-family for locally overriding generation of glyphs in the
@@ -162,6 +180,14 @@ trait MapboxOptions extends StObject {
   var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
+    * If true, map will prioritize rendering for performance by reordering layers
+    * If false, layers will always be drawn in the specified order
+    *
+    * @default true
+    */
+  var optimizeForTerrain: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The initial pitch (tilt) of the map, measured in degrees away from the plane of the
     * screen (0-60).
     *
@@ -180,6 +206,13 @@ trait MapboxOptions extends StObject {
   var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A style's projection property sets which projection a map is rendered in.
+    *
+    * @default 'mercator'
+    */
+  var projection: js.UndefOr[Center] = js.undefined
+  
+  /**
     * If `false`, the map won't attempt to re-request tiles once they expire per their HTTP
     * `cacheControl`/`expires` headers.
     *
@@ -194,17 +227,33 @@ trait MapboxOptions extends StObject {
     */
   var renderWorldCopies: js.UndefOr[Boolean] = js.undefined
   
-  /** If true, enable the "scroll to zoom" interaction */
-  var scrollZoom: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, the "scroll to zoom" interaction is enabled.
+    * An `Object` value is passed as options to {@link ScrollZoomHandler#enable}.
+    */
+  var scrollZoom: js.UndefOr[Boolean | InteractiveOptions] = js.undefined
   
   /** stylesheet location */
   var style: js.UndefOr[Style | String] = js.undefined
   
-  /** If true, the "drag to pitch" interaction is enabled */
-  var touchPitch: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows for the usage of the map in automated tests without an accessToken with custom self-hosted test fixtures.
+    *
+    * @default null
+    */
+  var testMode: js.UndefOr[Boolean] = js.undefined
   
-  /** If true, enable the "pinch to rotate and zoom" interaction (see TouchZoomRotateHandler). */
-  var touchZoomRotate: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, the "drag to pitch" interaction is enabled.
+    * An `Object` value is passed as options to {@link TouchPitchHandler#enable}.
+    */
+  var touchPitch: js.UndefOr[Boolean | InteractiveOptions] = js.undefined
+  
+  /**
+    * If `true`, the "pinch to rotate and zoom" interaction is enabled.
+    * An `Object` value is passed as options to {@link TouchZoomRotateHandler#enable}.
+    */
+  var touchZoomRotate: js.UndefOr[Boolean | InteractiveOptions] = js.undefined
   
   /** If  true, the map will automatically resize when the browser window resizes */
   var trackResize: js.UndefOr[Boolean] = js.undefined
@@ -271,6 +320,10 @@ object MapboxOptions {
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
+    inline def setCooperativeGestures(value: Boolean): Self = StObject.set(x, "cooperativeGestures", value.asInstanceOf[js.Any])
+    
+    inline def setCooperativeGesturesUndefined: Self = StObject.set(x, "cooperativeGestures", js.undefined)
+    
     inline def setCrossSourceCollisions(value: Boolean): Self = StObject.set(x, "crossSourceCollisions", value.asInstanceOf[js.Any])
     
     inline def setCrossSourceCollisionsUndefined: Self = StObject.set(x, "crossSourceCollisions", js.undefined)
@@ -279,13 +332,13 @@ object MapboxOptions {
     
     inline def setCustomAttributionUndefined: Self = StObject.set(x, "customAttribution", js.undefined)
     
-    inline def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value :_*))
+    inline def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value*))
     
     inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
     inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
-    inline def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    inline def setDragPan(value: Boolean | DragPanOptions): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
     
     inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
     
@@ -316,6 +369,10 @@ object MapboxOptions {
     inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setLocalFontFamily(value: String): Self = StObject.set(x, "localFontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setLocalFontFamilyUndefined: Self = StObject.set(x, "localFontFamily", js.undefined)
     
     inline def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
     
@@ -353,6 +410,10 @@ object MapboxOptions {
     
     inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
+    inline def setOptimizeForTerrain(value: Boolean): Self = StObject.set(x, "optimizeForTerrain", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizeForTerrainUndefined: Self = StObject.set(x, "optimizeForTerrain", js.undefined)
+    
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
@@ -365,6 +426,10 @@ object MapboxOptions {
     
     inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
+    inline def setProjection(value: Center): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
     inline def setRefreshExpiredTiles(value: Boolean): Self = StObject.set(x, "refreshExpiredTiles", value.asInstanceOf[js.Any])
     
     inline def setRefreshExpiredTilesUndefined: Self = StObject.set(x, "refreshExpiredTiles", js.undefined)
@@ -373,7 +438,7 @@ object MapboxOptions {
     
     inline def setRenderWorldCopiesUndefined: Self = StObject.set(x, "renderWorldCopies", js.undefined)
     
-    inline def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
+    inline def setScrollZoom(value: Boolean | InteractiveOptions): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
     inline def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
     
@@ -381,11 +446,15 @@ object MapboxOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTouchPitch(value: Boolean): Self = StObject.set(x, "touchPitch", value.asInstanceOf[js.Any])
+    inline def setTestMode(value: Boolean): Self = StObject.set(x, "testMode", value.asInstanceOf[js.Any])
+    
+    inline def setTestModeUndefined: Self = StObject.set(x, "testMode", js.undefined)
+    
+    inline def setTouchPitch(value: Boolean | InteractiveOptions): Self = StObject.set(x, "touchPitch", value.asInstanceOf[js.Any])
     
     inline def setTouchPitchUndefined: Self = StObject.set(x, "touchPitch", js.undefined)
     
-    inline def setTouchZoomRotate(value: Boolean): Self = StObject.set(x, "touchZoomRotate", value.asInstanceOf[js.Any])
+    inline def setTouchZoomRotate(value: Boolean | InteractiveOptions): Self = StObject.set(x, "touchZoomRotate", value.asInstanceOf[js.Any])
     
     inline def setTouchZoomRotateUndefined: Self = StObject.set(x, "touchZoomRotate", js.undefined)
     

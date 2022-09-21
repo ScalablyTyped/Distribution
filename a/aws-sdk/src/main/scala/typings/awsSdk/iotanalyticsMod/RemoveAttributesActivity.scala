@@ -32,7 +32,7 @@ object RemoveAttributesActivity {
     
     inline def setAttributes(value: AttributeNames): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

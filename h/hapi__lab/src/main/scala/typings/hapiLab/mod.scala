@@ -1,10 +1,9 @@
 package typings.hapiLab
 
 import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StringDictionary
 import typings.hapiLab.anon.OmitTestOptionsplan
-import typings.std.Error
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,19 +80,19 @@ object mod {
       val `coverage-flat`: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Enables coverage on external modules.
-        */
-      val `coverage-module`: js.UndefOr[js.Array[String]] = js.undefined
-      
-      /**
         * Sets code coverage path.
         */
       val `coverage-path`: js.UndefOr[String] = js.undefined
       
       /**
+        * Set code coverage predicates.
+        */
+      val `coverage-predicates`: js.UndefOr[StringDictionary[Boolean]] = js.undefined
+      
+      /**
         * File pattern to use for locating files for coverage.
         */
-      val coveragePattern: js.UndefOr[RegExp] = js.undefined
+      val coveragePattern: js.UndefOr[js.RegExp] = js.undefined
       
       /**
         * Minimum plan threshold to apply to all tests that don't define any plan.
@@ -207,7 +206,7 @@ object mod {
       /**
         * File pattern to use for locating tests (must include file extensions).
         */
-      val pattern: js.UndefOr[RegExp] = js.undefined
+      val pattern: js.UndefOr[js.RegExp] = js.undefined
       
       /**
         * Sets output verbosity (0: none, 1: normal, 2: verbose).
@@ -322,23 +321,21 @@ object mod {
         
         inline def `setCoverage-excludeUndefined`: Self = StObject.set(x, "coverage-exclude", js.undefined)
         
-        inline def `setCoverage-excludeVarargs`(value: String*): Self = StObject.set(x, "coverage-exclude", js.Array(value :_*))
+        inline def `setCoverage-excludeVarargs`(value: String*): Self = StObject.set(x, "coverage-exclude", js.Array(value*))
         
         inline def `setCoverage-flat`(value: Boolean): Self = StObject.set(x, "coverage-flat", value.asInstanceOf[js.Any])
         
         inline def `setCoverage-flatUndefined`: Self = StObject.set(x, "coverage-flat", js.undefined)
         
-        inline def `setCoverage-module`(value: js.Array[String]): Self = StObject.set(x, "coverage-module", value.asInstanceOf[js.Any])
-        
-        inline def `setCoverage-moduleUndefined`: Self = StObject.set(x, "coverage-module", js.undefined)
-        
-        inline def `setCoverage-moduleVarargs`(value: String*): Self = StObject.set(x, "coverage-module", js.Array(value :_*))
-        
         inline def `setCoverage-path`(value: String): Self = StObject.set(x, "coverage-path", value.asInstanceOf[js.Any])
         
         inline def `setCoverage-pathUndefined`: Self = StObject.set(x, "coverage-path", js.undefined)
         
-        inline def setCoveragePattern(value: RegExp): Self = StObject.set(x, "coveragePattern", value.asInstanceOf[js.Any])
+        inline def `setCoverage-predicates`(value: StringDictionary[Boolean]): Self = StObject.set(x, "coverage-predicates", value.asInstanceOf[js.Any])
+        
+        inline def `setCoverage-predicatesUndefined`: Self = StObject.set(x, "coverage-predicates", js.undefined)
+        
+        inline def setCoveragePattern(value: js.RegExp): Self = StObject.set(x, "coveragePattern", value.asInstanceOf[js.Any])
         
         inline def setCoveragePatternUndefined: Self = StObject.set(x, "coveragePattern", js.undefined)
         
@@ -364,7 +361,7 @@ object mod {
         
         inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
         
-        inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
+        inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value*))
         
         inline def setGrep(value: String): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
         
@@ -374,7 +371,7 @@ object mod {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+        inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value*))
         
         inline def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
         
@@ -408,15 +405,15 @@ object mod {
         
         inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
         
-        inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+        inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value*))
         
         inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
         inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
         
-        inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
         inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         
@@ -428,7 +425,7 @@ object mod {
         
         inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
         
-        inline def setReporterVarargs(value: String*): Self = StObject.set(x, "reporter", js.Array(value :_*))
+        inline def setReporterVarargs(value: String*): Self = StObject.set(x, "reporter", js.Array(value*))
         
         inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
         
@@ -460,7 +457,7 @@ object mod {
         
         inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
-        inline def setTransformVarargs(value: Transformer*): Self = StObject.set(x, "transform", js.Array(value :_*))
+        inline def setTransformVarargs(value: Transformer*): Self = StObject.set(x, "transform", js.Array(value*))
         
         inline def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
         
@@ -472,7 +469,7 @@ object mod {
       }
     }
     
-    type ErrorHandler = js.Function1[/* err */ Error, Unit]
+    type ErrorHandler = js.Function1[/* err */ js.Error, Unit]
     
     @js.native
     trait Experiment extends StObject {
@@ -492,7 +489,7 @@ object mod {
       /**
         * An object that is passed to `before` and `after` functions in addition to tests themselves.
         */
-      val context: Record[String, js.Any]
+      val context: Record[String, Any]
       
       /**
         * Sets a requirement that a function must be called a certain number of times.
@@ -502,7 +499,7 @@ object mod {
         * 
         * @returns a wrapped function.
         */
-      def mustCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, count: Double): T
+      def mustCall[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, count: Double): T
       
       /**
         * Adds notes to the test log.
@@ -528,16 +525,16 @@ object mod {
     }
     object Flags {
       
-      inline def apply(context: Record[String, js.Any], mustCall: (js.Any, Double) => js.Any, note: String => Unit): Flags = {
+      inline def apply(context: Record[String, Any], mustCall: (Any, Double) => Any, note: String => Unit): Flags = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], mustCall = js.Any.fromFunction2(mustCall), note = js.Any.fromFunction1(note))
         __obj.asInstanceOf[Flags]
       }
       
       extension [Self <: Flags](x: Self) {
         
-        inline def setContext(value: Record[String, js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        inline def setMustCall(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "mustCall", js.Any.fromFunction2(value))
+        inline def setMustCall(value: (Any, Double) => Any): Self = StObject.set(x, "mustCall", js.Any.fromFunction2(value))
         
         inline def setNote(value: String => Unit): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
         
@@ -545,11 +542,11 @@ object mod {
         
         inline def setOnCleanupUndefined: Self = StObject.set(x, "onCleanup", js.undefined)
         
-        inline def setOnUncaughtException(value: /* err */ Error => Unit): Self = StObject.set(x, "onUncaughtException", js.Any.fromFunction1(value))
+        inline def setOnUncaughtException(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onUncaughtException", js.Any.fromFunction1(value))
         
         inline def setOnUncaughtExceptionUndefined: Self = StObject.set(x, "onUncaughtException", js.undefined)
         
-        inline def setOnUnhandledRejection(value: /* err */ Error => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
+        inline def setOnUnhandledRejection(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
         
         inline def setOnUnhandledRejectionUndefined: Self = StObject.set(x, "onUnhandledRejection", js.undefined)
       }
@@ -808,7 +805,7 @@ object mod {
     }
     object Expect {
       
-      inline def apply(error: js.Any => Unit, `type`: js.Any => Unit): Expect = {
+      inline def apply(error: Any => Unit, `type`: Any => Unit): Expect = {
         val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
         __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
         __obj.asInstanceOf[Expect]
@@ -816,9 +813,9 @@ object mod {
       
       extension [Self <: Expect](x: Self) {
         
-        inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+        inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
         
-        inline def setType(value: js.Any => Unit): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+        inline def setType(value: Any => Unit): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       }
     }
     

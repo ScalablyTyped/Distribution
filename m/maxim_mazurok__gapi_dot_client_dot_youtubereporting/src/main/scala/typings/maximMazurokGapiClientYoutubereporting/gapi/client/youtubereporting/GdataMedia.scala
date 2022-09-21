@@ -125,7 +125,7 @@ object GdataMedia {
     
     inline def setCompositeMediaUndefined: Self = StObject.set(x, "compositeMedia", js.undefined)
     
-    inline def setCompositeMediaVarargs(value: GdataCompositeMedia*): Self = StObject.set(x, "compositeMedia", js.Array(value :_*))
+    inline def setCompositeMediaVarargs(value: GdataCompositeMedia*): Self = StObject.set(x, "compositeMedia", js.Array(value*))
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

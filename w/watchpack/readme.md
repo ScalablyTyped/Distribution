@@ -1,7 +1,7 @@
 
 # Scala.js typings for watchpack
 
-Typings are for version 1.1
+Typings are for version 2.4
 
 ## Library description:
 Wrapper library for directory and file watching.
@@ -10,10 +10,10 @@ Wrapper library for directory and file watching.
 | ------------------ | :-------------: |
 | Full name          | watchpack |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 160 |
-| # downloads        | 555815155 |
-| # stars            | 2 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 9.197749833333333E7 |
+| # stars            | 337.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/watchpack)

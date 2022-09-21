@@ -10,7 +10,7 @@ object statusOptionsMod {
   
   trait StatusOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var flags: js.UndefOr[Double] = js.undefined
     
@@ -37,7 +37,7 @@ object statusOptionsMod {
       
       inline def setPathspecUndefined: Self = StObject.set(x, "pathspec", js.undefined)
       
-      inline def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value :_*))
+      inline def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value*))
       
       inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       

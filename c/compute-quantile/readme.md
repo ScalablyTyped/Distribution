@@ -10,10 +10,10 @@ Computes a quantile for a numeric array.
 | ------------------ | :-------------: |
 | Full name          | compute-quantile |
 | Keywords           | compute.io, compute, computation, mathematics, math, statistics, stats, quantile, percentile, rank |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 27650 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7022.333333333333 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/compute-io/quantile)

@@ -18,7 +18,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
-  class CloudEvent protected ()
+  open class CloudEvent protected ()
     extends typings.cloudeventsSdk.cloudeventMod.CloudEvent {
     /**
       * Creates a new CloudEvent instance
@@ -44,13 +44,13 @@ object mod {
   
   @JSImport("cloudevents-sdk", "Constants")
   @js.native
-  def Constants: js.Any = js.native
-  inline def Constants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constants")(x.asInstanceOf[js.Any])
+  def Constants: Any = js.native
+  inline def Constants_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constants")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cloudevents-sdk", "HTTPEmitter")
   @js.native
-  class HTTPEmitter protected ()
+  open class HTTPEmitter protected ()
     extends typings.cloudeventsSdk.httpEmitterMod.HTTPEmitter {
     /**
       * Creates a new instance of {HTTPEmitter}. The default emitter uses the 1.0
@@ -74,7 +74,7 @@ object mod {
   /**
     * Create an instance of an HTTPReceiver to accept incoming CloudEvents.
     */
-  class HTTPReceiver ()
+  open class HTTPReceiver ()
     extends typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver
   @JSImport("cloudevents-sdk", "HTTPReceiver")
   @js.native

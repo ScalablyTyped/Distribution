@@ -60,7 +60,7 @@ object SearchResponse {
     
     inline def setFacetResultsUndefined: Self = StObject.set(x, "facetResults", js.undefined)
     
-    inline def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "facetResults", js.Array(value :_*))
+    inline def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "facetResults", js.Array(value*))
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
@@ -86,18 +86,18 @@ object SearchResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSpellResults(value: js.Array[SpellResult]): Self = StObject.set(x, "spellResults", value.asInstanceOf[js.Any])
     
     inline def setSpellResultsUndefined: Self = StObject.set(x, "spellResults", js.undefined)
     
-    inline def setSpellResultsVarargs(value: SpellResult*): Self = StObject.set(x, "spellResults", js.Array(value :_*))
+    inline def setSpellResultsVarargs(value: SpellResult*): Self = StObject.set(x, "spellResults", js.Array(value*))
     
     inline def setStructuredResults(value: js.Array[StructuredResult]): Self = StObject.set(x, "structuredResults", value.asInstanceOf[js.Any])
     
     inline def setStructuredResultsUndefined: Self = StObject.set(x, "structuredResults", js.undefined)
     
-    inline def setStructuredResultsVarargs(value: StructuredResult*): Self = StObject.set(x, "structuredResults", js.Array(value :_*))
+    inline def setStructuredResultsVarargs(value: StructuredResult*): Self = StObject.set(x, "structuredResults", js.Array(value*))
   }
 }

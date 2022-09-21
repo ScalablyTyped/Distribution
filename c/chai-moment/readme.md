@@ -10,10 +10,10 @@ date assertions for chai, powered by moment
 | ------------------ | :-------------: |
 | Full name          | chai-moment |
 | Keywords           | chai, moment, test, assertions |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 598092 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57044.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/chai-moment)

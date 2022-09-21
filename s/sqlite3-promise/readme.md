@@ -11,9 +11,9 @@ Promise version of sqlite3.
 | Full name          | sqlite3-promise |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29934 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 115.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/sqlite3-promise)

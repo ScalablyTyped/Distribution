@@ -13,9 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the properties of a box and whisker chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -39,23 +39,17 @@ trait ChartBoxwhiskerOptions
   def load(propertyNames: js.Array[String]): ChartBoxwhiskerOptions = js.native
   
   /**
-    *
     * Specifies if the quartile calculation type of a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: ChartBoxQuartileCalculation | Inclusive | Exclusive = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartBoxwhiskerOptions): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartBoxwhiskerOptions): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -63,33 +57,33 @@ trait ChartBoxwhiskerOptions
   def set(properties: ChartBoxwhiskerOptionsUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * Specifies if inner points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: Boolean = js.native
   
   /**
-    *
     * Specifies if the mean line is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: Boolean = js.native
   
   /**
-    *
     * Specifies if the mean marker is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: Boolean = js.native
   
   /**
-    *
     * Specifies if outlier points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showOutlierPoints: Boolean = js.native

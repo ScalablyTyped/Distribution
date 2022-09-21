@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.RetrieveMetadataChangesResponse")
 @js.native
-class RetrieveMetadataChangesResponse protected () extends StObject {
+open class RetrieveMetadataChangesResponse protected () extends StObject {
   def this(responseXml: java.lang.String) = this()
   
   /***
     *
     */
-  def getDeletedMetadata(): js.Any = js.native
+  def getDeletedMetadata(): Any = js.native
   
   /***
     *

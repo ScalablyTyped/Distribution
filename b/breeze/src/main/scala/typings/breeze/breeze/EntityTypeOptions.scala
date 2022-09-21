@@ -35,7 +35,7 @@ object EntityTypeOptions {
     
     inline def setDataPropertiesUndefined: Self = StObject.set(x, "dataProperties", js.undefined)
     
-    inline def setDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "dataProperties", js.Array(value :_*))
+    inline def setDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "dataProperties", js.Array(value*))
     
     inline def setDefaultResourceName(value: String): Self = StObject.set(x, "defaultResourceName", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object EntityTypeOptions {
     
     inline def setNavigationPropertiesUndefined: Self = StObject.set(x, "navigationProperties", js.undefined)
     
-    inline def setNavigationPropertiesVarargs(value: NavigationProperty*): Self = StObject.set(x, "navigationProperties", js.Array(value :_*))
+    inline def setNavigationPropertiesVarargs(value: NavigationProperty*): Self = StObject.set(x, "navigationProperties", js.Array(value*))
     
     inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     

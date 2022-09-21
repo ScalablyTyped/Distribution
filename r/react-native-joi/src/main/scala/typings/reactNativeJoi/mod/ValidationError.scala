@@ -10,7 +10,7 @@ trait ValidationError
      with Error
      with JoiObject {
   
-  var _object: js.Any
+  var _object: Any
   
   def annotate(): String
   
@@ -19,7 +19,7 @@ trait ValidationError
 object ValidationError {
   
   inline def apply(
-    _object: js.Any,
+    _object: Any,
     annotate: () => String,
     details: js.Array[ValidationErrorItem],
     isJoi: Boolean,
@@ -36,8 +36,8 @@ object ValidationError {
     
     inline def setDetails(value: js.Array[ValidationErrorItem]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    inline def setDetailsVarargs(value: ValidationErrorItem*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ValidationErrorItem*): Self = StObject.set(x, "details", js.Array(value*))
     
-    inline def set_object(value: js.Any): Self = StObject.set(x, "_object", value.asInstanceOf[js.Any])
+    inline def set_object(value: Any): Self = StObject.set(x, "_object", value.asInstanceOf[js.Any])
   }
 }

@@ -11,28 +11,28 @@ object segmentMod {
   
   @JSImport("@devexpress/utils/lib/geometry/segment", "Segment")
   @js.native
-  class Segment[T /* <: Point */] protected () extends StObject {
+  open class Segment[T /* <: Point */] protected () extends StObject {
     def this(startPoint: T, endPoint: T) = this()
     
-    val center: Point = js.native
+    def center: Point = js.native
     
     def containsPoint(point: IPoint): Boolean = js.native
     def containsPoint(point: IPoint, accuracy: Double): Boolean = js.native
     
     var endPoint: T = js.native
     
-    /* private */ var intersectCore: js.Any = js.native
+    /* private */ var intersectCore: Any = js.native
     
     def isIntersected[AnotherT /* <: Point */](segment: Segment[AnotherT]): Boolean = js.native
     
     def isIntersectedByRect(rect: IRectangle): Boolean = js.native
     
-    val length: Double = js.native
+    def length: Double = js.native
     
     var startPoint: T = js.native
     
-    val xLength: Double = js.native
+    def xLength: Double = js.native
     
-    val yLength: Double = js.native
+    def yLength: Double = js.native
   }
 }

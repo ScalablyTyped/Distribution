@@ -16,13 +16,13 @@ trait PrinterStatus extends StObject {
   
   var `document-format-varying-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
     ]
   ] = js.undefined
   
   var `job-settable-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
     ]
   ] = js.undefined
   
@@ -84,7 +84,7 @@ trait PrinterStatus extends StObject {
   
   var `printer-settable-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
     ]
   ] = js.undefined
   
@@ -147,23 +147,23 @@ object PrinterStatus {
     
     inline def `setDocument-format-varying-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
         ]
     ): Self = StObject.set(x, "document-format-varying-attributes", value.asInstanceOf[js.Any])
     
     inline def `setDocument-format-varying-attributesUndefined`: Self = StObject.set(x, "document-format-varying-attributes", js.undefined)
     
-    inline def `setDocument-format-varying-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = StObject.set(x, "document-format-varying-attributes", js.Array(value :_*))
+    inline def `setDocument-format-varying-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any)*): Self = StObject.set(x, "document-format-varying-attributes", js.Array(value*))
     
     inline def `setJob-settable-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
         ]
     ): Self = StObject.set(x, "job-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setJob-settable-attributes-supportedUndefined`: Self = StObject.set(x, "job-settable-attributes-supported", js.undefined)
     
-    inline def `setJob-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = StObject.set(x, "job-settable-attributes-supported", js.Array(value :_*))
+    inline def `setJob-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-settable-attributes-supported", js.Array(value*))
     
     inline def `setPages-per-minute`(value: Double): Self = StObject.set(x, "pages-per-minute", value.asInstanceOf[js.Any])
     
@@ -179,17 +179,17 @@ object PrinterStatus {
     
     inline def `setPrinter-alert-descriptionUndefined`: Self = StObject.set(x, "printer-alert-description", js.undefined)
     
-    inline def `setPrinter-alert-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-alert-description", js.Array(value :_*))
+    inline def `setPrinter-alert-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-alert-description", js.Array(value*))
     
     inline def `setPrinter-alertUndefined`: Self = StObject.set(x, "printer-alert", js.undefined)
     
-    inline def `setPrinter-alertVarargs`(value: String*): Self = StObject.set(x, "printer-alert", js.Array(value :_*))
+    inline def `setPrinter-alertVarargs`(value: String*): Self = StObject.set(x, "printer-alert", js.Array(value*))
     
     inline def `setPrinter-camera-image-uri`(value: js.Array[String]): Self = StObject.set(x, "printer-camera-image-uri", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-camera-image-uriUndefined`: Self = StObject.set(x, "printer-camera-image-uri", js.undefined)
     
-    inline def `setPrinter-camera-image-uriVarargs`(value: String*): Self = StObject.set(x, "printer-camera-image-uri", js.Array(value :_*))
+    inline def `setPrinter-camera-image-uriVarargs`(value: String*): Self = StObject.set(x, "printer-camera-image-uri", js.Array(value*))
     
     inline def `setPrinter-config-change-date-time`(value: String): Self = StObject.set(x, "printer-config-change-date-time", value.asInstanceOf[js.Any])
     
@@ -207,7 +207,7 @@ object PrinterStatus {
     
     inline def `setPrinter-detailed-status-messagesUndefined`: Self = StObject.set(x, "printer-detailed-status-messages", js.undefined)
     
-    inline def `setPrinter-detailed-status-messagesVarargs`(value: String*): Self = StObject.set(x, "printer-detailed-status-messages", js.Array(value :_*))
+    inline def `setPrinter-detailed-status-messagesVarargs`(value: String*): Self = StObject.set(x, "printer-detailed-status-messages", js.Array(value*))
     
     inline def `setPrinter-finisher`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher", value.asInstanceOf[js.Any])
     
@@ -215,7 +215,7 @@ object PrinterStatus {
     
     inline def `setPrinter-finisher-descriptionUndefined`: Self = StObject.set(x, "printer-finisher-description", js.undefined)
     
-    inline def `setPrinter-finisher-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-description", js.Array(value :_*))
+    inline def `setPrinter-finisher-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-description", js.Array(value*))
     
     inline def `setPrinter-finisher-supplies`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher-supplies", value.asInstanceOf[js.Any])
     
@@ -223,15 +223,15 @@ object PrinterStatus {
     
     inline def `setPrinter-finisher-supplies-descriptionUndefined`: Self = StObject.set(x, "printer-finisher-supplies-description", js.undefined)
     
-    inline def `setPrinter-finisher-supplies-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies-description", js.Array(value :_*))
+    inline def `setPrinter-finisher-supplies-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies-description", js.Array(value*))
     
     inline def `setPrinter-finisher-suppliesUndefined`: Self = StObject.set(x, "printer-finisher-supplies", js.undefined)
     
-    inline def `setPrinter-finisher-suppliesVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies", js.Array(value :_*))
+    inline def `setPrinter-finisher-suppliesVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies", js.Array(value*))
     
     inline def `setPrinter-finisherUndefined`: Self = StObject.set(x, "printer-finisher", js.undefined)
     
-    inline def `setPrinter-finisherVarargs`(value: String*): Self = StObject.set(x, "printer-finisher", js.Array(value :_*))
+    inline def `setPrinter-finisherVarargs`(value: String*): Self = StObject.set(x, "printer-finisher", js.Array(value*))
     
     inline def `setPrinter-id`(value: Double): Self = StObject.set(x, "printer-id", value.asInstanceOf[js.Any])
     
@@ -249,7 +249,7 @@ object PrinterStatus {
     
     inline def `setPrinter-input-trayUndefined`: Self = StObject.set(x, "printer-input-tray", js.undefined)
     
-    inline def `setPrinter-input-trayVarargs`(value: String*): Self = StObject.set(x, "printer-input-tray", js.Array(value :_*))
+    inline def `setPrinter-input-trayVarargs`(value: String*): Self = StObject.set(x, "printer-input-tray", js.Array(value*))
     
     inline def `setPrinter-is-accepting-jobs`(value: Boolean): Self = StObject.set(x, "printer-is-accepting-jobs", value.asInstanceOf[js.Any])
     
@@ -283,7 +283,7 @@ object PrinterStatus {
     
     inline def `setPrinter-output-trayUndefined`: Self = StObject.set(x, "printer-output-tray", js.undefined)
     
-    inline def `setPrinter-output-trayVarargs`(value: String*): Self = StObject.set(x, "printer-output-tray", js.Array(value :_*))
+    inline def `setPrinter-output-trayVarargs`(value: String*): Self = StObject.set(x, "printer-output-tray", js.Array(value*))
     
     inline def `setPrinter-pages-completed`(value: Double): Self = StObject.set(x, "printer-pages-completed", value.asInstanceOf[js.Any])
     
@@ -299,13 +299,13 @@ object PrinterStatus {
     
     inline def `setPrinter-settable-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
         ]
     ): Self = StObject.set(x, "printer-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-settable-attributes-supportedUndefined`: Self = StObject.set(x, "printer-settable-attributes-supported", js.undefined)
     
-    inline def `setPrinter-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = StObject.set(x, "printer-settable-attributes-supported", js.Array(value :_*))
+    inline def `setPrinter-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any)*): Self = StObject.set(x, "printer-settable-attributes-supported", js.Array(value*))
     
     inline def `setPrinter-state`(value: PrinterState): Self = StObject.set(x, "printer-state", value.asInstanceOf[js.Any])
     
@@ -325,7 +325,7 @@ object PrinterStatus {
     
     inline def `setPrinter-state-reasonsUndefined`: Self = StObject.set(x, "printer-state-reasons", js.undefined)
     
-    inline def `setPrinter-state-reasonsVarargs`(value: PrinterStateReasons*): Self = StObject.set(x, "printer-state-reasons", js.Array(value :_*))
+    inline def `setPrinter-state-reasonsVarargs`(value: PrinterStateReasons*): Self = StObject.set(x, "printer-state-reasons", js.Array(value*))
     
     inline def `setPrinter-stateUndefined`: Self = StObject.set(x, "printer-state", js.undefined)
     
@@ -339,7 +339,7 @@ object PrinterStatus {
     
     inline def `setPrinter-supply-descriptionUndefined`: Self = StObject.set(x, "printer-supply-description", js.undefined)
     
-    inline def `setPrinter-supply-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-supply-description", js.Array(value :_*))
+    inline def `setPrinter-supply-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-supply-description", js.Array(value*))
     
     inline def `setPrinter-supply-info-uri`(value: String): Self = StObject.set(x, "printer-supply-info-uri", value.asInstanceOf[js.Any])
     
@@ -347,7 +347,7 @@ object PrinterStatus {
     
     inline def `setPrinter-supplyUndefined`: Self = StObject.set(x, "printer-supply", js.undefined)
     
-    inline def `setPrinter-supplyVarargs`(value: String*): Self = StObject.set(x, "printer-supply", js.Array(value :_*))
+    inline def `setPrinter-supplyVarargs`(value: String*): Self = StObject.set(x, "printer-supply", js.Array(value*))
     
     inline def `setPrinter-up-time`(value: Double): Self = StObject.set(x, "printer-up-time", value.asInstanceOf[js.Any])
     
@@ -357,7 +357,7 @@ object PrinterStatus {
     
     inline def `setPrinter-uri-supportedUndefined`: Self = StObject.set(x, "printer-uri-supported", js.undefined)
     
-    inline def `setPrinter-uri-supportedVarargs`(value: String*): Self = StObject.set(x, "printer-uri-supported", js.Array(value :_*))
+    inline def `setPrinter-uri-supportedVarargs`(value: String*): Self = StObject.set(x, "printer-uri-supported", js.Array(value*))
     
     inline def `setPrinter-uuid`(value: String): Self = StObject.set(x, "printer-uuid", value.asInstanceOf[js.Any])
     
@@ -371,18 +371,18 @@ object PrinterStatus {
     
     inline def `setXri-authentication-supportedUndefined`: Self = StObject.set(x, "xri-authentication-supported", js.undefined)
     
-    inline def `setXri-authentication-supportedVarargs`(value: XriAuthentication*): Self = StObject.set(x, "xri-authentication-supported", js.Array(value :_*))
+    inline def `setXri-authentication-supportedVarargs`(value: XriAuthentication*): Self = StObject.set(x, "xri-authentication-supported", js.Array(value*))
     
     inline def `setXri-security-supported`(value: js.Array[XriSecurity]): Self = StObject.set(x, "xri-security-supported", value.asInstanceOf[js.Any])
     
     inline def `setXri-security-supportedUndefined`: Self = StObject.set(x, "xri-security-supported", js.undefined)
     
-    inline def `setXri-security-supportedVarargs`(value: XriSecurity*): Self = StObject.set(x, "xri-security-supported", js.Array(value :_*))
+    inline def `setXri-security-supportedVarargs`(value: XriSecurity*): Self = StObject.set(x, "xri-security-supported", js.Array(value*))
     
     inline def `setXri-uri-scheme-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "xri-uri-scheme-supported", value.asInstanceOf[js.Any])
     
     inline def `setXri-uri-scheme-supportedUndefined`: Self = StObject.set(x, "xri-uri-scheme-supported", js.undefined)
     
-    inline def `setXri-uri-scheme-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "xri-uri-scheme-supported", js.Array(value :_*))
+    inline def `setXri-uri-scheme-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "xri-uri-scheme-supported", js.Array(value*))
   }
 }

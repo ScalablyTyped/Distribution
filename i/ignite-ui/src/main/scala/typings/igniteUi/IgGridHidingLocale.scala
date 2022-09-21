@@ -10,7 +10,7 @@ trait IgGridHidingLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the text of the button which applies changes in the modal dialog.

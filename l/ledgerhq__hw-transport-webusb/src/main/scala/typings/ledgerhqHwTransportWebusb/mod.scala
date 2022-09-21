@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@ledgerhq/hw-transport-webusb", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ledgerhqHwTransport.mod.default[String] {
     def this(device: String) = this()
   }

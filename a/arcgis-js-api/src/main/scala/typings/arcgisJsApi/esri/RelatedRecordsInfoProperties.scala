@@ -33,7 +33,7 @@ object RelatedRecordsInfoProperties {
     
     inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    inline def setOrderByFieldsVarargs(value: RelatedRecordsInfoFieldOrderProperties*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: RelatedRecordsInfoFieldOrderProperties*): Self = StObject.set(x, "orderByFields", js.Array(value*))
     
     inline def setShowRelatedRecords(value: Boolean): Self = StObject.set(x, "showRelatedRecords", value.asInstanceOf[js.Any])
     

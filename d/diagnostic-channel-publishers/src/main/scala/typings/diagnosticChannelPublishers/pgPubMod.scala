@@ -3,8 +3,6 @@ package typings.diagnosticChannelPublishers
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import typings.diagnosticChannelPublishers.anon.Plan
 import typings.diagnosticChannelPublishers.anon.Port
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,17 +29,17 @@ object pgPubMod {
     
     var duration: Double
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var query: Plan
     
     var result: js.UndefOr[IPostgresResult] = js.undefined
     
-    var time: Date
+    var time: js.Date
   }
   object IPostgresData {
     
-    inline def apply(database: Port, duration: Double, query: Plan, time: Date): IPostgresData = {
+    inline def apply(database: Port, duration: Double, query: Plan, time: js.Date): IPostgresData = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPostgresData]
     }
@@ -52,7 +50,7 @@ object pgPubMod {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -62,7 +60,7 @@ object pgPubMod {
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   

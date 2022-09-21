@@ -79,7 +79,7 @@ object XDiagram {
     getFloor: () => XPropertySet,
     getLegend: () => XLegend,
     getWall: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultColorScheme: XColorScheme => Unit,
     setDiagramData: (XDataSource, SeqEquiv[PropertyValue]) => Unit,

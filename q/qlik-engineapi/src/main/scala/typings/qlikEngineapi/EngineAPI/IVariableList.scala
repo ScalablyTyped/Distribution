@@ -22,6 +22,6 @@ object IVariableList {
     
     inline def setQItems(value: js.Array[INxVariableListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    inline def setQItemsVarargs(value: INxVariableListItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: INxVariableListItem*): Self = StObject.set(x, "qItems", js.Array(value*))
   }
 }

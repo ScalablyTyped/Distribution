@@ -11,11 +11,11 @@ trait KnockoutDeferredTasks extends StObject {
   
   def processDelayed(evaluator: js.Function): Boolean = js.native
   def processDelayed(evaluator: js.Function, distinct: Boolean): Boolean = js.native
-  def processDelayed(evaluator: js.Function, distinct: Boolean, options: js.Array[js.Any]): Boolean = js.native
-  def processDelayed(evaluator: js.Function, distinct: Unit, options: js.Array[js.Any]): Boolean = js.native
+  def processDelayed(evaluator: js.Function, distinct: Boolean, options: js.Array[Any]): Boolean = js.native
+  def processDelayed(evaluator: js.Function, distinct: Unit, options: js.Array[Any]): Boolean = js.native
   
-  def processImmediate(evaluator: js.Function): js.Any = js.native
-  def processImmediate(evaluator: js.Function, `object`: js.Any): js.Any = js.native
-  def processImmediate(evaluator: js.Function, `object`: js.Any, args: js.Array[js.Any]): js.Any = js.native
-  def processImmediate(evaluator: js.Function, `object`: Unit, args: js.Array[js.Any]): js.Any = js.native
+  def processImmediate(evaluator: js.Function): Any = js.native
+  def processImmediate(evaluator: js.Function, `object`: Any): Any = js.native
+  def processImmediate(evaluator: js.Function, `object`: Any, args: js.Array[Any]): Any = js.native
+  def processImmediate(evaluator: js.Function, `object`: Unit, args: js.Array[Any]): Any = js.native
 }

@@ -28,6 +28,15 @@ object urlMod {
     inline def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
+      * Parse URL and retrieve hostname
+      *
+      * @param url - The URL string to parse
+      *
+      * @return a hostname string value
+      */
+    inline def getHostName(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
       * Test whether the url is a local url.
       *
       * #### Notes
@@ -43,7 +52,7 @@ object urlMod {
       *
       * @returns the joined url.
       */
-    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     inline def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**

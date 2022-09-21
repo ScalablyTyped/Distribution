@@ -11,14 +11,11 @@ WebRTC data channel communication with a socket.io-like API
 | Full name          | socket.io-p2p |
 | Keywords           | webrtc, peer-to-peer |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 8354 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 286.3333333333333 |
+| # stars            | 985.0 |
 
 ## Links
-- [Homepage](https://github.com/socketio/socket.io-p2p)
-- [Bugs](https://github.com/socketio/socket.io-p2p/issues)
-- [Repository](https://github.com/socketio/socket.io-p2p)
 - [Npm](https://www.npmjs.com/package/socket.io-p2p)
     
 

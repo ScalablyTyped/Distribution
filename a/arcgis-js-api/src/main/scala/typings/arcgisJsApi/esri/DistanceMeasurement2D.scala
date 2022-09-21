@@ -1,15 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
-import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.feet_
-import typings.arcgisJsApi.arcgisJsApiStrings.imperial
-import typings.arcgisJsApi.arcgisJsApiStrings.inches
-import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
-import typings.arcgisJsApi.arcgisJsApiStrings.meters_
-import typings.arcgisJsApi.arcgisJsApiStrings.metric
-import typings.arcgisJsApi.arcgisJsApiStrings.miles_
-import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +21,14 @@ trait DistanceMeasurement2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unit)
     */
-  var unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = js.native
+  var unit: SystemOrLengthUnit = js.native
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unitOptions)
     */
-  var unitOptions: js.Array[
-    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  var unitOptions: js.Array[SystemOrLengthUnit] = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).

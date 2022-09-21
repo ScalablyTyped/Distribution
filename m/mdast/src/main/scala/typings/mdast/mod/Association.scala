@@ -8,7 +8,7 @@ trait Association extends StObject {
   
   var identifier: String
   
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String | Null] = js.undefined
 }
 object Association {
   
@@ -22,6 +22,8 @@ object Association {
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

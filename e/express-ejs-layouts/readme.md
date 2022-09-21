@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-ejs-layouts
 
-Typings are for version 2.3
+Typings are for version 2.5
 
 ## Library description:
 Layout support for ejs in express.
@@ -10,15 +10,12 @@ Layout support for ejs in express.
 | ------------------ | :-------------: |
 | Full name          | express-ejs-layouts |
 | Keywords           | express, layout, ejs |
-| # releases         | 0 |
-| # dependents       | 74 |
-| # downloads        | 473526 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 68809.66666666667 |
+| # stars            | 267.0 |
 
 ## Links
-- [Homepage](https://github.com/Soarez/express-ejs-layouts#readme)
-- [Bugs](https://github.com/Soarez/express-ejs-layouts/issues)
-- [Repository](https://github.com/Soarez/express-ejs-layouts)
 - [Npm](https://www.npmjs.com/package/express-ejs-layouts)
     
 

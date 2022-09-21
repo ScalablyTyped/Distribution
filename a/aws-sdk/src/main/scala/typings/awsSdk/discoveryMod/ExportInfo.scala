@@ -19,7 +19,7 @@ trait ExportInfo extends StObject {
   /**
     * The time that the data export was initiated.
     */
-  var exportRequestTime: ExportRequestTime
+  var exportRequestTime: js.Date
   
   /**
     * The status of the data export job.
@@ -34,12 +34,12 @@ trait ExportInfo extends StObject {
   /**
     * The endTime used in the StartExportTask request. If no endTime was requested, this result does not appear in ExportInfo.
     */
-  var requestedEndTime: js.UndefOr[TimeStamp] = js.undefined
+  var requestedEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The value of startTime parameter in the StartExportTask request. If no startTime was requested, this result does not appear in ExportInfo.
     */
-  var requestedStartTime: js.UndefOr[TimeStamp] = js.undefined
+  var requestedStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A status message provided for API callers.
@@ -50,7 +50,7 @@ object ExportInfo {
   
   inline def apply(
     exportId: ConfigurationsExportId,
-    exportRequestTime: ExportRequestTime,
+    exportRequestTime: js.Date,
     exportStatus: ExportStatus,
     statusMessage: ExportStatusMessage
   ): ExportInfo = {
@@ -66,7 +66,7 @@ object ExportInfo {
     
     inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
-    inline def setExportRequestTime(value: ExportRequestTime): Self = StObject.set(x, "exportRequestTime", value.asInstanceOf[js.Any])
+    inline def setExportRequestTime(value: js.Date): Self = StObject.set(x, "exportRequestTime", value.asInstanceOf[js.Any])
     
     inline def setExportStatus(value: ExportStatus): Self = StObject.set(x, "exportStatus", value.asInstanceOf[js.Any])
     
@@ -74,11 +74,11 @@ object ExportInfo {
     
     inline def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
     
-    inline def setRequestedEndTime(value: TimeStamp): Self = StObject.set(x, "requestedEndTime", value.asInstanceOf[js.Any])
+    inline def setRequestedEndTime(value: js.Date): Self = StObject.set(x, "requestedEndTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedEndTimeUndefined: Self = StObject.set(x, "requestedEndTime", js.undefined)
     
-    inline def setRequestedStartTime(value: TimeStamp): Self = StObject.set(x, "requestedStartTime", value.asInstanceOf[js.Any])
+    inline def setRequestedStartTime(value: js.Date): Self = StObject.set(x, "requestedStartTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedStartTimeUndefined: Self = StObject.set(x, "requestedStartTime", js.undefined)
     

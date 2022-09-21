@@ -21,4 +21,8 @@ object octokitAuthTokenStrings {
   @js.native
   sealed trait token extends StObject
   inline def token: token = "token".asInstanceOf[token]
+  
+  @js.native
+  sealed trait `user-to-server` extends StObject
+  inline def `user-to-server`: `user-to-server` = "user-to-server".asInstanceOf[`user-to-server`]
 }

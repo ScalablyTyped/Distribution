@@ -19,7 +19,7 @@ trait WorkflowExecutionInfo extends StObject {
   /**
     * The time when the workflow execution was closed. Set only if the execution status is CLOSED.
     */
-  var closeTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var closeTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The workflow execution this information is about.
@@ -39,7 +39,7 @@ trait WorkflowExecutionInfo extends StObject {
   /**
     * The time when the execution was started.
     */
-  var startTimestamp: Timestamp
+  var startTimestamp: js.Date
   
   /**
     * The list of tags associated with the workflow execution. Tags can be used to identify and list workflow executions of interest through the visibility APIs. A workflow execution can have a maximum of 5 tags.
@@ -56,7 +56,7 @@ object WorkflowExecutionInfo {
   inline def apply(
     execution: WorkflowExecution,
     executionStatus: ExecutionStatus,
-    startTimestamp: Timestamp,
+    startTimestamp: js.Date,
     workflowType: WorkflowType
   ): WorkflowExecutionInfo = {
     val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any], executionStatus = executionStatus.asInstanceOf[js.Any], startTimestamp = startTimestamp.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object WorkflowExecutionInfo {
     
     inline def setCloseStatusUndefined: Self = StObject.set(x, "closeStatus", js.undefined)
     
-    inline def setCloseTimestamp(value: Timestamp): Self = StObject.set(x, "closeTimestamp", value.asInstanceOf[js.Any])
+    inline def setCloseTimestamp(value: js.Date): Self = StObject.set(x, "closeTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCloseTimestampUndefined: Self = StObject.set(x, "closeTimestamp", js.undefined)
     
@@ -85,13 +85,13 @@ object WorkflowExecutionInfo {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
     inline def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
     inline def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value*))
     
     inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }

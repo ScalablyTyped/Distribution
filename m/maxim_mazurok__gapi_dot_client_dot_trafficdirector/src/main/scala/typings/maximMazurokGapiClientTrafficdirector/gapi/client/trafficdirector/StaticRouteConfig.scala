@@ -14,7 +14,7 @@ trait StaticRouteConfig extends StObject {
   var routeConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticRouteConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticRouteConfig & TopLevel[Any]
   ] = js.undefined
 }
 object StaticRouteConfig {
@@ -33,7 +33,7 @@ object StaticRouteConfig {
     inline def setRouteConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticRouteConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticRouteConfig & TopLevel[Any]
     ): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
     
     inline def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)

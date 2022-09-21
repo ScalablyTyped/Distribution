@@ -1,15 +1,13 @@
 package typings.easyXapi
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.easyXapi.anon.Level
 import typings.easyXapi.anon.Partial
 import typings.express.mod.Application_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,28 +82,37 @@ object mod {
   
   trait Result extends StObject {
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    def app(req: IncomingMessage, res: ServerResponse): js.Any
-    @JSName("app")
-    var app_Original: Application_
+    var app: Application_
     
-    var express: js.Any
+    var express: Any
     
     def listen(): Unit
     
     var log: typings.bunyan.mod.^
     
-    var server: Server
+    var server: Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]
   }
   object Result {
     
-    inline def apply(app: Application_, express: js.Any, listen: () => Unit, log: typings.bunyan.mod.^, server: Server): Result = {
+    inline def apply(
+      app: Application_,
+      express: Any,
+      listen: () => Unit,
+      log: typings.bunyan.mod.^,
+      server: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Result = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], listen = js.Any.fromFunction0(listen), log = log.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
@@ -114,13 +121,21 @@ object mod {
       
       inline def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      inline def setExpress(value: js.Any): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
+      inline def setExpress(value: Any): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
       
       inline def setListen(value: () => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction0(value))
       
       inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(
+        value: Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,13 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IPlayToSourceRequest extends StObject {
   
-  var deadline: Date
+  var deadline: js.Date
   
   def displayErrorString(errorString: String): Unit
   
@@ -18,7 +17,7 @@ trait IPlayToSourceRequest extends StObject {
 object IPlayToSourceRequest {
   
   inline def apply(
-    deadline: Date,
+    deadline: js.Date,
     displayErrorString: String => Unit,
     getDeferral: () => PlayToSourceDeferral,
     setSource: PlayToSource => Unit
@@ -29,7 +28,7 @@ object IPlayToSourceRequest {
   
   extension [Self <: IPlayToSourceRequest](x: Self) {
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setDisplayErrorString(value: String => Unit): Self = StObject.set(x, "displayErrorString", js.Any.fromFunction1(value))
     

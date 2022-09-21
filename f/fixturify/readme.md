@@ -1,7 +1,7 @@
 
 # Scala.js typings for fixturify
 
-Typings are for version 1.3.0
+Typings are for version 2.1.1
 
 ## Library description:
 Convert objects into directory structures and back again
@@ -10,10 +10,10 @@ Convert objects into directory structures and back again
 | ------------------ | :-------------: |
 | Full name          | fixturify |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 8216488 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1127300.6666666667 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/joliss/node-fixturify#readme)

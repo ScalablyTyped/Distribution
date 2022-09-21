@@ -33,6 +33,6 @@ object ReplaceServicePerimetersRequest {
     
     inline def setServicePerimetersUndefined: Self = StObject.set(x, "servicePerimeters", js.undefined)
     
-    inline def setServicePerimetersVarargs(value: ServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value :_*))
+    inline def setServicePerimetersVarargs(value: ServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value*))
   }
 }

@@ -12,43 +12,43 @@ object facepileBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase")
   @js.native
-  class FacepileBase protected ()
-    extends Component[IFacepileProps, js.Object, js.Any] {
+  open class FacepileBase protected ()
+    extends Component[IFacepileProps, js.Object, Any] {
     def this(props: IFacepileProps) = this()
     
-    /* private */ var _ariaDescriptionId: js.Any = js.native
+    /* private */ var _ariaDescriptionId: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _getAddNewElement: js.Any = js.native
+    /* private */ var _getAddNewElement: Any = js.native
     
-    /* private */ var _getDescriptiveOverflowElement: js.Any = js.native
+    /* private */ var _getDescriptiveOverflowElement: Any = js.native
     
-    /* private */ var _getElementProps: js.Any = js.native
+    /* private */ var _getElementProps: Any = js.native
     
-    /* private */ var _getElementWithOnClickEvent: js.Any = js.native
+    /* private */ var _getElementWithOnClickEvent: Any = js.native
     
-    /* private */ var _getElementWithoutOnClickEvent: js.Any = js.native
+    /* private */ var _getElementWithoutOnClickEvent: Any = js.native
     
-    /* private */ var _getIconElement: js.Any = js.native
+    /* private */ var _getIconElement: Any = js.native
     
-    /* private */ var _getOverflowElement: js.Any = js.native
+    /* private */ var _getOverflowElement: Any = js.native
     
-    /* private */ var _getPersonaCoinControl: js.Any = js.native
+    /* private */ var _getPersonaCoinControl: Any = js.native
     
-    /* private */ var _getPersonaControl: js.Any = js.native
+    /* private */ var _getPersonaControl: Any = js.native
     
-    /* private */ var _onPersonaClick: js.Any = js.native
+    /* private */ var _onPersonaClick: Any = js.native
     
-    /* private */ var _onPersonaMouseMove: js.Any = js.native
+    /* private */ var _onPersonaMouseMove: Any = js.native
     
-    /* private */ var _onPersonaMouseOut: js.Any = js.native
+    /* private */ var _onPersonaMouseOut: Any = js.native
     
-    /* private */ var _onRenderVisiblePersonas: js.Any = js.native
+    /* private */ var _onRenderVisiblePersonas: Any = js.native
     
-    /* private */ var _renderInitials: js.Any = js.native
+    /* private */ var _renderInitials: Any = js.native
     
-    /* private */ var _renderInitialsNotPictured: js.Any = js.native
+    /* private */ var _renderInitialsNotPictured: Any = js.native
     
     /* protected */ def onRenderAriaDescription(): js.UndefOr[_empty | Element] = js.native
   }

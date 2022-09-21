@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vuex" : "3.5.1"
+      "vuex" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "vuex" : "3.5.1"
+      "vuex" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

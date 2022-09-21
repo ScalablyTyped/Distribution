@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriver-manager
 
-Typings are for version 12.1.7
+Typings are for version 12.1.8
 
 ## Library description:
 A selenium server and browser driver manager for your end to end tests.
@@ -10,10 +10,10 @@ A selenium server and browser driver manager for your end to end tests.
 | ------------------ | :-------------: |
 | Full name          | webdriver-manager |
 | Keywords           | angular, test, testing, protractor, webdriver, webdriverjs, selenium, selenium-webdriver |
-| # releases         | 9 |
-| # dependents       | 75 |
-| # downloads        | 63269865 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5437711.666666667 |
+| # stars            | 226.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/webdriver-manager#readme)

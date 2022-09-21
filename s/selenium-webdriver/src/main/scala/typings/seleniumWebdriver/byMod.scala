@@ -2,6 +2,7 @@ package typings.seleniumWebdriver
 
 import typings.seleniumWebdriver.mod.Locator
 import typings.seleniumWebdriver.mod.WebDriver
+import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod._Locator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object byMod {
   
   @JSImport("selenium-webdriver/lib/by", "By")
   @js.native
-  class By protected ()
+  open class By protected ()
     extends StObject
        with _Locator {
     /**
@@ -23,6 +24,8 @@ object byMod {
       * @param {string} value the value to search for.
       */
     def this(`using`: String, value: String) = this()
+    
+    def toObject(): js.Object = js.native
     
     var `using`: String = js.native
     
@@ -73,8 +76,8 @@ object byMod {
       * @return {function(!./WebDriver): !./Promise}
       *     A new JavaScript-based locator function.
       */
-    inline def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
-    inline def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+    inline def js_(script: String, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
+    inline def js_(script: js.Function, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
     
     /**
       * Locates link elements whose
@@ -127,7 +130,72 @@ object byMod {
     inline def xpath(xpath: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[By]
   }
   
-  inline def checkedLocator(locator: Locator): By = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedLocator")(locator.asInstanceOf[js.Any]).asInstanceOf[By]
+  @JSImport("selenium-webdriver/lib/by", "RelativeBy")
+  @js.native
+  open class RelativeBy protected ()
+    extends StObject
+       with _Locator {
+    /**
+      * @param {By} findDetails
+      * @param {Array<Object>} filters
+      */
+    def this(findDetails: By, filters: js.Array[js.Object]) = this()
+    
+    /**
+      * Look for elements above the root element passed in
+      * @param {string|WebElement} locatorOrElement
+      * @return {!RelativeBy} Return this object
+      */
+    def above(locatorOrElement: Locator): RelativeBy = js.native
+    def above(locatorOrElement: WebElement): RelativeBy = js.native
+    
+    /**
+      * Look for elements below the root element passed in
+      * @param {Locator|WebElement} locatorOrElement
+      * @return {!RelativeBy} Return this object
+      */
+    def below(locatorOrElement: Locator): RelativeBy = js.native
+    def below(locatorOrElement: WebElement): RelativeBy = js.native
+    
+    /**
+      * Returns a marshalled version of the {@link RelativeBy}
+      * @return {!Object} Object representation of a {@link WebElement}
+      *     that will be used in {@link #findElements}.
+      */
+    def marshall(): js.Object = js.native
+    
+    /**
+      * Look for elements near the root element passed in
+      * @param {Locator|WebElement} locatorOrElement
+      * @return {!RelativeBy} Return this object
+      */
+    def near(locatorOrElement: Locator): RelativeBy = js.native
+    def near(locatorOrElement: WebElement): RelativeBy = js.native
+    
+    /**
+      * Look for elements left the root element passed in
+      * @param {Locator|WebElement} locatorOrElement
+      * @return {!RelativeBy} Return this object
+      */
+    def toLeftOf(locatorOrElement: Locator): RelativeBy = js.native
+    def toLeftOf(locatorOrElement: WebElement): RelativeBy = js.native
+    
+    /**
+      * Look for elements right the root element passed in
+      * @param {Locator|WebElement} locatorOrElement
+      * @return {!RelativeBy} Return this object
+      */
+    def toRightOf(locatorOrElement: Locator): RelativeBy = js.native
+    def toRightOf(locatorOrElement: WebElement): RelativeBy = js.native
+  }
+  
+  inline def checkedLocator(locator: Locator): By | js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedLocator")(locator.asInstanceOf[js.Any]).asInstanceOf[By | js.Function]
+  
+  inline def escapeCss(css: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeCss")(css.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def locateWith(by: Locator): RelativeBy = ^.asInstanceOf[js.Dynamic].applyDynamic("locateWith")(by.asInstanceOf[js.Any]).asInstanceOf[RelativeBy]
+  
+  inline def withTagName(tagName: By): RelativeBy = ^.asInstanceOf[js.Dynamic].applyDynamic("withTagName")(tagName.asInstanceOf[js.Any]).asInstanceOf[RelativeBy]
   
   /* Rewritten from type alias, can be one of: 
     - typings.seleniumWebdriver.anon.ClassName
@@ -135,7 +203,7 @@ object byMod {
     - typings.seleniumWebdriver.anon.Id
     - typings.seleniumWebdriver.anon.Js
     - typings.seleniumWebdriver.anon.LinkText
-    - typings.seleniumWebdriver.anon.Name
+    - typings.seleniumWebdriver.anon.NameString
     - typings.seleniumWebdriver.anon.PartialLinkText
     - typings.seleniumWebdriver.anon.TagName
     - typings.seleniumWebdriver.anon.Xpath
@@ -171,9 +239,9 @@ object byMod {
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.LinkText]
     }
     
-    inline def Name(name: String): typings.seleniumWebdriver.anon.Name = {
+    inline def NameString(name: String): typings.seleniumWebdriver.anon.NameString = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Name]
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.NameString]
     }
     
     inline def PartialLinkText(partialLinkText: String): typings.seleniumWebdriver.anon.PartialLinkText = {

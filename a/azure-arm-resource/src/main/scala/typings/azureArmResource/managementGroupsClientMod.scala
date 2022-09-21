@@ -13,7 +13,7 @@ object managementGroupsClientMod {
   
   @JSImport("azure-arm-resource/lib/management/managementGroupsClient", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ManagementGroupsClient {
+  open class ^ protected () extends ManagementGroupsClient {
     /**
       * Initializes a new instance of the ManagementGroupsClient class.
       * @constructor

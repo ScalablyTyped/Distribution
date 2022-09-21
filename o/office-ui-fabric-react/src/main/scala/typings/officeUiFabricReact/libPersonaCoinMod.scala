@@ -24,7 +24,7 @@ object libPersonaCoinMod {
   
   @JSImport("office-ui-fabric-react/lib/PersonaCoin", "PersonaBase")
   @js.native
-  class PersonaBase protected ()
+  open class PersonaBase protected ()
     extends typings.officeUiFabricReact.personaMod.PersonaBase {
     def this(props: IPersonaProps) = this()
   }
@@ -47,7 +47,7 @@ object libPersonaCoinMod {
   
   @JSImport("office-ui-fabric-react/lib/PersonaCoin", "PersonaCoinBase")
   @js.native
-  class PersonaCoinBase protected ()
+  open class PersonaCoinBase protected ()
     extends typings.officeUiFabricReact.personaMod.PersonaCoinBase {
     def this(props: IPersonaCoinProps) = this()
   }

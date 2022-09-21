@@ -25,12 +25,12 @@ object PermissionDelta {
     
     inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
     
-    inline def setAddedPermissionsVarargs(value: String*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+    inline def setAddedPermissionsVarargs(value: String*): Self = StObject.set(x, "addedPermissions", js.Array(value*))
     
     inline def setRemovedPermissions(value: js.Array[String]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
     
     inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
     
-    inline def setRemovedPermissionsVarargs(value: String*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+    inline def setRemovedPermissionsVarargs(value: String*): Self = StObject.set(x, "removedPermissions", js.Array(value*))
   }
 }

@@ -10,28 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.CoreServicesShim")
 @js.native
-class CoreServicesShim protected ()
+open class CoreServicesShim protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.CoreServicesShim {
   def this(factory: IShimFactory, host: ICoreServicesHost) = this()
   
   /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
+  override def dispose(dummy: Any): Unit = js.native
   
   /* CompleteClass */
-  override def dumpMemory(dummy: js.Any): String = js.native
+  override def dumpMemory(dummy: Any): String = js.native
   
   /* private */ /* CompleteClass */
-  var factory: js.Any = js.native
+  var factory: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any = js.native
+  override def forwardJSONCall(actionDescription: Any, action: Any): Any = js.native
   
   /* CompleteClass */
   override def getDefaultCompilationSettings(): String = js.native
   
   /* CompleteClass */
-  override def getMemoryInfo(dummy: js.Any): String = js.native
+  override def getMemoryInfo(dummy: Any): String = js.native
   
   /* CompleteClass */
   override def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): String = js.native

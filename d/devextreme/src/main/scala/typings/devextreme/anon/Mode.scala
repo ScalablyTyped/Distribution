@@ -1,17 +1,21 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.standard
-import typings.devextreme.devextremeStrings.virtual
+import typings.devextreme.mod.DevExpress.common.ScrollMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Mode extends StObject {
   
-  var mode: js.UndefOr[standard | virtual] = js.undefined
+  /**
+    * Specifies the scrolling mode.
+    */
+  var mode: js.UndefOr[ScrollMode] = js.undefined
   
-  var useNative: js.UndefOr[Boolean | auto] = js.undefined
+  /**
+    * Specifies whether or not the UI component uses native scrolling.
+    */
+  var useNative: js.UndefOr[Boolean | typings.devextreme.mod.DevExpress.common.Mode] = js.undefined
 }
 object Mode {
   
@@ -22,11 +26,11 @@ object Mode {
   
   extension [Self <: Mode](x: Self) {
     
-    inline def setMode(value: standard | virtual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ScrollMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setUseNative(value: Boolean | auto): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+    inline def setUseNative(value: Boolean | typings.devextreme.mod.DevExpress.common.Mode): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     
     inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
   }

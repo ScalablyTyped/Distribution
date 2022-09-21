@@ -11,15 +11,15 @@ object windowMod {
   
   @JSImport("vega-lite/build/src/compile/data/window", "WindowTransformNode")
   @js.native
-  class WindowTransformNode protected () extends DataFlowNode {
+  open class WindowTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: WindowTransform) = this()
     
     def addDimensions(fields: js.Array[String]): Unit = js.native
     
     def assemble(): typings.vegaTypings.transformMod.WindowTransform | VgJoinAggregateTransform = js.native
     
-    /* private */ var getDefaultName: js.Any = js.native
+    /* private */ var getDefaultName: Any = js.native
     
-    /* private */ val transform: js.Any = js.native
+    /* private */ val transform: Any = js.native
   }
 }

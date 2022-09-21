@@ -24,6 +24,6 @@ object GetApplicationPolicyResponse {
     
     inline def setStatementsUndefined: Self = StObject.set(x, "Statements", js.undefined)
     
-    inline def setStatementsVarargs(value: ApplicationPolicyStatement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: ApplicationPolicyStatement*): Self = StObject.set(x, "Statements", js.Array(value*))
   }
 }

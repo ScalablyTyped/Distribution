@@ -24,7 +24,7 @@ trait OnBLECharacteristicValueChangeSuccess extends StObject {
   /**
     * 特征值最新的值 （注意：vConsole 无法打印出 ArrayBuffer 类型数据）
     */
-  var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var value: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object OnBLECharacteristicValueChangeSuccess {
   
@@ -47,10 +47,10 @@ object OnBLECharacteristicValueChangeSuccess {
     
     inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

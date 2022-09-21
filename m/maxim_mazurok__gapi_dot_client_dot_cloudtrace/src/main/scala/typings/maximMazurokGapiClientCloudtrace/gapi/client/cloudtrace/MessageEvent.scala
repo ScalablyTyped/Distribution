@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MessageEvent extends StObject {
   
-  /** The number of compressed bytes sent or received. If missing assumed to be the same size as uncompressed. */
+  /** The number of compressed bytes sent or received. If missing, the compressed size is assumed to be the same size as the uncompressed size. */
   var compressedSizeBytes: js.UndefOr[String] = js.undefined
   
-  /** An identifier for the MessageEvent's message that can be used to match SENT and RECEIVED MessageEvents. It is recommended to be unique within a Span. */
+  /** An identifier for the MessageEvent's message that can be used to match `SENT` and `RECEIVED` MessageEvents. */
   var id: js.UndefOr[String] = js.undefined
   
   /** Type of MessageEvent. Indicates whether the message was sent or received. */

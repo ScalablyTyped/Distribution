@@ -92,13 +92,13 @@ object EAPProperties {
     
     inline def setServerCAPEMsUndefined: Self = StObject.set(x, "ServerCAPEMs", js.undefined)
     
-    inline def setServerCAPEMsVarargs(value: String*): Self = StObject.set(x, "ServerCAPEMs", js.Array(value :_*))
+    inline def setServerCAPEMsVarargs(value: String*): Self = StObject.set(x, "ServerCAPEMs", js.Array(value*))
     
     inline def setServerCARefs(value: js.Array[String]): Self = StObject.set(x, "ServerCARefs", value.asInstanceOf[js.Any])
     
     inline def setServerCARefsUndefined: Self = StObject.set(x, "ServerCARefs", js.undefined)
     
-    inline def setServerCARefsVarargs(value: String*): Self = StObject.set(x, "ServerCARefs", js.Array(value :_*))
+    inline def setServerCARefsVarargs(value: String*): Self = StObject.set(x, "ServerCARefs", js.Array(value*))
     
     inline def setSubjectMatch(value: ManagedDOMString): Self = StObject.set(x, "SubjectMatch", value.asInstanceOf[js.Any])
     

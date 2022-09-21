@@ -8,5 +8,5 @@ object getBucketPolicyInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketPolicyInput", "GetBucketPolicyInput")
   @js.native
-  val GetBucketPolicyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketPolicyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

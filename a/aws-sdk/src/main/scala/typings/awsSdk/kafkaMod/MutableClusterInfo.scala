@@ -15,10 +15,31 @@ trait MutableClusterInfo extends StObject {
   
   /**
     * 
+    Includes all client authentication information.
+    
+    */
+  var ClientAuthentication: js.UndefOr[typings.awsSdk.kafkaMod.ClientAuthentication] = js.undefined
+  
+  /**
+    * 
     Information about the changes in the configuration of the brokers.
     
     */
   var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.undefined
+  
+  /**
+    * 
+    Information about the broker access configuration.
+    
+    */
+  var ConnectivityInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConnectivityInfo] = js.undefined
+  
+  /**
+    * 
+    Includes all encryption-related information.
+    
+    */
+  var EncryptionInfo: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInfo] = js.undefined
   
   /**
     * 
@@ -29,11 +50,23 @@ trait MutableClusterInfo extends StObject {
   
   /**
     * 
-    The Kafka version.
+    Information about the Amazon MSK broker type.
+    
+    */
+  var InstanceType: js.UndefOr[stringMin5Max32] = js.undefined
+  
+  /**
+    * 
+    The Apache Kafka version.
     
     */
   var KafkaVersion: js.UndefOr[string] = js.undefined
   
+  /**
+    * 
+    You can configure your MSK cluster to send broker logs to different destination types. This is a container for the configuration details related to broker logs.
+    
+    */
   var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.undefined
   
   /**
@@ -63,15 +96,31 @@ object MutableClusterInfo {
     
     inline def setBrokerEBSVolumeInfoUndefined: Self = StObject.set(x, "BrokerEBSVolumeInfo", js.undefined)
     
-    inline def setBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "BrokerEBSVolumeInfo", js.Array(value :_*))
+    inline def setBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "BrokerEBSVolumeInfo", js.Array(value*))
+    
+    inline def setClientAuthentication(value: ClientAuthentication): Self = StObject.set(x, "ClientAuthentication", value.asInstanceOf[js.Any])
+    
+    inline def setClientAuthenticationUndefined: Self = StObject.set(x, "ClientAuthentication", js.undefined)
     
     inline def setConfigurationInfo(value: ConfigurationInfo): Self = StObject.set(x, "ConfigurationInfo", value.asInstanceOf[js.Any])
     
     inline def setConfigurationInfoUndefined: Self = StObject.set(x, "ConfigurationInfo", js.undefined)
     
+    inline def setConnectivityInfo(value: ConnectivityInfo): Self = StObject.set(x, "ConnectivityInfo", value.asInstanceOf[js.Any])
+    
+    inline def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
+    
+    inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "EncryptionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionInfoUndefined: Self = StObject.set(x, "EncryptionInfo", js.undefined)
+    
     inline def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
     inline def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
+    
+    inline def setInstanceType(value: stringMin5Max32): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     inline def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
     

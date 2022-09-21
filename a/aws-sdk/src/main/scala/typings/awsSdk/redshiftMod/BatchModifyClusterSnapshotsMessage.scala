@@ -40,6 +40,6 @@ object BatchModifyClusterSnapshotsMessage {
     
     inline def setSnapshotIdentifierList(value: SnapshotIdentifierList): Self = StObject.set(x, "SnapshotIdentifierList", value.asInstanceOf[js.Any])
     
-    inline def setSnapshotIdentifierListVarargs(value: String*): Self = StObject.set(x, "SnapshotIdentifierList", js.Array(value :_*))
+    inline def setSnapshotIdentifierListVarargs(value: String*): Self = StObject.set(x, "SnapshotIdentifierList", js.Array(value*))
   }
 }

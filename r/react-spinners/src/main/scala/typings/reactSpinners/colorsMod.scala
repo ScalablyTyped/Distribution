@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colorsMod {
   
-  @JSImport("react-spinners/helpers/colors", "calculateRgba")
+  @JSImport("react-spinners/cjs/helpers/colors", JSImport.Namespace)
   @js.native
-  val calculateRgba: RgbaFunction = js.native
+  val ^ : js.Any = js.native
   
-  type RgbaFunction = js.Function2[/* color */ String, /* opacity */ Double, String]
+  inline def calculateRgba(color: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateRgba")(color.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
 }

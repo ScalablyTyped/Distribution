@@ -12,6 +12,9 @@ trait AccountStatus extends StObject {
   /** A list of account level issues. */
   var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.undefined
   
+  /** How the account is managed. Acceptable values are: - "`manual`" - "`automatic`" */
+  var accountManagement: js.UndefOr[String] = js.undefined
+  
   /** Identifies what kind of resource this is. Value: the fixed string "`content#accountStatus`" */
   var kind: js.UndefOr[String] = js.undefined
   
@@ -38,7 +41,11 @@ object AccountStatus {
     
     inline def setAccountLevelIssuesUndefined: Self = StObject.set(x, "accountLevelIssues", js.undefined)
     
-    inline def setAccountLevelIssuesVarargs(value: AccountStatusAccountLevelIssue*): Self = StObject.set(x, "accountLevelIssues", js.Array(value :_*))
+    inline def setAccountLevelIssuesVarargs(value: AccountStatusAccountLevelIssue*): Self = StObject.set(x, "accountLevelIssues", js.Array(value*))
+    
+    inline def setAccountManagement(value: String): Self = StObject.set(x, "accountManagement", value.asInstanceOf[js.Any])
+    
+    inline def setAccountManagementUndefined: Self = StObject.set(x, "accountManagement", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -48,7 +55,7 @@ object AccountStatus {
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    inline def setProductsVarargs(value: AccountStatusProducts*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: AccountStatusProducts*): Self = StObject.set(x, "products", js.Array(value*))
     
     inline def setWebsiteClaimed(value: Boolean): Self = StObject.set(x, "websiteClaimed", value.asInstanceOf[js.Any])
     

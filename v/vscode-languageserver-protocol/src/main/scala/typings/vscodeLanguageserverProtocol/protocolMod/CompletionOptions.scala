@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import typings.vscodeLanguageserverProtocol.anon.LabelDetailsSupport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait CompletionOptions
   
   /**
     * The list of all possible characters that commit a completion. This field can be used
-    * if clients don't support individual commmit characters per completion item. See
+    * if clients don't support individual commit characters per completion item. See
     * `ClientCapabilities.textDocument.completion.completionItem.commitCharactersSupport`
     *
     * If a server provides both `allCommitCharacters` and commit characters on an individual
@@ -19,6 +20,14 @@ trait CompletionOptions
     * @since 3.2.0
     */
   var allCommitCharacters: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * The server supports the following `CompletionItem` specific
+    * capabilities.
+    *
+    * @since 3.17.0
+    */
+  var completionItem: js.UndefOr[LabelDetailsSupport] = js.undefined
   
   /**
     * The server provides support to resolve additional
@@ -51,7 +60,11 @@ object CompletionOptions {
     
     inline def setAllCommitCharactersUndefined: Self = StObject.set(x, "allCommitCharacters", js.undefined)
     
-    inline def setAllCommitCharactersVarargs(value: String*): Self = StObject.set(x, "allCommitCharacters", js.Array(value :_*))
+    inline def setAllCommitCharactersVarargs(value: String*): Self = StObject.set(x, "allCommitCharacters", js.Array(value*))
+    
+    inline def setCompletionItem(value: LabelDetailsSupport): Self = StObject.set(x, "completionItem", value.asInstanceOf[js.Any])
+    
+    inline def setCompletionItemUndefined: Self = StObject.set(x, "completionItem", js.undefined)
     
     inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
@@ -61,6 +74,6 @@ object CompletionOptions {
     
     inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.MaskedTextBox")
 @js.native
-class MaskedTextBox protected ()
+open class MaskedTextBox protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.MaskedTextBox {
   def this(element: Element) = this()

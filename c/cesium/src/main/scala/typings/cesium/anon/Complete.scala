@@ -2,7 +2,6 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Camera.FlightCancelledCallback
 import typings.cesium.mod.Camera.FlightCompleteCallback
-import typings.cesium.mod.EasingFunction
 import typings.cesium.mod.HeadingPitchRange
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ trait Complete extends StObject {
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var easingFunction: js.UndefOr[EasingFunction] = js.undefined
+  var easingFunction: js.UndefOr[typings.cesium.mod.EasingFunction.Callback] = js.undefined
   
   var endTransform: js.UndefOr[Matrix4] = js.undefined
   
@@ -52,7 +51,7 @@ object Complete {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
+    inline def setEasingFunction(value: /* time */ Double => Double): Self = StObject.set(x, "easingFunction", js.Any.fromFunction1(value))
     
     inline def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
     

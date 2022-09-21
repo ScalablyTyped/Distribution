@@ -1,6 +1,6 @@
 package typings.msgpack5
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -18,19 +18,19 @@ object mod {
   
   @JSImport("msgpack5", "Base")
   @js.native
-  class Base () extends Transform {
+  open class Base () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("msgpack5", "Decoder")
   @js.native
-  class Decoder () extends Base {
+  open class Decoder () extends Base {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("msgpack5", "Encoder")
   @js.native
-  class Encoder () extends Base {
+  open class Encoder () extends Base {
     def this(opts: TransformOptions) = this()
   }
   
@@ -56,25 +56,25 @@ object mod {
   @js.native
   trait MessagePack extends StObject {
     
-    def decode(buf: typings.bl.mod.^): js.Any = js.native
-    def decode(buf: Buffer): js.Any = js.native
+    def decode(buf: typings.bl.mod.^): Any = js.native
+    def decode(buf: Buffer): Any = js.native
     
     def decoder(): Decoder = js.native
     def decoder(opts: EncodeDecodeOptions): Decoder = js.native
     
-    def encode(obj: js.Any): typings.bl.mod.^ = js.native
+    def encode(obj: Any): typings.bl.mod.^ = js.native
     
     def encoder(): Encoder = js.native
     def encoder(opts: EncodeDecodeOptions): Encoder = js.native
     
     def register[T](
       `type`: Double,
-      $constructor: js.Any,
+      $constructor: Any,
       encode: js.Function1[/* obj */ T, Buffer],
       decode: js.Function1[/* data */ Buffer, T]
     ): MessagePack = js.native
     
-    def registerDecoder(`type`: Double, decode: js.Function1[/* data */ Buffer, js.Any]): MessagePack = js.native
+    def registerDecoder(`type`: Double, decode: js.Function1[/* data */ Buffer, Any]): MessagePack = js.native
     
     def registerEncoder[T](check: js.Function1[/* obj */ T, Boolean], encode: js.Function1[/* obj */ T, Buffer]): MessagePack = js.native
   }

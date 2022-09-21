@@ -8,7 +8,7 @@ object transformationTypeEnumMod {
   
   @js.native
   sealed trait TransformationType extends StObject
-  @JSImport("class-transformer/enums/transformation-type.enum", "TransformationType")
+  @JSImport("class-transformer/types/enums/transformation-type.enum", "TransformationType")
   @js.native
   object TransformationType extends StObject {
     

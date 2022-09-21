@@ -24,7 +24,7 @@ trait AggregationAuthorization extends StObject {
   /**
     * The time stamp when the aggregation authorization was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
 }
 object AggregationAuthorization {
   
@@ -47,7 +47,7 @@ object AggregationAuthorization {
     
     inline def setAuthorizedAwsRegionUndefined: Self = StObject.set(x, "AuthorizedAwsRegion", js.undefined)
     
-    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
   }

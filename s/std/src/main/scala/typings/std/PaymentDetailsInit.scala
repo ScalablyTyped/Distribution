@@ -8,8 +8,10 @@ trait PaymentDetailsInit
   extends StObject
      with PaymentDetailsBase {
   
+  /* standard dom */
   var id: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var total: PaymentItem
 }
 object PaymentDetailsInit {

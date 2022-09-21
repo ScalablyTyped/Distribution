@@ -29,7 +29,7 @@ object UpdateModel {
     
     inline def setAdditional_collaboratorsUndefined: Self = StObject.set(x, "additional_collaborators", js.undefined)
     
-    inline def setAdditional_collaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "additional_collaborators", js.Array(value :_*))
+    inline def setAdditional_collaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "additional_collaborators", js.Array(value*))
     
     inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

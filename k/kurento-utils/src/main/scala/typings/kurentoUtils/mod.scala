@@ -16,19 +16,19 @@ object mod {
   
   @JSImport("kurento-utils", "WebRtcPeer")
   @js.native
-  class WebRtcPeer protected () extends EventEmitter {
-    def this(mode: recv) = this()
-    def this(mode: send) = this()
-    def this(mode: sendRecv) = this()
-    def this(mode: recv, options: js.Object) = this()
-    def this(mode: sendRecv, options: js.Object) = this()
-    def this(mode: send, options: js.Object) = this()
-    def this(mode: recv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: recv, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: sendRecv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: sendRecv, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: send, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: send, options: Unit, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
+  open class WebRtcPeer protected () extends EventEmitter {
+    def this(mode: recv | send | sendRecv) = this()
+    def this(mode: recv | send | sendRecv, options: js.Object) = this()
+    def this(
+      mode: recv | send | sendRecv,
+      options: js.Object,
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
+    def this(
+      mode: recv | send | sendRecv,
+      options: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
     
     /**
       * Callback function invoked when an ICE candidate is received. Developers are expected to invoke this function in order to complete the SDP negotiation. This method has two parameters:

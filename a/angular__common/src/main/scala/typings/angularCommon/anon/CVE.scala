@@ -33,22 +33,22 @@ object CVE {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     
-    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value :_*))
+    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value*))
     
     inline def setCVE(value: js.Array[String]): Self = StObject.set(x, "CVE", value.asInstanceOf[js.Any])
     
-    inline def setCVEVarargs(value: String*): Self = StObject.set(x, "CVE", js.Array(value :_*))
+    inline def setCVEVarargs(value: String*): Self = StObject.set(x, "CVE", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

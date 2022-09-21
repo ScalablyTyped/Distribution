@@ -31,7 +31,7 @@ object DistributionMixture {
     
     inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    inline def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = StObject.set(x, "distributions", js.Array(value*))
     
     inline def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object DistributionMixture {
     
     inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
-    inline def setWeightsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "weights", js.Array(value :_*))
+    inline def setWeightsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "weights", js.Array(value*))
   }
 }

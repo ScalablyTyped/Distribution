@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "GeometryCollection")
 @js.native
-class GeometryCollection () extends Geometry {
+open class GeometryCollection () extends Geometry {
   
   var children: GeometryCollectionChildren = js.native
   

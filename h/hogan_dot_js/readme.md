@@ -10,13 +10,13 @@ A mustache compiler.
 | ------------------ | :-------------: |
 | Full name          | hogan.js |
 | Keywords           | mustache, template |
-| # releases         | 0 |
-| # dependents       | 397 |
-| # downloads        | 13685698 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1866456.6666666667 |
+| # stars            | 5111.0 |
 
 ## Links
-- [Homepage](http://twitter.github.com/hogan.js/)
+- [Homepage](https://github.com/twitter/hogan.js#readme)
 - [Bugs](https://github.com/twitter/hogan.js/issues)
 - [Repository](https://github.com/twitter/hogan.js)
 - [Npm](https://www.npmjs.com/package/hogan.js)

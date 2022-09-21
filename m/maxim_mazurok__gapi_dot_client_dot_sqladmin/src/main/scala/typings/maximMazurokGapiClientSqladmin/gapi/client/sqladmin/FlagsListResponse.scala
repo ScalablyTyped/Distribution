@@ -9,7 +9,7 @@ trait FlagsListResponse extends StObject {
   /** List of flags. */
   var items: js.UndefOr[js.Array[Flag]] = js.undefined
   
-  /** This is always *sql#flagsList*. */
+  /** This is always `sql#flagsList`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object FlagsListResponse {
@@ -25,7 +25,7 @@ object FlagsListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Flag*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Flag*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

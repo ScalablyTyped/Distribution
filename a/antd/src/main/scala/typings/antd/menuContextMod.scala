@@ -19,12 +19,19 @@ object menuContextMod extends Shortcut {
     
     var direction: js.UndefOr[DirectionType] = js.undefined
     
+    /** @private Internal Usage. Safe to remove */
+    var disableMenuItemTitleTooltip: js.UndefOr[Boolean] = js.undefined
+    
+    var firstLevel: Boolean
+    
     var inlineCollapsed: Boolean
+    
+    var prefixCls: String
   }
   object MenuContextProps {
     
-    inline def apply(inlineCollapsed: Boolean): MenuContextProps = {
-      val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed.asInstanceOf[js.Any])
+    inline def apply(firstLevel: Boolean, inlineCollapsed: Boolean, prefixCls: String): MenuContextProps = {
+      val __obj = js.Dynamic.literal(firstLevel = firstLevel.asInstanceOf[js.Any], inlineCollapsed = inlineCollapsed.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuContextProps]
     }
     
@@ -38,7 +45,15 @@ object menuContextMod extends Shortcut {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
+      inline def setDisableMenuItemTitleTooltip(value: Boolean): Self = StObject.set(x, "disableMenuItemTitleTooltip", value.asInstanceOf[js.Any])
+      
+      inline def setDisableMenuItemTitleTooltipUndefined: Self = StObject.set(x, "disableMenuItemTitleTooltip", js.undefined)
+      
+      inline def setFirstLevel(value: Boolean): Self = StObject.set(x, "firstLevel", value.asInstanceOf[js.Any])
+      
       inline def setInlineCollapsed(value: Boolean): Self = StObject.set(x, "inlineCollapsed", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
   

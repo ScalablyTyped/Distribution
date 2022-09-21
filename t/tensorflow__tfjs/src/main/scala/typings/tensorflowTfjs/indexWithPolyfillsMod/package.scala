@@ -1,1147 +1,1486 @@
 package typings.tensorflowTfjs.indexWithPolyfillsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.tensorflowTfjs.indexWithPolyfillsMod.^
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NCDHW
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NCW
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NDHWC
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC
+import typings.tensorflowTfjs.tensorflowTfjsStrings.NWC
+import typings.tensorflowTfjs.tensorflowTfjsStrings.avg
+import typings.tensorflowTfjs.tensorflowTfjsStrings.bool
+import typings.tensorflowTfjs.tensorflowTfjsStrings.complex64
+import typings.tensorflowTfjs.tensorflowTfjsStrings.euclidean
+import typings.tensorflowTfjs.tensorflowTfjsStrings.float32
+import typings.tensorflowTfjs.tensorflowTfjsStrings.fro
+import typings.tensorflowTfjs.tensorflowTfjsStrings.int32
+import typings.tensorflowTfjs.tensorflowTfjsStrings.left
+import typings.tensorflowTfjs.tensorflowTfjsStrings.reflect
+import typings.tensorflowTfjs.tensorflowTfjsStrings.right
+import typings.tensorflowTfjs.tensorflowTfjsStrings.same
+import typings.tensorflowTfjs.tensorflowTfjsStrings.symmetric
+import typings.tensorflowTfjs.tensorflowTfjsStrings.valid
+import typings.tensorflowTfjsConverter.anon.Typeofio
+import typings.tensorflowTfjsConverter.operationsTypesMod.OpExecutor
+import typings.tensorflowTfjsCore.anon.Grad
+import typings.tensorflowTfjsCore.anon.Grads
+import typings.tensorflowTfjsCore.anon.Indexing
+import typings.tensorflowTfjsCore.anon.Indices
+import typings.tensorflowTfjsCore.anon.Mean
+import typings.tensorflowTfjsCore.anon.Value
+import typings.tensorflowTfjsCore.anon.Values
+import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor5D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor6D
+import typings.tensorflowTfjsCore.distTensorMod.Variable
+import typings.tensorflowTfjsCore.distTypesMod.DataType
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R3
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R4
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R5
+import typings.tensorflowTfjsCore.distTypesMod.ScalarLike
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike1D
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike2D
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike3D
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
+import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
+import typings.tensorflowTfjsCore.engineMod.Engine
+import typings.tensorflowTfjsCore.engineMod.MemoryInfo
+import typings.tensorflowTfjsCore.engineMod.ProfileInfo
+import typings.tensorflowTfjsCore.engineMod.ScopeFn
+import typings.tensorflowTfjsCore.engineMod.TimingInfo
+import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import typings.tensorflowTfjsCore.multiRnnCellMod.LSTMCellFunc
+import typings.tensorflowTfjsCore.platformMod.Platform
+import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
+import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
+import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
+import typings.tensorflowTfjsCore.typesMod.LoadOptions
+import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallbackConstructor
+import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
+import typings.tensorflowTfjsLayers.inputLayerMod.InputConfig
+import typings.tensorflowTfjsLayers.modelsMod.Sequential
+import typings.tensorflowTfjsLayers.modelsMod.SequentialArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Abs_ : /* "Abs" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Abs").asInstanceOf[/* "Abs" */ java.lang.String]
+inline def Abs_ : /* "Abs" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Abs").asInstanceOf[/* "Abs" */ String]
 
-inline def Acos_ : /* "Acos" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Acos").asInstanceOf[/* "Acos" */ java.lang.String]
+inline def Acos_ : /* "Acos" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Acos").asInstanceOf[/* "Acos" */ String]
 
-inline def Acosh_ : /* "Acosh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Acosh").asInstanceOf[/* "Acosh" */ java.lang.String]
+inline def Acosh_ : /* "Acosh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Acosh").asInstanceOf[/* "Acosh" */ String]
 
-inline def AddN_ : /* "AddN" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("AddN").asInstanceOf[/* "AddN" */ java.lang.String]
+inline def AddN_ : /* "AddN" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AddN").asInstanceOf[/* "AddN" */ String]
 
-inline def Add_ : /* "Add" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Add").asInstanceOf[/* "Add" */ java.lang.String]
+inline def Add_ : /* "Add" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Add").asInstanceOf[/* "Add" */ String]
 
-inline def All_ : /* "All" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("All").asInstanceOf[/* "All" */ java.lang.String]
+inline def All_ : /* "All" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("All").asInstanceOf[/* "All" */ String]
 
-inline def Any_ : /* "Any" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Any").asInstanceOf[/* "Any" */ java.lang.String]
+inline def Any_ : /* "Any" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Any").asInstanceOf[/* "Any" */ String]
 
-inline def ArgMax_ : /* "ArgMax" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ArgMax").asInstanceOf[/* "ArgMax" */ java.lang.String]
+inline def ArgMax_ : /* "ArgMax" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ArgMax").asInstanceOf[/* "ArgMax" */ String]
 
-inline def ArgMin_ : /* "ArgMin" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ArgMin").asInstanceOf[/* "ArgMin" */ java.lang.String]
+inline def ArgMin_ : /* "ArgMin" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ArgMin").asInstanceOf[/* "ArgMin" */ String]
 
-inline def Asin_ : /* "Asin" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Asin").asInstanceOf[/* "Asin" */ java.lang.String]
+inline def Asin_ : /* "Asin" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Asin").asInstanceOf[/* "Asin" */ String]
 
-inline def Asinh_ : /* "Asinh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Asinh").asInstanceOf[/* "Asinh" */ java.lang.String]
+inline def Asinh_ : /* "Asinh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Asinh").asInstanceOf[/* "Asinh" */ String]
 
-inline def Atan2_ : /* "Atan2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Atan2").asInstanceOf[/* "Atan2" */ java.lang.String]
+inline def Atan2_ : /* "Atan2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Atan2").asInstanceOf[/* "Atan2" */ String]
 
-inline def Atan_ : /* "Atan" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Atan").asInstanceOf[/* "Atan" */ java.lang.String]
+inline def Atan_ : /* "Atan" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Atan").asInstanceOf[/* "Atan" */ String]
 
-inline def Atanh_ : /* "Atanh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Atanh").asInstanceOf[/* "Atanh" */ java.lang.String]
+inline def Atanh_ : /* "Atanh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Atanh").asInstanceOf[/* "Atanh" */ String]
 
-inline def AvgPool3DBackprop: /* "AvgPool3DBackprop" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool3DBackprop").asInstanceOf[/* "AvgPool3DBackprop" */ java.lang.String]
+inline def AvgPool3DGrad: /* "AvgPool3DGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool3DGrad").asInstanceOf[/* "AvgPool3DGrad" */ String]
 
-inline def AvgPool3D_ : /* "AvgPool3D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool3D").asInstanceOf[/* "AvgPool3D" */ java.lang.String]
+inline def AvgPool3D_ : /* "AvgPool3D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool3D").asInstanceOf[/* "AvgPool3D" */ String]
 
-inline def AvgPoolBackprop: /* "AvgPoolBackprop" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("AvgPoolBackprop").asInstanceOf[/* "AvgPoolBackprop" */ java.lang.String]
+inline def AvgPoolGrad: /* "AvgPoolGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AvgPoolGrad").asInstanceOf[/* "AvgPoolGrad" */ String]
 
-inline def AvgPool_ : /* "AvgPool" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool").asInstanceOf[/* "AvgPool" */ java.lang.String]
+inline def AvgPool_ : /* "AvgPool" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("AvgPool").asInstanceOf[/* "AvgPool" */ String]
 
-inline def BatchMatMul: /* "BatchMatMul" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("BatchMatMul").asInstanceOf[/* "BatchMatMul" */ java.lang.String]
+inline def BatchMatMul: /* "BatchMatMul" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BatchMatMul").asInstanceOf[/* "BatchMatMul" */ String]
 
-inline def BatchToSpaceND_ : /* "BatchToSpaceND" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("BatchToSpaceND").asInstanceOf[/* "BatchToSpaceND" */ java.lang.String]
+inline def BatchToSpaceND_ : /* "BatchToSpaceND" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BatchToSpaceND").asInstanceOf[/* "BatchToSpaceND" */ String]
 
-inline def BroadcastTo_ : /* "BroadcastTo" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastTo").asInstanceOf[/* "BroadcastTo" */ java.lang.String]
+inline def Bincount_ : /* "Bincount" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Bincount").asInstanceOf[/* "Bincount" */ String]
 
-inline def Cast_ : /* "Cast" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Cast").asInstanceOf[/* "Cast" */ java.lang.String]
+inline def BroadcastArgs_ : /* "BroadcastArgs" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastArgs").asInstanceOf[/* "BroadcastArgs" */ String]
 
-inline def Ceil_ : /* "Ceil" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Ceil").asInstanceOf[/* "Ceil" */ java.lang.String]
+inline def BroadcastTo_ : /* "BroadcastTo" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastTo").asInstanceOf[/* "BroadcastTo" */ String]
 
-inline def ClipByValue_ : /* "ClipByValue" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ClipByValue").asInstanceOf[/* "ClipByValue" */ java.lang.String]
+inline def Cast_ : /* "Cast" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Cast").asInstanceOf[/* "Cast" */ String]
 
-inline def Complex_ : /* "Complex" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Complex").asInstanceOf[/* "Complex" */ java.lang.String]
+inline def Ceil_ : /* "Ceil" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Ceil").asInstanceOf[/* "Ceil" */ String]
 
-inline def Concat_ : /* "Concat" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Concat").asInstanceOf[/* "Concat" */ java.lang.String]
+inline def ClipByValue_ : /* "ClipByValue" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ClipByValue").asInstanceOf[/* "ClipByValue" */ String]
 
-inline def Conv2DBackpropFilter: /* "Conv2DBackpropFilter" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv2DBackpropFilter").asInstanceOf[/* "Conv2DBackpropFilter" */ java.lang.String]
+inline def ComplexAbs: /* "ComplexAbs" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ComplexAbs").asInstanceOf[/* "ComplexAbs" */ String]
 
-inline def Conv2DBackpropInput: /* "Conv2DBackpropInput" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv2DBackpropInput").asInstanceOf[/* "Conv2DBackpropInput" */ java.lang.String]
+inline def Complex_ : /* "Complex" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Complex").asInstanceOf[/* "Complex" */ String]
 
-inline def Conv2D_ : /* "Conv2D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv2D").asInstanceOf[/* "Conv2D" */ java.lang.String]
+inline def Concat_ : /* "Concat" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Concat").asInstanceOf[/* "Concat" */ String]
 
-inline def Conv3DBackpropFilterV2: /* "Conv3DBackpropFilterV2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv3DBackpropFilterV2").asInstanceOf[/* "Conv3DBackpropFilterV2" */ java.lang.String]
+inline def Conv2DBackpropFilter: /* "Conv2DBackpropFilter" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv2DBackpropFilter").asInstanceOf[/* "Conv2DBackpropFilter" */ String]
 
-inline def Conv3DBackpropInputV2: /* "Conv3DBackpropInputV2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv3DBackpropInputV2").asInstanceOf[/* "Conv3DBackpropInputV2" */ java.lang.String]
+inline def Conv2DBackpropInput: /* "Conv2DBackpropInput" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv2DBackpropInput").asInstanceOf[/* "Conv2DBackpropInput" */ String]
 
-inline def Conv3D_ : /* "Conv3D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Conv3D").asInstanceOf[/* "Conv3D" */ java.lang.String]
+inline def Conv2D_ : /* "Conv2D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv2D").asInstanceOf[/* "Conv2D" */ String]
 
-inline def Cos_ : /* "Cos" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Cos").asInstanceOf[/* "Cos" */ java.lang.String]
+inline def Conv3DBackpropFilterV2: /* "Conv3DBackpropFilterV2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv3DBackpropFilterV2").asInstanceOf[/* "Conv3DBackpropFilterV2" */ String]
 
-inline def Cosh_ : /* "Cosh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Cosh").asInstanceOf[/* "Cosh" */ java.lang.String]
+inline def Conv3DBackpropInputV2: /* "Conv3DBackpropInputV2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv3DBackpropInputV2").asInstanceOf[/* "Conv3DBackpropInputV2" */ String]
 
-inline def CropAndResize: /* "CropAndResize" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("CropAndResize").asInstanceOf[/* "CropAndResize" */ java.lang.String]
+inline def Conv3D_ : /* "Conv3D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Conv3D").asInstanceOf[/* "Conv3D" */ String]
 
-inline def Cumsum_ : /* "Cumsum" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Cumsum").asInstanceOf[/* "Cumsum" */ java.lang.String]
+inline def Cos_ : /* "Cos" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Cos").asInstanceOf[/* "Cos" */ String]
 
-inline def DepthToSpace_ : /* "DepthToSpace" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthToSpace").asInstanceOf[/* "DepthToSpace" */ java.lang.String]
+inline def Cosh_ : /* "Cosh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Cosh").asInstanceOf[/* "Cosh" */ String]
 
-inline def DepthwiseConv2dNative: /* "DepthwiseConv2dNative" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNative").asInstanceOf[/* "DepthwiseConv2dNative" */ java.lang.String]
+inline def CropAndResize: /* "CropAndResize" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("CropAndResize").asInstanceOf[/* "CropAndResize" */ String]
 
-inline def DepthwiseConv2dNativeBackpropFilter: /* "DepthwiseConv2dNativeBackpropFilter" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNativeBackpropFilter").asInstanceOf[/* "DepthwiseConv2dNativeBackpropFilter" */ java.lang.String]
+inline def Cumprod_ : /* "Cumprod" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Cumprod").asInstanceOf[/* "Cumprod" */ String]
 
-inline def DepthwiseConv2dNativeBackpropInput: /* "DepthwiseConv2dNativeBackpropInput" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNativeBackpropInput").asInstanceOf[/* "DepthwiseConv2dNativeBackpropInput" */ java.lang.String]
+inline def Cumsum_ : /* "Cumsum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Cumsum").asInstanceOf[/* "Cumsum" */ String]
 
-inline def Diag_ : /* "Diag" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Diag").asInstanceOf[/* "Diag" */ java.lang.String]
+inline def DenseBincount_ : /* "DenseBincount" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DenseBincount").asInstanceOf[/* "DenseBincount" */ String]
 
-inline def Dilation2DBackpropFilter: /* "Dilation2DBackpropFilter" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2DBackpropFilter").asInstanceOf[/* "Dilation2DBackpropFilter" */ java.lang.String]
+inline def DepthToSpace_ : /* "DepthToSpace" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthToSpace").asInstanceOf[/* "DepthToSpace" */ String]
 
-inline def Dilation2DBackpropInput: /* "Dilation2DBackpropInput" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2DBackpropInput").asInstanceOf[/* "Dilation2DBackpropInput" */ java.lang.String]
+inline def DepthwiseConv2dNative: /* "DepthwiseConv2dNative" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNative").asInstanceOf[/* "DepthwiseConv2dNative" */ String]
 
-inline def Dilation2D_ : /* "Dilation2D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2D").asInstanceOf[/* "Dilation2D" */ java.lang.String]
+inline def DepthwiseConv2dNativeBackpropFilter: /* "DepthwiseConv2dNativeBackpropFilter" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNativeBackpropFilter").asInstanceOf[/* "DepthwiseConv2dNativeBackpropFilter" */ String]
 
-inline def Div_ : /* "Div" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Div").asInstanceOf[/* "Div" */ java.lang.String]
+inline def DepthwiseConv2dNativeBackpropInput: /* "DepthwiseConv2dNativeBackpropInput" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthwiseConv2dNativeBackpropInput").asInstanceOf[/* "DepthwiseConv2dNativeBackpropInput" */ String]
 
-inline def ENV_ : typings.tensorflowTfjsCore.environmentMod.Environment = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ENV").asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
-inline def ENV__=(x: typings.tensorflowTfjsCore.environmentMod.Environment): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
+inline def Diag_ : /* "Diag" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Diag").asInstanceOf[/* "Diag" */ String]
 
-inline def EluGrad: /* "EluGrad" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("EluGrad").asInstanceOf[/* "EluGrad" */ java.lang.String]
+inline def Dilation2DBackpropFilter: /* "Dilation2DBackpropFilter" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2DBackpropFilter").asInstanceOf[/* "Dilation2DBackpropFilter" */ String]
 
-inline def Elu_ : /* "Elu" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Elu").asInstanceOf[/* "Elu" */ java.lang.String]
+inline def Dilation2DBackpropInput: /* "Dilation2DBackpropInput" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2DBackpropInput").asInstanceOf[/* "Dilation2DBackpropInput" */ String]
 
-inline def Equal_ : /* "Equal" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Equal").asInstanceOf[/* "Equal" */ java.lang.String]
+inline def Dilation2D_ : /* "Dilation2D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2D").asInstanceOf[/* "Dilation2D" */ String]
 
-inline def Erf_ : /* "Erf" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Erf").asInstanceOf[/* "Erf" */ java.lang.String]
+inline def ENV_ : typings.tensorflowTfjsCore.environmentMod.Environment = ^.asInstanceOf[js.Dynamic].selectDynamic("ENV").asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
+inline def ENV__=(x: typings.tensorflowTfjsCore.environmentMod.Environment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
 
-inline def Exp_ : /* "Exp" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Exp").asInstanceOf[/* "Exp" */ java.lang.String]
+inline def Einsum_ : /* "Einsum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Einsum").asInstanceOf[/* "Einsum" */ String]
 
-inline def Expm1_ : /* "Expm1" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Expm1").asInstanceOf[/* "Expm1" */ java.lang.String]
+inline def EluGrad: /* "EluGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("EluGrad").asInstanceOf[/* "EluGrad" */ String]
 
-inline def FFT_ : /* "FFT" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FFT").asInstanceOf[/* "FFT" */ java.lang.String]
+inline def Elu_ : /* "Elu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Elu").asInstanceOf[/* "Elu" */ String]
 
-inline def Fill_ : /* "Fill" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Fill").asInstanceOf[/* "Fill" */ java.lang.String]
+inline def Equal_ : /* "Equal" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Equal").asInstanceOf[/* "Equal" */ String]
 
-inline def FlipLeftRight: /* "FlipLeftRight" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FlipLeftRight").asInstanceOf[/* "FlipLeftRight" */ java.lang.String]
+inline def Erf_ : /* "Erf" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Erf").asInstanceOf[/* "Erf" */ String]
 
-inline def FloorDiv_ : /* "FloorDiv" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FloorDiv").asInstanceOf[/* "FloorDiv" */ java.lang.String]
+inline def Exp_ : /* "Exp" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Exp").asInstanceOf[/* "Exp" */ String]
 
-inline def Floor_ : /* "Floor" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Floor").asInstanceOf[/* "Floor" */ java.lang.String]
+inline def ExpandDims_ : /* "ExpandDims" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ExpandDims").asInstanceOf[/* "ExpandDims" */ String]
 
-inline def FromPixels: /* "FromPixels" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FromPixels").asInstanceOf[/* "FromPixels" */ java.lang.String]
+inline def Expm1_ : /* "Expm1" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Expm1").asInstanceOf[/* "Expm1" */ String]
 
-inline def FusedBatchNorm: /* "FusedBatchNorm" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FusedBatchNorm").asInstanceOf[/* "FusedBatchNorm" */ java.lang.String]
+inline def FFT_ : /* "FFT" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FFT").asInstanceOf[/* "FFT" */ String]
 
-inline def FusedConv2D: /* "FusedConv2D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FusedConv2D").asInstanceOf[/* "FusedConv2D" */ java.lang.String]
+inline def Fill_ : /* "Fill" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Fill").asInstanceOf[/* "Fill" */ String]
 
-inline def FusedDepthwiseConv2D: /* "FusedDepthwiseConv2D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("FusedDepthwiseConv2D").asInstanceOf[/* "FusedDepthwiseConv2D" */ java.lang.String]
+inline def FlipLeftRight: /* "FlipLeftRight" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FlipLeftRight").asInstanceOf[/* "FlipLeftRight" */ String]
 
-inline def FusedMatMul: /* "_FusedMatMul" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("_FusedMatMul").asInstanceOf[/* "_FusedMatMul" */ java.lang.String]
+inline def FloorDiv_ : /* "FloorDiv" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FloorDiv").asInstanceOf[/* "FloorDiv" */ String]
 
-inline def GatherNd_ : /* "GatherNd" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("GatherNd").asInstanceOf[/* "GatherNd" */ java.lang.String]
+inline def Floor_ : /* "Floor" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Floor").asInstanceOf[/* "Floor" */ String]
 
-inline def GatherV2: /* "GatherV2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("GatherV2").asInstanceOf[/* "GatherV2" */ java.lang.String]
+inline def FromPixels: /* "FromPixels" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FromPixels").asInstanceOf[/* "FromPixels" */ String]
 
-inline def GreaterEqual_ : /* "GreaterEqual" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqual").asInstanceOf[/* "GreaterEqual" */ java.lang.String]
+inline def FusedBatchNorm: /* "FusedBatchNorm" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FusedBatchNorm").asInstanceOf[/* "FusedBatchNorm" */ String]
 
-inline def Greater_ : /* "Greater" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Greater").asInstanceOf[/* "Greater" */ java.lang.String]
+inline def FusedConv2D: /* "FusedConv2D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FusedConv2D").asInstanceOf[/* "FusedConv2D" */ String]
 
-inline def IFFT_ : /* "IFFT" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("IFFT").asInstanceOf[/* "IFFT" */ java.lang.String]
+inline def FusedDepthwiseConv2D: /* "FusedDepthwiseConv2D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("FusedDepthwiseConv2D").asInstanceOf[/* "FusedDepthwiseConv2D" */ String]
 
-inline def Identity: /* "Identity" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Identity").asInstanceOf[/* "Identity" */ java.lang.String]
+inline def FusedMatMul: /* "_FusedMatMul" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("_FusedMatMul").asInstanceOf[/* "_FusedMatMul" */ String]
 
-inline def Imag_ : /* "Imag" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Imag").asInstanceOf[/* "Imag" */ java.lang.String]
+inline def GatherNd_ : /* "GatherNd" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("GatherNd").asInstanceOf[/* "GatherNd" */ String]
 
-inline def IsFinite_ : /* "IsFinite" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("IsFinite").asInstanceOf[/* "IsFinite" */ java.lang.String]
+inline def GatherV2: /* "GatherV2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("GatherV2").asInstanceOf[/* "GatherV2" */ String]
 
-inline def IsInf_ : /* "IsInf" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("IsInf").asInstanceOf[/* "IsInf" */ java.lang.String]
+inline def GreaterEqual_ : /* "GreaterEqual" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqual").asInstanceOf[/* "GreaterEqual" */ String]
 
-inline def IsNan_ : /* "IsNan" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("IsNan").asInstanceOf[/* "IsNan" */ java.lang.String]
+inline def Greater_ : /* "Greater" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Greater").asInstanceOf[/* "Greater" */ String]
 
-inline def LRN: /* "LRN" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LRN").asInstanceOf[/* "LRN" */ java.lang.String]
+inline def IFFT_ : /* "IFFT" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IFFT").asInstanceOf[/* "IFFT" */ String]
 
-inline def LRNBackprop: /* "LRNBackprop" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LRNBackprop").asInstanceOf[/* "LRNBackprop" */ java.lang.String]
+inline def Identity: /* "Identity" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Identity").asInstanceOf[/* "Identity" */ String]
 
-inline def LessEqual_ : /* "LessEqual" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LessEqual").asInstanceOf[/* "LessEqual" */ java.lang.String]
+inline def Imag_ : /* "Imag" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Imag").asInstanceOf[/* "Imag" */ String]
 
-inline def Less_ : /* "Less" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Less").asInstanceOf[/* "Less" */ java.lang.String]
+inline def IsFinite_ : /* "IsFinite" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IsFinite").asInstanceOf[/* "IsFinite" */ String]
 
-inline def LinSpace_ : /* "LinSpace" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LinSpace").asInstanceOf[/* "LinSpace" */ java.lang.String]
+inline def IsInf_ : /* "IsInf" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IsInf").asInstanceOf[/* "IsInf" */ String]
 
-inline def Log1p_ : /* "Log1p" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Log1p").asInstanceOf[/* "Log1p" */ java.lang.String]
+inline def IsNan_ : /* "IsNan" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IsNan").asInstanceOf[/* "IsNan" */ String]
 
-inline def LogSoftmax_ : /* "LogSoftmax" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LogSoftmax").asInstanceOf[/* "LogSoftmax" */ java.lang.String]
+inline def LRN: /* "LRN" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LRN").asInstanceOf[/* "LRN" */ String]
 
-inline def Log_ : /* "Log" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Log").asInstanceOf[/* "Log" */ java.lang.String]
+inline def LRNGrad: /* "LRNGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LRNGrad").asInstanceOf[/* "LRNGrad" */ String]
 
-inline def LogicalAnd_ : /* "LogicalAnd" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LogicalAnd").asInstanceOf[/* "LogicalAnd" */ java.lang.String]
+inline def LeakyRelu_ : /* "LeakyRelu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LeakyRelu").asInstanceOf[/* "LeakyRelu" */ String]
 
-inline def LogicalNot_ : /* "LogicalNot" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LogicalNot").asInstanceOf[/* "LogicalNot" */ java.lang.String]
+inline def LessEqual_ : /* "LessEqual" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LessEqual").asInstanceOf[/* "LessEqual" */ String]
 
-inline def LogicalOr_ : /* "LogicalOr" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("LogicalOr").asInstanceOf[/* "LogicalOr" */ java.lang.String]
+inline def Less_ : /* "Less" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Less").asInstanceOf[/* "Less" */ String]
 
-inline def MaxPool3DBackprop: /* "MaxPool3DBackprop" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3DBackprop").asInstanceOf[/* "MaxPool3DBackprop" */ java.lang.String]
+inline def LinSpace_ : /* "LinSpace" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LinSpace").asInstanceOf[/* "LinSpace" */ String]
 
-inline def MaxPool3D_ : /* "MaxPool3D" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3D").asInstanceOf[/* "MaxPool3D" */ java.lang.String]
+inline def Log1p_ : /* "Log1p" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Log1p").asInstanceOf[/* "Log1p" */ String]
 
-inline def MaxPoolBackprop: /* "MaxPoolBackprop" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxPoolBackprop").asInstanceOf[/* "MaxPoolBackprop" */ java.lang.String]
+inline def LogSoftmax_ : /* "LogSoftmax" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LogSoftmax").asInstanceOf[/* "LogSoftmax" */ String]
 
-inline def MaxPoolWithArgmax_ : /* "MaxPoolWithArgmax" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxPoolWithArgmax").asInstanceOf[/* "MaxPoolWithArgmax" */ java.lang.String]
+inline def Log_ : /* "Log" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Log").asInstanceOf[/* "Log" */ String]
 
-inline def MaxPool_ : /* "MaxPool" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool").asInstanceOf[/* "MaxPool" */ java.lang.String]
+inline def LogicalAnd_ : /* "LogicalAnd" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LogicalAnd").asInstanceOf[/* "LogicalAnd" */ String]
 
-inline def Max_ : /* "Max" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Max").asInstanceOf[/* "Max" */ java.lang.String]
+inline def LogicalNot_ : /* "LogicalNot" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LogicalNot").asInstanceOf[/* "LogicalNot" */ String]
 
-inline def Maximum_ : /* "Maximum" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Maximum").asInstanceOf[/* "Maximum" */ java.lang.String]
+inline def LogicalOr_ : /* "LogicalOr" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LogicalOr").asInstanceOf[/* "LogicalOr" */ String]
 
-inline def Mean_ : /* "Mean" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Mean").asInstanceOf[/* "Mean" */ java.lang.String]
+inline def LogicalXor_ : /* "LogicalXor" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LogicalXor").asInstanceOf[/* "LogicalXor" */ String]
 
-inline def Min_ : /* "Min" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Min").asInstanceOf[/* "Min" */ java.lang.String]
+inline def LowerBound_ : /* "LowerBound" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LowerBound").asInstanceOf[/* "LowerBound" */ String]
 
-inline def Minimum_ : /* "Minimum" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Minimum").asInstanceOf[/* "Minimum" */ java.lang.String]
+inline def MaxPool3DGrad: /* "MaxPool3DGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3DGrad").asInstanceOf[/* "MaxPool3DGrad" */ String]
 
-inline def MirrorPad_ : /* "MirrorPad" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("MirrorPad").asInstanceOf[/* "MirrorPad" */ java.lang.String]
+inline def MaxPool3D_ : /* "MaxPool3D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3D").asInstanceOf[/* "MaxPool3D" */ String]
 
-inline def Mod_ : /* "Mod" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Mod").asInstanceOf[/* "Mod" */ java.lang.String]
+inline def MaxPoolGrad: /* "MaxPoolGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPoolGrad").asInstanceOf[/* "MaxPoolGrad" */ String]
 
-inline def Multiply: /* "Multiply" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Multiply").asInstanceOf[/* "Multiply" */ java.lang.String]
+inline def MaxPoolWithArgmax_ : /* "MaxPoolWithArgmax" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPoolWithArgmax").asInstanceOf[/* "MaxPoolWithArgmax" */ String]
 
-inline def Negate: /* "Negate" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Negate").asInstanceOf[/* "Negate" */ java.lang.String]
+inline def MaxPool_ : /* "MaxPool" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool").asInstanceOf[/* "MaxPool" */ String]
 
-inline def NonMaxSuppressionV3: /* "NonMaxSuppressionV3" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV3").asInstanceOf[/* "NonMaxSuppressionV3" */ java.lang.String]
+inline def Max_ : /* "Max" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Max").asInstanceOf[/* "Max" */ String]
 
-inline def NonMaxSuppressionV4: /* "NonMaxSuppressionV4" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV4").asInstanceOf[/* "NonMaxSuppressionV4" */ java.lang.String]
+inline def Maximum_ : /* "Maximum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Maximum").asInstanceOf[/* "Maximum" */ String]
 
-inline def NonMaxSuppressionV5: /* "NonMaxSuppressionV5" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV5").asInstanceOf[/* "NonMaxSuppressionV5" */ java.lang.String]
+inline def Mean_ : /* "Mean" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Mean").asInstanceOf[/* "Mean" */ String]
 
-inline def NotEqual_ : /* "NotEqual" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("NotEqual").asInstanceOf[/* "NotEqual" */ java.lang.String]
+inline def Min_ : /* "Min" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Min").asInstanceOf[/* "Min" */ String]
 
-inline def OP_SCOPE_SUFFIX: /* "__op" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("OP_SCOPE_SUFFIX").asInstanceOf[/* "__op" */ java.lang.String]
+inline def Minimum_ : /* "Minimum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Minimum").asInstanceOf[/* "Minimum" */ String]
 
-inline def OneHot_ : /* "OneHot" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("OneHot").asInstanceOf[/* "OneHot" */ java.lang.String]
+inline def MirrorPad_ : /* "MirrorPad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MirrorPad").asInstanceOf[/* "MirrorPad" */ String]
 
-inline def OnesLike_ : /* "OnesLike" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("OnesLike").asInstanceOf[/* "OnesLike" */ java.lang.String]
+inline def Mod_ : /* "Mod" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Mod").asInstanceOf[/* "Mod" */ String]
 
-inline def PadV2: /* "PadV2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("PadV2").asInstanceOf[/* "PadV2" */ java.lang.String]
+inline def Multinomial_ : /* "Multinomial" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Multinomial").asInstanceOf[/* "Multinomial" */ String]
 
-inline def Pool_ : /* "Pool" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Pool").asInstanceOf[/* "Pool" */ java.lang.String]
+inline def Multiply: /* "Multiply" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Multiply").asInstanceOf[/* "Multiply" */ String]
 
-inline def Pow_ : /* "Pow" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Pow").asInstanceOf[/* "Pow" */ java.lang.String]
+inline def Neg_ : /* "Neg" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Neg").asInstanceOf[/* "Neg" */ String]
 
-inline def Prelu_ : /* "Prelu" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Prelu").asInstanceOf[/* "Prelu" */ java.lang.String]
+inline def NonMaxSuppressionV3: /* "NonMaxSuppressionV3" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV3").asInstanceOf[/* "NonMaxSuppressionV3" */ String]
 
-inline def Prod_ : /* "Prod" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Prod").asInstanceOf[/* "Prod" */ java.lang.String]
+inline def NonMaxSuppressionV4: /* "NonMaxSuppressionV4" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV4").asInstanceOf[/* "NonMaxSuppressionV4" */ String]
 
-inline def Range_ : /* "Range" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Range").asInstanceOf[/* "Range" */ java.lang.String]
+inline def NonMaxSuppressionV5: /* "NonMaxSuppressionV5" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("NonMaxSuppressionV5").asInstanceOf[/* "NonMaxSuppressionV5" */ String]
 
-inline def Real_ : /* "Real" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Real").asInstanceOf[/* "Real" */ java.lang.String]
+inline def NotEqual_ : /* "NotEqual" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("NotEqual").asInstanceOf[/* "NotEqual" */ String]
 
-inline def Reciprocal_ : /* "Reciprocal" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Reciprocal").asInstanceOf[/* "Reciprocal" */ java.lang.String]
+inline def OP_SCOPE_SUFFIX: /* "__op" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("OP_SCOPE_SUFFIX").asInstanceOf[/* "__op" */ String]
 
-inline def Relu6_ : /* "Relu6" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Relu6").asInstanceOf[/* "Relu6" */ java.lang.String]
+inline def OneHot_ : /* "OneHot" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("OneHot").asInstanceOf[/* "OneHot" */ String]
 
-inline def Relu_ : /* "Relu" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Relu").asInstanceOf[/* "Relu" */ java.lang.String]
+inline def OnesLike_ : /* "OnesLike" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("OnesLike").asInstanceOf[/* "OnesLike" */ String]
 
-inline def Reshape_ : /* "Reshape" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Reshape").asInstanceOf[/* "Reshape" */ java.lang.String]
+inline def Pack: /* "Pack" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Pack").asInstanceOf[/* "Pack" */ String]
 
-inline def ResizeBilinear: /* "ResizeBilinear" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ResizeBilinear").asInstanceOf[/* "ResizeBilinear" */ java.lang.String]
+inline def PadV2: /* "PadV2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("PadV2").asInstanceOf[/* "PadV2" */ String]
 
-inline def ResizeBilinearGrad: /* "ResizeBilinearGrad" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ResizeBilinearGrad").asInstanceOf[/* "ResizeBilinearGrad" */ java.lang.String]
+inline def Pool_ : /* "Pool" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Pool").asInstanceOf[/* "Pool" */ String]
 
-inline def ResizeNearestNeighbor: /* "ResizeNearestNeighbor" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ResizeNearestNeighbor").asInstanceOf[/* "ResizeNearestNeighbor" */ java.lang.String]
+inline def Pow_ : /* "Pow" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Pow").asInstanceOf[/* "Pow" */ String]
 
-inline def ResizeNearestNeighborGrad: /* "ResizeNearestNeighborGrad" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ResizeNearestNeighborGrad").asInstanceOf[/* "ResizeNearestNeighborGrad" */ java.lang.String]
+inline def Prelu_ : /* "Prelu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Prelu").asInstanceOf[/* "Prelu" */ String]
 
-inline def Reverse_ : /* "Reverse" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Reverse").asInstanceOf[/* "Reverse" */ java.lang.String]
+inline def Prod_ : /* "Prod" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Prod").asInstanceOf[/* "Prod" */ String]
 
-inline def RotateWithOffset: /* "RotateWithOffset" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("RotateWithOffset").asInstanceOf[/* "RotateWithOffset" */ java.lang.String]
+inline def RaggedTensorToTensor_ : /* "RaggedTensorToTensor" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RaggedTensorToTensor").asInstanceOf[/* "RaggedTensorToTensor" */ String]
 
-inline def Round_ : /* "Round" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Round").asInstanceOf[/* "Round" */ java.lang.String]
+inline def Range_ : /* "Range" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Range").asInstanceOf[/* "Range" */ String]
 
-inline def Rsqrt_ : /* "Rsqrt" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Rsqrt").asInstanceOf[/* "Rsqrt" */ java.lang.String]
+inline def RealDiv: /* "RealDiv" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RealDiv").asInstanceOf[/* "RealDiv" */ String]
 
-inline def ScatterNd_ : /* "ScatterNd" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ScatterNd").asInstanceOf[/* "ScatterNd" */ java.lang.String]
+inline def Real_ : /* "Real" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Real").asInstanceOf[/* "Real" */ String]
 
-inline def SelectV2: /* "SelectV2" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectV2").asInstanceOf[/* "SelectV2" */ java.lang.String]
+inline def Reciprocal_ : /* "Reciprocal" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Reciprocal").asInstanceOf[/* "Reciprocal" */ String]
 
-inline def Selu_ : /* "Selu" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Selu").asInstanceOf[/* "Selu" */ java.lang.String]
+inline def Relu6_ : /* "Relu6" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Relu6").asInstanceOf[/* "Relu6" */ String]
 
-inline def Sigmoid_ : /* "Sigmoid" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sigmoid").asInstanceOf[/* "Sigmoid" */ java.lang.String]
+inline def Relu_ : /* "Relu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Relu").asInstanceOf[/* "Relu" */ String]
 
-inline def Sign_ : /* "Sign" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sign").asInstanceOf[/* "Sign" */ java.lang.String]
+inline def Reshape_ : /* "Reshape" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Reshape").asInstanceOf[/* "Reshape" */ String]
 
-inline def Sin_ : /* "Sin" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sin").asInstanceOf[/* "Sin" */ java.lang.String]
+inline def ResizeBilinear: /* "ResizeBilinear" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeBilinear").asInstanceOf[/* "ResizeBilinear" */ String]
 
-inline def Sinh_ : /* "Sinh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sinh").asInstanceOf[/* "Sinh" */ java.lang.String]
+inline def ResizeBilinearGrad: /* "ResizeBilinearGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeBilinearGrad").asInstanceOf[/* "ResizeBilinearGrad" */ String]
 
-inline def Slice_ : /* "Slice" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Slice").asInstanceOf[/* "Slice" */ java.lang.String]
+inline def ResizeNearestNeighbor: /* "ResizeNearestNeighbor" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeNearestNeighbor").asInstanceOf[/* "ResizeNearestNeighbor" */ String]
 
-inline def Softmax_ : /* "Softmax" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Softmax").asInstanceOf[/* "Softmax" */ java.lang.String]
+inline def ResizeNearestNeighborGrad: /* "ResizeNearestNeighborGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeNearestNeighborGrad").asInstanceOf[/* "ResizeNearestNeighborGrad" */ String]
 
-inline def Softplus_ : /* "Softplus" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Softplus").asInstanceOf[/* "Softplus" */ java.lang.String]
+inline def Reverse_ : /* "Reverse" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Reverse").asInstanceOf[/* "Reverse" */ String]
 
-inline def SpaceToBatchND_ : /* "SpaceToBatchND" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("SpaceToBatchND").asInstanceOf[/* "SpaceToBatchND" */ java.lang.String]
+inline def RotateWithOffset: /* "RotateWithOffset" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RotateWithOffset").asInstanceOf[/* "RotateWithOffset" */ String]
 
-inline def SparseToDense_ : /* "SparseToDense" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("SparseToDense").asInstanceOf[/* "SparseToDense" */ java.lang.String]
+inline def Round_ : /* "Round" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Round").asInstanceOf[/* "Round" */ String]
 
-inline def SplitV: /* "SplitV" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("SplitV").asInstanceOf[/* "SplitV" */ java.lang.String]
+inline def Rsqrt_ : /* "Rsqrt" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Rsqrt").asInstanceOf[/* "Rsqrt" */ String]
 
-inline def Sqrt_ : /* "Sqrt" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sqrt").asInstanceOf[/* "Sqrt" */ java.lang.String]
+inline def ScatterNd_ : /* "ScatterNd" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ScatterNd").asInstanceOf[/* "ScatterNd" */ String]
 
-inline def Square_ : /* "Square" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Square").asInstanceOf[/* "Square" */ java.lang.String]
+inline def SearchSorted_ : /* "SearchSorted" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchSorted").asInstanceOf[/* "SearchSorted" */ String]
 
-inline def SquaredDifference_ : /* "SquaredDifference" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("SquaredDifference").asInstanceOf[/* "SquaredDifference" */ java.lang.String]
+inline def Select: /* "Select" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Select").asInstanceOf[/* "Select" */ String]
 
-inline def Step_ : /* "Step" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[/* "Step" */ java.lang.String]
+inline def Selu_ : /* "Selu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Selu").asInstanceOf[/* "Selu" */ String]
 
-inline def StridedSlice_ : /* "StridedSlice" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("StridedSlice").asInstanceOf[/* "StridedSlice" */ java.lang.String]
+inline def Sigmoid_ : /* "Sigmoid" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sigmoid").asInstanceOf[/* "Sigmoid" */ String]
 
-inline def Sub_ : /* "Sub" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sub").asInstanceOf[/* "Sub" */ java.lang.String]
+inline def Sign_ : /* "Sign" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sign").asInstanceOf[/* "Sign" */ String]
 
-inline def Sum_ : /* "Sum" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Sum").asInstanceOf[/* "Sum" */ java.lang.String]
+inline def Sin_ : /* "Sin" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sin").asInstanceOf[/* "Sin" */ String]
 
-inline def Tan_ : /* "Tan" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Tan").asInstanceOf[/* "Tan" */ java.lang.String]
+inline def Sinh_ : /* "Sinh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sinh").asInstanceOf[/* "Sinh" */ String]
 
-inline def Tanh_ : /* "Tanh" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Tanh").asInstanceOf[/* "Tanh" */ java.lang.String]
+inline def Slice_ : /* "Slice" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Slice").asInstanceOf[/* "Slice" */ String]
 
-inline def Tile_ : /* "Tile" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Tile").asInstanceOf[/* "Tile" */ java.lang.String]
+inline def Softmax_ : /* "Softmax" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Softmax").asInstanceOf[/* "Softmax" */ String]
 
-inline def TopK_ : /* "TopK" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("TopK").asInstanceOf[/* "TopK" */ java.lang.String]
+inline def Softplus_ : /* "Softplus" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Softplus").asInstanceOf[/* "Softplus" */ String]
 
-inline def Transpose_ : /* "Transpose" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Transpose").asInstanceOf[/* "Transpose" */ java.lang.String]
+inline def SpaceToBatchND_ : /* "SpaceToBatchND" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SpaceToBatchND").asInstanceOf[/* "SpaceToBatchND" */ String]
 
-inline def Unique_ : /* "Unique" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Unique").asInstanceOf[/* "Unique" */ java.lang.String]
+inline def SparseFillEmptyRows: /* "SparseFillEmptyRows" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SparseFillEmptyRows").asInstanceOf[/* "SparseFillEmptyRows" */ String]
 
-inline def Unpack: /* "Unpack" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("Unpack").asInstanceOf[/* "Unpack" */ java.lang.String]
+inline def SparseReshape: /* "SparseReshape" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SparseReshape").asInstanceOf[/* "SparseReshape" */ String]
 
-inline def UnsortedSegmentSum_ : /* "UnsortedSegmentSum" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsortedSegmentSum").asInstanceOf[/* "UnsortedSegmentSum" */ java.lang.String]
+inline def SparseSegmentMean: /* "SparseSegmentMean" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SparseSegmentMean").asInstanceOf[/* "SparseSegmentMean" */ String]
 
-inline def ZerosLike_ : /* "ZerosLike" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ZerosLike").asInstanceOf[/* "ZerosLike" */ java.lang.String]
+inline def SparseSegmentSum: /* "SparseSegmentSum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SparseSegmentSum").asInstanceOf[/* "SparseSegmentSum" */ String]
 
-inline def abs[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def SparseToDense_ : /* "SparseToDense" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SparseToDense").asInstanceOf[/* "SparseToDense" */ String]
 
-inline def acos[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("acos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def SplitV: /* "SplitV" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SplitV").asInstanceOf[/* "SplitV" */ String]
 
-inline def acosh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def Sqrt_ : /* "Sqrt" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sqrt").asInstanceOf[/* "Sqrt" */ String]
 
-inline def add[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def add[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def add[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def add[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def Square_ : /* "Square" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Square").asInstanceOf[/* "Square" */ String]
 
-inline def addN[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | typings.tensorflowTfjsCore.distTypesMod.TensorLike]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("addN")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def SquaredDifference_ : /* "SquaredDifference" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SquaredDifference").asInstanceOf[/* "SquaredDifference" */ String]
 
-inline def addStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("addStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def Step_ : /* "Step" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[/* "Step" */ String]
 
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def all[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def StridedSlice_ : /* "StridedSlice" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StridedSlice").asInstanceOf[/* "StridedSlice" */ String]
 
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def any[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def StringNGrams: /* "StringNGrams" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StringNGrams").asInstanceOf[/* "StringNGrams" */ String]
 
-inline def argMax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def argMax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def argMax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def argMax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def StringSplit: /* "StringSplit" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StringSplit").asInstanceOf[/* "StringSplit" */ String]
 
-inline def argMin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def argMin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def argMin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def argMin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def StringToHashBucketFast: /* "StringToHashBucketFast" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StringToHashBucketFast").asInstanceOf[/* "StringToHashBucketFast" */ String]
 
-inline def asin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("asin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def Sub_ : /* "Sub" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sub").asInstanceOf[/* "Sub" */ String]
 
-inline def asinh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def Sum_ : /* "Sum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Sum").asInstanceOf[/* "Sum" */ String]
 
-inline def atan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def Tan_ : /* "Tan" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tan").asInstanceOf[/* "Tan" */ String]
 
-inline def atan2[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def atan2[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def atan2[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def atan2[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def Tanh_ : /* "Tanh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tanh").asInstanceOf[/* "Tanh" */ String]
 
-inline def atanh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def Tile_ : /* "Tile" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tile").asInstanceOf[/* "Tile" */ String]
 
-inline def avgPool[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
-  dimRoundingMode: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
-]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def TopK_ : /* "TopK" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("TopK").asInstanceOf[/* "TopK" */ String]
 
-inline def avgPool3d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: (js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double,
-  strides: (js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
+inline def Transform: /* "Transform" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Transform").asInstanceOf[/* "Transform" */ String]
+
+inline def Transpose_ : /* "Transpose" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Transpose").asInstanceOf[/* "Transpose" */ String]
+
+inline def Unique_ : /* "Unique" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Unique").asInstanceOf[/* "Unique" */ String]
+
+inline def Unpack: /* "Unpack" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Unpack").asInstanceOf[/* "Unpack" */ String]
+
+inline def UnsortedSegmentSum_ : /* "UnsortedSegmentSum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsortedSegmentSum").asInstanceOf[/* "UnsortedSegmentSum" */ String]
+
+inline def UpperBound_ : /* "UpperBound" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("UpperBound").asInstanceOf[/* "UpperBound" */ String]
+
+inline def ZerosLike_ : /* "ZerosLike" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ZerosLike").asInstanceOf[/* "ZerosLike" */ String]
+
+inline def abs[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def acos[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def acosh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def add[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def add[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def add[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def add[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def addN[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | TensorLike]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("addN")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def all[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def any[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def argMax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def argMax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def argMax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def argMax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def argMin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def argMin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def argMin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def argMin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def asin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def asinh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def atan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def atan2[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def atan2[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def atan2[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def atan2[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def atanh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def avgPool3d[T /* <: Tensor4D | Tensor5D */](
+  x: T | TensorLike,
+  filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+  strides: (js.Tuple3[Double, Double, Double]) | Double,
+  pad: valid | same | Double,
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ],
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NDHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCDHW
-],
-  dilations: js.UndefOr[(js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  dataFormat: js.UndefOr[NDHWC | NCDHW]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def backend(): typings.tensorflowTfjsCore.backendMod.KernelBackend = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+inline def backend(): typings.tensorflowTfjsCore.backendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
 
 inline def basicLSTMCell: js.Function6[
-/* forgetBias */ typings.tensorflowTfjsCore.distTensorMod.Scalar | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* lstmKernel */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* lstmBias */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* data */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* c */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* h */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-js.Tuple2[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D, 
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("basicLSTMCell").asInstanceOf[js.Function6[
-/* forgetBias */ typings.tensorflowTfjsCore.distTensorMod.Scalar | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* lstmKernel */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* lstmBias */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* data */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* c */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* h */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-js.Tuple2[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D, 
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D
-]]]
+/* forgetBias */ Scalar | TensorLike, 
+/* lstmKernel */ Tensor2D | TensorLike, 
+/* lstmBias */ Tensor1D | TensorLike, 
+/* data */ Tensor2D | TensorLike, 
+/* c */ Tensor2D | TensorLike, 
+/* h */ Tensor2D | TensorLike, 
+js.Tuple2[Tensor2D, Tensor2D]] = ^.asInstanceOf[js.Dynamic].selectDynamic("basicLSTMCell").asInstanceOf[js.Function6[
+/* forgetBias */ Scalar | TensorLike, 
+/* lstmKernel */ Tensor2D | TensorLike, 
+/* lstmBias */ Tensor1D | TensorLike, 
+/* data */ Tensor2D | TensorLike, 
+/* c */ Tensor2D | TensorLike, 
+/* h */ Tensor2D | TensorLike, 
+js.Tuple2[Tensor2D, Tensor2D]]]
 
 inline def batchNorm[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  mean: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  variance: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  offset: js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[R] | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-],
-  scale: js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[R] | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-],
-  varianceEpsilon: js.UndefOr[scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], varianceEpsilon.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  x: Tensor[R] | TensorLike,
+  mean: Tensor[R] | Tensor1D | TensorLike,
+  variance: Tensor[R] | Tensor1D | TensorLike,
+  offset: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
+  scale: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
+  varianceEpsilon: js.UndefOr[Double]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], varianceEpsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def batchNorm2d: js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm2d").asInstanceOf[js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* x */ Tensor2D | TensorLike, 
+/* mean */ Tensor2D | Tensor1D | TensorLike, 
+/* variance */ Tensor2D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor2D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor2D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm2d").asInstanceOf[js.Function6[
+/* x */ Tensor2D | TensorLike, 
+/* mean */ Tensor2D | Tensor1D | TensorLike, 
+/* variance */ Tensor2D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor2D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor2D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor2D]]
 
 inline def batchNorm3d: js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm3d").asInstanceOf[js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D]]
+/* x */ Tensor3D | TensorLike, 
+/* mean */ Tensor3D | Tensor1D | TensorLike, 
+/* variance */ Tensor3D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor3D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor3D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor3D] = ^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm3d").asInstanceOf[js.Function6[
+/* x */ Tensor3D | TensorLike, 
+/* mean */ Tensor3D | Tensor1D | TensorLike, 
+/* variance */ Tensor3D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor3D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor3D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor3D]]
 
 inline def batchNorm4d: js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm4d").asInstanceOf[js.Function6[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mean */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* variance */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* offset */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* scale */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* varianceEpsilon */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+/* x */ Tensor4D | TensorLike, 
+/* mean */ Tensor4D | Tensor1D | TensorLike, 
+/* variance */ Tensor4D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("batchNorm4d").asInstanceOf[js.Function6[
+/* x */ Tensor4D | TensorLike, 
+/* mean */ Tensor4D | Tensor1D | TensorLike, 
+/* variance */ Tensor4D | Tensor1D | TensorLike, 
+/* offset */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
+/* scale */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
+/* varianceEpsilon */ js.UndefOr[Double], 
+Tensor4D]]
 
-inline def batchToSpaceND[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  blockShape: js.Array[scala.Double],
-  crops: js.Array[js.Array[scala.Double]]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def batchToSpaceND[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def bincount[T /* <: Tensor1D */](x: T | TensorLike, weights: T | TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def booleanMaskAsync: js.Function3[
-/* tensor */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mask */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double], 
-js.Promise[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("booleanMaskAsync").asInstanceOf[js.Function3[
-/* tensor */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* mask */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double], 
-js.Promise[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]]]
+/* tensor */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* mask */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double], 
+js.Promise[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("booleanMaskAsync").asInstanceOf[js.Function3[
+/* tensor */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* mask */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double], 
+js.Promise[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]]
+
+inline def broadcastArgs[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  s0: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  s1: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def broadcastArgs[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](s0: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], s1: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def broadcastArgs[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](s0: TensorLike, s1: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def broadcastArgs[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](s0: TensorLike, s1: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def broadcastTo[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def broadcastTo[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  x: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def buffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32]]
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32]]
 inline def buffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: scala.Unit,
-  values: js.Array[java.lang.String]
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
+  dtype: Unit,
+  values: js.Array[String]
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
 inline def buffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: scala.Unit,
-  values: typings.std.Float32Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32]]
+  dtype: Unit,
+  values: js.typedarray.Float32Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32]]
 inline def buffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: scala.Unit,
-  values: typings.std.Int32Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32]]
+  dtype: Unit,
+  values: js.typedarray.Int32Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32]]
 inline def buffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: scala.Unit,
-  values: typings.std.Uint8Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool]]
+  dtype: Unit,
+  values: js.typedarray.Uint8Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool]]
 
 inline def buffer_bool[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.bool
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool]]
+  dtype: bool
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool]]
 inline def buffer_bool[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.bool,
-  values: typings.std.Uint8Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.bool]]
+  dtype: bool,
+  values: js.typedarray.Uint8Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, bool]]
 
 inline def buffer_complex64[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.complex64
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.complex64] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.complex64]]
+  dtype: complex64
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, complex64] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, complex64]]
 inline def buffer_complex64[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.complex64,
-  values: typings.std.Float32Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.complex64] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.complex64]]
+  dtype: complex64,
+  values: js.typedarray.Float32Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, complex64] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, complex64]]
 
 inline def buffer_float32[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32]]
+  dtype: float32
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32]]
 inline def buffer_float32[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  values: typings.std.Float32Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.float32]]
+  dtype: float32,
+  values: js.typedarray.Float32Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, float32]]
 
 inline def buffer_int32[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32]]
+  dtype: int32
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32]]
 inline def buffer_int32[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  values: typings.std.Int32Array
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.int32]]
+  dtype: int32,
+  values: js.typedarray.Int32Array
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, int32]]
 
 inline def buffer_string[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
   dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.string
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
 inline def buffer_string[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
   dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.string,
-  values: js.Array[java.lang.String]
-): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
+  values: js.Array[String]
+): typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, typings.tensorflowTfjs.tensorflowTfjsStrings.string]]
 
-inline def cast[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cast")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cast[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, dtype: DataType): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def ceil[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ceil[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def clipByValue[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  clipValueMin: scala.Double,
-  clipValueMax: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("clipByValue")(x.asInstanceOf[js.Any], clipValueMin.asInstanceOf[js.Any], clipValueMax.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def clipByValue[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, clipValueMin: Double, clipValueMax: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clipByValue")(x.asInstanceOf[js.Any], clipValueMin.asInstanceOf[js.Any], clipValueMax.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def clone_[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("clone")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def clone_[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def complex[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  real: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  imag: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("complex")(real.asInstanceOf[js.Any], imag.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def complex[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](real: T | TensorLike, imag: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("complex")(real.asInstanceOf[js.Any], imag.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def concat[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | typings.tensorflowTfjsCore.distTypesMod.TensorLike]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def concat[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | typings.tensorflowTfjsCore.distTypesMod.TensorLike], axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def concat[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | TensorLike]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def concat[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | TensorLike], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def concat1d: js.Function1[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("concat1d").asInstanceOf[js.Function1[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D]]
+inline def concat1d: js.Function1[/* tensors */ js.Array[Tensor1D | TensorLike], Tensor1D] = ^.asInstanceOf[js.Dynamic].selectDynamic("concat1d").asInstanceOf[js.Function1[/* tensors */ js.Array[Tensor1D | TensorLike], Tensor1D]]
 
-inline def concat2d: js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("concat2d").asInstanceOf[js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+inline def concat2d: js.Function2[/* tensors */ js.Array[Tensor2D | TensorLike], /* axis */ Double, Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("concat2d").asInstanceOf[js.Function2[/* tensors */ js.Array[Tensor2D | TensorLike], /* axis */ Double, Tensor2D]]
 
-inline def concat3d: js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("concat3d").asInstanceOf[js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D]]
+inline def concat3d: js.Function2[/* tensors */ js.Array[Tensor3D | TensorLike], /* axis */ Double, Tensor3D] = ^.asInstanceOf[js.Dynamic].selectDynamic("concat3d").asInstanceOf[js.Function2[/* tensors */ js.Array[Tensor3D | TensorLike], /* axis */ Double, Tensor3D]]
 
-inline def concat4d: js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("concat4d").asInstanceOf[js.Function2[
-/* tensors */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* axis */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+inline def concat4d: js.Function2[/* tensors */ js.Array[Tensor4D | TensorLike], /* axis */ Double, Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("concat4d").asInstanceOf[js.Function2[/* tensors */ js.Array[Tensor4D | TensorLike], /* axis */ Double, Tensor4D]]
 
-inline def conv1d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTensorMod.Tensor3D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  stride: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double | typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding,
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCW
-],
-  dilation: js.UndefOr[scala.Double],
+inline def conv1d[T /* <: Tensor2D | Tensor3D */](
+  x: T | TensorLike,
+  filter: Tensor3D | TensorLike,
+  stride: Double,
+  pad: valid | same | Double | ExplicitPadding,
+  dataFormat: js.UndefOr[NWC | NCW],
+  dilation: js.UndefOr[Double],
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def conv2d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double | typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding,
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
-],
-  dilations: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double],
+inline def conv2d[T /* <: Tensor3D | Tensor4D */](
+  x: T | TensorLike,
+  filter: Tensor4D | TensorLike,
+  strides: (js.Tuple2[Double, Double]) | Double,
+  pad: valid | same | Double | ExplicitPadding,
+  dataFormat: js.UndefOr[NHWC | NCHW],
+  dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def conv2dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]),
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
+inline def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+  x: T | TensorLike,
+  filter: Tensor4D | TensorLike,
+  outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
+  strides: (js.Tuple2[Double, Double]) | Double,
+  pad: valid | same | Double | ExplicitPadding,
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def conv3d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  strides: (js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NDHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCDHW
-],
-  dilations: js.UndefOr[(js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(x: Tensor[R4 | R5], filter: Tensor5D, strides: Double, pad: same | valid): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(x: Tensor[R4 | R5], filter: TensorLike, strides: Double, pad: same | valid): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: NCDHW | NDHWC,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d(
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dataFormat: Unit,
+  dilations: Double
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: Tensor5D, strides: js.Tuple3[Double, Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: Tensor5D, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: Tensor5D, strides: Double, pad: valid | same, dataFormat: NDHWC | NCDHW): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: TensorLike, strides: js.Tuple3[Double, Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: TensorLike, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: TensorLike, filter: TensorLike, strides: Double, pad: valid | same, dataFormat: NDHWC | NCDHW): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: NDHWC | NCDHW,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: js.Tuple3[Double, Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dataFormat: Unit,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: Double,
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: Tensor5D,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: Double,
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: Double,
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R4 | typings.tensorflowTfjsCore.distTypesMod.Rank.R5
-],
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R4]]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor5D,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def conv3dTranspose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  outputShape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  x: Tensor[R4 | R5],
+  filter: TensorLike,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: Double,
+  pad: same | valid
+): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: Double,
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: Tensor5D,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: Double,
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  outputShape: js.Tuple4[Double, Double, Double, Double],
+  strides: Double,
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: js.Tuple3[Double, Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  x: TensorLike,
+  filter: TensorLike,
+  outputShape: js.Tuple5[Double, Double, Double, Double, Double],
+  strides: Double,
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def copyRegisteredKernels(registeredBackendName: java.lang.String, newBackendName: java.lang.String): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("copyRegisteredKernels")(registeredBackendName.asInstanceOf[js.Any], newBackendName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def copyRegisteredKernels(registeredBackendName: String, newBackendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyRegisteredKernels")(registeredBackendName.asInstanceOf[js.Any], newBackendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def cos[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cos[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def cosh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cosh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def cosineWindow(windowLength: scala.Double, a: scala.Double, b: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cosineWindow")(windowLength.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineWindow")(windowLength.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  exclusive: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  exclusive: scala.Boolean,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  exclusive: scala.Unit,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  exclusive: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  exclusive: scala.Boolean,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  exclusive: scala.Unit,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Double,
-  exclusive: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Double,
-  exclusive: scala.Boolean,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Double,
-  exclusive: scala.Unit,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, exclusive: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Unit,
-  exclusive: scala.Boolean,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Unit,
-  exclusive: scala.Unit,
-  reverse: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Double,
+  exclusive: Boolean,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Double,
+  exclusive: Unit,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Unit,
+  exclusive: Boolean,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Unit,
+  exclusive: Unit,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumprod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Double,
+  exclusive: Boolean,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Double,
+  exclusive: Unit,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Unit,
+  exclusive: Boolean,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Unit,
+  exclusive: Unit,
+  reverse: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
 
 /**
   * Overrides the gradient computation of a function `f`.
@@ -1183,203 +1522,460 @@ inline def cumsum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typing
   *
   * @doc {heading: 'Training', subheading: 'Gradients'}
   */
-inline def customGrad[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: typings.tensorflowTfjsCore.engineMod.CustomGradientFunc[T]): js.Function1[
-/* repeated */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-T] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("customGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* repeated */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-T]]
+inline def customGrad[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("customGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], T]]
 
-inline def deprecationWarn(msg: java.lang.String): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("deprecationWarn")(msg.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def denseBincount(x: Tensor[R1 | R2], weights: Tensor[R1 | R2], size: Double): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount(x: Tensor[R1 | R2], weights: Tensor[R1 | R2], size: Double, binaryOutput: Boolean): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount(x: Tensor[R1 | R2], weights: TensorLike, size: Double): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount(x: Tensor[R1 | R2], weights: TensorLike, size: Double, binaryOutput: Boolean): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount(x: TensorLike, weights: Tensor[R1 | R2], size: Double): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount(x: TensorLike, weights: Tensor[R1 | R2], size: Double, binaryOutput: Boolean): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
+inline def denseBincount[T /* <: Tensor1D | Tensor2D */](x: TensorLike, weights: TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def denseBincount[T /* <: Tensor1D | Tensor2D */](x: TensorLike, weights: TensorLike, size: Double, binaryOutput: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def deprecationWarn(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecationWarn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def depthToSpace: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike4D, 
-/* blockSize */ scala.Double, 
-/* dataFormat */ js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("depthToSpace").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike4D, 
-/* blockSize */ scala.Double, 
-/* dataFormat */ js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+/* x */ Tensor4D | TensorLike4D, 
+/* blockSize */ Double, 
+/* dataFormat */ js.UndefOr[NHWC | NCHW], 
+Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("depthToSpace").asInstanceOf[js.Function3[
+/* x */ Tensor4D | TensorLike4D, 
+/* blockSize */ Double, 
+/* dataFormat */ js.UndefOr[NHWC | NCHW], 
+Tensor4D]]
 
-inline def depthwiseConv2d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
-],
-  dilations: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double],
+inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
+  x: T | TensorLike,
+  filter: Tensor4D | TensorLike,
+  strides: (js.Tuple2[Double, Double]) | Double,
+  pad: valid | same | Double | ExplicitPadding,
+  dataFormat: js.UndefOr[NHWC | NCHW],
+  dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def deregisterOp(name: java.lang.String): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("deregisterOp")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def deregisterOp(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterOp")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def diag: js.Function1[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("diag").asInstanceOf[js.Function1[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("diag").asInstanceOf[js.Function1[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def dilation2d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filter: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  dilations: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double],
-  dataFormat: js.UndefOr[typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d(x: Tensor[R3 | R4], filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double]
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Double
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Double,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Unit,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(x: Tensor[R3 | R4], filter: Tensor3D, strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: Double,
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double]
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: Double,
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(x: Tensor[R3 | R4], filter: Tensor3D, strides: Double, pad: same | valid, dilations: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: Double,
+  pad: same | valid,
+  dilations: Double,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: Tensor3D,
+  strides: Double,
+  pad: same | valid,
+  dilations: Unit,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(x: Tensor[R3 | R4], filter: TensorLike, strides: js.Tuple2[Double, Double], pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double]
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Double
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Double,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dilations: Unit,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(x: Tensor[R3 | R4], filter: TensorLike, strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double]
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(x: Tensor[R3 | R4], filter: TensorLike, strides: Double, pad: same | valid, dilations: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dilations: Double,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d(
+  x: Tensor[R3 | R4],
+  filter: TensorLike,
+  strides: Double,
+  pad: same | valid,
+  dilations: Unit,
+  dataFormat: NHWC
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Double,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Unit,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: Tensor3D, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: Double,
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: Double,
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: Tensor3D, strides: Double, pad: valid | same, dilations: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: Double,
+  pad: valid | same,
+  dilations: Double,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: Tensor3D,
+  strides: Double,
+  pad: valid | same,
+  dilations: Unit,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: TensorLike, strides: js.Tuple2[Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Double,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dilations: Unit,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: TensorLike, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dilations: js.Tuple2[Double, Double],
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filter: TensorLike, strides: Double, pad: valid | same, dilations: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dilations: Double,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filter: TensorLike,
+  strides: Double,
+  pad: valid | same,
+  dilations: Unit,
+  dataFormat: NHWC
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def disableDeprecationWarnings(): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("disableDeprecationWarnings")().asInstanceOf[scala.Unit]
+inline def disableDeprecationWarnings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDeprecationWarnings")().asInstanceOf[Unit]
 
-inline def dispose(container: typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(container.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def dispose(container: TensorContainer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def disposeVariables(): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("disposeVariables")().asInstanceOf[scala.Unit]
+inline def disposeVariables(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeVariables")().asInstanceOf[Unit]
 
-inline def div[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def div[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def div[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def div[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def div[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def div[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def div[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def div[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def divNoNan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def divNoNan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def divNoNan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def divNoNan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def divStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("divStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def divNoNan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def divNoNan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def divNoNan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def divNoNan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def dot: js.Function2[
-/* t1 */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* t2 */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("dot").asInstanceOf[js.Function2[
-/* t1 */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* t2 */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* t1 */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* t2 */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("dot").asInstanceOf[js.Function2[
+/* t1 */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* t2 */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
 inline def dropout: js.Function4[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* rate */ scala.Double, 
-/* noiseShape */ js.UndefOr[js.Array[scala.Double]], 
-/* seed */ js.UndefOr[scala.Double | java.lang.String], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("dropout").asInstanceOf[js.Function4[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* rate */ scala.Double, 
-/* noiseShape */ js.UndefOr[js.Array[scala.Double]], 
-/* seed */ js.UndefOr[scala.Double | java.lang.String], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* rate */ Double, 
+/* noiseShape */ js.UndefOr[js.Array[Double]], 
+/* seed */ js.UndefOr[Double | String], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("dropout").asInstanceOf[js.Function4[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* rate */ Double, 
+/* noiseShape */ js.UndefOr[js.Array[Double]], 
+/* seed */ js.UndefOr[Double | String], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def elu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("elu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def einsum: js.Function2[
+/* equation */ String, 
+/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("einsum").asInstanceOf[js.Function2[
+/* equation */ String, 
+/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def enableDebugMode(): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("enableDebugMode")().asInstanceOf[scala.Unit]
+inline def elu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def enableProdMode(): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("enableProdMode")().asInstanceOf[scala.Unit]
+inline def enableDebugMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebugMode")().asInstanceOf[Unit]
 
-inline def enclosingPowerOfTwo(value: scala.Double): scala.Double = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def enableProdMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProdMode")().asInstanceOf[Unit]
 
-inline def engine(): typings.tensorflowTfjsCore.engineMod.Engine = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("engine")().asInstanceOf[typings.tensorflowTfjsCore.engineMod.Engine]
+inline def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def env(): typings.tensorflowTfjsCore.environmentMod.Environment = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
+inline def engine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("engine")().asInstanceOf[Engine]
 
-inline def equal[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def equal[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def equal[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def equal[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def env(): typings.tensorflowTfjsCore.environmentMod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
 
-inline def equalStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("equalStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def erf[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("erf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def erf[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("erf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def exp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def euclideanNorm: js.Function3[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("euclideanNorm").asInstanceOf[js.Function3[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def expandDims[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def expandDims[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def expandDims[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def expandDims[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def exp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def expm1[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def expandDims[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def expandDims[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def expandDims[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def expandDims[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def expm1[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def eye: js.Function4[
-/* numRows */ scala.Double, 
-/* numColumns */ js.UndefOr[scala.Double], 
+/* numRows */ Double, 
+/* numColumns */ js.UndefOr[Double], 
 /* batchShape */ js.UndefOr[
-  js.Array[scala.Double] | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+  js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 ], 
-/* dtype */ js.UndefOr[typings.tensorflowTfjsCore.distTypesMod.DataType], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("eye").asInstanceOf[js.Function4[
-/* numRows */ scala.Double, 
-/* numColumns */ js.UndefOr[scala.Double], 
+/* dtype */ js.UndefOr[DataType], 
+Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("eye").asInstanceOf[js.Function4[
+/* numRows */ Double, 
+/* numColumns */ js.UndefOr[Double], 
 /* batchShape */ js.UndefOr[
-  js.Array[scala.Double] | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+  js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 ], 
-/* dtype */ js.UndefOr[typings.tensorflowTfjsCore.distTypesMod.DataType], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* dtype */ js.UndefOr[DataType], 
+Tensor2D]]
 
 inline def fft: js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("fft").asInstanceOf[js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("fft").asInstanceOf[js.Function1[
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
 inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  value: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  value: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  value: java.lang.String,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  value: String,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 /**
   * Creates a `tf.Tensor` filled with a scalar value.
   *
@@ -1396,73 +1992,64 @@ inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   */
 inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  value: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  value: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  value: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  value: Double,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def findBackend(name: java.lang.String): typings.tensorflowTfjsCore.backendMod.KernelBackend = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("findBackend")(name.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+inline def findBackend(name: String): typings.tensorflowTfjsCore.backendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackend")(name.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
 
-inline def findBackendFactory(name: java.lang.String): js.Function0[
-typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("findBackendFactory")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+inline def findBackendFactory(name: String): js.Function0[
+typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackendFactory")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
 typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]]]
 
-inline def floor[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("floor")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def floor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def floorDiv[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def floorDiv[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def floorDiv[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def floorDiv[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def gather[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def gather[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def gather[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  indices: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def gather[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  indices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: T | TensorLike,
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Double,
+  batchDims: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: T | TensorLike,
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  axis: Unit,
+  batchDims: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: TensorLike, axis: Double, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: TensorLike, axis: Unit, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def gatherND: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* indices */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("gatherND").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* indices */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("gatherND").asInstanceOf[js.Function2[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def getBackend(): java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("getBackend")().asInstanceOf[java.lang.String]
+inline def getBackend(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackend")().asInstanceOf[String]
 
-inline def getGradient(kernelName: java.lang.String): typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("getGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig]
+inline def getGradient(kernelName: String): GradConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[GradConfig]
 
-inline def getKernel(kernelName: java.lang.String, backendName: java.lang.String): typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("getKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig]
+inline def getKernel(kernelName: String, backendName: String): KernelConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[KernelConfig]
 
-inline def getKernelsForBackend(backendName: java.lang.String): js.Array[typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("getKernelsForBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig]]
+inline def getKernelsForBackend(backendName: String): js.Array[KernelConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKernelsForBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Array[KernelConfig]]
 
 /**
   * Provided `f(x)`, returns another function `g(x, dy?)`, which gives the
@@ -1500,20 +2087,16 @@ inline def getKernelsForBackend(backendName: java.lang.String): js.Array[typings
   */
 inline def grad(
   f: js.Function1[
-  /* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+  /* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+  Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]
 ): js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTypesMod.TensorLike | typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-/* dy */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTypesMod.TensorLike | typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("grad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTypesMod.TensorLike | typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-/* dy */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTypesMod.TensorLike | typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ TensorLike | Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+/* dy */ js.UndefOr[TensorLike | Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("grad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+/* x */ TensorLike | Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+/* dy */ js.UndefOr[TensorLike | Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
 /**
   * Provided `f(x1, x2,...)`, returns another function `g([x1, x2,...], dy?)`,
@@ -1546,2497 +2129,1738 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
   */
 inline def grads(
   f: js.Function1[
-  /* repeated */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+  /* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+  Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]
 ): js.Function2[
-/* args */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* dy */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("grads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* args */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* dy */ js.UndefOr[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]]]
+/* args */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike], 
+/* dy */ js.UndefOr[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike], 
+js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("grads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+/* args */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike], 
+/* dy */ js.UndefOr[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike], 
+js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]]
 
-inline def greater[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greater[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greater[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greater[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greater[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greater[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greater[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greater[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def greaterEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greaterEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greaterEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def greaterEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def greaterEqualStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def greaterStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("greaterStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greaterEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greaterEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greaterEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def greaterEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def ifft: js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ifft").asInstanceOf[js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ifft").asInstanceOf[js.Function1[
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def imag[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](input: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("imag")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def imag[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](input: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("imag")(input.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def inTopKAsync[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  predictions: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  targets: typings.tensorflowTfjsCore.distTypesMod.TensorLike | U
-): js.Promise[U] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
-inline def inTopKAsync[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  predictions: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  targets: typings.tensorflowTfjsCore.distTypesMod.TensorLike | U,
-  k: scala.Double
-): js.Promise[U] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+inline def inTopKAsync[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](predictions: T | TensorLike, targets: TensorLike | U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+inline def inTopKAsync[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](predictions: T | TensorLike, targets: TensorLike | U, k: Double): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
 
-inline def input(config: typings.tensorflowTfjsLayers.inputLayerMod.InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
+inline def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
 
 inline def irfft: js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("irfft").asInstanceOf[js.Function1[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("irfft").asInstanceOf[js.Function1[
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def isFinite[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def isFinite[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def isInf[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("isInf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def isInf[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isInf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def isNaN[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def isNaN[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def keep[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](result: T): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("keep")(result.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def keep[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](result: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("keep")(result.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def leakyRelu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def leakyRelu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, alpha: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def leakyRelu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def leakyRelu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def less[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def less[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def less[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def less[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def less[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def less[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def less[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def less[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def lessEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def lessEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def lessEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def lessEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def lessEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def lessEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def lessEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def lessEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def lessEqualStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def linspace(start: Double, stop: Double, num: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("linspace")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 
-inline def lessStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("lessStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: Unit, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: LoadOptions, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: Unit, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
 
-inline def linspace(start: scala.Double, stop: scala.Double, num: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("linspace")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def loadGraphModelSync(modelSource: IOHandlerSync): typings.tensorflowTfjsConverter.graphModelMod.GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[IOHandlerSync]]
 
-inline def loadGraphModel(modelUrl: java.lang.String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
-inline def loadGraphModel(modelUrl: java.lang.String, options: typings.tensorflowTfjsCore.typesMod.LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
-inline def loadGraphModel(modelUrl: typings.tensorflowTfjsCore.typesMod.IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
-inline def loadGraphModel(
-  modelUrl: typings.tensorflowTfjsCore.typesMod.IOHandler,
-  options: typings.tensorflowTfjsCore.typesMod.LoadOptions
-): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
+inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
 
-inline def loadLayersModel(pathOrIOHandler: java.lang.String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(pathOrIOHandler: java.lang.String, options: typings.tensorflowTfjsCore.typesMod.LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(pathOrIOHandler: typings.tensorflowTfjsCore.typesMod.IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(
-  pathOrIOHandler: typings.tensorflowTfjsCore.typesMod.IOHandler,
-  options: typings.tensorflowTfjsCore.typesMod.LoadOptions
-): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+inline def localResponseNormalization(x: Tensor[R3 | R4]): Tensor[R3] = ^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Double, alpha: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Double, alpha: Double, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Double, alpha: Unit, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Unit, alpha: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Unit, alpha: Double, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double, bias: Unit, alpha: Unit, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Double, alpha: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Double, alpha: Double, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Double, alpha: Unit, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Unit, alpha: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Unit, alpha: Double, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Unit, bias: Unit, alpha: Unit, beta: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Unit, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Unit, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Unit, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Double, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Double, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Double, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Unit, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Unit, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Unit, bias: Unit, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Double,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Unit,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Double,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Unit,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Double,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Unit,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Double,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization(
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[
-  typings.tensorflowTfjsCore.distTypesMod.Rank.R3 | typings.tensorflowTfjsCore.distTypesMod.Rank.R4
-],
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Unit,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank.R3]]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, depthRadius: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Double,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Double,
-  alpha: scala.Unit,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Double,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Double,
-  bias: scala.Unit,
-  alpha: scala.Unit,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, depthRadius: scala.Unit, bias: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Double,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Double,
-  alpha: scala.Unit,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Double,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def localResponseNormalization[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthRadius: scala.Unit,
-  bias: scala.Unit,
-  alpha: scala.Unit,
-  beta: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def log[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def log[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("log")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def log1p[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def log1p[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logSigmoid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def logSigmoid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logSoftmax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logSoftmax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def logSoftmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def logSoftmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logSumExp[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logSumExp[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalAnd[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalAnd[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalAnd[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalAnd[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def logicalAnd[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalAnd[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalAnd[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalAnd[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalNot[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logicalNot")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def logicalNot[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalNot")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def logicalOr[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalOr[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalOr[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalOr[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def logicalOr[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalOr[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalOr[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalOr[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalXor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalXor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalXor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def logicalXor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def logicalXor[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalXor[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalXor[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def logicalXor[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def lowerBound(
+  sortedSequence: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  values: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def lowerBound(sortedSequence: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], values: TensorLike): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def lowerBound(sortedSequence: TensorLike, values: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def lowerBound(sortedSequence: TensorLike, values: TensorLike): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
 
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Boolean,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Unit,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Boolean,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Unit,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Boolean,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  transposeA: scala.Unit,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Boolean,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def matMul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  transposeA: scala.Unit,
-  transposeB: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  transposeA: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  transposeA: Boolean,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  transposeA: Unit,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike, transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: TensorLike,
+  transposeA: Boolean,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: TensorLike,
+  transposeA: Unit,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: TensorLike,
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  transposeA: Boolean,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: TensorLike,
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  transposeA: Unit,
+  transposeB: Boolean
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def matMul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike, transposeA: Unit, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def max[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def max[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def maxPool[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
-  dimRoundingMode: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
-]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: same | valid): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: same | valid,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(x: Tensor[R3 | R4], filterSize: Double, strides: Double, pad: ExplicitPadding): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool(
+  x: Tensor[R3 | R4],
+  filterSize: Double,
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.ceil | typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round
+): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid | same): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: valid | same,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: Double,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+  x: TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: ExplicitPadding,
+  dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def maxPool3d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTensorMod.Tensor5D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: (js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double,
-  strides: (js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
+inline def maxPool3d[T /* <: Tensor4D | Tensor5D */](
+  x: T | TensorLike,
+  filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+  strides: (js.Tuple3[Double, Double, Double]) | Double,
+  pad: valid | same | Double,
   dimRoundingMode: js.UndefOr[
   typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ],
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NDHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCDHW
-],
-  dilations: js.UndefOr[(js.Tuple3[scala.Double, scala.Double, scala.Double]) | scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  dataFormat: js.UndefOr[NDHWC | NCDHW]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: scala.Double
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: scala.Double,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: scala.Double
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: scala.Double,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: js.Tuple2[scala.Double, scala.Double],
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: scala.Double
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: scala.Double,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: js.Tuple2[scala.Double, scala.Double],
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: scala.Double
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: scala.Double,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
-inline def maxPoolWithArgmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  filterSize: scala.Double,
-  strides: scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid,
-  includeBatchInIndex: scala.Boolean
-): typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same | valid): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: same | valid,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: js.Tuple2[Double, Double],
+  strides: Double,
+  pad: Double,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same | valid): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: same | valid,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: Double,
+  strides: js.Tuple2[Double, Double],
+  pad: Double,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same | valid): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+  x: T | TensorLike,
+  filterSize: Double,
+  strides: Double,
+  pad: same | valid,
+  includeBatchInIndex: Boolean
+): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
 
-inline def maximum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def maximum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def maximum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def maximum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maximum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maximum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maximum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def maximum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def maximumStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("maximumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mean[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mean[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def memory(): MemoryInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")().asInstanceOf[MemoryInfo]
 
-inline def memory(): typings.tensorflowTfjsCore.engineMod.MemoryInfo = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("memory")().asInstanceOf[typings.tensorflowTfjsCore.engineMod.MemoryInfo]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")().asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Unit, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Unit, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def meshgrid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Unit, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def min[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def min[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def minimum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def minimum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def minimum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def minimum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def minimum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def minimum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def minimum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def minimum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def minimumStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("minimumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mirrorPad[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect | symmetric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def mirrorPad[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  paddings: js.Array[js.Tuple2[scala.Double, scala.Double]],
-  mode: typings.tensorflowTfjs.tensorflowTfjsStrings.reflect
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mirrorPad[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  paddings: js.Array[js.Tuple2[scala.Double, scala.Double]],
-  mode: typings.tensorflowTfjs.tensorflowTfjsStrings.symmetric
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def mod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def modStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("modStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def model(args: typings.tensorflowTfjsLayers.containerMod.ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.trainingMod.LayersModel]
+inline def model(args: ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.trainingMod.LayersModel]
 
 inline def moments: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-/* keepDims */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.anon.Mean] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("moments").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-/* keepDims */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.anon.Mean]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Mean] = ^.asInstanceOf[js.Dynamic].selectDynamic("moments").asInstanceOf[js.Function3[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Mean]]
 
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double,
-  step: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double,
-  step: scala.Double,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double,
-  step: scala.Unit,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double,
-  step: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: scala.Double,
-  step: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  step: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  step: scala.Double,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  step: scala.Unit,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  step: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def movingAverage[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  v: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  decay: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  step: typings.tensorflowTfjsCore.distTensorMod.Scalar,
-  zeroDebias: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Double, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Unit, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Scalar, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Double, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Unit, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def movingAverage[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def mul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def mul[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def mulStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("mulStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def mul[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def multiRNNCell: js.Function4[
-/* lstmCells */ js.Array[typings.tensorflowTfjsCore.multiRnnCellMod.LSTMCellFunc], 
-/* data */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* c */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* h */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-js.Tuple2[
-  js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor2D], 
-  js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("multiRNNCell").asInstanceOf[js.Function4[
-/* lstmCells */ js.Array[typings.tensorflowTfjsCore.multiRnnCellMod.LSTMCellFunc], 
-/* data */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* c */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-/* h */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-], 
-js.Tuple2[
-  js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor2D], 
-  js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
-]]]
+/* lstmCells */ js.Array[LSTMCellFunc], 
+/* data */ Tensor2D | TensorLike, 
+/* c */ js.Array[Tensor2D | TensorLike], 
+/* h */ js.Array[Tensor2D | TensorLike], 
+js.Tuple2[js.Array[Tensor2D], js.Array[Tensor2D]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("multiRNNCell").asInstanceOf[js.Function4[
+/* lstmCells */ js.Array[LSTMCellFunc], 
+/* data */ Tensor2D | TensorLike, 
+/* c */ js.Array[Tensor2D | TensorLike], 
+/* h */ js.Array[Tensor2D | TensorLike], 
+js.Tuple2[js.Array[Tensor2D], js.Array[Tensor2D]]]]
 
 inline def multinomial: js.Function4[
-/* logits */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* numSamples */ scala.Double, 
-/* seed */ js.UndefOr[scala.Double], 
-/* normalized */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("multinomial").asInstanceOf[js.Function4[
-/* logits */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* numSamples */ scala.Double, 
-/* seed */ js.UndefOr[scala.Double], 
-/* normalized */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* logits */ Tensor1D | Tensor2D | TensorLike, 
+/* numSamples */ Double, 
+/* seed */ js.UndefOr[Double], 
+/* normalized */ js.UndefOr[Boolean], 
+Tensor1D | Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("multinomial").asInstanceOf[js.Function4[
+/* logits */ Tensor1D | Tensor2D | TensorLike, 
+/* numSamples */ Double, 
+/* seed */ js.UndefOr[Double], 
+/* normalized */ js.UndefOr[Boolean], 
+Tensor1D | Tensor2D]]
 
-inline def neg[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("neg")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def neg[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def nextFrame(): js.Promise[scala.Unit] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("nextFrame")().asInstanceOf[js.Promise[scala.Unit]]
+/**
+  * Returns a promise that resolve when a requestAnimationFrame has completed.
+  *
+  * On Node.js this uses setImmediate instead of requestAnimationFrame.
+  *
+  * This is simply a sugar method so that users can do the following:
+  * `await tf.nextFrame();`
+  *
+  * @doc {heading: 'Performance', subheading: 'Timing'}
+  */
+inline def nextFrame(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextFrame")().asInstanceOf[js.Promise[Unit]]
 
 inline def norm: js.Function4[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* ord */ js.UndefOr[
-  scala.Double | typings.tensorflowTfjs.tensorflowTfjsStrings.euclidean | typings.tensorflowTfjs.tensorflowTfjsStrings.fro
-], 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-/* keepDims */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("norm").asInstanceOf[js.Function4[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* ord */ js.UndefOr[
-  scala.Double | typings.tensorflowTfjs.tensorflowTfjsStrings.euclidean | typings.tensorflowTfjs.tensorflowTfjsStrings.fro
-], 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-/* keepDims */ js.UndefOr[scala.Boolean], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* ord */ js.UndefOr[Double | euclidean | fro], 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("norm").asInstanceOf[js.Function4[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* ord */ js.UndefOr[Double | euclidean | fro], 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+/* keepDims */ js.UndefOr[Boolean], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def notEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def notEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def notEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def notEqual[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def notEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def notEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def notEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def notEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def notEqualStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("notEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def oneHot: js.Function4[
-/* indices */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* depth */ scala.Double, 
-/* onValue */ js.UndefOr[scala.Double], 
-/* offValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("oneHot").asInstanceOf[js.Function4[
-/* indices */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* depth */ scala.Double, 
-/* onValue */ js.UndefOr[scala.Double], 
-/* offValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+inline def oneHot: js.Function5[
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* depth */ Double, 
+/* onValue */ js.UndefOr[Double], 
+/* offValue */ js.UndefOr[Double], 
+/* dtype */ js.UndefOr[DataType], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("oneHot").asInstanceOf[js.Function5[
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* depth */ Double, 
+/* onValue */ js.UndefOr[Double], 
+/* offValue */ js.UndefOr[Double], 
+/* dtype */ js.UndefOr[DataType], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
 inline def ones[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def ones[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def onesLike[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def onesLike[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def op[T /* <: js.Function */](f: org.scalablytyped.runtime.StringDictionary[T]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("op")(f.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def op[T /* <: js.Function */](f: StringDictionary[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("op")(f.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def outerProduct: js.Function2[
-/* v1 */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* v2 */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("outerProduct").asInstanceOf[js.Function2[
-/* v1 */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* v2 */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+inline def outerProduct: js.Function2[/* v1 */ Tensor1D | TensorLike, /* v2 */ Tensor1D | TensorLike, Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("outerProduct").asInstanceOf[js.Function2[/* v1 */ Tensor1D | TensorLike, /* v2 */ Tensor1D | TensorLike, Tensor2D]]
 
-inline def pad[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  paddings: js.Array[js.Tuple2[scala.Double, scala.Double]]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def pad[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  paddings: js.Array[js.Tuple2[scala.Double, scala.Double]],
-  constantValue: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], constantValue.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def pad[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def pad[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], constantValue.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def pad1d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple2[scala.Double, scala.Double], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("pad1d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple2[scala.Double, scala.Double], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D]]
+/* x */ Tensor1D | TensorLike, 
+/* paddings */ js.Tuple2[Double, Double], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor1D] = ^.asInstanceOf[js.Dynamic].selectDynamic("pad1d").asInstanceOf[js.Function3[
+/* x */ Tensor1D | TensorLike, 
+/* paddings */ js.Tuple2[Double, Double], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor1D]]
 
 inline def pad2d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("pad2d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* x */ Tensor2D | TensorLike, 
+/* paddings */ js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("pad2d").asInstanceOf[js.Function3[
+/* x */ Tensor2D | TensorLike, 
+/* paddings */ js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor2D]]
 
 inline def pad3d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple3[
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double]
-], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("pad3d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* paddings */ js.Tuple3[
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double]
-], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D]]
+/* x */ Tensor3D | TensorLike, 
+/* paddings */ js.Tuple3[js.Tuple2[Double, Double], js.Tuple2[Double, Double], js.Tuple2[Double, Double]], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor3D] = ^.asInstanceOf[js.Dynamic].selectDynamic("pad3d").asInstanceOf[js.Function3[
+/* x */ Tensor3D | TensorLike, 
+/* paddings */ js.Tuple3[js.Tuple2[Double, Double], js.Tuple2[Double, Double], js.Tuple2[Double, Double]], 
+/* constantValue */ js.UndefOr[Double], 
+Tensor3D]]
 
 inline def pad4d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
+/* x */ Tensor4D | TensorLike, 
 /* paddings */ js.Tuple4[
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double]
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double]
 ], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("pad4d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
+/* constantValue */ js.UndefOr[Double], 
+Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("pad4d").asInstanceOf[js.Function3[
+/* x */ Tensor4D | TensorLike, 
 /* paddings */ js.Tuple4[
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double], 
-  js.Tuple2[scala.Double, scala.Double]
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double], 
+  js.Tuple2[Double, Double]
 ], 
-/* constantValue */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+/* constantValue */ js.UndefOr[Double], 
+Tensor4D]]
 
-inline def pool[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  input: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  windowShape: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  poolingType: typings.tensorflowTfjs.tensorflowTfjsStrings.avg | typings.tensorflowTfjs.tensorflowTfjsStrings.max,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same | scala.Double,
-  dilations: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double],
-  strides: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pool")(input.asInstanceOf[js.Any], windowShape.asInstanceOf[js.Any], poolingType.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def pow[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  base: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  exp: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def pow[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  base: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  exp: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def pow[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  base: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  exp: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def pow[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  base: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  exp: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def powStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  base: T,
-  exp: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("powStrict")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def prelu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  alpha: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def print[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def print[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, verbose: scala.Boolean): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def prod[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def profile(
-  f: js.Function0[
-  typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer | js.Promise[typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer]
+inline def pool[T /* <: Tensor3D | Tensor4D */](
+  input: T | TensorLike,
+  windowShape: (js.Tuple2[Double, Double]) | Double,
+  poolingType: avg | typings.tensorflowTfjs.tensorflowTfjsStrings.max,
+  pad: valid | same | Double | ExplicitPadding,
+  dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+  strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+  dimRoundingMode: js.UndefOr[
+  typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
 ]
-): js.Promise[typings.tensorflowTfjsCore.engineMod.ProfileInfo] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("profile")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsCore.engineMod.ProfileInfo]]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(input.asInstanceOf[js.Any], windowShape.asInstanceOf[js.Any], poolingType.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def pow[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  base: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  exp: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def pow[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](base: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def pow[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](base: TensorLike, exp: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def pow[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](base: TensorLike, exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def prelu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, alpha: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def print[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def print[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def profile(f: js.Function0[TensorContainer | js.Promise[TensorContainer]]): js.Promise[ProfileInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileInfo]]
+
+inline def raggedTensorToTensor: js.Function5[
+/* shape */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* values */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* defaultValue */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* rowPartitionTensors */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+/* rowPartitionTypes */ js.Array[String], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("raggedTensorToTensor").asInstanceOf[js.Function5[
+/* shape */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* values */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* defaultValue */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* rowPartitionTensors */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+/* rowPartitionTypes */ js.Array[String], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
 inline def rand[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  randFunction: js.Function0[scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  randFunction: js.Function0[Double]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def rand[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  randFunction: js.Function0[scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  randFunction: js.Function0[Double],
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Double,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Double,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Unit,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Unit,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomGamma[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  alpha: scala.Double,
-  beta: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  alpha: Double,
+  beta: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Unit,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Unit,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  mean: Unit,
+  stdDev: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+
+inline def randomStandardNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+inline def randomStandardNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def randomStandardNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def randomStandardNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def randomNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double,
-  dtype: scala.Unit,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double,
+  dtype: Unit,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double,
+  dtype: DataType,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Double,
+  dtype: DataType,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Unit,
-  dtype: scala.Unit,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Unit,
+  dtype: Unit,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Unit,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Unit,
+  dtype: DataType,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Double,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Double,
+  maxval: Unit,
+  dtype: DataType,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double,
-  dtype: scala.Unit,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double,
+  dtype: Unit,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double,
+  dtype: DataType,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Double,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Double,
+  dtype: DataType,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Unit,
-  dtype: scala.Unit,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Unit,
+  dtype: Unit,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Unit,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Unit,
+  dtype: DataType,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  minval: scala.Unit,
-  maxval: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  minval: Unit,
+  maxval: Unit,
+  dtype: DataType,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def range(start: scala.Double, stop: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
-inline def range(start: scala.Double, stop: scala.Double, step: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+inline def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+inline def range(start: Double, stop: Double, step: Double, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+inline def range(start: Double, stop: Double, step: Unit, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 
-inline def range_float32(
-  start: scala.Double,
-  stop: scala.Double,
-  step: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
-inline def range_float32(
-  start: scala.Double,
-  stop: scala.Double,
-  step: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def ready(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[js.Promise[Unit]]
 
-inline def range_int32(
-  start: scala.Double,
-  stop: scala.Double,
-  step: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
-inline def range_int32(
-  start: scala.Double,
-  stop: scala.Double,
-  step: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def real[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](input: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("real")(input.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ready(): js.Promise[scala.Unit] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[js.Promise[scala.Unit]]
-
-inline def real[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](input: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("real")(input.asInstanceOf[js.Any]).asInstanceOf[T]
-
-inline def reciprocal[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reciprocal")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def reciprocal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("reciprocal")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def registerBackend(
-  name: java.lang.String,
+  name: String,
   factory: js.Function0[
   typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]
 ]
-): scala.Boolean = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def registerBackend(
-  name: java.lang.String,
+  name: String,
   factory: js.Function0[
   typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]
 ],
-  priority: scala.Double
-): scala.Boolean = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+  priority: Double
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def registerCallbackConstructor(
-  verbosityLevel: scala.Double,
-  callbackConstructor: typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallbackConstructor
-): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def registerGradient(config: typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerGradient")(config.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerGradient(config: GradConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerGradient")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def registerKernel(config: typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerKernel")(config.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerKernel(config: KernelConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKernel")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def registerOp(name: java.lang.String, opFunc: typings.tensorflowTfjsConverter.operationsTypesMod.OpExecutor): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerOp")(name.asInstanceOf[js.Any], opFunc.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerOp(name: String, opFunc: OpExecutor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOp")(name.asInstanceOf[js.Any], opFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def relu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("relu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def relu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def relu6[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("relu6")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def relu6[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu6")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def removeBackend(name: java.lang.String): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("removeBackend")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def removeBackend(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBackend")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def reshape[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def reshape[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  x: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def reverse[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def reverse[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def reverse[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def reverse[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def reverse[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def reverse[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def reverse1d: js.Function1[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("reverse1d").asInstanceOf[js.Function1[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D]]
+inline def reverse1d: js.Function1[/* x */ Tensor1D | TensorLike, Tensor1D] = ^.asInstanceOf[js.Dynamic].selectDynamic("reverse1d").asInstanceOf[js.Function1[/* x */ Tensor1D | TensorLike, Tensor1D]]
 
 inline def reverse2d: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("reverse2d").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* x */ Tensor2D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("reverse2d").asInstanceOf[js.Function2[
+/* x */ Tensor2D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor2D]]
 
 inline def reverse3d: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("reverse3d").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D]]
+/* x */ Tensor3D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor3D] = ^.asInstanceOf[js.Dynamic].selectDynamic("reverse3d").asInstanceOf[js.Function2[
+/* x */ Tensor3D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor3D]]
 
 inline def reverse4d: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("reverse4d").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double | js.Array[scala.Double]], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+/* x */ Tensor4D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("reverse4d").asInstanceOf[js.Function2[
+/* x */ Tensor4D | TensorLike, 
+/* axis */ js.UndefOr[Double | js.Array[Double]], 
+Tensor4D]]
 
 inline def rfft: js.Function2[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-/* fftLength */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("rfft").asInstanceOf[js.Function2[
-/* input */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-/* fftLength */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+/* fftLength */ js.UndefOr[Double], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("rfft").asInstanceOf[js.Function2[
+/* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+/* fftLength */ js.UndefOr[Double], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def round[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def round[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def rsqrt[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("rsqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def rsqrt[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("rsqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def scalar(value: java.lang.String): typings.tensorflowTfjsCore.distTensorMod.Scalar = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: java.lang.String, dtype: typings.tensorflowTfjsCore.distTypesMod.DataType): typings.tensorflowTfjsCore.distTensorMod.Scalar = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: scala.Boolean): typings.tensorflowTfjsCore.distTensorMod.Scalar = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: scala.Boolean, dtype: typings.tensorflowTfjsCore.distTypesMod.DataType): typings.tensorflowTfjsCore.distTensorMod.Scalar = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Scalar = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: scala.Double, dtype: typings.tensorflowTfjsCore.distTypesMod.DataType): typings.tensorflowTfjsCore.distTensorMod.Scalar = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: typings.std.Uint8Array): typings.tensorflowTfjsCore.distTensorMod.Scalar = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
-inline def scalar(value: typings.std.Uint8Array, dtype: typings.tensorflowTfjsCore.distTypesMod.DataType): typings.tensorflowTfjsCore.distTensorMod.Scalar = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Scalar]
+inline def scalar(value: String): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+inline def scalar(value: String, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+inline def scalar(value: js.typedarray.Uint8Array): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+inline def scalar(value: js.typedarray.Uint8Array, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+inline def scalar(value: Boolean): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+inline def scalar(value: Boolean, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+inline def scalar(value: Double): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+inline def scalar(value: Double, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
 
 inline def scatterND[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  updates: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def scatterND[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  updates: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def scatterND[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  indices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  updates: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  indices: TensorLike,
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def scatterND[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  indices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  updates: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  indices: TensorLike,
+  updates: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def selu[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("selu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def searchSorted: js.Function3[
+/* sortedSequence */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* values */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* side */ js.UndefOr[left | right], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("searchSorted").asInstanceOf[js.Function3[
+/* sortedSequence */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* values */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* side */ js.UndefOr[left | right], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def separableConv2d[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTensorMod.Tensor4D */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  depthwiseFilter: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  pointwiseFilter: typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  strides: (js.Tuple2[scala.Double, scala.Double]) | scala.Double,
-  pad: typings.tensorflowTfjs.tensorflowTfjsStrings.valid | typings.tensorflowTfjs.tensorflowTfjsStrings.same,
-  dilation: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | scala.Double],
-  dataFormat: js.UndefOr[
-  typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC | typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
-]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(x.asInstanceOf[js.Any], depthwiseFilter.asInstanceOf[js.Any], pointwiseFilter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def selu[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("selu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def sequential(): typings.tensorflowTfjsLayers.modelsMod.Sequential = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sequential")().asInstanceOf[typings.tensorflowTfjsLayers.modelsMod.Sequential]
-inline def sequential(config: typings.tensorflowTfjsLayers.modelsMod.SequentialArgs): typings.tensorflowTfjsLayers.modelsMod.Sequential = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sequential")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.modelsMod.Sequential]
+inline def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+  x: T | TensorLike,
+  depthwiseFilter: Tensor4D | TensorLike,
+  pointwiseFilter: Tensor4D | TensorLike,
+  strides: (js.Tuple2[Double, Double]) | Double,
+  pad: valid | same,
+  dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+  dataFormat: js.UndefOr[NHWC | NCHW]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(x.asInstanceOf[js.Any], depthwiseFilter.asInstanceOf[js.Any], pointwiseFilter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def setBackend(backendName: java.lang.String): js.Promise[scala.Boolean] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("setBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Boolean]]
+inline def sequential(): Sequential = ^.asInstanceOf[js.Dynamic].applyDynamic("sequential")().asInstanceOf[Sequential]
+inline def sequential(config: SequentialArgs): Sequential = ^.asInstanceOf[js.Dynamic].applyDynamic("sequential")(config.asInstanceOf[js.Any]).asInstanceOf[Sequential]
 
-inline def setPlatform(platformName: java.lang.String, platform: typings.tensorflowTfjsCore.platformMod.Platform): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("setPlatform")(platformName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setBackend(backendName: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+
+inline def setPlatform(platformName: String, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPlatform")(platformName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def setdiff1dAsync: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* y */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* y */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
 js.Promise[
   js.Tuple2[
-    typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
   ]
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("setdiff1dAsync").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* y */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
+]] = ^.asInstanceOf[js.Dynamic].selectDynamic("setdiff1dAsync").asInstanceOf[js.Function2[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* y */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
 js.Promise[
   js.Tuple2[
-    typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
+    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
   ]
 ]]]
 
-inline def sigmoid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sigmoid[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def sign[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sign[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def sin[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sin[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def sinh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sinh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, begin: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  begin: js.Array[scala.Double],
-  size: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  begin: js.Array[scala.Double],
-  size: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, begin: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  begin: scala.Double,
-  size: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[R] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, begin: scala.Double, size: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double], size: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double], size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double, size: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def slice[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def slice1d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ scala.Double, 
-/* size */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("slice1d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor1D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ scala.Double, 
-/* size */ scala.Double, 
-typings.tensorflowTfjsCore.distTensorMod.Tensor1D]]
+inline def slice1d: js.Function3[/* x */ Tensor1D | TensorLike, /* begin */ Double, /* size */ Double, Tensor1D] = ^.asInstanceOf[js.Dynamic].selectDynamic("slice1d").asInstanceOf[js.Function3[/* x */ Tensor1D | TensorLike, /* begin */ Double, /* size */ Double, Tensor1D]]
 
 inline def slice2d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple2[scala.Double, scala.Double], 
-/* size */ js.Tuple2[scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("slice2d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor2D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple2[scala.Double, scala.Double], 
-/* size */ js.Tuple2[scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]
+/* x */ Tensor2D | TensorLike, 
+/* begin */ js.Tuple2[Double, Double], 
+/* size */ js.Tuple2[Double, Double], 
+Tensor2D] = ^.asInstanceOf[js.Dynamic].selectDynamic("slice2d").asInstanceOf[js.Function3[
+/* x */ Tensor2D | TensorLike, 
+/* begin */ js.Tuple2[Double, Double], 
+/* size */ js.Tuple2[Double, Double], 
+Tensor2D]]
 
 inline def slice3d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple3[scala.Double, scala.Double, scala.Double], 
-/* size */ js.Tuple3[scala.Double, scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("slice3d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor3D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple3[scala.Double, scala.Double, scala.Double], 
-/* size */ js.Tuple3[scala.Double, scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor3D]]
+/* x */ Tensor3D | TensorLike, 
+/* begin */ js.Tuple3[Double, Double, Double], 
+/* size */ js.Tuple3[Double, Double, Double], 
+Tensor3D] = ^.asInstanceOf[js.Dynamic].selectDynamic("slice3d").asInstanceOf[js.Function3[
+/* x */ Tensor3D | TensorLike, 
+/* begin */ js.Tuple3[Double, Double, Double], 
+/* size */ js.Tuple3[Double, Double, Double], 
+Tensor3D]]
 
 inline def slice4d: js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], 
-/* size */ js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("slice4d").asInstanceOf[js.Function3[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor4D | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], 
-/* size */ js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor4D]]
+/* x */ Tensor4D | TensorLike, 
+/* begin */ js.Tuple4[Double, Double, Double, Double], 
+/* size */ js.Tuple4[Double, Double, Double, Double], 
+Tensor4D] = ^.asInstanceOf[js.Dynamic].selectDynamic("slice4d").asInstanceOf[js.Function3[
+/* x */ Tensor4D | TensorLike, 
+/* begin */ js.Tuple4[Double, Double, Double, Double], 
+/* size */ js.Tuple4[Double, Double, Double, Double], 
+Tensor4D]]
 
-inline def softmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def softmax[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, dim: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any], dim.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def softmax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def softmax[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](logits: T | TensorLike, dim: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any], dim.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def softplus[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("softplus")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def softplus[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("softplus")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def spaceToBatchND[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  blockShape: js.Array[scala.Double],
-  paddings: js.Array[js.Array[scala.Double]]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def spaceToBatchND[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: Scalar
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTypesMod.ScalarLike
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: ScalarLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: Scalar
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTypesMod.ScalarLike
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: ScalarLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: TensorLike,
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: TensorLike,
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: Scalar
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  sparseIndices: TensorLike,
+  sparseValues: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTypesMod.ScalarLike
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: ScalarLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: TensorLike,
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: TensorLike,
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTensorMod.Scalar
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: Scalar
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def sparseToDense[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  sparseIndices: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  sparseValues: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  sparseIndices: TensorLike,
+  sparseValues: TensorLike,
   outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  defaultValue: typings.tensorflowTfjsCore.distTypesMod.ScalarLike
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  defaultValue: ScalarLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  numOrSizeSplits: js.Array[scala.Double]
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  numOrSizeSplits: js.Array[scala.Double],
-  axis: scala.Double
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  numOrSizeSplits: scala.Double
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  numOrSizeSplits: scala.Double,
-  axis: scala.Double
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, numOrSizeSplits: js.Array[scala.Double]): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  numOrSizeSplits: js.Array[scala.Double],
-  axis: scala.Double
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, numOrSizeSplits: scala.Double): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-inline def split[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  numOrSizeSplits: scala.Double,
-  axis: scala.Double
-): js.Array[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  numOrSizeSplits: js.Array[Double],
+  axis: Double
+): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: Double, axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double], axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, numOrSizeSplits: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, numOrSizeSplits: Double, axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def sqrt[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sqrt[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def square[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("square")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def square[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("square")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def squaredDifference[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def squaredDifference[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def squaredDifference[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def squaredDifference[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squaredDifference[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squaredDifference[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squaredDifference[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squaredDifference[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def squaredDifferenceStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifferenceStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squeeze[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def squeeze[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def squeeze[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def squeeze[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def squeeze[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def squeeze[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def squeeze[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def squeeze[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def stack[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | TensorLike]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any]).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def stack[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | TensorLike], axis: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
 
-inline def stack[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | typings.tensorflowTfjsCore.distTypesMod.TensorLike]): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
-inline def stack[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](tensors: js.Array[T | typings.tensorflowTfjsCore.distTypesMod.TensorLike], axis: scala.Double): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
-
-inline def step[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def step[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, alpha: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def step[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def step[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def stridedSlice: js.Function9[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Array[scala.Double], 
-/* end */ js.Array[scala.Double], 
-/* strides */ js.UndefOr[js.Array[scala.Double]], 
-/* beginMask */ js.UndefOr[scala.Double], 
-/* endMask */ js.UndefOr[scala.Double], 
-/* ellipsisMask */ js.UndefOr[scala.Double], 
-/* newAxisMask */ js.UndefOr[scala.Double], 
-/* shrinkAxisMask */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("stridedSlice").asInstanceOf[js.Function9[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* begin */ js.Array[scala.Double], 
-/* end */ js.Array[scala.Double], 
-/* strides */ js.UndefOr[js.Array[scala.Double]], 
-/* beginMask */ js.UndefOr[scala.Double], 
-/* endMask */ js.UndefOr[scala.Double], 
-/* ellipsisMask */ js.UndefOr[scala.Double], 
-/* newAxisMask */ js.UndefOr[scala.Double], 
-/* shrinkAxisMask */ js.UndefOr[scala.Double], 
-typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* begin */ js.Array[Double], 
+/* end */ js.Array[Double], 
+/* strides */ js.UndefOr[js.Array[Double]], 
+/* beginMask */ js.UndefOr[Double], 
+/* endMask */ js.UndefOr[Double], 
+/* ellipsisMask */ js.UndefOr[Double], 
+/* newAxisMask */ js.UndefOr[Double], 
+/* shrinkAxisMask */ js.UndefOr[Double], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]] = ^.asInstanceOf[js.Dynamic].selectDynamic("stridedSlice").asInstanceOf[js.Function9[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* begin */ js.Array[Double], 
+/* end */ js.Array[Double], 
+/* strides */ js.UndefOr[js.Array[Double]], 
+/* beginMask */ js.UndefOr[Double], 
+/* endMask */ js.UndefOr[Double], 
+/* ellipsisMask */ js.UndefOr[Double], 
+/* newAxisMask */ js.UndefOr[Double], 
+/* shrinkAxisMask */ js.UndefOr[Double], 
+Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]
 
-inline def sub[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sub[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sub[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sub[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sub[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sub[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sub[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sub[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def subStrict[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("subStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Double,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  axis: scala.Unit,
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  axis: js.Array[scala.Double],
-  keepDims: scala.Boolean
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def sum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Unit, keepDims: scala.Boolean): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def sumOutType(`type`: DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataType]
 
-inline def sumOutType(`type`: typings.tensorflowTfjsCore.distTypesMod.DataType): typings.tensorflowTfjsCore.distTypesMod.DataType = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTypesMod.DataType]
+inline def tan[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def tan[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def tanh[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def tanh[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-
-inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: typings.tensorflowTfjsCore.distTypesMod.TensorLike): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: TensorLike): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  values: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
+  values: TensorLike,
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: TensorLike, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def tensor1d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike1D): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
-inline def tensor1d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike1D,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor1D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor1D]
+inline def tensor1d(values: TensorLike1D): Tensor1D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor1D]
+inline def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 
-inline def tensor2d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike2D): typings.tensorflowTfjsCore.distTensorMod.Tensor2D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
-inline def tensor2d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike2D,
-  shape: js.Tuple2[scala.Double, scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor2D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
-inline def tensor2d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike2D,
-  shape: js.Tuple2[scala.Double, scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor2D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
-inline def tensor2d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike2D,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor2D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]
+inline def tensor2d(values: TensorLike2D): Tensor2D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor2D]
+inline def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double]): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+inline def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double], dtype: DataType): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+inline def tensor2d(values: TensorLike2D, shape: Unit, dtype: DataType): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
 
-inline def tensor3d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike3D): typings.tensorflowTfjsCore.distTensorMod.Tensor3D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor3D]
-inline def tensor3d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike3D,
-  shape: js.Tuple3[scala.Double, scala.Double, scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor3D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor3D]
-inline def tensor3d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike3D,
-  shape: js.Tuple3[scala.Double, scala.Double, scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor3D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor3D]
-inline def tensor3d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike3D,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor3D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor3D]
+inline def tensor3d(values: TensorLike3D): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+inline def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double]): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+inline def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double], dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+inline def tensor3d(values: TensorLike3D, shape: Unit, dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
 
-inline def tensor4d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike4D): typings.tensorflowTfjsCore.distTensorMod.Tensor4D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor4D]
-inline def tensor4d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike4D,
-  shape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor4D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor4D]
-inline def tensor4d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike4D,
-  shape: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor4D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor4D]
-inline def tensor4d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike4D,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor4D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor4D]
+inline def tensor4d(values: TensorLike4D): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
+inline def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+inline def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+inline def tensor4d(values: TensorLike4D, shape: Unit, dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
 
-inline def tensor5d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike5D): typings.tensorflowTfjsCore.distTensorMod.Tensor5D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor5D]
-inline def tensor5d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike5D,
-  shape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor5D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor5D]
-inline def tensor5d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike5D,
-  shape: js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor5D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor5D]
-inline def tensor5d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike5D,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor5D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor5D]
+inline def tensor5d(values: TensorLike5D): Tensor5D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor5D]
+inline def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double]): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
+inline def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double], dtype: DataType): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
+inline def tensor5d(values: TensorLike5D, shape: Unit, dtype: DataType): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
 
-inline def tensor6d(values: typings.tensorflowTfjsCore.distTypesMod.TensorLike6D): typings.tensorflowTfjsCore.distTensorMod.Tensor6D = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor6D]
+inline def tensor6d(values: TensorLike6D): Tensor6D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor6D]
+inline def tensor6d(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
 inline def tensor6d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike6D,
-  shape: js.Tuple6[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
-): typings.tensorflowTfjsCore.distTensorMod.Tensor6D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor6D]
-inline def tensor6d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike6D,
-  shape: js.Tuple6[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor6D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor6D]
-inline def tensor6d(
-  values: typings.tensorflowTfjsCore.distTypesMod.TensorLike6D,
-  shape: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor6D = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor6D]
+  values: TensorLike6D,
+  shape: js.Tuple6[Double, Double, Double, Double, Double, Double],
+  dtype: DataType
+): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+inline def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
 
-inline def tidy[T /* <: typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer */](nameOrFn: java.lang.String): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def tidy[T /* <: typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer */](nameOrFn: java.lang.String, fn: typings.tensorflowTfjsCore.engineMod.ScopeFn[T]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def tidy[T /* <: typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer */](nameOrFn: typings.tensorflowTfjsCore.engineMod.ScopeFn[T]): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def tidy[T /* <: typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer */](
-  nameOrFn: typings.tensorflowTfjsCore.engineMod.ScopeFn[T],
-  fn: typings.tensorflowTfjsCore.engineMod.ScopeFn[T]
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def tidy[T /* <: TensorContainer */](nameOrFn: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def tidy[T /* <: TensorContainer */](nameOrFn: String, fn: ScopeFn[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def tidy[T /* <: TensorContainer */](nameOrFn: ScopeFn[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def tidy[T /* <: TensorContainer */](nameOrFn: ScopeFn[T], fn: ScopeFn[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def tile[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, reps: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("tile")(x.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def tile[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, reps: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(x.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def time(f: js.Function0[scala.Unit]): js.Promise[typings.tensorflowTfjsCore.engineMod.TimingInfo] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("time")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsCore.engineMod.TimingInfo]]
+inline def time(f: js.Function0[Unit]): js.Promise[TimingInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TimingInfo]]
 
-inline def topk[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): typings.tensorflowTfjsCore.anon.Indices[T] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.anon.Indices[T]]
-inline def topk[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, k: scala.Double): typings.tensorflowTfjsCore.anon.Indices[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.anon.Indices[T]]
-inline def topk[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, k: scala.Double, sorted: scala.Boolean): typings.tensorflowTfjsCore.anon.Indices[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.anon.Indices[T]]
-inline def topk[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, k: scala.Unit, sorted: scala.Boolean): typings.tensorflowTfjsCore.anon.Indices[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.anon.Indices[T]]
+inline def topk[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): Indices[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any]).asInstanceOf[Indices[T]]
+inline def topk[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, k: Double): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
+inline def topk[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, k: Double, sorted: Boolean): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
+inline def topk[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, k: Unit, sorted: Boolean): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
 
-inline def transpose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def transpose[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, perm: js.Array[scala.Double]): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transpose[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def transpose[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, perm: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transpose[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, perm: js.Array[Double], conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transpose[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, perm: Unit, conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Double,
+  stdDev: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Double,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Double,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Unit,
+  dtype: float32 | int32
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Unit,
+  dtype: float32 | int32,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Double,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: scala.Unit,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.float32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
-inline def truncatedNormal[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  mean: scala.Unit,
-  stdDev: scala.Unit,
-  dtype: typings.tensorflowTfjs.tensorflowTfjsStrings.int32,
-  seed: scala.Double
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  mean: Unit,
+  stdDev: Unit,
+  dtype: Unit,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def unique[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): typings.tensorflowTfjsCore.anon.Values[T] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.anon.Values[T]]
-inline def unique[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike, axis: scala.Double): typings.tensorflowTfjsCore.anon.Values[T] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.anon.Values[T]]
+inline def unique[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): Values[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any]).asInstanceOf[Values[T]]
+inline def unique[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, axis: Double): Values[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Values[T]]
 
-inline def unregisterGradient(kernelName: java.lang.String): scala.Unit = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unregisterGradient(kernelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def unregisterKernel(kernelName: java.lang.String, backendName: java.lang.String): scala.Unit = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def unregisterKernel(kernelName: String, backendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def unsortedSegmentSum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  segmentIds: typings.tensorflowTfjsCore.distTensorMod.Tensor1D,
-  numSegments: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def unsortedSegmentSum[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  segmentIds: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  numSegments: scala.Double
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def unsortedSegmentSum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, segmentIds: Tensor1D, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def unsortedSegmentSum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, segmentIds: TensorLike, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def unstack: js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double], 
-js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("unstack").asInstanceOf[js.Function2[
-/* x */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-/* axis */ js.UndefOr[scala.Double], 
-js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]]]
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double], 
+js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("unstack").asInstanceOf[js.Function2[
+/* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* axis */ js.UndefOr[Double], 
+js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]]]
 
-inline def upcastType(
-  typeA: typings.tensorflowTfjsCore.distTypesMod.DataType,
-  typeB: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTypesMod.DataType = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("upcastType")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTypesMod.DataType]
+inline def upcastType(typeA: DataType, typeB: DataType): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("upcastType")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[DataType]
+
+inline def upperBound(
+  sortedSequence: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  values: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def upperBound(sortedSequence: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], values: TensorLike): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def upperBound(sortedSequence: TensorLike, values: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+inline def upperBound(sortedSequence: TensorLike, values: TensorLike): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
 
 /**
   * Like `tf.grad`, but also returns the value of `f()`. Useful when `f()`
@@ -4063,7 +3887,7 @@ inline def upcastType(
   *
   * @doc {heading: 'Training', subheading: 'Gradients'}
   */
-inline def valueAndGrad[I /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, O /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], typings.tensorflowTfjsCore.anon.Grad[O, I]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ I, /* dy */ js.UndefOr[O], typings.tensorflowTfjsCore.anon.Grad[O, I]]]
+inline def valueAndGrad[I /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, O /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]]]
 
 /**
   * Like `tf.grads`, but returns also the value of `f()`. Useful when `f()`
@@ -4096,59 +3920,22 @@ inline def valueAndGrad[I /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[
   *
   * @doc {heading: 'Training', subheading: 'Gradients'}
   */
-inline def valueAndGrads[O /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  f: js.Function1[
-  /* repeated */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-  O
-]
-): js.Function2[
-/* args */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-], 
+inline def valueAndGrads[O /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: js.Function1[/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], O]): js.Function2[
+/* args */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
 /* dy */ js.UndefOr[O], 
-typings.tensorflowTfjsCore.anon.Grads[O]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* args */ js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-], 
+Grads[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+/* args */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
 /* dy */ js.UndefOr[O], 
-typings.tensorflowTfjsCore.anon.Grads[O]]]
+Grads[O]]]
 
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R]): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R], trainable: scala.Boolean): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Boolean,
-  name: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Boolean,
-  name: java.lang.String,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Boolean,
-  name: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Unit,
-  name: java.lang.String
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Unit,
-  name: java.lang.String,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
-inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-  initialValue: typings.tensorflowTfjsCore.distTensorMod.Tensor[R],
-  trainable: scala.Unit,
-  name: scala.Unit,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Variable[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R]): Variable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Boolean): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Boolean, name: String): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Boolean, name: String, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Boolean, name: Unit, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Unit, name: String): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Unit, name: String, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](initialValue: Tensor[R], trainable: Unit, name: Unit, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
 
 /**
   * Computes and returns the gradient of f(x) with respect to the list of
@@ -4180,43 +3967,34 @@ inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   *
   * @doc {heading: 'Training', subheading: 'Gradients'}
   */
-inline def variableGrads(f: js.Function0[typings.tensorflowTfjsCore.distTensorMod.Scalar]): typings.tensorflowTfjsCore.anon.Value = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.anon.Value]
-inline def variableGrads(
-  f: js.Function0[typings.tensorflowTfjsCore.distTensorMod.Scalar],
-  varList: js.Array[
-  typings.tensorflowTfjsCore.distTensorMod.Variable[typings.tensorflowTfjsCore.distTypesMod.Rank]
-]
-): typings.tensorflowTfjsCore.anon.Value = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.anon.Value]
+inline def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
+inline def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[typings.tensorflowTfjsCore.distTypesMod.Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
 
-inline def versionConverter: /* "2.7.0" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "2.7.0" */ java.lang.String]
+inline def versionConverter: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "3.20.0" */ String]
 
-inline def versionCore: /* "2.7.0" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "2.7.0" */ java.lang.String]
+inline def versionCore: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "3.20.0" */ String]
 
-inline def versionLayers: /* "2.7.0" */ java.lang.String = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "2.7.0" */ java.lang.String]
+inline def versionLayers: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "3.20.0" */ String]
 
-inline def where[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  condition: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def where[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
-  condition: typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  a: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike,
-  b: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike
-): T = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def where[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
+  condition: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  a: T | TensorLike,
+  b: T | TensorLike
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def where[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](condition: TensorLike, a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def whereAsync: js.Function1[
-/* condition */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-js.Promise[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].selectDynamic("whereAsync").asInstanceOf[js.Function1[
-/* condition */ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | typings.tensorflowTfjsCore.distTypesMod.TensorLike, 
-js.Promise[typings.tensorflowTfjsCore.distTensorMod.Tensor2D]]]
+/* condition */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+js.Promise[Tensor2D]] = ^.asInstanceOf[js.Dynamic].selectDynamic("whereAsync").asInstanceOf[js.Function1[
+/* condition */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+js.Promise[Tensor2D]]]
 
 inline def zeros[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
 inline def zeros[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-  dtype: typings.tensorflowTfjsCore.distTypesMod.DataType
-): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = (typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[R]]
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def zerosLike[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | typings.tensorflowTfjsCore.distTypesMod.TensorLike): T = typings.tensorflowTfjs.indexWithPolyfillsMod.^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def zerosLike[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]

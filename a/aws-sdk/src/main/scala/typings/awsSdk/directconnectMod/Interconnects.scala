@@ -24,6 +24,6 @@ object Interconnects {
     
     inline def setInterconnectsUndefined: Self = StObject.set(x, "interconnects", js.undefined)
     
-    inline def setInterconnectsVarargs(value: Interconnect*): Self = StObject.set(x, "interconnects", js.Array(value :_*))
+    inline def setInterconnectsVarargs(value: Interconnect*): Self = StObject.set(x, "interconnects", js.Array(value*))
   }
 }

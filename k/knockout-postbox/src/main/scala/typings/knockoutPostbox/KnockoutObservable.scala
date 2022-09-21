@@ -27,13 +27,9 @@ trait KnockoutObservable[T] extends StObject {
   def subscribeTo(
     topic: String,
     useLastPublishedValueToInitialize: Boolean,
-    transform: js.Function1[/* val */ js.Any, T]
+    transform: js.Function1[/* val */ Any, T]
   ): KnockoutObservable[T] = js.native
-  def subscribeTo(
-    topic: String,
-    useLastPublishedValueToInitialize: Unit,
-    transform: js.Function1[/* val */ js.Any, T]
-  ): KnockoutObservable[T] = js.native
+  def subscribeTo(topic: String, useLastPublishedValueToInitialize: Unit, transform: js.Function1[/* val */ Any, T]): KnockoutObservable[T] = js.native
   
   def syncWith(topic: String): KnockoutObservable[T] = js.native
   def syncWith(topic: String, initializeWithLatestValue: Boolean): KnockoutObservable[T] = js.native

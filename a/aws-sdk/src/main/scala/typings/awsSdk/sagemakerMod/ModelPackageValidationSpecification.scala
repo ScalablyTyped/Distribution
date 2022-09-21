@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModelPackageValidationSpecification extends StObject {
   
   /**
-    * An array of ModelPackageValidationProfile objects, each of which specifies a batch transform job that Amazon SageMaker runs to validate your model package.
+    * An array of ModelPackageValidationProfile objects, each of which specifies a batch transform job that SageMaker runs to validate your model package.
     */
   var ValidationProfiles: ModelPackageValidationProfiles
   
@@ -27,7 +27,7 @@ object ModelPackageValidationSpecification {
     
     inline def setValidationProfiles(value: ModelPackageValidationProfiles): Self = StObject.set(x, "ValidationProfiles", value.asInstanceOf[js.Any])
     
-    inline def setValidationProfilesVarargs(value: ModelPackageValidationProfile*): Self = StObject.set(x, "ValidationProfiles", js.Array(value :_*))
+    inline def setValidationProfilesVarargs(value: ModelPackageValidationProfile*): Self = StObject.set(x, "ValidationProfiles", js.Array(value*))
     
     inline def setValidationRole(value: RoleArn): Self = StObject.set(x, "ValidationRole", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ trait GetCardinalityRequest extends StObject {
   var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
-    * The search query.
+    * The search query string.
     */
   var queryString: QueryString
   

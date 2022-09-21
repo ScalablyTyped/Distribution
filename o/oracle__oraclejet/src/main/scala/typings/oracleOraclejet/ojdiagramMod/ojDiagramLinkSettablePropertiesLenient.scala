@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLinkSettableProperties> */
 trait ojDiagramLinkSettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -25,7 +25,7 @@ trait ojDiagramLinkSettablePropertiesLenient
   
   var endConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.undefined
   
-  var endNode: js.UndefOr[js.Any] = js.undefined
+  var endNode: js.UndefOr[Any] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ trait ojDiagramLinkSettablePropertiesLenient
   
   var startConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.undefined
   
-  var startNode: js.UndefOr[js.Any] = js.undefined
+  var startNode: js.UndefOr[Any] = js.undefined
   
   var svgClassName: js.UndefOr[String] = js.undefined
   
@@ -58,7 +58,7 @@ object ojDiagramLinkSettablePropertiesLenient {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object ojDiagramLinkSettablePropertiesLenient {
     
     inline def setEndConnectorTypeUndefined: Self = StObject.set(x, "endConnectorType", js.undefined)
     
-    inline def setEndNode(value: js.Any): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
+    inline def setEndNode(value: Any): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
     
     inline def setEndNodeUndefined: Self = StObject.set(x, "endNode", js.undefined)
     
@@ -94,7 +94,7 @@ object ojDiagramLinkSettablePropertiesLenient {
     
     inline def setStartConnectorTypeUndefined: Self = StObject.set(x, "startConnectorType", js.undefined)
     
-    inline def setStartNode(value: js.Any): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
+    inline def setStartNode(value: Any): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
     
     inline def setStartNodeUndefined: Self = StObject.set(x, "startNode", js.undefined)
     

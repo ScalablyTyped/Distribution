@@ -11,7 +11,7 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends StObj
   var locationsPerGameObjectType: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
-    */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -33,7 +33,7 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse {
     inline def setLocationsPerGameObjectType(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
-      */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[Any]
     ): Self = StObject.set(x, "locationsPerGameObjectType", value.asInstanceOf[js.Any])
     
     inline def setLocationsPerGameObjectTypeUndefined: Self = StObject.set(x, "locationsPerGameObjectType", js.undefined)

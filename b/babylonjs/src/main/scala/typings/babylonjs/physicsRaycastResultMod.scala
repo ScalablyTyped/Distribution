@@ -9,19 +9,19 @@ object physicsRaycastResultMod {
   
   @JSImport("babylonjs/Physics/physicsRaycastResult", "PhysicsRaycastResult")
   @js.native
-  class PhysicsRaycastResult () extends StObject {
+  open class PhysicsRaycastResult () extends StObject {
     
-    /* private */ var _hasHit: js.Any = js.native
+    /* private */ var _hasHit: Any = js.native
     
-    /* private */ var _hitDistance: js.Any = js.native
+    /* private */ var _hitDistance: Any = js.native
     
-    /* private */ var _hitNormalWorld: js.Any = js.native
+    /* private */ var _hitNormalWorld: Any = js.native
     
-    /* private */ var _hitPointWorld: js.Any = js.native
+    /* private */ var _hitPointWorld: Any = js.native
     
-    /* private */ var _rayFromWorld: js.Any = js.native
+    /* private */ var _rayFromWorld: Any = js.native
     
-    /* private */ var _rayToWorld: js.Any = js.native
+    /* private */ var _rayToWorld: Any = js.native
     
     /**
       * Calculates the distance manually

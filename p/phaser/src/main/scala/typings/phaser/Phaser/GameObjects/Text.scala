@@ -19,7 +19,6 @@ import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
 import typings.phaser.Phaser.Types.GameObjects.Text.TextPadding
 import typings.phaser.TextStyleWordWrapCallback
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
@@ -152,7 +151,7 @@ trait Text
     * Specify a padding value which is added to the line width and height when calculating the Text size.
     * Allows you to add extra spacing if the browser is unable to accurately determine the true font dimensions.
     */
-  var padding: js.Object = js.native
+  var padding: TextPadding = js.native
   
   /**
     * Internal destroy handler, called as part of the destroy process.
@@ -204,7 +203,7 @@ trait Text
     * @param color The text fill style. Can be any valid CanvasRenderingContext `fillStyle` value.
     */
   def setFill(color: String): this.type = js.native
-  def setFill(color: js.Any): this.type = js.native
+  def setFill(color: Any): this.type = js.native
   
   /**
     * Set a fixed width and height for the text.
@@ -286,7 +285,7 @@ trait Text
     * @param max The maximum number of lines to draw. Default 0.
     */
   def setMaxLines(): this.type = js.native
-  def setMaxLines(max: integer): this.type = js.native
+  def setMaxLines(max: Double): this.type = js.native
   
   /**
     * Set the text padding.
@@ -299,8 +298,22 @@ trait Text
     * @param right The right padding value.
     * @param bottom The bottom padding value.
     */
+  def setPadding(left: Double): this.type = js.native
+  def setPadding(left: Double, top: Double): this.type = js.native
+  def setPadding(left: Double, top: Double, right: Double): this.type = js.native
   def setPadding(left: Double, top: Double, right: Double, bottom: Double): this.type = js.native
+  def setPadding(left: Double, top: Double, right: Unit, bottom: Double): this.type = js.native
+  def setPadding(left: Double, top: Unit, right: Double): this.type = js.native
+  def setPadding(left: Double, top: Unit, right: Double, bottom: Double): this.type = js.native
+  def setPadding(left: Double, top: Unit, right: Unit, bottom: Double): this.type = js.native
+  def setPadding(left: TextPadding): this.type = js.native
+  def setPadding(left: TextPadding, top: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Double, right: Double): this.type = js.native
   def setPadding(left: TextPadding, top: Double, right: Double, bottom: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Double, right: Unit, bottom: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Unit, right: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Unit, right: Double, bottom: Double): this.type = js.native
+  def setPadding(left: TextPadding, top: Unit, right: Unit, bottom: Double): this.type = js.native
   
   /**
     * Set the resolution used by this Text object.

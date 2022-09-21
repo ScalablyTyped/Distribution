@@ -35,7 +35,7 @@ object IParserResult {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setRoot(value: Root): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object IParserResult {
     
     inline def setWeakImportsUndefined: Self = StObject.set(x, "weakImports", js.undefined)
     
-    inline def setWeakImportsVarargs(value: String*): Self = StObject.set(x, "weakImports", js.Array(value :_*))
+    inline def setWeakImportsVarargs(value: String*): Self = StObject.set(x, "weakImports", js.Array(value*))
     
     inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     

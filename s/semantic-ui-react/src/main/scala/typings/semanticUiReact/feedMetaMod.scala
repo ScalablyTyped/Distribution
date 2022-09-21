@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.feedLikeMod.FeedLikeProps
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -18,12 +18,12 @@ object feedMetaMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedMeta", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FeedMetaProps] = js.native
+  val default: FC[FeedMetaProps] = js.native
   
   trait FeedMetaProps
     extends StObject
        with StrictFeedMetaProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FeedMetaProps {
     
     inline def apply(): FeedMetaProps = {
@@ -35,7 +35,7 @@ object feedMetaMod extends Shortcut {
   trait StrictFeedMetaProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -58,7 +58,7 @@ object feedMetaMod extends Shortcut {
     
     extension [Self <: StrictFeedMetaProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -84,8 +84,8 @@ object feedMetaMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FeedMetaProps]
+  type _To = FC[FeedMetaProps]
   
   /* This means you don't have to write `default`, but can instead just say `feedMetaMod.foo` */
-  override def _to: StatelessComponent[FeedMetaProps] = default
+  override def _to: FC[FeedMetaProps] = default
 }

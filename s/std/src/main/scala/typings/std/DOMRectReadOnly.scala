@@ -6,22 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMRectReadOnly extends StObject {
   
+  /* standard dom */
   val bottom: Double
   
+  /* standard dom */
   val height: Double
   
+  /* standard dom */
   val left: Double
   
+  /* standard dom */
   val right: Double
   
-  def toJSON(): js.Any
+  /* standard dom */
+  def toJSON(): Any
   
+  /* standard dom */
   val top: Double
   
+  /* standard dom */
   val width: Double
   
+  /* standard dom */
   val x: Double
   
+  /* standard dom */
   val y: Double
 }
 object DOMRectReadOnly {
@@ -31,7 +40,7 @@ object DOMRectReadOnly {
     height: Double,
     left: Double,
     right: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     top: Double,
     width: Double,
     x: Double,
@@ -51,7 +60,7 @@ object DOMRectReadOnly {
     
     inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

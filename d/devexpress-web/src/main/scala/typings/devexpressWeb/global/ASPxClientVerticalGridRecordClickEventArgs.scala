@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridRecordClickEventArgs")
 @js.native
-class ASPxClientVerticalGridRecordClickEventArgs protected ()
+open class ASPxClientVerticalGridRecordClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridRecordClickEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientVerticalGridRecordClickEventArgs protected ()
     * @param visibleIndex A zero-based integer index that identifies the clicked record.
     * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientVerticalGridRecordClickEventArgs.htmlEvent property.
     */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+  def this(visibleIndex: Double, htmlEvent: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientVerticalGridRecordClickEventArgs protected ()
     * Provides access to the parameters associated with the ASPxClientVerticalGrid.RecordClick event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed record's visible index.

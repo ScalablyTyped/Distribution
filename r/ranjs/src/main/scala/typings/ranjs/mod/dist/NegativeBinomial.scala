@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.NegativeBinomial")
 @js.native
-class NegativeBinomial ()
+open class NegativeBinomial ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.NegativeBinomial] {
   def this(r: Double) = this()

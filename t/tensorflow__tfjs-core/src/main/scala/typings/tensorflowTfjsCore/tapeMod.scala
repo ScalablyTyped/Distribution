@@ -61,13 +61,13 @@ object tapeMod {
       
       inline def setOutputs(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setSaved(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
       
       inline def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
       
-      inline def setSavedVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "saved", js.Array(value :_*))
+      inline def setSavedVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "saved", js.Array(value*))
     }
   }
 }

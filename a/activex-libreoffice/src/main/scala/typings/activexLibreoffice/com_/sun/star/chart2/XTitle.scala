@@ -24,7 +24,7 @@ object XTitle {
     Text: SafeArray[XFormattedString],
     acquire: () => Unit,
     getText: () => SafeArray[XFormattedString],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setText: SeqEquiv[XFormattedString] => Unit
   ): XTitle = {

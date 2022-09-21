@@ -1,10 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import typings.react.mod.CSSProperties
+import typings.react.mod.HTMLProps
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type lineTagPropsFunction = js.Function1[
-/* lineNumber */ scala.Double, 
-typings.react.mod.HTMLProps[typings.std.HTMLElement]]
+type lineNumberStyleFunction = js.Function1[/* lineNumber */ Double, CSSProperties]
+
+type lineTagPropsFunction = js.Function1[/* lineNumber */ Double, HTMLProps[HTMLElement]]

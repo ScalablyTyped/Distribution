@@ -15,7 +15,7 @@ trait Research extends StObject {
   
   def IsResearchService(ServiceID: String): Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /**
     * @param string [QueryString='']
@@ -23,72 +23,72 @@ trait Research extends StObject {
     * @param boolean [UseSelection=false]
     * @param boolean [LaunchQuery=true]
     */
-  def Query(ServiceID: String): js.Any = js.native
-  def Query(ServiceID: String, QueryString: String): js.Any = js.native
-  def Query(ServiceID: String, QueryString: String, QueryLanguage: Unit, UseSelection: Boolean): js.Any = js.native
+  def Query(ServiceID: String): Any = js.native
+  def Query(ServiceID: String, QueryString: String): Any = js.native
+  def Query(ServiceID: String, QueryString: String, QueryLanguage: Unit, UseSelection: Boolean): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
     QueryLanguage: Unit,
     UseSelection: Boolean,
     LaunchQuery: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
     QueryLanguage: Unit,
     UseSelection: Unit,
     LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID): js.Any = js.native
-  def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID, UseSelection: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID): Any = js.native
+  def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID, UseSelection: Boolean): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
     QueryLanguage: WdLanguageID,
     UseSelection: Boolean,
     LaunchQuery: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
     QueryLanguage: WdLanguageID,
     UseSelection: Unit,
     LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: Unit, UseSelection: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: Unit, UseSelection: Boolean): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: Unit,
     QueryLanguage: Unit,
     UseSelection: Boolean,
     LaunchQuery: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: Unit,
     QueryLanguage: Unit,
     UseSelection: Unit,
     LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID): js.Any = js.native
-  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID, UseSelection: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID): Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID, UseSelection: Boolean): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: Unit,
     QueryLanguage: WdLanguageID,
     UseSelection: Boolean,
     LaunchQuery: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Query(
     ServiceID: String,
     QueryString: Unit,
     QueryLanguage: WdLanguageID,
     UseSelection: Unit,
     LaunchQuery: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def SetLanguagePair(LanguageFrom: WdLanguageID, LanguageTo: WdLanguageID): js.Any = js.native
+  def SetLanguagePair(LanguageFrom: WdLanguageID, LanguageTo: WdLanguageID): Any = js.native
   
   /* private */ @JSName("Word.Research_typekey")
   var WordDotResearch_typekey: Research = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PictureFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Brightness: Double
   
@@ -33,7 +33,7 @@ trait PictureFormat extends StObject {
   /* private */ @JSName("Office.PictureFormat_typekey")
   var OfficeDotPictureFormat_typekey: PictureFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   var TransparencyColor: Double
   
@@ -42,7 +42,7 @@ trait PictureFormat extends StObject {
 object PictureFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Brightness: Double,
     ColorType: MsoPictureColorType,
     Contrast: Double,
@@ -55,7 +55,7 @@ object PictureFormat {
     IncrementBrightness: Double => Unit,
     IncrementContrast: Double => Unit,
     OfficeDotPictureFormat_typekey: PictureFormat,
-    Parent: js.Any,
+    Parent: Any,
     TransparencyColor: Double,
     TransparentBackground: MsoTriState
   ): PictureFormat = {
@@ -66,7 +66,7 @@ object PictureFormat {
   
   extension [Self <: PictureFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object PictureFormat {
     
     inline def setOfficeDotPictureFormat_typekey(value: PictureFormat): Self = StObject.set(x, "Office.PictureFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTransparencyColor(value: Double): Self = StObject.set(x, "TransparencyColor", value.asInstanceOf[js.Any])
     

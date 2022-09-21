@@ -1,6 +1,5 @@
 package typings.useSidecar
 
-import typings.std.Error
 import typings.useSidecar.anon.PartialIConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,18 +19,18 @@ object configMod {
   
   trait IConfig extends StObject {
     
-    def onError(e: Error): Unit
+    def onError(e: js.Error): Unit
   }
   object IConfig {
     
-    inline def apply(onError: Error => Unit): IConfig = {
+    inline def apply(onError: js.Error => Unit): IConfig = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError))
       __obj.asInstanceOf[IConfig]
     }
     
     extension [Self <: IConfig](x: Self) {
       
-      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     }
   }
 }

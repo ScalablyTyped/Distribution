@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "has-flag" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "has-flag" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

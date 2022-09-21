@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("muicss/lib/react/appbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DivProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DivProps, js.Object, Any]
   
-  type Appbar = Component[DivProps, js.Object, js.Any]
+  type Appbar = Component[DivProps, js.Object, Any]
 }

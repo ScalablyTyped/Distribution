@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "Parser")
 @js.native
-class Parser () extends StObject {
+open class Parser () extends StObject {
   
   /**
     * Parses a string containing a javascript expression and returns a data-binding specialized AST. Memoized.

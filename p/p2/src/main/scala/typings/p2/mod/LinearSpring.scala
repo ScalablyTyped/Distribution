@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "LinearSpring")
 @js.native
-class LinearSpring protected () extends Spring {
+open class LinearSpring protected () extends Spring {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, options: LinearSpringOptions) = this()
   

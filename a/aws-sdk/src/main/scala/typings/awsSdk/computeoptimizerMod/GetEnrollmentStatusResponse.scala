@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEnrollmentStatusResponse extends StObject {
   
   /**
-    * Confirms the enrollment status of member accounts within the organization, if the account is a master account of an organization.
+    * The Unix epoch timestamp, in seconds, of when the account enrollment status was last updated.
+    */
+  var lastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Confirms the enrollment status of member accounts of the organization, if the account is a management account of an organization.
     */
   var memberAccountsEnrolled: js.UndefOr[MemberAccountsEnrolled] = js.undefined
+  
+  /**
+    * The count of organization member accounts that are opted in to the service, if your account is an organization management account.
+    */
+  var numberOfMemberAccountsOptedIn: js.UndefOr[NumberOfMemberAccountsOptedIn] = js.undefined
   
   /**
     * The enrollment status of the account.
@@ -30,9 +40,17 @@ object GetEnrollmentStatusResponse {
   
   extension [Self <: GetEnrollmentStatusResponse](x: Self) {
     
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
+    
     inline def setMemberAccountsEnrolled(value: MemberAccountsEnrolled): Self = StObject.set(x, "memberAccountsEnrolled", value.asInstanceOf[js.Any])
     
     inline def setMemberAccountsEnrolledUndefined: Self = StObject.set(x, "memberAccountsEnrolled", js.undefined)
+    
+    inline def setNumberOfMemberAccountsOptedIn(value: NumberOfMemberAccountsOptedIn): Self = StObject.set(x, "numberOfMemberAccountsOptedIn", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfMemberAccountsOptedInUndefined: Self = StObject.set(x, "numberOfMemberAccountsOptedIn", js.undefined)
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

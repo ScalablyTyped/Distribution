@@ -10,10 +10,10 @@ object ringVolumeMod {
   
   @JSImport("material-ui/svg-icons/communication/ring-volume", JSImport.Default)
   @js.native
-  class default () extends CommunicationRingVolume
+  open class default () extends CommunicationRingVolume
   
   @JSImport("material-ui/svg-icons/communication/ring-volume", "CommunicationRingVolume")
   @js.native
-  class CommunicationRingVolume ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationRingVolume ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

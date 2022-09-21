@@ -1,14 +1,13 @@
 package typings.seleniumStandalone
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
+import typings.node.eventsMod.EventEmitterOptions
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.URL_
 import typings.seleniumStandalone.anon.Dictx
 import typings.seleniumStandalone.seleniumStandaloneStrings.ia32
 import typings.seleniumStandalone.seleniumStandaloneStrings.x64
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +18,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def install(cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def install(
-    optsCb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit],
-    cb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def install(optsCb: InstallOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def install(opts: InstallOpts, cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * Instances of the `ChildProcess` represent spawned child processes.
+    *
+    * Instances of `ChildProcess` are not intended to be created directly. Rather,
+    * use the {@link spawn}, {@link exec},{@link execFile}, or {@link fork} methods to create
+    * instances of `ChildProcess`.
+    * @since v2.2.0
+    */
+  @JSImport("selenium-standalone", "ChildProcess")
+  @js.native
+  open class ChildProcess ()
+    extends typings.node.childProcessMod.ChildProcess {
+    def this(options: EventEmitterOptions) = this()
+  }
   
-  inline def start(cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def start(
-    optsCb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit],
-    cb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(optsCb: StartOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def start(opts: StartOpts, cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[js.Promise[Unit]]
+  inline def install(opts: InstallOpts): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def start(): js.Promise[typings.node.childProcessMod.ChildProcess] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[typings.node.childProcessMod.ChildProcess]]
+  inline def start(opts: StartOpts): js.Promise[typings.node.childProcessMod.ChildProcess] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.childProcessMod.ChildProcess]]
   
   trait DriverOptions extends StObject {
     
@@ -68,7 +72,7 @@ object mod {
   
   trait FsPaths
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var chrome: js.UndefOr[Dictx] = js.undefined
     
@@ -117,8 +121,6 @@ object mod {
     
     var baseURL: js.UndefOr[String] = js.undefined
     
-    var cb: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-    
     var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.undefined
     
     var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
@@ -148,10 +150,6 @@ object mod {
       
       inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      inline def setCb(value: /* error */ Error => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
-      
-      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
-      
       inline def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
       
       inline def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
@@ -178,8 +176,6 @@ object mod {
     
     var basePath: js.UndefOr[String] = js.undefined
     
-    var cb: js.UndefOr[js.Function2[/* error */ Error, /* child */ ChildProcess, Unit]] = js.undefined
-    
     var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.undefined
     
     var javaArgs: js.UndefOr[js.Array[String]] = js.undefined
@@ -189,8 +185,6 @@ object mod {
     var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.undefined
     
     var seleniumArgs: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var spawnCb: js.UndefOr[js.Function1[/* selenium */ js.UndefOr[ChildProcess], Unit]] = js.undefined
     
     var spawnOptions: js.UndefOr[SpawnOptions] = js.undefined
     
@@ -209,10 +203,6 @@ object mod {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setCb(value: (/* error */ Error, /* child */ ChildProcess) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
-      
-      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
-      
       inline def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
       
       inline def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
@@ -221,7 +211,7 @@ object mod {
       
       inline def setJavaArgsUndefined: Self = StObject.set(x, "javaArgs", js.undefined)
       
-      inline def setJavaArgsVarargs(value: String*): Self = StObject.set(x, "javaArgs", js.Array(value :_*))
+      inline def setJavaArgsVarargs(value: String*): Self = StObject.set(x, "javaArgs", js.Array(value*))
       
       inline def setJavaPath(value: String): Self = StObject.set(x, "javaPath", value.asInstanceOf[js.Any])
       
@@ -235,11 +225,7 @@ object mod {
       
       inline def setSeleniumArgsUndefined: Self = StObject.set(x, "seleniumArgs", js.undefined)
       
-      inline def setSeleniumArgsVarargs(value: String*): Self = StObject.set(x, "seleniumArgs", js.Array(value :_*))
-      
-      inline def setSpawnCb(value: /* selenium */ js.UndefOr[ChildProcess] => Unit): Self = StObject.set(x, "spawnCb", js.Any.fromFunction1(value))
-      
-      inline def setSpawnCbUndefined: Self = StObject.set(x, "spawnCb", js.undefined)
+      inline def setSeleniumArgsVarargs(value: String*): Self = StObject.set(x, "seleniumArgs", js.Array(value*))
       
       inline def setSpawnOptions(value: SpawnOptions): Self = StObject.set(x, "spawnOptions", value.asInstanceOf[js.Any])
       

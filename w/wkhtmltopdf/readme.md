@@ -10,10 +10,10 @@ A wrapper for the wkhtmltopdf HTML to PDF converter using WebKit
 | ------------------ | :-------------: |
 | Full name          | wkhtmltopdf |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 1187279 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 154286.0 |
+| # stars            | 577.0 |
 
 ## Links
 - [Homepage](https://github.com/devongovett/node-wkhtmltopdf#readme)

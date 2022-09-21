@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.CommandButton")
 @js.native
-/* private */ class CommandButton ()
+/* private */ open class CommandButton ()
   extends StObject
      with typings.activexAccess.Access.CommandButton

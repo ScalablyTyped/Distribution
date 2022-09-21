@@ -9,10 +9,10 @@ Locutus other languages' standard libraries to JavaScript for fun and educationa
 | ------------------ | :-------------: |
 | Full name          | locutus |
 | Keywords           | php, golang, c, ruby, python, js, locutus |
-| # releases         | 5 |
-| # dependents       | 82 |
-| # downloads        | 6400365 |
-| # stars            | 5 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1214921.6666666667 |
+| # stars            | 3641.0 |
 
 ## Links
 - [Homepage](https://locutus.io)

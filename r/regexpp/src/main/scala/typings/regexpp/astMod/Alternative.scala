@@ -35,7 +35,7 @@ object Alternative {
     
     inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setParent(value: Pattern | Group | CapturingGroup | LookaroundAssertion): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

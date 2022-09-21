@@ -15,7 +15,7 @@ trait PortalUserAddItemParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem)
     */
-  var data: js.UndefOr[String | js.Any] = js.undefined
+  var data: js.UndefOr[String | Any] = js.undefined
   
   /**
     * The portal folder in which to store the item.
@@ -45,7 +45,7 @@ object PortalUserAddItemParams {
   
   extension [Self <: PortalUserAddItemParams](x: Self) {
     
-    inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

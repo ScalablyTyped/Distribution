@@ -14,7 +14,7 @@ object localeProviderMod {
   
   @JSImport("antd-mobile-rn/lib/locale-provider/locale-provider", JSImport.Default)
   @js.native
-  class default () extends LocaleProvider
+  open class default () extends LocaleProvider
   /* static members */
   object default {
     
@@ -34,8 +34,7 @@ object localeProviderMod {
   }
   
   @js.native
-  trait LocaleProvider
-    extends Component[LocaleProviderProps, js.Any, js.Any] {
+  trait LocaleProvider extends Component[LocaleProviderProps, Any, Any] {
     
     def getChildContext(): AntLocaleDatePickerView = js.native
   }

@@ -12,27 +12,27 @@ trait ComputeEnvironmentDetail extends StObject {
   var computeEnvironmentArn: String
   
   /**
-    * The name of the compute environment.
+    * The name of the compute environment. It can be up to 128 letters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (_).
     */
   var computeEnvironmentName: String
   
   /**
-    * The compute resources defined for the compute environment.
+    * The compute resources defined for the compute environment. For more information, see Compute environments in the Batch User Guide.
     */
   var computeResources: js.UndefOr[ComputeResource] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */
-  var ecsClusterArn: String
+  var ecsClusterArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The service role associated with the compute environment that allows AWS Batch to make calls to AWS API operations on your behalf.
+    * The service role associated with the compute environment that allows Batch to make calls to Amazon Web Services API operations on your behalf. For more information, see Batch service IAM role in the Batch User Guide.
     */
   var serviceRole: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the compute environment. The valid values are ENABLED or DISABLED. If the state is ENABLED, then the AWS Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the AWS Batch scheduler does not attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state do not scale out. However, they scale in to minvCpus value after instances become idle.
+    * The state of the compute environment. The valid values are ENABLED or DISABLED. If the state is ENABLED, then the Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the Batch scheduler doesn't attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state don't scale out. However, they scale in to minvCpus value after instances become idle.
     */
   var state: js.UndefOr[CEState] = js.undefined
   
@@ -52,14 +52,24 @@ trait ComputeEnvironmentDetail extends StObject {
   var tags: js.UndefOr[TagrisTagsMap] = js.undefined
   
   /**
-    * The type of the compute environment.
+    * The type of the compute environment: MANAGED or UNMANAGED. For more information, see Compute environments in the Batch User Guide.
     */
   var `type`: js.UndefOr[CEType] = js.undefined
+  
+  /**
+    * The maximum number of VCPUs expected to be used for an unmanaged compute environment.
+    */
+  var unmanagedvCpus: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * Specifies the infrastructure update policy for the compute environment. For more information about infrastructure updates, see Updating compute environments in the Batch User Guide.
+    */
+  var updatePolicy: js.UndefOr[UpdatePolicy] = js.undefined
 }
 object ComputeEnvironmentDetail {
   
-  inline def apply(computeEnvironmentArn: String, computeEnvironmentName: String, ecsClusterArn: String): ComputeEnvironmentDetail = {
-    val __obj = js.Dynamic.literal(computeEnvironmentArn = computeEnvironmentArn.asInstanceOf[js.Any], computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], ecsClusterArn = ecsClusterArn.asInstanceOf[js.Any])
+  inline def apply(computeEnvironmentArn: String, computeEnvironmentName: String): ComputeEnvironmentDetail = {
+    val __obj = js.Dynamic.literal(computeEnvironmentArn = computeEnvironmentArn.asInstanceOf[js.Any], computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentDetail]
   }
   
@@ -74,6 +84,8 @@ object ComputeEnvironmentDetail {
     inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
     inline def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
+    
+    inline def setEcsClusterArnUndefined: Self = StObject.set(x, "ecsClusterArn", js.undefined)
     
     inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
@@ -98,5 +110,13 @@ object ComputeEnvironmentDetail {
     inline def setType(value: CEType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUnmanagedvCpus(value: Integer): Self = StObject.set(x, "unmanagedvCpus", value.asInstanceOf[js.Any])
+    
+    inline def setUnmanagedvCpusUndefined: Self = StObject.set(x, "unmanagedvCpus", js.undefined)
+    
+    inline def setUpdatePolicy(value: UpdatePolicy): Self = StObject.set(x, "updatePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatePolicyUndefined: Self = StObject.set(x, "updatePolicy", js.undefined)
   }
 }

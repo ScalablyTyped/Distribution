@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IPromiseConfig extends StObject {
   
-  def all(iterable: js.Any): XPromise[js.Any] = js.native
+  def all(iterable: Any): XPromise[Any] = js.native
   
-  def create(resolve: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): XPromise[js.Any] = js.native
+  def create(resolve: js.Function1[/* value */ js.UndefOr[Any], Unit]): XPromise[Any] = js.native
   def create(
-    resolve: js.Function1[/* value */ js.UndefOr[js.Any], Unit],
-    reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
-  ): XPromise[js.Any] = js.native
+    resolve: js.Function1[/* value */ js.UndefOr[Any], Unit],
+    reject: js.Function1[/* reason */ js.UndefOr[Any], Unit]
+  ): XPromise[Any] = js.native
   
   def reject(): Unit = js.native
-  def reject(reason: js.Any): Unit = js.native
+  def reject(reason: Any): Unit = js.native
   
   def resolve(): Unit = js.native
-  def resolve(value: js.Any): Unit = js.native
+  def resolve(value: Any): Unit = js.native
 }

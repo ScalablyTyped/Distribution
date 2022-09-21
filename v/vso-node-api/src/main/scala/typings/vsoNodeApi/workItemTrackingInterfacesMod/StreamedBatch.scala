@@ -31,6 +31,6 @@ object StreamedBatch {
     
     inline def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

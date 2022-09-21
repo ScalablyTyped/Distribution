@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.Document")
 @js.native
-class Document protected ()
+open class Document protected ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.Document {
   def this(dataJSON: js.Object, path: String, acmsession: String) = this()
@@ -19,7 +19,7 @@ object Document {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def getAecModelData(node: typings.forgeViewer.Autodesk.Viewing.BubbleNode): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAecModelData")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAecModelData(node: typings.forgeViewer.Autodesk.Viewing.BubbleNode): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAecModelData")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   inline def getSubItemsWithProperties(item: js.Object, properties: Properties, recursive: Boolean): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubItemsWithProperties")(item.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
@@ -31,7 +31,7 @@ object Document {
     errorCallback: js.Function3[
       /* errorCode */ typings.forgeViewer.Autodesk.Viewing.ErrorCodes, 
       /* errorMsg */ String, 
-      /* messages */ js.Array[js.Any], 
+      /* messages */ js.Array[Any], 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(documentId.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -41,9 +41,9 @@ object Document {
     errorCallback: js.Function3[
       /* errorCode */ typings.forgeViewer.Autodesk.Viewing.ErrorCodes, 
       /* errorMsg */ String, 
-      /* messages */ js.Array[js.Any], 
+      /* messages */ js.Array[Any], 
       Unit
     ],
-    accessControlProperties: js.Any
+    accessControlProperties: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(documentId.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], accessControlProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

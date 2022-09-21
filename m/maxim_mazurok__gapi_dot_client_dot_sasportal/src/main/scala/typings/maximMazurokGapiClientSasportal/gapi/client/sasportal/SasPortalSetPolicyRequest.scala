@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SasPortalSetPolicyRequest extends StObject {
   
+  /** Optional. Set the field as true when we would like to disable the onboarding notification. */
+  var disableNotification: js.UndefOr[Boolean] = js.undefined
+  
   /** Required. The policy to be applied to the `resource`. */
   var policy: js.UndefOr[SasPortalPolicy] = js.undefined
   
@@ -20,6 +23,10 @@ object SasPortalSetPolicyRequest {
   }
   
   extension [Self <: SasPortalSetPolicyRequest](x: Self) {
+    
+    inline def setDisableNotification(value: Boolean): Self = StObject.set(x, "disableNotification", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNotificationUndefined: Self = StObject.set(x, "disableNotification", js.undefined)
     
     inline def setPolicy(value: SasPortalPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

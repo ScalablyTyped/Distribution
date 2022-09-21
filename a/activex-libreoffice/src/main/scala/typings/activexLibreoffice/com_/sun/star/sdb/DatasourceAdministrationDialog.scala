@@ -45,13 +45,13 @@ object DatasourceAdministrationDialog {
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     execute: () => Double,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     setTitle: String => Unit
   ): DatasourceAdministrationDialog = {
     val __obj = js.Dynamic.literal(ParentWindow = ParentWindow.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), execute = js.Any.fromFunction0(execute), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setTitle = js.Any.fromFunction1(setTitle))

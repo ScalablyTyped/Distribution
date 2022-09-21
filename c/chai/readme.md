@@ -1,7 +1,7 @@
 
 # Scala.js typings for chai
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
@@ -10,10 +10,10 @@ BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 | ------------------ | :-------------: |
 | Full name          | chai |
 | Keywords           | test, assertion, assert, testing, chai |
-| # releases         | 0 |
-| # dependents       | 5705 |
-| # downloads        | 185888011 |
-| # stars            | 316 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2848451666666668E7 |
+| # stars            | 7621.0 |
 
 ## Links
 - [Homepage](http://chaijs.com)

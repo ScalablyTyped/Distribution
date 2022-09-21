@@ -23,6 +23,8 @@ trait Column extends StObject {
   /**
     * Indicates whether the column is resizable.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
     */
   val resizable: Boolean

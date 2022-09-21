@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the processing error of one Operation in the request.
-  */
 trait SchemaReportError extends StObject {
   
   /**
     * The Operation.operation_id value from the request.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details of the error when processing the Operation.
@@ -29,6 +26,8 @@ object SchemaReportError {
   extension [Self <: SchemaReportError](x: Self) {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
     
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     

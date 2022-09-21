@@ -11,41 +11,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartBoxwhiskerOptionsData extends StObject {
   
   /**
-    *
     * Specifies if the quartile calculation type of a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: js.UndefOr[ChartBoxQuartileCalculation | Inclusive | Exclusive] = js.undefined
   
   /**
-    *
     * Specifies if inner points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the mean line is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the mean marker is shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if outlier points are shown in a box and whisker chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showOutlierPoints: js.UndefOr[Boolean] = js.undefined

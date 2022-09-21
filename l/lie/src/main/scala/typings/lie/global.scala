@@ -14,7 +14,7 @@ object global {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("Promise")
   @js.native
-  class PromiseCls[T] protected ()
+  open class PromiseCls[T] protected ()
     extends StObject
        with typings.lie.mod.Promise[T] {
     /**
@@ -25,7 +25,7 @@ object global {
       */
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
   }

@@ -9,7 +9,7 @@ trait Group extends StObject {
   /**
     * The date indicating when the group was disabled from Amazon WorkMail use.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
+  var DisabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The email of the group.
@@ -19,7 +19,7 @@ trait Group extends StObject {
   /**
     * The date indicating when the group was enabled for Amazon WorkMail use.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
+  var EnabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the group.
@@ -45,7 +45,7 @@ object Group {
   
   extension [Self <: Group](x: Self) {
     
-    inline def setDisabledDate(value: Timestamp): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
+    inline def setDisabledDate(value: js.Date): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
     
     inline def setDisabledDateUndefined: Self = StObject.set(x, "DisabledDate", js.undefined)
     
@@ -53,7 +53,7 @@ object Group {
     
     inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    inline def setEnabledDate(value: Timestamp): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
+    inline def setEnabledDate(value: js.Date): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
     
     inline def setEnabledDateUndefined: Self = StObject.set(x, "EnabledDate", js.undefined)
     

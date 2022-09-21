@@ -114,7 +114,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Returns the active cell editor. If there is no actively edited cell, null is returned.
     * @return
     **/
-  def getCellEditor(): Editor[js.Any] = js.native
+  def getCellEditor(): Editor[Any] = js.native
   
   /**
     * Returns a hash containing row and cell indexes from a standard W3C/jQuery event.
@@ -169,7 +169,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Returns an array of every data object, unless you're using DataView in which case it returns a DataView object.
     * @return
     **/
-  def getData(): js.Any = js.native
+  def getData(): Any = js.native
   
   //public getData(): T[];
   // Issue: typescript limitation, cannot differentiate calls by return type only, so need to cast to DataView or T[].
@@ -191,7 +191,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
   
   // #endregion Rendering
   // #region Editors
-  def getEditorLock(): EditorLock[js.Any] = js.native
+  def getEditorLock(): EditorLock[Any] = js.native
   
   /**
     * todo: no docs
@@ -210,13 +210,13 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * @param columnId
     * @return
     **/
-  def getHeaderRowColumn(columnId: String): Column[js.Any] = js.native
+  def getHeaderRowColumn(columnId: String): Column[Any] = js.native
   
   /**
     * Returns an object containing all of the Grid options set on the grid. See a list of Grid Options here.
     * @return
     **/
-  def getOptions(): GridOptions[js.Any] = js.native
+  def getOptions(): GridOptions[Any] = js.native
   
   def getRenderedRange(): Viewport = js.native
   def getRenderedRange(viewportTop: Double): Viewport = js.native
@@ -233,7 +233,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Returns the current SelectionModel. See here for more information about SelectionModels.
     * @return
     **/
-  def getSelectionModel(): SelectionModel[js.Any, js.Any] = js.native
+  def getSelectionModel(): SelectionModel[Any, Any] = js.native
   
   /**
     * todo: no docs or comments available
@@ -466,7 +466,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Unregisters a current selection model and registers a new one. See the definition of SelectionModel for more information.
     * @selectionModel A SelectionModel.
     **/
-  def setSelectionModel(selectionModel: SelectionModel[T, js.Any]): Unit = js.native
+  def setSelectionModel(selectionModel: SelectionModel[T, Any]): Unit = js.native
   
   /**
     * Accepts a columnId string and an ascending boolean. Applies a sort glyph in either ascending or descending form to the header of the column. Note that this does not actually sort the column. It only adds the sort glyph to the header.

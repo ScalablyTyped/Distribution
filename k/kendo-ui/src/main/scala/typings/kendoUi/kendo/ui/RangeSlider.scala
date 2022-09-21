@@ -15,10 +15,10 @@ trait RangeSlider
   @JSName("options")
   var options_RangeSlider: RangeSliderOptions = js.native
   
-  def value(): js.Any = js.native
-  def value(startEndArray: js.Any): Unit = js.native
+  def value(): Any = js.native
+  def value(startEndArray: Any): Unit = js.native
   
-  def values(): js.Any = js.native
+  def values(): Any = js.native
   def values(selectionStart: Double, selectionEnd: Double): Unit = js.native
   
   var wrapper: JQuery = js.native

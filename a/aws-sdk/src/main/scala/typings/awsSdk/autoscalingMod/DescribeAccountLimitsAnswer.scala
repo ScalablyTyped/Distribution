@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAccountLimitsAnswer extends StObject {
   
   /**
-    * The maximum number of groups allowed for your AWS account. The default is 200 groups per AWS Region.
+    * The maximum number of groups allowed for your account. The default is 200 groups per Region.
     */
   var MaxNumberOfAutoScalingGroups: js.UndefOr[typings.awsSdk.autoscalingMod.MaxNumberOfAutoScalingGroups] = js.undefined
   
   /**
-    * The maximum number of launch configurations allowed for your AWS account. The default is 200 launch configurations per AWS Region.
+    * The maximum number of launch configurations allowed for your account. The default is 200 launch configurations per Region.
     */
   var MaxNumberOfLaunchConfigurations: js.UndefOr[typings.awsSdk.autoscalingMod.MaxNumberOfLaunchConfigurations] = js.undefined
   
   /**
-    * The current number of groups for your AWS account.
+    * The current number of groups for your account.
     */
   var NumberOfAutoScalingGroups: js.UndefOr[typings.awsSdk.autoscalingMod.NumberOfAutoScalingGroups] = js.undefined
   
   /**
-    * The current number of launch configurations for your AWS account.
+    * The current number of launch configurations for your account.
     */
   var NumberOfLaunchConfigurations: js.UndefOr[typings.awsSdk.autoscalingMod.NumberOfLaunchConfigurations] = js.undefined
 }

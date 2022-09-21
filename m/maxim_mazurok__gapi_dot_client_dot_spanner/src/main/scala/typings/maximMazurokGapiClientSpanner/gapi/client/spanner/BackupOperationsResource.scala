@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientSpanner.anon.Callback
+import typings.maximMazurokGapiClientSpanner.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +15,5 @@ trait BackupOperationsResource extends StObject {
     * operations. Operations returned are ordered by `operation.metadata.value.progress.start_time` in descending order starting from the most recently started operation.
     */
   def list(): Request[ListBackupOperationsResponse] = js.native
-  def list(request: Callback): Request[ListBackupOperationsResponse] = js.native
+  def list(request: Fields): Request[ListBackupOperationsResponse] = js.native
 }

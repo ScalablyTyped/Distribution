@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait RevealOutputChannelOn extends StObject
-@JSImport("vscode-languageclient/lib/client", "RevealOutputChannelOn")
+@JSImport("vscode-languageclient/lib/common/client", "RevealOutputChannelOn")
 @js.native
 object RevealOutputChannelOn extends StObject {
   

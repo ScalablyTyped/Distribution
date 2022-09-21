@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait BuiltInPivotTableStyle extends StObject
 /**
-  *
   * Represents a built-in PivotTable style
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -19,7 +19,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark1
@@ -28,7 +30,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark10
@@ -37,7 +41,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark11
@@ -46,7 +52,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark12
@@ -55,7 +63,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark13
@@ -64,7 +74,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark14
@@ -73,7 +85,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark15
@@ -82,7 +96,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark16
@@ -91,7 +107,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark17
@@ -100,7 +118,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark18
@@ -109,7 +129,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark19
@@ -118,7 +140,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark2
@@ -127,7 +151,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark20
@@ -136,7 +162,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, filled footer, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark21
@@ -145,7 +173,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark22
@@ -154,7 +184,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark23
@@ -163,7 +195,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark24
@@ -172,7 +206,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark25
@@ -181,7 +217,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark26
@@ -190,7 +228,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark27
@@ -199,7 +239,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with shaded body, and white borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark28
@@ -208,7 +250,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark3
@@ -217,7 +261,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark4
@@ -226,7 +272,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark5
@@ -235,7 +283,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark6
@@ -244,7 +294,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark7
@@ -253,7 +305,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark8
@@ -262,7 +316,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and outside border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark9
@@ -271,7 +327,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light1
@@ -280,7 +338,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light10
@@ -289,7 +349,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light11
@@ -298,7 +360,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light12
@@ -307,7 +371,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light13
@@ -316,7 +382,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light14
@@ -325,7 +393,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light15
@@ -334,7 +404,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light16
@@ -343,7 +415,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light17
@@ -352,7 +426,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light18
@@ -361,7 +437,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light19
@@ -370,7 +448,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light2
@@ -379,7 +459,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light20
@@ -388,7 +470,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header and striped bordered rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light21
@@ -397,7 +481,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light22
@@ -406,7 +492,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light23
@@ -415,7 +503,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light24
@@ -424,7 +514,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light25
@@ -433,7 +525,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light26
@@ -442,7 +536,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light27
@@ -451,7 +547,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with header borders, footer borders, and bordered columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light28
@@ -460,7 +558,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light3
@@ -469,7 +569,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light4
@@ -478,7 +580,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light5
@@ -487,7 +591,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light6
@@ -496,7 +602,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with header borders and footer borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light7
@@ -505,7 +613,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light8
@@ -514,7 +624,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light9
@@ -523,7 +635,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium1
@@ -532,7 +646,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium10
@@ -541,7 +657,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium11
@@ -550,7 +668,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium12
@@ -559,7 +679,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium13
@@ -568,7 +690,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium14
@@ -577,7 +701,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium15
@@ -586,7 +712,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium16
@@ -595,7 +723,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium17
@@ -604,7 +734,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium18
@@ -613,7 +745,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium19
@@ -622,7 +756,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium2
@@ -631,7 +767,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium20
@@ -640,7 +778,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, filled footer, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium21
@@ -649,7 +789,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium22
@@ -658,7 +800,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium23
@@ -667,7 +811,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium24
@@ -676,7 +822,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium25
@@ -685,7 +833,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium26
@@ -694,7 +844,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium27
@@ -703,7 +855,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled first column, and shaded body.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium28
@@ -712,7 +866,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium3
@@ -721,7 +877,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium4
@@ -730,7 +888,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium5
@@ -739,7 +899,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium6
@@ -748,7 +910,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and footer border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium7
@@ -757,7 +921,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium8
@@ -766,7 +932,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and total row border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium9
@@ -775,7 +943,9 @@ object BuiltInPivotTableStyle extends StObject {
   
   /**
     * None
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait none

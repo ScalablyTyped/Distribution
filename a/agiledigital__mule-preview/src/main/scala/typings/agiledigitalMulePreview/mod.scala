@@ -1,6 +1,6 @@
 package typings.agiledigitalMulePreview
 
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,19 +9,19 @@ object mod {
   
   @JSImport("@agiledigital/mule-preview", "MulePreviewContent")
   @js.native
-  val MulePreviewContent: SFC[MulePreviewContentProps] = js.native
+  val MulePreviewContent: FC[MulePreviewContentProps] = js.native
   
   @JSImport("@agiledigital/mule-preview", "MulePreviewDiffContent")
   @js.native
-  val MulePreviewDiffContent: SFC[MulePreviewDiffContentProps] = js.native
+  val MulePreviewDiffContent: FC[MulePreviewDiffContentProps] = js.native
   
   @JSImport("@agiledigital/mule-preview", "MulePreviewDiffUrl")
   @js.native
-  val MulePreviewDiffUrl: SFC[MulePreviewDiffUrlProps] = js.native
+  val MulePreviewDiffUrl: FC[MulePreviewDiffUrlProps] = js.native
   
   @JSImport("@agiledigital/mule-preview", "MulePreviewUrl")
   @js.native
-  val MulePreviewUrl: SFC[MulePreviewUrlProps] = js.native
+  val MulePreviewUrl: FC[MulePreviewUrlProps] = js.native
   
   trait MulePreviewContentProps extends StObject {
     

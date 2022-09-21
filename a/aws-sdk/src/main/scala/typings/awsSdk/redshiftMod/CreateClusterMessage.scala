@@ -17,7 +17,12 @@ trait CreateClusterMessage extends StObject {
   var AllowVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with CreateClusterSnapshot.  Default: 1  Constraints: Must be a value from 0 to 35.
+    * This parameter is retired. It does not set the AQUA configuration status. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator).
+    */
+  var AquaConfigurationStatus: js.UndefOr[typings.awsSdk.redshiftMod.AquaConfigurationStatus] = js.undefined
+  
+  /**
+    * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with CreateClusterSnapshot.  You can't disable automated snapshots for RA3 node types. Set the automated retention period from 1-35 days. Default: 1  Constraints: Must be a value from 0 to 35.
     */
   var AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -27,7 +32,12 @@ trait CreateClusterMessage extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * A unique identifier for the cluster. You use this identifier to refer to the cluster for any subsequent cluster operations such as deleting or modifying. The identifier also appears in the Amazon Redshift console. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   Alphabetic characters must be lowercase.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Must be unique for all clusters within an AWS account.   Example: myexamplecluster 
+    * The option to enable relocation for an Amazon Redshift cluster between Availability Zones after the cluster is created.
+    */
+  var AvailabilityZoneRelocation: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A unique identifier for the cluster. You use this identifier to refer to the cluster for any subsequent cluster operations such as deleting or modifying. The identifier also appears in the Amazon Redshift console. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   Alphabetic characters must be lowercase.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Must be unique for all clusters within an Amazon Web Services account.   Example: myexamplecluster 
     */
   var ClusterIdentifier: String
   
@@ -62,6 +72,11 @@ trait CreateClusterMessage extends StObject {
   var DBName: js.UndefOr[String] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was created. 
+    */
+  var DefaultIamRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * The Elastic IP (EIP) address for the cluster. Constraints: The cluster must be provisioned in EC2-VPC and publicly-accessible through an Internet gateway. For more information about provisioning clusters in EC2-VPC, go to Supported Platforms to Launch Your Cluster in the Amazon Redshift Cluster Management Guide.
     */
   var ElasticIp: js.UndefOr[String] = js.undefined
@@ -87,14 +102,19 @@ trait CreateClusterMessage extends StObject {
   var HsmConfigurationIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. You must supply the IAM roles in their Amazon Resource Name (ARN) format. You can supply up to 10 IAM roles in a single request. A cluster can have up to 10 IAM roles associated with it at any time.
+    * A list of Identity and Access Management (IAM) roles that can be used by the cluster to access other Amazon Web Services services. You must supply the IAM roles in their Amazon Resource Name (ARN) format.  The maximum number of IAM roles that you can associate is subject to a quota. For more information, go to Quotas and limits in the Amazon Redshift Cluster Management Guide.
     */
   var IamRoles: js.UndefOr[IamRoleArnList] = js.undefined
   
   /**
-    * The AWS Key Management Service (KMS) key ID of the encryption key that you want to use to encrypt data in the cluster.
+    * The Key Management Service (KMS) key ID of the encryption key that you want to use to encrypt data in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A flag that specifies whether to load sample data once the cluster is created.
+    */
+  var LoadSampleData: js.UndefOr[String] = js.undefined
   
   /**
     * An optional parameter for the name of the maintenance track for the cluster. If you don't provide a maintenance track name, the cluster is assigned to the current track.
@@ -107,17 +127,17 @@ trait CreateClusterMessage extends StObject {
   var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The password associated with the master user account for the cluster that is being created. Constraints:   Must be between 8 and 64 characters in length.   Must contain at least one uppercase letter.   Must contain at least one lowercase letter.   Must contain one number.   Can be any printable ASCII character (ASCII code 33 to 126) except ' (single quote), " (double quote), \, /, @, or space.  
+    * The password associated with the admin user account for the cluster that is being created. Constraints:   Must be between 8 and 64 characters in length.   Must contain at least one uppercase letter.   Must contain at least one lowercase letter.   Must contain one number.   Can be any printable ASCII character (ASCII code 33-126) except ' (single quote), " (double quote), \, /, or @.  
     */
   var MasterUserPassword: String
   
   /**
-    * The user name associated with the master user account for the cluster that is being created. Constraints:   Must be 1 - 128 alphanumeric characters. The user name can't be PUBLIC.   First character must be a letter.   Cannot be a reserved word. A list of reserved words can be found in Reserved Words in the Amazon Redshift Database Developer Guide.   
+    * The user name associated with the admin user account for the cluster that is being created. Constraints:   Must be 1 - 128 alphanumeric characters. The user name can't be PUBLIC.   First character must be a letter.   Cannot be a reserved word. A list of reserved words can be found in Reserved Words in the Amazon Redshift Database Developer Guide.   
     */
   var MasterUsername: String
   
   /**
-    * The node type to be provisioned for the cluster. For information about node types, go to  Working with Clusters in the Amazon Redshift Cluster Management Guide.  Valid Values: ds2.xlarge | ds2.8xlarge | dc1.large | dc1.8xlarge | dc2.large | dc2.8xlarge | ra3.4xlarge | ra3.16xlarge 
+    * The node type to be provisioned for the cluster. For information about node types, go to  Working with Clusters in the Amazon Redshift Cluster Management Guide.  Valid Values: ds2.xlarge | ds2.8xlarge | dc1.large | dc1.8xlarge | dc2.large | dc2.8xlarge | ra3.xlplus | ra3.4xlarge | ra3.16xlarge 
     */
   var NodeType: String
   
@@ -173,11 +193,19 @@ object CreateClusterMessage {
     
     inline def setAllowVersionUpgradeUndefined: Self = StObject.set(x, "AllowVersionUpgrade", js.undefined)
     
+    inline def setAquaConfigurationStatus(value: AquaConfigurationStatus): Self = StObject.set(x, "AquaConfigurationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAquaConfigurationStatusUndefined: Self = StObject.set(x, "AquaConfigurationStatus", js.undefined)
+    
     inline def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     inline def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocation(value: BooleanOptional): Self = StObject.set(x, "AvailabilityZoneRelocation", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocationUndefined: Self = StObject.set(x, "AvailabilityZoneRelocation", js.undefined)
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
@@ -191,7 +219,7 @@ object CreateClusterMessage {
     
     inline def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
-    inline def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
+    inline def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value*))
     
     inline def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "ClusterSubnetGroupName", value.asInstanceOf[js.Any])
     
@@ -208,6 +236,10 @@ object CreateClusterMessage {
     inline def setDBName(value: String): Self = StObject.set(x, "DBName", value.asInstanceOf[js.Any])
     
     inline def setDBNameUndefined: Self = StObject.set(x, "DBName", js.undefined)
+    
+    inline def setDefaultIamRoleArn(value: String): Self = StObject.set(x, "DefaultIamRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultIamRoleArnUndefined: Self = StObject.set(x, "DefaultIamRoleArn", js.undefined)
     
     inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
@@ -233,11 +265,15 @@ object CreateClusterMessage {
     
     inline def setIamRolesUndefined: Self = StObject.set(x, "IamRoles", js.undefined)
     
-    inline def setIamRolesVarargs(value: String*): Self = StObject.set(x, "IamRoles", js.Array(value :_*))
+    inline def setIamRolesVarargs(value: String*): Self = StObject.set(x, "IamRoles", js.Array(value*))
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    
+    inline def setLoadSampleData(value: String): Self = StObject.set(x, "LoadSampleData", value.asInstanceOf[js.Any])
+    
+    inline def setLoadSampleDataUndefined: Self = StObject.set(x, "LoadSampleData", js.undefined)
     
     inline def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
@@ -277,12 +313,12 @@ object CreateClusterMessage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcSecurityGroupIds(value: VpcSecurityGroupIdList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
   }
 }

@@ -20,6 +20,9 @@ trait Notification extends StObject {
   /** Called in case the user clicks the notification */
   var ondone: js.UndefOr[NotificationOnDone] = js.undefined
   
+  /** Whether to play or not play a sound */
+  var silent: js.UndefOr[Boolean] = js.undefined
+  
   /** Text of the notification (optional if highlight is set) */
   var text: js.UndefOr[String] = js.undefined
   
@@ -53,6 +56,10 @@ object Notification {
     inline def setOndone(value: NotificationOnDone): Self = StObject.set(x, "ondone", value.asInstanceOf[js.Any])
     
     inline def setOndoneUndefined: Self = StObject.set(x, "ondone", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

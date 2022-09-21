@@ -11,17 +11,17 @@ object tab {
        with IToolbar {
     
     /** [Config Option] (Number/String/Ext.Component) */
-    var activeTab: js.UndefOr[js.Any] = js.undefined
+    var activeTab: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of activeTab
       * @returns Number/String/Ext.Component
       */
-    var getActiveTab: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getActiveTab: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of activeTab
       * @param activeTab Number/String/Ext.Component The new value.
       */
-    var setActiveTab: js.UndefOr[js.Function1[/* activeTab */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setActiveTab: js.UndefOr[js.Function1[/* activeTab */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IBar {
     
@@ -32,15 +32,15 @@ object tab {
     
     extension [Self <: IBar](x: Self) {
       
-      inline def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
       inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      inline def setGetActiveTab(value: () => js.Any): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
+      inline def setGetActiveTab(value: () => Any): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
       
       inline def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
       
-      inline def setSetActiveTab(value: /* activeTab */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+      inline def setSetActiveTab(value: /* activeTab */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
       
       inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
     }
@@ -56,7 +56,7 @@ object tab {
       * @returns Boolean
       */
     var doTabChange: js.UndefOr[
-        js.Function2[/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any], Boolean]
+        js.Function2[/* tabBar */ js.UndefOr[Any], /* newTab */ js.UndefOr[Any], Boolean]
       ] = js.undefined
     
     /** [Method] Returns the value of cls
@@ -68,12 +68,12 @@ object tab {
     /** [Method] Returns the value of layout
       * @returns Object
       */
-    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of tabBar
       * @returns Object
       */
-    var getTabBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTabBar: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of tabBarPosition
       * @returns String
@@ -89,7 +89,7 @@ object tab {
     /** [Method] Sets the value of tabBar
       * @param tabBar Object The new value.
       */
-    var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of tabBarPosition
       * @param tabBarPosition String The new value.
@@ -97,7 +97,7 @@ object tab {
     var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var tabBar: js.UndefOr[js.Any] = js.undefined
+    var tabBar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var tabBarDock: js.UndefOr[Boolean] = js.undefined
@@ -109,9 +109,7 @@ object tab {
       * @param newUi Object
       * @param oldUi Object
       */
-    var updateUi: js.UndefOr[
-        js.Function2[/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var updateUi: js.UndefOr[js.Function2[/* newUi */ js.UndefOr[Any], /* oldUi */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPanel {
     
@@ -122,7 +120,7 @@ object tab {
     
     extension [Self <: typings.senchaTouch.Ext.tab.IPanel](x: Self) {
       
-      inline def setDoTabChange(value: (/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "doTabChange", js.Any.fromFunction2(value))
+      inline def setDoTabChange(value: (/* tabBar */ js.UndefOr[Any], /* newTab */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "doTabChange", js.Any.fromFunction2(value))
       
       inline def setDoTabChangeUndefined: Self = StObject.set(x, "doTabChange", js.undefined)
       
@@ -130,11 +128,11 @@ object tab {
       
       inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
       
-      inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
-      inline def setGetTabBar(value: () => js.Any): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
+      inline def setGetTabBar(value: () => Any): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
       
       inline def setGetTabBarPosition(value: () => java.lang.String): Self = StObject.set(x, "getTabBarPosition", js.Any.fromFunction0(value))
       
@@ -146,7 +144,7 @@ object tab {
       
       inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
       
-      inline def setSetTabBar(value: /* tabBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTabBar", js.Any.fromFunction1(value))
+      inline def setSetTabBar(value: /* tabBar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTabBar", js.Any.fromFunction1(value))
       
       inline def setSetTabBarPosition(value: /* tabBarPosition */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTabBarPosition", js.Any.fromFunction1(value))
       
@@ -154,7 +152,7 @@ object tab {
       
       inline def setSetTabBarUndefined: Self = StObject.set(x, "setTabBar", js.undefined)
       
-      inline def setTabBar(value: js.Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
+      inline def setTabBar(value: Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
       
       inline def setTabBarDock(value: Boolean): Self = StObject.set(x, "tabBarDock", value.asInstanceOf[js.Any])
       
@@ -166,7 +164,7 @@ object tab {
       
       inline def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
       
-      inline def setUpdateUi(value: (/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateUi", js.Any.fromFunction2(value))
+      inline def setUpdateUi(value: (/* newUi */ js.UndefOr[Any], /* oldUi */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateUi", js.Any.fromFunction2(value))
       
       inline def setUpdateUiUndefined: Self = StObject.set(x, "updateUi", js.undefined)
     }

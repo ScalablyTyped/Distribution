@@ -34,7 +34,7 @@ object EventTimeline {
     
     inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

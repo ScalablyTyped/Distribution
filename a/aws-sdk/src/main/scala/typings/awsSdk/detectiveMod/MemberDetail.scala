@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MemberDetail extends StObject {
   
   /**
-    * The AWS account identifier for the member account.
+    * The Amazon Web Services account identifier for the member account.
     */
   var AccountId: js.UndefOr[typings.awsSdk.detectiveMod.AccountId] = js.undefined
+  
+  /**
+    * The Amazon Web Services account identifier of the administrator account for the behavior graph.
+    */
+  var AdministratorId: js.UndefOr[AccountId] = js.undefined
+  
+  /**
+    * The state of a data source package for the behavior graph.
+    */
+  var DatasourcePackageIngestStates: js.UndefOr[typings.awsSdk.detectiveMod.DatasourcePackageIngestStates] = js.undefined
   
   /**
     * For member accounts with a status of ACCEPTED_BUT_DISABLED, the reason that the member account is not enabled. The reason can have one of the following values:    VOLUME_TOO_HIGH - Indicates that adding the member account would cause the data volume for the behavior graph to be too high.    VOLUME_UNKNOWN - Indicates that Detective is unable to verify the data volume for the member account. This is usually because the member account is not enrolled in Amazon GuardDuty.   
@@ -17,22 +27,27 @@ trait MemberDetail extends StObject {
   var DisabledReason: js.UndefOr[MemberDisabledReason] = js.undefined
   
   /**
-    * The AWS account root user email address for the member account.
+    * The Amazon Web Services account root user email address for the member account.
     */
   var EmailAddress: js.UndefOr[typings.awsSdk.detectiveMod.EmailAddress] = js.undefined
   
   /**
-    * The ARN of the behavior graph that the member account was invited to.
+    * The ARN of the behavior graph.
     */
   var GraphArn: js.UndefOr[typings.awsSdk.detectiveMod.GraphArn] = js.undefined
   
   /**
-    * The date and time that Detective sent the invitation to the member account. The value is in milliseconds since the epoch.
+    * The type of behavior graph membership. For an organization account in the organization behavior graph, the type is ORGANIZATION. For an account that was invited to a behavior graph, the type is INVITATION. 
     */
-  var InvitedTime: js.UndefOr[Timestamp] = js.undefined
+  var InvitationType: js.UndefOr[typings.awsSdk.detectiveMod.InvitationType] = js.undefined
   
   /**
-    * The AWS account identifier of the master account for the behavior graph.
+    * For invited accounts, the date and time that Detective sent the invitation to the account. The value is an ISO8601 formatted string. For example, 2021-08-18T16:35:56.284Z.
+    */
+  var InvitedTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The Amazon Web Services account identifier of the administrator account for the behavior graph.
     */
   var MasterId: js.UndefOr[AccountId] = js.undefined
   
@@ -42,19 +57,34 @@ trait MemberDetail extends StObject {
   var PercentOfGraphUtilization: js.UndefOr[Percentage] = js.undefined
   
   /**
-    * The date and time when the graph utilization percentage was last updated.
+    * The date and time when the graph utilization percentage was last updated. The value is an ISO8601 formatted string. For example, 2021-08-18T16:35:56.284Z.
     */
-  var PercentOfGraphUtilizationUpdatedTime: js.UndefOr[Timestamp] = js.undefined
+  var PercentOfGraphUtilizationUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current membership status of the member account. The status can have one of the following values:    INVITED - Indicates that the member was sent an invitation but has not yet responded.    VERIFICATION_IN_PROGRESS - Indicates that Detective is verifying that the account identifier and email address provided for the member account match. If they do match, then Detective sends the invitation. If the email address and account identifier don't match, then the member cannot be added to the behavior graph.    VERIFICATION_FAILED - Indicates that the account and email address provided for the member account do not match, and Detective did not send an invitation to the account.    ENABLED - Indicates that the member account accepted the invitation to contribute to the behavior graph.    ACCEPTED_BUT_DISABLED - Indicates that the member account accepted the invitation but is prevented from contributing data to the behavior graph. DisabledReason provides the reason why the member account is not enabled.   Member accounts that declined an invitation or that were removed from the behavior graph are not included.
+    * The current membership status of the member account. The status can have one of the following values:    INVITED - For invited accounts only. Indicates that the member was sent an invitation but has not yet responded.    VERIFICATION_IN_PROGRESS - For invited accounts only, indicates that Detective is verifying that the account identifier and email address provided for the member account match. If they do match, then Detective sends the invitation. If the email address and account identifier don't match, then the member cannot be added to the behavior graph. For organization accounts in the organization behavior graph, indicates that Detective is verifying that the account belongs to the organization.    VERIFICATION_FAILED - For invited accounts only. Indicates that the account and email address provided for the member account do not match, and Detective did not send an invitation to the account.    ENABLED - Indicates that the member account currently contributes data to the behavior graph. For invited accounts, the member account accepted the invitation. For organization accounts in the organization behavior graph, the Detective administrator account enabled the organization account as a member account.    ACCEPTED_BUT_DISABLED - The account accepted the invitation, or was enabled by the Detective administrator account, but is prevented from contributing data to the behavior graph. DisabledReason provides the reason why the member account is not enabled.   Invited accounts that declined an invitation or that were removed from the behavior graph are not included. In the organization behavior graph, organization accounts that the Detective administrator account did not enable are not included.
     */
   var Status: js.UndefOr[MemberStatus] = js.undefined
   
   /**
-    * The date and time that the member account was last updated. The value is in milliseconds since the epoch.
+    * The date and time that the member account was last updated. The value is an ISO8601 formatted string. For example, 2021-08-18T16:35:56.284Z.
     */
-  var UpdatedTime: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Details on the volume of usage for each data source package in a behavior graph.
+    */
+  var VolumeUsageByDatasourcePackage: js.UndefOr[typings.awsSdk.detectiveMod.VolumeUsageByDatasourcePackage] = js.undefined
+  
+  /**
+    * The data volume in bytes per day for the member account.
+    */
+  var VolumeUsageInBytes: js.UndefOr[ByteValue] = js.undefined
+  
+  /**
+    * The data and time when the member account data volume was last updated. The value is an ISO8601 formatted string. For example, 2021-08-18T16:35:56.284Z.
+    */
+  var VolumeUsageUpdatedTime: js.UndefOr[js.Date] = js.undefined
 }
 object MemberDetail {
   
@@ -69,6 +99,14 @@ object MemberDetail {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
+    inline def setAdministratorId(value: AccountId): Self = StObject.set(x, "AdministratorId", value.asInstanceOf[js.Any])
+    
+    inline def setAdministratorIdUndefined: Self = StObject.set(x, "AdministratorId", js.undefined)
+    
+    inline def setDatasourcePackageIngestStates(value: DatasourcePackageIngestStates): Self = StObject.set(x, "DatasourcePackageIngestStates", value.asInstanceOf[js.Any])
+    
+    inline def setDatasourcePackageIngestStatesUndefined: Self = StObject.set(x, "DatasourcePackageIngestStates", js.undefined)
+    
     inline def setDisabledReason(value: MemberDisabledReason): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
     inline def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
@@ -81,7 +119,11 @@ object MemberDetail {
     
     inline def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
     
-    inline def setInvitedTime(value: Timestamp): Self = StObject.set(x, "InvitedTime", value.asInstanceOf[js.Any])
+    inline def setInvitationType(value: InvitationType): Self = StObject.set(x, "InvitationType", value.asInstanceOf[js.Any])
+    
+    inline def setInvitationTypeUndefined: Self = StObject.set(x, "InvitationType", js.undefined)
+    
+    inline def setInvitedTime(value: js.Date): Self = StObject.set(x, "InvitedTime", value.asInstanceOf[js.Any])
     
     inline def setInvitedTimeUndefined: Self = StObject.set(x, "InvitedTime", js.undefined)
     
@@ -93,7 +135,7 @@ object MemberDetail {
     
     inline def setPercentOfGraphUtilizationUndefined: Self = StObject.set(x, "PercentOfGraphUtilization", js.undefined)
     
-    inline def setPercentOfGraphUtilizationUpdatedTime(value: Timestamp): Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setPercentOfGraphUtilizationUpdatedTime(value: js.Date): Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setPercentOfGraphUtilizationUpdatedTimeUndefined: Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", js.undefined)
     
@@ -101,8 +143,20 @@ object MemberDetail {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedTime(value: Timestamp): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: js.Date): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
+    
+    inline def setVolumeUsageByDatasourcePackage(value: VolumeUsageByDatasourcePackage): Self = StObject.set(x, "VolumeUsageByDatasourcePackage", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUsageByDatasourcePackageUndefined: Self = StObject.set(x, "VolumeUsageByDatasourcePackage", js.undefined)
+    
+    inline def setVolumeUsageInBytes(value: ByteValue): Self = StObject.set(x, "VolumeUsageInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUsageInBytesUndefined: Self = StObject.set(x, "VolumeUsageInBytes", js.undefined)
+    
+    inline def setVolumeUsageUpdatedTime(value: js.Date): Self = StObject.set(x, "VolumeUsageUpdatedTime", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUsageUpdatedTimeUndefined: Self = StObject.set(x, "VolumeUsageUpdatedTime", js.undefined)
   }
 }

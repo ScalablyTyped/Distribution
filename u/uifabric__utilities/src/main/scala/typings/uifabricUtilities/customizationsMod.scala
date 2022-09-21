@@ -9,7 +9,7 @@ object customizationsMod {
   
   @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations")
   @js.native
-  class Customizations () extends StObject
+  open class Customizations () extends StObject
   /* static members */
   object Customizations {
     
@@ -19,13 +19,13 @@ object customizationsMod {
     
     @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations._raiseChange")
     @js.native
-    def _raiseChange: js.Any = js.native
-    inline def _raiseChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
+    def _raiseChange: Any = js.native
+    inline def _raiseChange_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations._suppressUpdates")
     @js.native
-    def _suppressUpdates: js.Any = js.native
-    inline def _suppressUpdates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
+    def _suppressUpdates: Any = js.native
+    inline def _suppressUpdates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
     
     /** Used to run some code that sets Customizations without triggering an update until the end.
       * Useful for applying Customizations that don't affect anything currently rendered, or for
@@ -45,10 +45,10 @@ object customizationsMod {
       */
     inline def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def getSettings(properties: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -84,7 +84,7 @@ object customizationsMod {
     }
   }
   
-  type ISettings = StringDictionary[js.Any]
+  type ISettings = StringDictionary[Any]
   
   type ISettingsFunction = js.Function1[/* settings */ ISettings, ISettings]
   

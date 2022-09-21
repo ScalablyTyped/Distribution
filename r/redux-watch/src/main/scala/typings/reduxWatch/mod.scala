@@ -16,18 +16,18 @@ object mod {
     * @returns Function, that listens to changes of the given field of the Redux store
     *      state. On change it calls its parameter, which is a change handler function.
     */
-  inline def apply(getState: js.Function0[js.Any]): ChangeHandlerWrapper[js.Any] = ^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any]).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+  inline def apply(getState: js.Function0[Any]): ChangeHandlerWrapper[Any] = ^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any]).asInstanceOf[ChangeHandlerWrapper[Any]]
   inline def apply(
-    getState: js.Function0[js.Any],
+    getState: js.Function0[Any],
     pathToField: Unit,
-    compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-  ): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
-  inline def apply(getState: js.Function0[js.Any], pathToField: FieldPath): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+    compare: js.Function2[/* a */ Any, /* b */ Any, Boolean]
+  ): ChangeHandlerWrapper[Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[Any]]
+  inline def apply(getState: js.Function0[Any], pathToField: FieldPath): ChangeHandlerWrapper[Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[Any]]
   inline def apply(
-    getState: js.Function0[js.Any],
+    getState: js.Function0[Any],
     pathToField: FieldPath,
-    compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-  ): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+    compare: js.Function2[/* a */ Any, /* b */ Any, Boolean]
+  ): ChangeHandlerWrapper[Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[Any]]
   
   @JSImport("redux-watch", JSImport.Namespace)
   @js.native

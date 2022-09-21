@@ -25,7 +25,7 @@ object XRefreshable {
   inline def apply(
     acquire: () => Unit,
     addRefreshListener: XRefreshListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removeRefreshListener: XRefreshListener => Unit

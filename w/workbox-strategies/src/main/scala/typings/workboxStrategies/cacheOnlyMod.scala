@@ -16,7 +16,7 @@ object cacheOnlyMod {
   
   @JSImport("workbox-strategies/CacheOnly", "CacheOnly")
   @js.native
-  class CacheOnly ()
+  open class CacheOnly ()
     extends StObject
        with RouteHandlerObject {
     def this(options: CacheOnlyOptions) = this()
@@ -61,7 +61,7 @@ object cacheOnlyMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

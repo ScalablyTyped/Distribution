@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zetapush-js", "WeakClient")
 @js.native
-class WeakClient protected () extends Client {
+open class WeakClient protected () extends Client {
   def this(options: WeakClientOptions) = this()
   
   def getToken(): Token = js.native

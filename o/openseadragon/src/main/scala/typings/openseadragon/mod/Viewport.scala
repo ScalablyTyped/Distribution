@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Viewport")
 @js.native
-class Viewport protected () extends StObject {
+open class Viewport protected () extends StObject {
   def this(options: DefaultZoomLevel) = this()
   
   def applyConstraints(): Viewport = js.native
@@ -40,7 +40,7 @@ class Viewport protected () extends StObject {
   def fitVertically(): Viewport = js.native
   def fitVertically(immediately: Boolean): Viewport = js.native
   
-  def getAspectRatio(): js.Any = js.native
+  def getAspectRatio(): Any = js.native
   
   // TODO: determine return type
   def getBounds(): Rect = js.native

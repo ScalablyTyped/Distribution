@@ -12,12 +12,12 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "OnAfterEnteringVRObservableEvent")
   @js.native
-  class OnAfterEnteringVRObservableEvent ()
+  open class OnAfterEnteringVRObservableEvent ()
     extends typings.babylonjs.vrExperienceHelperMod.OnAfterEnteringVRObservableEvent
   
   @JSImport("babylonjs/Cameras/VR/index", "VRCameraMetrics")
   @js.native
-  class VRCameraMetrics ()
+  open class VRCameraMetrics ()
     extends typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   /* static members */
   object VRCameraMetrics {
@@ -35,20 +35,30 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationArcRotateCamera")
   @js.native
-  class VRDeviceOrientationArcRotateCamera protected ()
+  open class VRDeviceOrientationArcRotateCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationArcRotateCameraMod.VRDeviceOrientationArcRotateCamera {
     /**
       * Creates a new VRDeviceOrientationArcRotateCamera
       * @param name defines camera name
-      * @param alpha defines the camera rotation along the logitudinal axis
+      * @param alpha defines the camera rotation along the longitudinal axis
       * @param beta defines the camera rotation along the latitudinal axis
       * @param radius defines the camera distance from its target
       * @param target defines the camera target
       * @param scene defines the scene the camera belongs to
-      * @param compensateDistortion defines if the camera needs to compensate the lens distorsion
+      * @param compensateDistortion defines if the camera needs to compensate the lens distortion
       * @param vrCameraMetrics defines the vr metrics associated to the camera
       */
+    def this(name: String, alpha: Double, beta: Double, radius: Double, target: Vector3) = this()
     def this(name: String, alpha: Double, beta: Double, radius: Double, target: Vector3, scene: Scene) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
+      scene: Unit,
+      compensateDistortion: Boolean
+    ) = this()
     def this(
       name: String,
       alpha: Double,
@@ -57,6 +67,26 @@ object vRIndexMod {
       target: Vector3,
       scene: Scene,
       compensateDistortion: Boolean
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
+      scene: Unit,
+      compensateDistortion: Boolean,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
+      scene: Unit,
+      compensateDistortion: Unit,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
     def this(
       name: String,
@@ -82,18 +112,34 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationFreeCamera")
   @js.native
-  class VRDeviceOrientationFreeCamera protected ()
+  open class VRDeviceOrientationFreeCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationFreeCameraMod.VRDeviceOrientationFreeCamera {
     /**
       * Creates a new VRDeviceOrientationFreeCamera
       * @param name defines camera name
       * @param position defines the start position of the camera
       * @param scene defines the scene the camera belongs to
-      * @param compensateDistortion defines if the camera needs to compensate the lens distorsion
+      * @param compensateDistortion defines if the camera needs to compensate the lens distortion
       * @param vrCameraMetrics defines the vr metrics associated to the camera
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, compensateDistortion: Boolean) = this()
     def this(name: String, position: Vector3, scene: Scene, compensateDistortion: Boolean) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      compensateDistortion: Boolean,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      compensateDistortion: Unit,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
     def this(
       name: String,
       position: Vector3,
@@ -112,18 +158,34 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationGamepadCamera")
   @js.native
-  class VRDeviceOrientationGamepadCamera protected ()
+  open class VRDeviceOrientationGamepadCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationGamepadCameraMod.VRDeviceOrientationGamepadCamera {
     /**
       * Creates a new VRDeviceOrientationGamepadCamera
       * @param name defines camera name
       * @param position defines the start position of the camera
       * @param scene defines the scene the camera belongs to
-      * @param compensateDistortion defines if the camera needs to compensate the lens distorsion
+      * @param compensateDistortion defines if the camera needs to compensate the lens distortion
       * @param vrCameraMetrics defines the vr metrics associated to the camera
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, compensateDistortion: Boolean) = this()
     def this(name: String, position: Vector3, scene: Scene, compensateDistortion: Boolean) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      compensateDistortion: Boolean,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      compensateDistortion: Unit,
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
     def this(
       name: String,
       position: Vector3,
@@ -142,7 +204,7 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "VRExperienceHelper")
   @js.native
-  class VRExperienceHelper protected ()
+  open class VRExperienceHelper protected ()
     extends typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper {
     /**
       * Instantiates a VRExperienceHelper.
@@ -177,16 +239,18 @@ object vRIndexMod {
   
   @JSImport("babylonjs/Cameras/VR/index", "WebVRFreeCamera")
   @js.native
-  class WebVRFreeCamera protected ()
+  open class WebVRFreeCamera protected ()
     extends typings.babylonjs.webVRCameraMod.WebVRFreeCamera {
     /**
       * Instantiates a WebVRFreeCamera.
       * @param name The name of the WebVRFreeCamera
       * @param position The starting anchor position for the camera
       * @param scene The scene the camera belongs to
-      * @param webVROptions a set of customizable options for the webVRCamera
+      * @param _webVROptions a set of customizable options for the webVRCamera
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
-    def this(name: String, position: Vector3, scene: Scene, webVROptions: WebVROptions) = this()
+    def this(name: String, position: Vector3, scene: Unit, _webVROptions: WebVROptions) = this()
+    def this(name: String, position: Vector3, scene: Scene, _webVROptions: WebVROptions) = this()
   }
 }

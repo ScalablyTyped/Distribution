@@ -10,11 +10,10 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
-import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.Ref
 import typings.reactMdAutocomplete.anon.FilterFunctionOptions
-import typings.reactMdAutocomplete.anon.RequiredTransitionHooks
+import typings.reactMdAutocomplete.anon.RequiredFixedPositioningT
 import typings.reactMdAutocomplete.typesMod.AutoCompleteData
 import typings.reactMdAutocomplete.typesMod.AutoCompleteFilterFunction
 import typings.reactMdAutocomplete.typesMod.AutoCompleteHandler
@@ -22,6 +21,7 @@ import typings.reactMdAutocomplete.typesMod.AutoCompleteListboxPositionOptions
 import typings.reactMdAutocomplete.typesMod.AutoCompleteResult
 import typings.reactMdList.listMod.ListElement
 import typings.reactMdUtils.useKeyboardMovementMod.ItemRefList
+import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
@@ -125,14 +125,14 @@ object useAutoCompleteMod {
     
     var itemRefs: ItemRefList[HTMLLIElement] = js.native
     
-    var listboxRef: MutableRefObject[ListElement | Null] = js.native
+    var listboxRef: Ref[ListElement] = js.native
     
     var `match`: String = js.native
     
     def ref(): Unit = js.native
     def ref(instance: HTMLInputElement): Unit = js.native
     
-    var transitionHooks: RequiredTransitionHooks = js.native
+    var transitionHooks: RequiredFixedPositioningT = js.native
     
     var value: String = js.native
     
@@ -161,7 +161,7 @@ object useAutoCompleteMod {
     
     extension [Self <: EventHandlers](x: Self) {
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -173,7 +173,7 @@ object useAutoCompleteMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -250,7 +250,7 @@ object useAutoCompleteMod {
       
       inline def setData(value: js.Array[AutoCompleteData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: AutoCompleteData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: AutoCompleteData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFilter(value: AutoCompleteFilterFunction[js.Object]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

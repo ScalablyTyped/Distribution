@@ -10,15 +10,12 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | react-table-filter |
 | Keywords           | react, reactjs, react-table, react-table-filter, tablefilter, react-component, react-filter-table |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 19497 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5500.333333333333 |
+| # stars            | 50.0 |
 
 ## Links
-- [Homepage](https://github.com/cheekujha/react-table-filter#readme)
-- [Bugs](https://github.com/cheekujha/react-table-filter/issues)
-- [Repository](https://github.com/cheekujha/react-table-filter)
 - [Npm](https://www.npmjs.com/package/react-table-filter)
     
 

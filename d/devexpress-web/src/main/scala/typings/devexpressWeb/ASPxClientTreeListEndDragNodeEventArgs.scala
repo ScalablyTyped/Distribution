@@ -14,17 +14,17 @@ trait ASPxClientTreeListEndDragNodeEventArgs
   /**
     * Gets the target element.
     */
-  var targetElement: js.Any
+  var targetElement: Any
 }
 object ASPxClientTreeListEndDragNodeEventArgs {
   
-  inline def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String, targetElement: js.Any): ASPxClientTreeListEndDragNodeEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: Any, nodeKey: String, targetElement: Any): ASPxClientTreeListEndDragNodeEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], targetElement = targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListEndDragNodeEventArgs]
   }
   
   extension [Self <: ASPxClientTreeListEndDragNodeEventArgs](x: Self) {
     
-    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
   }
 }

@@ -31,6 +31,14 @@ object reactPlotlyJsStrings {
   inline def d: d = "d".asInstanceOf[d]
   
   @js.native
+  sealed trait event extends StObject
+  inline def event: event = "event".asInstanceOf[event]
+  
+  @js.native
+  sealed trait eventPlussignselect extends StObject
+  inline def eventPlussignselect: eventPlussignselect = "event+select".asInstanceOf[eventPlussignselect]
+  
+  @js.native
   sealed trait fraction extends StObject
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
@@ -57,6 +65,10 @@ object reactPlotlyJsStrings {
   @js.native
   sealed trait lasso extends StObject
   inline def lasso: lasso = "lasso".asInstanceOf[lasso]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait opaque extends StObject

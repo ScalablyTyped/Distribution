@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdownlint
 
-Typings are for version 0.21.1
+Typings are for version 0.26.2
 
 ## Library description:
 A Node.js style checker and lint tool for Markdown/CommonMark files.
@@ -10,10 +10,10 @@ A Node.js style checker and lint tool for Markdown/CommonMark files.
 | ------------------ | :-------------: |
 | Full name          | markdownlint |
 | Keywords           | markdown, lint, md, CommonMark, markdownlint |
-| # releases         | 20 |
-| # dependents       | 37 |
-| # downloads        | 6530259 |
-| # stars            | 5 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1197251.0 |
+| # stars            | 3246.0 |
 
 ## Links
 - [Homepage](https://github.com/DavidAnson/markdownlint)

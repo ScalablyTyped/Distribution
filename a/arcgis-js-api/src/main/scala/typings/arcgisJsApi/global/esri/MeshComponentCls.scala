@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html)
   */
-class MeshComponentCls ()
+open class MeshComponentCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MeshComponent {
   def this(properties: MeshComponentProperties) = this()

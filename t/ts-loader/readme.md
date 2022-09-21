@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-loader
 
-Typings are for version 6.2.2
+Typings are for version 9.4.1
 
 ## Library description:
 TypeScript loader for webpack
@@ -10,10 +10,10 @@ TypeScript loader for webpack
 | ------------------ | :-------------: |
 | Full name          | ts-loader |
 | Keywords           | ts-loader, typescript-loader, webpack, loader, typescript, ts |
-| # releases         | 40 |
-| # dependents       | 2367 |
-| # downloads        | 127870007 |
-| # stars            | 29 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3097117333333332E7 |
+| # stars            | 3282.0 |
 
 ## Links
 - [Homepage](https://github.com/TypeStrong/ts-loader)

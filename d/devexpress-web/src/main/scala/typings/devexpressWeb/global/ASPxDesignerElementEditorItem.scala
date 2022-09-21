@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerElementEditorItem")
 @js.native
-class ASPxDesignerElementEditorItem ()
+open class ASPxDesignerElementEditorItem ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerElementEditorItem {
   
@@ -14,5 +14,5 @@ class ASPxDesignerElementEditorItem ()
   var displayValue: String = js.native
   
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

@@ -1,11 +1,13 @@
 package typings.vscodeLanguageserverProtocol
 
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeJsonrpc.mod.HandlerResult
-import typings.vscodeJsonrpc.mod.RequestHandler
-import typings.vscodeLanguageserverProtocol.anon.Configuration
+import typings.vscodeJsonrpc.connectionMod.HandlerResult
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashconfiguration
+import typings.vscodeLanguageserverTypes.mod.LSPAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,40 +16,26 @@ object protocolConfigurationMod {
   
   object ConfigurationRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.configuration", "ConfigurationRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.configuration", "ConfigurationRequest.messageDirection")
     @js.native
-    val `type`: ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[js.Any], scala.Nothing, Unit, Unit] = js.native
+    val messageDirection: MessageDirection = js.native
     
-    type HandlerSignature = RequestHandler[ConfigurationParams, js.Array[js.Any], Unit]
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.configuration", "ConfigurationRequest.method")
+    @js.native
+    val method: workspaceSlashconfiguration = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.configuration", "ConfigurationRequest.type")
+    @js.native
+    val `type`: ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
+    
+    type HandlerSignature = RequestHandler[ConfigurationParams, js.Array[LSPAny], Unit]
     
     type MiddlewareSignature = js.Function3[
         /* params */ ConfigurationParams, 
         /* token */ CancellationToken, 
         /* next */ HandlerSignature, 
-        HandlerResult[js.Array[js.Any], Unit]
+        HandlerResult[js.Array[LSPAny], Unit]
       ]
-  }
-  
-  trait ConfigurationClientCapabilities extends StObject {
-    
-    /**
-      * The workspace client capabilities
-      */
-    var workspace: js.UndefOr[Configuration] = js.undefined
-  }
-  object ConfigurationClientCapabilities {
-    
-    inline def apply(): ConfigurationClientCapabilities = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ConfigurationClientCapabilities]
-    }
-    
-    extension [Self <: ConfigurationClientCapabilities](x: Self) {
-      
-      inline def setWorkspace(value: Configuration): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
-      
-      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
-    }
   }
   
   trait ConfigurationItem extends StObject {
@@ -96,7 +84,7 @@ object protocolConfigurationMod {
       
       inline def setItems(value: js.Array[ConfigurationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
 }

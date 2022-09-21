@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VASTClientCustomStorage
   extends StObject
-     with /* key */ StringDictionary[js.Any | js.Function0[js.Any]] {
+     with /* key */ StringDictionary[Any | js.Function0[Any]] {
   
   def getItem(key: String): String | Null
   

@@ -1,7 +1,9 @@
 package typings.reactIntl
 
 import org.scalablytyped.runtime.Shortcut
-import typings.formatjsIntl.srcTypesMod.CustomFormatConfig
+import typings.formatjsIntl.formatjsIntlStrings.`best fit`
+import typings.formatjsIntl.formatjsIntlStrings.basic
+import typings.formatjsIntl.srcTypesMod.FormatDateOptions
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -15,10 +17,9 @@ object componentsDateTimeRangeMod extends Shortcut {
   @js.native
   val default: FC[Props] = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.DateTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.DateTimeFormatOptions */ trait Props
+  trait Props
     extends StObject
-       with CustomFormatConfig {
+       with FormatDateOptions {
     
     var children: js.UndefOr[js.Function1[/* value */ ReactNode, ReactElement | Null]] = js.undefined
     
@@ -29,10 +30,11 @@ object componentsDateTimeRangeMod extends Shortcut {
   object Props {
     
     inline def apply(
+      formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic]),
       from: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallStartDateEndDate>[0] */ js.Any,
       to: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallStartDateEndDate>[1] */ js.Any
     ): Props = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     

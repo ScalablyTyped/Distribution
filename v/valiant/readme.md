@@ -11,9 +11,9 @@ JavaScript interval arithmetic library
 | Full name          | valiant |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 547 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 41.333333333333336 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/tweetdeck/valiant#readme)

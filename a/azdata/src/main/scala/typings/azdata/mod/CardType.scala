@@ -19,6 +19,15 @@ object CardType extends StObject {
        with CardType
   /* "Details" */ val Details: typings.azdata.mod.CardType.Details & String = js.native
   
+  /**
+    * Card with the icon as a background image
+    */
+  @js.native
+  sealed trait Image
+    extends StObject
+       with CardType
+  /* "Image" */ val Image: typings.azdata.mod.CardType.Image & String = js.native
+  
   @js.native
   sealed trait ListItem
     extends StObject

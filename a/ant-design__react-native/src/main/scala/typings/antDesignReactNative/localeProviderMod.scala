@@ -1,7 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.AntLocale
-import typings.antDesignReactNative.anon.AntLocaleDatePicker
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignReactNative.anon.BackspaceLabel
 import typings.antDesignReactNative.anon.ButtonText
 import typings.antDesignReactNative.anon.CancelText
@@ -11,34 +10,23 @@ import typings.antDesignReactNative.anon.Done
 import typings.antDesignReactNative.anon.Extra
 import typings.antDesignReactNative.anon.NextText
 import typings.antDesignReactNative.anon.PartialLocale
-import typings.react.mod.Component
-import typings.react.mod.ReactElement
+import typings.react.mod.Context
+import typings.react.mod.MemoExoticComponent
+import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object localeProviderMod {
+object localeProviderMod extends Shortcut {
   
   @JSImport("@ant-design/react-native/lib/locale-provider", JSImport.Default)
   @js.native
-  class default () extends LocaleProvider
-  /* static members */
-  object default {
-    
-    @JSImport("@ant-design/react-native/lib/locale-provider", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/react-native/lib/locale-provider", "default.childContextTypes")
-    @js.native
-    def childContextTypes: AntLocale = js.native
-    inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/react-native/lib/locale-provider", "default.propTypes")
-    @js.native
-    def propTypes: typings.antDesignReactNative.anon.Locale = js.native
-    inline def propTypes_=(x: typings.antDesignReactNative.anon.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
-  }
+  val default: MemoExoticComponent[js.Function1[/* props */ LocaleProviderProps, Element]] = js.native
+  
+  @JSImport("@ant-design/react-native/lib/locale-provider", "LocaleContext")
+  @js.native
+  val LocaleContext: Context[js.Object] = js.native
   
   trait Locale extends StObject {
     
@@ -100,16 +88,9 @@ object localeProviderMod {
     }
   }
   
-  @js.native
-  trait LocaleProvider
-    extends Component[LocaleProviderProps, js.Any, js.Any] {
-    
-    def getChildContext(): AntLocaleDatePicker = js.native
-  }
-  
   trait LocaleProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var locale: js.UndefOr[PartialLocale] = js.undefined
   }
@@ -122,7 +103,7 @@ object localeProviderMod {
     
     extension [Self <: LocaleProviderProps](x: Self) {
       
-      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -131,4 +112,9 @@ object localeProviderMod {
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     }
   }
+  
+  type _To = MemoExoticComponent[js.Function1[/* props */ LocaleProviderProps, Element]]
+  
+  /* This means you don't have to write `default`, but can instead just say `localeProviderMod.foo` */
+  override def _to: MemoExoticComponent[js.Function1[/* props */ LocaleProviderProps, Element]] = default
 }

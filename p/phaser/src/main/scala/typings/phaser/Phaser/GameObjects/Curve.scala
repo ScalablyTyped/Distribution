@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +31,11 @@ trait Curve
     * This call can be chained.
     * @param value The value to set the smoothness to.
     */
-  def setSmoothness(value: integer): this.type = js.native
+  def setSmoothness(value: Double): this.type = js.native
   
   /**
     * The smoothness of the curve. The number of points used when rendering it.
     * Increase this value for smoother curves, at the cost of more polygons being rendered.
     */
-  var smoothness: integer = js.native
+  var smoothness: Double = js.native
 }

@@ -20,6 +20,8 @@ trait FormatParams extends StObject {
   
   var fm: js.UndefOr[ImgixParamType] = js.undefined
   
+  var iptc: js.UndefOr[ImgixParamType] = js.undefined
+  
   var lossless: js.UndefOr[ImgixParamType] = js.undefined
   
   var q: js.UndefOr[ImgixParamType] = js.undefined
@@ -60,6 +62,10 @@ object FormatParams {
     inline def setFm(value: ImgixParamType): Self = StObject.set(x, "fm", value.asInstanceOf[js.Any])
     
     inline def setFmUndefined: Self = StObject.set(x, "fm", js.undefined)
+    
+    inline def setIptc(value: ImgixParamType): Self = StObject.set(x, "iptc", value.asInstanceOf[js.Any])
+    
+    inline def setIptcUndefined: Self = StObject.set(x, "iptc", js.undefined)
     
     inline def setLossless(value: ImgixParamType): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
     

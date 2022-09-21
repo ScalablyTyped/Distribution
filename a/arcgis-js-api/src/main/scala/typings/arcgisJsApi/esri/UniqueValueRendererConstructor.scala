@@ -17,5 +17,5 @@ trait UniqueValueRendererConstructor
 Instantiable0[UniqueValueRenderer]
      with Instantiable1[/* properties */ UniqueValueRendererProperties, UniqueValueRenderer] {
   
-  def fromJSON(json: js.Any): UniqueValueRenderer = js.native
+  def fromJSON(json: Any): UniqueValueRenderer = js.native
 }

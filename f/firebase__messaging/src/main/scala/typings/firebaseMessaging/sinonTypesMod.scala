@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sinonTypesMod {
   
-  type Spy[T /* <: js.Function1[/* args */ js.Any, js.Any] */] = SinonSpy[Parameters[T], ReturnType[T]]
+  type Spy[T /* <: js.Function1[/* args */ Any, Any] */] = SinonSpy[Parameters[T], ReturnType[T]]
   
-  type Stub[T /* <: js.Function1[/* args */ js.Any, js.Any] */] = SinonStub[Parameters[T], ReturnType[T]]
+  type Stub[T /* <: js.Function1[/* args */ Any, Any] */] = SinonStub[Parameters[T], ReturnType[T]]
 }

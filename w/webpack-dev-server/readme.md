@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-dev-server
 
-Typings are for version 3.11
+Typings are for version 4.11.1
 
 ## Library description:
 Serves a webpack app. Updates the browser on changes.
@@ -10,10 +10,10 @@ Serves a webpack app. Updates the browser on changes.
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-server |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 7684 |
-| # downloads        | 365398087 |
-| # stars            | 131 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 5.0960752E7 |
+| # stars            | 7457.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack-dev-server#readme)
@@ -24,7 +24,7 @@ Serves a webpack app. Updates the browser on changes.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

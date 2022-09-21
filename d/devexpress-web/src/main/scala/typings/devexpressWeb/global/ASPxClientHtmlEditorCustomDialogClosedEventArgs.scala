@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorCustomDialogClosedEventArgs")
 @js.native
-class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected ()
+open class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorCustomDialogClosedEventArgs {
   /**
@@ -18,13 +18,13 @@ class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected ()
     * @param status An object that specifies a status that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogCloseEventArgsBase.status property.
     * @param data An object that specifies the data that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogClosedEventArgs.data property.
     */
-  def this(name: String, status: js.Any, data: js.Any) = this()
+  def this(name: String, status: Any, data: Any) = this()
   
   /**
     * Gets an object associated with the closed dialog.
     */
   /* CompleteClass */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * Gets the name that uniquely identifies the processed custom dialog.
@@ -36,5 +36,5 @@ class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected ()
     * Gets the status of the closed custom dialog.
     */
   /* CompleteClass */
-  var status: js.Any = js.native
+  var status: Any = js.native
 }

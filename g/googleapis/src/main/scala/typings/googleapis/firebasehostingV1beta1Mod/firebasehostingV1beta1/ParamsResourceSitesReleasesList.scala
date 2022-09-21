@@ -1,9 +1,5 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +9,17 @@ trait ParamsResourceSitesReleasesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The page size to return. Defaults to 100.
+    * The maximum number of releases to return. The service may return a lower number if fewer releases exist than this maximum number. If unspecified, defaults to 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The next_page_token from a previous request, if provided.
+    * A token from a previous call to `releases.list` or `channels.releases.list` that tells the server where to resume listing.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The parent for which to list files, in the format:
-    * <code>sites/<var>site-name</var></code>
+    * Required. The site or channel for which to list releases, in either of the following formats: - sites/SITE_ID - sites/SITE_ID/channels/CHANNEL_ID
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -41,10 +31,6 @@ object ParamsResourceSitesReleasesList {
   }
   
   extension [Self <: ParamsResourceSitesReleasesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

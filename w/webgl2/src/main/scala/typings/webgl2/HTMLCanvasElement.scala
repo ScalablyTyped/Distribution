@@ -16,20 +16,17 @@ trait HTMLCanvasElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
-  @JSName("getContext")
-  def getContext_experimentalwebgl2(contextId: `experimental-webgl2`): WebGL2RenderingContext | Null = js.native
-  @JSName("getContext")
-  def getContext_experimentalwebgl2(contextId: `experimental-webgl2`, contextAttributes: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
-  @JSName("getContext")
-  def getContext_webgl2(contextId: typings.webgl2.webgl2Strings.webgl2): WebGL2RenderingContext | Null = js.native
-  @JSName("getContext")
-  def getContext_webgl2(contextId: typings.webgl2.webgl2Strings.webgl2, contextAttributes: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
+  def getContext(contextId: typings.webgl2.webgl2Strings.webgl2 | `experimental-webgl2`): WebGL2RenderingContext | Null = js.native
+  def getContext(
+    contextId: typings.webgl2.webgl2Strings.webgl2 | `experimental-webgl2`,
+    contextAttributes: WebGLContextAttributes
+  ): WebGL2RenderingContext | Null = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native

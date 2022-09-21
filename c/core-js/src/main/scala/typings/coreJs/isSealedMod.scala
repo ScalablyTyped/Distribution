@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object isSealedMod {
   
   /* was `typeof core.Object.isSealed` */
-  inline def apply(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(o: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/object/is-sealed", JSImport.Namespace)
   @js.native

@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Google Cloud Translation API
-  *
-  * The Google Cloud Translation API lets websites and programs integrate with
-  * Google Translate programmatically.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const translate = google.translate('v2');
-  *
-  * @namespace translate
-  * @type {Function}
-  * @version v2
-  * @variation v2
-  * @param {object=} options Options for Translate
-  */
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Translate")
 @js.native
-class Translate protected () extends StObject {
+open class Translate protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

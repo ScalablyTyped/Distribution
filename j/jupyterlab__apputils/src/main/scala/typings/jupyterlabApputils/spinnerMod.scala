@@ -12,5 +12,5 @@ object spinnerMod {
   /**
     * Construct a spinner widget.
     */
-  class Spinner () extends Widget
+  open class Spinner () extends Widget
 }

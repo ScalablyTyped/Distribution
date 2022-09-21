@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON response template for List Schema operation in Directory API.
-  */
 trait SchemaSchemas extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of UserSchema objects.
@@ -35,9 +32,13 @@ object SchemaSchemas {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -45,6 +46,6 @@ object SchemaSchemas {
     
     inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
-    inline def setSchemasVarargs(value: SchemaSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaSchema*): Self = StObject.set(x, "schemas", js.Array(value*))
   }
 }

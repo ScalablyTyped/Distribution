@@ -10,10 +10,10 @@ core method for otplib
 | ------------------ | :-------------: |
 | Full name          | @otplib/core |
 | Keywords           | otplib-core |
-| # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 1552867 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 723350.6666666666 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

@@ -11,14 +11,14 @@ trait SignatureLinesCollection extends StObject {
   /* private */ @JSName("InfoPath.SignatureLinesCollection_typekey")
   var InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection
   
-  def Item(varIndex: js.Any): SignatureLineObject
+  def Item(varIndex: Any): SignatureLineObject
 }
 object SignatureLinesCollection {
   
   inline def apply(
     Count: Double,
     InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection,
-    Item: js.Any => SignatureLineObject
+    Item: Any => SignatureLineObject
   ): SignatureLinesCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.SignatureLinesCollection_typekey")(InfoPathDotSignatureLinesCollection_typekey.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object SignatureLinesCollection {
     
     inline def setInfoPathDotSignatureLinesCollection_typekey(value: SignatureLinesCollection): Self = StObject.set(x, "InfoPath.SignatureLinesCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SignatureLineObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SignatureLineObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

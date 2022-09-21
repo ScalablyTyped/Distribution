@@ -13,7 +13,7 @@ object DataProtection {
   
   @JSGlobal("Windows.Security.Cryptography.DataProtection.DataProtectionProvider")
   @js.native
-  class DataProtectionProvider ()
+  open class DataProtectionProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.DataProtection.DataProtectionProvider {
     def this(protectionDescriptor: String) = this()

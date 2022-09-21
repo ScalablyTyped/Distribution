@@ -1,6 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In order to add the reminder to your calendar, you must call the save() function.
   * @see https://docs.scriptable.app/reminder/#-new-reminder
   */
-class Reminder ()
+open class Reminder ()
   extends StObject
      with typings.scriptableIos.Reminder {
   
@@ -45,21 +44,21 @@ class Reminder ()
     * @see https://docs.scriptable.app/reminder/#completiondate
     */
   /* CompleteClass */
-  var completionDate: Date = js.native
+  var completionDate: js.Date = js.native
   
   /**
     * _Creation date of reminder._
     * @see https://docs.scriptable.app/reminder/#creationdate
     */
   /* CompleteClass */
-  var creationDate: Date = js.native
+  var creationDate: js.Date = js.native
   
   /**
     * _Due date of reminder._
     * @see https://docs.scriptable.app/reminder/#duedate
     */
   /* CompleteClass */
-  var dueDate: Date = js.native
+  var dueDate: js.Date = js.native
   
   /**
     * _Whether the due date includes a time._
@@ -78,7 +77,7 @@ class Reminder ()
   var identifier: String = js.native
   
   /**
-    * _Whether the reminder is completed_
+    * _Whether the reminder is completed._
     * @see https://docs.scriptable.app/reminder/#iscompleted
     */
   /* CompleteClass */
@@ -173,8 +172,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduebetween
     */
   /* static member */
-  inline def allDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  inline def allDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueBetween(startDate: js.Date, endDate: js.Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueBetween(startDate: js.Date, endDate: js.Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due last week._
@@ -249,8 +248,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedbetween
     */
   /* static member */
-  inline def completedBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  inline def completedBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedBetween(startDate: js.Date, endDate: js.Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedBetween(startDate: js.Date, endDate: js.Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders._
@@ -260,8 +259,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduebetween
     */
   /* static member */
-  inline def completedDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  inline def completedDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueBetween(startDate: js.Date, endDate: js.Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueBetween(startDate: js.Date, endDate: js.Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due last week._
@@ -358,8 +357,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduebetween
     */
   /* static member */
-  inline def incompleteDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  inline def incompleteDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueBetween(startDate: js.Date, endDate: js.Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueBetween(startDate: js.Date, endDate: js.Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due last week._

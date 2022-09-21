@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReactPortal
   extends StObject
-     with ReactElement[js.Any, String | JSXElementConstructor[js.Any]] {
+     with ReactElement[Any, String | JSXElementConstructor[Any]] {
   
   var children: ReactNode
 }
 object ReactPortal {
   
-  inline def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): ReactPortal = {
+  inline def apply(props: Any, `type`: String | JSXElementConstructor[Any]): ReactPortal = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactPortal]

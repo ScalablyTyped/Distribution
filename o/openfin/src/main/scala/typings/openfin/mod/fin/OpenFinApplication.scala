@@ -101,9 +101,9 @@ trait OpenFinApplication extends StObject {
     * Retrieves the JSON manifest that was used to create the application. Invokes the error callback if the application was not created from a manifest.
     */
   def getManifest(): Unit = js.native
-  def getManifest(callback: js.Function1[/* manifest */ js.Any, Unit]): Unit = js.native
+  def getManifest(callback: js.Function1[/* manifest */ Any, Unit]): Unit = js.native
   def getManifest(
-    callback: js.Function1[/* manifest */ js.Any, Unit],
+    callback: js.Function1[/* manifest */ Any, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def getManifest(callback: Unit, errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
@@ -193,14 +193,14 @@ trait OpenFinApplication extends StObject {
     `type`: OpenFinApplicationEventType,
     previouslyRegisteredListener: js.Function1[
       /* event */ ApplicationBaseEvent | TrayIconClickedEvent | WindowEvent | WindowAlertRequestedEvent | WindowAuthRequested | WindowNavigationRejectedEvent | WindowEndLoadEvent, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def removeEventListener(
     `type`: OpenFinApplicationEventType,
     previouslyRegisteredListener: js.Function1[
       /* event */ ApplicationBaseEvent | TrayIconClickedEvent | WindowEvent | WindowAlertRequestedEvent | WindowAuthRequested | WindowNavigationRejectedEvent | WindowEndLoadEvent, 
-      js.Any
+      Any
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
@@ -208,7 +208,7 @@ trait OpenFinApplication extends StObject {
     `type`: OpenFinApplicationEventType,
     previouslyRegisteredListener: js.Function1[
       /* event */ ApplicationBaseEvent | TrayIconClickedEvent | WindowEvent | WindowAlertRequestedEvent | WindowAuthRequested | WindowNavigationRejectedEvent | WindowEndLoadEvent, 
-      js.Any
+      Any
     ],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
@@ -217,7 +217,7 @@ trait OpenFinApplication extends StObject {
     `type`: OpenFinApplicationEventType,
     previouslyRegisteredListener: js.Function1[
       /* event */ ApplicationBaseEvent | TrayIconClickedEvent | WindowEvent | WindowAlertRequestedEvent | WindowAuthRequested | WindowNavigationRejectedEvent | WindowEndLoadEvent, 
-      js.Any
+      Any
     ],
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]

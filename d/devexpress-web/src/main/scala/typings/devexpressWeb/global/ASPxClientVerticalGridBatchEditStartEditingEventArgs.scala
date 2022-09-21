@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditStartEditingEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditStartEditingEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditStartEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditStartEditingEventArgs {
   /**
@@ -21,11 +21,11 @@ class ASPxClientVerticalGridBatchEditStartEditingEventArgs protected ()
   def this(
     visibleIndex: Double,
     focusedRow: typings.devexpressWeb.ASPxClientVerticalGridRow,
-    recordValues: js.Any
+    recordValues: Any
   ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -40,7 +40,7 @@ class ASPxClientVerticalGridBatchEditStartEditingEventArgs protected ()
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var recordValues: js.Any = js.native
+  var recordValues: Any = js.native
   
   /**
     * Gets the visible index of the record whose cells are about to be edited.

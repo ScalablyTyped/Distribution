@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateStackInstancesOutput extends StObject {
   
   /**
-    * The unique identifier for this stack set operation. 
+    * The unique identifier for this stack set operation.
     */
   var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
 }

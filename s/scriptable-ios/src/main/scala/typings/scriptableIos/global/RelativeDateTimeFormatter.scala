@@ -1,6 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The formatter creates a textual representation of the time between two points in time.
   * @see https://docs.scriptable.app/relativedatetimeformatter/#-new-relativedatetimeformatter
   */
-class RelativeDateTimeFormatter ()
+open class RelativeDateTimeFormatter ()
   extends StObject
      with typings.scriptableIos.RelativeDateTimeFormatter {
   
@@ -42,7 +41,7 @@ class RelativeDateTimeFormatter ()
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-string
     */
   /* CompleteClass */
-  override def string(date: Date, referenceDate: Date): String = js.native
+  override def string(date: js.Date, referenceDate: js.Date): String = js.native
   
   /**
     * _Prefers named dates and times._

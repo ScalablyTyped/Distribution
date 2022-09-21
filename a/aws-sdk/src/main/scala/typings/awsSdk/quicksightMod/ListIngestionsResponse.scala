@@ -14,12 +14,12 @@ trait ListIngestionsResponse extends StObject {
   /**
     * The token for the next set of results, or null if there are no more results.
     */
-  var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
-  var RequestId: js.UndefOr[java.lang.String] = js.undefined
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
@@ -39,13 +39,13 @@ object ListIngestionsResponse {
     
     inline def setIngestionsUndefined: Self = StObject.set(x, "Ingestions", js.undefined)
     
-    inline def setIngestionsVarargs(value: Ingestion*): Self = StObject.set(x, "Ingestions", js.Array(value :_*))
+    inline def setIngestionsVarargs(value: Ingestion*): Self = StObject.set(x, "Ingestions", js.Array(value*))
     
-    inline def setNextToken(value: java.lang.String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setRequestId(value: java.lang.String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     

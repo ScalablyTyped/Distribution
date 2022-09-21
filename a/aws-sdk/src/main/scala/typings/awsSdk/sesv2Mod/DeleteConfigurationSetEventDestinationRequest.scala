@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteConfigurationSetEventDestinationRequest extends StObject {
   
   /**
-    * The name of the configuration set that contains the event destination that you want to delete.
+    * The name of the configuration set that contains the event destination to delete.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
-    * The name of the event destination that you want to delete.
+    * The name of the event destination to delete.
     */
   var EventDestinationName: typings.awsSdk.sesv2Mod.EventDestinationName
 }

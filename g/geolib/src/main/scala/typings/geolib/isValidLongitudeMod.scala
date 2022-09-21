@@ -10,5 +10,5 @@ object isValidLongitudeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -10,13 +10,13 @@ Typings are for version 1.5
 | ------------------ | :-------------: |
 | Full name          | iamport-react-native |
 | Keywords           | iamport, react, react-native |
-| # releases         | 21 |
-| # dependents       | 0 |
-| # downloads        | 14038 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 8049.666666666667 |
+| # stars            | 127.0 |
 
 ## Links
-- [Homepage](https://github.com/iamport/iamport-react-native)
+- [Homepage](https://github.com/iamport/iamport-react-native#readme)
 - [Bugs](https://github.com/iamport/iamport-react-native/issues)
 - [Repository](https://github.com/iamport/iamport-react-native)
 - [Npm](https://www.npmjs.com/package/iamport-react-native)

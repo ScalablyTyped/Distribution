@@ -10,7 +10,7 @@ trait IgPopoverHeaderTemplate
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Controls whether the popover renders a functional close button

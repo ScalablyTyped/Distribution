@@ -43,7 +43,7 @@ object mod {
     * @param promisesOrValues array of anything, may contain a mix
     *      of {@link Promise}s and values
     */
-  inline def all[T](promisesOrValues: js.Array[js.Any]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+  inline def all[T](promisesOrValues: js.Array[Any]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   
   inline def attempt[T](f: Fn0[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   inline def attempt[A1, T](f: Fn1[A1, T], arg1: A1): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(f.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
@@ -246,13 +246,13 @@ object mod {
   inline def iterate[U](
     f: js.Function1[/* seed */ U, U | Promise[U]],
     predicate: js.Function1[/* value */ U, Boolean],
-    handler: js.Function1[/* value */ U, Promise[js.Any] | Unit],
+    handler: js.Function1[/* value */ U, Promise[Any] | Unit],
     seed: U
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(f.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   inline def iterate[U](
     f: js.Function1[/* seed */ U, U | Promise[U]],
     predicate: js.Function1[/* value */ U, Boolean],
-    handler: js.Function1[/* value */ U, Promise[js.Any] | Unit],
+    handler: js.Function1[/* value */ U, Promise[Any] | Unit],
     seed: Promise[U]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(f.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   
@@ -261,7 +261,7 @@ object mod {
     * @return a promise that will fulfill when *all* the input promises
     * have fulfilled, or will reject when *any one* of the input promises rejects.
     */
-  inline def join[T](promises: (js.Any | Promise[T])*): Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T]]]
+  inline def join[T](promises: (Any | Promise[T])*): Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(promises.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Promise[js.Array[T]]]
   
   inline def lift[T](f: Fn0[T]): LiftedFn0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn0[T]]
   inline def lift[A1, T](f: Fn1[A1, T]): LiftedFn1[A1, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(f.asInstanceOf[js.Any]).asInstanceOf[LiftedFn1[A1, T]]
@@ -278,15 +278,12 @@ object mod {
     * @returns a promise that will fulfill with an array of mapped values
     *  or reject if any input promise rejects.
     */
-  inline def map[T](
-    promisesOrValues: js.Array[js.Any],
-    mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, js.Any]
-  ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(promisesOrValues.asInstanceOf[js.Any], mapFunc.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def map[T](promisesOrValues: js.Array[Any], mapFunc: js.Function2[/* value */ Any, /* index */ Double, Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(promisesOrValues.asInstanceOf[js.Any], mapFunc.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
   inline def promise[T](
     resolver: js.Function2[
       /* resolve */ js.Function1[/* value */ T, Unit], 
-      /* reject */ js.Function1[/* reason */ js.Any, Unit], 
+      /* reject */ js.Function1[/* reason */ Any, Unit], 
       Unit
     ]
   ): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(resolver.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
@@ -302,8 +299,8 @@ object mod {
     * @returns a promise that will resolve to the final reduced value
     */
   inline def reduce[T](
-    promisesOrValues: js.Array[js.Any],
-    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
+    promisesOrValues: js.Array[Any],
+    reduceFunc: js.Function3[/* reduction */ T, /* value */ Any, /* index */ Double, T | Promise[T]],
     initialValue: T
   ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(promisesOrValues.asInstanceOf[js.Any], reduceFunc.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
@@ -318,12 +315,12 @@ object mod {
     * @returns a promise that will resolve to the final reduced value
     */
   inline def reduceRight[T](
-    promisesOrValues: js.Array[js.Any],
-    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
+    promisesOrValues: js.Array[Any],
+    reduceFunc: js.Function3[/* reduction */ T, /* value */ Any, /* index */ Double, T | Promise[T]],
     initialValue: T
   ): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(promisesOrValues.asInstanceOf[js.Any], reduceFunc.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  inline def reject[T](reason: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+  inline def reject[T](reason: Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   
   /**
     * Returns a resolved promise. The returned promise will be
@@ -348,7 +345,7 @@ object mod {
     * @param promisesOrValues array of anything, may contain a mix
     *      of {@link Promise}s and values
     */
-  inline def settle[T](promisesOrValues: js.Array[js.Any]): Promise[js.Array[Descriptor[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settle")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[Descriptor[T]]]]
+  inline def settle[T](promisesOrValues: js.Array[Any]): Promise[js.Array[Descriptor[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settle")(promisesOrValues.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[Descriptor[T]]]]
   
   /**
     * Similar to when/iterate, when.unfold generates a potentially infinite stream of promises by repeatedly calling
@@ -368,7 +365,7 @@ object mod {
       (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
     ],
     predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-    handler: js.Function1[/* value */ T, Promise[js.Any] | Unit],
+    handler: js.Function1[/* value */ T, Promise[Any] | Unit],
     seed: U
   ): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(unspool.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   inline def unfold[T, U](
@@ -377,7 +374,7 @@ object mod {
       (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
     ],
     predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-    handler: js.Function1[/* value */ T, Promise[js.Any] | Unit],
+    handler: js.Function1[/* value */ T, Promise[Any] | Unit],
     seed: Promise[U]
   ): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(unspool.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
 }

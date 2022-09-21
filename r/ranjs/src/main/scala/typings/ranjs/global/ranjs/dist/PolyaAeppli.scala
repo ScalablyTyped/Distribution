@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.PolyaAeppli")
 @js.native
-class PolyaAeppli ()
+open class PolyaAeppli ()
   extends typings.ranjs.mod.dist.PolyaAeppli {
   def this(lambda: Double) = this()
   def this(lambda: Double, theta: Double) = this()

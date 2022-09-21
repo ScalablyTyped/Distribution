@@ -52,13 +52,13 @@ object RecipeOptions {
     
     inline def setFontSrcPathUndefined: Self = StObject.set(x, "fontSrcPath", js.undefined)
     
-    inline def setFontSrcPathVarargs(value: String*): Self = StObject.set(x, "fontSrcPath", js.Array(value :_*))
+    inline def setFontSrcPathVarargs(value: String*): Self = StObject.set(x, "fontSrcPath", js.Array(value*))
     
     inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     

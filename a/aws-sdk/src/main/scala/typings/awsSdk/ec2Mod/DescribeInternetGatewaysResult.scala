@@ -29,7 +29,7 @@ object DescribeInternetGatewaysResult {
     
     inline def setInternetGatewaysUndefined: Self = StObject.set(x, "InternetGateways", js.undefined)
     
-    inline def setInternetGatewaysVarargs(value: InternetGateway*): Self = StObject.set(x, "InternetGateways", js.Array(value :_*))
+    inline def setInternetGatewaysVarargs(value: InternetGateway*): Self = StObject.set(x, "InternetGateways", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

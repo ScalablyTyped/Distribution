@@ -1,6 +1,7 @@
 package typings.passport
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Handler
 import typings.passport.mod.AuthenticateOptions
 import typings.passport.mod.Authenticator
@@ -16,6 +17,27 @@ object anon {
   trait `0`
     extends StObject
        with Instantiable0[Strategy & StrategyCreatedStatic]
+  
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var message: js.UndefOr[String] = js.undefined
+  }
+  object Dictkey {
+    
+    inline def apply(): Dictkey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dictkey]
+    }
+    
+    extension [Self <: Dictkey](x: Self) {
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    }
+  }
   
   trait FamilyName extends StObject {
     
@@ -47,7 +69,26 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable0[Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]]
+       with Instantiable0[Authenticator[Handler, Any, Any, AuthenticateOptions]]
+  
+  trait KeepSessionInfo extends StObject {
+    
+    var keepSessionInfo: js.UndefOr[Boolean] = js.undefined
+  }
+  object KeepSessionInfo {
+    
+    inline def apply(): KeepSessionInfo = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KeepSessionInfo]
+    }
+    
+    extension [Self <: KeepSessionInfo](x: Self) {
+      
+      inline def setKeepSessionInfo(value: Boolean): Self = StObject.set(x, "keepSessionInfo", value.asInstanceOf[js.Any])
+      
+      inline def setKeepSessionInfoUndefined: Self = StObject.set(x, "keepSessionInfo", js.undefined)
+    }
+  }
   
   trait PauseStream extends StObject {
     

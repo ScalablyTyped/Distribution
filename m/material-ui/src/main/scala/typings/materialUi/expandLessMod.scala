@@ -10,10 +10,10 @@ object expandLessMod {
   
   @JSImport("material-ui/svg-icons/navigation/expand-less", JSImport.Default)
   @js.native
-  class default () extends NavigationExpandLess
+  open class default () extends NavigationExpandLess
   
   @JSImport("material-ui/svg-icons/navigation/expand-less", "NavigationExpandLess")
   @js.native
-  class NavigationExpandLess ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationExpandLess ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

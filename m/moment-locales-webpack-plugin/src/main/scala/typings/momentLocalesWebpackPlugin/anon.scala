@@ -31,7 +31,7 @@ object anon {
       
       inline def setLocalesToKeepUndefined: Self = StObject.set(x, "localesToKeep", js.undefined)
       
-      inline def setLocalesToKeepVarargs(value: String*): Self = StObject.set(x, "localesToKeep", js.Array(value :_*))
+      inline def setLocalesToKeepVarargs(value: String*): Self = StObject.set(x, "localesToKeep", js.Array(value*))
     }
   }
 }

@@ -8,7 +8,7 @@ trait Participant
   extends StObject
      with Entity {
   
-  // The participant of the participant.
+  // Information about the participant.
   var info: js.UndefOr[ParticipantInfo] = js.undefined
   
   // true if the participant is in lobby.
@@ -19,6 +19,9 @@ trait Participant
   
   // The list of media streams.
   var mediaStreams: js.UndefOr[NullableOption[js.Array[MediaStream]]] = js.undefined
+  
+  // A blob of data provided by the participant in the roster.
+  var metadata: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Information about whether the participant has recording capability.
   var recordingInfo: js.UndefOr[NullableOption[RecordingInfo]] = js.undefined
@@ -50,7 +53,13 @@ object Participant {
     
     inline def setMediaStreamsUndefined: Self = StObject.set(x, "mediaStreams", js.undefined)
     
-    inline def setMediaStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "mediaStreams", js.Array(value :_*))
+    inline def setMediaStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "mediaStreams", js.Array(value*))
+    
+    inline def setMetadata(value: NullableOption[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setRecordingInfo(value: NullableOption[RecordingInfo]): Self = StObject.set(x, "recordingInfo", value.asInstanceOf[js.Any])
     

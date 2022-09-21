@@ -28,7 +28,7 @@ object ITpStateDeleteResponse {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

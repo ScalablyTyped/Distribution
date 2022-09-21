@@ -19,7 +19,7 @@ object mod {
   type AsyncFilter = js.Function3[
     /* item */ File | FileLikeObject, 
     /* options */ js.UndefOr[js.Object], 
-    /* deferred */ IDeferred[js.Any], 
+    /* deferred */ IDeferred[Any], 
     Unit
   ]
   
@@ -199,7 +199,7 @@ object mod {
       
       inline def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
+      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value*))
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -252,7 +252,7 @@ object mod {
     /**
       * Equals File.lastModifiedDate
       */
-    var lastModifiedDate: js.Any
+    var lastModifiedDate: Any
     
     /**
       * Equals File.name
@@ -271,7 +271,7 @@ object mod {
   }
   object FileLikeObject {
     
-    inline def apply(lastModifiedDate: js.Any, name: String, size: Double, `type`: String): FileLikeObject = {
+    inline def apply(lastModifiedDate: Any, name: String, size: Double, `type`: String): FileLikeObject = {
       val __obj = js.Dynamic.literal(lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileLikeObject]
@@ -279,7 +279,7 @@ object mod {
     
     extension [Self <: FileLikeObject](x: Self) {
       
-      inline def setLastModifiedDate(value: js.Any): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Any): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -348,12 +348,12 @@ object mod {
     /**
       * Returns true if value is {File}.
       */
-    def isFile(value: js.Any): Boolean = js.native
+    def isFile(value: Any): Boolean = js.native
     
     /**
       * Returns true if value is {FileLikeObject}.
       */
-    def isFileLikeObject(value: js.Any): Boolean = js.native
+    def isFileLikeObject(value: Any): Boolean = js.native
     
     /**
       * true if uploader is html5-uploader. Read only.
@@ -554,11 +554,11 @@ object mod {
       
       inline def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
+      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value*))
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -568,7 +568,7 @@ object mod {
       
       inline def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
       
-      inline def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value*))
       
       inline def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
       
@@ -598,7 +598,7 @@ object mod {
       inline def setFnFunction2(value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
       inline def setFnFunction3(
-        value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object], /* deferred */ IDeferred[js.Any]) => Unit
+        value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object], /* deferred */ IDeferred[Any]) => Unit
       ): Self = StObject.set(x, "fn", js.Any.fromFunction3(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

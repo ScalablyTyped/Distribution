@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientQueryBuilderSaveCommandExecuteEventArgs class with the default settings.
   */
-class ASPxClientQueryBuilderSaveCommandExecuteEventArgs ()
+open class ASPxClientQueryBuilderSaveCommandExecuteEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
   

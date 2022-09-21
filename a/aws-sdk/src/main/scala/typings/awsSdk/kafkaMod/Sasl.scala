@@ -8,6 +8,13 @@ trait Sasl extends StObject {
   
   /**
     * 
+    Indicates whether IAM access control is enabled.
+    
+    */
+  var Iam: js.UndefOr[typings.awsSdk.kafkaMod.Iam] = js.undefined
+  
+  /**
+    * 
     Details for SASL/SCRAM client authentication.
     
     */
@@ -21,6 +28,10 @@ object Sasl {
   }
   
   extension [Self <: Sasl](x: Self) {
+    
+    inline def setIam(value: Iam): Self = StObject.set(x, "Iam", value.asInstanceOf[js.Any])
+    
+    inline def setIamUndefined: Self = StObject.set(x, "Iam", js.undefined)
     
     inline def setScram(value: Scram): Self = StObject.set(x, "Scram", value.asInstanceOf[js.Any])
     

@@ -12,11 +12,17 @@ trait FirstAndThirdPartyAudience extends StObject {
     */
   var activeDisplayAudienceSize: js.UndefOr[String] = js.undefined
   
+  /** The app_id matches with the type of the mobile_device_ids being uploaded. Only applicable to audience_type `CUSTOMER_MATCH_DEVICE_ID` */
+  var appId: js.UndefOr[String] = js.undefined
+  
   /** Output only. The source of the audience. */
   var audienceSource: js.UndefOr[String] = js.undefined
   
-  /** Output only. The type of the audience. */
+  /** The type of the audience. */
   var audienceType: js.UndefOr[String] = js.undefined
+  
+  /** Input only. A list of contact information to define the initial audience members. Only applicable to audience_type `CUSTOMER_MATCH_CONTACT_INFO` */
+  var contactInfoList: js.UndefOr[ContactInfoList] = js.undefined
   
   /** The user-provided description of the audience. Only applicable to first party audiences. */
   var description: js.UndefOr[String] = js.undefined
@@ -51,7 +57,7 @@ trait FirstAndThirdPartyAudience extends StObject {
   /** Output only. The unique ID of the first and third party audience. Assigned by the system. */
   var firstAndThirdPartyAudienceId: js.UndefOr[String] = js.undefined
   
-  /** Output only. Whether the audience is a first or third party audience. */
+  /** Whether the audience is a first or third party audience. */
   var firstAndThirdPartyAudienceType: js.UndefOr[String] = js.undefined
   
   /**
@@ -60,8 +66,15 @@ trait FirstAndThirdPartyAudience extends StObject {
     */
   var gmailAudienceSize: js.UndefOr[String] = js.undefined
   
-  /** The duration in days that an entry remains in the audience after the qualifying event. Only applicable to first party audiences. */
+  /**
+    * The duration in days that an entry remains in the audience after the qualifying event. If the audience has no expiration, set the value of this field to 10000. Otherwise, the set
+    * value must be greater than 0 and less than or equal to 540. Only applicable to first party audiences. This field is required if one of the following audience_type is used: *
+    * `CUSTOMER_MATCH_CONTACT_INFO` * `CUSTOMER_MATCH_DEVICE_ID`
+    */
   var membershipDurationDays: js.UndefOr[String] = js.undefined
+  
+  /** Input only. A list of mobile device IDs to define the initial audience members. Only applicable to audience_type `CUSTOMER_MATCH_DEVICE_ID` */
+  var mobileDeviceIdList: js.UndefOr[MobileDeviceIdList] = js.undefined
   
   /** Output only. The resource name of the first and third party audience. */
   var name: js.UndefOr[String] = js.undefined
@@ -85,6 +98,10 @@ object FirstAndThirdPartyAudience {
     
     inline def setActiveDisplayAudienceSizeUndefined: Self = StObject.set(x, "activeDisplayAudienceSize", js.undefined)
     
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
     inline def setAudienceSource(value: String): Self = StObject.set(x, "audienceSource", value.asInstanceOf[js.Any])
     
     inline def setAudienceSourceUndefined: Self = StObject.set(x, "audienceSource", js.undefined)
@@ -92,6 +109,10 @@ object FirstAndThirdPartyAudience {
     inline def setAudienceType(value: String): Self = StObject.set(x, "audienceType", value.asInstanceOf[js.Any])
     
     inline def setAudienceTypeUndefined: Self = StObject.set(x, "audienceType", js.undefined)
+    
+    inline def setContactInfoList(value: ContactInfoList): Self = StObject.set(x, "contactInfoList", value.asInstanceOf[js.Any])
+    
+    inline def setContactInfoListUndefined: Self = StObject.set(x, "contactInfoList", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -132,6 +153,10 @@ object FirstAndThirdPartyAudience {
     inline def setMembershipDurationDays(value: String): Self = StObject.set(x, "membershipDurationDays", value.asInstanceOf[js.Any])
     
     inline def setMembershipDurationDaysUndefined: Self = StObject.set(x, "membershipDurationDays", js.undefined)
+    
+    inline def setMobileDeviceIdList(value: MobileDeviceIdList): Self = StObject.set(x, "mobileDeviceIdList", value.asInstanceOf[js.Any])
+    
+    inline def setMobileDeviceIdListUndefined: Self = StObject.set(x, "mobileDeviceIdList", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

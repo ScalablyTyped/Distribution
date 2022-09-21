@@ -7,10 +7,9 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.namedRoutes.anon.PartialRouteOptions
 import typings.namedRoutes.anon.PartialRouterOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("named-routes", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NamedRouter {
     def this(options: PartialRouterOptions) = this()
@@ -31,19 +30,51 @@ object mod {
     def add(
       method: String,
       path: String,
-      callbacks: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+      callbacks: js.Array[
+          RequestHandler[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ]
+        ]
     ): Unit = js.native
     def add(
       method: String,
       path: String,
-      callbacks: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]],
+      callbacks: js.Array[
+          RequestHandler[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ]
+        ],
       options: PartialRouteOptions
     ): Unit = js.native
-    def add(method: String, path: String, callbacks: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
     def add(
       method: String,
       path: String,
-      callbacks: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+      callbacks: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def add(
+      method: String,
+      path: String,
+      callbacks: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       options: PartialRouteOptions
     ): Unit = js.native
     
@@ -52,18 +83,80 @@ object mod {
     def build(name: String, params: RouteParams): String = js.native
     def build(name: String, params: RouteParams, method: String): String = js.native
     
-    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Unit, next: NextFunction): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], next: NextFunction): Unit = js.native
+    def dispatch(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def dispatch(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Unit,
+      next: NextFunction
+    ): Unit = js.native
+    def dispatch(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]]
+    ): Unit = js.native
+    def dispatch(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
+      next: NextFunction
+    ): Unit = js.native
     
     def extendExpress(app: Express): NamedRouter = js.native
     def extendExpress(app: Router): NamedRouter = js.native
     
-    def `match`(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Boolean | js.Object = js.native
+    def `match`(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Boolean | js.Object = js.native
     
-    def param(callback: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): NamedRouter = js.native
-    def param(name: String, callback: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): NamedRouter = js.native
+    def param(
+      callback: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): NamedRouter = js.native
+    def param(
+      name: String,
+      callback: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): NamedRouter = js.native
     
     def registerAppHelpers(app: Express): NamedRouter = js.native
   }
@@ -137,9 +230,9 @@ object mod {
     
     // tslint:disable-next-line interface-name
     type IRouterMatcher[T] = js.Function3[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PathParams */ /* path */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PathParams */ /* path */ Any, 
         /* name */ String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestHandler */ /* repeated */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestHandler */ /* repeated */ Any, 
         T
       ]
   }

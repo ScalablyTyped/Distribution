@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StockToolsGuiDefinitionsLinesOptions extends StObject {
   
-  var arrowLine: js.UndefOr[StockToolsGuiDefinitionsLinesArrowLineOptions] = js.undefined
+  var arrowInfinityLine: js.UndefOr[StockToolsGuiDefinitionsLinesArrowInfinityLineOptions] = js.undefined
   
   var arrowRay: js.UndefOr[StockToolsGuiDefinitionsLinesArrowRayOptions] = js.undefined
   
@@ -18,7 +18,7 @@ trait StockToolsGuiDefinitionsLinesOptions extends StObject {
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   var line: js.UndefOr[StockToolsGuiDefinitionsLinesLineOptions] = js.undefined
   
@@ -37,9 +37,9 @@ object StockToolsGuiDefinitionsLinesOptions {
   
   extension [Self <: StockToolsGuiDefinitionsLinesOptions](x: Self) {
     
-    inline def setArrowLine(value: StockToolsGuiDefinitionsLinesArrowLineOptions): Self = StObject.set(x, "arrowLine", value.asInstanceOf[js.Any])
+    inline def setArrowInfinityLine(value: StockToolsGuiDefinitionsLinesArrowInfinityLineOptions): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
     
-    inline def setArrowLineUndefined: Self = StObject.set(x, "arrowLine", js.undefined)
+    inline def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
     
     inline def setArrowRay(value: StockToolsGuiDefinitionsLinesArrowRayOptions): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
     
@@ -53,11 +53,11 @@ object StockToolsGuiDefinitionsLinesOptions {
     
     inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLine(value: StockToolsGuiDefinitionsLinesLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

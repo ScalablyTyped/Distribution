@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-serializer" : "24.9.0"
+      "jest-serializer" : "28.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-serializer" : "24.9.0"
+      "jest-serializer" : "28.0.0"
     }
   ],
   "compile-devDependencies" : [

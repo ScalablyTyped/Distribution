@@ -2,6 +2,7 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Response_
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instantiates Response using the supplied options.
   *
   */
-class Response () extends StObject {
-  def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Response_[js.Any]) = this()
+open class Response () extends StObject {
+  def this(options: StringDictionary[Any]) = this()
+  def this(options: Response_[Any, Record[String, Any]]) = this()
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[Any] = js.native
   
   /**
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  def get(field: String): js.UndefOr[js.Any] = js.native
+  def get(field: String): js.UndefOr[Any] = js.native
   
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   

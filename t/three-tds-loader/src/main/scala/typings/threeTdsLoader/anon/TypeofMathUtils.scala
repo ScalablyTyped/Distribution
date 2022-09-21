@@ -16,6 +16,8 @@ trait TypeofMathUtils extends StObject {
   
   def clamp(value: Double, min: Double, max: Double): Double = js.native
   
+  def damp(x: Double, y: Double, lambda: Double, dt: Double): Double = js.native
+  
   def degToRad(degrees: Double): Double = js.native
   
   def euclideanModulo(n: Double, m: Double): Double = js.native
@@ -23,6 +25,8 @@ trait TypeofMathUtils extends StObject {
   def floorPowerOfTwo(value: Double): Double = js.native
   
   def generateUUID(): String = js.native
+  
+  def inverseLerp(x: Double, y: Double, t: Double): Double = js.native
   
   def isPowerOfTwo(value: Double): Boolean = js.native
   
@@ -33,6 +37,9 @@ trait TypeofMathUtils extends StObject {
   def nearestPowerOfTwo(value: Double): Double = js.native
   
   def nextPowerOfTwo(value: Double): Double = js.native
+  
+  def pingpong(x: Double): Double = js.native
+  def pingpong(x: Double, length: Double): Double = js.native
   
   def radToDeg(radians: Double): Double = js.native
   

@@ -9,7 +9,7 @@ trait SchemaNodeGroupsAddNodesRequest extends StObject {
   /**
     * Count of additional nodes to be added to the node group.
     */
-  var additionalNodeCount: js.UndefOr[Double] = js.undefined
+  var additionalNodeCount: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaNodeGroupsAddNodesRequest {
   
@@ -21,6 +21,8 @@ object SchemaNodeGroupsAddNodesRequest {
   extension [Self <: SchemaNodeGroupsAddNodesRequest](x: Self) {
     
     inline def setAdditionalNodeCount(value: Double): Self = StObject.set(x, "additionalNodeCount", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalNodeCountNull: Self = StObject.set(x, "additionalNodeCount", null)
     
     inline def setAdditionalNodeCountUndefined: Self = StObject.set(x, "additionalNodeCount", js.undefined)
   }

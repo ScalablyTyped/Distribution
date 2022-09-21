@@ -59,7 +59,7 @@ object ListReviewPolicyResultsForHITRequest {
     
     inline def setPolicyLevelsUndefined: Self = StObject.set(x, "PolicyLevels", js.undefined)
     
-    inline def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = StObject.set(x, "PolicyLevels", js.Array(value :_*))
+    inline def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = StObject.set(x, "PolicyLevels", js.Array(value*))
     
     inline def setRetrieveActions(value: Boolean): Self = StObject.set(x, "RetrieveActions", value.asInstanceOf[js.Any])
     

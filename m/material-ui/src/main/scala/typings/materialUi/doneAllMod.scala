@@ -10,10 +10,10 @@ object doneAllMod {
   
   @JSImport("material-ui/svg-icons/action/done-all", JSImport.Default)
   @js.native
-  class default () extends ActionDoneAll
+  open class default () extends ActionDoneAll
   
   @JSImport("material-ui/svg-icons/action/done-all", "ActionDoneAll")
   @js.native
-  class ActionDoneAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDoneAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

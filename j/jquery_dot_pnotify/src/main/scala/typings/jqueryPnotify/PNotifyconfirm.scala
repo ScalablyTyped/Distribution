@@ -58,7 +58,7 @@ object PNotifyconfirm {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: PNotifyconfirmButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PNotifyconfirmButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     

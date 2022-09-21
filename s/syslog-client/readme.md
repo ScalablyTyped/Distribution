@@ -11,9 +11,9 @@ TCP and UDP syslog client RFC 5424 & RFC 3164
 | Full name          | syslog-client |
 | Keywords           | logger, logging, syslog, syslog-client, syslog-logger, syslog-logging, tcp-syslog, tcp-syslog-client, udp-syslog, udp-syslog-client |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 425851 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 38738.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/paulgrove/node-syslog-client#readme)

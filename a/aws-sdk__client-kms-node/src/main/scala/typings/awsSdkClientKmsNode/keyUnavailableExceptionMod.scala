@@ -8,5 +8,5 @@ object keyUnavailableExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/KeyUnavailableException", "KeyUnavailableException")
   @js.native
-  val KeyUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KeyUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

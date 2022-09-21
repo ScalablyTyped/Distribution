@@ -8,5 +8,5 @@ object getBucketLifecycleOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketLifecycleOutput", "GetBucketLifecycleOutput")
   @js.native
-  val GetBucketLifecycleOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketLifecycleOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

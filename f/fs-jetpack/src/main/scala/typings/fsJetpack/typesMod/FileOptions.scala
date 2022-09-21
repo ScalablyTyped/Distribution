@@ -25,7 +25,7 @@ object FileOptions {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Any*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setJsonIndent(value: Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
     

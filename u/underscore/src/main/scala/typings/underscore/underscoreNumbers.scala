@@ -12,4 +12,8 @@ object underscoreNumbers {
     extends StObject
        with _AnyFalsy
   inline def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @js.native
+  sealed trait `1` extends StObject
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
 }

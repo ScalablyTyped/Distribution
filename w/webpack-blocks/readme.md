@@ -10,10 +10,10 @@ Convenience package that includes all the most common webpack blocks.
 | ------------------ | :-------------: |
 | Full name          | webpack-blocks |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 5 |
-| # dependents       | 34 |
-| # downloads        | 95472 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4508.0 |
+| # stars            | 2984.0 |
 
 ## Links
 - [Homepage](https://github.com/andywer/webpack-blocks#readme)

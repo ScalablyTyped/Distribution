@@ -54,7 +54,7 @@ object boxBoxMod {
   
   @JSImport("rbx/elements/box/box", "Box")
   @js.native
-  val Box: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Box: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait BoxProps extends StObject {

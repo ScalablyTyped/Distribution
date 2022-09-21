@@ -11,7 +11,8 @@ trait BuildingSceneLayer
      with Layer
      with SceneService
      with PortalLayer
-     with ScaleRangeLayer {
+     with ScaleRangeLayer
+     with APIKeyMixin {
   
   /**
     * The id of the currently active filter.
@@ -50,6 +51,8 @@ trait BuildingSceneLayer
   
   /**
     * An array of field names from the service to include with each feature in all sublayers.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
     */

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HeadingStyles")
 @js.native
-/* private */ class HeadingStyles ()
+/* private */ open class HeadingStyles ()
   extends StObject
      with typings.activexWord.Word.HeadingStyles {
   
   /* CompleteClass */
-  override def Add(Style: js.Any, Level: Double): typings.activexWord.Word.HeadingStyle = js.native
+  override def Add(Style: Any, Level: Double): typings.activexWord.Word.HeadingStyle = js.native
   
   /* CompleteClass */
   override val Application: typings.activexWord.Word.Application = js.native
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: Double): typings.activexWord.Word.HeadingStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.HeadingStyles_typekey")

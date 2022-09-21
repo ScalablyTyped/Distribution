@@ -11,9 +11,9 @@ Manipulate the HTTP Vary header
 | Full name          | vary |
 | Keywords           | http, res, vary |
 | # releases         | 0 |
-| # dependents       | 329 |
-| # downloads        | 657909221 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 9.575284633333333E7 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/vary#readme)

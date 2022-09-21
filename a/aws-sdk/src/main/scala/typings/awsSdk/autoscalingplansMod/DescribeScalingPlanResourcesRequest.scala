@@ -22,7 +22,7 @@ trait DescribeScalingPlanResourcesRequest extends StObject {
   var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
-    * The version number of the scaling plan.
+    * The version number of the scaling plan. Currently, the only valid value is 1.
     */
   var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
 }

@@ -5,7 +5,6 @@ import typings.awsSdkClientPinpointBrowser.typesEventMod.Event
 import typings.awsSdkClientPinpointBrowser.typesEventMod.UnmarshalledEvent
 import typings.awsSdkClientPinpointBrowser.typesPublicEndpointMod.PublicEndpoint
 import typings.awsSdkClientPinpointBrowser.typesPublicEndpointMod.UnmarshalledPublicEndpoint
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesEventsBatchMod {
     /**
       * An object that contains a set of events associated with the endpoint.
       */
-    var Events: js.UndefOr[StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])] = js.undefined
+    var Events: js.UndefOr[StringDictionary[Event] | (js.Iterable[js.Tuple2[String, Event]])] = js.undefined
   }
   object EventsBatch {
     
@@ -37,7 +36,7 @@ object typesEventsBatchMod {
       
       inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
       
-      inline def setEvents(value: StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[Event] | (js.Iterable[js.Tuple2[String, Event]])): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     }

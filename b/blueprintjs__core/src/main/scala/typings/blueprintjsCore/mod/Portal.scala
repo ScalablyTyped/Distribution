@@ -1,21 +1,22 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.anon.ValidationMapIPortalConte
-import typings.blueprintjsCore.portalMod.IPortalProps
+import typings.blueprintjsCore.anon.PartialPortalProps
+import typings.blueprintjsCore.anon.ValidationMapPortalLegacy
+import typings.blueprintjsCore.portalMod.PortalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Portal")
 @js.native
-class Portal protected ()
+open class Portal protected ()
   extends typings.blueprintjsCore.componentsMod.Portal {
-  def this(props: IPortalProps) = this()
+  def this(props: PortalProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IPortalProps, context: js.Any) = this()
+  def this(props: PortalProps, context: Any) = this()
 }
 /* static members */
 object Portal {
@@ -26,13 +27,13 @@ object Portal {
   
   @JSImport("@blueprintjs/core", "Portal.contextTypes")
   @js.native
-  def contextTypes: ValidationMapIPortalConte = js.native
-  inline def contextTypes_=(x: ValidationMapIPortalConte): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextTypes: ValidationMapPortalLegacy = js.native
+  inline def contextTypes_=(x: ValidationMapPortalLegacy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Portal.defaultProps")
   @js.native
-  def defaultProps: IPortalProps = js.native
-  inline def defaultProps_=(x: IPortalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialPortalProps = js.native
+  inline def defaultProps_=(x: PartialPortalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Portal.displayName")
   @js.native

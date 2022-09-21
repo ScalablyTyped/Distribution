@@ -1,7 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Pattern
+import typings.babylonjs.anon.FaceColors
+import typings.babylonjs.anon.TileHeight
 import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.meshVertexDataMod.VertexData
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -10,29 +12,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tiledBoxBuilderMod {
   
-  @JSImport("babylonjs/Meshes/Builders/tiledBoxBuilder", "TiledBoxBuilder")
+  @JSImport("babylonjs/Meshes/Builders/tiledBoxBuilder", JSImport.Namespace)
   @js.native
-  class TiledBoxBuilder () extends StObject
-  /* static members */
+  val ^ : js.Any = js.native
+  
+  inline def CreateTiledBox(name: String, options: FaceColors): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateTiledBox(name: String, options: FaceColors, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  
+  inline def CreateTiledBoxVertexData(options: TileHeight): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBoxVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+  
   object TiledBoxBuilder {
     
     @JSImport("babylonjs/Meshes/Builders/tiledBoxBuilder", "TiledBoxBuilder")
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * Creates a box mesh
-      * faceTiles sets the pattern, tile size and number of tiles for a face     * * You can set different colors and different images to each box side by using the parameters `faceColors` (an array of 6 Color3 elements) and `faceUV` (an array of 6 Vector4 elements)
-      * * Please read this tutorial : https://doc.babylonjs.com/how_to/createbox_per_face_textures_and_colors
-      * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-      * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-      * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created
-      * @param name defines the name of the mesh
-      * @param options defines the options used to create the mesh
-      * @param scene defines the hosting scene
-      * @returns the box mesh
-      */
-    inline def CreateTiledBox(name: String, options: Pattern): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTiledBox(name: String, options: Pattern, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @JSImport("babylonjs/Meshes/Builders/tiledBoxBuilder", "TiledBoxBuilder.CreateTiledBox")
+    @js.native
+    def CreateTiledBox: js.Function3[
+        /* name */ String, 
+        /* options */ FaceColors, 
+        /* scene */ js.UndefOr[Nullable[Scene]], 
+        Mesh
+      ] = js.native
+    inline def CreateTiledBox(name: String, options: FaceColors): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledBox(name: String, options: FaceColors, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledBox_=(
+      x: js.Function3[
+          /* name */ String, 
+          /* options */ FaceColors, 
+          /* scene */ js.UndefOr[Nullable[Scene]], 
+          Mesh
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTiledBox")(x.asInstanceOf[js.Any])
   }
 }

@@ -34,7 +34,7 @@ object CodeCoverageSummary {
     
     inline def setCoverageData(value: js.Array[CodeCoverageData]): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
     
-    inline def setCoverageDataVarargs(value: CodeCoverageData*): Self = StObject.set(x, "coverageData", js.Array(value :_*))
+    inline def setCoverageDataVarargs(value: CodeCoverageData*): Self = StObject.set(x, "coverageData", js.Array(value*))
     
     inline def setDeltaBuild(value: ShallowReference): Self = StObject.set(x, "deltaBuild", value.asInstanceOf[js.Any])
   }

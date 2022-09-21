@@ -1,7 +1,7 @@
 
 # Scala.js typings for slug
 
-Typings are for version 0.9
+Typings are for version 5.0
 
 ## Library description:
 slugifies even utf-8 chars!
@@ -10,10 +10,10 @@ slugifies even utf-8 chars!
 | ------------------ | :-------------: |
 | Full name          | slug |
 | Keywords           | slugify, slug, string, utf8, utf-8, unicode, url |
-| # releases         | 22 |
-| # dependents       | 561 |
-| # downloads        | 5956990 |
-| # stars            | 106 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 786508.3333333334 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/Trott/slug)

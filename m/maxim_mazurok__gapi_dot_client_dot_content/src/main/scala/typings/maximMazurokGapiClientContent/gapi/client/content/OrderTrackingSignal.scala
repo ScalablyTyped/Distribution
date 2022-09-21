@@ -9,7 +9,7 @@ trait OrderTrackingSignal extends StObject {
   /** The shipping fee of the order; this value should be set to zero in the case of free shipping. */
   var customerShippingFee: js.UndefOr[PriceAmount] = js.undefined
   
-  /** Required. The delivery postal code, as a continuous string without spaces or dashes, e.g. "95016". */
+  /** Required. The delivery postal code, as a continuous string without spaces or dashes, e.g. "95016". This field will be anonymized in returned OrderTrackingSignal creation response. */
   var deliveryPostalCode: js.UndefOr[String] = js.undefined
   
   /** Required. The [CLDR territory code] (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the shipping destination. */
@@ -27,7 +27,7 @@ trait OrderTrackingSignal extends StObject {
   /** Required. The time when the order was created on the merchant side. Include the year and timezone string, if available. */
   var orderCreatedTime: js.UndefOr[DateTime] = js.undefined
   
-  /** Required. The ID of the order on the merchant side. */
+  /** Required. The ID of the order on the merchant side. This field will be hashed in returned OrderTrackingSignal creation response. */
   var orderId: js.UndefOr[String] = js.undefined
   
   /** Output only. The ID that uniquely identifies this order tracking signal. */
@@ -64,7 +64,7 @@ object OrderTrackingSignal {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: OrderTrackingSignalLineItemDetails*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: OrderTrackingSignalLineItemDetails*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
@@ -86,12 +86,12 @@ object OrderTrackingSignal {
     
     inline def setShipmentLineItemMappingUndefined: Self = StObject.set(x, "shipmentLineItemMapping", js.undefined)
     
-    inline def setShipmentLineItemMappingVarargs(value: OrderTrackingSignalShipmentLineItemMapping*): Self = StObject.set(x, "shipmentLineItemMapping", js.Array(value :_*))
+    inline def setShipmentLineItemMappingVarargs(value: OrderTrackingSignalShipmentLineItemMapping*): Self = StObject.set(x, "shipmentLineItemMapping", js.Array(value*))
     
     inline def setShippingInfo(value: js.Array[OrderTrackingSignalShippingInfo]): Self = StObject.set(x, "shippingInfo", value.asInstanceOf[js.Any])
     
     inline def setShippingInfoUndefined: Self = StObject.set(x, "shippingInfo", js.undefined)
     
-    inline def setShippingInfoVarargs(value: OrderTrackingSignalShippingInfo*): Self = StObject.set(x, "shippingInfo", js.Array(value :_*))
+    inline def setShippingInfoVarargs(value: OrderTrackingSignalShippingInfo*): Self = StObject.set(x, "shippingInfo", js.Array(value*))
   }
 }

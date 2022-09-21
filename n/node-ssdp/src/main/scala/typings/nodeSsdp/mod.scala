@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.nodeSsdp.nodeSsdpStrings.`advertise-alive`
 import typings.nodeSsdp.nodeSsdpStrings.`advertise-bye`
 import typings.nodeSsdp.nodeSsdpStrings.response
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object mod {
   
   @JSImport("node-ssdp", "Client")
   @js.native
-  class Client () extends Base {
+  open class Client () extends Base {
     def this(opts: ClientOptions) = this()
     
     @JSName("emit")
@@ -49,7 +48,7 @@ object mod {
       * @returns promise when socket.bind is ready
       */
     def start(): js.Promise[Unit] = js.native
-    def start(cb: js.Function1[/* error */ Error, Unit]): js.Promise[Unit] = js.native
+    def start(cb: js.Function1[/* error */ js.Error, Unit]): js.Promise[Unit] = js.native
     
     /**
       * Close UDP socket.
@@ -59,26 +58,23 @@ object mod {
   
   @JSImport("node-ssdp", "Server")
   @js.native
-  class Server () extends Base {
+  open class Server () extends Base {
     def this(opts: ServerOptions) = this()
     
     def advertise(): Unit = js.native
     def advertise(alive: Boolean): Unit = js.native
     
-    @JSName("emit")
-    def emit_advertisealive(event: `advertise-alive`, headers: SsdpHeaders): Boolean = js.native
-    @JSName("emit")
-    def emit_advertisebye(event: `advertise-bye`, headers: SsdpHeaders): Boolean = js.native
+    def emit(event: `advertise-alive` | `advertise-bye`, headers: SsdpHeaders): Boolean = js.native
     
-    @JSName("on")
-    def on_advertisealive(event: `advertise-alive`, listener: js.Function1[/* headers */ SsdpHeaders, Unit]): this.type = js.native
-    @JSName("on")
-    def on_advertisebye(event: `advertise-bye`, listener: js.Function1[/* headers */ SsdpHeaders, Unit]): this.type = js.native
+    def on(
+      event: `advertise-alive` | `advertise-bye`,
+      listener: js.Function1[/* headers */ SsdpHeaders, Unit]
+    ): this.type = js.native
     
-    @JSName("once")
-    def once_advertisealive(event: `advertise-alive`, listener: js.Function1[/* headers */ SsdpHeaders, Unit]): this.type = js.native
-    @JSName("once")
-    def once_advertisebye(event: `advertise-bye`, listener: js.Function1[/* headers */ SsdpHeaders, Unit]): this.type = js.native
+    def once(
+      event: `advertise-alive` | `advertise-bye`,
+      listener: js.Function1[/* headers */ SsdpHeaders, Unit]
+    ): this.type = js.native
     
     /**
       * Binds UDP socket to an interface/port and starts advertising.
@@ -86,7 +82,7 @@ object mod {
       * @returns promise when socket.bind is ready
       */
     def start(): Unit | js.Promise[Unit] = js.native
-    def start(cb: js.Function1[/* error */ Error, Unit]): Unit | js.Promise[Unit] = js.native
+    def start(cb: js.Function1[/* error */ js.Error, Unit]): Unit | js.Promise[Unit] = js.native
     
     /**
       * Advertise shutdown and close UDP socket.
@@ -127,7 +123,7 @@ object mod {
       
       inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
       
-      inline def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+      inline def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value*))
       
       inline def setReuseAddr(value: Boolean): Self = StObject.set(x, "reuseAddr", value.asInstanceOf[js.Any])
       
@@ -290,7 +286,7 @@ object mod {
   trait SsdpOptions extends StObject {
     
     /** A logger function to use instead of the default. The first argument to the function can contain a format string. */
-    var customLogger: js.UndefOr[js.Function2[/* format */ String, /* repeated */ js.Any, Unit]] = js.undefined
+    var customLogger: js.UndefOr[js.Function2[/* format */ String, /* repeated */ Any, Unit]] = js.undefined
     
     /** Path to SSDP description file */
     var description: js.UndefOr[String] = js.undefined
@@ -331,7 +327,7 @@ object mod {
     
     extension [Self <: SsdpOptions](x: Self) {
       
-      inline def setCustomLogger(value: (/* format */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "customLogger", js.Any.fromFunction2(value))
+      inline def setCustomLogger(value: (/* format */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "customLogger", js.Any.fromFunction2(value))
       
       inline def setCustomLoggerUndefined: Self = StObject.set(x, "customLogger", js.undefined)
       

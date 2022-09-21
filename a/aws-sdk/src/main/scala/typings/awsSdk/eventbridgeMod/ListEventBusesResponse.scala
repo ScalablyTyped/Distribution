@@ -29,7 +29,7 @@ object ListEventBusesResponse {
     
     inline def setEventBusesUndefined: Self = StObject.set(x, "EventBuses", js.undefined)
     
-    inline def setEventBusesVarargs(value: EventBus*): Self = StObject.set(x, "EventBuses", js.Array(value :_*))
+    inline def setEventBusesVarargs(value: EventBus*): Self = StObject.set(x, "EventBuses", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

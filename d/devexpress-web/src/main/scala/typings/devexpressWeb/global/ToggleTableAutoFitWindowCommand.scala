@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableAutoFitWindowCommand")
 @js.native
-class ToggleTableAutoFitWindowCommand ()
+open class ToggleTableAutoFitWindowCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableAutoFitWindowCommand {
   

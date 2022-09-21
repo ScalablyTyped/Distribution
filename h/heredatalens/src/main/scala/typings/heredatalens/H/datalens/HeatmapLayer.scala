@@ -215,7 +215,7 @@ object HeatmapLayer {
       
       inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
       
-      inline def setBandwidthVarargs(value: BandwidthStop*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
+      inline def setBandwidthVarargs(value: BandwidthStop*): Self = StObject.set(x, "bandwidth", js.Array(value*))
       
       inline def setColorScale(value: /* scale */ Double => String): Self = StObject.set(x, "colorScale", js.Any.fromFunction1(value))
       

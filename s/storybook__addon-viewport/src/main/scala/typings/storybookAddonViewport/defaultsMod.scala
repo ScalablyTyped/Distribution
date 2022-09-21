@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object defaultsMod {
   
-  @JSImport("@storybook/addon-viewport/dist/defaults", "DEFAULT_VIEWPORT")
+  @JSImport("@storybook/addon-viewport/dist/ts3.9/defaults", "DEFAULT_VIEWPORT")
   @js.native
   val DEFAULT_VIEWPORT: /* "responsive" */ String = js.native
   
-  @JSImport("@storybook/addon-viewport/dist/defaults", "INITIAL_VIEWPORTS")
+  @JSImport("@storybook/addon-viewport/dist/ts3.9/defaults", "INITIAL_VIEWPORTS")
   @js.native
   val INITIAL_VIEWPORTS: ViewportMap = js.native
   
-  @JSImport("@storybook/addon-viewport/dist/defaults", "MINIMAL_VIEWPORTS")
+  @JSImport("@storybook/addon-viewport/dist/ts3.9/defaults", "MINIMAL_VIEWPORTS")
   @js.native
   val MINIMAL_VIEWPORTS: ViewportMap = js.native
 }

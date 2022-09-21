@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ButtonGridCell")
 @js.native
-class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
+open class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
   extends typings.officeUiFabricReact.mod.ButtonGridCell[T, P] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }
 /* static members */
 object ButtonGridCell {

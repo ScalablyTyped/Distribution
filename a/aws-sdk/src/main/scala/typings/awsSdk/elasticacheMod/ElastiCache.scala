@@ -18,12 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElastiCache extends Service {
   
   /**
-    * Adds up to 50 cost allocation tags to the named resource. A cost allocation tag is a key-value pair where the key and value are case-sensitive. You can use cost allocation tags to categorize and track your AWS costs.  When you apply tags to your ElastiCache resources, AWS generates a cost allocation report as a comma-separated value (CSV) file with your usage and costs aggregated by your tags. You can apply tags that represent business categories (such as cost centers, application names, or owners) to organize your costs across multiple services. For more information, see Using Cost Allocation Tags in Amazon ElastiCache in the ElastiCache User Guide.
+    * A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions.  For example, you can use cost-allocation tags to your ElastiCache resources, Amazon generates a cost allocation report as a comma-separated value (CSV) file with your usage and costs aggregated by your tags. You can apply tags that represent business categories (such as cost centers, application names, or owners) to organize your costs across multiple services. For more information, see Using Cost Allocation Tags in Amazon ElastiCache in the ElastiCache User Guide.
     */
   def addTagsToResource(): Request[TagListMessage, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ TagListMessage, Unit]): Request[TagListMessage, AWSError] = js.native
   /**
-    * Adds up to 50 cost allocation tags to the named resource. A cost allocation tag is a key-value pair where the key and value are case-sensitive. You can use cost allocation tags to categorize and track your AWS costs.  When you apply tags to your ElastiCache resources, AWS generates a cost allocation report as a comma-separated value (CSV) file with your usage and costs aggregated by your tags. You can apply tags that represent business categories (such as cost centers, application names, or owners) to organize your costs across multiple services. For more information, see Using Cost Allocation Tags in Amazon ElastiCache in the ElastiCache User Guide.
+    * A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions.  For example, you can use cost-allocation tags to your ElastiCache resources, Amazon generates a cost allocation report as a comma-separated value (CSV) file with your usage and costs aggregated by your tags. You can apply tags that represent business categories (such as cost centers, application names, or owners) to organize your costs across multiple services. For more information, see Using Cost Allocation Tags in Amazon ElastiCache in the ElastiCache User Guide.
     */
   def addTagsToResource(params: AddTagsToResourceMessage): Request[TagListMessage, AWSError] = js.native
   def addTagsToResource(
@@ -163,12 +163,12 @@ trait ElastiCache extends Service {
   ): Request[CreateCacheSubnetGroupResult, AWSError] = js.native
   
   /**
-    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
     */
   def createGlobalReplicationGroup(): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   def createGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalReplicationGroupResult, Unit]): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupIdSuffix is the name of the Global datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
     */
   def createGlobalReplicationGroup(params: CreateGlobalReplicationGroupMessage): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   def createGlobalReplicationGroup(
@@ -177,12 +177,12 @@ trait ElastiCache extends Service {
   ): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
   
   /**
-    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global Datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. If you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' scaling. For more information, see Scaling ElastiCache for Redis Clusters in the ElastiCache User Guide.  This operation is valid for Redis only. 
+    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis cluster-mode enabled cluster is comprised of from 1 to 90 shards (API/CLI: node groups). Each shard has a primary node and up to 5 read-only replica nodes. The configuration can range from 90 shards and 0 replicas to 15 shards and 5 replicas, which is the maximum number or replicas allowed.  The node or shard limit can be increased to a maximum of 500 per cluster if the Redis engine version is 5.0.6 or higher. For example, you can choose to configure a 500 node cluster that ranges between 83 shards (one primary and 5 replicas per shard) and 500 shards (single primary and no replicas). Make sure there are enough available IP addresses to accommodate the increase. Common pitfalls include the subnets in the subnet group have too small a CIDR range or the subnets are shared and heavily used by other clusters. For more information, see Creating a Subnet Group. For versions below 5.0.6, the limit is 250 per cluster. To request a limit increase, see Amazon Service Limits and choose the limit type Nodes per cluster per instance type.  When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. If you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' scaling. For more information, see Scaling ElastiCache for Redis Clusters in the ElastiCache User Guide.  This operation is valid for Redis only. 
     */
   def createReplicationGroup(): Request[CreateReplicationGroupResult, AWSError] = js.native
   def createReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationGroupResult, Unit]): Request[CreateReplicationGroupResult, AWSError] = js.native
   /**
-    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global Datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. If you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' scaling. For more information, see Scaling ElastiCache for Redis Clusters in the ElastiCache User Guide.  This operation is valid for Redis only. 
+    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis cluster-mode enabled cluster is comprised of from 1 to 90 shards (API/CLI: node groups). Each shard has a primary node and up to 5 read-only replica nodes. The configuration can range from 90 shards and 0 replicas to 15 shards and 5 replicas, which is the maximum number or replicas allowed.  The node or shard limit can be increased to a maximum of 500 per cluster if the Redis engine version is 5.0.6 or higher. For example, you can choose to configure a 500 node cluster that ranges between 83 shards (one primary and 5 replicas per shard) and 500 shards (single primary and no replicas). Make sure there are enough available IP addresses to accommodate the increase. Common pitfalls include the subnets in the subnet group have too small a CIDR range or the subnets are shared and heavily used by other clusters. For more information, see Creating a Subnet Group. For versions below 5.0.6, the limit is 250 per cluster. To request a limit increase, see Amazon Service Limits and choose the limit type Nodes per cluster per instance type.  When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. If you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' scaling. For more information, see Scaling ElastiCache for Redis Clusters in the ElastiCache User Guide.  This operation is valid for Redis only. 
     */
   def createReplicationGroup(params: CreateReplicationGroupMessage): Request[CreateReplicationGroupResult, AWSError] = js.native
   def createReplicationGroup(
@@ -205,23 +205,23 @@ trait ElastiCache extends Service {
   ): Request[CreateSnapshotResult, AWSError] = js.native
   
   /**
-    * For Redis engine version 6.x onwards: Creates a Redis user. For more information, see Using Role Based Access Control (RBAC).
+    * For Redis engine version 6.0 onwards: Creates a Redis user. For more information, see Using Role Based Access Control (RBAC).
     */
   def createUser(): Request[User, AWSError] = js.native
   def createUser(callback: js.Function2[/* err */ AWSError, /* data */ User, Unit]): Request[User, AWSError] = js.native
   /**
-    * For Redis engine version 6.x onwards: Creates a Redis user. For more information, see Using Role Based Access Control (RBAC).
+    * For Redis engine version 6.0 onwards: Creates a Redis user. For more information, see Using Role Based Access Control (RBAC).
     */
   def createUser(params: CreateUserMessage): Request[User, AWSError] = js.native
   def createUser(params: CreateUserMessage, callback: js.Function2[/* err */ AWSError, /* data */ User, Unit]): Request[User, AWSError] = js.native
   
   /**
-    * For Redis engine version 6.x onwards: Creates a Redis user group. For more information, see Using Role Based Access Control (RBAC) 
+    * For Redis engine version 6.0 onwards: Creates a Redis user group. For more information, see Using Role Based Access Control (RBAC) 
     */
   def createUserGroup(): Request[UserGroup, AWSError] = js.native
   def createUserGroup(callback: js.Function2[/* err */ AWSError, /* data */ UserGroup, Unit]): Request[UserGroup, AWSError] = js.native
   /**
-    * For Redis engine version 6.x onwards: Creates a Redis user group. For more information, see Using Role Based Access Control (RBAC) 
+    * For Redis engine version 6.0 onwards: Creates a Redis user group. For more information, see Using Role Based Access Control (RBAC) 
     */
   def createUserGroup(params: CreateUserGroupMessage): Request[UserGroup, AWSError] = js.native
   def createUserGroup(
@@ -230,7 +230,7 @@ trait ElastiCache extends Service {
   ): Request[UserGroup, AWSError] = js.native
   
   /**
-    * Decreases the number of node groups in a Global Datastore
+    * Decreases the number of node groups in a Global datastore
     */
   def decreaseNodeGroupsInGlobalReplicationGroup(): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   def decreaseNodeGroupsInGlobalReplicationGroup(
@@ -241,7 +241,7 @@ trait ElastiCache extends Service {
     ]
   ): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Decreases the number of node groups in a Global Datastore
+    * Decreases the number of node groups in a Global datastore
     */
   def decreaseNodeGroupsInGlobalReplicationGroup(params: DecreaseNodeGroupsInGlobalReplicationGroupMessage): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   def decreaseNodeGroupsInGlobalReplicationGroup(
@@ -268,12 +268,12 @@ trait ElastiCache extends Service {
   ): Request[DecreaseReplicaCountResult, AWSError] = js.native
   
   /**
-    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   A cluster that is the last read replica of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
+    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   Redis (cluster mode disabled) clusters   A cluster that is the last read replica of a replication group   A cluster that is the primary node of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
     */
   def deleteCacheCluster(): Request[DeleteCacheClusterResult, AWSError] = js.native
   def deleteCacheCluster(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCacheClusterResult, Unit]): Request[DeleteCacheClusterResult, AWSError] = js.native
   /**
-    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   A cluster that is the last read replica of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
+    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   Redis (cluster mode disabled) clusters   A cluster that is the last read replica of a replication group   A cluster that is the primary node of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
     */
   def deleteCacheCluster(params: DeleteCacheClusterMessage): Request[DeleteCacheClusterResult, AWSError] = js.native
   def deleteCacheCluster(
@@ -282,12 +282,12 @@ trait ElastiCache extends Service {
   ): Request[DeleteCacheClusterResult, AWSError] = js.native
   
   /**
-    * Deletes the specified cache parameter group. You cannot delete a cache parameter group if it is associated with any cache clusters.
+    * Deletes the specified cache parameter group. You cannot delete a cache parameter group if it is associated with any cache clusters. You cannot delete the default cache parameter groups in your account.
     */
   def deleteCacheParameterGroup(): Request[js.Object, AWSError] = js.native
   def deleteCacheParameterGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified cache parameter group. You cannot delete a cache parameter group if it is associated with any cache clusters.
+    * Deletes the specified cache parameter group. You cannot delete a cache parameter group if it is associated with any cache clusters. You cannot delete the default cache parameter groups in your account.
     */
   def deleteCacheParameterGroup(params: DeleteCacheParameterGroupMessage): Request[js.Object, AWSError] = js.native
   def deleteCacheParameterGroup(
@@ -310,12 +310,12 @@ trait ElastiCache extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes a cache subnet group.  You cannot delete a cache subnet group if it is associated with any clusters. 
+    * Deletes a cache subnet group.  You cannot delete a default cache subnet group or one that is associated with any clusters. 
     */
   def deleteCacheSubnetGroup(): Request[js.Object, AWSError] = js.native
   def deleteCacheSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a cache subnet group.  You cannot delete a cache subnet group if it is associated with any clusters. 
+    * Deletes a cache subnet group.  You cannot delete a default cache subnet group or one that is associated with any clusters. 
     */
   def deleteCacheSubnetGroup(params: DeleteCacheSubnetGroupMessage): Request[js.Object, AWSError] = js.native
   def deleteCacheSubnetGroup(
@@ -324,12 +324,12 @@ trait ElastiCache extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
+    * Deleting a Global datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global datastore.   Once the Global datastore contains only the primary cluster, you can use the DeleteGlobalReplicationGroup API to delete the Global datastore while retainining the primary cluster using RetainPrimaryReplicationGroup=true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryReplicationGroup=true. The primary cluster is never deleted when deleting a Global Datastore. It can only be deleted when it no longer is associated with any Global Datastore. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
     */
   def deleteGlobalReplicationGroup(): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   def deleteGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalReplicationGroupResult, Unit]): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
+    * Deleting a Global datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global datastore.   Once the Global datastore contains only the primary cluster, you can use the DeleteGlobalReplicationGroup API to delete the Global datastore while retainining the primary cluster using RetainPrimaryReplicationGroup=true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryReplicationGroup=true. The primary cluster is never deleted when deleting a Global Datastore. It can only be deleted when it no longer is associated with any Global Datastore. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.
     */
   def deleteGlobalReplicationGroup(params: DeleteGlobalReplicationGroupMessage): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   def deleteGlobalReplicationGroup(
@@ -366,23 +366,23 @@ trait ElastiCache extends Service {
   ): Request[DeleteSnapshotResult, AWSError] = js.native
   
   /**
-    * For Redis engine version 6.x onwards: Deletes a user. The user will be removed from all user groups and in turn removed from all replication groups. For more information, see Using Role Based Access Control (RBAC). 
+    * For Redis engine version 6.0 onwards: Deletes a user. The user will be removed from all user groups and in turn removed from all replication groups. For more information, see Using Role Based Access Control (RBAC). 
     */
   def deleteUser(): Request[User, AWSError] = js.native
   def deleteUser(callback: js.Function2[/* err */ AWSError, /* data */ User, Unit]): Request[User, AWSError] = js.native
   /**
-    * For Redis engine version 6.x onwards: Deletes a user. The user will be removed from all user groups and in turn removed from all replication groups. For more information, see Using Role Based Access Control (RBAC). 
+    * For Redis engine version 6.0 onwards: Deletes a user. The user will be removed from all user groups and in turn removed from all replication groups. For more information, see Using Role Based Access Control (RBAC). 
     */
   def deleteUser(params: DeleteUserMessage): Request[User, AWSError] = js.native
   def deleteUser(params: DeleteUserMessage, callback: js.Function2[/* err */ AWSError, /* data */ User, Unit]): Request[User, AWSError] = js.native
   
   /**
-    * For Redis engine version 6.x onwards: Deletes a ser group. The user group must first be disassociated from the replcation group before it can be deleted. For more information, see Using Role Based Access Control (RBAC). 
+    * For Redis engine version 6.0 onwards: Deletes a user group. The user group must first be disassociated from the replication group before it can be deleted. For more information, see Using Role Based Access Control (RBAC). 
     */
   def deleteUserGroup(): Request[UserGroup, AWSError] = js.native
   def deleteUserGroup(callback: js.Function2[/* err */ AWSError, /* data */ UserGroup, Unit]): Request[UserGroup, AWSError] = js.native
   /**
-    * For Redis engine version 6.x onwards: Deletes a ser group. The user group must first be disassociated from the replcation group before it can be deleted. For more information, see Using Role Based Access Control (RBAC). 
+    * For Redis engine version 6.0 onwards: Deletes a user group. The user group must first be disassociated from the replication group before it can be deleted. For more information, see Using Role Based Access Control (RBAC). 
     */
   def deleteUserGroup(params: DeleteUserGroupMessage): Request[UserGroup, AWSError] = js.native
   def deleteUserGroup(
@@ -503,12 +503,12 @@ trait ElastiCache extends Service {
   ): Request[EventsMessage, AWSError] = js.native
   
   /**
-    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global Datastores. 
+    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global datastores. 
     */
   def describeGlobalReplicationGroups(): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
   def describeGlobalReplicationGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalReplicationGroupsResult, Unit]): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
   /**
-    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global Datastores. 
+    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global datastores. 
     */
   def describeGlobalReplicationGroups(params: DescribeGlobalReplicationGroupsMessage): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
   def describeGlobalReplicationGroups(
@@ -629,14 +629,14 @@ trait ElastiCache extends Service {
   ): Request[DescribeUsersResult, AWSError] = js.native
   
   /**
-    * Remove a secondary cluster from the Global Datastore using the Global Datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that AWS region.
+    * Remove a secondary cluster from the Global datastore using the Global datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that Amazon region.
     */
   def disassociateGlobalReplicationGroup(): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
   def disassociateGlobalReplicationGroup(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateGlobalReplicationGroupResult, Unit]
   ): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Remove a secondary cluster from the Global Datastore using the Global Datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that AWS region.
+    * Remove a secondary cluster from the Global datastore using the Global datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that Amazon region.
     */
   def disassociateGlobalReplicationGroup(params: DisassociateGlobalReplicationGroupMessage): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
   def disassociateGlobalReplicationGroup(
@@ -659,7 +659,7 @@ trait ElastiCache extends Service {
   ): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   
   /**
-    * Increase the number of node groups in the Global Datastore
+    * Increase the number of node groups in the Global datastore
     */
   def increaseNodeGroupsInGlobalReplicationGroup(): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   def increaseNodeGroupsInGlobalReplicationGroup(
@@ -670,7 +670,7 @@ trait ElastiCache extends Service {
     ]
   ): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Increase the number of node groups in the Global Datastore
+    * Increase the number of node groups in the Global datastore
     */
   def increaseNodeGroupsInGlobalReplicationGroup(params: IncreaseNodeGroupsInGlobalReplicationGroupMessage): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   def increaseNodeGroupsInGlobalReplicationGroup(
@@ -683,12 +683,12 @@ trait ElastiCache extends Service {
   ): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   
   /**
-    * Dynamically increases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
+    * Dynamically increases the number of replicas in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
   def increaseReplicaCount(): Request[IncreaseReplicaCountResult, AWSError] = js.native
   def increaseReplicaCount(callback: js.Function2[/* err */ AWSError, /* data */ IncreaseReplicaCountResult, Unit]): Request[IncreaseReplicaCountResult, AWSError] = js.native
   /**
-    * Dynamically increases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
+    * Dynamically increases the number of replicas in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
   def increaseReplicaCount(params: IncreaseReplicaCountMessage): Request[IncreaseReplicaCountResult, AWSError] = js.native
   def increaseReplicaCount(
@@ -711,12 +711,12 @@ trait ElastiCache extends Service {
   ): Request[AllowedNodeTypeModificationsMessage, AWSError] = js.native
   
   /**
-    * Lists all cost allocation tags currently on the named resource. A cost allocation tag is a key-value pair where the key is case-sensitive and the value is optional. You can use cost allocation tags to categorize and track your AWS costs. If the cluster is not in the available state, ListTagsForResource returns an error. You can have a maximum of 50 cost allocation tags on an ElastiCache resource. For more information, see Monitoring Costs with Tags.
+    * Lists all tags currently on a named resource.  A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions. If the cluster is not in the available state, ListTagsForResource returns an error.
     */
   def listTagsForResource(): Request[TagListMessage, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ TagListMessage, Unit]): Request[TagListMessage, AWSError] = js.native
   /**
-    * Lists all cost allocation tags currently on the named resource. A cost allocation tag is a key-value pair where the key is case-sensitive and the value is optional. You can use cost allocation tags to categorize and track your AWS costs. If the cluster is not in the available state, ListTagsForResource returns an error. You can have a maximum of 50 cost allocation tags on an ElastiCache resource. For more information, see Monitoring Costs with Tags.
+    * Lists all tags currently on a named resource.  A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions. If the cluster is not in the available state, ListTagsForResource returns an error.
     */
   def listTagsForResource(params: ListTagsForResourceMessage): Request[TagListMessage, AWSError] = js.native
   def listTagsForResource(
@@ -767,12 +767,12 @@ trait ElastiCache extends Service {
   ): Request[ModifyCacheSubnetGroupResult, AWSError] = js.native
   
   /**
-    * Modifies the settings for a Global Datastore.
+    * Modifies the settings for a Global datastore.
     */
   def modifyGlobalReplicationGroup(): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
   def modifyGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalReplicationGroupResult, Unit]): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Modifies the settings for a Global Datastore.
+    * Modifies the settings for a Global datastore.
     */
   def modifyGlobalReplicationGroup(params: ModifyGlobalReplicationGroupMessage): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
   def modifyGlobalReplicationGroup(
@@ -795,14 +795,14 @@ trait ElastiCache extends Service {
   ): Request[ModifyReplicationGroupResult, AWSError] = js.native
   
   /**
-    * Modifies a replication group's shards (node groups) by allowing you to add shards, remove shards, or rebalance the keyspaces among exisiting shards.
+    * Modifies a replication group's shards (node groups) by allowing you to add shards, remove shards, or rebalance the keyspaces among existing shards.
     */
   def modifyReplicationGroupShardConfiguration(): Request[ModifyReplicationGroupShardConfigurationResult, AWSError] = js.native
   def modifyReplicationGroupShardConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationGroupShardConfigurationResult, Unit]
   ): Request[ModifyReplicationGroupShardConfigurationResult, AWSError] = js.native
   /**
-    * Modifies a replication group's shards (node groups) by allowing you to add shards, remove shards, or rebalance the keyspaces among exisiting shards.
+    * Modifies a replication group's shards (node groups) by allowing you to add shards, remove shards, or rebalance the keyspaces among existing shards.
     */
   def modifyReplicationGroupShardConfiguration(params: ModifyReplicationGroupShardConfigurationMessage): Request[ModifyReplicationGroupShardConfigurationResult, AWSError] = js.native
   def modifyReplicationGroupShardConfiguration(
@@ -836,14 +836,14 @@ trait ElastiCache extends Service {
   ): Request[UserGroup, AWSError] = js.native
   
   /**
-    * Allows you to purchase a reserved cache node offering.
+    * Allows you to purchase a reserved cache node offering. Reserved nodes are not eligible for cancellation and are non-refundable. For more information, see Managing Costs with Reserved Nodes for Redis or Managing Costs with Reserved Nodes for Memcached.
     */
   def purchaseReservedCacheNodesOffering(): Request[PurchaseReservedCacheNodesOfferingResult, AWSError] = js.native
   def purchaseReservedCacheNodesOffering(
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedCacheNodesOfferingResult, Unit]
   ): Request[PurchaseReservedCacheNodesOfferingResult, AWSError] = js.native
   /**
-    * Allows you to purchase a reserved cache node offering.
+    * Allows you to purchase a reserved cache node offering. Reserved nodes are not eligible for cancellation and are non-refundable. For more information, see Managing Costs with Reserved Nodes for Redis or Managing Costs with Reserved Nodes for Memcached.
     */
   def purchaseReservedCacheNodesOffering(params: PurchaseReservedCacheNodesOfferingMessage): Request[PurchaseReservedCacheNodesOfferingResult, AWSError] = js.native
   def purchaseReservedCacheNodesOffering(
@@ -882,12 +882,12 @@ trait ElastiCache extends Service {
   ): Request[RebootCacheClusterResult, AWSError] = js.native
   
   /**
-    * Removes the tags identified by the TagKeys list from the named resource.
+    * Removes the tags identified by the TagKeys list from the named resource. A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions.
     */
   def removeTagsFromResource(): Request[TagListMessage, AWSError] = js.native
   def removeTagsFromResource(callback: js.Function2[/* err */ AWSError, /* data */ TagListMessage, Unit]): Request[TagListMessage, AWSError] = js.native
   /**
-    * Removes the tags identified by the TagKeys list from the named resource.
+    * Removes the tags identified by the TagKeys list from the named resource. A tag is a key-value pair where the key and value are case-sensitive. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. For more information, see Resource-level permissions.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceMessage): Request[TagListMessage, AWSError] = js.native
   def removeTagsFromResource(
@@ -938,12 +938,12 @@ trait ElastiCache extends Service {
   ): Request[StartMigrationResponse, AWSError] = js.native
   
   /**
-    * Represents the input of a TestFailover operation which test automatic failover on a specified node group (called shard in the console) in a replication group (called cluster in the console).  Note the following    A customer can use this operation to test automatic failover on up to 5 shards (called node groups in the ElastiCache API and AWS CLI) in any rolling 24-hour period.   If calling this operation on shards in different clusters (called replication groups in the API and CLI), the calls can be made concurrently.     If calling this operation multiple times on different shards in the same Redis (cluster mode enabled) replication group, the first node replacement must complete before a subsequent call can be made.   To determine whether the node replacement is complete you can check Events using the Amazon ElastiCache console, the AWS CLI, or the ElastiCache API. Look for the following automatic failover related events, listed here in order of occurrance:   Replication group message: Test Failover API called for node group &lt;node-group-id&gt;    Cache cluster message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Replication group message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Cache cluster message: Recovering cache nodes &lt;node-id&gt;    Cache cluster message: Finished recovery for cache nodes &lt;node-id&gt;    For more information see:    Viewing ElastiCache Events in the ElastiCache User Guide     DescribeEvents in the ElastiCache API Reference     Also see, Testing Multi-AZ  in the ElastiCache User Guide.
+    * Represents the input of a TestFailover operation which test automatic failover on a specified node group (called shard in the console) in a replication group (called cluster in the console). This API is designed for testing the behavior of your application in case of ElastiCache failover. It is not designed to be an operational tool for initiating a failover to overcome a problem you may have with the cluster. Moreover, in certain conditions such as large-scale operational events, Amazon may block this API.   Note the following    A customer can use this operation to test automatic failover on up to 5 shards (called node groups in the ElastiCache API and Amazon CLI) in any rolling 24-hour period.   If calling this operation on shards in different clusters (called replication groups in the API and CLI), the calls can be made concurrently.     If calling this operation multiple times on different shards in the same Redis (cluster mode enabled) replication group, the first node replacement must complete before a subsequent call can be made.   To determine whether the node replacement is complete you can check Events using the Amazon ElastiCache console, the Amazon CLI, or the ElastiCache API. Look for the following automatic failover related events, listed here in order of occurrance:   Replication group message: Test Failover API called for node group &lt;node-group-id&gt;    Cache cluster message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Replication group message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Cache cluster message: Recovering cache nodes &lt;node-id&gt;    Cache cluster message: Finished recovery for cache nodes &lt;node-id&gt;    For more information see:    Viewing ElastiCache Events in the ElastiCache User Guide     DescribeEvents in the ElastiCache API Reference     Also see, Testing Multi-AZ  in the ElastiCache User Guide.
     */
   def testFailover(): Request[TestFailoverResult, AWSError] = js.native
   def testFailover(callback: js.Function2[/* err */ AWSError, /* data */ TestFailoverResult, Unit]): Request[TestFailoverResult, AWSError] = js.native
   /**
-    * Represents the input of a TestFailover operation which test automatic failover on a specified node group (called shard in the console) in a replication group (called cluster in the console).  Note the following    A customer can use this operation to test automatic failover on up to 5 shards (called node groups in the ElastiCache API and AWS CLI) in any rolling 24-hour period.   If calling this operation on shards in different clusters (called replication groups in the API and CLI), the calls can be made concurrently.     If calling this operation multiple times on different shards in the same Redis (cluster mode enabled) replication group, the first node replacement must complete before a subsequent call can be made.   To determine whether the node replacement is complete you can check Events using the Amazon ElastiCache console, the AWS CLI, or the ElastiCache API. Look for the following automatic failover related events, listed here in order of occurrance:   Replication group message: Test Failover API called for node group &lt;node-group-id&gt;    Cache cluster message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Replication group message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Cache cluster message: Recovering cache nodes &lt;node-id&gt;    Cache cluster message: Finished recovery for cache nodes &lt;node-id&gt;    For more information see:    Viewing ElastiCache Events in the ElastiCache User Guide     DescribeEvents in the ElastiCache API Reference     Also see, Testing Multi-AZ  in the ElastiCache User Guide.
+    * Represents the input of a TestFailover operation which test automatic failover on a specified node group (called shard in the console) in a replication group (called cluster in the console). This API is designed for testing the behavior of your application in case of ElastiCache failover. It is not designed to be an operational tool for initiating a failover to overcome a problem you may have with the cluster. Moreover, in certain conditions such as large-scale operational events, Amazon may block this API.   Note the following    A customer can use this operation to test automatic failover on up to 5 shards (called node groups in the ElastiCache API and Amazon CLI) in any rolling 24-hour period.   If calling this operation on shards in different clusters (called replication groups in the API and CLI), the calls can be made concurrently.     If calling this operation multiple times on different shards in the same Redis (cluster mode enabled) replication group, the first node replacement must complete before a subsequent call can be made.   To determine whether the node replacement is complete you can check Events using the Amazon ElastiCache console, the Amazon CLI, or the ElastiCache API. Look for the following automatic failover related events, listed here in order of occurrance:   Replication group message: Test Failover API called for node group &lt;node-group-id&gt;    Cache cluster message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Replication group message: Failover from primary node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Cache cluster message: Recovering cache nodes &lt;node-id&gt;    Cache cluster message: Finished recovery for cache nodes &lt;node-id&gt;    For more information see:    Viewing ElastiCache Events in the ElastiCache User Guide     DescribeEvents in the ElastiCache API Reference     Also see, Testing Multi-AZ  in the ElastiCache User Guide.
     */
   def testFailover(params: TestFailoverMessage): Request[TestFailoverResult, AWSError] = js.native
   def testFailover(

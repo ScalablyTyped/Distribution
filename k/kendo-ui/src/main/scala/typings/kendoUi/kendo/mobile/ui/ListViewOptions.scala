@@ -17,7 +17,7 @@ trait ListViewOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
+  var dataSource: js.UndefOr[DataSource | Any] = js.undefined
   
   var endlessScroll: js.UndefOr[Boolean] = js.undefined
   
@@ -76,7 +76,7 @@ object ListViewOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

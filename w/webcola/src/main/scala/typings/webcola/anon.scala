@@ -69,11 +69,11 @@ object anon {
     
     var cola: Layout
     
-    var powerGraph: js.Any
+    var powerGraph: Any
   }
   object Cola {
     
-    inline def apply(cola: Layout, powerGraph: js.Any): Cola = {
+    inline def apply(cola: Layout, powerGraph: Any): Cola = {
       val __obj = js.Dynamic.literal(cola = cola.asInstanceOf[js.Any], powerGraph = powerGraph.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cola]
     }
@@ -82,7 +82,7 @@ object anon {
       
       inline def setCola(value: Layout): Self = StObject.set(x, "cola", value.asInstanceOf[js.Any])
       
-      inline def setPowerGraph(value: js.Any): Self = StObject.set(x, "powerGraph", value.asInstanceOf[js.Any])
+      inline def setPowerGraph(value: Any): Self = StObject.set(x, "powerGraph", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,11 +149,11 @@ object anon {
       
       inline def setE(value: js.Array[VisibilityEdge]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
-      inline def setEVarargs(value: VisibilityEdge*): Self = StObject.set(x, "E", js.Array(value :_*))
+      inline def setEVarargs(value: VisibilityEdge*): Self = StObject.set(x, "E", js.Array(value*))
       
       inline def setV(value: js.Array[VisibilityVertex]): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
       
-      inline def setVVarargs(value: VisibilityVertex*): Self = StObject.set(x, "V", js.Array(value :_*))
+      inline def setVVarargs(value: VisibilityVertex*): Self = StObject.set(x, "V", js.Array(value*))
     }
   }
   
@@ -180,26 +180,26 @@ object anon {
   
   trait Groups extends StObject {
     
-    var groups: js.Array[js.Any]
+    var groups: js.Array[Any]
     
     var powerEdges: js.Array[PowerEdge]
   }
   object Groups {
     
-    inline def apply(groups: js.Array[js.Any], powerEdges: js.Array[PowerEdge]): Groups = {
+    inline def apply(groups: js.Array[Any], powerEdges: js.Array[PowerEdge]): Groups = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], powerEdges = powerEdges.asInstanceOf[js.Any])
       __obj.asInstanceOf[Groups]
     }
     
     extension [Self <: Groups](x: Self) {
       
-      inline def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Any*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setPowerEdges(value: js.Array[PowerEdge]): Self = StObject.set(x, "powerEdges", value.asInstanceOf[js.Any])
       
-      inline def setPowerEdgesVarargs(value: PowerEdge*): Self = StObject.set(x, "powerEdges", js.Array(value :_*))
+      inline def setPowerEdgesVarargs(value: PowerEdge*): Self = StObject.set(x, "powerEdges", js.Array(value*))
     }
   }
   
@@ -220,11 +220,11 @@ object anon {
       
       inline def setLinks(value: js.Array[Link[Node]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: Link[Node]*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link[Node]*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -249,7 +249,7 @@ object anon {
       
       inline def setNewCenters(value: js.Array[Double]): Self = StObject.set(x, "newCenters", value.asInstanceOf[js.Any])
       
-      inline def setNewCentersVarargs(value: Double*): Self = StObject.set(x, "newCenters", js.Array(value :_*))
+      inline def setNewCentersVarargs(value: Double*): Self = StObject.set(x, "newCenters", js.Array(value*))
       
       inline def setUpperBound(value: Double): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     }

@@ -12,7 +12,7 @@ trait ValidationContext extends StObject {
   
   def getDocument(): Document
   
-  def getErrors(): js.Array[GraphQLError]
+  def getErrors(): js.Array[js.Error]
   
   def getFieldDef(): GraphQLFieldDefinition
   
@@ -34,7 +34,7 @@ trait ValidationContext extends StObject {
   
   def getVariableUsages(node: HasSelectionSet): js.Array[VariableUsage]
   
-  def reportError(error: GraphQLError): Unit
+  def reportError(error: js.Error): Unit
 }
 object ValidationContext {
   
@@ -42,7 +42,7 @@ object ValidationContext {
     getArgument: () => GraphQLArgument,
     getDirective: () => GraphQLDirective,
     getDocument: () => Document,
-    getErrors: () => js.Array[GraphQLError],
+    getErrors: () => js.Array[js.Error],
     getFieldDef: () => GraphQLFieldDefinition,
     getFragment: String => FragmentDefinition,
     getFragmentSpreads: SelectionSet => js.Array[FragmentSpread],
@@ -53,7 +53,7 @@ object ValidationContext {
     getSchema: () => GraphQLSchema,
     getType: () => GraphQLOutputType,
     getVariableUsages: HasSelectionSet => js.Array[VariableUsage],
-    reportError: GraphQLError => Unit
+    reportError: js.Error => Unit
   ): ValidationContext = {
     val __obj = js.Dynamic.literal(getArgument = js.Any.fromFunction0(getArgument), getDirective = js.Any.fromFunction0(getDirective), getDocument = js.Any.fromFunction0(getDocument), getErrors = js.Any.fromFunction0(getErrors), getFieldDef = js.Any.fromFunction0(getFieldDef), getFragment = js.Any.fromFunction1(getFragment), getFragmentSpreads = js.Any.fromFunction1(getFragmentSpreads), getInputType = js.Any.fromFunction0(getInputType), getParentType = js.Any.fromFunction0(getParentType), getRecursiveVariableUsages = js.Any.fromFunction1(getRecursiveVariableUsages), getRecursivelyReferencedFragments = js.Any.fromFunction1(getRecursivelyReferencedFragments), getSchema = js.Any.fromFunction0(getSchema), getType = js.Any.fromFunction0(getType), getVariableUsages = js.Any.fromFunction1(getVariableUsages), reportError = js.Any.fromFunction1(reportError))
     __obj.asInstanceOf[ValidationContext]
@@ -67,7 +67,7 @@ object ValidationContext {
     
     inline def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     
-    inline def setGetErrors(value: () => js.Array[GraphQLError]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
+    inline def setGetErrors(value: () => js.Array[js.Error]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     
     inline def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = StObject.set(x, "getFieldDef", js.Any.fromFunction0(value))
     
@@ -89,6 +89,6 @@ object ValidationContext {
     
     inline def setGetVariableUsages(value: HasSelectionSet => js.Array[VariableUsage]): Self = StObject.set(x, "getVariableUsages", js.Any.fromFunction1(value))
     
-    inline def setReportError(value: GraphQLError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+    inline def setReportError(value: js.Error => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
   }
 }

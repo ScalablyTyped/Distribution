@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "ElementRef")
 @js.native
-class ElementRef[T] protected () extends StObject {
+open class ElementRef[T] protected () extends StObject {
   def this(nativeElement: T) = this()
   
   /**

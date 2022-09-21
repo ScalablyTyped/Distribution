@@ -26,7 +26,7 @@ trait ContentControlListEntries extends StObject {
   
   def Item(Index: Double): ContentControlListEntry = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.ContentControlListEntries_typekey")
   var WordDotContentControlListEntries_typekey: ContentControlListEntries = js.native

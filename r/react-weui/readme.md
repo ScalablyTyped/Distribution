@@ -10,15 +10,12 @@ weui for react
 | ------------------ | :-------------: |
 | Full name          | react-weui |
 | Keywords           | mobile, ui, framework, weui, react, wechat |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 13755 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1404.6666666666667 |
+| # stars            | 2796.0 |
 
 ## Links
-- [Homepage](https://github.com/weui/react-weui)
-- [Bugs](https://github.com/weui/react-weui/issues)
-- [Repository](https://github.com/weui/react-weui)
 - [Npm](https://www.npmjs.com/package/react-weui)
     
 

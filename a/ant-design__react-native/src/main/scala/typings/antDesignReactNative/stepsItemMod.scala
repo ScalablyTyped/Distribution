@@ -10,7 +10,7 @@ object stepsItemMod {
   
   @JSImport("@ant-design/react-native/lib/steps/StepsItem", JSImport.Default)
   @js.native
-  class default () extends StepsItem
+  open class default () extends StepsItem
   
   trait RenderIconParams extends StObject {
     
@@ -38,8 +38,7 @@ object stepsItemMod {
   }
   
   @js.native
-  trait StepsItem
-    extends Component[StepsItemProps, js.Any, js.Any]
+  trait StepsItem extends Component[StepsItemProps, Any, Any]
   
   trait StepsItemProps extends StObject {
     
@@ -63,7 +62,7 @@ object stepsItemMod {
     
     var status: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
     
@@ -118,7 +117,7 @@ object stepsItemMod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

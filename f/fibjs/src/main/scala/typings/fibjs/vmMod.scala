@@ -13,7 +13,7 @@ object vmMod {
   
   @JSImport("vm", "SandBox")
   @js.native
-  class SandBox ()
+  open class SandBox ()
     extends StObject
        with ClassSandBox
 }

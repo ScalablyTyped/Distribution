@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * iOS configuration that can be selected at the time a test is run.
-  */
 trait SchemaIosRuntimeConfiguration extends StObject {
   
   /**
@@ -32,12 +29,12 @@ object SchemaIosRuntimeConfiguration {
     
     inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    inline def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value*))
     
     inline def setOrientations(value: js.Array[SchemaOrientation]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
     inline def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
-    inline def setOrientationsVarargs(value: SchemaOrientation*): Self = StObject.set(x, "orientations", js.Array(value :_*))
+    inline def setOrientationsVarargs(value: SchemaOrientation*): Self = StObject.set(x, "orientations", js.Array(value*))
   }
 }

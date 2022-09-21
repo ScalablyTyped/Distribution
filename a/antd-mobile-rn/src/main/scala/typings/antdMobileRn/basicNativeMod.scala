@@ -9,11 +9,10 @@ object basicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/accordion/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends AccordionExmple
+  open class default () extends AccordionExmple
   
   @js.native
-  trait AccordionExmple
-    extends Component[js.Any, js.Any, js.Any] {
+  trait AccordionExmple extends Component[Any, Any, Any] {
     
     def onChange(key: String): Unit = js.native
   }

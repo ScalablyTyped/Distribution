@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReplySettings")
 @js.native
 /** Initializes a new instance of an EmailMailboxAutoReplySettings object. */
-class EmailMailboxAutoReplySettings ()
+open class EmailMailboxAutoReplySettings ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReplySettings {
   
   /** Represents the end time for the automated reply period. */
   /* CompleteClass */
-  var endTime: Date = js.native
+  var endTime: js.Date = js.native
   
   /** Gets the automatic reply message intended for an email message from an internal sender. */
   /* CompleteClass */
@@ -35,7 +34,7 @@ class EmailMailboxAutoReplySettings ()
   
   /** Represents the start time for the automated reply period. */
   /* CompleteClass */
-  var startTime: Date = js.native
+  var startTime: js.Date = js.native
   
   /** Gets the automatic reply message intended for an email message from an unknown external sender. */
   /* CompleteClass */

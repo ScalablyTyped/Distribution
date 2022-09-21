@@ -8,7 +8,7 @@ trait Author extends StObject {
   
   var attribution: Double
   
-  var pinned_role: js.UndefOr[js.Any] = js.undefined
+  var pinned_role: js.UndefOr[Any] = js.undefined
   
   var user: User
 }
@@ -23,7 +23,7 @@ object Author {
     
     inline def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    inline def setPinned_role(value: js.Any): Self = StObject.set(x, "pinned_role", value.asInstanceOf[js.Any])
+    inline def setPinned_role(value: Any): Self = StObject.set(x, "pinned_role", value.asInstanceOf[js.Any])
     
     inline def setPinned_roleUndefined: Self = StObject.set(x, "pinned_role", js.undefined)
     

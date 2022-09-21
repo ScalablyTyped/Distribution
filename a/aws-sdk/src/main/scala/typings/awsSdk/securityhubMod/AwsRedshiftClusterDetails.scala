@@ -132,14 +132,19 @@ trait AwsRedshiftClusterDetails extends StObject {
   var HsmStatus: js.UndefOr[AwsRedshiftClusterHsmStatus] = js.undefined
   
   /**
-    * A list of IAM roles that the cluster can use to access other AWS services.
+    * A list of IAM roles that the cluster can use to access other Amazon Web Services services.
     */
   var IamRoles: js.UndefOr[AwsRedshiftClusterIamRoles] = js.undefined
   
   /**
-    * The identifier of the AWS KMS encryption key that is used to encrypt data in the cluster.
+    * The identifier of the KMS encryption key that is used to encrypt data in the cluster.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * Information about the logging status of the cluster.
+    */
+  var LoggingStatus: js.UndefOr[AwsRedshiftClusterLoggingStatus] = js.undefined
   
   /**
     * The name of the maintenance track for the cluster.
@@ -258,13 +263,13 @@ object AwsRedshiftClusterDetails {
     
     inline def setClusterNodesUndefined: Self = StObject.set(x, "ClusterNodes", js.undefined)
     
-    inline def setClusterNodesVarargs(value: AwsRedshiftClusterClusterNode*): Self = StObject.set(x, "ClusterNodes", js.Array(value :_*))
+    inline def setClusterNodesVarargs(value: AwsRedshiftClusterClusterNode*): Self = StObject.set(x, "ClusterNodes", js.Array(value*))
     
     inline def setClusterParameterGroups(value: AwsRedshiftClusterClusterParameterGroups): Self = StObject.set(x, "ClusterParameterGroups", value.asInstanceOf[js.Any])
     
     inline def setClusterParameterGroupsUndefined: Self = StObject.set(x, "ClusterParameterGroups", js.undefined)
     
-    inline def setClusterParameterGroupsVarargs(value: AwsRedshiftClusterClusterParameterGroup*): Self = StObject.set(x, "ClusterParameterGroups", js.Array(value :_*))
+    inline def setClusterParameterGroupsVarargs(value: AwsRedshiftClusterClusterParameterGroup*): Self = StObject.set(x, "ClusterParameterGroups", js.Array(value*))
     
     inline def setClusterPublicKey(value: NonEmptyString): Self = StObject.set(x, "ClusterPublicKey", value.asInstanceOf[js.Any])
     
@@ -278,7 +283,7 @@ object AwsRedshiftClusterDetails {
     
     inline def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
-    inline def setClusterSecurityGroupsVarargs(value: AwsRedshiftClusterClusterSecurityGroup*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
+    inline def setClusterSecurityGroupsVarargs(value: AwsRedshiftClusterClusterSecurityGroup*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value*))
     
     inline def setClusterSnapshotCopyStatus(value: AwsRedshiftClusterClusterSnapshotCopyStatus): Self = StObject.set(x, "ClusterSnapshotCopyStatus", value.asInstanceOf[js.Any])
     
@@ -304,7 +309,7 @@ object AwsRedshiftClusterDetails {
     
     inline def setDeferredMaintenanceWindowsUndefined: Self = StObject.set(x, "DeferredMaintenanceWindows", js.undefined)
     
-    inline def setDeferredMaintenanceWindowsVarargs(value: AwsRedshiftClusterDeferredMaintenanceWindow*): Self = StObject.set(x, "DeferredMaintenanceWindows", js.Array(value :_*))
+    inline def setDeferredMaintenanceWindowsVarargs(value: AwsRedshiftClusterDeferredMaintenanceWindow*): Self = StObject.set(x, "DeferredMaintenanceWindows", js.Array(value*))
     
     inline def setElasticIpStatus(value: AwsRedshiftClusterElasticIpStatus): Self = StObject.set(x, "ElasticIpStatus", value.asInstanceOf[js.Any])
     
@@ -342,11 +347,15 @@ object AwsRedshiftClusterDetails {
     
     inline def setIamRolesUndefined: Self = StObject.set(x, "IamRoles", js.undefined)
     
-    inline def setIamRolesVarargs(value: AwsRedshiftClusterIamRole*): Self = StObject.set(x, "IamRoles", js.Array(value :_*))
+    inline def setIamRolesVarargs(value: AwsRedshiftClusterIamRole*): Self = StObject.set(x, "IamRoles", js.Array(value*))
     
     inline def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    
+    inline def setLoggingStatus(value: AwsRedshiftClusterLoggingStatus): Self = StObject.set(x, "LoggingStatus", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingStatusUndefined: Self = StObject.set(x, "LoggingStatus", js.undefined)
     
     inline def setMaintenanceTrackName(value: NonEmptyString): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
@@ -376,7 +385,7 @@ object AwsRedshiftClusterDetails {
     
     inline def setPendingActionsUndefined: Self = StObject.set(x, "PendingActions", js.undefined)
     
-    inline def setPendingActionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "PendingActions", js.Array(value :_*))
+    inline def setPendingActionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "PendingActions", js.Array(value*))
     
     inline def setPendingModifiedValues(value: AwsRedshiftClusterPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
@@ -414,6 +423,6 @@ object AwsRedshiftClusterDetails {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: AwsRedshiftClusterVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: AwsRedshiftClusterVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

@@ -108,7 +108,7 @@ object mod {
     */
   type QueryResults[Queries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof Queries ]: boolean}
-    */ typings.reactMedia.reactMediaStrings.QueryResults & TopLevel[js.Any]
+    */ typings.reactMedia.reactMediaStrings.QueryResults & TopLevel[Any]
   
   trait SingleQueryProps
     extends StObject
@@ -147,7 +147,7 @@ object mod {
       
       inline def setQuery(value: MediaQueryValue): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryVarargs(value: MediaQueryObject*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: MediaQueryObject*): Self = StObject.set(x, "query", js.Array(value*))
     }
   }
 }

@@ -15,14 +15,12 @@ object sketchMod {
   
   @JSImport("react-color/lib/components/sketch/Sketch", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SketchPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SketchPickerProps, js.Object, Any]
   
   type PresetColor = Color | String
   
-  @js.native
-  trait SketchPicker
-    extends Component[SketchPickerProps, js.Object, js.Any]
+  type SketchPicker = Component[SketchPickerProps, js.Object, Any]
   
   trait SketchPickerProps
     extends StObject
@@ -60,7 +58,7 @@ object sketchMod {
       
       inline def setPresetColorsUndefined: Self = StObject.set(x, "presetColors", js.undefined)
       
-      inline def setPresetColorsVarargs(value: PresetColor*): Self = StObject.set(x, "presetColors", js.Array(value :_*))
+      inline def setPresetColorsVarargs(value: PresetColor*): Self = StObject.set(x, "presetColors", js.Array(value*))
       
       inline def setStyles(value: PartialClassesSketchPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

@@ -13,7 +13,7 @@ trait NgBootboxDialog extends StObject {
   
   var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -23,7 +23,7 @@ trait NgBootboxDialog extends StObject {
   
   var message: js.UndefOr[String] = js.undefined
   
-  var onEscape: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
+  var onEscape: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
   
   var show: js.UndefOr[Boolean] = js.undefined
   
@@ -54,7 +54,7 @@ object NgBootboxDialog {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -74,7 +74,7 @@ object NgBootboxDialog {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setOnEscape(value: () => js.Any | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
+    inline def setOnEscape(value: () => Any | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
     
     inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
     

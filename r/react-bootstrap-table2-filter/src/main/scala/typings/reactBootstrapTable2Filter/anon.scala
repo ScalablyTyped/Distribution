@@ -4,8 +4,8 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.SyntheticEvent
 import typings.reactBootstrapTable2Filter.mod.MultiSelectFilterOptions
 import typings.reactBootstrapTable2Filter.mod.SelectFilterOptions
+import typings.reactBootstrapTable2Filter.reactBootstrapTable2FilterStrings._empty
 import typings.reactBootstrapTableNext.mod.ColumnDescription
-import typings.reactBootstrapTableNext.mod.TableColumnFilterProps
 import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -18,11 +18,11 @@ object anon {
     
     var comparator: typings.reactBootstrapTable2Filter.mod.Comparator
     
-    var number: Double
+    var number: Double | _empty
   }
   object Comparator {
     
-    inline def apply(comparator: typings.reactBootstrapTable2Filter.mod.Comparator, number: Double): Comparator = {
+    inline def apply(comparator: typings.reactBootstrapTable2Filter.mod.Comparator, number: Double | _empty): Comparator = {
       val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comparator]
     }
@@ -31,7 +31,7 @@ object anon {
       
       inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double | _empty): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,11 +39,11 @@ object anon {
     
     var comparator: typings.reactBootstrapTable2Filter.mod.Comparator
     
-    var date: typings.std.Date
+    var date: js.Date
   }
   object Date {
     
-    inline def apply(comparator: typings.reactBootstrapTable2Filter.mod.Comparator, date: typings.std.Date): Date = {
+    inline def apply(comparator: typings.reactBootstrapTable2Filter.mod.Comparator, date: js.Date): Date = {
       val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
@@ -52,7 +52,7 @@ object anon {
       
       inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,6 +77,27 @@ object anon {
     }
   }
   
+  trait Number extends StObject {
+    
+    var comparator: typings.reactBootstrapTable2Filter.mod.Comparator
+    
+    var number: Double
+  }
+  object Number {
+    
+    inline def apply(comparator: typings.reactBootstrapTable2Filter.mod.Comparator, number: Double): Number = {
+      val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Number]
+    }
+    
+    extension [Self <: Number](x: Self) {
+      
+      inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined std.Partial<react-bootstrap-table2-filter.react-bootstrap-table2-filter.MultiSelectFilterProps<any>> */
   trait PartialMultiSelectFilterP extends StObject {
     
@@ -84,15 +105,20 @@ object anon {
     
     var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
+    var getFilter: js.UndefOr[
+        js.Function1[
+          /* filter */ js.Function1[/* value */ js.Array[String], Unit | js.Array[Any]], 
+          Unit
+        ]
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[js.Any]]] = js.undefined
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ js.Array[String], Unit | js.Array[Any]]] = js.undefined
     
     var options: js.UndefOr[MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]] = js.undefined
     
@@ -119,7 +145,7 @@ object anon {
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -127,7 +153,7 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setGetFilter(value: /* filter */ String => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      inline def setGetFilter(value: /* filter */ js.Function1[/* value */ js.Array[String], Unit | js.Array[Any]] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
       
@@ -135,7 +161,7 @@ object anon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOnFilter(value: /* filterValue */ String => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* filterValue */ js.Array[String] => Unit | js.Array[Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
@@ -170,11 +196,13 @@ object anon {
     
     var comparators: js.UndefOr[js.Array[typings.reactBootstrapTable2Filter.mod.Comparator]] = js.undefined
     
-    var defaultValue: js.UndefOr[Comparator] = js.undefined
+    var defaultValue: js.UndefOr[Number] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[js.Any, js.Any], Unit]] = js.undefined
+    var getFilter: js.UndefOr[
+        js.Function1[/* filter */ js.Function1[/* value */ Comparator, Unit | js.Array[Any]], Unit]
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -182,9 +210,7 @@ object anon {
     
     var numberStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onFilter: js.UndefOr[
-        js.Function1[/* filterValue */ TableColumnFilterProps[js.Any, js.Any], Unit | js.Array[js.Any]]
-      ] = js.undefined
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ Comparator, Unit | js.Array[Any]]] = js.undefined
     
     var options: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -221,9 +247,9 @@ object anon {
       
       inline def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
       
-      inline def setComparatorsVarargs(value: typings.reactBootstrapTable2Filter.mod.Comparator*): Self = StObject.set(x, "comparators", js.Array(value :_*))
+      inline def setComparatorsVarargs(value: typings.reactBootstrapTable2Filter.mod.Comparator*): Self = StObject.set(x, "comparators", js.Array(value*))
       
-      inline def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Number): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -231,7 +257,7 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      inline def setGetFilter(value: /* filter */ js.Function1[/* value */ Comparator, Unit | js.Array[Any]] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
       
@@ -247,7 +273,7 @@ object anon {
       
       inline def setNumberStyleUndefined: Self = StObject.set(x, "numberStyle", js.undefined)
       
-      inline def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* filterValue */ Comparator => Unit | js.Array[Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
@@ -255,7 +281,7 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -282,18 +308,20 @@ object anon {
     
     var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
+    var getFilter: js.UndefOr[
+        js.Function1[/* filter */ js.Function1[/* value */ String, Unit | js.Array[Any]], Unit]
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[js.Any]]] = js.undefined
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[Any]]] = js.undefined
     
     var options: js.UndefOr[
-        SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[js.Any, js.Any], SelectFilterOptions])
+        SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[Any, Any], SelectFilterOptions])
       ] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -319,7 +347,7 @@ object anon {
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -327,7 +355,7 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setGetFilter(value: /* filter */ String => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      inline def setGetFilter(value: /* filter */ js.Function1[/* value */ String, Unit | js.Array[Any]] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
       
@@ -335,19 +363,19 @@ object anon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOnFilter(value: /* filterValue */ String => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* filterValue */ String => Unit | js.Array[Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
       inline def setOptions(
-        value: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[js.Any, js.Any], SelectFilterOptions])
+        value: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[Any, Any], SelectFilterOptions])
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsFunction1(value: /* column */ ColumnDescription[js.Any, js.Any] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptionsFunction1(value: /* column */ ColumnDescription[Any, Any] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -372,19 +400,19 @@ object anon {
     
     var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[js.Any, js.Any], Unit]] = js.undefined
+    var getFilter: js.UndefOr[
+        js.Function1[/* filter */ js.Function1[/* value */ String, Unit | js.Array[Any]], Unit]
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onFilter: js.UndefOr[
-        js.Function1[/* filterValue */ TableColumnFilterProps[js.Any, js.Any], Unit | js.Array[js.Any]]
-      ] = js.undefined
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[Any]]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -411,7 +439,7 @@ object anon {
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -419,7 +447,7 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      inline def setGetFilter(value: /* filter */ js.Function1[/* value */ String, Unit | js.Array[Any]] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
       
@@ -431,7 +459,7 @@ object anon {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* filterValue */ String => Unit | js.Array[Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       

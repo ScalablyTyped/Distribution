@@ -167,6 +167,26 @@ object Classes {
   @js.native
   val DIALOG_HEADER: String = js.native
   
+  @JSImport("@blueprintjs/core", "Classes.DIALOG_STEP")
+  @js.native
+  val DIALOG_STEP: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.DIALOG_STEP_CONTAINER")
+  @js.native
+  val DIALOG_STEP_CONTAINER: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.DIALOG_STEP_ICON")
+  @js.native
+  val DIALOG_STEP_ICON: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.DIALOG_STEP_TITLE")
+  @js.native
+  val DIALOG_STEP_TITLE: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.DIALOG_STEP_VIEWED")
+  @js.native
+  val DIALOG_STEP_VIEWED: String = js.native
+  
   @JSImport("@blueprintjs/core", "Classes.DISABLED")
   @js.native
   val DISABLED: String = js.native
@@ -271,6 +291,10 @@ object Classes {
   @js.native
   val FOCUS_DISABLED: String = js.native
   
+  @JSImport("@blueprintjs/core", "Classes.FOCUS_STYLE_MANAGER_IGNORE")
+  @js.native
+  val FOCUS_STYLE_MANAGER_IGNORE: String = js.native
+  
   @JSImport("@blueprintjs/core", "Classes.FORM_CONTENT")
   @js.native
   val FORM_CONTENT: String = js.native
@@ -278,6 +302,10 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.FORM_GROUP")
   @js.native
   val FORM_GROUP: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.FORM_GROUP_SUB_LABEL")
+  @js.native
+  val FORM_GROUP_SUB_LABEL: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.FORM_HELPER_TEXT")
   @js.native
@@ -423,6 +451,10 @@ object Classes {
   @js.native
   val MENU_ITEM: String = js.native
   
+  @JSImport("@blueprintjs/core", "Classes.MENU_ITEM_ICON")
+  @js.native
+  val MENU_ITEM_ICON: String = js.native
+  
   @JSImport("@blueprintjs/core", "Classes.MENU_ITEM_LABEL")
   @js.native
   val MENU_ITEM_LABEL: String = js.native
@@ -430,6 +462,10 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.MENU_SUBMENU")
   @js.native
   val MENU_SUBMENU: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MENU_SUBMENU_ICON")
+  @js.native
+  val MENU_SUBMENU_ICON: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.MINIMAL")
   @js.native
@@ -446,6 +482,34 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.MULTILINE")
   @js.native
   val MULTILINE: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG")
+  @js.native
+  val MULTISTEP_DIALOG: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_FOOTER")
+  @js.native
+  val MULTISTEP_DIALOG_FOOTER: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_LEFT_PANEL")
+  @js.native
+  val MULTISTEP_DIALOG_LEFT_PANEL: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_NAV_RIGHT")
+  @js.native
+  val MULTISTEP_DIALOG_NAV_RIGHT: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_NAV_TOP")
+  @js.native
+  val MULTISTEP_DIALOG_NAV_TOP: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_PANELS")
+  @js.native
+  val MULTISTEP_DIALOG_PANELS: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.MULTISTEP_DIALOG_RIGHT_PANEL")
+  @js.native
+  val MULTISTEP_DIALOG_RIGHT_PANEL: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.NAVBAR")
   @js.native
@@ -466,6 +530,10 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.NON_IDEAL_STATE")
   @js.native
   val NON_IDEAL_STATE: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.NON_IDEAL_STATE_TEXT")
+  @js.native
+  val NON_IDEAL_STATE_TEXT: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.NON_IDEAL_STATE_VISUAL")
   @js.native
@@ -503,6 +571,10 @@ object Classes {
   @js.native
   val OVERLAY_CONTENT: String = js.native
   
+  @JSImport("@blueprintjs/core", "Classes.OVERLAY_END_FOCUS_TRAP")
+  @js.native
+  val OVERLAY_END_FOCUS_TRAP: String = js.native
+  
   @JSImport("@blueprintjs/core", "Classes.OVERLAY_INLINE")
   @js.native
   val OVERLAY_INLINE: String = js.native
@@ -515,9 +587,29 @@ object Classes {
   @js.native
   val OVERLAY_SCROLL_CONTAINER: String = js.native
   
+  @JSImport("@blueprintjs/core", "Classes.OVERLAY_START_FOCUS_TRAP")
+  @js.native
+  val OVERLAY_START_FOCUS_TRAP: String = js.native
+  
   @JSImport("@blueprintjs/core", "Classes.PANEL_STACK")
   @js.native
   val PANEL_STACK: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.PANEL_STACK2")
+  @js.native
+  val PANEL_STACK2: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.PANEL_STACK2_HEADER")
+  @js.native
+  val PANEL_STACK2_HEADER: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.PANEL_STACK2_HEADER_BACK")
+  @js.native
+  val PANEL_STACK2_HEADER_BACK: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.PANEL_STACK2_VIEW")
+  @js.native
+  val PANEL_STACK2_VIEW: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.PANEL_STACK_HEADER")
   @js.native
@@ -566,6 +658,10 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.POPOVER_OPEN")
   @js.native
   val POPOVER_OPEN: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.POPOVER_OUT_OF_BOUNDARIES")
+  @js.native
+  val POPOVER_OUT_OF_BOUNDARIES: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.POPOVER_TARGET")
   @js.native
@@ -630,6 +726,10 @@ object Classes {
   @JSImport("@blueprintjs/core", "Classes.SELECT")
   @js.native
   val SELECT: String = js.native
+  
+  @JSImport("@blueprintjs/core", "Classes.SELECTED")
+  @js.native
+  val SELECTED: String = js.native
   
   @JSImport("@blueprintjs/core", "Classes.SKELETON")
   @js.native

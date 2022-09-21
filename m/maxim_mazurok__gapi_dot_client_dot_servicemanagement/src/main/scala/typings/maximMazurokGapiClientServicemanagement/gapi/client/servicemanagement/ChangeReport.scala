@@ -25,6 +25,6 @@ object ChangeReport {
     
     inline def setConfigChangesUndefined: Self = StObject.set(x, "configChanges", js.undefined)
     
-    inline def setConfigChangesVarargs(value: ConfigChange*): Self = StObject.set(x, "configChanges", js.Array(value :_*))
+    inline def setConfigChangesVarargs(value: ConfigChange*): Self = StObject.set(x, "configChanges", js.Array(value*))
   }
 }

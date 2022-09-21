@@ -34,7 +34,7 @@ trait Comment extends StObject {
   /**
     * The date and time the comment was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A Boolean value indicating whether the comment has been deleted.
@@ -49,7 +49,7 @@ trait Comment extends StObject {
   /**
     * The date and time the comment was most recently modified, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A string to integer map that represents the number of individual users who have responded to a comment with the specified reactions.
@@ -73,7 +73,7 @@ object Comment {
     
     inline def setCallerReactionsUndefined: Self = StObject.set(x, "callerReactions", js.undefined)
     
-    inline def setCallerReactionsVarargs(value: ReactionValue*): Self = StObject.set(x, "callerReactions", js.Array(value :_*))
+    inline def setCallerReactionsVarargs(value: ReactionValue*): Self = StObject.set(x, "callerReactions", js.Array(value*))
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object Comment {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -99,7 +99,7 @@ object Comment {
     
     inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
     
-    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

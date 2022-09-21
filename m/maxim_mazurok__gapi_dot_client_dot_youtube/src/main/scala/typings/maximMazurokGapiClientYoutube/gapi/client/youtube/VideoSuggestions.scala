@@ -41,30 +41,30 @@ object VideoSuggestions {
     
     inline def setEditorSuggestionsUndefined: Self = StObject.set(x, "editorSuggestions", js.undefined)
     
-    inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
+    inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value*))
     
     inline def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
     inline def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
     
-    inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+    inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value*))
     
     inline def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
     
     inline def setProcessingHintsUndefined: Self = StObject.set(x, "processingHints", js.undefined)
     
-    inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
+    inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value*))
     
     inline def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
     
     inline def setProcessingWarningsUndefined: Self = StObject.set(x, "processingWarnings", js.undefined)
     
-    inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
+    inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value*))
     
     inline def setTagSuggestions(value: js.Array[VideoSuggestionsTagSuggestion]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
     
     inline def setTagSuggestionsUndefined: Self = StObject.set(x, "tagSuggestions", js.undefined)
     
-    inline def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
+    inline def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value*))
   }
 }

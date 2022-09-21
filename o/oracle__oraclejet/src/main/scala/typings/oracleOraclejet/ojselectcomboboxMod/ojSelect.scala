@@ -16,14 +16,14 @@ trait ojSelect[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV]
      with editableValue[V, SP, SV, V] {
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojSelect: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojSelect: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojSelect: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojSelect: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
   def setProperties(properties: ojSelectSettablePropertiesLenient[V, SV]): Unit = js.native
   
-  def validate(): js.Promise[js.Any] = js.native
+  def validate(): js.Promise[Any] = js.native
 }
 object ojSelect {
   
@@ -60,7 +60,7 @@ object ojSelect {
       
       inline def setChildrenVarargs(
         value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
-      ): Self = StObject.set(x, "children", js.Array(value :_*))
+      ): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -77,11 +77,11 @@ object ojSelect {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object Option {
     
-    inline def apply(value: js.Any): typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option = {
+    inline def apply(value: Any): typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option]
     }
@@ -96,7 +96,7 @@ object ojSelect {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataLakePrincipal extends StObject {
   
   /**
-    * An identifier for the AWS Lake Formation principal.
+    * An identifier for the Lake Formation principal.
     */
   var DataLakePrincipalIdentifier: js.UndefOr[DataLakePrincipalString] = js.undefined
 }

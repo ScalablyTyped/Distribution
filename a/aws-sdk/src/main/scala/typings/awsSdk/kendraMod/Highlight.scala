@@ -20,6 +20,11 @@ trait Highlight extends StObject {
     * Indicates whether the response is the best response. True if this is the best response; otherwise, false.
     */
   var TopAnswer: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The highlight type. 
+    */
+  var Type: js.UndefOr[HighlightType] = js.undefined
 }
 object Highlight {
   
@@ -37,5 +42,9 @@ object Highlight {
     inline def setTopAnswer(value: Boolean): Self = StObject.set(x, "TopAnswer", value.asInstanceOf[js.Any])
     
     inline def setTopAnswerUndefined: Self = StObject.set(x, "TopAnswer", js.undefined)
+    
+    inline def setType(value: HighlightType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -20,7 +20,7 @@ trait LineChart
   def clipEdge(value: Boolean): this.type = js.native
   
   /*When useVoronoi and clipVoronoi are true, you can control the clip radius with this option. Essentially this lets you set how far away from the actual point you can put the mouse for it to select the point.*/
-  def clipRadius(func: js.Function1[/* d */ js.Any, Double]): this.type = js.native
+  def clipRadius(func: js.Function1[/* d */ Any, Double]): this.type = js.native
   /*When useVoronoi and clipVoronoi are true, you can control the clip radius with this option. Essentially this lets you set how far away from the actual point you can put the mouse for it to select the point.*/
   def clipRadius(value: Double): this.type = js.native
   
@@ -30,19 +30,19 @@ trait LineChart
   def clipVoronoi(value: Boolean): this.type = js.native
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
-  def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
+  def color(func: js.Function2[/* d */ Any, /* i */ Double, String]): this.type = js.native
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(value: js.Array[String]): this.type = js.native
   
   /*No longer used.Use chart.dispatch.changeState(...) instead*/
-  def defaultState(): js.Any = js.native
+  def defaultState(): Any = js.native
   /*No longer used.Use chart.dispatch.changeState(...) instead*/
-  def defaultState(value: js.Any): this.type = js.native
+  def defaultState(value: Any): this.type = js.native
   
   /*A provided function that allows a line to be non-continuous when not defined.*/
-  def defined(): js.Function2[/* d */ js.Any, /* i */ Double, Boolean] = js.native
+  def defined(): js.Function2[/* d */ Any, /* i */ Double, Boolean] = js.native
   /*A provided function that allows a line to be non-continuous when not defined.*/
-  def defined(func: js.Function2[/* d */ js.Any, /* i */ Double, Boolean]): this.type = js.native
+  def defined(func: js.Function2[/* d */ Any, /* i */ Double, Boolean]): this.type = js.native
   
   /*Duration in ms to take when updating chart. For things like bar charts, each bar can animate by itself but the total time taken should be this value.*/
   def duration(): Double = js.native
@@ -51,22 +51,22 @@ trait LineChart
   
   def focus(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def focus(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("focus")
   var focus_Original: Focus = js.native
   
@@ -91,11 +91,11 @@ trait LineChart
   def height(value: Double): this.type = js.native
   
   /**/
-  def highlightPoint(): js.Function1[/* d */ js.Any, Boolean] = js.native
+  def highlightPoint(): js.Function1[/* d */ Any, Boolean] = js.native
   /**/
-  def highlightPoint(func: js.Function1[/* d */ js.Any, Boolean]): this.type = js.native
+  def highlightPoint(func: js.Function1[/* d */ Any, Boolean]): this.type = js.native
   
-  def id(): js.Any = js.native
+  def id(): Any = js.native
   def id(value: String): this.type = js.native
   def id(value: Double): this.type = js.native
   
@@ -110,51 +110,51 @@ trait LineChart
   def interpolate(value: String): this.type = js.native
   
   /*Function to define if a line is a normal line or if it fills in the area. Notice the default gets the value from the line's definition in data. If a non-function is given, it the value is used for all lines.*/
-  def isArea(): js.Function1[/* d */ js.Any, Boolean] = js.native
+  def isArea(): js.Function1[/* d */ Any, Boolean] = js.native
   /*Function to define if a line is a normal line or if it fills in the area. Notice the default gets the value from the line's definition in data. If a non-function is given, it the value is used for all lines.*/
-  def isArea(func: js.Function1[/* d */ js.Any, Boolean]): this.type = js.native
+  def isArea(func: js.Function1[/* d */ Any, Boolean]): this.type = js.native
   /*Function to define if a line is a normal line or if it fills in the area. Notice the default gets the value from the line's definition in data. If a non-function is given, it the value is used for all lines.*/
   def isArea(value: Boolean): this.type = js.native
   
   def legend(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def legend(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("legend")
   var legend_Original: Legend = js.native
   
   def lines(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def lines(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("lines")
   var lines_Original: Line = js.native
   
@@ -177,9 +177,9 @@ trait LineChart
   def padDataOuter(value: Double): this.type = js.native
   
   /* Function used to determine if scatter points are active or not, returns false to denote them as inactive and true for active.*/
-  def pointActive(): js.Function1[/* d */ js.Any, Boolean] = js.native
+  def pointActive(): js.Function1[/* d */ Any, Boolean] = js.native
   /*Function used to determine if scatter points are active or not, returns false to denote them as inactive and true for active.*/
-  def pointActive(func: js.Function1[/* d */ js.Any, Boolean]): this.type = js.native
+  def pointActive(func: js.Function1[/* d */ Any, Boolean]): this.type = js.native
   
   /* Defines the whole point scale's domain. Using this will disable calculating the domain based on the data.*/
   def pointDomain(value: js.Array[Double]): this.type = js.native
@@ -190,14 +190,14 @@ trait LineChart
   def pointRange(value: js.Array[Double]): this.type = js.native
   
   /* Override the default scale type for the point axis*/
-  def pointScale(): js.Any = js.native
+  def pointScale(): Any = js.native
   /* Override the default scale type for the point axis*/
-  def pointScale(value: js.Any): this.type = js.native
+  def pointScale(value: Any): this.type = js.native
   
   /* Specifies the size of the points in a scatter. Scatter is also used to make the hover points on lines.*/
-  def pointSize(): js.Function1[/* d */ js.Any, Double] = js.native
+  def pointSize(): js.Function1[/* d */ Any, Double] = js.native
   /* Specifies the size of the points in a scatter. Scatter is also used to make the hover points on lines.*/
-  def pointSize(func: js.Function1[/* d */ js.Any, Double]): this.type = js.native
+  def pointSize(func: js.Function1[/* d */ Any, Double]): this.type = js.native
   /* Specifies the size of the points in a scatter. Scatter is also used to make the hover points on lines.*/
   def pointSize(value: Double): this.type = js.native
   
@@ -232,9 +232,9 @@ trait LineChart
   var tooltip: Tooltip = js.native
   
   /*Deprecated. Use chart.tooltip.contentGenerator or chart.interactiveGuideline.tooltip.contentGenerator to control tooltip content.*/
-  def tooltipContent(): js.Function1[/* d */ js.Any, String] = js.native
+  def tooltipContent(): js.Function1[/* d */ Any, String] = js.native
   /*Deprecated. Use chart.tooltip.contentGenerator or chart.interactiveGuideline.tooltip.contentGenerator to control tooltip content.*/
-  def tooltipContent(func: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def tooltipContent(func: js.Function1[/* d */ Any, String]): this.type = js.native
   
   /*Deprecated. Use chart.tooltip.enabled or chart.interactive to control if tooltips are enabled or not.*/
   def tooltips(): Boolean = js.native
@@ -257,9 +257,9 @@ trait LineChart
   def width(value: Double): this.type = js.native
   
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(): js.Function1[/* d */ js.Any, js.Any] = js.native
+  def x(): js.Function1[/* d */ Any, Any] = js.native
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
+  def x(func: js.Function1[/* d */ Any, Any]): this.type = js.native
   
   var xAxis: Nvd3Axis = js.native
   
@@ -274,13 +274,13 @@ trait LineChart
   def xRange(value: js.Array[Double]): this.type = js.native
   
   /* Override the default scale type for the X axis*/
-  def xScale(): js.Any = js.native
+  def xScale(): Any = js.native
   /* Override the default scale type for the X axis*/
-  def xScale(value: js.Any): this.type = js.native
+  def xScale(value: Any): this.type = js.native
   
-  def y(): js.Function1[/* d */ js.Any, Double] = js.native
+  def y(): js.Function1[/* d */ Any, Double] = js.native
   /* Proxy function to return the y value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def y(func: js.Function1[/* d */ js.Any, Double]): this.type = js.native
+  def y(func: js.Function1[/* d */ Any, Double]): this.type = js.native
   
   var yAxis: Nvd3Axis = js.native
   
@@ -295,7 +295,7 @@ trait LineChart
   def yRange(value: js.Array[Double]): this.type = js.native
   
   /* Override the default scale type for the y axis*/
-  def yScale(): js.Any = js.native
+  def yScale(): Any = js.native
   /* Override the default scale type for the y axis*/
-  def yScale(value: js.Any): this.type = js.native
+  def yScale(value: Any): this.type = js.native
 }

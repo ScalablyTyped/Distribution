@@ -1,8 +1,6 @@
 package typings.luminoCoreutils
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Array
-import typings.std.ReadonlyArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,16 +80,11 @@ object jsonMod {
     inline def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean]
   }
   
-  @js.native
-  trait JSONArray
-    extends StObject
-       with Array[JSONValue]
-       with _JSONValue
+  type JSONArray = js.Array[JSONValue]
   
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[JSONValue]
-       with _JSONValue
   object JSONObject {
     
     inline def apply(): JSONObject = {
@@ -102,23 +95,13 @@ object jsonMod {
   
   type JSONPrimitive = Boolean | Double | String | Null
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoCoreutils.jsonMod.JSONPrimitive
-    - typings.luminoCoreutils.jsonMod.JSONObject
-    - typings.luminoCoreutils.jsonMod.JSONArray
-  */
-  type JSONValue = _JSONValue | JSONPrimitive
+  type JSONValue = JSONPrimitive | JSONObject | Any
   
-  @js.native
-  trait PartialJSONArray
-    extends StObject
-       with Array[PartialJSONValue]
-       with _PartialJSONValue
+  type PartialJSONArray = js.Array[PartialJSONValue]
   
   trait PartialJSONObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[PartialJSONValue]]
-       with _PartialJSONValue
   object PartialJSONObject {
     
     inline def apply(): PartialJSONObject = {
@@ -127,23 +110,13 @@ object jsonMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoCoreutils.jsonMod.JSONPrimitive
-    - typings.luminoCoreutils.jsonMod.PartialJSONObject
-    - typings.luminoCoreutils.jsonMod.PartialJSONArray
-  */
-  type PartialJSONValue = _PartialJSONValue | JSONPrimitive
+  type PartialJSONValue = JSONPrimitive | PartialJSONObject | Any
   
-  @js.native
-  trait ReadonlyJSONArray
-    extends StObject
-       with ReadonlyArray[ReadonlyJSONValue]
-       with _ReadonlyJSONValue
+  type ReadonlyJSONArray = js.Array[ReadonlyJSONValue]
   
   trait ReadonlyJSONObject
     extends StObject
        with /* key */ StringDictionary[ReadonlyJSONValue]
-       with _ReadonlyJSONValue
   object ReadonlyJSONObject {
     
     inline def apply(): ReadonlyJSONObject = {
@@ -152,23 +125,13 @@ object jsonMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoCoreutils.jsonMod.JSONPrimitive
-    - typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
-    - typings.luminoCoreutils.jsonMod.ReadonlyJSONArray
-  */
-  type ReadonlyJSONValue = _ReadonlyJSONValue | JSONPrimitive
+  type ReadonlyJSONValue = JSONPrimitive | ReadonlyJSONObject | Any
   
-  @js.native
-  trait ReadonlyPartialJSONArray
-    extends StObject
-       with ReadonlyArray[ReadonlyPartialJSONValue]
-       with _ReadonlyPartialJSONValue
+  type ReadonlyPartialJSONArray = js.Array[ReadonlyPartialJSONValue]
   
   trait ReadonlyPartialJSONObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[ReadonlyPartialJSONValue]]
-       with _ReadonlyPartialJSONValue
   object ReadonlyPartialJSONObject {
     
     inline def apply(): ReadonlyPartialJSONObject = {
@@ -177,18 +140,5 @@ object jsonMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoCoreutils.jsonMod.JSONPrimitive
-    - typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
-    - typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONArray
-  */
-  type ReadonlyPartialJSONValue = _ReadonlyPartialJSONValue | JSONPrimitive
-  
-  trait _JSONValue extends StObject
-  
-  trait _PartialJSONValue extends StObject
-  
-  trait _ReadonlyJSONValue extends StObject
-  
-  trait _ReadonlyPartialJSONValue extends StObject
+  type ReadonlyPartialJSONValue = JSONPrimitive | ReadonlyPartialJSONObject | Any
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs", "InputSpec")
 @js.native
-class InputSpec protected ()
+open class InputSpec protected ()
   extends typings.tensorflowTfjsLayers.mod.InputSpec {
   def this(args: InputSpecArgs) = this()
 }

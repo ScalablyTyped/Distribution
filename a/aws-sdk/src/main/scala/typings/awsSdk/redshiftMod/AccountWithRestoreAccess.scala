@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountWithRestoreAccess extends StObject {
   
   /**
-    * The identifier of an AWS support account authorized to restore a snapshot. For AWS support, the identifier is amazon-redshift-support. 
+    * The identifier of an Amazon Web Services support account authorized to restore a snapshot. For Amazon Web Services Support, the identifier is amazon-redshift-support. 
     */
   var AccountAlias: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier of an AWS customer account authorized to restore a snapshot.
+    * The identifier of an Amazon Web Services account authorized to restore a snapshot.
     */
   var AccountId: js.UndefOr[String] = js.undefined
 }

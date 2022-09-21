@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the widget.
   */
-class Widget ()
+open class Widget ()
   extends typings.luminoWidgets.widgetMod.Widget {
   def this(options: IOptions) = this()
 }
@@ -30,7 +30,7 @@ object Widget {
     */
   @JSImport("@lumino/widgets", "Widget.ChildMessage")
   @js.native
-  class ChildMessage protected ()
+  open class ChildMessage protected ()
     extends typings.luminoWidgets.widgetMod.Widget.ChildMessage {
     /**
       * Construct a new child message.
@@ -61,6 +61,34 @@ object Widget {
     /* 4 */ val IsHidden: typings.luminoWidgets.widgetMod.Widget.Flag.IsHidden & Double = js.native
     
     /* 8 */ val IsVisible: typings.luminoWidgets.widgetMod.Widget.Flag.IsVisible & Double = js.native
+  }
+  
+  /**
+    * The method for hiding the widget.
+    *
+    * The default is Display.
+    *
+    * Using `Scale` will often increase performance as most browsers will not
+    * trigger style computation for the `transform` action. This should be used
+    * sparingly and tested, since increasing the number of composition layers
+    * may slow things down.
+    *
+    * To ensure the transformation does not trigger style recomputation, you
+    * may need to set the widget CSS style `will-change: transform`. This
+    * should be used only when needed as it may overwhelm the browser with a
+    * high number of layers. See
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
+    */
+  @JSImport("@lumino/widgets", "Widget.HiddenMode")
+  @js.native
+  object HiddenMode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.luminoWidgets.widgetMod.Widget.HiddenMode & Double] = js.native
+    
+    /* 0 */ val Display: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Display & Double = js.native
+    
+    /* 1 */ val Scale: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Scale & Double = js.native
   }
   
   /**
@@ -223,7 +251,7 @@ object Widget {
     */
   @JSImport("@lumino/widgets", "Widget.ResizeMessage")
   @js.native
-  class ResizeMessage protected ()
+  open class ResizeMessage protected ()
     extends typings.luminoWidgets.widgetMod.Widget.ResizeMessage {
     /**
       * Construct a new resize message.

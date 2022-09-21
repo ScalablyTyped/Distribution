@@ -33,6 +33,6 @@ object ListApplicationSnapshotsResponse {
     
     inline def setSnapshotSummariesUndefined: Self = StObject.set(x, "SnapshotSummaries", js.undefined)
     
-    inline def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = StObject.set(x, "SnapshotSummaries", js.Array(value :_*))
+    inline def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = StObject.set(x, "SnapshotSummaries", js.Array(value*))
   }
 }

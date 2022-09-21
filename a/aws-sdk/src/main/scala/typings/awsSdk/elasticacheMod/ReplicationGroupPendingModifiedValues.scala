@@ -17,6 +17,11 @@ trait ReplicationGroupPendingModifiedValues extends StObject {
   var AutomaticFailoverStatus: js.UndefOr[PendingAutomaticFailoverStatus] = js.undefined
   
   /**
+    * The log delivery configurations being modified 
+    */
+  var LogDeliveryConfigurations: js.UndefOr[PendingLogDeliveryConfigurationList] = js.undefined
+  
+  /**
     * The primary cluster ID that is applied immediately (if --apply-immediately was specified), or during the next maintenance window.
     */
   var PrimaryClusterId: js.UndefOr[String] = js.undefined
@@ -27,7 +32,7 @@ trait ReplicationGroupPendingModifiedValues extends StObject {
   var Resharding: js.UndefOr[ReshardingStatus] = js.undefined
   
   /**
-    * The user groups being modified.
+    * The user group being modified.
     */
   var UserGroups: js.UndefOr[UserGroupsUpdateStatus] = js.undefined
 }
@@ -47,6 +52,12 @@ object ReplicationGroupPendingModifiedValues {
     inline def setAutomaticFailoverStatus(value: PendingAutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailoverStatus", value.asInstanceOf[js.Any])
     
     inline def setAutomaticFailoverStatusUndefined: Self = StObject.set(x, "AutomaticFailoverStatus", js.undefined)
+    
+    inline def setLogDeliveryConfigurations(value: PendingLogDeliveryConfigurationList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
+    
+    inline def setLogDeliveryConfigurationsVarargs(value: PendingLogDeliveryConfiguration*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
     
     inline def setPrimaryClusterId(value: String): Self = StObject.set(x, "PrimaryClusterId", value.asInstanceOf[js.Any])
     

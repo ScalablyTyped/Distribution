@@ -18,11 +18,11 @@ object fieldGroupConfigMod extends Shortcut {
   @JSImport("esri/widgets/FeatureForm/FieldGroupConfig", JSImport.Namespace)
   @js.native
   /**
-    * Configuration options for displaying a group of fields within the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
+    * Configuration options for configuring grouped fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with FieldGroupConfig {
     def this(properties: FieldGroupConfigProperties) = this()

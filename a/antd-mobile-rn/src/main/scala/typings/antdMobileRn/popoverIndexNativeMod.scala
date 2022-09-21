@@ -14,7 +14,7 @@ object popoverIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/popover/index.native", JSImport.Default)
   @js.native
-  class default () extends Popover
+  open class default () extends Popover
   /* static members */
   object default {
     
@@ -24,8 +24,8 @@ object popoverIndexNativeMod {
     
     @JSImport("antd-mobile-rn/lib/popover/index.native", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/popover/index.native", "default.defaultProps")
     @js.native
@@ -34,10 +34,9 @@ object popoverIndexNativeMod {
   }
   
   @js.native
-  trait Popover
-    extends Component[PopoverProps, js.Any, js.Any] {
+  trait Popover extends Component[PopoverProps, Any, Any] {
     
-    var menuContextRef: js.Any = js.native
+    var menuContextRef: Any = js.native
   }
   
   trait PopoverProps
@@ -50,7 +49,7 @@ object popoverIndexNativeMod {
     
     var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var renderOverlayComponent: js.UndefOr[js.Function1[/* values */ js.Any, Element]] = js.undefined
+    var renderOverlayComponent: js.UndefOr[js.Function1[/* values */ Any, Element]] = js.undefined
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -81,7 +80,7 @@ object popoverIndexNativeMod {
       
       inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
       
-      inline def setRenderOverlayComponent(value: /* values */ js.Any => Element): Self = StObject.set(x, "renderOverlayComponent", js.Any.fromFunction1(value))
+      inline def setRenderOverlayComponent(value: /* values */ Any => Element): Self = StObject.set(x, "renderOverlayComponent", js.Any.fromFunction1(value))
       
       inline def setRenderOverlayComponentUndefined: Self = StObject.set(x, "renderOverlayComponent", js.undefined)
       

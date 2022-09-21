@@ -12,7 +12,7 @@ trait ListChannelMessagesResponse extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The information about and content of each requested message.
+    * The information about, and content of, each requested message.
     */
   var ChannelMessages: js.UndefOr[ChannelMessageSummaryList] = js.undefined
   
@@ -38,7 +38,7 @@ object ListChannelMessagesResponse {
     
     inline def setChannelMessagesUndefined: Self = StObject.set(x, "ChannelMessages", js.undefined)
     
-    inline def setChannelMessagesVarargs(value: ChannelMessageSummary*): Self = StObject.set(x, "ChannelMessages", js.Array(value :_*))
+    inline def setChannelMessagesVarargs(value: ChannelMessageSummary*): Self = StObject.set(x, "ChannelMessages", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

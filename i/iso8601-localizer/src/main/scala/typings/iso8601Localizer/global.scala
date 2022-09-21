@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("ISO8601Localizer")
   @js.native
-  class ISO8601Localizer protected ()
+  open class ISO8601Localizer protected ()
     extends StObject
        with typings.iso8601Localizer.ISO8601Localizer {
     def this(userISO8601: String) = this()

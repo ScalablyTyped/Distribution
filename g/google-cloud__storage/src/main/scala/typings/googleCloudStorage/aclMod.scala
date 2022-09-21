@@ -1,9 +1,8 @@
 package typings.googleCloudStorage
 
-import typings.googleCloudCommon.serviceObjectMod.Metadata
-import typings.googleCloudCommon.utilMod.BodyResponseCallback
-import typings.googleCloudCommon.utilMod.DecorateRequestOptions
-import typings.std.Error
+import typings.googleCloudStorage.serviceObjectMod.Metadata
+import typings.googleCloudStorage.utilMod.BodyResponseCallback
+import typings.googleCloudStorage.utilMod.DecorateRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ object aclMod {
     *     "example.com", the entity would be `domain-example.com`.
     *
     * For more detailed information, see
-    * [About Access Control Lists](http://goo.gl/6qBBPO).
+    * {@link http://goo.gl/6qBBPO| About Access Control Lists}.
     *
     * @constructor Acl
     * @mixin
@@ -53,7 +52,7 @@ object aclMod {
     */
   @JSImport("@google-cloud/storage/build/src/acl", "Acl")
   @js.native
-  class Acl protected () extends AclRoleAccessorMethods {
+  open class Acl protected () extends AclRoleAccessorMethods {
     def this(options: AclOptions) = this()
     
     var default: Acl = js.native
@@ -114,7 +113,7 @@ object aclMod {
     */
   @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods")
   @js.native
-  class AclRoleAccessorMethods () extends StObject {
+  open class AclRoleAccessorMethods () extends StObject {
     
     def _assignAccessMethods(role: String): Unit = js.native
   }
@@ -127,20 +126,20 @@ object aclMod {
     /* static member */
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.accessMethods")
     @js.native
-    def accessMethods: js.Any = js.native
-    inline def accessMethods_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessMethods")(x.asInstanceOf[js.Any])
+    def accessMethods: Any = js.native
+    inline def accessMethods_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessMethods")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.entities")
     @js.native
-    def entities: js.Any = js.native
-    inline def entities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entities")(x.asInstanceOf[js.Any])
+    def entities: Any = js.native
+    inline def entities_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entities")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.roles")
     @js.native
-    def roles: js.Any = js.native
-    inline def roles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
+    def roles: Any = js.native
+    inline def roles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
   trait AccessControlObject extends StObject {
@@ -190,7 +189,7 @@ object aclMod {
   }
   
   type AddAclCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* acl */ js.UndefOr[AccessControlObject | Null], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit
@@ -232,7 +231,7 @@ object aclMod {
   type AddAclResponse = js.Tuple2[AccessControlObject, Metadata]
   
   type GetAclCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* acl */ js.UndefOr[AccessControlObject | js.Array[AccessControlObject] | Null], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit
@@ -269,7 +268,7 @@ object aclMod {
   
   type GetAclResponse = js.Tuple2[AccessControlObject | js.Array[AccessControlObject], Metadata]
   
-  type RemoveAclCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
+  type RemoveAclCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
   
   trait RemoveAclOptions extends StObject {
     
@@ -303,7 +302,7 @@ object aclMod {
   type RemoveAclResponse = js.Array[Metadata]
   
   type UpdateAclCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* acl */ js.UndefOr[AccessControlObject | Null], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit

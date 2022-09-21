@@ -14,34 +14,38 @@ object physicsViewerMod {
   
   @JSImport("babylonjs/Debug/physicsViewer", "PhysicsViewer")
   @js.native
-  class PhysicsViewer protected () extends StObject {
-    /**
-      * Creates a new PhysicsViewer
-      * @param scene defines the hosting scene
-      */
+  /**
+    * Creates a new PhysicsViewer
+    * @param scene defines the hosting scene
+    */
+  open class PhysicsViewer () extends StObject {
     def this(scene: Scene) = this()
     
-    /* private */ var _debugBoxMesh: js.Any = js.native
+    /* private */ var _debugBoxMesh: Any = js.native
     
-    /* private */ var _debugCylinderMesh: js.Any = js.native
+    /* private */ var _debugCapsuleMesh: Any = js.native
     
-    /* private */ var _debugMaterial: js.Any = js.native
+    /* private */ var _debugCylinderMesh: Any = js.native
     
-    /* private */ var _debugMeshMeshes: js.Any = js.native
+    /* private */ var _debugMaterial: Any = js.native
     
-    /* private */ var _debugSphereMesh: js.Any = js.native
+    /* private */ var _debugMeshMeshes: Any = js.native
     
-    /* private */ var _getDebugBoxMesh: js.Any = js.native
+    /* private */ var _debugSphereMesh: Any = js.native
     
-    /* private */ var _getDebugCylinderMesh: js.Any = js.native
+    /* private */ var _getDebugBoxMesh: Any = js.native
     
-    /* private */ var _getDebugMaterial: js.Any = js.native
+    /* private */ var _getDebugCapsuleMesh: Any = js.native
     
-    /* private */ var _getDebugMesh: js.Any = js.native
+    /* private */ var _getDebugCylinderMesh: Any = js.native
     
-    /* private */ var _getDebugMeshMesh: js.Any = js.native
+    /* private */ var _getDebugMaterial: Any = js.native
     
-    /* private */ var _getDebugSphereMesh: js.Any = js.native
+    /* private */ var _getDebugMesh: Any = js.native
+    
+    /* private */ var _getDebugMeshMesh: Any = js.native
+    
+    /* private */ var _getDebugSphereMesh: Any = js.native
     
     /** @hidden */
     /* protected */ var _impostors: js.Array[Nullable[PhysicsImpostor]] = js.native
@@ -55,7 +59,7 @@ object physicsViewerMod {
     /** @hidden */
     /* protected */ var _physicsEnginePlugin: Nullable[IPhysicsEnginePlugin] = js.native
     
-    /* private */ var _renderFunction: js.Any = js.native
+    /* private */ var _renderFunction: Any = js.native
     
     /** @hidden */
     /* protected */ var _scene: Nullable[Scene] = js.native
@@ -63,7 +67,7 @@ object physicsViewerMod {
     /** @hidden */
     /* protected */ def _updateDebugMeshes(): Unit = js.native
     
-    /* private */ var _utilityLayer: js.Any = js.native
+    /* private */ var _utilityLayer: Any = js.native
     
     /** Releases all resources */
     def dispose(): Unit = js.native

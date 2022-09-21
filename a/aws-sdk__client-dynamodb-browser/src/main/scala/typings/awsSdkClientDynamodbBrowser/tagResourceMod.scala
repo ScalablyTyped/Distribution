@@ -8,5 +8,5 @@ object tagResourceMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/TagResource", "TagResource")
   @js.native
-  val TagResource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val TagResource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

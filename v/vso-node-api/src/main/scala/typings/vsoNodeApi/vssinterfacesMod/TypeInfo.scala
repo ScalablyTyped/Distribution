@@ -25,8 +25,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/common/VSSInterfaces", "TypeInfo.JsonPatchOperation")
   @js.native
-  def JsonPatchOperation: js.Any = js.native
-  inline def JsonPatchOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonPatchOperation")(x.asInstanceOf[js.Any])
+  def JsonPatchOperation: Any = js.native
+  inline def JsonPatchOperation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonPatchOperation")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/common/VSSInterfaces", "TypeInfo.Operation")
   @js.native

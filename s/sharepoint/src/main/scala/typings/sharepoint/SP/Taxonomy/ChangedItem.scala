@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Taxonomy
 
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait ChangedItem
   
   def get_changedBy(): String = js.native
   
-  def get_changedTime(): Date = js.native
+  def get_changedTime(): js.Date = js.native
   
   def get_id(): Guid = js.native
   

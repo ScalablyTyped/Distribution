@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("github-slugger", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BananaSlug
   @JSImport("github-slugger", JSImport.Namespace)
@@ -23,8 +23,8 @@ object mod {
   /* static member */
   inline def slug(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def slug(value: String, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def slug(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def slug(value: js.Any, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slug(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slug(value: Any, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait BananaSlug extends StObject {

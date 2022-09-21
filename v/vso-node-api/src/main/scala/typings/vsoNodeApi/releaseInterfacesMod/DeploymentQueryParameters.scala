@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,9 @@ trait DeploymentQueryParameters extends StObject {
   
   var maxDeploymentsPerEnvironment: Double
   
-  var maxModifiedTime: Date
+  var maxModifiedTime: js.Date
   
-  var minModifiedTime: Date
+  var minModifiedTime: js.Date
   
   var operationStatus: DeploymentOperationStatus
   
@@ -52,8 +51,8 @@ object DeploymentQueryParameters {
     isDeleted: Boolean,
     latestDeploymentsOnly: Boolean,
     maxDeploymentsPerEnvironment: Double,
-    maxModifiedTime: Date,
-    minModifiedTime: Date,
+    maxModifiedTime: js.Date,
+    minModifiedTime: js.Date,
     operationStatus: DeploymentOperationStatus,
     queryOrder: ReleaseQueryOrder,
     queryType: DeploymentsQueryType,
@@ -71,7 +70,7 @@ object DeploymentQueryParameters {
     
     inline def setArtifactVersions(value: js.Array[String]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
     
-    inline def setArtifactVersionsVarargs(value: String*): Self = StObject.set(x, "artifactVersions", js.Array(value :_*))
+    inline def setArtifactVersionsVarargs(value: String*): Self = StObject.set(x, "artifactVersions", js.Array(value*))
     
     inline def setDeploymentStatus(value: DeploymentStatus): Self = StObject.set(x, "deploymentStatus", value.asInstanceOf[js.Any])
     
@@ -79,7 +78,7 @@ object DeploymentQueryParameters {
     
     inline def setEnvironments(value: js.Array[DefinitionEnvironmentReference]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentsVarargs(value: DefinitionEnvironmentReference*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: DefinitionEnvironmentReference*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setExpands(value: DeploymentExpands): Self = StObject.set(x, "expands", value.asInstanceOf[js.Any])
     
@@ -89,9 +88,9 @@ object DeploymentQueryParameters {
     
     inline def setMaxDeploymentsPerEnvironment(value: Double): Self = StObject.set(x, "maxDeploymentsPerEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setMaxModifiedTime(value: Date): Self = StObject.set(x, "maxModifiedTime", value.asInstanceOf[js.Any])
+    inline def setMaxModifiedTime(value: js.Date): Self = StObject.set(x, "maxModifiedTime", value.asInstanceOf[js.Any])
     
-    inline def setMinModifiedTime(value: Date): Self = StObject.set(x, "minModifiedTime", value.asInstanceOf[js.Any])
+    inline def setMinModifiedTime(value: js.Date): Self = StObject.set(x, "minModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     

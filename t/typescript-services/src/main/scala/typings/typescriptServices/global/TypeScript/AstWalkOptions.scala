@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.AstWalkOptions")
 @js.native
-class AstWalkOptions ()
+open class AstWalkOptions ()
   extends StObject
      with typings.typescriptServices.TypeScript.AstWalkOptions {
   

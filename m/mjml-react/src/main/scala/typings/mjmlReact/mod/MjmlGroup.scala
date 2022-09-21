@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlGroup")
 @js.native
-class MjmlGroup protected ()
-  extends Component[MjmlGroupProps & RequiredChildrenProps & ClassNameProps, js.Object, js.Any] {
-  def this(props: MjmlGroupProps & RequiredChildrenProps & ClassNameProps) = this()
+open class MjmlGroup protected ()
+  extends Component[MjmlGroupProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlGroupProps & ClassNameProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlGroupProps & RequiredChildrenProps & ClassNameProps, context: js.Any) = this()
+  def this(props: MjmlGroupProps & ClassNameProps, context: Any) = this()
 }

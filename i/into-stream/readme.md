@@ -1,7 +1,7 @@
 
 # Scala.js typings for into-stream
 
-Typings are for version 6.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Convert a string/promise/array/iterable/asynciterable/buffer/typedarray/arraybuffer/object into a stream
@@ -10,10 +10,10 @@ Convert a string/promise/array/iterable/asynciterable/buffer/typedarray/arraybuf
 | ------------------ | :-------------: |
 | Full name          | into-stream |
 | Keywords           | stream, buffer, string, object, array, iterable, async, asynciterable, promise, promises, from, into, to, transform, convert, readable, pull, gulpfriendly, value |
-| # releases         | 6 |
-| # dependents       | 121 |
-| # downloads        | 113731734 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5144775666666666E7 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/into-stream#readme)

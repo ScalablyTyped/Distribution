@@ -10,7 +10,7 @@ object outlineMod {
   
   @JSImport("@ant-design/icons-react-native/lib/outline", JSImport.Default)
   @js.native
-  class default () extends IconOutline
+  open class default () extends IconOutline
   
   object outlineGlyphMap {
     
@@ -1172,6 +1172,11 @@ object outlineMod {
     @js.native
     def history: Double = js.native
     inline def history_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.holder")
+    @js.native
+    def holder: Double = js.native
+    inline def holder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("holder")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.home")
     @js.native
@@ -2353,7 +2358,7 @@ object outlineMod {
   
   @js.native
   trait IconOutline
-    extends PureComponent[IconOutlineProps, js.Object, js.Any]
+    extends PureComponent[IconOutlineProps, js.Object, Any]
   
   trait IconOutlineProps
     extends StObject
@@ -2593,6 +2598,7 @@ object outlineMod {
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`heat-map`
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.highlight
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.history
+    - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.holder
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.home
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.hourglass
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.html5

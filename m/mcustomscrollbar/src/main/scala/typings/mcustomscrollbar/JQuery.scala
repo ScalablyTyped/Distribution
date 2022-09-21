@@ -29,6 +29,6 @@ trait JQuery extends StObject {
     * @param parameter String or pixel integer value to specify where to scroll to e.g. "bottom", "top" or 20
     * @param options Override default options
     */
-  def mCustomScrollbar(scrollTo: String, parameter: js.Any): JQuery = js.native
-  def mCustomScrollbar(scrollTo: String, parameter: js.Any, options: ScrollToParameterOptions): JQuery = js.native
+  def mCustomScrollbar(scrollTo: String, parameter: Any): JQuery = js.native
+  def mCustomScrollbar(scrollTo: String, parameter: Any, options: ScrollToParameterOptions): JQuery = js.native
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the `ListFindingTypeStats` method.
-  */
 trait SchemaListFindingTypeStatsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListFindingTypeStatsResponse {
     
     inline def setFindingTypeStatsUndefined: Self = StObject.set(x, "findingTypeStats", js.undefined)
     
-    inline def setFindingTypeStatsVarargs(value: SchemaFindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value :_*))
+    inline def setFindingTypeStatsVarargs(value: SchemaFindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value*))
   }
 }

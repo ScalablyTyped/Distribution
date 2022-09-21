@@ -1,8 +1,6 @@
 package typings.nuxtjsAuth
 
-import typings.std.Error
 import typings.std.Partial
-import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +11,12 @@ object mod {
   trait Auth[T] extends StObject {
     
     @JSName("$state")
-    var $state: js.Any = js.native
+    var $state: Any = js.native
     
     @JSName("$storage")
     var $storage: Storage = js.native
     
-    var ctx: js.Any = js.native
+    var ctx: Any = js.native
     
     def fetchUser(): js.Promise[scala.Nothing] = js.native
     
@@ -33,21 +31,21 @@ object mod {
     var loggedIn: Boolean = js.native
     
     def login(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): js.Promise[scala.Nothing] = js.native
     
     def loginWith(
       strategyName: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): js.Promise[scala.Nothing] = js.native
     
     def logout(): js.Promise[scala.Nothing] = js.native
     
-    def onError(handler: js.Function3[/* error */ Error, /* name */ String, /* endpoint */ js.Any, Unit]): js.Any = js.native
+    def onError(handler: js.Function3[/* error */ js.Error, /* name */ String, /* endpoint */ Any, Unit]): Any = js.native
     
     def onRedirect(listener: js.Function0[Unit]): Unit = js.native
     
-    def redirect(name: String): js.Any = js.native
+    def redirect(name: String): Any = js.native
     
     def registerStrategy(strategyName: String, strategy: js.Object): Unit = js.native
     
@@ -61,8 +59,8 @@ object mod {
     def setToken(strategyName: String): String = js.native
     def setToken(strategyName: String, token: String): String = js.native
     
-    def setUser(): js.Any = js.native
-    def setUser(user: Partial[T]): js.Any = js.native
+    def setUser(): Any = js.native
+    def setUser(user: Partial[T]): Any = js.native
     
     def setUserToken(token: String): js.Promise[Unit] = js.native
     
@@ -78,35 +76,46 @@ object mod {
   @js.native
   trait Storage extends StObject {
     
-    def getCookie(key: String): js.Any = js.native
-    def getCookie(key: String, isJson: Boolean): js.Any = js.native
+    def getCookie(key: String): Any = js.native
+    def getCookie(key: String, isJson: Boolean): Any = js.native
     
-    def getLocalStorage(key: String): js.Any = js.native
-    def getLocalStorage(key: String, isJson: Boolean): js.Any = js.native
+    // Cookies
+    def getCookies(): Any = js.native
+    
+    def getLocalStorage(key: String): Any = js.native
+    def getLocalStorage(key: String, isJson: Boolean): Any = js.native
     
     def getState(key: String): String = js.native
     
-    def getUniversal(key: String): js.Any = js.native
-    def getUniversal(key: String, isJson: Boolean): js.Any = js.native
+    def getUniversal(key: String): Any = js.native
+    def getUniversal(key: String, isJson: Boolean): Any = js.native
     
-    // Cookies
-    def setCookie(key: String, `val`: js.Any): js.Any = js.native
-    def setCookie(key: String, `val`: js.Any, options: js.Object): js.Any = js.native
+    def removeCookie(key: String): Any = js.native
+    def removeCookie(key: String, options: js.Object): Any = js.native
+    
+    def removeLocalStorage(key: String): Any = js.native
+    
+    def removeState(key: String): Any = js.native
+    
+    def removeUniversal(key: String): Any = js.native
+    
+    def setCookie(key: String, `val`: Any): Any = js.native
+    def setCookie(key: String, `val`: Any, options: js.Object): Any = js.native
     
     // Local Storage
-    def setLocalStorage(key: String, `val`: js.Any): js.Any = js.native
-    def setLocalStorage(key: String, `val`: js.Any, isJson: Boolean): js.Any = js.native
+    def setLocalStorage(key: String, `val`: Any): Any = js.native
+    def setLocalStorage(key: String, `val`: Any, isJson: Boolean): Any = js.native
     
     // Local State
-    def setState(key: String, `val`: js.Any): String = js.native
+    def setState(key: String, `val`: Any): String = js.native
     
-    def setUniversal(key: String, value: js.Any): String = js.native
-    def setUniversal(key: String, value: js.Any, isJson: Boolean): String = js.native
+    def setUniversal(key: String, value: Any): String = js.native
+    def setUniversal(key: String, value: Any, isJson: Boolean): String = js.native
     
-    def syncUniversal(key: String, defaultValue: js.Any): js.Any = js.native
-    def syncUniversal(key: String, defaultValue: js.Any, isJson: Boolean): js.Any = js.native
+    def syncUniversal(key: String, defaultValue: Any): Any = js.native
+    def syncUniversal(key: String, defaultValue: Any, isJson: Boolean): Any = js.native
     
-    def watchState(key: String, handler: js.Function1[/* newValue */ js.Any, Unit]): js.Any = js.native
+    def watchState(key: String, handler: js.Function1[/* newValue */ Any, Unit]): Any = js.native
   }
   
   object nuxtTypesAugmentingMod {
@@ -114,18 +123,18 @@ object mod {
     trait Context extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[js.Any]
+      var $auth: Auth[Any]
     }
     object Context {
       
-      inline def apply($auth: Auth[js.Any]): Context = {
+      inline def apply($auth: Auth[Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
       
       extension [Self <: Context](x: Self) {
         
-        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -135,36 +144,36 @@ object mod {
     trait Context extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[js.Any]
+      var $auth: Auth[Any]
     }
     object Context {
       
-      inline def apply($auth: Auth[js.Any]): Context = {
+      inline def apply($auth: Auth[Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
       
       extension [Self <: Context](x: Self) {
         
-        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object vueTypesOptionsAugmentingMod {
     
-    trait ComponentOptions[V /* <: Vue */] extends StObject {
+    trait ComponentOptions[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] extends StObject {
       
       var auth: js.UndefOr[Boolean | String] = js.undefined
     }
     object ComponentOptions {
       
-      inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
+      inline def apply[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](): ComponentOptions[V] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
+      extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
         
         inline def setAuth(value: Boolean | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
@@ -178,18 +187,39 @@ object mod {
     trait Vue extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[js.Any]
+      var $auth: Auth[Any]
     }
     object Vue {
       
-      inline def apply($auth: Auth[js.Any]): typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue = {
+      inline def apply($auth: Auth[Any]): Vue = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue]
+        __obj.asInstanceOf[Vue]
       }
       
-      extension [Self <: typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue](x: Self) {
+      extension [Self <: Vue](x: Self) {
         
-        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+      }
+    }
+  }
+  
+  object vuexTypesIndexAugmentingMod {
+    
+    trait Store[S] extends StObject {
+      
+      @JSName("$auth")
+      var $auth: Auth[Any]
+    }
+    object Store {
+      
+      inline def apply[S]($auth: Auth[Any]): Store[S] = {
+        val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Store[S]]
+      }
+      
+      extension [Self <: Store[?], S](x: Self & Store[S]) {
+        
+        inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -21,7 +21,6 @@ import typings.openfin.v2MainMod.View
 import typings.openfin.windowOptionsMod.WindowOptions
 import typings.std.ClientRect
 import typings.std.DOMRect
-import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
@@ -40,13 +39,13 @@ object utilsMod {
   
   inline def createComponent(componentState: NameString): ComponentConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(componentState.asInstanceOf[js.Any]).asInstanceOf[ComponentConfig]
   
-  inline def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, delay: Double, resizing: Boolean): js.Function1[/* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], resizing.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], Unit]]
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](callback: T, delay: Double, resizing: Boolean): js.Function1[/* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], resizing.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], Unit]]
   
-  inline def delay(delay: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(delay: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def emitLocalEvent(event: String, identity: Identity, container: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitLocalEvent")(event.asInstanceOf[js.Any], identity.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def generateLayoutContent(componentState: js.Any): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("generateLayoutContent")(componentState.asInstanceOf[js.Any]).asInstanceOf[Config]
+  inline def generateLayoutContent(componentState: Any): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("generateLayoutContent")(componentState.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   inline def generatePresetLayoutContent(components: js.Array[ViewComponent], `type`: LayoutPresetTypes): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePresetLayoutContent")(components.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Config]
   
@@ -73,7 +72,7 @@ object utilsMod {
   
   inline def getSourceIdentity(e: DragEventBase[HTMLElement, Identity, HTMLElement, HTMLElement]): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIdentity")(e.asInstanceOf[js.Any]).asInstanceOf[Uuid]
   
-  inline def handleRenderError(component: ViewComponent, e: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRenderError")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def handleRenderError(component: ViewComponent, e: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRenderError")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def isSameApp(e: DragEventBase[HTMLElement, Unit, HTMLElement, HTMLElement], currentWindow: Identity): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameApp")(e.asInstanceOf[js.Any], currentWindow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -96,9 +95,8 @@ object utilsMod {
   
   inline def setTabTitle(tab: Tab, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTabTitle")(tab.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def setViewBoundsByRect(rect: ClientRect | DOMRect, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
   inline def setViewBoundsByRect(rect: Bounds, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
-  inline def setViewBoundsByRect(rect: ClientRect, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
-  inline def setViewBoundsByRect(rect: DOMRect, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
   
   trait LayoutEventPayload extends StObject {
     

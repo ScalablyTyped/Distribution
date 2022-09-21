@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "AccordionAccordion")
 @js.native
-class AccordionAccordion protected ()
-  extends Component[AccordionAccordionProps, ComponentState, js.Any] {
+open class AccordionAccordion protected () extends Component[AccordionAccordionProps, ComponentState, Any] {
   def this(props: AccordionAccordionProps) = this()
-  def this(props: AccordionAccordionProps, context: js.Any) = this()
+  def this(props: AccordionAccordionProps, context: Any) = this()
 }
 object AccordionAccordion {
   

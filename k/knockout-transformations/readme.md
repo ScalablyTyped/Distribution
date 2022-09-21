@@ -10,10 +10,10 @@ Live transform methods for Knockout observable arrays
 | ------------------ | :-------------: |
 | Full name          | knockout-transformations |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3610 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 243.66666666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/One-com/knockout-transformations#readme)

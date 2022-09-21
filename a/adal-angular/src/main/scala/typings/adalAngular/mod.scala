@@ -27,7 +27,7 @@ object mod {
   // This class is defined globally in not in a module context
   @JSImport("adal-angular", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AuthenticationContext {
     def this(options: Options) = this()
@@ -87,10 +87,10 @@ object mod {
     def acquireTokenRedirect(resource: String, extraQueryParameters: Null, claims: String): Unit = js.native
     def acquireTokenRedirect(resource: String, extraQueryParameters: Unit, claims: String): Unit = js.native
     
-    def callback(errorDesc: String, token: String, error: js.Any): Unit = js.native
-    def callback(errorDesc: String, token: Null, error: js.Any): Unit = js.native
-    def callback(errorDesc: Null, token: String, error: js.Any): Unit = js.native
-    def callback(errorDesc: Null, token: Null, error: js.Any): Unit = js.native
+    def callback(errorDesc: String, token: String, error: Any): Unit = js.native
+    def callback(errorDesc: String, token: Null, error: Any): Unit = js.native
+    def callback(errorDesc: Null, token: String, error: Any): Unit = js.native
+    def callback(errorDesc: Null, token: Null, error: Any): Unit = js.native
     @JSName("callback")
     var callback_Original: TokenCallback = js.native
     
@@ -112,14 +112,14 @@ object mod {
       * @param message Message to log.
       * @param error Error to log.
       */
-    def error(message: String, error: js.Any): Unit = js.native
+    def error(message: String, error: Any): Unit = js.native
     
     /**
       * Logs Pii messages when Logging Level is set to 0 and window.piiLoggingEnabled is set to true.
       * @param message Message to log.
       * @param error Error to log.
       */
-    def errorPii(message: String, error: js.Any): Unit = js.native
+    def errorPii(message: String, error: Any): Unit = js.native
     
     /**
       * Gets token for the specified resource from the cache.
@@ -189,7 +189,7 @@ object mod {
       * @param message Message to log.
       * @param error Error to log.
       */
-    def log(level: LoggingLevel, message: String, error: js.Any): Unit = js.native
+    def log(level: LoggingLevel, message: String, error: Any): Unit = js.native
     
     /**
       * Redirects user to logout endpoint. After logout, it will redirect to `postLogoutRedirectUri` if added as a property on the config object.
@@ -484,13 +484,13 @@ object mod {
       
       inline def setAnonymousEndpointsUndefined: Self = StObject.set(x, "anonymousEndpoints", js.undefined)
       
-      inline def setAnonymousEndpointsVarargs(value: String*): Self = StObject.set(x, "anonymousEndpoints", js.Array(value :_*))
+      inline def setAnonymousEndpointsVarargs(value: String*): Self = StObject.set(x, "anonymousEndpoints", js.Array(value*))
       
       inline def setCacheLocation(value: localStorage | sessionStorage): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       
       inline def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
       
-      inline def setCallback(value: (/* errorDesc */ String | Null, /* token */ String | Null, /* error */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* errorDesc */ String | Null, /* token */ String | Null, /* error */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -563,7 +563,7 @@ object mod {
     /**
       * Object comprising of fields such as id_token/error, session_state, state, e.t.c.
       */
-    var parameters: js.Any
+    var parameters: Any
     
     /**
       * Request type.
@@ -588,7 +588,7 @@ object mod {
   object RequestInfo {
     
     inline def apply(
-      parameters: js.Any,
+      parameters: Any,
       requestType: RequestType,
       stateMatch: Boolean,
       stateResponse: String,
@@ -600,7 +600,7 @@ object mod {
     
     extension [Self <: RequestInfo](x: Self) {
       
-      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setRequestType(value: RequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
@@ -639,7 +639,7 @@ object mod {
     inline def token: typings.adalAngular.adalAngularStrings.token = "token".asInstanceOf[typings.adalAngular.adalAngularStrings.token]
   }
   
-  type TokenCallback = js.Function3[/* errorDesc */ String | Null, /* token */ String | Null, /* error */ js.Any, Unit]
+  type TokenCallback = js.Function3[/* errorDesc */ String | Null, /* token */ String | Null, /* error */ Any, Unit]
   
   type UserCallback = js.Function2[/* errorDesc */ String | Null, /* user */ UserInfo | Null, Unit]
   
@@ -648,7 +648,7 @@ object mod {
     /**
       * Properties parsed from `id_token`.
       */
-    var profile: js.Any
+    var profile: Any
     
     /**
       * Username assigned from UPN or email.
@@ -657,14 +657,14 @@ object mod {
   }
   object UserInfo {
     
-    inline def apply(profile: js.Any, userName: String): UserInfo = {
+    inline def apply(profile: Any, userName: String): UserInfo = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserInfo]
     }
     
     extension [Self <: UserInfo](x: Self) {
       
-      inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
       inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }

@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("Scrollbar")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactSmoothScrollbar.mod.^
   }
 }

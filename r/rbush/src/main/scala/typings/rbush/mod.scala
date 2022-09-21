@@ -19,7 +19,7 @@ object mod {
     *                   value means faster insertion and slower search, and
     *                   vice versa.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with RBush[T] {
     def this(maxEntries: Double) = this()
@@ -137,7 +137,7 @@ object mod {
       *
       * @param data The previously exported JSON data.
       */
-    def fromJSON(data: js.Any): RBush[T] = js.native
+    def fromJSON(data: Any): RBush[T] = js.native
     
     /**
       * Inserts an item. To insert many items at once, use `load()`.
@@ -219,6 +219,6 @@ object mod {
       * Note that the `maxEntries` option from the constructor must be the same
       * in both trees for export/import to work properly.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
 }

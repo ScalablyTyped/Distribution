@@ -12,11 +12,11 @@ trait Back extends StObject {
   
   def go(n: Double): Unit
   
-  def pushState(state: js.Any, _underscore: String, path: String): Unit
+  def pushState(state: Any, _underscore: String, path: String): Unit
   
-  def replaceState(state: js.Any, _underscore: String, path: String): Unit
+  def replaceState(state: Any, _underscore: String, path: String): Unit
   
-  val state: js.Any
+  val state: Any
 }
 object Back {
   
@@ -24,9 +24,9 @@ object Back {
     back: () => Unit,
     forward: () => Unit,
     go: Double => Unit,
-    pushState: (js.Any, String, String) => Unit,
-    replaceState: (js.Any, String, String) => Unit,
-    state: js.Any
+    pushState: (Any, String, String) => Unit,
+    replaceState: (Any, String, String) => Unit,
+    state: Any
   ): Back = {
     val __obj = js.Dynamic.literal(back = js.Any.fromFunction0(back), forward = js.Any.fromFunction0(forward), go = js.Any.fromFunction1(go), pushState = js.Any.fromFunction3(pushState), replaceState = js.Any.fromFunction3(replaceState), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Back]
@@ -40,10 +40,10 @@ object Back {
     
     inline def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
     
-    inline def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
+    inline def setPushState(value: (Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
     
-    inline def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
+    inline def setReplaceState(value: (Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

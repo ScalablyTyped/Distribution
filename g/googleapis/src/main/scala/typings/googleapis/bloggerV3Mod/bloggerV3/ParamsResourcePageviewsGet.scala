@@ -1,9 +1,5 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourcePageviewsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The ID of the blog to get.
+    *
     */
   var blogId: js.UndefOr[String] = js.undefined
   
@@ -36,10 +27,6 @@ object ParamsResourcePageviewsGet {
   
   extension [Self <: ParamsResourcePageviewsGet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
     inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
@@ -48,6 +35,6 @@ object ParamsResourcePageviewsGet {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value*))
   }
 }

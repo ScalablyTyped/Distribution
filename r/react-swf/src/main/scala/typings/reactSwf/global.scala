@@ -12,7 +12,7 @@ object global {
     /* was `typeof rswf.ReactSWF` */
     @JSGlobal("ReactSWF")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactSwf.mod.^
     
     @JSGlobal("ReactSWF")

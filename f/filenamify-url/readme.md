@@ -1,7 +1,7 @@
 
 # Scala.js typings for filenamify-url
 
-Typings are for version 2.1.1
+Typings are for version 3.0.0
 
 ## Library description:
 Convert a URL to a valid filename
@@ -9,11 +9,11 @@ Convert a URL to a valid filename
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | filenamify-url |
-| Keywords           | filename, file, name, string, path, convert, valid, url, uri |
-| # releases         | 4 |
-| # dependents       | 31 |
-| # downloads        | 8701086 |
-| # stars            | 1 |
+| Keywords           | filename, file, name, string, path, convert, valid, url |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 530719.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/filenamify-url#readme)

@@ -1,6 +1,6 @@
 package typings.bignum
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("bignum", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with BigNum {
     /** Create a new BigNum from n and a base. */
@@ -56,7 +56,7 @@ object mod {
   
   /** Return true if num is identified as a BigNum instance. Otherwise, return false. */
   /* static member */
-  inline def isBigNum(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNum")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBigNum(num: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNum")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def jacobi(a: BigNumCompatible, n: BigNum): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jacobi")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Cells extends StObject {
   
   def Add(): Cell = js.native
-  def Add(BeforeCell: js.Any): Cell = js.native
+  def Add(BeforeCell: Any): Cell = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -21,7 +21,7 @@ trait Cells extends StObject {
   val Creator: Double = js.native
   
   def Delete(): Unit = js.native
-  def Delete(ShiftCells: js.Any): Unit = js.native
+  def Delete(ShiftCells: Any): Unit = js.native
   
   def DistributeHeight(): Unit = js.native
   
@@ -37,26 +37,26 @@ trait Cells extends StObject {
   
   val NestingLevel: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreferredWidth: Double = js.native
   
   var PreferredWidthType: WdPreferredWidthType = js.native
   
-  def SetHeight(RowHeight: js.Any, HeightRule: WdRowHeightRule): Unit = js.native
+  def SetHeight(RowHeight: Any, HeightRule: WdRowHeightRule): Unit = js.native
   
   def SetWidth(ColumnWidth: Double, RulerStyle: WdRulerStyle): Unit = js.native
   
   val Shading: typings.activexWord.Word.Shading = js.native
   
   def Split(): Unit = js.native
-  def Split(NumRows: js.Any): Unit = js.native
-  def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
-  def Split(NumRows: js.Any, NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
-  def Split(NumRows: js.Any, NumColumns: Unit, MergeBeforeSplit: js.Any): Unit = js.native
-  def Split(NumRows: Unit, NumColumns: js.Any): Unit = js.native
-  def Split(NumRows: Unit, NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
-  def Split(NumRows: Unit, NumColumns: Unit, MergeBeforeSplit: js.Any): Unit = js.native
+  def Split(NumRows: Any): Unit = js.native
+  def Split(NumRows: Any, NumColumns: Any): Unit = js.native
+  def Split(NumRows: Any, NumColumns: Any, MergeBeforeSplit: Any): Unit = js.native
+  def Split(NumRows: Any, NumColumns: Unit, MergeBeforeSplit: Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: Any, MergeBeforeSplit: Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: Unit, MergeBeforeSplit: Any): Unit = js.native
   
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   

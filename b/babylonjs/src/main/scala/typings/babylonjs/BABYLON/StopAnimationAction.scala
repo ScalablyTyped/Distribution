@@ -9,5 +9,5 @@ trait StopAnimationAction
   extends StObject
      with Action {
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
 }

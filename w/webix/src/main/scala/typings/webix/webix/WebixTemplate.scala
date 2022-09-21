@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebixTemplate extends StObject {
   
-  def apply(args: js.Any*): String = js.native
+  def apply(args: Any*): String = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object brightenMod {
   
-  @JSImport("konva/types/filters/Brighten", "Brighten")
+  @JSImport("konva/lib/filters/Brighten", "Brighten")
   @js.native
   val Brighten: Filter = js.native
 }

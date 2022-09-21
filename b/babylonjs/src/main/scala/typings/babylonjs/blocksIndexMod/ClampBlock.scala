@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "ClampBlock")
 @js.native
-class ClampBlock protected ()
+open class ClampBlock protected ()
   extends typings.babylonjs.clampBlockMod.ClampBlock {
   /**
     * Creates a new ClampBlock

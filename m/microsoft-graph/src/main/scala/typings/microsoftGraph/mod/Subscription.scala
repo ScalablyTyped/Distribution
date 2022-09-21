@@ -8,12 +8,12 @@ trait Subscription
   extends StObject
      with Entity {
   
-  // Identifier of the application used to create the subscription. Read-only.
+  // Optional. Identifier of the application used to create the subscription. Read-only.
   var applicationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported
-    * values are: created, updated, deleted. Multiple values can be combined using a comma-separated list.Note: Drive root
+    * values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note: Drive root
     * item and list change notifications support only the updated changeType. User and group change notifications support
     * updated and deleted changeType.
     */
@@ -28,33 +28,34 @@ trait Subscription
   var clientState: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Identifier of the user or service principal that created the subscription. If the app used delegated permissions to
-    * create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used
-    * application permissions, this field contains the id of the service principal corresponding to the app. Read-only.
+    * Optional. Identifier of the user or service principal that created the subscription. If the app used delegated
+    * permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
+    * If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+    * Read-only.
     */
   var creatorId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * A base64-encoded representation of a certificate with a public key used to encrypt resource data in change
-    * notifications. Optional. Required when includeResourceData is true.
+    * Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change
+    * notifications. Optional but required when includeResourceData is true.
     */
   var encryptionCertificate: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional.
+  // Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
   var encryptionCertificateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount
-    * of time from subscription creation that varies for the resource subscribed to. See the table below for maximum
-    * supported subscription length of time.
+    * of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription
+    * length of time, see the table below.
     */
   var expirationDateTime: js.UndefOr[String] = js.undefined
   
-  // When set to true, change notifications include resource data (such as content of a chat message). Optional.
+  // Optional. When set to true, change notifications include resource data (such as content of a chat message).
   var includeResourceData: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
-    * Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by
+    * Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by
     * notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint
     * supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline
     * allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these
@@ -65,17 +66,31 @@ trait Subscription
   var latestSupportedTlsVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications.
-    * This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle
-    * notifications.
+    * Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed
+    * notifications. This URL must make use of the HTTPS protocol.
     */
   var lifecycleNotificationUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when
+    * resource reaches the state matching the query options provided here. With this new property in the subscription
+    * creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches
+    * the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or
+    * when a print job resource isFetchable property value becomes true etc.
+    */
+  var notificationQueryOptions: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS
     * protocol.
     */
   var notificationUrl: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to
+    * validate the authenticity of the notification received.
+    */
+  var notificationUrlAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. Specifies the resource that will be monitored for changes. Do not include the base URL
@@ -148,7 +163,19 @@ object Subscription {
     
     inline def setLifecycleNotificationUrlUndefined: Self = StObject.set(x, "lifecycleNotificationUrl", js.undefined)
     
+    inline def setNotificationQueryOptions(value: NullableOption[String]): Self = StObject.set(x, "notificationQueryOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationQueryOptionsNull: Self = StObject.set(x, "notificationQueryOptions", null)
+    
+    inline def setNotificationQueryOptionsUndefined: Self = StObject.set(x, "notificationQueryOptions", js.undefined)
+    
     inline def setNotificationUrl(value: String): Self = StObject.set(x, "notificationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationUrlAppId(value: NullableOption[String]): Self = StObject.set(x, "notificationUrlAppId", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationUrlAppIdNull: Self = StObject.set(x, "notificationUrlAppId", null)
+    
+    inline def setNotificationUrlAppIdUndefined: Self = StObject.set(x, "notificationUrlAppId", js.undefined)
     
     inline def setNotificationUrlUndefined: Self = StObject.set(x, "notificationUrl", js.undefined)
     

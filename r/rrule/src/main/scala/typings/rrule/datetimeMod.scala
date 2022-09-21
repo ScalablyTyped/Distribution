@@ -1,16 +1,15 @@
 package typings.rrule
 
 import typings.rrule.typesMod.ParsedOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeMod {
   
-  @JSImport("rrule/dist/esm/src/datetime", "DateTime")
+  @JSImport("rrule/dist/esm/datetime", "DateTime")
   @js.native
-  class DateTime protected () extends Time {
+  open class DateTime protected () extends Time {
     def this(
       year: Double,
       month: Double,
@@ -62,16 +61,16 @@ object datetimeMod {
   /* static members */
   object DateTime {
     
-    @JSImport("rrule/dist/esm/src/datetime", "DateTime")
+    @JSImport("rrule/dist/esm/datetime", "DateTime")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+    inline def fromDate(date: js.Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   }
   
-  @JSImport("rrule/dist/esm/src/datetime", "Time")
+  @JSImport("rrule/dist/esm/datetime", "Time")
   @js.native
-  class Time protected () extends StObject {
+  open class Time protected () extends StObject {
     def this(hour: Double, minute: Double, second: Double, millisecond: Double) = this()
     
     def getHours(): Double = js.native

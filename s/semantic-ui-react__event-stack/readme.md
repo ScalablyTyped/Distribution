@@ -1,7 +1,7 @@
 
 # Scala.js typings for semantic-ui-react__event-stack
 
-Typings are for version 3.1.1
+Typings are for version 3.1.3
 
 ## Library description:
 Issues mentioned in `README` should be solved by other approaches: - `.addEventListener()` is blazing fast and is not a real performance issue  - to solve issues with ordering in case when regular DOM event propogation is not available consider to use thi
@@ -10,10 +10,10 @@ Issues mentioned in `README` should be solved by other approaches: - `.addEventL
 | ------------------ | :-------------: |
 | Full name          | @semantic-ui-react/event-stack |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 7399768 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 921110.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/layershifter/event-stack#readme)

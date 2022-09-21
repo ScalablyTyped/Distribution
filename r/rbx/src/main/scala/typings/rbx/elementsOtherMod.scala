@@ -12,25 +12,25 @@ object elementsOtherMod {
   
   @JSImport("rbx/elements/other", "Block")
   @js.native
-  val Block: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Block: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   @JSImport("rbx/elements/other", "Delete")
   @js.native
-  val Delete: ForwardRefAsExoticComponent[DeleteProps, ElementType[js.Any]] = js.native
+  val Delete: ForwardRefAsExoticComponent[DeleteProps, ElementType[Any]] = js.native
   
   @JSImport("rbx/elements/other", "Heading")
   @js.native
-  val Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   @JSImport("rbx/elements/other", "Highlight")
   @js.native
-  val Highlight: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Highlight: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   @JSImport("rbx/elements/other", "Loader")
   @js.native
-  val Loader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Loader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   @JSImport("rbx/elements/other", "Numeric")
   @js.native
-  val Numeric: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Numeric: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
 }

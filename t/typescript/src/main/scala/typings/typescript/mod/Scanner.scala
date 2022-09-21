@@ -39,9 +39,14 @@ trait Scanner extends StObject {
   
   def reScanGreaterToken(): SyntaxKind = js.native
   
+  def reScanHashToken(): SyntaxKind = js.native
+  
+  def reScanInvalidIdentifier(): SyntaxKind = js.native
+  
   def reScanJsxAttributeValue(): SyntaxKind = js.native
   
   def reScanJsxToken(): JsxTokenSyntaxKind = js.native
+  def reScanJsxToken(allowMultilineJsxText: Boolean): JsxTokenSyntaxKind = js.native
   
   def reScanLessThanToken(): SyntaxKind = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.SharedNotebookRecipientSettings")
 @js.native
-class SharedNotebookRecipientSettings () extends StObject {
+open class SharedNotebookRecipientSettings () extends StObject {
   def this(args: ReminderNotifyEmail) = this()
   
   var reminderNotifyEmail: js.UndefOr[Boolean] = js.native

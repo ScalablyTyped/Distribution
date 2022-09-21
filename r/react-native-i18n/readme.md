@@ -11,9 +11,9 @@ Provide I18n to your React Native application
 | Full name          | react-native-i18n |
 | Keywords           | react-native, react-component, ios, i18n |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 812908 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 51670.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-native-i18n)

@@ -12,7 +12,7 @@ trait PiiOutputDataConfig extends StObject {
   var KmsKeyId: js.UndefOr[typings.awsSdk.comprehendMod.KmsKeyId] = js.undefined
   
   /**
-    * When you use the PiiOutputDataConfig object with asynchronous operations, you specify the Amazon S3 location where you want to write the output data. 
+    * When you use the PiiOutputDataConfig object with asynchronous operations, you specify the Amazon S3 location where you want to write the output data.   For a PII entity detection job, the output file is plain text, not a compressed archive. The output file name is the same as the input file, with .out appended at the end. 
     */
   var S3Uri: typings.awsSdk.comprehendMod.S3Uri
 }

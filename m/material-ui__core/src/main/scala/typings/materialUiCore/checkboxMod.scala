@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.checkboxCheckboxMod.CheckboxProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object checkboxMod extends Shortcut {
+object checkboxMod {
   
-  @JSImport("@material-ui/core/Checkbox", JSImport.Default)
+  @JSImport("@material-ui/core/Checkbox", JSImport.Namespace)
   @js.native
-  val default: ComponentType[CheckboxProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[CheckboxProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `checkboxMod.foo` */
-  override def _to: ComponentType[CheckboxProps] = default
+  inline def default(props: CheckboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

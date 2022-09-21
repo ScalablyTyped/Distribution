@@ -5,15 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Source information used to create a Service Config
-  */
 trait SchemaSourceInfo extends StObject {
   
   /**
     * All files used during config generation.
     */
-  var sourceFiles: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
+  var sourceFiles: js.UndefOr[js.Array[StringDictionary[Any]] | Null] = js.undefined
 }
 object SchemaSourceInfo {
   
@@ -24,10 +21,12 @@ object SchemaSourceInfo {
   
   extension [Self <: SchemaSourceInfo](x: Self) {
     
-    inline def setSourceFiles(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
+    inline def setSourceFiles(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
+    
+    inline def setSourceFilesNull: Self = StObject.set(x, "sourceFiles", null)
     
     inline def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
     
-    inline def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
+    inline def setSourceFilesVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "sourceFiles", js.Array(value*))
   }
 }

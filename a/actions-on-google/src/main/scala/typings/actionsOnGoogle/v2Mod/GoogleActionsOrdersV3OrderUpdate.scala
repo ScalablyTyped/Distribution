@@ -14,18 +14,6 @@ trait GoogleActionsOrdersV3OrderUpdate extends StObject {
   var reason: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated: Use OrderUpdate.update_mask instead.
-    * If type = SNAPSHOT, OrderUpdate.order should be the entire order.
-    * If type = ORDER_STATUS, this is the order level status change. Only
-    * order.last_update_time and this vertical status are picked up.
-    * Note: type.ORDER_STATUS only supports PurcahaseOrderExtension status
-    * updates and there is no plan to extend this support. Instead, we recommend
-    * using update_mask as it is more generic, extensible and can be used for all
-    * verticals.
-    */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3OrderUpdateType] = js.undefined
-  
-  /**
     * Note: There are following consideration/recommendations for following
     * special fields:
     * 1. order.last_update_time will always be updated as part of the update
@@ -58,10 +46,6 @@ object GoogleActionsOrdersV3OrderUpdate {
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
-    
-    inline def setType(value: GoogleActionsOrdersV3OrderUpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

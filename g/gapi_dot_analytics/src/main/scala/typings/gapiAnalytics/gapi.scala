@@ -51,11 +51,11 @@ object gapi {
               
               inline def setEnumDescriptionsUndefined: Self = StObject.set(x, "enumDescriptions", js.undefined)
               
-              inline def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value :_*))
+              inline def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value*))
               
               inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
               
-              inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+              inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
               
               inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
               

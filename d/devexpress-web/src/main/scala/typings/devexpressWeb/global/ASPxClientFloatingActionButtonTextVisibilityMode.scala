@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFloatingActionButtonTextVisibilityMode")
 @js.native
-class ASPxClientFloatingActionButtonTextVisibilityMode ()
+open class ASPxClientFloatingActionButtonTextVisibilityMode ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFloatingActionButtonTextVisibilityMode
 object ASPxClientFloatingActionButtonTextVisibilityMode {

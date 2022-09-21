@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hapi.mod.Plugin
 import typings.hapi.mod.Request
 import typings.hapi.mod.ResponseObject
-import typings.std.Error
 import typings.vision.anon.Context
 import typings.vision.visionStrings.async
 import typings.vision.visionStrings.sync
@@ -78,7 +77,7 @@ object mod extends Shortcut {
     var prepare: js.UndefOr[
         js.Function2[
           /* config */ EngineConfigurationObject, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -88,7 +87,7 @@ object mod extends Shortcut {
       * The name is the name that templates should use to reference the helper and helper is the function that will be invoked when the helper is called.
       */
     var registerHelper: js.UndefOr[
-        js.Function2[/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any], Unit]
+        js.Function2[/* name */ String, /* helper */ js.Function1[/* repeated */ Any, Any], Unit]
       ] = js.undefined
     
     /**
@@ -109,18 +108,18 @@ object mod extends Shortcut {
       inline def setCompile(value: ServerViewCompile): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
       
       inline def setCompileFunction2(
-        value: (/* template */ String, /* options */ js.Any) => js.Function2[/* context */ js.Any, /* options */ js.Any, Unit]
+        value: (/* template */ String, /* options */ Any) => js.Function2[/* context */ Any, /* options */ Any, Unit]
       ): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
       
-      inline def setCompileFunction3(value: (/* template */ String, /* options */ js.Any, /* next */ ServerViewCompileNext) => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
+      inline def setCompileFunction3(value: (/* template */ String, /* options */ Any, /* next */ ServerViewCompileNext) => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
       
       inline def setPrepare(
-        value: (/* config */ EngineConfigurationObject, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
+        value: (/* config */ EngineConfigurationObject, /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
       ): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
       
       inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
       
-      inline def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      inline def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
       inline def setRegisterHelperUndefined: Self = StObject.set(x, "registerHelper", js.undefined)
       
@@ -138,7 +137,7 @@ object mod extends Shortcut {
     */
   type RenderMethod = js.Function3[
     /* template */ String, 
-    /* context */ js.UndefOr[js.Any], 
+    /* context */ js.UndefOr[Any], 
     /* options */ js.UndefOr[ServerViewsConfiguration], 
     js.Promise[String]
   ]
@@ -147,14 +146,14 @@ object mod extends Shortcut {
   
   type ServerViewCompile = ServerViewCompileSync | ServerViewCompileAsync
   
-  type ServerViewCompileAsync = js.Function3[/* template */ String, /* options */ js.Any, /* next */ ServerViewCompileNext, Unit]
+  type ServerViewCompileAsync = js.Function3[/* template */ String, /* options */ Any, /* next */ ServerViewCompileNext, Unit]
   
   type ServerViewCompileNext = js.Function2[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* compiled */ js.Function3[
-      /* context */ js.Any, 
-      /* options */ js.Any, 
-      /* callback */ js.Function2[/* err */ Null | Error, /* rendered */ String | Null, Unit], 
+      /* context */ Any, 
+      /* options */ Any, 
+      /* callback */ js.Function2[/* err */ Null | js.Error, /* rendered */ String | Null, Unit], 
       Unit
     ], 
     Unit
@@ -174,8 +173,8 @@ object mod extends Shortcut {
     */
   type ServerViewCompileSync = js.Function2[
     /* template */ String, 
-    /* options */ js.Any, 
-    js.Function2[/* context */ js.Any, /* options */ js.Any, Unit]
+    /* options */ Any, 
+    js.Function2[/* context */ Any, /* options */ Any, Unit]
   ]
   
   trait ServerViewsConfiguration
@@ -216,7 +215,7 @@ object mod extends Shortcut {
       
       inline def setHelpersPathUndefined: Self = StObject.set(x, "helpersPath", js.undefined)
       
-      inline def setHelpersPathVarargs(value: String*): Self = StObject.set(x, "helpersPath", js.Array(value :_*))
+      inline def setHelpersPathVarargs(value: String*): Self = StObject.set(x, "helpersPath", js.Array(value*))
       
       inline def setIsCached(value: Boolean): Self = StObject.set(x, "isCached", value.asInstanceOf[js.Any])
       
@@ -226,7 +225,7 @@ object mod extends Shortcut {
       
       inline def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
       
-      inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
+      inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value*))
     }
   }
   
@@ -366,7 +365,7 @@ object mod extends Shortcut {
       
       inline def setLayoutPathUndefined: Self = StObject.set(x, "layoutPath", js.undefined)
       
-      inline def setLayoutPathVarargs(value: String*): Self = StObject.set(x, "layoutPath", js.Array(value :_*))
+      inline def setLayoutPathVarargs(value: String*): Self = StObject.set(x, "layoutPath", js.Array(value*))
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -374,7 +373,7 @@ object mod extends Shortcut {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       
@@ -400,15 +399,15 @@ object mod extends Shortcut {
       * @param helper
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerregisterhelpername-helper}
       */
-    def registerHelper(name: String, helper: js.Function1[/* repeated */ js.Any, js.Any]): Unit
+    def registerHelper(name: String, helper: js.Function1[/* repeated */ Any, Any]): Unit
     
     /**
       * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
       * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
       */
     def render(template: String): js.Promise[String]
-    def render(template: String, context: js.Any): js.Promise[String]
-    def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+    def render(template: String, context: Any): js.Promise[String]
+    def render(template: String, context: Any, options: ServerViewsConfiguration): js.Promise[String]
     def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
     /**
       * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
@@ -420,8 +419,8 @@ object mod extends Shortcut {
   object ViewManager {
     
     inline def apply(
-      registerHelper: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit,
-      render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+      registerHelper: (String, js.Function1[/* repeated */ Any, Any]) => Unit,
+      render: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
     ): ViewManager = {
       val __obj = js.Dynamic.literal(registerHelper = js.Any.fromFunction2(registerHelper), render = js.Any.fromFunction3(render))
       __obj.asInstanceOf[ViewManager]
@@ -429,10 +428,10 @@ object mod extends Shortcut {
     
     extension [Self <: ViewManager](x: Self) {
       
-      inline def setRegisterHelper(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      inline def setRegisterHelper(value: (String, js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
       inline def setRender(
-        value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+        value: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     }
   }
@@ -485,8 +484,8 @@ object mod extends Shortcut {
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
         */
       def render(template: String): js.Promise[String]
-      def render(template: String, context: js.Any): js.Promise[String]
-      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+      def render(template: String, context: Any): js.Promise[String]
+      def render(template: String, context: Any, options: ServerViewsConfiguration): js.Promise[String]
       def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
       /**
         * request.render() works the same way as server.render() but is for use inside of request handlers.
@@ -503,7 +502,7 @@ object mod extends Shortcut {
     object Request {
       
       inline def apply(
-        render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+        render: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
       ): typings.vision.mod.hapiAugmentingMod.Request = {
         val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render))
         __obj.asInstanceOf[typings.vision.mod.hapiAugmentingMod.Request]
@@ -512,7 +511,7 @@ object mod extends Shortcut {
       extension [Self <: typings.vision.mod.hapiAugmentingMod.Request](x: Self) {
         
         inline def setRender(
-          value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+          value: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       }
     }
@@ -531,8 +530,8 @@ object mod extends Shortcut {
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#replyviewtemplate-context-options}
         */
       def view(templatePath: String): ResponseObject = js.native
-      def view(templatePath: String, context: js.Any): ResponseObject = js.native
-      def view(templatePath: String, context: js.Any, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
+      def view(templatePath: String, context: Any): ResponseObject = js.native
+      def view(templatePath: String, context: Any, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
       def view(templatePath: String, context: Unit, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
     }
     
@@ -543,8 +542,8 @@ object mod extends Shortcut {
         * @see {@link https://github.com/hapijs/vision/blob/master/API.md#serverrendertemplate-context-options-callback}
         */
       def render(template: String): js.Promise[String]
-      def render(template: String, context: js.Any): js.Promise[String]
-      def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String]
+      def render(template: String, context: Any): js.Promise[String]
+      def render(template: String, context: Any, options: ServerViewsConfiguration): js.Promise[String]
       def render(template: String, context: Unit, options: ServerViewsConfiguration): js.Promise[String]
       /**
         * Utilizes the server views manager to render a template
@@ -562,7 +561,7 @@ object mod extends Shortcut {
     object Server {
       
       inline def apply(
-        render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String],
+        render: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String],
         views: ServerViewsConfiguration => ViewManager
       ): Server = {
         val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), views = js.Any.fromFunction1(views))
@@ -572,7 +571,7 @@ object mod extends Shortcut {
       extension [Self <: Server](x: Self) {
         
         inline def setRender(
-          value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
+          value: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
         inline def setViews(value: ServerViewsConfiguration => ViewManager): Self = StObject.set(x, "views", js.Any.fromFunction1(value))

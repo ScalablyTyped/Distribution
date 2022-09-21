@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhotoImportFindItemsResult extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_itemimported(
     `type`: itemimported,
@@ -61,7 +61,7 @@ trait PhotoImportFindItemsResult extends StObject {
   /** Gets the size of the photos found on the source, in bytes. */
   var photosSizeInBytes: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_itemimported(
     `type`: itemimported,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Ping")
 @js.native
-class Ping protected () extends StObject {
+open class Ping protected () extends StObject {
   def this(option: Double) = this()
   def this(option: PingOption) = this()
 }

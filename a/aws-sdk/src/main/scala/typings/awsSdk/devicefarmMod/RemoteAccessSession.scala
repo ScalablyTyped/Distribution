@@ -24,7 +24,7 @@ trait RemoteAccessSession extends StObject {
   /**
     * The date and time the remote access session was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The device (phone or tablet) used in the remote access session.
@@ -99,7 +99,7 @@ trait RemoteAccessSession extends StObject {
   /**
     * The date and time the remote access session was started.
     */
-  var started: js.UndefOr[DateTime] = js.undefined
+  var started: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the remote access session. Can be any of the following:   PENDING.   PENDING_CONCURRENCY.   PENDING_DEVICE.   PROCESSING.   SCHEDULING.   PREPARING.   RUNNING.   COMPLETED.   STOPPING.  
@@ -109,7 +109,7 @@ trait RemoteAccessSession extends StObject {
   /**
     * The date and time the remote access session was stopped.
     */
-  var stopped: js.UndefOr[DateTime] = js.undefined
+  var stopped: js.UndefOr[js.Date] = js.undefined
 }
 object RemoteAccessSession {
   
@@ -132,7 +132,7 @@ object RemoteAccessSession {
     
     inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -192,7 +192,7 @@ object RemoteAccessSession {
     
     inline def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
-    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: js.Date): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
@@ -200,7 +200,7 @@ object RemoteAccessSession {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: js.Date): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
   }

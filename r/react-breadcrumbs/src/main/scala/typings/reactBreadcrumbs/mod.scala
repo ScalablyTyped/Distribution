@@ -1,12 +1,11 @@
 package typings.reactBreadcrumbs
 
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.reactBreadcrumbs.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,44 +15,48 @@ object mod {
   
   @JSImport("react-breadcrumbs", "Breadcrumb")
   @js.native
-  class Breadcrumb protected ()
-    extends Component[BreadcrumbProps, js.Object, js.Any] {
-    def this(props: BreadcrumbProps) = this()
+  open class Breadcrumb protected ()
+    extends Component[PropsWithChildren[BreadcrumbProps], js.Object, Any] {
+    def this(props: PropsWithChildren[BreadcrumbProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BreadcrumbProps, context: js.Any) = this()
+    def this(props: PropsWithChildren[BreadcrumbProps], context: Any) = this()
   }
   
   @JSImport("react-breadcrumbs", "Breadcrumbs")
   @js.native
-  class Breadcrumbs protected ()
-    extends Component[BreadcrumbsProps, js.Object, js.Any] {
-    def this(props: BreadcrumbsProps) = this()
+  open class Breadcrumbs protected ()
+    extends Component[PropsWithChildren[BreadcrumbsProps], js.Object, Any] {
+    def this(props: PropsWithChildren[BreadcrumbsProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BreadcrumbsProps, context: js.Any) = this()
+    def this(props: PropsWithChildren[BreadcrumbsProps], context: Any) = this()
   }
   
   trait BreadcrumbProps extends StObject {
     
-    var data: LocationDescriptor[LocationState] & Title
+    var data: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptor */ Any) & Title
     
     var hidden: js.UndefOr[Boolean] = js.undefined
   }
   object BreadcrumbProps {
     
-    inline def apply(data: LocationDescriptor[LocationState] & Title): BreadcrumbProps = {
+    inline def apply(
+      data: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptor */ Any) & Title
+    ): BreadcrumbProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
     extension [Self <: BreadcrumbProps](x: Self) {
       
-      inline def setData(value: LocationDescriptor[LocationState] & Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptor */ Any) & Title
+      ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -71,7 +74,7 @@ object mod {
     
     var setCrumbs: js.UndefOr[js.Function1[/* crumbs */ Crumbs, ReactNode]] = js.undefined
     
-    var wrapper: js.UndefOr[StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])] = js.undefined
+    var wrapper: js.UndefOr[FunctionComponent[js.Object] | (ComponentClass[js.Object, ComponentState])] = js.undefined
   }
   object BreadcrumbsProps {
     
@@ -98,7 +101,7 @@ object mod {
       
       inline def setSetCrumbsUndefined: Self = StObject.set(x, "setCrumbs", js.undefined)
       
-      inline def setWrapper(value: StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: FunctionComponent[js.Object] | (ComponentClass[js.Object, ComponentState])): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
       inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }

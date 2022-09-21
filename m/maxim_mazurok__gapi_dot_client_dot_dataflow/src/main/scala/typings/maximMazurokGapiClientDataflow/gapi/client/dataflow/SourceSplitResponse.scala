@@ -34,7 +34,7 @@ object SourceSplitResponse {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: DerivedSource*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: DerivedSource*): Self = StObject.set(x, "bundles", js.Array(value*))
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object SourceSplitResponse {
     
     inline def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
     
-    inline def setShardsVarargs(value: SourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: SourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value*))
   }
 }

@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.hid.DeviceOptions
 import typings.chromeApps.chrome.hid.HidDeviceInfo
 import typings.chromeApps.chrome.hid.UserSelectedDevicePickerOptions
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,7 +95,7 @@ trait Typeofhid extends StObject {
     */
   def receive(
     connectionId: integer,
-    callback: js.Function2[/* reportId */ integer, /* data */ ArrayBuffer, Unit]
+    callback: js.Function2[/* reportId */ integer, /* data */ js.typedarray.ArrayBuffer, Unit]
   ): Unit = js.native
   
   /**
@@ -105,7 +104,11 @@ trait Typeofhid extends StObject {
     * @param reportId The report ID, or 0 if none.
     * @param callback Will provide `data` which contain the report data, including a report ID prefix if one is sent by the device.
     */
-  def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = js.native
+  def receiveFeatureReport(
+    connectionId: integer,
+    reportId: integer,
+    callback: js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]
+  ): Unit = js.native
   
   /**
     * Send an output report to the device.
@@ -115,7 +118,12 @@ trait Typeofhid extends StObject {
     * @param data The report data.
     * @param callback
     */
-  def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def send(
+    connectionId: integer,
+    reportId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   
   /**
     * Send a feature report to the device.
@@ -125,5 +133,10 @@ trait Typeofhid extends StObject {
     * @param data The report data.
     * @param callback
     */
-  def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def sendFeatureReport(
+    connectionId: integer,
+    reportId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
 }

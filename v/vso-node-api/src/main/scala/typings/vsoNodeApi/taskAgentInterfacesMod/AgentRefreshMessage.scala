@@ -10,11 +10,11 @@ trait AgentRefreshMessage extends StObject {
   
   var targetVersion: String
   
-  var timeout: js.Any
+  var timeout: Any
 }
 object AgentRefreshMessage {
   
-  inline def apply(agentId: Double, targetVersion: String, timeout: js.Any): AgentRefreshMessage = {
+  inline def apply(agentId: Double, targetVersion: String, timeout: Any): AgentRefreshMessage = {
     val __obj = js.Dynamic.literal(agentId = agentId.asInstanceOf[js.Any], targetVersion = targetVersion.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentRefreshMessage]
   }
@@ -25,6 +25,6 @@ object AgentRefreshMessage {
     
     inline def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     
-    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

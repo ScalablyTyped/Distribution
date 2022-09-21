@@ -93,25 +93,25 @@ object typesMod {
     }
   }
   
-  type Transformer = js.Function1[/* v */ js.Any, js.Any]
+  type Transformer = js.Function1[/* v */ Any, Any]
   
   trait ValueType extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     var createTransformer: js.UndefOr[js.Function1[/* template */ String, Transformer]] = js.undefined
     
-    var getAnimatableNone: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
+    var getAnimatableNone: js.UndefOr[js.Function1[/* v */ Any, Any]] = js.undefined
     
-    def parse(v: js.Any): js.Any
+    def parse(v: Any): Any
     
-    def test(v: js.Any): Boolean
+    def test(v: Any): Boolean
     
     var transform: js.UndefOr[Transformer] = js.undefined
   }
   object ValueType {
     
-    inline def apply(parse: js.Any => js.Any, test: js.Any => Boolean): ValueType = {
+    inline def apply(parse: Any => Any, test: Any => Boolean): ValueType = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), test = js.Any.fromFunction1(test))
       __obj.asInstanceOf[ValueType]
     }
@@ -122,19 +122,19 @@ object typesMod {
       
       inline def setCreateTransformerUndefined: Self = StObject.set(x, "createTransformer", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setGetAnimatableNone(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
+      inline def setGetAnimatableNone(value: /* v */ Any => Any): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
       
       inline def setGetAnimatableNoneUndefined: Self = StObject.set(x, "getAnimatableNone", js.undefined)
       
-      inline def setParse(value: js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: Any => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      inline def setTest(value: js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       
-      inline def setTransform(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* v */ Any => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

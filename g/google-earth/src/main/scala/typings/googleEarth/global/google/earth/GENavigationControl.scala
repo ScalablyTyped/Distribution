@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GENavigationControl")
 @js.native
-class GENavigationControl ()
+open class GENavigationControl ()
   extends StObject
      with typings.googleEarth.google.earth.GENavigationControl {
   

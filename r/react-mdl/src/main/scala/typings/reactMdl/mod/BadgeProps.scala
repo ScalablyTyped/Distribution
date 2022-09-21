@@ -1,13 +1,16 @@
 package typings.reactMdl.mod
 
 import typings.react.mod.ClassAttributes
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BadgeProps
   extends StObject
-     with ClassAttributes[js.Any] {
+     with ClassAttributes[Any] {
+  
+  var children: js.UndefOr[String | ReactElement] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -25,6 +28,10 @@ object BadgeProps {
   }
   
   extension [Self <: BadgeProps](x: Self) {
+    
+    inline def setChildren(value: String | ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

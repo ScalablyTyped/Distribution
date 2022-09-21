@@ -8,7 +8,7 @@ object xmlDtdParamEntityRefMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDtdParamEntityRef", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlDtdParamEntityRef[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdParamEntityRefOptions) = this()
@@ -37,11 +37,11 @@ object xmlDtdParamEntityRefMod {
   @js.native
   trait XmlDtdParamEntityRef[Parent] extends StObject {
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Gets the name of this parameter entity reference.

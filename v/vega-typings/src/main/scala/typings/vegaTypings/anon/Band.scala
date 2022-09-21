@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Band
   extends StObject
-     with ScaledValueRef[js.Any] {
+     with ScaledValueRef[Any] {
   
   var band: Boolean | Double
   

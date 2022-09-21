@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("SmoothScroll")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.smoothScroll.mod.^ {
       def this(selector: String) = this()
       def this(selector: String, options: Options) = this()

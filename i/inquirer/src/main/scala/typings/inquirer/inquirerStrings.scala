@@ -1,10 +1,15 @@
 package typings.inquirer
 
+import typings.inquirer.incrementListIndexMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inquirerStrings {
+  
+  @js.native
+  sealed trait QuestionCollection extends StObject
+  inline def QuestionCollection: QuestionCollection = "QuestionCollection".asInstanceOf[QuestionCollection]
   
   @js.native
   sealed trait answered extends StObject
@@ -27,7 +32,9 @@ object inquirerStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait down extends StObject
+  sealed trait down
+    extends StObject
+       with Direction
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
@@ -79,6 +86,8 @@ object inquirerStrings {
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
-  sealed trait up extends StObject
+  sealed trait up
+    extends StObject
+       with Direction
   inline def up: up = "up".asInstanceOf[up]
 }

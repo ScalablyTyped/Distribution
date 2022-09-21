@@ -33,6 +33,6 @@ object DescribeStaleSecurityGroupsResult {
     
     inline def setStaleSecurityGroupSetUndefined: Self = StObject.set(x, "StaleSecurityGroupSet", js.undefined)
     
-    inline def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = StObject.set(x, "StaleSecurityGroupSet", js.Array(value :_*))
+    inline def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = StObject.set(x, "StaleSecurityGroupSet", js.Array(value*))
   }
 }

@@ -4,39 +4,53 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomizeText[T] extends StObject {
+trait CustomizeText extends StObject {
   
-  var customizeText: js.UndefOr[js.Function1[/* e */ FilterValue[T], String]] = js.undefined
+  /**
+    * Specifies a callback function that returns the text to be displayed in an indicator.
+    */
+  var customizeText: js.UndefOr[js.Function1[/* indicatedValue */ ValueText, String]] = js.undefined
   
-  var filterEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Specifies font properties for the text displayed by the indicator.
+    */
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var texts: js.UndefOr[ClearFilter] = js.undefined
+  /**
+    * Formats a value before it is displayed in an indicator. Accepts only numeric formats.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Specifies the range bar&apos;s label indent in pixels.
+    */
+  var indent: js.UndefOr[Double] = js.undefined
 }
 object CustomizeText {
   
-  inline def apply[T](): CustomizeText[T] = {
+  inline def apply(): CustomizeText = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[CustomizeText[T]]
+    __obj.asInstanceOf[CustomizeText]
   }
   
-  extension [Self <: CustomizeText[?], T](x: Self & CustomizeText[T]) {
+  extension [Self <: CustomizeText](x: Self) {
     
-    inline def setCustomizeText(value: /* e */ FilterValue[T] => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setCustomizeText(value: /* indicatedValue */ ValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
-    inline def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    inline def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setTexts(value: ClearFilter): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
   }
 }

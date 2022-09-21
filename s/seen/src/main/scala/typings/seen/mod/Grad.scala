@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Grad")
 @js.native
-class Grad protected () extends StObject {
+open class Grad protected () extends StObject {
   def this(x: Double, y: Double, z: Double) = this()
   
   def dot(x: Double, y: Double, z: Double): Double = js.native

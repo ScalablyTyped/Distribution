@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Infobox")
 @js.native
-class Infobox protected ()
+open class Infobox protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Infobox {
   /**

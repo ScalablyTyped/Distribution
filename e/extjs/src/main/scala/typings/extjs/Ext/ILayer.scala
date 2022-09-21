@@ -15,7 +15,7 @@ trait ILayer
   var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var dh: js.UndefOr[js.Any] = js.undefined
+  var dh: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var hideMode: js.UndefOr[java.lang.String] = js.undefined
@@ -34,14 +34,14 @@ trait ILayer
   @JSName("setBounds")
   var setBounds_ILayer: js.UndefOr[
     js.Function8[
-      /* x */ js.UndefOr[js.Any], 
-      /* y */ js.UndefOr[js.Any], 
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* duration */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* easing */ js.UndefOr[js.Any], 
+      /* x */ js.UndefOr[Any], 
+      /* y */ js.UndefOr[Any], 
+      /* width */ js.UndefOr[Any], 
+      /* height */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* duration */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* easing */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -57,11 +57,11 @@ trait ILayer
   @JSName("setHeight")
   var setHeight_ILayer: js.UndefOr[
     js.Function5[
-      /* h */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* duration */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* easing */ js.UndefOr[js.Any], 
+      /* h */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* duration */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* easing */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -74,8 +74,8 @@ trait ILayer
   @JSName("setLeftTop")
   var setLeftTop_ILayer: js.UndefOr[
     js.Function2[
-      /* left */ js.UndefOr[js.Any], 
-      /* top */ js.UndefOr[js.Any], 
+      /* left */ js.UndefOr[Any], 
+      /* top */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -85,7 +85,7 @@ trait ILayer
     * @returns Ext.dom.Element this
     */
   @JSName("setLeft")
-  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   
   /** [Method] overridden Element method
     * @param w Object
@@ -99,12 +99,12 @@ trait ILayer
   @JSName("setSize")
   var setSize_ILayer: js.UndefOr[
     js.Function6[
-      /* w */ js.UndefOr[js.Any], 
-      /* h */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* duration */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* easing */ js.UndefOr[js.Any], 
+      /* w */ js.UndefOr[Any], 
+      /* h */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* duration */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* easing */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -114,7 +114,7 @@ trait ILayer
     * @returns Ext.dom.Element this
     */
   @JSName("setTop")
-  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   
   /** [Method] overridden Element method
     * @param visible Object
@@ -127,11 +127,11 @@ trait ILayer
   @JSName("setVisible")
   var setVisible_ILayer: js.UndefOr[
     js.Function5[
-      /* visible */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* duration */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* easing */ js.UndefOr[js.Any], 
+      /* visible */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* duration */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* easing */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -147,11 +147,11 @@ trait ILayer
   @JSName("setWidth")
   var setWidth_ILayer: js.UndefOr[
     js.Function5[
-      /* w */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* duration */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* easing */ js.UndefOr[js.Any], 
+      /* w */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* duration */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* easing */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -163,7 +163,7 @@ trait ILayer
   var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var shadow: js.UndefOr[js.Any] = js.undefined
+  var shadow: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var shadowOffset: js.UndefOr[Double] = js.undefined
@@ -197,7 +197,7 @@ object ILayer {
     
     inline def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
-    inline def setDh(value: js.Any): Self = StObject.set(x, "dh", value.asInstanceOf[js.Any])
+    inline def setDh(value: Any): Self = StObject.set(x, "dh", value.asInstanceOf[js.Any])
     
     inline def setDhUndefined: Self = StObject.set(x, "dh", js.undefined)
     
@@ -206,45 +206,43 @@ object ILayer {
     inline def setHideModeUndefined: Self = StObject.set(x, "hideMode", js.undefined)
     
     inline def setSetBounds(
-      value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
+      value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any], /* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* duration */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* easing */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
     ): Self = StObject.set(x, "setBounds", js.Any.fromFunction8(value))
     
     inline def setSetBoundsUndefined: Self = StObject.set(x, "setBounds", js.undefined)
     
     inline def setSetHeight(
-      value: (/* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
+      value: (/* h */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* duration */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* easing */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
     ): Self = StObject.set(x, "setHeight", js.Any.fromFunction5(value))
     
     inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
-    inline def setSetLeft(value: /* left */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
+    inline def setSetLeft(value: /* left */ js.UndefOr[Any] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
-    inline def setSetLeftTop(
-      value: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
-    ): Self = StObject.set(x, "setLeftTop", js.Any.fromFunction2(value))
+    inline def setSetLeftTop(value: (/* left */ js.UndefOr[Any], /* top */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "setLeftTop", js.Any.fromFunction2(value))
     
     inline def setSetLeftTopUndefined: Self = StObject.set(x, "setLeftTop", js.undefined)
     
     inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
     inline def setSetSize(
-      value: (/* w */ js.UndefOr[js.Any], /* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
+      value: (/* w */ js.UndefOr[Any], /* h */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* duration */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* easing */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
     ): Self = StObject.set(x, "setSize", js.Any.fromFunction6(value))
     
     inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
-    inline def setSetTop(value: /* top */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
+    inline def setSetTop(value: /* top */ js.UndefOr[Any] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
     
     inline def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
     
     inline def setSetVisible(
-      value: (/* visible */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
+      value: (/* visible */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* duration */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* easing */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
     ): Self = StObject.set(x, "setVisible", js.Any.fromFunction5(value))
     
     inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
     
     inline def setSetWidth(
-      value: (/* w */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement
+      value: (/* w */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* duration */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* easing */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
     ): Self = StObject.set(x, "setWidth", js.Any.fromFunction5(value))
     
     inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
@@ -253,7 +251,7 @@ object ILayer {
     
     inline def setSetZIndexUndefined: Self = StObject.set(x, "setZIndex", js.undefined)
     
-    inline def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     

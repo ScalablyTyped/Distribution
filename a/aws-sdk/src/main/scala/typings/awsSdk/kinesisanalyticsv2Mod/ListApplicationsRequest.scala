@@ -12,7 +12,7 @@ trait ListApplicationsRequest extends StObject {
   var Limit: js.UndefOr[ListApplicationsInputLimit] = js.undefined
   
   /**
-    * If a previous command returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see Using the AWS Command Line Interface's Pagination Options.
+    * If a previous command returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see Using the Amazon Command Line Interface's Pagination Options.
     */
   var NextToken: js.UndefOr[ApplicationName] = js.undefined
 }

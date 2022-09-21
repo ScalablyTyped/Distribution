@@ -11,14 +11,11 @@ Simple star rating component for your React projects
 | Full name          | react-stars |
 | Keywords           | star, rating, react, star, rating, component, raty |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 349534 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 102173.33333333333 |
+| # stars            | 191.0 |
 
 ## Links
-- [Homepage](https://github.com/n49/react-stars#readme)
-- [Bugs](https://github.com/n49/react-stars/issues)
-- [Repository](https://github.com/n49/react-stars)
 - [Npm](https://www.npmjs.com/package/react-stars)
     
 

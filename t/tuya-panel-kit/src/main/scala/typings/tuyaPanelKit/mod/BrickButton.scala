@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "BrickButton")
 @js.native
-class BrickButton protected ()
-  extends Component[BrickButtonProps, js.Object, js.Any] {
+open class BrickButton protected ()
+  extends Component[BrickButtonProps, js.Object, Any] {
   def this(props: BrickButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BrickButtonProps, context: js.Any) = this()
+  def this(props: BrickButtonProps, context: Any) = this()
 }

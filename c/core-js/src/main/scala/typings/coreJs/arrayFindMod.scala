@@ -15,7 +15,7 @@ object arrayFindMod {
   inline def apply[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("core-js/library/fn/array/find", JSImport.Namespace)

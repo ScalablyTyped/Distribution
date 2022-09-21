@@ -11,7 +11,7 @@ object mainDataMod {
   
   @JSImport("wonder.js/dist/es2015/core/data/MainData", "MainData")
   @js.native
-  class MainData () extends StObject
+  open class MainData () extends StObject
   /* static members */
   object MainData {
     

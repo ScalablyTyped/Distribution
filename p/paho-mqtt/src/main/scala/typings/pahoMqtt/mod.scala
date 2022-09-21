@@ -4,16 +4,6 @@ import typings.pahoMqtt.mod.global.Paho.MQTT.TypedArray
 import typings.pahoMqtt.pahoMqttNumbers.`3`
 import typings.pahoMqtt.pahoMqttNumbers.`4`
 import typings.pahoMqtt.pahoMqttStrings.Debug
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +32,7 @@ object mod {
     */
   @JSImport("paho-mqtt", "Client")
   @js.native
-  class Client protected ()
+  open class Client protected ()
     extends typings.pahoMqtt.mod.global.Paho.MQTT.Client {
     /**
       * @param hostUri - the address of the messaging server as a fully qualified WebSocket URI
@@ -70,14 +60,14 @@ object mod {
     */
   @JSImport("paho-mqtt", "Message")
   @js.native
-  class Message protected ()
+  open class Message protected ()
     extends typings.pahoMqtt.mod.global.Paho.MQTT.Message {
     /**
       * @param payload The message data to be sent.
       */
     def this(payload: String) = this()
+    def this(payload: js.typedarray.ArrayBuffer) = this()
     def this(payload: TypedArray) = this()
-    def this(payload: ArrayBuffer) = this()
   }
   
   object global {
@@ -141,7 +131,7 @@ object mod {
           */
         @JSGlobal("Paho.MQTT.Client")
         @js.native
-        class Client protected () extends StObject {
+        open class Client protected () extends StObject {
           /**
             * @param hostUri - the address of the messaging server as a fully qualified WebSocket URI
             * @param clientId - the Messaging client identifier, between 1 and 23 characters in length.
@@ -185,7 +175,7 @@ object mod {
             *
             *  @return tracebuffer containing the time ordered trace records.
             */
-          def getTraceLog(): js.Array[js.Any] = js.native
+          def getTraceLog(): js.Array[Any] = js.native
           
           /** the server's DNS hostname or dotted decimal IP address. */
           val host: String = js.native
@@ -292,10 +282,10 @@ object mod {
           def send(topic: String, payload: String, qos: Unit, retained: Boolean): Unit = js.native
           def send(topic: String, payload: String, qos: Qos): Unit = js.native
           def send(topic: String, payload: String, qos: Qos, retained: Boolean): Unit = js.native
-          def send(topic: String, payload: ArrayBuffer): Unit = js.native
-          def send(topic: String, payload: ArrayBuffer, qos: Unit, retained: Boolean): Unit = js.native
-          def send(topic: String, payload: ArrayBuffer, qos: Qos): Unit = js.native
-          def send(topic: String, payload: ArrayBuffer, qos: Qos, retained: Boolean): Unit = js.native
+          def send(topic: String, payload: js.typedarray.ArrayBuffer): Unit = js.native
+          def send(topic: String, payload: js.typedarray.ArrayBuffer, qos: Unit, retained: Boolean): Unit = js.native
+          def send(topic: String, payload: js.typedarray.ArrayBuffer, qos: Qos): Unit = js.native
+          def send(topic: String, payload: js.typedarray.ArrayBuffer, qos: Qos, retained: Boolean): Unit = js.native
           
           /**
             * Start tracing.
@@ -337,13 +327,13 @@ object mod {
           */
         @JSGlobal("Paho.MQTT.Message")
         @js.native
-        class Message protected () extends StObject {
+        open class Message protected () extends StObject {
           /**
             * @param payload The message data to be sent.
             */
           def this(payload: String) = this()
+          def this(payload: js.typedarray.ArrayBuffer) = this()
           def this(payload: TypedArray) = this()
-          def this(payload: ArrayBuffer) = this()
           
           /**
             * The name of the destination to which the message is to be sent
@@ -362,7 +352,7 @@ object mod {
             * The payload.
             * @return if payload is a string. Return the original otherwise.
             */
-          val payloadBytes: ArrayBuffer | TypedArray = js.native
+          val payloadBytes: js.typedarray.ArrayBuffer | TypedArray = js.native
           
           /**
             *  The payload as a string if the payload consists of valid UTF-8 characters.
@@ -412,7 +402,7 @@ object mod {
           var hosts: js.UndefOr[js.Array[String]] = js.undefined
           
           /** Passed to the onSuccess callback or onFailure callback. */
-          var invocationContext: js.UndefOr[js.Any] = js.undefined
+          var invocationContext: js.UndefOr[Any] = js.undefined
           
           /**
             * The server disconnects this client if there is no activity for this number of seconds.
@@ -429,6 +419,11 @@ object mod {
             * @default 4
             */
           var mqttVersion: js.UndefOr[`3` | `4`] = js.undefined
+          
+          /**
+            * If set to true, will force the connection to use the selected MQTT Version or will fail to connect.
+            */
+          var mqttVersionExplicit: js.UndefOr[Boolean] = js.undefined
           
           /**
             * Called when the connect request has failed or timed out.
@@ -449,10 +444,27 @@ object mod {
           var ports: js.UndefOr[js.Array[Double]] = js.undefined
           
           /**
+            * Sets whether the client will automatically attempt to reconnect
+            * to the server if the connection is lost.
+            */
+          var reconnect: js.UndefOr[Boolean] = js.undefined
+          
+          /**
             * If the connect has not succeeded within this number of seconds, it is deemed to have failed.
             * @default The default is 30 seconds.
             */
           var timeout: js.UndefOr[Double] = js.undefined
+          
+          /**
+            * If present, should contain a list of fully qualified WebSocket
+            * uris (e.g. ws://mqtt.eclipseprojects.io:80/mqtt), that are tried
+            * in order in place of the host and port parameter of the
+            * construtor. The uris are tried one at a time in order until one
+            * of them succeeds. Do not use this in conjunction with hosts as
+            * the hosts array will be converted to uris and will overwrite this
+            * property.
+            */
+          var uris: js.UndefOr[js.Array[String]] = js.undefined
           
           /** If present and true, use an SSL Websocket connection. */
           var useSSL: js.UndefOr[Boolean] = js.undefined
@@ -480,9 +492,9 @@ object mod {
             
             inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
             
-            inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+            inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value*))
             
-            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
             inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
@@ -491,6 +503,10 @@ object mod {
             inline def setKeepAliveIntervalUndefined: Self = StObject.set(x, "keepAliveInterval", js.undefined)
             
             inline def setMqttVersion(value: `3` | `4`): Self = StObject.set(x, "mqttVersion", value.asInstanceOf[js.Any])
+            
+            inline def setMqttVersionExplicit(value: Boolean): Self = StObject.set(x, "mqttVersionExplicit", value.asInstanceOf[js.Any])
+            
+            inline def setMqttVersionExplicitUndefined: Self = StObject.set(x, "mqttVersionExplicit", js.undefined)
             
             inline def setMqttVersionUndefined: Self = StObject.set(x, "mqttVersion", js.undefined)
             
@@ -510,11 +526,21 @@ object mod {
             
             inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
             
-            inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
+            inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value*))
+            
+            inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+            
+            inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
             
             inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
             
             inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+            
+            inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+            
+            inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+            
+            inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value*))
             
             inline def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
             
@@ -536,7 +562,7 @@ object mod {
              with WithInvocationContext
         object ErrorWithInvocationContext {
           
-          inline def apply(errorCode: Double, errorMessage: String, invocationContext: js.Any): ErrorWithInvocationContext = {
+          inline def apply(errorCode: Double, errorMessage: String, invocationContext: Any): ErrorWithInvocationContext = {
             val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[ErrorWithInvocationContext]
           }
@@ -606,7 +632,7 @@ object mod {
         }
         object OnSubscribeSuccessParams {
           
-          inline def apply(grantedQos: Qos, invocationContext: js.Any): OnSubscribeSuccessParams = {
+          inline def apply(grantedQos: Qos, invocationContext: Any): OnSubscribeSuccessParams = {
             val __obj = js.Dynamic.literal(grantedQos = grantedQos.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[OnSubscribeSuccessParams]
           }
@@ -654,7 +680,7 @@ object mod {
         trait SubscribeOptions extends StObject {
           
           /** passed to the onSuccess callback or onFailure callback. */
-          var invocationContext: js.UndefOr[js.Any] = js.undefined
+          var invocationContext: js.UndefOr[Any] = js.undefined
           
           /** called when the subscribe request has failed or timed out. */
           var onFailure: js.UndefOr[OnFailureCallback] = js.undefined
@@ -681,7 +707,7 @@ object mod {
           
           extension [Self <: SubscribeOptions](x: Self) {
             
-            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
             inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
@@ -726,12 +752,12 @@ object mod {
         
         type TraceFunction = js.Function1[/* element */ TraceElement, Unit]
         
-        type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
+        type TypedArray = js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
         
         trait UnsubscribeOptions extends StObject {
           
           /** passed to the onSuccess callback or onFailure callback.  */
-          var invocationContext: js.UndefOr[js.Any] = js.undefined
+          var invocationContext: js.UndefOr[Any] = js.undefined
           
           /** called when the unsubscribe request has failed or timed out. */
           var onFailure: js.UndefOr[OnFailureCallback] = js.undefined
@@ -755,7 +781,7 @@ object mod {
           
           extension [Self <: UnsubscribeOptions](x: Self) {
             
-            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
             inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
@@ -779,18 +805,18 @@ object mod {
             * <code>invocationContext</code> as passed in with the corresponding field in the connectOptions or
             * subscribeOptions.
             */
-          var invocationContext: js.Any
+          var invocationContext: Any
         }
         object WithInvocationContext {
           
-          inline def apply(invocationContext: js.Any): WithInvocationContext = {
+          inline def apply(invocationContext: Any): WithInvocationContext = {
             val __obj = js.Dynamic.literal(invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[WithInvocationContext]
           }
           
           extension [Self <: WithInvocationContext](x: Self) {
             
-            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
           }
         }
       }

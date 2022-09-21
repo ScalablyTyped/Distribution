@@ -24,6 +24,14 @@ trait IConfig extends StObject {
   var closeTimeout: js.UndefOr[Double] = js.undefined
   
   /**
+    * The Nagle Algorithm makes more efficient use of network resources by introducing a
+    * small delay before sending small packets so that multiple messages can be batched
+    * together before going onto the wire. This however comes at the cost of latency.
+    * @default true
+    */
+  var disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether or not to fragment outgoing messages. If true, messages will be
     * automatically fragmented into chunks of up to `fragmentationThreshold` bytes.
     * @default true
@@ -65,6 +73,10 @@ object IConfig {
     inline def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
     
     inline def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
+    
+    inline def setDisableNagleAlgorithm(value: Boolean): Self = StObject.set(x, "disableNagleAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNagleAlgorithmUndefined: Self = StObject.set(x, "disableNagleAlgorithm", js.undefined)
     
     inline def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core.novtt", "default.TextTrackButton")
 @js.native
-class TextTrackButtonCls protected ()
+open class TextTrackButtonCls protected ()
   extends StObject
      with TextTrackButton {
   /**

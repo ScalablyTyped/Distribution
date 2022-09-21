@@ -6,12 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotAtrParamsOptions extends StObject {
   
-  /**
-    * (Highstock) The point index which indicator calculations will base. For
-    * example using OHLC data, index=2 means the indicator will be calculated
-    * using Low values.
-    */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The base period for indicator calculations. This is the
@@ -29,7 +24,7 @@ object PlotAtrParamsOptions {
   
   extension [Self <: PlotAtrParamsOptions](x: Self) {
     
-    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     

@@ -66,7 +66,7 @@ trait AbstractSeriesProps[T /* <: AbstractSeriesPoint */] extends StObject {
   
   var colorType: js.UndefOr[Scale] = js.undefined
   
-  var data: js.UndefOr[js.Array[T | js.Array[js.Any]]] = js.undefined
+  var data: js.UndefOr[js.Array[T | js.Array[Any]]] = js.undefined
   
   var fill: js.UndefOr[String | Double] = js.undefined
   
@@ -241,7 +241,7 @@ object AbstractSeriesProps {
     
     inline def setColorDomainVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any)*
-    ): Self = StObject.set(x, "colorDomain", js.Array(value :_*))
+    ): Self = StObject.set(x, "colorDomain", js.Array(value*))
     
     inline def setColorRange(
       value: js.Array[
@@ -253,7 +253,7 @@ object AbstractSeriesProps {
     
     inline def setColorRangeVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any)*
-    ): Self = StObject.set(x, "colorRange", js.Array(value :_*))
+    ): Self = StObject.set(x, "colorRange", js.Array(value*))
     
     inline def setColorType(value: Scale): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
     
@@ -261,11 +261,11 @@ object AbstractSeriesProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setData(value: js.Array[T | js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[T | js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: (T | js.Array[js.Any])*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (T | js.Array[Any])*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFill(value: String | Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
@@ -375,7 +375,7 @@ object AbstractSeriesProps {
     
     inline def setOpacityDomainVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: T['opacity'] */ js.Any)*
-    ): Self = StObject.set(x, "opacityDomain", js.Array(value :_*))
+    ): Self = StObject.set(x, "opacityDomain", js.Array(value*))
     
     inline def setOpacityRange(
       value: js.Array[
@@ -387,7 +387,7 @@ object AbstractSeriesProps {
     
     inline def setOpacityRangeVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: T['opacity'] */ js.Any)*
-    ): Self = StObject.set(x, "opacityRange", js.Array(value :_*))
+    ): Self = StObject.set(x, "opacityRange", js.Array(value*))
     
     inline def setOpacityType(value: Scale): Self = StObject.set(x, "opacityType", value.asInstanceOf[js.Any])
     
@@ -411,7 +411,7 @@ object AbstractSeriesProps {
     
     inline def setSizeDomainUndefined: Self = StObject.set(x, "sizeDomain", js.undefined)
     
-    inline def setSizeDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any)*): Self = StObject.set(x, "sizeDomain", js.Array(value :_*))
+    inline def setSizeDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any)*): Self = StObject.set(x, "sizeDomain", js.Array(value*))
     
     inline def setSizeRange(
       value: js.Array[
@@ -421,7 +421,7 @@ object AbstractSeriesProps {
     
     inline def setSizeRangeUndefined: Self = StObject.set(x, "sizeRange", js.undefined)
     
-    inline def setSizeRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any)*): Self = StObject.set(x, "sizeRange", js.Array(value :_*))
+    inline def setSizeRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any)*): Self = StObject.set(x, "sizeRange", js.Array(value*))
     
     inline def setSizeType(value: Scale): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
@@ -459,7 +459,7 @@ object AbstractSeriesProps {
     
     inline def setXDomainUndefined: Self = StObject.set(x, "xDomain", js.undefined)
     
-    inline def setXDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any)*): Self = StObject.set(x, "xDomain", js.Array(value :_*))
+    inline def setXDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any)*): Self = StObject.set(x, "xDomain", js.Array(value*))
     
     inline def setXRange(
       value: js.Array[
@@ -469,7 +469,7 @@ object AbstractSeriesProps {
     
     inline def setXRangeUndefined: Self = StObject.set(x, "xRange", js.undefined)
     
-    inline def setXRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any)*): Self = StObject.set(x, "xRange", js.Array(value :_*))
+    inline def setXRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any)*): Self = StObject.set(x, "xRange", js.Array(value*))
     
     inline def setXType(value: Scale): Self = StObject.set(x, "xType", value.asInstanceOf[js.Any])
     
@@ -491,7 +491,7 @@ object AbstractSeriesProps {
     
     inline def setYDomainUndefined: Self = StObject.set(x, "yDomain", js.undefined)
     
-    inline def setYDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any)*): Self = StObject.set(x, "yDomain", js.Array(value :_*))
+    inline def setYDomainVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any)*): Self = StObject.set(x, "yDomain", js.Array(value*))
     
     inline def setYRange(
       value: js.Array[
@@ -501,7 +501,7 @@ object AbstractSeriesProps {
     
     inline def setYRangeUndefined: Self = StObject.set(x, "yRange", js.undefined)
     
-    inline def setYRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any)*): Self = StObject.set(x, "yRange", js.Array(value :_*))
+    inline def setYRangeVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any)*): Self = StObject.set(x, "yRange", js.Array(value*))
     
     inline def setYType(value: Scale): Self = StObject.set(x, "yType", value.asInstanceOf[js.Any])
     

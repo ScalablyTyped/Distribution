@@ -7,6 +7,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.scErrors.mod.SocketProtocolErrorStatuses_
 import typings.scErrors.mod.SocketProtocolIgnoreStatuses_
 import typings.socketclusterServer.anon.Binary
+import typings.socketclusterServer.anon.Error
 import typings.socketclusterServer.anon.Message
 import typings.socketclusterServer.anon.RejectOnFailedDelivery
 import typings.socketclusterServer.anon.SignedAuthToken
@@ -29,8 +30,8 @@ import typings.socketclusterServer.socketclusterServerStrings.raw
 import typings.socketclusterServer.socketclusterServerStrings.subscribe
 import typings.socketclusterServer.socketclusterServerStrings.unauthenticated
 import typings.socketclusterServer.socketclusterServerStrings.unsubscribe
-import typings.std.Error
 import typings.writableConsumableStream.consumerMod.ConsumerStats
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,18 +40,18 @@ object serversocketMod {
   
   @JSImport("socketcluster-server/serversocket", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AGServerSocket {
+  open class ^ protected () extends AGServerSocket {
     def this(
       id: String,
       server: typings.socketclusterServer.serverMod.^,
-      socket: typings.ws.mod.^,
+      socket: WebSocket,
       protocolVersion: Double
     ) = this()
   }
   
   @js.native
   trait AGServerSocket
-    extends typings.asyncStreamEmitter.mod.^[js.Any] {
+    extends typings.asyncStreamEmitter.mod.^[Any] {
     
     val AUTHENTICATED: authenticated = js.native
     
@@ -105,14 +106,17 @@ object serversocketMod {
     
     def deauthenticateSelf(): Unit = js.native
     
-    def decode(message: js.Any): js.Any = js.native
+    def decode(message: Any): Any = js.native
     
     def disconnect(): Unit = js.native
     def disconnect(code: Double): Unit = js.native
     def disconnect(code: Double, reason: String): Unit = js.native
     def disconnect(code: Unit, reason: String): Unit = js.native
     
-    def emitError(error: Error): Unit = js.native
+    def emit(eventName: message | raw): typings.consumableStream.mod.^[Message] = js.native
+    def emit(eventName: message | raw, data: Message): Unit = js.native
+    
+    def emitError(error: js.Error): Unit = js.native
     
     @JSName("emit")
     def emit_authStateChange(eventName: authStateChange): typings.consumableStream.mod.^[StateChangeData] = js.native
@@ -151,17 +155,9 @@ object serversocketMod {
     @JSName("emit")
     def emit_disconnect(eventName: disconnect, data: DisconnectData): Unit = js.native
     @JSName("emit")
-    def emit_error(eventName: error): typings.consumableStream.mod.^[typings.socketclusterServer.anon.Error] = js.native
+    def emit_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
     @JSName("emit")
-    def emit_error(eventName: error, data: typings.socketclusterServer.anon.Error): Unit = js.native
-    @JSName("emit")
-    def emit_message(eventName: message): typings.consumableStream.mod.^[Message] = js.native
-    @JSName("emit")
-    def emit_message(eventName: message, data: Message): Unit = js.native
-    @JSName("emit")
-    def emit_raw(eventName: raw): typings.consumableStream.mod.^[Message] = js.native
-    @JSName("emit")
-    def emit_raw(eventName: raw, data: Message): Unit = js.native
+    def emit_error(eventName: error, data: Error): Unit = js.native
     @JSName("emit")
     def emit_subscribe(eventName: subscribe): typings.consumableStream.mod.^[SubscribeData] = js.native
     @JSName("emit")
@@ -171,7 +167,7 @@ object serversocketMod {
     @JSName("emit")
     def emit_unsubscribe(eventName: unsubscribe, data: UnsubscribeData): Unit = js.native
     
-    def encode(`object`: js.Any): js.Any = js.native
+    def encode(`object`: Any): Any = js.native
     
     val errorStatuses: SocketProtocolErrorStatuses_ = js.native
     
@@ -229,13 +225,13 @@ object serversocketMod {
     
     val ignoreStatuses: SocketProtocolIgnoreStatuses_ = js.native
     
-    var inboundMessageStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var inboundMessageStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
     var inboundProcessedMessageCount: Double = js.native
     
     var inboundReceivedMessageCount: Double = js.native
     
-    def invoke(event: String, data: js.Any, options: js.Any): js.Promise[js.Any] = js.native
+    def invoke(event: String, data: Any, options: Any): js.Promise[Any] = js.native
     
     def isAuthTokenExpired(token: AuthToken): Boolean = js.native
     
@@ -245,10 +241,10 @@ object serversocketMod {
     
     def isSubscribed(channel: String): Boolean = js.native
     
-    def kickOut(): js.Any = js.native
-    def kickOut(channel: String): js.Any = js.native
-    def kickOut(channel: String, message: String): js.Any = js.native
-    def kickOut(channel: Unit, message: String): js.Any = js.native
+    def kickOut(): Any = js.native
+    def kickOut(channel: String): Any = js.native
+    def kickOut(channel: String, message: String): Any = js.native
+    def kickOut(channel: Unit, message: String): Any = js.native
     
     def killAllMiddlewares(): Unit = js.native
     
@@ -272,25 +268,25 @@ object serversocketMod {
     
     def killReceiverConsumer(consumerId: Double): Unit = js.native
     
-    var middlewareHandshakeStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var middlewareHandshakeStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
-    var middlewareInboundRawStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var middlewareInboundRawStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
-    var middlewareInboundStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var middlewareInboundStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
-    var middlewareOutboundStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var middlewareOutboundStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
-    var outboundPacketStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
+    var outboundPacketStream: typings.writableConsumableStream.mod.^[Any] = js.native
     
     var outboundPreparedMessageCount: Double = js.native
     
     var outboundSentMessageCount: Double = js.native
     
-    def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
+    def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[Any] = js.native
     
     var protocolVersion: Double = js.native
     
-    def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
+    def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[Any] = js.native
     
     var remoteAddress: String = js.native
     
@@ -300,11 +296,11 @@ object serversocketMod {
     
     var request: IncomingMessage = js.native
     
-    def send(data: js.Any, options: Binary): Unit = js.native
+    def send(data: Any, options: Binary): Unit = js.native
     
-    def sendObject(`object`: js.Any): Unit = js.native
+    def sendObject(`object`: Any): Unit = js.native
     
-    def serializeObject(`object`: js.Any): js.Any = js.native
+    def serializeObject(`object`: Any): Any = js.native
     
     var server: typings.socketclusterServer.serverMod.^ = js.native
     
@@ -313,7 +309,7 @@ object serversocketMod {
     
     var signedAuthToken: js.UndefOr[String] = js.native
     
-    var socket: typings.ws.mod.^ = js.native
+    var socket: WebSocket = js.native
     
     def startBatch(): Unit = js.native
     
@@ -327,15 +323,12 @@ object serversocketMod {
     
     def terminate(): Unit = js.native
     
-    def transmit(event: String, data: js.Any, options: js.Any): js.Promise[Unit] = js.native
+    def transmit(event: String, data: Any, options: Any): js.Promise[Unit] = js.native
     
-    @JSName("triggerAuthenticationEvents")
-    def triggerAuthenticationEvents_authenticated(oldAuthState: authenticated): Unit = js.native
-    @JSName("triggerAuthenticationEvents")
-    def triggerAuthenticationEvents_unauthenticated(oldAuthState: unauthenticated): Unit = js.native
+    def triggerAuthenticationEvents(oldAuthState: authenticated | unauthenticated): Unit = js.native
   }
   
-  type AuthToken = StringDictionary[js.Any]
+  type AuthToken = StringDictionary[Any]
   
   trait AuthTokenOptions
     extends StObject
@@ -379,20 +372,20 @@ object serversocketMod {
   
   trait BadAuthTokenData extends StObject {
     
-    var authError: Error
+    var authError: js.Error
     
     var signedAuthToken: String
   }
   object BadAuthTokenData {
     
-    inline def apply(authError: Error, signedAuthToken: String): BadAuthTokenData = {
+    inline def apply(authError: js.Error, signedAuthToken: String): BadAuthTokenData = {
       val __obj = js.Dynamic.literal(authError = authError.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadAuthTokenData]
     }
     
     extension [Self <: BadAuthTokenData](x: Self) {
       
-      inline def setAuthError(value: Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
+      inline def setAuthError(value: js.Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
       
       inline def setSignedAuthToken(value: String): Self = StObject.set(x, "signedAuthToken", value.asInstanceOf[js.Any])
     }
@@ -442,7 +435,7 @@ object serversocketMod {
   
   trait ConnectData extends StObject {
     
-    var authError: js.UndefOr[Error] = js.undefined
+    var authError: js.UndefOr[js.Error] = js.undefined
     
     var id: String
     
@@ -459,7 +452,7 @@ object serversocketMod {
     
     extension [Self <: ConnectData](x: Self) {
       
-      inline def setAuthError(value: Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
+      inline def setAuthError(value: js.Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
       
       inline def setAuthErrorUndefined: Self = StObject.set(x, "authError", js.undefined)
       
@@ -563,7 +556,7 @@ object serversocketMod {
     
     var channel: String
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var waitForAuth: js.UndefOr[Boolean] = js.undefined
   }
@@ -578,7 +571,7 @@ object serversocketMod {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

@@ -8,14 +8,64 @@ trait MotionScaleFadeInProps
   extends StObject
      with MotionProps {
   
+  /**
+    * @language zh-CN
+    * @description 动画结束缩放倍数
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Animation end zoom multiple
+    * @defaultValue 0
+    */
   var finalScale: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 向上平移的距离，tips气泡模拟transform-origin属性
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Up translation distance, tips bubble simulates transform origin attribute
+    * @defaultValue null
+    */
   var height: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 初始缩放倍数
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Initial zoom factor
+    * @defaultValue 0
+    */
   var initScale: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否竖直居中
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Is it vertically centered
+    * @defaultValue true
+    */
   var isAlign: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 向左平移的距离，tips 气泡模拟 transform-origin 属性
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The distance to the left, the tips bubble simulates the transform origin attribute
+    * @defaultValue null
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MotionScaleFadeInProps {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ColorCurves")
 @js.native
-class ColorCurves ()
+open class ColorCurves ()
   extends StObject
      with typings.babylonjs.BABYLON.ColorCurves
 /* static members */
@@ -74,9 +74,9 @@ object ColorCurves {
   /**
     * Parses the color curve from a json representation.
     * @param source the JSON source to parse
-    * @return The parsed curves
+    * @returns The parsed curves
     */
-  inline def Parse(source: js.Any): typings.babylonjs.BABYLON.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.ColorCurves]
+  inline def Parse(source: Any): typings.babylonjs.BABYLON.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.ColorCurves]
   
   /**
     * Prepare the list of uniforms associated with the ColorCurves effects.
@@ -89,10 +89,10 @@ object ColorCurves {
     * @param value The input slider value in range [-100,100].
     * @returns Adjusted value.
     */
-  @JSGlobal("BABYLON.ColorCurves.applyColorGradingSliderNonlinear")
+  @JSGlobal("BABYLON.ColorCurves._ApplyColorGradingSliderNonlinear")
   @js.native
-  def applyColorGradingSliderNonlinear: js.Any = js.native
-  inline def applyColorGradingSliderNonlinear_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
+  def _ApplyColorGradingSliderNonlinear: Any = js.native
+  inline def _ApplyColorGradingSliderNonlinear_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a value clamped between min and max
@@ -101,20 +101,21 @@ object ColorCurves {
     * @param max The maximum of value
     * @returns The clamped value.
     */
-  @JSGlobal("BABYLON.ColorCurves.clamp")
+  @JSGlobal("BABYLON.ColorCurves._Clamp")
   @js.native
-  def clamp: js.Any = js.native
-  inline def clamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clamp")(x.asInstanceOf[js.Any])
+  def _Clamp: Any = js.native
+  inline def _Clamp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Clamp")(x.asInstanceOf[js.Any])
   
   /**
     * Returns an RGBA Color4 based on Hue, Saturation and Brightness (also referred to as value, HSV).
     * @param hue The hue (H) input.
     * @param saturation The saturation (S) input.
     * @param brightness The brightness (B) input.
+    * @param result
     * @result An RGBA color represented as Vector4.
     */
-  @JSGlobal("BABYLON.ColorCurves.fromHSBToRef")
+  @JSGlobal("BABYLON.ColorCurves._FromHSBToRef")
   @js.native
-  def fromHSBToRef: js.Any = js.native
-  inline def fromHSBToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromHSBToRef")(x.asInstanceOf[js.Any])
+  def _FromHSBToRef: Any = js.native
+  inline def _FromHSBToRef_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromHSBToRef")(x.asInstanceOf[js.Any])
 }

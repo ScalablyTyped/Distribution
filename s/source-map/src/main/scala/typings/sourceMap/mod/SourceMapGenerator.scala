@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("source-map", "SourceMapGenerator")
 @js.native
-class SourceMapGenerator () extends StObject {
+open class SourceMapGenerator () extends StObject {
   def this(startOfSourceMap: StartOfSourceMap) = this()
   
   /**

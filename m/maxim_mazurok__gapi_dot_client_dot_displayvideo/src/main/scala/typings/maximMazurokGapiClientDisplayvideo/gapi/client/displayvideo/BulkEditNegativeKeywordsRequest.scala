@@ -25,12 +25,12 @@ object BulkEditNegativeKeywordsRequest {
     
     inline def setCreatedNegativeKeywordsUndefined: Self = StObject.set(x, "createdNegativeKeywords", js.undefined)
     
-    inline def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "createdNegativeKeywords", js.Array(value :_*))
+    inline def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "createdNegativeKeywords", js.Array(value*))
     
     inline def setDeletedNegativeKeywords(value: js.Array[String]): Self = StObject.set(x, "deletedNegativeKeywords", value.asInstanceOf[js.Any])
     
     inline def setDeletedNegativeKeywordsUndefined: Self = StObject.set(x, "deletedNegativeKeywords", js.undefined)
     
-    inline def setDeletedNegativeKeywordsVarargs(value: String*): Self = StObject.set(x, "deletedNegativeKeywords", js.Array(value :_*))
+    inline def setDeletedNegativeKeywordsVarargs(value: String*): Self = StObject.set(x, "deletedNegativeKeywords", js.Array(value*))
   }
 }

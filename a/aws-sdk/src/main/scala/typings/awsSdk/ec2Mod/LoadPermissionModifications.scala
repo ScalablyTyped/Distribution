@@ -29,12 +29,12 @@ object LoadPermissionModifications {
     
     inline def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
-    inline def setAddVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Add", js.Array(value :_*))
+    inline def setAddVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Add", js.Array(value*))
     
     inline def setRemove(value: LoadPermissionListRequest): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
-    inline def setRemoveVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Remove", js.Array(value*))
   }
 }

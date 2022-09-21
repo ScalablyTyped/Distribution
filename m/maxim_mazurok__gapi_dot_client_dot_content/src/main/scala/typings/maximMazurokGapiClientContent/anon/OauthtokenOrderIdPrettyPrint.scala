@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersRejectReturnLineItemRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersCancelLineItemRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +42,7 @@ trait OauthtokenOrderIdPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersRejectReturnLineItemRequest
+  var resource: OrdersCancelLineItemRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait OauthtokenOrderIdPrettyPrint extends StObject {
 }
 object OauthtokenOrderIdPrettyPrint {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersRejectReturnLineItemRequest): OauthtokenOrderIdPrettyPrint = {
+  inline def apply(merchantId: String, orderId: String, resource: OrdersCancelLineItemRequest): OauthtokenOrderIdPrettyPrint = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenOrderIdPrettyPrint]
   }
@@ -99,7 +99,7 @@ object OauthtokenOrderIdPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersRejectReturnLineItemRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrdersCancelLineItemRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

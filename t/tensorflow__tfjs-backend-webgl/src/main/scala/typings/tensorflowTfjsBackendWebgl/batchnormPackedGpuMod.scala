@@ -9,7 +9,7 @@ object batchnormPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/batchnorm_packed_gpu", "BatchNormPackedProgram")
   @js.native
-  class BatchNormPackedProgram protected ()
+  open class BatchNormPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(

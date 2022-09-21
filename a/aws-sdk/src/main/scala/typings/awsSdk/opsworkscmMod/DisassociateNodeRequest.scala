@@ -34,7 +34,7 @@ object DisassociateNodeRequest {
     
     inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value*))
     
     inline def setNodeName(value: NodeName): Self = StObject.set(x, "NodeName", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for relay-test-utils
 
-Typings are for version 6.0
+Typings are for version 14.1
 
 ## Library description:
 Utilities for testing Relay applications.
@@ -10,10 +10,10 @@ Utilities for testing Relay applications.
 | ------------------ | :-------------: |
 | Full name          | relay-test-utils |
 | Keywords           | graphql, relay |
-| # releases         | 1527 |
-| # dependents       | 2 |
-| # downloads        | 3310076 |
-| # stars            | 0 |
+| # releases         | 1869 |
+| # dependents       | 0.0 |
+| # downloads        | 354780.6666666667 |
+| # stars            | 17227.0 |
 
 ## Links
 - [Homepage](https://relay.dev)

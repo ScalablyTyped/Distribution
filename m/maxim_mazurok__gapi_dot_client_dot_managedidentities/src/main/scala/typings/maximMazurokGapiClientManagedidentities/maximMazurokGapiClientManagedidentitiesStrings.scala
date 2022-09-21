@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientManagedidentitiesStrings {
   
   @js.native
+  sealed trait Backup extends StObject
+  inline def Backup: Backup = "Backup".asInstanceOf[Backup]
+  
+  @js.native
   sealed trait Domain extends StObject
   inline def Domain: Domain = "Domain".asInstanceOf[Domain]
   
@@ -19,6 +23,10 @@ object maximMazurokGapiClientManagedidentitiesStrings {
   inline def GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings = "GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings".asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings]
   
   @js.native
+  sealed trait GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility extends StObject
+  inline def GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility: GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility = "GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility".asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility]
+  
+  @js.native
   sealed trait Location extends StObject
   inline def Location: Location = "Location".asInstanceOf[Location]
   
@@ -29,6 +37,10 @@ object maximMazurokGapiClientManagedidentitiesStrings {
   @js.native
   sealed trait Operation extends StObject
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
+  
+  @js.native
+  sealed trait Peering extends StObject
+  inline def Peering: Peering = "Peering".asInstanceOf[Peering]
   
   @js.native
   sealed trait Status extends StObject

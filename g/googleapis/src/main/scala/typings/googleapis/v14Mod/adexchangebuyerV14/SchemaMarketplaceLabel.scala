@@ -9,12 +9,12 @@ trait SchemaMarketplaceLabel extends StObject {
   /**
     * The accountId of the party that created the label.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The creation time (in ms since epoch) for the label.
     */
-  var createTimeMs: js.UndefOr[String] = js.undefined
+  var createTimeMs: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Information about the party that created the label.
@@ -24,7 +24,7 @@ trait SchemaMarketplaceLabel extends StObject {
   /**
     * The label to use.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMarketplaceLabel {
   
@@ -37,9 +37,13 @@ object SchemaMarketplaceLabel {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setCreateTimeMs(value: String): Self = StObject.set(x, "createTimeMs", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeMsNull: Self = StObject.set(x, "createTimeMs", null)
     
     inline def setCreateTimeMsUndefined: Self = StObject.set(x, "createTimeMs", js.undefined)
     
@@ -48,6 +52,8 @@ object SchemaMarketplaceLabel {
     inline def setDeprecatedMarketplaceDealPartyUndefined: Self = StObject.set(x, "deprecatedMarketplaceDealParty", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

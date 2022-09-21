@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "editor.TextModelResolvedOptions")
 @js.native
-class TextModelResolvedOptions () extends StObject {
+open class TextModelResolvedOptions () extends StObject {
   
   var _textModelResolvedOptionsBrand: Unit = js.native
+  
+  val bracketPairColorizationOptions: BracketPairColorizationOptions = js.native
   
   val defaultEOL: DefaultEndOfLine = js.native
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for azdata
 
-Typings are for version 1.21
+Typings are for version 1.39
 
 ## Library description:
 The azdata NPM module provides Azure Data Studio extension authors tools to write extensions. It provides the azdata.d.ts node module (all accessible API for extensions) as well as commands for compiling and testing extensions.
@@ -10,10 +10,10 @@ The azdata NPM module provides Azure Data Studio extension authors tools to writ
 | ------------------ | :-------------: |
 | Full name          | azdata |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1766 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/azuredatastudio#readme)

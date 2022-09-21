@@ -2,7 +2,7 @@ package typings.itConcat
 
 import typings.itConcat.anon.Type
 import typings.itConcat.anon.`0`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -20,7 +20,7 @@ trait ASPxClientButtonEditBase
     * Returns a button by its index in the button collection. A button.
     * @param number A button index.
     */
-  def GetButton(number: Double): js.Any
+  def GetButton(number: Double): Any
   
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
@@ -41,7 +41,7 @@ object ASPxClientButtonEditBase {
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     Focus: () => Unit,
-    GetButton: Double => js.Any,
+    GetButton: Double => Any,
     GetButtonVisible: Double => Boolean,
     GetCaption: () => String,
     GetCaretPosition: () => Double,
@@ -49,13 +49,13 @@ object ASPxClientButtonEditBase {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetText: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -78,7 +78,7 @@ object ASPxClientButtonEditBase {
     SetReadOnly: Boolean => Unit,
     SetSelection: (Double, Double, Boolean) => Unit,
     SetText: String => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]],
@@ -96,7 +96,7 @@ object ASPxClientButtonEditBase {
     
     inline def setButtonClick(value: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]]): Self = StObject.set(x, "ButtonClick", value.asInstanceOf[js.Any])
     
-    inline def setGetButton(value: Double => js.Any): Self = StObject.set(x, "GetButton", js.Any.fromFunction1(value))
+    inline def setGetButton(value: Double => Any): Self = StObject.set(x, "GetButton", js.Any.fromFunction1(value))
     
     inline def setGetButtonVisible(value: Double => Boolean): Self = StObject.set(x, "GetButtonVisible", js.Any.fromFunction1(value))
     

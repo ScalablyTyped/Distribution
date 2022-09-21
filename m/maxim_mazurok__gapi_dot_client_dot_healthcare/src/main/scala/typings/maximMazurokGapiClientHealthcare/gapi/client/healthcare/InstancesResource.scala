@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientHealthcare.anon.Accesstoken
+import typings.maximMazurokGapiClientHealthcare.anon.DicomWebPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait InstancesResource extends StObject {
     * DeleteInstance, see [Deleting a study, series, or instance](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#deleting_a_study_series_or_instance).
     */
   def delete(): Request[js.Object] = js.native
-  def delete(request: Accesstoken): Request[js.Object] = js.native
+  def delete(request: DicomWebPath): Request[js.Object] = js.native
   
   var frames: FramesResource = js.native
   
@@ -27,7 +27,7 @@ trait InstancesResource extends StObject {
     * [Retrieving an instance](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_an_instance).
     */
   def retrieveInstance(): Request[HttpBody] = js.native
-  def retrieveInstance(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveInstance(request: DicomWebPath): Request[HttpBody] = js.native
   
   /**
     * RetrieveInstanceMetadata returns instance associated with the given study, series, and SOP Instance UID presented as metadata with the bulk data removed. See [RetrieveTransaction]
@@ -36,7 +36,7 @@ trait InstancesResource extends StObject {
     * RetrieveInstanceMetadata, see [Retrieving metadata](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_metadata).
     */
   def retrieveMetadata(): Request[HttpBody] = js.native
-  def retrieveMetadata(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveMetadata(request: DicomWebPath): Request[HttpBody] = js.native
   
   /**
     * RetrieveRenderedInstance returns instance associated with the given study, series, and SOP Instance UID in an acceptable Rendered Media Type. See [RetrieveTransaction]
@@ -45,5 +45,5 @@ trait InstancesResource extends StObject {
     * RetrieveRenderedInstance, see [Retrieving consumer image formats](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_consumer_image_formats).
     */
   def retrieveRendered(): Request[HttpBody] = js.native
-  def retrieveRendered(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveRendered(request: DicomWebPath): Request[HttpBody] = js.native
 }

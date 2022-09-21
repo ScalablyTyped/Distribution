@@ -2,9 +2,9 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
@@ -32,15 +32,15 @@ object headerHeaderMod extends Shortcut {
     extends StObject
        with FunctionComponent[HeaderProps] {
     
-    var Content: StatelessComponent[HeaderContentProps] = js.native
+    var Content: FC[HeaderContentProps] = js.native
     
-    var Subheader: StatelessComponent[HeaderSubheaderProps] = js.native
+    var Subheader: FC[HeaderSubheaderProps] = js.native
   }
   
   trait HeaderProps
     extends StObject
        with StrictHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object HeaderProps {
     
     inline def apply(): HeaderProps = {
@@ -52,7 +52,7 @@ object headerHeaderMod extends Shortcut {
   trait StrictHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Attach header  to other content, like a segment. */
     var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
@@ -82,10 +82,10 @@ object headerHeaderMod extends Shortcut {
     var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** Add an icon by icon name or pass an Icon. */
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     /** Add an image by img src or pass an Image. */
-    var image: js.UndefOr[js.Any] = js.undefined
+    var image: js.UndefOr[Any] = js.undefined
     
     /** Inverts the color of the header for dark backgrounds. */
     var inverted: js.UndefOr[Boolean] = js.undefined
@@ -97,7 +97,7 @@ object headerHeaderMod extends Shortcut {
     var sub: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Header.Subheader. */
-    var subheader: js.UndefOr[js.Any] = js.undefined
+    var subheader: js.UndefOr[Any] = js.undefined
     
     /** Align header content. */
     var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
@@ -111,7 +111,7 @@ object headerHeaderMod extends Shortcut {
     
     extension [Self <: StrictHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -151,11 +151,11 @@ object headerHeaderMod extends Shortcut {
       
       inline def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
@@ -171,7 +171,7 @@ object headerHeaderMod extends Shortcut {
       
       inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
       
-      inline def setSubheader(value: js.Any): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
+      inline def setSubheader(value: Any): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
       
       inline def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
       

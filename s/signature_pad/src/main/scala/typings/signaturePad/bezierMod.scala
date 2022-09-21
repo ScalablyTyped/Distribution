@@ -11,7 +11,7 @@ object bezierMod {
   
   @JSImport("signature_pad/dist/types/bezier", "Bezier")
   @js.native
-  class Bezier protected () extends StObject {
+  open class Bezier protected () extends StObject {
     def this(
       startPoint: Point,
       control2: BasicPoint,
@@ -31,7 +31,7 @@ object bezierMod {
     
     def length(): Double = js.native
     
-    /* private */ var point: js.Any = js.native
+    /* private */ var point: Any = js.native
     
     var startPoint: Point = js.native
     
@@ -46,8 +46,8 @@ object bezierMod {
     
     @JSImport("signature_pad/dist/types/bezier", "Bezier.calculateControlPoints")
     @js.native
-    def calculateControlPoints: js.Any = js.native
-    inline def calculateControlPoints_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
+    def calculateControlPoints: Any = js.native
+    inline def calculateControlPoints_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
     
     inline def fromPoints(points: js.Array[Point], widths: End): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Bezier]
   }

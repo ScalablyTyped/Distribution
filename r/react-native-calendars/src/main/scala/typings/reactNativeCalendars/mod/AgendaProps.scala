@@ -129,6 +129,11 @@ trait AgendaProps[TItem] extends StObject {
   var selected: js.UndefOr[TCalendarDate] = js.undefined
   
   /**
+    *  When `true` and `hideKnob` prop is `false`, the knob will always be visible and the user will be able to drag the knob up and close the calendar. Default = false
+    */
+  var showClosingKnob: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     *  Agenda container style.
     */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -236,6 +241,10 @@ object AgendaProps {
     inline def setSelected(value: TCalendarDate): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShowClosingKnob(value: Boolean): Self = StObject.set(x, "showClosingKnob", value.asInstanceOf[js.Any])
+    
+    inline def setShowClosingKnobUndefined: Self = StObject.set(x, "showClosingKnob", js.undefined)
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,22 +14,12 @@ trait ParamsResourceChangelogsList
   var action: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Select only change logs with these IDs.
     */
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Select only change logs whose change time is before the specified
-    * maxChangeTime.The time should be formatted as an RFC3339 date/time
-    * string. For example, for 10:54 PM on July 18th, 2015, in the America/New
-    * York time zone, the format is "2015-07-18T22:54:00-04:00". In other
-    * words, the year, month, day, the letter T, the hour (24-hour clock
-    * system), minute, second, and then the time zone offset.
+    * Select only change logs whose change time is before the specified maxChangeTime.The time should be formatted as an RFC3339 date/time string. For example, for 10:54 PM on July 18th, 2015, in the America/New York time zone, the format is "2015-07-18T22:54:00-04:00". In other words, the year, month, day, the letter T, the hour (24-hour clock system), minute, second, and then the time zone offset.
     */
   var maxChangeTime: js.UndefOr[String] = js.undefined
   
@@ -43,12 +29,7 @@ trait ParamsResourceChangelogsList
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Select only change logs whose change time is before the specified
-    * minChangeTime.The time should be formatted as an RFC3339 date/time
-    * string. For example, for 10:54 PM on July 18th, 2015, in the America/New
-    * York time zone, the format is "2015-07-18T22:54:00-04:00". In other
-    * words, the year, month, day, the letter T, the hour (24-hour clock
-    * system), minute, second, and then the time zone offset.
+    * Select only change logs whose change time is after the specified minChangeTime.The time should be formatted as an RFC3339 date/time string. For example, for 10:54 PM on July 18th, 2015, in the America/New York time zone, the format is "2015-07-18T22:54:00-04:00". In other words, the year, month, day, the letter T, the hour (24-hour clock system), minute, second, and then the time zone offset.
     */
   var minChangeTime: js.UndefOr[String] = js.undefined
   
@@ -73,8 +54,7 @@ trait ParamsResourceChangelogsList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only change logs whose object ID, user name, old or new values
-    * match the search string.
+    * Select only change logs whose object ID, user name, old or new values match the search string.
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -96,15 +76,11 @@ object ParamsResourceChangelogsList {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxChangeTime(value: String): Self = StObject.set(x, "maxChangeTime", value.asInstanceOf[js.Any])
     
@@ -122,7 +98,7 @@ object ParamsResourceChangelogsList {
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
@@ -144,6 +120,6 @@ object ParamsResourceChangelogsList {
     
     inline def setUserProfileIdsUndefined: Self = StObject.set(x, "userProfileIds", js.undefined)
     
-    inline def setUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "userProfileIds", js.Array(value :_*))
+    inline def setUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "userProfileIds", js.Array(value*))
   }
 }

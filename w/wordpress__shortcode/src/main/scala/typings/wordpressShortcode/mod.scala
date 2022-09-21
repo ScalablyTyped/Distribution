@@ -1,14 +1,10 @@
 package typings.wordpressShortcode
 
 import typings.std.Record
-import typings.std.RegExp
-import typings.std.RegExpMatchArray
-import typings.wordpressShortcode.anon.Attrs
+import typings.std.RegExpExecArray
 import typings.wordpressShortcode.anon.Call
-import typings.wordpressShortcode.anon.Content
 import typings.wordpressShortcode.anon.PartialShortcodeAttrs
 import typings.wordpressShortcode.anon.PartialShortcodeOptions
-import typings.wordpressShortcode.anon.Type
 import typings.wordpressShortcode.wordpressShortcodeStrings.`self-closing`
 import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
@@ -24,7 +20,7 @@ object mod {
   
   @JSImport("@wordpress/shortcode", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with shortcode {
     def this(options: PartialShortcodeOptions) = this()
@@ -62,9 +58,9 @@ object mod {
     
     @JSImport("@wordpress/shortcode", "default.fromMatch")
     @js.native
-    def fromMatch: js.Function1[/* match */ RegExpMatchArray, Shortcode_] = js.native
-    inline def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
-    inline def fromMatch_=(x: js.Function1[/* match */ RegExpMatchArray, Shortcode_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromMatch")(x.asInstanceOf[js.Any])
+    def fromMatch: js.Function1[/* match */ RegExpExecArray, Shortcode_] = js.native
+    inline def fromMatch(`match`: RegExpExecArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
+    inline def fromMatch_=(x: js.Function1[/* match */ RegExpExecArray, Shortcode_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromMatch")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.next")
     @js.native
@@ -87,9 +83,9 @@ object mod {
     
     @JSImport("@wordpress/shortcode", "default.regexp")
     @js.native
-    def regexp: js.Function1[/* tag */ String, RegExp] = js.native
-    inline def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-    inline def regexp_=(x: js.Function1[/* tag */ String, RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
+    def regexp: js.Function1[/* tag */ String, js.RegExp] = js.native
+    inline def regexp(tag: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+    inline def regexp_=(x: js.Function1[/* tag */ String, js.RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.replace")
     @js.native
@@ -148,12 +144,12 @@ object mod {
     inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   }
   
-  inline def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
+  inline def fromMatch(`match`: RegExpExecArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
   
   inline def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
   inline def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
   
-  inline def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def regexp(tag: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   inline def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -178,7 +174,7 @@ object mod {
       
       inline def setNumeric(value: js.Array[String]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
+      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value*))
     }
   }
   
@@ -242,7 +238,25 @@ object mod {
     }
   }
   
-  type Shortcode_ = Attrs & (Content | Type)
+  /* Rewritten from type alias, can be one of: 
+    - typings.wordpressShortcode.anon.typeclosedcontentstringat
+    - typings.wordpressShortcode.anon.typeselfclosingsingleattr
+  */
+  trait Shortcode_ extends StObject
+  object Shortcode_ {
+    
+    inline def typeclosedcontentstringat(attrs: ShortcodeAttrs, content: String, tag: String): typings.wordpressShortcode.anon.typeclosedcontentstringat = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("closed")
+      __obj.asInstanceOf[typings.wordpressShortcode.anon.typeclosedcontentstringat]
+    }
+    
+    inline def typeselfclosingsingleattr(attrs: ShortcodeAttrs, tag: String, `type`: `self-closing` | single): typings.wordpressShortcode.anon.typeselfclosingsingleattr = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.wordpressShortcode.anon.typeselfclosingsingleattr]
+    }
+  }
   
   @js.native
   trait shortcode extends StObject {

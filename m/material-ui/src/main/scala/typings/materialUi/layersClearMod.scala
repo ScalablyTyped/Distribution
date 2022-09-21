@@ -10,10 +10,10 @@ object layersClearMod {
   
   @JSImport("material-ui/svg-icons/maps/layers-clear", JSImport.Default)
   @js.native
-  class default () extends MapsLayersClear
+  open class default () extends MapsLayersClear
   
   @JSImport("material-ui/svg-icons/maps/layers-clear", "MapsLayersClear")
   @js.native
-  class MapsLayersClear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLayersClear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

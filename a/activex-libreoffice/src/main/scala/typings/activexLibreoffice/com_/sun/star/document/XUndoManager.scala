@@ -264,7 +264,7 @@ object XUndoManager {
     isUndoPossible: () => Boolean,
     leaveUndoContext: () => Unit,
     lock: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     redo: () => Unit,
     release: () => Unit,
     removeUndoManagerListener: XUndoManagerListener => Unit,

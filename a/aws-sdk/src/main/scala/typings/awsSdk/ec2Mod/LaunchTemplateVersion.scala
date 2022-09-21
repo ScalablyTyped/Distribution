@@ -9,7 +9,7 @@ trait LaunchTemplateVersion extends StObject {
   /**
     * The time the version was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The principal that created the version.
@@ -55,7 +55,7 @@ object LaunchTemplateVersion {
   
   extension [Self <: LaunchTemplateVersion](x: Self) {
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     

@@ -8,42 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listItemTextMod {
   
-  object ListItemText {
-    
-    inline def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/list/types/ListItemText", "ListItemText")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.className")
-      @js.native
-      def className: js.Any = js.native
-      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.secondaryText")
-      @js.native
-      def secondaryText: js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.secondaryTextClassName")
-      @js.native
-      def secondaryTextClassName: js.Any = js.native
-      inline def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
-      
-      inline def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/list/types/ListItemText", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ListItemText(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemText")(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ListItemTextProps extends StObject {
     

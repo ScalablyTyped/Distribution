@@ -21,12 +21,12 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-core-binding", "AsyncSubject")
   @js.native
-  class AsyncSubjectCls[T] ()
+  open class AsyncSubjectCls[T] ()
     extends StObject
        with ISubject[T] {
     
     /* CompleteClass */
-    override def checked(): Observer[js.Any] = js.native
+    override def checked(): Observer[Any] = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -39,13 +39,13 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-core-binding", "BehaviorSubject")
   @js.native
-  class BehaviorSubjectCls[T] protected ()
+  open class BehaviorSubjectCls[T] protected ()
     extends StObject
        with typings.rxCoreBinding.Rx.BehaviorSubject[T] {
     def this(initialValue: T) = this()
     
     /* CompleteClass */
-    override def checked(): Observer[js.Any] = js.native
+    override def checked(): Observer[Any] = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -58,7 +58,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-core-binding", "ConnectableObservable")
   @js.native
-  class ConnectableObservableCls[T] ()
+  open class ConnectableObservableCls[T] ()
     extends StObject
        with typings.rxCoreBinding.Rx.ConnectableObservable[T]
   
@@ -69,7 +69,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-core-binding", "ReplaySubject")
   @js.native
-  class ReplaySubjectCls[T] ()
+  open class ReplaySubjectCls[T] ()
     extends StObject
        with ISubject[T] {
     def this(bufferSize: Double) = this()
@@ -81,7 +81,7 @@ object mod {
     def this(bufferSize: Unit, window: Unit, scheduler: IScheduler) = this()
     
     /* CompleteClass */
-    override def checked(): Observer[js.Any] = js.native
+    override def checked(): Observer[Any] = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -94,12 +94,12 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-core-binding", "Subject")
   @js.native
-  class SubjectCls[T] ()
+  open class SubjectCls[T] ()
     extends StObject
        with ISubject[T] {
     
     /* CompleteClass */
-    override def checked(): Observer[js.Any] = js.native
+    override def checked(): Observer[Any] = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native

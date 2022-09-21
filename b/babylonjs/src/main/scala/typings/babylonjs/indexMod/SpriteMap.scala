@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SpriteMap")
 @js.native
-class SpriteMap protected ()
+open class SpriteMap protected ()
   extends typings.babylonjs.spritesIndexMod.SpriteMap {
   /**
     * Creates a new SpriteMap

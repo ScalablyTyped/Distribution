@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "CircleOfConfusionPostProcess")
 @js.native
-class CircleOfConfusionPostProcess protected ()
+open class CircleOfConfusionPostProcess protected ()
   extends typings.babylonjs.legacyMod.CircleOfConfusionPostProcess {
   /**
     * Creates a new instance CircleOfConfusionPostProcess

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "ListenerBuilder")
 @js.native
-class ListenerBuilder () extends StObject {
+open class ListenerBuilder () extends StObject {
   
   /**
     * Builds the call listener

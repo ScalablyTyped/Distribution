@@ -34,13 +34,13 @@ object PathReportCompatibleFields {
     
     inline def setChannelGroupingsUndefined: Self = StObject.set(x, "channelGroupings", js.undefined)
     
-    inline def setChannelGroupingsVarargs(value: Dimension*): Self = StObject.set(x, "channelGroupings", js.Array(value :_*))
+    inline def setChannelGroupingsVarargs(value: Dimension*): Self = StObject.set(x, "channelGroupings", js.Array(value*))
     
     inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -50,12 +50,12 @@ object PathReportCompatibleFields {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setPathFilters(value: js.Array[Dimension]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    inline def setPathFiltersVarargs(value: Dimension*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: Dimension*): Self = StObject.set(x, "pathFilters", js.Array(value*))
   }
 }

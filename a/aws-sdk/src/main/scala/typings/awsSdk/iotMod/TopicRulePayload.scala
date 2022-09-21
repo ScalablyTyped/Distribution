@@ -32,7 +32,7 @@ trait TopicRulePayload extends StObject {
   var ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
   
   /**
-    * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference in the AWS IoT Developer Guide.
+    * The SQL statement used to query the topic. For more information, see IoT SQL Reference in the IoT Developer Guide.
     */
   var sql: SQL
 }
@@ -47,7 +47,7 @@ object TopicRulePayload {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = StObject.set(x, "awsIotSqlVersion", value.asInstanceOf[js.Any])
     

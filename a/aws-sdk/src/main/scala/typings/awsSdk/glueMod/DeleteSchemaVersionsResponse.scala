@@ -24,6 +24,6 @@ object DeleteSchemaVersionsResponse {
     
     inline def setSchemaVersionErrorsUndefined: Self = StObject.set(x, "SchemaVersionErrors", js.undefined)
     
-    inline def setSchemaVersionErrorsVarargs(value: SchemaVersionErrorItem*): Self = StObject.set(x, "SchemaVersionErrors", js.Array(value :_*))
+    inline def setSchemaVersionErrorsVarargs(value: SchemaVersionErrorItem*): Self = StObject.set(x, "SchemaVersionErrors", js.Array(value*))
   }
 }

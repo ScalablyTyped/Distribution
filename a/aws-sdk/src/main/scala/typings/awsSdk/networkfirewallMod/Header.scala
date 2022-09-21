@@ -12,7 +12,7 @@ trait Header extends StObject {
   var Destination: typings.awsSdk.networkfirewallMod.Destination
   
   /**
-    * The destination port to inspect for. You can specify an individual port, for example 1994 and you can specify a port range, for example 1990-1994. To match with any port, specify ANY. 
+    * The destination port to inspect for. You can specify an individual port, for example 1994 and you can specify a port range, for example 1990:1994. To match with any port, specify ANY. 
     */
   var DestinationPort: Port
   
@@ -22,7 +22,7 @@ trait Header extends StObject {
   var Direction: StatefulRuleDirection
   
   /**
-    * The protocol to inspect for. To match with any protocol, specify ANY. 
+    * The protocol to inspect for. To specify all, you can use IP, because all traffic on Amazon Web Services and on the internet is IP.
     */
   var Protocol: StatefulRuleProtocol
   
@@ -32,7 +32,7 @@ trait Header extends StObject {
   var Source: typings.awsSdk.networkfirewallMod.Source
   
   /**
-    * The source port to inspect for. You can specify an individual port, for example 1994 and you can specify a port range, for example 1990-1994. To match with any port, specify ANY. 
+    * The source port to inspect for. You can specify an individual port, for example 1994 and you can specify a port range, for example 1990:1994. To match with any port, specify ANY. 
     */
   var SourcePort: Port
 }

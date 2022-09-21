@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mergeDeveloperIdentitiesCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/MergeDeveloperIdentitiesCommand", "MergeDeveloperIdentitiesCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/MergeDeveloperIdentitiesCommand", "MergeDeveloperIdentitiesCommand")
   @js.native
-  class MergeDeveloperIdentitiesCommand protected ()
-    extends Command[
+  open class MergeDeveloperIdentitiesCommand protected () extends Command[
           MergeDeveloperIdentitiesCommandInput, 
           MergeDeveloperIdentitiesCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: MergeDeveloperIdentitiesCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object mergeDeveloperIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[MergeDeveloperIdentitiesCommandInput, MergeDeveloperIdentitiesCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type MergeDeveloperIdentitiesCommandInput = MergeDeveloperIdentitiesInput

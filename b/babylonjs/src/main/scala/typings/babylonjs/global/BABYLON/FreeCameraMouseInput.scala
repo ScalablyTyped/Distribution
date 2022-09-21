@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
   * @param touchEnabled Defines if touch is enabled or not
   */
-class FreeCameraMouseInput ()
+open class FreeCameraMouseInput ()
   extends StObject
      with typings.babylonjs.BABYLON.FreeCameraMouseInput {
   def this(/**

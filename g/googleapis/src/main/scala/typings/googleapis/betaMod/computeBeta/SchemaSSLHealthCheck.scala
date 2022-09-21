@@ -7,49 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaSSLHealthCheck extends StObject {
   
   /**
-    * The TCP port number for the health check request. The default value is
-    * 443. Valid values are 1 through 65535.
+    * The TCP port number for the health check request. The default value is 443. Valid values are 1 through 65535.
     */
-  var port: js.UndefOr[Double] = js.undefined
+  var port: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Port name as defined in InstanceGroup#NamedPort#name. If both port and
-    * port_name are defined, port takes precedence.
+    * Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
     */
-  var portName: js.UndefOr[String] = js.undefined
+  var portName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies how port is selected for health checking, can be one of
-    * following values: USE_FIXED_PORT: The port number in port is used for
-    * health checking. USE_NAMED_PORT: The portName is used for health
-    * checking. USE_SERVING_PORT: For NetworkEndpointGroup, the port specified
-    * for each network endpoint is used for health checking. For other
-    * backends, the port or named port specified in the Backend Service is used
-    * for health checking.   If not specified, SSL health check follows
-    * behavior specified in port and portName fields.
+    * Specifies how port is selected for health checking, can be one of following values: USE_FIXED_PORT: The port number in port is used for health checking. USE_NAMED_PORT: The portName is used for health checking. USE_SERVING_PORT: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, SSL health check follows behavior specified in port and portName fields.
     */
-  var portSpecification: js.UndefOr[String] = js.undefined
+  var portSpecification: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies the type of proxy header to append before sending data to the
-    * backend, either NONE or PROXY_V1. The default is NONE.
+    * Specifies the type of proxy header to append before sending data to the backend, either NONE or PROXY_V1. The default is NONE.
     */
-  var proxyHeader: js.UndefOr[String] = js.undefined
+  var proxyHeader: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The application data to send once the SSL connection has been established
-    * (default value is empty). If both request and response are empty, the
-    * connection establishment alone will indicate health. The request data can
-    * only be ASCII.
+    * The application data to send once the SSL connection has been established (default value is empty). If both request and response are empty, the connection establishment alone will indicate health. The request data can only be ASCII.
     */
-  var request: js.UndefOr[String] = js.undefined
+  var request: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The bytes to match against the beginning of the response data. If left
-    * empty (the default value), any response will indicate health. The
-    * response data can only be ASCII.
+    * The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.
     */
-  var response: js.UndefOr[String] = js.undefined
+  var response: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSSLHealthCheck {
   
@@ -64,9 +49,15 @@ object SchemaSSLHealthCheck {
     
     inline def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
+    inline def setPortNameNull: Self = StObject.set(x, "portName", null)
+    
     inline def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
+    inline def setPortNull: Self = StObject.set(x, "port", null)
+    
     inline def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
+    
+    inline def setPortSpecificationNull: Self = StObject.set(x, "portSpecification", null)
     
     inline def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
     
@@ -74,13 +65,19 @@ object SchemaSSLHealthCheck {
     
     inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     
+    inline def setProxyHeaderNull: Self = StObject.set(x, "proxyHeader", null)
+    
     inline def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
     
     inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
+    inline def setRequestNull: Self = StObject.set(x, "request", null)
+    
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseNull: Self = StObject.set(x, "response", null)
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }

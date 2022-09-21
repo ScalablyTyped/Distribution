@@ -22,6 +22,6 @@ object TableBorderRow {
     
     inline def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
     
-    inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
+    inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value*))
   }
 }

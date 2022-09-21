@@ -46,7 +46,7 @@ object ListTrafficPolicyVersionsResponse {
     
     inline def setTrafficPolicies(value: TrafficPolicies): Self = StObject.set(x, "TrafficPolicies", value.asInstanceOf[js.Any])
     
-    inline def setTrafficPoliciesVarargs(value: TrafficPolicy*): Self = StObject.set(x, "TrafficPolicies", js.Array(value :_*))
+    inline def setTrafficPoliciesVarargs(value: TrafficPolicy*): Self = StObject.set(x, "TrafficPolicies", js.Array(value*))
     
     inline def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ag-channel
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Channel object for Asyngular
@@ -10,10 +10,10 @@ Channel object for Asyngular
 | ------------------ | :-------------: |
 | Full name          | ag-channel |
 | Keywords           | channel, asyngular, socketcluster, pubsub, publish, subscribe |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 77320 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17445.666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/ag-channel)

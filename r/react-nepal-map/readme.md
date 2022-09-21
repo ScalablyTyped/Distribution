@@ -11,9 +11,9 @@ React component for Nepal Map
 | Full name          | react-nepal-map |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 330 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 47.666666666666664 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/keyrunpay/react-nepal-map#readme)

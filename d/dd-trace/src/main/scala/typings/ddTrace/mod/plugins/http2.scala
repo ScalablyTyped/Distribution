@@ -17,19 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.ddTrace.mod.plugins.Integration because Already inherited
 - typings.ddTrace.mod.plugins.Instrumentation because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
-- typings.ddTrace.mod.plugins.Http2Server because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined  */ trait http2
+- typings.ddTrace.mod.plugins.Http2Server because var conflicts: allowlist, blacklist, blocklist, enabled, headers, measured, service, validateStatus, whitelist. Inlined  */ trait http2
   extends StObject
      with Http2Client {
   
   /**
     * Configuration for HTTP clients.
     */
-  var client: js.UndefOr[Http2Client] = js.undefined
+  var client: js.UndefOr[Http2Client | Boolean] = js.undefined
   
   /**
     * Configuration for HTTP servers.
     */
-  var server: js.UndefOr[Http2Server] = js.undefined
+  var server: js.UndefOr[Http2Server | Boolean] = js.undefined
 }
 object http2 {
   
@@ -40,11 +40,11 @@ object http2 {
   
   extension [Self <: http2](x: Self) {
     
-    inline def setClient(value: Http2Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Http2Client | Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    inline def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Http2Server | Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }

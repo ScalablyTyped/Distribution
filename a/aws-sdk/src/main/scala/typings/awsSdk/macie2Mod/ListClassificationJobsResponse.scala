@@ -29,7 +29,7 @@ object ListClassificationJobsResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: JobSummary*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: JobSummary*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -129,7 +129,7 @@ object gapi {
       trait IpReputation extends StObject {
         
         /** Total number of unique IPs in this reputation category. This metric only pertains to traffic that passed [SPF](http://www.openspf.org/) or [DKIM](http://www.dkim.org/). */
-        var numIps: js.UndefOr[String] = js.undefined
+        var ipCount: js.UndefOr[String] = js.undefined
         
         /** The reputation category this IP reputation represents. */
         var reputation: js.UndefOr[String] = js.undefined
@@ -146,9 +146,9 @@ object gapi {
         
         extension [Self <: IpReputation](x: Self) {
           
-          inline def setNumIps(value: String): Self = StObject.set(x, "numIps", value.asInstanceOf[js.Any])
+          inline def setIpCount(value: String): Self = StObject.set(x, "ipCount", value.asInstanceOf[js.Any])
           
-          inline def setNumIpsUndefined: Self = StObject.set(x, "numIps", js.undefined)
+          inline def setIpCountUndefined: Self = StObject.set(x, "ipCount", js.undefined)
           
           inline def setReputation(value: String): Self = StObject.set(x, "reputation", value.asInstanceOf[js.Any])
           
@@ -158,7 +158,7 @@ object gapi {
           
           inline def setSampleIpsUndefined: Self = StObject.set(x, "sampleIps", js.undefined)
           
-          inline def setSampleIpsVarargs(value: String*): Self = StObject.set(x, "sampleIps", js.Array(value :_*))
+          inline def setSampleIpsVarargs(value: String*): Self = StObject.set(x, "sampleIps", js.Array(value*))
         }
       }
       
@@ -183,7 +183,7 @@ object gapi {
           
           inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
           
-          inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+          inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -216,7 +216,7 @@ object gapi {
           
           inline def setTrafficStatsUndefined: Self = StObject.set(x, "trafficStats", js.undefined)
           
-          inline def setTrafficStatsVarargs(value: TrafficStats*): Self = StObject.set(x, "trafficStats", js.Array(value :_*))
+          inline def setTrafficStatsVarargs(value: TrafficStats*): Self = StObject.set(x, "trafficStats", js.Array(value*))
         }
       }
       
@@ -284,7 +284,7 @@ object gapi {
           
           inline def setDeliveryErrorsUndefined: Self = StObject.set(x, "deliveryErrors", js.undefined)
           
-          inline def setDeliveryErrorsVarargs(value: DeliveryError*): Self = StObject.set(x, "deliveryErrors", js.Array(value :_*))
+          inline def setDeliveryErrorsVarargs(value: DeliveryError*): Self = StObject.set(x, "deliveryErrors", js.Array(value*))
           
           inline def setDkimSuccessRatio(value: Double): Self = StObject.set(x, "dkimSuccessRatio", value.asInstanceOf[js.Any])
           
@@ -306,7 +306,7 @@ object gapi {
           
           inline def setIpReputationsUndefined: Self = StObject.set(x, "ipReputations", js.undefined)
           
-          inline def setIpReputationsVarargs(value: IpReputation*): Self = StObject.set(x, "ipReputations", js.Array(value :_*))
+          inline def setIpReputationsVarargs(value: IpReputation*): Self = StObject.set(x, "ipReputations", js.Array(value*))
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -320,7 +320,7 @@ object gapi {
           
           inline def setSpammyFeedbackLoopsUndefined: Self = StObject.set(x, "spammyFeedbackLoops", js.undefined)
           
-          inline def setSpammyFeedbackLoopsVarargs(value: FeedbackLoop*): Self = StObject.set(x, "spammyFeedbackLoops", js.Array(value :_*))
+          inline def setSpammyFeedbackLoopsVarargs(value: FeedbackLoop*): Self = StObject.set(x, "spammyFeedbackLoops", js.Array(value*))
           
           inline def setSpfSuccessRatio(value: Double): Self = StObject.set(x, "spfSuccessRatio", value.asInstanceOf[js.Any])
           

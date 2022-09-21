@@ -8,5 +8,5 @@ object sendMessageInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/SendMessageInput", "SendMessageInput")
   @js.native
-  val SendMessageInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SendMessageInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

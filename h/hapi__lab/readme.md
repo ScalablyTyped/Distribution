@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__lab
 
-Typings are for version 24.1.0
+Typings are for version 25.0.1
 
 ## Library description:
 Test utility
@@ -10,10 +10,10 @@ Test utility
 | ------------------ | :-------------: |
 | Full name          | @hapi/lab |
 | Keywords           | test, runner |
-| # releases         | 26 |
-| # dependents       | 7 |
-| # downloads        | 731908 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 79712.66666666667 |
+| # stars            | 740.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/lab#readme)

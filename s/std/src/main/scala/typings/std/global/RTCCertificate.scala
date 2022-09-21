@@ -1,6 +1,6 @@
 package typings.std.global
 
-import typings.std.AlgorithmIdentifier
+import typings.std.EpochTimeStamp
 import typings.std.RTCDtlsFingerprint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,21 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCCertificate")
 @js.native
-class RTCCertificate ()
+/* standard dom */
+open class RTCCertificate ()
   extends StObject
      with typings.std.RTCCertificate {
   
+  /* standard dom */
   /* CompleteClass */
-  override val expires: Double = js.native
+  override val expires: EpochTimeStamp = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def getFingerprints(): js.Array[RTCDtlsFingerprint] = js.native
-}
-object RTCCertificate {
-  
-  @JSGlobal("RTCCertificate")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def getSupportedAlgorithms(): js.Array[AlgorithmIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedAlgorithms")().asInstanceOf[js.Array[AlgorithmIdentifier]]
 }

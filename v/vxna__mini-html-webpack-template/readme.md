@@ -10,10 +10,10 @@ Minimum viable template for mini-html-webpack-plugin
 | ------------------ | :-------------: |
 | Full name          | @vxna/mini-html-webpack-template |
 | Keywords           | webpack, mini-html-webpack-plugin |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 5418274 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 441432.3333333333 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/vxna/mini-html-webpack-template#readme)

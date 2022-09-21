@@ -9,7 +9,7 @@ trait Snapshot extends StObject {
   /**
     * The time when the snapshot was created.
     */
-  var SnapshotTime: js.UndefOr[Timestamp] = js.undefined
+  var SnapshotTime: js.UndefOr[js.Date] = js.undefined
 }
 object Snapshot {
   
@@ -20,7 +20,7 @@ object Snapshot {
   
   extension [Self <: Snapshot](x: Self) {
     
-    inline def setSnapshotTime(value: Timestamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotTime(value: js.Date): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
   }

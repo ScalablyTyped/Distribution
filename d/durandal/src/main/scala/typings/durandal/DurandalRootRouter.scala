@@ -13,8 +13,8 @@ trait DurandalRootRouter
     * Activates the router and the underlying history tracking mechanism.
     * @returns {Promise} A promise that resolves when the router is ready.
     */
-  def activate(): DurandalPromise[js.Any] = js.native
-  def activate(options: DurandalHistoryOptions): DurandalPromise[js.Any] = js.native
+  def activate(): DurandalPromise[Any] = js.native
+  def activate(options: DurandalHistoryOptions): DurandalPromise[Any] = js.native
   
   /**
     * Disable history, perhaps temporarily. Not useful in a real app, but possibly useful for unit testing Routers.

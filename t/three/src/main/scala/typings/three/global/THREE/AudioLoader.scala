@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.AudioLoader")
 @js.native
-class AudioLoader ()
+open class AudioLoader ()
   extends typings.three.mod.AudioLoader {
   def this(manager: typings.three.loadingManagerMod.LoadingManager) = this()
 }

@@ -19,7 +19,7 @@ object physicsEngineComponentMod {
   
   @JSImport("babylonjs/Physics/physicsEngineComponent", "PhysicsEngineSceneComponent")
   @js.native
-  class PhysicsEngineSceneComponent protected ()
+  open class PhysicsEngineSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -103,7 +103,7 @@ object physicsEngineComponentMod {
         * @see https://www.babylonjs-playground.com/#0BS5U0#0
         */
       def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3): AbstractMesh = js.native
-      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: js.Any): AbstractMesh = js.native
+      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: Any): AbstractMesh = js.native
     }
   }
   
@@ -123,7 +123,7 @@ object physicsEngineComponentMod {
         * Deletes a physics compound impostor
         * @param compound defines the compound to delete
         */
-      def deleteCompoundImpostor(compound: js.Any): Unit = js.native
+      def deleteCompoundImpostor(compound: Any): Unit = js.native
       
       /**
         * Disables and disposes the physics engine associated with the scene
@@ -132,10 +132,12 @@ object physicsEngineComponentMod {
       
       /**
         * Enables physics to the current scene
-        * @param gravity defines the scene's gravity for the physics engine
-        * @param plugin defines the physics engine to be used. defaults to OimoJS.
-        * @return a boolean indicating if the physics engine was initialized
+        * @param gravity defines the scene's gravity for the physics engine. defaults to real earth gravity : (0, -9.81, 0)
+        * @param plugin defines the physics engine to be used. defaults to CannonJS.
+        * @returns a boolean indicating if the physics engine was initialized
         */
+      def enablePhysics(): Boolean = js.native
+      def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePlugin): Boolean = js.native
       def enablePhysics(gravity: Nullable[Vector3]): Boolean = js.native
       def enablePhysics(gravity: Nullable[Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
       

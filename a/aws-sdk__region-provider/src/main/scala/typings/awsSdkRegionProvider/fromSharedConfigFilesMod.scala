@@ -1,6 +1,6 @@
 package typings.awsSdkRegionProvider
 
-import typings.awsSdkSharedIniFileLoader.mod.SharedConfigFiles
+import typings.awsSdkSharedIniFileLoader.typesMod.SharedConfigFiles
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object fromSharedConfigFilesMod {
   
   trait SharedConfigInit
     extends StObject
-       with typings.awsSdkSharedIniFileLoader.mod.SharedConfigInit {
+       with typings.awsSdkSharedIniFileLoader.loadSharedConfigFilesMod.SharedConfigInit {
     
     /**
       * A promise that will be resolved with loaded and parsed credentials files.

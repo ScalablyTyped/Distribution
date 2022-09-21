@@ -28,12 +28,12 @@ object TimeSeriesData {
     
     inline def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
     
-    inline def setLabelValuesVarargs(value: LabelValue*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
+    inline def setLabelValuesVarargs(value: LabelValue*): Self = StObject.set(x, "labelValues", js.Array(value*))
     
     inline def setPointData(value: js.Array[PointData]): Self = StObject.set(x, "pointData", value.asInstanceOf[js.Any])
     
     inline def setPointDataUndefined: Self = StObject.set(x, "pointData", js.undefined)
     
-    inline def setPointDataVarargs(value: PointData*): Self = StObject.set(x, "pointData", js.Array(value :_*))
+    inline def setPointDataVarargs(value: PointData*): Self = StObject.set(x, "pointData", js.Array(value*))
   }
 }

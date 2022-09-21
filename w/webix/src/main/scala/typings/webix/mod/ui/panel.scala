@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.panel")
 @js.native
-class panel ()
+open class panel ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
   @JSName("$resizeEnd")
-  def $resizeEnd(pos: Double): Unit = js.native
+  def $resizeEnd(pos: Any): Unit = js.native
   
   @JSName("$resizeMove")
-  def $resizeMove(pos: Double): Unit = js.native
+  def $resizeMove(pos: Any): Unit = js.native
   
   @JSName("$skin")
   var $skin_Original_panel: WebixCallback = js.native
@@ -23,12 +23,12 @@ class panel ()
   def attachEvent(`type`: panelEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: panelEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_panel: panelConfig = js.native
@@ -37,7 +37,7 @@ class panel ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

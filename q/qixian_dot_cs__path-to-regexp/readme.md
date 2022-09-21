@@ -10,10 +10,10 @@ Express style path to RegExp utility
 | ------------------ | :-------------: |
 | Full name          | @qixian.cs/path-to-regexp |
 | Keywords           | express, regexp, route, routing |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 77572 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 97897.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/path-to-regexp#readme)

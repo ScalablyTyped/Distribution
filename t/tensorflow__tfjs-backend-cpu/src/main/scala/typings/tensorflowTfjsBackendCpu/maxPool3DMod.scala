@@ -1,0 +1,21 @@
+package typings.tensorflowTfjsBackendCpu
+
+import typings.tensorflowTfjsBackendCpu.anon.AttrsMaxPool3DAttrs
+import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object maxPool3DMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPool3D", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def maxPool3D(args: AttrsMaxPool3DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPool3D", "maxPool3DConfig")
+  @js.native
+  val maxPool3DConfig: KernelConfig = js.native
+}

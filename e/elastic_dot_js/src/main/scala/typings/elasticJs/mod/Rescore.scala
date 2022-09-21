@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "Rescore")
 @js.native
-class Rescore protected () extends StObject {
+open class Rescore protected () extends StObject {
   /*
     Defines an operation that rescores a query with another query.
     */
@@ -48,7 +48,7 @@ class Rescore protected () extends StObject {
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the window_size parameter of the rescoring.

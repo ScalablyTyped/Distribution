@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait compressImageOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 图片路径，图片的路径，可以是相对路径、临时文件路径、存储文件路径
   var quality: js.UndefOr[Double] = js.undefined

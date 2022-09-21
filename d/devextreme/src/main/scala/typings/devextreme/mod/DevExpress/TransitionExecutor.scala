@@ -1,8 +1,7 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.mod.global.JQuery
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
+import typings.devextreme.mod.DevExpress.core.UserDefinedElementsArray
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,30 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TransitionExecutor extends StObject {
   
-  def enter(elements: JQuery, animation: String): Unit = js.native
+  def enter(elements: UserDefinedElementsArray, animation: String): Unit = js.native
   /**
-    * [descr:TransitionExecutor.enter(elements, animation)]
+    * Registers the set of elements that should be animated as &apos;entering&apos; using the specified animation configuration.
     */
-  def enter(elements: JQuery, animation: animationConfig): Unit = js.native
+  def enter(elements: UserDefinedElementsArray, animation: AnimationConfig): Unit = js.native
   
-  def leave(elements: JQuery, animation: String): Unit = js.native
+  def leave(elements: UserDefinedElementsArray, animation: String): Unit = js.native
   /**
-    * [descr:TransitionExecutor.leave(elements, animation)]
+    * Registers a set of elements that should be animated as &apos;leaving&apos; using the specified animation configuration.
     */
-  def leave(elements: JQuery, animation: animationConfig): Unit = js.native
+  def leave(elements: UserDefinedElementsArray, animation: AnimationConfig): Unit = js.native
   
   /**
-    * [descr:TransitionExecutor.reset()]
+    * Deletes all the animations registered in the Transition Executor by using the enter(elements, animation) and leave(elements, animation) methods.
     */
   def reset(): Unit = js.native
   
   /**
-    * [descr:TransitionExecutor.start()]
+    * Starts all the animations registered using the enter(elements, animation) and leave(elements, animation) methods beforehand.
     */
-  def start(): Promise[Unit] & JQueryPromise[Unit] = js.native
+  def start(): DxPromise[Unit] = js.native
   
   /**
-    * [descr:TransitionExecutor.stop()]
+    * Stops all started animations.
     */
   def stop(): Unit = js.native
 }

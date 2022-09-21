@@ -7,7 +7,7 @@ import typings.phaser.Phaser.Scale.ZoomType
 import typings.phaser.Phaser.Types.Core.AudioConfig
 import typings.phaser.Phaser.Types.Core.FPSConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
-import typings.phaser.integer
+import typings.phaser.Phaser.Types.Core.PipelineConfig
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -31,7 +31,7 @@ object Core {
     * 
     * @param GameConfig The configuration object for your Phaser Game instance.
     */
-  class Config ()
+  open class Config ()
     extends StObject
        with typings.phaser.Phaser.Core.Config {
     def this(GameConfig: typings.phaser.Phaser.Types.Core.GameConfig) = this()
@@ -70,7 +70,7 @@ object Core {
       * Automatically round the display and style sizes of the canvas. This can help with performance in lower-powered devices.
       */
     /* CompleteClass */
-    override val autoRound: integer = js.native
+    override val autoRound: Boolean = js.native
     
     /**
       * The background color of the game canvas. The default is black. This value is ignored if `transparent` is set to `true`.
@@ -91,10 +91,10 @@ object Core {
     override val bannerTextColor: String = js.native
     
     /**
-      * The default WebGL Batch size.
+      * The default WebGL Batch size. Represents the number of _quads_ that can be added to a single batch.
       */
     /* CompleteClass */
-    override val batchSize: integer = js.native
+    override val batchSize: Double = js.native
     
     /**
       * Force Phaser to use your own Canvas element instead of creating one.
@@ -142,7 +142,7 @@ object Core {
       * The plugins installed into every Scene (in addition to CoreScene and Global).
       */
     /* CompleteClass */
-    override val defaultPlugins: js.Any = js.native
+    override val defaultPlugins: Any = js.native
     
     /**
       * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
@@ -167,6 +167,12 @@ object Core {
       */
     /* CompleteClass */
     override val domCreateContainer: Boolean = js.native
+    
+    /**
+      * The default `pointerEvents` attribute set on the DOM Container.
+      */
+    /* CompleteClass */
+    override val domPointerEvents: String = js.native
     
     /**
       * Is the Scale Manager allowed to adjust the CSS height property of the parent to be 100%?
@@ -214,7 +220,7 @@ object Core {
       * The height of the underlying canvas, in pixels.
       */
     /* CompleteClass */
-    override val height: integer | String = js.native
+    override val height: Double | String = js.native
     
     /**
       * Don't write the banner line to the console.log.
@@ -232,7 +238,7 @@ object Core {
       * The number of Pointer objects created by default. In a mouse-only, or non-multi touch game, you can leave this as 1.
       */
     /* CompleteClass */
-    override val inputActivePointers: integer = js.native
+    override val inputActivePointers: Double = js.native
     
     /**
       * Enable the Gamepad Plugin. This can be disabled in games that don't need gamepad input.
@@ -244,7 +250,7 @@ object Core {
       * The DOM Target to listen for gamepad events on. Defaults to `window` if not specified.
       */
     /* CompleteClass */
-    override val inputGamepadEventTarget: js.Any = js.native
+    override val inputGamepadEventTarget: Any = js.native
     
     /**
       * Enable the Keyboard Plugin. This can be disabled in games that don't need keyboard input.
@@ -256,13 +262,13 @@ object Core {
       * `preventDefault` will be called on every non-modified key which has a key code in this array. By default, it is empty.
       */
     /* CompleteClass */
-    override val inputKeyboardCapture: js.Array[integer] = js.native
+    override val inputKeyboardCapture: js.Array[Double] = js.native
     
     /**
       * The DOM Target to listen for keyboard events on. Defaults to `window` if not specified.
       */
     /* CompleteClass */
-    override val inputKeyboardEventTarget: js.Any = js.native
+    override val inputKeyboardEventTarget: Any = js.native
     
     /**
       * Enable the Mouse Plugin. This can be disabled in games that don't need mouse input.
@@ -271,22 +277,40 @@ object Core {
     override val inputMouse: Boolean | js.Object = js.native
     
     /**
-      * Should mouse events be captured? I.e. have prevent default called on them.
-      */
-    /* CompleteClass */
-    override val inputMouseCapture: Boolean = js.native
-    
-    /**
       * The DOM Target to listen for mouse events on. Defaults to the game canvas if not specified.
       */
     /* CompleteClass */
-    override val inputMouseEventTarget: js.Any = js.native
+    override val inputMouseEventTarget: Any = js.native
+    
+    /**
+      * Should `mousedown` DOM events have `preventDefault` called on them?
+      */
+    /* CompleteClass */
+    override val inputMousePreventDefaultDown: Boolean = js.native
+    
+    /**
+      * Should `mousemove` DOM events have `preventDefault` called on them?
+      */
+    /* CompleteClass */
+    override val inputMousePreventDefaultMove: Boolean = js.native
+    
+    /**
+      * Should `mouseup` DOM events have `preventDefault` called on them?
+      */
+    /* CompleteClass */
+    override val inputMousePreventDefaultUp: Boolean = js.native
+    
+    /**
+      * Should `wheel` DOM events have `preventDefault` called on them?
+      */
+    /* CompleteClass */
+    override val inputMousePreventDefaultWheel: Boolean = js.native
     
     /**
       * The smoothing factor to apply during Pointer movement. See {@link Phaser.Input.Pointer#smoothFactor}.
       */
     /* CompleteClass */
-    override val inputSmoothFactor: integer = js.native
+    override val inputSmoothFactor: Double = js.native
     
     /**
       * Enable the Touch Plugin. This can be disabled in games that don't need touch input.
@@ -304,7 +328,7 @@ object Core {
       * The DOM Target to listen for touch events on. Defaults to the game canvas if not specified.
       */
     /* CompleteClass */
-    override val inputTouchEventTarget: js.Any = js.native
+    override val inputTouchEventTarget: Any = js.native
     
     /**
       * Should Phaser listen for input events on the Window? If you disable this, events like 'POINTER_UP_OUTSIDE' will no longer fire.
@@ -316,13 +340,13 @@ object Core {
       * An array of global plugins to be installed.
       */
     /* CompleteClass */
-    override val installGlobalPlugins: js.Any = js.native
+    override val installGlobalPlugins: Any = js.native
     
     /**
       * An array of Scene level plugins to be installed.
       */
     /* CompleteClass */
-    override val installScenePlugins: js.Any = js.native
+    override val installScenePlugins: Any = js.native
     
     /**
       * Should the XHR request use async or not?
@@ -340,7 +364,7 @@ object Core {
       * Maximum parallel downloads allowed for resources (Default to 32).
       */
     /* CompleteClass */
-    override val loaderMaxParallelDownloads: integer = js.native
+    override val loaderMaxParallelDownloads: Double = js.native
     
     /**
       * Optional password for all XHR requests.
@@ -364,7 +388,7 @@ object Core {
       * Optional XHR timeout value, in ms.
       */
     /* CompleteClass */
-    override val loaderTimeout: integer = js.native
+    override val loaderTimeout: Double = js.native
     
     /**
       * Optional username for all XHR requests.
@@ -382,31 +406,37 @@ object Core {
       * The maximum height, in pixels, the canvas will scale up to. A value of zero means no maximum.
       */
     /* CompleteClass */
-    override val maxHeight: integer = js.native
+    override val maxHeight: Double = js.native
     
     /**
       * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
       */
     /* CompleteClass */
-    override val maxLights: integer = js.native
+    override val maxLights: Double = js.native
+    
+    /**
+      * When in WebGL mode, this sets the maximum number of GPU Textures to use. The default, -1, will use all available units. The WebGL1 spec says all browsers should provide a minimum of 8.
+      */
+    /* CompleteClass */
+    override val maxTextures: Double = js.native
     
     /**
       * The maximum width, in pixels, the canvas will scale up to. A value of zero means no maximum.
       */
     /* CompleteClass */
-    override val maxWidth: integer = js.native
+    override val maxWidth: Double = js.native
     
     /**
       * The minimum height, in pixels, the canvas will scale down to. A value of zero means no minimum.
       */
     /* CompleteClass */
-    override val minHeight: integer = js.native
+    override val minHeight: Double = js.native
     
     /**
       * The minimum width, in pixels, the canvas will scale down to. A value of zero means no minimum.
       */
     /* CompleteClass */
-    override val minWidth: integer = js.native
+    override val minWidth: Double = js.native
     
     /**
       * Sets the `mipmapFilter` property when the WebGL renderer is created.
@@ -424,13 +454,19 @@ object Core {
       * A parent DOM element into which the canvas created by the renderer will be injected.
       */
     /* CompleteClass */
-    override val parent: js.Any = js.native
+    override val parent: Any = js.native
     
     /**
       * The Physics Configuration object.
       */
     /* CompleteClass */
     override val physics: PhysicsConfig = js.native
+    
+    /**
+      * An object mapping WebGL names to WebGLPipeline classes. These should be class constructors, not instances.
+      */
+    /* CompleteClass */
+    override val pipeline: PipelineConfig = js.native
     
     /**
       * Prevent pixel art from becoming blurred when scaled. It will remain crisp (tells the WebGL renderer to automatically create textures using a linear filter mode).
@@ -463,6 +499,12 @@ object Core {
     override val premultipliedAlpha: Boolean = js.native
     
     /**
+      * If the value is true the WebGL buffers will not be cleared and will preserve their values until cleared or overwritten by the author.
+      */
+    /* CompleteClass */
+    override val preserveDrawingBuffer: Boolean = js.native
+    
+    /**
       * Force Phaser to use a specific renderer. Can be `CONST.CANVAS`, `CONST.WEBGL`, `CONST.HEADLESS` or `CONST.AUTO` (default)
       */
     /* CompleteClass */
@@ -472,13 +514,7 @@ object Core {
       * How many ms should elapse before checking if the browser size has changed?
       */
     /* CompleteClass */
-    override val resizeInterval: integer = js.native
-    
-    /**
-      * The canvas device pixel resolution. Currently un-used.
-      */
-    /* CompleteClass */
-    override val resolution: Double = js.native
+    override val resizeInterval: Double = js.native
     
     /**
       * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
@@ -511,16 +547,22 @@ object Core {
     override val transparent: Boolean = js.native
     
     /**
+      * A base64 encoded PNG that will be used as the default texture when a texture is assigned that is white or not loaded.
+      */
+    /* CompleteClass */
+    override val whiteImage: String = js.native
+    
+    /**
       * The width of the underlying canvas, in pixels.
       */
     /* CompleteClass */
-    override val width: integer | String = js.native
+    override val width: Double | String = js.native
     
     /**
       * The zoom factor, as used by the Scale Manager.
       */
     /* CompleteClass */
-    override val zoom: ZoomType | integer = js.native
+    override val zoom: ZoomType | Double = js.native
   }
   
   /**
@@ -550,7 +592,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.BLUR")
     @js.native
-    val BLUR: js.Any = js.native
+    val BLUR: Any = js.native
     
     /**
       * The Game Boot Event.
@@ -560,7 +602,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.BOOT")
     @js.native
-    val BOOT: js.Any = js.native
+    val BOOT: Any = js.native
     
     /**
       * The Game Context Lost Event.
@@ -571,7 +613,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.CONTEXT_LOST")
     @js.native
-    val CONTEXT_LOST: js.Any = js.native
+    val CONTEXT_LOST: Any = js.native
     
     /**
       * The Game Context Restored Event.
@@ -582,7 +624,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.CONTEXT_RESTORED")
     @js.native
-    val CONTEXT_RESTORED: js.Any = js.native
+    val CONTEXT_RESTORED: Any = js.native
     
     /**
       * The Game Destroy Event.
@@ -593,7 +635,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.DESTROY")
     @js.native
-    val DESTROY: js.Any = js.native
+    val DESTROY: Any = js.native
     
     /**
       * The Game Focus Event.
@@ -603,7 +645,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.FOCUS")
     @js.native
-    val FOCUS: js.Any = js.native
+    val FOCUS: Any = js.native
     
     /**
       * The Game Hidden Event.
@@ -617,7 +659,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.HIDDEN")
     @js.native
-    val HIDDEN: js.Any = js.native
+    val HIDDEN: Any = js.native
     
     /**
       * The Game Pause Event.
@@ -626,7 +668,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PAUSE")
     @js.native
-    val PAUSE: js.Any = js.native
+    val PAUSE: Any = js.native
     
     /**
       * The Game Post-Render Event.
@@ -638,7 +680,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.POST_RENDER")
     @js.native
-    val POST_RENDER: js.Any = js.native
+    val POST_RENDER: Any = js.native
     
     /**
       * The Game Post-Step Event.
@@ -648,7 +690,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.POST_STEP")
     @js.native
-    val POST_STEP: js.Any = js.native
+    val POST_STEP: Any = js.native
     
     /**
       * The Game Pre-Render Event.
@@ -659,7 +701,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PRE_RENDER")
     @js.native
-    val PRE_RENDER: js.Any = js.native
+    val PRE_RENDER: Any = js.native
     
     /**
       * The Game Pre-Step Event.
@@ -669,7 +711,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PRE_STEP")
     @js.native
-    val PRE_STEP: js.Any = js.native
+    val PRE_STEP: Any = js.native
     
     /**
       * The Game Ready Event.
@@ -679,7 +721,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.READY")
     @js.native
-    val READY: js.Any = js.native
+    val READY: Any = js.native
     
     /**
       * The Game Resume Event.
@@ -688,7 +730,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.RESUME")
     @js.native
-    val RESUME: js.Any = js.native
+    val RESUME: Any = js.native
     
     /**
       * The Game Step Event.
@@ -698,7 +740,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.STEP")
     @js.native
-    val STEP: js.Any = js.native
+    val STEP: Any = js.native
     
     /**
       * The Game Visible Event.
@@ -710,7 +752,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.VISIBLE")
     @js.native
-    val VISIBLE: js.Any = js.native
+    val VISIBLE: Any = js.native
   }
   
   /**
@@ -729,7 +771,7 @@ object Core {
     */
   @JSGlobal("Phaser.Core.TimeStep")
   @js.native
-  class TimeStep protected ()
+  open class TimeStep protected ()
     extends StObject
        with typings.phaser.Phaser.Core.TimeStep {
     /**

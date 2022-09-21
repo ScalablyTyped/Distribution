@@ -11,14 +11,11 @@ JavaScript Performance Monitor
 | Full name          | stats.js |
 | Keywords           | performance, fps, stats |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 1029229 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 412086.6666666667 |
+| # stars            | 7754.0 |
 
 ## Links
-- [Homepage](https://github.com/mrdoob/stats.js)
-- [Bugs](https://github.com/mrdoob/stats.js/issues)
-- [Repository](https://github.com/mrdoob/stats.js)
 - [Npm](https://www.npmjs.com/package/stats.js)
     
 

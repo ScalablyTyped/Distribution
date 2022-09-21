@@ -13,13 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Env = js.Function3[/* schema */ js.Object, /* data */ js.Any, /* errors */ Errors, js.Array[Issue]]
+  type Env = js.Function3[/* schema */ js.Object, /* data */ Any, /* errors */ Errors, js.Array[Issue]]
   
   trait Issue extends StObject {
     
     var code: String
     
-    var data: js.Any
+    var data: Any
     
     var message: String
     
@@ -27,7 +27,7 @@ object mod {
   }
   object Issue {
     
-    inline def apply(code: String, data: js.Any, message: String, path: String): Issue = {
+    inline def apply(code: String, data: Any, message: String, path: String): Issue = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Issue]
     }
@@ -36,7 +36,7 @@ object mod {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

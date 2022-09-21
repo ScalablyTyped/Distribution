@@ -42,6 +42,6 @@ object ContextEntry {
     
     inline def setContextKeyValuesUndefined: Self = StObject.set(x, "ContextKeyValues", js.undefined)
     
-    inline def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = StObject.set(x, "ContextKeyValues", js.Array(value :_*))
+    inline def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = StObject.set(x, "ContextKeyValues", js.Array(value*))
   }
 }

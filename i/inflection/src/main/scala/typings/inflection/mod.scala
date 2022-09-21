@@ -67,6 +67,8 @@ object mod extends Shortcut {
     
     def underscore(str: String): String = js.native
     def underscore(str: String, all_upper_case: Boolean): String = js.native
+    
+    var version: String = js.native
   }
   
   type _To = Inflection

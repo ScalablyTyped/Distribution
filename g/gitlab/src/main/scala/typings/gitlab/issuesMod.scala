@@ -1,12 +1,12 @@
 package typings.gitlab
 
-import typings.gitlab.anon.GroupId
-import typings.gitlab.anon.ProjectId
+import typings.gitlab.anon.PaginatedRequestOptions
+import typings.gitlab.anon.groupIdstringnumberundefi
+import typings.gitlab.anon.projectIdstringnumberunde
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
-import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object issuesMod {
   
   @JSImport("gitlab/dist/types/core/services/Issues", "Issues")
   @js.native
-  class Issues () extends BaseService {
+  open class Issues () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def addSpentTime(projectId: String, issueId: Double, duration: String): js.Promise[js.Object] = js.native
@@ -30,7 +30,9 @@ object issuesMod {
     def addTimeEstimate(projectId: Double, issueId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(
+      hasProjectIdGroupIdOptions: projectIdstringnumberunde | groupIdstringnumberundefi | PaginatedRequestOptions
+    ): js.Promise[GetResponse] = js.native
     
     def create(projectId: String): js.Promise[js.Object] = js.native
     def create(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

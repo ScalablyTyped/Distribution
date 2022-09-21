@@ -13,17 +13,16 @@ object mockMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-trigger/es/mock", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TriggerProps, js.Any, js.Any] {
+  open class default protected () extends Component[TriggerProps, Any, Any] {
     def this(props: TriggerProps) = this()
-    def this(props: TriggerProps, context: js.Any) = this()
+    def this(props: TriggerProps, context: Any) = this()
   }
   @JSImport("rc-trigger/es/mock", JSImport.Default)
   @js.native
-  val default: ComponentClass[TriggerProps, js.Any] = js.native
+  val default: ComponentClass[TriggerProps, Any] = js.native
   
-  type _To = ComponentClass[TriggerProps, js.Any]
+  type _To = ComponentClass[TriggerProps, Any]
   
   /* This means you don't have to write `default`, but can instead just say `mockMod.foo` */
-  override def _to: ComponentClass[TriggerProps, js.Any] = default
+  override def _to: ComponentClass[TriggerProps, Any] = default
 }

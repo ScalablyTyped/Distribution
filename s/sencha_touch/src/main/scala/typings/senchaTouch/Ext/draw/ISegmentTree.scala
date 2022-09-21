@@ -20,7 +20,7 @@ trait ISegmentTree
       /* min */ js.UndefOr[Double], 
       /* max */ js.UndefOr[Double], 
       /* estStep */ js.UndefOr[Double], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -62,7 +62,7 @@ object ISegmentTree {
   extension [Self <: ISegmentTree](x: Self) {
     
     inline def setGetAggregation(
-      value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => js.Any
+      value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => Any
     ): Self = StObject.set(x, "getAggregation", js.Any.fromFunction3(value))
     
     inline def setGetAggregationUndefined: Self = StObject.set(x, "getAggregation", js.undefined)

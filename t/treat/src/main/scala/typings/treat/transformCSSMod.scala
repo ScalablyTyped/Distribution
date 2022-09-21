@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transformCSSMod {
   
-  @JSImport("treat/lib/types/transformCSS", JSImport.Namespace)
+  @JSImport("treat/dist/declarations/src/transformCSS", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(styles: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default(styles: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("treat/lib/types/transformCSS", "simplePseudos")
+  @JSImport("treat/dist/declarations/src/transformCSS", "simplePseudos")
   @js.native
-  val simplePseudos: js.Array[js.Any] = js.native
+  val simplePseudos: js.Array[Any] = js.native
   
-  type SimplePseudos_ = js.Array[js.Any]
+  type SimplePseudos_ = js.Array[Any]
 }

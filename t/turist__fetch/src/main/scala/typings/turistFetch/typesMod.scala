@@ -27,14 +27,14 @@ object typesMod {
     var agent_FetchOptions: js.UndefOr[Agent] = js.undefined
     
     @JSName("body")
-    var body_FetchOptions: js.UndefOr[js.Any] = js.undefined
+    var body_FetchOptions: js.UndefOr[Any] = js.undefined
     
     var onRedirect: js.UndefOr[js.Function2[/* res */ Response, /* redirectOpts */ this.type, Unit]] = js.undefined
     
     var onRetry: js.UndefOr[js.Function2[/* error */ default, /* opts */ this.type, Unit]] = js.undefined
     
     var retry: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ Any
       ] = js.undefined
   }
   object FetchOptions {
@@ -50,7 +50,7 @@ object typesMod {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -63,7 +63,7 @@ object typesMod {
       inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
       inline def setRetry(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ Any
       ): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)

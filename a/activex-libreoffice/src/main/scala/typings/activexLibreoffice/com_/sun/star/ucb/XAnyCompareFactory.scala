@@ -23,7 +23,7 @@ object XAnyCompareFactory {
   inline def apply(
     acquire: () => Unit,
     createAnyCompareByName: String => XAnyCompare,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAnyCompareFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAnyCompareByName = js.Any.fromFunction1(createAnyCompareByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

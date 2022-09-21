@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteClientCertificateRequest extends StObject {
   
   /**
-    * [Required] The identifier of the ClientCertificate resource to be deleted.
+    * The identifier of the ClientCertificate resource to be deleted.
     */
   var clientCertificateId: String
 }

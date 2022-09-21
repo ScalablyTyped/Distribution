@@ -8,7 +8,7 @@ object ringBufferMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/util/ring_buffer", "RingBuffer")
   @js.native
-  class RingBuffer[T] protected () extends StObject {
+  open class RingBuffer[T] protected () extends StObject {
     /**
       * Constructs a `RingBuffer`.
       * @param capacity The number of items that the buffer can accomodate.

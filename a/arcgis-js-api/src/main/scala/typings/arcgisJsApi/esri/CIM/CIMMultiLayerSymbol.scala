@@ -42,13 +42,13 @@ object CIMMultiLayerSymbol {
     
     inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
     
-    inline def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setSymbolLayers(value: js.Array[CIMSymbolLayerType]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     
     inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
-    inline def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
+    inline def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
     
     inline def setThumbnailURI(value: String): Self = StObject.set(x, "thumbnailURI", value.asInstanceOf[js.Any])
     

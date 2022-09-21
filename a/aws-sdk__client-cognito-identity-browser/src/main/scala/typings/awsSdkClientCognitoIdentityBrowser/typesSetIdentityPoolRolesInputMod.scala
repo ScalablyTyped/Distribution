@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCognitoIdentityBrowser.typesRoleMappingMod.RoleMapping
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object typesSetIdentityPoolRolesInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -45,16 +44,16 @@ object typesSetIdentityPoolRolesInputMod {
     /**
       * <p>How users for a specific identity provider are to mapped to roles. This is a string to <a>RoleMapping</a> object map. The string identifies the identity provider, for example, "graph.facebook.com" or "cognito-idp-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p> <p>Up to 25 rules can be specified per identity provider.</p>
       */
-    var RoleMappings: js.UndefOr[StringDictionary[RoleMapping] | (Iterable[js.Tuple2[String, RoleMapping]])] = js.undefined
+    var RoleMappings: js.UndefOr[StringDictionary[RoleMapping] | (js.Iterable[js.Tuple2[String, RoleMapping]])] = js.undefined
     
     /**
       * <p>The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.</p>
       */
-    var Roles: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])
+    var Roles: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])
   }
   object SetIdentityPoolRolesInput {
     
-    inline def apply(IdentityPoolId: String, Roles: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): SetIdentityPoolRolesInput = {
+    inline def apply(IdentityPoolId: String, Roles: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): SetIdentityPoolRolesInput = {
       val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetIdentityPoolRolesInput]
     }
@@ -66,7 +65,7 @@ object typesSetIdentityPoolRolesInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -77,11 +76,11 @@ object typesSetIdentityPoolRolesInputMod {
       
       inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
       
-      inline def setRoleMappings(value: StringDictionary[RoleMapping] | (Iterable[js.Tuple2[String, RoleMapping]])): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
+      inline def setRoleMappings(value: StringDictionary[RoleMapping] | (js.Iterable[js.Tuple2[String, RoleMapping]])): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
       
       inline def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
       
-      inline def setRoles(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     }
   }
 }

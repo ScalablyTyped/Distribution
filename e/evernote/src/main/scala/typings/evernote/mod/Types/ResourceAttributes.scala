@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.ResourceAttributes")
 @js.native
-class ResourceAttributes () extends StObject {
+open class ResourceAttributes () extends StObject {
   def this(args: ApplicationData) = this()
   
   var altitude: js.UndefOr[Double] = js.native

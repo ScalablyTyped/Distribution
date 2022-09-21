@@ -21,6 +21,6 @@ object CellRichTextValue {
     
     inline def setRichText(value: js.Array[RichText]): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
     
-    inline def setRichTextVarargs(value: RichText*): Self = StObject.set(x, "richText", js.Array(value :_*))
+    inline def setRichTextVarargs(value: RichText*): Self = StObject.set(x, "richText", js.Array(value*))
   }
 }

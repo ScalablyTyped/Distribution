@@ -14,40 +14,40 @@ object decoratorsMod {
   val ^ : js.Any = js.native
   
   inline def makePropertyInjectDecorator(container: Container, doCache: Boolean): js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ]]
   
   inline def makePropertyInjectNamedDecorator(container: Container, doCache: Boolean): js.Function2[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
     /* named */ String, 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectNamedDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
     /* named */ String, 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ]]
   
   inline def makePropertyInjectTaggedDecorator(container: Container, doCache: Boolean): js.Function3[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
     /* key */ String, 
-    /* value */ js.Any, 
-    js.Function2[/* proto */ js.Any, /* propertyName */ String, Unit]
+    /* value */ Any, 
+    js.Function2[/* proto */ Any, /* propertyName */ String, Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectTaggedDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
     /* key */ String, 
-    /* value */ js.Any, 
-    js.Function2[/* proto */ js.Any, /* propertyName */ String, Unit]
+    /* value */ Any, 
+    js.Function2[/* proto */ Any, /* propertyName */ String, Unit]
   ]]
   
   inline def makePropertyMultiInjectDecorator(container: Container, doCache: Boolean): js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyMultiInjectDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
-    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+    /* serviceIdentifier */ String | js.Symbol | Newable[Any] | Abstract[Any], 
+    js.Function2[/* proto */ Any, /* key */ String, Unit]
   ]]
 }

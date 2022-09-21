@@ -31,7 +31,7 @@ object SketchMSAttributedString {
     
     inline def setAttributes(value: js.Array[SketchMSStringAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: SketchMSStringAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: SketchMSStringAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     

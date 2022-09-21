@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Motion")
 @js.native
-class Motion protected () extends StObject {
+open class Motion protected () extends StObject {
   def this(option: Double) = this()
   def this(option: MotionOption) = this()
   
@@ -18,7 +18,7 @@ class Motion protected () extends StObject {
   @JSName("on")
   def on_calibrated(event: calibrated, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+  def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
   @JSName("on")
   def on_motionend(event: motionend, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")

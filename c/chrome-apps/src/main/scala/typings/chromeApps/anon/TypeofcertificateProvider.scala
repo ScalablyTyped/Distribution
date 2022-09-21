@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.certificateProvider.RequestPinDetails
 import typings.chromeApps.chrome.certificateProvider.SignRequest
 import typings.chromeApps.chrome.certificateProvider.StopRequestPinDetails
 import typings.chromeApps.chrome.events.Event
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,8 +32,8 @@ trait TypeofcertificateProvider extends StObject {
   val onCertificatesRequested: Event[
     js.Function2[
       /* certificates */ js.Array[CertificateInfo], 
-      /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-      js.Any
+      /* callback */ js.Function1[/* rejectedCertificates */ js.Array[js.typedarray.ArrayBuffer], Unit], 
+      Any
     ]
   ]
   
@@ -51,8 +50,8 @@ trait TypeofcertificateProvider extends StObject {
   val onSignDigestRequested: Event[
     js.Function2[
       /* signRequest */ SignRequest, 
-      /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-      js.Any
+      /* signCallback */ js.Function1[/* signature */ js.UndefOr[js.typedarray.ArrayBuffer], Unit], 
+      Any
     ]
   ]
   
@@ -87,15 +86,15 @@ object TypeofcertificateProvider {
     onCertificatesRequested: Event[
       js.Function2[
         /* certificates */ js.Array[CertificateInfo], 
-        /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-        js.Any
+        /* callback */ js.Function1[/* rejectedCertificates */ js.Array[js.typedarray.ArrayBuffer], Unit], 
+        Any
       ]
     ],
     onSignDigestRequested: Event[
       js.Function2[
         /* signRequest */ SignRequest, 
-        /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-        js.Any
+        /* signCallback */ js.Function1[/* signature */ js.UndefOr[js.typedarray.ArrayBuffer], Unit], 
+        Any
       ]
     ],
     requestPin: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit,
@@ -111,8 +110,8 @@ object TypeofcertificateProvider {
       value: Event[
           js.Function2[
             /* certificates */ js.Array[CertificateInfo], 
-            /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-            js.Any
+            /* callback */ js.Function1[/* rejectedCertificates */ js.Array[js.typedarray.ArrayBuffer], Unit], 
+            Any
           ]
         ]
     ): Self = StObject.set(x, "onCertificatesRequested", value.asInstanceOf[js.Any])
@@ -121,8 +120,8 @@ object TypeofcertificateProvider {
       value: Event[
           js.Function2[
             /* signRequest */ SignRequest, 
-            /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-            js.Any
+            /* signCallback */ js.Function1[/* signature */ js.UndefOr[js.typedarray.ArrayBuffer], Unit], 
+            Any
           ]
         ]
     ): Self = StObject.set(x, "onSignDigestRequested", value.asInstanceOf[js.Any])

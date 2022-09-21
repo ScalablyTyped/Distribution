@@ -1,40 +1,71 @@
 package typings.nivoScatterplot
 
-import typings.nivoScatterplot.mod.CustomLayerId
+import typings.nivoScatterplot.typesMod.ScatterPlotLayerId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoScatterplotStrings {
-  @js.native
-  sealed trait axes extends CustomLayerId
   
   @js.native
-  sealed trait grid extends CustomLayerId
+  sealed trait annotations
+    extends StObject
+       with ScatterPlotLayerId
+  inline def annotations: annotations = "annotations".asInstanceOf[annotations]
   
   @js.native
-  sealed trait legends extends CustomLayerId
+  sealed trait axes
+    extends StObject
+       with ScatterPlotLayerId
+  inline def axes: axes = "axes".asInstanceOf[axes]
   
   @js.native
-  sealed trait markers extends CustomLayerId
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait mesh extends CustomLayerId
+  sealed trait grid
+    extends StObject
+       with ScatterPlotLayerId
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait nodes extends CustomLayerId
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
-  @scala.inline
-  def axes: axes = "axes".asInstanceOf[axes]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def legends: legends = "legends".asInstanceOf[legends]
-  @scala.inline
-  def markers: markers = "markers".asInstanceOf[markers]
-  @scala.inline
-  def mesh: mesh = "mesh".asInstanceOf[mesh]
-  @scala.inline
-  def nodes: nodes = "nodes".asInstanceOf[nodes]
+  @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
+  
+  @js.native
+  sealed trait legends
+    extends StObject
+       with ScatterPlotLayerId
+  inline def legends: legends = "legends".asInstanceOf[legends]
+  
+  @js.native
+  sealed trait markers
+    extends StObject
+       with ScatterPlotLayerId
+  inline def markers: markers = "markers".asInstanceOf[markers]
+  
+  @js.native
+  sealed trait mesh
+    extends StObject
+       with ScatterPlotLayerId
+  inline def mesh: mesh = "mesh".asInstanceOf[mesh]
+  
+  @js.native
+  sealed trait nodes
+    extends StObject
+       with ScatterPlotLayerId
+  inline def nodes: nodes = "nodes".asInstanceOf[nodes]
+  
+  @js.native
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
+  
+  @js.native
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
 }
-

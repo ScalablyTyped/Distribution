@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -46,14 +45,14 @@ abstract class HttpResponseHeaderCollection ()
   
   /** Gets or sets the DateTime object that represents the value of a Date HTTP header on an HTTP response. */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /**
     * Retrieves an iterator to the first item in the HttpResponseHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpResponseHeaderCollection .
     */
   /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Returns an immutable view of the HttpResponseHeaderCollection .

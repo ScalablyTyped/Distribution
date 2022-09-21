@@ -2,8 +2,13 @@ package typings.phaser.global.Phaser
 
 import typings.phaser.CenterFunction
 import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Math.Vector3
+import typings.phaser.Phaser.Math.Vector4
+import typings.phaser.Phaser.Types.Geom.Mesh.GenerateGridConfig
+import typings.phaser.Phaser.Types.Geom.Mesh.GenerateGridVertsResult
+import typings.phaser.Phaser.Types.Geom.Mesh.GenerateVertsResult
+import typings.phaser.Phaser.Types.Geom.Mesh.OBJData
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +24,9 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.CIRCLE")
   @js.native
-  def CIRCLE_ : integer = js.native
+  def CIRCLE_ : Double = js.native
   
-  inline def CIRCLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
+  inline def CIRCLE__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
   
   /**
     * A Circle object.
@@ -38,7 +43,7 @@ object Geom {
     * @param y The y position of the center of the circle. Default 0.
     * @param radius The radius of the circle. Default 0.
     */
-  class Circle ()
+  open class Circle ()
     extends StObject
        with typings.phaser.Phaser.Geom.Circle {
     def this(x: Double) = this()
@@ -162,20 +167,15 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: Double, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     inline def GetPoints(
       circle: typings.phaser.Phaser.Geom.Circle,
-      quantity: integer,
+      quantity: Double,
       stepRate: Double,
-      output: js.Array[js.Any]
+      output: js.Array[Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    inline def GetPoints(
-      circle: typings.phaser.Phaser.Geom.Circle,
-      quantity: integer,
-      stepRate: Unit,
-      output: js.Array[js.Any]
-    ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: Double, stepRate: Unit, output: js.Array[Any]): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     
     /**
       * Offsets the Circle by the values given.
@@ -210,9 +210,9 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.ELLIPSE")
   @js.native
-  def ELLIPSE_ : integer = js.native
+  def ELLIPSE_ : Double = js.native
   
-  inline def ELLIPSE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELLIPSE")(x.asInstanceOf[js.Any])
+  inline def ELLIPSE__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELLIPSE")(x.asInstanceOf[js.Any])
   
   /**
     * An Ellipse object.
@@ -230,7 +230,7 @@ object Geom {
     * @param width The width of the ellipse. Default 0.
     * @param height The height of the ellipse. Default 0.
     */
-  class Ellipse ()
+  open class Ellipse ()
     extends StObject
        with typings.phaser.Phaser.Geom.Ellipse {
     def this(x: Double) = this()
@@ -361,10 +361,10 @@ object Geom {
       * @param out An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: Double, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: Double, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: Double, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Offsets the Ellipse by the values given.
@@ -420,12 +420,12 @@ object Geom {
       * @param circleB The second Circle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetCircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetCircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetCircleToCircle(
       circleA: typings.phaser.Phaser.Geom.Circle,
       circleB: typings.phaser.Phaser.Geom.Circle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks for intersection between a circle and a rectangle,
@@ -434,12 +434,12 @@ object Geom {
       * @param rect The rectangle to be checked.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetCircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetCircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetCircleToRectangle(
       circle: typings.phaser.Phaser.Geom.Circle,
       rect: typings.phaser.Phaser.Geom.Rectangle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks for intersection between the line segment and circle,
@@ -448,15 +448,75 @@ object Geom {
       * @param circle The circle to check against the line.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetLineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetLineToCircle(
       line: typings.phaser.Phaser.Geom.Line,
       circle: typings.phaser.Phaser.Geom.Circle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
-    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    /**
+      * Checks for intersection between the two line segments and returns the intersection point as a Vector3,
+      * or `null` if the lines are parallel, or do not intersect.
+      * 
+      * The `z` property of the Vector3 contains the intersection distance, which can be used to find
+      * the closest intersecting point from a group of line segments.
+      * @param line1 The first line segment to check.
+      * @param line2 The second line segment to check.
+      * @param out A Vector3 to store the intersection results in.
+      */
+    inline def GetLineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line, out: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
+      * Checks for the closest point of intersection between a line segment and an array of points, where each pair
+      * of points are converted to line segments for the intersection tests.
+      * 
+      * If no intersection is found, this function returns `null`.
+      * 
+      * If intersection was found, a Vector3 is returned with the following properties:
+      * 
+      * The `x` and `y` components contain the point of the intersection.
+      * The `z` component contains the closest distance.
+      * @param line The line segment to check.
+      * @param points An array of points to check.
+      * @param out A Vector3 to store the intersection results in.
+      */
+    inline def GetLineToPoints(
+      line: typings.phaser.Phaser.Geom.Line,
+      points: js.Array[typings.phaser.Phaser.Geom.Point | Vector2]
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToPoints(
+      line: typings.phaser.Phaser.Geom.Line,
+      points: js.Array[typings.phaser.Phaser.Geom.Point | Vector2],
+      out: Vector3
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: js.Array[typings.phaser.Phaser.Geom.Polygon]): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: js.Array[typings.phaser.Phaser.Geom.Polygon],
+      out: Vector4
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    /**
+      * Checks for the closest point of intersection between a line segment and an array of polygons.
+      * 
+      * If no intersection is found, this function returns `null`.
+      * 
+      * If intersection was found, a Vector4 is returned with the following properties:
+      * 
+      * The `x` and `y` components contain the point of the intersection.
+      * The `z` component contains the closest distance.
+      * The `w` component contains the index of the polygon, in the given array, that triggered the intersection.
+      * @param line The line segment to check.
+      * @param polygons A single polygon, or array of polygons, to check.
+      * @param out A Vector4 to store the intersection results in.
+      */
+    inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: typings.phaser.Phaser.Geom.Polygon): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: typings.phaser.Phaser.Geom.Polygon, out: Vector4): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object, out: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     /**
       * Checks for intersection between the Line and a Rectangle shape,
       * and returns the intersection points as a Point object array.
@@ -464,12 +524,31 @@ object Geom {
       * @param rect The Rectangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetLineToRectangle(
       line: typings.phaser.Phaser.Geom.Line,
       rect: typings.phaser.Phaser.Geom.Rectangle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    
+    inline def GetRaysFromPointToPolygon(x: Double, y: Double, polygons: js.Array[typings.phaser.Phaser.Geom.Polygon]): js.Array[Vector4] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRaysFromPointToPolygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector4]]
+    /**
+      * Projects rays out from the given point to each line segment of the polygons.
+      * 
+      * If the rays intersect with the polygons, the points of intersection are returned in an array.
+      * 
+      * If no intersections are found, the returned array will be empty.
+      * 
+      * Each Vector4 intersection result has the following properties:
+      * 
+      * The `x` and `y` components contain the point of the intersection.
+      * The `z` component contains the angle of intersection.
+      * The `w` component contains the index of the polygon, in the given array, that triggered the intersection.
+      * @param x The x coordinate to project the rays from.
+      * @param y The y coordinate to project the rays from.
+      * @param polygons A single polygon, or array of polygons, to check against the rays.
+      */
+    inline def GetRaysFromPointToPolygon(x: Double, y: Double, polygons: typings.phaser.Phaser.Geom.Polygon): js.Array[Vector4] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRaysFromPointToPolygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector4]]
     
     /**
       * Checks if two Rectangle shapes intersect and returns the area of this intersection as Rectangle object.
@@ -496,12 +575,12 @@ object Geom {
       * @param rectB The second Rectangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetRectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetRectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetRectangleToRectangle(
       rectA: typings.phaser.Phaser.Geom.Rectangle,
       rectB: typings.phaser.Phaser.Geom.Rectangle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks for intersection between Rectangle shape and Triangle shape,
@@ -510,12 +589,12 @@ object Geom {
       * @param triangle Triangle object to test.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetRectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetRectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetRectangleToTriangle(
       rect: typings.phaser.Phaser.Geom.Rectangle,
       triangle: typings.phaser.Phaser.Geom.Triangle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks if a Triangle and a Circle intersect, and returns the intersection points as a Point object array.
@@ -525,12 +604,12 @@ object Geom {
       * @param circle The Circle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetTriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetTriangleToCircle(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       circle: typings.phaser.Phaser.Geom.Circle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks if a Triangle and a Line intersect, and returns the intersection points as a Point object array.
@@ -540,12 +619,12 @@ object Geom {
       * @param line The Line to check with.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetTriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetTriangleToLine(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       line: typings.phaser.Phaser.Geom.Line,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks if two Triangles intersect, and returns the intersection points as a Point object array.
@@ -555,12 +634,12 @@ object Geom {
       * @param triangleB The second Triangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    inline def GetTriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetTriangleToTriangle(
       triangleA: typings.phaser.Phaser.Geom.Triangle,
       triangleB: typings.phaser.Phaser.Geom.Triangle,
-      out: js.Array[js.Any]
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      out: js.Array[Any]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Checks for intersection between the line segment and circle.
@@ -571,7 +650,7 @@ object Geom {
       * @param nearest An optional Point-like object. If given the closest point on the Line where the circle intersects will be stored in this object.
       */
     inline def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle, nearest: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], nearest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle, nearest: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], nearest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def LineToCircle(
       line: typings.phaser.Phaser.Geom.Line,
       circle: typings.phaser.Phaser.Geom.Circle,
@@ -607,8 +686,8 @@ object Geom {
       */
     inline def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line, lineThickness: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any], lineThickness.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLine(point: Any, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLine(point: Any, line: typings.phaser.Phaser.Geom.Line, lineThickness: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any], lineThickness.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Checks if the a Point falls between the two end-points of a Line, based on the given line thickness.
       * 
@@ -707,9 +786,9 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.LINE")
   @js.native
-  def LINE_ : integer = js.native
+  def LINE_ : Double = js.native
   
-  inline def LINE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
+  inline def LINE__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
   
   /**
     * Defines a Line segment, a part of a line between two endpoints.
@@ -723,7 +802,7 @@ object Geom {
     * @param x2 The x coordinate of the lines ending point. Default 0.
     * @param y2 The y coordinate of the lines ending point. Default 0.
     */
-  class Line ()
+  open class Line ()
     extends StObject
        with typings.phaser.Phaser.Geom.Line {
     def this(x1: Double) = this()
@@ -765,9 +844,9 @@ object Geom {
       */
     /* static member */
     inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[Vector2Like] = ^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: Double): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: Double, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
     inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: Unit, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
-    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
-    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
     
     /**
       * Center a line on the given coordinates.
@@ -846,40 +925,40 @@ object Geom {
       * @param easeParams An optional array of ease parameters to go with the ease.
       */
     /* static member */
-    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer, collinearThreshold: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: Double, collinearThreshold: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: String,
-      quantity: integer,
+      quantity: Double,
       collinearThreshold: Double,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: String,
-      quantity: integer,
+      quantity: Double,
       collinearThreshold: Unit,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
-      quantity: integer,
+      quantity: Double,
       collinearThreshold: Double
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
-      quantity: integer,
+      quantity: Double,
       collinearThreshold: Double,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
-      quantity: integer,
+      quantity: Double,
       collinearThreshold: Unit,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
@@ -939,10 +1018,10 @@ object Geom {
       * @param out An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
     /* static member */
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
@@ -1078,23 +1157,553 @@ object Geom {
     inline def Width(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Width")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
+  object Mesh {
+    
+    @JSGlobal("Phaser.Geom.Mesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A Face Geometry Object.
+      * 
+      * A Face is used by the Mesh Game Object. A Mesh consists of one, or more, faces that are
+      * used to render the Mesh Game Objects in WebGL.
+      * 
+      * A Face consists of 3 Vertex instances, for the 3 corners of the face and methods to help
+      * you modify and test them.
+      */
+    @JSGlobal("Phaser.Geom.Mesh.Face")
+    @js.native
+    open class Face protected ()
+      extends StObject
+         with typings.phaser.Phaser.Geom.Mesh.Face {
+      /**
+        * 
+        * @param vertex1 The first vertex of the Face.
+        * @param vertex2 The second vertex of the Face.
+        * @param vertex3 The third vertex of the Face.
+        */
+      def this(
+        vertex1: typings.phaser.Phaser.Geom.Mesh.Vertex,
+        vertex2: typings.phaser.Phaser.Geom.Mesh.Vertex,
+        vertex3: typings.phaser.Phaser.Geom.Mesh.Vertex
+      ) = this()
+    }
+    
+    /**
+      * Creates a grid of vertices based on the given configuration object and optionally adds it to a Mesh.
+      * 
+      * The size of the grid is given in pixels. An example configuration may be:
+      * 
+      * `{ width: 256, height: 256, widthSegments: 2, heightSegments: 2, tile: true }`
+      * 
+      * This will create a grid 256 x 256 pixels in size, split into 2 x 2 segments, with
+      * the texture tiling across the cells.
+      * 
+      * You can split the grid into segments both vertically and horizontally. This will
+      * generate two faces per grid segment as a result.
+      * 
+      * The `tile` parameter allows you to control if the tile will repeat across the grid
+      * segments, or be displayed in full.
+      * 
+      * If adding this grid to a Mesh you can offset the grid via the `x` and `y` properties.
+      * 
+      * UV coordinates are generated based on the given texture and frame in the config. For
+      * example, no frame is given, the UVs will be in the range 0 to 1. If a frame is given,
+      * such as from a texture atlas, the UVs will be generated within the range of that frame.
+      * @param config A Grid configuration object.
+      */
+    inline def GenerateGridVerts(config: GenerateGridConfig): GenerateGridVertsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateGridVerts")(config.asInstanceOf[js.Any]).asInstanceOf[GenerateGridVertsResult]
+    
+    /**
+      * This method will return an object containing Face and Vertex instances, generated
+      * from the parsed triangulated OBJ Model data given to this function.
+      * 
+      * The obj data should have been parsed in advance via the ParseObj function:
+      * 
+      * ```javascript
+      * var data = Phaser.Geom.Mesh.ParseObj(rawData, flipUV);
+      * 
+      * var results = GenerateObjVerts(data);
+      * ```
+      * 
+      * Alternatively, you can parse obj files loaded via the OBJFile loader:
+      * 
+      * ```javascript
+      * preload ()
+      * {
+      *   this.load.obj('alien', 'assets/3d/alien.obj);
+      * }
+      * 
+      * var results = GenerateObjVerts(this.cache.obj.get('alien));
+      * ```
+      * 
+      * Make sure your 3D package has triangulated the model data prior to exporting it.
+      * 
+      * You can use the data returned by this function to populate the vertices of a Mesh Game Object.
+      * 
+      * You may add multiple models to a single Mesh, although they will act as one when
+      * moved or rotated. You can scale the model data, should it be too small (or large) to visualize.
+      * You can also offset the model via the `x`, `y` and `z` parameters.
+      * @param data The parsed OBJ model data.
+      * @param mesh An optional Mesh Game Object. If given, the generated Faces will be automatically added to this Mesh. Set to `null` to skip.
+      * @param scale An amount to scale the model data by. Use this if the model has exported too small, or large, to see. Default 1.
+      * @param x Translate the model x position by this amount. Default 0.
+      * @param y Translate the model y position by this amount. Default 0.
+      * @param z Translate the model z position by this amount. Default 0.
+      * @param rotateX Rotate the model on the x axis by this amount, in radians. Default 0.
+      * @param rotateY Rotate the model on the y axis by this amount, in radians. Default 0.
+      * @param rotateZ Rotate the model on the z axis by this amount, in radians. Default 0.
+      * @param zIsUp Is the z axis up (true), or is y axis up (false)? Default true.
+      */
+    inline def GenerateObjVerts(
+      data: OBJData,
+      mesh: js.UndefOr[typings.phaser.Phaser.GameObjects.Mesh],
+      scale: js.UndefOr[Double],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double],
+      z: js.UndefOr[Double],
+      rotateX: js.UndefOr[Double],
+      rotateY: js.UndefOr[Double],
+      rotateZ: js.UndefOr[Double],
+      zIsUp: js.UndefOr[Boolean]
+    ): GenerateVertsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateObjVerts")(data.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], rotateX.asInstanceOf[js.Any], rotateY.asInstanceOf[js.Any], rotateZ.asInstanceOf[js.Any], zIsUp.asInstanceOf[js.Any])).asInstanceOf[GenerateVertsResult]
+    
+    /**
+      * Generates a set of Face and Vertex objects by parsing the given data.
+      * 
+      * This method will take vertex data in one of two formats, based on the `containsZ` parameter.
+      * 
+      * If your vertex data are `x`, `y` pairs, then `containsZ` should be `false` (this is the default)
+      * 
+      * If your vertex data is groups of `x`, `y` and `z` values, then the `containsZ` parameter must be true.
+      * 
+      * The `uvs` parameter is a numeric array consisting of `u` and `v` pairs.
+      * 
+      * The `normals` parameter is a numeric array consisting of `x`, `y` vertex normal values and, if `containsZ` is true, `z` values as well.
+      * 
+      * The `indicies` parameter is an optional array that, if given, is an indexed list of vertices to be added.
+      * 
+      * The `colors` parameter is an optional array, or single value, that if given sets the color of each vertex created.
+      * 
+      * The `alphas` parameter is an optional array, or single value, that if given sets the alpha of each vertex created.
+      * 
+      * When providing indexed data it is assumed that _all_ of the arrays are indexed, not just the vertices.
+      * 
+      * The following example will create a 256 x 256 sized quad using an index array:
+      * 
+      * ```javascript
+      * const vertices = [
+      *   -128, 128,
+      *   128, 128,
+      *   -128, -128,
+      *   128, -128
+      * ];
+      * 
+      * const uvs = [
+      *   0, 1,
+      *   1, 1,
+      *   0, 0,
+      *   1, 0
+      * ];
+      * 
+      * const indices = [ 0, 2, 1, 2, 3, 1 ];
+      * 
+      * GenerateVerts(vertices, uvs, indicies);
+      * ```
+      * 
+      * If the data is not indexed, it's assumed that the arrays all contain sequential data.
+      * @param vertices The vertices array. Either `xy` pairs, or `xyz` if the `containsZ` parameter is `true`.
+      * @param uvs The UVs pairs array.
+      * @param indicies Optional vertex indicies array. If you don't have one, pass `null` or an empty array.
+      * @param containsZ Does the vertices data include a `z` component? Default false.
+      * @param normals Optional vertex normals array. If you don't have one, pass `null` or an empty array.
+      * @param colors An array of colors, one per vertex, or a single color value applied to all vertices. Default 0xffffff.
+      * @param alphas An array of alpha values, one per vertex, or a single alpha value applied to all vertices. Default 1.
+      */
+    inline def GenerateVerts(
+      vertices: js.Array[Double],
+      uvs: js.Array[Double],
+      indicies: js.UndefOr[js.Array[Double]],
+      containsZ: js.UndefOr[Boolean],
+      normals: js.UndefOr[js.Array[Double]],
+      colors: js.UndefOr[Double | js.Array[Double]],
+      alphas: js.UndefOr[Double | js.Array[Double]]
+    ): GenerateVertsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateVerts")(vertices.asInstanceOf[js.Any], uvs.asInstanceOf[js.Any], indicies.asInstanceOf[js.Any], containsZ.asInstanceOf[js.Any], normals.asInstanceOf[js.Any], colors.asInstanceOf[js.Any], alphas.asInstanceOf[js.Any])).asInstanceOf[GenerateVertsResult]
+    
+    /**
+      * Parses a Wavefront OBJ File, extracting the models from it and returning them in an array.
+      * 
+      * The model data *must* be triangulated for a Mesh Game Object to be able to render it.
+      * @param data The OBJ File data as a raw string.
+      * @param flipUV Flip the UV coordinates? Default true.
+      */
+    inline def ParseObj(data: String): OBJData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObj")(data.asInstanceOf[js.Any]).asInstanceOf[OBJData]
+    inline def ParseObj(data: String, flipUV: Boolean): OBJData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObj")(data.asInstanceOf[js.Any], flipUV.asInstanceOf[js.Any])).asInstanceOf[OBJData]
+    
+    /**
+      * Takes a Wavefront Material file and extracts the diffuse reflectivity of the named
+      * materials, converts them to integer color values and returns them.
+      * 
+      * This is used internally by the `addOBJ` and `addModel` methods, but is exposed for
+      * public consumption as well.
+      * 
+      * Note this only works with diffuse values, specified in the `Kd r g b` format, where
+      * `g` and `b` are optional, but `r` is required. It does not support spectral rfl files,
+      * or any other material statement (such as `Ka` or `Ks`)
+      * @param mtl The OBJ MTL file as a raw string, i.e. loaded via `this.load.text`.
+      */
+    inline def ParseObjMaterial(mtl: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObjMaterial")(mtl.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    
+    /**
+      * Rotates the vertices of a Face to the given angle.
+      * 
+      * The actual vertex positions are adjusted, not their transformed positions.
+      * 
+      * Therefore, this updates the vertex data directly.
+      * @param face The Face to rotate.
+      * @param angle The angle to rotate to, in radians.
+      * @param cx An optional center of rotation. If not given, the Face in-center is used.
+      * @param cy An optional center of rotation. If not given, the Face in-center is used.
+      */
+    inline def RotateFace(face: typings.phaser.Phaser.Geom.Mesh.Face, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateFace")(face.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RotateFace(face: typings.phaser.Phaser.Geom.Mesh.Face, angle: Double, cx: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateFace")(face.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], cx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RotateFace(face: typings.phaser.Phaser.Geom.Mesh.Face, angle: Double, cx: Double, cy: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateFace")(face.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RotateFace(face: typings.phaser.Phaser.Geom.Mesh.Face, angle: Double, cx: Unit, cy: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateFace")(face.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * A Vertex Geometry Object.
+      * 
+      * This class consists of all the information required for a single vertex within a Face Geometry Object.
+      * 
+      * Faces, and thus Vertex objects, are used by the Mesh Game Object in order to render objects in WebGL.
+      */
+    @JSGlobal("Phaser.Geom.Mesh.Vertex")
+    @js.native
+    open class Vertex protected ()
+      extends StObject
+         with typings.phaser.Phaser.Geom.Mesh.Vertex {
+      /**
+        * 
+        * @param x The x position of the vertex.
+        * @param y The y position of the vertex.
+        * @param z The z position of the vertex.
+        * @param u The UV u coordinate of the vertex.
+        * @param v The UV v coordinate of the vertex.
+        * @param color The color value of the vertex. Default 0xffffff.
+        * @param alpha The alpha value of the vertex. Default 1.
+        * @param nx The x normal value of the vertex. Default 0.
+        * @param ny The y normal value of the vertex. Default 0.
+        * @param nz The z normal value of the vertex. Default 0.
+        */
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Double, alpha: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Unit, alpha: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Double, alpha: Double, nx: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Double, alpha: Unit, nx: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Unit, alpha: Double, nx: Double) = this()
+      def this(x: Double, y: Double, z: Double, u: Double, v: Double, color: Unit, alpha: Unit, nx: Double) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Double,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Unit,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Double,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Unit,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Double,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Unit,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Double,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Unit,
+        ny: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Double,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Double,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Unit,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Double,
+        nx: Unit,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Double,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Double,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Unit,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Double,
+        alpha: Unit,
+        nx: Unit,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Double,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Double,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Unit,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Double,
+        nx: Unit,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Double,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Double,
+        ny: Unit,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Unit,
+        ny: Double,
+        nz: Double
+      ) = this()
+      def this(
+        x: Double,
+        y: Double,
+        z: Double,
+        u: Double,
+        v: Double,
+        color: Unit,
+        alpha: Unit,
+        nx: Unit,
+        ny: Unit,
+        nz: Double
+      ) = this()
+    }
+  }
+  
   /**
     * A Point Geometry object type.
     */
   @JSGlobal("Phaser.Geom.POINT")
   @js.native
-  def POINT_ : integer = js.native
+  def POINT_ : Double = js.native
   
-  inline def POINT__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT")(x.asInstanceOf[js.Any])
+  inline def POINT__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT")(x.asInstanceOf[js.Any])
   
   /**
     * A Polygon Geometry object type.
     */
   @JSGlobal("Phaser.Geom.POLYGON")
   @js.native
-  def POLYGON_ : integer = js.native
+  def POLYGON_ : Double = js.native
   
-  inline def POLYGON__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLYGON")(x.asInstanceOf[js.Any])
+  inline def POLYGON__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLYGON")(x.asInstanceOf[js.Any])
   
   /**
     * Defines a Point in 2D space, with an x and y component.
@@ -1106,7 +1715,7 @@ object Geom {
     * @param x The x coordinate of this Point. Default 0.
     * @param y The y coordinate of this Point. Default x.
     */
-  class Point ()
+  open class Point ()
     extends StObject
        with typings.phaser.Phaser.Geom.Point {
     def this(x: Double) = this()
@@ -1230,7 +1839,7 @@ object Geom {
     
     /**
       * Calculates the vector projection of `pointA` onto the nonzero `pointB`. This is the
-      * orthogonal projection of `pointA` onto a straight line paralle to `pointB`.
+      * orthogonal projection of `pointA` onto a straight line parallel to `pointB`.
       * @param pointA Point A, to be projected onto Point B.
       * @param pointB Point B, to have Point A projected upon it.
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
@@ -1263,7 +1872,7 @@ object Geom {
     * A Polygon object
     * 
     * The polygon is a closed shape consists of a series of connected straight lines defined by list of ordered points.
-    * Several formats are supported to define the list of points, check the setTo method for details. 
+    * Several formats are supported to define the list of points, check the setTo method for details.
     * This is a geometry object allowing you to define and inspect the shape.
     * It is not a Game Object, in that you cannot add it to the display list, and it has no texture.
     * To render a Polygon you should look at the capabilities of the Graphics class.
@@ -1272,17 +1881,18 @@ object Geom {
   @js.native
   /**
     * 
-    * @param points List of points defining the perimeter of this Polygon. Several formats are supported: 
+    * @param points List of points defining the perimeter of this Polygon. Several formats are supported:
     * - A string containing paired x y values separated by a single space: `'40 0 40 20 100 20 100 80 40 80 40 100 0 50'`
     * - An array of Point objects: `[new Phaser.Point(x1, y1), ...]`
     * - An array of objects with public x y properties: `[obj1, obj2, ...]`
     * - An array of paired numbers that represent point coordinates: `[x1,y1, x2,y2, ...]`
     * - An array of arrays with two elements representing x/y coordinates: `[[x1, y1], [x2, y2], ...]`
     */
-  class Polygon ()
+  open class Polygon ()
     extends StObject
        with typings.phaser.Phaser.Geom.Polygon {
-    def this(points: js.Array[typings.phaser.Phaser.Geom.Point]) = this()
+    def this(points: String) = this()
+    def this(points: js.Array[Double | Vector2Like]) = this()
   }
   object Polygon {
     
@@ -1315,6 +1925,58 @@ object Geom {
     inline def ContainsPoint(polygon: typings.phaser.Phaser.Geom.Polygon, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(polygon.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
+      * This module implements a modified ear slicing algorithm, optimized by z-order curve hashing and extended to
+      * handle holes, twisted polygons, degeneracies and self-intersections in a way that doesn't guarantee correctness
+      * of triangulation, but attempts to always produce acceptable results for practical data.
+      * 
+      * Example:
+      * 
+      * ```javascript
+      * const triangles = Phaser.Geom.Polygon.Earcut([10,0, 0,50, 60,60, 70,10]); // returns [1,0,3, 3,2,1]
+      * ```
+      * 
+      * Each group of three vertex indices in the resulting array forms a triangle.
+      * 
+      * ```javascript
+      * // triangulating a polygon with a hole
+      * earcut([0,0, 100,0, 100,100, 0,100,  20,20, 80,20, 80,80, 20,80], [4]);
+      * // [3,0,4, 5,4,0, 3,4,7, 5,0,1, 2,3,7, 6,5,1, 2,7,6, 6,1,2]
+      * 
+      * // triangulating a polygon with 3d coords
+      * earcut([10,0,1, 0,50,2, 60,60,3, 70,10,4], null, 3);
+      * // [1,0,3, 3,2,1]
+      * ```
+      * 
+      * If you pass a single vertex as a hole, Earcut treats it as a Steiner point.
+      * 
+      * If your input is a multi-dimensional array (e.g. GeoJSON Polygon), you can convert it to the format
+      * expected by Earcut with `Phaser.Geom.Polygon.Earcut.flatten`:
+      * 
+      * ```javascript
+      * var data = earcut.flatten(geojson.geometry.coordinates);
+      * var triangles = earcut(data.vertices, data.holes, data.dimensions);
+      * ```
+      * 
+      * After getting a triangulation, you can verify its correctness with `Phaser.Geom.Polygon.Earcut.deviation`:
+      * 
+      * ```javascript
+      * var deviation = earcut.deviation(vertices, holes, dimensions, triangles);
+      * ```
+      * Returns the relative difference between the total area of triangles and the area of the input polygon.
+      * 0 means the triangulation is fully correct.
+      * 
+      * For more information see https://github.com/mapbox/earcut
+      * @param data A flat array of vertex coordinate, like [x0,y0, x1,y1, x2,y2, ...]
+      * @param holeIndices An array of hole indices if any (e.g. [5, 8] for a 12-vertex input would mean one hole with vertices 5–7 and another with 8–11).
+      * @param dimensions The number of coordinates per vertex in the input array (2 by default). Default 2.
+      */
+    /* static member */
+    inline def Earcut(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("Earcut")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def Earcut(data: js.Array[Double], holeIndices: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("Earcut")(data.asInstanceOf[js.Any], holeIndices.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def Earcut(data: js.Array[Double], holeIndices: js.Array[Double], dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("Earcut")(data.asInstanceOf[js.Any], holeIndices.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def Earcut(data: js.Array[Double], holeIndices: Unit, dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("Earcut")(data.asInstanceOf[js.Any], holeIndices.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    
+    /**
       * Calculates the bounding AABB rectangle of a polygon.
       * @param polygon The polygon that should be calculated.
       * @param out The rectangle or object that has x, y, width, and height properties to store the result. Optional.
@@ -1343,19 +2005,19 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: Double, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     inline def GetPoints(
       polygon: typings.phaser.Phaser.Geom.Polygon,
-      quantity: integer,
+      quantity: Double,
       stepRate: Double,
-      output: js.Array[js.Any]
+      output: js.Array[Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     inline def GetPoints(
       polygon: typings.phaser.Phaser.Geom.Polygon,
-      quantity: integer,
+      quantity: Double,
       stepRate: Unit,
-      output: js.Array[js.Any]
+      output: js.Array[Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     
     /**
@@ -1373,11 +2035,35 @@ object Geom {
     inline def Reverse[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Reverse")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
+      * Takes a Polygon object and simplifies the points by running them through a combination of
+      * Douglas-Peucker and Radial Distance algorithms. Simplification dramatically reduces the number of
+      * points in a polygon while retaining its shape, giving a huge performance boost when processing
+      * it and also reducing visual noise.
+      * @param polygon The polygon to be simplified. The polygon will be modified in-place and returned.
+      * @param tolerance Affects the amount of simplification (in the same metric as the point coordinates). Default 1.
+      * @param highestQuality Excludes distance-based preprocessing step which leads to highest quality simplification but runs ~10-20 times slower. Default false.
+      */
+    /* static member */
+    inline def Simplify[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Simplify")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Simplify[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O, tolerance: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Simplify")(polygon.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Simplify[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O, tolerance: Double, highestQuality: Boolean): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Simplify")(polygon.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], highestQuality.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Simplify[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O, tolerance: Unit, highestQuality: Boolean): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Simplify")(polygon.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], highestQuality.asInstanceOf[js.Any])).asInstanceOf[O]
+    
+    /**
       * Takes a Polygon object and applies Chaikin's smoothing algorithm on its points.
       * @param polygon The polygon to be smoothed. The polygon will be modified in-place and returned.
       */
     /* static member */
     inline def Smooth[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Smooth")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    
+    /**
+      * Tranlates the points of the given Polygon.
+      * @param polygon The Polygon to modify.
+      * @param x The amount to horizontally translate the points by.
+      * @param y The amount to vertically translate the points by.
+      */
+    /* static member */
+    inline def Translate[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(polygon.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
   /**
@@ -1385,9 +2071,9 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.RECTANGLE")
   @js.native
-  def RECTANGLE_ : integer = js.native
+  def RECTANGLE_ : Double = js.native
   
-  inline def RECTANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECTANGLE")(x.asInstanceOf[js.Any])
+  inline def RECTANGLE__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECTANGLE")(x.asInstanceOf[js.Any])
   
   /**
     * Encapsulates a 2D rectangle defined by its corner point in the top-left and its extends in x (width) and y (height)
@@ -1401,7 +2087,7 @@ object Geom {
     * @param width The width of the Rectangle. Default 0.
     * @param height The height of the Rectangle. Default 0.
     */
-  class Rectangle ()
+  open class Rectangle ()
     extends StObject
        with typings.phaser.Phaser.Geom.Rectangle {
     def this(x: Double) = this()
@@ -1503,8 +2189,8 @@ object Geom {
       * @param out If provided, each point will be added to this array.
       */
     /* static member */
-    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle, out: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Compares the `x`, `y`, `width` and `height` properties of two rectangles.
@@ -1558,8 +2244,8 @@ object Geom {
       * @param out Optional Rectangle to adjust.
       */
     /* static member */
-    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
-    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Any], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Create the smallest Rectangle containing two coordinate pairs.
@@ -1611,8 +2297,8 @@ object Geom {
       * @param out An optional array to store the points in.
       */
     /* static member */
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns the size of the Rectangle, expressed as a Point object.
@@ -1662,12 +2348,12 @@ object Geom {
     /* static member */
     inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
     inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Merges a Rectangle with a list of points by repositioning and/or resizing it such that all points are located on or within its bounds.
@@ -1735,8 +2421,8 @@ object Geom {
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     /* static member */
-    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a random point within a Rectangle.
@@ -1790,9 +2476,9 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.TRIANGLE")
   @js.native
-  def TRIANGLE_ : integer = js.native
+  def TRIANGLE_ : Double = js.native
   
-  inline def TRIANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIANGLE")(x.asInstanceOf[js.Any])
+  inline def TRIANGLE__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIANGLE")(x.asInstanceOf[js.Any])
   
   /**
     * A triangle is a plane created by connecting three points.
@@ -1801,7 +2487,7 @@ object Geom {
     */
   @JSGlobal("Phaser.Geom.Triangle")
   @js.native
-  class Triangle protected ()
+  open class Triangle protected ()
     extends StObject
        with typings.phaser.Phaser.Geom.Triangle {
     /**
@@ -1855,22 +2541,22 @@ object Geom {
       * @param out An array to store the resulting Triangle instances in. If not provided, a new array is created.
       */
     /* static member */
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any]).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: js.Array[Any], scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[Any], holes: Unit, scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Builds a right triangle, i.e. one which has a 90-degree angle and two acute angles.
@@ -1961,16 +2647,16 @@ object Geom {
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],
       returnFirst: Boolean,
-      out: js.Array[js.Any]
+      out: js.Array[Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any], returnFirst.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     inline def ContainsArray(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],
       returnFirst: Unit,
-      out: js.Array[js.Any]
+      out: js.Array[Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any], returnFirst.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     
-    inline def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Tests if a triangle contains a point.
       * @param triangle The triangle.
@@ -1994,8 +2680,8 @@ object Geom {
       * @param out An array to store the points into.
       */
     /* static member */
-    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle, out: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Returns true if two triangles have the same coordinates.
@@ -2023,8 +2709,8 @@ object Geom {
       * @param out An array to which the points should be appended.
       */
     /* static member */
-    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: Double, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: Double, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the position of the incenter of a Triangle object. This is the point where its three angle bisectors meet and it's also the center of the incircle, which is the circle inscribed in the triangle.

@@ -10,13 +10,13 @@ Karma reporter with mocha style logging.
 | ------------------ | :-------------: |
 | Full name          | karma-mocha-reporter |
 | Keywords           | karma-plugin, karma-reporter, mocha, chai, diff, symbols |
-| # releases         | 0 |
-| # dependents       | 187 |
-| # downloads        | 12779352 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1102598.0 |
+| # stars            | 198.0 |
 
 ## Links
-- [Homepage](http://www.litixsoft.de/index.php?lang=en#modules)
+- [Homepage](https://github.com/litixsoft/karma-mocha-reporter#readme)
 - [Bugs](https://github.com/litixsoft/karma-mocha-reporter/issues)
 - [Repository](https://github.com/litixsoft/karma-mocha-reporter)
 - [Npm](https://www.npmjs.com/package/karma-mocha-reporter)

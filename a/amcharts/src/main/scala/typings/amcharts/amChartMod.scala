@@ -14,10 +14,10 @@ object amChartMod {
   /**
     * used when constructing a chart with a theme
     */
-  class default ()
+  open class default ()
     extends StObject
        with AmChart {
-    def this(theme: js.Any) = this()
+    def this(theme: Any) = this()
   }
   
   @js.native
@@ -55,7 +55,7 @@ object amChartMod {
       alpha: js.UndefOr[Double],
       bold: js.UndefOr[Boolean],
       url: js.UndefOr[String]
-    ): js.Any = js.native
+    ): Any = js.native
     
     /**
       * Adds a legend to the chart.
@@ -187,7 +187,7 @@ object amChartMod {
       * You can have any number of fields and use any field names.
       * In case of AmMap, data provider should be MapData object.
       */
-    var dataProvider: js.Array[js.Any] = js.native
+    var dataProvider: js.Array[Any] = js.native
     
     /**
       * Decimal separator.
@@ -200,7 +200,7 @@ object amChartMod {
       * The structure of this object should be identical to XML structure of a object you are adding,
       * only in JSON format.
       */
-    var defs: js.Any = js.native
+    var defs: Any = js.native
     
     /**
       * Export config. Specifies how export to image/data export/print/annotate menu will look and behave.
@@ -324,7 +324,7 @@ object amChartMod {
       *     {number:1e+24,prefix:"Y"}
       * ]
       */
-    var prefixesOfBigNumbers: js.Array[js.Any] = js.native
+    var prefixesOfBigNumbers: js.Array[Any] = js.native
     
     /**
       * Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc.
@@ -341,7 +341,7 @@ object amChartMod {
       *     {number:1e-3, prefix:"m"}
       * ]
       */
-    var prefixesOfSmallNumbers: js.Array[js.Any] = js.native
+    var prefixesOfSmallNumbers: js.Array[Any] = js.native
     
     /**
       * Removes chart's legend.
@@ -351,7 +351,7 @@ object amChartMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: AmChart, `type`: String, handler: js.Any): Unit = js.native
+    def removeListener(chart: AmChart, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Theme of a chart. Config files of themes can be found in amcharts/themes/ folder.

@@ -28,7 +28,7 @@ object XContentProviderFactory {
   inline def apply(
     acquire: () => Unit,
     createContentProvider: String => XContentProvider,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentProviderFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContentProvider = js.Any.fromFunction1(createContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

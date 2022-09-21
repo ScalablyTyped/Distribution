@@ -15,7 +15,7 @@ object global {
       */
     @JSGlobal("AMap.OverView")
     @js.native
-    class OverView[L /* <: TileLayer */] ()
+    open class OverView[L /* <: TileLayer */] ()
       extends StObject
          with typings.amapJsApiOverview.AMap.OverView[L] {
       def this(options: Options[L]) = this()

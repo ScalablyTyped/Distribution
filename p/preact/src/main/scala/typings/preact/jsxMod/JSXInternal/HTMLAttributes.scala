@@ -2,10 +2,35 @@ package typings.preact.jsxMod.JSXInternal
 
 import typings.preact.mod.ClassAttributes
 import typings.preact.preactStrings.`lazy`
+import typings.preact.preactStrings.`no-referrer-when-downgrade`
+import typings.preact.preactStrings.`no-referrer`
+import typings.preact.preactStrings.`origin-when-cross-origin`
+import typings.preact.preactStrings.`same-origin`
+import typings.preact.preactStrings.`strict-origin-when-cross-origin`
+import typings.preact.preactStrings.`strict-origin`
+import typings.preact.preactStrings.`unsafe-url`
+import typings.preact.preactStrings.async
 import typings.preact.preactStrings.auto
+import typings.preact.preactStrings.characters
+import typings.preact.preactStrings.done
 import typings.preact.preactStrings.eager
+import typings.preact.preactStrings.enter
+import typings.preact.preactStrings.go
 import typings.preact.preactStrings.ltr
+import typings.preact.preactStrings.next
+import typings.preact.preactStrings.no
+import typings.preact.preactStrings.none
+import typings.preact.preactStrings.off
+import typings.preact.preactStrings.on
+import typings.preact.preactStrings.origin
+import typings.preact.preactStrings.previous
 import typings.preact.preactStrings.rtl
+import typings.preact.preactStrings.search
+import typings.preact.preactStrings.send
+import typings.preact.preactStrings.sentences
+import typings.preact.preactStrings.sync
+import typings.preact.preactStrings.words
+import typings.preact.preactStrings.yes
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,6 +55,8 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var action: js.UndefOr[String] = js.undefined
   
+  var allow: js.UndefOr[String] = js.undefined
+  
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
   var allowTransparency: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +67,8 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var async: js.UndefOr[Boolean] = js.undefined
   
+  var autoCapitalize: js.UndefOr[off | none | on | sentences | words | characters] = js.undefined
+  
   var autoComplete: js.UndefOr[String] = js.undefined
   
   var autoCorrect: js.UndefOr[String] = js.undefined
@@ -47,6 +76,9 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var autoPlay: js.UndefOr[Boolean] = js.undefined
+  
+  // Non-standard Attributes
+  var autocapitalize: js.UndefOr[off | none | on | sentences | words | characters] = js.undefined
   
   var autocomplete: js.UndefOr[String] = js.undefined
   
@@ -65,6 +97,8 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   var charSet: js.UndefOr[String] = js.undefined
   
   var checked: js.UndefOr[Boolean] = js.undefined
+  
+  var cite: js.UndefOr[String] = js.undefined
   
   var `class`: js.UndefOr[String] = js.undefined
   
@@ -94,19 +128,29 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var dateTime: js.UndefOr[String] = js.undefined
   
+  var decoding: js.UndefOr[sync | async | auto] = js.undefined
+  
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
+  
+  var defaultValue: js.UndefOr[String] = js.undefined
+  
   var defer: js.UndefOr[Boolean] = js.undefined
   
   var dir: js.UndefOr[auto | rtl | ltr] = js.undefined
+  
+  var disablePictureInPicture: js.UndefOr[Boolean] = js.undefined
   
   var disableRemotePlayback: js.UndefOr[Boolean] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
   var encType: js.UndefOr[String] = js.undefined
+  
+  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
   var `for`: js.UndefOr[String] = js.undefined
   
@@ -144,7 +188,7 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr[String] = js.undefined
   
@@ -209,13 +253,19 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var noValidate: js.UndefOr[Boolean] = js.undefined
   
+  var nomodule: js.UndefOr[Boolean] = js.undefined
+  
   var nonce: js.UndefOr[String] = js.undefined
   
   var open: js.UndefOr[Boolean] = js.undefined
   
   var optimum: js.UndefOr[Double] = js.undefined
   
+  var part: js.UndefOr[String] = js.undefined
+  
   var pattern: js.UndefOr[String] = js.undefined
+  
+  var ping: js.UndefOr[String] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -233,11 +283,21 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  var readonly: js.UndefOr[Boolean] = js.undefined
+  
+  var referrerpolicy: js.UndefOr[
+    `no-referrer` | `no-referrer-when-downgrade` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin` | `unsafe-url`
+  ] = js.undefined
+  
   var rel: js.UndefOr[String] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
+  
+  var results: js.UndefOr[Double] = js.undefined
+  
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
   
@@ -267,6 +327,8 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var span: js.UndefOr[Double] = js.undefined
   
+  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  
   var spellcheck: js.UndefOr[Boolean] = js.undefined
   
   var src: js.UndefOr[String] = js.undefined
@@ -292,6 +354,8 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   var target: js.UndefOr[String] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
+  
+  var translate: js.UndefOr[yes | no] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -340,6 +404,8 @@ object HTMLAttributes {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
+    inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    
     inline def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
     
     inline def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
@@ -347,6 +413,8 @@ object HTMLAttributes {
     inline def setAllowTransparency(value: Boolean): Self = StObject.set(x, "allowTransparency", value.asInstanceOf[js.Any])
     
     inline def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
+    
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -359,6 +427,10 @@ object HTMLAttributes {
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setAutoCapitalize(value: off | none | on | sentences | words | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
@@ -399,6 +471,10 @@ object HTMLAttributes {
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    
+    inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
@@ -456,9 +532,21 @@ object HTMLAttributes {
     
     inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
+    inline def setDecoding(value: sync | async | auto): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+    
+    inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
+    
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
+    inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+    
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
@@ -468,6 +556,10 @@ object HTMLAttributes {
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
+    inline def setDisablePictureInPicture(value: Boolean): Self = StObject.set(x, "disablePictureInPicture", value.asInstanceOf[js.Any])
+    
+    inline def setDisablePictureInPictureUndefined: Self = StObject.set(x, "disablePictureInPicture", js.undefined)
+    
     inline def setDisableRemotePlayback(value: Boolean): Self = StObject.set(x, "disableRemotePlayback", value.asInstanceOf[js.Any])
     
     inline def setDisableRemotePlaybackUndefined: Self = StObject.set(x, "disableRemotePlayback", js.undefined)
@@ -476,7 +568,7 @@ object HTMLAttributes {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -487,6 +579,10 @@ object HTMLAttributes {
     inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
     
     inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
+    
+    inline def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterkeyhint", value.asInstanceOf[js.Any])
+    
+    inline def setEnterkeyhintUndefined: Self = StObject.set(x, "enterkeyhint", js.undefined)
     
     inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     
@@ -560,7 +656,7 @@ object HTMLAttributes {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -688,6 +784,10 @@ object HTMLAttributes {
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
     
+    inline def setNomodule(value: Boolean): Self = StObject.set(x, "nomodule", value.asInstanceOf[js.Any])
+    
+    inline def setNomoduleUndefined: Self = StObject.set(x, "nomodule", js.undefined)
+    
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
@@ -700,9 +800,17 @@ object HTMLAttributes {
     
     inline def setOptimumUndefined: Self = StObject.set(x, "optimum", js.undefined)
     
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setPing(value: String): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+    
+    inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -736,6 +844,12 @@ object HTMLAttributes {
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
+    inline def setReferrerpolicy(
+      value: `no-referrer` | `no-referrer-when-downgrade` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin` | `unsafe-url`
+    ): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
+    
     inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
@@ -747,6 +861,14 @@ object HTMLAttributes {
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -804,9 +926,9 @@ object HTMLAttributes {
     
     inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
-    inline def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
+    inline def setSpellCheck(value: Boolean): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
     
-    inline def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
+    inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
@@ -852,6 +974,10 @@ object HTMLAttributes {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
+    inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -868,7 +994,7 @@ object HTMLAttributes {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
     

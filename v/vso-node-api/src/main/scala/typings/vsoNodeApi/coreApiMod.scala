@@ -28,7 +28,7 @@ object coreApiMod {
   
   @JSImport("vso-node-api/CoreApi", "CoreApi")
   @js.native
-  class CoreApi protected () extends ICoreApi {
+  open class CoreApi protected () extends ICoreApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -97,14 +97,14 @@ object coreApiMod {
     def getProjectProperties(projectId: String, keys: js.Array[String]): js.Promise[js.Array[ProjectProperty]] = js.native
     
     def getProjects(): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Double, skip: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Double, skip: Double, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Double, skip: Unit, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Unit, skip: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Unit, skip: Double, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
-    def getProjects(stateFilter: js.Any, top: Unit, skip: Unit, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Double, skip: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Double, skip: Double, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Double, skip: Unit, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Unit, skip: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Unit, skip: Double, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
+    def getProjects(stateFilter: Any, top: Unit, skip: Unit, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
     def getProjects(stateFilter: Unit, top: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
     def getProjects(stateFilter: Unit, top: Double, skip: Double): js.Promise[js.Array[TeamProjectReference]] = js.native
     def getProjects(stateFilter: Unit, top: Double, skip: Double, continuationToken: String): js.Promise[js.Array[TeamProjectReference]] = js.native
@@ -136,7 +136,7 @@ object coreApiMod {
     
     def queueDeleteProject(projectId: String): js.Promise[OperationReference] = js.native
     
-    def setProjectProperties(customHeaders: js.Any, projectId: String, patchDocument: JsonPatchDocument): js.Promise[Unit] = js.native
+    def setProjectProperties(customHeaders: Any, projectId: String, patchDocument: JsonPatchDocument): js.Promise[Unit] = js.native
     
     def updateIdentityMru(mruData: IdentityData, mruName: String): js.Promise[Unit] = js.native
     

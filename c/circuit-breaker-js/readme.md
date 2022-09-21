@@ -10,10 +10,10 @@ Hystrix-like circuit breaker for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | circuit-breaker-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 175093 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7787.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/circuit-breaker-js)

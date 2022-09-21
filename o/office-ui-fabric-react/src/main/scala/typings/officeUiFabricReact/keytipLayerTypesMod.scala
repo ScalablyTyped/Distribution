@@ -92,19 +92,19 @@ object keytipLayerTypesMod {
       
       inline def setKeytipExitSequencesUndefined: Self = StObject.set(x, "keytipExitSequences", js.undefined)
       
-      inline def setKeytipExitSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipExitSequences", js.Array(value :_*))
+      inline def setKeytipExitSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipExitSequences", js.Array(value*))
       
       inline def setKeytipReturnSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipReturnSequences", value.asInstanceOf[js.Any])
       
       inline def setKeytipReturnSequencesUndefined: Self = StObject.set(x, "keytipReturnSequences", js.undefined)
       
-      inline def setKeytipReturnSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipReturnSequences", js.Array(value :_*))
+      inline def setKeytipReturnSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipReturnSequences", js.Array(value*))
       
       inline def setKeytipStartSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipStartSequences", value.asInstanceOf[js.Any])
       
       inline def setKeytipStartSequencesUndefined: Self = StObject.set(x, "keytipStartSequences", js.undefined)
       
-      inline def setKeytipStartSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipStartSequences", js.Array(value :_*))
+      inline def setKeytipStartSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipStartSequences", js.Array(value*))
       
       inline def setOnEnterKeytipMode(value: () => Unit): Self = StObject.set(x, "onEnterKeytipMode", js.Any.fromFunction0(value))
       

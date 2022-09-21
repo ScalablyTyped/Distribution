@@ -24,10 +24,10 @@ trait TestCase extends StObject {
     * `map` method | `string` params | `map` path | `string` time | `google.protobuf.Timestamp` If the request value is not well-formed for the service, the request will be rejected as an
     * invalid argument.
     */
-  var request: js.UndefOr[js.Any] = js.undefined
+  var request: js.UndefOr[Any] = js.undefined
   
   /** Optional resource value as it appears in persistent storage before the request is fulfilled. The resource type depends on the `request.path` value. */
-  var resource: js.UndefOr[js.Any] = js.undefined
+  var resource: js.UndefOr[Any] = js.undefined
 }
 object TestCase {
   
@@ -50,17 +50,17 @@ object TestCase {
     
     inline def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
     
-    inline def setFunctionMocksVarargs(value: FunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
+    inline def setFunctionMocksVarargs(value: FunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value*))
     
     inline def setPathEncoding(value: String): Self = StObject.set(x, "pathEncoding", value.asInstanceOf[js.Any])
     
     inline def setPathEncodingUndefined: Self = StObject.set(x, "pathEncoding", js.undefined)
     
-    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }

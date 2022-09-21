@@ -29,7 +29,7 @@ object GraphQuads {
     
     inline def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     
-    inline def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value :_*))
+    inline def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value*))
     
     inline def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

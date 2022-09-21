@@ -8,5 +8,5 @@ object textareaMod {
   
   @JSImport("@nulogy/components/src/Textarea", "Textarea")
   @js.native
-  val Textarea: js.Any = js.native
+  val Textarea: Any = js.native
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartFillFormat")
 @js.native
-/* private */ class ChartFillFormat ()
+/* private */ open class ChartFillFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartFillFormat

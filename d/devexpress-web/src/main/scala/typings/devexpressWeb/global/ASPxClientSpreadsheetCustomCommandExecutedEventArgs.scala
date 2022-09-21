@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetCustomCommandExecutedEventArgs")
 @js.native
-class ASPxClientSpreadsheetCustomCommandExecutedEventArgs protected ()
+open class ASPxClientSpreadsheetCustomCommandExecutedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetCustomCommandExecutedEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientSpreadsheetCustomCommandExecutedEventArgs protected ()
     * @param commandName A string value that specifies the name of the processed command.
     * @param parameter An object that can contain command specific information needed for handling the command execution.
     */
-  def this(commandName: String, parameter: js.Any) = this()
+  def this(commandName: String, parameter: Any) = this()
   
   /**
     * Gets the name of the processed command.

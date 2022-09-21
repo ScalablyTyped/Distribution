@@ -9,8 +9,8 @@ object mod {
   
   @JSImport("ink-select-input", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Any]
+  open class default ()
+    extends Component[SelectInputProps[ItemOfSelectInput], js.Object, Any]
   
   trait ItemOfSelectInput extends StObject {
     
@@ -18,11 +18,11 @@ object mod {
     
     var label: String
     
-    var value: js.Any
+    var value: Any
   }
   object ItemOfSelectInput {
     
-    inline def apply(label: String, value: js.Any): ItemOfSelectInput = {
+    inline def apply(label: String, value: Any): ItemOfSelectInput = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemOfSelectInput]
     }
@@ -35,21 +35,21 @@ object mod {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  type SelectInput = Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Any]
+  type SelectInput = Component[SelectInputProps[ItemOfSelectInput], js.Object, Any]
   
   trait SelectInputProps[T /* <: ItemOfSelectInput */] extends StObject {
     
     var focus: js.UndefOr[Boolean] = js.undefined
     
-    var indicatorComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
+    var indicatorComponent: js.UndefOr[Component[js.Object, js.Object, Any]] = js.undefined
     
     var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var itemComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
+    var itemComponent: js.UndefOr[Component[js.Object, js.Object, Any]] = js.undefined
     
     var items: js.UndefOr[js.Array[T]] = js.undefined
     
@@ -70,7 +70,7 @@ object mod {
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      inline def setIndicatorComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
+      inline def setIndicatorComponent(value: Component[js.Object, js.Object, Any]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
       
       inline def setIndicatorComponentUndefined: Self = StObject.set(x, "indicatorComponent", js.undefined)
       
@@ -78,7 +78,7 @@ object mod {
       
       inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
-      inline def setItemComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      inline def setItemComponent(value: Component[js.Object, js.Object, Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       inline def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
@@ -86,7 +86,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

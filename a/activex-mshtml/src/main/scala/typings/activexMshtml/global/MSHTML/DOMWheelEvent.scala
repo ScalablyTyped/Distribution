@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMWheelEvent")
 @js.native
-/* private */ class DOMWheelEvent ()
+/* private */ open class DOMWheelEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMWheelEvent {
   
@@ -178,7 +178,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val `type`: String = js.native
   
   /* CompleteClass */
-  override def view(pvarIndex: js.Any): js.Any = js.native
+  override def view(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("view")
   override val view_Original: IHTMLWindow2 = js.native

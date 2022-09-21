@@ -62,7 +62,7 @@ object XDispatch {
     acquire: () => Unit,
     addStatusListener: (XStatusListener, URL) => Unit,
     dispatch: (URL, SeqEquiv[PropertyValue]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeStatusListener: (XStatusListener, URL) => Unit
   ): XDispatch = {

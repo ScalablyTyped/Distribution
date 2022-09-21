@@ -14,17 +14,17 @@ trait ColumnChooserButtonApplyClickEventUIParam extends StObject {
   /**
     * Gets the array of columns identifiers which should be hidden.
     */
-  var columnsToHide: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var columnsToHide: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets the array of columns identifiers which should be shown.
     */
-  var columnsToShow: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var columnsToShow: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets a reference to the GridHiding widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ColumnChooserButtonApplyClickEventUIParam {
   
@@ -39,19 +39,19 @@ object ColumnChooserButtonApplyClickEventUIParam {
     
     inline def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
-    inline def setColumnsToHide(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToHide", value.asInstanceOf[js.Any])
+    inline def setColumnsToHide(value: js.Array[Any]): Self = StObject.set(x, "columnsToHide", value.asInstanceOf[js.Any])
     
     inline def setColumnsToHideUndefined: Self = StObject.set(x, "columnsToHide", js.undefined)
     
-    inline def setColumnsToHideVarargs(value: js.Any*): Self = StObject.set(x, "columnsToHide", js.Array(value :_*))
+    inline def setColumnsToHideVarargs(value: Any*): Self = StObject.set(x, "columnsToHide", js.Array(value*))
     
-    inline def setColumnsToShow(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToShow", value.asInstanceOf[js.Any])
+    inline def setColumnsToShow(value: js.Array[Any]): Self = StObject.set(x, "columnsToShow", value.asInstanceOf[js.Any])
     
     inline def setColumnsToShowUndefined: Self = StObject.set(x, "columnsToShow", js.undefined)
     
-    inline def setColumnsToShowVarargs(value: js.Any*): Self = StObject.set(x, "columnsToShow", js.Array(value :_*))
+    inline def setColumnsToShowVarargs(value: Any*): Self = StObject.set(x, "columnsToShow", js.Array(value*))
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

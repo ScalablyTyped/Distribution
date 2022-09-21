@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportDocumentScaleMode")
 @js.native
-class DashboardExportDocumentScaleMode ()
+open class DashboardExportDocumentScaleMode ()
   extends StObject
      with typings.devexpressWeb.DashboardExportDocumentScaleMode
 object DashboardExportDocumentScaleMode {

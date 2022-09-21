@@ -10,10 +10,10 @@ object iconMenuMod {
   
   @JSImport("material-ui/IconMenu", JSImport.Default)
   @js.native
-  class default () extends IconMenu
+  open class default () extends IconMenu
   
   @JSImport("material-ui/IconMenu", "IconMenu")
   @js.native
-  class IconMenu ()
-    extends Component[IconMenuProps, js.Object, js.Any]
+  open class IconMenu ()
+    extends Component[IconMenuProps, js.Object, Any]
 }

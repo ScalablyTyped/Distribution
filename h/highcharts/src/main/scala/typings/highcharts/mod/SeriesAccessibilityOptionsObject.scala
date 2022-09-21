@@ -30,11 +30,11 @@ trait SeriesAccessibilityOptionsObject extends StObject {
   var keyboardNavigation: js.UndefOr[SeriesAccessibilityKeyboardNavigationOptionsObject] = js.undefined
   
   /**
-    * (Highstock) Formatter function to use instead of the default for point
-    * descriptions. Same as `accessibility.point.descriptionFormatter`, but for
-    * a single series.
+    * (Highstock) Point accessibility options for a series.
     */
-  var pointDescriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
+  var point: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
+  ] = js.undefined
 }
 object SeriesAccessibilityOptionsObject {
   
@@ -61,8 +61,8 @@ object SeriesAccessibilityOptionsObject {
     
     inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
-    inline def setPointDescriptionFormatter(value: Point => String): Self = StObject.set(x, "pointDescriptionFormatter", js.Any.fromFunction1(value))
+    inline def setPoint(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
   }
 }

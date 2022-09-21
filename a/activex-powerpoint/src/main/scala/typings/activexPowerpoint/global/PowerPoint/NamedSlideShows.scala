@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.NamedSlideShows")
 @js.native
-/* private */ class NamedSlideShows ()
+/* private */ open class NamedSlideShows ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.NamedSlideShows {
   
   /* CompleteClass */
-  override def Add(Name: String, safeArrayOfSlideIDs: js.Any): typings.activexPowerpoint.PowerPoint.NamedSlideShow = js.native
+  override def Add(Name: String, safeArrayOfSlideIDs: Any): typings.activexPowerpoint.PowerPoint.NamedSlideShow = js.native
   
   /* CompleteClass */
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
@@ -20,10 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexPowerpoint.PowerPoint.NamedSlideShow = js.native
+  override def Item(Index: Any): typings.activexPowerpoint.PowerPoint.NamedSlideShow = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.NamedSlideShows_typekey")

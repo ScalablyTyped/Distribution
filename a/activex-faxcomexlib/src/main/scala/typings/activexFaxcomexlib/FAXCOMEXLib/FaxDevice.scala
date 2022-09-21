@@ -24,7 +24,7 @@ trait FaxDevice extends StObject {
   var FAXCOMEXLibDotFaxDevice_typekey: FaxDevice
   
   /** Get the device level extention property */
-  def GetExtensionProperty(bstrGUID: String): SafeArray[js.Any]
+  def GetExtensionProperty(bstrGUID: String): SafeArray[Any]
   
   /** Unique device ID */
   val Id: Double
@@ -60,7 +60,7 @@ trait FaxDevice extends StObject {
   val SendingNow: Boolean
   
   /** Set the device level extention property */
-  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit
+  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[Any]): Unit
   
   /** Device's Transmitting Station ID */
   var TSID: String
@@ -79,7 +79,7 @@ object FaxDevice {
     Description: String,
     DeviceName: String,
     FAXCOMEXLibDotFaxDevice_typekey: FaxDevice,
-    GetExtensionProperty: String => SafeArray[js.Any],
+    GetExtensionProperty: String => SafeArray[Any],
     Id: Double,
     PoweredOff: Boolean,
     ProviderUniqueName: String,
@@ -91,7 +91,7 @@ object FaxDevice {
     Save: () => Unit,
     SendEnabled: Boolean,
     SendingNow: Boolean,
-    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
+    SetExtensionProperty: (String, SafeArray[Any]) => Unit,
     TSID: String,
     UseRoutingMethod: (String, Boolean) => Unit,
     UsedRoutingMethods: SafeArray[String]
@@ -113,7 +113,7 @@ object FaxDevice {
     
     inline def setFAXCOMEXLibDotFaxDevice_typekey(value: FaxDevice): Self = StObject.set(x, "FAXCOMEXLib.FaxDevice_typekey", value.asInstanceOf[js.Any])
     
-    inline def setGetExtensionProperty(value: String => SafeArray[js.Any]): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
+    inline def setGetExtensionProperty(value: String => SafeArray[Any]): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
     
     inline def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object FaxDevice {
     
     inline def setSendingNow(value: Boolean): Self = StObject.set(x, "SendingNow", value.asInstanceOf[js.Any])
     
-    inline def setSetExtensionProperty(value: (String, SafeArray[js.Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
+    inline def setSetExtensionProperty(value: (String, SafeArray[Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     inline def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     

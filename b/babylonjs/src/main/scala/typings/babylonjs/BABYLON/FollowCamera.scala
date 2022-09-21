@@ -9,9 +9,9 @@ trait FollowCamera
   extends StObject
      with TargetCamera {
   
-  /* private */ var _checkLimits: js.Any = js.native
+  /* private */ var _checkLimits: Any = js.native
   
-  /* private */ var _follow: js.Any = js.native
+  /* private */ var _follow: Any = js.native
   
   /**
     * Define how fast the camera can accelerate to follow it s target.
@@ -20,7 +20,7 @@ trait FollowCamera
   
   /**
     * Define a height offset between the camera and the object it follows.
-    * It can help following an object from the top (like a car chaing a plane)
+    * It can help following an object from the top (like a car chasing a plane)
     */
   var heightOffset: Double = js.native
   

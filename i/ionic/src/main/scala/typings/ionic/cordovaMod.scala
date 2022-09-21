@@ -10,7 +10,7 @@ object cordovaMod {
   
   @JSImport("ionic/commands/cordova", "CordovaNamespace")
   @js.native
-  class CordovaNamespace () extends Namespace {
+  open class CordovaNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

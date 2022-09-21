@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SavingsPlansPurchaseRecommendationSummary extends StObject {
   
   /**
-    * The currency code AWS used to generate the recommendations and present potential savings.
+    * The currency code that Amazon Web Services used to generate the recommendations and present potential savings.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
@@ -22,17 +22,17 @@ trait SavingsPlansPurchaseRecommendationSummary extends StObject {
   var DailyCommitmentToPurchase: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The estimated monthly savings amount, based on the recommended Savings Plans purchase.
+    * The estimated monthly savings amount that's based on the recommended Savings Plans purchase.
     */
   var EstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The estimated On-Demand costs you would expect with no additional commitment, based on your usage of the selected time period and the Savings Plans you own. 
+    * The estimated On-Demand costs you expect with no additional commitment. It's based on your usage of the selected time period and the Savings Plans you own. 
     */
   var EstimatedOnDemandCostWithCurrentCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The estimated return on investment based on the recommended Savings Plans and estimated savings.
+    * The estimated return on investment that's based on the recommended Savings Plans and estimated savings.
     */
   var EstimatedROI: js.UndefOr[GenericString] = js.undefined
   
@@ -52,7 +52,7 @@ trait SavingsPlansPurchaseRecommendationSummary extends StObject {
   var EstimatedTotalCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The recommended hourly commitment based on the recommendation parameters.
+    * The recommended hourly commitment that's based on the recommendation parameters.
     */
   var HourlyCommitmentToPurchase: js.UndefOr[GenericString] = js.undefined
   

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("jsonnet", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Jsonnet {
     
@@ -16,23 +16,23 @@ object mod {
     override def destroy(): Unit = js.native
     
     /* CompleteClass */
-    override def eval(code: String): js.Any = js.native
+    override def eval(code: String): Any = js.native
     
     /* CompleteClass */
-    override def evalFile(): js.Any = js.native
+    override def evalFile(): Any = js.native
   }
   
   trait Jsonnet extends StObject {
     
     def destroy(): Unit
     
-    def eval(code: String): js.Any
+    def eval(code: String): Any
     
-    def evalFile(): js.Any
+    def evalFile(): Any
   }
   object Jsonnet {
     
-    inline def apply(destroy: () => Unit, eval: String => js.Any, evalFile: () => js.Any): Jsonnet = {
+    inline def apply(destroy: () => Unit, eval: String => Any, evalFile: () => Any): Jsonnet = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), eval = js.Any.fromFunction1(eval), evalFile = js.Any.fromFunction0(evalFile))
       __obj.asInstanceOf[Jsonnet]
     }
@@ -41,9 +41,9 @@ object mod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setEval(value: String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
+      inline def setEval(value: String => Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
       
-      inline def setEvalFile(value: () => js.Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction0(value))
+      inline def setEvalFile(value: () => Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction0(value))
     }
   }
 }

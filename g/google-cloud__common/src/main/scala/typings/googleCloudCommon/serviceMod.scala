@@ -1,7 +1,14 @@
 package typings.googleCloudCommon
 
-import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.credentialsMod.CredentialBody
+import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.impersonatedMod.ImpersonatedOptions
+import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.GoogleAuth
+import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
+import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
 import typings.googleCloudCommon.googleCloudCommonBooleans.`true`
 import typings.googleCloudCommon.serviceObjectMod.Interceptor
 import typings.googleCloudCommon.utilMod.Abortable
@@ -11,7 +18,6 @@ import typings.googleCloudCommon.utilMod.Duplexify
 import typings.googleCloudCommon.utilMod.MakeAuthenticatedRequest
 import typings.googleCloudCommon.utilMod.MakeAuthenticatedRequestOptions
 import typings.googleCloudCommon.utilMod.PackageJson
-import typings.std.Error
 import typings.teenyRequest.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +25,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serviceMod {
   
+  @JSImport("@google-cloud/common/build/src/service", "DEFAULT_PROJECT_ID_TOKEN")
+  @js.native
+  val DEFAULT_PROJECT_ID_TOKEN: /* "{{projectId}}" */ String = js.native
+  
   @JSImport("@google-cloud/common/build/src/service", "Service")
   @js.native
-  class Service protected () extends StObject {
+  open class Service protected () extends StObject {
     /**
       * Service is a base class, meant to be inherited from by a "service," like
       * BigQuery or Storage.
@@ -42,11 +52,11 @@ object serviceMod {
     
     val apiEndpoint: String = js.native
     
-    var authClient: GoogleAuth = js.native
+    var authClient: GoogleAuth[AuthClient] = js.native
     
     var baseUrl: String = js.native
     
-    /* private */ var getCredentials: js.Any = js.native
+    /* private */ var getCredentials: Any = js.native
     
     /**
       * Get and update the Service's project ID.
@@ -54,7 +64,7 @@ object serviceMod {
       * @param {function} callback - The callback function.
       */
     def getProjectId(): js.Promise[String] = js.native
-    def getProjectId(callback: js.Function2[/* err */ Error | Null, /* projectId */ js.UndefOr[String], Unit]): Unit = js.native
+    def getProjectId(callback: js.Function2[/* err */ js.Error | Null, /* projectId */ js.UndefOr[String], Unit]): Unit = js.native
     
     /* protected */ def getProjectIdAsync(): js.Promise[String] = js.native
     
@@ -63,7 +73,7 @@ object serviceMod {
       */
     def getRequestInterceptors(): js.Array[js.Function] = js.native
     
-    /* private */ var globalInterceptors: js.Any = js.native
+    /* private */ var globalInterceptors: Any = js.native
     
     var interceptors: js.Array[Interceptor] = js.native
     
@@ -75,11 +85,11 @@ object serviceMod {
     @JSName("makeAuthenticatedRequest")
     def makeAuthenticatedRequest_Union(reqOpts: DecorateRequestOptions): Unit | Abortable = js.native
     
-    /* private */ var packageJson: js.Any = js.native
+    /* private */ var packageJson: Any = js.native
     
     var projectId: String = js.native
     
-    /* private */ var projectIdRequired: js.Any = js.native
+    /* private */ var projectIdRequired: Any = js.native
     
     var providedUserAgent: js.UndefOr[String] = js.native
     
@@ -109,7 +119,7 @@ object serviceMod {
       * @param {string} reqOpts.uri - A URI relative to the baseUrl.
       * @param {function} callback - The callback function passed to `request`.
       */
-    /* private */ var request_ : js.Any = js.native
+    /* private */ var request_ : Any = js.native
     
     var timeout: js.UndefOr[Double] = js.native
   }
@@ -123,9 +133,9 @@ object serviceMod {
     var apiEndpoint: String
     
     /**
-      * Reuse an existing GoogleAuth client instead of creating a new one.
+      * Reuse an existing `AuthClient` or `GoogleAuth` client instead of creating a new one.
       */
-    var authClient: js.UndefOr[GoogleAuth] = js.undefined
+    var authClient: js.UndefOr[AuthClient | GoogleAuth[JSONClient]] = js.undefined
     
     /**
       * The base URL to make API requests to.
@@ -152,7 +162,7 @@ object serviceMod {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+      inline def setAuthClient(value: AuthClient | GoogleAuth[JSONClient]): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
       inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
       
@@ -166,23 +176,38 @@ object serviceMod {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   
-  trait ServiceOptions
-    extends StObject
-       with GoogleAuthOptions {
+  /* Inlined parent std.Omit<google-auth-library.google-auth-library.GoogleAuthOptions<google-auth-library.google-auth-library/build/src/auth/googleauth.JSONClient>, 'authClient'> */
+  trait ServiceOptions extends StObject {
     
-    var authClient: js.UndefOr[GoogleAuth] = js.undefined
+    var authClient: js.UndefOr[AuthClient | GoogleAuth[JSONClient]] = js.undefined
+    
+    var clientOptions: js.UndefOr[
+        JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions | ImpersonatedOptions
+      ] = js.undefined
+    
+    var credentials: js.UndefOr[CredentialBody | ExternalAccountClientOptions] = js.undefined
     
     var email: js.UndefOr[String] = js.undefined
     
     var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.undefined
     
+    var keyFile: js.UndefOr[String] = js.undefined
+    
+    var keyFilename: js.UndefOr[String] = js.undefined
+    
+    var projectId: js.UndefOr[String] = js.undefined
+    
+    var scopes: js.UndefOr[String | js.Array[String]] = js.undefined
+    
     var timeout: js.UndefOr[Double] = js.undefined
     
     var token: js.UndefOr[String] = js.undefined
+    
+    var useAuthWithCustomEndpoint: js.UndefOr[Boolean] = js.undefined
     
     var userAgent: js.UndefOr[String] = js.undefined
   }
@@ -195,9 +220,17 @@ object serviceMod {
     
     extension [Self <: ServiceOptions](x: Self) {
       
-      inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+      inline def setAuthClient(value: AuthClient | GoogleAuth[JSONClient]): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
       inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
+      
+      inline def setClientOptions(value: JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions | ImpersonatedOptions): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
+      
+      inline def setClientOptionsUndefined: Self = StObject.set(x, "clientOptions", js.undefined)
+      
+      inline def setCredentials(value: CredentialBody | ExternalAccountClientOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -207,7 +240,25 @@ object serviceMod {
       
       inline def setInterceptors_Undefined: Self = StObject.set(x, "interceptors_", js.undefined)
       
-      inline def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value :_*))
+      inline def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value*))
+      
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      
+      inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
+      
+      inline def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
+      
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      
+      inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -216,6 +267,10 @@ object serviceMod {
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      
+      inline def setUseAuthWithCustomEndpoint(value: Boolean): Self = StObject.set(x, "useAuthWithCustomEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseAuthWithCustomEndpointUndefined: Self = StObject.set(x, "useAuthWithCustomEndpoint", js.undefined)
       
       inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       

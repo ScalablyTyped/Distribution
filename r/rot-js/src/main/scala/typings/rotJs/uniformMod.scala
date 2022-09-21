@@ -10,7 +10,7 @@ object uniformMod {
   
   @JSImport("rot-js/lib/map/uniform", JSImport.Default)
   @js.native
-  class default protected () extends Uniform {
+  open class default protected () extends Uniform {
     def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
   }
   

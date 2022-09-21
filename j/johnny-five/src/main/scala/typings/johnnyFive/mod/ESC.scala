@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "ESC")
 @js.native
-class ESC protected () extends StObject {
+open class ESC protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: ESCOption) = this()

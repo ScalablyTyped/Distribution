@@ -1,6 +1,5 @@
 package typings.phaser.phaserMod.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Bob")
 @js.native
-class Bob protected ()
+open class Bob protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Bob {
   /**
@@ -44,7 +43,7 @@ class Bob protected ()
     blitter: typings.phaser.Phaser.GameObjects.Blitter,
     x: Double,
     y: Double,
-    frame: integer,
+    frame: Double,
     visible: Boolean
   ) = this()
 }

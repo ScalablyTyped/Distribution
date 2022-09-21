@@ -1,9 +1,5 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceProjectsDatabasesDocumentsListcollectionids
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The parent document. In the format:
-    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-    * For example:
-    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
+    * Required. The parent document. In the format: `projects/{project_id\}/databases/{database_id\}/documents/{document_path\}`. For example: `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -38,10 +26,6 @@ object ParamsResourceProjectsDatabasesDocumentsListcollectionids {
   }
   
   extension [Self <: ParamsResourceProjectsDatabasesDocumentsListcollectionids](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

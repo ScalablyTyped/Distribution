@@ -15,12 +15,12 @@ trait Personalize extends Service {
   var config_Personalize: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see recommendations-batch.
+    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see Creating a batch inference job. 
     */
   def createBatchInferenceJob(): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
   def createBatchInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchInferenceJobResponse, Unit]): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
   /**
-    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see recommendations-batch.
+    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see Creating a batch inference job. 
     */
   def createBatchInferenceJob(params: CreateBatchInferenceJobRequest): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
   def createBatchInferenceJob(
@@ -29,12 +29,26 @@ trait Personalize extends Service {
   ): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
   
   /**
-    * Creates a campaign by deploying a solution version. When a client calls the GetRecommendations and GetPersonalizedRanking APIs, a campaign is specified in the request.  Minimum Provisioned TPS and Auto-Scaling  A transaction is a single GetRecommendations or GetPersonalizedRanking call. Transactions per second (TPS) is the throughput and unit of billing for Amazon Personalize. The minimum provisioned TPS (minProvisionedTPS) specifies the baseline throughput provisioned by Amazon Personalize, and thus, the minimum billing charge. If your TPS increases beyond minProvisionedTPS, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minProvisionedTPS, to maintain a 70% utilization. There's a short time delay while the capacity is increased that might cause loss of transactions. It's recommended to start with a low minProvisionedTPS, track your usage using Amazon CloudWatch metrics, and then increase the minProvisionedTPS as necessary.  Status  A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the campaign status, call DescribeCampaign.  Wait until the status of the campaign is ACTIVE before asking the campaign for recommendations.   Related APIs     ListCampaigns     DescribeCampaign     UpdateCampaign     DeleteCampaign   
+    * Creates a batch segment job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see Getting batch recommendations and user segments.
+    */
+  def createBatchSegmentJob(): Request[CreateBatchSegmentJobResponse, AWSError] = js.native
+  def createBatchSegmentJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchSegmentJobResponse, Unit]): Request[CreateBatchSegmentJobResponse, AWSError] = js.native
+  /**
+    * Creates a batch segment job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see Getting batch recommendations and user segments.
+    */
+  def createBatchSegmentJob(params: CreateBatchSegmentJobRequest): Request[CreateBatchSegmentJobResponse, AWSError] = js.native
+  def createBatchSegmentJob(
+    params: CreateBatchSegmentJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchSegmentJobResponse, Unit]
+  ): Request[CreateBatchSegmentJobResponse, AWSError] = js.native
+  
+  /**
+    * Creates a campaign that deploys a solution version. When a client calls the GetRecommendations and GetPersonalizedRanking APIs, a campaign is specified in the request.  Minimum Provisioned TPS and Auto-Scaling  A transaction is a single GetRecommendations or GetPersonalizedRanking call. Transactions per second (TPS) is the throughput and unit of billing for Amazon Personalize. The minimum provisioned TPS (minProvisionedTPS) specifies the baseline throughput provisioned by Amazon Personalize, and thus, the minimum billing charge.   If your TPS increases beyond minProvisionedTPS, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minProvisionedTPS. There's a short time delay while the capacity is increased that might cause loss of transactions. The actual TPS used is calculated as the average requests/second within a 5-minute window. You pay for maximum of either the minimum provisioned TPS or the actual TPS. We recommend starting with a low minProvisionedTPS, track your usage using Amazon CloudWatch metrics, and then increase the minProvisionedTPS as necessary.  Status  A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the campaign status, call DescribeCampaign.  Wait until the status of the campaign is ACTIVE before asking the campaign for recommendations.   Related APIs     ListCampaigns     DescribeCampaign     UpdateCampaign     DeleteCampaign   
     */
   def createCampaign(): Request[CreateCampaignResponse, AWSError] = js.native
   def createCampaign(callback: js.Function2[/* err */ AWSError, /* data */ CreateCampaignResponse, Unit]): Request[CreateCampaignResponse, AWSError] = js.native
   /**
-    * Creates a campaign by deploying a solution version. When a client calls the GetRecommendations and GetPersonalizedRanking APIs, a campaign is specified in the request.  Minimum Provisioned TPS and Auto-Scaling  A transaction is a single GetRecommendations or GetPersonalizedRanking call. Transactions per second (TPS) is the throughput and unit of billing for Amazon Personalize. The minimum provisioned TPS (minProvisionedTPS) specifies the baseline throughput provisioned by Amazon Personalize, and thus, the minimum billing charge. If your TPS increases beyond minProvisionedTPS, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minProvisionedTPS, to maintain a 70% utilization. There's a short time delay while the capacity is increased that might cause loss of transactions. It's recommended to start with a low minProvisionedTPS, track your usage using Amazon CloudWatch metrics, and then increase the minProvisionedTPS as necessary.  Status  A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the campaign status, call DescribeCampaign.  Wait until the status of the campaign is ACTIVE before asking the campaign for recommendations.   Related APIs     ListCampaigns     DescribeCampaign     UpdateCampaign     DeleteCampaign   
+    * Creates a campaign that deploys a solution version. When a client calls the GetRecommendations and GetPersonalizedRanking APIs, a campaign is specified in the request.  Minimum Provisioned TPS and Auto-Scaling  A transaction is a single GetRecommendations or GetPersonalizedRanking call. Transactions per second (TPS) is the throughput and unit of billing for Amazon Personalize. The minimum provisioned TPS (minProvisionedTPS) specifies the baseline throughput provisioned by Amazon Personalize, and thus, the minimum billing charge.   If your TPS increases beyond minProvisionedTPS, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minProvisionedTPS. There's a short time delay while the capacity is increased that might cause loss of transactions. The actual TPS used is calculated as the average requests/second within a 5-minute window. You pay for maximum of either the minimum provisioned TPS or the actual TPS. We recommend starting with a low minProvisionedTPS, track your usage using Amazon CloudWatch metrics, and then increase the minProvisionedTPS as necessary.  Status  A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the campaign status, call DescribeCampaign.  Wait until the status of the campaign is ACTIVE before asking the campaign for recommendations.   Related APIs     ListCampaigns     DescribeCampaign     UpdateCampaign     DeleteCampaign   
     */
   def createCampaign(params: CreateCampaignRequest): Request[CreateCampaignResponse, AWSError] = js.native
   def createCampaign(
@@ -57,12 +71,26 @@ trait Personalize extends Service {
   ): Request[CreateDatasetResponse, AWSError] = js.native
   
   /**
-    * Creates an empty dataset group. A dataset group contains related datasets that supply data for training a model. A dataset group can contain at most three datasets, one for each type of dataset:   Interactions   Items   Users   To train a model (create a solution), a dataset group that contains an Interactions dataset is required. Call CreateDataset to add a dataset to the group. A dataset group can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING   To get the status of the dataset group, call DescribeDatasetGroup. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the creation failed.  You must wait until the status of the dataset group is ACTIVE before adding a dataset to the group.  You can specify an AWS Key Management Service (KMS) key to encrypt the datasets in the group. If you specify a KMS key, you must also include an AWS Identity and Access Management (IAM) role that has permission to access the key.  APIs that require a dataset group ARN in the request     CreateDataset     CreateEventTracker     CreateSolution     Related APIs     ListDatasetGroups     DescribeDatasetGroup     DeleteDatasetGroup   
+    *  Creates a job that exports data from your dataset to an Amazon S3 bucket. To allow Amazon Personalize to export the training data, you must specify an service-linked IAM role that gives Amazon Personalize PutObject permissions for your Amazon S3 bucket. For information, see Exporting a dataset in the Amazon Personalize developer guide.   Status  A dataset export job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED    To get the status of the export job, call DescribeDatasetExportJob, and specify the Amazon Resource Name (ARN) of the dataset export job. The dataset export is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed. 
+    */
+  def createDatasetExportJob(): Request[CreateDatasetExportJobResponse, AWSError] = js.native
+  def createDatasetExportJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetExportJobResponse, Unit]): Request[CreateDatasetExportJobResponse, AWSError] = js.native
+  /**
+    *  Creates a job that exports data from your dataset to an Amazon S3 bucket. To allow Amazon Personalize to export the training data, you must specify an service-linked IAM role that gives Amazon Personalize PutObject permissions for your Amazon S3 bucket. For information, see Exporting a dataset in the Amazon Personalize developer guide.   Status  A dataset export job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED    To get the status of the export job, call DescribeDatasetExportJob, and specify the Amazon Resource Name (ARN) of the dataset export job. The dataset export is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed. 
+    */
+  def createDatasetExportJob(params: CreateDatasetExportJobRequest): Request[CreateDatasetExportJobResponse, AWSError] = js.native
+  def createDatasetExportJob(
+    params: CreateDatasetExportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetExportJobResponse, Unit]
+  ): Request[CreateDatasetExportJobResponse, AWSError] = js.native
+  
+  /**
+    * Creates an empty dataset group. A dataset group is a container for Amazon Personalize resources. A dataset group can contain at most three datasets, one for each type of dataset:   Interactions   Items   Users    A dataset group can be a Domain dataset group, where you specify a domain and use pre-configured resources like recommenders, or a Custom dataset group, where you use custom resources, such as a solution with a solution version, that you deploy with a campaign. If you start with a Domain dataset group, you can still add custom resources such as solutions and solution versions trained with recipes for custom use cases and deployed with campaigns.  A dataset group can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING   To get the status of the dataset group, call DescribeDatasetGroup. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the creation failed.  You must wait until the status of the dataset group is ACTIVE before adding a dataset to the group.  You can specify an Key Management Service (KMS) key to encrypt the datasets in the group. If you specify a KMS key, you must also include an Identity and Access Management (IAM) role that has permission to access the key.  APIs that require a dataset group ARN in the request     CreateDataset     CreateEventTracker     CreateSolution     Related APIs     ListDatasetGroups     DescribeDatasetGroup     DeleteDatasetGroup   
     */
   def createDatasetGroup(): Request[CreateDatasetGroupResponse, AWSError] = js.native
   def createDatasetGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetGroupResponse, Unit]): Request[CreateDatasetGroupResponse, AWSError] = js.native
   /**
-    * Creates an empty dataset group. A dataset group contains related datasets that supply data for training a model. A dataset group can contain at most three datasets, one for each type of dataset:   Interactions   Items   Users   To train a model (create a solution), a dataset group that contains an Interactions dataset is required. Call CreateDataset to add a dataset to the group. A dataset group can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING   To get the status of the dataset group, call DescribeDatasetGroup. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the creation failed.  You must wait until the status of the dataset group is ACTIVE before adding a dataset to the group.  You can specify an AWS Key Management Service (KMS) key to encrypt the datasets in the group. If you specify a KMS key, you must also include an AWS Identity and Access Management (IAM) role that has permission to access the key.  APIs that require a dataset group ARN in the request     CreateDataset     CreateEventTracker     CreateSolution     Related APIs     ListDatasetGroups     DescribeDatasetGroup     DeleteDatasetGroup   
+    * Creates an empty dataset group. A dataset group is a container for Amazon Personalize resources. A dataset group can contain at most three datasets, one for each type of dataset:   Interactions   Items   Users    A dataset group can be a Domain dataset group, where you specify a domain and use pre-configured resources like recommenders, or a Custom dataset group, where you use custom resources, such as a solution with a solution version, that you deploy with a campaign. If you start with a Domain dataset group, you can still add custom resources such as solutions and solution versions trained with recipes for custom use cases and deployed with campaigns.  A dataset group can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING   To get the status of the dataset group, call DescribeDatasetGroup. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the creation failed.  You must wait until the status of the dataset group is ACTIVE before adding a dataset to the group.  You can specify an Key Management Service (KMS) key to encrypt the datasets in the group. If you specify a KMS key, you must also include an Identity and Access Management (IAM) role that has permission to access the key.  APIs that require a dataset group ARN in the request     CreateDataset     CreateEventTracker     CreateSolution     Related APIs     ListDatasetGroups     DescribeDatasetGroup     DeleteDatasetGroup   
     */
   def createDatasetGroup(params: CreateDatasetGroupRequest): Request[CreateDatasetGroupResponse, AWSError] = js.native
   def createDatasetGroup(
@@ -71,12 +99,12 @@ trait Personalize extends Service {
   ): Request[CreateDatasetGroupResponse, AWSError] = js.native
   
   /**
-    * Creates a job that imports training data from your data source (an Amazon S3 bucket) to an Amazon Personalize dataset. To allow Amazon Personalize to import the training data, you must specify an AWS Identity and Access Management (IAM) role that has permission to read from the data source, as Amazon Personalize makes a copy of your data and processes it in an internal AWS system.  The dataset import job replaces any previous data in the dataset.   Status  A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the import job, call DescribeDatasetImportJob, providing the Amazon Resource Name (ARN) of the dataset import job. The dataset import is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Importing takes time. You must wait until the status shows as ACTIVE before training a model using the dataset.   Related APIs     ListDatasetImportJobs     DescribeDatasetImportJob   
+    * Creates a job that imports training data from your data source (an Amazon S3 bucket) to an Amazon Personalize dataset. To allow Amazon Personalize to import the training data, you must specify an IAM service role that has permission to read from the data source, as Amazon Personalize makes a copy of your data and processes it internally. For information on granting access to your Amazon S3 bucket, see Giving Amazon Personalize Access to Amazon S3 Resources.   By default, a dataset import job replaces any existing data in the dataset that you imported in bulk. To add new records without replacing existing data, specify INCREMENTAL for the import mode in the CreateDatasetImportJob operation.   Status  A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the import job, call DescribeDatasetImportJob, providing the Amazon Resource Name (ARN) of the dataset import job. The dataset import is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Importing takes time. You must wait until the status shows as ACTIVE before training a model using the dataset.   Related APIs     ListDatasetImportJobs     DescribeDatasetImportJob   
     */
   def createDatasetImportJob(): Request[CreateDatasetImportJobResponse, AWSError] = js.native
   def createDatasetImportJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetImportJobResponse, Unit]): Request[CreateDatasetImportJobResponse, AWSError] = js.native
   /**
-    * Creates a job that imports training data from your data source (an Amazon S3 bucket) to an Amazon Personalize dataset. To allow Amazon Personalize to import the training data, you must specify an AWS Identity and Access Management (IAM) role that has permission to read from the data source, as Amazon Personalize makes a copy of your data and processes it in an internal AWS system.  The dataset import job replaces any previous data in the dataset.   Status  A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the import job, call DescribeDatasetImportJob, providing the Amazon Resource Name (ARN) of the dataset import job. The dataset import is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Importing takes time. You must wait until the status shows as ACTIVE before training a model using the dataset.   Related APIs     ListDatasetImportJobs     DescribeDatasetImportJob   
+    * Creates a job that imports training data from your data source (an Amazon S3 bucket) to an Amazon Personalize dataset. To allow Amazon Personalize to import the training data, you must specify an IAM service role that has permission to read from the data source, as Amazon Personalize makes a copy of your data and processes it internally. For information on granting access to your Amazon S3 bucket, see Giving Amazon Personalize Access to Amazon S3 Resources.   By default, a dataset import job replaces any existing data in the dataset that you imported in bulk. To add new records without replacing existing data, specify INCREMENTAL for the import mode in the CreateDatasetImportJob operation.   Status  A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the import job, call DescribeDatasetImportJob, providing the Amazon Resource Name (ARN) of the dataset import job. The dataset import is complete when the status shows as ACTIVE. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Importing takes time. You must wait until the status shows as ACTIVE before training a model using the dataset.   Related APIs     ListDatasetImportJobs     DescribeDatasetImportJob   
     */
   def createDatasetImportJob(params: CreateDatasetImportJobRequest): Request[CreateDatasetImportJobResponse, AWSError] = js.native
   def createDatasetImportJob(
@@ -85,12 +113,12 @@ trait Personalize extends Service {
   ): Request[CreateDatasetImportJobResponse, AWSError] = js.native
   
   /**
-    * Creates an event tracker that you use when sending event data to the specified dataset group using the PutEvents API. When Amazon Personalize creates an event tracker, it also creates an event-interactions dataset in the dataset group associated with the event tracker. The event-interactions dataset stores the event data from the PutEvents call. The contents of this dataset are not available to the user.  Only one event tracker can be associated with a dataset group. You will get an error if you call CreateEventTracker using the same dataset group as an existing event tracker.  When you send event data you include your tracking ID. The tracking ID identifies the customer and authorizes the customer to send the data. The event tracker can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the event tracker, call DescribeEventTracker.  The event tracker must be in the ACTIVE state before using the tracking ID.   Related APIs     ListEventTrackers     DescribeEventTracker     DeleteEventTracker   
+    * Creates an event tracker that you use when adding event data to a specified dataset group using the PutEvents API.  Only one event tracker can be associated with a dataset group. You will get an error if you call CreateEventTracker using the same dataset group as an existing event tracker.  When you create an event tracker, the response includes a tracking ID, which you pass as a parameter when you use the PutEvents operation. Amazon Personalize then appends the event data to the Interactions dataset of the dataset group you specify in your event tracker.  The event tracker can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the event tracker, call DescribeEventTracker.  The event tracker must be in the ACTIVE state before using the tracking ID.   Related APIs     ListEventTrackers     DescribeEventTracker     DeleteEventTracker   
     */
   def createEventTracker(): Request[CreateEventTrackerResponse, AWSError] = js.native
   def createEventTracker(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventTrackerResponse, Unit]): Request[CreateEventTrackerResponse, AWSError] = js.native
   /**
-    * Creates an event tracker that you use when sending event data to the specified dataset group using the PutEvents API. When Amazon Personalize creates an event tracker, it also creates an event-interactions dataset in the dataset group associated with the event tracker. The event-interactions dataset stores the event data from the PutEvents call. The contents of this dataset are not available to the user.  Only one event tracker can be associated with a dataset group. You will get an error if you call CreateEventTracker using the same dataset group as an existing event tracker.  When you send event data you include your tracking ID. The tracking ID identifies the customer and authorizes the customer to send the data. The event tracker can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the event tracker, call DescribeEventTracker.  The event tracker must be in the ACTIVE state before using the tracking ID.   Related APIs     ListEventTrackers     DescribeEventTracker     DeleteEventTracker   
+    * Creates an event tracker that you use when adding event data to a specified dataset group using the PutEvents API.  Only one event tracker can be associated with a dataset group. You will get an error if you call CreateEventTracker using the same dataset group as an existing event tracker.  When you create an event tracker, the response includes a tracking ID, which you pass as a parameter when you use the PutEvents operation. Amazon Personalize then appends the event data to the Interactions dataset of the dataset group you specify in your event tracker.  The event tracker can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the event tracker, call DescribeEventTracker.  The event tracker must be in the ACTIVE state before using the tracking ID.   Related APIs     ListEventTrackers     DescribeEventTracker     DeleteEventTracker   
     */
   def createEventTracker(params: CreateEventTrackerRequest): Request[CreateEventTrackerResponse, AWSError] = js.native
   def createEventTracker(
@@ -99,12 +127,12 @@ trait Personalize extends Service {
   ): Request[CreateEventTrackerResponse, AWSError] = js.native
   
   /**
-    * Creates a recommendation filter. For more information, see Using Filters with Amazon Personalize.
+    * Creates a recommendation filter. For more information, see Filtering recommendations and user segments.
     */
   def createFilter(): Request[CreateFilterResponse, AWSError] = js.native
   def createFilter(callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]): Request[CreateFilterResponse, AWSError] = js.native
   /**
-    * Creates a recommendation filter. For more information, see Using Filters with Amazon Personalize.
+    * Creates a recommendation filter. For more information, see Filtering recommendations and user segments.
     */
   def createFilter(params: CreateFilterRequest): Request[CreateFilterResponse, AWSError] = js.native
   def createFilter(
@@ -113,12 +141,26 @@ trait Personalize extends Service {
   ): Request[CreateFilterResponse, AWSError] = js.native
   
   /**
-    * Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format. Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. You specify a schema when you call CreateDataset.  Related APIs     ListSchemas     DescribeSchema     DeleteSchema   
+    * Creates a recommender with the recipe (a Domain dataset group use case) you specify. You create recommenders for a Domain dataset group and specify the recommender's Amazon Resource Name (ARN) when you make a GetRecommendations request.   Minimum recommendation requests per second  When you create a recommender, you can configure the recommender's minimum recommendation requests per second. The minimum recommendation requests per second (minRecommendationRequestsPerSecond) specifies the baseline recommendation request throughput provisioned by Amazon Personalize. The default minRecommendationRequestsPerSecond is 1. A recommendation request is a single GetRecommendations operation. Request throughput is measured in requests per second and Amazon Personalize uses your requests per second to derive your requests per hour and the price of your recommender usage.   If your requests per second increases beyond minRecommendationRequestsPerSecond, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minRecommendationRequestsPerSecond. There's a short time delay while the capacity is increased that might cause loss of requests.  Your bill is the greater of either the minimum requests per hour (based on minRecommendationRequestsPerSecond) or the actual number of requests. The actual request throughput used is calculated as the average requests/second within a one-hour window. We recommend starting with the default minRecommendationRequestsPerSecond, track your usage using Amazon CloudWatch metrics, and then increase the minRecommendationRequestsPerSecond as necessary.   Status  A recommender can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   STOP PENDING &gt; STOP IN_PROGRESS &gt; INACTIVE &gt; START PENDING &gt; START IN_PROGRESS &gt; ACTIVE   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the recommender status, call DescribeRecommender.  Wait until the status of the recommender is ACTIVE before asking the recommender for recommendations.   Related APIs     ListRecommenders     DescribeRecommender     UpdateRecommender     DeleteRecommender   
+    */
+  def createRecommender(): Request[CreateRecommenderResponse, AWSError] = js.native
+  def createRecommender(callback: js.Function2[/* err */ AWSError, /* data */ CreateRecommenderResponse, Unit]): Request[CreateRecommenderResponse, AWSError] = js.native
+  /**
+    * Creates a recommender with the recipe (a Domain dataset group use case) you specify. You create recommenders for a Domain dataset group and specify the recommender's Amazon Resource Name (ARN) when you make a GetRecommendations request.   Minimum recommendation requests per second  When you create a recommender, you can configure the recommender's minimum recommendation requests per second. The minimum recommendation requests per second (minRecommendationRequestsPerSecond) specifies the baseline recommendation request throughput provisioned by Amazon Personalize. The default minRecommendationRequestsPerSecond is 1. A recommendation request is a single GetRecommendations operation. Request throughput is measured in requests per second and Amazon Personalize uses your requests per second to derive your requests per hour and the price of your recommender usage.   If your requests per second increases beyond minRecommendationRequestsPerSecond, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minRecommendationRequestsPerSecond. There's a short time delay while the capacity is increased that might cause loss of requests.  Your bill is the greater of either the minimum requests per hour (based on minRecommendationRequestsPerSecond) or the actual number of requests. The actual request throughput used is calculated as the average requests/second within a one-hour window. We recommend starting with the default minRecommendationRequestsPerSecond, track your usage using Amazon CloudWatch metrics, and then increase the minRecommendationRequestsPerSecond as necessary.   Status  A recommender can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   STOP PENDING &gt; STOP IN_PROGRESS &gt; INACTIVE &gt; START PENDING &gt; START IN_PROGRESS &gt; ACTIVE   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the recommender status, call DescribeRecommender.  Wait until the status of the recommender is ACTIVE before asking the recommender for recommendations.   Related APIs     ListRecommenders     DescribeRecommender     UpdateRecommender     DeleteRecommender   
+    */
+  def createRecommender(params: CreateRecommenderRequest): Request[CreateRecommenderResponse, AWSError] = js.native
+  def createRecommender(
+    params: CreateRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRecommenderResponse, Unit]
+  ): Request[CreateRecommenderResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format. Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. If you are creating a schema for a dataset in a Domain dataset group, you provide the domain of the Domain dataset group. You specify a schema when you call CreateDataset.  Related APIs     ListSchemas     DescribeSchema     DeleteSchema   
     */
   def createSchema(): Request[CreateSchemaResponse, AWSError] = js.native
   def createSchema(callback: js.Function2[/* err */ AWSError, /* data */ CreateSchemaResponse, Unit]): Request[CreateSchemaResponse, AWSError] = js.native
   /**
-    * Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format. Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. You specify a schema when you call CreateDataset.  Related APIs     ListSchemas     DescribeSchema     DeleteSchema   
+    * Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format. Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. If you are creating a schema for a dataset in a Domain dataset group, you provide the domain of the Domain dataset group. You specify a schema when you call CreateDataset.  Related APIs     ListSchemas     DescribeSchema     DeleteSchema   
     */
   def createSchema(params: CreateSchemaRequest): Request[CreateSchemaResponse, AWSError] = js.native
   def createSchema(
@@ -127,12 +169,12 @@ trait Personalize extends Service {
   ): Request[CreateSchemaResponse, AWSError] = js.native
   
   /**
-    * Creates the configuration for training a model. A trained model is known as a solution. After the configuration is created, you train the model (create a solution) by calling the CreateSolutionVersion operation. Every time you call CreateSolutionVersion, a new version of the solution is created. After creating a solution version, you check its accuracy by calling GetSolutionMetrics. When you are satisfied with the version, you deploy it using CreateCampaign. The campaign provides recommendations to a client through the GetRecommendations API. To train a model, Amazon Personalize requires training data and a recipe. The training data comes from the dataset group that you provide in the request. A recipe specifies the training algorithm and a feature transformation. You can specify one of the predefined recipes provided by Amazon Personalize. Alternatively, you can specify performAutoML and Amazon Personalize will analyze your data and select the optimum USER_PERSONALIZATION recipe for you.  Status  A solution can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the solution, call DescribeSolution. Wait until the status shows as ACTIVE before calling CreateSolutionVersion.  Related APIs     ListSolutions     CreateSolutionVersion     DescribeSolution     DeleteSolution       ListSolutionVersions     DescribeSolutionVersion   
+    * Creates the configuration for training a model. A trained model is known as a solution. After the configuration is created, you train the model (create a solution) by calling the CreateSolutionVersion operation. Every time you call CreateSolutionVersion, a new version of the solution is created. After creating a solution version, you check its accuracy by calling GetSolutionMetrics. When you are satisfied with the version, you deploy it using CreateCampaign. The campaign provides recommendations to a client through the GetRecommendations API. To train a model, Amazon Personalize requires training data and a recipe. The training data comes from the dataset group that you provide in the request. A recipe specifies the training algorithm and a feature transformation. You can specify one of the predefined recipes provided by Amazon Personalize. Alternatively, you can specify performAutoML and Amazon Personalize will analyze your data and select the optimum USER_PERSONALIZATION recipe for you.  Amazon Personalize doesn't support configuring the hpoObjective for solution hyperparameter optimization at this time.   Status  A solution can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the solution, call DescribeSolution. Wait until the status shows as ACTIVE before calling CreateSolutionVersion.  Related APIs     ListSolutions     CreateSolutionVersion     DescribeSolution     DeleteSolution       ListSolutionVersions     DescribeSolutionVersion   
     */
   def createSolution(): Request[CreateSolutionResponse, AWSError] = js.native
   def createSolution(callback: js.Function2[/* err */ AWSError, /* data */ CreateSolutionResponse, Unit]): Request[CreateSolutionResponse, AWSError] = js.native
   /**
-    * Creates the configuration for training a model. A trained model is known as a solution. After the configuration is created, you train the model (create a solution) by calling the CreateSolutionVersion operation. Every time you call CreateSolutionVersion, a new version of the solution is created. After creating a solution version, you check its accuracy by calling GetSolutionMetrics. When you are satisfied with the version, you deploy it using CreateCampaign. The campaign provides recommendations to a client through the GetRecommendations API. To train a model, Amazon Personalize requires training data and a recipe. The training data comes from the dataset group that you provide in the request. A recipe specifies the training algorithm and a feature transformation. You can specify one of the predefined recipes provided by Amazon Personalize. Alternatively, you can specify performAutoML and Amazon Personalize will analyze your data and select the optimum USER_PERSONALIZATION recipe for you.  Status  A solution can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the solution, call DescribeSolution. Wait until the status shows as ACTIVE before calling CreateSolutionVersion.  Related APIs     ListSolutions     CreateSolutionVersion     DescribeSolution     DeleteSolution       ListSolutionVersions     DescribeSolutionVersion   
+    * Creates the configuration for training a model. A trained model is known as a solution. After the configuration is created, you train the model (create a solution) by calling the CreateSolutionVersion operation. Every time you call CreateSolutionVersion, a new version of the solution is created. After creating a solution version, you check its accuracy by calling GetSolutionMetrics. When you are satisfied with the version, you deploy it using CreateCampaign. The campaign provides recommendations to a client through the GetRecommendations API. To train a model, Amazon Personalize requires training data and a recipe. The training data comes from the dataset group that you provide in the request. A recipe specifies the training algorithm and a feature transformation. You can specify one of the predefined recipes provided by Amazon Personalize. Alternatively, you can specify performAutoML and Amazon Personalize will analyze your data and select the optimum USER_PERSONALIZATION recipe for you.  Amazon Personalize doesn't support configuring the hpoObjective for solution hyperparameter optimization at this time.   Status  A solution can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the status of the solution, call DescribeSolution. Wait until the status shows as ACTIVE before calling CreateSolutionVersion.  Related APIs     ListSolutions     CreateSolutionVersion     DescribeSolution     DeleteSolution       ListSolutionVersions     DescribeSolutionVersion   
     */
   def createSolution(params: CreateSolutionRequest): Request[CreateSolutionResponse, AWSError] = js.native
   def createSolution(
@@ -141,12 +183,12 @@ trait Personalize extends Service {
   ): Request[CreateSolutionResponse, AWSError] = js.native
   
   /**
-    * Trains or retrains an active solution. A solution is created using the CreateSolution operation and must be in the ACTIVE state before calling CreateSolutionVersion. A new version of the solution is created every time you call this operation.  Status  A solution version can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the version, call DescribeSolutionVersion. Wait until the status shows as ACTIVE before calling CreateCampaign. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Related APIs     ListSolutionVersions     DescribeSolutionVersion       ListSolutions     CreateSolution     DescribeSolution     DeleteSolution   
+    * Trains or retrains an active solution in a Custom dataset group. A solution is created using the CreateSolution operation and must be in the ACTIVE state before calling CreateSolutionVersion. A new version of the solution is created every time you call this operation.  Status  A solution version can be in one of the following states:   CREATE PENDING   CREATE IN_PROGRESS   ACTIVE   CREATE FAILED   CREATE STOPPING   CREATE STOPPED   To get the status of the version, call DescribeSolutionVersion. Wait until the status shows as ACTIVE before calling CreateCampaign. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Related APIs     ListSolutionVersions     DescribeSolutionVersion     ListSolutions     CreateSolution     DescribeSolution     DeleteSolution   
     */
   def createSolutionVersion(): Request[CreateSolutionVersionResponse, AWSError] = js.native
   def createSolutionVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateSolutionVersionResponse, Unit]): Request[CreateSolutionVersionResponse, AWSError] = js.native
   /**
-    * Trains or retrains an active solution. A solution is created using the CreateSolution operation and must be in the ACTIVE state before calling CreateSolutionVersion. A new version of the solution is created every time you call this operation.  Status  A solution version can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   To get the status of the version, call DescribeSolutionVersion. Wait until the status shows as ACTIVE before calling CreateCampaign. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Related APIs     ListSolutionVersions     DescribeSolutionVersion       ListSolutions     CreateSolution     DescribeSolution     DeleteSolution   
+    * Trains or retrains an active solution in a Custom dataset group. A solution is created using the CreateSolution operation and must be in the ACTIVE state before calling CreateSolutionVersion. A new version of the solution is created every time you call this operation.  Status  A solution version can be in one of the following states:   CREATE PENDING   CREATE IN_PROGRESS   ACTIVE   CREATE FAILED   CREATE STOPPING   CREATE STOPPED   To get the status of the version, call DescribeSolutionVersion. Wait until the status shows as ACTIVE before calling CreateCampaign. If the status shows as CREATE FAILED, the response includes a failureReason key, which describes why the job failed.  Related APIs     ListSolutionVersions     DescribeSolutionVersion     ListSolutions     CreateSolution     DescribeSolution     DeleteSolution   
     */
   def createSolutionVersion(params: CreateSolutionVersionRequest): Request[CreateSolutionVersionResponse, AWSError] = js.native
   def createSolutionVersion(
@@ -155,12 +197,12 @@ trait Personalize extends Service {
   ): Request[CreateSolutionVersionResponse, AWSError] = js.native
   
   /**
-    * Removes a campaign by deleting the solution deployment. The solution that the campaign is based on is not deleted and can be redeployed when needed. A deleted campaign can no longer be specified in a GetRecommendations request. For more information on campaigns, see CreateCampaign.
+    * Removes a campaign by deleting the solution deployment. The solution that the campaign is based on is not deleted and can be redeployed when needed. A deleted campaign can no longer be specified in a GetRecommendations request. For information on creating campaigns, see CreateCampaign.
     */
   def deleteCampaign(): Request[js.Object, AWSError] = js.native
   def deleteCampaign(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a campaign by deleting the solution deployment. The solution that the campaign is based on is not deleted and can be redeployed when needed. A deleted campaign can no longer be specified in a GetRecommendations request. For more information on campaigns, see CreateCampaign.
+    * Removes a campaign by deleting the solution deployment. The solution that the campaign is based on is not deleted and can be redeployed when needed. A deleted campaign can no longer be specified in a GetRecommendations request. For information on creating campaigns, see CreateCampaign.
     */
   def deleteCampaign(params: DeleteCampaignRequest): Request[js.Object, AWSError] = js.native
   def deleteCampaign(
@@ -225,6 +267,20 @@ trait Personalize extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Deactivates and removes a recommender. A deleted recommender can no longer be specified in a GetRecommendations request.
+    */
+  def deleteRecommender(): Request[js.Object, AWSError] = js.native
+  def deleteRecommender(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deactivates and removes a recommender. A deleted recommender can no longer be specified in a GetRecommendations request.
+    */
+  def deleteRecommender(params: DeleteRecommenderRequest): Request[js.Object, AWSError] = js.native
+  def deleteRecommender(
+    params: DeleteRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Deletes a schema. Before deleting a schema, you must delete all datasets referencing the schema. For more information on schemas, see CreateSchema.
     */
   def deleteSchema(): Request[js.Object, AWSError] = js.native
@@ -281,6 +337,20 @@ trait Personalize extends Service {
   ): Request[DescribeBatchInferenceJobResponse, AWSError] = js.native
   
   /**
+    * Gets the properties of a batch segment job including name, Amazon Resource Name (ARN), status, input and output configurations, and the ARN of the solution version used to generate segments.
+    */
+  def describeBatchSegmentJob(): Request[DescribeBatchSegmentJobResponse, AWSError] = js.native
+  def describeBatchSegmentJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchSegmentJobResponse, Unit]): Request[DescribeBatchSegmentJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties of a batch segment job including name, Amazon Resource Name (ARN), status, input and output configurations, and the ARN of the solution version used to generate segments.
+    */
+  def describeBatchSegmentJob(params: DescribeBatchSegmentJobRequest): Request[DescribeBatchSegmentJobResponse, AWSError] = js.native
+  def describeBatchSegmentJob(
+    params: DescribeBatchSegmentJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchSegmentJobResponse, Unit]
+  ): Request[DescribeBatchSegmentJobResponse, AWSError] = js.native
+  
+  /**
     * Describes the given campaign, including its status. A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   When the status is CREATE FAILED, the response includes the failureReason key, which describes why. For more information on campaigns, see CreateCampaign.
     */
   def describeCampaign(): Request[DescribeCampaignResponse, AWSError] = js.native
@@ -307,6 +377,20 @@ trait Personalize extends Service {
     params: DescribeDatasetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetResponse, Unit]
   ): Request[DescribeDatasetResponse, AWSError] = js.native
+  
+  /**
+    * Describes the dataset export job created by CreateDatasetExportJob, including the export job status.
+    */
+  def describeDatasetExportJob(): Request[DescribeDatasetExportJobResponse, AWSError] = js.native
+  def describeDatasetExportJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetExportJobResponse, Unit]): Request[DescribeDatasetExportJobResponse, AWSError] = js.native
+  /**
+    * Describes the dataset export job created by CreateDatasetExportJob, including the export job status.
+    */
+  def describeDatasetExportJob(params: DescribeDatasetExportJobRequest): Request[DescribeDatasetExportJobResponse, AWSError] = js.native
+  def describeDatasetExportJob(
+    params: DescribeDatasetExportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetExportJobResponse, Unit]
+  ): Request[DescribeDatasetExportJobResponse, AWSError] = js.native
   
   /**
     * Describes the given dataset group. For more information on dataset groups, see CreateDatasetGroup.
@@ -393,6 +477,20 @@ trait Personalize extends Service {
   ): Request[DescribeRecipeResponse, AWSError] = js.native
   
   /**
+    * Describes the given recommender, including its status. A recommender can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   STOP PENDING &gt; STOP IN_PROGRESS &gt; INACTIVE &gt; START PENDING &gt; START IN_PROGRESS &gt; ACTIVE   DELETE PENDING &gt; DELETE IN_PROGRESS   When the status is CREATE FAILED, the response includes the failureReason key, which describes why. The modelMetrics key is null when the recommender is being created or deleted. For more information on recommenders, see CreateRecommender.
+    */
+  def describeRecommender(): Request[DescribeRecommenderResponse, AWSError] = js.native
+  def describeRecommender(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommenderResponse, Unit]): Request[DescribeRecommenderResponse, AWSError] = js.native
+  /**
+    * Describes the given recommender, including its status. A recommender can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   STOP PENDING &gt; STOP IN_PROGRESS &gt; INACTIVE &gt; START PENDING &gt; START IN_PROGRESS &gt; ACTIVE   DELETE PENDING &gt; DELETE IN_PROGRESS   When the status is CREATE FAILED, the response includes the failureReason key, which describes why. The modelMetrics key is null when the recommender is being created or deleted. For more information on recommenders, see CreateRecommender.
+    */
+  def describeRecommender(params: DescribeRecommenderRequest): Request[DescribeRecommenderResponse, AWSError] = js.native
+  def describeRecommender(
+    params: DescribeRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommenderResponse, Unit]
+  ): Request[DescribeRecommenderResponse, AWSError] = js.native
+  
+  /**
     * Describes a schema. For more information on schemas, see CreateSchema.
     */
   def describeSchema(): Request[DescribeSchemaResponse, AWSError] = js.native
@@ -421,12 +519,12 @@ trait Personalize extends Service {
   ): Request[DescribeSolutionResponse, AWSError] = js.native
   
   /**
-    * Describes a specific version of a solution. For more information on solutions, see CreateSolution.
+    * Describes a specific version of a solution. For more information on solutions, see CreateSolution 
     */
   def describeSolutionVersion(): Request[DescribeSolutionVersionResponse, AWSError] = js.native
   def describeSolutionVersion(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSolutionVersionResponse, Unit]): Request[DescribeSolutionVersionResponse, AWSError] = js.native
   /**
-    * Describes a specific version of a solution. For more information on solutions, see CreateSolution.
+    * Describes a specific version of a solution. For more information on solutions, see CreateSolution 
     */
   def describeSolutionVersion(params: DescribeSolutionVersionRequest): Request[DescribeSolutionVersionResponse, AWSError] = js.native
   def describeSolutionVersion(
@@ -463,6 +561,20 @@ trait Personalize extends Service {
   ): Request[ListBatchInferenceJobsResponse, AWSError] = js.native
   
   /**
+    * Gets a list of the batch segment jobs that have been performed off of a solution version that you specify.
+    */
+  def listBatchSegmentJobs(): Request[ListBatchSegmentJobsResponse, AWSError] = js.native
+  def listBatchSegmentJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListBatchSegmentJobsResponse, Unit]): Request[ListBatchSegmentJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the batch segment jobs that have been performed off of a solution version that you specify.
+    */
+  def listBatchSegmentJobs(params: ListBatchSegmentJobsRequest): Request[ListBatchSegmentJobsResponse, AWSError] = js.native
+  def listBatchSegmentJobs(
+    params: ListBatchSegmentJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBatchSegmentJobsResponse, Unit]
+  ): Request[ListBatchSegmentJobsResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of campaigns that use the given solution. When a solution is not specified, all the campaigns associated with the account are listed. The response provides the properties for each campaign, including the Amazon Resource Name (ARN). For more information on campaigns, see CreateCampaign.
     */
   def listCampaigns(): Request[ListCampaignsResponse, AWSError] = js.native
@@ -475,6 +587,20 @@ trait Personalize extends Service {
     params: ListCampaignsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCampaignsResponse, Unit]
   ): Request[ListCampaignsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of dataset export jobs that use the given dataset. When a dataset is not specified, all the dataset export jobs associated with the account are listed. The response provides the properties for each dataset export job, including the Amazon Resource Name (ARN). For more information on dataset export jobs, see CreateDatasetExportJob. For more information on datasets, see CreateDataset.
+    */
+  def listDatasetExportJobs(): Request[ListDatasetExportJobsResponse, AWSError] = js.native
+  def listDatasetExportJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetExportJobsResponse, Unit]): Request[ListDatasetExportJobsResponse, AWSError] = js.native
+  /**
+    * Returns a list of dataset export jobs that use the given dataset. When a dataset is not specified, all the dataset export jobs associated with the account are listed. The response provides the properties for each dataset export job, including the Amazon Resource Name (ARN). For more information on dataset export jobs, see CreateDatasetExportJob. For more information on datasets, see CreateDataset.
+    */
+  def listDatasetExportJobs(params: ListDatasetExportJobsRequest): Request[ListDatasetExportJobsResponse, AWSError] = js.native
+  def listDatasetExportJobs(
+    params: ListDatasetExportJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetExportJobsResponse, Unit]
+  ): Request[ListDatasetExportJobsResponse, AWSError] = js.native
   
   /**
     * Returns a list of dataset groups. The response provides the properties for each dataset group, including the Amazon Resource Name (ARN). For more information on dataset groups, see CreateDatasetGroup.
@@ -561,6 +687,20 @@ trait Personalize extends Service {
   ): Request[ListRecipesResponse, AWSError] = js.native
   
   /**
+    * Returns a list of recommenders in a given Domain dataset group. When a Domain dataset group is not specified, all the recommenders associated with the account are listed. The response provides the properties for each recommender, including the Amazon Resource Name (ARN). For more information on recommenders, see CreateRecommender.
+    */
+  def listRecommenders(): Request[ListRecommendersResponse, AWSError] = js.native
+  def listRecommenders(callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendersResponse, Unit]): Request[ListRecommendersResponse, AWSError] = js.native
+  /**
+    * Returns a list of recommenders in a given Domain dataset group. When a Domain dataset group is not specified, all the recommenders associated with the account are listed. The response provides the properties for each recommender, including the Amazon Resource Name (ARN). For more information on recommenders, see CreateRecommender.
+    */
+  def listRecommenders(params: ListRecommendersRequest): Request[ListRecommendersResponse, AWSError] = js.native
+  def listRecommenders(
+    params: ListRecommendersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendersResponse, Unit]
+  ): Request[ListRecommendersResponse, AWSError] = js.native
+  
+  /**
     * Returns the list of schemas associated with the account. The response provides the properties for each schema, including the Amazon Resource Name (ARN). For more information on schemas, see CreateSchema.
     */
   def listSchemas(): Request[ListSchemasResponse, AWSError] = js.native
@@ -575,12 +715,12 @@ trait Personalize extends Service {
   ): Request[ListSchemasResponse, AWSError] = js.native
   
   /**
-    * Returns a list of solution versions for the given solution. When a solution is not specified, all the solution versions associated with the account are listed. The response provides the properties for each solution version, including the Amazon Resource Name (ARN). For more information on solutions, see CreateSolution.
+    * Returns a list of solution versions for the given solution. When a solution is not specified, all the solution versions associated with the account are listed. The response provides the properties for each solution version, including the Amazon Resource Name (ARN).
     */
   def listSolutionVersions(): Request[ListSolutionVersionsResponse, AWSError] = js.native
   def listSolutionVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListSolutionVersionsResponse, Unit]): Request[ListSolutionVersionsResponse, AWSError] = js.native
   /**
-    * Returns a list of solution versions for the given solution. When a solution is not specified, all the solution versions associated with the account are listed. The response provides the properties for each solution version, including the Amazon Resource Name (ARN). For more information on solutions, see CreateSolution.
+    * Returns a list of solution versions for the given solution. When a solution is not specified, all the solution versions associated with the account are listed. The response provides the properties for each solution version, including the Amazon Resource Name (ARN).
     */
   def listSolutionVersions(params: ListSolutionVersionsRequest): Request[ListSolutionVersionsResponse, AWSError] = js.native
   def listSolutionVersions(
@@ -603,16 +743,114 @@ trait Personalize extends Service {
   ): Request[ListSolutionsResponse, AWSError] = js.native
   
   /**
-    * Updates a campaign by either deploying a new solution or changing the value of the campaign's minProvisionedTPS parameter. To update a campaign, the campaign status must be ACTIVE or CREATE FAILED. Check the campaign status using the DescribeCampaign API.  You must wait until the status of the updated campaign is ACTIVE before asking the campaign for recommendations.  For more information on campaigns, see CreateCampaign.
+    * Get a list of tags attached to a resource.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Get a list of tags attached to a resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Starts a recommender that is INACTIVE. Starting a recommender does not create any new models, but resumes billing and automatic retraining for the recommender.
+    */
+  def startRecommender(): Request[StartRecommenderResponse, AWSError] = js.native
+  def startRecommender(callback: js.Function2[/* err */ AWSError, /* data */ StartRecommenderResponse, Unit]): Request[StartRecommenderResponse, AWSError] = js.native
+  /**
+    * Starts a recommender that is INACTIVE. Starting a recommender does not create any new models, but resumes billing and automatic retraining for the recommender.
+    */
+  def startRecommender(params: StartRecommenderRequest): Request[StartRecommenderResponse, AWSError] = js.native
+  def startRecommender(
+    params: StartRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartRecommenderResponse, Unit]
+  ): Request[StartRecommenderResponse, AWSError] = js.native
+  
+  /**
+    * Stops a recommender that is ACTIVE. Stopping a recommender halts billing and automatic retraining for the recommender.
+    */
+  def stopRecommender(): Request[StopRecommenderResponse, AWSError] = js.native
+  def stopRecommender(callback: js.Function2[/* err */ AWSError, /* data */ StopRecommenderResponse, Unit]): Request[StopRecommenderResponse, AWSError] = js.native
+  /**
+    * Stops a recommender that is ACTIVE. Stopping a recommender halts billing and automatic retraining for the recommender.
+    */
+  def stopRecommender(params: StopRecommenderRequest): Request[StopRecommenderResponse, AWSError] = js.native
+  def stopRecommender(
+    params: StopRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopRecommenderResponse, Unit]
+  ): Request[StopRecommenderResponse, AWSError] = js.native
+  
+  /**
+    * Stops creating a solution version that is in a state of CREATE_PENDING or CREATE IN_PROGRESS.  Depending on the current state of the solution version, the solution version state changes as follows:   CREATE_PENDING &gt; CREATE_STOPPED or   CREATE_IN_PROGRESS &gt; CREATE_STOPPING &gt; CREATE_STOPPED   You are billed for all of the training completed up until you stop the solution version creation. You cannot resume creating a solution version once it has been stopped.
+    */
+  def stopSolutionVersionCreation(): Request[js.Object, AWSError] = js.native
+  def stopSolutionVersionCreation(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Stops creating a solution version that is in a state of CREATE_PENDING or CREATE IN_PROGRESS.  Depending on the current state of the solution version, the solution version state changes as follows:   CREATE_PENDING &gt; CREATE_STOPPED or   CREATE_IN_PROGRESS &gt; CREATE_STOPPING &gt; CREATE_STOPPED   You are billed for all of the training completed up until you stop the solution version creation. You cannot resume creating a solution version once it has been stopped.
+    */
+  def stopSolutionVersionCreation(params: StopSolutionVersionCreationRequest): Request[js.Object, AWSError] = js.native
+  def stopSolutionVersionCreation(
+    params: StopSolutionVersionCreationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Add a list of tags to a resource.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Add a list of tags to a resource.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Remove tags that are attached to a resource.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Remove tags that are attached to a resource.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates a campaign by either deploying a new solution or changing the value of the campaign's minProvisionedTPS parameter. To update a campaign, the campaign status must be ACTIVE or CREATE FAILED. Check the campaign status using the DescribeCampaign operation.  You can still get recommendations from a campaign while an update is in progress. The campaign will use the previous solution version and campaign configuration to generate recommendations until the latest campaign update status is Active.   For more information on campaigns, see CreateCampaign.
     */
   def updateCampaign(): Request[UpdateCampaignResponse, AWSError] = js.native
   def updateCampaign(callback: js.Function2[/* err */ AWSError, /* data */ UpdateCampaignResponse, Unit]): Request[UpdateCampaignResponse, AWSError] = js.native
   /**
-    * Updates a campaign by either deploying a new solution or changing the value of the campaign's minProvisionedTPS parameter. To update a campaign, the campaign status must be ACTIVE or CREATE FAILED. Check the campaign status using the DescribeCampaign API.  You must wait until the status of the updated campaign is ACTIVE before asking the campaign for recommendations.  For more information on campaigns, see CreateCampaign.
+    * Updates a campaign by either deploying a new solution or changing the value of the campaign's minProvisionedTPS parameter. To update a campaign, the campaign status must be ACTIVE or CREATE FAILED. Check the campaign status using the DescribeCampaign operation.  You can still get recommendations from a campaign while an update is in progress. The campaign will use the previous solution version and campaign configuration to generate recommendations until the latest campaign update status is Active.   For more information on campaigns, see CreateCampaign.
     */
   def updateCampaign(params: UpdateCampaignRequest): Request[UpdateCampaignResponse, AWSError] = js.native
   def updateCampaign(
     params: UpdateCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCampaignResponse, Unit]
   ): Request[UpdateCampaignResponse, AWSError] = js.native
+  
+  /**
+    * Updates the recommender to modify the recommender configuration.
+    */
+  def updateRecommender(): Request[UpdateRecommenderResponse, AWSError] = js.native
+  def updateRecommender(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecommenderResponse, Unit]): Request[UpdateRecommenderResponse, AWSError] = js.native
+  /**
+    * Updates the recommender to modify the recommender configuration.
+    */
+  def updateRecommender(params: UpdateRecommenderRequest): Request[UpdateRecommenderResponse, AWSError] = js.native
+  def updateRecommender(
+    params: UpdateRecommenderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecommenderResponse, Unit]
+  ): Request[UpdateRecommenderResponse, AWSError] = js.native
 }

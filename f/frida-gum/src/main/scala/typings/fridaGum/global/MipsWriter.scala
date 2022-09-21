@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MipsWriter")
 @js.native
-class MipsWriter protected ()
+open class MipsWriter protected ()
   extends StObject
      with typings.fridaGum.MipsWriter {
   /**

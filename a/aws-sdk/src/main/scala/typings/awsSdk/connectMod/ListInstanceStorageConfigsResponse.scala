@@ -33,6 +33,6 @@ object ListInstanceStorageConfigsResponse {
     
     inline def setStorageConfigsUndefined: Self = StObject.set(x, "StorageConfigs", js.undefined)
     
-    inline def setStorageConfigsVarargs(value: InstanceStorageConfig*): Self = StObject.set(x, "StorageConfigs", js.Array(value :_*))
+    inline def setStorageConfigsVarargs(value: InstanceStorageConfig*): Self = StObject.set(x, "StorageConfigs", js.Array(value*))
   }
 }

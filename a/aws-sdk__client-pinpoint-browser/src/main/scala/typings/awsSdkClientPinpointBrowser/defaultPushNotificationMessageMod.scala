@@ -8,5 +8,5 @@ object defaultPushNotificationMessageMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_DefaultPushNotificationMessage", "_DefaultPushNotificationMessage")
   @js.native
-  val DefaultPushNotificationMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DefaultPushNotificationMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

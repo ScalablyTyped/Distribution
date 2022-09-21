@@ -26,7 +26,10 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the tag, for example: "projects/p1/locations/us-central1/repositories/repo1/packages/pkg1/tags/tag1". */
+  /**
+    * The name of the tag, for example: "projects/p1/locations/us-central1/repositories/repo1/packages/pkg1/tags/tag1". If the package part contains slashes, the slashes are escaped.
+    * The tag part can only have characters in [a-zA-Z0-9\-._~:@], anything else must be URL encoded.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

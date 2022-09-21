@@ -13,7 +13,7 @@ trait IHTMLImgElement extends StObject {
   
   var alt: String
   
-  var border: js.Any
+  var border: Any
   
   val complete: Boolean
   
@@ -35,7 +35,7 @@ trait IHTMLImgElement extends StObject {
   
   var isMap: Boolean
   
-  var loop: js.Any
+  var loop: Any
   
   var lowsrc: String
   
@@ -45,11 +45,11 @@ trait IHTMLImgElement extends StObject {
   
   val nameProp: String
   
-  var onabort: js.Any
+  var onabort: Any
   
-  var onerror: js.Any
+  var onerror: Any
   
-  var onload: js.Any
+  var onload: Any
   
   val protocol: String
   
@@ -73,7 +73,7 @@ object IHTMLImgElement {
     MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement,
     align: String,
     alt: String,
-    border: js.Any,
+    border: Any,
     complete: Boolean,
     dynsrc: String,
     fileCreatedDate: String,
@@ -84,14 +84,14 @@ object IHTMLImgElement {
     href: String,
     hspace: Double,
     isMap: Boolean,
-    loop: js.Any,
+    loop: Any,
     lowsrc: String,
     mimeType: String,
     name: String,
     nameProp: String,
-    onabort: js.Any,
-    onerror: js.Any,
-    onload: js.Any,
+    onabort: Any,
+    onerror: Any,
+    onload: Any,
     protocol: String,
     readyState: String,
     src: String,
@@ -112,7 +112,7 @@ object IHTMLImgElement {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    inline def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object IHTMLImgElement {
     
     inline def setIsMap(value: Boolean): Self = StObject.set(x, "isMap", value.asInstanceOf[js.Any])
     
-    inline def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLowsrc(value: String): Self = StObject.set(x, "lowsrc", value.asInstanceOf[js.Any])
     
@@ -146,11 +146,11 @@ object IHTMLImgElement {
     
     inline def setNameProp(value: String): Self = StObject.set(x, "nameProp", value.asInstanceOf[js.Any])
     
-    inline def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
-    inline def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    inline def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
     inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     

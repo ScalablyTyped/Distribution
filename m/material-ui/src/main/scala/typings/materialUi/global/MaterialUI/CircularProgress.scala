@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.CircularProgress")
 @js.native
-class CircularProgress ()
-  extends Component[CircularProgressProps, js.Object, js.Any]
+open class CircularProgress ()
+  extends Component[CircularProgressProps, js.Object, Any]

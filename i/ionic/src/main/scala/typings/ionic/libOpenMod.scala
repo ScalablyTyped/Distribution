@@ -32,7 +32,7 @@ object libOpenMod {
       
       inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value*))
       
       inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       

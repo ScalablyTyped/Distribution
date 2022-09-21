@@ -1,0 +1,28 @@
+package typings.firebaseFirestore.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait BatchIdNumber extends StObject {
+  
+  var batchId: Double
+  
+  var mutations: js.Array[`34`]
+}
+object BatchIdNumber {
+  
+  inline def apply(batchId: Double, mutations: js.Array[`34`]): BatchIdNumber = {
+    val __obj = js.Dynamic.literal(batchId = batchId.asInstanceOf[js.Any], mutations = mutations.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchIdNumber]
+  }
+  
+  extension [Self <: BatchIdNumber](x: Self) {
+    
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    
+    inline def setMutations(value: js.Array[`34`]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+    
+    inline def setMutationsVarargs(value: `34`*): Self = StObject.set(x, "mutations", js.Array(value*))
+  }
+}

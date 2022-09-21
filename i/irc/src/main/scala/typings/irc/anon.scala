@@ -49,11 +49,11 @@ object anon {
       
       inline def setMaxlist(value: js.Array[Double]): Self = StObject.set(x, "maxlist", value.asInstanceOf[js.Any])
       
-      inline def setMaxlistVarargs(value: Double*): Self = StObject.set(x, "maxlist", js.Array(value :_*))
+      inline def setMaxlistVarargs(value: Double*): Self = StObject.set(x, "maxlist", js.Array(value*))
       
       inline def setMaxtargets(value: js.Array[String]): Self = StObject.set(x, "maxtargets", value.asInstanceOf[js.Any])
       
-      inline def setMaxtargetsVarargs(value: String*): Self = StObject.set(x, "maxtargets", js.Array(value :_*))
+      inline def setMaxtargetsVarargs(value: String*): Self = StObject.set(x, "maxtargets", js.Array(value*))
       
       inline def setModes(value: Double): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
       
@@ -127,13 +127,13 @@ object anon {
       
       inline def setIdlength(value: js.Array[String]): Self = StObject.set(x, "idlength", value.asInstanceOf[js.Any])
       
-      inline def setIdlengthVarargs(value: String*): Self = StObject.set(x, "idlength", js.Array(value :_*))
+      inline def setIdlengthVarargs(value: String*): Self = StObject.set(x, "idlength", js.Array(value*))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLimit(value: js.Array[String]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      inline def setLimitVarargs(value: String*): Self = StObject.set(x, "limit", js.Array(value :_*))
+      inline def setLimitVarargs(value: String*): Self = StObject.set(x, "limit", js.Array(value*))
       
       inline def setModes(value: StringDictionary[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
       

@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def pagination(): JQuery = js.native
-  def pagination(method: String): js.Any = js.native
-  def pagination(method: String, value: js.Any): js.Any = js.native
+  def pagination(method: String): Any = js.native
+  def pagination(method: String, value: Any): Any = js.native
   def pagination(options: SimplePaginationOptions): JQuery = js.native
   /**
     * destroy - Visually destroys the pagination, any existing settings are kept.

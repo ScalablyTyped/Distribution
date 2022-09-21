@@ -14,7 +14,7 @@ trait Conflict extends StObject {
   
   val Index: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -32,7 +32,7 @@ object Conflict {
     Application: Application,
     Creator: Double,
     Index: Double,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Reject: () => Unit,
     Type: WdRevisionType,
@@ -53,7 +53,7 @@ object Conflict {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

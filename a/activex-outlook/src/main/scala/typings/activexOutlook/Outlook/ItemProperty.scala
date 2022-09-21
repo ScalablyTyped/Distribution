@@ -21,7 +21,7 @@ trait ItemProperty extends StObject {
   /* private */ @JSName("Outlook.ItemProperty_typekey")
   var OutlookDotItemProperty_typekey: ItemProperty
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -31,7 +31,7 @@ trait ItemProperty extends StObject {
   
   var ValidationText: String
   
-  var Value: js.Any
+  var Value: Any
 }
 object ItemProperty {
   
@@ -43,12 +43,12 @@ object ItemProperty {
     IsUserProperty: Boolean,
     Name: String,
     OutlookDotItemProperty_typekey: ItemProperty,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Type: OlUserPropertyType,
     ValidationFormula: String,
     ValidationText: String,
-    Value: js.Any
+    Value: Any
   ): ItemProperty = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Formula = Formula.asInstanceOf[js.Any], IsUserProperty = IsUserProperty.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], ValidationFormula = ValidationFormula.asInstanceOf[js.Any], ValidationText = ValidationText.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Outlook.ItemProperty_typekey")(OutlookDotItemProperty_typekey.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object ItemProperty {
     
     inline def setOutlookDotItemProperty_typekey(value: ItemProperty): Self = StObject.set(x, "Outlook.ItemProperty_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object ItemProperty {
     
     inline def setValidationText(value: String): Self = StObject.set(x, "ValidationText", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

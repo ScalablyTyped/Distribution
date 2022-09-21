@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.WMTS")
 @js.native
-class WMTS protected () extends TileImage {
+open class WMTS protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for tile data from WMTS servers.

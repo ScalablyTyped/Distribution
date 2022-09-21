@@ -8,5 +8,5 @@ object mergeOptionRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/MergeOptionRequiredException", "MergeOptionRequiredException")
   @js.native
-  val MergeOptionRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MergeOptionRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

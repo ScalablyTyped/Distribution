@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Interval extends StObject {
   
-  var interval: js.UndefOr[js.Any] = js.undefined
+  var interval: js.UndefOr[Any] = js.undefined
   
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
 object Interval {
   
@@ -19,11 +19,11 @@ object Interval {
   
   extension [Self <: Interval](x: Self) {
     
-    inline def setInterval(value: js.Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -17,7 +17,7 @@ object tabsMod {
   
   @JSImport("rmc-tabs/lib/Tabs", "StateType")
   @js.native
-  class StateType ()
+  open class StateType ()
     extends typings.rmcTabs.tabsBaseMod.StateType {
     
     var contentPos: js.UndefOr[String] = js.native
@@ -27,7 +27,7 @@ object tabsMod {
   
   @JSImport("rmc-tabs/lib/Tabs", "Tabs")
   @js.native
-  class Tabs protected ()
+  open class Tabs protected ()
     extends typings.rmcTabs.tabsBaseMod.Tabs[PropsType, StateType] {
     def this(props: PropsType) = this()
     

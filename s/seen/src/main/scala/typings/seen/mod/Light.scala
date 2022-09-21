@@ -9,13 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Light")
 @js.native
-class Light protected () extends Transformable {
-  def this(`type`: ambient) = this()
-  def this(`type`: directional) = this()
-  def this(`type`: point) = this()
-  def this(`type`: ambient, options: LightOptions) = this()
-  def this(`type`: directional, options: LightOptions) = this()
-  def this(`type`: point, options: LightOptions) = this()
+open class Light protected () extends Transformable {
+  def this(`type`: point | directional | ambient) = this()
+  def this(`type`: point | directional | ambient, options: LightOptions) = this()
   
   var color: Color = js.native
   

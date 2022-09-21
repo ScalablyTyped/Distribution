@@ -1,11 +1,46 @@
 package typings.reactMovable
 
 import typings.react.mod.RefObject
+import typings.std.Event
+import typings.std.MouseEvent
+import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  @js.native
+  trait Call extends StObject {
+    
+    def apply(e: MouseEvent): Unit = js.native
+    
+    def cancel(): Unit = js.native
+  }
+  
+  @js.native
+  trait CallArgs extends StObject {
+    
+    def apply(args: Any*): Unit = js.native
+    
+    def cancel(): Unit = js.native
+  }
+  
+  @js.native
+  trait CallCancel extends StObject {
+    
+    def apply(e: Event): Unit = js.native
+    
+    def cancel(): Unit = js.native
+  }
+  
+  @js.native
+  trait Cancel extends StObject {
+    
+    def apply(e: TouchEvent): Unit = js.native
+    
+    def cancel(): Unit = js.native
+  }
   
   trait Canceled extends StObject {
     
@@ -122,18 +157,18 @@ object anon {
   
   trait Ref extends StObject {
     
-    var ref: RefObject[js.Any]
+    var ref: RefObject[Any]
   }
   object Ref {
     
-    inline def apply(ref: RefObject[js.Any]): Ref = {
+    inline def apply(ref: RefObject[Any]): Ref = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ref]
     }
     
     extension [Self <: Ref](x: Self) {
       
-      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   

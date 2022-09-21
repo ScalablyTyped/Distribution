@@ -41,7 +41,7 @@ object GoogleCloudDialogflowV2beta1IntentTrainingPhrase {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart*): Self = StObject.set(x, "parts", js.Array(value*))
     
     inline def setTimesAddedCount(value: Double): Self = StObject.set(x, "timesAddedCount", value.asInstanceOf[js.Any])
     

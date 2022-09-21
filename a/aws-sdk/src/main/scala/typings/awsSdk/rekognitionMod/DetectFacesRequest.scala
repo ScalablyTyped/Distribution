@@ -29,7 +29,7 @@ object DetectFacesRequest {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }

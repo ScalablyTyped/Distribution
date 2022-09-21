@@ -13,7 +13,7 @@ object taglibLoaderMod {
   
   @JSImport("marko/src/compiler/taglib-loader", "Taglib")
   @js.native
-  class Taglib protected () extends default {
+  open class Taglib protected () extends default {
     def this(filePath: String) = this()
   }
   
@@ -21,9 +21,9 @@ object taglibLoaderMod {
   
   inline def createTaglib(filePath: String): Taglib = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaglib")(filePath.asInstanceOf[js.Any]).asInstanceOf[Taglib]
   
-  inline def loadTag(tagProps: js.Any, filePath: String): typings.marko.tagMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTag")(tagProps.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[typings.marko.tagMod.^]
+  inline def loadTag(tagProps: Any, filePath: String): typings.marko.tagMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTag")(tagProps.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[typings.marko.tagMod.^]
   
   inline def loadTaglibFromFile(filePath: String): Taglib = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTaglibFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[Taglib]
   
-  inline def loadTaglibFromProps(taglib: Taglib, taglibProps: js.Any): Taglib = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTaglibFromProps")(taglib.asInstanceOf[js.Any], taglibProps.asInstanceOf[js.Any])).asInstanceOf[Taglib]
+  inline def loadTaglibFromProps(taglib: Taglib, taglibProps: Any): Taglib = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTaglibFromProps")(taglib.asInstanceOf[js.Any], taglibProps.asInstanceOf[js.Any])).asInstanceOf[Taglib]
 }

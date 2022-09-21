@@ -18,8 +18,8 @@ trait Type extends StObject {
     * Invokes a base method with specified arguments.
     * @returns A value of the class that the base method returns. If the base method does not return a value, no value is returned.
     */
-  def callBaseMethod(instance: js.Any, name: java.lang.String): js.Any = js.native
-  def callBaseMethod(instance: js.Any, name: java.lang.String, baseArguments: js.Array[js.Any]): js.Any = js.native
+  def callBaseMethod(instance: Any, name: java.lang.String): Any = js.native
+  def callBaseMethod(instance: Any, name: java.lang.String, baseArguments: js.Array[Any]): Any = js.native
   
   /**
     * Returns the base implementation of a method from the base class of the specified instance.
@@ -28,7 +28,7 @@ trait Type extends StObject {
     * @param name
     *          The name of the method to retrieve as a reference.
     */
-  def getBaseMethod(instance: js.Object, name: java.lang.String): js.Any = js.native
+  def getBaseMethod(instance: js.Object, name: java.lang.String): Any = js.native
   
   /**
     * Returns the base class of the instance.
@@ -43,7 +43,7 @@ trait Type extends StObject {
     *
     * @return An Array object that contains the list of interfaces that the type implements.
     */
-  def getInterfaces(): js.Array[js.Any] = js.native
+  def getInterfaces(): js.Array[Any] = js.native
   
   /**
     * Returns the name of the type of the instance.
@@ -75,8 +75,8 @@ trait Type extends StObject {
     * @param baseArguments
     *           (Optional) The arguments for the base constructor. Can be null.
     */
-  def initializeBase(instance: js.Any): js.Any = js.native
-  def initializeBase(instance: js.Any, baseArguments: js.Array[js.Any]): js.Any = js.native
+  def initializeBase(instance: Any): Any = js.native
+  def initializeBase(instance: Any, baseArguments: js.Array[Any]): Any = js.native
   
   /**
     * Determines whether an instance implements an interface.
@@ -84,7 +84,7 @@ trait Type extends StObject {
     *           The instance on which the interface is tested.
     * @return
     */
-  def isImplementedBy(typeInstanceVar: js.Any): Boolean = js.native
+  def isImplementedBy(typeInstanceVar: Any): Boolean = js.native
   
   /**
     * Returns a value that indicates whether an object is an instance of a specified class or of one of its derived classes.
@@ -92,7 +92,7 @@ trait Type extends StObject {
     *           The object to test.
     * @return true if instance is an instance of the class; false if instance does not implement the interface, or if it is undefined or null.
     */
-  def isInstanceOfType(instance: js.Any): Boolean = js.native
+  def isInstanceOfType(instance: Any): Boolean = js.native
   
   /**
     * Registers a class as defined by a constructor with an optional base type and interface type.
@@ -104,10 +104,10 @@ trait Type extends StObject {
     *           (Optional) An unbounded array of interface type definitions that the type implements.
     * @return The registered type.
     */
-  def registerClass(typeName: java.lang.String): js.Any = js.native
-  def registerClass(typeName: java.lang.String, baseType: js.Any): js.Any = js.native
-  def registerClass(typeName: java.lang.String, baseType: js.Any, interfaceTypes: js.Array[js.Any]): js.Any = js.native
-  def registerClass(typeName: java.lang.String, baseType: Unit, interfaceTypes: js.Array[js.Any]): js.Any = js.native
+  def registerClass(typeName: java.lang.String): Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: Any): Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: Any, interfaceTypes: js.Array[Any]): Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: Unit, interfaceTypes: js.Array[Any]): Any = js.native
   
   /**
     * Registers an enumeration.
@@ -125,7 +125,7 @@ trait Type extends StObject {
     *           A string that represents the fully qualified name of the class to be registered as an interface.
     * @return The registered interface.
     */
-  def registerInterface(typeName: java.lang.String): js.Any = js.native
+  def registerInterface(typeName: java.lang.String): Any = js.native
   
   /**
     * Copies members from the base class to the prototype associated with the derived class, and continues this process up the inheritance chain. This enables you to reflect on the inherited members of a derived type.

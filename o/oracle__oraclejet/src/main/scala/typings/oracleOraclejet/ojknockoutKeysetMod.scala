@@ -11,7 +11,7 @@ object ojknockoutKeysetMod {
   
   @JSImport("@oracle/oraclejet/ojknockout-keyset", "ObservableExpandedKeySet")
   @js.native
-  class ObservableExpandedKeySet[K] () extends StObject {
+  open class ObservableExpandedKeySet[K] () extends StObject {
     def this(initialValue: ExpandAllKeySet[K]) = this()
     def this(initialValue: ExpandedKeySet[K]) = this()
     

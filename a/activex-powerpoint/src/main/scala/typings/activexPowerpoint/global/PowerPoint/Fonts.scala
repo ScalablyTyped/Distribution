@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Fonts")
 @js.native
-/* private */ class Fonts ()
+/* private */ open class Fonts ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Fonts {
   
@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexPowerpoint.PowerPoint.Font = js.native
+  override def Item(Index: Any): typings.activexPowerpoint.PowerPoint.Font = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Fonts_typekey")

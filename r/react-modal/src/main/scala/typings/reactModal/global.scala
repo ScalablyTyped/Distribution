@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("ReactModal")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactModal.mod.^
     
     @JSGlobal("ReactModal")

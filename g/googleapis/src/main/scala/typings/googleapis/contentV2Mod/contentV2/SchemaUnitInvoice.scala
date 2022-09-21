@@ -39,13 +39,13 @@ object SchemaUnitInvoice {
     
     inline def setAdditionalChargesUndefined: Self = StObject.set(x, "additionalCharges", js.undefined)
     
-    inline def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value :_*))
+    inline def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value*))
     
     inline def setPromotions(value: js.Array[SchemaPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    inline def setPromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotions", js.Array(value*))
     
     inline def setUnitPricePretax(value: SchemaPrice): Self = StObject.set(x, "unitPricePretax", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object SchemaUnitInvoice {
     
     inline def setUnitPriceTaxesUndefined: Self = StObject.set(x, "unitPriceTaxes", js.undefined)
     
-    inline def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value :_*))
+    inline def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value*))
   }
 }

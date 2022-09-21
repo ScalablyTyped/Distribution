@@ -31,7 +31,7 @@ trait AppEngineHttpRequest extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -68,7 +68,7 @@ object AppEngineHttpRequest {
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

@@ -1,9 +1,10 @@
 package typings.sanitizeHtml
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlparser2.mod.ParserOptions
+import typings.htmlparser2.libParserMod.ParserOptions
 import typings.sanitizeHtml.anon.Multiple
-import typings.std.RegExp
+import typings.sanitizeHtml.sanitizeHtmlBooleans.`false`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +20,11 @@ object mod {
   
   @JSImport("sanitize-html", "defaults")
   @js.native
-  def defaults: IDefaults = js.native
-  inline def defaults_=(x: IDefaults): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  val defaults: IDefaults = js.native
+  
+  @JSImport("sanitize-html", "options")
+  @js.native
+  val options: IOptions = js.native
   
   inline def simpleTransform(tagName: String, attribs: Attributes): Transformer = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleTransform")(tagName.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any])).asInstanceOf[Transformer]
   inline def simpleTransform(tagName: String, attribs: Attributes, merge: Boolean): Transformer = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleTransform")(tagName.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], merge.asInstanceOf[js.Any])).asInstanceOf[Transformer]
@@ -49,7 +53,7 @@ object mod {
     
     var allowProtocolRelative: Boolean
     
-    var allowedAttributes: StringDictionary[js.Array[AllowedAttribute]]
+    var allowedAttributes: Record[String, js.Array[AllowedAttribute]]
     
     var allowedSchemes: js.Array[String]
     
@@ -59,7 +63,7 @@ object mod {
     
     var allowedTags: js.Array[String]
     
-    var disallowedTagsMode: String
+    var disallowedTagsMode: DisallowedTagsModes
     
     var enforceHtmlBoundary: Boolean
     
@@ -69,12 +73,12 @@ object mod {
     
     inline def apply(
       allowProtocolRelative: Boolean,
-      allowedAttributes: StringDictionary[js.Array[AllowedAttribute]],
+      allowedAttributes: Record[String, js.Array[AllowedAttribute]],
       allowedSchemes: js.Array[String],
       allowedSchemesAppliedToAttributes: js.Array[String],
       allowedSchemesByTag: StringDictionary[js.Array[String]],
       allowedTags: js.Array[String],
-      disallowedTagsMode: String,
+      disallowedTagsMode: DisallowedTagsModes,
       enforceHtmlBoundary: Boolean,
       selfClosing: js.Array[String]
     ): IDefaults = {
@@ -86,29 +90,29 @@ object mod {
       
       inline def setAllowProtocolRelative(value: Boolean): Self = StObject.set(x, "allowProtocolRelative", value.asInstanceOf[js.Any])
       
-      inline def setAllowedAttributes(value: StringDictionary[js.Array[AllowedAttribute]]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
+      inline def setAllowedAttributes(value: Record[String, js.Array[AllowedAttribute]]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
       
       inline def setAllowedSchemes(value: js.Array[String]): Self = StObject.set(x, "allowedSchemes", value.asInstanceOf[js.Any])
       
       inline def setAllowedSchemesAppliedToAttributes(value: js.Array[String]): Self = StObject.set(x, "allowedSchemesAppliedToAttributes", value.asInstanceOf[js.Any])
       
-      inline def setAllowedSchemesAppliedToAttributesVarargs(value: String*): Self = StObject.set(x, "allowedSchemesAppliedToAttributes", js.Array(value :_*))
+      inline def setAllowedSchemesAppliedToAttributesVarargs(value: String*): Self = StObject.set(x, "allowedSchemesAppliedToAttributes", js.Array(value*))
       
       inline def setAllowedSchemesByTag(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "allowedSchemesByTag", value.asInstanceOf[js.Any])
       
-      inline def setAllowedSchemesVarargs(value: String*): Self = StObject.set(x, "allowedSchemes", js.Array(value :_*))
+      inline def setAllowedSchemesVarargs(value: String*): Self = StObject.set(x, "allowedSchemes", js.Array(value*))
       
       inline def setAllowedTags(value: js.Array[String]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
       
-      inline def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value :_*))
+      inline def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value*))
       
-      inline def setDisallowedTagsMode(value: String): Self = StObject.set(x, "disallowedTagsMode", value.asInstanceOf[js.Any])
+      inline def setDisallowedTagsMode(value: DisallowedTagsModes): Self = StObject.set(x, "disallowedTagsMode", value.asInstanceOf[js.Any])
       
       inline def setEnforceHtmlBoundary(value: Boolean): Self = StObject.set(x, "enforceHtmlBoundary", value.asInstanceOf[js.Any])
       
       inline def setSelfClosing(value: js.Array[String]): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
       
-      inline def setSelfClosingVarargs(value: String*): Self = StObject.set(x, "selfClosing", js.Array(value :_*))
+      inline def setSelfClosingVarargs(value: String*): Self = StObject.set(x, "selfClosing", js.Array(value*))
     }
   }
   
@@ -151,9 +155,9 @@ object mod {
     
     var allowVulnerableTags: js.UndefOr[Boolean] = js.undefined
     
-    var allowedAttributes: js.UndefOr[StringDictionary[js.Array[AllowedAttribute]] | Boolean] = js.undefined
+    var allowedAttributes: js.UndefOr[(Record[String, js.Array[AllowedAttribute]]) | `false`] = js.undefined
     
-    var allowedClasses: js.UndefOr[StringDictionary[js.Array[String] | Boolean]] = js.undefined
+    var allowedClasses: js.UndefOr[StringDictionary[Boolean | (js.Array[String | js.RegExp])]] = js.undefined
     
     var allowedIframeDomains: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -165,9 +169,13 @@ object mod {
     
     var allowedSchemesByTag: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.undefined
     
-    var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.undefined
+    var allowedScriptDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowedTags: js.UndefOr[js.Array[String] | Boolean] = js.undefined
+    var allowedScriptHostnames: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[js.RegExp]]]] = js.undefined
+    
+    var allowedTags: js.UndefOr[js.Array[String] | `false`] = js.undefined
     
     var disallowedTagsMode: js.UndefOr[DisallowedTagsModes] = js.undefined
     
@@ -180,6 +188,8 @@ object mod {
     var enforceHtmlBoundary: js.UndefOr[Boolean] = js.undefined
     
     var exclusiveFilter: js.UndefOr[js.Function1[/* frame */ IFrame, Boolean]] = js.undefined
+    
+    var nestingLimit: js.UndefOr[Double] = js.undefined
     
     var nonTextTags: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -212,11 +222,11 @@ object mod {
       
       inline def setAllowVulnerableTagsUndefined: Self = StObject.set(x, "allowVulnerableTags", js.undefined)
       
-      inline def setAllowedAttributes(value: StringDictionary[js.Array[AllowedAttribute]] | Boolean): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
+      inline def setAllowedAttributes(value: (Record[String, js.Array[AllowedAttribute]]) | `false`): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
       
       inline def setAllowedAttributesUndefined: Self = StObject.set(x, "allowedAttributes", js.undefined)
       
-      inline def setAllowedClasses(value: StringDictionary[js.Array[String] | Boolean]): Self = StObject.set(x, "allowedClasses", value.asInstanceOf[js.Any])
+      inline def setAllowedClasses(value: StringDictionary[Boolean | (js.Array[String | js.RegExp])]): Self = StObject.set(x, "allowedClasses", value.asInstanceOf[js.Any])
       
       inline def setAllowedClassesUndefined: Self = StObject.set(x, "allowedClasses", js.undefined)
       
@@ -224,13 +234,13 @@ object mod {
       
       inline def setAllowedIframeDomainsUndefined: Self = StObject.set(x, "allowedIframeDomains", js.undefined)
       
-      inline def setAllowedIframeDomainsVarargs(value: String*): Self = StObject.set(x, "allowedIframeDomains", js.Array(value :_*))
+      inline def setAllowedIframeDomainsVarargs(value: String*): Self = StObject.set(x, "allowedIframeDomains", js.Array(value*))
       
       inline def setAllowedIframeHostnames(value: js.Array[String]): Self = StObject.set(x, "allowedIframeHostnames", value.asInstanceOf[js.Any])
       
       inline def setAllowedIframeHostnamesUndefined: Self = StObject.set(x, "allowedIframeHostnames", js.undefined)
       
-      inline def setAllowedIframeHostnamesVarargs(value: String*): Self = StObject.set(x, "allowedIframeHostnames", js.Array(value :_*))
+      inline def setAllowedIframeHostnamesVarargs(value: String*): Self = StObject.set(x, "allowedIframeHostnames", js.Array(value*))
       
       inline def setAllowedSchemes(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedSchemes", value.asInstanceOf[js.Any])
       
@@ -238,7 +248,7 @@ object mod {
       
       inline def setAllowedSchemesAppliedToAttributesUndefined: Self = StObject.set(x, "allowedSchemesAppliedToAttributes", js.undefined)
       
-      inline def setAllowedSchemesAppliedToAttributesVarargs(value: String*): Self = StObject.set(x, "allowedSchemesAppliedToAttributes", js.Array(value :_*))
+      inline def setAllowedSchemesAppliedToAttributesVarargs(value: String*): Self = StObject.set(x, "allowedSchemesAppliedToAttributes", js.Array(value*))
       
       inline def setAllowedSchemesByTag(value: StringDictionary[js.Array[String]] | Boolean): Self = StObject.set(x, "allowedSchemesByTag", value.asInstanceOf[js.Any])
       
@@ -246,17 +256,29 @@ object mod {
       
       inline def setAllowedSchemesUndefined: Self = StObject.set(x, "allowedSchemes", js.undefined)
       
-      inline def setAllowedSchemesVarargs(value: String*): Self = StObject.set(x, "allowedSchemes", js.Array(value :_*))
+      inline def setAllowedSchemesVarargs(value: String*): Self = StObject.set(x, "allowedSchemes", js.Array(value*))
       
-      inline def setAllowedStyles(value: StringDictionary[StringDictionary[js.Array[RegExp]]]): Self = StObject.set(x, "allowedStyles", value.asInstanceOf[js.Any])
+      inline def setAllowedScriptDomains(value: js.Array[String]): Self = StObject.set(x, "allowedScriptDomains", value.asInstanceOf[js.Any])
+      
+      inline def setAllowedScriptDomainsUndefined: Self = StObject.set(x, "allowedScriptDomains", js.undefined)
+      
+      inline def setAllowedScriptDomainsVarargs(value: String*): Self = StObject.set(x, "allowedScriptDomains", js.Array(value*))
+      
+      inline def setAllowedScriptHostnames(value: js.Array[String]): Self = StObject.set(x, "allowedScriptHostnames", value.asInstanceOf[js.Any])
+      
+      inline def setAllowedScriptHostnamesUndefined: Self = StObject.set(x, "allowedScriptHostnames", js.undefined)
+      
+      inline def setAllowedScriptHostnamesVarargs(value: String*): Self = StObject.set(x, "allowedScriptHostnames", js.Array(value*))
+      
+      inline def setAllowedStyles(value: StringDictionary[StringDictionary[js.Array[js.RegExp]]]): Self = StObject.set(x, "allowedStyles", value.asInstanceOf[js.Any])
       
       inline def setAllowedStylesUndefined: Self = StObject.set(x, "allowedStyles", js.undefined)
       
-      inline def setAllowedTags(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
+      inline def setAllowedTags(value: js.Array[String] | `false`): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
       
       inline def setAllowedTagsUndefined: Self = StObject.set(x, "allowedTags", js.undefined)
       
-      inline def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value :_*))
+      inline def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value*))
       
       inline def setDisallowedTagsMode(value: DisallowedTagsModes): Self = StObject.set(x, "disallowedTagsMode", value.asInstanceOf[js.Any])
       
@@ -270,11 +292,15 @@ object mod {
       
       inline def setExclusiveFilterUndefined: Self = StObject.set(x, "exclusiveFilter", js.undefined)
       
+      inline def setNestingLimit(value: Double): Self = StObject.set(x, "nestingLimit", value.asInstanceOf[js.Any])
+      
+      inline def setNestingLimitUndefined: Self = StObject.set(x, "nestingLimit", js.undefined)
+      
       inline def setNonTextTags(value: js.Array[String]): Self = StObject.set(x, "nonTextTags", value.asInstanceOf[js.Any])
       
       inline def setNonTextTagsUndefined: Self = StObject.set(x, "nonTextTags", js.undefined)
       
-      inline def setNonTextTagsVarargs(value: String*): Self = StObject.set(x, "nonTextTags", js.Array(value :_*))
+      inline def setNonTextTagsVarargs(value: String*): Self = StObject.set(x, "nonTextTags", js.Array(value*))
       
       inline def setParser(value: ParserOptions): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
@@ -284,7 +310,7 @@ object mod {
       
       inline def setSelfClosingUndefined: Self = StObject.set(x, "selfClosing", js.undefined)
       
-      inline def setSelfClosingVarargs(value: String*): Self = StObject.set(x, "selfClosing", js.Array(value :_*))
+      inline def setSelfClosingVarargs(value: String*): Self = StObject.set(x, "selfClosing", js.Array(value*))
       
       inline def setTextFilter(value: (/* text */ String, /* tagName */ String) => String): Self = StObject.set(x, "textFilter", js.Any.fromFunction2(value))
       

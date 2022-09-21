@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type LayerId = java.lang.String
+type LayerId = String
 
-type PaintProfile = js.Array[scala.Double]
+type PaintProfile = js.Array[Double]
 
-type SnapshotId = java.lang.String
+type SnapshotId = String

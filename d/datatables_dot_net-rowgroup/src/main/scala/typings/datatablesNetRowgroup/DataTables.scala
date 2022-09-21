@@ -64,7 +64,12 @@ object DataTables {
     /**
       * Set the data point to use as the grouping data source
       */
-    var dataSrc: js.UndefOr[Double | String] = js.undefined
+    var dataSrc: js.UndefOr[Double | String | js.Array[String]] = js.undefined
+    
+    /**
+      * Text to show for rows which have null, undefined or empty string group data
+      */
+    var emptyDataGroup: js.UndefOr[String] = js.undefined
     
     /**
       * Provides the ability to disable row grouping at initialisation
@@ -82,9 +87,16 @@ object DataTables {
     var endRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.undefined
     
     /**
+      * Set the class name to be used for the grouping start rows
+      */
+    var startClassName: js.UndefOr[String] = js.undefined
+    
+    /**
       * Provide a function that can be used to control the data shown in the start grouping row
       */
-    var startRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.undefined
+    var startRender: js.UndefOr[
+        js.Function3[/* rows */ Api, /* group */ String, /* level */ Double, String | HTMLElement | JQuery]
+      ] = js.undefined
   }
   object RowGroupSettings {
     
@@ -99,9 +111,15 @@ object DataTables {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDataSrc(value: Double | String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
+      inline def setDataSrc(value: Double | String | js.Array[String]): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
       
       inline def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
+      
+      inline def setDataSrcVarargs(value: String*): Self = StObject.set(x, "dataSrc", js.Array(value*))
+      
+      inline def setEmptyDataGroup(value: String): Self = StObject.set(x, "emptyDataGroup", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyDataGroupUndefined: Self = StObject.set(x, "emptyDataGroup", js.undefined)
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -115,7 +133,11 @@ object DataTables {
       
       inline def setEndRenderUndefined: Self = StObject.set(x, "endRender", js.undefined)
       
-      inline def setStartRender(value: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery): Self = StObject.set(x, "startRender", js.Any.fromFunction2(value))
+      inline def setStartClassName(value: String): Self = StObject.set(x, "startClassName", value.asInstanceOf[js.Any])
+      
+      inline def setStartClassNameUndefined: Self = StObject.set(x, "startClassName", js.undefined)
+      
+      inline def setStartRender(value: (/* rows */ Api, /* group */ String, /* level */ Double) => String | HTMLElement | JQuery): Self = StObject.set(x, "startRender", js.Any.fromFunction3(value))
       
       inline def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
     }

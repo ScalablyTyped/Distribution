@@ -9,17 +9,17 @@ trait SetCommand
      with Command {
   
   @JSName("$set")
-  var $set: js.Any
+  var $set: scala.Any
 }
 object SetCommand {
   
-  inline def apply($set: js.Any): SetCommand = {
+  inline def apply($set: scala.Any): SetCommand = {
     val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCommand]
   }
   
   extension [Self <: SetCommand](x: Self) {
     
-    inline def set$set(value: js.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
+    inline def set$set(value: scala.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
   }
 }

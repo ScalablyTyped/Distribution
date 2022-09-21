@@ -10,10 +10,10 @@ Library for streamlining application deployment or systems administration tasks
 | ------------------ | :-------------: |
 | Full name          | flightplan |
 | Keywords           | deploy, deployment, commands, devops, exec, shell, bash, ssh, tasks, parallel, sequential, remote, local, cloud, fabric |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 54161 |
-| # stars            | 48 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4009.3333333333335 |
+| # stars            | 1805.0 |
 
 ## Links
 - [Homepage](https://github.com/pstadler/flightplan)

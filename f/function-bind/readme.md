@@ -10,15 +10,12 @@ Implementation of Function.prototype.bind
 | ------------------ | :-------------: |
 | Full name          | function-bind |
 | Keywords           | function, bind, shim, es5 |
-| # releases         | 0 |
-| # dependents       | 247 |
-| # downloads        | 900147600 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2652777233333333E8 |
+| # stars            | 130.0 |
 
 ## Links
-- [Homepage](https://github.com/Raynos/function-bind)
-- [Bugs](https://github.com/Raynos/function-bind/issues)
-- [Repository](https://github.com/Raynos/function-bind)
 - [Npm](https://www.npmjs.com/package/function-bind)
     
 

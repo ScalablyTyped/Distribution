@@ -19,7 +19,7 @@ trait EditorContextInsertImageOptions extends StObject {
   /**
     * data 被序列化为 name=value;name1=value2 的格式挂在属性 data-custom 上
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -53,7 +53,7 @@ object EditorContextInsertImageOptions {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

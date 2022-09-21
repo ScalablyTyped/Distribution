@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-boxes
 
-Typings are for version 2.2.1
+Typings are for version 3.0.0
 
 ## Library description:
 Boxes for use in the terminal
@@ -10,10 +10,10 @@ Boxes for use in the terminal
 | ------------------ | :-------------: |
 | Full name          | cli-boxes |
 | Keywords           | cli, box, boxes, terminal, term, console, ascii, unicode, border, text, json |
-| # releases         | 6 |
-| # dependents       | 65 |
-| # downloads        | 405744307 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5.5716345E7 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/cli-boxes#readme)

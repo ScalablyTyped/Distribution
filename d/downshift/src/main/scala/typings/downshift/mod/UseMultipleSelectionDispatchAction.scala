@@ -44,7 +44,7 @@ object UseMultipleSelectionDispatchAction {
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setType(value: UseMultipleSelectionStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

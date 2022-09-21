@@ -12,10 +12,10 @@ trait BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends StObject {
   /** The current stage of execution. */
   var stage: js.UndefOr[String] = js.undefined
   
-  /** If set, the client can use this name with ByteStream.Read to stream the standard error. */
+  /** If set, the client can use this resource name with ByteStream.Read to stream the standard error from the endpoint hosting streamed responses. */
   var stderrStreamName: js.UndefOr[String] = js.undefined
   
-  /** If set, the client can use this name with ByteStream.Read to stream the standard output. */
+  /** If set, the client can use this resource name with ByteStream.Read to stream the standard output from the endpoint hosting streamed responses. */
   var stdoutStreamName: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecuteOperationMetadata {

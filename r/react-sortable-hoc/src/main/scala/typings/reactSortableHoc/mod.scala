@@ -5,7 +5,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
-import typings.react.mod.SFC
 import typings.react.mod.TouchEvent
 import typings.reactSortableHoc.anon.Cancel
 import typings.reactSortableHoc.anon.Target
@@ -126,7 +125,7 @@ object mod {
       
       inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     }
@@ -134,7 +133,7 @@ object mod {
   
   type SortEndHandler = js.Function2[/* sort */ SortEnd, /* event */ SortEvent, Unit]
   
-  type SortEvent = (MouseEvent[js.Any, NativeMouseEvent]) | TouchEvent[js.Any]
+  type SortEvent = (MouseEvent[Any, NativeMouseEvent]) | TouchEvent[Any]
   
   type SortEventWithTag = SortEvent & Target
   
@@ -185,7 +184,7 @@ object mod {
       
       inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     }
@@ -235,7 +234,7 @@ object mod {
       
       inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -244,6 +243,8 @@ object mod {
   trait SortableContainerProps extends StObject {
     
     var axis: js.UndefOr[Axis] = js.undefined
+    
+    var disableAutoscroll: js.UndefOr[Boolean] = js.undefined
     
     var distance: js.UndefOr[Double] = js.undefined
     
@@ -301,6 +302,10 @@ object mod {
       inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      
+      inline def setDisableAutoscroll(value: Boolean): Self = StObject.set(x, "disableAutoscroll", value.asInstanceOf[js.Any])
+      
+      inline def setDisableAutoscrollUndefined: Self = StObject.set(x, "disableAutoscroll", js.undefined)
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -423,7 +428,7 @@ object mod {
     }
   }
   
-  type WrappedComponent[P] = (ComponentClass[P, ComponentState]) | SFC[P] | WrappedComponentFactory[P]
+  type WrappedComponent[P] = (ComponentClass[P, ComponentState]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any) | WrappedComponentFactory[P]
   
   type WrappedComponentFactory[P] = js.Function1[/* props */ P, typings.react.mod.global.JSX.Element]
 }

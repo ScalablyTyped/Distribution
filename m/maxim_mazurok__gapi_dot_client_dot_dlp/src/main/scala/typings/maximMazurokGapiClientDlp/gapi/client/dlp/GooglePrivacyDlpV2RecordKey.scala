@@ -34,6 +34,6 @@ object GooglePrivacyDlpV2RecordKey {
     
     inline def setIdValuesUndefined: Self = StObject.set(x, "idValues", js.undefined)
     
-    inline def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value :_*))
+    inline def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value*))
   }
 }

@@ -10,12 +10,12 @@ object streamMapStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/MapStream", "MapStream")
   @js.native
-  class MapStream protected () extends BaseStream {
+  open class MapStream protected () extends BaseStream {
     def this(source: Stream, selector: js.Function) = this()
     
-    /* private */ var _selector: js.Any = js.native
+    /* private */ var _selector: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object MapStream {

@@ -15,9 +15,9 @@ object rpcProviderInterfaceMod {
     
     def deregisterSignalHandler[T](id: String, handler: SignalHandler[T]): this.type = js.native
     
-    def dispatch(message: js.Any): Unit = js.native
+    def dispatch(message: Any): Unit = js.native
     
-    var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInterface<Error> */ js.Any = js.native
+    var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInterface<Error> */ Any = js.native
     
     def registerRpcHandler[T, U](id: String, handler: RpcHandler[T, U]): this.type = js.native
     
@@ -25,13 +25,13 @@ object rpcProviderInterfaceMod {
     
     def rpc[T, U](id: String): js.Promise[U] = js.native
     def rpc[T, U](id: String, payload: T): js.Promise[U] = js.native
-    def rpc[T, U](id: String, payload: T, transfer: js.Array[js.Any]): js.Promise[U] = js.native
-    def rpc[T, U](id: String, payload: Unit, transfer: js.Array[js.Any]): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: T, transfer: js.Array[Any]): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: Unit, transfer: js.Array[Any]): js.Promise[U] = js.native
     
     def signal[T](id: String): this.type = js.native
     def signal[T](id: String, payload: T): this.type = js.native
-    def signal[T](id: String, payload: T, transfer: js.Array[js.Any]): this.type = js.native
-    def signal[T](id: String, payload: Unit, transfer: js.Array[js.Any]): this.type = js.native
+    def signal[T](id: String, payload: T, transfer: js.Array[Any]): this.type = js.native
+    def signal[T](id: String, payload: Unit, transfer: js.Array[Any]): this.type = js.native
   }
   object RpcProviderInterface {
     

@@ -9,7 +9,7 @@ trait GitForkSyncRequest extends StObject {
   /**
     * Collection of related links
     */
-  var _links: js.Any
+  var _links: Any
   
   var detailedStatus: GitForkOperationStatusDetail
   
@@ -33,7 +33,7 @@ trait GitForkSyncRequest extends StObject {
 object GitForkSyncRequest {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     detailedStatus: GitForkOperationStatusDetail,
     operationId: Double,
     source: GlobalGitRepositoryKey,
@@ -54,10 +54,10 @@ object GitForkSyncRequest {
     
     inline def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
     
-    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
+    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value*))
     
     inline def setStatus(value: GitAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

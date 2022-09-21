@@ -27,10 +27,10 @@ object BatchDetectSyntaxResponse {
     
     inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
-    inline def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
+    inline def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value*))
     
     inline def setResultList(value: ListOfDetectSyntaxResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
     
-    inline def setResultListVarargs(value: BatchDetectSyntaxItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
+    inline def setResultListVarargs(value: BatchDetectSyntaxItemResult*): Self = StObject.set(x, "ResultList", js.Array(value*))
   }
 }

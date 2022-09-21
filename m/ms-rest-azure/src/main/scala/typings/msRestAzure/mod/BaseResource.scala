@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "BaseResource")
 @js.native
-class BaseResource () extends StObject
+open class BaseResource () extends StObject

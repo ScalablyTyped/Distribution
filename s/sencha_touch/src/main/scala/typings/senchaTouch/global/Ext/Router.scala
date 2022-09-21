@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Router")
 @js.native
-class Router ()
+open class Router ()
   extends StObject
      with typings.senchaTouch.Ext.Router
 /* static members */
@@ -20,5 +20,5 @@ object Router {
     * @param app Object
     */
   inline def setAppInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")().asInstanceOf[Unit]
-  inline def setAppInstance(app: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAppInstance(app: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

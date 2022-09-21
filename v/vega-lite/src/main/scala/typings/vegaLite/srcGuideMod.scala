@@ -1,12 +1,10 @@
 package typings.vegaLite
 
 import typings.vegaLite.channeldefMod.ConditionValueDefMixins
+import typings.vegaLite.channeldefMod.FormatMixins
 import typings.vegaLite.channeldefMod.Value
 import typings.vegaLite.channeldefMod.ValueDef
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.utilMod.Dict
-import typings.vegaLite.vegaLiteStrings.number
-import typings.vegaLite.vegaLiteStrings.time
 import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
@@ -18,63 +16,8 @@ object srcGuideMod {
   @JSImport("vega-lite/build/src/guide", "VL_ONLY_LEGEND_CONFIG")
   @js.native
   val VL_ONLY_LEGEND_CONFIG: js.Array[
-    /* keyof vega-lite.vega-lite/build/src/legend.LegendConfig<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 75 */ js.Any
+    /* keyof vega-lite.vega-lite/build/src/legend.LegendConfig<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 75 */ Any
   ] = js.native
-  
-  trait FormatMixins extends StObject {
-    
-    /**
-      * When used with the default `"number"` and `"time"` format type, the text formatting pattern for labels of guides (axes, legends, headers) and text marks.
-      *
-      * - If the format type is `"number"` (e.g., for quantitative fields), this is D3's [number format pattern](https://github.com/d3/d3-format#locale_format).
-      * - If the format type is `"time"` (e.g., for temporal fields), this is D3's [time format pattern](https://github.com/d3/d3-time-format#locale_format).
-      *
-      * See the [format documentation](https://vega.github.io/vega-lite/docs/format.html) for more examples.
-      *
-      * When used with a [custom `formatType`](https://vega.github.io/vega-lite/docs/config.html#custom-format-type), this value will be passed as `format` alongside `datum.value` to the registered function.
-      *
-      * __Default value:__  Derived from [numberFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for number format and from [timeFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for time format.
-      */
-    var format: js.UndefOr[String | Dict[js.Any]] = js.undefined
-    
-    /**
-      * The format type for labels. One of `"number"`, `"time"`, or a [registered custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type).
-      *
-      * __Default value:__
-      * - `"time"` for temporal fields and ordinal and nominal fields with `timeUnit`.
-      * - `"number"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.
-      */
-    var formatType: js.UndefOr[number | time | String] = js.undefined
-    
-    /**
-      * [Vega expression](https://vega.github.io/vega/docs/expressions/) for customizing labels text.
-      *
-      * __Note:__ The label text and value can be assessed via the `label` and `value` properties of the axis's backing `datum` object.
-      */
-    var labelExpr: js.UndefOr[String] = js.undefined
-  }
-  object FormatMixins {
-    
-    inline def apply(): FormatMixins = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FormatMixins]
-    }
-    
-    extension [Self <: FormatMixins](x: Self) {
-      
-      inline def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatType(value: number | time | String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
-      
-      inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-      
-      inline def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
-      
-      inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
-    }
-  }
   
   trait Guide
     extends StObject
@@ -477,7 +420,7 @@ object srcGuideMod {
       *
       * __Notes__:
       *
-      * 1) You can customize the default field title format by providing the [`fieldTitle`](https://vega.github.io/vega-lite/docs/config.html#top-level-config) property in the [config](https://vega.github.io/vega-lite/docs/config.html) or [`fieldTitle` function via the `compile` function's options](https://vega.github.io/vega-lite/docs/compile.html#field-title).
+      * 1) You can customize the default field title format by providing the [`fieldTitle`](https://vega.github.io/vega-lite/docs/config.html#top-level-config) property in the [config](https://vega.github.io/vega-lite/docs/config.html) or [`fieldTitle` function via the `compile` function's options](https://vega.github.io/vega-lite/usage/compile.html#field-title).
       *
       * 2) If both field definition's `title` and axis, header, or legend `title` are defined, axis/header/legend title will be used.
       */
@@ -498,7 +441,7 @@ object srcGuideMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     }
   }
   

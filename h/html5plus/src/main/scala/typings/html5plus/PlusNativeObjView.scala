@@ -23,16 +23,12 @@ trait PlusNativeObjView extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusNativeObjViewEvents): Unit = js.native
-  def addEventListener(event: PlusNativeObjViewEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: PlusNativeObjViewEvents,
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: PlusNativeObjViewEvents, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: PlusNativeObjViewEvents, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusNativeObjViewEvents, listener: Unit, capture: Boolean): Unit = js.native
   
   /**

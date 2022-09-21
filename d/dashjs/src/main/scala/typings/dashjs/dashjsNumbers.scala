@@ -1,10 +1,23 @@
 package typings.dashjs
 
+import typings.dashjs.mod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dashjsNumbers {
+  
+  @js.native
+  sealed trait `0`
+    extends StObject
+       with LogLevel
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @js.native
+  sealed trait `1`
+    extends StObject
+       with LogLevel
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `10` extends StObject
@@ -59,6 +72,62 @@ object dashjsNumbers {
   inline def `110`: `110` = 110.asInstanceOf[`110`]
   
   @js.native
+  sealed trait `11000` extends StObject
+  inline def `11000`: `11000` = 11000.asInstanceOf[`11000`]
+  
+  @js.native
+  sealed trait `11001` extends StObject
+  inline def `11001`: `11001` = 11001.asInstanceOf[`11001`]
+  
+  @js.native
+  sealed trait `11002` extends StObject
+  inline def `11002`: `11002` = 11002.asInstanceOf[`11002`]
+  
+  @js.native
+  sealed trait `11003` extends StObject
+  inline def `11003`: `11003` = 11003.asInstanceOf[`11003`]
+  
+  @js.native
+  sealed trait `11004` extends StObject
+  inline def `11004`: `11004` = 11004.asInstanceOf[`11004`]
+  
+  @js.native
+  sealed trait `11005` extends StObject
+  inline def `11005`: `11005` = 11005.asInstanceOf[`11005`]
+  
+  @js.native
+  sealed trait `11006` extends StObject
+  inline def `11006`: `11006` = 11006.asInstanceOf[`11006`]
+  
+  @js.native
+  sealed trait `11007` extends StObject
+  inline def `11007`: `11007` = 11007.asInstanceOf[`11007`]
+  
+  @js.native
+  sealed trait `11008` extends StObject
+  inline def `11008`: `11008` = 11008.asInstanceOf[`11008`]
+  
+  @js.native
+  sealed trait `11009` extends StObject
+  inline def `11009`: `11009` = 11009.asInstanceOf[`11009`]
+  
+  @js.native
+  sealed trait `11010` extends StObject
+  inline def `11010`: `11010` = 11010.asInstanceOf[`11010`]
+  
+  @js.native
+  sealed trait `11011` extends StObject
+  inline def `11011`: `11011` = 11011.asInstanceOf[`11011`]
+  
+  @js.native
+  sealed trait `11012` extends StObject
+  inline def `11012`: `11012` = 11012.asInstanceOf[`11012`]
+  
+  @js.native
+  sealed trait `11013` extends StObject
+  inline def `11013`: `11013` = 11013.asInstanceOf[`11013`]
+  
+  @js.native
   sealed trait `111` extends StObject
   inline def `111`: `111` = 111.asInstanceOf[`111`]
   
@@ -77,14 +146,6 @@ object dashjsNumbers {
   @js.native
   sealed trait `12` extends StObject
   inline def `12`: `12` = 12.asInstanceOf[`12`]
-  
-  @js.native
-  sealed trait `13` extends StObject
-  inline def `13`: `13` = 13.asInstanceOf[`13`]
-  
-  @js.native
-  sealed trait `14` extends StObject
-  inline def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
   sealed trait `15` extends StObject
@@ -107,12 +168,22 @@ object dashjsNumbers {
   inline def `19`: `19` = 19.asInstanceOf[`19`]
   
   @js.native
+  sealed trait `2`
+    extends StObject
+       with LogLevel
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @js.native
   sealed trait `20` extends StObject
   inline def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
   sealed trait `200` extends StObject
   inline def `200`: `200` = 200.asInstanceOf[`200`]
+  
+  @js.native
+  sealed trait `201` extends StObject
+  inline def `201`: `201` = 201.asInstanceOf[`201`]
   
   @js.native
   sealed trait `21` extends StObject
@@ -135,6 +206,10 @@ object dashjsNumbers {
   inline def `25`: `25` = 25.asInstanceOf[`25`]
   
   @js.native
+  sealed trait `26` extends StObject
+  inline def `26`: `26` = 26.asInstanceOf[`26`]
+  
+  @js.native
   sealed trait `27` extends StObject
   inline def `27`: `27` = 27.asInstanceOf[`27`]
   
@@ -145,6 +220,12 @@ object dashjsNumbers {
   @js.native
   sealed trait `29` extends StObject
   inline def `29`: `29` = 29.asInstanceOf[`29`]
+  
+  @js.native
+  sealed trait `3`
+    extends StObject
+       with LogLevel
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `31` extends StObject
@@ -165,4 +246,16 @@ object dashjsNumbers {
   @js.native
   sealed trait `35` extends StObject
   inline def `35`: `35` = 35.asInstanceOf[`35`]
+  
+  @js.native
+  sealed trait `4`
+    extends StObject
+       with LogLevel
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @js.native
+  sealed trait `5`
+    extends StObject
+       with LogLevel
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
 }

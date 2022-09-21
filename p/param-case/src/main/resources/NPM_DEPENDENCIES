@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "param-case" : "3.0.3"
+      "param-case" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "param-case" : "3.0.3"
+      "param-case" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

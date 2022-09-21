@@ -12,6 +12,11 @@ trait S3ReportExportConfig extends StObject {
   var bucket: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The Amazon Web Services account identifier of the owner of the Amazon S3 bucket. This allows report data to be exported to an Amazon S3 bucket that is owned by an account other than the account running the build.
+    */
+  var bucketOwner: js.UndefOr[String] = js.undefined
+  
+  /**
     *  A boolean value that specifies if the results of a report are encrypted. 
     */
   var encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined
@@ -22,7 +27,7 @@ trait S3ReportExportConfig extends StObject {
   var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The type of build output artifact to create. Valid values include:     NONE: AWS CodeBuild creates the raw data in the output bucket. This is the default if packaging is not specified.     ZIP: AWS CodeBuild creates a ZIP file with the raw data in the output bucket.   
+    *  The type of build output artifact to create. Valid values include:     NONE: CodeBuild creates the raw data in the output bucket. This is the default if packaging is not specified.     ZIP: CodeBuild creates a ZIP file with the raw data in the output bucket.   
     */
   var packaging: js.UndefOr[ReportPackagingType] = js.undefined
   
@@ -41,6 +46,10 @@ object S3ReportExportConfig {
   extension [Self <: S3ReportExportConfig](x: Self) {
     
     inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwner(value: String): Self = StObject.set(x, "bucketOwner", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwnerUndefined: Self = StObject.set(x, "bucketOwner", js.undefined)
     
     inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     

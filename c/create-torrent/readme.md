@@ -1,7 +1,7 @@
 
 # Scala.js typings for create-torrent
 
-Typings are for version 4.4
+Typings are for version 5.0
 
 ## Library description:
 Create .torrent files
@@ -11,9 +11,9 @@ Create .torrent files
 | Full name          | create-torrent |
 | Keywords           | .torrent, bittorrent, create, create torrent, make, new, peer-to-peer, torrent, torrent file, torrent files, webtorrent |
 | # releases         | 13 |
-| # dependents       | 40 |
-| # downloads        | 179306 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 29961.666666666668 |
+| # stars            | 312.0 |
 
 ## Links
 - [Homepage](https://github.com/webtorrent/create-torrent#readme)

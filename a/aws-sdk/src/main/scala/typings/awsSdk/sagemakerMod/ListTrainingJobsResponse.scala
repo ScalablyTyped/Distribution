@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTrainingJobsResponse extends StObject {
   
   /**
-    * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of training jobs, use it in the subsequent request.
+    * If the response is truncated, SageMaker returns this token. To retrieve the next set of training jobs, use it in the subsequent request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
@@ -31,6 +31,6 @@ object ListTrainingJobsResponse {
     
     inline def setTrainingJobSummaries(value: TrainingJobSummaries): Self = StObject.set(x, "TrainingJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setTrainingJobSummariesVarargs(value: TrainingJobSummary*): Self = StObject.set(x, "TrainingJobSummaries", js.Array(value :_*))
+    inline def setTrainingJobSummariesVarargs(value: TrainingJobSummary*): Self = StObject.set(x, "TrainingJobSummaries", js.Array(value*))
   }
 }

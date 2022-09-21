@@ -1,6 +1,7 @@
 
 # Scala.js typings for angular-scroll
 
+Typings are for version 1.0
 
 ## Library description:
 Scrollspy, animated scrollTo and scroll events
@@ -9,10 +10,10 @@ Scrollspy, animated scrollTo and scroll events
 | ------------------ | :-------------: |
 | Full name          | angular-scroll |
 | Keywords           | angular, smooth-scroll, scrollspy, scrollTo, scrolling |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 1264068 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 112152.66666666667 |
+| # stars            | 1497.0 |
 
 ## Links
 - [Homepage](https://github.com/oblador/angular-scroll#readme)

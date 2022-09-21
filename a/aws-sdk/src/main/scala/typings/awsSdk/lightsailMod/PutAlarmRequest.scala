@@ -17,7 +17,7 @@ trait PutAlarmRequest extends StObject {
   var comparisonOperator: ComparisonOperator
   
   /**
-    * The contact protocols to use for the alarm, such as Email, SMS (text messaging), or both. A notification is sent via the specified contact protocol if notifications are enabled for the alarm, and when the alarm is triggered. A notification is not sent if a contact protocol is not specified, if the specified contact protocol is not configured in the AWS Region, or if notifications are not enabled for the alarm using the notificationEnabled paramater. Use the CreateContactMethod action to configure a contact protocol in an AWS Region.
+    * The contact protocols to use for the alarm, such as Email, SMS (text messaging), or both. A notification is sent via the specified contact protocol if notifications are enabled for the alarm, and when the alarm is triggered. A notification is not sent if a contact protocol is not specified, if the specified contact protocol is not configured in the Amazon Web Services Region, or if notifications are not enabled for the alarm using the notificationEnabled paramater. Use the CreateContactMethod action to configure a contact protocol in an Amazon Web Services Region.
     */
   var contactProtocols: js.UndefOr[ContactProtocolsList] = js.undefined
   
@@ -85,7 +85,7 @@ object PutAlarmRequest {
     
     inline def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
     
-    inline def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
+    inline def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value*))
     
     inline def setDatapointsToAlarm(value: integer): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object PutAlarmRequest {
     
     inline def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
     
-    inline def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
+    inline def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value*))
     
     inline def setThreshold(value: double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     

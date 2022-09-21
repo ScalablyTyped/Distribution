@@ -13,7 +13,7 @@ trait ModuleImportPayload extends StObject {
   
   val dataID: DataID
   
-  val operationReference: js.Any
+  val operationReference: Any
   
   val path: js.Array[String]
   
@@ -26,7 +26,7 @@ object ModuleImportPayload {
   inline def apply(
     data: PayloadData,
     dataID: DataID,
-    operationReference: js.Any,
+    operationReference: Any,
     path: js.Array[String],
     typeName: String,
     variables: Variables
@@ -41,11 +41,11 @@ object ModuleImportPayload {
     
     inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
-    inline def setOperationReference(value: js.Any): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
+    inline def setOperationReference(value: Any): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     

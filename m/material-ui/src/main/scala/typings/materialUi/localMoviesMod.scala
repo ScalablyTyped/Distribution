@@ -10,10 +10,10 @@ object localMoviesMod {
   
   @JSImport("material-ui/svg-icons/maps/local-movies", JSImport.Default)
   @js.native
-  class default () extends MapsLocalMovies
+  open class default () extends MapsLocalMovies
   
   @JSImport("material-ui/svg-icons/maps/local-movies", "MapsLocalMovies")
   @js.native
-  class MapsLocalMovies ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalMovies ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

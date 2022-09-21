@@ -29,6 +29,6 @@ object DataSourceSpec {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

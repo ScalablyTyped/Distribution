@@ -1,9 +1,5 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +22,6 @@ trait ParamsResourceAccountsAdunitsGetadcode
     * Ad unit to get the code for.
     */
   var adUnitId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Host custom channel to attach to the ad code.
@@ -58,14 +49,10 @@ object ParamsResourceAccountsAdunitsGetadcode {
     
     inline def setAdUnitIdUndefined: Self = StObject.set(x, "adUnitId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setHostCustomChannelId(value: js.Array[String]): Self = StObject.set(x, "hostCustomChannelId", value.asInstanceOf[js.Any])
     
     inline def setHostCustomChannelIdUndefined: Self = StObject.set(x, "hostCustomChannelId", js.undefined)
     
-    inline def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value :_*))
+    inline def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value*))
   }
 }

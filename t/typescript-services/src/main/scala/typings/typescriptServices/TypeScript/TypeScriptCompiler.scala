@@ -21,7 +21,7 @@ trait TypeScriptCompiler extends StObject {
     sharedEmitter: DeclarationEmitter
   ): DeclarationEmitter = js.native
   
-  /* private */ var _settings: js.Any = js.native
+  /* private */ var _settings: Any = js.native
   
   def _shouldEmit(document: Document): Boolean = js.native
   
@@ -60,25 +60,25 @@ trait TypeScriptCompiler extends StObject {
   
   def emitDeclarations(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
   
-  /* private */ def emitDocumentDeclarationsWorker(document: js.Any, emitOptions: js.Any, declarationEmitter: js.Any): js.Any = js.native
+  /* private */ def emitDocumentDeclarationsWorker(document: Any, emitOptions: Any, declarationEmitter: Any): Any = js.native
   
-  /* private */ def emitDocumentWorker(document: js.Any, emitOptions: js.Any, emitter: js.Any): js.Any = js.native
+  /* private */ def emitDocumentWorker(document: Any, emitOptions: Any, emitter: Any): Any = js.native
   
   /* private */ def extractResolutionContextForVariable(
-    inContextuallyTypedAssignment: js.Any,
-    propagateContextualTypes: js.Any,
-    resolver: js.Any,
-    resolutionContext: js.Any,
-    enclosingDecl: js.Any,
-    assigningAST: js.Any,
-    init: js.Any
-  ): js.Any = js.native
+    inContextuallyTypedAssignment: Any,
+    propagateContextualTypes: Any,
+    resolver: Any,
+    resolutionContext: Any,
+    enclosingDecl: Any,
+    assigningAST: Any,
+    init: Any
+  ): Any = js.native
   
-  /* private */ def extractResolutionContextFromAST(resolver: js.Any, ast: js.Any, document: js.Any, propagateContextualTypes: js.Any): js.Any = js.native
+  /* private */ def extractResolutionContextFromAST(resolver: Any, ast: Any, document: Any, propagateContextualTypes: Any): Any = js.native
   
   def fileNames(): js.Array[String] = js.native
   
-  /* private */ def getASTPath(ast: js.Any): js.Any = js.native
+  /* private */ def getASTPath(ast: Any): Any = js.native
   
   def getCompilerOptionsDiagnostics(resolvePath: js.Function1[/* path */ String, String]): js.Array[Diagnostic] = js.native
   
@@ -88,13 +88,13 @@ trait TypeScriptCompiler extends StObject {
   
   def getSemanticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
   
-  /* private */ def getSourceUnit(fileName: js.Any): js.Any = js.native
+  /* private */ def getSourceUnit(fileName: Any): Any = js.native
   
   def getSymbolOfDeclaration(decl: PullDecl): PullSymbol = js.native
   
   def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
   
-  /* private */ def getSyntaxTree(fileName: js.Any): js.Any = js.native
+  /* private */ def getSyntaxTree(fileName: Any): Any = js.native
   
   var logger: ILogger = js.native
   
@@ -120,7 +120,7 @@ trait TypeScriptCompiler extends StObject {
   
   def resolveAllFiles(): Unit = js.native
   
-  /* private */ var semanticInfoChain: js.Any = js.native
+  /* private */ var semanticInfoChain: Any = js.native
   
   def setCompilationSettings(newSettings: ImmutableCompilationSettings): Unit = js.native
   
@@ -136,5 +136,5 @@ trait TypeScriptCompiler extends StObject {
     textChangeRange: TextChangeRange
   ): Unit = js.native
   
-  /* private */ def writeByteOrderMarkForDocument(document: js.Any): js.Any = js.native
+  /* private */ def writeByteOrderMarkForDocument(document: Any): Any = js.native
 }

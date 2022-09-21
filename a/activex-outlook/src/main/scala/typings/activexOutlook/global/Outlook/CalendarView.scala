@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CalendarView")
 @js.native
-/* private */ class CalendarView ()
+/* private */ open class CalendarView ()
   extends StObject
      with typings.activexOutlook.Outlook.CalendarView {
   
@@ -56,7 +56,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Delete(): Unit = js.native
   
   /* CompleteClass */
-  override val DisplayedDates: js.Any = js.native
+  override val DisplayedDates: Any = js.native
   
   /* CompleteClass */
   var EndField: String = js.native
@@ -87,7 +87,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotCalendarView_typekey: typings.activexOutlook.Outlook.CalendarView = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Reset(): Unit = js.native

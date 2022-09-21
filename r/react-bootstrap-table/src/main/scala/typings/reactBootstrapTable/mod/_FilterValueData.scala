@@ -1,6 +1,5 @@
 package typings.reactBootstrapTable.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _FilterValueData extends StObject
 object _FilterValueData {
   
-  inline def DateFilterValue(comparator: FilterComparator, date: Date | String): typings.reactBootstrapTable.mod.DateFilterValue = {
+  inline def DateFilterValue(comparator: FilterComparator, date: js.Date | String): typings.reactBootstrapTable.mod.DateFilterValue = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactBootstrapTable.mod.DateFilterValue]
   }

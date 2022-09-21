@@ -30,7 +30,7 @@ trait Repeater extends StObject {
   /**
     * Gets or sets the List that provides the Repeater with items to display.
     **/
-  var data: List[js.Any] = js.native
+  var data: List[Any] = js.native
   
   /**
     * Raises an event of the specified type and with additional properties.
@@ -38,7 +38,7 @@ trait Repeater extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this Repeater. Call this method when the Repeater is no longer needed. After calling this method, the Repeater becomes unusable.
@@ -68,67 +68,67 @@ trait Repeater extends StObject {
     * Raised after an item in the Repeater control's data source changes and after the corresponding DOM element has been updated.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.key, detail.newElement, detail.newItem, detail.newValue, detail.oldElement, detail.oldItem, detail.oldValue, detail.setPromise.
     **/
-  def onitemchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemchanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item in the Repeater control's data source changes but before the corresponding DOM element has been updated.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.key, detail.newElement, detail.newItem, detail.newValue, detail.oldElement, detail.oldItem, detail.oldValue, detail.setPromise.
     **/
-  def onitemchanging(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemchanging(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been added to the Repeater control's data source and after the corresponding DOM element has been added.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.key, detail.value.
     **/
-  def oniteminserted(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oniteminserted(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been added to the Repeater control's data source but before the corresponding DOM element has been added.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.key, detail.value.
     **/
-  def oniteminserting(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oniteminserting(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been moved from one index to another in the Repeater control's data source and after the corresponding DOM element has been moved.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.key, detail.oldIndex, detail.newIndex.
     **/
-  def onitemmoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemmoved(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been moved from one index to another in the Repeater control's data source but before the corresponding DOM element has been moved.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.key, detail.oldIndex, detail.newIndex.
     **/
-  def onitemmoving(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemmoving(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been moved from one index to another in the Repeater control's data source and after the corresponding DOM element has been moved.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.item, detail.setPromise.
     **/
-  def onitemremoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemremoved(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after an item has been removed from the Repeater control's data source but before the corresponding DOM element has been removed.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElement, detail.index, detail.item, detail.setPromise.
     **/
-  def onitemremoving(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemremoving(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the Repeater has finished loading a new set of data. This event is only fired on construction. This event is only raised when the Repeater is constructed or its data source or template changes.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemsloaded(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemsloaded(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after the Repeater control's underlying data has been updated and after the updated HTML has been reloaded.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElements.
     **/
-  def onitemsreloaded(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemsreloaded(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after the Repeater control's underlying data has been updated but before the updated HTML has been reloaded.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.affectedElements, detail.setPromise.
     **/
-  def onitemsreloading(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemsreloading(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

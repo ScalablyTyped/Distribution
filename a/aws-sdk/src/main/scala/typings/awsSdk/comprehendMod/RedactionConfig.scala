@@ -42,6 +42,6 @@ object RedactionConfig {
     
     inline def setPiiEntityTypesUndefined: Self = StObject.set(x, "PiiEntityTypes", js.undefined)
     
-    inline def setPiiEntityTypesVarargs(value: PiiEntityType*): Self = StObject.set(x, "PiiEntityTypes", js.Array(value :_*))
+    inline def setPiiEntityTypesVarargs(value: PiiEntityType*): Self = StObject.set(x, "PiiEntityTypes", js.Array(value*))
   }
 }

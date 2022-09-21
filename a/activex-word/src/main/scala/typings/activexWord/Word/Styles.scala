@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Styles extends StObject {
   
   def Add(Name: String): Style = js.native
-  def Add(Name: String, Type: js.Any): Style = js.native
+  def Add(Name: String, Type: Any): Style = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -16,9 +16,9 @@ trait Styles extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): Style = js.native
+  def Item(Index: Any): Style = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.Styles_typekey")
   var WordDotStyles_typekey: Styles = js.native

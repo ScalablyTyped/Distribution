@@ -1,6 +1,6 @@
 package typings.uuid1345
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.uuid1345.anon.Encoding
 import typings.uuid1345.anon.EncodingMac
 import typings.uuid1345.anon.EncodingName

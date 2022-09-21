@@ -12,21 +12,24 @@ trait SVGGraphicsElement
      with SVGTests {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def getBBox(): DOMRect = js.native
   def getBBox(options: SVGBoundingBoxOptions): DOMRect = js.native
   
+  /* standard dom */
   def getCTM(): DOMMatrix | Null = js.native
   
+  /* standard dom */
   def getScreenCTM(): DOMMatrix | Null = js.native
   
   /* InferMemberOverrides */
@@ -40,5 +43,6 @@ trait SVGGraphicsElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val transform: SVGAnimatedTransformList = js.native
 }

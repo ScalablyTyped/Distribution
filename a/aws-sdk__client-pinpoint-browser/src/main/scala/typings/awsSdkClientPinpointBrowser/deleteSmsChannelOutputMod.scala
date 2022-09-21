@@ -8,5 +8,5 @@ object deleteSmsChannelOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteSmsChannelOutput", "DeleteSmsChannelOutput")
   @js.native
-  val DeleteSmsChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteSmsChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

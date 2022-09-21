@@ -34,6 +34,7 @@ object contextMod {
     def showTooltipAt(content: Element, position: js.Tuple2[Double, Double], anchor: TooltipAnchor): Unit = js.native
     
     def showTooltipFromEvent(content: Element, event: MouseEvent[typings.std.Element, NativeMouseEvent]): Unit = js.native
+    def showTooltipFromEvent(content: Element, event: MouseEvent[typings.std.Element, NativeMouseEvent], anchor: TooltipAnchor): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -19,6 +19,6 @@ object ProviderMetadata {
     
     inline def setObjectMetadata(value: js.Array[ObjectMetadata]): Self = StObject.set(x, "objectMetadata", value.asInstanceOf[js.Any])
     
-    inline def setObjectMetadataVarargs(value: ObjectMetadata*): Self = StObject.set(x, "objectMetadata", js.Array(value :_*))
+    inline def setObjectMetadataVarargs(value: ObjectMetadata*): Self = StObject.set(x, "objectMetadata", js.Array(value*))
   }
 }

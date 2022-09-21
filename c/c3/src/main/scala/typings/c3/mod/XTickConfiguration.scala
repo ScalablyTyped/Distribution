@@ -1,7 +1,6 @@
 package typings.c3.mod
 
 import typings.c3.anon.MaxNumber
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ trait XTickConfiguration
   /**
     * A function to format x-axis tick values. A format string is also supported for timeseries data.
     */
-  var format: js.UndefOr[String | (js.Function1[/* x */ Double | Date, String | Double])] = js.undefined
+  var format: js.UndefOr[String | (js.Function1[/* x */ Double | js.Date, String | Double])] = js.undefined
   
   var multiline: js.UndefOr[Boolean] = js.undefined
   
@@ -64,9 +63,9 @@ object XTickConfiguration {
     
     inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    inline def setFormat(value: String | (js.Function1[/* x */ Double | Date, String | Double])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | (js.Function1[/* x */ Double | js.Date, String | Double])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatFunction1(value: /* x */ Double | Date => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: /* x */ Double | js.Date => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

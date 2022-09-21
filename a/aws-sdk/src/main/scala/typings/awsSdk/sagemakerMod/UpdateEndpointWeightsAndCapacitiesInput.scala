@@ -12,7 +12,7 @@ trait UpdateEndpointWeightsAndCapacitiesInput extends StObject {
   var DesiredWeightsAndCapacities: DesiredWeightAndCapacityList
   
   /**
-    * The name of an existing Amazon SageMaker endpoint.
+    * The name of an existing SageMaker endpoint.
     */
   var EndpointName: typings.awsSdk.sagemakerMod.EndpointName
 }
@@ -27,7 +27,7 @@ object UpdateEndpointWeightsAndCapacitiesInput {
     
     inline def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = StObject.set(x, "DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
     
-    inline def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = StObject.set(x, "DesiredWeightsAndCapacities", js.Array(value :_*))
+    inline def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = StObject.set(x, "DesiredWeightsAndCapacities", js.Array(value*))
     
     inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }

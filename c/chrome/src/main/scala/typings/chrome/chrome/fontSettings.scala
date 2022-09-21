@@ -1,6 +1,12 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
+import typings.chrome.chromeStrings.cursive
+import typings.chrome.chromeStrings.fantasy
+import typings.chrome.chromeStrings.fixed
+import typings.chrome.chromeStrings.sansserif
+import typings.chrome.chromeStrings.serif
+import typings.chrome.chromeStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,21 +48,21 @@ object fontSettings {
   trait FontDetails extends StObject {
     
     /** The generic font family for the font. */
-    var genericFamily: String
+    var genericFamily: cursive | fantasy | fixed | sansserif | serif | standard
     
     /** Optional. The script for the font. If omitted, the global script font setting is affected.  */
     var script: js.UndefOr[String] = js.undefined
   }
   object FontDetails {
     
-    inline def apply(genericFamily: String): FontDetails = {
+    inline def apply(genericFamily: cursive | fantasy | fixed | sansserif | serif | standard): FontDetails = {
       val __obj = js.Dynamic.literal(genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontDetails]
     }
     
     extension [Self <: FontDetails](x: Self) {
       
-      inline def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
+      inline def setGenericFamily(value: cursive | fantasy | fixed | sansserif | serif | standard): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
@@ -179,7 +185,7 @@ object fontSettings {
   }
   object SetFontDetails {
     
-    inline def apply(fontId: String, genericFamily: String): SetFontDetails = {
+    inline def apply(fontId: String, genericFamily: cursive | fantasy | fixed | sansserif | serif | standard): SetFontDetails = {
       val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetFontDetails]
     }

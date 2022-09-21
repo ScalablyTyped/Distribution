@@ -8,7 +8,7 @@ trait NormalizationTypeDiscriminator
   extends StObject
      with NormalizationSelection {
   
-  // 'TypeDiscriminator';
+  // "TypeDiscriminator";
   val abstractKey: String
   
   val kind: String

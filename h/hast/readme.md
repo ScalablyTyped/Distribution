@@ -10,10 +10,10 @@ Renamed to rehype
 | ------------------ | :-------------: |
 | Full name          | hast |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 39799 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 34385.333333333336 |
+| # stars            | 1006.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/rehype#readme)

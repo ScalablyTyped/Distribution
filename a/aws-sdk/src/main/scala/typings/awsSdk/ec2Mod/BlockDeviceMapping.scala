@@ -17,7 +17,7 @@ trait BlockDeviceMapping extends StObject {
   var Ebs: js.UndefOr[EbsBlockDevice] = js.undefined
   
   /**
-    * Suppresses the specified device included in the block device mapping of the AMI.
+    * To omit the device from the block device mapping, specify an empty string. When this property is specified, the device is removed from the block device mapping regardless of the assigned value.
     */
   var NoDevice: js.UndefOr[String] = js.undefined
   

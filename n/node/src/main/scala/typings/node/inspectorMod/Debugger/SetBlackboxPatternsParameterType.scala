@@ -22,6 +22,6 @@ object SetBlackboxPatternsParameterType {
     
     inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
   }
 }

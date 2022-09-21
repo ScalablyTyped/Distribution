@@ -22,6 +22,6 @@ object CloudWatchDestination {
     
     inline def setDimensionConfigurations(value: CloudWatchDimensionConfigurations): Self = StObject.set(x, "DimensionConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setDimensionConfigurationsVarargs(value: CloudWatchDimensionConfiguration*): Self = StObject.set(x, "DimensionConfigurations", js.Array(value :_*))
+    inline def setDimensionConfigurationsVarargs(value: CloudWatchDimensionConfiguration*): Self = StObject.set(x, "DimensionConfigurations", js.Array(value*))
   }
 }

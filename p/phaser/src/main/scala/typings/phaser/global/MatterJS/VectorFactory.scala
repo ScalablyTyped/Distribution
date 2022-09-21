@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.VectorFactory")
 @js.native
-class VectorFactory ()
+open class VectorFactory ()
   extends StObject
      with typings.phaser.MatterJS.VectorFactory

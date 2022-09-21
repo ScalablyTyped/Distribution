@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The list of all clusters in a project.
-  */
 trait SchemaListClustersResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListClustersResponse extends StObject {
   var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.undefined
   
   /**
-    * Output only. This token is included in the response if there are more
-    * results to fetch. To fetch additional results, provide this value as the
-    * page_token in a subsequent &lt;code&gt;ListClustersRequest&lt;/code&gt;.
+    * Output only. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent ListClustersRequest.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListClustersResponse {
   
@@ -34,9 +29,11 @@ object SchemaListClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

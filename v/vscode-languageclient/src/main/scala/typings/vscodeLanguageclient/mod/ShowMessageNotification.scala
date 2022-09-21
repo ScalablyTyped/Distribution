@@ -1,6 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
+import typings.vscodeLanguageclient.vscodeLanguageclientStrings.windowSlashshowMessage
 import typings.vscodeLanguageserverProtocol.protocolMod.ShowMessageParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ShowMessageNotification {
   
+  @JSImport("vscode-languageclient", "ShowMessageNotification.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "ShowMessageNotification.method")
+  @js.native
+  val method: windowSlashshowMessage = js.native
+  
   @JSImport("vscode-languageclient", "ShowMessageNotification.type")
   @js.native
-  val `type`: ProtocolNotificationType[ShowMessageParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[ShowMessageParams, Unit] = js.native
 }

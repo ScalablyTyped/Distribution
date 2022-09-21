@@ -18,7 +18,7 @@ object angular {
       * @param eventName Name of the even that will trigger a command sequence
       * @param data Data of any type that will be passed to the command.
       */
-    def dispatch(eventName: String): IPromise[js.Any] = js.native
-    def dispatch(eventName: String, data: js.Any): IPromise[js.Any] = js.native
+    def dispatch(eventName: String): IPromise[Any] = js.native
+    def dispatch(eventName: String, data: Any): IPromise[Any] = js.native
   }
 }

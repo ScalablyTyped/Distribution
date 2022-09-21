@@ -24,27 +24,27 @@ object communicatorMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_close: js.Any = js.native
+    /* private */ var _Handle_close: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Handle_error: js.Any = js.native
+    /* private */ var _Handle_error: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Listen_data: js.Any = js.native
+    /* private */ var _Listen_data: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Listen_header: js.Any = js.native
+    /* private */ var _Listen_header: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Listen_piece: js.Any = js.native
+    /* private */ var _Listen_piece: Any = js.native
     
     /**
       * @hidden
@@ -54,26 +54,26 @@ object communicatorMod {
     /**
       * @hidden
       */
-    /* private */ var data_ : js.Any = js.native
+    /* private */ var data_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var data_index_ : js.Any = js.native
+    /* private */ var data_index_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var header_bytes_ : js.Any = js.native
+    /* private */ var header_bytes_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var listening_ : js.Any = js.native
+    /* private */ var listening_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var socket_ : js.Any = js.native
+    /* private */ var socket_ : Any = js.native
   }
 }

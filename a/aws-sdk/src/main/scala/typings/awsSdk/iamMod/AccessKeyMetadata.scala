@@ -14,7 +14,7 @@ trait AccessKeyMetadata extends StObject {
   /**
     * The date when the access key was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the access key. Active means that the key is valid for API calls; Inactive means it is not.
@@ -39,7 +39,7 @@ object AccessKeyMetadata {
     
     inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     

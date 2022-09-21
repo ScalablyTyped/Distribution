@@ -17,9 +17,9 @@ trait Language
 object Language {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_displayName: () => String,
     get_languageTag: () => String,
     get_lcid: () => Double,

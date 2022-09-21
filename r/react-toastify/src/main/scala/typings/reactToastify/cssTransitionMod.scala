@@ -12,11 +12,11 @@ object cssTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+  inline def cssTransition(hasEnterExitAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
     Element
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitDurationAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
     Element
   ]]
   
@@ -24,13 +24,14 @@ object cssTransitionMod {
     
     /**
       * Append current toast position to the classname.
+      * If multiple classes are provided, only the last one will get the position
       * For instance `myclass--top-center`...
       * `Default: false`
       */
     var appendPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Collapse toast smoothly when animation end
+      * Collapse toast smoothly when exit animation end
       * `Default: true`
       */
     var collapse: js.UndefOr[Boolean] = js.undefined
@@ -40,13 +41,6 @@ object cssTransitionMod {
       * `Default: 300`
       */
     var collapseDuration: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Define the duration of the transition in ms
-      * You can also pass an array `[enterDuration, exitDuration]`
-      * `Default: 750`
-      */
-    var duration: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
     /**
       * Css class to apply when toast enter
@@ -78,10 +72,6 @@ object cssTransitionMod {
       inline def setCollapseDurationUndefined: Self = StObject.set(x, "collapseDuration", js.undefined)
       
       inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
-      
-      inline def setDuration(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
       inline def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       

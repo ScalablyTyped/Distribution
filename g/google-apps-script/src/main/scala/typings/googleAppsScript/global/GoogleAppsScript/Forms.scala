@@ -112,6 +112,8 @@ object Forms {
     
     /* 4 */ val DURATION: typings.googleAppsScript.GoogleAppsScript.Forms.ItemType.DURATION & Double = js.native
     
+    /* 16 */ val FILE_UPLOAD: typings.googleAppsScript.GoogleAppsScript.Forms.ItemType.FILE_UPLOAD & Double = js.native
+    
     /* 5 */ val GRID: typings.googleAppsScript.GoogleAppsScript.Forms.ItemType.GRID & Double = js.native
     
     /* 6 */ val IMAGE: typings.googleAppsScript.GoogleAppsScript.Forms.ItemType.IMAGE & Double = js.native

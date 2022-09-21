@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.DetailButton")
 @js.native
-class DetailButton protected ()
+open class DetailButton protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.DetailButton {
   def this(element: Element) = this()

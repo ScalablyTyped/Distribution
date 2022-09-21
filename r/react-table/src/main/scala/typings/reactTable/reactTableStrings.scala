@@ -104,6 +104,18 @@ object reactTableStrings {
   inline def median: median = "median".asInstanceOf[median]
   
   @js.native
+  sealed trait number
+    extends StObject
+       with DefaultSortTypes
+  inline def number: number = "number".asInstanceOf[number]
+  
+  @js.native
+  sealed trait string
+    extends StObject
+       with DefaultSortTypes
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
   sealed trait sum
     extends StObject
        with DefaultAggregators

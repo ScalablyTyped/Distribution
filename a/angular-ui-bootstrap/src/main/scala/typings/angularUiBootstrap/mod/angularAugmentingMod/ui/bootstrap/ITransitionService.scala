@@ -24,8 +24,8 @@ trait ITransitionService extends StObject {
     *
     * @return A promise that is resolved when the transition finishes.
     */
-  def apply(element: IAugmentedJQuery, trigger: js.Any): IPromise[IAugmentedJQuery] = js.native
-  def apply(element: IAugmentedJQuery, trigger: js.Any, options: ITransitionServiceOptions): IPromise[IAugmentedJQuery] = js.native
+  def apply(element: IAugmentedJQuery, trigger: Any): IPromise[IAugmentedJQuery] = js.native
+  def apply(element: IAugmentedJQuery, trigger: Any, options: ITransitionServiceOptions): IPromise[IAugmentedJQuery] = js.native
   
   /**
     * The browser specific animation event name.

@@ -10,7 +10,7 @@ object serverBaseMod {
   
   @JSImport("samchon/protocol/server/base/ServerBase", "ServerBase")
   @js.native
-  class ServerBase protected () extends Server {
+  open class ServerBase protected () extends Server {
     /**
       * Construct from a *hooker*.
       *
@@ -21,6 +21,6 @@ object serverBaseMod {
     /**
       * @hidden
       */
-    /* private */ var hooker_ : js.Any = js.native
+    /* private */ var hooker_ : Any = js.native
   }
 }

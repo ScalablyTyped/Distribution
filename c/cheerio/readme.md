@@ -1,7 +1,7 @@
 
 # Scala.js typings for cheerio
 
-Typings are for version v0.22.0
+Typings are for version 1.0.0-rc.12
 
 ## Library description:
 Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
@@ -10,13 +10,13 @@ Tiny, fast, and elegant implementation of core jQuery designed specifically for 
 | ------------------ | :-------------: |
 | Full name          | cheerio |
 | Keywords           | htmlparser, jquery, selector, scraper, parser, html |
-| # releases         | 4 |
-| # dependents       | 10070 |
-| # downloads        | 237394119 |
-| # stars            | 622 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0541401666666668E7 |
+| # stars            | 25173.0 |
 
 ## Links
-- [Homepage](https://github.com/cheeriojs/cheerio#readme)
+- [Homepage](https://cheerio.js.org/)
 - [Bugs](https://github.com/cheeriojs/cheerio/issues)
 - [Repository](https://github.com/cheeriojs/cheerio)
 - [Npm](https://www.npmjs.com/package/cheerio)
@@ -24,7 +24,7 @@ Tiny, fast, and elegant implementation of core jQuery designed specifically for 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

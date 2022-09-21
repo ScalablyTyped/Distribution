@@ -16,7 +16,7 @@ object TextDocumentSyncKind {
     * Documents are synced by always sending the full content
     * of the document.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.Full")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSyncKind.Full")
   @js.native
   val Full: /* 1 */ Double = js.native
   
@@ -25,14 +25,14 @@ object TextDocumentSyncKind {
     * After that only incremental updates to the document are
     * send.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.Incremental")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSyncKind.Incremental")
   @js.native
   val Incremental: /* 2 */ Double = js.native
   
   /**
     * Documents should not be synced at all.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.None")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSyncKind.None")
   @js.native
   val None: /* 0 */ Double = js.native
 }

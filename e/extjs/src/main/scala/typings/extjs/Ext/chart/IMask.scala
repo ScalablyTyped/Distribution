@@ -10,7 +10,7 @@ trait IMask
      with IBase {
   
   /** [Config Option] (Boolean/String) */
-  var mask: js.UndefOr[js.Any] = js.undefined
+  var mask: js.UndefOr[Any] = js.undefined
 }
 object IMask {
   
@@ -21,7 +21,7 @@ object IMask {
   
   extension [Self <: IMask](x: Self) {
     
-    inline def setMask(value: js.Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }

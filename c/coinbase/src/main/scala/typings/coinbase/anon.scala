@@ -1,6 +1,9 @@
 package typings.coinbase
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.coinbase.coinbaseStrings.buy
+import typings.coinbase.coinbaseStrings.sell
+import typings.coinbase.coinbaseStrings.trade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,6 +117,31 @@ object anon {
     }
   }
   
+  trait IdResource extends StObject {
+    
+    var id: String
+    
+    var resource: trade
+    
+    var resource_path: String
+  }
+  object IdResource {
+    
+    inline def apply(id: String, resource_path: String): IdResource = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = "trade", resource_path = resource_path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IdResource]
+    }
+    
+    extension [Self <: IdResource](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setResource(value: trade): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Minsize extends StObject {
     
     /**
@@ -145,6 +173,56 @@ object anon {
       inline def setMin_size(value: String): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Resource extends StObject {
+    
+    var id: String
+    
+    var resource: buy
+    
+    var resource_path: String
+  }
+  object Resource {
+    
+    inline def apply(id: String, resource_path: String): Resource = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = "buy", resource_path = resource_path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Resource]
+    }
+    
+    extension [Self <: Resource](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setResource(value: buy): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Resourcepath extends StObject {
+    
+    var id: String
+    
+    var resource: sell
+    
+    var resource_path: String
+  }
+  object Resourcepath {
+    
+    inline def apply(id: String, resource_path: String): Resourcepath = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = "sell", resource_path = resource_path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Resourcepath]
+    }
+    
+    extension [Self <: Resourcepath](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setResource(value: sell): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
     }
   }
 }

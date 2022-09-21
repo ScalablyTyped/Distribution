@@ -29,7 +29,7 @@ object DescribeAgentsResponse {
     
     inline def setAgentsInfoUndefined: Self = StObject.set(x, "agentsInfo", js.undefined)
     
-    inline def setAgentsInfoVarargs(value: AgentInfo*): Self = StObject.set(x, "agentsInfo", js.Array(value :_*))
+    inline def setAgentsInfoVarargs(value: AgentInfo*): Self = StObject.set(x, "agentsInfo", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

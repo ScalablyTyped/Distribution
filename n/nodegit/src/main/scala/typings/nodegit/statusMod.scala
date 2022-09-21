@@ -29,7 +29,7 @@ object statusMod {
   
   @JSImport("nodegit/status", "Status")
   @js.native
-  class Status () extends StObject
+  open class Status () extends StObject
   /* static members */
   object Status {
     

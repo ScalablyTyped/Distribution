@@ -27,7 +27,7 @@ trait IVaultExternalObjectOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     pACLProvidedCBN: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def PromoteObject(
     ObjVer: IObjVer,
@@ -35,7 +35,7 @@ trait IVaultExternalObjectOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     pACLProvidedCBN: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def PromoteObject(
@@ -53,7 +53,7 @@ trait IVaultExternalObjectOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     pACLProvidedCBN: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def PromoteObject(
     ObjVer: IObjVer,
@@ -61,7 +61,7 @@ trait IVaultExternalObjectOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     pACLProvidedCBN: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def PromoteObject(

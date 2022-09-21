@@ -10,10 +10,10 @@ object formatColorTextMod {
   
   @JSImport("material-ui/svg-icons/editor/format-color-text", JSImport.Default)
   @js.native
-  class default () extends EditorFormatColorText
+  open class default () extends EditorFormatColorText
   
   @JSImport("material-ui/svg-icons/editor/format-color-text", "EditorFormatColorText")
   @js.native
-  class EditorFormatColorText ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatColorText ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

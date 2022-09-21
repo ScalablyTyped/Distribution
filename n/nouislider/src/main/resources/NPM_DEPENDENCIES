@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nouislider" : "15.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nouislider" : "15.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

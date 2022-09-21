@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes the bullet of a paragraph.
-  */
 trait SchemaBullet extends StObject {
   
   /**
     * The ID of the list this paragraph belongs to.
     */
-  var listId: js.UndefOr[String] = js.undefined
+  var listId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The nesting level of this paragraph in the list.
     */
-  var nestingLevel: js.UndefOr[Double] = js.undefined
+  var nestingLevel: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The paragraph specific text style applied to this bullet.
@@ -35,9 +32,13 @@ object SchemaBullet {
     
     inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
+    inline def setListIdNull: Self = StObject.set(x, "listId", null)
+    
     inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setNestingLevelNull: Self = StObject.set(x, "nestingLevel", null)
     
     inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
     

@@ -1,7 +1,10 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.layerHostTypesMod.ILayerHost
 import typings.officeUiFabricReact.layerHostTypesMod.ILayerHostProps
 import typings.officeUiFabricReact.layerTypesMod.ILayerProps
+import typings.officeUiFabricReact.layerTypesMod.ILayerStyleProps
+import typings.officeUiFabricReact.layerTypesMod.ILayerStyles
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layerMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Layer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("office-ui-fabric-react/lib/components/Layer", "Layer")
   @js.native
   val Layer: FunctionComponent[ILayerProps] = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/Layer", "LayerBase")
   @js.native
-  class LayerBase protected ()
+  open class LayerBase protected ()
     extends typings.officeUiFabricReact.layerBaseMod.LayerBase {
     def this(props: ILayerProps) = this()
   }
@@ -34,13 +41,29 @@ object layerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Layer", "LayerHost")
   @js.native
-  class LayerHost protected ()
+  open class LayerHost protected ()
     extends typings.officeUiFabricReact.layerHostMod.LayerHost {
     def this(props: ILayerHostProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ILayerHostProps, context: js.Any) = this()
   }
+  
+  inline def getLayerCount(hostId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerCount")(hostId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def getLayerHost(hostId: String): js.UndefOr[ILayerHost] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerHost")(hostId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ILayerHost]]
+  
+  inline def getLayerHostSelector(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerHostSelector")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def getLayerStyles(props: ILayerStyleProps): ILayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILayerStyles]
+  
+  inline def notifyHostChanged(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyHostChanged")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def registerLayer(hostId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLayer")(hostId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def registerLayerHost(hostId: String, layerHost: ILayerHost): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLayerHost")(hostId.asInstanceOf[js.Any], layerHost.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setLayerHostSelector(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayerHostSelector")().asInstanceOf[Unit]
+  inline def setLayerHostSelector(selector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayerHostSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def unregisterLayer(hostId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterLayer")(hostId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def unregisterLayerHost(hostId: String, layerHost: ILayerHost): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterLayerHost")(hostId.asInstanceOf[js.Any], layerHost.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

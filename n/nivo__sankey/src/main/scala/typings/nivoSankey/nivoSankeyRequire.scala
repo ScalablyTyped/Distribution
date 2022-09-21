@@ -1,12 +1,11 @@
 package typings.nivoSankey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@nivo/sankey", JSImport.Namespace)
 @js.native
-object nivoSankeyRequire extends js.Object
-
+object nivoSankeyRequire extends StObject

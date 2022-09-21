@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Text
   extends StObject
-     with Literal
-     with StaticPhrasingContent {
+     with Literal {
   
   @JSName("type")
   var type_Text: text
 }
 object Text {
   
-  inline def apply(value: js.Any): Text = {
+  inline def apply(value: Any): Text = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[Text]

@@ -9,8 +9,10 @@ trait CSSStyleRule
   extends StObject
      with CSSRule {
   
+  /* standard dom */
   var selectorText: java.lang.String
   
+  /* standard dom */
   val style: CSSStyleDeclaration
 }
 object CSSStyleRule {

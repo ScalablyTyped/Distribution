@@ -9,7 +9,7 @@ trait SchemaProjectsSetDefaultNetworkTierRequest extends StObject {
   /**
     * Default network tier to be set.
     */
-  var networkTier: js.UndefOr[String] = js.undefined
+  var networkTier: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProjectsSetDefaultNetworkTierRequest {
   
@@ -21,6 +21,8 @@ object SchemaProjectsSetDefaultNetworkTierRequest {
   extension [Self <: SchemaProjectsSetDefaultNetworkTierRequest](x: Self) {
     
     inline def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTierNull: Self = StObject.set(x, "networkTier", null)
     
     inline def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
   }

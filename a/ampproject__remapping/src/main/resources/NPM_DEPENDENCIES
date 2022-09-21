@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ampproject/remapping" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ampproject/remapping" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

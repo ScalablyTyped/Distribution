@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Node extends StObject {
   
+  var assignedSlot: js.UndefOr[BackendNode] = js.undefined
+  
   /**
     * Attributes of the `Element` node in the form of flat array `[name1, value1, name2, value2]`.
     */
@@ -33,6 +35,8 @@ trait Node extends StObject {
     */
   var children: js.UndefOr[js.Array[Node]] = js.undefined
   
+  var compatibilityMode: js.UndefOr[CompatibilityMode] = js.undefined
+  
   /**
     * Content document for frame owner elements.
     */
@@ -54,7 +58,9 @@ trait Node extends StObject {
   var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
-    * Import document for the HTMLImport links.
+    * Deprecated, as the HTML Imports API has been removed (crbug.com/937746).
+    * This property used to return the imported document for the HTMLImport links.
+    * The property is always undefined now.
     */
   var importedDocument: js.UndefOr[Node] = js.undefined
   
@@ -109,6 +115,12 @@ trait Node extends StObject {
     * Pseudo elements associated with this node.
     */
   var pseudoElements: js.UndefOr[js.Array[Node]] = js.undefined
+  
+  /**
+    * Pseudo element identifier for this node. Only present if there is a
+    * valid pseudoType.
+    */
+  var pseudoIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Pseudo element type for this node.
@@ -166,11 +178,15 @@ object Node {
   
   extension [Self <: Node](x: Self) {
     
+    inline def setAssignedSlot(value: BackendNode): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
+    
+    inline def setAssignedSlotUndefined: Self = StObject.set(x, "assignedSlot", js.undefined)
+    
     inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
@@ -186,7 +202,11 @@ object Node {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setCompatibilityMode(value: CompatibilityMode): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibilityModeUndefined: Self = StObject.set(x, "compatibilityMode", js.undefined)
     
     inline def setContentDocument(value: Node): Self = StObject.set(x, "contentDocument", value.asInstanceOf[js.Any])
     
@@ -196,7 +216,7 @@ object Node {
     
     inline def setDistributedNodesUndefined: Self = StObject.set(x, "distributedNodes", js.undefined)
     
-    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
+    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value*))
     
     inline def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
@@ -240,7 +260,11 @@ object Node {
     
     inline def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
     
-    inline def setPseudoElementsVarargs(value: Node*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
+    inline def setPseudoElementsVarargs(value: Node*): Self = StObject.set(x, "pseudoElements", js.Array(value*))
+    
+    inline def setPseudoIdentifier(value: String): Self = StObject.set(x, "pseudoIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoIdentifierUndefined: Self = StObject.set(x, "pseudoIdentifier", js.undefined)
     
     inline def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     
@@ -258,7 +282,7 @@ object Node {
     
     inline def setShadowRootsUndefined: Self = StObject.set(x, "shadowRoots", js.undefined)
     
-    inline def setShadowRootsVarargs(value: Node*): Self = StObject.set(x, "shadowRoots", js.Array(value :_*))
+    inline def setShadowRootsVarargs(value: Node*): Self = StObject.set(x, "shadowRoots", js.Array(value*))
     
     inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     

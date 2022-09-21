@@ -1,7 +1,8 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.ColorProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Color
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,11 @@ trait MjmlTextProps extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
+  
+  var containerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -45,11 +48,15 @@ object MjmlTextProps {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContainerBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setContainerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
     

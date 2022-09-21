@@ -37,11 +37,11 @@ trait CSG
   
   def fixTJunctions(): CSG = js.native
   
-  def getFeatures(features: js.Any): js.Any = js.native
+  def getFeatures(features: Any): Any = js.native
   
-  def getTransformationAndInverseTransformationToFlatLying(): js.Any = js.native
+  def getTransformationAndInverseTransformationToFlatLying(): Any = js.native
   
-  def getTransformationToFlatLying(): js.Any = js.native
+  def getTransformationToFlatLying(): Any = js.native
   
   def intersect(csg: js.Array[CSG]): CSG = js.native
   def intersect(csg: CSG): CSG = js.native
@@ -71,7 +71,7 @@ trait CSG
   
   def sectionCut(orthobasis: OrthoNormalBasis): CAG = js.native
   
-  def setColor(args: js.Any): CSG = js.native
+  def setColor(args: Any): CSG = js.native
   
   def setShared(shared: Shared): CSG = js.native
   
@@ -84,11 +84,11 @@ trait CSG
   
   def toCompactBinary(): Class = js.native
   
-  def toPointCloud(cuberadius: js.Any): CSG = js.native
+  def toPointCloud(cuberadius: Any): CSG = js.native
   
   def toPolygons(): js.Array[Polygon] = js.native
   
-  def toTriangles(): js.Array[js.Any] = js.native
+  def toTriangles(): js.Array[Any] = js.native
   
   def toX3D(): Blob = js.native
   
@@ -134,7 +134,7 @@ object CSG {
     
     var connectors_ : js.Array[Connector]
     
-    def followWith(cagish: js.Any): CSG
+    def followWith(cagish: Any): CSG
     
     def setClosed(bool: Boolean): Unit
     
@@ -146,7 +146,7 @@ object CSG {
       appendConnector: Connector => Unit,
       closed: Boolean,
       connectors_ : js.Array[Connector],
-      followWith: js.Any => CSG,
+      followWith: Any => CSG,
       setClosed: Boolean => Unit,
       verify: () => Unit
     ): ConnectorList = {
@@ -162,9 +162,9 @@ object CSG {
       
       inline def setConnectors_(value: js.Array[Connector]): Self = StObject.set(x, "connectors_", value.asInstanceOf[js.Any])
       
-      inline def setConnectors_Varargs(value: Connector*): Self = StObject.set(x, "connectors_", js.Array(value :_*))
+      inline def setConnectors_Varargs(value: Connector*): Self = StObject.set(x, "connectors_", js.Array(value*))
       
-      inline def setFollowWith(value: js.Any => CSG): Self = StObject.set(x, "followWith", js.Any.fromFunction1(value))
+      inline def setFollowWith(value: Any => CSG): Self = StObject.set(x, "followWith", js.Any.fromFunction1(value))
       
       inline def setSetClosed(value: Boolean => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction1(value))
       
@@ -224,7 +224,7 @@ object CSG {
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
     }
   }
   
@@ -443,7 +443,7 @@ object CSG {
       
       inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setIsMirroring(value: () => Boolean): Self = StObject.set(x, "isMirroring", js.Any.fromFunction0(value))
       
@@ -467,13 +467,13 @@ object CSG {
     
     def addPolygonTreeNodes(polygontreenodes: js.Array[PolygonTreeNode]): Unit
     
-    var back: js.Any
+    var back: Any
     
     def clipPolygons(polygontreenodes: js.Array[PolygonTreeNode], alsoRemovecoplanarFront: Boolean): Unit
     
     def clipTo(tree: Tree, alsoRemovecoplanarFront: Boolean): Unit
     
-    var front: js.Any
+    var front: Any
     
     def getParentPlaneNormals(normals: js.Array[Vector3D], maxdepth: Double): Unit
     
@@ -489,10 +489,10 @@ object CSG {
     
     inline def apply(
       addPolygonTreeNodes: js.Array[PolygonTreeNode] => Unit,
-      back: js.Any,
+      back: Any,
       clipPolygons: (js.Array[PolygonTreeNode], Boolean) => Unit,
       clipTo: (Tree, Boolean) => Unit,
-      front: js.Any,
+      front: Any,
       getParentPlaneNormals: (js.Array[Vector3D], Double) => Unit,
       invert: () => Unit,
       parent: Node,
@@ -507,13 +507,13 @@ object CSG {
       
       inline def setAddPolygonTreeNodes(value: js.Array[PolygonTreeNode] => Unit): Self = StObject.set(x, "addPolygonTreeNodes", js.Any.fromFunction1(value))
       
-      inline def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+      inline def setBack(value: Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
       inline def setClipPolygons(value: (js.Array[PolygonTreeNode], Boolean) => Unit): Self = StObject.set(x, "clipPolygons", js.Any.fromFunction2(value))
       
       inline def setClipTo(value: (Tree, Boolean) => Unit): Self = StObject.set(x, "clipTo", js.Any.fromFunction2(value))
       
-      inline def setFront(value: js.Any): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+      inline def setFront(value: Any): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
       
       inline def setGetParentPlaneNormals(value: (js.Array[Vector3D], Double) => Unit): Self = StObject.set(x, "getParentPlaneNormals", js.Any.fromFunction2(value))
       
@@ -525,7 +525,7 @@ object CSG {
       
       inline def setPolygontreenodes(value: js.Array[PolygonTreeNode]): Self = StObject.set(x, "polygontreenodes", value.asInstanceOf[js.Any])
       
-      inline def setPolygontreenodesVarargs(value: PolygonTreeNode*): Self = StObject.set(x, "polygontreenodes", js.Array(value :_*))
+      inline def setPolygontreenodesVarargs(value: PolygonTreeNode*): Self = StObject.set(x, "polygontreenodes", js.Array(value*))
     }
   }
   
@@ -562,7 +562,7 @@ object CSG {
     
     def appendArc(endpoint: Vector2D, options: IEllpiticalArcOptions): Path2D = js.native
     
-    def appendBezier(controlpoints: js.Any, options: js.Any): Path2D = js.native
+    def appendBezier(controlpoints: Any, options: Any): Path2D = js.native
     
     def appendPoint(point: Vector2D): Path2D = js.native
     
@@ -626,19 +626,19 @@ object CSG {
       * @param bottom Bottom polygon
       * @param top Top polygon
       */
-    /* private */ def _addWalls(walls: js.Any, bottom: js.Any, top: js.Any, bFlipped: js.Any): js.Any = js.native
+    /* private */ def _addWalls(walls: Any, bottom: Any, top: Any, bFlipped: Any): Any = js.native
     
     def boundingBox(): js.Array[Vector3D] = js.native
     
-    def boundingSphere(): js.Any = js.native
+    def boundingSphere(): Any = js.native
     
     var cachedBoundingBox: js.Array[Vector3D] = js.native
     
-    var cachedBoundingSphere: js.Any = js.native
+    var cachedBoundingSphere: Any = js.native
     
     def checkIfConvex(): Unit = js.native
     
-    def extrude(offsetvector: js.Any): CSG = js.native
+    def extrude(offsetvector: Any): CSG = js.native
     
     def flipped(): Polygon = js.native
     
@@ -646,13 +646,13 @@ object CSG {
     
     def getSignedVolume(): Double = js.native
     
-    def getTetraFeatures(features: js.Any): js.Array[js.Any] = js.native
+    def getTetraFeatures(features: Any): js.Array[Any] = js.native
     
     var plane: Plane = js.native
     
     def projectToOrthoNormalBasis(orthobasis: OrthoNormalBasis): CAG = js.native
     
-    def setColor(args: js.Any): Polygon = js.native
+    def setColor(args: Any): Polygon = js.native
     
     var shared: Shared = js.native
     
@@ -665,7 +665,7 @@ object CSG {
       *          return: CSG.Polygon or null to skip
       *  - loop {Boolean} no flats, only walls, it's used to generate solids like a tor
       */
-    def solidFromSlices(options: js.Any): CSG = js.native
+    def solidFromSlices(options: Any): CSG = js.native
     
     var vertices: js.Array[Vertex] = js.native
   }
@@ -673,30 +673,30 @@ object CSG {
     
     trait Shared extends StObject {
       
-      var color: js.Any
+      var color: Any
       
-      def getHash(): js.Any
+      def getHash(): Any
       
-      def getTag(): js.Any
+      def getTag(): Any
       
-      var tag: js.Any
+      var tag: Any
     }
     object Shared {
       
-      inline def apply(color: js.Any, getHash: () => js.Any, getTag: () => js.Any, tag: js.Any): Shared = {
+      inline def apply(color: Any, getHash: () => Any, getTag: () => Any, tag: Any): Shared = {
         val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], getHash = js.Any.fromFunction0(getHash), getTag = js.Any.fromFunction0(getTag), tag = tag.asInstanceOf[js.Any])
         __obj.asInstanceOf[Shared]
       }
       
       extension [Self <: Shared](x: Self) {
         
-        inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        inline def setGetHash(value: () => js.Any): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
+        inline def setGetHash(value: () => Any): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
         
-        inline def setGetTag(value: () => js.Any): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
+        inline def setGetTag(value: () => Any): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
         
-        inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -705,19 +705,13 @@ object CSG {
   
   trait PolygonTreeNode extends StObject {
     
-    def _splitByPlane(
-      plane: js.Any,
-      coplanarfrontnodes: js.Any,
-      coplanarbacknodes: js.Any,
-      frontnodes: js.Any,
-      backnodes: js.Any
-    ): Unit
+    def _splitByPlane(plane: Any, coplanarfrontnodes: Any, coplanarbacknodes: Any, frontnodes: Any, backnodes: Any): Unit
     
     def addChild(polygon: Polygon): PolygonTreeNode
     
-    def addPolygons(polygons: js.Any): Unit
+    def addPolygons(polygons: Any): Unit
     
-    var children: js.Any
+    var children: Any
     
     def getPolygon(): Polygon
     
@@ -731,7 +725,7 @@ object CSG {
     
     def isRootNode(): Boolean
     
-    var parent: js.Any
+    var parent: Any
     
     var polygon: Polygon
     
@@ -741,33 +735,27 @@ object CSG {
     
     var removed: Boolean
     
-    def splitByPlane(
-      plane: js.Any,
-      coplanarfrontnodes: js.Any,
-      coplanarbacknodes: js.Any,
-      frontnodes: js.Any,
-      backnodes: js.Any
-    ): Unit
+    def splitByPlane(plane: Any, coplanarfrontnodes: Any, coplanarbacknodes: Any, frontnodes: Any, backnodes: Any): Unit
   }
   object PolygonTreeNode {
     
     inline def apply(
-      _splitByPlane: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit,
+      _splitByPlane: (Any, Any, Any, Any, Any) => Unit,
       addChild: Polygon => PolygonTreeNode,
-      addPolygons: js.Any => Unit,
-      children: js.Any,
+      addPolygons: Any => Unit,
+      children: Any,
       getPolygon: () => Polygon,
       getPolygons: js.Array[Polygon] => Unit,
       invert: () => Unit,
       invertSub: () => Unit,
       isRemoved: () => Boolean,
       isRootNode: () => Boolean,
-      parent: js.Any,
+      parent: Any,
       polygon: Polygon,
       recursivelyInvalidatePolygon: () => Unit,
       remove: () => Unit,
       removed: Boolean,
-      splitByPlane: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit
+      splitByPlane: (Any, Any, Any, Any, Any) => Unit
     ): PolygonTreeNode = {
       val __obj = js.Dynamic.literal(_splitByPlane = js.Any.fromFunction5(_splitByPlane), addChild = js.Any.fromFunction1(addChild), addPolygons = js.Any.fromFunction1(addPolygons), children = children.asInstanceOf[js.Any], getPolygon = js.Any.fromFunction0(getPolygon), getPolygons = js.Any.fromFunction1(getPolygons), invert = js.Any.fromFunction0(invert), invertSub = js.Any.fromFunction0(invertSub), isRemoved = js.Any.fromFunction0(isRemoved), isRootNode = js.Any.fromFunction0(isRootNode), parent = parent.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], recursivelyInvalidatePolygon = js.Any.fromFunction0(recursivelyInvalidatePolygon), remove = js.Any.fromFunction0(remove), removed = removed.asInstanceOf[js.Any], splitByPlane = js.Any.fromFunction5(splitByPlane))
       __obj.asInstanceOf[PolygonTreeNode]
@@ -777,9 +765,9 @@ object CSG {
       
       inline def setAddChild(value: Polygon => PolygonTreeNode): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
       
-      inline def setAddPolygons(value: js.Any => Unit): Self = StObject.set(x, "addPolygons", js.Any.fromFunction1(value))
+      inline def setAddPolygons(value: Any => Unit): Self = StObject.set(x, "addPolygons", js.Any.fromFunction1(value))
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setGetPolygon(value: () => Polygon): Self = StObject.set(x, "getPolygon", js.Any.fromFunction0(value))
       
@@ -793,7 +781,7 @@ object CSG {
       
       inline def setIsRootNode(value: () => Boolean): Self = StObject.set(x, "isRootNode", js.Any.fromFunction0(value))
       
-      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setPolygon(value: Polygon): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       
@@ -803,9 +791,9 @@ object CSG {
       
       inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setSplitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "splitByPlane", js.Any.fromFunction5(value))
+      inline def setSplitByPlane(value: (Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "splitByPlane", js.Any.fromFunction5(value))
       
-      inline def set_splitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_splitByPlane", js.Any.fromFunction5(value))
+      inline def set_splitByPlane(value: (Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "_splitByPlane", js.Any.fromFunction5(value))
     }
   }
   
@@ -815,47 +803,47 @@ object CSG {
     
     def _transform(matrix4x4: Matrix4x4): Properties
     
-    var center: js.Any
+    var center: Any
     
     var cube: Properties
     
     var cylinder: Properties
     
-    var end: js.Any
+    var end: Any
     
-    var facecenters: js.Array[js.Any]
+    var facecenters: js.Array[Any]
     
-    var facepoint: js.Any
+    var facepoint: Any
     
-    var facepointH: js.Any
+    var facepointH: Any
     
-    var facepointH90: js.Any
+    var facepointH90: Any
     
     var roundedCube: Properties
     
-    var roundedCylinder: js.Any
+    var roundedCylinder: Any
     
     var sphere: Properties
     
-    var start: js.Any
+    var start: Any
   }
   object Properties {
     
     inline def apply(
       _merge: Properties => Properties,
       _transform: Matrix4x4 => Properties,
-      center: js.Any,
+      center: Any,
       cube: Properties,
       cylinder: Properties,
-      end: js.Any,
-      facecenters: js.Array[js.Any],
-      facepoint: js.Any,
-      facepointH: js.Any,
-      facepointH90: js.Any,
+      end: Any,
+      facecenters: js.Array[Any],
+      facepoint: Any,
+      facepointH: Any,
+      facepointH90: Any,
       roundedCube: Properties,
-      roundedCylinder: js.Any,
+      roundedCylinder: Any,
       sphere: Properties,
-      start: js.Any
+      start: Any
     ): Properties = {
       val __obj = js.Dynamic.literal(_merge = js.Any.fromFunction1(_merge), _transform = js.Any.fromFunction1(_transform), center = center.asInstanceOf[js.Any], cube = cube.asInstanceOf[js.Any], cylinder = cylinder.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], facecenters = facecenters.asInstanceOf[js.Any], facepoint = facepoint.asInstanceOf[js.Any], facepointH = facepointH.asInstanceOf[js.Any], facepointH90 = facepointH90.asInstanceOf[js.Any], roundedCube = roundedCube.asInstanceOf[js.Any], roundedCylinder = roundedCylinder.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Properties]
@@ -863,31 +851,31 @@ object CSG {
     
     extension [Self <: Properties](x: Self) {
       
-      inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCube(value: Properties): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
       
       inline def setCylinder(value: Properties): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
       
-      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setFacecenters(value: js.Array[js.Any]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
+      inline def setFacecenters(value: js.Array[Any]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
       
-      inline def setFacecentersVarargs(value: js.Any*): Self = StObject.set(x, "facecenters", js.Array(value :_*))
+      inline def setFacecentersVarargs(value: Any*): Self = StObject.set(x, "facecenters", js.Array(value*))
       
-      inline def setFacepoint(value: js.Any): Self = StObject.set(x, "facepoint", value.asInstanceOf[js.Any])
+      inline def setFacepoint(value: Any): Self = StObject.set(x, "facepoint", value.asInstanceOf[js.Any])
       
-      inline def setFacepointH(value: js.Any): Self = StObject.set(x, "facepointH", value.asInstanceOf[js.Any])
+      inline def setFacepointH(value: Any): Self = StObject.set(x, "facepointH", value.asInstanceOf[js.Any])
       
-      inline def setFacepointH90(value: js.Any): Self = StObject.set(x, "facepointH90", value.asInstanceOf[js.Any])
+      inline def setFacepointH90(value: Any): Self = StObject.set(x, "facepointH90", value.asInstanceOf[js.Any])
       
       inline def setRoundedCube(value: Properties): Self = StObject.set(x, "roundedCube", value.asInstanceOf[js.Any])
       
-      inline def setRoundedCylinder(value: js.Any): Self = StObject.set(x, "roundedCylinder", value.asInstanceOf[js.Any])
+      inline def setRoundedCylinder(value: Any): Self = StObject.set(x, "roundedCylinder", value.asInstanceOf[js.Any])
       
       inline def setSphere(value: Properties): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def set_merge(value: Properties => Properties): Self = StObject.set(x, "_merge", js.Any.fromFunction1(value))
       
@@ -1048,7 +1036,7 @@ object CSG {
     
     var planefactory: fuzzyFactory
     
-    var polygonsharedfactory: js.Any
+    var polygonsharedfactory: Any
     
     var vertexfactory: fuzzyFactory
   }
@@ -1061,7 +1049,7 @@ object CSG {
       getPolygonShared: Shared => Shared,
       getVertex: Vertex => Vertex,
       planefactory: fuzzyFactory,
-      polygonsharedfactory: js.Any,
+      polygonsharedfactory: Any,
       vertexfactory: fuzzyFactory
     ): fuzzyCSGFactory = {
       val __obj = js.Dynamic.literal(getCSG = js.Any.fromFunction1(getCSG), getPlane = js.Any.fromFunction1(getPlane), getPolygon = js.Any.fromFunction1(getPolygon), getPolygonShared = js.Any.fromFunction1(getPolygonShared), getVertex = js.Any.fromFunction1(getVertex), planefactory = planefactory.asInstanceOf[js.Any], polygonsharedfactory = polygonsharedfactory.asInstanceOf[js.Any], vertexfactory = vertexfactory.asInstanceOf[js.Any])
@@ -1082,7 +1070,7 @@ object CSG {
       
       inline def setPlanefactory(value: fuzzyFactory): Self = StObject.set(x, "planefactory", value.asInstanceOf[js.Any])
       
-      inline def setPolygonsharedfactory(value: js.Any): Self = StObject.set(x, "polygonsharedfactory", value.asInstanceOf[js.Any])
+      inline def setPolygonsharedfactory(value: Any): Self = StObject.set(x, "polygonsharedfactory", value.asInstanceOf[js.Any])
       
       inline def setVertexfactory(value: fuzzyFactory): Self = StObject.set(x, "vertexfactory", value.asInstanceOf[js.Any])
     }
@@ -1090,24 +1078,24 @@ object CSG {
   
   trait fuzzyFactory extends StObject {
     
-    def lookupOrCreate(els: js.Any, creatorCallback: js.Any): js.Any
+    def lookupOrCreate(els: Any, creatorCallback: Any): Any
     
-    var lookuptable: js.Any
+    var lookuptable: Any
     
     var multiplier: Double
   }
   object fuzzyFactory {
     
-    inline def apply(lookupOrCreate: (js.Any, js.Any) => js.Any, lookuptable: js.Any, multiplier: Double): fuzzyFactory = {
+    inline def apply(lookupOrCreate: (Any, Any) => Any, lookuptable: Any, multiplier: Double): fuzzyFactory = {
       val __obj = js.Dynamic.literal(lookupOrCreate = js.Any.fromFunction2(lookupOrCreate), lookuptable = lookuptable.asInstanceOf[js.Any], multiplier = multiplier.asInstanceOf[js.Any])
       __obj.asInstanceOf[fuzzyFactory]
     }
     
     extension [Self <: fuzzyFactory](x: Self) {
       
-      inline def setLookupOrCreate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "lookupOrCreate", js.Any.fromFunction2(value))
+      inline def setLookupOrCreate(value: (Any, Any) => Any): Self = StObject.set(x, "lookupOrCreate", js.Any.fromFunction2(value))
       
-      inline def setLookuptable(value: js.Any): Self = StObject.set(x, "lookuptable", value.asInstanceOf[js.Any])
+      inline def setLookuptable(value: Any): Self = StObject.set(x, "lookuptable", value.asInstanceOf[js.Any])
       
       inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     }

@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new LayoutGroupComponentSystem.
-  * @param app - The application.
+  * Manages creation of {@link LayoutGroupComponent}s.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.LayoutGroupComponentSystem")
 @js.native
-class LayoutGroupComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class LayoutGroupComponentSystem protected ()
+  extends typings.playcanvas.mod.LayoutGroupComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

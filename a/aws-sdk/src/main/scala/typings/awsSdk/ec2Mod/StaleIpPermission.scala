@@ -57,13 +57,13 @@ object StaleIpPermission {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: String*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: String*): Self = StObject.set(x, "IpRanges", js.Array(value*))
     
     inline def setPrefixListIds(value: PrefixListIdSet): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
     
     inline def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
-    inline def setPrefixListIdsVarargs(value: String*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
+    inline def setPrefixListIdsVarargs(value: String*): Self = StObject.set(x, "PrefixListIds", js.Array(value*))
     
     inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object StaleIpPermission {
     
     inline def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
     
-    inline def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
+    inline def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value*))
   }
 }

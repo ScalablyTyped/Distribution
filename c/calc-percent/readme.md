@@ -10,10 +10,10 @@ Calculate percent
 | ------------------ | :-------------: |
 | Full name          | calc-percent |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 9432 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 941.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/calc-percent)

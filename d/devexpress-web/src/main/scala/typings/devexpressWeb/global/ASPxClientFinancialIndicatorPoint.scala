@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFinancialIndicatorPoint")
 @js.native
-class ASPxClientFinancialIndicatorPoint ()
+open class ASPxClientFinancialIndicatorPoint ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFinancialIndicatorPoint {
   
@@ -17,7 +17,7 @@ class ASPxClientFinancialIndicatorPoint ()
     * Gets the argument of the financial indicator's point.
     */
   /* CompleteClass */
-  var argument: js.Any = js.native
+  var argument: Any = js.native
   
   /**
     * Gets the chart that owns the current chart element.

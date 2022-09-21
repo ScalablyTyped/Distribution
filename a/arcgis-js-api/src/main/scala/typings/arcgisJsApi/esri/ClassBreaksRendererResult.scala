@@ -46,7 +46,7 @@ trait ClassBreaksRendererResult
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
+    * The renderer object configured to best match the background of the view and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */

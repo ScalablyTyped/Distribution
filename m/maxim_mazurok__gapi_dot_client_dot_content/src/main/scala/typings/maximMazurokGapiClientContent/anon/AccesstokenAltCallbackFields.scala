@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersUpdateShipmentRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersRefundOrderRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait AccesstokenAltCallbackFields extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the order. */
+  /** The ID of the order to refund. */
   var orderId: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +42,7 @@ trait AccesstokenAltCallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersUpdateShipmentRequest
+  var resource: OrdersRefundOrderRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait AccesstokenAltCallbackFields extends StObject {
 }
 object AccesstokenAltCallbackFields {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersUpdateShipmentRequest): AccesstokenAltCallbackFields = {
+  inline def apply(merchantId: String, orderId: String, resource: OrdersRefundOrderRequest): AccesstokenAltCallbackFields = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAltCallbackFields]
   }
@@ -99,7 +99,7 @@ object AccesstokenAltCallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersUpdateShipmentRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrdersRefundOrderRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

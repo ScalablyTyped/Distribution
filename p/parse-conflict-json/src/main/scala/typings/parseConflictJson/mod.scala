@@ -11,17 +11,14 @@ object mod {
     * If the JSON is valid, it just does JSON.parse as normal.
     * If either side of the conflict is invalid JSON, then an error is thrown for that.
     */
-  inline def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(text: String): Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(text: String, reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def apply(
     text: String,
-    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(
-    text: String,
-    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+    reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     prefer: Prefer
-  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(text: String, reviver: Unit, prefer: Prefer): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(text: String, reviver: Unit, prefer: Prefer): Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("parse-conflict-json", JSImport.Namespace)
   @js.native

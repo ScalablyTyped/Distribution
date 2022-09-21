@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/mathjax2" : "2.2.1"
+      "@jupyterlab/mathjax2" : "3.4.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/mathjax2" : "2.2.1"
+      "@jupyterlab/mathjax2" : "3.4.7"
     }
   ],
   "compile-devDependencies" : [

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "all-package-names" : "2.0.506"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "all-package-names" : "2.0.506"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -57,6 +57,6 @@ object FilePondDragDropProps {
     
     inline def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
-    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
+    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value*))
   }
 }

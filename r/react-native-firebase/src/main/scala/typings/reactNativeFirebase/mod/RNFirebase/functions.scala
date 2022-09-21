@@ -16,7 +16,7 @@ object functions {
     */
   trait Functions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Gets an `HttpsCallable` instance that refers to the function with the given
@@ -40,17 +40,14 @@ object functions {
   }
   object Functions {
     
-    inline def apply(
-      httpsCallable: String => HttpsCallable[js.Any, js.Any],
-      useFunctionsEmulator: String => js.Promise[Null]
-    ): Functions = {
+    inline def apply(httpsCallable: String => HttpsCallable[Any, Any], useFunctionsEmulator: String => js.Promise[Null]): Functions = {
       val __obj = js.Dynamic.literal(httpsCallable = js.Any.fromFunction1(httpsCallable), useFunctionsEmulator = js.Any.fromFunction1(useFunctionsEmulator))
       __obj.asInstanceOf[Functions]
     }
     
     extension [Self <: Functions](x: Self) {
       
-      inline def setHttpsCallable(value: String => HttpsCallable[js.Any, js.Any]): Self = StObject.set(x, "httpsCallable", js.Any.fromFunction1(value))
+      inline def setHttpsCallable(value: String => HttpsCallable[Any, Any]): Self = StObject.set(x, "httpsCallable", js.Any.fromFunction1(value))
       
       inline def setUseFunctionsEmulator(value: String => js.Promise[Null]): Self = StObject.set(x, "useFunctionsEmulator", js.Any.fromFunction1(value))
     }
@@ -214,7 +211,7 @@ object functions {
     /**
       * Extra data to be converted to JSON and included in the error response.
       */
-    val details: js.UndefOr[js.Any] = js.undefined
+    val details: js.UndefOr[Any] = js.undefined
   }
   object HttpsError {
     
@@ -227,7 +224,7 @@ object functions {
       
       inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     }

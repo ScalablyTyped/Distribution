@@ -24,6 +24,6 @@ object BatchDeleteWorldsResponse {
     
     inline def setUnprocessedWorldsUndefined: Self = StObject.set(x, "unprocessedWorlds", js.undefined)
     
-    inline def setUnprocessedWorldsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedWorlds", js.Array(value :_*))
+    inline def setUnprocessedWorldsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedWorlds", js.Array(value*))
   }
 }

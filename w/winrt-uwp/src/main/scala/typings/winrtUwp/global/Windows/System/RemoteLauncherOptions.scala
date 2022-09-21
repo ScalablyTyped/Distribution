@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.System.RemoteLauncherOptions")
 @js.native
 /** Creates an instance of the RemoteLauncherOptions class. */
-class RemoteLauncherOptions ()
+open class RemoteLauncherOptions ()
   extends StObject
      with typings.winrtUwp.Windows.System.RemoteLauncherOptions {
   

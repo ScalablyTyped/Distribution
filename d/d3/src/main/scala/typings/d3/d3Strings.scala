@@ -19,8 +19,16 @@ object d3Strings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait area extends StObject
@@ -45,10 +53,6 @@ object d3Strings {
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
   sealed trait bdi extends StObject
@@ -143,10 +147,6 @@ object d3Strings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait div extends StObject
   inline def div: div = "div".asInstanceOf[div]
   
@@ -201,6 +201,10 @@ object d3Strings {
   @js.native
   sealed trait feDistantLight extends StObject
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood extends StObject
@@ -283,10 +287,6 @@ object d3Strings {
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -297,14 +297,6 @@ object d3Strings {
   @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait g extends StObject
@@ -427,10 +419,6 @@ object d3Strings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
   
@@ -449,6 +437,10 @@ object d3Strings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
   sealed trait nav extends StObject
@@ -481,10 +473,6 @@ object d3Strings {
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait path extends StObject
@@ -557,6 +545,10 @@ object d3Strings {
   @js.native
   sealed trait select extends StObject
   inline def select: select = "select".asInstanceOf[select]
+  
+  @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
   sealed trait slot extends StObject

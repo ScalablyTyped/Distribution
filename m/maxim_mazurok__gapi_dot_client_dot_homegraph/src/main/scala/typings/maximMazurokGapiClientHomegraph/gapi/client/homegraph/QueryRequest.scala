@@ -32,7 +32,7 @@ object QueryRequest {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: QueryRequestInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: QueryRequestInput*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

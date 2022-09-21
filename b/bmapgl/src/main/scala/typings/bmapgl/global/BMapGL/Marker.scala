@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Marker")
 @js.native
-class Marker protected ()
+open class Marker protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Marker {
   def this(point: typings.bmapgl.BMapGL.Point) = this()

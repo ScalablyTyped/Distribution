@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartArt")
 @js.native
-/* private */ class SmartArt ()
+/* private */ open class SmartArt ()
   extends StObject
      with typings.activexOffice.Office.SmartArt {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val AllNodes_Original: SmartArtNodes = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Color: typings.activexOffice.Office.SmartArtColor = js.native
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotSmartArt_typekey: typings.activexOffice.Office.SmartArt = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var QuickStyle: typings.activexOffice.Office.SmartArtQuickStyle = js.native

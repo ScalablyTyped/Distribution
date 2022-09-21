@@ -10,10 +10,10 @@ The lodash method `_.omitBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.omitby |
 | Keywords           | lodash-modularized, omitby |
-| # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 5500158 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1229556.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

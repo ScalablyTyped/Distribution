@@ -11,7 +11,7 @@ trait BackendServiceGroupHealth extends StObject {
   var annotations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[Any]
   ] = js.undefined
   
   /** Health state of the backend instances or endpoints in requested instance or network endpoint group, determined based on configured health checks. */
@@ -32,7 +32,7 @@ object BackendServiceGroupHealth {
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[Any]
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -41,7 +41,7 @@ object BackendServiceGroupHealth {
     
     inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
-    inline def setHealthStatusVarargs(value: HealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
+    inline def setHealthStatusVarargs(value: HealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

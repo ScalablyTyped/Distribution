@@ -9,7 +9,7 @@ object colorMod {
   
   @JSImport("wonder.js/dist/es2015/structure/Color", "Color")
   @js.native
-  class Color () extends StObject {
+  open class Color () extends StObject {
     
     var a: Double = js.native
     
@@ -28,7 +28,7 @@ object colorMod {
     
     def toVector3(): Vector3 = js.native
     
-    def toVector4(): js.Any = js.native
+    def toVector4(): Any = js.native
   }
   /* static members */
   object Color {

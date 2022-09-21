@@ -72,13 +72,13 @@ object FlashShape {
     
     inline def setContours(value: js.Array[FlashContour]): Self = StObject.set(x, "contours", value.asInstanceOf[js.Any])
     
-    inline def setContoursVarargs(value: FlashContour*): Self = StObject.set(x, "contours", js.Array(value :_*))
+    inline def setContoursVarargs(value: FlashContour*): Self = StObject.set(x, "contours", js.Array(value*))
     
     inline def setDeleteEdge(value: Double => Unit): Self = StObject.set(x, "deleteEdge", js.Any.fromFunction1(value))
     
     inline def setEdges(value: js.Array[FlashEdge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: FlashEdge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: FlashEdge*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
     
@@ -94,12 +94,12 @@ object FlashShape {
     
     inline def setMembers(value: js.Array[FlashShape]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: FlashShape*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: FlashShape*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setNumCubicSegments(value: Double): Self = StObject.set(x, "numCubicSegments", value.asInstanceOf[js.Any])
     
     inline def setVertices(value: js.Array[FlashVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: FlashVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: FlashVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

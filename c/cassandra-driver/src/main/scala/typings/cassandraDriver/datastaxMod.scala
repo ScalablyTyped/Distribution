@@ -2,8 +2,7 @@ package typings.cassandraDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cassandraDriver.typesMod.types.ResultSet
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import typings.std.Iterator
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
@@ -22,19 +21,19 @@ object datastaxMod {
       
       @JSImport("cassandra-driver/lib/datastax", "datastax.graph.GraphResultSet")
       @js.native
-      class GraphResultSet protected ()
+      open class GraphResultSet protected ()
         extends StObject
-           with Iterator[js.Any, js.Any, Unit] {
+           with Iterator[Any, Any, Unit] {
         def this(rs: ResultSet) = this()
         
-        def first(): js.Any = js.native
+        def first(): Any = js.native
         
-        def next(): IteratorResult[js.Any, js.Any] = js.native
-        def next(value: js.Any): IteratorResult[js.Any, js.Any] = js.native
+        def next(): IteratorResult[Any, Any] = js.native
+        def next(value: Any): IteratorResult[Any, Any] = js.native
         
-        def toArray(): js.Array[js.Any] = js.native
+        def toArray(): js.Array[Any] = js.native
         
-        def values(): Iterator[js.Any, js.Any, Unit] = js.native
+        def values(): js.Iterator[Any] = js.native
       }
       
       inline def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
@@ -43,7 +42,7 @@ object datastaxMod {
       
       inline def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      inline def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asTimestamp(value: js.Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
       inline def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
@@ -98,7 +97,7 @@ object datastaxMod {
       }
       object Edge {
         
-        inline def apply(id: js.Any, label: String): Edge = {
+        inline def apply(id: Any, label: String): Edge = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Edge]
         }
@@ -129,20 +128,20 @@ object datastaxMod {
       
       trait Element extends StObject {
         
-        var id: js.Any
+        var id: Any
         
         var label: String
       }
       object Element {
         
-        inline def apply(id: js.Any, label: String): Element = {
+        inline def apply(id: Any, label: String): Element = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Element]
         }
         
         extension [Self <: Element](x: Self) {
           
-          inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
           inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         }
@@ -152,47 +151,47 @@ object datastaxMod {
       
       trait Path extends StObject {
         
-        var labels: js.Array[js.Any]
+        var labels: js.Array[Any]
         
-        var objects: js.Array[js.Any]
+        var objects: js.Array[Any]
       }
       object Path {
         
-        inline def apply(labels: js.Array[js.Any], objects: js.Array[js.Any]): Path = {
+        inline def apply(labels: js.Array[Any], objects: js.Array[Any]): Path = {
           val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
           __obj.asInstanceOf[Path]
         }
         
         extension [Self <: Path](x: Self) {
           
-          inline def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+          inline def setLabels(value: js.Array[Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          inline def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
+          inline def setLabelsVarargs(value: Any*): Self = StObject.set(x, "labels", js.Array(value*))
           
-          inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+          inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
           
-          inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+          inline def setObjectsVarargs(value: Any*): Self = StObject.set(x, "objects", js.Array(value*))
         }
       }
       
       trait Property extends StObject {
         
-        var key: js.Any
+        var key: Any
         
-        var value: js.Any
+        var value: Any
       }
       object Property {
         
-        inline def apply(key: js.Any, value: js.Any): Property = {
+        inline def apply(key: Any, value: Any): Property = {
           val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[Property]
         }
         
         extension [Self <: Property](x: Self) {
           
-          inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
       
@@ -200,18 +199,18 @@ object datastaxMod {
         extends StObject
            with typings.cassandraDriver.graphMod.graph.Element {
         
-        var properties: js.UndefOr[StringDictionary[js.Array[js.Any]]] = js.undefined
+        var properties: js.UndefOr[StringDictionary[js.Array[Any]]] = js.undefined
       }
       object Vertex {
         
-        inline def apply(id: js.Any, label: String): Vertex = {
+        inline def apply(id: Any, label: String): Vertex = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Vertex]
         }
         
         extension [Self <: Vertex](x: Self) {
           
-          inline def setProperties(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          inline def setProperties(value: StringDictionary[js.Array[Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
           inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         }
@@ -223,13 +222,13 @@ object datastaxMod {
         
         var key: String
         
-        var properties: js.UndefOr[js.Any] = js.undefined
+        var properties: js.UndefOr[Any] = js.undefined
         
-        var value: js.Any
+        var value: Any
       }
       object VertexProperty {
         
-        inline def apply(id: js.Any, key: String, label: String, value: js.Any): VertexProperty = {
+        inline def apply(id: Any, key: String, label: String, value: Any): VertexProperty = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[VertexProperty]
         }
@@ -238,11 +237,11 @@ object datastaxMod {
           
           inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
           inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
           
-          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -251,7 +250,7 @@ object datastaxMod {
       
       @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRange")
       @js.native
-      class DateRange protected () extends StObject {
+      open class DateRange protected () extends StObject {
         def this(
           lowerBound: typings.cassandraDriver.searchMod.search.DateRangeBound,
           upperBound: typings.cassandraDriver.searchMod.search.DateRangeBound
@@ -278,9 +277,9 @@ object datastaxMod {
       
       @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound")
       @js.native
-      class DateRangeBound () extends StObject {
+      open class DateRangeBound () extends StObject {
         
-        var date: Date = js.native
+        var date: js.Date = js.native
         
         def equals(other: typings.cassandraDriver.searchMod.search.DateRangeBound): Boolean = js.native
         

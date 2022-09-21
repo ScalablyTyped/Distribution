@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "signature_pad" : "3.0.0-beta.4"
+      "signature_pad" : "4.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "signature_pad" : "3.0.0-beta.4"
+      "signature_pad" : "4.0.8"
     }
   ],
   "compile-devDependencies" : [

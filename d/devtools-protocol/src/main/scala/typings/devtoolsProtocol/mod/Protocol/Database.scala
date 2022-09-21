@@ -120,7 +120,7 @@ object Database {
     
     var sqlError: js.UndefOr[Error] = js.undefined
     
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ExecuteSQLResponse {
     
@@ -135,17 +135,17 @@ object Database {
       
       inline def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
       
-      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
+      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value*))
       
       inline def setSqlError(value: Error): Self = StObject.set(x, "sqlError", value.asInstanceOf[js.Any])
       
       inline def setSqlErrorUndefined: Self = StObject.set(x, "sqlError", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -181,7 +181,7 @@ object Database {
       
       inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
       
-      inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
+      inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value*))
     }
   }
 }

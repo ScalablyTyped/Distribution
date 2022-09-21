@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(data: js.Any, options: TemplateOptions): Transform = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(data: Any, options: TemplateOptions): Transform = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   @JSImport("gulp-template", JSImport.Namespace)
   @js.native

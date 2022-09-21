@@ -22,10 +22,10 @@ object FileInfo {
     
     inline def setAccepted(value: js.Array[File]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
-    inline def setAcceptedVarargs(value: File*): Self = StObject.set(x, "accepted", js.Array(value :_*))
+    inline def setAcceptedVarargs(value: File*): Self = StObject.set(x, "accepted", js.Array(value*))
     
     inline def setAttachments(value: js.Array[File]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentsVarargs(value: File*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: File*): Self = StObject.set(x, "attachments", js.Array(value*))
   }
 }

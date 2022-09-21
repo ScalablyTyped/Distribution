@@ -41,15 +41,15 @@ trait Filter extends StObject {
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Optional limit on the number of CryptoKeyVersions to include in the response. Further CryptoKeyVersions can subsequently be obtained by including the
-    * ListCryptoKeyVersionsResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
+    * Optional. Optional limit on the number of KeyRings to include in the response. Further KeyRings can subsequently be obtained by including the
+    * ListKeyRingsResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Optional. Optional pagination token, returned earlier via ListCryptoKeyVersionsResponse.next_page_token. */
+  /** Optional. Optional pagination token, returned earlier via ListKeyRingsResponse.next_page_token. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the CryptoKey to list, in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/ *`. */
+  /** Required. The resource name of the location associated with the KeyRings, in the format `projects/ *‍/locations/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -63,9 +63,6 @@ trait Filter extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The fields to include in the response. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object Filter {
   
@@ -137,9 +134,5 @@ object Filter {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

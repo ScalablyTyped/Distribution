@@ -10,5 +10,10 @@ trait IIRFilterNode
   extends StObject
      with AudioNode {
   
-  def getFrequencyResponse(frequencyHz: Float32Array, magResponse: Float32Array, phaseResponse: Float32Array): Unit = js.native
+  /* standard dom */
+  def getFrequencyResponse(
+    frequencyHz: js.typedarray.Float32Array,
+    magResponse: js.typedarray.Float32Array,
+    phaseResponse: js.typedarray.Float32Array
+  ): Unit = js.native
 }

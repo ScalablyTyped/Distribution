@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "NotificationEvent")
 @js.native
-class NotificationEvent () extends StObject
+open class NotificationEvent () extends StObject
 object NotificationEvent {
   
   @JSImport("lime-js", "NotificationEvent")

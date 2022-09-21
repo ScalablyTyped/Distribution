@@ -8,6 +8,6 @@ object indexAndroidMod {
   
   @JSImport("rmc-input-number/lib/index.android", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.rmcInputNumber.indexIosMod.default
 }

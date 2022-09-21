@@ -1,9 +1,6 @@
 package typings.node7z
 
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.childProcessMod.ChildProcess
 import typings.node.streamMod.Stream
 import typings.node7z.node7zStrings.data
@@ -13,8 +10,9 @@ import typings.node7z.node7zStrings.pause
 import typings.node7z.node7zStrings.progress
 import typings.node7z.node7zStrings.readable
 import typings.node7z.node7zStrings.resume
-import typings.std.Error
 import typings.std.Map
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,6 +135,9 @@ object mod {
     
     /** Set Sensitive Case mode (-ssc) */
     var caseSensitive: js.UndefOr[Boolean] = js.undefined
+    
+    /** Set charset for console input/output */
+    var charset: js.UndefOr[String] = js.undefined
     
     /** Set CPU thread affinity mask (hexadecimal number). (-stm) */
     var cpuAffinity: js.UndefOr[String] = js.undefined
@@ -279,6 +280,10 @@ object mod {
       
       inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      
       inline def setCpuAffinity(value: String): Self = StObject.set(x, "cpuAffinity", value.asInstanceOf[js.Any])
       
       inline def setCpuAffinityUndefined: Self = StObject.set(x, "cpuAffinity", js.undefined)
@@ -295,13 +300,13 @@ object mod {
       
       inline def setExcludeArchiveUndefined: Self = StObject.set(x, "excludeArchive", js.undefined)
       
-      inline def setExcludeArchiveVarargs(value: String*): Self = StObject.set(x, "excludeArchive", js.Array(value :_*))
+      inline def setExcludeArchiveVarargs(value: String*): Self = StObject.set(x, "excludeArchive", js.Array(value*))
       
       inline def setExlude(value: js.Array[String]): Self = StObject.set(x, "exlude", value.asInstanceOf[js.Any])
       
       inline def setExludeUndefined: Self = StObject.set(x, "exlude", js.undefined)
       
-      inline def setExludeVarargs(value: String*): Self = StObject.set(x, "exlude", js.Array(value :_*))
+      inline def setExludeVarargs(value: String*): Self = StObject.set(x, "exlude", js.Array(value*))
       
       inline def setFromStdin(value: String): Self = StObject.set(x, "fromStdin", value.asInstanceOf[js.Any])
       
@@ -325,11 +330,11 @@ object mod {
       
       inline def setIncludeArchiveUndefined: Self = StObject.set(x, "includeArchive", js.undefined)
       
-      inline def setIncludeArchiveVarargs(value: String*): Self = StObject.set(x, "includeArchive", js.Array(value :_*))
+      inline def setIncludeArchiveVarargs(value: String*): Self = StObject.set(x, "includeArchive", js.Array(value*))
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLargePages(value: Boolean): Self = StObject.set(x, "largePages", value.asInstanceOf[js.Any])
       
@@ -351,7 +356,7 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
       
       inline def setMultiBlockSize(value: String): Self = StObject.set(x, "multiBlockSize", value.asInstanceOf[js.Any])
       
@@ -385,7 +390,7 @@ object mod {
       
       inline def setOutputStreamsUndefined: Self = StObject.set(x, "outputStreams", js.undefined)
       
-      inline def setOutputStreamsVarargs(value: String*): Self = StObject.set(x, "outputStreams", js.Array(value :_*))
+      inline def setOutputStreamsVarargs(value: String*): Self = StObject.set(x, "outputStreams", js.Array(value*))
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -427,7 +432,7 @@ object mod {
       
       inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
       
-      inline def setVolumesVarargs(value: String*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+      inline def setVolumesVarargs(value: String*): Self = StObject.set(x, "volumes", js.Array(value*))
       
       inline def setWorkingDir(value: String): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
       
@@ -534,7 +539,7 @@ object mod {
       
       inline def set$cherryPickUndefined: Self = StObject.set(x, "$cherryPick", js.undefined)
       
-      inline def set$cherryPickVarargs(value: String*): Self = StObject.set(x, "$cherryPick", js.Array(value :_*))
+      inline def set$cherryPickVarargs(value: String*): Self = StObject.set(x, "$cherryPick", js.Array(value*))
       
       inline def set$childProcess(value: ChildProcess): Self = StObject.set(x, "$childProcess", value.asInstanceOf[js.Any])
       
@@ -552,7 +557,7 @@ object mod {
       
       inline def set$rawUndefined: Self = StObject.set(x, "$raw", js.undefined)
       
-      inline def set$rawVarargs(value: String*): Self = StObject.set(x, "$raw", js.Array(value :_*))
+      inline def set$rawVarargs(value: String*): Self = StObject.set(x, "$raw", js.Array(value*))
       
       inline def set$spawnOptions(value: js.Object): Self = StObject.set(x, "$spawnOptions", value.asInstanceOf[js.Any])
       
@@ -603,20 +608,22 @@ object mod {
   @js.native
   trait ZipStream
     extends Stream
-       with ReadableStream {
+       with ReadableStream[Any] {
     
-    def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-    def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def _destroy(error: js.Error, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): this.type = js.native
+    def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): this.type = js.native
     
     def _read(size: Double): Unit = js.native
     
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     // tslint:disable:unified-signatures
     @JSName("addListener")
     def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
@@ -626,17 +633,19 @@ object mod {
     @JSName("addListener")
     def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
-    def destroy(): Unit = js.native
-    def destroy(error: Error): Unit = js.native
+    def destroy(): this.type = js.native
+    def destroy(error: js.Error): this.type = js.native
     
     var destroyed: Boolean = js.native
     
+    def emit(event: String, args: Any*): Boolean = js.native
+    def emit(event: js.Symbol, args: Any*): Boolean = js.native
     @JSName("emit")
     def emit_data(event: data, data: Data): Boolean = js.native
     @JSName("emit")
     def emit_end(event: end): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, err: Error): this.type = js.native
+    def emit_error(event: error, err: js.Error): this.type = js.native
     @JSName("emit")
     def emit_pause(event: pause): Boolean = js.native
     @JSName("emit")
@@ -650,12 +659,16 @@ object mod {
     /** Populated from 7zip's response, wait for 'end' event. */
     var info: Map[String, String] = js.native
     
+    def isPaused(): Boolean = js.native
+    
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
@@ -665,12 +678,14 @@ object mod {
     @JSName("on")
     def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     @JSName("once")
     def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
@@ -680,17 +695,16 @@ object mod {
     @JSName("once")
     def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    def pause(): this.type = js.native
     
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
@@ -700,12 +714,14 @@ object mod {
     @JSName("prependListener")
     def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -715,8 +731,13 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
-    def push(chunk: js.Any): Boolean = js.native
-    def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
+    def push(chunk: Any): Boolean = js.native
+    def push(chunk: Any, encoding: BufferEncoding): Boolean = js.native
+    
+    def read(): Any = js.native
+    def read(size: Double): Any = js.native
+    
+    var readable: Boolean = js.native
     
     val readableEncoding: BufferEncoding | Null = js.native
     
@@ -730,12 +751,14 @@ object mod {
     
     val readableObjectMode: Boolean = js.native
     
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_data(event: data, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
@@ -745,7 +768,16 @@ object mod {
     @JSName("removeListener")
     def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
-    def unshift(chunk: js.Any): Unit = js.native
-    def unshift(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
+    def resume(): this.type = js.native
+    
+    def setEncoding(encoding: BufferEncoding): this.type = js.native
+    
+    def unpipe(): this.type = js.native
+    def unpipe(destination: WritableStream[Any]): this.type = js.native
+    
+    def unshift(chunk: Any): Unit = js.native
+    def unshift(chunk: Any, encoding: BufferEncoding): Unit = js.native
+    
+    def wrap(oldStream: ReadableStream[Any]): this.type = js.native
   }
 }

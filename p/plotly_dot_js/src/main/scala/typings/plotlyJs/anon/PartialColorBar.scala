@@ -2,6 +2,7 @@ package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.DTickValue
 import typings.plotlyJs.mod.Datum
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.mod.TickFormatStop
 import typings.plotlyJs.mod.TypedArray
 import typings.plotlyJs.plotlyJsStrings.B
@@ -71,11 +72,11 @@ trait PartialColorBar extends StObject {
   
   var tick0: js.UndefOr[Double | String] = js.undefined
   
-  var tickangle: js.UndefOr[Double] = js.undefined
+  var tickangle: js.UndefOr[auto | Double] = js.undefined
   
   var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var tickfont: js.UndefOr[typings.plotlyJs.mod.Font] = js.undefined
+  var tickfont: js.UndefOr[Font] = js.undefined
   
   var tickformat: js.UndefOr[String] = js.undefined
   
@@ -93,17 +94,17 @@ trait PartialColorBar extends StObject {
   
   var ticktext: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
-  var ticktextsrc: js.UndefOr[js.Any] = js.undefined
+  var ticktextsrc: js.UndefOr[Any] = js.undefined
   
   var tickvals: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
-  var tickvalssrc: js.UndefOr[js.Any] = js.undefined
+  var tickvalssrc: js.UndefOr[Any] = js.undefined
   
   var tickwidth: js.UndefOr[Double] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
-  var titlefont: js.UndefOr[typings.plotlyJs.mod.Font] = js.undefined
+  var titlefont: js.UndefOr[Font] = js.undefined
   
   var titleside: js.UndefOr[right | top | bottom] = js.undefined
   
@@ -132,19 +133,19 @@ object PartialColorBar {
     
     inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setBordercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
     inline def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
-    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value :_*))
+    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value*))
     
     inline def setBorderwidth(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
     inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
-    inline def setBorderwidthVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "borderwidth", js.Array(value :_*))
+    inline def setBorderwidthVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "borderwidth", js.Array(value*))
     
     inline def setDtick(value: DTickValue): Self = StObject.set(x, "dtick", value.asInstanceOf[js.Any])
     
@@ -170,7 +171,7 @@ object PartialColorBar {
     
     inline def setOutlinecolorUndefined: Self = StObject.set(x, "outlinecolor", js.undefined)
     
-    inline def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value :_*))
+    inline def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value*))
     
     inline def setOutlinewidth(value: Double): Self = StObject.set(x, "outlinewidth", value.asInstanceOf[js.Any])
     
@@ -208,7 +209,7 @@ object PartialColorBar {
     
     inline def setTick0Undefined: Self = StObject.set(x, "tick0", js.undefined)
     
-    inline def setTickangle(value: Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
+    inline def setTickangle(value: auto | Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
     
     inline def setTickangleUndefined: Self = StObject.set(x, "tickangle", js.undefined)
     
@@ -216,9 +217,9 @@ object PartialColorBar {
     
     inline def setTickcolorUndefined: Self = StObject.set(x, "tickcolor", js.undefined)
     
-    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
+    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
-    inline def setTickfont(value: typings.plotlyJs.mod.Font): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
+    inline def setTickfont(value: Font): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
     inline def setTickfontUndefined: Self = StObject.set(x, "tickfont", js.undefined)
     
@@ -230,7 +231,7 @@ object PartialColorBar {
     
     inline def setTickformatstopsUndefined: Self = StObject.set(x, "tickformatstops", js.undefined)
     
-    inline def setTickformatstopsVarargs(value: Partial[TickFormatStop]*): Self = StObject.set(x, "tickformatstops", js.Array(value :_*))
+    inline def setTickformatstopsVarargs(value: Partial[TickFormatStop]*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
@@ -256,9 +257,9 @@ object PartialColorBar {
     
     inline def setTicktextUndefined: Self = StObject.set(x, "ticktext", js.undefined)
     
-    inline def setTicktextVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
+    inline def setTicktextVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "ticktext", js.Array(value*))
     
-    inline def setTicktextsrc(value: js.Any): Self = StObject.set(x, "ticktextsrc", value.asInstanceOf[js.Any])
+    inline def setTicktextsrc(value: Any): Self = StObject.set(x, "ticktextsrc", value.asInstanceOf[js.Any])
     
     inline def setTicktextsrcUndefined: Self = StObject.set(x, "ticktextsrc", js.undefined)
     
@@ -266,9 +267,9 @@ object PartialColorBar {
     
     inline def setTickvalsUndefined: Self = StObject.set(x, "tickvals", js.undefined)
     
-    inline def setTickvalsVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "tickvals", js.Array(value :_*))
+    inline def setTickvalsVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "tickvals", js.Array(value*))
     
-    inline def setTickvalssrc(value: js.Any): Self = StObject.set(x, "tickvalssrc", value.asInstanceOf[js.Any])
+    inline def setTickvalssrc(value: Any): Self = StObject.set(x, "tickvalssrc", value.asInstanceOf[js.Any])
     
     inline def setTickvalssrcUndefined: Self = StObject.set(x, "tickvalssrc", js.undefined)
     
@@ -280,7 +281,7 @@ object PartialColorBar {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitlefont(value: typings.plotlyJs.mod.Font): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
+    inline def setTitlefont(value: Font): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     
     inline def setTitlefontUndefined: Self = StObject.set(x, "titlefont", js.undefined)
     

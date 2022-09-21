@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "UnlinkDeveloperIdentityCommand")
 @js.native
-class UnlinkDeveloperIdentityCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommand {
+open class UnlinkDeveloperIdentityCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.UnlinkDeveloperIdentityCommand {
   def this(input: UnlinkDeveloperIdentityCommandInput) = this()
 }

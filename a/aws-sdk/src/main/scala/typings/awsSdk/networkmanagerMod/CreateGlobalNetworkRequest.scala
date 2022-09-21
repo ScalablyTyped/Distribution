@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateGlobalNetworkRequest extends StObject {
   
   /**
-    * A description of the global network. Length Constraints: Maximum length of 256 characters.
+    * A description of the global network. Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The tags to apply to the resource during creation.
@@ -25,7 +25,7 @@ object CreateGlobalNetworkRequest {
   
   extension [Self <: CreateGlobalNetworkRequest](x: Self) {
     
-    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
@@ -33,6 +33,6 @@ object CreateGlobalNetworkRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

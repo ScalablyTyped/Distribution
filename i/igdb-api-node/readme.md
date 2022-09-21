@@ -10,10 +10,10 @@ Nodejs API Wrapper for the IGDB.com API
 | ------------------ | :-------------: |
 | Full name          | igdb-api-node |
 | Keywords           | api, games, igdb, wrapper |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 9000 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 429.3333333333333 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://api-docs.igdb.com)

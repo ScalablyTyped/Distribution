@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rn-fetch-blob", "RNFetchBlobFile")
 @js.native
-class RNFetchBlobFile () extends StObject
+open class RNFetchBlobFile () extends StObject

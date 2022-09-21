@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Viz")
   @js.native
-  class Viz protected ()
+  open class Viz protected ()
     extends StObject
        with typings.vizJs.Viz {
     def this(arg: typings.vizJs.anon.Module) = this()

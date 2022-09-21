@@ -1,6 +1,5 @@
 package typings.azdata.mod.nb
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.azdata.azdataStrings.display_data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait IDisplayData
 }
 object IDisplayData {
   
-  inline def apply(data: StringDictionary[js.Any]): IDisplayData = {
+  inline def apply(data: DisplayResultData): IDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "display_data")
     __obj.asInstanceOf[IDisplayData]
   }

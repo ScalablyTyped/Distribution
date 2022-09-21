@@ -1,16 +1,16 @@
 package typings.browserfs.zipFSMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "FileData")
 @js.native
-class FileData protected () extends StObject {
+open class FileData protected () extends StObject {
   def this(header: FileHeader, record: CentralDirectory, data: Buffer) = this()
   
-  /* private */ var data: js.Any = js.native
+  /* private */ var data: Any = js.native
   
   def decompress(): Buffer = js.native
   
@@ -20,7 +20,7 @@ class FileData protected () extends StObject {
   
   def getRecord(): CentralDirectory = js.native
   
-  /* private */ var header: js.Any = js.native
+  /* private */ var header: Any = js.native
   
-  /* private */ var record: js.Any = js.native
+  /* private */ var record: Any = js.native
 }

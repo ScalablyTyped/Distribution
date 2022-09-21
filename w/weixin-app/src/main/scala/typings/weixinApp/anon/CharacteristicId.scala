@@ -1,6 +1,5 @@
 package typings.weixinApp.anon
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +19,11 @@ trait CharacteristicId extends StObject {
   /**
     * 蓝牙设备特征值对应的二进制值
     */
-  var value: ArrayBuffer
+  var value: js.typedarray.ArrayBuffer
 }
 object CharacteristicId {
   
-  inline def apply(characteristicId: String, serviceId: String, value: ArrayBuffer): CharacteristicId = {
+  inline def apply(characteristicId: String, serviceId: String, value: js.typedarray.ArrayBuffer): CharacteristicId = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacteristicId]
   }
@@ -35,6 +34,6 @@ object CharacteristicId {
     
     inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

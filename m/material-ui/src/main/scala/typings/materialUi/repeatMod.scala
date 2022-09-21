@@ -10,10 +10,10 @@ object repeatMod {
   
   @JSImport("material-ui/svg-icons/av/repeat", JSImport.Default)
   @js.native
-  class default () extends AvRepeat
+  open class default () extends AvRepeat
   
   @JSImport("material-ui/svg-icons/av/repeat", "AvRepeat")
   @js.native
-  class AvRepeat ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvRepeat ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

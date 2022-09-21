@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/ParameterizedQuery.html
 @JSImport("pg-promise", "ParameterizedQuery")
 @js.native
-class ParameterizedQuery ()
+open class ParameterizedQuery ()
   extends StObject
      with _QueryParam {
   def this(options: String) = this()
@@ -29,5 +29,5 @@ class ParameterizedQuery ()
   
   def toString(level: Double): String = js.native
   
-  var values: js.Array[js.Any] = js.native
+  var values: js.Array[Any] = js.native
 }

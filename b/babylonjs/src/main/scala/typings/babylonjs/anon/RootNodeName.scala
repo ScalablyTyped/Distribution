@@ -27,6 +27,6 @@ object RootNodeName {
     
     inline def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ trait ReferenceContext extends StObject {
   /**
     * Include the declaration of the current symbol.
     */
-  var includeDeclaration: Boolean
+  val includeDeclaration: Boolean
 }
 object ReferenceContext {
   

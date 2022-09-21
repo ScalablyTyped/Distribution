@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-pluginutils
 
-Typings are for version 2.8.1
+Typings are for version 2.8.2
 
 ## Library description:
 Functionality commonly needed by Rollup plugins
@@ -10,10 +10,10 @@ Functionality commonly needed by Rollup plugins
 | ------------------ | :-------------: |
 | Full name          | rollup-pluginutils |
 | Keywords           | rollup, utils |
-| # releases         | 10 |
-| # dependents       | 503 |
-| # downloads        | 76660525 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.613902E7 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/rollup/rollup-pluginutils#readme)

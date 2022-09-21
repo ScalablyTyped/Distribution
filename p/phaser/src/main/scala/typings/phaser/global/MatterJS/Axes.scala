@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Axes")
 @js.native
-class Axes ()
+open class Axes ()
   extends StObject
      with typings.phaser.MatterJS.Axes
 object Axes {

@@ -28,42 +28,42 @@ object canvas {
   
   trait SkeletonRenderer extends StObject {
     
-    /* private */ var computeMeshVertices: js.Any
+    /* private */ var computeMeshVertices: Any
     
-    /* private */ var computeRegionVertices: js.Any
+    /* private */ var computeRegionVertices: Any
     
-    /* private */ var ctx: js.Any
+    /* private */ var ctx: Any
     
     var debugRendering: Boolean
     
     def draw(skeleton: Skeleton): Unit
     
-    /* private */ var drawImages: js.Any
+    /* private */ var drawImages: Any
     
-    /* private */ var drawTriangle: js.Any
+    /* private */ var drawTriangle: Any
     
-    /* private */ var drawTriangles: js.Any
+    /* private */ var drawTriangles: Any
     
-    /* private */ var tempColor: js.Any
+    /* private */ var tempColor: Any
     
     var triangleRendering: Boolean
     
-    /* private */ var vertices: js.Any
+    /* private */ var vertices: Any
   }
   object SkeletonRenderer {
     
     inline def apply(
-      computeMeshVertices: js.Any,
-      computeRegionVertices: js.Any,
-      ctx: js.Any,
+      computeMeshVertices: Any,
+      computeRegionVertices: Any,
+      ctx: Any,
       debugRendering: Boolean,
       draw: Skeleton => Unit,
-      drawImages: js.Any,
-      drawTriangle: js.Any,
-      drawTriangles: js.Any,
-      tempColor: js.Any,
+      drawImages: Any,
+      drawTriangle: Any,
+      drawTriangles: Any,
+      tempColor: Any,
       triangleRendering: Boolean,
-      vertices: js.Any
+      vertices: Any
     ): SkeletonRenderer = {
       val __obj = js.Dynamic.literal(computeMeshVertices = computeMeshVertices.asInstanceOf[js.Any], computeRegionVertices = computeRegionVertices.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], debugRendering = debugRendering.asInstanceOf[js.Any], draw = js.Any.fromFunction1(draw), drawImages = drawImages.asInstanceOf[js.Any], drawTriangle = drawTriangle.asInstanceOf[js.Any], drawTriangles = drawTriangles.asInstanceOf[js.Any], tempColor = tempColor.asInstanceOf[js.Any], triangleRendering = triangleRendering.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonRenderer]
@@ -71,27 +71,27 @@ object canvas {
     
     extension [Self <: SkeletonRenderer](x: Self) {
       
-      inline def setComputeMeshVertices(value: js.Any): Self = StObject.set(x, "computeMeshVertices", value.asInstanceOf[js.Any])
+      inline def setComputeMeshVertices(value: Any): Self = StObject.set(x, "computeMeshVertices", value.asInstanceOf[js.Any])
       
-      inline def setComputeRegionVertices(value: js.Any): Self = StObject.set(x, "computeRegionVertices", value.asInstanceOf[js.Any])
+      inline def setComputeRegionVertices(value: Any): Self = StObject.set(x, "computeRegionVertices", value.asInstanceOf[js.Any])
       
-      inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
       inline def setDebugRendering(value: Boolean): Self = StObject.set(x, "debugRendering", value.asInstanceOf[js.Any])
       
       inline def setDraw(value: Skeleton => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
       
-      inline def setDrawImages(value: js.Any): Self = StObject.set(x, "drawImages", value.asInstanceOf[js.Any])
+      inline def setDrawImages(value: Any): Self = StObject.set(x, "drawImages", value.asInstanceOf[js.Any])
       
-      inline def setDrawTriangle(value: js.Any): Self = StObject.set(x, "drawTriangle", value.asInstanceOf[js.Any])
+      inline def setDrawTriangle(value: Any): Self = StObject.set(x, "drawTriangle", value.asInstanceOf[js.Any])
       
-      inline def setDrawTriangles(value: js.Any): Self = StObject.set(x, "drawTriangles", value.asInstanceOf[js.Any])
+      inline def setDrawTriangles(value: Any): Self = StObject.set(x, "drawTriangles", value.asInstanceOf[js.Any])
       
-      inline def setTempColor(value: js.Any): Self = StObject.set(x, "tempColor", value.asInstanceOf[js.Any])
+      inline def setTempColor(value: Any): Self = StObject.set(x, "tempColor", value.asInstanceOf[js.Any])
       
       inline def setTriangleRendering(value: Boolean): Self = StObject.set(x, "triangleRendering", value.asInstanceOf[js.Any])
       
-      inline def setVertices(value: js.Any): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: Any): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     }
   }
 }

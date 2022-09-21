@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteLanguageModelRequest extends StObject {
   
   /**
-    * The name of the model you're choosing to delete.
+    * The name of the custom language model you want to delete. Model names are case sensitive.
     */
   var ModelName: typings.awsSdk.transcribeserviceMod.ModelName
 }

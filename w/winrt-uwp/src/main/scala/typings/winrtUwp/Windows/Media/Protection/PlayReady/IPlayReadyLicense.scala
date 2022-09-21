@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait IPlayReadyLicense extends StObject {
   var domainAccountID: String
   
   /** Gets the expiration date of the current license. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Gets the amount of time, in seconds, before the current license expires after the media is first played. */
   var expireAfterFirstPlay: Double
@@ -38,7 +37,7 @@ object IPlayReadyLicense {
   inline def apply(
     chainDepth: Double,
     domainAccountID: String,
-    expirationDate: Date,
+    expirationDate: js.Date,
     expireAfterFirstPlay: Double,
     fullyEvaluated: Boolean,
     getKIDAtChainDepth: Double => String,
@@ -54,7 +53,7 @@ object IPlayReadyLicense {
     
     inline def setDomainAccountID(value: String): Self = StObject.set(x, "domainAccountID", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpireAfterFirstPlay(value: Double): Self = StObject.set(x, "expireAfterFirstPlay", value.asInstanceOf[js.Any])
     

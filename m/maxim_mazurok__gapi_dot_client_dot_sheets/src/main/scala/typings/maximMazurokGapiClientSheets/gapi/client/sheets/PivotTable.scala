@@ -18,7 +18,7 @@ trait PivotTable extends StObject {
   var criteria: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The data execution status for data source pivot tables. */
@@ -58,12 +58,12 @@ object PivotTable {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
@@ -80,13 +80,13 @@ object PivotTable {
     
     inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    inline def setFilterSpecsVarargs(value: PivotFilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: PivotFilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
     
     inline def setRows(value: js.Array[PivotGroup]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
@@ -100,6 +100,6 @@ object PivotTable {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

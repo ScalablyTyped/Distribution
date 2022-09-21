@@ -8,5 +8,5 @@ object truncatedTextMod {
   
   @JSImport("@nulogy/components/src/TruncatedText", "TruncatedText")
   @js.native
-  val TruncatedText: js.Any = js.native
+  val TruncatedText: Any = js.native
 }

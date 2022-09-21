@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Dropout")
 @js.native
-class Dropout protected () extends Layer {
+open class Dropout protected () extends Layer {
   def this(args: DropoutLayerArgs) = this()
   
   /* protected */ def getNoiseShape(input: Tensor[Rank]): Shape = js.native
   
-  /* private */ val noiseShape: js.Any = js.native
+  /* private */ val noiseShape: Any = js.native
   
-  /* private */ val rate: js.Any = js.native
+  /* private */ val rate: Any = js.native
   
-  /* private */ val seed: js.Any = js.native
+  /* private */ val seed: Any = js.native
 }
 /* static members */
 object Dropout {

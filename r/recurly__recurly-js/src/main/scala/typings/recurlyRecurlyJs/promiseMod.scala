@@ -26,12 +26,9 @@ object promiseMod {
       * @param onrejected The callback to execute when the PricingPromise is rejected.
       */
     def done(): T = js.native
-    def done(onfulfilled: js.Function1[/* value */ T, js.Any]): T = js.native
-    def done(
-      onfulfilled: js.Function1[/* value */ T, js.Any],
-      onrejected: js.Function1[/* reason */ js.Any, js.Any]
-    ): T = js.native
-    def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, js.Any]): T = js.native
+    def done(onfulfilled: js.Function1[/* value */ T, Any]): T = js.native
+    def done(onfulfilled: js.Function1[/* value */ T, Any], onrejected: js.Function1[/* reason */ Any, Any]): T = js.native
+    def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Any]): T = js.native
     
     /**
       * Attaches callbacks for the resolution and/or rejection of the PricingPromise.
@@ -43,14 +40,14 @@ object promiseMod {
     def `then`[TResult1, TResult2](onfulfilled: PricingMethods): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: PricingMethods,
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
   }
 }

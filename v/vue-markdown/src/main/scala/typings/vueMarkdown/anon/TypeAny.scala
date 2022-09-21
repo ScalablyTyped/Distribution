@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeAny extends StObject {
   
-  var `type`: js.Any
+  var `type`: scala.Any
 }
 object TypeAny {
   
-  inline def apply(`type`: js.Any): TypeAny = {
+  inline def apply(`type`: scala.Any): TypeAny = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeAny]
@@ -18,6 +18,6 @@ object TypeAny {
   
   extension [Self <: TypeAny](x: Self) {
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: scala.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

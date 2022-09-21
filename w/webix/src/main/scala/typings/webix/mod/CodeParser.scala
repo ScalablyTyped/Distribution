@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CodeParser extends StObject {
   
-  def collapseNames(obj: js.Any): StringDictionary[js.Any]
+  def collapseNames(obj: Any): StringDictionary[Any]
   
-  def expandNames(obj: StringDictionary[js.Any]): js.Any
+  def expandNames(obj: StringDictionary[Any]): Any
 }
 object CodeParser {
   
@@ -19,8 +19,8 @@ object CodeParser {
   
   extension [Self <: CodeParser](x: Self) {
     
-    inline def setCollapseNames(value: js.Any => StringDictionary[js.Any]): Self = StObject.set(x, "collapseNames", js.Any.fromFunction1(value))
+    inline def setCollapseNames(value: Any => StringDictionary[Any]): Self = StObject.set(x, "collapseNames", js.Any.fromFunction1(value))
     
-    inline def setExpandNames(value: StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "expandNames", js.Any.fromFunction1(value))
+    inline def setExpandNames(value: StringDictionary[Any] => Any): Self = StObject.set(x, "expandNames", js.Any.fromFunction1(value))
   }
 }

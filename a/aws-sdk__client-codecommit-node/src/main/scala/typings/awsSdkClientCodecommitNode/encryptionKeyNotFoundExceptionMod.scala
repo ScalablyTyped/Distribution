@@ -8,5 +8,5 @@ object encryptionKeyNotFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/EncryptionKeyNotFoundException", "EncryptionKeyNotFoundException")
   @js.native
-  val EncryptionKeyNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EncryptionKeyNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,13 +10,13 @@ Given an image, extract predominant & palette colors
 | ------------------ | :-------------: |
 | Full name          | splashy |
 | Keywords           | canvas, color, colour, dominant, extract, extraction, file, image, main, palette, photo, picture, url |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 5933 |
-| # stars            | 1 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 683.3333333333334 |
+| # stars            | 77.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/splashy)
+- [Homepage](https://github.com/microlinkhq/splashy#readme)
 - [Bugs](https://github.com/microlinkhq/splashy/issues)
 - [Repository](https://github.com/microlinkhq/splashy)
 - [Npm](https://www.npmjs.com/package/splashy)

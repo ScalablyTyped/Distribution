@@ -24,7 +24,7 @@ object XAlterQuery {
   inline def apply(
     acquire: () => Unit,
     alterCommand: (String, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAlterQuery = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), alterCommand = js.Any.fromFunction2(alterCommand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

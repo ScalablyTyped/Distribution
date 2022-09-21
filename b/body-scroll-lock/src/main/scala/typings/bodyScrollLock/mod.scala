@@ -24,7 +24,7 @@ object mod {
   
   trait BodyScrollOptions extends StObject {
     
-    var allowTouchMove: js.UndefOr[js.Function1[/* el */ HTMLElement | Element, Unit]] = js.undefined
+    var allowTouchMove: js.UndefOr[js.Function1[/* el */ HTMLElement | Element, Boolean]] = js.undefined
     
     var reserveScrollBarGap: js.UndefOr[Boolean] = js.undefined
   }
@@ -37,7 +37,7 @@ object mod {
     
     extension [Self <: BodyScrollOptions](x: Self) {
       
-      inline def setAllowTouchMove(value: /* el */ HTMLElement | Element => Unit): Self = StObject.set(x, "allowTouchMove", js.Any.fromFunction1(value))
+      inline def setAllowTouchMove(value: /* el */ HTMLElement | Element => Boolean): Self = StObject.set(x, "allowTouchMove", js.Any.fromFunction1(value))
       
       inline def setAllowTouchMoveUndefined: Self = StObject.set(x, "allowTouchMove", js.undefined)
       

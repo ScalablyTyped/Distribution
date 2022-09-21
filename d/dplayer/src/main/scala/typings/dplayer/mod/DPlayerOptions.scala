@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DPlayerOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.undefined
   
@@ -71,7 +71,7 @@ object DPlayerOptions {
     
     inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
     
-    inline def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = StObject.set(x, "contextmenu", js.Array(value :_*))
+    inline def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = StObject.set(x, "contextmenu", js.Array(value*))
     
     inline def setDanmaku(value: DPlayerDanmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object DPlayerOptions {
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    inline def setHighlightVarargs(value: DPlayerHighLightItem*): Self = StObject.set(x, "highlight", js.Array(value :_*))
+    inline def setHighlightVarargs(value: DPlayerHighLightItem*): Self = StObject.set(x, "highlight", js.Array(value*))
     
     inline def setHotkey(value: Boolean): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
     

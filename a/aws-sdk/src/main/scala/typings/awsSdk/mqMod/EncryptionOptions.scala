@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionOptions extends StObject {
   
   /**
-    * The symmetric customer master key (CMK) to use for the AWS Key Management Service (KMS). This key is used to encrypt your data at rest. If not provided, Amazon MQ will use a default CMK to encrypt your data.
+    * The customer master key (CMK) to use for the AWS Key Management Service (KMS). This key is used to encrypt your data at rest. If not provided, Amazon MQ will use a default CMK to encrypt your data.
     */
   var KmsKeyId: js.UndefOr[string] = js.undefined
   
   /**
-    * Enables the use of an AWS owned CMK using AWS Key Management Service (KMS).
+    * Enables the use of an AWS owned CMK using AWS Key Management Service (KMS). Set to true by default, if no value is provided, for example, for RabbitMQ brokers.
     */
   var UseAwsOwnedKey: boolean
 }

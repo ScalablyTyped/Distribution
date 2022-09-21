@@ -17,6 +17,15 @@ trait ActiveLayerInfo
   var children: Collection[ActiveLayerInfo] = js.native
   
   /**
+    * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#hideLayersNotInCurrentView)
+    */
+  var hideLayersNotInCurrentView: Boolean = js.native
+  
+  /**
     * Indicates if the legend's display of the layer's renderer is driven by the scale of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#isScaleDriven)
@@ -52,7 +61,7 @@ trait ActiveLayerInfo
   val opacity: Double = js.native
   
   /**
-    * The ActiveLayerInfo of the parent [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
+    * The ActiveLayerInfo of the parent module:esri/layers/support/ISublayer or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#parent)
     */
@@ -66,11 +75,27 @@ trait ActiveLayerInfo
   var ready: Boolean = js.native
   
   /**
+    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#respectLayerVisibility)
+    */
+  var respectLayerVisibility: Boolean = js.native
+  
+  /**
     * The scale of the view instance in which the Legend is rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#scale)
     */
   var scale: Double = js.native
+  
+  /**
+    * Only applies if the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer) is a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#sublayerIds)
+    */
+  var sublayerIds: js.Array[Double] = js.native
   
   /**
     * The text string that represents the legend's title.

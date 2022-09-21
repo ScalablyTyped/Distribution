@@ -8,5 +8,5 @@ object putTelemetryRecordsInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/PutTelemetryRecordsInput", "PutTelemetryRecordsInput")
   @js.native
-  val PutTelemetryRecordsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutTelemetryRecordsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

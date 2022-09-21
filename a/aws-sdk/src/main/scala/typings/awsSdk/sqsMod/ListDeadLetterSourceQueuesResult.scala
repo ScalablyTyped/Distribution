@@ -31,6 +31,6 @@ object ListDeadLetterSourceQueuesResult {
     
     inline def setQueueUrls(value: QueueUrlList): Self = StObject.set(x, "queueUrls", value.asInstanceOf[js.Any])
     
-    inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value :_*))
+    inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ object lightState {
   
   @JSImport("node-hue-api", "lightState.State")
   @js.native
-  class State () extends StObject {
+  open class State () extends StObject {
     
     /**
       * Adds the alert state

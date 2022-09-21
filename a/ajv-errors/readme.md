@@ -1,19 +1,19 @@
 
 # Scala.js typings for ajv-errors
 
-Typings are for version 1.0
+Typings are for version 3.0.0
 
 ## Library description:
-Custom error messages in JSON-Schema for Ajv validator
+Custom error messages in JSON Schemas for Ajv validator
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ajv-errors |
 | Keywords           | ajv, json-schema, validator, error, messages |
-| # releases         | 3 |
-| # dependents       | 142 |
-| # downloads        | 407806782 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4.3963022E7 |
+| # stars            | 248.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/ajv-errors#readme)
@@ -24,7 +24,7 @@ Custom error messages in JSON-Schema for Ajv validator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ trait BuildDefinitionReference
   extends StObject
      with DefinitionReference {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The author of the definition.
@@ -47,9 +46,9 @@ trait BuildDefinitionReference
 object BuildDefinitionReference {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     authoredBy: IdentityRef,
-    createdDate: Date,
+    createdDate: js.Date,
     draftOf: DefinitionReference,
     drafts: js.Array[DefinitionReference],
     id: Double,
@@ -80,7 +79,7 @@ object BuildDefinitionReference {
     
     inline def setDrafts(value: js.Array[DefinitionReference]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
     
-    inline def setDraftsVarargs(value: DefinitionReference*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+    inline def setDraftsVarargs(value: DefinitionReference*): Self = StObject.set(x, "drafts", js.Array(value*))
     
     inline def setLatestBuild(value: Build): Self = StObject.set(x, "latestBuild", value.asInstanceOf[js.Any])
     
@@ -88,12 +87,12 @@ object BuildDefinitionReference {
     
     inline def setMetrics(value: js.Array[BuildMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    inline def setMetricsVarargs(value: BuildMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: BuildMetric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setQuality(value: DefinitionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     inline def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

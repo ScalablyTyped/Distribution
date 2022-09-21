@@ -24,6 +24,6 @@ object BillingChargeResponse {
     
     inline def setBillingChargeItemsUndefined: Self = StObject.set(x, "billingChargeItems", js.undefined)
     
-    inline def setBillingChargeItemsVarargs(value: (/* Contains information about a billing charge. */ BillingCharge)*): Self = StObject.set(x, "billingChargeItems", js.Array(value :_*))
+    inline def setBillingChargeItemsVarargs(value: (/* Contains information about a billing charge. */ BillingCharge)*): Self = StObject.set(x, "billingChargeItems", js.Array(value*))
   }
 }

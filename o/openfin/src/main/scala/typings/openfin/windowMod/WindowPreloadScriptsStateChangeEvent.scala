@@ -9,13 +9,13 @@ trait WindowPreloadScriptsStateChangeEvent[Topic, Type]
   extends StObject
      with WindowEvent[Topic, Type] {
   
-  var preloadScripts: js.Array[PreloadScriptInfoRunning & js.Any]
+  var preloadScripts: js.Array[PreloadScriptInfoRunning & Any]
 }
 object WindowPreloadScriptsStateChangeEvent {
   
   inline def apply[Topic, Type](
     name: String,
-    preloadScripts: js.Array[PreloadScriptInfoRunning & js.Any],
+    preloadScripts: js.Array[PreloadScriptInfoRunning & Any],
     topic: Topic,
     `type`: Type,
     uuid: String
@@ -27,8 +27,8 @@ object WindowPreloadScriptsStateChangeEvent {
   
   extension [Self <: WindowPreloadScriptsStateChangeEvent[?, ?], Topic, Type](x: Self & (WindowPreloadScriptsStateChangeEvent[Topic, Type])) {
     
-    inline def setPreloadScripts(value: js.Array[PreloadScriptInfoRunning & js.Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+    inline def setPreloadScripts(value: js.Array[PreloadScriptInfoRunning & Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
     
-    inline def setPreloadScriptsVarargs(value: (PreloadScriptInfoRunning & js.Any)*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+    inline def setPreloadScriptsVarargs(value: (PreloadScriptInfoRunning & Any)*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
   }
 }

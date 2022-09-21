@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EmailMailbox extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mailboxchanged(`type`: mailboxchanged, listener: TypedEventHandler[EmailMailbox, EmailMailboxChangedEventArgs]): Unit = js.native
   
@@ -205,7 +204,7 @@ trait EmailMailbox extends StObject {
   /** Gets the security policies for attachments in this mailbox. */
   var policies: EmailMailboxPolicies = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mailboxchanged(`type`: mailboxchanged, listener: TypedEventHandler[EmailMailbox, EmailMailboxChangedEventArgs]): Unit = js.native
   
@@ -214,7 +213,7 @@ trait EmailMailbox extends StObject {
     * @param recipients The list of email addresses.
     * @return A list of resolution results. The result list will be in the same order as the input list. See EmailRecipientResolutionResult for more information.
     */
-  def resolveRecipientsAsync(recipients: IIterable[String]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def resolveRecipientsAsync(recipients: IIterable[String]): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously saves the mailbox to the email store.
@@ -330,7 +329,13 @@ trait EmailMailbox extends StObject {
     * @param comment The body of the message.
     * @return A Boolean value indicating if the proposed meeting message was successfully sent.
     */
-  def tryProposeNewTimeForMeetingAsync(meeting: EmailMessage, newStartTime: Date, newDuration: Double, subject: String, comment: String): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def tryProposeNewTimeForMeetingAsync(
+    meeting: EmailMessage,
+    newStartTime: js.Date,
+    newDuration: Double,
+    subject: String,
+    comment: String
+  ): IPromiseWithIAsyncOperation[Boolean] = js.native
   
   /**
     * Asynchronously attempts to set the auto-reply settings for the mailbox.
@@ -364,5 +369,5 @@ trait EmailMailbox extends StObject {
     * @param certificates The certificate to validate.
     * @return The confirmation that the certificate is valid.
     */
-  def validateCertificatesAsync(certificates: IIterable[Certificate]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def validateCertificatesAsync(certificates: IIterable[Certificate]): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

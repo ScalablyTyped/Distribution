@@ -28,7 +28,7 @@ object LiveStreamHealthStatus {
     
     inline def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
     
-    inline def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
+    inline def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value*))
     
     inline def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
     

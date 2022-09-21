@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InvertUV extends StObject {
   
+  var arc: js.UndefOr[Double] = js.undefined
+  
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
   var cap: js.UndefOr[Double] = js.undefined
@@ -20,24 +22,28 @@ trait InvertUV extends StObject {
   
   var path: js.Array[Vector3]
   
-  var rotation: js.UndefOr[Double] = js.undefined
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.undefined
-  
-  var shape: js.Array[Vector3]
+  var radiusFunction: js.UndefOr[js.Function2[/* i */ Double, /* distance */ Double, Double]] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
+  
+  var tessellation: js.UndefOr[Double] = js.undefined
   
   var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object InvertUV {
   
-  inline def apply(path: js.Array[Vector3], shape: js.Array[Vector3]): InvertUV = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+  inline def apply(path: js.Array[Vector3]): InvertUV = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvertUV]
   }
   
   extension [Self <: InvertUV](x: Self) {
+    
+    inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
@@ -61,23 +67,23 @@ object InvertUV {
     
     inline def setPath(value: js.Array[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRadiusFunction(value: (/* i */ Double, /* distance */ Double) => Double): Self = StObject.set(x, "radiusFunction", js.Any.fromFunction2(value))
     
-    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setRadiusFunctionUndefined: Self = StObject.set(x, "radiusFunction", js.undefined)
     
-    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
-    
-    inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
-    
-    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
+    
+    inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
+    
+    inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
     
     inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location, and the tables are sorted top-to-bottom and then left-to-right.
   *
-  * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and the tables are sorted top to bottom and then left to right.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait TableScopedCollectionLoadOptions extends StObject {
@@ -19,140 +19,140 @@ trait TableScopedCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the `AutoFilter` object of the table.
     *
-    * For EACH ITEM in the collection: Represents the AutoFilter object of the table.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var columns: js.UndefOr[TableColumnCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the last column contains special formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Returns a numeric ID.
     *
-    * For EACH ITEM in the collection: Returns a numeric id.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var legacyId: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Name of the table.
     
-    The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+    The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones, to make reading the table easier.
     *
-    * For EACH ITEM in the collection: Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make reading the table easier.
     *
-    * For EACH ITEM in the collection: Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showFilterButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the header row is visible. This value can be set to show or remove the header row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the total row is visible. This value can be set to show or remove the total row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the sorting for the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var sort: js.UndefOr[TableSortLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
     *
-    * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The style applied to the table.
     *
-    * For EACH ITEM in the collection: The style applied to the Table.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var tableStyle: js.UndefOr[TableStyleLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The worksheet containing the current table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

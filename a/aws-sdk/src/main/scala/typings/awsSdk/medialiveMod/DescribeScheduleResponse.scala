@@ -33,6 +33,6 @@ object DescribeScheduleResponse {
     
     inline def setScheduleActionsUndefined: Self = StObject.set(x, "ScheduleActions", js.undefined)
     
-    inline def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value :_*))
+    inline def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value*))
   }
 }

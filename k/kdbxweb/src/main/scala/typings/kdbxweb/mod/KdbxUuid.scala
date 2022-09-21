@@ -1,24 +1,15 @@
 package typings.kdbxweb.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "KdbxUuid")
 @js.native
-class KdbxUuid protected () extends StObject {
+open class KdbxUuid ()
+  extends typings.kdbxweb.kdbxUuidMod.KdbxUuid {
   def this(ab: String) = this()
-  def this(ab: ArrayBuffer) = this()
-  
-  var empty: Boolean = js.native
-  
-  def equals(other: KdbxUuid): Boolean = js.native
-  
-  var id: js.UndefOr[String] = js.native
-  
-  def toBytes(): js.UndefOr[Uint8Array] = js.native
+  def this(ab: js.typedarray.ArrayBuffer) = this()
 }
 /* static members */
 object KdbxUuid {
@@ -27,5 +18,5 @@ object KdbxUuid {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def random(): KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[KdbxUuid]
+  inline def random(): typings.kdbxweb.kdbxUuidMod.KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.kdbxweb.kdbxUuidMod.KdbxUuid]
 }

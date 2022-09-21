@@ -54,6 +54,7 @@ object canvasContextMod {
       *     which areas are covered by the current path. Default is `"nonzero"`.
       */
     def fill(): Unit = js.native
+    def fill(windingRule: nonzero | evenodd): Unit = js.native
     
     /**
       * Fills a specified rectangle without affecting the current paths.
@@ -86,11 +87,6 @@ object canvasContextMod {
       * - strings on the format `"hwb(134, 50%, 50%, 50%)"`
       */
     var fillStyle: Double | String = js.native
-    
-    @JSName("fill")
-    def fill_evenodd(windingRule: evenodd): Unit = js.native
-    @JSName("fill")
-    def fill_nonzero(windingRule: nonzero): Unit = js.native
     
     /**
       * Inserts an edge between the last and specified position.

@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.AlignItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AlignItemsProps extends StObject {
   
-  val alignItems: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
-    ]
-  ] = js.undefined
+  val alignItems: js.UndefOr[ResponsiveValue[AlignItems]] = js.undefined
 }
 object AlignItemsProps {
   
@@ -21,16 +18,10 @@ object AlignItemsProps {
   
   extension [Self <: AlignItemsProps](x: Self) {
     
-    inline def setAlignItems(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
-        ]
-    ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: ResponsiveValue[AlignItems]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    inline def setAlignItemsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any)*
-    ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
+    inline def setAlignItemsVarargs(value: AlignItems*): Self = StObject.set(x, "alignItems", js.Array(value*))
   }
 }

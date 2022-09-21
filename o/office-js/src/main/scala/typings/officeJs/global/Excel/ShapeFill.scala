@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the fill formatting of a shape object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFill")
 @js.native
-class ShapeFill ()
+open class ShapeFill ()
   extends StObject
      with typings.officeJs.Excel.ShapeFill {
   

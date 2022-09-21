@@ -18,11 +18,11 @@ object mod extends Shortcut {
     
     def checkRecordPermission(): js.Promise[String] = js.native
     
-    def chooseAudioRoute(route: js.Any): js.Any = js.native
+    def chooseAudioRoute(route: Any): Any = js.native
     
-    def getAudioUri(audioType: String, fileType: String): js.Any = js.native
+    def getAudioUri(audioType: String, fileType: String): Any = js.native
     
-    def getIsWiredHeadsetPluggedIn(): js.Promise[js.Any] = js.native
+    def getIsWiredHeadsetPluggedIn(): js.Promise[Any] = js.native
     
     def pokeScreen(): Unit = js.native
     def pokeScreen(_timeout: Double): Unit = js.native
@@ -56,17 +56,17 @@ object mod extends Shortcut {
     
     def startRingtone(): Unit = js.native
     def startRingtone(ringtone: String): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any]): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: String): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: String, seconds: Double): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: Unit, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[Any]): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[Any], ios_category: String): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[Any], ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[Any], ios_category: Unit, seconds: Double): Unit = js.native
     def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: String): Unit = js.native
     def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: String, seconds: Double): Unit = js.native
     def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: Unit, seconds: Double): Unit = js.native
-    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any]): Unit = js.native
-    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: String): Unit = js.native
-    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: String, seconds: Double): Unit = js.native
-    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: Unit, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[Any]): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[Any], ios_category: String): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[Any], ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[Any], ios_category: Unit, seconds: Double): Unit = js.native
     def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: String): Unit = js.native
     def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: String, seconds: Double): Unit = js.native
     def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: Unit, seconds: Double): Unit = js.native

@@ -25,7 +25,10 @@ trait DeviceIds extends StObject {
   /** A list of device numeric IDs. If empty, this field is ignored. Maximum IDs: 10,000. */
   var deviceNumIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  /** The fields of the `Device` resource to be returned in the response. The fields `id` and `num_id` are always returned, along with any other fields specified. */
+  /**
+    * The fields of the `Device` resource to be returned in the response. The fields `id` and `num_id` are always returned, along with any other fields specified in snake_case format,
+    * for example: `last_heartbeat_time`.
+    */
   var fieldMask: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
@@ -111,13 +114,13 @@ object DeviceIds {
     
     inline def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
     
-    inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
+    inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value*))
     
     inline def setDeviceNumIds(value: String | js.Array[String]): Self = StObject.set(x, "deviceNumIds", value.asInstanceOf[js.Any])
     
     inline def setDeviceNumIdsUndefined: Self = StObject.set(x, "deviceNumIds", js.undefined)
     
-    inline def setDeviceNumIdsVarargs(value: String*): Self = StObject.set(x, "deviceNumIds", js.Array(value :_*))
+    inline def setDeviceNumIdsVarargs(value: String*): Self = StObject.set(x, "deviceNumIds", js.Array(value*))
     
     inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     

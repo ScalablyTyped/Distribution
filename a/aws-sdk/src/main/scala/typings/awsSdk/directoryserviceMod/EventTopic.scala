@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventTopic extends StObject {
   
   /**
-    * The date and time of when you associated your directory with the SNS topic.
+    * The date and time of when you associated your directory with the Amazon SNS topic.
     */
-  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.undefined
+  var CreatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Directory ID of an AWS Directory Service directory that will publish status messages to an SNS topic.
+    * The Directory ID of an Directory Service directory that will publish status messages to an Amazon SNS topic.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
@@ -22,12 +22,12 @@ trait EventTopic extends StObject {
   var Status: js.UndefOr[TopicStatus] = js.undefined
   
   /**
-    * The SNS topic ARN (Amazon Resource Name).
+    * The Amazon SNS topic ARN (Amazon Resource Name).
     */
   var TopicArn: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicArn] = js.undefined
   
   /**
-    * The name of an AWS SNS topic the receives status messages from the directory.
+    * The name of an Amazon SNS topic the receives status messages from the directory.
     */
   var TopicName: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicName] = js.undefined
 }
@@ -40,7 +40,7 @@ object EventTopic {
   
   extension [Self <: EventTopic](x: Self) {
     
-    inline def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
     

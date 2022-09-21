@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dataset extends StObject {
   
   /**
-    * The DatasetAction objects that automatically create the data set contents.
+    * The DatasetAction objects that automatically create the dataset contents.
     */
   var actions: js.UndefOr[DatasetActions] = js.undefined
   
   /**
-    * The ARN of the data set.
+    * The ARN of the dataset.
     */
   var arn: js.UndefOr[DatasetArn] = js.undefined
   
@@ -22,42 +22,42 @@ trait Dataset extends StObject {
   var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
   
   /**
-    * When the data set was created.
+    * When the dataset was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The last time the data set was updated.
+    * The last time the dataset was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A list of data rules that send notifications to Amazon CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
+    * A list of data rules that send notifications to CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
     */
   var lateDataRules: js.UndefOr[LateDataRules] = js.undefined
   
   /**
-    * The name of the data set.
+    * The name of the dataset.
     */
   var name: js.UndefOr[DatasetName] = js.undefined
   
   /**
-    * Optional. How long, in days, message data is kept for the data set.
+    * Optional. How long, in days, message data is kept for the dataset.
     */
   var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
-    * The status of the data set.
+    * The status of the dataset.
     */
   var status: js.UndefOr[DatasetStatus] = js.undefined
   
   /**
-    * The DatasetTrigger objects that specify when the data set is automatically updated.
+    * The DatasetTrigger objects that specify when the dataset is automatically updated.
     */
   var triggers: js.UndefOr[DatasetTriggers] = js.undefined
   
   /**
-    * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
+    * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see  Keeping Multiple Versions of IoT Analytics datasets in the IoT Analytics User Guide.
     */
   var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
 }
@@ -74,7 +74,7 @@ object Dataset {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: DatasetAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DatasetAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setArn(value: DatasetArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
@@ -84,13 +84,13 @@ object Dataset {
     
     inline def setContentDeliveryRulesUndefined: Self = StObject.set(x, "contentDeliveryRules", js.undefined)
     
-    inline def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = StObject.set(x, "contentDeliveryRules", js.Array(value :_*))
+    inline def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = StObject.set(x, "contentDeliveryRules", js.Array(value*))
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
@@ -98,7 +98,7 @@ object Dataset {
     
     inline def setLateDataRulesUndefined: Self = StObject.set(x, "lateDataRules", js.undefined)
     
-    inline def setLateDataRulesVarargs(value: LateDataRule*): Self = StObject.set(x, "lateDataRules", js.Array(value :_*))
+    inline def setLateDataRulesVarargs(value: LateDataRule*): Self = StObject.set(x, "lateDataRules", js.Array(value*))
     
     inline def setName(value: DatasetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object Dataset {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "versioningConfiguration", value.asInstanceOf[js.Any])
     

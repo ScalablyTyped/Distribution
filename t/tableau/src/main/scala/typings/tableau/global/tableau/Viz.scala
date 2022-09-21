@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.Viz")
 @js.native
-class Viz protected ()
+open class Viz protected ()
   extends StObject
      with typings.tableau.tableau.Viz {
   /**

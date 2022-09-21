@@ -48,7 +48,7 @@ object DescribeMovingAddressesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeMovingAddressesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeMovingAddressesRequest {
     
     inline def setPublicIpsUndefined: Self = StObject.set(x, "PublicIps", js.undefined)
     
-    inline def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "PublicIps", js.Array(value :_*))
+    inline def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "PublicIps", js.Array(value*))
   }
 }

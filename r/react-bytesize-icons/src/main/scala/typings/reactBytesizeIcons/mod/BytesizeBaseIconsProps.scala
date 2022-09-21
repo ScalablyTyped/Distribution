@@ -1,13 +1,14 @@
 package typings.reactBytesizeIcons.mod
 
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BytesizeBaseIconsProps
-  extends StObject
-     with Props[js.Any] {
+trait BytesizeBaseIconsProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -16,6 +17,8 @@ trait BytesizeBaseIconsProps
   var height: js.UndefOr[Double] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
+  
+  var ref: js.UndefOr[LegacyRef[Any]] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -27,6 +30,10 @@ object BytesizeBaseIconsProps {
   }
   
   extension [Self <: BytesizeBaseIconsProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -43,6 +50,14 @@ object BytesizeBaseIconsProps {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setRef(value: LegacyRef[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

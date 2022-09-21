@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "diagnostic-channel" : "0.3.1"
+      "diagnostic-channel" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "diagnostic-channel" : "0.3.1"
+      "diagnostic-channel" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

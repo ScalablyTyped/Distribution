@@ -1,18 +1,27 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalBooleanValueBlock")
 @js.native
-class LocalBooleanValueBlock () extends LocalValueBlock {
-  def this(params: LocalBaseBlockParams) = this()
+trait LocalBooleanValueBlock
+  extends ValueBlock
+     with ILocalBooleanValueBlock {
   
-  var isHexOnly: scala.Boolean = js.native
+  /**
+    * @deprecated since version 3.0.0
+    */
+  @JSName("valueBeforeDecode")
+  var valueBeforeDecode_FLocalBooleanValueBlock: js.typedarray.ArrayBuffer = js.native
   
-  var value: scala.Boolean = js.native
+  /**
+    * Binary data in ArrayBuffer representation
+    *
+    * @deprecated since version 3.0.0
+    */
+  var valueHex: js.typedarray.ArrayBuffer = js.native
   
-  var valueHex: ArrayBuffer = js.native
+  @JSName("value")
+  def value_MLocalBooleanValueBlock: scala.Boolean = js.native
 }

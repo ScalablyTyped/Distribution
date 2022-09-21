@@ -16,9 +16,9 @@ trait IFileOpenPickerUI extends StObject {
   
   def containsFile(id: String): Boolean
   
-  var onclosing: js.Any
+  var onclosing: Any
   
-  var onfileremoved: js.Any
+  var onfileremoved: Any
   
   def removeFile(id: String): Unit
   
@@ -35,8 +35,8 @@ object IFileOpenPickerUI {
     allowedFileTypes: IVectorView[String],
     canAddFile: IStorageFile => Boolean,
     containsFile: String => Boolean,
-    onclosing: js.Any,
-    onfileremoved: js.Any,
+    onclosing: Any,
+    onfileremoved: Any,
     removeFile: String => Unit,
     selectionMode: FileSelectionMode,
     settingsIdentifier: String,
@@ -56,9 +56,9 @@ object IFileOpenPickerUI {
     
     inline def setContainsFile(value: String => Boolean): Self = StObject.set(x, "containsFile", js.Any.fromFunction1(value))
     
-    inline def setOnclosing(value: js.Any): Self = StObject.set(x, "onclosing", value.asInstanceOf[js.Any])
+    inline def setOnclosing(value: Any): Self = StObject.set(x, "onclosing", value.asInstanceOf[js.Any])
     
-    inline def setOnfileremoved(value: js.Any): Self = StObject.set(x, "onfileremoved", value.asInstanceOf[js.Any])
+    inline def setOnfileremoved(value: Any): Self = StObject.set(x, "onfileremoved", value.asInstanceOf[js.Any])
     
     inline def setRemoveFile(value: String => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction1(value))
     

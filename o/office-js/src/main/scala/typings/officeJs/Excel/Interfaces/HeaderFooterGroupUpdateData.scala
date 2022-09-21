@@ -13,57 +13,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeaderFooterGroupUpdateData extends StObject {
   
   /**
-    *
     * The general header/footer, used for all pages unless even/odd or first page is specified.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var defaultForAllPages: js.UndefOr[HeaderFooterUpdateData] = js.undefined
   
   /**
-    *
     * The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var evenPages: js.UndefOr[HeaderFooterUpdateData] = js.undefined
   
   /**
-    *
     * The first page header/footer, for all other pages general or even/odd is used.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var firstPage: js.UndefOr[HeaderFooterUpdateData] = js.undefined
   
   /**
-    *
     * The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var oddPages: js.UndefOr[HeaderFooterUpdateData] = js.undefined
   
   /**
+    * The state by which headers/footers are set. See `Excel.HeaderFooterState` for details.
     *
-    * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var state: js.UndefOr[HeaderFooterState | Default | FirstAndDefault | OddAndEven | FirstOddAndEven] = js.undefined
   
   /**
-    *
     * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var useSheetMargins: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var useSheetScale: js.UndefOr[Boolean] = js.undefined

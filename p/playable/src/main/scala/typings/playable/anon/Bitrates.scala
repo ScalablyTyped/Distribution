@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bitrates extends StObject {
   
-  var bitrates: js.Any
+  var bitrates: Any
   
-  var bwEstimate: js.Any
+  var bwEstimate: Double
   
-  var currentBitrate: js.Any
+  var currentBitrate: Any
   
-  var currentTrack: js.Any
+  var currentTrack: Any
   
   var deliveryPriority: MediaStreamDeliveryPriority
   
   var nearestBufferSegInfo: End
   
-  var overallBufferLength: js.Any
+  var overallBufferLength: Any
   
   var `type`: MediaStreamType
   
@@ -29,13 +29,13 @@ trait Bitrates extends StObject {
 object Bitrates {
   
   inline def apply(
-    bitrates: js.Any,
-    bwEstimate: js.Any,
-    currentBitrate: js.Any,
-    currentTrack: js.Any,
+    bitrates: Any,
+    bwEstimate: Double,
+    currentBitrate: Any,
+    currentTrack: Any,
     deliveryPriority: MediaStreamDeliveryPriority,
     nearestBufferSegInfo: End,
-    overallBufferLength: js.Any,
+    overallBufferLength: Any,
     `type`: MediaStreamType,
     url: String
   ): Bitrates = {
@@ -46,19 +46,19 @@ object Bitrates {
   
   extension [Self <: Bitrates](x: Self) {
     
-    inline def setBitrates(value: js.Any): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
+    inline def setBitrates(value: Any): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     
-    inline def setBwEstimate(value: js.Any): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
+    inline def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
     
-    inline def setCurrentBitrate(value: js.Any): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
+    inline def setCurrentBitrate(value: Any): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
     
-    inline def setCurrentTrack(value: js.Any): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
+    inline def setCurrentTrack(value: Any): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
     
     inline def setDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "deliveryPriority", value.asInstanceOf[js.Any])
     
     inline def setNearestBufferSegInfo(value: End): Self = StObject.set(x, "nearestBufferSegInfo", value.asInstanceOf[js.Any])
     
-    inline def setOverallBufferLength(value: js.Any): Self = StObject.set(x, "overallBufferLength", value.asInstanceOf[js.Any])
+    inline def setOverallBufferLength(value: Any): Self = StObject.set(x, "overallBufferLength", value.asInstanceOf[js.Any])
     
     inline def setType(value: MediaStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -10,11 +10,10 @@ object radioDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/radio/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicRadioExample
+  open class default () extends BasicRadioExample
   
   @js.native
-  trait BasicRadioExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicRadioExample extends Component[Any, Any, Any] {
     
     @JSName("state")
     var state_BasicRadioExample: Part1Value = js.native

@@ -8,5 +8,5 @@ object createGrantMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/CreateGrant", "CreateGrant")
   @js.native
-  val CreateGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val CreateGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

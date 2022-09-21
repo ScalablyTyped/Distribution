@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MUIDataTableHeadCell extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
   var classes: js.UndefOr[js.Object] = js.undefined
   
@@ -19,19 +19,19 @@ trait MUIDataTableHeadCell extends StObject {
   var sortOrder: js.UndefOr[MUISortOptions] = js.undefined
   
   def toggleSort(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any
 }
 object MUIDataTableHeadCell {
   
-  inline def apply(hint: String, options: MUIDataTableOptions, sort: Boolean, toggleSort: js.Any => js.Any): MUIDataTableHeadCell = {
+  inline def apply(hint: String, options: MUIDataTableOptions, sort: Boolean, toggleSort: Any => Any): MUIDataTableHeadCell = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], toggleSort = js.Any.fromFunction1(toggleSort))
     __obj.asInstanceOf[MUIDataTableHeadCell]
   }
   
   extension [Self <: MUIDataTableHeadCell](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -49,6 +49,6 @@ object MUIDataTableHeadCell {
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    inline def setToggleSort(value: js.Any => js.Any): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
+    inline def setToggleSort(value: Any => Any): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
   }
 }

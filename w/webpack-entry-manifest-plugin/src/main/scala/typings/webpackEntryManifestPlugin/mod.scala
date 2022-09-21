@@ -1,6 +1,5 @@
 package typings.webpackEntryManifestPlugin
 
-import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +11,13 @@ object mod {
     */
   @JSImport("webpack-entry-manifest-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WebpackEntryManifestPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    var name: typings.webpackEntryManifestPlugin.webpackEntryManifestPluginStrings.WebpackEntryManifestPlugin = js.native
   }
   
   trait Options extends StObject {
@@ -42,7 +44,7 @@ object mod {
       * Assets manifest serialize function
       * @default manifest => JSON.stringify(manifest)
       */
-    var serialize: js.UndefOr[js.Function1[/* manifest */ js.Any, String]] = js.undefined
+    var serialize: js.UndefOr[js.Function1[/* manifest */ Any, String]] = js.undefined
   }
   object Options {
     
@@ -65,7 +67,7 @@ object mod {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setSerialize(value: /* manifest */ js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* manifest */ Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
       inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     }
@@ -74,12 +76,23 @@ object mod {
   /**
     * Webpack plugin for generating an asset manifest with grouped entry chunks
     */
-  @js.native
-  trait WebpackEntryManifestPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait WebpackEntryManifestPlugin extends StObject {
     
-    @JSName("name")
-    var name_WebpackEntryManifestPlugin: typings.webpackEntryManifestPlugin.webpackEntryManifestPluginStrings.WebpackEntryManifestPlugin = js.native
+    var name: typings.webpackEntryManifestPlugin.webpackEntryManifestPluginStrings.WebpackEntryManifestPlugin
+  }
+  object WebpackEntryManifestPlugin {
+    
+    inline def apply(): WebpackEntryManifestPlugin = {
+      val __obj = js.Dynamic.literal(name = "WebpackEntryManifestPlugin")
+      __obj.asInstanceOf[WebpackEntryManifestPlugin]
+    }
+    
+    extension [Self <: WebpackEntryManifestPlugin](x: Self) {
+      
+      inline def setName(
+        value: typings.webpackEntryManifestPlugin.webpackEntryManifestPluginStrings.WebpackEntryManifestPlugin
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
   }
 }

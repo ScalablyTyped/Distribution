@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.formFieldErrorSmallMod.FormFieldErrorSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemFormFieldErrorSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/FormFieldErrorSmall", JSImport.Default)
   @js.native
-  val default: SFC[FormFieldErrorSmallProps] = js.native
+  val default: FC[FormFieldErrorSmallProps] = js.native
   
-  type _To = SFC[FormFieldErrorSmallProps]
+  type _To = FC[FormFieldErrorSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemFormFieldErrorSmallMod.foo` */
-  override def _to: SFC[FormFieldErrorSmallProps] = default
+  override def _to: FC[FormFieldErrorSmallProps] = default
 }

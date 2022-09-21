@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cycled" : "1.2.0"
+      "cycled" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cycled" : "1.2.0"
+      "cycled" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

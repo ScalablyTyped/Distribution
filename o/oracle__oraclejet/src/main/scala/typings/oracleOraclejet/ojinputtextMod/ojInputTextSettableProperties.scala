@@ -30,11 +30,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojInputTextSettableProperties
   extends StObject
-     with inputBaseSettableProperties[js.Any, js.Any, js.Any] {
+     with inputBaseSettableProperties[Any, Any, Any] {
   
   var clearIcon: never | always | conditional
   
-  var converter: Converter[js.Any] | RegisteredConverter | Null
+  var converter: Converter[Any] | RegisteredConverter | Null
   
   var list: String
   
@@ -43,7 +43,7 @@ trait ojInputTextSettableProperties
 object ojInputTextSettableProperties {
   
   inline def apply(
-    asyncValidators: js.Array[AsyncValidator[js.Any]],
+    asyncValidators: js.Array[AsyncValidator[Any]],
     autocomplete: on | off | String,
     autofocus: Boolean,
     clearIcon: never | always | conditional,
@@ -55,12 +55,12 @@ object ojInputTextSettableProperties {
     list: String,
     messagesCustom: js.Array[^],
     placeholder: String,
-    rawValue: js.Any,
+    rawValue: Any,
     readonly: Boolean,
     required: Boolean,
     translations: Regexp,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Any,
+    value: Any,
     virtualKeyboard: auto | email | number | search | tel | text | url
   ): ojInputTextSettableProperties = {
     val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearIcon = clearIcon.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any], converter = null, describedBy = null, validators = null)
@@ -71,7 +71,7 @@ object ojInputTextSettableProperties {
     
     inline def setClearIcon(value: never | always | conditional): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     

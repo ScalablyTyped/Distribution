@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofSpreadsheet extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Spreadsheet
 }
 object TypeofSpreadsheet {
   
-  inline def apply(Locale: js.Any, fn: Spreadsheet): TypeofSpreadsheet = {
+  inline def apply(Locale: Any, fn: Spreadsheet): TypeofSpreadsheet = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSpreadsheet]
   }
@@ -24,6 +24,6 @@ object TypeofSpreadsheet {
     
     inline def setFn(value: Spreadsheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

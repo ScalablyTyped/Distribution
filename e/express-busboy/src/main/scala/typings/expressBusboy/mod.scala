@@ -2,7 +2,6 @@ package typings.expressBusboy
 
 import typings.connectBusboy.mod.ConnectBusboyOptions
 import typings.express.mod.Application_
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,13 +19,15 @@ object mod {
     extends StObject
        with ConnectBusboyOptions {
     
-    var allowedPath: js.UndefOr[String | RegExp | (js.Function1[/* url */ String, Boolean])] = js.undefined
+    var allowedPath: js.UndefOr[String | js.RegExp | (js.Function1[/* url */ String, Boolean])] = js.undefined
     
     var mimeTypeLimit: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
     var restrictMultiple: js.UndefOr[Boolean] = js.undefined
+    
+    var strip: js.UndefOr[js.Function2[/* value */ String, /* type */ js.UndefOr[String], String]] = js.undefined
     
     var upload: js.UndefOr[Boolean] = js.undefined
   }
@@ -39,7 +40,7 @@ object mod {
     
     extension [Self <: ExpressBusboyOptions](x: Self) {
       
-      inline def setAllowedPath(value: String | RegExp | (js.Function1[/* url */ String, Boolean])): Self = StObject.set(x, "allowedPath", value.asInstanceOf[js.Any])
+      inline def setAllowedPath(value: String | js.RegExp | (js.Function1[/* url */ String, Boolean])): Self = StObject.set(x, "allowedPath", value.asInstanceOf[js.Any])
       
       inline def setAllowedPathFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "allowedPath", js.Any.fromFunction1(value))
       
@@ -49,7 +50,7 @@ object mod {
       
       inline def setMimeTypeLimitUndefined: Self = StObject.set(x, "mimeTypeLimit", js.undefined)
       
-      inline def setMimeTypeLimitVarargs(value: String*): Self = StObject.set(x, "mimeTypeLimit", js.Array(value :_*))
+      inline def setMimeTypeLimitVarargs(value: String*): Self = StObject.set(x, "mimeTypeLimit", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -58,6 +59,10 @@ object mod {
       inline def setRestrictMultiple(value: Boolean): Self = StObject.set(x, "restrictMultiple", value.asInstanceOf[js.Any])
       
       inline def setRestrictMultipleUndefined: Self = StObject.set(x, "restrictMultiple", js.undefined)
+      
+      inline def setStrip(value: (/* value */ String, /* type */ js.UndefOr[String]) => String): Self = StObject.set(x, "strip", js.Any.fromFunction2(value))
+      
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
       inline def setUpload(value: Boolean): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
       

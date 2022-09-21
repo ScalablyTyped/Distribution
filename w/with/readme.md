@@ -10,10 +10,10 @@ Compile time `with` for strict mode JavaScript
 | ------------------ | :-------------: |
 | Full name          | with |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 38 |
-| # downloads        | 50690368 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6179822.666666667 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/pugjs/with#readme)

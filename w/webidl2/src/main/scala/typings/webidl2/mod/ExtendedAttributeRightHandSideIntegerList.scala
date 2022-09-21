@@ -27,6 +27,6 @@ object ExtendedAttributeRightHandSideIntegerList {
     
     inline def setValue(value: js.Array[ExtendedAttributeRightHandSideInteger]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: ExtendedAttributeRightHandSideInteger*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ExtendedAttributeRightHandSideInteger*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

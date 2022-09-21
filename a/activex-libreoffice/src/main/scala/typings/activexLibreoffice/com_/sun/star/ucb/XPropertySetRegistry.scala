@@ -35,7 +35,7 @@ object XPropertySetRegistry {
   inline def apply(
     acquire: () => Unit,
     openPropertySet: (String, Boolean) => XPersistentPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertySet: String => Unit
   ): XPropertySetRegistry = {

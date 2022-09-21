@@ -13,7 +13,7 @@ trait KnockoutComputedDefine[T] extends StObject {
   
   var disposeWhenNodeIsRemoved: js.UndefOr[Node] = js.undefined
   
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   var pure: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +42,7 @@ object KnockoutComputedDefine {
     
     inline def setDisposeWhenUndefined: Self = StObject.set(x, "disposeWhen", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

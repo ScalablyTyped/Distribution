@@ -19,7 +19,7 @@ trait Table extends StObject {
   
   def FindRow(Filter: String): Row = js.native
   
-  def GetArray(MaxRows: Double): js.Any = js.native
+  def GetArray(MaxRows: Double): Any = js.native
   
   def GetNextRow(): Row = js.native
   
@@ -30,12 +30,12 @@ trait Table extends StObject {
   /* private */ @JSName("Outlook.Table_typekey")
   var OutlookDotTable_typekey: Table = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Restrict(Filter: String): Table = js.native
   
   val Session: NameSpace = js.native
   
   def Sort(SortProperty: String): Unit = js.native
-  def Sort(SortProperty: String, Descending: js.Any): Unit = js.native
+  def Sort(SortProperty: String, Descending: Any): Unit = js.native
 }

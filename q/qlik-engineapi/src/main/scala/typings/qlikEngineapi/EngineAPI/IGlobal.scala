@@ -98,8 +98,8 @@ trait IGlobal
     * >> This parameter is optional.
     * >> The default value is Main.
     */
-  def createApp(qAppName: String): js.Promise[js.Any] = js.native
-  def createApp(qAppName: String, qLocalizedScriptMainSection: String): js.Promise[js.Any] = js.native
+  def createApp(qAppName: String): js.Promise[Any] = js.native
+  def createApp(qAppName: String, qLocalizedScriptMainSection: String): js.Promise[Any] = js.native
   
   // ?Result
   /**
@@ -384,7 +384,7 @@ trait IGlobal
     * The apps are located in C:\Users\<user name>\Documents\Qlik\Sense\Apps.
     * @returns A Promise Array of DocListEntry
     */
-  def getDocList(): js.Promise[IDocListEntry] = js.native
+  def getDocList(): js.Promise[js.Array[IDocListEntry]] = js.native
   
   /**
     * Returns the files and folders located at a specified path.

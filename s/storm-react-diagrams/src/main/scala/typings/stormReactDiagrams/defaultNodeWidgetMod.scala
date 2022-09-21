@@ -13,10 +13,10 @@ object defaultNodeWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultNodeWidget", "DefaultNodeWidget")
   @js.native
-  class DefaultNodeWidget protected () extends BaseWidget[DefaultNodeProps, DefaultNodeState] {
+  open class DefaultNodeWidget protected () extends BaseWidget[DefaultNodeProps, DefaultNodeState] {
     def this(props: DefaultNodeProps) = this()
     
-    def generatePort(port: js.Any): Element = js.native
+    def generatePort(port: Any): Element = js.native
   }
   
   trait DefaultNodeProps

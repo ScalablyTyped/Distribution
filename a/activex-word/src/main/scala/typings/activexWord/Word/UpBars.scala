@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpBars extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Border: ChartBorder
   
   val Creator: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Fill: ChartFillFormat
   
@@ -22,9 +22,9 @@ trait UpBars extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Select(): js.Any
+  def Select(): Any
   
   /* private */ @JSName("Word.UpBars_typekey")
   var WordDotUpBars_typekey: UpBars
@@ -32,16 +32,16 @@ trait UpBars extends StObject {
 object UpBars {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Border: ChartBorder,
     Creator: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Fill: ChartFillFormat,
     Format: ChartFormat,
     Interior: Interior,
     Name: String,
-    Parent: js.Any,
-    Select: () => js.Any,
+    Parent: Any,
+    Select: () => Any,
     WordDotUpBars_typekey: UpBars
   ): UpBars = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Fill = Fill.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
@@ -51,13 +51,13 @@ object UpBars {
   
   extension [Self <: UpBars](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
@@ -67,9 +67,9 @@ object UpBars {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setWordDotUpBars_typekey(value: UpBars): Self = StObject.set(x, "Word.UpBars_typekey", value.asInstanceOf[js.Any])
   }

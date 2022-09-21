@@ -19,7 +19,7 @@ trait CreateModelVersionResult extends StObject {
   /**
     * The model version number of the model version created.
     */
-  var modelVersionNumber: js.UndefOr[nonEmptyString] = js.undefined
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.undefined
   
   /**
     * The model version status. 
@@ -43,7 +43,7 @@ object CreateModelVersionResult {
     
     inline def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
-    inline def setModelVersionNumber(value: nonEmptyString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
+    inline def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
     inline def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
     

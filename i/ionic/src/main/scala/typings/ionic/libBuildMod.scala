@@ -35,7 +35,7 @@ object libBuildMod {
   abstract class BuildCLI[T /* <: js.Object */] protected () extends StObject {
     def this(e: BuildRunnerDeps) = this()
     
-    /* private */ var _resolvedProgram: js.Any = js.native
+    /* private */ var _resolvedProgram: Any = js.native
     
     def build(options: T): js.Promise[Unit] = js.native
     
@@ -92,7 +92,7 @@ object libBuildMod {
   
   @JSImport("ionic/lib/build", "BuildRunner")
   @js.native
-  abstract class BuildRunner[T /* <: BuildOptions[js.Any] */] ()
+  abstract class BuildRunner[T /* <: BuildOptions[Any] */] ()
     extends StObject
        with Runner[T, Unit] {
     
@@ -124,11 +124,11 @@ object libBuildMod {
   
   @JSImport("ionic/lib/build", "NpmBuildCLI")
   @js.native
-  class NpmBuildCLI () extends PkgManagerBuildCLI
+  open class NpmBuildCLI () extends PkgManagerBuildCLI
   
   @JSImport("ionic/lib/build", "YarnBuildCLI")
   @js.native
-  class YarnBuildCLI () extends PkgManagerBuildCLI
+  open class YarnBuildCLI () extends PkgManagerBuildCLI
   
   trait BuildRunnerDeps extends StObject {
     

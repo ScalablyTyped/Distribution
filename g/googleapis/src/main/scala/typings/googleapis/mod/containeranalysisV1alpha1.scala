@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object containeranalysisV1alpha1 {
   
-  /**
-    * Container Analysis API
-    *
-    * An implementation of the Grafeas API, which stores, and enables querying
-    * and retrieval of critical metadata about all of your software artifacts.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const containeranalysis = google.containeranalysis('v1alpha1');
-    *
-    * @namespace containeranalysis
-    * @type {Function}
-    * @version v1alpha1
-    * @variation v1alpha1
-    * @param {object=} options Options for Containeranalysis
-    */
   @JSImport("googleapis", "containeranalysis_v1alpha1.Containeranalysis")
   @js.native
-  class Containeranalysis protected ()
+  open class Containeranalysis protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.Containeranalysis {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,63 +19,63 @@ object containeranalysisV1alpha1 {
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects$Notes")
   @js.native
-  class ResourceProjectsNotes protected ()
+  open class ResourceProjectsNotes protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjectsNotes {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects$Notes$Occurrences")
   @js.native
-  class ResourceProjectsNotesOccurrences protected ()
+  open class ResourceProjectsNotesOccurrences protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjectsNotesOccurrences {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects$Occurrences")
   @js.native
-  class ResourceProjectsOccurrences protected ()
+  open class ResourceProjectsOccurrences protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjectsOccurrences {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects$Operations")
   @js.native
-  class ResourceProjectsOperations protected ()
+  open class ResourceProjectsOperations protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjectsOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Projects$Scanconfigs")
   @js.native
-  class ResourceProjectsScanconfigs protected ()
+  open class ResourceProjectsScanconfigs protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProjectsScanconfigs {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Providers")
   @js.native
-  class ResourceProviders protected ()
+  open class ResourceProviders protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProviders {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Providers$Notes")
   @js.native
-  class ResourceProvidersNotes protected ()
+  open class ResourceProvidersNotes protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProvidersNotes {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "containeranalysis_v1alpha1.Resource$Providers$Notes$Occurrences")
   @js.native
-  class ResourceProvidersNotesOccurrences protected ()
+  open class ResourceProvidersNotesOccurrences protected ()
     extends typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.ResourceProvidersNotesOccurrences {
     def this(context: APIRequestContext) = this()
   }

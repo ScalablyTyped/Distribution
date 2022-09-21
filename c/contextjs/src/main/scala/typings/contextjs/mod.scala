@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def attach(selector: js.Any, menuObjects: js.Array[MenuObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], menuObjects.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(selector: Any, menuObjects: js.Array[MenuObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], menuObjects.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def destroy(selector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def destroy(selector: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   inline def init(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -109,7 +109,7 @@ object mod {
       
       inline def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
       
-      inline def setSubMenuVarargs(value: MenuObject*): Self = StObject.set(x, "subMenu", js.Array(value :_*))
+      inline def setSubMenuVarargs(value: MenuObject*): Self = StObject.set(x, "subMenu", js.Array(value*))
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

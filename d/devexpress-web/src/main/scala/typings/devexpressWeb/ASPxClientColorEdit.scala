@@ -12,7 +12,7 @@ trait ASPxClientColorEdit
      with ASPxClientDropDownEditBase {
   
   /**
-    * Fires after the selected color has been changed within the color editor via end-user interaction.
+    * Occurs on the client after a user changes the selected color in the color editor.
     */
   var ColorChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]
   
@@ -48,7 +48,7 @@ object ASPxClientColorEdit {
     ColorChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]],
     DropDown: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]],
     Focus: () => Unit,
-    GetButton: Double => js.Any,
+    GetButton: Double => Any,
     GetButtonVisible: Double => Boolean,
     GetCaption: () => String,
     GetCaretPosition: () => Double,
@@ -57,13 +57,13 @@ object ASPxClientColorEdit {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetText: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -90,7 +90,7 @@ object ASPxClientColorEdit {
     SetReadOnly: Boolean => Unit,
     SetSelection: (Double, Double, Boolean) => Unit,
     SetText: String => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     ShowDropDown: () => Unit,

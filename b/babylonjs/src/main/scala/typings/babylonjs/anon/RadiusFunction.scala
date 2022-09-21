@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.BABYLON.Vector3
+import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait RadiusFunction extends StObject {
   
   var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
+  var instance: js.UndefOr[typings.babylonjs.BABYLON.Mesh] = js.undefined
   
   var invertUV: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ object RadiusFunction {
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    inline def setInstance(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: typings.babylonjs.BABYLON.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
@@ -67,7 +67,7 @@ object RadiusFunction {
     
     inline def setPath(value: js.Array[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

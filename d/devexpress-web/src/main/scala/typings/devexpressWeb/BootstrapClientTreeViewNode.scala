@@ -65,7 +65,7 @@ object BootstrapClientTreeViewNode {
     GetChecked: () => Boolean,
     GetEnabled: () => Boolean,
     GetExpanded: () => Boolean,
-    GetHtmlElement: () => js.Any,
+    GetHtmlElement: () => Any,
     GetIconCssClass: () => String,
     GetImageUrl: () => String,
     GetNavigateUrl: () => String,

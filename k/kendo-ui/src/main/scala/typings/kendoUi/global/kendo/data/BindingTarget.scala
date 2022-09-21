@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.BindingTarget")
 @js.native
-class BindingTarget ()
+open class BindingTarget ()
   extends StObject
      with typings.kendoUi.kendo.data.BindingTarget {
   
   /* CompleteClass */
-  var options: js.Any = js.native
+  var options: Any = js.native
   
   /* CompleteClass */
-  var source: js.Any = js.native
+  var source: Any = js.native
   
   /* CompleteClass */
-  var target: js.Any = js.native
+  var target: Any = js.native
 }

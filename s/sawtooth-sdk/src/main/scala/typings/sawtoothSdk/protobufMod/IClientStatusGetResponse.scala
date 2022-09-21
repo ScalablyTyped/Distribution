@@ -38,7 +38,7 @@ object IClientStatusGetResponse {
     
     inline def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
     
-    inline def setPeersVarargs(value: IPeer*): Self = StObject.set(x, "peers", js.Array(value :_*))
+    inline def setPeersVarargs(value: IPeer*): Self = StObject.set(x, "peers", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

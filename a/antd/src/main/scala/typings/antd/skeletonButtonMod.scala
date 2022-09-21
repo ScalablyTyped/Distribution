@@ -7,6 +7,7 @@ import typings.antd.antdStrings.large
 import typings.antd.antdStrings.round
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
+import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,15 +34,17 @@ object skeletonButtonMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
+    var block: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round] = js.undefined
+    var shape: js.UndefOr[circle | square | round | default] = js.undefined
     
     var size: js.UndefOr[large | small | default] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SkeletonButtonProps {
     
@@ -56,6 +59,10 @@ object skeletonButtonMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -64,7 +71,7 @@ object skeletonButtonMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square | round): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: circle | square | round | default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
@@ -72,7 +79,7 @@ object skeletonButtonMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

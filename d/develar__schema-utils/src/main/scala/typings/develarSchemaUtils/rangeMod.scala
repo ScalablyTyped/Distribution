@@ -16,7 +16,7 @@ object rangeMod {
     */
   @JSImport("@develar/schema-utils/declarations/util/Range", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Range
   

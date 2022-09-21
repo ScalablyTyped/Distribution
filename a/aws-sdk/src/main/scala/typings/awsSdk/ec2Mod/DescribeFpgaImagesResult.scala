@@ -29,7 +29,7 @@ object DescribeFpgaImagesResult {
     
     inline def setFpgaImagesUndefined: Self = StObject.set(x, "FpgaImages", js.undefined)
     
-    inline def setFpgaImagesVarargs(value: FpgaImage*): Self = StObject.set(x, "FpgaImages", js.Array(value :_*))
+    inline def setFpgaImagesVarargs(value: FpgaImage*): Self = StObject.set(x, "FpgaImages", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

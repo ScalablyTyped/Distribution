@@ -30,6 +30,6 @@ object DescribeSubscriptionFiltersResponse {
     
     inline def setSubscriptionFiltersUndefined: Self = StObject.set(x, "subscriptionFilters", js.undefined)
     
-    inline def setSubscriptionFiltersVarargs(value: SubscriptionFilter*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
+    inline def setSubscriptionFiltersVarargs(value: SubscriptionFilter*): Self = StObject.set(x, "subscriptionFilters", js.Array(value*))
   }
 }

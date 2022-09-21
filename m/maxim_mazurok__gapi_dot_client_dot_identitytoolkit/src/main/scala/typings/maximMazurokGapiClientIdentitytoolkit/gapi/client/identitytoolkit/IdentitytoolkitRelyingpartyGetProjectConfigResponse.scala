@@ -62,7 +62,7 @@ object IdentitytoolkitRelyingpartyGetProjectConfigResponse {
     
     inline def setAuthorizedDomainsUndefined: Self = StObject.set(x, "authorizedDomains", js.undefined)
     
-    inline def setAuthorizedDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedDomains", js.Array(value :_*))
+    inline def setAuthorizedDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedDomains", js.Array(value*))
     
     inline def setChangeEmailTemplate(value: EmailTemplate): Self = StObject.set(x, "changeEmailTemplate", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object IdentitytoolkitRelyingpartyGetProjectConfigResponse {
     
     inline def setIdpConfigUndefined: Self = StObject.set(x, "idpConfig", js.undefined)
     
-    inline def setIdpConfigVarargs(value: IdpConfig*): Self = StObject.set(x, "idpConfig", js.Array(value :_*))
+    inline def setIdpConfigVarargs(value: IdpConfig*): Self = StObject.set(x, "idpConfig", js.Array(value*))
     
     inline def setLegacyResetPasswordTemplate(value: EmailTemplate): Self = StObject.set(x, "legacyResetPasswordTemplate", value.asInstanceOf[js.Any])
     

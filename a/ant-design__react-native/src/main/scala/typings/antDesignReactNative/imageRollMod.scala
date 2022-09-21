@@ -12,7 +12,7 @@ object imageRollMod {
   
   @JSImport("@ant-design/react-native/lib/image-picker/ImageRoll", JSImport.Default)
   @js.native
-  class default () extends ImageRoll
+  open class default () extends ImageRoll
   /* static members */
   object default {
     
@@ -27,10 +27,9 @@ object imageRollMod {
   }
   
   @js.native
-  trait ImageRoll
-    extends Component[ImageRollProps, js.Any, js.Any] {
+  trait ImageRoll extends Component[ImageRollProps, Any, Any] {
     
-    def onSelected(images: js.Array[js.Any], _underscore: js.Any): Unit = js.native
+    def onSelected(images: js.Array[Any], _underscore: Any): Unit = js.native
   }
   
   trait ImageRollProps

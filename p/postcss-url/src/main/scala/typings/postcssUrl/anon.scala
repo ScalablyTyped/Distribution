@@ -1,6 +1,6 @@
 package typings.postcssUrl
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.postcssUrl.mod.CustomHashFunction
 import typings.postcssUrl.postcssUrlStrings.xxhash32
 import typings.postcssUrl.postcssUrlStrings.xxhash64

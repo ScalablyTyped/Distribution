@@ -14,24 +14,24 @@ trait NativeKeyboard extends StObject {
     */
   def hideMessenger(): Unit = js.native
   def hideMessenger(options: Unit, onSuccess: js.Function0[Unit]): Unit = js.native
-  def hideMessenger(options: Unit, onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-  def hideMessenger(options: Unit, onSuccess: Unit, onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def hideMessenger(options: Unit, onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
+  def hideMessenger(options: Unit, onSuccess: Unit, onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
   def hideMessenger(options: NativeKeyboardHideOptions): Unit = js.native
   def hideMessenger(options: NativeKeyboardHideOptions, onSuccess: js.Function0[Unit]): Unit = js.native
   def hideMessenger(
     options: NativeKeyboardHideOptions,
     onSuccess: js.Function0[Unit],
-    onError: js.Function1[/* err */ js.Any, Unit]
+    onError: js.Function1[/* err */ Any, Unit]
   ): Unit = js.native
-  def hideMessenger(options: NativeKeyboardHideOptions, onSuccess: Unit, onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def hideMessenger(options: NativeKeyboardHideOptions, onSuccess: Unit, onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   /**
     * Hide the keyboard, but not the messenger bar
     */
   def hideMessengerKeyboard(): Unit = js.native
   def hideMessengerKeyboard(onSuccess: js.Function0[Unit]): Unit = js.native
-  def hideMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-  def hideMessengerKeyboard(onSuccess: Unit, onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def hideMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
+  def hideMessengerKeyboard(onSuccess: Unit, onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   /**
     * Show the messenger, the bare minimum which has to be passed to the function is
@@ -44,8 +44,8 @@ trait NativeKeyboard extends StObject {
     */
   def showMessengerKeyboard(): Unit = js.native
   def showMessengerKeyboard(onSuccess: js.Function0[Unit]): Unit = js.native
-  def showMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-  def showMessengerKeyboard(onSuccess: Unit, onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def showMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
+  def showMessengerKeyboard(onSuccess: Unit, onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   /**
     * Manipulate the messenger while it's open. For instance if you want to
@@ -57,11 +57,7 @@ trait NativeKeyboard extends StObject {
   def updateMessenger(
     options: NativeKeyboardUpdateOptions,
     onSuccess: js.Function0[Unit],
-    onError: js.Function1[/* err */ js.Any, Unit]
+    onError: js.Function1[/* err */ Any, Unit]
   ): Unit = js.native
-  def updateMessenger(
-    options: NativeKeyboardUpdateOptions,
-    onSuccess: Unit,
-    onError: js.Function1[/* err */ js.Any, Unit]
-  ): Unit = js.native
+  def updateMessenger(options: NativeKeyboardUpdateOptions, onSuccess: Unit, onError: js.Function1[/* err */ Any, Unit]): Unit = js.native
 }

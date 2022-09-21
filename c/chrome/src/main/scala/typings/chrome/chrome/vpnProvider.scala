@@ -1,7 +1,6 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object vpnProvider {
   
   type VpnConfigRemovalEvent = Event[js.Function1[/* id */ String, Unit]]
   
-  type VpnPacketReceptionEvent = Event[js.Function1[/* data */ ArrayBuffer, Unit]]
+  type VpnPacketReceptionEvent = Event[js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]]
   
   type VpnPlatformMessageEvent = Event[js.Function3[/* id */ String, /* message */ String, /* error */ String, Unit]]
   
@@ -74,21 +73,21 @@ object vpnProvider {
       
       inline def setDnsServer(value: js.Array[String]): Self = StObject.set(x, "dnsServer", value.asInstanceOf[js.Any])
       
-      inline def setDnsServerVarargs(value: String*): Self = StObject.set(x, "dnsServer", js.Array(value :_*))
+      inline def setDnsServerVarargs(value: String*): Self = StObject.set(x, "dnsServer", js.Array(value*))
       
       inline def setDomainSearch(value: js.Array[String]): Self = StObject.set(x, "domainSearch", value.asInstanceOf[js.Any])
       
       inline def setDomainSearchUndefined: Self = StObject.set(x, "domainSearch", js.undefined)
       
-      inline def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value :_*))
+      inline def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value*))
       
       inline def setExclusionList(value: js.Array[String]): Self = StObject.set(x, "exclusionList", value.asInstanceOf[js.Any])
       
-      inline def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value :_*))
+      inline def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value*))
       
       inline def setInclusionList(value: js.Array[String]): Self = StObject.set(x, "inclusionList", value.asInstanceOf[js.Any])
       
-      inline def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value :_*))
+      inline def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value*))
       
       inline def setMtu(value: String): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
       

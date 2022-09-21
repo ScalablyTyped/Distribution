@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.ButtonElement")
 @js.native
-class ButtonElement protected () extends InputElement {
+open class ButtonElement protected () extends InputElement {
   def this(opts: ButtonOptions) = this()
   
   @JSName("on")

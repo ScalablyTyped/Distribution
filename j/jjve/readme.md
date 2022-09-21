@@ -10,10 +10,10 @@ Render JJV errors
 | ------------------ | :-------------: |
 | Full name          | jjve |
 | Keywords           | jjv, json, schema, jsonschema, errors |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 29960 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 921.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/silas/jjve)

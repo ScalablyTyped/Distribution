@@ -1,57 +1,47 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.ionic.anon.Images
+import typings.ionic.anon.Req
+import typings.ionic.ionicStrings.`ssl-commands`
+import typings.ionic.ionicStrings.custom
+import typings.ionic.ionicStrings.ionic1
+import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type APIResponseData = js.Object | js.Array[js.Object] | java.lang.String
+type APIResponseData = js.Object | js.Array[js.Object] | String
 
-type CommandInstanceInfo = typings.ionicCliFramework.definitionsMod.CommandInstanceInfo[
-typings.ionic.definitionsMod.ICommand, 
-typings.ionic.definitionsMod.INamespace, 
-typings.ionic.definitionsMod.CommandMetadata, 
-typings.ionicCliFramework.definitionsMod.CommandMetadataInput, 
-typings.ionic.definitionsMod.CommandMetadataOption]
+type CommandInstanceInfo = typings.ionicCliFramework.definitionsMod.CommandInstanceInfo[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
 
-type CustomBuildOptions = typings.ionic.definitionsMod.BuildOptions[typings.ionic.ionicStrings.custom]
+type CustomBuildOptions = BuildOptions[custom]
 
-type CustomServeOptions = typings.ionic.definitionsMod.ServeOptions
+type CustomServeOptions = ServeOptions
 
-type FeatureId = typings.ionic.ionicStrings.`ssl-commands`
+type FeatureId = `ssl-commands`
 
-type HookContext = typings.ionic.definitionsMod.BaseHookContext & typings.ionic.definitionsMod.HookInput
+type HookContext = BaseHookContext & HookInput
 
-type HookFn = js.Function1[/* ctx */ typings.ionic.definitionsMod.HookContext, js.Promise[scala.Unit]]
+type HookFn = js.Function1[/* ctx */ HookContext, js.Promise[Unit]]
 
-type HydratedCommandMetadata = typings.ionic.definitionsMod.CommandMetadata & (typings.ionicCliFramework.definitionsMod.HydratedCommandMetadata[
-typings.ionic.definitionsMod.ICommand, 
-typings.ionic.definitionsMod.INamespace, 
-typings.ionic.definitionsMod.CommandMetadata, 
-typings.ionicCliFramework.definitionsMod.CommandMetadataInput, 
-typings.ionic.definitionsMod.CommandMetadataOption])
+type HydratedCommandMetadata = CommandMetadata & (typings.ionicCliFramework.definitionsMod.HydratedCommandMetadata[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption])
 
-type Ionic1BuildOptions = typings.ionic.definitionsMod.BuildOptions[typings.ionic.ionicStrings.ionic1]
+type Ionic1BuildOptions = BuildOptions[ionic1]
 
-type LogFn = js.Function1[/* msg */ java.lang.String, scala.Unit]
+type LogFn = js.Function1[/* msg */ String, Unit]
 
-type NamespaceLocateResult = typings.ionicCliFramework.definitionsMod.NamespaceLocateResult[
-typings.ionic.definitionsMod.ICommand, 
-typings.ionic.definitionsMod.INamespace, 
-typings.ionic.definitionsMod.CommandMetadata, 
-typings.ionicCliFramework.definitionsMod.CommandMetadataInput, 
-typings.ionic.definitionsMod.CommandMetadataOption]
+type NamespaceLocateResult = typings.ionicCliFramework.definitionsMod.NamespaceLocateResult[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
 
-type PackageVersions = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type PackageVersions = StringDictionary[String]
 
-type PaginatorGuard[T /* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */] = js.Function1[
-/* res */ typings.ionic.definitionsMod.APIResponseSuccess, 
-/* is T */ scala.Boolean]
+type PaginatorGuard[T /* <: Response[js.Array[js.Object]] */] = js.Function1[/* res */ APIResponseSuccess, /* is T */ Boolean]
 
-type PaginatorRequestGenerator = js.Function0[js.Promise[typings.ionic.anon.Req]]
+type PaginatorRequestGenerator = js.Function0[js.Promise[Req]]
 
-type ResourcesConfig = org.scalablytyped.runtime.StringDictionary[typings.ionic.definitionsMod.ResourcesPlatform]
+type ResourcesConfig = StringDictionary[ResourcesPlatform]
 
-type ResourcesPlatform = org.scalablytyped.runtime.StringDictionary[typings.ionic.anon.Images]
+type ResourcesPlatform = StringDictionary[Images]
 
 type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest

@@ -41,6 +41,6 @@ object AnimationStyleMetadata {
       value: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
     ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

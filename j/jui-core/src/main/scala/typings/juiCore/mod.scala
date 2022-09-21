@@ -2,7 +2,6 @@ package typings.juiCore
 
 import typings.jquery.JQuery
 import typings.juiCore.anon.Mozilla
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("jui-core", "ColorScale")
   @js.native
-  class ColorScale () extends StObject {
+  open class ColorScale () extends StObject {
     
     def domain(color: String, color2: String): this.type = js.native
     
@@ -31,15 +30,15 @@ object mod {
       *
       * @param ui UI instance
       */
-    def add(uiIns: js.Any): Unit = js.native
+    def add(uiIns: Any): Unit = js.native
     
     /**
       * It is possible to create a component dynamically after the ready point
       *
       * @param type UI type
       */
-    def create(`type`: String, selector: js.Any): js.Any = js.native
-    def create(`type`: String, selector: js.Any, options: js.Object): js.Any = js.native
+    def create(`type`: String, selector: Any): Any = js.native
+    def create(`type`: String, selector: Any, options: js.Object): Any = js.native
     
     /**
       * UI 클래스에서 사용될 클래스를 정의하고, 자유롭게 상속할 수 있는 클래스를 정의
@@ -69,42 +68,42 @@ object mod {
       * @param type Event type
       * @param args Event arguments
       */
-    def emit(key: String, `type`: String, args: js.Array[js.Any]): Unit = js.native
+    def emit(key: String, `type`: String, args: js.Array[Any]): Unit = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     /**
       * Gets a component currently created
       *
       * @returns UI instance
       */
-    def get(key: Double): js.Any = js.native
+    def get(key: Double): Any = js.native
     
     /**
       * Gets all components currently created
       *
       * @return UI instances
       */
-    def getAll(): js.Array[js.Any] = js.native
+    def getAll(): js.Array[Any] = js.native
     
     /**
       * define과 defineUI로 정의된 클래스 또는 객체를 가져온다.
       *
       * @param name 가져온 클래스 또는 객체의 이름
       */
-    def include(name: String): js.Any = js.native
+    def include(name: String): Any = js.native
     
     /**
       * define과 defineUI로 정의된 모든 클래스와 객체를 가져온다.
       */
-    def includeAll(): js.Array[js.Any] = js.native
+    def includeAll(): js.Array[Any] = js.native
     
     /**
       * ready 타임에 실행될 callback 정의
       */
     def ready(): Unit = js.native
     def ready(depends: js.Array[String]): Unit = js.native
-    def ready(depends: js.Array[String], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def ready(depends: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def ready(depends: js.Array[String], callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def ready(depends: Unit, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * UI 클래스에서 사용될 클래스를 정의하고, 자유롭게 상속할 수 있는 클래스를 정의
@@ -143,7 +142,7 @@ object mod {
       * @param name Method name
       * @param params Parameters
       */
-    def addValid(name: String, params: js.Array[js.Any]): Unit
+    def addValid(name: String, params: js.Array[Any]): Unit
     
     /**
       * Sets a callback function that is called after a UI method is run
@@ -174,9 +173,9 @@ object mod {
       * @param type Event type
       * @param args Event Arguments
       */
-    def emit(`type`: String, args: js.Function0[Unit]): js.Any
+    def emit(`type`: String, args: js.Function0[Unit]): Any
     
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /**
       * Removes a custom event of an applicable type or callback handler
@@ -192,12 +191,12 @@ object mod {
       */
     def on(`type`: String, callback: js.Function0[Unit]): Unit
     
-    var root: js.UndefOr[js.Any] = js.undefined
+    var root: js.UndefOr[Any] = js.undefined
     
     /**
       * Dynamically defines the options of a UI
       */
-    def setOption(key: String, value: js.Any): Unit
+    def setOption(key: String, value: Any): Unit
     
     /**
       * Dynamically defines the template method of a UI
@@ -207,20 +206,20 @@ object mod {
       */
     def setTpl(name: String, html: String): Unit
     
-    var tpl: js.UndefOr[js.Any] = js.undefined
+    var tpl: js.UndefOr[Any] = js.undefined
   }
   object UICore {
     
     inline def apply(
-      addValid: (String, js.Array[js.Any]) => Unit,
+      addValid: (String, js.Array[Any]) => Unit,
       callAfter: (String, js.Function0[Unit]) => Unit,
       callBefore: (String, js.Function0[Unit]) => Unit,
       callDelay: (String, js.Function0[Unit]) => Unit,
       destroy: () => Unit,
-      emit: (String, js.Function0[Unit]) => js.Any,
+      emit: (String, js.Function0[Unit]) => Any,
       off: String => Unit,
       on: (String, js.Function0[Unit]) => Unit,
-      setOption: (String, js.Any) => Unit,
+      setOption: (String, Any) => Unit,
       setTpl: (String, String) => Unit
     ): UICore = {
       val __obj = js.Dynamic.literal(addValid = js.Any.fromFunction2(addValid), callAfter = js.Any.fromFunction2(callAfter), callBefore = js.Any.fromFunction2(callBefore), callDelay = js.Any.fromFunction2(callDelay), destroy = js.Any.fromFunction0(destroy), emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), setOption = js.Any.fromFunction2(setOption), setTpl = js.Any.fromFunction2(setTpl))
@@ -229,7 +228,7 @@ object mod {
     
     extension [Self <: UICore](x: Self) {
       
-      inline def setAddValid(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addValid", js.Any.fromFunction2(value))
+      inline def setAddValid(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "addValid", js.Any.fromFunction2(value))
       
       inline def setCallAfter(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callAfter", js.Any.fromFunction2(value))
       
@@ -239,9 +238,9 @@ object mod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setEmit(value: (String, js.Function0[Unit]) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Function0[Unit]) => Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -249,15 +248,15 @@ object mod {
       
       inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      inline def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+      inline def setSetOption(value: (String, Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
       
       inline def setSetTpl(value: (String, String) => Unit): Self = StObject.set(x, "setTpl", js.Any.fromFunction2(value))
       
-      inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+      inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
       
       inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     }
@@ -270,21 +269,21 @@ object mod {
     /**
       * Get the child element of the root element
       */
-    def find(selector: js.Any): JQuery[HTMLElement]
+    def find(selector: Any): JQuery[HTMLElement]
   }
   object UIEvent {
     
     inline def apply(
-      addValid: (String, js.Array[js.Any]) => Unit,
+      addValid: (String, js.Array[Any]) => Unit,
       callAfter: (String, js.Function0[Unit]) => Unit,
       callBefore: (String, js.Function0[Unit]) => Unit,
       callDelay: (String, js.Function0[Unit]) => Unit,
       destroy: () => Unit,
-      emit: (String, js.Function0[Unit]) => js.Any,
-      find: js.Any => JQuery[HTMLElement],
+      emit: (String, js.Function0[Unit]) => Any,
+      find: Any => JQuery[HTMLElement],
       off: String => Unit,
       on: (String, js.Function0[Unit]) => Unit,
-      setOption: (String, js.Any) => Unit,
+      setOption: (String, Any) => Unit,
       setTpl: (String, String) => Unit
     ): UIEvent = {
       val __obj = js.Dynamic.literal(addValid = js.Any.fromFunction2(addValid), callAfter = js.Any.fromFunction2(callAfter), callBefore = js.Any.fromFunction2(callBefore), callDelay = js.Any.fromFunction2(callDelay), destroy = js.Any.fromFunction0(destroy), emit = js.Any.fromFunction2(emit), find = js.Any.fromFunction1(find), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), setOption = js.Any.fromFunction2(setOption), setTpl = js.Any.fromFunction2(setTpl))
@@ -293,19 +292,19 @@ object mod {
     
     extension [Self <: UIEvent](x: Self) {
       
-      inline def setFind(value: js.Any => JQuery[HTMLElement]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: Any => JQuery[HTMLElement]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait UtilBase extends StObject {
     
-    def ajax(data: js.Any): Unit = js.native
+    def ajax(data: Any): Unit = js.native
     
     /**
       * Base64 디코딩
       */
-    def atob(input: String): js.Any = js.native
+    def atob(input: String): Any = js.native
     
     /** check browser agent */
     var browser: Mozilla = js.native
@@ -313,18 +312,18 @@ object mod {
     /**
       * Base64 인코딩
       */
-    def btoa(input: js.Any): String = js.native
+    def btoa(input: Any): String = js.native
     
     /**
       * split array by length
       */
-    def chunk(arr: js.Array[js.Any], len: Double): js.Array[js.Any] = js.native
+    def chunk(arr: js.Array[Any], len: Double): js.Array[Any] = js.native
     
     /**
       * implements object clone
       * @param obj 복사할 객체
       */
-    def clone(obj: js.Any): js.Array[js.Any] = js.native
+    def clone(obj: Any): js.Array[Any] = js.native
     
     /**
       *
@@ -342,16 +341,16 @@ object mod {
       */
     def csvToBase64(csv: String): String = js.native
     
-    def csvToData(keys: js.Array[String], csv: String, csvNumber: Double): js.Array[js.Any] = js.native
+    def csvToData(keys: js.Array[String], csv: String, csvNumber: Double): js.Array[Any] = js.native
     
     /**
       * data 를 csv 로 변환한다.
       *
       * @return  변환된 csv 문자열
       */
-    def dataToCsv(keys: js.Array[String], dataList: js.Array[js.Any], dataSize: Double): String = js.native
+    def dataToCsv(keys: js.Array[String], dataList: js.Array[Any], dataSize: Double): String = js.native
     
-    def dataToCsv2(options: js.Any): String = js.native
+    def dataToCsv2(options: Any): String = js.native
     
     /**
       *
@@ -363,13 +362,13 @@ object mod {
       *
       * @param format   date format string
       */
-    def dateFormat(date: Date, format: String): String = js.native
-    def dateFormat(date: Date, format: String, utc: Boolean): String = js.native
+    def dateFormat(date: js.Date, format: String): String = js.native
+    def dateFormat(date: js.Date, format: String, utc: Boolean): String = js.native
     
     /**
       * implements object deep clone
       */
-    def deepClone(obj: js.Any, emit: js.Any): js.Array[js.Any] = js.native
+    def deepClone(obj: Any, emit: Any): js.Array[Any] = js.native
     
     /**
       * Check that it matches the end of a string search string.
@@ -382,12 +381,12 @@ object mod {
     /**
       * implements object extend
       */
-    def extend(origin: js.Any, add: js.Any, skip: Boolean): js.Any = js.native
+    def extend(origin: Any, add: Any, skip: Boolean): Any = js.native
     
     /**
       * file 에서 csv 컨텐츠 로드
       */
-    def fileToCsv(fileText: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def fileToCsv(fileText: String, callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     
     /**
       *
@@ -396,7 +395,7 @@ object mod {
       */
     def getCsvFields(fields: js.Array[String], csvFields: js.Array[String]): js.Array[String] = js.native
     
-    def inArray(target: js.Any, list: js.Array[js.Any]): Double = js.native
+    def inArray(target: Any, list: js.Array[Any]): Double = js.native
     
     /**
       * IndexParser 객체 생성
@@ -409,10 +408,7 @@ object mod {
       * @param ctor base Class
       * @param superCtor super Class
       */
-    def inherit(
-      ctor: js.Function1[/* repeated */ js.Any, js.Any],
-      superCtor: js.Function1[/* repeated */ js.Any, js.Any]
-    ): Unit = js.native
+    def inherit(ctor: js.Function1[/* repeated */ Any, Any], superCtor: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     
     var isTouch: Boolean = js.native
     
@@ -423,7 +419,7 @@ object mod {
       * @return 최적화된 루프 콜백 (index, groupIndex 2가지 파라미터를 받는다.)
       */
     def loop(total: Double): js.Function2[/* index */ Double, /* groupIndex */ Double, Unit] = js.native
-    def loop(total: Double, context: js.Any): js.Function2[/* index */ Double, /* groupIndex */ Double, Unit] = js.native
+    def loop(total: Double, context: Any): js.Function2[/* index */ Double, /* groupIndex */ Double, Unit] = js.native
     
     /**
       * 배열을 사용해서 최적화된 루프로 생성한다.
@@ -432,8 +428,8 @@ object mod {
       * @param data 루프로 생성될 배열
       * @return 최적화된 루프 콜백 (data, index, groupIndex 3가지 파라미터를 받는다.)
       */
-    def loopArray(data: js.Array[js.Any]): js.Function3[/* data */ js.Any, /* index */ Double, /* groupIndex */ Double, Unit] = js.native
-    def loopArray(data: js.Array[js.Any], context: js.Any): js.Function3[/* data */ js.Any, /* index */ Double, /* groupIndex */ Double, Unit] = js.native
+    def loopArray(data: js.Array[Any]): js.Function3[/* data */ Any, /* index */ Double, /* groupIndex */ Double, Unit] = js.native
+    def loopArray(data: js.Array[Any], context: Any): js.Function3[/* data */ Any, /* index */ Double, /* groupIndex */ Double, Unit] = js.native
     
     /**
       * 배열의 키 기반 인덱스를 생성한다.
@@ -442,9 +438,9 @@ object mod {
       *
       * @return 생성된 인덱스
       */
-    def makeIndex(data: js.Array[js.Any], keyField: String): js.Any = js.native
+    def makeIndex(data: js.Array[Any], keyField: String): Any = js.native
     
-    def param(data: js.Any): String = js.native
+    def param(data: Any): String = js.native
     
     /**
       * convert px to integer
@@ -452,25 +448,25 @@ object mod {
     def pxToInt(px: String): Double = js.native
     def pxToInt(px: Double): Double = js.native
     
-    def ready(args: js.Any*): Unit = js.native
+    def ready(args: Any*): Unit = js.native
     
     /**
       * add event in window resize event
       * @param ms delay time
       */
-    def resize(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double): Unit = js.native
+    def resize(callback: js.Function1[/* repeated */ Any, Unit], ms: Double): Unit = js.native
     
     /**
       * caculate callback runtime
       */
-    def runtime(name: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def runtime(name: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     def scrollWidth(): Double = js.native
     
     /**
       * use QuickSort
       */
-    def sort(array: js.Array[js.Any]): js.Function2[/* array */ js.Array[Double], /* isClone */ Boolean, this.type] = js.native
+    def sort(array: js.Array[Any]): js.Function2[/* array */ js.Array[Double], /* isClone */ Boolean, this.type] = js.native
     
     /**
       * Check that it matches the starting string search string.
@@ -491,8 +487,8 @@ object mod {
     /**
       * parsing template string
       */
-    def template(html: String): (js.Function1[/* obj */ js.Any, String]) | String = js.native
-    def template(html: String, obj: js.Any): (js.Function1[/* obj */ js.Any, String]) | String = js.native
+    def template(html: String): (js.Function1[/* obj */ Any, String]) | String = js.native
+    def template(html: String, obj: Any): (js.Function1[/* obj */ Any, String]) | String = js.native
     
     /**
       * implement async loop without blocking ui
@@ -500,7 +496,7 @@ object mod {
       * @param total   loop count
       */
     def timeLoop(total: Double): js.Function1[/* index */ Double, Unit] = js.native
-    def timeLoop(total: Double, context: js.Any): js.Function1[/* index */ Double, Unit] = js.native
+    def timeLoop(total: Double, context: Any): js.Function1[/* index */ Double, Unit] = js.native
     
     def trim(text: String): String = js.native
     
@@ -509,9 +505,9 @@ object mod {
       * @param t  type string
       * @param v value object
       */
-    def typeCheck(typeName: String, value: js.Any): Boolean = js.native
+    def typeCheck(typeName: String, value: Any): Boolean = js.native
     
-    def typeCheckObj(uiObj: js.Any, list: js.Any): Unit = js.native
+    def typeCheckObj(uiObj: Any, list: Any): Unit = js.native
   }
   
   trait UtilBase64 extends StObject {
@@ -546,7 +542,7 @@ object mod {
       * @param S  Saturation number  (min : 0, max : 1)
       * @param V  Value number         (min : 0, max : 1 )
       */
-    def HSVtoRGB(H: Double, S: Double, V: Double): js.Any
+    def HSVtoRGB(H: Double, S: Double, V: Double): Any
     
     /**
       * convert rgb to hsv
@@ -558,7 +554,7 @@ object mod {
       * @param B  blue color value
       * @return  hsv color code
       */
-    def RGBtoHSV(R: Double, G: Double, B: Double): js.Any
+    def RGBtoHSV(R: Double, G: Double, B: Double): Any
     
     /**
       * rgb 컬러 어두운 농도로 변환
@@ -583,7 +579,7 @@ object mod {
       * @param obj  obj has r, g, b and a attributes
       * @param type  format string type
       */
-    def format(obj: js.Any, `type`: String): String
+    def format(obj: Any, `type`: String): String
     
     /**
       * rgb 컬러 밝은 농도로 변환
@@ -613,7 +609,7 @@ object mod {
       * @param str color string
       * @returns  rgb object
       */
-    def rgb(str: String): js.Any
+    def rgb(str: String): Any
     
     /**
       * get color scale
@@ -633,13 +629,13 @@ object mod {
   object UtilColor {
     
     inline def apply(
-      HSVtoRGB: (Double, Double, Double) => js.Any,
-      RGBtoHSV: (Double, Double, Double) => js.Any,
+      HSVtoRGB: (Double, Double, Double) => Any,
+      RGBtoHSV: (Double, Double, Double) => Any,
       darken: (String, Double) => String,
-      format: (js.Any, String) => String,
+      format: (Any, String) => String,
       lighten: (String, Double) => String,
       map: (js.Array[String], Double) => js.Array[String],
-      rgb: String => js.Any,
+      rgb: String => Any,
       scale: () => ColorScale
     ): UtilColor = {
       val __obj = js.Dynamic.literal(HSVtoRGB = js.Any.fromFunction3(HSVtoRGB), RGBtoHSV = js.Any.fromFunction3(RGBtoHSV), darken = js.Any.fromFunction2(darken), format = js.Any.fromFunction2(format), lighten = js.Any.fromFunction2(lighten), map = js.Any.fromFunction2(map), rgb = js.Any.fromFunction1(rgb), scale = js.Any.fromFunction0(scale))
@@ -650,17 +646,17 @@ object mod {
       
       inline def setDarken(value: (String, Double) => String): Self = StObject.set(x, "darken", js.Any.fromFunction2(value))
       
-      inline def setFormat(value: (js.Any, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (Any, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      inline def setHSVtoRGB(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "HSVtoRGB", js.Any.fromFunction3(value))
+      inline def setHSVtoRGB(value: (Double, Double, Double) => Any): Self = StObject.set(x, "HSVtoRGB", js.Any.fromFunction3(value))
       
       inline def setLighten(value: (String, Double) => String): Self = StObject.set(x, "lighten", js.Any.fromFunction2(value))
       
       inline def setMap(value: (js.Array[String], Double) => js.Array[String]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      inline def setRGBtoHSV(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "RGBtoHSV", js.Any.fromFunction3(value))
+      inline def setRGBtoHSV(value: (Double, Double, Double) => Any): Self = StObject.set(x, "RGBtoHSV", js.Any.fromFunction3(value))
       
-      inline def setRgb(value: String => js.Any): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+      inline def setRgb(value: String => Any): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
       
       inline def setScale(value: () => ColorScale): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
     }
@@ -729,7 +725,7 @@ object mod {
     // 중간값 round 해서 계산하기
     def interpolateRound(a: Double, b: Double): js.Function0[Unit]
     
-    def inverseMatrix3d(a: js.Array[js.Any]): js.Array[js.Any]
+    def inverseMatrix3d(a: js.Array[Any]): js.Array[Any]
     
     def matrix[T](a: js.Array[T], b: js.Array[T]): js.Array[T]
     
@@ -742,7 +738,7 @@ object mod {
     /**
       * 특정 구간의 값을 자동으로 계산
       */
-    def nice(min: Double, max: Double, ticks: Double, isNice: Boolean): js.Any
+    def nice(min: Double, max: Double, ticks: Double, isNice: Boolean): Any
     
     def plus(a: Double, b: Double): Double
     
@@ -755,7 +751,7 @@ object mod {
     
     def remain(a: Double, b: Double): Double
     
-    def resize(maxWidth: Double, maxHeight: Double, objectWidth: Double, objectHeight: Double): js.Any
+    def resize(maxWidth: Double, maxHeight: Double, objectWidth: Double, objectHeight: Double): Any
     
     /**
       * 2d rotate
@@ -765,7 +761,7 @@ object mod {
       * @return return.y  변환된 y
       *
       */
-    def rotate(x: Double, y: Double, radian: Double): js.Any
+    def rotate(x: Double, y: Double, radian: Double): Any
     
     def round(num: Double, fixed: Double): Double
   }
@@ -777,17 +773,17 @@ object mod {
       div: (Double, Double) => Double,
       interpolateNumber: (Double, Double) => js.Function0[Unit],
       interpolateRound: (Double, Double) => js.Function0[Unit],
-      inverseMatrix3d: js.Array[js.Any] => js.Array[js.Any],
-      matrix: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
-      matrix3d: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
+      inverseMatrix3d: js.Array[Any] => js.Array[Any],
+      matrix: (js.Array[Any], js.Array[Any]) => js.Array[Any],
+      matrix3d: (js.Array[Any], js.Array[Any]) => js.Array[Any],
       minus: (Double, Double) => Double,
       multi: (Double, Double) => Double,
-      nice: (Double, Double, Double, Boolean) => js.Any,
+      nice: (Double, Double, Double, Boolean) => Any,
       plus: (Double, Double) => Double,
       radian: Double => Double,
       remain: (Double, Double) => Double,
-      resize: (Double, Double, Double, Double) => js.Any,
-      rotate: (Double, Double, Double) => js.Any,
+      resize: (Double, Double, Double, Double) => Any,
+      rotate: (Double, Double, Double) => Any,
       round: (Double, Double) => Double
     ): UtilMath = {
       val __obj = js.Dynamic.literal(angle = js.Any.fromFunction4(angle), degree = js.Any.fromFunction1(degree), div = js.Any.fromFunction2(div), interpolateNumber = js.Any.fromFunction2(interpolateNumber), interpolateRound = js.Any.fromFunction2(interpolateRound), inverseMatrix3d = js.Any.fromFunction1(inverseMatrix3d), matrix = js.Any.fromFunction2(matrix), matrix3d = js.Any.fromFunction2(matrix3d), minus = js.Any.fromFunction2(minus), multi = js.Any.fromFunction2(multi), nice = js.Any.fromFunction4(nice), plus = js.Any.fromFunction2(plus), radian = js.Any.fromFunction1(radian), remain = js.Any.fromFunction2(remain), resize = js.Any.fromFunction4(resize), rotate = js.Any.fromFunction3(rotate), round = js.Any.fromFunction2(round))
@@ -806,17 +802,17 @@ object mod {
       
       inline def setInterpolateRound(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "interpolateRound", js.Any.fromFunction2(value))
       
-      inline def setInverseMatrix3d(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "inverseMatrix3d", js.Any.fromFunction1(value))
+      inline def setInverseMatrix3d(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "inverseMatrix3d", js.Any.fromFunction1(value))
       
-      inline def setMatrix(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix", js.Any.fromFunction2(value))
+      inline def setMatrix(value: (js.Array[Any], js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "matrix", js.Any.fromFunction2(value))
       
-      inline def setMatrix3d(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix3d", js.Any.fromFunction2(value))
+      inline def setMatrix3d(value: (js.Array[Any], js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "matrix3d", js.Any.fromFunction2(value))
       
       inline def setMinus(value: (Double, Double) => Double): Self = StObject.set(x, "minus", js.Any.fromFunction2(value))
       
       inline def setMulti(value: (Double, Double) => Double): Self = StObject.set(x, "multi", js.Any.fromFunction2(value))
       
-      inline def setNice(value: (Double, Double, Double, Boolean) => js.Any): Self = StObject.set(x, "nice", js.Any.fromFunction4(value))
+      inline def setNice(value: (Double, Double, Double, Boolean) => Any): Self = StObject.set(x, "nice", js.Any.fromFunction4(value))
       
       inline def setPlus(value: (Double, Double) => Double): Self = StObject.set(x, "plus", js.Any.fromFunction2(value))
       
@@ -824,9 +820,9 @@ object mod {
       
       inline def setRemain(value: (Double, Double) => Double): Self = StObject.set(x, "remain", js.Any.fromFunction2(value))
       
-      inline def setResize(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction4(value))
+      inline def setResize(value: (Double, Double, Double, Double) => Any): Self = StObject.set(x, "resize", js.Any.fromFunction4(value))
       
-      inline def setRotate(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
+      inline def setRotate(value: (Double, Double, Double) => Any): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
       
       inline def setRound(value: (Double, Double) => Double): Self = StObject.set(x, "round", js.Any.fromFunction2(value))
     }
@@ -838,11 +834,11 @@ object mod {
     
     def apply(x: Double): Double = js.native
     
-    def domain(values: js.Array[js.Any]): UtilScaleOrdinal = js.native
+    def domain(values: js.Array[Any]): UtilScaleOrdinal = js.native
     
     def invert(x: Double): Double = js.native
     
-    def range(values: js.Array[js.Any]): UtilScaleOrdinal = js.native
+    def range(values: js.Array[Any]): UtilScaleOrdinal = js.native
     
     def rangeBands(interval: Double): js.Function0[Unit] = js.native
     def rangeBands(interval: Double, padding: Double): js.Function0[Unit] = js.native

@@ -49,10 +49,10 @@ object INxDataPage {
     
     inline def setQMatrix(value: js.Array[INxCellRows]): Self = StObject.set(x, "qMatrix", value.asInstanceOf[js.Any])
     
-    inline def setQMatrixVarargs(value: INxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value :_*))
+    inline def setQMatrixVarargs(value: INxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value*))
     
     inline def setQTails(value: js.Array[INxGroupTail]): Self = StObject.set(x, "qTails", value.asInstanceOf[js.Any])
     
-    inline def setQTailsVarargs(value: INxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value :_*))
+    inline def setQTailsVarargs(value: INxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value*))
   }
 }

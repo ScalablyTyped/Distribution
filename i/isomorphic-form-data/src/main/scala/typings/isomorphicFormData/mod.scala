@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("isomorphic-form-data", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.formData.mod.^ {
     def this(options: Options) = this()
   }

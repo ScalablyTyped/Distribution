@@ -11,7 +11,7 @@ trait XAxisProps[T]
   
   var contentInset: js.UndefOr[Left] = js.undefined
   
-  var xAccessor: js.UndefOr[AccessorFunction[T, js.Any]] = js.undefined
+  var xAccessor: js.UndefOr[AccessorFunction[T, Any]] = js.undefined
 }
 object XAxisProps {
   
@@ -26,7 +26,7 @@ object XAxisProps {
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
-    inline def setXAccessor(value: /* props */ AccessorFunctionProps[T] => js.Any): Self = StObject.set(x, "xAccessor", js.Any.fromFunction1(value))
+    inline def setXAccessor(value: /* props */ AccessorFunctionProps[T] => Any): Self = StObject.set(x, "xAccessor", js.Any.fromFunction1(value))
     
     inline def setXAccessorUndefined: Self = StObject.set(x, "xAccessor", js.undefined)
   }

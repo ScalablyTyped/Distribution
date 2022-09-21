@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Bernoulli")
 @js.native
-class Bernoulli ()
+open class Bernoulli ()
   extends typings.ranjs.mod.dist.Bernoulli {
   def this(p: Double) = this()
 }

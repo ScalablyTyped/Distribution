@@ -8,5 +8,5 @@ object describeIdentityPoolMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/DescribeIdentityPool", "DescribeIdentityPool")
   @js.native
-  val DescribeIdentityPool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DescribeIdentityPool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

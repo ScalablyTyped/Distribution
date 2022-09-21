@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Optional configuration object.
   * @api stable
   */
-class Polyline ()
+open class Polyline ()
   extends typings.openlayers.mod.format.Polyline {
   def this(opt_options: PolylineOptions) = this()
 }

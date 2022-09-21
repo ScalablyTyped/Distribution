@@ -1,8 +1,8 @@
 package typings.materialToolbar
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialToolbar.foundationMod.MDCToolbarFoundation
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,9 +12,9 @@ object componentMod {
   
   @JSImport("@material/toolbar/component", "MDCToolbar")
   @js.native
-  class MDCToolbar protected () extends MDCComponent[MDCToolbarFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCToolbarFoundation, args: js.Any*) = this()
+  open class MDCToolbar protected () extends MDCComponent[MDCToolbarFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCToolbarFoundation, args: Any*) = this()
     
     var fixedAdjustElement: HTMLElement | Null = js.native
     
@@ -29,6 +29,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCToolbar]
+    inline def attachTo(root: typings.std.Element): MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCToolbar]
   }
 }

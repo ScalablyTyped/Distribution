@@ -10,10 +10,10 @@ autoprefixer-core was depreacted, use autoprefixer
 | ------------------ | :-------------: |
 | Full name          | autoprefixer-core |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 109 |
-| # downloads        | 3715861 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 282946.6666666667 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/ai/autoprefixer-core#readme)

@@ -9,11 +9,10 @@ object carouselDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/carousel/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicCarouselExample
+  open class default () extends BasicCarouselExample
   
   @js.native
-  trait BasicCarouselExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicCarouselExample extends Component[Any, Any, Any] {
     
     def onHorizontalSelectedIndexChange(index: Double): Unit = js.native
     

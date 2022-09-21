@@ -9,9 +9,9 @@ trait UseRowStateOptions[D /* <: js.Object */] extends StObject {
   
   var autoResetRowState: js.UndefOr[Boolean] = js.undefined
   
-  var getResetRowStateDeps: js.UndefOr[js.Function1[/* instance */ TableInstance[D], js.Array[js.Any]]] = js.undefined
+  var getResetRowStateDeps: js.UndefOr[js.Function1[/* instance */ TableInstance[D], js.Array[Any]]] = js.undefined
   
-  var initialRowStateAccessor: js.UndefOr[js.Function1[/* row */ Row[D], UseRowStateLocalState[D, js.Any]]] = js.undefined
+  var initialRowStateAccessor: js.UndefOr[js.Function1[/* row */ Row[D], UseRowStateLocalState[D, Any]]] = js.undefined
 }
 object UseRowStateOptions {
   
@@ -26,11 +26,11 @@ object UseRowStateOptions {
     
     inline def setAutoResetRowStateUndefined: Self = StObject.set(x, "autoResetRowState", js.undefined)
     
-    inline def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[js.Any]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
+    inline def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[Any]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
     
     inline def setGetResetRowStateDepsUndefined: Self = StObject.set(x, "getResetRowStateDeps", js.undefined)
     
-    inline def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, js.Any]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
+    inline def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, Any]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
     
     inline def setInitialRowStateAccessorUndefined: Self = StObject.set(x, "initialRowStateAccessor", js.undefined)
   }

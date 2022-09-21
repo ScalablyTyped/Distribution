@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@scure/bip32" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@scure/bip32" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

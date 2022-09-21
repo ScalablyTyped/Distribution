@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object factchecktoolsV1alpha1 {
   
-  /**
-    * Fact Check Tools API
-    *
-    *
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const factchecktools = google.factchecktools('v1alpha1');
-    *
-    * @namespace factchecktools
-    * @type {Function}
-    * @version v1alpha1
-    * @variation v1alpha1
-    * @param {object=} options Options for Factchecktools
-    */
   @JSImport("googleapis", "factchecktools_v1alpha1.Factchecktools")
   @js.native
-  class Factchecktools protected ()
+  open class Factchecktools protected ()
     extends typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1.Factchecktools {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,14 +19,14 @@ object factchecktoolsV1alpha1 {
   
   @JSImport("googleapis", "factchecktools_v1alpha1.Resource$Claims")
   @js.native
-  class ResourceClaims protected ()
+  open class ResourceClaims protected ()
     extends typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1.ResourceClaims {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "factchecktools_v1alpha1.Resource$Pages")
   @js.native
-  class ResourcePages protected ()
+  open class ResourcePages protected ()
     extends typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1.ResourcePages {
     def this(context: APIRequestContext) = this()
   }

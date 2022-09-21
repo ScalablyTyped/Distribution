@@ -8,12 +8,31 @@ trait LocationProviderStatus extends StObject {
   
   var backgroundModeEnabled: Boolean
   
+  /**
+    * Whether the GPS provider is available. If `true` the location data will come
+    * from GPS, especially for requests with high accuracy.
+    * @platform android
+    */
   var gpsAvailable: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether location services are enabled. See [Location.hasServicesEnabledAsync](#locationhasservicesenabledasync)
+    * for a more convenient solution to get this value.
+    */
   var locationServicesEnabled: Boolean
   
+  /**
+    * Whether the network provider is available. If `true` the location data will
+    * come from cellular network, especially for requests with low accuracy.
+    * @platform android
+    */
   var networkAvailable: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether the passive provider is available. If `true` the location data will
+    * be determined passively.
+    * @platform android
+    */
   var passiveAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object LocationProviderStatus {

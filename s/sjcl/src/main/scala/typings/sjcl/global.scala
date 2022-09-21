@@ -41,37 +41,37 @@ object global {
     
     @JSGlobal("sjcl.SjclECCPublicKey")
     @js.native
-    class SjclECCPublicKey ()
+    open class SjclECCPublicKey ()
       extends typings.sjcl.mod.SjclECCPublicKey
     
     @JSGlobal("sjcl.SjclECCSecretKey")
     @js.native
-    class SjclECCSecretKey ()
+    open class SjclECCSecretKey ()
       extends typings.sjcl.mod.SjclECCSecretKey
     
     @JSGlobal("sjcl.SjclECDSAPublicKey")
     @js.native
-    class SjclECDSAPublicKey ()
+    open class SjclECDSAPublicKey ()
       extends typings.sjcl.mod.SjclECDSAPublicKey
     
     @JSGlobal("sjcl.SjclECDSASecretKey")
     @js.native
-    class SjclECDSASecretKey ()
+    open class SjclECDSASecretKey ()
       extends typings.sjcl.mod.SjclECDSASecretKey
     
     @JSGlobal("sjcl.SjclElGamalPublicKey")
     @js.native
-    class SjclElGamalPublicKey ()
+    open class SjclElGamalPublicKey ()
       extends typings.sjcl.mod.SjclElGamalPublicKey
     
     @JSGlobal("sjcl.SjclElGamalSecretKey")
     @js.native
-    class SjclElGamalSecretKey ()
+    open class SjclElGamalSecretKey ()
       extends typings.sjcl.mod.SjclElGamalSecretKey
     
     @JSGlobal("sjcl.SjclPRFFamily")
     @js.native
-    class SjclPRFFamily ()
+    open class SjclPRFFamily ()
       extends typings.sjcl.mod.SjclPRFFamily
     
     @JSGlobal("sjcl.arrayBuffer")
@@ -87,7 +87,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("sjcl.bn")
     @js.native
-    class bn ()
+    open class bn ()
       extends StObject
          with BigNumber {
       def this(n: String) = this()
@@ -108,7 +108,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.cipher.aes")
       @js.native
-      class aes protected ()
+      open class aes protected ()
         extends StObject
            with SjclCipher {
         def this(key: js.Array[Double]) = this()
@@ -145,7 +145,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.ecc.curve")
       @js.native
-      class curve protected ()
+      open class curve protected ()
         extends StObject
            with SjclEllipticalCurve {
         def this(Field: BigNumber, r: BigNumber, a: BigNumber, b: BigNumber, x: BigNumber, y: BigNumber) = this()
@@ -157,7 +157,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.ecc.point")
       @js.native
-      class point protected ()
+      open class point protected ()
         extends StObject
            with SjclEllipticalPoint {
         def this(curve: SjclEllipticalCurve) = this()
@@ -190,7 +190,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.ecc.pointJac")
       @js.native
-      class pointJac protected ()
+      open class pointJac protected ()
         extends StObject
            with SjclPointJacobian {
         def this(curve: SjclEllipticalCurve) = this()
@@ -244,14 +244,16 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.exception.bug")
       @js.native
-      class bug protected ()
+      open class bug protected ()
         extends StObject
            with Error {
         def this(message: String) = this()
         
+        /* standard es5 */
         /* CompleteClass */
         var message: String = js.native
         
+        /* standard es5 */
         /* CompleteClass */
         var name: String = js.native
       }
@@ -259,14 +261,16 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.exception.corrupt")
       @js.native
-      class corrupt protected ()
+      open class corrupt protected ()
         extends StObject
            with Error {
         def this(message: String) = this()
         
+        /* standard es5 */
         /* CompleteClass */
         var message: String = js.native
         
+        /* standard es5 */
         /* CompleteClass */
         var name: String = js.native
       }
@@ -274,14 +278,16 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.exception.invalid")
       @js.native
-      class invalid protected ()
+      open class invalid protected ()
         extends StObject
            with Error {
         def this(message: String) = this()
         
+        /* standard es5 */
         /* CompleteClass */
         var message: String = js.native
         
+        /* standard es5 */
         /* CompleteClass */
         var name: String = js.native
       }
@@ -289,14 +295,16 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.exception.notReady")
       @js.native
-      class notReady protected ()
+      open class notReady protected ()
         extends StObject
            with Error {
         def this(message: String) = this()
         
+        /* standard es5 */
         /* CompleteClass */
         var message: String = js.native
         
+        /* standard es5 */
         /* CompleteClass */
         var name: String = js.native
       }
@@ -316,7 +324,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.hash.ripemd160")
       @js.native
-      class ripemd160 ()
+      open class ripemd160 ()
         extends StObject
            with SjclHash {
         def this(hash: SjclHash) = this()
@@ -325,7 +333,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.hash.sha1")
       @js.native
-      class sha1 ()
+      open class sha1 ()
         extends StObject
            with SjclHash {
         def this(hash: SjclHash) = this()
@@ -334,7 +342,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.hash.sha256")
       @js.native
-      class sha256 ()
+      open class sha256 ()
         extends StObject
            with SjclHash {
         def this(hash: SjclHash) = this()
@@ -343,7 +351,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.hash.sha512")
       @js.native
-      class sha512 ()
+      open class sha512 ()
         extends StObject
            with SjclHash {
         def this(hash: SjclHash) = this()
@@ -374,7 +382,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("sjcl.misc.hmac")
       @js.native
-      class hmac protected () extends SjclHMAC {
+      open class hmac protected () extends SjclHMAC {
         def this(key: BitArray_) = this()
         def this(key: BitArray_, Hash: SjclHashStatic) = this()
       }
@@ -393,7 +401,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("sjcl.prng")
     @js.native
-    class prng protected ()
+    open class prng protected ()
       extends StObject
          with SjclRandom {
       def this(defaultParanoia: Double) = this()

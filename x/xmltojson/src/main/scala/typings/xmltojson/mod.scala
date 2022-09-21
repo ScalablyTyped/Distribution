@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def grokType(sValue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("grokType")(sValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def grokType(sValue: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("grokType")(sValue.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def parseString(xmlString: String, opt: Options): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(xmlString.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   

@@ -1,11 +1,13 @@
 package typings.blockingProxy
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.blockingProxy.angularWaitBarrierMod.AngularWaitBarrier
 import typings.blockingProxy.highlightDelayBarrierMod.HighlightDelayBarrier
 import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +20,7 @@ object blockingproxyMod {
   
   @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy")
   @js.native
-  class BlockingProxy protected () extends StObject {
+  open class BlockingProxy protected () extends StObject {
     def this(seleniumAddress: String) = this()
     def this(seleniumAddress: String, highlightDelay: Double) = this()
     
@@ -29,7 +31,7 @@ object blockingproxyMod {
       */
     def enableLogging(logDir: String): Unit = js.native
     
-    def handleProxyCommand(message: js.Any, data: js.Any, response: js.Any): Unit = js.native
+    def handleProxyCommand(message: Any, data: Any, response: Any): Unit = js.native
     
     var highlightBarrier: HighlightDelayBarrier = js.native
     
@@ -37,13 +39,19 @@ object blockingproxyMod {
     
     var logger: WebDriverLogger = js.native
     
-    /* private */ var proxy: js.Any = js.native
+    /* private */ var proxy: Any = js.native
     
     def quit(): js.Promise[js.Object] = js.native
     
-    def requestListener(originalRequest: IncomingMessage, response: ServerResponse): Unit = js.native
+    def requestListener(originalRequest: IncomingMessage, response: ServerResponse[IncomingMessage]): Unit = js.native
     
-    var server: Server = js.native
+    var server: Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
     /**
       * Override the logger instance. Only used for testing.
@@ -53,7 +61,7 @@ object blockingproxyMod {
     /**
       * Change the parameters used by the wait function.
       */
-    def setWaitParams(rootEl: js.Any): Unit = js.native
+    def setWaitParams(rootEl: Any): Unit = js.native
     
     var waitBarrier: AngularWaitBarrier = js.native
   }

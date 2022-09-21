@@ -10,10 +10,10 @@ NodeJS Excel files parser & builder
 | ------------------ | :-------------: |
 | Full name          | node-xlsx |
 | Keywords           | excel, parser, builder, xlsx, xls |
-| # releases         | 8 |
-| # dependents       | 266 |
-| # downloads        | 2327343 |
-| # stars            | 49 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 461709.6666666667 |
+| # stars            | 2473.0 |
 
 ## Links
 - [Homepage](https://github.com/mgcrea/node-xlsx#readme)

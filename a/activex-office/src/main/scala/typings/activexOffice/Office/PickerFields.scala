@@ -9,7 +9,7 @@ trait PickerFields extends StObject {
   
   def apply(Index: Double): PickerField = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

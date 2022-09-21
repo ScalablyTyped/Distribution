@@ -1,6 +1,8 @@
 package typings.carbonComponents.componentsMod
 
+import typings.carbonComponents.anon.PartialCheckboxOptions
 import typings.carbonComponents.checkboxMod.default
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components/globals/js/components", "Checkbox")
 @js.native
-class Checkbox protected () extends default {
-  def this(element: js.Any, options: js.Any) = this()
+open class Checkbox protected () extends default {
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialCheckboxOptions) = this()
 }
 object Checkbox {
   
@@ -20,8 +23,8 @@ object Checkbox {
   /* static member */
   @JSImport("carbon-components/globals/js/components", "Checkbox.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   
   /* static member */
   object stateChangeTypes {

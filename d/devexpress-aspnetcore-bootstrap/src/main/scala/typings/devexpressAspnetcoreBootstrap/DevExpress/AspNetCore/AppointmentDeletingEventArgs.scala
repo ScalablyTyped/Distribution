@@ -21,6 +21,6 @@ object AppointmentDeletingEventArgs {
     
     inline def setAppointmentIds(value: js.Array[js.Object]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
     
-    inline def setAppointmentIdsVarargs(value: js.Object*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
+    inline def setAppointmentIdsVarargs(value: js.Object*): Self = StObject.set(x, "appointmentIds", js.Array(value*))
   }
 }

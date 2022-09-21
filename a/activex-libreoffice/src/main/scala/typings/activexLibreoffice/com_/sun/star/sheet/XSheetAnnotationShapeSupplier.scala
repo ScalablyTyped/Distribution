@@ -28,7 +28,7 @@ object XSheetAnnotationShapeSupplier {
     AnnotationShape: XShape,
     acquire: () => Unit,
     getAnnotationShape: () => XShape,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetAnnotationShapeSupplier = {
     val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAnnotationShape = js.Any.fromFunction0(getAnnotationShape), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

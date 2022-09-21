@@ -24,7 +24,7 @@ trait DeviceSettings extends StObject {
   /** Whether installing apps from unknown sources is enabled. */
   var unknownSourcesEnabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether Verify Apps (Google Play Protect (https://support.google.com/googleplay/answer/2812853)) is enabled on the device. */
+  /** Whether Google Play Protect verification (https://support.google.com/accounts/answer/2812853) is enforced on the device. */
   var verifyAppsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceSettings {

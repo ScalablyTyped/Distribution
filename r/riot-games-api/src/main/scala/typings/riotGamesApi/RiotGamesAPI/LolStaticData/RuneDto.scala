@@ -95,7 +95,7 @@ object RuneDto {
     
     inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
@@ -109,11 +109,11 @@ object RuneDto {
     
     inline def setInto(value: js.Array[String]): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
     
-    inline def setIntoVarargs(value: String*): Self = StObject.set(x, "into", js.Array(value :_*))
+    inline def setIntoVarargs(value: String*): Self = StObject.set(x, "into", js.Array(value*))
     
     inline def setMaps(value: js.Array[StringDictionary[Boolean]]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     
-    inline def setMapsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "maps", js.Array(value :_*))
+    inline def setMapsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "maps", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -133,6 +133,6 @@ object RuneDto {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

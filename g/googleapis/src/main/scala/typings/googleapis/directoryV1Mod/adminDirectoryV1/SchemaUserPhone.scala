@@ -4,34 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for a phone entry.
-  */
 trait SchemaUserPhone extends StObject {
   
   /**
     * Custom Type.
     */
-  var customType: js.UndefOr[String] = js.undefined
+  var customType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If this is user&#39;s primary phone or not.
+    * If this is user's primary phone or not.
     */
-  var primary: js.UndefOr[Boolean] = js.undefined
+  var primary: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Each entry can have a type which indicates standard types of that entry.
-    * For example phone could be of home_fax, work, mobile etc. In addition to
-    * the standard type, an entry can have a custom type and can give it any
-    * name. Such types should have the CUSTOM value as type and also have a
-    * customType value.
+    * Each entry can have a type which indicates standard types of that entry. For example phone could be of home_fax work mobile etc. In addition to the standard type an entry can have a custom type and can give it any name. Such types should have the CUSTOM value as type and also have a customType value.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Phone number.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUserPhone {
   
@@ -44,17 +37,25 @@ object SchemaUserPhone {
     
     inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
+    inline def setCustomTypeNull: Self = StObject.set(x, "customType", null)
+    
     inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryNull: Self = StObject.set(x, "primary", null)
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

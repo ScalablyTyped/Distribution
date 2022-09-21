@@ -11,9 +11,9 @@ Lightweight library with experimental functions for composing asynchronous and e
 | Full name          | rx-lite-experimental |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6586 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 167.33333333333334 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

@@ -29,12 +29,12 @@ object ModifyInstanceCreditSpecificationResult {
     
     inline def setSuccessfulInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", js.undefined)
     
-    inline def setSuccessfulInstanceCreditSpecificationsVarargs(value: SuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", js.Array(value :_*))
+    inline def setSuccessfulInstanceCreditSpecificationsVarargs(value: SuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", js.Array(value*))
     
     inline def setUnsuccessfulInstanceCreditSpecifications(value: UnsuccessfulInstanceCreditSpecificationSet): Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", js.undefined)
     
-    inline def setUnsuccessfulInstanceCreditSpecificationsVarargs(value: UnsuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", js.Array(value :_*))
+    inline def setUnsuccessfulInstanceCreditSpecificationsVarargs(value: UnsuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", js.Array(value*))
   }
 }

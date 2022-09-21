@@ -37,13 +37,13 @@ object anon {
       
       inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
       
@@ -74,13 +74,13 @@ object anon {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
       

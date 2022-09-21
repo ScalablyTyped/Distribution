@@ -4,18 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifies metdata updates to one device.
-  */
 trait SchemaUpdateMetadataArguments extends StObject {
   
   /**
-    * Device ID of the device.
+    * Required. Device ID of the device.
     */
-  var deviceId: js.UndefOr[String] = js.undefined
+  var deviceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Device identifier.
+    * Required. Device identifier.
     */
   var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
@@ -34,6 +31,8 @@ object SchemaUpdateMetadataArguments {
   extension [Self <: SchemaUpdateMetadataArguments](x: Self) {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     

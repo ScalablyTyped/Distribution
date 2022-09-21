@@ -1,12 +1,15 @@
 package typings.p2.mod
 
+import typings.p2.p2Numbers.`1`
+import typings.p2.p2Numbers.`2`
+import typings.p2.p2Numbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Ray")
 @js.native
-class Ray () extends StObject {
+open class Ray () extends StObject {
   def this(options: RayOptions) = this()
   
   def callback(result: RaycastResult): Unit = js.native
@@ -27,7 +30,7 @@ class Ray () extends StObject {
   
   var length: Double = js.native
   
-  var mode: Double = js.native
+  var mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Ray.CLOSEST */ Any = js.native
   
   var skipBackfaces: Boolean = js.native
   
@@ -44,16 +47,16 @@ object Ray {
   
   @JSImport("p2", "Ray.ALL")
   @js.native
-  def ALL: Double = js.native
-  inline def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+  def ALL: `4` = js.native
+  inline def ALL_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Ray.ANY")
   @js.native
-  def ANY: Double = js.native
-  inline def ANY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANY")(x.asInstanceOf[js.Any])
+  def ANY: `2` = js.native
+  inline def ANY_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANY")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Ray.CLOSEST")
   @js.native
-  def CLOSEST: Double = js.native
-  inline def CLOSEST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSEST")(x.asInstanceOf[js.Any])
+  def CLOSEST: `1` = js.native
+  inline def CLOSEST_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSEST")(x.asInstanceOf[js.Any])
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_beta.Resource$Externalvpngateways")
 @js.native
-class ResourceExternalvpngateways protected ()
+open class ResourceExternalvpngateways protected ()
   extends typings.googleapis.betaMod.computeBeta.ResourceExternalvpngateways {
   def this(context: APIRequestContext) = this()
 }

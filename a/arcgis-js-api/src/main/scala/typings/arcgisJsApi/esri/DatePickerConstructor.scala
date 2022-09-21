@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DatePickerConstructor
   extends StObject
-     with Instantiable0[DatePicker]
+     with /**
+  * The `DatePicker` class provides functionality to easily choose an input date.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html)
+  */
+Instantiable0[DatePicker]
      with Instantiable1[/* properties */ DatePickerProperties, DatePicker]

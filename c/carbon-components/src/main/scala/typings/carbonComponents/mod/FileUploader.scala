@@ -1,5 +1,7 @@
 package typings.carbonComponents.mod
 
+import typings.carbonComponents.anon.PartialFileUploaderOption
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components", "FileUploader")
 @js.native
-class FileUploader protected ()
+open class FileUploader protected ()
   extends typings.carbonComponents.componentsMod.FileUploader {
-  def this(element: js.Any) = this()
-  def this(element: js.Any, options: js.Object) = this()
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialFileUploaderOption) = this()
 }
 object FileUploader {
   
@@ -21,6 +23,6 @@ object FileUploader {
   /* static member */
   @JSImport("carbon-components", "FileUploader.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

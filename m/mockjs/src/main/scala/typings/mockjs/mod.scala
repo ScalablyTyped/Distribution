@@ -5,7 +5,6 @@ import typings.mockjs.mockjsStrings.lower
 import typings.mockjs.mockjsStrings.number
 import typings.mockjs.mockjsStrings.symbol
 import typings.mockjs.mockjsStrings.upper
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,11 +52,11 @@ object mod {
     
     var Random: MockjsRandom
     
-    def mock(rurl: S, rtype: S, template: js.Any): Mockjs
-    def mock(rurl: S, template: js.Any): Mockjs
-    def mock(rurl: RegExp, rtype: S, template: js.Any): Mockjs
-    def mock(rurl: RegExp, template: js.Any): Mockjs
-    def mock(template: js.Any): js.Any
+    def mock(rurl: js.RegExp, rtype: S, template: Any): Mockjs
+    def mock(rurl: js.RegExp, template: Any): Mockjs
+    def mock(rurl: S, rtype: S, template: Any): Mockjs
+    def mock(rurl: S, template: Any): Mockjs
+    def mock(template: Any): Any
     @JSName("mock")
     var mock_Original: MockjsMock
     
@@ -65,11 +64,11 @@ object mod {
     @JSName("setup")
     var setup_Original: MockjsSetup
     
-    def toJSONSchema(template: js.Any): MockjsToJSONSchemaRs
+    def toJSONSchema(template: Any): MockjsToJSONSchemaRs
     @JSName("toJSONSchema")
     var toJSONSchema_Original: MockjsToJSONSchema
     
-    def valid(template: js.Any, data: js.Any): js.Array[MockjsValidRsItem]
+    def valid(template: Any, data: Any): js.Array[MockjsValidRsItem]
     @JSName("valid")
     var valid_Original: MockjsValid
     
@@ -81,8 +80,8 @@ object mod {
       Random: MockjsRandom,
       mock: MockjsMock,
       setup: /* settings */ MockjsSetupSettings => Unit,
-      toJSONSchema: /* template */ js.Any => MockjsToJSONSchemaRs,
-      valid: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem],
+      toJSONSchema: /* template */ Any => MockjsToJSONSchemaRs,
+      valid: (/* template */ Any, /* data */ Any) => js.Array[MockjsValidRsItem],
       version: Double
     ): Mockjs = {
       val __obj = js.Dynamic.literal(Random = Random.asInstanceOf[js.Any], mock = mock.asInstanceOf[js.Any], setup = js.Any.fromFunction1(setup), toJSONSchema = js.Any.fromFunction1(toJSONSchema), valid = js.Any.fromFunction2(valid), version = version.asInstanceOf[js.Any])
@@ -97,9 +96,9 @@ object mod {
       
       inline def setSetup(value: /* settings */ MockjsSetupSettings => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
       
-      inline def setToJSONSchema(value: /* template */ js.Any => MockjsToJSONSchemaRs): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction1(value))
+      inline def setToJSONSchema(value: /* template */ Any => MockjsToJSONSchemaRs): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction1(value))
       
-      inline def setValid(value: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem]): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      inline def setValid(value: (/* template */ Any, /* data */ Any) => js.Array[MockjsValidRsItem]): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -110,11 +109,11 @@ object mod {
   @js.native
   trait MockjsMock extends StObject {
     
-    def apply(rurl: S, rtype: S, template: js.Any): Mockjs = js.native
-    def apply(rurl: S, template: js.Any): Mockjs = js.native
-    def apply(rurl: RegExp, rtype: S, template: js.Any): Mockjs = js.native
-    def apply(rurl: RegExp, template: js.Any): Mockjs = js.native
-    def apply(template: js.Any): js.Any = js.native
+    def apply(rurl: js.RegExp, rtype: S, template: Any): Mockjs = js.native
+    def apply(rurl: js.RegExp, template: Any): Mockjs = js.native
+    def apply(rurl: S, rtype: S, template: Any): Mockjs = js.native
+    def apply(rurl: S, template: Any): Mockjs = js.native
+    def apply(template: Any): Any = js.native
   }
   
   // Mockjs.Random
@@ -172,16 +171,9 @@ object mod {
     def boolean(min: N, max: N, current: B): B = js.native
     
     def character(): S = js.native
-    def character(pool: S): S = js.native
     // Random.character
-    @JSName("character")
-    def character_lower(pool: lower): S = js.native
-    @JSName("character")
-    def character_number(pool: number): S = js.native
-    @JSName("character")
-    def character_symbol(pool: symbol): S = js.native
-    @JSName("character")
-    def character_upper(pool: upper): S = js.native
+    def character(pool: lower | upper | number | symbol): S = js.native
+    def character(pool: S): S = js.native
     
     // Random.float
     def float(): N = js.native
@@ -214,14 +206,14 @@ object mod {
     def natural(min: N, max: N): N = js.native
     
     // Random.range
-    def range(): N = js.native
-    def range(start: Unit, stop: Unit, step: N): N = js.native
-    def range(start: Unit, stop: N): N = js.native
-    def range(start: Unit, stop: N, step: N): N = js.native
-    def range(start: N): N = js.native
-    def range(start: N, stop: Unit, step: N): N = js.native
-    def range(start: N, stop: N): N = js.native
-    def range(start: N, stop: N, step: N): N = js.native
+    def range(): js.Array[N] = js.native
+    def range(start: Unit, stop: Unit, step: N): js.Array[N] = js.native
+    def range(start: Unit, stop: N): js.Array[N] = js.native
+    def range(start: Unit, stop: N, step: N): js.Array[N] = js.native
+    def range(start: N): js.Array[N] = js.native
+    def range(start: N, stop: Unit, step: N): js.Array[N] = js.native
+    def range(start: N, stop: N): js.Array[N] = js.native
+    def range(start: N, stop: N, step: N): js.Array[N] = js.native
     
     // Random.string
     def string(): S = js.native
@@ -289,9 +281,8 @@ object mod {
     def datetime(): S = js.native
     def datetime(format: S): S = js.native
     
-    def mow(): S = js.native
-    def mow(format: S): S = js.native
-    
+    def now(): S = js.native
+    def now(format: S): S = js.native
     // Random.now
     def now(util: RandomDateUtilString): S = js.native
     def now(util: RandomDateUtilString, format: S): S = js.native
@@ -301,7 +292,7 @@ object mod {
     def time(format: S): S = js.native
   }
   
-  type MockjsRandomExtendOption = StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
+  type MockjsRandomExtendOption = StringDictionary[js.Function1[/* repeated */ Any, Any]]
   
   // Mockjs.Random - Helper
   // see https://github.com/nuysoft/Mock/wiki/Helper
@@ -314,10 +305,10 @@ object mod {
     def lower(str: S): S
     
     // Random.pick
-    def pick(arr: js.Array[js.Any]): js.Any
+    def pick(arr: js.Array[Any]): Any
     
     // Random.shuffle
-    def shuffle(arr: js.Array[js.Any]): js.Array[js.Any]
+    def shuffle(arr: js.Array[Any]): js.Array[Any]
     
     // Random.upper
     def upper(str: S): S
@@ -327,8 +318,8 @@ object mod {
     inline def apply(
       capitalize: S => S,
       lower: S => S,
-      pick: js.Array[js.Any] => js.Any,
-      shuffle: js.Array[js.Any] => js.Array[js.Any],
+      pick: js.Array[Any] => Any,
+      shuffle: js.Array[Any] => js.Array[Any],
       upper: S => S
     ): MockjsRandomHelper = {
       val __obj = js.Dynamic.literal(capitalize = js.Any.fromFunction1(capitalize), lower = js.Any.fromFunction1(lower), pick = js.Any.fromFunction1(pick), shuffle = js.Any.fromFunction1(shuffle), upper = js.Any.fromFunction1(upper))
@@ -341,9 +332,9 @@ object mod {
       
       inline def setLower(value: S => S): Self = StObject.set(x, "lower", js.Any.fromFunction1(value))
       
-      inline def setPick(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
+      inline def setPick(value: js.Array[Any] => Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
       
-      inline def setShuffle(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
+      inline def setShuffle(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
       
       inline def setUpper(value: S => S): Self = StObject.set(x, "upper", js.Any.fromFunction1(value))
     }
@@ -563,7 +554,7 @@ object mod {
   
   // Mockjs.toJSONSchema()
   // see https://github.com/nuysoft/Mock/wiki/Mock.toJSONSchema()
-  type MockjsToJSONSchema = js.Function1[/* template */ js.Any, MockjsToJSONSchemaRs]
+  type MockjsToJSONSchema = js.Function1[/* template */ Any, MockjsToJSONSchemaRs]
   
   trait MockjsToJSONSchemaRs extends StObject {
     
@@ -577,13 +568,13 @@ object mod {
     
     var rule: js.Object
     
-    var template: js.Any
+    var template: Any
     
     var `type`: S
   }
   object MockjsToJSONSchemaRs {
     
-    inline def apply(path: js.Array[S], rule: js.Object, template: js.Any, `type`: S): MockjsToJSONSchemaRs = {
+    inline def apply(path: js.Array[S], rule: js.Object, template: Any, `type`: S): MockjsToJSONSchemaRs = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockjsToJSONSchemaRs]
@@ -595,7 +586,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setName(value: S): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -603,17 +594,17 @@ object mod {
       
       inline def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setProperties(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertiesVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -621,7 +612,7 @@ object mod {
   
   // Mockjs.valid()
   // see https://github.com/nuysoft/Mock/wiki/Mock.valid()
-  type MockjsValid = js.Function2[/* template */ js.Any, /* data */ js.Any, js.Array[MockjsValidRsItem]]
+  type MockjsValid = js.Function2[/* template */ Any, /* data */ Any, js.Array[MockjsValidRsItem]]
   
   trait MockjsValidRsItem extends StObject {
     
@@ -657,7 +648,7 @@ object mod {
       
       inline def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -21,13 +21,13 @@ trait IMetadataCardModel extends StObject {
   
   val Events: IEvents = js.native
   
-  def GetCommentVersionHistory(): js.Any = js.native
+  def GetCommentVersionHistory(): Any = js.native
   
-  def GetError(): js.Any = js.native
+  def GetError(): Any = js.native
   
   def GetIconOverlayHint(): String = js.native
   
-  def GetObjectSourceFiles(): js.Any = js.native
+  def GetObjectSourceFiles(): Any = js.native
   
   def GetObjectTemplateDescription(): String = js.native
   
@@ -68,15 +68,15 @@ trait IMetadataCardModel extends StObject {
   
   val SaveAsTypeSelector: IMetadataCardControl = js.native
   
-  def SetAdditionalPropertyDefs(additionalPropertyDefs: js.Any): Unit = js.native
+  def SetAdditionalPropertyDefs(additionalPropertyDefs: Any): Unit = js.native
   
-  def SetCustomPlaceholders(customPlaceholders: js.Any): Unit = js.native
+  def SetCustomPlaceholders(customPlaceholders: Any): Unit = js.native
   
-  def SetRequiredPropertyDefs(requiredPropertyDefs: js.Any): Unit = js.native
+  def SetRequiredPropertyDefs(requiredPropertyDefs: Any): Unit = js.native
   
-  def SetUnevaluatedPropertyValues(unevaluatedValues: js.Any): Unit = js.native
+  def SetUnevaluatedPropertyValues(unevaluatedValues: Any): Unit = js.native
   
-  def ShowFilePreview(previewer: js.Any): Unit = js.native
+  def ShowFilePreview(previewer: Any): Unit = js.native
   
   val Title: IMetadataCardControl = js.native
   

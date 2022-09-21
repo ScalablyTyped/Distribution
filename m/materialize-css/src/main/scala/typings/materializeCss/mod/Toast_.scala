@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("materialize-css", "Toast")
 @js.native
-class Toast_ ()
+open class Toast_ ()
   extends StObject
      with Toast {
   

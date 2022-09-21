@@ -133,7 +133,7 @@ object Collections {
   /** Represents an associative collection, also known as a map or a dictionary. */
   trait IMap[K, V]
     extends StObject
-       with IIterable[IKeyValuePair[js.Any, js.Any]] {
+       with IIterable[IKeyValuePair[Any, Any]] {
     
     /** Removes all items from the map. */
     def clear(): Unit
@@ -179,7 +179,7 @@ object Collections {
     
     inline def apply[K, V](
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       getView: () => IMapView[K, V],
       hasKey: K => Boolean,
       insert: (K, V) => Boolean,
@@ -236,7 +236,7 @@ object Collections {
   /** Represents an immutable view into a map. */
   trait IMapView[K, V]
     extends StObject
-       with IIterable[IKeyValuePair[js.Any, js.Any]] {
+       with IIterable[IKeyValuePair[Any, Any]] {
     
     /**
       * Determines whether the map view contains the specified key.
@@ -263,7 +263,7 @@ object Collections {
   object IMapView {
     
     inline def apply[K, V](
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       hasKey: K => Boolean,
       lookup: K => V,
       size: Double,
@@ -293,7 +293,7 @@ object Collections {
     
     inline def apply[K, V](
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       getView: () => IMapView[K, V],
       hasKey: K => Boolean,
       insert: (K, V) => Boolean,
@@ -315,16 +315,16 @@ object Collections {
   /** Represents a collection of key-value pairs, correlating several other collection interfaces. */
   trait IPropertySet
     extends StObject
-       with IObservableMap[String, js.Any]
+       with IObservableMap[String, Any]
   object IPropertySet {
     
     inline def apply(
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
-      getView: () => IMapView[String, js.Any],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
+      getView: () => IMapView[String, Any],
       hasKey: String => Boolean,
-      insert: (String, js.Any) => Boolean,
-      lookup: String => js.Any,
+      insert: (String, Any) => Boolean,
+      lookup: String => Any,
       remove: String => Unit,
       size: Double
     ): IPropertySet = {
@@ -368,8 +368,7 @@ object Collections {
       */
     def getView(): IVectorView[T] = js.native
     
-    def indexOf(value: T, extra: js.Any*): Index = js.native
-    /* hack */
+    def indexOf(value: T, extra: Any*): Index = js.native
     @JSName("indexOf")
     def indexOf_Double(searchElement: T): Double = js.native
     
@@ -450,8 +449,7 @@ object Collections {
       */
     def getMany(startIndex: Double): Items[T] = js.native
     
-    def indexOf(value: T, extra: js.Any*): Index = js.native
-    /* hack */
+    def indexOf(value: T, extra: Any*): Index = js.native
     @JSName("indexOf")
     def indexOf_Double(searchElement: T): Double = js.native
     
@@ -466,9 +464,9 @@ object Collections {
   @js.native
   trait PropertySet extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+    def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
     
     /** Removes all items from the property set. */
     def clear(): Unit = js.native
@@ -477,13 +475,13 @@ object Collections {
       * Returns an iterator to enumerate the items in the property set.
       * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Gets an immutable view of the property set.
       * @return The immutable view.
       */
-    def getView(): IMapView[String, js.Any] = js.native
+    def getView(): IMapView[String, Any] = js.native
     
     /**
       * Indicates whether the property set has an item with the specified key.
@@ -498,20 +496,20 @@ object Collections {
       * @param value The value to insert.
       * @return True if the method replaces a value that already exists for the key; false if this is a new key.
       */
-    def insert(key: String, value: js.Any): Boolean = js.native
+    def insert(key: String, value: Any): Boolean = js.native
     
     /**
       * Retrieves the value for the specified key.
       * @param key The key.
       * @return The value, if an item with the specified key exists; otherwise, null.
       */
-    def lookup(key: String): js.Any = js.native
+    def lookup(key: String): Any = js.native
     
     /** Occurs when the observable map has changed. */
-    def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, js.Any]])): Unit = js.native
+    def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, Any]])): Unit = js.native
     /** Occurs when the observable map has changed. */
     @JSName("onmapchanged")
-    var onmapchanged_Original: MapChangedEventHandler[String, js.Any] = js.native
+    var onmapchanged_Original: MapChangedEventHandler[String, Any] = js.native
     
     /**
       * Removes a specific item from the PropertySet .
@@ -520,9 +518,9 @@ object Collections {
       */
     def remove(key: String): Boolean = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+    def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
     
     /**
       * Removes an item from the property set.
@@ -539,7 +537,7 @@ object Collections {
   @js.native
   trait StringMap extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -550,7 +548,7 @@ object Collections {
       * Returns an iterator containing the items in the collection.
       * @return The items in the collection.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Returns an immutable view of the map.
@@ -592,7 +590,7 @@ object Collections {
       */
     def remove(key: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -604,9 +602,9 @@ object Collections {
   @js.native
   trait ValueSet extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+    def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
     
     /** Removes all items from the value set. */
     def clear(): Unit = js.native
@@ -615,13 +613,13 @@ object Collections {
       * Returns an iterator to enumerate the items in the value set.
       * @return The iterator. The current position of the iterator is index 0, or the end of the value set if the value set is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Gets an immutable view of the value set.
       * @return The immutable view.
       */
-    def getView(): IMapView[String, js.Any] = js.native
+    def getView(): IMapView[String, Any] = js.native
     
     /**
       * Indicates whether the value set has an item with the specified key.
@@ -636,20 +634,20 @@ object Collections {
       * @param value The value to insert.
       * @return True if the method replaces a value that already exists for the key; false if this is a new key.
       */
-    def insert(key: String, value: js.Any): Boolean = js.native
+    def insert(key: String, value: Any): Boolean = js.native
     
     /**
       * Retrieves the value for the specified key.
       * @param key The key.
       * @return The value, if an item with the specified key exists; otherwise, null.
       */
-    def lookup(key: String): js.Any = js.native
+    def lookup(key: String): Any = js.native
     
     /** Occurs when the observable map has changed. */
-    def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, js.Any]])): Unit = js.native
+    def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, Any]])): Unit = js.native
     /** Occurs when the observable map has changed. */
     @JSName("onmapchanged")
-    var onmapchanged_Original: MapChangedEventHandler[String, js.Any] = js.native
+    var onmapchanged_Original: MapChangedEventHandler[String, Any] = js.native
     
     /**
       * Removes an item from the value set.
@@ -657,9 +655,9 @@ object Collections {
       */
     def remove(key: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+    def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
     
     /**
       * Removes a specific item from the ValueSet .

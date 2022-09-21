@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iniLoaderMod {
   
-  @JSImport("aws-sdk/lib/shared-ini/ini-loader", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("aws-sdk/lib/shared-ini/ini-loader", "IniLoader")
   @js.native
-  class IniLoader () extends StObject {
+  open class IniLoader () extends StObject {
     
     /** Remove all cached files. Used after config files are updated. */
     def clearCachedFiles(): Unit = js.native
@@ -26,8 +22,6 @@ object iniLoaderMod {
       */
     def loadFrom(options: LoadFileOptions): IniFileContent = js.native
   }
-  
-  inline def parseFile(filename: String, isConfig: Boolean): IniFileContent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any], isConfig.asInstanceOf[js.Any])).asInstanceOf[IniFileContent]
   
   type IniFileContent = StringDictionary[StringDictionary[String]]
   

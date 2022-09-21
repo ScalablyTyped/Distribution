@@ -29,7 +29,7 @@ object BatchDetectEntitiesItemResult {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value*))
     
     inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

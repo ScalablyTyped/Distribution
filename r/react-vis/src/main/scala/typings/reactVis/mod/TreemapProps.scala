@@ -57,7 +57,7 @@ trait TreemapProps extends StObject {
   
   // default: 1
   var sortFunction: js.UndefOr[
-    js.Function3[/* a */ js.Any, /* b */ js.Any, /* getSize */ RVGet[TreemapPoint, size], Double]
+    js.Function3[/* a */ Any, /* b */ Any, /* getSize */ RVGet[TreemapPoint, size], Double]
   ] = js.undefined
   
   var useCirclePacking: js.UndefOr[Boolean] = js.undefined
@@ -133,7 +133,7 @@ object TreemapProps {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setSortFunction(value: (/* a */ js.Any, /* b */ js.Any, /* getSize */ RVGet[TreemapPoint, size]) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
+    inline def setSortFunction(value: (/* a */ Any, /* b */ Any, /* getSize */ RVGet[TreemapPoint, size]) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
     
     inline def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
     

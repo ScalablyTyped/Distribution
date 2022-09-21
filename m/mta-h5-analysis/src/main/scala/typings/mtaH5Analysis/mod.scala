@@ -17,7 +17,7 @@ object mod {
   inline def clickShare(channelId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickShare")(channelId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def clickStat(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clickStat(`type`: String, params: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object conf {
     

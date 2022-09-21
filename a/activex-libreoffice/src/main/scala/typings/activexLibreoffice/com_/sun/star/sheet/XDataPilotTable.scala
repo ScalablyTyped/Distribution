@@ -30,7 +30,7 @@ object XDataPilotTable {
     OutputRange: CellRangeAddress,
     acquire: () => Unit,
     getOutputRange: () => CellRangeAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit
   ): XDataPilotTable = {

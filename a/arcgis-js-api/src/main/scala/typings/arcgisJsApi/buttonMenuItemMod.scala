@@ -22,7 +22,7 @@ object buttonMenuItemMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ButtonMenuItem {
     def this(properties: ButtonMenuItemProperties) = this()

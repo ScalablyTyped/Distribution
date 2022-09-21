@@ -13,17 +13,17 @@ trait resizearea extends StObject {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   var config: resizeareaConfig = js.native
   
-  def define(property: String, value: js.Any): Unit = js.native
+  def define(property: String, value: Any): Unit = js.native
   
   def detachEvent(id: String): Unit = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   var name: String = js.native
   

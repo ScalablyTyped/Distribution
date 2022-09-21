@@ -1,7 +1,7 @@
 
 # Scala.js typings for universal-router
 
-Typings are for version 9.0.1
+Typings are for version 9.1.0
 
 ## Library description:
 Isomorphic router for JavaScript web applications
@@ -10,10 +10,10 @@ Isomorphic router for JavaScript web applications
 | ------------------ | :-------------: |
 | Full name          | universal-router |
 | Keywords           | isomorphic, universal, router, routing, routes, route |
-| # releases         | 9 |
-| # dependents       | 37 |
-| # downloads        | 821295 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 74916.66666666667 |
+| # stars            | 1617.0 |
 
 ## Links
 - [Homepage](https://www.kriasoft.com/universal-router/)

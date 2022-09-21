@@ -9,7 +9,7 @@ object urlSearchParamsMod {
   
   @JSImport("@angular/http/src/url_search_params", "QueryEncoder")
   @js.native
-  class QueryEncoder () extends StObject {
+  open class QueryEncoder () extends StObject {
     
     def encodeKey(key: String): String = js.native
     
@@ -18,7 +18,7 @@ object urlSearchParamsMod {
   
   @JSImport("@angular/http/src/url_search_params", "URLSearchParams")
   @js.native
-  class URLSearchParams () extends StObject {
+  open class URLSearchParams () extends StObject {
     def this(rawParams: String) = this()
     def this(rawParams: String, queryEncoder: QueryEncoder) = this()
     def this(rawParams: Unit, queryEncoder: QueryEncoder) = this()
@@ -37,7 +37,7 @@ object urlSearchParamsMod {
     
     var paramsMap: Map[String, js.Array[String]] = js.native
     
-    /* private */ var queryEncoder: js.Any = js.native
+    /* private */ var queryEncoder: Any = js.native
     
     var rawParams: String = js.native
     

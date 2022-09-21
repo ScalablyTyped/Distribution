@@ -6,14 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NonDocumentTypeChildNode extends StObject {
   
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
+  /** Returns the first following sibling that is an element, and null otherwise. */
+  /* standard dom */
   val nextElementSibling: Element | Null
   
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
+  /** Returns the first preceding sibling that is an element, and null otherwise. */
+  /* standard dom */
   val previousElementSibling: Element | Null
 }
 object NonDocumentTypeChildNode {

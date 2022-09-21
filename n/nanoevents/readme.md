@@ -1,19 +1,19 @@
 
 # Scala.js typings for nanoevents
 
-Typings are for version 1.0
+Typings are for version 7.0.1
 
 ## Library description:
-Simple and tiny (72 bytes) event emitter library
+Simple and tiny (99 bytes) event emitter library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | nanoevents |
 | Keywords           | EventEmitter, Events, emit, emitter, event, pub/sub, publish, reactor, subscribe |
-| # releases         | 19 |
-| # dependents       | 62 |
-| # downloads        | 749113 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 256730.33333333334 |
+| # stars            | 1102.0 |
 
 ## Links
 - [Homepage](https://github.com/ai/nanoevents#readme)
@@ -24,7 +24,7 @@ Simple and tiny (72 bytes) event emitter library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

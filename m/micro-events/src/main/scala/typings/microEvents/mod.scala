@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("micro-events", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MicroEventEmitter
   
@@ -16,14 +16,14 @@ object mod {
   @js.native
   trait EventHandler extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   @js.native
   trait MicroEventEmitter extends StObject {
     
     /** Trigger event */
-    def emit(`type`: String, arguments: js.Any*): MicroEventEmitter = js.native
+    def emit(`type`: String, arguments: Any*): MicroEventEmitter = js.native
     
     /** Max listeners count */
     var maxListeners: Double = js.native

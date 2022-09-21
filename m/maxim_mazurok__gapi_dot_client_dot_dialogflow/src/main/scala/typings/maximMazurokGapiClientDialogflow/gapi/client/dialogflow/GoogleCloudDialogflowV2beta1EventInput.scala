@@ -9,7 +9,8 @@ trait GoogleCloudDialogflowV2beta1EventInput extends StObject {
   
   /**
     * Required. The language of this query. See [Language Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language codes. Note
-    * that queries in the same session do not necessarily need to specify the same language.
+    * that queries in the same session do not necessarily need to specify the same language. This field is ignored when used in the context of a WebhookResponse.followup_event_input
+    * field, because the language was already defined in the originating detect intent request.
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
@@ -19,13 +20,13 @@ trait GoogleCloudDialogflowV2beta1EventInput extends StObject {
   /**
     * The collection of parameters associated with the event. Depending on your protocol or client library language, this is a map, associative array, symbol table, dictionary, or JSON
     * object composed of a collection of (MapKey, MapValue) pairs: - MapKey type: string - MapKey value: parameter name - MapValue type: - If parameter's entity type is a composite
-    * entity: map - Else: string or number, depending on parameter value type - MapValue value: - If parameter's entity type is a composite entity: map from composite entity property
-    * names to property values - Else: parameter value
+    * entity: map - Else: depending on parameter value type, could be one of string, number, boolean, null, list or map - MapValue value: - If parameter's entity type is a composite
+    * entity: map from composite entity property names to property values - Else: parameter value
     */
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1EventInput & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1EventInput & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1EventInput {
@@ -48,7 +49,7 @@ object GoogleCloudDialogflowV2beta1EventInput {
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1EventInput & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1EventInput & TopLevel[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

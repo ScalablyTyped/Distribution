@@ -1,98 +1,93 @@
 package typings.rrule
 
-import typings.std.Date
+import typings.rrule.rruleMod.RRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rrulesetMod {
   
-  @JSImport("rrule/dist/esm/src/rruleset", JSImport.Default)
+  @JSImport("rrule/dist/esm/rruleset", "RRuleSet")
   @js.native
   /**
     *
     * @param {Boolean?} noCache
-    *  The same stratagy as RRule on cache, default to false
+    * The same stratagy as RRule on cache, default to false
     * @constructor
     */
-  class default () extends RRuleSet {
+  open class RRuleSet () extends RRule {
     def this(noCache: Boolean) = this()
-  }
-  
-  @js.native
-  trait RRuleSet
-    extends typings.rrule.rruleMod.default {
     
-    /* private */ var _dtstart: js.Any = js.native
+    /* private */ var _dtstart: Any = js.native
     
-    val _exdate: js.Array[Date] = js.native
+    val _exdate: js.Array[js.Date] = js.native
     
-    val _exrule: js.Array[typings.rrule.rruleMod.default] = js.native
+    val _exrule: js.Array[RRule] = js.native
     
-    val _rdate: js.Array[Date] = js.native
+    val _rdate: js.Array[js.Date] = js.native
     
-    val _rrule: js.Array[typings.rrule.rruleMod.default] = js.native
+    val _rrule: js.Array[RRule] = js.native
     
-    /* private */ var _tzid: js.Any = js.native
+    /* private */ var _tzid: Any = js.native
     
-    var dtstart: js.Any = js.native
+    var dtstart: Any = js.native
     
     /**
       * Adds an EXDATE to the set
       *
       * @param {Date}
       */
-    def exdate(date: Date): Unit = js.native
+    def exdate(date: js.Date): Unit = js.native
     
     /**
       * Get list of included datetimes in this recurrence set.
       *
       * @return List of exdates
       */
-    def exdates(): js.Array[Date] = js.native
+    def exdates(): js.Array[js.Date] = js.native
     
     /**
       * Adds an EXRULE to the set
       *
       * @param {RRule}
       */
-    def exrule(rrule: typings.rrule.rruleMod.default): Unit = js.native
+    def exrule(rrule: RRule): Unit = js.native
     
     /**
       * Get list of excluded rrules in this recurrence set.
       *
       * @return List of exrules
       */
-    def exrules(): js.Array[typings.rrule.rruleMod.default | RRuleSet] = js.native
+    def exrules(): js.Array[RRule | RRuleSet] = js.native
     
     /**
       * Adds an RDate to the set
       *
       * @param {Date}
       */
-    def rdate(date: Date): Unit = js.native
+    def rdate(date: js.Date): Unit = js.native
     
     /**
       * Get list of included datetimes in this recurrence set.
       *
       * @return List of rdates
       */
-    def rdates(): js.Array[Date] = js.native
+    def rdates(): js.Array[js.Date] = js.native
     
     /**
       * Adds an RRule to the set
       *
       * @param {RRule}
       */
-    def rrule(rrule: typings.rrule.rruleMod.default): Unit = js.native
+    def rrule(rrule: RRule): Unit = js.native
     
     /**
       * Get list of included rrules in this recurrence set.
       *
       * @return List of rrules
       */
-    def rrules(): js.Array[typings.rrule.rruleMod.default | RRuleSet] = js.native
+    def rrules(): js.Array[RRule | RRuleSet] = js.native
     
-    var tzid: js.Any = js.native
+    var tzid: Any = js.native
   }
 }

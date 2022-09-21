@@ -41,7 +41,7 @@ trait DOMMessageEvent extends StObject {
   
   def preventDefault(): Unit
   
-  def source(pvarIndex: js.Any): js.Any
+  def source(pvarIndex: Any): Any
   @JSName("source")
   val source_Original: IHTMLWindow2
   

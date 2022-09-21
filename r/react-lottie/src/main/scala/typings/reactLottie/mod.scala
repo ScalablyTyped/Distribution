@@ -25,8 +25,7 @@ object mod {
     */
   @JSImport("react-lottie", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LottieProps, js.Any, js.Any]
+  open class default () extends Component[LottieProps, Any, Any]
   
   trait EventListener extends StObject {
     
@@ -63,7 +62,7 @@ object mod {
   /**
     * Lottie allows you to render an animation from a JSON structure exported from Adobe After Effects using the Bodymovin plugin
     */
-  type Lottie = Component[LottieProps, js.Any, js.Any]
+  type Lottie = Component[LottieProps, Any, Any]
   
   trait LottieProps extends StObject {
     
@@ -141,7 +140,7 @@ object mod {
       
       inline def setEventListenersUndefined: Self = StObject.set(x, "eventListeners", js.undefined)
       
-      inline def setEventListenersVarargs(value: EventListener*): Self = StObject.set(x, "eventListeners", js.Array(value :_*))
+      inline def setEventListenersVarargs(value: EventListener*): Self = StObject.set(x, "eventListeners", js.Array(value*))
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -165,7 +164,7 @@ object mod {
       
       inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
       
-      inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
@@ -190,7 +189,7 @@ object mod {
     /**
       * The JSON data exported from Adobe After Effects using the Bodymovin plugin
       */
-    var animationData: js.Any
+    var animationData: Any
     
     /**
       * Defines if the animation should immediately play when the component enters the DOM
@@ -207,14 +206,14 @@ object mod {
   }
   object Options {
     
-    inline def apply(animationData: js.Any): Options = {
+    inline def apply(animationData: Any): Options = {
       val __obj = js.Dynamic.literal(animationData = animationData.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAnimationData(value: js.Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
+      inline def setAnimationData(value: Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,12 +14,12 @@ trait TfvcLabel
 object TfvcLabel {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     id: Double,
     items: js.Array[TfvcItem],
     labelScope: String,
-    modifiedDate: Date,
+    modifiedDate: js.Date,
     name: String,
     owner: IdentityRef,
     url: String
@@ -33,6 +32,6 @@ object TfvcLabel {
     
     inline def setItems(value: js.Array[TfvcItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: TfvcItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TfvcItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

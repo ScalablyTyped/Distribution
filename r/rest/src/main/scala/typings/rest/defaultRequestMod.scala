@@ -14,15 +14,15 @@ object defaultRequestMod extends Shortcut {
   
   trait Config extends StObject {
     
-    var entity: js.UndefOr[js.Any] = js.undefined
+    var entity: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
     
-    var mixin: js.UndefOr[js.Any] = js.undefined
+    var mixin: js.UndefOr[Any] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
   }
@@ -35,11 +35,11 @@ object defaultRequestMod extends Shortcut {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -47,11 +47,11 @@ object defaultRequestMod extends Shortcut {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMixin(value: js.Any): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+      inline def setMixin(value: Any): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
       
       inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       

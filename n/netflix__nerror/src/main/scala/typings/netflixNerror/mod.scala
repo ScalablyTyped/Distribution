@@ -12,19 +12,22 @@ object mod {
   
   @JSImport("@netflix/nerror", "VError")
   @js.native
-  class VError protected ()
+  open class VError protected ()
     extends StObject
        with Error {
-    def this(message: String, params: js.Any*) = this()
-    def this(message: Unit, params: js.Any*) = this()
-    def this(options: Options, message: String, params: js.Any*) = this()
-    def this(options: Error, message: String, params: js.Any*) = this()
+    def this(message: String, params: Any*) = this()
+    def this(message: Unit, params: Any*) = this()
+    def this(options: js.Error, message: String, params: Any*) = this()
+    def this(options: Options, message: String, params: Any*) = this()
     
-    def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    def cause_MVError(): js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -43,10 +46,10 @@ object mod {
       */
     @JSImport("@netflix/nerror", "VError.MultiError")
     @js.native
-    class MultiError protected () extends VError {
-      def this(errors: js.Array[Error]) = this()
+    open class MultiError protected () extends VError {
+      def this(errors: js.Array[js.Error]) = this()
       
-      def errors(): js.Array[Error] = js.native
+      def errors(): js.Array[js.Error] = js.native
     }
     
     /*
@@ -55,11 +58,11 @@ object mod {
       */
     @JSImport("@netflix/nerror", "VError.PError")
     @js.native
-    class PError protected () extends VError {
-      def this(message: String, params: js.Any*) = this()
-      def this(message: Unit, params: js.Any*) = this()
-      def this(options: Options, message: String, params: js.Any*) = this()
-      def this(options: Error, message: String, params: js.Any*) = this()
+    open class PError protected () extends VError {
+      def this(message: String, params: Any*) = this()
+      def this(message: Unit, params: Any*) = this()
+      def this(options: js.Error, message: String, params: Any*) = this()
+      def this(options: Options, message: String, params: Any*) = this()
     }
     
     /*
@@ -70,11 +73,11 @@ object mod {
       */
     @JSImport("@netflix/nerror", "VError.SError")
     @js.native
-    class SError protected () extends VError {
-      def this(message: String, params: js.Any*) = this()
-      def this(message: Unit, params: js.Any*) = this()
-      def this(options: Options, message: String, params: js.Any*) = this()
-      def this(options: Error, message: String, params: js.Any*) = this()
+    open class SError protected () extends VError {
+      def this(message: String, params: Any*) = this()
+      def this(message: Unit, params: Any*) = this()
+      def this(options: js.Error, message: String, params: Any*) = this()
+      def this(options: Options, message: String, params: Any*) = this()
     }
     
     @JSImport("@netflix/nerror", "VError.VError")
@@ -89,34 +92,34 @@ object mod {
       */
     @JSImport("@netflix/nerror", "VError.WError")
     @js.native
-    class WError protected () extends VError {
-      def this(message: String, params: js.Any*) = this()
-      def this(message: Unit, params: js.Any*) = this()
-      def this(options: Options, message: String, params: js.Any*) = this()
-      def this(options: Error, message: String, params: js.Any*) = this()
+    open class WError protected () extends VError {
+      def this(message: String, params: Any*) = this()
+      def this(message: Unit, params: Any*) = this()
+      def this(options: js.Error, message: String, params: Any*) = this()
+      def this(options: Options, message: String, params: Any*) = this()
     }
     
-    inline def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
+    inline def cause(err: js.Error): js.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[js.Error | Null]
     
-    inline def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def errorForEach(err: js.Error, func: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
+    inline def errorFromList[T /* <: js.Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
     
-    inline def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+    inline def findCauseByName(err: js.Error, name: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
     
-    inline def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fullStack(err: js.Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasCauseWithName(err: js.Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def info(err: Error): Info = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info]
+    inline def info(err: js.Error): Info = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info]
     
-    type Info = StringDictionary[js.Any]
+    type Info = StringDictionary[Any]
     
     trait Options extends StObject {
       
-      var cause: js.UndefOr[Error | Null] = js.undefined
+      var cause: js.UndefOr[js.Error | Null] = js.undefined
       
-      var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+      var constructorOpt: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
       
       var info: js.UndefOr[Info] = js.undefined
       
@@ -133,13 +136,13 @@ object mod {
       
       extension [Self <: Options](x: Self) {
         
-        inline def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+        inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
         
         inline def setCauseNull: Self = StObject.set(x, "cause", null)
         
         inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
         
-        inline def setConstructorOpt(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
+        inline def setConstructorOpt(value: /* repeated */ Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
         
         inline def setConstructorOptUndefined: Self = StObject.set(x, "constructorOpt", js.undefined)
         

@@ -10,7 +10,7 @@ object certHostKeyMod {
   
   @JSImport("nodegit/cert-host-key", "CertHostkey")
   @js.native
-  class CertHostkey () extends StObject {
+  open class CertHostkey () extends StObject {
     
     var hashMd5: String = js.native
     

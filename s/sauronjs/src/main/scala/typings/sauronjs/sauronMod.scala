@@ -45,12 +45,12 @@ object sauronMod {
     
     def initCache(id: String): Unit = js.native
     
-    def plugin(plugin: js.Function2[/* instance */ this.type, /* options */ js.Any, Unit], options: js.Any): SauronInstance = js.native
+    def plugin(plugin: js.Function2[/* instance */ this.type, /* options */ Any, Unit], options: Any): SauronInstance = js.native
     
     def rebootstrap(): Unit = js.native
     def rebootstrap(map: SauronComponentMap): Unit = js.native
     
-    def service(Service: Instantiable1[/* options */ js.Any, typings.sauronjs.serviceMod.^]): SauronInstance = js.native
-    def service(Service: Instantiable1[/* options */ js.Any, typings.sauronjs.serviceMod.^], options: js.Any): SauronInstance = js.native
+    def service(Service: Instantiable1[/* options */ Any, typings.sauronjs.serviceMod.^]): SauronInstance = js.native
+    def service(Service: Instantiable1[/* options */ Any, typings.sauronjs.serviceMod.^], options: Any): SauronInstance = js.native
   }
 }

@@ -29,6 +29,6 @@ object ListReleasesResponse {
     
     inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value*))
   }
 }

@@ -117,7 +117,7 @@ object anon {
       
       inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value*))
       
       inline def setMode(value: auto | all | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

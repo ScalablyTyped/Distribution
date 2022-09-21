@@ -8,7 +8,7 @@ object messageStreamsFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/streams/MessageStreamsFilteringParameters", "MessageStreamsFilteringParameters")
   @js.native
-  class MessageStreamsFilteringParameters () extends StObject {
+  open class MessageStreamsFilteringParameters () extends StObject {
     def this(messageStreamType: String) = this()
     def this(messageStreamType: String, includeArchivedStreams: Boolean) = this()
     def this(messageStreamType: Unit, includeArchivedStreams: Boolean) = this()

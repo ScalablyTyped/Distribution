@@ -11,9 +11,9 @@ Streamlabs authentication strategy for Passport.
 | Full name          | @ottomated/passport-streamlabs |
 | Keywords           | passport, streamlabs, twitchalerts, auth, oauth, oauth2, authentication, identity |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 389 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9.333333333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/ottomated/passport-streamlabs)

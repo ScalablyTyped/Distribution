@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   *   Replacement functions are invoked with three or more arguments:
-  *     - {string}        substring  - The matched substring (corresponds to `$&` above). Named backreferences are accessible as
-  *       properties of this first argument if the `namespacing` feature is off.
-  *     - {string}        args[1..n] - arguments, one for each backreference (corresponding to `$1`, `$2`, etc. above).
-  *     - {number}        args[n+1]  - The zero-based index of the match within the total search string.
-  *     - {string}        args[n+2]  - The total string being searched.
-  *     - {XRegExp.NamedGroups} args[n+3]  - If the `namespacing` feature is turned on, the last parameter is the groups object. If the
-  *       `namespacing` feature is off, then this argument is not present.
+  *     - {string} args[0] - The matched substring (corresponds to `$&` above). If the `namespacing` feature
+  *       is off, named backreferences are accessible as properties of this argument.
+  *     - {string} args[1..n] - One argument for each backreference (corresponding to `$1`, `$2`, etc. above).
+  *       If the regex has no capturing groups, no arguments appear in this position.
+  *     - {number} args[n+1] - The zero-based index of the match within the entire search string.
+  *     - {string} args[n+2] - The total string being searched.
+  *     - {XRegExp.NamedGroups} args[n+3] - If the the search pattern is a regex with named capturing groups, the last
+  *       argument is the groups object. Its keys are the backreference names and its values are the
+  *       backreference values. If the `namespacing` feature is off, this argument is not present.
   */
 @js.native
 trait ReplacementFunction extends StObject {

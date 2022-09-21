@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RenderTargetsOptimization")
 @js.native
-class RenderTargetsOptimization ()
+open class RenderTargetsOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.RenderTargetsOptimization {
   

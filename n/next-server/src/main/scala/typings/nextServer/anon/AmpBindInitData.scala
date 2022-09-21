@@ -23,7 +23,7 @@ trait AmpBindInitData extends StObject {
   
   var poweredByHeader: Boolean
   
-  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var runtimeConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var staticMarkup: Boolean
 }
@@ -64,7 +64,7 @@ object AmpBindInitData {
     
     inline def setPoweredByHeader(value: Boolean): Self = StObject.set(x, "poweredByHeader", value.asInstanceOf[js.Any])
     
-    inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+    inline def setRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
     
     inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
     

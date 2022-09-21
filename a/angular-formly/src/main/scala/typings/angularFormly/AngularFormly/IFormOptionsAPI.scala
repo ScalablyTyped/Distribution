@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IFormOptionsAPI extends StObject {
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var fieldTransform: js.UndefOr[js.Function | js.Array[js.Function]] = js.undefined
   
@@ -32,7 +32,7 @@ object IFormOptionsAPI {
   
   extension [Self <: IFormOptionsAPI](x: Self) {
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -40,7 +40,7 @@ object IFormOptionsAPI {
     
     inline def setFieldTransformUndefined: Self = StObject.set(x, "fieldTransform", js.undefined)
     
-    inline def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value :_*))
+    inline def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value*))
     
     inline def setFormState(value: js.Object): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
     
@@ -66,6 +66,6 @@ object IFormOptionsAPI {
     
     inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value*))
   }
 }

@@ -10,16 +10,15 @@ object documentCardActivityBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.base", "DocumentCardActivityBase")
   @js.native
-  class DocumentCardActivityBase protected ()
-    extends Component[IDocumentCardActivityProps, js.Any, js.Any] {
+  open class DocumentCardActivityBase protected () extends Component[IDocumentCardActivityProps, Any, Any] {
     def this(props: IDocumentCardActivityProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _getNameString: js.Any = js.native
+    /* private */ var _getNameString: Any = js.native
     
-    /* private */ var _renderAvatar: js.Any = js.native
+    /* private */ var _renderAvatar: Any = js.native
     
-    /* private */ var _renderAvatars: js.Any = js.native
+    /* private */ var _renderAvatars: Any = js.native
   }
 }

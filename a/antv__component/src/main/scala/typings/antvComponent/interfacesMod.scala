@@ -21,7 +21,7 @@ object interfacesMod {
     /**
       * 清空组件
       */
-    def clear(): js.Any = js.native
+    def clear(): Any = js.native
     
     /**
       * 组件在画布上的包围盒
@@ -38,7 +38,7 @@ object interfacesMod {
     /**
       * 隐藏
       */
-    def hide(): js.Any = js.native
+    def hide(): Any = js.native
     
     /**
       * 初始化组件
@@ -58,7 +58,7 @@ object interfacesMod {
     /**
       * 渲染组件
       */
-    def render(): js.Any = js.native
+    def render(): Any = js.native
     
     /**
       * 是否可以响应事件
@@ -69,13 +69,13 @@ object interfacesMod {
     /**
       * 显示
       */
-    def show(): js.Any = js.native
+    def show(): Any = js.native
     
     /**
       * 更新组件
       * @param {object} cfg 更新的配置项
       */
-    def update(cfg: js.Object): js.Any = js.native
+    def update(cfg: js.Object): Any = js.native
   }
   
   trait IList extends StObject {
@@ -83,13 +83,13 @@ object interfacesMod {
     /**
       * 清空列表
       */
-    def clearItems(): js.Any
+    def clearItems(): Any
     
     /**
       * 清楚所有列表项的状态
       * @param {string} state 状态值
       */
-    def clearItemsState(state: String): js.Any
+    def clearItemsState(state: String): Any
     
     /**
       * 获取列表项
@@ -102,7 +102,7 @@ object interfacesMod {
       * @param  {state}     state 状态名
       * @return {ListItem[]} 列表项
       */
-    def getItemsByState(state: js.Any): js.Array[ListItem]
+    def getItemsByState(state: Any): js.Array[ListItem]
     
     /**
       * 是否存在指定的状态
@@ -117,32 +117,32 @@ object interfacesMod {
       * @param {string}   state 状态名
       * @param {boolean}  value 状态值, true, false
       */
-    def setItemState(item: ListItem, state: String, value: Boolean): js.Any
+    def setItemState(item: ListItem, state: String, value: Boolean): Any
     
     /**
       * 设置列表项
       * @param {ListItem[]} items 列表项集合
       */
-    def setItems(items: js.Array[ListItem]): js.Any
+    def setItems(items: js.Array[ListItem]): Any
     
     /**
       * 更新列表项
       * @param {ListItem} item 列表项
       * @param {object}   cfg  列表项
       */
-    def updateItem(item: ListItem, cfg: js.Object): js.Any
+    def updateItem(item: ListItem, cfg: js.Object): Any
   }
   object IList {
     
     inline def apply(
-      clearItems: () => js.Any,
-      clearItemsState: String => js.Any,
+      clearItems: () => Any,
+      clearItemsState: String => Any,
       getItems: () => js.Array[ListItem],
-      getItemsByState: js.Any => js.Array[ListItem],
+      getItemsByState: Any => js.Array[ListItem],
       hasState: (ListItem, String) => Boolean,
-      setItemState: (ListItem, String, Boolean) => js.Any,
-      setItems: js.Array[ListItem] => js.Any,
-      updateItem: (ListItem, js.Object) => js.Any
+      setItemState: (ListItem, String, Boolean) => Any,
+      setItems: js.Array[ListItem] => Any,
+      updateItem: (ListItem, js.Object) => Any
     ): IList = {
       val __obj = js.Dynamic.literal(clearItems = js.Any.fromFunction0(clearItems), clearItemsState = js.Any.fromFunction1(clearItemsState), getItems = js.Any.fromFunction0(getItems), getItemsByState = js.Any.fromFunction1(getItemsByState), hasState = js.Any.fromFunction2(hasState), setItemState = js.Any.fromFunction3(setItemState), setItems = js.Any.fromFunction1(setItems), updateItem = js.Any.fromFunction2(updateItem))
       __obj.asInstanceOf[IList]
@@ -150,21 +150,21 @@ object interfacesMod {
     
     extension [Self <: IList](x: Self) {
       
-      inline def setClearItems(value: () => js.Any): Self = StObject.set(x, "clearItems", js.Any.fromFunction0(value))
+      inline def setClearItems(value: () => Any): Self = StObject.set(x, "clearItems", js.Any.fromFunction0(value))
       
-      inline def setClearItemsState(value: String => js.Any): Self = StObject.set(x, "clearItemsState", js.Any.fromFunction1(value))
+      inline def setClearItemsState(value: String => Any): Self = StObject.set(x, "clearItemsState", js.Any.fromFunction1(value))
       
       inline def setGetItems(value: () => js.Array[ListItem]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
       
-      inline def setGetItemsByState(value: js.Any => js.Array[ListItem]): Self = StObject.set(x, "getItemsByState", js.Any.fromFunction1(value))
+      inline def setGetItemsByState(value: Any => js.Array[ListItem]): Self = StObject.set(x, "getItemsByState", js.Any.fromFunction1(value))
       
       inline def setHasState(value: (ListItem, String) => Boolean): Self = StObject.set(x, "hasState", js.Any.fromFunction2(value))
       
-      inline def setSetItemState(value: (ListItem, String, Boolean) => js.Any): Self = StObject.set(x, "setItemState", js.Any.fromFunction3(value))
+      inline def setSetItemState(value: (ListItem, String, Boolean) => Any): Self = StObject.set(x, "setItemState", js.Any.fromFunction3(value))
       
-      inline def setSetItems(value: js.Array[ListItem] => js.Any): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+      inline def setSetItems(value: js.Array[ListItem] => Any): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
       
-      inline def setUpdateItem(value: (ListItem, js.Object) => js.Any): Self = StObject.set(x, "updateItem", js.Any.fromFunction2(value))
+      inline def setUpdateItem(value: (ListItem, js.Object) => Any): Self = StObject.set(x, "updateItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -192,14 +192,14 @@ object interfacesMod {
       * 设置定位信息
       * @param {T} cfg 定位信息
       */
-    def setLocation(cfg: T): js.Any
+    def setLocation(cfg: T): Any
     
     /**
       * 设置偏移量
       * @param {number} offsetX 偏移 x
       * @param {number} offsetY 偏移 y
       */
-    def setOffset(offsetX: Double, offsetY: Double): js.Any
+    def setOffset(offsetX: Double, offsetY: Double): Any
   }
   object ILocation {
     
@@ -207,8 +207,8 @@ object interfacesMod {
       getLocation: () => T,
       getLocationType: () => LocationType,
       getOffset: () => OffsetPoint,
-      setLocation: T => js.Any,
-      setOffset: (Double, Double) => js.Any
+      setLocation: T => Any,
+      setOffset: (Double, Double) => Any
     ): ILocation[T] = {
       val __obj = js.Dynamic.literal(getLocation = js.Any.fromFunction0(getLocation), getLocationType = js.Any.fromFunction0(getLocationType), getOffset = js.Any.fromFunction0(getOffset), setLocation = js.Any.fromFunction1(setLocation), setOffset = js.Any.fromFunction2(setOffset))
       __obj.asInstanceOf[ILocation[T]]
@@ -222,9 +222,9 @@ object interfacesMod {
       
       inline def setGetOffset(value: () => OffsetPoint): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
       
-      inline def setSetLocation(value: T => js.Any): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+      inline def setSetLocation(value: T => Any): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
       
-      inline def setSetOffset(value: (Double, Double) => js.Any): Self = StObject.set(x, "setOffset", js.Any.fromFunction2(value))
+      inline def setSetOffset(value: (Double, Double) => Any): Self = StObject.set(x, "setOffset", js.Any.fromFunction2(value))
     }
   }
   
@@ -248,13 +248,13 @@ object interfacesMod {
       * @param {number} min 最小值
       * @param {number} max 最大值
       */
-    def setRange(min: Double, max: Double): js.Any = js.native
+    def setRange(min: Double, max: Double): Any = js.native
     
-    def setValue(value: js.Array[Double]): js.Any = js.native
+    def setValue(value: js.Array[Double]): Any = js.native
     /**
       * 设置当前值，单值或者两个值
       * @param {number | number[]} value 值
       */
-    def setValue(value: Double): js.Any = js.native
+    def setValue(value: Double): Any = js.native
   }
 }

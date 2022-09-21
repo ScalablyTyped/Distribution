@@ -10,10 +10,10 @@ Builds and manages a javascript object that represents an oData query string
 | ------------------ | :-------------: |
 | Full name          | jodata |
 | Keywords           | odata |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 325 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 316.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jodata)

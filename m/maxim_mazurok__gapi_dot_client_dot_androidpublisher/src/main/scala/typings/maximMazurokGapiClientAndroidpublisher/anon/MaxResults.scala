@@ -25,7 +25,7 @@ trait MaxResults extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** How many results the list operation should return. */
+  /** Deprecated and ignored. The page size is determined by the server. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
@@ -40,7 +40,7 @@ trait MaxResults extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The index of the first element to return. */
+  /** Deprecated and ignored. Set the `token` parameter to rertieve the next page. */
   var startIndex: js.UndefOr[Double] = js.undefined
   
   /** Pagination token. If empty, list starts at the first product. */

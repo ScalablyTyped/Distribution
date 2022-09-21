@@ -16,7 +16,7 @@ object listGlobalTablesCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/ListGlobalTablesCommand", "ListGlobalTablesCommand")
   @js.native
-  class ListGlobalTablesCommand protected ()
+  open class ListGlobalTablesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listGlobalTablesCommandMod {
     override val middlewareStack: MiddlewareStack[ListGlobalTablesInput, ListGlobalTablesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[ListGlobalTablesInput, ListGlobalTablesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListGlobalTablesInput, ListGlobalTablesOutput] = js.native
   }
 }

@@ -98,7 +98,7 @@ object interfacesPullRequestMod {
       
       inline def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
       
-      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value*))
       
       inline def setBase(value: BranchSummaryWithRepository): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -258,11 +258,11 @@ object interfacesPullRequestMod {
       
       inline def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value*))
       
       inline def setUsers(value: js.Array[UserSummary]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   

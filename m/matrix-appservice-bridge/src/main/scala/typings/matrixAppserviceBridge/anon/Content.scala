@@ -1,26 +1,32 @@
 package typings.matrixAppserviceBridge.anon
 
+import typings.matrixAppserviceBridge.bridgeInfoStateMod.MSC2346Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Content[T] extends StObject {
+trait Content extends StObject {
   
-  var content: T
+  var content: MSC2346Content
   
-  var ts: Double
+  var state_key: String
+  
+  var `type`: String
 }
 object Content {
   
-  inline def apply[T](content: T, ts: Double): Content[T] = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Content[T]]
+  inline def apply(content: MSC2346Content, state_key: String, `type`: String): Content = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], state_key = state_key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Content]
   }
   
-  extension [Self <: Content[?], T](x: Self & Content[T]) {
+  extension [Self <: Content](x: Self) {
     
-    inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: MSC2346Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

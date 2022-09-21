@@ -1,7 +1,7 @@
 
 # Scala.js typings for first-run
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if it's the first time the process is run
@@ -11,9 +11,9 @@ Check if it's the first time the process is run
 | Full name          | first-run |
 | Keywords           | first, init, initial, run, time, process, start |
 | # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 49071 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2762.3333333333335 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/first-run#readme)

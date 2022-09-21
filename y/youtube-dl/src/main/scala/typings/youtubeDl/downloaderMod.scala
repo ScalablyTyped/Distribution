@@ -1,6 +1,5 @@
 package typings.youtubeDl
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +13,13 @@ object downloaderMod {
     */
   inline def apply(
     binDir: String,
-    callback: js.Function2[/* err */ Error | String | Null, /* message */ js.UndefOr[String], Unit]
+    callback: js.Function2[/* err */ js.Error | String | Null, /* message */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(binDir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     binDir: Null,
-    callback: js.Function2[/* err */ Error | String | Null, /* message */ js.UndefOr[String], Unit]
+    callback: js.Function2[/* err */ js.Error | String | Null, /* message */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(binDir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(callback: js.Function2[/* err */ Error | String | Null, /* message */ js.UndefOr[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(callback: js.Function2[/* err */ js.Error | String | Null, /* message */ js.UndefOr[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("youtube-dl/lib/downloader", JSImport.Namespace)
   @js.native

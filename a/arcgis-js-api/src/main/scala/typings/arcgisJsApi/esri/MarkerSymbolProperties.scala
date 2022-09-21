@@ -13,6 +13,8 @@ trait MarkerSymbolProperties
   /**
     * The angle of the marker relative to the screen in degrees.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
     */
   var angle: js.UndefOr[Double] = js.undefined
@@ -27,12 +29,16 @@ trait MarkerSymbolProperties
   /**
     * The offset on the x-axis in points.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
     */
   var xoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The offset on the y-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
     */

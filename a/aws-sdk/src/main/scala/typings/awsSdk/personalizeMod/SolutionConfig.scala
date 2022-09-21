@@ -30,6 +30,11 @@ trait SolutionConfig extends StObject {
     * Describes the properties for hyperparameter optimization (HPO).
     */
   var hpoConfig: js.UndefOr[HPOConfig] = js.undefined
+  
+  /**
+    * Describes the additional objective for the solution, such as maximizing streaming minutes or increasing revenue. For more information see Optimizing a solution.
+    */
+  var optimizationObjective: js.UndefOr[OptimizationObjective] = js.undefined
 }
 object SolutionConfig {
   
@@ -59,5 +64,9 @@ object SolutionConfig {
     inline def setHpoConfig(value: HPOConfig): Self = StObject.set(x, "hpoConfig", value.asInstanceOf[js.Any])
     
     inline def setHpoConfigUndefined: Self = StObject.set(x, "hpoConfig", js.undefined)
+    
+    inline def setOptimizationObjective(value: OptimizationObjective): Self = StObject.set(x, "optimizationObjective", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationObjectiveUndefined: Self = StObject.set(x, "optimizationObjective", js.undefined)
   }
 }

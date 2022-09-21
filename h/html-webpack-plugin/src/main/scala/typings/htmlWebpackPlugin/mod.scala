@@ -5,6 +5,7 @@ import typings.htmlWebpackPlugin.anon.AssetTags
 import typings.htmlWebpackPlugin.anon.Assets
 import typings.htmlWebpackPlugin.anon.BodyTags
 import typings.htmlWebpackPlugin.anon.Css
+import typings.htmlWebpackPlugin.anon.DictmetaAttributeName
 import typings.htmlWebpackPlugin.anon.Files
 import typings.htmlWebpackPlugin.anon.HeadTags
 import typings.htmlWebpackPlugin.anon.Html
@@ -19,7 +20,11 @@ import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.body
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.defer
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.head
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.manual
+import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.module
 import typings.tapable.mod.AsyncSeriesWaterfallHook
+import typings.tapable.mod.UnsetAdditionalOptions
+import typings.webpack.mod.Compilation
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,16 +33,21 @@ object mod {
   
   @JSImport("html-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with HtmlWebpackPlugin {
     def this(options: Options) = this()
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
+    
+    /* CompleteClass */
+    var userOptions: Options = js.native
+    
+    /** Current HtmlWebpackPlugin Major */
+    /* CompleteClass */
+    var version: Double = js.native
   }
   @JSImport("html-webpack-plugin", JSImport.Namespace)
   @js.native
@@ -53,9 +63,7 @@ object mod {
   inline def createHtmlTagObject(tagName: String, attributes: Unit, innerHTML: String): HtmlTagObject = (^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlTagObject")(tagName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[HtmlTagObject]
   
   /* static member */
-  inline def getHooks(
-    compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
-  ): Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[Hooks]
+  inline def getHooks(compilation: Compilation): Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[Hooks]
   
   /* static member */
   @JSImport("html-webpack-plugin", "version")
@@ -64,27 +72,27 @@ object mod {
   
   trait Hooks extends StObject {
     
-    var afterEmit: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any]
+    var afterEmit: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions]
     
-    var afterTemplateExecution: AsyncSeriesWaterfallHook[Html, js.Any, js.Any]
+    var afterTemplateExecution: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]
     
-    var alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any]
+    var alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]
     
-    var alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any]
+    var alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions]
     
-    var beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any]
+    var beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions]
     
-    var beforeEmit: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]
+    var beforeEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]
   }
   object Hooks {
     
     inline def apply(
-      afterEmit: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any],
-      afterTemplateExecution: AsyncSeriesWaterfallHook[Html, js.Any, js.Any],
-      alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any],
-      alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any],
-      beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any],
-      beforeEmit: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]
+      afterEmit: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions],
+      afterTemplateExecution: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions],
+      alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions],
+      alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions],
+      beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions],
+      beforeEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]
     ): Hooks = {
       val __obj = js.Dynamic.literal(afterEmit = afterEmit.asInstanceOf[js.Any], afterTemplateExecution = afterTemplateExecution.asInstanceOf[js.Any], alterAssetTagGroups = alterAssetTagGroups.asInstanceOf[js.Any], alterAssetTags = alterAssetTags.asInstanceOf[js.Any], beforeAssetTagGeneration = beforeAssetTagGeneration.asInstanceOf[js.Any], beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hooks]
@@ -92,17 +100,17 @@ object mod {
     
     extension [Self <: Hooks](x: Self) {
       
-      inline def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
+      inline def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
       
-      inline def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[Html, js.Any, js.Any]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
+      inline def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
       
-      inline def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
+      inline def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
       
-      inline def setAlterAssetTags(value: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any]): Self = StObject.set(x, "alterAssetTags", value.asInstanceOf[js.Any])
+      inline def setAlterAssetTags(value: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions]): Self = StObject.set(x, "alterAssetTags", value.asInstanceOf[js.Any])
       
-      inline def setBeforeAssetTagGeneration(value: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any]): Self = StObject.set(x, "beforeAssetTagGeneration", value.asInstanceOf[js.Any])
+      inline def setBeforeAssetTagGeneration(value: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeAssetTagGeneration", value.asInstanceOf[js.Any])
       
-      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,12 +123,18 @@ object mod {
       * Attributes of the html tag
       * E.g. `{'disabled': true, 'value': 'demo'}`
       */
-    var attributes: StringDictionary[String | Boolean]
+    var attributes: StringDictionary[js.UndefOr[String | Boolean | Null]]
     
     /**
       * The inner HTML
       */
     var innerHTML: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Meta information about the tag
+      * E.g. `{'plugin': 'html-webpack-plugin'}`
+      */
+    var meta: DictmetaAttributeName
     
     /**
       * The tag name e.g. `'div'`
@@ -135,18 +149,25 @@ object mod {
   }
   object HtmlTagObject {
     
-    inline def apply(attributes: StringDictionary[String | Boolean], tagName: String, voidTag: Boolean): HtmlTagObject = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], voidTag = voidTag.asInstanceOf[js.Any])
+    inline def apply(
+      attributes: StringDictionary[js.UndefOr[String | Boolean | Null]],
+      meta: DictmetaAttributeName,
+      tagName: String,
+      voidTag: Boolean
+    ): HtmlTagObject = {
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], voidTag = voidTag.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlTagObject]
     }
     
     extension [Self <: HtmlTagObject](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[js.UndefOr[String | Boolean | Null]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
       inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
+      
+      inline def setMeta(value: DictmetaAttributeName): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
@@ -157,80 +178,170 @@ object mod {
   trait HtmlWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
+    
+    /**
+      * Options after html-webpack-plugin has been initialized with defaults
+      */
+    var options: js.UndefOr[ProcessedOptions] = js.undefined
+    
+    var userOptions: Options
+    
+    /** Current HtmlWebpackPlugin Major */
+    var version: Double
   }
   object HtmlWebpackPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): HtmlWebpackPlugin = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+    inline def apply(apply: Compiler => Unit, userOptions: Options, version: Double): HtmlWebpackPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), userOptions = userOptions.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlWebpackPlugin]
     }
     
     extension [Self <: HtmlWebpackPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      
+      inline def setOptions(value: ProcessedOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setUserOptions(value: Options): Self = StObject.set(x, "userOptions", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
   type MinifyOptions = typings.htmlMinifierTerser.mod.Options
   
-  /* Inlined parent std.Partial<html-webpack-plugin.html-webpack-plugin.ProcessedOptions> */
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with /**
+    * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
+    * to your template.
+    */
+  /* option */ StringDictionary[Any] {
     
+    /**
+      * Emit the file only if it was changed.
+      * @default true
+      */
     var cache: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * List all entries which should be injected
+      */
     var chunks: js.UndefOr[all | js.Array[String]] = js.undefined
     
+    /**
+      * Allows to control how chunks should be sorted before they are included to the html.
+      * @default 'auto'
+      */
     var chunksSortMode: js.UndefOr[
         auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
       ] = js.undefined
     
+    /**
+      * List all entries which should not be injected
+      */
     var excludeChunks: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Path to the favicon icon
+      */
     var favicon: js.UndefOr[`false` | String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.undefined
+    /**
+      * The file to write the HTML to.
+      * Supports subdirectories eg: `assets/admin.html`
+      * [name] will be replaced by the entry name
+      * Supports a function to generate the name
+      *
+      * @default 'index.html'
+      */
+    var filename: js.UndefOr[String | (js.Function1[/* entryName */ String, String])] = js.undefined
     
+    /**
+      * If `true` then append a unique `webpack` compilation hash to all included scripts and CSS files.
+      * This is useful for cache busting
+      */
     var hash: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Inject all assets into the given `template` or `templateContent`.
+      */
     var inject: js.UndefOr[`false` | `true` | body | head] = js.undefined
     
+    /**
+      * Inject meta tags
+      */
     var meta: js.UndefOr[
         `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
       ] = js.undefined
     
+    /**
+      * HTML Minification options accepts the following values:
+      * - Set to `false` to disable minifcation
+      * - Set to `'auto'` to enable minifcation only for production mode
+      * - Set to custom minification according to
+      * {@link https://github.com/kangax/html-minifier#options-quick-reference}
+      */
     var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.undefined
     
+    /**
+      * By default the public path is set to `auto` - that way the html-webpack-plugin will try
+      * to set the publicPath according to the current filename and the webpack publicPath setting
+      */
     var publicPath: js.UndefOr[String | auto] = js.undefined
     
-    var scriptLoading: js.UndefOr[blocking | defer] = js.undefined
+    // Inject scripts into head
+    /**
+      * Set up script loading
+      * blocking will result in <script src="..."></script>
+      * defer will result in <script defer src="..."></script>
+      *
+      * @default 'defer'
+      */
+    var scriptLoading: js.UndefOr[blocking | defer | module] = js.undefined
     
+    /**
+      * Render errors into the HTML page
+      */
     var showErrors: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The `webpack` require path to the template.
+      * @see https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
+      */
     var template: js.UndefOr[String] = js.undefined
     
+    /**
+      * Allow to use a html string instead of reading from a file
+      */
     var templateContent: js.UndefOr[
-        `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+        `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
       ] = js.undefined
     
+    /**
+      * Allows to overwrite the parameters used in the template
+      */
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
-          /* compilation */ js.Any, 
+          /* compilation */ Any, 
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           /* options */ ProcessedOptions, 
-          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-        ]) | StringDictionary[js.Any]
+          StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        ]) | StringDictionary[Any]
       ] = js.undefined
     
+    /**
+      * The title to use for the generated HTML document
+      */
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Enforce self closing tags e.g. <link />
+      */
     var xhtml: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -256,19 +367,21 @@ object mod {
       
       inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setExcludeChunks(value: js.Array[String]): Self = StObject.set(x, "excludeChunks", value.asInstanceOf[js.Any])
       
       inline def setExcludeChunksUndefined: Self = StObject.set(x, "excludeChunks", js.undefined)
       
-      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value :_*))
+      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value*))
       
       inline def setFavicon(value: `false` | String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
       inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String | (js.Function1[/* entryName */ String, String])): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameFunction1(value: /* entryName */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
@@ -292,7 +405,7 @@ object mod {
       
       inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      inline def setScriptLoading(value: blocking | defer): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
+      inline def setScriptLoading(value: blocking | defer | module): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
       
       inline def setScriptLoadingUndefined: Self = StObject.set(x, "scriptLoading", js.undefined)
       
@@ -303,25 +416,25 @@ object mod {
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateContent(
-        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
       ): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
       
-      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[js.Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
+      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
       
       inline def setTemplateContentUndefined: Self = StObject.set(x, "templateContent", js.undefined)
       
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
-              /* compilation */ js.Any, 
+              /* compilation */ Any, 
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               /* options */ ProcessedOptions, 
-              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-            ]) | StringDictionary[js.Any]
+              StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+            ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
+        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTemplateParametersUndefined: Self = StObject.set(x, "templateParameters", js.undefined)
@@ -341,124 +454,49 @@ object mod {
   /**
     * The plugin options after adding default values
     */
-  trait ProcessedOptions
-    extends StObject
-       with /**
-    * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
-    * to your template.
-    */
-  /* option */ StringDictionary[js.Any] {
+  /* Inlined parent std.Required<html-webpack-plugin.html-webpack-plugin.Options> */
+  trait ProcessedOptions extends StObject {
     
-    /**
-      * Emit the file only if it was changed.
-      * @default true
-      */
     var cache: Boolean
     
-    /**
-      * List all entries which should be injected
-      */
     var chunks: all | js.Array[String]
     
-    /**
-      * Allows to control how chunks should be sorted before they are included to the html.
-      * @default 'auto'
-      */
     var chunksSortMode: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
     
-    /**
-      * List all entries which should not be injected
-      */
     var excludeChunks: js.Array[String]
     
-    /**
-      * Path to the favicon icon
-      */
     var favicon: `false` | String
     
-    /**
-      * The file to write the HTML to.
-      * Supports subdirectories eg: `assets/admin.html`
-      * @default 'index.html'
-      */
     var filename: String
     
-    /**
-      * If `true` then append a unique `webpack` compilation hash to all included scripts and CSS files.
-      * This is useful for cache busting
-      */
     var hash: Boolean
     
-    /**
-      * Inject all assets into the given `template` or `templateContent`.
-      */
     var inject: `false` | `true` | body | head
     
-    /**
-      * Inject meta tags
-      */
     var meta: `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
     
-    /**
-      * HTML Minification options accepts the following values:
-      * - Set to `false` to disable minifcation
-      * - Set to `'auto'` to enable minifcation only for production mode
-      * - Set to custom minification according to
-      * {@link https://github.com/kangax/html-minifier#options-quick-reference}
-      */
     var minify: auto | Boolean | MinifyOptions
     
-    /**
-      * By default the public path is set to `auto` - that way the html-webpack-plugin will try
-      * to set the publicPath according to the current filename and the webpack publicPath setting
-      */
     var publicPath: String | auto
     
-    // Inject scripts into head
-    /**
-      * Set up script loading
-      * blocking will result in <script src="..."></script>
-      * defer will result in <script defer src="..."></script>
-      *
-      * @default 'blocking'
-      */
-    var scriptLoading: blocking | defer
+    var scriptLoading: blocking | defer | module
     
-    /**
-      * Render errors into the HTML page
-      */
     var showErrors: Boolean
     
-    /**
-      * The `webpack` require path to the template.
-      * @see https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
-      */
     var template: String
     
-    /**
-      * Allow to use a html string instead of reading from a file
-      */
-    var templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+    var templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
     
-    /**
-      * Allows to overwrite the parameters used in the template
-      */
     var templateParameters: `false` | (js.Function4[
-        /* compilation */ js.Any, 
+        /* compilation */ Any, 
         /* assets */ Css, 
         /* assetTags */ BodyTags, 
         /* options */ this.type, 
-        StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-      ]) | StringDictionary[js.Any]
+        StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+      ]) | StringDictionary[Any]
     
-    /**
-      * The title to use for the generated HTML document
-      */
     var title: String
     
-    /**
-      * Enforce self closing tags e.g. <link />
-      */
     var xhtml: Boolean
   }
   object ProcessedOptions {
@@ -475,17 +513,17 @@ object mod {
       meta: `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])]),
       minify: auto | Boolean | MinifyOptions,
       publicPath: String | auto,
-      scriptLoading: blocking | defer,
+      scriptLoading: blocking | defer | module,
       showErrors: Boolean,
       template: String,
-      templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String],
+      templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String],
       templateParameters: `false` | (js.Function4[
-          /* compilation */ js.Any, 
+          /* compilation */ Any, 
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           ProcessedOptions, 
-          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-        ]) | StringDictionary[js.Any],
+          StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        ]) | StringDictionary[Any],
       title: String,
       xhtml: Boolean
     ): ProcessedOptions = {
@@ -503,11 +541,11 @@ object mod {
       
       inline def setChunksSortModeFunction2(value: (/* entryNameA */ String, /* entryNameB */ String) => Double): Self = StObject.set(x, "chunksSortMode", js.Any.fromFunction2(value))
       
-      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setExcludeChunks(value: js.Array[String]): Self = StObject.set(x, "excludeChunks", value.asInstanceOf[js.Any])
       
-      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value :_*))
+      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value*))
       
       inline def setFavicon(value: `false` | String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
@@ -523,30 +561,30 @@ object mod {
       
       inline def setPublicPath(value: String | auto): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      inline def setScriptLoading(value: blocking | defer): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
+      inline def setScriptLoading(value: blocking | defer | module): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
       
       inline def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateContent(
-        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
       ): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
       
-      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[js.Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
+      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
       
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
-              /* compilation */ js.Any, 
+              /* compilation */ Any, 
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               ProcessedOptions, 
-              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-            ]) | StringDictionary[js.Any]
+              StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+            ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
+        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -562,26 +600,26 @@ object mod {
     */
   trait TemplateParameter extends StObject {
     
-    var compilation: js.Any
+    var compilation: Any
     
     var htmlWebpackPlugin: Files
     
-    var webpackConfig: js.Any
+    var webpackConfig: Any
   }
   object TemplateParameter {
     
-    inline def apply(compilation: js.Any, htmlWebpackPlugin: Files, webpackConfig: js.Any): TemplateParameter = {
+    inline def apply(compilation: Any, htmlWebpackPlugin: Files, webpackConfig: Any): TemplateParameter = {
       val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], htmlWebpackPlugin = htmlWebpackPlugin.asInstanceOf[js.Any], webpackConfig = webpackConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateParameter]
     }
     
     extension [Self <: TemplateParameter](x: Self) {
       
-      inline def setCompilation(value: js.Any): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
+      inline def setCompilation(value: Any): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
       inline def setHtmlWebpackPlugin(value: Files): Self = StObject.set(x, "htmlWebpackPlugin", value.asInstanceOf[js.Any])
       
-      inline def setWebpackConfig(value: js.Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
+      inline def setWebpackConfig(value: Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
     }
   }
 }

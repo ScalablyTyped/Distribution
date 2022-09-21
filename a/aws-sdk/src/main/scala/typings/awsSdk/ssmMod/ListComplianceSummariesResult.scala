@@ -29,7 +29,7 @@ object ListComplianceSummariesResult {
     
     inline def setComplianceSummaryItemsUndefined: Self = StObject.set(x, "ComplianceSummaryItems", js.undefined)
     
-    inline def setComplianceSummaryItemsVarargs(value: ComplianceSummaryItem*): Self = StObject.set(x, "ComplianceSummaryItems", js.Array(value :_*))
+    inline def setComplianceSummaryItemsVarargs(value: ComplianceSummaryItem*): Self = StObject.set(x, "ComplianceSummaryItems", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

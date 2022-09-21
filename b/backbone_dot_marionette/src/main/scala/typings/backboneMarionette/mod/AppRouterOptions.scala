@@ -15,7 +15,7 @@ trait AppRouterOptions extends StObject {
   /**
     * An object that contains the methods specified in appRoutes.
     */
-  var controller: js.UndefOr[js.Any] = js.undefined
+  var controller: js.UndefOr[Any] = js.undefined
   
   /**
     * Define the app routes and the method names on the router that will be
@@ -36,7 +36,7 @@ object AppRouterOptions {
     
     inline def setAppRoutesUndefined: Self = StObject.set(x, "appRoutes", js.undefined)
     
-    inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     

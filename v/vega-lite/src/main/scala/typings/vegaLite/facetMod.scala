@@ -11,7 +11,7 @@ object facetMod {
   
   @JSImport("vega-lite/build/src/compile/data/facet", "FacetNode")
   @js.native
-  class FacetNode protected () extends DataFlowNode {
+  open class FacetNode protected () extends DataFlowNode {
     /**
       * @param model The facet model.
       * @param name The name that this facet source will have.
@@ -21,21 +21,21 @@ object facetMod {
     
     def assemble(): js.Array[VgData] = js.native
     
-    /* private */ var assembleFacetHeaderData: js.Any = js.native
+    /* private */ var assembleFacetHeaderData: Any = js.native
     
-    /* private */ var assembleRowColumnHeaderData: js.Any = js.native
+    /* private */ var assembleRowColumnHeaderData: Any = js.native
     
-    /* private */ val childModel: js.Any = js.native
+    /* private */ val childModel: Any = js.native
     
-    /* private */ val column: js.Any = js.native
+    /* private */ val column: Any = js.native
     
     var data: String = js.native
     
-    /* private */ val facet: js.Any = js.native
+    /* private */ val facet: Any = js.native
     
     def fields: js.Array[String] = js.native
     
-    /* private */ var getChildIndependentFieldsWithStep: js.Any = js.native
+    /* private */ var getChildIndependentFieldsWithStep: Any = js.native
     
     /**
       * The name to reference this source is its name.
@@ -46,6 +46,6 @@ object facetMod {
     
     val name: String = js.native
     
-    /* private */ val row: js.Any = js.native
+    /* private */ val row: Any = js.native
   }
 }

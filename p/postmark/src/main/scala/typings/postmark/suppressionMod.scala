@@ -55,7 +55,7 @@ object suppressionMod {
       
       inline def setSuppressions(value: js.Array[EmailAddress]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       
-      inline def setSuppressionsVarargs(value: EmailAddress*): Self = StObject.set(x, "Suppressions", js.Array(value :_*))
+      inline def setSuppressionsVarargs(value: EmailAddress*): Self = StObject.set(x, "Suppressions", js.Array(value*))
     }
   }
   
@@ -99,7 +99,7 @@ object suppressionMod {
       
       inline def setSuppressions(value: js.Array[SuppressionStatus]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       
-      inline def setSuppressionsVarargs(value: SuppressionStatus*): Self = StObject.set(x, "Suppressions", js.Array(value :_*))
+      inline def setSuppressionsVarargs(value: SuppressionStatus*): Self = StObject.set(x, "Suppressions", js.Array(value*))
     }
   }
   
@@ -118,7 +118,7 @@ object suppressionMod {
       
       inline def setSuppressions(value: js.Array[Suppression]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       
-      inline def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "Suppressions", js.Array(value :_*))
+      inline def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "Suppressions", js.Array(value*))
     }
   }
 }

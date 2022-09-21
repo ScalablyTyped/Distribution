@@ -14,7 +14,7 @@ trait AggregatedValue extends StObject {
   /**
     * The date the aggregating computations occurred, in Unix epoch time.
     */
-  var timestamp: Timestamp
+  var timestamp: js.Date
   
   /**
     * The value of the aggregates.
@@ -23,7 +23,7 @@ trait AggregatedValue extends StObject {
 }
 object AggregatedValue {
   
-  inline def apply(timestamp: Timestamp, value: Aggregates): AggregatedValue = {
+  inline def apply(timestamp: js.Date, value: Aggregates): AggregatedValue = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregatedValue]
   }
@@ -34,7 +34,7 @@ object AggregatedValue {
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Aggregates): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

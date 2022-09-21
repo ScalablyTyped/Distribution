@@ -15,6 +15,11 @@ trait GetUsageStatisticsResponse extends StObject {
     * An array of objects that contains the results of the query. Each object contains the data for an account that meets the filter criteria specified in the request.
     */
   var records: js.UndefOr[listOfUsageRecord] = js.undefined
+  
+  /**
+    * The inclusive time period that the usage data applies to. Possible values are: MONTH_TO_DATE, for the current calendar month to date; and, PAST_30_DAYS, for the preceding 30 days.
+    */
+  var timeRange: js.UndefOr[TimeRange] = js.undefined
 }
 object GetUsageStatisticsResponse {
   
@@ -33,6 +38,10 @@ object GetUsageStatisticsResponse {
     
     inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    inline def setRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "records", js.Array(value*))
+    
+    inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+    
+    inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
   }
 }

@@ -1,8 +1,8 @@
 package typings.recharts.mod
 
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +15,13 @@ trait TooltipProps
   
   var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.undefined
   
-  var content: js.UndefOr[ReactElement | StatelessComponent[js.Any] | ContentRenderer[TooltipProps]] = js.undefined
+  var content: js.UndefOr[ReactElement | FunctionComponent[Any] | ContentRenderer[TooltipProps]] = js.undefined
   
   var contentStyle: js.UndefOr[js.Object] = js.undefined
   
   var coordinate: js.UndefOr[Coordinate] = js.undefined
   
-  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[js.Any]] = js.undefined
+  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | FunctionComponent[Any]] = js.undefined
   
   var filterNull: js.UndefOr[Boolean] = js.undefined
   
@@ -68,7 +68,7 @@ object TooltipProps {
     
     inline def setAllowEscapeViewBoxUndefined: Self = StObject.set(x, "allowEscapeViewBox", js.undefined)
     
-    inline def setContent(value: ReactElement | StatelessComponent[js.Any] | ContentRenderer[TooltipProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactElement | FunctionComponent[Any] | ContentRenderer[TooltipProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentFunction1(value: TooltipProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
@@ -82,7 +82,7 @@ object TooltipProps {
     
     inline def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
     
-    inline def setCursor(value: Boolean | js.Object | ReactElement | StatelessComponent[js.Any]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Boolean | js.Object | ReactElement | FunctionComponent[Any]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
@@ -124,7 +124,7 @@ object TooltipProps {
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    inline def setPayloadVarargs(value: TooltipPayload*): Self = StObject.set(x, "payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: TooltipPayload*): Self = StObject.set(x, "payload", js.Array(value*))
     
     inline def setPosition(value: Coordinate): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

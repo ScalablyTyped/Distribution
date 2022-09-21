@@ -10,7 +10,7 @@ trait SectionProperties extends StObject {
   def AddBeforeSlide(SlideIndex: Double, sectionName: String): Double = js.native
   
   def AddSection(sectionIndex: Double): Double = js.native
-  def AddSection(sectionIndex: Double, sectionName: js.Any): Double = js.native
+  def AddSection(sectionIndex: Double, sectionName: Any): Double = js.native
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -24,7 +24,7 @@ trait SectionProperties extends StObject {
   
   def Name(sectionIndex: Double): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.SectionProperties_typekey")
   var PowerPointDotSectionProperties_typekey: SectionProperties = js.native

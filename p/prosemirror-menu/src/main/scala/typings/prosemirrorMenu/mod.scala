@@ -25,7 +25,7 @@ object mod {
   
   @JSImport("prosemirror-menu", "Dropdown")
   @js.native
-  class Dropdown[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class Dropdown[S /* <: Schema[Any, Any] */] protected () extends StObject {
     /**
       * Create a dropdown wrapping the elements. Options may include
       * the following properties:
@@ -45,17 +45,17 @@ object mod {
       * : When given, adds an extra set of CSS styles to the menu control.
       */
     def this(content: js.Array[MenuElement[S]]) = this()
-    def this(content: js.Array[MenuElement[S]], options: StringDictionary[js.Any]) = this()
+    def this(content: js.Array[MenuElement[S]], options: StringDictionary[Any]) = this()
     
     /**
       * Render the dropdown menu and sub-items.
       */
-    def render(view: EditorView[S]): Update[S] = js.native
+    def render(view: EditorView): Update = js.native
   }
   
   @JSImport("prosemirror-menu", "DropdownSubmenu")
   @js.native
-  class DropdownSubmenu[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class DropdownSubmenu[S /* <: Schema[Any, Any] */] protected () extends StObject {
     /**
       * Creates a submenu for the given group of menu elements. The
       * following options are recognized:
@@ -64,17 +64,17 @@ object mod {
       * : The label to show on the submenu.
       */
     def this(content: js.Array[MenuElement[S]]) = this()
-    def this(content: js.Array[MenuElement[S]], options: StringDictionary[js.Any]) = this()
+    def this(content: js.Array[MenuElement[S]], options: StringDictionary[Any]) = this()
     
     /**
       * Renders the submenu.
       */
-    def render(view: EditorView[S]): Dom[S] = js.native
+    def render(view: EditorView): Dom = js.native
   }
   
   @JSImport("prosemirror-menu", "MenuItem")
   @js.native
-  class MenuItem[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class MenuItem[S /* <: Schema[Any, Any] */] protected () extends StObject {
     def this(spec: MenuItemSpec[S]) = this()
     
     /**
@@ -82,7 +82,7 @@ object mod {
       * spec](#menu.MenuItemSpec.display), and adds an event handler which
       * executes the command when the representation is clicked.
       */
-    def render(view: EditorView[S]): Dom[S] = js.native
+    def render(view: EditorView): Dom = js.native
     
     /**
       * The spec used to create the menu item.
@@ -90,34 +90,34 @@ object mod {
     var spec: MenuItemSpec[S] = js.native
   }
   
-  inline def blockTypeItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockTypeItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
+  inline def blockTypeItem[S /* <: Schema[Any, Any] */](nodeType: NodeType, options: StringDictionary[Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockTypeItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
   @JSImport("prosemirror-menu", "joinUpItem")
   @js.native
-  def joinUpItem: MenuItem[js.Any] = js.native
-  inline def joinUpItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("joinUpItem")(x.asInstanceOf[js.Any])
+  def joinUpItem: MenuItem[Any] = js.native
+  inline def joinUpItem_=(x: MenuItem[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("joinUpItem")(x.asInstanceOf[js.Any])
   
   @JSImport("prosemirror-menu", "liftItem")
   @js.native
-  def liftItem: MenuItem[js.Any] = js.native
-  inline def liftItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liftItem")(x.asInstanceOf[js.Any])
+  def liftItem: MenuItem[Any] = js.native
+  inline def liftItem_=(x: MenuItem[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liftItem")(x.asInstanceOf[js.Any])
   
-  inline def menuBar[S /* <: Schema[js.Any, js.Any] */](options: Content[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBar")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
+  inline def menuBar[S /* <: Schema[Any, Any] */](options: Content[S]): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBar")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[S]]
   
-  inline def redoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
+  inline def redoItem(p: StringDictionary[Any]): MenuItem[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[Any]]
   
-  inline def renderGrouped[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]): DomUpdate[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGrouped")(view.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[DomUpdate[S]]
+  inline def renderGrouped[S /* <: Schema[Any, Any] */](view: EditorView, content: js.Array[js.Array[MenuElement[S]]]): DomUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGrouped")(view.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[DomUpdate]
   
   @JSImport("prosemirror-menu", "selectParentNodeItem")
   @js.native
-  def selectParentNodeItem: MenuItem[js.Any] = js.native
-  inline def selectParentNodeItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectParentNodeItem")(x.asInstanceOf[js.Any])
+  def selectParentNodeItem: MenuItem[Any] = js.native
+  inline def selectParentNodeItem_=(x: MenuItem[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectParentNodeItem")(x.asInstanceOf[js.Any])
   
-  inline def undoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("undoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
+  inline def undoItem(p: StringDictionary[Any]): MenuItem[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("undoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[Any]]
   
-  inline def wrapItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
+  inline def wrapItem[S /* <: Schema[Any, Any] */](nodeType: NodeType, options: StringDictionary[Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
-  trait MenuElement[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait MenuElement[S /* <: Schema[Any, Any] */] extends StObject {
     
     /**
       * Render the element for display in the menu. Must return a DOM
@@ -125,29 +125,29 @@ object mod {
       * a new state. The `update` function will return false if the
       * update hid the entire element.
       */
-    def render(pm: EditorView[S]): Dom[S]
+    def render(pm: EditorView): Dom
   }
   object MenuElement {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](render: EditorView[S] => Dom[S]): MenuElement[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](render: EditorView => Dom): MenuElement[S] = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[MenuElement[S]]
     }
     
-    extension [Self <: MenuElement[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MenuElement[S]) {
+    extension [Self <: MenuElement[?], S /* <: Schema[Any, Any] */](x: Self & MenuElement[S]) {
       
-      inline def setRender(value: EditorView[S] => Dom[S]): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: EditorView => Dom): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   
-  trait MenuItemSpec[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait MenuItemSpec[S /* <: Schema[Any, Any] */] extends StObject {
     
     /**
       * A predicate function to determine whether the item is 'active' (for
       * example, the item for toggling the strong mark might be active then
       * the cursor is in strong text).
       */
-    var active: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
+    var active: js.UndefOr[(js.Function1[/* p */ EditorState, Boolean]) | Null] = js.undefined
     
     /**
       * Optionally adds a CSS class to the item's DOM representation.
@@ -165,7 +165,7 @@ object mod {
       * given and returning false, the item will be given a disabled
       * styling.
       */
-    var enable: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
+    var enable: js.UndefOr[(js.Function1[/* p */ EditorState, Boolean]) | Null] = js.undefined
     
     /**
       * Describes an icon to show for this item. The object may specify
@@ -178,7 +178,7 @@ object mod {
       * optional `css` property giving additional CSS styling for the
       * text. _Or_ it may contain `dom` property containing a DOM node.
       */
-    var icon: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
+    var icon: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
     
     /**
       * Makes the item show up as a text label. Mostly useful for items
@@ -191,34 +191,34 @@ object mod {
       * A function that renders the item. You must provide either this,
       * [`icon`](#menu.MenuItemSpec.icon), or [`label`](#MenuItemSpec.label).
       */
-    var render: js.UndefOr[(js.Function1[/* p */ EditorView[S], Node]) | Null] = js.undefined
+    var render: js.UndefOr[(js.Function1[/* p */ EditorView, Node]) | Null] = js.undefined
     
     /**
       * The function to execute when the menu item is activated.
       */
-    def run(p1: EditorState[S], p2: js.Function1[/* p */ Transaction[S], Unit], p3: EditorView[S], p4: Event): Unit
+    def run(p1: EditorState, p2: js.Function1[/* p */ Transaction, Unit], p3: EditorView, p4: Event): Unit
     
     /**
       * Optional function that is used to determine whether the item is
       * appropriate at the moment. Deselected items will be hidden.
       */
-    var select: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
+    var select: js.UndefOr[(js.Function1[/* p */ EditorState, Boolean]) | Null] = js.undefined
     
     /**
       * Defines DOM title (mouseover) text for the item.
       */
-    var title: js.UndefOr[String | (js.Function1[/* p */ EditorState[S], String]) | Null] = js.undefined
+    var title: js.UndefOr[String | (js.Function1[/* p */ EditorState, String]) | Null] = js.undefined
   }
   object MenuItemSpec {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): MenuItemSpec[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](run: (EditorState, js.Function1[/* p */ Transaction, Unit], EditorView, Event) => Unit): MenuItemSpec[S] = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction4(run))
       __obj.asInstanceOf[MenuItemSpec[S]]
     }
     
-    extension [Self <: MenuItemSpec[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MenuItemSpec[S]) {
+    extension [Self <: MenuItemSpec[?], S /* <: Schema[Any, Any] */](x: Self & MenuItemSpec[S]) {
       
-      inline def setActive(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
+      inline def setActive(value: /* p */ EditorState => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
       
       inline def setActiveNull: Self = StObject.set(x, "active", null)
       
@@ -232,13 +232,13 @@ object mod {
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setEnable(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: /* p */ EditorState => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
       inline def setEnableNull: Self = StObject.set(x, "enable", null)
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setIcon(value: StringDictionary[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: StringDictionary[Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -250,23 +250,23 @@ object mod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setRender(value: /* p */ EditorView[S] => Node): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* p */ EditorView => Node): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderNull: Self = StObject.set(x, "render", null)
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setRun(value: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
+      inline def setRun(value: (EditorState, js.Function1[/* p */ Transaction, Unit], EditorView, Event) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
       
-      inline def setSelect(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* p */ EditorState => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectNull: Self = StObject.set(x, "select", null)
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setTitle(value: String | (js.Function1[/* p */ EditorState[S], String])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | (js.Function1[/* p */ EditorState, String])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleFunction1(value: /* p */ EditorState[S] => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+      inline def setTitleFunction1(value: /* p */ EditorState => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
       inline def setTitleNull: Self = StObject.set(x, "title", null)
       

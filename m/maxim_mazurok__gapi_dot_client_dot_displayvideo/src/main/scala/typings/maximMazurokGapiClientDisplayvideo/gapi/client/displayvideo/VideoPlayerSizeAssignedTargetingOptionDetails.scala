@@ -9,7 +9,7 @@ trait VideoPlayerSizeAssignedTargetingOptionDetails extends StObject {
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_VIDEO_PLAYER_SIZE`. */
   var targetingOptionId: js.UndefOr[String] = js.undefined
   
-  /** Output only. The video player size. */
+  /** The video player size. Output only in v1. Required in v2. */
   var videoPlayerSize: js.UndefOr[String] = js.undefined
 }
 object VideoPlayerSizeAssignedTargetingOptionDetails {

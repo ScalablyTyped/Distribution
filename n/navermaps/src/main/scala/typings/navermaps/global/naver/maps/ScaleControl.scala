@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.ScaleControl")
 @js.native
-class ScaleControl protected ()
+open class ScaleControl protected ()
   extends StObject
      with typings.navermaps.naver.maps.CustomControl {
   def this(ScaleControlOptions: typings.navermaps.naver.maps.ScaleControlOptions) = this()

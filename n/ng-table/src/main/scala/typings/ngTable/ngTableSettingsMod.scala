@@ -21,26 +21,26 @@ object ngTableSettingsMod {
   
   @JSImport("ng-table/src/core/ngTableSettings", "NgTableSettings")
   @js.native
-  class NgTableSettings protected () extends StObject {
+  open class NgTableSettings protected () extends StObject {
     def this(
       ngTableDefaults: IDefaults,
-      ngTableDefaultGetData: IDefaultGetData[js.Any],
-      ngTableDefaultGetGroups: IGetGroupFunc[js.Any]
+      ngTableDefaultGetData: IDefaultGetData[Any],
+      ngTableDefaultGetGroups: IGetGroupFunc[Any]
     ) = this()
     
     def createDefaults[T](): ISettings[T] = js.native
     
-    /* private */ var defaults: js.Any = js.native
+    /* private */ var defaults: Any = js.native
     
     def merge[T](existing: ISettings[T], newSettings: ISettings[T]): ISettings[T] = js.native
     
-    /* private */ var ngTableDefaultGetData: js.Any = js.native
+    /* private */ var ngTableDefaultGetData: Any = js.native
     
-    /* private */ var ngTableDefaultGetGroups: js.Any = js.native
+    /* private */ var ngTableDefaultGetGroups: Any = js.native
     
-    /* private */ var ngTableDefaults: js.Any = js.native
+    /* private */ var ngTableDefaults: Any = js.native
     
-    /* private */ def optimizeFilterDelay[T](settings: js.Any): js.Any = js.native
+    /* private */ def optimizeFilterDelay[T](settings: Any): Any = js.native
   }
   /* static members */
   object NgTableSettings {
@@ -148,7 +148,7 @@ object ngTableSettingsMod {
       
       inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
       
-      inline def setCountsVarargs(value: Double*): Self = StObject.set(x, "counts", js.Array(value :_*))
+      inline def setCountsVarargs(value: Double*): Self = StObject.set(x, "counts", js.Array(value*))
       
       inline def setDataOptions(value: IDataSettings): Self = StObject.set(x, "dataOptions", value.asInstanceOf[js.Any])
       
@@ -158,7 +158,7 @@ object ngTableSettingsMod {
       
       inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      inline def setDatasetVarargs(value: T*): Self = StObject.set(x, "dataset", js.Array(value :_*))
+      inline def setDatasetVarargs(value: T*): Self = StObject.set(x, "dataset", js.Array(value*))
       
       inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
       
@@ -172,7 +172,7 @@ object ngTableSettingsMod {
       
       inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
       
-      inline def setGetData(value: /* params */ NgTableParams[T] => js.Any | js.Array[T] | IPromise[js.Array[T]]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: /* params */ NgTableParams[T] => Any | js.Array[T] | IPromise[js.Array[T]]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
@@ -190,7 +190,7 @@ object ngTableSettingsMod {
       
       inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      inline def setInterceptorsVarargs(value: IInterceptor[T]*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: IInterceptor[T]*): Self = StObject.set(x, "interceptors", js.Array(value*))
       
       inline def setPaginationMaxBlocks(value: Double): Self = StObject.set(x, "paginationMaxBlocks", value.asInstanceOf[js.Any])
       

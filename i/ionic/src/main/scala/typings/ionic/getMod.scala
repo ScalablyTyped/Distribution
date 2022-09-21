@@ -11,11 +11,11 @@ object getMod {
   
   @JSImport("ionic/commands/config/get", "ConfigGetCommand")
   @js.native
-  class ConfigGetCommand protected () extends BaseConfigCommand {
+  open class ConfigGetCommand protected () extends BaseConfigCommand {
     def this(namespace: INamespace) = this()
     
-    def printConfig(ctx: ConfigContext, v: js.Any): Unit = js.native
+    def printConfig(ctx: ConfigContext, v: Any): Unit = js.native
     
-    def sanitizeEntry(key: String, value: js.Any): js.Any = js.native
+    def sanitizeEntry(key: String, value: Any): Any = js.native
   }
 }

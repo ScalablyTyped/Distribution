@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DeleteTableColumnsCommand")
 @js.native
-class DeleteTableColumnsCommand ()
+open class DeleteTableColumnsCommand ()
   extends StObject
      with typings.devexpressWeb.DeleteTableColumnsCommand {
   

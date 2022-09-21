@@ -12,7 +12,7 @@ trait InstanceMetadataOptions extends StObject {
   var HttpEndpoint: js.UndefOr[InstanceMetadataEndpointState] = js.undefined
   
   /**
-    * The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Default: 1 Possible values: Integers from 1 to 64
+    * The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Default: 1
     */
   var HttpPutResponseHopLimit: js.UndefOr[InstanceMetadataHttpPutResponseHopLimit] = js.undefined
   

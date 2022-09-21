@@ -60,7 +60,7 @@ object CreateCollectionOptions {
     
     inline def setShardKeysUndefined: Self = StObject.set(x, "shardKeys", js.undefined)
     
-    inline def setShardKeysVarargs(value: String*): Self = StObject.set(x, "shardKeys", js.Array(value :_*))
+    inline def setShardKeysVarargs(value: String*): Self = StObject.set(x, "shardKeys", js.Array(value*))
     
     inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     

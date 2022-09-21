@@ -43,7 +43,7 @@ trait DeviceInformation extends StObject {
   var pairing: DeviceInformationPairing
   
   /** Property store containing well-known values as well as additional properties that can be specified during device enumeration. */
-  var properties: IMapView[String, js.Any]
+  var properties: IMapView[String, Any]
   
   /**
     * Updates the properties of an existing DeviceInformation object.
@@ -63,7 +63,7 @@ object DeviceInformation {
     kind: DeviceInformationKind,
     name: String,
     pairing: DeviceInformationPairing,
-    properties: IMapView[String, js.Any],
+    properties: IMapView[String, Any],
     update: DeviceInformationUpdate => Unit
   ): DeviceInformation = {
     val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation.asInstanceOf[js.Any], getGlyphThumbnailAsync = js.Any.fromFunction0(getGlyphThumbnailAsync), getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), id = id.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pairing = pairing.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
@@ -90,7 +90,7 @@ object DeviceInformation {
     
     inline def setPairing(value: DeviceInformationPairing): Self = StObject.set(x, "pairing", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: DeviceInformationUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }

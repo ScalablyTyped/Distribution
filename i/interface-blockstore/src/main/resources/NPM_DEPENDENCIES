@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "interface-blockstore" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "interface-blockstore" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

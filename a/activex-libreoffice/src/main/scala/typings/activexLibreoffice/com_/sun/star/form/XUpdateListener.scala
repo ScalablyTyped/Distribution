@@ -38,7 +38,7 @@ object XUpdateListener {
     acquire: () => Unit,
     approveUpdate: EventObject => Boolean,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updated: EventObject => Unit
   ): XUpdateListener = {

@@ -10,15 +10,12 @@ Strip comments from code
 | ------------------ | :-------------: |
 | Full name          | gulp-strip-comments |
 | Keywords           | strip comments, gulpplugin, strip, gulp, comment, decomment, remove, clean, stream, minimize, reduce, remove, comments |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 430529 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43689.666666666664 |
+| # stars            | 44.0 |
 
 ## Links
-- [Homepage](https://github.com/RnbWd/gulp-strip-comments)
-- [Bugs](https://github.com/RnbWd/gulp-strip-comments/issues)
-- [Repository](https://github.com/RnbWd/gulp-strip-comments)
 - [Npm](https://www.npmjs.com/package/gulp-strip-comments)
     
 

@@ -18,11 +18,11 @@ trait VastCreativeLinear
   
   var skipDelay: Double | Null
   
-  var videoClickThroughURLTemplate: String | Null
+  var videoClickThroughURLTemplate: VastUrlValue | Null
   
-  var videoClickTrackingURLTemplates: js.Array[String]
+  var videoClickTrackingURLTemplates: js.Array[VastUrlValue]
   
-  var videoCustomClickURLTemplates: js.Array[String]
+  var videoCustomClickURLTemplates: js.Array[VastUrlValue]
 }
 object VastCreativeLinear {
   
@@ -32,8 +32,8 @@ object VastCreativeLinear {
     mediaFiles: js.Array[VastMediaFile],
     trackingEvents: VastTrackingEvents,
     `type`: String,
-    videoClickTrackingURLTemplates: js.Array[String],
-    videoCustomClickURLTemplates: js.Array[String]
+    videoClickTrackingURLTemplates: js.Array[VastUrlValue],
+    videoCustomClickURLTemplates: js.Array[VastUrlValue]
   ): VastCreativeLinear = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any], adId = null, adParameters = null, apiFramework = null, id = null, sequence = null, skipDelay = null, videoClickThroughURLTemplate = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -50,26 +50,26 @@ object VastCreativeLinear {
     
     inline def setIcons(value: js.Array[VastIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    inline def setIconsVarargs(value: VastIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: VastIcon*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setMediaFiles(value: js.Array[VastMediaFile]): Self = StObject.set(x, "mediaFiles", value.asInstanceOf[js.Any])
     
-    inline def setMediaFilesVarargs(value: VastMediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value :_*))
+    inline def setMediaFilesVarargs(value: VastMediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value*))
     
     inline def setSkipDelay(value: Double): Self = StObject.set(x, "skipDelay", value.asInstanceOf[js.Any])
     
     inline def setSkipDelayNull: Self = StObject.set(x, "skipDelay", null)
     
-    inline def setVideoClickThroughURLTemplate(value: String): Self = StObject.set(x, "videoClickThroughURLTemplate", value.asInstanceOf[js.Any])
+    inline def setVideoClickThroughURLTemplate(value: VastUrlValue): Self = StObject.set(x, "videoClickThroughURLTemplate", value.asInstanceOf[js.Any])
     
     inline def setVideoClickThroughURLTemplateNull: Self = StObject.set(x, "videoClickThroughURLTemplate", null)
     
-    inline def setVideoClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "videoClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    inline def setVideoClickTrackingURLTemplates(value: js.Array[VastUrlValue]): Self = StObject.set(x, "videoClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setVideoClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "videoClickTrackingURLTemplates", js.Array(value :_*))
+    inline def setVideoClickTrackingURLTemplatesVarargs(value: VastUrlValue*): Self = StObject.set(x, "videoClickTrackingURLTemplates", js.Array(value*))
     
-    inline def setVideoCustomClickURLTemplates(value: js.Array[String]): Self = StObject.set(x, "videoCustomClickURLTemplates", value.asInstanceOf[js.Any])
+    inline def setVideoCustomClickURLTemplates(value: js.Array[VastUrlValue]): Self = StObject.set(x, "videoCustomClickURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setVideoCustomClickURLTemplatesVarargs(value: String*): Self = StObject.set(x, "videoCustomClickURLTemplates", js.Array(value :_*))
+    inline def setVideoCustomClickURLTemplatesVarargs(value: VastUrlValue*): Self = StObject.set(x, "videoCustomClickURLTemplates", js.Array(value*))
   }
 }

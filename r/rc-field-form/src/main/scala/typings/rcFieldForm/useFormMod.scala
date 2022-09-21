@@ -21,112 +21,140 @@ object useFormMod {
   
   @JSImport("rc-field-form/es/useForm", "FormStore")
   @js.native
-  class FormStore protected () extends StObject {
+  open class FormStore protected () extends StObject {
     def this(forceRootUpdate: js.Function0[Unit]) = this()
     
-    /* private */ var callbacks: js.Any = js.native
+    /* private */ var callbacks: Any = js.native
     
-    /* private */ var dispatch: js.Any = js.native
+    /* private */ var destroyForm: Any = js.native
     
-    /* private */ var fieldEntities: js.Any = js.native
+    /* private */ var dispatch: Any = js.native
     
-    /* private */ var forceRootUpdate: js.Any = js.native
+    /* private */ var fieldEntities: Any = js.native
     
-    /* private */ var formHooked: js.Any = js.native
+    /* private */ var forceRootUpdate: Any = js.native
     
-    /* private */ var getDependencyChildrenFields: js.Any = js.native
+    /* private */ var formHooked: Any = js.native
+    
+    /* private */ var getDependencyChildrenFields: Any = js.native
     
     /**
       * Get registered field entities.
       * @param pure Only return field which has a `name`. Default: false
       */
-    /* private */ var getFieldEntities: js.Any = js.native
+    /* private */ var getFieldEntities: Any = js.native
     
-    /* private */ var getFieldEntitiesForNamePathList: js.Any = js.native
+    /* private */ var getFieldEntitiesForNamePathList: Any = js.native
     
-    /* private */ var getFieldError: js.Any = js.native
+    /* private */ var getFieldError: Any = js.native
     
-    /* private */ var getFieldValue: js.Any = js.native
+    /* private */ var getFieldValue: Any = js.native
     
-    /* private */ var getFields: js.Any = js.native
+    /* private */ var getFieldWarning: Any = js.native
     
-    /* private */ var getFieldsError: js.Any = js.native
+    /* private */ var getFields: Any = js.native
     
-    /* private */ var getFieldsMap: js.Any = js.native
+    /* private */ var getFieldsError: Any = js.native
     
-    /* private */ var getFieldsValue: js.Any = js.native
+    /* private */ var getFieldsMap: Any = js.native
+    
+    /* private */ var getFieldsValue: Any = js.native
     
     def getForm(): InternalFormInstance = js.native
     
-    /* private */ var getInitialValue: js.Any = js.native
+    /* private */ var getInitialValue: Any = js.native
     
-    /* private */ var getInternalHooks: js.Any = js.native
+    /* private */ var getInternalHooks: Any = js.native
     
     /**
       * This only trigger when a field is on constructor to avoid we get initialValue too late
       */
-    /* private */ var initEntityValue: js.Any = js.native
+    /* private */ var initEntityValue: Any = js.native
     
-    /* private */ var initialValues: js.Any = js.native
+    /* private */ var initialValues: Any = js.native
     
-    /* private */ var isFieldTouched: js.Any = js.native
+    /* private */ var isFieldTouched: Any = js.native
     
-    /* private */ var isFieldValidating: js.Any = js.native
+    /* private */ var isFieldValidating: Any = js.native
     
-    /* private */ var isFieldsTouched: js.Any = js.native
+    /* private */ var isFieldsTouched: Any = js.native
     
-    /* private */ var isFieldsValidating: js.Any = js.native
+    /* private */ var isFieldsValidating: Any = js.native
     
-    /* private */ var lastValidatePromise: js.Any = js.native
+    /* private */ var isMergedPreserve: Any = js.native
     
-    /* private */ var notifyObservers: js.Any = js.native
+    /* private */ var lastValidatePromise: Any = js.native
     
-    /* private */ var preserve: js.Any = js.native
+    /* private */ var notifyObservers: Any = js.native
     
-    /* private */ var registerField: js.Any = js.native
+    /* private */ var notifyWatch: Any = js.native
     
-    /* private */ var resetFields: js.Any = js.native
+    /* private */ var preserve: Any = js.native
+    
+    /**
+      * Record prev Form unmount fieldEntities which config preserve false.
+      * This need to be refill with initialValues instead of store value.
+      */
+    /* private */ var prevWithoutPreserves: Any = js.native
+    
+    /* private */ var registerField: Any = js.native
+    
+    /* private */ var registerWatch: Any = js.native
+    
+    /* private */ var resetFields: Any = js.native
     
     /**
       * Reset Field with field `initialValue` prop.
       * Can pass `entities` or `namePathList` or just nothing.
       */
-    /* private */ var resetWithFieldInitialValue: js.Any = js.native
+    /* private */ var resetWithFieldInitialValue: Any = js.native
     
-    /* private */ var setCallbacks: js.Any = js.native
+    /* private */ var setCallbacks: Any = js.native
     
-    /* private */ var setFields: js.Any = js.native
+    /* private */ var setFieldValue: Any = js.native
     
-    /* private */ var setFieldsValue: js.Any = js.native
+    /* private */ var setFields: Any = js.native
+    
+    /* private */ var setFieldsValue: Any = js.native
     
     /**
       * First time `setInitialValues` should update store with initial value
       */
-    /* private */ var setInitialValues: js.Any = js.native
+    /* private */ var setInitialValues: Any = js.native
     
-    /* private */ var setPreserve: js.Any = js.native
+    /* private */ var setPreserve: Any = js.native
     
-    /* private */ var setValidateMessages: js.Any = js.native
+    /* private */ var setValidateMessages: Any = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
     
-    /* private */ var submit: js.Any = js.native
+    /* private */ var submit: Any = js.native
     
-    /* private */ var subscribable: js.Any = js.native
+    /* private */ var subscribable: Any = js.native
     
-    /* private */ var timeoutId: js.Any = js.native
+    /* private */ var timeoutId: Any = js.native
     
-    /* private */ var triggerOnFieldsChange: js.Any = js.native
+    /**
+      * Notify dependencies children with parent update
+      * We need delay to trigger validate in case Field is under render props
+      */
+    /* private */ var triggerDependenciesUpdate: Any = js.native
     
-    /* private */ var updateValue: js.Any = js.native
+    /* private */ var triggerOnFieldsChange: Any = js.native
     
-    /* private */ var useSubscribe: js.Any = js.native
+    /* private */ var updateStore: Any = js.native
     
-    /* private */ var validateFields: js.Any = js.native
+    /* private */ var updateValue: Any = js.native
     
-    /* private */ var validateMessages: js.Any = js.native
+    /* private */ var useSubscribe: Any = js.native
     
-    /* private */ var warningUnhooked: js.Any = js.native
+    /* private */ var validateFields: Any = js.native
+    
+    /* private */ var validateMessages: Any = js.native
+    
+    /* private */ var warningUnhooked: Any = js.native
+    
+    /* private */ var watchList: Any = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -171,7 +199,7 @@ object useFormMod {
       
       inline def setNamePath(value: InternalNamePath): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
       
-      inline def setNamePathVarargs(value: (String | Double)*): Self = StObject.set(x, "namePath", js.Array(value :_*))
+      inline def setNamePathVarargs(value: (String | Double)*): Self = StObject.set(x, "namePath", js.Array(value*))
       
       inline def setType(value: updateValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -201,7 +229,7 @@ object useFormMod {
       
       inline def setNamePath(value: InternalNamePath): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
       
-      inline def setNamePathVarargs(value: (String | Double)*): Self = StObject.set(x, "namePath", js.Array(value :_*))
+      inline def setNamePathVarargs(value: (String | Double)*): Self = StObject.set(x, "namePath", js.Array(value*))
       
       inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
       

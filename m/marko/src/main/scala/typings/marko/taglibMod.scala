@@ -10,7 +10,7 @@ object taglibMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Taglib", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Taglib {
     def this(filePath: String) = this()
@@ -38,17 +38,17 @@ object taglibMod {
     var filePath: String = js.native
     
     def forEachTag(callback: js.Function1[/* tag */ ^, Unit]): Unit = js.native
-    def forEachTag(callback: js.Function1[/* tag */ ^, Unit], thisObj: js.Any): Unit = js.native
+    def forEachTag(callback: js.Function1[/* tag */ ^, Unit], thisObj: Any): Unit = js.native
     
     def getAttribute(name: String): js.UndefOr[typings.marko.attributeMod.default] = js.native
     
     var id: String = js.native
     
-    var imports: js.Any = js.native
+    var imports: Any = js.native
     
-    var importsLookup: js.Any = js.native
+    var importsLookup: Any = js.native
     
-    var inputFilesLookup: js.Any = js.native
+    var inputFilesLookup: Any = js.native
     
     /** @deprecated */
     var path: String = js.native
@@ -59,7 +59,7 @@ object taglibMod {
     
     var textTransformers: js.Array[typings.marko.transformerMod.default] = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     var transformers: js.Array[typings.marko.transformerMod.default] = js.native
   }

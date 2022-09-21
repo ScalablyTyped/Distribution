@@ -1,28 +1,37 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListenRequest extends js.Object {
+trait ListenRequest extends StObject {
+  
   var addTarget: js.UndefOr[Target] = js.undefined
+  
   var labels: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
+  
   var removeTarget: js.UndefOr[Double] = js.undefined
 }
-
 object ListenRequest {
-  @scala.inline
-  def apply(
-    addTarget: Target = null,
-    labels: ApiClientObjectMap[String] = null,
-    removeTarget: js.UndefOr[Double] = js.undefined
-  ): ListenRequest = {
+  
+  inline def apply(): ListenRequest = {
     val __obj = js.Dynamic.literal()
-    if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeTarget)) __obj.updateDynamic("removeTarget")(removeTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenRequest]
   }
+  
+  extension [Self <: ListenRequest](x: Self) {
+    
+    inline def setAddTarget(value: Target): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
+    
+    inline def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
+    
+    inline def setLabels(value: ApiClientObjectMap[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
+  }
 }
-

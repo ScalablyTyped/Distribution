@@ -9,7 +9,7 @@ object metricsMod {
   
   @JSImport("k6/metrics", "Counter")
   @js.native
-  class Counter protected () extends Metric {
+  open class Counter protected () extends Metric {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.
@@ -20,7 +20,7 @@ object metricsMod {
   
   @JSImport("k6/metrics", "Gauge")
   @js.native
-  class Gauge protected () extends Metric {
+  open class Gauge protected () extends Metric {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.
@@ -48,11 +48,14 @@ object metricsMod {
       */
     def add(value: Double): Unit = js.native
     def add(value: Double, tags: StringDictionary[String]): Unit = js.native
+    
+    /** The name of the custom metric. */
+    var name: String = js.native
   }
   
   @JSImport("k6/metrics", "Rate")
   @js.native
-  class Rate protected () extends Metric {
+  open class Rate protected () extends Metric {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.
@@ -63,7 +66,7 @@ object metricsMod {
   
   @JSImport("k6/metrics", "Trend")
   @js.native
-  class Trend protected () extends Metric {
+  open class Trend protected () extends Metric {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Sortable")
 @js.native
-class Sortable protected ()
+open class Sortable protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Sortable {
   def this(element: Element) = this()

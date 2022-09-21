@@ -13,7 +13,7 @@ object segmentedIosMod {
   
   @JSImport("@ant-design/react-native/lib/segmented-control/segmented.ios", JSImport.Default)
   @js.native
-  class default () extends SegmentedControl
+  open class default () extends SegmentedControl
   /* static members */
   object default {
     
@@ -28,8 +28,7 @@ object segmentedIosMod {
   }
   
   @js.native
-  trait SegmentedControl
-    extends Component[SegmentedControlProps, js.Any, js.Any]
+  trait SegmentedControl extends Component[SegmentedControlProps, Any, Any]
   
   trait SegmentedControlProps
     extends StObject

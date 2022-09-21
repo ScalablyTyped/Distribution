@@ -1,15 +1,31 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.pdfmake.pdfmakeStrings.auto
+import typings.pdfmake.pdfmakeStrings.canvas
+import typings.pdfmake.pdfmakeStrings.columns
+import typings.pdfmake.pdfmakeStrings.image
+import typings.pdfmake.pdfmakeStrings.ol
+import typings.pdfmake.pdfmakeStrings.pageReference
+import typings.pdfmake.pdfmakeStrings.qr
+import typings.pdfmake.pdfmakeStrings.stack
+import typings.pdfmake.pdfmakeStrings.svg
+import typings.pdfmake.pdfmakeStrings.table
+import typings.pdfmake.pdfmakeStrings.text
+import typings.pdfmake.pdfmakeStrings.textReference
+import typings.pdfmake.pdfmakeStrings.toc
+import typings.pdfmake.pdfmakeStrings.ul
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Column = typings.pdfmake.interfacesMod.Content & typings.pdfmake.anon.Width
+type Column = Content & ColumnProperties
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
-  - typings.pdfmake.interfacesMod.ArrayOfContent
+  - js.Array[scala.Any]
   - typings.pdfmake.interfacesMod.ContentText
   - typings.pdfmake.interfacesMod.ContentColumns
   - typings.pdfmake.interfacesMod.ContentStack
@@ -26,30 +42,32 @@ type Column = typings.pdfmake.interfacesMod.Content & typings.pdfmake.anon.Width
   - typings.pdfmake.interfacesMod.ContentQr
   - typings.pdfmake.interfacesMod.ContentCanvas
 */
-type Content = typings.pdfmake.interfacesMod._Content | java.lang.String
+type Content = _Content | js.Array[Any] | String
 
-type DynamicBackground = js.Function2[
-/* currentPage */ scala.Double, 
-/* pageSize */ typings.pdfmake.interfacesMod.ContextPageSize, 
-js.UndefOr[typings.pdfmake.interfacesMod.Content | scala.Null]]
+type DynamicCellLayout[T] = js.Function3[/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double, T | Null]
 
-type DynamicContent = js.Function3[
-/* currentPage */ scala.Double, 
-/* pageCount */ scala.Double, 
-/* pageSize */ typings.pdfmake.interfacesMod.ContextPageSize, 
-js.UndefOr[typings.pdfmake.interfacesMod.Content | scala.Null]]
+type DynamicLayout[T] = js.Function2[/* rowIndex */ Double, /* node */ ContentTable, T | Null]
 
-type DynamicLayout[T] = js.Function3[
-/* rowIndex */ scala.Double, 
-/* node */ typings.pdfmake.interfacesMod.ContentTable, 
-/* columnIndex */ scala.Double, 
-js.UndefOr[T | scala.Null]]
+type DynamicRowSize = js.Function1[/* rowIndex */ Double, Double | auto]
 
-type DynamicRowSize = js.Function1[/* row */ scala.Double, scala.Double | typings.pdfmake.pdfmakeStrings.auto]
+/**
+  * Internal helper type to prevent TypeScript from allowing element definitions
+  * that contain multiple element types at once.
+  *
+  * Advantages:
+  * - Does not allow setting multiple element properties together (e.g. `ol` + `ul`)
+  * - Does not allow using optional properties from other element types
+  *
+  * Disadvantages:
+  * - `property in content` does not narrow the type any longer
+  * - Autocompletion does not sort the primary element properties at the top
+  * - Error messages are not very good
+  */
+type ForbidOtherElementProperties[TProperty /* <: text | columns | stack | ul | ol | table | pageReference | textReference | toc | image | svg | qr | canvas */] = Omit[ForbiddenElementProperties, TProperty]
 
-type Margins = scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+type Margins = Double | (js.Tuple2[Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 
-type OrderedListElement = typings.pdfmake.interfacesMod.Content & typings.pdfmake.anon.Counter
+type PatternFill = js.Tuple2[String, String]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -57,19 +75,23 @@ type OrderedListElement = typings.pdfmake.interfacesMod.Content & typings.pdfmak
   - typings.pdfmake.pdfmakeStrings.Asterisk
   - java.lang.String
 */
-type Size = typings.pdfmake.interfacesMod._Size | scala.Double | java.lang.String
+type Size = _Size | Double | String
 
-type StyleDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.Style]
+type StyleDictionary = StringDictionary[Style]
 
-type TFontDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.TFontFamilyTypes]
+type StyleReference = String | Style | (js.Array[String | Style])
 
-type TableCell = js.Object | (typings.pdfmake.interfacesMod.Content & typings.pdfmake.anon.Border)
+type TFontDictionary = StringDictionary[TFontFamilyTypes]
+
+type TableCell = js.Object | (Any & TableCellProperties)
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - typings.pdfmake.interfacesMod.PredefinedTableLayout
   - typings.pdfmake.interfacesMod.CustomTableLayout
 */
-type TableLayout = typings.pdfmake.interfacesMod._TableLayout | java.lang.String
+type TableLayout = _TableLayout | String
 
-type UnorderedListElement = typings.pdfmake.interfacesMod.Content & typings.pdfmake.anon.ListType
+type VerticalDynamicCellLayout[T] = js.Function3[/* columnIndex */ Double, /* node */ ContentTable, /* rowIndex */ Double, T | Null]
+
+type VerticalDynamicLayout[T] = js.Function2[/* columnIndex */ Double, /* node */ ContentTable, T | Null]

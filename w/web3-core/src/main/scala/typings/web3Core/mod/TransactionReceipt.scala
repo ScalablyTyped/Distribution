@@ -15,6 +15,8 @@ trait TransactionReceipt extends StObject {
   
   var cumulativeGasUsed: Double
   
+  var effectiveGasPrice: Double
+  
   var events: js.UndefOr[StringDictionary[EventLog]] = js.undefined
   
   var from: String
@@ -39,6 +41,7 @@ object TransactionReceipt {
     blockHash: String,
     blockNumber: Double,
     cumulativeGasUsed: Double,
+    effectiveGasPrice: Double,
     from: String,
     gasUsed: Double,
     logs: js.Array[Log],
@@ -48,7 +51,7 @@ object TransactionReceipt {
     transactionHash: String,
     transactionIndex: Double
   ): TransactionReceipt = {
-    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], effectiveGasPrice = effectiveGasPrice.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionReceipt]
   }
   
@@ -64,6 +67,8 @@ object TransactionReceipt {
     
     inline def setCumulativeGasUsed(value: Double): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
     
+    inline def setEffectiveGasPrice(value: Double): Self = StObject.set(x, "effectiveGasPrice", value.asInstanceOf[js.Any])
+    
     inline def setEvents(value: StringDictionary[EventLog]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -76,7 +81,7 @@ object TransactionReceipt {
     
     inline def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
     
-    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

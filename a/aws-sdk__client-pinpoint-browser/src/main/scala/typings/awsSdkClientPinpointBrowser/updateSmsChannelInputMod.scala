@@ -8,5 +8,5 @@ object updateSmsChannelInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateSmsChannelInput", "UpdateSmsChannelInput")
   @js.native
-  val UpdateSmsChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateSmsChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

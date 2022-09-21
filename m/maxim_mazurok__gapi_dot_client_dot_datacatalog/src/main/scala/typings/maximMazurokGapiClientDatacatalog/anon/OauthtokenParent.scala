@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1Taxonomy
+import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1PolicyTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait OauthtokenParent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the project that the taxonomy will belong to. */
+  /** Required. Resource name of the taxonomy that the policy tag will belong to. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait OauthtokenParent extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1Taxonomy
+  var resource: GoogleCloudDatacatalogV1PolicyTag
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait OauthtokenParent extends StObject {
 }
 object OauthtokenParent {
   
-  inline def apply(parent: String, resource: GoogleCloudDatacatalogV1beta1Taxonomy): OauthtokenParent = {
+  inline def apply(parent: String, resource: GoogleCloudDatacatalogV1PolicyTag): OauthtokenParent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenParent]
   }
@@ -94,7 +94,7 @@ object OauthtokenParent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1Taxonomy): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDatacatalogV1PolicyTag): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

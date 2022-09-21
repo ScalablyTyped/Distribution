@@ -10,7 +10,7 @@ object useMod {
   
   @JSImport("ionic/commands/ssh/use", "SSHUseCommand")
   @js.native
-  class SSHUseCommand protected () extends SSHBaseCommand {
+  open class SSHUseCommand protected () extends SSHBaseCommand {
     def this(namespace: INamespace) = this()
   }
 }

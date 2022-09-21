@@ -4,122 +4,87 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains properties of a Campaign Manager account.
-  */
 trait SchemaAccount extends StObject {
   
   /**
     * Account permissions assigned to this account.
     */
-  var accountPermissionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var accountPermissionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Profile for this account. This is a read-only field that can be left
-    * blank.
+    * Profile for this account. This is a read-only field that can be left blank.
     */
-  var accountProfile: js.UndefOr[String] = js.undefined
+  var accountProfile: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether this account is active.
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Maximum number of active ads allowed for this account.
     */
-  var activeAdsLimitTier: js.UndefOr[String] = js.undefined
+  var activeAdsLimitTier: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether to serve creatives with Active View tags. If disabled,
-    * viewability data will not be available for any impressions.
+    * Whether to serve creatives with Active View tags. If disabled, viewability data will not be available for any impressions.
     */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
+  var activeViewOptOut: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * User role permissions available to the user roles of this account.
     */
-  var availablePermissionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var availablePermissionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * ID of the country associated with this account.
     */
-  var countryId: js.UndefOr[String] = js.undefined
+  var countryId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * ID of currency associated with this account. This is a required field.
-    * Acceptable values are:  - &quot;1&quot; for USD  - &quot;2&quot; for GBP
-    * - &quot;3&quot; for ESP  - &quot;4&quot; for SEK  - &quot;5&quot; for CAD
-    * - &quot;6&quot; for JPY  - &quot;7&quot; for DEM  - &quot;8&quot; for AUD
-    * - &quot;9&quot; for FRF  - &quot;10&quot; for ITL  - &quot;11&quot; for
-    * DKK  - &quot;12&quot; for NOK  - &quot;13&quot; for FIM  - &quot;14&quot;
-    * for ZAR  - &quot;15&quot; for IEP  - &quot;16&quot; for NLG  -
-    * &quot;17&quot; for EUR  - &quot;18&quot; for KRW  - &quot;19&quot; for
-    * TWD  - &quot;20&quot; for SGD  - &quot;21&quot; for CNY  - &quot;22&quot;
-    * for HKD  - &quot;23&quot; for NZD  - &quot;24&quot; for MYR  -
-    * &quot;25&quot; for BRL  - &quot;26&quot; for PTE  - &quot;27&quot; for
-    * MXP  - &quot;28&quot; for CLP  - &quot;29&quot; for TRY  - &quot;30&quot;
-    * for ARS  - &quot;31&quot; for PEN  - &quot;32&quot; for ILS  -
-    * &quot;33&quot; for CHF  - &quot;34&quot; for VEF  - &quot;35&quot; for
-    * COP  - &quot;36&quot; for GTQ  - &quot;37&quot; for PLN  - &quot;39&quot;
-    * for INR  - &quot;40&quot; for THB  - &quot;41&quot; for IDR  -
-    * &quot;42&quot; for CZK  - &quot;43&quot; for RON  - &quot;44&quot; for
-    * HUF  - &quot;45&quot; for RUB  - &quot;46&quot; for AED  - &quot;47&quot;
-    * for BGN  - &quot;48&quot; for HRK  - &quot;49&quot; for MXN  -
-    * &quot;50&quot; for NGN
+    * ID of currency associated with this account. This is a required field. Acceptable values are: - "1" for USD - "2" for GBP - "3" for ESP - "4" for SEK - "5" for CAD - "6" for JPY - "7" for DEM - "8" for AUD - "9" for FRF - "10" for ITL - "11" for DKK - "12" for NOK - "13" for FIM - "14" for ZAR - "15" for IEP - "16" for NLG - "17" for EUR - "18" for KRW - "19" for TWD - "20" for SGD - "21" for CNY - "22" for HKD - "23" for NZD - "24" for MYR - "25" for BRL - "26" for PTE - "28" for CLP - "29" for TRY - "30" for ARS - "31" for PEN - "32" for ILS - "33" for CHF - "34" for VEF - "35" for COP - "36" for GTQ - "37" for PLN - "39" for INR - "40" for THB - "41" for IDR - "42" for CZK - "43" for RON - "44" for HUF - "45" for RUB - "46" for AED - "47" for BGN - "48" for HRK - "49" for MXN - "50" for NGN - "51" for EGP
     */
-  var currencyId: js.UndefOr[String] = js.undefined
+  var currencyId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Default placement dimensions for this account.
     */
-  var defaultCreativeSizeId: js.UndefOr[String] = js.undefined
+  var defaultCreativeSizeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Description of this account.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of this account. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#account&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#account".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Locale of this account. Acceptable values are:  - &quot;cs&quot; (Czech)
-    * - &quot;de&quot; (German)  - &quot;en&quot; (English)  -
-    * &quot;en-GB&quot; (English United Kingdom)  - &quot;es&quot; (Spanish)  -
-    * &quot;fr&quot; (French)  - &quot;it&quot; (Italian)  - &quot;ja&quot;
-    * (Japanese)  - &quot;ko&quot; (Korean)  - &quot;pl&quot; (Polish)  -
-    * &quot;pt-BR&quot; (Portuguese Brazil)  - &quot;ru&quot; (Russian)  -
-    * &quot;sv&quot; (Swedish)  - &quot;tr&quot; (Turkish)  - &quot;zh-CN&quot;
-    * (Chinese Simplified)  - &quot;zh-TW&quot; (Chinese Traditional)
+    * Locale of this account. Acceptable values are: - "cs" (Czech) - "de" (German) - "en" (English) - "en-GB" (English United Kingdom) - "es" (Spanish) - "fr" (French) - "it" (Italian) - "ja" (Japanese) - "ko" (Korean) - "pl" (Polish) - "pt-BR" (Portuguese Brazil) - "ru" (Russian) - "sv" (Swedish) - "tr" (Turkish) - "zh-CN" (Chinese Simplified) - "zh-TW" (Chinese Traditional)
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Maximum image size allowed for this account, in kilobytes. Value must be
-    * greater than or equal to 1.
+    * Maximum image size allowed for this account, in kilobytes. Value must be greater than or equal to 1.
     */
-  var maximumImageSize: js.UndefOr[String] = js.undefined
+  var maximumImageSize: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of this account. This is a required field, and must be less than 128
-    * characters long and be globally unique.
+    * Name of this account. This is a required field, and must be less than 128 characters long and be globally unique.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether campaigns created in this account will be enabled for Nielsen OCR
-    * reach ratings by default.
+    * Whether campaigns created in this account will be enabled for Nielsen OCR reach ratings by default.
     */
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
+  var nielsenOcrEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Reporting configuration of this account.
@@ -129,13 +94,12 @@ trait SchemaAccount extends StObject {
   /**
     * Share Path to Conversion reports with Twitter.
     */
-  var shareReportsWithTwitter: js.UndefOr[Boolean] = js.undefined
+  var shareReportsWithTwitter: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * File size limit in kilobytes of Rich Media teaser creatives. Acceptable
-    * values are 1 to 10240, inclusive.
+    * File size limit in kilobytes of Rich Media teaser creatives. Acceptable values are 1 to 10240, inclusive.
     */
-  var teaserSizeLimit: js.UndefOr[String] = js.undefined
+  var teaserSizeLimit: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccount {
   
@@ -148,11 +112,15 @@ object SchemaAccount {
     
     inline def setAccountPermissionIds(value: js.Array[String]): Self = StObject.set(x, "accountPermissionIds", value.asInstanceOf[js.Any])
     
+    inline def setAccountPermissionIdsNull: Self = StObject.set(x, "accountPermissionIds", null)
+    
     inline def setAccountPermissionIdsUndefined: Self = StObject.set(x, "accountPermissionIds", js.undefined)
     
-    inline def setAccountPermissionIdsVarargs(value: String*): Self = StObject.set(x, "accountPermissionIds", js.Array(value :_*))
+    inline def setAccountPermissionIdsVarargs(value: String*): Self = StObject.set(x, "accountPermissionIds", js.Array(value*))
     
     inline def setAccountProfile(value: String): Self = StObject.set(x, "accountProfile", value.asInstanceOf[js.Any])
+    
+    inline def setAccountProfileNull: Self = StObject.set(x, "accountProfile", null)
     
     inline def setAccountProfileUndefined: Self = StObject.set(x, "accountProfile", js.undefined)
     
@@ -160,57 +128,85 @@ object SchemaAccount {
     
     inline def setActiveAdsLimitTier(value: String): Self = StObject.set(x, "activeAdsLimitTier", value.asInstanceOf[js.Any])
     
+    inline def setActiveAdsLimitTierNull: Self = StObject.set(x, "activeAdsLimitTier", null)
+    
     inline def setActiveAdsLimitTierUndefined: Self = StObject.set(x, "activeAdsLimitTier", js.undefined)
+    
+    inline def setActiveNull: Self = StObject.set(x, "active", null)
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     
+    inline def setActiveViewOptOutNull: Self = StObject.set(x, "activeViewOptOut", null)
+    
     inline def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
     
     inline def setAvailablePermissionIds(value: js.Array[String]): Self = StObject.set(x, "availablePermissionIds", value.asInstanceOf[js.Any])
     
+    inline def setAvailablePermissionIdsNull: Self = StObject.set(x, "availablePermissionIds", null)
+    
     inline def setAvailablePermissionIdsUndefined: Self = StObject.set(x, "availablePermissionIds", js.undefined)
     
-    inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value :_*))
+    inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value*))
     
     inline def setCountryId(value: String): Self = StObject.set(x, "countryId", value.asInstanceOf[js.Any])
+    
+    inline def setCountryIdNull: Self = StObject.set(x, "countryId", null)
     
     inline def setCountryIdUndefined: Self = StObject.set(x, "countryId", js.undefined)
     
     inline def setCurrencyId(value: String): Self = StObject.set(x, "currencyId", value.asInstanceOf[js.Any])
     
+    inline def setCurrencyIdNull: Self = StObject.set(x, "currencyId", null)
+    
     inline def setCurrencyIdUndefined: Self = StObject.set(x, "currencyId", js.undefined)
     
     inline def setDefaultCreativeSizeId(value: String): Self = StObject.set(x, "defaultCreativeSizeId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCreativeSizeIdNull: Self = StObject.set(x, "defaultCreativeSizeId", null)
     
     inline def setDefaultCreativeSizeIdUndefined: Self = StObject.set(x, "defaultCreativeSizeId", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleNull: Self = StObject.set(x, "locale", null)
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     inline def setMaximumImageSize(value: String): Self = StObject.set(x, "maximumImageSize", value.asInstanceOf[js.Any])
     
+    inline def setMaximumImageSizeNull: Self = StObject.set(x, "maximumImageSize", null)
+    
     inline def setMaximumImageSizeUndefined: Self = StObject.set(x, "maximumImageSize", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNielsenOcrEnabled(value: Boolean): Self = StObject.set(x, "nielsenOcrEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setNielsenOcrEnabledNull: Self = StObject.set(x, "nielsenOcrEnabled", null)
     
     inline def setNielsenOcrEnabledUndefined: Self = StObject.set(x, "nielsenOcrEnabled", js.undefined)
     
@@ -220,9 +216,13 @@ object SchemaAccount {
     
     inline def setShareReportsWithTwitter(value: Boolean): Self = StObject.set(x, "shareReportsWithTwitter", value.asInstanceOf[js.Any])
     
+    inline def setShareReportsWithTwitterNull: Self = StObject.set(x, "shareReportsWithTwitter", null)
+    
     inline def setShareReportsWithTwitterUndefined: Self = StObject.set(x, "shareReportsWithTwitter", js.undefined)
     
     inline def setTeaserSizeLimit(value: String): Self = StObject.set(x, "teaserSizeLimit", value.asInstanceOf[js.Any])
+    
+    inline def setTeaserSizeLimitNull: Self = StObject.set(x, "teaserSizeLimit", null)
     
     inline def setTeaserSizeLimitUndefined: Self = StObject.set(x, "teaserSizeLimit", js.undefined)
   }

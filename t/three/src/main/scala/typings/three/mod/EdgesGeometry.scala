@@ -6,14 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "EdgesGeometry")
 @js.native
-class EdgesGeometry protected ()
-  extends typings.three.geometriesMod.EdgesGeometry {
-  /**
-  	 * @param geometry
-  	 * @param [thresholdAngle=1]
-  	 */
-  def this(geometry: typings.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typings.three.geometryMod.Geometry) = this()
-  def this(geometry: typings.three.bufferGeometryMod.BufferGeometry, thresholdAngle: Double) = this()
-  def this(geometry: typings.three.geometryMod.Geometry, thresholdAngle: Double) = this()
+/**
+  * @param geometry
+  * @param [thresholdAngle=1]
+  */
+open class EdgesGeometry[TBufferGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */] ()
+  extends typings.three.threeMod.EdgesGeometry[TBufferGeometry] {
+  def this(geometry: TBufferGeometry) = this()
+  def this(geometry: TBufferGeometry, thresholdAngle: Double) = this()
+  def this(geometry: Unit, thresholdAngle: Double) = this()
 }

@@ -22,6 +22,6 @@ object DisksAddResourcePoliciesRequest {
     
     inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
   }
 }

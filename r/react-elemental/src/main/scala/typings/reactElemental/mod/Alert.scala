@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "Alert")
 @js.native
-class Alert protected ()
-  extends Component[AlertProps, js.Object, js.Any] {
+open class Alert protected ()
+  extends Component[AlertProps, js.Object, Any] {
   def this(props: AlertProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AlertProps, context: js.Any) = this()
+  def this(props: AlertProps, context: Any) = this()
 }

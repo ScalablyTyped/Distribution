@@ -2,15 +2,18 @@ package typings.antDesignIconsAngular
 
 import typings.angularCommon.httpMod.HttpBackend
 import typings.angularCommon.httpMod.HttpClient
+import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.RendererFactory2
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectableDeclaration
 import typings.angularPlatformBrowser.mod.DomSanitizer
+import typings.antDesignIconsAngular.anon.Optional
 import typings.antDesignIconsAngular.typesMod.CachedIconDefinition
 import typings.antDesignIconsAngular.typesMod.IconDefinition
 import typings.antDesignIconsAngular.typesMod.ThemeType
 import typings.antDesignIconsAngular.typesMod.TwoToneColorPalette
 import typings.antDesignIconsAngular.typesMod.TwoToneColorPaletteSetter
-import typings.rxjs.mod.Observable_
 import typings.std.Map
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -19,15 +22,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iconServiceMod {
   
+  @JSImport("@ant-design/icons-angular/component/icon.service", "ANT_ICONS")
+  @js.native
+  val ANT_ICONS: InjectionToken[js.Array[IconDefinition]] = js.native
+  
   @JSImport("@ant-design/icons-angular/component/icon.service", "IconService")
   @js.native
-  class IconService protected () extends StObject {
+  open class IconService protected () extends StObject {
     def this(
       _rendererFactory: RendererFactory2,
       _handler: HttpBackend,
-      _document: js.Any,
-      sanitizer: DomSanitizer
+      _document: Any,
+      sanitizer: DomSanitizer,
+      _antIcons: js.Array[IconDefinition]
     ) = this()
+    
+    /* protected */ var _antIcons: js.Array[IconDefinition] = js.native
     
     /**
       * Url prefix for fetching inline SVG by dynamic importing.
@@ -38,27 +48,35 @@ object iconServiceMod {
     
     /* protected */ def _createSVGElementFromString(str: String): SVGElement = js.native
     
-    /* protected */ var _document: js.Any = js.native
+    /**
+      * Disable dynamic loading (support static loading only).
+      */
+    /* protected */ def _disableDynamicLoading: Boolean = js.native
+    
+    /* protected */ var _document: Any = js.native
     
     /** A flag indicates whether jsonp loading is enabled. */
-    /* private */ var _enableJsonpLoading: js.Any = js.native
+    /* private */ var _enableJsonpLoading: Any = js.native
     
     /* protected */ var _handler: HttpBackend = js.native
     
     /* protected */ var _http: HttpClient = js.native
     
-    /* protected */ var _inProgressFetches: Map[String, Observable_[IconDefinition | Null]] = js.native
+    /* protected */ var _inProgressFetches: Map[
+        String, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<IconDefinition | null> */ Any
+      ] = js.native
     
     /* private */ @JSName("_jsonpIconLoad$")
-    val _jsonpIconLoad$: js.Any = js.native
+    val _jsonpIconLoad$: Any = js.native
     
     /**
       * Get raw svg and assemble a `IconDefinition` object.
       * @param type
       */
-    /* protected */ def _loadIconDynamically(`type`: String): Observable_[IconDefinition | Null] = js.native
+    /* protected */ def _loadIconDynamically(`type`: String): Any = js.native
     
-    /* protected */ def _loadIconDynamicallyWithJsonp(icon: IconDefinition, url: String): Observable_[IconDefinition] = js.native
+    /* protected */ def _loadIconDynamicallyWithJsonp(icon: IconDefinition, url: String): Any = js.native
     
     /**
       * Render a new `SVGElement` for a given `IconDefinition`, or make a copy from cache.
@@ -115,15 +133,15 @@ object iconServiceMod {
     
     def getCachedIcons(): Map[String, IconDefinition] = js.native
     
-    def getRenderedContent(icon: String): Observable_[SVGElement] = js.native
-    def getRenderedContent(icon: String, twoToneColor: String): Observable_[SVGElement] = js.native
+    def getRenderedContent(icon: String): Any = js.native
+    def getRenderedContent(icon: String, twoToneColor: String): Any = js.native
     /**
       * Get a rendered `SVGElement`.
       * @param icon
       * @param twoToneColor
       */
-    def getRenderedContent(icon: IconDefinition): Observable_[SVGElement] = js.native
-    def getRenderedContent(icon: IconDefinition, twoToneColor: String): Observable_[SVGElement] = js.native
+    def getRenderedContent(icon: IconDefinition): Any = js.native
+    def getRenderedContent(icon: IconDefinition, twoToneColor: String): Any = js.native
     
     /* protected */ var sanitizer: DomSanitizer = js.native
     
@@ -134,5 +152,22 @@ object iconServiceMod {
       * Call this method to switch to jsonp like loading.
       */
     def useJsonpLoading(): Unit = js.native
+  }
+  /* static members */
+  object IconService {
+    
+    @JSImport("@ant-design/icons-angular/component/icon.service", "IconService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/icons-angular/component/icon.service", "IconService.\u0275fac")
+    @js.native
+    def ɵfac: ɵɵFactoryDeclaration[IconService, js.Tuple5[Null, Optional, Optional, Null, Optional]] = js.native
+    inline def ɵfac_=(x: ɵɵFactoryDeclaration[IconService, js.Tuple5[Null, Optional, Optional, Null, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-angular/component/icon.service", "IconService.\u0275prov")
+    @js.native
+    def ɵprov: ɵɵInjectableDeclaration[IconService] = js.native
+    inline def ɵprov_=(x: ɵɵInjectableDeclaration[IconService]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
 }

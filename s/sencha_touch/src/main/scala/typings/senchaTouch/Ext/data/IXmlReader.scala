@@ -12,7 +12,7 @@ trait IXmlReader
     * @param data Object The raw data object.
     * @returns Object Returns the documentElement property of the data object if present, or the same object if not.
     */
-  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of record
     * @returns String
@@ -36,7 +36,7 @@ object IXmlReader {
   
   extension [Self <: IXmlReader](x: Self) {
     
-    inline def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     

@@ -10,10 +10,10 @@ Simple, lightweight model-based validation for Vue.js
 | ------------------ | :-------------: |
 | Full name          | vuelidate |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 158 |
-| # downloads        | 7582098 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1056193.6666666667 |
+| # stars            | 6380.0 |
 
 ## Links
 - [Homepage](https://github.com/monterail/vuelidate#readme)

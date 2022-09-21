@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark/dist/client/models", "UpdateTemplateRequest")
 @js.native
-class UpdateTemplateRequest protected ()
+open class UpdateTemplateRequest protected ()
   extends typings.postmark.templateMod.UpdateTemplateRequest {
   def this(
     Name: js.UndefOr[String],

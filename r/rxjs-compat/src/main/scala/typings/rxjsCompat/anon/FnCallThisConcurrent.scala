@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisConcurrent extends StObject {
   
-  def apply[T](): js.Any = js.native
-  def apply[T](concurrent: Double): js.Any = js.native
+  def apply[T](): Any = js.native
+  def apply[T](concurrent: Double): Any = js.native
 }

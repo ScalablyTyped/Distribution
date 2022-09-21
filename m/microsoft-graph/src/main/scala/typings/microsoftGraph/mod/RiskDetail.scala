@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised
   - typings.microsoftGraph.microsoftGraphStrings.hidden
   - typings.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait RiskDetail extends StObject
 object RiskDetail {
@@ -38,7 +39,7 @@ object RiskDetail {
   
   inline def none: none_ = "none".asInstanceOf[none_]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
   inline def userPassedMFADrivenByRiskBasedPolicy: typings.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy = "userPassedMFADrivenByRiskBasedPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy]
   

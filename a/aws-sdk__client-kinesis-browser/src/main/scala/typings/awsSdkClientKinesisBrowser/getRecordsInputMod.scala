@@ -8,5 +8,5 @@ object getRecordsInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/GetRecordsInput", "GetRecordsInput")
   @js.native
-  val GetRecordsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetRecordsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

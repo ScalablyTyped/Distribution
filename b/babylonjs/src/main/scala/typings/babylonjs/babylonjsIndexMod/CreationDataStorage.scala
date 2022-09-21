@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "_CreationDataStorage")
 @js.native
-class CreationDataStorage ()
+open class CreationDataStorage ()
   extends typings.babylonjs.meshMod.CreationDataStorage

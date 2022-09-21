@@ -29,7 +29,7 @@ object ListDocumentClassifiersResponse {
     
     inline def setDocumentClassifierPropertiesListUndefined: Self = StObject.set(x, "DocumentClassifierPropertiesList", js.undefined)
     
-    inline def setDocumentClassifierPropertiesListVarargs(value: DocumentClassifierProperties*): Self = StObject.set(x, "DocumentClassifierPropertiesList", js.Array(value :_*))
+    inline def setDocumentClassifierPropertiesListVarargs(value: DocumentClassifierProperties*): Self = StObject.set(x, "DocumentClassifierPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

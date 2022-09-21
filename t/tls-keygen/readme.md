@@ -11,9 +11,9 @@ Generate a self-signed TLS certificate and add it to the trusted certificate sto
 | Full name          | tls-keygen |
 | Keywords           | localhost, ssl, tls, certificate, self-signed |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 18252 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4738.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://gitlab.com/sebdeckers/tls-keygen#readme)

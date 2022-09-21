@@ -41,7 +41,7 @@ object asciiMod {
       
       inline def setChildren(value: js.Array[ReadonlyRangeTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReadonlyRangeTree*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReadonlyRangeTree*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

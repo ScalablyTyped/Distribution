@@ -12,7 +12,7 @@ trait LodashFlatMapDepth extends StObject {
   
   def apply(iteratee: String): LodashFlatMapDepth3x1 = js.native
   def apply(iteratee: String, depth: Double): LodashFlatMapDepth3x3 = js.native
-  def apply(iteratee: String, depth: Double, collection: js.Object): js.Array[js.Any] = js.native
+  def apply(iteratee: String, depth: Double, collection: js.Object): js.Array[Any] = js.native
   def apply(iteratee: String, depth: __): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: String, depth: __, collection: js.Object): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: js.Object): LodashFlatMapDepth4x1 = js.native

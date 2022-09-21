@@ -18,5 +18,5 @@ object getScrollMod {
   inline def default(target: HTMLElement, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def default(target: Window, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def isWindow(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWindow(obj: Any): /* is std.Window */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Window */ Boolean]
 }

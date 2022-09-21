@@ -15,7 +15,7 @@ object pathNodeMod {
   
   @JSImport("@uirouter/core/lib/path/pathNode", "PathNode")
   @js.native
-  class PathNode protected () extends StObject {
+  open class PathNode protected () extends StObject {
     /** Creates a copy of a PathNode */
     def this(node: PathNode) = this()
     /** Creates a new (empty) PathNode for a State */
@@ -50,7 +50,7 @@ object pathNodeMod {
     var paramSchema: js.Array[Param] = js.native
     
     /** The parameter values that belong to the state */
-    var paramValues: StringDictionary[js.Any] = js.native
+    var paramValues: StringDictionary[Any] = js.native
     
     /** Gets a specific [[Param]] metadata that belongs to the node */
     def parameter(name: String): Param = js.native

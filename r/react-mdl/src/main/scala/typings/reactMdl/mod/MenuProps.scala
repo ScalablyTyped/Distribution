@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MenuProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with RippleComponent {
   
   var align: js.UndefOr[String] = js.undefined

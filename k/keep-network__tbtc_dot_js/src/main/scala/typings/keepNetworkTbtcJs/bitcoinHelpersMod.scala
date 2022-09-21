@@ -6,7 +6,7 @@ import typings.keepNetworkTbtcJs.anon.PubKeyHashFrom
 import typings.keepNetworkTbtcJs.bitcoinSPVMod.Proof
 import typings.keepNetworkTbtcJs.electrumClientMod.Config
 import typings.keepNetworkTbtcJs.electrumClientMod.default
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object bitcoinHelpersMod {
     
     def publicKeyPointToPublicKeyString(publicKeyX: String, publicKeyY: String): String
     
-    var satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    var satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
     
     def setElectrumConfig(newConfig: Config): Unit
     
@@ -40,10 +40,10 @@ object bitcoinHelpersMod {
       Network: MAINNET,
       Transaction: AddWitnessSignature,
       publicKeyPointToPublicKeyString: (String, String) => String,
-      satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
       setElectrumConfig: Config => Unit,
       signatureDER: (String, String) => Buffer,
-      withElectrumClient: js.Function1[/* client */ default, js.Promise[js.Any]] => js.Promise[js.Any]
+      withElectrumClient: js.Function1[/* client */ default, js.Promise[Any]] => js.Promise[Any]
     ): BitcoinHelpers = {
       val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Network = Network.asInstanceOf[js.Any], Transaction = Transaction.asInstanceOf[js.Any], publicKeyPointToPublicKeyString = js.Any.fromFunction2(publicKeyPointToPublicKeyString), satoshisPerBtc = satoshisPerBtc.asInstanceOf[js.Any], setElectrumConfig = js.Any.fromFunction1(setElectrumConfig), signatureDER = js.Any.fromFunction2(signatureDER), withElectrumClient = js.Any.fromFunction1(withElectrumClient), electrumConfig = null)
       __obj.asInstanceOf[BitcoinHelpers]
@@ -62,7 +62,7 @@ object bitcoinHelpersMod {
       inline def setPublicKeyPointToPublicKeyString(value: (String, String) => String): Self = StObject.set(x, "publicKeyPointToPublicKeyString", js.Any.fromFunction2(value))
       
       inline def setSatoshisPerBtc(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): Self = StObject.set(x, "satoshisPerBtc", value.asInstanceOf[js.Any])
       
       inline def setSetElectrumConfig(value: Config => Unit): Self = StObject.set(x, "setElectrumConfig", js.Any.fromFunction1(value))
@@ -71,7 +71,7 @@ object bitcoinHelpersMod {
       
       inline def setTransaction(value: AddWitnessSignature): Self = StObject.set(x, "Transaction", value.asInstanceOf[js.Any])
       
-      inline def setWithElectrumClient(value: js.Function1[/* client */ default, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "withElectrumClient", js.Any.fromFunction1(value))
+      inline def setWithElectrumClient(value: js.Function1[/* client */ default, js.Promise[Any]] => js.Promise[Any]): Self = StObject.set(x, "withElectrumClient", js.Any.fromFunction1(value))
     }
   }
   

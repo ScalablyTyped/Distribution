@@ -10,15 +10,12 @@ Declarative HTTP requests with React.
 | ------------------ | :-------------: |
 | Full name          | react-request |
 | Keywords           | react, http, https, request, requests, response, xhr, xmlhttprequest, fetch, cors, json, api, data, rest, restful, crud |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 134667 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5208.333333333333 |
+| # stars            | 356.0 |
 
 ## Links
-- [Homepage](https://github.com/jamesplease/react-request#readme)
-- [Bugs](https://github.com/jamesplease/react-request/issues)
-- [Repository](https://github.com/jamesplease/react-request)
 - [Npm](https://www.npmjs.com/package/react-request)
     
 

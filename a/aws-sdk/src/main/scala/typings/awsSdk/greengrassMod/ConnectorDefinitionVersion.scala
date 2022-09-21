@@ -24,6 +24,6 @@ object ConnectorDefinitionVersion {
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "Connectors", js.undefined)
     
-    inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value :_*))
+    inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value*))
   }
 }

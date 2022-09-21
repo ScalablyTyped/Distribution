@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeViewTypeCommand")
 @js.native
-class ChangeViewTypeCommand ()
+open class ChangeViewTypeCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeViewTypeCommand {
   

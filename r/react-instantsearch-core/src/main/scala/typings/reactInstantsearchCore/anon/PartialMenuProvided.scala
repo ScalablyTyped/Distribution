@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.MenuProvided> */
 trait PartialMenuProvided extends StObject {
   
-  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var createURL: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var currentRefinement: js.UndefOr[String] = js.undefined
   
@@ -15,9 +15,9 @@ trait PartialMenuProvided extends StObject {
   
   var items: js.UndefOr[js.Array[Count]] = js.undefined
   
-  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var refine: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
-  var searchForItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var searchForItems: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object PartialMenuProvided {
   
@@ -28,7 +28,7 @@ object PartialMenuProvided {
   
   extension [Self <: PartialMenuProvided](x: Self) {
     
-    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     inline def setCreateURLUndefined: Self = StObject.set(x, "createURL", js.undefined)
     
@@ -44,13 +44,13 @@ object PartialMenuProvided {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Count*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Count*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ Any => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     inline def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
     
-    inline def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
+    inline def setSearchForItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
     
     inline def setSearchForItemsUndefined: Self = StObject.set(x, "searchForItems", js.undefined)
   }

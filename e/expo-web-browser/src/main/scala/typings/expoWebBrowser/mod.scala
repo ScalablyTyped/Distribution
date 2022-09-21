@@ -1,12 +1,9 @@
 package typings.expoWebBrowser
 
-import typings.expoWebBrowser.anon.Message
-import typings.expoWebBrowser.anon.SkipRedirectCheck
-import typings.expoWebBrowser.expoWebBrowserStrings.cancel
-import typings.expoWebBrowser.expoWebBrowserStrings.dismiss
-import typings.expoWebBrowser.expoWebBrowserStrings.locked
-import typings.expoWebBrowser.expoWebBrowserStrings.opened
+import typings.expoWebBrowser.webBrowserTypesMod.AuthSessionOpenOptions
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserAuthSessionResult
+import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCompleteAuthSessionOptions
+import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCompleteAuthSessionResult
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCoolDownResult
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCustomTabsResults
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserMayInitWithUrlResult
@@ -23,32 +20,44 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  object WebBrowserResultType {
+  @JSImport("expo-web-browser", "WebBrowserPresentationStyle")
+  @js.native
+  object WebBrowserPresentationStyle extends StObject {
     
-    /**
-      * iOS only
-      */
-    @JSImport("expo-web-browser", "WebBrowserResultType.CANCEL")
-    @js.native
-    val CANCEL: cancel = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle & String] = js.native
     
-    /**
-      * iOS only
-      */
-    @JSImport("expo-web-browser", "WebBrowserResultType.DISMISS")
-    @js.native
-    val DISMISS: dismiss = js.native
+    /* "automatic" */ val AUTOMATIC: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.AUTOMATIC & String = js.native
     
-    @JSImport("expo-web-browser", "WebBrowserResultType.LOCKED")
-    @js.native
-    val LOCKED: locked = js.native
+    /* "currentContext" */ val CURRENT_CONTEXT: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.CURRENT_CONTEXT & String = js.native
     
-    /**
-      * Android only
-      */
-    @JSImport("expo-web-browser", "WebBrowserResultType.OPENED")
-    @js.native
-    val OPENED: opened = js.native
+    /* "formSheet" */ val FORM_SHEET: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.FORM_SHEET & String = js.native
+    
+    /* "fullScreen" */ val FULL_SCREEN: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.FULL_SCREEN & String = js.native
+    
+    /* "overCurrentContext" */ val OVER_CURRENT_CONTEXT: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.OVER_CURRENT_CONTEXT & String = js.native
+    
+    /* "overFullScreen" */ val OVER_FULL_SCREEN: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.OVER_FULL_SCREEN & String = js.native
+    
+    /* "pageSheet" */ val PAGE_SHEET: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.PAGE_SHEET & String = js.native
+    
+    /* "popover" */ val POPOVER: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.POPOVER & String = js.native
+  }
+  
+  @JSImport("expo-web-browser", "WebBrowserResultType")
+  @js.native
+  object WebBrowserResultType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType & String] = js.native
+    
+    /* "cancel" */ val CANCEL: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.CANCEL & String = js.native
+    
+    /* "dismiss" */ val DISMISS: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.DISMISS & String = js.native
+    
+    /* "locked" */ val LOCKED: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.LOCKED & String = js.native
+    
+    /* "opened" */ val OPENED: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.OPENED & String = js.native
   }
   
   inline def coolDownAsync(): js.Promise[WebBrowserCoolDownResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("coolDownAsync")().asInstanceOf[js.Promise[WebBrowserCoolDownResult]]
@@ -63,11 +72,14 @@ object mod {
   inline def mayInitWithUrlAsync(url: String): js.Promise[WebBrowserMayInitWithUrlResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("mayInitWithUrlAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebBrowserMayInitWithUrlResult]]
   inline def mayInitWithUrlAsync(url: String, browserPackage: String): js.Promise[WebBrowserMayInitWithUrlResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("mayInitWithUrlAsync")(url.asInstanceOf[js.Any], browserPackage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserMayInitWithUrlResult]]
   
-  inline def maybeCompleteAuthSession(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")().asInstanceOf[Message]
-  inline def maybeCompleteAuthSession(options: SkipRedirectCheck): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")(options.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def maybeCompleteAuthSession(): WebBrowserCompleteAuthSessionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")().asInstanceOf[WebBrowserCompleteAuthSessionResult]
+  inline def maybeCompleteAuthSession(options: WebBrowserCompleteAuthSessionOptions): WebBrowserCompleteAuthSessionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")(options.asInstanceOf[js.Any]).asInstanceOf[WebBrowserCompleteAuthSessionResult]
   
+  inline def openAuthSessionAsync(url: String): js.Promise[WebBrowserAuthSessionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
   inline def openAuthSessionAsync(url: String, redirectUrl: String): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
-  inline def openAuthSessionAsync(url: String, redirectUrl: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], browserParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+  inline def openAuthSessionAsync(url: String, redirectUrl: String, options: AuthSessionOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+  inline def openAuthSessionAsync(url: String, redirectUrl: Null, options: AuthSessionOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+  inline def openAuthSessionAsync(url: String, redirectUrl: Unit, options: AuthSessionOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
   
   inline def openBrowserAsync(url: String): js.Promise[WebBrowserResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openBrowserAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebBrowserResult]]
   inline def openBrowserAsync(url: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBrowserAsync")(url.asInstanceOf[js.Any], browserParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserResult]]

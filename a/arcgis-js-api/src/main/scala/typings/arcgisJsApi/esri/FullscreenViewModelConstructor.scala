@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FullscreenViewModelConstructor
   extends StObject
-     with Instantiable0[FullscreenViewModel]
+     with /**
+  * Provides the logic for the [Fullscreen](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html)
+  */
+Instantiable0[FullscreenViewModel]
      with Instantiable1[/* properties */ FullscreenViewModelProperties, FullscreenViewModel]

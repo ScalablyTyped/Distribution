@@ -33,6 +33,6 @@ object AvailabilityZone {
     
     inline def setSupportedPlatformsUndefined: Self = StObject.set(x, "SupportedPlatforms", js.undefined)
     
-    inline def setSupportedPlatformsVarargs(value: SupportedPlatform*): Self = StObject.set(x, "SupportedPlatforms", js.Array(value :_*))
+    inline def setSupportedPlatformsVarargs(value: SupportedPlatform*): Self = StObject.set(x, "SupportedPlatforms", js.Array(value*))
   }
 }

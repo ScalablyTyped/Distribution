@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait As[T /* <: ElementType[js.Any] */] extends StObject {
+  trait As[T /* <: ElementType[Any] */] extends StObject {
     
     /**
       * form control to render, default Input
@@ -16,16 +16,35 @@ object anon {
   }
   object As {
     
-    inline def apply[T /* <: ElementType[js.Any] */](): As[T] = {
+    inline def apply[T /* <: ElementType[Any] */](): As[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[As[T]]
     }
     
-    extension [Self <: As[?], T /* <: ElementType[js.Any] */](x: Self & As[T]) {
+    extension [Self <: As[?], T /* <: ElementType[Any] */](x: Self & As[T]) {
       
       inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    }
+  }
+  
+  trait Size extends StObject {
+    
+    var size: js.UndefOr[Double] = js.undefined
+  }
+  object Size {
+    
+    inline def apply(): Size = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Size]
+    }
+    
+    extension [Self <: Size](x: Self) {
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

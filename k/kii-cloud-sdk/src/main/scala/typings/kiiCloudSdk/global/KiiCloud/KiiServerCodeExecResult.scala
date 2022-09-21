@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiServerCodeExecResult")
 @js.native
-class KiiServerCodeExecResult ()
+open class KiiServerCodeExecResult ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiServerCodeExecResult {
   
@@ -27,5 +27,5 @@ class KiiServerCodeExecResult ()
     * @return returned by server code entry.
     */
   /* CompleteClass */
-  override def getReturnedValue(): js.Any = js.native
+  override def getReturnedValue(): Any = js.native
 }

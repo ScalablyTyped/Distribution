@@ -3,8 +3,8 @@ package typings.reactMdStates
 import typings.react.mod.ReactElement
 import typings.reactMdStates.typesMod.RippleState
 import typings.reactMdStates.typesMod.RipplesState
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +60,7 @@ object rippleContainerMod {
       
       inline def setRipples(value: RipplesState): Self = StObject.set(x, "ripples", value.asInstanceOf[js.Any])
       
-      inline def setRipplesVarargs(value: RippleState*): Self = StObject.set(x, "ripples", js.Array(value :_*))
+      inline def setRipplesVarargs(value: RippleState*): Self = StObject.set(x, "ripples", js.Array(value*))
       
       inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

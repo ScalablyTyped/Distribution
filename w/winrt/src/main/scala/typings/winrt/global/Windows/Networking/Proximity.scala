@@ -15,7 +15,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.ConnectionRequestedEventArgs")
   @js.native
-  class ConnectionRequestedEventArgs ()
+  open class ConnectionRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.ConnectionRequestedEventArgs {
     
@@ -39,7 +39,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.PeerFinder")
   @js.native
-  class PeerFinder ()
+  open class PeerFinder ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.PeerFinder
   /* static members */
@@ -80,13 +80,13 @@ object Proximity {
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.onconnectionrequested")
     @js.native
-    def onconnectionrequested: js.Any = js.native
-    inline def onconnectionrequested_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onconnectionrequested")(x.asInstanceOf[js.Any])
+    def onconnectionrequested: Any = js.native
+    inline def onconnectionrequested_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onconnectionrequested")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.ontriggeredconnectionstatechanged")
     @js.native
-    def ontriggeredconnectionstatechanged: js.Any = js.native
-    inline def ontriggeredconnectionstatechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontriggeredconnectionstatechanged")(x.asInstanceOf[js.Any])
+    def ontriggeredconnectionstatechanged: Any = js.native
+    inline def ontriggeredconnectionstatechanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontriggeredconnectionstatechanged")(x.asInstanceOf[js.Any])
     
     inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
     inline def start(peerMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(peerMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -101,7 +101,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.PeerInformation")
   @js.native
-  class PeerInformation ()
+  open class PeerInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.PeerInformation {
     
@@ -111,7 +111,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.ProximityDevice")
   @js.native
-  class ProximityDevice ()
+  open class ProximityDevice ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.ProximityDevice
   /* static members */
@@ -130,7 +130,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.ProximityMessage")
   @js.native
-  class ProximityMessage ()
+  open class ProximityMessage ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.ProximityMessage {
     
@@ -169,7 +169,7 @@ object Proximity {
   
   @JSGlobal("Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs")
   @js.native
-  class TriggeredConnectionStateChangedEventArgs ()
+  open class TriggeredConnectionStateChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs {
     

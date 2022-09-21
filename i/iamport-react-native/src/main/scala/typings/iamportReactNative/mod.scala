@@ -557,7 +557,7 @@ object mod {
       
       inline def setNotice_urlUndefined: Self = StObject.set(x, "notice_url", js.undefined)
       
-      inline def setNotice_urlVarargs(value: String*): Self = StObject.set(x, "notice_url", js.Array(value :_*))
+      inline def setNotice_urlVarargs(value: String*): Self = StObject.set(x, "notice_url", js.Array(value*))
       
       inline def setPay_method(value: IMP_PAY_METHOD): Self = StObject.set(x, "pay_method", value.asInstanceOf[js.Any])
       
@@ -587,11 +587,11 @@ object mod {
     
     var data: PaymentData
     
-    var handleInicisTrans: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var handleInicisTrans: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     var loading: js.UndefOr[js.Object] = js.undefined
     
-    var open3rdPartyApp: js.UndefOr[js.Function1[/* iamportUrl */ js.Any, Unit]] = js.undefined
+    var open3rdPartyApp: js.UndefOr[js.Function1[/* iamportUrl */ Any, Unit]] = js.undefined
     
     var tierCode: js.UndefOr[String] = js.undefined
     
@@ -610,7 +610,7 @@ object mod {
       
       inline def setData(value: PaymentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setHandleInicisTrans(value: /* event */ js.Any => Unit): Self = StObject.set(x, "handleInicisTrans", js.Any.fromFunction1(value))
+      inline def setHandleInicisTrans(value: /* event */ Any => Unit): Self = StObject.set(x, "handleInicisTrans", js.Any.fromFunction1(value))
       
       inline def setHandleInicisTransUndefined: Self = StObject.set(x, "handleInicisTrans", js.undefined)
       
@@ -618,7 +618,7 @@ object mod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOpen3rdPartyApp(value: /* iamportUrl */ js.Any => Unit): Self = StObject.set(x, "open3rdPartyApp", js.Any.fromFunction1(value))
+      inline def setOpen3rdPartyApp(value: /* iamportUrl */ Any => Unit): Self = StObject.set(x, "open3rdPartyApp", js.Any.fromFunction1(value))
       
       inline def setOpen3rdPartyAppUndefined: Self = StObject.set(x, "open3rdPartyApp", js.undefined)
       

@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1ObjectParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ExplicitParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.TagParam
@@ -30,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.DERTaggedObject")
 @js.native
-class DERTaggedObject ()
+open class DERTaggedObject ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.DERTaggedObject {
   def this(params: ASN1ObjectParam) = this()
@@ -80,6 +81,10 @@ class DERTaggedObject ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
   
   /**
     * set value by an ASN1Object

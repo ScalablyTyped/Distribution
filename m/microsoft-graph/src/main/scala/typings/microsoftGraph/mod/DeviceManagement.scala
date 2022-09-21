@@ -50,6 +50,9 @@ trait DeviceManagement
   // The list of Exchange Connectors configured by the tenant.
   var exchangeConnectors: js.UndefOr[NullableOption[js.Array[DeviceManagementExchangeConnector]]] = js.undefined
   
+  // Collection of imported Windows autopilot devices.
+  var importedWindowsAutopilotDeviceIdentities: js.UndefOr[NullableOption[js.Array[ImportedWindowsAutopilotDeviceIdentity]]] = js.undefined
+  
   // Intune Account Id for given tenant
   var intuneAccountId: js.UndefOr[String] = js.undefined
   
@@ -77,6 +80,9 @@ trait DeviceManagement
   // The remote assist partners.
   var remoteAssistancePartners: js.UndefOr[NullableOption[js.Array[RemoteAssistancePartner]]] = js.undefined
   
+  // Reports singleton
+  var reports: js.UndefOr[NullableOption[DeviceManagementReports]] = js.undefined
+  
   // The Resource Operations.
   var resourceOperations: js.UndefOr[NullableOption[js.Array[ResourceOperation]]] = js.undefined
   
@@ -93,8 +99,8 @@ trait DeviceManagement
   var softwareUpdateStatusSummary: js.UndefOr[NullableOption[SoftwareUpdateStatusSummary]] = js.undefined
   
   /**
-    * Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled,
-    * deleted, blocked, lockedOut.
+    * Tenant mobile device management subscription state. Possible values are: pending, active, warning, disabled, deleted,
+    * blocked, lockedOut.
     */
   var subscriptionState: js.UndefOr[DeviceManagementSubscriptionState] = js.undefined
   
@@ -106,6 +112,9 @@ trait DeviceManagement
   
   // The list of troubleshooting events for the tenant.
   var troubleshootingEvents: js.UndefOr[NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]] = js.undefined
+  
+  // The Windows autopilot device identities contained collection.
+  var windowsAutopilotDeviceIdentities: js.UndefOr[NullableOption[js.Array[WindowsAutopilotDeviceIdentity]]] = js.undefined
   
   // The windows information protection app learning summaries.
   var windowsInformationProtectionAppLearningSummaries: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]] = js.undefined
@@ -134,7 +143,7 @@ object DeviceManagement {
     
     inline def setComplianceManagementPartnersUndefined: Self = StObject.set(x, "complianceManagementPartners", js.undefined)
     
-    inline def setComplianceManagementPartnersVarargs(value: ComplianceManagementPartner*): Self = StObject.set(x, "complianceManagementPartners", js.Array(value :_*))
+    inline def setComplianceManagementPartnersVarargs(value: ComplianceManagementPartner*): Self = StObject.set(x, "complianceManagementPartners", js.Array(value*))
     
     inline def setConditionalAccessSettings(value: NullableOption[OnPremisesConditionalAccessSettings]): Self = StObject.set(x, "conditionalAccessSettings", value.asInstanceOf[js.Any])
     
@@ -148,7 +157,7 @@ object DeviceManagement {
     
     inline def setDetectedAppsUndefined: Self = StObject.set(x, "detectedApps", js.undefined)
     
-    inline def setDetectedAppsVarargs(value: DetectedApp*): Self = StObject.set(x, "detectedApps", js.Array(value :_*))
+    inline def setDetectedAppsVarargs(value: DetectedApp*): Self = StObject.set(x, "detectedApps", js.Array(value*))
     
     inline def setDeviceCategories(value: NullableOption[js.Array[DeviceCategory]]): Self = StObject.set(x, "deviceCategories", value.asInstanceOf[js.Any])
     
@@ -156,7 +165,7 @@ object DeviceManagement {
     
     inline def setDeviceCategoriesUndefined: Self = StObject.set(x, "deviceCategories", js.undefined)
     
-    inline def setDeviceCategoriesVarargs(value: DeviceCategory*): Self = StObject.set(x, "deviceCategories", js.Array(value :_*))
+    inline def setDeviceCategoriesVarargs(value: DeviceCategory*): Self = StObject.set(x, "deviceCategories", js.Array(value*))
     
     inline def setDeviceCompliancePolicies(value: NullableOption[js.Array[DeviceCompliancePolicy]]): Self = StObject.set(x, "deviceCompliancePolicies", value.asInstanceOf[js.Any])
     
@@ -164,7 +173,7 @@ object DeviceManagement {
     
     inline def setDeviceCompliancePoliciesUndefined: Self = StObject.set(x, "deviceCompliancePolicies", js.undefined)
     
-    inline def setDeviceCompliancePoliciesVarargs(value: DeviceCompliancePolicy*): Self = StObject.set(x, "deviceCompliancePolicies", js.Array(value :_*))
+    inline def setDeviceCompliancePoliciesVarargs(value: DeviceCompliancePolicy*): Self = StObject.set(x, "deviceCompliancePolicies", js.Array(value*))
     
     inline def setDeviceCompliancePolicyDeviceStateSummary(value: NullableOption[DeviceCompliancePolicyDeviceStateSummary]): Self = StObject.set(x, "deviceCompliancePolicyDeviceStateSummary", value.asInstanceOf[js.Any])
     
@@ -178,7 +187,7 @@ object DeviceManagement {
     
     inline def setDeviceCompliancePolicySettingStateSummariesUndefined: Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", js.undefined)
     
-    inline def setDeviceCompliancePolicySettingStateSummariesVarargs(value: DeviceCompliancePolicySettingStateSummary*): Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", js.Array(value :_*))
+    inline def setDeviceCompliancePolicySettingStateSummariesVarargs(value: DeviceCompliancePolicySettingStateSummary*): Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", js.Array(value*))
     
     inline def setDeviceConfigurationDeviceStateSummaries(value: NullableOption[DeviceConfigurationDeviceStateSummary]): Self = StObject.set(x, "deviceConfigurationDeviceStateSummaries", value.asInstanceOf[js.Any])
     
@@ -192,7 +201,7 @@ object DeviceManagement {
     
     inline def setDeviceConfigurationsUndefined: Self = StObject.set(x, "deviceConfigurations", js.undefined)
     
-    inline def setDeviceConfigurationsVarargs(value: DeviceConfiguration*): Self = StObject.set(x, "deviceConfigurations", js.Array(value :_*))
+    inline def setDeviceConfigurationsVarargs(value: DeviceConfiguration*): Self = StObject.set(x, "deviceConfigurations", js.Array(value*))
     
     inline def setDeviceEnrollmentConfigurations(value: NullableOption[js.Array[DeviceEnrollmentConfiguration]]): Self = StObject.set(x, "deviceEnrollmentConfigurations", value.asInstanceOf[js.Any])
     
@@ -200,7 +209,7 @@ object DeviceManagement {
     
     inline def setDeviceEnrollmentConfigurationsUndefined: Self = StObject.set(x, "deviceEnrollmentConfigurations", js.undefined)
     
-    inline def setDeviceEnrollmentConfigurationsVarargs(value: DeviceEnrollmentConfiguration*): Self = StObject.set(x, "deviceEnrollmentConfigurations", js.Array(value :_*))
+    inline def setDeviceEnrollmentConfigurationsVarargs(value: DeviceEnrollmentConfiguration*): Self = StObject.set(x, "deviceEnrollmentConfigurations", js.Array(value*))
     
     inline def setDeviceManagementPartners(value: NullableOption[js.Array[DeviceManagementPartner]]): Self = StObject.set(x, "deviceManagementPartners", value.asInstanceOf[js.Any])
     
@@ -208,7 +217,7 @@ object DeviceManagement {
     
     inline def setDeviceManagementPartnersUndefined: Self = StObject.set(x, "deviceManagementPartners", js.undefined)
     
-    inline def setDeviceManagementPartnersVarargs(value: DeviceManagementPartner*): Self = StObject.set(x, "deviceManagementPartners", js.Array(value :_*))
+    inline def setDeviceManagementPartnersVarargs(value: DeviceManagementPartner*): Self = StObject.set(x, "deviceManagementPartners", js.Array(value*))
     
     inline def setExchangeConnectors(value: NullableOption[js.Array[DeviceManagementExchangeConnector]]): Self = StObject.set(x, "exchangeConnectors", value.asInstanceOf[js.Any])
     
@@ -216,7 +225,15 @@ object DeviceManagement {
     
     inline def setExchangeConnectorsUndefined: Self = StObject.set(x, "exchangeConnectors", js.undefined)
     
-    inline def setExchangeConnectorsVarargs(value: DeviceManagementExchangeConnector*): Self = StObject.set(x, "exchangeConnectors", js.Array(value :_*))
+    inline def setExchangeConnectorsVarargs(value: DeviceManagementExchangeConnector*): Self = StObject.set(x, "exchangeConnectors", js.Array(value*))
+    
+    inline def setImportedWindowsAutopilotDeviceIdentities(value: NullableOption[js.Array[ImportedWindowsAutopilotDeviceIdentity]]): Self = StObject.set(x, "importedWindowsAutopilotDeviceIdentities", value.asInstanceOf[js.Any])
+    
+    inline def setImportedWindowsAutopilotDeviceIdentitiesNull: Self = StObject.set(x, "importedWindowsAutopilotDeviceIdentities", null)
+    
+    inline def setImportedWindowsAutopilotDeviceIdentitiesUndefined: Self = StObject.set(x, "importedWindowsAutopilotDeviceIdentities", js.undefined)
+    
+    inline def setImportedWindowsAutopilotDeviceIdentitiesVarargs(value: ImportedWindowsAutopilotDeviceIdentity*): Self = StObject.set(x, "importedWindowsAutopilotDeviceIdentities", js.Array(value*))
     
     inline def setIntuneAccountId(value: String): Self = StObject.set(x, "intuneAccountId", value.asInstanceOf[js.Any])
     
@@ -234,7 +251,7 @@ object DeviceManagement {
     
     inline def setIosUpdateStatusesUndefined: Self = StObject.set(x, "iosUpdateStatuses", js.undefined)
     
-    inline def setIosUpdateStatusesVarargs(value: IosUpdateDeviceStatus*): Self = StObject.set(x, "iosUpdateStatuses", js.Array(value :_*))
+    inline def setIosUpdateStatusesVarargs(value: IosUpdateDeviceStatus*): Self = StObject.set(x, "iosUpdateStatuses", js.Array(value*))
     
     inline def setManagedDeviceOverview(value: NullableOption[ManagedDeviceOverview]): Self = StObject.set(x, "managedDeviceOverview", value.asInstanceOf[js.Any])
     
@@ -248,7 +265,7 @@ object DeviceManagement {
     
     inline def setManagedDevicesUndefined: Self = StObject.set(x, "managedDevices", js.undefined)
     
-    inline def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value :_*))
+    inline def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value*))
     
     inline def setMobileThreatDefenseConnectors(value: NullableOption[js.Array[MobileThreatDefenseConnector]]): Self = StObject.set(x, "mobileThreatDefenseConnectors", value.asInstanceOf[js.Any])
     
@@ -256,7 +273,7 @@ object DeviceManagement {
     
     inline def setMobileThreatDefenseConnectorsUndefined: Self = StObject.set(x, "mobileThreatDefenseConnectors", js.undefined)
     
-    inline def setMobileThreatDefenseConnectorsVarargs(value: MobileThreatDefenseConnector*): Self = StObject.set(x, "mobileThreatDefenseConnectors", js.Array(value :_*))
+    inline def setMobileThreatDefenseConnectorsVarargs(value: MobileThreatDefenseConnector*): Self = StObject.set(x, "mobileThreatDefenseConnectors", js.Array(value*))
     
     inline def setNotificationMessageTemplates(value: NullableOption[js.Array[NotificationMessageTemplate]]): Self = StObject.set(x, "notificationMessageTemplates", value.asInstanceOf[js.Any])
     
@@ -264,7 +281,7 @@ object DeviceManagement {
     
     inline def setNotificationMessageTemplatesUndefined: Self = StObject.set(x, "notificationMessageTemplates", js.undefined)
     
-    inline def setNotificationMessageTemplatesVarargs(value: NotificationMessageTemplate*): Self = StObject.set(x, "notificationMessageTemplates", js.Array(value :_*))
+    inline def setNotificationMessageTemplatesVarargs(value: NotificationMessageTemplate*): Self = StObject.set(x, "notificationMessageTemplates", js.Array(value*))
     
     inline def setRemoteAssistancePartners(value: NullableOption[js.Array[RemoteAssistancePartner]]): Self = StObject.set(x, "remoteAssistancePartners", value.asInstanceOf[js.Any])
     
@@ -272,7 +289,13 @@ object DeviceManagement {
     
     inline def setRemoteAssistancePartnersUndefined: Self = StObject.set(x, "remoteAssistancePartners", js.undefined)
     
-    inline def setRemoteAssistancePartnersVarargs(value: RemoteAssistancePartner*): Self = StObject.set(x, "remoteAssistancePartners", js.Array(value :_*))
+    inline def setRemoteAssistancePartnersVarargs(value: RemoteAssistancePartner*): Self = StObject.set(x, "remoteAssistancePartners", js.Array(value*))
+    
+    inline def setReports(value: NullableOption[DeviceManagementReports]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+    
+    inline def setReportsNull: Self = StObject.set(x, "reports", null)
+    
+    inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     inline def setResourceOperations(value: NullableOption[js.Array[ResourceOperation]]): Self = StObject.set(x, "resourceOperations", value.asInstanceOf[js.Any])
     
@@ -280,7 +303,7 @@ object DeviceManagement {
     
     inline def setResourceOperationsUndefined: Self = StObject.set(x, "resourceOperations", js.undefined)
     
-    inline def setResourceOperationsVarargs(value: ResourceOperation*): Self = StObject.set(x, "resourceOperations", js.Array(value :_*))
+    inline def setResourceOperationsVarargs(value: ResourceOperation*): Self = StObject.set(x, "resourceOperations", js.Array(value*))
     
     inline def setRoleAssignments(value: NullableOption[js.Array[DeviceAndAppManagementRoleAssignment]]): Self = StObject.set(x, "roleAssignments", value.asInstanceOf[js.Any])
     
@@ -288,7 +311,7 @@ object DeviceManagement {
     
     inline def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
     
-    inline def setRoleAssignmentsVarargs(value: DeviceAndAppManagementRoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
+    inline def setRoleAssignmentsVarargs(value: DeviceAndAppManagementRoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value*))
     
     inline def setRoleDefinitions(value: NullableOption[js.Array[RoleDefinition]]): Self = StObject.set(x, "roleDefinitions", value.asInstanceOf[js.Any])
     
@@ -296,7 +319,7 @@ object DeviceManagement {
     
     inline def setRoleDefinitionsUndefined: Self = StObject.set(x, "roleDefinitions", js.undefined)
     
-    inline def setRoleDefinitionsVarargs(value: RoleDefinition*): Self = StObject.set(x, "roleDefinitions", js.Array(value :_*))
+    inline def setRoleDefinitionsVarargs(value: RoleDefinition*): Self = StObject.set(x, "roleDefinitions", js.Array(value*))
     
     inline def setSettings(value: NullableOption[DeviceManagementSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
@@ -320,7 +343,7 @@ object DeviceManagement {
     
     inline def setTelecomExpenseManagementPartnersUndefined: Self = StObject.set(x, "telecomExpenseManagementPartners", js.undefined)
     
-    inline def setTelecomExpenseManagementPartnersVarargs(value: TelecomExpenseManagementPartner*): Self = StObject.set(x, "telecomExpenseManagementPartners", js.Array(value :_*))
+    inline def setTelecomExpenseManagementPartnersVarargs(value: TelecomExpenseManagementPartner*): Self = StObject.set(x, "telecomExpenseManagementPartners", js.Array(value*))
     
     inline def setTermsAndConditions(value: NullableOption[js.Array[TermsAndConditions]]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
@@ -328,7 +351,7 @@ object DeviceManagement {
     
     inline def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
-    inline def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
+    inline def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value*))
     
     inline def setTroubleshootingEvents(value: NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]): Self = StObject.set(x, "troubleshootingEvents", value.asInstanceOf[js.Any])
     
@@ -336,7 +359,15 @@ object DeviceManagement {
     
     inline def setTroubleshootingEventsUndefined: Self = StObject.set(x, "troubleshootingEvents", js.undefined)
     
-    inline def setTroubleshootingEventsVarargs(value: DeviceManagementTroubleshootingEvent*): Self = StObject.set(x, "troubleshootingEvents", js.Array(value :_*))
+    inline def setTroubleshootingEventsVarargs(value: DeviceManagementTroubleshootingEvent*): Self = StObject.set(x, "troubleshootingEvents", js.Array(value*))
+    
+    inline def setWindowsAutopilotDeviceIdentities(value: NullableOption[js.Array[WindowsAutopilotDeviceIdentity]]): Self = StObject.set(x, "windowsAutopilotDeviceIdentities", value.asInstanceOf[js.Any])
+    
+    inline def setWindowsAutopilotDeviceIdentitiesNull: Self = StObject.set(x, "windowsAutopilotDeviceIdentities", null)
+    
+    inline def setWindowsAutopilotDeviceIdentitiesUndefined: Self = StObject.set(x, "windowsAutopilotDeviceIdentities", js.undefined)
+    
+    inline def setWindowsAutopilotDeviceIdentitiesVarargs(value: WindowsAutopilotDeviceIdentity*): Self = StObject.set(x, "windowsAutopilotDeviceIdentities", js.Array(value*))
     
     inline def setWindowsInformationProtectionAppLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]): Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", value.asInstanceOf[js.Any])
     
@@ -344,7 +375,7 @@ object DeviceManagement {
     
     inline def setWindowsInformationProtectionAppLearningSummariesUndefined: Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", js.undefined)
     
-    inline def setWindowsInformationProtectionAppLearningSummariesVarargs(value: WindowsInformationProtectionAppLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", js.Array(value :_*))
+    inline def setWindowsInformationProtectionAppLearningSummariesVarargs(value: WindowsInformationProtectionAppLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", js.Array(value*))
     
     inline def setWindowsInformationProtectionNetworkLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionNetworkLearningSummary]]): Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", value.asInstanceOf[js.Any])
     
@@ -352,6 +383,6 @@ object DeviceManagement {
     
     inline def setWindowsInformationProtectionNetworkLearningSummariesUndefined: Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", js.undefined)
     
-    inline def setWindowsInformationProtectionNetworkLearningSummariesVarargs(value: WindowsInformationProtectionNetworkLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", js.Array(value :_*))
+    inline def setWindowsInformationProtectionNetworkLearningSummariesVarargs(value: WindowsInformationProtectionNetworkLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", js.Array(value*))
   }
 }

@@ -10,16 +10,16 @@ trait ILockable
      with IBase {
   
   /** [Config Option] (Object) */
-  var lockedGridConfig: js.UndefOr[js.Any] = js.undefined
+  var lockedGridConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var lockedViewConfig: js.UndefOr[js.Any] = js.undefined
+  var lockedViewConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var normalGridConfig: js.UndefOr[js.Any] = js.undefined
+  var normalGridConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var normalViewConfig: js.UndefOr[js.Any] = js.undefined
+  var normalViewConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var scrollDelta: js.UndefOr[Double] = js.undefined
@@ -42,19 +42,19 @@ object ILockable {
   
   extension [Self <: ILockable](x: Self) {
     
-    inline def setLockedGridConfig(value: js.Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
+    inline def setLockedGridConfig(value: Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
     
     inline def setLockedGridConfigUndefined: Self = StObject.set(x, "lockedGridConfig", js.undefined)
     
-    inline def setLockedViewConfig(value: js.Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
+    inline def setLockedViewConfig(value: Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
     
     inline def setLockedViewConfigUndefined: Self = StObject.set(x, "lockedViewConfig", js.undefined)
     
-    inline def setNormalGridConfig(value: js.Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
+    inline def setNormalGridConfig(value: Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
     
     inline def setNormalGridConfigUndefined: Self = StObject.set(x, "normalGridConfig", js.undefined)
     
-    inline def setNormalViewConfig(value: js.Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
+    inline def setNormalViewConfig(value: Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
     
     inline def setNormalViewConfigUndefined: Self = StObject.set(x, "normalViewConfig", js.undefined)
     

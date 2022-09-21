@@ -36,6 +36,9 @@ trait TeamDrive extends StObject {
   /** The name of this Team Drive. */
   var name: js.UndefOr[String] = js.undefined
   
+  /** The organizational unit of this shared drive. This field is only populated on drives.list responses when the useDomainAdminAccess parameter is set to true. */
+  var orgUnitId: js.UndefOr[String] = js.undefined
+  
   /** A set of restrictions that apply to this Team Drive or items inside this Team Drive. */
   var restrictions: js.UndefOr[CopyRequiresWriterPermission] = js.undefined
   
@@ -86,6 +89,10 @@ object TeamDrive {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    
+    inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
     
     inline def setRestrictions(value: CopyRequiresWriterPermission): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     

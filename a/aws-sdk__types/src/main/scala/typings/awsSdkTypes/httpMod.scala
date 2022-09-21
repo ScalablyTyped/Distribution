@@ -1,8 +1,8 @@
 package typings.awsSdkTypes
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.std.Map
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +46,7 @@ object httpMod {
     }
   }
   
-  type HeaderBag = StringDictionary[String]
+  type HeaderBag = Record[String, String]
   
   @js.native
   trait Headers
@@ -92,7 +92,7 @@ object httpMod {
   
   trait HttpMessage extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var headers: HeaderBag
   }
@@ -105,7 +105,7 @@ object httpMod {
     
     extension [Self <: HttpMessage](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -152,7 +152,7 @@ object httpMod {
     }
   }
   
-  type QueryParameterBag = StringDictionary[String | js.Array[String] | Null]
+  type QueryParameterBag = Record[String, String | js.Array[String] | Null]
   
   trait ResolvedHttpResponse
     extends StObject

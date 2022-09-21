@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@reach/window-size" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@reach/window-size" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

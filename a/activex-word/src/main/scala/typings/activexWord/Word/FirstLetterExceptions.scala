@@ -14,9 +14,9 @@ trait FirstLetterExceptions extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): FirstLetterException
+  def Item(Index: Any): FirstLetterException
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.FirstLetterExceptions_typekey")
   var WordDotFirstLetterExceptions_typekey: FirstLetterExceptions
@@ -28,8 +28,8 @@ object FirstLetterExceptions {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => FirstLetterException,
-    Parent: js.Any,
+    Item: Any => FirstLetterException,
+    Parent: Any,
     WordDotFirstLetterExceptions_typekey: FirstLetterExceptions
   ): FirstLetterExceptions = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object FirstLetterExceptions {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => FirstLetterException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => FirstLetterException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotFirstLetterExceptions_typekey(value: FirstLetterExceptions): Self = StObject.set(x, "Word.FirstLetterExceptions_typekey", value.asInstanceOf[js.Any])
   }

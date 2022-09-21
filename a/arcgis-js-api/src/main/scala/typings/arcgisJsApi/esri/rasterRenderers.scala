@@ -5,13 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for importing renderer classes that can be used to render [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html).
+  * A convenience module for importing renderer classes that can be used to render [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rasterRenderers.html)
   */
 object rasterRenderers {
   
   type ClassBreaksRenderer = typings.arcgisJsApi.esri.ClassBreaksRenderer
+  
+  type FlowRenderer = typings.arcgisJsApi.esri.FlowRenderer
   
   type RasterColormapRenderer = typings.arcgisJsApi.esri.RasterColormapRenderer
   

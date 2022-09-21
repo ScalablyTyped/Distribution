@@ -12,27 +12,27 @@ trait DatasetSummary extends StObject {
   var actions: js.UndefOr[DatasetActionSummaries] = js.undefined
   
   /**
-    * The time the data set was created.
+    * The time the dataset was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the data set.
+    * The name of the dataset.
     */
   var datasetName: js.UndefOr[DatasetName] = js.undefined
   
   /**
-    * The last time the data set was updated.
+    * The last time the dataset was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the data set.
+    * The status of the dataset.
     */
   var status: js.UndefOr[DatasetStatus] = js.undefined
   
   /**
-    * A list of triggers. A trigger causes data set content to be populated at a specified time interval or when another data set is populated. The list of triggers can be empty or contain up to five DataSetTrigger objects
+    * A list of triggers. A trigger causes dataset content to be populated at a specified time interval or when another dataset is populated. The list of triggers can be empty or contain up to five DataSetTrigger objects
     */
   var triggers: js.UndefOr[DatasetTriggers] = js.undefined
 }
@@ -49,9 +49,9 @@ object DatasetSummary {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: DatasetActionSummary*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DatasetActionSummary*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -59,7 +59,7 @@ object DatasetSummary {
     
     inline def setDatasetNameUndefined: Self = StObject.set(x, "datasetName", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
@@ -71,6 +71,6 @@ object DatasetSummary {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object batchGetItemOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/BatchGetItemOutput", "BatchGetItemOutput")
   @js.native
-  val BatchGetItemOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BatchGetItemOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

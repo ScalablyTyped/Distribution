@@ -10,10 +10,10 @@ Fill out pdf forms
 | ------------------ | :-------------: |
 | Full name          | fill-pdf |
 | Keywords           | pdf, fdf, utf8, pdftk |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2058208 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7943.333333333333 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/dommmel/fill-pdf)

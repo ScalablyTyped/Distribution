@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaAmount extends StObject {
   
   /**
-    * [required] The pre-tax or post-tax price depending on the location of the
-    * order.
+    * [required] The pre-tax or post-tax price depending on the location of the order.
     */
   var priceAmount: js.UndefOr[SchemaPrice] = js.undefined
   

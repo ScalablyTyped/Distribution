@@ -1,5 +1,6 @@
 package typings.contentDisposition
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.contentDisposition.contentDispositionStrings.`inline`
 import typings.contentDisposition.contentDispositionStrings.attachment
 import org.scalablytyped.runtime.StObject
@@ -35,7 +36,7 @@ object mod {
       * An object of the parameters in the disposition
       * (name of parameter always lower case and extended versions replace non-extended versions)
       */
-    var parameters: js.Any
+    var parameters: StringDictionary[String]
     
     /**
       * The disposition type (always lower case)
@@ -44,7 +45,7 @@ object mod {
   }
   object ContentDisposition {
     
-    inline def apply(parameters: js.Any, `type`: attachment | `inline` | String): ContentDisposition = {
+    inline def apply(parameters: StringDictionary[String], `type`: attachment | `inline` | String): ContentDisposition = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentDisposition]
@@ -52,7 +53,7 @@ object mod {
     
     extension [Self <: ContentDisposition](x: Self) {
       
-      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setType(value: attachment | `inline` | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -120,7 +120,7 @@ object mod {
       
       inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
       
@@ -142,7 +142,7 @@ object mod {
   
   trait ElementCompact
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var _attributes: js.UndefOr[Attributes] = js.undefined
     
@@ -647,7 +647,7 @@ object mod {
         
         inline def setAlwaysArrayUndefined: Self = StObject.set(x, "alwaysArray", js.undefined)
         
-        inline def setAlwaysArrayVarargs(value: String*): Self = StObject.set(x, "alwaysArray", js.Array(value :_*))
+        inline def setAlwaysArrayVarargs(value: String*): Self = StObject.set(x, "alwaysArray", js.Array(value*))
         
         inline def setAlwaysChildren(value: Boolean): Self = StObject.set(x, "alwaysChildren", value.asInstanceOf[js.Any])
         

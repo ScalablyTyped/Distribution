@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the UpdateSubscription method.
-  */
 trait SchemaUpdateSubscriptionRequest extends StObject {
   
   /**
-    * The updated subscription object.
+    * Required. The updated subscription object.
     */
   var subscription: js.UndefOr[SchemaSubscription] = js.undefined
   
   /**
-    * Indicates which fields in the provided subscription to update. Must be
-    * specified and non-empty.
+    * Required. Indicates which fields in the provided subscription to update. Must be specified and non-empty.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateSubscriptionRequest {
   
@@ -34,6 +30,8 @@ object SchemaUpdateSubscriptionRequest {
     inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

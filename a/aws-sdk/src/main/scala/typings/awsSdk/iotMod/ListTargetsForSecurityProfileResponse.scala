@@ -33,6 +33,6 @@ object ListTargetsForSecurityProfileResponse {
     
     inline def setSecurityProfileTargetsUndefined: Self = StObject.set(x, "securityProfileTargets", js.undefined)
     
-    inline def setSecurityProfileTargetsVarargs(value: SecurityProfileTarget*): Self = StObject.set(x, "securityProfileTargets", js.Array(value :_*))
+    inline def setSecurityProfileTargetsVarargs(value: SecurityProfileTarget*): Self = StObject.set(x, "securityProfileTargets", js.Array(value*))
   }
 }

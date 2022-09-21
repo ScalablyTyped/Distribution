@@ -4,35 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Export advanced options
-  */
 trait SchemaExportOptions extends StObject {
   
   /**
-    * Option available for Drive export.
+    * Options for Drive exports.
     */
   var driveOptions: js.UndefOr[SchemaDriveExportOptions] = js.undefined
   
   /**
-    * Option available for groups export.
+    * Options for Groups exports.
     */
   var groupsOptions: js.UndefOr[SchemaGroupsExportOptions] = js.undefined
   
   /**
-    * Option available for hangouts chat export.
+    * Options for Chat exports.
     */
   var hangoutsChatOptions: js.UndefOr[SchemaHangoutsChatExportOptions] = js.undefined
   
   /**
-    * Option available for mail export.
+    * Options for Gmail exports.
     */
   var mailOptions: js.UndefOr[SchemaMailExportOptions] = js.undefined
   
   /**
-    * The requested export location.
+    * The requested data region for the export.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Options for Voice exports.
+    */
+  var voiceOptions: js.UndefOr[SchemaVoiceExportOptions] = js.undefined
 }
 object SchemaExportOptions {
   
@@ -61,6 +63,12 @@ object SchemaExportOptions {
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
+    
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setVoiceOptions(value: SchemaVoiceExportOptions): Self = StObject.set(x, "voiceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceOptionsUndefined: Self = StObject.set(x, "voiceOptions", js.undefined)
   }
 }

@@ -202,18 +202,18 @@ object tree {
       dispose: () => Unit,
       firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
+      getPropertyValue: String => Any,
+      getPropertyValues: SeqEquiv[String] => SafeArray[Any],
       getServiceName: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       read: XObjectInputStream => Unit,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removePropertiesChangeListener: XPropertiesChangeListener => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
-      setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
+      setPropertyValue: (String, Any) => Unit,
+      setPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit,
       write: XObjectOutputStream => Unit
     ): TreeControlModel = {
       val __obj = js.Dynamic.literal(DataModel = DataModel.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Editable = Editable.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], InvokesStopNodeEditing = InvokesStopNodeEditing.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RootDisplayed = RootDisplayed.asInstanceOf[js.Any], RowHeight = RowHeight.asInstanceOf[js.Any], SelectionType = SelectionType.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], ShowsHandles = ShowsHandles.asInstanceOf[js.Any], ShowsRootHandles = ShowsRootHandles.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -323,7 +323,7 @@ object tree {
       * @see XTreeNode.getDisplayValue()
       * @see XTreeNode.hasChildrenOnDemand()
       */
-    def createNode(DisplayValue: js.Any, ChildrenOnDemand: Boolean): XMutableTreeNode
+    def createNode(DisplayValue: Any, ChildrenOnDemand: Boolean): XMutableTreeNode
     
     /**
       * changes the root node of this model to **RootNode** .
@@ -339,10 +339,10 @@ object tree {
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
       addTreeDataModelListener: XTreeDataModelListener => Unit,
-      createNode: (js.Any, Boolean) => XMutableTreeNode,
+      createNode: (Any, Boolean) => XMutableTreeNode,
       dispose: () => Unit,
       getRoot: () => XTreeNode,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeTreeDataModelListener: XTreeDataModelListener => Unit,
@@ -354,7 +354,7 @@ object tree {
     
     extension [Self <: XMutableTreeDataModel](x: Self) {
       
-      inline def setCreateNode(value: (js.Any, Boolean) => XMutableTreeNode): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
+      inline def setCreateNode(value: (Any, Boolean) => XMutableTreeNode): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
       
       inline def setSetRoot(value: XMutableTreeNode => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
     }
@@ -370,7 +370,7 @@ object tree {
       *
       * You can use this attribute to store data for this node that is independent of the display value
       */
-    var DataValue: js.Any
+    var DataValue: Any
     
     /**
       * appends **ChildNode** to this instance.
@@ -402,7 +402,7 @@ object tree {
     def setCollapsedGraphicURL(URL: String): Unit
     
     /** sets the display value of this node */
-    def setDisplayValue(Value: js.Any): Unit
+    def setDisplayValue(Value: Any): Unit
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
@@ -429,8 +429,8 @@ object tree {
     inline def apply(
       ChildCount: Double,
       CollapsedGraphicURL: String,
-      DataValue: js.Any,
-      DisplayValue: js.Any,
+      DataValue: Any,
+      DisplayValue: Any,
       ExpandedGraphicURL: String,
       NodeGraphicURL: String,
       Parent: XTreeNode,
@@ -438,7 +438,7 @@ object tree {
       getChildAt: Double => XTreeNode,
       getChildCount: () => Double,
       getCollapsedGraphicURL: () => String,
-      getDisplayValue: () => js.Any,
+      getDisplayValue: () => Any,
       getExpandedGraphicURL: () => String,
       getIndex: XTreeNode => Double,
       getNodeGraphicURL: () => String,
@@ -447,7 +447,7 @@ object tree {
       insertChildByIndex: (Double, XMutableTreeNode) => Unit,
       removeChildByIndex: Double => Unit,
       setCollapsedGraphicURL: String => Unit,
-      setDisplayValue: js.Any => Unit,
+      setDisplayValue: Any => Unit,
       setExpandedGraphicURL: String => Unit,
       setHasChildrenOnDemand: Boolean => Unit,
       setNodeGraphicURL: String => Unit
@@ -460,7 +460,7 @@ object tree {
       
       inline def setAppendChild(value: XMutableTreeNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
-      inline def setDataValue(value: js.Any): Self = StObject.set(x, "DataValue", value.asInstanceOf[js.Any])
+      inline def setDataValue(value: Any): Self = StObject.set(x, "DataValue", value.asInstanceOf[js.Any])
       
       inline def setInsertChildByIndex(value: (Double, XMutableTreeNode) => Unit): Self = StObject.set(x, "insertChildByIndex", js.Any.fromFunction2(value))
       
@@ -468,7 +468,7 @@ object tree {
       
       inline def setSetCollapsedGraphicURL(value: String => Unit): Self = StObject.set(x, "setCollapsedGraphicURL", js.Any.fromFunction1(value))
       
-      inline def setSetDisplayValue(value: js.Any => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
+      inline def setSetDisplayValue(value: Any => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
       
       inline def setSetExpandedGraphicURL(value: String => Unit): Self = StObject.set(x, "setExpandedGraphicURL", js.Any.fromFunction1(value))
       
@@ -644,10 +644,10 @@ object tree {
     inline def apply(
       DefaultCollapsedGraphicURL: String,
       DefaultExpandedGraphicURL: String,
-      Selection: js.Any,
+      Selection: Any,
       SelectionCount: Double,
       acquire: () => Unit,
-      addSelection: js.Any => Boolean,
+      addSelection: Any => Boolean,
       addSelectionChangeListener: XSelectionChangeListener => Unit,
       addTreeEditListener: XTreeEditListener => Unit,
       addTreeExpansionListener: XTreeExpansionListener => Unit,
@@ -660,20 +660,20 @@ object tree {
       getClosestNodeForLocation: (Double, Double) => XTreeNode,
       getNodeForLocation: (Double, Double) => XTreeNode,
       getNodeRect: XTreeNode => Rectangle,
-      getSelection: () => js.Any,
+      getSelection: () => Any,
       getSelectionCount: () => Double,
       isEditing: () => Boolean,
       isNodeCollapsed: XTreeNode => Boolean,
       isNodeExpanded: XTreeNode => Boolean,
       isNodeVisible: XTreeNode => Boolean,
       makeNodeVisible: XTreeNode => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      removeSelection: js.Any => Unit,
+      removeSelection: Any => Unit,
       removeSelectionChangeListener: XSelectionChangeListener => Unit,
       removeTreeEditListener: XTreeEditListener => Unit,
       removeTreeExpansionListener: XTreeExpansionListener => Unit,
-      select: js.Any => Boolean,
+      select: Any => Boolean,
       startEditingAtNode: XTreeNode => Unit,
       stopEditing: () => Boolean
     ): XTreeControl = {
@@ -772,7 +772,7 @@ object tree {
       addTreeDataModelListener: XTreeDataModelListener => Unit,
       dispose: () => Unit,
       getRoot: () => XTreeNode,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeTreeDataModelListener: XTreeDataModelListener => Unit
@@ -845,7 +845,7 @@ object tree {
     inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       treeNodesChanged: TreeDataModelEvent => Unit,
       treeNodesInserted: TreeDataModelEvent => Unit,
@@ -902,7 +902,7 @@ object tree {
       disposing: EventObject => Unit,
       nodeEdited: (XTreeNode, String) => Unit,
       nodeEditing: XTreeNode => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XTreeEditListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), nodeEdited = js.Any.fromFunction2(nodeEdited), nodeEditing = js.Any.fromFunction1(nodeEditing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -956,7 +956,7 @@ object tree {
     inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       requestChildNodes: TreeExpansionEvent => Unit,
       treeCollapsed: TreeExpansionEvent => Unit,
@@ -1002,7 +1002,7 @@ object tree {
     val CollapsedGraphicURL: String
     
     /** If not empty, the textual representation of this any is used as the text part of this node. */
-    val DisplayValue: js.Any
+    val DisplayValue: Any
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
@@ -1038,7 +1038,7 @@ object tree {
     def getCollapsedGraphicURL(): String
     
     /** If not empty, the textual representation of this any is used as the text part of this node. */
-    def getDisplayValue(): js.Any
+    def getDisplayValue(): Any
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
@@ -1076,14 +1076,14 @@ object tree {
     inline def apply(
       ChildCount: Double,
       CollapsedGraphicURL: String,
-      DisplayValue: js.Any,
+      DisplayValue: Any,
       ExpandedGraphicURL: String,
       NodeGraphicURL: String,
       Parent: XTreeNode,
       getChildAt: Double => XTreeNode,
       getChildCount: () => Double,
       getCollapsedGraphicURL: () => String,
-      getDisplayValue: () => js.Any,
+      getDisplayValue: () => Any,
       getExpandedGraphicURL: () => String,
       getIndex: XTreeNode => Double,
       getNodeGraphicURL: () => String,
@@ -1100,7 +1100,7 @@ object tree {
       
       inline def setCollapsedGraphicURL(value: String): Self = StObject.set(x, "CollapsedGraphicURL", value.asInstanceOf[js.Any])
       
-      inline def setDisplayValue(value: js.Any): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
+      inline def setDisplayValue(value: Any): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
       
       inline def setExpandedGraphicURL(value: String): Self = StObject.set(x, "ExpandedGraphicURL", value.asInstanceOf[js.Any])
       
@@ -1110,7 +1110,7 @@ object tree {
       
       inline def setGetCollapsedGraphicURL(value: () => String): Self = StObject.set(x, "getCollapsedGraphicURL", js.Any.fromFunction0(value))
       
-      inline def setGetDisplayValue(value: () => js.Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
+      inline def setGetDisplayValue(value: () => Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
       
       inline def setGetExpandedGraphicURL(value: () => String): Self = StObject.set(x, "getExpandedGraphicURL", js.Any.fromFunction0(value))
       

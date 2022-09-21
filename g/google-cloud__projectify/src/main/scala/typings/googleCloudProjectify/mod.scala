@@ -13,16 +13,18 @@ object mod {
   
   @JSImport("@google-cloud/projectify", "MissingProjectIdError")
   @js.native
-  class MissingProjectIdError ()
+  open class MissingProjectIdError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def replaceProjectIdToken(value: js.Any, projectId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProjectIdToken")(value.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def replaceProjectIdToken(value: Any, projectId: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProjectIdToken")(value.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

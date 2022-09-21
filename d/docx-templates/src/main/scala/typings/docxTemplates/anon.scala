@@ -8,8 +8,9 @@ import typings.docxTemplates.typesMod.BufferStatus
 import typings.docxTemplates.typesMod.Images
 import typings.docxTemplates.typesMod.Links
 import typings.docxTemplates.typesMod.Node
+import typings.docxTemplates.typesMod.NonTextNode
+import typings.jszip.mod.JSZip
 import typings.sax.mod.QualifiedAttribute
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,6 +155,70 @@ object anon {
     }
   }
   
+  trait ContentType
+    extends StObject
+       with /* key */ StringDictionary[QualifiedAttribute | String] {
+    
+    var ContentType: js.UndefOr[String] = js.undefined
+    
+    var Extension: js.UndefOr[String] = js.undefined
+    
+    var PartName: js.UndefOr[String] = js.undefined
+  }
+  object ContentType {
+    
+    inline def apply(): ContentType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ContentType]
+    }
+    
+    extension [Self <: ContentType](x: Self) {
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+      
+      inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
+      
+      inline def setPartName(value: String): Self = StObject.set(x, "PartName", value.asInstanceOf[js.Any])
+      
+      inline def setPartNameUndefined: Self = StObject.set(x, "PartName", js.undefined)
+    }
+  }
+  
+  trait ContentTypes extends StObject {
+    
+    var contentTypes: NonTextNode
+    
+    var jsTemplate: Node
+    
+    var mainDocument: String
+    
+    def zip(): JSZip
+    @JSName("zip")
+    var zip_Original: JSZip
+  }
+  object ContentTypes {
+    
+    inline def apply(contentTypes: NonTextNode, jsTemplate: Node, mainDocument: String, zip: JSZip): ContentTypes = {
+      val __obj = js.Dynamic.literal(contentTypes = contentTypes.asInstanceOf[js.Any], jsTemplate = jsTemplate.asInstanceOf[js.Any], mainDocument = mainDocument.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ContentTypes]
+    }
+    
+    extension [Self <: ContentTypes](x: Self) {
+      
+      inline def setContentTypes(value: NonTextNode): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
+      
+      inline def setJsTemplate(value: Node): Self = StObject.set(x, "jsTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setMainDocument(value: String): Self = StObject.set(x, "mainDocument", value.asInstanceOf[js.Any])
+      
+      inline def setZip(value: JSZip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Ctx extends StObject {
     
     var ctx: js.Object
@@ -177,7 +242,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[QualifiedAttribute | String] {
+       with /* key */ StringDictionary[typings.docxTemplates.bundledMod.QualifiedAttribute | String] {
     
     var ContentType: js.UndefOr[String] = js.undefined
     
@@ -212,22 +277,22 @@ object anon {
     extends StObject
        with ReportOutput {
     
-    var errors: js.Array[Error]
+    var errors: js.Array[js.Error]
     
     var status: errors
   }
   object Errors {
     
-    inline def apply(errors: js.Array[Error]): Errors = {
+    inline def apply(errors: js.Array[js.Error]): Errors = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], status = "errors")
       __obj.asInstanceOf[Errors]
     }
     
     extension [Self <: Errors](x: Self) {
       
-      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Error*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setStatus(value: errors): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -272,11 +337,11 @@ object anon {
     
     var modifiedSandbox: js.Object
     
-    var result: js.Any
+    var result: Any
   }
   object ModifiedSandbox {
     
-    inline def apply(modifiedSandbox: js.Object, result: js.Any): ModifiedSandbox = {
+    inline def apply(modifiedSandbox: js.Object, result: Any): ModifiedSandbox = {
       val __obj = js.Dynamic.literal(modifiedSandbox = modifiedSandbox.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModifiedSandbox]
     }
@@ -285,7 +350,7 @@ object anon {
       
       inline def setModifiedSandbox(value: js.Object): Self = StObject.set(x, "modifiedSandbox", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   

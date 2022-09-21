@@ -10,10 +10,10 @@ Read the version of the App from config.xml and make it available in js
 | ------------------ | :-------------: |
 | Full name          | cordova_app_version_plugin |
 | Keywords           | cordova, appversion, version, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-windows8, cordova-windows, cordova-browser |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 3753 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 91.66666666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/Binarypark/cordova_app_version_plugin#readme)

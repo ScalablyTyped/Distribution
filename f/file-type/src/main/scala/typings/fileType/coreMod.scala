@@ -1,10 +1,7 @@
 package typings.fileType
 
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.std.ArrayBuffer
-import typings.std.Set
-import typings.std.Uint8Array
+import typings.node.nodeStreamMod.Readable
+import typings.std.ReadonlySet
 import typings.strtok3.typesMod.ITokenizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,81 +13,23 @@ object coreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Supported file extensions.
-  	*/
-  @JSImport("file-type/core", "extensions")
+  inline def fileTypeFromBuffer(buffer: js.typedarray.ArrayBuffer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
+  inline def fileTypeFromBuffer(buffer: js.typedarray.Uint8Array): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
+  
+  inline def fileTypeFromStream(stream: Readable): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
+  
+  inline def fileTypeFromTokenizer(tokenizer: ITokenizer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromTokenizer")(tokenizer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
+  
+  inline def fileTypeStream(readableStream: Readable): js.Promise[ReadableStreamWithFileType] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeStream")(readableStream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStreamWithFileType]]
+  inline def fileTypeStream(readableStream: Readable, options: StreamOptions): js.Promise[ReadableStreamWithFileType] = (^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeStream")(readableStream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStreamWithFileType]]
+  
+  @JSImport("file-type/core", "supportedExtensions")
   @js.native
-  val extensions: Set[FileExtension] = js.native
+  val supportedExtensions: ReadonlySet[FileExtension] = js.native
   
-  /**
-  	Detect the file type of a `Buffer`, `Uint8Array`, or `ArrayBuffer`.
-  	The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
-  	If file access is available, it is recommended to use `.fromFile()` instead.
-  	@param buffer - A buffer representing file data. It works best if the buffer contains the entire file, it may work with a smaller portion as well.
-  	@returns The detected file type and MIME type, or `undefined` when there is no match.
-  	*/
-  inline def fromBuffer(buffer: Buffer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
-  inline def fromBuffer(buffer: ArrayBuffer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
-  inline def fromBuffer(buffer: Uint8Array): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
-  
-  /**
-  	Detect the file type of a Node.js [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable).
-  	The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
-  	@param stream - A readable stream representing file data.
-  	@returns The detected file type and MIME type, or `undefined` when there is no match.
-  	*/
-  inline def fromStream(stream: Readable): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
-  
-  /**
-  	Detect the file type from an [`ITokenizer`](https://github.com/Borewit/strtok3#tokenizer) source.
-  	This method is used internally, but can also be used for a special "tokenizer" reader.
-  	A tokenizer propagates the internal read functions, allowing alternative transport mechanisms, to access files, to be implemented and used.
-  	An example is [`@tokenizer/http`](https://github.com/Borewit/tokenizer-http), which requests data using [HTTP-range-requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests). A difference with a conventional stream and the [*tokenizer*](https://github.com/Borewit/strtok3#tokenizer), is that it is able to *ignore* (seek, fast-forward) in the stream. For example, you may only need and read the first 6 bytes, and the last 128 bytes, which may be an advantage in case reading the entire file would take longer.
-  	```
-  	import {makeTokenizer} = require('@tokenizer/http');
-  	import FileType = require('file-type');
-  	const audioTrackUrl = 'https://test-audio.netlify.com/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3';
-  	(async () => {
-  		const httpTokenizer = await makeTokenizer(audioTrackUrl);
-  		const fileType = await FileType.fromTokenizer(httpTokenizer);
-  		console.log(fileType);
-  		//=> {ext: 'mp3', mime: 'audio/mpeg'}
-  	})();
-  	```
-  	@param tokenizer - File source implementing the tokenizer interface.
-  	@returns The detected file type and MIME type, or `undefined` when there is no match.
-  	*/
-  inline def fromTokenizer(tokenizer: ITokenizer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenizer")(tokenizer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
-  
-  /**
-  	Supported MIME types.
-  	*/
-  @JSImport("file-type/core", "mimeTypes")
+  @JSImport("file-type/core", "supportedMimeTypes")
   @js.native
-  val mimeTypes: js.Array[MimeType] = js.native
-  
-  /**
-  	Detect the file type of a readable stream.
-  	@param readableStream - A [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable) containing a file to examine.
-  	@returns A `Promise` which resolves to the original readable stream argument, but with an added `fileType` property, which is an object like the one returned from `FileType.fromFile()`.
-  	@example
-  	```
-  	import * as fs from 'fs';
-  	import * as crypto from 'crypto';
-  	import fileType = require('file-type');
-  	(async () => {
-  		const read = fs.createReadStream('encrypted.enc');
-  		const decipher = crypto.createDecipheriv(alg, key, iv);
-  		const stream = await fileType.stream(read.pipe(decipher));
-  		console.log(stream.fileType);
-  		//=> {ext: 'mov', mime: 'video/quicktime'}
-  		const write = fs.createWriteStream(`decrypted.${stream.fileType.ext}`);
-  		stream.pipe(write);
-  	})();
-  	```
-  	*/
-  inline def stream(readableStream: Readable): js.Promise[ReadableStreamWithFileType] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(readableStream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStreamWithFileType]]
+  val supportedMimeTypes: ReadonlySet[MimeType] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.fileType.fileTypeStrings.jpg
@@ -99,6 +38,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.gif
     - typings.fileType.fileTypeStrings.webp
     - typings.fileType.fileTypeStrings.flif
+    - typings.fileType.fileTypeStrings.xcf
     - typings.fileType.fileTypeStrings.cr2
     - typings.fileType.fileTypeStrings.cr3
     - typings.fileType.fileTypeStrings.orf
@@ -139,6 +79,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.pdf
     - typings.fileType.fileTypeStrings.epub
     - typings.fileType.fileTypeStrings.mobi
+    - typings.fileType.fileTypeStrings.elf
     - typings.fileType.fileTypeStrings.exe
     - typings.fileType.fileTypeStrings.swf
     - typings.fileType.fileTypeStrings.rtf
@@ -225,6 +166,11 @@ object coreMod {
     - typings.fileType.fileTypeStrings.pgp
     - typings.fileType.fileTypeStrings.asar
     - typings.fileType.fileTypeStrings.stl
+    - typings.fileType.fileTypeStrings.chm
+    - typings.fileType.fileTypeStrings.`3mf`
+    - typings.fileType.fileTypeStrings.zst
+    - typings.fileType.fileTypeStrings.jxl
+    - typings.fileType.fileTypeStrings.vcf
   */
   trait FileExtension extends StObject
   object FileExtension {
@@ -232,6 +178,8 @@ object coreMod {
     inline def `3g2`: typings.fileType.fileTypeStrings.`3g2` = "3g2".asInstanceOf[typings.fileType.fileTypeStrings.`3g2`]
     
     inline def `3gp`: typings.fileType.fileTypeStrings.`3gp` = "3gp".asInstanceOf[typings.fileType.fileTypeStrings.`3gp`]
+    
+    inline def `3mf`: typings.fileType.fileTypeStrings.`3mf` = "3mf".asInstanceOf[typings.fileType.fileTypeStrings.`3mf`]
     
     inline def `7z`: typings.fileType.fileTypeStrings.`7z` = "7z".asInstanceOf[typings.fileType.fileTypeStrings.`7z`]
     
@@ -279,6 +227,8 @@ object coreMod {
     
     inline def cfb: typings.fileType.fileTypeStrings.cfb = "cfb".asInstanceOf[typings.fileType.fileTypeStrings.cfb]
     
+    inline def chm: typings.fileType.fileTypeStrings.chm = "chm".asInstanceOf[typings.fileType.fileTypeStrings.chm]
+    
     inline def cr2: typings.fileType.fileTypeStrings.cr2 = "cr2".asInstanceOf[typings.fileType.fileTypeStrings.cr2]
     
     inline def cr3: typings.fileType.fileTypeStrings.cr3 = "cr3".asInstanceOf[typings.fileType.fileTypeStrings.cr3]
@@ -298,6 +248,8 @@ object coreMod {
     inline def docx: typings.fileType.fileTypeStrings.docx = "docx".asInstanceOf[typings.fileType.fileTypeStrings.docx]
     
     inline def dsf: typings.fileType.fileTypeStrings.dsf = "dsf".asInstanceOf[typings.fileType.fileTypeStrings.dsf]
+    
+    inline def elf: typings.fileType.fileTypeStrings.elf = "elf".asInstanceOf[typings.fileType.fileTypeStrings.elf]
     
     inline def eot: typings.fileType.fileTypeStrings.eot = "eot".asInstanceOf[typings.fileType.fileTypeStrings.eot]
     
@@ -346,6 +298,8 @@ object coreMod {
     inline def jpm: typings.fileType.fileTypeStrings.jpm = "jpm".asInstanceOf[typings.fileType.fileTypeStrings.jpm]
     
     inline def jpx: typings.fileType.fileTypeStrings.jpx = "jpx".asInstanceOf[typings.fileType.fileTypeStrings.jpx]
+    
+    inline def jxl: typings.fileType.fileTypeStrings.jxl = "jxl".asInstanceOf[typings.fileType.fileTypeStrings.jxl]
     
     inline def jxr: typings.fileType.fileTypeStrings.jxr = "jxr".asInstanceOf[typings.fileType.fileTypeStrings.jxr]
     
@@ -465,6 +419,8 @@ object coreMod {
     
     inline def ttf: typings.fileType.fileTypeStrings.ttf = "ttf".asInstanceOf[typings.fileType.fileTypeStrings.ttf]
     
+    inline def vcf: typings.fileType.fileTypeStrings.vcf = "vcf".asInstanceOf[typings.fileType.fileTypeStrings.vcf]
+    
     inline def voc: typings.fileType.fileTypeStrings.voc = "voc".asInstanceOf[typings.fileType.fileTypeStrings.voc]
     
     inline def wasm: typings.fileType.fileTypeStrings.wasm = "wasm".asInstanceOf[typings.fileType.fileTypeStrings.wasm]
@@ -481,6 +437,8 @@ object coreMod {
     
     inline def wv: typings.fileType.fileTypeStrings.wv = "wv".asInstanceOf[typings.fileType.fileTypeStrings.wv]
     
+    inline def xcf: typings.fileType.fileTypeStrings.xcf = "xcf".asInstanceOf[typings.fileType.fileTypeStrings.xcf]
+    
     inline def xlsx: typings.fileType.fileTypeStrings.xlsx = "xlsx".asInstanceOf[typings.fileType.fileTypeStrings.xlsx]
     
     inline def xm: typings.fileType.fileTypeStrings.xm = "xm".asInstanceOf[typings.fileType.fileTypeStrings.xm]
@@ -492,18 +450,20 @@ object coreMod {
     inline def xz: typings.fileType.fileTypeStrings.xz = "xz".asInstanceOf[typings.fileType.fileTypeStrings.xz]
     
     inline def zip: typings.fileType.fileTypeStrings.zip = "zip".asInstanceOf[typings.fileType.fileTypeStrings.zip]
+    
+    inline def zst: typings.fileType.fileTypeStrings.zst = "zst".asInstanceOf[typings.fileType.fileTypeStrings.zst]
   }
   
   trait FileTypeResult extends StObject {
     
     /**
-    		One of the supported [file types](https://github.com/sindresorhus/file-type#supported-file-types).
-    		*/
+    	One of the supported [file types](https://github.com/sindresorhus/file-type#supported-file-types).
+    	*/
     val ext: FileExtension
     
     /**
-    		The detected [MIME type](https://en.wikipedia.org/wiki/Internet_media_type).
-    		*/
+    	The detected [MIME type](https://en.wikipedia.org/wiki/Internet_media_type).
+    	*/
     val mime: MimeType
   }
   object FileTypeResult {
@@ -527,6 +487,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.imageSlashgif
     - typings.fileType.fileTypeStrings.imageSlashwebp
     - typings.fileType.fileTypeStrings.imageSlashflif
+    - typings.fileType.fileTypeStrings.`imageSlashx-xcf`
     - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr2`
     - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr3`
     - typings.fileType.fileTypeStrings.imageSlashtiff
@@ -574,6 +535,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.audioSlashwavpack
     - typings.fileType.fileTypeStrings.audioSlashamr
     - typings.fileType.fileTypeStrings.applicationSlashpdf
+    - typings.fileType.fileTypeStrings.`applicationSlashx-elf`
     - typings.fileType.fileTypeStrings.`applicationSlashx-msdownload`
     - typings.fileType.fileTypeStrings.`applicationSlashx-shockwave-flash`
     - typings.fileType.fileTypeStrings.applicationSlashrtf
@@ -619,6 +581,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.applicationSlashdicom
     - typings.fileType.fileTypeStrings.`audioSlashx-musepack`
     - typings.fileType.fileTypeStrings.textSlashcalendar
+    - typings.fileType.fileTypeStrings.textSlashvcard
     - typings.fileType.fileTypeStrings.`modelSlashgltf-binary`
     - typings.fileType.fileTypeStrings.applicationSlashvndDottcpdumpDotpcap
     - typings.fileType.fileTypeStrings.`audioSlashx-dsf`
@@ -649,6 +612,10 @@ object coreMod {
     - typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`
     - typings.fileType.fileTypeStrings.`applicationSlashx-asar`
     - typings.fileType.fileTypeStrings.modelSlashstl
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp`
+    - typings.fileType.fileTypeStrings.modelSlash3mf
+    - typings.fileType.fileTypeStrings.imageSlashjxl
+    - typings.fileType.fileTypeStrings.applicationSlashzstd
   */
   trait MimeType extends StObject
   object MimeType {
@@ -678,6 +645,8 @@ object coreMod {
     inline def `applicationSlashvndDotms-cab-compressed`: typings.fileType.fileTypeStrings.`applicationSlashvndDotms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotms-cab-compressed`]
     
     inline def `applicationSlashvndDotms-fontobject`: typings.fileType.fileTypeStrings.`applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotms-fontobject`]
+    
+    inline def `applicationSlashvndDotms-htmlhelp`: typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp` = "application/vnd.ms-htmlhelp".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp`]
     
     inline def applicationSlashvndDotoasisDotopendocumentDotpresentation: typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation]
     
@@ -714,6 +683,8 @@ object coreMod {
     inline def `applicationSlashx-compress`: typings.fileType.fileTypeStrings.`applicationSlashx-compress` = "application/x-compress".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-compress`]
     
     inline def `applicationSlashx-deb`: typings.fileType.fileTypeStrings.`applicationSlashx-deb` = "application/x-deb".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-deb`]
+    
+    inline def `applicationSlashx-elf`: typings.fileType.fileTypeStrings.`applicationSlashx-elf` = "application/x-elf".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-elf`]
     
     inline def `applicationSlashx-esri-shape`: typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape`]
     
@@ -756,6 +727,8 @@ object coreMod {
     inline def applicationSlashxml: typings.fileType.fileTypeStrings.applicationSlashxml = "application/xml".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashxml]
     
     inline def applicationSlashzip: typings.fileType.fileTypeStrings.applicationSlashzip = "application/zip".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashzip]
+    
+    inline def applicationSlashzstd: typings.fileType.fileTypeStrings.applicationSlashzstd = "application/zstd".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashzstd]
     
     inline def audioSlashaac: typings.fileType.fileTypeStrings.audioSlashaac = "audio/aac".asInstanceOf[typings.fileType.fileTypeStrings.audioSlashaac]
     
@@ -839,6 +812,8 @@ object coreMod {
     
     inline def imageSlashjpx: typings.fileType.fileTypeStrings.imageSlashjpx = "image/jpx".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjpx]
     
+    inline def imageSlashjxl: typings.fileType.fileTypeStrings.imageSlashjxl = "image/jxl".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjxl]
+    
     inline def imageSlashktx: typings.fileType.fileTypeStrings.imageSlashktx = "image/ktx".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashktx]
     
     inline def imageSlashmj2: typings.fileType.fileTypeStrings.imageSlashmj2 = "image/mj2".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashmj2]
@@ -871,11 +846,17 @@ object coreMod {
     
     inline def `imageSlashx-sony-arw`: typings.fileType.fileTypeStrings.`imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[typings.fileType.fileTypeStrings.`imageSlashx-sony-arw`]
     
+    inline def `imageSlashx-xcf`: typings.fileType.fileTypeStrings.`imageSlashx-xcf` = "image/x-xcf".asInstanceOf[typings.fileType.fileTypeStrings.`imageSlashx-xcf`]
+    
+    inline def modelSlash3mf: typings.fileType.fileTypeStrings.modelSlash3mf = "model/3mf".asInstanceOf[typings.fileType.fileTypeStrings.modelSlash3mf]
+    
     inline def `modelSlashgltf-binary`: typings.fileType.fileTypeStrings.`modelSlashgltf-binary` = "model/gltf-binary".asInstanceOf[typings.fileType.fileTypeStrings.`modelSlashgltf-binary`]
     
     inline def modelSlashstl: typings.fileType.fileTypeStrings.modelSlashstl = "model/stl".asInstanceOf[typings.fileType.fileTypeStrings.modelSlashstl]
     
     inline def textSlashcalendar: typings.fileType.fileTypeStrings.textSlashcalendar = "text/calendar".asInstanceOf[typings.fileType.fileTypeStrings.textSlashcalendar]
+    
+    inline def textSlashvcard: typings.fileType.fileTypeStrings.textSlashvcard = "text/vcard".asInstanceOf[typings.fileType.fileTypeStrings.textSlashvcard]
     
     inline def videoSlash3gpp: typings.fileType.fileTypeStrings.videoSlash3gpp = "video/3gpp".asInstanceOf[typings.fileType.fileTypeStrings.videoSlash3gpp]
     
@@ -912,5 +893,28 @@ object coreMod {
   trait ReadableStreamWithFileType extends Readable {
     
     val fileType: js.UndefOr[FileTypeResult] = js.native
+  }
+  
+  trait StreamOptions extends StObject {
+    
+    /**
+    	The default sample size in bytes.
+    	@default 4100
+    	*/
+    val sampleSize: js.UndefOr[Double] = js.undefined
+  }
+  object StreamOptions {
+    
+    inline def apply(): StreamOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StreamOptions]
+    }
+    
+    extension [Self <: StreamOptions](x: Self) {
+      
+      inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+      
+      inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    }
   }
 }

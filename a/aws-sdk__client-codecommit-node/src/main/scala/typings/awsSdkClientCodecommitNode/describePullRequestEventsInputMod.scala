@@ -8,5 +8,5 @@ object describePullRequestEventsInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/DescribePullRequestEventsInput", "DescribePullRequestEventsInput")
   @js.native
-  val DescribePullRequestEventsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribePullRequestEventsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

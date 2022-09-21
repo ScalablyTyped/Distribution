@@ -4,21 +4,21 @@
 Typings are for version 2.1
 
 ## Library description:
-A react component for reading QR codes from the webcam.
+A React Component for reading QR codes from the webcam
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-qr-reader |
 | Keywords           | react, qr, qrcode, qrreader |
-| # releases         | 3 |
-| # dependents       | 29 |
-| # downloads        | 857553 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 207843.0 |
+| # stars            | 894.0 |
 
 ## Links
-- [Homepage](https://github.com/JodusNodus/react-qr-reader#readme)
-- [Bugs](https://github.com/JodusNodus/react-qr-reader/issues)
-- [Repository](https://github.com/JodusNodus/react-qr-reader)
+- [Homepage](https://github.com/react-qr-reader/react-qr-reader#readme)
+- [Bugs](https://github.com/react-qr-reader/react-qr-reader/issues)
+- [Repository](https://github.com/react-qr-reader/react-qr-reader)
 - [Npm](https://www.npmjs.com/package/react-qr-reader)
     
 

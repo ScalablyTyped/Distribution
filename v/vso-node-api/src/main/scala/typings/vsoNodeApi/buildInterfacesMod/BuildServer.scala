@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait BuildServer extends StObject {
   
   var status: ServiceHostStatus
   
-  var statusChangedDate: Date
+  var statusChangedDate: js.Date
   
   var uri: String
   
@@ -42,7 +41,7 @@ object BuildServer {
     name: String,
     requireClientCertificates: Boolean,
     status: ServiceHostStatus,
-    statusChangedDate: Date,
+    statusChangedDate: js.Date,
     uri: String,
     url: String,
     version: Double
@@ -55,7 +54,7 @@ object BuildServer {
     
     inline def setAgents(value: js.Array[BuildAgentReference]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    inline def setAgentsVarargs(value: BuildAgentReference*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: BuildAgentReference*): Self = StObject.set(x, "agents", js.Array(value*))
     
     inline def setController(value: XamlBuildControllerReference): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
@@ -71,7 +70,7 @@ object BuildServer {
     
     inline def setStatus(value: ServiceHostStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusChangedDate(value: Date): Self = StObject.set(x, "statusChangedDate", value.asInstanceOf[js.Any])
+    inline def setStatusChangedDate(value: js.Date): Self = StObject.set(x, "statusChangedDate", value.asInstanceOf[js.Any])
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

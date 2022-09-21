@@ -32,14 +32,14 @@ object FormLayout {
     
     inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setSystemControls(value: js.Array[Control]): Self = StObject.set(x, "systemControls", value.asInstanceOf[js.Any])
     
-    inline def setSystemControlsVarargs(value: Control*): Self = StObject.set(x, "systemControls", js.Array(value :_*))
+    inline def setSystemControlsVarargs(value: Control*): Self = StObject.set(x, "systemControls", js.Array(value*))
   }
 }

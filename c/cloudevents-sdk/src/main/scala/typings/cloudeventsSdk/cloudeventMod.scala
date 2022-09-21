@@ -8,7 +8,7 @@ object cloudeventMod {
   
   @JSImport("cloudevents-sdk/lib/cloudevent", "CloudEvent")
   @js.native
-  class CloudEvent protected () extends StObject {
+  open class CloudEvent protected () extends StObject {
     /**
       * Creates a new CloudEvent instance
       * @param {object} event CloudEvent properties as a simple object
@@ -33,40 +33,40 @@ object cloudeventMod {
       * @param {*} value the value of the extension attribute
       * @returns {void}
       */
-    def addExtension(key: String, value: js.Any): Unit = js.native
+    def addExtension(key: String, value: Any): Unit = js.native
     
     /**
       * Gets or sets the data for this event
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#event-data
       * @type {*}
       */
-    def data: js.Any = js.native
+    def data: Any = js.native
     
     /**
       * Gets or sets the event's data content encoding
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/v0.3/spec.md#datacontentencoding
       */
-    def dataContentEncoding: js.Any = js.native
-    def dataContentEncoding_=(dataContentEncoding: js.Any): Unit = js.native
+    def dataContentEncoding: Any = js.native
+    def dataContentEncoding_=(dataContentEncoding: Any): Unit = js.native
     
     /**
       * Gets or sets the content type of the data value for this event
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#datacontenttype
       */
-    def dataContentType: js.Any = js.native
-    def dataContentType_=(contenttype: js.Any): Unit = js.native
+    def dataContentType: Any = js.native
+    def dataContentType_=(contenttype: Any): Unit = js.native
     
     /**
       * Gets or sets the event's data schema
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/v1.0/spec.md#dataschema
       */
-    def dataSchema: js.Any = js.native
-    def dataSchema_=(dataschema: js.Any): Unit = js.native
+    def dataSchema: Any = js.native
+    def dataSchema_=(dataschema: Any): Unit = js.native
     
-    def data_=(data: js.Any): Unit = js.native
+    def data_=(data: Any): Unit = js.native
     
     /**
       * Formats the CloudEvent as JSON. Validates the event according
@@ -75,9 +75,9 @@ object cloudeventMod {
       * @returns {JSON} the CloudEvent in JSON form
       * @throws {ValidationError} if this event cannot be validated against the specification
       */
-    def format(): js.Any = js.native
+    def format(): Any = js.native
     
-    var formatter: js.Any = js.native
+    var formatter: Any = js.native
     
     /**
       * Gets the extension attributes, if any, associated with this event
@@ -91,8 +91,8 @@ object cloudeventMod {
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#id
       * @type {string}
       */
-    def id: js.Any = js.native
-    def id_=(id: js.Any): Unit = js.native
+    def id: Any = js.native
+    def id_=(id: Any): Unit = js.native
     
     /**
       * DEPRECATED: Gets or sets the schema URL for this event. Throws {TypeError}
@@ -100,49 +100,49 @@ object cloudeventMod {
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/v0.3/spec.md#schemaurl
       */
-    def schemaURL: js.Any = js.native
-    def schemaURL_=(schemaurl: js.Any): Unit = js.native
+    def schemaURL: Any = js.native
+    def schemaURL_=(schemaurl: Any): Unit = js.native
     
     /**
       * Gets or sets the origination source of this event as a URI.
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#source-1
       */
-    def source: js.Any = js.native
-    def source_=(source: js.Any): Unit = js.native
+    def source: Any = js.native
+    def source_=(source: Any): Unit = js.native
     
-    var spec: js.Any = js.native
+    var spec: Any = js.native
     
     /**
       * Gets the CloudEvent specification version
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#specversion
       */
-    def specversion: js.Any = js.native
+    def specversion: Any = js.native
     
     /**
       * Gets or sets the event subject
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/v1.0/spec.md#subject
       */
-    def subject: js.Any = js.native
-    def subject_=(subject: js.Any): Unit = js.native
+    def subject: Any = js.native
+    def subject_=(subject: Any): Unit = js.native
     
     /**
       * Gets or sets the timestamp for this event as an ISO formatted date string
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#time
       */
-    def time: js.Any = js.native
-    def time_=(time: js.Any): Unit = js.native
+    def time: Any = js.native
+    def time_=(time: Any): Unit = js.native
     
     /**
       * Gets or sets the event type
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#type
       */
-    def `type`: js.Any = js.native
-    def type_=(`type`: js.Any): Unit = js.native
+    def `type`: Any = js.native
+    def type_=(`type`: Any): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

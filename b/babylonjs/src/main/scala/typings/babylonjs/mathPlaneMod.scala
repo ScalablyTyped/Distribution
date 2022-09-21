@@ -12,7 +12,7 @@ object mathPlaneMod {
   
   @JSImport("babylonjs/Maths/math.plane", "Plane")
   @js.native
-  class Plane protected () extends StObject {
+  open class Plane protected () extends StObject {
     /**
       * Creates a Plane object according to the given floats a, b, c, d and the plane equation : ax + by + cz + d = 0
       * @param a a component of the plane
@@ -29,9 +29,9 @@ object mathPlaneMod {
     
     /**
       * Updates the current Plane from the plane defined by the three given points.
-      * @param point1 one of the points used to contruct the plane
-      * @param point2 one of the points used to contruct the plane
-      * @param point3 one of the points used to contruct the plane
+      * @param point1 one of the points used to construct the plane
+      * @param point2 one of the points used to construct the plane
+      * @param point3 one of the points used to construct the plane
       * @returns the updated Plane.
       */
     def copyFromPoints(point1: DeepImmutable[Vector3], point2: DeepImmutable[Vector3], point3: DeepImmutable[Vector3]): Plane = js.native
@@ -137,7 +137,7 @@ object mathPlaneMod {
     
     @JSImport("babylonjs/Maths/math.plane", "Plane._TmpMatrix")
     @js.native
-    def _TmpMatrix: js.Any = js.native
-    inline def _TmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
+    def _TmpMatrix: Any = js.native
+    inline def _TmpMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
   }
 }

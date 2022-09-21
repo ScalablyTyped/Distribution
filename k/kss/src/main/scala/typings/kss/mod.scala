@@ -1,8 +1,6 @@
 package typings.kss
 
 import typings.kss.kssBooleans.`false`
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +16,8 @@ object mod {
   
   @JSImport("kss", "KssModifier")
   @js.native
-  class KssModifier () extends StObject {
-    def this(data: js.Any) = this()
+  open class KssModifier () extends StObject {
+    def this(data: Any) = this()
     
     def className(): String = js.native
     def className(className: String): KssModifier = js.native
@@ -36,13 +34,13 @@ object mod {
     def section(): KssSection = js.native
     def section(section: KssSection): KssModifier = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
   @JSImport("kss", "KssParameter")
   @js.native
-  class KssParameter () extends StObject {
-    def this(data: js.Any) = this()
+  open class KssParameter () extends StObject {
+    def this(data: Any) = this()
     
     def defaultValue(): String = js.native
     
@@ -55,16 +53,16 @@ object mod {
     def section(): KssSection = js.native
     def section(section: KssSection): KssParameter = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
   @JSImport("kss", "KssSection")
   @js.native
-  class KssSection () extends StObject {
-    def this(data: js.Any) = this()
+  open class KssSection () extends StObject {
+    def this(data: Any) = this()
     
-    def custom(name: String): js.Any = js.native
-    def custom(name: String, value: js.Any): KssSection = js.native
+    def custom(name: String): Any = js.native
+    def custom(name: String, value: Any): KssSection = js.native
     
     def customPropertyNames(): js.Array[String] = js.native
     
@@ -117,7 +115,7 @@ object mod {
     def styleGuide(): KssStyleguide = js.native
     def styleGuide(styleguide: KssStyleguide): KssSection = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     def weight(): Double = js.native
     def weight(weight: Double): KssSection = js.native
@@ -125,8 +123,8 @@ object mod {
   
   @JSImport("kss", "KssStyleguide")
   @js.native
-  class KssStyleguide () extends StObject {
-    def this(data: js.Any) = this()
+  open class KssStyleguide () extends StObject {
+    def this(data: Any) = this()
     
     def autoInit(autoInit: Boolean): KssStyleguide = js.native
     
@@ -142,11 +140,11 @@ object mod {
     
     def sections(): js.Array[KssSection] = js.native
     def sections(query: String): `false` | KssSection | js.Array[KssSection] = js.native
-    def sections(query: RegExp): `false` | KssSection | js.Array[KssSection] = js.native
+    def sections(query: js.RegExp): `false` | KssSection | js.Array[KssSection] = js.native
     def sections(sections: js.Array[KssSection]): KssStyleguide = js.native
     def sections(sections: KssSection): KssStyleguide = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
   /** Parse a string of documented CSS, or an array of file anys with their content. */
@@ -157,7 +155,7 @@ object mod {
   inline def traverse(directory: String, options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
   inline def traverse(directory: js.Array[String], options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
   
-  type CallbackFn = js.Function2[/* error */ Error | Null, /* styleguide */ KssStyleguide, Unit]
+  type CallbackFn = js.Function2[/* error */ js.Error | Null, /* styleguide */ KssStyleguide, Unit]
   
   trait File extends StObject {
     
@@ -191,12 +189,12 @@ object mod {
     extends StObject
        with Options {
     
-    var builder: js.UndefOr[js.Any] = js.undefined
+    var builder: js.UndefOr[Any] = js.undefined
     
     @JSName("clone")
     var clone_FKssOptions: js.UndefOr[Boolean] = js.undefined
     
-    var custom: js.UndefOr[js.Any] = js.undefined
+    var custom: js.UndefOr[Any] = js.undefined
     
     var json: js.UndefOr[Boolean] = js.undefined
     
@@ -215,7 +213,7 @@ object mod {
     
     extension [Self <: KssOptions](x: Self) {
       
-      inline def setBuilder(value: js.Any): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: Any): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
       inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
@@ -223,7 +221,7 @@ object mod {
       
       inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
@@ -237,7 +235,7 @@ object mod {
       
       inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -266,7 +264,7 @@ object mod {
       * Use a regex or string (e.g. `*.less|*.css`) to only parse files matching this value.
       * @default *.css|*.less|*.sass|*.scss|*.styl|*.stylus
       */
-    var mask: js.UndefOr[String | RegExp] = js.undefined
+    var mask: js.UndefOr[String | js.RegExp] = js.undefined
   }
   object Options {
     
@@ -285,7 +283,7 @@ object mod {
       
       inline def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
       
-      inline def setMask(value: String | RegExp): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | js.RegExp): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     }

@@ -1,7 +1,6 @@
 package typings.fsTreeDiff
 
 import typings.node.fsMod.Stats
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,21 +9,21 @@ object entryMod {
   
   @JSImport("fs-tree-diff/lib/entry", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Entry {
     def this(relativePath: String) = this()
     def this(relativePath: String, size: Double) = this()
+    def this(relativePath: String, size: Double, mtime: js.Date) = this()
     def this(relativePath: String, size: Double, mtime: Double) = this()
-    def this(relativePath: String, size: Double, mtime: Date) = this()
+    def this(relativePath: String, size: Unit, mtime: js.Date) = this()
     def this(relativePath: String, size: Unit, mtime: Double) = this()
-    def this(relativePath: String, size: Unit, mtime: Date) = this()
+    def this(relativePath: String, size: Double, mtime: js.Date, mode: Double) = this()
     def this(relativePath: String, size: Double, mtime: Double, mode: Double) = this()
     def this(relativePath: String, size: Double, mtime: Unit, mode: Double) = this()
-    def this(relativePath: String, size: Double, mtime: Date, mode: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: js.Date, mode: Double) = this()
     def this(relativePath: String, size: Unit, mtime: Double, mode: Double) = this()
     def this(relativePath: String, size: Unit, mtime: Unit, mode: Double) = this()
-    def this(relativePath: String, size: Unit, mtime: Date, mode: Double) = this()
     
     /* CompleteClass */
     override def isDirectory(): Boolean = js.native
@@ -73,7 +72,7 @@ object entryMod {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Double | Date] = js.undefined
+    var mtime: js.UndefOr[Double | js.Date] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
   }
@@ -90,7 +89,7 @@ object entryMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Double | Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double | js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       

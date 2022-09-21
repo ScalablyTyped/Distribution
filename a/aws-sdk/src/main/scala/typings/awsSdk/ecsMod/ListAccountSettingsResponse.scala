@@ -33,6 +33,6 @@ object ListAccountSettingsResponse {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "settings", js.Array(value*))
   }
 }

@@ -58,6 +58,8 @@ object typesMod {
     
     var height: js.UndefOr[Double | String] = js.undefined
     
+    var host: js.UndefOr[String] = js.undefined
+    
     var playerVars: js.UndefOr[Autoplay] = js.undefined
     
     var videoId: js.UndefOr[String] = js.undefined
@@ -81,6 +83,10 @@ object typesMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
       inline def setPlayerVars(value: Autoplay): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
       
       inline def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
@@ -98,143 +104,143 @@ object typesMod {
   @js.native
   trait YouTubePlayer extends StObject {
     
-    def addEventListener(event: String, listener: js.Function1[/* event */ CustomEvent[js.Any], Unit]): Unit = js.native
+    def addEventListener(event: String, listener: js.Function1[/* event */ CustomEvent[Any], Unit]): js.Promise[Unit] = js.native
     
-    def cuePlaylist(playlist: String): Unit = js.native
-    def cuePlaylist(playlist: String, index: Double): Unit = js.native
-    def cuePlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
-    def cuePlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: String, index: Double, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: String, index: Unit, startSeconds: Double): Unit = js.native
-    def cuePlaylist(playlist: String, index: Unit, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: String, index: Unit, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String]): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Double): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cuePlaylist(playlist: Index): Unit = js.native
+    def cuePlaylist(playlist: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Double, startSeconds: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Double, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Unit, startSeconds: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Unit, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: String, index: Unit, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String]): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: js.Array[String], index: Unit, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cuePlaylist(playlist: Index): js.Promise[Unit] = js.native
     
-    def cueVideoById(videoId: String): Unit = js.native
-    def cueVideoById(videoId: String, startSeconds: Double): Unit = js.native
-    def cueVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cueVideoById(videoId: String, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cueVideoById(video: EndSeconds): Unit = js.native
+    def cueVideoById(videoId: String): js.Promise[Unit] = js.native
+    def cueVideoById(videoId: String, startSeconds: Double): js.Promise[Unit] = js.native
+    def cueVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cueVideoById(videoId: String, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cueVideoById(video: EndSeconds): js.Promise[Unit] = js.native
     
-    def cueVideoByUrl(mediaContentUrl: String): Unit = js.native
-    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
-    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def cueVideoByUrl(video: MediaContentUrl): Unit = js.native
+    def cueVideoByUrl(mediaContentUrl: String): js.Promise[Unit] = js.native
+    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double): js.Promise[Unit] = js.native
+    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cueVideoByUrl(mediaContentUrl: String, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def cueVideoByUrl(video: MediaContentUrl): js.Promise[Unit] = js.native
     
-    def destroy(): Unit = js.native
+    def destroy(): js.Promise[Unit] = js.native
     
-    def getAvailablePlaybackRates(): js.Array[Double] = js.native
+    def getAvailablePlaybackRates(): js.Promise[js.Array[Double]] = js.native
     
-    def getAvailableQualityLevels(): js.Array[String] = js.native
+    def getAvailableQualityLevels(): js.Promise[js.Array[String]] = js.native
     
-    def getCurrentTime(): Double = js.native
+    def getCurrentTime(): js.Promise[Double] = js.native
     
-    def getDuration(): Double = js.native
+    def getDuration(): js.Promise[Double] = js.native
     
-    def getIframe(): HTMLIFrameElement = js.native
+    def getIframe(): js.Promise[HTMLIFrameElement] = js.native
     
-    def getOption(module: String, option: String): js.Any = js.native
+    def getOption(module: String, option: String): js.Promise[Any] = js.native
     
-    def getOptions(): js.Array[String] = js.native
-    def getOptions(module: String): js.Object = js.native
+    def getOptions(): js.Promise[js.Array[String]] = js.native
+    def getOptions(module: String): js.Promise[js.Object] = js.native
     
-    def getPlaybackQuality(): String = js.native
+    def getPlaybackQuality(): js.Promise[String] = js.native
     
-    def getPlaybackRate(): Double = js.native
+    def getPlaybackRate(): js.Promise[Double] = js.native
     
-    def getPlayerState(): PlayerStates = js.native
+    def getPlayerState(): js.Promise[PlayerStates] = js.native
     
-    def getPlaylist(): js.Array[String] = js.native
+    def getPlaylist(): js.Promise[js.Array[String]] = js.native
     
-    def getPlaylistIndex(): Double = js.native
+    def getPlaylistIndex(): js.Promise[Double] = js.native
     
-    def getVideoEmbedCode(): String = js.native
+    def getVideoEmbedCode(): js.Promise[String] = js.native
     
-    def getVideoLoadedFraction(): Double = js.native
+    def getVideoLoadedFraction(): js.Promise[Double] = js.native
     
-    def getVideoUrl(): String = js.native
+    def getVideoUrl(): js.Promise[String] = js.native
     
-    def getVolume(): Double = js.native
+    def getVolume(): js.Promise[Double] = js.native
     
-    def isMuted(): Boolean = js.native
+    def isMuted(): js.Promise[Boolean] = js.native
     
-    def loadPlaylist(playlist: String): Unit = js.native
-    def loadPlaylist(playlist: String, index: Double): Unit = js.native
-    def loadPlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
-    def loadPlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: String, index: Double, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: String, index: Unit, startSeconds: Double): Unit = js.native
-    def loadPlaylist(playlist: String, index: Unit, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: String, index: Unit, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String]): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Double): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadPlaylist(playlist: Index): Unit = js.native
+    def loadPlaylist(playlist: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Double, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Double, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Unit, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Unit, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: String, index: Unit, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String]): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: js.Array[String], index: Unit, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadPlaylist(playlist: Index): js.Promise[Unit] = js.native
     
-    def loadVideoById(videoId: String): Unit = js.native
-    def loadVideoById(videoId: String, startSeconds: Double): Unit = js.native
-    def loadVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadVideoById(videoId: String, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadVideoById(video: EndSeconds): Unit = js.native
+    def loadVideoById(videoId: String): js.Promise[Unit] = js.native
+    def loadVideoById(videoId: String, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadVideoById(videoId: String, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadVideoById(video: EndSeconds): js.Promise[Unit] = js.native
     
-    def loadVideoByUrl(mediaContentUrl: String): Unit = js.native
-    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
-    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
-    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Unit, suggestedQuality: String): Unit = js.native
-    def loadVideoByUrl(video: MediaContentUrl): Unit = js.native
+    def loadVideoByUrl(mediaContentUrl: String): js.Promise[Unit] = js.native
+    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double): js.Promise[Unit] = js.native
+    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadVideoByUrl(mediaContentUrl: String, startSeconds: Unit, suggestedQuality: String): js.Promise[Unit] = js.native
+    def loadVideoByUrl(video: MediaContentUrl): js.Promise[Unit] = js.native
     
-    def mute(): Unit = js.native
+    def mute(): js.Promise[Unit] = js.native
     
-    def nextVideo(): Unit = js.native
+    def nextVideo(): js.Promise[Unit] = js.native
     
-    def on(eventType: EventType, listener: js.Function1[/* event */ CustomEvent[js.Any], Unit]): Unit = js.native
+    def on(eventType: EventType, listener: js.Function1[/* event */ CustomEvent[Any], Unit]): Unit = js.native
     @JSName("on")
     def on_stateChange(eventType: stateChange, listener: js.Function1[/* event */ CustomEventanydatanumber, Unit]): Unit = js.native
     
-    def pauseVideo(): Unit = js.native
+    def pauseVideo(): js.Promise[Unit] = js.native
     
-    def playVideo(): Unit = js.native
+    def playVideo(): js.Promise[Unit] = js.native
     
-    def playVideoAt(index: Double): Unit = js.native
+    def playVideoAt(index: Double): js.Promise[Unit] = js.native
     
-    def previousVideo(): Unit = js.native
+    def previousVideo(): js.Promise[Unit] = js.native
     
-    def removeEventListener(event: String, listener: js.Function1[/* event */ CustomEvent[js.Any], Unit]): Unit = js.native
+    def removeEventListener(event: String, listener: js.Function1[/* event */ CustomEvent[Any], Unit]): js.Promise[Unit] = js.native
     
-    def seekTo(seconds: Double, allowSeekAhead: Boolean): Unit = js.native
+    def seekTo(seconds: Double, allowSeekAhead: Boolean): js.Promise[Unit] = js.native
     
-    def setLoop(loopPlaylists: Boolean): Unit = js.native
+    def setLoop(loopPlaylists: Boolean): js.Promise[Unit] = js.native
     
-    def setOption(module: String, option: String, value: js.Any): Unit = js.native
+    def setOption(module: String, option: String, value: Any): js.Promise[Unit] = js.native
     
-    def setOptions(): Unit = js.native
+    def setOptions(): js.Promise[Unit] = js.native
     
-    def setPlaybackQuality(suggestedQuality: String): Unit = js.native
+    def setPlaybackQuality(suggestedQuality: String): js.Promise[Unit] = js.native
     
-    def setPlaybackRate(suggestedRate: Double): Unit = js.native
+    def setPlaybackRate(suggestedRate: Double): js.Promise[Unit] = js.native
     
-    def setShuffle(shufflePlaylist: Boolean): Unit = js.native
+    def setShuffle(shufflePlaylist: Boolean): js.Promise[Unit] = js.native
     
-    def setSize(width: Double, height: Double): js.Object = js.native
+    def setSize(width: Double, height: Double): js.Promise[js.Object] = js.native
     
-    def setVolume(volume: Double): Unit = js.native
+    def setVolume(volume: Double): js.Promise[Unit] = js.native
     
-    def stopVideo(): Unit = js.native
+    def stopVideo(): js.Promise[Unit] = js.native
     
-    def unMute(): Unit = js.native
+    def unMute(): js.Promise[Unit] = js.native
   }
 }

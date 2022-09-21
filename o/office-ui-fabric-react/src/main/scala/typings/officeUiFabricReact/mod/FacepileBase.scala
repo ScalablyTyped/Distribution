@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "FacepileBase")
 @js.native
-class FacepileBase protected ()
+open class FacepileBase protected ()
   extends typings.officeUiFabricReact.libFacepileMod.FacepileBase {
   def this(props: IFacepileProps) = this()
 }

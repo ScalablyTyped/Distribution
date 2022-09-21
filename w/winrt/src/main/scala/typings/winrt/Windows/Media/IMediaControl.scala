@@ -13,29 +13,29 @@ trait IMediaControl extends StObject {
   
   var isPlaying: Boolean
   
-  var onchanneldownpressed: js.Any
+  var onchanneldownpressed: Any
   
-  var onchanneluppressed: js.Any
+  var onchanneluppressed: Any
   
-  var onfastforwardpressed: js.Any
+  var onfastforwardpressed: Any
   
-  var onnexttrackpressed: js.Any
+  var onnexttrackpressed: Any
   
-  var onpausepressed: js.Any
+  var onpausepressed: Any
   
-  var onplaypausetogglepressed: js.Any
+  var onplaypausetogglepressed: Any
   
-  var onplaypressed: js.Any
+  var onplaypressed: Any
   
-  var onprevioustrackpressed: js.Any
+  var onprevioustrackpressed: Any
   
-  var onrecordpressed: js.Any
+  var onrecordpressed: Any
   
-  var onrewindpressed: js.Any
+  var onrewindpressed: Any
   
-  var onsoundlevelchanged: js.Any
+  var onsoundlevelchanged: Any
   
-  var onstoppressed: js.Any
+  var onstoppressed: Any
   
   var soundLevel: SoundLevel
   
@@ -47,18 +47,18 @@ object IMediaControl {
     albumArt: Uri,
     artistName: String,
     isPlaying: Boolean,
-    onchanneldownpressed: js.Any,
-    onchanneluppressed: js.Any,
-    onfastforwardpressed: js.Any,
-    onnexttrackpressed: js.Any,
-    onpausepressed: js.Any,
-    onplaypausetogglepressed: js.Any,
-    onplaypressed: js.Any,
-    onprevioustrackpressed: js.Any,
-    onrecordpressed: js.Any,
-    onrewindpressed: js.Any,
-    onsoundlevelchanged: js.Any,
-    onstoppressed: js.Any,
+    onchanneldownpressed: Any,
+    onchanneluppressed: Any,
+    onfastforwardpressed: Any,
+    onnexttrackpressed: Any,
+    onpausepressed: Any,
+    onplaypausetogglepressed: Any,
+    onplaypressed: Any,
+    onprevioustrackpressed: Any,
+    onrecordpressed: Any,
+    onrewindpressed: Any,
+    onsoundlevelchanged: Any,
+    onstoppressed: Any,
     soundLevel: SoundLevel,
     trackName: String
   ): IMediaControl = {
@@ -74,29 +74,29 @@ object IMediaControl {
     
     inline def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
     
-    inline def setOnchanneldownpressed(value: js.Any): Self = StObject.set(x, "onchanneldownpressed", value.asInstanceOf[js.Any])
+    inline def setOnchanneldownpressed(value: Any): Self = StObject.set(x, "onchanneldownpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnchanneluppressed(value: js.Any): Self = StObject.set(x, "onchanneluppressed", value.asInstanceOf[js.Any])
+    inline def setOnchanneluppressed(value: Any): Self = StObject.set(x, "onchanneluppressed", value.asInstanceOf[js.Any])
     
-    inline def setOnfastforwardpressed(value: js.Any): Self = StObject.set(x, "onfastforwardpressed", value.asInstanceOf[js.Any])
+    inline def setOnfastforwardpressed(value: Any): Self = StObject.set(x, "onfastforwardpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnnexttrackpressed(value: js.Any): Self = StObject.set(x, "onnexttrackpressed", value.asInstanceOf[js.Any])
+    inline def setOnnexttrackpressed(value: Any): Self = StObject.set(x, "onnexttrackpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnpausepressed(value: js.Any): Self = StObject.set(x, "onpausepressed", value.asInstanceOf[js.Any])
+    inline def setOnpausepressed(value: Any): Self = StObject.set(x, "onpausepressed", value.asInstanceOf[js.Any])
     
-    inline def setOnplaypausetogglepressed(value: js.Any): Self = StObject.set(x, "onplaypausetogglepressed", value.asInstanceOf[js.Any])
+    inline def setOnplaypausetogglepressed(value: Any): Self = StObject.set(x, "onplaypausetogglepressed", value.asInstanceOf[js.Any])
     
-    inline def setOnplaypressed(value: js.Any): Self = StObject.set(x, "onplaypressed", value.asInstanceOf[js.Any])
+    inline def setOnplaypressed(value: Any): Self = StObject.set(x, "onplaypressed", value.asInstanceOf[js.Any])
     
-    inline def setOnprevioustrackpressed(value: js.Any): Self = StObject.set(x, "onprevioustrackpressed", value.asInstanceOf[js.Any])
+    inline def setOnprevioustrackpressed(value: Any): Self = StObject.set(x, "onprevioustrackpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnrecordpressed(value: js.Any): Self = StObject.set(x, "onrecordpressed", value.asInstanceOf[js.Any])
+    inline def setOnrecordpressed(value: Any): Self = StObject.set(x, "onrecordpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnrewindpressed(value: js.Any): Self = StObject.set(x, "onrewindpressed", value.asInstanceOf[js.Any])
+    inline def setOnrewindpressed(value: Any): Self = StObject.set(x, "onrewindpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnsoundlevelchanged(value: js.Any): Self = StObject.set(x, "onsoundlevelchanged", value.asInstanceOf[js.Any])
+    inline def setOnsoundlevelchanged(value: Any): Self = StObject.set(x, "onsoundlevelchanged", value.asInstanceOf[js.Any])
     
-    inline def setOnstoppressed(value: js.Any): Self = StObject.set(x, "onstoppressed", value.asInstanceOf[js.Any])
+    inline def setOnstoppressed(value: Any): Self = StObject.set(x, "onstoppressed", value.asInstanceOf[js.Any])
     
     inline def setSoundLevel(value: SoundLevel): Self = StObject.set(x, "soundLevel", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait IgPieChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets whether the slices can be exploded.
@@ -33,7 +33,7 @@ trait IgPieChart
     * The brushes property defines the palette from which automatically assigned slice brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the property name that contains the labels.
@@ -43,7 +43,7 @@ trait IgPieChart
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -69,7 +69,7 @@ trait IgPieChart
     * Gets or sets the collection of exploded slice indices.
     * Should be an array of integers that indicate the indexes of the slices to explode.
     */
-  var explodedSlices: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var explodedSlices: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.
@@ -173,7 +173,7 @@ trait IgPieChart
     * the chart object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemBadgeTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemTemplate property.
@@ -181,7 +181,7 @@ trait IgPieChart
     * the chart object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var legendItemTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the property name that contains the legend labels.
@@ -192,12 +192,12 @@ trait IgPieChart
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets a style object that can be used to override the style settings on the others category slice.
     */
-  var othersCategoryStyle: js.UndefOr[js.Any] = js.undefined
+  var othersCategoryStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the label of the Others slice.
@@ -223,7 +223,7 @@ trait IgPieChart
     * The Outlines property defines the palette from which automatically assigned slice outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.
@@ -245,7 +245,7 @@ trait IgPieChart
     * Gets or sets the currently selected data item.  If a different data item is provided the pie chart
     *             will select the slice associated with the new item.
     */
-  var selectedItem: js.UndefOr[js.Any] = js.undefined
+  var selectedItem: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired when the selectedItem option has changed.
@@ -268,7 +268,7 @@ trait IgPieChart
     * Gets or sets the currently selected data items.  Adding or removing data items from this array will
     *             select or deselect the slices associated with those items.
     */
-  var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Event fired when the selectedItems array has changed.
@@ -291,12 +291,12 @@ trait IgPieChart
     * Sets the collection of selected slice indices.
     *             Should be an array of integers that indicate the indexes of the slices to select.
     */
-  var selectedSlices: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selectedSlices: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets or sets the style used when a slice is selected.
     */
-  var selectedStyle: js.UndefOr[js.Any] = js.undefined
+  var selectedStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the type of selection the pie chart allows.
@@ -423,7 +423,7 @@ object IgPieChart {
     
     inline def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
@@ -431,7 +431,7 @@ object IgPieChart {
     
     inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -451,11 +451,11 @@ object IgPieChart {
     
     inline def setExplodedRadiusUndefined: Self = StObject.set(x, "explodedRadius", js.undefined)
     
-    inline def setExplodedSlices(value: js.Array[js.Any]): Self = StObject.set(x, "explodedSlices", value.asInstanceOf[js.Any])
+    inline def setExplodedSlices(value: js.Array[Any]): Self = StObject.set(x, "explodedSlices", value.asInstanceOf[js.Any])
     
     inline def setExplodedSlicesUndefined: Self = StObject.set(x, "explodedSlices", js.undefined)
     
-    inline def setExplodedSlicesVarargs(value: js.Any*): Self = StObject.set(x, "explodedSlices", js.Array(value :_*))
+    inline def setExplodedSlicesVarargs(value: Any*): Self = StObject.set(x, "explodedSlices", js.Array(value*))
     
     inline def setFormatLabel(value: js.Function): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
@@ -507,11 +507,11 @@ object IgPieChart {
     
     inline def setLegend(value: IgPieChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    inline def setLegendItemBadgeTemplate(value: js.Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemBadgeTemplate(value: Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemBadgeTemplateUndefined: Self = StObject.set(x, "legendItemBadgeTemplate", js.undefined)
     
-    inline def setLegendItemTemplate(value: js.Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemTemplate(value: Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemTemplateUndefined: Self = StObject.set(x, "legendItemTemplate", js.undefined)
     
@@ -521,11 +521,11 @@ object IgPieChart {
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setOthersCategoryStyle(value: js.Any): Self = StObject.set(x, "othersCategoryStyle", value.asInstanceOf[js.Any])
+    inline def setOthersCategoryStyle(value: Any): Self = StObject.set(x, "othersCategoryStyle", value.asInstanceOf[js.Any])
     
     inline def setOthersCategoryStyleUndefined: Self = StObject.set(x, "othersCategoryStyle", js.undefined)
     
@@ -541,7 +541,7 @@ object IgPieChart {
     
     inline def setOthersCategoryTypeUndefined: Self = StObject.set(x, "othersCategoryType", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
@@ -557,7 +557,7 @@ object IgPieChart {
     
     inline def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
-    inline def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
     inline def setSelectedItemChanged(value: (/* event */ Event, /* ui */ SelectedItemChangedEventUIParam) => Unit): Self = StObject.set(x, "selectedItemChanged", js.Any.fromFunction2(value))
     
@@ -569,7 +569,7 @@ object IgPieChart {
     
     inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
     
-    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     inline def setSelectedItemsChanged(value: (/* event */ Event, /* ui */ SelectedItemsChangedEventUIParam) => Unit): Self = StObject.set(x, "selectedItemsChanged", js.Any.fromFunction2(value))
     
@@ -581,15 +581,15 @@ object IgPieChart {
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
-    inline def setSelectedSlices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedSlices", value.asInstanceOf[js.Any])
+    inline def setSelectedSlices(value: js.Array[Any]): Self = StObject.set(x, "selectedSlices", value.asInstanceOf[js.Any])
     
     inline def setSelectedSlicesUndefined: Self = StObject.set(x, "selectedSlices", js.undefined)
     
-    inline def setSelectedSlicesVarargs(value: js.Any*): Self = StObject.set(x, "selectedSlices", js.Array(value :_*))
+    inline def setSelectedSlicesVarargs(value: Any*): Self = StObject.set(x, "selectedSlices", js.Array(value*))
     
-    inline def setSelectedStyle(value: js.Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     

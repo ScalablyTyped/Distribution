@@ -10,10 +10,10 @@ object menuMod {
   
   @JSImport("material-ui/svg-icons/navigation/menu", JSImport.Default)
   @js.native
-  class default () extends NavigationMenu
+  open class default () extends NavigationMenu
   
   @JSImport("material-ui/svg-icons/navigation/menu", "NavigationMenu")
   @js.native
-  class NavigationMenu ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationMenu ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

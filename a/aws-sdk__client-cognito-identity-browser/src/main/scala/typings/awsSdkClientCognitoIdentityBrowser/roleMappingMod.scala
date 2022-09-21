@@ -8,5 +8,5 @@ object roleMappingMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_RoleMapping", "_RoleMapping")
   @js.native
-  val RoleMapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RoleMapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

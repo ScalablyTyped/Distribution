@@ -9,19 +9,19 @@ trait UnshiftCommand
      with Command {
   
   @JSName("$unshift")
-  var $unshift: js.Array[js.Any]
+  var $unshift: js.Array[scala.Any]
 }
 object UnshiftCommand {
   
-  inline def apply($unshift: js.Array[js.Any]): UnshiftCommand = {
+  inline def apply($unshift: js.Array[scala.Any]): UnshiftCommand = {
     val __obj = js.Dynamic.literal($unshift = $unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnshiftCommand]
   }
   
   extension [Self <: UnshiftCommand](x: Self) {
     
-    inline def set$unshift(value: js.Array[js.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
+    inline def set$unshift(value: js.Array[scala.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
     
-    inline def set$unshiftVarargs(value: js.Any*): Self = StObject.set(x, "$unshift", js.Array(value :_*))
+    inline def set$unshiftVarargs(value: scala.Any*): Self = StObject.set(x, "$unshift", js.Array(value*))
   }
 }

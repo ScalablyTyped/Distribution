@@ -1,6 +1,6 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.TextureAtlas
+import typings.playcanvas.mod.TextureAtlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object Atlas {
     
     inline def setFrameKeysUndefined: Self = StObject.set(x, "frameKeys", js.undefined)
     
-    inline def setFrameKeysVarargs(value: String*): Self = StObject.set(x, "frameKeys", js.Array(value :_*))
+    inline def setFrameKeysVarargs(value: String*): Self = StObject.set(x, "frameKeys", js.Array(value*))
     
     inline def setPixelsPerUnit(value: Double): Self = StObject.set(x, "pixelsPerUnit", value.asInstanceOf[js.Any])
     

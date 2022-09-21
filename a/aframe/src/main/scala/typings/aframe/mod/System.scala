@@ -8,7 +8,7 @@ trait System[T /* <: js.Object */] extends StObject {
   
   var data: T
   
-  var el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]
+  var el: Entity[ObjectMap[Component[Any, System[Any]]]]
   
   def init(): Unit
   
@@ -24,7 +24,7 @@ object System {
   
   inline def apply[T /* <: js.Object */](
     data: T,
-    el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]],
+    el: Entity[ObjectMap[Component[Any, System[Any]]]],
     init: () => Unit,
     pause: () => Unit,
     play: () => Unit,
@@ -38,7 +38,7 @@ object System {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Entity[ObjectMap[Component[Any, System[Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     

@@ -17,21 +17,21 @@ object sprite {
        with typings.senchaTouch.Ext.chart.series.sprite.ICartesian {
     
     /** [Config Option] (Object) */
-    var dataClose: js.UndefOr[js.Any] = js.undefined
+    var dataClose: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataHigh: js.UndefOr[js.Any] = js.undefined
+    var dataHigh: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataLow: js.UndefOr[js.Any] = js.undefined
+    var dataLow: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataOpen: js.UndefOr[js.Any] = js.undefined
+    var dataOpen: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of aggregator
       * @returns Object
       */
-    var getAggregator: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAggregator: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Render the given visible clip range
       * @param surface Object
@@ -42,10 +42,10 @@ object sprite {
     @JSName("renderClipped")
     var renderClipped_IAggregative: js.UndefOr[
         js.Function4[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clip */ js.UndefOr[js.Any], 
-          /* region */ js.UndefOr[js.Any], 
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clip */ js.UndefOr[Any], 
+          /* region */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -53,7 +53,7 @@ object sprite {
     /** [Method] Sets the value of aggregator
       * @param aggregator Object The new value.
       */
-    var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAggregative {
     
@@ -64,33 +64,33 @@ object sprite {
     
     extension [Self <: IAggregative](x: Self) {
       
-      inline def setDataClose(value: js.Any): Self = StObject.set(x, "dataClose", value.asInstanceOf[js.Any])
+      inline def setDataClose(value: Any): Self = StObject.set(x, "dataClose", value.asInstanceOf[js.Any])
       
       inline def setDataCloseUndefined: Self = StObject.set(x, "dataClose", js.undefined)
       
-      inline def setDataHigh(value: js.Any): Self = StObject.set(x, "dataHigh", value.asInstanceOf[js.Any])
+      inline def setDataHigh(value: Any): Self = StObject.set(x, "dataHigh", value.asInstanceOf[js.Any])
       
       inline def setDataHighUndefined: Self = StObject.set(x, "dataHigh", js.undefined)
       
-      inline def setDataLow(value: js.Any): Self = StObject.set(x, "dataLow", value.asInstanceOf[js.Any])
+      inline def setDataLow(value: Any): Self = StObject.set(x, "dataLow", value.asInstanceOf[js.Any])
       
       inline def setDataLowUndefined: Self = StObject.set(x, "dataLow", js.undefined)
       
-      inline def setDataOpen(value: js.Any): Self = StObject.set(x, "dataOpen", value.asInstanceOf[js.Any])
+      inline def setDataOpen(value: Any): Self = StObject.set(x, "dataOpen", value.asInstanceOf[js.Any])
       
       inline def setDataOpenUndefined: Self = StObject.set(x, "dataOpen", js.undefined)
       
-      inline def setGetAggregator(value: () => js.Any): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
+      inline def setGetAggregator(value: () => Any): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
       
       inline def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
       
       inline def setRenderClipped(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => Unit
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any], /* region */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "renderClipped", js.Any.fromFunction4(value))
       
       inline def setRenderClippedUndefined: Self = StObject.set(x, "renderClipped", js.undefined)
       
-      inline def setSetAggregator(value: /* aggregator */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
+      inline def setSetAggregator(value: /* aggregator */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
       
       inline def setSetAggregatorUndefined: Self = StObject.set(x, "setAggregator", js.undefined)
     }
@@ -109,10 +109,10 @@ object sprite {
     @JSName("renderClipped")
     var renderClipped_IArea: js.UndefOr[
         js.Function4[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clip */ js.UndefOr[js.Any], 
-          /* clipRegion */ js.UndefOr[js.Any], 
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clip */ js.UndefOr[Any], 
+          /* clipRegion */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -130,7 +130,7 @@ object sprite {
     extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IArea](x: Self) {
       
       inline def setRenderClipped(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => Unit
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "renderClipped", js.Any.fromFunction4(value))
       
       inline def setRenderClippedUndefined: Self = StObject.set(x, "renderClipped", js.undefined)
@@ -168,9 +168,9 @@ object sprite {
     @JSName("renderClipped")
     var renderClipped_IBar: js.UndefOr[
         js.Function3[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clip */ js.UndefOr[js.Any], 
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clip */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -205,7 +205,7 @@ object sprite {
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
       inline def setRenderClipped(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[js.Any]) => Unit
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "renderClipped", js.Any.fromFunction3(value))
       
       inline def setRenderClippedUndefined: Self = StObject.set(x, "renderClipped", js.undefined)
@@ -265,7 +265,7 @@ object sprite {
       * @param key String
       * @returns *
       */
-    var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], js.Any]] = js.undefined
+    var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Any]] = js.undefined
     
     /** [Method]
       * @param name String
@@ -286,10 +286,10 @@ object sprite {
     var dataMinY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataX: js.UndefOr[js.Any] = js.undefined
+    var dataX: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataY: js.UndefOr[js.Any] = js.undefined
+    var dataY: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var field: js.UndefOr[String] = js.undefined
@@ -310,7 +310,7 @@ object sprite {
     var labelOverflowPadding: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var labels: js.UndefOr[js.Any] = js.undefined
+    var labels: js.UndefOr[Any] = js.undefined
     
     /** [Method] Render the given visible clip range
       * @param surface Ext.draw.Surface
@@ -321,7 +321,7 @@ object sprite {
     var renderClipped: js.UndefOr[
         js.Function4[
           /* surface */ js.UndefOr[ISurface], 
-          /* ctx */ js.UndefOr[js.Any], 
+          /* ctx */ js.UndefOr[Any], 
           /* clip */ js.UndefOr[Array], 
           /* region */ js.UndefOr[Array], 
           Unit
@@ -337,10 +337,10 @@ object sprite {
     @JSName("render")
     var render_ICartesian: js.UndefOr[
         js.Function3[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* region */ js.UndefOr[js.Any], 
-          js.Any
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* region */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -361,7 +361,7 @@ object sprite {
     
     extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.ICartesian](x: Self) {
       
-      inline def setBinarySearch(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "binarySearch", js.Any.fromFunction1(value))
+      inline def setBinarySearch(value: /* key */ js.UndefOr[String] => Any): Self = StObject.set(x, "binarySearch", js.Any.fromFunction1(value))
       
       inline def setBinarySearchUndefined: Self = StObject.set(x, "binarySearch", js.undefined)
       
@@ -389,11 +389,11 @@ object sprite {
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setDataX(value: js.Any): Self = StObject.set(x, "dataX", value.asInstanceOf[js.Any])
+      inline def setDataX(value: Any): Self = StObject.set(x, "dataX", value.asInstanceOf[js.Any])
       
       inline def setDataXUndefined: Self = StObject.set(x, "dataX", js.undefined)
       
-      inline def setDataY(value: js.Any): Self = StObject.set(x, "dataY", value.asInstanceOf[js.Any])
+      inline def setDataY(value: Any): Self = StObject.set(x, "dataY", value.asInstanceOf[js.Any])
       
       inline def setDataYUndefined: Self = StObject.set(x, "dataY", js.undefined)
       
@@ -417,16 +417,16 @@ object sprite {
       
       inline def setLabelOverflowPaddingUndefined: Self = StObject.set(x, "labelOverflowPadding", js.undefined)
       
-      inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
       inline def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => js.Any
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       inline def setRenderClipped(
-        value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[Array], /* region */ js.UndefOr[Array]) => Unit
+        value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Array], /* region */ js.UndefOr[Array]) => Unit
       ): Self = StObject.set(x, "renderClipped", js.Any.fromFunction4(value))
       
       inline def setRenderClippedUndefined: Self = StObject.set(x, "renderClipped", js.undefined)
@@ -494,7 +494,7 @@ object sprite {
        with IPath {
     
     /** [Config Option] (Object) */
-    var baseColor: js.UndefOr[js.Any] = js.undefined
+    var baseColor: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var baseRotation: js.UndefOr[Double] = js.undefined
@@ -539,7 +539,7 @@ object sprite {
       * @param path Object
       */
     @JSName("updatePath")
-    var updatePath_IPie3DPart: js.UndefOr[js.Function1[/* path */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var updatePath_IPie3DPart: js.UndefOr[js.Function1[/* path */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPie3DPart {
     
@@ -550,7 +550,7 @@ object sprite {
     
     extension [Self <: IPie3DPart](x: Self) {
       
-      inline def setBaseColor(value: js.Any): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
+      inline def setBaseColor(value: Any): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
       
       inline def setBaseColorUndefined: Self = StObject.set(x, "baseColor", js.undefined)
       
@@ -602,7 +602,7 @@ object sprite {
       
       inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
       
-      inline def setUpdatePath(value: /* path */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction1(value))
+      inline def setUpdatePath(value: /* path */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction1(value))
       
       inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     }
@@ -644,10 +644,10 @@ object sprite {
     @JSName("render")
     var render_IPieSlice: js.UndefOr[
         js.Function3[
-          /* ctx */ js.UndefOr[js.Any], 
-          /* surface */ js.UndefOr[js.Any], 
-          /* clipRegion */ js.UndefOr[js.Any], 
-          js.Any
+          /* ctx */ js.UndefOr[Any], 
+          /* surface */ js.UndefOr[Any], 
+          /* clipRegion */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -689,7 +689,7 @@ object sprite {
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setRender(
-        value: (/* ctx */ js.UndefOr[js.Any], /* surface */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
+        value: (/* ctx */ js.UndefOr[Any], /* surface */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -742,10 +742,10 @@ object sprite {
     var dataMinY: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataX: js.UndefOr[js.Any] = js.undefined
+    var dataX: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var dataY: js.UndefOr[js.Any] = js.undefined
+    var dataY: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var endAngle: js.UndefOr[Double] = js.undefined
@@ -756,18 +756,18 @@ object sprite {
     /** [Method] Returns the value of field
       * @returns Object
       */
-    var getField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getField: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var labelOverflowPadding: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var labels: js.UndefOr[js.Any] = js.undefined
+    var labels: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of field
       * @param field Object The new value.
       */
-    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
     var startAngle: js.UndefOr[Double] = js.undefined
@@ -820,11 +820,11 @@ object sprite {
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setDataX(value: js.Any): Self = StObject.set(x, "dataX", value.asInstanceOf[js.Any])
+      inline def setDataX(value: Any): Self = StObject.set(x, "dataX", value.asInstanceOf[js.Any])
       
       inline def setDataXUndefined: Self = StObject.set(x, "dataX", js.undefined)
       
-      inline def setDataY(value: js.Any): Self = StObject.set(x, "dataY", value.asInstanceOf[js.Any])
+      inline def setDataY(value: Any): Self = StObject.set(x, "dataY", value.asInstanceOf[js.Any])
       
       inline def setDataYUndefined: Self = StObject.set(x, "dataY", js.undefined)
       
@@ -836,7 +836,7 @@ object sprite {
       
       inline def setEndRhoUndefined: Self = StObject.set(x, "endRho", js.undefined)
       
-      inline def setGetField(value: () => js.Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+      inline def setGetField(value: () => Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
       
       inline def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
       
@@ -844,11 +844,11 @@ object sprite {
       
       inline def setLabelOverflowPaddingUndefined: Self = StObject.set(x, "labelOverflowPadding", js.undefined)
       
-      inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setSetField(value: /* field */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+      inline def setSetField(value: /* field */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
       
       inline def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
       
@@ -872,9 +872,7 @@ object sprite {
       * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
       */
     @JSName("render")
-    var render_IRadar: js.UndefOr[
-        js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], js.Any]
-      ] = js.undefined
+    var render_IRadar: js.UndefOr[js.Function2[/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], Any]] = js.undefined
   }
   object IRadar {
     
@@ -885,7 +883,7 @@ object sprite {
     
     extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IRadar](x: Self) {
       
-      inline def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
@@ -904,10 +902,10 @@ object sprite {
     @JSName("renderClipped")
     var renderClipped_IScatter: js.UndefOr[
         js.Function4[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clip */ js.UndefOr[js.Any], 
-          /* clipRegion */ js.UndefOr[js.Any], 
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clip */ js.UndefOr[Any], 
+          /* clipRegion */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -922,7 +920,7 @@ object sprite {
     extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IScatter](x: Self) {
       
       inline def setRenderClipped(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => Unit
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "renderClipped", js.Any.fromFunction4(value))
       
       inline def setRenderClippedUndefined: Self = StObject.set(x, "renderClipped", js.undefined)
@@ -939,7 +937,7 @@ object sprite {
       * @returns Number The index
       */
     @JSName("getIndexNearPoint")
-    var getIndexNearPoint_IStackedCartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], Double]] = js.undefined
+    var getIndexNearPoint_IStackedCartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any], Double]] = js.undefined
   }
   object IStackedCartesian {
     
@@ -950,7 +948,7 @@ object sprite {
     
     extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian](x: Self) {
       
-      inline def setGetIndexNearPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "getIndexNearPoint", js.Any.fromFunction2(value))
+      inline def setGetIndexNearPoint(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any]) => Double): Self = StObject.set(x, "getIndexNearPoint", js.Any.fromFunction2(value))
       
       inline def setGetIndexNearPointUndefined: Self = StObject.set(x, "getIndexNearPoint", js.undefined)
     }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason
 import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind
 import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties
@@ -213,7 +212,7 @@ object Calls {
     
     /** Gets the deadline by which the app must complete the deferral. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Requests to defer the default behavior of removing the app from the lock screen.
@@ -234,7 +233,7 @@ object Calls {
   @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntry")
   @js.native
   /** Creates a new PhoneCallHistoryEntry object. */
-  class PhoneCallHistoryEntry ()
+  open class PhoneCallHistoryEntry ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntry {
     
@@ -308,14 +307,14 @@ object Calls {
     
     /** Gets or sets the start time for this history entry. */
     /* CompleteClass */
-    var startTime: Date = js.native
+    var startTime: js.Date = js.native
   }
   
   /** Address book information for a contact used by PhoneCallHistoryEntry objects. */
   @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryAddress")
   @js.native
   /** Creates a new empty PhoneCallHistoryEntryAddress object. */
-  class PhoneCallHistoryEntryAddress ()
+  open class PhoneCallHistoryEntryAddress ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryAddress {
     /**
@@ -395,7 +394,7 @@ object Calls {
   @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryOptions")
   @js.native
   /** Creates a new PhoneCallHistoryEntryQueryOptions object. */
-  class PhoneCallHistoryEntryQueryOptions ()
+  open class PhoneCallHistoryEntryQueryOptions ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryOptions {
     
@@ -435,7 +434,7 @@ object Calls {
       * @return An asynchronous operation that returns an IVectorView upon successful completion.
       */
     /* CompleteClass */
-    override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   }
   
   /** Provides APIs for the application to get access to the PhoneCallHistoryStore . */

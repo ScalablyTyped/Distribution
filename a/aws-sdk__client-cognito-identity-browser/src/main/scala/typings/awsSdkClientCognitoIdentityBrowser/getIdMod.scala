@@ -8,5 +8,5 @@ object getIdMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/GetId", "GetId")
   @js.native
-  val GetId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

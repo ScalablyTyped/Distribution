@@ -57,7 +57,7 @@ object mod extends Shortcut {
       
       inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value*))
       
       inline def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -118,7 +118,7 @@ object mod extends Shortcut {
       
       inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value*))
       
       inline def setNew_value(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "new_value", value.asInstanceOf[js.Any])
       
@@ -162,7 +162,7 @@ object mod extends Shortcut {
       
       inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value*))
       
       inline def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
@@ -207,7 +207,7 @@ object mod extends Shortcut {
       
       inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -301,7 +301,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onAdd: js.UndefOr[(js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
+    var onAdd: js.UndefOr[(js.Function1[/* add */ InteractionProps, `false` | Any]) | `false`] = js.undefined
     
     /**
       * When a callback function is passed in, delete functionality is enabled.
@@ -310,7 +310,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onDelete: js.UndefOr[(js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
+    var onDelete: js.UndefOr[(js.Function1[/* del */ InteractionProps, `false` | Any]) | `false`] = js.undefined
     
     /**
       * When a callback function is passed in, edit functionality is enabled.
@@ -319,7 +319,7 @@ object mod extends Shortcut {
       *
       * Default: false
       */
-    var onEdit: js.UndefOr[(js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`] = js.undefined
+    var onEdit: js.UndefOr[(js.Function1[/* edit */ InteractionProps, `false` | Any]) | `false`] = js.undefined
     
     /**
       * When a function is passed in, clicking a value triggers the onSelect method to be called.
@@ -327,6 +327,13 @@ object mod extends Shortcut {
       * Default: false
       */
     var onSelect: js.UndefOr[(js.Function1[/* select */ OnSelectProps, Unit]) | `false`] = js.undefined
+    
+    /**
+      * set to false to remove quotes from keys (eg. "name": vs. name:)
+      *
+      * Default: true
+      */
+    var quotesOnKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback function to provide control over what objects and arrays should be collapsed by default.
@@ -396,7 +403,7 @@ object mod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: TypeDefaultValue*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: TypeDefaultValue*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDisplayDataTypes(value: Boolean): Self = StObject.set(x, "displayDataTypes", value.asInstanceOf[js.Any])
       
@@ -430,21 +437,21 @@ object mod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
+      inline def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | Any]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
       
-      inline def setOnAddFunction1(value: /* add */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAddFunction1(value: /* add */ InteractionProps => `false` | Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      inline def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | Any]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      inline def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+      inline def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
       
       inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      inline def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
+      inline def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | Any]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
       
-      inline def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
+      inline def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | Any): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
       
       inline def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
       
@@ -453,6 +460,10 @@ object mod extends Shortcut {
       inline def setOnSelectFunction1(value: /* select */ OnSelectProps => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      
+      inline def setQuotesOnKeys(value: Boolean): Self = StObject.set(x, "quotesOnKeys", value.asInstanceOf[js.Any])
+      
+      inline def setQuotesOnKeysUndefined: Self = StObject.set(x, "quotesOnKeys", js.undefined)
       
       inline def setShouldCollapse(value: `false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])): Self = StObject.set(x, "shouldCollapse", value.asInstanceOf[js.Any])
       

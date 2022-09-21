@@ -18,7 +18,7 @@ trait GooglePrivacyDlpV2HybridOptions extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -46,7 +46,7 @@ object GooglePrivacyDlpV2HybridOptions {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -55,7 +55,7 @@ object GooglePrivacyDlpV2HybridOptions {
     
     inline def setRequiredFindingLabelKeysUndefined: Self = StObject.set(x, "requiredFindingLabelKeys", js.undefined)
     
-    inline def setRequiredFindingLabelKeysVarargs(value: String*): Self = StObject.set(x, "requiredFindingLabelKeys", js.Array(value :_*))
+    inline def setRequiredFindingLabelKeysVarargs(value: String*): Self = StObject.set(x, "requiredFindingLabelKeys", js.Array(value*))
     
     inline def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     

@@ -20,12 +20,12 @@ object mod {
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[UserAgent]]
   
-  inline def getRandom(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")().asInstanceOf[String | Null]
+  inline def getRandom(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")().asInstanceOf[String]
   inline def getRandom(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")(filter.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def getRandomData(): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")().asInstanceOf[UserAgent | Null]
+  inline def getRandomData(): UserAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")().asInstanceOf[UserAgent]
   inline def getRandomData(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")(filter.asInstanceOf[js.Any]).asInstanceOf[UserAgent | Null]

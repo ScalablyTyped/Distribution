@@ -10,15 +10,12 @@ The URLSearchParams polyfill.
 | ------------------ | :-------------: |
 | Full name          | @ungap/url-search-params |
 | Keywords           | URLSearchParams, polyfill, ungap |
-| # releases         | 6 |
-| # dependents       | 41 |
-| # downloads        | 2232618 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 268670.0 |
+| # stars            | 242.0 |
 
 ## Links
-- [Homepage](https://github.com/ungap/url-search-params#readme)
-- [Bugs](https://github.com/ungap/url-search-params/issues)
-- [Repository](https://github.com/ungap/url-search-params)
 - [Npm](https://www.npmjs.com/package/%40ungap%2Furl-search-params)
     
 

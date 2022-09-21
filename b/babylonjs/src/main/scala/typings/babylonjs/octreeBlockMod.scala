@@ -12,7 +12,7 @@ object octreeBlockMod {
   
   @JSImport("babylonjs/Culling/Octrees/octreeBlock", "OctreeBlock")
   @js.native
-  class OctreeBlock[T] protected () extends StObject {
+  open class OctreeBlock[T] protected () extends StObject {
     /**
       * Creates a new block
       * @param minPoint defines the minimum vector (in world space) of the block's bounding box
@@ -31,19 +31,19 @@ object octreeBlockMod {
       creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit]
     ) = this()
     
-    /* private */ var _boundingVectors: js.Any = js.native
+    /* private */ var _boundingVectors: Any = js.native
     
-    /* private */ var _capacity: js.Any = js.native
+    /* private */ var _capacity: Any = js.native
     
-    /* private */ var _creationFunc: js.Any = js.native
+    /* private */ var _creationFunc: Any = js.native
     
-    /* private */ var _depth: js.Any = js.native
+    /* private */ var _depth: Any = js.native
     
-    /* private */ var _maxDepth: js.Any = js.native
+    /* private */ var _maxDepth: Any = js.native
     
-    /* private */ var _maxPoint: js.Any = js.native
+    /* private */ var _maxPoint: Any = js.native
     
-    /* private */ var _minPoint: js.Any = js.native
+    /* private */ var _minPoint: Any = js.native
     
     /**
       * Add an array of elements to this block
@@ -116,7 +116,7 @@ object octreeBlockMod {
     def removeEntry(entry: T): Unit = js.native
     
     /**
-      * Test if the current block intersects the furstum planes and if yes, then add its content to the selection array
+      * Test if the current block intersects the frustum planes and if yes, then add its content to the selection array
       * @param frustumPlanes defines the frustum planes to test
       * @param selection defines the array to store current content if selection is positive
       * @param allowDuplicate defines if the selection array can contains duplicated entries
@@ -132,6 +132,14 @@ object octreeBlockMod {
     val ^ : js.Any = js.native
     
     /**
+      * @param worldMin
+      * @param worldMax
+      * @param entries
+      * @param maxBlockCapacity
+      * @param currentDepth
+      * @param maxDepth
+      * @param target
+      * @param creationFunc
       * @hidden
       */
     inline def _CreateBlocks[T](
@@ -164,7 +172,7 @@ object octreeBlockMod {
       
       inline def setBlocks(value: js.Array[OctreeBlock[T]]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setBlocksVarargs(value: OctreeBlock[T]*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: OctreeBlock[T]*): Self = StObject.set(x, "blocks", js.Array(value*))
     }
   }
 }

@@ -6,15 +6,16 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactInstance
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
   
-  type Popover = Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
-  type PopoverAnimationDefault = Component[PopoverAnimationDefaultProps, js.Object, js.Any]
+  type PopoverAnimationDefault = Component[PopoverAnimationDefaultProps, js.Object, Any]
   
   trait PopoverAnimationDefaultProps
     extends StObject
@@ -72,7 +73,7 @@ object Popover {
     }
   }
   
-  type PopoverAnimationVertical = Component[PopoverAnimationVerticalProps, js.Object, js.Any]
+  type PopoverAnimationVertical = Component[PopoverAnimationVerticalProps, js.Object, Any]
   
   trait PopoverAnimationVerticalProps
     extends StObject
@@ -121,6 +122,8 @@ object Popover {
     
     var canAutoPosition: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
@@ -167,6 +170,10 @@ object Popover {
       inline def setCanAutoPosition(value: Boolean): Self = StObject.set(x, "canAutoPosition", value.asInstanceOf[js.Any])
       
       inline def setCanAutoPositionUndefined: Self = StObject.set(x, "canAutoPosition", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

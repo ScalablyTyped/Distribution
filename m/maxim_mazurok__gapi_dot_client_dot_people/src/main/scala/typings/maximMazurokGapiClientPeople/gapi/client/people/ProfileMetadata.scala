@@ -29,6 +29,6 @@ object ProfileMetadata {
     
     inline def setUserTypesUndefined: Self = StObject.set(x, "userTypes", js.undefined)
     
-    inline def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value :_*))
+    inline def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value*))
   }
 }

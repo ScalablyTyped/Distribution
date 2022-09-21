@@ -10,10 +10,10 @@ A simple module for parsing and composing XML.
 | ------------------ | :-------------: |
 | Full name          | pixl-xml |
 | Keywords           | xml |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 357269 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23305.333333333332 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/jhuckaby/pixl-xml)

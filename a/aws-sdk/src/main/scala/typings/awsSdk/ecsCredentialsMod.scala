@@ -14,7 +14,7 @@ object ecsCredentialsMod {
     * Represents credentials received.
     * @param {object} options - Override the default (1s) timeout period.
     */
-  class ECSCredentials () extends RemoteCredentials {
+  open class ECSCredentials () extends RemoteCredentials {
     def this(options: ECSCredentialsOptions) = this()
   }
   

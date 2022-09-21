@@ -33,7 +33,7 @@ object ExportFilter {
     exporter: (SeqEquiv[PropertyValue], SeqEquiv[String]) => Boolean,
     ignorableWhitespace: String => Unit,
     processingInstruction: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDocumentLocator: XLocator => Unit,
     startDocument: () => Unit,

@@ -1,6 +1,5 @@
 package typings.unityWebapi
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ trait UnityIndicatorProperties extends StObject {
   
   var onIndicatorActivated: js.Function
   
-  var time: Date
+  var time: js.Date
 }
 object UnityIndicatorProperties {
   
-  inline def apply(count: Double, iconURI: String, onIndicatorActivated: js.Function, time: Date): UnityIndicatorProperties = {
+  inline def apply(count: Double, iconURI: String, onIndicatorActivated: js.Function, time: js.Date): UnityIndicatorProperties = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], iconURI = iconURI.asInstanceOf[js.Any], onIndicatorActivated = onIndicatorActivated.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnityIndicatorProperties]
   }
@@ -30,6 +29,6 @@ object UnityIndicatorProperties {
     
     inline def setOnIndicatorActivated(value: js.Function): Self = StObject.set(x, "onIndicatorActivated", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

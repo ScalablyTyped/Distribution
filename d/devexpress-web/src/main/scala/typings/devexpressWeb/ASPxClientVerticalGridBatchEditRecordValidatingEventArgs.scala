@@ -14,7 +14,7 @@ trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs
   /**
     * Provides validation information on the record currently being validated.
     */
-  var validationInfo: js.Any
+  var validationInfo: Any
   
   /**
     * Gets the processed record's visible index.
@@ -23,14 +23,14 @@ trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs
 }
 object ASPxClientVerticalGridBatchEditRecordValidatingEventArgs {
   
-  inline def apply(validationInfo: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordValidatingEventArgs = {
+  inline def apply(validationInfo: Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordValidatingEventArgs = {
     val __obj = js.Dynamic.literal(validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordValidatingEventArgs]
   }
   
   extension [Self <: ASPxClientVerticalGridBatchEditRecordValidatingEventArgs](x: Self) {
     
-    inline def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

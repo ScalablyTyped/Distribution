@@ -12,7 +12,7 @@ object taglibLookupTaglibLookupMod {
   
   @JSImport("marko/src/compiler/taglib-lookup/TaglibLookup", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with TaglibLookup
   
@@ -43,33 +43,33 @@ object taglibLookupTaglibLookupMod {
       callback: js.Function2[/* attrDef */ typings.marko.attributeMod.default, /* tag */ ^, Unit]
     ): Unit = js.native
     
-    def forEachNodeTransformer(node: js.Any, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any]): Unit = js.native
+    def forEachNodeTransformer(node: Any, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any]): Unit = js.native
     def forEachNodeTransformer(
-      node: js.Any,
-      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any],
-      thisObj: js.Any
+      node: Any,
+      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any],
+      thisObj: Any
     ): Unit = js.native
     
     def forEachTag(callback: js.Function1[/* tag */ ^, Unit | Boolean]): Unit = js.native
     
-    def forEachTagTransformer(element: String, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any]): Unit = js.native
+    def forEachTagTransformer(element: String, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any]): Unit = js.native
     def forEachTagTransformer(
       element: String,
-      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any],
-      thisObj: js.Any
+      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any],
+      thisObj: Any
     ): Unit = js.native
-    def forEachTagTransformer(element: Element, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any]): Unit = js.native
+    def forEachTagTransformer(element: Element, callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any]): Unit = js.native
     def forEachTagTransformer(
       element: Element,
-      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any],
-      thisObj: js.Any
+      callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any],
+      thisObj: Any
     ): Unit = js.native
     
-    def forEachTemplateTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any]): Unit = js.native
-    def forEachTemplateTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any], thisObj: js.Any): Unit = js.native
+    def forEachTemplateTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any]): Unit = js.native
+    def forEachTemplateTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any], thisObj: Any): Unit = js.native
     
-    def forEachTextTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any]): Unit = js.native
-    def forEachTextTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, js.Any], thisObj: js.Any): Unit = js.native
+    def forEachTextTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any]): Unit = js.native
+    def forEachTextTransformer(callback: js.Function1[/* trans */ typings.marko.transformerMod.default, Any], thisObj: Any): Unit = js.native
     
     def getAttribute(element: String, attr: String): js.UndefOr[typings.marko.attributeMod.default] = js.native
     def getAttribute(element: String, attr: Name): js.UndefOr[typings.marko.attributeMod.default] = js.native

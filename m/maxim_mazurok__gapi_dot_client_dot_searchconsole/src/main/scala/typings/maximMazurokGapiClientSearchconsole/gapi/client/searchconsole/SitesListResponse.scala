@@ -22,6 +22,6 @@ object SitesListResponse {
     
     inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
     
-    inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+    inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value*))
   }
 }

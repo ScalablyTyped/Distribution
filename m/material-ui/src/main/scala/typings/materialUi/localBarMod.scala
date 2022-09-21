@@ -10,10 +10,10 @@ object localBarMod {
   
   @JSImport("material-ui/svg-icons/maps/local-bar", JSImport.Default)
   @js.native
-  class default () extends MapsLocalBar
+  open class default () extends MapsLocalBar
   
   @JSImport("material-ui/svg-icons/maps/local-bar", "MapsLocalBar")
   @js.native
-  class MapsLocalBar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalBar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

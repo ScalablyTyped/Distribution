@@ -8,7 +8,7 @@ object cacheExpirationMod {
   
   @JSImport("workbox-expiration/CacheExpiration", "CacheExpiration")
   @js.native
-  class CacheExpiration protected () extends StObject {
+  open class CacheExpiration protected () extends StObject {
     def this(cacheName: String) = this()
     def this(cacheName: String, config: CacheExpirationConfig) = this()
     

@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("Resumable.Resumable")
     @js.native
-    class Resumable protected ()
+    open class Resumable protected ()
       extends StObject
          with typings.resumablejs.Resumable.Resumable {
       def this(options: ConfigurationHash) = this()
@@ -19,7 +19,7 @@ object global {
     
     @JSGlobal("Resumable.ResumableChunk")
     @js.native
-    class ResumableChunk ()
+    open class ResumableChunk ()
       extends StObject
          with typings.resumablejs.Resumable.ResumableChunk
   }

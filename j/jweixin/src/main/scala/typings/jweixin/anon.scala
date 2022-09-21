@@ -78,7 +78,7 @@ object anon {
       
       inline def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
       
-      inline def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
+      inline def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value*))
       
       inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
       
@@ -145,7 +145,7 @@ object anon {
       
       inline def setCardList(value: js.Array[String]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
       
-      inline def setCardListVarargs(value: String*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+      inline def setCardListVarargs(value: String*): Self = StObject.set(x, "cardList", js.Array(value*))
     }
   }
   
@@ -226,7 +226,7 @@ object anon {
       
       inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
       
-      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value :_*))
+      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value*))
       
       inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }

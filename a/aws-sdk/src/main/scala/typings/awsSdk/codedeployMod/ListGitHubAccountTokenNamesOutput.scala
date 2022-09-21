@@ -33,6 +33,6 @@ object ListGitHubAccountTokenNamesOutput {
     
     inline def setTokenNameListUndefined: Self = StObject.set(x, "tokenNameList", js.undefined)
     
-    inline def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = StObject.set(x, "tokenNameList", js.Array(value :_*))
+    inline def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = StObject.set(x, "tokenNameList", js.Array(value*))
   }
 }

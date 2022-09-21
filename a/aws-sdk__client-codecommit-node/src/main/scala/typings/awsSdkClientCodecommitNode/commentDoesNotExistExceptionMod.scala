@@ -8,5 +8,5 @@ object commentDoesNotExistExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CommentDoesNotExistException", "CommentDoesNotExistException")
   @js.native
-  val CommentDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CommentDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

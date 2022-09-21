@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the query input. It can contain either:  1.  An audio config
-  * which     instructs the speech recognizer how to process the speech audio.
-  * 2.  A conversational query in the form of text,.  3.  An event that
-  * specifies which intent to trigger.
-  */
 trait SchemaGoogleCloudDialogflowV2QueryInput extends StObject {
   
   /**
@@ -23,7 +17,7 @@ trait SchemaGoogleCloudDialogflowV2QueryInput extends StObject {
   var event: js.UndefOr[SchemaGoogleCloudDialogflowV2EventInput] = js.undefined
   
   /**
-    * The natural language text to be processed.
+    * The natural language text to be processed. Text length must not exceed 256 character for virtual agent interactions.
     */
   var text: js.UndefOr[SchemaGoogleCloudDialogflowV2TextInput] = js.undefined
 }

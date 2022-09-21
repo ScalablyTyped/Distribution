@@ -10,10 +10,10 @@ object noSimMod {
   
   @JSImport("material-ui/svg-icons/communication/no-sim", JSImport.Default)
   @js.native
-  class default () extends CommunicationNoSim
+  open class default () extends CommunicationNoSim
   
   @JSImport("material-ui/svg-icons/communication/no-sim", "CommunicationNoSim")
   @js.native
-  class CommunicationNoSim ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationNoSim ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

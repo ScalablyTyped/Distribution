@@ -26,7 +26,7 @@ object CreativeDealIds {
     
     inline def setDealStatusesUndefined: Self = StObject.set(x, "dealStatuses", js.undefined)
     
-    inline def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value :_*))
+    inline def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

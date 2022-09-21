@@ -10,7 +10,7 @@ trait EmbeddedObjectSuggestionState extends StObject {
   var descriptionSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in embedded_drawing_properties have been changed in this suggestion. */
-  var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.undefined
+  var embeddedDrawingPropertiesSuggestionState: js.UndefOr[Any] = js.undefined
   
   /** A mask that indicates which of the fields in embedded_object_border have been changed in this suggestion. */
   var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.undefined
@@ -52,7 +52,7 @@ object EmbeddedObjectSuggestionState {
     
     inline def setDescriptionSuggestedUndefined: Self = StObject.set(x, "descriptionSuggested", js.undefined)
     
-    inline def setEmbeddedDrawingPropertiesSuggestionState(value: js.Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setEmbeddedDrawingPropertiesSuggestionState(value: Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     inline def setEmbeddedDrawingPropertiesSuggestionStateUndefined: Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", js.undefined)
     

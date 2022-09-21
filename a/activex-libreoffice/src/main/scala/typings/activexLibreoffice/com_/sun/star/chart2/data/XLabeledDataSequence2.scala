@@ -24,7 +24,7 @@ object XLabeledDataSequence2 {
     createClone: () => XCloneable,
     getLabel: () => XDataSequence,
     getValues: () => XDataSequence,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit,
     setLabel: XDataSequence => Unit,

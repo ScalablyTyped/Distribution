@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait EnumDefaultedMember_
   extends StObject
      with BaseNode
-     with EnumMember {
+     with EnumMember
+     with Flow {
   
   var id: Identifier_
   

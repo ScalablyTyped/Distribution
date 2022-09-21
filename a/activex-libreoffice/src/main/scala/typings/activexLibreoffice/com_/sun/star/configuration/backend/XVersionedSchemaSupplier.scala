@@ -28,7 +28,7 @@ object XVersionedSchemaSupplier {
     acquire: () => Unit,
     getComponentSchema: String => XSchema,
     getSchemaVersion: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XVersionedSchemaSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getComponentSchema = js.Any.fromFunction1(getComponentSchema), getSchemaVersion = js.Any.fromFunction1(getSchemaVersion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

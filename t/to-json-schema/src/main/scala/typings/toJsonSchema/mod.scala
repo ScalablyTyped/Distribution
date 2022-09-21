@@ -8,7 +8,6 @@ import typings.jsonSchema.mod.JSONSchema4Version
 import typings.toJsonSchema.anon.AdditionalProperties
 import typings.toJsonSchema.anon.DetectFormat
 import typings.toJsonSchema.anon.Mode
-import typings.toJsonSchema.toJsonSchemaBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,8 +22,8 @@ object mod {
     * @param value Any javascript value
     * @param options optional options object
     */
-  inline def apply(value: js.Any): JSONSchema3or4 = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema3or4]
-  inline def apply(value: js.Any, options: Options): JSONSchema3or4 = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema3or4]
+  inline def apply(value: Any): JSONSchema3or4 = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema3or4]
+  inline def apply(value: Any, options: Options): JSONSchema3or4 = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema3or4]
   
   @JSImport("to-json-schema", JSImport.Namespace)
   @js.native
@@ -32,7 +31,7 @@ object mod {
   
   trait JSONSchema3or4
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var default: js.UndefOr[JSONSchema4Type] = js.undefined
     
@@ -104,7 +103,7 @@ object mod {
     
     var properties: js.UndefOr[StringDictionary[JSONSchema3or4]] = js.undefined
     
-    var required: js.UndefOr[Boolean | `false` | js.Array[String]] = js.undefined
+    var required: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -141,13 +140,13 @@ object mod {
       
       inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      inline def setAllOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+      inline def setAllOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "allOf", js.Array(value*))
       
       inline def setAnyOf(value: js.Array[JSONSchema4]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
       inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      inline def setAnyOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+      inline def setAnyOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "anyOf", js.Array(value*))
       
       inline def setDefault(value: JSONSchema4Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -171,7 +170,7 @@ object mod {
       
       inline def setDisallowUndefined: Self = StObject.set(x, "disallow", js.undefined)
       
-      inline def setDisallowVarargs(value: (String | JSONSchema3or4)*): Self = StObject.set(x, "disallow", js.Array(value :_*))
+      inline def setDisallowVarargs(value: (String | JSONSchema3or4)*): Self = StObject.set(x, "disallow", js.Array(value*))
       
       inline def setDivisibleBy(value: Double): Self = StObject.set(x, "divisibleBy", value.asInstanceOf[js.Any])
       
@@ -181,7 +180,7 @@ object mod {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: JSONSchema4Type*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: JSONSchema4Type*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -195,7 +194,7 @@ object mod {
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      inline def setExtendsVarargs(value: JSONSchema3or4*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: JSONSchema3or4*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -209,7 +208,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: JSONSchema3or4*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: JSONSchema3or4*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -255,7 +254,7 @@ object mod {
       
       inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
       
-      inline def setOneOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "oneOf", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -269,11 +268,11 @@ object mod {
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setRequired(value: Boolean | `false` | js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean | js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -283,7 +282,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: JSONSchema4TypeName*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: JSONSchema4TypeName*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
@@ -316,11 +315,11 @@ object mod {
         js.Function4[
           /* type */ JSONSchema4TypeName, 
           /* schema */ JSONSchema3or4, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* defaultFunc */ js.Function3[
             /* type */ JSONSchema4TypeName, 
             /* schema */ JSONSchema3or4, 
-            /* value */ js.Any, 
+            /* value */ Any, 
             JSONSchema3or4
           ], 
           JSONSchema3or4
@@ -359,10 +358,10 @@ object mod {
       inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
       inline def setPostProcessFnc(
-        value: (/* type */ JSONSchema4TypeName, /* schema */ JSONSchema3or4, /* value */ js.Any, /* defaultFunc */ js.Function3[
+        value: (/* type */ JSONSchema4TypeName, /* schema */ JSONSchema3or4, /* value */ Any, /* defaultFunc */ js.Function3[
               /* type */ JSONSchema4TypeName, 
               /* schema */ JSONSchema3or4, 
-              /* value */ js.Any, 
+              /* value */ Any, 
               JSONSchema3or4
             ]) => JSONSchema3or4
       ): Self = StObject.set(x, "postProcessFnc", js.Any.fromFunction4(value))

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A threshold for the ProximitySensor . When the threshold conditions are met, the sensor trigger will activate. */
 @JSGlobal("Windows.Devices.Sensors.ProximitySensorDataThreshold")
 @js.native
-class ProximitySensorDataThreshold protected ()
+open class ProximitySensorDataThreshold protected ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorDataThreshold {
   /**

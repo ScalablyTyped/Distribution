@@ -42,7 +42,7 @@ object AccountstatusesCustomBatchRequestEntry {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     

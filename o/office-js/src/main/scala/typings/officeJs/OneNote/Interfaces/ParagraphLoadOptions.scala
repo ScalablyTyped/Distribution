@@ -5,108 +5,111 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait ParagraphLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the Paragraph object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var inkWords: js.UndefOr[InkWordCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the Outline object that contains the Paragraph.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var outline: js.UndefOr[OutlineLoadOptions] = js.undefined
   
   /**
-    *
     * The collection of paragraphs under this paragraph. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraphs: js.UndefOr[ParagraphCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the parent paragraph object. Throws if a parent paragraph does not exist.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentParagraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentParagraphOrNull: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentTableCellOrNull: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var richText: js.UndefOr[RichTextLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var table: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the type of the Paragraph object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined

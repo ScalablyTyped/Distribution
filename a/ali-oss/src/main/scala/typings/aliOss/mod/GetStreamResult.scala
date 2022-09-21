@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetStreamResult extends StObject {
   
-  // readable stream instance if response status is not 200, stream will be null.
   var res: NormalSuccessResponse
   
-  var stream: js.UndefOr[js.Any] = js.undefined
+  /** readable stream instance if response status is not 200, stream will be null. */
+  var stream: js.UndefOr[Any] = js.undefined
 }
 object GetStreamResult {
   
@@ -22,7 +22,7 @@ object GetStreamResult {
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }

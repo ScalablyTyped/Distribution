@@ -33,8 +33,8 @@ object global {
     inline def Promise[T](
       resolver: js.Function3[
           /* resolve */ js.Function1[/* val */ js.UndefOr[IWhenable[T]], Unit], 
-          /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-          /* notify */ js.Function1[/* progress */ js.Any, Unit], 
+          /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+          /* notify */ js.Function1[/* progress */ Any, Unit], 
           Unit
         ]
     ): typings.q.mod.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Promise")(resolver.asInstanceOf[js.Any]).asInstanceOf[typings.q.mod.Promise[T]]
@@ -61,7 +61,7 @@ object global {
         ]
     ): Promise[js.Tuple6[A, B, C, D, E, F]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple6[A, B, C, D, E, F]]]
     
-    inline def async[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def async[T](generatorFunction: Any): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
     inline def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
     
@@ -69,80 +69,80 @@ object global {
     inline def delay[T](promiseOrValue: T, ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     inline def delay[T](promiseOrValue: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def fbind[T](method: js.Function1[/* repeated */ js.Any, IWhenable[T]], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def fbind[T](method: js.Function1[/* repeated */ Any, IWhenable[T]], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def fcall[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def fcall[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
-    inline def invoke[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def invoke[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
-    inline def isFulfilled(promise: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFulfilled(promise: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isPending(promiseOrObject: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def isPending(promiseOrObject: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isPending(promiseOrObject: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isPending(promiseOrObject: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isPromise(`object`: js.Any): /* is q.q.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.Promise<any> */ Boolean]
+    inline def isPromise(`object`: Any): /* is q.q.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.Promise<any> */ Boolean]
     
-    inline def isPromiseAlike(`object`: js.Any): /* is q.q.IPromise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseAlike")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.IPromise<any> */ Boolean]
+    inline def isPromiseAlike(`object`: Any): /* is q.q.IPromise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseAlike")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.IPromise<any> */ Boolean]
     
-    inline def isRejected(promise: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRejected(promise: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("Q.longStackSupport")
     @js.native
     def longStackSupport: Boolean = js.native
     inline def longStackSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longStackSupport")(x.asInstanceOf[js.Any])
     
-    inline def mcall[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def mcall[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
-    inline def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def nbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], thisArg: Any, args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")((List(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
     inline def nearer[T](promise: Promise[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nearer")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def nextTick(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def nextTick(callback: js.Function1[/* repeated */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfapply")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def nfapply[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfapply")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
-    inline def ninvoke[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     inline def noConflict(): Typeofq = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofq]
     
-    inline def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def npost[T](nodeModule: Any, functionName: String, args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def nsend[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def nsend[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     @JSGlobal("Q.onerror")
     @js.native
-    def onerror: js.Function1[/* reason */ js.Any, Unit] = js.native
-    inline def onerror_=(x: js.Function1[/* reason */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onerror")(x.asInstanceOf[js.Any])
+    def onerror: js.Function1[/* reason */ Any, Unit] = js.native
+    inline def onerror_=(x: js.Function1[/* reason */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onerror")(x.asInstanceOf[js.Any])
     
-    inline def promised[T](callback: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promised")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+    inline def promised[T](callback: js.Function1[/* repeated */ Any, T]): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promised")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
     inline def race[T](promises: js.Array[IWhenable[T]]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     inline def reject[T](): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[Promise[T]]
-    inline def reject[T](reason: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    inline def reject[T](reason: Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     inline def resolve[T](): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[T]]
     inline def resolve[T](`object`: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`object`.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
-    inline def send[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def send[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     inline def spread[T, U](promises: js.Array[IWhenable[T]], onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]]): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(promises.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     inline def spread[T, U](
       promises: js.Array[IWhenable[T]],
       onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
     ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(promises.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     
     inline def timeout[T](promise: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     inline def timeout[T](promise: Promise[T], ms: Double, message: String): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def `try`[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def `try`[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
     inline def when(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[Promise[Unit]]
     inline def when[T](value: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
@@ -150,25 +150,25 @@ object global {
     inline def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
     ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     inline def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     inline def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: Null,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     inline def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: Unit,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   }
 }

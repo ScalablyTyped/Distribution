@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Basic details about a channel section, including title, style and position.
-  */
 trait SchemaChannelSectionSnippet extends StObject {
   
   /**
-    * The ID that YouTube uses to uniquely identify the channel that published
-    * the channel section.
+    * The ID that YouTube uses to uniquely identify the channel that published the channel section.
     */
-  var channelId: js.UndefOr[String] = js.undefined
+  var channelId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The language of the channel section&#39;s default title and description.
+    * The language of the channel section's default title and description.
     */
-  var defaultLanguage: js.UndefOr[String] = js.undefined
+  var defaultLanguage: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Localized title, read-only.
@@ -28,23 +24,22 @@ trait SchemaChannelSectionSnippet extends StObject {
   /**
     * The position of the channel section in the channel.
     */
-  var position: js.UndefOr[Double] = js.undefined
+  var position: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The style of the channel section.
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The channel section&#39;s title for multiple_playlists and
-    * multiple_channels.
+    * The channel section's title for multiple_playlists and multiple_channels.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of the channel section.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaChannelSectionSnippet {
   
@@ -57,9 +52,13 @@ object SchemaChannelSectionSnippet {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
+    inline def setChannelIdNull: Self = StObject.set(x, "channelId", null)
+    
     inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultLanguageNull: Self = StObject.set(x, "defaultLanguage", null)
     
     inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
@@ -69,17 +68,25 @@ object SchemaChannelSectionSnippet {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
+    
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

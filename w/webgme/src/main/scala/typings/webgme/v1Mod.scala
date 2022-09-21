@@ -28,33 +28,33 @@ object v1Mod {
   
   trait JsonNode extends StObject {
     
-    var attributes: js.Any
+    var attributes: Any
     
     var base: String
     
-    var constratints: js.Any
+    var constratints: Any
     
-    var meta: js.Any
+    var meta: Any
     
     var parent: String
     
-    var pointers: js.Any
+    var pointers: Any
     
-    var registry: js.Any
+    var registry: Any
     
-    var sets: js.Any
+    var sets: Any
   }
   object JsonNode {
     
     inline def apply(
-      attributes: js.Any,
+      attributes: Any,
       base: String,
-      constratints: js.Any,
-      meta: js.Any,
+      constratints: Any,
+      meta: Any,
       parent: String,
-      pointers: js.Any,
-      registry: js.Any,
-      sets: js.Any
+      pointers: Any,
+      registry: Any,
+      sets: Any
     ): JsonNode = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], constratints = constratints.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonNode]
@@ -62,35 +62,35 @@ object v1Mod {
     
     extension [Self <: JsonNode](x: Self) {
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      inline def setConstratints(value: js.Any): Self = StObject.set(x, "constratints", value.asInstanceOf[js.Any])
+      inline def setConstratints(value: Any): Self = StObject.set(x, "constratints", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      inline def setPointers(value: js.Any): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+      inline def setPointers(value: Any): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      inline def setRegistry(value: js.Any): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: Any): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      inline def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
+      inline def setSets(value: Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
     }
   }
   
   trait JsonObj extends StObject {
     
     // guid tree of hashes
-    var bases: js.Any
+    var bases: Any
     
     var containment: JsonContainment
     
-    var metaSheets: js.Any
+    var metaSheets: Any
     
     //
-    var nodes: js.Any
+    var nodes: Any
     
     var relids: js.Array[RelId]
     
@@ -99,10 +99,10 @@ object v1Mod {
   object JsonObj {
     
     inline def apply(
-      bases: js.Any,
+      bases: Any,
       containment: JsonContainment,
-      metaSheets: js.Any,
-      nodes: js.Any,
+      metaSheets: Any,
+      nodes: Any,
       relids: js.Array[RelId],
       root: Guid
     ): JsonObj = {
@@ -112,17 +112,17 @@ object v1Mod {
     
     extension [Self <: JsonObj](x: Self) {
       
-      inline def setBases(value: js.Any): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
+      inline def setBases(value: Any): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
       
       inline def setContainment(value: JsonContainment): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
       
-      inline def setMetaSheets(value: js.Any): Self = StObject.set(x, "metaSheets", value.asInstanceOf[js.Any])
+      inline def setMetaSheets(value: Any): Self = StObject.set(x, "metaSheets", value.asInstanceOf[js.Any])
       
-      inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setRelids(value: js.Array[RelId]): Self = StObject.set(x, "relids", value.asInstanceOf[js.Any])
       
-      inline def setRelidsVarargs(value: RelId*): Self = StObject.set(x, "relids", js.Array(value :_*))
+      inline def setRelidsVarargs(value: RelId*): Self = StObject.set(x, "relids", js.Array(value*))
       
       inline def setRoot(value: Guid): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

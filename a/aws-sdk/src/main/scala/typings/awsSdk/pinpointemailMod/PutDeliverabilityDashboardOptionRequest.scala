@@ -31,6 +31,6 @@ object PutDeliverabilityDashboardOptionRequest {
     
     inline def setSubscribedDomainsUndefined: Self = StObject.set(x, "SubscribedDomains", js.undefined)
     
-    inline def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "SubscribedDomains", js.Array(value :_*))
+    inline def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "SubscribedDomains", js.Array(value*))
   }
 }

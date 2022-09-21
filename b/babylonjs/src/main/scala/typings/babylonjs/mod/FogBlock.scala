@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "FogBlock")
 @js.native
-class FogBlock protected ()
+open class FogBlock protected ()
   extends typings.babylonjs.legacyMod.FogBlock {
   /**
     * Create a new FogBlock

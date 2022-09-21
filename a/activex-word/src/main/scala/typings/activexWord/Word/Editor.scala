@@ -20,7 +20,7 @@ trait Editor extends StObject {
   
   val NextRange: typings.activexWord.Word.Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -39,7 +39,7 @@ object Editor {
     ID: String,
     Name: String,
     NextRange: Range,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     SelectAll: () => Unit,
     WordDotEditor_typekey: Editor
@@ -65,7 +65,7 @@ object Editor {
     
     inline def setNextRange(value: Range): Self = StObject.set(x, "NextRange", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

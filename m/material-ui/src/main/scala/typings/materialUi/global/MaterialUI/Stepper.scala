@@ -14,26 +14,26 @@ object Stepper {
   
   @JSGlobal("__MaterialUI.Stepper.Step")
   @js.native
-  class Step ()
-    extends Component[StepProps, js.Object, js.Any]
+  open class Step ()
+    extends Component[StepProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Stepper.StepButton")
   @js.native
-  class StepButton ()
-    extends Component[StepButtonProps, js.Object, js.Any]
+  open class StepButton ()
+    extends Component[StepButtonProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Stepper.StepContent")
   @js.native
-  class StepContent ()
-    extends Component[StepContentProps, js.Object, js.Any]
+  open class StepContent ()
+    extends Component[StepContentProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Stepper.StepLabel")
   @js.native
-  class StepLabel ()
-    extends Component[StepLabelProps, js.Object, js.Any]
+  open class StepLabel ()
+    extends Component[StepLabelProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Stepper.Stepper")
   @js.native
-  class Stepper ()
-    extends Component[StepperProps, js.Object, js.Any]
+  open class Stepper ()
+    extends Component[StepperProps, js.Object, Any]
 }

@@ -12,7 +12,7 @@ trait ListModelsOutput extends StObject {
   var Models: ModelSummaryList
   
   /**
-    *  If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of models, use it in the subsequent request. 
+    *  If the response is truncated, SageMaker returns this token. To retrieve the next set of models, use it in the subsequent request. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object ListModelsOutput {
     
     inline def setModels(value: ModelSummaryList): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
     
-    inline def setModelsVarargs(value: ModelSummary*): Self = StObject.set(x, "Models", js.Array(value :_*))
+    inline def setModelsVarargs(value: ModelSummary*): Self = StObject.set(x, "Models", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

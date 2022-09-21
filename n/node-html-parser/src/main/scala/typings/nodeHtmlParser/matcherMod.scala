@@ -1,59 +1,24 @@
 package typings.nodeHtmlParser
 
+import org.scalablytyped.runtime.Shortcut
+import typings.cssSelect.libTypesMod.Adapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object matcherMod {
+object matcherMod extends Shortcut {
   
   @JSImport("node-html-parser/dist/matcher", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Matcher {
-    /**
-      * Creates an instance of Matcher.
-      * @param {string} selector
-      *
-      * @memberof Matcher
-      */
-    def this(selector: String) = this()
-  }
+  val default: Adapter[typings.nodeHtmlParser.nodeMod.default, typings.nodeHtmlParser.htmlMod.default] = js.native
   
-  @js.native
-  trait Matcher extends StObject {
-    
-    /**
-      * Trying to advance match pointer
-      * @param  {HTMLElement} el element to make the match
-      * @return {bool}           true when pointer advanced.
-      */
-    def advance(el: typings.nodeHtmlParser.htmlMod.default): Boolean = js.native
-    
-    /**
-      * flush cache to free memory
-      */
-    def flushCache(): Unit = js.native
-    
-    /**
-      * Trying to determine if match made.
-      * @return {bool} true when the match is made
-      */
-    def matched: Boolean = js.native
-    
-    /* private */ var matchers: js.Any = js.native
-    
-    /* private */ var nextMatch: js.Any = js.native
-    
-    /**
-      * Rest match pointer.
-      * @return {[type]} [description]
-      */
-    def reset(): Unit = js.native
-    
-    /**
-      * Rewind the match pointer
-      */
-    def rewind(): Unit = js.native
-  }
+  type Predicate = js.Function1[
+    /* node */ typings.nodeHtmlParser.nodeMod.default, 
+    /* is node-html-parser.node-html-parser/dist/nodes/html.default */ Boolean
+  ]
+  
+  type _To = Adapter[typings.nodeHtmlParser.nodeMod.default, typings.nodeHtmlParser.htmlMod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `matcherMod.foo` */
+  override def _to: Adapter[typings.nodeHtmlParser.nodeMod.default, typings.nodeHtmlParser.htmlMod.default] = default
 }

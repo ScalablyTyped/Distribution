@@ -1,7 +1,7 @@
 
 # Scala.js typings for what-input
 
-Typings are for version 5.2.10
+Typings are for version 5.2.12
 
 ## Library description:
 A global utility for tracking the current input method (mouse, keyboard or touch).
@@ -10,10 +10,10 @@ A global utility for tracking the current input method (mouse, keyboard or touch
 | ------------------ | :-------------: |
 | Full name          | what-input |
 | Keywords           | accessibility, a11y, input, javascript |
-| # releases         | 12 |
-| # dependents       | 63 |
-| # downloads        | 5152449 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 476681.3333333333 |
+| # stars            | 1289.0 |
 
 ## Links
 - [Homepage](https://github.com/ten1seven/what-input)

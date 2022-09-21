@@ -1,6 +1,7 @@
 package typings.k6
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.k6.httpMod.CookieJar_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object wsMod {
   
   /**
     * This module provides a WebSocket client implementing the WebSocket protocol.
-    * https://k6.io/docs/javascript-api/k6-ws
+    * https://k6.io/docs/javascript-api/k6-ws/
     */
   object default {
     
@@ -23,7 +24,7 @@ object wsMod {
     
     /**
       * Open WebSocket connection.
-      * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback
+      * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback/
       * @param url - Request URL.
       * @param callback - Logic to execute with socket.
       * @returns HTTP response to connection request.
@@ -39,7 +40,7 @@ object wsMod {
     inline def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
     /**
       * Open WebSocket connection.
-      * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback
+      * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback/
       * @param url - Request URL.
       * @param params - Request parameters.
       * @param callback - Logic to execute with socket.
@@ -61,7 +62,7 @@ object wsMod {
     
     /**
       * Close connection.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-close
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-close/
       * @param code - WebSocket status code.
       * @example
       * socket.close();
@@ -71,7 +72,7 @@ object wsMod {
     
     /**
       * Listen to event.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-on-event-callback
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-on-event-callback/
       * @param event - Event type.
       * @param handler - Event handler.
       * @example
@@ -86,7 +87,7 @@ object wsMod {
     
     /**
       * Send ping.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-ping
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-ping/
       * @example
       * socket.ping();
       */
@@ -94,7 +95,7 @@ object wsMod {
     
     /**
       * Send data.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-send-data
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-send-data/
       * @param data - Data to send.
       * @example
       * socket.send(JSON.stringify({ data: 'hola' }));
@@ -102,8 +103,27 @@ object wsMod {
     def send(data: String): Unit = js.native
     
     /**
+      * Send data.
+      * @param data - Data to send.
+      * @example
+      * const binFile = open('./file.pdf', 'b');
+      * export default function () {
+      *   ws.connect('http://wshost/', function(socket) {
+      *     socket.on('open', function() {
+      *       socket.sendBinary(binFile);
+      *     });
+      *     socket.on('binaryMessage', function(msg) {
+      *       // msg is an ArrayBuffer, so we can wrap it in a typed array directly.
+      *       new Uint8Array(msg);
+      *     });
+      *   });
+      * }
+      */
+    def sendBinary(data: js.typedarray.ArrayBuffer): Unit = js.native
+    
+    /**
       * Call a function repeatedly, while the WebSocket connection is open.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-setinterval-callback-interval
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-setinterval-callback-interval/
       * @param handler - The function to call every `interval` milliseconds.
       * @param interval - Milliseconds between two calls to `callback`.
       * @example
@@ -117,7 +137,7 @@ object wsMod {
     /**
       * Call a function at a later time,
       * if the WebSocket connection is still open then.
-      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-settimeout-callback-delay
+      * https://k6.io/docs/javascript-api/k6-ws/socket/socket-settimeout-callback-delay/
       * @param handler - The function to call when `delay` has expired.
       * @param delay - Delay in milliseconds.
       * @example
@@ -140,11 +160,13 @@ object wsMod {
   inline def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   inline def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   
+  type BinaryMessageEventHandler = js.Function1[/* message */ js.typedarray.ArrayBuffer, Unit]
+  
   type CloseEventHandler = js.Function1[/* code */ Double, Unit]
   
   type ErrorEventHandler = js.Function1[/* error */ WebSocketError, Unit]
   
-  type EventHandler[ET /* <: EventType */] = PongEventHandler | PingEventHandler | OpenEventHandler | MessageEventHandler | ErrorEventHandler | CloseEventHandler
+  type EventHandler[ET /* <: EventType */] = PongEventHandler | PingEventHandler | OpenEventHandler | BinaryMessageEventHandler | MessageEventHandler | ErrorEventHandler | CloseEventHandler
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.close
@@ -153,9 +175,12 @@ object wsMod {
     - typings.k6.k6Strings.open
     - typings.k6.k6Strings.ping
     - typings.k6.k6Strings.pong
+    - typings.k6.k6Strings.binaryMessage
   */
   trait EventType extends StObject
   object EventType {
+    
+    inline def binaryMessage: typings.k6.k6Strings.binaryMessage = "binaryMessage".asInstanceOf[typings.k6.k6Strings.binaryMessage]
     
     inline def close: typings.k6.k6Strings.close = "close".asInstanceOf[typings.k6.k6Strings.close]
     
@@ -178,8 +203,20 @@ object wsMod {
   
   trait Params extends StObject {
     
+    /**
+      * Compression algorithm. The only supported algorithm is `deflate`.
+      * If the option is left unset or empty, it defaults to no compression.
+      */
+    var compression: js.UndefOr[String] = js.undefined
+    
     /** Request headers. */
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    /**
+      * The cookie jar that will be used when making the initial HTTP request to establish the WebSocket connection.
+      * If empty, the default VU cookie jar will be used.
+      */
+    var jar: js.UndefOr[CookieJar_] = js.undefined
     
     /** Response time metric tags. */
     var tags: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -193,9 +230,17 @@ object wsMod {
     
     extension [Self <: Params](x: Self) {
       
+      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setJar(value: CookieJar_): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
+      
+      inline def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
       
       inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

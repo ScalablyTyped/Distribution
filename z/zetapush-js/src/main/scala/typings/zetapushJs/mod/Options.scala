@@ -14,7 +14,7 @@ trait Options extends StObject {
   
   var sandboxId: String
   
-  var transports: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var transports: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object Options {
   
@@ -39,10 +39,10 @@ object Options {
     
     inline def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
     
-    inline def setTransports(value: js.Array[js.Any]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+    inline def setTransports(value: js.Array[Any]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
     
     inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    inline def setTransportsVarargs(value: js.Any*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: Any*): Self = StObject.set(x, "transports", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ trait ApigatewayStatus extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -42,7 +42,7 @@ object ApigatewayStatus {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
@@ -51,8 +51,8 @@ object ApigatewayStatus {
     inline def setDetailsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "details", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayStatus & TopLevel[Any])*
+    ): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

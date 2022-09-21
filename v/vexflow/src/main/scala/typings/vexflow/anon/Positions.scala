@@ -33,7 +33,7 @@ object Positions {
     
     inline def setPositions(value: js.Array[Fret]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Fret*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Fret*): Self = StObject.set(x, "positions", js.Array(value*))
     
     inline def setStem_direction(value: Double): Self = StObject.set(x, "stem_direction", value.asInstanceOf[js.Any])
     

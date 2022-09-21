@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param triggerOptions defines the trigger options
   * @param condition defines the trigger related conditions
   */
-class DoNothingAction ()
+open class DoNothingAction ()
   extends StObject
      with typings.babylonjs.BABYLON.DoNothingAction {
-  def this(triggerOptions: js.Any) = this()
-  def this(triggerOptions: js.Any, condition: typings.babylonjs.BABYLON.Condition) = this()
+  def this(triggerOptions: Any) = this()
+  def this(triggerOptions: Any, condition: typings.babylonjs.BABYLON.Condition) = this()
   def this(triggerOptions: Unit, condition: typings.babylonjs.BABYLON.Condition) = this()
 }

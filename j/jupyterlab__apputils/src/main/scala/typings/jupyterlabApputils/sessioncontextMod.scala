@@ -20,6 +20,7 @@ import typings.jupyterlabServices.sessionSessionMod.IManager
 import typings.jupyterlabServices.sessionSessionMod.IModel
 import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import typings.jupyterlabServices.sessionSessionMod.ISessionConnection.IKernelChangedArgs
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoDisposable.mod.IObservableDisposable
@@ -32,7 +33,7 @@ object sessioncontextMod {
   
   @JSImport("@jupyterlab/apputils/lib/sessioncontext", "SessionContext")
   @js.native
-  class SessionContext protected ()
+  open class SessionContext protected ()
     extends StObject
        with ISessionContext {
     /**
@@ -40,32 +41,37 @@ object sessioncontextMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _busyDisposable: js.Any = js.native
+    /* private */ var _busyDisposable: Any = js.native
     
     /**
       * Change the kernel.
       */
-    /* private */ var _changeKernel: js.Any = js.native
+    /* private */ var _changeKernel: Any = js.native
     
-    /* private */ var _connectionStatusChanged: js.Any = js.native
+    /* private */ var _connectionStatusChanged: Any = js.native
     
-    /* private */ var _dialog: js.Any = js.native
+    /* private */ var _dialog: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /**
+      * Display kernel error
+      */
+    /* private */ var _displayKernelError: Any = js.native
+    
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Handle a new session object.
       */
-    /* private */ var _handleNewSession: js.Any = js.native
+    /* private */ var _handleNewSession: Any = js.native
     
     /**
       * Handle an error in session startup.
       */
-    /* private */ var _handleSessionError: js.Any = js.native
+    /* private */ var _handleSessionError: Any = js.native
     
-    /* private */ var _initPromise: js.Any = js.native
+    /* private */ var _initPromise: Any = js.native
     
-    /* private */ var _initStarted: js.Any = js.native
+    /* private */ var _initStarted: Any = js.native
     
     /**
       * Inner initialize function that doesn't handle promises.
@@ -73,94 +79,103 @@ object sessioncontextMod {
       */
     def _initialize(): js.Promise[Boolean] = js.native
     
-    /* private */ var _initializing: js.Any = js.native
+    /* private */ var _initializing: Any = js.native
     
-    /* private */ var _iopubMessage: js.Any = js.native
+    /* private */ var _iopubMessage: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _isRestarting: js.Any = js.native
+    /* private */ var _isRestarting: Any = js.native
     
-    /* private */ var _isTerminating: js.Any = js.native
+    /* private */ var _isTerminating: Any = js.native
     
-    /* private */ var _kernelChanged: js.Any = js.native
+    /* private */ var _kernelChanged: Any = js.native
     
-    /* private */ var _kernelPreference: js.Any = js.native
+    /* private */ var _kernelPreference: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     /**
       * Handle a change to the session status.
       */
-    /* private */ var _onConnectionStatusChanged: js.Any = js.native
+    /* private */ var _onConnectionStatusChanged: Any = js.native
     
     /**
       * Handle an iopub message.
       */
-    /* private */ var _onIopubMessage: js.Any = js.native
+    /* private */ var _onIopubMessage: Any = js.native
     
     /**
       * Handle a change to the kernel.
       */
-    /* private */ var _onKernelChanged: js.Any = js.native
+    /* private */ var _onKernelChanged: Any = js.native
+    
+    /**
+      * Handle a change to the pending input.
+      */
+    /* private */ var _onPendingInput: Any = js.native
     
     /**
       * Handle a change to a session property.
       */
-    /* private */ var _onPropertyChanged: js.Any = js.native
+    /* private */ var _onPropertyChanged: Any = js.native
     
     /**
       * Handle a session termination.
       */
-    /* private */ var _onSessionDisposed: js.Any = js.native
+    /* private */ var _onSessionDisposed: Any = js.native
     
     /**
       * Handle a change to the session status.
       */
-    /* private */ var _onStatusChanged: js.Any = js.native
+    /* private */ var _onStatusChanged: Any = js.native
     
     /**
       * Handle an unhandled message.
       */
-    /* private */ var _onUnhandledMessage: js.Any = js.native
+    /* private */ var _onUnhandledMessage: Any = js.native
     
-    /* private */ var _path: js.Any = js.native
+    /* private */ var _path: Any = js.native
     
-    /* private */ var _pendingKernelName: js.Any = js.native
+    /* private */ var _pendingInput: Any = js.native
     
-    /* private */ var _pendingSessionRequest: js.Any = js.native
+    /* private */ var _pendingKernelName: Any = js.native
     
-    /* private */ var _prevKernelName: js.Any = js.native
+    /* private */ var _pendingSessionRequest: Any = js.native
     
-    /* private */ var _propertyChanged: js.Any = js.native
+    /* private */ var _prevKernelName: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _propertyChanged: Any = js.native
     
-    /* private */ var _session: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /* private */ var _sessionChanged: js.Any = js.native
+    /* private */ var _session: Any = js.native
     
-    /* private */ var _setBusy: js.Any = js.native
+    /* private */ var _sessionChanged: Any = js.native
+    
+    /* private */ var _setBusy: Any = js.native
     
     /**
       * Shut down the current session.
       */
-    /* private */ var _shutdownSession: js.Any = js.native
+    /* private */ var _shutdownSession: Any = js.native
     
     /**
       * Start the session if necessary.
       *
       * @returns Whether to ask the user to pick a kernel.
       */
-    /* private */ var _startIfNecessary: js.Any = js.native
+    /* private */ var _startIfNecessary: Any = js.native
     
-    /* private */ var _statusChanged: js.Any = js.native
+    /* private */ var _statusChanged: Any = js.native
     
-    /* private */ var _type: js.Any = js.native
+    /* private */ var _trans: Any = js.native
     
-    /* private */ var _unhandledMessage: js.Any = js.native
+    /* private */ var _type: Any = js.native
+    
+    /* private */ var _unhandledMessage: Any = js.native
     
     /**
       * A signal emitted when the kernel status changes, proxied from the kernel.
@@ -192,6 +207,15 @@ object sessioncontextMod {
       */
     @JSName("disposed")
     def disposed_MSessionContext: ISignal[this.type, Unit] = js.native
+    
+    /**
+      * Whether the kernel is "No Kernel" or not.
+      *
+      * #### Notes
+      * As the displayed name is translated, this can be used directly.
+      */
+    @JSName("hasNoKernel")
+    def hasNoKernel_MSessionContext: Boolean = js.native
     
     /**
       * A signal emitted for iopub kernel messages, proxied from the kernel.
@@ -277,6 +301,11 @@ object sessioncontextMod {
     def name_MSessionContext: String = js.native
     
     /**
+      * Get the constant displayed name for "No Kernel"
+      */
+    /* protected */ def noKernelName: String = js.native
+    
+    /**
       * The session path.
       *
       * #### Notes
@@ -285,6 +314,12 @@ object sessioncontextMod {
       */
     @JSName("path")
     def path_MSessionContext: String = js.native
+    
+    /**
+      * A flag indicating if the session has ending input, proxied from the kernel.
+      */
+    @JSName("pendingInput")
+    def pendingInput_MSessionContext: Boolean = js.native
     
     /**
       * The name of the previously started kernel.
@@ -327,6 +362,8 @@ object sessioncontextMod {
       */
     @JSName("statusChanged")
     def statusChanged_MSessionContext: ISignal[this.type, Status] = js.native
+    
+    /* private */ var translator: Any = js.native
     
     /**
       * The session type.
@@ -432,6 +469,11 @@ object sessioncontextMod {
       var specsManager: typings.jupyterlabServices.kernelspecKernelspecMod.IManager
       
       /**
+        * The application language translator.
+        */
+      var translator: js.UndefOr[ITranslator] = js.undefined
+      
+      /**
         * The type of the session.
         */
       var `type`: js.UndefOr[String] = js.undefined
@@ -468,6 +510,10 @@ object sessioncontextMod {
         
         inline def setSpecsManager(value: typings.jupyterlabServices.kernelspecKernelspecMod.IManager): Self = StObject.set(x, "specsManager", value.asInstanceOf[js.Any])
         
+        inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+        
+        inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
+        
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -498,6 +544,14 @@ object sessioncontextMod {
       * A signal emitted when the kernel connection status changes, proxied from the session connection.
       */
     val connectionStatusChanged: ISignal[this.type, ConnectionStatus] = js.native
+    
+    /**
+      * Whether the kernel is "No Kernel" or not.
+      *
+      * #### Notes
+      * As the displayed name is translated, this can be used directly.
+      */
+    val hasNoKernel: Boolean = js.native
     
     /**
       * Initialize the session context.
@@ -538,7 +592,7 @@ object sessioncontextMod {
       ] = js.native
     
     /**
-      * The sensible display name for the kernel, or Private.NO_KERNEL
+      * The sensible display name for the kernel, or translated "No Kernel"
       *
       * #### Notes
       * This is at this level since the underlying kernel connection does not
@@ -576,6 +630,11 @@ object sessioncontextMod {
       * there is no current session.
       */
     val path: String = js.native
+    
+    /**
+      * A flag indicating if session is has pending input, proxied from the session connection.
+      */
+    val pendingInput: Boolean = js.native
     
     /**
       * The previous kernel name.
@@ -656,6 +715,7 @@ object sessioncontextMod {
     /**
       * An interface for a session context dialog provider.
       */
+    @js.native
     trait IDialogs extends StObject {
       
       /**
@@ -669,26 +729,14 @@ object sessioncontextMod {
         * kernel name and resolves with `true`. If no kernel has been started,
         * this is a no-op, and resolves with `false`.
         */
-      def restart(session: ISessionContext): js.Promise[Boolean]
+      def restart(session: ISessionContext): js.Promise[Boolean] = js.native
+      def restart(session: ISessionContext, translator: ITranslator): js.Promise[Boolean] = js.native
       
       /**
         * Select a kernel for the session.
         */
-      def selectKernel(session: ISessionContext): js.Promise[Unit]
-    }
-    object IDialogs {
-      
-      inline def apply(restart: ISessionContext => js.Promise[Boolean], selectKernel: ISessionContext => js.Promise[Unit]): IDialogs = {
-        val __obj = js.Dynamic.literal(restart = js.Any.fromFunction1(restart), selectKernel = js.Any.fromFunction1(selectKernel))
-        __obj.asInstanceOf[IDialogs]
-      }
-      
-      extension [Self <: IDialogs](x: Self) {
-        
-        inline def setRestart(value: ISessionContext => js.Promise[Boolean]): Self = StObject.set(x, "restart", js.Any.fromFunction1(value))
-        
-        inline def setSelectKernel(value: ISessionContext => js.Promise[Unit]): Self = StObject.set(x, "selectKernel", js.Any.fromFunction1(value))
-      }
+      def selectKernel(session: ISessionContext): js.Promise[Unit] = js.native
+      def selectKernel(session: ISessionContext, translator: ITranslator): js.Promise[Unit] = js.native
     }
     
     /**

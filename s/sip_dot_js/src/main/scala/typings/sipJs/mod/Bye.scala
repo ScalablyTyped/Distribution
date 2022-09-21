@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Bye")
 @js.native
-class Bye protected ()
+open class Bye protected ()
   extends typings.sipJs.apiMod.Bye {
   /** @internal */
   def this(incomingByeRequest: IncomingByeRequest) = this()

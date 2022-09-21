@@ -9,7 +9,7 @@ object promiseMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/Promise", "Promise")
   @js.native
-  class Promise protected () extends OnceSignal {
+  open class Promise protected () extends OnceSignal {
     /**
       * Creates a Signal instance to dispatch value objects.
       * @param    valueClasses Any number of class references that enable type checks in dispatch().
@@ -21,10 +21,10 @@ object promiseMod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
     
-    /* private */ var isDispatched: js.Any = js.native
+    /* private */ var isDispatched: Any = js.native
     
-    /* private */ var valueObjects: js.Any = js.native
+    /* private */ var valueObjects: Any = js.native
   }
 }

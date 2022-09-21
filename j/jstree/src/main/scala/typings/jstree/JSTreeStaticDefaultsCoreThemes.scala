@@ -60,7 +60,7 @@ trait JSTreeStaticDefaultsCoreThemes extends StObject {
     * a string (or boolean `false`) specifying the theme variant to use (if the theme supports variants)
     * @name $.jstree.defaults.core.themes.variant
     */
-  var variant: js.UndefOr[js.Any] = js.undefined
+  var variant: js.UndefOr[Any] = js.undefined
 }
 object JSTreeStaticDefaultsCoreThemes {
   
@@ -103,7 +103,7 @@ object JSTreeStaticDefaultsCoreThemes {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setVariant(value: js.Any): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: Any): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

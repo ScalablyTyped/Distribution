@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "TabBar")
 @js.native
-class TabBar () extends default
+open class TabBar () extends default
 object TabBar {
   
   /* was `typeof TabBarItem` */
   @JSImport("@ant-design/react-native", "TabBar.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.antDesignReactNative.tabBarMod.default.Item
   /* static members */
   object Item {

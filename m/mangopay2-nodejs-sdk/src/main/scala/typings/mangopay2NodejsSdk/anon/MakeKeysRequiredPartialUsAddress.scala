@@ -1,18 +1,19 @@
 package typings.mangopay2NodejsSdk.anon
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DECLARATIVE
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.address.AddressData
-import typings.mangopay2NodejsSdk.mod.user.IncomeRange
-import typings.mangopay2NodejsSdk.mod.user.KYCLevel
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.userMod.user.IncomeRange
+import typings.mangopay2NodejsSdk.userMod.user.KYCLevel
+import typings.mangopay2NodejsSdk.userMod.user.UserCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserNaturalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserNaturalData> */
+/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/user.user.UserNaturalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/user.user.RequiredUserNaturalData> */
 trait MakeKeysRequiredPartialUsAddress extends StObject {
   
   var Address: js.UndefOr[String | AddressData] = js.undefined
@@ -31,9 +32,9 @@ trait MakeKeysRequiredPartialUsAddress extends StObject {
   
   var Id: js.UndefOr[String] = js.undefined
   
-  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.undefined
+  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.IncomeRange] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.undefined
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.KYCLevel] = js.undefined
   
   var LastName: String
   
@@ -48,6 +49,10 @@ trait MakeKeysRequiredPartialUsAddress extends StObject {
   var ProofOfIdentity: js.UndefOr[String | Null] = js.undefined
   
   var Tag: js.UndefOr[String] = js.undefined
+  
+  var TermsAndConditionsAccepted: js.UndefOr[Boolean] = js.undefined
+  
+  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.UserCategory] = js.undefined
 }
 object MakeKeysRequiredPartialUsAddress {
   
@@ -124,5 +129,13 @@ object MakeKeysRequiredPartialUsAddress {
     inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    
+    inline def setTermsAndConditionsAccepted(value: Boolean): Self = StObject.set(x, "TermsAndConditionsAccepted", value.asInstanceOf[js.Any])
+    
+    inline def setTermsAndConditionsAcceptedUndefined: Self = StObject.set(x, "TermsAndConditionsAccepted", js.undefined)
+    
+    inline def setUserCategory(value: UserCategory): Self = StObject.set(x, "UserCategory", value.asInstanceOf[js.Any])
+    
+    inline def setUserCategoryUndefined: Self = StObject.set(x, "UserCategory", js.undefined)
   }
 }

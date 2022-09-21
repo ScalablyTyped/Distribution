@@ -1,7 +1,7 @@
 
 # Scala.js typings for resolve-package-path
 
-Typings are for version 1.2.7
+Typings are for version 4.0.3
 
 ## Library description:
 a special purpose fast memoizing way to resolve a node modules package.json
@@ -10,10 +10,10 @@ a special purpose fast memoizing way to resolve a node modules package.json
 | ------------------ | :-------------: |
 | Full name          | resolve-package-path |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 23 |
-| # downloads        | 13332769 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2546405.6666666665 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/resolve-package-path#readme)

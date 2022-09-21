@@ -89,7 +89,7 @@ object SplitButton {
     
     /** returns the target of the current object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -116,7 +116,7 @@ object SplitButton {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -253,7 +253,7 @@ object SplitButton {
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the split button model
       */
@@ -276,7 +276,7 @@ object SplitButton {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -314,7 +314,7 @@ object SplitButton {
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the split button model
       */
@@ -337,7 +337,7 @@ object SplitButton {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -367,7 +367,7 @@ object SplitButton {
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** return the menu id
       */
@@ -383,7 +383,7 @@ object SplitButton {
     
     /** returns the selected item
       */
-    var selectedItem: js.UndefOr[js.Any] = js.undefined
+    var selectedItem: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -402,7 +402,7 @@ object SplitButton {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -418,7 +418,7 @@ object SplitButton {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      inline def setSelectedItem(value: Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
       
@@ -487,7 +487,7 @@ object SplitButton {
     /** Specifies the HTML Attributes of the Split Button.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the imagePosition of the Split Button.See imagePositions
       * @Default {ej.ImagePosition.ImageRight}
@@ -602,7 +602,7 @@ object SplitButton {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       

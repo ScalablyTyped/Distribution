@@ -13,7 +13,7 @@ object optionOptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
+  inline def convert(items: OptionItems[OptionItem | String]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
   
   type ApiOptionItem = GoogleActionsV2UiElementsCarouselSelectCarouselItem
   
@@ -66,7 +66,7 @@ object optionOptionMod {
       
       inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
       
-      inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+      inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

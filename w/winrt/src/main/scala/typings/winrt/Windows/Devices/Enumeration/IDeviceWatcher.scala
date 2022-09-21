@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDeviceWatcher extends StObject {
   
-  var onadded: js.Any
+  var onadded: Any
   
-  var onenumerationcompleted: js.Any
+  var onenumerationcompleted: Any
   
-  var onremoved: js.Any
+  var onremoved: Any
   
-  var onstopped: js.Any
+  var onstopped: Any
   
-  var onupdated: js.Any
+  var onupdated: Any
   
   def start(): Unit
   
@@ -25,11 +25,11 @@ trait IDeviceWatcher extends StObject {
 object IDeviceWatcher {
   
   inline def apply(
-    onadded: js.Any,
-    onenumerationcompleted: js.Any,
-    onremoved: js.Any,
-    onstopped: js.Any,
-    onupdated: js.Any,
+    onadded: Any,
+    onenumerationcompleted: Any,
+    onremoved: Any,
+    onstopped: Any,
+    onupdated: Any,
     start: () => Unit,
     status: DeviceWatcherStatus,
     stop: () => Unit
@@ -40,15 +40,15 @@ object IDeviceWatcher {
   
   extension [Self <: IDeviceWatcher](x: Self) {
     
-    inline def setOnadded(value: js.Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
+    inline def setOnadded(value: Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
     
-    inline def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnenumerationcompleted(value: Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnremoved(value: js.Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
+    inline def setOnremoved(value: Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
     
-    inline def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
+    inline def setOnstopped(value: Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
     
-    inline def setOnupdated(value: js.Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
+    inline def setOnupdated(value: Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
     
     inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     

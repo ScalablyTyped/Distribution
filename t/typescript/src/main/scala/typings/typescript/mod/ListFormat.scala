@@ -140,6 +140,12 @@ object ListFormat extends StObject {
   /* 512 */ val HeritageClauses: typings.typescript.mod.ListFormat.HeritageClauses & Double = js.native
   
   @js.native
+  sealed trait ImportClauseEntries
+    extends StObject
+       with ListFormat
+  /* 526226 */ val ImportClauseEntries: typings.typescript.mod.ListFormat.ImportClauseEntries & Double = js.native
+  
+  @js.native
   sealed trait Indented
     extends StObject
        with ListFormat
@@ -191,7 +197,7 @@ object ListFormat extends StObject {
   sealed trait Modifiers
     extends StObject
        with ListFormat
-  /* 262656 */ val Modifiers: typings.typescript.mod.ListFormat.Modifiers & Double = js.native
+  /* 2359808 */ val Modifiers: typings.typescript.mod.ListFormat.Modifiers & Double = js.native
   
   @js.native
   sealed trait MultiLine

@@ -16,7 +16,7 @@ object setVaultNotificationsCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/SetVaultNotificationsCommand", "SetVaultNotificationsCommand")
   @js.native
-  class SetVaultNotificationsCommand protected ()
+  open class SetVaultNotificationsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object setVaultNotificationsCommandMod {
     override val middlewareStack: MiddlewareStack[SetVaultNotificationsInput, SetVaultNotificationsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[SetVaultNotificationsInput, SetVaultNotificationsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[SetVaultNotificationsInput, SetVaultNotificationsOutput] = js.native
   }
 }

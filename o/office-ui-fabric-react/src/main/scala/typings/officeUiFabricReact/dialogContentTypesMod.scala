@@ -111,7 +111,7 @@ object dialogContentTypesMod {
       * Callback for when the Dialog is dismissed from the close button or light dismiss, before the animation completes.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], Any]
       ] = js.undefined
     
     /**
@@ -203,7 +203,7 @@ object dialogContentTypesMod {
       
       inline def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
@@ -249,7 +249,7 @@ object dialogContentTypesMod {
       
       inline def setTopButtonsPropsUndefined: Self = StObject.set(x, "topButtonsProps", js.undefined)
       
-      inline def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value :_*))
+      inline def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value*))
       
       inline def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

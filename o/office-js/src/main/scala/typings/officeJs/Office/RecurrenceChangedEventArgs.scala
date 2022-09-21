@@ -10,13 +10,15 @@ trait RecurrenceChangedEventArgs extends StObject {
   /** 
     * Gets the updated recurrence object. 
     * 
+    * @remarks
     * [Api set: Mailbox 1.7] 
     */ 
   var recurrence: Recurrence
   
   /** 
-    * Gets the type of the event. See `Office.EventType` for details. 
+    * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
     * 
+    * @remarks
     * [Api set: Mailbox 1.7] 
     */ 
   var `type`: olkRecurrenceChanged

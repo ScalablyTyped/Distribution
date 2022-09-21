@@ -8,11 +8,11 @@ trait LiteralExpression
   extends StObject
      with AST {
   
-  /* private */ var _nodeType: js.Any
+  /* private */ var _nodeType: Any
   
-  /* private */ var _text: js.Any
+  /* private */ var _text: Any
   
-  /* private */ var _valueText: js.Any
+  /* private */ var _valueText: Any
   
   def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean
   
@@ -23,15 +23,15 @@ trait LiteralExpression
 object LiteralExpression {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _nodeType: js.Any,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _nodeType: Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
-    _text: js.Any,
+    _text: Any,
     _trailingTriviaWidth: Double,
-    _valueText: js.Any,
+    _valueText: Any,
     end: () => Double,
     fileName: () => String,
     isExpression: () => Boolean,
@@ -61,10 +61,10 @@ object LiteralExpression {
     
     inline def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
     
-    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
     
-    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

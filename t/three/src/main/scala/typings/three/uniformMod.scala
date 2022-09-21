@@ -8,30 +8,28 @@ object uniformMod {
   
   @JSImport("three/src/core/Uniform", "Uniform")
   @js.native
-  class Uniform protected () extends StObject {
-    def this(value: js.Any) = this()
+  open class Uniform protected () extends StObject {
+    def this(value: Any) = this()
     /**
-    	 * @deprecated
-    	 */
-    def this(`type`: String, value: js.Any) = this()
+      * @deprecated
+      */
+    def this(`type`: String, value: Any) = this()
     
     /**
-    	 * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
-    	 */
+      * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
+      */
     var dynamic: Boolean = js.native
     
     /**
-    	 * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
-    	 */
-    def onUpdate(callback: js.Function): Uniform = js.native
-    
-    var onUpdateCallback: js.Function = js.native
+      * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
+      */
+    def onUpdate(callback: js.Function0[Unit]): Uniform = js.native
     
     /**
-    	 * @deprecated
-    	 */
+      * @deprecated
+      */
     var `type`: String = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
 }

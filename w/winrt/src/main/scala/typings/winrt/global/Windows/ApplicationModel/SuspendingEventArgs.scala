@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.ApplicationModel.SuspendingEventArgs")
 @js.native
-class SuspendingEventArgs ()
+open class SuspendingEventArgs ()
   extends StObject
      with typings.winrt.Windows.ApplicationModel.SuspendingEventArgs {
   

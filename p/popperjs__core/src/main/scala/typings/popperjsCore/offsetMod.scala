@@ -17,7 +17,7 @@ object offsetMod {
   
   @JSImport("@popperjs/core/lib/modifiers/offset", JSImport.Default)
   @js.native
-  val default: Modifier[offset, Options] = js.native
+  val default: OffsetModifier = js.native
   
   inline def distanceAndSkiddingToXY(placement: Placement, rects: Reference, offset: Offset): Offsets = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAndSkiddingToXY")(placement.asInstanceOf[js.Any], rects.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Offsets]
   

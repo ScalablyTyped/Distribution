@@ -119,6 +119,11 @@ trait ArmWriter extends StObject {
   def putBlLabel(labelId: String): Unit = js.native
   
   /**
+    * Puts a BL instruction.
+    */
+  def putBlReg(reg: ArmRegister): Unit = js.native
+  
+  /**
     * Puts a BLX instruction.
     */
   def putBlxImm(target: NativePointerValue): Unit = js.native
@@ -161,6 +166,16 @@ trait ArmWriter extends StObject {
   def putCallAddressWithArguments(func: NativePointerValue, args: js.Array[ArmCallArgument]): Unit = js.native
   
   /**
+    * Puts a CALL instruction.
+    */
+  def putCallReg(reg: ArmRegister): Unit = js.native
+  
+  /**
+    * Puts code needed for calling a C function with the specified `args`.
+    */
+  def putCallRegWithArguments(reg: ArmRegister, args: js.Array[ArmCallArgument]): Unit = js.native
+  
+  /**
     * Puts a CMP instruction.
     */
   def putCmpRegImm(dstReg: ArmRegister, immVal: Double): Unit = js.native
@@ -192,6 +207,11 @@ trait ArmWriter extends StObject {
     * Puts an LDR instruction.
     */
   def putLdrRegAddress(reg: ArmRegister, address: NativePointerValue): Unit = js.native
+  
+  /**
+    * Puts an LDR instruction.
+    */
+  def putLdrRegReg(dstReg: ArmRegister, srcReg: ArmRegister): Unit = js.native
   
   /**
     * Puts an LDR instruction.
@@ -236,11 +256,21 @@ trait ArmWriter extends StObject {
   def putRet(): Unit = js.native
   
   /**
+    * Puts a RSB instruction.
+    */
+  def putRsbRegRegImm(dstReg: ArmRegister, srcReg: ArmRegister, immVal: Double): Unit = js.native
+  
+  /**
     * Puts a STR COND instruction.
     */
   def putStrCondRegRegOffset(cc: ArmConditionCode, srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: Double): Unit = js.native
   def putStrCondRegRegOffset(cc: ArmConditionCode, srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: Int64): Unit = js.native
   def putStrCondRegRegOffset(cc: ArmConditionCode, srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: UInt64): Unit = js.native
+  
+  /**
+    * Puts a STR instruction.
+    */
+  def putStrRegReg(srcReg: ArmRegister, dstReg: ArmRegister): Unit = js.native
   
   /**
     * Puts a STR instruction.
@@ -268,6 +298,16 @@ trait ArmWriter extends StObject {
     * Puts a SUB instruction.
     */
   def putSubRegU32(dstReg: ArmRegister, `val`: Double): Unit = js.native
+  
+  /**
+    * Puts a VPOP RANGE instruction.
+    */
+  def putVpopRange(firstReg: ArmRegister, lastReg: ArmRegister): Unit = js.native
+  
+  /**
+    * Puts a VPUSH RANGE instruction.
+    */
+  def putVpushRange(firstReg: ArmRegister, lastReg: ArmRegister): Unit = js.native
   
   /**
     * Recycles instance.

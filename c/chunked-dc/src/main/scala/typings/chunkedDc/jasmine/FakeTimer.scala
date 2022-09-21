@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FakeTimer
   extends StObject
-     with Instantiable0[js.Any] {
+     with Instantiable0[scala.Any] {
   
   def reset(): Unit = js.native
   
   def runFunctionsWithinRange(oldMillis: Double, nowMillis: Double): Unit = js.native
   
-  def scheduleFunction(timeoutKey: js.Any, funcToCall: js.Function0[Unit], millis: Double, recurring: Boolean): Unit = js.native
+  def scheduleFunction(timeoutKey: scala.Any, funcToCall: js.Function0[Unit], millis: Double, recurring: Boolean): Unit = js.native
   
   def tick(millis: Double): Unit = js.native
 }

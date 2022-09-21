@@ -20,11 +20,11 @@ object localStorageMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorageManager")
   @js.native
-  class BrowserLocalStorageManager ()
+  open class BrowserLocalStorageManager ()
     extends StObject
        with ModelStoreManager {
     
-    /* private */ val LS: js.Any = js.native
+    /* private */ val LS: Any = js.native
     
     /**
       * List all models in the model store.
@@ -50,7 +50,7 @@ object localStorageMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
   @js.native
-  class BrowserLocalStorage_ protected ()
+  open class BrowserLocalStorage_ protected ()
     extends StObject
        with IOHandler {
     def this(modelPath: String) = this()
@@ -102,14 +102,28 @@ object localStorageMod {
   
   trait LocalStorageKeys extends StObject {
     
+    /** Key of the localStorage entry storing `ModelArtifactsInfo`. */
     var info: String
     
+    /**
+      * Key of the localStorage entry storing the remaining fields of `model.json`
+      * @see {@link ModelMetadata}
+      */
     var modelMetadata: String
     
+    /**
+      * Key of the localStorage entry storing the 'modelTopology' key of
+      * `model.json`
+      */
     var topology: String
     
+    /** Key of the localStorage entry storing the weight data in Base64 */
     var weightData: String
     
+    /**
+      * Key of the localStorage entry storing the `weightsManifest.weights` entries
+      * of `model.json`
+      */
     var weightSpecs: String
   }
   object LocalStorageKeys {

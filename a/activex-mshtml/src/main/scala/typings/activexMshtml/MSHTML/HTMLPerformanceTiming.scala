@@ -47,7 +47,7 @@ trait HTMLPerformanceTiming extends StObject {
   
   val responseStart: Double
   
-  def toJSON(): js.Any
+  def toJSON(): Any
   
   val unloadEventEnd: Double
   
@@ -76,7 +76,7 @@ object HTMLPerformanceTiming {
     requestStart: Double,
     responseEnd: Double,
     responseStart: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     unloadEventEnd: Double,
     unloadEventStart: Double
   ): HTMLPerformanceTiming = {
@@ -127,7 +127,7 @@ object HTMLPerformanceTiming {
     
     inline def setResponseStart(value: Double): Self = StObject.set(x, "responseStart", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     inline def setUnloadEventEnd(value: Double): Self = StObject.set(x, "unloadEventEnd", value.asInstanceOf[js.Any])
     

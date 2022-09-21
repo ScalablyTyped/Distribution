@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.GraceNote")
 @js.native
-class GraceNote protected ()
+open class GraceNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.GraceNote {
   def this(note_struct: Autostem) = this()

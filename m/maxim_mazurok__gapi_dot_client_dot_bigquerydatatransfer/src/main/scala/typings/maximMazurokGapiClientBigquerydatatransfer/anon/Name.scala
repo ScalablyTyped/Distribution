@@ -18,12 +18,11 @@ trait Name extends StObject {
   var alt: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional OAuth2 authorization code to use with this transfer configuration. If it is provided, the transfer configuration will be associated with the authorizing user. In order
-    * to obtain authorization_code, please make a request to https://www.gstatic.com/bigquerydatatransfer/oauthz/auth?client_id=&scope=&redirect_uri= * client_id should be OAuth
-    * client_id of BigQuery DTS API for the given data source returned by ListDataSources method. * data_source_scopes are the scopes returned by ListDataSources method. *
-    * redirect_uri is an optional parameter. If not specified, then authorization code is posted to the opener of authorization flow window. Otherwise it will be sent to the redirect
-    * uri. A special value of urn:ietf:wg:oauth:2.0:oob means that authorization code should be returned in the title bar of the browser, with the page text prompting the user to copy
-    * the code and paste it in the application.
+    * Optional OAuth2 authorization code to use with this transfer configuration. This is required only if `transferConfig.dataSourceId` is 'youtube_channel' and new credentials are
+    * needed, as indicated by `CheckValidCreds`. In order to obtain authorization_code, make a request to the following URL: https://www.gstatic.com/bigquerydatatransfer/oauthz/auth?
+    * client_id=client_id&scope=data_source_scopes &redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=authorization_code * The client_id is the OAuth client_id of the a data source
+    * as returned by ListDataSources method. * data_source_scopes are the scopes returned by ListDataSources method. Note that this should not be set when `service_account_name` is
+    * used to update the transfer config.
     */
   var authorizationCode: js.UndefOr[String] = js.undefined
   
@@ -37,9 +36,8 @@ trait Name extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource name of the transfer config. Transfer config names have the form of `projects/{project_id}/locations/{region}/transferConfigs/{config_id}`. The name is
-    * automatically generated based on the config_id specified in CreateTransferConfigRequest along with project_id and region. If config_id is not provided, usually a uuid, even
-    * though it is not guaranteed or required, will be generated for config_id.
+    * The resource name of the transfer config. Transfer config names have the form `projects/{project_id}/locations/{region}/transferConfigs/{config_id}`. Where `config_id` is
+    * usually a uuid, even though it is not guaranteed or required. The name is ignored when creating a transfer config.
     */
   var name: String
   
@@ -56,8 +54,9 @@ trait Name extends StObject {
   var resource: TransferConfig
   
   /**
-    * Optional service account name. If this field is set and "service_account_name" is set in update_mask, transfer config will be updated to use this service account credentials. It
-    * requires that requesting user calling this API has permissions to act as this service account.
+    * Optional service account name. If this field is set, the transfer config will be created with this service account's credentials. It requires that the requesting user calling
+    * this API has permissions to act as this service account. Note that not all data sources support service account credentials when creating a transfer config. For the latest list
+    * of data sources, read about [using service accounts](https://cloud.google.com/bigquery-transfer/docs/use-service-accounts).
     */
   var serviceAccountName: js.UndefOr[String] = js.undefined
   
@@ -71,9 +70,10 @@ trait Name extends StObject {
   var upload_protocol: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional version info. If users want to find a very recent access token, that is, immediately after approving access, users have to set the version_info claim in the token
-    * request. To obtain the version_info, users must use the "none+gsession" response type. which be return a version_info back in the authorization response which be be put in a JWT
-    * claim in the token request.
+    * Optional version info. This is required only if `transferConfig.dataSourceId` is not 'youtube_channel' and new credentials are needed, as indicated by `CheckValidCreds`. In
+    * order to obtain version info, make a request to the following URL: https://www.gstatic.com/bigquerydatatransfer/oauthz/auth? client_id=client_id&scope=data_source_scopes
+    * &redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=version_info * The client_id is the OAuth client_id of the a data source as returned by ListDataSources method. *
+    * data_source_scopes are the scopes returned by ListDataSources method. Note that this should not be set when `service_account_name` is used to update the transfer config.
     */
   var versionInfo: js.UndefOr[String] = js.undefined
 }

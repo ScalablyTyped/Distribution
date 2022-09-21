@@ -25,6 +25,13 @@ trait ArcGISMapServiceCapabilitiesOperations
   var supportsExportTiles: Boolean
   
   /**
+    * Indicates if the service supports the [identify operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-identify.html#identify).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var supportsIdentify: Boolean
+  
+  /**
     * Indicates if features in the sublayers can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
@@ -46,10 +53,11 @@ object ArcGISMapServiceCapabilitiesOperations {
     propertyIsEnumerable: PropertyKey => Boolean,
     supportsExportMap: Boolean,
     supportsExportTiles: Boolean,
+    supportsIdentify: Boolean,
     supportsQuery: Boolean,
     supportsTileMap: Boolean
   ): ArcGISMapServiceCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsExportMap = supportsExportMap.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsExportMap = supportsExportMap.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsIdentify = supportsIdentify.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
   
@@ -58,6 +66,8 @@ object ArcGISMapServiceCapabilitiesOperations {
     inline def setSupportsExportMap(value: Boolean): Self = StObject.set(x, "supportsExportMap", value.asInstanceOf[js.Any])
     
     inline def setSupportsExportTiles(value: Boolean): Self = StObject.set(x, "supportsExportTiles", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsIdentify(value: Boolean): Self = StObject.set(x, "supportsIdentify", value.asInstanceOf[js.Any])
     
     inline def setSupportsQuery(value: Boolean): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
     

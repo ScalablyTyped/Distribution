@@ -10,10 +10,10 @@ XML Body Builder for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/xml-body-builder |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 57717 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3195.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fxml-body-builder)

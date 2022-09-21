@@ -10,10 +10,10 @@ A little library for asserting types and values.
 | ------------------ | :-------------: |
 | Full name          | check-types |
 | Keywords           | type, types, type-check, type-checking, duck-typing, arguments, parameters, values, data, contract, assert, check, verify, safe, safety |
-| # releases         | 13 |
-| # dependents       | 323 |
-| # downloads        | 167796748 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1638367666666668E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://gitlab.com/philbooth/check-types.js)

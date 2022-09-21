@@ -12,7 +12,7 @@ trait SendMessageResult extends StObject {
   var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
   
   /**
-    * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
+    * An MD5 digest of the non-URL-encoded message body string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
     */
   var MD5OfMessageBody: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait SendMessageResult extends StObject {
   var MD5OfMessageSystemAttributes: js.UndefOr[String] = js.undefined
   
   /**
-    * An attribute containing the MessageId of the message sent to the queue. For more information, see Queue and Message Identifiers in the Amazon Simple Queue Service Developer Guide. 
+    * An attribute containing the MessageId of the message sent to the queue. For more information, see Queue and Message Identifiers in the Amazon SQS Developer Guide. 
     */
   var MessageId: js.UndefOr[String] = js.undefined
   

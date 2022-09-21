@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashIsEqual extends StObject {
   
-  def apply(value: js.Any): LodashIsEqual1x1 = js.native
-  def apply(value: js.Any, other: js.Any): Boolean = js.native
-  def apply(value: __, other: js.Any): LodashIsEqual1x2 = js.native
+  def apply(value: Any): LodashIsEqual1x1 = js.native
+  def apply(value: Any, other: Any): Boolean = js.native
+  def apply(value: __, other: Any): LodashIsEqual1x2 = js.native
 }

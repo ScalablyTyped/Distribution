@@ -2,6 +2,8 @@ package typings.asyncCache
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
+import typings.lruCache.mod.DeprecatedOptions
+import typings.lruCache.mod.SharedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("async-cache", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with Cache[T] {
     def this(options: Options[T]) = this()
@@ -33,7 +35,7 @@ object mod extends Shortcut {
     
     def del(key: String): Unit = js.native
     
-    def get(key: String, cb: js.Function2[/* error */ js.Any, /* value */ T, Unit]): Unit = js.native
+    def get(key: String, cb: js.Function2[/* error */ Any, /* value */ T, Unit]): Unit = js.native
     
     def has(key: String): Boolean = js.native
     
@@ -49,19 +51,22 @@ object mod extends Shortcut {
     def set(key: String, value: T, maxAge: Double): Boolean = js.native
   }
   
-  trait Options[T]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped lru-cache.lru-cache.LimitedByCount | lru-cache.lru-cache.LimitedBySize<string, T> | lru-cache.lru-cache.LimitedByTTL
+  - Dropped lru-cache.anon.MaxEntrySize<string, T> | {} */ trait Options[T]
     extends StObject
-       with typings.lruCache.mod.Options[String, T] {
+       with SharedOptions[String, T]
+       with DeprecatedOptions[String, T] {
     
     def load(
       key: String,
-      callback: js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]
+      callback: js.Function3[/* error */ Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]
     ): Unit
   }
   object Options {
     
     inline def apply[T](
-      load: (String, js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
+      load: (String, js.Function3[/* error */ Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
     ): Options[T] = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load))
       __obj.asInstanceOf[Options[T]]
@@ -70,7 +75,7 @@ object mod extends Shortcut {
     extension [Self <: Options[?], T](x: Self & Options[T]) {
       
       inline def setLoad(
-        value: (String, js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
+        value: (String, js.Function3[/* error */ Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
       ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     }
   }

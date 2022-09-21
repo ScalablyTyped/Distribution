@@ -10,16 +10,16 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyParser * / any */ @JSImport("@aws-sdk/json-parser", "JsonParser")
   @js.native
-  class JsonParser protected () extends StObject {
+  open class JsonParser protected () extends StObject {
     def this(base64Decoder: Decoder) = this()
     
-    /* private */ val base64Decoder: js.Any = js.native
+    /* private */ val base64Decoder: Any = js.native
     
     def parse[OutputType](
-      shape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any,
+      shape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ Any,
       input: String
     ): OutputType = js.native
     
-    /* private */ var unmarshall: js.Any = js.native
+    /* private */ var unmarshall: Any = js.native
   }
 }

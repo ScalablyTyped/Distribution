@@ -16,7 +16,7 @@ object disableKeyRotationCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/DisableKeyRotationCommand", "DisableKeyRotationCommand")
   @js.native
-  class DisableKeyRotationCommand protected ()
+  open class DisableKeyRotationCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object disableKeyRotationCommandMod {
     override val middlewareStack: MiddlewareStack[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
   }
 }

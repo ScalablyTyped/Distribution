@@ -1,13 +1,11 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.httpHttpMod.HttpHeaders
+import typings.angularCommon.httpMod.HttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Status[V] extends StObject {
-  
-  var body: js.UndefOr[V | Null] = js.undefined
+trait Status extends StObject {
   
   var headers: js.UndefOr[HttpHeaders] = js.undefined
   
@@ -19,18 +17,12 @@ trait Status[V] extends StObject {
 }
 object Status {
   
-  inline def apply[V](): Status[V] = {
+  inline def apply(): Status = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Status[V]]
+    __obj.asInstanceOf[Status]
   }
   
-  extension [Self <: Status[?], V](x: Self & Status[V]) {
-    
-    inline def setBody(value: V): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyNull: Self = StObject.set(x, "body", null)
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+  extension [Self <: Status](x: Self) {
     
     inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

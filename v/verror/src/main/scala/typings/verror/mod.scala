@@ -12,29 +12,32 @@ object mod extends Shortcut {
   
   @JSImport("verror", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with VError {
-    def this(message: String, params: js.Any*) = this()
-    def this(message: Unit, params: js.Any*) = this()
-    def this(options: Error, message: String, params: js.Any*) = this()
-    def this(options: Options, message: String, params: js.Any*) = this()
+    def this(message: String, params: Any*) = this()
+    def this(message: Unit, params: Any*) = this()
+    def this(options: js.Error, message: String, params: Any*) = this()
+    def this(options: Options, message: String, params: Any*) = this()
     
     /* CompleteClass */
-    override def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    override def cause_MVError(): js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   @JSImport("verror", JSImport.Namespace)
   @js.native
   val ^ : js.Object & (Instantiable3[
-    /* options */ Options | Error, 
+    /* options */ Options | js.Error, 
     /* message */ String, 
-    /* params (repeated) */ js.Any, 
+    /* params (repeated) */ Any, 
     VError
   ]) = js.native
   
@@ -46,19 +49,22 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "MultiError")
   @js.native
-  class MultiError protected ()
+  open class MultiError protected ()
     extends StObject
        with VError {
-    def this(errors: js.Array[Error]) = this()
+    def this(errors: js.Array[js.Error]) = this()
     
     /* CompleteClass */
-    override def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    override def cause_MVError(): js.UndefOr[js.Error] = js.native
     
-    def errors(): js.Array[Error] = js.native
+    def errors(): js.Array[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -71,16 +77,19 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "SError")
   @js.native
-  class SError ()
+  open class SError ()
     extends StObject
        with VError {
     
     /* CompleteClass */
-    override def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    override def cause_MVError(): js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -89,7 +98,8 @@ object mod extends Shortcut {
     extends StObject
        with Error {
     
-    def cause(): js.UndefOr[Error]
+    @JSName("cause")
+    def cause_MVError(): js.UndefOr[js.Error]
   }
   object VError {
     
@@ -97,33 +107,36 @@ object mod extends Shortcut {
     @JSImport("verror", "VError")
     @js.native
     val ^ : Instantiable3[
-        /* options */ Options | Error, 
+        /* options */ Options | js.Error, 
         /* message */ String, 
-        /* params (repeated) */ js.Any, 
+        /* params (repeated) */ Any, 
         VError
       ] = js.native
     
     extension [Self <: VError](x: Self) {
       
-      inline def setCause(value: () => js.UndefOr[Error]): Self = StObject.set(x, "cause", js.Any.fromFunction0(value))
+      inline def setCause(value: () => js.UndefOr[js.Error]): Self = StObject.set(x, "cause", js.Any.fromFunction0(value))
     }
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("verror", "VError")
   @js.native
-  class VErrorCls protected ()
+  open class VErrorCls protected ()
     extends StObject
        with VError {
-    def this(options: Error, message: String, params: js.Any*) = this()
-    def this(options: Options, message: String, params: js.Any*) = this()
+    def this(options: js.Error, message: String, params: Any*) = this()
+    def this(options: Options, message: String, params: Any*) = this()
     
     /* CompleteClass */
-    override def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    override def cause_MVError(): js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -135,48 +148,51 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "WError")
   @js.native
-  class WError ()
+  open class WError ()
     extends StObject
        with VError {
     
     /* CompleteClass */
-    override def cause(): js.UndefOr[Error] = js.native
+    @JSName("cause")
+    override def cause_MVError(): js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   /* static member */
-  inline def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
+  inline def cause(err: js.Error): js.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[js.Error | Null]
   
   /* static member */
-  inline def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def errorForEach(err: js.Error, func: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
+  inline def errorFromList[T /* <: js.Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
   
   /* static member */
-  inline def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+  inline def findCauseByName(err: js.Error, name: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
   
   /* static member */
-  inline def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fullStack(err: js.Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  inline def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasCauseWithName(err: js.Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  inline def info(err: Error): Info_ = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info_]
+  inline def info(err: js.Error): Info_ = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info_]
   
-  type Info_ = StringDictionary[js.Any]
+  type Info_ = StringDictionary[Any]
   
   trait Options extends StObject {
     
-    var cause: js.UndefOr[Error | Null] = js.undefined
+    var cause: js.UndefOr[js.Error | Null] = js.undefined
     
-    var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var constructorOpt: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var info: js.UndefOr[Info_] = js.undefined
     
@@ -193,13 +209,13 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
       inline def setCauseNull: Self = StObject.set(x, "cause", null)
       
       inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
-      inline def setConstructorOpt(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
+      inline def setConstructorOpt(value: /* repeated */ Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
       
       inline def setConstructorOptUndefined: Self = StObject.set(x, "constructorOpt", js.undefined)
       
@@ -218,17 +234,17 @@ object mod extends Shortcut {
   }
   
   type _To = js.Object & (Instantiable3[
-    /* options */ Options | Error, 
+    /* options */ Options | js.Error, 
     /* message */ String, 
-    /* params (repeated) */ js.Any, 
+    /* params (repeated) */ Any, 
     VError
   ])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: js.Object & (Instantiable3[
-    /* options */ Options | Error, 
+    /* options */ Options | js.Error, 
     /* message */ String, 
-    /* params (repeated) */ js.Any, 
+    /* params (repeated) */ Any, 
     VError
   ]) = ^
 }

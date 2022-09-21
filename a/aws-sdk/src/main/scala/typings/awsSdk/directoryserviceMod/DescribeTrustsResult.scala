@@ -33,6 +33,6 @@ object DescribeTrustsResult {
     
     inline def setTrustsUndefined: Self = StObject.set(x, "Trusts", js.undefined)
     
-    inline def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "Trusts", js.Array(value :_*))
+    inline def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "Trusts", js.Array(value*))
   }
 }

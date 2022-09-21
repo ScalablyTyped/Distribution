@@ -25,45 +25,42 @@ object mod {
     url: String,
     args: js.Array[String],
     options: Options,
-    callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
+    callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def getExtractors(
-    descriptions: Boolean,
-    callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getExtractors(callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getExtractors(descriptions: Boolean, callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def getExtractors(
     descriptions: Boolean,
     options: Options,
-    callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
+    callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getInfo(
     url: String,
     args: js.Array[String],
-    callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
+    callback: js.Function2[/* err */ Any, /* output */ Info, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def getInfo(
     url: String,
     args: js.Array[String],
     options: Options,
-    callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
+    callback: js.Function2[/* err */ Any, /* output */ Info, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def getInfo(url: String, callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getInfo(url: String, callback: js.Function2[/* err */ Any, /* output */ Info, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getSubs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getSubs(url: String, callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def getSubs(
     url: String,
     options: Options,
-    callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
+    callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getThumbs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getThumbs(url: String, callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def getThumbs(
     url: String,
     options: Options,
-    callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
+    callback: js.Function2[/* err */ Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Info extends StObject {
@@ -150,12 +147,9 @@ object mod {
   @js.native
   trait Youtubedl extends Readable {
     
+    def on(event: info | complete, listener: js.Function1[/* info */ Info, Unit]): this.type = js.native
     @JSName("on")
-    def on_complete(event: complete, listener: js.Function1[/* info */ Info, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_info(event: info, listener: js.Function1[/* info */ Info, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_next(event: next, listener: js.Function1[/* data */ Info | js.Array[Info], Unit]): this.type = js.native
   }

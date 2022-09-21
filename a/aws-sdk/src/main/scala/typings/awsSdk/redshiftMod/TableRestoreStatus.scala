@@ -29,7 +29,7 @@ trait TableRestoreStatus extends StObject {
   /**
     * The time that the table restore request was made, in Universal Coordinated Time (UTC).
     */
-  var RequestTime: js.UndefOr[TStamp] = js.undefined
+  var RequestTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the snapshot that the table is being restored from.
@@ -101,7 +101,7 @@ object TableRestoreStatus {
     
     inline def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
     
-    inline def setRequestTime(value: TStamp): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: js.Date): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
     inline def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     

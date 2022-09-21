@@ -19,7 +19,7 @@ object variablesMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/variables", "LayerVariable")
   @js.native
-  class LayerVariable protected () extends StObject {
+  open class LayerVariable protected () extends StObject {
     /**
       * Construct Variable from a `tf.Tensor`.
       *
@@ -81,7 +81,7 @@ object variablesMod {
     
     var trainable: Boolean = js.native
     
-    /* private */ var trainable_ : js.Any = js.native
+    /* private */ var trainable_ : Any = js.native
     
     /* protected */ val `val`: Variable_[Rank] = js.native
     

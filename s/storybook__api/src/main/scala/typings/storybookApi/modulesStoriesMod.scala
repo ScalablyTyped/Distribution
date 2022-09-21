@@ -1,22 +1,23 @@
 package typings.storybookApi
 
-import typings.std.Error
 import typings.storybookApi.anon.DictparameterName
 import typings.storybookApi.anon.RefId
 import typings.storybookApi.mod.Args
 import typings.storybookApi.mod.ModuleFn
+import typings.storybookApi.refsMod.ComposedRef
 import typings.storybookApi.storiesMod.Group
 import typings.storybookApi.storiesMod.Root
 import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookApi.storiesMod.StoriesRaw
 import typings.storybookApi.storiesMod.Story
+import typings.storybookApi.storiesMod.StoryIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modulesStoriesMod {
   
-  @JSImport("@storybook/api/dist/modules/stories", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/stories", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -34,13 +35,72 @@ object modulesStoriesMod {
   
   type ParameterName = String
   
+  /* Inlined std.Pick<@storybook/api.@storybook/api/dist/ts3.9/lib/stories.Story, 'parameters' | 'initialArgs' | 'argTypes' | 'args'> */
+  trait StoryUpdate extends StObject {
+    
+    var argTypes: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
+      ] = js.undefined
+    
+    var args: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+      ] = js.undefined
+    
+    var initialArgs: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+      ] = js.undefined
+    
+    var parameters: js.UndefOr[DictparameterName] = js.undefined
+  }
+  object StoryUpdate {
+    
+    inline def apply(): StoryUpdate = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StoryUpdate]
+    }
+    
+    extension [Self <: StoryUpdate](x: Self) {
+      
+      inline def setArgTypes(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
+      ): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+      
+      inline def setArgTypesUndefined: Self = StObject.set(x, "argTypes", js.undefined)
+      
+      inline def setArgs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+      ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      
+      inline def setInitialArgs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+      ): Self = StObject.set(x, "initialArgs", value.asInstanceOf[js.Any])
+      
+      inline def setInitialArgsUndefined: Self = StObject.set(x, "initialArgs", js.undefined)
+      
+      inline def setParameters(value: DictparameterName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    }
+  }
+  
   @js.native
   trait SubAPI extends StObject {
     
+    def fetchStoryList(): js.Promise[Unit] = js.native
+    
     def findLeafStoryId(
       StoriesHash: StoriesHash,
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
-    ): js.Any = js.native
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
+    ): Any = js.native
+    
+    def findSiblingStoryId(
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
+      hash: StoriesHash,
+      direction: Direction,
+      toSiblingGroup: Boolean
+    ): Any = js.native
     
     def getCurrentParameter[S](): S = js.native
     def getCurrentParameter[S](parameterName: ParameterName): S = js.native
@@ -48,22 +108,30 @@ object modulesStoriesMod {
     def getCurrentStoryData(): Story | Group = js.native
     
     def getData(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     ): Story | Group = js.native
     def getData(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any,
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
       refId: String
     ): Story | Group = js.native
     
     def getParameters(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
-    ): js.UndefOr[DictparameterName | js.Any] = js.native
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
+    ): js.UndefOr[DictparameterName | Any] = js.native
     def getParameters(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any,
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
       parameterName: ParameterName
-    ): js.UndefOr[DictparameterName | js.Any] = js.native
-    def getParameters(storyId: RefId): js.UndefOr[DictparameterName | js.Any] = js.native
-    def getParameters(storyId: RefId, parameterName: ParameterName): js.UndefOr[DictparameterName | js.Any] = js.native
+    ): js.UndefOr[DictparameterName | Any] = js.native
+    def getParameters(storyId: RefId): js.UndefOr[DictparameterName | Any] = js.native
+    def getParameters(storyId: RefId, parameterName: ParameterName): js.UndefOr[DictparameterName | Any] = js.native
+    
+    def isPrepared(
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
+    ): Boolean = js.native
+    def isPrepared(
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
+      refId: String
+    ): Boolean = js.native
     
     def jumpToComponent(direction: Direction): Unit = js.native
     
@@ -73,10 +141,10 @@ object modulesStoriesMod {
     def resetStoryArgs(story: Story, argNames: js.Array[String]): Unit = js.native
     
     def resolveStory(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     ): Story | Group | Root = js.native
     def resolveStory(
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any,
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
       refsId: String
     ): Story | Group | Root = js.native
     
@@ -88,9 +156,21 @@ object modulesStoriesMod {
     def selectStory(kindOrId: String, story: Unit, obj: typings.storybookApi.anon.ViewMode): Unit = js.native
     
     def setStories(stories: StoriesRaw): js.Promise[Unit] = js.native
-    def setStories(stories: StoriesRaw, failed: Error): js.Promise[Unit] = js.native
+    def setStories(stories: StoriesRaw, failed: js.Error): js.Promise[Unit] = js.native
+    
+    def setStoryList(storyList: StoryIndex): js.Promise[Unit] = js.native
     
     var storyId: js.Function2[/* kind */ String, /* name */ String, String] = js.native
+    
+    def updateStory(
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
+      update: StoryUpdate
+    ): js.Promise[Unit] = js.native
+    def updateStory(
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
+      update: StoryUpdate,
+      ref: ComposedRef
+    ): js.Promise[Unit] = js.native
     
     def updateStoryArgs(story: Story, newArgs: Args): Unit = js.native
   }
@@ -99,11 +179,11 @@ object modulesStoriesMod {
     
     var storiesConfigured: Boolean
     
-    var storiesFailed: js.UndefOr[Error] = js.undefined
+    var storiesFailed: js.UndefOr[js.Error] = js.undefined
     
     var storiesHash: StoriesHash
     
-    var storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+    var storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     
     var viewMode: ViewMode
   }
@@ -112,7 +192,7 @@ object modulesStoriesMod {
     inline def apply(
       storiesConfigured: Boolean,
       storiesHash: StoriesHash,
-      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+      storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     ): SubState = {
       val __obj = js.Dynamic.literal(storiesConfigured = storiesConfigured.asInstanceOf[js.Any], storiesHash = storiesHash.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
@@ -122,14 +202,14 @@ object modulesStoriesMod {
       
       inline def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
       
-      inline def setStoriesFailed(value: Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
+      inline def setStoriesFailed(value: js.Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
       
       inline def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
       
       inline def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
       
       inline def setStoryId(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
       ): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
       inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.vegaLite
 
 import typings.vegaLite.anon.ContinuousAxisChannelDef
-import typings.vegaLite.anon.`4`
+import typings.vegaLite.anon.`6`
 import typings.vegaLite.channeldefMod.ColorDef
 import typings.vegaLite.channeldefMod.Field
 import typings.vegaLite.channeldefMod.FieldDefWithoutScale
@@ -21,6 +21,8 @@ import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
 import typings.vegaLite.srcConfigMod.Config
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaLite.vegaLiteStrings.errorbar
 import typings.vegaLite.vegaLiteStrings.rule
@@ -48,13 +50,16 @@ object errorbarMod {
   @js.native
   val errorBarNormalizer: CompositeMarkNormalizer[errorbar] = js.native
   
-  inline def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */](
-    spec: GenericUnitSpec[ErrorEncoding[String], M | MD],
+  inline def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */](
+    spec: GenericUnitSpec[ErrorEncoding[String], M | MD, SelectionParameter[SelectionType]],
     compositeMark: M,
     config: Config[ExprRef | SignalRef]
   ): ContinuousAxisChannelDef[MD, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarParams")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   
-  inline def normalizeErrorBar(spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef], hasConfig: NormalizerParams): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
+  inline def normalizeErrorBar(
+    spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef, SelectionParameter[SelectionType]],
+    hasConfig: NormalizerParams
+  ): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
   
   type ErrorBar = errorbar
   
@@ -71,7 +76,7 @@ object errorbarMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ trait ErrorBarConfig extends StObject {
+  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>>[P]} */ trait ErrorBarConfig extends StObject {
     
     /**
       * The center of the errorbar. Available options include:
@@ -149,7 +154,7 @@ object errorbarMod {
     }
   }
   
-  type ErrorBarDef = GenericCompositeMarkDef[ErrorBar] & ErrorBarConfig & `4`
+  type ErrorBarDef = GenericCompositeMarkDef[ErrorBar] & ErrorBarConfig & `6`
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.ci
@@ -233,7 +238,7 @@ object errorbarMod {
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value :_*))
+      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value*))
       
       inline def setOpacity(value: NumericMarkPropDef[F]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

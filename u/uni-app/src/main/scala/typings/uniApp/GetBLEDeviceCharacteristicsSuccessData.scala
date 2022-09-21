@@ -9,7 +9,7 @@ trait GetBLEDeviceCharacteristicsSuccessData extends StObject {
   /**
     * 该特征值支持的操作类型
     */
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
   
   /**
     * 蓝牙设备服务的 uuid
@@ -25,7 +25,7 @@ object GetBLEDeviceCharacteristicsSuccessData {
   
   extension [Self <: GetBLEDeviceCharacteristicsSuccessData](x: Self) {
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

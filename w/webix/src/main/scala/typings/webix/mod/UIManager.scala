@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UIManager extends StObject {
   
   def addHotKey(key: String, handler: WebixCallback): Unit = js.native
-  def addHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
+  def addHotKey(key: String, handler: WebixCallback, obj: Any): Unit = js.native
   
   def applyChanges(): Unit = js.native
   
@@ -21,27 +21,27 @@ trait UIManager extends StObject {
   
   def getFocus(): baseview = js.native
   
-  def getNext(view: js.Any): js.Any = js.native
+  def getNext(view: Any): Any = js.native
   
-  def getPrev(view: js.Any): js.Any = js.native
+  def getPrev(view: Any): Any = js.native
   
-  def getState(id: String, children: Boolean): js.Any = js.native
+  def getState(id: String, children: Boolean): Any = js.native
   
-  def getTop(id: String): js.Any = js.native
-  def getTop(id: Double): js.Any = js.native
+  def getTop(id: String): Any = js.native
+  def getTop(id: Double): Any = js.native
   
   def hasFocus(id: String): Boolean = js.native
   def hasFocus(id: Double): Boolean = js.native
   
   def removeHotKey(key: String): Unit = js.native
-  def removeHotKey(key: String, handler: Unit, obj: js.Any): Unit = js.native
+  def removeHotKey(key: String, handler: Unit, obj: Any): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback): Unit = js.native
-  def removeHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
+  def removeHotKey(key: String, handler: WebixCallback, obj: Any): Unit = js.native
   
   def setFocus(id: String): Unit = js.native
   def setFocus(id: Double): Unit = js.native
   
-  def setState(state: js.Any): Unit = js.native
+  def setState(state: Any): Unit = js.native
 }
 object UIManager {
   

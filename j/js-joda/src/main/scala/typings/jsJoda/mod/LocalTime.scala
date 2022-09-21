@@ -6,15 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "LocalTime")
 @js.native
-/* private */ class LocalTime () extends Temporal {
+/* private */ open class LocalTime () extends Temporal {
   
   def adjustInto(temporal: TemporalAdjuster): Temporal = js.native
   
   def atDate(date: LocalDate): LocalDateTime = js.native
   
   def compareTo(other: LocalTime): Double = js.native
-  
-  def equals(other: js.Any): Boolean = js.native
   
   def format(formatter: DateTimeFormatter): String = js.native
   

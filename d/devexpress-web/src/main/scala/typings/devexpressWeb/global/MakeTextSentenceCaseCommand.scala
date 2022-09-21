@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MakeTextSentenceCaseCommand")
 @js.native
-class MakeTextSentenceCaseCommand ()
+open class MakeTextSentenceCaseCommand ()
   extends StObject
      with typings.devexpressWeb.MakeTextSentenceCaseCommand {
   

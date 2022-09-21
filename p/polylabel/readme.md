@@ -10,10 +10,10 @@ A JS library for finding optimal label position inside a polygon
 | ------------------ | :-------------: |
 | Full name          | polylabel |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 2575263 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 464028.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/polylabel)

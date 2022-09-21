@@ -23,7 +23,7 @@ object AgentJobDefaultsResult {
     
     inline def setCategories(value: js.Array[AgentJobCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: AgentJobCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: AgentJobCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }

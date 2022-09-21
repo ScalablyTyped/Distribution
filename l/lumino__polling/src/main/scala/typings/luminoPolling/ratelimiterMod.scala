@@ -15,7 +15,7 @@ object ratelimiterMod {
   
   @JSImport("@lumino/polling/types/ratelimiter", "Debouncer")
   @js.native
-  class Debouncer[T, U] protected () extends RateLimiter[T, U] {
+  open class Debouncer[T, U, V /* <: js.Array[Any] */] protected () extends RateLimiter[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -23,15 +23,15 @@ object ratelimiterMod {
       *
       * @param limit - The rate limit; defaults to 500ms.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], limit: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], limit: Double) = this()
   }
   
   @JSImport("@lumino/polling/types/ratelimiter", "RateLimiter")
   @js.native
-  abstract class RateLimiter[T, U] protected ()
+  abstract class RateLimiter[T, U, V /* <: js.Array[Any] */] protected ()
     extends StObject
-       with IRateLimiter[T, U] {
+       with IRateLimiter[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -39,8 +39,13 @@ object ratelimiterMod {
       *
       * @param limit - The rate limit; defaults to 500ms.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], limit: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], limit: Double) = this()
+    
+    /**
+      * Arguments for the underlying function.
+      */
+    /* protected */ var args: js.UndefOr[V] = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -60,7 +65,9 @@ object ratelimiterMod {
       * Invoke the rate limited function.
       */
     /* CompleteClass */
-    override def invoke(): js.Promise[T] = js.native
+    override def invoke(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type V is not an array type */ args: V
+    ): js.Promise[T] = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -96,7 +103,7 @@ object ratelimiterMod {
   
   @JSImport("@lumino/polling/types/ratelimiter", "Throttler")
   @js.native
-  class Throttler[T, U] protected () extends RateLimiter[T, U] {
+  open class Throttler[T, U, V /* <: js.Array[Any] */] protected () extends RateLimiter[T, U, V] {
     /**
       * Instantiate a throttler.
       *
@@ -107,11 +114,13 @@ object ratelimiterMod {
       * #### Notes
       * The `edge` defaults to `leading`; the `limit` defaults to `500`.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], options: Double) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], options: IOptions) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], options: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], options: IOptions) = this()
     
-    /* private */ var _interval: js.Any = js.native
+    /* private */ var _interval: Any = js.native
+    
+    /* private */ var _trailing: Any = js.native
   }
   object Throttler {
     

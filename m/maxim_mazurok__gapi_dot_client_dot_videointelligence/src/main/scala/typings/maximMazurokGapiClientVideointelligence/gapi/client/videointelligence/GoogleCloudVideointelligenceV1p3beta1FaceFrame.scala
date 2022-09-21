@@ -25,7 +25,7 @@ object GoogleCloudVideointelligenceV1p3beta1FaceFrame {
     
     inline def setNormalizedBoundingBoxesUndefined: Self = StObject.set(x, "normalizedBoundingBoxes", js.undefined)
     
-    inline def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingBox*): Self = StObject.set(x, "normalizedBoundingBoxes", js.Array(value :_*))
+    inline def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingBox*): Self = StObject.set(x, "normalizedBoundingBoxes", js.Array(value*))
     
     inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     

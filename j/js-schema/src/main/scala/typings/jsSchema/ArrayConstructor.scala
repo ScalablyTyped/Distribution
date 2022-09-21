@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ArrayConstructor extends StObject {
   
-  def like(arr: js.Array[js.Any]): ArrayConstructor = js.native
+  def like(arr: js.Array[Any]): ArrayConstructor = js.native
   
-  def of(length: Double, pattern: js.Any): ArrayConstructor = js.native
-  def of(minLength: Double, maxLength: Double, pattern: js.Any): ArrayConstructor = js.native
-  def of(pattern: js.Any): ArrayConstructor = js.native
+  def of(length: Double, pattern: Any): ArrayConstructor = js.native
+  def of(minLength: Double, maxLength: Double, pattern: Any): ArrayConstructor = js.native
+  def of(pattern: Any): ArrayConstructor = js.native
 }

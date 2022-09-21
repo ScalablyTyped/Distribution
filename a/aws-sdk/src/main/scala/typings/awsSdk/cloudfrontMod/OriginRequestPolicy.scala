@@ -14,7 +14,7 @@ trait OriginRequestPolicy extends StObject {
   /**
     * The date and time when the origin request policy was last modified.
     */
-  var LastModifiedTime: timestamp
+  var LastModifiedTime: js.Date
   
   /**
     * The origin request policy configuration.
@@ -23,7 +23,7 @@ trait OriginRequestPolicy extends StObject {
 }
 object OriginRequestPolicy {
   
-  inline def apply(Id: String, LastModifiedTime: timestamp, OriginRequestPolicyConfig: OriginRequestPolicyConfig): OriginRequestPolicy = {
+  inline def apply(Id: String, LastModifiedTime: js.Date, OriginRequestPolicyConfig: OriginRequestPolicyConfig): OriginRequestPolicy = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], OriginRequestPolicyConfig = OriginRequestPolicyConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicy]
   }
@@ -32,7 +32,7 @@ object OriginRequestPolicy {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
   }

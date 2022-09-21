@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("popup-window", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PopupWindow {
     def this(url: String) = this()

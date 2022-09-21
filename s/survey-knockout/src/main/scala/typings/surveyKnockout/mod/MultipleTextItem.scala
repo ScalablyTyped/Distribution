@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MultipleTextItem")
 @js.native
-class MultipleTextItem () extends MultipleTextItemModel {
-  def this(name: js.Any) = this()
-  def this(name: js.Any, title: String) = this()
+open class MultipleTextItem () extends MultipleTextItemModel {
+  def this(name: Any) = this()
+  def this(name: Any, title: String) = this()
   def this(name: Unit, title: String) = this()
 }

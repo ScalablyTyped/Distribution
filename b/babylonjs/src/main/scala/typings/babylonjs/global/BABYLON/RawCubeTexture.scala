@@ -1,14 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RawCubeTexture")
 @js.native
-class RawCubeTexture protected ()
+open class RawCubeTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RawCubeTexture {
   /**
@@ -25,7 +24,7 @@ class RawCubeTexture protected ()
     */
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
-    data: Nullable[js.Array[ArrayBufferView]],
+    data: Nullable[js.Array[js.typedarray.ArrayBufferView]],
     size: Double,
     format: js.UndefOr[Double],
     `type`: js.UndefOr[Double],
@@ -40,20 +39,4 @@ class RawCubeTexture protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
-}
-/* static members */
-object RawCubeTexture {
-  
-  @JSGlobal("BABYLON.RawCubeTexture")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /** @hidden */
-  inline def _UpdateRGBDAsync(
-    internalTexture: typings.babylonjs.BABYLON.InternalTexture,
-    data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: Nullable[typings.babylonjs.BABYLON.SphericalPolynomial],
-    lodScale: Double,
-    lodOffset: Double
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

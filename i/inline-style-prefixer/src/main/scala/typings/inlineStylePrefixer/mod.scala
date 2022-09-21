@@ -19,13 +19,13 @@ object mod {
   
   type Plugin = js.Function4[
     /* property */ String, 
-    /* value */ Double | String | (js.Array[Double | String]) | js.Any, 
-    /* style */ js.Any, 
+    /* value */ Double | String | (js.Array[Double | String]) | Any, 
+    /* style */ Any, 
     /* prefixMap */ js.UndefOr[Record[String, js.Array[String]]], 
-    js.UndefOr[Double | String | (js.Array[Double | String]) | js.Any]
+    js.UndefOr[Double | String | (js.Array[Double | String]) | Any]
   ]
   
-  type Prefix_ = js.Function1[/* style */ js.Any, js.Any]
+  type Prefix_ = js.Function1[/* style */ Any, Any]
   
   trait StaticData extends StObject {
     
@@ -44,7 +44,7 @@ object mod {
       
       inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPrefixMap(value: Record[String, js.Array[String]]): Self = StObject.set(x, "prefixMap", value.asInstanceOf[js.Any])
     }

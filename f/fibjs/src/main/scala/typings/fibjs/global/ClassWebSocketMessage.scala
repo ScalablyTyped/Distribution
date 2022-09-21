@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassWebSocketMessage ()
+open class ClassWebSocketMessage ()
   extends StObject
      with typings.fibjs.ClassWebSocketMessage {
   def this(`type`: Double) = this()

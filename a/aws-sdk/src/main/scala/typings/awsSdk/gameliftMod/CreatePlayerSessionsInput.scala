@@ -12,7 +12,7 @@ trait CreatePlayerSessionsInput extends StObject {
   var GameSessionId: ArnStringModel
   
   /**
-    * Map of string pairs, each specifying a player ID and a set of developer-defined information related to the player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game. Player data strings for player IDs not included in the PlayerIds parameter are ignored. 
+    * Map of string pairs, each specifying a player ID and a set of developer-defined information related to the player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game. Any player data strings for player IDs that are not included in the PlayerIds parameter are ignored. 
     */
   var PlayerDataMap: js.UndefOr[typings.awsSdk.gameliftMod.PlayerDataMap] = js.undefined
   
@@ -38,6 +38,6 @@ object CreatePlayerSessionsInput {
     
     inline def setPlayerIds(value: PlayerIdList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
     
-    inline def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
+    inline def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value*))
   }
 }

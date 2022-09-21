@@ -29,7 +29,7 @@ object ListAccessPointsResult {
     
     inline def setAccessPointListUndefined: Self = StObject.set(x, "AccessPointList", js.undefined)
     
-    inline def setAccessPointListVarargs(value: AccessPoint*): Self = StObject.set(x, "AccessPointList", js.Array(value :_*))
+    inline def setAccessPointListVarargs(value: AccessPoint*): Self = StObject.set(x, "AccessPointList", js.Array(value*))
     
     inline def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

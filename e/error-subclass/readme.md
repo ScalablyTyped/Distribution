@@ -10,10 +10,10 @@ Extendable Error Class
 | ------------------ | :-------------: |
 | Full name          | error-subclass |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 10562 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1055.3333333333333 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/spudly/error-subclass#readme)

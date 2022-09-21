@@ -10,10 +10,10 @@ Topology-preserving simplification and filtering for TopoJSON.
 | ------------------ | :-------------: |
 | Full name          | topojson-simplify |
 | Keywords           | topojson, geojson, simplification |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 3292279 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 118792.66666666667 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/topojson/topojson-simplify)

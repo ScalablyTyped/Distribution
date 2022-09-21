@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLCandidate extends StObject {
   
   /**
-    * The candidate name.
+    * The name of the candidate.
     */
   var CandidateName: typings.awsSdk.sagemakerMod.CandidateName
+  
+  /**
+    * The properties of an AutoML candidate job.
+    */
+  var CandidateProperties: js.UndefOr[typings.awsSdk.sagemakerMod.CandidateProperties] = js.undefined
   
   /**
     * The candidate's status.
@@ -17,19 +22,19 @@ trait AutoMLCandidate extends StObject {
   var CandidateStatus: typings.awsSdk.sagemakerMod.CandidateStatus
   
   /**
-    * The candidate's steps.
+    * Information about the candidate's steps.
     */
   var CandidateSteps: typings.awsSdk.sagemakerMod.CandidateSteps
   
   /**
     * The creation time.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The end time.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The failure reason.
@@ -39,17 +44,17 @@ trait AutoMLCandidate extends StObject {
   var FinalAutoMLJobObjectiveMetric: js.UndefOr[typings.awsSdk.sagemakerMod.FinalAutoMLJobObjectiveMetric] = js.undefined
   
   /**
-    * The inference containers.
+    * Information about the inference container definitions.
     */
   var InferenceContainers: js.UndefOr[AutoMLContainerDefinitions] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
   
   /**
-    * The objective status.
+    * The objective's status.
     */
   var ObjectiveStatus: typings.awsSdk.sagemakerMod.ObjectiveStatus
 }
@@ -59,8 +64,8 @@ object AutoMLCandidate {
     CandidateName: CandidateName,
     CandidateStatus: CandidateStatus,
     CandidateSteps: CandidateSteps,
-    CreationTime: Timestamp,
-    LastModifiedTime: Timestamp,
+    CreationTime: js.Date,
+    LastModifiedTime: js.Date,
     ObjectiveStatus: ObjectiveStatus
   ): AutoMLCandidate = {
     val __obj = js.Dynamic.literal(CandidateName = CandidateName.asInstanceOf[js.Any], CandidateStatus = CandidateStatus.asInstanceOf[js.Any], CandidateSteps = CandidateSteps.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], ObjectiveStatus = ObjectiveStatus.asInstanceOf[js.Any])
@@ -71,15 +76,19 @@ object AutoMLCandidate {
     
     inline def setCandidateName(value: CandidateName): Self = StObject.set(x, "CandidateName", value.asInstanceOf[js.Any])
     
+    inline def setCandidateProperties(value: CandidateProperties): Self = StObject.set(x, "CandidateProperties", value.asInstanceOf[js.Any])
+    
+    inline def setCandidatePropertiesUndefined: Self = StObject.set(x, "CandidateProperties", js.undefined)
+    
     inline def setCandidateStatus(value: CandidateStatus): Self = StObject.set(x, "CandidateStatus", value.asInstanceOf[js.Any])
     
     inline def setCandidateSteps(value: CandidateSteps): Self = StObject.set(x, "CandidateSteps", value.asInstanceOf[js.Any])
     
-    inline def setCandidateStepsVarargs(value: AutoMLCandidateStep*): Self = StObject.set(x, "CandidateSteps", js.Array(value :_*))
+    inline def setCandidateStepsVarargs(value: AutoMLCandidateStep*): Self = StObject.set(x, "CandidateSteps", js.Array(value*))
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -95,9 +104,9 @@ object AutoMLCandidate {
     
     inline def setInferenceContainersUndefined: Self = StObject.set(x, "InferenceContainers", js.undefined)
     
-    inline def setInferenceContainersVarargs(value: AutoMLContainerDefinition*): Self = StObject.set(x, "InferenceContainers", js.Array(value :_*))
+    inline def setInferenceContainersVarargs(value: AutoMLContainerDefinition*): Self = StObject.set(x, "InferenceContainers", js.Array(value*))
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setObjectiveStatus(value: ObjectiveStatus): Self = StObject.set(x, "ObjectiveStatus", value.asInstanceOf[js.Any])
   }

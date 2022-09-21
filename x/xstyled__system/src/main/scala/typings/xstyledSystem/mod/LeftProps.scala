@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.Left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LeftProps[TLength] extends StObject {
   
-  val left: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val left: js.UndefOr[ResponsiveValue[Left[TLength]]] = js.undefined
 }
 object LeftProps {
   
@@ -21,16 +18,10 @@ object LeftProps {
   
   extension [Self <: LeftProps[?], TLength](x: Self & LeftProps[TLength]) {
     
-    inline def setLeft(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: ResponsiveValue[Left[TLength]]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setLeftVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: Left[TLength]*): Self = StObject.set(x, "left", js.Array(value*))
   }
 }

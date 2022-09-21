@@ -14,6 +14,7 @@ import typings.awsSdk.remoteCredentialsMod.RemoteCredentialsOptions
 import typings.awsSdk.samlCredentialsMod.SAMLCredentialsParams
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.awsSdk.sharedIniFileCredentialsMod.SharedIniFileCredentialsOptions
+import typings.awsSdk.ssoCredentialsMod.SsoCredentialsOptions
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
 import org.scalablytyped.runtime.StObject
@@ -27,7 +28,7 @@ object coreMod {
   /**
     * Creates a new temporary credentials object.
     */
-  class ChainableTemporaryCredentials ()
+  open class ChainableTemporaryCredentials ()
     extends typings.awsSdk.chainableTemporaryCredentialsMod.ChainableTemporaryCredentials {
     def this(options: ChainableTemporaryCredentialsOptions) = this()
   }
@@ -37,7 +38,7 @@ object coreMod {
   /**
     * Creates a new credentials object.
     */
-  class CognitoIdentityCredentials ()
+  open class CognitoIdentityCredentials ()
     extends typings.awsSdk.cognitoIdentityCredentialsMod.CognitoIdentityCredentials {
     /**
       * Creates a new credentials object with optional configuration.
@@ -52,7 +53,7 @@ object coreMod {
     * Creates a new configuration object.
     * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
     */
-  class Config ()
+  open class Config ()
     extends typings.awsSdk.configMod.Config {
     def this(options: typings.awsSdk.configBaseMod.ConfigurationOptions & ConfigurationServicePlaceholders & APIVersions) = this()
   }
@@ -67,7 +68,7 @@ object coreMod {
   /**
     * Creates a new CredentialProviderChain with a default set of providers specified by defaultProviders.
     */
-  class CredentialProviderChain ()
+  open class CredentialProviderChain ()
     extends typings.awsSdk.credentialProviderChainMod.CredentialProviderChain {
     def this(providers: js.Array[provider]) = this()
   }
@@ -86,7 +87,7 @@ object coreMod {
   
   @JSImport("aws-sdk/lib/core", "Credentials")
   @js.native
-  class Credentials protected ()
+  open class Credentials protected ()
     extends typings.awsSdk.credentialsMod.Credentials {
     /**
       * Creates a Credentials object with a given set of credential information as an options hash.
@@ -96,7 +97,7 @@ object coreMod {
     def this(options: CredentialsOptions) = this()
     /**
       * Creates a Credentials object with a given set of credential information as positional arguments.
-      *          *
+      *
       * @param {string} accessKeyId - The AWS access key ID.
       * @param {string} secretAccessKey - The AWS secret access key.
       * @param {string} sessionToken - The optional AWS session token.
@@ -120,10 +121,10 @@ object coreMod {
   @JSImport("aws-sdk/lib/core", "EC2MetadataCredentials")
   @js.native
   /**
-  		 * Creates credentials from the metadata service on an EC2 instance.
-  		 * @param {object} options - Override the default (1s) timeout period.
-  		 */
-  class EC2MetadataCredentials ()
+    * Creates credentials from the metadata service on an EC2 instance.
+    * @param {object} options - Override the default (1s) timeout period.
+    */
+  open class EC2MetadataCredentials ()
     extends typings.awsSdk.ec2MetadataCredentialsMod.EC2MetadataCredentials {
     def this(options: EC2MetadataCredentialsOptions) = this()
   }
@@ -134,14 +135,14 @@ object coreMod {
     * Represents credentials received.
     * @param {object} options - Override the default (1s) timeout period.
     */
-  class ECSCredentials ()
+  open class ECSCredentials ()
     extends typings.awsSdk.ecsCredentialsMod.ECSCredentials {
     def this(options: ECSCredentialsOptions) = this()
   }
   
   @JSImport("aws-sdk/lib/core", "Endpoint")
   @js.native
-  class Endpoint protected ()
+  open class Endpoint protected ()
     extends typings.awsSdk.endpointMod.Endpoint {
     /**
       * Constructs a new endpoint given an endpoint URL.
@@ -151,7 +152,7 @@ object coreMod {
   
   @JSImport("aws-sdk/lib/core", "EnvironmentCredentials")
   @js.native
-  class EnvironmentCredentials protected ()
+  open class EnvironmentCredentials protected ()
     extends typings.awsSdk.environmentCredentialsMod.EnvironmentCredentials {
     /**
       * Creates a new EnvironmentCredentials class with a given variable prefix envPrefix.
@@ -184,7 +185,7 @@ object coreMod {
   
   @JSImport("aws-sdk/lib/core", "FileSystemCredentials")
   @js.native
-  class FileSystemCredentials protected ()
+  open class FileSystemCredentials protected ()
     extends typings.awsSdk.fileSystemCredentialsMod.FileSystemCredentials {
     /**
       * Creates a new FileSystemCredentials object from a filename.
@@ -195,7 +196,7 @@ object coreMod {
   
   @JSImport("aws-sdk/lib/core", "HttpRequest")
   @js.native
-  class HttpRequest protected ()
+  open class HttpRequest protected ()
     extends typings.awsSdk.httpRequestMod.HttpRequest {
     /**
       * Constructs HttpRequest object with provided endpoint and region
@@ -205,12 +206,12 @@ object coreMod {
   
   @JSImport("aws-sdk/lib/core", "HttpResponse")
   @js.native
-  class HttpResponse ()
+  open class HttpResponse ()
     extends typings.awsSdk.httpResponseMod.HttpResponse
   
   @JSImport("aws-sdk/lib/core", "IniLoader")
   @js.native
-  class IniLoader ()
+  open class IniLoader ()
     extends typings.awsSdk.iniLoaderMod.IniLoader
   
   @JSImport("aws-sdk/lib/core", "MetadataService")
@@ -218,7 +219,7 @@ object coreMod {
   /**
     * Creates a new MetadataService object with a given set of options.
     */
-  class MetadataService ()
+  open class MetadataService ()
     extends typings.awsSdk.metadataServiceMod.MetadataService {
     def this(options: MetadataServiceOptions) = this()
   }
@@ -243,7 +244,7 @@ object coreMod {
   /**
     * Creates a new ProcessCredentials object.
     */
-  class ProcessCredentials ()
+  open class ProcessCredentials ()
     extends typings.awsSdk.processCredentialsMod.ProcessCredentials {
     def this(options: ProcessCredentialsOptions) = this()
   }
@@ -254,14 +255,14 @@ object coreMod {
     * Represents credentials received.
     * @param {object} options - Override the default (1s) timeout period.
     */
-  class RemoteCredentials ()
+  open class RemoteCredentials ()
     extends typings.awsSdk.remoteCredentialsMod.RemoteCredentials {
     def this(options: RemoteCredentialsOptions) = this()
   }
   
   @JSImport("aws-sdk/lib/core", "Request")
   @js.native
-  class Request[D, E] protected ()
+  open class Request[D, E] protected ()
     extends typings.awsSdk.requestMod.Request[D, E] {
     /**
       * Creates a request for an operation on a given service with a set of input parameters.
@@ -271,17 +272,17 @@ object coreMod {
       * @param {object} params - Parameters to send to the operation.
       */
     def this(service: typings.awsSdk.serviceMod.Service, operation: String) = this()
-    def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: js.Any) = this()
+    def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: Any) = this()
   }
   
   @JSImport("aws-sdk/lib/core", "Response")
   @js.native
-  class Response[D, E] ()
+  open class Response[D, E] ()
     extends typings.awsSdk.responseMod.Response[D, E]
   
   @JSImport("aws-sdk/lib/core", "SAMLCredentials")
   @js.native
-  class SAMLCredentials protected ()
+  open class SAMLCredentials protected ()
     extends typings.awsSdk.samlCredentialsMod.SAMLCredentials {
     /**
     		 * Creates a new credentials object.
@@ -295,7 +296,7 @@ object coreMod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class Service ()
+  open class Service ()
     extends typings.awsSdk.serviceMod.Service {
     def this(config: ServiceConfigurationOptions) = this()
   }
@@ -305,9 +306,19 @@ object coreMod {
   /**
     * Creates a new SharedIniFileCredentials object.
     */
-  class SharedIniFileCredentials ()
+  open class SharedIniFileCredentials ()
     extends typings.awsSdk.sharedIniFileCredentialsMod.SharedIniFileCredentials {
     def this(options: SharedIniFileCredentialsOptions) = this()
+  }
+  
+  @JSImport("aws-sdk/lib/core", "SsoCredentials")
+  @js.native
+  /**
+    * Creates a new SsoCredentials object.
+    */
+  open class SsoCredentials ()
+    extends typings.awsSdk.ssoCredentialsMod.SsoCredentials {
+    def this(options: SsoCredentialsOptions) = this()
   }
   
   @JSImport("aws-sdk/lib/core", "TemporaryCredentials")
@@ -316,7 +327,7 @@ object coreMod {
     * Creates a new temporary credentials object.
     * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
     */
-  class TemporaryCredentials ()
+  open class TemporaryCredentials ()
     extends typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials {
     /**
       * Creates a new temporary credentials object.
@@ -333,7 +344,7 @@ object coreMod {
     * Creates a new credentials object with optional configuraion.
     * @param {Object} clientConfig - a map of configuration options to pass to the underlying STS client.
     */
-  class TokenFileWebIdentityCredentials ()
+  open class TokenFileWebIdentityCredentials ()
     extends typings.awsSdk.tokenFileWebIdentityCredentialsMod.TokenFileWebIdentityCredentials {
     def this(clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
   }
@@ -344,7 +355,7 @@ object coreMod {
     * Creates a new credentials object.
     * @param {string} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
     */
-  class WebIdentityCredentials ()
+  open class WebIdentityCredentials ()
     extends typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials {
     /**
       * Creates a new credentials object with optional configuraion.

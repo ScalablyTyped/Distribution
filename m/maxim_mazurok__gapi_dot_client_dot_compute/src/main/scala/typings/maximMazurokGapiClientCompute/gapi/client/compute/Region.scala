@@ -33,6 +33,9 @@ trait Region extends StObject {
   /** [Output Only] Status of the region, either UP or DOWN. */
   var status: js.UndefOr[String] = js.undefined
   
+  /** [Output Only] Reserved for future use. */
+  var supportsPzs: js.UndefOr[Boolean] = js.undefined
+  
   /** [Output Only] A list of zones available in this region, in the form of resource URLs. */
   var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -73,7 +76,7 @@ object Region {
     
     inline def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
-    inline def setQuotasVarargs(value: Quota*): Self = StObject.set(x, "quotas", js.Array(value :_*))
+    inline def setQuotasVarargs(value: Quota*): Self = StObject.set(x, "quotas", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
@@ -83,10 +86,14 @@ object Region {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
+    inline def setSupportsPzs(value: Boolean): Self = StObject.set(x, "supportsPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsPzsUndefined: Self = StObject.set(x, "supportsPzs", js.undefined)
+    
     inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

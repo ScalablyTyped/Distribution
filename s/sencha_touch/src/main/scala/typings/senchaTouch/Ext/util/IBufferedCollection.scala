@@ -21,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The item to add.
     * @returns Object The item added.
     */
-  var add: js.UndefOr[
-    js.Function2[/* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Appends an after event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -33,10 +31,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var addAfterListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -44,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Adds all elements of an Array or an Object to the collection
     * @param addItems Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if {@link} Ext.util.MixedCollection.allowFunctions allowFunctions} has been set to true.
     */
-  var addAll: js.UndefOr[js.Function1[/* addItems */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addAll: js.UndefOr[js.Function1[/* addItems */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Appends a before event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -54,10 +52,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var addBeforeListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -65,18 +63,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true or the first event name string if multiple event names are being passed as separate parameters.
     */
-  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method adds a filter
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     */
-  var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method adds all the filters in a passed array
     * @param filters Object
     * @returns Object
     */
-  var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Appends an event handler to this object
     * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -87,10 +85,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var addListener: js.UndefOr[
     js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* order */ js.UndefOr[String], 
       Unit
     ]
@@ -105,11 +103,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var addManagedListener: js.UndefOr[
     js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -119,7 +117,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
     */
   var addSorter: js.UndefOr[
-    js.Function2[/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String], Unit]
+    js.Function2[/* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[String], Unit]
   ] = js.undefined
   
   /** [Method] This method adds all the sorters in a passed array
@@ -134,25 +132,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var all: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var bubbleEvents: js.UndefOr[js.Any] = js.undefined
+  var bubbleEvents: js.UndefOr[Any] = js.undefined
   
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  var callOverridden: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var callOverridden: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  var callParent: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var callParent: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  var callSuper: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var callSuper: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Removes all items from the collection  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -164,7 +162,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The Object to look for in the collection.
     * @returns Boolean true if the collection contains the Object as an item.
     */
-  var contains: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var contains: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns true if the collection contains the passed Object as a key
     * @param key String The key to look for in the collection.
@@ -173,7 +171,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   
   /** [Property] (Object) */
-  var currentSortFn: js.UndefOr[js.Any] = js.undefined
+  var currentSortFn: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var defaultSortDirection: js.UndefOr[String] = js.undefined
@@ -191,18 +189,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
-  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
     * @param events String/String[] The event name to bubble, or an Array of event names.
     */
-  var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method will sort a collection based on the currently configured sorters
     * @param property Object
@@ -213,10 +211,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var filter: js.UndefOr[
     js.Function4[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[js.Any], 
-      /* anyMatch */ js.UndefOr[js.Any], 
-      /* caseSensitive */ js.UndefOr[js.Any], 
+      /* property */ js.UndefOr[Any], 
+      /* value */ js.UndefOr[Any], 
+      /* anyMatch */ js.UndefOr[Any], 
+      /* caseSensitive */ js.UndefOr[Any], 
       Array
     ]
   ] = js.undefined
@@ -227,7 +225,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   var filterBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
+    js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IMixedCollection]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -244,9 +242,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     * @returns Object The first item in the collection which returned true from the selection function.
     */
-  var findBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var findBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Find the index of the first matching object in this collection by a function
     * @param fn Function The function to be called.
@@ -256,8 +252,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var findIndexBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* start */ js.UndefOr[Double], 
       Double
     ]
@@ -268,9 +264,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Mixed The item that you want to insert into the items array.
     * @returns Number The index for the given item in the given array based on the current sorters.
     */
-  var findInsertionIndex: js.UndefOr[
-    js.Function2[/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any], Double]
-  ] = js.undefined
+  var findInsertionIndex: js.UndefOr[js.Function2[/* items */ js.UndefOr[Array], /* item */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameters and execute a function action at the end if there are no liste
     * @param eventName String The name of the event to fire.
@@ -283,9 +277,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     js.Function4[
       /* eventName */ js.UndefOr[String], 
       /* args */ js.UndefOr[Array], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      js.Any
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -294,24 +288,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean Returns false if any of the handlers return false.
     */
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ Any, Boolean]] = js.undefined
   
   /** [Method] Returns the first item in the collection
     * @returns Object the first item in the collection.
     */
-  var first: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var first: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the item associated with the passed key OR index
     * @param key String/Number The key or index of the item.
     * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
     */
-  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the item at the specified index
     * @param index Number The index of the item.
     * @returns Object The item at the specified index.
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Returns the value of autoFilter
     * @returns Boolean
@@ -326,13 +320,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of bubbleEvents
     * @returns String/String[]
     */
-  var getBubbleEvents: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBubbleEvents: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the item associated with the passed key
     * @param key String/Number The key of the item.
     * @returns Object The item associated with the passed key.
     */
-  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the number of items in the collection
     * @returns Number the number of items in the collection.
@@ -347,7 +341,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns an up to date sort function
     * @returns Function sortFn The sort function.
     */
-  var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getFilterFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of filterRoot
     * @returns String
@@ -362,24 +356,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Retrieves the id of this component
     * @returns any id
     */
-  var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getId: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  var getInitialConfig: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], js.Any]] = js.undefined
+  var getInitialConfig: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] MixedCollection has a generic way to fetch keys if you implement getKey
     * @param item Object The item for which to find the key.
     * @returns Object The key for the passed item.
     */
-  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of listeners
     * @returns Object
     */
-  var getListeners: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getListeners: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of pageSize
     * @returns Number
@@ -398,7 +392,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns an up to date sort function
     * @returns Function The sort function.
     */
-  var getSortFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSortFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of sortRoot
     * @returns String
@@ -425,7 +419,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The item to find the index of.
     * @returns Number Index of the item. Returns -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Returns index within the collection of the passed key
     * @param key String The key to find the index of.
@@ -434,13 +428,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var indexOfKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Property] (Object) */
-  var indices: js.UndefOr[js.Any] = js.undefined
+  var indices: js.UndefOr[Any] = js.undefined
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  var initConfig: js.UndefOr[js.Function1[/* instanceConfig */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var initConfig: js.UndefOr[js.Function1[/* instanceConfig */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Inserts an item at the specified index in the collection
     * @param index Number The index to insert the item at.
@@ -452,8 +446,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     js.Function3[
       /* index */ js.UndefOr[Double], 
       /* key */ js.UndefOr[String], 
-      /* item */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -462,9 +456,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     * @returns Object
     */
-  var insertFilter: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var insertFilter: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] This method inserts all the filters in the passed array at the given index
     * @param index Number The index at which to insert the filters.
@@ -483,7 +475,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var insertSorter: js.UndefOr[
     js.Function3[
       /* index */ js.UndefOr[Double], 
-      /* sorter */ js.UndefOr[js.Any], 
+      /* sorter */ js.UndefOr[Any], 
       /* defaultDirection */ js.UndefOr[String], 
       Unit
     ]
@@ -503,16 +495,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the last item in the collection
     * @returns Object the last item in the collection.
     */
-  var last: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var last: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Property] (Number) */
   var length: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var listeners: js.UndefOr[js.Any] = js.undefined
+  var listeners: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var map: js.UndefOr[js.Any] = js.undefined
+  var map: js.UndefOr[Any] = js.undefined
   
   /** [Method] Alias for addManagedListener
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -523,11 +515,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var mon: js.UndefOr[
     js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -540,10 +532,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var mun: js.UndefOr[
     js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -557,10 +549,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var on: js.UndefOr[
     js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* order */ js.UndefOr[String], 
       Unit
     ]
@@ -574,10 +566,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onAfter: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -590,10 +582,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onBefore: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -604,14 +596,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.mixin.Observable this
     */
   var relayEvents: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Remove an item from the collection
     * @param item Object The item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var remove: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -621,10 +613,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var removeAfterListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -639,13 +631,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param index Number The index within the collection of the item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Removed an item associated with the passed key from the collection
     * @param key String The key of the item to remove.
     * @returns Object/Boolean The item removed or false if no item was removed.
     */
-  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], js.Any]] = js.undefined
+  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -655,10 +647,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var removeBeforeListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -667,7 +659,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param filters Object
     * @returns Ext.util.Collection this
     */
-  var removeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var removeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Removes an event handler
     * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -678,10 +670,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var removeListener: js.UndefOr[
     js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* order */ js.UndefOr[String], 
       Unit
     ]
@@ -695,10 +687,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var removeManagedListener: js.UndefOr[
     js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -706,22 +698,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] This method removes a sorter
     * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
     */
-  var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method removes all the sorters in a passed array
     * @param sorters Object
     * @returns Ext.util.Collection this
     */
-  var removeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var removeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Replaces an item in the collection
     * @param oldKey String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
     * @param item Object {Object} item (optional) If the first parameter passed was a key, the item to associate with that key.
     * @returns Object The new item.
     */
-  var replace: js.UndefOr[
-    js.Function2[/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var replace: js.UndefOr[js.Function2[/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Resumes firing events see suspendEvents
     * @param discardQueuedEvents Boolean Pass as true to discard any queued events.
@@ -744,7 +734,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of bubbleEvents
     * @param bubbleEvents String/String[] The new value.
     */
-  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultSortDirection
     * @param defaultSortDirection String The new value.
@@ -764,7 +754,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of listeners
     * @param listeners Object The new value.
     */
-  var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of pageSize
     * @param pageSize Number The new value.
@@ -792,7 +782,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Array The array you passed after it is sorted.
     */
   var sort: js.UndefOr[
-    js.Function2[/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[js.Any], Array]
+    js.Function2[/* sorters */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[Any], Array]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -816,10 +806,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var un: js.UndefOr[
     js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* order */ js.UndefOr[String], 
       Unit
     ]
@@ -833,10 +823,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var unAfter: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -849,10 +839,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var unBefore: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -866,49 +856,49 @@ object IBufferedCollection {
   
   extension [Self <: IBufferedCollection](x: Self) {
     
-    inline def setAdd(value: (/* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* key */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     inline def setAddAfterListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "addAfterListener", js.Any.fromFunction4(value))
     
     inline def setAddAfterListenerUndefined: Self = StObject.set(x, "addAfterListener", js.undefined)
     
-    inline def setAddAll(value: /* addItems */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: /* addItems */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     inline def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
     inline def setAddBeforeListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "addBeforeListener", js.Any.fromFunction4(value))
     
     inline def setAddBeforeListenerUndefined: Self = StObject.set(x, "addBeforeListener", js.undefined)
     
-    inline def setAddEvents(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+    inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
     
     inline def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
     
-    inline def setAddFilter(value: /* filter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
+    inline def setAddFilter(value: /* filter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
     
     inline def setAddFilterUndefined: Self = StObject.set(x, "addFilter", js.undefined)
     
-    inline def setAddFilters(value: /* filters */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
+    inline def setAddFilters(value: /* filters */ js.UndefOr[Any] => Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
     
     inline def setAddFiltersUndefined: Self = StObject.set(x, "addFilters", js.undefined)
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction5(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
     inline def setAddManagedListener(
-      value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
     
     inline def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
     
-    inline def setAddSorter(value: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
+    inline def setAddSorter(value: (/* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
     
     inline def setAddSorterUndefined: Self = StObject.set(x, "addSorter", js.undefined)
     
@@ -922,19 +912,19 @@ object IBufferedCollection {
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setBubbleEvents(value: js.Any): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
+    inline def setBubbleEvents(value: Any): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
     
     inline def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
     
-    inline def setCallOverridden(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
+    inline def setCallOverridden(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
     
     inline def setCallOverriddenUndefined: Self = StObject.set(x, "callOverridden", js.undefined)
     
-    inline def setCallParent(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callParent", js.Any.fromFunction1(value))
+    inline def setCallParent(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callParent", js.Any.fromFunction1(value))
     
     inline def setCallParentUndefined: Self = StObject.set(x, "callParent", js.undefined)
     
-    inline def setCallSuper(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callSuper", js.Any.fromFunction1(value))
+    inline def setCallSuper(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callSuper", js.Any.fromFunction1(value))
     
     inline def setCallSuperUndefined: Self = StObject.set(x, "callSuper", js.undefined)
     
@@ -946,7 +936,7 @@ object IBufferedCollection {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setContains(value: /* item */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     inline def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
@@ -954,7 +944,7 @@ object IBufferedCollection {
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    inline def setCurrentSortFn(value: js.Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
+    inline def setCurrentSortFn(value: Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
     
     inline def setCurrentSortFnUndefined: Self = StObject.set(x, "currentSortFn", js.undefined)
     
@@ -974,23 +964,23 @@ object IBufferedCollection {
     
     inline def setDirtySortFnUndefined: Self = StObject.set(x, "dirtySortFn", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    inline def setEachKey(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
+    inline def setEachKey(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
     
     inline def setEachKeyUndefined: Self = StObject.set(x, "eachKey", js.undefined)
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setEnableBubble(value: /* events */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+    inline def setEnableBubble(value: /* events */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
     
     inline def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
     
     inline def setFilter(
-      value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[js.Any], /* caseSensitive */ js.UndefOr[js.Any]) => Array
+      value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[Any], /* anyMatch */ js.UndefOr[Any], /* caseSensitive */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
     
-    inline def setFilterBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
+    inline def setFilterBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
     
     inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
@@ -1008,37 +998,37 @@ object IBufferedCollection {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+    inline def setFindBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
     inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
     inline def setFindIndexBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* start */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction3(value))
     
     inline def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     
-    inline def setFindInsertionIndex(value: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findInsertionIndex", js.Any.fromFunction2(value))
+    inline def setFindInsertionIndex(value: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[Any]) => Double): Self = StObject.set(x, "findInsertionIndex", js.Any.fromFunction2(value))
     
     inline def setFindInsertionIndexUndefined: Self = StObject.set(x, "findInsertionIndex", js.undefined)
     
     inline def setFireAction(
-      value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+      value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "fireAction", js.Any.fromFunction4(value))
     
     inline def setFireActionUndefined: Self = StObject.set(x, "fireAction", js.undefined)
     
-    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
     
     inline def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
     
-    inline def setFirst(value: () => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    inline def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setGetAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+    inline def setGetAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
@@ -1050,11 +1040,11 @@ object IBufferedCollection {
     
     inline def setGetAutoSortUndefined: Self = StObject.set(x, "getAutoSort", js.undefined)
     
-    inline def setGetBubbleEvents(value: () => js.Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
+    inline def setGetBubbleEvents(value: () => Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
     
     inline def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
     
-    inline def setGetByKey(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
+    inline def setGetByKey(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
     inline def setGetByKeyUndefined: Self = StObject.set(x, "getByKey", js.undefined)
     
@@ -1066,7 +1056,7 @@ object IBufferedCollection {
     
     inline def setGetDefaultSortDirectionUndefined: Self = StObject.set(x, "getDefaultSortDirection", js.undefined)
     
-    inline def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+    inline def setGetFilterFn(value: () => Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
     
     inline def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
     
@@ -1078,19 +1068,19 @@ object IBufferedCollection {
     
     inline def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
     
-    inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     
-    inline def setGetInitialConfig(value: /* name */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getInitialConfig", js.Any.fromFunction1(value))
+    inline def setGetInitialConfig(value: /* name */ js.UndefOr[String] => Any): Self = StObject.set(x, "getInitialConfig", js.Any.fromFunction1(value))
     
     inline def setGetInitialConfigUndefined: Self = StObject.set(x, "getInitialConfig", js.undefined)
     
-    inline def setGetKey(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: /* item */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
-    inline def setGetListeners(value: () => js.Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
+    inline def setGetListeners(value: () => Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
     
     inline def setGetListenersUndefined: Self = StObject.set(x, "getListeners", js.undefined)
     
@@ -1102,7 +1092,7 @@ object IBufferedCollection {
     
     inline def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
     
-    inline def setGetSortFn(value: () => js.Any): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
+    inline def setGetSortFn(value: () => Any): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
     
     inline def setGetSortFnUndefined: Self = StObject.set(x, "getSortFn", js.undefined)
     
@@ -1124,7 +1114,7 @@ object IBufferedCollection {
     
     inline def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
     
-    inline def setIndexOf(value: /* item */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* item */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     inline def setIndexOfKey(value: /* key */ js.UndefOr[String] => Double): Self = StObject.set(x, "indexOfKey", js.Any.fromFunction1(value))
     
@@ -1132,19 +1122,19 @@ object IBufferedCollection {
     
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    inline def setInitConfig(value: /* instanceConfig */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "initConfig", js.Any.fromFunction1(value))
+    inline def setInitConfig(value: /* instanceConfig */ js.UndefOr[Any] => Any): Self = StObject.set(x, "initConfig", js.Any.fromFunction1(value))
     
     inline def setInitConfigUndefined: Self = StObject.set(x, "initConfig", js.undefined)
     
     inline def setInsert(
-      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any
+      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
     
-    inline def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
+    inline def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
     
     inline def setInsertFilterUndefined: Self = StObject.set(x, "insertFilter", js.undefined)
     
@@ -1153,7 +1143,7 @@ object IBufferedCollection {
     inline def setInsertFiltersUndefined: Self = StObject.set(x, "insertFilters", js.undefined)
     
     inline def setInsertSorter(
-      value: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit
+      value: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "insertSorter", js.Any.fromFunction3(value))
     
     inline def setInsertSorterUndefined: Self = StObject.set(x, "insertSorter", js.undefined)
@@ -1172,7 +1162,7 @@ object IBufferedCollection {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setLast(value: () => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
@@ -1180,52 +1170,52 @@ object IBufferedCollection {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
-    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     inline def setMon(
-      value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
     
     inline def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
     
     inline def setMun(
-      value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
     
     inline def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
     
     inline def setOn(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction5(value))
     
     inline def setOnAfter(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onAfter", js.Any.fromFunction4(value))
     
     inline def setOnAfterUndefined: Self = StObject.set(x, "onAfter", js.undefined)
     
     inline def setOnBefore(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onBefore", js.Any.fromFunction4(value))
     
     inline def setOnBeforeUndefined: Self = StObject.set(x, "onBefore", js.undefined)
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IBufferedCollection): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IBufferedCollection): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    inline def setRemove(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* item */ js.UndefOr[Any] => Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAfterListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeAfterListener", js.Any.fromFunction4(value))
     
     inline def setRemoveAfterListenerUndefined: Self = StObject.set(x, "removeAfterListener", js.undefined)
@@ -1234,47 +1224,47 @@ object IBufferedCollection {
     
     inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     
-    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
+    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
     
     inline def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
     
     inline def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
     
     inline def setRemoveBeforeListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeBeforeListener", js.Any.fromFunction4(value))
     
     inline def setRemoveBeforeListenerUndefined: Self = StObject.set(x, "removeBeforeListener", js.undefined)
     
-    inline def setRemoveFilters(value: /* filters */ js.UndefOr[js.Any] => IBufferedCollection): Self = StObject.set(x, "removeFilters", js.Any.fromFunction1(value))
+    inline def setRemoveFilters(value: /* filters */ js.UndefOr[Any] => IBufferedCollection): Self = StObject.set(x, "removeFilters", js.Any.fromFunction1(value))
     
     inline def setRemoveFiltersUndefined: Self = StObject.set(x, "removeFilters", js.undefined)
     
     inline def setRemoveListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "removeListener", js.Any.fromFunction5(value))
     
     inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
     
     inline def setRemoveManagedListener(
-      value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
     
     inline def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
     
-    inline def setRemoveSorter(value: /* sorter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
+    inline def setRemoveSorter(value: /* sorter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
     
     inline def setRemoveSorterUndefined: Self = StObject.set(x, "removeSorter", js.undefined)
     
-    inline def setRemoveSorters(value: /* sorters */ js.UndefOr[js.Any] => IBufferedCollection): Self = StObject.set(x, "removeSorters", js.Any.fromFunction1(value))
+    inline def setRemoveSorters(value: /* sorters */ js.UndefOr[Any] => IBufferedCollection): Self = StObject.set(x, "removeSorters", js.Any.fromFunction1(value))
     
     inline def setRemoveSortersUndefined: Self = StObject.set(x, "removeSorters", js.undefined)
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setReplace(value: (/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
@@ -1294,7 +1284,7 @@ object IBufferedCollection {
     
     inline def setSetAutoSortUndefined: Self = StObject.set(x, "setAutoSort", js.undefined)
     
-    inline def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
+    inline def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
     
     inline def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
     
@@ -1310,7 +1300,7 @@ object IBufferedCollection {
     
     inline def setSetFiltersUndefined: Self = StObject.set(x, "setFilters", js.undefined)
     
-    inline def setSetListeners(value: /* listeners */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setListeners", js.Any.fromFunction1(value))
+    inline def setSetListeners(value: /* listeners */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setListeners", js.Any.fromFunction1(value))
     
     inline def setSetListenersUndefined: Self = StObject.set(x, "setListeners", js.undefined)
     
@@ -1330,7 +1320,7 @@ object IBufferedCollection {
     
     inline def setSetTotalCountUndefined: Self = StObject.set(x, "setTotalCount", js.undefined)
     
-    inline def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* sorters */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     inline def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
     
@@ -1351,17 +1341,17 @@ object IBufferedCollection {
     inline def setSuspendEventsUndefined: Self = StObject.set(x, "suspendEvents", js.undefined)
     
     inline def setUn(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "un", js.Any.fromFunction5(value))
     
     inline def setUnAfter(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "unAfter", js.Any.fromFunction4(value))
     
     inline def setUnAfterUndefined: Self = StObject.set(x, "unAfter", js.undefined)
     
     inline def setUnBefore(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "unBefore", js.Any.fromFunction4(value))
     
     inline def setUnBeforeUndefined: Self = StObject.set(x, "unBefore", js.undefined)

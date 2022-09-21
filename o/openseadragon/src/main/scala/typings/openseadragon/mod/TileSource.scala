@@ -1,5 +1,7 @@
 package typings.openseadragon.mod
 
+import typings.openseadragon.openseadragonStrings.`open-failed`
+import typings.openseadragon.openseadragonStrings.ready
 import typings.std.Document
 import typings.std.Event
 import typings.std.EventSource
@@ -9,23 +11,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "TileSource")
 @js.native
-class TileSource protected ()
+open class TileSource protected ()
   extends StObject
      with EventSource {
   def this(options: TileSourceOptions) = this()
   
-  def addHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
-  def addHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
+  @JSName("addHandler")
+  def addHandler_openfailed(eventName: `open-failed`, handler: EventHandler[OpenFailedTileSourceEvent]): Unit = js.native
+  @JSName("addHandler")
+  def addHandler_openfailed(eventName: `open-failed`, handler: EventHandler[OpenFailedTileSourceEvent], userData: js.Object): Unit = js.native
+  @JSName("addHandler")
+  def addHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent]): Unit = js.native
+  @JSName("addHandler")
+  def addHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent], userData: js.Object): Unit = js.native
   
-  def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
-  def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
-  def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object, times: Double): Unit = js.native
-  def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: Unit, times: Double): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_openfailed(eventName: `open-failed`, handler: EventHandler[OpenFailedTileSourceEvent]): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_openfailed(eventName: `open-failed`, handler: EventHandler[OpenFailedTileSourceEvent], userData: js.Object): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_openfailed(
+    eventName: `open-failed`,
+    handler: EventHandler[OpenFailedTileSourceEvent],
+    userData: js.Object,
+    times: Double
+  ): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_openfailed(
+    eventName: `open-failed`,
+    handler: EventHandler[OpenFailedTileSourceEvent],
+    userData: Unit,
+    times: Double
+  ): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent]): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent], userData: js.Object): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent], userData: js.Object, times: Double): Unit = js.native
+  @JSName("addOnceHandler")
+  def addOnceHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent], userData: Unit, times: Double): Unit = js.native
   
   var aspectRatio: Double = js.native
   
   def configure(data: String): js.Object = js.native
-  def configure(data: js.Array[js.Any]): js.Object = js.native
+  def configure(data: js.Array[Any]): js.Object = js.native
   def configure(data: js.Object): js.Object = js.native
   def configure(data: Document): js.Object = js.native
   
@@ -58,18 +88,23 @@ class TileSource protected ()
   
   var maxLevel: Double = js.native
   
-  var minlevel: Double = js.native
+  var minLevel: Double = js.native
   
   def raiseEvent(eventName: String, eventArgs: js.Object): Unit = js.native
   
   var ready: Boolean = js.native
   
-  def removeAllHandlers(eventName: String): Unit = js.native
+  def removeAllHandlers(eventName: `open-failed` | ready): Unit = js.native
   
-  def removeHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
+  @JSName("removeHandler")
+  def removeHandler_openfailed(eventName: `open-failed`, handler: EventHandler[OpenFailedTileSourceEvent]): Unit = js.native
+  @JSName("removeHandler")
+  def removeHandler_ready(eventName: ready, handler: EventHandler[ReadyTileSourceEvent]): Unit = js.native
+  
+  def setMaxLevel(level: Double): Unit = js.native
   
   def supports(data: String, url: String): Boolean = js.native
-  def supports(data: js.Array[js.Any], url: String): Boolean = js.native
+  def supports(data: js.Array[Any], url: String): Boolean = js.native
   def supports(data: js.Object, url: String): Boolean = js.native
   def supports(data: Document, url: String): Boolean = js.native
   

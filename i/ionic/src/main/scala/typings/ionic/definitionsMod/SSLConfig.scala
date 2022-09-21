@@ -25,18 +25,18 @@ object SSLConfig {
     
     inline def setCafileUndefined: Self = StObject.set(x, "cafile", js.undefined)
     
-    inline def setCafileVarargs(value: String*): Self = StObject.set(x, "cafile", js.Array(value :_*))
+    inline def setCafileVarargs(value: String*): Self = StObject.set(x, "cafile", js.Array(value*))
     
     inline def setCertfile(value: String | js.Array[String]): Self = StObject.set(x, "certfile", value.asInstanceOf[js.Any])
     
     inline def setCertfileUndefined: Self = StObject.set(x, "certfile", js.undefined)
     
-    inline def setCertfileVarargs(value: String*): Self = StObject.set(x, "certfile", js.Array(value :_*))
+    inline def setCertfileVarargs(value: String*): Self = StObject.set(x, "certfile", js.Array(value*))
     
     inline def setKeyfile(value: String | js.Array[String]): Self = StObject.set(x, "keyfile", value.asInstanceOf[js.Any])
     
     inline def setKeyfileUndefined: Self = StObject.set(x, "keyfile", js.undefined)
     
-    inline def setKeyfileVarargs(value: String*): Self = StObject.set(x, "keyfile", js.Array(value :_*))
+    inline def setKeyfileVarargs(value: String*): Self = StObject.set(x, "keyfile", js.Array(value*))
   }
 }

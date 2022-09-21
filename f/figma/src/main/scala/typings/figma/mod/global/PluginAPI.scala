@@ -4,7 +4,6 @@ import typings.figma.figmaStrings.`1Dot0Dot0`
 import typings.figma.figmaStrings.close_
 import typings.figma.figmaStrings.currentpagechange
 import typings.figma.figmaStrings.selectionchange
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ trait PluginAPI extends StObject {
   
   def createGridStyle(): GridStyle = js.native
   
-  def createImage(data: Uint8Array): Image = js.native
+  def createImage(data: js.typedarray.Uint8Array): Image = js.native
   
   def createLine(): LineNode = js.native
   
@@ -107,26 +106,11 @@ trait PluginAPI extends StObject {
   def notify(message: String): NotificationHandler = js.native
   def notify(message: String, options: NotificationOptions): NotificationHandler = js.native
   
-  @JSName("off")
-  def off_close(`type`: close_, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("off")
-  def off_currentpagechange(`type`: currentpagechange, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("off")
-  def off_selectionchange(`type`: selectionchange, callback: js.Function0[Unit]): Unit = js.native
+  def off(`type`: selectionchange | currentpagechange | close_, callback: js.Function0[Unit]): Unit = js.native
   
-  @JSName("on")
-  def on_close(`type`: close_, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_currentpagechange(`type`: currentpagechange, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_selectionchange(`type`: selectionchange, callback: js.Function0[Unit]): Unit = js.native
+  def on(`type`: selectionchange | currentpagechange | close_, callback: js.Function0[Unit]): Unit = js.native
   
-  @JSName("once")
-  def once_close(`type`: close_, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("once")
-  def once_currentpagechange(`type`: currentpagechange, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("once")
-  def once_selectionchange(`type`: selectionchange, callback: js.Function0[Unit]): Unit = js.native
+  def once(`type`: selectionchange | currentpagechange | close_, callback: js.Function0[Unit]): Unit = js.native
   
   val root: DocumentNode = js.native
   

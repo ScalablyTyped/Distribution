@@ -17,11 +17,11 @@ trait ASPxClientDashboardItemDataMeasureValue extends StObject {
   /**
     * Gets the measure value.
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
 }
 object ASPxClientDashboardItemDataMeasureValue {
   
-  inline def apply(GetDisplayText: () => String, GetValue: () => js.Any): ASPxClientDashboardItemDataMeasureValue = {
+  inline def apply(GetDisplayText: () => String, GetValue: () => Any): ASPxClientDashboardItemDataMeasureValue = {
     val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetValue = js.Any.fromFunction0(GetValue))
     __obj.asInstanceOf[ASPxClientDashboardItemDataMeasureValue]
   }
@@ -30,6 +30,6 @@ object ASPxClientDashboardItemDataMeasureValue {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
   }
 }

@@ -38,12 +38,12 @@ object DescribeVpcEndpointServicesResult {
     
     inline def setServiceDetailsUndefined: Self = StObject.set(x, "ServiceDetails", js.undefined)
     
-    inline def setServiceDetailsVarargs(value: ServiceDetail*): Self = StObject.set(x, "ServiceDetails", js.Array(value :_*))
+    inline def setServiceDetailsVarargs(value: ServiceDetail*): Self = StObject.set(x, "ServiceDetails", js.Array(value*))
     
     inline def setServiceNames(value: ValueStringList): Self = StObject.set(x, "ServiceNames", value.asInstanceOf[js.Any])
     
     inline def setServiceNamesUndefined: Self = StObject.set(x, "ServiceNames", js.undefined)
     
-    inline def setServiceNamesVarargs(value: String*): Self = StObject.set(x, "ServiceNames", js.Array(value :_*))
+    inline def setServiceNamesVarargs(value: String*): Self = StObject.set(x, "ServiceNames", js.Array(value*))
   }
 }

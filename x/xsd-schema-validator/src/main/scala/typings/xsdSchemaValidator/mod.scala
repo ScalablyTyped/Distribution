@@ -1,7 +1,6 @@
 package typings.xsdSchemaValidator
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import typings.xsdSchemaValidator.anon.File
 import typings.xsdSchemaValidator.anon.Messages
 import org.scalablytyped.runtime.StObject
@@ -17,12 +16,16 @@ object mod {
   inline def validateXML(
     xml: String,
     pathToXsd: String,
-    callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]
+    callback: js.Function2[/* err */ js.Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validateXML(
-    xml: ReadableStream,
+    xml: ReadableStream[Any],
     pathToXsd: String,
-    callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]
+    callback: js.Function2[/* err */ js.Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validateXML(xml: File, pathToXsd: String, callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateXML(
+    xml: File,
+    pathToXsd: String,
+    callback: js.Function2[/* err */ js.Error, /* result */ Messages, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

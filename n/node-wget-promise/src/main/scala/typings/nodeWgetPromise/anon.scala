@@ -8,9 +8,9 @@ object anon {
   
   trait OnProgress extends StObject {
     
-    var onProgress: js.UndefOr[js.Any] = js.undefined
+    var onProgress: js.UndefOr[Any] = js.undefined
     
-    var onStart: js.UndefOr[js.Any] = js.undefined
+    var onStart: js.UndefOr[Any] = js.undefined
     
     var output: js.UndefOr[String] = js.undefined
     
@@ -25,11 +25,11 @@ object anon {
     
     extension [Self <: OnProgress](x: Self) {
       
-      inline def setOnProgress(value: js.Any): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
+      inline def setOnProgress(value: Any): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      inline def setOnStart(value: js.Any): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: Any): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       

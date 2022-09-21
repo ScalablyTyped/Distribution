@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for EntityTypes.BatchUpdateEntityTypes.
-  */
 trait SchemaGoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends StObject {
   
   /**
@@ -15,26 +12,19 @@ trait SchemaGoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends StObjec
   var entityTypeBatchInline: js.UndefOr[SchemaGoogleCloudDialogflowV2EntityTypeBatch] = js.undefined
   
   /**
-    * The URI to a Google Cloud Storage file containing entity types to update
-    * or create. The file format can either be a serialized proto (of
-    * EntityBatch type) or a JSON object. Note: The URI must start with
-    * &quot;gs://&quot;.
+    * The URI to a Google Cloud Storage file containing entity types to update or create. The file format can either be a serialized proto (of EntityBatch type) or a JSON object. Note: The URI must start with "gs://".
     */
-  var entityTypeBatchUri: js.UndefOr[String] = js.undefined
+  var entityTypeBatchUri: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. The language of entity synonyms defined in `entity_types`. If
-    * not specified, the agent&#39;s default language is used. [Many
-    * languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
-    * are supported. Note: languages must be enabled in the agent before they
-    * can be used.
+    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
-  var languageCode: js.UndefOr[String] = js.undefined
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional. The mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2BatchUpdateEntityTypesRequest {
   
@@ -51,13 +41,19 @@ object SchemaGoogleCloudDialogflowV2BatchUpdateEntityTypesRequest {
     
     inline def setEntityTypeBatchUri(value: String): Self = StObject.set(x, "entityTypeBatchUri", value.asInstanceOf[js.Any])
     
+    inline def setEntityTypeBatchUriNull: Self = StObject.set(x, "entityTypeBatchUri", null)
+    
     inline def setEntityTypeBatchUriUndefined: Self = StObject.set(x, "entityTypeBatchUri", js.undefined)
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

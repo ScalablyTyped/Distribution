@@ -23,11 +23,11 @@ object PutChannelResult {
     
     inline def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "playUrls", value.asInstanceOf[js.Any])
     
-    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "playUrls", js.Array(value :_*))
+    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "playUrls", js.Array(value*))
     
     inline def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "publishUrls", value.asInstanceOf[js.Any])
     
-    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "publishUrls", js.Array(value :_*))
+    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "publishUrls", js.Array(value*))
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }

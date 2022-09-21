@@ -17,7 +17,7 @@ trait CreateConnectionInput extends StObject {
   var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.undefined
   
   /**
-    * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
+    * The name of the external provider where your third-party code repository is configured.
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
   
@@ -49,6 +49,6 @@ object CreateConnectionInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

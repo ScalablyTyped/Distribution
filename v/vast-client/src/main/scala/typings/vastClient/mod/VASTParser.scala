@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vast-client", "VASTParser")
 @js.native
-class VASTParser () extends EventEmitter {
+open class VASTParser () extends EventEmitter {
   def this(options: EventEmitterOptions) = this()
   
   /**
@@ -60,7 +60,7 @@ class VASTParser () extends EventEmitter {
     /**
     * url of original wrapper
     */
-  originalUrl: String
+  previousUrl: String
   ): js.Promise[Document] = js.native
   def fetchVAST(
     /**
@@ -74,7 +74,7 @@ class VASTParser () extends EventEmitter {
     /**
     * url of original wrapper
     */
-  originalUrl: String
+  previousUrl: String
   ): js.Promise[Document] = js.native
   
   /**
@@ -116,9 +116,17 @@ class VASTParser () extends EventEmitter {
   ): js.Promise[VastResponse] = js.native
   
   /**
+    * Parses the given xml Object into an array of ads
+    * Returns the array or throws an `Error` if an invalid VAST XML is provided
+    */
+  def parseVastXml(vastXml: Document, options: ParseVastXmlOptions): js.Array[VastAd] = js.native
+  
+  /**
     * Removes the last element of the url templates filters array.
     */
   def removeURLTemplateFilter(): Unit = js.native
+  
+  var rootURL: js.UndefOr[String] = js.native
   
   /**
     * Tracks the error provided in the errorCode parameter and emits a VAST-error event for the given error.

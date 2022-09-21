@@ -23,7 +23,7 @@ object UserDataAccounts {
     @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration")
     @js.native
     /** Initializes a new instance of the DeviceAccountConfiguration class. */
-    class DeviceAccountConfiguration ()
+    open class DeviceAccountConfiguration ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration {
       
@@ -131,7 +131,7 @@ object UserDataAccounts {
         accounts: IIterable[
               typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration
             ]
-      ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("addAndShowDeviceAccountsAsync")(accounts.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      ): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("addAndShowDeviceAccountsAsync")(accounts.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     }
   }
   
@@ -162,28 +162,28 @@ object UserDataAccounts {
       * @return A collection of AppointmentCalendar instances associated with the UserDataAccount .
       */
     /* CompleteClass */
-    override def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Returns a collection of ContactAnnotationList instances associated with the UserDataAccount .
       * @return A collection of ContactAnnotationList instances associated with the UserDataAccount .
       */
     /* CompleteClass */
-    override def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Returns a collection of ContactList instances associated with the UserDataAccount .
       * @return A collection of ContactList instances associated with the UserDataAccount .
       */
     /* CompleteClass */
-    override def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Returns a collection of EmailMailbox instances associated with the UserDataAccount .
       * @return A collection of EmailMailbox instances associated with the UserDataAccount .
       */
     /* CompleteClass */
-    override def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /** Gets the icon associated with the UserDataAccount . */
     /* CompleteClass */
@@ -314,7 +314,7 @@ object UserDataAccounts {
       * @return Returns the collection of user data accounts, scoped by access request.
       */
     /* CompleteClass */
-    override def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    override def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Asynchronously gets the specified account.

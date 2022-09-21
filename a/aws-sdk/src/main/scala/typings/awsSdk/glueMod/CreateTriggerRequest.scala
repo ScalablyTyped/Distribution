@@ -17,6 +17,11 @@ trait CreateTriggerRequest extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
+    * Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires.
+    */
+  var EventBatchingCondition: js.UndefOr[typings.awsSdk.glueMod.EventBatchingCondition] = js.undefined
+  
+  /**
     * The name of the trigger.
     */
   var Name: NameString
@@ -37,7 +42,7 @@ trait CreateTriggerRequest extends StObject {
   var StartOnCreation: js.UndefOr[BooleanValue] = js.undefined
   
   /**
-    * The tags to use with this trigger. You may use tags to limit access to the trigger. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide. 
+    * The tags to use with this trigger. You may use tags to limit access to the trigger. For more information about tags in Glue, see Amazon Web Services Tags in Glue in the developer guide. 
     */
   var Tags: js.UndefOr[TagsMap] = js.undefined
   
@@ -62,11 +67,15 @@ object CreateTriggerRequest {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setEventBatchingCondition(value: EventBatchingCondition): Self = StObject.set(x, "EventBatchingCondition", value.asInstanceOf[js.Any])
+    
+    inline def setEventBatchingConditionUndefined: Self = StObject.set(x, "EventBatchingCondition", js.undefined)
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

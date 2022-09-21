@@ -10,9 +10,9 @@ Comprehensive pathfinding library for grid based games
 | Full name          | pathfinding |
 | Keywords           | pathfinding, astar, dijkstra, game, algorithm, jumppoint, depthfirst, breadthfirst |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 624220 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 123854.33333333333 |
+| # stars            | 7797.0 |
 
 ## Links
 - [Homepage](https://github.com/qiao/PathFinding.js)

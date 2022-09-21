@@ -52,7 +52,7 @@ object DescribeTargetGroupsInput {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: TargetGroupName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: TargetGroupName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeTargetGroupsInput {
     
     inline def setTargetGroupArnsUndefined: Self = StObject.set(x, "TargetGroupArns", js.undefined)
     
-    inline def setTargetGroupArnsVarargs(value: TargetGroupArn*): Self = StObject.set(x, "TargetGroupArns", js.Array(value :_*))
+    inline def setTargetGroupArnsVarargs(value: TargetGroupArn*): Self = StObject.set(x, "TargetGroupArns", js.Array(value*))
   }
 }

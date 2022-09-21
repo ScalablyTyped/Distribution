@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RolePermission extends StObject {
   
-  // Actions
+  // Resource Actions each containing a set of allowed and not allowed permissions.
   var resourceActions: js.UndefOr[NullableOption[js.Array[ResourceAction]]] = js.undefined
 }
 object RolePermission {
@@ -24,6 +24,6 @@ object RolePermission {
     
     inline def setResourceActionsUndefined: Self = StObject.set(x, "resourceActions", js.undefined)
     
-    inline def setResourceActionsVarargs(value: ResourceAction*): Self = StObject.set(x, "resourceActions", js.Array(value :_*))
+    inline def setResourceActionsVarargs(value: ResourceAction*): Self = StObject.set(x, "resourceActions", js.Array(value*))
   }
 }

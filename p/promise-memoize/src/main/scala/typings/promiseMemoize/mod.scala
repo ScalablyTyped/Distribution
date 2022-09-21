@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] */](fn: T): T & Clear = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T & Clear]
-  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] */](fn: T, options: Options): T & Clear = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Clear]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, js.Thenable[Any]] */](fn: T): T & Clear = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T & Clear]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, js.Thenable[Any]] */](fn: T, options: Options): T & Clear = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Clear]
   
   @JSImport("promise-memoize", JSImport.Namespace)
   @js.native
@@ -18,11 +18,11 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.promiseMemoize.promiseMemoizeStrings.simple
     - typings.promiseMemoize.promiseMemoizeStrings.json
-    - js.Function1[/ * args * / js.Array[js.Any], js.Any]
+    - js.Function1[/ * args * / js.Array[scala.Any], scala.Any]
     - js.Array[
-  typings.promiseMemoize.promiseMemoizeStrings.json | (js.Function1[/ * arg * / js.Any, js.Any])]
+  typings.promiseMemoize.promiseMemoizeStrings.json | (js.Function1[/ * arg * / scala.Any, scala.Any])]
   */
-  type KeyResolver = _KeyResolver | (js.Function1[/* args */ js.Array[js.Any], js.Any]) | (js.Array[json | (js.Function1[/* arg */ js.Any, js.Any])])
+  type KeyResolver = _KeyResolver | (js.Function1[/* args */ js.Array[Any], Any]) | (js.Array[json | (js.Function1[/* arg */ Any, Any])])
   
   trait Options extends StObject {
     
@@ -51,11 +51,11 @@ object mod {
       
       inline def setResolve(value: KeyResolver): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      inline def setResolveFunction1(value: /* args */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolveFunction1(value: /* args */ js.Array[Any] => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      inline def setResolveVarargs(value: (json | (js.Function1[/* arg */ js.Any, js.Any]))*): Self = StObject.set(x, "resolve", js.Array(value :_*))
+      inline def setResolveVarargs(value: (json | (js.Function1[/* arg */ Any, Any]))*): Self = StObject.set(x, "resolve", js.Array(value*))
     }
   }
   

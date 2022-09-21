@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-case
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower case string with slashes between words
@@ -10,10 +10,10 @@ Transform into a lower case string with slashes between words
 | ------------------ | :-------------: |
 | Full name          | path-case |
 | Keywords           | path, case, slash, lower, convert, transform |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 73927159 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6420189666666666E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/path-case#readme)

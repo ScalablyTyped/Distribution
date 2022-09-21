@@ -3,13 +3,12 @@ package typings.imperium
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.imperium.imperiumStrings.body
 import typings.imperium.imperiumStrings.headers
 import typings.imperium.imperiumStrings.params
 import typings.imperium.imperiumStrings.query
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,37 +21,98 @@ object mod {
   
   @JSImport("imperium", "Imperium")
   @js.native
-  class Imperium () extends StObject {
+  open class Imperium () extends StObject {
     
     /* private */ def addRole(roleName: String, getAcl: GetAcl): Unit = js.native
     
     // Check if current user can do action(s)
-    def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
-    def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
-    def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+    def can(actionS: String): js.Promise[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.native
+    def can(actionS: js.Array[Action | String]): js.Promise[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.native
+    def can(actionS: Action): js.Promise[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.native
     
     var context: js.Array[String] = js.native
     
     def evaluateRouteAction(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       expr: String,
       key: String,
       context: Context_
     ): String = js.native
     
     def evaluateRouteActions(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       action: js.Array[Action],
       context: Context_
     ): Actions = js.native
     
     def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = js.native
     
-    def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = js.native
+    def evaluateUserActions(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      roles: js.Array[Role_]
+    ): js.Promise[js.Array[Action]] = js.native
     
     // Check if user has role(s) act like as an OR
-    def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
-    def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+    def is(roleNames: String): js.Promise[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.native
+    def is(roleNames: js.Array[String]): js.Promise[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.native
     
     // Add new role with specific ImperiumGetAcl
     def role(roleName: String): Role_ = js.native
@@ -63,7 +123,7 @@ object mod {
   
   @JSImport("imperium", "Role")
   @js.native
-  class Role_ protected () extends StObject {
+  open class Role_ protected () extends StObject {
     def this(imperium: Imperium, roleName: String) = this()
     
     /* Add action with specific params */
@@ -84,45 +144,148 @@ object mod {
   
   @JSImport("imperium", "UnauthorizedError")
   @js.native
-  class UnauthorizedError protected ()
+  open class UnauthorizedError protected ()
     extends StObject
        with Error {
-    def this(message: String, status: Double, context: js.Any) = this()
+    def this(message: String, status: Double, context: Any) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def can(actionS: String): js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def can(actionS: js.Array[Action | String]): js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def can(actionS: Action): js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
   
   @JSImport("imperium", "context")
   @js.native
   val context: js.Array[String] = js.native
   
   inline def evaluateRouteAction(
-    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     expr: String,
     key: String,
     context: Context_
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteAction")(req.asInstanceOf[js.Any], expr.asInstanceOf[js.Any], key.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def evaluateRouteActions(
-    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     action: js.Array[Action],
     context: Context_
   ): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteActions")(req.asInstanceOf[js.Any], action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Actions]
   
   inline def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserAction")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  inline def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserActions")(req.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Action]]]
+  inline def evaluateUserActions(
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    roles: js.Array[Role_]
+  ): js.Promise[js.Array[Action]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserActions")(req.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Action]]]
   
-  inline def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def is(roleNames: String): js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def is(roleNames: js.Array[String]): js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
   
   inline def role(roleName: String): Role_ = ^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any]).asInstanceOf[Role_]
   inline def role(roleName: String, getAcl: GetAcl): Role_ = (^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any], getAcl.asInstanceOf[js.Any])).asInstanceOf[Role_]
@@ -155,7 +318,13 @@ object mod {
   type Context_ = js.Array[params | query | headers | body]
   
   type GetAcl = js.Function1[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     js.Promise[Boolean | js.Object]
   ]
   
@@ -176,10 +345,16 @@ object mod {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setGetAcl(
-        value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Promise[Boolean | js.Object]
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => js.Promise[Boolean | js.Object]
       ): Self = StObject.set(x, "getAcl", js.Any.fromFunction1(value))
       
       inline def setGetAclUndefined: Self = StObject.set(x, "getAcl", js.undefined)

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RequestExecutor")
 @js.native
-class RequestExecutor protected ()
+open class RequestExecutor protected ()
   extends StObject
      with typings.sharepoint.SP.RequestExecutor {
   def this(url: String) = this()
-  def this(url: String, options: js.Any) = this()
+  def this(url: String, options: Any) = this()
 }

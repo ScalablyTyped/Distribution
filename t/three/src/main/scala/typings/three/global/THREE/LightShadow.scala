@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.LightShadow")
 @js.native
-class LightShadow protected ()
+open class LightShadow protected ()
   extends typings.three.mod.LightShadow {
   def this(camera: typings.three.cameraMod.Camera) = this()
 }

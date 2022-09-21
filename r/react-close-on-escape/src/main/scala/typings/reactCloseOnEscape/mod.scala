@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-close-on-escape", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CloseOnEscapeProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CloseOnEscapeProps, js.Object, Any]
   
-  type CloseOnEscape = Component[CloseOnEscapeProps, js.Object, js.Any]
+  type CloseOnEscape = Component[CloseOnEscapeProps, js.Object, Any]
   
   trait CloseOnEscapeProps extends StObject {
     

@@ -16,15 +16,10 @@ object reduceGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/reduce_gpu", "ReduceProgram")
   @js.native
-  class ReduceProgram protected ()
+  open class ReduceProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(reduceInfo: ReduceInfo, reduceType: all) = this()
-    def this(reduceInfo: ReduceInfo, reduceType: any) = this()
-    def this(reduceInfo: ReduceInfo, reduceType: max) = this()
-    def this(reduceInfo: ReduceInfo, reduceType: min) = this()
-    def this(reduceInfo: ReduceInfo, reduceType: prod) = this()
-    def this(reduceInfo: ReduceInfo, reduceType: sum) = this()
+    def this(reduceInfo: ReduceInfo, reduceType: all | any | max | min | sum | prod) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

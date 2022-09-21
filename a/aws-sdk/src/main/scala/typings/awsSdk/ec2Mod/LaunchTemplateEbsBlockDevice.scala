@@ -22,7 +22,7 @@ trait LaunchTemplateEbsBlockDevice extends StObject {
   var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The ARN of the AWS Key Management Service (AWS KMS) CMK used for encryption.
+    * The ARN of the Key Management Service (KMS) CMK used for encryption.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.undefined
   
@@ -30,6 +30,11 @@ trait LaunchTemplateEbsBlockDevice extends StObject {
     * The ID of the snapshot.
     */
   var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.undefined
+  
+  /**
+    * The throughput that the volume supports, in MiB/s.
+    */
+  var Throughput: js.UndefOr[Integer] = js.undefined
   
   /**
     * The size of the volume, in GiB.
@@ -69,6 +74,10 @@ object LaunchTemplateEbsBlockDevice {
     inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    
+    inline def setThroughput(value: Integer): Self = StObject.set(x, "Throughput", value.asInstanceOf[js.Any])
+    
+    inline def setThroughputUndefined: Self = StObject.set(x, "Throughput", js.undefined)
     
     inline def setVolumeSize(value: Integer): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     

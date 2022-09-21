@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes a change made to a configuration.
-  */
 trait SchemaMutationRecord extends StObject {
   
   /**
     * When the change occurred.
     */
-  var mutateTime: js.UndefOr[String] = js.undefined
+  var mutateTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The email address of the user making the change.
     */
-  var mutatedBy: js.UndefOr[String] = js.undefined
+  var mutatedBy: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMutationRecord {
   
@@ -30,9 +27,13 @@ object SchemaMutationRecord {
     
     inline def setMutateTime(value: String): Self = StObject.set(x, "mutateTime", value.asInstanceOf[js.Any])
     
+    inline def setMutateTimeNull: Self = StObject.set(x, "mutateTime", null)
+    
     inline def setMutateTimeUndefined: Self = StObject.set(x, "mutateTime", js.undefined)
     
     inline def setMutatedBy(value: String): Self = StObject.set(x, "mutatedBy", value.asInstanceOf[js.Any])
+    
+    inline def setMutatedByNull: Self = StObject.set(x, "mutatedBy", null)
     
     inline def setMutatedByUndefined: Self = StObject.set(x, "mutatedBy", js.undefined)
   }

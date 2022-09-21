@@ -12,14 +12,14 @@ trait SchemaLiaCountrySettings extends StObject {
   var about: js.UndefOr[SchemaLiaAboutPageSettings] = js.undefined
   
   /**
-    * CLDR country code (e.g. &quot;US&quot;).
+    * Required. CLDR country code (for example, "US").
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The status of the &quot;Merchant hosted local storefront&quot; feature.
+    * The status of the "Merchant hosted local storefront" feature.
     */
-  var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.undefined
+  var hostedLocalStorefrontActive: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * LIA inventory verification settings.
@@ -27,7 +27,7 @@ trait SchemaLiaCountrySettings extends StObject {
   var inventory: js.UndefOr[SchemaLiaInventorySettings] = js.undefined
   
   /**
-    * LIA &quot;On Display To Order&quot; settings.
+    * LIA "On Display To Order" settings.
     */
   var onDisplayToOrder: js.UndefOr[SchemaLiaOnDisplayToOrderSettings] = js.undefined
   
@@ -37,9 +37,9 @@ trait SchemaLiaCountrySettings extends StObject {
   var posDataProvider: js.UndefOr[SchemaLiaPosDataProvider] = js.undefined
   
   /**
-    * The status of the &quot;Store pickup&quot; feature.
+    * The status of the "Store pickup" feature.
     */
-  var storePickupActive: js.UndefOr[Boolean] = js.undefined
+  var storePickupActive: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaLiaCountrySettings {
   
@@ -56,9 +56,13 @@ object SchemaLiaCountrySettings {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setCountryNull: Self = StObject.set(x, "country", null)
+    
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     inline def setHostedLocalStorefrontActive(value: Boolean): Self = StObject.set(x, "hostedLocalStorefrontActive", value.asInstanceOf[js.Any])
+    
+    inline def setHostedLocalStorefrontActiveNull: Self = StObject.set(x, "hostedLocalStorefrontActive", null)
     
     inline def setHostedLocalStorefrontActiveUndefined: Self = StObject.set(x, "hostedLocalStorefrontActive", js.undefined)
     
@@ -75,6 +79,8 @@ object SchemaLiaCountrySettings {
     inline def setPosDataProviderUndefined: Self = StObject.set(x, "posDataProvider", js.undefined)
     
     inline def setStorePickupActive(value: Boolean): Self = StObject.set(x, "storePickupActive", value.asInstanceOf[js.Any])
+    
+    inline def setStorePickupActiveNull: Self = StObject.set(x, "storePickupActive", null)
     
     inline def setStorePickupActiveUndefined: Self = StObject.set(x, "storePickupActive", js.undefined)
   }

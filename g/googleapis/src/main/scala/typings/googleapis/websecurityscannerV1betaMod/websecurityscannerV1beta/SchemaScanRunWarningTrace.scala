@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Output only. Defines a warning trace message for ScanRun. Warning traces
-  * provide customers with useful information that helps make the scanning
-  * process more effective.
-  */
 trait SchemaScanRunWarningTrace extends StObject {
   
   /**
-    * Output only. Indicates the warning code.
+    * Indicates the warning code.
     */
-  var code: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaScanRunWarningTrace {
   
@@ -26,6 +21,8 @@ object SchemaScanRunWarningTrace {
   extension [Self <: SchemaScanRunWarningTrace](x: Self) {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }

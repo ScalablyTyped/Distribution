@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InsertionOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +41,9 @@ trait InsertionOrderIdKey extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: InsertionOrder
+  
   /** Required. The mask to control which fields to update. */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -51,8 +55,8 @@ trait InsertionOrderIdKey extends StObject {
 }
 object InsertionOrderIdKey {
   
-  inline def apply(advertiserId: String, insertionOrderId: String): InsertionOrderIdKey = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], insertionOrderId = insertionOrderId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, insertionOrderId: String, resource: InsertionOrder): InsertionOrderIdKey = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], insertionOrderId = insertionOrderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertionOrderIdKey]
   }
   
@@ -97,6 +101,8 @@ object InsertionOrderIdKey {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: InsertionOrder): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

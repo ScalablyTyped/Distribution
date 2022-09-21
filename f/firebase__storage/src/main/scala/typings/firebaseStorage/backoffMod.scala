@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object backoffMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/backoff", JSImport.Namespace)
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/backoff", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def start(
     f: js.Function2[/* p1 */ js.Function1[/* success */ Boolean, Unit], /* canceled */ Boolean, Unit],
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    callback: js.Function1[/* repeated */ Any, Any],
     timeout: Double
   ): id = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(f.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[id]
   

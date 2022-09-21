@@ -95,7 +95,7 @@ object axisMod {
     /**
       * Explicitly set the visible axis tick and label values.
       */
-    var values: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
+    var values: js.UndefOr[js.Array[Any] | SignalRef] = js.undefined
   }
   object Axis {
     
@@ -146,13 +146,13 @@ object axisMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
       
-      inline def setValues(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -699,7 +699,7 @@ object axisMod {
       
       inline def setDomainDashUndefined: Self = StObject.set(x, "domainDash", js.undefined)
       
-      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value :_*))
+      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value*))
       
       inline def setDomainOpacity(value: NumberValue): Self = StObject.set(x, "domainOpacity", value.asInstanceOf[js.Any])
       
@@ -731,7 +731,7 @@ object axisMod {
       
       inline def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
       
-      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value :_*))
+      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value*))
       
       inline def setGridOpacity(value: NumberValue): Self = StObject.set(x, "gridOpacity", value.asInstanceOf[js.Any])
       
@@ -851,7 +851,7 @@ object axisMod {
       
       inline def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
       
-      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value :_*))
+      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value*))
       
       inline def setTickExtra(value: BooleanValue): Self = StObject.set(x, "tickExtra", value.asInstanceOf[js.Any])
       

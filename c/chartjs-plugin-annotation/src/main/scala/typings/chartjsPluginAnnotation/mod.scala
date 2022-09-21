@@ -1,6 +1,7 @@
 package typings.chartjsPluginAnnotation
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Shortcut
 import typings.chartjsPluginAnnotation.anon.Box
 import typings.chartjsPluginAnnotation.chartjsPluginAnnotationStrings.bottom
 import typings.chartjsPluginAnnotation.chartjsPluginAnnotationStrings.box
@@ -12,13 +13,16 @@ import typings.chartjsPluginAnnotation.chartjsPluginAnnotationStrings.right
 import typings.chartjsPluginAnnotation.chartjsPluginAnnotationStrings.top
 import typings.chartjsPluginAnnotation.chartjsPluginAnnotationStrings.vertical
 import typings.moment.mod.Moment
-import typings.std.Date
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
+  
+  @JSImport("chartjs-plugin-annotation", JSImport.Namespace)
+  @js.native
+  val ^ : /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.PluginServiceGlobalRegistration */ Any = js.native
   
   @js.native
   sealed trait DrawTimeOptions extends StObject
@@ -98,7 +102,7 @@ object mod {
       
       inline def setAnnotations(value: js.Array[AnnotationOptions]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
-      inline def setAnnotationsVarargs(value: AnnotationOptions*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: AnnotationOptions*): Self = StObject.set(x, "annotations", js.Array(value*))
       
       inline def setDblClickSpeed(value: Double): Self = StObject.set(x, "dblClickSpeed", value.asInstanceOf[js.Any])
       
@@ -114,7 +118,7 @@ object mod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     }
   }
   
@@ -122,7 +126,7 @@ object mod {
   // otherwise the merge with the constant ChartJsAnnotation fails
   trait AnnotationElement extends StObject {
     
-    var _model: js.Any
+    var _model: Any
     
     def configure(): Unit
     
@@ -152,7 +156,7 @@ object mod {
   object AnnotationElement {
     
     inline def apply(
-      _model: js.Any,
+      _model: Any,
       configure: () => Unit,
       destroy: () => Unit,
       draw: () => Unit,
@@ -196,13 +200,13 @@ object mod {
       
       inline def setSetDataLimits(value: () => Unit): Self = StObject.set(x, "setDataLimits", js.Any.fromFunction0(value))
       
-      inline def set_model(value: js.Any): Self = StObject.set(x, "_model", value.asInstanceOf[js.Any])
+      inline def set_model(value: Any): Self = StObject.set(x, "_model", value.asInstanceOf[js.Any])
     }
   }
   
   trait AnnotationElementOptions[T /* <: AnnotationOptions */] extends StObject {
     
-    var chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any
+    var chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ Any
     
     var id: String
     
@@ -211,7 +215,7 @@ object mod {
   object AnnotationElementOptions {
     
     inline def apply[T /* <: AnnotationOptions */](
-      chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any,
+      chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ Any,
       id: String,
       options: T
     ): AnnotationElementOptions[T] = {
@@ -222,7 +226,7 @@ object mod {
     extension [Self <: AnnotationElementOptions[?], T /* <: AnnotationOptions */](x: Self & AnnotationElementOptions[T]) {
       
       inline def setChartInstance(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ Any
       ): Self = StObject.set(x, "chartInstance", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -257,7 +261,7 @@ object mod {
     
     var defaults: AnnotationConfig
     
-    var drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ js.Any
+    var drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ Any
     
     var labelDefaults: LineAnnotationLabel
     
@@ -268,7 +272,7 @@ object mod {
     inline def apply(
       Element: Instantiable0[AnnotationElement],
       defaults: AnnotationConfig,
-      drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ js.Any,
+      drawTimeOptions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ Any,
       labelDefaults: LineAnnotationLabel,
       types: Box
     ): AnnotationStatic = {
@@ -281,7 +285,7 @@ object mod {
       inline def setDefaults(value: AnnotationConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDrawTimeOptions(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions */ Any
       ): Self = StObject.set(x, "drawTimeOptions", value.asInstanceOf[js.Any])
       
       inline def setElement(value: Instantiable0[AnnotationElement]): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
@@ -300,11 +304,11 @@ object mod {
        with AnnotationOptions {
     
     var backgroundColor: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ] = js.undefined
     
     var borderColor: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ] = js.undefined
     
     var borderWidth: js.UndefOr[Double] = js.undefined
@@ -335,13 +339,13 @@ object mod {
     extension [Self <: BoxAnnotationOptions](x: Self) {
       
       inline def setBackgroundColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
       inline def setBorderColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -370,7 +374,7 @@ object mod {
     }
   }
   
-  type ChartPointValue = Double | String | Date | Moment
+  type ChartPointValue = Double | String | js.Date | Moment
   
   trait CommonAnnotationOptions extends StObject {
     
@@ -477,7 +481,7 @@ object mod {
   trait LineAnnotationLabel extends StObject {
     
     var backgroundColor: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
@@ -487,7 +491,7 @@ object mod {
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     var fontColor: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
@@ -516,7 +520,7 @@ object mod {
     extension [Self <: LineAnnotationLabel](x: Self) {
       
       inline def setBackgroundColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
@@ -534,7 +538,7 @@ object mod {
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
       inline def setFontColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
       inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
@@ -579,7 +583,7 @@ object mod {
        with AnnotationOptions {
     
     var borderColor: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ] = js.undefined
     
     var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
@@ -612,7 +616,7 @@ object mod {
     extension [Self <: LineAnnotationOptions](x: Self) {
       
       inline def setBorderColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -625,7 +629,7 @@ object mod {
       
       inline def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
       
-      inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
+      inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value*))
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -648,4 +652,9 @@ object mod {
       inline def setValue(value: ChartPointValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.PluginServiceGlobalRegistration */ Any
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.PluginServiceGlobalRegistration */ Any = ^
 }

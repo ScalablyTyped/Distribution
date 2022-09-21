@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CashDrawerShift")
 @js.native
-class CashDrawerShift () extends StObject {
+open class CashDrawerShift () extends StObject {
   
   /**
     * The amount of money added to the cash drawer for reasons other than cash payments.

@@ -23,7 +23,7 @@ object ReturnTypeDescribeNodeResponse {
     
     inline def setParamsType(value: js.Array[js.UndefOr[DescribeNodeRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: js.UndefOr[DescribeNodeRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[DescribeNodeRequest]*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: DescribeNodeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON request template for moving ChromeOs Device to given OU in Directory
-  * Devices API.
-  */
 trait SchemaChromeOsMoveDevicesToOu extends StObject {
   
   /**
-    * ChromeOs Devices to be moved to OU
+    * Chrome OS devices to be moved to OU
     */
-  var deviceIds: js.UndefOr[js.Array[String]] = js.undefined
+  var deviceIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaChromeOsMoveDevicesToOu {
   
@@ -26,8 +22,10 @@ object SchemaChromeOsMoveDevicesToOu {
     
     inline def setDeviceIds(value: js.Array[String]): Self = StObject.set(x, "deviceIds", value.asInstanceOf[js.Any])
     
+    inline def setDeviceIdsNull: Self = StObject.set(x, "deviceIds", null)
+    
     inline def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
     
-    inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
+    inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value*))
   }
 }

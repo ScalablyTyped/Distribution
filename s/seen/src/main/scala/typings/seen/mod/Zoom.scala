@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Zoom")
 @js.native
-class Zoom protected () extends StObject {
+open class Zoom protected () extends StObject {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
   def this(elementOrId: String, options: `2`) = this()

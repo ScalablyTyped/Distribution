@@ -76,7 +76,7 @@ trait CanvasShapes extends StObject {
   
   def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Background: Shape = js.native
   
@@ -89,9 +89,9 @@ trait CanvasShapes extends StObject {
   def Item(Index: String): Shape = js.native
   def Item(Index: Double): Shape = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: Any): ShapeRange = js.native
   
   def SelectAll(): Unit = js.native
 }

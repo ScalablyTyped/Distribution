@@ -24,7 +24,7 @@ object Uri {
     
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    inline def setArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

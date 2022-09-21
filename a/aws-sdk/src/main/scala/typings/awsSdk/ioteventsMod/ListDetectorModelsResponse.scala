@@ -12,7 +12,7 @@ trait ListDetectorModelsResponse extends StObject {
   var detectorModelSummaries: js.UndefOr[DetectorModelSummaries] = js.undefined
   
   /**
-    * A token to retrieve the next set of results, or null if there are no additional results.
+    * The token that you can use to return the next set of results, or null if there are no more results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListDetectorModelsResponse {
     
     inline def setDetectorModelSummariesUndefined: Self = StObject.set(x, "detectorModelSummaries", js.undefined)
     
-    inline def setDetectorModelSummariesVarargs(value: DetectorModelSummary*): Self = StObject.set(x, "detectorModelSummaries", js.Array(value :_*))
+    inline def setDetectorModelSummariesVarargs(value: DetectorModelSummary*): Self = StObject.set(x, "detectorModelSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

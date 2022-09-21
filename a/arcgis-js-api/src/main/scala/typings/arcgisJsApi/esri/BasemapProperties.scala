@@ -70,7 +70,7 @@ object BasemapProperties {
     
     inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
     
-    inline def setBaseLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
+    inline def setBaseLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "baseLayers", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object BasemapProperties {
     
     inline def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
     
-    inline def setReferenceLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "referenceLayers", js.Array(value :_*))
+    inline def setReferenceLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "referenceLayers", js.Array(value*))
     
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

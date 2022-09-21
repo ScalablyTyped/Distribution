@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptureScreenshotResponse extends StObject {
   
   /**
-    * Base64-encoded image data.
+    * Base64-encoded image data. (Encoded as a base64 string when passed over JSON)
     */
   var data: String
 }

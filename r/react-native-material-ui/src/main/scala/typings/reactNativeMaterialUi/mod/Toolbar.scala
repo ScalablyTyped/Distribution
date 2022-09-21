@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "Toolbar")
 @js.native
-class Toolbar protected ()
-  extends Component[ToolbarProps, js.Any, js.Any] {
+open class Toolbar protected () extends Component[ToolbarProps, Any, Any] {
   def this(props: ToolbarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ToolbarProps, context: js.Any) = this()
+  def this(props: ToolbarProps, context: Any) = this()
 }

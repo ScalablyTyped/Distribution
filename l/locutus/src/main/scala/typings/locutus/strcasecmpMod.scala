@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strcasecmpMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(fString1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(fString1: js.Any, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fString1: Unit, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(fString1: Any): Any = ^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(fString1: Any, fString2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fString1: Unit, fString2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strcasecmp", JSImport.Namespace)
   @js.native

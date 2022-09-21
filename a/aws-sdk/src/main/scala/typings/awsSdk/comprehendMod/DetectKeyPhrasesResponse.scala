@@ -24,6 +24,6 @@ object DetectKeyPhrasesResponse {
     
     inline def setKeyPhrasesUndefined: Self = StObject.set(x, "KeyPhrases", js.undefined)
     
-    inline def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value :_*))
+    inline def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value*))
   }
 }

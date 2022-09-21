@@ -10,16 +10,16 @@ object customizerMod {
   
   @JSImport("@uifabric/utilities/lib/customizations/Customizer", "Customizer")
   @js.native
-  class Customizer protected ()
-    extends Component[ICustomizerProps, js.Object, js.Any] {
+  open class Customizer protected ()
+    extends Component[ICustomizerProps, js.Object, Any] {
     def this(props: ICustomizerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICustomizerProps, context: js.Any) = this()
+    def this(props: ICustomizerProps, context: Any) = this()
     
-    /* private */ var _onCustomizationChange: js.Any = js.native
+    /* private */ var _onCustomizationChange: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCustomizer(): Unit = js.native

@@ -22,6 +22,6 @@ object Alternatives {
     
     inline def setAlternatives(value: js.Array[Length]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    inline def setAlternativesVarargs(value: Length*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Length*): Self = StObject.set(x, "alternatives", js.Array(value*))
   }
 }

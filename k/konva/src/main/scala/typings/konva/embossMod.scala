@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object embossMod {
   
-  @JSImport("konva/types/filters/Emboss", "Emboss")
+  @JSImport("konva/lib/filters/Emboss", "Emboss")
   @js.native
   val Emboss: Filter = js.native
 }

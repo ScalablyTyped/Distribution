@@ -18,7 +18,7 @@ trait RunsResource extends StObject {
   def get(): Request[TransferRun] = js.native
   def get(request: Alt): Request[TransferRun] = js.native
   
-  /** Returns information about running and completed jobs. */
+  /** Returns information about running and completed transfer runs. */
   def list(): Request[ListTransferRunsResponse] = js.native
   def list(request: Key): Request[ListTransferRunsResponse] = js.native
   

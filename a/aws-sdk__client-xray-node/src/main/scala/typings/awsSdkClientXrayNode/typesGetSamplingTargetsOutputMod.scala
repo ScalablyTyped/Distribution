@@ -4,7 +4,6 @@ import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.typesSamplingTargetDocumentMod.UnmarshalledSamplingTargetDocument
 import typings.awsSdkClientXrayNode.typesUnprocessedStatisticsMod.UnmarshalledUnprocessedStatistics
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object typesGetSamplingTargetsOutputMod {
     /**
       * <p>The last time a user changed the sampling rule configuration. If the sampling rule configuration changed since the service last retrieved it, the service should call <a>GetSamplingRules</a> to get the latest version.</p>
       */
-    var LastRuleModification: js.UndefOr[Date] = js.undefined
+    var LastRuleModification: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Updated rules that the service should use to sample requests.</p>
@@ -47,7 +46,7 @@ object typesGetSamplingTargetsOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setLastRuleModification(value: Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
+      inline def setLastRuleModification(value: js.Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
       
       inline def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
       
@@ -55,13 +54,13 @@ object typesGetSamplingTargetsOutputMod {
       
       inline def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
       
-      inline def setSamplingTargetDocumentsVarargs(value: UnmarshalledSamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
+      inline def setSamplingTargetDocumentsVarargs(value: UnmarshalledSamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value*))
       
       inline def setUnprocessedStatistics(value: js.Array[UnmarshalledUnprocessedStatistics]): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
       
       inline def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
       
-      inline def setUnprocessedStatisticsVarargs(value: UnmarshalledUnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
+      inline def setUnprocessedStatisticsVarargs(value: UnmarshalledUnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value*))
     }
   }
 }

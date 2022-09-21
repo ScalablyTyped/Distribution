@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateContactFlowRequest extends StObject {
   
   /**
-    * The content of the contact flow. 
+    * The content of the flow. 
     */
   var Content: ContactFlowContent
   
   /**
-    * The description of the contact flow. 
+    * The description of the flow. 
     */
   var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
@@ -22,17 +22,17 @@ trait CreateContactFlowRequest extends StObject {
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The name of the contact flow.
+    * The name of the flow.
     */
   var Name: ContactFlowName
   
   /**
-    * One or more tags.
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The type of the contact flow. For descriptions of the available types, see Choose a Contact Flow Type in the Amazon Connect Administrator Guide.
+    * The type of the flow. For descriptions of the available types, see Choose a flow type in the Amazon Connect Administrator Guide.
     */
   var Type: ContactFlowType
 }

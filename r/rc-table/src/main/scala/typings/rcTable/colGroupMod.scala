@@ -33,7 +33,7 @@ object colGroupMod {
       
       inline def setColWidths(value: js.Array[Double | String]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      inline def setColWidthsVarargs(value: (Double | String)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | String)*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setColumCount(value: Double): Self = StObject.set(x, "columCount", value.asInstanceOf[js.Any])
       
@@ -43,7 +43,7 @@ object colGroupMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "columns", js.Array(value*))
     }
   }
 }

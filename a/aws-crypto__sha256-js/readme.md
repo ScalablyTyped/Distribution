@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__sha256-js
 
-Typings are for version 0.1.0-preview.4
+Typings are for version 2.0.2
 
 ## Library description:
 A pure JS implementation SHA256.
@@ -10,13 +10,13 @@ A pure JS implementation SHA256.
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/sha256-js |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 249 |
-| # downloads        | 7112769 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2064410666666668E7 |
+| # stars            | 39.0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers#readme)
+- [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers/tree/master/packages/sha256-js)
 - [Bugs](https://github.com/aws/aws-sdk-js-crypto-helpers/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-crypto-helpers)
 - [Npm](https://www.npmjs.com/package/%40aws-crypto%2Fsha256-js)

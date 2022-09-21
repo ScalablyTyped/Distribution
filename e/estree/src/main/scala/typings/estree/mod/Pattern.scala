@@ -12,12 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.AssignmentPattern
   - typings.estree.mod.MemberExpression
 */
-trait Pattern
-  extends StObject
-     with Node
+trait Pattern extends StObject
 object Pattern {
   
-  inline def ArrayPattern(elements: js.Array[Pattern]): typings.estree.mod.ArrayPattern = {
+  inline def ArrayPattern(elements: js.Array[Pattern | Null]): typings.estree.mod.ArrayPattern = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[typings.estree.mod.ArrayPattern]
@@ -35,7 +33,12 @@ object Pattern {
     __obj.asInstanceOf[typings.estree.mod.Identifier]
   }
   
-  inline def MemberExpression(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): typings.estree.mod.MemberExpression = {
+  inline def MemberExpression(
+    computed: Boolean,
+    `object`: Expression | Super,
+    optional: Boolean,
+    property: Expression | PrivateIdentifier
+  ): typings.estree.mod.MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")

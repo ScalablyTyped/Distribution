@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Heightfield")
 @js.native
-class Heightfield () extends Shape {
+open class Heightfield () extends Shape {
   def this(options: HeightfieldOptions) = this()
   
   var elementWidth: Double = js.native

@@ -41,7 +41,7 @@ object ContactFolder {
     
     inline def setChildFoldersUndefined: Self = StObject.set(x, "childFolders", js.undefined)
     
-    inline def setChildFoldersVarargs(value: ContactFolder*): Self = StObject.set(x, "childFolders", js.Array(value :_*))
+    inline def setChildFoldersVarargs(value: ContactFolder*): Self = StObject.set(x, "childFolders", js.Array(value*))
     
     inline def setContacts(value: NullableOption[js.Array[Contact]]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object ContactFolder {
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
-    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object ContactFolder {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
@@ -77,6 +77,6 @@ object ContactFolder {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
   }
 }

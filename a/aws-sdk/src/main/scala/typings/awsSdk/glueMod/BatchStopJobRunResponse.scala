@@ -29,12 +29,12 @@ object BatchStopJobRunResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchStopJobRunError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchStopJobRunError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setSuccessfulSubmissions(value: BatchStopJobRunSuccessfulSubmissionList): Self = StObject.set(x, "SuccessfulSubmissions", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulSubmissionsUndefined: Self = StObject.set(x, "SuccessfulSubmissions", js.undefined)
     
-    inline def setSuccessfulSubmissionsVarargs(value: BatchStopJobRunSuccessfulSubmission*): Self = StObject.set(x, "SuccessfulSubmissions", js.Array(value :_*))
+    inline def setSuccessfulSubmissionsVarargs(value: BatchStopJobRunSuccessfulSubmission*): Self = StObject.set(x, "SuccessfulSubmissions", js.Array(value*))
   }
 }

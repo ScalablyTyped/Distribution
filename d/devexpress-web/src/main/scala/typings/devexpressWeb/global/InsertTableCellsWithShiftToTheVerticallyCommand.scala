@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTableCellsWithShiftToTheVerticallyCommand")
 @js.native
-class InsertTableCellsWithShiftToTheVerticallyCommand ()
+open class InsertTableCellsWithShiftToTheVerticallyCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTableCellsWithShiftToTheVerticallyCommand {
   

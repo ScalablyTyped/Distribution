@@ -17,7 +17,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiActiveSensingMessage")
   @js.native
   /** Creates a new MidiActiveSensingMessage object. */
-  class MidiActiveSensingMessage ()
+  open class MidiActiveSensingMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiActiveSensingMessage {
     
@@ -37,7 +37,7 @@ object Midi {
   /** Represents a MIDI message that specifies the channel pressure. */
   @JSGlobal("Windows.Devices.Midi.MidiChannelPressureMessage")
   @js.native
-  class MidiChannelPressureMessage protected ()
+  open class MidiChannelPressureMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiChannelPressureMessage {
     /**
@@ -72,7 +72,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiContinueMessage")
   @js.native
   /** Creates a new MidiContinueMessage object. */
-  class MidiContinueMessage ()
+  open class MidiContinueMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiContinueMessage {
     
@@ -92,7 +92,7 @@ object Midi {
   /** Represents a MIDI message that specifies a control change. */
   @JSGlobal("Windows.Devices.Midi.MidiControlChangeMessage")
   @js.native
-  class MidiControlChangeMessage protected ()
+  open class MidiControlChangeMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiControlChangeMessage {
     /**
@@ -218,7 +218,7 @@ object Midi {
   /** Represents a MIDI messages that specifies a MIDI note to turn off. */
   @JSGlobal("Windows.Devices.Midi.MidiNoteOffMessage")
   @js.native
-  class MidiNoteOffMessage protected ()
+  open class MidiNoteOffMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiNoteOffMessage {
     /**
@@ -257,7 +257,7 @@ object Midi {
   /** Represents a MIDI message that specifies a MIDI note to turn on. */
   @JSGlobal("Windows.Devices.Midi.MidiNoteOnMessage")
   @js.native
-  class MidiNoteOnMessage protected ()
+  open class MidiNoteOnMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiNoteOnMessage {
     /**
@@ -347,7 +347,7 @@ object Midi {
   /** Represents a MIDI message that specifies a pitch bend change. */
   @JSGlobal("Windows.Devices.Midi.MidiPitchBendChangeMessage")
   @js.native
-  class MidiPitchBendChangeMessage protected ()
+  open class MidiPitchBendChangeMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiPitchBendChangeMessage {
     /**
@@ -381,7 +381,7 @@ object Midi {
   /** Represents a MIDI message that specifies the polyphonic key pressure. */
   @JSGlobal("Windows.Devices.Midi.MidiPolyphonicKeyPressureMessage")
   @js.native
-  class MidiPolyphonicKeyPressureMessage protected ()
+  open class MidiPolyphonicKeyPressureMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiPolyphonicKeyPressureMessage {
     /**
@@ -420,7 +420,7 @@ object Midi {
   /** Represents a MIDI message that specifies a program change. */
   @JSGlobal("Windows.Devices.Midi.MidiProgramChangeMessage")
   @js.native
-  class MidiProgramChangeMessage protected ()
+  open class MidiProgramChangeMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiProgramChangeMessage {
     /**
@@ -454,7 +454,7 @@ object Midi {
   /** Represents a MIDI message that specifies a song position pointer. */
   @JSGlobal("Windows.Devices.Midi.MidiSongPositionPointerMessage")
   @js.native
-  class MidiSongPositionPointerMessage protected ()
+  open class MidiSongPositionPointerMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiSongPositionPointerMessage {
     /**
@@ -483,7 +483,7 @@ object Midi {
   /** Represents a MIDI message that specifies the selected song. */
   @JSGlobal("Windows.Devices.Midi.MidiSongSelectMessage")
   @js.native
-  class MidiSongSelectMessage protected ()
+  open class MidiSongSelectMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiSongSelectMessage {
     /**
@@ -513,7 +513,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiStartMessage")
   @js.native
   /** Creates a new MidiStartMessage object. */
-  class MidiStartMessage ()
+  open class MidiStartMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiStartMessage {
     
@@ -534,7 +534,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiStopMessage")
   @js.native
   /** Creates a new MidiStopMessage object. */
-  class MidiStopMessage ()
+  open class MidiStopMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiStopMessage {
     
@@ -620,7 +620,7 @@ object Midi {
   /** Represents a MIDI message that specifies a system exclusive message. */
   @JSGlobal("Windows.Devices.Midi.MidiSystemExclusiveMessage")
   @js.native
-  class MidiSystemExclusiveMessage protected ()
+  open class MidiSystemExclusiveMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiSystemExclusiveMessage {
     /**
@@ -646,7 +646,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiSystemResetMessage")
   @js.native
   /** Creates a new MidiSystemResetMessage object. */
-  class MidiSystemResetMessage ()
+  open class MidiSystemResetMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiSystemResetMessage {
     
@@ -666,7 +666,7 @@ object Midi {
   /** Represents a MIDI message that specifies a time code. */
   @JSGlobal("Windows.Devices.Midi.MidiTimeCodeMessage")
   @js.native
-  class MidiTimeCodeMessage protected ()
+  open class MidiTimeCodeMessage protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiTimeCodeMessage {
     /**
@@ -701,7 +701,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiTimingClockMessage")
   @js.native
   /** Creates a new MidiTimingClockMessage object. */
-  class MidiTimingClockMessage ()
+  open class MidiTimingClockMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiTimingClockMessage {
     
@@ -722,7 +722,7 @@ object Midi {
   @JSGlobal("Windows.Devices.Midi.MidiTuneRequestMessage")
   @js.native
   /** Creates a new MidiTuneRequestMessage object. */
-  class MidiTuneRequestMessage ()
+  open class MidiTuneRequestMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiTuneRequestMessage {
     

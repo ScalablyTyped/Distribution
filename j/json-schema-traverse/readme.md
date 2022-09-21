@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-schema-traverse
 
-Typings are for version 0.4
+Typings are for version 1.0.0
 
 ## Library description:
 Traverse JSON Schema passing each schema object to callback
@@ -11,9 +11,9 @@ Traverse JSON Schema passing each schema object to callback
 | Full name          | json-schema-traverse |
 | Keywords           | JSON-Schema, traverse, iterate |
 | # releases         | 3 |
-| # dependents       | 142 |
-| # downloads        | 998411547 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2959336933333334E8 |
+| # stars            | 86.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/json-schema-traverse#readme)
@@ -24,7 +24,7 @@ Traverse JSON Schema passing each schema object to callback
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

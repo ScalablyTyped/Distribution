@@ -10,15 +10,12 @@ Object properties matcher for Chai
 | ------------------ | :-------------: |
 | Full name          | chai-subset |
 | Keywords           | chai, chai-plugin, objects, subset, contains, plugin, containSubset, deep, like, match, similar, includes, superset |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 5353406 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 915860.0 |
+| # stars            | 82.0 |
 
 ## Links
-- [Homepage](https://github.com/debitoor/chai-subset)
-- [Bugs](https://github.com/debitoor/chai-subset/issues)
-- [Repository](https://github.com/debitoor/chai-subset)
 - [Npm](https://www.npmjs.com/package/chai-subset)
     
 

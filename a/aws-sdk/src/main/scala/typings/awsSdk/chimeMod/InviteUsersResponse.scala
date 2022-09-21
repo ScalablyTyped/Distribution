@@ -24,6 +24,6 @@ object InviteUsersResponse {
     
     inline def setInvitesUndefined: Self = StObject.set(x, "Invites", js.undefined)
     
-    inline def setInvitesVarargs(value: Invite*): Self = StObject.set(x, "Invites", js.Array(value :_*))
+    inline def setInvitesVarargs(value: Invite*): Self = StObject.set(x, "Invites", js.Array(value*))
   }
 }

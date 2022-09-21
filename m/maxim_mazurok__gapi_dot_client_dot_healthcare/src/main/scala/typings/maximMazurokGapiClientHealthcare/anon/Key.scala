@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
+import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.AttributeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,13 @@ trait Key extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /**
+    * Resource name of the Attribute definition, of the form
+    * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}/attributeDefinitions/{attribute_definition_id}`. Cannot be changed after
+    * creation.
+    */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -34,8 +42,15 @@ trait Key extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Source FHIR store resource name. For example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. */
-  var sourceStore: String
+  /** Request body */
+  var resource: AttributeDefinition
+  
+  /**
+    * Required. The update mask that applies to the resource. For the `FieldMask` definition, see
+    * https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask. Only the `description`, `allowed_values`, `consent_default_values` and
+    * `data_mapping_default_value` fields can be updated. The updated `allowed_values` must contain all values from the previous `allowed_values`.
+    */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -45,8 +60,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(sourceStore: String): Key = {
-    val __obj = js.Dynamic.literal(sourceStore = sourceStore.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: AttributeDefinition): Key = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -76,6 +91,8 @@ object Key {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -88,7 +105,11 @@ object Key {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setSourceStore(value: String): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
+    inline def setResource(value: AttributeDefinition): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

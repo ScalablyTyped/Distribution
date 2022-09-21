@@ -1,5 +1,8 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DAYS
+import typings.awsSdk.awsSdkStrings.DEFAULT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type BackupId = java.lang.String
 
-type BackupPolicy = typings.awsSdk.awsSdkStrings.DEFAULT | java.lang.String
+type BackupPolicy = DEFAULT | java.lang.String
 
-type BackupRetentionType = typings.awsSdk.awsSdkStrings.DAYS | java.lang.String
+type BackupRetentionType = DAYS | java.lang.String
 
 type BackupRetentionValue = java.lang.String
 
@@ -20,11 +23,11 @@ type BackupRetentionValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.PENDING_DELETION
   - java.lang.String
 */
-type BackupState = typings.awsSdk.cloudhsmv2Mod._BackupState | java.lang.String
+type BackupState = _BackupState | java.lang.String
 
-type Backups = js.Array[typings.awsSdk.cloudhsmv2Mod.Backup]
+type Backups = js.Array[Backup]
 
-type BackupsMaxSize = scala.Double
+type BackupsMaxSize = Double
 
 type Boolean = scala.Boolean
 
@@ -44,21 +47,21 @@ type ClusterId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DEGRADED
   - java.lang.String
 */
-type ClusterState = typings.awsSdk.cloudhsmv2Mod._ClusterState | java.lang.String
+type ClusterState = _ClusterState | java.lang.String
 
-type Clusters = js.Array[typings.awsSdk.cloudhsmv2Mod.Cluster]
+type Clusters = js.Array[Cluster]
 
-type ClustersMaxSize = scala.Double
+type ClustersMaxSize = Double
 
 type EniId = java.lang.String
 
 type ExternalAz = java.lang.String
 
-type ExternalSubnetMapping = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudhsmv2Mod.SubnetId]
+type ExternalSubnetMapping = StringDictionary[SubnetId]
 
 type Field = java.lang.String
 
-type Filters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudhsmv2Mod.Strings]
+type Filters = StringDictionary[Strings]
 
 type HsmId = java.lang.String
 
@@ -70,15 +73,15 @@ type HsmId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type HsmState = typings.awsSdk.cloudhsmv2Mod._HsmState | java.lang.String
+type HsmState = _HsmState | java.lang.String
 
 type HsmType = java.lang.String
 
-type Hsms = js.Array[typings.awsSdk.cloudhsmv2Mod.Hsm]
+type Hsms = js.Array[Hsm]
 
 type IpAddress = java.lang.String
 
-type MaxSize = scala.Double
+type MaxSize = Double
 
 type NextToken = java.lang.String
 
@@ -94,21 +97,21 @@ type StateMessage = java.lang.String
 
 type String = java.lang.String
 
-type Strings = js.Array[typings.awsSdk.cloudhsmv2Mod.String]
+type Strings = js.Array[String]
 
 type SubnetId = java.lang.String
 
-type SubnetIds = js.Array[typings.awsSdk.cloudhsmv2Mod.SubnetId]
+type SubnetIds = js.Array[SubnetId]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.cloudhsmv2Mod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.cloudhsmv2Mod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type VpcId = java.lang.String
 
@@ -117,4 +120,4 @@ type VpcId = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloudhsmv2Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

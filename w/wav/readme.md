@@ -11,9 +11,9 @@ Typings are for version 1.0
 | Full name          | wav |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 114552 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16531.0 |
+| # stars            | 166.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-wav#readme)

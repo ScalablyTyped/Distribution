@@ -4,16 +4,16 @@
 Typings are for version 0.32
 
 ## Library description:
-Bootstrap 4 components built with React
+Bootstrap 5 components built with React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap |
-| Keywords           | react, ecosystem-react, react-component, bootstrap |
-| # releases         | 27 |
-| # dependents       | 1589 |
-| # downloads        | 34015640 |
-| # stars            | 50 |
+| Keywords           | bootstrap, react, component, components, ecosystem-react, react-component |
+| # releases         | 45 |
+| # dependents       | 0.0 |
+| # downloads        | 6268988.333333333 |
+| # stars            | 21031.0 |
 
 ## Links
 - [Homepage](https://react-bootstrap.github.io/)

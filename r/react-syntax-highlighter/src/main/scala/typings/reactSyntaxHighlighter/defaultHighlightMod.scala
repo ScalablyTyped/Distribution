@@ -12,8 +12,20 @@ object defaultHighlightMod {
   
   @JSImport("react-syntax-highlighter/dist/cjs/default-highlight", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SyntaxHighlighterProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SyntaxHighlighterProps, js.Object, Any]
+  /* static members */
+  object default {
+    
+    @JSImport("react-syntax-highlighter/dist/cjs/default-highlight", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-syntax-highlighter/dist/cjs/default-highlight", "default.supportedLanguages")
+    @js.native
+    def supportedLanguages: js.Array[String] = js.native
+    inline def supportedLanguages_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedLanguages")(x.asInstanceOf[js.Any])
+  }
   
-  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, js.Any]
+  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, Any]
 }

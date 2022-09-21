@@ -1,12 +1,5 @@
 package typings.cesium.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,60 +11,86 @@ sealed trait ComponentDatatype extends StObject
 object ComponentDatatype extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ComponentDatatype & Double] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[ComponentDatatype & scala.Nothing] = js.native
   
+  /**
+    * 8-bit signed byte corresponding to <code>gl.BYTE</code> and the type
+    * of an element in <code>Int8Array</code>.
+    */
   @js.native
   sealed trait BYTE
     extends StObject
        with ComponentDatatype
-  /* 0 */ val BYTE: typings.cesium.mod.ComponentDatatype.BYTE & Double = js.native
+  /* WebGLConstants.BYTE */ val BYTE: typings.cesium.mod.ComponentDatatype.BYTE & scala.Nothing = js.native
   
+  /**
+    * 64-bit floating-point corresponding to <code>gl.DOUBLE</code> (in Desktop OpenGL;
+    * this is not supported in WebGL, and is emulated in Cesium via {@link GeometryPipeline.encodeAttribute})
+    * and the type of an element in <code>Float64Array</code>.
+    */
   @js.native
   sealed trait DOUBLE
     extends StObject
        with ComponentDatatype
-  /* 5 */ val DOUBLE: typings.cesium.mod.ComponentDatatype.DOUBLE & Double = js.native
+  /* WebGLConstants.DOUBLE */ val DOUBLE: typings.cesium.mod.ComponentDatatype.DOUBLE & scala.Nothing = js.native
   
+  /**
+    * 32-bit floating-point corresponding to <code>FLOAT</code> and the type
+    * of an element in <code>Float32Array</code>.
+    */
   @js.native
   sealed trait FLOAT
     extends StObject
        with ComponentDatatype
-  /* 4 */ val FLOAT: typings.cesium.mod.ComponentDatatype.FLOAT & Double = js.native
+  /* WebGLConstants.FLOAT */ val FLOAT: typings.cesium.mod.ComponentDatatype.FLOAT & scala.Nothing = js.native
   
+  /**
+    * 32-bit signed int corresponding to <code>INT</code> and the type
+    * of an element in <code>Int32Array</code>.
+    */
+  @js.native
+  sealed trait INT
+    extends StObject
+       with ComponentDatatype
+  /* WebGLConstants.INT */ val INT: typings.cesium.mod.ComponentDatatype.INT & scala.Nothing = js.native
+  
+  /**
+    * 16-bit signed short corresponding to <code>SHORT</code> and the type
+    * of an element in <code>Int16Array</code>.
+    */
   @js.native
   sealed trait SHORT
     extends StObject
        with ComponentDatatype
-  /* 2 */ val SHORT: typings.cesium.mod.ComponentDatatype.SHORT & Double = js.native
+  /* WebGLConstants.SHORT */ val SHORT: typings.cesium.mod.ComponentDatatype.SHORT & scala.Nothing = js.native
   
+  /**
+    * 8-bit unsigned byte corresponding to <code>UNSIGNED_BYTE</code> and the type
+    * of an element in <code>Uint8Array</code>.
+    */
   @js.native
   sealed trait UNSIGNED_BYTE
     extends StObject
        with ComponentDatatype
-  /* 1 */ val UNSIGNED_BYTE: typings.cesium.mod.ComponentDatatype.UNSIGNED_BYTE & Double = js.native
+  /* WebGLConstants.UNSIGNED_BYTE */ val UNSIGNED_BYTE: typings.cesium.mod.ComponentDatatype.UNSIGNED_BYTE & scala.Nothing = js.native
   
+  /**
+    * 32-bit unsigned int corresponding to <code>UNSIGNED_INT</code> and the type
+    * of an element in <code>Uint32Array</code>.
+    */
+  @js.native
+  sealed trait UNSIGNED_INT
+    extends StObject
+       with ComponentDatatype
+  /* WebGLConstants.UNSIGNED_INT */ val UNSIGNED_INT: typings.cesium.mod.ComponentDatatype.UNSIGNED_INT & scala.Nothing = js.native
+  
+  /**
+    * 16-bit unsigned short corresponding to <code>UNSIGNED_SHORT</code> and the type
+    * of an element in <code>Uint16Array</code>.
+    */
   @js.native
   sealed trait UNSIGNED_SHORT
     extends StObject
        with ComponentDatatype
-  /* 3 */ val UNSIGNED_SHORT: typings.cesium.mod.ComponentDatatype.UNSIGNED_SHORT & Double = js.native
-  
-  def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer, byteOffset: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer, byteOffset: Double, length: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer, byteOffset: Unit, length: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  
-  def createTypedArray(componentDatatype: ComponentDatatype, valuesOrLength: js.Array[js.Any]): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  def createTypedArray(componentDatatype: ComponentDatatype, valuesOrLength: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
-  
-  def fromTypedArray(array: Float32Array): ComponentDatatype = js.native
-  def fromTypedArray(array: Float64Array): ComponentDatatype = js.native
-  def fromTypedArray(array: Int16Array): ComponentDatatype = js.native
-  def fromTypedArray(array: Int8Array): ComponentDatatype = js.native
-  def fromTypedArray(array: Uint16Array): ComponentDatatype = js.native
-  def fromTypedArray(array: Uint8Array): ComponentDatatype = js.native
-  
-  def getSizeInBytes(componentDatatype: ComponentDatatype): Double = js.native
-  
-  def validate(componentDatatype: ComponentDatatype): Boolean = js.native
+  /* WebGLConstants.UNSIGNED_SHORT */ val UNSIGNED_SHORT: typings.cesium.mod.ComponentDatatype.UNSIGNED_SHORT & scala.Nothing = js.native
 }

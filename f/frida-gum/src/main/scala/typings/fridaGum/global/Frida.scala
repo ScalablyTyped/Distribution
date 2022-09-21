@@ -16,13 +16,6 @@ object Frida {
   val heapSize: Double = js.native
   
   /**
-    * Source map for the GumJS runtime.
-    */
-  @JSGlobal("Frida.sourceMap")
-  @js.native
-  val sourceMap: typings.fridaGum.SourceMap = js.native
-  
-  /**
     * The current Frida version.
     */
   @JSGlobal("Frida.version")

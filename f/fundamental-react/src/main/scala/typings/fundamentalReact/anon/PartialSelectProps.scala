@@ -4,6 +4,7 @@ import typings.fundamentalReact.selectMod.Option
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.NativeMouseEvent
+import typings.std.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
@@ -26,7 +27,7 @@ trait PartialSelectProps extends StObject {
   
   var emptyAriaLabel: js.UndefOr[String] = js.undefined
   
-  var formMessageProps: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var formMessageProps: js.UndefOr[Record[String, Any]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -40,7 +41,7 @@ trait PartialSelectProps extends StObject {
   
   var listItemTextClassName: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement, Element], Unit]] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
@@ -72,7 +73,7 @@ trait PartialSelectProps extends StObject {
   
   var validationState: js.UndefOr[State] = js.undefined
   
-  var wrapperProps: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var wrapperProps: js.UndefOr[Record[String, Any]] = js.undefined
 }
 object PartialSelectProps {
   
@@ -103,7 +104,7 @@ object PartialSelectProps {
     
     inline def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
     
-    inline def setFormMessageProps(value: Record[String, js.Any]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
+    inline def setFormMessageProps(value: Record[String, Any]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
     
     inline def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
     
@@ -131,7 +132,7 @@ object PartialSelectProps {
     
     inline def setListItemTextClassNameUndefined: Self = StObject.set(x, "listItemTextClassName", js.undefined)
     
-    inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
@@ -149,7 +150,7 @@ object PartialSelectProps {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -183,7 +184,7 @@ object PartialSelectProps {
     
     inline def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
-    inline def setWrapperProps(value: Record[String, js.Any]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+    inline def setWrapperProps(value: Record[String, Any]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     
     inline def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)
   }

@@ -1,27 +1,33 @@
 package typings.ws
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.node.netMod.Socket
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
 import typings.node.tlsMod.SecureContextOptions
 import typings.node.urlMod.URL_
 import typings.node.zlibMod.ZlibOptions
-import typings.std.ArrayBuffer
-import typings.std.Error
 import typings.std.Set
 import typings.ws.anon.Binary
 import typings.ws.anon.ChunkSize
-import typings.ws.anon.Code
 import typings.ws.anon.Origin
-import typings.ws.anon.Target
+import typings.ws.anon.TypeofWebSocket
+import typings.ws.wsBooleans.`false`
+import typings.ws.wsNumbers.`0`
+import typings.ws.wsNumbers.`1`
+import typings.ws.wsNumbers.`2`
+import typings.ws.wsNumbers.`3`
 import typings.ws.wsStrings.`unexpected-response`
 import typings.ws.wsStrings.close
 import typings.ws.wsStrings.connection
@@ -37,13 +43,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   // WebSocket socket.
   @JSImport("ws", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WebSocket {
+  open class ^ protected ()
+    extends typings.ws.mod.WebSocket {
     def this(address: String) = this()
+    def this(address: Null) = this()
     def this(address: URL_) = this()
     def this(address: String, options: ClientRequestArgs) = this()
     def this(address: String, options: ClientOptions) = this()
@@ -68,163 +76,385 @@ object mod {
   }
   @JSImport("ws", JSImport.Namespace)
   @js.native
-  val ^ : js.Any = js.native
+  val ^ : /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebSocketAlias */ Any = js.native
   
+  /** The connection is closed. */
   /* static member */
   @JSImport("ws", "CLOSED")
   @js.native
-  def CLOSED: Double = js.native
-  inline def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+  val CLOSED: `3` = js.native
   
+  /** The connection is in the process of closing. */
   /* static member */
   @JSImport("ws", "CLOSING")
   @js.native
-  def CLOSING: Double = js.native
-  inline def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+  val CLOSING: `2` = js.native
   
+  /** The connection is not yet open. */
   /* static member */
   @JSImport("ws", "CONNECTING")
   @js.native
-  def CONNECTING: Double = js.native
-  inline def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+  val CONNECTING: `0` = js.native
   
+  /** The connection is open and ready to communicate. */
   /* static member */
   @JSImport("ws", "OPEN")
   @js.native
-  def OPEN: Double = js.native
-  inline def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+  val OPEN: `1` = js.native
   
   // WebSocket Server
   @JSImport("ws", "Server")
   @js.native
-  class Server () extends EventEmitter {
+  open class Server[T /* <: typings.ws.mod.WebSocket */] () extends EventEmitter {
     def this(options: ServerOptions) = this()
     def this(options: Unit, callback: js.Function0[Unit]) = this()
     def this(options: ServerOptions, callback: js.Function0[Unit]) = this()
     
+    def addListener(event: close | listening, cb: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
+    def addListener_connection(event: connection, cb: js.Function2[/* client */ T, /* request */ IncomingMessage, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_connection(event: connection, cb: js.Function1[/* client */ WebSocket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_headers(
       event: headers,
       cb: js.Function2[/* headers */ js.Array[String], /* request */ IncomingMessage, Unit]
     ): this.type = js.native
-    @JSName("addListener")
-    def addListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
     
     def address(): AddressInfo | String = js.native
     
-    var clients: Set[WebSocket] = js.native
+    var clients: Set[T] = js.native
     
     def close(): Unit = js.native
-    def close(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def close(cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def handleUpgrade(
       request: IncomingMessage,
-      socket: Socket,
+      socket: Duplex,
       upgradeHead: Buffer,
-      callback: js.Function2[/* client */ WebSocket, /* request */ IncomingMessage, Unit]
+      callback: js.Function2[/* client */ T, /* request */ IncomingMessage, Unit]
     ): Unit = js.native
     
-    def off(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    def off(event: close | listening, cb: js.ThisFunction0[/* this */ Server[T], Unit]): this.type = js.native
+    def off(event: String, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
+    def off(event: js.Symbol, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
     @JSName("off")
     def off_connection(
       event: connection,
-      cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+      cb: js.ThisFunction2[/* this */ Server[T], /* socket */ T, /* request */ IncomingMessage, Unit]
     ): this.type = js.native
     @JSName("off")
-    def off_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+    def off_error(event: error, cb: js.ThisFunction1[/* this */ Server[T], /* error */ js.Error, Unit]): this.type = js.native
     @JSName("off")
     def off_headers(
       event: headers,
       cb: js.ThisFunction2[
-          /* this */ this.type, 
+          /* this */ Server[T], 
           /* headers */ js.Array[String], 
           /* request */ IncomingMessage, 
           Unit
         ]
     ): this.type = js.native
-    @JSName("off")
-    def off_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     
-    def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    def on(event: close | listening, cb: js.ThisFunction0[/* this */ Server[T], Unit]): this.type = js.native
+    def on(event: String, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
     // Events
     @JSName("on")
     def on_connection(
       event: connection,
-      cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+      cb: js.ThisFunction2[/* this */ Server[T], /* socket */ T, /* request */ IncomingMessage, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, cb: js.ThisFunction1[/* this */ Server[T], /* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_headers(
       event: headers,
       cb: js.ThisFunction2[
-          /* this */ this.type, 
+          /* this */ Server[T], 
           /* headers */ js.Array[String], 
           /* request */ IncomingMessage, 
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    def once(event: close | listening, cb: js.ThisFunction0[/* this */ Server[T], Unit]): this.type = js.native
+    def once(event: String, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.ThisFunction1[/* this */ Server[T], /* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_connection(
       event: connection,
-      cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+      cb: js.ThisFunction2[/* this */ Server[T], /* socket */ T, /* request */ IncomingMessage, Unit]
     ): this.type = js.native
     @JSName("once")
-    def once_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+    def once_error(event: error, cb: js.ThisFunction1[/* this */ Server[T], /* error */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_headers(
       event: headers,
       cb: js.ThisFunction2[
-          /* this */ this.type, 
+          /* this */ Server[T], 
           /* headers */ js.Array[String], 
           /* request */ IncomingMessage, 
           Unit
         ]
     ): this.type = js.native
-    @JSName("once")
-    def once_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     
     var options: ServerOptions = js.native
     
     var path: String = js.native
     
+    def removeListener(event: close | listening, cb: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
+    def removeListener_connection(event: connection, cb: js.Function1[/* client */ T, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_connection(event: connection, cb: js.Function1[/* client */ WebSocket, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_headers(
       event: headers,
       cb: js.Function2[/* headers */ js.Array[String], /* request */ IncomingMessage, Unit]
     ): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
     
     def shouldHandle(request: IncomingMessage): Boolean | js.Promise[Boolean] = js.native
   }
   
+  // WebSocket socket.
+  @js.native
+  trait WebSocket
+    extends EventEmitter
+       with typings.std.WebSocket {
+    
+    @JSName("addEventListener")
+    def addEventListener_close(method: close, cb: js.Function1[/* event */ CloseEvent, Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_close(method: close, cb: js.Function1[/* event */ CloseEvent, Unit], options: EventListenerOptions): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_error(method: error, cb: js.Function1[/* event */ ErrorEvent, Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_error(method: error, cb: js.Function1[/* event */ ErrorEvent, Unit], options: EventListenerOptions): Unit = js.native
+    // HTML5 WebSocket events
+    @JSName("addEventListener")
+    def addEventListener_message(method: message, cb: js.Function1[/* event */ MessageEvent, Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_message(method: message, cb: js.Function1[/* event */ MessageEvent, Unit], options: EventListenerOptions): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_open(method: open, cb: js.Function1[/* event */ Event, Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_open(method: open, cb: js.Function1[/* event */ Event, Unit], options: EventListenerOptions): Unit = js.native
+    
+    def addListener(event: ping | pong, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_close(event: close, listener: js.Function2[/* code */ Double, /* reason */ Buffer, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_message(event: message, listener: js.Function2[/* data */ RawData, /* isBinary */ Boolean, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_open(event: open, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_unexpectedresponse(
+      event: `unexpected-response`,
+      listener: js.Function2[/* request */ ClientRequest, /* response */ IncomingMessage, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    def addListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
+    
+    def close(code: Double, data: Buffer): Unit = js.native
+    def close(code: Unit, data: Buffer): Unit = js.native
+    
+    /** Indicates whether the websocket is paused */
+    val isPaused: Boolean = js.native
+    
+    def off(event: ping | pong, listener: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
+    def off(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    def off(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    @JSName("off")
+    def off_close(
+      event: close,
+      listener: js.ThisFunction2[/* this */ this.type, /* code */ Double, /* reason */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("off")
+    def off_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ js.Error, Unit]): this.type = js.native
+    @JSName("off")
+    def off_message(
+      event: message,
+      listener: js.ThisFunction2[/* this */ this.type, /* data */ RawData, /* isBinary */ Boolean, Unit]
+    ): this.type = js.native
+    @JSName("off")
+    def off_open(event: open, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    @JSName("off")
+    def off_unexpectedresponse(
+      event: `unexpected-response`,
+      listener: js.ThisFunction2[
+          /* this */ this.type, 
+          /* request */ ClientRequest, 
+          /* response */ IncomingMessage, 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("off")
+    def off_upgrade(
+      event: upgrade,
+      listener: js.ThisFunction1[/* this */ this.type, /* request */ IncomingMessage, Unit]
+    ): this.type = js.native
+    
+    def on(event: ping | pong, listener: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
+    def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    // Events
+    @JSName("on")
+    def on_close(
+      event: close,
+      listener: js.ThisFunction2[/* this */ this.type, /* code */ Double, /* reason */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    def on_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_message(
+      event: message,
+      listener: js.ThisFunction2[/* this */ this.type, /* data */ RawData, /* isBinary */ Boolean, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    def on_open(event: open, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    @JSName("on")
+    def on_unexpectedresponse(
+      event: `unexpected-response`,
+      listener: js.ThisFunction2[
+          /* this */ this.type, 
+          /* request */ ClientRequest, 
+          /* response */ IncomingMessage, 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    def on_upgrade(
+      event: upgrade,
+      listener: js.ThisFunction1[/* this */ this.type, /* request */ IncomingMessage, Unit]
+    ): this.type = js.native
+    
+    def once(event: ping | pong, listener: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
+    def once(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
+    @JSName("once")
+    def once_close(
+      event: close,
+      listener: js.ThisFunction2[/* this */ this.type, /* code */ Double, /* reason */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    def once_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    def once_message(
+      event: message,
+      listener: js.ThisFunction2[/* this */ this.type, /* data */ RawData, /* isBinary */ Boolean, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    def once_open(event: open, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    @JSName("once")
+    def once_unexpectedresponse(
+      event: `unexpected-response`,
+      listener: js.ThisFunction2[
+          /* this */ this.type, 
+          /* request */ ClientRequest, 
+          /* response */ IncomingMessage, 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("once")
+    def once_upgrade(
+      event: upgrade,
+      listener: js.ThisFunction1[/* this */ this.type, /* request */ IncomingMessage, Unit]
+    ): this.type = js.native
+    
+    /**
+      * Pause the websocket causing it to stop emitting events. Some events can still be
+      * emitted after this is called, until all buffered data is consumed. This method
+      * is a noop if the ready state is `CONNECTING` or `CLOSED`.
+      */
+    def pause(): Unit = js.native
+    
+    def ping(): Unit = js.native
+    def ping(data: Any): Unit = js.native
+    def ping(data: Any, mask: Boolean): Unit = js.native
+    def ping(data: Any, mask: Boolean, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def ping(data: Any, mask: Unit, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def ping(data: Unit, mask: Boolean): Unit = js.native
+    def ping(data: Unit, mask: Boolean, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def ping(data: Unit, mask: Unit, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    
+    def pong(): Unit = js.native
+    def pong(data: Any): Unit = js.native
+    def pong(data: Any, mask: Boolean): Unit = js.native
+    def pong(data: Any, mask: Boolean, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def pong(data: Any, mask: Unit, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def pong(data: Unit, mask: Boolean): Unit = js.native
+    def pong(data: Unit, mask: Boolean, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def pong(data: Unit, mask: Unit, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    
+    @JSName("removeEventListener")
+    def removeEventListener_close(method: close, cb: js.Function1[/* event */ CloseEvent, Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_error(method: error, cb: js.Function1[/* event */ ErrorEvent, Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_message(method: message, cb: js.Function1[/* event */ MessageEvent, Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_open(method: open, cb: js.Function1[/* event */ Event, Unit]): Unit = js.native
+    
+    def removeListener(event: ping | pong, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_close(event: close, listener: js.Function2[/* code */ Double, /* reason */ Buffer, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_message(event: message, listener: js.Function2[/* data */ RawData, /* isBinary */ Boolean, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_open(event: open, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_unexpectedresponse(
+      event: `unexpected-response`,
+      listener: js.Function2[/* request */ ClientRequest, /* response */ IncomingMessage, Unit]
+    ): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
+    
+    /**
+      * Make a paused socket resume emitting events. This method is a noop if the ready
+      * state is `CONNECTING` or `CLOSED`.
+      */
+    def resume(): Unit = js.native
+    
+    def send(data: Any): Unit = js.native
+    def send(data: Any, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def send(data: Any, options: Binary): Unit = js.native
+    def send(data: Any, options: Binary, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    
+    def terminate(): Unit = js.native
+  }
+  // tslint:disable-line no-empty-interface
+  @JSImport("ws", "WebSocket")
+  @js.native
+  val WebSocket: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebSocketAlias */ Any = js.native
+  
+  @JSImport("ws", "WebSocketServer")
+  @js.native
+  val WebSocketServer: Instantiable2[
+    /* options */ js.UndefOr[ServerOptions], 
+    /* callback */ js.UndefOr[js.Function0[Unit]], 
+    Server[typings.ws.mod.WebSocket]
+  ] = js.native
+  type WebSocketServer = Server[typings.ws.mod.WebSocket]
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("ws", "WebSocketServer")
+  @js.native
+  open class WebSocketServerCls[T /* <: typings.ws.mod.WebSocket */] () extends Server[T] {
+    def this(options: ServerOptions) = this()
+    def this(options: Unit, callback: js.Function0[Unit]) = this()
+    def this(options: ServerOptions, callback: js.Function0[Unit]) = this()
+  }
+  
+  // tslint:disable-line no-empty-interface
   // WebSocket stream
-  inline def createWebSocketStream(websocket: WebSocket): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any]).asInstanceOf[Duplex]
-  inline def createWebSocketStream(websocket: WebSocket, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def createWebSocketStream(websocket: typings.ws.mod.WebSocket): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def createWebSocketStream(websocket: typings.ws.mod.WebSocket, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
   trait AddressInfo extends StObject {
     
@@ -268,6 +498,8 @@ object mod {
     
     var followRedirects: js.UndefOr[Boolean] = js.undefined
     
+    var generateMask: js.UndefOr[js.Function1[/* mask */ Buffer, Unit]] = js.undefined
+    
     var handshakeTimeout: js.UndefOr[Double] = js.undefined
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -289,6 +521,8 @@ object mod {
     var protocolVersion: js.UndefOr[Double] = js.undefined
     
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+    
+    var skipUTF8Validation: js.UndefOr[Boolean] = js.undefined
   }
   object ClientOptions {
     
@@ -314,6 +548,10 @@ object mod {
       inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      
+      inline def setGenerateMask(value: /* mask */ Buffer => Unit): Self = StObject.set(x, "generateMask", js.Any.fromFunction1(value))
+      
+      inline def setGenerateMaskUndefined: Self = StObject.set(x, "generateMask", js.undefined)
       
       inline def setHandshakeTimeout(value: Double): Self = StObject.set(x, "handshakeTimeout", value.asInstanceOf[js.Any])
       
@@ -358,6 +596,10 @@ object mod {
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
       inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      
+      inline def setSkipUTF8Validation(value: Boolean): Self = StObject.set(x, "skipUTF8Validation", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUTF8ValidationUndefined: Self = StObject.set(x, "skipUTF8Validation", js.undefined)
     }
   }
   
@@ -367,14 +609,17 @@ object mod {
     
     var reason: String
     
-    var target: WebSocket
+    var target: typings.ws.mod.WebSocket
+    
+    var `type`: String
     
     var wasClean: Boolean
   }
   object CloseEvent {
     
-    inline def apply(code: Double, reason: String, target: WebSocket, wasClean: Boolean): CloseEvent = {
+    inline def apply(code: Double, reason: String, target: typings.ws.mod.WebSocket, `type`: String, wasClean: Boolean): CloseEvent = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloseEvent]
     }
     
@@ -384,7 +629,9 @@ object mod {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: typings.ws.mod.WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setWasClean(value: Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
     }
@@ -393,21 +640,21 @@ object mod {
   /**
     * Data represents the message payload received over the WebSocket.
     */
-  type Data = String | Buffer | ArrayBuffer | js.Array[Buffer]
+  type Data = String | Buffer | js.typedarray.ArrayBuffer | js.Array[Buffer]
   
   trait ErrorEvent extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var message: String
     
-    var target: WebSocket
+    var target: typings.ws.mod.WebSocket
     
     var `type`: String
   }
   object ErrorEvent {
     
-    inline def apply(error: js.Any, message: String, target: WebSocket, `type`: String): ErrorEvent = {
+    inline def apply(error: Any, message: String, target: typings.ws.mod.WebSocket, `type`: String): ErrorEvent = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorEvent]
@@ -415,11 +662,33 @@ object mod {
     
     extension [Self <: ErrorEvent](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: typings.ws.mod.WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Event extends StObject {
+    
+    var target: typings.ws.mod.WebSocket
+    
+    var `type`: String
+  }
+  object Event {
+    
+    inline def apply(target: typings.ws.mod.WebSocket, `type`: String): Event = {
+      val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Event]
+    }
+    
+    extension [Self <: Event](x: Self) {
+      
+      inline def setTarget(value: typings.ws.mod.WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -448,13 +717,13 @@ object mod {
     
     var data: Data
     
-    var target: WebSocket
+    var target: typings.ws.mod.WebSocket
     
     var `type`: String
   }
   object MessageEvent {
     
-    inline def apply(data: Data, target: WebSocket, `type`: String): MessageEvent = {
+    inline def apply(data: Data, target: typings.ws.mod.WebSocket, `type`: String): MessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageEvent]
@@ -464,28 +733,11 @@ object mod {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: typings.ws.mod.WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait OpenEvent extends StObject {
-    
-    var target: WebSocket
-  }
-  object OpenEvent {
-    
-    inline def apply(target: WebSocket): OpenEvent = {
-      val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OpenEvent]
-    }
-    
-    extension [Self <: OpenEvent](x: Self) {
-      
-      inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,13 +802,22 @@ object mod {
     }
   }
   
+  /**
+    * Data represents the raw message payload received over the WebSocket.
+    */
+  type RawData = Buffer | js.typedarray.ArrayBuffer | js.Array[Buffer]
+  
   trait ServerOptions extends StObject {
+    
+    var WebSocket: js.UndefOr[TypeofWebSocket] = js.undefined
     
     var backlog: js.UndefOr[Double] = js.undefined
     
     var clientTracking: js.UndefOr[Boolean] = js.undefined
     
-    var handleProtocols: js.UndefOr[js.Any] = js.undefined
+    var handleProtocols: js.UndefOr[
+        js.Function2[/* protocols */ Set[String], /* request */ IncomingMessage, String | `false`]
+      ] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
@@ -570,7 +831,23 @@ object mod {
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.undefined
+    var server: js.UndefOr[
+        (typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.undefined
+    
+    var skipUTF8Validation: js.UndefOr[Boolean] = js.undefined
     
     var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.undefined
   }
@@ -591,7 +868,7 @@ object mod {
       
       inline def setClientTrackingUndefined: Self = StObject.set(x, "clientTracking", js.undefined)
       
-      inline def setHandleProtocols(value: js.Any): Self = StObject.set(x, "handleProtocols", value.asInstanceOf[js.Any])
+      inline def setHandleProtocols(value: (/* protocols */ Set[String], /* request */ IncomingMessage) => String | `false`): Self = StObject.set(x, "handleProtocols", js.Any.fromFunction2(value))
       
       inline def setHandleProtocolsUndefined: Self = StObject.set(x, "handleProtocols", js.undefined)
       
@@ -619,9 +896,27 @@ object mod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setServer(value: typings.node.httpMod.Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(
+        value: (typings.node.httpMod.Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]) | (typings.node.httpsMod.Server[
+              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              ]
+            ])
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      
+      inline def setSkipUTF8Validation(value: Boolean): Self = StObject.set(x, "skipUTF8Validation", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUTF8ValidationUndefined: Self = StObject.set(x, "skipUTF8Validation", js.undefined)
       
       inline def setVerifyClient(value: VerifyClientCallbackAsync | VerifyClientCallbackSync): Self = StObject.set(x, "verifyClient", value.asInstanceOf[js.Any])
       
@@ -638,6 +933,10 @@ object mod {
       ): Self = StObject.set(x, "verifyClient", js.Any.fromFunction2(value))
       
       inline def setVerifyClientUndefined: Self = StObject.set(x, "verifyClient", js.undefined)
+      
+      inline def setWebSocket(value: TypeofWebSocket): Self = StObject.set(x, "WebSocket", value.asInstanceOf[js.Any])
+      
+      inline def setWebSocketUndefined: Self = StObject.set(x, "WebSocket", js.undefined)
     }
   }
   
@@ -665,187 +964,10 @@ object mod {
     */
   type VerifyClientCallbackSync = js.Function1[/* info */ Origin, Boolean]
   
-  // WebSocket socket.
-  @js.native
-  trait WebSocket extends EventEmitter {
-    
-    var CLOSED: Double = js.native
-    
-    var CLOSING: Double = js.native
-    
-    var CONNECTING: Double = js.native
-    
-    var OPEN: Double = js.native
-    
-    def addEventListener(method: String, listener: js.Function0[Unit]): Unit = js.native
-    def addEventListener(method: String, listener: js.Function0[Unit], options: EventListenerOptions): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_close(method: close, cb: js.Function1[/* event */ Code, Unit]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_close(method: close, cb: js.Function1[/* event */ Code, Unit], options: EventListenerOptions): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_error(method: error, cb: js.Function1[/* event */ typings.ws.anon.Error, Unit]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_error(
-      method: error,
-      cb: js.Function1[/* event */ typings.ws.anon.Error, Unit],
-      options: EventListenerOptions
-    ): Unit = js.native
-    // HTML5 WebSocket events
-    @JSName("addEventListener")
-    def addEventListener_message(method: message, cb: js.Function1[/* event */ typings.ws.anon.Data, Unit]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_message(
-      method: message,
-      cb: js.Function1[/* event */ typings.ws.anon.Data, Unit],
-      options: EventListenerOptions
-    ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_open(method: open, cb: js.Function1[/* event */ Target, Unit]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_open(method: open, cb: js.Function1[/* event */ Target, Unit], options: EventListenerOptions): Unit = js.native
-    
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_message(event: message, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_open(event: open, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_ping(event: ping, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pong(event: pong, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_unexpectedresponse(
-      event: `unexpected-response`,
-      listener: js.Function2[/* request */ ClientRequest, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("addListener")
-    def addListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
-    
-    var binaryType: String = js.native
-    
-    var bufferedAmount: Double = js.native
-    
-    def close(): Unit = js.native
-    def close(code: Double): Unit = js.native
-    def close(code: Double, data: String): Unit = js.native
-    def close(code: Unit, data: String): Unit = js.native
-    
-    var extensions: String = js.native
-    
-    def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
-    // Events
-    @JSName("on")
-    def on_close(
-      event: close,
-      listener: js.ThisFunction2[/* this */ this.type, /* code */ Double, /* reason */ String, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.ThisFunction1[/* this */ this.type, /* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_message(event: message, listener: js.ThisFunction1[/* this */ this.type, /* data */ Data, Unit]): this.type = js.native
-    @JSName("on")
-    def on_open(event: open, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
-    @JSName("on")
-    def on_ping(event: ping, listener: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
-    @JSName("on")
-    def on_pong(event: pong, listener: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
-    @JSName("on")
-    def on_unexpectedresponse(
-      event: `unexpected-response`,
-      listener: js.ThisFunction2[
-          /* this */ this.type, 
-          /* request */ ClientRequest, 
-          /* response */ IncomingMessage, 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("on")
-    def on_upgrade(
-      event: upgrade,
-      listener: js.ThisFunction1[/* this */ this.type, /* request */ IncomingMessage, Unit]
-    ): this.type = js.native
-    
-    def onclose(event: CloseEvent): Unit = js.native
-    
-    def onerror(event: ErrorEvent): Unit = js.native
-    
-    def onmessage(event: MessageEvent): Unit = js.native
-    
-    def onopen(event: OpenEvent): Unit = js.native
-    
-    def ping(): Unit = js.native
-    def ping(data: js.Any): Unit = js.native
-    def ping(data: js.Any, mask: Boolean): Unit = js.native
-    def ping(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def ping(data: js.Any, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def ping(data: Unit, mask: Boolean): Unit = js.native
-    def ping(data: Unit, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def ping(data: Unit, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    
-    def pong(): Unit = js.native
-    def pong(data: js.Any): Unit = js.native
-    def pong(data: js.Any, mask: Boolean): Unit = js.native
-    def pong(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def pong(data: js.Any, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def pong(data: Unit, mask: Boolean): Unit = js.native
-    def pong(data: Unit, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def pong(data: Unit, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    
-    var protocol: String = js.native
-    
-    var readyState: Double = js.native
-    
-    def removeEventListener(method: String): Unit = js.native
-    def removeEventListener(method: String, listener: js.Function0[Unit]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_close(method: close): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_close(method: close, cb: js.Function1[/* event */ Code, Unit]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_error(method: error): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_error(method: error, cb: js.Function1[/* event */ typings.ws.anon.Error, Unit]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_message(method: message): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_message(method: message, cb: js.Function1[/* event */ typings.ws.anon.Data, Unit]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_open(method: open): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_open(method: open, cb: js.Function1[/* event */ Target, Unit]): Unit = js.native
-    
-    @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_message(event: message, listener: js.Function1[/* data */ Data, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_open(event: open, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_ping(event: ping, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_pong(event: pong, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_unexpectedresponse(
-      event: `unexpected-response`,
-      listener: js.Function2[/* request */ ClientRequest, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
-    
-    def send(data: js.Any): Unit = js.native
-    def send(data: js.Any, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def send(data: js.Any, options: Binary): Unit = js.native
-    def send(data: js.Any, options: Binary, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    
-    def terminate(): Unit = js.native
-    
-    var url: String = js.native
-  }
+  type WebSocketAlias = typings.std.WebSocket
+  
+  type _To = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebSocketAlias */ Any
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebSocketAlias */ Any = ^
 }

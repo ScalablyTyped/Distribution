@@ -13,7 +13,7 @@ trait RequestOptionsPickSaveSyn
   * Additional request body values. It's only taken in
   * consideration in `POST` and `PUT` requests.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /**
     * If the given request should persist on the cache. Keep in mind,
@@ -25,7 +25,7 @@ trait RequestOptionsPickSaveSyn
     * Custom data for the request. This data are
     * going to be merged the transporter data.
     */
-  val data: js.UndefOr[Record[String, js.Any]] = js.undefined
+  val data: js.UndefOr[Record[String, Any]] = js.undefined
   
   var forwardToReplicas: js.UndefOr[Boolean] = js.undefined
   
@@ -39,7 +39,7 @@ trait RequestOptionsPickSaveSyn
     * Custom query parameters for the request. This query parameters are
     * going to be merged the transporter query parameters.
     */
-  val queryParameters: js.UndefOr[Record[String, js.Any]] = js.undefined
+  val queryParameters: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Custom timeout for the request. Note that, in normal situacions
@@ -61,7 +61,7 @@ object RequestOptionsPickSaveSyn {
     
     inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -73,7 +73,7 @@ object RequestOptionsPickSaveSyn {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Record[String, Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     

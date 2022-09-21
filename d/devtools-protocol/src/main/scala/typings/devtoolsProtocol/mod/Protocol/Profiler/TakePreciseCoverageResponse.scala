@@ -27,7 +27,7 @@ object TakePreciseCoverageResponse {
     
     inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

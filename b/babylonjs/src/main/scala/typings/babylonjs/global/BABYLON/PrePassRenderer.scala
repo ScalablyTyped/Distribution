@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PrePassRenderer")
 @js.native
-class PrePassRenderer protected ()
+open class PrePassRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PrePassRenderer {
   /**
-    * Instanciates a prepass renderer
+    * Instantiates a prepass renderer
     * @param scene The scene
     */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
@@ -22,6 +22,14 @@ object PrePassRenderer {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSGlobal("BABYLON.PrePassRenderer._TextureFormats")
+  @js.native
+  def _TextureFormats: Any = js.native
+  inline def _TextureFormats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureFormats")(x.asInstanceOf[js.Any])
 }

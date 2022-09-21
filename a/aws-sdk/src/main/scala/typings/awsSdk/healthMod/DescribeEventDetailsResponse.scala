@@ -29,12 +29,12 @@ object DescribeEventDetailsResponse {
     
     inline def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
     
-    inline def setFailedSetVarargs(value: EventDetailsErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
+    inline def setFailedSetVarargs(value: EventDetailsErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value*))
     
     inline def setSuccessfulSet(value: DescribeEventDetailsSuccessfulSet): Self = StObject.set(x, "successfulSet", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulSetUndefined: Self = StObject.set(x, "successfulSet", js.undefined)
     
-    inline def setSuccessfulSetVarargs(value: EventDetails*): Self = StObject.set(x, "successfulSet", js.Array(value :_*))
+    inline def setSuccessfulSetVarargs(value: EventDetails*): Self = StObject.set(x, "successfulSet", js.Array(value*))
   }
 }

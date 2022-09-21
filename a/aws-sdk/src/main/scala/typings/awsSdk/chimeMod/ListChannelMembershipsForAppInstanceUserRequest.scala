@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListChannelMembershipsForAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the app instance users
+    * The ARN of the AppInstanceUsers
     */
   var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The maximum number of users that you want returned. 
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
+    * The maximum number of users that you want returned.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
@@ -33,6 +38,10 @@ object ListChannelMembershipsForAppInstanceUserRequest {
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
     inline def setAppInstanceUserArnUndefined: Self = StObject.set(x, "AppInstanceUserArn", js.undefined)
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

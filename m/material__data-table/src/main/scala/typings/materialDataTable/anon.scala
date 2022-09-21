@@ -3,6 +3,7 @@ package typings.materialDataTable
 import typings.materialDataTable.constantsMod.SortValue
 import typings.materialDataTable.typesMod.MDCDataTableRowSelectionChangedEventDetail
 import typings.materialDataTable.typesMod.ProgressIndicatorStyles
+import typings.materialDataTable.typesMod.RowClickEventData
 import typings.materialDataTable.typesMod.SortActionEventDetail
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -43,6 +44,8 @@ object anon {
     var isHeaderRowCheckboxChecked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     var isRowsSelectable: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    
+    var notifyRowClick: js.UndefOr[js.Function1[/* detail */ RowClickEventData, Unit]] = js.undefined
     
     var notifyRowSelectionChanged: js.UndefOr[js.Function1[/* data */ MDCDataTableRowSelectionChangedEventDetail, Unit]] = js.undefined
     
@@ -148,6 +151,10 @@ object anon {
       inline def setIsRowsSelectable(value: () => Boolean): Self = StObject.set(x, "isRowsSelectable", js.Any.fromFunction0(value))
       
       inline def setIsRowsSelectableUndefined: Self = StObject.set(x, "isRowsSelectable", js.undefined)
+      
+      inline def setNotifyRowClick(value: /* detail */ RowClickEventData => Unit): Self = StObject.set(x, "notifyRowClick", js.Any.fromFunction1(value))
+      
+      inline def setNotifyRowClickUndefined: Self = StObject.set(x, "notifyRowClick", js.undefined)
       
       inline def setNotifyRowSelectionChanged(value: /* data */ MDCDataTableRowSelectionChangedEventDetail => Unit): Self = StObject.set(x, "notifyRowSelectionChanged", js.Any.fromFunction1(value))
       

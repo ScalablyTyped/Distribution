@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("d3kit", "AbstractChart")
   @js.native
-  class AbstractChart protected () extends Base {
+  open class AbstractChart protected () extends Base {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: ChartOptions) = this()
@@ -23,12 +23,12 @@ object mod {
     def addPlate(name: String, plate: AbstractPlate): this.type = js.native
     def addPlate(name: String, plate: AbstractPlate, doNotAppend: Boolean): AbstractPlate = js.native
     
-    def data(): js.Any = js.native
-    def data(data: js.Any): this.type = js.native
+    def data(): Any = js.native
+    def data(data: Any): this.type = js.native
     
     def destroy(): this.type = js.native
     
-    def dispatchAs(name: String, args: js.Any*): js.Function1[/* repeated */ js.Any, Unit] = js.native
+    def dispatchAs(name: String, args: Any*): js.Function1[/* repeated */ Any, Unit] = js.native
     
     def fit(): this.type = js.native
     def fit(fitOptions: Unit, watchOptions: Boolean): this.type = js.native
@@ -73,7 +73,7 @@ object mod {
   
   @JSImport("d3kit", "AbstractPlate")
   @js.native
-  class AbstractPlate protected () extends Base {
+  open class AbstractPlate protected () extends Base {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: ChartOptions) = this()
@@ -81,7 +81,7 @@ object mod {
     
     def getNode(): Element = js.native
     
-    def getSelection(): Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    def getSelection(): Selection_[BaseType, Any, BaseType, Any] = js.native
   }
   /* static members */
   object AbstractPlate {
@@ -96,7 +96,7 @@ object mod {
   
   @JSImport("d3kit", "Base")
   @js.native
-  class Base () extends StObject {
+  open class Base () extends StObject {
     def this(options: ChartOptions) = this()
     
     def copyDimension(another: Base): this.type = js.native
@@ -134,7 +134,7 @@ object mod {
   
   @JSImport("d3kit", "CanvasChart")
   @js.native
-  class CanvasChart protected () extends AbstractChart {
+  open class CanvasChart protected () extends AbstractChart {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: ChartOptions) = this()
@@ -156,7 +156,7 @@ object mod {
   
   @JSImport("d3kit", "CanvasPlate")
   @js.native
-  class CanvasPlate () extends AbstractPlate {
+  open class CanvasPlate () extends AbstractPlate {
     def this(options: ChartOptions) = this()
     
     def clear(): this.type = js.native
@@ -176,7 +176,7 @@ object mod {
   
   @JSImport("d3kit", "DivPlate")
   @js.native
-  class DivPlate () extends AbstractPlate {
+  open class DivPlate () extends AbstractPlate {
     def this(options: ChartOptions) = this()
   }
   /* static members */
@@ -192,7 +192,7 @@ object mod {
   
   @JSImport("d3kit", "HybridChart")
   @js.native
-  class HybridChart protected () extends CanvasChart {
+  open class HybridChart protected () extends CanvasChart {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: ChartOptions) = this()
@@ -202,9 +202,9 @@ object mod {
     
     var plate: SvgPlate = js.native
     
-    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    var rootG: Selection_[BaseType, Any, BaseType, Any] = js.native
     
-    var svg: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    var svg: Selection_[BaseType, Any, BaseType, Any] = js.native
   }
   /* static members */
   object HybridChart {
@@ -218,22 +218,22 @@ object mod {
   
   @JSImport("d3kit", "LayerOrganizer")
   @js.native
-  class LayerOrganizer protected () extends StObject {
-    def this(container: Selection_[BaseType, js.Any, BaseType, js.Any]) = this()
-    def this(container: Selection_[BaseType, js.Any, BaseType, js.Any], defaultTag: String) = this()
+  open class LayerOrganizer protected () extends StObject {
+    def this(container: Selection_[BaseType, Any, BaseType, Any]) = this()
+    def this(container: Selection_[BaseType, Any, BaseType, Any], defaultTag: String) = this()
     
-    def create(layerNames: String): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
-    def create(layerNames: js.Array[LayerConfig | String]): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
-    def create(layerNames: LayerConfig): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
+    def create(layerNames: String): (Selection_[BaseType, Any, BaseType, Any]) | (js.Array[Selection_[BaseType, Any, BaseType, Any]]) = js.native
+    def create(layerNames: js.Array[LayerConfig | String]): (Selection_[BaseType, Any, BaseType, Any]) | (js.Array[Selection_[BaseType, Any, BaseType, Any]]) = js.native
+    def create(layerNames: LayerConfig): (Selection_[BaseType, Any, BaseType, Any]) | (js.Array[Selection_[BaseType, Any, BaseType, Any]]) = js.native
     
-    def get(name: String): Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    def get(name: String): Selection_[BaseType, Any, BaseType, Any] = js.native
     
     def has(name: String): Boolean = js.native
   }
   
   @JSImport("d3kit", "SvgChart")
   @js.native
-  class SvgChart protected () extends AbstractChart {
+  open class SvgChart protected () extends AbstractChart {
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: ChartOptions) = this()
@@ -243,19 +243,19 @@ object mod {
     
     var plate: SvgPlate = js.native
     
-    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    var rootG: Selection_[BaseType, Any, BaseType, Any] = js.native
     
-    var svg: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    var svg: Selection_[BaseType, Any, BaseType, Any] = js.native
   }
   
   @JSImport("d3kit", "SvgPlate")
   @js.native
-  class SvgPlate () extends AbstractPlate {
+  open class SvgPlate () extends AbstractPlate {
     def this(options: ChartOptions) = this()
     
     var layers: LayerOrganizer = js.native
     
-    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
+    var rootG: Selection_[BaseType, Any, BaseType, Any] = js.native
   }
   /* static members */
   object SvgPlate {
@@ -274,23 +274,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+    inline def debounce(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
     
-    inline def deepExtend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def deepExtend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
-    inline def extend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
-    inline def functor(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+    inline def functor(value: Any): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
     
-    inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def kebabCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def rebind(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def rebind(target: Any, source: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+    inline def throttle(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   }
   
   trait ChartMargin extends StObject {

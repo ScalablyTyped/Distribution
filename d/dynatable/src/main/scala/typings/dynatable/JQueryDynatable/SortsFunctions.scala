@@ -15,7 +15,7 @@ trait SortsFunctions extends StObject {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def number(a: js.Any, b: js.Any, attr: String, direction: Double): Double
+  def number(a: Any, b: Any, attr: String, direction: Double): Double
   
   /**
     * Restores the original order we had...
@@ -24,7 +24,7 @@ trait SortsFunctions extends StObject {
     * @param b The second record
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def originalPlacement(a: js.Any, b: js.Any): Double
+  def originalPlacement(a: Any, b: Any): Double
   
   /**
     * Sorting between 2 strings
@@ -35,14 +35,14 @@ trait SortsFunctions extends StObject {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def string(a: js.Any, b: js.Any, attr: String, direction: Double): Double
+  def string(a: Any, b: Any, attr: String, direction: Double): Double
 }
 object SortsFunctions {
   
   inline def apply(
-    number: (js.Any, js.Any, String, Double) => Double,
-    originalPlacement: (js.Any, js.Any) => Double,
-    string: (js.Any, js.Any, String, Double) => Double
+    number: (Any, Any, String, Double) => Double,
+    originalPlacement: (Any, Any) => Double,
+    string: (Any, Any, String, Double) => Double
   ): SortsFunctions = {
     val __obj = js.Dynamic.literal(number = js.Any.fromFunction4(number), originalPlacement = js.Any.fromFunction2(originalPlacement), string = js.Any.fromFunction4(string))
     __obj.asInstanceOf[SortsFunctions]
@@ -50,10 +50,10 @@ object SortsFunctions {
   
   extension [Self <: SortsFunctions](x: Self) {
     
-    inline def setNumber(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
+    inline def setNumber(value: (Any, Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
     
-    inline def setOriginalPlacement(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "originalPlacement", js.Any.fromFunction2(value))
+    inline def setOriginalPlacement(value: (Any, Any) => Double): Self = StObject.set(x, "originalPlacement", js.Any.fromFunction2(value))
     
-    inline def setString(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "string", js.Any.fromFunction4(value))
+    inline def setString(value: (Any, Any, String, Double) => Double): Self = StObject.set(x, "string", js.Any.fromFunction4(value))
   }
 }

@@ -15,6 +15,16 @@ trait Layer extends StObject {
     * The size of the layer archive in bytes.
     */
   var CodeSize: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of a signing job.
+    */
+  var SigningJobArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) for a signing profile version.
+    */
+  var SigningProfileVersionArn: js.UndefOr[Arn] = js.undefined
 }
 object Layer {
   
@@ -32,5 +42,13 @@ object Layer {
     inline def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
     inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+    
+    inline def setSigningJobArn(value: Arn): Self = StObject.set(x, "SigningJobArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningJobArnUndefined: Self = StObject.set(x, "SigningJobArn", js.undefined)
+    
+    inline def setSigningProfileVersionArn(value: Arn): Self = StObject.set(x, "SigningProfileVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningProfileVersionArnUndefined: Self = StObject.set(x, "SigningProfileVersionArn", js.undefined)
   }
 }

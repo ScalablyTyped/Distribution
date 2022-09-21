@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAWSDefaultServiceQuotaResponse extends StObject {
   
   /**
-    * Returns the ServiceQuota object which contains all values for a quota.
+    * Information about the quota.
     */
   var Quota: js.UndefOr[ServiceQuota] = js.undefined
 }

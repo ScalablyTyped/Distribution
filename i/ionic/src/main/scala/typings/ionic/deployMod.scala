@@ -10,7 +10,7 @@ object deployMod {
   
   @JSImport("ionic/commands/deploy", "DeployNamespace")
   @js.native
-  class DeployNamespace () extends Namespace {
+  open class DeployNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

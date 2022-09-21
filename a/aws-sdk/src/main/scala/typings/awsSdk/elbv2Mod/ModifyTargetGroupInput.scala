@@ -12,12 +12,12 @@ trait ModifyTargetGroupInput extends StObject {
   var HealthCheckEnabled: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckEnabled] = js.undefined
   
   /**
-    * The approximate amount of time, in seconds, between health checks of an individual target. For TCP health checks, the supported values are 10 or 30 seconds. With Network Load Balancers, you can't modify this setting.
+    * The approximate amount of time, in seconds, between health checks of an individual target. For TCP health checks, the supported values are 10 or 30 seconds.
     */
   var HealthCheckIntervalSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckIntervalSeconds] = js.undefined
   
   /**
-    * [HTTP/HTTPS health checks] The destination for health checks on the targets. [HTTP1 or HTTP2 protocol version] The ping path. The default is /. [GRPC protocol version] The path of a custom health check method with the format /package.service/method. The default is /AWS.ALB/healthcheck.
+    * [HTTP/HTTPS health checks] The destination for health checks on the targets. [HTTP1 or HTTP2 protocol version] The ping path. The default is /. [GRPC protocol version] The path of a custom health check method with the format /package.service/method. The default is /Amazon Web Services.ALB/healthcheck.
     */
   var HealthCheckPath: js.UndefOr[Path] = js.undefined
   
@@ -27,12 +27,12 @@ trait ModifyTargetGroupInput extends StObject {
   var HealthCheckPort: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckPort] = js.undefined
   
   /**
-    * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported for health checks only if the protocol of the target group is TCP, TLS, UDP, or TCP_UDP. The GENEVE, TLS, UDP, and TCP_UDP protocols are not supported for health checks. With Network Load Balancers, you can't modify this setting.
+    * The protocol the load balancer uses when performing health checks on targets. For Application Load Balancers, the default is HTTP. For Network Load Balancers and Gateway Load Balancers, the default is TCP. The TCP protocol is not supported for health checks if the protocol of the target group is HTTP or HTTPS. It is supported for health checks only if the protocol of the target group is TCP, TLS, UDP, or TCP_UDP. The GENEVE, TLS, UDP, and TCP_UDP protocols are not supported for health checks.
     */
   var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
   
   /**
-    * [HTTP/HTTPS health checks] The amount of time, in seconds, during which no response means a failed health check. With Network Load Balancers, you can't modify this setting.
+    * [HTTP/HTTPS health checks] The amount of time, in seconds, during which no response means a failed health check.
     */
   var HealthCheckTimeoutSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckTimeoutSeconds] = js.undefined
   
@@ -42,7 +42,7 @@ trait ModifyTargetGroupInput extends StObject {
   var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   
   /**
-    * [HTTP/HTTPS health checks] The HTTP or gRPC codes to use when checking for a successful response from a target. With Network Load Balancers, you can't modify this setting.
+    * [HTTP/HTTPS health checks] The HTTP or gRPC codes to use when checking for a successful response from a target.
     */
   var Matcher: js.UndefOr[typings.awsSdk.elbv2Mod.Matcher] = js.undefined
   

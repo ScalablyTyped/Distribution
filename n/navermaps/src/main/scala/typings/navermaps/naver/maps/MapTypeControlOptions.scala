@@ -25,7 +25,7 @@ object MapTypeControlOptions {
     
     inline def setMapTypeIdsNull: Self = StObject.set(x, "mapTypeIds", null)
     
-    inline def setMapTypeIdsVarargs(value: MapTypeId*): Self = StObject.set(x, "mapTypeIds", js.Array(value :_*))
+    inline def setMapTypeIdsVarargs(value: MapTypeId*): Self = StObject.set(x, "mapTypeIds", js.Array(value*))
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

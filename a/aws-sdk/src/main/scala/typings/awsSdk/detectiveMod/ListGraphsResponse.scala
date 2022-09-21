@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListGraphsResponse extends StObject {
   
   /**
-    * A list of behavior graphs that the account is a master for.
+    * A list of behavior graphs that the account is an administrator account for.
     */
   var GraphList: js.UndefOr[typings.awsSdk.detectiveMod.GraphList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListGraphsResponse {
     
     inline def setGraphListUndefined: Self = StObject.set(x, "GraphList", js.undefined)
     
-    inline def setGraphListVarargs(value: Graph*): Self = StObject.set(x, "GraphList", js.Array(value :_*))
+    inline def setGraphListVarargs(value: Graph*): Self = StObject.set(x, "GraphList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

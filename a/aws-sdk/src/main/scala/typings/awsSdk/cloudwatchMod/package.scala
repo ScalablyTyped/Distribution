@@ -1,44 +1,59 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.PT3H
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActionPrefix = java.lang.String
+type AccountId = String
 
-type ActionsEnabled = scala.Boolean
+type ActionPrefix = String
 
-type AlarmArn = java.lang.String
+type ActionsEnabled = Boolean
 
-type AlarmDescription = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WaitPeriod
+  - typings.awsSdk.awsSdkStrings.ExtensionPeriod
+  - typings.awsSdk.awsSdkStrings.Alarm_
+  - java.lang.String
+*/
+type ActionsSuppressedBy = _ActionsSuppressedBy | String
 
-type AlarmHistoryItems = js.Array[typings.awsSdk.cloudwatchMod.AlarmHistoryItem]
+type ActionsSuppressedReason = String
 
-type AlarmName = java.lang.String
+type AlarmArn = String
 
-type AlarmNamePrefix = java.lang.String
+type AlarmDescription = String
 
-type AlarmNames = js.Array[typings.awsSdk.cloudwatchMod.AlarmName]
+type AlarmHistoryItems = js.Array[AlarmHistoryItem]
 
-type AlarmRule = java.lang.String
+type AlarmName = String
+
+type AlarmNamePrefix = String
+
+type AlarmNames = js.Array[AlarmName]
+
+type AlarmRule = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CompositeAlarm
   - typings.awsSdk.awsSdkStrings.MetricAlarm
   - java.lang.String
 */
-type AlarmType = typings.awsSdk.cloudwatchMod._AlarmType | java.lang.String
+type AlarmType = _AlarmType | String
 
-type AlarmTypes = js.Array[typings.awsSdk.cloudwatchMod.AlarmType]
+type AlarmTypes = js.Array[AlarmType]
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type AnomalyDetectorExcludedTimeRanges = js.Array[typings.awsSdk.cloudwatchMod.Range]
+type AnomalyDetectorExcludedTimeRanges = js.Array[Range]
 
-type AnomalyDetectorMetricStat = java.lang.String
+type AnomalyDetectorMetricStat = String
 
-type AnomalyDetectorMetricTimezone = java.lang.String
+type AnomalyDetectorMetricTimezone = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_TRAINING
@@ -46,11 +61,20 @@ type AnomalyDetectorMetricTimezone = java.lang.String
   - typings.awsSdk.awsSdkStrings.TRAINED
   - java.lang.String
 */
-type AnomalyDetectorStateValue = typings.awsSdk.cloudwatchMod._AnomalyDetectorStateValue | java.lang.String
+type AnomalyDetectorStateValue = _AnomalyDetectorStateValue | String
 
-type AnomalyDetectors = js.Array[typings.awsSdk.cloudwatchMod.AnomalyDetector]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_METRIC
+  - typings.awsSdk.awsSdkStrings.METRIC_MATH
+  - java.lang.String
+*/
+type AnomalyDetectorType = _AnomalyDetectorType | String
 
-type BatchFailures = js.Array[typings.awsSdk.cloudwatchMod.PartialFailure]
+type AnomalyDetectorTypes = js.Array[AnomalyDetectorType]
+
+type AnomalyDetectors = js.Array[AnomalyDetector]
+
+type BatchFailures = js.Array[PartialFailure]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GreaterThanOrEqualToThreshold
@@ -62,65 +86,67 @@ type BatchFailures = js.Array[typings.awsSdk.cloudwatchMod.PartialFailure]
   - typings.awsSdk.awsSdkStrings.GreaterThanUpperThreshold
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.cloudwatchMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
-type CompositeAlarms = js.Array[typings.awsSdk.cloudwatchMod.CompositeAlarm]
+type CompositeAlarms = js.Array[CompositeAlarm]
 
-type Counts = js.Array[typings.awsSdk.cloudwatchMod.DatapointValue]
+type Counts = js.Array[DatapointValue]
 
-type DashboardArn = java.lang.String
+type DashboardArn = String
 
-type DashboardBody = java.lang.String
+type DashboardBody = String
 
-type DashboardEntries = js.Array[typings.awsSdk.cloudwatchMod.DashboardEntry]
+type DashboardEntries = js.Array[DashboardEntry]
 
-type DashboardName = java.lang.String
+type DashboardName = String
 
-type DashboardNamePrefix = java.lang.String
+type DashboardNamePrefix = String
 
-type DashboardNames = js.Array[typings.awsSdk.cloudwatchMod.DashboardName]
+type DashboardNames = js.Array[DashboardName]
 
-type DashboardValidationMessages = js.Array[typings.awsSdk.cloudwatchMod.DashboardValidationMessage]
+type DashboardValidationMessages = js.Array[DashboardValidationMessage]
 
-type DataPath = java.lang.String
+type DataPath = String
 
-type DatapointValue = scala.Double
+type DatapointValue = Double
 
-type DatapointValueMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudwatchMod.DatapointValue]
+type DatapointValueMap = StringDictionary[DatapointValue]
 
-type DatapointValues = js.Array[typings.awsSdk.cloudwatchMod.DatapointValue]
+type DatapointValues = js.Array[DatapointValue]
 
-type Datapoints = js.Array[typings.awsSdk.cloudwatchMod.Datapoint]
+type Datapoints = js.Array[Datapoint]
 
-type DatapointsToAlarm = scala.Double
+type DatapointsToAlarm = Double
 
-type DimensionFilters = js.Array[typings.awsSdk.cloudwatchMod.DimensionFilter]
+type DimensionFilters = js.Array[DimensionFilter]
 
-type DimensionName = java.lang.String
+type DimensionName = String
 
-type DimensionValue = java.lang.String
+type DimensionValue = String
 
-type Dimensions = js.Array[typings.awsSdk.cloudwatchMod.Dimension]
+type Dimensions = js.Array[Dimension]
 
-type EvaluateLowSampleCountPercentile = java.lang.String
+type EvaluateLowSampleCountPercentile = String
 
-type EvaluationPeriods = scala.Double
+type EvaluationPeriods = Double
 
-type ExceptionType = java.lang.String
+type ExceptionType = String
 
-type ExtendedStatistic = java.lang.String
+type ExtendedStatistic = String
 
-type ExtendedStatistics = js.Array[typings.awsSdk.cloudwatchMod.ExtendedStatistic]
+type ExtendedStatistics = js.Array[ExtendedStatistic]
 
-type FailureCode = java.lang.String
+type FailureCode = String
 
-type FailureDescription = java.lang.String
+type FailureDescription = String
 
-type FailureResource = java.lang.String
+type FailureResource = String
 
-type GetMetricDataMaxDatapoints = scala.Double
+type GetMetricDataLabelTimezone = String
 
-type HistoryData = java.lang.String
+type GetMetricDataMaxDatapoints = Double
+
+type HistoryData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ConfigurationUpdate
@@ -128,112 +154,145 @@ type HistoryData = java.lang.String
   - typings.awsSdk.awsSdkStrings.Action_
   - java.lang.String
 */
-type HistoryItemType = typings.awsSdk.cloudwatchMod._HistoryItemType | java.lang.String
+type HistoryItemType = _HistoryItemType | String
 
-type HistorySummary = java.lang.String
+type HistorySummary = String
 
-type InsightRuleAggregationStatistic = java.lang.String
+type InsightRuleAggregationStatistic = String
 
-type InsightRuleContributorDatapoints = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleContributorDatapoint]
+type InsightRuleContributorDatapoints = js.Array[InsightRuleContributorDatapoint]
 
-type InsightRuleContributorKey = java.lang.String
+type InsightRuleContributorKey = String
 
-type InsightRuleContributorKeyLabel = java.lang.String
+type InsightRuleContributorKeyLabel = String
 
-type InsightRuleContributorKeyLabels = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleContributorKeyLabel]
+type InsightRuleContributorKeyLabels = js.Array[InsightRuleContributorKeyLabel]
 
-type InsightRuleContributorKeys = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleContributorKey]
+type InsightRuleContributorKeys = js.Array[InsightRuleContributorKey]
 
-type InsightRuleContributors = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleContributor]
+type InsightRuleContributors = js.Array[InsightRuleContributor]
 
-type InsightRuleDefinition = java.lang.String
+type InsightRuleDefinition = String
 
-type InsightRuleMaxResults = scala.Double
+type InsightRuleIsManaged = Boolean
 
-type InsightRuleMetricDatapoints = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleMetricDatapoint]
+type InsightRuleMaxResults = Double
 
-type InsightRuleMetricList = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleMetricName]
+type InsightRuleMetricDatapoints = js.Array[InsightRuleMetricDatapoint]
 
-type InsightRuleMetricName = java.lang.String
+type InsightRuleMetricList = js.Array[InsightRuleMetricName]
 
-type InsightRuleName = java.lang.String
+type InsightRuleMetricName = String
 
-type InsightRuleNames = js.Array[typings.awsSdk.cloudwatchMod.InsightRuleName]
+type InsightRuleName = String
 
-type InsightRuleOrderBy = java.lang.String
+type InsightRuleNames = js.Array[InsightRuleName]
 
-type InsightRuleSchema = java.lang.String
+type InsightRuleOrderBy = String
 
-type InsightRuleState = java.lang.String
+type InsightRuleSchema = String
 
-type InsightRuleUnboundDouble = scala.Double
+type InsightRuleState = String
 
-type InsightRuleUnboundInteger = scala.Double
+type InsightRuleUnboundDouble = Double
 
-type InsightRuleUnboundLong = scala.Double
+type InsightRuleUnboundInteger = Double
 
-type InsightRules = js.Array[typings.awsSdk.cloudwatchMod.InsightRule]
+type InsightRuleUnboundLong = Double
 
-type LastModified = typings.std.Date
+type InsightRules = js.Array[InsightRule]
 
-type MaxRecords = scala.Double
+type LastModified = js.Date
 
-type MaxReturnedResultsCount = scala.Double
+type ListMetricStreamsMaxResults = Double
 
-type Message = java.lang.String
+type ManagedRuleDescriptions = js.Array[ManagedRuleDescription]
 
-type MessageDataCode = java.lang.String
+type ManagedRules = js.Array[ManagedRule]
 
-type MessageDataValue = java.lang.String
+type MaxRecords = Double
 
-type MetricAlarms = js.Array[typings.awsSdk.cloudwatchMod.MetricAlarm]
+type MaxReturnedResultsCount = Double
 
-type MetricData = js.Array[typings.awsSdk.cloudwatchMod.MetricDatum]
+type Message = String
 
-type MetricDataQueries = js.Array[typings.awsSdk.cloudwatchMod.MetricDataQuery]
+type MessageDataCode = String
 
-type MetricDataResultMessages = js.Array[typings.awsSdk.cloudwatchMod.MessageData]
+type MessageDataValue = String
 
-type MetricDataResults = js.Array[typings.awsSdk.cloudwatchMod.MetricDataResult]
+type MetricAlarms = js.Array[MetricAlarm]
 
-type MetricExpression = java.lang.String
+type MetricData = js.Array[MetricDatum]
 
-type MetricId = java.lang.String
+type MetricDataQueries = js.Array[MetricDataQuery]
 
-type MetricLabel = java.lang.String
+type MetricDataResultMessages = js.Array[MessageData]
 
-type MetricName = java.lang.String
+type MetricDataResults = js.Array[MetricDataResult]
 
-type MetricWidget = java.lang.String
+type MetricExpression = String
 
-type MetricWidgetImage = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.cloudwatchMod.Blob | java.lang.String
+type MetricId = String
 
-type Metrics = js.Array[typings.awsSdk.cloudwatchMod.Metric]
+type MetricLabel = String
 
-type Namespace = java.lang.String
+type MetricName = String
 
-type NextToken = java.lang.String
+type MetricStreamEntries = js.Array[MetricStreamEntry]
 
-type OutputFormat = java.lang.String
+type MetricStreamFilters = js.Array[MetricStreamFilter]
 
-type Period = scala.Double
+type MetricStreamName = String
 
-type RecentlyActive = typings.awsSdk.awsSdkStrings.PT3H | java.lang.String
+type MetricStreamNames = js.Array[MetricStreamName]
 
-type ResourceList = js.Array[typings.awsSdk.cloudwatchMod.ResourceName]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.json__
+  - typings.awsSdk.awsSdkStrings.opentelemetry0Dot7
+  - java.lang.String
+*/
+type MetricStreamOutputFormat = _MetricStreamOutputFormat | String
 
-type ResourceName = java.lang.String
+type MetricStreamState = String
 
-type ReturnData = scala.Boolean
+type MetricStreamStatistic = String
+
+type MetricStreamStatisticsAdditionalStatistics = js.Array[MetricStreamStatistic]
+
+type MetricStreamStatisticsConfigurations = js.Array[MetricStreamStatisticsConfiguration]
+
+type MetricStreamStatisticsIncludeMetrics = js.Array[MetricStreamStatisticsMetric]
+
+type MetricWidget = String
+
+type MetricWidgetImage = Buffer | js.typedarray.Uint8Array | Blob | String
+
+type Metrics = js.Array[Metric]
+
+type Namespace = String
+
+type NextToken = String
+
+type OutputFormat = String
+
+type Period = Double
+
+type RecentlyActive = PT3H | String
+
+type ResourceList = js.Array[ResourceName]
+
+type ResourceName = String
+
+type ReturnData = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TimestampDescending
   - typings.awsSdk.awsSdkStrings.TimestampAscending
   - java.lang.String
 */
-type ScanBy = typings.awsSdk.cloudwatchMod._ScanBy | java.lang.String
+type ScanBy = _ScanBy | String
 
-type Size = scala.Double
+type Size = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Seconds_
@@ -265,13 +324,13 @@ type Size = scala.Double
   - typings.awsSdk.awsSdkStrings.None_
   - java.lang.String
 */
-type StandardUnit = typings.awsSdk.cloudwatchMod._StandardUnit | java.lang.String
+type StandardUnit = _StandardUnit | String
 
-type Stat = java.lang.String
+type Stat = String
 
-type StateReason = java.lang.String
+type StateReason = String
 
-type StateReasonData = java.lang.String
+type StateReasonData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OK
@@ -279,7 +338,7 @@ type StateReasonData = java.lang.String
   - typings.awsSdk.awsSdkStrings.INSUFFICIENT_DATA
   - java.lang.String
 */
-type StateValue = typings.awsSdk.cloudwatchMod._StateValue | java.lang.String
+type StateValue = _StateValue | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SampleCount
@@ -289,9 +348,9 @@ type StateValue = typings.awsSdk.cloudwatchMod._StateValue | java.lang.String
   - typings.awsSdk.awsSdkStrings.Maximum_
   - java.lang.String
 */
-type Statistic = typings.awsSdk.cloudwatchMod._Statistic | java.lang.String
+type Statistic = _Statistic | String
 
-type Statistics = js.Array[typings.awsSdk.cloudwatchMod.Statistic]
+type Statistics = js.Array[Statistic]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Complete_
@@ -299,31 +358,35 @@ type Statistics = js.Array[typings.awsSdk.cloudwatchMod.Statistic]
   - typings.awsSdk.awsSdkStrings.PartialData
   - java.lang.String
 */
-type StatusCode = typings.awsSdk.cloudwatchMod._StatusCode | java.lang.String
+type StatusCode = _StatusCode | String
 
-type StorageResolution = scala.Double
+type StorageResolution = Double
 
-type TagKey = java.lang.String
+type SuppressorPeriod = Double
 
-type TagKeyList = js.Array[typings.awsSdk.cloudwatchMod.TagKey]
+type TagKey = String
 
-type TagList = js.Array[typings.awsSdk.cloudwatchMod.Tag]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagList = js.Array[Tag]
 
-type Threshold = scala.Double
+type TagValue = String
 
-type Timestamp = typings.std.Date
+type TemplateName = String
 
-type Timestamps = js.Array[typings.awsSdk.cloudwatchMod.Timestamp]
+type Threshold = Double
 
-type TreatMissingData = java.lang.String
+type Timestamp = js.Date
 
-type Values = js.Array[typings.awsSdk.cloudwatchMod.DatapointValue]
+type Timestamps = js.Array[js.Date]
+
+type TreatMissingData = String
+
+type Values = js.Array[DatapointValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2010-08-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloudwatchMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

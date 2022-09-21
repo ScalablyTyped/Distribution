@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio
 
-Typings are for version 2.11
+Typings are for version 3.82.0
 
 ## Library description:
 A Twilio helper library
@@ -10,10 +10,10 @@ A Twilio helper library
 | ------------------ | :-------------: |
 | Full name          | twilio |
 | Keywords           | twilio, sms, rest, api |
-| # releases         | 58 |
-| # dependents       | 386 |
-| # downloads        | 19956056 |
-| # stars            | 26 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 3523763.0 |
+| # stars            | 1199.0 |
 
 ## Links
 - [Homepage](https://github.com/twilio/twilio-node#readme)
@@ -24,7 +24,7 @@ A Twilio helper library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

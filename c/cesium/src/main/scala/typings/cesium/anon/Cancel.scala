@@ -3,7 +3,6 @@ package typings.cesium.anon
 import typings.cesium.mod.Camera.FlightCancelledCallback
 import typings.cesium.mod.Camera.FlightCompleteCallback
 import typings.cesium.mod.Cartesian3
-import typings.cesium.mod.EasingFunction
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait Cancel extends StObject {
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var easingFunction: js.UndefOr[EasingFunction] = js.undefined
+  var easingFunction: js.UndefOr[typings.cesium.mod.EasingFunction.Callback] = js.undefined
   
   var endTransform: js.UndefOr[Matrix4] = js.undefined
   
@@ -31,7 +30,7 @@ trait Cancel extends StObject {
   
   var maximumHeight: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[Up | Heading] = js.undefined
+  var orientation: js.UndefOr[Any] = js.undefined
   
   var pitchAdjustHeight: js.UndefOr[Double] = js.undefined
 }
@@ -62,7 +61,7 @@ object Cancel {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
+    inline def setEasingFunction(value: /* time */ Double => Double): Self = StObject.set(x, "easingFunction", js.Any.fromFunction1(value))
     
     inline def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
     
@@ -82,7 +81,7 @@ object Cancel {
     
     inline def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
     
-    inline def setOrientation(value: Up | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     

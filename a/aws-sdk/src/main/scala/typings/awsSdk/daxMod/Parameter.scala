@@ -89,7 +89,7 @@ object Parameter {
     
     inline def setNodeTypeSpecificValuesUndefined: Self = StObject.set(x, "NodeTypeSpecificValues", js.undefined)
     
-    inline def setNodeTypeSpecificValuesVarargs(value: NodeTypeSpecificValue*): Self = StObject.set(x, "NodeTypeSpecificValues", js.Array(value :_*))
+    inline def setNodeTypeSpecificValuesVarargs(value: NodeTypeSpecificValue*): Self = StObject.set(x, "NodeTypeSpecificValues", js.Array(value*))
     
     inline def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     

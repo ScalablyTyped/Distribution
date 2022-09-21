@@ -24,6 +24,6 @@ object TestMetricFilterResponse {
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    inline def setMatchesVarargs(value: MetricFilterMatchRecord*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: MetricFilterMatchRecord*): Self = StObject.set(x, "matches", js.Array(value*))
   }
 }

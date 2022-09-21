@@ -9,7 +9,7 @@ trait TypeElement
   extends StObject
      with NamedDeclaration {
   
-  var _typeElementBrand: js.Any = js.native
+  var _typeElementBrand: Any = js.native
   
   @JSName("name")
   val name_TypeElement: js.UndefOr[PropertyName] = js.native

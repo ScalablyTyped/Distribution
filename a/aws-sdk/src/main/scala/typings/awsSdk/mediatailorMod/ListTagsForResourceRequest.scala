@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the playback configuration. You can get this from the response to any playback configuration request. 
+    * The Amazon Resource Name (ARN) for the playback configuration. You can get this from the response to any playback configuration request.
     */
   var ResourceArn: string
 }

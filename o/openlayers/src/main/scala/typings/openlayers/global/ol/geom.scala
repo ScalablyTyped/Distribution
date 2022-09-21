@@ -20,7 +20,7 @@ object geom {
     */
   @JSGlobal("ol.geom.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends typings.openlayers.mod.geom.Circle {
     /**
       * @classdesc
@@ -61,7 +61,7 @@ object geom {
     *
     * @api stable
     */
-  class Geometry ()
+  open class Geometry ()
     extends typings.openlayers.mod.geom.Geometry
   
   /**
@@ -80,7 +80,7 @@ object geom {
     * @param opt_geometries Geometries.
     * @api stable
     */
-  class GeometryCollection ()
+  open class GeometryCollection ()
     extends typings.openlayers.mod.geom.GeometryCollection {
     def this(opt_geometries: js.Array[typings.openlayers.mod.geom.Geometry]) = this()
   }
@@ -95,7 +95,7 @@ object geom {
     */
   @JSGlobal("ol.geom.LineString")
   @js.native
-  class LineString protected ()
+  open class LineString protected ()
     extends typings.openlayers.mod.geom.LineString {
     /**
       * @classdesc
@@ -120,7 +120,7 @@ object geom {
     */
   @JSGlobal("ol.geom.LinearRing")
   @js.native
-  class LinearRing protected ()
+  open class LinearRing protected ()
     extends typings.openlayers.mod.geom.LinearRing {
     /**
       * @classdesc
@@ -145,7 +145,7 @@ object geom {
     */
   @JSGlobal("ol.geom.MultiLineString")
   @js.native
-  class MultiLineString protected ()
+  open class MultiLineString protected ()
     extends typings.openlayers.mod.geom.MultiLineString {
     /**
       * @classdesc
@@ -169,7 +169,7 @@ object geom {
     */
   @JSGlobal("ol.geom.MultiPoint")
   @js.native
-  class MultiPoint protected ()
+  open class MultiPoint protected ()
     extends typings.openlayers.mod.geom.MultiPoint {
     /**
       * @classdesc
@@ -193,7 +193,7 @@ object geom {
     */
   @JSGlobal("ol.geom.MultiPolygon")
   @js.native
-  class MultiPolygon protected ()
+  open class MultiPolygon protected ()
     extends typings.openlayers.mod.geom.MultiPolygon {
     /**
       * @classdesc
@@ -217,7 +217,7 @@ object geom {
     */
   @JSGlobal("ol.geom.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends typings.openlayers.mod.geom.Point {
     /**
       * @classdesc
@@ -241,7 +241,7 @@ object geom {
     */
   @JSGlobal("ol.geom.Polygon")
   @js.native
-  class Polygon protected ()
+  open class Polygon protected ()
     extends typings.openlayers.mod.geom.Polygon {
     /**
       * @classdesc
@@ -316,6 +316,6 @@ object geom {
     *
     * @api stable
     */
-  class SimpleGeometry ()
+  open class SimpleGeometry ()
     extends typings.openlayers.mod.geom.SimpleGeometry
 }

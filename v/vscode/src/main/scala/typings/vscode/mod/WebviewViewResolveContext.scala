@@ -14,7 +14,7 @@ trait WebviewViewResolveContext[T] extends StObject {
   /**
     * Persisted state from the webview content.
     *
-    * To save resources, VS Code normally deallocates webview documents (the iframe content) that are not visible.
+    * To save resources, the editor normally deallocates webview documents (the iframe content) that are not visible.
     * For example, when the user collapse a view or switches to another top level activity in the sidebar, the
     * `WebviewView` itself is kept alive but the webview's underlying document is deallocated. It is recreated when
     * the view becomes visible again.
@@ -37,7 +37,7 @@ trait WebviewViewResolveContext[T] extends StObject {
     * setState({ value: oldState.value + 1 })
     * ```
     *
-    * VS Code ensures that the persisted state is saved correctly when a webview is hidden and across
+    * The editor ensures that the persisted state is saved correctly when a webview is hidden and across
     * editor restarts.
     */
   val state: js.UndefOr[T] = js.undefined

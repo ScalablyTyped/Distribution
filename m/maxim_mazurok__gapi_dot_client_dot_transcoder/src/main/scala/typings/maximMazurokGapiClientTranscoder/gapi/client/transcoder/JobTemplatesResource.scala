@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientTranscoder.anon.AllowMissing
 import typings.maximMazurokGapiClientTranscoder.anon.Callback
 import typings.maximMazurokGapiClientTranscoder.anon.Fields
 import typings.maximMazurokGapiClientTranscoder.anon.JobTemplateId
@@ -18,7 +19,7 @@ trait JobTemplatesResource extends StObject {
   
   /** Deletes a job template. */
   def delete(): Request[js.Object] = js.native
-  def delete(request: Callback): Request[js.Object] = js.native
+  def delete(request: AllowMissing): Request[js.Object] = js.native
   
   /** Returns the job template data. */
   def get(): Request[JobTemplate] = js.native

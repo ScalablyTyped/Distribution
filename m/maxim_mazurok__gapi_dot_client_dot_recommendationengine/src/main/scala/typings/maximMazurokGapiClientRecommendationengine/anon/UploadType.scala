@@ -29,7 +29,7 @@ trait UploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Full resource name of user event, such as "projects/∗/locations/∗/catalogs/default_catalog/eventStores/default_event_store". */
+  /** Required. Full resource name of user event, such as `projects/ *‍/locations/ *‍/catalogs/default_catalog/eventStores/default_event_store`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

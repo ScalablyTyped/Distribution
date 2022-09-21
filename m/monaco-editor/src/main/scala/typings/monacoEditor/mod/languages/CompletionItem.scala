@@ -1,6 +1,5 @@
 package typings.monacoEditor.mod.languages
 
-import typings.monacoEditor.anon.Insert
 import typings.monacoEditor.mod.IMarkdownString
 import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.editor.ISingleEditOperation
@@ -42,7 +41,7 @@ trait CompletionItem extends StObject {
   
   /**
     * A string that should be used when filtering a set of
-    * completion items. When `falsy` the [label](#CompletionItem.label)
+    * completion items. When `falsy` the {@link CompletionItem.label label}
     * is used.
     */
   var filterText: js.UndefOr[String] = js.undefined
@@ -50,12 +49,11 @@ trait CompletionItem extends StObject {
   /**
     * A string or snippet that should be inserted in a document when selecting
     * this completion.
-    * is used.
     */
   var insertText: String
   
   /**
-    * Addition rules (as bitmask) that should be applied when inserting
+    * Additional rules (as bitmask) that should be applied when inserting
     * this completion.
     */
   var insertTextRules: js.UndefOr[CompletionItemInsertTextRule] = js.undefined
@@ -83,17 +81,17 @@ trait CompletionItem extends StObject {
   /**
     * A range of text that should be replaced by this completion item.
     *
-    * Defaults to a range from the start of the [current word](#TextDocument.getWordRangeAtPosition) to the
+    * Defaults to a range from the start of the {@link TextDocument.getWordRangeAtPosition current word} to the
     * current position.
     *
-    * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
-    * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
+    * *Note:* The range must be a {@link Range.isSingleLine single line} and it must
+    * {@link Range.contains contain} the position at which completion has been {@link CompletionItemProvider.provideCompletionItems requested}.
     */
-  var range: IRange | Insert
+  var range: IRange | CompletionItemRanges
   
   /**
     * A string that should be used when comparing this item
-    * with other items. When `falsy` the [label](#CompletionItem.label)
+    * with other items. When `falsy` the {@link CompletionItem.label label}
     * is used.
     */
   var sortText: js.UndefOr[String] = js.undefined
@@ -110,7 +108,7 @@ object CompletionItem {
     insertText: String,
     kind: CompletionItemKind,
     label: String | CompletionItemLabel,
-    range: IRange | Insert
+    range: IRange | CompletionItemRanges
   ): CompletionItem = {
     val __obj = js.Dynamic.literal(insertText = insertText.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItem]
@@ -122,7 +120,7 @@ object CompletionItem {
     
     inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    inline def setAdditionalTextEditsVarargs(value: ISingleEditOperation*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: ISingleEditOperation*): Self = StObject.set(x, "additionalTextEdits", js.Array(value*))
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
@@ -132,7 +130,7 @@ object CompletionItem {
     
     inline def setCommitCharactersUndefined: Self = StObject.set(x, "commitCharacters", js.undefined)
     
-    inline def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value :_*))
+    inline def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value*))
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
@@ -160,7 +158,7 @@ object CompletionItem {
     
     inline def setPreselectUndefined: Self = StObject.set(x, "preselect", js.undefined)
     
-    inline def setRange(value: IRange | Insert): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange | CompletionItemRanges): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setSortText(value: String): Self = StObject.set(x, "sortText", value.asInstanceOf[js.Any])
     
@@ -170,6 +168,6 @@ object CompletionItem {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-spring/shared" : "9.0.0-rc.3"
+      "@react-spring/shared" : "9.5.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-spring/shared" : "9.0.0-rc.3"
+      "@react-spring/shared" : "9.5.4"
     }
   ],
   "compile-devDependencies" : [

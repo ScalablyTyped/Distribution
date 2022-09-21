@@ -1,6 +1,5 @@
 package typings.dropboxjs.global.Dropbox
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +8,12 @@ object File {
   
   @JSGlobal("Dropbox.File.CopyReference")
   @js.native
-  class CopyReference ()
+  open class CopyReference ()
     extends StObject
        with typings.dropboxjs.Dropbox.File.CopyReference {
     
     /* CompleteClass */
-    var expiresAt: Date = js.native
+    var expiresAt: js.Date = js.native
     
     /* CompleteClass */
     var tag: String = js.native
@@ -36,12 +35,12 @@ object File {
   
   @JSGlobal("Dropbox.File.ShareUrl")
   @js.native
-  class ShareUrl ()
+  open class ShareUrl ()
     extends StObject
        with typings.dropboxjs.Dropbox.File.ShareUrl {
     
     /* CompleteClass */
-    var expiresAt: Date = js.native
+    var expiresAt: js.Date = js.native
     
     /* CompleteClass */
     var isDirect: Boolean = js.native
@@ -69,12 +68,12 @@ object File {
   
   @JSGlobal("Dropbox.File.Stat")
   @js.native
-  class Stat ()
+  open class Stat ()
     extends StObject
        with typings.dropboxjs.Dropbox.File.Stat {
     
     /* CompleteClass */
-    var clientModifiedAt: Date = js.native
+    var clientModifiedAt: js.Date = js.native
     
     /* CompleteClass */
     var contentHash: String = js.native
@@ -101,7 +100,7 @@ object File {
     var mimeType: String = js.native
     
     /* CompleteClass */
-    var modifiedAt: Date = js.native
+    var modifiedAt: js.Date = js.native
     
     /* CompleteClass */
     var name: String = js.native

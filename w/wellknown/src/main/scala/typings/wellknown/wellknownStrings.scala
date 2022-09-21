@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wellknownStrings {
   
   @js.native
+  sealed trait GeometryCollection extends StObject
+  inline def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  
+  @js.native
   sealed trait LineString extends StObject
   inline def LineString: LineString = "LineString".asInstanceOf[LineString]
   

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetStreamResponse extends StObject {
   
+  /**
+    * 
+    */
   var stream: js.UndefOr[Stream] = js.undefined
 }
 object GetStreamResponse {

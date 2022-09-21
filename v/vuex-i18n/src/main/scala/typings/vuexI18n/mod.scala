@@ -1,7 +1,6 @@
 package typings.vuexI18n
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vue.pluginMod.PluginObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +15,10 @@ object mod {
     
     @JSImport("vuex-i18n", "default.plugin")
     @js.native
-    def plugin: PluginObject[Ii18n] = js.native
-    inline def plugin_=(x: PluginObject[Ii18n]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    def plugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<Ii18n> */ Any = js.native
+    inline def plugin_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<Ii18n> */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
     
     @JSImport("vuex-i18n", "default.store")
     @js.native
@@ -85,11 +86,11 @@ object mod {
       * to the function directly to the translateInLanguage function
       */
     def translate(key: String, defaultValue: String): js.UndefOr[String] = js.native
-    def translate(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
-    def translate(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translate(key: String, defaultValue: String, options: Any): js.UndefOr[String] = js.native
+    def translate(key: String, defaultValue: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
     def translate(key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
-    def translate(key: String, options: js.Any): js.UndefOr[String] = js.native
-    def translate(key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translate(key: String, options: Any): js.UndefOr[String] = js.native
+    def translate(key: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
     def translate(key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     
     /**
@@ -100,11 +101,11 @@ object mod {
       * get localized string from store in a given language if available.
       */
     def translateIn(locale: String, key: String, defaultValue: String): js.UndefOr[String] = js.native
-    def translateIn(locale: String, key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
-    def translateIn(locale: String, key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, defaultValue: String, options: Any): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, defaultValue: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
-    def translateIn(locale: String, key: String, options: js.Any): js.UndefOr[String] = js.native
-    def translateIn(locale: String, key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, options: Any): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
   }
   
@@ -161,15 +162,15 @@ object mod {
       @JSName("$t")
       def $t(key: String, defaultValue: String): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
+      def $t(key: String, defaultValue: String, options: Any): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+      def $t(key: String, defaultValue: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
       @JSName("$t")
       def $t(key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, options: js.Any): js.UndefOr[String] = js.native
+      def $t(key: String, options: Any): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+      def $t(key: String, options: Any, pluralization: Double): js.UndefOr[String] = js.native
       @JSName("$t")
       def $t(key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     }

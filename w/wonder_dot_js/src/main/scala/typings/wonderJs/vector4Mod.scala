@@ -1,6 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Float32Array
 import typings.wonderJs.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,16 +9,16 @@ object vector4Mod {
   
   @JSImport("wonder.js/dist/es2015/math/Vector4", "Vector4")
   @js.native
-  class Vector4 () extends StObject {
-    def this(x: js.Any, y: js.Any, z: js.Any, w: js.Any) = this()
+  open class Vector4 () extends StObject {
+    def this(x: Any, y: Any, z: Any, w: Any) = this()
     
-    /* protected */ def copyHelper(vector4: Vector4): js.Any = js.native
+    /* protected */ def copyHelper(vector4: Vector4): Any = js.native
     
     def dot(v: Vector4): Double = js.native
     
     def isEqual(v: Vector4): Boolean = js.native
     
-    def lengthManhattan(): js.Any = js.native
+    def lengthManhattan(): Any = js.native
     
     def multiplyScalar(scalar: Double): this.type = js.native
     
@@ -29,7 +28,7 @@ object vector4Mod {
     
     def toVector3(): Vector3 = js.native
     
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
     
     var w: Double = js.native
     
@@ -46,7 +45,7 @@ object vector4Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-    inline def create(x: js.Any, y: js.Any, z: js.Any, w: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
+    inline def create(x: Any, y: Any, z: Any, w: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.FormSelect, 'getSelectedValues' | 'destroy'> */
 trait PickFormSelectgetSelected extends StObject {
   
-  var destroy: js.UndefOr[js.Any] = js.undefined
+  var destroy: js.UndefOr[Any] = js.undefined
   
-  var getSelectedValues: js.UndefOr[js.Any] = js.undefined
+  var getSelectedValues: js.UndefOr[Any] = js.undefined
 }
 object PickFormSelectgetSelected {
   
@@ -20,11 +20,11 @@ object PickFormSelectgetSelected {
   
   extension [Self <: PickFormSelectgetSelected](x: Self) {
     
-    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    inline def setGetSelectedValues(value: js.Any): Self = StObject.set(x, "getSelectedValues", value.asInstanceOf[js.Any])
+    inline def setGetSelectedValues(value: Any): Self = StObject.set(x, "getSelectedValues", value.asInstanceOf[js.Any])
     
     inline def setGetSelectedValuesUndefined: Self = StObject.set(x, "getSelectedValues", js.undefined)
   }

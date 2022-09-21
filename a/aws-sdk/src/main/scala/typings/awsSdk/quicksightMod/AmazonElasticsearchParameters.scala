@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AmazonElasticsearchParameters extends StObject {
   
   /**
-    * The Amazon Elasticsearch Service domain.
+    * The OpenSearch domain.
     */
   var Domain: typings.awsSdk.quicksightMod.Domain
 }

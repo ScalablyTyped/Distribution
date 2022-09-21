@@ -1,13 +1,22 @@
 package typings.tabris.mod
 
-import typings.tabris.anon.OmitContentViewWidgetset
+import typings.tabris.anon.OmitContentViewWidgetanys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "ContentView")
 @js.native
-/* protected */ class ContentView_[ChildType /* <: Widget */] ()
+/**
+  * A composite that does not require (or support) a parent to be visible. It also can not be disposed.
+  * Every instance of `ContentView` is controlled by an associated non-widget object, either an instance
+  * of `Popover` or the global `tabris` object.
+  * 
+  * This constructor can be called as a factory, without "new". Doing so allows passing an attributes
+  * object which may include (in addition to the properties) children, event listeners and layout
+  * shorthands.
+  */
+/* protected */ open class ContentView_[ChildType /* <: Widget[Any] */] ()
   extends typings.tabris.mod.widgets.Composite[ChildType] {
-  /* protected */ def this(properties: Properties[ContentView_[Widget], OmitContentViewWidgetset[ChildType]]) = this()
+  /* protected */ def this(properties: Properties[ContentView_[Widget[Any]], OmitContentViewWidgetanys[ChildType]]) = this()
 }

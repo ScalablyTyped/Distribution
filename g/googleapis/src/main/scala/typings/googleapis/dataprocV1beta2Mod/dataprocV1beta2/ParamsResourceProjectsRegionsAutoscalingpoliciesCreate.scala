@@ -1,9 +1,5 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceProjectsRegionsAutoscalingpoliciesCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. The "resource name" of the region, as described in
-    * https://cloud.google.com/apis/design/resource_names of the form
-    * projects/{project_id}/regions/{region}.
+    * Required. The "resource name" of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.autoscalingPolicies.create, the resource name has the following format: projects/{project_id\}/regions/{region\} For projects.locations.autoscalingPolicies.create, the resource name has the following format: projects/{project_id\}/locations/{location\}
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -37,10 +26,6 @@ object ParamsResourceProjectsRegionsAutoscalingpoliciesCreate {
   }
   
   extension [Self <: ParamsResourceProjectsRegionsAutoscalingpoliciesCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

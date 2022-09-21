@@ -40,7 +40,7 @@ object DriveRoute {
     
     inline def setSteps(value: js.Array[DriveStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

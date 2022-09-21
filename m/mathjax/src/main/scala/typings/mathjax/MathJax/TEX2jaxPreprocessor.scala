@@ -22,7 +22,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags, as
     * your math delimiters.
     */
-  var displayMath: js.UndefOr[js.Any] = js.undefined
+  var displayMath: js.UndefOr[Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should not be processed by tex2jax (other than to
     * look for the processClass pattern below). Note that this is a regular expression, and so you need to be sure
@@ -47,7 +47,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags, as
     * your math delimiters.
     */
-  var inlineMath: js.UndefOr[js.Any] = js.undefined
+  var inlineMath: js.UndefOr[Any] = js.undefined
   
   /*This controls whether tex2jax inserts MathJax_Preview spans to make a preview available, and what preview to
     * use, when it locates in-line or display mathematics in the page. The default is "TeX", which means use the TeX
@@ -60,7 +60,7 @@ trait TEX2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.undefined
+  var preview: js.UndefOr[Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should be processed by tex2jax. This is used to
     * restart processing within tags that have been marked as ignored via the ignoreClass or to cause a tag that
@@ -104,7 +104,7 @@ object TEX2jaxPreprocessor {
     
     inline def setBalanceBracesUndefined: Self = StObject.set(x, "balanceBraces", js.undefined)
     
-    inline def setDisplayMath(value: js.Any): Self = StObject.set(x, "displayMath", value.asInstanceOf[js.Any])
+    inline def setDisplayMath(value: Any): Self = StObject.set(x, "displayMath", value.asInstanceOf[js.Any])
     
     inline def setDisplayMathUndefined: Self = StObject.set(x, "displayMath", js.undefined)
     
@@ -112,11 +112,11 @@ object TEX2jaxPreprocessor {
     
     inline def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
     
-    inline def setInlineMath(value: js.Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
+    inline def setInlineMath(value: Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
     
     inline def setInlineMathUndefined: Self = StObject.set(x, "inlineMath", js.undefined)
     
-    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
@@ -136,6 +136,6 @@ object TEX2jaxPreprocessor {
     
     inline def setSkipTagsUndefined: Self = StObject.set(x, "skipTags", js.undefined)
     
-    inline def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value :_*))
+    inline def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value*))
   }
 }

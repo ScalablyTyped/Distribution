@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AdaptiveMediaSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_downloadbitratechanged(
     `type`: downloadbitratechanged,
@@ -44,7 +44,7 @@ trait AdaptiveMediaSource extends StObject {
     listener: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
   ): Unit = js.native
   
-  var advancedSettings: js.Any = js.native
+  var advancedSettings: Any = js.native
   
   /* unmapped type */
   /** Gets a value indicating if the content streamed by the media source contains only audio. */
@@ -110,7 +110,7 @@ trait AdaptiveMediaSource extends StObject {
   @JSName("onplaybackbitratechanged")
   var onplaybackbitratechanged_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_downloadbitratechanged(
     `type`: downloadbitratechanged,

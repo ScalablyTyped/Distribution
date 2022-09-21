@@ -10,17 +10,17 @@ trait ASPxClientWebDocumentViewerParameter extends StObject {
   
   var isMultiValue: Boolean
   
-  var `type`: js.Any
+  var `type`: Any
   
-  var value: js.Any
+  var value: Any
 }
 object ASPxClientWebDocumentViewerParameter {
   
   inline def apply(
     getParameterDescriptor: () => ASPxDesignerElementParameterDescriptor,
     isMultiValue: Boolean,
-    `type`: js.Any,
-    value: js.Any
+    `type`: Any,
+    value: Any
   ): ASPxClientWebDocumentViewerParameter = {
     val __obj = js.Dynamic.literal(getParameterDescriptor = js.Any.fromFunction0(getParameterDescriptor), isMultiValue = isMultiValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -33,8 +33,8 @@ object ASPxClientWebDocumentViewerParameter {
     
     inline def setIsMultiValue(value: Boolean): Self = StObject.set(x, "isMultiValue", value.asInstanceOf[js.Any])
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -8,5 +8,5 @@ object getItemInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/GetItemInput", "GetItemInput")
   @js.native
-  val GetItemInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetItemInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

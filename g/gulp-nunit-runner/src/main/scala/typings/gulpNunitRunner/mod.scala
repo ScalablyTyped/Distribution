@@ -1,7 +1,6 @@
 package typings.gulpNunitRunner
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -215,7 +214,7 @@ object mod extends Shortcut {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExplore(value: String): Self = StObject.set(x, "explore", value.asInstanceOf[js.Any])
       
@@ -229,7 +228,7 @@ object mod extends Shortcut {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
@@ -275,7 +274,7 @@ object mod extends Shortcut {
       
       inline def setPrivatebinpathUndefined: Self = StObject.set(x, "privatebinpath", js.undefined)
       
-      inline def setPrivatebinpathVarargs(value: String*): Self = StObject.set(x, "privatebinpath", js.Array(value :_*))
+      inline def setPrivatebinpathVarargs(value: String*): Self = StObject.set(x, "privatebinpath", js.Array(value*))
       
       inline def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
@@ -289,7 +288,7 @@ object mod extends Shortcut {
       
       inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       
-      inline def setRunVarargs(value: String*): Self = StObject.set(x, "run", js.Array(value :_*))
+      inline def setRunVarargs(value: String*): Self = StObject.set(x, "run", js.Array(value*))
       
       inline def setRunlist(value: String): Self = StObject.set(x, "runlist", value.asInstanceOf[js.Any])
       
@@ -315,7 +314,7 @@ object mod extends Shortcut {
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: String*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: String*): Self = StObject.set(x, "test", js.Array(value*))
       
       inline def setTestist(value: String): Self = StObject.set(x, "testist", value.asInstanceOf[js.Any])
       
@@ -351,7 +350,10 @@ object mod extends Shortcut {
     }
   }
   
-  type NUnit = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
+  type NUnit = js.Function1[
+    /* options */ js.UndefOr[Options], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   trait Options extends StObject {
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Inviter")
 @js.native
-class Inviter protected ()
+open class Inviter protected ()
   extends typings.sipJs.apiMod.Inviter {
   /**
     * Constructs a new instance of the `Inviter` class.

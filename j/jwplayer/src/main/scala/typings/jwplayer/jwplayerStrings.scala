@@ -174,6 +174,10 @@ object jwplayerStrings {
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
+  sealed trait metadataCueParsed extends StObject
+  inline def metadataCueParsed: metadataCueParsed = "metadataCueParsed".asInstanceOf[metadataCueParsed]
+  
+  @js.native
   sealed trait mid extends StObject
   inline def mid: mid = "mid".asInstanceOf[mid]
   
@@ -270,4 +274,8 @@ object jwplayerStrings {
   @js.native
   sealed trait volume extends StObject
   inline def volume: volume = "volume".asInstanceOf[volume]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

@@ -31,6 +31,6 @@ object ActivityTypeInfos {
     
     inline def setTypeInfos(value: ActivityTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
     
-    inline def setTypeInfosVarargs(value: ActivityTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
+    inline def setTypeInfosVarargs(value: ActivityTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value*))
   }
 }

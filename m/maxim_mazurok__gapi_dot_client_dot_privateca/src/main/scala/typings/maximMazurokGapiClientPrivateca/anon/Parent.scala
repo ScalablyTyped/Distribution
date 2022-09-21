@@ -19,11 +19,8 @@ trait Parent extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional. It must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}`. This field is required when using a CertificateAuthority in the Enterprise
-    * CertificateAuthority.Tier, but is optional and its value is ignored otherwise.
-    */
-  var certificateId: js.UndefOr[String] = js.undefined
+  /** Required. It must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}` */
+  var certificateAuthorityId: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -34,7 +31,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the location and CertificateAuthority associated with the Certificate, in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
+  /** Required. The resource name of the CaPool associated with the CertificateAuthorities, in the format `projects/ *‍/locations/ *‍/caPools/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -83,9 +80,9 @@ object Parent {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityId(value: String): Self = StObject.set(x, "certificateAuthorityId", value.asInstanceOf[js.Any])
     
-    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateAuthorityIdUndefined: Self = StObject.set(x, "certificateAuthorityId", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

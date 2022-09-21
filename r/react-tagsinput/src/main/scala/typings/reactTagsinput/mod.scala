@@ -3,12 +3,11 @@ package typings.reactTagsinput
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactTagsinput.anon.Value
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,19 +16,19 @@ object mod {
   
   @JSImport("react-tagsinput", JSImport.Namespace)
   @js.native
-  class ^[Tag] () extends TagsInput[Tag]
+  open class ^[Tag] () extends TagsInput[Tag]
   
-  type InputProps = StringDictionary[js.Any]
+  type InputProps = StringDictionary[Any]
   
-  trait ReactTagsInputProps[Tag]
-    extends StObject
-       with Props[TagsInput[Tag]] {
+  trait ReactTagsInputProps[Tag] extends StObject {
     
     var addKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
     var addOnPaste: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -57,6 +56,8 @@ object mod {
     
     var preventSubmit: js.UndefOr[Boolean] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[TagsInput[Tag]]] = js.undefined
+    
     var removeKeys: js.UndefOr[js.Array[Double]] = js.undefined
     
     var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps[Tag], ReactNode]] = js.undefined
@@ -69,7 +70,7 @@ object mod {
     
     var tagProps: js.UndefOr[TagProps] = js.undefined
     
-    var validationRegex: js.UndefOr[RegExp] = js.undefined
+    var validationRegex: js.UndefOr[js.RegExp] = js.undefined
     
     var value: js.Array[Tag]
   }
@@ -86,7 +87,7 @@ object mod {
       
       inline def setAddKeysUndefined: Self = StObject.set(x, "addKeys", js.undefined)
       
-      inline def setAddKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "addKeys", js.Array(value :_*))
+      inline def setAddKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "addKeys", js.Array(value*))
       
       inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
       
@@ -95,6 +96,10 @@ object mod {
       inline def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
       
       inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -146,11 +151,19 @@ object mod {
       
       inline def setPreventSubmitUndefined: Self = StObject.set(x, "preventSubmit", js.undefined)
       
+      inline def setRef(value: LegacyRef[TagsInput[Tag]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ TagsInput[Tag] | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setRemoveKeys(value: js.Array[Double]): Self = StObject.set(x, "removeKeys", value.asInstanceOf[js.Any])
       
       inline def setRemoveKeysUndefined: Self = StObject.set(x, "removeKeys", js.undefined)
       
-      inline def setRemoveKeysVarargs(value: Double*): Self = StObject.set(x, "removeKeys", js.Array(value :_*))
+      inline def setRemoveKeysVarargs(value: Double*): Self = StObject.set(x, "removeKeys", js.Array(value*))
       
       inline def setRenderInput(value: /* props */ RenderInputProps[Tag] => ReactNode): Self = StObject.set(x, "renderInput", js.Any.fromFunction1(value))
       
@@ -174,13 +187,13 @@ object mod {
       
       inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
       
-      inline def setValidationRegex(value: RegExp): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
+      inline def setValidationRegex(value: js.RegExp): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
       
       inline def setValidationRegexUndefined: Self = StObject.set(x, "validationRegex", js.undefined)
       
       inline def setValue(value: js.Array[Tag]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Tag*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Tag*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -192,14 +205,14 @@ object mod {
     
     def onChange(e: ChangeEvent[Value]): Unit
     
-    def ref(r: js.Any): Unit
+    def ref(r: Any): Unit
     
     // parameter is either a DOM element or a mounted React component
     val value: Tag
   }
   object RenderInputProps {
     
-    inline def apply[Tag](addTag: Tag => Unit, onChange: ChangeEvent[Value] => Unit, ref: js.Any => Unit, value: Tag): RenderInputProps[Tag] = {
+    inline def apply[Tag](addTag: Tag => Unit, onChange: ChangeEvent[Value] => Unit, ref: Any => Unit, value: Tag): RenderInputProps[Tag] = {
       val __obj = js.Dynamic.literal(addTag = js.Any.fromFunction1(addTag), onChange = js.Any.fromFunction1(onChange), ref = js.Any.fromFunction1(ref), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderInputProps[Tag]]
     }
@@ -210,7 +223,7 @@ object mod {
       
       inline def setOnChange(value: ChangeEvent[Value] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      inline def setRef(value: js.Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setValue(value: Tag): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -253,15 +266,15 @@ object mod {
     }
   }
   
-  type TagProps = StringDictionary[js.Any]
+  type TagProps = StringDictionary[Any]
   
   @js.native
   trait TagsInput[Tag]
-    extends Component[ReactTagsInputProps[Tag], js.Object, js.Any] {
+    extends Component[ReactTagsInputProps[Tag], js.Object, Any] {
     
-    def accept(): js.Any = js.native
+    def accept(): Any = js.native
     
-    def addTag(tag: Tag): js.Any = js.native
+    def addTag(tag: Tag): Any = js.native
     
     def blur(): Unit = js.native
     

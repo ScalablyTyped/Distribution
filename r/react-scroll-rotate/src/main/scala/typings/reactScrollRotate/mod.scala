@@ -2,7 +2,7 @@ package typings.reactScrollRotate
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactScrollRotate.reactScrollRotateStrings.prec
+import typings.reactScrollRotate.reactScrollRotateStrings.perc
 import typings.reactScrollRotate.reactScrollRotateStrings.px
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("react-scroll-rotate", "ScrollRotate")
   @js.native
-  class ScrollRotate protected ()
-    extends Component[ScrollRotateProps, js.Object, js.Any] {
+  open class ScrollRotate protected ()
+    extends Component[ScrollRotateProps, js.Object, Any] {
     def this(props: ScrollRotateProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollRotateProps, context: js.Any) = this()
+    def this(props: ScrollRotateProps, context: Any) = this()
   }
   
   trait ScrollRotateProps extends StObject {
@@ -32,7 +32,7 @@ object mod {
     
     var loops: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[px | prec] = js.undefined
+    var method: js.UndefOr[px | perc] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
     
@@ -65,7 +65,7 @@ object mod {
       
       inline def setLoopsUndefined: Self = StObject.set(x, "loops", js.undefined)
       
-      inline def setMethod(value: px | prec): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: px | perc): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       

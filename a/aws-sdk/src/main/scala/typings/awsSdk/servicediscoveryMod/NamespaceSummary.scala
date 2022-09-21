@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamespaceSummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that AWS Cloud Map assigns to the namespace when you create it.
+    * The Amazon Resource Name (ARN) that Cloud Map assigns to the namespace when you create it.
     */
   var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.undefined
   
   /**
     * The date and time that the namespace was created.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description for the namespace.
@@ -27,10 +27,13 @@ trait NamespaceSummary extends StObject {
   var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The name of the namespace. When you create a namespace, AWS Cloud Map automatically creates a Route 53 hosted zone that has the same name as the namespace.
+    * The name of the namespace. When you create a namespace, Cloud Map automatically creates a Route 53 hosted zone that has the same name as the namespace.
     */
   var Name: js.UndefOr[NamespaceName] = js.undefined
   
+  /**
+    * The properties of the namespace.
+    */
   var Properties: js.UndefOr[NamespaceProperties] = js.undefined
   
   /**
@@ -56,7 +59,7 @@ object NamespaceSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     

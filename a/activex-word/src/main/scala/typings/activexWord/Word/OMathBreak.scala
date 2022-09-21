@@ -14,7 +14,7 @@ trait OMathBreak extends StObject {
   
   def Delete(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -28,7 +28,7 @@ object OMathBreak {
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     WordDotOMathBreak_typekey: OMathBreak
   ): OMathBreak = {
@@ -47,7 +47,7 @@ object OMathBreak {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

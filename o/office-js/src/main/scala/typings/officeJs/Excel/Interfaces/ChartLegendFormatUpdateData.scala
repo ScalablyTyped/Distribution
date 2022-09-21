@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendFormatUpdateData extends StObject {
   
   /**
-    *
     * Represents the border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
   
   /**
+    * Represents the font attributes such as font name, font size, and color of a chart legend.
     *
-    * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined

@@ -5,6 +5,8 @@ import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Navigation.AlertStrings
 import typings.xrm.Xrm.Navigation.ConfirmResult
 import typings.xrm.Xrm.Navigation.ConfirmStrings
+import typings.xrm.Xrm.Navigation.CustomPage
+import typings.xrm.Xrm.Navigation.Dashboard
 import typings.xrm.Xrm.Navigation.DialogSizeOptions
 import typings.xrm.Xrm.Navigation.EntityFormOptions
 import typings.xrm.Xrm.Navigation.ErrorDialogOptions
@@ -25,6 +27,8 @@ import typings.xrm.XrmEnum.WindowPositions
 import typings.xrm.xrmNumbers.`1`
 import typings.xrm.xrmNumbers.`2`
 import typings.xrm.xrmStrings.Percentsign
+import typings.xrm.xrmStrings.custom
+import typings.xrm.xrmStrings.dashboard
 import typings.xrm.xrmStrings.entitylist
 import typings.xrm.xrmStrings.entityrecord
 import typings.xrm.xrmStrings.px
@@ -41,25 +45,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Navigation extends StObject {
   
-  def navigateTo(pageInput: PageInputEntityList): PromiseLike[js.Any] = js.native
-  def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: CustomPage): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: CustomPage, navigationOptions: NavigationOptions): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: Dashboard): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: Dashboard, navigationOptions: NavigationOptions): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: PageInputEntityList): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[Any] = js.native
   /**
     * Navigates to the specified page.
     * @param pageInput Input about the page to navigate to. The object definition changes depending on the type of page to navigate to: entity list or HTML web resource.
     * @param navigationOptions Options for navigating to a page: whether to open inline or in a dialog. If you don't specify this parameter, page is opened inline by default.
     */
-  def navigateTo(pageInput: PageInputEntityRecord): PromiseLike[js.Any] = js.native
-  def navigateTo(pageInput: PageInputEntityRecord, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
-  def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[js.Any] = js.native
-  def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[js.Any] = js.native
+  def navigateTo(pageInput: PageInputEntityRecord): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: PageInputEntityRecord, navigationOptions: NavigationOptions): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[Any] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[Any] = js.native
   
   /**
     * Displays an alert dialog containing a message and a button.
     * @param alertStrings The strings to be used in the alert dialog.
     * @param alertOptions The height and width options for alert dialog
     */
-  def openAlertDialog(alertStrings: AlertStrings): PromiseLike[js.Any] = js.native
-  def openAlertDialog(alertStrings: AlertStrings, alertOptions: DialogSizeOptions): PromiseLike[js.Any] = js.native
+  def openAlertDialog(alertStrings: AlertStrings): PromiseLike[Any] = js.native
+  def openAlertDialog(alertStrings: AlertStrings, alertOptions: DialogSizeOptions): PromiseLike[Any] = js.native
   
   /**
     * Displays a confirmation dialog box containing a message and two buttons.
@@ -73,7 +81,7 @@ trait Navigation extends StObject {
     * Displays an error dialog.
     * @param errorOptions An object to specify the options for error dialog.
     */
-  def openErrorDialog(errorOptions: ErrorDialogOptions): PromiseLike[js.Any] = js.native
+  def openErrorDialog(errorOptions: ErrorDialogOptions): PromiseLike[Any] = js.native
   
   /**
     * Opens a file.
@@ -226,6 +234,74 @@ object Navigation {
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  trait CustomPage extends StObject {
+    
+    /**
+      * The logical name of the table to be made available in the custom page via Param("entityName").
+      * */
+    var entityName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The logic name o the custom page to open.
+      */
+    var name: String
+    
+    var pageType: custom
+    
+    /**
+      * ID of the table record to be made available in the custom page via Param("recordId").
+      * */
+    var recordId: js.UndefOr[String] = js.undefined
+  }
+  object CustomPage {
+    
+    inline def apply(name: String): CustomPage = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pageType = "custom")
+      __obj.asInstanceOf[CustomPage]
+    }
+    
+    extension [Self <: CustomPage](x: Self) {
+      
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      
+      inline def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPageType(value: custom): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+      
+      inline def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
+      
+      inline def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
+    }
+  }
+  
+  trait Dashboard extends StObject {
+    
+    /**
+      * The GUID of the dashboard to load. If not specified, navigates to the default dashboard
+      */
+    var dashboardId: js.UndefOr[String] = js.undefined
+    
+    var pageType: dashboard
+  }
+  object Dashboard {
+    
+    inline def apply(): Dashboard = {
+      val __obj = js.Dynamic.literal(pageType = "dashboard")
+      __obj.asInstanceOf[Dashboard]
+    }
+    
+    extension [Self <: Dashboard](x: Self) {
+      
+      inline def setDashboardId(value: String): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
+      
+      inline def setDashboardIdUndefined: Self = StObject.set(x, "dashboardId", js.undefined)
+      
+      inline def setPageType(value: dashboard): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -538,6 +614,11 @@ object Navigation {
       * */
     var target: `1` | `2`
     
+    /*
+      * The dialog title on top of the center or side dialog.
+      */
+    var title: js.UndefOr[String] = js.undefined
+    
     /**
       * The width of dialog. To specify the width in pixels, just type a numeric value. To specify the width in percentage, specify an object of type
       * */
@@ -561,6 +642,10 @@ object Navigation {
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
       inline def setTarget(value: `1` | `2`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setWidth(value: Double | SizeValue): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -613,7 +698,7 @@ object Navigation {
       
       inline def setSavedEntityReference(value: js.Array[LookupValue]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
       
-      inline def setSavedEntityReferenceVarargs(value: LookupValue*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
+      inline def setSavedEntityReferenceVarargs(value: LookupValue*): Self = StObject.set(x, "savedEntityReference", js.Array(value*))
     }
   }
   
@@ -686,12 +771,12 @@ object Navigation {
     /**
       * Designates a record that will provide default values based on mapped attribute values. The lookup object has the following String properties: entityType, id, and name (optional).
       */
-    var createFromEntity: js.UndefOr[Boolean] = js.undefined
+    var createFromEntity: js.UndefOr[LookupValue] = js.undefined
     
     /**
       * A dictionary object that passes extra parameters to the form. Invalid parameters will cause an error.
       */
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * ID of the entity record to display the form for. If you don't specify this value, the form will be opened in create mode.
@@ -749,11 +834,11 @@ object Navigation {
     
     extension [Self <: PageInputEntityRecord](x: Self) {
       
-      inline def setCreateFromEntity(value: Boolean): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
+      inline def setCreateFromEntity(value: LookupValue): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
       
       inline def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

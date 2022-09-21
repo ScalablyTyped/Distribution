@@ -10,10 +10,10 @@ v11.x compatible interface preset for otplib
 | ------------------ | :-------------: |
 | Full name          | @otplib/preset-v11 |
 | Keywords           | otplib-preset, node |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 1467044 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 708755.3333333334 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

@@ -1,6 +1,5 @@
 package typings.forgeApis.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait AcceptEncoding extends StObject {
   
   var acceptEncoding: js.UndefOr[String] = js.undefined
   
-  var ifModifiedSince: js.UndefOr[Date] = js.undefined
+  var range: js.UndefOr[Double] = js.undefined
 }
 object AcceptEncoding {
   
@@ -24,8 +23,8 @@ object AcceptEncoding {
     
     inline def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
     
-    inline def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

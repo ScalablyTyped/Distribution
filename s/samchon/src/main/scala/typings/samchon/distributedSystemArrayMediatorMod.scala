@@ -60,7 +60,7 @@ object distributedSystemArrayMediatorMod {
     /**
       * @hidden
       */
-    /* private */ var mediator_ : js.Any = js.native
+    /* private */ var mediator_ : Any = js.native
     
     /**
       * Start mediator.

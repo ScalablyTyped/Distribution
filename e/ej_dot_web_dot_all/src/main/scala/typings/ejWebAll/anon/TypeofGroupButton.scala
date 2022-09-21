@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofGroupButton extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: GroupButton
 }
 object TypeofGroupButton {
   
-  inline def apply(Locale: js.Any, fn: GroupButton): TypeofGroupButton = {
+  inline def apply(Locale: Any, fn: GroupButton): TypeofGroupButton = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofGroupButton]
   }
@@ -24,6 +24,6 @@ object TypeofGroupButton {
     
     inline def setFn(value: GroupButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

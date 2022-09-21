@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object unarchiveMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Unarchive", JSImport.Default)
   @js.native
-  val default: SFC[UnarchiveProps] = js.native
+  val default: FC[UnarchiveProps] = js.native
   
   trait UnarchiveProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object UnarchiveProps {
     
@@ -29,14 +29,14 @@ object unarchiveMod extends Shortcut {
     
     extension [Self <: UnarchiveProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[UnarchiveProps]
+  type _To = FC[UnarchiveProps]
   
   /* This means you don't have to write `default`, but can instead just say `unarchiveMod.foo` */
-  override def _to: SFC[UnarchiveProps] = default
+  override def _to: FC[UnarchiveProps] = default
 }

@@ -1,43 +1,31 @@
 package typings.opentelemetryCore
 
-import typings.opentelemetryApi.getterMod.GetterFunction
-import typings.opentelemetryApi.mod.Context_
-import typings.opentelemetryApi.setterMod.SetterFunction
+import typings.opentelemetryApi.contextTypesMod.Context
+import typings.opentelemetryApi.textMapPropagatorMod.TextMapGetter
 import typings.opentelemetryApi.textMapPropagatorMod.TextMapPropagator
-import typings.opentelemetryContextBase.mod.Context
-import typings.opentelemetryCore.propagationTypesMod.CompositePropagatorConfig
+import typings.opentelemetryApi.textMapPropagatorMod.TextMapSetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compositeMod {
   
-  @JSImport("@opentelemetry/core/build/src/context/propagation/composite", "CompositePropagator")
+  @JSImport("@opentelemetry/core/build/src/propagation/composite", "CompositePropagator")
   @js.native
   /**
     * Construct a composite propagator from a list of propagators.
     *
     * @param [config] Configuration object for composite propagator
     */
-  class CompositePropagator ()
+  open class CompositePropagator ()
     extends StObject
-       with TextMapPropagator {
+       with TextMapPropagator[Any] {
     def this(config: CompositePropagatorConfig) = this()
     
-    /* private */ val _logger: js.Any = js.native
+    /* private */ val _fields: Any = js.native
     
-    /* private */ val _propagators: js.Any = js.native
+    /* private */ val _propagators: Any = js.native
     
-    /**
-      * Run each of the configured propagators with the given context and carrier.
-      * Propagators are run in the order they are configured, so if multiple
-      * propagators write the same context key, the propagator later in the list
-      * will "win".
-      *
-      * @param context Context to add values to
-      * @param carrier Carrier from which to extract context
-      */
-    def extract(context: Context_, carrier: js.Any, getter: GetterFunction[js.Any]): Context_ = js.native
     /**
       * Given a `Context` and a carrier, extract context values from a
       * carrier and return a new context, created from the old context, with the
@@ -47,22 +35,18 @@ object compositeMod {
       *     the wire.
       * @param carrier the carrier of propagation fields, such as http request
       *     headers.
-      * @param getter a function which accepts a carrier and a key, and returns
-      *     the value from the carrier identified by the key.
+      * @param getter an optional {@link TextMapGetter}. If undefined, keys will be all
+      *     own properties, and keys will be accessed by direct object access.
       */
     /* CompleteClass */
-    override def extract(context: Context, carrier: js.Any, getter: GetterFunction[js.Any]): Context = js.native
+    override def extract(context: Context, carrier: Any, getter: TextMapGetter[Any]): Context = js.native
     
     /**
-      * Run each of the configured propagators with the given context and carrier.
-      * Propagators are run in the order they are configured, so if multiple
-      * propagators write the same carrier key, the propagator later in the list
-      * will "win".
-      *
-      * @param context Context to inject
-      * @param carrier Carrier into which context will be injected
+      * Return a list of all fields which may be used by the propagator.
       */
-    def inject(context: Context_, carrier: js.Any, setter: SetterFunction[js.Any]): Unit = js.native
+    /* CompleteClass */
+    override def fields(): js.Array[String] = js.native
+    
     /**
       * Injects values from a given `Context` into a carrier.
       *
@@ -73,10 +57,36 @@ object compositeMod {
       *     the wire.
       * @param carrier the carrier of propagation fields, such as http request
       *     headers.
-      * @param setter a function which accepts a carrier, key, and value, which
-      *     sets the key on the carrier to the value.
+      * @param setter an optional {@link TextMapSetter}. If undefined, values will be
+      *     set by direct object assignment.
       */
     /* CompleteClass */
-    override def inject(context: Context, carrier: js.Any, setter: SetterFunction[js.Any]): Unit = js.native
+    override def inject(context: Context, carrier: Any, setter: TextMapSetter[Any]): Unit = js.native
+  }
+  
+  trait CompositePropagatorConfig extends StObject {
+    
+    /**
+      * List of propagators to run. Propagators run in the
+      * list order. If a propagator later in the list writes the same context
+      * key as a propagator earlier in the list, the later on will "win".
+      */
+    var propagators: js.UndefOr[js.Array[TextMapPropagator[Any]]] = js.undefined
+  }
+  object CompositePropagatorConfig {
+    
+    inline def apply(): CompositePropagatorConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CompositePropagatorConfig]
+    }
+    
+    extension [Self <: CompositePropagatorConfig](x: Self) {
+      
+      inline def setPropagators(value: js.Array[TextMapPropagator[Any]]): Self = StObject.set(x, "propagators", value.asInstanceOf[js.Any])
+      
+      inline def setPropagatorsUndefined: Self = StObject.set(x, "propagators", js.undefined)
+      
+      inline def setPropagatorsVarargs(value: TextMapPropagator[Any]*): Self = StObject.set(x, "propagators", js.Array(value*))
+    }
   }
 }

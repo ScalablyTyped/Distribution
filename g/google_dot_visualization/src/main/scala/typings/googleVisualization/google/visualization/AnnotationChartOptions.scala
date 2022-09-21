@@ -2,7 +2,6 @@ package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.googleVisualizationStrings.newRow
 import typings.googleVisualization.googleVisualizationStrings.sameRow
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ trait AnnotationChartOptions extends StObject {
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var numberFormats: js.UndefOr[js.Any] = js.undefined
+  var numberFormats: js.UndefOr[Any] = js.undefined
   
   var scaleColumns: js.UndefOr[js.Array[Double]] = js.undefined
   
@@ -53,9 +52,9 @@ trait AnnotationChartOptions extends StObject {
   
   var thickness: js.UndefOr[Double] = js.undefined
   
-  var zoomEndTime: js.UndefOr[Date] = js.undefined
+  var zoomEndTime: js.UndefOr[js.Date] = js.undefined
   
-  var zoomStartTime: js.UndefOr[Date] = js.undefined
+  var zoomStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object AnnotationChartOptions {
   
@@ -82,7 +81,7 @@ object AnnotationChartOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
@@ -136,7 +135,7 @@ object AnnotationChartOptions {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setNumberFormats(value: js.Any): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
+    inline def setNumberFormats(value: Any): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
     
@@ -144,7 +143,7 @@ object AnnotationChartOptions {
     
     inline def setScaleColumnsUndefined: Self = StObject.set(x, "scaleColumns", js.undefined)
     
-    inline def setScaleColumnsVarargs(value: Double*): Self = StObject.set(x, "scaleColumns", js.Array(value :_*))
+    inline def setScaleColumnsVarargs(value: Double*): Self = StObject.set(x, "scaleColumns", js.Array(value*))
     
     inline def setScaleFormat(value: String): Self = StObject.set(x, "scaleFormat", value.asInstanceOf[js.Any])
     
@@ -158,11 +157,11 @@ object AnnotationChartOptions {
     
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    inline def setZoomEndTime(value: Date): Self = StObject.set(x, "zoomEndTime", value.asInstanceOf[js.Any])
+    inline def setZoomEndTime(value: js.Date): Self = StObject.set(x, "zoomEndTime", value.asInstanceOf[js.Any])
     
     inline def setZoomEndTimeUndefined: Self = StObject.set(x, "zoomEndTime", js.undefined)
     
-    inline def setZoomStartTime(value: Date): Self = StObject.set(x, "zoomStartTime", value.asInstanceOf[js.Any])
+    inline def setZoomStartTime(value: js.Date): Self = StObject.set(x, "zoomStartTime", value.asInstanceOf[js.Any])
     
     inline def setZoomStartTimeUndefined: Self = StObject.set(x, "zoomStartTime", js.undefined)
   }

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for a transaction that can be used to read and write documents.
-  */
 trait SchemaReadWrite extends StObject {
   
   /**
     * An optional transaction to retry.
     */
-  var retryTransaction: js.UndefOr[String] = js.undefined
+  var retryTransaction: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReadWrite {
   
@@ -24,6 +21,8 @@ object SchemaReadWrite {
   extension [Self <: SchemaReadWrite](x: Self) {
     
     inline def setRetryTransaction(value: String): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
+    
+    inline def setRetryTransactionNull: Self = StObject.set(x, "retryTransaction", null)
     
     inline def setRetryTransactionUndefined: Self = StObject.set(x, "retryTransaction", js.undefined)
   }

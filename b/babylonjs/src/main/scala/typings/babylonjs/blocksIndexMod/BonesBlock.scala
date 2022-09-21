@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "BonesBlock")
 @js.native
-class BonesBlock protected ()
+open class BonesBlock protected ()
   extends typings.babylonjs.vertexIndexMod.BonesBlock {
   /**
     * Creates a new BonesBlock

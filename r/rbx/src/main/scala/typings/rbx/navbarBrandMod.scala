@@ -54,7 +54,7 @@ object navbarBrandMod {
   
   @JSImport("rbx/components/navbar/navbar-brand", "NavbarBrand")
   @js.native
-  val NavbarBrand: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val NavbarBrand: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait NavbarBrandProps extends StObject {

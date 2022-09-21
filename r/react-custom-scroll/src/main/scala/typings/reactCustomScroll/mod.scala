@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-custom-scroll", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CustomScrollProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CustomScrollProps, ComponentState, Any] {
     def this(props: CustomScrollProps) = this()
-    def this(props: CustomScrollProps, context: js.Any) = this()
+    def this(props: CustomScrollProps, context: Any) = this()
   }
   /**
     * Customize scrollbar design while using native scroll behavior.
@@ -31,6 +31,10 @@ object mod extends Shortcut {
     
     var allowOuterScroll: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
     var flex: js.UndefOr[Double | String] = js.undefined
     
     var freezePosition: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +45,7 @@ object mod extends Shortcut {
     
     var minScrollHandleHeight: js.UndefOr[Double] = js.undefined
     
-    var onScoll: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var onScroll: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Any]] = js.undefined
     
     var rtl: js.UndefOr[Boolean] = js.undefined
     
@@ -64,6 +68,14 @@ object mod extends Shortcut {
       
       inline def setAllowOuterScrollUndefined: Self = StObject.set(x, "allowOuterScroll", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setFlex(value: Double | String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
@@ -84,9 +96,9 @@ object mod extends Shortcut {
       
       inline def setMinScrollHandleHeightUndefined: Self = StObject.set(x, "minScrollHandleHeight", js.undefined)
       
-      inline def setOnScoll(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onScoll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* e */ js.UndefOr[Any] => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      inline def setOnScollUndefined: Self = StObject.set(x, "onScoll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       

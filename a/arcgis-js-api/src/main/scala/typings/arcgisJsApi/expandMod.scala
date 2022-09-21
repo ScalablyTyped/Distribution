@@ -22,7 +22,7 @@ object expandMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Expand {
     def this(properties: ExpandProperties) = this()

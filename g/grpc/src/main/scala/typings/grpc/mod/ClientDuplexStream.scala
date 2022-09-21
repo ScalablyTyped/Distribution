@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "ClientDuplexStream")
 @js.native
-/* private */ class ClientDuplexStream[RequestType, ResponseType] () extends Duplex {
+/* private */ open class ClientDuplexStream[RequestType, ResponseType] () extends Duplex {
   
   /**
     * Cancel the ongoing call. Results in the call ending with a CANCELLED status,
@@ -21,17 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   def getPeer(): String = js.native
   
-  /**
-    * Write a message to the request stream. If serializing the argument fails,
-    * the call will be cancelled and the stream will end with an error.
-    * @param message The message to write. Must be a valid argument to the
-    *     serialize function of the corresponding method
-    * @param flags Flags to modify how the message is written
-    * @param callback Callback for when this chunk of data is flushed
-    * @return As defined for [Writable]{@link external:Writable}
-    */
-  def write(message: RequestType): Boolean = js.native
-  def write(message: RequestType, flags: js.Any & writeFlags): Boolean = js.native
-  def write(message: RequestType, flags: js.Any & writeFlags, callback: js.Function): Boolean = js.native
+  def write(message: RequestType, flags: Any & writeFlags): Boolean = js.native
+  def write(message: RequestType, flags: Any & writeFlags, callback: js.Function): Boolean = js.native
   def write(message: RequestType, flags: Unit, callback: js.Function): Boolean = js.native
 }

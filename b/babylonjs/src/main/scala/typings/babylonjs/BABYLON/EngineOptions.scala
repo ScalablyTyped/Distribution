@@ -10,10 +10,20 @@ trait EngineOptions
      with WebGLContextAttributes {
   
   /**
+    * Defines whether to adapt to the device's viewport characteristics (default: false)
+    */
+  var adaptToDeviceRatio: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Defines if webaudio should be initialized as well
     * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
     */
   var audioEngine: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies options for the audio engine
+    */
+  var audioEngineOptions: js.UndefOr[IAudioEngineOptions] = js.undefined
   
   /**
     * Defines if webvr should be enabled automatically
@@ -46,6 +56,13 @@ trait EngineOptions
   var doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If sRGB Buffer support is not set during construction, use this value to force a specific state
+    * This is added due to an issue when processing textures in chrome/edge/firefox
+    * This will not influence NativeEngine and WebGPUEngine which set the behavior to true during construction.
+    */
+  var forceSRGBBufferSupportState: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Defines if the engine should no exceed a specified device ratio
     * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio
     */
@@ -56,6 +73,12 @@ trait EngineOptions
   
   /** Defines the seconds between each deterministic lock step */
   var timeStep: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * True if the more expensive but exact conversions should be used for transforming colors to and from linear space within shaders.
+    * Otherwise, the default is to use a cheaper approximation.
+    */
+  var useExactSrgbConversions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines that engine should compile shaders with high precision floats (if supported). True by default
@@ -81,7 +104,15 @@ object EngineOptions {
   
   extension [Self <: EngineOptions](x: Self) {
     
+    inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
+    
+    inline def setAdaptToDeviceRatioUndefined: Self = StObject.set(x, "adaptToDeviceRatio", js.undefined)
+    
     inline def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
+    
+    inline def setAudioEngineOptions(value: IAudioEngineOptions): Self = StObject.set(x, "audioEngineOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAudioEngineOptionsUndefined: Self = StObject.set(x, "audioEngineOptions", js.undefined)
     
     inline def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
     
@@ -105,6 +136,10 @@ object EngineOptions {
     
     inline def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
     
+    inline def setForceSRGBBufferSupportState(value: Boolean): Self = StObject.set(x, "forceSRGBBufferSupportState", value.asInstanceOf[js.Any])
+    
+    inline def setForceSRGBBufferSupportStateUndefined: Self = StObject.set(x, "forceSRGBBufferSupportState", js.undefined)
+    
     inline def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
     
     inline def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
@@ -116,6 +151,10 @@ object EngineOptions {
     inline def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
     
     inline def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
+    
+    inline def setUseExactSrgbConversions(value: Boolean): Self = StObject.set(x, "useExactSrgbConversions", value.asInstanceOf[js.Any])
+    
+    inline def setUseExactSrgbConversionsUndefined: Self = StObject.set(x, "useExactSrgbConversions", js.undefined)
     
     inline def setUseHighPrecisionFloats(value: Boolean): Self = StObject.set(x, "useHighPrecisionFloats", value.asInstanceOf[js.Any])
     

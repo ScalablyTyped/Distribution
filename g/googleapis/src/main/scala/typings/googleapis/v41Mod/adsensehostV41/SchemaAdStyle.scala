@@ -9,27 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaAdStyle extends StObject {
   
   /**
-    * The colors included in the style. These are represented as six
-    * hexadecimal characters, similar to HTML color codes, but without the
-    * leading hash.
+    * The colors included in the style. These are represented as six hexadecimal characters, similar to HTML color codes, but without the leading hash.
     */
-  var colors: js.UndefOr[Background] = js.undefined
+  var colors: js.UndefOr[Background | Null] = js.undefined
   
   /**
-    * The style of the corners in the ad (deprecated: never populated,
-    * ignored).
+    * The style of the corners in the ad (deprecated: never populated, ignored).
     */
-  var corners: js.UndefOr[String] = js.undefined
+  var corners: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The font which is included in the style.
     */
-  var font: js.UndefOr[Size] = js.undefined
+  var font: js.UndefOr[Size | Null] = js.undefined
   
   /**
     * Kind this is, in this case adsensehost#adStyle.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAdStyle {
   
@@ -42,17 +39,25 @@ object SchemaAdStyle {
     
     inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
+    inline def setColorsNull: Self = StObject.set(x, "colors", null)
+    
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     inline def setCorners(value: String): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    
+    inline def setCornersNull: Self = StObject.set(x, "corners", null)
     
     inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     inline def setFont(value: Size): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
+    inline def setFontNull: Self = StObject.set(x, "font", null)
+    
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

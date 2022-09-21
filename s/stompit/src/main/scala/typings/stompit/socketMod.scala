@@ -14,7 +14,7 @@ object socketMod {
   
   @JSImport("stompit/lib/Socket", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Socket {
+  open class ^ protected () extends Socket {
     def this(transportSocket: Duplex, options: SocketOptions) = this()
   }
   
@@ -27,17 +27,17 @@ object socketMod {
     
     def createApplicationError(): SocketError = js.native
     def createApplicationError(message: String): SocketError = js.native
-    def createApplicationError(message: Error): SocketError = js.native
+    def createApplicationError(message: js.Error): SocketError = js.native
     
     def createProtocolError(): SocketError = js.native
     def createProtocolError(message: String): SocketError = js.native
-    def createProtocolError(message: Error): SocketError = js.native
+    def createProtocolError(message: js.Error): SocketError = js.native
     
     def createTransportError(): SocketError = js.native
     def createTransportError(message: String): SocketError = js.native
-    def createTransportError(message: Error): SocketError = js.native
+    def createTransportError(message: js.Error): SocketError = js.native
     
-    def destroy(exception: Error): Unit = js.native
+    def destroy(exception: js.Error): Unit = js.native
     
     def getHeartbeat(): Heartbeat = js.native
     
@@ -46,8 +46,8 @@ object socketMod {
     def hasFinishedOutput(): Boolean = js.native
     
     def sendFrame(command: String): Writable = js.native
-    def sendFrame(command: String, headers: js.Any): Writable = js.native
-    def sendFrame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
+    def sendFrame(command: String, headers: Any): Writable = js.native
+    def sendFrame(command: String, headers: Any, streamOptions: WritableOptions): Writable = js.native
     def sendFrame(command: String, headers: Unit, streamOptions: WritableOptions): Writable = js.native
     
     def setCommandHandler(command: String, handler: commandHandler): Unit = js.native
@@ -135,7 +135,7 @@ object socketMod {
       
       inline def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
       
-      inline def setHeartbeatVarargs(value: Double*): Self = StObject.set(x, "heartbeat", js.Array(value :_*))
+      inline def setHeartbeatVarargs(value: Double*): Self = StObject.set(x, "heartbeat", js.Array(value*))
       
       inline def setOutgoingFrameStream(value: typings.stompit.outgoingFrameStreamMod.^): Self = StObject.set(x, "outgoingFrameStream", value.asInstanceOf[js.Any])
       

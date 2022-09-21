@@ -13,12 +13,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def AddClassGroup(
     ClassGroup: IClassGroup,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddClassGroup(
     ClassGroup: IClassGroup,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddClassGroup(
@@ -30,12 +30,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def AddClassGroup(
     ClassGroup: IClassGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddClassGroup(
     ClassGroup: IClassGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddClassGroup(
@@ -55,13 +55,13 @@ trait IVaultClassGroupOperationsAsync extends StObject {
     ObjectType: Double,
     ClassGroupID: Double,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroup(
     ObjectType: Double,
     ClassGroupID: Double,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroup(
@@ -75,13 +75,13 @@ trait IVaultClassGroupOperationsAsync extends StObject {
     ObjectType: Double,
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroup(
     ObjectType: Double,
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroup(
@@ -101,13 +101,13 @@ trait IVaultClassGroupOperationsAsync extends StObject {
     ObjectType: MFBuiltInObjectType,
     ClassGroupID: Double,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroup(
     ObjectType: MFBuiltInObjectType,
     ClassGroupID: Double,
     successCallback: js.Function1[/* result */ IClassGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroup(
@@ -121,13 +121,13 @@ trait IVaultClassGroupOperationsAsync extends StObject {
     ObjectType: MFBuiltInObjectType,
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroup(
     ObjectType: MFBuiltInObjectType,
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroup(
@@ -143,12 +143,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroupIDByGUID(
     ClassGroupGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroupIDByGUID(
     ClassGroupGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroupIDByGUID(
@@ -160,12 +160,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroupIDByGUID(
     ClassGroupGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroupIDByGUID(
     ClassGroupGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroupIDByGUID(
@@ -180,12 +180,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroups(
     ObjectType: Double,
     successCallback: js.Function1[/* result */ IClassGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroups(
     ObjectType: Double,
     successCallback: js.Function1[/* result */ IClassGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroups(
@@ -197,12 +197,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroups(
     ObjectType: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroups(
     ObjectType: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroups(
@@ -216,12 +216,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroups(
     ObjectType: MFBuiltInObjectType,
     successCallback: js.Function1[/* result */ IClassGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroups(
     ObjectType: MFBuiltInObjectType,
     successCallback: js.Function1[/* result */ IClassGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroups(
@@ -233,12 +233,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def GetClassGroups(
     ObjectType: MFBuiltInObjectType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetClassGroups(
     ObjectType: MFBuiltInObjectType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetClassGroups(
@@ -253,12 +253,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def RemoveClassGroup(
     ClassGroupID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveClassGroup(
     ClassGroupID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveClassGroup(
@@ -270,12 +270,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def RemoveClassGroup(
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveClassGroup(
     ClassGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveClassGroup(
@@ -290,12 +290,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def UpdateClassGroup(
     ClassGroup: IClassGroup,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateClassGroup(
     ClassGroup: IClassGroup,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateClassGroup(
@@ -307,12 +307,12 @@ trait IVaultClassGroupOperationsAsync extends StObject {
   def UpdateClassGroup(
     ClassGroup: IClassGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateClassGroup(
     ClassGroup: IClassGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateClassGroup(

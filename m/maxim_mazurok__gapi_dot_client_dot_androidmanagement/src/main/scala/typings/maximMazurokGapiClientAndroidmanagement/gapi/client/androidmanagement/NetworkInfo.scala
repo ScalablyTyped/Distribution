@@ -15,6 +15,9 @@ trait NetworkInfo extends StObject {
   /** Alphabetic name of current registered operator. For example, Vodafone. */
   var networkOperatorName: js.UndefOr[String] = js.undefined
   
+  /** Provides telephony information associated with each SIM card on the device. Only supported on fully managed devices starting from Android API level 23. */
+  var telephonyInfos: js.UndefOr[js.Array[TelephonyInfo]] = js.undefined
+  
   /** Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11. */
   var wifiMacAddress: js.UndefOr[String] = js.undefined
 }
@@ -38,6 +41,12 @@ object NetworkInfo {
     inline def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
     
     inline def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
+    
+    inline def setTelephonyInfos(value: js.Array[TelephonyInfo]): Self = StObject.set(x, "telephonyInfos", value.asInstanceOf[js.Any])
+    
+    inline def setTelephonyInfosUndefined: Self = StObject.set(x, "telephonyInfos", js.undefined)
+    
+    inline def setTelephonyInfosVarargs(value: TelephonyInfo*): Self = StObject.set(x, "telephonyInfos", js.Array(value*))
     
     inline def setWifiMacAddress(value: String): Self = StObject.set(x, "wifiMacAddress", value.asInstanceOf[js.Any])
     

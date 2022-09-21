@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Folder3 extends StObject {
   
   /** Get Application object */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Copy Items to this folder. */
   def CopyHere(vItem: String): Unit = js.native

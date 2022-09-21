@@ -131,7 +131,7 @@ object appXOptionsMod {
       
       inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
       
-      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
       
       inline def setMakeappxArgs(value: js.Array[String]): Self = StObject.set(x, "makeappxArgs", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object appXOptionsMod {
       
       inline def setMakeappxArgsUndefined: Self = StObject.set(x, "makeappxArgs", js.undefined)
       
-      inline def setMakeappxArgsVarargs(value: String*): Self = StObject.set(x, "makeappxArgs", js.Array(value :_*))
+      inline def setMakeappxArgsVarargs(value: String*): Self = StObject.set(x, "makeappxArgs", js.Array(value*))
       
       inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       

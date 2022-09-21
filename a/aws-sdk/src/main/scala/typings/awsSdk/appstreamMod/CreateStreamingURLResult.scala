@@ -9,7 +9,7 @@ trait CreateStreamingURLResult extends StObject {
   /**
     * The elapsed time, in seconds after the Unix epoch, when this URL expires.
     */
-  var Expires: js.UndefOr[Timestamp] = js.undefined
+  var Expires: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The URL to start the AppStream 2.0 streaming session.
@@ -25,7 +25,7 @@ object CreateStreamingURLResult {
   
   extension [Self <: CreateStreamingURLResult](x: Self) {
     
-    inline def setExpires(value: Timestamp): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     

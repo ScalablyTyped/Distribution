@@ -8,7 +8,7 @@ object Discovery {
   
   @JSGlobal("SP.Discovery.Case")
   @js.native
-  class Case protected ()
+  open class Case protected ()
     extends StObject
        with typings.sharepoint.SP.Discovery.Case {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
@@ -16,10 +16,10 @@ object Discovery {
   
   @JSGlobal("SP.Discovery.Export")
   @js.native
-  class Export protected ()
+  open class Export protected ()
     extends StObject
        with typings.sharepoint.SP.Discovery.Export {
-    def this(context: typings.sharepoint.SP.ClientRuntimeContext, item: typings.sharepoint.SP.ListItem[js.Any]) = this()
+    def this(context: typings.sharepoint.SP.ClientRuntimeContext, item: typings.sharepoint.SP.ListItem[Any]) = this()
   }
   
   @JSGlobal("SP.Discovery.ExportStatus")

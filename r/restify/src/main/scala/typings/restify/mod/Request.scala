@@ -35,7 +35,7 @@ trait Request extends IncomingMessage {
   var authorization: js.UndefOr[RequestAuthorization] = js.native
   
   /** available when bodyParser plugin is used. */
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[Any] = js.native
   
   /**
     * returns the connection state of the request. current valid values are
@@ -103,7 +103,7 @@ trait Request extends IncomingMessage {
     *  name: 'getpingname'
     * }
     */
-  def getRoute(): RouteSpec = js.native
+  def getRoute(): Route = js.native
   
   /**
     * returns a parsed URL object.
@@ -177,7 +177,7 @@ trait Request extends IncomingMessage {
   def matchedVersion(): String = js.native
   
   /** available when queryParser or bodyParser plugin is used with mapParams enabled. */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[Any] = js.native
   
   /**
     * pass through to getPath.
@@ -185,7 +185,10 @@ trait Request extends IncomingMessage {
   def path(): String = js.native
   
   /** available when queryParser plugin is used. */
-  var query: js.UndefOr[js.Any] = js.native
+  var query: js.UndefOr[Any] = js.native
+  
+  /** available when bodyParser plugin is used. */
+  var rawBody: js.UndefOr[Any] = js.native
   
   /**
     * Start the timer for a request handler function. You must explicitly invoke

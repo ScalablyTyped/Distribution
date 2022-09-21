@@ -28,7 +28,7 @@ object TypeParameterInstantiation_ {
     
     inline def setParams(value: js.Array[FlowType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: FlowType*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: FlowType*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setType(value: TypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

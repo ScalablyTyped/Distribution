@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "LinkOutSuggestion")
 @js.native
-class LinkOutSuggestion protected ()
+open class LinkOutSuggestion protected ()
   extends typings.actionsOnGoogle.conversationMod.LinkOutSuggestion
      with _IncomingMessage {
   /**

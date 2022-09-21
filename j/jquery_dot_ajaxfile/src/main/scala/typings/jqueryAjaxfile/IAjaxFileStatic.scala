@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IAjaxFileStatic extends StObject {
   
-  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any
+  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any
   
   def send[T](option: IOption): IAjaxFilePromise[T]
 }
 object IAjaxFileStatic {
   
   inline def apply(
-    DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
-    send: IOption => IAjaxFilePromise[js.Any]
+    DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any,
+    send: IOption => IAjaxFilePromise[Any]
   ): IAjaxFileStatic = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
     __obj.asInstanceOf[IAjaxFileStatic]
@@ -22,8 +22,8 @@ object IAjaxFileStatic {
   
   extension [Self <: IAjaxFileStatic](x: Self) {
     
-    inline def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    inline def setSend(value: IOption => IAjaxFilePromise[js.Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: IOption => IAjaxFilePromise[Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

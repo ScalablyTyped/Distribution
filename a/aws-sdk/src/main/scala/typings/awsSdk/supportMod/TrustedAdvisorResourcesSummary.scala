@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrustedAdvisorResourcesSummary extends StObject {
   
   /**
-    * The number of AWS resources that were flagged (listed) by the Trusted Advisor check.
+    * The number of Amazon Web Services resources that were flagged (listed) by the Trusted Advisor check.
     */
   var resourcesFlagged: Long
   
   /**
-    * The number of AWS resources ignored by Trusted Advisor because information was unavailable.
+    * The number of Amazon Web Services resources ignored by Trusted Advisor because information was unavailable.
     */
   var resourcesIgnored: Long
   
   /**
-    * The number of AWS resources that were analyzed by the Trusted Advisor check.
+    * The number of Amazon Web Services resources that were analyzed by the Trusted Advisor check.
     */
   var resourcesProcessed: Long
   
   /**
-    * The number of AWS resources ignored by Trusted Advisor because they were marked as suppressed by the user.
+    * The number of Amazon Web Services resources ignored by Trusted Advisor because they were marked as suppressed by the user.
     */
   var resourcesSuppressed: Long
 }

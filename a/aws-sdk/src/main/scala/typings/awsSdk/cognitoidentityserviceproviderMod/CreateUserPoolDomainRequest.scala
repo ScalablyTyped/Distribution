@@ -12,7 +12,7 @@ trait CreateUserPoolDomainRequest extends StObject {
   var CustomDomainConfig: js.UndefOr[CustomDomainConfigType] = js.undefined
   
   /**
-    * The domain string.
+    * The domain string. For custom domains, this is the fully-qualified domain name, such as auth.example.com. For Amazon Cognito prefix domains, this is the prefix alone, such as auth.
     */
   var Domain: DomainType
   

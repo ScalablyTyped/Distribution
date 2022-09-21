@@ -5,49 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.fill` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFillLoadOptions extends StObject {
   
   /**
-    *
     * Specifies whether to load the `color` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to load the `pattern` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to load the `patternColor` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to load the `patternTintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to load the `tintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined

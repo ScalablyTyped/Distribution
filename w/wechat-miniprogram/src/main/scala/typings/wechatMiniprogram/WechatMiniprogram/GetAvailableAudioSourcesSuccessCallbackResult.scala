@@ -51,7 +51,7 @@ object GetAvailableAudioSourcesSuccessCallbackResult {
     
     inline def setAudioSourcesVarargs(
       value: (auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition)*
-    ): Self = StObject.set(x, "audioSources", js.Array(value :_*))
+    ): Self = StObject.set(x, "audioSources", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

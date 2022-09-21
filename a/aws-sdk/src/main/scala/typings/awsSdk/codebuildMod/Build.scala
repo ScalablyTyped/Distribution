@@ -52,14 +52,14 @@ trait Build extends StObject {
   var debugSession: js.UndefOr[DebugSession] = js.undefined
   
   /**
-    * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/&lt;alias-name&gt;).
+    * The Key Management Service customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/&lt;alias-name&gt;).
     */
   var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * When the build process ended, expressed in Unix time format.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the build environment for this build.
@@ -67,7 +67,7 @@ trait Build extends StObject {
   var environment: js.UndefOr[ProjectEnvironment] = js.undefined
   
   /**
-    *  A list of exported environment variables for this build. 
+    * A list of exported environment variables for this build. Exported environment variables are used in conjunction with CodePipeline to export environment variables from the current build stage to subsequent stages in the pipeline. For more information, see Working with variables in the CodePipeline User Guide.
     */
   var exportedEnvironmentVariables: js.UndefOr[ExportedEnvironmentVariables] = js.undefined
   
@@ -82,12 +82,12 @@ trait Build extends StObject {
   var id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The entity that started the build. Valid values include:   If AWS CodePipeline started the build, the pipeline's name (for example, codepipeline/my-demo-pipeline).   If an AWS Identity and Access Management (IAM) user started the build, the user's name (for example, MyUserName).   If the Jenkins plugin for AWS CodeBuild started the build, the string CodeBuild-Jenkins-Plugin.  
+    * The entity that started the build. Valid values include:   If CodePipeline started the build, the pipeline's name (for example, codepipeline/my-demo-pipeline).   If an IAM user started the build, the user's name (for example, MyUserName).   If the Jenkins plugin for CodeBuild started the build, the string CodeBuild-Jenkins-Plugin.  
     */
   var initiator: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the build's logs in Amazon CloudWatch Logs.
+    * Information about the build's logs in CloudWatch Logs.
     */
   var logs: js.UndefOr[LogsLocation] = js.undefined
   
@@ -102,7 +102,7 @@ trait Build extends StObject {
   var phases: js.UndefOr[BuildPhases] = js.undefined
   
   /**
-    * The name of the AWS CodeBuild project.
+    * The name of the CodeBuild project.
     */
   var projectName: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -117,7 +117,7 @@ trait Build extends StObject {
   var reportArns: js.UndefOr[BuildReportArns] = js.undefined
   
   /**
-    *  An identifier for the version of this build's source code.     For AWS CodeCommit, GitHub, GitHub Enterprise, and BitBucket, the commit ID.     For AWS CodePipeline, the source revision provided by AWS CodePipeline.     For Amazon Simple Storage Service (Amazon S3), this does not apply.   
+    *  An identifier for the version of this build's source code.     For CodeCommit, GitHub, GitHub Enterprise, and BitBucket, the commit ID.     For CodePipeline, the source revision provided by CodePipeline.     For Amazon S3, this does not apply.   
     */
   var resolvedSourceVersion: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -127,7 +127,7 @@ trait Build extends StObject {
   var secondaryArtifacts: js.UndefOr[BuildArtifactsList] = js.undefined
   
   /**
-    *  An array of ProjectSourceVersion objects. Each ProjectSourceVersion must be one of:    For AWS CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
+    *  An array of ProjectSourceVersion objects. Each ProjectSourceVersion must be one of:    For CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon S3: the version ID of the object that represents the build input ZIP file to use.  
     */
   var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.undefined
   
@@ -147,22 +147,22 @@ trait Build extends StObject {
   var source: js.UndefOr[ProjectSource] = js.undefined
   
   /**
-    * Any version identifier for the version of the source code to be built. If sourceVersion is specified at the project level, then this sourceVersion (at the build level) takes precedence.   For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
+    * Any version identifier for the version of the source code to be built. If sourceVersion is specified at the project level, then this sourceVersion (at the build level) takes precedence.   For more information, see Source Version Sample with CodeBuild in the CodeBuild User Guide. 
     */
   var sourceVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * When the build process started, expressed in Unix time format.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * How long, in minutes, for AWS CodeBuild to wait before timing out this build if it does not get marked as completed.
+    * How long, in minutes, for CodeBuild to wait before timing out this build if it does not get marked as completed.
     */
   var timeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined
   
   /**
-    * If your AWS CodeBuild project accesses resources in an Amazon VPC, you provide this parameter that identifies the VPC ID and the list of security group IDs and subnet IDs. The security groups and subnets must belong to the same VPC. You must provide at least one security group and one subnet ID.
+    * If your CodeBuild project accesses resources in an Amazon VPC, you provide this parameter that identifies the VPC ID and the list of security group IDs and subnet IDs. The security groups and subnets must belong to the same VPC. You must provide at least one security group and one subnet ID.
     */
   var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
@@ -215,7 +215,7 @@ object Build {
     
     inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -227,13 +227,13 @@ object Build {
     
     inline def setExportedEnvironmentVariablesUndefined: Self = StObject.set(x, "exportedEnvironmentVariables", js.undefined)
     
-    inline def setExportedEnvironmentVariablesVarargs(value: ExportedEnvironmentVariable*): Self = StObject.set(x, "exportedEnvironmentVariables", js.Array(value :_*))
+    inline def setExportedEnvironmentVariablesVarargs(value: ExportedEnvironmentVariable*): Self = StObject.set(x, "exportedEnvironmentVariables", js.Array(value*))
     
     inline def setFileSystemLocations(value: ProjectFileSystemLocations): Self = StObject.set(x, "fileSystemLocations", value.asInstanceOf[js.Any])
     
     inline def setFileSystemLocationsUndefined: Self = StObject.set(x, "fileSystemLocations", js.undefined)
     
-    inline def setFileSystemLocationsVarargs(value: ProjectFileSystemLocation*): Self = StObject.set(x, "fileSystemLocations", js.Array(value :_*))
+    inline def setFileSystemLocationsVarargs(value: ProjectFileSystemLocation*): Self = StObject.set(x, "fileSystemLocations", js.Array(value*))
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -255,7 +255,7 @@ object Build {
     
     inline def setPhasesUndefined: Self = StObject.set(x, "phases", js.undefined)
     
-    inline def setPhasesVarargs(value: BuildPhase*): Self = StObject.set(x, "phases", js.Array(value :_*))
+    inline def setPhasesVarargs(value: BuildPhase*): Self = StObject.set(x, "phases", js.Array(value*))
     
     inline def setProjectName(value: NonEmptyString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
@@ -269,7 +269,7 @@ object Build {
     
     inline def setReportArnsUndefined: Self = StObject.set(x, "reportArns", js.undefined)
     
-    inline def setReportArnsVarargs(value: String*): Self = StObject.set(x, "reportArns", js.Array(value :_*))
+    inline def setReportArnsVarargs(value: String*): Self = StObject.set(x, "reportArns", js.Array(value*))
     
     inline def setResolvedSourceVersion(value: NonEmptyString): Self = StObject.set(x, "resolvedSourceVersion", value.asInstanceOf[js.Any])
     
@@ -279,19 +279,19 @@ object Build {
     
     inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
     
-    inline def setSecondaryArtifactsVarargs(value: BuildArtifacts*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
+    inline def setSecondaryArtifactsVarargs(value: BuildArtifacts*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value*))
     
     inline def setSecondarySourceVersions(value: ProjectSecondarySourceVersions): Self = StObject.set(x, "secondarySourceVersions", value.asInstanceOf[js.Any])
     
     inline def setSecondarySourceVersionsUndefined: Self = StObject.set(x, "secondarySourceVersions", js.undefined)
     
-    inline def setSecondarySourceVersionsVarargs(value: ProjectSourceVersion*): Self = StObject.set(x, "secondarySourceVersions", js.Array(value :_*))
+    inline def setSecondarySourceVersionsVarargs(value: ProjectSourceVersion*): Self = StObject.set(x, "secondarySourceVersions", js.Array(value*))
     
     inline def setSecondarySources(value: ProjectSources): Self = StObject.set(x, "secondarySources", value.asInstanceOf[js.Any])
     
     inline def setSecondarySourcesUndefined: Self = StObject.set(x, "secondarySources", js.undefined)
     
-    inline def setSecondarySourcesVarargs(value: ProjectSource*): Self = StObject.set(x, "secondarySources", js.Array(value :_*))
+    inline def setSecondarySourcesVarargs(value: ProjectSource*): Self = StObject.set(x, "secondarySources", js.Array(value*))
     
     inline def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
@@ -305,7 +305,7 @@ object Build {
     
     inline def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

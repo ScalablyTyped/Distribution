@@ -1,7 +1,7 @@
 
 # Scala.js typings for quick-lru
 
-Typings are for version 5.1.1
+Typings are for version 6.1.1
 
 ## Library description:
 Simple “Least Recently Used” (LRU) cache
@@ -10,10 +10,10 @@ Simple “Least Recently Used” (LRU) cache
 | ------------------ | :-------------: |
 | Full name          | quick-lru |
 | Keywords           | lru, quick, cache, caching, least, recently, used, fast, map, hash, buffer |
-| # releases         | 8 |
-| # dependents       | 123 |
-| # downloads        | 288451396 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 6.784443566666667E7 |
+| # stars            | 497.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/quick-lru#readme)

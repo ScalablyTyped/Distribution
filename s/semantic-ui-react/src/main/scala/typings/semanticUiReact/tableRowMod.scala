@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
@@ -19,7 +19,7 @@ object tableRowMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableRow", JSImport.Default)
   @js.native
-  val default: StatelessComponent[TableRowProps] = js.native
+  val default: FC[TableRowProps] = js.native
   
   trait StrictTableRowProps extends StObject {
     
@@ -27,10 +27,10 @@ object tableRowMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** An element type to render as (string or function). */
-    var cellAs: js.UndefOr[js.Any] = js.undefined
+    var cellAs: js.UndefOr[Any] = js.undefined
     
     /** Shorthand array of props for TableCell. */
     var cells: js.UndefOr[SemanticShorthandCollection[TableCellProps]] = js.undefined
@@ -75,11 +75,11 @@ object tableRowMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setCellAs(value: js.Any): Self = StObject.set(x, "cellAs", value.asInstanceOf[js.Any])
+      inline def setCellAs(value: Any): Self = StObject.set(x, "cellAs", value.asInstanceOf[js.Any])
       
       inline def setCellAsUndefined: Self = StObject.set(x, "cellAs", js.undefined)
       
@@ -87,7 +87,7 @@ object tableRowMod extends Shortcut {
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: SemanticShorthandItem[TableCellProps]*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: SemanticShorthandItem[TableCellProps]*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -130,7 +130,7 @@ object tableRowMod extends Shortcut {
   trait TableRowProps
     extends StObject
        with StrictTableRowProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TableRowProps {
     
     inline def apply(): TableRowProps = {
@@ -139,8 +139,8 @@ object tableRowMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[TableRowProps]
+  type _To = FC[TableRowProps]
   
   /* This means you don't have to write `default`, but can instead just say `tableRowMod.foo` */
-  override def _to: StatelessComponent[TableRowProps] = default
+  override def _to: FC[TableRowProps] = default
 }

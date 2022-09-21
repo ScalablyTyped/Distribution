@@ -9,7 +9,7 @@ trait GetServiceGraphRequest extends StObject {
   /**
     * The end of the timeframe for which to generate a graph.
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of a group based on which you want to generate a graph.
@@ -29,18 +29,18 @@ trait GetServiceGraphRequest extends StObject {
   /**
     * The start of the time frame for which to generate a graph.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
 }
 object GetServiceGraphRequest {
   
-  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetServiceGraphRequest = {
+  inline def apply(EndTime: js.Date, StartTime: js.Date): GetServiceGraphRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceGraphRequest]
   }
   
   extension [Self <: GetServiceGraphRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
@@ -54,6 +54,6 @@ object GetServiceGraphRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

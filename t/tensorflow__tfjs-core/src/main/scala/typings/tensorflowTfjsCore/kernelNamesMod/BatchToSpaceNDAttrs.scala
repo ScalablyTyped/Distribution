@@ -21,10 +21,10 @@ object BatchToSpaceNDAttrs {
     
     inline def setBlockShape(value: js.Array[Double]): Self = StObject.set(x, "blockShape", value.asInstanceOf[js.Any])
     
-    inline def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value :_*))
+    inline def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value*))
     
     inline def setCrops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "crops", value.asInstanceOf[js.Any])
     
-    inline def setCropsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "crops", js.Array(value :_*))
+    inline def setCropsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "crops", js.Array(value*))
   }
 }

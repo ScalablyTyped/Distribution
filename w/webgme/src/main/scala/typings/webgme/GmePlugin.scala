@@ -36,7 +36,7 @@ object GmePlugin {
       *
       * (n.b. 'a' and 'b' in example 3) are pointing to the meta nodes defined in A.B.)
       */
-    var META: js.Any = js.native
+    var META: Any = js.native
     
     var activeNode: Node = js.native
     
@@ -44,7 +44,7 @@ object GmePlugin {
     
     def addCommitToResult(status: String): Unit = js.native
     
-    def baseIsMeta(node: js.Any): Boolean = js.native
+    def baseIsMeta(node: Any): Boolean = js.native
     
     var blobClient: BlobClient = js.native
     
@@ -52,7 +52,7 @@ object GmePlugin {
     
     var core: typings.webgme.GmeClasses.Core = js.native
     
-    def createMessage(node: js.Any, message: String, serverity: String): Unit = js.native
+    def createMessage(node: Any, message: String, serverity: String): Unit = js.native
     
     /**
       * Gets the configuration structure for the plugin.
@@ -70,9 +70,9 @@ object GmePlugin {
       */
     def getDescription(): String = js.native
     
-    def getMetaType(node: js.Any): js.Any = js.native
+    def getMetaType(node: Any): Any = js.native
     
-    def getMetadata(): js.Any = js.native
+    def getMetadata(): Any = js.native
     
     /**
       * Gets the name of the plugin.
@@ -90,9 +90,9 @@ object GmePlugin {
     
     var isConfigured: Boolean = js.native
     
-    def isInvalidActiveNode(pluginId: js.Any): js.Any = js.native
+    def isInvalidActiveNode(pluginId: Any): Any = js.native
     
-    def isMetaTypeOf(node: js.Any, metaNode: js.Any): Boolean = js.native
+    def isMetaTypeOf(node: Any, metaNode: Any): Boolean = js.native
     
     var logger: GmeLogger = js.native
     
@@ -124,7 +124,7 @@ object GmePlugin {
       */
     var namespace: String = js.native
     
-    var notificationHandlers: js.Array[js.Any] = js.native
+    var notificationHandlers: js.Array[Any] = js.native
     
     var pluginMetadata: Metadata = js.native
     
@@ -144,7 +144,7 @@ object GmePlugin {
     
     def setCurrentConfig(newConfig: typings.webgme.GmeConfig.GmeConfig): Unit = js.native
     
-    def updateMeta(generatedMeta: js.Any): Unit = js.native
+    def updateMeta(generatedMeta: Any): Unit = js.native
     
     def updateSuccess(value: Boolean, message: TemplateStringsArray): Unit = js.native
   }

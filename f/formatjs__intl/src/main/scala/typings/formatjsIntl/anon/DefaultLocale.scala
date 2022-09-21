@@ -1,24 +1,29 @@
 package typings.formatjsIntl.anon
 
-import typings.formatjsIntl.errorMod.InvalidConfigError
-import typings.formatjsIntl.errorMod.MessageFormatError
-import typings.formatjsIntl.errorMod.MissingDataError
-import typings.formatjsIntl.errorMod.MissingTranslationError
-import typings.formatjsIntl.errorMod.UnsupportedFormatterError
-import typings.formatjsIntl.typesMod.CustomFormats
-import typings.formatjsIntl.typesMod.OnErrorFn
+import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIntl.srcErrorMod.InvalidConfigError
+import typings.formatjsIntl.srcErrorMod.MessageFormatError
+import typings.formatjsIntl.srcErrorMod.MissingDataError
+import typings.formatjsIntl.srcErrorMod.MissingTranslationError
+import typings.formatjsIntl.srcErrorMod.UnsupportedFormatterError
+import typings.formatjsIntl.srcTypesMod.CustomFormats
+import typings.formatjsIntl.srcTypesMod.OnErrorFn
 import typings.intlMessageformat.mod.FormatError
-import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
+import typings.intlMessageformat.srcFormattersMod.FormatXMLElementFn
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DefaultLocale extends StObject {
+trait DefaultLocale[T] extends StObject {
   
   var defaultFormats: CustomFormats
   
   var defaultLocale: String
+  
+  var defaultRichTextElements: js.UndefOr[Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]] = js.undefined
+  
+  var fallbackOnEmptyString: js.UndefOr[Boolean] = js.undefined
   
   var formats: CustomFormats
   
@@ -39,23 +44,31 @@ trait DefaultLocale extends StObject {
 }
 object DefaultLocale {
   
-  inline def apply(
+  inline def apply[T](
     defaultFormats: CustomFormats,
     defaultLocale: String,
     formats: CustomFormats,
     locale: String,
     messages: Record[String, js.Array[MessageFormatElement] | String],
     onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
-  ): DefaultLocale = {
+  ): DefaultLocale[T] = {
     val __obj = js.Dynamic.literal(defaultFormats = defaultFormats.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))
-    __obj.asInstanceOf[DefaultLocale]
+    __obj.asInstanceOf[DefaultLocale[T]]
   }
   
-  extension [Self <: DefaultLocale](x: Self) {
+  extension [Self <: DefaultLocale[?], T](x: Self & DefaultLocale[T]) {
     
     inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     
     inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
+    
+    inline def setFallbackOnEmptyString(value: Boolean): Self = StObject.set(x, "fallbackOnEmptyString", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackOnEmptyStringUndefined: Self = StObject.set(x, "fallbackOnEmptyString", js.undefined)
     
     inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

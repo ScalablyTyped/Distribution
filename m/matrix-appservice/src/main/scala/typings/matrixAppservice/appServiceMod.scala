@@ -1,17 +1,11 @@
 package typings.matrixAppservice
 
 import typings.express.mod.Application_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.matrixAppservice.anon.HomeserverToken
 import typings.matrixAppservice.matrixAppserviceStrings.`http-log`
 import typings.matrixAppservice.matrixAppserviceStrings.ephemeral
 import typings.matrixAppservice.matrixAppserviceStrings.event
 import typings.node.eventsMod.EventEmitter
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +15,7 @@ object appServiceMod {
   
   @JSImport("matrix-appservice/lib/app-service", "AppService")
   @js.native
-  class AppService protected () extends EventEmitter {
+  open class AppService protected () extends EventEmitter {
     /**
       * Construct a new application service.
       * @constructor
@@ -35,30 +29,9 @@ object appServiceMod {
     def this(config: HomeserverToken) = this()
     
     /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    /**
       * @deprecated Use `AppService.expressApp`
       */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
-    /**
-      * @deprecated Use `AppService.expressApp`
-      */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
-    /**
-      * @deprecated Use `AppService.expressApp`
-      */
-    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
-    /**
-      * @deprecated Use `AppService.expressApp`
-      */
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
-    /**
-      * @deprecated Use `AppService.expressApp`
-      */
-    @JSName("app")
-    val app_Original: Application_ = js.native
+    val app: Application_ = js.native
     
     /**
       * Closes the HTTP server.
@@ -67,7 +40,7 @@ object appServiceMod {
       */
     def close(): js.Promise[Unit] = js.native
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
     /**
       * The Express App instance for the appservice, which
@@ -75,9 +48,9 @@ object appServiceMod {
       */
     def expressApp: Application_ = js.native
     
-    /* private */ var isInvalidToken: js.Any = js.native
+    /* private */ var isInvalidToken: Any = js.native
     
-    /* private */ var lastProcessedTxnId: js.Any = js.native
+    /* private */ var lastProcessedTxnId: Any = js.native
     
     /***
       * Begin listening on the specified port.
@@ -87,8 +60,8 @@ object appServiceMod {
       * @param {Function} callback The callback for the "listening" event. Optional.
       * @returns {Promise} When the server is listening, if a callback is not provided.
       */
-    def listen(port: Double, hostname: String, backlog: Double): js.UndefOr[js.Promise[js.Any]] = js.native
-    def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): js.UndefOr[js.Promise[js.Any]] = js.native
+    def listen(port: Double, hostname: String, backlog: Double): js.UndefOr[js.Promise[Unit]] = js.native
+    def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): js.UndefOr[js.Promise[Unit]] = js.native
     
     /**
       * Override this method to handle alias queries.
@@ -98,13 +71,15 @@ object appServiceMod {
       */
     def onAliasQuery(alias: String, callback: js.Function0[Unit]): js.Thenable[Unit] | Null = js.native
     
-    /* private */ var onGetRoomAlias: js.Any = js.native
+    /* private */ var onGetRoomAlias: Any = js.native
     
-    /* private */ var onGetUsers: js.Any = js.native
+    /* private */ var onGetUsers: Any = js.native
     
-    /* private */ var onMorganLog: js.Any = js.native
+    /* private */ var onHealthCheck: Any = js.native
     
-    /* private */ var onTransaction: js.Any = js.native
+    /* private */ var onMorganLog: Any = js.native
+    
+    /* private */ var onTransaction: Any = js.native
     
     /**
       * Override this method to handle user queries.
@@ -125,7 +100,7 @@ object appServiceMod {
       * });
       */
     @JSName("on")
-    def on_ephemeral(event: ephemeral, cb: js.Function1[/* event */ Record[String, js.Any], Unit]): this.type = js.native
+    def on_ephemeral(event: ephemeral, cb: js.Function1[/* event */ Record[String, Any], Unit]): this.type = js.native
     /**
       * Emitted when an event is pushed to the appservice.
       * The format of the event object is documented at
@@ -137,7 +112,7 @@ object appServiceMod {
       * });
       */
     @JSName("on")
-    def on_event(event: event, cb: js.Function1[/* event */ Record[String, js.Any], Unit]): this.type = js.native
+    def on_event(event: event, cb: js.Function1[/* event */ Record[String, Any], Unit]): this.type = js.native
     /**
       * Emitted when the HTTP listener logs some information.
       * `access_tokens` are stripped from requests
@@ -150,7 +125,7 @@ object appServiceMod {
     @JSName("on")
     def on_httplog(event: `http-log`, cb: js.Function1[/* line */ String, Unit]): this.type = js.native
     
-    /* private */ var server: js.Any = js.native
+    /* private */ var server: Any = js.native
     
     /**
       * Set the token that should be used to verify incoming events.

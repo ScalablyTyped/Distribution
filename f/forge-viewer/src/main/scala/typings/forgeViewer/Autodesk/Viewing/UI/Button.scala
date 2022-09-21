@@ -2,6 +2,7 @@ package typings.forgeViewer.Autodesk.Viewing.UI
 
 import typings.forgeViewer.Autodesk.Viewing.UI.Button.State
 import typings.std.Event
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,8 @@ trait Button
      with Control {
   
   def getState(): State = js.native
+  
+  var icon: HTMLElement = js.native
   
   def onClick(event: Event): Unit = js.native
   

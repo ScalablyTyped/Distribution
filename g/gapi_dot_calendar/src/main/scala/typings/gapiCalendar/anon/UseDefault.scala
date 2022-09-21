@@ -23,7 +23,7 @@ object UseDefault {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: Method*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: Method*): Self = StObject.set(x, "overrides", js.Array(value*))
     
     inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
   }

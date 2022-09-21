@@ -10,10 +10,10 @@ Utilities for managing installed Babel plugins in an Ember app or addon
 | ------------------ | :-------------: |
 | Full name          | ember-cli-babel-plugin-helpers |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 6135205 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 600068.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/dfreeman/ember-cli-babel-plugin-helpers#readme)

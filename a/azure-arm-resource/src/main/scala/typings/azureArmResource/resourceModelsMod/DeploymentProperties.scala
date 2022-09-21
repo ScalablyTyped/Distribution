@@ -32,7 +32,7 @@ trait DeploymentProperties extends StObject {
     * to an existing parameter file. Use either the parametersLink property or the parameters
     * property, but not both. It can be a JObject or a well formed JSON string.
     */
-  var parameters: js.UndefOr[js.Any] = js.undefined
+  var parameters: js.UndefOr[Any] = js.undefined
   
   /**
     * The URI of parameters file. You use this element to link to an existing parameters file. Use
@@ -45,7 +45,7 @@ trait DeploymentProperties extends StObject {
     * in the request rather than link to an existing template. It can be a JObject or well-formed
     * JSON string. Use either the templateLink property or the template property, but not both.
     */
-  var template: js.UndefOr[js.Any] = js.undefined
+  var template: js.UndefOr[Any] = js.undefined
   
   /**
     * The URI of the template. Use either the templateLink property or the template property, but
@@ -72,7 +72,7 @@ object DeploymentProperties {
     
     inline def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
     
-    inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object DeploymentProperties {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
     

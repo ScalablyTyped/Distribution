@@ -32,7 +32,7 @@ trait IConstraintDefinition extends StObject {
     * A value of `0` means the constraint will apply no damping.
     *
     * @property damping
-    * @type number
+    * @type {number}
     * @default 0
     */
   var damping: js.UndefOr[Double] = js.undefined
@@ -41,7 +41,7 @@ trait IConstraintDefinition extends StObject {
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number}
     */
   var id: js.UndefOr[Double] = js.undefined
   
@@ -49,7 +49,7 @@ trait IConstraintDefinition extends StObject {
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
     * @property label
-    * @type string
+    * @type {string}
     * @default "Constraint"
     */
   var label: js.UndefOr[String] = js.undefined
@@ -59,7 +59,7 @@ trait IConstraintDefinition extends StObject {
     * It is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
     *
     * @property length
-    * @type number
+    * @type {number}
     */
   var length: js.UndefOr[Double] = js.undefined
   
@@ -85,7 +85,7 @@ trait IConstraintDefinition extends StObject {
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
     * @property render
-    * @type object
+    * @type {any}
     */
   var render: js.UndefOr[IConstraintRenderDefinition] = js.undefined
   
@@ -95,7 +95,7 @@ trait IConstraintDefinition extends StObject {
     * A value of `0.2` means the constraint acts like a soft spring.
     *
     * @property stiffness
-    * @type number
+    * @type {number}
     * @default 1
     */
   var stiffness: js.UndefOr[Double] = js.undefined
@@ -104,7 +104,7 @@ trait IConstraintDefinition extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "constraint"
     */
   var `type`: js.UndefOr[String] = js.undefined

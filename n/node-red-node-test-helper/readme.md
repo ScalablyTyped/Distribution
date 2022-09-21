@@ -10,15 +10,12 @@ A test framework for Node-RED nodes
 | ------------------ | :-------------: |
 | Full name          | node-red-node-test-helper |
 | Keywords           | test, iot, node-red |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 83126 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 9975.0 |
+| # stars            | 47.0 |
 
 ## Links
-- [Homepage](https://github.com/node-red/node-red-node-test-helper#readme)
-- [Bugs](https://github.com/node-red/node-red-node-test-helper/issues)
-- [Repository](https://github.com/node-red/node-red-node-test-helper)
 - [Npm](https://www.npmjs.com/package/node-red-node-test-helper)
     
 

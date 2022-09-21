@@ -12,7 +12,9 @@ trait IConnectionParameters[C /* <: IClient */] extends StObject {
   
   var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.undefined
   
-  var Promise: js.UndefOr[js.Any] = js.undefined
+  var Promise: js.UndefOr[Any] = js.undefined
+  
+  var allowExitOnIdle: js.UndefOr[Boolean] = js.undefined
   
   var application_name: js.UndefOr[String] = js.undefined
   
@@ -46,6 +48,8 @@ trait IConnectionParameters[C /* <: IClient */] extends StObject {
   
   var max: js.UndefOr[Double] = js.undefined
   
+  var maxLifetimeSeconds: js.UndefOr[Double] = js.undefined
+  
   var maxUses: js.UndefOr[Double] = js.undefined
   
   var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
@@ -74,6 +78,10 @@ object IConnectionParameters {
   }
   
   extension [Self <: IConnectionParameters[?], C /* <: IClient */](x: Self & IConnectionParameters[C]) {
+    
+    inline def setAllowExitOnIdle(value: Boolean): Self = StObject.set(x, "allowExitOnIdle", value.asInstanceOf[js.Any])
+    
+    inline def setAllowExitOnIdleUndefined: Self = StObject.set(x, "allowExitOnIdle", js.undefined)
     
     inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
     
@@ -141,6 +149,10 @@ object IConnectionParameters {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
+    inline def setMaxLifetimeSeconds(value: Double): Self = StObject.set(x, "maxLifetimeSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLifetimeSecondsUndefined: Self = StObject.set(x, "maxLifetimeSeconds", js.undefined)
+    
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     inline def setMaxUses(value: Double): Self = StObject.set(x, "maxUses", value.asInstanceOf[js.Any])
@@ -161,7 +173,7 @@ object IConnectionParameters {
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     
     inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     

@@ -33,12 +33,28 @@ object appBuilderLibStrings {
   inline def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   
   @js.native
+  sealed trait `Apple Development`
+    extends StObject
+       with CertType
+  inline def `Apple Development`: `Apple Development` = ("Apple Development").asInstanceOf[`Apple Development`]
+  
+  @js.native
+  sealed trait `Apple Distribution`
+    extends StObject
+       with CertType
+  inline def `Apple Distribution`: `Apple Distribution` = ("Apple Distribution").asInstanceOf[`Apple Distribution`]
+  
+  @js.native
   sealed trait Copy extends StObject
   inline def Copy: Copy = "Copy".asInstanceOf[Copy]
   
   @js.native
   sealed trait DEFAULT extends StObject
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  
+  @js.native
+  sealed trait DRAFT extends StObject
+  inline def DRAFT: DRAFT = "DRAFT".asInstanceOf[DRAFT]
   
   @js.native
   sealed trait Deflate extends StObject
@@ -61,6 +77,10 @@ object appBuilderLibStrings {
   inline def Editor: Editor = "Editor".asInstanceOf[Editor]
   
   @js.native
+  sealed trait FAILED extends StObject
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  
+  @js.native
   sealed trait LZMA extends StObject
   inline def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
   
@@ -73,6 +93,14 @@ object appBuilderLibStrings {
   @js.native
   sealed trait None extends StObject
   inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
+  sealed trait PUBLISHED extends StObject
+  inline def PUBLISHED: PUBLISHED = "PUBLISHED".asInstanceOf[PUBLISHED]
+  
+  @js.native
+  sealed trait SHA256 extends StObject
+  inline def SHA256: SHA256 = "SHA256".asInstanceOf[SHA256]
   
   @js.native
   sealed trait Shell extends StObject
@@ -103,16 +131,40 @@ object appBuilderLibStrings {
   inline def ULFO: ULFO = "ULFO".asInstanceOf[ULFO]
   
   @js.native
+  sealed trait UPLOADED extends StObject
+  inline def UPLOADED: UPLOADED = "UPLOADED".asInstanceOf[UPLOADED]
+  
+  @js.native
   sealed trait Viewer extends StObject
   inline def Viewer: Viewer = "Viewer".asInstanceOf[Viewer]
+  
+  @js.native
+  sealed trait WAITING extends StObject
+  inline def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
+  
+  @js.native
+  sealed trait YANKED extends StObject
+  inline def YANKED: YANKED = "YANKED".asInstanceOf[YANKED]
+  
+  @js.native
+  sealed trait accounts extends StObject
+  inline def accounts: accounts = "accounts".asInstanceOf[accounts]
   
   @js.native
   sealed trait admin extends StObject
   inline def admin: admin = "admin".asInstanceOf[admin]
   
   @js.native
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
+  
+  @js.native
   sealed trait always extends StObject
   inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait artifacts extends StObject
+  inline def artifacts: artifacts = "artifacts".asInstanceOf[artifacts]
   
   @js.native
   sealed trait asInvoker
@@ -121,8 +173,16 @@ object appBuilderLibStrings {
   inline def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   
   @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
   sealed trait base64 extends StObject
   inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait beta extends StObject
+  inline def beta: beta = "beta".asInstanceOf[beta]
   
   @js.native
   sealed trait bottom
@@ -167,6 +227,10 @@ object appBuilderLibStrings {
     extends StObject
        with MacOsTargetName
   inline def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @js.native
+  sealed trait dev extends StObject
+  inline def dev: dev = "dev".asInstanceOf[dev]
   
   @js.native
   sealed trait devel extends StObject
@@ -251,6 +315,10 @@ object appBuilderLibStrings {
   inline def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
+  sealed trait lzo extends StObject
+  inline def lzo: lzo = "lzo".asInstanceOf[lzo]
+  
+  @js.native
   sealed trait mas
     extends StObject
        with ElectronPlatformName
@@ -282,16 +350,32 @@ object appBuilderLibStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
   sealed trait pkg
     extends StObject
        with MacOsTargetName
   inline def pkg: pkg = "pkg".asInstanceOf[pkg]
   
   @js.native
+  sealed trait products extends StObject
+  inline def products: products = "products".asInstanceOf[products]
+  
+  @js.native
   sealed trait proportional
     extends StObject
        with BackgroundScaling
   inline def proportional: proportional = "proportional".asInstanceOf[proportional]
+  
+  @js.native
+  sealed trait rc extends StObject
+  inline def rc: rc = "rc".asInstanceOf[rc]
+  
+  @js.native
+  sealed trait releases extends StObject
+  inline def releases: releases = "releases".asInstanceOf[releases]
   
   @js.native
   sealed trait requireAdministrator
@@ -320,8 +404,8 @@ object appBuilderLibStrings {
   inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
-  sealed trait sha256 extends StObject
-  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  sealed trait sha256_ extends StObject
+  inline def sha256_ : sha256_ = "sha256".asInstanceOf[sha256_]
   
   @js.native
   sealed trait stable extends StObject
@@ -414,6 +498,10 @@ object appBuilderLibStrings {
   inline def `win-10`: `win-10` = "win-10".asInstanceOf[`win-10`]
   
   @js.native
+  sealed trait `win-11` extends StObject
+  inline def `win-11`: `win-11` = "win-11".asInstanceOf[`win-11`]
+  
+  @js.native
   sealed trait win32
     extends StObject
        with ElectronPlatformName
@@ -428,4 +516,8 @@ object appBuilderLibStrings {
     extends StObject
        with MacOsTargetName
   inline def zip: zip = "zip".asInstanceOf[zip]
+  
+  @js.native
+  sealed trait zlib extends StObject
+  inline def zlib: zlib = "zlib".asInstanceOf[zlib]
 }

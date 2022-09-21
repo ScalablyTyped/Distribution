@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAnomalySubscriptionResponse extends StObject {
   
   /**
-    *  The unique identifier of your newly created cost anomaly subscription. 
+    * The unique identifier of your newly created cost anomaly subscription. 
     */
   var SubscriptionArn: GenericString
 }

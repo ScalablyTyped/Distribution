@@ -10,9 +10,8 @@ import typings.beanstalkd.beanstalkdStrings.lookup
 import typings.beanstalkd.beanstalkdStrings.on
 import typings.beanstalkd.beanstalkdStrings.timeout
 import typings.beanstalkd.beanstalkdStrings.unref
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
-import typings.std.Error
 import typings.std.Exclude
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -23,7 +22,7 @@ object mod {
   
   @JSImport("beanstalkd", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BeanstalkdClient {
     def this(host: String) = this()
@@ -58,24 +57,24 @@ object mod {
     inline def addYamlCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addYamlCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  type ArgsType[T] = js.Any
+  type ArgsType[T] = Any
   
   trait BasicReader extends StObject {
     
     def handle(
       protocol: BeanstalkdProtocol,
-      data: js.Any,
-      resolve: js.Function1[/* data */ js.UndefOr[js.Any], Unit],
-      reject: js.Function1[/* err */ js.UndefOr[js.Any], js.Any]
+      data: Any,
+      resolve: js.Function1[/* data */ js.UndefOr[Any], Unit],
+      reject: js.Function1[/* err */ js.UndefOr[Any], Any]
     ): Buffer
     
-    def parseData(data: String): js.Any
+    def parseData(data: String): Any
   }
   object BasicReader {
     
     inline def apply(
-      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
-      parseData: String => js.Any
+      handle: (BeanstalkdProtocol, Any, js.Function1[/* data */ js.UndefOr[Any], Unit], js.Function1[/* err */ js.UndefOr[Any], Any]) => Buffer,
+      parseData: String => Any
     ): BasicReader = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction4(handle), parseData = js.Any.fromFunction1(parseData))
       __obj.asInstanceOf[BasicReader]
@@ -84,10 +83,10 @@ object mod {
     extension [Self <: BasicReader](x: Self) {
       
       inline def setHandle(
-        value: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer
+        value: (BeanstalkdProtocol, Any, js.Function1[/* data */ js.UndefOr[Any], Unit], js.Function1[/* err */ js.UndefOr[Any], Any]) => Buffer
       ): Self = StObject.set(x, "handle", js.Any.fromFunction4(value))
       
-      inline def setParseData(value: String => js.Any): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
+      inline def setParseData(value: String => Any): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,18 +94,18 @@ object mod {
     extends StObject
        with Writer {
     
-    def handle(protocol: BeanstalkdProtocol, connection: Socket, args: js.Any*): js.Promise[js.Any]
+    def handle(protocol: BeanstalkdProtocol, connection: Socket, args: Any*): js.Promise[Any]
   }
   object BasicWriter {
     
-    inline def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): BasicWriter = {
+    inline def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ Any) => js.Promise[Any]): BasicWriter = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], handle = js.Any.fromFunction3(handle))
       __obj.asInstanceOf[BasicWriter]
     }
     
     extension [Self <: BasicWriter](x: Self) {
       
-      inline def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
+      inline def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ Any) => js.Promise[Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     }
   }
   
@@ -129,7 +128,7 @@ object mod {
   object BeanstalkdCaller {
     
     inline def apply(
-      call: (js.Any, ArgsType[
+      call: (Any, ArgsType[
           /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
         ]) => (MergePromise[
           ReturnType[
@@ -144,7 +143,7 @@ object mod {
     extension [Self <: BeanstalkdCaller](x: Self) {
       
       inline def setCall(
-        value: (js.Any, ArgsType[
+        value: (Any, ArgsType[
               /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
             ]) => (MergePromise[
               ReturnType[
@@ -166,8 +165,8 @@ object mod {
       * @param writer The Writer to use for this command.
       * @param reader The Reader to use for this command.
       */
-    def _command(command: String, args: js.Array[js.Any], writer: BasicWriter, reader: BasicReader): js.Promise[js.Any] = js.native
-    def _command(command: String, args: js.Array[js.Any], writer: BasicWriter, reader: YamlReader): js.Promise[js.Any] = js.native
+    def _command(command: String, args: js.Array[Any], writer: BasicWriter, reader: BasicReader): js.Promise[Any] = js.native
+    def _command(command: String, args: js.Array[Any], writer: BasicWriter, reader: YamlReader): js.Promise[Any] = js.native
     
     /**
       * Bury the specified job and assign it the given priority. Responds with null if successful, a string error otherwise.
@@ -208,7 +207,7 @@ object mod {
       *
       * @param tube The Tube name to ignore.
       */
-    def ignore(tube: Double): js.Promise[Double] = js.native
+    def ignore(tube: String): js.Promise[Double] = js.native
     
     /**
       * Kick at most maxToKick delayed and buried jobs back into the active queue.
@@ -241,22 +240,6 @@ object mod {
       */
     def listTubes(): js.Promise[js.Array[String]] = js.native
     
-    //#region Connection events
-    /**
-      * Listen on given event.
-      *
-      * @param event The event to listen on.
-      * @param listeners The listeners for this event.
-      */
-    def on(event: String, listeners: (js.Function1[/* repeated */ js.Any, Unit])*): Unit = js.native
-    /**
-      * The close event is triggered when connection closes.
-      *
-      * @param event The event to listen on.
-      * @param listener Listeners for the close event.
-      */
-    @JSName("on")
-    def on_close(event: close, listeners: (js.Function1[/* had_error */ Boolean, Unit])*): Unit = js.native
     /**
       * The connect event is triggered when the connection is ready.
       * The drain event is triggered when connection drains.
@@ -266,8 +249,23 @@ object mod {
       * @param event The event to listen on.
       * @param listeners Listeners for the event.
       */
+    def on(event: connect | drain | end | timeout, listeners: js.Function0[Unit]*): Unit = js.native
+    //#region Connection events
+    /**
+      * Listen on given event.
+      *
+      * @param event The event to listen on.
+      * @param listeners The listeners for this event.
+      */
+    def on(event: String, listeners: (js.Function1[/* repeated */ Any, Unit])*): Unit = js.native
+    /**
+      * The close event is triggered when connection closes.
+      *
+      * @param event The event to listen on.
+      * @param listener Listeners for the close event.
+      */
     @JSName("on")
-    def on_connect(event: connect, listeners: js.Function0[Unit]*): Unit = js.native
+    def on_close(event: close, listeners: (js.Function1[/* had_error */ Boolean, Unit])*): Unit = js.native
     /**
       * The data event is triggered when socket receives data.
       *
@@ -276,10 +274,6 @@ object mod {
       */
     @JSName("on")
     def on_data(event: data, listeners: (js.Function1[/* data */ Buffer, Unit])*): Unit = js.native
-    @JSName("on")
-    def on_drain(event: drain, listeners: js.Function0[Unit]*): Unit = js.native
-    @JSName("on")
-    def on_end(event: end, listeners: js.Function0[Unit]*): Unit = js.native
     /**
       * The error event is triggered when an error occured on the connection.
       *
@@ -287,7 +281,7 @@ object mod {
       * @param listeners Listeners for the error event.
       */
     @JSName("on")
-    def on_error(event: error, listeners: (js.Function1[/* err */ Error, Unit])*): Unit = js.native
+    def on_error(event: error, listeners: (js.Function1[/* err */ js.Error, Unit])*): Unit = js.native
     /**
       * The lookup event is triggered when connection performs a lookup on a new address.
       *
@@ -298,15 +292,13 @@ object mod {
     def on_lookup(
       event: lookup,
       listeners: (js.Function4[
-          /* err */ Error, 
+          /* err */ js.Error, 
           /* address */ String, 
           /* family */ String | Double, 
           /* host */ String, 
           Unit
         ])*
     ): Unit = js.native
-    @JSName("on")
-    def on_timeout(event: timeout, listeners: js.Function0[Unit]*): Unit = js.native
     
     var options: js.UndefOr[js.Object] = js.native
     
@@ -447,7 +439,7 @@ object mod {
       *
       * @param tube The Tube name to watch.
       */
-    def watch(tube: Double): js.Promise[Double] = js.native
+    def watch(tube: String): js.Promise[Double] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -582,15 +574,15 @@ object mod {
     
     def addReply(signature: String): Unit
     
-    def addType(key: String, `type`: js.Any): Unit
+    def addType(key: String, `type`: Any): Unit
     
-    def build(identifier: String, args: js.Array[js.Any], key: String): Buffer
+    def build(identifier: String, args: js.Array[Any], key: String): Buffer
     
-    def buildCommand(command: String, args: js.Array[js.Any]): Buffer
+    def buildCommand(command: String, args: js.Array[Any]): Buffer
     
-    def buildPut(args: js.Array[js.Any]): Buffer
+    def buildPut(args: js.Array[Any]): Buffer
     
-    def buildreply(reply: String, args: js.Array[js.Any]): Buffer
+    def buildreply(reply: String, args: js.Array[Any]): Buffer
     
     def parse(buffer: Buffer, key: String): js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null]
     
@@ -606,11 +598,11 @@ object mod {
       add: (String, String) => Unit,
       addCommand: String => Unit,
       addReply: String => Unit,
-      addType: (String, js.Any) => Unit,
-      build: (String, js.Array[js.Any], String) => Buffer,
-      buildCommand: (String, js.Array[js.Any]) => Buffer,
-      buildPut: js.Array[js.Any] => Buffer,
-      buildreply: (String, js.Array[js.Any]) => Buffer,
+      addType: (String, Any) => Unit,
+      build: (String, js.Array[Any], String) => Buffer,
+      buildCommand: (String, js.Array[Any]) => Buffer,
+      buildPut: js.Array[Any] => Buffer,
+      buildreply: (String, js.Array[Any]) => Buffer,
       parse: (Buffer, String) => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null],
       parseCommand: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null],
       parseReply: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null],
@@ -628,15 +620,15 @@ object mod {
       
       inline def setAddReply(value: String => Unit): Self = StObject.set(x, "addReply", js.Any.fromFunction1(value))
       
-      inline def setAddType(value: (String, js.Any) => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction2(value))
+      inline def setAddType(value: (String, Any) => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction2(value))
       
-      inline def setBuild(value: (String, js.Array[js.Any], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
+      inline def setBuild(value: (String, js.Array[Any], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
       
-      inline def setBuildCommand(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
+      inline def setBuildCommand(value: (String, js.Array[Any]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
       
-      inline def setBuildPut(value: js.Array[js.Any] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
+      inline def setBuildPut(value: js.Array[Any] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
       
-      inline def setBuildreply(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
+      inline def setBuildreply(value: (String, js.Array[Any]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
       
       inline def setParse(
         value: (Buffer, String) => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null]
@@ -652,22 +644,22 @@ object mod {
   
   trait BeanstalkdProtocolCommand extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var command: String
   }
   object BeanstalkdProtocolCommand {
     
-    inline def apply(args: js.Array[js.Any], command: String): BeanstalkdProtocolCommand = {
+    inline def apply(args: js.Array[Any], command: String): BeanstalkdProtocolCommand = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolCommand]
     }
     
     extension [Self <: BeanstalkdProtocolCommand](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }
@@ -675,22 +667,22 @@ object mod {
   
   trait BeanstalkdProtocolReply extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var reply: String
   }
   object BeanstalkdProtocolReply {
     
-    inline def apply(args: js.Array[js.Any], reply: String): BeanstalkdProtocolReply = {
+    inline def apply(args: js.Array[Any], reply: String): BeanstalkdProtocolReply = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolReply]
     }
     
     extension [Self <: BeanstalkdProtocolReply](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setReply(value: String): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     }
@@ -1184,8 +1176,8 @@ object mod {
   object YamlReader {
     
     inline def apply(
-      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
-      parseData: String => js.Any
+      handle: (BeanstalkdProtocol, Any, js.Function1[/* data */ js.UndefOr[Any], Unit], js.Function1[/* err */ js.UndefOr[Any], Any]) => Buffer,
+      parseData: String => Any
     ): YamlReader = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction4(handle), parseData = js.Any.fromFunction1(parseData))
       __obj.asInstanceOf[YamlReader]

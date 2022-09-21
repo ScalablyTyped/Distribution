@@ -36,6 +36,6 @@ object GooglePrivacyDlpV2NumericalStatsResult {
     
     inline def setQuantileValuesUndefined: Self = StObject.set(x, "quantileValues", js.undefined)
     
-    inline def setQuantileValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value :_*))
+    inline def setQuantileValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value*))
   }
 }

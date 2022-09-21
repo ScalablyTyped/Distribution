@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.WebglFilterBackend")
 @js.native
-class WebglFilterBackend ()
+open class WebglFilterBackend ()
   extends typings.fabric.fabricImplMod.WebglFilterBackend {
   def this(options: WebglFilterBackendOptions) = this()
 }

@@ -10,10 +10,10 @@ Utilities and middleware to assist with sending and handling jsend responses.
 | ------------------ | :-------------: |
 | Full name          | jsend |
 | Keywords           | jsend, middleware, json, status |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 103843 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69004.66666666667 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/Prestaul/jsend#readme)

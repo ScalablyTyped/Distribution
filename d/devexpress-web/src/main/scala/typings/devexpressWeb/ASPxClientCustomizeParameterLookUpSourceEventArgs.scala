@@ -14,7 +14,7 @@ trait ASPxClientCustomizeParameterLookUpSourceEventArgs
   /**
     * Specifies the data source that provides look-up values for the parameter editor.
     */
-  var dataSource: js.Any
+  var dataSource: Any
   
   /**
     * Provides access to the collection of look-up parameter values.
@@ -29,7 +29,7 @@ trait ASPxClientCustomizeParameterLookUpSourceEventArgs
 object ASPxClientCustomizeParameterLookUpSourceEventArgs {
   
   inline def apply(
-    dataSource: js.Any,
+    dataSource: Any,
     items: js.Array[ASPxDesignerElementEditorItem],
     parameter: ASPxDesignerElementParameterDescriptor
   ): ASPxClientCustomizeParameterLookUpSourceEventArgs = {
@@ -39,11 +39,11 @@ object ASPxClientCustomizeParameterLookUpSourceEventArgs {
   
   extension [Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs](x: Self) {
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setItems(value: js.Array[ASPxDesignerElementEditorItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }

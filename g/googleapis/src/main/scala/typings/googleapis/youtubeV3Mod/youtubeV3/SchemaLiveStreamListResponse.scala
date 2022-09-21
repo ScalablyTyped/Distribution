@@ -9,12 +9,12 @@ trait SchemaLiveStreamListResponse extends StObject {
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Serialized EventId of the request which produced this response.
     */
-  var eventId: js.UndefOr[String] = js.undefined
+  var eventId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of live streams that match the request criteria.
@@ -22,31 +22,28 @@ trait SchemaLiveStreamListResponse extends StObject {
   var items: js.UndefOr[js.Array[SchemaLiveStream]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#liveStreamListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#liveStreamListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The token that can be used as the value of the pageToken parameter to
-    * retrieve the next page in the result set.
+    * The token that can be used as the value of the pageToken parameter to retrieve the next page in the result set.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
-    * The token that can be used as the value of the pageToken parameter to
-    * retrieve the previous page in the result set.
+    * The token that can be used as the value of the pageToken parameter to retrieve the previous page in the result set.
     */
-  var prevPageToken: js.UndefOr[String] = js.undefined
+  var prevPageToken: js.UndefOr[String | Null] = js.undefined
   
   var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
   
   /**
     * The visitorId identifies the visitor.
     */
-  var visitorId: js.UndefOr[String] = js.undefined
+  var visitorId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveStreamListResponse {
   
@@ -59,9 +56,13 @@ object SchemaLiveStreamListResponse {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    
+    inline def setEventIdNull: Self = StObject.set(x, "eventId", null)
     
     inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
@@ -69,13 +70,17 @@ object SchemaLiveStreamListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaLiveStream*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaLiveStream*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -85,6 +90,8 @@ object SchemaLiveStreamListResponse {
     
     inline def setPrevPageToken(value: String): Self = StObject.set(x, "prevPageToken", value.asInstanceOf[js.Any])
     
+    inline def setPrevPageTokenNull: Self = StObject.set(x, "prevPageToken", null)
+    
     inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
     
     inline def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
@@ -92,6 +99,8 @@ object SchemaLiveStreamListResponse {
     inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
     inline def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
+    
+    inline def setVisitorIdNull: Self = StObject.set(x, "visitorId", null)
     
     inline def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }

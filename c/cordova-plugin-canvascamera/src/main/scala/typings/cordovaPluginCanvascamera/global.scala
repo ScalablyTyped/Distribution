@@ -10,13 +10,13 @@ object global {
   
   @JSGlobal("CanvasCamera")
   @js.native
-  class CanvasCamera ()
+  open class CanvasCamera ()
     extends StObject
        with typings.cordovaPluginCanvascamera.CanvasCamera
   
   @JSGlobal("Frame")
   @js.native
-  /* private */ class Frame ()
+  /* private */ open class Frame ()
     extends StObject
        with typings.cordovaPluginCanvascamera.Frame {
     
@@ -59,7 +59,7 @@ object global {
   
   @JSGlobal("Renderer")
   @js.native
-  /* private */ class Renderer ()
+  /* private */ open class Renderer ()
     extends StObject
        with typings.cordovaPluginCanvascamera.Renderer
 }

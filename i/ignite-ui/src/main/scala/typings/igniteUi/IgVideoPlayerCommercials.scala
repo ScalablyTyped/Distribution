@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercials
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Customizes the ad message settings of the commercial. Ad message shows the duration of the commercial and pops up when the commercial starts playing.
@@ -63,13 +63,13 @@ object IgVideoPlayerCommercials {
     
     inline def setEmbeddedCommercialsUndefined: Self = StObject.set(x, "embeddedCommercials", js.undefined)
     
-    inline def setEmbeddedCommercialsVarargs(value: IgVideoPlayerCommercialsEmbeddedCommercial*): Self = StObject.set(x, "embeddedCommercials", js.Array(value :_*))
+    inline def setEmbeddedCommercialsVarargs(value: IgVideoPlayerCommercialsEmbeddedCommercial*): Self = StObject.set(x, "embeddedCommercials", js.Array(value*))
     
     inline def setLinkedCommercials(value: js.Array[IgVideoPlayerCommercialsLinkedCommercial]): Self = StObject.set(x, "linkedCommercials", value.asInstanceOf[js.Any])
     
     inline def setLinkedCommercialsUndefined: Self = StObject.set(x, "linkedCommercials", js.undefined)
     
-    inline def setLinkedCommercialsVarargs(value: IgVideoPlayerCommercialsLinkedCommercial*): Self = StObject.set(x, "linkedCommercials", js.Array(value :_*))
+    inline def setLinkedCommercialsVarargs(value: IgVideoPlayerCommercialsLinkedCommercial*): Self = StObject.set(x, "linkedCommercials", js.Array(value*))
     
     inline def setShowBookmarks(value: Boolean): Self = StObject.set(x, "showBookmarks", value.asInstanceOf[js.Any])
     

@@ -29,12 +29,12 @@ object BatchGetCommitsOutput {
     
     inline def setCommitsUndefined: Self = StObject.set(x, "commits", js.undefined)
     
-    inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setErrors(value: BatchGetCommitsErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchGetCommitsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchGetCommitsError*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

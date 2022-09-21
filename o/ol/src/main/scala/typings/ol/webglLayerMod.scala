@@ -2,7 +2,7 @@ package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.helperMod.UniformValue
-import typings.std.ArrayBuffer
+import typings.ol.pluggableMapMod.FrameState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object webglLayerMod {
   
   @JSImport("ol/renderer/webgl/Layer", JSImport.Default)
   @js.native
-  class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends WebGLLayerRenderer[LayerType] {
+  open class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends WebGLLayerRenderer[LayerType] {
     def this(layer: LayerType) = this()
     def this(layer: LayerType, opt_options: Options) = this()
   }
@@ -64,6 +64,8 @@ object webglLayerMod {
   
   trait Options extends StObject {
     
+    var className: js.UndefOr[String] = js.undefined
+    
     var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.undefined
     
     var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
@@ -77,11 +79,15 @@ object webglLayerMod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
       inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value*))
       
       inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
@@ -136,23 +142,27 @@ object webglLayerMod {
     def getShaderCompileErrors(): String | Null = js.native
     
     /* protected */ var helper: typings.ol.helperMod.default = js.native
+    
+    /* protected */ def postRender(frameState: FrameState): Unit = js.native
+    
+    /* protected */ def preRender(frameState: FrameState): Unit = js.native
   }
   
   trait WebGLWorkerGenerateBuffersMessage extends StObject {
     
     var customAttributesCount: js.UndefOr[Double] = js.undefined
     
-    var indexBuffer: js.UndefOr[ArrayBuffer] = js.undefined
+    var indexBuffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
-    var renderInstructions: ArrayBuffer
+    var renderInstructions: js.typedarray.ArrayBuffer
     
     var `type`: WebGLWorkerMessageType
     
-    var vertexBuffer: js.UndefOr[ArrayBuffer] = js.undefined
+    var vertexBuffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object WebGLWorkerGenerateBuffersMessage {
     
-    inline def apply(renderInstructions: ArrayBuffer, `type`: WebGLWorkerMessageType): WebGLWorkerGenerateBuffersMessage = {
+    inline def apply(renderInstructions: js.typedarray.ArrayBuffer, `type`: WebGLWorkerMessageType): WebGLWorkerGenerateBuffersMessage = {
       val __obj = js.Dynamic.literal(renderInstructions = renderInstructions.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebGLWorkerGenerateBuffersMessage]
@@ -164,15 +174,15 @@ object webglLayerMod {
       
       inline def setCustomAttributesCountUndefined: Self = StObject.set(x, "customAttributesCount", js.undefined)
       
-      inline def setIndexBuffer(value: ArrayBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
+      inline def setIndexBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
       
       inline def setIndexBufferUndefined: Self = StObject.set(x, "indexBuffer", js.undefined)
       
-      inline def setRenderInstructions(value: ArrayBuffer): Self = StObject.set(x, "renderInstructions", value.asInstanceOf[js.Any])
+      inline def setRenderInstructions(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "renderInstructions", value.asInstanceOf[js.Any])
       
       inline def setType(value: WebGLWorkerMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setVertexBuffer(value: ArrayBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
+      inline def setVertexBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
       
       inline def setVertexBufferUndefined: Self = StObject.set(x, "vertexBuffer", js.undefined)
     }

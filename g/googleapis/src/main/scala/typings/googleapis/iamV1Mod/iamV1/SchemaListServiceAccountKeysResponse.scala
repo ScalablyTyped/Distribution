@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The service account keys list response.
-  */
 trait SchemaListServiceAccountKeysResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListServiceAccountKeysResponse {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: SchemaServiceAccountKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaServiceAccountKey*): Self = StObject.set(x, "keys", js.Array(value*))
   }
 }

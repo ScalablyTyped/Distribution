@@ -32,7 +32,7 @@ object InstanceGroupManagersListPerInstanceConfigsResp {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

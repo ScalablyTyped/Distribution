@@ -42,7 +42,7 @@ trait Accesstoken extends StObject {
   
   /**
     * A token identifying a page of results the server should return. Typically, this is the value of ListCreativesResponse.nextPageToken returned from the previous call to the
-    * 'ListCreatives' method.
+    * 'ListCreatives' method. Page tokens for continued pages are valid for up to five hours, counting from the call to 'ListCreatives' for the first page.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   

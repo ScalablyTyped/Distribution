@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeSectionEqualColumnCountCommand")
 @js.native
-class ChangeSectionEqualColumnCountCommand ()
+open class ChangeSectionEqualColumnCountCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeSectionEqualColumnCountCommand {
   

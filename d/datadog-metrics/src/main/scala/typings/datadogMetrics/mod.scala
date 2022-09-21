@@ -1,6 +1,5 @@
 package typings.datadogMetrics
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("datadog-metrics", "BufferedMetricsLogger")
   @js.native
-  class BufferedMetricsLogger protected () extends StObject {
+  open class BufferedMetricsLogger protected () extends StObject {
     def this(options: BufferedMetricsLoggerOptions) = this()
     
     /**
@@ -24,8 +23,8 @@ object mod {
       */
     def flush(): Unit = js.native
     def flush(onSuccess: js.Function0[Unit]): Unit = js.native
-    def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def flush(onSuccess: Unit, onError: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /**
       * Record the current value of a metric. They most recent value in a given flush
@@ -65,8 +64,8 @@ object mod {
   
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   inline def flush(onSuccess: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flush(onSuccess: Unit, onError: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def gauge(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def gauge(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -90,6 +89,11 @@ object mod {
   inline def init(options: BufferedMetricsLoggerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BufferedMetricsLoggerOptions extends StObject {
+    
+    /**
+      * Sets host address corresponding to your DD service region.
+      */
+    var apiHost: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the DataDog API key.
@@ -130,6 +134,10 @@ object mod {
     
     extension [Self <: BufferedMetricsLoggerOptions](x: Self) {
       
+      inline def setApiHost(value: String): Self = StObject.set(x, "apiHost", value.asInstanceOf[js.Any])
+      
+      inline def setApiHostUndefined: Self = StObject.set(x, "apiHost", js.undefined)
+      
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
       inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
@@ -142,7 +150,7 @@ object mod {
       
       inline def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
       
-      inline def setDefaultTagsVarargs(value: String*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
+      inline def setDefaultTagsVarargs(value: String*): Self = StObject.set(x, "defaultTags", js.Array(value*))
       
       inline def setFlushIntervalSeconds(value: Double): Self = StObject.set(x, "flushIntervalSeconds", value.asInstanceOf[js.Any])
       

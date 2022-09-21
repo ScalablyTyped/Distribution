@@ -14,21 +14,21 @@ object mod {
   
   @JSImport("generic-pool", "Pool")
   @js.native
-  class Pool[T] () extends EventEmitter {
+  open class Pool[T] () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
-    def acquire(): js.Thenable[T] = js.native
-    def acquire(priority: Double): js.Thenable[T] = js.native
+    def acquire(): js.Promise[T] = js.native
+    def acquire(priority: Double): js.Promise[T] = js.native
     
     var available: Double = js.native
     
     var borrowed: Double = js.native
     
-    def clear(): js.Thenable[Unit] = js.native
+    def clear(): js.Promise[Unit] = js.native
     
-    def destroy(resource: T): js.Thenable[Unit] = js.native
+    def destroy(resource: T): js.Promise[Unit] = js.native
     
-    def drain(): js.Thenable[Unit] = js.native
+    def drain(): js.Promise[Unit] = js.native
     
     def isBorrowedResource(resource: T): Boolean = js.native
     
@@ -38,7 +38,9 @@ object mod {
     
     var pending: Double = js.native
     
-    def release(resource: T): js.Thenable[Unit] = js.native
+    def ready(): js.Promise[Unit] = js.native
+    
+    def release(resource: T): js.Promise[Unit] = js.native
     
     var size: Double = js.native
     
@@ -46,7 +48,7 @@ object mod {
     
     def start(): Unit = js.native
     
-    def use[U](cb: js.Function1[/* resource */ T, U | js.Thenable[U]]): js.Thenable[U] = js.native
+    def use[U](cb: js.Function1[/* resource */ T, U | js.Promise[U]]): js.Promise[U] = js.native
   }
   
   inline def createPool[T](factory: Factory[T]): Pool[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any]).asInstanceOf[Pool[T]]
@@ -54,26 +56,26 @@ object mod {
   
   trait Factory[T] extends StObject {
     
-    def create(): js.Thenable[T]
+    def create(): js.Promise[T]
     
-    def destroy(client: T): js.Thenable[Unit]
+    def destroy(client: T): js.Promise[Unit]
     
-    var validate: js.UndefOr[js.Function1[/* client */ T, js.Thenable[Boolean]]] = js.undefined
+    var validate: js.UndefOr[js.Function1[/* client */ T, js.Promise[Boolean]]] = js.undefined
   }
   object Factory {
     
-    inline def apply[T](create: () => js.Thenable[T], destroy: T => js.Thenable[Unit]): Factory[T] = {
+    inline def apply[T](create: () => js.Promise[T], destroy: T => js.Promise[Unit]): Factory[T] = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy))
       __obj.asInstanceOf[Factory[T]]
     }
     
     extension [Self <: Factory[?], T](x: Self & Factory[T]) {
       
-      inline def setCreate(value: () => js.Thenable[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
-      inline def setDestroy(value: T => js.Thenable[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: T => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      inline def setValidate(value: /* client */ T => js.Thenable[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* client */ T => js.Promise[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }

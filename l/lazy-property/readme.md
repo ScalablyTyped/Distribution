@@ -10,10 +10,10 @@ Lazily initialized properties for objects
 | ------------------ | :-------------: |
 | Full name          | lazy-property |
 | Keywords           | lazy, property, object, initialize, array, dictionary |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 20756717 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1162069.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/lazy-property)

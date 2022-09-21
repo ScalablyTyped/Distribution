@@ -1,8 +1,7 @@
 package typings.twilioSync
 
-import typings.twilioSync.clientMod.ConnectionState
-import typings.twilioSync.clientMod.OpenMode
-import typings.twilioSync.entityMod.SubscriptionState
+import typings.twilioSync.mod.OpenMode
+import typings.twilioSync.mod.SubscriptionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object twilioSyncStrings {
   
   @js.native
-  sealed trait connected
-    extends StObject
-       with ConnectionState
-  inline def connected: connected = "connected".asInstanceOf[connected]
-  
-  @js.native
-  sealed trait connecting
-    extends StObject
-       with ConnectionState
-  inline def connecting: connecting = "connecting".asInstanceOf[connecting]
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait create_new
@@ -28,27 +19,15 @@ object twilioSyncStrings {
   inline def create_new: create_new = "create_new".asInstanceOf[create_new]
   
   @js.native
-  sealed trait denied
-    extends StObject
-       with ConnectionState
-  inline def denied: denied = "denied".asInstanceOf[denied]
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait disconnected
-    extends StObject
-       with ConnectionState
-  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait disconnecting
-    extends StObject
-       with ConnectionState
-  inline def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  
-  @js.native
-  sealed trait error
-    extends StObject
-       with ConnectionState
+  sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
@@ -56,6 +35,10 @@ object twilioSyncStrings {
     extends StObject
        with SubscriptionState
   inline def established: established = "established".asInstanceOf[established]
+  
+  @js.native
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait none
@@ -86,4 +69,16 @@ object twilioSyncStrings {
     extends StObject
        with SubscriptionState
   inline def response_in_flight: response_in_flight = "response_in_flight".asInstanceOf[response_in_flight]
+  
+  @js.native
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
+  sealed trait trace extends StObject
+  inline def trace: trace = "trace".asInstanceOf[trace]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

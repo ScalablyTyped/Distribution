@@ -24,6 +24,6 @@ object DescribeServiceErrorsResult {
     
     inline def setServiceErrorsUndefined: Self = StObject.set(x, "ServiceErrors", js.undefined)
     
-    inline def setServiceErrorsVarargs(value: ServiceError*): Self = StObject.set(x, "ServiceErrors", js.Array(value :_*))
+    inline def setServiceErrorsVarargs(value: ServiceError*): Self = StObject.set(x, "ServiceErrors", js.Array(value*))
   }
 }

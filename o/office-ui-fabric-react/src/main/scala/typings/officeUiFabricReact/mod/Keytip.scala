@@ -18,12 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.keytipMod.Keytip because Already inherited
 - typings.officeUiFabricReact.libKeytipMod.Keytip because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "Keytip")
 @js.native
-class Keytip protected ()
+open class Keytip protected ()
   extends typings.officeUiFabricReact.libKeytipsMod.Keytip {
   def this(props: IKeytipProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IKeytipProps, context: js.Any) = this()
+  def this(props: IKeytipProps, context: Any) = this()
 }

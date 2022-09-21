@@ -2,7 +2,6 @@ package typings.gapiDrive.gapi.client.drive
 
 import typings.gapiDrive.anon.AdditionalRoles
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignpermission
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait PermissionResource extends StObject {
   
   var etag: String
   
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   var id: String
   
@@ -52,7 +51,7 @@ object PermissionResource {
     domain: String,
     emailAddress: String,
     etag: String,
-    expirationDate: Date,
+    expirationDate: js.Date,
     id: String,
     name: String,
     photoLink: String,
@@ -72,7 +71,7 @@ object PermissionResource {
     
     inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
     
-    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
     
     inline def setAuthKey(value: String): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
@@ -84,7 +83,7 @@ object PermissionResource {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -100,7 +99,7 @@ object PermissionResource {
     
     inline def setTeamDrivePermissionDetails(value: js.Array[AdditionalRoles]): Self = StObject.set(x, "teamDrivePermissionDetails", value.asInstanceOf[js.Any])
     
-    inline def setTeamDrivePermissionDetailsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value :_*))
+    inline def setTeamDrivePermissionDetailsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

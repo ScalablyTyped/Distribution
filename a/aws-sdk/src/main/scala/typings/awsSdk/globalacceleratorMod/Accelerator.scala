@@ -14,12 +14,17 @@ trait Accelerator extends StObject {
   /**
     * The date and time that the accelerator was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Domain Name System (DNS) name that Global Accelerator creates that points to your accelerator's static IP addresses.  The naming convention for the DNS name is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com. For more information about the default DNS name, see  Support for DNS Addressing in Global Accelerator in the AWS Global Accelerator Developer Guide.
+    * The Domain Name System (DNS) name that Global Accelerator creates that points to an accelerator's static IPv4 addresses. The naming convention for the DNS name for an accelerator is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com. If you have a dual-stack accelerator, you also have a second DNS name, DualStackDnsName, that points to both the A record and the AAAA record for all four static addresses for the accelerator (two IPv4 addresses and two IPv6 addresses). For more information about the default DNS name, see  Support for DNS Addressing in Global Accelerator in the Global Accelerator Developer Guide.
     */
   var DnsName: js.UndefOr[GenericString] = js.undefined
+  
+  /**
+    * The Domain Name System (DNS) name that Global Accelerator creates that points to a dual-stack accelerator's four static IP addresses: two IPv4 addresses and two IPv6 addresses. The naming convention for the dual-stack DNS name is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .dualstack.awsglobalaccelerator.com. For example: a1234567890abcdef.dualstack.awsglobalaccelerator.com. Note: Global Accelerator also assigns a default DNS name, DnsName, to your accelerator that points just to the static IPv4 addresses.  For more information, see  Support for DNS Addressing in Global Accelerator in the Global Accelerator Developer Guide.
+    */
+  var DualStackDnsName: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.  If the value is set to true, the accelerator cannot be deleted. If set to false, accelerator can be deleted.
@@ -27,7 +32,12 @@ trait Accelerator extends StObject {
   var Enabled: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
-    * The value for the address type must be IPv4. 
+    * A history of changes that you make to an accelerator in Global Accelerator.
+    */
+  var Events: js.UndefOr[AcceleratorEvents] = js.undefined
+  
+  /**
+    * The IP address type that an accelerator supports. For a standard accelerator, the value can be IPV4 or DUAL_STACK.
     */
   var IpAddressType: js.UndefOr[typings.awsSdk.globalacceleratorMod.IpAddressType] = js.undefined
   
@@ -39,7 +49,7 @@ trait Accelerator extends StObject {
   /**
     * The date and time that the accelerator was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the accelerator. The name must contain only alphanumeric characters or hyphens (-), and must not begin or end with a hyphen.
@@ -64,7 +74,7 @@ object Accelerator {
     
     inline def setAcceleratorArnUndefined: Self = StObject.set(x, "AcceleratorArn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -72,9 +82,19 @@ object Accelerator {
     
     inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
+    inline def setDualStackDnsName(value: GenericString): Self = StObject.set(x, "DualStackDnsName", value.asInstanceOf[js.Any])
+    
+    inline def setDualStackDnsNameUndefined: Self = StObject.set(x, "DualStackDnsName", js.undefined)
+    
     inline def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    
+    inline def setEvents(value: AcceleratorEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    
+    inline def setEventsVarargs(value: AcceleratorEvent*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
@@ -84,9 +104,9 @@ object Accelerator {
     
     inline def setIpSetsUndefined: Self = StObject.set(x, "IpSets", js.undefined)
     
-    inline def setIpSetsVarargs(value: IpSet*): Self = StObject.set(x, "IpSets", js.Array(value :_*))
+    inline def setIpSetsVarargs(value: IpSet*): Self = StObject.set(x, "IpSets", js.Array(value*))
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

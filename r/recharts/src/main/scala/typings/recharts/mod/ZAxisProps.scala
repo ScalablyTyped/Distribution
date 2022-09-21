@@ -38,7 +38,7 @@ object ZAxisProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
@@ -50,7 +50,7 @@ object ZAxisProps {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setScale(value: ScaleType | RechartsFunction): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

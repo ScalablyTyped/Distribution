@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react", "PureComponent")
 @js.native
-class PureComponent[P, S, SS] protected () extends Component[P, S, SS] {
+open class PureComponent[P, S, SS] protected () extends Component[P, S, SS] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }

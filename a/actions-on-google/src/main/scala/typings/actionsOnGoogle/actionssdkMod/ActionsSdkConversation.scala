@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("actions-on-google/dist/service/actionssdk", "ActionsSdkConversation")
 @js.native
 /** @public */
-class ActionsSdkConversation[TConvData, TUserStorage] ()
+open class ActionsSdkConversation[TConvData, TUserStorage] ()
   extends typings.actionsOnGoogle.convMod.ActionsSdkConversation[TConvData, TUserStorage] {
   def this(options: ActionsSdkConversationOptions[TConvData, TUserStorage]) = this()
 }

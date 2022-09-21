@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("actions-on-google/dist/service/actionssdk", "Arguments")
 @js.native
 /** @hidden */
-class Arguments ()
+open class Arguments ()
   extends typings.actionsOnGoogle.conversationMod.Arguments {
   def this(raw: js.Array[GoogleActionsV2Argument]) = this()
 }

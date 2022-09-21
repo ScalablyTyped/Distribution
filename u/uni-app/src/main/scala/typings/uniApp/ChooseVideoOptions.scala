@@ -38,7 +38,7 @@ trait ChooseVideoOptions extends StObject {
   /**
     * album 从相册选视频，camera 使用相机拍摄，默认为：['album', 'camera']
     */
-  var sourceType: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var sourceType: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   /**
     * 接口调用成功，返回视频文件的临时文件路径，详见返回参数说明
@@ -74,11 +74,11 @@ object ChooseVideoOptions {
     
     inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    inline def setSourceType(value: String | js.Array[js.Any]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String | js.Array[Any]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: js.Any*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: Any*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: /* result */ ChooseVideoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

@@ -1,17 +1,16 @@
 package typings.blueprintjsDatetime
 
 import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.anon.PartialIDateRangeInputPro
+import typings.blueprintjsDatetime.anon.PartialDateRangeInputProp
 import typings.blueprintjsDatetime.anon.PartialIPopoverProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
-import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
+import typings.blueprintjsDatetime.datePickerCoreMod.DatePickerBaseProps
 import typings.blueprintjsDatetime.dateRangeMod.DateRange
-import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
-import typings.std.Date
+import typings.blueprintjsDatetime.shortcutsMod.DateRangeShortcut
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,100 +19,101 @@ object dateRangeInputMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput")
   @js.native
-  class DateRangeInput protected ()
-    extends AbstractPureComponent2[IDateRangeInputProps, IDateRangeInputState, js.Object] {
-    def this(props: IDateRangeInputProps) = this()
-    def this(props: IDateRangeInputProps, context: js.Any) = this()
+  open class DateRangeInput protected ()
+    extends AbstractPureComponent2[DateRangeInputProps, IDateRangeInputState, js.Object] {
+    def this(props: DateRangeInputProps) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState): Unit = js.native
+    def componentDidUpdate_MDateRangeInput(prevProps: DateRangeInputProps, prevState: IDateRangeInputState): Unit = js.native
     
-    /* private */ var doBoundaryDatesOverlap: js.Any = js.native
+    /* private */ var doBoundaryDatesOverlap: Any = js.native
     
     /**
       * Returns true if the provided boundary is an END boundary overlapping the
       * selected start date. (If the boundaries overlap, we consider the END
       * boundary to be erroneous.)
       */
-    /* private */ var doesEndBoundaryOverlapStartBoundary: js.Any = js.native
+    /* private */ var doesEndBoundaryOverlapStartBoundary: Any = js.native
     
-    /* private */ var endInputRef: js.Any = js.native
+    var endInputElement: HTMLInputElement | Null = js.native
     
-    /* private */ var formatDate: js.Any = js.native
+    /* private */ var formatDate: Any = js.native
     
-    /* private */ var getDateRangeForCallback: js.Any = js.native
+    /* private */ var getDateRangeForCallback: Any = js.native
     
-    /* private */ var getFormattedMinMaxDateString: js.Any = js.native
+    /* private */ var getFormattedMinMaxDateString: Any = js.native
     
-    /* private */ var getInitialRange: js.Any = js.native
+    /* private */ var getInitialRange: Any = js.native
     
-    /* private */ var getInputDisplayString: js.Any = js.native
+    /* private */ var getInputDisplayString: Any = js.native
     
-    /* private */ var getInputPlaceholderString: js.Any = js.native
+    /* private */ var getInputPlaceholderString: Any = js.native
     
-    /* private */ var getInputProps: js.Any = js.native
+    /* private */ var getInputProps: Any = js.native
     
-    /* private */ var getInputRef: js.Any = js.native
+    /* private */ var getInputRef: Any = js.native
     
-    /* private */ var getIsOpenValueWhenDateChanges: js.Any = js.native
+    /* private */ var getIsOpenValueWhenDateChanges: Any = js.native
     
-    /* private */ var getOtherBoundary: js.Any = js.native
+    /* private */ var getOtherBoundary: Any = js.native
     
-    /* private */ var getSelectedRange: js.Any = js.native
+    /* private */ var getSelectedRange: Any = js.native
     
-    /* private */ var getStateKeysAndValuesForBoundary: js.Any = js.native
+    /* private */ var getStateKeysAndValuesForBoundary: Any = js.native
     
-    /* private */ var handleDateRangePickerChange: js.Any = js.native
+    /* private */ var handleDateRangePickerChange: Any = js.native
     
-    /* private */ var handleDateRangePickerHoverChange: js.Any = js.native
+    /* private */ var handleDateRangePickerHoverChange: Any = js.native
     
-    /* private */ var handleEndInputEvent: js.Any = js.native
+    /* private */ var handleEndInputEvent: Any = js.native
     
-    /* private */ var handleInputBlur: js.Any = js.native
+    /* private */ var handleEndInputRef: Any = js.native
     
-    /* private */ var handleInputChange: js.Any = js.native
+    /* private */ var handleInputBlur: Any = js.native
     
-    /* private */ var handleInputClick: js.Any = js.native
+    /* private */ var handleInputChange: Any = js.native
     
-    /* private */ var handleInputEvent: js.Any = js.native
+    /* private */ var handleInputClick: Any = js.native
     
-    /* private */ var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputEvent: Any = js.native
     
-    /* private */ var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputFocus: Any = js.native
     
-    /* private */ var handleInputMouseDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: Any = js.native
     
-    /* private */ var handlePopoverClose: js.Any = js.native
+    /* private */ var handleInputMouseDown: Any = js.native
     
-    /* private */ var handleShortcutChange: js.Any = js.native
+    /* private */ var handlePopoverClose: Any = js.native
     
-    /* private */ var handleStartInputEvent: js.Any = js.native
+    /* private */ var handleShortcutChange: Any = js.native
     
-    /* private */ var isControlled: js.Any = js.native
+    /* private */ var handleStartInputEvent: Any = js.native
     
-    /* private */ var isDateValidAndInRange: js.Any = js.native
+    /* private */ var handleStartInputRef: Any = js.native
     
-    /* private */ var isInputEmpty: js.Any = js.native
+    /* private */ var isControlled: Any = js.native
     
-    /* private */ var isInputInErrorState: js.Any = js.native
+    /* private */ var isDateValidAndInRange: Any = js.native
     
-    /* private */ var isNextDateRangeValid: js.Any = js.native
+    /* private */ var isInputEmpty: Any = js.native
     
-    /* private */ var parseDate: js.Any = js.native
+    /* private */ var isInputInErrorState: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var isNextDateRangeValid: Any = js.native
     
-    /* private */ var renderInputGroup: js.Any = js.native
+    /* private */ var parseDate: Any = js.native
+    
+    /* private */ var renderInputGroup: Any = js.native
     
     /**
       * Public method intended for unit testing only. Do not use in feature work!
       */
     def reset(): Unit = js.native
-    def reset(props: IDateRangeInputProps): Unit = js.native
+    def reset(props: DateRangeInputProps): Unit = js.native
     
-    /* private */ var shouldFocusInputRef: js.Any = js.native
+    /* private */ var shouldFocusInputRef: Any = js.native
     
-    /* private */ var startInputRef: js.Any = js.native
+    var startInputElement: HTMLInputElement | Null = js.native
   }
   /* static members */
   object DateRangeInput {
@@ -124,8 +124,8 @@ object dateRangeInputMod {
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput.defaultProps")
     @js.native
-    def defaultProps: PartialIDateRangeInputPro = js.native
-    inline def defaultProps_=(x: PartialIDateRangeInputPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialDateRangeInputProp = js.native
+    inline def defaultProps_=(x: PartialDateRangeInputProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput.displayName")
     @js.native
@@ -133,23 +133,27 @@ object dateRangeInputMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type DateRangeInputProps = IDateRangeInputProps
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsDatetime.dateFormatMod.IDateFormatProps because var conflicts: locale. Inlined invalidDateMessage, outOfRangeMessage, placeholder, formatDate, formatDate, parseDate, parseDate */ @js.native
   trait IDateRangeInputProps
     extends StObject
-       with IDatePickerBaseProps
+       with DatePickerBaseProps
        with IProps {
     
     /**
       * Whether the start and end dates of the range can be the same day.
       * If `true`, clicking a selected date will create a one-day range.
       * If `false`, clicking a selected date will clear the selection.
+      *
       * @default false
       */
     var allowSingleDayRange: js.UndefOr[Boolean] = js.native
     
     /**
       * Whether the calendar popover should close when a date range is fully selected.
+      *
       * @default true
       */
     var closeOnSelection: js.UndefOr[Boolean] = js.native
@@ -157,6 +161,7 @@ object dateRangeInputMod {
     /**
       * Whether displayed months in the calendar are contiguous.
       * If false, each side of the calendar can move independently to non-contiguous months.
+      *
       * @default true
       */
     var contiguousCalendarMonths: js.UndefOr[Boolean] = js.native
@@ -169,6 +174,7 @@ object dateRangeInputMod {
     
     /**
       * Whether the text inputs are non-interactive.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.native
@@ -178,18 +184,19 @@ object dateRangeInputMod {
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
       * `ref` is not supported; use `inputRef` instead.
       */
-    var endInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
+    var endInputProps: js.UndefOr[InputGroupProps2] = js.native
     
     /**
       * Function to render a JavaScript `Date` to a string.
       * Optional `locale` argument comes directly from the prop on this component:
       * if the prop is defined, then the argument will be too.
       */
-    def formatDate(date: Date): String = js.native
-    def formatDate(date: Date, locale: String): String = js.native
+    def formatDate(date: js.Date): String = js.native
+    def formatDate(date: js.Date, locale: String): String = js.native
     
     /**
       * The error message to display when the date selected is invalid.
+      *
       * @default "Invalid date"
       */
     var invalidDateMessage: js.UndefOr[String] = js.native
@@ -213,6 +220,7 @@ object dateRangeInputMod {
     
     /**
       * The error message to display when the date selected is out of range.
+      *
       * @default "Out of range"
       */
     var outOfRangeMessage: js.UndefOr[String] = js.native
@@ -220,6 +228,7 @@ object dateRangeInputMod {
     /**
       * The error message to display when the selected dates overlap.
       * This can only happen when typing dates in the input field.
+      *
       * @default "Overlapping dates"
       */
     var overlappingDatesMessage: js.UndefOr[String] = js.native
@@ -230,8 +239,8 @@ object dateRangeInputMod {
       * Return `null` to represent the absence of a date.
       * Optional `locale` argument comes directly from the prop on this component.
       */
-    def parseDate(str: String): Date | `false` | Null = js.native
-    def parseDate(str: String, locale: String): Date | `false` | Null = js.native
+    def parseDate(str: String): js.Date | `false` | Null = js.native
+    def parseDate(str: String, locale: String): js.Date | `false` | Null = js.native
     
     /**
       * Placeholder text to display in empty input fields.
@@ -247,6 +256,7 @@ object dateRangeInputMod {
     
     /**
       * Whether the entire text field should be selected on focus.
+      *
       * @default false
       */
     var selectAllOnFocus: js.UndefOr[Boolean] = js.native
@@ -256,12 +266,14 @@ object dateRangeInputMod {
       * If `true`, preset shortcuts will be displayed.
       * If `false`, no shortcuts will be displayed.
       * If an array is provided, the custom shortcuts will be displayed.
+      *
       * @default true
       */
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[DateRangeShortcut]] = js.native
     
     /**
       * Whether to show only a single month calendar.
+      *
       * @default false
       */
     var singleMonthOnly: js.UndefOr[Boolean] = js.native
@@ -271,7 +283,7 @@ object dateRangeInputMod {
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
       * `ref` is not supported; use `inputRef` instead.
       */
-    var startInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
+    var startInputProps: js.UndefOr[InputGroupProps2] = js.native
     
     /**
       * The currently selected date range.
@@ -304,11 +316,11 @@ object dateRangeInputMod {
     
     var lastFocusedField: js.UndefOr[Boundary] = js.undefined
     
-    var selectedEnd: js.UndefOr[Date] = js.undefined
+    var selectedEnd: js.UndefOr[js.Date] = js.undefined
     
     var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var selectedStart: js.UndefOr[Date] = js.undefined
+    var selectedStart: js.UndefOr[js.Date] = js.undefined
     
     var shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.undefined
     
@@ -363,7 +375,7 @@ object dateRangeInputMod {
       
       inline def setLastFocusedFieldUndefined: Self = StObject.set(x, "lastFocusedField", js.undefined)
       
-      inline def setSelectedEnd(value: Date): Self = StObject.set(x, "selectedEnd", value.asInstanceOf[js.Any])
+      inline def setSelectedEnd(value: js.Date): Self = StObject.set(x, "selectedEnd", value.asInstanceOf[js.Any])
       
       inline def setSelectedEndUndefined: Self = StObject.set(x, "selectedEnd", js.undefined)
       
@@ -371,7 +383,7 @@ object dateRangeInputMod {
       
       inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      inline def setSelectedStart(value: Date): Self = StObject.set(x, "selectedStart", value.asInstanceOf[js.Any])
+      inline def setSelectedStart(value: js.Date): Self = StObject.set(x, "selectedStart", value.asInstanceOf[js.Any])
       
       inline def setSelectedStartUndefined: Self = StObject.set(x, "selectedStart", js.undefined)
       

@@ -66,7 +66,7 @@ object XResultSetUpdate {
     insertRow: () => Unit,
     moveToCurrentRow: () => Unit,
     moveToInsertRow: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateRow: () => Unit
   ): XResultSetUpdate = {

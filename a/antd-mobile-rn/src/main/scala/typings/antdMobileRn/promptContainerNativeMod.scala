@@ -18,7 +18,7 @@ object promptContainerNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/PromptContainer.native", JSImport.Default)
   @js.native
-  class default protected () extends PropmptContainer {
+  open class default protected () extends PropmptContainer {
     def this(props: PropmptContainerProps) = this()
   }
   /* static members */
@@ -40,8 +40,7 @@ object promptContainerNativeMod {
   }
   
   @js.native
-  trait PropmptContainer
-    extends Component[PropmptContainerProps, js.Any, js.Any] {
+  trait PropmptContainer extends Component[PropmptContainerProps, Any, Any] {
     
     def onChangeText(`type`: String, value: String): Unit = js.native
     
@@ -81,7 +80,7 @@ object promptContainerNativeMod {
       
       inline def setActionsFunction2(value: (/* valueOrLogin */ String, /* password */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction2(value))
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -99,7 +98,7 @@ object promptContainerNativeMod {
       
       inline def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
       
-      inline def setPlaceholdersVarargs(value: String*): Self = StObject.set(x, "placeholders", js.Array(value :_*))
+      inline def setPlaceholdersVarargs(value: String*): Self = StObject.set(x, "placeholders", js.Array(value*))
       
       inline def setStyles(value: IPromptStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

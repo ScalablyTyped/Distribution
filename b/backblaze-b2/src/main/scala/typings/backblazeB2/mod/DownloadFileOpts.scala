@@ -27,7 +27,7 @@ object DownloadFileOpts {
   
   extension [Self <: DownloadFileOpts](x: Self) {
     
-    inline def setOnDownloadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
+    inline def setOnDownloadProgress(value: /* event */ Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
     
     inline def setOnDownloadProgressNull: Self = StObject.set(x, "onDownloadProgress", null)
     

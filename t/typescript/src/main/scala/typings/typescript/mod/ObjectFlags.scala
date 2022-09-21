@@ -23,7 +23,7 @@ object ObjectFlags extends StObject {
   sealed trait ArrayLiteral
     extends StObject
        with ObjectFlags
-  /* 65536 */ val ArrayLiteral: typings.typescript.mod.ObjectFlags.ArrayLiteral & Double = js.native
+  /* 16384 */ val ArrayLiteral: typings.typescript.mod.ObjectFlags.ArrayLiteral & Double = js.native
   
   @js.native
   sealed trait Class
@@ -41,7 +41,7 @@ object ObjectFlags extends StObject {
   sealed trait ContainsSpread
     extends StObject
        with ObjectFlags
-  /* 1024 */ val ContainsSpread: typings.typescript.mod.ObjectFlags.ContainsSpread & Double = js.native
+  /* 2097152 */ val ContainsSpread: typings.typescript.mod.ObjectFlags.ContainsSpread & Double = js.native
   
   @js.native
   sealed trait EvolvingArray
@@ -53,13 +53,19 @@ object ObjectFlags extends StObject {
   sealed trait FreshLiteral
     extends StObject
        with ObjectFlags
-  /* 32768 */ val FreshLiteral: typings.typescript.mod.ObjectFlags.FreshLiteral & Double = js.native
+  /* 8192 */ val FreshLiteral: typings.typescript.mod.ObjectFlags.FreshLiteral & Double = js.native
   
   @js.native
   sealed trait Instantiated
     extends StObject
        with ObjectFlags
   /* 64 */ val Instantiated: typings.typescript.mod.ObjectFlags.Instantiated & Double = js.native
+  
+  @js.native
+  sealed trait InstantiationExpressionType
+    extends StObject
+       with ObjectFlags
+  /* 8388608 */ val InstantiationExpressionType: typings.typescript.mod.ObjectFlags.InstantiationExpressionType & Double = js.native
   
   @js.native
   sealed trait Interface
@@ -71,25 +77,19 @@ object ObjectFlags extends StObject {
   sealed trait JSLiteral
     extends StObject
        with ObjectFlags
-  /* 16384 */ val JSLiteral: typings.typescript.mod.ObjectFlags.JSLiteral & Double = js.native
+  /* 4096 */ val JSLiteral: typings.typescript.mod.ObjectFlags.JSLiteral & Double = js.native
   
   @js.native
   sealed trait JsxAttributes
     extends StObject
        with ObjectFlags
-  /* 4096 */ val JsxAttributes: typings.typescript.mod.ObjectFlags.JsxAttributes & Double = js.native
+  /* 2048 */ val JsxAttributes: typings.typescript.mod.ObjectFlags.JsxAttributes & Double = js.native
   
   @js.native
   sealed trait Mapped
     extends StObject
        with ObjectFlags
   /* 32 */ val Mapped: typings.typescript.mod.ObjectFlags.Mapped & Double = js.native
-  
-  @js.native
-  sealed trait MarkerType
-    extends StObject
-       with ObjectFlags
-  /* 8192 */ val MarkerType: typings.typescript.mod.ObjectFlags.MarkerType & Double = js.native
   
   @js.native
   sealed trait ObjectLiteral
@@ -107,7 +107,7 @@ object ObjectFlags extends StObject {
   sealed trait ObjectRestType
     extends StObject
        with ObjectFlags
-  /* 131072 */ val ObjectRestType: typings.typescript.mod.ObjectFlags.ObjectRestType & Double = js.native
+  /* 4194304 */ val ObjectRestType: typings.typescript.mod.ObjectFlags.ObjectRestType & Double = js.native
   
   @js.native
   sealed trait Reference
@@ -119,7 +119,7 @@ object ObjectFlags extends StObject {
   sealed trait ReverseMapped
     extends StObject
        with ObjectFlags
-  /* 2048 */ val ReverseMapped: typings.typescript.mod.ObjectFlags.ReverseMapped & Double = js.native
+  /* 1024 */ val ReverseMapped: typings.typescript.mod.ObjectFlags.ReverseMapped & Double = js.native
   
   @js.native
   sealed trait Tuple

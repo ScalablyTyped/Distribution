@@ -3,8 +3,6 @@ package typings.meteorTypings
 import org.scalablytyped.runtime.StringDictionary
 import typings.meteorTypings.anon.Canonical
 import typings.meteorTypings.anon.KeyOrderSensitive
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,14 +32,14 @@ object ejsonMod {
       options: KeyOrderSensitive
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def fromJSONValue(`val`: typings.meteorTypings.ejsonMod.JSONable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fromJSONValue(`val`: typings.meteorTypings.ejsonMod.JSONable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def isBinary(x: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("meteor/ejson", "EJSON.newBinary")
     @js.native
-    def newBinary: js.Any = js.native
-    inline def newBinary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newBinary")(x.asInstanceOf[js.Any])
+    def newBinary: Any = js.native
+    inline def newBinary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newBinary")(x.asInstanceOf[js.Any])
     
     inline def parse(str: String): typings.meteorTypings.ejsonMod.EJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[typings.meteorTypings.ejsonMod.EJSON]
     
@@ -53,7 +51,7 @@ object ejsonMod {
   type EJSON = typings.meteorTypings.ejsonMod.EJSONable
   
   type EJSONable = StringDictionary[
-    Double | String | Boolean | js.Object | (js.Array[Double | js.Object | String]) | Date | Uint8Array | typings.meteorTypings.ejsonMod.EJSONableCustomType
+    Double | String | Boolean | js.Object | (js.Array[Double | js.Object | String]) | js.Date | js.typedarray.Uint8Array | typings.meteorTypings.ejsonMod.EJSONableCustomType
   ]
   
   trait EJSONableCustomType extends StObject {

@@ -56,7 +56,7 @@ object anon {
       
       inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
       
-      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value*))
     }
   }
   
@@ -109,13 +109,13 @@ object anon {
       
       inline def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      inline def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value :_*))
+      inline def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value*))
       
       inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
       inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
     }
   }
   

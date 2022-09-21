@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // extend ko global
 trait KnockoutStatic extends StObject {
   
-  def editable(viewModel: js.Any): Unit
-  def editable(viewModel: js.Any, autoInit: Boolean): Unit
+  def editable(viewModel: Any): Unit
+  def editable(viewModel: Any, autoInit: Boolean): Unit
   @JSName("editable")
   var editable_Original: KnockoutEditableStatic
 }

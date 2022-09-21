@@ -1,7 +1,7 @@
 package typings.materialTabBar
 
 import typings.materialTab.typesMod.MDCTabDimensions
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,7 +119,7 @@ object anon {
   /* Inlined std.Partial<@material/tab-bar.@material/tab-bar/adapter.MDCTabBarAdapter> */
   trait PartialMDCTabBarAdapter extends StObject {
     
-    var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[ClientRect], Unit]] = js.undefined
+    var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[DOMRect], Unit]] = js.undefined
     
     var deactivateTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
@@ -139,7 +139,7 @@ object anon {
     
     var getTabDimensionsAtIndex: js.UndefOr[js.Function1[/* index */ Double, MDCTabDimensions]] = js.undefined
     
-    var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, ClientRect]] = js.undefined
+    var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, DOMRect]] = js.undefined
     
     var getTabListLength: js.UndefOr[js.Function0[Double]] = js.undefined
     
@@ -162,7 +162,7 @@ object anon {
     
     extension [Self <: PartialMDCTabBarAdapter](x: Self) {
       
-      inline def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[ClientRect]) => Unit): Self = StObject.set(x, "activateTabAtIndex", js.Any.fromFunction2(value))
+      inline def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[DOMRect]) => Unit): Self = StObject.set(x, "activateTabAtIndex", js.Any.fromFunction2(value))
       
       inline def setActivateTabAtIndexUndefined: Self = StObject.set(x, "activateTabAtIndex", js.undefined)
       
@@ -202,7 +202,7 @@ object anon {
       
       inline def setGetTabDimensionsAtIndexUndefined: Self = StObject.set(x, "getTabDimensionsAtIndex", js.undefined)
       
-      inline def setGetTabIndicatorClientRectAtIndex(value: /* index */ Double => ClientRect): Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.Any.fromFunction1(value))
+      inline def setGetTabIndicatorClientRectAtIndex(value: /* index */ Double => DOMRect): Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.Any.fromFunction1(value))
       
       inline def setGetTabIndicatorClientRectAtIndexUndefined: Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.undefined)
       

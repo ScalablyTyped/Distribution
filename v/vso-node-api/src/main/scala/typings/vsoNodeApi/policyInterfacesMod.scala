@@ -1,6 +1,5 @@
 package typings.vsoNodeApi
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.EnumValuesBroken
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
@@ -81,13 +80,13 @@ object policyInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyConfiguration")
     @js.native
-    def PolicyConfiguration: js.Any = js.native
-    inline def PolicyConfiguration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyConfiguration")(x.asInstanceOf[js.Any])
+    def PolicyConfiguration: Any = js.native
+    inline def PolicyConfiguration_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyConfiguration")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyEvaluationRecord")
     @js.native
-    def PolicyEvaluationRecord: js.Any = js.native
-    inline def PolicyEvaluationRecord_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationRecord")(x.asInstanceOf[js.Any])
+    def PolicyEvaluationRecord: Any = js.native
+    inline def PolicyEvaluationRecord_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationRecord")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyEvaluationStatus")
     @js.native
@@ -102,7 +101,7 @@ object policyInterfacesMod {
     /**
       * The links to other objects related to this object.
       */
-    var _links: js.Any
+    var _links: Any
     
     /**
       * A reference to the identity that created the policy.
@@ -112,7 +111,7 @@ object policyInterfacesMod {
     /**
       * The date and time when the policy was created.
       */
-    var createdDate: Date
+    var createdDate: js.Date
     
     /**
       * Indicates whether the policy is blocking.
@@ -132,20 +131,20 @@ object policyInterfacesMod {
     /**
       * The policy configuration settings.
       */
-    var settings: js.Any
+    var settings: Any
   }
   object PolicyConfiguration {
     
     inline def apply(
-      _links: js.Any,
+      _links: Any,
       createdBy: IdentityRef,
-      createdDate: Date,
+      createdDate: js.Date,
       id: Double,
       isBlocking: Boolean,
       isDeleted: Boolean,
       isEnabled: Boolean,
       revision: Double,
-      settings: js.Any,
+      settings: Any,
       `type`: PolicyTypeRef,
       url: String
     ): PolicyConfiguration = {
@@ -158,7 +157,7 @@ object policyInterfacesMod {
       
       inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
       inline def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
       
@@ -166,9 +165,9 @@ object policyInterfacesMod {
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      inline def setSettings(value: js.Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,7 +211,7 @@ object policyInterfacesMod {
     /**
       * Links to other related objects
       */
-    var _links: js.Any
+    var _links: Any
     
     /**
       * A string which uniquely identifies the target of a policy evaluation.
@@ -222,7 +221,7 @@ object policyInterfacesMod {
     /**
       * Time when this policy finished evaluating on this pull request.
       */
-    var completedDate: Date
+    var completedDate: js.Date
     
     /**
       * Contains all configuration data for the policy which is being evaluated.
@@ -232,7 +231,7 @@ object policyInterfacesMod {
     /**
       * Internal context data of this policy evaluation.
       */
-    var context: js.Any
+    var context: Any
     
     /**
       * Guid which uniquely identifies this evaluation record (one policy running on one pull request).
@@ -242,7 +241,7 @@ object policyInterfacesMod {
     /**
       * Time when this policy was first evaluated on this pull request.
       */
-    var startedDate: Date
+    var startedDate: js.Date
     
     /**
       * Status of the policy (Running, Approved, Failed, etc.)
@@ -252,13 +251,13 @@ object policyInterfacesMod {
   object PolicyEvaluationRecord {
     
     inline def apply(
-      _links: js.Any,
+      _links: Any,
       artifactId: String,
-      completedDate: Date,
+      completedDate: js.Date,
       configuration: PolicyConfiguration,
-      context: js.Any,
+      context: Any,
       evaluationId: String,
-      startedDate: Date,
+      startedDate: js.Date,
       status: PolicyEvaluationStatus
     ): PolicyEvaluationRecord = {
       val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], artifactId = artifactId.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], evaluationId = evaluationId.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -269,19 +268,19 @@ object policyInterfacesMod {
       
       inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
       
-      inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+      inline def setCompletedDate(value: js.Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
       
       inline def setConfiguration(value: PolicyConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setEvaluationId(value: String): Self = StObject.set(x, "evaluationId", value.asInstanceOf[js.Any])
       
-      inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+      inline def setStartedDate(value: js.Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: PolicyEvaluationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,7 +291,7 @@ object policyInterfacesMod {
     /**
       * The links to other objects related to this object.
       */
-    var _links: js.Any
+    var _links: Any
     
     /**
       * Detailed description of the policy type.
@@ -301,7 +300,7 @@ object policyInterfacesMod {
   }
   object PolicyType {
     
-    inline def apply(_links: js.Any, description: String, displayName: String, id: String, url: String): PolicyType = {
+    inline def apply(_links: Any, description: String, displayName: String, id: String, url: String): PolicyType = {
       val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyType]
     }
@@ -310,7 +309,7 @@ object policyInterfacesMod {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   

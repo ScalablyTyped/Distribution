@@ -10,10 +10,10 @@ Straightforward project scaffolding
 | ------------------ | :-------------: |
 | Full name          | degit |
 | Keywords           | scaffolding, template, git |
-| # releases         | 12 |
-| # dependents       | 56 |
-| # downloads        | 155983 |
-| # stars            | 6 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 273597.6666666667 |
+| # stars            | 4717.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/degit#readme)

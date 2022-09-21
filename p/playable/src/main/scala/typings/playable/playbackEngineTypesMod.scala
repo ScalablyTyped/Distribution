@@ -585,7 +585,7 @@ object playbackEngineTypesMod {
       
       inline def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
       
-      inline def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = StObject.set(x, "availablePlaybackAdapters", js.Array(value :_*))
+      inline def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = StObject.set(x, "availablePlaybackAdapters", js.Array(value*))
       
       inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -620,7 +620,7 @@ object playbackEngineTypesMod {
     
     var isDynamicContent: Boolean = js.native
     
-    var isDynamicContentEnded: js.Any = js.native
+    var isDynamicContentEnded: Boolean = js.native
     
     var isEnded: Boolean = js.native
     

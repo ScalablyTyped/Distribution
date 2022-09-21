@@ -1,20 +1,20 @@
 package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseStorage.errorMod.FirebaseStorageError
-import typings.firebaseStorage.xhrioMod.Headers
-import typings.firebaseStorage.xhrioMod.XhrIo
+import typings.firebaseStorage.connectionMod.Connection
+import typings.firebaseStorage.connectionMod.ConnectionType
+import typings.firebaseStorage.connectionMod.Headers
+import typings.firebaseStorage.errorMod.StorageError
 import typings.std.Blob
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestinfoMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/requestinfo", "RequestInfo")
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/requestinfo", "RequestInfo")
   @js.native
-  class RequestInfo[T] protected () extends StObject {
+  open class RequestInfo[I /* <: ConnectionType */, O] protected () extends StObject {
     def this(
       url: String,
       method: String,
@@ -25,15 +25,15 @@ object requestinfoMod {
       * Note: The XhrIo passed to this function may be reused after this callback
       * returns. Do not keep a reference to it in any way.
       */
-    handler: js.Function2[/* p1 */ XhrIo, /* p2 */ String, T],
+    handler: RequestHandler[I, O],
       timeout: Double
     ) = this()
     
     var additionalRetryCodes: js.Array[Double] = js.native
     
-    var body: Blob | String | Uint8Array | Null = js.native
+    var body: Blob | String | js.typedarray.Uint8Array | Null = js.native
     
-    var errorHandler: (js.Function2[/* p1 */ XhrIo, /* p2 */ FirebaseStorageError, FirebaseStorageError]) | Null = js.native
+    var errorHandler: ErrorHandler | Null = js.native
     
     /**
       * Returns the value with which to resolve the request's promise. Only called
@@ -42,7 +42,16 @@ object requestinfoMod {
       * Note: The XhrIo passed to this function may be reused after this callback
       * returns. Do not keep a reference to it in any way.
       */
-    def handler(p1: XhrIo, p2: String): T = js.native
+    def handler(connection: Connection[I], response: I): O = js.native
+    /**
+      * Returns the value with which to resolve the request's promise. Only called
+      * if the request is successful. Throw from this function to reject the
+      * returned Request's promise with the thrown error.
+      * Note: The XhrIo passed to this function may be reused after this callback
+      * returns. Do not keep a reference to it in any way.
+      */
+    @JSName("handler")
+    var handler_Original: RequestHandler[I, O] = js.native
     
     var headers: Headers = js.native
     
@@ -62,6 +71,14 @@ object requestinfoMod {
     
     var urlParams: UrlParams = js.native
   }
+  
+  type ErrorHandler = js.Function2[
+    /* connection */ Connection[ConnectionType], 
+    /* response */ StorageError, 
+    StorageError
+  ]
+  
+  type RequestHandler[I /* <: ConnectionType */, O] = js.Function2[/* connection */ Connection[I], /* response */ I, O]
   
   type UrlParams = StringDictionary[String | Double]
 }

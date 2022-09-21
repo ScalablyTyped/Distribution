@@ -34,7 +34,7 @@ trait IDataTypeResource extends StObject {
     */
   def deleteById(id: Double): IPromise[IResourcePromise]
   
-  def getAll(): js.Any
+  def getAll(): Any
   
   /**
     * @ngdoc method
@@ -124,17 +124,17 @@ trait IDataTypeResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def save(dataType: js.Object, preValues: js.Array[js.Any], isNew: Boolean): IPromise[IResourcePromise]
+  def save(dataType: js.Object, preValues: js.Array[Any], isNew: Boolean): IPromise[IResourcePromise]
 }
 object IDataTypeResource {
   
   inline def apply(
     deleteById: Double => IPromise[IResourcePromise],
-    getAll: () => js.Any,
+    getAll: () => Any,
     getById: Double => IPromise[IResourcePromise],
     getPreValues: (String, Double) => IPromise[IResourcePromise],
     getScaffold: () => IPromise[IResourcePromise],
-    save: (js.Object, js.Array[js.Any], Boolean) => IPromise[IResourcePromise]
+    save: (js.Object, js.Array[Any], Boolean) => IPromise[IResourcePromise]
   ): IDataTypeResource = {
     val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = js.Any.fromFunction0(getAll), getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = js.Any.fromFunction0(getScaffold), save = js.Any.fromFunction3(save))
     __obj.asInstanceOf[IDataTypeResource]
@@ -144,7 +144,7 @@ object IDataTypeResource {
     
     inline def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
     
-    inline def setGetAll(value: () => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+    inline def setGetAll(value: () => Any): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     
     inline def setGetById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
@@ -152,6 +152,6 @@ object IDataTypeResource {
     
     inline def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction0(value))
     
-    inline def setSave(value: (js.Object, js.Array[js.Any], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+    inline def setSave(value: (js.Object, js.Array[Any], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
   }
 }

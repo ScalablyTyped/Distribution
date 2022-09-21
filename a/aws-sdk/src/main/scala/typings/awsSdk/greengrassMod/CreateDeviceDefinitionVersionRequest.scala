@@ -40,6 +40,6 @@ object CreateDeviceDefinitionVersionRequest {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value*))
   }
 }

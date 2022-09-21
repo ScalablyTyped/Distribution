@@ -10,10 +10,10 @@ object hearingMod {
   
   @JSImport("material-ui/svg-icons/av/hearing", JSImport.Default)
   @js.native
-  class default () extends AvHearing
+  open class default () extends AvHearing
   
   @JSImport("material-ui/svg-icons/av/hearing", "AvHearing")
   @js.native
-  class AvHearing ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvHearing ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

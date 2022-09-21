@@ -11,7 +11,7 @@ trait IHTMLStorage extends StObject {
   
   def clear(): Unit
   
-  def getItem(bstrKey: String): js.Any
+  def getItem(bstrKey: String): Any
   
   def key(lIndex: Double): String
   
@@ -28,7 +28,7 @@ object IHTMLStorage {
   inline def apply(
     MSHTMLDotIHTMLStorage_typekey: IHTMLStorage,
     clear: () => Unit,
-    getItem: String => js.Any,
+    getItem: String => Any,
     key: Double => String,
     length: Double,
     remainingSpace: Double,
@@ -44,7 +44,7 @@ object IHTMLStorage {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: String => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     inline def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
     

@@ -2,7 +2,6 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.form.field.IBase
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait ITextField
     * @param state Object
     */
   @JSName("applyState")
-  var applyState_ITextField: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var applyState_ITextField: js.UndefOr[js.Function1[/* state */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Automatically grows the field to accomodate the width of the text up to the maximum field width allowed  */
   var autoSize: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -53,7 +52,7 @@ trait ITextField
     * @returns String[] Array of any validation errors
     */
   @JSName("getErrors")
-  var getErrors_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Array]] = js.undefined
+  var getErrors_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Returns the raw String value of the field without performing any normalization conversion or validation
     * @returns String The raw String value of the field
@@ -65,7 +64,7 @@ trait ITextField
     * @returns Object
     */
   @JSName("getState")
-  var getState_ITextField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getState_ITextField: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var grow: js.UndefOr[Boolean] = js.undefined
@@ -80,7 +79,7 @@ trait ITextField
   var growMin: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var maskRe: js.UndefOr[RegExp] = js.undefined
+  var maskRe: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Config Option] (Number) */
   var maxLength: js.UndefOr[Double] = js.undefined
@@ -106,7 +105,7 @@ trait ITextField
   var processRawValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var regex: js.UndefOr[RegExp] = js.undefined
+  var regex: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Config Option] (String) */
   var regexText: js.UndefOr[String] = js.undefined
@@ -132,19 +131,19 @@ trait ITextField
     * @returns any this
     */
   @JSName("setValue")
-  var setValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var setValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var size: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var stripCharsRe: js.UndefOr[RegExp] = js.undefined
+  var stripCharsRe: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Config Option] (Boolean) */
   var validateBlank: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var validator: js.UndefOr[js.Any] = js.undefined
+  var validator: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var vtype: js.UndefOr[String] = js.undefined
@@ -169,7 +168,7 @@ object ITextField {
     
     inline def setAllowOnlyWhitespaceUndefined: Self = StObject.set(x, "allowOnlyWhitespace", js.undefined)
     
-    inline def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+    inline def setApplyState(value: /* state */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
     
     inline def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
     
@@ -205,7 +204,7 @@ object ITextField {
     
     inline def setEnforceMaxLengthUndefined: Self = StObject.set(x, "enforceMaxLength", js.undefined)
     
-    inline def setGetErrors(value: /* value */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
+    inline def setGetErrors(value: /* value */ js.UndefOr[Any] => Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
     
     inline def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
     
@@ -213,7 +212,7 @@ object ITextField {
     
     inline def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
     
-    inline def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
@@ -233,7 +232,7 @@ object ITextField {
     
     inline def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
     
-    inline def setMaskRe(value: RegExp): Self = StObject.set(x, "maskRe", value.asInstanceOf[js.Any])
+    inline def setMaskRe(value: js.RegExp): Self = StObject.set(x, "maskRe", value.asInstanceOf[js.Any])
     
     inline def setMaskReUndefined: Self = StObject.set(x, "maskRe", js.undefined)
     
@@ -261,7 +260,7 @@ object ITextField {
     
     inline def setProcessRawValueUndefined: Self = StObject.set(x, "processRawValue", js.undefined)
     
-    inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     inline def setRegexText(value: String): Self = StObject.set(x, "regexText", value.asInstanceOf[js.Any])
     
@@ -285,7 +284,7 @@ object ITextField {
     
     inline def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -293,7 +292,7 @@ object ITextField {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setStripCharsRe(value: RegExp): Self = StObject.set(x, "stripCharsRe", value.asInstanceOf[js.Any])
+    inline def setStripCharsRe(value: js.RegExp): Self = StObject.set(x, "stripCharsRe", value.asInstanceOf[js.Any])
     
     inline def setStripCharsReUndefined: Self = StObject.set(x, "stripCharsRe", js.undefined)
     
@@ -301,7 +300,7 @@ object ITextField {
     
     inline def setValidateBlankUndefined: Self = StObject.set(x, "validateBlank", js.undefined)
     
-    inline def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     

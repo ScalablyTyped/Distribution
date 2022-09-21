@@ -143,7 +143,7 @@ object UpdateDocumentByQueryParams {
     
     inline def setDocvalueFieldsUndefined: Self = StObject.set(x, "docvalueFields", js.undefined)
     
-    inline def setDocvalueFieldsVarargs(value: String*): Self = StObject.set(x, "docvalueFields", js.Array(value :_*))
+    inline def setDocvalueFieldsVarargs(value: String*): Self = StObject.set(x, "docvalueFields", js.Array(value*))
     
     inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
@@ -157,7 +157,7 @@ object UpdateDocumentByQueryParams {
     
     inline def setFielddataFieldsUndefined: Self = StObject.set(x, "fielddataFields", js.undefined)
     
-    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value :_*))
+    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value*))
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -169,7 +169,7 @@ object UpdateDocumentByQueryParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
     
@@ -207,7 +207,7 @@ object UpdateDocumentByQueryParams {
     
     inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
-    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value :_*))
+    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value*))
     
     inline def setScroll(value: TimeSpan): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
@@ -237,19 +237,19 @@ object UpdateDocumentByQueryParams {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStats(value: NameList): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value*))
     
     inline def setStoredFields(value: NameList): Self = StObject.set(x, "storedFields", value.asInstanceOf[js.Any])
     
     inline def setStoredFieldsUndefined: Self = StObject.set(x, "storedFields", js.undefined)
     
-    inline def setStoredFieldsVarargs(value: String*): Self = StObject.set(x, "storedFields", js.Array(value :_*))
+    inline def setStoredFieldsVarargs(value: String*): Self = StObject.set(x, "storedFields", js.Array(value*))
     
     inline def setSuggestField(value: String): Self = StObject.set(x, "suggestField", value.asInstanceOf[js.Any])
     
@@ -281,7 +281,7 @@ object UpdateDocumentByQueryParams {
     
     inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     
     inline def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
@@ -305,16 +305,16 @@ object UpdateDocumentByQueryParams {
     
     inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
     
-    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value :_*))
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
     
     inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
     
     inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
     
-    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value :_*))
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
     
     inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
-    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value :_*))
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
   }
 }

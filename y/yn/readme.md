@@ -1,7 +1,7 @@
 
 # Scala.js typings for yn
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Parse yes/no like values
@@ -10,10 +10,10 @@ Parse yes/no like values
 | ------------------ | :-------------: |
 | Full name          | yn |
 | Keywords           | yn, yes, no, cli, prompt, validate, input, answer, true, false, parse, lenient |
-| # releases         | 4 |
-| # dependents       | 149 |
-| # downloads        | 247149346 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6828479333333336E7 |
+| # stars            | 232.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/yn#readme)

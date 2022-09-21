@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -32,7 +31,7 @@ trait EmailFolder extends StObject {
     * Asynchronously finds the child folders of this folder.
     * @return The list of child folders.
     */
-  def findChildFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findChildFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets an instance of the EmailConversationReader class.
@@ -81,7 +80,7 @@ trait EmailFolder extends StObject {
   var kind: EmailSpecialFolderKind = js.native
   
   /** Gets or sets the last time the folder was successfully synced with the server. */
-  var lastSuccessfulSyncTime: Date = js.native
+  var lastSuccessfulSyncTime: js.Date = js.native
   
   /** Gets the ID of the mailbox that contains this folder. */
   var mailboxId: String = js.native

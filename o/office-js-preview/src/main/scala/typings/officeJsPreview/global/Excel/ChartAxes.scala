@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the chart axes.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartAxes")
 @js.native
-class ChartAxes ()
+open class ChartAxes ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartAxes {
   

@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EXTBlendMinmax extends StObject {
   
+  /* standard dom */
   val MAX_EXT: GLenum
   
+  /* standard dom */
   val MIN_EXT: GLenum
 }
 object EXTBlendMinmax {

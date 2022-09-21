@@ -55,7 +55,7 @@ object Query {
     
     inline def setDistinctOnUndefined: Self = StObject.set(x, "distinctOn", js.undefined)
     
-    inline def setDistinctOnVarargs(value: PropertyReference*): Self = StObject.set(x, "distinctOn", js.Array(value :_*))
+    inline def setDistinctOnVarargs(value: PropertyReference*): Self = StObject.set(x, "distinctOn", js.Array(value*))
     
     inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object Query {
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    inline def setKindVarargs(value: KindExpression*): Self = StObject.set(x, "kind", js.Array(value :_*))
+    inline def setKindVarargs(value: KindExpression*): Self = StObject.set(x, "kind", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -83,13 +83,13 @@ object Query {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: PropertyOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: PropertyOrder*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setProjection(value: js.Array[Projection]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    inline def setProjectionVarargs(value: Projection*): Self = StObject.set(x, "projection", js.Array(value :_*))
+    inline def setProjectionVarargs(value: Projection*): Self = StObject.set(x, "projection", js.Array(value*))
     
     inline def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
     

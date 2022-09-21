@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AreaMeasurement3DViewModelConstructor
   extends StObject
-     with Instantiable0[AreaMeasurement3DViewModel]
+     with /**
+  * Provides the logic for the [AreaMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html)
+  */
+Instantiable0[AreaMeasurement3DViewModel]
      with Instantiable1[/* properties */ AreaMeasurement3DViewModelProperties, AreaMeasurement3DViewModel]

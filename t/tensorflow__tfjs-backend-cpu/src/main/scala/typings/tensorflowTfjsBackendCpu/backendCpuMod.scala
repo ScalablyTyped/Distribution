@@ -1,20 +1,15 @@
 package typings.tensorflowTfjsBackendCpu
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsBackendCpu.anon.Imag
-import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.NCHW
-import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.NHWC
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
-import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
-import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.distTypesMod.Rank.R4
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.mod.DataStorage
 import typings.tensorflowTfjsCore.mod.KernelBackend
+import typings.tensorflowTfjsCore.mod.TensorBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,38 +18,30 @@ object backendCpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/backend_cpu", "MathBackendCPU")
   @js.native
-  class MathBackendCPU () extends KernelBackend {
+  open class MathBackendCPU () extends KernelBackend {
     
     var blockSize: Double = js.native
     
-    /* private */ var broadcastedBinaryOp: js.Any = js.native
-    
-    /* private */ var bufferSync: js.Any = js.native
-    
-    def cropAndResize(
-      images: Tensor4D,
-      boxes: Tensor2D,
-      boxIndex: Tensor1D,
-      cropSize: js.Tuple2[Double, Double],
-      method: String,
-      extrapolationValue: Double
-    ): Tensor[R4] = js.native
+    def bufferSync[R /* <: Rank */, D /* <: DataType */](t: TensorInfo): TensorBuffer[R, D] = js.native
     
     var data: DataStorage[TensorData[DataType]] = js.native
     
     /** Decrease refCount of a `TensorData`. */
     def decRef(dataId: DataId): Unit = js.native
     
-    @JSName("depthToSpace")
-    def depthToSpace_NCHW(x: Tensor4D, blockSize: Double, dataFormat: NCHW): Tensor4D = js.native
-    @JSName("depthToSpace")
-    def depthToSpace_NHWC(x: Tensor4D, blockSize: Double, dataFormat: NHWC): Tensor4D = js.native
-    
-    def disposeData(dataId: DataId): Unit = js.native
+    /**
+      * Dispose the memory if the dataId has 0 refCount. Return true if the memory
+      * is released or memory is not managed in this backend, false if memory is
+      * not cleared.
+      * @param dataId
+      * @oaram force Optional, remove the data regardless of refCount
+      */
+    def disposeData(dataId: DataId): Boolean = js.native
+    def disposeData(dataId: DataId, force: Boolean): Boolean = js.native
     
     def disposeIntermediateTensorInfo(tensorInfo: TensorInfo): Unit = js.native
     
-    /* private */ var firstUse: js.Any = js.native
+    /* private */ var firstUse: Any = js.native
     
     /** Increase refCount of a `TensorData`. */
     def incRef(dataId: DataId): Unit = js.native
@@ -71,17 +58,30 @@ object backendCpuMod {
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: js.Array[String]): TensorInfo = js.native
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: BackendValues): TensorInfo = js.native
     
-    /* private */ var maxPool3dPositions: js.Any = js.native
+    def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType, refCount: Double): Unit = js.native
     
-    def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit = js.native
-    
-    /* private */ var pool3d: js.Any = js.native
+    /* private */ var nextDataId: Any = js.native
     
     def read(dataId: DataId): js.Promise[BackendValues] = js.native
     
     def readSync(dataId: DataId): BackendValues = js.native
     
-    /* private */ var scatter: js.Any = js.native
+    /** Return refCount of a `TensorData`. */
+    def refCount(dataId: DataId): Double = js.native
+    
+    def where(condition: Tensor[Rank]): Tensor2D = js.native
+  }
+  /* static members */
+  object MathBackendCPU {
+    
+    @JSImport("@tensorflow/tfjs-backend-cpu/dist/backend_cpu", "MathBackendCPU")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@tensorflow/tfjs-backend-cpu/dist/backend_cpu", "MathBackendCPU.nextDataId")
+    @js.native
+    def nextDataId: Any = js.native
+    inline def nextDataId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextDataId")(x.asInstanceOf[js.Any])
   }
   
   trait DataId extends StObject
@@ -117,7 +117,7 @@ object backendCpuMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

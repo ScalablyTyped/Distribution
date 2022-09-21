@@ -19,7 +19,7 @@ trait DownfileParams extends StObject {
   var filePath: js.UndefOr[String] = js.undefined
   
   /**
-    *     HTTP 请求的 Header，Header 中不能设置 Referer
+    * HTTP 请求的 Header，Header 中不能设置 Referer
     */
   var header: js.UndefOr[StringDictionary[String]] = js.undefined
   

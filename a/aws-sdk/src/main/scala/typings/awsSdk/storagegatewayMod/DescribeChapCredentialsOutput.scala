@@ -24,6 +24,6 @@ object DescribeChapCredentialsOutput {
     
     inline def setChapCredentialsUndefined: Self = StObject.set(x, "ChapCredentials", js.undefined)
     
-    inline def setChapCredentialsVarargs(value: ChapInfo*): Self = StObject.set(x, "ChapCredentials", js.Array(value :_*))
+    inline def setChapCredentialsVarargs(value: ChapInfo*): Self = StObject.set(x, "ChapCredentials", js.Array(value*))
   }
 }

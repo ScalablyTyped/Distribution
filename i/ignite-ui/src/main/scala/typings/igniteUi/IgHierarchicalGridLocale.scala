@@ -10,7 +10,7 @@ trait IgHierarchicalGridLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the default tooltip applied to an expand column cell, that is currently expanded.

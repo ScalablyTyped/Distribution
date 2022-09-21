@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("cycled", JSImport.Namespace)
+  @JSImport("cycled", JSImport.Default)
   @js.native
-  class ^[T] protected ()
+  open class default[T] protected ()
     extends StObject
        with Cycled[T] {
     /**
@@ -20,24 +20,26 @@ object mod {
     	It will cycle through the number of elements equaling the length of the array from the current index.
     	@example
     	```
-    	import Cycled = require('cycled');
+    	import Cycled from 'cycled';
     	const numberCycle = new Cycled([1, 2, 3, 4, 5]);
     	console.log(...numberCycle);
     	//=> 1 2 3 4 5
     	class TabComponent {
+    		#activeView;
+    		#views;
     		constructor(views) {
-    			this.activeView = views[0];
-    			this.views = new Cycled(views);
+    			this.#activeView = views[0];
+    			this.#views = new Cycled(views);
     		}
     		setActiveView(view) {
-    			this.activeView = view;
-    			this.views.index = this.views.indexOf(view);
+    			this.#activeView = view;
+    			this.#views.index = this.#views.indexOf(view);
     		}
     		nextView() {
-    			setActiveView(this.views.next());
+    			setActiveView(this.#views.next());
     		}
     		previousView() {
-    			setActiveView(this.views.previous());
+    			setActiveView(this.#views.previous());
     		}
     	}
     	const tabs = new TabComponent([

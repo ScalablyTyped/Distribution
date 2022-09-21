@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InternalNgModuleRef[T] extends NgModuleRef[T] {
   
-  var _bootstrapComponents: js.Array[Type[js.Any]] = js.native
+  var _bootstrapComponents: js.Array[Type[Any]] = js.native
 }

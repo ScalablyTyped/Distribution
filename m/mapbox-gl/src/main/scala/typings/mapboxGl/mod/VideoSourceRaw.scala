@@ -9,7 +9,7 @@ trait VideoSourceRaw
   extends StObject
      with Source
      with VideoSourceOptions
-     with AnySourceData {
+     with _AnySourceData {
   
   @JSName("type")
   var type_VideoSourceRaw: video

@@ -24,6 +24,6 @@ object QueryInfo {
     
     inline def setSelectFieldsUndefined: Self = StObject.set(x, "SelectFields", js.undefined)
     
-    inline def setSelectFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "SelectFields", js.Array(value :_*))
+    inline def setSelectFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "SelectFields", js.Array(value*))
   }
 }

@@ -26,6 +26,6 @@ object BatchNotificationOperation {
     
     inline def setNotificationQueryConditions(value: js.Array[NotificationQueryCondition]): Self = StObject.set(x, "notificationQueryConditions", value.asInstanceOf[js.Any])
     
-    inline def setNotificationQueryConditionsVarargs(value: NotificationQueryCondition*): Self = StObject.set(x, "notificationQueryConditions", js.Array(value :_*))
+    inline def setNotificationQueryConditionsVarargs(value: NotificationQueryCondition*): Self = StObject.set(x, "notificationQueryConditions", js.Array(value*))
   }
 }

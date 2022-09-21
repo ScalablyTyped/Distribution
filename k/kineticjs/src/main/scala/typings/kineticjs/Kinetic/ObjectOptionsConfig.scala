@@ -8,7 +8,7 @@ trait ObjectOptionsConfig extends StObject {
   
   var dragBoundFunc: js.UndefOr[js.Function1[/* pos */ Vector2d, Vector2d]] = js.undefined
   
-  var dragBounds: js.UndefOr[js.Any] = js.undefined
+  var dragBounds: js.UndefOr[Any] = js.undefined
   
   var dragConstraint: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait ObjectOptionsConfig extends StObject {
   
   var offset: js.UndefOr[Vector2d] = js.undefined
   
-  var opacity: js.UndefOr[js.Any] = js.undefined
+  var opacity: js.UndefOr[Any] = js.undefined
   
   var rotation: js.UndefOr[Double] = js.undefined
   
@@ -53,7 +53,7 @@ object ObjectOptionsConfig {
     
     inline def setDragBoundFuncUndefined: Self = StObject.set(x, "dragBoundFunc", js.undefined)
     
-    inline def setDragBounds(value: js.Any): Self = StObject.set(x, "dragBounds", value.asInstanceOf[js.Any])
+    inline def setDragBounds(value: Any): Self = StObject.set(x, "dragBounds", value.asInstanceOf[js.Any])
     
     inline def setDragBoundsUndefined: Self = StObject.set(x, "dragBounds", js.undefined)
     
@@ -85,7 +85,7 @@ object ObjectOptionsConfig {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOpacity(value: js.Any): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Any): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     

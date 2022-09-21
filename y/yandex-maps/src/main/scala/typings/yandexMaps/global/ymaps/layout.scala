@@ -7,6 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layout {
   
+  @JSGlobal("ymaps.layout.Image")
+  @js.native
+  open class Image ()
+    extends typings.yandexMaps.mod.layout.Image
+  
+  @JSGlobal("ymaps.layout.ImageWithContent")
+  @js.native
+  open class ImageWithContent ()
+    extends typings.yandexMaps.mod.layout.ImageWithContent
+  
+  @JSGlobal("ymaps.layout.PieChart")
+  @js.native
+  open class PieChart protected ()
+    extends typings.yandexMaps.mod.layout.PieChart {
+    def this(data: js.Object) = this()
+  }
+  
   @JSGlobal("ymaps.layout.storage")
   @js.native
   val storage: Storage = js.native
@@ -15,7 +32,7 @@ object layout {
     
     @JSGlobal("ymaps.layout.templateBased.Base")
     @js.native
-    class Base protected ()
+    open class Base protected ()
       extends typings.yandexMaps.mod.layout.templateBased.Base {
       def this(data: js.Object) = this()
     }

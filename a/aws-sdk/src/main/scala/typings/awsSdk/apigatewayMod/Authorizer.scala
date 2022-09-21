@@ -32,7 +32,7 @@ trait Authorizer extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The identity source for which authorization is requested. For a TOKEN or COGNITO_USER_POOLS authorizer, this is required and specifies the request header mapping expression for the custom header holding the authorization token submitted by the client. For example, if the token header name is Auth, the header mapping expression is method.request.header.Auth.For the REQUEST authorizer, this is required when authorization caching is enabled. The value is a comma-separated string of one or more mapping expressions of the specified request parameters. For example, if an Auth header, a Name query string parameter are defined as identity sources, this value is method.request.header.Auth, method.request.querystring.Name. These parameters will be used to derive the authorization caching key and to perform runtime validation of the REQUEST authorizer by verifying all of the identity-related request parameters are present, not null and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function, otherwise, it returns a 401 Unauthorized response without calling the Lambda function. The valid value is a string of comma-separated mapping expressions of the specified request parameters. When the authorization caching is not enabled, this property is optional.
+    * The identity source for which authorization is requested. For a TOKEN or COGNITO_USER_POOLS authorizer, this is required and specifies the request header mapping expression for the custom header holding the authorization token submitted by the client. For example, if the token header name is Auth, the header mapping expression is method.request.header.Auth. For the REQUEST authorizer, this is required when authorization caching is enabled. The value is a comma-separated string of one or more mapping expressions of the specified request parameters. For example, if an Auth header, a Name query string parameter are defined as identity sources, this value is method.request.header.Auth, method.request.querystring.Name. These parameters will be used to derive the authorization caching key and to perform runtime validation of the REQUEST authorizer by verifying all of the identity-related request parameters are present, not null and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function, otherwise, it returns a 401 Unauthorized response without calling the Lambda function. The valid value is a string of comma-separated mapping expressions of the specified request parameters. When the authorization caching is not enabled, this property is optional. 
     */
   var identitySource: js.UndefOr[String] = js.undefined
   
@@ -42,12 +42,12 @@ trait Authorizer extends StObject {
   var identityValidationExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The name of the authorizer.
+    * The name of the authorizer.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of the Amazon Cognito user pool ARNs for the COGNITO_USER_POOLS authorizer. Each element is of this format: arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}. For a TOKEN or REQUEST authorizer, this is not defined.
+    * A list of the Amazon Cognito user pool ARNs for the COGNITO_USER_POOLS authorizer. Each element is of this format: arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}. For a TOKEN or REQUEST authorizer, this is not defined. 
     */
   var providerARNs: js.UndefOr[ListOfARNs] = js.undefined
   
@@ -101,7 +101,7 @@ object Authorizer {
     
     inline def setProviderARNsUndefined: Self = StObject.set(x, "providerARNs", js.undefined)
     
-    inline def setProviderARNsVarargs(value: ProviderARN*): Self = StObject.set(x, "providerARNs", js.Array(value :_*))
+    inline def setProviderARNsVarargs(value: ProviderARN*): Self = StObject.set(x, "providerARNs", js.Array(value*))
     
     inline def setType(value: AuthorizerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

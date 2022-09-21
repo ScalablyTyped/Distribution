@@ -12,9 +12,9 @@ object checkoutOptionsMod {
   
   @JSImport("nodegit/checkout-options", "CheckoutOptions")
   @js.native
-  class CheckoutOptions ()
+  open class CheckoutOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var ancestorLabel: js.UndefOr[String] = js.native
     
@@ -32,7 +32,7 @@ object checkoutOptionsMod {
     
     var fileOpenFlags: js.UndefOr[Double] = js.native
     
-    var notifyCb: js.UndefOr[js.Any] = js.native
+    var notifyCb: js.UndefOr[Any] = js.native
     
     var notifyFlags: js.UndefOr[Double] = js.native
     
@@ -42,11 +42,11 @@ object checkoutOptionsMod {
     
     var paths: js.UndefOr[Strarray | String | js.Array[String]] = js.native
     
-    var perfdataCb: js.UndefOr[js.Any] = js.native
+    var perfdataCb: js.UndefOr[Any] = js.native
     
     var perfdataPayload: Unit = js.native
     
-    var progressCb: js.UndefOr[js.Any] = js.native
+    var progressCb: js.UndefOr[Any] = js.native
     
     var progressPayload: Unit = js.native
     

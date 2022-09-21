@@ -10,10 +10,10 @@ A simple library that emulates memcache functions using HTML5 localStorage
 | ------------------ | :-------------: |
 | Full name          | lscache |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 1173241 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 86274.0 |
+| # stars            | 1419.0 |
 
 ## Links
 - [Homepage](http://github.com/pamelafox/lscache)

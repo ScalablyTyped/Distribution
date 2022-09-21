@@ -42,51 +42,54 @@ object mod {
     }
   }
   
-  /* Inlined std.Record<'orientation' | 'scan' | 'width' | 'height' | 'device-width' | 'device-height' | 'resolution' | 'aspect-ratio' | 'device-aspect-ratio' | 'grid' | 'color' | 'color-index' | 'monochrome', unknown> */
+  /* Inlined std.Record<'orientation' | 'scan' | 'width' | 'height' | 'device-width' | 'device-height' | 'resolution' | 'aspect-ratio' | 'device-aspect-ratio' | 'grid' | 'color' | 'color-index' | 'monochrome' | 'prefers-color-scheme', unknown> */
   trait MediaValues extends StObject {
     
-    var `aspect-ratio`: js.Any
+    var `aspect-ratio`: Any
     
-    var color: js.Any
+    var color: Any
     
-    var `color-index`: js.Any
+    var `color-index`: Any
     
-    var `device-aspect-ratio`: js.Any
+    var `device-aspect-ratio`: Any
     
-    var `device-height`: js.Any
+    var `device-height`: Any
     
-    var `device-width`: js.Any
+    var `device-width`: Any
     
-    var grid: js.Any
+    var grid: Any
     
-    var height: js.Any
+    var height: Any
     
-    var monochrome: js.Any
+    var monochrome: Any
     
-    var orientation: js.Any
+    var orientation: Any
     
-    var resolution: js.Any
+    var `prefers-color-scheme`: Any
     
-    var scan: js.Any
+    var resolution: Any
     
-    var width: js.Any
+    var scan: Any
+    
+    var width: Any
   }
   object MediaValues {
     
     inline def apply(
-      `aspect-ratio`: js.Any,
-      color: js.Any,
-      `color-index`: js.Any,
-      `device-aspect-ratio`: js.Any,
-      `device-height`: js.Any,
-      `device-width`: js.Any,
-      grid: js.Any,
-      height: js.Any,
-      monochrome: js.Any,
-      orientation: js.Any,
-      resolution: js.Any,
-      scan: js.Any,
-      width: js.Any
+      `aspect-ratio`: Any,
+      color: Any,
+      `color-index`: Any,
+      `device-aspect-ratio`: Any,
+      `device-height`: Any,
+      `device-width`: Any,
+      grid: Any,
+      height: Any,
+      monochrome: Any,
+      orientation: Any,
+      `prefers-color-scheme`: Any,
+      resolution: Any,
+      scan: Any,
+      width: Any
     ): MediaValues = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], monochrome = monochrome.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], scan = scan.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("aspect-ratio")(`aspect-ratio`.asInstanceOf[js.Any])
@@ -94,36 +97,39 @@ object mod {
       __obj.updateDynamic("device-aspect-ratio")(`device-aspect-ratio`.asInstanceOf[js.Any])
       __obj.updateDynamic("device-height")(`device-height`.asInstanceOf[js.Any])
       __obj.updateDynamic("device-width")(`device-width`.asInstanceOf[js.Any])
+      __obj.updateDynamic("prefers-color-scheme")(`prefers-color-scheme`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaValues]
     }
     
     extension [Self <: MediaValues](x: Self) {
       
-      inline def `setAspect-ratio`(value: js.Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setAspect-ratio`(value: Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       
-      inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def `setColor-index`(value: js.Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
+      inline def `setColor-index`(value: Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
       
-      inline def `setDevice-aspect-ratio`(value: js.Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setDevice-aspect-ratio`(value: Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
       
-      inline def `setDevice-height`(value: js.Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
+      inline def `setDevice-height`(value: Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
       
-      inline def `setDevice-width`(value: js.Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
+      inline def `setDevice-width`(value: Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setMonochrome(value: js.Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+      inline def setMonochrome(value: Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
       
-      inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      inline def setResolution(value: js.Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def `setPrefers-color-scheme`(value: Any): Self = StObject.set(x, "prefers-color-scheme", value.asInstanceOf[js.Any])
       
-      inline def setScan(value: js.Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setScan(value: Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,7 +153,7 @@ object mod {
       
       inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
-      inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+      inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value*))
       
       inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       

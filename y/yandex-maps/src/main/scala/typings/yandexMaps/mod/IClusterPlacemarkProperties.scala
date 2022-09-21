@@ -25,6 +25,6 @@ object IClusterPlacemarkProperties {
     
     inline def setGeoObjects(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "geoObjects", value.asInstanceOf[js.Any])
     
-    inline def setGeoObjectsVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "geoObjects", js.Array(value :_*))
+    inline def setGeoObjectsVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "geoObjects", js.Array(value*))
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-progressive-custom-properties" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-progressive-custom-properties" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

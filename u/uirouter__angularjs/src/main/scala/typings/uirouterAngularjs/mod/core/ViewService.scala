@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.ViewService")
 @js.native
-class ViewService protected ()
+open class ViewService protected ()
   extends typings.uirouterCore.mod.ViewService {
   /** @internal */
   def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()

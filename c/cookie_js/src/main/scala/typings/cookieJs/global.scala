@@ -17,7 +17,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def all(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Any]
+    inline def all(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Any]
     
     @JSGlobal("cookie.defaults")
     @js.native
@@ -30,22 +30,22 @@ object global {
     
     inline def get(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def get(key: String, fallback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def get(keys: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def get(keys: js.Array[String], fallback: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(keys.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def get(keys: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(keys.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def get(keys: js.Array[String], fallback: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(keys.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def remove(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def remove(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     inline def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def remove(keys: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def removeSpecific(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def removeSpecific(key: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeSpecific(key: String, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeSpecific(keys: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def removeSpecific(keys: js.Array[String], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeSpecific(keys: js.Array[String], options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSpecific")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def set(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def set(key: String, value: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def set(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def set(obj: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, value: String, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def set(obj: Any, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("cookie.utils")
     @js.native

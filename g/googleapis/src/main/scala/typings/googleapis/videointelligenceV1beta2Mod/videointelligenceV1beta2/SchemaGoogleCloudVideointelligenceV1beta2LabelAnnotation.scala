@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Label annotation.
-  */
 trait SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation extends StObject {
   
   /**
-    * Common categories for the detected entity. E.g. when the label is
-    * `Terrier` the category is likely `dog`. And in some cases there might be
-    * more than one categories e.g. `Terrier` could also be a `pet`.
+    * Common categories for the detected entity. For example, when the label is `Terrier`, the category is likely `dog`. And in some cases there might be more than one categories e.g., `Terrier` could also be a `pet`.
     */
   var categoryEntities: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2Entity]] = js.undefined
   
@@ -30,6 +25,11 @@ trait SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation extends StObject 
     * All video segments where a label was detected.
     */
   var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelSegment]] = js.undefined
+  
+  /**
+    * Feature version.
+    */
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation {
   
@@ -44,7 +44,7 @@ object SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation {
     
     inline def setCategoryEntitiesUndefined: Self = StObject.set(x, "categoryEntities", js.undefined)
     
-    inline def setCategoryEntitiesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value :_*))
+    inline def setCategoryEntitiesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value*))
     
     inline def setEntity(value: SchemaGoogleCloudVideointelligenceV1beta2Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
@@ -54,12 +54,18 @@ object SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2LabelFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2LabelFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2LabelSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2LabelSegment*): Self = StObject.set(x, "segments", js.Array(value*))
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

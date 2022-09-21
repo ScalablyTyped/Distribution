@@ -50,6 +50,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.top
 import typings.oracleOraclejet.oracleOraclejetStrings.translations
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.CompositionEvent
 import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.Element
@@ -57,12 +58,15 @@ import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.FormDataEvent
 import typings.std.HTMLElement
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
+import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -80,20 +84,20 @@ object ojpopupMod {
     
     def addEventListener(
       `type`: autoDismissChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: autoDismissChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: chromeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: chromeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -101,7 +105,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | none | firstFocusable | popup], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -109,26 +113,26 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | none | firstFocusable | popup], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: tailChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: tailChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -137,7 +141,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -146,7 +150,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -156,7 +160,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -165,7 +169,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -175,7 +179,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -184,7 +188,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -194,7 +198,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -203,7 +207,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -213,7 +217,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -222,7 +226,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -232,7 +236,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -241,7 +245,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -251,7 +255,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -260,19 +264,19 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -301,31 +305,31 @@ object ojpopupMod {
     
     var modality: modeless | modal = js.native
     
-    var onAutoDismissChanged: (js.Function1[/* event */ JetElementCustomEvent[none | focusLoss], js.Any]) | Null = js.native
+    var onAutoDismissChanged: (js.Function1[/* event */ JetElementCustomEvent[none | focusLoss], Any]) | Null = js.native
     
-    var onChromeChanged: (js.Function1[/* event */ JetElementCustomEvent[default | none], js.Any]) | Null = js.native
+    var onChromeChanged: (js.Function1[/* event */ JetElementCustomEvent[default | none], Any]) | Null = js.native
     
-    var onInitialFocusChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none | firstFocusable | popup], js.Any]) | Null = js.native
+    var onInitialFocusChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none | firstFocusable | popup], Any]) | Null = js.native
     
-    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modeless | modal], js.Any]) | Null = js.native
+    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modeless | modal], Any]) | Null = js.native
     
-    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, js.Any]) | Null = js.native
+    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, Any]) | Null = js.native
     
-    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, js.Any]) | Null = js.native
+    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, Any]) | Null = js.native
     
-    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, js.Any]) | Null = js.native
+    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, Any]) | Null = js.native
     
-    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, js.Any]) | Null = js.native
+    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, Any]) | Null = js.native
     
-    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, js.Any]) | Null = js.native
+    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, Any]) | Null = js.native
     
-    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, js.Any]) | Null = js.native
+    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, Any]) | Null = js.native
     
-    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, js.Any]) | Null = js.native
+    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, Any]) | Null = js.native
     
-    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], js.Any]) | Null = js.native
+    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], Any]) | Null = js.native
     
-    var onTailChanged: (js.Function1[/* event */ JetElementCustomEvent[none | simple], js.Any]) | Null = js.native
+    var onTailChanged: (js.Function1[/* event */ JetElementCustomEvent[none | simple], Any]) | Null = js.native
     
     def open(launcher: String): Unit = js.native
     def open(launcher: String, position: Position): Unit = js.native
@@ -336,18 +340,11 @@ object ojpopupMod {
     
     def setProperties(properties: ojPopupSettablePropertiesLenient): Unit = js.native
     
-    def setProperty(property: autoDismiss, value: focusLoss): Unit = js.native
-    def setProperty(property: autoDismiss, value: none): Unit = js.native
-    def setProperty(property: chrome, value: default): Unit = js.native
-    def setProperty(property: chrome, value: none): Unit = js.native
-    def setProperty(property: initialFocus, value: auto): Unit = js.native
-    def setProperty(property: initialFocus, value: firstFocusable): Unit = js.native
-    def setProperty(property: initialFocus, value: none): Unit = js.native
-    def setProperty(property: initialFocus, value: popup): Unit = js.native
-    def setProperty(property: modality, value: modal): Unit = js.native
-    def setProperty(property: modality, value: modeless): Unit = js.native
-    def setProperty(property: tail, value: none): Unit = js.native
-    def setProperty(property: tail, value: simple): Unit = js.native
+    def setProperty(property: autoDismiss, value: none | focusLoss): Unit = js.native
+    def setProperty(property: chrome, value: default | none): Unit = js.native
+    def setProperty(property: initialFocus, value: auto | none | firstFocusable | popup): Unit = js.native
+    def setProperty(property: modality, value: modeless | modal): Unit = js.native
+    def setProperty(property: tail, value: none | simple): Unit = js.native
     @JSName("setProperty")
     def setProperty_position(property: position, value: Position): Unit = js.native
     @JSName("setProperty")
@@ -460,15 +457,15 @@ object ojpopupMod {
     
     type ojAnimateStart = CustomEvent[EndCallback]
     
-    type ojBeforeClose = CustomEvent[StringDictionary[js.Any]]
+    type ojBeforeClose = CustomEvent[StringDictionary[Any]]
     
-    type ojBeforeOpen = CustomEvent[StringDictionary[js.Any]]
+    type ojBeforeOpen = CustomEvent[StringDictionary[Any]]
     
-    type ojClose = CustomEvent[StringDictionary[js.Any]]
+    type ojClose = CustomEvent[StringDictionary[Any]]
     
-    type ojFocus = CustomEvent[StringDictionary[js.Any]]
+    type ojFocus = CustomEvent[StringDictionary[Any]]
     
-    type ojOpen = CustomEvent[StringDictionary[js.Any]]
+    type ojOpen = CustomEvent[StringDictionary[Any]]
   }
   
   trait ojPopupEventMap
@@ -511,14 +508,17 @@ object ojpopupMod {
       animationstart: AnimationEvent,
       autoDismissChanged: JetElementCustomEvent[none | focusLoss],
       auxclick: MouseEvent,
+      beforeinput: InputEvent,
       blur: FocusEvent,
-      cancel: Event,
       canplay: Event,
       canplaythrough: Event,
       change: Event,
       chromeChanged: JetElementCustomEvent[default | none],
       click: MouseEvent,
       close: Event,
+      compositionend: CompositionEvent,
+      compositionstart: CompositionEvent,
+      compositionupdate: CompositionEvent,
       contextmenu: MouseEvent,
       copy: ClipboardEvent,
       cuechange: Event,
@@ -527,7 +527,6 @@ object ojpopupMod {
       drag: DragEvent,
       dragend: DragEvent,
       dragenter: DragEvent,
-      dragexit: Event,
       dragleave: DragEvent,
       dragover: DragEvent,
       dragstart: DragEvent,
@@ -539,6 +538,7 @@ object ojpopupMod {
       focus: FocusEvent,
       focusin: FocusEvent,
       focusout: FocusEvent,
+      formdata: FormDataEvent,
       fullscreenchange: Event,
       fullscreenerror: Event,
       gotpointercapture: PointerEvent,
@@ -592,8 +592,9 @@ object ojpopupMod {
       select: Event,
       selectionchange: Event,
       selectstart: Event,
+      slotchange: Event,
       stalled: Event,
-      submit: Event,
+      submit: SubmitEvent,
       suspend: Event,
       tailChanged: JetElementCustomEvent[none | simple],
       timeupdate: Event,
@@ -609,9 +610,13 @@ object ojpopupMod {
       translationsChanged: JetElementCustomEvent[js.Object | Null],
       volumechange: Event,
       waiting: Event,
+      webkitanimationend: Event,
+      webkitanimationiteration: Event,
+      webkitanimationstart: Event,
+      webkittransitionend: Event,
       wheel: WheelEvent
     ): ojPopupEventMap = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], autoDismissChanged = autoDismissChanged.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], chromeChanged = chromeChanged.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], initialFocusChanged = initialFocusChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], modalityChanged = modalityChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojAnimateEnd = ojAnimateEnd.asInstanceOf[js.Any], ojAnimateStart = ojAnimateStart.asInstanceOf[js.Any], ojBeforeClose = ojBeforeClose.asInstanceOf[js.Any], ojBeforeOpen = ojBeforeOpen.asInstanceOf[js.Any], ojClose = ojClose.asInstanceOf[js.Any], ojFocus = ojFocus.asInstanceOf[js.Any], ojOpen = ojOpen.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], positionChanged = positionChanged.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], tailChanged = tailChanged.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], autoDismissChanged = autoDismissChanged.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], chromeChanged = chromeChanged.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], initialFocusChanged = initialFocusChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], modalityChanged = modalityChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojAnimateEnd = ojAnimateEnd.asInstanceOf[js.Any], ojAnimateStart = ojAnimateStart.asInstanceOf[js.Any], ojBeforeClose = ojBeforeClose.asInstanceOf[js.Any], ojBeforeOpen = ojBeforeOpen.asInstanceOf[js.Any], ojClose = ojClose.asInstanceOf[js.Any], ojFocus = ojFocus.asInstanceOf[js.Any], ojOpen = ojOpen.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], positionChanged = positionChanged.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], tailChanged = tailChanged.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojPopupEventMap]
     }
     
@@ -700,7 +705,7 @@ object ojpopupMod {
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojpopup.ojPopupSettableProperties> */
   trait ojPopupSettablePropertiesLenient
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var autoDismiss: js.UndefOr[none | focusLoss] = js.undefined
     

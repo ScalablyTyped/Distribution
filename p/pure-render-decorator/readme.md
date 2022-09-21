@@ -11,9 +11,9 @@ Makes React components pure.
 | Full name          | pure-render-decorator |
 | Keywords           | react, pure, render, decorator |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 339249 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 42659.333333333336 |
+| # stars            | 191.0 |
 
 ## Links
 - [Homepage](https://github.com/felixgirault/pure-render-decorator#readme)

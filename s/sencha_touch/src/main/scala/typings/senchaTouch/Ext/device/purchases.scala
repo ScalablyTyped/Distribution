@@ -22,7 +22,7 @@ object purchases {
     /** [Method] Will attempt to purchase this product
       * @param config Object
       */
-    var purchase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var purchase: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of fields
       * @param fields Array The new value.
@@ -43,7 +43,7 @@ object purchases {
       
       inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
       
-      inline def setPurchase(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "purchase", js.Any.fromFunction1(value))
+      inline def setPurchase(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "purchase", js.Any.fromFunction1(value))
       
       inline def setPurchaseUndefined: Self = StObject.set(x, "purchase", js.undefined)
       
@@ -60,7 +60,7 @@ object purchases {
     /** [Method] Attempts to mark this purchase as complete
       * @param config Object
       */
-    var complete: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var complete: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of fields
       * @returns Array
@@ -83,7 +83,7 @@ object purchases {
     
     extension [Self <: IPurchase](x: Self) {
       
-      inline def setComplete(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
@@ -104,22 +104,22 @@ object purchases {
     /** [Method] Checks if the current user is able to make payments
       * @param config Object
       */
-    var canMakePayments: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var canMakePayments: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns a Ext data Store instance of all purchases delivered to the current user
       * @param config Object
       */
-    var getCompletedPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getCompletedPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns a Ext data Store instance of all products available to purchase
       * @param config Object
       */
-    var getProducts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getProducts: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns a Ext data Store instance of all purchases the current user has been charged
       * @param config Object
       */
-    var getPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISencha {
     
@@ -130,19 +130,19 @@ object purchases {
     
     extension [Self <: ISencha](x: Self) {
       
-      inline def setCanMakePayments(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "canMakePayments", js.Any.fromFunction1(value))
+      inline def setCanMakePayments(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "canMakePayments", js.Any.fromFunction1(value))
       
       inline def setCanMakePaymentsUndefined: Self = StObject.set(x, "canMakePayments", js.undefined)
       
-      inline def setGetCompletedPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCompletedPurchases", js.Any.fromFunction1(value))
+      inline def setGetCompletedPurchases(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getCompletedPurchases", js.Any.fromFunction1(value))
       
       inline def setGetCompletedPurchasesUndefined: Self = StObject.set(x, "getCompletedPurchases", js.undefined)
       
-      inline def setGetProducts(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getProducts", js.Any.fromFunction1(value))
+      inline def setGetProducts(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getProducts", js.Any.fromFunction1(value))
       
       inline def setGetProductsUndefined: Self = StObject.set(x, "getProducts", js.undefined)
       
-      inline def setGetPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getPurchases", js.Any.fromFunction1(value))
+      inline def setGetPurchases(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getPurchases", js.Any.fromFunction1(value))
       
       inline def setGetPurchasesUndefined: Self = StObject.set(x, "getPurchases", js.undefined)
     }

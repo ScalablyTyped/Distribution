@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The matrix of environments in which the test is to be executed.
-  */
 trait SchemaEnvironmentMatrix extends StObject {
   
   /**
-    * A list of Android devices; the test will be run only on the specified
-    * devices.
+    * A list of Android devices; the test will be run only on the specified devices.
     */
   var androidDeviceList: js.UndefOr[SchemaAndroidDeviceList] = js.undefined
   

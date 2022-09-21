@@ -18,12 +18,12 @@ object tabTitleMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", "TabTitle")
   @js.native
-  class TabTitle protected ()
-    extends AbstractPureComponent2[ITabTitleProps, js.Object, js.Object] {
-    def this(props: ITabTitleProps) = this()
-    def this(props: ITabTitleProps, context: js.Any) = this()
+  open class TabTitle protected ()
+    extends AbstractPureComponent2[TabTitleProps, js.Object, js.Object] {
+    def this(props: TabTitleProps) = this()
+    def this(props: TabTitleProps, context: Any) = this()
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
   }
   /* static members */
   object TabTitle {
@@ -76,4 +76,6 @@ object tabTitleMod {
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
+  
+  type TabTitleProps = ITabTitleProps
 }

@@ -10,10 +10,10 @@ A typescript compiler for gulp with incremental compilation support.
 | ------------------ | :-------------: |
 | Full name          | gulp-typescript |
 | Keywords           | typescript, gulpplugin, incremental compilation, ts, tsc, compile, compiler, transpile |
-| # releases         | 4 |
-| # dependents       | 564 |
-| # downloads        | 7498221 |
-| # stars            | 78 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 714481.6666666666 |
+| # stars            | 771.0 |
 
 ## Links
 - [Homepage](https://github.com/ivogabe/gulp-typescript)

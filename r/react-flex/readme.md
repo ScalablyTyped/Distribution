@@ -10,9 +10,9 @@ Typings are for version v2.2.7
 | Full name          | react-flex |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 143553 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11201.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-flex)

@@ -29,8 +29,6 @@ import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.UIEvent
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +37,7 @@ object pluggableMapMod {
   
   @JSImport("ol/PluggableMap", JSImport.Default)
   @js.native
-  class default protected () extends PluggableMap {
+  open class default protected () extends PluggableMap {
     def this(options: MapOptions) = this()
   }
   
@@ -79,38 +77,15 @@ object pluggableMapMod {
     }
   }
   
-  trait DeclutterItems extends StObject {
-    
-    var items: js.Array[js.Any]
-    
-    var opacity: Double
-  }
-  object DeclutterItems {
-    
-    inline def apply(items: js.Array[js.Any], opacity: Double): DeclutterItems = {
-      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DeclutterItems]
-    }
-    
-    extension [Self <: DeclutterItems](x: Self) {
-      
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-      
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
-      
-      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait FrameState extends StObject {
     
     var animate: Boolean
     
     var coordinateToPixelTransform: Transform
     
-    var declutterItems: js.Array[DeclutterItems]
+    var declutterTree: typings.rbush.mod.default[Any]
     
-    var extent: Extent
+    var extent: Null | Extent
     
     var index: Double
     
@@ -143,8 +118,7 @@ object pluggableMapMod {
     inline def apply(
       animate: Boolean,
       coordinateToPixelTransform: Transform,
-      declutterItems: js.Array[DeclutterItems],
-      extent: Extent,
+      declutterTree: typings.rbush.mod.default[Any],
       index: Double,
       layerIndex: Double,
       layerStatesArray: js.Array[State],
@@ -159,7 +133,7 @@ object pluggableMapMod {
       viewState: typings.ol.viewMod.State,
       wantedTiles: StringDictionary[StringDictionary[Boolean]]
     ): FrameState = {
-      val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], coordinateToPixelTransform = coordinateToPixelTransform.asInstanceOf[js.Any], declutterItems = declutterItems.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], layerIndex = layerIndex.asInstanceOf[js.Any], layerStatesArray = layerStatesArray.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], pixelToCoordinateTransform = pixelToCoordinateTransform.asInstanceOf[js.Any], postRenderFunctions = postRenderFunctions.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tileQueue = tileQueue.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], usedTiles = usedTiles.asInstanceOf[js.Any], viewHints = viewHints.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any], wantedTiles = wantedTiles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], coordinateToPixelTransform = coordinateToPixelTransform.asInstanceOf[js.Any], declutterTree = declutterTree.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], layerIndex = layerIndex.asInstanceOf[js.Any], layerStatesArray = layerStatesArray.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], pixelToCoordinateTransform = pixelToCoordinateTransform.asInstanceOf[js.Any], postRenderFunctions = postRenderFunctions.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tileQueue = tileQueue.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], usedTiles = usedTiles.asInstanceOf[js.Any], viewHints = viewHints.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any], wantedTiles = wantedTiles.asInstanceOf[js.Any], extent = null)
       __obj.asInstanceOf[FrameState]
     }
     
@@ -169,13 +143,13 @@ object pluggableMapMod {
       
       inline def setCoordinateToPixelTransform(value: Transform): Self = StObject.set(x, "coordinateToPixelTransform", value.asInstanceOf[js.Any])
       
-      inline def setCoordinateToPixelTransformVarargs(value: Double*): Self = StObject.set(x, "coordinateToPixelTransform", js.Array(value :_*))
+      inline def setCoordinateToPixelTransformVarargs(value: Double*): Self = StObject.set(x, "coordinateToPixelTransform", js.Array(value*))
       
-      inline def setDeclutterItems(value: js.Array[DeclutterItems]): Self = StObject.set(x, "declutterItems", value.asInstanceOf[js.Any])
-      
-      inline def setDeclutterItemsVarargs(value: DeclutterItems*): Self = StObject.set(x, "declutterItems", js.Array(value :_*))
+      inline def setDeclutterTree(value: typings.rbush.mod.default[Any]): Self = StObject.set(x, "declutterTree", value.asInstanceOf[js.Any])
       
       inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      
+      inline def setExtentNull: Self = StObject.set(x, "extent", null)
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -183,17 +157,17 @@ object pluggableMapMod {
       
       inline def setLayerStatesArray(value: js.Array[State]): Self = StObject.set(x, "layerStatesArray", value.asInstanceOf[js.Any])
       
-      inline def setLayerStatesArrayVarargs(value: State*): Self = StObject.set(x, "layerStatesArray", js.Array(value :_*))
+      inline def setLayerStatesArrayVarargs(value: State*): Self = StObject.set(x, "layerStatesArray", js.Array(value*))
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
       inline def setPixelToCoordinateTransform(value: Transform): Self = StObject.set(x, "pixelToCoordinateTransform", value.asInstanceOf[js.Any])
       
-      inline def setPixelToCoordinateTransformVarargs(value: Double*): Self = StObject.set(x, "pixelToCoordinateTransform", js.Array(value :_*))
+      inline def setPixelToCoordinateTransformVarargs(value: Double*): Self = StObject.set(x, "pixelToCoordinateTransform", js.Array(value*))
       
       inline def setPostRenderFunctions(value: js.Array[PostRenderFunction]): Self = StObject.set(x, "postRenderFunctions", value.asInstanceOf[js.Any])
       
-      inline def setPostRenderFunctionsVarargs(value: PostRenderFunction*): Self = StObject.set(x, "postRenderFunctions", js.Array(value :_*))
+      inline def setPostRenderFunctionsVarargs(value: PostRenderFunction*): Self = StObject.set(x, "postRenderFunctions", js.Array(value*))
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -205,7 +179,7 @@ object pluggableMapMod {
       
       inline def setViewHints(value: js.Array[Double]): Self = StObject.set(x, "viewHints", value.asInstanceOf[js.Any])
       
-      inline def setViewHintsVarargs(value: Double*): Self = StObject.set(x, "viewHints", js.Array(value :_*))
+      inline def setViewHintsVarargs(value: Double*): Self = StObject.set(x, "viewHints", js.Array(value*))
       
       inline def setViewState(value: typings.ol.viewMod.State): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
       
@@ -258,7 +232,7 @@ object pluggableMapMod {
       
       inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      inline def setControlsVarargs(value: typings.ol.controlControlMod.default*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: typings.ol.controlControlMod.default*): Self = StObject.set(x, "controls", js.Array(value*))
       
       inline def setInteractions(
         value: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default]
@@ -266,7 +240,7 @@ object pluggableMapMod {
       
       inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
       
-      inline def setInteractionsVarargs(value: typings.ol.interactionInteractionMod.default*): Self = StObject.set(x, "interactions", js.Array(value :_*))
+      inline def setInteractionsVarargs(value: typings.ol.interactionInteractionMod.default*): Self = StObject.set(x, "interactions", js.Array(value*))
       
       inline def setKeyboardEventTarget(value: HTMLElement | Document | String): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
       
@@ -278,7 +252,7 @@ object pluggableMapMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMaxTilesLoading(value: Double): Self = StObject.set(x, "maxTilesLoading", value.asInstanceOf[js.Any])
       
@@ -294,7 +268,7 @@ object pluggableMapMod {
       
       inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      inline def setOverlaysVarargs(value: typings.ol.overlayMod.default*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+      inline def setOverlaysVarargs(value: typings.ol.overlayMod.default*): Self = StObject.set(x, "overlays", js.Array(value*))
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
@@ -320,14 +294,14 @@ object pluggableMapMod {
     
     var overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default]
     
-    var values: StringDictionary[js.Any]
+    var values: StringDictionary[Any]
   }
   object MapOptionsInternal {
     
     inline def apply(
       keyboardEventTarget: HTMLElement | Document,
       overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default],
-      values: StringDictionary[js.Any]
+      values: StringDictionary[Any]
     ): MapOptionsInternal = {
       val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapOptionsInternal]
@@ -347,7 +321,7 @@ object pluggableMapMod {
       
       inline def setOverlays(value: typings.ol.collectionMod.default[typings.ol.overlayMod.default]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: StringDictionary[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -392,19 +366,19 @@ object pluggableMapMod {
       */
     def forEachFeatureAtPixel[S, T](
       pixel: Pixel,
-      callback: js.ThisFunction2[
-          /* this */ S, 
+      callback: js.Function3[
           /* p0 */ FeatureLike, 
           /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          /* p2 */ typings.ol.simpleGeometryMod.default, 
           T
         ]
     ): js.UndefOr[T] = js.native
     def forEachFeatureAtPixel[S, T](
       pixel: Pixel,
-      callback: js.ThisFunction2[
-          /* this */ S, 
+      callback: js.Function3[
           /* p0 */ FeatureLike, 
           /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          /* p2 */ typings.ol.simpleGeometryMod.default, 
           T
         ],
       opt_options: AtPixelOptions
@@ -422,7 +396,7 @@ object pluggableMapMod {
       callback: js.ThisFunction2[
           /* this */ S, 
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          /* p1 */ Uint8ClampedArray | Uint8Array, 
+          /* p1 */ js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array, 
           T
         ]
     ): js.UndefOr[T] = js.native
@@ -431,7 +405,7 @@ object pluggableMapMod {
       callback: js.ThisFunction2[
           /* this */ S, 
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          /* p1 */ Uint8ClampedArray | Uint8Array, 
+          /* p1 */ js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array, 
           T
         ],
       opt_options: AtPixelOptions
@@ -524,6 +498,8 @@ object pluggableMapMod {
       * associated with the map.
       */
     def getOverlays(): typings.ol.collectionMod.default[typings.ol.overlayMod.default] = js.native
+    
+    def getOwnerDocument(): Document = js.native
     
     /**
       * Get the pixel for a coordinate.  This takes a coordinate in the user
@@ -800,5 +776,5 @@ object pluggableMapMod {
     def updateSize(): Unit = js.native
   }
   
-  type PostRenderFunction = js.Function2[/* p0 */ PluggableMap, /* p1 */ FrameState, js.Any]
+  type PostRenderFunction = js.Function2[/* p0 */ PluggableMap, /* p1 */ FrameState, Any]
 }

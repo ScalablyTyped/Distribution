@@ -11,7 +11,6 @@ import typings.dialogflow.mod.google.longrunning.Operation
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an Intents */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents")
 @js.native
-class Intents protected () extends Service {
+open class Intents protected () extends Service {
   /**
     * Constructs a new Intents service.
     * @param rpcImpl RPC implementation
@@ -146,47 +145,47 @@ object Intents {
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchDeleteIntentsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchDeleteIntentsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#batchUpdateIntents}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchUpdateIntentsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchUpdateIntentsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#createIntent}.
     * @param error Error, if any
     * @param [response] Intent
     */
-  type CreateIntentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Intent], Unit]
+  type CreateIntentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Intent], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#deleteIntent}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteIntentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteIntentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#getIntent}.
     * @param error Error, if any
     * @param [response] Intent
     */
-  type GetIntentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Intent], Unit]
+  type GetIntentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Intent], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#listIntents}.
     * @param error Error, if any
     * @param [response] ListIntentsResponse
     */
-  type ListIntentsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListIntentsResponse], Unit]
+  type ListIntentsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListIntentsResponse], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#updateIntent}.
     * @param error Error, if any
     * @param [response] Intent
     */
-  type UpdateIntentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Intent], Unit]
+  type UpdateIntentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Intent], Unit]
 }

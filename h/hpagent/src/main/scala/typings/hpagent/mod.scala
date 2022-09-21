@@ -11,13 +11,13 @@ object mod {
   
   @JSImport("hpagent", "HttpProxyAgent")
   @js.native
-  class HttpProxyAgent protected () extends Agent {
+  open class HttpProxyAgent protected () extends Agent {
     def this(options: HttpProxyAgentOptions) = this()
   }
   
   @JSImport("hpagent", "HttpsProxyAgent")
   @js.native
-  class HttpsProxyAgent protected ()
+  open class HttpsProxyAgent protected ()
     extends typings.node.httpsMod.Agent {
     def this(options: HttpsProxyAgentOptions) = this()
   }

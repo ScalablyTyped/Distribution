@@ -10,10 +10,10 @@ Convert romaji into kana
 | ------------------ | :-------------: |
 | Full name          | @koozaki/romaji-conv |
 | Keywords           | romaji, kana, hiragana, katakana, nihongo, japanese, convert, ローマ字, かな, ひらがな, カタカナ |
-| # releases         | 17 |
-| # dependents       | 0 |
-| # downloads        | 1431 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 377.6666666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://romaji-conv.koozaki.com/)

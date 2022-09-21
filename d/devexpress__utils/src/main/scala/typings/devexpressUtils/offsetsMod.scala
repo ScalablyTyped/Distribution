@@ -13,7 +13,7 @@ object offsetsMod {
   
   @JSImport("@devexpress/utils/lib/geometry/offsets", "Offsets")
   @js.native
-  class Offsets protected ()
+  open class Offsets protected ()
     extends StObject
        with IEquatable[Offsets]
        with ISupportCopyFrom[Offsets]
@@ -33,7 +33,7 @@ object offsetsMod {
     
     def equals(obj: IOffsets): Boolean = js.native
     
-    val horizontal: Double = js.native
+    def horizontal: Double = js.native
     
     def isEmpty(): Boolean = js.native
     
@@ -54,7 +54,7 @@ object offsetsMod {
     /* CompleteClass */
     var top: Double = js.native
     
-    val vertical: Double = js.native
+    def vertical: Double = js.native
   }
   /* static members */
   object Offsets {

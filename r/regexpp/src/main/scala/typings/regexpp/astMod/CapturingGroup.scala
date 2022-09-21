@@ -41,7 +41,7 @@ object CapturingGroup {
     
     inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object CapturingGroup {
     
     inline def setReferences(value: js.Array[Backreference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    inline def setReferencesVarargs(value: Backreference*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: Backreference*): Self = StObject.set(x, "references", js.Array(value*))
     
     inline def setType(value: typings.regexpp.regexppStrings.CapturingGroup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

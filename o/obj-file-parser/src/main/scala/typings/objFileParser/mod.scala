@@ -9,11 +9,11 @@ object mod {
   /* Class module */
   @JSImport("obj-file-parser", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ObjFileParser {
-    def this(fileContents: js.Any) = this()
-    def this(fileContents: js.Any, defaultModelName: js.Any) = this()
+    def this(fileContents: Any) = this()
+    def this(fileContents: Any, defaultModelName: Any) = this()
     
     /* CompleteClass */
     override def parse(): ObjFile = js.native
@@ -23,7 +23,7 @@ object mod {
     
     var group: String
     
-    var material: js.Any
+    var material: Any
     
     var smoothingGroup: Double
     
@@ -31,7 +31,7 @@ object mod {
   }
   object Face {
     
-    inline def apply(group: String, material: js.Any, smoothingGroup: Double, vertices: js.Array[FaceVertex]): Face = {
+    inline def apply(group: String, material: Any, smoothingGroup: Double, vertices: js.Array[FaceVertex]): Face = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], material = material.asInstanceOf[js.Any], smoothingGroup = smoothingGroup.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Face]
     }
@@ -40,13 +40,13 @@ object mod {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      inline def setMaterial(value: js.Any): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+      inline def setMaterial(value: Any): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
       
       inline def setSmoothingGroup(value: Double): Self = StObject.set(x, "smoothingGroup", value.asInstanceOf[js.Any])
       
       inline def setVertices(value: js.Array[FaceVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: FaceVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: FaceVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   
@@ -77,26 +77,26 @@ object mod {
   
   trait ObjFile extends StObject {
     
-    var materialLibraries: js.Array[js.Any]
+    var materialLibraries: js.Array[Any]
     
     var models: js.Array[ObjModel]
   }
   object ObjFile {
     
-    inline def apply(materialLibraries: js.Array[js.Any], models: js.Array[ObjModel]): ObjFile = {
+    inline def apply(materialLibraries: js.Array[Any], models: js.Array[ObjModel]): ObjFile = {
       val __obj = js.Dynamic.literal(materialLibraries = materialLibraries.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjFile]
     }
     
     extension [Self <: ObjFile](x: Self) {
       
-      inline def setMaterialLibraries(value: js.Array[js.Any]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
+      inline def setMaterialLibraries(value: js.Array[Any]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
       
-      inline def setMaterialLibrariesVarargs(value: js.Any*): Self = StObject.set(x, "materialLibraries", js.Array(value :_*))
+      inline def setMaterialLibrariesVarargs(value: Any*): Self = StObject.set(x, "materialLibraries", js.Array(value*))
       
       inline def setModels(value: js.Array[ObjModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
-      inline def setModelsVarargs(value: ObjModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+      inline def setModelsVarargs(value: ObjModel*): Self = StObject.set(x, "models", js.Array(value*))
     }
   }
   
@@ -147,21 +147,21 @@ object mod {
       
       inline def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setTextureCoords(value: js.Array[VertexTexture]): Self = StObject.set(x, "textureCoords", value.asInstanceOf[js.Any])
       
-      inline def setTextureCoordsVarargs(value: VertexTexture*): Self = StObject.set(x, "textureCoords", js.Array(value :_*))
+      inline def setTextureCoordsVarargs(value: VertexTexture*): Self = StObject.set(x, "textureCoords", js.Array(value*))
       
       inline def setVertexNormals(value: js.Array[Vertex]): Self = StObject.set(x, "vertexNormals", value.asInstanceOf[js.Any])
       
-      inline def setVertexNormalsVarargs(value: Vertex*): Self = StObject.set(x, "vertexNormals", js.Array(value :_*))
+      inline def setVertexNormalsVarargs(value: Vertex*): Self = StObject.set(x, "vertexNormals", js.Array(value*))
       
       inline def setVertices(value: js.Array[Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Vertex*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   

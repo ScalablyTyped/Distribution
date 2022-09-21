@@ -18,7 +18,7 @@ trait IModalScope
   @JSName("$close")
   def $close(): Boolean = js.native
   @JSName("$close")
-  def $close(result: js.Any): Boolean = js.native
+  def $close(result: Any): Boolean = js.native
   
   /**
     * Dismiss the dialog without assigning a value to the promise output. If `preventDefault` is called on the `modal.closing` event then the modal will remain open.
@@ -28,5 +28,5 @@ trait IModalScope
   @JSName("$dismiss")
   def $dismiss(): Boolean = js.native
   @JSName("$dismiss")
-  def $dismiss(reason: js.Any): Boolean = js.native
+  def $dismiss(reason: Any): Boolean = js.native
 }

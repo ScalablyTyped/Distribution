@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Carousel")
 @js.native
-class Carousel protected () extends default {
+open class Carousel protected () extends default {
   def this(props: CarouselProps) = this()
 }
 object Carousel {

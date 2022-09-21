@@ -2,10 +2,17 @@ package typings.popperjsCore
 
 import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialOptions
-import typings.popperjsCore.arrowMod.Options
+import typings.popperjsCore.applyStylesMod.ApplyStylesModifier
+import typings.popperjsCore.arrowMod.ArrowModifier
+import typings.popperjsCore.computeStylesMod.ComputeStylesModifier
 import typings.popperjsCore.createPopperMod.PopperGeneratorArgs
+import typings.popperjsCore.eventListenersMod.EventListenersModifier
+import typings.popperjsCore.flipMod.FlipModifier
+import typings.popperjsCore.hideMod.HideModifier
+import typings.popperjsCore.offsetMod.OffsetModifier
+import typings.popperjsCore.popperOffsetsMod.PopperOffsetsModifier
+import typings.popperjsCore.preventOverflowMod.PreventOverflowModifier
 import typings.popperjsCore.typesMod.Instance
-import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.OptionsGeneric
 import typings.popperjsCore.typesMod.SideObject
 import typings.popperjsCore.typesMod.State
@@ -25,18 +32,15 @@ object popperMod {
   
   @JSImport("@popperjs/core/lib/popper", "applyStyles")
   @js.native
-  val applyStyles: Modifier[typings.popperjsCore.popperjsCoreStrings.applyStyles, js.Object] = js.native
+  val applyStyles: ApplyStylesModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "arrow")
   @js.native
-  val arrow: Modifier[typings.popperjsCore.popperjsCoreStrings.arrow, Options] = js.native
+  val arrow: ArrowModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "computeStyles")
   @js.native
-  val computeStyles: Modifier[
-    typings.popperjsCore.popperjsCoreStrings.computeStyles, 
-    typings.popperjsCore.computeStylesMod.Options
-  ] = js.native
+  val computeStyles: ComputeStylesModifier = js.native
   
   inline def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any])).asInstanceOf[Instance]
   inline def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopper")(reference.asInstanceOf[js.Any], popper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
@@ -51,10 +55,7 @@ object popperMod {
   @JSImport("@popperjs/core/lib/popper", "defaultModifiers")
   @js.native
   val defaultModifiers: js.Array[
-    Modifier[
-      typings.popperjsCore.popperjsCoreStrings.popperOffsets | typings.popperjsCore.popperjsCoreStrings.flip | typings.popperjsCore.popperjsCoreStrings.hide | typings.popperjsCore.popperjsCoreStrings.offset | typings.popperjsCore.popperjsCoreStrings.eventListeners | typings.popperjsCore.popperjsCoreStrings.computeStyles | typings.popperjsCore.popperjsCoreStrings.arrow | typings.popperjsCore.popperjsCoreStrings.preventOverflow | typings.popperjsCore.popperjsCoreStrings.applyStyles, 
-      js.Object | typings.popperjsCore.flipMod.Options | typings.popperjsCore.offsetMod.Options | typings.popperjsCore.eventListenersMod.Options | typings.popperjsCore.computeStylesMod.Options | Options | typings.popperjsCore.preventOverflowMod.Options
-    ]
+    PopperOffsetsModifier | FlipModifier | HideModifier | OffsetModifier | EventListenersModifier | ComputeStylesModifier | ArrowModifier | PreventOverflowModifier | ApplyStylesModifier
   ] = js.native
   
   inline def detectOverflow(state: State): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[SideObject]
@@ -62,28 +63,19 @@ object popperMod {
   
   @JSImport("@popperjs/core/lib/popper", "eventListeners")
   @js.native
-  val eventListeners: Modifier[
-    typings.popperjsCore.popperjsCoreStrings.eventListeners, 
-    typings.popperjsCore.eventListenersMod.Options
-  ] = js.native
+  val eventListeners: EventListenersModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "flip")
   @js.native
-  val flip: Modifier[
-    typings.popperjsCore.popperjsCoreStrings.flip, 
-    typings.popperjsCore.flipMod.Options
-  ] = js.native
+  val flip: FlipModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "hide")
   @js.native
-  val hide: Modifier[typings.popperjsCore.popperjsCoreStrings.hide, js.Object] = js.native
+  val hide: HideModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "offset")
   @js.native
-  val offset: Modifier[
-    typings.popperjsCore.popperjsCoreStrings.offset, 
-    typings.popperjsCore.offsetMod.Options
-  ] = js.native
+  val offset: OffsetModifier = js.native
   
   inline def popperGenerator(): js.Function3[
     /* reference */ Element | VirtualElement, 
@@ -110,12 +102,9 @@ object popperMod {
   
   @JSImport("@popperjs/core/lib/popper", "popperOffsets")
   @js.native
-  val popperOffsets: Modifier[typings.popperjsCore.popperjsCoreStrings.popperOffsets, js.Object] = js.native
+  val popperOffsets: PopperOffsetsModifier = js.native
   
   @JSImport("@popperjs/core/lib/popper", "preventOverflow")
   @js.native
-  val preventOverflow: Modifier[
-    typings.popperjsCore.popperjsCoreStrings.preventOverflow, 
-    typings.popperjsCore.preventOverflowMod.Options
-  ] = js.native
+  val preventOverflow: PreventOverflowModifier = js.native
 }

@@ -46,7 +46,7 @@ object XUserInputInterception {
     acquire: () => Unit,
     addKeyHandler: XKeyHandler => Unit,
     addMouseClickHandler: XMouseClickHandler => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeKeyHandler: XKeyHandler => Unit,
     removeMouseClickHandler: XMouseClickHandler => Unit

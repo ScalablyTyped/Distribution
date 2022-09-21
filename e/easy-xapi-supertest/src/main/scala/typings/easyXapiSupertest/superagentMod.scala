@@ -6,8 +6,7 @@ import typings.easyXapiSupertest.NodeJS.WritableStream
 import typings.easyXapiSupertest.easyXapiSupertestStrings.error
 import typings.easyXapiSupertest.streamMod.Stream
 import typings.easyXapiSupertest.streamMod.Writable
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +17,10 @@ object superagentMod extends Shortcut {
   @js.native
   val ^ : SuperAgentStatic = js.native
   
-  type CallbackHandler = (js.Function2[/* err */ js.Any, /* res */ Response, Unit]) | (js.Function1[/* res */ Response, Unit])
+  type CallbackHandler = (js.Function2[/* err */ Any, /* res */ Response, Unit]) | (js.Function1[/* res */ Response, Unit])
   
   @js.native
-  trait Request[Req /* <: Request[js.Any] */] extends StObject {
+  trait Request[Req /* <: Request[Any] */] extends StObject {
     
     def abort(): Unit = js.native
     
@@ -45,7 +44,7 @@ object superagentMod extends Shortcut {
     
     def on(name: String, handler: js.Function): Req = js.native
     @JSName("on")
-    def on_error(name: error, handler: js.Function1[/* err */ js.Any, Unit]): Req = js.native
+    def on_error(name: error, handler: js.Function1[/* err */ Any, Unit]): Req = js.native
     
     def part(): Req = js.native
     
@@ -83,21 +82,21 @@ object superagentMod extends Shortcut {
     
     var badRequest: Boolean = js.native
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var charset: String = js.native
     
     var clientError: Boolean = js.native
     
-    var error: Error = js.native
+    var error: js.Error = js.native
     
-    var files: js.Any = js.native
+    var files: Any = js.native
     
     var forbidden: Boolean = js.native
     
     def get(header: String): String = js.native
     
-    var header: js.Any = js.native
+    var header: Any = js.native
     
     var info: Boolean = js.native
     
@@ -125,7 +124,7 @@ object superagentMod extends Shortcut {
   }
   
   @js.native
-  trait SuperAgent[Req /* <: Request[js.Any] */] extends Stream {
+  trait SuperAgent[Req /* <: Request[Any] */] extends Stream {
     
     def attachCookies(req: Req): Unit = js.native
     
@@ -213,7 +212,7 @@ object superagentMod extends Shortcut {
     def unsubscribe(url: String, callback: CallbackHandler): Req = js.native
   }
   
-  type SuperAgentRequest = Request[Request[Request[Request[js.Any]]]]
+  type SuperAgentRequest = Request[Request[Request[Request[Any]]]]
   
   @js.native
   trait SuperAgentStatic extends SuperAgent[SuperAgentRequest] {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelImageCreationResponse extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent.
+    * The idempotency token that was used for this request.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   

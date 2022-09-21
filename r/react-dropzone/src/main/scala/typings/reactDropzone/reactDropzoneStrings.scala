@@ -8,18 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactDropzoneStrings {
   
   @js.native
-  sealed trait `file-invalid-type` extends StObject
-  inline def `file-invalid-type`: `file-invalid-type` = "file-invalid-type".asInstanceOf[`file-invalid-type`]
-  
-  @js.native
-  sealed trait `file-too-large` extends StObject
-  inline def `file-too-large`: `file-too-large` = "file-too-large".asInstanceOf[`file-too-large`]
-  
-  @js.native
-  sealed trait `file-too-small` extends StObject
-  inline def `file-too-small`: `file-too-small` = "file-too-small".asInstanceOf[`file-too-small`]
-  
-  @js.native
   sealed trait multiple
     extends StObject
        with PropTypes
@@ -42,8 +30,4 @@ object reactDropzoneStrings {
     extends StObject
        with PropTypes
   inline def onDragOver: onDragOver = "onDragOver".asInstanceOf[onDragOver]
-  
-  @js.native
-  sealed trait `too-many-files` extends StObject
-  inline def `too-many-files`: `too-many-files` = "too-many-files".asInstanceOf[`too-many-files`]
 }

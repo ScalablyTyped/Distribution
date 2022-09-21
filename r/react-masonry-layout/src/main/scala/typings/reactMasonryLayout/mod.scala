@@ -3,6 +3,7 @@ package typings.reactMasonryLayout
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactMasonryLayout.mod.ReactMasonryLayoutExport.MasonryLayoutProps
 import org.scalablytyped.runtime.StObject
@@ -26,6 +27,8 @@ object mod {
   object ReactMasonryLayoutExport {
     
     trait MasonryLayoutProps extends StObject {
+      
+      var children: js.Array[ReactElement]
       
       /**
         * The css classname you want to use
@@ -129,12 +132,16 @@ object mod {
     }
     object MasonryLayoutProps {
       
-      inline def apply(id: String): MasonryLayoutProps = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      inline def apply(children: js.Array[ReactElement], id: String): MasonryLayoutProps = {
+        val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[MasonryLayoutProps]
       }
       
       extension [Self <: MasonryLayoutProps](x: Self) {
+        
+        inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -186,7 +193,7 @@ object mod {
         
         inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
         
-        inline def setSizesVarargs(value: MasonryLayoutSizes*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+        inline def setSizesVarargs(value: MasonryLayoutSizes*): Self = StObject.set(x, "sizes", js.Array(value*))
         
         inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         

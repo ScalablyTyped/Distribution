@@ -12,27 +12,17 @@ object global {
     
     @JSGlobal("Expectations.Expect")
     @js.native
-    class Expect protected ()
+    open class Expect protected ()
       extends StObject
          with typings.expectations.Expectations.Expect {
-      def this(value: js.Any) = this()
-      def this(value: js.Any, assertions: IAssertions) = this()
-      def this(value: js.Any, assertions: Unit, expr: js.Any) = this()
-      def this(value: js.Any, assertions: IAssertions, expr: js.Any) = this()
-      def this(value: js.Any, assertions: Unit, expr: js.Any, parent: typings.expectations.Expectations.Expect) = this()
-      def this(value: js.Any, assertions: Unit, expr: Unit, parent: typings.expectations.Expectations.Expect) = this()
-      def this(
-        value: js.Any,
-        assertions: IAssertions,
-        expr: js.Any,
-        parent: typings.expectations.Expectations.Expect
-      ) = this()
-      def this(
-        value: js.Any,
-        assertions: IAssertions,
-        expr: Unit,
-        parent: typings.expectations.Expectations.Expect
-      ) = this()
+      def this(value: Any) = this()
+      def this(value: Any, assertions: IAssertions) = this()
+      def this(value: Any, assertions: Unit, expr: Any) = this()
+      def this(value: Any, assertions: IAssertions, expr: Any) = this()
+      def this(value: Any, assertions: Unit, expr: Any, parent: typings.expectations.Expectations.Expect) = this()
+      def this(value: Any, assertions: Unit, expr: Unit, parent: typings.expectations.Expectations.Expect) = this()
+      def this(value: Any, assertions: IAssertions, expr: Any, parent: typings.expectations.Expectations.Expect) = this()
+      def this(value: Any, assertions: IAssertions, expr: Unit, parent: typings.expectations.Expectations.Expect) = this()
     }
   }
   

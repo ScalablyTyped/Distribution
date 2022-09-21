@@ -8,5 +8,5 @@ object writeCampaignRequestMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_WriteCampaignRequest", "_WriteCampaignRequest")
   @js.native
-  val WriteCampaignRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val WriteCampaignRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

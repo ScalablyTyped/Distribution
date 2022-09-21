@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mapiErrorMod {
   
-  trait MapiError extends StObject {
+  trait MapiError[T] extends StObject {
     
     /**
       * If the server sent a response body, this property exposes that response, parsed as JSON if possible.
       */
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[T] = js.undefined
     
     /**
       * Whatever message could be derived from the call site and HTTP response.
@@ -22,7 +22,7 @@ object mapiErrorMod {
     /**
       * The errored request.
       */
-    var request: MapiRequest
+    var request: MapiRequest[T]
     
     /**
       * The numeric status code of the HTTP response
@@ -37,15 +37,15 @@ object mapiErrorMod {
   }
   object MapiError {
     
-    inline def apply(request: MapiRequest, `type`: String): MapiError = {
+    inline def apply[T](request: MapiRequest[T], `type`: String): MapiError[T] = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MapiError]
+      __obj.asInstanceOf[MapiError[T]]
     }
     
-    extension [Self <: MapiError](x: Self) {
+    extension [Self <: MapiError[?], T](x: Self & MapiError[T]) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -53,7 +53,7 @@ object mapiErrorMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setRequest(value: MapiRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: MapiRequest[T]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       

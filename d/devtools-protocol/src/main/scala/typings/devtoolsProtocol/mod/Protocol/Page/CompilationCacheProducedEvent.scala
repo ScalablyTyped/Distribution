@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompilationCacheProducedEvent extends StObject {
   
   /**
-    * Base64-encoded data
+    * Base64-encoded data (Encoded as a base64 string when passed over JSON)
     */
   var data: String
   

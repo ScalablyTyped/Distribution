@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object debounceMod {
   
-  @JSImport("@antv/util/lib/debounce", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/debounce", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

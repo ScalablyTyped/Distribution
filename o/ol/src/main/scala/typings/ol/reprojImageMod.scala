@@ -9,7 +9,7 @@ object reprojImageMod {
   
   @JSImport("ol/reproj/Image", JSImport.Default)
   @js.native
-  class default protected () extends ReprojImage {
+  open class default protected () extends ReprojImage {
     def this(
       sourceProj: typings.ol.projectionMod.default,
       targetProj: typings.ol.projectionMod.default,
@@ -25,7 +25,7 @@ object reprojImageMod {
       targetResolution: Double,
       pixelRatio: Double,
       getImageFunction: FunctionType,
-      opt_contextOptions: js.Any
+      opt_contextOptions: Any
     ) = this()
   }
   

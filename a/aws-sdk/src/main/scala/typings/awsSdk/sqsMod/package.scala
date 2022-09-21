@@ -1,47 +1,50 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.AWSTraceHeader
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSAccountIdList = js.Array[typings.awsSdk.sqsMod.String]
+type AWSAccountIdList = js.Array[String]
 
-type ActionNameList = js.Array[typings.awsSdk.sqsMod.String]
+type ActionNameList = js.Array[String]
 
-type AttributeNameList = js.Array[typings.awsSdk.sqsMod.QueueAttributeName]
+type AttributeNameList = js.Array[QueueAttributeName]
 
-type BatchResultErrorEntryList = js.Array[typings.awsSdk.sqsMod.BatchResultErrorEntry]
+type BatchResultErrorEntryList = js.Array[BatchResultErrorEntry]
 
-type Binary = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.sqsMod.Blob | java.lang.String
+type Binary = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
-type BinaryList = js.Array[typings.awsSdk.sqsMod.Binary]
+type BinaryList = js.Array[Binary]
 
 type Boolean = scala.Boolean
 
-type BoxedInteger = scala.Double
+type BoxedInteger = Double
 
-type ChangeMessageVisibilityBatchRequestEntryList = js.Array[typings.awsSdk.sqsMod.ChangeMessageVisibilityBatchRequestEntry]
+type ChangeMessageVisibilityBatchRequestEntryList = js.Array[ChangeMessageVisibilityBatchRequestEntry]
 
-type ChangeMessageVisibilityBatchResultEntryList = js.Array[typings.awsSdk.sqsMod.ChangeMessageVisibilityBatchResultEntry]
+type ChangeMessageVisibilityBatchResultEntryList = js.Array[ChangeMessageVisibilityBatchResultEntry]
 
-type DeleteMessageBatchRequestEntryList = js.Array[typings.awsSdk.sqsMod.DeleteMessageBatchRequestEntry]
+type DeleteMessageBatchRequestEntryList = js.Array[DeleteMessageBatchRequestEntry]
 
-type DeleteMessageBatchResultEntryList = js.Array[typings.awsSdk.sqsMod.DeleteMessageBatchResultEntry]
+type DeleteMessageBatchResultEntryList = js.Array[DeleteMessageBatchResultEntry]
 
-type Integer = scala.Double
+type Integer = Double
 
 type MessageAttributeName = java.lang.String
 
-type MessageAttributeNameList = js.Array[typings.awsSdk.sqsMod.MessageAttributeName]
+type MessageAttributeNameList = js.Array[MessageAttributeName]
 
-type MessageBodyAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.MessageAttributeValue]
+type MessageBodyAttributeMap = StringDictionary[MessageAttributeValue]
 
-type MessageBodySystemAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.MessageSystemAttributeValue]
+type MessageBodySystemAttributeMap = StringDictionary[MessageSystemAttributeValue]
 
-type MessageList = js.Array[typings.awsSdk.sqsMod.Message]
+type MessageList = js.Array[Message]
 
-type MessageSystemAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.String]
+type MessageSystemAttributeMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SenderId
@@ -54,11 +57,11 @@ type MessageSystemAttributeMap = org.scalablytyped.runtime.StringDictionary[typi
   - typings.awsSdk.awsSdkStrings.AWSTraceHeader
   - java.lang.String
 */
-type MessageSystemAttributeName = typings.awsSdk.sqsMod._MessageSystemAttributeName | java.lang.String
+type MessageSystemAttributeName = _MessageSystemAttributeName | java.lang.String
 
-type MessageSystemAttributeNameForSends = typings.awsSdk.awsSdkStrings.AWSTraceHeader | java.lang.String
+type MessageSystemAttributeNameForSends = AWSTraceHeader | java.lang.String
 
-type QueueAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.String]
+type QueueAttributeMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.All_
@@ -79,25 +82,29 @@ type QueueAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsS
   - typings.awsSdk.awsSdkStrings.ContentBasedDeduplication
   - typings.awsSdk.awsSdkStrings.KmsMasterKeyId
   - typings.awsSdk.awsSdkStrings.KmsDataKeyReusePeriodSeconds
+  - typings.awsSdk.awsSdkStrings.DeduplicationScope
+  - typings.awsSdk.awsSdkStrings.FifoThroughputLimit
+  - typings.awsSdk.awsSdkStrings.RedriveAllowPolicy
+  - typings.awsSdk.awsSdkStrings.SqsManagedSseEnabled
   - java.lang.String
 */
-type QueueAttributeName = typings.awsSdk.sqsMod._QueueAttributeName | java.lang.String
+type QueueAttributeName = _QueueAttributeName | java.lang.String
 
-type QueueUrlList = js.Array[typings.awsSdk.sqsMod.String]
+type QueueUrlList = js.Array[String]
 
-type SendMessageBatchRequestEntryList = js.Array[typings.awsSdk.sqsMod.SendMessageBatchRequestEntry]
+type SendMessageBatchRequestEntryList = js.Array[SendMessageBatchRequestEntry]
 
-type SendMessageBatchResultEntryList = js.Array[typings.awsSdk.sqsMod.SendMessageBatchResultEntry]
+type SendMessageBatchResultEntryList = js.Array[SendMessageBatchResultEntry]
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.sqsMod.String]
+type StringList = js.Array[String]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.sqsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
 type TagValue = java.lang.String
 
@@ -108,4 +115,4 @@ type Token = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.sqsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

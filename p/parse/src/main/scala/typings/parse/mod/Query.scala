@@ -1,5 +1,6 @@
 package typings.parse.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.parse.mod.global.Parse.Attributes
 import org.scalablytyped.runtime.StObject
@@ -63,13 +64,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("parse", "Query")
 @js.native
-class Query[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protected ()
+open class Query[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protected ()
   extends typings.parse.mod.global.Parse.Query[T] {
   def this(objectClass: String) = this()
-  def this(objectClass: Instantiable1[
-        /* args (repeated) */ js.Any, 
-        T | typings.parse.mod.global.Parse.Object[Attributes]
-      ]) = this()
+  def this(objectClass: Instantiable1[/* args (repeated) */ Any, T | typings.parse.mod.global.Parse.Object[Attributes]]) = this()
 }
 object Query {
   
@@ -78,14 +76,15 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def and[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  inline def and[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   
   /* static member */
-  inline def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  inline def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: String, json: Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  inline def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: Instantiable0[U], json: Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   
   /* static member */
-  inline def nor[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  inline def nor[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   
   /* static member */
-  inline def or[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  inline def or[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
 }

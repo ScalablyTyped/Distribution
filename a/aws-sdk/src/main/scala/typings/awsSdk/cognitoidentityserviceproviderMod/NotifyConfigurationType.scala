@@ -12,12 +12,12 @@ trait NotifyConfigurationType extends StObject {
   var BlockEmail: js.UndefOr[NotifyEmailType] = js.undefined
   
   /**
-    * The email address that is sending the email. It must be either individually verified with Amazon SES, or from a domain that has been verified with Amazon SES.
+    * The email address that is sending the email. The address must be either individually verified with Amazon Simple Email Service, or from a domain that has been verified with Amazon SES.
     */
   var From: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The MFA email template used when MFA is challenged as part of a detected risk.
+    * The multi-factor authentication (MFA) email template used when MFA is challenged as part of a detected risk.
     */
   var MfaEmail: js.UndefOr[NotifyEmailType] = js.undefined
   
@@ -32,7 +32,7 @@ trait NotifyConfigurationType extends StObject {
   var ReplyTo: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. It permits Amazon Cognito to send for the email address specified in the From parameter.
+    * The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.
     */
   var SourceArn: ArnType
 }

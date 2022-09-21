@@ -14,7 +14,7 @@ object legendMod {
   
   @JSImport("plottable/build/src/components/legend", "Legend")
   @js.native
-  class Legend protected () extends Component {
+  open class Legend protected () extends Component {
     /**
       * The Legend consists of a series of entries, each with a color and label taken from the Color Scale.
       *
@@ -23,35 +23,35 @@ object legendMod {
       */
     def this(colorScale: Color) = this()
     
-    /* private */ def _buildLegendTable(width: js.Any, height: js.Any): js.Any = js.native
+    /* private */ var _buildLegendTable: Any = js.native
     
-    /* private */ var _colorScale: js.Any = js.native
+    /* private */ var _colorScale: Any = js.native
     
-    /* private */ var _comparator: js.Any = js.native
+    /* private */ var _comparator: Any = js.native
     
-    /* private */ var _formatter: js.Any = js.native
+    /* private */ var _formatter: Any = js.native
     
-    /* private */ var _maxEntriesPerRow: js.Any = js.native
+    /* private */ var _maxEntriesPerRow: Any = js.native
     
-    /* private */ var _maxLinesPerEntry: js.Any = js.native
+    /* private */ var _maxLinesPerEntry: Any = js.native
     
-    /* private */ var _maxWidth: js.Any = js.native
+    /* private */ var _maxWidth: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _padding: js.Any = js.native
+    /* private */ var _padding: Any = js.native
     
-    /* private */ var _redrawCallback: js.Any = js.native
+    /* private */ var _redrawCallback: Any = js.native
     
-    /* private */ var _rowBottomPadding: js.Any = js.native
+    /* private */ var _rowBottomPadding: Any = js.native
     
-    /* private */ var _symbolFactoryAccessor: js.Any = js.native
+    /* private */ var _symbolFactoryAccessor: Any = js.native
     
-    /* private */ var _symbolOpacityAccessor: js.Any = js.native
+    /* private */ var _symbolOpacityAccessor: Any = js.native
     
-    /* private */ var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: Any = js.native
     
-    /* private */ var _writer: js.Any = js.native
+    /* private */ var _writer: Any = js.native
     
     /**
       * Gets the Color Scale.
@@ -153,22 +153,22 @@ object legendMod {
       *
       * @returns {(datum: any, index: number) => symbolFactory}
       */
-    def symbol(): js.Function2[/* datum */ js.Any, /* index */ Double, SymbolFactory] = js.native
+    def symbol(): js.Function2[/* datum */ Any, /* index */ Double, SymbolFactory] = js.native
     /**
       * Sets the function determining the symbols of the Legend.
       *
       * @param {(datum: any, index: number) => SymbolFactory} symbol
       * @returns {Legend} The calling Legend
       */
-    def symbol(symbol: js.Function2[/* datum */ js.Any, /* index */ Double, SymbolFactory]): this.type = js.native
+    def symbol(symbol: js.Function2[/* datum */ Any, /* index */ Double, SymbolFactory]): this.type = js.native
     
     /**
       * Gets the opacity of the symbols of the Legend.
       *
       * @returns {(datum: any, index: number) => number}
       */
-    def symbolOpacity(): js.Function2[/* datum */ js.Any, /* index */ Double, Double] = js.native
-    def symbolOpacity(symbolOpacity: js.Function2[/* datum */ js.Any, /* index */ Double, Double]): this.type = js.native
+    def symbolOpacity(): js.Function2[/* datum */ Any, /* index */ Double, Double] = js.native
+    def symbolOpacity(symbolOpacity: js.Function2[/* datum */ Any, /* index */ Double, Double]): this.type = js.native
     /**
       * Sets the opacity of the symbols of the Legend.
       *

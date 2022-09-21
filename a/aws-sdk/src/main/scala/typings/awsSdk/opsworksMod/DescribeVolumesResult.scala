@@ -24,6 +24,6 @@ object DescribeVolumesResult {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "Volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "Volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "Volumes", js.Array(value*))
   }
 }

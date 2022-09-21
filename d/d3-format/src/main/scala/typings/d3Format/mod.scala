@@ -37,7 +37,7 @@ object mod {
   
   @JSImport("d3-format", "FormatSpecifier")
   @js.native
-  class FormatSpecifier_ protected () extends StObject {
+  open class FormatSpecifier_ protected () extends StObject {
     /**
       * Given the specified specifier object, returning an object with exposed fields that correspond to the format specification mini-language and a toString method that reconstructs the specifier.
       * @param specifier A specifier object.
@@ -214,7 +214,7 @@ object mod {
       
       inline def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value*))
       
       inline def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       
@@ -228,7 +228,7 @@ object mod {
       
       inline def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
       
-      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
+      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value*))
       
       inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       

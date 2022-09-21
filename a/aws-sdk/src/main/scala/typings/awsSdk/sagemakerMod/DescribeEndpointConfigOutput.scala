@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEndpointConfigOutput extends StObject {
   
   /**
+    * Returns the description of an endpoint configuration created using the  CreateEndpointConfig  API.
+    */
+  var AsyncInferenceConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AsyncInferenceConfig] = js.undefined
+  
+  /**
     * A timestamp that shows when the endpoint configuration was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   var DataCaptureConfig: js.UndefOr[typings.awsSdk.sagemakerMod.DataCaptureConfig] = js.undefined
   
@@ -19,12 +24,12 @@ trait DescribeEndpointConfigOutput extends StObject {
   var EndpointConfigArn: typings.awsSdk.sagemakerMod.EndpointConfigArn
   
   /**
-    * Name of the Amazon SageMaker endpoint configuration.
+    * Name of the SageMaker endpoint configuration.
     */
   var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName
   
   /**
-    * AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance.
+    * Amazon Web Services KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
@@ -36,7 +41,7 @@ trait DescribeEndpointConfigOutput extends StObject {
 object DescribeEndpointConfigOutput {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     EndpointConfigArn: EndpointConfigArn,
     EndpointConfigName: EndpointConfigName,
     ProductionVariants: ProductionVariantList
@@ -47,7 +52,11 @@ object DescribeEndpointConfigOutput {
   
   extension [Self <: DescribeEndpointConfigOutput](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setAsyncInferenceConfig(value: AsyncInferenceConfig): Self = StObject.set(x, "AsyncInferenceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncInferenceConfigUndefined: Self = StObject.set(x, "AsyncInferenceConfig", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setDataCaptureConfig(value: DataCaptureConfig): Self = StObject.set(x, "DataCaptureConfig", value.asInstanceOf[js.Any])
     
@@ -63,6 +72,6 @@ object DescribeEndpointConfigOutput {
     
     inline def setProductionVariants(value: ProductionVariantList): Self = StObject.set(x, "ProductionVariants", value.asInstanceOf[js.Any])
     
-    inline def setProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ProductionVariants", js.Array(value :_*))
+    inline def setProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
   }
 }

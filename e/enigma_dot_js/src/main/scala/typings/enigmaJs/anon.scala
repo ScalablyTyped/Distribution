@@ -11,11 +11,11 @@ object anon {
     
     var api: IGeneratedAPI
     
-    var config: js.Any
+    var config: Any
   }
   object Api {
     
-    inline def apply(api: IGeneratedAPI, config: js.Any): Api = {
+    inline def apply(api: IGeneratedAPI, config: Any): Api = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[Api]
     }
@@ -24,7 +24,7 @@ object anon {
       
       inline def setApi(value: IGeneratedAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
 }

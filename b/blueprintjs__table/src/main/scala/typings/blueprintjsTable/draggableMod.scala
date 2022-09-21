@@ -4,6 +4,7 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.anon.PreventDefault
 import typings.blueprintjsTable.dragTypesMod.IDragHandler
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +13,14 @@ object draggableMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/draggable", "Draggable")
   @js.native
-  class Draggable protected ()
-    extends PureComponent[IDraggableProps, js.Object, js.Any] {
+  open class Draggable protected ()
+    extends PureComponent[IDraggableProps, js.Object, Any] {
     def this(props: IDraggableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IDraggableProps, context: js.Any) = this()
+    def this(props: IDraggableProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MDraggable(): Unit = js.native
@@ -30,7 +31,7 @@ object draggableMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDraggable(): Unit = js.native
     
-    /* private */ var events: js.Any = js.native
+    /* private */ var events: Any = js.native
   }
   /* static members */
   object Draggable {
@@ -48,12 +49,22 @@ object draggableMod {
   trait IDraggableProps
     extends StObject
        with IProps
-       with IDragHandler
+       with IDragHandler {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+  }
   object IDraggableProps {
     
     inline def apply(): IDraggableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDraggableProps]
+    }
+    
+    extension [Self <: IDraggableProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

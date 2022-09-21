@@ -18,6 +18,14 @@ object shaderCompilerUtilMod {
   
   inline def getFlatIndexFrom3D(shape: js.Tuple3[Double, Double, Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatIndexFrom3D")(shape.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getFlatIndexFrom3DOutput(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatIndexFrom3DOutput")().asInstanceOf[String]
+  
   inline def getLogicalCoordinatesFromFlatIndex(coords: js.Array[String], shape: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogicalCoordinatesFromFlatIndex")(coords.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getLogicalCoordinatesFromFlatIndex(coords: js.Array[String], shape: js.Array[Double], index: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogicalCoordinatesFromFlatIndex")(coords.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getLogicalCoordinatesFromFlatIndexByUniform(coords: js.Array[String], variableName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogicalCoordinatesFromFlatIndexByUniform")(coords.asInstanceOf[js.Any], variableName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getLogicalCoordinatesFromFlatIndexByUniform(coords: js.Array[String], variableName: String, index: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogicalCoordinatesFromFlatIndexByUniform")(coords.asInstanceOf[js.Any], variableName.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getOutputLogicalCoordinatesFromFlatIndexByUniform(coords: js.Array[String], shape: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutputLogicalCoordinatesFromFlatIndexByUniform")(coords.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getOutputLogicalCoordinatesFromFlatIndexByUniform(coords: js.Array[String], shape: js.Array[Double], index: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutputLogicalCoordinatesFromFlatIndexByUniform")(coords.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 }

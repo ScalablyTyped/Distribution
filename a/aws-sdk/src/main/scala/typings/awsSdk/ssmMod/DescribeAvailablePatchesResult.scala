@@ -33,6 +33,6 @@ object DescribeAvailablePatchesResult {
     
     inline def setPatchesUndefined: Self = StObject.set(x, "Patches", js.undefined)
     
-    inline def setPatchesVarargs(value: Patch*): Self = StObject.set(x, "Patches", js.Array(value :_*))
+    inline def setPatchesVarargs(value: Patch*): Self = StObject.set(x, "Patches", js.Array(value*))
   }
 }

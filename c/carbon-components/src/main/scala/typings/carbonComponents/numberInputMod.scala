@@ -1,5 +1,8 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialNumberInputOptions
+import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +12,14 @@ object numberInputMod {
   
   @JSImport("carbon-components/components/number-input/number-input", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with NumberInput {
-    def this(element: js.Any, options: js.Any) = this()
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialNumberInputOptions) = this()
     
     /* CompleteClass */
-    override def _handleClick(event: js.Any): Unit = js.native
+    override def _handleClick(event: MouseEvent): Unit = js.native
   }
   object default {
     
@@ -26,25 +30,46 @@ object numberInputMod {
     /* static member */
     @JSImport("carbon-components/components/number-input/number-input", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait NumberInput extends StObject {
     
-    def _handleClick(event: js.Any): Unit
+    def _handleClick(event: MouseEvent): Unit
   }
   object NumberInput {
     
-    inline def apply(_handleClick: js.Any => Unit): NumberInput = {
+    inline def apply(_handleClick: MouseEvent => Unit): NumberInput = {
       val __obj = js.Dynamic.literal(_handleClick = js.Any.fromFunction1(_handleClick))
       __obj.asInstanceOf[NumberInput]
     }
     
     extension [Self <: NumberInput](x: Self) {
       
-      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def set_handleClick(value: MouseEvent => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait NumberInputOptions extends StObject {
+    
+    var selectorInit: String
+    
+    var selectorInput: String
+  }
+  object NumberInputOptions {
+    
+    inline def apply(selectorInit: String, selectorInput: String): NumberInputOptions = {
+      val __obj = js.Dynamic.literal(selectorInit = selectorInit.asInstanceOf[js.Any], selectorInput = selectorInput.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NumberInputOptions]
+    }
+    
+    extension [Self <: NumberInputOptions](x: Self) {
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInput(value: String): Self = StObject.set(x, "selectorInput", value.asInstanceOf[js.Any])
     }
   }
 }

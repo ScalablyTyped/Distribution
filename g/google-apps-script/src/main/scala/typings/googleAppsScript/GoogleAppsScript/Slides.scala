@@ -4234,7 +4234,7 @@ object Slides {
         
         inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
         
-        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value*))
         
         inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
@@ -4267,7 +4267,7 @@ object Slides {
         
         inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value*))
         
         inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
@@ -4329,7 +4329,7 @@ object Slides {
         
         inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
         
-        inline def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
+        inline def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value*))
       }
     }
     
@@ -4650,7 +4650,7 @@ object Slides {
         
         inline def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
         
-        inline def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
+        inline def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value*))
         
         inline def setSlideLayoutReference(value: LayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
         
@@ -5049,7 +5049,7 @@ object Slides {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "children", js.Array(value*))
       }
     }
     
@@ -5072,7 +5072,7 @@ object Slides {
         
         inline def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
         
-        inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
+        inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value*))
         
         inline def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
         
@@ -5818,7 +5818,7 @@ object Slides {
         
         inline def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
         
-        inline def setPageElementsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+        inline def setPageElementsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "pageElements", js.Array(value*))
         
         inline def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
         
@@ -6172,7 +6172,7 @@ object Slides {
         
         inline def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)
         
-        inline def setLayoutsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "layouts", js.Array(value :_*))
+        inline def setLayoutsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "layouts", js.Array(value*))
         
         inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
@@ -6182,7 +6182,7 @@ object Slides {
         
         inline def setMastersUndefined: Self = StObject.set(x, "masters", js.undefined)
         
-        inline def setMastersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "masters", js.Array(value :_*))
+        inline def setMastersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "masters", js.Array(value*))
         
         inline def setNotesMaster(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "notesMaster", value.asInstanceOf[js.Any])
         
@@ -6204,7 +6204,7 @@ object Slides {
         
         inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
         
-        inline def setSlidesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "slides", js.Array(value :_*))
+        inline def setSlidesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "slides", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -6266,7 +6266,7 @@ object Slides {
         
         inline def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
         
-        inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
+        inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value*))
       }
     }
     
@@ -6326,7 +6326,7 @@ object Slides {
         
         inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value*))
         
         inline def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
         
@@ -6390,7 +6390,7 @@ object Slides {
         
         inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -6442,7 +6442,7 @@ object Slides {
         
         inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value*))
         
         inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
         
@@ -7290,7 +7290,7 @@ object Slides {
         
         inline def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
         
-        inline def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
+        inline def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value*))
         
         inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
@@ -7300,19 +7300,19 @@ object Slides {
         
         inline def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
         
-        inline def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
+        inline def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value*))
         
         inline def setTableRows(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
         
         inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
         
-        inline def setTableRowsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+        inline def setTableRowsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow*): Self = StObject.set(x, "tableRows", js.Array(value*))
         
         inline def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
         
         inline def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
         
-        inline def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
+        inline def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value*))
       }
     }
     
@@ -7408,7 +7408,7 @@ object Slides {
         
         inline def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
         
-        inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
+        inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value*))
       }
     }
     
@@ -7605,7 +7605,7 @@ object Slides {
         
         inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
         
-        inline def setTableCellsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+        inline def setTableCellsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell*): Self = StObject.set(x, "tableCells", js.Array(value*))
         
         inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
         
@@ -7655,7 +7655,7 @@ object Slides {
         
         inline def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
         
-        inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
+        inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value*))
       }
     }
     
@@ -7885,7 +7885,7 @@ object Slides {
         
         inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
         
-        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
       }
     }
     
@@ -8086,7 +8086,7 @@ object Slides {
         
         inline def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
         
-        inline def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
+        inline def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value*))
       }
     }
     
@@ -8218,7 +8218,7 @@ object Slides {
         
         inline def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
         
-        inline def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
+        inline def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value*))
       }
     }
     
@@ -8325,7 +8325,7 @@ object Slides {
         
         inline def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
         
-        inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
+        inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value*))
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8372,7 +8372,7 @@ object Slides {
         
         inline def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
         
-        inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
+        inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value*))
         
         inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
         
@@ -8965,6 +8965,8 @@ object Slides {
     
     def selectAsCurrentPage(): Unit = js.native
     
+    def setSkipped(isSkipped: Boolean): Unit = js.native
+    
     def unlink(): Unit = js.native
   }
   
@@ -8979,63 +8981,63 @@ object Slides {
     */
   trait SlidesApp extends StObject {
     
-    var AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any
+    var AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ Any
     
-    var ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any
+    var ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ Any
     
-    var AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any
+    var AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ Any
     
-    var CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any
+    var CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ Any
     
-    var ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any
+    var ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ Any
     
-    var ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any
+    var ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ Any
     
-    var DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any
+    var DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ Any
     
-    var FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any
+    var FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ Any
     
-    var LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any
+    var LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ Any
     
-    var LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any
+    var LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ Any
     
-    var LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any
+    var LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ Any
     
-    var LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any
+    var LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ Any
     
-    var ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any
+    var ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ Any
     
-    var PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any
+    var PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ Any
     
-    var PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any
+    var PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ Any
     
-    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any
+    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ Any
     
-    var ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any
+    var ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ Any
     
-    var PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any
+    var PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ Any
     
-    var PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any
+    var PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ Any
     
-    var SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any
+    var SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ Any
     
-    var ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any
+    var ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ Any
     
-    var SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any
+    var SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ Any
     
-    var SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any
+    var SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ Any
     
-    var SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any
+    var SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ Any
     
-    var SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any
+    var SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ Any
     
-    var TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any
+    var TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ Any
     
-    var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any
+    var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ Any
     
-    var ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any
+    var ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ Any
     
-    var VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any
+    var VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ Any
     
     def create(name: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
     
@@ -9052,35 +9054,35 @@ object Slides {
   object SlidesApp {
     
     inline def apply(
-      AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any,
-      ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any,
-      AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any,
-      CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any,
-      ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any,
-      ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any,
-      DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any,
-      FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any,
-      LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any,
-      LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any,
-      LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any,
-      LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any,
-      ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any,
-      PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any,
-      PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any,
-      PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any,
-      ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any,
-      PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any,
-      PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any,
-      SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any,
-      ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any,
-      SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any,
-      SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any,
-      SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any,
-      SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any,
-      TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any,
-      TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any,
-      ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any,
-      VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any,
+      AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ Any,
+      ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ Any,
+      AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ Any,
+      CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ Any,
+      ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ Any,
+      ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ Any,
+      DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ Any,
+      FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ Any,
+      LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ Any,
+      LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ Any,
+      LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ Any,
+      LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ Any,
+      ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ Any,
+      PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ Any,
+      PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ Any,
+      PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ Any,
+      ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ Any,
+      PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ Any,
+      PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ Any,
+      SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ Any,
+      ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ Any,
+      SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ Any,
+      SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ Any,
+      SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ Any,
+      SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ Any,
+      TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ Any,
+      TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ Any,
+      ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ Any,
+      VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ Any,
       create: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation,
       getActivePresentation: () => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation,
       getUi: () => Ui,
@@ -9095,50 +9097,40 @@ object Slides {
     extension [Self <: SlidesApp](x: Self) {
       
       inline def setAlignmentPosition(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ Any
       ): Self = StObject.set(x, "AlignmentPosition", value.asInstanceOf[js.Any])
       
-      inline def setArrowStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any): Self = StObject.set(x, "ArrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ Any): Self = StObject.set(x, "ArrowStyle", value.asInstanceOf[js.Any])
       
-      inline def setAutoTextType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any
-      ): Self = StObject.set(x, "AutoTextType", value.asInstanceOf[js.Any])
+      inline def setAutoTextType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ Any): Self = StObject.set(x, "AutoTextType", value.asInstanceOf[js.Any])
       
-      inline def setCellMergeState(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any
-      ): Self = StObject.set(x, "CellMergeState", value.asInstanceOf[js.Any])
+      inline def setCellMergeState(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ Any): Self = StObject.set(x, "CellMergeState", value.asInstanceOf[js.Any])
       
-      inline def setColorType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any
-      ): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
+      inline def setColorType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ Any): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
       
       inline def setContentAlignment(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ Any
       ): Self = StObject.set(x, "ContentAlignment", value.asInstanceOf[js.Any])
       
       inline def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      inline def setDashStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any): Self = StObject.set(x, "DashStyle", value.asInstanceOf[js.Any])
+      inline def setDashStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ Any): Self = StObject.set(x, "DashStyle", value.asInstanceOf[js.Any])
       
-      inline def setFillType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any): Self = StObject.set(x, "FillType", value.asInstanceOf[js.Any])
+      inline def setFillType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ Any): Self = StObject.set(x, "FillType", value.asInstanceOf[js.Any])
       
       inline def setGetActivePresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "getActivePresentation", js.Any.fromFunction0(value))
       
       inline def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
       
-      inline def setLineCategory(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any
-      ): Self = StObject.set(x, "LineCategory", value.asInstanceOf[js.Any])
+      inline def setLineCategory(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ Any): Self = StObject.set(x, "LineCategory", value.asInstanceOf[js.Any])
       
-      inline def setLineFillType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any
-      ): Self = StObject.set(x, "LineFillType", value.asInstanceOf[js.Any])
+      inline def setLineFillType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ Any): Self = StObject.set(x, "LineFillType", value.asInstanceOf[js.Any])
       
-      inline def setLineType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
+      inline def setLineType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ Any): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
       
-      inline def setLinkType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any): Self = StObject.set(x, "LinkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ Any): Self = StObject.set(x, "LinkType", value.asInstanceOf[js.Any])
       
-      inline def setListPreset(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any): Self = StObject.set(x, "ListPreset", value.asInstanceOf[js.Any])
+      inline def setListPreset(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ Any): Self = StObject.set(x, "ListPreset", value.asInstanceOf[js.Any])
       
       inline def setNewAffineTransformBuilder(value: () => AffineTransformBuilder): Self = StObject.set(x, "newAffineTransformBuilder", js.Any.fromFunction0(value))
       
@@ -9147,61 +9139,53 @@ object Slides {
       inline def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
       
       inline def setPageBackgroundType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ Any
       ): Self = StObject.set(x, "PageBackgroundType", value.asInstanceOf[js.Any])
       
       inline def setPageElementType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ Any
       ): Self = StObject.set(x, "PageElementType", value.asInstanceOf[js.Any])
       
-      inline def setPageType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any): Self = StObject.set(x, "PageType", value.asInstanceOf[js.Any])
+      inline def setPageType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ Any): Self = StObject.set(x, "PageType", value.asInstanceOf[js.Any])
       
       inline def setParagraphAlignment(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ Any
       ): Self = StObject.set(x, "ParagraphAlignment", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ Any
       ): Self = StObject.set(x, "PlaceholderType", value.asInstanceOf[js.Any])
       
       inline def setPredefinedLayout(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ Any
       ): Self = StObject.set(x, "PredefinedLayout", value.asInstanceOf[js.Any])
       
-      inline def setSelectionType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any
-      ): Self = StObject.set(x, "SelectionType", value.asInstanceOf[js.Any])
+      inline def setSelectionType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ Any): Self = StObject.set(x, "SelectionType", value.asInstanceOf[js.Any])
       
-      inline def setShapeType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
+      inline def setShapeType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ Any): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
       
       inline def setSheetsChartEmbedType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ Any
       ): Self = StObject.set(x, "SheetsChartEmbedType", value.asInstanceOf[js.Any])
       
       inline def setSlideLinkingMode(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ Any
       ): Self = StObject.set(x, "SlideLinkingMode", value.asInstanceOf[js.Any])
       
-      inline def setSlidePosition(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any
-      ): Self = StObject.set(x, "SlidePosition", value.asInstanceOf[js.Any])
+      inline def setSlidePosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ Any): Self = StObject.set(x, "SlidePosition", value.asInstanceOf[js.Any])
       
-      inline def setSpacingMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any): Self = StObject.set(x, "SpacingMode", value.asInstanceOf[js.Any])
+      inline def setSpacingMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ Any): Self = StObject.set(x, "SpacingMode", value.asInstanceOf[js.Any])
       
       inline def setTextBaselineOffset(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ Any
       ): Self = StObject.set(x, "TextBaselineOffset", value.asInstanceOf[js.Any])
       
-      inline def setTextDirection(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any
-      ): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
+      inline def setTextDirection(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ Any): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
       
-      inline def setThemeColorType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any
-      ): Self = StObject.set(x, "ThemeColorType", value.asInstanceOf[js.Any])
+      inline def setThemeColorType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ Any): Self = StObject.set(x, "ThemeColorType", value.asInstanceOf[js.Any])
       
       inline def setVideoSourceType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ Any
       ): Self = StObject.set(x, "VideoSourceType", value.asInstanceOf[js.Any])
     }
   }

@@ -9,7 +9,7 @@ object nscontextMod {
   
   @JSImport("soap/lib/nscontext", "NamespaceContext")
   @js.native
-  class NamespaceContext () extends StObject {
+  open class NamespaceContext () extends StObject {
     
     /**
       * Add a prefix/URI namespace mapping

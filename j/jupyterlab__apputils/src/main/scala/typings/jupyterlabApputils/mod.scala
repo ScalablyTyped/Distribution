@@ -1,7 +1,9 @@
 package typings.jupyterlabApputils
 
 import typings.jupyterlabApputils.anon.PartialIButton
+import typings.jupyterlabApputils.anon.PartialIScore
 import typings.jupyterlabApputils.anon.ReadonlyIButton
+import typings.jupyterlabApputils.anon.RecordKernelDisplayStatus
 import typings.jupyterlabApputils.clipboardMod.ClipboardData
 import typings.jupyterlabApputils.collapseMod.Collapse.IOptions
 import typings.jupyterlabApputils.dialogMod.Dialog.IButton
@@ -12,17 +14,30 @@ import typings.jupyterlabApputils.inputdialogMod.InputDialog.INumberOptions
 import typings.jupyterlabApputils.inputdialogMod.InputDialog.ITextOptions
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.copy
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.cut
+import typings.jupyterlabApputils.menufactoryMod.MenuFactory.IMenuOptions
 import typings.jupyterlabApputils.printingMod.Printing.OptionalAsyncThunk
-import typings.jupyterlabApputils.sanitizerMod.ISanitizer
+import typings.jupyterlabApputils.searchMod.IFilterBoxProps
+import typings.jupyterlabApputils.searchMod.IScore
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.jupyterlabApputils.sessioncontextMod.SessionContext.IKernelSearch
-import typings.jupyterlabApputils.toolbarMod.CommandToolbarButtonComponent.IProps
+import typings.jupyterlabApputils.tokensMod.ToolbarRegistry.IToolbarItem
+import typings.jupyterlabApputils.tokensMod.ToolbarRegistry.IWidget
 import typings.jupyterlabApputils.vdomMod.IUseSignalProps
 import typings.jupyterlabApputils.vdomMod.ReactRenderElement
 import typings.jupyterlabApputils.vdomMod.VDomRenderer.IModel
+import typings.jupyterlabApputils.widgetMod.CommandToolbarButtonComponent.IProps
+import typings.jupyterlabApputils.widgetMod.Toolbar.IWidgetToolbar
+import typings.jupyterlabObservables.observablelistMod.IObservableList
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IContextMenuItem
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenu
+import typings.jupyterlabTranslation.tokensMod.ITranslator
+import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.MimeData
 import typings.luminoCoreutils.mod.Token
+import typings.luminoWidgets.mod.ContextMenu
+import typings.luminoWidgets.mod.Menu
 import typings.luminoWidgets.mod.Widget
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLCollection
@@ -66,10 +81,7 @@ object mod {
       * This can only be called in response to a user input event.
       */
     inline def generateEvent(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def generateEvent_copy(node: HTMLElement, `type`: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def generateEvent_cut(node: HTMLElement, `type`: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def generateEvent(node: HTMLElement, `type`: copy | cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateEvent")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Get the application clipboard instance.
@@ -84,14 +96,14 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "Collapse")
   @js.native
-  class Collapse[T /* <: Widget */] protected ()
+  open class Collapse[T /* <: Widget */] protected ()
     extends typings.jupyterlabApputils.collapseMod.Collapse[T] {
     def this(options: IOptions[T]) = this()
   }
   
   @JSImport("@jupyterlab/apputils", "CommandLinker")
   @js.native
-  class CommandLinker protected ()
+  open class CommandLinker protected ()
     extends typings.jupyterlabApputils.commandlinkerMod.CommandLinker {
     /**
       * Instantiate a new command linker.
@@ -101,11 +113,11 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "CommandToolbarButton")
   @js.native
-  class CommandToolbarButton protected ()
+  open class CommandToolbarButton protected ()
     extends typings.jupyterlabApputils.toolbarMod.CommandToolbarButton {
     /**
       * Creates a command toolbar button
-      * @param props props for underlying `CommandToolbarButtonComponent` componenent
+      * @param props props for underlying `CommandToolbarButtonComponent` component
       */
     def this(props: IProps) = this()
   }
@@ -147,7 +159,7 @@ object mod {
     *
     * @param options - The dialog setup options.
     */
-  class Dialog[T] ()
+  open class Dialog[T] ()
     extends typings.jupyterlabApputils.dialogMod.Dialog[T] {
     def this(options: Partial[typings.jupyterlabApputils.dialogMod.Dialog.IOptions[T]]) = this()
   }
@@ -162,7 +174,7 @@ object mod {
       */
     @JSImport("@jupyterlab/apputils", "Dialog.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends typings.jupyterlabApputils.dialogMod.Dialog.Renderer
     
     /**
@@ -203,7 +215,7 @@ object mod {
       */
     @JSImport("@jupyterlab/apputils", "Dialog.tracker")
     @js.native
-    val tracker: typings.jupyterlabApputils.widgettrackerMod.WidgetTracker[typings.jupyterlabApputils.dialogMod.Dialog[js.Any]] = js.native
+    val tracker: typings.jupyterlabApputils.widgettrackerMod.WidgetTracker[typings.jupyterlabApputils.dialogMod.Dialog[Any]] = js.native
     
     /**
       * Create a warn button.
@@ -211,6 +223,10 @@ object mod {
     inline def warnButton(): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("warnButton")().asInstanceOf[ReadonlyIButton]
     inline def warnButton(options: PartialIButton): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("warnButton")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyIButton]
   }
+  
+  inline def FilenameSearcher(props: IFilterBoxProps): typings.jupyterlabApputils.vdomMod.ReactWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("FilenameSearcher")(props.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabApputils.vdomMod.ReactWidget]
+  
+  inline def FilterBox(props: IFilterBoxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilterBox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object HoverBox {
     
@@ -235,10 +251,14 @@ object mod {
   /**
     * Create a new IFrame widget.
     */
-  class IFrame ()
+  open class IFrame ()
     extends typings.jupyterlabApputils.iframeMod.IFrame {
     def this(options: typings.jupyterlabApputils.iframeMod.IFrame.IOptions) = this()
   }
+  
+  @JSImport("@jupyterlab/apputils", "ISanitizer")
+  @js.native
+  val ISanitizer: Token[typings.jupyterlabApputils.tokensMod.ISanitizer] = js.native
   
   @JSImport("@jupyterlab/apputils", "ISessionContextDialogs")
   @js.native
@@ -251,6 +271,10 @@ object mod {
   @JSImport("@jupyterlab/apputils", "IThemeManager")
   @js.native
   val IThemeManager: Token[typings.jupyterlabApputils.tokensMod.IThemeManager] = js.native
+  
+  @JSImport("@jupyterlab/apputils", "IToolbarWidgetRegistry")
+  @js.native
+  val IToolbarWidgetRegistry: Token[typings.jupyterlabApputils.tokensMod.IToolbarWidgetRegistry] = js.native
   
   @JSImport("@jupyterlab/apputils", "IWindowResolver")
   @js.native
@@ -310,7 +334,7 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "MainAreaWidget")
   @js.native
-  class MainAreaWidget[T /* <: Widget */] protected ()
+  open class MainAreaWidget[T /* <: Widget */] protected ()
     extends typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget[T] {
     /**
       * Construct a new main area widget.
@@ -318,6 +342,59 @@ object mod {
       * @param options - The options for initializing the widget.
       */
     def this(options: typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget.IOptions[T]) = this()
+  }
+  
+  object MenuFactory {
+    
+    @JSImport("@jupyterlab/apputils", "MenuFactory")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Convert an item description in a context menu item object
+      *
+      * @param item Context menu item
+      * @param menu Context menu to populate
+      * @param menuFactory Empty menu factory
+      */
+    inline def addContextItem(
+      item: IContextMenuItem,
+      menu: ContextMenu,
+      menuFactory: js.Function1[/* options */ IMenuOptions, Menu]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextItem")(item.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], menuFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Create menus from their description
+      *
+      * @param data Menubar description
+      * @param menuFactory Factory for empty menu
+      */
+    inline def createMenus(data: js.Array[IMenu], menuFactory: js.Function1[/* options */ IMenuOptions, Menu]): js.Array[Menu] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMenus")(data.asInstanceOf[js.Any], menuFactory.asInstanceOf[js.Any])).asInstanceOf[js.Array[Menu]]
+    
+    /**
+      * Update an existing list of menu and returns
+      * the new elements.
+      *
+      * #### Note
+      * New elements are added to the current menu list.
+      *
+      * @param menus Current menus
+      * @param data New description to take into account
+      * @param menuFactory Empty menu factory
+      * @returns Newly created menus
+      */
+    inline def updateMenus(
+      menus: js.Array[Menu],
+      data: js.Array[IMenu],
+      menuFactory: js.Function1[/* options */ IMenuOptions, Menu]
+    ): js.Array[Menu] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMenus")(menus.asInstanceOf[js.Any], data.asInstanceOf[js.Any], menuFactory.asInstanceOf[js.Any])).asInstanceOf[js.Array[Menu]]
+  }
+  
+  @JSImport("@jupyterlab/apputils", "ModalCommandPalette")
+  @js.native
+  open class ModalCommandPalette protected ()
+    extends typings.jupyterlabApputils.commandpaletteMod.ModalCommandPalette {
+    def this(options: typings.jupyterlabApputils.commandpaletteMod.ModalCommandPalette.IOptions) = this()
   }
   
   object Printing {
@@ -329,12 +406,12 @@ object mod {
     /**
       * Returns the print function for an object, or null if it does not provide a handler.
       */
-    inline def getPrintFunction(`val`: js.Any): OptionalAsyncThunk = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrintFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[OptionalAsyncThunk]
+    inline def getPrintFunction(`val`: Any): OptionalAsyncThunk = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrintFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[OptionalAsyncThunk]
     
     /**
       * Returns whether an object implements a print method.
       */
-    inline def isPrintable(a: js.Any): /* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrintable")(a.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean]
+    inline def isPrintable(a: Any): /* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrintable")(a.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean]
     
     /**
       * Prints a URL by loading it into an iframe.
@@ -382,9 +459,22 @@ object mod {
     inline def create(element: ReactRenderElement): typings.jupyterlabApputils.vdomMod.ReactWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabApputils.vdomMod.ReactWidget]
   }
   
+  @JSImport("@jupyterlab/apputils", "ReactiveToolbar")
+  @js.native
+  /**
+    * Construct a new toolbar widget.
+    */
+  open class ReactiveToolbar ()
+    extends typings.jupyterlabApputils.toolbarMod.ReactiveToolbar
+  
+  @JSImport("@jupyterlab/apputils", "Sanitizer")
+  @js.native
+  open class Sanitizer ()
+    extends typings.jupyterlabApputils.sanitizerMod.Sanitizer
+  
   @JSImport("@jupyterlab/apputils", "SessionContext")
   @js.native
-  class SessionContext protected ()
+  open class SessionContext protected ()
     extends typings.jupyterlabApputils.sessioncontextMod.SessionContext {
     /**
       * Construct a new session context.
@@ -408,7 +498,7 @@ object mod {
   /**
     * Construct a spinner widget.
     */
-  class Spinner ()
+  open class Spinner ()
     extends typings.jupyterlabApputils.spinnerMod.Spinner
   
   object Styling {
@@ -447,7 +537,7 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "ThemeManager")
   @js.native
-  class ThemeManager protected ()
+  open class ThemeManager protected ()
     extends typings.jupyterlabApputils.thememanagerMod.ThemeManager {
     /**
       * Construct a new theme manager.
@@ -460,8 +550,10 @@ object mod {
   /**
     * Construct a new toolbar widget.
     */
-  class Toolbar[T /* <: Widget */] ()
-    extends typings.jupyterlabApputils.toolbarMod.Toolbar[T]
+  open class Toolbar[T /* <: Widget */] ()
+    extends typings.jupyterlabApputils.toolbarMod.Toolbar[T] {
+    def this(options: typings.jupyterlabApputils.widgetMod.Toolbar.IOptions) = this()
+  }
   object Toolbar {
     
     @JSImport("@jupyterlab/apputils", "Toolbar")
@@ -470,8 +562,12 @@ object mod {
     
     /**
       * Create an interrupt toolbar item.
+      *
+      * @deprecated since version v3.2
+      * This is dead code now.
       */
     inline def createInterruptButton(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterruptButton")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createInterruptButton(sessionContext: ISessionContext, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterruptButton")(sessionContext.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a kernel name indicator item.
@@ -481,7 +577,9 @@ object mod {
       * handle a change in context or kernel.
       */
     inline def createKernelNameItem(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createKernelNameItem(sessionContext: ISessionContext, dialogs: Unit, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     inline def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any])).asInstanceOf[Widget]
+    inline def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a kernel status indicator item.
@@ -492,12 +590,18 @@ object mod {
       * It can handle a change to the context or the kernel.
       */
     inline def createKernelStatusItem(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createKernelStatusItem")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createKernelStatusItem(sessionContext: ISessionContext, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelStatusItem")(sessionContext.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a restart toolbar item.
+      *
+      * @deprecated since v3.2
+      * This is dead code now.
       */
     inline def createRestartButton(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createRestartButton(sessionContext: ISessionContext, dialogs: Unit, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     inline def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any])).asInstanceOf[Widget]
+    inline def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs, translator: ITranslator): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a toolbar spacer item.
@@ -513,25 +617,32 @@ object mod {
   @js.native
   /**
     * Creates a toolbar button
-    * @param props props for underlying `ToolbarButton` componenent
+    * @param props props for underlying `ToolbarButton` component
     */
-  class ToolbarButton ()
+  open class ToolbarButton ()
     extends typings.jupyterlabApputils.toolbarMod.ToolbarButton {
-    def this(props: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps) = this()
+    def this(props: typings.jupyterlabApputils.widgetMod.ToolbarButtonComponent.IProps) = this()
   }
   
-  inline def ToolbarButtonComponent(props: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToolbarButtonComponent")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ToolbarButtonComponent(props: typings.jupyterlabApputils.widgetMod.ToolbarButtonComponent.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToolbarButtonComponent")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("@jupyterlab/apputils", "ToolbarWidgetRegistry")
+  @js.native
+  open class ToolbarWidgetRegistry protected ()
+    extends typings.jupyterlabApputils.toolbarMod.ToolbarWidgetRegistry {
+    def this(options: typings.jupyterlabApputils.tokensMod.ToolbarRegistry.IOptions) = this()
+  }
   
   @JSImport("@jupyterlab/apputils", "UseSignal")
   @js.native
-  class UseSignal[SENDER, ARGS] protected ()
+  open class UseSignal[SENDER, ARGS] protected ()
     extends typings.jupyterlabApputils.vdomMod.UseSignal[SENDER, ARGS] {
     def this(props: IUseSignalProps[SENDER, ARGS]) = this()
   }
   
   @JSImport("@jupyterlab/apputils", "VDomModel")
   @js.native
-  class VDomModel ()
+  open class VDomModel ()
     extends typings.jupyterlabApputils.vdomMod.VDomModel
   
   @JSImport("@jupyterlab/apputils", "VDomRenderer")
@@ -546,7 +657,7 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "WidgetTracker")
   @js.native
-  class WidgetTracker[T /* <: Widget */] protected ()
+  open class WidgetTracker[T /* <: Widget */] protected ()
     extends typings.jupyterlabApputils.widgettrackerMod.WidgetTracker[T] {
     /**
       * Create a new widget tracker.
@@ -558,24 +669,55 @@ object mod {
   
   @JSImport("@jupyterlab/apputils", "WindowResolver")
   @js.native
-  class WindowResolver ()
+  open class WindowResolver ()
     extends typings.jupyterlabApputils.windowresolverMod.WindowResolver
   
   inline def addCommandToolbarButtonClass(w: Widget): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommandToolbarButtonClass")(w.asInstanceOf[js.Any]).asInstanceOf[Widget]
   
   inline def addToolbarButtonClass(w: Widget): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("addToolbarButtonClass")(w.asInstanceOf[js.Any]).asInstanceOf[Widget]
   
+  inline def createDefaultFactory(commands: CommandRegistry): js.Function3[/* widgetFactory */ String, /* widget */ Widget, /* toolbarItem */ IWidget, Widget] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultFactory")(commands.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* widgetFactory */ String, /* widget */ Widget, /* toolbarItem */ IWidget, Widget]]
+  
+  inline def createToolbarFactory(
+    toolbarRegistry: typings.jupyterlabApputils.tokensMod.IToolbarWidgetRegistry,
+    settingsRegistry: ISettingRegistry,
+    factoryName: String,
+    pluginId: String,
+    translator: ITranslator
+  ): js.Function1[/* widget */ Widget, IObservableList[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToolbarFactory")(toolbarRegistry.asInstanceOf[js.Any], settingsRegistry.asInstanceOf[js.Any], factoryName.asInstanceOf[js.Any], pluginId.asInstanceOf[js.Any], translator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* widget */ Widget, IObservableList[IToolbarItem]]]
+  inline def createToolbarFactory(
+    toolbarRegistry: typings.jupyterlabApputils.tokensMod.IToolbarWidgetRegistry,
+    settingsRegistry: ISettingRegistry,
+    factoryName: String,
+    pluginId: String,
+    translator: ITranslator,
+    propertyId: String
+  ): js.Function1[/* widget */ Widget, IObservableList[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToolbarFactory")(toolbarRegistry.asInstanceOf[js.Any], settingsRegistry.asInstanceOf[js.Any], factoryName.asInstanceOf[js.Any], pluginId.asInstanceOf[js.Any], translator.asInstanceOf[js.Any], propertyId.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* widget */ Widget, IObservableList[IToolbarItem]]]
+  
   @JSImport("@jupyterlab/apputils", "defaultSanitizer")
   @js.native
-  val defaultSanitizer: ISanitizer = js.native
+  val defaultSanitizer: typings.jupyterlabApputils.tokensMod.ISanitizer = js.native
+  
+  inline def fuzzySearch(source: String, query: String): IScore | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzySearch")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IScore | Null]
   
   @JSImport("@jupyterlab/apputils", "sessionContextDialogs")
   @js.native
   val sessionContextDialogs: IDialogs = js.native
   
+  inline def setToolbar(
+    widget: IWidgetToolbar,
+    factory: js.Function1[/* widget */ Widget, IObservableList[IToolbarItem] | js.Array[IToolbarItem]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setToolbar")(widget.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def showDialog[T](): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")().asInstanceOf[js.Promise[IResult[T]]]
   inline def showDialog[T](options: Partial[typings.jupyterlabApputils.dialogMod.Dialog.IOptions[T]]): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[T]]]
   
-  inline def showErrorMessage(title: String, error: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def showErrorMessage(title: String, error: js.Any, buttons: js.Array[IButton]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def showErrorMessage(title: String, error: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def showErrorMessage(title: String, error: Any, buttons: js.Array[IButton]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def translateKernelStatuses(): RecordKernelDisplayStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("translateKernelStatuses")().asInstanceOf[RecordKernelDisplayStatus]
+  inline def translateKernelStatuses(translator: ITranslator): RecordKernelDisplayStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("translateKernelStatuses")(translator.asInstanceOf[js.Any]).asInstanceOf[RecordKernelDisplayStatus]
+  
+  inline def updateFilterFunction(value: String, useFuzzyFilter: Boolean): js.Function1[/* item */ String, PartialIScore | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFilterFunction")(value.asInstanceOf[js.Any], useFuzzyFilter.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* item */ String, PartialIScore | Null]]
+  inline def updateFilterFunction(value: String, useFuzzyFilter: Boolean, caseSensitive: Boolean): js.Function1[/* item */ String, PartialIScore | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFilterFunction")(value.asInstanceOf[js.Any], useFuzzyFilter.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* item */ String, PartialIScore | Null]]
 }

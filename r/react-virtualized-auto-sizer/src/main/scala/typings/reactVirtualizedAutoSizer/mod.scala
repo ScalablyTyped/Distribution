@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-virtualized-auto-sizer", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[AutoSizerProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[AutoSizerProps, js.Object, Any] {
     def this(props: AutoSizerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AutoSizerProps, context: js.Any) = this()
+    def this(props: AutoSizerProps, context: Any) = this()
   }
   
   trait AutoSizerProps extends StObject {

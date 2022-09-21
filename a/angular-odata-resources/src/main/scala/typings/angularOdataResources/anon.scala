@@ -67,59 +67,59 @@ object anon {
       
       inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
-      inline def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
+      inline def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value*))
       
       inline def setAnd(value: js.Array[String]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      inline def setAndVarargs(value: String*): Self = StObject.set(x, "and", js.Array(value :_*))
+      inline def setAndVarargs(value: String*): Self = StObject.set(x, "and", js.Array(value*))
       
       inline def setDiv(value: js.Array[String]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
-      inline def setDivVarargs(value: String*): Self = StObject.set(x, "div", js.Array(value :_*))
+      inline def setDivVarargs(value: String*): Self = StObject.set(x, "div", js.Array(value*))
       
       inline def setEq_(value: js.Array[String]): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
       
-      inline def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value :_*))
+      inline def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value*))
       
       inline def setGe(value: js.Array[String]): Self = StObject.set(x, "ge", value.asInstanceOf[js.Any])
       
-      inline def setGeVarargs(value: String*): Self = StObject.set(x, "ge", js.Array(value :_*))
+      inline def setGeVarargs(value: String*): Self = StObject.set(x, "ge", js.Array(value*))
       
       inline def setGt(value: js.Array[String]): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      inline def setGtVarargs(value: String*): Self = StObject.set(x, "gt", js.Array(value :_*))
+      inline def setGtVarargs(value: String*): Self = StObject.set(x, "gt", js.Array(value*))
       
       inline def setLe(value: js.Array[String]): Self = StObject.set(x, "le", value.asInstanceOf[js.Any])
       
-      inline def setLeVarargs(value: String*): Self = StObject.set(x, "le", js.Array(value :_*))
+      inline def setLeVarargs(value: String*): Self = StObject.set(x, "le", js.Array(value*))
       
       inline def setLt(value: js.Array[String]): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      inline def setLtVarargs(value: String*): Self = StObject.set(x, "lt", js.Array(value :_*))
+      inline def setLtVarargs(value: String*): Self = StObject.set(x, "lt", js.Array(value*))
       
       inline def setMod(value: js.Array[String]): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
       
-      inline def setModVarargs(value: String*): Self = StObject.set(x, "mod", js.Array(value :_*))
+      inline def setModVarargs(value: String*): Self = StObject.set(x, "mod", js.Array(value*))
       
       inline def setMul(value: js.Array[String]): Self = StObject.set(x, "mul", value.asInstanceOf[js.Any])
       
-      inline def setMulVarargs(value: String*): Self = StObject.set(x, "mul", js.Array(value :_*))
+      inline def setMulVarargs(value: String*): Self = StObject.set(x, "mul", js.Array(value*))
       
       inline def setNe_(value: js.Array[String]): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
       
-      inline def setNe_Varargs(value: String*): Self = StObject.set(x, "ne", js.Array(value :_*))
+      inline def setNe_Varargs(value: String*): Self = StObject.set(x, "ne", js.Array(value*))
       
       inline def setNot(value: js.Array[String]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      inline def setNotVarargs(value: String*): Self = StObject.set(x, "not", js.Array(value :_*))
+      inline def setNotVarargs(value: String*): Self = StObject.set(x, "not", js.Array(value*))
       
       inline def setOr(value: js.Array[String]): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
       
-      inline def setOrVarargs(value: String*): Self = StObject.set(x, "or", js.Array(value :_*))
+      inline def setOrVarargs(value: String*): Self = StObject.set(x, "or", js.Array(value*))
       
       inline def setSub(value: js.Array[String]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value :_*))
+      inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value*))
     }
   }
   
@@ -152,15 +152,15 @@ object anon {
   trait TypeofPredicate extends StObject {
     
     /* static member */
-    def and(andStatements: js.Any): IExecutable = js.native
+    def and(andStatements: Any): IExecutable = js.native
     
     /* static member */
-    def create(propertyOrPredicate: js.Any): IExecutable = js.native
-    def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
-    def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
-    def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = js.native
+    def create(propertyOrPredicate: Any): IExecutable = js.native
+    def create(propertyOrPredicate: Any, operatorOrValue: Any): IExecutable = js.native
+    def create(propertyOrPredicate: Any, operatorOrValue: Any, value: Any): IExecutable = js.native
+    def create(propertyOrPredicate: Any, operatorOrValue: Unit, value: Any): IExecutable = js.native
     
     /* static member */
-    def or(orStatements: js.Array[js.Any]): IExecutable = js.native
+    def or(orStatements: js.Array[Any]): IExecutable = js.native
   }
 }

@@ -11,5 +11,5 @@ object dologMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[V](args: js.Array[js.Any]): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
+  inline def default[V](args: js.Array[Any]): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
 }

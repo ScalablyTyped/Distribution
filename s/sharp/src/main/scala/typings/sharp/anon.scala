@@ -1,5 +1,6 @@
 package typings.sharp
 
+import typings.sharp.mod.CreateText
 import typings.sharp.mod.OutputInfo
 import typings.sharp.sharpBooleans.`false`
 import typings.sharp.sharpBooleans.`true`
@@ -23,6 +24,39 @@ object anon {
     extension [Self <: `0`](x: Self) {
       
       inline def setResolveWithObject(value: `true`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Alias extends StObject {
+    
+    var alias: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var buffer: Boolean
+    
+    var file: Boolean
+    
+    var stream: Boolean
+  }
+  object Alias {
+    
+    inline def apply(buffer: Boolean, file: Boolean, stream: Boolean): Alias = {
+      val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Alias]
+    }
+    
+    extension [Self <: Alias](x: Self) {
+      
+      inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
+      
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      
+      inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,6 +91,8 @@ object anon {
     
     var hue: js.UndefOr[Double] = js.undefined
     
+    var lightness: js.UndefOr[Double] = js.undefined
+    
     var saturation: js.UndefOr[Double] = js.undefined
   }
   object Brightness {
@@ -76,6 +112,10 @@ object anon {
       
       inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
+      inline def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+      
+      inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+      
       inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
       inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
@@ -87,6 +127,8 @@ object anon {
     var buffer: Boolean
     
     var file: Boolean
+    
+    var fileSuffix: js.UndefOr[js.Array[String]] = js.undefined
     
     var stream: Boolean
   }
@@ -102,6 +144,12 @@ object anon {
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setFileSuffix(value: js.Array[String]): Self = StObject.set(x, "fileSuffix", value.asInstanceOf[js.Any])
+      
+      inline def setFileSuffixUndefined: Self = StObject.set(x, "fileSuffix", js.undefined)
+      
+      inline def setFileSuffixVarargs(value: String*): Self = StObject.set(x, "fileSuffix", js.Array(value*))
       
       inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
@@ -151,20 +199,20 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: typings.node.Buffer
+    var data: typings.node.bufferMod.global.Buffer
     
     var info: OutputInfo
   }
   object Data {
     
-    inline def apply(data: typings.node.Buffer, info: OutputInfo): Data = {
+    inline def apply(data: typings.node.bufferMod.global.Buffer, info: OutputInfo): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: typings.node.Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setInfo(value: OutputInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
@@ -222,6 +270,23 @@ object anon {
     extension [Self <: ResolveWithObject](x: Self) {
       
       inline def setResolveWithObject(value: `false`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Text extends StObject {
+    
+    var text: CreateText
+  }
+  object Text {
+    
+    inline def apply(text: CreateText): Text = {
+      val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Text]
+    }
+    
+    extension [Self <: Text](x: Self) {
+      
+      inline def setText(value: CreateText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

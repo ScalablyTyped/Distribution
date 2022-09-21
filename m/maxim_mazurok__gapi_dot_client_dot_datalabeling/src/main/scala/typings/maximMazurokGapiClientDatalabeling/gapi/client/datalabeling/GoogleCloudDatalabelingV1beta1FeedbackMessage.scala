@@ -21,9 +21,9 @@ trait GoogleCloudDatalabelingV1beta1FeedbackMessage extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
-  var operatorFeedbackMetadata: js.UndefOr[js.Any] = js.undefined
+  var operatorFeedbackMetadata: js.UndefOr[Any] = js.undefined
   
-  var requesterFeedbackMetadata: js.UndefOr[js.Any] = js.undefined
+  var requesterFeedbackMetadata: js.UndefOr[Any] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1FeedbackMessage {
   
@@ -50,11 +50,11 @@ object GoogleCloudDatalabelingV1beta1FeedbackMessage {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOperatorFeedbackMetadata(value: js.Any): Self = StObject.set(x, "operatorFeedbackMetadata", value.asInstanceOf[js.Any])
+    inline def setOperatorFeedbackMetadata(value: Any): Self = StObject.set(x, "operatorFeedbackMetadata", value.asInstanceOf[js.Any])
     
     inline def setOperatorFeedbackMetadataUndefined: Self = StObject.set(x, "operatorFeedbackMetadata", js.undefined)
     
-    inline def setRequesterFeedbackMetadata(value: js.Any): Self = StObject.set(x, "requesterFeedbackMetadata", value.asInstanceOf[js.Any])
+    inline def setRequesterFeedbackMetadata(value: Any): Self = StObject.set(x, "requesterFeedbackMetadata", value.asInstanceOf[js.Any])
     
     inline def setRequesterFeedbackMetadataUndefined: Self = StObject.set(x, "requesterFeedbackMetadata", js.undefined)
   }

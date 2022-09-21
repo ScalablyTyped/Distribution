@@ -9,7 +9,7 @@ object complexAbsGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/complex_abs_gpu", "ComplexAbsProgram")
   @js.native
-  class ComplexAbsProgram protected ()
+  open class ComplexAbsProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(shape: js.Array[Double]) = this()

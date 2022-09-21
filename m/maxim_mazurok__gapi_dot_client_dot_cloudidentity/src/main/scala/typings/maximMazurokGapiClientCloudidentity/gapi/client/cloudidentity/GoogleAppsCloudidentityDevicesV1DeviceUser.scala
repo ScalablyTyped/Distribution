@@ -25,8 +25,8 @@ trait GoogleAppsCloudidentityDevicesV1DeviceUser extends StObject {
   var managementState: js.UndefOr[String] = js.undefined
   
   /**
-    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the DeviceUser in format: `devices/{device_id}/deviceUsers/{user_id}`, where user_id is the ID
-    * of the user associated with the user session.
+    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the DeviceUser in format: `devices/{device}/deviceUsers/{device_user}`, where `device_user`
+    * uniquely identifies a user's use of a device.
     */
   var name: js.UndefOr[String] = js.undefined
   

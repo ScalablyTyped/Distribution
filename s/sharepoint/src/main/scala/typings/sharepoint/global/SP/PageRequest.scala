@@ -7,23 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.PageRequest")
 @js.native
-class PageRequest ()
+open class PageRequest ()
   extends StObject
      with typings.sharepoint.SP.PageRequest {
   
   /* CompleteClass */
   override def add_failed(
-    value: js.Function2[
-      /* sender */ js.Any, 
-      /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, 
-      Unit
-    ]
+    value: js.Function2[/* sender */ Any, /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, Unit]
   ): Unit = js.native
   
   /* CompleteClass */
   override def add_succeeded(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.PageRequestSucceededEventArgs, 
       Unit
     ]
@@ -46,17 +42,13 @@ class PageRequest ()
   
   /* CompleteClass */
   override def remove_failed(
-    value: js.Function2[
-      /* sender */ js.Any, 
-      /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, 
-      Unit
-    ]
+    value: js.Function2[/* sender */ Any, /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, Unit]
   ): Unit = js.native
   
   /* CompleteClass */
   override def remove_succeeded(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.PageRequestSucceededEventArgs, 
       Unit
     ]
@@ -79,15 +71,11 @@ object PageRequest {
     url: String,
     expectedContentType: String,
     succeededHandler: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.PageRequestSucceededEventArgs, 
       Unit
     ],
-    failedHandler: js.Function2[
-      /* sender */ js.Any, 
-      /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, 
-      Unit
-    ]
+    failedHandler: js.Function2[/* sender */ Any, /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doGet")(url.asInstanceOf[js.Any], expectedContentType.asInstanceOf[js.Any], succeededHandler.asInstanceOf[js.Any], failedHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
@@ -96,14 +84,10 @@ object PageRequest {
     body: String,
     expectedContentType: String,
     succeededHandler: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.PageRequestSucceededEventArgs, 
       Unit
     ],
-    failedHandler: js.Function2[
-      /* sender */ js.Any, 
-      /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, 
-      Unit
-    ]
+    failedHandler: js.Function2[/* sender */ Any, /* args */ typings.sharepoint.SP.PageRequestFailedEventArgs, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], expectedContentType.asInstanceOf[js.Any], succeededHandler.asInstanceOf[js.Any], failedHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

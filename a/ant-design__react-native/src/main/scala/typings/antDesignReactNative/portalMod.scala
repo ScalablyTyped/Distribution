@@ -31,7 +31,7 @@ object portalMod {
     */
   @JSImport("@ant-design/react-native/lib/portal", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.portalPortalMod.default
   object default {
     
@@ -42,7 +42,7 @@ object portalMod {
     /* was `typeof PortalHost` */
     @JSImport("@ant-design/react-native/lib/portal", "default.Host")
     @js.native
-    class Host ()
+    open class Host ()
       extends typings.antDesignReactNative.portalPortalMod.default.Host
     /* static members */
     object Host {
